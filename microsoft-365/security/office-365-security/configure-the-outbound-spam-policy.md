@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何配置应用于组织中的特定用户、组或域的出站垃圾邮件策略。
-ms.openlocfilehash: efd3fecc2447435f40e4e20fd958e8f3b2d8e48f
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 管理员可以了解如何在 Exchange Online Protection （EOP）中查看、创建、修改和删除出站垃圾邮件策略。
+ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173436"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209567"
 ---
-# <a name="configure-outbound-spam-filtering"></a>配置出站垃圾邮件筛选
+# <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
-如果您是具有 Exchange Online 邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则会自动检查通过 EOP 发送的出站电子邮件是否包含垃圾邮件和异常发送活动。
+在使用 Exchange Online 或独立 Exchange online 保护（EOP）组织中的邮箱的 Microsoft 365 组织中，通过 EOP 发送的出站电子邮件将自动检查垃圾邮件和异常发送活动。
 
 您组织中的用户的出站垃圾邮件通常表示已损坏的帐户。 可疑的出站邮件被标记为垃圾邮件（无论垃圾邮件可信度或 SCL），并通过[高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由，以帮助保护服务的声誉（即，将 Microsoft 365 源电子邮件服务器从 IP 阻止列表中注销）。 系统会自动通知管理员可疑的出站电子邮件活动，并通过[通知策略](../../compliance/alert-policies.md)阻止用户。
 
@@ -35,7 +35,7 @@ EOP 使用出站垃圾邮件策略作为组织的整体防御垃圾邮件的一�
 
 管理员可以查看、编辑和配置（但不能删除）默认的出站垃圾邮件策略。 为了更细致，您还可以创建适用于组织中的特定用户、组或域的自定义出站垃圾邮件策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在 Security & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 客户;）中配置出站垃圾邮件策略。适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
+您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用邮箱在 Exchange Online 中配置出站垃圾邮件策略; 独立 EOP PowerShell for 组织，没有 Exchange Online 邮箱）。
 
 ## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Security & 合规性中心与 Exchange online PowerShell 或 Exchange Online Protection PowerShell 中的出站垃圾邮件策略
 
@@ -53,7 +53,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 从安全 & 合规中心删除出站垃圾邮件策略时，将删除出站垃圾邮件筛选器规则和关联的出站垃圾邮件筛选器策略。
 
-在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \*-HostedOutboundSpamFilterPolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \*-HostedOutboundSpamFilterRule** cmdlet 管理出站垃圾邮件筛选器规则。
+在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \* -HostedOutboundSpamFilterPolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \* -HostedOutboundSpamFilterRule** cmdlet 管理出站垃圾邮件筛选器规则。
 
 - 在 PowerShell 中，先创建出站垃圾邮件筛选器策略，然后创建出站垃圾邮件筛选器规则，以标识应用该规则的策略。
 
@@ -113,7 +113,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         根据需要重复执行这些步骤（次数不限）。
 
-        您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
+        您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
      e. 完成时，请单击“保存”****。
 
@@ -136,7 +136,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         根据需要重复执行这些步骤（次数不限）。
 
-        您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请![单击 "](../../media/scc-remove-icon.png)删除" 按钮。
+        您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
      e. 完成时，请单击“保存”****。
 
@@ -167,17 +167,17 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
        - 在下一天，用户将不能再根据 UTC 时间发送更多的邮件。 管理员无法替代此块。
 
-     - **限制用户发送邮件**：发送电子邮件通知，则会将用户添加到 Security & 合规性中心中的 **[受限用户]<https://sip.protection.office.com/restrictedusers> **门户中，并且在管理员将邮件从**受限制的用户**门户中删除之前，用户将无法发送电子邮件。管理员将用户从列表中删除后，该用户将不会再次限制该用户这一天。 有关说明，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
+     - **限制用户发送邮件**：发送电子邮件通知，则会将用户添加到 Security & 合规性中心中的 **[受限用户] <https://sip.protection.office.com/restrictedusers> **门户中，并且在管理员将邮件从**受限制的用户**门户中删除之前，用户将无法发送电子邮件。管理员将用户从列表中删除后，该用户将不会再次限制该用户这一天。 有关说明，请参阅[发送垃圾电子邮件后，从受限用户门户中删除用户](removing-user-from-restricted-users-portal-after-spam.md)。
 
      - **不执行任何操作，仅通知**：发送电子邮件通知。
 
 6. 需要展开 "**应用于**" 部分，以标识应用该策略的内部发件人。
 
-    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _ \<sender1\> _或_ \<sender2\>_）。 不同的条件或例外使用和逻辑（例如， _ \<sender1\> _和_ \<group 1\>的 member_）。
+    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _ \< sender1 \> _或_ \< sender2 \> _）。 不同的条件或例外使用和逻辑（例如， _ \< sender1 \> _和_ \< group 1 \> 的 member_）。
 
     若要查看所有可配置的条件，最简单的方法是单击 **“添加条件”** 三次。 若要删除不需要配置的条件，可以单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
 
-    - **发件人域为**：在 Office 365 中的一个或多个已配置的接受域中指定发件人。 单击 **“添加标记”** 框，以查看并选择域。 如果有多个域，请再次单击 **“添加标记”** 框来选择其他域。
+    - **发件人域为**：指定组织中一个或多个已配置的接受域中的发件人。 单击 **“添加标记”** 框，以查看并选择域。 如果有多个域，请再次单击 **“添加标记”** 框来选择其他域。
 
     - **发件人为**：指定组织中的一个或多个用户。 单击 **“添加标记”**，然后开始键入内容来筛选列表。 再次单击 "**添加标记**" 框以选择 "其他发件人"。
 
@@ -191,7 +191,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开出站垃圾邮件策略：
+2. 在 "**反垃圾邮件设置**" 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开出站垃圾邮件策略：
 
    - 名为 "**出站垃圾邮件筛选器策略**" 的默认策略。
 
@@ -203,7 +203,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开出站垃圾邮件策略：
+2. 在 "**反垃圾邮件设置**" 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开出站垃圾邮件策略：
 
    - 名为 "**出站垃圾邮件筛选器策略**" 的默认策略。
 
@@ -221,7 +221,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开您创建的自定义策略（"**类型**" 列中的值是 "**自定义出站垃圾邮件策略**"）。
+2. 在 "**反垃圾邮件设置**" 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开您创建的自定义策略（"**类型**" 列中的值是 "**自定义出站垃圾邮件策略**"）。
 
 3. 在随即显示的展开策略详细信息中，注意 **“开”** 列中的值。
 
@@ -243,11 +243,11 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 2. 在 "**反垃圾邮件设置**" 页上，找到 "**类型**" 列中的值为 "**自定义出站垃圾邮件策略**" 的策略。 注意 **“优先级”** 列中的值：
 
-   - 具有最高优先级的自定义出站垃圾邮件策略![的值为](../../media/ITPro-EAC-DownArrowIcon.png)向下箭头图标**0**。
+   - 具有最高优先级的自定义出站垃圾邮件策略的值为 ![ 向下箭头图标 ](../../media/ITPro-EAC-DownArrowIcon.png) **0**。
 
-   - 优先级最低的自定义出站垃圾邮件策略具有值![向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png) **n** （例如， ![向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png) **3**）。
+   - 优先级最低的自定义出站垃圾邮件策略具有值 ![ 向上箭头图标 ](../../media/ITPro-EAC-UpArrowIcon.png) **n** （例如， ![ 向上箭头图标 ](../../media/ITPro-EAC-UpArrowIcon.png) **3**）。
 
-   - 如果有三个或更多自定义出站垃圾邮件策略，则在最高和最低![优先级之间的](../../media/ITPro-EAC-UpArrowIcon.png)![策略具有值](../../media/ITPro-EAC-DownArrowIcon.png)向上箭头图标向下![箭头图标**n** （例如，向上箭头图标](../../media/ITPro-EAC-UpArrowIcon.png)![向下箭头图标](../../media/ITPro-EAC-DownArrowIcon.png) **2**）。
+   - 如果有三个或更多自定义出站垃圾邮件策略，则在最高和最低优先级之间的策略具有值 ![ 向上箭头图标 ](../../media/ITPro-EAC-UpArrowIcon.png)![ 向下箭头图标 ](../../media/ITPro-EAC-DownArrowIcon.png) **n** （例如， ![ 向上箭头图标 ](../../media/ITPro-EAC-UpArrowIcon.png)![ 向下箭头图标 ](../../media/ITPro-EAC-DownArrowIcon.png) **2**）。
 
 3. 单击 ![“向上箭头”图标](../../media/ITPro-EAC-UpArrowIcon.png) 或 ![“向下箭头”图标](../../media/ITPro-EAC-DownArrowIcon.png) 在 "优先级" 列表中向上或向下移动自定义出站垃圾邮件策略。
 
@@ -255,7 +255,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开要删除的自定义策略（"**类型**" 列是 "**自定义出站垃圾邮件策略**"）。
+2. 在 "**反垃圾邮件设置**" 页上，单击 " ![ 展开图标 ](../../media/scc-expand-icon.png) " 以展开要删除的自定义策略（"**类型**" 列是 "**自定义出站垃圾邮件策略**"）。
 
 3. 在随即显示的展开策略详细信息中，单击 **“删除策略”**。
 
@@ -279,9 +279,9 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 您可以在 PowerShell 中的新出站垃圾邮件筛选器策略中配置以下设置，这些设置在安全 & 合规性中心中不可用，直到您创建了策略：
 
-  - 将新策略创建为禁用（在**HostedOutboundSpamFilterRule** cmdlet 上_启用_ `$false` ）。
+  - 将新策略创建为禁用（_Enabled_ `$false` 在**HostedOutboundSpamFilterRule** cmdlet 上启用）。
 
-  - 在**HostedOutboundSpamFilterRule** cmdlet 上创建（_优先级_ _ \<编号\>_）过程中设置策略的优先级。
+  - 在**HostedOutboundSpamFilterRule** cmdlet 上创建（_优先级_ _ \< 编号 \> _）过程中设置策略的优先级。
 
 - 在 PowerShell 中创建的新的出站垃圾邮件筛选器策略在安全 & 合规性中心中不可见，除非您将策略分配给垃圾邮件筛选器规则。
 

@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的 Campaigns Views。
-ms.openlocfilehash: 69b11319ffb033b628e59abac931b6a3f30d082c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5441c877dac70330bf1e5653983494be5b1b3293
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637814"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209591"
 ---
 # <a name="campaign-views-in-atp"></a>ATP 中的市场活动视图
 
@@ -54,15 +54,15 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
 ## <a name="campaign-views-the-security--compliance-center"></a>市场活动视图安全 & 合规性中心
 
-"活动" 视图在**威胁管理** \> **市场活动**的[安全性 & 合规性中心](https://protection.office.com)中提供。
+"活动" 视图在**威胁管理**市场活动的[安全性 & 合规性中心](https://protection.office.com)中提供 \> **Campaigns**。
 
 ![安全和合规中心中的活动概述](../../media/campaigns-overview.png)
 
 您还可以从以下来源获取市场活动视图：
 
-- **威胁管理** \> **资源管理器** \> **视图** \> **市场活动**
+- **威胁管理** \>**浏览器** \>**视图** \>**市场活动**
 
-- **威胁管理** \> **资源管理器** \> **查看** \> **所有电子邮件** \> **活动**
+- **威胁管理** \>**浏览器** \>**视图** \>**所有电子邮件** \>**活动**
 
 > [!TIP]
 > 如果看不到任何活动数据，请尝试更改日期范围。
@@ -83,7 +83,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
 - **单击**：在网络钓鱼邮件中单击 URL 的用户数。
 
-- **单击 "速率**：由 '**单击** / **Inboxed**' 计算的百分比。 此值是市场活动的有效性的指标，以及收件人是否能够将邮件标识为网络钓鱼并避免在有效负载 URL 上单击。
+- **单击 "速率**：由 '**单击**  /  **Inboxed**' 计算的百分比。 此值是市场活动的有效性的指标，以及收件人是否能够将邮件标识为网络钓鱼并避免在有效负载 URL 上单击。
 
 - 已**访问**：有多少用户实际将其通过到有效负载网站。 如果有**单击**的值，但安全链接阻止了对网站的访问，则此值将为零。
 
@@ -144,7 +144,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
   <sup>\*\*</sup>检查反垃圾邮件策略，因为应隔离但不传递这些邮件。
 
-- **送达位置**：你希望调查发送到收件人的邮件（发送到收件箱或垃圾邮件文件夹），即使用户未单击邮件中的有效负载 URL。 您还可以从隔离区中删除隔离的邮件。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
+- **送达位置**：你希望调查发送到收件人的邮件（发送到收件箱或垃圾邮件文件夹），即使用户未单击邮件中的有效负载 URL。 您还可以从隔离区中删除隔离的邮件。 有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。
 
   - **已删除文件夹**
 

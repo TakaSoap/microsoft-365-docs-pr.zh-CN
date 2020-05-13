@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的反网络钓鱼保护
+title: 防钓鱼保护
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,13 +18,13 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: 本文介绍可用的联机资源，这些资源可用于在 Microsoft 365 中了解并实施反网络钓鱼选项和策略。
-ms.openlocfilehash: 09d384376b1e44989987c40ef3c7860e4fac6167
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中的反钓鱼防护功能。
+ms.openlocfilehash: c1b9332fc35997dfe1cbfdfbef79e2d7beed736f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033758"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208967"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼保护
 
@@ -38,13 +38,13 @@ ms.locfileid: "44033758"
 
 - 加密您的数据和要求付款以对其进行解密的**勒索软件**几乎总是会开始在网络钓鱼邮件中。 反网络钓鱼防护无法帮助您解密加密文件，但可以帮助检测与勒索软件活动相关联的初始网络钓鱼邮件。 有关从勒索软件攻击中恢复的详细信息，请参阅[Microsoft 365 中的从勒索软件攻击恢复](recover-from-ransomware.md)。
 
-随着攻击的复杂程度的增加，训练有素的用户更难识别复杂的网络钓鱼邮件。 幸运的是，Exchange Online Protection （EOP）和 Microsoft 365 高级威胁防护（ATP）中的其他功能可以提供帮助。
+随着攻击的复杂程度的增加，训练有素的用户更难识别复杂的网络钓鱼邮件。 幸运的是，Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中的其他功能可以提供帮助。
 
 ## <a name="anti-phishing-protection-in-eop"></a>EOP 中的反网络钓鱼保护
 
 EOP （即，没有 ATP 的 Microsoft 365 组织）包含的功能可以帮助您的组织防御网络钓鱼威胁：
 
-- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 - **EOP 中的反网络钓鱼策略**：启用或禁用欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定阻止的欺骗性发件人的操作（移动到 "垃圾邮件" 文件夹或隔离）。 有关详细信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 

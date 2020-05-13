@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 概述 Office 365 高级威胁防护计划2中的自动化调查和响应功能。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 3f8aa761207be61f78eb5f9b5140439c86455bf3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d62d24a8f4cbd0541099ece91e46a23d3fbc786c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035612"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208907"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 中的自动化调查和响应（空气）概述
 
@@ -50,7 +50,7 @@ ms.locfileid: "44035612"
 > [!NOTE]
 > 以星号（*）标记的警报在安全 & 合规性中心（电子邮件通知已关闭）的相应警报策略中被分配了一个*信息性*严重性。 可以通过[报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 使用哈希（#）标记的警报通常是与公共预览版行动手册相关联的警报。
 
-若要查看警报，请在安全 & 合规性中心中，选择 "**通知** > " "**查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](air-view-investigation-results.md#investigation-graph)。  
+若要查看警报，请在安全 & 合规性中心中，选择 "**通知**" "  >  **查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 "**查看调查**" 链接转到相应的[调查](air-view-investigation-results.md#investigation-graph)。  
 
 > [!NOTE]
 > 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
@@ -68,6 +68,7 @@ ms.locfileid: "44035612"
 ### <a name="security-playbooks-are-rolling-out-in-phases"></a>安全行动手册在几个阶段推出
 
 作为空气的一部分，安全行动手册将分阶段推出。 第1阶段现已推出，其中包含多个行动手册，这些操作提供了安全管理员可以查看和批准的操作建议：
+
 - 用户报告的网络钓鱼邮件
 - URL 单击 "判定更改"
 - 恶意软件检测到送达后（恶意软件 ZAP）
@@ -76,6 +77,7 @@ ms.locfileid: "44035612"
 第1阶段还包括对管理员触发的电子邮件调查（使用[威胁资源管理器](threat-explorer.md)）的支持。
 
 第2阶段现在与**公共预览版**中的以下行动手册结合在一起，为操作和 aiding 安全管理员提供调查问题的建议：
+
 - 用户报告为 "已损坏" （公用预览）
 
 在完成后，将立即发布后续行动手册。 访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)以查看计划和即将推出的其他内容。
@@ -83,6 +85,7 @@ ms.locfileid: "44035612"
 ### <a name="playbooks-include-investigation-and-recommendations"></a>行动手册包括调查和建议
 
 在空中，每个安全行动手册包括： 
+
 - 对电子邮件实体（文件、Url、收件人、IP 地址等）的根调查
 - 对组织收到的类似电子邮件的进一步搜寻 
 - 确定并关联其他潜在威胁所需的步骤，以及 
@@ -95,6 +98,7 @@ ms.locfileid: "44035612"
 假定组织中的某个用户收到电子邮件，而他们认为是网络钓鱼尝试。 经过培训的用户报告此类邮件，使用[报告邮件加载项](enable-the-report-message-add-in.md)将其发送到 Microsoft 进行分析。 提交也会发送到您的系统，并在 "**提交**" 视图中显示在资源管理器中（以前称为**用户报告**的视图）。 此外，用户报告的消息现在会触发基于系统的信息警报，这将自动启动调查行动手册。
 
 在根调查阶段，会评估电子邮件的各个方面。 具体包括：
+
 - 确定它可能属于哪种类型的威胁;
 - 发件人数;
 - 发送电子邮件的位置（发送基础结构）;
@@ -110,8 +114,8 @@ ms.locfileid: "44035612"
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
 - 该信号与其他平台（如[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共享。
 - 确定是否有用户通过可疑电子邮件中的任何恶意链接单击过。
-- 通过 Exchange Online Protection （[EOP](exchange-online-protection-eop.md)）和 Office 365 高级威胁防护（[ATP](office-365-atp.md)）进行检查，以查看用户是否报告了任何其他类似的消息。
-- 将执行检查以查看是否已泄露用户。 此检查跨 Office 365、 [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)之间的信号，关联任何相关的用户活动异常。 
+- 通过 Exchange Online Protection （[EOP](exchange-online-protection-overview.md)）和 Office 365 高级威胁防护（[ATP](office-365-atp.md)）进行检查，以查看用户是否报告了任何其他类似的消息。
+- 将执行检查以查看是否已泄露用户。 此检查跨 Office 365、 [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)和[Azure Active Directory](https://docs.microsoft.com/azure/active-directory)之间的信号，关联任何相关的用户活动异常。
 
 在搜寻阶段，会为各种搜寻步骤分配风险和威胁。 
 
@@ -136,4 +140,3 @@ ms.locfileid: "44035612"
 - [开始使用空中](office-365-air.md)
 
 - [访问 Microsoft 365 路线图以了解即将推出和推出的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

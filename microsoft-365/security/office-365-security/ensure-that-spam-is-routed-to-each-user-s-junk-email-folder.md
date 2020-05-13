@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 混合环境中的用户垃圾邮件文件夹。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14193fecf90a6f2ddde05fbfdaded0ff2bcb5875
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036568"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209471"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹
 
@@ -44,7 +44,7 @@ ms.locfileid: "44036568"
 本主题介绍如何在内部部署 Exchange 组织中的 exchange 管理中心（EAC）和 Exchange 命令行管理程序（Exchange PowerShell）中创建这些邮件流规则。
 
 > [!TIP]
-> 您可以在 EOP 中配置反垃圾邮件策略以隔离 EOP 中的垃圾邮件，而不是将邮件传递到本地用户的 "垃圾邮件" 文件夹。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+> 您可以在 EOP 中配置反垃圾邮件策略以隔离 EOP 中的垃圾邮件，而不是将邮件传递到本地用户的 "垃圾邮件" 文件夹。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -60,7 +60,7 @@ ms.locfileid: "44036568"
 
   - 是否在邮箱上启用垃圾邮件规则（_启用_的参数值将在 Exchange 命令行管理[程序的 set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) cmdlet 中 $true）。 它是传递邮件后实际将邮件移动到 "垃圾邮件" 文件夹的垃圾邮件规则。 默认情况下，在邮箱上启用垃圾邮件规则。 有关详细信息，请参阅[在邮箱上配置 Exchange 反垃圾邮件设置](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
-- 若要在 Exchange 服务器上打开 EAC，请参阅 exchange [administration center In Exchange server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 Exchange 命令行管理程序[https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell)，请参阅。
+- 若要在 Exchange 服务器上打开 EAC，请参阅 exchange [administration center In Exchange server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 Exchange 命令行管理程序，请参阅 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
 
 - 有关本地 Exchange 中的邮件流规则的详细信息，请参阅下列主题：
 
@@ -74,7 +74,7 @@ ms.locfileid: "44036568"
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png) "添加" 图标，然后在出现的下拉对话框中选择 "**创建新规则**"。
+2. 单击 "**添加**" "添加" ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) ，然后在出现的下拉对话框中选择 "**创建新规则**"。
 
 3. 在打开的" **新规则**"窗口中，配置以下设置：
 
@@ -88,13 +88,13 @@ ms.locfileid: "44036568"
 
    - 单击“其他选项”****。
 
-   - **在以下情况应用此规则**：选择**邮件标头** \>中**包含这些词语中的任何一个**。
+   - **在以下情况应用此规则**：选择**邮件标头** \> 中**包含这些词语中的任何一个**。
 
      在 "**输入文本头包含**所显示的输入词" 句子中，执行下列步骤：
 
      - 单击 "**输入文本**"。 在出现的 "**指定头名称**" 对话框中，输入**X-Forefront-反垃圾邮件报告**，然后单击 **"确定"**。
 
-     - 单击 "**输入词**"。 在出现的 "**指定字词或短语**" 对话框中，输入一个 EOP 垃圾邮件标头值（**SFV： SPM**， **SFV： SKS**，或**SFV： SKB**） **Add** ![，单击 "](../../media/ITPro-EAC-AddIcon.png)添加" "添加" 图标，然后单击 **"确定"**。
+     - 单击 "**输入词**"。 在出现的 "**指定字词或短语**" 对话框中，输入一个 EOP 垃圾邮件标头值（**SFV： SPM**， **SFV： SKS**，或**SFV： SKB**），单击 "**添加**" ![ "添加 ](../../media/ITPro-EAC-AddIcon.png) " 图标，然后单击 **"确定"**。
 
    - **执行以下**操作：选择 "**修改邮件属性** \> **" 设置垃圾邮件可信度（SCL）**。
 
@@ -132,9 +132,9 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 若要验证是否已成功将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹，请执行以下任一步骤：
 
-- 在 EAC 中，转到 "**邮件流** \> **规则**"，选择规则，然后单击 "**编辑** ![编辑](../../media/ITPro-EAC-EditIcon.png)图标" 以验证设置。
+- 在 EAC 中，转到 "**邮件流** \> **规则**"，选择规则，然后单击 "**编辑** ![ 编辑图标 ](../../media/ITPro-EAC-EditIcon.png) " 以验证设置。
 
-- 在 Exchange 命令行管理程序中\<，\>将 RuleName 替换为邮件流规则的名称，并 rul 以下命令以验证设置：
+- 在 Exchange 命令行管理程序中，将 \< RuleName 替换 \> 为邮件流规则的名称，并 rul 以下命令以验证设置：
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

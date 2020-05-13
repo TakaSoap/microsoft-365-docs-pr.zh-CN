@@ -2,10 +2,10 @@
 title: 将邮件发送到 Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -18,16 +18,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 作为外部发件人学习，如何提高在 Microsoft 365 中向用户传递电子邮件的能力。 此外，还了解如何将垃圾邮件 & 网络钓鱼尝试作为外部用户进行报告。
-ms.openlocfilehash: c1086088a92240be4bb7bbbd52077cecb1c54476
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035380"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209819"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365
 
-这些文章有助于外部发件人改善其信誉，并提高他们向 Office 365 的用户传送电子邮件的能力。 它们还提供了有关如何报告垃圾邮件和网络钓鱼尝试的一些信息，即使你不是 Microsoft 365 用户自己的也是如此。
+这些文章可帮助外部发件人提高其信誉，并提高其在 Microsoft 365 中向用户发送电子邮件的能力。 它们还提供了有关如何报告垃圾邮件和网络钓鱼尝试的一些信息，即使你不是 Microsoft 365 用户自己的也是如此。
 
 如果你不是客户，但正尝试向中的某个人发送邮件，你就是正确的地方。 如果你是管理员，并且需要帮助抵制垃圾邮件，则这不是正确的部分。 相反，请转到[Microsoft 365 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
 

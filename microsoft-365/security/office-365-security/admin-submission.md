@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的管理员提交
+title: 管理员提交
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,17 +16,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何将可疑电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件从公司的公司提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 79f200963655e5fb07a04b686c1dd8cc3bbd0873
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
+ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034196"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209747"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
-如果您是使用 Exchange Online 中的邮箱的 Microsoft 365 组织中的管理员，则可以使用安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交给 Microsoft 进行扫描。
+在 Exchange Online 中有邮箱的 Microsoft 365 组织中，管理员可以使用安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交给 Microsoft 进行扫描。
 
 当您提交电子邮件时，您将获得可能允许传入的电子邮件进入租户的任何策略的信息，以及对邮件中的任何 Url 和附件的检查。 可能允许邮件的策略包括单个用户的安全发件人列表和租户级策略，如 Exchange 邮件流规则（也称为传输规则）。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44034196"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**提交**页面，请<https://protection.office.com/reportsubmission>使用。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**提交**页面，请使用 <https://protection.office.com/reportsubmission> 。
 
 - 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反垃圾邮件策略，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -42,7 +42,7 @@ ms.locfileid: "44034196"
 
 ## <a name="report-suspicious-content-to-microsoft"></a>向 Microsoft 报告可疑内容
 
-1. 在安全 & 合规性中心中，转到 "**威胁管理** \> "**查看** \> **管理员提交消息**。
+1. 在安全 & 合规性中心中，转到 "**威胁管理**" \> **查看** \> **管理员提交消息**。
 
 2. 在显示的 "**提交**" 页面上，单击 "**新建提交**" 按钮。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44034196"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
-1. 在 "**对象类型**" 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL （例如， <https://www.fabrikam.com/marketing.html>）。
+1. 在 "**对象类型**" 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL （例如， <https://www.fabrikam.com/marketing.html> ）。
 
 2. 在 "**提交原因**" 部分，选择下列选项之一：
 
@@ -104,11 +104,11 @@ ms.locfileid: "44034196"
 
 ## <a name="view-admin-submissions"></a>查看管理提交
 
-1. 在安全 & 合规性中心中，转到 "**威胁管理** \> "**查看** \> **管理员提交消息**。
+1. 在安全 & 合规性中心中，转到 "**威胁管理**" \> **查看** \> **管理员提交消息**。
 
 2. 在显示的 "**提交**" 页面上，验证 "**管理员提交**" 选项卡是否已选中。
 
-在页面顶部附近，可以输入开始日期、结束日期和（默认情况下）可以通过在框中输入值并单击!["刷新" 按钮](../../media/scc-quarantine-refresh.png)按**提交 ID**进行筛选。 Update
+在页面顶部附近，可以输入开始日期、结束日期和（默认情况下）可以通过在框中输入值并单击 "刷新" 按钮按**提交 ID**进行筛选 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要更改筛选条件，请单击 "**提交 ID** " 按钮，然后选择下列值之一：
 
@@ -116,7 +116,7 @@ ms.locfileid: "44034196"
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- "状态"
+- **Status**
 
 ![用于管理提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
 
@@ -130,7 +130,7 @@ ms.locfileid: "44034196"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- "日期"
+- **Date**
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **主题**<sup>\*</sup>
@@ -150,7 +150,7 @@ ms.locfileid: "44034196"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- "日期"
+- **Date**
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **URL**<sup>\*</sup>
@@ -165,7 +165,7 @@ ms.locfileid: "44034196"
 
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
-- "日期"
+- **Date**
 - **提交 ID**
 - **提交者**<sup>\*</sup>
 - **文件名**<sup>\*</sup>
@@ -178,7 +178,7 @@ ms.locfileid: "44034196"
 
 如果已部署[报告邮件加载项](enable-the-report-message-add-in.md)，或者用户在[Web 上使用 Outlook 中的内置报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)功能，则可以在 "**用户提交**" 选项卡上查看要报告的用户。
 
-1. 在安全 & 合规性中心中，转到 "**威胁管理** \> "**查看** \> **管理员提交消息**。
+1. 在安全 & 合规性中心中，转到 "**威胁管理**" \> **查看** \> **管理员提交消息**。
 
 2. 在出现的 "**提交**" 页面上，单击 "**用户提交**" 选项卡。
 
@@ -193,12 +193,12 @@ ms.locfileid: "44034196"
 
 <sup>\*</sup>如果单击此值，则会在浮出控件中显示详细信息。
 
-在页面顶部附近，可以输入开始日期、结束日期和（默认情况下），您可以通过在框中输入值并单击!["刷新" 按钮](../../media/scc-quarantine-refresh.png)来筛选**发件人**。 Update
+在页面顶部附近，可以输入开始日期、结束日期和（默认情况下），您可以通过在框中输入值并单击 "刷新" 按钮来筛选**发件人** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要更改筛选条件，请单击 "**发件人**" 按钮，然后选择下列值之一：
 
 - **发件人域**
-- **主题**
+- **Subject**
 - **提交者**
 - **提交类型**
 - **发件人 IP**
@@ -211,7 +211,7 @@ ms.locfileid: "44034196"
 
 如果您已[将自定义邮箱配置](user-submission.md)为接收用户报告的邮件，则可以查看并提交传递到报告邮箱的邮件。
 
-1. 在安全 & 合规性中心中，转到 "**威胁管理** \> "**查看** \> **管理员提交消息**。
+1. 在安全 & 合规性中心中，转到 "**威胁管理**" \> **查看** \> **管理员提交消息**。
 
 2. 在显示的 "**提交**" 页面上，单击 "**自定义邮箱**" 选项卡。
 
@@ -224,7 +224,7 @@ ms.locfileid: "44034196"
 - **发件人 IP**<sup>\*</sup>
 - **提交类型**
 
-在页面顶部附近，可以输入开始日期和结束日期，您可以通过在框中输入值并单击!["刷新" 按钮](../../media/scc-quarantine-refresh.png)来按**提交的**方式进行筛选。 Update
+在页面顶部附近，可以输入开始日期和结束日期，您可以通过在框中输入值并单击 "刷新" 按钮来按**提交的**方式进行筛选 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要导出结果，请单击页面顶部附近的 "**导出**"，然后选择 "**图表数据**" 或 "**表格**"。 在出现的对话框中，保存 .csv 文件。
 

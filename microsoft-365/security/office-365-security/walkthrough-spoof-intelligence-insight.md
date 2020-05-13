@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 了解新的欺骗智能洞察力的工作方式，包括如何快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。
+description: 管理员可以了解欺骗性智能洞察力的工作原理，包括如何快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 481d248b833c7910152cd39113ff32fdc1217a5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033640"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208460"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>演练-在 Microsoft 365 中 ATP 欺骗智能洞察力
 
@@ -35,7 +35,7 @@ ms.locfileid: "44033640"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**安全仪表板**页面， <https://protection.office.com/searchandinvestigation/dashboard>请使用。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**安全仪表板**页面，请使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
 
   您可以从安全 & 合规中心的多个仪表板中查看欺骗性智能洞察力。 无论您正在查看哪个仪表板，真知灼见都会提供相同的详细信息，并允许您快速执行相同的任务。
 
@@ -69,7 +69,7 @@ ms.locfileid: "44033640"
 
    **域对**是 "发件人" 地址和发送基础结构的组合：
 
-   - 发件人地址是在电子邮件客户端中显示的发件人的电子邮件地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 此地址也称为`5322.From`地址。
+   - 发件人地址是在电子邮件客户端中显示的发件人的电子邮件地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 此地址也称为 `5322.From` 地址。
 
    - 发送方结构或发件人是发送 IP 地址的反向 DNS 查找（PTR 记录）的组织域。 如果发送 IP 地址没有 PTR 记录，则发件人由使用 CIDR 表示法（/24）中的255.255.255.0 子网掩码的发送 IP 进行标识。 例如，如果 IP 地址为192.168.100.100，则发件人的完整 IP 地址为 192.168.100.100/24。
 

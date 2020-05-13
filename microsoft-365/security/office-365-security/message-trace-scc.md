@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 12600eeb5242f0de5fc187be81b9311d4f9cb645
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e78d3361306a93542302e29ff5c1fac4e2262b2f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635312"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209423"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -27,11 +27,11 @@ Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递�
 Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）中提供的原始邮件跟踪之后改进。 您可以使用邮件跟踪中的信息来有效地回答有关邮件发生的问题、解决邮件流问题以及验证策略更改的用户问题。
 
 > [!NOTE]
-> * 若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>* 结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
+> •若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 
-1. 在上<https://protection.office.com>打开安全 & 合规性中心。
+1. 在上打开安全 & 合规性中心 <https://protection.office.com> 。
 
 2. 展开 "**邮件流**"，然后选择 "**邮件跟踪**"。
 
@@ -39,7 +39,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 从这里，可以通过单击 "**启动跟踪**" 按钮来启动新的默认跟踪。 这将在最近两天内搜索所有发件人和收件人的所有邮件。 或者，您可以使用可用查询类别中的一个存储查询，也可以按自己的方式运行这些查询，也可以将它们用作自己的查询的起始点：
 
-- **默认查询**： Office 365 提供的内置查询。
+- **默认查询**： Microsoft 365 提供的内置查询。
 
 - **自定义查询**：组织在组织中保存以供将来使用的查询。
 
@@ -58,7 +58,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 - 对于**以下人员**：在此字段中单击以选择组织中的一个或多个收件人。
 
 > [!NOTE]
-> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（例如， `*@contoso.com`），但不能同时在同一字段中使用多个通配符条目。 <br/><br/> 可以粘贴多个发件人或收件人列表，用`;`分号（）分隔。 空格（`\s`）、回车符（`\r`）或下一行（`\n`）。
+> 您还可以键入外部发件人和收件人的电子邮件地址。 支持通配符（例如， `*@contoso.com` ），但不能同时在同一字段中使用多个通配符条目。 <br/><br/> 可以粘贴多个发件人或收件人列表，用分号（ `;` ）分隔。 空格（ `\s` ）、回车符（ `\r` ）或下一行（ `\n` ）。
 
 ### <a name="time-range"></a>时间范围
 
@@ -94,11 +94,11 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **失败**：邮件未送达。
 
-- 已**隔离**：邮件被隔离（如垃圾邮件、批量邮件或网络钓鱼）。 有关详细信息，请参阅[在 Office 365 中隔离电子邮件消息](quarantine-email-messages.md)。
+- 已**隔离**：邮件被隔离（如垃圾邮件、批量邮件或网络钓鱼）。 有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。
 
 - **筛选为垃圾**邮件：邮件已标识为垃圾邮件，已被拒绝或阻止（未隔离）。
 
-- **获取状态：** 该邮件最近由 Office 365 接收，但其他状态数据仍不可用。 请在几分钟后回来查看。
+- **获取状态：** Microsoft 365 最近收到了邮件，但其他状态数据仍不可用。 请在几分钟后回来查看。
 
 **注意**：**作为垃圾邮件****挂起、** **隔离**和筛选的值仅适用于少于10天的搜索。 此外，实际和报告的传递状态之间可能有5到10分钟的延迟。
 
@@ -106,7 +106,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 这是在邮件头的**邮件 id：** 头字段中找到的 INTERNET 邮件 id （也称为客户端 ID）。 用户可为您提供此值来调查特定邮件。
 
-该值在邮件生存期内是常量。 对于在 Microsoft 365 或 Exchange 中创建的邮件，值的格式`<GUID@ServerFQDN>`为，包括尖括号（\< \>）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他邮件系统可能使用不同的语法或值。 此值应是唯一的，但并不是所有的电子邮件系统都严格遵守此要求。 如果**邮件 ID：** 标头字段不存在或对于来自外部源的传入邮件为空，则分配一个任意值。
+该值在邮件生存期内是常量。 对于在 Microsoft 365 或 Exchange 中创建的邮件，值的格式为 `<GUID@ServerFQDN>` ，包括尖括号（ \< \> ）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他邮件系统可能使用不同的语法或值。 此值应是唯一的，但并不是所有的电子邮件系统都严格遵守此要求。 如果**邮件 ID：** 标头字段不存在或对于来自外部源的传入邮件为空，则分配一个任意值。
 
 使用**邮件 ID**筛选结果时，请务必包含完整的字符串，包括任何尖括号。
 
@@ -126,7 +126,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **摘要**：如果时间范围少于10天，且不需要其他筛选选项，则为可用。 搜索结果几乎会在您单击 "**搜索**" 之后立即可用。 该报告最大返回20000个结果。
 
-- **增强的摘要**或**扩展**：这些报告仅可用作可下载的 CSV 文件，并且需要一个或多个以下筛选选项，而不考虑时间范围：**由这些人员**、**这些**人员或**邮件 ID**。 您可以对发件人或收件人使用通配符（例如， \*@contoso .com）。 增强的摘要报告将返回最高为50000的结果。 扩展报告将返回最大为1000的结果。
+- **增强的摘要**或**扩展**：这些报告仅可用作可下载的 CSV 文件，并且需要一个或多个以下筛选选项，而不考虑时间范围：**由这些人员**、**这些**人员或**邮件 ID**。 您可以对发件人或收件人使用通配符（例如， \* @contoso .com）。 增强的摘要报告将返回最高为50000的结果。 扩展报告将返回最大为1000的结果。
 
 **注意**：
 
@@ -152,7 +152,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **日期**：服务收到邮件的日期和时间（使用配置的 UTC 时区）。
 
-- **发件人**：发件人的电子邮件地址（*别名*@*域*）。
+- **发件人**：发件人的电子邮件地址（*别名* @ *域*）。
 
 - **收件人**：收件人或收件人的电子邮件地址。 对于发送给多个收件人的邮件，每个收件人有一行。 如果收件人是通讯组、动态通讯组或启用邮件的安全组，则该组将成为第一个收件人，然后组中的每个成员都在单独的行中。
 
@@ -172,7 +172,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 相关邮件记录是共享同一邮件 ID 的记录。 请记住，即使在两个人之间发送的单个邮件也可以生成多个记录。 当邮件受到通讯组展开、转发、邮件流规则（也称为传输规则）等的影响时，将增加记录数。
 
-选中行的复选框后，可以通过单击显示的 "**查找相关**" 按钮，或选择 "**更多选项** ![](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> " 来查找**此邮件的相关记录**，从而查找邮件的相关记录。
+选中行的复选框后，可以通过单击显示的 "**查找相关**" 按钮，或选择 "**更多选项**" 来查找 ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **此邮件的相关记录**，从而查找邮件的相关记录。
 
 有关邮件 ID 的详细信息，请参阅本主题前面的邮件 ID 一节。
 
@@ -182,7 +182,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - 选择行（单击除复选框之外的任何位置）。
 
-- 选中该行的复选框，然后单击 "更多](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **选项** !["**查看详细信息**。
+- 选中该行的复选框，然后单击 "**更多选项**" 查看详细 ![ ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **信息**。
 
    ![在摘要报告邮件跟踪中双击行后的详细信息将导致安全 & 合规性中心](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
@@ -226,11 +226,11 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 可用（已完成）增强的摘要报告可在开始邮件跟踪的**可下载报告**部分中找到。 报告中提供了以下信息：
 
-- **origin_timestamp**<sup>*</sup>：服务最初接收邮件时使用配置的 UTC 时区的日期和时间。
+- **origin_timestamp** <sup>*</sup> ：服务最初接收邮件时使用配置的 UTC 时区的日期和时间。
 
-- **sender_address**：发件人的电子邮件地址（*别名*@*域*）。
+- **sender_address**：发件人的电子邮件地址（*别名* @ *域*）。
 
-- **Recipient_status**：将邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \<*电子邮件地址*\>##\<*状态*\>。 例如：
+- **Recipient_status**：将邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \< *电子邮件地址* \> ## \< *状态* \> 。 例如：
 
   - **# #Receive，Send**表示该邮件由服务接收，并发送到预定的目标。
 
@@ -244,7 +244,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **message_id**：此值在本主题前面的[邮件 id](#message-id)部分中进行了描述。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
 
-- **network_message_id**：在由于分叉或通讯组扩展而可能创建的邮件的所有副本中保持的唯一邮件 id 值。 示例值为`1341ac7b13fb42ab4d4408cf7f55890f`。
+- **network_message_id**：在由于分叉或通讯组扩展而可能创建的邮件的所有副本中保持的唯一邮件 id 值。 示例值为 `1341ac7b13fb42ab4d4408cf7f55890f` 。
 
 - **original_client_ip**：发件人客户端的 ip 地址。
 
@@ -252,7 +252,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **connector_id**：源或目标连接器的名称。 有关 Exchange Online 连接器的详细信息，请参阅[在 Office 365 中使用连接器配置邮件流](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
-- **delivery_priority**<sup>*</sup>：邮件是以**高**、**低**还是**普通**优先级发送。
+- **delivery_priority** <sup>*</sup> ：邮件是以**高**、**低**还是**普通**优先级发送。
 
 <sup>*</sup>这些属性仅在增强的摘要报告中可用。
 
@@ -290,7 +290,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **recipient_count**：邮件中的总收件人数。
 
-- **related_recipient_address**：与`EXPAND`、 `REDIRECT`和`RESOLVE`事件一起用来显示与邮件相关联的其他收件人电子邮件地址。
+- **related_recipient_address**：与 `EXPAND` 、 `REDIRECT` 和事件一起用 `RESOLVE` 来显示与邮件相关联的其他收件人电子邮件地址。
 
 - **参考**：此字段包含特定事件类型的其他信息。 例如：
 
@@ -308,15 +308,15 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
     对于其他类型的事件，此字段通常为空。
 
-- **return_path**：发送邮件的 "**邮件发件**人" 命令指定的返回电子邮件地址。 虽然此字段永远不为空，但它可以有表示为`<>`的 null 发件人地址值。
+- **return_path**：发送邮件的 "**邮件发件**人" 命令指定的返回电子邮件地址。 虽然此字段永远不为空，但它可以有表示为的 null 发件人地址值 `<>` 。
 
 - **message_info**：有关邮件的其他信息。 例如：
 
-  - 的消息起始日期-时间（ `DELIVER` UTC）和`SEND`事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 `yyyy-mm-ddThh:mm:ss.fffZ`UTC 日期-时间以 ISO 8601 日期-时间格式表示：，其中`yyyy` = year， `mm` = month， `dd` = day， `T`表示时间部分的开始， `hh` = 小时， `mm` = 分钟， `ss` = second， `fff` = 秒的小数， `Z`表示`Zulu`，这是表示 UTC 的另一种方法。
+  - 的消息起始日期-时间（UTC） `DELIVER` 和 `SEND` 事件。 源日期-时间是邮件第一次进入 Exchange Online 组织的时间。 UTC 日期-时间以 ISO 8601 日期-时间格式表示： `yyyy-mm-ddThh:mm:ss.fffZ` ，其中 `yyyy` = year， `mm` = month， `dd` = day， `T` 表示时间部分的开始， `hh` = 小时， `mm` = 分钟， `ss` = second， `fff` = 秒的小数， `Z` 表示 `Zulu` ，这是表示 UTC 的另一种方法。
 
-  - 身份验证错误。 例如，您可能会看到值`11a`和身份验证错误发生时使用的身份验证类型。
+  - 身份验证错误。 例如，您可能会看到值和身份验证 `11a` 错误发生时使用的身份验证类型。
 
-- **tenant_id**：一个表示 Exchange Online 组织的 GUID 值（例如`39238e87-b5ab-4ef6-a559-af54c6b07b42`）。
+- **tenant_id**：一个表示 Exchange Online 组织的 GUID 值（例如 `39238e87-b5ab-4ef6-a559-af54c6b07b42` ）。
 
 - **original_server_ip**：原始服务器的 ip 地址。
 
@@ -324,18 +324,18 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="custom_data-values"></a>custom_data 值
 
-各种**custom_data** Exchange Online 代理使用`AGENTINFO`事件的 custom_data 字段来记录消息处理详细信息。 以下各节中介绍了一些更有趣的代理。
+**custom_data** `AGENTINFO` 各种 Exchange Online 代理使用事件的 custom_data 字段来记录消息处理详细信息。 以下各节中介绍了一些更有趣的代理。
 
 #### <a name="spam-filter-agent"></a>垃圾邮件筛选器代理
 
-以**custom_data**来自垃圾邮件筛选器`S:SFA`代理的开头的 custom_data 值。 下表介绍了关键详细信息：
+以**custom_data** `S:SFA` 来自垃圾邮件筛选器代理的开头的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
 |`SFV=NSPM`|邮件被标记为非垃圾邮件并发送给预期收件人。|
-|`SFV=SPM`|邮件由内容筛选器标记为垃圾邮件。|
+|`SFV=SPM`|邮件被反垃圾邮件筛选（也称为内容筛选）标记为垃圾邮件。|
 |`SFV=BLK`|跳过筛选但阻止邮件，因为它是由已阻止发件人发送。|
-|`SFV=SKS`|邮件在内容筛选器处理之前被标记为垃圾邮件。这包括符合以下传输规则条件的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
+|`SFV=SKS`|在反垃圾邮件筛选处理之前，邮件被标记为垃圾邮件。 这包括符合以下邮件流程规则条件（也称为传输规则）的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
 |`SCL=<number>`|有关不同的 SCL 值及其含义的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。|
 |`PCL=<number>`|邮件的仿冒可能性等级 (PCL) 值。可按照[垃圾邮件可信度](spam-confidence-levels.md)中介绍 SCL 值的方式对这些值做出解释。  |
 |`DI=SB`|已阻止邮件发件人。|
@@ -355,7 +355,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="malware-filter-agent"></a>恶意软件筛选器代理
 
-以**custom_data**其开头`S:AMA`的 custom_data 值来自恶意软件筛选器代理。 下表介绍了关键详细信息：
+以其开头的**custom_data**值 `S:AMA` 来自恶意软件筛选器代理。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|
@@ -378,7 +378,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 #### <a name="transport-rule-agent"></a>传输规则代理
 
-从**custom_data**邮件流规则的传输`S:TRA`规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
+**custom_data** `S:TRA` 从邮件流规则的传输规则代理（也称为传输规则）开始的 custom_data 值。 下表介绍了关键详细信息：
 
 |**值**|**说明**|
 |:-----|:-----|

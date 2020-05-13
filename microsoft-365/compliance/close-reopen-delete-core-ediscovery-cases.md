@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭事例、重新打开已关闭事例和删除案例。
-ms.openlocfilehash: 41ba622a58b0abb5ce668e6d94d89b1694a328c9
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551368"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208414"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示事例
 
@@ -42,7 +42,7 @@ ms.locfileid: "43551368"
 
 若要关闭事例：
   
-1. 在 Microsoft 365 合规性输入中，单击 "**电子数据展示** > **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
+1. 在 Microsoft 365 合规性中心中，单击 "**电子数据展示**  >  **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
 
 2. 单击要关闭的事例的名称。
 
@@ -66,7 +66,7 @@ ms.locfileid: "43551368"
 
 重新打开案例时，将不会自动恢复已关闭事例的任何电子数据展示保留。 重新打开案例后，必须转到 "**保留**" 页面并打开以前的保留。 若要打开保留，请选择它以显示弹出页面，然后将**状态**切换设置为 **"开**"。
   
-1. 在 Microsoft 365 合规性输入中，单击 "**电子数据展示** > **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
+1. 在 Microsoft 365 合规性中心中，单击 "**电子数据展示**  >  **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
 
 2. 单击要重新打开的事例的名称。
 
@@ -102,7 +102,7 @@ ms.locfileid: "43551368"
 
 删除案例：
 
-1. 在 Microsoft 365 合规性输入中，单击 "**电子数据展示** > **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
+1. 在 Microsoft 365 合规性中心中，单击 "**电子数据展示**  >  **核心**" 以显示您的组织中的核心电子数据展示事例的列表。
 
 2. 单击要删除的事例的名称。
 

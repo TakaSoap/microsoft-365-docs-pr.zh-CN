@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
-ms.openlocfilehash: 1967d17ab24c991d38a7c5881d3cff87750084c3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166073"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208136"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
@@ -61,10 +61,10 @@ ms.locfileid: "44166073"
     
 2. 在 Excel 中打开 .txt 文件，然后使用下表中的信息编辑包含每个搜索的信息的文件。 
     
-    |**参数**|**说明**|
+    |**Parameter**|**说明**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |用户邮箱的 SMTP 地址。  <br/> |
-    | `SharePointLocation` <br/> |用户的 OneDrive for business 网站的 URL 或组织中任何网站的 URL。 对于 OneDrive for business 网站的 URL，请使用以下格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `。 例如，`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
+    | `SharePointLocation` <br/> |用户的 OneDrive for business 网站的 URL 或组织中任何网站的 URL。 对于 OneDrive for business 网站的 URL，请使用以下格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例如，`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |
     | `ContentMatchQuery` <br/> |搜索的搜索查询。 有关创建搜索查询的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。  <br/> |
     | `StartDate` <br/> |对于电子邮件，收件人接收或发送邮件的日期或发件人发送邮件的日期。 对于 SharePoint 或 OneDrive for Business 网站上的文档，上次修改文档的日期或文档之后的日期。  <br/> |
     | `EndDate` <br/> |对于电子邮件，由用户发送的邮件发送的日期或之前的日期。 对于 SharePoint 或 OneDrive for Business 网站上的文档，上次修改文档的日期或之前的日期。  <br/> |
@@ -72,24 +72,10 @@ ms.locfileid: "44166073"
 3. 将 Excel 文件作为 CSV 文件保存到本地计算机上的文件夹中。 您在步骤3中创建的脚本将使用此 CSV 文件中的信息来创建搜索。 
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2：连接到安全与合规中心 PowerShell
-
-下一步是连接到组织的安全 & 合规性中心 PowerShell。
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `ConnectSCC.ps1`。 将文件保存到在步骤1中保存 CSV 文件的文件夹。
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. 在本地计算机上，打开 Windows PowerShell，转到上一步中创建的脚本所在的文件夹，然后运行该脚本;例如：
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+下一步是连接到组织的安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+  
+如果你的 Microsoft 365 帐户使用多重身份验证 (MFA) 或联合身份验证，则无法使用上一主题中有关连接到安全与合规中心 PowerShell 的说明。 请改为参阅主题[使用多重身份验证连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell) 中的说明。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步骤3：运行脚本以创建并启动搜索
 
@@ -97,11 +83,11 @@ ms.locfileid: "44166073"
   
 - **搜索组 ID** -此名称提供了一种简单的方法来组织从 CSV 文件创建的搜索。 创建的每个搜索都使用搜索组 ID 命名，然后将数字追加到搜索名称。 例如，如果您为搜索组 ID 输入 " **ContosoCase** "，则会将搜索命名为**ContosoCase_1**、 **ContosoCase_2**、 **ContosoCase_3**等。 请注意，键入的名称区分大小写。 在第4步和第5步中使用搜索组 ID 时，必须使用与创建时相同的大小写。 
     
-- **Csv 文件**-您在步骤1中创建的 CSV 文件的名称。 确保包含使用完整文件名，包括 .csv 文件扩展名;例如， `ContosoCase.csv`。
+- **Csv 文件**-您在步骤1中创建的 CSV 文件的名称。 确保包含使用完整文件名，包括 .csv 文件扩展名;例如， `ContosoCase.csv` 。
     
 若要运行该脚本，请执行下列操作：
 
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `CreateSearches.ps1`。 将文件保存到保存其他文件的同一文件夹中。
+1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `CreateSearches.ps1` 。 将文件保存到保存其他文件的同一文件夹中。
     
   ```Powershell
   # Get the Search Group ID and the location of the CSV input file
@@ -184,9 +170,9 @@ ms.locfileid: "44166073"
     .\CreateSearches.ps1
     ```
 
-3. 在**搜索组 ID**提示符处，键入搜索组名称，然后按**enter**键;例如， `ContosoCase`。 请注意，此名称区分大小写，因此必须在后续步骤中以相同的方式键入此名称。
+3. 在**搜索组 ID**提示符处，键入搜索组名称，然后按**enter**键;例如， `ContosoCase` 。 请注意，此名称区分大小写，因此必须在后续步骤中以相同的方式键入此名称。
     
-4. 在**源 CSV 文件**提示符处，键入 csv 文件的名称，包括 .csv 文件扩展名;例如， `ContosoCase.csv`。
+4. 在**源 CSV 文件**提示符处，键入 csv 文件的名称，包括 .csv 文件扩展名;例如， `ContosoCase.csv` 。
     
 5. 按**enter**以继续运行该脚本。 
     
@@ -198,7 +184,7 @@ ms.locfileid: "44166073"
 
 创建搜索后，下一步是运行一个脚本，该脚本显示在步骤3中创建的每个搜索的搜索命中次数的简单报告。 该报告还包括每个搜索的结果大小，以及所有搜索的总点击数和总大小。 运行报告脚本时，系统会提示输入搜索组 ID，如果您想要将报告保存到 CSV 文件中，则会提示您输入 CSV 文件名。
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `SearchReport.ps1`。 将文件保存到保存其他文件的同一文件夹中。
+1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `SearchReport.ps1` 。 将文件保存到保存其他文件的同一文件夹中。
     
   ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
@@ -259,9 +245,9 @@ ms.locfileid: "44166073"
     .\SearchReport.ps1
     ```
 
-3. 在**搜索组 ID**提示符处，键入搜索组名称，然后按**enter**键;例如`ContosoCase`。 请注意，此名称区分大小写，因此您必须按照在第3步中运行脚本时的相同方式键入此名称。
+3. 在**搜索组 ID**提示符处，键入搜索组名称，然后按**enter**键;例如 `ContosoCase` 。 请注意，此名称区分大小写，因此您必须按照在第3步中运行脚本时的相同方式键入此名称。
     
-4. 如果要将报告保存**到 csv 文件（保留为空以显示报告）** 提示符，请在要将报告保存到 csv 文件中时，键入完整文件名 path （包括 .csv 文件扩展名）的文件名。 CSV 文件的名称，包括 .csv 文件扩展名。 例如，可以键入`ContosoCaseReport.csv`将其保存到当前目录中，也可以键入`C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv`以将其保存到其他文件夹。 您也可以将提示留空以显示报告，但不将其保存到文件中。 
+4. 如果要将报告保存**到 csv 文件（保留为空以显示报告）** 提示符，请在要将报告保存到 csv 文件中时，键入完整文件名 path （包括 .csv 文件扩展名）的文件名。 CSV 文件的名称，包括 .csv 文件扩展名。 例如，可以键入将 `ContosoCaseReport.csv` 其保存到当前目录中，也可以键入以 `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` 将其保存到其他文件夹。 您也可以将提示留空以显示报告，但不将其保存到文件中。 
     
 5. 按 Enter**** 键。
     
@@ -276,7 +262,7 @@ ms.locfileid: "44166073"
 
 由于您可能要创建大量搜索，因此此最后的脚本可以轻松地快速删除在步骤3中创建的搜索。 与其他脚本一样，这也会提示您输入搜索组 ID。 运行此脚本时，搜索名称中包含搜索组 ID 的所有搜索都将被删除。 
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `DeleteSearches.ps1`。 将文件保存到保存其他文件的同一文件夹中。
+1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `DeleteSearches.ps1` 。 将文件保存到保存其他文件的同一文件夹中。
     
   ```Powershell
   # Delete all searches in a search group
@@ -298,7 +284,7 @@ ms.locfileid: "44166073"
     .\DeleteSearches.ps1
     ```
 
-3. 在**搜索组 ID**提示符处，键入要删除的搜索的搜索组名称，然后按**enter**;例如， `ContosoCase`。 请注意，此名称区分大小写，因此您必须按照在第3步中运行脚本时的相同方式键入此名称。
+3. 在**搜索组 ID**提示符处，键入要删除的搜索的搜索组名称，然后按**enter**;例如， `ContosoCase` 。 请注意，此名称区分大小写，因此您必须按照在第3步中运行脚本时的相同方式键入此名称。
     
     该脚本显示删除的每个搜索的名称。
     

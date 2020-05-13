@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Office 365 保护的应用程序顺序，以及保护策略中的优先级值如何确定要应用的策略。
-ms.openlocfilehash: 856b3bc39cd971e605cd9f1c0f31554a853c1b67
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）中保护的应用程序顺序，以及保护策略中的优先级值如何确定应用的策略。
+ms.openlocfilehash: 176d39a240d49e0118b4bb8e8cee52a6e7c61b0e
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036712"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209435"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
-作为 Microsoft 365 用户，您的入站电子邮件可能会被多种保护形式标记。 例如，可供所有 Microsoft 365 客户使用的内置 EOP 反网络钓鱼策略，以及 Office 365 高级威胁防护客户也可以使用的更强健的 ATP 反网络钓鱼策略。 邮件还会通过多个检测扫描，针对恶意软件、垃圾邮件、网络钓鱼等。在所有此活动中，可能会对应用的策略产生一些混淆。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，入站电子邮件可能会被多种保护形式标记。 例如，可供所有 Microsoft 365 客户使用的内置 EOP 反网络钓鱼策略，以及在 Office 365 高级威胁防护（Office 365 ATP）客户中也可以使用的更强健的 ATP 反网络钓鱼策略。 邮件还会通过多个检测扫描，针对恶意软件、垃圾邮件、网络钓鱼等。在所有此活动中，可能会对应用的策略产生一些混淆。
 
 通常情况下，应用于邮件的策略在**CAT （Category）** 属性的**X-Forefront-反垃圾邮件报告**标头中标识。 有关详细信息，请参阅[反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
@@ -35,20 +35,20 @@ ms.locfileid: "44036712"
 
   |||||
   |---|---|---|---|
-  |**优先级**|**电子邮件保护**|**类别**|**管理位置**|
-  |1|恶意软件|CAT： MALW|[在 Office 365 中配置反恶意软件策略](configure-anti-malware-policies.md)|
-  |双面|网络钓鱼|CAT： PHSH|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |第三章|高可信度垃圾邮件|CAT： HSPM|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |4 |网络钓鱼|分类程序：欺骗|[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)|
-  |5 |垃圾邮件|CAT： SPM|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |6 |批量邮件|分类程序：批量|[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |步<sup>\*</sup>|域模拟（受保护的用户）|DIMP|[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
-  |utf-8<sup>\*</sup>|用户模拟（受保护的域）|UIMP|[在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |**Priority**|**电子邮件保护**|**类别**|**管理位置**|
+  |1|恶意软件|CAT： MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
+  |双面|网络钓鱼|CAT： PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |第三章|高可信度垃圾邮件|CAT： HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |4 |网络钓鱼|分类程序：欺骗|[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)|
+  |5 |垃圾邮件|CAT： SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |6 |批量邮件|分类程序：批量|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |步<sup>\*</sup>|域模拟（受保护的用户）|DIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |utf-8<sup>\*</sup>|用户模拟（受保护的域）|UIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
   |
 
   <sup>\*</sup>这些功能仅在 ATP 反网络钓鱼策略中可用。
 
-- **策略的优先级**：对于每种保护类型（反垃圾邮件、反恶意软件、反网络钓鱼等），都有一个适用于每个人的默认策略，但您通常可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
+- **策略的优先级**：对于每种保护类型（反垃圾邮件、反恶意软件、反网络钓鱼等），都有一个适用于每个人的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
 
   如果用户是在同一类型的多个策略中定义的，则仅对其应用具有最高优先级的策略。 不会为用户计算任何其他类型的策略（包括默认策略）。
 
@@ -56,7 +56,7 @@ ms.locfileid: "44036712"
 
   |||||
   |---|---|---|---|
-  |**ATP 反网络钓鱼策略**|**优先级**|**用户模拟**|**反欺骗**|
+  |**ATP 反网络钓鱼策略**|**Priority**|**用户模拟**|**反欺骗**|
   |策略 A|1|开|关闭|
   |Policy B|双面|关|开|
   |

@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 设置连接器以将 Twitter 数据导入 Microsoft 365，以便您可以使用合规性功能，如合法保留、内容搜索和保留策略。
-ms.openlocfilehash: 5fb13b3a5eb79c09c2947292b793fe607dae247f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: efc02dcf7b9c40fafedf230e4786f6f6494c27d6
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035124"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210578"
 ---
-# <a name="set-up-a-connector-to-archive-twitter-data"></a>设置连接器以存档 Twitter 数据
+# <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>设置连接器以存档 Twitter 数据（预览）
 
 使用 Microsoft 365 合规性中心中的连接器将来自 Twitter 的数据导入和存档到 Microsoft 365。 设置和配置连接器后，它会连接到您的组织的 Twitter 帐户（定期），将项目的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱。
 
@@ -82,7 +82,7 @@ ms.locfileid: "44035124"
 
 - tenantId：在第1步中创建 Azure Active Directory 中的 Twitter 应用之后复制的 Microsoft 365 组织的租户 ID。
 
-完成此步骤后，请务必复制 app Service URL （例如`https://twitterconnector.azurewebsites.net`）。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
+完成此步骤后，请务必复制 app Service URL （例如 `https://twitterconnector.azurewebsites.net` ）。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
 
 ## <a name="step-3-create-developer-app-on-twitter"></a>步骤3：在 Twitter 上创建开发人员应用
 
@@ -128,6 +128,6 @@ ms.locfileid: "44035124"
 
 在完成此步骤（按照分步说明操作）后，您将提供以下信息（在完成这些步骤后，您已将其复制到文本文件中）。
 
-- Azure 应用服务 URL （在步骤2中获取; 例如， `https://twitterconnector.azurewebsites.net`）
+- Azure 应用服务 URL （在步骤2中获取; 例如， `https://twitterconnector.azurewebsites.net` ）
 
 - APISecretKey （您在步骤2中创建）

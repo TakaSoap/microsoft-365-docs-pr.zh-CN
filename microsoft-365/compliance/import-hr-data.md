@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 118e2a8ad4ff134a4529e3ffc95fa22cdb7cbdaf
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173482"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210568"
 ---
-# <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
+# <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以导入 HR 数据（预览）
 
 您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源（HR）数据，例如，员工提交其让步的日期以及员工最后一天的日期。 这样，Microsoft 信息保护解决方案（如新的[内幕风险管理解决方案](insider-risk-management.md)）可以使用这种 HR 数据来帮助您的组织防止恶意活动或组织内的数据被盗。 设置 HR 连接器包含在 Azure Active Directory 中创建一个应用程序，该应用程序用于按连接器进行身份验证，创建包含 HR 数据的 CSV 映射文件，在合规性中心中创建一个数据连接器，然后在 CSV 文件中将 HR 数据 ingests 为 Microsoft 云。 然后，使用数据连接器 Microsoft 合规性解决方案（如内幕风险管理）访问导入到 Microsoft 365 组织的 HR 数据。
 
@@ -64,8 +64,8 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 |**列名称**|**说明**|
 |:-----|:-----|
 | **EmailAddress** <br/> |指定已终止的雇员的电子邮件地址。|
-| **TerminationDate** <br/> |指定在您的组织中正式终止此人的雇佣的日期。 例如，这可能是员工在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 必须使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，即[ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-|**LastWorkingDate**|指定终止的员工的最后一天的工作。 必须使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`，即[ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **TerminationDate** <br/> |指定在您的组织中正式终止此人的雇佣的日期。 例如，这可能是员工在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+|**LastWorkingDate**|指定终止的员工的最后一天的工作。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
 创建具有所需 HR 数据的 CSV 文件后，将其存储在与步骤4中运行的脚本相同的系统上。 您还应实现更新策略，以确保 CSV 文件始终包含最新信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
@@ -74,7 +74,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 下一步是在 Microsoft 365 合规性中心中创建 HR 连接器。 在步骤4中运行脚本后，您创建的 HR 连接器会将 HR 数据从 CSV 文件中接收到 Microsoft 365 组织。 在此步骤中，请务必复制创建连接器时生成的 JobId。 运行该脚本时，您将使用 JobId。
 
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击左侧导航中的 "**数据连接器**"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击左侧导航中的 "**数据连接器**"。
 
 2. 在**HR**下的 "**数据连接器（预览）** " 页上，单击 "**查看**"。
 
@@ -118,7 +118,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 4. 如有必要，请修改组织的示例脚本。
 
-5. 使用文件名后缀将文本文件另存为 Windows PowerShell 脚本文件`.ps1`;例如， `HRConnector.ps1`。
+5. 将文本文件另存为 Windows PowerShell 脚本文件，方法是使用文件名后缀 `.ps1` ; 例如， `HRConnector.ps1` 。
 
 6. 在本地计算机上打开命令提示符，并转到保存该脚本的目录。
 
@@ -130,7 +130,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    下表介绍了要与此脚本一起使用的参数及其必需的值。 您在前面步骤中获取的信息用于这些参数的值。
 
-   |**参数**|**说明**
+   |**Parameter**|**说明**
    |:-----|:-----|:-----|
    |`tenantId`|这是您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的**概述**边栏上获取您的组织的 tenantId。 这用于标识你的组织。|
    |`appId` |这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
@@ -151,7 +151,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 创建 HR 连接器并运行脚本以上载您的 HR 数据后，您可以在 Microsoft 365 合规性中心查看连接器和上传状态。 如果将脚本安排为定期自动运行，还可以在上次脚本运行之后查看当前状态。
 
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并单击左侧导航中的 "**数据连接器**"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并单击左侧导航中的 "**数据连接器**"。
 
 2. 单击 "**连接器**" 选项卡，然后选择 HR 连接器以显示弹出页面，其中包含有关连接器的属性和信息。
 
@@ -199,7 +199,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    a. 在 "**操作**" 下拉列表中，确保选择 "**启动程序**"。
 
-   b. 在 "**程序/脚本**" 框中，单击 "**浏览**"，然后转到以下位置并选择它，以使路径显示在`C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe`框中：。
+   b. 在 "**程序/脚本**" 框中，单击 "**浏览**"，然后转到以下位置并选择它，以使路径显示在框中： `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` 。
 
    c. 在 "**添加参数（可选）** " 框中，粘贴您在步骤4中运行的相同脚本命令。 例如，`.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 

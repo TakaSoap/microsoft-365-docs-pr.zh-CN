@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 设计独立的 SharePoint Online 团队网站，包括确定权限级别、向具有访问组的用户分配权限以及嵌套的 Azure AD 组。
-ms.openlocfilehash: 4663a0b9710fc05d0b063a3100d3b5ac223a2161
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 821e15a05bc80e3795f9e18d4457416baf7145b7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034836"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209507"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的 SharePoint Online 团队网站
 
@@ -63,15 +63,15 @@ ms.locfileid: "44034836"
   
 使用默认 SharePoint 组作为示例：
   
-- 网站名称> 成员 SharePoint 组的成员（可包含用户帐户和组）被分配有**编辑**权限级别** \<**
+- ** \< 网站名称> 成员**SharePoint 组的成员（可包含用户帐户和组）被分配有**编辑**权限级别
     
-- **网站名称> 访问者 SharePoint 组的成员（可包含用户帐户和组）被分配有读取权限级别\<** **Read**
+- ** \< 网站名称> 访问者**SharePoint 组的成员（可包含用户帐户和组）被分配有**读取**权限级别
     
-- " ** \<网站名称> 所有者**" SharePoint 组的成员（可包含用户帐户和组）被分配了 "**完全控制**" 权限级别
+- " ** \< 网站名称> 所有者**" SharePoint 组的成员（可包含用户帐户和组）被分配了 "**完全控制**" 权限级别
     
  **最佳实践：** 虽然您可以通过单个用户帐户管理权限，但我们建议您改用一个 Azure AD 组（称为 "访问组"）。 这简化了通过访问组中的成员资格管理权限，而不是管理每个 SharePoint 组的用户帐户列表。
   
-Microsoft 365 的 Azure AD 组与 Microsoft 365 组不同。 Azure AD 组显示在 Microsoft 365 管理中心中，其**类型**设置为 "**安全性**"，并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组：
+适用于 Microsoft 365 的 Azure AD 组与 Microsoft 365 组不同。 Azure AD 组显示在 Microsoft 365 管理中心中，其**类型**设置为 "**安全性**"，并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组：
   
 - Active Directory 域服务 (AD DS)
     
@@ -99,9 +99,9 @@ Microsoft 365 的 Azure AD 组与 Microsoft 365 组不同。 Azure AD 组显示�
   
 在设计三个访问组时，请记住以下几点：
   
-- 与管理团队网站的少数 SharePoint Online 管理员相对应的** \<站点名称> 管理员**访问组中应该只有少数成员。
+- 与管理团队网站的少数 SharePoint Online 管理员相对应的** \< 站点名称> 管理员**访问组中应该只有少数成员。
     
-- 大多数网站成员都在** \<网站名称> 成员**或** \<网站名称> 查看者**访问组中。 由于** \<网站名称> 成员**访问组中的网站成员具有删除或修改网站中的资源的能力，因此请仔细考虑其成员资格。 如果不确定，请将网站成员添加到** \<网站名称> 查看者**访问组中。
+- 大多数网站成员都在** \< 网站名称> 成员**或** \< 网站名称> 查看者**访问组中。 由于** \< 网站名称> 成员**访问组中的网站成员具有删除或修改网站中的资源的能力，因此请仔细考虑其成员资格。 如果不确定，请将网站成员添加到** \< 网站名称> 查看者**访问组中。
     
 下面的示例展示了名为 ProjectX 的独立网站的 SharePoint 组和访问组。
   

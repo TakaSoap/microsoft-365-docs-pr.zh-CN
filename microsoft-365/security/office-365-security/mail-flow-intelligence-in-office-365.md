@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用连接器（也称为 "邮件流智能"）相关联的邮件传递相关的错误代码。
-ms.openlocfilehash: aa156299dcc835369b7eb69bb5719b27078d8404
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635632"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206612"
 ---
-# <a name="mail-flow-intelligence"></a>邮件流智能
+# <a name="mail-flow-intelligence-in-eop"></a>EOP 中的邮件流智能
 
-通常情况下，使用连接器将组织中的电子邮件路由到本地电子邮件环境。 您还可以使用连接器将来自 Microsoft 365 的邮件路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们将在 Microsoft 365 中排队。 Microsoft 365 将继续为每封邮件重新尝试传递24小时。 24小时后，排队的邮件将会过期，并且邮件将在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回到原始发件人。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，通常使用连接器将电子邮件从 EOP 路由到本地电子邮件环境。 您还可以使用连接器将来自 Microsoft 365 的邮件路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们将在 Microsoft 365 中排队。 Microsoft 365 将继续为每封邮件重新尝试传递24小时。 24小时后，排队的邮件将会过期，并且邮件将在未送达报告（也称为 "NDR" 或 "退回邮件"）中返回到原始发件人。
 
 当无法使用连接器传递邮件时，Microsoft 365 将生成错误。 本主题中介绍了最常见的错误及其解决方案。 通过连接器发送的未送达邮件的排队和通知错误称为 "_邮件流智能_"。
 
@@ -72,9 +72,9 @@ ms.locfileid: "43635632"
 
     2. 选择 "**发件人**" 值为 " **Office 365** " 的连接器，然后选择 "**到**" 值**您组织的电子邮件服务器**，然后执行以下步骤之一：
 
-       - 通过单击 "**删除** ![删除" 图标删除连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - 通过单击 "**删除** ![ 删除" 图标删除连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 通过单击 "**编辑** ![编辑图标](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) " 和 "取消选中" 禁用连接器以将**其关闭**。
+       - 通过单击 "**编辑** ![ 编辑图标" 和 "取消选中" 禁用连接器以将 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) **其关闭**。
 
   - 将与您的本地电子邮件环境关联的 Microsoft 365 中的接受域从**内部中继**更改为**权威**。 有关说明，请参阅[在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
@@ -86,7 +86,7 @@ ms.locfileid: "43635632"
 
 通常情况下，此错误意味着 Microsoft 365 连接到目标电子邮件服务器，但服务器响应直接错误，或者不符合连接要求。 错误详细信息将对问题进行说明。 例如：
 
-- 目标电子邮件服务器响应 "服务不可用" 错误，指示服务器无法维护与 Office 365 的通信。
+- 目标电子邮件服务器响应 "服务不可用" 错误，指示服务器无法维护与 Microsoft 365 的通信。
 
 - 连接器配置为需要 TLS，但目标电子邮件服务器不支持 TLS。
 
@@ -102,15 +102,15 @@ ms.locfileid: "43635632"
 
 - 您的防火墙使用 SMTP 数据包检查规则，这些规则不能正常运行。
 
-- 您的内部部署电子邮件服务器不能正常运行（例如，服务挂起、崩溃或系统资源不足），这会导致服务器超时并关闭与 Office 365 的连接。
+- 您的内部部署电子邮件服务器不能正常运行（例如，服务挂起、崩溃或系统资源不足），这会导致服务器超时并关闭与 Microsoft 365 的连接。
 
-- 您的本地环境和 Office 365 之间存在网络问题。
+- 您的本地环境和 Microsoft 365 之间存在网络问题。
 
 ### <a name="how-do-i-fix-error-code-450-44318"></a>如何修复错误代码 450 4.4.318？
 
 - 查找适用于您的方案，并进行必要的更正。
 
-- 如果问题是由于您的本地环境和 Office 365 之间的网络问题导致的，请联系网络团队以解决此问题。
+- 如果问题是由于您的本地环境和 Microsoft 365 之间的网络问题导致的，请联系网络团队以解决此问题。
 
 - 如果错误来自你的合作伙伴组织（例如，第三方云服务提供商），你需要联系合作伙伴以解决问题。
 

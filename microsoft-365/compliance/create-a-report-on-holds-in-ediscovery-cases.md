@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: 使用本文中的脚本生成一个报告，该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: 9fa4bab745a3f956b32deb1dab1a1d909cecf08a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942895"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208374"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
   
@@ -41,27 +41,9 @@ ms.locfileid: "43942895"
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤1：连接到安全 & 合规性中心 PowerShell
 
-第一步是连接到您的组织的安全 & 合规中心。
+第一步是连接到组织的安全 & 合规性中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `ConnectSCC.ps1`。 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. 在本地计算机上，打开 Windows PowerShell 并转到保存该脚本的文件夹。 
-    
-3. 运行脚本;例如：
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. 当系统提示你输入凭据时，请输入你的电子邮件地址和密码，然后单击 **"确定"**。 
+如果你的 Microsoft 365 帐户使用多重身份验证 (MFA) 或联合身份验证，则无法使用上一主题中有关连接到安全与合规中心 PowerShell 的说明。 请改为参阅主题[使用多重身份验证连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell) 中的说明。
   
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>步骤2：运行脚本以报告与电子数据展示事例相关联的保留
 
@@ -172,9 +154,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     > [!TIP]
     > 若要将报告保存在脚本所在的同一文件夹中，请在系统提示输入目标文件夹时键入句点（"."）。 若要将报告保存在脚本所在的文件夹的子文件夹中，只需键入子文件夹的名称即可。 
   
-    脚本开始收集组织中所有电子数据展示事例的相关信息。 在运行脚本时不访问报告文件。 脚本完成后，将在 Windows PowerShell 会话中显示一条确认消息。 显示此消息后，您可以访问您在步骤4中指定的文件夹中的报告。 报告的文件名为`CaseHoldsReport<DateTimeStamp>.csv`。
+    脚本开始收集组织中所有电子数据展示事例的相关信息。 在运行脚本时不访问报告文件。 脚本完成后，将在 Windows PowerShell 会话中显示一条确认消息。 显示此消息后，您可以访问您在步骤4中指定的文件夹中的报告。 报告的文件名为 `CaseHoldsReport<DateTimeStamp>.csv` 。
 
-    此外，该脚本还将创建一个报告，其中包含不包含任何保留的案例列表。 此报告的文件名为`CaseswithNoHolds<DateTimeStamp>.csv`。
+    此外，该脚本还将创建一个报告，其中包含不包含任何保留的案例列表。 此报告的文件名为 `CaseswithNoHolds<DateTimeStamp>.csv` 。
     
     下面的示例展示了如何运行 CaseHoldsReport 脚本。 
     

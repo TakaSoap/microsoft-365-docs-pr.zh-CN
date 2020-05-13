@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: 0db7019b607388b7c62fe19210b85b8410083f32
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2d011fcb63e0ec9804ade62f9fdcd1dd95fbf798
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035480"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210521"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -47,14 +47,14 @@ Microsoft 365 使管理员能够从社交媒体平台、即时消息平台和文
 
 - **在安全 & 合规性中心中使用第三方数据连接器：** 使用 Microsoft 365 合规性中心提供的自定义数据连接器。 在设置并配置连接器后，它会连接到第三方数据源，将项目的内容转换为电子邮件格式，然后将该项目导入到 Microsoft 365 中的邮箱中。 目前，您可以实现连接器以导入和存档来自 Facebook 商业页面、公司 Twitter 帐户、LinkedIn、即时 Bloomberg 和组织的人力资源（HR）数据的数据。 有关设置这些连接器之一的分步说明，请参阅：
 
-   - **Facebook：** [使用连接器存档 Facebook 数据](archive-facebook-data-with-sample-connector.md)
+   - **Facebook：** [使用连接器存档 Facebook 数据（预览）](archive-facebook-data-with-sample-connector.md)
 
-   - **Twitter：** [使用连接器存档 Twitter 数据](archive-twitter-data-with-sample-connector.md)
+   - **Twitter：** [使用连接器存档 Twitter 数据（预览）](archive-twitter-data-with-sample-connector.md)
 
    - **LinkedIn：** [设置用于存档 LinkedIn 数据的连接器](archive-linkedin-data.md)
 
    - **即时 Bloomberg：** [设置连接器以存档即时 Bloomberg 数据](archive-instant-bloomberg-data.md)
 
-   - **HR 数据：** [设置连接器以导入 HR 数据](import-hr-data.md)
+   - **HR 数据：** [设置连接器以导入 HR 数据（预览）](import-hr-data.md)
 
 - **与 Microsoft 合作伙伴合作：** 您的组织与 Microsoft 合作伙伴合作，该合作伙伴将提供一个自定义连接器，该连接器将配置为定期从第三方数据源提取项目，然后通过第三方 API 连接到 Microsoft 云，并将这些项目导入到 Microsoft 365。 合作伙伴连接器还将项目的内容从第三方数据源转换为电子邮件，然后将其导入到 Microsoft 365 中的邮箱。 有关您可以使用的合作伙伴列表和此方法的分步过程，请参阅[在 Microsoft 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。

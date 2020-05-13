@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何使用和管理欺骗智能以防范电子邮件欺骗。
-ms.openlocfilehash: 32a7668edced5c9dbca2f7b16ff00253b56a5988
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）中的欺骗智能，可以在其中允许或阻止特定的欺骗性发件人。
+ms.openlocfilehash: 607c11d82a145828af736d8d1ecab1dff367f94d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034240"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206636"
 ---
-# <a name="configure-spoof-intelligence-in-microsoft-365"></a>在 Microsoft 365 中配置欺骗智能
+# <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
-如果您是 Exchange Online 邮箱或独立 Exchange Online Protection （EOP）客户（没有 Exchange Online 邮箱）的 Microsoft 365 客户，则入站电子邮件将自动受 EOP 到10月2018的欺骗保护。 EOP 在组织对网络钓鱼的整体防护过程中使用欺骗智能。 有关详细信息，请参阅[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，入站电子邮件将自动受 EOP 到10月2018的欺骗保护。 EOP 在组织对网络钓鱼的整体防护过程中使用欺骗智能。 有关详细信息，请参阅[EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 当发件人假冒电子邮件地址时，它们似乎是组织的某个域中的用户，或者是外部域中向您的组织发送电子邮件的用户。 欺骗发件人以发送垃圾邮件或网络钓鱼电子邮件的攻击者需要阻止。 但在某些情况下，合法发件人是欺骗的。 例如：
 
@@ -50,26 +50,26 @@ ms.locfileid: "44034240"
 
 欺骗性智能，特别是默认（仅适用于）欺骗智能策略，可帮助确保合法发件人发送的欺骗电子邮件不会在 Microsoft 365 或外部电子邮件系统中出现垃圾邮件筛选器，同时保护您的用户免受垃圾邮件或网络钓鱼攻击。
 
-您可以在 Microsoft 365 Security & 合规中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 客户;）中管理欺骗情报;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
+您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用 Exchange Online 中的邮箱; 独立 EOP PowerShell for 组织，无需 Exchange Online 邮箱）中管理欺骗智能。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。 若要直接转到 "**反钓鱼**" 页面， <https://protection.office.com/antiphishing>请使用。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。 若要直接转到 "**反钓鱼**" 页面，请使用 <https://protection.office.com/antiphishing> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对欺骗智能策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅 [Office 365 安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 必须先分配有权限，然后才能执行这些过程。 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对欺骗智能策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 有关我们针对欺骗情报的建议设置，请[EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>使用安全 & 合规性中心管理欺骗性发件人
 
 > [!NOTE]
-> 如果您拥有 Office 365 企业版 E5 订阅或已单独购买和高级威胁防护（ATP）加载项，则还可以管理通过[欺骗性智能洞察力](walkthrough-spoof-intelligence-insight.md)欺骗您的域的发件人。
+> 如果你拥有 Microsoft 365 企业版 E5 订阅或单独购买了 Office 365 高级威胁防护（Office 365 ATP）加载项，则还可以通过[欺骗性智能洞察力](walkthrough-spoof-intelligence-insight.md)管理正在欺骗你的域的发件人。
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 "**反垃圾邮件设置**" 页上![，单击](../../media/scc-expand-icon.png) "展开图标" 以展开 "**欺骗智能策略**"。
+2. 在 "**反垃圾邮件设置**" 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开 "**欺骗智能策略**"。
 
    ![选择欺骗性智能策略](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -83,13 +83,13 @@ ms.locfileid: "44034240"
    - **您的域**：发件人哄骗内部域中的用户。
    - **外部域**：发件人哄骗外部域中的用户。
 
-5. 单击!["](../../media/scc-expand-icon.png) **允许欺骗"** 列中的 "展开图标"。 选择 **"是"** 允许欺骗发件人，或选择 "**否**" 将邮件标记为 "欺骗"。 该操作由默认的反网络钓鱼策略或自定义 ATP 反网络钓鱼策略控制（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 单击 ![ ](../../media/scc-expand-icon.png) "**允许欺骗"** 列中的 "展开图标"。 选择 **"是"** 允许欺骗发件人，或选择 "**否**" 将邮件标记为 "欺骗"。 该操作由默认的反网络钓鱼策略或自定义 ATP 反网络钓鱼策略控制（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。 有关详细信息，请参阅[反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
    ![显示欺骗性发件人浮出控件以及是否允许发件人欺骗的屏幕截图](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    下表中说明了您看到的列和值：
 
-   - **欺骗用户**：被欺骗的用户帐户。 这是电子邮件客户端中显示的发件人地址（ `5322.From`也称为地址）中的邮件发件人。 SPF 不会检查此地址的有效性。
+   - **欺骗用户**：被欺骗的用户帐户。 这是电子邮件客户端中显示的发件人地址（也称为地址）中的邮件发件人 `5322.From` 。 SPF 不会检查此地址的有效性。
 
      - 在 "**您的域**" 选项卡上，值包含一个电子邮件地址，或者如果源电子邮件服务器正在哄骗多个用户帐户，则它包含**多**个用户帐户。
 
@@ -150,13 +150,13 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-2. 编辑 CSV 文件以添加或修改**SpoofedUser** （电子邮件地址）和**AllowedToSpoof** （是或否）值。 保存文件，读取文件，并将内容存储为名为`$UpdateSpoofedSenders`的变量：
+2. 编辑 CSV 文件以添加或修改**SpoofedUser** （电子邮件地址）和**AllowedToSpoof** （是或否）值。 保存文件，读取文件，并将内容存储为名为的变量 `$UpdateSpoofedSenders` ：
 
    ```powershell
    $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
    ```
 
-3. 使用`$UpdateSpoofedSenders`变量配置欺骗性智能策略：
+3. 使用 `$UpdateSpoofedSenders` 变量配置欺骗性智能策略：
 
    ```powershell
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
@@ -178,7 +178,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 若要验证您是否已使用允许且不允许欺骗的发件人配置了欺骗智能，并且您已配置了欺骗性智能设置，请执行以下任一步骤：
 
-- 在安全 & 合规性中心中，转**到威胁管理** \> **策略** \> **反垃圾邮件** \>展开**欺骗智能策略** \>选择 "**显示我已审阅** \>的发件人"。选中 "您的**域**或**外部域**" 选项卡，并验证发件人的 "是否**允许欺骗？** " 值。
+- 在安全 & 合规性中心中，转**到威胁管理** \> **策略** \> **反垃圾邮件** \> 展开**欺骗智能策略** \> 选择 "**显示我已审阅的发件人** \> "。选中 "**您的域**或**外部域**" 选项卡，并验证发件人的 "是否**允许欺骗？** " 值。
 
 - 在 PowerShell 中，运行以下命令以查看允许且不允许欺骗的发件人：
 
@@ -212,7 +212,7 @@ Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
     - 从列表中选择一个策略。 在出现的浮出控件中，验证**欺骗**部分中的值。
     - 单击 "**默认策略**"。 在出现的浮出控件中，验证**欺骗**部分中的值。
 
-  - 在 Exchange Online PowerShell 中， \<将\> Name 替换为 Office365 AntiPhish 默认值或自定义 ATP 反网络钓鱼策略的名称，然后运行以下命令并验证设置：
+  - 在 Exchange Online PowerShell 中，将 \< Name 替换 \> 为 Office365 AntiPhish 默认值或自定义 ATP 反网络钓鱼策略的名称，然后运行以下命令并验证设置：
 
     ```PowerShell
     Get-AntiPhishPolicy -Identity "<Name>"

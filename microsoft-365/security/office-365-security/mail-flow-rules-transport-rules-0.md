@@ -1,5 +1,5 @@
 ---
-title: 邮件流规则（传输规则）-Exchange Online Protection
+title: EOP 中的邮件流规则
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: 可以使用邮件流规则（传输规则）识别通过组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 8cb28a1f198d0717d2373de8f2b9cb048b6ff7df
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8eb4b805065ef1e279c5bbdab17a86b29aacc17b
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036181"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209687"
 ---
-# <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Exchange Online Protection 中的邮件流规则（传输规则）
+# <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>独立 EOP 中的邮件流规则（传输规则）
 
-您可以使用邮件流规则（也称为传输规则）识别通过组织的邮件并对其执行操作。 邮件流规则与 Outlook 和 Web 上的 Outlook 中提供的收件箱规则类似。 主要区别在于邮件流规则在邮件传输过程中对其进行操作，而不是在邮件传递到邮箱后进行操作。 邮件流规则包含更丰富的条件、例外和操作集，让你能灵活实现多种类型的邮件策略。
+在独立的 Exchange Online Protection （EOP）组织中，如果没有 Exchange Online 邮箱，则可以使用邮件流规则（也称为传输规则）来识别通过组织传递的邮件并对其执行操作。
 
-本文介绍了邮件流规则的组件及其工作方式。
+本主题介绍了邮件流规则的组件及其工作方式。
 
 有关创建、复制和管理邮件流规则的步骤，请参阅[在 Exchange Online 中管理邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，请参阅[在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)[测试邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和策略提示。
 
@@ -39,13 +39,13 @@ ms.locfileid: "44036181"
 
 - [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
-- [在 Office 365 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)
+- [在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)
 
 - [通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件的威胁](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
 - [定义用于在 Office 365 中加密或解密电子邮件的规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
-以下视频演示了如何设置 Exchange Online Protection 中的邮件流规则。
+以下视频演示了如何在独立 EOP 中设置邮件流规则。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -55,13 +55,13 @@ ms.locfileid: "44036181"
 
 - **条件**：确定要向其应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。
 
-有关 Exchange Online Protection 中的邮件流规则条件的详细信息，请参阅[Exchange online 中的邮件流规则条件和例外（谓词）](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+有关独立 EOP 中的邮件流规则条件的详细信息，请参阅[mail flow rule 条件 and 例外（谓词）在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
 - **例外**：（可选）标识操作不应应用于的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。
 
 - **操作**：指定要对与规则中的条件匹配的邮件执行的操作，并且不匹配任何例外。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。
 
-有关 Exchange Online Protection 中可用的邮件流规则操作的详细信息，请参阅[Exchange online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+有关独立 EOP 中可用的邮件流规则操作的详细信息，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
 - **属性**：指定不是条件、例外或操作的其他规则设置。 例如，应何时应用规则、是否强制实施或测试规则，以及规则可用的时间段。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44036181"
 
 |**EAC 中的属性名称**|**PowerShell 中的参数名称**|**说明**|
 |:-----|:-----|:-----|
-|**优先级**|_Priority_|指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。   <br/><br/> 通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。在 PowerShell中，可设置优先级编号（0 表示最高优先级）。   <br/><br/> 例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。  |
+|**优先级**|_Priority_|指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。   <br/><br/> 通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。 在 PowerShell 中，设置优先级编号（0为最高优先级）。 <br/><br/> 例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。  |
 |**模式**|_Mode_|可以指定是否让规则立即处理邮件，或是否在不影响邮件传递（启用或不启用数据丢失防护或 DLP 策略提示）的情况下测试规则。 <br/><br/> 策略提示在 Outlook 或 Web 上的 Outlook 中显示简短说明，该说明可提供有关邮件创建者可能违反策略的信息。有关详细信息，请参阅 **Policy Tips** 。  <br/><br/> 有关模式的详细信息，请参阅 **Test a mail flow rule** 。|
 |**在以下日期激活此规则** <br/><br/> **在以下日期停用此规则**|_ActivationDate_ <br/> _ExpiryDate_|指定启用该规则的日期范围。|
 |选中或未选中 **On** 复选框|新规则： **new-transportrule** cmdlet 上的_Enabled_参数。 <br/><br/> 现有规则：使用 **Enable-TransportRule** 或 **Disable-TransportRule** cmdlet。 <br/><br/> 该值显示在规则的 **State** 属性中。|可以创建一个禁用规则，并在准备测试它时将其启用。或者，在不删除该规则的情况下将其禁用，以保留设置。|
@@ -95,15 +95,13 @@ ms.locfileid: "44036181"
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>如何将邮件流规则应用于邮件
 
-All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. 规则是按照 EAC 中的 "**邮件流** \> **规则**" 页上列出的顺序或根据 PowerShell 中相应的_优先级_参数值进行处理的。
+All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. 规则是按照 EAC 中 "**邮件流**规则" 页上列出的顺序进行处理 \> **Rules** ，还是根据 PowerShell 中相应的_优先级_参数值进行处理。
 
 每个规则还提供在规则匹配时停止处理其他规则的选项。此设置对于匹配多个邮件流规则中条件的邮件而言非常重要（想要哪个规则应用于邮件？全部？还是一个？）。
 
 ### <a name="differences-in-processing-based-on-message-type"></a>基于消息类型的处理的差异
 
 通过组织进行传递的邮件有几种类型。下表显示了哪些邮件类型可以通过邮件流规则进行处理。
-
-****
 
 |**消息类型**|**是否可以应用规则？**|
 |:-----|:-----|
@@ -114,7 +112,7 @@ All messages that flow through your organization are evaluated against the enabl
 |**明文签名的邮件**：已签名但未加密的邮件。|是|
 |**UM 邮件**：由统一消息服务创建或处理的邮件，如语音邮件、传真、未接来电通知以及使用 Microsoft Outlook voice Access 创建或转发的邮件。|是|
 |**匿名邮件**：由匿名发件人发送的邮件。|是|
-|**阅读报告**：为响应发件人的阅读回执请求而生成的报告。 读取报告具有或`IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead`的邮件类。|是|
+|**阅读报告**：为响应发件人的阅读回执请求而生成的报告。 读取报告具有或的邮件类 `IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead` 。|是|
 
 ## <a name="what-else-should-i-know"></a>我还应该知道些什么？
 

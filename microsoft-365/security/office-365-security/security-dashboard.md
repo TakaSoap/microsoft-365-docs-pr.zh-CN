@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: 3b6d754505d0e23f1080520e66061b8f6fef523e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632513"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208032"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -35,7 +35,7 @@ ms.locfileid: "43632513"
 
 根据您组织的订阅包括的内容，安全仪表板包含多个小部件，如威胁管理摘要、威胁保护状态、全球每周威胁检测、恶意软件等，如以下各节中所述。
 
-若要查看安全仪表板，请在[安全性 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)中，转到 "**威胁管理** \> "**仪表板**。
+若要查看安全仪表板，请在[安全性 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)中，转到 "**威胁管理**" \> **仪表板**。
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员或安全读者才能查看安全仪表板。 某些小部件需要其他权限才能查看。 若要了解详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -61,7 +61,7 @@ ms.locfileid: "43632513"
 
 ![威胁防护状态小部件](../../media/tpswidget.png)
 
-详细信息取决于您的 Microsoft 365 订阅是否包含具有或不包含[Office 365 高级威胁防护](office-365-atp.md)（ATP）的[Exchange Online Protection](exchange-online-protection-eop.md) （EOP）。
+详细信息取决于您的 Microsoft 365 订阅是否包含具有或不包含[Office 365 高级威胁防护](office-365-atp.md)（ATP）的[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）。
 
 |||
 |---|---|
@@ -82,7 +82,7 @@ ms.locfileid: "43632513"
 
 |||
 |---|---|
-|**多重**|**如何计算**|
+|**跃点数**|**如何计算**|
 |扫描的邮件|扫描的电子邮件数乘以收件人数|
 |威胁已停止|被标识为包含恶意软件的电子邮件数乘以收件人数|
 |由[ATP](office-365-atp.md)阻止|由 ATP 阻止的电子邮件数乘以收件人数|

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e49b80cc873887cf9cc447a28ac2a274034176fc
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 49b5491cb67f447bf8cca1d88aab807c1bf30624
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066235"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208384"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -97,7 +97,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 
 通信合规性策略跨多个通信通道扫描和捕获邮件，以帮助您快速查看和修正合规性问题：
 
-- **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 现在，策略将自动扫描策略中定义的特定用户的所有 Microsoft 团队频道和团队，从而无需为 Microsoft 工作组工作分配保留单独的映射列表。
+- **Microsoft 团队**：针对公共和私有[microsoft 团队](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)频道和个人聊天的聊天通信在通信合规性中支持作为独立频道源或其他 Microsoft 365 服务。 当您选择要在通信合规性策略中监督的用户和组时，需要手动添加各个用户、通讯组或特定的 Microsoft 团队频道。
 - **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和合规性报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
 - **Yammer**：通信合规性策略支持[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的专用邮件和公共社区对话。 Yammer 是一个可选的频道，并且必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)以支持邮件和附件的扫描。
 - **Skype For Business online**：通信合规性策略支持在[Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中扫描聊天通信和关联的附件。

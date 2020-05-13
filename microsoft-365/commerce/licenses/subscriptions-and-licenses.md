@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: '了解 Microsoft 365 for business 中的订阅和许可证，并了解谁可以分配许可证以及在将许可证分配给某人时，会发生什么情况。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 1508daa6dae30c35a9517fceb81b0a4d2b4a7f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5178b25de6f66968f8a89c7b2c34ee466f8855bd
+ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635432"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44211434"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解 Microsoft 365 for business 中的订阅和许可证
 
@@ -37,7 +37,7 @@ ms.locfileid: "43635432"
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 完成购买后，为这些人员创建帐户，然后将许可证分配给每个人。 当您的组织需求发生变化时，您可以购买更多许可证以适应新人员，或在某人离开你的组织时将许可证重新分配给其他用户。 
 
-如果你有多个订阅，可以为每个订阅将许可证分配给不同的人员。 例如，您的所有用户都可以作为 Microsoft 365 业务标准订阅的一部分分配给所有 Microsoft 365 应用程序和服务，而用户的子集也可以通过单独的 Visio 订阅分配给 Visio Online。 
+如果有一个以上的订阅，则可以针对每个订阅将许可证分配给不同人员。 例如，您的所有用户都可以作为 Microsoft 365 业务标准订阅的一部分分配给所有 Microsoft 365 应用程序和服务，而用户的子集也可以通过单独的 Visio 订阅分配给 Visio Online。 
 
   
 ## <a name="find-out-who-can-assign-licenses"></a>了解谁可以分配许可证
@@ -58,20 +58,20 @@ ms.locfileid: "43635432"
   
 |**如果订阅中有此服务**|**将会自动发生该情况**|
 |:-----|:-----|
-|Exchange Online  <br/> |将为该人员创建一个邮箱。  <br/> |
+|Exchange Online  <br/> |将为该人员创建一个邮箱。  <br/> 若要了解此任务的完成 SLA，请参阅["设置 ..."Microsoft 365 管理中心中的邮件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |将为该人员分配默认 SharePoint Online 团队网站的编辑权限。  <br/> |
 |Skype for Business Online  <br/> |该人员将拥有与许可证关联的功能的访问权限。  <br/> |
-|适用于企业的 Microsoft 365 应用程序  <br/> |此人将能够将 Microsoft Office 下载到多达 5 台的 Mac 或电脑、5 台平板电脑和 5 部智能手机上。  <br/> |
+|Microsoft 365 企业应用版  <br/> |此人将能够将 Microsoft Office 下载到多达 5 台的 Mac 或电脑、5 台平板电脑和 5 部智能手机上。  <br/> |
    
 ## <a name="how-many-devices-can-people-install-office-on"></a>可以在多少台设备上安装 Office？
 
 如果订阅中包含以下任何产品，则每个人都可以将 Office 安装到多达 5 台的 Mac 或电脑、5 台平板电脑和 5 部手机上。
   
-- 适用于企业的 Microsoft 365 应用程序
+- Microsoft 365 商业应用版
     
-- Microsoft 365 商业标准
+- Microsoft 365 商业标准版
     
-- 适用于企业的 Microsoft 365 应用程序
+- Microsoft 365 企业应用版
     
 - Office 365 企业版 E3
     

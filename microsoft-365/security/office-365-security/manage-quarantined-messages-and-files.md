@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解管理员如何管理 Office 365 中用户的隔离邮件和文件。
-ms.openlocfilehash: e69887b54b3e892775c16fa3e306da3b17ab7db3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解如何查看和管理 Exchange Online Protection （EOP）中所有用户的隔离邮件。 具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
+ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036169"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209003"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-administrator"></a>以管理员身份管理隔离的邮件和文件
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>以管理员身份在 EOP 中管理隔离的邮件和文件
 
-无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离会保留可能有害或不需要的邮件。 有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。
 
 管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。 只有管理员可以管理被隔离为恶意软件的邮件、高可信度的网络钓鱼或邮件流规则（也称为传输规则）的结果。 管理员还可以向 Microsoft 报告误报。
 
-具有 Office 365 高级威胁防护（ATP）的组织中的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中查看、下载和删除隔离的文件。
+具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中查看、下载和删除隔离的文件。
 
-您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 客户）中查看和管理隔离邮件;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
+您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用邮箱在 Exchange Online 中查看和管理隔离的邮件; 独立 EOP PowerShell for 组织，没有 Exchange Online 邮箱）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -46,8 +46,6 @@ ms.locfileid: "44036169"
 - 在被自动删除之前，隔离的邮件将保留默认的一段时间：
 
   - 由反垃圾邮件策略（垃圾邮件、网络钓鱼和批量电子邮件）隔离的邮件：30天。 这是默认值和最大值。 若要配置此值，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
-
-1. 在您的组织中使用具有全局管理员权限的工作或学校帐户（或适当的安全 & 合规中心角色），登录并[转到安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
   - 包含恶意软件的邮件：15天。
 
@@ -74,8 +72,6 @@ ms.locfileid: "44036169"
    - **释放?**<sup>\*</sup>
 
    - **策略类型**<sup>\*</sup>
-
-1. 在您的组织中使用具有全局管理员权限的工作或学校帐户（或适当的安全 & 合规中心角色），登录并[转到安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
    - **收件人**
 
@@ -125,7 +121,7 @@ ms.locfileid: "44036169"
 
    - **邮件 ID**：邮件的全局唯一标识符。
 
-        例如，使用[邮件跟踪](message-trace-scc.md)查找发送到组织中的用户的邮件，并确定邮件已被隔离而不是传递。 确保包含完整的邮件 ID 值，其中可能包含尖括号（\<\>）。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     例如，使用[邮件跟踪](message-trace-scc.md)查找发送到组织中的用户的邮件，并确定邮件已被隔离而不是传递。 确保包含完整的邮件 ID 值，其中可能包含尖括号（ \< \> ）。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
 
@@ -240,7 +236,7 @@ ms.locfileid: "44036169"
 
 2. 将已**隔离的视图**更改为默认值**文件**。 您可以通过单击可用的列标题对字段进行排序。
 
-3. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”**** 最多可显示七列。 默认列用星号（<sup>\*</sup>）标记：
+3. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”**** 最多可显示七列。 默认列用星号（ <sup>\*</sup> ）标记：
 
    - **用户**<sup>\*</sup>
 

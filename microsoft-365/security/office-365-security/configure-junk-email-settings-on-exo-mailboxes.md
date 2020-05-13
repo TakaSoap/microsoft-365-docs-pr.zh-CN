@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 20112e23ff8bb62b96bdba4e86725c8566af3444
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066189"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206624"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
-Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection （EOP）控制。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件保护](anti-spam-protection.md)。
+在 Exchange Online 中有邮箱的 Microsoft 365 组织中，组织反垃圾邮件设置由 Exchange Online Protection （EOP）控制。 有关详细信息，请参阅[EOP 中的反垃圾邮件保护](anti-spam-protection.md)。
 
 但是，管理员还可以在 Exchange Online 中的各个邮箱上配置特定的反垃圾邮件设置：
 
 - **启用或禁用垃圾邮件规则**： "垃圾邮件" 规则是一个隐藏的 "收件箱" 规则，默认情况下，在每个邮箱中启用该规则。 垃圾邮件规则控制以下功能：
 
-  - **根据反垃圾邮件策略将邮件移动到 "垃圾邮件" 文件夹**：当使用 "操作**将邮件移动到垃圾邮件" 文件夹**中的垃圾邮件策略筛选判定时，垃圾邮件筛选规则会在邮件传递到邮箱后将邮件移动到 "垃圾邮件" 文件夹。 有关反垃圾邮件策略中的垃圾邮件筛选 verdicts 的详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。 同样，如果自动清除（ZAP）在已传递的邮件中检测到垃圾邮件或网络钓鱼，垃圾邮件筛选规则会将邮件移至 "垃圾邮件" 文件夹，以便**将邮件移动到垃圾邮件文件夹垃圾邮件**筛选判定操作。 有关 ZAP 的详细信息，请参阅[针对 Office 365 中的垃圾邮件和恶意软件的零小时自动清除（ZAP）保护](zero-hour-auto-purge.md)。
+  - **根据反垃圾邮件策略将邮件移动到 "垃圾邮件" 文件夹**：当使用 "操作**将邮件移动到垃圾邮件" 文件夹**中的垃圾邮件策略筛选判定时，垃圾邮件筛选规则会在邮件传递到邮箱后将邮件移动到 "垃圾邮件" 文件夹。 有关反垃圾邮件策略中的垃圾邮件筛选 verdicts 的详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。 同样，如果0小时自动清除（ZAP）确定传递的邮件是垃圾邮件或网络钓鱼，垃圾邮件筛选规则会将邮件移至 "垃圾邮件" 文件夹，以**将邮件移动到垃圾邮件文件夹**垃圾邮件筛选判定操作。 有关 ZAP 的详细信息，请参阅[Exchange Online 中的零小时自动清除（ZAP）](zero-hour-auto-purge.md)。
   
   - **用户在 outlook 或 web 上的 outlook 中为自己配置的垃圾邮件设置**：安全列表_集合_是安全发件人列表、安全收件人列表和每个邮箱的阻止发件人列表。 这些列表中的条目确定垃圾邮件规则是否将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 用户可以在 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）中为自己的邮箱配置安全列表集合。 管理员可以在任何用户的邮箱上配置安全列表集合。
 
@@ -54,7 +54,7 @@ Exchange Online 中的组织反垃圾邮件设置由 Exchange Online Protection 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>使用 Exchange Online PowerShell 启用或禁用邮箱中的垃圾邮件规则
 
 > [!NOTE]
-> 您只能使用 **Set-MailboxJunkEmailConfiguration** cmdlet 来禁用在 Outlook（在"缓存"Exchange 模式中）或 Web 上的 Outlook 中打开的邮箱上的垃圾邮件规则。 如果尚未打开邮箱，则会收到错误： `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.`如果要对批量操作禁止显示此错误，可以添加`-ErrorAction SlientlyContinue`到**set-mailboxjunkemailconfiguration**命令。
+> 您只能使用 **Set-MailboxJunkEmailConfiguration** cmdlet 来禁用在 Outlook（在"缓存"Exchange 模式中）或 Web 上的 Outlook 中打开的邮箱上的垃圾邮件规则。 如果尚未打开邮箱，则会收到错误： `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` 如果要对批量操作禁止显示此错误，可以添加 `-ErrorAction SlientlyContinue` 到**set-mailboxjunkemailconfiguration**命令。
 
 若要启用或禁用邮箱上的垃圾邮件规则，请使用以下语法：
 
@@ -78,7 +78,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 > [!NOTE]
 > 
-> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误， `-ErrorAction SlientlyContinue`请添加到**set-mailboxjunkemailconfiguration**命令。
+> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误，请添加 `-ErrorAction SlientlyContinue` 到**set-mailboxjunkemailconfiguration**命令。
 > 
 > - 即使禁用垃圾邮件规则，Outlook 垃圾邮件筛选器（取决于其配置方式）也可以确定邮件是否为垃圾邮件，并且可以根据其自身的垃圾邮件结论和邮箱上的安全列表集合，将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[有关 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
 
@@ -86,7 +86,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要验证是否已成功启用或禁用邮箱的垃圾邮件规则，请执行以下任一操作：
 
-- 将_ \<MailboxIdentity\> _替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证**Enabled**属性值：
+- 将_ \< MailboxIdentity \> _替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证**Enabled**属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -117,7 +117,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-若要输入多个值，并覆盖_BlockedSendersAndDomains_和_TrustedSendersAndDomains_参数的任何现有条目，请使用以下`"<Value1>","<Value2>"...`语法：。 若要在不影响其他现有条目的情况下添加或删除一个或多个值，请使用以下语法：`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+若要输入多个值，并覆盖_BlockedSendersAndDomains_和_TrustedSendersAndDomains_参数的任何现有条目，请使用以下语法： `"<Value1>","<Value2>"...` 。 若要在不影响其他现有条目的情况下添加或删除一个或多个值，请使用以下语法：`@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 本示例在 Ori Epstein 的邮箱上配置以下安全列表集合的设置：
 
@@ -141,7 +141,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 > [!NOTE]
 > 
-> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误， `-ErrorAction SlientlyContinue`请添加到**set-mailboxjunkemailconfiguration**命令。
+> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误，请添加 `-ErrorAction SlientlyContinue` 到**set-mailboxjunkemailconfiguration**命令。
 > 
 > - 即使在邮箱上禁用了垃圾邮件规则，仍可以配置安全列表集合，并且 Outlook 垃圾邮件筛选器能够将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[关于 Outlook 中的配置垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
 > 
@@ -151,7 +151,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要验证是否已成功配置邮箱的安全列表集合，请执行以下任一操作：
 
-- 将_ \<MailboxIdentity\> _替换为邮箱的名称、别名或电子邮件地址，并运行以下命令来验证属性值：
+- 将_ \< MailboxIdentity \> _替换为邮箱的名称、别名或电子邮件地址，并运行以下命令来验证属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -167,7 +167,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅适用于[Microsoft 365 Apps for enterprise、office 2019 和 office 2016 的管理模板文件（ADMX/ADML）和 Office 自定义工具](https://www.microsoft.com/download/details.aspx?id=49030)。
 
-将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭** \> **垃圾** \>邮件中**不自动筛选**" "垃圾**邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
+将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭**垃圾邮件中**不自动筛选**" "垃圾 \> **Junk** \> **邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
 
 When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. 这种垃圾邮件分类独立于由 EOP 确定的垃圾邮件可信度（SCL）。 实际上，Outlook 会忽略 EOP 中的 SCL （除非 EOP 将邮件标记为 "跳过垃圾邮件筛选"），并使用其自己的条件来确定邮件是否为垃圾邮件。 当然，可能会出现来自 EOP 和 Outlook 的垃圾邮件结论。 有关这些设置的详细信息，请参阅在[垃圾邮件筛选器中更改保护级别](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。
 

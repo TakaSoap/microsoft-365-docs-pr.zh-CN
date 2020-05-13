@@ -2,10 +2,10 @@
 title: 参考：策略、实践和指南
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date: ''
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: 6e73355c02e0416a80441aff8143fcbf51150b94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634384"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208206"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
@@ -31,9 +31,9 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
-发送给 Microsoft 365 用户的电子邮件必须符合管理电子邮件传输和使用 Office 365 的所有 Microsoft 策略。
+发送给 Microsoft 365 用户的电子邮件必须符合管理电子邮件传输和 Microsoft 365 使用的所有 Microsoft 策略。
 
-- 适用于 Office 365 的服务条款；尤其是，禁止使用服务发送垃圾邮件或传播恶意软件
+- 适用于 Microsoft 365 的服务条款;特别是，禁止使用服务进行垃圾邮件或分发恶意软件。
 
 - [Microsoft 服务协议](https://www.microsoft.com/servicesagreement/)
 
@@ -85,7 +85,7 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [在线信任联盟](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [电子邮件发件人 & 提供商联盟](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 5ecd48161a751a1558146236d48df13bb0662ad1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 55b3ec119e8c74982ce340c58f6b8da684c9ffa8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630401"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208338"
 ---
 # <a name="manage-who-can-create-groups"></a>管理可以创建组的用户
 
@@ -47,7 +47,7 @@ ms.locfileid: "43630401"
     
 - StaffHub
     
-- Planner
+- 规划器
     
 - PowerBI
 
@@ -120,13 +120,13 @@ ms.locfileid: "43630401"
 
 将下面的脚本复制到文本编辑器（如记事本）或[Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)中。
 
-将* \<SecurityGroupName\> *替换为您创建的安全组的名称。 例如：
+将* \< SecurityGroupName \> *替换为您创建的安全组的名称。 例如：
 
 `$GroupName = "Group Creators"`
 
 将文件另存为 GroupCreators。 
 
-在 PowerShell 窗口中，导航到保存文件的位置（键入 "CD <FileLocation>"）。
+在 PowerShell 窗口中，导航到保存文件的位置（键入 "CD <FileLocation> "）。
 
 通过键入以下命令运行脚本：
 
@@ -173,6 +173,8 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 如果要关闭组创建限制，并再次允许所有用户创建组，请将 $GroupName 设置为 "" 并 $AllowGroupCreation 为 "True"，然后重新运行该脚本。
     
 ## <a name="step-4-verify-that-it-works"></a>步骤4：验证它是否正常运行
+
+更改可能需要30分钟或更长时间才能生效。 您可以通过执行以下操作来验证新设置：
 
 1. 使用无法创建组的人员的用户帐户登录。 也就是说，它们不是您创建的安全组的成员，也不是管理员的成员。
     

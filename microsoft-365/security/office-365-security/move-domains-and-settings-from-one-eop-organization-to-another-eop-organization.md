@@ -14,14 +14,14 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何将域和设置从一个 Microsoft Exchange Online Protection （EOP）组织（租户）移动到另一个 Microsoft Exchange Online Protection （租户）。
-ms.openlocfilehash: 86f268e6bfb5ed7229137df8b6bf017f15ab1f9c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: c57f8363093c2e1a9bfad5c34f62a0ca2c1ae689
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033958"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208304"
 ---
-# <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
+# <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>将域和设置从一个 EOP 组织移动到另一个组织
 
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。
 
@@ -44,9 +44,13 @@ ms.locfileid: "44033958"
 
 - 组
 
-- 反垃圾邮件内容筛选器
+- 反垃圾邮件
 
-- 反恶意软件内容筛选器
+  - 反垃圾邮件策略（也称为内容筛选器策略）
+  - 出站垃圾邮件筛选器策略
+  - 连接筛选器策略
+
+- 反恶意软件策略
 
 - 连接器
 
@@ -125,7 +129,7 @@ Get-HostedContentFilterPolicy | Export-Clixml HostedContentFilterPolicy.xml
 Get-HostedContentFilterRule | Export-Clixml HostedContentFilterRule.xml
 Get-HostedOutboundSpamFilterPolicy | Export-Clixml HostedOutboundSpamFilterPolicy.xml
 #****************************************************************************
-# Anti-malware content filters
+# Anti-malware policies
 #****************************************************************************
 Get-MalwareFilterPolicy | Export-Clixml MalwareFilterPolicy.xml
 Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
@@ -175,9 +179,11 @@ Foreach ($domain in $Domains) {
 
 现在，您可以查看和收集目标组织的 Microsoft 365 管理中心中的信息，以便您可以在时间到来时快速验证您的域：
 
-1. 登录到 Microsoft 365 管理中心[https://portal.office.com](https://portal.office.com)。
+1. 登录到 Microsoft 365 管理中心 <https://portal.office.com> 。
 
 2. Click **Domains**.
+
+   如果看不到 "域"，请单击 "**自定义 navigtion**"，选择 "**设置**"，然后单击 "**保存**"。
 
 3. Click each **Start setup** link, and then proceed through the setup wizard.
 
@@ -185,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. 记录您将用来验证域的 MX 记录或 TXT 记录，并完成安装向导。
 
-6. 将验证 TXT 记录添加到你的 DNS 记录。 这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。 有关配置 DNS 的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+6. 将验证 TXT 记录添加到你的 DNS 记录。 这将使你在从目标组织中删除域后，可以更快速地验证源组织中的域。 有关配置 DNS 的详细信息，请参阅[在 Microsoft 365 的任意 DNS 托管提供程序中创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>步骤 3：强制发件人对邮件进行排队
 
@@ -195,8 +201,7 @@ Foreach ($domain in $Domains) {
 
 另一个选择是在每个域中放置一个无效的 MX 记录，这些域中都保留了域的 DNS 记录（也称为 DNS 托管服务）。这将使发件人对邮件进行排队，并进行重试（通常重试时间为 48 小时，但具体可能因提供程序而异）。您可以使用 invalid.outlook.com 作为无效的 MX 目标。将 MX 记录的生存时间 (TTL) 值降低为五分钟，这将有助于更快速地将更改传播到 DNS 提供程序。
 
-有关配置 DNS 的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
-
+有关配置 DNS 的详细信息，请参阅[在 Microsoft 365 的任意 DNS 托管提供程序中创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!IMPORTANT]
 > 不同的提供程序对邮件进行排队的时间段均不同。您将需要快速设置新租户，并还原 DNS 设置，以避免如果排队时间到期向发件人发送未送达报告 (NDR)。
@@ -244,7 +249,7 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步骤 5：验证目标组织的域
 
-1. 登录到的管理中心[https://portal.office.com](https://portal.office.com)。
+1. 登录到的管理中心 [https://portal.office.com](https://portal.office.com) 。
 
 2. Click **Domains**.
 
@@ -926,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步骤 8：还原 DNS 设置以停止邮件排队
 
-如果您选择将 MX 记录设置为无效地址以使发件人在您转换期间对邮件进行排队，则需要将其设置回[管理中心](https://admin.microsoft.com)中指定的正确值。 有关配置 DNS 的详细信息，请参阅[在任何 DNS 托管提供商处创建适用于 Office 365 的 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+如果您选择将 MX 记录设置为无效地址以使发件人在您转换期间对邮件进行排队，则需要将其设置回[管理中心](https://admin.microsoft.com)中指定的正确值。 有关配置 DNS 的详细信息，请参阅[在 Microsoft 365 的任意 DNS 托管提供程序中创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。

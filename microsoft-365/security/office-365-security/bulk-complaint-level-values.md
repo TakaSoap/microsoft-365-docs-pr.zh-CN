@@ -2,10 +2,10 @@
 title: 批量投诉级别值
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 8/23/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: 了解 Office 365 中的 "批量合规性级别（BCL）" 值。
-ms.openlocfilehash: 82c006f05ce3d37ff23ca1e522b653bd26efeed8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）中使用的批量合规性级别（BCL）值。
+ms.openlocfilehash: 87ef0787aad12022d9034800c4ddc72e54445f5d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035564"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209603"
 ---
-# <a name="bulk-complaint-level-bcl-in-office-365"></a>Office 365 中的大宗投诉级别（BCL）
+# <a name="bulk-complaint-level-bcl-in-eop"></a>EOP 中的大宗投诉级别（BCL）
 
-批量收件人因其发送模式、内容创建和收件人获取实践而异。 有些是极大批量邮件程序，可向订阅者发送带有相关内容的所需邮件。 这些邮件使收件人产生少量抱怨。 其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。 来自批量邮件散播邮件的邮件称为 "批量邮件" 或 "灰色邮件"。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中具有邮箱的 Microsoft 365 组织中，EOP 会从批量邮件发件人向入站邮件分配一个批量合规性级别（BCL）。 将 BCL 添加到邮件的 X 标头中，类似于用于将邮件标识为垃圾邮件的[垃圾邮件可信度（SCL）](spam-confidence-levels.md) 。 较高的 BCL 指示批量邮件更有可能生成投诉（因此更可能是垃圾邮件）。 Microsoft 使用内部和第三方源来标识批量邮件，并确定相应的 BCL。
 
-若要区分来自不同类型的批量发件人的邮件，批量邮件（Exchange Online 或独立 Exchange Online 保护（EOP），不包含 Exchange Online 邮箱）的入站邮件被分配了一个以 X 标头形式添加到邮件的批量投诉级别（BCL）。 BCL 类似于用于将邮件标识为垃圾邮件的[垃圾邮件信任级别（SCL）](spam-confidence-levels.md) 。 较高的 BCL 指示批量邮件更有可能生成投诉（因此更可能是垃圾邮件）。 Microsoft 使用内部和第三方源来标识批量邮件，并确定相应的 BCL。
+批量收件人因其发送模式、内容创建和收件人获取实践而异。 正常批量邮件发送将包含相关内容的邮件发送到订阅者。 这些邮件使收件人产生少量抱怨。 其他批量邮件群发程序发送与垃圾邮件极其相似的未经请求的邮件，并且使收件人产生许多抱怨。 来自批量邮件散播邮件的邮件称为 "批量邮件" 或 "灰色邮件"。
 
  垃圾邮件筛选将邮件标记为基于 BCL 阈值（默认值或指定值）的**批量电子邮件**，并对邮件执行指定的操作（默认操作是将邮件传递到收件人的 "垃圾邮件" 文件夹）。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)以及[垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)
 
