@@ -1,5 +1,5 @@
 ---
-title: Office 365 中的隔离
+title: 隔离的电子邮件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,30 +19,30 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 本文介绍了 Microsoft 365 中的隔离。 隔离会保留可能有害或不需要的邮件。
-ms.openlocfilehash: 396be17e07a347ab4d28a3e0b67dd137bda999db
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）中的隔离，其中包含可能存在危险或不需要的邮件。
+ms.openlocfilehash: 71a5f32fe6888d751bf2c4020fca4df671ac96d1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033862"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208278"
 ---
-# <a name="quarantine-email-messages"></a><span data-ttu-id="d423a-104">隔离电子邮件</span><span class="sxs-lookup"><span data-stu-id="d423a-104">Quarantine email messages</span></span>
+# <a name="quarantined-email-messages-in-eop"></a><span data-ttu-id="8bef0-103">EOP 中隔离的电子邮件</span><span class="sxs-lookup"><span data-stu-id="8bef0-103">Quarantined email messages in EOP</span></span>
 
-<span data-ttu-id="d423a-105">如果您是在 Exchange Online 中有邮箱或独立 Exchange Online Protection （EOP）客户但没有 Exchange Online 邮箱的 Microsoft 365 客户，则可以使用隔离来保存可能有害的邮件。</span><span class="sxs-lookup"><span data-stu-id="d423a-105">If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.</span></span>
+<span data-ttu-id="8bef0-104">在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离功能可用于保留潜在危险或不需要的邮件。</span><span class="sxs-lookup"><span data-stu-id="8bef0-104">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.</span></span>
 
-<span data-ttu-id="d423a-106">如果发现*任何*附件包含恶意软件，反恶意软件策略将自动隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="d423a-106">Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware.</span></span> <span data-ttu-id="d423a-107">有关详细信息，请参阅[在 Office 365 中配置反恶意软件策略](configure-anti-malware-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-107">For more information, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).</span></span>
+<span data-ttu-id="8bef0-105">如果发现*任何*附件包含恶意软件，反恶意软件策略将自动隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="8bef0-105">Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware.</span></span> <span data-ttu-id="8bef0-106">有关详细信息，请参阅[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-106">For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).</span></span>
 
-<span data-ttu-id="d423a-108">默认情况下，反垃圾邮件策略隔离网络钓鱼邮件，并将垃圾邮件和批量电子邮件传递到用户的 "垃圾邮件" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="d423a-108">By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder.</span></span> <span data-ttu-id="d423a-109">不过，您还可以创建和自定义反垃圾邮件策略以隔离垃圾邮件和批量电子邮件。</span><span class="sxs-lookup"><span data-stu-id="d423a-109">But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages.</span></span> <span data-ttu-id="d423a-110">有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-110">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
+<span data-ttu-id="8bef0-107">默认情况下，反垃圾邮件策略隔离网络钓鱼邮件，并将垃圾邮件和批量电子邮件传递到用户的 "垃圾邮件" 文件夹。</span><span class="sxs-lookup"><span data-stu-id="8bef0-107">By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder.</span></span> <span data-ttu-id="8bef0-108">不过，您还可以创建和自定义反垃圾邮件策略以隔离垃圾邮件和批量电子邮件。</span><span class="sxs-lookup"><span data-stu-id="8bef0-108">But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages.</span></span> <span data-ttu-id="8bef0-109">有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-109">For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).</span></span>
 
-<span data-ttu-id="d423a-111">用户和管理员都可以使用隔离邮件：</span><span class="sxs-lookup"><span data-stu-id="d423a-111">Both users and admins can work with quarantined messages:</span></span>
+<span data-ttu-id="8bef0-110">用户和管理员都可以使用隔离邮件：</span><span class="sxs-lookup"><span data-stu-id="8bef0-110">Both users and admins can work with quarantined messages:</span></span>
 
-- <span data-ttu-id="d423a-112">管理员可对所有用户使用所有类型的已隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="d423a-112">Admins can work with all types of quarantined messages for all users.</span></span> <span data-ttu-id="d423a-113">只有管理员可以处理被隔离为恶意软件、高可信度网络钓鱼的邮件或邮件流规则（也称为传输规则）的结果。</span><span class="sxs-lookup"><span data-stu-id="d423a-113">Only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules).</span></span> <span data-ttu-id="d423a-114">有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-114">For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).</span></span>
+- <span data-ttu-id="8bef0-111">管理员可对所有用户使用所有类型的已隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="8bef0-111">Admins can work with all types of quarantined messages for all users.</span></span> <span data-ttu-id="8bef0-112">只有管理员可以处理被隔离为恶意软件、高可信度网络钓鱼的邮件或邮件流规则（也称为传输规则）的结果。</span><span class="sxs-lookup"><span data-stu-id="8bef0-112">Only admins can work with messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules).</span></span> <span data-ttu-id="8bef0-113">有关详细信息，请参阅[在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-113">For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).</span></span>
 
-- <span data-ttu-id="d423a-115">如果邮件被隔离为垃圾邮件、批量电子邮件或（从2020年4月，）的网络钓鱼，则用户可以使用它们作为收件人的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="d423a-115">Users can work with quarantined messages where they are a recipient if the message was quarantined as spam, bulk email, or (as of April, 2020) phishing.</span></span> <span data-ttu-id="d423a-116">有关详细信息，请参阅[在 Office 365 中查找并以用户的方式释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-116">For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).</span></span>
+- <span data-ttu-id="8bef0-114">如果邮件被隔离为垃圾邮件、批量电子邮件或（到4月2020）的网络钓鱼，则用户可以使用它们作为收件人的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="8bef0-114">Users can work with quarantined messages where they are a recipient if the message was quarantined as spam, bulk email, or (as of April 2020) phishing.</span></span> <span data-ttu-id="8bef0-115">有关详细信息，请参阅[在 EOP 中以用户的方式查找和释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-115">For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).</span></span>
 
-  <span data-ttu-id="d423a-117">为了防止用户管理自己的隔离网络钓鱼邮件，管理员可以为反垃圾邮件策略中的**网络钓鱼电子邮件**筛选判定功能配置不同的操作。</span><span class="sxs-lookup"><span data-stu-id="d423a-117">To prevent users from managing their own quarantined phishing messages, admins can configure a different action for the **Phishing email** filtering verdict in anti-spam policies.</span></span> <span data-ttu-id="d423a-118">有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-118">For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).</span></span>
+  <span data-ttu-id="8bef0-116">为了防止用户管理自己的隔离网络钓鱼邮件，管理员可以为反垃圾邮件策略中的**网络钓鱼电子邮件**筛选判定功能配置不同的操作。</span><span class="sxs-lookup"><span data-stu-id="8bef0-116">To prevent users from managing their own quarantined phishing messages, admins can configure a different action for the **Phishing email** filtering verdict in anti-spam policies.</span></span> <span data-ttu-id="8bef0-117">有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-117">For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).</span></span>
 
-- <span data-ttu-id="d423a-119">管理员和用户可以向在隔离中的 Microsoft 报告误报。</span><span class="sxs-lookup"><span data-stu-id="d423a-119">Admins and users can report false positives to Microsoft in quarantine.</span></span>
+- <span data-ttu-id="8bef0-118">管理员和用户可以向在隔离中的 Microsoft 报告误报。</span><span class="sxs-lookup"><span data-stu-id="8bef0-118">Admins and users can report false positives to Microsoft in quarantine.</span></span>
 
-<span data-ttu-id="d423a-120">有关隔离的详细信息，请参阅[隔离 FAQ](quarantine-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="d423a-120">For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.md).</span></span>
+<span data-ttu-id="8bef0-119">有关隔离的详细信息，请参阅[隔离 FAQ](quarantine-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="8bef0-119">For more information about, quarantine, see [Quarantine FAQ](quarantine-faq.md).</span></span>
