@@ -1,5 +1,5 @@
 ---
-title: 在 EOP 中运行管理员角色组报告
+title: 在独立 EOP 中运行管理员角色组报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,25 +13,25 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何在 Exchange Online Protection （EOP）中运行管理员角色组报告。
-ms.openlocfilehash: d3c4db8079a71ba054f323617d3ade65083a3a04
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解如何在独立 Exchange Online Protection （EOP）中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录该报告，EOP 记录每个事件。
+ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034452"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209171"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>在 EOP 中运行管理员角色组报告
+# <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在独立 EOP 中运行管理员角色组报告
 
- 当管理员向管理员角色组添加成员或从中删除成员时，Exchange Online Protection （EOP）会记录每次发生的事件。 在 Exchange 管理中心（EAC）中运行管理员角色组报告时，条目将显示为搜索结果，并包括受影响的角色组、更改角色组成员身份的用户以及进行成员身份更新的用户。 使用此报告可以对已分配给组织中的用户的管理权限的更改进行监视。
+在不带 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）组织中，当管理员向管理角色组添加成员或从中删除成员时，该服务会记录每个事件。 有关独立 EOP 中的角色组的详细信息，请参阅[独立 EOP 中的权限](feature-permissions-in-eop.md)。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
+在 Exchange 管理中心（EAC）中运行管理员角色组报告时，条目将显示为搜索结果，并包括受影响的角色组、更改角色组成员身份的用户以及进行成员身份更新的用户。 使用此报告可以对已分配给组织中的用户的管理权限的更改进行监视。
 
-- 估计完成时间：2 分钟
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要打开 Exchange 管理中心，请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [EOP 中的功能权限](feature-permissions-in-eop.md)主题中的"报告"部分。
+- 必须先分配有权限，然后才能执行这些过程。 具体来说，您需要 "审核日志" 或 "仅查看审核日志" 角色，默认情况下这些角色分配给 ComplianceManagement、OrganizationManagement （全局管理员）和 SecurityAdministrator 角色组。 有关详细信息，请参阅[独立 EOP 中的权限](feature-permissions-in-eop.md)和[使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -42,13 +42,15 @@ ms.locfileid: "44034452"
 
 运行管理员角色组报告，在特定时间范围内查找对组织中的管理角色组的更改。
 
-1. 在 EAC 中，导航到 "**合规性管理** \> **审核**"，然后选择 "**运行管理员角色组报告**"。
+1. 在 EAC 中，转到 "**合规性管理** \> **审核**"，然后选择 "**运行管理员角色组报告**"。
 
-2. 选择 "**开始日期**" 和 "**结束日期**"。 默认情况下，报告将搜索在过去两周内对管理员角色组所做的更改。
+2. 在打开的 "**搜索对管理员角色组的更改**" 页上，配置以下设置：
 
-3. 若要查看特定角色组的更改，请单击 "**选择角色组**"。 在随后的对话框中选择角色组，然后单击 **"确定"**。 您也可以将字段留空，以查找所有更改的角色组。
+   - "**开始日期**" 和 "**结束日期**"：输入日期范围。 默认情况下，报告将搜索在过去两周内对管理员角色组所做的更改。
 
-4. 单击"搜索"。
+   - **选择角色组**：默认情况下，搜索所有角色组。 若要按特定角色组筛选结果，请单击 "**选择角色组**"。 在出现的对话框中，选择一个角色组，然后单击 "**加载项 >**"。 根据需要重复此步骤多次，然后在完成后单击 **"确定"** 。
+
+3. 完成后，请单击 "**搜索**"。
 
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
 
@@ -69,3 +71,81 @@ ms.locfileid: "44034452"
 - 在2/06/2018 上，他们添加了用户 tonip。
 
 - 在2/19/2018 上，他们删除了用户 pilarp。
+
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用独立 Exchange Online PowerShell 搜索审核日志条目
+
+您可以使用 Exchange Online PowerShell 搜索符合指定条件的审核日志条目。 有关搜索条件列表，请参阅[管理员审核日志记录](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)。 此过程使用**search-adminauditlog** cmdlet 并在 Exchange Online PowerShell 中显示搜索结果。 如果需要返回超出在 **New-AdminAuditLogSearch** cmdlet 或 EAC"审核报告"报告中定义的限制的一组结果时，可使用此 cmdlet。
+
+若要搜索满足指定条件的审核日志，请使用以下语法。
+
+```PowerShell
+Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
+```
+
+> [!NOTE]
+> 默认情况下， **Search-AdminAuditLog** cmdlet 最多可返回 1,000 个日志条目。 使用_ResultSize_参数可以指定最长250000个日志条目。 或者，使用值 `Unlimited` 返回所有条目。
+
+本示例将使用以下条件执行对所有审核日志条目的搜索：
+
+- **开始日期**：08/04/2018
+
+- **结束日期**：10/03/2018
+
+- **用户 id**： davids、chrisd、kima
+
+- **Cmdlet**： **Set-邮箱**
+
+- **参数**： _ProhibitSendQuota_、 _ProhibitSendReceiveQuota_、 _IssueWarningQuota_、 _MaxSendSize_、 _MaxReceiveSize_
+
+```PowerShell
+Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
+```
+
+本示例将搜索对特定邮箱所做的更改。此操作在进行故障排除或需要为调查提供信息时很有用。使用以下条件：
+
+- **开始日期**：05/01/2018
+
+- **结束日期**：10/03/2018
+
+- **对象 ID**： contoso.com/Users/DavidS
+
+```PowerShell
+Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
+```
+
+如果您的搜索返回了多个日志条目，我们建议使用 Exchange Online PowerShell 中提供的过程**来搜索审核日志条目，并**在本主题后面的内容中将结果发送给收件人。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
+
+有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+
+### <a name="view-details-of-audit-log-entries"></a>查看审核日志条目的详细信息
+
+**Search-AdminAuditLog** cmdlet 可返回 [管理员审核日志记录](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)的"审核日志内容"部分中介绍的字段。在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
+
+若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用 Exchange Online PowerShell 中的过程来**搜索审核日志条目，并**在本主题后面的内容中将结果发送到收件人，以创建一个 XML 文件。
+
+此过程将使用以下概念：
+
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+
+1. 确定搜索时要使用的条件，然后运行 **Search-AdminAuditLog** cmdlet，并使用以下命令将结果存储在一个变量中。
+
+    ```PowerShell
+    $Results = Search-AdminAuditLog <search criteria>
+    ```
+
+2. 每个审核日志条目都作为数组元素存储在变量中 `$Results` 。 可以通过指定其数组元素索引来选择数组元素。 数组元素索引以零 (0) 开始，即第一个数组元素的索引为 0。 例如，如果要检索第 5 个数组元素，其索引为 4，则应使用以下命令进行检索。
+
+    ```PowerShell
+    $Results[4]
+    ```
+
+3. 上述命令将返回数组元素 4 中存储的日志条目。若要查看此日志条目的 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请使用以下命令。
+
+    ```PowerShell
+    $Results[4].CmdletParameters
+    $Results[4].ModifiedProperties
+    ```
+
+4. 若要查看其他日志条目的 **CmdletParameters** 或 **ModifiedParameters** 字段的内容，请更改数组元素索引。

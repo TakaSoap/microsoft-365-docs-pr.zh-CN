@@ -12,17 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: 管理员可以了解 Microsoft 365 和 EOP 中的可用选项来阻止入站邮件。
-ms.openlocfilehash: 626eff3a1ea28cc16b12acaaa2ba52f7d094a347
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理员可以了解在 Exchange Online Protection （EOP）中阻止入站邮件的可用和首选选项。
+ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637684"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209543"
 ---
-# <a name="create-blocked-sender-lists"></a>创建阻止发件人列表
+# <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中创建阻止的发件人列表
 
-如果您是在 Exchange Online 中有邮箱的 Microsoft 365 客户或没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）客户，则 EOP 提供多种阻止来自不需要的发件人的电子邮件的方法。 这些选项包括 Outlook 阻止的发件人、阻止的发件人列表或反垃圾邮件策略中阻止的域列表、Exchange 邮件流规则（也称为传输规则）和 IP 阻止列表（连接筛选）。 你可以将这些选项统称为阻止的_发件人列表_。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中具有邮箱的 Microsoft 365 组织中，EOP 提供了阻止来自不需要的发件人的电子邮件的多种方式。 这些选项包括 Outlook 阻止的发件人、阻止的发件人列表或反垃圾邮件策略中阻止的域列表、Exchange 邮件流规则（也称为传输规则）和 IP 阻止列表（连接筛选）。 你可以将这些选项统称为阻止的_发件人列表_。
 
 阻止发件人的最佳方法因影响范围而异。 对于单个用户，正确的解决方案可能是 Outlook 阻止的发件人。 对于很多用户而言，其他选项中的一种更合适。 下面的选项按影响范围和广度进行排序。 列表从窄到范围，但阅读完整建议的*细节*。
 
@@ -43,7 +43,7 @@ ms.locfileid: "43637684"
 
 当只有少量用户收到不需要的电子邮件时，用户或管理员可以将发件人电子邮件地址添加到邮箱中阻止的发件人列表中。 有关说明，请参阅[在 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-当邮件由于用户的阻止发件人列表而成功被阻止时， **X-Forefront-反垃圾邮件报告**的标头字段`SFV:BLK`将包含该值。
+当邮件由于用户的阻止发件人列表而成功被阻止时， **X-Forefront-反垃圾邮件报告**的标头字段将包含该值 `SFV:BLK` 。
 
 > [!NOTE]
 > 如果不需要的邮件是来自可信且可识别的来源的新闻快递，则取消对该电子邮件的订阅是阻止用户接收邮件的另一种方法。

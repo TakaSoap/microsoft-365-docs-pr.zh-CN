@@ -16,12 +16,12 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 了解如何使用高风险传递池来保护 Microsoft 365 数据中心中的电子邮件服务器的声誉。
-ms.openlocfilehash: 7fb4788361534335be1e07bae44ed7511bebe434
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 190dc3bd7ed2a6cddb23c8bc7c117dee30fd4f13
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638030"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209183"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>出站邮件的高风险传递池
 
@@ -45,11 +45,8 @@ Microsoft 365 数据中心中的电子邮件服务器可能暂时 guilty 发送�
 Ndr 中的电涌可能的原因包括：
 
 - 对使用服务的客户之一产生影响的欺骗活动。
-
 - 目录搜集攻击。
-
 - 垃圾邮件攻击。
-
 - 一个欺诈性电子邮件服务器。
 
 所有这些问题都会导致服务处理的 Ndr 数量突然增加。 许多情况下，这些 Ndr 似乎是垃圾邮件发送给其他电子邮件服务器和服务（也称为_[退信](backscatter-messages-and-eop.md)_）。

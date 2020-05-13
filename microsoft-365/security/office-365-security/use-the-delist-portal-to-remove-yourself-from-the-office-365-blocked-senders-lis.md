@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何使用除名门户将自己从 Microsoft 365 阻止的发件人列表中删除。
-ms.openlocfilehash: 700382a494865b80116cfd8419213ed43b35b8a1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034982"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208533"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
 
@@ -35,7 +35,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
 
-> 550 5.7.606-649 访问被拒绝，禁止发送 IP [_ip 地址_];若要请求从此列表中删除， https://sender.office.com/请访问并按照说明操作。 有关详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
+> 550 5.7.606-649 访问被拒绝，禁止发送 IP [_ip 地址_];若要请求从此列表中删除，请访问 https://sender.office.com/ 并按照说明操作。 有关详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
 
 其中  _IP address_ 是邮件服务器在其上运行的计算机的 IP 地址。
 
@@ -47,7 +47,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 3. Click **Submit**.
 
-    门户会向您提供的电子邮件地址发送电子邮件。 电子邮件的外观如下所示： ![通过除名门户提交请求时收到的电子邮件的屏幕截图](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
+    门户会向您提供的电子邮件地址发送电子邮件。 电子邮件的外观如下所示： ![ 通过除名门户提交请求时收到的电子邮件的屏幕截图](../../media/bf13e4f7-f68c-4e46-baa7-b6ab4cfc13f3.png)
 
 4. 单击除名门户发送给您的电子邮件中的确认链接。
 
@@ -60,4 +60,4 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
     > [!NOTE]
     > 在删除限制之前，可能需要长达24小时或结果相差很大。
 
-请参阅[在 office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[office 365 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被列入黑名单。
+请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[EOP 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被列入黑名单。

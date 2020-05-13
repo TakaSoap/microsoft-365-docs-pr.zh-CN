@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 了解如何对组织配置文件进行更改，例如组织名称、地址、电话、技术联系人和电子邮件。
-ms.openlocfilehash: a1b792dd74c38e93489bccc49e3a034e1da889e4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: d3871e683aed862cfe58e072035b75cc004b9ef6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139669"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208170"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
   
@@ -47,7 +47,7 @@ ms.locfileid: "44139669"
 
 若要更改公司的配置文件页面上的其他信息，请执行以下操作：
   
-1. 在 "管理中心" 中，转到 "**设置** \> " <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">"设置" 页。</a>
+1. 在管理中心中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**组织设置**</a>" 页。
 
 2. 在 "**组织配置文件**" 选项卡上，选择 "**组织信息**"。
 

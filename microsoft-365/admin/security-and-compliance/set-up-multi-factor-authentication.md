@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1000689794b8b5471efa898e731fd75a0e5a8cce
-ms.sourcegitcommit: 7c0470fd7a98911d142bac060c228947c46a6be7
+ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43665628"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213006"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -75,7 +75,9 @@ ms.locfileid: "43665628"
 
 ## <a name="enable-modern-authentication-for-your-organization"></a>为你的组织启用新式验证
 
-所有 Office 2016 客户端应用程序均通过使用 Active Directory 身份验证库 (ADAL) 支持 MFA。 这意味着 Office 2016 客户端无需应用密码。 但是，您需要确保为您的 Microsoft 365 订阅启用 ADAL 或新式验证。
+所有 Office 2016 客户端应用程序均通过使用 Active Directory 身份验证库 (ADAL) 支持 MFA。 这意味着 Office 2016 客户端无需应用密码。 有关详细信息，请参阅[本文](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)。
+
+但是，您需要确保为您的 Microsoft 365 订阅启用 ADAL 或新式验证。
 
 1. 若要启用新式验证，请在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)内依次选择“设置”****\>“设置”****，然后从“服务”**** 选项卡中的列表内选择“新式验证”****。
 

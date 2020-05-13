@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 如何验证发件人地址以防止仿冒
+title: EOP 如何验证发件人地址以防止仿冒
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: 为了帮助防止网络钓鱼，Microsoft 365 和 Outlook.com 现在要求来自：地址的 RFC 合规性。
+description: 管理员可以了解 Exchange Online Protection （EOP）和 Outlook.com 接受或拒绝的电子邮件地址类型，以帮助防止网络钓鱼。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef361c7009cc8903ab2721d299412b7d44a4f87c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f16bb9b0af1ca5481437ef253c6d36dd519ff9e2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034078"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209447"
 ---
-# <a name="how-microsoft-365-validates-the-from-address-to-prevent-phishing"></a>Microsoft 365 如何验证发件人地址以防止仿冒
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何验证发件人地址以防止仿冒
 
-Microsoft 365 电子邮件帐户会收到越来越多的网络钓鱼攻击。 除了使用[欺骗（伪造）发件人电子邮件地址](anti-spoofing-protection.md)之外，攻击者通常使用来自冲突 internet 标准的发件人地址中的值。 为了帮助阻止这种类型的网络钓鱼，Microsoft 365 和 Outlook.com 现在要求入站邮件包含符合 RFC 标准的发件人地址，如本主题中所述。 此强制已于2017年11月启用。
+网络钓鱼攻击是对任何电子邮件组织的持续威胁。 除了使用[欺骗（伪造）发件人电子邮件地址](anti-spoofing-protection.md)之外，攻击者通常使用来自冲突 internet 标准的发件人地址中的值。 为了帮助阻止此类型的网络钓鱼，Exchange Online Protection （EOP）和 Outlook.com 现在要求入站邮件包括符合本主题中所述的符合 RFC 的发件人地址。 此强制已于2017年11月启用。
 
 **注意**：
 
@@ -41,7 +41,7 @@ Microsoft 365 电子邮件帐户会收到越来越多的网络钓鱼攻击。 �
 
 - `5321.MailFrom`地址（也称为 "**发**件人地址"、"P1 发件人" 或 "信封发件人"）是在邮件的 SMTP 传输中使用的电子邮件地址。 此电子邮件地址通常记录在邮件标头中的 "**返回路径**标头" 字段中（尽管发件人可以指定不同的**返回路径**电子邮件地址）。
 
-- `5322.From` （也称为 "来自地址" 或 "P2 发件人"）是 "**发**件人" 头字段中的电子邮件地址，是电子邮件客户端中显示的发件人的电子邮件地址。 "发件人" 地址是本主题中要求的重点。
+- `5322.From`（也称为 "来自地址" 或 "P2 发件人"）是 "**发**件人" 头字段中的电子邮件地址，是电子邮件客户端中显示的发件人的电子邮件地址。 "发件人" 地址是本主题中要求的重点。
 
 "发件人" 地址在多个 Rfc 中进行了详细定义（例如，RFC 5322 节3.2.3、3.4 和3.4.1，以及[rfc 3696](https://tools.ietf.org/html/rfc3696)）。 寻址方面有很多变化，被视为有效或无效。 为简单起见，我们建议采用以下格式和定义：
 
@@ -53,7 +53,7 @@ Microsoft 365 电子邮件帐户会收到越来越多的网络钓鱼攻击。 �
   - 如果 "发件人" 地址包含显示名称，则 EmailAddress 值必须括在尖括号（< >）中，如图所示。
   - Microsoft 强烈建议您在显示名称和电子邮件地址之间插入空格。
 
-- **EmailAddress**：电子邮件地址使用以下格式`local-part@domain`：
+- **EmailAddress**：电子邮件地址使用以下格式 `local-part@domain` ：
 
   - **本地-部分**：标识与地址关联的邮箱的字符串。 此值在域中是唯一的。 通常，使用邮箱所有者的用户名或 GUID。
   - **domain**：电子邮件服务器的完全限定域名（FQDN），该域名托管由电子邮件地址的本地部分标识的邮箱。
@@ -104,7 +104,7 @@ Microsoft 365 电子邮件帐户会收到越来越多的网络钓鱼攻击。 �
 
 ## <a name="suppress-auto-replies-to-your-custom-domain"></a>禁止对自定义域的自动答复
 
-不能使用值`From: <>`来禁止显示自动答复。 相反，您需要为您的自定义域设置空的 MX 记录。 自动答复（和所有答复）将自然被隐含，因为响应服务器不会向其发送邮件的发布地址。
+不能使用值 `From: <>` 来禁止显示自动答复。 相反，您需要为您的自定义域设置空的 MX 记录。 自动答复（和所有答复）将自然被隐含，因为响应服务器不会向其发送邮件的发布地址。
 
 - 选择无法接收电子邮件的电子邮件域。 例如，如果您的主域是 contoso.com，则可以选择 noreply.contoso.com。
 

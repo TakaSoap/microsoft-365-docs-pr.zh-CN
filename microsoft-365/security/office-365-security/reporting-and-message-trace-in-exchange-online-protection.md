@@ -1,5 +1,5 @@
 ---
-title: Exchange Online Protection 中的报告和邮件跟踪
+title: 报告和邮件跟踪
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,16 +14,16 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解 Microsoft Exchange Online Protection （EOP）管理员可用的报告和故障排除工具。
-ms.openlocfilehash: 44b4223b4310a2de1d90f99f8a7af23cc6054f94
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034376"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44206438"
 ---
-# <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Exchange Online Protection 中的报告和邮件跟踪
+# <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
-Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮助您确定组织的总体状态和运行状况。 此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中具有邮箱的 Microsoft 365 组织中，EOP 提供了许多不同的报告，可帮助您确定组织的总体状态和运行状况。 此外，还提供可帮助您解决特定事件（例如邮件没有到达目标收件人）的工具，以及协助满足合规性要求的审核报告。
 
 ## <a name="usage-reports"></a>使用率报告
 
@@ -57,11 +57,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 
-使用 Microsoft Graph 以编程方式创建 Microsoft 365 管理中心提供的报告。 请参阅[在 Microsoft Graph 中使用 Office 365 使用情况报告](https://docs.microsoft.com/graph/api/resources/report)的主题。
-
-## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
-
-以编程方式创建报表。 请参阅[Microsoft Graph 概述](https://docs.microsoft.com/graph/overview)。
+使用 Microsoft Graph 以编程方式创建在管理中心中可用的报告。 有关详细信息，请参阅[microsoft Graph 概述](https://docs.microsoft.com/graph/overview)和使用[Microsoft Graph 中的 Office 365 使用率报告](https://docs.microsoft.com/graph/api/resources/report)。
 
 ## <a name="message-trace"></a>邮件跟踪
 
@@ -69,7 +65,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 
 您可以使用此信息有效地回答用户的问题，解决邮件流问题，验证策略更改，并缓解联系技术支持寻求帮助的需求。
 
-请参阅[跟踪电子](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)邮件
+请参阅[安全性 & 合规性中心中的邮件跟踪](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>审核日志记录
 
@@ -85,6 +81,7 @@ Microsoft Exchange Online Protection (EOP) 提供许多不同的报告，可帮�
 |邮件保护摘要报告|90 天|邮件数据聚合将在 24-48 小时内基本完成。一些小的增量聚合更改可能最多需要 5 天。|
 |邮件保护详细信息报告|90 天|对于未超过 7 天的详细数据，数据应该会在 24 小时内出现，但可能需要在 48 小时后才会完整。一些小的增量更改可能最多需要 5 天才能出现。 <br/><br/> 若要查看关于超过 7 天的邮件的详细报告，获取结果可能需要几个小时。|
 |邮件跟踪数据|90 天|对未超过 7 天的邮件运行邮件跟踪时，邮件应该会在 5-30 分钟内显示。<br/><br/> 对超过 7 天的邮件运行邮件跟踪时，获取结果可能需要几个小时。|
+|
 
 > [!NOTE]
-> 无论是通过 Microsoft 365 管理中心还是远程 PowerShell 请求，数据可用性和延迟都是相同的。
+> 无论是通过管理员中心还是远程 PowerShell 请求，数据可用性和延迟都是相同的。

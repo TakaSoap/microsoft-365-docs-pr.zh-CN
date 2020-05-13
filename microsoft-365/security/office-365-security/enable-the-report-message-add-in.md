@@ -16,17 +16,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 22ce1c8e8084cb0bcbcb2f9fa4c0c80e1a59bf9c
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939471"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209483"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
 > [!NOTE]
-> 如果您是具有 Exchange Online 邮箱的组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
+> 如果您是使用 Exchange Online 邮箱的 Microsoft 365 组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
 
 Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮件外接程序使用户能够轻松地将误报（电子邮件被标记为 "坏"）或 "漏报（允许错误电子邮件"）报告给 Microsoft 及其子公司进行分析。 Microsoft 使用这些提交改进电子邮件保护技术的有效性。
 
@@ -54,7 +54,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
   - 内部部署 Exchange 组织中的邮箱
   - GCC、GCC 高或 DoD 订阅
 
-- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅[在 Office 365 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
+- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅[在 Exchange Online 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
 
 - 您的现有 web 浏览器应与报告邮件外接程序一起使用。 但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。
 
@@ -64,7 +64,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>获取自己的报告邮件外接程序
 
-1. 转到 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，并搜索报告邮件外接程序。 若要直接转到报告邮件加载项，请转到<https://appsource.microsoft.com/product/office/wa104381180>。
+1. 转到 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，并搜索报告邮件外接程序。 若要直接转到报告邮件加载项，请转到 <https://appsource.microsoft.com/product/office/wa104381180> 。
 
 2. 单击 "**立即获取**"。
 
@@ -91,7 +91,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 > [!NOTE]
 > 最长可能需要12个小时，外接程序才会显示在您的组织中。
 
-1. 在 Microsoft 365 管理中心，转到 "服务" **& "外接程序**" 页<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>，然后单击 "**部署外接程序**"。
+1. 在 Microsoft 365 管理中心，转到 "服务" **& "外接程序**" 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> ，然后单击 "**部署外接程序**"。
 
    ![Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -101,7 +101,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
    ![部署新的加载项页面](../../media/NewAddInScreen2.png)
 
-4. 在出现的 "**选择外接程序**" 页中，单击 "**搜索**" 框，输入**报告消息**，然后单击 "**搜索** ![搜索" 图标](../../media/search-icon.png)。 在结果列表中，找到 "**报告消息**"，然后单击 "**添加**"。
+4. 在出现的 "**选择外接程序**" 页中，单击 **"搜索**" 框，输入**报告消息**，然后单击 "**搜索** ![ 搜索" 图标 ](../../media/search-icon.png) 。 在结果列表中，找到 "**报告消息**"，然后单击 "**添加**"。
 
    ![选择加载项搜索结果](../../media/NewAddInScreen3.png)
 
@@ -118,7 +118,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
    - **部署方法**：选择下列值之一：
 
      - **固定（默认值）**：加载项将自动部署到指定的用户，并且无法将其删除。
-     - **可用**：用户可以在**家庭** \> **Get add-ins** \>版中安装外接程序**管理员管理**。
+     - **可用**：用户可以在**家庭**版中安装外接程序 \> **Get add-ins** \> **管理员管理**。
      - **可选**：将加载项自动部署到指定的用户，但可以选择将其删除。
 
    ![配置加载项页面](../../media/configure-add-in.png)
@@ -149,13 +149,13 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>查看或编辑报告邮件外接程序的设置
 
-1. 在 Microsoft 365 管理中心，转到上<https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>的 "**服务" & "外接程序**" 页。
+1. 在 Microsoft 365 管理中心，转到上的 "**服务" & "外接程序**" 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
 
    ![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. 查找并选择**报告邮件**加载项。
 
-3. 在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。 完成后，单击 **“保存”**。
+3. 在显示的 "**编辑报告消息**" 浮出控件中，查看并编辑组织的相应设置。 完成时，请单击“保存”****。
 
    ![报告邮件外接程序的设置](../../media/EditReportMessageAddIn.png)
 

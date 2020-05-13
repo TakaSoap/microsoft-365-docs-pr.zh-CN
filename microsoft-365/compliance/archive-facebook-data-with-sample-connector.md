@@ -16,14 +16,14 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 设置连接器以将 Facebook 数据导入 Microsoft 365，以便您可以使用合规性功能，如合法保留、内容搜索和保留策略。
-ms.openlocfilehash: a1a45b3558e8c5fb77fb1d04a1a38402000bbd1b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035154"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210522"
 ---
-# <a name="set-up-a-connector-to-archive-facebook-data"></a>使用连接器存档 Facebook 数据
+# <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>设置连接器以存档 Facebook 数据（预览）
 
 使用 Microsoft 365 合规性中心中的连接器将来自 Facebook 商业页面的数据导入并存档到 Microsoft 365。 在设置并配置连接器后，它会连接到 Facebook 商业页面（按计划），将 Facebook 项目的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱中。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44035154"
 
 - TenantId：在第1步中创建 Azure Active Directory 中的 Facebook 连接器应用之后复制的 Microsoft 365 组织的租户 ID。
 
-完成此步骤后，请务必复制 Azure 应用服务 URL （例如， https://fbconnector.azurewebsites.net)。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
+完成此步骤后，请务必复制 Azure 应用服务 URL （例如， https://fbconnector.azurewebsites.net) 。 您需要使用此 URL 来完成步骤3、步骤4和步骤5。
 
 ## <a name="step-3-register-the-web-app-on-facebook"></a>步骤3：在 Facebook 上注册 web 应用程序
 

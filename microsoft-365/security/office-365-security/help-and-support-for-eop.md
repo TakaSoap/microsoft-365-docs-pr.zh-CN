@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: 6fde3c6cf62f865a17f081c1892d6a5197b037f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638042"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209195"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
-此处所列的技术支持资源可以帮助您在遇到 Microsoft Exchange Online Protection (EOP) 问题时找到答案。Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，本主题中列出的技术支持资源将帮助您查找在 EOP 中遇到问题时的答案。 Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
 
 ## <a name="self-support-options"></a>自助支持选项
 

@@ -15,17 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何在 Microsoft 365 中设置反网络钓鱼保护，以保护您的组织免受恶意网络钓鱼攻击。
-ms.openlocfilehash: bbde781114cadb6535bdb09c133d834ce23793a3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中提供的反网络钓鱼策略。
+ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035328"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209807"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
-使用 Exchange Online 邮箱、独立 Exchange Online Protection （EOP）组织且无 Exchange Online 邮箱和 Office 365 高级威胁防护（ATP）组织的 Microsoft 365 组织中提供了配置反网络钓鱼防护设置的策略。
+使用 Exchange Online 邮箱、独立 Exchange Online Protection （EOP）组织（没有 Exchange Online 邮箱）和 Office 365 高级威胁防护（Office 365 ATP）组织在 Microsoft 365 组织中提供配置反网络钓鱼保护设置的策略。
 
 ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例如：
 
@@ -185,7 +185,7 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 ### <a name="advanced-phishing-thresholds-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的高级网络钓鱼阈值
 
-以下高级网络钓鱼阈值仅在 ATP 反网络钓鱼策略中可用来指定如何处理检测到的网络钓鱼邮件：
+以下高级网络钓鱼阈值仅在 ATP 反网络钓鱼策略中可用，以控制将机器学习模型应用于邮件以确定仿冒判定的邮件的灵敏度：
 
 - **1-Standard**：这是默认值。 对邮件执行的操作的严重性取决于邮件是网络钓鱼的置信度（低、中、高或非常高的可信度）。 例如，以非常高的可信度标识为网络钓鱼的邮件会应用最严重的操作，而标识为具有较低可信度的网络钓鱼的邮件则应用了较少的严重操作。
 

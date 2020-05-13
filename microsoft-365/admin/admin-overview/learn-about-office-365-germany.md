@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+monikerRange: o365-germany
 ms.collection:
 - M365-subscription-management
 - Adm_O365
@@ -19,18 +20,17 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解 Office 365 德国。
-ms.openlocfilehash: d992d437e40baaa105ca407d40bb81ff84d9e3f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2c63672865ac2c64bd9731df797202cf9cfdd9cd
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623902"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208350"
 ---
-> [!NOTE]
-> Office 365 德国不会再接受新客户或部署新服务。 德国的新云区域在 2020 for Microsoft 365 和 Office 365 的第一季度中提供，将在德国提供核心客户数据派驻服务，以及与 Microsoft 全球云网络的完全连接。 
->
-
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
+
+> [!NOTE]
+> Office 365 德国不会再接受新客户或部署新服务。 德国的新云区域在 2020 for Microsoft 365 和 Office 365 的第一季度中提供，将在德国提供核心客户数据派驻服务，以及与 Microsoft 全球云网络的完全连接。
 
 Office 365 德国在欧洲可提供的 Office 365 服务是一种不同的选择。 它通过为数字工作提供业界一流的工作效率服务，从德国数据中心的德国数据中心，通过德国法律管理的独特数据访问和控制措施，帮助您满足德国最受管控客户的需求、欧盟（EU）和欧洲自由贸易协会（EFTA）的需求。
   

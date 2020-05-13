@@ -18,50 +18,32 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
-ms.openlocfilehash: 849707ee8b703f13ac12ecb414a8ed9ea6421704
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036736"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208593"
 ---
-# <a name="troubleshooting-mail-sent-to-office-365"></a>向 Office 365 发送故障排除邮件
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>对发送到 Microsoft 365 的邮件进行故障排除
 
 本文提供了在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人故障排除信息，以及向客户批量发送电子邮件的最佳实践。
 
-## <a name="troubleshooting-common-problems-with-mail-delivery-to-office-365"></a>有关 Office 365 邮件传送的常见问题的故障排除
+## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和域的发送信誉？
 
-选择经常遇到的问题之一。
+EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exchange Server）提供反垃圾邮件保护。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
 
-- [您是否正在管理您的 IP 和域的发送信誉？](#are-you-managing-your-ip-and-domains-sending-reputation)
-
-- [您是否正从新的 IP 地址发送电子邮件？](#are-you-sending-email-from-new-ip-addresses)
-
-- [确认您的 DNS 设置正确](#confirm-that-your-dns-is-set-up-correctly)
-
-- [确保您没有将自己标识为不可路由的 IP](#ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip)
-
-- [您向 Office 365 的用户发送电子邮件时，收到一个未送达报告 (NDR)](#you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365)
-
-- [我的电子邮件进入到 EOP 中收件人的垃圾邮件文件夹](#my-email-landed-in-the-recipients-junk-folder-in-eop)
-
-- [来自我的 IP 地址的流量被 EOP 限制](#traffic-from-my-ip-address-is-throttled-by-eop)
-
-### <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>您是否正在管理您的 IP 和域的发送信誉？
-
-EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exchange Server、Microsoft Office Outlook 和 Windows Live Mail）提供反垃圾邮件保护。 我们还利用 SPF、DKIM、DMARC 和电子邮件身份验证技术来帮助解决欺骗和网络钓鱼的问题，通过验证发送电子邮件的域是否被授权执行此操作来帮助解决。 EOP 筛选受到许多因素的影响，如发送 IP、域、身份验证、列表精度、投诉率和内容等相关因素。 其中，拉低发件人信誉和传送电子邮件能力的关键因素之一是他们的垃圾邮件投诉率。
-
-### <a name="are-you-sending-email-from-new-ip-addresses"></a>您是否正从新的 IP 地址发送电子邮件？
+## <a name="are-you-sending-email-from-new-ip-addresses"></a>您是否正从新的 IP 地址发送电子邮件？
 
 如果您之前没有使用这个 IP 地址发送电子邮件，那么通常在我们的系统里不会为其建立任何信誉。因此，来自新 IP 的电子邮件更有可能遇到传送问题。一旦 IP 建立了非发送垃圾邮件的信誉，EOP 通常会允许更好的电子邮件传送体验。
 
 添加到域（在现有 SPF 记录下验证的）的新 IP 通常继承了一些域的发送信誉的额外优势。如果您的域有良好的发送信誉，那么新 IP 可能会有更快的加速时间体验。一个新的 IP 可以在几周内或更快的时间内完全加速，这取决于容量、列表精度和垃圾邮件投诉率。
 
-### <a name="confirm-that-your-dns-is-set-up-correctly"></a>确认您的 DNS 设置正确
+## <a name="confirm-that-your-dns-is-set-up-correctly"></a>确认您的 DNS 设置正确
 
 有关如何创建和维护 DNS 记录的说明，包括邮件路由所需的 MX 记录，您将需要联系您的 DNS 托管提供者。
 
-### <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>确保您没有将自己标识为不可路由的 IP
+## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>确保您没有将自己标识为不可路由的 IP
 
 我们可能不接受来自反向 DNS 查找失败的发件人的电子邮件。在某些情况下，当合法发件人在尝试打开一个 EOP 的连接时，他们错误地将自己标识为非面向 Internet 的可路由的 IP。为专用（不可路由的）网保留的 IP 地址包括：
 
@@ -71,38 +53,23 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 - 172.16.0.0/11 (or 172.16.0.0 - 172.31.255.255)
 
-### <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>向 Office 365 中的用户发送电子邮件时收到未送达报告（NDR）
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>向 Office 365 中的用户发送电子邮件时收到未送达报告（NDR）
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
 有关收到的错误的详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)中的错误代码列表。
 
- 例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止。
+ 例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止：
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
 若要请求从此列表中删除，您可以[使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
-### <a name="my-email-landed-in-the-recipients-junk-folder-in-eop"></a>我的电子邮件进入到 EOP 中的收件人的垃圾邮件文件夹
+## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>收件人的 "垃圾邮件" 文件夹中的 "我的电子邮件进入到"
 
-如果某封邮件被 EOP 错误地标识为垃圾邮件，您可以与收件人一起将此误报邮件提交给 Microsoft 垃圾邮件分析团队，他们将对该邮件进行评估和分析。根据分析结果的不同，可能会调整服务范围内的垃圾邮件内容筛选规则，以允许发送该邮件。使用电子邮件向 Microsoft 提交的消息不应被归类为垃圾邮件。这样做时，请务必遵循以下过程中的步骤。
+如果某封邮件被 EOP 错误地标识为垃圾邮件，您可以与收件人一起将此误报邮件提交给 Microsoft 垃圾邮件分析团队，他们将对该邮件进行评估和分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-### <a name="to-use-email-to-submit-false-positive-messages-to-the-microsoft-spam-analysis-team"></a>使用电子邮件将误报邮件提交给 Microsoft 垃圾邮件分析团队
-
-1. 将您想要提交的邮件保存为非垃圾邮件。
-
-2. 创建一个新的空白邮件并对其附加非垃圾邮件。
-
-    您可以根据需要附加多个非垃圾邮件。
-
-3. 复制和粘贴初始的邮件主题行至新的邮件主题行。
-
-    > [!IMPORTANT]
-    > 保留新的邮件正文空白。
-
-4. 将您的新邮件发送到 [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com)。
-
-### <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>来自我的 IP 地址的流量被 EOP 限制
+## <a name="traffic-from-my-ip-address-is-throttled-by-eop"></a>来自我的 IP 地址的流量被 EOP 限制
 
 如果您收到来自 EOP 的 NDR，则表明您的 IP 地址被 EOP 限制，例如：
 
@@ -110,7 +77,7 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 您收到了 NDR，因为从 IP 地址检测出可疑活动，且该地址在接受进一步评估时已暂时受限。如果通过评估后该怀疑被解除，则该限制将很快取消。
 
-### <a name="i-cant-receive-email-from-senders-in-office-365"></a>我不能接收来自 Office 365 中的发件人的电子邮件
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我无法从 Microsoft 365 中的发件人接收电子邮件
 
  为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅[Exchange Online PROTECTION IP 地址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
 
@@ -118,7 +85,7 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 如果你经常向 Microsoft 365 用户执行批量电子邮件活动，并希望确保你的电子邮件以安全、及时的方式送达，请按照本节中的提示操作。
 
-### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保“发件人:”的名称体现出邮件的发送人。
+### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>确保 "发件人" 名称反映发送邮件的人
 
 邮件主题应是邮件内容的简要概括，且邮件正文应清楚并简洁地表明优惠、服务或产品的相关内容。 例如：
 

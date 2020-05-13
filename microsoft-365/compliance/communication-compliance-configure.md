@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 35eb63fd5b472f4b58c5f2fb5285ffff012277dd
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b1ce2de627e7068124a1dfd15b84d40a2063d3a2
+ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065897"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210558"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -61,9 +61,9 @@ ms.locfileid: "44065897"
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 
-1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中使用管理员帐户的凭据进行登录。
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
-2. 在 "安全&amp;合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在 "安全 &amp; 合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
 3. 选择“创建”****。
 
@@ -94,7 +94,7 @@ ms.locfileid: "44065897"
 | **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 |
-| Reviewers | None | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
+| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
 当您为受监督的用户选择 Microsoft 365 组时，该策略将监视共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
 
@@ -117,7 +117,7 @@ ms.locfileid: "44065897"
 >[!Important]
 >不支持使用 PowerShell 创建和管理通信合规性策略。 若要创建和管理这些策略，必须使用[Microsoft 365 通信合规性解决方案](https://compliance.microsoft.com/supervisoryreview)中的策略管理控件。
 
-1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 Microsoft 365 合规性中心中，选择 "**通信合规性**"。
   
@@ -129,14 +129,14 @@ ms.locfileid: "44065897"
 
     - 确认或更新策略名称。 一旦创建了策略，便无法更改策略名称。
     - 选择要监督的用户或组，包括选择要排除的用户或组。
-    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。
+    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
     - 选择 "受限条件" 字段，通常是要应用于策略的敏感信息类型或关键字词典。
 
     如果您选择使用策略向导创建自定义策略，您将：
 
     - 为策略指定名称和说明。 一旦创建了策略，便无法更改策略名称。
     - 选择要监督的用户或组，包括组织中的所有用户、特定用户和组，或者要排除的其他用户和组。
-    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。
+    - 选择策略的审阅者。 审阅者是单个用户，并且所有审阅者都必须在 Exchange Online 上托管邮箱。 在这里添加的审阅者是在调查和修正工作流中上报通知时可供选择的审阅者。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
     - 选择要扫描的通信通道，包括 Exchange、Microsoft 团队、Yammer 或 Skype for Business。 如果您在 Microsoft 365 中配置了连接器，您还将选择扫描第三方源。
     - 选择要监视的通信方向，包括入站、出站或内部通信。
     - 定义通信合规性策略[条件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以从 "消息地址"、"关键字"、"文件类型" 和 "大小匹配条件" 中进行选择。
@@ -145,7 +145,7 @@ ms.locfileid: "44065897"
 
     >[!CAUTION]
     >我们正在弃用采用**冒犯性语言**的内置分类器，因为它生成了大量误报。 请勿使用该功能，如果您当前正在使用它，则应将业务流程移出它。 我们建议改为使用**威胁**、**猥亵**和**骚扰**内置分类符。
-    
+
     - 定义要查看的通信百分比。
     - 查看策略选择并创建策略。
 
@@ -157,7 +157,7 @@ ms.locfileid: "44065897"
 
 如果希望通过向关联的员工发送提醒通知来选择对策略警报做出响应，您需要在您的组织中至少创建一个通知模板。 在将 "通知模板" 字段作为警报修正过程的一部分发送并为每个通信合规性策略创建自定义的通知模板之前，这些字段都是可编辑的。
 
-1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。
 
@@ -185,6 +185,6 @@ ms.locfileid: "44065897"
     > [!NOTE]
     > 所有源通道中的通信可能需要长达24小时才能在策略中完全处理。
 
-3. 以通信合规性策略中指定的审阅者的资格登录到 Microsoft 365。 导航到 "**通信合规性** > **警报**" 以查看策略的警报。
+3. 以通信合规性策略中指定的审阅者的资格登录到 Microsoft 365。 导航到 "**通信合规性**  >  **警报**" 以查看策略的警报。
 
 4. 使用修正控件修正警报，并验证是否正确解决了警报。

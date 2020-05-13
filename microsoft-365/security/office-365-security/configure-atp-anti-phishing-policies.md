@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（ATP）组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: e1a7d3b9d401d8bb5bec08d7b5d58546bbd382aa
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（Office 365 ATP）的组织中提供的高级反网络钓鱼策略。
+ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949255"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208883"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -29,7 +29,7 @@ ATP 反网络钓鱼策略是[Office 365 高级威胁防护](office-365-atp.md)�
 
 您可以在安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。
 
-有关在 Exchange Online Protection 组织（即没有 ATP 的 Office 365 组织）中使用的防仿冒策略中配置更多限制的信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+有关在 Exchange Online Protection 组织（即没有 Office 365 ATP 的 Microsoft 365 组织）中提供的更多限制的防网络钓鱼策略的信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
 ## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Security & 合规性中心与 Exchange Online PowerShell 中的 ATP 反网络钓鱼策略
 
@@ -47,7 +47,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 从安全 & 合规中心删除 ATP 反网络钓鱼策略时，将删除反钓鱼诈骗规则和关联的反网络钓鱼策略。
 
-在 Exchange Online PowerShell 中，反网络钓鱼策略和反网络钓鱼规则之间的区别显而易见。 您可以使用** \*-AntiPhishPolicy** cmdlet 管理反网络钓鱼策略，并使用** \*-AntiPhishRule** cmdlet 管理反网络钓鱼规则。
+在 Exchange Online PowerShell 中，反网络钓鱼策略和反网络钓鱼规则之间的区别显而易见。 您可以使用** \* -AntiPhishPolicy** cmdlet 管理反网络钓鱼策略，并使用** \* -AntiPhishRule** cmdlet 管理反网络钓鱼规则。
 
 - 在 PowerShell 中，首先创建反网络钓鱼策略，然后创建反网络钓鱼规则来标识应用该规则的策略。
 
@@ -63,13 +63,13 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 名为 Office365 AntiPhish 的策略默认具有您无法修改的自定义优先级值**最低**（该策略总是最后应用）。 您创建的任何自定义策略的优先级始终高于名为 Office365 AntiPhish 的策略的默认优先级。
 
-- 名为 Office365 AntiPhish 的策略默认为默认策略（ **IsDefault**属性具有值`True`），无法删除默认策略。
+- 名为 Office365 AntiPhish 的策略默认为默认策略（ **IsDefault**属性具有值 `True` ），无法删除默认策略。
 
 若要提高反钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义 ATP 反网络钓鱼策略。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **ATP 反钓鱼**" 页面， <https://protection.office.com/antiphishing>请使用。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **ATP 反钓鱼**" 页面，请使用 <https://protection.office.com/antiphishing> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
@@ -79,7 +79,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 允许使用最长30分钟的时间来应用新的或更新的策略。
 
-- 有关在筛选管道中应用反网络钓鱼策略的位置的信息，请参阅[Office 365 中的电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
+- 有关在筛选管道中应用反网络钓鱼策略的位置的信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
 ## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a>使用安全 & 合规性中心创建 ATP 反网络钓鱼策略
 
@@ -107,15 +107,15 @@ ATP 反网络钓鱼策略的基本要素为：
 
    - **收件人为**：指定组织中的一个或多个邮箱、邮件用户或邮件联系人。
    - **收件人是的成员**：指定组织中的一个或多个组。
-   - **收件人域是**：指定 Office 365 中配置的一个或多个接受的域中的收件人。
+   - **收件人域为**：指定组织中已配置的一个或多个接受的域中的收件人。
 
    选择条件后，将显示相应的下拉框，其中包含**其中的任何**框。
 
    - 在框中单击并滚动到要选择的值列表。
    - 在框中单击，然后开始键入以筛选列表并选择一个值。
    - 若要添加其他值，请单击框中的空白区域。
-   - 若要删除单个条目， **Remove** ![请单击值](../../media/scc-remove-icon.png)上的 "删除删除" 图标。
-   - 若要删除整个条件，请**Remove** ![单击条件上](../../media/scc-remove-icon.png)的 "删除删除" 图标。
+   - 若要删除单个条目， **Remove**请单击 ![ ](../../media/scc-remove-icon.png) 值上的 "删除删除" 图标。
+   - 若要删除整个条件，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) 条件上的 "删除删除" 图标。
 
    若要添加其他条件，请单击 "**添加条件**"，然后选择 "**应用于**" 下的其他值。
 
@@ -139,15 +139,15 @@ ATP 反网络钓鱼策略的基本要素为：
 
 2. 选择要修改的自定义 ATP 反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 将显示 "**编辑\<您\>的策略名称**" 浮出控件。 单击任意部分中的 "**编辑**" 可访问该部分中的设置。
+3. 将显示 "**编辑您的策略 \< \> 名称**" 浮出控件。 单击任意部分中的 "**编辑**" 可访问该部分中的设置。
 
    - 以下步骤按各节的显示顺序显示，但它们不是连续的（您可以按任何顺序选择和修改节）。
 
-   - 在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任意页面上的 "**保存**" （或 "](../../media/scc-remove-icon.png) **取消**" 或 "**关闭** ![关闭" 图标，以返回到 "**编辑策略\<名称\> ** " 页（无需访问向导的最后一页即可保存或保留）。
+   - 在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任意页面上的 "**保存**" （或 "**取消**" 或 "**关闭** ![ 关闭" 图标， ](../../media/scc-remove-icon.png) 以返回到 "**编辑策略 \< 名称 \> ** " 页（无需访问向导的最后一页即可保存或保留）。
 
 4. **策略设置**：单击 "**编辑**" 可修改在上一节中[创建策略](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies)时可用的相同设置：
 
-   - **名称**
+   - **Name**
    - **说明**
    - **应用于**
    - **查看设置**
@@ -164,7 +164,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
         - 在框中单击并滚动到要选择的用户列表。
         - 在框中单击，然后开始键入以筛选列表并选择用户。
-        - 若要删除条目，请单击 "用户](../../media/scc-remove-icon.png) " 上的 "**删除** ![删除图标"。
+        - 若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。
 
      - **名称**：根据您选择的电子邮件地址填充此值，但您可以对其进行更改。
 
@@ -203,7 +203,7 @@ ATP 反网络钓鱼策略的基本要素为：
      - **显示模拟域的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
      - **显示不正常字符的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
 
-     完成后，单击 **“保存”**。
+     完成时，请单击“保存”****。
 
    - **邮箱智能**：
 
@@ -226,7 +226,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
        - 在框中单击并滚动到要选择的用户列表。
        - 在框中单击，然后开始键入以筛选列表并选择用户。
-       - 若要删除条目，请单击 "用户](../../media/scc-remove-icon.png) " 上的 "**删除** ![删除图标"。
+       - 若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。
 
      - **受信任域**：输入域名（例如，contoso.com），按 enter，并在必要时重复此操作。
 
@@ -236,8 +236,8 @@ ATP 反网络钓鱼策略的基本要素为：
      - 您可以在此页面**上****直接切换**以下设置：
 
        - **受保护的用户**
-       - **受保护的域** \> **包括我自己的域**
-       - **受保护域** \>的**受**保护域（自定义域）
+       - **受保护域** \>**包含我自己的域**
+       - **受保护域** \>**受保护的域**（自定义域）
        - **邮箱智能**
 
    完成后，请单击任意页面上的 "**保存**"。
@@ -246,10 +246,10 @@ ATP 反网络钓鱼策略的基本要素为：
 
    请注意，EOP 中的反网络钓鱼策略中也提供了这些相同的设置。
 
-   - **哄骗筛选器设置**：默认值为 **"开**"，我们建议您将其保留在中。 若要将其关闭，请将开关滑动到 "**关闭**"。 有关详细信息，请参阅[在 Office 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+   - **哄骗筛选器设置**：默认值为 **"开**"，我们建议您将其保留在中。 若要将其关闭，请将开关滑动到 "**关闭**"。 有关详细信息，请参阅[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
      > [!NOTE]
-     > 如果您的 MX 记录不指向 Office 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+     > 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
    - **启用未经身份验证的发件人功能**：默认值为**打开**。 若要将其关闭，请将开关滑动到 "**关闭**"。
 
@@ -283,7 +283,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    完成后，单击任意页面上的 "**保存**"。
 
-8. 返回到 "**编辑你的\<策略\>名称**" 页，查看你的设置，然后单击 "**关闭**"。
+8. 返回到 "**编辑你的 \< 策略 \> 名称**" 页，查看你的设置，然后单击 "**关闭**"。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a>使用安全 & 合规性中心修改默认的 ATP 反网络钓鱼策略
 
@@ -333,7 +333,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 2. 选择要修改的策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 将显示 "**编辑\<您\>的策略名称**" 浮出控件。
+3. 将显示 "**编辑您的策略 \< \> 名称**" 浮出控件。
 
    - **优先级**值为**0**的自定义 ATP 反网络钓鱼策略只有 "**降低优先级**" 按钮可用。
 
@@ -355,7 +355,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    - 单击 "**默认策略**" 以查看默认的反网络钓鱼策略。
 
-3. 将出现 "**编辑\<您\>的策略名称**" 浮出控件，您可以在其中查看设置和值。
+3. 将出现 "**编辑您的策略 \< \> 名称**" 浮出控件，您可以在其中查看设置和值。
 
 ## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a>使用安全 & 合规性中心删除 ATP 反网络钓鱼策略
 
@@ -363,7 +363,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 2. 选择要删除的策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 在 "**编辑您的\<策略\>名称**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。
+3. 在 "**编辑您的 \< 策略 \> 名称**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。
 
 无法删除默认策略。
 
@@ -383,9 +383,9 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 您可以在 PowerShell 中的新反网络钓鱼策略中配置以下设置，这些设置在安全 & 合规性中心中不可用，直到您创建了策略：
 
-  - 将新策略创建为禁用（在**AntiPhishRule** cmdlet 上_启用_ `$false` ）。
+  - 将新策略创建为禁用（_Enabled_ `$false` 在**AntiPhishRule** cmdlet 上启用）。
 
-  - 在**AntiPhishRule** cmdlet 上创建（_优先级_ _ \<编号\>_）过程中设置策略的优先级。
+  - 在**AntiPhishRule** cmdlet 上创建（_优先级_ _ \< 编号 \> _）过程中设置策略的优先级。
 
 - 在 PowerShell 中创建的新反网络钓鱼策略在安全 & 合规性中心中不可见，除非您将策略分配给反网络钓鱼规则。
 
@@ -399,7 +399,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 
 本示例使用以下设置创建名为 "调研隔离" 的反网络钓鱼策略：
 
-- 策略已启用（我们没有使用_enabled_参数，默认值为`$true`）。
+- 策略已启用（我们没有使用_enabled_参数，默认值为 `$true` ）。
 - 说明是：研究部门策略。
 - 为所有接受域启用组织域保护，并对 fabrikam.com 的目标域提供保护。
 - 将 Mai Fujito （mfujito@fabrikam.com）指定为要从模拟中保护的用户。
@@ -608,7 +608,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
   - 从列表中选择策略，并在浮出控件中查看详细信息。
   - 单击 "**默认策略**" 并在浮出控件中查看详细信息。
 
-- 在 Exchange Online PowerShell 中， \<将\> "名称" 替换为策略或规则的名称，然后运行以下命令并验证设置：
+- 在 Exchange Online PowerShell 中，将 " \< 名称 \> " 替换为策略或规则的名称，然后运行以下命令并验证设置：
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

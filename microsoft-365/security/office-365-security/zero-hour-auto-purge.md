@@ -1,5 +1,5 @@
 ---
-title: 零小时自动清除（ZAP）-电子邮件保护功能
+title: 零小时自动清除（ZAP）
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,25 +20,25 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Microsoft 365 中的零小时自动清除（ZAP），这是一种检测已传递到 Exchange Online 的垃圾邮件、恶意软件或网络钓鱼邮件的电子邮件保护功能。
-ms.openlocfilehash: ba7aa74dd9152990ce327d1b1564c3246d15cbb8
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 管理员可以了解零小时自动清除（ZAP）如何追溯将已传递的邮件在 Exchange Online 邮箱中移动到被追溯为垃圾邮件或网络钓鱼的 "垃圾邮件" 文件夹或隔离区。
+ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173294"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208436"
 ---
-# <a name="zero-hour-auto-purge-zap---protection-against-spam-and-malware-in-microsoft-365"></a>在 Microsoft 365 中针对垃圾邮件和恶意软件的零小时自动清除（ZAP）保护
+# <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online 中的零小时自动清除（ZAP）
 
 ## <a name="overview"></a>概述
 
-零小时自动清除（ZAP）是 Microsoft 365 中的一种电子邮件保护功能，追溯检测并 neutralizes 已传递到 Exchange Online 邮箱的恶意网络钓鱼、垃圾邮件或恶意软件邮件。
+在 Exchange Online 中有邮箱的 Microsoft 365 组织中，零小时自动清除（ZAP）是一种电子邮件保护功能，追溯检测并 neutralizes 已传递到 Exchange Online 邮箱的恶意网络钓鱼、垃圾邮件或恶意软件邮件。
 
-ZAP 可与包含 Exchange Online 邮箱的任何 Microsoft 365 订阅附带的默认 Exchange Online Protection （EOP）一起使用。 ZAP 在独立 EOP 环境中无法正常工作，从而保护本地 Exchange 邮箱。
+在保护本地 Exchange 邮箱的独立 Exchange Online Protection （EOP）环境中，ZAP 不起作用。
 
 ## <a name="how-zap-works"></a>ZAP 的工作方式
 
-Microsoft 365 每天实时更新垃圾邮件和恶意软件签名。 但是，用户仍可以出于各种原因（包括内容在传递给用户后 weaponized 的情况）接收恶意邮件。 ZAP 通过持续监控对 Microsoft 365 垃圾邮件和恶意软件签名的更新来解决此问题。 ZAP 可以查找和删除用户邮箱中已有的邮件。
+垃圾邮件和恶意软件签名每天都会在服务中实时更新。 但是，用户仍可以出于各种原因（包括内容在传递给用户后 weaponized 的情况）接收恶意邮件。 ZAP 通过持续监控对服务中的垃圾邮件和恶意软件签名的更新来解决此问题。 ZAP 可以查找和删除用户邮箱中已有的邮件。
 
 对于用户而言，ZAP 操作是无缝的;如果检测到并移动了邮件，则不会收到通知。
 
@@ -48,7 +48,7 @@ Microsoft 365 每天实时更新垃圾邮件和恶意软件签名。 但是，�
 
 对于在传递后发现包含恶意软件的已**读或未读邮件**，ZAP 将隔离包含恶意软件附件的邮件。 只有管理员可以查看和管理隔离中的恶意软件消息。
 
-默认情况下，在反恶意软件策略中启用恶意软件 ZAP。 有关详细信息，请参阅[在 Microsoft 365 中配置反恶意软件策略](configure-anti-malware-policies.md)。
+默认情况下，在反恶意软件策略中启用恶意软件 ZAP。 有关详细信息，请参阅[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 
 ### <a name="phish-zap"></a>网络钓鱼 ZAP
 
@@ -58,7 +58,7 @@ Microsoft 365 每天实时更新垃圾邮件和恶意软件签名。 但是，�
 
 - **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则（默认情况下启用）。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **将邮件重定向到电子邮件地址**，**删除邮件**，**隔离邮件**： ZAP 隔离邮件。 只有管理员可以查看和管理网络钓鱼隔离邮件。
+- **将邮件重定向到电子邮件地址**，**删除邮件**，**隔离邮件**： ZAP 隔离邮件。
 
 默认情况下，在反垃圾邮件策略中启用网络钓鱼 ZAP，而**仿冒电子邮件**筛选判定的默认操作是**隔离邮件**，这意味着网络钓鱼 ZAP 默认隔离邮件。
 
@@ -78,7 +78,7 @@ Microsoft 365 每天实时更新垃圾邮件和恶意软件签名。 但是，�
 
 有关配置垃圾邮件筛选 verdicts 的详细信息，请参阅[在 Microsoft 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-### <a name="zap-considerations-for-office-365-advanced-threat-protection-atp"></a>Office 365 高级威胁防护（ATP）的 ZAP 注意事项
+### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 高级威胁防护（Office 365 ATP）的 ZAP 注意事项
 
 ZAP 不会隔离[动态传递](dynamic-delivery-and-previewing.md)扫描过程中的任何邮件，或者恶意软件筛选已使用**恶意软件警报文本 .txt**文件替换了附件的情况。 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并将反垃圾邮件策略中的筛选判定项设置为对邮件执行某些操作（移动到垃圾邮件、重定向、删除、隔离），则 ZAP 将默认为 "移动到垃圾邮件" 操作。
 

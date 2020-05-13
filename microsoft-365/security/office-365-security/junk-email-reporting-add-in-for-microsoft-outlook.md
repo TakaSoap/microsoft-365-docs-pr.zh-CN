@@ -14,19 +14,19 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 了解如何安装和使用 Microsoft 垃圾电子邮件报告加载项将垃圾邮件、非垃圾邮件和网络钓鱼邮件报告给 Microsoft。
-ms.openlocfilehash: be087a15071114b2d1ec564cbb118dcd85e32429
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5c0b802bea89a0f0f62952261bf0d2864842024f
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638496"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208823"
 ---
-# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook-in-office-365"></a>在 Office 365 中安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
+# <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 
 > [!NOTE]
-> 如果您当前未使用垃圾电子邮件报告加载项，则建议您改为[报告邮件加载项](enable-the-report-message-add-in.md)。
+> 如果您当前未使用垃圾电子邮件报告加载项，则建议您改为[报告邮件加载项](enable-the-report-message-add-in.md)。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误报（好的电子邮件标记为垃圾邮件）、漏报（允许的电子邮件错误）和网络钓鱼邮件到 Exchange Online Protection （EOP）。 如果您的组织不使用 EOP，则您的垃圾邮件报告提交不会影响垃圾邮件筛选。
+Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误报（电子邮件被标记为垃圾邮件）、漏报（允许的无效电子邮件）和网络钓鱼邮件。 如果您的组织不使用 Exchange Online Protection （例如，本地 Exchange 或除 Exchange Online 之外的电子邮件服务），则您的垃圾邮件报告提交不会影响垃圾邮件筛选。
 
 本主题说明如何安装和使用垃圾邮件报告加载项。
 
@@ -39,7 +39,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
   - Outlook 2013 或更高版本
   - Outlook 包含在适用于企业的 Microsoft 365 应用程序中
 
-- 有关将邮件报告给 Microsoft 的详细信息，请参阅[在 Office 365 中向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+- 有关向 Microsoft 报告邮件的详细信息，请参阅[将邮件和文件报告给 microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-spam-and-phishing-messages"></a>使用垃圾电子邮件报告加载项报告垃圾邮件和网络钓鱼邮件
 
@@ -93,7 +93,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 - 您需要在要安装加载项的计算机上拥有管理员权限。
 
-- 转到<https://www.microsoft.com/download/details.aspx?id=18275>并将适用于你的 Office 版本的 .msi 文件下载到易于查找的位置：
+- 转到 <https://www.microsoft.com/download/details.aspx?id=18275> 并将适用于你的 Office 版本的 .msi 文件下载到易于查找的位置：
 
   - **32 位**：`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
@@ -197,7 +197,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 关闭 Outlook 后，请使用以下任一过程卸载垃圾电子邮件报告外接程序：
 
-- **"控制面板"**：按 Windows 键 + R。在打开的 "**运行**" 对话框中`control appwiz.cpl` ，输入，然后单击 **"确定"**。
+- **"控制面板"**：按 Windows 键 + R。在打开的 "**运行**" 对话框中，输入， `control appwiz.cpl` 然后单击 **"确定"**。
 
   在列表中查找并选择**Microsoft 垃圾电子邮件报告加载项**，然后单击 "**卸载**"。
 
@@ -209,7 +209,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
   在出现的对话框中，选择 "**删除适用于 Outlook 的 Microsoft 垃圾电子邮件报告外接程序**"，然后单击 "**下一步**"。
 
-- **静默模式**：查找或下载相应的 .msi 文件。 在命令提示符窗口中，将\<PathToFile\>替换为 .msi 文件的位置，然后运行下列命令之一：
+- **静默模式**：查找或下载相应的 .msi 文件。 在命令提示符窗口中，将 \< PathToFile 替换 \> 为 .msi 文件的位置，然后运行下列命令之一：
 
   - **32 位**：
 
@@ -249,7 +249,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 #### <a name="problem-an-error-message-continually-appears-that-asks-users-to-contact-their-system-administrator"></a>问题：不断出现一条错误消息，询问用户是否联系其系统管理员
 
-1. 验证或将`LoggingLevel`注册表项设置为值 "Verbose"：
+1. 验证或将 `LoggingLevel` 注册表项设置为值 "Verbose"：
 
    - **32 位 Windows 上的32位 Outlook**：
 
@@ -288,7 +288,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 #### <a name="problem-users-selected-not-to-receive-a-confirmation-prompt-when-they-report-messages-and-now-they-want-the-prompt-back"></a>问题：用户选择在报告邮件时不会收到确认提示，现在他们希望返回提示
 
-1. 创建`ConfirmReportJunk`注册表项 wih 值 "True"：
+1. 创建 `ConfirmReportJunk` 注册表项 wih 值 "True"：
 
    ```text
    Windows Registry Editor Version 5.00

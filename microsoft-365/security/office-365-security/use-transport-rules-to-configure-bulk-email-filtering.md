@@ -1,5 +1,5 @@
 ---
-title: 使用邮件流规则在 Office 365 中筛选批量电子邮件
+title: 使用邮件流规则筛选批量电子邮件
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,28 +14,32 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Exchange Online Protection （EOP）中使用邮件流规则进行批量电子邮件筛选。
+description: 管理员可以了解如何使用邮件流规则（传输规则）在 Exchange Online Protection （EOP）中标识和筛选批量邮件（灰色邮件）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43a10951a24ac76108fb0531f9e2c205c3fc9047
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: bb305551db1e86d8d6eccf5e95cdaad29e6711ef
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034970"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208521"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-office-365"></a>使用邮件流规则在 Office 365 中筛选批量电子邮件
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>使用邮件流规则在 EOP 中筛选批量电子邮件
 
-如果您是 Exchange Online 邮箱或独立 Exchange Online Protection （EOP）客户（没有 Exchange Online 邮箱）的 Microsoft 365 客户，则 EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）来扫描入站邮件中的垃圾邮件和批量邮件（也称为 "灰色邮件"）。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中具有邮箱的 Microsoft 365 组织中，EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）来扫描入站邮件中的垃圾邮件和批量邮件（也称为 "灰色邮件"）。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-如果您希望更多的选项筛选批量邮件，可以创建邮件流规则（也称为传输规则），以搜索批量邮件中经常找到的文本模式或短语，并将这些邮件标记为垃圾邮件。 有关批量邮件的详细信息，请参阅 Office 365 中的[垃圾邮件和批量电子邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别（BCL）](bulk-complaint-level-values.md)。
+如果您希望更多的选项筛选批量邮件，可以创建邮件流规则（也称为传输规则），以搜索批量邮件中经常找到的文本模式或短语，并将这些邮件标记为垃圾邮件。 有关批量邮件的详细信息，请参阅 EOP 中的[垃圾邮件和批量电子邮件之间的区别是什么？](what-s-the-difference-between-junk-email-and-bulk-email.md)和[批量投诉级别（BCL）](bulk-complaint-level-values.md)。
 
-本主题介绍如何在 Exchange 管理中心（EAC）和 PowerShell （Exchange Online PowerShell for Microsoft 365 客户中创建这些邮件流规则;适用于独立 EOP 客户的 Exchange Online Protection PowerShell）。
+本主题介绍如何在 exchange 管理中心（EAC）和 PowerShell （exchange Online PowerShell for Microsoft 365 组织中使用 Exchange Online 中的邮箱的 Exchange Online PowerShell; 独立 EOP PowerShell for 组织（没有 Exchange Online 邮箱）中创建这些邮件流规则。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您需要先在 Exchange Online 中分配权限，然后才能执行这些过程。 具体来说，您需要分配 "**传输规则**" 角色，默认情况下会将其分配给 "**组织管理**"、"**合规性管理**" 和 "**记录管理**" 角色。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+- 您需要先分配权限，然后才能执行这些过程：
 
-- 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。
+  - 在 Exchange Online 中，请参阅在 Exchange Online 中的[功能权限](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)中的 "邮件流" 条目。
+  
+  - 在独立 EOP 中，您需要 "传输规则" 角色，默认情况下该角色分配给 OrganizationManagement、ComplianceManagement 和 Ecm.recordsmanagement 角色。 有关详细信息，请参阅[独立 EOP 中的权限](feature-permissions-in-eop.md)和[使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+
+- 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在独立 EOP 中打开 EAC，请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
@@ -57,7 +61,7 @@ ms.locfileid: "44034970"
 
 1. In the EAC, go to **Mail flow** \> **Rules**.
 
-2. 单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png) "添加" 图标，然后选择 "**创建新规则**"。
+2. 单击 "**添加**" "添加" ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) ，然后选择 "**创建新规则**"。
 
 3. 在打开的" **新规则**"窗口中，配置以下设置：
 
@@ -67,65 +71,42 @@ ms.locfileid: "44034970"
 
    - **在以下情况下应用此规则**：配置以下设置之一，以使用正则表达式（RegEx）或字词或短语查找邮件中的内容：
 
-     - **主题** \>或正文**主题或正文与这些文本模式匹配**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** !["](../../media/ITPro-EAC-AddIcon.png)"添加" 图标，然后重复此步骤，直到您输入了所有值。
+     - **主题或正文** \>**主题或正文与这些文本模式匹配**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** ![ " "添加 ](../../media/ITPro-EAC-AddIcon.png) " 图标，然后重复此步骤，直到您输入所有值。
 
        - `If you are unable to view the content of this email\, please`
-
        - `\>(safe )?unsubscribe( here)?\</a\>`
-
        - `If you do not wish to receive further communications like this\, please`
-
        - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
-
        - `To stop receiving these+emails\:http\://`
-
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
        - `If you are unable to view the content of this email\, please click here`
-
        - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
        - `If you no longer wish to receive these emails`
-
        - `to change your (subscription preferences|preferences or unsubscribe)`
-
        - `click (here to|the) unsubscribe`
 
-      若要编辑条目，请选择该条目**Edit** ![，然后单击](../../media/ITPro-EAC-EditIcon.png)"编辑" "编辑" 图标。 若要删除条目，请将其选中**Remove** ![，然后单击](../../media/ITPro-EAC-DeleteIcon.png)"删除删除图标"。
+      若要编辑条目，请选择该条目，然后单击 "**编辑**" "编辑" ![ 图标 ](../../media/ITPro-EAC-EditIcon.png) 。 若要删除条目，请将其选中，然后单击 "**删除** ![ 删除图标" ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完成后，请单击 **"确定"**。
 
-     - **主题** \>或正文**主题或正文包含以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加** ![" "添加](../../media/ITPro-EAC-AddIcon.png)" 图标，然后重复此步骤，直到您输入所有值。
+     - **主题或正文** \>**主题或正文包含以下任何词语**：在显示的 "**指定字词或短语**" 对话框中，输入以下值之一，单击 "**添加**" "添加" ![ 图标 ](../../media/ITPro-EAC-AddIcon.png) ，然后重复此步骤，直到您输入所有值。
 
        - `to change your preferences or unsubscribe`
-
        - `Modify email preferences or unsubscribe`
-
        - `This is a promotional email`
-
        - `You are receiving this email because you requested a subscription`
-
        - `click here to unsubscribe`
-
        - `You have received this email because you are subscribed`
-
        - `If you no longer wish to receive our email newsletter`
-
        - `to unsubscribe from this newsletter`
-
        - `If you have trouble viewing this email`
-
        - `This is an advertisement`
-
        - `you would like to unsubscribe or change your`
-
        - `view this email as a webpage`
-
        - `You are receiving this email because you are subscribed`
 
-      若要编辑条目，请选择该条目**Edit** ![，然后单击](../../media/ITPro-EAC-EditIcon.png)"编辑" "编辑" 图标。 若要删除条目，请将其选中**Remove** ![，然后单击](../../media/ITPro-EAC-DeleteIcon.png)"删除删除图标"。
+      若要编辑条目，请选择该条目，然后单击 "**编辑**" "编辑" ![ 图标 ](../../media/ITPro-EAC-EditIcon.png) 。 若要删除条目，请将其选中，然后单击 "**删除** ![ 删除图标" ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
        完成后，请单击 **"确定"**。
 
@@ -135,7 +116,7 @@ ms.locfileid: "44034970"
 
      - 若要将邮件标记为**高可信度垃圾邮件**，请选择**9**。 您为**高可信度垃圾**邮件筛选 verdicts 配置的操作将应用于这些邮件（默认值为 "**将邮件移动到垃圾邮件" 文件夹**）。
 
-    有关 SCL 值的详细信息，请参阅[Office 365 中的垃圾邮件可信度（SCL）](spam-confidence-levels.md)。
+    有关 SCL 值的详细信息，请参阅[EOP 中的垃圾邮件可信度（SCL）](spam-confidence-levels.md)。
 
    完成后，请单击 "**保存**"
 
@@ -165,9 +146,9 @@ New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWor
 
 若要验证是否已配置邮件流规则以筛选批量电子邮件，请执行以下任一步骤：
 
-- 在 EAC 中，转到 **"邮件流** \> **规则** \> "。 \>选择该规则，](../../media/ITPro-EAC-EditIcon.png)然后单击 "**编辑** ![编辑" 图标，并验证设置。
+- 在 EAC 中，转到 "**邮件流** \> **规则**"。 \> 选择该规则 \> ，然后单击 "**编辑** ![ 编辑 ](../../media/ITPro-EAC-EditIcon.png) " 图标，并验证设置。
 
-- 在 PowerShell 中， \<将规则\>名称替换为规则名称，然后运行以下命令来验证设置：
+- 在 PowerShell 中，将 \< 规则名称替换 \> 为规则名称，然后运行以下命令来验证设置：
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 ATP 中的安全文档。
-ms.openlocfilehash: b9e5a42b3d6be987170049ad5f0f451f8280fbff
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c2736edee3dd1fcbc2560d5fa574def05a8f6e
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209159"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213112"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 高级威胁防护安全文档
 
@@ -32,7 +32,7 @@ ms.locfileid: "44209159"
 
 - 安全文档当前可供公共预览使用，在 "每月频道（定向）" 上的[Office 预览体验计划](https://insider.office.com/en-us/join)中，用户可使用 office 版本2002（12527.20092）或更高版本的用户。 此功能在默认情况下处于禁用状态，将需要由安全管理员启用。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 在执行本主题中的过程之前，您需要分配权限。 若要启用和配置安全文档，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -59,7 +59,7 @@ ms.locfileid: "44209159"
 
 ![ATP 安全附件页面](../../media/safe-docs.png)
 
-### <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 配置安全文档
+### <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置安全文档
 
 使用以下语法：
 

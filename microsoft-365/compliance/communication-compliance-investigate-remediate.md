@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: fb185239ee670c9fa4bd4add5bd36140db2f7706
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632853"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208394"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -33,14 +33,14 @@ ms.locfileid: "42632853"
 
 调查策略检测到的问题的第一步是查看 Microsoft 365 合规性中心内生成的警报。 合规中心中有多个区域可帮助您快速调查通知，具体取决于您更愿意查看警报分组的方式：
 
-- **通信合规性主页**： [https://compliance.microsoft.com](https://compliance.microsoft.com)使用 Microsoft 365 组织中的管理员帐户登录时，请选择 "**通信合规性** > **概述**" 以显示通信合规性主页。 你将看到以下内容：
+- **通信合规性主页**： [https://compliance.microsoft.com](https://compliance.microsoft.com) 使用 Microsoft 365 组织中的管理员帐户登录时，请选择 "**通信合规性**  >  **概述**" 以显示通信合规性主页。 你将看到以下内容：
     - 需要查看的通知从高到低严重性列出。 选择一个警报以启动警报详细信息页面并启动修正操作。
     - 按策略名称列出的最近策略匹配项。
     - 按策略名称列出的已解决项目。
     - 按策略名称列出的升级。
     - 具有最多策略匹配的用户从最多匹配数最多列出。
-- **"警报" 选项卡**：导航到 "**通信合规性** > **警报**" 以显示按匹配的通信合规性策略分组的警报。 通过此视图，可以快速查看哪些通信合规性策略生成的按严重性排序的最多警报。  若要启动修正操作，请展开策略以选择特定警报并启动警报详细信息页。
-- **"策略" 选项卡**：导航到 "**通信合规性** > **策略**" 以显示为 Microsoft 365 组织配置的通信合规性策略。 列出的每个策略都包含需要审阅的警报的计数。 选择策略将显示与策略匹配的所有待处理警报，选择启动 "策略详细信息" 页的特定警报并启动修正操作。
+- **"通知" 选项卡**：导航到 "**通信合规性**"  >  **警报**以显示按策略匹配项分组的最近30天的警报。 通过此视图，可以快速查看哪些通信合规性策略生成的按严重性排序的最多警报。  若要启动修正操作，请展开策略以选择特定警报并启动警报详细信息页。
+- **"策略" 选项卡**：导航到 "**通信合规性**  >  **策略**" 以显示为 Microsoft 365 组织配置的通信合规性策略。 列出的每个策略都包含需要审阅的警报的计数。 选择策略将显示与策略匹配的所有待处理警报，选择启动 "策略详细信息" 页的特定警报并启动修正操作。
 
 ### <a name="using-filters"></a>使用筛选器
 
@@ -50,7 +50,7 @@ ms.locfileid: "42632853"
 
 #### <a name="to-configure-a-filter"></a>配置筛选器
 
-1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。
 
@@ -74,7 +74,7 @@ ms.locfileid: "42632853"
 
 #### <a name="to-remediate-duplicates"></a>更正重复项
 
-1. 在 Microsoft [https://compliance.microsoft.com](https://compliance.microsoft.com) 365 组织中使用管理员帐户的凭据进行登录。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 Microsoft 365 合规性中心中，转到 "**通信合规性**"。
 

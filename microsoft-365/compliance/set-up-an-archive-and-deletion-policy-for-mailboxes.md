@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Microsoft 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d2dd6d95018742247655f085553ad6583f8843d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034314"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208056"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -48,7 +48,7 @@ ms.locfileid: "44034314"
     
 您可以按照本文中的部分或全部步骤操作，为自己组织中的邮箱设置存档和删除策略。 我们建议您先对几个邮箱测试此过程，然后再在组织中的所有邮箱上实施此过程。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 您必须是组织中的全局管理员才能执行本主题中的步骤。 
     
@@ -83,7 +83,7 @@ ms.locfileid: "44034314"
     
 6. 单击 **"是"** 关闭警告消息，并启动启用每个所选邮箱的存档邮箱的过程。 
     
-7. 完成该过程后，单击 "**刷新** ![刷新](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) " 以更新 "**存档**" 页上的列表。 
+7. 完成该过程后，单击 "**刷新** ![ 刷新 ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) " 以更新 "**存档**" 页上的列表。 
     
     为组织中的所有用户启用存档邮箱。
     
@@ -109,7 +109,7 @@ ms.locfileid: "44034314"
     
     ![屏幕截图显示了使用 "管理中心" 选项展开并选择 "Exchange" 的 Microsoft 365 管理中心。](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
-3. 在 EAC 中，转到 "**合规性管理** \> " "**保留标记**"
+3. 在 EAC 中，转到 "**合规性管理**" " \> **保留标记**"
     
     将显示您的组织的保留标记列表。
     
@@ -117,7 +117,7 @@ ms.locfileid: "44034314"
   
 首先，创建一个自定义存档默认策略标记（DPT），该标记将在3年后将项目移动到存档邮箱。 
   
-1. 在 "**保留标记**" 页上，单击 "**新建标记**![新图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)"，然后选择 "**自动应用于整个邮箱（默认）**"。 
+1. 在 "**保留标记**" 页上，单击 "**新建标记** ![ 新图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) "，然后选择 "**自动应用于整个邮箱（默认）**"。 
     
 2. 在 "**自动应用于整个邮箱（默认）** " 页上，填写下列字段： 
     
@@ -139,7 +139,7 @@ ms.locfileid: "44034314"
   
 接下来，你将创建另一个自定义 DPT，但此操作将成为一个删除策略，该策略将在7年后永久删除项目。
   
-1. 在 "**保留标记**" 页上，单击 "**新建标记**![新图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)"，然后选择 "**自动应用于整个邮箱（默认）**"。 
+1. 在 "**保留标记**" 页上，单击 "**新建标记** ![ 新图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) "，然后选择 "**自动应用于整个邮箱（默认）**"。 
     
 2. 在 "**自动应用于整个邮箱（默认）** " 页上，填写下列字段： 
     
@@ -161,7 +161,7 @@ ms.locfileid: "44034314"
   
 您要创建的最后一个保留标记是 "已删除邮件" 文件夹的自定义保留策略标记（RPT）。 此标记将在5年后删除 "已删除邮件" 文件夹中的项目，并在用户可以使用 "恢复已删除邮件" 工具恢复项目时提供恢复期。
   
-1. 在 "**保留标记**" 页上，单击 "**新建标记** ![新图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)"，然后选择 "**自动应用到默认文件夹**"。 
+1. 在 "**保留标记**" 页上，单击 "**新建标记** ![ 新图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) "，然后选择 "**自动应用到默认文件夹**"。 
     
 2. 在 "**自动应用于默认文件夹**" 页上的 "新标记" 中，填写下列字段： 
     
@@ -185,13 +185,13 @@ ms.locfileid: "44034314"
 
 创建自定义保留标记后，下一步是创建新的保留策略并添加保留标记。 您将添加您在步骤2中创建的三个自定义保留标记，以及在第一节中提到的内置标记。 在步骤4中，将此新的保留策略分配给用户邮箱。
   
-1. 在 EAC 中，转到 "**合规性管理** \> "**保留策略**。
+1. 在 EAC 中，转到 "**合规性管理**" \> **保留策略**。
     
-2. 在 "**保留策略**" 页上**New** ![，单击 "](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)新建新图标"。
+2. 在 "**保留策略**" 页上，单击 "**新建** ![ 新图标" ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) 。
     
 3. 在 "**名称**" 框中，为新的保留策略键入一个名称;例如， **Alpine 房屋存档和删除策略**。 
     
-4. 在 **"保留标记**" 下，单击](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif)"**添加** ![新图标"。
+4. 在 "**保留标记**" 下，单击 "**添加** ![ 新图标" ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) 。
     
     将显示组织中的保留标记列表。 注释将显示您在步骤2中创建的自定义标记。
     
@@ -214,7 +214,7 @@ ms.locfileid: "44034314"
 
 创建新邮箱时，默认情况下会为其分配一个名为 "默认 MRM 策略" 的保留策略。 在此步骤中，您将替换此保留策略（因为一个邮箱只能分配有一个保留策略），方法是将您在步骤3中创建的新保留策略分配给组织中的用户邮箱。 此步骤假定您将新策略分配给组织中的所有邮箱。
   
-1. 在 EAC 中，转到 "**收件人** \> " "**邮箱**"。
+1. 在 EAC 中，转到 "**收件人**" " \> **邮箱**"。
     
     将显示组织中所有用户邮箱的列表。 
     
@@ -230,7 +230,7 @@ ms.locfileid: "44034314"
     
 7. 若要验证是否已将新的保留策略分配给邮箱，您可以执行以下操作：在 "邮箱" 页上选择一个邮箱，然后单击 "编辑"。 
     
-1. 在 "**邮箱**" 页上选择一个邮箱，然后单击 "](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png)**编辑** ![编辑"。 
+1. 在 "**邮箱**" 页上选择一个邮箱，然后单击 "**编辑** ![ 编辑" ](../media/d7dc7e5f-17a1-4eb9-b42d-487db59e2e21.png) 。 
     
 2. 在所选用户的 "邮箱属性" 页上，单击 "**邮箱功能**"。
     
@@ -243,37 +243,10 @@ ms.locfileid: "44034314"
  **运行托管文件夹助理时，会发生什么情况？** 它通过检查邮箱中的项目并确定它们是否受保留，来应用保留策略中的设置。 然后，该示例使用适当的保留标记将受保留的项目标记为保留，然后对超过保留期限的项目执行指定的保留操作。 
   
 以下是连接到 Exchange Online PowerShell 的步骤，然后在组织中的每个邮箱上运行托管文件夹助理。
+
+1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
   
-1. 在本地计算机上，打开 Windows PowerShell 并运行以下命令。
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    ```
-
-    在 " **Windows PowerShell 凭据请求**" 对话框中，键入全局管理员帐户的用户名和密码，然后单击 **"确定"**。
-    
-2. 运行以下命令。
-    
-    ```powershell
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    ```
-
-3. 运行以下命令。
-    
-    ```powershell
-    Import-PSSession $Session
-    ```
-
-4. 要验证您是否已连接至您的 Exchange Online 组织，请运行以下命令获取组织中所有邮箱的列表。
-    
-    ```powershell
-    Get-Mailbox
-    ```
-
-    > [!NOTE]
-    > 有关详细信息，或者如果您在连接到 Exchange Online 组织时遇到问题，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。 
-  
-5. 运行以下两个命令，为组织中的所有用户邮箱启动托管文件夹助理。
+2. 运行以下两个命令，为组织中的所有用户邮箱启动托管文件夹助理。
     
     ```powershell
     $Mailboxes = Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"}
@@ -289,7 +262,7 @@ ms.locfileid: "44034314"
 
 在步骤4中，必须将新的保留策略分配给现有邮箱。 但您可以配置 Exchange Online，以便将新的保留策略分配给将来创建的新邮箱。 可通过使用 Exchange Online PowerShell 更新组织的默认邮箱计划来执行此操作。 *邮箱计划*是一个模板，可自动配置新邮箱的属性。  在此可选步骤中，您可以使用您在步骤3中创建的保留策略替换分配给邮箱计划的当前保留策略（默认情况下是默认的 MRM 策略）。 更新邮箱计划后，新的保留策略将分配给新邮箱。
 
-1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)或参阅第5步。
+1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)。
 
 2. 运行以下命令以显示组织中的邮箱计划的相关信息。
 
@@ -313,7 +286,7 @@ ms.locfileid: "44034314"
     
 - 下表提供了有关添加到自定义保留策略的每个保留标记的详细信息，该保留策略是按照本主题中的步骤创建的。
     
-    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**类型**|
+    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**Type**|
     |:-----|:-----|:-----|:-----|
     |Alpine 住宅3年后移动到存档  <br/> |将1095天（3年）的项目移至存档邮箱。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（存档）;此标记将自动应用于整个邮箱。  <br/> |
     |Alpine 住宅7年永久删除  <br/> |将主邮箱或存档邮箱中的项目永久删除（如果有7年）。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（删除）;此标记将自动应用于整个邮箱。  <br/> |
