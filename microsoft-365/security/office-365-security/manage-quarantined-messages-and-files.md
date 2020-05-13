@@ -18,332 +18,332 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何查看和管理 Exchange Online Protection （EOP）中所有用户的隔离邮件。 具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: 0f0dd7ee14aeb4558674a6e2240e022df3c489fc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 472a5258c112db7e8b8017e5d2ff19dc4741e93c
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209003"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213324"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a><span data-ttu-id="44f44-104">以管理员身份在 EOP 中管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="44f44-104">Manage quarantined messages and files as an admin in EOP</span></span>
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a><span data-ttu-id="81ed7-104">以管理员身份在 EOP 中管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="81ed7-104">Manage quarantined messages and files as an admin in EOP</span></span>
 
-<span data-ttu-id="44f44-105">在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离会保留可能有害或不需要的邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-105">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages.</span></span> <span data-ttu-id="44f44-106">有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="44f44-106">For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).</span></span>
+<span data-ttu-id="81ed7-105">在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离会保留可能有害或不需要的邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-105">In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages.</span></span> <span data-ttu-id="81ed7-106">有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-106">For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).</span></span>
 
-<span data-ttu-id="44f44-107">管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-107">Admins can view, release, and delete all types of quarantined messages for all users.</span></span> <span data-ttu-id="44f44-108">只有管理员可以管理被隔离为恶意软件的邮件、高可信度的网络钓鱼或邮件流规则（也称为传输规则）的结果。</span><span class="sxs-lookup"><span data-stu-id="44f44-108">Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules).</span></span> <span data-ttu-id="44f44-109">管理员还可以向 Microsoft 报告误报。</span><span class="sxs-lookup"><span data-stu-id="44f44-109">Admins can also report false positives to Microsoft.</span></span>
+<span data-ttu-id="81ed7-107">管理员可以查看、释放和删除所有用户的所有类型的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-107">Admins can view, release, and delete all types of quarantined messages for all users.</span></span> <span data-ttu-id="81ed7-108">只有管理员可以管理被隔离为恶意软件的邮件、高可信度的网络钓鱼或邮件流规则（也称为传输规则）的结果。</span><span class="sxs-lookup"><span data-stu-id="81ed7-108">Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules).</span></span> <span data-ttu-id="81ed7-109">管理员还可以向 Microsoft 报告误报。</span><span class="sxs-lookup"><span data-stu-id="81ed7-109">Admins can also report false positives to Microsoft.</span></span>
 
-<span data-ttu-id="44f44-110">具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中查看、下载和删除隔离的文件。</span><span class="sxs-lookup"><span data-stu-id="44f44-110">Admins in organizations with Office 365 Advance Threat Protection (Office 365 ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.</span></span>
+<span data-ttu-id="81ed7-110">具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中查看、下载和删除隔离的文件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-110">Admins in organizations with Office 365 Advance Threat Protection (Office 365 ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.</span></span>
 
-<span data-ttu-id="44f44-111">您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用邮箱在 Exchange Online 中查看和管理隔离的邮件; 独立 EOP PowerShell for 组织，没有 Exchange Online 邮箱）。</span><span class="sxs-lookup"><span data-stu-id="44f44-111">You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).</span></span>
+<span data-ttu-id="81ed7-111">您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用邮箱在 Exchange Online 中查看和管理隔离的邮件; 独立 EOP PowerShell for 组织，没有 Exchange Online 邮箱）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-111">You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="44f44-112">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="44f44-112">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="81ed7-112">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="81ed7-112">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="44f44-113">若要打开安全与合规中心，请转到 <https://protection.office.com>。</span><span class="sxs-lookup"><span data-stu-id="44f44-113">To open the Security & Compliance Center, go to <https://protection.office.com>.</span></span> <span data-ttu-id="44f44-114">若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。</span><span class="sxs-lookup"><span data-stu-id="44f44-114">To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.</span></span>
+- <span data-ttu-id="81ed7-113">若要打开安全与合规中心，请转到 <https://protection.office.com>。</span><span class="sxs-lookup"><span data-stu-id="81ed7-113">To open the Security & Compliance Center, go to <https://protection.office.com>.</span></span> <span data-ttu-id="81ed7-114">若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。</span><span class="sxs-lookup"><span data-stu-id="81ed7-114">To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.</span></span>
 
-- <span data-ttu-id="44f44-115">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="44f44-115">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="44f44-116">若要连接到 Exchange Online Protection PowerShell，请参阅[连接到 Exchange Online Protection powershell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="44f44-116">To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="81ed7-115">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-115">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="81ed7-116">若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-116">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="44f44-117">您需要先分配权限，然后才能以管理员身份管理隔离。权限由 Security & 合规中心中的**隔离**角色控制。</span><span class="sxs-lookup"><span data-stu-id="44f44-117">You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center.</span></span> <span data-ttu-id="44f44-118">默认情况下，将此角色分配给安全 & 合规中心中的 "**组织管理**" （全局管理员）、"**隔离管理员**" 和 "**安全管理员**" 角色组。</span><span class="sxs-lookup"><span data-stu-id="44f44-118">By default, this role is assigned to the **Organization Management** (Global admins), **Quarantine Administrator**, and **Security Administrator** role groups in the Security & Compliance Center.</span></span> <span data-ttu-id="44f44-119">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="44f44-119">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="81ed7-117">您需要先分配权限，然后才能以管理员身份管理隔离。权限由 Security & 合规中心中的**隔离**角色控制。</span><span class="sxs-lookup"><span data-stu-id="81ed7-117">You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center.</span></span> <span data-ttu-id="81ed7-118">默认情况下，将此角色分配给安全 & 合规中心中的 "**组织管理**" （全局管理员）、"**隔离管理员**" 和 "**安全管理员**" 角色组。</span><span class="sxs-lookup"><span data-stu-id="81ed7-118">By default, this role is assigned to the **Organization Management** (Global admins), **Quarantine Administrator**, and **Security Administrator** role groups in the Security & Compliance Center.</span></span> <span data-ttu-id="81ed7-119">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-119">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-- <span data-ttu-id="44f44-120">在被自动删除之前，隔离的邮件将保留默认的一段时间：</span><span class="sxs-lookup"><span data-stu-id="44f44-120">Quarantined messages are retained for a default period of time before they're automatically deleted:</span></span>
+- <span data-ttu-id="81ed7-120">在被自动删除之前，隔离的邮件将保留默认的一段时间：</span><span class="sxs-lookup"><span data-stu-id="81ed7-120">Quarantined messages are retained for a default period of time before they're automatically deleted:</span></span>
 
-  - <span data-ttu-id="44f44-121">由反垃圾邮件策略（垃圾邮件、网络钓鱼和批量电子邮件）隔离的邮件：30天。</span><span class="sxs-lookup"><span data-stu-id="44f44-121">Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days.</span></span> <span data-ttu-id="44f44-122">这是默认值和最大值。</span><span class="sxs-lookup"><span data-stu-id="44f44-122">This is the default and maximum value.</span></span> <span data-ttu-id="44f44-123">若要配置此值，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="44f44-123">To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
+  - <span data-ttu-id="81ed7-121">由反垃圾邮件策略（垃圾邮件、网络钓鱼和批量电子邮件）隔离的邮件：30天。</span><span class="sxs-lookup"><span data-stu-id="81ed7-121">Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days.</span></span> <span data-ttu-id="81ed7-122">这是默认值和最大值。</span><span class="sxs-lookup"><span data-stu-id="81ed7-122">This is the default and maximum value.</span></span> <span data-ttu-id="81ed7-123">若要配置此值，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-123">To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).</span></span>
 
-  - <span data-ttu-id="44f44-124">包含恶意软件的邮件：15天。</span><span class="sxs-lookup"><span data-stu-id="44f44-124">Messages that contain malware: 15 days.</span></span>
+  - <span data-ttu-id="81ed7-124">包含恶意软件的邮件：15天。</span><span class="sxs-lookup"><span data-stu-id="81ed7-124">Messages that contain malware: 15 days.</span></span>
 
-  <span data-ttu-id="44f44-125">当邮件从隔离区中过期时，将无法对其进行恢复。</span><span class="sxs-lookup"><span data-stu-id="44f44-125">When a message expires from quarantine, you can't recover it.</span></span>
+  <span data-ttu-id="81ed7-125">当邮件从隔离区中过期时，将无法对其进行恢复。</span><span class="sxs-lookup"><span data-stu-id="81ed7-125">When a message expires from quarantine, you can't recover it.</span></span>
 
-## <a name="use-the-security--compliance-center-to-manage-quarantined-email-messages"></a><span data-ttu-id="44f44-126">使用安全 & 合规性中心管理隔离的电子邮件</span><span class="sxs-lookup"><span data-stu-id="44f44-126">Use the Security & Compliance Center to manage quarantined email messages</span></span>
+## <a name="use-the-security--compliance-center-to-manage-quarantined-email-messages"></a><span data-ttu-id="81ed7-126">使用安全 & 合规性中心管理隔离的电子邮件</span><span class="sxs-lookup"><span data-stu-id="81ed7-126">Use the Security & Compliance Center to manage quarantined email messages</span></span>
 
-### <a name="view-quarantined-email"></a><span data-ttu-id="44f44-127">查看隔离的电子邮件</span><span class="sxs-lookup"><span data-stu-id="44f44-127">View quarantined email</span></span>
+### <a name="view-quarantined-email"></a><span data-ttu-id="81ed7-127">查看隔离的电子邮件</span><span class="sxs-lookup"><span data-stu-id="81ed7-127">View quarantined email</span></span>
 
-1. <span data-ttu-id="44f44-128">在安全与合规中心内，依次转到“威胁管理”\*\*\*\*\>“审阅”\*\*\*\*\>“隔离”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-128">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
+1. <span data-ttu-id="81ed7-128">在安全与合规中心内，依次转到“威胁管理”\*\*\*\*\>“审阅”\*\*\*\*\>“隔离”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-128">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
 
-2. <span data-ttu-id="44f44-129">验证 "**隔离视图**" 是否已设置为默认值 "**电子邮件**"。</span><span class="sxs-lookup"><span data-stu-id="44f44-129">Verify that **View quarantined** is set to the default value **email**.</span></span>
+2. <span data-ttu-id="81ed7-129">验证 "**隔离视图**" 是否已设置为默认值 "**电子邮件**"。</span><span class="sxs-lookup"><span data-stu-id="81ed7-129">Verify that **View quarantined** is set to the default value **email**.</span></span>
 
-3. <span data-ttu-id="44f44-130">若要对结果进行排序，可以单击可用列标题。</span><span class="sxs-lookup"><span data-stu-id="44f44-130">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="44f44-131">单击“修改列”\*\*\*\* 最多可显示七列。</span><span class="sxs-lookup"><span data-stu-id="44f44-131">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="44f44-132">默认值标有星号 (<sup>\*</sup>)：</span><span class="sxs-lookup"><span data-stu-id="44f44-132">The default values are marked with an asterisk (<sup>\*</sup>):</span></span>
+3. <span data-ttu-id="81ed7-130">若要对结果进行排序，可以单击可用列标题。</span><span class="sxs-lookup"><span data-stu-id="81ed7-130">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="81ed7-131">单击“修改列”\*\*\*\* 最多可显示七列。</span><span class="sxs-lookup"><span data-stu-id="81ed7-131">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="81ed7-132">默认值标有星号 (<sup>\*</sup>)：</span><span class="sxs-lookup"><span data-stu-id="81ed7-132">The default values are marked with an asterisk (<sup>\*</sup>):</span></span>
 
-   - <span data-ttu-id="44f44-133">**接收时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-133">**Received**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-133">**接收时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-133">**Received**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-134">**发件人**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-134">**Sender**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-134">**发件人**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-134">**Sender**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-135">**主题**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-135">**Subject**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-135">**主题**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-135">**Subject**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-136">**隔离原因**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-136">**Quarantine reason**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-136">**隔离原因**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-136">**Quarantine reason**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-137">**释放?**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-137">**Released?**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-137">**释放?**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-137">**Released?**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-138">**策略类型**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-138">**Policy type**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-138">**策略类型**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-138">**Policy type**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-139">**收件人**</span><span class="sxs-lookup"><span data-stu-id="44f44-139">**Recipient**</span></span>
+   - <span data-ttu-id="81ed7-139">**收件人**</span><span class="sxs-lookup"><span data-stu-id="81ed7-139">**Recipient**</span></span>
 
-   - <span data-ttu-id="44f44-140">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="44f44-140">**Message ID**</span></span>
+   - <span data-ttu-id="81ed7-140">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="81ed7-140">**Message ID**</span></span>
 
-   - <span data-ttu-id="44f44-141">**策略名称**</span><span class="sxs-lookup"><span data-stu-id="44f44-141">**Policy name**</span></span>
+   - <span data-ttu-id="81ed7-141">**策略名称**</span><span class="sxs-lookup"><span data-stu-id="81ed7-141">**Policy name**</span></span>
 
-   - <span data-ttu-id="44f44-142">**大小**</span><span class="sxs-lookup"><span data-stu-id="44f44-142">**Size**</span></span>
+   - <span data-ttu-id="81ed7-142">**大小**</span><span class="sxs-lookup"><span data-stu-id="81ed7-142">**Size**</span></span>
 
-   - <span data-ttu-id="44f44-143">**方向**</span><span class="sxs-lookup"><span data-stu-id="44f44-143">**Direction**</span></span>
+   - <span data-ttu-id="81ed7-143">**方向**</span><span class="sxs-lookup"><span data-stu-id="81ed7-143">**Direction**</span></span>
 
-   <span data-ttu-id="44f44-144">完成后，单击“保存”\*\*\*\* 单击“设置为默认设置”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-144">When you're finished, click **Save**, or click **Set to default**.</span></span>
+   <span data-ttu-id="81ed7-144">完成后，单击“保存”\*\*\*\* 单击“设置为默认设置”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-144">When you're finished, click **Save**, or click **Set to default**.</span></span>
 
-4. <span data-ttu-id="44f44-145">若要筛选结果，请单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-145">To filter the results, click **Filter**.</span></span> <span data-ttu-id="44f44-146">以下筛选器可用：</span><span class="sxs-lookup"><span data-stu-id="44f44-146">The available filters are:</span></span>
+4. <span data-ttu-id="81ed7-145">若要筛选结果，请单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-145">To filter the results, click **Filter**.</span></span> <span data-ttu-id="81ed7-146">以下筛选器可用：</span><span class="sxs-lookup"><span data-stu-id="81ed7-146">The available filters are:</span></span>
 
-   - <span data-ttu-id="44f44-147">**到期时间**：按邮件的隔离到期时间筛选：</span><span class="sxs-lookup"><span data-stu-id="44f44-147">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
+   - <span data-ttu-id="81ed7-147">**到期时间**：按邮件的隔离到期时间筛选：</span><span class="sxs-lookup"><span data-stu-id="81ed7-147">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
 
-     - <span data-ttu-id="44f44-148">**今天**</span><span class="sxs-lookup"><span data-stu-id="44f44-148">**Today**</span></span>
+     - <span data-ttu-id="81ed7-148">**今天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-148">**Today**</span></span>
 
-     - <span data-ttu-id="44f44-149">**未来 2 天**</span><span class="sxs-lookup"><span data-stu-id="44f44-149">**Next 2 days**</span></span>
+     - <span data-ttu-id="81ed7-149">**未来 2 天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-149">**Next 2 days**</span></span>
 
-     - <span data-ttu-id="44f44-150">**未来 7 天**</span><span class="sxs-lookup"><span data-stu-id="44f44-150">**Next 7 days**</span></span>
+     - <span data-ttu-id="81ed7-150">**未来 7 天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-150">**Next 7 days**</span></span>
 
-     - <span data-ttu-id="44f44-151">**自定义**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-151">**Custom**: Enter a **Start date** and **End date**.</span></span>
+     - <span data-ttu-id="81ed7-151">**自定义**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-151">**Custom**: Enter a **Start date** and **End date**.</span></span>
 
-   - <span data-ttu-id="44f44-152">**接收时间**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-152">**Received time**: Enter a **Start date** and **End date**.</span></span>
+   - <span data-ttu-id="81ed7-152">**接收时间**：输入“开始日期”\*\*\*\* 和“结束日期”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-152">**Received time**: Enter a **Start date** and **End date**.</span></span>
 
-   - <span data-ttu-id="44f44-153">**隔离原因**：</span><span class="sxs-lookup"><span data-stu-id="44f44-153">**Quarantine reason**:</span></span>
+   - <span data-ttu-id="81ed7-153">**隔离原因**：</span><span class="sxs-lookup"><span data-stu-id="81ed7-153">**Quarantine reason**:</span></span>
 
-     - <span data-ttu-id="44f44-154">**Policy**：邮件符合邮件流规则的条件（也称为传输规则）。</span><span class="sxs-lookup"><span data-stu-id="44f44-154">**Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).</span></span>
+     - <span data-ttu-id="81ed7-154">**Policy**：邮件符合邮件流规则的条件（也称为传输规则）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-154">**Policy**: The message matched the conditions of a mail flow rule (also known as a transport rule).</span></span>
 
-     - <span data-ttu-id="44f44-155">**大量邮件**</span><span class="sxs-lookup"><span data-stu-id="44f44-155">**Bulk**</span></span>
+     - <span data-ttu-id="81ed7-155">**大量邮件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-155">**Bulk**</span></span>
 
-     - <span data-ttu-id="44f44-156">**诈骗**</span><span class="sxs-lookup"><span data-stu-id="44f44-156">**Phish**</span></span>
+     - <span data-ttu-id="81ed7-156">**诈骗**</span><span class="sxs-lookup"><span data-stu-id="81ed7-156">**Phish**</span></span>
 
-     - <span data-ttu-id="44f44-157">**恶意软件**</span><span class="sxs-lookup"><span data-stu-id="44f44-157">**Malware**</span></span>
+     - <span data-ttu-id="81ed7-157">**恶意软件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-157">**Malware**</span></span>
 
-     - <span data-ttu-id="44f44-158">**垃圾邮件**</span><span class="sxs-lookup"><span data-stu-id="44f44-158">**Spam**</span></span>
+     - <span data-ttu-id="81ed7-158">**垃圾邮件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-158">**Spam**</span></span>
 
-     - <span data-ttu-id="44f44-159">**高可信度网络钓鱼**</span><span class="sxs-lookup"><span data-stu-id="44f44-159">**High Confidence Phish**</span></span>
+     - <span data-ttu-id="81ed7-159">**高可信度网络钓鱼**</span><span class="sxs-lookup"><span data-stu-id="81ed7-159">**High Confidence Phish**</span></span>
 
-   - <span data-ttu-id="44f44-160">**电子邮件收件人**：所有用户或仅发送给你的邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-160">**Email recipient**: All users or only messages sent to you.</span></span> <span data-ttu-id="44f44-161">最终用户只能管理发送给他们的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-161">End users can only manage quarantined messages sent to them.</span></span>
+   - <span data-ttu-id="81ed7-160">**电子邮件收件人**：所有用户或仅发送给你的邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-160">**Email recipient**: All users or only messages sent to you.</span></span> <span data-ttu-id="81ed7-161">最终用户只能管理发送给他们的隔离邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-161">End users can only manage quarantined messages sent to them.</span></span>
 
-   <span data-ttu-id="44f44-162">若要清除筛选器，请单击“清除”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-162">To clear the filter, click **Clear**.</span></span> <span data-ttu-id="44f44-163">若要隐藏筛选器浮出控件，请再次单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-163">To hide the filter flyout, click **Filter** again.</span></span>
+   <span data-ttu-id="81ed7-162">若要清除筛选器，请单击“清除”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-162">To clear the filter, click **Clear**.</span></span> <span data-ttu-id="81ed7-163">若要隐藏筛选器浮出控件，请再次单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-163">To hide the filter flyout, click **Filter** again.</span></span>
 
-5. <span data-ttu-id="44f44-164">使用“结果排序依据”\*\*\*\*（默认为“邮件 ID”\*\*\*\* 按钮）和相应值查找特定邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-164">Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages.</span></span> <span data-ttu-id="44f44-165">不支持通配符。</span><span class="sxs-lookup"><span data-stu-id="44f44-165">Wildcards aren't supported.</span></span> <span data-ttu-id="44f44-166">可以按下面的值搜索：</span><span class="sxs-lookup"><span data-stu-id="44f44-166">You can search by the following values:</span></span>
+5. <span data-ttu-id="81ed7-164">使用“结果排序依据”\*\*\*\*（默认为“邮件 ID”\*\*\*\* 按钮）和相应值查找特定邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-164">Use **Sort results by** (the **Message ID** button by default) and a corresponding value to find specific messages.</span></span> <span data-ttu-id="81ed7-165">不支持通配符。</span><span class="sxs-lookup"><span data-stu-id="81ed7-165">Wildcards aren't supported.</span></span> <span data-ttu-id="81ed7-166">可以按下面的值搜索：</span><span class="sxs-lookup"><span data-stu-id="81ed7-166">You can search by the following values:</span></span>
 
-   - <span data-ttu-id="44f44-167">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="44f44-167">**Message ID**: The globally unique identifier of the message.</span></span>
+   - <span data-ttu-id="81ed7-167">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="81ed7-167">**Message ID**: The globally unique identifier of the message.</span></span>
 
-     <span data-ttu-id="44f44-168">例如，使用[邮件跟踪](message-trace-scc.md)查找发送到组织中的用户的邮件，并确定邮件已被隔离而不是传递。</span><span class="sxs-lookup"><span data-stu-id="44f44-168">For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered.</span></span> <span data-ttu-id="44f44-169">确保包含完整的邮件 ID 值，其中可能包含尖括号（ \< \> ）。</span><span class="sxs-lookup"><span data-stu-id="44f44-169">Be sure to include the full message ID value, which might include angle brackets (\<\>).</span></span> <span data-ttu-id="44f44-170">例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。</span><span class="sxs-lookup"><span data-stu-id="44f44-170">For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.</span></span>
+     <span data-ttu-id="81ed7-168">例如，使用[邮件跟踪](message-trace-scc.md)查找发送到组织中的用户的邮件，并确定邮件已被隔离而不是传递。</span><span class="sxs-lookup"><span data-stu-id="81ed7-168">For example, you used [message trace](message-trace-scc.md) to look for a message that was sent to a user in your organization, and you determine that the message was quarantined instead of delivered.</span></span> <span data-ttu-id="81ed7-169">确保包含完整的邮件 ID 值，其中可能包含尖括号（ \< \> ）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-169">Be sure to include the full message ID value, which might include angle brackets (\<\>).</span></span> <span data-ttu-id="81ed7-170">例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。</span><span class="sxs-lookup"><span data-stu-id="81ed7-170">For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.</span></span>
 
-   - <span data-ttu-id="44f44-171">**发件人电子邮件地址**：单个发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="44f44-171">**Sender email address**: A single sender's email address.</span></span>
+   - <span data-ttu-id="81ed7-171">**发件人电子邮件地址**：单个发件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="81ed7-171">**Sender email address**: A single sender's email address.</span></span>
 
-   - <span data-ttu-id="44f44-172">**收件人电子邮件地址**：单个收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="44f44-172">**Recipient email address**: A single recipient's email address.</span></span>
+   - <span data-ttu-id="81ed7-172">**收件人电子邮件地址**：单个收件人的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="81ed7-172">**Recipient email address**: A single recipient's email address.</span></span>
 
-   - <span data-ttu-id="44f44-173">**主题**：使用邮件的整个主题。</span><span class="sxs-lookup"><span data-stu-id="44f44-173">**Subject**: Use the entire subject of the message.</span></span> <span data-ttu-id="44f44-174">搜索不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="44f44-174">The search is not case-sensitive.</span></span>
+   - <span data-ttu-id="81ed7-173">**主题**：使用邮件的整个主题。</span><span class="sxs-lookup"><span data-stu-id="81ed7-173">**Subject**: Use the entire subject of the message.</span></span> <span data-ttu-id="81ed7-174">搜索不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="81ed7-174">The search is not case-sensitive.</span></span>
 
-   <span data-ttu-id="44f44-175">输入搜索条件后，单击“刷新”\*\*\*\* ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。</span><span class="sxs-lookup"><span data-stu-id="44f44-175">After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.</span></span>
+   <span data-ttu-id="81ed7-175">输入搜索条件后，单击“刷新”\*\*\*\* ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。</span><span class="sxs-lookup"><span data-stu-id="81ed7-175">After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.</span></span>
 
-<span data-ttu-id="44f44-176">找到特定的已隔离邮件后，选择此邮件即可查看它的详细信息，并对它执行操作（例如，查看、释放、下载或删除邮件）。</span><span class="sxs-lookup"><span data-stu-id="44f44-176">After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
+<span data-ttu-id="81ed7-176">找到特定的已隔离邮件后，选择此邮件即可查看它的详细信息，并对它执行操作（例如，查看、释放、下载或删除邮件）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-176">After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
 
-#### <a name="export-message-results"></a><span data-ttu-id="44f44-177">导出邮件结果</span><span class="sxs-lookup"><span data-stu-id="44f44-177">Export message results</span></span>
+#### <a name="export-message-results"></a><span data-ttu-id="81ed7-177">导出邮件结果</span><span class="sxs-lookup"><span data-stu-id="81ed7-177">Export message results</span></span>
 
-1. <span data-ttu-id="44f44-178">选择你有意访问的邮件，然后单击“导出结果”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-178">Select the messages you're interested in, and click **Export results**.</span></span>
+1. <span data-ttu-id="81ed7-178">选择你有意访问的邮件，然后单击“导出结果”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-178">Select the messages you're interested in, and click **Export results**.</span></span>
 
-2. <span data-ttu-id="44f44-179">在警告你不要关闭浏览器窗口的确认消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-179">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
+2. <span data-ttu-id="81ed7-179">在警告你不要关闭浏览器窗口的确认消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-179">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
 
-3. <span data-ttu-id="44f44-180">在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。</span><span class="sxs-lookup"><span data-stu-id="44f44-180">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
+3. <span data-ttu-id="81ed7-180">在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。</span><span class="sxs-lookup"><span data-stu-id="81ed7-180">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
 
-#### <a name="view-quarantined-message-details"></a><span data-ttu-id="44f44-181">查看已隔离邮件的详细信息</span><span class="sxs-lookup"><span data-stu-id="44f44-181">View quarantined message details</span></span>
+#### <a name="view-quarantined-message-details"></a><span data-ttu-id="81ed7-181">查看已隔离邮件的详细信息</span><span class="sxs-lookup"><span data-stu-id="81ed7-181">View quarantined message details</span></span>
 
-<span data-ttu-id="44f44-182">选择列表中的电子邮件后，可以在“详细信息”\*\*\*\* 浮出控件窗格中看到以下邮件详细信息：</span><span class="sxs-lookup"><span data-stu-id="44f44-182">When you select an email message in the list, the following message details appear in the **Details** flyout pane:</span></span>
+<span data-ttu-id="81ed7-182">选择列表中的电子邮件后，可以在“详细信息”\*\*\*\* 浮出控件窗格中看到以下邮件详细信息：</span><span class="sxs-lookup"><span data-stu-id="81ed7-182">When you select an email message in the list, the following message details appear in the **Details** flyout pane:</span></span>
 
-- <span data-ttu-id="44f44-183">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="44f44-183">**Message ID**: The globally unique identifier for the message.</span></span>
+- <span data-ttu-id="81ed7-183">**邮件 ID**：邮件的全局唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="81ed7-183">**Message ID**: The globally unique identifier for the message.</span></span>
 
-- <span data-ttu-id="44f44-184">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="44f44-184">**Sender address**</span></span>
+- <span data-ttu-id="81ed7-184">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="81ed7-184">**Sender address**</span></span>
 
-- <span data-ttu-id="44f44-185">**接收时间**：收到邮件的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="44f44-185">**Received**: The date/time when the message was received.</span></span>
+- <span data-ttu-id="81ed7-185">**接收时间**：收到邮件的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="81ed7-185">**Received**: The date/time when the message was received.</span></span>
 
-- <span data-ttu-id="44f44-186">**主题**</span><span class="sxs-lookup"><span data-stu-id="44f44-186">**Subject**</span></span>
+- <span data-ttu-id="81ed7-186">**主题**</span><span class="sxs-lookup"><span data-stu-id="81ed7-186">**Subject**</span></span>
 
-- <span data-ttu-id="44f44-187">**隔离原因**：显示邮件是被标识为**垃圾**邮件、**批量**、**网络钓鱼**、与邮件流规则匹配（**传输规则**），还是被标识为包含**恶意软件**。</span><span class="sxs-lookup"><span data-stu-id="44f44-187">**Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.</span></span>
+- <span data-ttu-id="81ed7-187">**隔离原因**：显示邮件是被标识为**垃圾**邮件、**批量**、**网络钓鱼**、与邮件流规则匹配（**传输规则**），还是被标识为包含**恶意软件**。</span><span class="sxs-lookup"><span data-stu-id="81ed7-187">**Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk**, **Phish**, matched a mail flow rule (**Transport rule**), or was identified as containing **Malware**.</span></span>
 
-- <span data-ttu-id="44f44-188">**收件人**：如果邮件有多个收件人，需要单击“预览邮件”\*\*\*\* 或“查看邮件头”\*\*\*\*，以查看完整的收件人列表。</span><span class="sxs-lookup"><span data-stu-id="44f44-188">**Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.</span></span>
+- <span data-ttu-id="81ed7-188">**收件人**：如果邮件有多个收件人，需要单击“预览邮件”\*\*\*\* 或“查看邮件头”\*\*\*\*，以查看完整的收件人列表。</span><span class="sxs-lookup"><span data-stu-id="81ed7-188">**Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.</span></span>
 
-- <span data-ttu-id="44f44-189">**到期时间**：邮件自动从隔离中永久删除的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="44f44-189">**Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.</span></span>
+- <span data-ttu-id="81ed7-189">**到期时间**：邮件自动从隔离中永久删除的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="81ed7-189">**Expires**: The date/time when the message will be automatically and permanently deleted from quarantine.</span></span>
 
-- <span data-ttu-id="44f44-190">**已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="44f44-190">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
+- <span data-ttu-id="81ed7-190">**已释放到的位置**：邮件已释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-190">**Released to**: All email addresses (if any) to which the message has been released.</span></span>
 
-- <span data-ttu-id="44f44-191">**尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="44f44-191">**Not yet released to**: All email addresses (if any) to which the message has not yet been released.</span></span>
+- <span data-ttu-id="81ed7-191">**尚未释放到的位置**：邮件尚未释放到的所有电子邮件地址（若有）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-191">**Not yet released to**: All email addresses (if any) to which the message has not yet been released.</span></span>
 
-### <a name="take-action-on-quarantined-email"></a><span data-ttu-id="44f44-192">对已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="44f44-192">Take action on quarantined email</span></span>
+### <a name="take-action-on-quarantined-email"></a><span data-ttu-id="81ed7-192">对已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="81ed7-192">Take action on quarantined email</span></span>
 
-<span data-ttu-id="44f44-193">选择一封邮件后，您有几种方法可用于处理 "**详细信息**" 弹出窗格中的邮件：</span><span class="sxs-lookup"><span data-stu-id="44f44-193">After you select a message, you have several options for what to do with the messages in the **Details** flyout pane:</span></span>
+<span data-ttu-id="81ed7-193">选择一封邮件后，您有几种方法可用于处理 "**详细信息**" 弹出窗格中的邮件：</span><span class="sxs-lookup"><span data-stu-id="81ed7-193">After you select a message, you have several options for what to do with the messages in the **Details** flyout pane:</span></span>
 
-- <span data-ttu-id="44f44-194">**释放邮件**：在出现的弹出窗口中，选择以下选项：</span><span class="sxs-lookup"><span data-stu-id="44f44-194">**Release message**: In the flyout pane that appears, choose the following options:</span></span>
+- <span data-ttu-id="81ed7-194">**释放邮件**：在出现的弹出窗口中，选择以下选项：</span><span class="sxs-lookup"><span data-stu-id="81ed7-194">**Release message**: In the flyout pane that appears, choose the following options:</span></span>
 
-  - <span data-ttu-id="44f44-195">**将邮件报告给 Microsoft 进行分析**：默认情况下，此选项处于选中状态，并将错误隔离的邮件以误报的形式报告给 microsoft。</span><span class="sxs-lookup"><span data-stu-id="44f44-195">**Report messages to Microsoft for analysis**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.</span></span> <span data-ttu-id="44f44-196">如果邮件被隔离为垃圾邮件、批量、网络钓鱼或包含恶意软件，则还会向 Microsoft 垃圾邮件分析团队报告该邮件。</span><span class="sxs-lookup"><span data-stu-id="44f44-196">If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="44f44-197">根据分析的不同，可能会调整服务范围内的垃圾邮件筛选器规则，以允许邮件通过。</span><span class="sxs-lookup"><span data-stu-id="44f44-197">Depending on their analysis, the service-wide spam filter rules might be be adjusted to allow the message through.</span></span>
+  - <span data-ttu-id="81ed7-195">**将邮件报告给 Microsoft 进行分析**：默认情况下，此选项处于选中状态，并将错误隔离的邮件以误报的形式报告给 microsoft。</span><span class="sxs-lookup"><span data-stu-id="81ed7-195">**Report messages to Microsoft for analysis**: This is selected by default, and reports the erroneously quarantined message to Microsoft as a false positive.</span></span> <span data-ttu-id="81ed7-196">如果邮件被隔离为垃圾邮件、批量、网络钓鱼或包含恶意软件，则还会向 Microsoft 垃圾邮件分析团队报告该邮件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-196">If the message was quarantined as spam, bulk, phishing, or containing malware, the message is also reported to the Microsoft Spam Analysis Team.</span></span> <span data-ttu-id="81ed7-197">根据分析的不同，可能会调整服务范围内的垃圾邮件筛选器规则，以允许邮件通过。</span><span class="sxs-lookup"><span data-stu-id="81ed7-197">Depending on their analysis, the service-wide spam filter rules might be be adjusted to allow the message through.</span></span>
 
-  - <span data-ttu-id="44f44-198">选择下列选项之一：</span><span class="sxs-lookup"><span data-stu-id="44f44-198">Choose one of the following options:</span></span>
+  - <span data-ttu-id="81ed7-198">选择下列选项之一：</span><span class="sxs-lookup"><span data-stu-id="81ed7-198">Choose one of the following options:</span></span>
 
-    - <span data-ttu-id="44f44-199">**将邮件释放给所有收件人**</span><span class="sxs-lookup"><span data-stu-id="44f44-199">**Release messages to all recipients**</span></span>
+    - <span data-ttu-id="81ed7-199">**将邮件释放给所有收件人**</span><span class="sxs-lookup"><span data-stu-id="81ed7-199">**Release messages to all recipients**</span></span>
 
-    - <span data-ttu-id="44f44-200">**将邮件释放给特定收件人**</span><span class="sxs-lookup"><span data-stu-id="44f44-200">**Release messages to specific recipients**</span></span>
+    - <span data-ttu-id="81ed7-200">**将邮件释放给特定收件人**</span><span class="sxs-lookup"><span data-stu-id="81ed7-200">**Release messages to specific recipients**</span></span>
 
-    - <span data-ttu-id="44f44-201">**向其他人发布邮件**</span><span class="sxs-lookup"><span data-stu-id="44f44-201">**Release messages to other people**</span></span>
+    - <span data-ttu-id="81ed7-201">**向其他人发布邮件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-201">**Release messages to other people**</span></span>
 
-  <span data-ttu-id="44f44-202">完成后，单击“释放邮件”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-202">When you're finished, click **Release messages**.</span></span>
+  <span data-ttu-id="81ed7-202">完成后，单击“释放邮件”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-202">When you're finished, click **Release messages**.</span></span>
 
-  <span data-ttu-id="44f44-203">有关释放邮件的说明：</span><span class="sxs-lookup"><span data-stu-id="44f44-203">Notes about releasing messages:</span></span>
+  <span data-ttu-id="81ed7-203">有关释放邮件的说明：</span><span class="sxs-lookup"><span data-stu-id="81ed7-203">Notes about releasing messages:</span></span>
 
-  - <span data-ttu-id="44f44-204">不能多次将邮件释放到同一收件人。</span><span class="sxs-lookup"><span data-stu-id="44f44-204">You can't release a message to the same recipient more than once.</span></span>
+  - <span data-ttu-id="81ed7-204">不能多次将邮件释放到同一收件人。</span><span class="sxs-lookup"><span data-stu-id="81ed7-204">You can't release a message to the same recipient more than once.</span></span>
 
-  - <span data-ttu-id="44f44-205">只有未收到邮件的收件人才会显示在潜在收件人列表中。</span><span class="sxs-lookup"><span data-stu-id="44f44-205">Only recipients who haven't received the message will appear in the list of potential recipients.</span></span>
+  - <span data-ttu-id="81ed7-205">只有未收到邮件的收件人才会显示在潜在收件人列表中。</span><span class="sxs-lookup"><span data-stu-id="81ed7-205">Only recipients who haven't received the message will appear in the list of potential recipients.</span></span>
 
-- <span data-ttu-id="44f44-206">**查看邮件头**：选择此链接可查看邮件头文本。</span><span class="sxs-lookup"><span data-stu-id="44f44-206">**View message header**: Choose this link to see the message header text.</span></span> <span data-ttu-id="44f44-207">若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”\*\*\*\*，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”\*\*\*\*）。</span><span class="sxs-lookup"><span data-stu-id="44f44-207">To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task).</span></span> <span data-ttu-id="44f44-208">将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”\*\*\*\*：</span><span class="sxs-lookup"><span data-stu-id="44f44-208">Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:</span></span>
+- <span data-ttu-id="81ed7-206">**查看邮件头**：选择此链接可查看邮件头文本。</span><span class="sxs-lookup"><span data-stu-id="81ed7-206">**View message header**: Choose this link to see the message header text.</span></span> <span data-ttu-id="81ed7-207">若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”\*\*\*\*，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”\*\*\*\*）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-207">To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task).</span></span> <span data-ttu-id="81ed7-208">将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”\*\*\*\*：</span><span class="sxs-lookup"><span data-stu-id="81ed7-208">Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:</span></span>
 
-- <span data-ttu-id="44f44-209">**预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：</span><span class="sxs-lookup"><span data-stu-id="44f44-209">**Preview message**: In the flyout pane that appears, choose one of the following options:</span></span>
+- <span data-ttu-id="81ed7-209">**预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：</span><span class="sxs-lookup"><span data-stu-id="81ed7-209">**Preview message**: In the flyout pane that appears, choose one of the following options:</span></span>
 
-  - <span data-ttu-id="44f44-210">**源视图**：显示禁用所有链接的 HTML 版邮件正文。</span><span class="sxs-lookup"><span data-stu-id="44f44-210">**Source view**: Shows the HTML version of the message body with all links disabled.</span></span>
+  - <span data-ttu-id="81ed7-210">**源视图**：显示禁用所有链接的 HTML 版邮件正文。</span><span class="sxs-lookup"><span data-stu-id="81ed7-210">**Source view**: Shows the HTML version of the message body with all links disabled.</span></span>
   
-  - <span data-ttu-id="44f44-211">**文本视图**：以纯文本格式显示邮件正文。</span><span class="sxs-lookup"><span data-stu-id="44f44-211">**Text view**: Shows the message body in plain text.</span></span>
+  - <span data-ttu-id="81ed7-211">**文本视图**：以纯文本格式显示邮件正文。</span><span class="sxs-lookup"><span data-stu-id="81ed7-211">**Text view**: Shows the message body in plain text.</span></span>
 
-- <span data-ttu-id="44f44-212">**从隔离区中删除**：在显示的警告中单击 **"是"** 后，会立即删除邮件，而不会将其发送给原始收件人。</span><span class="sxs-lookup"><span data-stu-id="44f44-212">**Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.</span></span>
+- <span data-ttu-id="81ed7-212">**从隔离区中删除**：在显示的警告中单击 **"是"** 后，会立即删除邮件，而不会将其发送给原始收件人。</span><span class="sxs-lookup"><span data-stu-id="81ed7-212">**Remove from quarantine**: After you click **Yes** in the warning that appears, the message is immediately deleted without being sent to the original recipients.</span></span>
 
-- <span data-ttu-id="44f44-213">**下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”\*\*\*\*，以使用 .eml 格式保存邮件的本地副本。</span><span class="sxs-lookup"><span data-stu-id="44f44-213">**Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.</span></span>
+- <span data-ttu-id="81ed7-213">**下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”\*\*\*\*，以使用 .eml 格式保存邮件的本地副本。</span><span class="sxs-lookup"><span data-stu-id="81ed7-213">**Download message**: In the flyout pane that appears, select **I understand the risks from downloading this message** to save a local copy of the message in .eml format.</span></span>
 
-- <span data-ttu-id="44f44-214">**提交邮件**：在出现的弹出窗口中，选择以下选项：</span><span class="sxs-lookup"><span data-stu-id="44f44-214">**Submit message**: In the flyout pane that appears, choose the following options:</span></span>
+- <span data-ttu-id="81ed7-214">**提交邮件**：在出现的弹出窗口中，选择以下选项：</span><span class="sxs-lookup"><span data-stu-id="81ed7-214">**Submit message**: In the flyout pane that appears, choose the following options:</span></span>
 
-  - <span data-ttu-id="44f44-215">**对象类型**：**电子邮件**（默认）、 **URL**或**附件**。</span><span class="sxs-lookup"><span data-stu-id="44f44-215">**Object type**: **Email** (default), **URL**, or **Attachment**.</span></span>
+  - <span data-ttu-id="81ed7-215">**对象类型**：**电子邮件**（默认）、 **URL**或**附件**。</span><span class="sxs-lookup"><span data-stu-id="81ed7-215">**Object type**: **Email** (default), **URL**, or **Attachment**.</span></span>
 
-  - <span data-ttu-id="44f44-216">**提交格式**：**网络邮件 id** （默认值，在**网络邮件 id**框中对应的值）或**文件**（浏览到本地 .eml 或 .msg 文件）。</span><span class="sxs-lookup"><span data-stu-id="44f44-216">**Submission format**: **Network Message ID** (default, with the corresponding value in the **Network Message ID** box) or **File** (browse to a local .eml or .msg file).</span></span> <span data-ttu-id="44f44-217">请注意，如果选择 "**文件**"，然后选择 "**网络邮件 ID**"，则初始值将不再存在。</span><span class="sxs-lookup"><span data-stu-id="44f44-217">Note that if you select **File** and then select **Network Message ID**, the initially value is gone.</span></span>
+  - <span data-ttu-id="81ed7-216">**提交格式**：**网络邮件 id** （默认值，在**网络邮件 id**框中对应的值）或**文件**（浏览到本地 .eml 或 .msg 文件）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-216">**Submission format**: **Network Message ID** (default, with the corresponding value in the **Network Message ID** box) or **File** (browse to a local .eml or .msg file).</span></span> <span data-ttu-id="81ed7-217">请注意，如果选择 "**文件**"，然后选择 "**网络邮件 ID**"，则初始值将不再存在。</span><span class="sxs-lookup"><span data-stu-id="81ed7-217">Note that if you select **File** and then select **Network Message ID**, the initially value is gone.</span></span>
 
-  - <span data-ttu-id="44f44-218">**收件人**：键入邮件的原始收件人，或单击 "**全选**" 以标识所有收件人。</span><span class="sxs-lookup"><span data-stu-id="44f44-218">**Recipients**: Type at lease one original recipient of the message, or click **Select All** to identify all recipients.</span></span> <span data-ttu-id="44f44-219">也可以单击 "**全选**"，然后有选择地删除各个收件人。</span><span class="sxs-lookup"><span data-stu-id="44f44-219">You can also click **Select All** and then selectively remove individual recipients.</span></span>
+  - <span data-ttu-id="81ed7-218">**收件人**：键入邮件的原始收件人，或单击 "**全选**" 以标识所有收件人。</span><span class="sxs-lookup"><span data-stu-id="81ed7-218">**Recipients**: Type at lease one original recipient of the message, or click **Select All** to identify all recipients.</span></span> <span data-ttu-id="81ed7-219">也可以单击 "**全选**"，然后有选择地删除各个收件人。</span><span class="sxs-lookup"><span data-stu-id="81ed7-219">You can also click **Select All** and then selectively remove individual recipients.</span></span>
 
-  - <span data-ttu-id="44f44-220">**提交原因**：**不应被阻止**（默认），也不应被**阻止**。</span><span class="sxs-lookup"><span data-stu-id="44f44-220">**Reason for submission**: **Should not have been blocked** (default) or **Should have been blocked**.</span></span>
+  - <span data-ttu-id="81ed7-220">**提交原因**：**不应被阻止**（默认），也不应被**阻止**。</span><span class="sxs-lookup"><span data-stu-id="81ed7-220">**Reason for submission**: **Should not have been blocked** (default) or **Should have been blocked**.</span></span>
 
-  <span data-ttu-id="44f44-221">完成后，请单击 "**提交**"。</span><span class="sxs-lookup"><span data-stu-id="44f44-221">When you're finished, click **Submit**.</span></span>
+  <span data-ttu-id="81ed7-221">完成后，请单击 "**提交**"。</span><span class="sxs-lookup"><span data-stu-id="81ed7-221">When you're finished, click **Submit**.</span></span>
 
-<span data-ttu-id="44f44-222">如果你没有释放或删除邮件，它会在默认隔离保持期到期后删除。</span><span class="sxs-lookup"><span data-stu-id="44f44-222">If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.</span></span>
+<span data-ttu-id="81ed7-222">如果你没有释放或删除邮件，它会在默认隔离保持期到期后删除。</span><span class="sxs-lookup"><span data-stu-id="81ed7-222">If you don't release or remove the message, it will be deleted after the default quarantine retention period expires.</span></span>
 
-#### <a name="take-action-on-multiple-quarantined-email-messages"></a><span data-ttu-id="44f44-223">对多封已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="44f44-223">Take action on multiple quarantined email messages</span></span>
+#### <a name="take-action-on-multiple-quarantined-email-messages"></a><span data-ttu-id="81ed7-223">对多封已隔离电子邮件执行操作</span><span class="sxs-lookup"><span data-stu-id="81ed7-223">Take action on multiple quarantined email messages</span></span>
 
-<span data-ttu-id="44f44-224">在你选择列表中的多封已隔离邮件（最多 100 封）后，“批量操作”\*\*\*\* 浮出控件窗格随即显示，你可以在其中执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="44f44-224">When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
+<span data-ttu-id="81ed7-224">在你选择列表中的多封已隔离邮件（最多 100 封）后，“批量操作”\*\*\*\* 浮出控件窗格随即显示，你可以在其中执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="81ed7-224">When you select multiple quarantined messages in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
 
-- <span data-ttu-id="44f44-225">**释放邮件**：除了无法选择“将邮件释放给特定收件人”\*\*\*\* 之外，可以选择的选项与释放一封邮件时相同，即只能选择“将邮件释放给所有收件人”\*\*\*\* 或“将邮件释放给其他用户”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-225">**Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.</span></span>
+- <span data-ttu-id="81ed7-225">**释放邮件**：除了无法选择“将邮件释放给特定收件人”\*\*\*\* 之外，可以选择的选项与释放一封邮件时相同，即只能选择“将邮件释放给所有收件人”\*\*\*\* 或“将邮件释放给其他用户”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-225">**Release messages**: The options are the same as when you release a single message, except you can't select **Release messages to specific recipients**; you can only select **Release message to all recipients** or **Release messages to other people**.</span></span>
 
-- <span data-ttu-id="44f44-226">**删除邮件**：当你在显示的警告中单击“是”\*\*\*\* 后，邮件会立即删除，而不会发送给原始收件人。</span><span class="sxs-lookup"><span data-stu-id="44f44-226">**Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.</span></span>
+- <span data-ttu-id="81ed7-226">**删除邮件**：当你在显示的警告中单击“是”\*\*\*\* 后，邮件会立即删除，而不会发送给原始收件人。</span><span class="sxs-lookup"><span data-stu-id="81ed7-226">**Delete messages**:  After you click **Yes** in the warning that appears, the message are immediately deleted without being sent to the original recipients.</span></span>
 
-<span data-ttu-id="44f44-227">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-227">When you're finished, click **Close**.</span></span>
+<span data-ttu-id="81ed7-227">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-227">When you're finished, click **Close**.</span></span>
 
-## <a name="atp-only-use-the-security--compliance-center-to-manage-quarantined-files"></a><span data-ttu-id="44f44-228">仅 ATP：使用安全 & 合规中心管理隔离的文件</span><span class="sxs-lookup"><span data-stu-id="44f44-228">ATP Only: Use the Security & Compliance Center to manage quarantined files</span></span>
+## <a name="atp-only-use-the-security--compliance-center-to-manage-quarantined-files"></a><span data-ttu-id="81ed7-228">仅 ATP：使用安全 & 合规中心管理隔离的文件</span><span class="sxs-lookup"><span data-stu-id="81ed7-228">ATP Only: Use the Security & Compliance Center to manage quarantined files</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="44f44-229">本节中隔离文件的过程仅适用于 ATP 计划1和计划2订阅者。</span><span class="sxs-lookup"><span data-stu-id="44f44-229">The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.</span></span>
+> <span data-ttu-id="81ed7-229">本节中隔离文件的过程仅适用于 ATP 计划1和计划2订阅者。</span><span class="sxs-lookup"><span data-stu-id="81ed7-229">The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.</span></span>
 
-<span data-ttu-id="44f44-230">在具有 ATP 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中管理隔离的文件。</span><span class="sxs-lookup"><span data-stu-id="44f44-230">In organizations with ATP, admins can managed quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.</span></span>
+<span data-ttu-id="81ed7-230">在具有 ATP 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中管理隔离的文件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-230">In organizations with ATP, admins can managed quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.</span></span>
 
-### <a name="view-quarantined-files"></a><span data-ttu-id="44f44-231">查看隔离的文件</span><span class="sxs-lookup"><span data-stu-id="44f44-231">View quarantined files</span></span>
+### <a name="view-quarantined-files"></a><span data-ttu-id="81ed7-231">查看隔离的文件</span><span class="sxs-lookup"><span data-stu-id="81ed7-231">View quarantined files</span></span>
 
-1. <span data-ttu-id="44f44-232">在安全与合规中心内，依次转到“威胁管理”\*\*\*\*\>“审阅”\*\*\*\*\>“隔离”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-232">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
+1. <span data-ttu-id="81ed7-232">在安全与合规中心内，依次转到“威胁管理”\*\*\*\*\>“审阅”\*\*\*\*\>“隔离”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-232">In the Security and Compliance Center, go to **Threat Management** \> **Review** \> **Quarantine**.</span></span>
 
-2. <span data-ttu-id="44f44-233">将已**隔离的视图**更改为默认值**文件**。</span><span class="sxs-lookup"><span data-stu-id="44f44-233">Change **View quarantined** to the default value **files**.</span></span> <span data-ttu-id="44f44-234">您可以通过单击可用的列标题对字段进行排序。</span><span class="sxs-lookup"><span data-stu-id="44f44-234">You can sort on a field by clicking on an available column header.</span></span>
+2. <span data-ttu-id="81ed7-233">将已**隔离的视图**更改为默认值**文件**。</span><span class="sxs-lookup"><span data-stu-id="81ed7-233">Change **View quarantined** to the default value **files**.</span></span> <span data-ttu-id="81ed7-234">您可以通过单击可用的列标题对字段进行排序。</span><span class="sxs-lookup"><span data-stu-id="81ed7-234">You can sort on a field by clicking on an available column header.</span></span>
 
-3. <span data-ttu-id="44f44-235">若要对结果进行排序，可以单击可用列标题。</span><span class="sxs-lookup"><span data-stu-id="44f44-235">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="44f44-236">单击“修改列”\*\*\*\* 最多可显示七列。</span><span class="sxs-lookup"><span data-stu-id="44f44-236">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="44f44-237">默认列用星号（ <sup>\*</sup> ）标记：</span><span class="sxs-lookup"><span data-stu-id="44f44-237">The default columns are marked with an asterisk (<sup>\*</sup>):</span></span>
+3. <span data-ttu-id="81ed7-235">若要对结果进行排序，可以单击可用列标题。</span><span class="sxs-lookup"><span data-stu-id="81ed7-235">You can sort the results by clicking on an available column header.</span></span> <span data-ttu-id="81ed7-236">单击“修改列”\*\*\*\* 最多可显示七列。</span><span class="sxs-lookup"><span data-stu-id="81ed7-236">Click **Modify columns** to show a maximum of seven columns.</span></span> <span data-ttu-id="81ed7-237">默认列用星号（ <sup>\*</sup> ）标记：</span><span class="sxs-lookup"><span data-stu-id="81ed7-237">The default columns are marked with an asterisk (<sup>\*</sup>):</span></span>
 
-   - <span data-ttu-id="44f44-238">**用户**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-238">**User**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-238">**用户**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-238">**User**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-239">**您的位置**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-239">**Location**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-239">**您的位置**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-239">**Location**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-240">**文件名**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-240">**File name**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-240">**文件名**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-240">**File name**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-241">**文件 URL**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-241">**File URL**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-241">**文件 URL**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-241">**File URL**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-242">**文件大小**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-242">**File Size**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-242">**文件大小**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-242">**File Size**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-243">**到期时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-243">**Expires**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-243">**到期时间**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-243">**Expires**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-244">**释放?**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="44f44-244">**Released?**<sup>\*</sup></span></span>
+   - <span data-ttu-id="81ed7-244">**释放?**<sup>\*</sup></span><span class="sxs-lookup"><span data-stu-id="81ed7-244">**Released?**<sup>\*</sup></span></span>
 
-   - <span data-ttu-id="44f44-245">**检测人**</span><span class="sxs-lookup"><span data-stu-id="44f44-245">**Detected by**</span></span>
+   - <span data-ttu-id="81ed7-245">**检测人**</span><span class="sxs-lookup"><span data-stu-id="81ed7-245">**Detected by**</span></span>
 
-   - <span data-ttu-id="44f44-246">**修改时间**</span><span class="sxs-lookup"><span data-stu-id="44f44-246">**Modified by time**</span></span>
+   - <span data-ttu-id="81ed7-246">**修改时间**</span><span class="sxs-lookup"><span data-stu-id="81ed7-246">**Modified by time**</span></span>
 
-4. <span data-ttu-id="44f44-247">若要筛选结果，请单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-247">To filter the results, click **Filter**.</span></span> <span data-ttu-id="44f44-248">以下筛选器可用：</span><span class="sxs-lookup"><span data-stu-id="44f44-248">The available filters are:</span></span>
+4. <span data-ttu-id="81ed7-247">若要筛选结果，请单击“筛选器”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-247">To filter the results, click **Filter**.</span></span> <span data-ttu-id="81ed7-248">以下筛选器可用：</span><span class="sxs-lookup"><span data-stu-id="81ed7-248">The available filters are:</span></span>
 
-   - <span data-ttu-id="44f44-249">**到期时间**：按邮件的隔离到期时间筛选：</span><span class="sxs-lookup"><span data-stu-id="44f44-249">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
+   - <span data-ttu-id="81ed7-249">**到期时间**：按邮件的隔离到期时间筛选：</span><span class="sxs-lookup"><span data-stu-id="81ed7-249">**Expires time**: Filter messages by when they will expire from quarantine:</span></span>
 
-     - <span data-ttu-id="44f44-250">**今天**</span><span class="sxs-lookup"><span data-stu-id="44f44-250">**Today**</span></span>
+     - <span data-ttu-id="81ed7-250">**今天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-250">**Today**</span></span>
 
-     - <span data-ttu-id="44f44-251">**未来 2 天**</span><span class="sxs-lookup"><span data-stu-id="44f44-251">**Next 2 days**</span></span>
+     - <span data-ttu-id="81ed7-251">**未来 2 天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-251">**Next 2 days**</span></span>
 
-     - <span data-ttu-id="44f44-252">**未来 7 天**</span><span class="sxs-lookup"><span data-stu-id="44f44-252">**Next 7 days**</span></span>
+     - <span data-ttu-id="81ed7-252">**未来 7 天**</span><span class="sxs-lookup"><span data-stu-id="81ed7-252">**Next 7 days**</span></span>
 
-     - <span data-ttu-id="44f44-253">自定义日期/时间范围。</span><span class="sxs-lookup"><span data-stu-id="44f44-253">A custom date/time range.</span></span>
+     - <span data-ttu-id="81ed7-253">自定义日期/时间范围。</span><span class="sxs-lookup"><span data-stu-id="81ed7-253">A custom date/time range.</span></span>
 
-   - <span data-ttu-id="44f44-254">**接收时间**</span><span class="sxs-lookup"><span data-stu-id="44f44-254">**Received time**</span></span>
+   - <span data-ttu-id="81ed7-254">**接收时间**</span><span class="sxs-lookup"><span data-stu-id="81ed7-254">**Received time**</span></span>
 
-   - <span data-ttu-id="44f44-255">**隔离原因**：唯一的可用值是**恶意软件**。</span><span class="sxs-lookup"><span data-stu-id="44f44-255">**Quarantine reason**: The only available value is **Malware**.</span></span>
+   - <span data-ttu-id="81ed7-255">**隔离原因**：唯一的可用值是**恶意软件**。</span><span class="sxs-lookup"><span data-stu-id="81ed7-255">**Quarantine reason**: The only available value is **Malware**.</span></span>
 
-<span data-ttu-id="44f44-256">找到特定的隔离文件后，选择该文件查看其详细信息，并对其执行操作（例如，查看、释放、下载或删除邮件）。</span><span class="sxs-lookup"><span data-stu-id="44f44-256">After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
+<span data-ttu-id="81ed7-256">找到特定的隔离文件后，选择该文件查看其详细信息，并对其执行操作（例如，查看、释放、下载或删除邮件）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-256">After you find a specific quarantined file, select the file to view details about it, and to take action on it (for example, view, release, download, or delete the message).</span></span>
 
-#### <a name="export-file-results"></a><span data-ttu-id="44f44-257">导出文件结果</span><span class="sxs-lookup"><span data-stu-id="44f44-257">Export file results</span></span>
+#### <a name="export-file-results"></a><span data-ttu-id="81ed7-257">导出文件结果</span><span class="sxs-lookup"><span data-stu-id="81ed7-257">Export file results</span></span>
 
-1. <span data-ttu-id="44f44-258">选择您感兴趣的文件，然后单击 "**导出结果**"。</span><span class="sxs-lookup"><span data-stu-id="44f44-258">Select the files you're interested in, and click **Export results**.</span></span>
+1. <span data-ttu-id="81ed7-258">选择您感兴趣的文件，然后单击 "**导出结果**"。</span><span class="sxs-lookup"><span data-stu-id="81ed7-258">Select the files you're interested in, and click **Export results**.</span></span>
 
-2. <span data-ttu-id="44f44-259">在警告你不要关闭浏览器窗口的确认消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="44f44-259">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
+2. <span data-ttu-id="81ed7-259">在警告你不要关闭浏览器窗口的确认消息中，单击“是”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="81ed7-259">Click **Yes** in the confirmation message that warns you to keep the browser window open.</span></span>
 
-3. <span data-ttu-id="44f44-260">在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。</span><span class="sxs-lookup"><span data-stu-id="44f44-260">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
+3. <span data-ttu-id="81ed7-260">在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。</span><span class="sxs-lookup"><span data-stu-id="81ed7-260">When your export is ready, you can name and choose the download location for the .csv file.</span></span>
 
-#### <a name="view-quarantined-file-details"></a><span data-ttu-id="44f44-261">查看隔离的文件详细信息</span><span class="sxs-lookup"><span data-stu-id="44f44-261">View quarantined file details</span></span>
+#### <a name="view-quarantined-file-details"></a><span data-ttu-id="81ed7-261">查看隔离的文件详细信息</span><span class="sxs-lookup"><span data-stu-id="81ed7-261">View quarantined file details</span></span>
 
-<span data-ttu-id="44f44-262">当您选择列表中的某个文件时，**详细信息**弹出窗格中将显示以下文件详细信息：</span><span class="sxs-lookup"><span data-stu-id="44f44-262">When you select a file in the list, the following file details appear in the **Details** flyout pane:</span></span>
+<span data-ttu-id="81ed7-262">当您选择列表中的某个文件时，**详细信息**弹出窗格中将显示以下文件详细信息：</span><span class="sxs-lookup"><span data-stu-id="81ed7-262">When you select a file in the list, the following file details appear in the **Details** flyout pane:</span></span>
 
-- <span data-ttu-id="44f44-263">**文件名**</span><span class="sxs-lookup"><span data-stu-id="44f44-263">**File Name**</span></span>
+- <span data-ttu-id="81ed7-263">**文件名**</span><span class="sxs-lookup"><span data-stu-id="81ed7-263">**File Name**</span></span>
 
-- <span data-ttu-id="44f44-264">**文件 url**：定义文件位置的 url （例如，在 SharePoint Online 中）。</span><span class="sxs-lookup"><span data-stu-id="44f44-264">**File URL**: URL that defines the location of the file (for example, in SharePoint Online).</span></span>
+- <span data-ttu-id="81ed7-264">**文件 url**：定义文件位置的 url （例如，在 SharePoint Online 中）。</span><span class="sxs-lookup"><span data-stu-id="81ed7-264">**File URL**: URL that defines the location of the file (for example, in SharePoint Online).</span></span>
 
-- <span data-ttu-id="44f44-265">**在上检测到的恶意内容**文件被隔离的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="44f44-265">**Malicious content detected on** The date/time the file was quarantined.</span></span>
+- <span data-ttu-id="81ed7-265">**在上检测到的恶意内容**文件被隔离的日期/时间。</span><span class="sxs-lookup"><span data-stu-id="81ed7-265">**Malicious content detected on** The date/time the file was quarantined.</span></span>
 
-- <span data-ttu-id="44f44-266">**过期**时间：将从隔离区中删除文件的日期。</span><span class="sxs-lookup"><span data-stu-id="44f44-266">**Expires**: The date when the file will be deleted from quarantine.</span></span>
+- <span data-ttu-id="81ed7-266">**过期**时间：将从隔离区中删除文件的日期。</span><span class="sxs-lookup"><span data-stu-id="81ed7-266">**Expires**: The date when the file will be deleted from quarantine.</span></span>
 
-- <span data-ttu-id="44f44-267">**检测依据**： ATP （高级威胁防护）或 Microsoft 反恶意软件引擎。</span><span class="sxs-lookup"><span data-stu-id="44f44-267">**Detected By**: ATP (Advanced Threat Protection) or Microsoft's anti-malware engine.</span></span>
+- <span data-ttu-id="81ed7-267">**检测依据**： ATP （高级威胁防护）或 Microsoft 反恶意软件引擎。</span><span class="sxs-lookup"><span data-stu-id="81ed7-267">**Detected By**: ATP (Advanced Threat Protection) or Microsoft's anti-malware engine.</span></span>
 
-- <span data-ttu-id="44f44-268">**释放?**</span><span class="sxs-lookup"><span data-stu-id="44f44-268">**Released?**</span></span>
+- <span data-ttu-id="81ed7-268">**释放?**</span><span class="sxs-lookup"><span data-stu-id="81ed7-268">**Released?**</span></span>
 
-- <span data-ttu-id="44f44-269">**恶意软件名称**</span><span class="sxs-lookup"><span data-stu-id="44f44-269">**Malware Name**</span></span>
+- <span data-ttu-id="81ed7-269">**恶意软件名称**</span><span class="sxs-lookup"><span data-stu-id="81ed7-269">**Malware Name**</span></span>
 
-- <span data-ttu-id="44f44-270">**文档 ID**：文档的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="44f44-270">**Document ID**: A unique identifier for the document.</span></span>
+- <span data-ttu-id="81ed7-270">**文档 ID**：文档的唯一标识符。</span><span class="sxs-lookup"><span data-stu-id="81ed7-270">**Document ID**: A unique identifier for the document.</span></span>
 
-- <span data-ttu-id="44f44-271">**文件大小**：以千字节（kb）为单位。</span><span class="sxs-lookup"><span data-stu-id="44f44-271">**File Size**: In kilobytes (KB).</span></span>
+- <span data-ttu-id="81ed7-271">**文件大小**：以千字节（kb）为单位。</span><span class="sxs-lookup"><span data-stu-id="81ed7-271">**File Size**: In kilobytes (KB).</span></span>
 
-- <span data-ttu-id="44f44-272">**组织**您的组织的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="44f44-272">**Organization** Your organization's unique ID.</span></span>
+- <span data-ttu-id="81ed7-272">**组织**您的组织的唯一 ID。</span><span class="sxs-lookup"><span data-stu-id="81ed7-272">**Organization** Your organization's unique ID.</span></span>
 
-- <span data-ttu-id="44f44-273">**上次修改时间**</span><span class="sxs-lookup"><span data-stu-id="44f44-273">**Last modified**</span></span>
+- <span data-ttu-id="81ed7-273">**上次修改时间**</span><span class="sxs-lookup"><span data-stu-id="81ed7-273">**Last modified**</span></span>
 
-- <span data-ttu-id="44f44-274">**修改者**：上次修改文件的用户。</span><span class="sxs-lookup"><span data-stu-id="44f44-274">**Modified By**: The user who last modified the file.</span></span>
+- <span data-ttu-id="81ed7-274">**修改者**：上次修改文件的用户。</span><span class="sxs-lookup"><span data-stu-id="81ed7-274">**Modified By**: The user who last modified the file.</span></span>
 
-- <span data-ttu-id="44f44-275">**安全哈希算法 256-位（SHA-256）值**：您可以使用此哈希值来标识其他信誉存储区中的文件或环境中的其他位置。</span><span class="sxs-lookup"><span data-stu-id="44f44-275">**Secure Hash Algorithm 256-bit (SHA-256) value**: You can use this hash value to identify the file in other reputation stores or in other locations in your environment.</span></span>
+- <span data-ttu-id="81ed7-275">**安全哈希算法 256-位（SHA-256）值**：您可以使用此哈希值来标识其他信誉存储区中的文件或环境中的其他位置。</span><span class="sxs-lookup"><span data-stu-id="81ed7-275">**Secure Hash Algorithm 256-bit (SHA-256) value**: You can use this hash value to identify the file in other reputation stores or in other locations in your environment.</span></span>
 
-### <a name="take-action-on-quarantined-files"></a><span data-ttu-id="44f44-276">对隔离的文件执行操作</span><span class="sxs-lookup"><span data-stu-id="44f44-276">Take action on quarantined files</span></span>
+### <a name="take-action-on-quarantined-files"></a><span data-ttu-id="81ed7-276">对隔离的文件执行操作</span><span class="sxs-lookup"><span data-stu-id="81ed7-276">Take action on quarantined files</span></span>
 
-<span data-ttu-id="44f44-277">选择列表中的文件时，可以对 "**详细信息**" 弹出窗口中的文件执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="44f44-277">When you select a file in the list, you can take the following actions on the file in the **Details** flyout pane:</span></span>
+<span data-ttu-id="81ed7-277">选择列表中的文件时，可以对 "**详细信息**" 弹出窗口中的文件执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="81ed7-277">When you select a file in the list, you can take the following actions on the file in the **Details** flyout pane:</span></span>
 
-- <span data-ttu-id="44f44-278">**释放文件**：选择（默认）或**将报告文件取消选择 Microsoft 进行分析**，然后单击 "**释放文件**"。</span><span class="sxs-lookup"><span data-stu-id="44f44-278">**Release files**: Select (default) or unselect **Report files to Microsoft for analysis**, and then click **Release files**.</span></span>
+- <span data-ttu-id="81ed7-278">**释放文件**：选择（默认）或**将报告文件取消选择 Microsoft 进行分析**，然后单击 "**释放文件**"。</span><span class="sxs-lookup"><span data-stu-id="81ed7-278">**Release files**: Select (default) or unselect **Report files to Microsoft for analysis**, and then click **Release files**.</span></span>
 
-- <span data-ttu-id="44f44-279">**下载文件**</span><span class="sxs-lookup"><span data-stu-id="44f44-279">**Download file**</span></span>
+- <span data-ttu-id="81ed7-279">**下载文件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-279">**Download file**</span></span>
 
-- <span data-ttu-id="44f44-280">**从隔离区中删除文件**</span><span class="sxs-lookup"><span data-stu-id="44f44-280">**Remove file from quarantine**</span></span>
+- <span data-ttu-id="81ed7-280">**从隔离区中删除文件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-280">**Remove file from quarantine**</span></span>
 
-<span data-ttu-id="44f44-281">如果不释放或删除这些文件，则在默认的隔离保留期过期后，这些文件将被删除。</span><span class="sxs-lookup"><span data-stu-id="44f44-281">If you don't release or remove the files, they will be deleted after the default quarantine retention period expires.</span></span>
+<span data-ttu-id="81ed7-281">如果不释放或删除这些文件，则在默认的隔离保留期过期后，这些文件将被删除。</span><span class="sxs-lookup"><span data-stu-id="81ed7-281">If you don't release or remove the files, they will be deleted after the default quarantine retention period expires.</span></span>
 
-#### <a name="actions-on-multiple-quarantined-files"></a><span data-ttu-id="44f44-282">对多个隔离文件执行的操作</span><span class="sxs-lookup"><span data-stu-id="44f44-282">Actions on multiple quarantined files</span></span>
+#### <a name="actions-on-multiple-quarantined-files"></a><span data-ttu-id="81ed7-282">对多个隔离文件执行的操作</span><span class="sxs-lookup"><span data-stu-id="81ed7-282">Actions on multiple quarantined files</span></span>
 
-<span data-ttu-id="44f44-283">当您在列表中选择多个隔离文件（最多为100）时，将显示 "**批量操作**" 浮出控件窗格，您可在其中执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="44f44-283">When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
+<span data-ttu-id="81ed7-283">当您在列表中选择多个隔离文件（最多为100）时，将显示 "**批量操作**" 浮出控件窗格，您可在其中执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="81ed7-283">When you select multiple quarantined files in the list (up to 100), the **Bulk actions** flyout pane appears where you can take the following actions:</span></span>
 
-- <span data-ttu-id="44f44-284">**释放文件**</span><span class="sxs-lookup"><span data-stu-id="44f44-284">**Release files**</span></span>
+- <span data-ttu-id="81ed7-284">**释放文件**</span><span class="sxs-lookup"><span data-stu-id="81ed7-284">**Release files**</span></span>
 
-- <span data-ttu-id="44f44-285">**删除文件**：在显示的警告中单击 **"是"** 后，会立即删除文件。</span><span class="sxs-lookup"><span data-stu-id="44f44-285">**Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.</span></span>
+- <span data-ttu-id="81ed7-285">**删除文件**：在显示的警告中单击 **"是"** 后，会立即删除文件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-285">**Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.</span></span>
 
-1. <span data-ttu-id="44f44-286">在您的组织中使用具有全局管理员权限的工作或学校帐户（或适当的安全 & 合规中心角色），登录并[转到安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="44f44-286">Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).</span></span>
+1. <span data-ttu-id="81ed7-286">在您的组织中使用具有全局管理员权限的工作或学校帐户（或适当的安全 & 合规中心角色），登录并[转到安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="81ed7-286">Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).</span></span>
 
-## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-view-and-manage-quarantined-messages-and-files"></a><span data-ttu-id="44f44-287">使用 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 查看和管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="44f44-287">Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to view and manage quarantined messages and files</span></span>
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a><span data-ttu-id="81ed7-287">使用 Exchange Online PowerShell 或独立 EOP PowerShell 查看和管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="81ed7-287">Use Exchange Online PowerShell or standalone EOP PowerShell to view and manage quarantined messages and files</span></span>
 
-<span data-ttu-id="44f44-288">用于查看和管理隔离区中的邮件和文件的 cmdlet 为：</span><span class="sxs-lookup"><span data-stu-id="44f44-288">The cmdlets you use to view and manages messages and files in quarantine are:</span></span>
+<span data-ttu-id="81ed7-288">用于查看和管理隔离区中的邮件和文件的 cmdlet 为：</span><span class="sxs-lookup"><span data-stu-id="81ed7-288">The cmdlets you use to view and manages messages and files in quarantine are:</span></span>
 
-- [<span data-ttu-id="44f44-289">删除-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="44f44-289">Delete-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/delete-quarantinemessage)
+- [<span data-ttu-id="81ed7-289">删除-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="81ed7-289">Delete-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/delete-quarantinemessage)
 
-- [<span data-ttu-id="44f44-290">Export-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="44f44-290">Export-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/export-quarantinemessage)
+- [<span data-ttu-id="81ed7-290">Export-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="81ed7-290">Export-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/export-quarantinemessage)
 
-- [<span data-ttu-id="44f44-291">Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="44f44-291">Get-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)
+- [<span data-ttu-id="81ed7-291">Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="81ed7-291">Get-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)
 
-- <span data-ttu-id="44f44-292">[Preview-get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage)：请注意，此 cmdlet 仅适用于邮件，而不适用于 SharePoint Online、OneDrive for Business 或团队的 ATP 中的恶意软件文件。</span><span class="sxs-lookup"><span data-stu-id="44f44-292">[Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage): Note that this cmdlet is only for messages, not malware files from ATP for SharePoint Online, OneDrive for Business, or Teams.</span></span>
+- <span data-ttu-id="81ed7-292">[Preview-get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage)：请注意，此 cmdlet 仅适用于邮件，而不适用于 SharePoint Online、OneDrive for Business 或团队的 ATP 中的恶意软件文件。</span><span class="sxs-lookup"><span data-stu-id="81ed7-292">[Preview-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage): Note that this cmdlet is only for messages, not malware files from ATP for SharePoint Online, OneDrive for Business, or Teams.</span></span>
 
-- [<span data-ttu-id="44f44-293">发布-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="44f44-293">Release-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)
+- [<span data-ttu-id="81ed7-293">发布-Get-quarantinemessage</span><span class="sxs-lookup"><span data-stu-id="81ed7-293">Release-QuarantineMessage</span></span>](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)
