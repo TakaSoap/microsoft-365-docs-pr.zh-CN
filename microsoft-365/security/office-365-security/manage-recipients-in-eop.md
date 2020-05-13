@@ -1,11 +1,11 @@
 ---
-title: 在 EOP 中管理收件人
+title: 在独立 EOP 中管理收件人
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 11/17/2014
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,26 +13,25 @@ localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解 Microsoft Exchange Online Protection （EOP）支持的邮件收件人。
-ms.openlocfilehash: eb2855f93083c88725492be2691799c3521bbf8f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解独立 Exchange Online Protection （EOP）中的不同类型的收件人对象。
+ms.openlocfilehash: c2337f28fbcd825022967434828af409f3bf0453
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036145"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208362"
 ---
-# <a name="manage-recipients-in-eop"></a><span data-ttu-id="7bad7-103">在 EOP 中管理收件人</span><span class="sxs-lookup"><span data-stu-id="7bad7-103">Manage recipients in EOP</span></span>
+# <a name="manage-recipients-in-standalone-eop"></a><span data-ttu-id="69c67-103">在独立 EOP 中管理收件人</span><span class="sxs-lookup"><span data-stu-id="69c67-103">Manage recipients in standalone EOP</span></span>
 
-<span data-ttu-id="7bad7-104">Microsoft Exchange Online Protection (EOP) 提供了几种用于管理邮件收件人的方法。</span><span class="sxs-lookup"><span data-stu-id="7bad7-104">Microsoft Exchange Online Protection (EOP) offers several ways to manage your mail recipients.</span></span> <span data-ttu-id="7bad7-105">作为管理员，您可以在 Exchange 管理中心（EAC）或使用远程 Windows PowerShell 中执行某些管理任务，并验证在 Microsoft 365 管理中心内执行的其他管理任务。</span><span class="sxs-lookup"><span data-stu-id="7bad7-105">As an administrator, you can perform certain management tasks within the Exchange admin center (EAC) or using remote Windows PowerShell, and verify other management tasks performed in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="69c67-104">独立 Exchange Online Protection （EOP）没有 Exchange Online 邮箱的组织支持以下类型的收件人：</span><span class="sxs-lookup"><span data-stu-id="69c67-104">Standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support the following types of recipients:</span></span>
 
-<span data-ttu-id="7bad7-106">EOP 支持以下类型的收件人：</span><span class="sxs-lookup"><span data-stu-id="7bad7-106">EOP supports the following types of recipients:</span></span>
+- <span data-ttu-id="69c67-105">**邮件用户**：邮件用户是独立 EOP 组织中的用户帐户的基本类型。</span><span class="sxs-lookup"><span data-stu-id="69c67-105">**Mail users**: Mail users are the fundamental type of user accounts in your standalone EOP organization.</span></span> <span data-ttu-id="69c67-106">邮件用户在 EOP 组织中有登录凭据，但他们具有外部电子邮件地址（其邮箱位于您的 EOP 组织之外）。</span><span class="sxs-lookup"><span data-stu-id="69c67-106">Mail users have logon credentials in your EOP organization, but they have external email addresses (their mailboxes are located outside of your EOP organization).</span></span>
 
-- <span data-ttu-id="7bad7-107">**邮件用户**：邮件用户是 EOP 托管域中的收件人。</span><span class="sxs-lookup"><span data-stu-id="7bad7-107">**Mail Users**: Mail users are recipients in your EOP managed domains.</span></span> <span data-ttu-id="7bad7-108">这些收件人在您的组织中有登录凭据，但它们具有外部电子邮件地址，这意味着其收件人邮箱位于云组织之外。</span><span class="sxs-lookup"><span data-stu-id="7bad7-108">These recipients have logon credentials in your organization, but they have external email addresses, meaning that their recipient mailboxes are located outside of your cloud organization.</span></span>
+  <span data-ttu-id="69c67-107">有关在 EOP 中管理邮件用户的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="69c67-107">For more information about managing mail users in EOP, see [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span>
 
-  <span data-ttu-id="7bad7-109">您可以添加邮件用户，以便他们可以接收邮件，也可以为特定用户创建邮件流规则（也称为传输规则）。</span><span class="sxs-lookup"><span data-stu-id="7bad7-109">You can add mail users so that they can receive mail and you can also create mail flow rules (also known as transport rules) for specific users.</span></span> <span data-ttu-id="7bad7-110">您还可以为您组织中的邮件用户分配角色，拥有管理角色组权限的用户可以访问 Exchange 管理中心 (EAC) 并执行特定的管理任务。</span><span class="sxs-lookup"><span data-stu-id="7bad7-110">You can also assign roles to mail users in your organization; users with management role group privileges can access the Exchange admin center (EAC) and perform certain management tasks.</span></span> <span data-ttu-id="7bad7-111">若要了解有关用户角色以及如何在 EOP 中分配用户角色的详细信息，请参阅[Manage admin role group 权限 IN EOP](manage-admin-role-group-permissions-in-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="7bad7-111">To learn more about user roles and how to assign user roles in EOP, see [Manage admin role group permissions in EOP](manage-admin-role-group-permissions-in-eop.md).</span></span>
+- <span data-ttu-id="69c67-108">**组**：您可以创建以下类型的组：</span><span class="sxs-lookup"><span data-stu-id="69c67-108">**Groups**: You can create the following types of groups:</span></span>
 
-  <span data-ttu-id="7bad7-112">有关在 EOP 中管理邮件用户的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="7bad7-112">For more information about managing mail users in EOP, see [Manage mail users in EOP](manage-mail-users-in-eop.md).</span></span>
+  - <span data-ttu-id="69c67-109">通讯组</span><span class="sxs-lookup"><span data-stu-id="69c67-109">Distribution groups</span></span>
+  - <span data-ttu-id="69c67-110">启用邮件功能的安全组</span><span class="sxs-lookup"><span data-stu-id="69c67-110">Mail-enabled security groups</span></span>
 
-- <span data-ttu-id="7bad7-113">**组**：邮件用户可以分组到通讯组或安全组中。</span><span class="sxs-lookup"><span data-stu-id="7bad7-113">**Groups**: Mail users can be grouped together into distribution groups or security groups.</span></span>
-
-<span data-ttu-id="7bad7-114">有关在 EOP 中管理组的详细信息，请参阅[在 EOP 中管理组](manage-groups-in-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="7bad7-114">For more information about managing groups in EOP, see [Manage groups in EOP](manage-groups-in-eop.md).</span></span>
+  <span data-ttu-id="69c67-111">有关在 EOP 中管理组的详细信息，请参阅[在 EOP 中管理组](manage-groups-in-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="69c67-111">For more information about managing groups in EOP, see [Manage groups in EOP](manage-groups-in-eop.md).</span></span>
