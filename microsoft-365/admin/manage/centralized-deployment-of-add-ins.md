@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 0fcdb9901c708842470f72106ab4eea20ff8b17e
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: bd1c9ca0a034494f6556f0badca66284c3d9e1de
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011719"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214248"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -32,7 +32,7 @@ ms.locfileid: "44011719"
 集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
 加载项最长可能需要12个小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 集中部署加载项需要用户使用适用于企业的 Microsoft 365 应用程序（并使用组织 ID 登录 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
@@ -75,9 +75,9 @@ ms.locfileid: "44011719"
 
 检测用户是否已安装 Microsoft 365 应用程序并最近是否使用它的最简单方法是使用 Microsoft Office 激活报告，该报告在 Microsoft 365 管理中心中提供。 该报告提供了一个列表，其中列出了在过去7天、30天、90天或180天内为企业激活 Microsoft 365 应用程序的所有用户。 出于集中部署目的，Windows 或 Mac 的桌面激活是报表中的重要列。 可将报表导出至 Excel。 有关报告的详细信息，请参阅[管理中心内的 microsoft 365 报表-Microsoft Office 激活](../activity-reports/microsoft-office-activations.md)。
   
-如果不想使用激活报告，可以让用户在其计算机上打开 Office 应用程序（如 Word），然后选择 "**文件** \> **帐户**"。 在 "**产品信息**" 下，您应看到 "**适用于企业的****订阅产品**和 microsoft microsoft 365 应用"，如下图中所示。
+如果不想使用激活报告，可以让用户在其计算机上打开 Office 应用程序（如 Word），然后选择 "**文件** \> **帐户**"。 在 "**产品信息**" 下，应查看 "**订阅产品**" 和 "**适用于企业的 Microsoft 365**"，如下图中所示。
 
-![Office 应用程序中的产品信息](../../media/4bff2bb8-0690-4d22-ac1f-b8881807fa39.png)
+![Office 应用程序中的产品信息](../../media/product-information-microsoft-365-enterprise.png)
   
 若要获取适用于企业的 Microsoft 365 应用的帮助，请参阅[适用于企业的 microsoft 365 应用的故障排除提示](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
@@ -108,7 +108,7 @@ Import-Module O365CompatibilityChecker
 ```powershell
 Invoke-CompatibilityCheck
 ```
-   这将提示您输入*_TenantDomain_* （例如， *TailspinToysIncorporated。</span>com*）和*_TenantAdmin_* 凭据（使用您的全局管理员凭据），然后请求许可。
+   这将提示您输入*_TenantDomain_* （例如， *TailspinToysIncorporated。 </span>com*）和*_TenantAdmin_* 凭据（使用您的全局管理员凭据），然后请求许可。
     
 > [!NOTE]
 > 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
@@ -161,7 +161,7 @@ Invoke-CompatibilityCheck
   
 |**平台**|**调式信息**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b.aspx)）  <br/>  CorrelationID. 查看其中一个 office 页面的来源，查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx)）  <br/>  CorrelationID. 查看其中一个 office 页面的来源，查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  客户端应用程序的内部版本号（最好是从**文件/帐户**中的屏幕截图）  <br/> |
    
 

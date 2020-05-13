@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: f336c9ef2957374223a8f0d7b64f892c87e1169d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631545"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214658"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -121,10 +121,10 @@ Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，�
 本指南介绍如何实现一组用于保护对 Office 365 （包括 Exchange Online、SharePoint Online 和 OneDrive for business）的访问权限的策略。 除了实施这些策略之外，我们还建议您使用以下资源提高租户的保护级别：
 
 - [配置租户以提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：这些建议适用于租户的基准安全性。
-- [Microsoft 365 安全路线图：前30天、90天及以上的主要优先级](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352)：这些建议包括日志记录、数据管理、管理员访问和威胁防护。
+- [Microsoft 365 安全路线图：前30天、90天及以上的主要优先级](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：这些建议包括日志记录、数据管理、管理员访问和威胁防护。
 
 
-### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>适用于企业的 Windows 10 和 Microsoft 365 应用程序
+### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 和 Microsoft 365 企业应用版
 
 适用于企业的 Windows 10 和 Microsoft 365 应用是电脑的推荐客户端环境。 建议 Windows 10，因为 Azure 旨在提供内部部署和 Azure AD 的最平滑体验。 Windows 10 还包含可通过 Intune 管理的高级安全功能。 适用于企业的 Microsoft 365 应用程序包括 Office 应用程序的最新版本。 这些身份验证使用新式验证，这是更安全和有条件访问的要求。 这些应用程序还包括增强的安全性和合规性工具。
 
