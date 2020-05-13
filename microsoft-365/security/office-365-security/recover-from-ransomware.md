@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: 49e14e92505f5241828a525aba82a2dc871e6784
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 51f5bb365fe707615444c1399479171aa72755e1
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634396"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208254"
 ---
-# <a name="recover-from-a-ransomware-attack-in-office-365"></a>在 Office 365 中恢复勒索软件攻击
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
 即使您在保护组织时采取了任何预防措施，仍可成为[勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻击的牺牲品。 勒索软件是大型企业，攻击的验证非常复杂。
 
@@ -42,7 +42,7 @@ ms.locfileid: "43634396"
 
 如果您怀疑电子邮件是目标，应暂时禁用用户对邮箱的访问。 移动设备使用 Exchange ActiveSync 在设备与 Exchange Online 邮箱之间同步数据。
 
-若要禁用邮箱的 ActiveSync，请参阅 how [to Disable Exchange ActiveSync For Office 365 中的用户](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
+若要禁用邮箱的 ActiveSync，请参阅[如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
 
 若要禁用对邮箱的其他类型的访问，请参阅：
 

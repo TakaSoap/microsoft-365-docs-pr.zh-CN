@@ -15,12 +15,12 @@ ms.custom:
 - TLG
 - Ent_TLGs
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: b17c6b3b39bebaff2737ea5e9bb198beef00844c
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153876"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213136"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
@@ -28,7 +28,7 @@ ms.locfileid: "43153876"
 
 若要使用其他级别的安全来登录 Microsoft 365 或使用 Azure AD 租户订阅订阅的任何服务或应用程序，您可以启用 Azure 多重身份验证，它需要的用户和密码不只需要用户名和密码即可验证帐户。 
 
-使用多重身份验证时，用户需要确认电话呼叫、在短信中键入验证代码，或者在正确输入密码后在智能手机上指定应用密码。 仅在满足第二个身份验证因素时才能登录。 
+使用多重身份验证，用户需要确认电话呼叫，在短信中键入验证代码，或在正确输入密码后验证智能手机上的应用程序的身份验证。 仅在满足第二个身份验证因素时才能登录。 
   
 本文介绍如何为特定用户帐户启用和测试基于短信的身份验证。
   
@@ -58,9 +58,9 @@ ms.locfileid: "43153876"
 
 通过以下步骤为 User 2 帐户启用多重身份验证：
   
-1. 打开浏览器的单独私有实例，转到 Microsoft 365 管理中心（[https://portal.microsoft.com](https://portal.microsoft.com)），然后使用全局管理员帐户登录。
+1. 打开浏览器的单独私有实例，转到 Microsoft 365 管理中心（ [https://portal.microsoft.com](https://portal.microsoft.com) ），然后使用全局管理员帐户登录。
     
-2. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
+2. 在左侧导航栏中，单击“用户”>“活动用户”****。
     
 3. 在 "活动用户" 窗格中，单击 "**多因素身份验证**"。
     
@@ -80,7 +80,7 @@ ms.locfileid: "43153876"
   
 1. 打开浏览器的新的私有实例。
     
-2. 转到 Office 365 门户（[https://portal.office.com](https://portal.office.com)），并使用用户2帐户名称和密码登录。
+2. 转到 Office 365 门户（ [https://portal.office.com](https://portal.office.com) ），并使用用户2帐户名称和密码登录。
     
 3. 登录后，系统会提示您设置帐户以获取详细信息。 单击“**下一步**”。
     
@@ -96,7 +96,7 @@ ms.locfileid: "43153876"
     
 6. 输入智能手机收到的短信中的验证码，然后单击“验证”****。
     
-7. 在“第 3 步: 保留现有应用程序”**** 页上，将显示的 User 2 帐户的应用密码记录在安全位置，然后单击“完成”****。
+7. 在 "**步骤3：保留现有应用程序**" 页上，单击 "**完成**"。
     
 8. 如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”****。将新密码记录在安全位置。
     
@@ -121,7 +121,7 @@ ms.locfileid: "43153876"
 
 接下来，创建一个条件访问策略，以要求对 MFAUsers 组成员进行多重身份验证。
 
-1. 在浏览器的新选项卡中，转[https://portal.azure.com](https://portal.azure.com)到。
+1. 在浏览器的新选项卡中，转到 [https://portal.azure.com](https://portal.azure.com) 。
 2. 单击 " **Azure Active Directory > Security > 条件访问**。
 3. 在 "**条件访问–策略**" 窗格中，单击 "**新建策略**"。
 4. 在 "**新建**" 窗格中，为 "**名称**" 中**的用户帐户键入 MFA** 。

@@ -1,11 +1,11 @@
 ---
-title: 非客户向 Office 365 发送邮件的服务
+title: 将邮件发送到 Microsoft 365 的非客户服务
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 5/2/2016
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,16 +16,16 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: 2d8de601fd24f30c342768b8b27e44248f05b5fe
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43638388"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208230"
 ---
-# <a name="services-for-non-customers-sending-mail-to-office-365"></a>非客户向 Office 365 发送邮件的服务
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365 的非客户服务
 
-电子邮件滥用、垃圾邮件和欺诈邮件（网络钓鱼）继续增加整个电子邮件系统的负担。 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。 然而，Microsoft 知道合法的电子邮件不应受到负面影响。 因此，我们已经建立了一套服务，帮助发件人通过主动管理其发送信誉来提高将电子邮件传递给 Microsoft 365 用户的能力。
+电子邮件滥用、垃圾邮件和欺诈邮件（网络钓鱼）继续增加整个电子邮件系统的负担。 为了帮助维护对电子邮件使用的用户信任，Microsoft 已实施各种策略和技术来帮助保护我们的用户。 然而，Microsoft 知道合法的电子邮件不应受到负面影响。 因此，我们已经建立了一套服务，帮助发件人通过主动管理其发送信誉来提高将电子邮件传递给 Microsoft 365 用户的能力。
 
 本概述提供了我们为你的组织提供的好处的相关信息（即使你不是客户）。
 
@@ -33,14 +33,14 @@ ms.locfileid: "43638388"
 
 |**服务**|**优势**|
 |:-----|:-----|
-|此联机帮助内容| 提供：  <br/>  有关向 EOP 用户传送通信的任何问题的起点  <br/>  包括有关我们的策略和要求的简单在线指南  <br/>  Microsoft 采用的垃圾邮件筛选器和身份验证技术的概述|
+|此联机帮助内容|提供： <br/> 有关向 EOP 用户提供通信的任何问题的起始点。 <br/><br/> 包含一个包含我们的策略和要求的简单联机指南。 <br/><br/> Microsoft 所采用的垃圾邮件筛选器和身份验证技术的概述。|
 |[Microsoft 支持](#microsoft-support)|提供有关传送问题的自助和升级支持。|
 |[反垃圾邮件 IP 除名门户](#anti-spam-ip-delist-portal)|一种提交 IP 除名请求的工具。在提交此请求前，发件人有责任确保任何源自可疑 IP 的后续邮件不是滥用的或恶意的。|
-|[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|阻止从 Exchange Online 发送垃圾邮件或其他不必要的邮件，并阻止 Internet 和邮件系统出现混乱。|
+|[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|阻止从 Exchange Online 发送垃圾邮件和其他不需要的邮件，并将 internet 和邮件系统打乱。|
 
 ## <a name="microsoft-support"></a>Microsoft 支持
 
-Microsoft 为在向 Microsoft 365 收件箱发送邮件时遇到问题的用户提供多种支持选项。 我们建议您：
+Microsoft 为在向 Microsoft 365 的收件人发送邮件时遇到问题的用户提供多种支持选项。 我们建议您：
 
 - 在您接收到的任何未送达报告中，按照说明执行操作。
 

@@ -27,12 +27,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和团队网站进行文件存储和共享。
-ms.openlocfilehash: 98fc168e42fea50ae21914d5f44e403ae459c1d9
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 7eb9ece0408fc495938c319390267790b01a2b89
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165213"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208182"
 ---
 # <a name="set-up-file-storage-and-sharing"></a>设置文件存储和共享
 
@@ -144,7 +144,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
     ![在此屏幕上更改本地文件夹](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
-6. 工作组网站中的文件将显示在 "文件资源管理器" 的左侧窗格中组织的名称下。 OneDrive 中的文件将显示在 "OneDrive- \<组织\>名称" 下。
+6. 工作组网站中的文件将显示在 "文件资源管理器" 的左侧窗格中组织的名称下。 OneDrive 中的文件将显示在 "OneDrive- \< 组织名称" 下。 \>
 
     ![查看您的本地文件夹中的同步内容](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
@@ -185,7 +185,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 转到 "**设置** \> " <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">"设置" 页。</a>
+2. 转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**组织设置**</a>" 页。
 
 3. 在 "**服务**" 选项卡上，选择 **"网上 Office**"。
 

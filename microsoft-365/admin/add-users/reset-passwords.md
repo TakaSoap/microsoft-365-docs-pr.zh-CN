@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '了解如何在 Microsoft 365 for business 订阅中重置用户的密码。 '
-ms.openlocfilehash: 32d2d529ab4e2592556613b016231dbbd93458b3
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 0cd9bfe2b4f60ed0150e95f35d1f24994724ca60
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173514"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208194"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -79,13 +79,13 @@ ms.locfileid: "44173514"
 
 如果您忘记了密码但可以登录到 Microsoft 365，请使用这些步骤，因为例如，您的密码保存在浏览器中： 
     
-1. 在 **"我的帐户** > **个人信息**" 的右上角 >，选择您的姓名（图标）。 
+1. 在 **"我的帐户**  >  **个人信息**" 的右上角 >，选择您的姓名（图标）。 
           
 2. 在 "**联系人详细信息**" 下，仔细检查你的**备用电子邮件**是否准确，以及你是否提供了移动电话号码。 如果不是，请立即更改。 
         
-3. 注销：在右上角选择您的姓名（上面的图像中显示为 " **Diane**"） \> **"注销"。** 
+3. 注销：在右上角选择您的姓名（上面的图像中显示为 " **Diane**"） " \> **注销"**。 
         
-4. 现在再次登录：在\> **下一步** \>键入您的用户名，然后选择 "**忘记了密码**"。 
+4. 现在再次登录：在 \> **下一步**键入您的用户名 \> ，然后选择 "**忘记了密码**"。 
     
 5. 按照向导中的步骤重置密码。 它使用您的备用联系人信息来验证您是否是正确的重置密码的人。 
     
@@ -100,7 +100,7 @@ ms.locfileid: "44173514"
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同时为组织中的所有人重置所有业务密码
 <a name="bkmk_forgot"> </a>
 
-这些步骤适用于拥有数十位用户的企业。如果你的用户成百上千，请参阅下一节：批量重置密码。
+这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一节：批量重置密码（最多为40个用户一次）。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
