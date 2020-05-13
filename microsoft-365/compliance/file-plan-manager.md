@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: 4c9cbdefe538a0ed2593ec74dfcee1010fd9b818
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 78a012b4ecc3401a664fba5e270e7cd67a5dce49
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43708437"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208116"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -35,11 +35,11 @@ ms.locfileid: "43708437"
 
 ## <a name="accessing-file-plan-manager"></a>访问文件计划管理器
 
-若要访问文件计划管理器，必须具有以下管理员角色之一：
+要访问文件计划管理器，您必须具有以下管理员角色之一：
     
-    - 保留管理者
-    
-    - 仅拥有查看权限的保留管理者
+- 保留管理者
+
+- 仅拥有查看权限的保留管理者
 
 ## <a name="default-retention-labels-and-label-policy"></a>默认保留标签和标签策略
 

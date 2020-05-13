@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
-ms.openlocfilehash: f3cf16da0c7623c1cdd7f90272fa4b11126dcc25
-ms.sourcegitcommit: 4f2129b161eed3f9ddec47494fa19a2a7a553e4f
+ms.openlocfilehash: 447777c4cf3eb8532e30977d97694445647889d4
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43805190"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208076"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -77,7 +77,7 @@ ms.locfileid: "43805190"
 - 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“**权限**”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
   > [!IMPORTANT]
-  > 如果在安全与合规中心中的“**权限**”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
+  > 如果在安全与合规中心中的“权限”**** 页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
 - 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
 
@@ -105,7 +105,7 @@ ms.locfileid: "43805190"
 
   有关详细信息，请参阅[关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“**审核日志搜索**”页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
+- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog**。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“审核日志搜索”**** 页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
 
   有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
@@ -175,7 +175,7 @@ ms.locfileid: "43805190"
 
     a. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。
 
-    审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“**已审核的活动**”选项卡可查看每个不同服务中每个活动的描述。
+    审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”**** 选项卡可查看每个不同服务中每个活动的描述。
 
     b. “**开始日期**”和“**结束日期**”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
 
@@ -275,7 +275,7 @@ ms.locfileid: "43805190"
 
    - “**保存加载的结果**”：选择此选项可仅导出“**审核日志搜索**”页上“**结果**”之下显示的条目。 下载的 CSV 文件包含（“日期”、“用户”、“活动”、“项目”和“详细信息”）页面上显示的相同列（和数据）。 包含审核日志项目中更多信息的 CSV 文件包括一额外列（名为“**更多**”）。 由于你将导出“**审核日志搜索**”页上已加载（且可查看）的相同结果，因此最多可导出 5,000 个条目。
 
-   - “**下载所有结果**”：选择此选项以导出符合搜索条件的审核日志中所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“**审核日志搜索**”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“**AuditData**”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
+   - “下载所有结果”****：选择此选项可以导出符合搜索条件的审核日志中的所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“**审核日志搜索**”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“**AuditData**”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
 
      > [!IMPORTANT]
      > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出的条目超出此限制，请尝试使用日期范围以减少审核日志项目。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
@@ -288,9 +288,9 @@ ms.locfileid: "43805190"
 
   拆分“**AuditData**”列后，你可以对“**操作**”列进行筛选以显示特定类型活动的详细属性。
 
-- “**下载所有结果**”：选项可将原始数据从审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“**保存已加载结果**”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“**操作**”列中的活动值可能与显示在“**审核日志搜索**”页上的“**活动**”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
+- “下载所有结果”**** 选项可将原始数据从审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“**保存已加载结果**”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“**操作**”列中的活动值可能与显示在“**审核日志搜索**”页上的“**活动**”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
 
-- 下载（包含来自不同服务的事件的）搜索查询的所有结果时，CSV 文件中的“**AuditData**”列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
+- 下载（包含来自不同服务的事件的）搜索查询的所有结果时，CSV 文件中的“AuditData”**** 列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
 
   有关下载所有结果时 CSV 文件的“**AuditData**”列中所列各个属性的说明以及每个属性适用的服务，请参阅[审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
@@ -500,12 +500,12 @@ ms.locfileid: "43805190"
 |已添加豁免用户代理|ExemptUserAgentSet|SharePoint 或全局管理员向 SharePoint 管理中心的豁免用户代理列表添加了用户代理。|
 |已添加地理位置管理员|GeoAdminAdded|SharePoint 或全局管理员已将用户添加为地理位置管理员。|
 |已允许用户创建组|AllowGroupCreationSet|网站管理员或所有者向网站添加权限级别，允许分配了该权限的用户为网站创建组。 |
-|已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [OneDrive 和 SharePoint Online 的 Multi-Geo 功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已更改共享策略|SharingPolicyChanged|SharePoint 或全局管理员使用 Microsoft 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中的共享策略设置所做的任何更改。 已更改的策略在事件记录详细属性的 **ModifiedProperties** 字段中标识。|
 |已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Microsoft 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
 |已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。 你可以指定免于接收要索引的整个网页的用户代理。 这意味着，当指定为豁免的用户代理遇到 InfoPath 表单时，表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。|
 |已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。|
-|已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心中的“记录管理”页上创建新“发送至”连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
 |已创建网站集|SiteCollectionCreated|SharePoint 或全局管理员在 SharePoint Online 组织中创建网站集，或者用户设置其 OneDrive for Business 网站。|
 |已删除孤立中心网站|HubSiteOrphanHubDeleted|SharePoint 或全局管理员已删除孤立中心网站，它是没有任何关联网站的中心网站。 孤立中心可能是由删除原始中心网站引起的。|
@@ -521,7 +521,7 @@ ms.locfileid: "43805190"
 |已删除允许的数据位置|AllowedDataLocationDeleted|SharePoint 或全局管理员在多地理环境中删除了允许的数据位置。|
 |已删除地理位置管理员|GeoAdminDeleted|SharePoint 或全局管理员已删除作为地理位置管理员的用户。|
 |已重命名网站|SiteRenamed|网站管理员或所有者重命名网站|
-|已计划网站地域移动|SiteGeoMoveScheduled|SharePoint 或全局管理员成功计划 SharePoint 或 OneDrive 网站地域移动。 多地理位置功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
+|已计划网站地域移动|SiteGeoMoveScheduled|SharePoint 或全局管理员成功计划 SharePoint 或 OneDrive 网站地域移动。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已设置主机网站|HostSiteSet|SharePoint 或全局管理员更改了用于托管个人或 OneDrive for Business 网站的指定网站。|
 |已为地理位置设置存储配额|GeoQuotaAllocated|SharePoint 或全局管理员为多地理环境中的地理位置配置了存储配额。|
 |已从中心网站脱离网站|HubSiteUnjoined|网站所有者解除其网站与中心网站的关联。|
@@ -561,7 +561,7 @@ ms.locfileid: "43805190"
 
 ### <a name="sway-activities"></a>Sway 活动
 
-下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、故事和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
+下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、整理和共享意见、案例和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -771,7 +771,7 @@ ms.locfileid: "43805190"
 
 ### <a name="yammer-activities"></a>Yammer 活动
 
-下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“**活动**”列表中的“**显示所有活动的结果**”。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
+下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“活动”**** 列表中的“显示所有活动的结果”****。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -817,7 +817,7 @@ ms.locfileid: "43805190"
 
 ### <a name="quarantine-activities"></a>隔离活动
 
-下表列出了可在审核日志中搜索的隔离活动。 有关隔离详细信息，请参阅 [Office 365 中的已隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
+下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -899,7 +899,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
 
-管理员（或已分配到管理权限的用户）在 Exchange Online 组织中做出更改时，Exchange 管理员审核日志记录（Office 365 中默认启用此功能）将在审核日志中记录事件。 通过使用 Exchange 管理中心所做的更改或通过运行 Exchange Online PowerShell 中的某个 cmdlet 所做的更改会记录在 Exchange 管理员审核日志中。 以动词 **Get-**、**Search-** 或 **Test-** 开头的 Cmdlet 未记录在审核日志中。 有关 Exchange 中管理员审核日志记录的更多详细信息，请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
+管理员（或已分配有管理权限的用户）在 Exchange Online 组织中做出更改时，Exchange 管理员审核日志记录（Office 365 中默认启用此功能）将在审核日志中记录事件。 通过使用 Exchange 管理中心所做的更改或通过运行 Exchange Online PowerShell 中的某个 cmdlet 所做的更改会记录在 Exchange 管理员审核日志中。 以动词 **Get-**、**Search-** 或 **Test-** 开头的 Cmdlet 未记录在审核日志中。 有关 Exchange 中管理员审核日志记录的更多详细信息，请参阅[管理员审核日志记录](https://go.microsoft.com/fwlink/p/?LinkID=619225)。
 
 > [!IMPORTANT]
 > 某些 Exchange Online cmdlet 未记录在 Exchange 管理员审核日志中（或审核日志中）。 其中许多 cmdlet 都与维护 Exchange Online 服务有关，并由 Microsoft 数据中心人员或服务帐户运行。 未记录这些 cmdlet，因为它们会导致大量“嘈杂”的审核事件。 如果存在未经审核的 Exchange Online cmdlet，请向[安全与合规用户之声论坛](https://office365.uservoice.com/forums/289138-office-365-security-compliance)提交建议，并请求进行审核。 你还可以向 Microsoft 支持部门提交设计更改请求 (DCR)。
@@ -922,7 +922,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
 
-   请记住，Exchange 管理员审核日志以及审核日志中记录了相同的 Exchange 管理员活动。
+   请注意，Exchange 管理员审核日志以及审核日志中记录了相同的 Exchange 管理员活动。
 
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
@@ -937,7 +937,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核记录在事件发生后的多长时间内可用？**
 
-发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[开始之前](#before-you-begin)部分中的表格，其中显示了各种服务提供事件审核记录所需的时间。
+发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[准备工作](#before-you-begin)部分中的表格，其中显示了各种服务提供事件审核记录所需的时间。
 
 **审核记录将保留多长时间？**
 
@@ -953,7 +953,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **是否需要在每个要捕获审核日志的服务中单独启用审核？**
 
-在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[开始之前](#before-you-begin)部分所述）。
+在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[准备工作](#before-you-begin)部分所述）。
 
 **审核服务是否支持记录的重复数据删除？**
 

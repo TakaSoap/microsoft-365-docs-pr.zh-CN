@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: 9b4f203f11e72b4459c9fa35d3e4fdca544cffbb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209579"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213432"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -44,7 +44,7 @@ ms.locfileid: "44209579"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 必须先分配有权限，然后才能执行这些过程。 若要修改默认连接筛选器策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对默认连接筛选器策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -90,7 +90,7 @@ ms.locfileid: "44209579"
 
 3. 策略设置显示在打开的下拉菜单中。
 
-## <a name="use-exchange-online-powershell-or-standalone-exchange-online-protection-powershell-to-modify-the-default-connection-filter-policy"></a>使用 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 修改默认连接筛选器策略
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 修改默认连接筛选器策略
 
 使用以下语法：
 
@@ -134,7 +134,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - 在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反垃圾邮件**"。 \> 单击 "**连接筛选器策略（始终打开**）" 旁边的下拉箭头，并验证设置。
 
-- 在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，运行以下命令并验证设置：
+- 在 Exchange Online PowerShell 或独立 EOP PowerShell 中，运行以下命令并验证设置：
 
   ```powershell
   Get-HostedConnectionFilterPolicy -Identity Default

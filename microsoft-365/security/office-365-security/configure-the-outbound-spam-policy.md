@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中查看、创建、修改和删除出站垃圾邮件策略。
-ms.openlocfilehash: 9970956c2d05a47032cd47b867b8b4e9e92abc29
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3f34c1ad27af1e0df2d2e2385f095da53e1cc318
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209567"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213028"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -37,7 +37,7 @@ EOP 使用出站垃圾邮件策略作为组织的整体防御垃圾邮件的一�
 
 您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用邮箱在 Exchange Online 中配置出站垃圾邮件策略; 独立 EOP PowerShell for 组织，没有 Exchange Online 邮箱）。
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>Security & 合规性中心与 Exchange online PowerShell 或 Exchange Online Protection PowerShell 中的出站垃圾邮件策略
+## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>安全 & 合规性中心 vs PowerShell 中的出站垃圾邮件策略
 
 EOP 中的出站垃圾邮件策略的基本元素为：
 
@@ -53,7 +53,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 从安全 & 合规中心删除出站垃圾邮件策略时，将删除出站垃圾邮件筛选器规则和关联的出站垃圾邮件筛选器策略。
 
-在 Exchange Online PowerShell 或独立 Exchange Online Protection PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \* -HostedOutboundSpamFilterPolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \* -HostedOutboundSpamFilterRule** cmdlet 管理出站垃圾邮件筛选器规则。
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，出站垃圾邮件筛选器策略和出站垃圾邮件筛选器规则之间的差异很明显。 您可以使用** \* -HostedOutboundSpamFilterPolicy** cmdlet 管理出站垃圾邮件筛选器策略，还可以使用** \* -HostedOutboundSpamFilterRule** cmdlet 管理出站垃圾邮件筛选器规则。
 
 - 在 PowerShell 中，先创建出站垃圾邮件筛选器策略，然后创建出站垃圾邮件筛选器规则，以标识应用该规则的策略。
 
@@ -77,7 +77,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -101,7 +101,12 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 4. Optional展开 "**通知**" 部分，配置应接收可疑出站电子邮件的副本和通知的其他用户：
 
-   - 向**特定人员发送可疑的出站电子邮件的副本**：此设置将指定的用户添加为可疑的出站邮件的密件抄送收件人。 要启用此设置，请执行以下操作：
+   - 向**特定人员发送可疑的出站电子邮件的副本**：此设置将指定的用户添加为可疑的出站邮件的密件抄送收件人。
+
+     > [!NOTE]
+     > 此设置仅适用于默认的出站垃圾邮件策略。 它在您创建的自定义出站垃圾邮件策略中不起作用。
+
+     要启用此设置，请执行以下操作：
 
      a. 选中该复选框以启用该设置。
 
@@ -122,7 +127,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
    - **如果发件人因发送出站垃圾邮件而被阻止，请通知特定人员**：
 
      > [!NOTE]
-     > 当用户因超出 "**收件人限制**" 部分中的限制而被阻止时，名为 "**用户限制发往发送电子邮件**" 的默认[通知策略](../../compliance/alert-policies.md)将已向**TenantAdmins** （**全局管理员**）组的成员发送电子邮件通知。 我们建议您在出站垃圾邮件策略中使用通知策略而不是此设置来通知管理员和其他用户。 有关说明，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
+     > 当用户因超出 "**收件人限制**" 部分中的限制而被阻止时，名为 "**用户限制发往发送电子邮件**" 的默认[通知策略](../../compliance/alert-policies.md)将已向**TenantAdmins** （**全局管理员**）组的成员发送电子邮件通知。 我们建议您在出站垃圾邮件策略中使用通知策略而不是此设置来通知管理员和其他用户。 有关说明，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 <br/><br/> 此设置仅适用于默认的出站垃圾邮件策略。 它在您创建的自定义出站垃圾邮件策略中不起作用。
 
      要启用此设置，请执行以下操作：
 
@@ -146,7 +151,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
    > [!NOTE]
    > 这些设置仅适用于基于云的邮箱。
-     
+
    - **每个用户的最大收件人数**
 
      有效的值为0到10000。 默认值为0，表示使用服务默认值。 有关详细信息，请参阅[在 Microsoft 365 选项中发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
@@ -263,7 +268,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 无法删除默认策略。
 
-## <a name="use-exchange-online-powershell-or-exchange-online-protection-powershell-to-configure-outbound-spam-policies"></a>使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 配置出站垃圾邮件策略
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置出站垃圾邮件策略
 
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>使用 PowerShell 创建出站垃圾邮件策略
 

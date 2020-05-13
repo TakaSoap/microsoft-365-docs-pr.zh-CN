@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）中的欺骗智能，可以在其中允许或阻止特定的欺骗性发件人。
-ms.openlocfilehash: 607c11d82a145828af736d8d1ecab1dff367f94d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 9cbbc263b05e68cc60de31eea35df7086ea15748
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206636"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213336"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
@@ -56,7 +56,7 @@ ms.locfileid: "44206636"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。 若要直接转到 "**反钓鱼**" 页面，请使用 <https://protection.office.com/antiphishing> 。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立 Exchange Online Protection，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
 
 - 必须先分配有权限，然后才能执行这些过程。 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对欺骗智能策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（Office 365 ATP）的组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: efecd830db7ed10210605e31aa0ded2599de1b72
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208883"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213456"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -31,7 +31,7 @@ ATP 反网络钓鱼策略是[Office 365 高级威胁防护](office-365-atp.md)�
 
 有关在 Exchange Online Protection 组织（即没有 Office 365 ATP 的 Microsoft 365 组织）中提供的更多限制的防网络钓鱼策略的信息，请参阅[在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Security & 合规性中心与 Exchange Online PowerShell 中的 ATP 反网络钓鱼策略
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Security & 合规性中心 vs PowerShell 中的 ATP 反网络钓鱼策略
 
 ATP 反网络钓鱼策略的基本要素为：
 

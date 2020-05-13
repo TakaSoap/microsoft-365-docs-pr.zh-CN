@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ee36f1fb1b44d2643aeb73f35ae9eb571dd0aa35
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 8a988cb053a5869c9cb57306fc0c78cdd7ba5ccc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633307"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208813"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>适用于 Microsoft 365 的责任准备情况清单
 
@@ -104,10 +104,10 @@ ms.locfileid: "43633307"
 |***信息分类 (6.5.1)***|客户应该明确地将个人数据视为数据分类方案的一部分。|Office 365 中支持个人数据分类的功能。<br>- *符合 GDPR 的 Office 365 信息保护* [[5](gdpr-arc-Office365.md#5)]，请参阅“为个人数据构建分类架构”<br>- [合规性分数](compliance-score.md)中的“6.5.1 信息分类”|(39)(1)(b)|
 |***管理可移动媒体 (6.5.2)***|客户应确定使用可移动媒体的内部策略，因为这涉及个人数据保护（例如，加密设备）。|Microsoft 服务如何保护任何可移动媒体上的个人信息安全性。<br>- *FedRAMP 中等 FedRAMP 系统安全计划* [[3](gdpr-arc-Office365.md#3)]，请参阅“13.10 媒体保护 (MP)”<br>- [合规性分数](compliance-score.md)中的“管理可移动媒体”|(32)(1)(a)、(5)(1)(f)|
 |***物理媒体传输 (6.5.3)***|客户应确定在传输物理媒体（如加密）时保护个人数据的内部策略。| Microsoft 服务如何在物理媒体的任何传输中保护个人数据。<br>- FedRAMP 中等 FedRAMP 系统安全计划 [[3](gdpr-arc-Office365.md#3)]，请参阅“13.10 媒体保护 (MP)”<br>- [合规性分数](compliance-score.md)中的“6.5.3 物理媒体传输”|(32)(1)(a)、(5)(1)(f)|
-|***用户访问管理 (6.6.1)***|客户应了解他们在使用的服务中对访问控制负有的职责，并使用可用工具管理相应职责。|Microsoft 服务提供的用于帮助强制执行访问控制的工具。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)<br>- [合规性分数](compliance-score.md)中的 6.6.1|(5)(1)(f)|
-|***用户注册和注销 (6.6.2)***|客户应使用他们可用的工具来管理其所使用的服务中的用户注册和注销。|Microsoft 服务提供的用于帮助强制执行访问控制的工具。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)<br>- [合规性分数](compliance-score.md)中的“6.6.2 用户注册和注销”|(5)(1)(f)|
-|***用户访问权限预配 (6.6.3)***|客户应该使用他们可用的工具在其所使用的服务内管理用户配置文件，尤其是管理针对个人数据的授权访问。|Microsoft 服务如何支持对个人数据的正式访问控制，包括用户 ID、角色、应用程序访问权限以及用户的注册和注销。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)<br>- 使用租户限制管理对 SaaS 云应用程序的访问权限 [[15](gdpr-arc-Office365.md#15)]<br>- [合规性分数](compliance-score.md)中的“用户访问预配”|(5)(1)(f)|
-|***特权访问管理 (6.6.4)***|客户应该使用他们可用的工具在其所使用的服务内管理用户 ID，以促进跟踪访问（尤其针对个人数据）。|Microsoft 服务如何支持对个人数据执行正式访问控制，包括用户 ID、角色以及用户注册和注销。<br>- Office 365 安全文档 [2] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e)<br>- 使用租户限制管理对 SaaS 云应用程序的访问权限 [15]<br>- [合规性分数](compliance-score.md)中的“6.6.4 管理特权访问”|(5)(1)(f)|
+|***用户访问管理 (6.6.1)***|客户应了解他们在使用的服务中对访问控制负有的职责，并使用可用工具管理相应职责。|Microsoft 服务提供的用于帮助强制执行访问控制的工具。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)<br>- [合规性分数](compliance-score.md)中的 6.6.1|(5)(1)(f)|
+|***用户注册和注销 (6.6.2)***|客户应使用他们可用的工具来管理其所使用的服务中的用户注册和注销。|Microsoft 服务提供的用于帮助强制执行访问控制的工具。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)<br>- [合规性分数](compliance-score.md)中的“6.6.2 用户注册和注销”|(5)(1)(f)|
+|***用户访问权限预配 (6.6.3)***|客户应该使用他们可用的工具在其所使用的服务内管理用户配置文件，尤其是管理针对个人数据的授权访问。|Microsoft 服务如何支持对个人数据的正式访问控制，包括用户 ID、角色、应用程序访问权限以及用户的注册和注销。<br>- Office 365 安全文档 [[2](gdpr-arc-Office365.md#2)] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)<br>- 使用租户限制管理对 SaaS 云应用程序的访问权限 [[15](gdpr-arc-Office365.md#15)]<br>- [合规性分数](compliance-score.md)中的“用户访问预配”|(5)(1)(f)|
+|***特权访问管理 (6.6.4)***|客户应该使用他们可用的工具在其所使用的服务内管理用户 ID，以促进跟踪访问（尤其针对个人数据）。|Microsoft 服务如何支持对个人数据执行正式访问控制，包括用户 ID、角色以及用户注册和注销。<br>- Office 365 安全文档 [2] 请参阅[保护 Office 365 中对数据和服务的访问权限](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services)<br>- 使用租户限制管理对 SaaS 云应用程序的访问权限 [15]<br>- [合规性分数](compliance-score.md)中的“6.6.4 管理特权访问”|(5)(1)(f)|
 |***安全登录过程 (6.6.5)***|客户应利用服务中提供的机制来确保必要时为其用户提供安全登录功能。|Microsoft 服务如何支持与个人数据相关的内部访问控制策略。<br>- 谁以及根据哪些条款可以访问你的数据 [[6](gdpr-arc-Office365.md#6)]<br>- [合规性分数](compliance-score.md)中的“6.6.5 安全登录过程”|(5)(1)(f)|
 |***加密 (6.7)***|客户应确定哪些数据需要加密，以及他们正在使用的服务是否提供这种功能。客户应根据需要通过可用的工具来使用加密。|Microsoft 服务如何支持加密和假名化，以减少个人数据处理风险。<br>- FedRAMP 中等 FedRAMP 系统安全计划 (SSP) 请参阅 *Cosmos* pp29<br>- [合规性分数](compliance-score.md)中的“6.7 加密”|(32)(1)(a)|
 |***安全处置或重新使用的设备 (6.8.1)***|在客户使用云计算服务（PaaS、SaaS、IaaS）的情况下，他们应了解云提供商如何确保在将存储空间分配给其他客户之前将个人数据从该空间中清除。|在设备转移或重新使用之前，Microsoft 服务如何确保个人数据从存储设备中清除。<br>- FedRAMP 中等 FedRAMP 系统安全计划 [[3](gdpr-arc-Office365.md#3)]，请参阅“13.10 媒体保护 (MP)”<br>- [合规性分数](compliance-score.md)中的“6.8.1 安全处置或重用设备”|(5)(1)(f)|
@@ -134,7 +134,7 @@ ms.locfileid: "43633307"
 |:-----|:-----|
 |**ID**|**说明/链接**|
 | 1 <a name="1"> </a> | [联机服务条款](https://aka.ms/ost) |
-| 2 <a name="2"> </a> | [Office 365 安全文档](https://support.office.com/article/protect-access-to-data-and-services-in-office-365-a6ef28a4-2447-4b43-aae2-f5af6d53c68e) |
+| 2 <a name="2"> </a> | [Office 365 安全文档](https://docs.microsoft.com/microsoft-365/compliance/protect-access-to-data-and-services) |
 | 3 <a name="3"> </a> | [FedRAMP 中等 FedRAMP 系统安全计划 (SSP)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=053666de-e359-43ef-a7bb-3cf379208ed8&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_FedRAMP_Reports) |
 | 4 <a name="4"> </a> | [Microsoft 云安全策略](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=c83d1345-0cff-4beb-a521-27b837ed271a&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 5 <a name="5"> </a> | [针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) |
@@ -148,7 +148,7 @@ ms.locfileid: "43633307"
 | 13 <a name="13"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md) |
 | 14 <a name="14"> </a> | [Office 365 ISM 手册](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [使用租户限制管理对 SaaS 云应用程序的访问权限](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
-| 16 <a name="16"> </a> | [在 Office 365 安全合规中心搜索审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c) |
+| 16 <a name="16"> </a> | [在 Office 365 安全合规中心搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) |
 | 17 <a name="17"> </a> | [Microsoft 云中的加密](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=ec66d938-6eb4-4d7d-b8c3-2168573bb534&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers) |
 | 18 <a name="18"> </a> | [Microsoft 数据保护官员](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) |
 

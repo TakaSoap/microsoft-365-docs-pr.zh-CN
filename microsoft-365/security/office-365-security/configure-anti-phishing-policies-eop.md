@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Exchange online Protection （EOP）组织（带有或不包含 Exchange Online 邮箱）中可用的反网络钓鱼策略。
-ms.openlocfilehash: 076c8aa8a0111643ab0f43bcd5f6ff21f82277b2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5c2e036c075072056e7783ca4dc5aeb1289d827a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208895"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213384"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反网络钓鱼策略
 
@@ -31,7 +31,7 @@ ms.locfileid: "44208895"
 
 有关创建和修改 Office 365 高级威胁防护（Office 365 ATP）中提供的更高级 ATP 反钓鱼策略的信息，请参阅[CONFIGURE ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
-## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-exchange-online-powershell"></a>Security & 合规性中心与 Exchange Online PowerShell 中的反网络钓鱼策略
+## <a name="anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>安全 & 合规性中心 vs PowerShell 中的反网络钓鱼策略
 
 反网络钓鱼策略的基本元素为：
 

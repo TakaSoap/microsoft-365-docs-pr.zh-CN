@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找符合一般数据保护条例 (GDPR) 的个人数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5634437e5212fca6a7caf768d5a66d99497de3c6
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036407"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208086"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -118,7 +118,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <td align="left"><p>查看是否存在以下类型的问题，确定查询准确性是否符合目标：</p>
 <p><li>许多误报</li></p>
 <p><li>缺少已知的数据实例</li></p>
-<p>请参阅<a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">从安全与合规中心导出内容搜索结果</a>。</p>
+<p>请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/export-search-results">从安全与合规中心导出内容搜索结果</a>。</p>
 <p>注意：如果使用的是 Mozilla Firefox 或 Chrome，可能需要先使用 Internet Explorer 或 Microsoft Edge 下载报告，才能安装所需的加载项。</p></td>
 </tr>
 </tbody>
