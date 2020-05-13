@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 你需要确保你的密码在整个组织中都强大并易于管理。
-ms.openlocfilehash: b4eb1861eb8d1c483972cf6a7c22a339dc1b0b36
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5c2567ee2027be2a84121fdad10ba873ec1c43
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637044"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214646"
 ---
 # <a name="step-2-secure-your-passwords"></a>第 2 步：保护密码安全
 
@@ -31,7 +31,7 @@ ms.locfileid: "43637044"
 
 *这是可选的，适用于 Microsoft 365 的 E3 和 E5 版本*
 
-所有用户都应使用 [Microsoft 的密码指南](https://www.microsoft.com/research/publication/password-guidance/)来创建用户帐户密码。
+所有用户都应使用 [Microsoft 的密码指南](https://www.microsoft.com/research/publication/password-guidance)来创建用户帐户密码。
 
 若要防止用户创建易于确定的密码，请使用 Azure AD 密码保护，该功能同时使用全局阻止密码列表和你指定的可选的自定义禁止密码列表。 例如，你可以指定特定于贵组织的术语，例如：
 

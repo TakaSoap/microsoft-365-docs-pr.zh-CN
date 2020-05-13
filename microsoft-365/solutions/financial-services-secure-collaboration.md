@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 f1.keywords: NOCSH
-ms.openlocfilehash: affaf7ee6d9251003aec084d73b501212ebeda40
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160455"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214692"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -216,7 +216,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 - 保留期到期时发生的情况（删除文档、启动处置评审或不执行任何操作）
 -  什么触发了保留期开始（创建日期、上次修改日期、标记日期或事件），并将文档或电子邮件标记为记录（这意味着不能编辑或删除）
 
-然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
+然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
  
 **证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
 
