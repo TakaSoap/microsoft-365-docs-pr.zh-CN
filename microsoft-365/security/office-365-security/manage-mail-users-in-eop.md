@@ -1,9 +1,9 @@
 ---
-title: 在 EOP 中管理邮件用户
+title: 在独立 EOP 中管理邮件用户
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -13,177 +13,273 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 了解如何管理 Exchange Online Protection （EOP）中的邮件用户，包括使用目录同步、EAC 和 PowerShell 管理用户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9a4555bf4b6a716839c327c692f0e44b590f8175
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035552"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208641"
 ---
-# <a name="manage-mail-users-in-eop"></a><span data-ttu-id="75806-103">在 EOP 中管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-103">Manage mail users in EOP</span></span>
+# <a name="manage-mail-users-in-standalone-eop"></a><span data-ttu-id="38ad3-103">在独立 EOP 中管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-103">Manage mail users in standalone EOP</span></span>
 
-<span data-ttu-id="75806-p101">定义邮件用户是管理 Exchange Online Protection (EOP) 服务的重要部分。在 EOP 中，您可以使用多种方法来管理用户：</span><span class="sxs-lookup"><span data-stu-id="75806-p101">Defining mail users is an important part of managing the Exchange Online Protection (EOP) service. There are several ways that you can manage users in EOP:</span></span>
-
-- <span data-ttu-id="75806-106">**使用目录同步管理邮件用户**：如果贵公司在本地 Active Directory 环境中已有用户帐户，您可以将这些帐户同步到 Azure Active Directory (AD)，其中，这些帐户的副本会存储在云中。</span><span class="sxs-lookup"><span data-stu-id="75806-106">**Use directory synchronization to manage mail users**: If your company has existing user accounts in an on-premises Active Directory environment, you can synchronize those accounts to Azure Active Directory (AD), where a copy of the accounts is stored in the cloud.</span></span> <span data-ttu-id="75806-107">将现有用户帐户同步到 Azure Active Directory 时，可以在 Exchange 管理中心（EAC）的 "**收件人**" 窗格中查看这些用户。</span><span class="sxs-lookup"><span data-stu-id="75806-107">When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC).</span></span> <span data-ttu-id="75806-108">建议使用目录同步。</span><span class="sxs-lookup"><span data-stu-id="75806-108">Using directory synchronization is recommended.</span></span>
-
-- <span data-ttu-id="75806-p103">**使用 EAC 管理邮件用户**：在 EAC 中直接添加和管理邮件用户。这是添加邮件用户最简单的方式，并且对于一次添加一个用户非常有用。</span><span class="sxs-lookup"><span data-stu-id="75806-p103">**Use the EAC to manage mail users**: Add and manage mail users directly in the EAC. This is the easiest way to add mail users and is useful for adding one user at a time.</span></span>
-
-- <span data-ttu-id="75806-111">**使用 PowerShell 管理邮件用户**：在 Exchange Online Protection PowerShell 中添加和管理邮件用户。</span><span class="sxs-lookup"><span data-stu-id="75806-111">**Use PowerShell to manage mail users**: Add and manage mail users by in Exchange Online Protection PowerShell.</span></span> <span data-ttu-id="75806-112">此方法可用于添加多个记录并创建脚本。</span><span class="sxs-lookup"><span data-stu-id="75806-112">This method is useful for adding multiple records and creating scripts.</span></span>
+<span data-ttu-id="38ad3-104">在独立的 Exchange Online Protection （EOP）组织中，如果组织没有 Exchange Online 邮箱，则邮件用户是用户帐户的基本类型。</span><span class="sxs-lookup"><span data-stu-id="38ad3-104">In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, mail users are the fundamental type of user account.</span></span> <span data-ttu-id="38ad3-105">邮件用户在独立 EOP 组织中具有帐户凭据，并且可以访问资源（已分配权限）。</span><span class="sxs-lookup"><span data-stu-id="38ad3-105">A mail user has account credentials in your standalone EOP organization, and can access resources (have permissions assigned).</span></span> <span data-ttu-id="38ad3-106">邮件用户的电子邮件地址是外部的（例如，在您的本地电子邮件环境中）。</span><span class="sxs-lookup"><span data-stu-id="38ad3-106">A mail user's email address is external (for example, in your on-premises email environment).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="75806-113">你可以在 Microsoft 365 管理中心添加用户，但这些用户不能用作邮件收件人。</span><span class="sxs-lookup"><span data-stu-id="75806-113">You can add users in the Microsoft 365 admin center, however these users can't be used as mail recipients.</span></span>
+> <span data-ttu-id="38ad3-107">当您创建邮件用户时，相应的用户帐户在 Microsoft 365 管理中心中可用。</span><span class="sxs-lookup"><span data-stu-id="38ad3-107">When you create a mail user, the corresponding user account is available in the Microsoft 365 admin center.</span></span> <span data-ttu-id="38ad3-108">在 Microsoft 365 管理中心创建用户帐户时，不能使用该帐户来创建邮件用户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-108">When you create a user account in the Microsoft 365 admin center, you can't use that account to create a mail user.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="75806-114">开始之前</span><span class="sxs-lookup"><span data-stu-id="75806-114">Before you begin</span></span>
+<span data-ttu-id="38ad3-109">在独立 EOP 中创建和管理邮件用户的建议方法是使用目录同步，如本主题后面的[使用目录同步管理邮件用户](#use-directory-synchronization-to-manage-mail-users)一节中所述。</span><span class="sxs-lookup"><span data-stu-id="38ad3-109">The recommended method to create and manage mail users in standalone EOP is to use directory synchronization as described in the [Use directory synchronization to manage mail users](#use-directory-synchronization-to-manage-mail-users) section later in this topic.</span></span>
 
-- <span data-ttu-id="75806-115">若要打开 Exchange 管理中心，请参阅 exchange [Online Protection 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="75806-115">To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
+<span data-ttu-id="38ad3-110">对于具有少量用户的独立 EOP 组织，可以在 Exchange 管理中心（EAC）或独立 EOP PowerShell 中添加和管理邮件用户，如本主题中所述。</span><span class="sxs-lookup"><span data-stu-id="38ad3-110">For standalone EOP organizations with a small number of users, you can add and manage mail users in the Exchange admin center (EAC) or in standalone EOP PowerShell as described in this topic.</span></span>
 
-- <span data-ttu-id="75806-p105">您必须先获得权限，然后才能执行此过程或多个过程。若要查看所需的权限，请参阅 [EOP 中的功能权限](feature-permissions-in-eop.md)主题中的"用户、联系人和角色组"条目。</span><span class="sxs-lookup"><span data-stu-id="75806-p105">You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Users, Contacts, and Role Groups" entry in [Feature permissions in EOP](feature-permissions-in-eop.md).</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="38ad3-111">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="38ad3-111">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="75806-118">请注意，在使用 Exchange Online Protection PowerShell cmdlet 创建邮件用户时，您可能会遇到限制。</span><span class="sxs-lookup"><span data-stu-id="75806-118">Be aware that when creating mail users by using Exchange Online Protection PowerShell cmdlets, you may encounter throttling.</span></span>
+- <span data-ttu-id="38ad3-112">若要打开 Exchange 管理中心（EAC），请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-112">To open the Exchange admin center (EAC), see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).</span></span>
 
-- <span data-ttu-id="75806-119">本主题中的 PowerShell 命令使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。</span><span class="sxs-lookup"><span data-stu-id="75806-119">The PowerShell commands in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
+- <span data-ttu-id="38ad3-113">若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-113">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
 
-- <span data-ttu-id="75806-120">若要了解如何使用 Windows PowerShell 连接到 Exchange Online Protection，请参阅[使用 Remote PowerShell 连接到 Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="75806-120">To learn how to use Windows PowerShell to connect to Exchange Online Protection, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).</span></span>
+- <span data-ttu-id="38ad3-114">当您在 EOP PowerShell 中创建邮件用户时，您可能会遇到限制。</span><span class="sxs-lookup"><span data-stu-id="38ad3-114">When you create mail users in EOP PowerShell, you might encounter throttling.</span></span> <span data-ttu-id="38ad3-115">此外，EOP PowerShell cmdlet 使用一种批处理方法，该方法会导致几分钟的传播延迟，然后才会显示命令的结果。</span><span class="sxs-lookup"><span data-stu-id="38ad3-115">Also, the EOP PowerShell cmdlets use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.</span></span>
 
-- <span data-ttu-id="75806-121">有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="75806-121">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
+- <span data-ttu-id="38ad3-116">必须先分配有权限，然后才能执行这些过程。</span><span class="sxs-lookup"><span data-stu-id="38ad3-116">You need to be assigned permissions before you can perform these procedures.</span></span> <span data-ttu-id="38ad3-117">具体来说，您需要 "邮件收件人创建（创建）" 和 "邮件收件人（修改）" 角色，默认情况下这些角色分配给 OrganizationManagement （全局管理员）和 RecipientManagement 角色组。</span><span class="sxs-lookup"><span data-stu-id="38ad3-117">Specifically, you need the Mail Recipient Creation (create) and Mail Recipients (modify) roles, which are assigned to the OrganizationManagement (global admins) and RecipientManagement role groups by default.</span></span> <span data-ttu-id="38ad3-118">有关详细信息，请参阅[独立 EOP 中的权限](feature-permissions-in-eop.md)和[使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-118">For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).</span></span>
+
+- <span data-ttu-id="38ad3-119">有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-119">For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).</span></span>
 
 > [!TIP]
-> <span data-ttu-id="75806-122">是否有任何疑问？</span><span class="sxs-lookup"><span data-stu-id="75806-122">Having problems?</span></span> <span data-ttu-id="75806-123">在[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛中寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="75806-123">Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
+> <span data-ttu-id="38ad3-120">是否有任何疑问？</span><span class="sxs-lookup"><span data-stu-id="38ad3-120">Having problems?</span></span> <span data-ttu-id="38ad3-121">在 Exchange 论坛中寻求帮助。</span><span class="sxs-lookup"><span data-stu-id="38ad3-121">Ask for help in the Exchange forums.</span></span> <span data-ttu-id="38ad3-122">访问[Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)论坛。</span><span class="sxs-lookup"><span data-stu-id="38ad3-122">Visit the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.</span></span>
 
-## <a name="use-directory-synchronization-to-manage-mail-users"></a><span data-ttu-id="75806-124">使用目录同步管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-124">Use directory synchronization to manage mail users</span></span>
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a><span data-ttu-id="38ad3-123">使用 Exchange 管理中心管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-123">Use the Exchange admin center to manage mail users</span></span>
 
-<span data-ttu-id="75806-125">本节提供了有关使用目录同步管理电子邮件用户的信息。</span><span class="sxs-lookup"><span data-stu-id="75806-125">This section provides information about managing email users by using directory synchronization.</span></span>
+### <a name="use-the-eac-to-create-mail-users"></a><span data-ttu-id="38ad3-124">使用 EAC 创建邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-124">Use the EAC to create mail users</span></span>
 
-<span data-ttu-id="75806-126">**注意**：</span><span class="sxs-lookup"><span data-stu-id="75806-126">**Notes**:</span></span>
+1. <span data-ttu-id="38ad3-125">在 EAC 中，转到 "**收件人**" " \> **联系人**"</span><span class="sxs-lookup"><span data-stu-id="38ad3-125">In the EAC, go to **Recipients** \> **Contacts**</span></span>
 
-- <span data-ttu-id="75806-127">如果使用目录同步来管理收件人，您仍可以在 Microsoft 365 管理中心中添加和管理用户，但不会将其与本地 Active Directory 同步。</span><span class="sxs-lookup"><span data-stu-id="75806-127">If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory.</span></span> <span data-ttu-id="75806-128">这是因为目录同步仅将收件人**从**本地 Active directory 同步**到**云。</span><span class="sxs-lookup"><span data-stu-id="75806-128">This is because directory synchronization only syncs recipients **from** your on-premises Active Directory **to** the cloud.</span></span>
+2. <span data-ttu-id="38ad3-126">单击 "**新建** ![ 新图标" ](../../media/ITPro-EAC-AddIcon.png) 。</span><span class="sxs-lookup"><span data-stu-id="38ad3-126">Click **New** ![New icon](../../media/ITPro-EAC-AddIcon.png).</span></span> <span data-ttu-id="38ad3-127">在打开的 "**新建邮件用户**" 页上，配置以下设置。</span><span class="sxs-lookup"><span data-stu-id="38ad3-127">In the **New mail user** page that opens, configure the following settings.</span></span> <span data-ttu-id="38ad3-128">使用标记为的设置 <sup>\*</sup> 是必需的。</span><span class="sxs-lookup"><span data-stu-id="38ad3-128">Settings marked with an <sup>\*</sup> are required.</span></span>
 
-- <span data-ttu-id="75806-129">建议使用目录同步来实现以下功能：</span><span class="sxs-lookup"><span data-stu-id="75806-129">Directory synchronization is recommended for use with the following features:</span></span>
+   - <span data-ttu-id="38ad3-129">**名**：使用此框可以键入用户的名。</span><span class="sxs-lookup"><span data-stu-id="38ad3-129">**First name**</span></span>
 
-  - <span data-ttu-id="75806-130">**Outlook 安全发件人和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。</span><span class="sxs-lookup"><span data-stu-id="75806-130">**Outlook safe sender and blocked sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service.</span></span> <span data-ttu-id="75806-131">这允许用户在每个用户或每个域的基础上管理他们自己的白名单和黑名单。</span><span class="sxs-lookup"><span data-stu-id="75806-131">This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis.</span></span>
+   - <span data-ttu-id="38ad3-130">**缩写**：人员的中间名首字母。</span><span class="sxs-lookup"><span data-stu-id="38ad3-130">**Initials**: The person's middle initial.</span></span>
 
-  - <span data-ttu-id="75806-132">**基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。</span><span class="sxs-lookup"><span data-stu-id="75806-132">**Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).</span></span>
+   - <span data-ttu-id="38ad3-131">**姓**：使用此框可以键入用户的姓。</span><span class="sxs-lookup"><span data-stu-id="38ad3-131">**Last name**</span></span>
 
-  - <span data-ttu-id="75806-133">**最终用户垃圾邮件隔离**：为了访问最终用户的垃圾邮件隔离，最终用户必须具有有效的用户 ID 和密码。</span><span class="sxs-lookup"><span data-stu-id="75806-133">**End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid user ID and password.</span></span> <span data-ttu-id="75806-134">负责保护本地邮箱的 EOP 客户必须是有效的电子邮件用户。</span><span class="sxs-lookup"><span data-stu-id="75806-134">EOP customers protecting on-premises mailboxes must be valid email users.</span></span>
+   - <span data-ttu-id="38ad3-132"><sup>\*</sup>**显示名称**：默认情况下，此框显示 "**名字**"、"**缩写**" 和 "**姓氏**" 框中的值。</span><span class="sxs-lookup"><span data-stu-id="38ad3-132"><sup>\*</sup>**Display name**: By default, this box shows the values from the **First name**, **Initials**, and **Last name** boxes.</span></span> <span data-ttu-id="38ad3-133">您可以接受此值，也可以对其进行更改。</span><span class="sxs-lookup"><span data-stu-id="38ad3-133">You can accept this value or change it.</span></span> <span data-ttu-id="38ad3-134">该值应是唯一的，并且最大长度为64个字符。</span><span class="sxs-lookup"><span data-stu-id="38ad3-134">The value should be unique, and has a maximum length of 64 characters.</span></span>
 
-  - <span data-ttu-id="75806-135">**邮件流规则**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后可以创建邮件流规则（也称为传输规则），这些规则针对特定用户和/或组，而无需通过 EAC 或 Exchange Online Protection PowerShell 手动添加它们。</span><span class="sxs-lookup"><span data-stu-id="75806-135">**Mail flow rules**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules (also known as transport rules) that target specific users and/or groups without having to manually add them via the the EAC or Exchange Online Protection PowerShell.</span></span> <span data-ttu-id="75806-136">请注意， [动态通讯组](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。</span><span class="sxs-lookup"><span data-stu-id="75806-136">Note that [dynamic distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) can't be synchronized via directory synchronization.</span></span>
+   - <span data-ttu-id="38ad3-135"><sup>\*</sup>**别名**：为用户输入一个唯一的别名，最长为64个字符</span><span class="sxs-lookup"><span data-stu-id="38ad3-135"><sup>\*</sup>**Alias**: Enter a unique alias, using up to 64 characters, for the user</span></span>
 
-<span data-ttu-id="75806-137">获取必要的权限并准备目录同步，如["使用 Azure Active directory 的混合标识是什么？"](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。</span><span class="sxs-lookup"><span data-stu-id="75806-137">Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).</span></span>
+   - <span data-ttu-id="38ad3-136">**外部电子邮件地址**：输入用户的电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="38ad3-136">**External email address**: Enter the user's email address.</span></span> <span data-ttu-id="38ad3-137">域应位于基于云的组织外部。</span><span class="sxs-lookup"><span data-stu-id="38ad3-137">The domain should be external to your cloud-based organization.</span></span>
 
-### <a name="to-synchronize-user-directories-with-azure-active-directory-connect-aad-connect"></a><span data-ttu-id="75806-138">将用户目录与 Azure Active Directory Connect 同步（AAD 连接）</span><span class="sxs-lookup"><span data-stu-id="75806-138">To synchronize user directories with Azure Active Directory Connect (AAD Connect)</span></span>
+   - <span data-ttu-id="38ad3-138"><sup>\*</sup>**用户 ID**：输入此人将用于登录服务的帐户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-138"><sup>\*</sup>**User ID**: Enter the account that the person will use to sign in to the service.</span></span> <span data-ttu-id="38ad3-139">用户 ID 由左侧（@）符号（@）和右侧的域的用户名组成。</span><span class="sxs-lookup"><span data-stu-id="38ad3-139">The user ID consists of a username on the left side of the at (@) symbol (@) and a domain on the right side.</span></span>
 
-<span data-ttu-id="75806-139">若要将用户同步到 Azure Active Directory （AAD），您必须首先**激活目录同步**，如[Azure AD Connect sync 中所述：了解和自定义同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)。</span><span class="sxs-lookup"><span data-stu-id="75806-139">To synchronize users to Azure Active Directory (AAD) you first have to **activate directory synchronization**, as described in [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).</span></span>
+   - <span data-ttu-id="38ad3-140"><sup>\*</sup>"**新密码**" 和 " <sup>\*</sup> **确认密码**"：输入并重新输入帐户密码。</span><span class="sxs-lookup"><span data-stu-id="38ad3-140"><sup>\*</sup>**New password** and <sup>\*</sup>**Confirm password**: Enter and reenter the account password.</span></span> <span data-ttu-id="38ad3-141">验证密码是否符合组织的密码长度、复杂性和历史要求。</span><span class="sxs-lookup"><span data-stu-id="38ad3-141">Verify that the password complies with the password length, complexity, and history requirements of your organization.</span></span>
 
-<span data-ttu-id="75806-140">接下来是安装和配置本地计算机以运行 AAD 连接（如果尚不存在，则需要事先检查）。</span><span class="sxs-lookup"><span data-stu-id="75806-140">Next is the installation and configuration of an on-premises computer to run AAD Connect (if you don't already have one -- something worth checking ahead of time).</span></span> <span data-ttu-id="75806-141">[设置 Aad 连接，](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)了解如何设置用户并将帐户从本地部署到使用 AAD 连接的 Azure AD 的方法。</span><span class="sxs-lookup"><span data-stu-id="75806-141">The [Setting up AAD Connect, the express way](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) topic tells you how to setup and synchronize your accounts from on-premises to Azure AD with AAD Connect.</span></span>
+3. <span data-ttu-id="38ad3-142">完成后，请单击“保存”\*\*\*\* 来创建邮件用户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-142">When you've finished, click **Save** to create the mail user.</span></span>
 
-<span data-ttu-id="75806-142">但在执行此操作之前，请务必确保[满足先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)，并[选择安装类型](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)。</span><span class="sxs-lookup"><span data-stu-id="75806-142">But before you do that work, make certain [you meet prerequisites](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), and [choose your installation type](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation).</span></span> <span data-ttu-id="75806-143">较早的链接指向快速安装的简短文章。</span><span class="sxs-lookup"><span data-stu-id="75806-143">The earlier link is to a short article for express installs.</span></span> <span data-ttu-id="75806-144">您还可以在[自定义安装](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)中找到文章，或在需要时[传递身份验证](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)。</span><span class="sxs-lookup"><span data-stu-id="75806-144">You can also find articles on [custom installations](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom), or [pass-through authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) if they're needed.</span></span>
+### <a name="use-the-eac-to-modify-mail-users"></a><span data-ttu-id="38ad3-143">使用 EAC 修改邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-143">Use the EAC to modify mail users</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="75806-145">当您完成 Azure Active Directory 同步工具配置向导时，将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。</span><span class="sxs-lookup"><span data-stu-id="75806-145">When you finish the Azure Active Directory Sync Tool Configuration Wizard, the **MSOL_AD_SYNC** account is created in your Active Directory forest.</span></span> <span data-ttu-id="75806-146">此帐户用于读取和同步您的本地 Active Directory 信息。</span><span class="sxs-lookup"><span data-stu-id="75806-146">This account is used to read and synchronize your on-premises Active Directory information.</span></span> <span data-ttu-id="75806-147">为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。</span><span class="sxs-lookup"><span data-stu-id="75806-147">In order for directory synchronization to work correctly, make sure that TCP 443 on your local directory synchronization server is open.</span></span>
+1. <span data-ttu-id="38ad3-144">在 EAC 中，转到 "**收件人**" " \> **联系人**"。</span><span class="sxs-lookup"><span data-stu-id="38ad3-144">In the EAC, go to **Recipients** \> **Contacts**.</span></span>
 
-<span data-ttu-id="75806-148">在配置同步之后，请务必验证 EOP 是否正确同步。</span><span class="sxs-lookup"><span data-stu-id="75806-148">After configuring your sync, be sure to verify that EOP is synchronizing correctly.</span></span> <span data-ttu-id="75806-149">在 EAC 中，转到 "**收件人** \> " "**联系人**"，并查看从您的本地环境中正确同步的用户列表。</span><span class="sxs-lookup"><span data-stu-id="75806-149">In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.</span></span>
+2. <span data-ttu-id="38ad3-145">选择要修改的邮件用户，然后单击 "**编辑** ![ 编辑图标" ](../../media/ITPro-EAC-AddIcon.png) 。</span><span class="sxs-lookup"><span data-stu-id="38ad3-145">Select the mail user that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png).</span></span>
 
-## <a name="use-the-eac-to-manage-mail-users"></a><span data-ttu-id="75806-150">使用 EAC 管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-150">Use the EAC to manage mail users</span></span>
+3. <span data-ttu-id="38ad3-146">在打开的 "邮件用户属性" 页上，单击下列选项卡之一以查看或更改属性。</span><span class="sxs-lookup"><span data-stu-id="38ad3-146">On the mail user properties page that opens, click one of the following tabs to view or change properties.</span></span>
 
-<span data-ttu-id="75806-151">本节提供有关在 EAC 中直接添加和管理电子邮件用户的信息。</span><span class="sxs-lookup"><span data-stu-id="75806-151">This section provides information about adding and managing email users directly in the EAC.</span></span>
+   <span data-ttu-id="38ad3-147">完成时，请单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="38ad3-147">When you're finished, click **Save**.</span></span>
 
-### <a name="use-the-eac-to-add-a-mail-user"></a><span data-ttu-id="75806-152">使用 EAC 添加邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-152">Use the EAC to add a mail user</span></span>
+#### <a name="general"></a><span data-ttu-id="38ad3-148">常规</span><span class="sxs-lookup"><span data-stu-id="38ad3-148">General</span></span>
 
-1. <span data-ttu-id="75806-153">转到 EAC 中的 "**收件人** \> **联系人**"，然后单击 "**新建 +**"，创建电子邮件用户。</span><span class="sxs-lookup"><span data-stu-id="75806-153">Create an email user by going to go to **Recipients** \> **Contacts** in the EAC, and then clicking **New +**.</span></span>
+<span data-ttu-id="38ad3-149">使用 "**常规**" 选项卡可以查看或更改有关邮件用户的基本信息。</span><span class="sxs-lookup"><span data-stu-id="38ad3-149">Use the **General** tab to view or change basic information about the mail user.</span></span>
 
-2. <span data-ttu-id="75806-154">在 "**新建邮件用户**" 页上，输入用户信息，包括以下信息：</span><span class="sxs-lookup"><span data-stu-id="75806-154">On the **New mail user** page, enter the user's information, including the following:</span></span>
+- <span data-ttu-id="38ad3-150">**名**</span><span class="sxs-lookup"><span data-stu-id="38ad3-150">**First name**</span></span>
 
-   ****
+- <span data-ttu-id="38ad3-151">**缩写**</span><span class="sxs-lookup"><span data-stu-id="38ad3-151">**Initials**</span></span>
 
-   |<span data-ttu-id="75806-155">**邮件用户属性**</span><span class="sxs-lookup"><span data-stu-id="75806-155">**Mail user property**</span></span>|<span data-ttu-id="75806-156">**说明**</span><span class="sxs-lookup"><span data-stu-id="75806-156">**Description**</span></span>|
-   |:-----|:-----|
-   |<span data-ttu-id="75806-157">\*\*“名字” \*\*、“姓名缩写”\*\*\*\* 和“姓氏”\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="75806-157">**First name**, **Initials**, and **Last name**</span></span>|<span data-ttu-id="75806-158">在相应的框中键入用户的全名。</span><span class="sxs-lookup"><span data-stu-id="75806-158">Type the user's full name in the appropriate boxes.</span></span>|
-   |<span data-ttu-id="75806-159">**显示名称**</span><span class="sxs-lookup"><span data-stu-id="75806-159">**Display name**</span></span>|<span data-ttu-id="75806-p115">键入名称，最多 64 个字符。默认情况下，此框将在“名字”\*\*\*\*、“姓名缩写”\*\*\*\* 和“姓氏”\*\*\*\* 框中显示名称（如果有）。显示名称是必填项。</span><span class="sxs-lookup"><span data-stu-id="75806-p115">Type a name, using up to 64 characters. By default, this box shows the names in the **First name**, **Initials**, and **Last name** boxes if any. The display name is required.</span></span>|
-   |<span data-ttu-id="75806-163">**Alias**</span><span class="sxs-lookup"><span data-stu-id="75806-163">**Alias**</span></span>|<span data-ttu-id="75806-p116">为用户键入唯一的别名，最多 64 个字符。别名为必填项。</span><span class="sxs-lookup"><span data-stu-id="75806-p116">Type a unique alias, using up to 64 characters, for the user. The alias is required.</span></span>|
-   |<span data-ttu-id="75806-166">**外部电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="75806-166">**External email address**</span></span>|<span data-ttu-id="75806-167">键入用户的外部电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="75806-167">Type the external email address of the user.</span></span>|
-   |<span data-ttu-id="75806-168">**用户 ID**</span><span class="sxs-lookup"><span data-stu-id="75806-168">**User id**</span></span>|<span data-ttu-id="75806-p117">键入邮件用户将用来登录到服务的名称。用户登录名由 (@) 符号左侧的用户名和右侧的后缀组成。通常，后缀是用户帐户所在域的域名。</span><span class="sxs-lookup"><span data-stu-id="75806-p117">Type the name that the mail user will use to sign in to the service. The user sign-in name consists of a user name on the left side of the at (@) symbol and a suffix on the right side. Typically, the suffix is the domain name in which the user account resides.</span></span>|
-   |<span data-ttu-id="75806-172">**新密码**</span><span class="sxs-lookup"><span data-stu-id="75806-172">**New password**</span></span>|<span data-ttu-id="75806-p118">键入邮件用户将用来登录到服务的密码。请确保所提供的密码符合在其中创建用户帐户的域的密码长度、复杂程度和历史要求。</span><span class="sxs-lookup"><span data-stu-id="75806-p118">Type the password that the mail user will use to sign in to the service. Make sure that the password you supply complies with the password length, complexity, and history requirements of the domain in which you're creating the user account.</span></span>|
-   |<span data-ttu-id="75806-175">**确认密码**</span><span class="sxs-lookup"><span data-stu-id="75806-175">**Confirm password**</span></span>|<span data-ttu-id="75806-176">重新键入密码进行确认。</span><span class="sxs-lookup"><span data-stu-id="75806-176">Retype the password to confirm it.</span></span>|
+- <span data-ttu-id="38ad3-152">**姓**</span><span class="sxs-lookup"><span data-stu-id="38ad3-152">**Last name**</span></span>
 
-3. <span data-ttu-id="75806-p119">单击“保存”\*\*\*\* 创建新电子邮件用户。新用户应显示在用户列表中。</span><span class="sxs-lookup"><span data-stu-id="75806-p119">Click **Save** to create the new email user. The new user should appear in the list of users.</span></span>
+- <span data-ttu-id="38ad3-153">**显示名称**：此名称显示在组织的通讯簿中、电子邮件的 "To：" 和 "发件人：" 行和 EAC 中的联系人列表中。</span><span class="sxs-lookup"><span data-stu-id="38ad3-153">**Display name**: This name appears in your organization's address book, on the To: and From: lines in email, and in the list of contacts in the EAC.</span></span> <span data-ttu-id="38ad3-154">此姓名不能在显示姓名之前或之后包含空格。</span><span class="sxs-lookup"><span data-stu-id="38ad3-154">This name can't contain empty spaces before or after the display name.</span></span>
 
-### <a name="use-the-eac-to-edit-or-remove-a-mail-user"></a><span data-ttu-id="75806-179">使用 EAC 编辑或删除邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-179">Use the EAC to edit or remove a mail user</span></span>
+- <span data-ttu-id="38ad3-155">**用户 ID**：这是 Microsoft 365 中的用户帐户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-155">**User ID**: This is the user's account in Microsoft 365.</span></span> <span data-ttu-id="38ad3-156">您不能在此处修改此值。</span><span class="sxs-lookup"><span data-stu-id="38ad3-156">You can't modify this value here.</span></span>
 
-- <span data-ttu-id="75806-180">在 EAC 中，转到 "**收件人** \> " "**联系人**"。</span><span class="sxs-lookup"><span data-stu-id="75806-180">In the EAC, go to **Recipients** \> **Contacts**.</span></span> <span data-ttu-id="75806-181">在用户列表中，单击要查看或更改的用户，然后选择 "**编辑** ![编辑" 图标](../../media/ITPro-EAC-EditIcon.gif)以根据需要更新用户设置。</span><span class="sxs-lookup"><span data-stu-id="75806-181">In the list of users, click the user that you want to view or change, and then select **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.gif) to update the user settings as needed.</span></span> <span data-ttu-id="75806-182">您可以更改用户名、别名或联系人信息，还可以记录有关组织中的用户角色的详细信息。</span><span class="sxs-lookup"><span data-stu-id="75806-182">You can change the user's name, alias, or contact information, and you can record detailed information about the user's role in the organization.</span></span> <span data-ttu-id="75806-183">您还可以选择用户，然后选择 "**删除** ![删除"](../../media/ITPro-EAC-RemoveIcon.gif)图标将其删除。</span><span class="sxs-lookup"><span data-stu-id="75806-183">You can also select a user and then choose **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif) to delete it.</span></span>
+#### <a name="contact-information"></a><span data-ttu-id="38ad3-157">联系人信息</span><span class="sxs-lookup"><span data-stu-id="38ad3-157">Contact information</span></span>
 
-## <a name="use-exchange-online-protection-powershell-to-manage-mail-users"></a><span data-ttu-id="75806-184">使用 Exchange Online Protection PowerShell 管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-184">Use Exchange Online Protection PowerShell to manage mail users</span></span>
+<span data-ttu-id="38ad3-158">使用 "**联系人信息**" 选项卡查看或更改用户的联系信息。</span><span class="sxs-lookup"><span data-stu-id="38ad3-158">Use the **Contact information** tab to view or change the user's contact information.</span></span> <span data-ttu-id="38ad3-159">该页上的信息显示在通讯簿中。</span><span class="sxs-lookup"><span data-stu-id="38ad3-159">The information on this page is displayed in the address book.</span></span>
 
-<span data-ttu-id="75806-185">本部分提供了有关使用远程 Windows PowerShell 添加和管理邮件用户的信息。</span><span class="sxs-lookup"><span data-stu-id="75806-185">This section provides information about adding and managing mail users by using remote Windows PowerShell.</span></span>
+- <span data-ttu-id="38ad3-160">**地址**</span><span class="sxs-lookup"><span data-stu-id="38ad3-160">**Street**</span></span>
+- <span data-ttu-id="38ad3-161">**市/县**</span><span class="sxs-lookup"><span data-stu-id="38ad3-161">**City**</span></span>
+- <span data-ttu-id="38ad3-162">**省/市/自治区**</span><span class="sxs-lookup"><span data-stu-id="38ad3-162">**State/Province**</span></span>
+- <span data-ttu-id="38ad3-163">**邮政编码**</span><span class="sxs-lookup"><span data-stu-id="38ad3-163">**ZIP/Postal code**</span></span>
+- <span data-ttu-id="38ad3-164">**国家/地区**</span><span class="sxs-lookup"><span data-stu-id="38ad3-164">**Country/Region**</span></span>
+- <span data-ttu-id="38ad3-165">**工作电话**</span><span class="sxs-lookup"><span data-stu-id="38ad3-165">**Work phone**</span></span>
+- <span data-ttu-id="38ad3-166">**移动电话**</span><span class="sxs-lookup"><span data-stu-id="38ad3-166">**Mobile phone**</span></span>
+- <span data-ttu-id="38ad3-167">**传真**</span><span class="sxs-lookup"><span data-stu-id="38ad3-167">**Fax**</span></span>
+- <span data-ttu-id="38ad3-168">**更多选项**</span><span class="sxs-lookup"><span data-stu-id="38ad3-168">**More options**</span></span>
 
-### <a name="use-eop-powershell-to-add-a-mail-user"></a><span data-ttu-id="75806-186">使用 EOP PowerShell 添加邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-186">Use EOP PowerShell to add a mail user</span></span>
+  - <span data-ttu-id="38ad3-169">**Office**</span><span class="sxs-lookup"><span data-stu-id="38ad3-169">**Office**</span></span>
+  - <span data-ttu-id="38ad3-170">**住宅电话**</span><span class="sxs-lookup"><span data-stu-id="38ad3-170">**Home phone**</span></span>
+  - <span data-ttu-id="38ad3-171">**网页**</span><span class="sxs-lookup"><span data-stu-id="38ad3-171">**Web page**</span></span>
+  - <span data-ttu-id="38ad3-172">**Notes**</span><span class="sxs-lookup"><span data-stu-id="38ad3-172">**Notes**</span></span>
 
-<span data-ttu-id="75806-187">此示例使用 [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser) cmdlet 在 EOP 内为 Jeffrey Zeng 创建了一个启用邮件功能的用户帐户，详细信息如下：</span><span class="sxs-lookup"><span data-stu-id="75806-187">This example uses the [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser) cmdlet to create a mail-enabled user account for Jeffrey Zeng in EOP with the following details:</span></span>
+#### <a name="organization"></a><span data-ttu-id="38ad3-173">组织</span><span class="sxs-lookup"><span data-stu-id="38ad3-173">Organization</span></span>
 
-- <span data-ttu-id="75806-188">名是 Jeffrey，姓是 Zeng。</span><span class="sxs-lookup"><span data-stu-id="75806-188">The first name is Jeffrey and the last name is Zeng.</span></span>
+<span data-ttu-id="38ad3-174">使用 "**组织**" 选项卡可以记录有关组织中用户角色的详细信息。</span><span class="sxs-lookup"><span data-stu-id="38ad3-174">Use the **Organization** tab to record detailed information about the user's role in the organization.</span></span>
 
-- <span data-ttu-id="75806-189">名字是 Jeffrey，显示名称是 Jeffrey Zeng。</span><span class="sxs-lookup"><span data-stu-id="75806-189">The name is Jeffrey and the display name is Jeffrey Zeng.</span></span>
+- <span data-ttu-id="38ad3-175">**Title**</span><span class="sxs-lookup"><span data-stu-id="38ad3-175">**Title**</span></span>
+- <span data-ttu-id="38ad3-176">**Department**</span><span class="sxs-lookup"><span data-stu-id="38ad3-176">**Department**</span></span>
+- <span data-ttu-id="38ad3-177">**Company**</span><span class="sxs-lookup"><span data-stu-id="38ad3-177">**Company**</span></span>
 
-- <span data-ttu-id="75806-190">别名是 jeffreyz。</span><span class="sxs-lookup"><span data-stu-id="75806-190">The alias is jeffreyz.</span></span>
+### <a name="use-the-eac-to-remove-mail-users"></a><span data-ttu-id="38ad3-178">使用 EAC 删除邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-178">Use the EAC to remove mail users</span></span>
 
-- <span data-ttu-id="75806-191">外部电子邮件地址是 jzeng@tailspintoys.com。</span><span class="sxs-lookup"><span data-stu-id="75806-191">The external email address is jzeng@tailspintoys.com.</span></span>
+1. <span data-ttu-id="38ad3-179">在 EAC 中，转到 "**收件人**" " \> **联系人**"。</span><span class="sxs-lookup"><span data-stu-id="38ad3-179">In the EAC, go to **Recipients** \> **Contacts**.</span></span>
 
-- <span data-ttu-id="75806-192">Microsoft 365 登录名为 jeffreyz@contoso.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="75806-192">The Microsoft 365 sign in name is jeffreyz@contoso.onmicrosoft.com.</span></span>
+2. <span data-ttu-id="38ad3-180">选择要删除的邮件用户，然后单击 "**删除** ![ 删除图标" ](../../media/ITPro-EAC-RemoveIcon.gif) 。</span><span class="sxs-lookup"><span data-stu-id="38ad3-180">Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).</span></span>
 
-- <span data-ttu-id="75806-193">密码为 Pa$$word1。</span><span class="sxs-lookup"><span data-stu-id="75806-193">The password is Pa$$word1.</span></span>
+## <a name="use-powershell-to-manage-mail-users"></a><span data-ttu-id="38ad3-181">使用 PowerShell 管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-181">Use PowerShell to manage mail users</span></span>
 
-```PowerShell
-New-EOPMailUser -LastName Zeng -FirstName Jeffrey -DisplayName "Jeffrey Zeng" -Name Jeffrey -Alias jeffreyz -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -ExternalEmailAddress jeffreyz@tailspintoys.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force)
+### <a name="use-standalone-eop-powershell-to-view-mail-users"></a><span data-ttu-id="38ad3-182">使用独立 EOP PowerShell 查看邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-182">Use standalone EOP PowerShell to view mail users</span></span>
+
+<span data-ttu-id="38ad3-183">若要返回独立 EOP PowerShell 中所有邮件用户的摘要列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="38ad3-183">To return a summary list of all mail users in standalone EOP PowerShell, run the following command:</span></span>
+
+```powershell
+Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-<span data-ttu-id="75806-194">若要验证这是否有效，请运行以下命令以显示有关新邮件用户 Jeffrey Zeng 的信息：</span><span class="sxs-lookup"><span data-stu-id="75806-194">To verify that this worked, run the following command to display information about new mail user Jeffrey Zeng:</span></span>
+<span data-ttu-id="38ad3-184">若要查看有关特定邮件用户的详细信息，请将 \< MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="38ad3-184">To view detailed information about a specific mail user, replace \<MailUserIdentity\> with the name, alias, or account name of the mail user, and run the following commands:</span></span>
 
-```PowerShell
-Get-User -Identity "Jeffrey Zeng"
+```powershell
+Get-Recipient -Identity <MailUserIdentity> | Format-List
 ```
 
-<span data-ttu-id="75806-195">有关语法和参数的详细信息，请参阅[获取用户](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)。</span><span class="sxs-lookup"><span data-stu-id="75806-195">For detailed syntax and parameter information, see [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).</span></span>
+```powershell
+Get-User -Identity <MailUserIdentity> | Format-List
+```
 
-### <a name="use-eop-powershell-to-edit-the-properties-of-a-mail-user"></a><span data-ttu-id="75806-196">使用 EOP PowerShell 编辑邮件用户的属性</span><span class="sxs-lookup"><span data-stu-id="75806-196">Use EOP PowerShell to edit the properties of a mail user</span></span>
+<span data-ttu-id="38ad3-185">有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)" 和 "[获取用户](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)"。</span><span class="sxs-lookup"><span data-stu-id="38ad3-185">For detailed syntax and parameter information, see [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) and [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user).</span></span>
 
-<span data-ttu-id="75806-197">使用 [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) 和 [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser) cmdlet 查看或更改邮件用户的属性。</span><span class="sxs-lookup"><span data-stu-id="75806-197">Use the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) and [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser) cmdlets to view or change properties for mail users.</span></span>
+### <a name="use-standalone-eop-powershell-to-create-mail-users"></a><span data-ttu-id="38ad3-186">使用独立的 EOP PowerShell 创建邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-186">Use standalone EOP PowerShell to create mail users</span></span>
 
-<span data-ttu-id="75806-198">此示例将设置 Pilar Pinilla 的外部电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="75806-198">This example sets the external email address for Pilar Pinilla.</span></span>
+<span data-ttu-id="38ad3-187">若要在独立 EOP PowerShell 中创建邮件用户，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="38ad3-187">To create mail users in standalone EOP PowerShell, use the following syntax:</span></span>
+
+```powershell
+New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Password (ConvertTo-SecureString -String '<password>' -AsPlainText -Force) [-Alias <AliasValue>] [-DisplayName "<Display Name>"] [-ExternalEmailAddress <ExternalEmailAddress>] [-FirstName <Text>] [-Initials <Text>] [-LastName <Text>]
+```
+
+<span data-ttu-id="38ad3-188">**注意**：</span><span class="sxs-lookup"><span data-stu-id="38ad3-188">**Notes**:</span></span>
+
+- <span data-ttu-id="38ad3-189">_Name_参数是必需的，最大长度为64个字符，并且必须是唯一的。</span><span class="sxs-lookup"><span data-stu-id="38ad3-189">The _Name_ parameter is required, has a maximum length of 64 characters, and must be unique.</span></span> <span data-ttu-id="38ad3-190">如果您不使用 _DisplayName_ 参数，_Name_ 参数的值可用于显示名称。</span><span class="sxs-lookup"><span data-stu-id="38ad3-190">If you don't use the _DisplayName_ parameter, the value of the _Name_ parameter is used for the display name.</span></span>
+- <span data-ttu-id="38ad3-191">如果不使用_alias_参数，则_MicrosoftOnlneServicesID_参数的左侧将用于别名。</span><span class="sxs-lookup"><span data-stu-id="38ad3-191">If you don't use the _Alias_ parameter, the left side of the _MicrosoftOnlneServicesID_ parameter is used for the alias.</span></span>
+- <span data-ttu-id="38ad3-192">如果不使用_ExternalEmailAddress_参数，则_MicrosoftOnlineServicesID_值将用于外部电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="38ad3-192">If you don't use the _ExternalEmailAddress_ parameter, the _MicrosoftOnlineServicesID_ value is used for the external email address.</span></span>
+
+<span data-ttu-id="38ad3-193">本示例将创建具有下列设置的邮件用户：</span><span class="sxs-lookup"><span data-stu-id="38ad3-193">This example creates a mail user with the following settings:</span></span>
+
+- <span data-ttu-id="38ad3-194">名称为 JeffreyZeng，显示名称为 Jeffrey Zeng。</span><span class="sxs-lookup"><span data-stu-id="38ad3-194">The name is JeffreyZeng and the display name is Jeffrey Zeng.</span></span>
+- <span data-ttu-id="38ad3-195">名是 Jeffrey，姓是 Zeng。</span><span class="sxs-lookup"><span data-stu-id="38ad3-195">The first name is Jeffrey and the last name is Zeng.</span></span>
+- <span data-ttu-id="38ad3-196">别名是 jeffreyz。</span><span class="sxs-lookup"><span data-stu-id="38ad3-196">The alias is jeffreyz.</span></span>
+- <span data-ttu-id="38ad3-197">外部电子邮件地址是 jzeng@tailspintoys.com。</span><span class="sxs-lookup"><span data-stu-id="38ad3-197">The external email address is jzeng@tailspintoys.com.</span></span>
+- <span data-ttu-id="38ad3-198">帐户名称为 jeffreyz@contoso.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="38ad3-198">The account name is jeffreyz@contoso.onmicrosoft.com.</span></span>
+- <span data-ttu-id="38ad3-199">密码为 Pa$$word1。</span><span class="sxs-lookup"><span data-stu-id="38ad3-199">The password is Pa$$word1.</span></span>
+
+```PowerShell
+New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
+```
+
+<span data-ttu-id="38ad3-200">有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-200">For detailed syntax and parameter information, see [New-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser).</span></span>
+
+### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a><span data-ttu-id="38ad3-201">使用独立 EOP PowerShell 修改邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-201">Use standalone EOP PowerShell to modify mail users</span></span>
+
+<span data-ttu-id="38ad3-202">若要修改独立 EOP PowerShell 中的现有邮件用户，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="38ad3-202">To modify existing mail users in standalone EOP PowerShell, use the following syntax:</span></span>
+
+```powershell
+Set-EOPMailUser -Identity <MailUserIdentity> [-Alias <Text>] [-DisplayName <Textg>] [-EmailAddresses <ProxyAddressCollection>] [-MicrosoftOnlineServicesID <SmtpAddress>]
+```
+
+```powershell
+Set-EOPUser -Identity <MailUserIdentity> [-City <Text>] [-Company <Text>] [-CountryOrRegion <CountryInfo>] [-Department <Text>] [-Fax <PhoneNumber>] [-FirstName <Text>] [-HomePhone <PhoneNumber>] [-Initials <Text>] [-LastName <Text>] [-MobilePhone <PhoneNumber>] [-Notes <Text>] [-Office <Text>] [-Phone <PhoneNumber>] [-PostalCode <String>] [-StateOrProvince <String>] [-StreetAddress <Tet>] [-Title <Text>] [-WebPage <Text>]
+```
+
+<span data-ttu-id="38ad3-203">此示例将设置 Pilar Pinilla 的外部电子邮件地址。</span><span class="sxs-lookup"><span data-stu-id="38ad3-203">This example sets the external email address for Pilar Pinilla.</span></span>
 
 ```PowerShell
 Set-EOPMailUser -Identity "Pilar Pinilla" -EmailAddresses pilarp@tailspintoys.com
 ```
 
-<span data-ttu-id="75806-199">此示例将所有邮件用户的"公司"属性设置为 Contoso。</span><span class="sxs-lookup"><span data-stu-id="75806-199">This example sets the Company property for all mail users to Contoso.</span></span>
+<span data-ttu-id="38ad3-204">此示例将所有邮件用户的"公司"属性设置为 Contoso。</span><span class="sxs-lookup"><span data-stu-id="38ad3-204">This example sets the Company property for all mail users to Contoso.</span></span>
 
 ```PowerShell
-$Recip = Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')}
+$Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-<span data-ttu-id="75806-200">若要验证是否有效，请使用 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)" cmdlet 验证更改。</span><span class="sxs-lookup"><span data-stu-id="75806-200">To verify that this worked, use the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) cmdlet to verify the changes.</span></span> <span data-ttu-id="75806-201">（请注意，您可以查看多个邮件联系人的多个属性。）</span><span class="sxs-lookup"><span data-stu-id="75806-201">(Note that you can view multiple properties for multiple mail contacts.)</span></span>
+<span data-ttu-id="38ad3-205">有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-205">For detailed syntax and parameter information, see [Set-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser).</span></span>
+
+### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a><span data-ttu-id="38ad3-206">使用独立 EOP PowerShell 删除邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-206">Use standalone EOP PowerShell to remove mail users</span></span>
+
+<span data-ttu-id="38ad3-207">若要删除独立 EOP PowerShell 中的邮件用户，请将 \< MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，然后运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="38ad3-207">To remove mail users in standalone EOP PowerShell, replace \<MailUserIdentity\> with the name, alias, or account name of the mail user, and run the following command:</span></span>
 
 ```PowerShell
-Get-Recipient -Identity "Pilar Pinilla" | Format-List
+Remove-EOPMailUser -Identity <MailUserIdentity\>
 ```
 
-<span data-ttu-id="75806-202">在之前的示例中，所有邮件用户的"公司"属性都设置为 Contoso，请运行以下命令验证更改：</span><span class="sxs-lookup"><span data-stu-id="75806-202">In the previous example where the Company property was set to Contoso for all mail users, run the following command to verify the changes:</span></span>
+<span data-ttu-id="38ad3-208">本示例删除 Jeffrey Zeng 的邮件用户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-208">This example removes the mail user for Jeffrey Zeng.</span></span>
 
 ```PowerShell
-Get-Recipient -ResultSize unlimited -Filter {(RecipientTypeDetails -eq 'mailuser')} | Format-List Name,Company
+Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
+
+<span data-ttu-id="38ad3-209">有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-209">For detailed syntax and parameter information, see [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser).</span></span>
+
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="38ad3-210">如何判断这些过程生效了？</span><span class="sxs-lookup"><span data-stu-id="38ad3-210">How do you know these procedures worked?</span></span>
+
+<span data-ttu-id="38ad3-211">若要验证您是否已成功创建、修改或删除了独立 EOP 中的邮件用户，请使用以下任一过程：</span><span class="sxs-lookup"><span data-stu-id="38ad3-211">To verify that you've successfully created, modified, or removed mail users in standalone EOP, use any of the following procedures:</span></span>
+
+- <span data-ttu-id="38ad3-212">在 EAC 中，转到 "**收件人**" " \> **联系人**"。</span><span class="sxs-lookup"><span data-stu-id="38ad3-212">In the EAC, go to **Recipients** \> **Contacts**.</span></span> <span data-ttu-id="38ad3-213">验证是否列出了邮件用户（或未列出）。</span><span class="sxs-lookup"><span data-stu-id="38ad3-213">Verify that the mail user is listed (or isn't listed).</span></span> <span data-ttu-id="38ad3-214">选择邮件用户并查看详细信息窗格中的信息，或单击 "**编辑** ![ 编辑图标 ](../../media/ITPro-EAC-AddIcon.png) " 以查看设置。</span><span class="sxs-lookup"><span data-stu-id="38ad3-214">Select the mail user and view the information in the Details pane, or click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png) to view the settings.</span></span>
+
+- <span data-ttu-id="38ad3-215">在独立 EOP PowerShell 中，运行以下命令来验证是否列出了邮件用户（或未列出）：</span><span class="sxs-lookup"><span data-stu-id="38ad3-215">In standalone EOP PowerShell, run the following command to verify the mail user is listed (or isn't listed):</span></span>
+
+  ```powershell
+  Get-Recipient -RecipientType MailUser -ResultSize unlimited
+  ```
+
+- <span data-ttu-id="38ad3-216">\<将 MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，然后运行以下命令来验证设置：</span><span class="sxs-lookup"><span data-stu-id="38ad3-216">Replace \<MailUserIdentity\> with the name, alias, or account name of the mail user, and run the following commands to verify the settings:</span></span>
+
+  ```powershell
+  Get-Recipient -Identity <MailUserIdentity> | Format-List
+  ```
+
+  ```powershell
+  Get-User -Identity <MailUserIdentity> | Format-List
+  ```
+
+## <a name="use-directory-synchronization-to-manage-mail-users"></a><span data-ttu-id="38ad3-217">使用目录同步管理邮件用户</span><span class="sxs-lookup"><span data-stu-id="38ad3-217">Use directory synchronization to manage mail users</span></span>
+
+<span data-ttu-id="38ad3-218">在独立 EOP 中，目录同步适用于具有本地 Active Directory 的客户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-218">In standalone EOP, directory synchronization is available for customers with on-premises Active Directory.</span></span> <span data-ttu-id="38ad3-219">你可以将这些帐户同步到 Azure Active Directory （Azure AD），其中，帐户的副本存储在云中。</span><span class="sxs-lookup"><span data-stu-id="38ad3-219">You can synchronize those accounts to Azure Active Directory (Azure AD), where copies of the accounts are stored in the cloud.</span></span> <span data-ttu-id="38ad3-220">将现有用户帐户同步到 Azure Active Directory 时，可以在 Exchange 管理中心（EAC）或独立 EOP PowerShell 的 "**收件人**" 窗格中查看这些用户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-220">When you synchronize your existing user accounts to Azure Active Directory, you can view those users in the **Recipients** pane of the Exchange admin center (EAC) or in standalone EOP PowerShell.</span></span>
+
+<span data-ttu-id="38ad3-221">**注意**：</span><span class="sxs-lookup"><span data-stu-id="38ad3-221">**Notes**:</span></span>
+
+- <span data-ttu-id="38ad3-222">如果使用目录同步来管理收件人，您仍可以在 Microsoft 365 管理中心中添加和管理用户，但不会将其与本地 Active Directory 同步。</span><span class="sxs-lookup"><span data-stu-id="38ad3-222">If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory.</span></span> <span data-ttu-id="38ad3-223">这是因为目录同步只能将来自本地 Active Directory 的收件人同步到云。</span><span class="sxs-lookup"><span data-stu-id="38ad3-223">This is because directory synchronization only syncs recipients from your on-premises Active Directory to the cloud.</span></span>
+
+- <span data-ttu-id="38ad3-224">建议将目录同步用于以下功能：</span><span class="sxs-lookup"><span data-stu-id="38ad3-224">Using directory synchronization is recommended for use with the following features:</span></span>
+
+  - <span data-ttu-id="38ad3-225">**Outlook 安全发件人列表和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。</span><span class="sxs-lookup"><span data-stu-id="38ad3-225">**Outlook Safe Sender lists and Blocked Sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service.</span></span> <span data-ttu-id="38ad3-226">这使用户可以管理其自己的安全发件人列表和阻止的发件人列表和单个发件人和域条目。</span><span class="sxs-lookup"><span data-stu-id="38ad3-226">This lets users manage their own Safe Sender list and Blocked Sender list with individual sender and domain entries.</span></span> <span data-ttu-id="38ad3-227">有关详细信息，请参阅[在 Exchange Online 邮箱上配置垃圾邮件设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-227">For more information, see [Configure junk email settings on Exchange Online mailboxes](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).</span></span>
+
+  - <span data-ttu-id="38ad3-228">**基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-228">**Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).</span></span>
+
+  - <span data-ttu-id="38ad3-229">**最终用户对隔离的访问权限**：若要访问其隔离邮件，收件人必须在服务中具有有效的用户 ID 和密码。</span><span class="sxs-lookup"><span data-stu-id="38ad3-229">**End user access to quarantine**: To access their quarantined messages, recipients must have a valid user ID and password in the service.</span></span> <span data-ttu-id="38ad3-230">有关隔离的详细信息，请参阅[以用户的方式查找和释放隔离的邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-230">For more information about quarantine, see [Find and release quarantined messages as a user](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).</span></span>
+
+  - <span data-ttu-id="38ad3-231">**邮件流规则（也称为传输规则）**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后您可以创建针对特定用户和/或组的邮件流规则，而无需手动将其添加到服务中。</span><span class="sxs-lookup"><span data-stu-id="38ad3-231">**Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them in the service.</span></span> <span data-ttu-id="38ad3-232">请注意， [动态通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。</span><span class="sxs-lookup"><span data-stu-id="38ad3-232">Note that [dynamic distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) can't be synchronized via directory synchronization.</span></span>
+
+<span data-ttu-id="38ad3-233">获取必要的权限并准备目录同步，如["使用 Azure Active directory 的混合标识是什么？"](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。</span><span class="sxs-lookup"><span data-stu-id="38ad3-233">Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).</span></span>
+
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a><span data-ttu-id="38ad3-234">将目录与 Azure Active Directory Connect （AAD Connect）同步</span><span class="sxs-lookup"><span data-stu-id="38ad3-234">Synchronize directories with Azure Active Directory Connect (AAD Connect)</span></span>
+
+1. <span data-ttu-id="38ad3-235">按照 Azure AD Connect 同步中所述激活目录同步[：了解和自定义同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)。</span><span class="sxs-lookup"><span data-stu-id="38ad3-235">Activate directory synchronization as described in [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).</span></span>
+
+2. <span data-ttu-id="38ad3-236">按照[AZURE AD connect 的先决条件](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites)中所述，安装和配置内部部署计算机以运行 AAD Connect。</span><span class="sxs-lookup"><span data-stu-id="38ad3-236">Install and configure an on-premises computer to run AAD Connect as described in [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).</span></span>
+
+3. <span data-ttu-id="38ad3-237">[选择要用于 AZURE AD Connect 的安装类型](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)：</span><span class="sxs-lookup"><span data-stu-id="38ad3-237">[Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):</span></span>
+
+   - [<span data-ttu-id="38ad3-238">Express</span><span class="sxs-lookup"><span data-stu-id="38ad3-238">Express</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+
+   - [<span data-ttu-id="38ad3-239">自定义</span><span class="sxs-lookup"><span data-stu-id="38ad3-239">Custom</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+
+   - [<span data-ttu-id="38ad3-240">传递身份验证</span><span class="sxs-lookup"><span data-stu-id="38ad3-240">Pass-through authentication</span></span>](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
-> <span data-ttu-id="75806-203">此 cmdlet 使用批处理方法，在显示 cmdlet 结果之前，有几分钟的传播延迟。</span><span class="sxs-lookup"><span data-stu-id="75806-203">This cmdlet uses a batch processing method that results in a propagation delay of a few minutes before the results of the cmdlet are visible.</span></span>
+> <span data-ttu-id="38ad3-241">当您完成 Azure Active Directory 同步工具配置向导时，将在 Active Directory 林中创建**MSOL_AD_SYNC**帐户。</span><span class="sxs-lookup"><span data-stu-id="38ad3-241">When you finish the Azure Active Directory Sync Tool Configuration Wizard, the **MSOL_AD_SYNC** account is created in your Active Directory forest.</span></span> <span data-ttu-id="38ad3-242">此帐户用于读取和同步您的本地 Active Directory 信息。</span><span class="sxs-lookup"><span data-stu-id="38ad3-242">This account is used to read and synchronize your on-premises Active Directory information.</span></span> <span data-ttu-id="38ad3-243">为了使目录同步正常工作，请确保本地目录同步服务器上的 TCP 443 处于打开状态。</span><span class="sxs-lookup"><span data-stu-id="38ad3-243">In order for directory synchronization to work correctly, make sure that TCP 443 on your local directory synchronization server is open.</span></span>
 
-### <a name="use-eop-powershell-to-remove-a-mail-user"></a><span data-ttu-id="75806-204">使用 EOP PowerShell 删除邮件用户</span><span class="sxs-lookup"><span data-stu-id="75806-204">Use EOP PowerShell to remove a mail user</span></span>
-
-<span data-ttu-id="75806-205">此示例使用 [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) cmdlet 删除用户 Jeffrey Zeng：</span><span class="sxs-lookup"><span data-stu-id="75806-205">This example uses the [Remove-EOPMailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser) cmdlet to delete user Jeffrey Zeng:</span></span>
-
-```PowerShell
-Remove-EOPMailUser -Identity Jeffrey
-```
-<span data-ttu-id="75806-206">若要验证此操作是否有效，请运行 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)" cmdlet，以验证邮件用户是否已不再存在。</span><span class="sxs-lookup"><span data-stu-id="75806-206">To verify that this worked, run the [Get-Recipient](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient) cmdlet to verify that the mail user no longer exists.</span></span>
-
-```PowerShell
-Get-Recipient Jeffrey | Format-List
-```
+<span data-ttu-id="38ad3-244">配置同步之后，请务必验证 AAD 连接是否正确同步。</span><span class="sxs-lookup"><span data-stu-id="38ad3-244">After configuring your sync, be sure to verify that AAD Connect is synchronizing correctly.</span></span> <span data-ttu-id="38ad3-245">在 EAC 中，转到 "**收件人** \> " "**联系人**"，并查看从您的本地环境中正确同步的用户列表。</span><span class="sxs-lookup"><span data-stu-id="38ad3-245">In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.</span></span>
