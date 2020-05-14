@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
-ms.openlocfilehash: 447777c4cf3eb8532e30977d97694445647889d4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 34e9998ee0a17f44ba4f70d2cd1c5f1d12ce926f
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208076"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214290"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -429,7 +429,7 @@ ms.locfileid: "44208076"
 |已向网站集添加权限级别|PermissionLevelAdded|已向网站集添加权限级别。|
 |已接受访问请求|AccessRequestAccepted|已接受对网站、文件夹或文档的访问请求，并已授予请求用户访问权限。|
 |已接受共享邀请|SharingInvitationAccepted|用户（成员或来宾）接受共享邀请并被授予对资源的访问权限。 此事件包含受邀用户的信息以及用于接受邀请的电子邮件地址（可能有所不同）。 此活动通常伴有第二事件，描述向用户授予资源访问权限的方式，例如将用户添加到可以访问资源的组。|
-|已阻止共享邀请|SharingInvitationBlocked|由于基于目标用户的域允许或拒绝外部共享的外部共享策略，已阻止组织中的用户发送的共享邀请。 在这种情况下，阻止共享邀请的原因如下： <br/> 允许的域列表中不包含目标用户的域。 <br/> 或 <br/> 目标用户的域包含在阻止的域列表中。 <br/> 有关基于域允许或阻止外部共享的详细信息，请参阅 [SharePoint Online 和 OneDrive for Business 中的受限域共享](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9)。|
+|已阻止共享邀请|SharingInvitationBlocked|由于基于目标用户的域允许或拒绝外部共享的外部共享策略，已阻止组织中的用户发送的共享邀请。 在这种情况下，阻止共享邀请的原因如下： <br/> 允许的域列表中不包含目标用户的域。 <br/> 或 <br/> 目标用户的域包含在阻止的域列表中。 <br/> 有关基于域允许或阻止外部共享的详细信息，请参阅 [SharePoint Online 和 OneDrive for Business 中的受限域共享](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)。|
 |已创建访问请求|AccessRequestCreated|用户请求访问其无权访问的网站、文件夹或文档。|
 |已创建公司可共享链接 |CompanyLinkCreated|用户已创建指向某资源的公司范围链接。 公司范围链接仅供组织内的成员使用。 来宾无法使用。|
 |已创建匿名链接|AnonymousLinkCreated|用户创建了指向某资源的匿名链接。 拥有此链接的任何人均可访问资源，无需通过身份验证。|
@@ -502,9 +502,9 @@ ms.locfileid: "44208076"
 |已允许用户创建组|AllowGroupCreationSet|网站管理员或所有者向网站添加权限级别，允许分配了该权限的用户为网站创建组。 |
 |已取消网站地域移动|SiteGeoMoveCancelled|SharePoint 或全局管理员成功取消 SharePoint 或 OneDrive 网站地域移动。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [OneDrive 和 SharePoint Online 的 Multi-Geo 功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已更改共享策略|SharingPolicyChanged|SharePoint 或全局管理员使用 Microsoft 365 管理门户、SharePoint 管理门户或 SharePoint Online 命令行管理程序更改了 SharePoint 共享策略。 将记录对组织中的共享策略设置所做的任何更改。 已更改的策略在事件记录详细属性的 **ModifiedProperties** 字段中标识。|
-|已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Microsoft 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622)。|
+|已更改设备访问策略|DeviceAccessPolicyChanged|SharePoint 或全局管理员已更改组织的非托管设备策略。 此策略控制未加入组织的设备对 SharePoint、OneDrive 和 Microsoft 365 的访问权限。 配置此策略需要企业移动性 + 安全性订阅。 有关详细信息，请参阅[控制非托管设备的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。|
 |已更改豁免用户代理|CustomizeExemptUsers|SharePoint 或全局管理员自定义 SharePoint 管理中心的豁免用户代理列表。 你可以指定免于接收要索引的整个网页的用户代理。 这意味着，当指定为豁免的用户代理遇到 InfoPath 表单时，表单将作为 XML 文件而不是整个网页返回。 这可以加速对 InfoPath 表单编制索引。|
-|已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f)。|
+|已更改网络访问策略|NetworkAccessPolicyChanged|SharePoint 或全局管理员已通过 SharePoint 管理中心或 SharePoint Online PowerShell 更改基于位置的访问策略（也称为“受信任的网络边界”）。 这类策略基于指定的授权 IP 地址范围控制组织中的用户对 SharePoint 和 OneDrive 资源的访问权限。 有关详细信息，请参阅[基于网络位置控制对 SharePoint Online 和 OneDrive 数据的访问权限](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)。|
 |已完成网站地域移动|SiteGeoMoveCompleted|组织中的全局管理员计划的网站地域移动已成功完成。 Multi-Geo 功能可让一个组织跨越多个 Microsoft 数据中心地理位置（称之为“地理位置”）。 有关详细信息，请参阅 [Office 365 中 OneDrive 和 SharePoint Online 的多地理位置功能](https://go.microsoft.com/fwlink/?linkid=860840)。|
 |已创建“收件人​​”连接|SendToConnectionAdded|SharePoint 或全局管理员在 SharePoint 管理中心中的“记录管理”页上创建新“发送至”连接。 “发送至”连接指定文档存储库或记录中心设置。 创建“收件人”连接时，内容管理器可以将文档提交到指定位置。|
 |已创建网站集|SiteCollectionCreated|SharePoint 或全局管理员在 SharePoint Online 组织中创建网站集，或者用户设置其 OneDrive for Business 网站。|
@@ -599,7 +599,7 @@ ms.locfileid: "44208076"
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD 组管理活动
 
-下表列出了管理员或用户创建或更改 Microsoft 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7)。
+下表列出了管理员或用户创建或更改 Microsoft 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -734,9 +734,9 @@ ms.locfileid: "44208076"
 
 下表列出了 Microsoft Teams 中记录在审核日志中的用户和管理员活动。 Microsoft Teams 是 Office 365 中以聊天为中心的工作区。 它将团队的对话、会议、文件和笔记集中到一个位置。 有关帮助主题的详细信息和链接，请参阅：
 
-- [有关 Microsoft Teams 的常见问题 - 管理员帮助](https://support.office.com/article/05cbe533-2181-4e95-a4b0-52cd7695fafc)
+- [有关 Microsoft Teams 的常见问题 - 管理员帮助](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
 
-- [Microsoft Teams 帮助](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
+- [Microsoft Teams 帮助](https://support.office.com/teams)
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -746,7 +746,7 @@ ms.locfileid: "44208076"
 |已添加成员|MemberAdded|团队所有者将成员添加到团队、频道或群组聊天中。|
 |已添加选项卡|TabAdded|用户将选项卡添加到频道。|
 |已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队频道的名称（“**频道名称**”）。 <br/><br/>* 更改团队频道的说明（“**频道说明**”）。|
-|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>* 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图**”）。<br/><br/>* 允许或禁止团队成员安排私人会议（“**私人会议安排**”）。<br/><br/>* 允许或禁止团队成员安排频道会议（“频道会议安排**”）。<br/><br/>* 启用或禁用 Teams 会议中的视频呼叫（“Skype 会议视频通话”）。<br/><br/>* 启用或禁用在 Microsoft Teams 聚会中屏幕共享（“**Skype 会议屏幕共享**”）。 <br/><br/>允许或禁止将动画图像（称为 Giphy）添加到 Teams 对话（动画图像 **）。<br/><br/>* 更改组织的内容评级设置（**内容评级**）。内容评级限制了可在对话中显示的动画图像的类型。<br/><br/>* 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>* 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（**可编辑图像**）。<br/><br/>* 允许或禁止团队成员在 Microsoft Teams 使用机器人（组织范围内的机器人 **）。<br/><br/>* 为 Microsoft Teams 启用特定的机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（**单个机器人**）。<br/><br/>* 允许或禁止团队成员添加扩展或选项卡（**扩展或选项卡**）。 <br/><br/>* 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>* 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
+|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>* 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图**”）。<br/><br/>* 允许或禁止团队成员安排私人会议（“**私人会议安排**”）。<br/><br/>* 允许或禁止团队成员安排频道会议（“频道会议安排**”）。<br/><br/>* 启用或禁用 Teams 会议中的视频呼叫（“Skype 会议视频通话”）。<br/><br/>* 启用或禁用在 Microsoft Teams 聚会中屏幕共享（“**Skype 会议屏幕共享**”）。 <br/><br/>允许或禁止将动画图像（称为 Giphy）添加到 Teams 对话（动画图像 **）。<br/><br/>* 更改组织的内容评级设置（**内容评级**）。内容评级限制了可在对话中显示的动画图像的类型。<br/><br/>* 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>* 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（**可编辑图像**）。<br/><br/>* 允许或禁止团队成员在 Microsoft Teams 使用机器人（组织范围内的机器人 **）。<br/><br/>* 为 Microsoft Teams 启用特定的机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（**单个机器人**）。<br/><br/>* 允许或禁止团队成员添加扩展或选项卡（**扩展或选项卡**）。 <br/><br/>* 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>* 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
 |已更改团队成员的角色|MemberRoleChanged|团队所有者更改团队中成员的角色。 以下值表示分配给用户的角色类型。 <br/><br/> **1** - 表示“所有者”角色。<br/>**2** - 表示“成员”角色。 <br/>**3** - 表示“来宾”角色。 <br/><br/> 成员属性还包括组织的名称和成员的电子邮件地址。|
 |已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>* 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>* 更改团队的名称（“**团队名称**”）。 <br/><br/>* 更改团队说明（团队说明**）。 <br/><br/>* 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
 |已创建团队|TeamCreated|用户创建团队。|

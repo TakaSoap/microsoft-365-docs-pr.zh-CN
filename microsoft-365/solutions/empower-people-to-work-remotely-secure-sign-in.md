@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: 2cb16c78f7fb0b1f9f48559c61a6200d6adcf470
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a0350be5cf75024fbefadb21ae56017bf64ca0d8
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166133"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213468"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
 
@@ -55,9 +55,9 @@ ms.locfileid: "44166133"
 
 条件访问策略是一组规则，指定评估和允许登录的条件。 例如，你可以创建一个条件访问策略，指明：
 
-- 如果用户帐户名适用于作为 Exchange、用户、密码、安全性、SharePoint 或全局管理员的用户，则需要先进行 MFA，然后才能允许访问。
+- 如果用户帐户名是分配了 Exchange、用户、密码、安全性、SharePoint 或全局管理员角色的用户组的成员，则需要先进行 MFA，然后才能允许访问。
 
-在这些管理员角色中添加或删除用户帐户时，此策略比尝试记住配置针对 MFA 的单个用户帐户要简单得多。
+通过此策略，当为用户分配或取消分配了上述管理员角色时，你可以根据其组成员身份要求进行 MFA，而不是针对单个用户帐户进行 MFA 配置。
 
 你还可以使用条件访问策略来实现更高级的功能，例如，要求从合规设备（例如运行 Windows 10 的电脑）完成登录。
 
@@ -65,15 +65,15 @@ ms.locfileid: "44166133"
 
 有关详细信息，请参阅此[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
-## <a name="azure-ad-identity-protection-policies"></a>Azure AD 标识保护策略
+## <a name="azure-ad-identity-protection-support"></a>Azure AD 标识保护支持
 
-Azure AD 标识保护策略是指定评估和允许登录的条件的规则。 例如，你可以创建一个 Azure AD 标识保护策略，指明：
+借助 Azure AD 标识保护，你可以创建其他条件访问策略，该策略规定：
 
-- 如果登录风险确定为“中等”或“高”，则用户必须使用 MFA 登录。
+- 如果登录风险确定为中等或高风险，则必须进行 MFA。
 
-Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2。
+要使用 Azure AD 标识保护，需要配备 Microsoft 365 E5 中包含的 Azure AD Premium P2。
 
-有关详细信息，请参阅此 [Azure AD 标识保护概述](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
+有关详细信息，请参阅[基于风险的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)。
 
 ## <a name="using-these-methods-together"></a>结合使用这些方法
 
@@ -84,12 +84,12 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2。
 
 如果启用了安全性默认值，系统将提示所有新用户进行 MFA 注册并使用 Microsoft Authenticator 应用。 
 
-下表显示了通过安全性默认值、条件访问策略和每用户帐户设置启用 MFA 的结果。
+下表显示了通过安全性默认值和条件访问策略启用 MFA 的结果。
 
-|| 已启用 | Disabled | 辅助身份验证方法 |
+|| 启用 | 禁用 | 其他身份验证方法 |
 |:-------|:-----|:-------|:-------|
 | **安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
-| **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果未启用任何条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
+| **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 
 ## <a name="admin-training-and-technical-resources-for-mfa-and-identity"></a>用于 MFA 和身份的管理员培训和技术资源

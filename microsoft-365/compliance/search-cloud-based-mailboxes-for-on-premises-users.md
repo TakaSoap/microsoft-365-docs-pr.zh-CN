@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 MicrosoftTeams 聊天数据（称为 1xN 聊天）。
-ms.openlocfilehash: 7b05460bb41ff97c8571a96b38a8eebd50a206fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 488a08067a39ff4bab61696d5faf8b7c849b4ab8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034567"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214596"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜索本地用户基于云的邮箱
 
@@ -59,7 +59,7 @@ ms.locfileid: "44034567"
   
 - 组织的默认域名。
 
-- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性**下）。 请参阅[查找 Microsoft 365 租户 ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b)。
+- 组织的租户名称和租户 ID。 可在 Azure Active Directory 门户中找到这些信息（位于“**管理**”\>“**属性**下）。 请参阅[查找 Microsoft 365 租户 ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
 
 - 可在支持请求中使用以下标题或说明：“为本地用户启用应用程序内容搜索”。 这有助于将请求传送到将实现请求的电子数据展示工程团队。
 

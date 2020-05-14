@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 36866f457369248f642a4189f2d9f46e58baa2a3
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a4bf22f7064e74926935a228f84281af9171bedc
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165943"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214606"
 ---
 # <a name="overview-of-retention-policies"></a>保留策略概述
 
@@ -422,7 +422,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [在安全与合规中心内管理电子数据展示事例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
+- [在安全与合规中心内管理电子数据展示事例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery)（电子数据展示保留） 
     
 - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)（电子数据展示保留） 
 
@@ -432,15 +432,15 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
     
 ### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business
 
-- [在安全与合规中心内管理电子数据展示事例](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da)（电子数据展示保留） 
+- [在安全与合规中心内管理电子数据展示事例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery)（电子数据展示保留） 
     
-- [在电子数据展示中心内将内容添加到案件集并保留源](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479)（电子数据展示保留） 
+- [在电子数据展示中心内将内容添加到案件集并保留源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)（电子数据展示保留） 
     
-- [文档删除策略概述](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5)（仅限删除） 
+- [文档删除策略概述](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies)（仅限删除） 
     
 - [配置就地记录管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a)（保留） 
     
-- [使用网站关闭和删除策略](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5)（仅限删除） 
+- [使用网站关闭和删除策略](https://support.microsoft.com/zh-CN/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5)（仅限删除） 
     
 - [信息管理策略](intro-to-info-mgmt-policies.md)（仅限删除） 
     

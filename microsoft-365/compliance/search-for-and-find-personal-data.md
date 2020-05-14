@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何在 Office 365 中搜索和查找符合一般数据保护条例 (GDPR) 的个人数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50c8db59cfd5e9a7de3da0dc696227e85dab1cee
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e0d29697a28221b5ff998f5ce923c143bf7a0804
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208086"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214576"
 ---
 # <a name="search-for-and-find-personal-data"></a>搜索和查找个人数据
 
@@ -80,7 +80,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 
 本主题列出了适用于欧盟公民的某些敏感信息类型。 请检查安全中心或合规中心，了解是否有可帮助实现 GDPR 合规性的新增内容。
 
-另请参阅下文：[敏感信息类型列表及每种类型可查找的内容](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b)。
+另请参阅下文：[敏感信息类型列表及每种类型可查找的内容](https://docs.microsoft.com/microsoft-365/compliance/content-search)。
 
 敏感信息类型定义了自动进程识别特定信息类型的方式，例如银行帐号、卫生服务号码和信用卡号码等。敏感信息类型也可称为条件。敏感信息类型通过正则表达式或函数可以识别的模式定义。此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。可信度和邻近度也会在评估过程中使用。
 
@@ -111,7 +111,7 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 <p>SensitiveType:&quot;法国护照号码&quot;</p>
 </blockquote>
 <p>将搜索范围限定为 SharePoint（包括 OneDrive for Business）。确保语法准确无误，没有多余的空格或拼写错误。</p>
-<p>请参阅<a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">创建查询以查找存储在站点上的敏感数据</a>。</p></td>
+<p>请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">创建查询以查找存储在站点上的敏感数据</a>。</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>查看各个搜索的结果</p></td>
@@ -218,4 +218,4 @@ Microsoft 建议分三个阶段在 Office 365 中查找个人数据。本主题�
 
 注意：“SensitiveType”区分大小写，但查询的其余部分不区分大小写。
 
-此外，还可以使用属性和运算符来说明如何优化查询。有关详细信息和示例，请参阅[创建查询以查找存储在站点上的敏感数据](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836)。
+此外，还可以使用属性和运算符来说明如何优化查询。有关详细信息和示例，请参阅[创建查询以查找存储在站点上的敏感数据](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites)。

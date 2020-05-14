@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3cc92be00eca4f1e90917cadea26df8f10adf267
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066609"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214238"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 信息安全管理标准
 
@@ -125,7 +125,7 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 
 **可从哪里获得 Microsoft 服务的 ISO/IEC 27001 审核报告和范围说明书？**
 
-该[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供独立审核的合规性报告。 你可以使用此门户来请求报告，以便审核员可将 Microsoft 的云服务结果与你自己的法律和法规要求进行比较。
+该[服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供独立审核的合规性报告。 你可以使用此门户来请求报告，以便审核员可将 Microsoft 的云服务结果与你自己的法律和法规要求进行比较。
 
 **Microsoft 是否进行年度测试以排查基础结构故障？**
 

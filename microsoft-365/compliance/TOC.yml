@@ -247,15 +247,15 @@
       items:
         - name: 有关存档第三方数据的概述
           href: archiving-third-party-data.md
-        - name: 使用连接器存档 Facebook 数据
+        - name: 存档脸书数据（预览版）
           href: archive-facebook-data-with-sample-connector.md
-        - name: 设置连接器以存档 Twitter 数据
+        - name: 存档推特数据（预览版）
           href: archive-twitter-data-with-sample-connector.md
-        - name: 设置连接器以存档 LinkedIn 数据
+        - name: 存档领英数据
           href: archive-linkedin-data.md
-        - name: 设置连接器以存档 Instant Bloomberg 数据
+        - name: 存档即时 Bloomberg 数据
           href: archive-instant-bloomberg-data.md
-        - name: 设置连接器以导入 HR 数据
+        - name: 导入 HR 数据（预览版）
           href: import-hr-data.md
         - name: 与合作伙伴联系以存档第三方数据
           href: work-with-partner-to-archive-third-party-data.md

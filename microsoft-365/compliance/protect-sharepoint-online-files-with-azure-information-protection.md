@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 摘要：应用 Azure 信息保护来保护高度机密的 SharePoint Online 团队网站中的文件。
-ms.openlocfilehash: 1c704689518da14bcabb56e81830b8456ebd2951
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f905f673efe050e07ad26728628bce05073a26b8
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632187"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214636"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>使用 Azure 信息保护来保护 SharePoint Online 文件
 
@@ -42,7 +42,7 @@ ms.locfileid: "43632187"
 关于此解决方案，请务必注意以下几点：
 - 将 Azure 信息保护加密应用于 Office 365 中存储的文件时，该服务无法处理这些文件的内容。共同创作、电子数据展示、搜索、Delve 和其他协作功能将无法正常使用。数据丢失防护 (DLP) 策略只适用于元数据（包括 Microsoft 365 标签），但并不适用于这些文件的内容（如文件内的信用卡号）。
 
-- 此解决方案要求，用户必须选择通过 Azure 信息保护应用保护的标签。如果需要自动加密并便于 SharePoint 能够将文件编入索引和检查文件，建议在 SharePoint Online 中使用信息权限管理 (IRM)。为 SharePoint 库配置 IRM 后，文件会在下载以供编辑时自动加密。SharePoint IRM 有可能会影响你决定的限制。有关详细信息，请参阅[在 SharePoint 管理中心内设置信息权限管理 (IRM)](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C)。
+- 此解决方案要求，用户必须选择通过 Azure 信息保护应用保护的标签。如果需要自动加密并便于 SharePoint 能够将文件编入索引和检查文件，建议在 SharePoint Online 中使用信息权限管理 (IRM)。为 SharePoint 库配置 IRM 后，文件会在下载以供编辑时自动加密。SharePoint IRM 有可能会影响你决定的限制。有关详细信息，请参阅[在 SharePoint 管理中心内设置信息权限管理 (IRM)](https://docs.microsoft.com/microsoft-365/compliance/set-up-irm-in-sp-admin-center)。
 
 ## <a name="admin-setup"></a>管理员设置
 首先，对 Microsoft 365 订阅按照[使用 Microsoft 365 管理中心激活 Azure RMS](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) 中的说明操作。

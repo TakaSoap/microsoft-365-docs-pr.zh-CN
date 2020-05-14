@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何在环境中为实现 Windows 和 Office 服务做好准备。
-ms.openlocfilehash: bca8fbf39bbbcc7b0a37512383caf630ffe3da67
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: f30581408be1c69d7aec7e31e9b5d6461266adb1
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011611"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222669"
 ---
 # <a name="step-7-windows-and-office-servicing"></a>步骤 7：Windows 和 Office 服务
 
@@ -95,7 +95,7 @@ Windows 10 提供三个服务频道：
 
 Microsoft 365 提供 4 个服务频道：
 
-- [**Office 预览体验计划**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16)适合于组织用于对仍在开发中的最新 Office 特性和功能进行测试并提供反馈
+- [**Office 预览体验计划**](https://products.office.com/office-insider)适合于组织用于对仍在开发中的最新 Office 特性和功能进行测试并提供反馈
 - **每月频道**用于为在最新 Office 功能推出后将其立即提供给用户
 - **半年频道**只每年提供两次新功能和新特性
 - **半年频道（定向）** 是 Office 的完全支持内部版本，支持试点用户和应用程序兼容性测试人员测试和验证下一个半年频道

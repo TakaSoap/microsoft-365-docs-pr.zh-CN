@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何使用通信和培训让最终用户为 Windows 10 和 Microsoft 365 企业应用版做好准备。
-ms.openlocfilehash: 7497925b7efd66dd4b86dd4d64df81490bbc7d90
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e6118e1029186c84bebdb0fee079364f22356c2e
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636743"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222657"
 ---
 # <a name="step-8-user-communications-and-training"></a>步骤 8：用户通信和培训
 
@@ -61,7 +61,7 @@ ms.locfileid: "43636743"
 
 例如，如果你启用了多重身份验证，这会使用 Azure AD，并通过利用手机应用或 PIN 来保护用户登录到资源，以安全地访问服务。Azure 信息保护使用户能够轻松地分类和标记文档。
 
-[为用户设置多重身份验证](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+[为用户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)
 
 这些只是你的用户将要体验的几个新功能，其中的某些功能可能会另他们感到吃惊（正面的或不那么正面的），尤其是在他们更改了正常工作流时，这可能会为你或你的支持人员带来更多的工作。
 
