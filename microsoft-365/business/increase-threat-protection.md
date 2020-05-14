@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并针对网络钓鱼、恶意软件和其他威胁保护敏感数据。
-ms.openlocfilehash: 2dd75b20bf203b9b8f0cdefb2459c45d1d0ccec1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627118"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224463"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -34,15 +34,15 @@ ms.locfileid: "43627118"
 
 在开始之前，请检查您的 Office 365 安全分数。 Office 365 安全分数根据您的常规活动和安全设置来分析组织的安全性，并分配分数。 首先记录你的当前分数。 若要增加成绩，请完成本文中建议的操作。 目标不能达到最大分数，但请注意保护您的环境不会对用户的工作效率造成负面影响的机会。 
 
-有关详细信息，请参阅[Microsoft 安全分数](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score)。
+有关详细信息，请参阅[Microsoft 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)。
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>提高针对邮件中的恶意软件的保护级别
 
 您的 Office 365 或 Microsoft 365 环境包括针对恶意软件的防护。 您可以通过阻止经常用于恶意软件的文件类型来阻止附件，从而提高此保护。 若要提高电子邮件的恶意软件保护：
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用你的管理员帐户凭据登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) 并使用你的管理员帐户凭据登录。 
     
-2. &amp;在安全合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **反恶意软件**"。
+2. 在安全 &amp; 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **反恶意软件**"。
     
 3. 双击默认策略以编辑此公司范围的策略。
     
@@ -67,17 +67,17 @@ ms.locfileid: "43627118"
 
 若要创建邮件传输规则，请执行以下操作：
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>转到 "管理中心"，然后选择 "**管理中心** \> " " **Exchange**"。
+1. 转到 "管理中心" <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，然后选择 "**管理中心**" " \> **Exchange**"。
     
 2. 在 "**邮件流**" 类别中，选择 "**规则**"。
     
-3. 选择**+**""，然后选择 "**创建新规则**"。
+3. 选择 **+** ""，然后选择 "**创建新规则**"。
     
 4. 选择对话框底部的 "**更多选项**" 可查看完整的选项集。 
     
 5. 对规则应用下表中的设置。 对其余设置使用默认值，除非您要对其进行更改。
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -99,17 +99,17 @@ ms.locfileid: "43627118"
   
 若要创建邮件传输规则，请观看[此简短视频](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)或按照以下步骤操作：
   
-1. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+1. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
     
 2. 在 "**邮件流**" 类别中，选择 "**规则**"。
     
-3. 选择**+**""，然后选择 "**创建新规则**"。
+3. 选择 **+** ""，然后选择 "**创建新规则**"。
     
 4. 若要查看所有选项，请在对话框底部选择 "**更多选项**"。 
     
 5. 应用下表中的设置。 对其余设置使用默认值，除非您要对其进行更改。
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -130,7 +130,7 @@ ms.locfileid: "43627118"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。 
     
-2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全 &amp; 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "**策略**" 页上，选择 " **ATP 反网络钓鱼**"。
     
@@ -147,10 +147,10 @@ ms.locfileid: "43627118"
 |说明  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
 |添加要保护的用户  <br/> |选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。  <br/> |
 |添加要保护的域  <br/> |选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。  <br/> |
-|选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳<span><span>@contoso .com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”****。  <br/> |
+|选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳 <span> <span> @contoso .com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”****。  <br/> |
 |邮箱智能  <br/> |默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”****。  <br/> |
 |添加受信任的发件人和域  <br/> |你可以在此处添加你自己的域或任何其他受信任域。  <br/> |
-|应用于  <br/> |选择“收件人域为”****。 在“以下任何项”**** 中，选择“选择”****。 选择“+ 添加”****。 选中域名称旁边的复选框，例如 " *contoso"。<span>com <span>*，请在列表中，然后选择 "**添加**"。 选择“完成”****。  <br/> |
+|应用于  <br/> |选择“收件人域为”****。 在“以下任何项”**** 中，选择“选择”****。 选择“+ 添加”****。 选中域名称旁边的复选框，例如 " *contoso"。 <span> <span>com*，请在列表中，然后选择 "**添加**"。 选择“完成”****。  <br/> |
   
 ## <a name="protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>使用 ATP 安全附件防止恶意附件和文件
 
@@ -158,15 +158,15 @@ ms.locfileid: "43627118"
   
 若要创建 ATP 安全附件策略，请观看[此简短视频](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
   
-1. 转到[https://protection.office.com](https://protection.office.com)，然后使用你的管理员帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的管理员帐户登录。 
     
-2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全 &amp; 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "策略" 页上，选择 " **ATP 安全附件**"。
     
 4. 在 "安全附件" 页面上，选中 "**启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP** " 复选框，以应用广泛的保护。 
     
-5. 选择**+** 以创建新策略。 
+5. 选择 **+** 以创建新策略。 
     
 6. 应用下表中的设置。 
     
@@ -195,9 +195,9 @@ ms.locfileid: "43627118"
     
 若要设置 ATP 安全链接，请观看[此简短的培训视频](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
   
-1. 转到[https://protection.office.com](https://protection.office.com)，然后使用你的管理员帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的管理员帐户登录。 
     
-2. 在安全&amp;合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
+2. 在安全 &amp; 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 在 "策略" 页上，选择 " **ATP 安全链接**"。
     
@@ -207,15 +207,15 @@ ms.locfileid: "43627118"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 "适用于**企业的 Microsoft 365 应用，Office For iOS 和 Android**"。
     
-3. 选择“**保存**”。 
+3. 选择“保存”****。 
     
 创建一个面向域中所有收件人的新策略：
   
-1. 在 "安全链接" 页面上，在 "**适用于整个组织**的策略**+** " 下，选择 "创建新策略"。 
+1. 在 "安全链接" 页面上，在 "**适用于整个组织的策略**" 下，选择 " **+** 创建新策略"。 
     
 2. 应用下表中列出的设置。
     
-3. 选择“**保存**”。 
+3. 选择“保存”****。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
