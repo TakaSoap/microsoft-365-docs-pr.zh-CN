@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 操作方法：将未存储在 Microsoft 365 中的内容导入到 Azure blob 中，以便可以使用 AeD 对其进行分析
-ms.openlocfilehash: daafcf003ded35868413d99c11ec1bf3941dca9f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634154"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214536"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>导入非 Microsoft 365 内容以实现高级电子数据展示（经典）分析
 
@@ -30,7 +30,7 @@ ms.locfileid: "43634154"
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
-> 您可以购买非 Microsoft 365 内容的高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照[为 Microsoft 365 for Business 购买或编辑加载](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6)项中的步骤进行操作，并购买高级电子数据展示存储加载项。 
+> 您可以购买非 Microsoft 365 内容的高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照[为 Microsoft 365 for Business 购买或编辑加载](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)项中的步骤进行操作，并购买高级电子数据展示存储加载项。 
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -51,7 +51,7 @@ ms.locfileid: "43634154"
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>将非 Office 365 内容上载到高级电子数据展示
 
 
-1. 作为电子数据展示管理器或电子数据展示管理员，打开**电子数据展示**，并打开将向其上载非 Office 365 数据的大小写。 如果您需要创建一个事例，请参阅[在&amp;安全合规中心中管理电子数据展示事例](ediscovery-cases.md)
+1. 作为电子数据展示管理器或电子数据展示管理员，打开**电子数据展示**，并打开将向其上载非 Office 365 数据的大小写。 如果您需要创建一个事例，请参阅[在安全 &amp; 合规中心中管理电子数据展示事例](ediscovery-cases.md)
     
 2. 单击 "**切换到高级电子数据展示**"
     
@@ -71,7 +71,7 @@ ms.locfileid: "43634154"
     
   - 根文件夹-C:\Collected 数据 
     
-  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp; sr = c&amp;Si = NonOfficeData15% 7C0&amp;sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
+  - 容器 url- https://zoomsabcprodeuss114.blob.core.windows.net/ingestion53d059efe5f74784afb308f66cdebf17?sv=2015-04-05&amp ; sr = c &amp; Si = NonOfficeData15% 7C0 &amp; sig = Bk5INP8CUfv1y4CSJiJl3pJt3Ekvu8GS3P8NkOvoQxA% 3d
     
     AzCopy 命令行语法为：
     

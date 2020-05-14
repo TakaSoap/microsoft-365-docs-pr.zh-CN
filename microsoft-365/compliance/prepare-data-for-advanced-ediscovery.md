@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
 description: '了解如何使用安全 &amp; 合规中心准备数据以使用高级电子数据展示进行分析。 '
-ms.openlocfilehash: 25b500e88e53dfae9b8fa9d504a402f4e2f7ce12
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 31bf002c275b228de12b7ff9e39fabf7c72be74d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208096"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214280"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>为高级电子数据展示准备数据（经典）
 
@@ -37,7 +37,7 @@ ms.locfileid: "44208096"
 有关在高级电子数据展示中准备分析搜索结果的详细步骤，请参阅[为高级电子数据展示准备搜索结果](prepare-search-results-for-advanced-ediscovery.md)。
   
 > [!NOTE]
-> 如果你的数据在 Microsoft 365 之外，并且想要将其导入到 Microsoft 365，以便在高级电子数据展示中准备和分析它，请参阅将[PST 文件导入到 Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)和[存档第三方数据](https://go.microsoft.com/fwlink/p/?linkid=716918)的概述。 
+> 如果你的数据在 Microsoft 365 之外，并且想要将其导入到 Microsoft 365，以便在高级电子数据展示中准备和分析它，请参阅将[PST 文件导入到 Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)和[存档第三方数据](https://www.microsoft.com/?ref=go)的概述。 
   
 ## <a name="step-2-load-search-result-data-in-to-a-case-in-advanced-ediscovery"></a>步骤2：将搜索结果数据加载到高级电子数据展示中的案例
 

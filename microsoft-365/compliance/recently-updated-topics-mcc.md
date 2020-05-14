@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b7edcf8c4c530c926d323fddbf795cd930efd649
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036015"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221416"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -32,7 +32,122 @@ ms.locfileid: "44036015"
 > [!TIP]
 > 若要在 Microsoft 365 合规性中心中保持最新功能更新，请查看[microsoft 365 合规性中心中的新增](whats-new.md)功能。
 
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="auditing"></a>审核
+
+[使用高级审核调查已损坏的帐户](mailitemsaccessed-forensics-investigations.md)（新增）<br>有关使用新*MailItemsAccessed*邮箱审核操作进行鉴证调查的新指南。
+
+多个用于[搜索审核日志的](search-the-audit-log-in-security-and-compliance.md)更新，其中包括：
+- 包含有关 "app@sharepoint" 用户在审核记录中列出的详细信息的[新内容](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。
+- 隔离活动的[新说明](search-the-audit-log-in-security-and-compliance.md#quarantine-activities)。
+- 在 "[用户管理活动](search-the-audit-log-in-security-and-compliance.md#user-administration-activities)" 部分中，阐明了当用户更改自己的密码（通过自助密码重置）时，将触发 "更改用户密码事件"，当管理员重置用户的密码时，将触发 "重置用户密码" 事件。
+
+### <a name="auto-expanding-archive"></a>自动扩展存档
+
+[无限存档概述](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)（已更新）<br>添加了一些说明：在邮箱上启用自动扩展存档后，不能删除主存档或辅助存档中的任何文件夹。
+
+### <a name="compliance-scorecompliance-manager"></a>合规性分数/合规性管理器
+
+所有[合规性分数](compliance-score.md)和[合规性管理器](compliance-manager-overview.md)主题都会反映在四月早些时候发布的对这些产品的更新（这两者仍在公开预览中）。 主要更新包括：
+- 简化了创建和修改模板的过程
+- 模板和操作的版本控制通知和控制
+- 跨组同步常见操作
+- 语言支持现已扩展到简体中文、中文（繁体）、法语、德语、意大利语、日语、朝鲜语、葡萄牙语（巴西）、俄语和西班牙语
+
+### <a name="communication-compliance"></a>通信合规性
+
+[案例研究-Contoso 为 Microsoft 团队、Exchange 和 Yammer 通信快速配置冒犯性语言策略](communication-compliance-case-study.md)（新）<br>针对教育和小型企业组织的分步研究，可帮助他们快速配置冒犯性语言策略。 随着组织在 COVID19 响应中上升而增加的客户请求数。
+
+[通信合规性入门](communication-compliance-configure.md)（更新）<br>更新了许可和权限要求。
+
+### <a name="customer-key"></a>客户密钥
+
+[滚动或旋转客户密钥或可用性密钥](customer-key-availability-key-roll.md)（已更新）<br>组织更新，可帮助阐明可和不能滚动的密钥。
+
+[了解客户密钥的可用性密钥](customer-key-availability-key-understand.md)（已更新）<br>添加了针对客户密钥的 Exchange Online 体系结构的说明。
+
+### <a name="data-loss-prevention"></a>数据丢失防护
+
+[数据丢失防护概述](data-loss-prevention-policies.md)（更新）<br>更新了保留标签需要多长时间才能生效，且未配置任何警报的默认行为策略。
+
+### <a name="ediscovery"></a>电子数据展示
+
+[高级电子数据展示入门](get-started-with-advanced-ediscovery.md)（新）<br>提供有关许可和权限要求的信息、配置全局设置和创建新事例的步骤以及高级电子数据展示工作流的演练。
+
+[旧电子数据展示工具的退休](legacy-ediscovery-retirement.md)（更新）<br>由于公共运行状况情况，退休日期移出三个月。 更新了文章 cites 新的退休日期。
+
+### <a name="insider-risk-management"></a>内部风险管理
+
+[内幕风险管理入门](insider-risk-management-configure.md)（已更新）<br>更新了许可和权限要求。
+
+[定义信息障碍策略](information-barriers-policies.md)（已更新）<br>阐明了应用所需的处理速度和时间。 添加了有关如何不应设置任何通讯簿策略的详细信息。 此外，还有各种 PowerShell 代码更新，包括用于筛选的新代码。
+
+[信息障碍](information-barriers.md)（已更新）<br>修复了一些断开的链接和已更新的 PDF 链接和标题。 根据客户反馈，阐明了信息障碍仅支持双向限制。 单向限制（例如，市场营销可以与日贸易贸易通信，但不支持将 day 商贸与营销进行通信）。
+
+[信息障碍故障排除](information-barriers-troubleshooting.md)（已更新）<br>新增了 "疑难解答方案" 一节。 添加了指向有关如何重新应用信息障碍的步骤的链接。
+
+### <a name="office-365-message-encryption"></a>Office 365 邮件加密
+
+[管理 Office 365 邮件加密](manage-office-365-message-encryption.md)（已更新）<br>进行了更新，以反映强制包装函数是一个标准的 OME 功能，而不是一个高级功能。 Rewrote PowerShell 示例，以排除对高级 OME 功能的所有引用吊销和过期。
+
+[邮件加密 FAQ](ome-faq.md) （已更新）<br>阐明了仅 Outlook for web 可以应用临时加密。 同样，对于所有 Outlook 客户端，邮件和未受保护的 PDF 附件都会继承 Exchange Online 中的数据丢失防护（DLP）策略或邮件流规则的 OME 保护。
+
+### <a name="privileged-access-management"></a>特权访问管理
+
+[特权访问管理入门](privileged-access-management-configuration.md)（更新）<br>更新了许可和权限要求。
+
+### <a name="pst-import"></a>PST 导入
+
+[有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)（更新）<br>添加了有关 PST 导入过程如何处理重复的电子邮件的常见问题解答。
+
+### <a name="retention"></a>保留
+
+[保留策略概述](retention-policies.md)（已更新）<br>这些更改包括：
+
+- 为仅保留和仅删除保留策略添加了内容路径（之前，内容路径仅保留并删除）。
+- [更新的部分](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)说明，对于 SharePoint 位置，您现在可以指定 URL，而不是选择网站。 这意味着您不需要访问该网站的权限即可将其包含在保留策略中。
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+[了解敏感度标签](sensitivity-labels.md)（已更新）<br>添加了有关 Azure 门户中的标签管理的弃用详细信息，包括[正式通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)的链接。
+
+[敏感度标签入门](get-started-with-sensitivity-labels.md)（已更新）<br>添加了有关新的敏感度标签阅读者角色的信息，最初仅为标记 PowerShell cmdlet 提供支持。
+
+[创建和配置敏感度标签及其策略](create-sensitivity-labels.md#removing-and-deleting-labels)（已更新）<br>新增了一个部分，说明了删除和删除标签的后果。
+
+[使用敏感度标签保护 Microsoft 团队、microsoft 365 组和 SharePoint 网站中的内容](sensitivity-labels-teams-groups-sites.md)（已更新）<br>这些更改包括：
+
+- 删除了 Azure AD 说明，而不是链接到[AZURE ad 权威信息](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
+- 更新了[如何在创建或编辑敏感度标签部分时配置网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels)，以及有关**Office 365 组连接的团队网站**设置（包括 "**无**新" 选项）的隐私信息。
+- 添加了说明在用户创建团队、组和网站时，如何仅使用带有网站和组设置的标签的说明。 此功能将向组织逐步推出。
+
+[使用敏感度标签限制对内容的访问权限，以应用加密](encryption-sensitivity-labels.md)（已更新）<br>[新分区](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings)，其中包含用于保护文档和电子邮件的一些最常用配置的示例加密设置。
+
+[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)（已更新）<br>对内置标记与 Azure 信息保护统一标记客户端之间的行为差异的说明。
+
+[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)（更新）<br>这些更改包括：
+
+- 阐明了启用此预览除了标记和加密的支持文档外，还会在 Office for web 中显示标签的功能区上的**灵敏度**按钮。
+- 更新了 Office 365 多地理位置的说明。
+- 限制列表包含一个新条目，其中包括当计算机脱机或睡眠时以及是否删除某个标签时，会发生什么情况。
+
+[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)（已更新）<br>这些更改包括：
+
+- 将许可信息移动到以[开始使用敏感度标签](get-started-with-sensitivity-labels.md)。
+- [新部分](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps)介绍如何使用内置于 office 桌面应用程序中的标签。您必须使用 office 的订阅版本，而不是独立版。
+- 受支持的应用程序表包括适用于 iOS 和 Android 的 Office 应用，以及允许用户为 Word、Excel 和 PowerPoint 分配权限的配置。现在，向下滚动到 Windows 和 Mac 的每月频道。  
+- [新部分](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions)介绍了如何使用组策略设置禁用内置标签（如果你当前正在使用要为 Windows 计算机保持使用的其他标记解决方案）。 
+- 更新了[信息权限管理（IRM）选项和敏感度标签](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)部分，并提供了使用应用加密（而非 IRM 选项）的标签的建议，并对两个保护解决方案混合使用时对潜在后果的解释。
+
+### <a name="trainable-classifiers"></a>Trainable 类元
+
+[Trainable 分类器的入门（预览）](classifier-getting-started-with.md) （已更新）<br>添加了有关冒犯性语言模板弃用方式的信息。 此外，还添加了一个表，其中列出了源代码内置分类器中使用的前25种代码语言。
+
 ## <a name="february-2020"></a>2020 年 2 月
+
+> [!NOTE]
+> 上个月中列出的文章可能已被更新、移动或删除。 因此，下面的一些详细信息可能已过时，并且链接可能会断开。
 
 ### <a name="auditing"></a>审核
 

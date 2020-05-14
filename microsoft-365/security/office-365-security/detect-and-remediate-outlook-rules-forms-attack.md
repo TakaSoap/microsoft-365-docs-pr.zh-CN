@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e818d05465f7b91268cc44c345c6699e8c6d0ed
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034812"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224585"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -137,7 +137,7 @@ ms.locfileid: "44034812"
 
 3. 以管理员身份打开 PowerShell 实例，并打开保存脚本的文件夹。
 
-4. 按如下所示`.\Get-AllTenantRulesAndForms.ps1`运行此 PowerShell 命令行 .\Get-AllTenantRulesAndForms.ps1
+4. 按如下所示运行此 PowerShell 命令行 `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>解释输出
 
@@ -159,7 +159,7 @@ ms.locfileid: "44034812"
 
 1. 标识用户在 Outlook 中使用的所有设备。 所有这些人都需要清除潜在的恶意软件。 在清理所有设备之前，不要允许用户登录并使用电子邮件。
 
-2. 按照 "删除每个设备的[规则](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f)" 中的步骤操作。
+2. 按照 "删除每个设备的[规则](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)" 中的步骤操作。
 
 3. 如果您不确定是否存在其他恶意软件，可以在设备上格式化并重新安装所有软件。 对于移动设备，您可以按照制造商的步骤操作，将设备重置为出厂映像。
 

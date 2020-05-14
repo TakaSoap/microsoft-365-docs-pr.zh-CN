@@ -2,8 +2,8 @@
 title: 反垃圾邮件邮件头
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: 了解 Exchange Online Protection 向邮件添加标题字段来提供有关此关邮件的信息，以及其处理方式的相关内容。
+description: 管理员可以了解 Exchange Online Protection 向邮件添加标题字段来提供有关此关邮件的信息，以及其处理方式的相关内容。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f86b5ffa02b6f84c10ab2300f913b5f03726713
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173400"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208218"
 ---
-# <a name="anti-spam-message-headers"></a>反垃圾邮件邮件头
+# <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
-扫描到入站电子邮件时，Exchange Online Protection (EOP) 会在每封邮件中插入 **X-Forefront-Antispam-Report** 邮件头。此邮件头中的这些字段可有助于为管理员提供邮件及其处理方式的相关信息。**X-Microsoft-Antispam** 邮件头中的字段提供了关于大量邮件和钓鱼邮件的更多信息。除了这两种邮件头外，还有 **Authentication-results** 邮件头，Exchange Online Protection 会在其中为处理的每封邮件插入电子邮件身份验证结果。
+在有 Exchange Online 的 Microsoft 365 组织，或没有 Exchange Online 邮箱的 Exchange Online Protection (EOP) 组织中，EOP 扫描入站电子邮件时，会在每封邮件中插入 **X-Forefront-Antispam-Report** 标题。此标题中的这些字段可有助于为管理员提供邮件及其处理方式的相关信息。**X-Microsoft-Antispam** 标题中的字段提供了关于大量邮件和钓鱼邮件的更多信息。除了这两种邮件头外，还有 **Authentication-results** 标题，Exchange Online Protection 会在其中为处理的每封邮件插入电子邮件身份验证结果。
 
 要了解如何查看各种电子邮件客户端中的电子邮件头，请参阅[ Outlook 中查看 Internet 邮件头](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
 

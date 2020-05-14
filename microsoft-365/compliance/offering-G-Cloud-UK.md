@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 66db28688a483aea8c0092202eda258a2032027f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cc6f2a8c52a5fc829a9f04c51f78cf7ea5c2f1e1
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066557"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214496"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
@@ -49,7 +49,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 - Intune
 - Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365： Exchange Online、SharePoint Online 和 Skype for Business Online
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
@@ -82,7 +82,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 [开始使用 Azure UK G-云蓝图](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **谁有资格使用数字市场？**
 
@@ -105,7 +105,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 **如何获取审计员的报告的副本？**
 
-该[服务信任门户](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
 
 ## <a name="resources"></a>资源
 

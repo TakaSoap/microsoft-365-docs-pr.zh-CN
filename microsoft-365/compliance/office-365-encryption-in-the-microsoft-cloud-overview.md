@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 在本文中，阅读了用于将客户数据安全保存在 Microsoft 云中的各种形式的加密的概述。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62353725073f5010db1a8681bebad18bc671d81f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e48cc4fc54f0bc4553bab655611900523e11bd4d
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031382"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214270"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Microsoft 云中的加密
 
@@ -30,7 +30,7 @@ Microsoft 企业云服务中的客户数据受各种技术和过程（包括各�
 
 无论客户配置如何，存储在 Microsoft 企业云服务中的客户数据都使用一种或多种形式的加密进行保护。 （我们的加密策略及其强制实施的验证将独立于多个第三方审计员进行验证，这些审核的报告在[服务信任门户](https://aka.ms/stp)上可用。）
 
-Microsoft 提供了在 rest 和途对客户数据进行加密的服务端技术。 例如，对于 rest 上的客户数据，Microsoft Azure 使用[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 microsoft 365 使用 Bitlocker、 [Azure 存储服务加密](https://azure.microsoft.com/documentation/articles/storage-service-encryption/)、[分布式密钥管理器](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376)（DKM）和 microsoft 365 服务加密。 对于传输中的客户数据，Azure、Office 365、Microsoft 商业支持、Microsoft Dynamics 365、Microsoft Power BI 和 Visual Studio Team Services 使用业界标准的安全传输协议，如 Internet 协议安全性（IPsec）和传输层安全性（TLS），在 Microsoft 数据中心之间以及用户设备与 Microsoft 数据中心之间。
+Microsoft 提供了在 rest 和途对客户数据进行加密的服务端技术。 例如，对于 rest 上的客户数据，Microsoft Azure 使用[bitlocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview)和[DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt)，而 microsoft 365 使用 Bitlocker、 [Azure 存储服务加密](https://docs.microsoft.com/azure/)、[分布式密钥管理器](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets)（DKM）和 microsoft 365 服务加密。 对于传输中的客户数据，Azure、Office 365、Microsoft 商业支持、Microsoft Dynamics 365、Microsoft Power BI 和 Visual Studio Team Services 使用业界标准的安全传输协议，如 Internet 协议安全性（IPsec）和传输层安全性（TLS），在 Microsoft 数据中心之间以及用户设备与 Microsoft 数据中心之间。
 
 除了 Microsoft 提供的加密安全的基准级别之外，我们的云服务还包括您可以管理的其他加密选项。 例如，您可以对其 Azure 虚拟机（Vm）及其用户之间的流量启用加密。 使用[Azure 虚拟网络](https://azure.microsoft.com/services/virtual-network/)，您可以使用行业标准 IPsec 协议来加密公司 VPN 网关和 Azure 之间以及位于虚拟网络上的虚拟机之间的通信。 此外，[新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)允许您向任何人发送加密邮件。
 
@@ -46,7 +46,7 @@ Microsoft 通过每个新版本的 Windows 操作系统证明在云服务中使�
 - Dynamics 365 和 Dynamics 365 美国政府
 - Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense
 
-静态客户数据的加密由多个服务端技术提供，其中包括 BitLocker、DKM、Azure 存储服务加密和 Exchange Online 中的服务加密、Skype for business、OneDrive for business 和 SharePoint Online。 Office 365 服务加密包含一个选项，可使用存储在 Azure Key Vault 中的客户托管的加密密钥。 此客户管理的密钥选项称为 "[客户密钥](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697)"，适用于 Exchange Online、SharePoint Online、Skype for Business 和 OneDrive for business。
+静态客户数据的加密由多个服务端技术提供，其中包括 BitLocker、DKM、Azure 存储服务加密和 Exchange Online 中的服务加密、Skype for business、OneDrive for business 和 SharePoint Online。 Office 365 服务加密包含一个选项，可使用存储在 Azure Key Vault 中的客户托管的加密密钥。 此客户管理的密钥选项称为 "[客户密钥](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview)"，适用于 Exchange Online、SharePoint Online、Skype for Business 和 OneDrive for business。
 
 对于传输中的客户数据，所有 Office 365 服务器在默认情况下将使用 TLS 与客户端计算机协商安全会话以保护客户数据。  这适用于客户端使用的任何设备（如 Skype for Business、Outlook 和 Outlook 网页版、移动客户端和 web 浏览器）上的协议。
 

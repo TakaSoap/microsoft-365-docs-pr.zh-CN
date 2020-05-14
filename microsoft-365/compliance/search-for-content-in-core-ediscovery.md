@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以搜索可能与核心电子数据展示事例相关的内容。
-ms.openlocfilehash: b8aa090094dc2699ee774a9b662da17fefde1188
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551374"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224619"
 ---
 # <a name="search-for-content-in-a-core-ediscovery-case"></a>在核心电子数据展示事例中搜索内容
 
@@ -30,7 +30,7 @@ ms.locfileid: "43551374"
 
 创建核心电子数据展示搜索：
   
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。
 
 2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 "**全部显示**"，然后单击 "**电子数据展示 > 核心**"。
 
@@ -44,7 +44,7 @@ ms.locfileid: "43551374"
 
     ![新搜索](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
   
-   a. 您可以指定关键字、邮件属性（如发送和接收日期）或文档属性（如文件名或文档的上次更改日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **or**、 **NOT**、 **NEAR**或**ONEAR**。 还可以搜索文档中的敏感信息（如社会保险号），或者搜索已外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。
+   a. 您可以指定关键字、邮件属性（如发送和接收日期）或文档属性（如文件名或文档的上次更改日期）。 您可以使用更复杂的查询，这些查询使用布尔运算符，例如**AND**、 **OR**、 **NOT**或**NEAR**。 还可以搜索文档中的敏感信息（如社会保险号），或者搜索已外部共享的文档。 如果将 "关键字" 框留空，则位于指定内容位置的所有内容都将包含在搜索结果中。
 
    b. 您可以单击 "**显示关键字列表**" 复选框，并在每行中键入关键字。 如果执行此操作，则每行上的关键字通过所创建的搜索查询中的**OR**运算符进行连接。 最多可以向列表中输入20个关键字。
 

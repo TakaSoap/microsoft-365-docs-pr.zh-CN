@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd547d0d5244df40bd5fa118bccdfe95fcba9341
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d388eb9cfe0a894e5ae5eed89e5d4ed35a79a1fc
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033806"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224483"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 
@@ -48,7 +48,7 @@ ms.locfileid: "44033806"
     
 5. **[步骤5：删除在网络中找到的 pst 文件](#step-5-delete-the-pst-files-found-on-your-network)**-在 Office 365 中已将您找到和收集的 pst 文件导入到 Exchange Online 邮箱后，您可以使用 "pst 集合" 工具从第1步中找到的原始位置删除 pst 文件。 
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 按照以下步骤将 PST 集合工具下载到本地计算机。 
     
@@ -70,7 +70,7 @@ ms.locfileid: "44033806"
     
 - 网络文件共享。 该工具会搜索指定的网络文件共享。 
     
-请参阅以下过程中`Locations`对 table 中参数的说明，以获取用于每个位置类型的语法示例。 
+请参阅以下过程中对 table 中参数的说明，以 `Locations` 获取用于每个位置类型的语法示例。 
   
 > [!IMPORTANT]
 > 您必须在 "查找" 模式下运行 "PST 集合" 工具，然后才能执行其他操作，例如阻止、收集或删除 PST 文件。 
@@ -92,13 +92,13 @@ ms.locfileid: "44033806"
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |指定工具将执行的操作的类型。 使用值`Find`在指定位置查找 PST 文件。 请注意，该工具可以查找和获取有关在 Outlook 中打开的 PST 文件以及连接到 Outlook 配置文件的 PST 文件的信息。  <br/> | `-Mode Find` <br/> |
+    | `Mode` <br/> |指定工具将执行的操作的类型。 使用值 `Find` 在指定位置查找 PST 文件。 请注意，该工具可以查找和获取有关在 Outlook 中打开的 PST 文件以及连接到 Outlook 配置文件的 PST 文件的信息。  <br/> | `-Mode Find` <br/> |
     | `JobName` <br/> |指定 PST 集合作业的名称。 在运行 PST 集合工具以阻止、收集和删除在运行该工具以查找 PST 文件时找到的 PST 文件时，将使用此相同的作业名称。 此外，还会将作业名称添加到日志和配置文件名称中。  <br/> | `-JobName PstSearch1` <br/> |
     | `Locations` <br/> | 指定要在其中搜索 PST 文件的一个或多个位置。 如果指定多个位置，请使用分号（;)分隔各个位置。 请务必用双引号（""）将此参数的各个值括起来。  <br/><br/>   下面是您可以搜索的位置类型所需的标识值格式。  <br/><br/>        **Ou** -使用可分辨名称（DN）标识 ou;例如：`"OU=NorthAmerica,OU=NWRegion,OU=ITServices,DC=contoso,DC=com"` <br/> > [!IMPORTANT]> 无法指定内置计算机容器（例如，CN = 计算机，DC = contoso，DC = com "），因为它不是一个组织单位。<br/> <br/> **计算机**-使用 DN 或完全限定的域名（FQDN）来标识网络上的客户端和服务器计算机;例如：  <br/>  DN`"CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"` <br/>  或  <br/>  域名`"FILESERVER01.contoso.com"` <br/><br/>  **网络文件共享**-使用 UNC 名称来标识网络文件共享;例如，`"\\FILESERVER02\Users"` <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `LogLocation` <br/> |指定要将日志文件复制到的文件夹。 如果该文件夹不存在，则会在运行该工具时创建该文件夹。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ConfigurationLocation` <br/> |指定将把 .xml 配置文件复制到的文件夹。 此文件包含在运行该工具时找到的每个 PST 文件的相关信息。 当您在步骤3中运行该工具以复制找到的 PST 文件时，将使用此文件。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `ExcludedLocations` <br/> |此可选参数指定在查找操作过程中要跳过的位置。 您可以排除特定 Ou、计算机和网络文件共享。 例如，您可以排除计算机，如配置为 SQL server 的计算机（或其他类型的应用程序服务器），用户无法访问这些计算机。 如果指定要排除的一个或多个位置，请使用分号（;)分隔各个位置。 请务必用双引号（""）将此参数的各个值括起来。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
-    | `ForceRestart` <br/> |此可选开关允许您在 "查找" 模式下为现有的 PST 集合作业运行该工具。 使用此`ForceRestart`开关时，将丢弃作业的上一个查找操作的结果，并且该工具将重新扫描指定的位置并创建新的日志和配置文件。  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |此可选开关允许您在 "查找" 模式下为现有的 PST 集合作业运行该工具。 使用此开关时 `ForceRestart` ，将丢弃作业的上一个查找操作的结果，并且该工具将重新扫描指定的位置并创建新的日志和配置文件。  <br/> | `-ForceRestart` <br/> |
    
     下面的示例展示了使用每个参数的实际值的 DataCollectorMaster 命令的语法：
     
@@ -110,16 +110,16 @@ ms.locfileid: "44033806"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>在 "查找" 模式下运行 DataCollectorMaster 的结果
 
-在成功运行 PST 集合工具的 "查找" 模式后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
+在成功运行 PST 集合工具的 "查找" 模式后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- **\>_Find_JobName Find\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- ** \< JobName \> _Find_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- **\>_Find_JobName 找到\<DateTimeStamp\>-csv 文件中包含每个找到的 PST 文件对应的\<** 行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- ** \< JobName \> _找到_ \< DateTimeStamp \> ** -CSV 文件中包含每个找到的 PST 文件对应的行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
     > [!TIP]
     > 使用 Excel 中的 "自动求和" 工具计算 CSV 文件中列出的所有 PST 文件的总大小（以 KB 为单位）。 然后，可以使用转换计算器将总大小转换为兆字节（MB）或千兆字节（GB）。 
   
-- **\>_Find_JobName Find\<DateTimeStamp\>-xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关\<** 信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 
+- ** \< JobName \> _Find_ \< DateTimeStamp \> ** -xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 
     
     > [!IMPORTANT]
     > 请勿重命名、更改或移动此文件。 当您在相同作业的阻止、复制或删除模式下重新运行该工具时，它将由 PST 收集工具使用。 
@@ -133,7 +133,7 @@ ms.locfileid: "44033806"
 - PST 用法控制 GPO 在组织中的计算机上创建注册表设置。 根据您使用的参数，您可以创建注册表设置，以阻止用户创建新的 PST 文件和注册表设置，以防止用户更改现有的 PST 文件。
     
 > [!NOTE]
-> 如果控制对您的组织的访问 PST 文件的访问过严重，则可以考虑跳过此步骤，并执行步骤3，将 PST 文件复制到一个中心位置。 然后，可以为同一作业（通过使用`ForceRestart`参数）重复步骤1，以查找在将 pst 文件复制到集合位置之后创建的其他 pst 文件。 如果找到了新的 PST 文件，则可以将其复制到集合位置。 当您在 " `ForceRestart`查找" 模式下重新运行该工具时使用该参数时，将放弃针对某个作业的以前的查找操作的结果，并且该工具将重新扫描指定的位置。 
+> 如果控制对您的组织的访问 PST 文件的访问过严重，则可以考虑跳过此步骤，并执行步骤3，将 PST 文件复制到一个中心位置。 然后，可以为同一作业（通过使用参数）重复步骤1， `ForceRestart` 以查找在将 pst 文件复制到集合位置之后创建的其他 pst 文件。 如果找到了新的 PST 文件，则可以将其复制到集合位置。 当您 `ForceRestart` 在 "查找" 模式下重新运行该工具时使用该参数时，将放弃针对某个作业的以前的查找操作的结果，并且该工具将重新扫描指定的位置。 
 
 若要阻止对 PST 文件的访问，请执行以下操作：
 
@@ -152,12 +152,12 @@ ms.locfileid: "44033806"
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |指定工具将执行的操作的类型。 使用此值`Block`可阻止用户创建新的 pst 文件并对现有的 pst 文件进行更改。  <br/> | `-Mode Block` <br/> |
+    | `Mode` <br/> |指定工具将执行的操作的类型。 使用此值 `Block` 可阻止用户创建新的 pst 文件并对现有的 pst 文件进行更改。  <br/> | `-Mode Block` <br/> |
     | `JobName` <br/> |指定现有 PST 集合作业的名称。 您必须使用在第1步中的 "查找" 模式下运行该工具时使用的相同作业名称。 此外，还会将此作业名称添加到在阻止模式下运行该工具时创建的日志文件的名称。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |指定文件夹包含在 "查找" 模式下运行该工具时创建的 .xml 配置文件。 使用您在步骤1中用于此参数的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |指定将阻止操作的日志文件复制到的文件夹。 这是一个可选参数。 如果不包含此文件，则会将日志文件复制到您在其中下载 PST 集合工具的文件夹。 考虑在第1步中的 "查找" 模式下运行该工具时使用的相同日志位置，以便将所有日志文件保存在同一文件夹中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `BlockChangesToFiles` <br/> |使用此开关可阻止用户更改 PST 文件。 使用此开关时，将创建以下注册表项： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow`并将数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockChangesToFiles` <br/> |
-    | `BlockNewFiles` <br/> |使用此开关可阻止用户创建新的 PST 文件、打开和导入 PST 文件并将其导入 outlook，以及从 Outlook 导出 PST 文件。 使用此开关时，将创建以下注册表项： `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst`并将数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockNewFiles` <br/> |
+    | `BlockChangesToFiles` <br/> |使用此开关可阻止用户更改 PST 文件。 使用此开关时，将创建以下注册表项：并将 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` 数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockChangesToFiles` <br/> |
+    | `BlockNewFiles` <br/> |使用此开关可阻止用户创建新的 PST 文件、打开和导入 PST 文件并将其导入 outlook，以及从 Outlook 导出 PST 文件。 使用此开关时，将创建以下注册表项：并将 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` 数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockNewFiles` <br/> |
    
     下面的示例展示了使用每个参数的实际值的 DataCollectorMaster 命令的语法：
 
@@ -189,13 +189,13 @@ ms.locfileid: "44033806"
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。  <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |指定工具将执行的操作的类型。 使用值`Collect`可复制在 "查找" 模式下运行到该工具时找到的 PST 文件。 请注意，该工具能够复制在 Outlook 中打开的 PST 文件，并复制连接到 Outlook 配置文件的 PST 文件。  <br/> | `-Mode Collect` <br/> |
+    | `Mode` <br/> |指定工具将执行的操作的类型。 使用值 `Collect` 可复制在 "查找" 模式下运行到该工具时找到的 PST 文件。 请注意，该工具能够复制在 Outlook 中打开的 PST 文件，并复制连接到 Outlook 配置文件的 PST 文件。  <br/> | `-Mode Collect` <br/> |
     | `JobName` <br/> |指定现有 PST 集合作业的名称。 您必须使用在第1步中的 "查找" 模式下运行该工具时使用的相同作业名称。 此外，还会将此作业名称添加到在收集模式下运行该工具时创建的日志文件的名称。  <br/> | `-JobName PstSearch1` <br/> |
-    | `Locations` <br/> |使用您在步骤1中用于`Locations`参数的相同值。 当您在收集模式下运行该工具时，如果要在步骤5中重新运行该工具以删除其源位置中的 PST 文件，则必须包含此参数。  <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"; "CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
+    | `Locations` <br/> |使用您在 `Locations` 步骤1中用于参数的相同值。 当您在收集模式下运行该工具时，如果要在步骤5中重新运行该工具以删除其源位置中的 PST 文件，则必须包含此参数。  <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"; "CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `ConfigurationLocation` <br/> |指定包含在 "查找" 模式下运行该工具时所创建的 .xml 配置文件的文件夹。 使用您在步骤1中用于此参数的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\desktop \PSTCollection\Configuration"` <br/> |
-    | `CopyLocation` <br/> |指定要将 PST 文件复制到的集合位置。 您可以将文件复制到文件服务器、网络文件共享或硬盘。 在收集模式下运行该工具之前，该位置必须存在。 该工具不会创建位置，并将返回错误消息，指出它不存在。  <br/> 此外，您还必须向此参数指定的集合位置写入权限。  <br/> | `-CopyLocation "\\FILESERVER03\PSTs"` <br/> |
+    | `CopyLocation` <br/> |指定要将 PST 文件复制到的集合位置。 您可以将文件复制到文件服务器、网络文件共享或硬盘。 在收集模式下运行该工具之前，该位置必须存在。 该工具不会创建位置，并将返回错误消息，指出它不存在。  <br/> 此外，您还必须向此参数指定的集合位置写入权限。  <br/><br/>如果要使用语法将 PST 文件复制到的设备不可见 `\\SERVER\SHARE` ，请将驱动器号映射到设备，并将映射的驱动器号用于此参数的值。 | `-CopyLocation "\\FILESERVER03\PSTs"` <br/>或<br/>`-CopyLocation "z:\"`|
     | `LogLocation` <br/> |指定要将收集模式的日志文件复制到的文件夹。 这是一个可选参数。 如果不包含此文件，则会将日志文件复制到您在其中下载 PST 集合工具的文件夹。 考虑在第1步中的 "查找" 模式下运行该工具时使用的相同日志位置，以便将所有日志文件保存在同一文件夹中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |此可选开关允许您在集合模式下为现有的 PST 集合作业重新运行该工具。 如果您以前在收集模式下运行该工具，但随后在查找模式下`ForceRestart`再次运行该工具以重新扫描 PST 文件的位置，则可以使用此开关在 "收集" 模式下重新运行该工具，并重新复制在重新扫描位置时找到的 PST 文件。 在收集模式`ForceRestart`下使用切换时，该工具将忽略任何以前的集合操作，并尝试从头开始复制 PST 文件。  <br/> | `-ForceRestart` <br/> |
+    | `ForceRestart` <br/> |此可选开关允许您在集合模式下为现有的 PST 集合作业重新运行该工具。 如果您以前在收集模式下运行该工具，但随后在查找模式下再次运行该工具 `ForceRestart` 以重新扫描 PST 文件的位置，则可以使用此开关在 "收集" 模式下重新运行该工具，并重新复制在重新扫描位置时找到的 PST 文件。 `ForceRestart`在收集模式下使用切换时，该工具将忽略任何以前的集合操作，并尝试从头开始复制 PST 文件。  <br/> | `-ForceRestart` <br/> |
    
     下面的示例展示了 DataCollectorMaster 工具的语法，使用每个参数的实际值：
     
@@ -207,16 +207,16 @@ ms.locfileid: "44033806"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>在收集模式下运行 DataCollectorMaster 的结果
 
-在收集模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
+在收集模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- **\>_Collect_JobName 收集\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- **\>_Collect_JobName 收集\<DateTimeStamp\>-xml 文件仅包含在收集模式下运行工具所使用的参数值的相关\<** 信息。 当您运行 DataCollectorMaster 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
+- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -xml 文件仅包含在收集模式下运行工具所使用的参数值的相关信息。 当您运行 DataCollectorMaster 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>步骤4：将 PST 文件导入到 Office 365
 
-在您收集了在第1步中找到的 PST 文件之后，下一步是将其导入到 Office 365 中的邮箱。 作为部件或导入过程，您必须创建一个 CSV 映射文件，其中包含要导入的每个 PST 文件的行。 每行中的信息指定 PST 文件的名称、用户的电子邮件地址以及是否要将 PST 文件导入到用户的主邮箱或存档邮箱。 使用**JobName\>_Find_\<DateTimeStamp**文件（在步骤中创建）1中的信息来帮助您创建 csv 映射文件。 
+在您收集了在第1步中找到的 PST 文件之后，下一步是将其导入到 Office 365 中的邮箱。 作为部件或导入过程，您必须创建一个 CSV 映射文件，其中包含要导入的每个 PST 文件的行。 每行中的信息指定 PST 文件的名称、用户的电子邮件地址以及是否要将 PST 文件导入到用户的主邮箱或存档邮箱。 使用**JobName \> _Find_ \< DateTimeStamp**文件（在步骤中创建）1中的信息来帮助您创建 csv 映射文件。 
   
 有关将 PST 文件导入到 Office 365 的分步说明，请参阅下列主题之一：
   
@@ -244,11 +244,11 @@ ms.locfileid: "44033806"
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
     | `DataSource` <br/> |指定要搜索的数据的类型。 目前，您可以使用 "PST 集合" 工具搜索 PST 文件。 ![定位](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
-    | `Mode` <br/> |指定工具将执行的操作的类型。 使用此值`Delete`可以删除在 "查找" 模式下运行到该工具时找到的 PST 文件。  <br/> | `-Mode Delete` <br/> |
+    | `Mode` <br/> |指定工具将执行的操作的类型。 使用此值 `Delete` 可以删除在 "查找" 模式下运行到该工具时找到的 PST 文件。  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |指定现有 PST 集合作业的名称。 您必须使用在 "查找" 模式下运行该工具时使用的相同作业名称，以及步骤1和步骤3中的收集模式。 此外，还会将此作业名称添加到在删除模式下运行该工具时创建的日志文件的名称。  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |指定包含在收集模式下运行该工具时创建的 .xml 配置文件的文件夹。 使用您在步骤3中用于此参数的相同值。  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |
     | `LogLocation` <br/> |指定要将删除模式的日志文件复制到的文件夹。 这是一个可选参数。 如果不包含此文件，则会将日志文件复制到您在其中下载 PST 集合工具的文件夹。 考虑在第1步和第3步中的查找和收集模式下运行该工具时使用的相同日志位置，以便将所有日志文件保存在同一文件夹中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
-    | `ForceRestart` <br/> |此可选开关允许您在删除模式下为现有的 PST 集合作业重新运行该工具。 如果您之前在删除模式下运行该工具，但随后在查找模式下`ForceRestart`再次运行该工具以重新扫描 PST 文件的位置，则可以使用此开关在删除模式下重新运行该工具，并删除在重新扫描位置时找到的 PST 文件。 在删除模式`ForceRestart`下使用切换时，该工具将忽略任何以前的删除操作，并再次尝试删除 PST 文件。  <br/> | `-ForceRestart` <br/> 
+    | `ForceRestart` <br/> |此可选开关允许您在删除模式下为现有的 PST 集合作业重新运行该工具。 如果您之前在删除模式下运行该工具，但随后在查找模式下再次运行该工具 `ForceRestart` 以重新扫描 PST 文件的位置，则可以使用此开关在删除模式下重新运行该工具，并删除在重新扫描位置时找到的 PST 文件。 `ForceRestart`在删除模式下使用切换时，该工具将忽略任何以前的删除操作，并再次尝试删除 PST 文件。  <br/> | `-ForceRestart` <br/> 
 
     下面的示例展示了 DataCollectorMaster 工具的语法，使用每个参数的实际值：
     
@@ -260,8 +260,8 @@ ms.locfileid: "44033806"
     
 ### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>在删除模式下运行 DataCollectorMaster 的结果
 
-在删除模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由`LogLocation`和`ConfigurationLocation`参数指定的文件夹中。 
+在删除模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- **\>_Delete_JobName 删除\<DateTimeStamp\>-日志文件包含显示的状态\<** 消息。 此文件在由`LogLocation`参数指定的文件夹中创建。 
+- ** \< JobName \> _删除_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- JobName-xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 **\>_Delete_\< \<\>** 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由`ConfigurationLocation`参数指定的文件夹中创建。 
+- ** \< JOBNAME \> _Delete_ \< \> ** -xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 

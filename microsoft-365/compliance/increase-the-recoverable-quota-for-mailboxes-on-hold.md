@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: '启用存档邮箱并打开自动扩展存档，以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
-ms.openlocfilehash: 37d0e783f3b3a5157fe4a7a9b7d512b09c05d32c
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072913"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222705"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
@@ -78,7 +78,7 @@ ms.locfileid: "42072913"
     ```
 
     > [!TIP]
-    > 我们建议可恢复项目 RPT 的保留期（由_AgeLimitForRetention_参数定义）与 RPT 将应用到的邮箱的已删除项目保留期相同。 这允许用户整个已删除项目的保留期在将已删除邮件移至存档邮箱之前将其恢复。 在上面的示例中，假定邮箱的已删除邮件保留期也为30天，则保留期已设置为30天。 默认情况下，Exchange Online 邮箱配置为将已删除项目保留14天。 但您最多可以将此设置更改为30天。 有关详细信息，请参阅[在 Exchange Online 中更改邮箱的已删除邮件保留期](https://go.microsoft.com/fwlink/p/?LinkId=286940)。 
+    > 我们建议可恢复项目 RPT 的保留期（由_AgeLimitForRetention_参数定义）与 RPT 将应用到的邮箱的已删除项目保留期相同。 这允许用户整个已删除项目的保留期在将已删除邮件移至存档邮箱之前将其恢复。 在上面的示例中，假定邮箱的已删除邮件保留期也为30天，则保留期已设置为30天。 默认情况下，Exchange Online 邮箱配置为将已删除项目保留14天。 但您最多可以将此设置更改为30天。 有关详细信息，请参阅[在 Exchange Online 中更改邮箱的已删除邮件保留期](https://www.microsoft.com/?ref=go)。 
   
 ## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>步骤2：为处于保留状态的邮箱创建新的保留策略
 
@@ -96,11 +96,11 @@ ms.locfileid: "42072913"
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>使用 EAC 创建保留策略
   
-1. 在 EAC 中，转到 **"合规性管理** \> **保留策略**"，然后单击 "](../media/ITPro-EAC-AddIcon.gif)**添加** ![" "添加" 图标。
+1. 在 EAC 中，转到 "**合规性管理** \> **保留策略**"，然后单击 "**添加**" "添加" ![ 图标 ](../media/ITPro-EAC-AddIcon.gif) 。
     
 2. 在 "**新建保留策略**" 页上的 "**名称**" 下，键入描述保留策略用途的名称;例如，处于**保留状态的邮箱的 MRM 策略**。 
     
-3. 在 **"保留标记**" 下，单击](../media/ITPro-EAC-AddIcon.gif)"**添加** ![" "添加" 图标。
+3. 在 "**保留标记**" 下，单击 "**添加**" "添加" ![ 图标 ](../media/ITPro-EAC-AddIcon.gif) 。
     
 4. 在 "保留标记" 列表中，选择您在步骤1中创建的 "可恢复的项目" RPT，然后单击 "**添加**"。
     
@@ -139,7 +139,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 1. 转到" **收件人**"\>" **邮箱**"。
     
-2. 在列表视图中，选择要应用保留策略的邮箱，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+2. 在列表视图中，选择要应用保留策略的邮箱，然后单击 "**编辑** ![ 编辑图标" ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
 3. 在 "**用户邮箱**" 页上，单击 "**邮箱功能**"。
     
@@ -225,6 +225,6 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 ## <a name="more-information"></a>更多信息
 
-- 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（不仅仅是 "可恢复的项目" 文件夹中的项目）可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记（名为 "默认2年移动到存档"），该保留标记将项目移至存档邮箱，然后在邮件传递到邮箱或由 "创建时间"user. 有关详细信息，请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- 启用用户的存档邮箱后，请考虑告诉用户其邮箱中的其他项目（不仅仅是 "可恢复的项目" 文件夹中的项目）可能会被移至存档邮箱。 这是因为分配给 Exchange Online 邮箱的默认 MRM 策略包含一个保留标记（名为 "默认2年移动到存档"），将项目在邮件传递到邮箱或由用户创建后的两年中将项目移动到存档邮箱。 有关详细信息，请参阅[Exchange Online 中的默认保留策略](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - 启用用户的存档邮箱后，您可能还会告诉用户他们可以在其存档邮箱中的 "可恢复的项目" 文件夹中恢复已删除的邮件。 在 Outlook 中，可以通过选择存档邮箱中的 "**已删除邮件**" 文件夹，然后在 "**开始**" 选项卡上单击 "**从服务器恢复已删除邮件**" 来执行此操作。有关恢复已删除项目的详细信息，请参阅[在 Outlook For Windows 中恢复已删除的项目](https://go.microsoft.com/fwlink/p/?LinkId=624829)。 

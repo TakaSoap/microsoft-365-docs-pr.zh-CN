@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何使用 Exchange Online 中的 S/MIME （安全/多用途 Internet 邮件扩展）加密电子邮件并对其进行数字签名。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c45df36535e7b5af2648b82f83159315b94bec8
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: cf9859240914e078eb62b0e914f8de79cf647f2d
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036616"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224669"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -51,7 +51,7 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 5. 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
 
 > [!NOTE]
-> 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480)。
+> 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>设置 web 上的 Outlook 的 S/MIME
 

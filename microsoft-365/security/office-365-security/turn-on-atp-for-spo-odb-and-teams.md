@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7708697f191107176173f2bfaced576c024954c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b4dfe56b635714cedf033f2d4f14cd6bc0286650
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036724"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224607"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
@@ -35,21 +35,21 @@ ms.locfileid: "44036724"
 
 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
 
-|角色|分配的位置/方式|
+|Role|分配的位置/方式|
 |---------|---------|
 |全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
-|安全管理员|Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-|Exchange Online 组织管理|Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
+|安全管理员|Azure Active Directory 管理中心（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ）|
+|Exchange Online 组织管理|Exchange 管理中心（ [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 在**开始此过程之前，请确保已为您的 Microsoft 365 环境启用审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. 转到[https://protection.office.com](https://protection.office.com)，然后使用你的工作或学校帐户登录。
+1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的工作或学校帐户登录。
 
 2. 在安全 & 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **安全附件**"。
 
-   ![在安全 & 合规性中心中，选择威胁\>管理策略](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+   ![在安全 & 合规性中心中，选择威胁管理 \> 策略](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
 3. 选择 "**为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。
 
@@ -71,13 +71,13 @@ ms.locfileid: "44036724"
 
 若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用[Powershell 管理 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
 
-若要详细了解在将文件检测为恶意时的用户体验，请参阅在[SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
+若要详细了解在将文件检测为恶意时的用户体验，请参阅在[SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
 
 ## <a name="set-up-alerts-for-detected-files"></a>为检测到的文件设置通知
 
 若要在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时收到通知，可以设置警报。
 
-1. 在 "[安全性 & 合规性中心](https://protection.office.com)中，选择"**通知** \> ""**管理通知**"。
+1. 在 "[安全性 & 合规性中心](https://protection.office.com)中，选择"**通知**"" \> **管理通知**"。
 
 2. 选择 "**新建警报策略**"。
 

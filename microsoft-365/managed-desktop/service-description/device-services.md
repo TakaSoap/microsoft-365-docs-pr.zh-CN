@@ -7,12 +7,12 @@ author: jaimeo
 ms.localizationpriority: normal
 ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: cb138d14a35324840d78000b55a2f4376c3869b5
-ms.sourcegitcommit: 9a4084ce2b80bac883412e0ec956b6c0cc18d0f5
+ms.openlocfilehash: 99ae4fda67de060a5c4dd7c9cd0550f751706e86
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42400869"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222391"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 托管桌面设备服务
 
@@ -33,9 +33,9 @@ Microsoft 将为 Microsoft 托管桌面设备提供这些服务。 有关 Micros
 有关设备替换、升级和支持条款的信息，请参阅与设备提供商的协议和保修条款。
 
 有关 Surface 质保和修理的信息：
+- [商业帮助中心的表面](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [设备的保修、扩展服务计划以及条款和条件](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [Surface standard 质保](https://support.microsoft.com/help/4036296)
-- [设备服务和修复](https://support.microsoft.com/devices)
+
 
 ## <a name="device-service-limitations"></a>设备服务限制
 

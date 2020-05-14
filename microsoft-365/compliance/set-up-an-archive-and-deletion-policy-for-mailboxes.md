@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: 在 Microsoft 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4c1bd1c993444c38596642bf974e734870c79d8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208056"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222523"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -286,7 +286,7 @@ ms.locfileid: "44208056"
     
 - 下表提供了有关添加到自定义保留策略的每个保留标记的详细信息，该保留策略是按照本主题中的步骤创建的。
     
-    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**Type**|
+    |**保留标记**|**此标记执行的操作**|**内置的还是自定义的？**|**类型**|
     |:-----|:-----|:-----|:-----|
     |Alpine 住宅3年后移动到存档  <br/> |将1095天（3年）的项目移至存档邮箱。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（存档）;此标记将自动应用于整个邮箱。  <br/> |
     |Alpine 住宅7年永久删除  <br/> |将主邮箱或存档邮箱中的项目永久删除（如果有7年）。  <br/> |自定义（请参阅[第2步：为存档和删除策略创建新的保留标记](#step-2-create-new-retention-tags-for-the-archive-and-deletion-policies)）  <br/> |默认策略标记（删除）;此标记将自动应用于整个邮箱。  <br/> |
@@ -298,6 +298,6 @@ ms.locfileid: "44208056"
     |从不删除  <br/> |此标记阻止保留策略删除项目。  <br/> |内置  <br/> |Personal用户可以应用此标记。  <br/> |
     |个人 1 年后移动到存档  <br/> |在1年后将项目移动到存档邮箱。  <br/> |内置  <br/> |Personal用户可以应用此标记。  <br/> |
    
-    > <sup>\*</sup>用户可以使用 Outlook 和 web 上的 Outlook 中的 "恢复已删除邮件" 工具（以前称为 "Outlook Web App"）在已删除项目的保留期内恢复已删除的项目，这在 Exchange Online 中默认为14天。 管理员可以使用 Windows PowerShell 将已删除项目的保留期增加到最多30天。 有关详细信息，请参阅：[在 Outlook For Windows 中恢复已删除项目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)并[在 Exchange Online 中更改邮箱的已删除邮件保留期](https://go.microsoft.com/fwlink/p/?LinkId=286940)
+    > <sup>\*</sup>用户可以使用 Outlook 和 web 上的 Outlook 中的 "恢复已删除邮件" 工具（以前称为 "Outlook Web App"）在已删除项目的保留期内恢复已删除的项目，这在 Exchange Online 中默认为14天。 管理员可以使用 Windows PowerShell 将已删除项目的保留期增加到最多30天。 有关详细信息，请参阅：[在 Outlook For Windows 中恢复已删除项目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)并[在 Exchange Online 中更改邮箱的已删除邮件保留期](https://www.microsoft.com/?ref=go)
   
 - 使用**可恢复的项目14天后移动到存档**保留标记有助于释放用户主邮箱中的 "可恢复的项目" 文件夹中的存储空间。 当用户的邮箱置于保留状态时，这很有用，这意味着永远不会永久删除该用户的邮箱。 如果不将项目移动到存档邮箱，则可能会达到主邮箱中的 "可恢复的项目" 文件夹的存储配额。 有关此操作以及如何避免此情况的详细信息，请参阅[增大保留邮箱的可恢复邮件配额](https://go.microsoft.com/fwlink/p/?LinkId=786479)。

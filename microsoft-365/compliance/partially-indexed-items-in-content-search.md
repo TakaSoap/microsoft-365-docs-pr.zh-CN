@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: '了解 Exchange 和 SharePoint 中的未编制索引项目，您可以通过 Security & 合规性中心在内容搜索运行中加入未编制索引的项目。 '
-ms.openlocfilehash: c44138c11c2703cda4accba9976c254a0b135d65
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
+ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626676"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44214208"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>内容搜索中的部分索引项
 
@@ -57,11 +57,11 @@ ms.locfileid: "43626676"
   
 有关支持和禁用的文件格式列表，请参阅以下主题：
   
-- **Exchange** - Exchange[搜索编制索引的 exchange 文件格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
+- **Exchange**  - [由 Exchange 搜索编制索引的文件格式](https://go.microsoft.com/fwlink/p/?LinkID=386618)
     
-- **Exchange** - [set-searchdocumentformat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
+- **Exchange**  - [Set-searchdocumentformat](https://go.microsoft.com/fwlink/p/?LinkID=724037)
     
-- **SharePoint** - Sharepoint[中的 sharepoint 默认已爬网文件扩展名和分析文件类型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
+- **SharePoint**  - [SharePoint 中的默认爬网文件扩展名和分析文件类型](https://go.microsoft.com/fwlink/p/?LinkID=404033)
     
 
   
@@ -112,7 +112,7 @@ ms.locfileid: "43626676"
 
 下表介绍了可能导致电子邮件作为内容搜索中的部分索引项返回到 Office 365 中的索引限制。
   
-有关 SharePoint 文档的索引限制列表，请参阅[Sharepoint Online 的搜索限制](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)。
+有关 SharePoint 文档的索引限制列表，请参阅[Sharepoint Online 的搜索限制](https://docs.microsoft.com/sharepoint/search-limits)。
   
 |**索引限制**|**注释**|**说明**|
 |:-----|:-----|:-----|
@@ -125,7 +125,7 @@ ms.locfileid: "43626676"
 |最大分析器输出  <br/> |200 万个字符  <br/> |索引分析器中的最大文本输出量。 例如，如果分析程序从文档中提取了8000000个字符，则只会对前2百万个字符编制索引。  <br/> |
 |最大注释标记数  <br/> |2000000  <br/> |在对电子邮件编制索引时，会使用不同的处理指令对每个单词进行批注，以指定如何对该单词编制索引。 每组处理指令称为注释令牌。 若要在 Office 365 中维护服务质量，电子邮件的注释令牌限制为2000000个。  <br/> |
 |索引中的最大正文大小  <br/> |67000000个字符  <br/> |电子邮件正文中的总字符数及其所有附件。 对电子邮件编制索引后，邮件正文和所有附件中的所有文本将串联为单个字符串。 索引的此字符串的最大大小为67000000个字符。  <br/> |
-|正文中的最大唯一令牌  <br/> |100 万  <br/> |如前所述，令牌是从内容中提取文本、删除标点符号和空格，然后将其拆分为索引中存储的词（称为 "标记"）的结果。 例如，短语`"cat, mouse, bird, dog, dog"`包含5个令牌。 但其中只有4个是唯一的令牌。 每封电子邮件的唯一令牌的数量限制为1000000，这有助于防止索引因过大而无法使用随机令牌。  <br/> |
+|正文中的最大唯一令牌  <br/> |100 万  <br/> |如前所述，令牌是从内容中提取文本、删除标点符号和空格，然后将其拆分为索引中存储的词（称为 "标记"）的结果。 例如，短语 `"cat, mouse, bird, dog, dog"` 包含5个令牌。 但其中只有4个是唯一的令牌。 每封电子邮件的唯一令牌的数量限制为1000000，这有助于防止索引因过大而无法使用随机令牌。  <br/> |
 
 ## <a name="more-information-about-partially-indexed-items"></a>有关部分索引项目的详细信息
 

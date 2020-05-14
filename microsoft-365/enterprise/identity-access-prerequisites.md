@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 99a124ff57816481cde92dd79c3058a2e7b72d31
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: bfbb0481670b2f957bf240c261fcbafab96717b9
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625202"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222585"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -42,7 +42,7 @@ ms.locfileid: "43625202"
 | **准备支持团队**。 为无法完成 MFA 的用户制定计划。 这可能会将其添加到策略排除组中，或为其注册新的 MFA 信息。 在进行任何安全敏感更改之前，您需要确保实际用户发出请求。 请求用户的管理人员来帮助审批是一个有效的步骤。 | 是 | 是 | 是 | 是 |  
 | [配置密码写回到本地 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密码写回允许 Azure AD 在检测到高风险帐户泄漏时要求用户更改其本地密码。 您可以通过以下两种方式之一在 Azure AD Connect 中启用此功能：在 Azure AD Connect 安装向导的 "可选功能" 屏幕中启用**密码写回**，或通过 Windows PowerShell 启用它。 |   | 是 | 是 | 是 |
 | [启用 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/enable)。 Azure AD Identity Protection 使您能够检测到影响组织的身份的潜在漏洞，并将自动修正策略配置为低、中和高的登录风险和用户风险。  | 是 | 是 | 是 | 是 |
-| 为[Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662)和[Skype For business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**启用新式验证**。 新式验证是使用多重身份验证（MFA）的先决条件。 默认情况下，将为 Office 2016 客户端、SharePoint Online 和 OneDrive for business 启用新式验证。 | 是 | 是 | 是 | 是 |
+| 为[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[Skype For business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**启用新式验证**。 新式验证是使用多重身份验证（MFA）的先决条件。 默认情况下，将为 Office 2016 客户端、SharePoint Online 和 OneDrive for business 启用新式验证。 | 是 | 是 | 是 | 是 |
 ||||||
 
 
@@ -69,7 +69,7 @@ ms.locfileid: "43625202"
 
 |平台|客户端|版本/说明|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016，2013[启用新式验证](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910)（[必需的更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)）|
+|**Windows**|Outlook|2016，2013[启用新式验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)（[必需的更新](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)）|
 |**iOS**|Outlook for iOS|[最新版本](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[最新版本](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
@@ -91,7 +91,7 @@ ms.locfileid: "43625202"
 |macOS|公共预览版|公共预览版|不适用|不适用|不支持|
 |Linux|不支持|不支持|不支持|不支持|不支持|
 
-<sup>*</sup>了解有关在[OneDrive 同步客户端](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e)中使用条件访问的详细信息。
+<sup>*</sup>了解有关在[OneDrive 同步客户端](https://docs.microsoft.com/onedrive/enable-conditional-access)中使用条件访问的详细信息。
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 客户端支持
 有关客户端支持的详细信息，请参阅以下文章：
@@ -114,7 +114,7 @@ Azure AD 为你提供一种简单的方法，以使用预配置的条件访问�
 其他建议包括以下内容：
 - 使用 Azure AD Privileged Identity Management 减少永久管理帐户的数目。 请参阅[开始使用 PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started)。 
 - [使用 Office 365 中的特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview)来保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的行为。 
-- 仅使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。 [Microsoft 365 管理员](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)角色比 microsoft 365 服务具有更多的特权。
+- 仅使用管理员帐户进行管理。 管理员应使用单独的用户帐户进行常规非管理，并且仅在必要时才使用其管理帐户完成与工作职能相关联的任务。 [Microsoft 365 管理员](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)角色比 microsoft 365 服务具有更多的特权。
 - 遵循[本文](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices)中所述的在 Azure AD 中保护特权帐户的最佳做法。
 
 ## <a name="next-steps"></a>后续步骤

@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Office 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: bab4da6e4a8191d91ccdd38dd54f62f4d790c3b8
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 336e6ee78d7020d73c7e00f639e8f1e1b20c62cd
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140771"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222335"
 ---
-# <a name="add-a-domain-to-office-365"></a>将域添加到 Office 365
+# <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ ms.locfileid: "44140771"
 
 ::: moniker-end
     
-2. 转到 "**安装** > **域**" 页。 
+2. 转到 "**安装**  >  **域**" 页。 
 
 3. 选择 "**添加域**"。
     
@@ -82,7 +82,7 @@ ms.locfileid: "44140771"
     
 5. 选择要验证您是否拥有域的方式。
     
-    1. 如果你的域是在 GoDaddy 或 1&amp;1 注册的，**请选择** > "**下一步**"，Microsoft[将自动设置你的记录](../get-help-with-domains/domain-connect.md)。
+    1. 如果你的域是在 GoDaddy 或 1 &amp; 1 注册的**Sign in**，请选择 "  >  **下一步**"，Microsoft[将自动设置你的记录](../get-help-with-domains/domain-connect.md)。
     
     2. 可向域注册联系人发送包含验证码的电子邮件。 如果无法识别记录的电子邮件或对其具有访问权限，则可以使用第三个选项。
     
@@ -113,9 +113,9 @@ ms.locfileid: "44140771"
 
 按照以下步骤为网站或第三方服务添加自定义记录。
 
-1. 在上<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>登录到 Microsoft 管理中心。
+1. 在上登录到 Microsoft 管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 
-2. 转到 "**设置**  > **域**" 页面。
+2. 转到 "**设置**   >  **域**" 页面。
 
 3. 在" **域**"页面上选择域。 
     
@@ -136,7 +136,7 @@ ms.locfileid: "44140771"
   
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>与 Microsoft 365 集成的域连接注册机构
 
-- [1&amp;1 IONOS](https://www.1and1.com/)
+- [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)

@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 2b0d015485196bc76e7de580c888892967fe5d05
-ms.sourcegitcommit: c079cc893cd1bd5d894b13814063a2f42238806e
+ms.openlocfilehash: 6429c3dee32087d6e82a427b2f374ec49bab5cac
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43035119"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222681"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保护 SharePoint 网站和文件的策略建议
 
@@ -60,7 +60,7 @@ ms.locfileid: "43035119"
 
 如果在 SharePoint Online 中实现访问控制，则必须在 Azure AD 中创建此条件访问策略，以通知 Azure AD 强制实施您在 SharePoint Online 中配置的策略。 此规则适用于所有用户，但仅影响在 SharePoint Online 中创建访问控制时使用 PowerShell 指定的网站的访问权限。
 
-若要配置此策略，请参阅本文中的 "阻止或限制对特定 SharePoint 网站集或 OneDrive 帐户的访问权限"：[控制非托管设备的访问](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
+若要配置此策略，请参阅本文中的 "阻止或限制对特定 SharePoint 网站集或 OneDrive 帐户的访问权限"：[控制非托管设备的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint Online 访问控制策略
 
@@ -69,7 +69,7 @@ Microsoft 建议使用设备访问控制保护 SharePoint 网站中的内容与�
 - 敏感网站：允许仅浏览器访问。 这将阻止用户编辑和下载文件。
 - 高度管控的网站：阻止来自非托管设备的访问。
 
-请参阅本文中的 "阻止或限制对特定 SharePoint 网站集或 OneDrive 帐户的访问权限"：[控制非托管设备的访问权限](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622)。
+请参阅本文中的 "阻止或限制对特定 SharePoint 网站集或 OneDrive 帐户的访问权限"：[控制非托管设备的访问权限](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="how-these-policies-work-together"></a>这些策略如何协同工作
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: f024995f63af19efa410cdb02a1f8c8d110902eb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140988"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208673"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -75,14 +75,14 @@ ms.locfileid: "44140988"
 |----------------|---------------|
 |创建并发布有助于保护组织数据的敏感度标签|[创建和配置敏感度标签及其策略](create-sensitivity-labels.md)|
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
-|为标记为加密的文档启用 SharePoint（和 OneDrive）中的协作功能 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
+|在 Web 上为 Office 启用敏感标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此。 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
 |管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
 |自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)|
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |在 Power BI 中应用和查看敏感性标签，并保护下载的报表|[Power BI （预览版）中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|直观地显示敏感度标签的使用情况，以报告部署状态和精细调整标签配置|[使用标签分析查看标签使用情况](label-analytics.md)|
+|查看敏感标签的使用和位置，并深入查看标签内容|[了解你的数据 - 数据分类概述（预览）](data-classification-overview.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度标签的最终用户文档

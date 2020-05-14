@@ -15,21 +15,21 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: 基本垃圾邮件筛选器设置包括选择要对标识为垃圾邮件的邮件采取的措施。
-ms.openlocfilehash: 027cea45159131ebe4718dfb2209d8be15f8e355
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
+ms.openlocfilehash: 66266ac79f6f442c8551b9ec15d553d6fb074cdc
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637708"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209555"
 ---
-# <a name="configure-anti-spam-policies"></a>配置反垃圾邮件策略
+# <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
-无论你是拥有 Exchange Online 邮箱的 Microsoft 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
+在有 Exchange Online 的 Microsoft 365 组织，或没有 Exchange Online 邮箱的 Exchange Online Protection (EOP) 组织中，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
 管理员可以查看、编辑和配置（但不能删除）默认反垃圾邮件策略。 还可以创建应用于组织中特定用户、组或域的自定义反垃圾邮件策略，以实现更细致的控制。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-若要配置反垃圾邮件策略，可以使用安全与合规中心，也可以使用 PowerShell（Microsoft 365 客户使用 Exchange Online PowerShell；独立 EOP 客户使用 Exchange Online Protection PowerShell）。
+若要配置反垃圾邮件策略，可以使用安全与合规中心，也可以使用 PowerShell（适用于有 Exchange Online 的 Microsoft 365 组织的 Exchange Online PowerShell，或适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell）。
 
 ## <a name="anti-spam-policies-in-the-security--compliance-center-vs-exchange-online-powershell-or-exchange-online-protection-powershell"></a>安全与合规中心与 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的反垃圾邮件策略
 
@@ -120,9 +120,9 @@ EOP 中反垃圾邮件策略的基本要素如下：
     |**无操作**|||||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup>在 Exchange Online 中，如果邮箱启用了垃圾邮件规则（默认处于启用状态），邮件会移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。<br/>在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。<br/><br/><sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
+    > <sup>1</sup>在 Exchange Online 中，如果邮箱启用了垃圾邮件规则（默认处于启用状态），邮件会移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。<br/>在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。<br/><br/><sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
 
-   - **选择阈值**：指定触发 **“群发电子邮件”** 垃圾邮件筛选裁定的指定操作的邮件批量投诉级别 (BCL)（大于指定值，而不是小于或等于指定值）。 值越高，邮件就越不理想（是垃圾邮件的可能性就越大）。 默认值为 7。 有关详细信息，请参阅 [Office 365 中的批量投诉级别 (BCL)](bulk-complaint-level-values.md)，以及[垃圾邮件与群发电子邮件有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+   - **选择阈值**：指定触发 **“群发电子邮件”** 垃圾邮件筛选裁定的指定操作的邮件批量投诉级别 (BCL)（大于指定值，而不是小于或等于指定值）。 值越高，邮件就越不理想（是垃圾邮件的可能性就越大）。 默认值为 7。 有关详细信息，请参阅 [EOP 中的批量投诉级别 (BCL)](bulk-complaint-level-values.md)，以及[垃圾邮件与群发电子邮件有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
      默认情况下，在反垃圾邮件策略中，仅在 PowerShell 中可配置的设置 _MarkAsSpamBulkMail_ 的值为 `On`。 此设置极大地影响 **“群发电子邮件”** 筛选裁定结果：
 
@@ -132,9 +132,9 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
    - **隔离**：指定在选择 **“隔离邮件”** 作为垃圾邮件筛选裁定对应的操作时的邮件隔离时长。 在此时间段到期后，邮件就会被删除。 默认值为 30 天。 有效值介于 1 和 30 天之间。 若要了解隔离，请参阅以下主题：
 
-     - [Office 365 中的隔离](quarantine-email-messages.md)
-     - [在 Office 365 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
-     - [在 Office 365 中以用户身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+     - [EOP 中隔离的邮件](quarantine-email-messages.md)
+     - [在 EOP 中以管理员身份管理已隔离邮件和文件](manage-quarantined-messages-and-files.md)
+     - [在 EOP 中以用户身份查找和释放已隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
 
    - **添加此 X 标头文本**：只有当你选择 **“添加 X 标头”** 作为垃圾邮件筛选裁定对应的操作时，此框才会显示且必须选中。 指定的值是添加到邮件头的标头字段*名称*。 标头字段*值*始终为 `This message appears to be spam`。
 
@@ -148,7 +148,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
    - **重定向到此电子邮件地址**：只有当你选择 **“将邮件重定向到电子邮件地址”** 作为垃圾邮件筛选裁定对应的操作时，此框才会显示且必须选中。 输入要将邮件递送到的电子邮件地址。 可以输入多个值，用分号 (;) 分隔。
 
-   - **安全提示**：“安全提示”默认处于启用状态，但你可以通过取消选中 **“开”** 复选框来禁用它。 若要详细了解安全提示，请参阅 [Office 365 中的电子邮件安全提示](safety-tips-in-office-365.md)。
+   - **安全提示**：“安全提示”默认处于启用状态，但你可以通过取消选中 **“开”** 复选框来禁用它。 若要详细了解安全提示，请参阅 [电子邮件安全提示](safety-tips-in-office-365.md)。
 
    **零时差自动清除**设置：ZAP 检测已递送到 Exchange Online 邮箱的邮件，并对邮件执行操作。 若要详细了解 ZAP，请参阅[零时差自动清除 - 抵御垃圾邮件和恶意软件](zero-hour-auto-purge.md)。
 
@@ -159,7 +159,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 5. （可选）展开 **“允许列表”** 部分，通过电子邮件地址或电子邮件域配置允许跳过垃圾邮件筛选的邮件发件人：
 
    > [!CAUTION]
-   > <ul><li>在此处添加域之前，请慎重考虑。 有关详细信息，请参阅[在 Office 365 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)</li><li>切勿将接受的域（你拥有的域）或公共域（例如，microsoft.com 或 office.com）添加到允许的域列表中。 这会允许攻击者将不使用垃圾邮件筛选的电子邮件发送到你的组织。</li></ul>
+   > • 在此处添加域之前，请慎重考虑。 有关详细信息，请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md) <br/><br/> • 切勿将接受的域（你拥有的域）或公共域（例如，microsoft.com 或 office.com）添加到允许的域列表中。 这会允许攻击者将不使用垃圾邮件筛选的电子邮件发送到你的组织。
 
    - **允许发件人**：单击 **“编辑”**。 在随即显示的 **“允许的发件人列表”** 浮出控件中，执行以下步骤：
 
@@ -188,7 +188,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 6. （可选）展开 **“阻止列表”** 部分，通过电子邮件地址或电子邮件域配置始终被标记为“高可信度垃圾邮件”的邮件发件人：
 
    > [!NOTE]
-   > 手动阻止域并不危险，但可能会增加管理工作量。 有关详细信息，请参阅[在 Office 365 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
+   > 手动阻止域并不危险，但可能会增加管理工作量。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
    - **阻止发件人**：单击 **“编辑”**。 在随即显示的 **“阻止的发件人列表”** 浮出控件中，执行以下步骤：
 
@@ -238,7 +238,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 8. 可选 **“垃圾邮件属性”** 部分包含默认禁用的高级垃圾邮件筛选 (ASF) 设置。 ASF 设置即将弃用，其功能正在合并到筛选堆栈的其他部分中。 建议在反垃圾邮件策略中保持所有这些 ASF 设置的禁用状态不变。
 
-   若要详细了解这些设置，请参阅 [Office 365 中的高级垃圾邮件筛选设置](advanced-spam-filtering-asf-options.md)。
+   若要详细了解这些设置，请参阅 [EOP 中的高级垃圾邮件筛选设置](advanced-spam-filtering-asf-options.md)。
 
 9. （必需）展开 **“应用于”** 部分，以确定向哪些内部收件人应用策略。
 
@@ -246,7 +246,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
     若要查看所有可配置的条件，最简单的方法是单击 **“添加条件”** 三次。 若要删除不需要配置的条件，可以单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
 
-    - **收件人域是**：指定 Office 365 中配置的一个或多个接受的域中的收件人。 单击 **“添加标记”** 框，以查看并选择域。 如果有多个域，请再次单击 **“添加标记”** 框来选择其他域。
+    - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。 单击 **“添加标记”** 框，以查看并选择域。 如果有多个域，请再次单击 **“添加标记”** 框来选择其他域。
 
     - **收件人是**：指定组织中的一个或多个邮箱、邮件用户或邮件联系人。 单击 **“添加标记”**，然后开始键入内容来筛选列表。 若要选择其他收件人，请再次单击 **“添加标记”** 框。
 
@@ -324,7 +324,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 ### <a name="configure-end-user-spam-notifications"></a>配置最终用户垃圾邮件通知
 
-如果垃圾邮件筛选裁定隔离了邮件，你可以配置最终用户垃圾邮件通知，让收件人知道向他们发送的邮件发生了什么。 若要详细了解这些通知，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+如果垃圾邮件筛选裁定隔离了邮件，你可以配置最终用户垃圾邮件通知，让收件人知道向他们发送的邮件发生了什么。 若要详细了解这些通知，请参阅 [ EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
 1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 

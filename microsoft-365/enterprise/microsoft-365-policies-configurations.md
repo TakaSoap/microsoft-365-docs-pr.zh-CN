@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0512d51f2789383c7612c3dbd97c0a77c2c4c7fa
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214658"
+ms.locfileid: "44222323"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -120,7 +120,7 @@ Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，�
 
 本指南介绍如何实现一组用于保护对 Office 365 （包括 Exchange Online、SharePoint Online 和 OneDrive for business）的访问权限的策略。 除了实施这些策略之外，我们还建议您使用以下资源提高租户的保护级别：
 
-- [配置租户以提高安全性](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355)：这些建议适用于租户的基准安全性。
+- [配置租户以提高安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security)：这些建议适用于租户的基准安全性。
 - [Microsoft 365 安全路线图：前30天、90天及以上的主要优先级](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)：这些建议包括日志记录、数据管理、管理员访问和威胁防护。
 
 
