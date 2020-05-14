@@ -19,17 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
-description: 在本文中，你将了解 Microsoft 365 中的反欺骗保护，可减少来自电子欺骗域名的网络钓鱼攻击。
-ms.openlocfilehash: a5236161e1df6df1d007135c9ae700e87a06ccf0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
+ms.openlocfilehash: c28f5cf18a8da3be06906eb1e6b118c856c40066
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034066"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44209027"
 ---
-# <a name="anti-spoofing-protection"></a>防欺骗保护
+# <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
-无论你是拥有 Exchange Online 邮箱的 Microsoft 365 客户，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 客户，EOP 都包括帮助保护你的组织免受欺骗（伪造）发件人威胁的功能。
+无论是针对拥有 Exchange Online 邮箱的 Microsoft 365 组织，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织，EOP 都将提供帮助保护你的组织免受虚假（伪造）发件人威胁的功能。
 
 在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 欺骗是黑客使用的一种常见技术。 **欺骗邮件看似来自某人或某处，其实并非其真实来源**。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 EOP 中的反欺骗技术专门检查邮件正文中的“发件人”标头（用于显示电子邮件客户端中的邮件发件人）。 如果 EOP 高度确信“发件人”标头是伪造的，该邮件将被识别为欺骗邮件。
 
@@ -37,11 +37,11 @@ EOP 中提供了以下反欺骗技术：
 
 - **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
-- **反网络钓鱼策略**：在 EOP 中，内置的反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的欺骗发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (ATP) 中提供的高级反网络钓鱼策略高级威胁防护还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
+- **反网络钓鱼策略**：在 EOP 中，反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的虚假发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (Office 365 ATP) 中提供的高级反网络钓鱼策略还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
 
 - **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Microsoft 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
-Microsoft 的反欺骗技术最初仅部署到具有 Office 365 Office 365 高级威胁防护 (ATP) 的组织。 2018 年 10 月，EOP 新增了反欺骗防护功能。
+从 2018 年 10 月起，在 EOP 中提供防欺骗保护。 在此以前，仅向使用 Office 365 ATP 的组织提供防欺骗保护。
 
 EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
 

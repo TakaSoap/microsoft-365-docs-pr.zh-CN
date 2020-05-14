@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。 这些标签可应用包含加密视觉标记（如页脚和水印）的保护设置。
-ms.openlocfilehash: b09a107c6b03743eeaddf86e812cc747482d2eb4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 418a52a8a9798fa0e08a6a2d4951fe91e0685c1a
+ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022150"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44213280"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -89,7 +89,7 @@ ms.locfileid: "44022150"
     
     ![应用于文档的水印和页眉](../media/Sensitivity-label-watermark-header.png)
     
-    需要检查何时应用内容标记？ 请参阅 [Microsoft 365 何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption)。
+    需要检查何时应用内容标记？ 请参阅 [Office 应用何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)。
     
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
