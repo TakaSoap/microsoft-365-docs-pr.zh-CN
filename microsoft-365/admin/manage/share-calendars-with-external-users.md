@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: '了解如何让你的用户与外部用户共享会议和约会的日历。 '
-ms.openlocfilehash: bd297fc2d684357d0500495e5a8263e5279efa39
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
+ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628036"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44249868"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 
@@ -39,10 +39,9 @@ ms.locfileid: "43628036"
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心启用日历共享
 
-1. 在 "管理中心" 中，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务" & "加载项</a>" 页面。 
+1. 在管理中心，转到 "**设置**" "设置" \> **Settings**。 
     
-  
-2. 在 "**服务&amp;外接程序**" 页上，选择 "**日历**"。
+2. 在 "**服务**" 选项卡上，选择 "**日历**"。
   
 3. 在打开的 "**日历**" 页上，选择是否希望让用户与组织外部的人员共享他们的日历，他们拥有 Microsoft 365 或 Exchange。
     
@@ -55,4 +54,3 @@ ms.locfileid: "43628036"
 
 一旦为租户启用共享，日历所有者就可以将邀请扩展到特定用户。 有关说明，请参阅[在 Outlook Web App 中共享日历](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx)。 
   
-
