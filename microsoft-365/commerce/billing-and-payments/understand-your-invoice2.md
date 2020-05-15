@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 365 for business 的发票
+title: 了解 Microsoft 365 商业版的帐单或发票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,15 +23,15 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: 了解如何解释 Microsoft 365 商业发票上的费用、帐单和付款信息，以及如何更改采购订单编号。
-ms.openlocfilehash: 5cb2f961fa11f25e160ddd978783c7744776307e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+description: 了解如何解释 Microsoft 365 for business 帐单或发票上的费用、帐单和付款信息，以及如何更改采购订单编号。
+ms.openlocfilehash: bd0204deb34d1fe08ec6391c24df5ab6fe6cc6d6
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045808"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232789"
 ---
-# <a name="understand-your-invoice-for-microsoft-365-for-business"></a>了解 Microsoft 365 for business 的发票
+# <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>了解 Microsoft 365 商业版的帐单或发票
 
 每月你都会收到一封电子邮件，告知你的新帐单声明在管理中心中可用。 [了解如何查找和查看你的帐单或发票](view-your-bill-or-invoice.md)。
   
@@ -104,7 +104,7 @@ ms.locfileid: "44045808"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 如果处于**表格**视图中，请选择 "**卡片**" 切换视图。
 
@@ -118,7 +118,7 @@ ms.locfileid: "44045808"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，并在 "**付款方式**" 部分，选择 "**更改付款详细信息**"。
 
@@ -128,7 +128,7 @@ ms.locfileid: "44045808"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 选择要更改的订阅，并在 "**付款方式**" 部分，选择 "**更改付款详细信息**"。
 

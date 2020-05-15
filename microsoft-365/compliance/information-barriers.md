@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: c4b4b31de90e8c72c346da5574b8854492de19ba
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047992"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232005"
 ---
 # <a name="information-barriers"></a>信息屏障
 
@@ -65,7 +65,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 - Microsoft 365 E5
 - Office 365 E5
 - Office 365 高级合规版
-- Microsoft 365 E5 信息保护和合规
+- Microsoft 365 合规性 E5
 
 有关更多详细信息，请参阅[合规性解决方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
 

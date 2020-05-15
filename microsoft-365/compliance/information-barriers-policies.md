@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c81fedddf5e3553ec4b24353fac43079305c5b2
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035038"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232048"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -72,7 +72,7 @@ ms.locfileid: "44035038"
 
 - 无通讯簿策略-在定义和应用信息屏障策略之前，请确保没有适当的 Exchange 通讯簿策略。 信息障碍基于通讯簿策略，但这两种类型的策略不兼容。 如果您具有此类策略，请务必先[删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)。 在信息屏障策略启用并启用了分层通讯簿后，***不包含***在信息屏障段中的所有用户都将在 Exchange online 中看到[分层通讯簿](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books)。
 
-- 目前使用 powershell cmdlet 在 Office 365 安全 & 合规中心中定义和管理信息屏障策略。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 您还将需要 AzureRM 模块。
+- 目前使用 powershell cmdlet 在 Office 365 安全 & 合规中心中定义和管理信息屏障策略。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 你还需要 Azure PowerShell 模块。
     - [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -81,10 +81,10 @@ ms.locfileid: "44035038"
    1. 运行以下 PowerShell cmdlet：
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -213,13 +213,13 @@ ms.locfileid: "44035038"
 
     |语法  |示例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    在此示例中，我们为 "*制造业*" 字段定义了称为 "制造业 *-HR* " 的策略。 在活动和应用后，此策略允许在*制造业*中的人员仅与称为*HR*的部门中的人员进行通信。 （在这种情况下，*制造*无法与不属于*HR*的用户进行通信。）         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    在此示例中，我们为 "*制造业*" 字段定义了称为 "制造业 *-HR* " 的策略。 在活动和应用后，此策略允许在*制造业*中的人员仅与称为*HR*的部门中的人员进行通信。 （在这种情况下，*制造*无法与不属于*HR*的用户进行通信。）         |
 
     **如果需要，可以使用此 cmdlet 指定多个段，如下面的示例所示。**
 
     |语法  |示例  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>在此示例中，我们定义了允许*研究*分段仅与*HR*和*制造业*通信的策略。        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>在此示例中，我们定义了允许*研究*分段仅与*HR*和*制造业*通信的策略。        |
 
     对于要定义的每个策略，请重复此步骤，以允许特定段仅与特定的其他特定段进行通信。
 
@@ -248,7 +248,7 @@ ms.locfileid: "44035038"
 
     语法`Start-InformationBarrierPoliciesApplication`
 
-    在运行`Start-InformationBarrierPoliciesApplication`等待30分钟后，系统开始应用策略。 系统对用户应用策略用户。 通常，系统进程每小时大约5000个用户帐户。
+    在运行 `Start-InformationBarrierPoliciesApplication` 等待30分钟后，系统开始应用策略。 系统对用户应用策略用户。 通常，系统进程每小时大约5000个用户帐户。
 
 ## <a name="view-status-of-user-accounts-segments-policies-or-policy-application"></a>查看用户帐户、段、策略或策略应用程序的状态
 
@@ -256,7 +256,7 @@ ms.locfileid: "44035038"
 
 |若要查看此  |具体操作  |
 |---------|---------|
-|用户帐户     |使用具有 Identity 参数的**InformationBarrierRecipientStatus** cmdlet。 <p>语法`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用任何唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>示例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此示例中，我们引用 Office 365 中的两个用户帐户： *meganb* for *Megan*和*alexw* for *Alex*。 <p>（也可以将此 cmdlet 用于单个用户： `Get-InformationBarrierRecipientStatus -Identity <value>`） <p>此 cmdlet 返回有关用户的信息，如属性值和应用的任何信息障碍策略。|
+|用户帐户     |使用具有 Identity 参数的**InformationBarrierRecipientStatus** cmdlet。 <p>语法`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>您可以使用任何唯一标识每个用户的值，如名称、别名、可分辨名称、规范域名、电子邮件地址或 GUID。 <p>示例：`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p>在此示例中，我们引用 Office 365 中的两个用户帐户： *meganb* for *Megan*和*alexw* for *Alex*。 <p>（也可以将此 cmdlet 用于单个用户： `Get-InformationBarrierRecipientStatus -Identity <value>` ） <p>此 cmdlet 返回有关用户的信息，如属性值和应用的任何信息障碍策略。|
 |段     |使用**OrganizationSegment** cmdlet。<p>语法`Get-OrganizationSegment` <p>这将显示为您的组织定义的所有网段的列表。         |
 |信息屏障策略     |使用**InformationBarrierPolicy** cmdlet。 <p> 语法`Get-InformationBarrierPolicy` <p>这将显示已定义的信息障碍策略的列表及其状态。       |
 |最新的信息屏障策略应用程序     | 使用**InformationBarrierPoliciesApplicationStatus** cmdlet。 <p>语法`Get-InformationBarrierPoliciesApplicationStatus`<p>    这将显示有关策略应用程序是已完成、失败还是正在进行的信息。       |
@@ -303,7 +303,7 @@ Contoso 有五个部门： HR、销售、营销、研究和制造。 为了保�
 
 Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，如下所示：
 
-|部门  |段定义  |
+|Department  |段定义  |
 |---------|---------|
 |HR     | `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`        |
 |销售     | `New-OrganizationSegment -Name "Sales" -UserGroupFilter "Department -eq 'Sales'"`        |
@@ -317,11 +317,11 @@ Contoso 将使用 Azure Active Directory 中的 "部门" 属性来定义段，�
 
 Contoso 定义了三种策略，如下表所述：
 
-|策略  |策略定义  |
+|Policy  |策略定义  |
 |---------|---------|
 |策略1：防止销售与信息检索通信     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*销售-研究*"。 当此策略处于活动状态且已应用时，它将有助于阻止销售部门中的用户与研究网段中的用户进行通信。 这是单向策略;它不会阻止研究与销售通信。 为此，需要策略2。      |
 |策略2：防止与销售通信的研究     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> 在此示例中，信息屏障策略称为 "*研究-销售*"。 当此策略处于活动状态且已应用时，它将有助于防止在研究网段中的用户与销售部门中的用户进行通信。       |
-|策略3：允许制造业仅与 HR 和营销进行通信     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>在这种情况下，信息屏障策略称为 "*制造业-HRMarketing*"。 当此策略处于活动状态且已应用时，生产只能与 HR 和 Marketing 进行通信。 请注意，不限制 HR 和市场营销与其他段进行通信。 |
+|策略3：允许制造业仅与 HR 和营销进行通信     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>在这种情况下，信息屏障策略称为 "*制造业-HRMarketing*"。 当此策略处于活动状态且已应用时，生产只能与 HR 和 Marketing 进行通信。 请注意，不限制 HR 和市场营销与其他段进行通信。 |
 
 通过定义的段和策略，Contoso 通过运行**InformationBarrierPoliciesApplication** cmdlet 来应用这些策略。 
 

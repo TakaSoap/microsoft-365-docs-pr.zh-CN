@@ -18,22 +18,22 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在组织内创建逻辑边界，以控制电子数据展示管理器可以搜索的用户内容位置。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 80b64a32ea7bbd45aec726a1e8f41ad48ef77714
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636160"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231845"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
 在使用核心电子数据展示或高级电子数据展示管理调查时，可以应用本文中的指南。
 
-合规性边界在组织内创建逻辑边界，以控制电子数据展示管理者可以搜索的用户内容位置（如邮箱、SharePoint 网站和 OneDrive 帐户）。 此外，合规性边界控制谁可以访问电子数据展示用例，以管理组织中的法律、人力资源或其他调查。 对于必须遵守地理位置 boarders 和管理法规以及政府的政府（通常分为不同的机构）的多国公司来说，需求是合规性边界所必需的。 在 Office 365 中，合规性边界可帮助您在执行内容搜索和使用电子数据展示案例管理调查时满足这些要求。
+合规性边界在组织内创建逻辑边界，以控制电子数据展示管理者可以搜索的用户内容位置（如邮箱、SharePoint 网站和 OneDrive 帐户）。 此外，合规性边界控制谁可以访问电子数据展示用例，以管理组织中的法律、人力资源或其他调查。 对于必须遵守地理位置 boarders 和管理法规以及政府的政府（通常分为不同的机构）的多国公司来说，需求是合规性边界所必需的。 在 Microsoft 365 中，合规性边界可帮助您在执行内容搜索和使用电子数据展示案例管理调查时满足这些要求。
   
 我们使用下图中的示例来说明合规性边界的工作原理。
   
-![合规性边界包含搜索权限筛选器，这些筛选器控制对对电子数据展示案例的访问进行控制的代理和管理员角色组的访问](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![合规性边界包含搜索权限筛选器，这些筛选器控制对对电子数据展示案例的访问进行控制的代理和管理员角色组的访问](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
 在此示例中，Contoso 有限公司是由两个子公司、第四个咖啡和 Coho Winery 组成的组织。 业务要求电子数据展示 mangers 和调查人员只能在其代理中搜索 Exchange 邮箱、OneDrive 帐户和 SharePoint 网站。 此外，电子数据展示管理者和调查人员只能查看其代理中的电子数据展示案例，并且只能访问他们所属的案例。 下面介绍了合规性边界如何满足这些要求。
   
@@ -57,13 +57,13 @@ ms.locfileid: "43636160"
   
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>步骤1：标识用于定义您的机构的用户属性
 
-第一步是选择要使用的 Azure Active Directory 属性，该属性将定义您的机构。 此属性用于创建搜索权限筛选器，该筛选器限制电子数据展示管理器仅搜索为该属性分配了特定值的用户的内容位置。 例如，假设 Contoso 决定使用 "**部门**" 属性。 对于第四个咖啡店中的用户`FourthCoffee` ，此属性的值为，Coho Winery 子公司中的用户的值为。 `CohoWinery` 在步骤4中，使用此`attribute:value`对（例如，"*部门： FourthCoffee*"）限制电子数据展示管理器可以搜索的用户内容位置。 
+第一步是选择要使用的 Azure Active Directory 属性，该属性将定义您的机构。 此属性用于创建搜索权限筛选器，该筛选器限制电子数据展示管理器仅搜索为该属性分配了特定值的用户的内容位置。 例如，假设 Contoso 决定使用 "**部门**" 属性。 对于第四个咖啡店中的用户，此属性的值为 `FourthCoffee` ，Coho Winery 子公司中的用户的值为 `CohoWinery` 。 在步骤4中，使用此 `attribute:value` 对（例如，"*部门： FourthCoffee*"）限制电子数据展示管理器可以搜索的用户内容位置。 
   
 以下是可用于合规性边界的 Azure Active Directory 用户属性的列表：
   
 - Company
     
-- CustomAttribute1 — CustomAttribute15
+- CustomAttribute1-CustomAttribute15
     
 - 部门
     
@@ -75,7 +75,7 @@ ms.locfileid: "43636160"
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步骤2：为 Microsoft 支持文件提供将 user 属性同步到 OneDrive 帐户的请求
 
-下一步是向 Microsoft 支持文件发出请求，以将您在步骤1中选择的 Azure Active Directory 属性同步到组织中的所有 OneDrive 帐户。 在此同步发生之后，您在步骤1中选择的属性（及其值）将映射到名为`ComplianceAttribute`的 SharePoint 中的隐藏托管属性。 您可以使用此属性在步骤4中创建 OneDrive 的搜索权限筛选器。
+下一步是向 Microsoft 支持文件发出请求，以将您在步骤1中选择的 Azure Active Directory 属性同步到组织中的所有 OneDrive 帐户。 在此同步发生之后，您在步骤1中选择的属性（及其值）将映射到名为的 SharePoint 中的隐藏托管属性 `ComplianceAttribute` 。 您可以使用此属性在步骤4中创建 OneDrive 的搜索权限筛选器。
   
 向 Microsoft 支持部门提交请求时，请包含以下信息：
   
@@ -123,16 +123,16 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
     
 -  `Filters`：指定筛选器的搜索条件。 对于合规性边界，请定义以下筛选器。 每个应用于一个内容位置。 
     
-    -  `Mailbox`：指定`Users`参数中定义的角色组可以搜索的邮箱。 对于合规性边界， *ComplianceAttribute*是您在步骤1和*AttributeValue*中标识的与指定机构相同的属性。 此筛选器允许角色组的成员仅搜索特定代理中的邮箱;例如， `"Mailbox_Department -eq 'FourthCoffee'"`。 
+    -  `Mailbox`：指定参数中定义的角色组 `Users` 可以搜索的邮箱。 对于合规性边界， *ComplianceAttribute*是您在步骤1和*AttributeValue*中标识的与指定机构相同的属性。 此筛选器允许角色组的成员仅搜索特定代理中的邮箱;例如， `"Mailbox_Department -eq 'FourthCoffee'"` 。 
     
-    -  `Site`：指定`Users`参数中定义的角色组可以搜索的 OneDrive 帐户。 对于 OneDrive 筛选器，请使用实际字符串`ComplianceAttribute`。 这将映射到您在步骤1中标识的相同属性，并且由于您在步骤2中提交的支持请求而将其同步到 OneDrive 帐户。*AttributeValue*指定代理。 此筛选器允许角色组的成员仅搜索特定代理中的 OneDrive 帐户;例如， `"Site_ComplianceAttribute -eq 'FourthCoffee'"`。
+    -  `Site`：指定参数中定义的角色组可以搜索的 OneDrive 帐户 `Users` 。 对于 OneDrive 筛选器，请使用实际字符串 `ComplianceAttribute` 。 这将映射到您在步骤1中标识的相同属性，并且由于您在步骤2中提交的支持请求而将其同步到 OneDrive 帐户。*AttributeValue*指定代理。 此筛选器允许角色组的成员仅搜索特定代理中的 OneDrive 帐户;例如， `"Site_ComplianceAttribute -eq 'FourthCoffee'"` 。
     
-    -  `Site_Path`：指定`Users`参数中定义的角色组可以搜索的 SharePoint 网站。 *SharePointURL*指定角色组成员可以搜索的代理中的网站。 例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 请注意`Site` ， `Site_Path`筛选器由 **-或**运算符连接。
+    -  `Site_Path`：指定参数中定义的角色组可以搜索的 SharePoint 网站 `Users` 。 *SharePointURL*指定角色组成员可以搜索的代理中的网站。 例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 请注意 `Site` ， `Site_Path` 筛选器由 **-或**运算符连接。
     
      > [!NOTE]
-     > `Filters`参数的语法包含*筛选器列表*。 筛选器列表是包含邮箱筛选器和使用逗号分隔的网站筛选器的筛选器列表。 在上面的示例中，请注意，逗号分隔**Mailbox_ComplianceAttribute**和**Site_ComplianceAttribute**： `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`。 在运行内容搜索期间处理此筛选器时，将从 "筛选器" 列表中创建两个搜索权限筛选器：一个邮箱筛选器和一个网站筛选器。 使用筛选器列表的另一种方法是为每个代理创建两个单独的搜索权限筛选器：针对邮箱属性的一个搜索权限筛选器和一个网站属性筛选器。 在这两种情况下，结果都是相同的。 使用筛选器列表或创建单独的搜索权限筛选器是一个优先考虑事项。
+     > 参数的语法 `Filters` 包含*筛选器列表*。 筛选器列表是包含邮箱筛选器和使用逗号分隔的网站筛选器的筛选器列表。 在上面的示例中，请注意，逗号分隔**Mailbox_ComplianceAttribute**和**Site_ComplianceAttribute**： `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` 。 在运行内容搜索期间处理此筛选器时，将从 "筛选器" 列表中创建两个搜索权限筛选器：一个邮箱筛选器和一个网站筛选器。 使用筛选器列表的另一种方法是为每个代理创建两个单独的搜索权限筛选器：针对邮箱属性的一个搜索权限筛选器和一个网站属性筛选器。 在这两种情况下，结果都是相同的。 使用筛选器列表或创建单独的搜索权限筛选器是一个优先考虑事项。
 
--  `Action`：指定应用筛选器的合规性搜索操作的类型。 例如，仅`-Action Search`当`Users`参数中定义的角色组的成员运行内容搜索时，才会应用筛选器。 在这种情况下，导出搜索结果时不会应用筛选器。 对于合规性边界， `-Action All`请使用，以便将筛选器应用于所有搜索操作。 
+-  `Action`：指定应用筛选器的合规性搜索操作的类型。 例如， `-Action Search` 仅当参数中定义的角色组的成员运行内容搜索时，才会应用筛选器 `Users` 。 在这种情况下，导出搜索结果时不会应用筛选器。 对于合规性边界，请使用， `-Action All` 以便将筛选器应用于所有搜索操作。 
     
     有关内容搜索操作的列表，请参阅[Configure 权限筛选 For Content search](permissions-filtering-for-content-search.md#new-compliancesecurityfilter)中的 "new-compliancesecurityfilter" 一节。
 
@@ -164,7 +164,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 2. 在电子数据展示事例的列表中，单击您创建的事例的名称。
 
-3. 在 "**管理此案例**" 弹出页面的 "**管理角色组**" ![下，](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif)单击 "添加图标" "**添加**"。
+3. 在 "**管理此案例**" 弹出页面的 "**管理角色组**" 下，单击 " ![ 添加图标" " ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **添加**"。
 
     ![将角色组添加为电子数据展示事例的成员](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
@@ -220,8 +220,10 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
    如果没有为搜索权限筛选器指定**区域**参数，则将搜索组织的默认 SharePoint 区域。 将搜索结果导出到最接近的数据中心。
 
-> [!TIP]
-> 为了简化概念，**区域**参数控制用于在 SharePoint 和 OneDrive 中搜索内容的数据中心。 这不适用于搜索 Exchange 中的内容，因为 Exchange 内容搜索不受数据中心地理位置的约束。 此外，相同的**区域**参数值还可能规定导出的数据中心已通过路由。 这通常需要控制跨地理位置的数据移动 boarders。<br/><br/>如果您使用的是高级电子数据展示，则在 SharePoint 和 OneDrive 中搜索内容不受数据中心地理位置的约束。 搜索所有数据中心。 有关高级电子数据展示的详细信息，请参阅[Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md)。
+   为了简化概念，**区域**参数控制用于在 SharePoint 和 OneDrive 中搜索内容的数据中心。 这不适用于搜索 Exchange 中的内容，因为 Exchange 内容搜索不受数据中心地理位置的约束。 此外，相同的**区域**参数值还可能规定导出的数据中心已通过路由。 这通常需要控制跨地理位置的数据移动 boarders。
+
+> [!NOTE]
+> 如果您使用的是高级电子数据展示，则**region**参数不会控制导出数据的区域。 此外，在 SharePoint 和 OneDrive 中搜索内容不受数据中心地理位置的约束。 搜索所有数据中心。 有关高级电子数据展示的详细信息，请参阅[Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md)。
 
 下面的示例展示了如何在为合规性边界创建搜索权限筛选器时使用**Region**参数。 这假定第四个咖啡子公司位于北美，并且 Coho Winery 位于欧洲。 
   
@@ -237,7 +239,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **Region** 参数不控制 Exchange 邮箱的搜索。 搜索邮箱时将搜索所有数据中心。 若要限制搜索的 Exchange 邮箱的作用域，请在创建或更改搜索权限筛选器时使用**Filters**参数。 
     
-- 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索，则需要为该电子数据展示管理器创建一个不同的用户帐户，以便在搜索权限筛选器中使用，以指定 SharePoint 网站或 OneDrive 帐户所在的区域。 有关对此进行设置的详细信息，请参阅在[Office 365 中的内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理位置环境中搜索内容" 部分。
+- 如果电子数据展示管理器需要在多个 SharePoint 区域中进行搜索，则需要为该电子数据展示管理器创建一个不同的用户帐户，以便在搜索权限筛选器中使用，以指定 SharePoint 网站或 OneDrive 帐户所在的区域。 有关对此进行设置的详细信息，请参阅[内容搜索](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的 "在 SharePoint 多地理环境中搜索内容" 部分。
     
 - 在 SharePoint 和 OneDrive 中搜索内容时，**区域**参数会将搜索定向到电子数据展示管理器将在其中执行电子数据展示调查的主或卫星位置。 如果电子数据展示管理器在搜索权限筛选器中指定的区域之外搜索 SharePoint 和 OneDrive 网站，则不会返回任何搜索结果。 
     
@@ -249,7 +251,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     Set-ComplianceSecurityFilter -FilterName <Filter name>  -Region <Region>
     ```
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
  **谁可以创建和管理搜索权限筛选器（使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet）？**
   
@@ -257,7 +259,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **如果将电子数据展示管理器分配给跨多个代理的多个角色组，如何在一个或多个代理中搜索内容？**
   
-电子数据展示管理器可以向其搜索查询中添加参数，以将搜索限制到特定的代理。 例如，如果组织已将**CustomAttribute10**属性指定为区分机构，则可以在搜索查询中追加以下内容，以在特定机构中搜索邮箱和 OneDrive 帐户： `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>`。
+电子数据展示管理器可以向其搜索查询中添加参数，以将搜索限制到特定的代理。 例如，如果组织已将**CustomAttribute10**属性指定为区分机构，则可以在搜索查询中追加以下内容，以在特定机构中搜索邮箱和 OneDrive 帐户： `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>` 。
   
  **如果更改了用作搜索权限筛选器中的符合性属性的属性的值，会发生什么情况？**
   
@@ -265,7 +267,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-可以。 为此，可以将用户添加到对这两个机构都可见的角色组。
+是。 为此，可以将用户添加到对这两个机构都可见的角色组。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Microsoft 365 保留策略或 DLP？**
   

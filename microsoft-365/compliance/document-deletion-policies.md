@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
-ms.openlocfilehash: fba7af2c58b373e51aed93ce9a353a45528bb9f9
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 63bf9e83bb6ef793359e35943cbfc6244ef5078c
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942995"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232087"
 ---
 # <a name="overview-of-document-deletion-policies"></a>文档删除策略概述
 
 > [!IMPORTANT]
-> 向前移动时，我们建议使用保留策略或在 Microsoft 365 合规性中心、Microsoft 365 安全中心或安全&amp;合规中心（而不是文档删除策略）中创建的标签。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议使用保留策略。 有关详细信息，请参阅[使用保留策略而不是这些功能](retention-policies.md#use-a-retention-policy-instead-of-these-features)。
-  
+> 向前移动时，建议使用 Microsoft 365 合规性中心的保留策略，而不是文档删除策略。 文档删除策略将继续与保留策略一起工作，但如果您需要保留或删除 Office 365 中任何位置的内容，我们建议您使用保留策略或保留标签。 有关详细信息，请参阅[使用保留策略而不是旧功能](retention-policies.md#use-a-retention-policy-instead-of-older-features)。
+
 由于合规性、法律或其他业务要求，你的组织可能需要将文档保留一段时间。 但是，如果您的组织保留的文档比所需时间长，则会带来不必要的法律风险。 使用文档删除策略，您可以通过在特定时间段后删除网站中的文档来主动降低风险，例如，在创建文档五年后，可以在用户的 OneDrive for Business 网站中删除文档。
   
 文档删除策略功能强大且灵活，例如，您可以：

@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 description: '了解在不同区域中为 Microsoft 365 for business 订阅收取的税款的多少。 '
 ms.custom: okr_SMB
-ms.openlocfilehash: 0aeabd49477bdef856a7ddb9f3b7c39211be2479
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045820"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232825"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -114,7 +114,7 @@ ms.locfileid: "44045820"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>添加 VAT ID（仅限欧盟国家/地区）
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 查找要更新的订阅的订阅卡。
 
@@ -128,9 +128,9 @@ ms.locfileid: "44045820"
 
 #### <a name="add-your-vat-id-eu-countries-only"></a>添加 VAT ID（仅限欧盟国家/地区）
   
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
-2. 选择订阅名称，然后选择 "**更多操作** \> "**编辑 VAT 编号**。
+2. 选择订阅名称，然后选择 "**更多操作**" \> **编辑 VAT 编号**。
   
 3. 在 "**编辑服务使用地址**" 页上，在 " **vat 号码**" 框中输入 vat ID，然后选择 "**提交**"。
 
@@ -184,6 +184,6 @@ ms.locfileid: "44045820"
   
 ## <a name="related-articles"></a>相关文章
   
-[查看帐单](view-your-bill-or-invoice.md)
+[查看帐单或发票](view-your-bill-or-invoice.md)
   
-[了解发票](understand-your-invoice.md)
+[了解帐单或发票](understand-your-invoice.md)

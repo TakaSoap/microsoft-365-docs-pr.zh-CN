@@ -1,5 +1,5 @@
 ---
-title: 了解发票
+title: 了解帐单或发票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: 了解如何阅读和了解 Microsoft 商业产品的发票。
+description: 了解如何阅读和了解 Microsoft 商业产品的帐单或发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: 63186bb0fc601be786e223fe2e6febbdb48361e2
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211400"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232813"
 ---
-# <a name="understand-your-invoice"></a>了解发票
+# <a name="understand-your-bill-or-invoice"></a>了解帐单或发票
 
 ::: moniker range="o365-21vianet"
 
@@ -36,7 +36,7 @@ ms.locfileid: "44211400"
 
 发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心[查看你的联机发票](#view-your-online-invoice)。 您还可以将其下载为可移植文档格式（.pdf）以通过电子邮件发送。
 
-如果你只有 Microsoft 365 订阅，请参阅[了解适用于 microsoft 365 商业](understand-your-invoice2.md)版的发票。
+如果你只有 Microsoft 365 订阅，请参阅[了解 microsoft 365 商业版的帐单或发票](understand-your-invoice2.md)。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 

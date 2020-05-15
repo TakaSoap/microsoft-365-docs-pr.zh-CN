@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e42249fb2ba7143c4c833193b31c72f0fb73137
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035886"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232051"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -52,7 +52,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 
 - 非活动邮箱不支持本文中介绍的过程。 这是因为删除后不能对非活动邮箱重新应用保留（或保留策略）。 从非活动邮箱删除保留时，它会更改为标准软删除邮箱，并且在托管文件夹助理处理后，将从组织中永久删除。
 
-- 您不能对已分配给已使用保留锁锁定的保留策略的邮箱执行此过程。 这是因为保留锁可防止您从保留策略中删除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[锁定保留策略](retention-policies.md#locking-a-retention-policy)。
+- 您不能对已分配给已使用保留锁锁定的保留策略的邮箱执行此过程。 这是因为保留锁可防止您从保留策略中删除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[使用保留锁定符合法规要求](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
 - 如果未将邮箱置于保留状态（或未启用单个项目恢复），则可以从 "可恢复的项目" 文件夹中删除这些项目。 有关如何执行此操作的详细信息，请参阅[在组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
@@ -92,7 +92,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 
 
    > [!TIP]
-    > 如果*InPlaceHolds*属性中的值过多，并且不是全部显示，则可以运行`Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds`命令以在单独的行中显示每个值。 
+    > 如果*InPlaceHolds*属性中的值过多，并且不是全部显示，则可以运行 `Get-Mailbox <username> | Select-Object -ExpandProperty InPlaceHolds` 命令以在单独的行中显示每个值。 
   
 5. 运行以下命令以获取有关组织范围内的所有保留策略的信息。 
 
@@ -103,7 +103,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
    如果您的组织具有任何组织范围的保留策略，则必须在步骤3中将邮箱排除在这些策略之外。
 
    > [!TIP]
-    > 如果*InPlaceHolds*属性中的值过多，并且不是全部显示，则可以运行`Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds`命令以在单独的行中显示每个值。 
+    > 如果*InPlaceHolds*属性中的值过多，并且不是全部显示，则可以运行 `Get-OrganizationConfig | Select-Object -ExpandProperty InPlaceHolds` 命令以在单独的行中显示每个值。 
   
 6. 运行以下命令，获取用户主邮箱中的 "可恢复的项目" 文件夹中的文件夹和子文件夹中的当前大小和项目总数。 
 
@@ -194,23 +194,23 @@ Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL Name
   
  ### <a name="retention-policies-applied-to-specific-mailboxes"></a>应用于特定邮箱的保留策略
   
-在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定应用于邮箱的保留策略。 对您在步骤1中标识`mbx`的`skp`保留策略使用 GUID （不包括或前缀）。 
+在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定应用于邮箱的保留策略。 `mbx` `skp` 对您在步骤1中标识的保留策略使用 GUID （不包括或前缀）。 
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-在确定保留策略后，请转到安全 & 合规性中心中的 "**信息管理** \> "**保留**页，编辑在上一步中标识的保留策略，然后从保留策略中包含的收件人列表中删除邮箱。 
+在确定保留策略后，请转到安全 & 合规性中心中的 "**信息管理**" \> **保留**页，编辑在上一步中标识的保留策略，然后从保留策略中包含的收件人列表中删除邮箱。 
   
  ### <a name="organization-wide-retention-policies"></a>组织范围内的保留策略
   
-组织范围和 Exchange 范围的保留策略应用于组织中的每个邮箱。 它们在组织级别（而不是邮箱级别）应用，并在您在步骤1中运行**set-organizationconfig** cmdlet 时返回。 在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定组织范围内的保留策略。 对您在步骤1中确定`mbx`的组织范围的保留策略使用 GUID （不包括前缀）。 
+组织范围和 Exchange 范围的保留策略应用于组织中的每个邮箱。 它们在组织级别（而不是邮箱级别）应用，并在您在步骤1中运行**set-organizationconfig** cmdlet 时返回。 在[Security & 合规性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=627084)中运行以下命令，以确定组织范围内的保留策略。 `mbx`对您在步骤1中确定的组织范围的保留策略使用 GUID （不包括前缀）。 
 
 ```powershell
 Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
-在确定组织范围内的保留策略后，请转到安全 & 合规中心中的 "**信息管理** \> "**保留**页，编辑在上一步中标识的每个组织范围的保留策略，并将邮箱添加到排除的收件人列表中。 执行此操作会将用户的邮箱从保留策略中删除。 
+在确定组织范围内的保留策略后，请转到安全 & 合规中心中的 "**信息管理**" \> **保留**页，编辑在上一步中标识的每个组织范围的保留策略，并将邮箱添加到排除的收件人列表中。 执行此操作会将用户的邮箱从保留策略中删除。 
 
 ### <a name="retention-labels"></a>保留标签
 
@@ -228,7 +228,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
  ### <a name="ediscovery-holds"></a>电子数据展示保留
   
-在[Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)中运行以下命令，以确定与应用于邮箱的电子数据展示事例（称为*电子数据展示保留*）关联的保留项。 使用您在步骤1中确定`UniH`的电子数据展示保留的 GUID （不包括前缀）。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
+在[Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)中运行以下命令，以确定与应用于邮箱的电子数据展示事例（称为*电子数据展示保留*）关联的保留项。 使用 `UniH` 您在步骤1中确定的电子数据展示保留的 GUID （不包括前缀）。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -242,7 +242,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-确定电子数据展示事例的名称和保留后，请转到合规中心中的**电子数据** \>展示**电子数据**展示页面，打开事例，并将邮箱从保留中删除。 有关识别电子数据展示保留的详细信息，请参阅[如何识别 Exchange Online 邮箱上的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)一节中的 "电子数据展示保留" 一节。
+确定电子数据展示事例的名称和保留后，请转到合规中心中的**电子数据**展示 \> **电子数据**展示页面，打开事例，并将邮箱从保留中删除。 有关识别电子数据展示保留的详细信息，请参阅[如何识别 Exchange Online 邮箱上的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds)一节中的 "电子数据展示保留" 一节。
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>步骤4：从邮箱中删除延迟保留
 
@@ -345,11 +345,11 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     
     **应用于特定邮箱的保留策略**
     
-    使用安全 & 合规性中心将邮箱重新添加到保留策略。 转到 "安全性 & 合规性中心" 中的 "**信息管理** \> "**保留**页，编辑保留策略，并将邮箱重新添加到应用保留策略的收件人列表中。 
+    使用安全 & 合规性中心将邮箱重新添加到保留策略。 转到 "安全性 & 合规性中心" 中的 "**信息管理**" \> **保留**页，编辑保留策略，并将邮箱重新添加到应用保留策略的收件人列表中。 
     
     **组织范围内的保留策略**
     
-    如果通过从策略中排除组织范围或 Exchange 范围内的保留策略，则使用安全 & 合规性中心将邮箱从排除的用户列表中删除。 转到 "安全性 & 合规性中心" 中的 "**信息管理** \> "**保留**页，编辑组织范围的保留策略，然后从排除的收件人列表中删除邮箱。 执行此操作将把保留策略重新应用到用户的邮箱。 
+    如果通过从策略中排除组织范围或 Exchange 范围内的保留策略，则使用安全 & 合规性中心将邮箱从排除的用户列表中删除。 转到 "安全性 & 合规性中心" 中的 "**信息管理**" \> **保留**页，编辑组织范围的保留策略，然后从排除的收件人列表中删除邮箱。 执行此操作将把保留策略重新应用到用户的邮箱。 
     
     **电子数据展示事例保留**
     
@@ -379,10 +379,10 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 |**保留类型**|**示例值**|**如何识别保留**|
 |:-----|:-----|:-----|
-|诉讼保留  <br/> | `True` <br/> |*LitigationHoldEnabled*属性设置为`True`。  <br/> |
-|就地保留  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*属性包含邮箱中放置的就地保留的 GUID。 您可以指示这是就地保留，因为 GUID 不以前缀开头。  <br/> 您可以使用 Exchange `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Online PowerShell 中的命令来获取有关邮箱的就地保留的信息。  <br/> |
-| 应用于特定邮箱的安全性 & 合规性中心内的保留策略  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> 或  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |当您运行**邮箱获取**cmdlet 时， *InPlaceHolds*属性还包含应用于邮箱的保留策略的 guid。 您可以确定保留策略，因为 GUID 以`mbx`前缀开头。 如果保留策略的 GUID 以`skp`前缀开头，则表示该保留策略应用于 Skype for business 会话。  <br/> 若要标识应用于邮箱的保留策略，请在 Security & 合规性中心 PowerShell 中运行以下命令： <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>运行此命令时， `mbx`请`skp`务必删除或前缀。  <br/> |
-|安全 & 合规中心中的组织范围内的保留策略  <br/> |无值  <br/> 或  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`（指示邮箱已从组织范围的策略中排除）  <br/> |即使在运行 "**获取邮箱**" cmdlet 时， *InPlaceHolds*属性为空，仍可能会有一个或多个应用于邮箱的组织范围内保留策略。  <br/> 若要验证这一点，可以在`Get-OrganizationConfig | FL InPlaceHolds` Exchange Online PowerShell 中运行命令，以获取组织范围的保留策略的 guid 列表。 应用于 Exchange 邮箱的组织范围的保留策略的 GUID 以`mbx`前缀开头;例如， `mbxa3056bb15562480fadb46ce523ff7b02`。  <br/> 若要标识应用于邮箱的组织范围的保留策略，请在 Security & 合规性中心 PowerShell 中运行以下命令： <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>如果从组织范围的保留策略中排除了某个邮箱，则当您运行 "**获取邮箱**" cmdlet 时，该保留策略的 GUID 将显示在用户邮箱的*InPlaceHolds*属性中。它是由前缀`-mbx`标识的;例如，`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
-|安全 & 合规中心中的电子数据展示案例保留  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*属性还包含与可能位于邮箱上的安全性 & 合规性中心中的电子数据展示事例相关的任何保留的 GUID。 你可以告诉这是电子数据展示事例保留，因为 GUID 以`UniH`前缀开头。  <br/> 您可以使用 Security `Get-CaseHoldPolicy` & 合规性中心 PowerShell 中的 cmdlet 来获取有关邮箱中的保留与邮箱关联的电子数据展示事例的信息。 例如，您可以运行命令`Get-CaseHoldPolicy <hold GUID without prefix> | FL Name`以显示邮箱上的事例保留的名称。 运行此命令时， `UniH`请务必删除前缀。  <br/><br/> 若要标识与邮箱的保留内容相关联的电子数据展示事例，请运行以下命令：<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
+|诉讼保留  <br/> | `True` <br/> |*LitigationHoldEnabled*属性设置为 `True` 。  <br/> |
+|就地保留  <br/> | `c0ba3ce811b6432a8751430937152491` <br/> |*InPlaceHolds*属性包含邮箱中放置的就地保留的 GUID。 您可以指示这是就地保留，因为 GUID 不以前缀开头。  <br/> 您可以使用 `Get-MailboxSearch -InPlaceHoldIdentity <hold GUID> | FL` Exchange Online PowerShell 中的命令来获取有关邮箱的就地保留的信息。  <br/> |
+| 应用于特定邮箱的安全性 & 合规性中心内的保留策略  <br/> | `mbxcdbbb86ce60342489bff371876e7f224` <br/> 或  <br/>  `skp127d7cf1076947929bf136b7a2a8c36f` <br/> |当您运行**邮箱获取**cmdlet 时， *InPlaceHolds*属性还包含应用于邮箱的保留策略的 guid。 您可以确定保留策略，因为 GUID 以前缀开头 `mbx` 。 如果保留策略的 GUID 以前缀开头，则 `skp` 表示该保留策略应用于 Skype For business 会话。  <br/> 若要标识应用于邮箱的保留策略，请在 Security & 合规性中心 PowerShell 中运行以下命令： <br/> <br/>`Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>`mbx`运行此命令时，请务必删除或 `skp` 前缀。  <br/> |
+|安全 & 合规中心中的组织范围内的保留策略  <br/> |无值  <br/> 或  <br/>  `-mbxe9b52bf7ab3b46a286308ecb29624696`（指示邮箱已从组织范围的策略中排除）  <br/> |即使在运行 "**获取邮箱**" cmdlet 时， *InPlaceHolds*属性为空，仍可能会有一个或多个应用于邮箱的组织范围内保留策略。  <br/> 若要验证这一点，可以 `Get-OrganizationConfig | FL InPlaceHolds` 在 Exchange Online PowerShell 中运行命令，以获取组织范围的保留策略的 guid 列表。 应用于 Exchange 邮箱的组织范围的保留策略的 GUID 以前缀开头 `mbx` ; 例如， `mbxa3056bb15562480fadb46ce523ff7b02` 。  <br/> 若要标识应用于邮箱的组织范围的保留策略，请在 Security & 合规性中心 PowerShell 中运行以下命令： <br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name`<br/><br/>如果从组织范围的保留策略中排除了某个邮箱，则当您运行 "**获取邮箱**" cmdlet 时，该保留策略的 GUID 将显示在用户邮箱的*InPlaceHolds*属性中。它是由前缀标识的 `-mbx` ; 例如，`-mbxe9b52bf7ab3b46a286308ecb29624696` <br/> |
+|安全 & 合规中心中的电子数据展示案例保留  <br/> | `UniH7d895d48-7e23-4a8d-8346-533c3beac15d` <br/> |*InPlaceHolds*属性还包含与可能位于邮箱上的安全性 & 合规性中心中的电子数据展示事例相关的任何保留的 GUID。 你可以告诉这是电子数据展示事例保留，因为 GUID 以 `UniH` 前缀开头。  <br/> 您可以使用 `Get-CaseHoldPolicy` Security & 合规性中心 PowerShell 中的 cmdlet 来获取有关邮箱中的保留与邮箱关联的电子数据展示事例的信息。 例如，您可以运行命令 `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` 以显示邮箱上的事例保留的名称。 `UniH`运行此命令时，请务必删除前缀。  <br/><br/> 若要标识与邮箱的保留内容相关联的电子数据展示事例，请运行以下命令：<br/><br/>`$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/>`Get-ComplianceCase $CaseHold.CaseId | FL Name`
 
 

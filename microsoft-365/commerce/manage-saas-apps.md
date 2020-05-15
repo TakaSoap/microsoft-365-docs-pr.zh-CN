@@ -13,19 +13,19 @@ ms.collection:
 - commerce
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中激活和管理第三方应用程序。
-ms.openlocfilehash: eb2826a4b0c69d61eb35a9dfff37e9dc2dd6ad71
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141184"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232741"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>为你的组织管理第三方应用订阅
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ ms.locfileid: "44141184"
 
 管理员必须先激活第三方应用程序，然后才能将其分配给用户。 这些应用程序将在第三方发布者的门户中激活。
 
-1. 在管理中心中，转到 "**付费** > **产品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
+1. 在管理中心中，转到 "**付费**  >  **产品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
 2. 查找并选择要管理的应用程序。
 3. 在 "**设置" & "操作**" 下，选择 "**在 Publisher 门户中管理**"。
 
@@ -89,7 +89,7 @@ ms.locfileid: "44141184"
 
 管理员需要先激活第三方应用程序，然后才能将其分配给用户。 它们是在第三方发布者的门户中激活的。 在 "应用程序" 页上的 "**设置" & "操作**" 下，选择要分配许可证的链接。
 
-1. 在管理中心中，转到 "**付费** > **产品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
+1. 在管理中心中，转到 "**付费**  >  **产品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
 2. 查找并选择要管理的应用程序。
 3. 在 "**设置" & "操作**" 下，选择要**在 publisher 的门户中管理**的链接。
 
@@ -97,7 +97,7 @@ ms.locfileid: "44141184"
 
 管理员可以更改其组织拥有的许可证的数量。 这仅适用于使用基于座位的定价购买的应用。
 
-1. 在管理中心中，转到 "**付费** > **产品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
+1. 在管理中心中，转到 "**付费**  >  **产品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
 2. 查找并选择要管理的应用程序。
 3. 选择 "**更改许可证数量**"。
 
@@ -113,16 +113,16 @@ ms.locfileid: "44141184"
 
 ### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>更改软件即服务应用订阅上的记帐配置文件
 
-1. 在管理中心中，转到 "**付费** > **产品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
+1. 在管理中心中，转到 "**付费**  >  **产品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
 2. 查找并选择要管理的应用程序。
 3. 在 "**记帐配置文件**" 旁边，选择 "**编辑**"。
 
-有关发票的详细信息，请参阅[了解你的发票](billing-and-payments/understand-your-invoice.md)。
+有关发票的详细信息，请参阅[了解你的帐单或发票](billing-and-payments/understand-your-invoice.md)。
 
 ## <a name="cancel-a-software-as-a-service-app-subscription"></a>取消软件即服务应用订阅
 
 您可以从应用程序页取消软件即服务应用程序。
 
-1. 在管理中心中，转到 "**付费** > **产品** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
+1. 在管理中心中，转到 "**付费**  >  **产品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">应用程序</a>" 页。
 2. 查找并选择要管理的应用程序。
 3. 在 "**设置" & "操作**" 下，选择 "**取消订阅**"。

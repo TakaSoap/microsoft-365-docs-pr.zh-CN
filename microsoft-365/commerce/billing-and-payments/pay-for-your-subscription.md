@@ -24,19 +24,19 @@ description: 了解哪些付款选项可用于为 Microsoft 365 for business 订
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: 613bb0fcc776b65090ee66faf6dc0516987947b2
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140867"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232871"
 ---
 # <a name="pay-for-your-subscription"></a>支付订阅费用
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -58,7 +58,7 @@ ms.locfileid: "44140867"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 查找余额未结的订阅。 在“**帐单**”部分中的**订阅的预期付款**旁，选择“**结算余额**”。
 
@@ -107,7 +107,7 @@ ms.locfileid: "44140867"
 很遗憾，如果订阅设置为按发票支付，则不接受在线直接付款。但是，可[将付款方式更改为信用卡或银行帐户](change-payment-method.md)，以便在每个服务周期之后向该卡或帐户自动收取应付金额。对于 Azure，请参阅[如何更改用于支付 Azure 订阅的信用卡](https://go.microsoft.com/fwlink/p/?LinkId=718057)。
 
 > [!NOTE]
-> 若要将支付方式切换为自动信用卡付款，请务必首先支付所有未清余额。 查看帐单以了解付款方式和说明。 有关详细信息，请参阅[了解发票](understand-your-invoice2.md)。
+> 若要将支付方式切换为自动信用卡付款，请务必首先支付所有未清余额。 查看帐单以了解付款方式和说明。 有关详细信息，请参阅[了解你的帐单或发票](understand-your-invoice2.md)。
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>支票或 EFT 付款应寄往何处？
 
@@ -312,4 +312,4 @@ ms.locfileid: "44140867"
 
 [添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)
 
-[了解发票](understand-your-invoice2.md)
+[了解帐单或发票](understand-your-invoice2.md)

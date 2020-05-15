@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: 了解如何识别可放在 Microsoft 365 邮箱上的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Microsoft 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户。
-ms.openlocfilehash: 594b8550cdd418af9551c732b78091817da7bfc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 12d91d987af2ba11b2d9aa417dff92adb745fb03
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208663"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232067"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -41,7 +41,8 @@ Microsoft 365 提供了多种方法，使您的组织可以阻止邮箱内容被
     - **特定位置保留策略：** 这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**邮箱获取**cmdlet 获取有关分配给特定邮箱的保留策略的信息。
 
     - **组织范围内的保留策略：** 这些是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的**set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。
-  有关详细信息，请参阅[概述 Microsoft 365 保留策略](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)中的 "将保留策略应用于整个组织或特定位置" 部分。
+    
+  有关详细信息，请参阅[将保留策略应用于整个组织或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)部分。
 
 - **[Microsoft 365 保留标签](labels.md)：** 如果用户应用 microsoft 365 保留标签（配置为保留内容或保留内容，然后将内容删除）到其邮箱中的*任何*文件夹或项目中，则会在邮箱上放置保留，就像邮箱被置于诉讼保留状态或分配到 Microsoft 365 保留策略。 有关详细信息，请参阅[保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
 
@@ -97,7 +98,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |适用于 Exchange 邮箱、Exchange 公用文件夹和团队聊天的 Microsoft 365 保留策略    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   在 Microsoft 团队中应用于 Exchange 邮箱、Exchange 公用文件夹和1xN 聊天的组织范围内的保留策略由以前缀开头的 Guid 进行标识 `mbx` 。 注意1xN 聊天存储在各个聊天参与者的邮箱中。      |
 |适用于 Microsoft 365 组和团队频道消息的 microsoft 365 保留策略     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 团队中应用于 Microsoft 365 组和频道消息的组织范围内的保留策略由以前缀开头的 Guid 标识 `grp` 。 注释通道邮件存储在与 Microsoft 团队相关联的组邮箱中。     |
 
-有关应用于 Microsoft 团队的详细信息保留策略，请参阅[保留策略](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的 "团队位置" 一节概述。
+有关应用于 Microsoft 团队的详细信息保留策略，请参阅[保留策略](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的 "团队位置" 一节概述。
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>了解保留策略的 InPlaceHolds 值的格式
 
@@ -117,7 +118,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |**双面**    |    指示保留策略配置为保留项目。 在保留期过期后，策略不会删除项目。     |
 |**第三章**     |   指示保留策略配置为保留项目，然后在保留期过期后将其删除。      |
 
-有关保留操作的详细信息，请参阅[保留策略概述](retention-policies.md#retaining-content-for-a-specific-period-of-time)中的 "在特定时间段内保留内容" 部分。
+有关保留操作的详细信息，请参阅[保留策略概述](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)中的 "在特定时间段内保留内容" 部分。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步骤2：使用 GUID 标识保留
 

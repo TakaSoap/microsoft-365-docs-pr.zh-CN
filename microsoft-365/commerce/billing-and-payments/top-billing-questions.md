@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: '查找适用于 Microsoft 365 商业版订阅的首要付费问题的答案。 '
-ms.openlocfilehash: 3a75f9a754bf4f983ac0aca02b380e55d80be4b9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d5b705c8c283103c09dc13dd13b853ffb3b270b
+ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634988"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232801"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>适用于 Microsoft 365 商业版的主要帐单问题
 
@@ -40,13 +40,13 @@ ms.locfileid: "43634988"
   
 ::: moniker range="o365-worldwide"
 
-如果您需要帮助解释您在帐单上看到的费用或理解所使用的条款，请参阅[了解您的发票](understand-your-invoice2.md)。
+如果您需要帮助解释您在帐单上看到的费用或理解所使用的条款，请参阅[了解您的帐单或发票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-如果您需要帮助解释您在帐单上看到的费用或理解所使用的条款，请参阅[了解您的发票](understand-your-invoice2.md)。
+如果您需要帮助解释您在帐单上看到的费用或理解所使用的条款，请参阅[了解您的帐单或发票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
@@ -106,7 +106,7 @@ ms.locfileid: "43634988"
 
 ## <a name="can-i-change-the-method-i-use-to-pay-for-my-subscription"></a>我是否可以更改我用来为我的订阅付费的方法？
 
-可以。 请参阅[更改支付方式](change-payment-method.md)。
+是。 请参阅[更改支付方式](change-payment-method.md)。
   
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-change-how-frequently-i-pay-for-my-subscription"></a>我是否可以更改我对我的订阅付费的频率？
@@ -118,9 +118,9 @@ ms.locfileid: "43634988"
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-可以。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
-1. 在 Microsoft 365 管理中心，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">记帐通知</a>" 页面，或选择 "**帐单** \>帐单**通知**"。
+1. 在 Microsoft 365 管理中心，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">记帐通知</a>" 页面，或选择 "**帐单**帐单 \> **通知**"。
 
 2. 在“**以电子邮件附件形式接收帐单？**”下，将开关切换到“**开**”。
 
@@ -131,7 +131,7 @@ ms.locfileid: "43634988"
 ::: moniker range="o365-germany"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-可以。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6995413d6bbd068ac5e126351dc1a8fb761a0934
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221416"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231895"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -38,7 +38,7 @@ ms.locfileid: "44221416"
 
 [使用高级审核调查已损坏的帐户](mailitemsaccessed-forensics-investigations.md)（新增）<br>有关使用新*MailItemsAccessed*邮箱审核操作进行鉴证调查的新指南。
 
-多个用于[搜索审核日志的](search-the-audit-log-in-security-and-compliance.md)更新，其中包括：
+[搜索审核日志](search-the-audit-log-in-security-and-compliance.md)（更新）<br>这些更改包括：
 - 包含有关 "app@sharepoint" 用户在审核记录中列出的详细信息的[新内容](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)。
 - 隔离活动的[新说明](search-the-audit-log-in-security-and-compliance.md#quarantine-activities)。
 - 在 "[用户管理活动](search-the-audit-log-in-security-and-compliance.md#user-administration-activities)" 部分中，阐明了当用户更改自己的密码（通过自助密码重置）时，将触发 "更改用户密码事件"，当管理员重置用户的密码时，将触发 "重置用户密码" 事件。
@@ -147,7 +147,7 @@ ms.locfileid: "44221416"
 ## <a name="february-2020"></a>2020 年 2 月
 
 > [!NOTE]
-> 上个月中列出的文章可能已被更新、移动或删除。 因此，下面的一些详细信息可能已过时，并且链接可能会断开。
+> 上个月中列出的文章可能已更新、移动或删除。 因此，下面的一些详细信息可能已过时，并且链接可能会断开。
 
 ### <a name="auditing"></a>审核
 
