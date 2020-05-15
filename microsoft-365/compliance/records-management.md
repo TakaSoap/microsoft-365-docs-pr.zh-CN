@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过 Microsoft 365 中的记录管理，你可以将组织的特定保留计划应用到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
-ms.openlocfilehash: e4454ba5940d9a67d9f160d90d0a9db14563bcf7
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949245"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231865"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
 
@@ -34,7 +34,7 @@ ms.locfileid: "43949245"
 
 - **使用文件计划迁移和管理保留计划**，并使用[文件计划管理器](file-plan-manager.md)引入现有保留计划，或使用文件描述符和扩展层次结构构建新保留计划。
 
-- **建立保留和删除策略**。 根据各种因素（包括上次修改日期或创建日期）定义[保留](retention-policies.md#retaining-content-for-a-specific-period-of-time)和[处置](retention-policies.md#deleting-content-thats-older-than-a-specific-age)期间。
+- **在记录标签中建立保留和删除策略**。 根据各种因素（包括上次修改日期或创建日期）定义[保留](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)和[处置](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age)期间。
 
 - 使用[基于事件的保留](event-driven-retention.md)**触发基于事件的保留**。
 
