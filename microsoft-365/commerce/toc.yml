@@ -28,7 +28,7 @@
       href: subscriptions/cancel-your-subscription.md
     - name: 如果我的订阅到期，该怎么办？
       href: subscriptions/what-if-my-subscription-expires.md
-    - name: 管理第三方应用
+    - name: 管理第三方应用订阅
       href: manage-saas-apps.md
     - name: 管理自助购买（用户）
       href: subscriptions/manage-self-service-purchases-users.md
@@ -46,9 +46,9 @@
       href: licenses/subscriptions-and-licenses.md
 - name: 帐单和付款
   items:
-    - name: 查看发票
+    - name: 查看帐单或发票
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: 了解发票
+    - name: 了解你的帐单或发票
       href: billing-and-payments/understand-your-invoice.md
     - name: 管理支付方式
       href: billing-and-payments/manage-payment-methods.md
@@ -62,15 +62,15 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: 更改帐单邮寄地址
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: 付款服务指令 2 和强客户身份验证
+    - name: 关于付款服务指令 2 和强客户身份验证
       href: billing-and-payments/psd2.md
 - name: 计费帐户
   items:
     - name: 管理计费帐户
       href: manage-billing-accounts.md
-    - name: 将租户与我的计费帐户相关联
+    - name: 将租户与你的计费帐户相关联
       href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
-- name: 管理与我的合作伙伴的关系
+- name: 管理与合作伙伴的关系
   href: manage-partners.md
 - name: 关闭你的帐户
   href: close-your-account.md

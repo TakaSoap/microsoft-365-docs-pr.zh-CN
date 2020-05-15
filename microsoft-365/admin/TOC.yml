@@ -69,6 +69,8 @@
               href: add-users/add-users.md
             - name: 添加新员工
               href: add-users/add-new-employee.md
+            - name: 向用户分配许可证
+              href: manage/assign-licenses-to-users.md
             - name: 分配管理员角色
               href: add-users/assign-admin-roles.md
             - name: 删除用户的许可证
@@ -234,6 +236,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: （为 Office 2013）设置多重身份验证
           href: security-and-compliance/enable-modern-authentication.md
+        - name: 安全评分
+          href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
     - name: 与客户合作
