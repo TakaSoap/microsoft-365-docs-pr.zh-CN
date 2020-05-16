@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6685a542ac082b97ec771bb14481eecf212f4898
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c7d3120f7094e91157c5a20df435c1c1438677bf
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066365"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254265"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案（FERPA）
 
@@ -41,15 +41,15 @@ FERPA 不需要或识别审核或其他证书，因此受 FERPA 制约的任何�
 
 作为这些合同承诺的结果，受 FERPA （教育机构和第三方可访问敏感学生数据）的客户可以自信地使用范围 Microsoft 商业云服务处理、存储和传输该数据。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 Microsoft 同意为其指定为 "学校官方" 的服务，客户数据中包含 "合法教育兴趣" 包括：
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI、PowerApps 和 Microsoft 流，作为独立服务或包含在 Office 365 标记计划或套件中的
+- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Power BI、PowerApps 和 Power 自动化（以前称为 Microsoft Flow）作为独立服务或包含在 Office 365 品牌规划或套件中
 - Azure DevOps Services
 - Windows Defender ATP
 

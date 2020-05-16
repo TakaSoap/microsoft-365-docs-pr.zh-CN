@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/07/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁资源管理器和实时检测报告来调查安全 & 合规性中心中的威胁并对其做出响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 31fa228d69fcbe885f7639a47a5df2bf1ee0c60d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 824fde8d6f6a03dd61a46d1f0ccc08c93b85adf8
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035184"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267187"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
 ![威胁资源管理器](../../media/ThreatExplorerFirstOpened.png)
 
-[威胁浏览器](threat-explorer.md)（和实时检测报告）是一种强大的近实时工具，可帮助安全操作团队在安全&amp;合规中心中调查和响应威胁。 资源管理器（和实时检测报告）显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织中的其他安全威胁和风险。 
+[威胁浏览器](threat-explorer.md)（和实时检测报告）是一种强大的近实时工具，可帮助安全操作团队在安全合规中心中调查和响应威胁 &amp; 。 资源管理器（和实时检测报告）显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织中的其他安全威胁和风险。 
 
 - 如果您有[Office 365 高级威胁防护](office-365-atp.md)（ATP）计划2，则您将拥有资源管理器。
 - 如果你有 Office 365 ATP 计划1，则会进行实时检测。
@@ -38,7 +38,7 @@ ms.locfileid: "44035184"
 |ATP P1 试用版     | 实时检测        |   7       |
 |已支付 ATP P1     |   实时检测      |    30     |
 |ATP P1 付费测试 ATP P2 试用版     | 威胁资源管理器   |   7    |
-|ATP P2 跟踪     |  威胁资源管理器       |     7     |
+|ATP P2 试用版     |  威胁资源管理器       |     7     |
 |ATP P2 已支付     |     威胁资源管理器    |  30       |
 
 使用 "**视图**" 菜单更改要显示的信息。 工具提示可帮助您确定要使用的视图。
@@ -49,7 +49,7 @@ ms.locfileid: "44035184"
 
 ## <a name="email--malware"></a>电子邮件 > 恶意软件
 
-若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看** > **电子邮件** > **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。  
+若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看**  >  **电子邮件**  >  **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。  
 
 ![查看标识为恶意软件的电子邮件的相关数据](../../media/ExplorerEmailMalwareMenu.png) 
 
@@ -65,7 +65,7 @@ ms.locfileid: "44035184"
 
 ## <a name="email--phish"></a>电子邮件 > 网络钓鱼
 
-若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看** > **电子邮件** > **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。  
+若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看**  >  **电子邮件**  >  **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。  
 
 ![查看标识为 "仿冒尝试" 的电子邮件的相关数据](../../media/ThreatExplorerEmailPhish.png) 
 
@@ -85,13 +85,13 @@ ms.locfileid: "44035184"
 
 ## <a name="email--submissions"></a>电子邮件 > 提交
 
-若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看** > **电子邮件** > **提交**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
+若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看**  >  **电子邮件**  >  **提交**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。 
 
 ![用户报告的电子邮件](../../media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
 单击 "**发件人**" 打开查看选项列表。 使用此列表可以按发件人、收件人、报告类型查看信息（用户决定电子邮件是垃圾邮件，而不是垃圾邮件或网络钓鱼）等。 
 
-例如，若要查看报告为 "仿冒试" 的电子邮件的信息，请单击 "**发件人** > **报告类型**"，选择 "**网络钓鱼**"，然后单击 "刷新" 按钮。
+例如，若要查看报告为 "仿冒试" 的电子邮件的信息，请单击 "**发件人**  >  **报告类型**"，选择 "**网络钓鱼**"，然后单击 "刷新" 按钮。
 
 ![为报告类型筛选器选择的网络钓鱼](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "44035184"
 
 ## <a name="email--all-email"></a>电子邮件 > 所有电子邮件
 
-若要查看此报告，请在资源管理器中选择 "**查看** > **Email** > **全部邮件**"。 此视图显示电子邮件活动的一个全视图方式，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件（普通电子邮件、垃圾邮件和批量邮件）。 
+若要查看此报告，请在资源管理器中选择 "**查看**  >  **Email**  >  **全部邮件**"。 此视图显示电子邮件活动的一个全视图方式，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件（普通电子邮件、垃圾邮件和批量邮件）。 
 
 > [!NOTE]
 > 如果收到一条错误，指示**要显示的数据过多**，请添加筛选器，并在必要时缩小正在查看的日期范围。 
@@ -116,7 +116,7 @@ ms.locfileid: "44035184"
 
 ## <a name="content--malware"></a>内容 > 恶意软件
 
-若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看** > **内容** > **恶意软件**"。 此视图显示了[Office 365 高级威胁防护在 SharePoint Online、OneDrive For business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
+若要查看此报告，请在资源管理器（或实时检测）中，选择 "**查看**  >  **内容**  >  **恶意软件**"。 此视图显示了[Office 365 高级威胁防护在 SharePoint Online、OneDrive For business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
 
 查看恶意软件系列的信息、检测技术（检测恶意软件的方式）以及工作负荷（OneDrive、SharePoint 或团队）。 
 
@@ -128,7 +128,7 @@ ms.locfileid: "44035184"
 
 使用浏览器（和实时检测），您可以在单击时应用筛选器。 单击图例中的项目，该项目将成为报表的筛选器。 例如，假设我们在资源管理器中查看恶意软件视图：
   
-![转到 "威胁\>管理资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![转到 "威胁管理 \> 资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 单击此图表中的**ATP 沙箱**将生成如下所示的视图： 
   

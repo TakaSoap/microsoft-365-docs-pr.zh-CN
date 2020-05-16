@@ -20,19 +20,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '通过将自定义磁贴添加到应用启动器中，创建指向您的电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: 2c0a1cbd2f7c605bc03a55787266c7a627f8e329
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f099eabef7a22e9ebd8f20b23ccd3d8da142f07f
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139717"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262359"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -44,7 +44,7 @@ ms.locfileid: "44139717"
   
 ## <a name="add-a-custom-tile-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
-1. 在管理中心中，转到 "**设置** > **设置**"，然后选择 "**组织配置文件**" 选项卡。
+1. 在管理中心中，转到 "**设置**  >  **组织设置**"，然后选择 "**组织配置文件**" 选项卡。
     
 2. 在 "**组织配置文件**" 选项卡上，选择 "**自定义应用启动器" 磁贴**。
   
@@ -76,7 +76,7 @@ ms.locfileid: "44139717"
   
 ## <a name="edit-or-delete-a-custom-tile"></a>Edit or delete a custom tile
 
-1. 在管理中心中，转到 "**设置** > **Settings** > " "设置" "<a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">组织配置文件</a>" 选项卡。
+1. 在管理中心中，转到 "**设置**组织设置" "  >  **Org Settings**  >  **组织配置文件** </a> " 选项卡。
     
 2. 在 "**组织配置文件**" 页上的 "为**您的组织添加自定义磁贴**" 旁边，选择 "**编辑**"。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44139717"
     
 4. 选择 "**更新** \> **关闭**"。 
     
-若要删除自定义磁贴，请从 "**自定义磁贴**" 窗口中选择该图块，选择 "**删除磁贴** > **删除**"。 
+若要删除自定义磁贴，请从 "**自定义磁贴**" 窗口中选择该图块，选择 "**删除磁贴**  >  **删除**"。 
   
 ## <a name="whats-next"></a>下一步做什么？
 

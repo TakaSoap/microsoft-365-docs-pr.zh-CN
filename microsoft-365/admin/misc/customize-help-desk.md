@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9dd9b104-68f7-4d49-9a30-82561c7d79a3
 description: 在管理中心中创建自定义帮助台卡片，并将自定义支持联系人信息添加到帮助窗格中。
-ms.openlocfilehash: 2a803e339eef23025e6323ee408c4c442c90951e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dac276290f882aa1bd9f22eb6a3306f7869f4253
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627892"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262267"
 ---
 # <a name="add-customized-help-desk-info-to-the-help-pane"></a>向帮助窗格添加自定义技术支持信息
 
@@ -40,7 +40,7 @@ ms.locfileid: "43627892"
 ### <a name="create-the-custom-help-desk-card-in-the-admin-center"></a>在管理中心创建自定义技术支持卡片
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. 在管理中心中，转到 "**设置** > "**"设置"，然后选择**"**技术支持信息**" 选项卡。
+1. 在管理中心中，转到 "**设置**  >  **组织设置**"，然后选择 "**技术支持信息**" 选项卡。
     
 2. 在 "**组织配置文件**" 选项卡上，选择 "**自定义应用启动器" 磁贴**。
   

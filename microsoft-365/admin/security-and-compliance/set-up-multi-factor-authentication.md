@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何使用安全性默认值为用户设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 4c0df9198db8154c1aa748a68eff29dd9bf3bca1
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213006"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262371"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -79,7 +79,7 @@ ms.locfileid: "44213006"
 
 但是，您需要确保为您的 Microsoft 365 订阅启用 ADAL 或新式验证。
 
-1. 若要启用新式验证，请在[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)内依次选择“设置”****\>“设置”****，然后从“服务”**** 选项卡中的列表内选择“新式验证”****。
+1. 若要启用新式验证，请从[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)选择 "**设置** \> **组织设置**"，然后在 "**服务**" 选项卡中，从列表中选择 "**新式验证**"。
 
 2. 选中**新式验证**面板中的 "**启用新式验证（推荐）** " 框，然后选择 "**保存更改**"。 
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 38fa16b5270273813b4549b0c3c9baaa1b05b098
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224549"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262519"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -51,36 +51,63 @@ ms.locfileid: "44224549"
 
 2. 在出现的 "**用户提交**" 页面中，选择下列选项之一：
 
-   - **为 Outlook 启用 "报告邮件" 功能（推荐）**：如果您在 outlook 网页版中使用报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
+   a. **为 Outlook 启用 "报告邮件" 功能（推荐）**：如果您在 outlook 网页版中使用报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
 
-     - **自定义最终用户确认消息**：单击此链接。 在出现的 "**自定义确认消息**" 浮出控件中，配置以下设置：
+      - **自定义最终用户确认消息**：单击此链接。 在出现的 "**自定义确认消息**" 浮出控件中，配置以下设置：
 
-       - **提交前**：在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件之前看到的描述性文本。 您可以使用变量% type% 来包含提交类型（垃圾邮件、非垃圾邮件、网络钓鱼等）。
+      - **提交前**：在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件之前看到的描述性文本。 您可以使用变量% type% 来包含提交类型（垃圾邮件、非垃圾邮件、网络钓鱼等）。
 
-         如前所述，还会将以下文本添加到通知中：
+        如前所述，如果选择将报告的邮件发送给 Microsoft 的选项，则还会向通知中添加以下文本：
 
-         > 你的电子邮件将按与 Microsoft 的相同方式提交到 Microsoft 进行分析。 有些电子邮件可能包含个人信息或敏感信息。
+        > 你的电子邮件将按与 Microsoft 的相同方式提交到 Microsoft 进行分析。 有些电子邮件可能包含个人信息或敏感信息。
 
-       - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
+      - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
 
-      完成时，请单击“保存”****。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
+      完成后，单击“保存”****。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
 
-   - **将报告的邮件发送到**：执行下列任一选择：
+      - **将报告的邮件发送到**：执行下列任一选择：
 
-     - **Microsoft （推荐）**：不使用用户提交邮箱（所有报告的邮件都转到 Microsoft）。
+        - **Microsoft （推荐）**：不使用用户提交邮箱（所有报告的邮件都转到 Microsoft）。
 
-     - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。
+        - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 用户提交将转到 Microsoft 进行分析和自定义邮箱，以供管理员或安全操作团队进行分析。
 
-     - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。
+        - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 如果您希望邮件仅转到 "管理员" 或 "安全操作" 团队进行分析，请使用此选项。 除非管理员转发邮件，否则邮件不会转到 Microsoft。
 
-     完成后，请单击 "**确认**"。
+        完成后，请单击 "**确认**"。
 
-     ![将报告的邮件发送到 Microsoft 和自定义邮箱](../../media/user-submission-enable-outlook-report-message.png)
+        ![将报告的邮件发送到 Microsoft 和自定义邮箱](../../media/user-submission-enable-outlook-report-message.png)
+
+     > [!CAUTION]
+     > 如果您已在 Outlook 网页上使用 Outlook 网页邮箱策略禁用了 "[垃圾邮件报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)"，但您将上述任一设置配置为向 microsoft 报告邮件，则用户可以使用报告邮件加载项在 outlook 网页中向 microsoft 报告邮件。
 
    - **禁用 outlook 的报告邮件功能**：如果您在 outlook 网页版中使用第三方报告工具而不是报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
 
-     选择 "**使用此自定义邮箱" 可接收用户报告的提交**。 在出现的框中，输入现有邮箱的电子邮件地址，或要创建的邮箱的电子邮件地址。
+      选择 "**使用此自定义邮箱" 可接收用户报告的提交**。 在出现的框中，输入已在 Office 365 中的现有邮箱的电子邮件地址。 这必须是 Exchange Online 中可接收电子邮件的现有邮箱。
 
-     完成后，请单击 "**确认**"。
+      完成后，请单击 "**确认**"。
 
-     ![使用第三方工具将报告的邮件发送到自定义邮箱](../../media/user-submission-disable-outlook-report-message.png)
+      ![使用第三方工具将报告的邮件发送到自定义邮箱](../../media/user-submission-disable-outlook-report-message.png)
+     
+## <a name="message-submission-format"></a>邮件提交格式
+
+发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交的主题（信封标题）应采用以下格式：
+
+`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+
+为 SafetyApiAction：
+
+- 垃圾邮件 = 1
+- NotJunk = 2
+- 网络钓鱼 = 3
+
+在下面的示例中：
+
+- 将邮件报告为网络钓鱼。
+- 网络邮件 ID 为49871234-6dc6-43e8-abcd-08d797f20abe。
+- 发件人 IP 为167.220.232.101。
+- "发件人" 地址为 test@contoso.com。
+- 邮件的电子邮件主题为 "测试网络钓鱼提交"
+
+`3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
+
+不遵循此格式的邮件在提交门户中不会正确显示。

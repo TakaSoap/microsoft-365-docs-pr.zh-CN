@@ -11,12 +11,12 @@ metadata:
   ms.author: sirkkuw
   ms.date: 01/27/2020
   localization_priority: Priority
-  ms.openlocfilehash: fc4300d57f3a14a7f71b0ff61a3aedf4c54bbac6
-  ms.sourcegitcommit: a2dd93943f68362220b123e3e4b0f7b3facbdd03
+  ms.openlocfilehash: fadbb38cbf4174366993ec3c27b58b914173b2be
+  ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43955309"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "44267131"
 landingContent:
 - title: 管理用户
   linkLists:
@@ -26,17 +26,19 @@ landingContent:
       url: add-users.md
     - text: 编辑用户
       url: add-users.md
+    - text: 将来宾添加到 Microsoft 365 组
+      url: ../create-groups/manage-guest-access-in-groups.md
     - text: 添加另一个电子邮件地址
       url: ../email/add-another-email-alias-for-a-user.md
     - text: 创建共享邮箱
       url: ../email/create-a-shared-mailbox.md
     - text: 向用户分配许可证
       url: ../manage/assign-licenses-to-users.md
-    - text: 删除用户许可证
+    - text: 删除用户的许可证
       url: ../manage/remove-licenses-from-users.md
     - text: 使用自定义域
       url: ../email/change-email-address.md
-- title: 管理群组
+- title: 管理组
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -68,7 +70,7 @@ landingContent:
     links:
     - text: 删除用户
       url: delete-a-user.md
-    - text: 访问和备份前一个用户的数据
+    - text: 访问并备份前用户的数据
       url: get-access-to-and-back-up-a-former-user-s-data.md
     - text: 将电子邮件转发给另一个用户
       url: ../email/configure-email-forwarding.md

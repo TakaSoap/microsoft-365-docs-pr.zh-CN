@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何为 Microsoft 365 管理中心中的新产品和功能更新设置发布选项。
-ms.openlocfilehash: 3a7a0562edef527718816bba6e67ea948cfad6b5
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249880"
+ms.locfileid: "44262313"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或目标发布选项
 
@@ -99,7 +99,7 @@ ms.locfileid: "44249880"
 > [!IMPORTANT]
 > 可能需要长达24小时才能使以下更改在 Microsoft 365 中生效。 如果你在启用定向发布之后选择退出，你的用户可能无法再次访问那些尚未进入发布计划的功能。 
   
-1. 在管理中心中，转到 "**设置**"  >  **设置**，在 "**组织配置文件**" 选项卡下，选择 "**发布首选项**"。
+1. 在管理中心中，转到 "**设置**" "  >  **组织设置**"，在 "**组织配置文件**" 选项卡下，选择 "**发布首选项**"。
 
 5. 若要禁用目标发布，请选择 "**标准发布**"，然后选择 "**保存更改**"。 
     

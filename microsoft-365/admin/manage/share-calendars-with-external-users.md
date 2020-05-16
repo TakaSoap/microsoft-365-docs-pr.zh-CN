@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: '了解如何让你的用户与外部用户共享会议和约会的日历。 '
-ms.openlocfilehash: 6e5a4a3a7e29dcbb6b19aeb1dd3b914ff98eb06e
-ms.sourcegitcommit: 708857a82eab3d37da1dec027399b09bd306a5dd
+ms.openlocfilehash: 5853d285508c5ed0ec4771a145912e374c191089
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/15/2020
-ms.locfileid: "44249868"
+ms.locfileid: "44262291"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 
@@ -39,7 +39,7 @@ ms.locfileid: "44249868"
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 管理中心启用日历共享
 
-1. 在管理中心，转到 "**设置**" "设置" \> **Settings**。 
+1. 在管理中心中，转到 "**设置** \> **组织设置**"。 
     
 2. 在 "**服务**" 选项卡上，选择 "**日历**"。
   

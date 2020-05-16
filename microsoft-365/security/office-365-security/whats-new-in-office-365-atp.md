@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e6dfaa8a6a2a0157e9274c7b25dae6e7aed2395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
+ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036580"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44267163"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -35,6 +35,10 @@ ms.locfileid: "44036580"
 > [!TIP]
 > 尚不具有 Office 365 ATP？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
+## <a name="marchapril-2020"></a>3月/4 月2020
+
+- 现在，可以[使用自动调查和响应来解决受危害的用户帐户](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的能力。
+
 ## <a name="januaryfebruary-2020"></a>1月/2 月2020
 
 - [Office 365 ATP 中的市场活动视图的正式可用性](campaigns.md)
@@ -46,7 +50,7 @@ ms.locfileid: "44036580"
     - 高级不筛选（这些是高级筛选选项，其中包括不包含、不包含等）
     - 粒度时间筛选器（日、小时、半小时） 
 
-- **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理** > **评审**"。）
+- **事件**小组件现在是**操作中心**小组件。 （若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  "**查看**。）
 
 - [Microsoft 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **（预览）**
 

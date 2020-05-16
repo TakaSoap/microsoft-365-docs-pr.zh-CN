@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: cfde26e2b7f6d74a59b7431091fbc3c2f6049ec6
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022116"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262325"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为你的组织自定义 Microsoft 365 主题
 
@@ -34,7 +34,7 @@ ms.locfileid: "44022116"
   
 ## <a name="customize-your-theme-in-the-admin-center"></a>在管理中心中自定义您的主题
 
-1. 在管理中心中，转到 "**设置** \> "**设置**，然后选择 "**组织配置文件**" 选项卡。
+1. 在管理中心中，转到 "**设置** \> **组织设置**"，然后选择 "**组织配置文件**" 选项卡。
 
 2. 在 "**组织配置文件**" 选项卡上，选择 "**自定义主题**"。
 

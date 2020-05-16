@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a7a64532aeb7053572b78a6b05a757bf6d1b006
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066455"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254205"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -51,15 +51,15 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 若要了解 Microsoft 云如何帮助客户支持 HIPAA 和高科技要求，请访问[Microsoft 客户案例](https://customers.microsoft.com)。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Microsoft Health Bot 服务
+- Microsoft Cloud App Security
+- Microsoft Microsoft 医疗保健机器人服务
 - Microsoft Stream
 - Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Microsoft 365 商业版中型企业客户的高级和本地支持。
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- 将 "电源自动化" （以前称为 Microsoft Flow）云服务作为独立服务或在 Office 365 或 Dynamics 365 标记计划或套件中包含
 - Intune
 - [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
@@ -84,7 +84,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+不正确。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 
@@ -92,7 +92,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 **如何获取审计员的报告的副本？**
 
-该[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **如何了解有关遵守 HIPAA 和高科技法案的更多信息？**
 

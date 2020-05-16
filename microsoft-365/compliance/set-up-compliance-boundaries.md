@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 使用合规性边界在组织内创建逻辑边界，以控制电子数据展示管理器可以搜索的用户内容位置。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: 6bad8aaba9b9905966797c21abe211850bf805a3
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231845"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262565"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
@@ -75,19 +75,20 @@ ms.locfileid: "44231845"
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步骤2：为 Microsoft 支持文件提供将 user 属性同步到 OneDrive 帐户的请求
 
-下一步是向 Microsoft 支持文件发出请求，以将您在步骤1中选择的 Azure Active Directory 属性同步到组织中的所有 OneDrive 帐户。 在此同步发生之后，您在步骤1中选择的属性（及其值）将映射到名为的 SharePoint 中的隐藏托管属性 `ComplianceAttribute` 。 您可以使用此属性在步骤4中创建 OneDrive 的搜索权限筛选器。
+下一步是向 Microsoft 支持文件发出请求，以将您在步骤1中选择的 Azure Active Directory 属性同步到组织中的所有 OneDrive 帐户。 在此同步发生之后，您在步骤1中选择的属性（及其值）将映射到名为的隐藏托管属性 `ComplianceAttribute` 。 您可以使用此属性在步骤4中创建 OneDrive 的搜索权限筛选器。
   
 向 Microsoft 支持部门提交请求时，请包含以下信息：
   
 - 您的组织的默认域名称
-    
+
 - Azure Active Directory 属性的名称（从步骤1）
-    
+
 - 支持请求的用途的以下标题或说明： "对合规性安全筛选器启用 OneDrive for Business 同步和 Azure Active Directory"。 这有助于将请求路由到实现请求的电子数据展示工程团队。
-    
+
 在进行工程更改并将属性同步到 OneDrive 后，Microsoft 支持将向您发送所做更改的内部版本号以及估计的部署日期。 在提交支持请求后，部署过程通常需要4–6周。
   
- **重要说明：** 您可以在部署更改之前完成步骤3到步骤5。 但在部署更改之前，运行内容搜索不会返回在搜索权限筛选器中指定的 OneDrive 网站中的文档。 
+> [!IMPORTANT]
+> 您可以在部署此属性更改之前完成步骤3到步骤5。 但在部署更改之前，运行内容搜索不会返回在搜索权限筛选器中指定的 OneDrive 网站中的文档。
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步骤3：为每个代理创建角色组
 

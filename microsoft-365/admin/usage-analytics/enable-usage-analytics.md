@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用来开始收集租户的数据。
-ms.openlocfilehash: 386b64b1db15ba9f00450ac037a74bfc702e95ea
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140679"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262531"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
     
 2. 在 "**使用情况**" 页上，找到 " **Microsoft 365 使用情况分析**卡"，然后选择 "**开始**"。
     
-3. 在打开的 "报告" 面板中，设置 "将**数据提供给 Microsoft 365 使用情况分析以供 Power BI** **保存** **"** \> 。 
+3. 在打开的 "报告" 面板中，设置 "将**数据提供给 Microsoft 365 使用情况分析以供 Power BI** **On** \> **保存**"。 
   
 这将启动数据收集过程，并将在2到48小时内完成，具体取决于租户的大小。 数据收集完成后，"**转到 POWER BI** " 按钮将处于启用状态（不再为灰色）。 
     
@@ -83,7 +83,7 @@ Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
 
 5.  单击 "**浏览应用**程序" 以查看包含示例数据的应用程序。 单击 "**连接**" 将应用程序连接到您的组织的数据。
 
-6.  **单击 "连接"** 后，在 "**连接到 Microsoft 365 使用情况分析**" 屏幕上键入您在步骤（1）中\>复制的 "租户 Id" （**下一**步）。
+6.  **单击 "连接"** 后，在 "**连接到 Microsoft 365 使用情况分析**" 屏幕上键入您在步骤（1）中复制的 "租户 Id" （ \> **下一**步）。
     
 7. 在下一个屏幕上，选择 " **oAuth2** " 作为**身份验证方法** \> **登录**。 如果选择任何其他身份验证方法，则与模板应用程序的连接将失败。
     
@@ -97,7 +97,7 @@ Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
 
 若要使收集的所有报表数据匿名，你必须是全局管理员。 这将在报告中和模板应用程序中隐藏可识别信息，如用户、组和网站名称。
   
-1. 在管理中心中，转到 "**设置** \> "**设置**，在 "**服务**" 选项卡下，选择 "**报告**"。
+1. 在管理中心中，转到 "**设置** \> **组织设置**"，在 "**服务**" 选项卡下，选择 "**报告**"。
     
 2. 选择 "**报告**"，然后选择 "**显示匿名标识符**"。 此设置既可应用于使用情况报告，也可应用于模板应用。
   
