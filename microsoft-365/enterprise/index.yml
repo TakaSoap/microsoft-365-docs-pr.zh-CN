@@ -13,12 +13,12 @@ metadata:
   author: robmazz
   ms.author: robmazz
   ms.date: 11/29/2019
-  ms.openlocfilehash: f954a03e23d354eb52e5dc112f1ebc1d804ca350
-  ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+  ms.openlocfilehash: 31685a610f6560296dc72b7624f81a5927d56ec2
+  ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/04/2020
-  ms.locfileid: "44011169"
+  ms.lasthandoff: 05/16/2020
+  ms.locfileid: "44268253"
 highlightedContent:
   items:
   - title: 了解 Microsoft 365 企业版
@@ -44,7 +44,7 @@ conceptualContent:
       text: 基础架构
     - url: deploy-workloads.md
       itemType: how-to-guide
-      text: 工作负载和应用场景
+      text: 工作负载
     - url: desktop-deployment-center-home.md
       itemType: get-started
       text: 桌面部署中心
@@ -62,20 +62,6 @@ conceptualContent:
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune
-  - title: 部署关键应用场景
-    links:
-    - url: secure-teams-highly-regulated-data-scenario.md
-      itemType: how-to-guide
-      text: 针对高度管控数据的 Microsoft Teams
-    - url: teams-sharepoint-online-sites-highly-regulated-data.md
-      itemType: how-to-guide
-      text: 用于高度管控数据的 SharePoint 网站
-    - url: empower-people-to-work-remotely.md
-      itemType: how-to-guide
-      text: 远程工作人员
-    - url: migration-microsoft-365-enterprise-workload.md
-      itemType: deploy
-      text: Office 客户端和服务器及 Windows 迁移
   - title: 管理 Microsoft 365 企业版
     links:
     - url: https://docs.microsoft.com/windows/deployment/update/
