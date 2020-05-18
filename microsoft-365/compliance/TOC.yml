@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: 在 SharePoint 管理中心中设置 IRM
       href: set-up-irm-in-sp-admin-center.md
-    - name: 了解数据分类（预览）
+    - name: 了解数据分类
       href: data-classification-overview.md
       items:
-        - name: 内容资源管理器（预览版）入门
+        - name: 内容资源管理器入门
           href: data-classification-content-explorer.md
-        - name: 活动资源管理器（预览版）入门
+        - name: 活动资源管理器入门
           href: data-classification-activity-explorer.md
-        - name: 数据分类公共预览版的发行说明（预览版）
+        - name: 数据分类发行说明
           href: data-classification-pub-preview-relnotes.md
         - name: 可训练分类器（预览版）入门
           href: classifier-getting-started-with.md
@@ -271,12 +271,22 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: 保留数据
       items:
-        - name: 保留策略
+        - name: 了解有关保留策略的信息
           href: retention-policies.md
+        - name: 创建和配置保留策略
+          href: create-retention-policies.md
+        - name: 保留 Microsoft Office Sharepoint Online 和 OneDrive
+          href: retention-policies-sharepoint.md
+        - name: 保留 Microsoft Teams
+          href: retention-policies-teams.md
+        - name: 保留 Exchange
+          href: retention-policies-exchange.md
         - name: 文件计划管理器
           href: file-plan-manager.md
-        - name: 保留标签
+        - name: 了解保留标签
           href: labels.md
+        - name: 用于创建、发布和自动应用保留标签
+          href: create-retention-labels.md
         - name: 符合 SEC 规则 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: 使用 PowerShell 创建和发布保留标签
@@ -325,9 +335,11 @@
           items:
             - name: 文件计划管理器
               href: file-plan-manager.md
-            - name: 保留标签
+            - name: 了解保留标签
               href: labels.md
-            - name: 使用 PowerShell 创建和发布保留标签
+            - name: 创建和发布保留标签
+              href: create-retention-labels.md
+            - name: 大规模使用 PowerShell 创建和发布保留标签
               href: bulk-create-publish-labels-using-powershell.md
             - name: 使用标签分析查看标签使用情况
               href: label-analytics.md
