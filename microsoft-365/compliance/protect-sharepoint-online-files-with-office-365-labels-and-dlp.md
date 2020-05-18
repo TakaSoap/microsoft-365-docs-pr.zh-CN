@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 摘要：为具有各种信息保护级别的 SharePoint Online 团队网站应用保留标签和数据丢失防护 (DLP) 策略。
-ms.openlocfilehash: ab9026fa4c00038abb166677277145c8129e33e2
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: b924b0d62d7c66a008739dfa12c0d1dd00deac9b
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081736"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262393"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>使用保留标签和 DLP 保护 SharePoint Online 文件
 
@@ -216,6 +216,10 @@ ms.locfileid: "42081736"
 以下为高度机密的 SharePoint Online 团队网站的配置结果。
   
 ![使用高度机密保留标签的独立 SharePoint Online 团队网站的 DLP 策略](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>即将推出对敏感度标签的支持
+
+目前，你只能将保留标签用作条件，而不能将[敏感度标签](sensitivity-labels.md)用作条件。 目前，我们正致力于支持在此条件中使用敏感度标签。
   
 ## <a name="next-step"></a>后续步骤
 

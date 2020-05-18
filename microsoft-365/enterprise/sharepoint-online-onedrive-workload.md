@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 在你的组织中，逐步完成对 SharePoint 的价值规划、推广和推动过程。
-ms.openlocfilehash: ee2c5592015361a678785cb8e4aaad9074c5d804
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636912"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268205"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 
@@ -67,10 +67,6 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 请参阅 [SharePoint 管理](https://docs.microsoft.com/sharepoint/sharepoint-online)，获取根据需求配置 SharePoint 的帮助资源。
 
 了解 SharePoint 优势的一种方法是，检查个人、团队、部门或整个组织现在如何交互，然后查找可便于更轻松存储和共享文件的相应应用场景。请注意，对于一些应用场景，[Microsoft Teams](teams-workload.md) 可能是更好的选择。
-
-#### <a name="sharepoint-site-for-highly-regulated-data"></a>针对高度管控数据的 SharePoint 网站
-
-高度管控数据受地区法规约束，它是组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。 你可以对某个 SharePoint 网站进行相应配置，从而实现针对此类数据的限制访问、数据分类、数据丢失防护和加密。 有关详细信息，请参阅[针对高度管控数据的 Microsoft Teams 和 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。
 
 #### <a name="result"></a>结果
 满足组织的文档存储和共享、内容管理、协作和安全需求的 SharePoint 应用场景列表。

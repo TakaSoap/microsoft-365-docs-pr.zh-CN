@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 7df489b75f1c104bb9ad541bbdc2ce09e7a669de
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 48d8cf5bc618f4f1e840872c4369bc5cdda19727
+ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011955"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44262553"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -113,7 +113,7 @@ ms.locfileid: "44011955"
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*请使用高带宽下载此内容，以增强下载体验并留出 30-45 分钟进行自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 4 月 18 日过期。新版本将于旧版本到期前发布。*
+*请使用高宽带下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 7 月 5 日过期。新版本将于旧版本到期前发布。*
 
 ## <a name="additional-guidance"></a>其他指南
 

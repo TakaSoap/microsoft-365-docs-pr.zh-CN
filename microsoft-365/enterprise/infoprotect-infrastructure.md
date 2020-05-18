@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 这些步骤用于部署 Microsoft 365 企业版信息保护基础结构。
-ms.openlocfilehash: 0e6fdf1a9c63200bfb57fc9f833515553c1609f4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d6e3501e8262a0c3245c6e13da6633ac465276fb
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631617"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268299"
 ---
 # <a name="phase-6-information-protection"></a>阶段 6：信息保护
 
 ![阶段 6：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon.png)
 
-信息保护是一组策略和技术，定义了如何传输、存储和处理敏感信息。在第 6 阶段逐步介绍了 Microsoft 365 企业版的信息保护设置和功能，有助于用户保护基于云的工作负载和方案的数据安全。
+信息保护是一组策略和技术，用于定义传输、存储和处理敏感信息的方式。在第 6 阶段，你将逐步执行 Microsoft 365 企业版的信息保护设置和功能，以帮助你保护基于云的工作负载数据。
 
 >[!Note]
 >如果已部署信息保护，请查看这一阶段的[退出条件](infoprotect-exit-criteria.md)，以确保其满足 Microsoft 365 企业版的必备条件和可选条件。

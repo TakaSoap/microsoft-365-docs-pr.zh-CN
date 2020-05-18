@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: 41873f14ac52000635508aca4728572556692cc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 137e6ff499ba8fb119c696dba9337307876ee0c2
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625298"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268406"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -65,15 +65,11 @@ Contoso 使用以下步骤为 Microsoft 365 企业版准备其信息保护要求
 
    Contoso 为其数据级别创建了敏感度标签，其中包含加密、权限和水印等高度管控标签。
 
-4. 为敏感和高度管控数据创建了受保护的 SharePoint 网站，同时包含锁定访问权限的权限
-
-   敏感和高度管控网站均配置为具有其他权限限制的专用团队网站。 敏感和高度管控的 SharePoint 网站还配置了相应的保留标签。 存储在高度管控 SharePoint 网站中的文件受高度管控标签的敏感度子标签保护。 有关详细信息，请参阅方案：[用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。
-
-5.  将数据从本地 SharePoint 网站和文件共享转移到新的 SharePoint 网站
+4.  将数据从本地 SharePoint 网站和文件共享转移到新的 SharePoint 网站
 
     迁移到新的 SharePoint 网站的文件继承了分配给该网站的默认保留标签。
 
-6.  培训员工如何对新文档使用敏感度标签，如何在创建新的 SharePoint 网站时与 Contoso IT 进行交互，以及如何始终在 SharePoint 网站上存储数字资产
+5.  培训员工如何对新文档使用敏感度标签，如何在创建新的 SharePoint 网站时与 Contoso IT 进行交互，以及如何始终在 SharePoint 网站上存储数字资产
 
     考虑到云信息保护过渡中最困难的部分，Contoso IT 和管理层需要改变组织员工的不良信息存储习惯，以始终在云中标记和存储其数字资产，避免使用本地文件共享，并且绝不使用第三方云存储设备或 U 盘。
 
