@@ -14,22 +14,22 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 70e36d4f11f7fc1a5870f41a32351cf7078bdc68
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 3c2a89a881e2615a8459f0a7126b2d92f750c6b0
+ms.sourcegitcommit: dbc9ff159ed41160d8883c8a9787eba50b45f50b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065767"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278445"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>俄语个人数据本地化要求
 
-到2015年9月1日的组织（被视为个人数据操作员的组织），必须确保在收集个人数据时，俄罗斯公民的个人数据记录、systematization、累积、存储、说明（更新、更改）和提取通过位于俄罗斯（"个人数据本地化要求"）中的数据库执行。<sup>1</sup>
+从2015年9月1日到，被视为个人数据操作员的组织必须确保在收集个人数据、俄语公民的个人数据记录、systematization、累积、存储、澄清（更新、更改）和提取操作时通过位于俄罗斯（"个人数据本地化要求"）中的数据库执行。<sup>1</sup>
 
-Microsoft Online Services 适用于组织（包括但不限于教育机构）（hereinafter 称为 "customer"），其中包括启用个人数据处理（如 Microsoft Azure、Microsoft 365、Dynamics 365 和 Power Platform）的数据处理中心（位于俄罗斯之外）提供（有关详细信息，请访问[Microsoft 信任中心](https://www.microsoft.com/trust-center)）。
+Microsoft Online Services 适用于组织（包括但不限于教育机构）（hereinafter 称为 "customer"），其中包括启用个人数据处理（如 Microsoft Azure、Microsoft 365、Dynamics 365 和 Power Platform）的数据处理中心位于俄罗斯之外（有关详细信息，请访问[Microsoft 信任中心](https://www.microsoft.com/trust-center)）。
 
-根据信息的类型和内容，客户信息系统（包括那些使用 Microsoft 云产品的系统）处理的信息可能被视为个人数据信息系统（"PDIS"、"ISPD"）。 如果客户希望在系统中使用通过其体系结构和所处理的信息类型限定为 PDIS 的 Microsoft Online Services，Microsoft 会邀请其客户考虑其他一些可用的解决方案，如下所示。 以下提供的所有方案均可供客户作为标准商业产品的附加选项。
+根据客户信息系统处理的信息的类型和内容（包括那些使用 Microsoft 云产品的系统），可能会被视为个人数据信息系统（"PDIS"、"ISPD"）。 如果客户希望在 PDIS 中使用 Microsoft Online Services 通过其体系结构和所处理的信息类型授予资格，Microsoft 会邀请其客户在下面指定的可用解决方案之间进行考虑。 提供的所有方案都可供客户作为标准商业产品产品的附加选项。
 
-应注意的是，它是客户，作为 PDIS 的个人数据运营商，负责遵守合规性，并应针对个人数据本地化进行分析和评估适用的法律要求，并以独立的方式决定，以确保 PDIS 中的个人数据处理符合俄语个人数据法律。<sup>2</sup>
+应注意的是，该客户是 PDIS 的个人数据操作员，他们负责遵守合规性，并应自行决定如何针对个人数据本地化分析和评估适用的法律要求，并可独立地确定足够的措施，以确保 PDIS 中的个人数据处理符合俄语个人数据法律。<sup>2</sup>
 
 ## <a name="subscribing-to-microsoft-online-services"></a>订阅 Microsoft Online Services
 
@@ -39,7 +39,7 @@ Microsoft 邀请客户考虑通过 Microsoft 云解决方案提供商（CSP）�
 
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>管理 Microsoft Online Services 的用户标识和访问权限
 
-对于 microsoft Azure 等 Microsoft Online Services，Microsoft 365、Dynamics 365 和 Power Platform 用户验证和访问管理是通过[Azure Active Directory （AAD）](https://azure.microsoft.com/services/active-directory/)执行的。 请注意，对于 microsoft 云服务（如 Windows Server Active Directory （AD）或任何其他 ID 管理系统），Microsoft 客户使用本地标识管理系统，客户有机会通过 Azure AD Connect 将此类系统与 Azure Active Directory （AAD）进行快速集成。 有关详细信息，请参阅[AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/)选项。 Microsoft 客户还可以考虑使用第三方供应商的应用程序和解决方案来管理其用户，并将其本地标识系统与 Azure AD 集成。
+对于 microsoft Azure、Microsoft 365、Dynamics 365 和 Power Platform 等 Microsoft Online 服务，用户验证和访问管理是通过[Azure Active Directory （AAD）](https://azure.microsoft.com/services/active-directory/)执行的。 请注意，对于 microsoft 云服务（如 Windows Server Active Directory （AD）或任何其他 ID 管理系统），Microsoft 客户使用本地标识管理系统，客户有机会通过 Azure AD Connect 将此类系统与 Azure Active Directory （AAD）进行快速集成。 有关详细信息，请参阅[AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/)选项。 Microsoft 客户还可以考虑使用第三方供应商的应用程序和解决方案来管理其用户，并将其本地标识系统与 Azure AD 集成。
 
 ## <a name="questions-and-support"></a>问题和支持
 

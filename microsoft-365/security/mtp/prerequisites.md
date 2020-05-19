@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 66b3f7e446416b6252050e6f41a2b22d99d25767
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209231"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280530"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -79,8 +79,12 @@ ms.locfileid: "44209231"
 ## <a name="browser-requirements"></a>浏览器要求
 使用 microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 的 web 浏览器访问 microsoft 365 安全中心中的 Microsoft 威胁防护。
 
-## <a name="us-gcc-and-gcc-high-availability"></a>美国 GCC 和 GCC 高可用性
-目前，Microsoft 威胁防护不适用于美国政府社区云（GCC）和政府社区云高级（GCC High）客户。 
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>对美国 GCC、GCC 高和其他美国政府机构的可用性
+目前，Microsoft 威胁*防护不适用于*：
+- 美国政府社区云（GCC）
+- 美国政府社区云高（GCC 高）
+- 美国国防部
+- 拥有商业许可证的所有美国政府机构
 
 ## <a name="related-topics"></a>相关主题
 - [Microsoft 威胁防护概述](microsoft-threat-protection.md)

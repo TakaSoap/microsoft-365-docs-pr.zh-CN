@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何在 Microsoft 365 中开始使用核心电子数据展示。 分配电子数据展示权限并创建案例后，可以添加成员，创建电子数据展示保留，然后搜索和导出与调查相关的数据。
-ms.openlocfilehash: c9c3d8c3832703e8dbbcf8b2c04a566af0f5eb6b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943381"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280542"
 ---
 # <a name="get-started-with-core-ediscovery"></a>核心电子数据展示入门
 
@@ -42,11 +42,11 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
    OR
 
-  - 一种 Microsoft 365 E1 或 Office 365 E1 许可证，具有 Exchange Online 计划2或 Exchange Online 存档外接程序许可证
+  - Office 365 E1 许可证与 Exchange Online 计划2或 Exchange Online 存档外接程序许可证
 
   AND
 
-  - 使用 SharePoint Online 计划2或 OneDrive for business 计划2附加许可证的 Microsoft 365 E1 或 Office 365 E1 许可证
+  - 使用 SharePoint Online 计划2或 OneDrive for business 计划2附加许可证的 Office 365 E1 许可证
   
   有关如何分配许可证的信息，请参阅向[用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
@@ -62,7 +62,7 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 完成以下步骤以将用户添加到电子数据展示管理器角色组：
 
-1. 转到[https://protection.office.com/permissions](https://protection.office.com/permissions)并使用 Microsoft 365 或 Office 365 组织中的管理员帐户的凭据登录。
+1. 转到 [https://protection.office.com/permissions](https://protection.office.com/permissions) 并使用 Microsoft 365 或 Office 365 组织中的管理员帐户的凭据登录。
 
 2. 在 "**权限**" 页上，选择 "**电子数据展示管理器**" 角色组。
 
@@ -98,7 +98,7 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 下一步是创建事例并开始使用核心电子数据展示。 完成以下步骤以创建事例并添加成员。 创建案例的用户将自动添加为成员。
 
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员也可以创建核心电子数据展示事例。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员也可以创建核心电子数据展示事例。
 
 2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 "**全部显示**"，然后单击 "**电子数据展示 > 核心**"。
 
