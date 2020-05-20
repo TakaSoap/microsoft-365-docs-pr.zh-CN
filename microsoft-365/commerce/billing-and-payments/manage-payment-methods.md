@@ -14,20 +14,28 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- TopSMBIssues
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 description: 了解如何在 Microsoft 365 管理中心中管理你的支付方式。
-ms.openlocfilehash: c1679b8f525712681aaaad20334840da5e625ad6
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: d31da19c10eb61719ba813d271dbdcf573a5aff3
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213064"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322155"
 ---
 # <a name="manage-payment-methods"></a>管理支付方式
+
+::: moniker range="o365-21vianet"
+> [!NOTE]
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+::: moniker-end
 
 当您从 Microsoft 购买业务产品或服务时，您可以使用现有的付款方式，也可以添加一个新的付款方式。 您可以使用信用卡或借记卡或银行帐户支付购买的物品。
 
@@ -44,17 +52,42 @@ ms.locfileid: "44213064"
 
 添加付款方法不会将任何订阅关联。 若要将单个订阅分配给付款方法，请参阅[更改单个订阅的付款方式](#change-a-payment-method-for-a-single-subscription)。 若要将使用其他付款方式的所有订阅替换为新的，请参阅[替换付款方法](#replace-a-payment-method)。
 
-1. 在 "管理中心" 中，转到 "**计费**  >  **帐单 & 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker range="o365-worldwide"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
 2. 选择“**添加付款方式**”。
+
 3. 在“**付款方式**”页面上，从下拉菜单中选择一种付款方式。
+
 4. 输入新卡或银行帐户的信息，然后选择 "**添加**"。
 
 ## <a name="update-payment-method-details"></a>更新付款方式详细信息
 
 您可以更改现有付款方式的信用卡或借记卡、帐单地址或到期日期的名称。 但是，不能更改卡片或帐号。 如果帐户号码已更改，请将[其替换为其他付款方式](#replace-a-payment-method)，然后[删除旧的](#delete-a-payment-method)付款方式。
 
-1. 在 "管理中心" 中，转到 "**计费**  >  **帐单 & 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker range="o365-worldwide"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
 2. 选择要更新的付款方式的行。 在右侧窗格中，选择 "**编辑**"。
+
 3. 更新付款方式信息，包括信用卡或借记卡上的姓名、帐单地址或到期日期，然后选择 "**保存**"。
 
 ## <a name="replace-a-payment-method"></a>替换付款方法
@@ -63,26 +96,58 @@ ms.locfileid: "44213064"
 
 若要更改单个订阅的付款方式，请参阅[更改单个订阅的支付方式](#change-a-payment-method-for-a-single-subscription)。
 
-1. 在 "管理中心" 中，转到 "**计费**  >  **帐单 & 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker range="o365-worldwide"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
 2. 选择要替换的付款方法的行。 右侧窗格列出了所有帐单配置文件和使用所选付款方式的各个订阅。
+
 3. 在右侧窗格中，选择 "**替换所有项目的付款方式**"。
+
 4. 若要使用现有的付款方式，请从下拉列表中选择一个，然后选择 "**替换**"。
     > [!NOTE]
     > 如果你有与帐单配置文件关联的订阅，则只能使用信用卡或借记卡支付。 如果您在 "**付款方式**" 页上列出了银行帐户，则不能在下拉列表中进行选择。
+
 5. 若要添加新的付款方式，请选择 "**添加支付方式**"。
+
 6. 在 "**添加付款方法**" 窗格中，输入帐户信息，然后选择 "**保存**"。 您必须使用与您的租户来自同一国家/地区的付款方式。
+
 7. 已在下拉列表中选择新的付款方式。 选择“**替换**”。
 
 ## <a name="change-a-payment-method-for-a-single-subscription"></a>更改单个订阅的付款方式
 
 您可以更改用于支付单个订阅的付款方式。
 
-1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
-2. 在 "**订阅**" 选项卡上，选择要使用备用付款方式支付的订阅。 
+::: moniker range="o365-worldwide"
+1. 在管理中心中，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在管理中心中，转到“**计费**”>“**你的产品**”页面。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在管理中心中，转到“**计费**”>“**你的产品**”页面。
+::: moniker-end
+
+2. 在 "**订阅**" 选项卡上，选择要使用备用付款方式支付的订阅。
+
 3. 在 "**帐单**" 下，选择 "付款方法" 旁边的 "**编辑**"。
+
 4. 在现有付款方法旁边，选择 "**更改**"。
+
 5. 从下拉列表中，选择另一种付款方式，或选择添加付款方法。
+
 6. 如果添加付款方法，请输入信用卡或帐户详细信息，然后选择 "**保存**"。
+
 7. 确认所选的支付方式正确，然后选择 "**保存**"。
 
 ## <a name="delete-a-payment-method"></a>删除付款方法
@@ -93,23 +158,52 @@ ms.locfileid: "44213064"
 
 如果付款方法不与任何订阅或计费配置文件关联，则可以立即将其删除。
 
-1. 在 "管理中心" 中，转到 "**计费**  >  **帐单 & 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker range="o365-worldwide"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
 2. 找到要删除的付款方法，选择三个点，然后选择 "**删除**"。
+
 3. 在右侧窗格的底部，选择 "**删除**"。
 
 ### <a name="delete-a-payment-method-with-subscriptions-or-billing-profiles-attached"></a>删除带有订阅或附加的计费配置文件的付款方式
 
 如果向任何订阅或计费配置文件附加了付款方式，请首先将其替换为现有付款方式，或添加新的付款方式，然后删除旧的付款方式。
 
-1. 在 "管理中心" 中，转到 "**计费**  >  **帐单 & 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker range="o365-worldwide"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">方法</a>" 页。
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. 在 "管理中心" 中，转到 "**计费** > **帐单 & 付款** > **方法**" 页。
+::: moniker-end
+
 2. 选择要删除的付款方法所在的行。 右侧窗格中列出了使用该付款方式的现有订阅。
+
 3. 在右侧窗格中，选择 "**删除**"。
+
 4. 若要使用现有的付款方式，请从下拉列表中选择一个，然后选择 "**下一步**"，然后选择 "**删除**"。
     > [!NOTE]
     > 如果你有与付费配置文件关联的订阅，则只能使用信用卡支付。 如果您在 "**付款方式**" 页上列出了银行帐户，则不能在下拉列表中进行选择。
+
 5. 若要添加新的付款方式，请选择 "**添加支付方式**"。
+
 6. 选择要添加的付款方式类型，输入帐户信息，然后选择 "**保存**"。
+
 7. 已在下拉列表中选择新的付款方式。 选择“**下一步**”。
+
 8. 选择“删除”****。
 
 ## <a name="troubleshoot-payment-methods"></a>付款方式疑难解答

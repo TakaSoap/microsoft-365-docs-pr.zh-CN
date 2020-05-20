@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ace04c61b8bb26661201b3a2616799f0dc4ea87e
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162674"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292470"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -60,9 +60,9 @@ ms.locfileid: "44162674"
 
 完成以下步骤以将用户添加到 "内幕风险管理" 角色组：
 
-1. 在 Microsoft [https://protection.office.com/permissions](https://protection.office.com/permissions) 365 组织中登录使用管理员帐户凭据。 "" "" "" ""
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中登录使用管理员帐户凭据。 "" "" "" ""
 
-2. 在 "安全&amp;合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
+2. 在 "安全 &amp; 合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
 3. 选择要向其添加用户的 "内幕风险管理" 角色组，然后选择 "**编辑角色组**"。
 
@@ -118,7 +118,7 @@ ms.locfileid: "44162674"
     >为了接收在策略中定义的有风险的活动的警报，您必须选择一个或多个指示器。
 
 4. 在 "**策略时段**" 页上，选择[策略](insider-risk-management-policies.md#policy-timeframes)时间段，以便在触发 "内幕风险策略" 的匹配项时对用户生效。
-5. 在 "**智能检测**" 页面上，为内幕风险策略配置[异常和冒犯性语言检测](insider-risk-management-policies.md#intelligent-detections)。
+5. 在 "**智能检测**" 页面上，为内幕风险策略配置[异常检测、攻击性语言检测和警报卷级别](insider-risk-management-policies.md#intelligent-detections)。
 6. 选择 "**保存**" 为您的内幕风险策略启用这些设置。
 
 ## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步骤5（必需）：创建内幕风险管理策略
@@ -142,8 +142,8 @@ ms.locfileid: "44162674"
     - **敏感信息类型**：选择 "**添加敏感信息类型**"，然后选择要设置优先级的敏感度类型。 例如， *"美国银行帐户号码"* 和 *"信用卡号码"*。
     - **敏感度标签**：选择 "**添加灵敏度标签**"，然后选择要设置优先顺序的标签。 例如， *"保密"* 和 *"Secret"*。
 7. 选择 "**下一步**" 继续。
-8. 在 "**通知指示器**" 页上，您将看到您在 "**内幕风险设置** > **指示器**" 页上定义的指示器。 如果在向导的开头选择了 "*数据泄漏*" 模板，则必须从 " **dlp 策略**" 下拉列表中选择一个 dlp 策略。
-9. 在 "**选择监视窗口**" 页面上，您将看到 "**内幕风险设置** > **策略**时间段" 页面上的策略的[监视窗口条件](insider-risk-management-policies.md#policy-timeframes)。 如果您选择了 "终止*员工数据失窃*策略" 模板，则可以选中 "*检查活动帖子终止*" 复选框，以在从 Microsoft 365 HR 连接器导入的终止日期后检测活动。
+8. 在 "**通知指示器**" 页上，您将看到您在 "**内幕风险设置**  >  **指示器**" 页上定义的指示器。 如果在向导的开头选择了 "*数据泄漏*" 模板，则必须从 " **dlp 策略**" 下拉列表中选择一个 dlp 策略。
+9. 在 "**选择监视窗口**" 页面上，您将看到 "**内幕风险设置**策略时间段" 页面上的策略的[监视窗口条件](insider-risk-management-policies.md#policy-timeframes)  >  **Policy timeframes** 。 如果您选择了 "终止*员工数据失窃*策略" 模板，则可以选中 "*检查活动帖子终止*" 复选框，以在从 Microsoft 365 HR 连接器导入的终止日期后检测活动。
 10. 选择 "**下一步**" 继续。
 11. 在 "**检查**" 页上，查看您为策略选择的设置。 选择 "**编辑**" 以更改任何策略值，或选择 "**提交**" 以创建并激活策略。
 

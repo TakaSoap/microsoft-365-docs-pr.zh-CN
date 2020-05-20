@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6114642b5899e2708703e3c0d62cadde25296504
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632811"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322013"
 ---
 # <a name="compliance"></a>合规性
 
@@ -21,7 +21,7 @@ ms.locfileid: "43632811"
 
 Microsoft 托管桌面已实现以下认证：
 
-- [ISO 27001 信息安全管理标准](../../compliance/offering-ISO-27001.md)
+- [ISO 27001 信息安全管理标准（ISM）](../../compliance/offering-ISO-27001.md)
 - [ISO 27701 隐私信息管理系统（PIMS）](../../compliance/offering-iso-27701.md)
 - [ISO 27017 信息安全控件的实践准则](../../compliance/offering-ISO-27017.md)
 - [ISO 27018 保护云中的个人数据的实践代码](../../compliance/offering-ISO-27018.md)
@@ -38,7 +38,7 @@ Microsoft 托管桌面已实现以下认证：
 您可以在[服务信任门户（STP）](https://servicetrust.microsoft.com/)中查找相关信息，包括控制和技术要求，其中中央存储库提供有关 Microsoft 云服务产品的此类信息。 您可以从 STP 的 "[审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)" 部分下载审核员报告、合规性证书等更多。
 
 > [!NOTE]
-> 由于 Microsoft 托管桌面在 Azure 上运行，因此一些相关的文档具有诸如 "Microsoft Azure、Dynamics 365 和其他在线服务" 的文件名。 在这些文档中，通常可以在 "监控 + 管理" 类别下找到 Microsoft 托管桌面。
+> 由于 Microsoft 托管桌面在 Azure 上运行，因此相关文档通常具有诸如 "Microsoft Azure、Dynamics 365 和其他在线服务" 的文件名。 在这些文档中，通常可以在 "监控 + 管理" 类别下找到 Microsoft 托管桌面。
 
 ## <a name="shared-responsibility"></a>共享责任
 

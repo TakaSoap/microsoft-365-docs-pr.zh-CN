@@ -24,19 +24,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
-ms.openlocfilehash: d54a37575c0280ca9ad23fdd4a4b878286dde1ab
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: bfde2f55f12967e15213ecb12274a215c4190c93
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140589"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322083"
 ---
 # <a name="remove-a-former-employee"></a>删除前员工
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
   
@@ -55,7 +55,7 @@ ms.locfileid: "44140589"
 
 删除员工：
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择用户名称旁边的框，然后选择 "**重置密码**"。
 
@@ -67,7 +67,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择该用户，然后选择 "**重置密码**"。
 
@@ -79,7 +79,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择该用户，然后选择 "**重置密码**"。
 
@@ -135,7 +135,7 @@ ms.locfileid: "44140589"
     
     非活动状态的邮箱无法接收电子邮件且不在组织的共享通讯簿或其他列表中显示。
     
-    若要了解如何在邮箱中放置保留，请参阅[在 Exchange Online 中管理非活动邮箱](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes)。
+    若要了解如何在邮箱中放置保留，请参阅[在 Exchange Online 中管理非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)。
     
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>将前员工的电子邮件转发给其他员工或转换为共享邮箱
 <a name="bkmk_forward"> </a>
@@ -174,7 +174,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工并展开 "**邮件设置**"。
 
@@ -190,7 +190,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工并展开 "**邮件设置**"。
 
@@ -218,7 +218,7 @@ ms.locfileid: "44140589"
     
 4. 选择用户，在 "**移动设备**" 下，选择 "**查看详细信息**"。 
     
-5. 在 "**移动设备详细信息**" 页的 "**移动设备**" 下，选择移动设备，选择 "](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)**擦除数据**![擦除设备"，然后选择 "**阻止**"。 
+5. 在 "**移动设备详细信息**" 页的 "**移动设备**" 下，选择移动设备，选择 "**擦除数据** ![ 擦除设备 ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) "，然后选择 "**阻止**"。 
     
 6. 选择“保存”****。 
     
@@ -246,7 +246,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工，然后选择 "**阻止登录**"。
 
@@ -256,7 +256,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工，然后选择 "**阻止登录**"。
 
@@ -300,7 +300,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
@@ -310,7 +310,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
@@ -325,20 +325,20 @@ ms.locfileid: "44140589"
 
 
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
     
@@ -377,7 +377,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要删除的雇员的姓名。
 
@@ -387,7 +387,7 @@ ms.locfileid: "44140589"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要删除的雇员的姓名。
 

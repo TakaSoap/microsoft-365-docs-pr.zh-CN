@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 本文概述了 Microsoft 365 中的高级电子数据展示，这是用于内部和外部调查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fae09b33364f9ff57233ee25ccf40e4956dfd408
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034902"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322037"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
@@ -106,7 +106,3 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 ## <a name="configuring-case-settings"></a>配置事例设置
 
 使用 "**设置**" 选项卡配置大小写设置。 这包括向事例添加成员、关闭或删除事例以及配置搜索和分析设置。
-
-## <a name="advanced-ediscovery-reports"></a>高级电子数据展示报告
-
-您可以使用主页上的高级电子数据展示报告帮助您的组织在所有高级电子数据展示案例中跟踪活动和状态。 高级电子数据展示报告功能聚合了有关事例、保管人、数据源和通信的信息。 您可以根据各种条件筛选报告数据，并将聚合信息导出到 CSV 文件，以供进一步分析。  有关详细信息，请参阅[高级电子数据展示报告](advanced-ediscovery-reports.md)。

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理员管理组织的电子邮件和邮箱。 例如，他们可以恢复用户邮箱中的已删除邮件。 '
-ms.openlocfilehash: e45d6a0e9f2151e03a300b1e36bf53b7c9f8ef68
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 984345dd92e9b9a6da3c803b77b663bd8299c62e
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618904"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322071"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
@@ -37,7 +37,7 @@ ms.locfileid: "43618904"
   
 - [恢复用户邮箱中已删除的项目 - 管理员帮助](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [为组织中的邮箱设置存档和删除策略](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
+- [为组织中的邮箱设置存档和删除策略](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
     
 - 设置邮箱功能（如邮箱共享策略）：用户如何与组织外部的其他人共享日历和联系人信息。 
     
@@ -45,7 +45,7 @@ ms.locfileid: "43618904"
     
 - [创建共享邮箱](../email/create-a-shared-mailbox.md)，以便一组用户可以从公用电子邮件地址监视和发送电子邮件。 
     
-- 组织的[电子邮件反垃圾邮件保护](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection)和恶意软件筛选器。 
+- 组织的[电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection)和恶意软件筛选器。 
     
 - 管理 Microsoft 365 组
     

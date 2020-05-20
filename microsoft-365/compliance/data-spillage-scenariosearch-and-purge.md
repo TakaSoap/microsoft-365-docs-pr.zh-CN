@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: 使用电子数据展示和搜索工具来管理和响应组织中的数据外泄事件。
-ms.openlocfilehash: 708343992d2b8d51d9b10f89cd6b986de00423d6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 4246460f2f7d7fdc41754fc2acd3125601bb5f79
+ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166053"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44292448"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>电子数据展示解决方案系列： Data 外泄方案-搜索和清除
 
@@ -90,7 +90,7 @@ ms.locfileid: "44166053"
 
 当您找到包含溢出数据的电子邮件时，请检查邮件的收件人以确定它是否是在外部共享的。 若要进一步跟踪邮件，可以收集发件人信息和日期范围，以便您可以使用[步骤 5](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)中所述的邮件跟踪日志。
 
-Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以进行辅助评审。 在步骤1中分配案例的人员可以在电子数据展示和高级电子数据展示和批准案例发现中查看事例内容。 您还可以在不导出实际内容的情况下生成报告。 您还可以使用此报告作为删除证明，如[步骤 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)中所述。
+在验证搜索结果后，您可能需要与其他人共享你的发现以进行辅助评审。 在步骤1中分配案例的人员可以在电子数据展示和高级电子数据展示和批准案例发现中查看事例内容。 您还可以在不导出实际内容的情况下生成报告。 您还可以使用此报告作为删除证明，如[步骤 8](#step-8-verify-provide-a-proof-of-deletion-and-audit)中所述。
   
  **生成统计报告：**
   
@@ -157,14 +157,15 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 如果启用了单个项目恢复或将邮箱置于保留状态，则将在 "可恢复的项目" 文件夹中保留永久删除的（清除的）邮件。 因此，在您可以清除溢出的数据之前，您需要检查现有邮箱配置并禁用单个项目恢复，并删除任何保留或保留策略。 请注意，您可以一次准备一个邮箱，然后在不同的邮箱上运行相同的命令，也可以创建一个 PowerShell 脚本来同时准备多个邮箱。
 
 - 若要了解如何检查是否启用了单个项目恢复，或者是否将邮箱置于保留状态或已分配给保留策略，请参阅 "步骤1：收集有关邮箱的信息"。在["保留基于云的邮箱的可恢复项目" 文件夹中删除项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-1-collect-information-about-the-mailbox)的说明。 
-    
+
 - 若要了解如何禁用单个项目恢复，请参阅 "[删除基于云的邮箱的可恢复项目文件夹中的项目](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox)" 中的 "步骤2：准备邮箱"。 
-    
+
 - 有关如何从邮箱中删除保留策略或保留策略的说明，请参阅在[保留基于云的邮箱的 "可恢复的项目" 文件夹的 "删除邮件](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)" 中的 "删除邮箱中的所有保留"。 
 
 - 请参阅在 "[删除基于云的邮箱的可恢复项目" 文件夹](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox)中的 "删除项目" 中的 "删除邮箱中的延迟保留" 中的 "删除项目" 中有关删除在删除任何类型的保留后邮箱的延迟保留的说明。
-    
- **重要说明：** 在删除保留策略或保留策略之前，请与您的记录管理或法律部门进行确认。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
+
+> [!IMPORTANT]
+> 在删除保留策略或保留策略之前，请与您的记录管理或法律部门进行确认。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
 确认溢出的数据已永久删除后，请务必将邮箱还原为以前的配置。 请参阅[第7步](#step-7-permanently-delete-the-spilled-data)中的详细信息。
 
@@ -173,6 +174,9 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
 使用您在步骤6中收集和准备的邮箱位置以及在步骤3中创建并完善的搜索查询中的步骤3，以查找包含溢出数据的电子邮件，您现在可以永久删除溢出的数据。  如前所述，若要删除邮件，您必须是 "组织管理" 角色组的成员，或者分配有 "搜索和清除" 管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 
 若要删除溢出的邮件，请参阅 "[搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)" 中的步骤 2 & 3
+
+> [!IMPORTANT]
+> 无法使用本文中的过程删除高级电子数据展示事例中审阅集中的电子邮件项目。 这是因为审阅集中的项目是在实时服务中复制和存储在 Azure 存储位置中的项目的副本。 这意味着，在您在步骤3中创建的内容搜索不会返回它们。 若要删除审阅集中的项目，您必须删除包含评审集的高级电子数据展示事例。 有关详细信息，请参阅[关闭或删除高级电子数据展示事例](close-or-delete-case.md)。
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>步骤8：验证、提供删除证明和审核
 
@@ -194,7 +198,7 @@ Afer 您验证了搜索结果，您可能需要与其他人共享你的发现以
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>审核数据外泄调查过程
 
-您可以在审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回您在步骤7中运行的**new-compliancesearchaction-清除**命令的审核记录，以删除溢出的数据。 有关更多信息，请参阅：
+您可以在审核日志中搜索在调查过程中执行的电子数据展示活动。 您还可以搜索审核日志，以返回您在步骤7中运行的**new-compliancesearchaction-清除**命令的审核记录，以删除溢出的数据。 有关详细信息，请参阅：
 
 - [搜索审核日志](search-the-audit-log-in-security-and-compliance.md)
 

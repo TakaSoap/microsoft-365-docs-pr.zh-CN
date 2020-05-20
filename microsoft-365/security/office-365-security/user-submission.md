@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 6aa343b337139c4d81f35f78a227634d3b6a8781
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262519"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294189"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -31,7 +31,7 @@ ms.locfileid: "44262519"
 - [Outlook 网页网站中的内置报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)（以前称为 "Outlook web App"）
 
   > [!NOTE]
-  > 如果[在 web 上的 Outlook 中禁用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)了报告功能，则在此处启用用户提交将覆盖该设置，并使用户能够在 web 上再次报告 Outlook 中的邮件。
+  > 如果[在 web 上的 Outlook 中禁用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)了报告功能，则在此处启用用户提交将覆盖该设置，并使用户能够在 web 上再次报告 Outlook 中的邮件。
 
 您还可以配置第三方邮件报告工具，以便将邮件转发到您指定的邮箱。
 
@@ -75,8 +75,6 @@ ms.locfileid: "44262519"
 
         完成后，请单击 "**确认**"。
 
-        ![将报告的邮件发送到 Microsoft 和自定义邮箱](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > 如果您已在 Outlook 网页上使用 Outlook 网页邮箱策略禁用了 "[垃圾邮件报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)"，但您将上述任一设置配置为向 microsoft 报告邮件，则用户可以使用报告邮件加载项在 outlook 网页中向 microsoft 报告邮件。
 
@@ -86,8 +84,6 @@ ms.locfileid: "44262519"
 
       完成后，请单击 "**确认**"。
 
-      ![使用第三方工具将报告的邮件发送到自定义邮箱](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## <a name="message-submission-format"></a>邮件提交格式
 
 发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交的主题（信封标题）应采用以下格式：

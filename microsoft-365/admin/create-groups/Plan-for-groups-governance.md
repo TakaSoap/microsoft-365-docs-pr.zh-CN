@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Microsoft 365 组治理。
-ms.openlocfilehash: 85dfbb27899d7b79257eba4cff4b7cd715f762a5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: e5e3b640edd15cb46fa3da8b65141fe9f63d6399
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064783"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322095"
 ---
 # <a name="plan-for-governance-in-groups"></a>在组中规划管理
 
@@ -249,14 +249,14 @@ Microsoft 365 组基于 Microsoft 365 的高级安全性和合规性功能，并
 - [链接到 Microsoft 365 组使用指南](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#link-to-your-office-365-groups-usage-guidelines)
 - [为组织中的 Office 组创建分类](https://docs.microsoft.com/office365/enterprise/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
 - [配置组设置](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)
-- [保留策略概述](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [敏感度标签概述](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)
-- [标签概述](https://docs.microsoft.com/office365/securitycompliance/labels)
-- [搜索审核日志](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance)
+- [保留策略概述](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [标签概述](https://docs.microsoft.com/microsoft-365/compliance/labels)
+- [搜索审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 - [创建或删除就地法定保留](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)
-- [创建保留策略](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
-- [在安全 & 合规中心中运行内容搜索](https://docs.microsoft.com/Office365/SecurityCompliance/content-search)
-- [使用 PowerShell 批量创建和发布保留标签](https://docs.microsoft.com/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+- [创建保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
+- [在安全 & 合规中心中运行内容搜索](https://docs.microsoft.com/microsoft-365/compliance/content-search)
+- [使用 PowerShell 批量创建和发布保留标签](https://docs.microsoft.com/microsoft-365/compliance/bulk-create-publish-labels-using-powershell)
 
 ### <a name="upgrade-traditional-collaboration-tools"></a><a name="upgrade-traditional-collaboration-tools"></a>升级传统协作工具
 多年来，组织依靠通讯组与公司内部和外部的一组人员进行通信和协作。 但是现在，Outlook 中的 Microsoft 365 组为协作提供了更强大的解决方案。 此外，如果您想要将 Microsoft 365 组连接到现有 SharePoint 网站，则必须对该网站进行现代化。
@@ -334,8 +334,8 @@ Microsoft 365 组提供了您的组织可能需要的一组丰富的管理功能
 
 | 阶段 | 说明 |
 | --------------- | ------------------------------------------------------------ |
-| 指南 |<ul><li> 根据分类定义与组关联的 SharePoint 网站的数据管理策略。</li><li>[使用标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。</li><li>[使用 Azure 信息保护来保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。</li><li> 在与用户的首选数据位置（[多地理](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)位置）关联的区域中预配的组网站。</li><li> 具有外部成员的组的成员身份检查（[访问评审](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)）。</li><li>在获取访问权限之前，请确保员工或来宾用户看到有关法律或合规性要求的相关免责声明。 （[使用条款](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)）。</li><li>使用特定[分类（也有外部用户](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)）标识和报告 Microsoft 365 组。</li><li>必须使用[remove-unifiedgroup](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx) cmdlet （使用 HiddenGroup-MembershipEnabled 开关）在组创建时创建需要隐藏的成员身份的机密组。</li><li>为组织定义[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)，以[使用加密来限制对内容的访问](https://docs.microsoft.com/Office365/SecurityCompliance/encryption-sensitivity-labels)并发布到特定的 Microsoft 365 组。</li><li>使用[具有 Windows 信息保护的敏感度标签，](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)防止敏感内容在运行 Windows 的设备上离开组织。 |
-| 后续步骤      | <ul><li> 使用网站设计和网站脚本定义在创建新网站时发生的默认[操作](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)。 例如，[配置外部共享设置](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)或[触发 Microsoft 流，以调用 Azure 函数](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)以应用本机不支持的配置。 </li><li> 记录要求，以[使用标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)与 Microsoft 365 组关联的网站。</li><li>对连接到 Microsoft 365 组的[SharePoint Online 网站和文件进行保护](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files)的文档组织要求。 </li><li>记录对特定用户或组发布[敏感度标签](https://docs.microsoft.com/Office365/SecurityCompliance/sensitivity-labels)以保护内容的组织要求。</li></ul> |
+| 指南 |<ul><li> 根据分类定义与组关联的 SharePoint 网站的数据管理策略。</li><li>[使用标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)。</li><li>[使用 Azure 信息保护来保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-azure-information-protection)。</li><li> 在与用户的首选数据位置（[多地理](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)位置）关联的区域中预配的组网站。</li><li> 具有外部成员的组的成员身份检查（[访问评审](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)）。</li><li>在获取访问权限之前，请确保员工或来宾用户看到有关法律或合规性要求的相关免责声明。 （[使用条款](https://docs.microsoft.com/azure/active-directory/governance/active-directory-tou)）。</li><li>使用特定[分类（也有外部用户](https://techcommunity.microsoft.com/t5/Office-365-Groups/Sample-Powershell-to-identify-groups-with-HBI-classification-and/m-p/215561)）标识和报告 Microsoft 365 组。</li><li>必须使用[remove-unifiedgroup](https://technet.microsoft.com/library/mt219359(v=exchg.160).aspx) cmdlet （使用 HiddenGroup-MembershipEnabled 开关）在组创建时创建需要隐藏的成员身份的机密组。</li><li>为组织定义[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)，以[使用加密来限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)并发布到特定的 Microsoft 365 组。</li><li>使用[具有 Windows 信息保护的敏感度标签，](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553)防止敏感内容在运行 Windows 的设备上离开组织。 |
+| 后续步骤      | <ul><li> 使用网站设计和网站脚本定义在创建新网站时发生的默认[操作](https://developer.microsoft.com/office/blogs/site-scripts-site-designs-summer-2018-update/)。 例如，[配置外部共享设置](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-apply-external-sharing-setting)或[触发 Microsoft 流，以调用 Azure 函数](https://github.com/SharePoint/sp-dev-site-scripts/tree/master/samples/site-azure-function)以应用本机不支持的配置。 </li><li> 记录要求，以[使用标签和 DLP 保护 SharePoint Online 文件](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp)与 Microsoft 365 组关联的网站。</li><li>对连接到 Microsoft 365 组的[SharePoint Online 网站和文件进行保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-and-files)的文档组织要求。 </li><li>记录对特定用户或组发布[敏感度标签](hhttps://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)以保护内容的组织要求。</li></ul> |
 
 ## <a name="groups-management-capability-planning-checklist"></a>组管理功能规划清单
 

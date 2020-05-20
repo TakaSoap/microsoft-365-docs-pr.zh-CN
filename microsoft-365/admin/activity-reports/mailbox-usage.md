@@ -18,12 +18,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: 了解如何获取邮箱使用情况报告，以了解用户使用用户邮箱的活动。
-ms.openlocfilehash: 7453bf20949e04f07d74f6cf1df13e88de522b92
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: a866a586c9d36be03b39cb1c75be884eae3cb41b
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046923"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321989"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>"管理中心" 中的 Microsoft 365 报表-邮箱使用情况
 
@@ -48,7 +48,7 @@ ms.locfileid: "43046923"
 |1.  <br/> |可查看" **邮箱使用情况**"报表，了解过去 7 天、30 天、90 天或 180 天的趋势。 但是，如果您在报告中选择某一天，则该表将显示从当前日期起的最长28天（而不是报告生成日期）中的数据。  <br/> |
 |2.  <br/> |每个报告中的数据通常最长为过去24到48小时。  <br/> |
 |3.  <br/> |邮箱图表显示组织中的用户邮箱总数以及在报告周期内的任意指定日期处于活动状态的用户邮箱总数。 如果用户邮箱具有电子邮件发送、阅读、创建约会、发送会议、接受会议、谢绝会议和取消会议活动，则会将该邮箱视为活动用户。  <br/> |
-|4.  <br/> |" **存储**"图表显示组织中使用的存储量。 存储图表不包括存档邮箱。 有关自动扩展存档的详细信息，请参阅[Microsoft 365 中的无限制存档概述](https://docs.microsoft.com/office365/securitycompliance/unlimited-archiving)。<br/> |
+|4.  <br/> |" **存储**"图表显示组织中使用的存储量。 存储图表不包括存档邮箱。 有关自动扩展存档的详细信息，请参阅[Microsoft 365 中的无限制存档概述](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving)。<br/> |
 |5.  <br/> | " **配额**"图表显示每个配额类别中用户邮箱的数量。有以下 4 种配额类别：  <br/>  良好 - 其使用的存储低于问题警告配额的用户数量。  <br/>  警告 - 其使用的存储等于或高于问题警告配额但低于禁止发送配额的用户数量  <br/>  无法发送 - 其使用的存储等于或高于禁止发送配额但低于禁止发送/接收配额的用户数量  <br/>  无法发送/接收 - 其使用的存储等于或高于禁止发送/接收配额的用户数量  <br/> |
 |6.  <br/> | 在" **邮箱**"图表上，Y 轴表示用户邮箱计数。  <br/>  在" **存储**"图表上，Y 轴表示组织中用户邮箱正在使用的存储量。  <br/>  在" **配额**"图表上，Y 轴表示每个存储配额中用户邮箱的数量。  <br/>  "邮箱"和"存储"图表上的 X 轴都表示此特定报表的所选日期范围。  <br/>  "配额"图表上的 X 轴表示配额类别。  <br/> |
 |7.  <br/> |您可以通过选择图例中的项目来筛选所见图表。  <br/> |

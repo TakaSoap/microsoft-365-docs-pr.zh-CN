@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何使用 Outlook 发送加密电子邮件。
-ms.openlocfilehash: fe0835c7b5b3328114ce7820da3336ca9f300d3e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
+ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165681"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44322143"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或标记敏感电子邮件
 
@@ -52,7 +52,7 @@ ms.locfileid: "44165681"
 
 ## <a name="admin-settings"></a>管理设置
 
-您可以在[Office 365 中](https://docs.microsoft.com/office365/securitycompliance/email-encryption)了解有关设置电子邮件加密的电子邮件加密的所有信息。
+您可以在[Office 365 中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)了解有关设置电子邮件加密的电子邮件加密的所有信息。
 
 ### <a name="automatically-encrypt-email-messages"></a>自动加密电子邮件
 
@@ -64,9 +64,9 @@ ms.locfileid: "44165681"
 2. 选择 "管理" 磁贴。 
 3. 在 "管理中心" 中，选择 "**管理中心" > Exchange**。 
 
-有关详细信息，请参阅[在 Office 365 中定义用于加密电子邮件的邮件流规则](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email)。
+有关详细信息，请参阅[在 Office 365 中定义用于加密电子邮件的邮件流规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>对加密邮件进行品牌打造
 
-您还可以应用您的市场活动品牌来自定义电子邮件中的外观和文本。 有关详细信息，请参阅[将组织的品牌添加到加密邮件](https://docs.microsoft.com/office365/securitycompliance/email-encryption)。
+您还可以应用您的市场活动品牌来自定义电子邮件中的外观和文本。 有关详细信息，请参阅[将组织的品牌添加到加密邮件](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)。
 

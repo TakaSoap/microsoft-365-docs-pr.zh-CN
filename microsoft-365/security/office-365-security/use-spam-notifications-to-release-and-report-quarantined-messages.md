@@ -20,18 +20,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以在 Exchange Online Protection （EOP）中了解有关隔离邮件的最终用户垃圾邮件通知。
-ms.openlocfilehash: 7dd6b2d14bbb4a1771c59c8a1e654e36f0f83d3e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 7d4cf21ade504e999dc5b53ad9062977369561c6
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208545"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294237"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用用户垃圾邮件通知释放和报告隔离的邮件
 
 在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离会保留可能有害或不需要的邮件。 有关详细信息，请参阅[EOP 中的隔离邮件](quarantine-email-messages.md)。
 
-默认情况下，在反垃圾邮件策略中禁用最终用户垃圾邮件通知。 当管理员[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)时，收件人将收到有关被隔离为垃圾邮件的邮件、批量电子邮件或（截止到2020年4月）的网络钓鱼的定期通知。
+默认情况下，在反垃圾邮件策略中禁用最终用户垃圾邮件通知。 当管理员[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)后，收件人（包括共享邮箱）将收到有关被隔离为垃圾邮件、批量电子邮件或（截止到2020年4月）的网络钓鱼的定期通知。
 
 > [!NOTE]
 > 被隔离为高可信度网络钓鱼、恶意软件或通过邮件流规则（也称为传输规则）的邮件仅适用于管理员。 有关详细信息，请参阅[在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)。
