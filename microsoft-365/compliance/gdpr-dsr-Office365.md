@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e77fe9c8340608afae3a308ee399809144f6308f
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211458"
+ms.locfileid: "44221426"
 ---
 # <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
 
@@ -35,7 +35,7 @@ ms.locfileid: "44211458"
 - **发现：** 使用搜索和发现工具更轻松地查找可能是 DSR 主体的客户的数据。 收集了潜在的响应性文档后，你便可以执行下列步骤中所述的一项或多项 DSR 操作来响应请求。 或者，你也可以确定请求是否不符合组织的 DSR 响应指南。
 - **访问：** 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。
 - **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
-- **限制：** 通过移除各种 Azure 服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
+- **限制：** 通过移除各种 Microsoft 云服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 此外还可以从 Microsoft 云中删除数据，并将其保留在本地或其他位置。
 - **删除：** 永久删除保存在 Microsoft 云中的个人数据。
 - **导出/接收（可移植性）：** 向数据主体提供个人数据或个人信息的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”大致相同。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
@@ -1192,7 +1192,7 @@ PowerApps 服务还包括 Common Data Service For Apps，可让用户在 Common 
 
 #### <a name="discover"></a>发现
 
-使用 Sway（位于 [www.sway.com](https://www.sway.com)）创建的内容仅供所有者和作者已向其授权查看 Sway 的用户查看。 请参阅 [Sway 中的隐私设置](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 要确定 Sway 是否可能包含响应 DSR 的个人数据，可以让数据主体和组织用户搜索其 Sway，并与你共享任何可能包含响应数据主体请求的个人数据的 Sway。 有关如何共享 Sway 的信息，请参阅[共享你的 Sway](https://support.office.com/article/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的“从组织帐户共享 Sway”。
+使用 Sway（位于 [www.sway.com](https://sway.office.com/)）创建的内容仅供所有者和作者已向其授权查看 Sway 的用户查看。 请参阅 [Sway 中的隐私设置](https://support.microsoft.com/zh-CN/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)。 要确定 Sway 是否可能包含响应 DSR 的个人数据，可以让数据主体和组织用户搜索其 Sway，并与你共享任何可能包含响应数据主体请求的个人数据的 Sway。 有关如何共享 Sway 的信息，请参阅[共享你的 Sway](https://support.microsoft.com/zh-CN/office/share-your-sway-1cf853b8-ef7e-46b0-b704-003e58d28998) 一文中的“从组织帐户共享 Sway”。
 
 #### <a name="access"></a>Access
 
@@ -1200,7 +1200,7 @@ PowerApps 服务还包括 Common Data Service For Apps，可让用户在 Common 
 
 #### <a name="delete"></a>删除
 
-要了解如何删除 Sway，请转到 [Sway 中的隐私设置](https://support.office.com/article/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)的“如何删除我 Sway？”部分。
+要了解如何删除 Sway，请转到 [Sway 中的隐私设置](https://support.microsoft.com/zh-CN/office/privacy-settings-in-sway-394b551c-be6f-4bd7-a70a-f318d72bf217)的“如何删除我 Sway？”部分。
 
 #### <a name="export"></a>导出
 
@@ -1262,11 +1262,11 @@ Whiteboard 文件（.wbx 文件）存储在用户的 OneDrive for Business 帐�
 
 #### <a name="discover"></a>发现
 
-从 Yammer 管理中心，Yammer 验证管理员（全局管理员或在 Yammer 中设置的验证管理员）可导出给定用户的相关数据。 导出的内容包括用户发布和修改的消息和文件，以及用户所创建主题和组的相关信息。 导出用户特定的数据时，管理员还可在收件箱中收到包含用户帐户活动数据的邮件，可将这些数据提供给用户（如果这样选择）。 有关详细说明，请参阅 [Yammer Enterprise：隐私](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf)。
+从 Yammer 管理中心，Yammer 验证管理员（全局管理员或在 Yammer 中设置的验证管理员）可导出给定用户的相关数据。 导出的内容包括用户发布和修改的消息和文件，以及用户所创建主题和组的相关信息。 导出用户特定的数据时，管理员还可在收件箱中收到包含用户帐户活动数据的邮件，可将这些数据提供给用户（如果这样选择）。 有关详细说明，请参阅 [Yammer Enterprise：隐私](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)。
 
 用户特定的导出适用于单个网络，因此，如果用户位于外部 Yammer 网络中，管理员必须针对外部网络和主网络导出数据。
 
-要访问未包含在数据导出中的数据，可对用户的个人资料、设置、组成员身份、添加为书签的消息、关注的用户以及关注的主题进行屏幕截图。 用户或管理员可以收集此信息。 有关详细信息，请参阅 [Yammer Enterprise：隐私](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf)。
+要访问未包含在数据导出中的数据，可对用户的个人资料、设置、组成员身份、添加为书签的消息、关注的用户以及关注的主题进行屏幕截图。 用户或管理员可以收集此信息。 有关详细信息，请参阅 [Yammer Enterprise：隐私](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)。
 
 #### <a name="access"></a>Access
 
@@ -1277,7 +1277,7 @@ Whiteboard 文件（.wbx 文件）存储在用户的 OneDrive for Business 帐�
 - 用户的个人资料：
     - 如果用户拥有 Yammer 标识，则该用户的个人资料由自己完全掌控。有关如何查看和修改个人资料的信息，请参阅[更改我的 Yammer 个人资料和设置](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)。
     
-    - 如果用户拥有 Office 365 标识，则会自动从 Office 365 中拉取 Yammer 用户个人资料，获取 Azure Active Directory (AAD) 中的个人资料信息。Yammer 用户可在 Yammer 中临时更改其个人资料，但在 AAD 中进行的更改会覆盖这些更改，因此，必须在 AAD 中查看和更改目录数据。请参阅[从 Office 365 管理 Yammer 用户的整个生命周期](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039)和[在 Azure Active Directory 中添加或更改用户的个人资料信息](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)。
+    - 如果用户拥有 Office 365 标识，则会自动从 Office 365 中拉取 Yammer 用户个人资料，获取 Azure Active Directory (AAD) 中的个人资料信息。Yammer 用户可在 Yammer 中临时更改其个人资料，但在 AAD 中进行的更改会覆盖这些更改，因此，必须在 AAD 中查看和更改目录数据。请参阅[从 Office 365 管理 Yammer 用户的整个生命周期](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle)和[在 Azure Active Directory 中添加或更改用户的个人资料信息](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)。
 
 -   用户的设置：
 
@@ -1288,7 +1288,7 @@ Whiteboard 文件（.wbx 文件）存储在用户的 OneDrive for Business 帐�
 
 #### <a name="export"></a>导出
 
-有关如何导出数据的说明，请参阅[在 Yammer Enterprise 中管理 GDPR 数据主体请求](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf)。必须针对用户所属的每个 Yammer 网络运行每用户导出。
+有关如何导出数据的说明，请参阅[在 Yammer Enterprise 中管理 GDPR 数据主体请求](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)。必须针对用户所属的每个 Yammer 网络运行每用户导出。
 
 用户删除消息或文件时，Yammer 可设置数据保留设置（软删除或硬删除数据）。 如果设置为软删除，则用户删除的数据将包含在导出中。 如果 Yammer 数据保留设置设为硬删除，则 Yammer 中不再存储已删除的信息，因此该信息不会包含在导出中。
 
@@ -1301,7 +1301,7 @@ Yammer 允许验证管理员在收到 DSR 时通过 Yammer 管理中心执行符
 
 在使用“擦除用户”选项删除某个用户时，系统会向所有网络管理员和已验证管理员的 Yammer 收件箱发送通知。“擦除用户”选项会删除用户的 Yammer 个人资料，但不会删除他们的 Office 365 或 Azure Active Directory 个人资料。
 
-有关删除用户的详细步骤，请参阅[在 Yammer Enterprise 中管理 GDPR 数据主体请求](https://support.office.com/article/enterprise-privacy-yammer-eae49f12-4661-4ba5-aa72-01248f0709bf)。
+有关删除用户的详细步骤，请参阅[在 Yammer Enterprise 中管理 GDPR 数据主体请求](https://docs.microsoft.com/yammer/manage-security-and-compliance/gdpr-requests-in-yammer-enterprise)。
 
 ## <a name="responding-to-dsr-rectification-requests"></a>响应 DSR 纠正请求
 
@@ -1324,7 +1324,7 @@ Yammer 允许验证管理员在收到 DSR 时通过 Yammer 管理中心执行符
 
 要分配针对 SharePoint Online 网站的管理员或所有者权限以便你或其他人可以访问和编辑该文档，请参阅
 
-- [管理网站集的管理员](https://support.office.com/article/Manage-administrators-for-a-site-collection-9A7E46F9-3FC4-4297-955A-82CB292A5BE0)
+- [管理网站集的管理员](https://docs.microsoft.com/sharepoint/manage-site-collection-administrators)
 
 - [编辑和管理 SharePoint 列表和库的权限](https://support.office.com/article/Edit-and-manage-permissions-for-a-SharePoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782)
 
@@ -1342,7 +1342,7 @@ Yammer 允许验证管理员在收到 DSR 时通过 Yammer 管理中心执行符
 
 全局管理员可为自己分配必要的权限，以便打开和编辑（或删除）其他用户邮箱中的项目，就好像他们是邮箱所有者一样。全局管理员还可为另一用户分配这些权限。具体而言，全局管理员需要添加“**读取和管理**”权限，这是 Exchange Online 中的完全访问权限。有关详细信息，请参阅：
 
-- [向 Office 365 中的其他用户授予邮箱权限](https://support.office.com/article/Give-mailbox-permissions-to-another-user-in-Office-365-Admin-Help-1DBCF12F-A9DE-4D1D-B0B3-A227F8A736D8)
+- [向 Office 365 中的其他用户授予邮箱权限](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
 - [访问其他人的邮箱](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081)
 
 如果对用户邮箱实施了法定保留，或用户邮箱已分配到保留策略，则所有版本的邮箱都会保留，直到保留期限到期或从邮箱删除了保留。 这意味着如果更改了邮箱项目以响应 DSR 纠正请求，会在用户邮箱“可恢复邮件”文件夹中的一个隐藏文件夹中保留一份原始项目（进行更改前的项目）副本。
@@ -1359,7 +1359,7 @@ Yammer 允许验证管理员在收到 DSR 时通过 Yammer 管理中心执行符
     3. 在本地计算机上修订文档副本。
     4. 将修订后的文件上传到原始 SharePoint Online 位置。
 
-- 可编辑 SharePoint 列表中的数据。请参阅[添加、编辑或删除列表项](https://support.office.com/article/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde)。
+- 可编辑 SharePoint 列表中的数据。请参阅[添加、编辑或删除列表项](https://support.microsoft.com/zh-CN/office/add-edit-or-delete-list-items-a4b31f53-f044-470e-9823-4526594bacde)。
 
 IT 管理员也可更正与文档关联某些个人属性：
 
@@ -1389,7 +1389,7 @@ Power BI 依赖在其仪表板和报表中使用的基础源数据来保持完�
 - 用户的个人资料：
 
     - 如果用户拥有 Yammer 标识，则该用户的个人资料由自己完全掌控。有关如何查看和修改个人资料的信息，请参阅[更改我的 Yammer 个人资料和设置](https://support.office.com/article/change-my-yammer-profile-and-settings-a3aeca0e-de34-4897-9b59-de6516542851)。
-    - 如果用户拥有 Office 365 标识，则会自动从 Office 365 中拉取 Yammer 用户个人资料，获取 Azure Active Directory (AAD) 中的个人资料信息。 Yammer 用户可在 Yammer 中临时更改其个人资料，但在 AAD 中进行的更改会覆盖这些更改，因此，最好在 AAD 中查看和更改目录数据。 用户需要请求更新 AAD。 请参阅[从 Office 365 管理 Yammer 用户的整个生命周期](https://support.office.com/article/Manage-Yammer-users-across-their-life-cycle-from-Office-365-6c4c8fff-6444-404a-bffc-f9da0bcc3039)和[在 Azure Active Directory 中添加或更改用户的个人资料信息](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)。
+    - 如果用户拥有 Office 365 标识，则会自动从 Office 365 中拉取 Yammer 用户个人资料，获取 Azure Active Directory (AAD) 中的个人资料信息。 Yammer 用户可在 Yammer 中临时更改其个人资料，但在 AAD 中进行的更改会覆盖这些更改，因此，最好在 AAD 中查看和更改目录数据。 用户需要请求更新 AAD。 请参阅[从 Office 365 管理 Yammer 用户的整个生命周期](https://docs.microsoft.com/yammer/manage-yammer-users/manage-users-across-their-lifecycle)和[在 Azure Active Directory 中添加或更改用户的个人资料信息](https://docs.microsoft.com/azure/active-directory/active-directory-users-profile-azure-portal)。
 
 - 用户的设置：
 
@@ -1411,11 +1411,11 @@ Power BI 依赖在其仪表板和报表中使用的基础源数据来保持完�
 
 ### <a name="removing-the-license-for-an-office-365-application"></a>删除 Office 365 应用程序的许可证
 
-如上文所述，默认情况下，组织的 Microsoft 365 商业版订阅中包含的所有 Office 365 应用程序的许可证都分配给所有用户。 如果需要限制对作为 DSR 主体的数据的访问，IT 管理员可以使用 Office 365 管理门户暂时关闭应用程序的用户许可证。 如果用户之后尝试使用该应用程序，他们将收到未经授权的产品通知或一条显示他们不再有权访问的消息。 有关详细信息，请参阅[在 Office 365 商业版中删除用户许可证](https://support.office.com/article/Remove-licenses-from-users-in-Office-365-for-business-9B497C85-D0A4-4735-80FA-D3565BC05BD1)。
+如上文所述，默认情况下，组织的 Microsoft 365 商业版订阅中包含的所有 Office 365 应用程序的许可证都分配给所有用户。 如果需要限制对作为 DSR 主体的数据的访问，IT 管理员可以使用 Office 365 管理门户暂时关闭应用程序的用户许可证。 如果用户之后尝试使用该应用程序，他们将收到未经授权的产品通知或一条显示他们不再有权访问的消息。 有关详细信息，请参阅[在 Office 365 商业版中删除用户许可证](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。
 
 **注意：**
 
-- 要限制用户访问 Yammer，必须先[强制 Yammer 用户使用 Office 365 标识](https://support.office.com/article/Enforce-office-365-identity-for-Yammer-users-008f940b-6bec-47fc-bcc6-9c6133467562)，然后删除用户的 Yammer 许可证。
+- 要限制用户访问 Yammer，必须先[强制 Yammer 用户使用 Office 365 标识](https://docs.microsoft.com/yammer/configure-your-yammer-network/enforce-office-365-identity)，然后删除用户的 Yammer 许可证。
 
 - 对于利用 Power BI Embedded 的方案，可以限制访问嵌入了内容的独立软件供应商 (ISV) 应用程序。
 
@@ -1444,9 +1444,9 @@ Power BI 依赖在其仪表板和报表中使用的基础源数据来保持完�
 
     a.  删除文档的原始副本。从网站删除文档时，该文档发送到网站回收站（也称为*第一阶段回收站*）。
 
-    b.  转到网站回收站并删除文档副本。从网站回收站删除文档时，该文档发送到网站集回收站（也称为*第二阶段回收站*）。请参阅[从 SharePoint 文档库删除文件、文件夹或链接](https://support.office.com/article/Delete-a-file-folder-or-link-from-a-SharePoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)。
+    b.  转到网站回收站并删除文档副本。从网站回收站删除文档时，该文档发送到网站集回收站（也称为*第二阶段回收站*）。请参阅[从 SharePoint 文档库删除文件、文件夹或链接](https://support.microsoft.com/zh-CN/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)。
 
-    c.  转到网站集回收站并删除文档副本，此操作从 Office 365 中永久删除了该文档。请参阅[从网站集回收站中删除项目](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653)。
+    c.  转到网站集回收站并删除文档副本，此操作从 Office 365 中永久删除了该文档。请参阅[从网站集回收站中删除项目](https://support.microsoft.com/zh-CN/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)。
 
 4. 限制不再适用时，可在 Office 365 中将存储在本地的文档副本重新上传到网站。
 
@@ -1459,7 +1459,7 @@ SharePoint Online 管理员可通过锁定网站集（通过在 SharePoint Onlin
 
 ### <a name="preventing-a-user-from-signing-in-to-office-365"></a>阻止用户登录 Office 365
 
-IT 管理员还可阻止用户登录 Office 365，从而阻止用户访问任何 Office 365 联机服务或处理存储在 Office 365 中的任何数据。请参阅[阻止以前的员工访问 Office 365 数据](https://support.office.com/article/Remove-a-former-employee-from-Office-365-44d96212-4d90-4027-9aa9-a95eddb367d1)。
+IT 管理员还可阻止用户登录 Office 365，从而阻止用户访问任何 Office 365 联机服务或处理存储在 Office 365 中的任何数据。请参阅[阻止以前的员工访问 Office 365 数据](https://docs.microsoft.com/microsoft-365/admin/add-users/remove-former-employee)。
 
 ## <a name="part-2-responding-to-dsrs-with-respect-to-insights-generated-by-office-365"></a>第 2 部分：响应与 Office 365 生成的见解相关的 DSR
 
@@ -1507,7 +1507,7 @@ Microsoft Office 365 服务套件包括多种联机服务，可为选择使用�
 
 #### <a name="restrict"></a>限制
 
-要针对组织限制在 Delve 中进行处理，可关闭 Office Graph。在[此处](https://support.office.com/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff)了解详细信息。
+要针对组织限制在 Delve 中进行处理，可关闭 Office Graph。在[此处](https://docs.microsoft.com/sharepoint/delve-for-office-365-admins)了解详细信息。
 
 #### <a name="delete"></a>删除
 
@@ -1674,7 +1674,7 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 - 在 DSR 调查过程完成时删除案件集。 这会删除所有内容搜索，并导出与案件集关联的作业。
 
-若要开始使用 DSR 案件集，请参阅[在安全与合规中心内使用 DSR 案件集工具管理 GDPR 数据主体请求](https://support.office.com/article/manage-dsr-cases-in-the-office-365-security-compliance-center-ce9eb942-3589-42cb-88fd-1576ecb09c5c)。
+若要开始使用 DSR 案件集，请参阅[在安全与合规中心内使用 DSR 案件集工具管理 GDPR 数据主体请求](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool)。
 
 >[!IMPORTANT]
 >电子数据展示管理员可查看和管理组织中的所有 DSR 案例。若要详细了解与电子数据展示相关的不同角色，请参阅[向潜在案例成员分配电子数据展示权限](https://docs.microsoft.com/Office365/SecurityCompliance/assign-ediscovery-permissions)。
@@ -1700,7 +1700,7 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 6. 为每个合规性边界创建搜索权限筛选器，以便对应管理员角色组中的成员可仅搜索机构/合规性边界内的用户的邮箱和网站。 使用搜索权限筛选器，对应角色组的成员可仅搜索对应于机构/合规性边界的具有用户对象属性值的内容位置。
 
-有关分步说明，请参阅[在 Office 365 中为电子数据展示调查设置合规性边界](https://support.office.com/article/1b45c82f-26c8-44fb-9f3b-b45436fe2271)。
+有关分步说明，请参阅[在 Office 365 中为电子数据展示调查设置合规性边界](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries)。
 
 ### <a name="use-the-audit-log-search-tool-in-dsr-investigations"></a>在 DSR 调查中使用审核日志搜索工具
 

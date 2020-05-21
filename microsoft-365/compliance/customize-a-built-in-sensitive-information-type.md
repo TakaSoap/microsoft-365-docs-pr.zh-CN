@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 在内容中查找敏感信息时，需要在规则中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。
-ms.openlocfilehash: 4c61ab1a60b6259509d2928e22d31e447a996ec9
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 2aa552fb7a2623aaa7783063e82101a1993b9d1c
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595489"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327290"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
 在内容中查找敏感信息时，需要在*规则*中描述相应信息。数据丢失防护 (DLP) 包含最常见敏感信息类型对应的规则，可供立即使用。若要使用这些规则，必须将它们添加到策略中。你可能会发现，需要调整这些内置规则，才能满足组织的特定需求。为此，请创建自定义敏感信息类型。本主题介绍了如何将包含现有规则集合的 XML 文件自定义为，检测更广泛的潜在信用卡信息。 
   
-可以参考本示例，自定义其他内置敏感信息类型。有关默认敏感信息类型和 XML 定义的列表，请参阅[敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)。 
+可以参考本示例，自定义其他内置敏感信息类型。有关默认敏感信息类型和 XML 定义的列表，请参阅[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)。 
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>导出当前规则的 XML 文件
 
@@ -232,9 +232,9 @@ Get-DlpSensitiveInformationType
 |patternsProximity|`patternsProximity` 是指在查找信用卡号模式时，在与信用卡号多近的范围内查找确证性证据。|
 |recommendedConfidence|这是建议用于此规则的可信度。建议可信度适用于实体和关联。对于实体，永远不会根据模式的 `confidenceLevel` 评估此数值。它只是帮助你在需要时选择可信度的建议。对于关联，模式的 `confidenceLevel` 必须高于 `recommendedConfidence` 数值，才能调用邮件流规则操作。`recommendedConfidence` 是调用操作的邮件流规则使用的默认可信度。如果需要，可根据模式的可信度来手动更改要调用的邮件流规则。|
    
-## <a name="for-more-information"></a>有关详细信息
+## <a name="for-more-information"></a>详细信息
 
-- [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
     
