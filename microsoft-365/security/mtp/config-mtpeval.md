@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 80b7e209f87d3612e753127f5d1a1b3c36304cc3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209312"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330831"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>为试用版实验室环境配置 Microsoft 威胁防护支柱
 
@@ -237,5 +237,14 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 16. 向下滚动，然后单击 "**保存首选项**" 以确认新的集成。
 <br>![您需要单击的图像 of_Save 首选项按钮](../../media/mtp-eval-72.png) <br>
 
+## <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
+1. 转到[Microsoft 365 安全中心](https://security.microsoft.com/homepage)。 导航到 "**设置**"，然后选择 " **Microsoft 威胁防护**"。
+<br>![来自 Microsoft 365 安全中心设置页面的图像 of_Microsoft 威胁防护选项屏幕截图](../../media/mtp-eval-72b.png) <br>
+
+2. 选中 "**启用 Microsoft 威胁防护**" 复选框，然后单击 "**保存**"。
+<br>![来自 Microsoft 365 安全中心设置页面的图像 of_Microsoft 威胁防护选项屏幕截图](../../media/mtp-eval-72c.png) <br>
+
+恭喜！ 你刚刚创建了 Microsoft 威胁防护试用实验室环境！ 您现在可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应对终结点的 fileless 攻击。
+
 ## <a name="next-steps"></a>后续步骤
-[打开 Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service)，然后[生成测试警报](generate-test-alert.md)。
+[生成测试警报](generate-test-alert.md)。

@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b2abd68d767f169ea8e20fc349e6314cc6400d5
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043396"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327120"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: '策略提示是当有人使用与 DLP 策略冲突的内容时显示的通知或警告。 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项，以便它们不会被阻止，如果他们具有有效的业务需求，或者如果策略检测到误报也是如此。 '
-ms.openlocfilehash: fd6c7a33f8c75615019cca32797008a8fa4753ed
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626398"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327260"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>发送电子邮件通知并显示 DLP 策略的策略提示
 
@@ -36,7 +36,7 @@ ms.locfileid: "43626398"
   
 您可以使用电子邮件通知和策略提示来提高知名度并帮助人们了解组织的策略。 您还可以为用户提供替代策略的选项，以便它们不会被阻止，如果他们具有有效的业务需求，或者如果策略检测到误报也是如此。
   
-在安全&amp;合规性中心中，当您创建 DLP 策略时，您可以将用户通知配置为：
+在安全 &amp; 合规性中心中，当您创建 DLP 策略时，您可以将用户通知配置为：
   
 - 向你选择的可描述问题的人员发送电子邮件通知。
     
@@ -44,9 +44,9 @@ ms.locfileid: "43626398"
     
   - 对于 web 上的 Outlook 和 Outlook 2013 及更高版本中的电子邮件，策略提示将显示在撰写邮件的收件人上方的邮件的顶部。
     
-  - 对于 OneDrive for business 帐户或 SharePoint Online 网站中的文档，策略提示由显示在项目上的警告图标指示。 若要查看详细信息，可以选择一个项目，然后在**Information** ![页面的右上角](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)选择 "信息信息窗格" 图标以打开 "详细信息" 窗格。 
+  - 对于 OneDrive for business 帐户或 SharePoint Online 网站中的文档，策略提示由显示在项目上的警告图标指示。 若要查看详细信息，可以选择一个项目，然后**Information** ![ ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 在页面的右上角选择 "信息信息窗格" 图标以打开 "详细信息" 窗格。 
     
-  - 对于存储在 DLP 策略中包含的 OneDrive for business 网站或 SharePoint Online 网站上的 Excel、PowerPoint 和 Word 文档，策略提示将显示在消息栏和 Backstage 视图（"**文件**" 菜单\> **信息**）上。
+  - 对于存储在 DLP 策略中包含的 OneDrive for business 网站或 SharePoint Online 网站上的 Excel、PowerPoint 和 Word 文档，策略提示将显示在消息栏和 Backstage 视图（"**文件**" 菜单 \> **信息**）上。
     
 ## <a name="add-user-notifications-to-a-dlp-policy"></a>向 DLP 策略添加用户通知
 
@@ -54,21 +54,21 @@ ms.locfileid: "43626398"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。 你现在已处于安全&amp;合规中心。
+2. 使用工作或学校帐户进行登录。 你现在已处于安全 &amp; 合规中心。
     
-3. 在安全&amp;合规\>中心左侧导航\> **数据丢失防护** \> **策略** \>中，**创建一个策略**。
+3. 在安全 &amp; 合规中心 \> 左侧导航 \> **数据丢失防护** \> **策略**中， \> **创建一个策略**。
     
     !["创建策略" 按钮](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
   
-4. 选择保护您\> **接下来**需要的敏感信息类型的 DLP 策略模板。
+4. 选择保护您 \> **接下来**需要的敏感信息类型的 DLP 策略模板。
     
-    若要从空模板开始，请选择 "**自** \> **定义策略** \> "**下一步**。
+    若要从空模板开始，请选择 "**自**定义 \> **策略**" \> **下一步**。
     
-5. 将策略\>命名为**Next**。
+5. 将策略命名为 \> **Next**。
     
 6. 若要选择要保护 DLP 策略的位置，请执行下列操作之一：
     
-   - 选择\> **下一步****中的 "Office 365 中的所有位置"** 。
+   - 选择下一步**中的 "Office 365 中的所有位置"** \> **Next**。
     
    - 选择 "**让我选择** \> **下一处**的特定位置"。
     
@@ -76,7 +76,7 @@ ms.locfileid: "43626398"
     
    若要仅包含特定的 SharePoint 网站或 OneDrive 帐户，请将**状态**切换到 "打开"，然后单击 "**包括**" 下的链接以选择 "特定网站或帐户"。 
     
-7. 选择 "**使用高级设置** \> "**下一步**。
+7. 选择 "**使用高级设置**" \> **下一步**。
     
 8. 选择 " **+ 新建规则**"。
     
@@ -136,7 +136,7 @@ ms.locfileid: "43626398"
     
 - 允许用户替换 DLP 策略。 （可选） 您可以：
     
-  - 要求用户输入替换该策略的业务理由。 将记录此信息，您可以在安全&amp;合规性中心的 "**报告**" 部分的 "DLP 报告" 中查看此信息。 
+  - 要求用户输入替换该策略的业务理由。 将记录此信息，您可以在安全合规性中心的 "**报告**" 部分的 "DLP 报告" 中查看此信息 &amp; 。 
     
   - 允许用户报告误报并替换 DLP 策略。此信息还被记录下来用于报告，以便您可以使用误报来微调您的规则。
     
@@ -168,7 +168,7 @@ ms.locfileid: "43626398"
     
    ![OneDrive 帐户中文档上的策略提示图标](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
-若要对文档执行操作，您可以选择一个项目\> 。在页面的右上](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png)角选择 "**信息** ![信息" 窗格图标，以打开 "详细信息\> " 窗格**视图策略提示**。
+若要对文档执行操作，您可以选择一个项目 \> 。 **Information** ![ 在页面的右上角选择 "信息信息" 窗格图标， ](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) 以打开 "详细信息" 窗格 \> **视图策略提示**。
   
 策略提示会列出问题及其内容，如果对策略提示配置了这些选项，则您可以选择“解决”****，然后选择“替换”**** 策略提示或“报告”**** 误报。 
   
@@ -202,7 +202,7 @@ ms.locfileid: "43626398"
   
 ![显示附件与 DLP 策略冲突的策略提示](../media/59ae6655-215f-47d9-ad1d-39c0d1e61740.png)
   
-如果将策略提示配置为允许替代，则可以选择 "**显示详细信息** \> **" 替代** \> "输入业务理由" 或报告\> "误报肯定**替代**"。
+如果将策略提示配置为允许替代，则可以选择 "**显示详细信息**" \> **替代**" \> 输入业务理由" 或报告 "误报肯定 \> **替代**"。
   
 ![邮件中的策略提示已展开为显示覆盖选项](../media/28bfb997-48a6-41f0-8682-d5e62488458a.png)
   
@@ -219,13 +219,13 @@ ms.locfileid: "43626398"
 
 请注意，所有这些条件在 Outlook 中都有效，在这里，它们将与内容相匹配，并对内容强制实施保护操作。 但尚不支持向用户显示策略提示。
   
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 管理中心中的策略提示与安全&amp;合规性中心
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange 管理中心中的策略提示与安全 &amp; 合规性中心
 
-策略提示可使用在 Exchange 管理中心中创建的 DLP 策略和邮件流规则，或使用在安全&amp;合规性中心中创建的 dlp 策略，但不能同时使用这两种策略。 这是因为这些策略存储在不同的位置，但策略提示只能从一个位置进行绘制。
+策略提示可使用在 Exchange 管理中心中创建的 DLP 策略和邮件流规则，或使用在安全合规性中心中创建的 DLP 策略， &amp; 但不能同时使用这两种策略。 这是因为这些策略存储在不同的位置，但策略提示只能从一个位置进行绘制。
   
-如果已在 Exchange 管理中心中配置了策略提示，则在安全&amp;合规中心中配置的任何策略提示都不会显示在 web 上的 Outlook 和 outlook 2013 及更高版本中的用户，直到您在 Exchange 管理中心中关闭提示。 这样可确保当前的 Exchange 邮件流规则（也称为传输规则）在你选择切换到安全&amp;合规中心后才会继续有效。
+如果已在 Exchange 管理中心中配置了策略提示，则在安全合规中心中配置的任何策略提示都 &amp; 不会显示在 web 上的 outlook 和 outlook 2013 及更高版本中的用户，直到您在 Exchange 管理中心中关闭提示。 这样可确保当前的 Exchange 邮件流规则（也称为传输规则）在你选择切换到安全合规中心后才会继续有效 &amp; 。
   
-请注意，虽然策略提示只能从一个位置进行绘制，但总是会发送电子邮件通知，即使您在安全&amp;合规中心和 Exchange 管理中心中使用的是 DLP 策略也是如此。
+请注意，虽然策略提示只能从一个位置进行绘制，但总是会发送电子邮件通知，即使您在安全 &amp; 合规中心和 Exchange 管理中心中使用的是 DLP 策略也是如此。
   
 ### <a name="default-text-for-policy-tips-in-email"></a>电子邮件中的策略提示的默认文本
 
@@ -287,4 +287,4 @@ Office 桌面程序将自动从 Office 365 中直接同步 DLP 策略，然后�
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)

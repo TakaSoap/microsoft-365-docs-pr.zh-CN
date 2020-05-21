@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: 3674c26be50d622364a4dc077a85eaa974d71fcd
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262325"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327202"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为你的组织自定义 Microsoft 365 主题
 

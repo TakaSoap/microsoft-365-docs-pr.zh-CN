@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您将了解如何根据您的组织需求来创建、测试和调整 DLP 策略。
-ms.openlocfilehash: 2a7ef029d00aff8450d9e8cf41253c2a86606807
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 2cbf30f3d0c5d70aecce77c7a07820812699797a
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035754"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327794"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -51,13 +51,13 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
 - "可以定购我一个新的便携式计算机。 使用我的签证号码1111-1111-1111-1111，到期日期为11/22，并在你拥有它时向我发送估计的交货日期。
 - "我的膝上型电脑序列号是2222-2222-2222-2222，它是在11/2010 购买的。 顺便说，我的出差签证是否已批准？ "
 
-有关 "保持书签" 的一个很有用的参考是[关于敏感信息类型的主题，这些信息类型](what-the-sensitive-information-types-look-for.md)解释了如何检测每种信息类型。
+对保持书签的一个很有用的参考是说明如何检测每种信息类型的[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>从何处开始使用数据丢失防护
 
 如果数据泄露风险不是完全显而易见的，则很难确切地使用实现 DLP 时应开始的情况。 幸运的是，可以在 "测试模式" 下运行 DLP 策略，这样您就可以在将其转换为前评估其有效性和准确性。
 
-可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略，因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中，你将在**数据丢失防护** > **策略**下找到 DLP 策略。 单击 "**创建要启动的策略**"。
+可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略，因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中，你将在**数据丢失防护**策略下找到 DLP 策略  >  **Policy**。 单击 "**创建要启动的策略**"。
 
 Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员，这些模板属于财务、医疗和运行状况的一般类别和隐私。
 
@@ -95,7 +95,7 @@ Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](
 
 ## <a name="test-a-dlp-policy"></a>测试 DLP 策略
 
-新的 DLP 策略将在大约1小时内开始生效。 可以坐下来等待，等待正常的用户活动触发，也可以尝试自己触发它。 之前我已链接到有关[敏感信息类型](what-the-sensitive-information-types-look-for.md)的本主题，其中提供了有关如何触发 DLP 匹配的信息。
+新的 DLP 策略将在大约1小时内开始生效。 可以坐下来等待，等待正常的用户活动触发，也可以尝试自己触发它。 早期我链接到[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)，提供了有关如何触发 DLP 匹配的信息。
 
 例如，我为本文创建的 DLP 策略将检测澳大利亚税文件编号（TFN）。 根据文档，匹配项基于以下条件。
 
@@ -192,7 +192,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 除了更改实例计数之外，还可以调整匹配精度（或置信度）。 如果您的敏感信息类型有多种模式，则可以调整规则中的匹配精度，以便您的规则只匹配特定模式。 例如，若要帮助减少误报，可以设置规则的匹配精度，使其仅与具有最高可信度的模式相匹配。 了解如何计算可信度是有点棘手的（超出此文章的范围），但下面是[有关如何使用可信度调整规则](data-loss-prevention-policies.md#match-accuracy)的一个很有用的说明。
 
-最后，如果您想要更多地获取更多的信息，可以自定义任何敏感信息类型-例如，可以从[澳大利亚驾照](what-the-sensitive-information-types-look-for.md#australia-drivers-license-number)的关键字列表中删除 "悉尼新南威尔士"，以消除上述误报。 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅本主题关于[自定义内置的敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
+最后，如果您想要更多地获取更多的信息，可以自定义任何敏感信息类型-例如，可以从[澳大利亚驾照号码](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)的关键字列表中删除 "悉尼新南威尔士"，以消除上述误报。 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅本主题关于[自定义内置的敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 
 ## <a name="turn-on-a-dlp-policy"></a>启用 DLP 策略
 

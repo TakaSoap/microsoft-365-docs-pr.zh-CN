@@ -22,19 +22,19 @@ search.appverid:
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关域的详细信息。
 ms.custom: okr_smb
-ms.openlocfilehash: 09e811b64def4d507a9d825f95b9d22f910669bb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 1af20ed0052a7bb4f98072a7142bf7e112b8305e
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140745"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327108"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ ms.locfileid: "44140745"
 
 域是 **@** 注册电子邮件地址后和 Web 地址中 **www.** 后显示的唯一名称。 它通常采用您组织的名称和标准 Internet 后缀的形式，如*yourbusiness.com*或*stateuniversity.edu。* 
   
-将自定义域（**如 "\@contoso.com"）** 与 Office 365 结合使用，可以帮助为你的品牌建立可信度和认可。 
+将自定义域（**如 "contoso.com \@ "）** 与 Office 365 结合使用，可以帮助为你的品牌建立可信度和认可。 
   
 你可以[在 Office 365 中购买域，我们将自动对其进行设置](../get-help-with-domains/buy-a-domain-name.md)，也可以从域注册机构购买或将已有的域引入。
   
@@ -132,7 +132,7 @@ ms.locfileid: "44140745"
 
 ::: moniker-end
     
-2. 在 "**域**" 页上，选择要转移到其他域注册机构的 Office 365 域，然后选择 "**域传输** > **启用域传输**"。
+2. 在 "**域**" 页上，选择要转移到其他域注册机构的 Office 365 域，然后选择 "**域传输**  >  **启用域传输**"。
        
 4. 按照准备转移您的域的步骤进行操作。
     
@@ -258,6 +258,8 @@ ms.locfileid: "44140745"
 - Skype for Business Online 桌面客户端可以使用自动发现自动查找 Skype for Business Online 服务，以便用户无需输入服务器名称即可登录。
     
 - Skype for Business Online 移动客户端可以使用自动发现来自动查找 Skype for Business Online 服务，以便用户无需输入服务器名称即可登录。
+
+- Microsoft 团队与 Skype for Business 的联盟（本地或联机）。 有关详细信息，请参阅为[Microsoft 团队准备贵组织的网络](https://docs.microsoft.com/microsoftteams/prepare-network)。
     
  **如果 SPF/TXT 记录不受支持，则**其他人可能可以使用您的域发送垃圾邮件或其他恶意电子邮件。 SPF 记录通过识别授权从您的域发送电子邮件的服务器来发挥作用。 
   
@@ -342,7 +344,7 @@ ms.locfileid: "44140745"
 
 当您注册服务时，Office 365 将为您创建一个域，如*contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.com*。 
   
- **如果您想让您的电子邮件看起来像*alan\@contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
+ **如果您想让您的电子邮件看起来像*alan \@ contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Office 365](add-domain.md)中的步骤" 中的步骤，如果您已拥有它。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.com"，则不能将其更改为 "fabrikam.onmicrosoft.com"。 若要使用不同的 onmicrosoft.com 域，必须启动一个使用 Office 365 的新订阅。 
     
@@ -441,7 +443,7 @@ ms.locfileid: "44140745"
         
     3. 在 EAC 中，选择 "**保护**"，然后选择 "**连接筛选器**"。 
         
-    4. 在 " **IP 允许" 列表**中**+**，选择 ""，然后添加可以从当前电子邮件提供商获取的邮件服务器 IP 地址。 
+    4. 在 " **IP 允许" 列表**中，选择 **+** ""，然后添加可以从当前电子邮件提供商获取的邮件服务器 IP 地址。 
     
 5. 创建用户帐户并设置主（答复）地址
     

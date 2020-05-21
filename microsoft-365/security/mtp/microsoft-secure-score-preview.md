@@ -17,19 +17,19 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0a721311706faccbd7563520183c7f198298dddc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 4305d97d33439383989cf8c300522268727b1ae7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173458"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327656"
 ---
 # <a name="microsoft-secure-score-preview"></a>Microsoft 安全评分（预览）
 
 >[!IMPORTANT]
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
+Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
 
 按照安全得分建议，可以保护您的组织免受威胁。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
 
@@ -101,10 +101,13 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 * 应用（电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全性）
 * 基础结构（暂时不提供改进操作）
 
+>[!NOTE]
+>在最近发布的 Microsoft 安全分数中，已发布了一个已改进的记分模型，使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。 [查看详细信息](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score-and-graph-api)
+
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
 
-![安全积分主页](../../media/secure-score/secure-score-homepage.png)
-*图1： Microsoft 安全分数概述页面*
+![安全积分主页 ](../../media/secure-score/secure-score-homepage.png)
+ *图1： Microsoft 安全分数概述页面*
 
 ## <a name="take-action-to-improve-your-score"></a>采取行动以提高成绩
 
@@ -118,8 +121,8 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 选择特定的 "改进" 操作时，将显示完整的 "页面" 飞出控件。  
 
-![改进操作浮出](../../media/secure-score/secure-score-improvement-action-details.png)
-控件示例*图2：改进操作浮出控件示例*
+![改进操作浮出控件示例 ](../../media/secure-score/secure-score-improvement-action-details.png)
+ *图2：改进操作浮出控件示例*
 
 若要完成此操作，您有几个选项：
 
@@ -175,6 +178,12 @@ Microsoft 安全分数是基于系统配置、用户行为和其他安全相关�
 ## <a name="whats-new"></a>新变化？ 
 
 若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅[Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。
+
+### <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>标识安全分数和图形 API 不兼容
+
+在最近发布的 Microsoft 安全分数中，已发布了一个改进的计分模型。 通过这些更改，可以更灵活、准确地查看安全状况。 但是，这些更新已使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。
+
+在时间中，标识安全分数和图形 API 将采用新的评分模型。 在此之前，客户将看到 Microsoft 安全分数、标识安全分数和图形 API 所报告的分数之间的差异。 对于此导致的不便，我们深表歉意，并在努力确保这些体验在将来更具兼容性。
 
 ### <a name="april-2020"></a>2020 年 4 月
 

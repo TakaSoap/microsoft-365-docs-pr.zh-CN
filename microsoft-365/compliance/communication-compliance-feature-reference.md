@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bfaead99bf439173cb353bc745488a5d0aee70c4
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 6ca0edb1338c21f710ae493c8697b0c2740860ba
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210526"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327596"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -41,7 +41,7 @@ ms.locfileid: "44210526"
 
 策略模板是预定义的策略设置，可用于快速创建策略以解决常见的合规性情况。 这些模板中的每一个都有不同的条件和范围，并且所有模板都使用相同类型的扫描信号。 您可以从以下策略模板中进行选择：
 
-|**区域**|**策略模板**|**Details**|
+|**区域**|**策略模板**|**详细信息**|
 |:-----|:-----|:-----|
 | **冒犯性语言和反骚扰** | 监视攻击性语言的通信 | -位置： Exchange Online、Microsoft 团队、Yammer、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：100% <br> -条件：冒犯性语言分类符 |
 | **敏感信息** | 监视敏感信息的通信 | -位置： Exchange Online、Microsoft 团队、Yammer、Skype for Business <br> -方向：入站、出站、内部 <br> -审阅百分比：10% <br> -条件：敏感信息、现成的内容模式和类型、自定义词典选项、大于 1 MB 的附件 |
@@ -124,7 +124,7 @@ ms.locfileid: "44210526"
 - 隐私
 - 自定义信息类型
 
-若要了解有关敏感信息详细信息和默认类型中包含的模式的详细信息，请参阅[要查找的敏感信息类型](what-the-sensitive-information-types-look-for.md)。
+若要了解有关敏感信息详细信息和默认类型中包含的模式的详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
 
 ### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
@@ -195,12 +195,12 @@ ms.locfileid: "44210526"
 
 通知模板是自定义电子邮件模板，可在其中定义以下消息字段：
 
-|**Field**|**Required**| **Details** |
+|**Field**|**Required**| **详细信息** |
 |:-----|:-----|:-----|
 |**模板名称** | 是 | "通知" 模板的友好名称，您将在修正期间的 "通知" 工作流中选择，支持文本字符。 |
 | **发件人地址** | 是 | 将邮件发送给具有策略匹配的员工的一个或多个用户或组的地址，该用户或组是从 Active Directory 中为订阅选择的一个或多个用户或组。 |
 | **抄送和密件抄送地址** | 否 | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
-| **Subject** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
+| **主题** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
 | **邮件正文** | 是 | 显示在邮件正文中的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用于通知的 HTML
@@ -227,7 +227,7 @@ ms.locfileid: "44210526"
 
 通过通信合规性筛选器，可以对警报消息进行筛选和排序，以便更快地进行调查和修正操作。 筛选在每个策略的 "**挂起**" 和 "**已解决**" 选项卡上可用。 若要将筛选器或筛选器集保存为已保存的筛选器查询，必须将一个或多个值配置为筛选器选择。 下表概述了筛选器详细信息：
 
-|**Filter**|**Details**|
+|**Filter**|**详细信息**|
 |:-----|:-----|
 | **Date** | 组织中的用户发送或接收邮件的日期。 |
 | **File 类** | 基于邮件类型（*邮件*或*附件*）的邮件类。 |
@@ -237,7 +237,7 @@ ms.locfileid: "44210526"
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |
 | **发件人域** | 发送邮件的域。 |
-| **Size** | 邮件的大小，以 KB 为单位。 |
+| **大小** | 邮件的大小，以 KB 为单位。 |
 | **主题/职务** | 邮件主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，无论是*可疑*的*还是**不兼容*的。 |
 | **升级到** | 作为邮件升级操作的一部分包含的人员的用户名。 |
@@ -287,7 +287,7 @@ ms.locfileid: "44210526"
 
 若要查看通信合规性策略活动，请在主页上为任何策略选择 "**导出审阅活动**" 控件。 此操作将生成 .csv 格式的审核文件，其中包含以下信息：
 
-|**Field**|**Details**|
+|**Field**|**详细信息**|
 |:-----|:-----|
 | **CreationDate** | 在策略中执行活动的日期。 |
 | **UserIds** | 在策略中执行活动的用户。 |

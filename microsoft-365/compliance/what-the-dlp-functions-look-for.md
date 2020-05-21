@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 敏感信息类型查找特定模式，并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: 86ce1c9d546f776e239fdaca76219129c24a73e8
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601199"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327744"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
 数据丢失防护（DLP）包括敏感信息类型，如信用卡号和欧盟借记卡号，可供您在 DLP 策略中使用。 这些敏感信息类型查找特定模式，并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 例如，信用卡号敏感信息类型使用函数查找类似于到期日期的日期，以帮助 corroborate 号码是信用卡号。
   
-本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。 有关详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)。
+本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。 有关详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -124,9 +124,9 @@ ms.locfileid: "41601199"
 ## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 （已弃用）
 
 > [!NOTE]
-> 此函数已被弃用，因为它仅支持包含在上述`Func_eu_date`函数中的葡萄牙月名称。 
+> 此函数已被弃用，因为它仅支持包含在上述函数中的葡萄牙月名称 `Func_eu_date` 。 
   
-此函数使用葡萄牙语中常用的格式查找日期。 此函数`Func_eu_date`的格式与使用的语言不同。
+此函数使用葡萄牙语中常用的格式查找日期。 此函数的格式与 `Func_eu_date` 使用的语言不同。
   
 示例：
   
@@ -155,9 +155,9 @@ ms.locfileid: "41601199"
 ## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 （已弃用）
 
 > [!NOTE]
-> 此函数已被弃用，因为它仅支持荷兰月份名称，这些名称现在包含`Func_eu_date`在上述函数中。 
+> 此函数已被弃用，因为它仅支持荷兰月份名称，这些名称现在包含在 `Func_eu_date` 上述函数中。 
   
-此函数查找在荷兰语中常用的格式的日期。 此函数`Func_eu_date`的格式与使用的语言不同。
+此函数查找在荷兰语中常用的格式的日期。 此函数的格式与 `Func_eu_date` 使用的语言不同。
   
 示例：
   

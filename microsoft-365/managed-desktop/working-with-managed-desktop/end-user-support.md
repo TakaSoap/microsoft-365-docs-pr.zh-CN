@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 687b587da033b3c6cc8e027221043dd6c52e15c3
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42084983"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327888"
 ---
 # <a name="getting-help-for-end-users"></a>获取最终用户的帮助
 
@@ -55,6 +55,12 @@ ms.locfileid: "42084983"
 - 卢森堡： + 352 800 40119
 - 澳大利亚： + 61 180 037 0619
 - 新西兰： + 64 988 44380
+- 瑞典： + 46 20 120 3554
+- 挪威： + 47 800 62584
+- 冰岛： + 354 800 9006
+- 爱尔兰： + 353 1 800 832272
+- 丹麦： + 45 80 40 04 01
+- 芬兰： + 358 800 525088
 
 >[!NOTE]
 >调用以验证你的身份时，你需要准备好组织电子邮件地址。 

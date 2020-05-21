@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性分数的发行说明和已知问题（预览版）（M365 合规性中心中的一项功能，可帮助简化和自动化风险评估）。
-ms.openlocfilehash: 4368255c87da118174ad08b52994865a8fdcd0af
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.openlocfilehash: 1567921b8bd07b0fe4deda0bab6601898eed75a9
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790587"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330776"
 ---
 # <a name="microsoft-compliance-score-preview-release-notes"></a>Microsoft 合规性分数（预览）发行说明
 
@@ -32,6 +32,7 @@ Microsoft 合规性分数的公开预览为你提供了对即将推出的功能�
 将新的预先配置的模板发布到生产中，以便在符合性分数（预览）变得可用时发布这些模板。 [在此处查看模板的完整列表](compliance-score.md#templates)。 最近添加的模板包括：
 
 - 巴西常规数据保护法律（LGPD）
+- 迪拜信息安全解决方案（DGISR）
 - IRAP/澳大利亚政府版 ISM （预览）
 - ISO 27701:2019
 - SOC 1
@@ -47,7 +48,7 @@ Microsoft 合规性分数的公开预览为你提供了对即将推出的功能�
 
 ## <a name="common-actions-will-synch-status-across-groups"></a>常见操作将同步组之间的状态
 
-如果您的组织具有多个评估组，**技术**操作（即影响整个组织的操作）的行为已发生更改。 跨组的任何重复操作都已合并到一个单一操作中。 该单个操作包含所有已上载的笔记和来自重复版本的证据。 进行此更改后，技术操作现在的行为与它们属于同一组时的行为相同。 现在，在一个组或评估中对操作所做的任何更改都将反映在所有实例中。  **实现状态**、**实现日期**、**测试状态**和**测试日期** 将反映最新的更新。
+如果您的组织具有多个评估组，**技术**操作（即影响整个组织的操作）的行为已发生更改。 跨组的任何重复操作都已合并到一个单一操作中。 该单个操作包含所有已上载的笔记和来自重复版本的证据。 进行此更改后，技术操作现在的行为与它们属于同一组时的行为相同。 现在，在一个组或评估中对操作所做的任何更改都将反映在所有实例中。  **实现状态**、**实现日期**、**测试状态**和**测试日期**   将反映最新的更新。
 
 ## <a name="compliance-score-relationship-to-compliance-manager"></a>与合规性管理器的合规性分数关系
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心，修复我们了解的问题，并根据你的反馈进行更改。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 940d316c97370a477c963785ae7e90482b35a46c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: baccff8699f9ec7b38090fb5adc0fcde8811c764
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034264"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327734"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -70,7 +70,7 @@ ms.locfileid: "44034264"
 > [!TIP]
 > 再次阅读上个月的更新，以了解最近预览的一些[新解决方案](#new-compliance-solutions)的刷新器，以及说明安全 & 合规性中心中的合规性功能现在在 Microsoft 365 中的活动的[路线图](#updated-compliance-solutions)。
 
-书签并将[https://compliance.microsoft.com](https://compliance.microsoft.com)其置于现在，以浏览您的一站式管理合规性，以跨整个组织 .。。或者[阅读本文](microsoft-365-compliance-center.md)以进一步深入研究。
+书签并将其置于现在，以 [https://compliance.microsoft.com](https://compliance.microsoft.com) 浏览您的一站式管理合规性，以跨整个组织 .。。或者[阅读本文](microsoft-365-compliance-center.md)以进一步深入研究。
 
 ![Microsoft 365 合规性中心主页](../media/mcc-home-ga.png)
 
@@ -162,10 +162,10 @@ ms.locfileid: "44034264"
 |**功能**|**Office 365 安全与合规中心**|**Microsoft 365 合规中心**|**了解更多**|
 |:-----|:-----|:-----|:-----|
 |高级电子数据展示|电子数据展示 > 高级电子数据展示 <br/> https://protection.office.com/advancedediscoverycases |电子数据展示 > 高级 <br/> https://compliance.microsoft.com/advancedediscovery | [Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md) |
-|警报策略|警报 > 通知策略 <br/> https://protection.office.com/alertpolicies |目前，仅在 Office 365 安全性 & 合规性中心中管理警报策略。 |[安全与合规中心中的警报策略](alert-policies.md) |
+|警报策略|警报 > 通知策略 <br/> https://protection.office.com/alertpolicies |目前，仅在 Office 365 安全性 & 合规性中心中管理警报策略。 |[安全与合规中心警报策略](alert-policies.md) |
 |警报|警报 > 查看警报 <br/> https://protection.office.com/viewalerts |警报 <br/> https://compliance.microsoft.com/compliancealerts |[查看警报](alert-policies.md#viewing-alerts)|
 |存档|信息治理 > 存档 <br/> https://protection.office.com/archiving |信息治理 > 存档 "选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=archive |[启用存档邮箱](enable-archive-mailboxes.md)|
-|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |跟踪 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
+|审核日志搜索|搜索 > 审核日志搜索 <br/> https://protection.office.com/unifiedauditlog |Audit <br/> https://compliance.microsoft.com/auditlogsearch | [在安全 & 合规性中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)|
 |内容搜索|搜索 > 内容搜索 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 内容搜索 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜索内容](search-for-content.md) |
 |数据连接器|信息治理 > 存档第三方数据 <br/> https://protection.office.com/nativeconnector | 数据连接器 <br/> https://compliance.microsoft.com/connectorlanding |[存档第三方数据](archiving-third-party-data.md)|
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
@@ -177,8 +177,8 @@ ms.locfileid: "44034264"
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](labels.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[保留策略概述](retention-policies.md)|
-|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)|
-|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
+|敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)|
+|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感性标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全 & 合规中心中的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
 

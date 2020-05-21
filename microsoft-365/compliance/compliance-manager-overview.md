@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 microsoft 服务信任门户中的 Microsoft 合规性管理器，这是一种基于工作流的免费风险评估工具。
-ms.openlocfilehash: 84f076a45a3944d1d711a8e04199b357aa52791d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224639"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330742"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -129,7 +129,7 @@ ms.locfileid: "44224639"
 
 请注意，合规性分数中的**改进操作**等效于合规性管理器中的**操作项**。
 
-## <a name="permissions"></a>权限
+## <a name="permissions"></a>Permissions
 
 合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 
@@ -155,20 +155,21 @@ ms.locfileid: "44224639"
 1. [巴西常规数据保护法律（LGPD）](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [加利福尼亚州消费者隐私法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （预览）
 3. [云安全联盟（CSA）云控制矩阵（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [联邦金融机构检查委员会（FFIEC）信息安全手册](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  / [澳大利亚政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （预览）
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [迪拜信息安全解决方案（DGISR）](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [欧洲联合 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [联邦金融机构检查委员会（FFIEC）信息安全手册](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP 中等](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  / [澳大利亚政府版 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （预览）
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Microsoft 365 数据保护基准](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 修订版4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## <a name="secure-score-integration"></a>安全分数集成
 

@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 许多组织已拥有一个使用 Windows Server 文件分类基础结构 (FCI)、SharePoint 中的文档属性或由第三方系统应用的文档属性识别和分类敏感信息的流程。 如果您对您的组织进行了描述，则可以创建一个 DLP 策略来识别 Windows Server FCI 或其他系统已应用于文档的属性，以便可以在具有特定 FCI 或其他属性值的 Office 文档上强制执行 DLP 策略。
-ms.openlocfilehash: e2b64412a6f35dc3f29fe538a849f84e764af156
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632197"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327098"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>创建 DLP 策略来保护具有 FCI 或其他属性的文档
 
@@ -54,13 +54,13 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
 
 1. 登录到 Microsoft 365 管理中心。
     
-2. 在左侧导航中，选择 "**管理中心** \> " " **SharePoint**"。 You're now in the SharePoint admin center.
+2. 在左侧导航中，选择 "**管理中心**" " \> **SharePoint**"。 You're now in the SharePoint admin center.
     
-3. 在左侧导航中，选择 "**搜索管理**" 页\>上的 "**搜索** \> " "**管理搜索架构**"。
+3. 在左侧导航中，选择**search** \> "**搜索管理**" 页上的 "搜索" " \> **管理搜索架构**"。
     
     ![SharePoint 管理中心内的搜索管理页面](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
-4. 在 "**托管属性**" \>页上**新建托管属性**。
+4. 在 "**托管属性**" 页上 \> **新建托管属性**。
     
     ![突出显示“新建托管属性”按钮的“托管属性”页面](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
@@ -70,13 +70,13 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
     
 7. 在“主要特征”**** 下，选择“可查询”**** 和“可检索”****。
     
-8. 在 "到已\> **爬网属性的映射**" 下**添加映射**。
+8. 在 "**到已爬网属性的映射**" 下 \> **添加映射**。
     
-9. 在 "已**爬网属性选择**" 对话框中， \>查找并选择与将在 DLP 策略\> **"确定"** 中使用的 Windows Server FCI 属性或其他属性相对应的已爬网属性。
+9. 在 "已**爬网属性选择**" 对话框中 \> ，查找并选择与将在 DLP 策略 \> **"确定"** 中使用的 Windows Server FCI 属性或其他属性相对应的已爬网属性。
     
     ![已爬网属性选择对话框](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
-10. 在页面\>底部的 **"确定"**。
+10. 在页面底部的 \> **"确定"**。
     
 ## <a name="create-a-dlp-policy-that-uses-an-fci-property-or-other-property"></a>创建使用 FCI 属性或其他属性的 DLP 策略
 
@@ -92,13 +92,13 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
     
 ### <a name="create-the-dlp-policy-by-using-powershell"></a>使用 PowerShell 创建 DLP 策略
 
-请注意，条件**文档属性包含这些值中的任何一个**暂时在安全&amp;合规性中心的 UI 中不可用，但你仍可以使用 PowerShell 使用此条件。 您`New\Set\Get-DlpCompliancePolicy`可以使用 cmdlet 来使用 DLP 策略，并`New\Set\Get-DlpComplianceRule`将 cmdlet 与`ContentPropertyContainsWords`参数一起使用，以添加条件**文档属性包含这些值中的任何一个**。
+请注意，条件**文档属性包含这些值中的任何一个**暂时在安全合规性中心的 UI 中不可用 &amp; ，但你仍可以使用 PowerShell 使用此条件。 您可以使用 `New\Set\Get-DlpCompliancePolicy` cmdlet 来使用 DLP 策略，并将 `New\Set\Get-DlpComplianceRule` cmdlet 与参数一起使用， `ContentPropertyContainsWords` 以添加条件**文档属性包含这些值中的任何一个**。
   
-有关这些 cmdlet 的详细信息，请[参阅&amp;安全合规性中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
+有关这些 cmdlet 的详细信息，请参阅[安全 &amp; 合规性中心 cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)。
   
-1. [使用远程 PowerShell 连接&amp;到安全合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [&amp;使用远程 PowerShell 连接到安全合规中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用`New-DlpCompliancePolicy`创建策略。
+2. 使用创建策略 `New-DlpCompliancePolicy` 。
 
 下面是 PowerShell 示例，用于创建适用于所有位置的 DLP 策略。
 
@@ -106,7 +106,7 @@ DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属
 New-DlpCompliancePolicy -Name FCI_PII_policy -ExchangeLocation All -SharePointLocation All -OneDriveLocation All -Mode Enable
 ```
 
-3. 通过`New-DlpComplianceRule`使用（其中一个规则针对**低**值）和另一个规则用于**高**和**中等**值，创建上述两个规则。 
+3. 通过使用 `New-DlpComplianceRule` （其中一个规则针对**低**值）和另一个规则用于**高**和**中等**值，创建上述两个规则。 
     
     下面是创建这两个规则的 PowerShell 示例。 请注意，属性名称/值对括在引号中，并且属性名称可以指定多个以逗号分隔的多个值，不包含空格，如`"<Property1>:<Value1>,<Value2>","<Property2>:<Value3>,<Value4>"....`
 
@@ -135,9 +135,9 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
   
 ### <a name="re-index-a-site-optional"></a>重新编制网站的索引（可选）
 
-1. 在网站上，选择 "**设置**" （右上角的齿轮\>图标） "**网站设置**"。
+1. 在网站上，选择 "**设置**" （右上角的齿轮图标） " \> **网站设置**"。
     
-2. 在 "**搜索**" 下，选择 "**搜索和脱机可用性** \>重新**索引网站**"。
+2. 在 "**搜索**" 下，选择 "**搜索和脱机可用性**重新 \> **索引网站**"。
     
 ## <a name="more-information"></a>更多信息
 
@@ -149,4 +149,4 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [敏感信息类型库存](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)

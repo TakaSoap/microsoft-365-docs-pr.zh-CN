@@ -21,23 +21,30 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '删除共享邮箱中的许可证以将其分配给其他用户。 '
-ms.openlocfilehash: fb09036fc28ea3d9c182395d0a85e467f611dfdc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 9ba411c614fee93e37ac45e58fd40bf246a9c2ab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140425"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327238"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
-除非邮箱拥有超过50GB 的数据，否则共享邮箱不需要许可证。 按照这些说明操作，从共享邮箱中删除许可证，以便可以将其分配给用户或返回许可证，以便您无需支付许可证。
+共享邮箱通常不需要许可证。 按照这些说明操作，从共享邮箱中删除许可证，以便可以将其分配给用户或返回许可证，以便您无需支付许可证。
+
+> [!NOTE]
+> 以下方案中需要许可证：
+> 1. 共享邮箱在使用中的存储超过 50 GB。
+> 2. 共享邮箱使用就地存档。
+> 3. 共享邮箱放置在诉讼保留中。
+
   
 ## <a name="remove-the-license"></a>删除许可证
 
@@ -65,7 +72,7 @@ ms.locfileid: "44140425"
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
@@ -84,7 +91,7 @@ ms.locfileid: "44140425"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。

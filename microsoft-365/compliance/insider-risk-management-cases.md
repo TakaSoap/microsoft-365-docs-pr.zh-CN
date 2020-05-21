@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7af3e54a13ceabf4acfaa2259ea0089854660721
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804842"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327858"
 ---
 # <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
@@ -101,7 +101,7 @@ ms.locfileid: "43804842"
 4. **风险活动 chronology**：列出了与事例关联的所有风险警报的完整 chronology，其中包括相应警报气泡图中提供的所有详细信息。
 5. **Case 操作**：用于解决事例的选项位于 "案例操作" 工具栏上。 您可以解决案例，向员工发送电子邮件通知，或升级数据或员工调查的案例。
 
-### <a name="content-explorer"></a>内容资源管理器
+### <a name="content-explorer"></a>内容浏览器
 
 "**内容资源管理器**" 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果在员工将数百个文件从 SharePoint Online 下载到一个 USB 设备，并且该活动触发策略警报时创建了一个警报，则会捕获警报的所有下载文件，并将其从原始存储源复制到内幕风险管理事例中。
 
@@ -172,7 +172,7 @@ ms.locfileid: "43804842"
 3. 在 "**升级后进行调查**" 对话框中，输入新员工调查的名称。 如果需要，请输入有关事例的注释并选择 "已**升级**"。
 5. 选择 "**确认**" 以创建员工调查案例，或选择 "**取消**" 关闭对话框，而不创建新的员工调查案例。
 
-在将内幕风险管理案例升级到新的员工调查案例之后，可以在 Microsoft 365 合规性中心的**电子数据展示** > **高级**区域中查看新案例。
+在将内幕风险管理案例升级到新的员工调查案例之后，可以在 Microsoft 365 合规性中心的**电子数据展示**  >  **高级**区域中查看新案例。
 
 ### <a name="resolve-the-case"></a>解决案例
 

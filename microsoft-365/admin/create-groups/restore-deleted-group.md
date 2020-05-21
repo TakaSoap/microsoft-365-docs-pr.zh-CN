@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: 9d432d6ddb7e41b6560329b562c24f392a424412
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 123805750beff88904a8e3874f0d4d46a72e8f01
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140520"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327624"
 ---
 # <a name="restore-a-deleted-group"></a>还原已删除的组
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -72,6 +72,9 @@ ms.locfileid: "44140520"
 1. 转到[管理中心](https://admin.microsoft.com)。
 2. 展开 "**组**"，然后单击 "**已删除组**"。
 3. 选择要还原的组，然后单击 "**还原组**"。
+
+> [!NOTE]
+> 在某些情况下，可能需要长达24小时才能还原组及其所有数据。 
   
 ## <a name="permanently-delete-a-microsoft-365-group"></a>永久删除 Microsoft 365 组
 

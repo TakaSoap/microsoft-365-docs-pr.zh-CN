@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: dc446281e8a791b59a9ac97592ff6a53dcde310c
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f1b1a8f03b7a11a0467826281bc2b789140dbcee
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557560"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327042"
 ---
 # <a name="steps-for-partners-to-register-devices"></a>合作伙伴注册设备的步骤
 
@@ -22,69 +22,40 @@ ms.locfileid: "42557560"
 
 
 ## <a name="prepare-for-registration"></a>准备注册 
-在完成客户注册之前，必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 请务必选择 "**包括 Azure Active Directory 和 Office 365 的委派管理权限**"。 有关详细信息，请参阅[合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)。
-
-若要完成对客户的注册，请首先创建 CSV 文件。
-
->[!NOTE]
->为方便起见，可以为此*合作伙伴版本*下载一个[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.csv)。
-
-您的文件需要包含与示例1（制造商、模型等）**完全相同的列标题**，但您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
-    
-  ```
- Manufacturer,Model,Serial Number
-  SpiralOrbit,ContosoABC,000000000000
-  
-  
-  ```
+在完成客户注册之前，必须首先在[合作伙伴中心](https://partner.microsoft.com/dashboard)建立与它们的关系。 有关该过程的更多详细信息，请参阅[许可文档](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization)。 任何 CSP 合作伙伴都可以代表任何客户添加设备，只要客户同意。 您还可以在[合作伙伴中心帮助](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot)中了解有关合作伙伴关系和 Autopilot 权限的详细信息。
 
 
+> [!NOTE]
+> 本文档仅适用于合作伙伴和 Oem。 自行注册的过程在[Microsoft 托管桌面的注册设备](register-devices-self.md)中进行了记录。
 
 
->[!NOTE]
->此格式仅适用于合作伙伴流程。 自行注册的过程在[Microsoft 托管桌面的注册设备](register-devices-self.md)中进行了记录。
+## <a name="register-devices-by-using-partner-center"></a>使用合作伙伴中心注册设备
 
->[!IMPORTANT]
->这些值必须与 SMBIOS 中的制造商值完全匹配，包括大小写和特殊字符。 
-
-- 设备制造商（示例： SpiralOrbit） 
-- 设备模型（示例： ContosoABC）
-- 设备序列号
-
-## <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 门户注册设备
-
-使用 Azure 门户注册与自助服务相同，不同之处在于，访问门户的方式不同。 请按以下步骤操作：
+建立与客户的关系后，您可以通过执行以下步骤，利用合作伙伴中心将设备添加到与您有关系的任何客户的 Autopilot 中。
 
 1. 导航到 "[合作伙伴中心](https://partner.microsoft.com/dashboard)"
-2. 选择 "**客户**"。
-3. 选择要管理的客户。
-4. 选择 "**服务管理**"。
-5. 选择 " **Intune**"。
-6. 在 Azure 门户的顶部搜索框中搜索 "mmd"。
-7. 选择 "**设备**"。
-8. 在 "**文件上载**" 中，提供以前创建的 CSV 文件的路径。
-9. （可选）可以出于自己的跟踪目的添加**订单 id**或**购买 ID** 。 这些值没有格式要求。
-10. 选择 "**注册设备**"。 系统会将设备添加到**设备边栏**上的设备列表中，并标记为 "**注册挂起**"。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "已**准备就绪**，以供用户使用"，表示它已准备就绪，正在等待最终用户开始使用。
+2. 从 "合作伙伴中心" 菜单中选择 "**客户**"，然后选择要管理其设备的客户。
+3. 在客户的详细信息页上，选择 "**设备**"。
+4. 在 "**将配置文件应用**到设备" 下，选择 "**添加设备**"。
+5. 输入组名称**Microsoft365Managed_Autopilot** ，然后选择 "**浏览**" 将客户列表（以 .csv 文件格式）上传到 "合作伙伴中心"。
 
 
-你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
+> [!IMPORTANT]
+> 组名称必须完全匹配**Microsoft365Managed_Autopilot** ，包括大小写和特殊字符。 这将允许将新注册的设备分配给 Microsoft 托管桌面 Autopilot 配置文件。
 
-| 状态 | 说明 |
-|---------------|-------------|
-| 注册挂起 | 注册尚未完成。 稍后再次查看。 |
-| 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](register-devices-self.md#troubleshooting-device-registration)。 |
-| 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
-| 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
-| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  |
+>[!NOTE]
+> 你应该已收到此 .csv 文件并购买了你的设备。 如果您没有收到 .csv 文件，则可以按照[向 Windows Autopilot 中添加设备](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell)中的步骤创建一个。 Windows PowerShell 脚本与用于[Microsoft 托管桌面管理门户](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash)的脚本不同。 合作伙伴应使用[g-et-windowsautopilotinfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)在合作伙伴中心为 Microsoft 托管桌面设备注册设备。
+
+如果在尝试上载 .csv 文件时收到错误消息，请检查该文件的格式。 您可以仅使用硬件哈希，也可以使用 OEM 名称、序列号和型号（按该列顺序）或 Windows 产品 ID。 您还可以使用 "**添加设备**" 下的链接中提供的示例 .csv 文件来创建设备列表。 
+
+有关合作伙伴应用场景中的 Autopilot 的详细信息，请参阅[将设备添加到客户的帐户](https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account)。
 
 
+## <a name="register-devices-by-using-the-oem-api"></a>使用 OEM API 注册设备
 
-## <a name="troubleshooting"></a>疑难解答
+在完成客户注册之前，必须首先建立与他们的关系。 你应具有可向你的各个客户提供的唯一链接。 请参阅[如何建立 OEM 关系](https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization)。
 
-| 错误消息 | 详细信息 |
-|---------------|-------------|
-| 找不到设备 | 无法注册此设备，因为我们找不到提供的制造商、型号或序列号的匹配项。 请与设备供应商确认这些值。 |
-| 硬件哈希无效 | 为此设备提供的硬件哈希格式不正确。 仔细检查硬件哈希，然后重新提交。 |
-| 已注册设备 | 此设备已注册到你的组织。 无需执行进一步操作。 |
-| 其他组织声明的设备 | 此设备已由其他组织声明。 请与设备供应商联系。 |
-| 意外错误 | 无法自动处理你的请求。 联系支持人员<support link>（）并提供请求 ID：<requestId> |
+建立关系后，即可开始使用 Group 标记**Microsoft365Managed_Autopilot**为客户注册设备。
+
+> [!IMPORTANT]
+> 组名称必须完全匹配**Microsoft365Managed_Autopilot** ，包括大小写和特殊字符。 这将允许将新注册的设备分配给 Microsoft 托管桌面 Autopilot 配置文件。

@@ -5,12 +5,12 @@ keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: d481a53da541b28975071a9dff6b7cdcc671345b
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804806"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327920"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 托管桌面设备 
 
@@ -25,7 +25,7 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 此处的设备链接仅供你参考。 如果要订购设备，请与商业渠道联系人合作，以确保选择正确的配置。 在此表中，*存档日期*是这些模型将受较短 Microsoft 托管桌面服务生命周期控制的日期;在此日期之后载入的任何此类设备都不会从 Microsoft 托管桌面收到完整的三年期支持。 存档设备也在[Microsoft 托管桌面存档设备](archived-device-list.md)中列出。 "*退休日期*" 是 Microsoft 托管桌面根本不支持此模型将不再受 Microsoft 托管桌面支持的日期。 在该日期，将从 Microsoft 托管桌面中删除此模型的所有注册设备，而不管它们何时注册都是如此。
 
 >[!NOTE]
->可以随时将设备添加到此表中，但我们将为影响存档或退休日期的任何更改提供90天通知。 使用**\*** 最近添加的设备进行标记。
+>可以随时将设备添加到此表中，但我们将为影响存档或退休日期的任何更改提供90天通知。 使用最近添加的设备进行标记 **\*** 。
 
 
 **Microsoft 托管桌面设备**
@@ -60,13 +60,17 @@ Microsoft 托管桌面定期评估要包括在服务中的设备。 本主题概
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | 无 | 2020年10月16日 | 2023年10月16日 |
 | **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | 无 | 10月22日，2021 | 10月22日，2024 |
 
-
-
 此外，设备还必须满足以下条件：     
 
 - 拥有由 Microsoft 托管桌面批准的图像。 对设备进行排序时，请确保指定它们与 Microsoft 托管桌面配合使用。
 - 尚未完成 Windows 首次运行体验。
 - 使用[设备注册](https://aka.ms/mmddrhelp)功能向 Microsoft 托管桌面注册
+
+>[!NOTE]
+>使用 2.0 GHz 或更快的处理器的设备将为参与这些活动的用户提供更好的体验：
+>- 与团队一起使用视频会议。 有关详细信息，请参阅[Microsoft 团队的硬件要求](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app)。
+>-  对几个不同的工作负载使用一个设备。
+>- 使用多个监视器。
 
 **其他帮助**
 

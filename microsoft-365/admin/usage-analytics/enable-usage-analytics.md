@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用来开始收集租户的数据。
-ms.openlocfilehash: 3c5e1a35b93b755b92710f0499599d849a6c251c
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 375bc26a2e106d909eb9ea5d0990a054553d71b0
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262531"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327668"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -83,7 +83,7 @@ Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
 
 5.  单击 "**浏览应用**程序" 以查看包含示例数据的应用程序。 单击 "**连接**" 将应用程序连接到您的组织的数据。
 
-6.  **单击 "连接"** 后，在 "**连接到 Microsoft 365 使用情况分析**" 屏幕上键入您在步骤（1）中复制的 "租户 Id" （ \> **下一**步）。
+6.  单击 "**连接**" 后，在 "**连接到 Microsoft 365 使用情况分析**" 屏幕上，键入在步骤（1）中复制的租户 Id （不带短划线），然后选择 "**下一步**"。
     
 7. 在下一个屏幕上，选择 " **oAuth2** " 作为**身份验证方法** \> **登录**。 如果选择任何其他身份验证方法，则与模板应用程序的连接将失败。
     

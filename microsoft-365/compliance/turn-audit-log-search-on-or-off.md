@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: 您可以在安全 & 合规性中心启用审核日志搜索功能。 如果你更改了想法，你可以随时关闭。 当 "审核日志搜索" 关闭时，管理员无法在您的组织中搜索用户和管理员活动的 Microsoft 365 审核日志。
-ms.openlocfilehash: 6b5ea41ff9f40291e54f8cc9f6660d0f86367994
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
+ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633417"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330786"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>启用或禁用审核日志搜索
 
@@ -48,22 +48,24 @@ ms.locfileid: "43633417"
   
 ### <a name="use-the-security--compliance-center-to-turn-on-audit-log-search"></a>使用安全 & 合规性中心启用审核日志搜索
 
-1. 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
-    
+1. [转到安全 & 合规性中心](https://protection.office.com)并登录。
+
+2. 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
+
    将显示一个横幅，指出审核必须打开以记录用户和管理员活动。
 
-2. 单击 "**启用审核"**。
-    
+3. 单击 "**启用审核"**。
+
     ![单击 "启用审核"](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     标题已更新，指示审核日志正在准备，并且您可以在几个小时内搜索用户和管理活动。
-    
+
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>使用 PowerShell 打开审核日志搜索
 
 1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. 运行以下 PowerShell 命令以在 Office 365 中启用审核日志搜索。
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -75,23 +77,23 @@ ms.locfileid: "43633417"
 您必须使用连接到 Exchange Online 组织的远程 PowerShell，才能关闭审核日志搜索。 与启用审核日志搜索类似，您必须在 Exchange Online 中将 "审核日志" 角色分配给 "关闭审核日志搜索"。
   
 1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. 运行以下 PowerShell 命令以关闭 Office 365 中的审核日志搜索。
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. 一段时间后，验证审核日志搜索是否已关闭（已禁用）。 可通过 2 种方法执行此操作：
-    
+
     - 在 PowerShell 中，运行以下命令：
 
     ```powershell
     Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
     ```
 
-      UnifiedAuditLogIngestionEnabled 属性的`False`值指示_UnifiedAuditLogIngestionEnabled_已关闭审核日志搜索。 
-    
-    - 在 "安全性 & 合规性中心中，转到"**搜索** \> **审核日志搜索**"。
-    
+      `False` _UnifiedAuditLogIngestionEnabled_属性的值指示已关闭审核日志搜索。 
+
+    - 在 "[安全性 & 合规性中心](https://protection.office.com)中，转到"**搜索** \> **审核日志搜索**"。
+
       将显示一条横幅，指出必须打开审核才能记录用户和管理员活动。

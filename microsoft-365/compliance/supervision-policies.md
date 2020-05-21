@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: b0778cd05565057fde8982e791a75801d097046c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 45dc5a3e9674ebdf9488d14813abf04fc81b6781
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034556"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327250"
 ---
 # <a name="supervision-policies"></a>监督策略
 
@@ -139,7 +139,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 - 隐私
 - 自定义信息类型
 
-若要了解有关敏感信息详细信息和默认类型中包含的模式的详细信息，请参阅[要查找的敏感信息类型](what-the-sensitive-information-types-look-for.md)。
+若要了解有关敏感信息详细信息和默认类型中包含的模式的详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
 
 #### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
@@ -213,7 +213,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 ### <a name="supervision-policy-dashboard"></a>监督策略仪表板
 
-使用监督策略仪表板管理监督策略结果和解决未完成项目。 此仪表板允许审阅者查看需要审阅的项目，对项目执行操作，并查看每个监督策略的以前查看和解决的项目的结果。 您可以访问合规性中心 > 的监察策略仪表**板，即****打开***您的自定义策略* > 。
+使用监督策略仪表板管理监督策略结果和解决未完成项目。 此仪表板允许审阅者查看需要审阅的项目，对项目执行操作，并查看每个监督策略的以前查看和解决的项目的结果。 您可以访问合规性中心的监察策略仪表**板，即**  >  *打开您的自定义策略*  >  **Open**。
 
 #### <a name="dashboard-home"></a>仪表板主页
 
@@ -252,7 +252,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 ### <a name="view-the-supervision-report"></a>查看监督报告
 
 1. 使用具有查看监督报告的权限的管理员帐户的凭据登录[合规性中心](https://compliance.microsoft.com)。
-2. 请转到 "**报告** \> "**仪表板**或 "**监督**" 查看监督报告小组件，了解当前监督策略活动的摘要。
+2. 请转到 "**报告**" \> **仪表板**或 "**监督**" 查看监督报告小组件，了解当前监督策略活动的摘要。
 3. 选择**监督**小组件以打开 "详细报告" 页。
 
 >[!NOTE]
@@ -283,7 +283,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 >[!NOTE]
 >必须先设置监督策略，然后才能将其显示在报告中。 如果删除策略，则仍显示历史数据。 但是，它们被指示为 "不存在的策略"，并且**导出**功能不可用。
 
-## <a name="audit"></a>跟踪
+## <a name="audit"></a>Audit
 
 在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 此信息可能是与定义的策略相关的所有监管活动的摘要，或任何监督策略更改的摘要。 监督策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 监督策略监视的每个操作的详细审核历史记录都提供监督过程证明。
 

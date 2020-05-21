@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e820eed8e47adf040b267ffc0a3cf3e23410d7ef
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: 8b7d60d8b1a3c7295dbeda93c9f2e017ca6f9282
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043303"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327878"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -79,7 +79,7 @@ Microsoft 365 中的内幕风险管理使用全面的服务和第三方指示器
 - 状态
 - Severity
 - 检测时间
-- Case
+- 情况
 - 案例状态
 
 有关详细信息，请参阅[内幕风险管理警报](insider-risk-management-alerts.md)。

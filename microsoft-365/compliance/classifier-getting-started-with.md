@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: edfa708077e273d9c644801f5461c880d87261b5
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292428"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327754"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -34,7 +34,7 @@ ms.locfileid: "44292428"
 此类别的分类机制包括通过以下方式查找内容：
 
 - 关键字或元数据值（关键字查询语言）
-- 使用以前确定的敏感信息模式，如社会安全性、信用卡或银行帐户号码[（敏感信息类型）](what-the-sensitive-information-types-look-for.md)
+- 使用以前确定的敏感信息模式，如社会安全性、信用卡或银行帐户号码[（敏感信息类型实体定义）](sensitive-information-type-entity-definitions.md)
 - 识别项目，因为它是模板的变体[（文档指纹打印）](document-fingerprinting.md)
 - 使用确切的字符串[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的状态。
 
@@ -116,8 +116,8 @@ Microsoft 365 附带了五个建议的内置分类器：
 
 - [保留标签](labels.md)
 - [保留策略](retention-policies.md)
-- [数据丢失防护（DLP）](data-loss-prevention-policies.md)
+- [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [敏感度标签](sensitivity-labels.md)
-- [敏感信息类型](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
 - [文档指纹打印](document-fingerprinting.md)
 - [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

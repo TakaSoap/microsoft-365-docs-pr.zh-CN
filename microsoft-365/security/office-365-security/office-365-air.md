@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 4e36e0fa07f825d3259ef9e42b802c81ae929470
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c2020c3d46fcf17194e2560af53d9a26fca30629
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159403"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327826"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>开始在 Office 365 中使用自动调查和响应（AIR）
 
@@ -31,7 +31,7 @@ ms.locfileid: "44159403"
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
-在较高的级别，将触发警报，安全行动手册开始和自动调查，这将导致发现和建议。 下面是空中的整体流，具体步骤如下：
+在较高的级别，将触发警报，安全行动手册将开始进行自动调查，从而导致发现和建议。 下面是空中的整体流，具体步骤如下：
 
 1. 可通过以下方式之一启动自动调查：
 
