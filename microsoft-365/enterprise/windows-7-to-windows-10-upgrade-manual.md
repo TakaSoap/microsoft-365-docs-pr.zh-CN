@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Windows 7 到 Windows 10 手动升级指南。
-ms.openlocfilehash: ea1705a91baf6b0526e87bcf04529ab2668aa439
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3840a57e3672bdbe0f9fc3c785e20350646a0102
+ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42086037"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44222311"
 ---
 # <a name="windows-7-to-windows-10-manual-upgrade-step-by-step-guide"></a>Windows 7 到 Windows 10 手动升级分步指南
 
@@ -110,6 +110,6 @@ ms.locfileid: "42086037"
 
 ## <a name="moving-to-windows-10-on-a-new-pc"></a>移动到新电脑上的 Windows 10
 
-另一个建议的选择是移动新电脑上的 Windows 10。 如果这是你的首选项，你可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 备份、[Windows 中内置的“备份和还原”](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、使用[外部存储设备](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)以手动操作方式或类似 [Laplink 的 PCmover Express](https://www.microsoft.com/windows/transfer-your-data) 之类的工具从旧计算机传送文件。 无论使用哪种方法，仍然需要重新安装未包含在 Windows 10 中的任何所需的应用程序。 若要深入了解以手动方式从运行 Windows 7 的现有电脑移动到运行 Windows 10 的新电脑时可用的选项，请参阅 Windows 支持中的[移动到 Windows 10 电脑](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)。
+另一个建议的选择是移动新电脑上的 Windows 10。 如果这是你的首选项，你可以使用 [OneDrive](https://support.office.com/article/b5e918be-0fd4-4095-98da-bceed57f8e0c?ocid=MoveToWindows10) 备份、[Windows 中内置的“备份和还原”](https://support.microsoft.com/help/4469209?ocid=MoveToWindows10)、使用[外部存储设备](https://support.microsoft.com/help/4465814/windows-7-move-files-off-pc-with-an-external-storage-device?ocid=MoveToWindows10)以手动操作方式或类似 Laplink 的 PCmover Express 之类的工具从旧计算机传送文件。 无论使用哪种方法，仍然需要重新安装未包含在 Windows 10 中的任何所需的应用程序。 若要深入了解以手动方式从运行 Windows 7 的现有电脑移动到运行 Windows 10 的新电脑时可用的选项，请参阅 Windows 支持中的[移动到 Windows 10 电脑](https://support.microsoft.com/help/4229823?ocid=MoveToWindows10)。
 
-## <a name="desktop-deployment-centerhttpsakamshowtoshift"></a>[桌面部署中心](https://aka.ms/howtoshift)
+## <a name="desktop-deployment-center"></a>[桌面部署中心](https://aka.ms/howtoshift)

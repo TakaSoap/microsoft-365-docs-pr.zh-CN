@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建保留标签和敏感度标签后，你将希望了解它们如何在租户中使用。 借助 Microsoft 365 合规中心和 Microsoft 365 安全中心中的标签分析，你可以快速查看最常用的标签以及它们的应用位置。
-ms.openlocfilehash: 75eb86cb8671c81b80afc67b19d7c54830c4c401
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
+ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42072262"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44231985"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>使用标签分析查看标签使用情况
 
