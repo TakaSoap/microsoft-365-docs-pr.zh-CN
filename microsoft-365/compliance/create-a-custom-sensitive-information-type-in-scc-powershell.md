@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: b937cfe1ce4de7b380ef47d14d5fe4c500e173d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632347"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327784"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
-Microsoft 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型](what-the-sensitive-information-types-look-for.md)，可供用于 DLP 策略。这些内置类型有助于标识和保护信用卡号、银行帐号、护照号等。 
+Microsoft 365 中的数据丢失防护 (DLP) 包含许多内置[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)，可供用于 DLP 策略。这些内置类型有助于标识和保护信用卡号、银行帐号、护照号等。 
   
 但是，如果需要标识和保护不同敏感信息类型（如使用组织特定格式的员工 ID 或项目号），那该怎么办？为此，你可以创建在被称为*规则包*的 XML 文件中定义的敏感信息类型。
   
@@ -908,6 +908,6 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
 
 - [数据丢失防护策略概述](data-loss-prevention-policies.md)
     
-- [敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
     
 - [DLP 函数查找什么](what-the-dlp-functions-look-for.md)

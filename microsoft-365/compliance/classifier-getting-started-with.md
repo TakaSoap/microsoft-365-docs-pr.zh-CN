@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: 99d1d9039ef70347515f80da73a487f40534d2e7
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ba24bbe76bce5e3a41345c80616a57d3fb67a5fc
+ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327754"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44339910"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -33,10 +33,10 @@ ms.locfileid: "44327754"
 
 此类别的分类机制包括通过以下方式查找内容：
 
-- 关键字或元数据值（关键字查询语言）
-- 使用以前确定的敏感信息模式，如社会安全性、信用卡或银行帐户号码[（敏感信息类型实体定义）](sensitive-information-type-entity-definitions.md)
-- 识别项目，因为它是模板的变体[（文档指纹打印）](document-fingerprinting.md)
-- 使用确切的字符串[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)的状态。
+- 关键字或元数据值（关键字查询语言）。
+- 使用以前确定的敏感信息模式，如社会安全性、信用卡或银行帐户号码[（敏感信息类型实体定义）](sensitive-information-type-entity-definitions.md)。
+- 识别项目，因为它是模板的变体[（文档指纹打印）](document-fingerprinting.md)。
+- 使用完全字符串的状态[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
 然后，可以自动应用敏感度和保留标签，以使内容可用于[数据丢失防护（DLP）](data-loss-prevention-policies.md)和[保留策略](retention-policies.md)。
 
@@ -44,8 +44,10 @@ ms.locfileid: "44327754"
 
 此分类方法尤其适合于手动或自动模式匹配方法无法轻松识别的内容。 此分类方法详细介绍了如何培训分类器，以根据项目的具体内容（而不是项目中的元素）来标识项目（模式匹配）。 分类器了解如何通过查看您感兴趣的内容的数百个示例来标识内容类型。 首先，我们对类别中明确的示例进行了介绍。 处理这些程序后，通过为匹配和不匹配的示例提供组合来对其进行测试。 然后，分类器将对任何给定项是否属于您要生成的类别进行预测。 然后，确认其结果，并对误报、负、误报和漏报进行排序，以帮助提高预测的准确性。 在发布训练有素的分类器时，它会通过 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。
 
-> [!IMPORTANT]
-> 内置分类器和 trainable 分类器都可用作基于条件和[通信合规性](communication-compliance.md)[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)的条件。 敏感度标签只能将内置分类器用作条件，请参阅[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
+### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用 trainable 分类程序
+内置分类器和 trainable 分类器都可用作基于条件和[通信合规性](communication-compliance-configure.md)[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)的条件。 
+
+敏感度标签可将内置和内部自定义的分类器用作条件，请参阅[向内容自动应用灵敏度标签](apply-sensitivity-label-automatically.md)和[为 Office 应用程序自动添加标签](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)。
 
 > [!IMPORTANT]
 > Trainable 类元仅适用于未加密且为英语的项目。
@@ -53,6 +55,18 @@ ms.locfileid: "44327754"
 ### <a name="licensing-requirements"></a>许可要求
 
 Trainable 分类器是 Microsoft 365 E5 或 E5 合规性功能。 您必须拥有其中一种订阅才能使用它们。
+
+### <a name="pre-requisites"></a>先决条件
+
+若要访问 UI 中的 trainable 分类器： 
+- 全局管理员需要加入租户
+- 合规性管理员角色或合规性数据管理员是培训分类器所必需的
+
+在这些情况下，您需要具有这些权限的帐户才能使用 trainable 分类器：
+
+- 保留标签策略方案： RecordManagement 和保留管理角色 
+- 敏感度标签策略方案：安全管理员、合规性管理员、合规性数据管理员
+- 通信合规性策略方案：内部人员风险管理管理员、监管审核管理员 
 
 ## <a name="types-of-classifiers"></a>分类器的类型
 
@@ -114,10 +128,11 @@ Microsoft 365 附带了五个建议的内置分类器：
 
 ## <a name="see-also"></a>另请参阅
 
+
 - [保留标签](labels.md)
 - [保留策略](retention-policies.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [敏感度标签](sensitivity-labels.md)
-- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [文档指纹打印](document-fingerprinting.md)
 - [精确数据匹配](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

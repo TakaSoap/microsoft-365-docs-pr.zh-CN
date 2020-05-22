@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 一个虚构但具有代表性的全球组织如何采用 Microsoft 365 企业版。
-ms.openlocfilehash: bf974d374b9c60744b2efda465a7c5e92f0386bb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625346"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268418"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版
 
@@ -68,14 +68,9 @@ Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将
 
   Contoso 使用 Microsoft 365 企业版的所有安全功能，以实现标识和访问管理、威胁防护、信息保护以及安全管理。
 
-- [最高机密项目团队](contoso-team-for-top-secret-project.md)
+- [最高机密项目团队](../solutions/contoso-team-for-top-secret-project.md)
 
-  为了为最高机密项目创建安全的协作环境，Contoso 将使用高度管控数据的团队。
-
-- [对高度机密数字资产使用的 SharePoint Online 网站](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
-
-  为了保护知识产权并更方便研究团队相互协作，Contoso 对高度管控数据使用 SharePoint Online 网站。
-
+  为了为最高机密项目创建安全的协作环境，Contoso 将使用具有安全隔离的团队。
 
 ## <a name="next-step"></a>后续步骤
 

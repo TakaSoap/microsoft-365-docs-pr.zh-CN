@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 03f80deca7ba9a65dd47ac814d15eb5a8f764f10
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066445"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254185"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>云安全联盟 (CSA) STAR 自我评估
 
@@ -68,7 +68,7 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 **哪些 CSA STAR 保障级别配备有 Microsoft 商业云服务？**
 
 - **第 1 级别** - **CSA STAR 自我评估**：Azure、Dynamics 365 和 Office 365。 自我评估是云服务提供商免费提供的一项服务，可用于记录其安全控制措施，从而帮助客户对服务的安全性进行评估。
-- **第 2 级别** - **CSA STAR 认证**：Azure、Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
+- **第 2 个级别**：**CSA STAR 认证**：Azure、Microsoft Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
 - **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和美国注册会计师协会 (AICPA) 根据 AICPA（信任服务原则，AT 101）和 CSA CCM 共同提出了指导方针，供注册会计师 (CPA) 在参与 SOC 2 认证过程中采用。 STAR 证明根据这些指导方针提供，并在对云提供商进行严格独立评估后授予。
 
 ## <a name="resources"></a>资源

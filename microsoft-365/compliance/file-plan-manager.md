@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: 78a012b4ecc3401a664fba5e270e7cd67a5dce49
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3270538cf2a1454840f6beff4e52fda84fa0afe
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208116"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327680"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -142,7 +142,7 @@ ms.locfileid: "44208116"
    |RetentionAction|字符串|此属性指定在 RetentionDuration 属性指定的值到期后要采取的操作。 有效值为：</br>**Delete**：早于 RetentionDuration 属性指定的值的项目将被删除。</br>**Keep**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时不执行任何操作。 </br>**KeepAndDelete**：在 RetentionDuration 属性指定的保留期内保留项目，然后在保留期到期时删除这些项目。   |
    |RetentionDuration|String|此属性指定内容保留的天数。 有效值为：</br>**Unlimited**：项目将无限期保留。 </br>***n***：正整数，例如 **365**。 
    |RetentionType|字符串|此属性指定保留期限是从内容创建日期、事件日期、标记的日期还是从上次修改日期开始计算。 有效值为：</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|填充此属性后，在保留期到期时将触发处置评审。 此属性指定 **Delete** 和 **KeepAndDelete** 保留操作的审阅者的电子邮件地址。 你可以包含单个用户、分发或安全组的电子邮件地址。 可以指定多个电子邮件地址，中间用分号分隔。|
+   |ReviewerEmail|SmtpAddress|填充此属性后，在保留期到期时将触发处置评审。 此属性指定 **KeepAndDelete**保留操作的审阅者的电子邮件地址。 你可以包含单个用户、分发或安全组的电子邮件地址。 可以指定多个电子邮件地址，中间用分号分隔。|
    |ReferenceId|字符串|该属性指定在 **参考 ID** 文件计划描述符中显示的值。| 
    |Departmentname|字符串|该属性指定在**功能/部门**文件计划描述符中显示的值。|
    |类别|字符串|该属性指定在**类别**文件计划描述符中显示的值。|

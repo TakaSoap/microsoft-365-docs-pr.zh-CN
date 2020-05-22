@@ -20,12 +20,12 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: ''
 description: 了解如何修改或新建针对一般数据保护条例 (GDPR) 的 Office 365 敏感信息类型。
-ms.openlocfilehash: 3eca04fcf949a19615dc574c90d8dbeea0894a23
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 70ce61f582cbc952811d01cccc7b958bf1b52dbb
+ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166063"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44224629"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>自定义或新建敏感信息类型
 
@@ -165,7 +165,7 @@ ms.locfileid: "44166063"
 
 注意：
 
--   可以使用 NEAR 和 ONEAR 进行邻近度搜索。
+-   可以使用 NEAR 进行邻近度搜索。
 
 -   但是，KQL 不支持含 Regex 类的查询（例如：IdRef="Regex\_email\_address"）
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 检查基于信息保护的服务和基础结构的条件，确保你的配置满足 Microsoft 365 企业版的要求。
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631629"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268217"
 ---
 # <a name="information-protection-infrastructure-exit-criteria"></a>信息保护基础结构退出条件
 
@@ -116,4 +116,4 @@ ms.locfileid: "43631629"
 
 Microsoft 365 企业版的信息保护基础结构使用定义的安全级别、Office 365 增强安全性、使用敏感数据和标签的分类、Windows 信息保护、数据丢失防护、电子邮件加密以及特权访问权限管理。
 
-如果你正在执行 Microsoft 365 企业版端到端部署，那么你现在已准备好让你的[工作负载和应用场景](deploy-workloads.md)充分利用底层基础结构的所有功能和配置。
+如果你正在执行 Microsoft 365 企业版端到端部署，那么你现在已准备好让你的[工作负载](deploy-workloads.md)充分利用底层基础结构的所有功能和配置。

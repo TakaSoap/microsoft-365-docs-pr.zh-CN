@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: bb35d4ed287e87ba17780c0e7106b837beb9666a
-ms.sourcegitcommit: 758263ad484e00f5a561a47c8c22d5787af7671e
+ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170911"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342514"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -58,7 +58,7 @@ ms.locfileid: "44170911"
 
 您始终可以选择在 SharePoint 和 OneDrive 中禁用 Office 文件的敏感度[标签（随时退出。](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 这些新功能仅适用于[敏感度标签](sensitivity-labels.md)。 如果你当前有 Azure 信息保护标签，请首先将其迁移到敏感度标签，以便可以为上传的新文件启用这些功能。 有关说明，请参阅[如何将 Azure 信息保护标签迁移到统一敏感度标签](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
@@ -106,7 +106,7 @@ ms.locfileid: "44170911"
 
 组织的全局管理员具有创建和管理敏感度标签各方面的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理敏感度标签所需的权限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
 
-1. 登录[Microsoft 365 合规性中心](https://compliance.microsoft.com/)，并导航到 "**解决方案** > **信息保护**"
+1. 登录[Microsoft 365 合规性中心](https://compliance.microsoft.com/)，并导航到 "**解决方案**  >  **信息保护**"
     
     如果看不到此选项，请先选择“**全部显示**”。 
 
@@ -117,13 +117,13 @@ ms.locfileid: "44170911"
     该命令将立即运行，当页面下次刷新时，您将不会再看到该消息或按钮。 
 
 > [!NOTE]
-> 如果你有 Office 365 多地理位置，则必须使用 PowerShell 为你的所有地理位置启用这些功能。 有关详细信息，请参阅下一节。
+> 如果你有 Microsoft 365 多地理位置，则必须使用 PowerShell 为你的所有地理位置启用这些功能。 有关详细信息，请参阅下一节。
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>使用 PowerShell 启用敏感度标签支持
 
 作为使用合规性中心的替代方法，可以使用 SharePoint Online PowerShell 中的[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet 启用敏感度标签支持。 
 
-如果你有 Office 365 多地理位置，则必须使用 PowerShell 为你的所有地理位置启用此支持。
+如果你有 Microsoft 365 多地理位置，则必须使用 PowerShell 为你的所有地理位置启用此支持。
 
 #### <a name="prepare-the-sharepoint-online-management-shell"></a>准备 SharePoint Online 命令行管理程序
 
@@ -149,16 +149,16 @@ ms.locfileid: "44170911"
 
 若要启用新功能，请将[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 与*EnableAIPIntegration*参数一起使用：
 
-1. 在 Office 365 中使用具有全局管理员或 SharePoint 管理员权限的工作或学校帐户连接到 SharePoint。 若要了解具体操作步骤，请参阅 [SharePoint Online 命令行管理程序入门](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
+1. 在 Microsoft 365 中使用具有全局管理员或 SharePoint 管理员权限的工作或学校帐户连接到 SharePoint。 若要了解具体操作步骤，请参阅 [SharePoint Online 命令行管理程序入门](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
     
-    注意：如果你拥有 Office 365 多地理位置，请使用-Url 参数和[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，并为你的某个地理位置指定 SharePoint Online 管理中心网站 Url。
+    注意：如果你拥有 Microsoft 365 多地理位置，请使用-Url 参数和[connect-sposervice](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，并为你的某个地理位置指定 SharePoint Online 管理中心网站 Url。
 
 2. 运行以下命令，然后按**Y**确认：
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. 对于 Office 365 多地理位置：对剩下的每个地理位置重复步骤1和2。
+3. 对于 Microsoft 365 多地理位置：对剩下的每个地理位置重复步骤1和2。
 
 ## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>创建或更改敏感度标签后计划回滚
 
@@ -182,7 +182,7 @@ ms.locfileid: "44170911"
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-如果你有 Office 365 多地理位置，则必须对每个地理位置运行此命令。
+如果你拥有 Microsoft 365 多地理位置，则必须为你的每个地理位置运行此命令。
 
 ## <a name="next-steps"></a>后续步骤
 

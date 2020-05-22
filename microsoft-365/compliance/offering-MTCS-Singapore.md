@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a305c66aaa3359417bd72b8525ed63787d655f8f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ab6f199cd27e56a24641ec52ba640cf5e2f5777b
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065677"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254461"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多层云安全 (MTCS) 标准
 
@@ -46,16 +46,16 @@ Microsoft Azure 服务（IaaS 和 PaaS）、Microsoft Dynamics 365 服务 (SaaS)
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
-- Cloud App Security
+- Microsoft 云应用安全
 - Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Flow
 - OMS Service Map
 - PowerApps
 - Power BI
-- Stream
+- Microsoft Stream
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书

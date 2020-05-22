@@ -14,12 +14,12 @@ ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何使用合作伙伴组织中的受管理的来宾用户创建 B2B extranet 网站或团队。
-ms.openlocfilehash: 1b7542dd2fcd5fa28afc013f83da713c37e1187b
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f01a558d55f497952494676f0148a1e3e4f06b35
+ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166145"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44342520"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>创建托管有来宾的 B2B 外联网
 
@@ -30,6 +30,12 @@ ms.locfileid: "44166145"
 本文逐步介绍了如何创建可通过自助服务访问注册模型与合作伙伴组织共享的资源包（在此示例中为网站或团队）。 
 
 在开始之前，请创建要与合作伙伴组织共享的网站或团队，并为其启用来宾共享。 有关详细信息，请参阅[在网站中与来宾进行协作](collaborate-in-site.md)或[与团队中的来宾协作](collaborate-as-team.md)。 我们还建议您查看 "[创建安全来宾共享环境](create-secure-guest-sharing-environment.md)"，以获取有关安全和合规性功能的信息，您可以使用这些功能来帮助维护与来宾协作时的管理策略。
+
+## <a name="video-demonstration"></a>视频演示
+
+该视频演示了本文中介绍的过程。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wKUj?autoplay=false]
 
 ## <a name="connect-the-partner-organization"></a>连接合作伙伴组织
 

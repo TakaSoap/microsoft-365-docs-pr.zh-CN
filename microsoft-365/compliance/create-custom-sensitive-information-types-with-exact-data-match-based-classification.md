@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 525d58a37fe4bb254d06ce7a4fcb6e2a54344a79
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42adeca60c97fa2a3877f04055725a99a453b032
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035794"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327774"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -494,7 +494,7 @@ DLP for Exchange Online（电子邮件）、OneDrive for Business（文件）、
 
 ## <a name="related-articles"></a>相关文章
 
-[内置敏感信息类型以及它们查找的内容](what-the-sensitive-information-types-look-for.md)
+[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
 [自定义敏感信息类型](custom-sensitive-info-types.md)
 

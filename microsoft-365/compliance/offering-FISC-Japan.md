@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b6dc80bbacaf8d4bbadb345910b29b8410c13768
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: b81c2eba975b59341a2ef57f7df8ebc49efc9752
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066567"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254441"
 ---
 # <a name="center-for-financial-industry-information-systems-fisc"></a>金融行业信息系统中心 (FISC)
 
@@ -48,7 +48,7 @@ Microsoft 聘请了外部评估人员来验证 Microsoft Azure、Dynamics 365 �
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
-- 云应用安全
+- Microsoft 云应用安全
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
