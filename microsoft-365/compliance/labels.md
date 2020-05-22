@@ -1,5 +1,5 @@
 ---
-title: 保留标签概述
+title: 了解保留标签
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用保留标签可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 6496c5f82ee21e2085568f5e623fc6ee75145b8a
-ms.sourcegitcommit: f5cecd77e63ae8b47743d4f6dc3135f5decaf28b
+description: 了解保留标签如何对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
+ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43949309"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327900"
 ---
-# <a name="overview-of-retention-labels"></a>保留标签概述
+# <a name="learn-about-retention-labels"></a>了解保留标签
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -38,9 +38,8 @@ ms.locfileid: "43949309"
     
 - 必须**标记为记录**以免被编辑或删除的工作签证。 
     
-
-无论是上述哪种用途，Microsoft 365 中的保留标签都有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
-
+无论是上述哪种用途，保留标签都可有助于对正确的内容执行适当的操作。借助保留标签，可对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。
+  
 借助保留标签，你可以：
   
 - **使组织中的人员手动将保留标签应用于** Outlook 网页版、Outlook 2010 及更高版本、OneDrive、SharePoint 和 Microsoft 365 组中的内容。用户通常最了解自己处理的内容类型，因此可对数据进行分类，并应用适当的策略。 
@@ -61,15 +60,19 @@ ms.locfileid: "43949309"
     
    - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
 
-- **在 Office 365 中实现记录管理**，包括电子邮件和文档。可使用保留标签将内容分类为记录。如果这样做，既无法更改或删除保留标签，也无法编辑或删除内容。 
+- **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让存储在该位置的所有文档都继承默认保留标签。
 
-- **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让到达该位置的所有文档都继承默认保留标签。  
-    
-在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心创建保留标签。
+此外，保留标签支持跨 Microsoft 365 应用和服务对电子邮件和文档实施[记录管理](records-management.md)。 你可以使用保留标签将内容分类为记录。 在此情况下，无法更改或删除标签，也不能编辑或删除内容。 
+
+租户支持的保留标签数没有限制。 但是，租户支持的最大策略数为 10,000，其中包括应用标签的策略（保留标签策略和自动应用保留策略）以及保留策略。
 
 ## <a name="how-retention-labels-work-with-retention-label-policies"></a>如何结合使用保留标签和保留标签策略
 
-使组织中的人员可使用保留标签，便于其按两步操作进行内容分类：首先创建保留标签，然后将其发布到所选位置。 发布保留标签时，将创建保留标签策略。
+使保留标签对组织中的人员可用以便对内容进行分类的过程分为两个步骤： 
+
+1. 创建保留标签
+
+2. 使用保留标签策略发布保留标签
   
 ![标签角色和任务的关系图](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
   
@@ -79,10 +82,9 @@ ms.locfileid: "43949309"
   
 1. 发布保留标签时，它们将包含在保留标签策略中。 保留标签名称不可变；也就是说，它们一旦创建就无法编辑了。
 
-
 2. 一个保留标签可以包含在多个保留标签策略中。
 
-3. 一个位置也可以包括在许多保留标签策略中。    
+3. 一个位置也可以包括在许多保留标签策略中。
     
 3. 保留标签策略指定保留标签发布位置。
     
@@ -98,49 +100,12 @@ ms.locfileid: "43949309"
     
 - 若有多个规则要分配自动应用标签，且内容满足多个规则的条件，那么分配的是年限最长规则的保留标签。
     
-手动分配标签是显式分配标签；自动应用标签是隐式分配标签；显式保留标签优先于隐式标签。有关详细信息，请参阅下面的[保留原则或优先级](#the-principles-of-retention-or-what-takes-precedence)部分。
+若要了解如何以及为何应用一个保留标签（而非另一个），则了解显式分配标签和隐式分配标签之间的差异非常有用：
 
-此部分中的所有信息只适用于保留标签。请注意，除了一个保留标签之外，还可以再向内容项应用一个敏感度标签。
-  
-## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
+- 手动分配的标签属于显式分配
+- 自动应用的标签属于隐式分配
 
-保留标签在发布或自动应用后不会立即生效：
-  
-1. 首先，需要将标签策略从管理中心同步到策略中的位置。
-    
-2. 然后，该位置可能需要一段时间才能使已发布的保留标签对最终用户可用，或需要一段时间将标签自动应用到内容。 所需时间长短取决于保留标签的位置和类型。
-    
-### <a name="published-retention-labels"></a>已发布的保留标签
-
-如果将保留标签发布到 SharePoint 或 OneDrive，可能需要等待 1 天时间，这些保留标签才会向最终用户显示。此外，如果向 Exchange 发布保留标签，可能需要等待 7 天，这些保留标签才会向最终用户显示，并且邮箱至少必须包含 10MB 数据。
-  
-![手动标签生效时间关系图](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
-  
-### <a name="auto-apply-retention-labels"></a>自动应用保留标签
-
-如果将保留标签自动应用于符合特定条件的内容，可能需要等待 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
-  
-![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
-  
-### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
-
-在 Exchange Online 中，有一个流程每 7 天运行一次，用于向最终用户提供保留标签。使用 PowerShell，可查看此流程的上次运行时间，从而确定它何时再次运行。
-  
-1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。
-    
-2. 运行下面这些命令。
-    
-   ```powershell
-   $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
-   ```
-
-   ```powershell
-   $xmlprops = [xml]($logProps.MailboxLog)
-   ```
-
-   ```powershell
-   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-   ```
+显式分配的保留标签优先于隐式分配的保留标签。 有关详细信息，请参阅本页上的[保留原则或优先性是什么？](#the-principles-of-retention-or-what-takes-precedence)部分。
 
 在结果中，`ELCLastSuccessTimeStamp` (UTC) 属性显示系统上次处理你邮箱的时间。 如果自创建策略起未处理，则不会显示标签。 若要强制处理，请运行 `Start-ManagedFolderAssistant -Identity <user>`。
     
@@ -158,27 +123,25 @@ ms.locfileid: "43949309"
    
 在 Exchange 中，自动应用（同时针对查询和敏感信息类型）的保留标签只会应用于新发送的邮件（传输中的数据），而非当前邮箱中的所有项目（静态数据）。 此外，用于敏感信息类型的自动应用的保留标签只能应用于全部邮箱；不能选择特定邮箱。
   
-Exchange 公用文件夹和 Skype 不支持标签。
-  
+Exchange 公用文件夹和 Skype 不支持保留标签。
+
 ## <a name="how-retention-labels-enforce-retention"></a>保留标签如何强制执行保留
 
-保留标签能够执行保留策略可执行的相同保留操作。 可使用保留标签执行复杂的内容计划（或文件计划）。 有关保留操作工作原理的详细信息，请参阅[保留策略概述](retention-policies.md)。
+保留标签能够强制执行保留策略可执行的相同保留操作 - 保留后删除、仅保留或仅删除。 可使用保留标签执行复杂的内容计划（或文件计划）。 有关保留工作方式的详细信息，请参阅[了解保留策略](retention-policies.md)。
   
 此外，保留标签有两个保留选项，这两个选项只能用于保留标签，而不能用于保留策略。借助保留标签，你可以：
   
-- 在保留期到期时触发处置评审。这样一来，必须先评审 SharePoint 和 OneDrive 文档，然后才能删除它们。有关详细信息，请参阅[处置内容](disposition.md)。
+- 保留期结束时，触发处置审查，这样就必须先审阅 SharePoint 和 OneDrive 文档，再删除它们。 有关详细信息，请参阅[处置评审](disposition.md#disposition-reviews)。
     
 - 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终基于发送或接收邮件的日期，无论此处选择哪个选项，都是如此。
     
 ![包含标签专用选项的保留设置](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
-  
+
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>在哪些位置上发布的保留标签可向最终用户显示
 
 如果保留标签将由最终用户分配给内容，可将保留标签发布到：
   
-- Outlook 网页版
-    
-- Outlook 2010 及更高版本
+- Outlook 和 Outlook 网页版
     
 - OneDrive
     
@@ -188,6 +151,27 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 接下来的各部分介绍了标签是如何在不同应用程序中向组织用户显示的。
   
+
+### <a name="outlook"></a>Outlook
+
+若要在 Outlook 桌面客户端中标记项目，请选择该项目。 在功能区上的“**开始**”选项卡上，单击“**分配策略**”，然后选择保留标签。 
+  
+![“分配策略”按钮](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
+  
+也可以右键单击项目，在上下文菜单中单击“**分配策略**”，然后选择保留标签。 
+
+应用保留标签后，可查看此保留标签以及基于此项目执行的操作。 如果某电子邮件应用了具有相关保留期的保留标签，则可以一目了然地查看该电子邮件的过期时间。
+  
+还可将保留标签应用于文件夹，在这种情况下：
+  
+- **除**显式应用保留标签的项目之外，文件夹中的所有项目都会自动获得相同的保留标签。 显式标记的项目将保留其现有保留标签。 有关详细信息，请参阅本页上的[保留原则或优先性是什么？](#the-principles-of-retention-or-what-takes-precedence)部分。 
+    
+- 如果你更改或删除文件夹的默认保留标签，文件夹中所有项的保留标签都会随之更改或删除，具有显式分配的保留标签的项**除外**。 
+    
+- 如果你将具有默认保留标签的项从一个文件夹移至另一个具有不同默认保留标签的文件夹，此项会获得新的默认保留标签。
+    
+- 如果你将具有默认保留标签的项从一个文件夹移至另一个具有不同默认保留标签的文件夹，旧的默认保留标签会遭删除。
+
 ### <a name="outlook-on-the-web"></a>Outlook 网页版
 
 若要在 Outlook 网页版中标记项，请右键单击项，单击“分配策略”****，再选择保留标签。 
@@ -198,33 +182,13 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ![分配给 Outlook 网页版中电子邮件的标签](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
-还可将保留标签应用于文件夹，在这种情况下：
-  
-- 文件夹中的所有项都会自动获得相同的保留标签，已向其显式应用保留标签的项除外****。显式标记的项保留现有保留标签。有关详细信息，请参阅以下关于保留原则的部分。 
-    
-- 如果你更改或删除文件夹的默认保留标签，文件夹中所有项的保留标签都会随之更改或删除，具有显式保留标签的项除外****。 
-    
-- 如果你将具有默认保留标签的项从一个文件夹移至另一个具有不同默认保留标签的文件夹，此项会获得新的默认保留标签。
-    
-- 如果你将具有默认保留标签的项从一个文件夹移至另一个具有不同默认保留标签的文件夹，旧的默认保留标签会遭删除。
-    
-### <a name="outlook-2010-and-later"></a>Outlook 2010 及更高版本
+如同 Outlook 网页版一样，也可以将保留标签应用于文件夹。 
 
-若要在 Outlook 桌面客户端中标记项目，请选择该项目。 在功能区上的“**开始**”选项卡上，单击“**分配策略**”，然后选择保留标签。 
-  
-![“分配策略”按钮](../media/30684dea-dd73-4e4a-9185-8e29f403b6ca.png)
-  
-也可以右键单击项目，在上下文菜单中单击“**分配策略**”，然后选择保留标签。 
-
-应用保留标签后，可查看此保留标签以及基于此项目执行的操作。 如果某电子邮件应用了具有相关保留期的保留标签，则可以一目了然地查看该电子邮件的过期时间。
-  
-还可将保留标签应用于文件夹。 其在 Outlook​​ 2010 及更高版本中的工作原理与在 Outlook 网页版中的相同。 请参阅上一节了解详细信息。
-  
 ### <a name="onedrive-and-sharepoint"></a>OneDrive 和 SharePoint
 
 若要在 OneDrive 或 SharePoint 中标记文档（包括 OneNote 文件），请选择项 \> 在右上角选择“**打开细节窗格**”![信息窗格图标](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \>“**应用保留标签**”\> 选择保留标签。 
   
-还可将保留标签应用于文件夹或文档集，并能为文档库设置默认保留标签。 有关详细信息，请参阅下面的部分。
+还可将保留标签应用于文件夹或文档集，并能[为文档库设置默认保留标签](#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
   
 ![SharePoint 中项的“应用标签”列表](../media/151cc83c-da57-45b0-9cd1-fd2f28a31083.png)
   
@@ -232,18 +196,21 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ![细节窗格中显示的已应用标签](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
-还可创建包含“标签”**** 列或“项是记录”**** 列的库的视图，这样分配给所有项的保留标签以及哪些项是记录便一目了然。不过，请注意，无法按“项是记录”**** 列筛选视图。 
+对于 SharePoint（而不是 OneDrive），可以创建包含“**标签**”列或“**项目为一条记录**”列的库视图。 通过此视图，可以一目了然地查看分配给所有项目的保留标签，以及哪些项目是记录。 但是请注意，不能按“**项目为一条记录**”列来筛选视图。 有关如何添加列的说明，请参阅[显示或隐藏列表或库中的列](https://support.microsoft.com/zh-CN/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2)。
   
-![库自定义视图中显示的“标签”列](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
-  
+
 ### <a name="microsoft-365-groups"></a>Microsoft 365 组
 
-发布到 Microsoft 365 组的保留标签同时显示在 Outlook 网页版的组网站和组邮箱中。将保留标签应用于内容的过程，与上述将保留标签应用于电子邮件和文档的过程完全相同。
+将保留标签发布到 Microsoft 365 组（[以前是 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）时，保留标签将同时出现在 Outlook 网页版的组网站和组邮箱中。 将保留标签应用到内容的体验与电子邮件和文档过程相同。
 
-保留 Microsoft 365 组内容需要使用 Microsoft 365 组位置。即使 Microsoft 365 组有 Exchange 邮箱，包含整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。
+若要保留 Microsoft 365 组的内容，请使用 **Office 365 组**位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 Exchange 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。
 
 此外，不可能通过使用 Exchange 位置来包含或排除某个组邮箱。 尽管 Exchange 位置最初允许选择组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
   
+首先，创建和配置要在应用和其他服务中使用的敏感度标签。 例如，希望用户在 Office 应用中看到和采用的标签。 
+
+然后，创建一个或多个包含标签和你配置的策略设置的标签策略。 这是用于发布所选用户和位置的标签和设置的标签策略。
+
 ## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>根据条件自动应用保留标签
 
 保留标签最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
@@ -260,72 +227,16 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 可选择将保留标签自动应用于包含以下各项的内容：
   
-- [特定类型敏感信息](#auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information)
+- [特定类型敏感信息](create-retention-labels.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
     
-- [与你创建的查询匹配的特定关键字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [与你创建的查询匹配的特定关键字](create-retention-labels.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifers)
+- [可训练分类器的匹配项](create-retention-labels.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
 ![自动应用标签的“选择条件”页](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-自动应用保留标签最多可能需要 7 天才会应用到与你配置的条件相匹配的所有内容。
-  
 > [!TIP]
 > 有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
-
-### <a name="auto-apply-retention-labels-to-content-with-specific-types-of-sensitive-information"></a>将保留标签自动应用于包含特定类型敏感信息的内容
-
-为敏感信息创建自动应用保留标签时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 预配置每个策略模板以查找特定类型的敏感信息。 例如，此处显示的模板用于查找美国 ITIN、SSN 和护照号码。 若要深入了解 DLP，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。
-  
-![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
-  
-选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例中，保留标签仅在以下情况下自动应用：
-  
-- 内容包含的这三种类型敏感信息的实例数介于 1 和 9 个之间。可删除“最大”**** 值，这样就会变为“任意”****。
-    
-- 检测到的敏感信息类型的匹配准确度（或可信度）至少为 75。许多敏感信息类型都是通过多个模式进行定义，其中模式的匹配准确度越高，需要发现的证据（如关键字、日期或地址）就越多，而模式的匹配准确度越低，需要发现的证据就越少。简而言之，“最小”**** 匹配准确度越低，内容就越容易与条件匹配。 
-    
-要详细了解这些选项，请参阅[微调规则以增加或降低匹配的难度](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
-    
-![用于确定敏感信息类型的选项](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
-  
-### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
-
-可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词、短语或可搜索属性值的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
-
-有关查询语法的详细信息，请参阅：
-
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
-
-- [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
-
-示例查询：
-
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-- Sharepoint 和 OneDrive for Business
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
-
-### <a name="auto-apply-labels-to-content-by-using-trainable-classifers"></a>使用可训练分类器向内容自动应用标签
-
-选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**冒犯性语言**、**简历**、**源代码**、**有针对性的骚扰**、**侮辱**和**威胁**：
-
-![选择可训练分类器](../media/retention-label-classifers.png)
-
-要通过此选项自动应用标签，SharePoint Online 网站和邮箱必须至少有 10 MB 的数据。
-
-有关可训练分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
-
-有关示例配置，请参阅[如何做好准备并使用内置分类器](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier)。
-
 
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容
 
@@ -345,13 +256,13 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - 如果你将具有默认保留标签的项从一个网站集、库、文件夹或文档集移至另一个网站集、库、文件夹或文档集，此项会保留现有默认保留标签，即使新位置的默认保留标签不同也是如此。 如果该项目移动前没有标签，它将使用新位置的默认保留标签。
 
-**记录：** 如果将默认记录标签应用于库、文件夹或文档集，则会对这些位置中的所有单个项应用记录标签。 将新项移动到包含记录标签的位置时，该项将标记为记录。 但是，如果将默认保留标签更改为未将内容声明为记录的标签，则该操作**不会**从单个项中删除记录标签；这些项会保留其记录标签。 只有网站集管理员可显式删除或更改记录项的保留标签。
+**记录：** 如果将默认记录标签应用于库、文件夹或文档集，则会对这些位置中的所有单个项应用记录标签。 将新项移动到包含记录标签的位置时，该项将标记为记录。 但是，如果将默认保留标签更改为未将内容声明为记录的标签，则该操作不会从单个项中删除记录标签；这些项会保留其记录标签。 只有网站集管理员可显式删除或更改记录项的保留标签。
 
-有关将内容声明为记录的保留标签的详细信息，请参阅[记录概述](records.md)。
-    
+有关将内容声明为记录的保留标签的详细信息，请参阅[了解记录](records.md)。
+
 ## <a name="applying-a-retention-label-to-email-by-using-rules"></a>使用规则将保留标签应用于电子邮件
 
-在 Outlook 2010 或更高版本中，可创建用于应用保留标签或保留策略的规则。
+在 Outlook 中，可创建用于应用保留标签或保留策略的规则。
   
 例如，可创建一条规则，将特定保留标签应用于发送到/发送自特定通讯组的所有邮件。
   
@@ -361,7 +272,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ## <a name="classifying-content-without-applying-any-actions"></a>对内容分类但不执行任何操作
 
-创建保留标签时，可以不启用保留操作或其他任何操作，如下所示。在这种情况下，可以将保留标签仅用作文本标签，而不强制执行任何操作。
+创建保留标签时，可在不打开任何保留操作或其他操作的情况下执行此操作。 此情况下，可仅将保留标签用作文本标签，而不强制执行任何操作。
   
 例如，可创建不含任何操作的“稍后审阅”保留标签，再将此保留标签自动应用于包含敏感信息类型的内容或已查询内容。
   
@@ -369,7 +280,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 ## <a name="using-retention-labels-for-records-management"></a>使用保留标签实现记录管理
     
-可以使用保留标签将内容声明为记录。 这使你可以在 Office 365 中实现单一、一致的记录管理策略。 有关详细信息，请参阅[记录概述](records.md)。
+可以使用保留标签将内容声明为记录。 这使你可以在 Microsoft 365 中实现单一、一致的记录管理策略。 有关详细信息，请参阅[记录概述](records.md)。
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>将保留标签用作 DLP 策略中的条件
 
@@ -377,26 +288,7 @@ Exchange 公用文件夹和 Skype 不支持标签。
   
 有关详细信息，请参阅[将保留标签用作 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
-## <a name="monitor-retention-labels"></a>监视保留标签
 
-发布或自动应用保留标签后，需要验证保留标签是否已按预期应用于内容。若要监视保留标签，可使用：
-  
-- **标签活动资源管理器**。使用此资源管理器（如下所示），可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive for Business 中所有内容的保留标签活动。有关详细信息，请参阅[查看文档的标签活动](view-label-activity-for-documents.md)。
-
-- “**标签分析**”页。 在 Microsoft 365 合规中心和 Microsoft 365 安全中心中，你可以快速查看顶部标签以及它们的应用位置。 你也可以查看具有特定标签的所有内容。 有关详细信息，请参阅[使用标签分析查看标签使用情况](label-analytics.md)。
-    
-- **数据管理报告**。使用这些报告，可快速查看过去 90 天内 Exchange、SharePoint 和 OneDrive for Business 中所有内容的保留标签趋势和活动。有关详细信息，请参阅[查看数据管理报告](view-the-data-governance-reports.md)。
-    
-![标签活动资源管理器](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
-  
-## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用内容搜索来查找所有已应用有特定保留标签的内容
-
-在保留标签分配到内容后（无论是用户分配还是自动应用），你都可通过内容搜索来查找所有已使用特定保留标签进行分类的内容。
-  
-创建内容搜索时，请选择“合规性标记”**** 条件，再输入完整或部分标签名称，并使用通配符。有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
-  
-![“合规性标记”条件](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
-  
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>保留原则或优先级
 
 内容可能或甚至很有可能有多个应用的保留策略，每个策略的操作（保留、删除或先保留再删除）和保留期都不同。优先级是什么？最高优先级是，一个策略保留的内容一定不得被另一个策略永久删除。
@@ -411,15 +303,15 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 3. **显式添加的位置优先于隐式添加的位置。** 也就是说： 
     
-    1. 如果具有保留设置的保留标签由用户手动分配给某项目（例如 Exchange 电子邮件或 OneDrive 文档），该保留标签优先于在站点或邮箱级别分配的策略以及由文档库分配的默认保留标签。 例如，如果显式保留标签要保留 10 年，但分配给此站点的保留策略仅要保留 5 年，则优选保留标签的保留期。 自动应用保留标签被视为隐式标签，而不是显式标签，因为它们由 Office 365 自动应用。
+    1. 如果具有保留设置的保留标签由用户手动分配给某项目（例如 Exchange 电子邮件或 OneDrive 文档），该保留标签优先于在站点或邮箱级别分配的策略以及由文档库分配的默认保留标签。 例如，如果显式保留标签要保留 10 年，但分配给此站点的保留策略仅要保留 5 年，则优选保留标签的保留期。 自动应用保留标签被视为隐式标签，而不是显式标签，因为它们由 Microsoft 365 自动应用。
     
-    2. 如果保留策略包含特定位置（如特定用户的邮箱或 OneDrive for Business 帐户），此策略优先于应用于所有用户邮箱或 OneDrive for Business 帐户（而不是包含具体用户邮箱）的其他保留策略。
+    2. 如果保留策略包含特定位置（如特定用户的邮箱或 OneDrive 帐户），此策略优先于应用于所有用户邮箱或 OneDrive 帐户（而不是包含具体用户邮箱）的其他保留策略。
     
 4. **最短删除期优先。** 同样，如果内容受多个内容删除策略约束（无保留），它将在最短保留期到期时被删除。 
     
 请注意，保留原则就像是自上而下打破平局的流：如果所有策略或标签应用的规则在一个级别上是相同的，流就会向下移至下一个级别，以确定优先应用哪个规则。
   
-最后，保留策略或标签无法永久删除任何保留用于电子数据展示的内容。在此类保留释放后，内容便再次符合上文所述清理流程的条件。
+最后一点，保留策略或保留标签不能永久删除任何保留用于电子数据展示的内容。 解除限制时，此内容将可再次用于上述清除过程。
 
 ### <a name="precedence-for-auto-labeling-with-trainable-classifiers"></a>优先使用可训练的分类器进行自动标记
 
@@ -433,17 +325,37 @@ Exchange 公用文件夹和 Skype 不支持标签。
 
 4. 对于操作和保持期都相同的保留标签，保留标签的选择是不确定的。
 
-## <a name="use-retention-labels-instead-of-these-features"></a>使用保留标签代替类似功能
+## <a name="monitor-retention-labels"></a>监视保留标签
 
-可将保留标签轻松应用于整个组织，及其在 Office 365（包括 Exchange、SharePoint、OneDrive 和 Microsoft 365 组）中的内容。建议使用保留标签在 Microsoft 365 中的任意位置对内容进行分类或管理记录。
+发布或自动应用保留标签后，需要验证标签是否已应用到所需内容。 若要监视保留标签：
   
-还有其他几项先前用于在 Office 365 中进行内容分类或记录管理的功能。 其如下所示。 这些功能将继续与保留标签配合使用。 尽管存在保留标签的执行不同于先前功能的情况，但是保留标签的发展会驱动未来跨 Office 365 进行记录管理。 因此往前看来，对于数据管理，建议使用保留标签，而不是这些功能。
+- **标签活动资源管理器**。 使用资源管理器（下图中的示例），可快速搜索和查看过去 30 天内 SharePoint 和 OneDrive 中所有内容的保留标签活动。 有关详细信息，请参阅[查看文档的标签活动](view-label-activity-for-documents.md)。
+
+- “**标签分析**”页。 在 Microsoft 365 合规中心和 Microsoft 365 安全中心中，你可以快速查看热门保留标签以及它们的应用位置。 你还可以查看具有特定保留标签的所有内容。 有关详细信息，请参阅[使用标签分析查看标签使用情况](label-analytics.md)。
+    
+- **数据管理报表**。 使用报表，可跨 Exchange、SharePoint 和 OneDrive 快速查看过去 90 天内所有内容的保留标签趋势和活动。 有关详细信息，请参阅[查看数据管理报表](view-the-data-governance-reports.md)。
+    
+![标签活动资源管理器](../media/671ca0cd-1457-40b4-9917-b663360afd95.png)
+
+## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用内容搜索来查找所有已应用有特定保留标签的内容
+
+在保留标签分配到内容后（无论是用户分配还是自动应用），你都可通过内容搜索来查找所有已使用特定保留标签进行分类的内容。
+  
+创建内容搜索时，选择“**合规性标记**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+  
+![“合规性标记”条件](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+  
+## <a name="use-retention-labels-instead-of-older-features"></a>使用保留标签代替较旧的功能
+
+可将保留标签轻松用于 Microsoft 365 中的整个组织及其内容，包括Exchange、SharePoint、OneDrive 和 Microsoft 365 组。 如果需要保留或删除内容，或在 Microsoft 365 中的任意位置管理记录，建议使用保留标签。
+  
+还有其他几项先前用于在 Microsoft 365 中保留或删除内容或管理记录的功能。 这些功能将继续与保留标签配合使用。 尽管存在保留标签的执行不同于先前功能的情况，但是保留标签的发展会驱动未来跨 Microsoft 365 进行记录管理。 因此往前看来，对于数据管理，建议使用保留标签，而不是以下较旧的功能。
   
 ### <a name="exchange-online"></a>Exchange Online
 
 - [保留标记和保留策略](https://go.microsoft.com/fwlink/?linkid=846125)，亦称为[邮件传递记录管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126)（仅限删除） 
     
-### <a name="sharepoint-online-and-onedrive-for-business"></a>SharePoint Online 和 OneDrive for Business
+### <a name="sharepoint-and-onedrive"></a>SharePoint 和 OneDrive
 
 - [配置就地记录管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a)（保留） 
     
@@ -451,45 +363,4 @@ Exchange 公用文件夹和 Skype 不支持标签。
     
 - [信息管理策略](intro-to-info-mgmt-policies.md)（仅限删除） 
     
-## <a name="permissions"></a>Permissions
 
-负责创建保留标签的合规性团队成员必须有权访问安全&amp;合规中心。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予对安全&amp;合规中心的访问权限，而不授予租户管理员的所有权限。为此，建议转到安全&amp;合规中心内的“**权限**”页，编辑“**合规性管理员**”角色组，再向此角色组添加成员。 
-  
-有关详细信息，请参阅[授予用户访问安全与合规中心的权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
-  
-只有在创建和应用保留标签和标签策略时，才必须拥有这些权限。强制执行策略并不需要访问内容。  
-## <a name="find-the-powershell-cmdlets-for-labels"></a>查找标签适用的 PowerShell cmdlet
-
-若要使用标签 cmdlet，你需要：
-  
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
-    
-2. 使用这些安全与合规中心 cmdlet：
-
-  - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
-
-  - [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-compliancetag)
-
-  - [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-compliancetag)
-
-  - [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-compliancetag)
-
-  - [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/enable-compliancetagstorage)
-
-  - [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetagstorage)
-
-  - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
-
-  - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)
-
-  - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy)
-
-  - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy)
-
-  - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule)
-
-  - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)
-
-  - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule)
-
-  - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 适用于大型组织的 windows 7 到 Windows 10 自动升级
-ms.openlocfilehash: 575ffba84b2cd7b7cfe5267a35a9f36c75dbe306
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: c151c5488fdbc77dc2da7dd308bafb75b6bb5f22
+ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011547"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221394"
 ---
 # <a name="windows-7-to-windows-10-automated-in-place-upgrades-for-large-organizations"></a>适用于大型组织的 windows 7 到 Windows 10 自动就地升级
 
@@ -90,7 +90,7 @@ ms.locfileid: "44011547"
 
 结合兼容性扫描的预缓存任务序列
 
-除了节省升级包下载时间之外, 还可以预缓存升级包, 及使用 Windows 安装程序评估就地升级是否会在执行实际的 Windows 升级之前完成。 下面的命令行语法可用于以无提示方式执行兼容性扫描, 及了解 Windows 安装程序是否将设备评估为升级准备就绪。
+除了节省升级包下载时间之外, 还可以预缓存升级包, 及使用 Windows 安装程序评估就地升级是否会在执行实际的 Windows 升级之前完成。 下面的命令行语法可用于以无提示方式执行兼容性扫描，及了解 Windows 安装程序是否将设备评估为升级准备就绪：**Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 然后, 日志将被发送到已指定的服务器路径, Windows 安装程序不会显示给用户, 并且无需用户交互即可关闭。
 
