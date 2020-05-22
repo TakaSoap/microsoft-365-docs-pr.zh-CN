@@ -15,105 +15,105 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 检查基于信息保护的服务和基础结构的条件，确保你的配置满足 Microsoft 365 企业版的要求。
-ms.openlocfilehash: c0b4ff6a0d289b8a8c63255d817ea455df00bf13
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 19f4fc4ae93c00e33a2f58d8c23582e6e49cf887
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631629"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268217"
 ---
-# <a name="information-protection-infrastructure-exit-criteria"></a><span data-ttu-id="70d95-103">信息保护基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="70d95-103">Information protection infrastructure exit criteria</span></span>
+# <a name="information-protection-infrastructure-exit-criteria"></a><span data-ttu-id="0bba7-103">信息保护基础结构退出条件</span><span class="sxs-lookup"><span data-stu-id="0bba7-103">Information protection infrastructure exit criteria</span></span>
 
 ![第 6 阶段：信息保护](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
-<span data-ttu-id="70d95-105">确保你的信息保护基础结构符合以下必需条件，以及你认为可选的那些条件。</span><span class="sxs-lookup"><span data-stu-id="70d95-105">Make sure your information protection infrastructure meets the following required criteria and that you've considered those that are optional.</span></span>
+<span data-ttu-id="0bba7-105">确保你的信息保护基础结构符合以下必需条件，以及你认为可选的那些条件。</span><span class="sxs-lookup"><span data-stu-id="0bba7-105">Make sure your information protection infrastructure meets the following required criteria and that you've considered those that are optional.</span></span>
 
 <a name="crit-infoprotect-step1"></a>
-## <a name="required-security-and-information-protection-levels-for-your-organization-are-defined"></a><span data-ttu-id="70d95-106">必需：为你的组织定义安全和信息保护级别。</span><span class="sxs-lookup"><span data-stu-id="70d95-106">Required: Security and information protection levels for your organization are defined</span></span>
+## <a name="required-security-and-information-protection-levels-for-your-organization-are-defined"></a><span data-ttu-id="0bba7-106">必需：为你的组织定义安全和信息保护级别。</span><span class="sxs-lookup"><span data-stu-id="0bba7-106">Required: Security and information protection levels for your organization are defined</span></span>
 
-<span data-ttu-id="70d95-p101">已计划并确定组织需要的安全级别。这些级别定义了最低安全级别，以及对敏感信息及其所需数据安全性提升保护的额外安全级别。</span><span class="sxs-lookup"><span data-stu-id="70d95-p101">You've planned for and determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their required data security.</span></span>
+<span data-ttu-id="0bba7-p101">已计划并确定组织需要的安全级别。这些级别定义了最低安全级别，以及对敏感信息及其所需数据安全性提升保护的额外安全级别。</span><span class="sxs-lookup"><span data-stu-id="0bba7-p101">You've planned for and determined the security levels that your organization needs. These levels define a minimum level of security and additional levels for increasingly sensitive information and their required data security.</span></span>
 
-<span data-ttu-id="70d95-109">至少，当前需要使用三种安全级别：</span><span class="sxs-lookup"><span data-stu-id="70d95-109">At a minimum, you are using three security levels:</span></span>
+<span data-ttu-id="0bba7-109">至少，当前需要使用三种安全级别：</span><span class="sxs-lookup"><span data-stu-id="0bba7-109">At a minimum, you are using three security levels:</span></span>
 
-- <span data-ttu-id="70d95-110">基线</span><span class="sxs-lookup"><span data-stu-id="70d95-110">Baseline</span></span>
-- <span data-ttu-id="70d95-111">敏感</span><span class="sxs-lookup"><span data-stu-id="70d95-111">Sensitive</span></span>
-- <span data-ttu-id="70d95-112">高度管控</span><span class="sxs-lookup"><span data-stu-id="70d95-112">Highly regulated</span></span>
+- <span data-ttu-id="0bba7-110">基线</span><span class="sxs-lookup"><span data-stu-id="0bba7-110">Baseline</span></span>
+- <span data-ttu-id="0bba7-111">敏感</span><span class="sxs-lookup"><span data-stu-id="0bba7-111">Sensitive</span></span>
+- <span data-ttu-id="0bba7-112">高度管控</span><span class="sxs-lookup"><span data-stu-id="0bba7-112">Highly regulated</span></span>
 
-<span data-ttu-id="70d95-113">如果需要，可在[步骤 1](infoprotect-define-sec-infoprotect-levels.md) 中进行设置以满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-113">If needed, [Step 1](infoprotect-define-sec-infoprotect-levels.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-113">如果需要，可在[步骤 1](infoprotect-define-sec-infoprotect-levels.md) 中进行设置以满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-113">If needed, [Step 1](infoprotect-define-sec-infoprotect-levels.md) can help you meet this requirement.</span></span> 
 
 <a name="crit-infoprotect-step3"></a>
-## <a name="required-increased-security-for-microsoft-365-is-configured"></a><span data-ttu-id="70d95-114">必需：已配置增强的 Microsoft 365 安全性</span><span class="sxs-lookup"><span data-stu-id="70d95-114">Required: Increased security for Microsoft 365 is configured</span></span>
+## <a name="required-increased-security-for-microsoft-365-is-configured"></a><span data-ttu-id="0bba7-114">必需：已配置增强的 Microsoft 365 安全性</span><span class="sxs-lookup"><span data-stu-id="0bba7-114">Required: Increased security for Microsoft 365 is configured</span></span>
 
-<span data-ttu-id="70d95-115">你已配置以下用于[增强 Microsoft 365 安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)的设置：</span><span class="sxs-lookup"><span data-stu-id="70d95-115">You've configured the following settings for [Microsoft 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):</span></span>
+<span data-ttu-id="0bba7-115">你已配置以下用于[增强 Microsoft 365 安全性](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security)的设置：</span><span class="sxs-lookup"><span data-stu-id="0bba7-115">You've configured the following settings for [Microsoft 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):</span></span>
 
-- <span data-ttu-id="70d95-116">Microsoft 365 安全中心中的威胁管理策略</span><span class="sxs-lookup"><span data-stu-id="70d95-116">Threat management policies in the Microsoft 365 security Center</span></span>
-- <span data-ttu-id="70d95-117">其他 Exchange Online 租户范围内设置</span><span class="sxs-lookup"><span data-stu-id="70d95-117">Additional Exchange Online tenant-wide settings</span></span>
-- <span data-ttu-id="70d95-118">SharePoint Online 管理中心中的租户范围内共享策略</span><span class="sxs-lookup"><span data-stu-id="70d95-118">Tenant-wide sharing policies in SharePoint Online admin center</span></span>
-- <span data-ttu-id="70d95-119">Azure Active Directory 中的设置 (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="70d95-119">Settings in Azure Active Directory (Azure AD)</span></span>
+- <span data-ttu-id="0bba7-116">Microsoft 365 安全中心中的威胁管理策略</span><span class="sxs-lookup"><span data-stu-id="0bba7-116">Threat management policies in the Microsoft 365 security Center</span></span>
+- <span data-ttu-id="0bba7-117">其他 Exchange Online 租户范围内设置</span><span class="sxs-lookup"><span data-stu-id="0bba7-117">Additional Exchange Online tenant-wide settings</span></span>
+- <span data-ttu-id="0bba7-118">SharePoint Online 管理中心中的租户范围内共享策略</span><span class="sxs-lookup"><span data-stu-id="0bba7-118">Tenant-wide sharing policies in SharePoint Online admin center</span></span>
+- <span data-ttu-id="0bba7-119">Azure Active Directory 中的设置 (Azure AD)</span><span class="sxs-lookup"><span data-stu-id="0bba7-119">Settings in Azure Active Directory (Azure AD)</span></span>
 
-<span data-ttu-id="70d95-120">你还已[启用 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。</span><span class="sxs-lookup"><span data-stu-id="70d95-120">You've also [enabled Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).</span></span>
+<span data-ttu-id="0bba7-120">你还已[启用 SharePoint、OneDrive 和 Microsoft Teams 的 Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams)。</span><span class="sxs-lookup"><span data-stu-id="0bba7-120">You've also [enabled Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/office365/securitycompliance/turn-on-atp-for-spo-odb-and-teams).</span></span>
 
-<span data-ttu-id="70d95-121">如果需要，请执行[第 3 步](infoprotect-configure-increased-security-office-365.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-121">If needed, [Step 3](infoprotect-configure-increased-security-office-365.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-121">如果需要，请执行[第 3 步](infoprotect-configure-increased-security-office-365.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-121">If needed, [Step 3](infoprotect-configure-increased-security-office-365.md) can help you meet this requirement.</span></span> 
 
 <a name="crit-infoprotect-step2"></a>
-## <a name="optional-classification-is-configured-across-your-environment"></a><span data-ttu-id="70d95-122">可选：已在整个环境中配置分类</span><span class="sxs-lookup"><span data-stu-id="70d95-122">Optional: Classification is configured across your environment</span></span>
+## <a name="optional-classification-is-configured-across-your-environment"></a><span data-ttu-id="0bba7-122">可选：已在整个环境中配置分类</span><span class="sxs-lookup"><span data-stu-id="0bba7-122">Optional: Classification is configured across your environment</span></span>
 
-<span data-ttu-id="70d95-123">你已与法律和合规性团队合作，共同为组织的数据治理和安全策略制定了适当的分类和标签方案。</span><span class="sxs-lookup"><span data-stu-id="70d95-123">You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization's data governance and security policies.</span></span> 
+<span data-ttu-id="0bba7-123">你已与法律和合规性团队合作，共同为组织的数据治理和安全策略制定了适当的分类和标签方案。</span><span class="sxs-lookup"><span data-stu-id="0bba7-123">You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization's data governance and security policies.</span></span> 
 
-<span data-ttu-id="70d95-124">这些策略对应于以下项的配置和部署：</span><span class="sxs-lookup"><span data-stu-id="70d95-124">Those policies correspond to the configuration and deployment of:</span></span>
+<span data-ttu-id="0bba7-124">这些策略对应于以下项的配置和部署：</span><span class="sxs-lookup"><span data-stu-id="0bba7-124">Those policies correspond to the configuration and deployment of:</span></span>
 
-- <span data-ttu-id="70d95-125">敏感数据类型</span><span class="sxs-lookup"><span data-stu-id="70d95-125">Sensitive data types</span></span>
-- <span data-ttu-id="70d95-126">保留标签</span><span class="sxs-lookup"><span data-stu-id="70d95-126">Retention labels</span></span>
-- <span data-ttu-id="70d95-127">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="70d95-127">Sensitivity labels</span></span>
-- <span data-ttu-id="70d95-128">Azure 信息保护标签</span><span class="sxs-lookup"><span data-stu-id="70d95-128">Azure Information Protection labels</span></span>
+- <span data-ttu-id="0bba7-125">敏感数据类型</span><span class="sxs-lookup"><span data-stu-id="0bba7-125">Sensitive data types</span></span>
+- <span data-ttu-id="0bba7-126">保留标签</span><span class="sxs-lookup"><span data-stu-id="0bba7-126">Retention labels</span></span>
+- <span data-ttu-id="0bba7-127">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="0bba7-127">Sensitivity labels</span></span>
+- <span data-ttu-id="0bba7-128">Azure 信息保护标签</span><span class="sxs-lookup"><span data-stu-id="0bba7-128">Azure Information Protection labels</span></span>
 
-<span data-ttu-id="70d95-129">如果需要，请执行[第 2 步](infoprotect-configure-classification.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-129">If needed, [Step 2](infoprotect-configure-classification.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-129">如果需要，请执行[第 2 步](infoprotect-configure-classification.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-129">If needed, [Step 2](infoprotect-configure-classification.md) can help you meet this requirement.</span></span> 
 
 
 <a name="crit-infoprotect-step4"></a>
-## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a><span data-ttu-id="70d95-130">可选：在整个环境中部署 Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="70d95-130">Optional: Windows Information Protection is deployed across your environment</span></span>
+## <a name="optional-windows-information-protection-is-deployed-across-your-environment"></a><span data-ttu-id="0bba7-130">可选：在整个环境中部署 Windows 信息保护</span><span class="sxs-lookup"><span data-stu-id="0bba7-130">Optional: Windows Information Protection is deployed across your environment</span></span>
 
-<span data-ttu-id="70d95-131">你已注册 Windows 10 企业版设备，它们部署且应用了定义下列内容的 Intune 策略：</span><span class="sxs-lookup"><span data-stu-id="70d95-131">Your enrolled Windows 10 Enterprise devices have an Intune policy deployed and applied that defines:</span></span>
+<span data-ttu-id="0bba7-131">你已注册 Windows 10 企业版设备，它们部署且应用了定义下列内容的 Intune 策略：</span><span class="sxs-lookup"><span data-stu-id="0bba7-131">Your enrolled Windows 10 Enterprise devices have an Intune policy deployed and applied that defines:</span></span>
 
-- <span data-ttu-id="70d95-132">要保护的应用。</span><span class="sxs-lookup"><span data-stu-id="70d95-132">Which apps to protect.</span></span>
-- <span data-ttu-id="70d95-133">保护级别。</span><span class="sxs-lookup"><span data-stu-id="70d95-133">The level of protection.</span></span>
-- <span data-ttu-id="70d95-134">保护涵盖的范围。</span><span class="sxs-lookup"><span data-stu-id="70d95-134">Where the protection extends.</span></span>
+- <span data-ttu-id="0bba7-132">要保护的应用。</span><span class="sxs-lookup"><span data-stu-id="0bba7-132">Which apps to protect.</span></span>
+- <span data-ttu-id="0bba7-133">保护级别。</span><span class="sxs-lookup"><span data-stu-id="0bba7-133">The level of protection.</span></span>
+- <span data-ttu-id="0bba7-134">保护涵盖的范围。</span><span class="sxs-lookup"><span data-stu-id="0bba7-134">Where the protection extends.</span></span>
 
-<span data-ttu-id="70d95-135">必要时请执行[第 4 步](infoprotect-deploy-windows-information-protection.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-135">If needed, [Step 4](infoprotect-deploy-windows-information-protection.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-135">必要时请执行[第 4 步](infoprotect-deploy-windows-information-protection.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-135">If needed, [Step 4](infoprotect-deploy-windows-information-protection.md) can help you meet this requirement.</span></span> 
 
 <a name="crit-infoprotect-step5"></a>
-## <a name="optional-data-loss-prevention-dlp-is-deployed"></a><span data-ttu-id="70d95-136">可选：部署数据丢失防护 (DLP)</span><span class="sxs-lookup"><span data-stu-id="70d95-136">Optional: Data Loss Prevention (DLP) is deployed</span></span>
+## <a name="optional-data-loss-prevention-dlp-is-deployed"></a><span data-ttu-id="0bba7-136">可选：部署数据丢失防护 (DLP)</span><span class="sxs-lookup"><span data-stu-id="0bba7-136">Optional: Data Loss Prevention (DLP) is deployed</span></span>
 
-<span data-ttu-id="70d95-137">你分析、测试并随后推广了 DLP 策略集；该集中注明了位置和条件及操作规则，而且你的组织需要它来保护客户和其他类型的专用数据，并借此满足行业和区域性的法规和要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-137">You have analyzed, tested, and then rolled out the set of DLP policies—with locations and rules with conditions and actions—that your organization requires to protect customer and other types of private data and to adhere to industry and regional regulations and requirements.</span></span>
+<span data-ttu-id="0bba7-137">你分析、测试并随后推广了 DLP 策略集；该集中注明了位置和条件及操作规则，而且你的组织需要它来保护客户和其他类型的专用数据，并借此满足行业和区域性的法规和要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-137">You have analyzed, tested, and then rolled out the set of DLP policies—with locations and rules with conditions and actions—that your organization requires to protect customer and other types of private data and to adhere to industry and regional regulations and requirements.</span></span>
 
-<span data-ttu-id="70d95-138">你的数据合规与安全员工正在使用安全与合规仪表板来监视 DLP 事件。</span><span class="sxs-lookup"><span data-stu-id="70d95-138">Your data compliance and security staff are using the Security & Compliance dashboard to monitor DLP incidents.</span></span>
+<span data-ttu-id="0bba7-138">你的数据合规与安全员工正在使用安全与合规仪表板来监视 DLP 事件。</span><span class="sxs-lookup"><span data-stu-id="0bba7-138">Your data compliance and security staff are using the Security & Compliance dashboard to monitor DLP incidents.</span></span>
 
-<span data-ttu-id="70d95-139">必要时请执行[步骤 5](infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-139">If needed, [Step 5](infoprotect-data-loss-prevention.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-139">必要时请执行[步骤 5](infoprotect-data-loss-prevention.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-139">If needed, [Step 5](infoprotect-data-loss-prevention.md) can help you meet this requirement.</span></span> 
 
 <a name="crit-infoprotect-step6"></a>
-## <a name="optional-email-encryption-is-configured"></a><span data-ttu-id="70d95-140">必需：为你的组织定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="70d95-140">Optional: Email encryption is configured</span></span>
+## <a name="optional-email-encryption-is-configured"></a><span data-ttu-id="0bba7-140">必需：为你的组织定义安全和信息保护级别</span><span class="sxs-lookup"><span data-stu-id="0bba7-140">Optional: Email encryption is configured</span></span>
 
-<span data-ttu-id="70d95-141">已根据组织的需要配置以下电子邮件加密：</span><span class="sxs-lookup"><span data-stu-id="70d95-141">You've configured the following email encryption as needed for your organization:</span></span>
+<span data-ttu-id="0bba7-141">已根据组织的需要配置以下电子邮件加密：</span><span class="sxs-lookup"><span data-stu-id="0bba7-141">You've configured the following email encryption as needed for your organization:</span></span>
 
 |||
 |:-------|:-----|
-| <span data-ttu-id="70d95-142">**加密方法**</span><span class="sxs-lookup"><span data-stu-id="70d95-142">**Encryption method**</span></span> | <span data-ttu-id="70d95-143">**对于已发送的电子邮件**</span><span class="sxs-lookup"><span data-stu-id="70d95-143">**For email sent**</span></span> |
-| [<span data-ttu-id="70d95-144">Office 365 邮件加密 (OME)</span><span class="sxs-lookup"><span data-stu-id="70d95-144">Office 365 Message Encryption (OME)</span></span>](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | <span data-ttu-id="70d95-145">在组织外部加密</span><span class="sxs-lookup"><span data-stu-id="70d95-145">Outside your organization with encryption</span></span> |
-| [<span data-ttu-id="70d95-146">信息权限管理 (IRM)</span><span class="sxs-lookup"><span data-stu-id="70d95-146">Information Rights Management (IRM)</span></span>](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | <span data-ttu-id="70d95-147">具有加密和权限</span><span class="sxs-lookup"><span data-stu-id="70d95-147">With both encryption and permissions</span></span> |
-| [<span data-ttu-id="70d95-148">安全/多用途 Internet 邮件扩展 (S/MIME)</span><span class="sxs-lookup"><span data-stu-id="70d95-148">Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></span>](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | <span data-ttu-id="70d95-149">具有加密和数字签名（使用公钥加密）</span><span class="sxs-lookup"><span data-stu-id="70d95-149">With both encryption and digital signatures using public key cryptography</span></span> |
+| <span data-ttu-id="0bba7-142">**加密方法**</span><span class="sxs-lookup"><span data-stu-id="0bba7-142">**Encryption method**</span></span> | <span data-ttu-id="0bba7-143">**对于已发送的电子邮件**</span><span class="sxs-lookup"><span data-stu-id="0bba7-143">**For email sent**</span></span> |
+| [<span data-ttu-id="0bba7-144">Office 365 邮件加密 (OME)</span><span class="sxs-lookup"><span data-stu-id="0bba7-144">Office 365 Message Encryption (OME)</span></span>](https://docs.microsoft.com/Office365/SecurityCompliance/ome)  | <span data-ttu-id="0bba7-145">在组织外部加密</span><span class="sxs-lookup"><span data-stu-id="0bba7-145">Outside your organization with encryption</span></span> |
+| [<span data-ttu-id="0bba7-146">信息权限管理 (IRM)</span><span class="sxs-lookup"><span data-stu-id="0bba7-146">Information Rights Management (IRM)</span></span>](https://docs.microsoft.com/office365/SecurityCompliance/information-rights-management-in-exchange-online) | <span data-ttu-id="0bba7-147">具有加密和权限</span><span class="sxs-lookup"><span data-stu-id="0bba7-147">With both encryption and permissions</span></span> |
+| [<span data-ttu-id="0bba7-148">安全/多用途 Internet 邮件扩展 (S/MIME)</span><span class="sxs-lookup"><span data-stu-id="0bba7-148">Secure/Multipurpose Internet Mail Extensions (S/MIME)</span></span>](https://docs.microsoft.com/Exchange/policy-and-compliance/smime) | <span data-ttu-id="0bba7-149">具有加密和数字签名（使用公钥加密）</span><span class="sxs-lookup"><span data-stu-id="0bba7-149">With both encryption and digital signatures using public key cryptography</span></span> |
 |||
 
-<span data-ttu-id="70d95-150">必要时请执行[步骤 6](infoprotect-email-encryption.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-150">If needed, [Step 6](infoprotect-email-encryption.md) can help you meet this requirement.</span></span>
+<span data-ttu-id="0bba7-150">必要时请执行[步骤 6](infoprotect-email-encryption.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-150">If needed, [Step 6](infoprotect-email-encryption.md) can help you meet this requirement.</span></span>
 
 <a name="crit-infoprotect-step7"></a>
-## <a name="optional-configure-privileged-access-management-in-office-365"></a><span data-ttu-id="70d95-151">可选：配置 Office 365 Privileged Access Management</span><span class="sxs-lookup"><span data-stu-id="70d95-151">Optional: Configure privileged access management in Office 365</span></span>
+## <a name="optional-configure-privileged-access-management-in-office-365"></a><span data-ttu-id="0bba7-151">可选：配置 Office 365 Privileged Access Management</span><span class="sxs-lookup"><span data-stu-id="0bba7-151">Optional: Configure privileged access management in Office 365</span></span>
 
-<span data-ttu-id="70d95-152">你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。</span><span class="sxs-lookup"><span data-stu-id="70d95-152">You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access and create one or more privileged access policies in your organization.</span></span> <span data-ttu-id="70d95-153">你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。</span><span class="sxs-lookup"><span data-stu-id="70d95-153">You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.</span></span>
+<span data-ttu-id="0bba7-152">你已使用[在 Office 365 中配置特权访问管理](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)主题中的信息来启用特权访问并在组织中创建一个或多个特权访问策略。</span><span class="sxs-lookup"><span data-stu-id="0bba7-152">You've used the information in the [Configure privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration) topic to enable privileged access and create one or more privileged access policies in your organization.</span></span> <span data-ttu-id="0bba7-153">你已配置这些策略，且实时访问已启用，可访问敏感数据或关键配置设置。</span><span class="sxs-lookup"><span data-stu-id="0bba7-153">You've configured these policies and just-in-time access is enabled for access to sensitive data or access to critical configuration settings.</span></span>
 
-<span data-ttu-id="70d95-154">如果需要，请执行[步骤 7](infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="70d95-154">If needed, [Step 7](infoprotect-configure-privileged-access-management.md) can help you meet this requirement.</span></span> 
+<span data-ttu-id="0bba7-154">如果需要，请执行[步骤 7](infoprotect-configure-privileged-access-management.md)，这样做有助于满足此要求。</span><span class="sxs-lookup"><span data-stu-id="0bba7-154">If needed, [Step 7](infoprotect-configure-privileged-access-management.md) can help you meet this requirement.</span></span> 
 
-## <a name="results-and-next-steps"></a><span data-ttu-id="70d95-155">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="70d95-155">Results and next steps</span></span>
+## <a name="results-and-next-steps"></a><span data-ttu-id="0bba7-155">结果和后续步骤</span><span class="sxs-lookup"><span data-stu-id="0bba7-155">Results and next steps</span></span>
 
-<span data-ttu-id="70d95-156">Microsoft 365 企业版的信息保护基础结构使用定义的安全级别、Office 365 增强安全性、使用敏感数据和标签的分类、Windows 信息保护、数据丢失防护、电子邮件加密以及特权访问权限管理。</span><span class="sxs-lookup"><span data-stu-id="70d95-156">Your information protection infrastructure for Microsoft 365 Enterprise uses defined security levels, increased security for Office 365, classification using sensitive data types and labels, Windows Information Protection, Data Loss Prevention, email encryption, and privileged access management.</span></span>
+<span data-ttu-id="0bba7-156">Microsoft 365 企业版的信息保护基础结构使用定义的安全级别、Office 365 增强安全性、使用敏感数据和标签的分类、Windows 信息保护、数据丢失防护、电子邮件加密以及特权访问权限管理。</span><span class="sxs-lookup"><span data-stu-id="0bba7-156">Your information protection infrastructure for Microsoft 365 Enterprise uses defined security levels, increased security for Office 365, classification using sensitive data types and labels, Windows Information Protection, Data Loss Prevention, email encryption, and privileged access management.</span></span>
 
-<span data-ttu-id="70d95-157">如果你正在执行 Microsoft 365 企业版端到端部署，那么你现在已准备好让你的[工作负载和应用场景](deploy-workloads.md)充分利用底层基础结构的所有功能和配置。</span><span class="sxs-lookup"><span data-stu-id="70d95-157">If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads and scenarios](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.</span></span>
+<span data-ttu-id="0bba7-157">如果你正在执行 Microsoft 365 企业版端到端部署，那么你现在已准备好让你的[工作负载](deploy-workloads.md)充分利用底层基础结构的所有功能和配置。</span><span class="sxs-lookup"><span data-stu-id="0bba7-157">If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.</span></span>

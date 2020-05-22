@@ -20,77 +20,100 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: 了解如何使用安全性默认值为用户设置多重身份验证。
+description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: c4ea6037b34d29f2d1e05e248e03e49ee6b06f56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 893a4ae535dfb781a4f77ee57c0ead40fda8454f
+ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262371"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44340770"
 ---
-# <a name="set-up-multi-factor-authentication"></a><span data-ttu-id="5c996-103">设置多重身份验证</span><span class="sxs-lookup"><span data-stu-id="5c996-103">Set up multi-factor authentication</span></span>
+# <a name="set-up-multi-factor-authentication"></a><span data-ttu-id="f0772-103">设置多重身份验证</span><span class="sxs-lookup"><span data-stu-id="f0772-103">Set up multi-factor authentication</span></span>
   
-> [!IMPORTANT]
-> <span data-ttu-id="5c996-104">如果你在2019年10月21日之后购买了订阅或试用，并且意外提示了多重身份验证（MFA），则已为你的订阅自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。</span><span class="sxs-lookup"><span data-stu-id="5c996-104">If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for multi-factor authentication (MFA), [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.</span></span>
+<span data-ttu-id="f0772-104">根据您对[Microsoft 365 中的多重身份验证（MFA）和支持](multi-factor-authentication-microsoft-365.md)的理解，可以将其设置并将其部署到您的组织中。</span><span class="sxs-lookup"><span data-stu-id="f0772-104">Based on your understanding of [multi-factor authentication (MFA) and its support in Microsoft 365](multi-factor-authentication-microsoft-365.md), it’s time to set it up and roll it out to your organization.</span></span>
 
-<span data-ttu-id="5c996-105">每个新 Microsoft 365 订阅将自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。</span><span class="sxs-lookup"><span data-stu-id="5c996-105">Every new Microsoft 365 subscription will automatically have [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) turned on.</span></span> <span data-ttu-id="5c996-106">这意味着，每个用户都必须设置多重身份验证（MFA），并在其移动设备上安装 Microsoft 身份验证器应用程序。</span><span class="sxs-lookup"><span data-stu-id="5c996-106">This means that every user will have to set up multi-factor authentication (MFA) and install the Microsoft Authenticator app on their mobile device.</span></span> <span data-ttu-id="5c996-107">有关详细信息，请参阅为[Microsoft 365 帐户设置 MFA](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。</span><span class="sxs-lookup"><span data-stu-id="5c996-107">For more information, see [Set up MFA for a Microsoft 365 account](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).</span></span>
+<span data-ttu-id="f0772-105">在开始之前，请先确定这些特殊条件是否适用于您，并采取适当的措施：</span><span class="sxs-lookup"><span data-stu-id="f0772-105">Before you begin, determine if these special conditions apply to you and take the appropriate action:</span></span>
 
-<span data-ttu-id="5c996-108">下面九种管理员角色每次登录时都需要执行额外的身份验证：</span><span class="sxs-lookup"><span data-stu-id="5c996-108">The following nine administrator roles will be required to perform additional authentication every time they sign in:</span></span>
+- <span data-ttu-id="f0772-106">如果你的 Windows 设备上有 Office 2013 客户端，请[启用新式验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。</span><span class="sxs-lookup"><span data-stu-id="f0772-106">If you have Office 2013 clients on Windows devices, [enable Modern Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).</span></span>
 
-- <span data-ttu-id="5c996-109">全局管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-109">Global administrator</span></span>
-- <span data-ttu-id="5c996-110">SharePoint 管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-110">SharePoint administrator</span></span>
-- <span data-ttu-id="5c996-111">Exchange 管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-111">Exchange administrator</span></span>
-- <span data-ttu-id="5c996-112">条件访问管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-112">Conditional Access administrator</span></span>
-- <span data-ttu-id="5c996-113">安全管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-113">Security administrator</span></span>
-- <span data-ttu-id="5c996-114">支持管理员/密码管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-114">Helpdesk administrator or password administrator</span></span>
-- <span data-ttu-id="5c996-115">计费管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-115">Billing administrator</span></span>
-- <span data-ttu-id="5c996-116">用户管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-116">User administrator</span></span>
-- <span data-ttu-id="5c996-117">身份验证管理员</span><span class="sxs-lookup"><span data-stu-id="5c996-117">Authentication administrator</span></span>
+- <span data-ttu-id="f0772-107">如果您具有具有 Active Directory 联合身份验证服务（AD FS）的第三方目录服务，请设置 Azure MFA 服务器。</span><span class="sxs-lookup"><span data-stu-id="f0772-107">If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server.</span></span> <span data-ttu-id="f0772-108">有关详细信息，请参阅[使用 Azure 多重身份验证和第三方 VPN 解决方案的高级方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。</span><span class="sxs-lookup"><span data-stu-id="f0772-108">See [advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.</span></span>
 
-<span data-ttu-id="5c996-118">必要时，系统将要求其他所有用户执行额外的身份验证。</span><span class="sxs-lookup"><span data-stu-id="5c996-118">All other users will be asked to perform additional authentication when needed.</span></span>
+## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a><span data-ttu-id="f0772-109">步骤1：决定要求用户使用 MFA 的方法</span><span class="sxs-lookup"><span data-stu-id="f0772-109">Step 1: Decide on the method of requiring your users to use MFA</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="5c996-119">您必须是全局管理员才能设置或修改 MFA</span><span class="sxs-lookup"><span data-stu-id="5c996-119">You must be a global admin to set up or modify MFA</span></span> <br><br>
-> <span data-ttu-id="5c996-120">如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。</span><span class="sxs-lookup"><span data-stu-id="5c996-120">If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.</span></span>
+<span data-ttu-id="f0772-110">有三种方法可以要求用户使用 MFA 进行登录。有关详细信息，请参阅[Microsoft 365 中的 MFA 支持](multi-factor-authentication-microsoft-365.md)。</span><span class="sxs-lookup"><span data-stu-id="f0772-110">There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.</span></span>
 
-<span data-ttu-id="5c996-121">如果您以前设置了具有基准策略的 MFA，[则必须将其关闭以启用安全默认](#move-from-baseline-policies-to-security-defaults)设置。</span><span class="sxs-lookup"><span data-stu-id="5c996-121">If you have previously set up MFA with baseline policies, [you must turn them off to turn on security defaults](#move-from-baseline-policies-to-security-defaults).</span></span> <span data-ttu-id="5c996-122">但是，如果你拥有 Microsoft 365 业务或你的订阅包括[Azure Active Directory 高级 P1 或 Azure Active Directory 高级 P2](https://azure.microsoft.com/pricing/details/active-directory/)，则还可以设置[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略。</span><span class="sxs-lookup"><span data-stu-id="5c996-122">However, if you have Microsoft 365 Business or your subscription includes [Azure Active Directory Premium P1 or Azure Active Directory Premium P2](https://azure.microsoft.com/pricing/details/active-directory/), you can also set up [Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies.</span></span> <span data-ttu-id="5c996-123">若要使用条件访问策略，您需要确保禁用安全默认设置并启用[新式验证](#enable-modern-authentication-for-your-organization)。</span><span class="sxs-lookup"><span data-stu-id="5c996-123">To use Conditional Access policies, you need to make sure security defaults are disabled and [modern authentication](#enable-modern-authentication-for-your-organization) is enabled.</span></span>
+- <span data-ttu-id="f0772-111">安全性默认值（针对小型企业版推荐）</span><span class="sxs-lookup"><span data-stu-id="f0772-111">Security defaults (recommended for small businesses)</span></span>
 
-> [!TIP]
-> <span data-ttu-id="5c996-124">若要向您的用户说明如何设置 Microsoft 身份验证器应用程序，请参阅[使用 Microsoft 身份验证器与 Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411)。</span><span class="sxs-lookup"><span data-stu-id="5c996-124">To explain to your users how to set up the Microsoft Authenticator app, see [Use Microsoft Authenticator with Office 365](https://support.office.com/article/use-microsoft-authenticator-with-office-365-1412611f-ad8d-43ab-807c-7965e5155411).</span></span>
+  <span data-ttu-id="f0772-112">如果你在2019年10月21日之后购买了订阅或试用，并且意外提示您进行 MFA，则已为你的订阅自动启用[安全默认设置](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。</span><span class="sxs-lookup"><span data-stu-id="f0772-112">If you purchased your subscription or trial after October 21, 2019, and you're unexpectedly prompted for MFA, [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) have been automatically enabled for your subscription.</span></span>
+  
+  <span data-ttu-id="f0772-113">每个新 Microsoft 365 订阅将自动启用安全默认设置。</span><span class="sxs-lookup"><span data-stu-id="f0772-113">Every new Microsoft 365 subscription will automatically have security defaults turned on.</span></span> <span data-ttu-id="f0772-114">这意味着，每个用户都必须设置 MFA 并在其移动设备上安装 Microsoft 身份验证器应用。</span><span class="sxs-lookup"><span data-stu-id="f0772-114">This means that every user will have to set up MFA and install the Microsoft Authenticator app on their mobile device.</span></span>
 
-## <a name="manage-security-defaults"></a><span data-ttu-id="5c996-125">管理安全性默认值</span><span class="sxs-lookup"><span data-stu-id="5c996-125">Manage security defaults</span></span>
+  <span data-ttu-id="f0772-115">所有用户都必须使用 Microsoft 身份验证器应用作为其附加验证方法，并阻止旧版身份验证。</span><span class="sxs-lookup"><span data-stu-id="f0772-115">All users must use the Microsoft Authenticator app as their additional verification method and legacy authentication is blocked.</span></span> 
 
-1. <span data-ttu-id="5c996-126">使用全局管理员凭据登录[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)。</span><span class="sxs-lookup"><span data-stu-id="5c996-126">Sign in to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822) with global admin credentials.</span></span>
-2. <span data-ttu-id="5c996-127">转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。</span><span class="sxs-lookup"><span data-stu-id="5c996-127">Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>
-3. <span data-ttu-id="5c996-128">在页面底部，选择“**管理安全性默认值**”。</span><span class="sxs-lookup"><span data-stu-id="5c996-128">At the bottom of the page, choose **Manage Security defaults**.</span></span>
-4. <span data-ttu-id="5c996-129">选择 **"是"** 启用安全默认设置，单击 "**否**" 禁用安全默认设置，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="5c996-129">Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.</span></span>
+- <span data-ttu-id="f0772-116">条件访问策略（针对企业推荐）</span><span class="sxs-lookup"><span data-stu-id="f0772-116">Conditional Access policies (recommended for enterprises)</span></span>
 
-## <a name="move-from-baseline-policies-to-security-defaults"></a><span data-ttu-id="5c996-130">从基线策略改为安全性默认值</span><span class="sxs-lookup"><span data-stu-id="5c996-130">Move from baseline policies to security defaults</span></span>
+  <span data-ttu-id="f0772-117">用户在 MFA 注册过程中选择其他验证方法。</span><span class="sxs-lookup"><span data-stu-id="f0772-117">Users choose the additional verification method during MFA registration.</span></span>
 
-1. <span data-ttu-id="5c996-131">转到 "[条件访问策略" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。</span><span class="sxs-lookup"><span data-stu-id="5c996-131">Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).</span></span>
-2. <span data-ttu-id="5c996-132">选择启用的每个基准策略，并将 "**启用策略**" 设置为 "**关闭** **"** 。</span><span class="sxs-lookup"><span data-stu-id="5c996-132">Choose each baseline policy that is **On** and set **Enable policy** to **Off**.</span></span>
-3. <span data-ttu-id="5c996-133">转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。</span><span class="sxs-lookup"><span data-stu-id="5c996-133">Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>
-4. <span data-ttu-id="5c996-134">在页面底部，选择 "**管理安全性默认**设置"，然后在 "**启用安全性**默认设置" 窗格中，将 "**启用安全默认**设置" 切换为 **"是**"，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="5c996-134">On the bottom of the page, choose **Manage Security defaults**, and in the **Enable Security defaults** pane, set **Enable Security defaults** toggle to **Yes**, and then choose **Save**.</span></span> 
+- <span data-ttu-id="f0772-118">每用户帐户（不推荐）</span><span class="sxs-lookup"><span data-stu-id="f0772-118">Per-user account (not recommended)</span></span>
 
-## <a name="enable-modern-authentication-for-your-organization"></a><span data-ttu-id="5c996-135">为你的组织启用新式验证</span><span class="sxs-lookup"><span data-stu-id="5c996-135">Enable modern authentication for your organization</span></span>
+  <span data-ttu-id="f0772-119">用户在 MFA 注册过程中选择其他验证方法。</span><span class="sxs-lookup"><span data-stu-id="f0772-119">Users choose the additional verification method during MFA registration.</span></span>
 
-<span data-ttu-id="5c996-136">所有 Office 2016 客户端应用程序均通过使用 Active Directory 身份验证库 (ADAL) 支持 MFA。</span><span class="sxs-lookup"><span data-stu-id="5c996-136">All Office 2016 client applications support MFA through the use of the Active Directory Authentication Library (ADAL).</span></span> <span data-ttu-id="5c996-137">这意味着 Office 2016 客户端无需应用密码。</span><span class="sxs-lookup"><span data-stu-id="5c996-137">This means that app passwords aren't required for Office 2016 clients.</span></span> <span data-ttu-id="5c996-138">有关详细信息，请参阅[本文](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords)。</span><span class="sxs-lookup"><span data-stu-id="5c996-138">See [this article](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-mfasettings#app-passwords) for more information.</span></span>
+## <a name="step-2-test-mfa-on-your-pilot-users"></a><span data-ttu-id="f0772-120">步骤 2.</span><span class="sxs-lookup"><span data-stu-id="f0772-120">Step 2.</span></span> <span data-ttu-id="f0772-121">在试点用户上测试 MFA</span><span class="sxs-lookup"><span data-stu-id="f0772-121">Test MFA on your pilot users</span></span>
 
-<span data-ttu-id="5c996-139">但是，您需要确保为您的 Microsoft 365 订阅启用 ADAL 或新式验证。</span><span class="sxs-lookup"><span data-stu-id="5c996-139">However, you need to make sure your Microsoft 365 subscription is enabled for ADAL, or modern authentication.</span></span>
+<span data-ttu-id="f0772-122">如果您使用的是条件访问策略或每用户 MFA （不推荐），请选择您的企业或组织中的 "试点用户" 以测试 MFA 注册和登录。例如：</span><span class="sxs-lookup"><span data-stu-id="f0772-122">If you are using Conditional Access policies or per-user MFA (not recommended), select pilot users in your business or organization to test MFA registration and sign-ins. For example:</span></span>
 
-1. <span data-ttu-id="5c996-140">若要启用新式验证，请从[管理中心](https://go.microsoft.com/fwlink/p/?linkid=834822)选择 "**设置** \> **组织设置**"，然后在 "**服务**" 选项卡中，从列表中选择 "**新式验证**"。</span><span class="sxs-lookup"><span data-stu-id="5c996-140">To enable modern authentication, from the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Settings** \> **Org Settings** and then in the **Services** tab, choose **Modern authentication** from the list.</span></span>
+- <span data-ttu-id="f0772-123">对于条件访问策略，创建试点用户组和要求对组成员和所有应用进行 MFA 的策略。</span><span class="sxs-lookup"><span data-stu-id="f0772-123">For Conditional Access policies, create a pilot users group and a policy that requires MFA for the members of the group and for all apps.</span></span> <span data-ttu-id="f0772-124">然后，将您的试点用户的帐户添加到组中。</span><span class="sxs-lookup"><span data-stu-id="f0772-124">Then, add your pilot user’s accounts to the group.</span></span>
 
-2. <span data-ttu-id="5c996-141">选中**新式验证**面板中的 "**启用新式验证（推荐）** " 框，然后选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="5c996-141">Check the **Enable modern authentication (recommended)** box in the **Modern authentication** panel, and then choose **Save changes**.</span></span> 
+- <span data-ttu-id="f0772-125">对于每用户 MFA，请一次为你的试点用户的用户帐户启用 MFA。</span><span class="sxs-lookup"><span data-stu-id="f0772-125">For per-user MFA, enable MFA for the user accounts of your pilot users one a time.</span></span>
 
-    ![在“新式验证”面板中已选中启用复选框。](../../media/enablemodernauth.png)
-    
-> [!IMPORTANT]
-> <span data-ttu-id="5c996-143">从2017年8月起，所有新的包含 Skype for Business online 和 Exchange online 的 Microsoft 365 订阅默认启用新式身份验证。</span><span class="sxs-lookup"><span data-stu-id="5c996-143">As of August of 2017, all new Microsoft 365 subscriptions that include Skype for Business online and Exchange online have modern authentication enabled by default.</span></span> <span data-ttu-id="5c996-144">若要检查 Skype for Business Online 的新式验证状态，请通过全局管理员凭据使用 Skype for Business Online PowerShell。</span><span class="sxs-lookup"><span data-stu-id="5c996-144">To check your modern authentication status for Skype for Business online, you can use Skype for Business online PowerShell with Global Admin credentials.</span></span> <span data-ttu-id="5c996-145">运行 Get-CsOAuthConfiguration 可检查 -ClientADALAuthOverride 的输出。</span><span class="sxs-lookup"><span data-stu-id="5c996-145">Run Get-CsOAuthConfiguration to check the output of -ClientADALAuthOverride.</span></span> <span data-ttu-id="5c996-146">如果 -ClientADALAuthOverride 的输出为“Allowed”，表明新式验证处于开启状态。</span><span class="sxs-lookup"><span data-stu-id="5c996-146">If -ClientADALAuthOverride is 'Allowed', modern authentication is on.</span></span>
-<span data-ttu-id="5c996-147">若要查看 Exchange Online 的 MA 状态，请访问[在 Exchange Online 中启用新式身份验证](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)。</span><span class="sxs-lookup"><span data-stu-id="5c996-147">To check your MA status for Exchange Online, please visit [Enable modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).</span></span>
+<span data-ttu-id="f0772-126">与您的试点用户合作，以解决为您的组织准备平稳推出的问题和问题。</span><span class="sxs-lookup"><span data-stu-id="f0772-126">Work with your pilot users to address questions and issues to prepare for a smooth roll out to your organization.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="5c996-148">相关文章</span><span class="sxs-lookup"><span data-stu-id="5c996-148">Related articles</span></span>
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a><span data-ttu-id="f0772-127">第 3 步。</span><span class="sxs-lookup"><span data-stu-id="f0772-127">Step 3.</span></span> <span data-ttu-id="f0772-128">通知贵组织即将推出 MFA</span><span class="sxs-lookup"><span data-stu-id="f0772-128">Inform your organization that MFA is coming</span></span>
 
-[<span data-ttu-id="5c996-149">保护 Microsoft 365 商业版计划的十大方法</span><span class="sxs-lookup"><span data-stu-id="5c996-149">Top 10 ways to secure Microsoft 365 for business plans</span></span>](secure-your-business-data.md)
+<span data-ttu-id="f0772-129">使用电子邮件通知、hallway 海报、团队会议或正式培训以确保员工了解：</span><span class="sxs-lookup"><span data-stu-id="f0772-129">Use email notifications, hallway posters, team meetings, or formal training to ensure that your employees understand:</span></span>
 
-[<span data-ttu-id="5c996-150">在 Windows 设备上启用适用于 Office 2013 的新式验证</span><span class="sxs-lookup"><span data-stu-id="5c996-150">Enable Modern Authentication for Office 2013 on Windows devices</span></span>](enable-modern-authentication.md)
+- <span data-ttu-id="f0772-130">为什么登录需要进行 MFA</span><span class="sxs-lookup"><span data-stu-id="f0772-130">Why MFA is being required for sign-ins</span></span>
+- [<span data-ttu-id="f0772-131">如何注册以获取其附加验证方法</span><span class="sxs-lookup"><span data-stu-id="f0772-131">How to register for their additional verification method</span></span>](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
+- [<span data-ttu-id="f0772-132">注册后如何登录</span><span class="sxs-lookup"><span data-stu-id="f0772-132">How to sign-in after registration</span></span>](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
+- [<span data-ttu-id="f0772-133">如何更改其其他验证方法</span><span class="sxs-lookup"><span data-stu-id="f0772-133">How to change their additional verification method</span></span>](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
+- [<span data-ttu-id="f0772-134">如何处理像新的智能手机这样的情况</span><span class="sxs-lookup"><span data-stu-id="f0772-134">How to deal with situations like a new smart phone</span></span>](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+
+<span data-ttu-id="f0772-135">最重要的是，请确保你***的员工了解何时强制实施 MFA 要求***，以使其不会令他们感到吃惊。</span><span class="sxs-lookup"><span data-stu-id="f0772-135">Most importantly, make sure your employees understand ***when the MFA requirement is going to be imposed*** so that it does not surprise them.</span></span>
+
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a><span data-ttu-id="f0772-136">第 4 步。</span><span class="sxs-lookup"><span data-stu-id="f0772-136">Step 4.</span></span> <span data-ttu-id="f0772-137">向你的组织或用户推出 MFA 要求</span><span class="sxs-lookup"><span data-stu-id="f0772-137">Roll out the MFA requirement to your organization or users</span></span>
+
+<span data-ttu-id="f0772-138">根据所选的 MFA 要求方法，将 MFA 身份验证部署到您的试点测试人员之外的员工。</span><span class="sxs-lookup"><span data-stu-id="f0772-138">Based on your chosen MFA requirement method, roll out MFA authentication to the employees beyond your pilot testers.</span></span>
+
+### <a name="security-defaults"></a><span data-ttu-id="f0772-139">安全性默认值</span><span class="sxs-lookup"><span data-stu-id="f0772-139">Security defaults</span></span>
+
+<span data-ttu-id="f0772-140">您可以在 Azure 门户的 Azure Active Directory （Azure AD）的**属性**窗格中启用或禁用安全默认设置。</span><span class="sxs-lookup"><span data-stu-id="f0772-140">You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.</span></span>
+
+1.  <span data-ttu-id="f0772-141">使用全局管理员凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="f0772-141">Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.</span></span>
+2.  <span data-ttu-id="f0772-142">转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。</span><span class="sxs-lookup"><span data-stu-id="f0772-142">Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>
+3.  <span data-ttu-id="f0772-143">在页面底部，选择“**管理安全性默认值**”。</span><span class="sxs-lookup"><span data-stu-id="f0772-143">At the bottom of the page, choose **Manage Security defaults**.</span></span>
+4.  <span data-ttu-id="f0772-144">选择 **"是"** 启用安全默认设置，单击 "**否**" 禁用安全默认设置，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="f0772-144">Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.</span></span>
+
+<span data-ttu-id="f0772-145">如果您使用的是[基准条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)，下面介绍如何移动到使用安全默认设置。</span><span class="sxs-lookup"><span data-stu-id="f0772-145">If you have been using [baseline Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection), here is how you move to using security defaults.</span></span>
+
+1.  <span data-ttu-id="f0772-146">转到 "[条件访问策略" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。</span><span class="sxs-lookup"><span data-stu-id="f0772-146">Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).</span></span>
+2.  <span data-ttu-id="f0772-147">选择启用的每个基准策略，并将 "**启用策略**" 设置为 "**关闭** **"** 。</span><span class="sxs-lookup"><span data-stu-id="f0772-147">Choose each baseline policy that is **On** and set **Enable policy** to **Off**.</span></span>
+2.  <span data-ttu-id="f0772-148">转到 " [Azure Active Directory-属性" 页](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。</span><span class="sxs-lookup"><span data-stu-id="f0772-148">Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).</span></span>
+4.  <span data-ttu-id="f0772-149">在页面底部，选择“**管理安全性默认值**”。</span><span class="sxs-lookup"><span data-stu-id="f0772-149">At the bottom of the page, choose **Manage Security defaults**.</span></span>
+5.  <span data-ttu-id="f0772-150">选择 **"是"** 启用安全默认设置，单击 "**否**" 禁用安全默认设置，然后选择 "**保存**"。</span><span class="sxs-lookup"><span data-stu-id="f0772-150">Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.</span></span>
+
+### <a name="conditional-access-policies"></a><span data-ttu-id="f0772-151">条件访问策略</span><span class="sxs-lookup"><span data-stu-id="f0772-151">Conditional Access policies</span></span>
+
+<span data-ttu-id="f0772-152">创建、配置或启用相应的策略，其中包括需要进行 MFA 登录的用户组。</span><span class="sxs-lookup"><span data-stu-id="f0772-152">Create, configure, or enable the appropriate policies that include the group of users that require MFA for sign-in.</span></span>
+
+### <a name="per-user-mfa-not-recommended"></a><span data-ttu-id="f0772-153">每用户 MFA （不推荐）</span><span class="sxs-lookup"><span data-stu-id="f0772-153">Per-user MFA (not recommended)</span></span>
+
+<span data-ttu-id="f0772-154">为对应于你的部署的 MFA 启用用户帐户。</span><span class="sxs-lookup"><span data-stu-id="f0772-154">Enable user accounts for MFA corresponding to your rollout.</span></span>
+
+### <a name="supporting-your-employees"></a><span data-ttu-id="f0772-155">为你的员工提供支持</span><span class="sxs-lookup"><span data-stu-id="f0772-155">Supporting your employees</span></span>
+
+<span data-ttu-id="f0772-156">在你的员工注册并开始使用 MFA 登录时，请确保你的 IT 专家、IT 部门或技术支持人员能够快速回答问题并解决问题。</span><span class="sxs-lookup"><span data-stu-id="f0772-156">As your employees register and begin signing in with MFA, ensure that your IT specialists, IT department, or helpdesk can answer questions and address issues quickly.</span></span>
+
+<span data-ttu-id="f0772-157">有关对[MFA 登录进行疑难解答的信息](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)，请参阅本文。</span><span class="sxs-lookup"><span data-stu-id="f0772-157">See this article for [information about troubleshooting MFA sign-ins](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2).</span></span> 
+
+
