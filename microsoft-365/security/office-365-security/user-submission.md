@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 2a1872aff88cd1cc21c6a6e3258671c303b55e17
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: d3ff44957864e3d5e959d6252d1d538cc715ae92
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294189"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347803"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -71,12 +71,15 @@ ms.locfileid: "44294189"
 
         - **Microsoft 和自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 用户提交将转到 Microsoft 进行分析和自定义邮箱，以供管理员或安全操作团队进行分析。
 
-        - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 如果您希望邮件仅转到 "管理员" 或 "安全操作" 团队进行分析，请使用此选项。 除非管理员转发邮件，否则邮件不会转到 Microsoft。
+        - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 如果您希望邮件仅转到管理员或安全操作团队进行分析，请使用此选项。 除非管理员自行转发，否则邮件不会转到 Microsoft。
 
-        完成后，请单击 "**确认**"。
+        > [!NOTE]
+        > 美国政府组织（GCC、GCC-H 和 DoD）只能配置**自定义邮箱**。 其他两个选项将被禁用。 
 
-     > [!CAUTION]
-     > 如果您已在 Outlook 网页上使用 Outlook 网页邮箱策略禁用了 "[垃圾邮件报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)"，但您将上述任一设置配置为向 microsoft 报告邮件，则用户可以使用报告邮件加载项在 outlook 网页中向 microsoft 报告邮件。
+      完成后，请单击 "**确认**"。
+
+      > [!CAUTION]
+      > 如果您已在 Outlook 网页上使用 Outlook 网页邮箱策略禁用了 "[垃圾邮件报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)"，但您将上述任一设置配置为向 microsoft 报告邮件，则用户可以使用报告邮件加载项在 outlook 网页中向 microsoft 报告邮件。
 
    - **禁用 outlook 的报告邮件功能**：如果您在 outlook 网页版中使用第三方报告工具而不是报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
 
@@ -88,13 +91,13 @@ ms.locfileid: "44294189"
 
 发送到自定义邮箱的邮件需要遵循特定的提交邮件格式。 提交的主题（信封标题）应采用以下格式：
 
-`{(int)safetyApiAction}|{networkId}|{senderIp}|{fromAddress}|({subject.Substring(0, Math.Min(subjectLen, subject.Length))})`
+`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
 
-为 SafetyApiAction：
+是 SafetyAPIAction 是以下整数值之一：
 
-- 垃圾邮件 = 1
-- NotJunk = 2
-- 网络钓鱼 = 3
+- 1：垃圾邮件
+- 2： NotJunk
+- 3：网络钓鱼
 
 在下面的示例中：
 
@@ -102,7 +105,7 @@ ms.locfileid: "44294189"
 - 网络邮件 ID 为49871234-6dc6-43e8-abcd-08d797f20abe。
 - 发件人 IP 为167.220.232.101。
 - "发件人" 地址为 test@contoso.com。
-- 邮件的电子邮件主题为 "测试网络钓鱼提交"
+- 邮件的主题行是 "测试网络钓鱼提交"
 
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phish submission)`
 

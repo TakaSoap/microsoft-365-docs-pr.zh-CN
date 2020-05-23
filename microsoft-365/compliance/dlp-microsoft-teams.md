@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在，你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文，了解详细了解它的工作原理。
-ms.openlocfilehash: 290e1e7a7c3fd395c1f7e1739b08eba64c8d2d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633051"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347851"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
@@ -31,10 +31,8 @@ ms.locfileid: "43633051"
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>适用于 Microsoft 团队的 DLP 概述
 
-最近，[数据丢失防护](data-loss-prevention-policies.md)（DLP）功能进行了扩展，以包括 Microsoft 团队聊天和频道消息。
+最近，[数据丢失防护](data-loss-prevention-policies.md)（DLP）功能进行了扩展，以包括 Microsoft 团队聊天和频道消息，**包括专用通道消息**。
 
-> [!NOTE]
-> 目前，不支持 DLP 专用频道消息。
 
 如果你的组织拥有 DLP，你现在可以定义策略，以防止用户在 Microsoft 团队频道或聊天会话中共享敏感信息。 下面是有关此保护工作方式的一些示例：
 
@@ -67,9 +65,9 @@ ms.locfileid: "43633051"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（ [https://protection.office.com](https://protection.office.com) ）并登录。
 
-2. 选择 "**数据丢失防护** > **策略**"。
+2. 选择 "**数据丢失防护**  >  **策略**"。
 
 3. 选择一个策略，然后在 "**策略设置**" 旁边，选择 "**编辑**"。
 
@@ -87,9 +85,9 @@ ms.locfileid: "43633051"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（ [https://protection.office.com](https://protection.office.com) ）并登录。
 
-2. 选择 "**数据丢失防护** > **策略**"。
+2. 选择 "**数据丢失防护**  >  **策略**"。
 
 3. 选择一个策略，并查看 "**位置**" 下的值。 如果你看到**团队聊天和频道消息**，一切都已设置。 如果不是，请单击 "**编辑**"。<br/>![现有策略的位置](../media/dlp-teams-editexistingpolicy.png)<br/>
 
@@ -105,9 +103,9 @@ ms.locfileid: "43633051"
 
 若要执行此任务，必须为您分配具有编辑 DLP 策略的权限的角色。 若要了解详细信息，请参阅[权限](data-loss-prevention-policies.md#permissions)。
 
-1. 转到安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）并登录。
+1. 转到安全 & 合规中心（ [https://protection.office.com](https://protection.office.com) ）并登录。
 
-2. 选择 "**数据丢失防护** > **策略** > **+ 创建策略**"。
+2. 选择 "**数据丢失防护**  >  **策略**  >  **+ 创建策略**"。
 
 3. 选择一个[模板](data-loss-prevention-policies.md#dlp-policy-templates)，然后选择 "**下一步**"。<br/>在我们的示例中，我们选择美国的 "个人身份信息" 数据模板。<br/>![DLP 策略的隐私模板](../media/dlp-teams-createnewpolicy-template.png)<br/>
 

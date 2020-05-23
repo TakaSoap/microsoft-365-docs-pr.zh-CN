@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c4b5d58a006591da23d37aaeccf72cfccc6d1c43
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033970"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347827"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
@@ -50,6 +50,14 @@ ms.locfileid: "44033970"
 | **利用预定义查询** | 浏览涵盖不同威胁搜寻方案的预定义查询集合。 | [使用共享查询](advanced-hunting-shared-queries.md) |
 | **优化查询** | 了解如何创建高效查询以及组合电子邮件和设备中的数据的查询。 | - [查询最佳实践](advanced-hunting-shared-queries.md) <br>- [跨设备和电子邮件的智能寻线](advanced-hunting-best-practices.md) |
 | **创建自定义检测规则** | 了解如何使用高级搜寻查询来触发通知并自动应用响应操作。 | - [自定义检测概述](custom-detections-overview.md)<br>- [自定义检测规则](custom-detection-rules.md) |
+
+## <a name="get-access"></a>获取访问权限
+若要使用高级搜寻或其他[Microsoft 威胁防护](microsoft-threat-protection.md)功能，您需要在 Azure AD 中为其分配一个适当的角色。 请注意，对终结点数据的访问受 Microsoft Defender ATP 中基于角色的访问控制设置的影响。 [阅读有关管理 Microsoft 威胁防护的访问权限](mtp-permissions.md)
+
+## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
+利用以下功能更快地编写查询：
+- **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
+- **架构参考** — 工作区域旁边提供了包含表及其列的列表的架构参考。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
 
 ## <a name="related-topics"></a>相关主题
 - [了解查询语言](advanced-hunting-query-language.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 7d31d77bdb08ce5ae7ef5580301b0432747da2a1
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
+ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952625"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280552"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -48,7 +48,7 @@ ms.locfileid: "43952625"
 - **当内容已保存（在 SharePoint Online 或 OneDrive for Business 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略—目前处于预览阶段。 
     
     > [!NOTE]
-    > 请参阅预览版公告[在 Microsoft 365 服务中推出使用敏感度标签自动分类的公共预览版](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961)。
+    > 请参阅预览版公告[在 Microsoft 365 服务中推出使用敏感度标签自动分类的公共预览版](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961)和网络研讨会[带敏感度标签的 SharePoint 和 OneDrive 自动标记简介](https://aka.ms/SPOAutoLabelWebinar-Recording)。
     
     此方法称为使用敏感度标签自动分类。 你可能还会听到它称为自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "43952625"
 |:-----|:-----|:-----|:-----|
 |应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 |
 |按位置限制|否 |是 |
-|条件：可训练分类器|是（有限预览） |否 |
+|条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
 |建议、策略工具提示和用户重写|是 |否 |
 |模拟模式|否 |是 |
@@ -104,16 +104,12 @@ ms.locfileid: "43952625"
 
 Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用中的自动标签。 对于 Office 应用中的内置标签，此功能[在某些应用中处于预览状态](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-[创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置：
-
-![敏感度标签的自动标签选项](../media/sensitivity-labels-auto-labeling-options.png)
-
-当内容包含特定类型的敏感信息时，可选择自动将敏感度标签应用于内容。 从敏感信息类型或分类器列表中选择：
+[创建或编辑敏感度标签](create-sensitivity-labels.md)时，可使用 Office 应用的自动标签设置。 可选择在检测到敏感信息时自动将敏感度标签应用于内容。 从敏感信息类型或可训练分类器列表中选择：
 
 ![Office 应用中的自动标签的标签条件](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> 目前，“分类器”**** 选项处于有限预览状态，要求你向 Microsoft 提交表单，以便为你的租户启用此功能。 有关详细信息，请参阅博客文章[宣布在 Office 应用中推出使用内置分类器的自动标签 - 有限预览](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889)。
+> **可训练分类器**的选项目前正在向公共预览版中的租户推出。 如果你看不到此选项，请几天后再试。
 
 当自动应用此敏感度标签时，用户会在其 Office 应用中看到通知。 例如：
 
@@ -131,22 +127,25 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ![实例计数和匹配准确度的选项](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### <a name="configuring-classifiers-for-a-label"></a>为标签配置分类器
+### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
-当你选择“分类器”**** 选项时，请选择一个或多个内置分类器：
+当你选择“**可训练分类器**”选项时，请从 Microsoft 中选择一个或多个内置的可训练分类器。 如果你创建了自己的自定义可训练分类器，也可以选择：
 
-![分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
+![可训练分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> 我们正在弃用**冒犯性语言**内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用**针对性的骚扰**、**侮辱**和**猥亵**内置分类器。
 
 有关这些分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
 
-在预览期间，以下应用支持敏感度标签的分类器：
+在预览期间，以下应用支持敏感度标签的可训练分类器：
 
-- 适用于 Windows 的 Microsoft 365 企业应用版桌面应用程序，来自 [Office 预览体验成员](https://office.com/insider)：
+- 适用于 Windows 的 Microsoft 365 企业应用版（以前称为 Office 365 专业增强版），从 [Office 预览体验计划](https://office.com/insider)：
     - Word
     - Excel
     - PowerPoint
 
-- Office 网页版应用 - 如果你已[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)：
+- Office 网页版应用（如果你已[在 SharePoint 和 OneDrive 中启用 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)）：
     - Word
     - Excel
     - PowerPoint
@@ -176,7 +175,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 对于桌面版 Word 中的建议标签，触发建议的敏感内容会被标记，这样用户就能审阅和删除敏感内容，而不用应用建议的敏感度标签。
 
-- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
+- 若要详细了解如何在 Office 应用中应用这些标签、示例屏幕截图，以及如何检测敏感信息，请参阅[对 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/zh-CN/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)。
 
 特定于 Azure 信息保护统一标记客户端的注意事项：
 
@@ -184,7 +183,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 - 为了让 Outlook 支持建议标签，必须先配置[高级策略设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook)。
 
-- 敏感信息可以在文档和电子邮件的正文文本和页眉、页脚中检测到，但不能在电子邮件的主题行或附件中检测到。
+- 敏感信息可以在文档和电子邮件的正文文本和页眉、页脚中检测到，但无法在电子邮件的主题行或附件中检测到。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
 > [!NOTE]
@@ -205,7 +204,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - 你可以为自动标记策略选择一个或多个[已创建和发布](create-sensitivity-labels.md)（至少向一个用户发布）的敏感度标签。 对于这些标签：
     - 启用或禁用 Office 应用标签设置中的自动标记无关紧要，因为该标签设置会补充自动标记策略，如简介中所述。 
     - 如果要用于自动标记的标签被配置为使用视觉标记（页眉、页脚、水印），请注意它们不会应用于文档。
-    - 如果标签应用了加密，则必须将其配置为“立即分配权限”**** 设置。
+    - 如果标签应用加密，必须为标签配置“立即指定权限”**** 设置。
 
 ### <a name="learn-about-simulation-mode"></a>了解模拟模式
 
@@ -277,7 +276,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 12. 对于**决定立即或稍后运行策略模拟**页面：如果现在准备好运行自动标记策略，在模拟模式中选择“**在模拟模式中运行策略**”。 否则，请选择“**保持禁用策略**”。 选择“**下一步**”。 
 
-13. 对于“摘要”**** 页面：查看自动标记策略的配置并进行所需的任何更改，然后完成向导。
+13. 对于“摘要”**** 页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
     
     与 Office 应用的自动标记不同，无单独的发布选项。 但是，与发布标签一样，自动标记策略最多需要 24 小时才能在整个组织中复制。
 
@@ -298,5 +297,5 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - **内容资源管理器内容查看器**允许你查看文件的内容。
 
 > [!TIP]
-> 你还可以使用内容资源管理器来标识具有未标记文档的位置，这些文档包含敏感信息。 使用此信息，请考虑将这些位置添加到自动标记策略中，并将标识的敏感信息类型作为规则包括在内。
+> 你还可以使用内容资源管理器来标识具有包含敏感信息的未标记文档的位置。 使用此信息，请考虑将这些位置添加到自动标记策略中，并将标识的敏感信息类型作为规则包括在内。
 

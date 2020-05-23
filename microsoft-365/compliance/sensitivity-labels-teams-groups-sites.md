@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: 4bf640598b072064dcdec657b80182a58d430235
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022140"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327270"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）中的内容
 
@@ -40,7 +40,7 @@ ms.locfileid: "44022140"
 
 ## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>关于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的公共预览版
 
-适用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签正在逐步向租户推出，在最终发布之前可能会有所改变。 此公共预览版不适用于 Office 365 内容交付网络 (CDN)。
+适用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签处于预览阶段，在最终发布之前可能会有所改变。 此公共预览版不适用于 Office 365 内容交付网络 (CDN)。
 
 在你为新设置启用此预览版和配置敏感度标签之前，用户可在其应用中查看和应用敏感度标签。 例如，在 Word 中：
 
@@ -79,17 +79,19 @@ ms.locfileid: "44022140"
 
 在这个新的“**网站和组设置**”页面中，配置以下设置：
 
-- **与 Office 365 组连接的团队网站的隐私**：默认设置“无 - 让用户选择谁可以访问网站”**** 目前正在逐步向租户推出。 如果需要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请保留此默认设置。
+- **连接 Office 365 组的团队网站的隐私**：如果希望你组织中的每个人都可访问应用了此标签的团队网站或组，请保留“**公用 - 组织中的任何人都可访问站点**”的默认设置。
     
-    选择“**公用**”或“**专用**”，在将此标签应用到容器时设置和锁定隐私设置。 如果希望组织中的任何人都可以访问应用了此标签的团队网站或组，请选择“公共”****；如果希望仅限组织中已批准的成员访问，请选择“私有”****。 
+    如果要将访问权限限制为仅允许组织中的已批准成员，请选择“**专用**”。
     
-    “公共”**** 或“私有”**** 设置替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
+    如果希望使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请选择“**无 - 让用户选择谁可以访问该网站**”。
+    
+    “**公用**”或“**专用**”的设置可在你将此标签应用到容器时设置和锁定隐私设置。 你选择的设置将替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
 - **未托管的设备**：对于[未托管的设备](/sharepoint/control-access-from-unmanaged-devices)，允许完全访问、仅限 Web 的访问或完全阻止访问。 
 
-![网站和组设置选项卡](../media/edit-sensitivity-label-site-group.png)
+![网站和组设置选项卡](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。

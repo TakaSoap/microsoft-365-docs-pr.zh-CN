@@ -7,19 +7,19 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1d4ca01e7b791dafc952b62a5f5dd59263b31546
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557550"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347815"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
 Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用可能已有的设备（这将需要您对其进行重新映像）。 您可以使用 Azure 门户上的 Microsoft 托管桌面注册设备。
 
 > [!NOTE]
-> 与合作伙伴合作获取设备？ 如果是这样，则无需担心获取硬件哈希值。他们将为你负责。 请确保您的合作伙伴在 [合作伙伴中心](https://partner.microsoft.com/dashboard)建立与您的关系，并确保它们包含 Azure Active Directory 和 Office 365 的委派管理权限。 你的合作伙伴可以在 [合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)中了解详细信息。 建立此关系后，你的合作伙伴将代表你直接注册设备–无需进一步操作。 如果您想要查看详细信息，或者您的合作伙伴有问题，请参阅[合作伙伴注册设备的步骤](register-devices-partner.md)。 注册设备后，可以继续[检查映像](#check-the-image)并将[设备传递](#deliver-the-device)给用户。
+> 与合作伙伴合作获取设备？ 如果是这样，则无需担心获取硬件哈希值。他们将为你负责。 请确保您的合作伙伴在 [合作伙伴中心](https://partner.microsoft.com/dashboard)建立与您的关系。 你的合作伙伴可以在 [合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)中了解详细信息。 建立此关系后，你的合作伙伴将代表你直接注册设备–无需进一步操作。 如果您想要查看详细信息，或者您的合作伙伴有问题，请参阅[合作伙伴注册设备的步骤](register-devices-partner.md)。 注册设备后，可以继续[检查映像](#check-the-image)并将[设备传递](#deliver-the-device)给用户。
 
 ## <a name="prepare-to-register-brand-new-devices"></a>准备注册全新的设备
 
@@ -53,7 +53,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 3. 以`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. 打开要注册的设备，但*不要启动安装程序体验*。 如果您意外启动了设置体验，则必须重置或重新映像设备。
 5. 插入 u 盘，然后按 SHIFT + F10。
-6. 打开具有管理权限的 PowerShell 提示符，然后运行`cd <pathToUsb>`。
+6. 打开具有管理权限的 PowerShell 提示符，然后运行 `cd <pathToUsb>` 。
 7. 以`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. 以`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. 删除 USB 驱动器，然后通过运行来关闭设备`shutdown -s -t 0`

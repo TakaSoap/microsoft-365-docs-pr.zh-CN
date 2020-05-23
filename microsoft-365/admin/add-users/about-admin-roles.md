@@ -20,19 +20,24 @@ search.appverid:
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
 ms.custom: okr_smb
-ms.openlocfilehash: 4e3cec5b2ff86b35d02f8963a584efdb272f2c5e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2f3b5fedf77c2f763f60c097b25101255d55ecaf
+ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618916"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44294204"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
-你的订阅附带了一组管理员角色，可将这些角色分配给组织中的用户。 每个管理员角色都映射到常用的业务功能，并授予这些用户在管理中心执行特定任务的权限。 有关详细信息，请参阅[分配管理员角色](assign-admin-roles.md)
+你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。 每个管理员角色都映射到常用的业务功能，并授予这些用户在管理中心执行特定任务的权限。
 
-> [!TIP] 
-> 是否在查找详细的角色说明？ 请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
+
+是否在查找 Azure AD 的详细角色说明？ 请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+
+是否在查找 Microsoft Intune 的详细角色说明？ 查看 [Microsoft Intune 中的基于角色的访问控制 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
+
+有关在 Microsoft 365 管理中心分配角色的详细信息，请参阅[分配管理员角色](assign-admin-roles.md)。
 
 ## <a name="things-to-consider"></a>要考虑的事项...
 
@@ -44,32 +49,21 @@ ms.locfileid: "43618916"
 | 分配*最小权限*角色    | 分配*最小权限*角色意味着只向管理员授予完成工作所需的访问权限。 例如，如果希望其他人重置员工密码，则不应分配无限制的全局管理员角色，而应分配受限的管理员角色，如密码管理员或支持管理员。这将有助于保护你的数据安全。                 |
 | 要求对管理员进行多重身份验证                  |    实际上，要求对所有用户都执行 MFA 是一个好主意，但而管理员绝对有必要使用 MFA 进行登录。 MFA 要求用户输入第二种身份验证方法，以验证他们声称的身份。 管理员可以访问大量的客户和员工数据，如果你要求 MFA，即使管理员的密码遭到泄露，若没有第二种身份证明，密码也毫无用处。  <br><br>如果你已启用 MFA，则当用户下一次登录时，他们需要提供备选电子邮件地址和电话号码才能恢复帐户。  <br> [设置多重身份验证](../security-and-compliance/set-up-multi-factor-authentication.md)          |
 
-  
-## <a name="some-roles-are-missing-from-active-users--manage-admin-roles-where-did-they-go"></a>“活动用户”>“管理管理员角色”中缺少某些角色。 它们去哪儿了？
-默认情况下，我们首先显示大多数组织使用的角色。 如果找不到角色，请转到列表底部并选择“**查看更多角色**”。
-
-## <a name="how-can-i-tell-which-permissions-are-assigned-to-me"></a>我如何知道分配有哪些权限？
 如果你在管理中心收到一条消息，告知你没有编辑设置或页面的权限，这是因为向你分配了没有该权限的角色。
 
-## <a name="what-about-the-azure-active-directory-roles"></a>那 Azure Active Directory 角色呢？
+## <a name="azure-ad-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心提供的 Azure AD 角色
 
-与 Microsoft 365 管理中心提供的角色相比，Azure 门户具有更多角色。 如果你有一家大型企业，则 Azure 门户可能具有可满足贵组织需求的角色。
-
-有关所有 Azure Active Directory 角色的列表和说明，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
+Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，这些角色是 Azure 门户中可用角色的子集。 如果你有一家大型企业，则 Azure 门户可能具有可满足贵组织需求的角色。
 
 分配有管理员角色的用户在组织所订阅的云服务中拥有相同的访问权限级别，不管该角色是通过 Office 365 管理中心、Azure 门户还是适用于 Windows PowerShell 的 Azure AD 模块分配的。
-  
-## <a name="roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心提供的角色
-
-Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，这些角色是 Azure 门户中可用角色的子集。
 
 ::: moniker range="o365-worldwide"
 
-在管理中心，你可以转到“**角色**”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。
+在 Microsoft 365 管理中心，你可以转到“**角色**”，然后选择任何角色以打开其详细信息窗格。 选择“**权限**”选项卡，以查看分配有该角色的管理员有权执行的操作的详细列表。 选择“**已分配**”或“**已分配管理员**”选项卡，以向角色添加用户。
 
 ::: moniker-end
 
-你可能只需要在组织中分配以下角色。 （有关详细信息，包括与角色关联的 cmdlet，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。）
+你可能只需要在组织中分配以下角色。 默认情况下，我们首先显示大多数组织使用的角色。 如果找不到角色，请转到列表底部并选择“**查看更多角色**”。 （有关详细信息，包括与角色关联的 cmdlet，请参阅 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。）
 
 |管理员角色     |应该为谁分配此角色？  |
 |---------|---------|
@@ -84,7 +78,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |Teams 服务管理员    |   为需要访问和管理 Teams 服务管理中心的用户分配 Teams 管理员角色。 <br><br>Teams 服务管理员还可以： <br> - 管理会议 <br> - 管理会议网桥 <br> - 管理所有组织范围内的设置，包括联合身份验证、Teams 升级和 Teams 客户端设置   |
 |用户管理员     |    为需要对所有用户执行以下操作的用户分配用户管理员角色： <br> - 添加用户和组 <br> - 分配许可证 <br> - 管理大多数用户属性 <br> - 创建和管理用户视图 <br> - 更新密码过期策略 <br> - 管理服务请求 <br> - 监视服务运行状况 <br><br>  用户管理员还可以对非管理员和分配有以下角色的用户执行以下操作：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员： <br> - 管理用户名<br> - 删除和还原用户<br> - 重置密码 <br> - 强制用户注销 <br> - 更新 (FIDO) 设备密钥   |
 
-### <a name="all-roles"></a>所有角色
+### <a name="all-azure-ad-roles"></a>所有 Azure AD 角色
 
  以下是 Microsoft 365 管理中心提供的所有管理员角色的列表。
 
@@ -134,6 +128,17 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |Teams 通信支持工程师     |    读取所有呼叫参与者的呼叫记录详细信息以排查通信问题。     |
 |Teams 通信支持专员     |    仅读取特定用户的用户呼叫详细信息以排查通信问题。|
 |用户管理员     |   重置用户密码、创建和管理用户及组（包括筛选器）、管理服务请求和监视服务运行状况。|
+
+## <a name="microsoft-intune-roles-available-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心提供的 Microsoft Intune 角色
+
+|管理员角色     |应该为谁分配此角色？  |
+|---------|---------|
+|应用程序管理员     |   将应用程序管理员角色分配给管理移动应用的应用程序生命周期、配置策略管理的应用以及查看设备信息和配置文件的用户。  |
+|技术支持操作员     |   将技术支持操作员角色分配给向用户和设备分配应用程序和策略的用户。 |
+|Intune 角色管理员    |   将 Intune 角色管理员分配给可以向其他管理员分配 Intune 权限，并且可以管理自定义和内置 Intune 角色的用户。   |
+|策略和个人资料管理员     |   将策略和个人资料管理员角色分配给用户管理合规性策略、配置文件和 Apple 注册的用户。   |
+|只读操作员     |   将只读操作员角色分配给仅可查看用户、设备、注册详细信息和配置的用户。   |
+|学校管理员     |   将学校管理员角色分配给用户，以获取在 Intune 教育版中管理 Windows 10 和 iOS 设备、应用和配置的完全访问权限。   |
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft 合作伙伴的委派管理
 

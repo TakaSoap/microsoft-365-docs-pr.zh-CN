@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: ea3727bcfa90229da64db96b531885383d2bf7ed
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c01c289ad00475cfa458d0585f377287c495b0
+ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206624"
+ms.lasthandoff: 05/22/2020
+ms.locfileid: "44347791"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -40,6 +40,9 @@ ms.locfileid: "44206624"
  在邮箱上禁用垃圾邮件规则时，EOP 无法根据垃圾邮件筛选判定操作将邮件移动到 "垃圾邮件" 文件夹。**将邮件移动到 "垃圾邮件" 文件夹**或邮箱中的 "安全列表" 集合。
 
 管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可以使用 Exchange Online PowerShell 在邮箱（安全发件人列表、安全收件人列表和阻止发件人列表）上配置安全列表集合中的条目。
+
+> [!NOTE]
+> 来自用户添加到其自己的安全发件人列表中的发件人的邮件将跳过 EOP 筛选（SCL 为-1）。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请按照本主题后面的[关于 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)一节中所述的那样使用组策略。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -165,7 +168,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ## <a name="about-junk-email-settings-in-outlook"></a>关于 Outlook 中的配置垃圾邮件设置
 
-若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅适用于[Microsoft 365 Apps for enterprise、office 2019 和 office 2016 的管理模板文件（ADMX/ADML）和 Office 自定义工具](https://www.microsoft.com/download/details.aspx?id=49030)。
+若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅[管理模板文件（ADMX/ADML）和 Office 自定义工具 For Microsoft 365 Apps for enterprise、office 2019 和 office 2016](https://www.microsoft.com/download/details.aspx?id=49030)以及[如何使用组策略部署垃圾邮件设置（如安全发件人列表](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi)）。
 
 将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭**垃圾邮件中**不自动筛选**" "垃圾 \> **Junk** \> **邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
 
