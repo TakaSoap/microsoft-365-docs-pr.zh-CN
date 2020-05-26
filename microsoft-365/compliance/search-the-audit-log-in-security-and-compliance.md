@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
-ms.openlocfilehash: 34e9998ee0a17f44ba4f70d2cd1c5f1d12ce926f
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: d743a397d16e107b43c07ac1556b0a6b01c7181a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214290"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352125"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -532,7 +532,7 @@ ms.locfileid: "44214290"
 
 下表列出了可以由邮箱审核日志记录的活动。 在审核日志中自动将由邮箱所有者、委派用户或管理员执行的邮箱活动记录长达 90 天。 管理员可以为组织中的所有用户关闭邮箱审核日志记录。 在这种情况下, ，不会记录任何用户的邮箱操作。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。
 
- 你还可以使用 Exchange Online PowerShell 中的 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 来搜索邮箱活动。
+ 你还可以使用 Exchange Online PowerShell 中的 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet 来搜索邮箱活动。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -914,13 +914,13 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 - 若要获取有关已运行的 cmdlet、已使用的参数和参数值以及受影响对象的信息，可以导出搜索结果并选择“**下载所有结果**”选项。 有关详细信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md)。
 
-- 你还可以使用 Exchange Online PowerShell 中的 `Search-UnifiedAuditLog -RecordType ExchangeAdmin` 命令仅从 Exchange 管理员审核日志中返回审核记录。 运行 Exchange cmdlet 后，可能需要长达 30 分钟的时间在搜索结果中返回相应的审核日志条目。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog)。 有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
+- 你还可以使用 Exchange Online PowerShell 中的 `Search-UnifiedAuditLog -RecordType ExchangeAdmin` 命令仅从 Exchange 管理员审核日志中返回审核记录。 运行 Exchange cmdlet 后，可能需要长达 30 分钟的时间在搜索结果中返回相应的审核日志条目。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。 有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅[导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
 - 你还可以使用 Exchange 管理中心或在 Exchange Online PowerShell 中运行 **Search-AdminAuditLog** 来查看 Exchange 管理员审核日志中的事件。 这是一种具体搜索由 Exchange Online 管理员执行的活动的好方法。 有关说明，请参阅以下内容：
 
   - [查看管理员审核日志](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx)
 
-  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)
+  - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    请注意，Exchange 管理员审核日志以及审核日志中记录了相同的 Exchange 管理员活动。
 

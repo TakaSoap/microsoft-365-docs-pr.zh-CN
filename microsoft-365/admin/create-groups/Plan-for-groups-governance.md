@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Microsoft 365 组治理。
-ms.openlocfilehash: e5e3b640edd15cb46fa3da8b65141fe9f63d6399
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: c37f88cbd3f41f22c1effdd7ba482033012aff01
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322095"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351835"
 ---
 # <a name="plan-for-governance-in-groups"></a>在组中规划管理
 
@@ -327,7 +327,7 @@ Microsoft 365 组提供了您的组织可能需要的一组丰富的管理功能
 | 阶段 | 说明 |
 | --------------- | ------------------------------------------------------------ |
 | 指南 |<ul><li>确定开放或 IT led 设置模型。</li><li> 考虑基于 Azure AD 属性（如部门）创建绑定到[动态成员身份规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)的特定组</li><li> 在您的组织内定义分类，例如高度机密、机密（默认）、常规。</li><li>  根据分类（如保留和敏感度）定义策略。</li><li> SharePoint 是每个 Microsoft 365 组的内容服务。 考虑为三层保护（基准、敏感和高度机密）设计和[部署 SharePoint Online 网站](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。 有关三层保护的详细信息，请参阅[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。</li><li> 默认情况下，公共组和专用组都列在 GAL 中。 确定要在 Microsoft 团队之外的特定于 GAL 中创建的组中显示的组。  使用[remove-unifiedgroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) cmdlet 的 "HiddenFromAddressListsEnabled" 或 "HidefromExchangeClients" 可隐藏特定组。</li></ul> |
-| 后续步骤      |<ul><li>定义[使用指南](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)，以向用户介绍有助于保持其组织有效的最佳做法，并在内部内容策略上进行培训。 例如，了解分类、策略和过程。 </li><li>定义组生命周期周期必须更新组或将被删除-过期策略。</li><li>考虑创建以下自定义作业，以根据分类实施策略。</li><li>将隐私设置为私有。</li><li>禁用外部成员身份/共享。 </li><li>向[没有所有者](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)的组通知组成员的电子邮件。</li><li>强制实施所有权策略（最小2所有者）。</li><li> 根据分类定义组的保留策略。 </li><li>保留策略概述。</li><li>使用 Powershell 确定具有分类和[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)的组。</li><li>请考虑使用网站设计和网站脚本来定义使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>请考虑[使用网站设计和 Microsoft 流构建一个简单的网站目录](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)。 每当使用此网站设计创建网站时，都会捕获网站的详细信息并将其写入列表。 </li></ul>|
+| 后续步骤      |<ul><li>定义[使用指南](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)，以向用户介绍有助于保持其组织有效的最佳做法，并在内部内容策略上进行培训。 例如，了解分类、策略和过程。 </li><li>定义组生命周期周期必须更新组或将被删除-过期策略。</li><li>考虑创建以下自定义作业，以根据分类实施策略。</li><li>将隐私设置为私有。</li><li>禁用外部成员身份/共享。 </li><li>向[没有所有者](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)的组通知组成员的电子邮件。</li><li>强制实施所有权策略（最小2所有者）。</li><li> 根据分类定义组的保留策略。 </li><li>保留策略概述。</li><li>使用 Powershell 确定具有分类和[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)的组。</li><li>请考虑使用网站设计和网站脚本来定义使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>请考虑[使用网站设计和 Microsoft 流构建一个简单的网站目录](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)。 每当使用此网站设计创建网站时，都会捕获网站的详细信息并将其写入列表。 </li></ul>|
 
 ### <a name="regulated-or-enterprise"></a>管控或企业
 除了上述建议之外，还请考虑以下几个方面的 prises （如政府、金融服务或保健），其中至少部署了带有 Azure Active Directory 高级 P1/P2 许可证的企业版 E3/E5 的 Office 365。

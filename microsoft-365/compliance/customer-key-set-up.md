@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为适用于 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件的 Microsoft 365 设置客户密钥。
-ms.openlocfilehash: c9c02f697e04a5cd01ddce1546b6712091712025
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634194"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352269"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -137,7 +137,7 @@ SharePoint Online 和 OneDrive for Business：
 
 3. 请与 Microsoft 联系以完成此过程。 对于 SharePoint 和 OneDrive for Business 团队，请联系[spock@microsoft.com](mailto:spock@microsoft.com)。 对于 Exchange Online 和 Skype for Business，请联系[exock@microsoft.com](mailto:exock@microsoft.com)。 在您的电子邮件中包括以下内容：
 
-   **Subject**： \<*租户的完全限定域名*的客户密钥\>
+   **Subject**： \< *租户的完全限定域名*的客户密钥\>
 
    **正文**：要为其完成强制保留期的订阅 id。
    每个订阅的 AzProviderFeature 的输出。
@@ -312,7 +312,7 @@ Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
 -OutputFile <filename.backup>
 ```
 
-确保输出文件使用后缀`.backup`。
+确保输出文件使用后缀 `.backup` 。
   
 此 cmdlet 生成的输出文件已加密，不能在 Azure 密钥保管库外部使用。 只能将备份还原到从中获取备份的 Azure 订阅。
   
@@ -448,7 +448,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-其中*MailboxIdParameter*指定邮箱。 有关设置邮箱 cmdlet 的详细信息，请参阅[set-邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox?view=exchange-ps)。
+其中*MailboxIdParameter*指定邮箱。 有关设置邮箱 cmdlet 的详细信息，请参阅[set-邮箱](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)。
   
 ### <a name="validate-mailbox-encryption"></a>验证邮箱加密
 

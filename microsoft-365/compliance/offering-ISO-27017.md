@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1f44c46046fc107e8059cebda3388fcd775bd31e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 329bb7c4662d6449d69c6dca9ad489bdd70a0d3f
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065687"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254225"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 信息安全控制措施行为守则
 
@@ -44,26 +44,28 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- 云应用安全
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
+- Microsoft Cloud App Security
+- [Dynamics 365、Dynamics 365 和 Dynamics 365 德国](https://aka.ms/d365-compliance-list)
+- Microsoft Defender 高级威胁防护
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365、Office 365 美国政府版、Office 365 美国政府版防御和 Office 365 德国
 - PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI Embedded
+- Microsoft Stream
 - 请参阅 Office 365 中涵盖的服务的[详细列表](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 作为 ISO/IEC 27001:2013 认证过程的一部分，每年都会对 Microsoft 云服务进行 ISO/IEC 27017:2015 行为守则审核。
 
-- [Azure ISO 27017 证书](https://go.microsoft.com/fwlink/p/?linkid=2078005)
-- [Azure ISO 27017 评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 适用性声明](https://aka.ms/azureiso27017StatementofApplicability)
-- [Office 365 ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
+- [Azure ISO 27017 证书](https://aka.ms/azureiso27017cert)
+- [Azure ISO 27017 评估报告](https://aka.ms/azureiso27017report)
+- [Office 365: ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

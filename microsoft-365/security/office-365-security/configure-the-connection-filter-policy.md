@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: b9fd8c1b365f59647618e397a511873aae40146f
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213432"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352007"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -72,15 +72,15 @@ ms.locfileid: "44213432"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的网络掩码值为/24 到/32。 若要跳过 CIDR IP 掩码值/1 到/23 的垃圾邮件筛选，请参阅本主题后面的 "[跳过对 CIDR ip 的垃圾邮件筛选](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range)"。在本主题后面的 "可用范围" 部分之外。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击“保存”****。
 
    - **IP 阻止列表**：单击 "**编辑**"。 在出现的 " **IP 阻止列表**" 浮出控件中，按照**ip 允许列表**设置中的前面所述，在 "**地址" 或 "地址范围**" 框中输入单个 ip 地址、ip 地址范围或 CIDR IP。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击“保存”****。
 
    - **打开安全列表**：启用或禁用安全列表的使用，以确定将跳过垃圾邮件筛选的已知、良好的发件人。
 
-4. 完成时，请单击“保存”****。
+4. 完成后，单击“保存”****。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全 & 合规性中心查看默认连接筛选器策略
 
@@ -126,7 +126,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList 192.168.1.10,192
 Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2.10","192.169.3.0/24","192.168.4.1-192.168.4.5";Remove="192.168.1.10"}
 ```
 
-有关语法和参数的详细信息，请参阅[set-hostedconnectionfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedconnectionfilterpolicy)。
+有关语法和参数的详细信息，请参阅[set-hostedconnectionfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedconnectionfilterpolicy)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 

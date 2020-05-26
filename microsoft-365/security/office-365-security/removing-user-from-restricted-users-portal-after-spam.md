@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 370d2ff5f98b507cd819a57e4b0de613de7ab395
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035416"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351003"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -102,7 +102,7 @@ Get-BlockedSenderAddress
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-若要详细了解语法和参数，请参阅 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress)。
+若要详细了解语法和参数，请参阅 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress)。
 
 若要从“受限的用户”列表中删除用户，请将 \<emailaddress\> 替换为相应用户的电子邮件地址，并运行以下命令：
 
@@ -110,4 +110,4 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-若要详细了解语法和参数，请参阅 [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress)。
+若要详细了解语法和参数，请参阅 [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress)。

@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 695471d51e391957a5dfea8770cb1928dd39ee86
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065907"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254431"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 业务连续性管理标准
 
 ## <a name="iso-22301-overview"></a>ISO 22301 概述
 
-国际标准化组织 (ISO) 是一个独立的非政府组织，是全球最大的自愿性国际标准开发者联盟。 ISO 成立了 TC 223 社会安全技术委员会，以制定用于在发生自然灾害、重大恐怖分子袭击或电网中断等事件时保护社会（包括组织）的标准。
+国际标准化组织 (ISO) 是一个独立的非政府组织，是全球最大的自愿性国际标准开发者联盟。 ISO 成立了 TC 223 社会安全技术委员会，以制定用于在发生自然灾害、重大恐怖分子袭击或电网中断等灾难时保护社会（包括组织）的标准。
 
 ISO 22301:2012 由技术委员会于 2012 年发布，是首个帮助确保业务连续性的管理系统国际标准。 ISO 22301 是针对业务连续性的高级标准，认证证明通过符合这些严格做法，可预防、减轻、响应破坏性事件并从中恢复。
 
@@ -35,21 +35,24 @@ Microsoft 是首个获得业务连续性管理 ISO 22301 认证的超大型云�
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
-- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Genomics
-- Graph
+- [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 政府和 Dynamics 365 德国
+- Microsoft Defender 高级威胁防护
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - [Office 365 商业版、政府版和教育版](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-- [Azure 和 Azure ISO 22301 注册认证](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Azure ISO 22301 评估报告](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure、Dynamics 365 和联机服务：ISO22301 证书](https://aka.ms/azureiso22301cert)
+- [Azure、Dynamics 365 和联机服务：ISO22301 评估报告](https://aka.ms/azureiso22301report)
 - [BSI 22301 Microsoft Office 365 证书](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 第 2 阶段附录](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 步骤 2 报告](https://go.microsoft.com/fwlink/p/?linkid=2092211)

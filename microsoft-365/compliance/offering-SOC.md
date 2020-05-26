@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cc6f99dea89a5abc7f4c5bc07187c82d8999a064
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156877"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254295"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -48,30 +48,30 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 ### <a name="covered-services-for-soc-1-and-soc-2"></a>SOC 1 和 SOC 2 覆盖的服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- 云应用安全
+- Microsoft Cloud App Security
 - [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Graph
+- Microsoft Graph
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
-- Stream
+- Microsoft Stream
 - Azure DevOps Services
 
 ### <a name="covered-services-for-soc-3"></a>SOC 3 涵盖的服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Graph
+- Microsoft Cloud App Security
+- Microsoft Graph
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI
-- Stream
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -79,7 +79,7 @@ Microsoft 已获得 SOC 1 Type 2、SOC 2 Type 2 和 SOC 3 报告。 通常，SOC
 
 Microsoft 云服务会根据 SOC 1（SSAE18、ISAE 3402）、SOC 2（AT 条例 101）和 SOC 3 标准每年至少进行一次审核。
 
-#### <a name="azure-dynamics-365-cloud-app-security-flow-graph-intune-power-bi-powerapps-stream-and-microsoft-datacenters"></a>Azure、Dynamics 365、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心
+#### <a name="azure-dynamics-365-microsoft-cloud-app-security-flow-microsoft-graph-intune-power-bi-powerapps-microsoft-stream-and-microsoft-datacenters"></a>Azure、Dynamics 365、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream 和 Microsoft 数据中心
 
 - [Azure + Dynamics 365 和 Azure + Dynamics 365 政府 SOC 1 类型 2 报告](https://aka.ms/azuresoc1auditreport)
 - [Azure + Dynamics 365 和 Azure + Dynamics 365 政府 SOC 2 类型 2 报告](https://aka.ms/azuresoc2auditreport)
@@ -107,7 +107,7 @@ Microsoft 云服务会根据 SOC 1（SSAE18、ISAE 3402）、SOC 2（AT 条例 1
 
 **Azure SOC 报告多久发布一次？**
 
-Azure、Cloud App Security、Flow、Graph、Intune、Power BI、PowerApps、Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行时间窗（审计期），且每半年（周期结束日期是 3 月 31 日和 9 月 30 日）发布一次新报告。 Bridge Letter 将在 1 月（涵盖 10/1 – 12/31 这段时间）和 7 月（涵盖 4/1 – 6/30 这段时间）发布。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
+Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream 和 Microsoft 数据中心的 SOC 报告基于滚动的 12 个月运行时间窗（审计期），且每半年（周期结束日期是 3 月 31 日和 9 月 30 日）发布一次新报告。 Bridge Letter 将在 1 月（涵盖 10/1 – 12/31 这段时间）和 7 月（涵盖 4/1 – 6/30 这段时间）发布。 客户可从服务信任门户[下载](https://aka.ms/stp)最新报告。
 
 **是否需要对 Microsoft 数据中心执行我自己的审核流程？**
 

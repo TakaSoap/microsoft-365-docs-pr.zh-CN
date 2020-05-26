@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b2542f697edb28c4949b844ae32d606dba5e7a1c
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 3f733f3baf0db4d01a78e7984f44b17a5d5584e7
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214300"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254305"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 质量管理体系标准
 
@@ -33,21 +33,25 @@ ISO 9001:2015 是建立质量管理体系标准的国际标准。 它是 ISO 900
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
-- [Azure](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Genomics
-- Graph
+- [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 政府和 Dynamics 365 德国
+- Microsoft Graph
 - Intune
+- Microsoft Defender 高级威胁防护
+- Microsoft 医疗保健机器人
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI Embedded
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-- [FY19 Microsoft Azure ISO 9001 评估报告](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [FY19 Microsoft Azure ISO 9001 证书](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [查看其他审核报告](https://aka.ms/auditreports)
+- [Azure、Dynamics 365 和联机服务：ISO9001 证书](https://aka.ms/azureiso9001cert)
+- [Azure、Dynamics 365 和联机服务： ISO9001 评估报告](https://aka.ms/azureiso9001report)
+- [Azure、Dynamics 365 和联机服务： ISO9001 适用性声明 (SOA)](https://aka.ms/azureiso9001soa)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -61,7 +65,7 @@ ISO 9001:2015 是建立质量管理体系标准的国际标准。 它是 ISO 900
 
 **Microsoft 是否进行年度测试以排查基础结构故障？**
 
-是。 ISO 9001:2015 年度评估包括基础物理基础结构数据中心。 有关涵盖范围的详细信息，请[查看证书](https://www.microsoft.com/?ref=aka)。
+是。 ISO 9001:2015 年度评估包括基础物理基础结构数据中心。 有关覆盖范围的详细信息，请[查看证书](https://www.microsoft.com/?ref=aka)。
 
 **在哪里可以查看 Microsoft 的 ISO 9001:2015 合规性信息？**
 

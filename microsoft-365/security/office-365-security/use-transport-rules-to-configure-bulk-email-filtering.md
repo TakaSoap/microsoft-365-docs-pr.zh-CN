@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用邮件流规则（传输规则）在 Exchange Online Protection （EOP）中标识和筛选批量邮件（灰色邮件）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a31030ea2f844cdeb4bee68bf748a2ab8ca29dad
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213360"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352392"
 ---
-# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>使用邮件流规则在 EOP 中筛选批量电子邮件
+# <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用邮件流规则筛选批量电子邮件
 
 在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online Protection （EOP）组织中具有邮箱的 Microsoft 365 组织中，EOP 使用反垃圾邮件策略（也称为垃圾邮件筛选器策略或内容筛选器策略）来扫描入站邮件中的垃圾邮件和批量邮件（也称为 "灰色邮件"）。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -140,7 +140,7 @@ New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatt
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
 ```
 
-有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 

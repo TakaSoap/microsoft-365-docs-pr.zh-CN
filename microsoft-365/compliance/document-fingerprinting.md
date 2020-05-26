@@ -12,16 +12,16 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: 组织中的信息工作人员每天会处理大量的敏感信息。 "文档指纹"可识别贵组织中使用的标准表单，以便于您保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
-ms.openlocfilehash: 61fe5082b4808f153cc4092b429c0c5e6a54b110
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 37b5649e357f24993e41ae93db6737d980ce0c72
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42074941"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352019"
 ---
 # <a name="document-fingerprinting"></a>文档指纹
 
-组织中的信息工作人员每天会处理大量的敏感信息。 在安全&amp;合规性中心中，文档指纹可使您更轻松地通过标识在整个组织中使用的标准表单来保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
+组织中的信息工作人员每天会处理大量的敏感信息。 在安全 &amp; 合规性中心中，文档指纹可使您更轻松地通过标识在整个组织中使用的标准表单来保护此信息。 本主题介绍文档指纹背后的概念，以及如何使用 PowerShell 创建一个概念。
   
 ## <a name="basic-scenario-for-document-fingerprinting"></a>文档指纹的基本方案
 
@@ -65,7 +65,7 @@ ms.locfileid: "42074941"
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>使用 PowerShell 创建基于文档指纹的分类规则包
 
-请注意，当前可以在安全&amp;合规中心中使用 PowerShell 创建文档指纹。 若要进行连接，请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+请注意，当前可以在安全合规中心中使用 PowerShell 创建文档指纹 &amp; 。 若要进行连接，请参阅[connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 DLP 使用分类规则包来检测敏感内容。 若要创建基于文档指纹的分类规则包，请使用**DlpFingerprint**和**DlpSensitiveInformationType** cmdlet。 由于**DlpFingerprint**的结果不会存储在数据分类规则的外部，因此您始终在同一 PowerShell 会话中运行**DlpFingerprint**和**DlpSensitiveInformationType**或**DlpSensitiveInformationType**等新的结果。 以下示例基于文件 C:\My Documents\Contoso Employee Template.docx 创建新的文档指纹。 将新的指纹存储为变量，以便您可以在同一 PowerShell 会话中将其与**DlpSensitiveInformationType** cmdlet 一起使用。
   
@@ -84,13 +84,13 @@ New-DlpSensitiveInformationType -Name "Contoso Customer Confidential" -Fingerpri
 
 现在，您可以使用**DlpSensitiveInformationType** cmdlet 查找所有 DLP 数据分类规则包，在此示例中，"Contoso Customer 保密" 是 "数据分类规则包" 列表的一部分。 
   
-最后，将 "Contoso Customer 保密" 数据分类规则包添加到安全&amp;合规中心中的 DLP 策略。 本示例将一个规则添加到名为 "ConfidentialPolicy" 的现有 DLP 策略中。
+最后，将 "Contoso Customer 保密" 数据分类规则包添加到安全合规中心中的 DLP 策略 &amp; 。 本示例将一个规则添加到名为 "ConfidentialPolicy" 的现有 DLP 策略中。
 
 ```powershell
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-您还可以在 Exchange Online 中使用邮件流规则中的数据分类规则包，如下面的示例所示。 若要运行此命令，首先需要[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 另请注意，规则包从安全&amp;合规中心同步到 Exchange 管理中心需要花费一些时间。
+您还可以在 Exchange Online 中使用邮件流规则中的数据分类规则包，如下面的示例所示。 若要运行此命令，首先需要[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 另请注意，规则包从安全 &amp; 合规中心同步到 Exchange 管理中心需要花费一些时间。
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}
@@ -100,8 +100,8 @@ DLP 现在检测与 Contoso Customer 表单的 .docx 文档指纹相匹配的文
   
 有关语法和参数的信息，请参阅：
 
-- [新 DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpFingerprint)
-- [新 DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/New-DlpSensitiveInformationType)
-- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Remove-DlpSensitiveInformationType)
-- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Set-DlpSensitiveInformationType)
-- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpSensitiveInformationType)
+- [新 DlpFingerprint](https://docs.microsoft.com/powershell/module/exchange/New-DlpFingerprint)
+- [新 DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/New-DlpSensitiveInformationType)
+- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Remove-DlpSensitiveInformationType)
+- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Set-DlpSensitiveInformationType)
+- [DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/Get-DlpSensitiveInformationType)

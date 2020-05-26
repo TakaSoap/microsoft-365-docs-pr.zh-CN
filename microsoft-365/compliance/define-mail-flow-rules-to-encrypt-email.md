@@ -16,12 +16,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建邮件流规则（传输规则），以使用 Office 365 邮件加密对邮件进行加密和解密。
-ms.openlocfilehash: ec36e8ff57b45b0f6a3408d6e6bc1e07ce789ffd
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 869448ff1f5161fc71d332c1b5956015dca50fa2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943119"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351789"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>定义用于加密电子邮件的邮件流规则
 
@@ -46,9 +46,9 @@ ms.locfileid: "43943119"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
 
@@ -64,7 +64,7 @@ ms.locfileid: "43943119"
 
 7. 若要添加更多条件，请选择 "**更多选项**"，然后选择 "**添加条件**"，然后从列表中选择。
 
-   例如，若要仅在收件人在组织外部时应用规则，请选择 "**添加条件**"，然后选择 "在**组织** \>外部 **/内部的收件人是外部/内部** \> **"**。
+   例如，若要仅在收件人在组织外部时应用规则，请选择 "**添加条件**"，然后选择 "在组织外部 **/内部的收件人是外部/内部** \> **Outside the organization** \> **"**。
 
 8. 若要使用新的 OME 功能启用加密，请从**执行以下操作**，选择 "**修改邮件安全性"** ，然后选择 "**应用 Office 365 邮件加密和权限保护**"。 从列表中选择一个 RMS 模板，选择 "**保存**"，然后选择 **"确定"**。
   
@@ -78,11 +78,11 @@ ms.locfileid: "43943119"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
 
 4. In the EAC, go to **Mail flow** \> **Rules**.
 
-5. 在邮件流规则的列表中，选择要修改的规则以使用新的 OME 功能，然后选择 "**编辑** ![" "编辑](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)" 图标。
+5. 在邮件流规则的列表中，选择要修改的规则以使用新的 OME 功能，然后选择 "**编辑**" "编辑" ![ 图标 ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
 
 6. 若要使用新的 OME 功能启用加密，请从**执行以下操作**，选择 "**修改邮件安全性"** ，然后选择 "**应用 Office 365 邮件加密和权限保护**"。 从列表中选择一个 RMS 模板，选择 "**保存**"，然后选择 **"确定"**。
 
@@ -90,9 +90,9 @@ ms.locfileid: "43943119"
 
    如果要指定另一个操作，可以选择 "**添加操作**"。
 
-7. 从 "**执行以下**操作" 列表中，删除为**修改邮件安全性** \>而分配的所有操作**应用早期版本的 OME**。
+7. 从 "**执行以下**操作" 列表中，删除为**修改邮件安全性**而分配的所有操作 \> **应用早期版本的 OME**。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 ## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>创建邮件流规则，以使用新的 OME 功能删除传出电子邮件的加密
 
@@ -104,9 +104,9 @@ ms.locfileid: "43943119"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "从传出邮件中删除加密"。
 
@@ -114,7 +114,7 @@ ms.locfileid: "43943119"
 
 7. 在 **"执行以下操作**" 中，选择 "**修改邮件安全** \> **删除 Office 365 邮件加密和权限保护**"。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>创建不带新功能的 Office 365 邮件加密的邮件流规则
 
@@ -126,9 +126,9 @@ ms.locfileid: "43943119"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
 
@@ -144,7 +144,7 @@ ms.locfileid: "43943119"
 
 7. 若要添加更多条件，请选择 "**更多选项**"，然后选择 "**添加条件**"，然后从列表中选择。
 
-   例如，若要仅在收件人在组织外部时应用规则，请选择 "**添加条件**"，然后选择 "在**组织** \>外部 **/内部的收件人是外部/内部** \> **"**。
+   例如，若要仅在收件人在组织外部时应用规则，请选择 "**添加条件**"，然后选择 "在组织外部 **/内部的收件人是外部/内部** \> **Outside the organization** \> **"**。
 
 8. 若要在不使用新的 OME 功能的情况下启用加密，请在**执行以下操作**中，选择 **"修改邮件安全性** \> **应用以前版本的 OME**"，然后选择 "**保存**"。
 
@@ -156,7 +156,7 @@ ms.locfileid: "43943119"
 
 1. 连接到 Exchange Online PowerShell。 有关详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-2. 使用**new-transportrule** cmdlet 创建一个规则，并将_ApplyOME_参数设置为`$true`。
+2. 使用**new-transportrule** cmdlet 创建一个规则，并将_ApplyOME_参数设置为 `$true` 。
 
    此示例要求发送到 DrToniRamos@hotmail.com 的所有电子邮件都必须加密。
 
@@ -170,9 +170,9 @@ ms.locfileid: "43943119"
    > 
    > - _SentTo_参数指定邮件收件人（由姓名、电子邮件地址、可分辨名称等）。 在此示例中，收件人由电子邮件地址 "DrToniRamos@hotmail.com" 标识。
    > 
-   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了`NotInOrganization`该值。
+   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了该值 `NotInOrganization` 。
    
-   有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
+   有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>从加密的电子邮件答复中删除加密，而不具有新的 OME 功能
 
@@ -184,9 +184,9 @@ ms.locfileid: "43943119"
 
 2. 选择 "**管理**" 磁贴。
 
-3. 在 Microsoft 365 管理中心，选择 "**管理中心** \> " " **Exchange**"。
+3. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
 
-4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建** ![" 图标](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，转到 "**邮件流** \> **规则**"，然后选择 "**新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 "**名称**" 中，键入规则的名称，例如 "从传入邮件中删除加密"。
 
@@ -194,13 +194,13 @@ ms.locfileid: "43943119"
 
 7. 在 **"执行以下操作**" 中，选择 "**修改邮件安全性** \> **" 删除 OME 的早期版本**。
 
-8. 选择“**保存**”。
+8. 选择“保存”****。
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 创建一个规则，以从加密的电子邮件答复中删除加密，而不使用新的 OME 功能
 
 1. 连接到 Exchange Online PowerShell。 有关详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
-2. 使用**new-transportrule** cmdlet 创建一个规则，并将_RemoveOME_参数设置为`$true`。
+2. 使用**new-transportrule** cmdlet 创建一个规则，并将_RemoveOME_参数设置为 `$true` 。
 
    本示例将从发送给组织中的收件人的所有邮件中删除加密。
 
@@ -212,7 +212,7 @@ ms.locfileid: "43943119"
    > 
    > - 新规则的唯一名称是 "从传入邮件中删除加密"。
    > 
-   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，使用`InOrganization`了值值，该值指示：
+   > - _SentToScope_参数指定邮件收件人的位置。 在此示例中，使用了值 `InOrganization` 值，该值指示：
    > 
    >   - 收件人是组织中的邮箱、邮件用户、组或已启用邮件的公用文件夹。
    > 
@@ -220,7 +220,7 @@ ms.locfileid: "43943119"
    > 
    >   - 收件人的电子邮件地址位于您的组织中配置为权威域或内部中继域的接受域中，_并且_邮件是通过经过身份验证的连接发送或接收的。
 
-有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule)。
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
 
 ## <a name="related-topics"></a>相关主题
 

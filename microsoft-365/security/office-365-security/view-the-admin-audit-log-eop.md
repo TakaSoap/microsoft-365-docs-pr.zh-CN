@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 管理员可以了解如何在独立 Exchange Online Protection （EOP）中查看和搜索管理员审核日志。
-ms.openlocfilehash: 3aedebc97ccd32c1641510017a276ddbe4770633
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b3f2f2601be1ce6e2120b60d23f617ae4e174e08
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208472"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351857"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在独立 EOP 中查看管理员审核日志
 
@@ -100,7 +100,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04/2019").ToUniversalTime() -EndDate (Get-Date "10/03/2019").ToUniversalTime()
 ```
 
-有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>查看审核日志条目的详细信息
 

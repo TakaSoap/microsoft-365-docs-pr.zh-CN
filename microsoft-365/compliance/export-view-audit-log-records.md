@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 将审核日志搜索的结果导出并下载到 CSV 文件后，可以在 Excel 的 Power Query 编辑器中使用 JSON 转换功能，将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。 您还可以使用 PowerShell 搜索和导出审核日志记录。
-ms.openlocfilehash: c06fbe28a62cf04e1ffdd6ecf173d027e89b5074
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799925"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352382"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
@@ -92,7 +92,7 @@ ms.locfileid: "43799925"
 
     - 将 "**使用原始列名称作为前缀**" 复选框保留为选中状态，以将 AuditData 前缀添加到列名称中;例如，RecordType 或**AuditData**。 **AuditData** 。
 
-9. 单击“确定”****。
+9. 单击“确定”。
 
     **AuditData**列拆分为多个列。 每个新列对应于 AuditData JSON 对象中的一个属性。 该列中的每一行都包含属性的值。 如果属性不包含值，则显示*null*值。 在 Excel 中，空值的单元格为空。
   
@@ -100,7 +100,7 @@ ms.locfileid: "43799925"
 
 ## <a name="use-powershell-to-search-and-export-audit-log-records"></a>使用 PowerShell 搜索和导出审核日志记录
 
-您可以使用 Exchange Online PowerShell 中的[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) cmdlet 将审核日志搜索结果导出到 CSV 文件，而不是使用安全 & 合规中心中的审核日志搜索工具。 然后，您可以按照步骤2中描述的相同过程使用 Power Query 编辑器格式化审核日志。 使用 PowerShell cmdlet 的一个优点是，您可以使用*RecordType*参数从特定服务中搜索事件。 下面是使用 PowerShell 将审核记录导出到 CSV 文件的几个示例，以便您可以使用 Power Query 编辑器转换**AuditData**列中的 JSON 对象，如步骤2中所述。
+您可以使用 Exchange Online PowerShell 中的[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) cmdlet 将审核日志搜索结果导出到 CSV 文件，而不是使用安全 & 合规中心中的审核日志搜索工具。 然后，您可以按照步骤2中描述的相同过程使用 Power Query 编辑器格式化审核日志。 使用 PowerShell cmdlet 的一个优点是，您可以使用*RecordType*参数从特定服务中搜索事件。 下面是使用 PowerShell 将审核记录导出到 CSV 文件的几个示例，以便您可以使用 Power Query 编辑器转换**AuditData**列中的 JSON 对象，如步骤2中所述。
 
 在此示例中，运行以下命令以返回与 SharePoint 共享操作相关的所有记录。
 

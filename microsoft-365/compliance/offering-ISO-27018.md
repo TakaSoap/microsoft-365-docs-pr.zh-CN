@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c04362747a3e4767defcf746e1158849c00725b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a5e5879bf176c7be72ead3c80c91934d0a1c5a01
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065757"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254411"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保护云中个人数据的 ISO/IEC 27018 行为守则
 
@@ -43,22 +43,24 @@ Microsoft 和 ISO/IEC 27018
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 和 Dynamics 365 德国
 - Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Microsoft 365 商业版中型企业客户的高级和本地支持。
-- [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?linkid=2077751)
+- Power Automate (以前称为 Microsoft Flow)： 云服务作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德国
 - OMS Service Map
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
-- Stream
-- Azure DevOps Services
+- PowerApps 云服务：作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power BI 云服务：作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft 威胁专家
+- Microsoft Stream
 - Windows Defender ATP — 终结点检测和响应、自动调查和修正、安全分数
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
@@ -69,30 +71,18 @@ Microsoft 和 ISO/IEC 27018
 
 ### <a name="audits-and-reports"></a>审核和报告
 
-- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft 数据中心 — ISO 27001 和 27018 证书](https://go.microsoft.com/fwlink/p/?linkid=2078016)
-- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft 数据中心 — ISO 27001 和 27018 审核评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078020)
-- [Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft 数据中心 — ISO 27001 和 27018 适用性声明 (SOA) 2017](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
-- [Azure — 德国 ISO 27018 — 保护云中个人数据的行为守则 — 证书](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
+- [Azure、Dynamics 365 和联机服务：ISO27018 证书](https://aka.ms/azureiso27018cert)
+- [AAzure、Dynamics 365 和联机服务： ISO27018 评估报告](https://aka.ms/azureiso27001report)
+- [Azure 德国：ISO 27018 保护云中个人数据的行为守则证书](https://servicetrust.microsoft.com/Documents/ComplianceReports?downloadDocument=1&documentId=6a0dab80-8382-4af6-980c-ed2ed9a341c6)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 — ISO 27001、ISO 27018 和 ISO 27017 审核评估报告](https://aka.ms/o365isoreport)
+- [Office 365: ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
 - [Yammer ISO 27018 审核评估报告](https://aka.ms/YammerISO27018Auditreport)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 ISO 27018 审核评估报告](https://aka.ms/dynamics365iso27018auditreport)
-- [Dynamics 365 for Marketing ISO 27018 审核评估报告](https://aka.ms/dynamics365Marketingiso27018auditreport)
-- [Dynamics 365 Parature ISO 27018 审核评估报告](https://aka.ms/dynamics365Paratureiso27018auditreport)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
-- [Azure DevOps Services ISO 27018 证书 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
-
-### <a name="windows-defender-atp"></a>Windows Defender ATP
-
-- [Windows Defender ATP — 终结点检测和响应、自动调查和修正、安全分数 — ISO 27018 证书](https://aka.ms/windowsdefenderatpiso27018certificate)
-- [Windows Defender ATP — 终结点检测和响应、自动调查和修正、安全分数 — ISO 27001 和27018 审核评估报告](https://aka.ms/WindowsDefenderATPISO27001AuditReport)
+- [Azure DevOps Services：ISO27018 证书 PII 665918](https://go.microsoft.com/fwlink/p/?linkid=2062252)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

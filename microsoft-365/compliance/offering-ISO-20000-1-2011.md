@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a30f856f418807025eb450537633aec1616c54f
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00657f3e1e223305c4e4a4202e8ff6f612b5374e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065917"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254195"
 ---
 # <a name="isoiec-20000-12011-information-technology-service-management"></a>ISO/IEC 20000-1:2011 信息技术服务管理
 
@@ -37,24 +37,26 @@ ISO 20000-1:2011 于 2005 年由 ISO/IEC 联合小组委员会发布，并于 20
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
-- [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
-- 云应用安全
+- [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Microsoft Defender 高级威胁防护
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft PowerApps
-- Microsoft Flow
-- Microsoft Graph
-- Microsoft Genomics
 - 由世纪互联运营的 Office 365
+- Microsoft PowerApps
+- Power Automate（以前称为 Microsoft Flow）
 - Power BI
+- Power BI Embedded
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Microsoft PowerApps、Microsoft Flow、Microsoft Graph、Microsoft Genomics 和 Microsoft 数据中心的 2017 ISO 20000-1 文档
+ISO 20000-1 文档如下所示：
 
-- [评估报告](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [证书](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [适用性声明](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure、Dynamics 365 和联机服务： ISO20000-1 证书](https://aka.ms/azureiso200001cert)
+- [Azure、Dynamics 365 和联机服务：ISO20000-1 评估报告](https://aka.ms/azureiso200001report)
+- [Azure、Dynamics 365 和联机服务： ISO20000-1 可用性的声明 (SOA)](https://aka.ms/azureiso200001soa)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -77,5 +79,5 @@ Azure、Intune、Microsoft 托管桌面、Power BI、Cloud App Security、Micros
 ## <a name="resources"></a>资源
 
 - [ISO 20000-1:2011 — 服务管理](https://www.iso.org/standard/51986.html)（采购要求）
-- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

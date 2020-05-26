@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 混合环境中的用户垃圾邮件文件夹。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5b4d16c864b25c4d47910f0dd69f0ed3e71a0de
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209471"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351959"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹
 
@@ -52,13 +52,13 @@ ms.locfileid: "44209471"
 
 - 如果将邮件传递到本地 Exchange 组织中的 "垃圾邮件" 文件夹，则将通过以下设置的组合来控制邮件：
 
-  - Exchange 命令行管理程序中的[set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet 上的_SCLJunkThreshold_参数值。 默认值为4，表示 SCL 为5或更高应将邮件传递到用户的 "垃圾邮件" 文件夹。
+  - Exchange 命令行管理程序中的[set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) cmdlet 上的_SCLJunkThreshold_参数值。 默认值为4，表示 SCL 为5或更高应将邮件传递到用户的 "垃圾邮件" 文件夹。
 
-  - Exchange 命令行管理程序中的[设置邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)cmdlet 上的_SCLJunkThreshold_参数值。 默认值为空（$null），这意味着使用组织设置。
+  - Exchange 命令行管理程序中的[设置邮箱](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)cmdlet 上的_SCLJunkThreshold_参数值。 默认值为空（$null），这意味着使用组织设置。
 
   有关详细信息，请参阅[Exchange 垃圾邮件可信度级别（SCL）阈值](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/scl)。
 
-  - 是否在邮箱上启用垃圾邮件规则（_启用_的参数值将在 Exchange 命令行管理[程序的 set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration) cmdlet 中 $true）。 它是传递邮件后实际将邮件移动到 "垃圾邮件" 文件夹的垃圾邮件规则。 默认情况下，在邮箱上启用垃圾邮件规则。 有关详细信息，请参阅[在邮箱上配置 Exchange 反垃圾邮件设置](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
+  - 是否在邮箱上启用垃圾邮件规则（_启用_的参数值将在 Exchange 命令行管理[程序的 set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) cmdlet 中 $true）。 它是传递邮件后实际将邮件移动到 "垃圾邮件" 文件夹的垃圾邮件规则。 默认情况下，在邮箱上启用垃圾邮件规则。 有关详细信息，请参阅[在邮箱上配置 Exchange 反垃圾邮件设置](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
 - 若要在 Exchange 服务器上打开 EAC，请参阅 exchange [administration center In Exchange server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 Exchange 命令行管理程序，请参阅 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
 
@@ -126,7 +126,7 @@ New-TransportRule -Name "EOP SFV:SKS to SCL 6" -HeaderContainsMessageHeader "X-F
 New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
 ```
 
-有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-transportrule)。
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 titleSuffix: Office 365 Compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cbde149419320495e3848867846322733cb56f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 54ff4012767b156bc72289473e289fa4d93d1a2c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033652"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352155"
 ---
 # <a name="configure-supervision-policies-in-office-365"></a>在 Office 365 中配置监督策略
 
@@ -83,7 +83,7 @@ ms.locfileid: "44033652"
 
 若要在大型企业组织中管理受监督的用户，您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配的组配置全局监督策略的通讯组。 这使您可以使用单个策略监视数千个用户，并在新员工加入您的组织时保持监督策略的更新。
 
-1. 为具有以下属性的全局监督策略创建专用[通讯组](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps)：确保此通讯组不用于其他目的或其他 Office 365 服务。
+1. 为具有以下属性的全局监督策略创建专用[通讯组](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup?view=exchange-ps)：确保此通讯组不用于其他目的或其他 Office 365 服务。
 
     - **MemberDepartRestriction = 已关闭**。 确保用户无法将自己从通讯组中删除。
     - **MemberJoinRestriction = 已关闭**。 确保用户无法将自己添加到通讯组。
@@ -124,7 +124,7 @@ ms.locfileid: "44033652"
   
 ### <a name="add-members-to-the-supervisory-review-role-group"></a>将成员添加到监管审核角色组
 
-1. 在组织[https://protection.office.com](https://protection.office.com)中使用管理员帐户的凭据进行登录。
+1. [https://protection.office.com](https://protection.office.com)在组织中使用管理员帐户的凭据进行登录。
 
 2. 在安全 & 合规性中心中，转到 "**权限**"。
 
@@ -134,11 +134,11 @@ ms.locfileid: "44033652"
 
 ### <a name="create-a-new-role-group"></a>创建新的角色组
 
-1. 在组织[https://protection.office.com/permissions](https://protection.office.com/permissions)中使用管理员帐户的凭据进行登录。
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在组织中使用管理员帐户的凭据进行登录。
 
-2. 在安全 & 合规性中心中，转到 "**权限**"，然后**+** 单击 "添加" （）。
+2. 在安全 & 合规性中心中，转到 "**权限**"，然后单击 "添加" （ **+** ）。
 
-3. 在 "**角色**" 部分中，单击**+**"添加" （），然后向下滚动到 "**监察审核管理员**"。 将此角色添加到角色组。
+3. 在 "**角色**" 部分中，单击 "添加" （ **+** ），然后向下滚动到 "**监察审核管理员**"。 将此角色添加到角色组。
 
 4. 在 "**成员**" 部分，添加要为组织管理通信监督的人员。
 
@@ -158,7 +158,7 @@ ms.locfileid: "44033652"
 
 ### <a name="create-custom-sensitive-information-types"></a>创建自定义敏感信息类型
 
-1. 创建新的敏感信息类型，并将您的自定义词典添加到安全 & 合规性中心。 导航到 "**分类** \> " "**敏感信息**类型"，然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作：
+1. 创建新的敏感信息类型，并将您的自定义词典添加到安全 & 合规性中心。 导航到 "**分类**" " \> **敏感信息**类型"，然后按照新的 "**敏感信息类型" 向导**中的步骤操作。 你将在此处执行以下操作：
 
     - 定义敏感信息类型的名称和说明
     - 定义邻近度、置信度和主要模式元素
@@ -167,11 +167,11 @@ ms.locfileid: "44033652"
 
     有关更多详细信息，请参阅[创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)和[创建关键字词典](create-a-keyword-dictionary.md)
 
-    创建自定义词典/词典之后，可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpkeyworddictionary) cmdlet 查看配置的关键字，也可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpkeyworddictionary) cmdlet 添加和删除术语。
+    创建自定义词典/词典之后，可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/get-dlpkeyworddictionary) cmdlet 查看配置的关键字，也可以使用[DlpKeywordDictionary](https://docs.microsoft.com/powershell/module/exchange/set-dlpkeyworddictionary) cmdlet 添加和删除术语。
 
 ## <a name="step-4-set-up-a-supervision-policy-required"></a>步骤4：设置监督策略（必需）
   
-1. 在组织[https://protection.office.com](https://protection.office.com)中使用管理员帐户的凭据进行登录。
+1. [https://protection.office.com](https://protection.office.com)在组织中使用管理员帐户的凭据进行登录。
 
 2. 在安全 & 合规性中心中，选择 "**监督**"。
   
@@ -196,5 +196,5 @@ ms.locfileid: "44033652"
     >[!NOTE]
     >已定义策略的电子邮件将在接近实时的情况中进行处理，并且可以在配置策略后立即进行测试。 Microsoft 团队中的聊天可能需要长达24小时才能在策略中完全处理。 
 
-3. 以通信监督策略中指定的审阅者的形式登录 Microsoft 365。 导航到 "**监控** > "*您的自定义策略* > **打开**以查看该策略的报告。
+3. 以通信监督策略中指定的审阅者的形式登录 Microsoft 365。 导航到 "**监控**"  >  *您的自定义策略*  >  **打开**以查看该策略的报告。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e18635b9b9d090dbc2808b5b8142b59ec1f29c6e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224585"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351971"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -175,17 +175,17 @@ ms.locfileid: "44224585"
 
 1. 使用远程 PowerShell 连接到 Exchange 服务器。 按照[使用远程 PowerShell 连接到 Exchange 服务器](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)中的步骤操作。
 
-2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) cmdlet。
+2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet。
 
-3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
+3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中邮箱的步骤
 
 1. 按照 "[使用 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)" 中的步骤操作。
 
-2. 如果要完全删除单个规则、多个规则或来自一个邮箱的所有规则，请使用 "[删除收件箱" 规则](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule)cmdlet。
+2. 如果要完全删除单个规则、多个规则或来自一个邮箱的所有规则，请使用 "[删除收件箱" 规则](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)cmdlet。
 
-3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
+3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
 
 ## <a name="how-to-minimize-future-attacks"></a>如何最大限度地减少未来攻击
 

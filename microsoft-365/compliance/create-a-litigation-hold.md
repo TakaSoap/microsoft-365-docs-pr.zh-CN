@@ -14,12 +14,12 @@ search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 了解如何将邮箱置于诉讼保留状态，以在调查过程中保留所有邮箱内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3ea5c07065788e342edcd0b5c70ef9dcaae48e16
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035814"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351047"
 ---
 # <a name="create-a-litigation-hold"></a>创建诉讼保留
 
@@ -35,7 +35,7 @@ ms.locfileid: "44035814"
     
 - 用户主和存档邮箱中的项目将保留
     
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 - 若要在诉讼保留中放置 Exchange Online 邮箱，必须为其分配 Exchange Online 计划2许可证。 如果向某个邮箱分配了 Exchange Online 计划1许可证，则必须为其分配一个单独的 Exchange Online 存档许可证以将其置于保留状态。
     
@@ -44,7 +44,7 @@ ms.locfileid: "44035814"
 
 以下是使用 Exchange 管理中心将邮箱置于诉讼保留状态的步骤。
 
-1. 转到[https://outlook.office.com/ecp](https://outlook.office.com/ecp)并使用全局管理员帐户登录。
+1. 转到 [https://outlook.office.com/ecp](https://outlook.office.com/ecp) 并使用全局管理员帐户登录。
 
 2. 单击左侧导航窗格中的 "**收件人 > 邮箱**"。
 
@@ -78,7 +78,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-有关详细信息，请参阅 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox)。
+有关详细信息，请参阅 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
 
 ## <a name="how-does-litigation-hold-work"></a>诉讼保留的工作原理是什么？
 

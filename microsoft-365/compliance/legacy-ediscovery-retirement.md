@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 48dbbd86071f8b07fa3dbf3a699f0d7e085fd50b
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943341"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351913"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 
@@ -33,18 +33,18 @@ ms.locfileid: "43943341"
 
 - 支持就地电子数据展示和就地保留的 Exchange Online PowerShell cmdlet （这些 cmdlet 共同标识为 **-new-mailboxsearch* cmdlet）。 这包括以下 cmdlet：
 
-  - [新 New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-mailboxsearch)
+  - [新 New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
-  - [启动-New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-mailboxsearch)
+  - [启动-New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/start-mailboxsearch)
 
-  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/stop-mailboxsearch)
+  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/stop-mailboxsearch)
 
-  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-mailboxsearch)
+  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch)和[new-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/remove-mailboxsearch) cmdlet 将在其他 * * * *-new-mailboxsearch * * （cmdlet 已停用之后提供，以便您可以使用它们来帮助您过渡到其他电子数据展示和保留工具。 但是，在某个特定日期（如下所示）后，Microsoft 支持将不再支持这两个 cmdlet。
+   > [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch)和[new-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) cmdlet 将在其他 * * * *-new-mailboxsearch * * （cmdlet 已停用之后提供，以便您可以使用它们来帮助您过渡到其他电子数据展示和保留工具。 但是，在某个特定日期（如下所示）后，Microsoft 支持将不再支持这两个 cmdlet。
 
-- Exchange Online PowerShell 中的[搜索邮箱](https://docs.microsoft.com/powershell/module/exchange/mailboxes/search-mailbox?view=exchange-ps)cmdlet。
+- Exchange Online PowerShell 中的[搜索邮箱](https://docs.microsoft.com/powershell/module/exchange/search-mailbox?view=exchange-ps)cmdlet。
 
 - Exchange Web Services API 中的以下操作：
 
@@ -146,7 +146,7 @@ ms.locfileid: "43943341"
   </tr>
 <tr class="odd">
 <td>还原 "可恢复的项目" 文件夹中的项目</td>
-  <td><a href="https://docs.microsoft.com/powershell/module/exchange/mailboxes/Restore-RecoverableItems">Restore-RecoverableItems</td>
+  <td><a href="https://docs.microsoft.com/powershell/module/exchange/Restore-RecoverableItems">Restore-RecoverableItems</td>
   <td>您可以还原邮箱中永久删除的项目（也称为<i>软删除</i>的项目），只要项目的已删除邮件保留期尚未过期。 有关详细信息，请参阅<a href="https://docs.microsoft.com/Exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder">Exchange Online 中的 "可恢复的项目" 文件夹</a>。</td>
 </tr>
 </tbody>
@@ -168,9 +168,9 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-New-mailboxsearch cmdlet
 
-根据在 Exchange 管理中心中的2017年7月1日宣布的原始通知，就地电子数据展示 & 保留功能和相应** \*的 new-mailboxsearch** cmdlet 将被停用。 这些 cmdlet 使用户能够搜索、保留和导出适用于法律、法规和公共请求的邮箱内容。
+根据在 Exchange 管理中心中的2017年7月1日宣布的原始通知，就地电子数据展示 & 保留功能和相应** \* 的 new-mailboxsearch** cmdlet 将被停用。 这些 cmdlet 使用户能够搜索、保留和导出适用于法律、法规和公共请求的邮箱内容。
 
-由于这些功能现已在[<span class="underline">Microsoft 365 合规性中心</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)和 Office 365 安全性 & 合规性中心 PowerShell 中提供了改进的性能和可伸缩性，因此您应使用这些改进的 cmdlet。 这些 cmdlet 包括[<span class="underline"> \*-get-compliancecase</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase)、 [<span class="underline"> \*-new-compliancesearch</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)、 [<span class="underline"> \*-CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)、 [<span class="underline"> \*-new-caseholdrule</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule)和[<span class="underline"> \*-new-compliancesearchaction</span>](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)。
+由于这些功能现已在[<span class="underline">Microsoft 365 合规性中心</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)和 Office 365 安全性 & 合规性中心 PowerShell 中提供了改进的性能和可伸缩性，因此您应使用这些改进的 cmdlet。 这些 cmdlet 包括[<span class="underline"> \* -get-compliancecase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)、 [<span class="underline"> \* -new-compliancesearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)、 [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)、 [<span class="underline"> \* -new-caseholdrule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)和[<span class="underline"> \* -new-compliancesearchaction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 
@@ -203,9 +203,9 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 <tbody>
 <tr class="odd">
 <td>搜索和导出</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch"><span class="underline">*-New-compliancesearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction"><span class="underline">*-New-compliancesearchaction</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch"><span class="underline">*-New-compliancesearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction"><span class="underline">*-New-compliancesearchaction</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
 <p> </p></td>
 <td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和导出内容。 您可以使用<strong>new-</strong>、 <strong>Get</strong>和<strong>new-compliancesearch</strong> cmdlet 来创建新搜索并查看搜索估计。 然后，您可以使用<strong>new-compliancesearchaction</strong> cmdlet 导出搜索结果。 您仍需使用 Microsoft 365 合规性中心中的核心电子数据展示工具将这些搜索结果下载到您的本地计算机上。</p>
 <p>
@@ -213,9 +213,9 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 </tr>
 <tr class="even">
 <td>保留邮箱中的内容</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdrule"><span class="underline">*-New-caseholdrule</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy"><span class="underline">*-CaseHoldPolicy</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule"><span class="underline">*-New-caseholdrule</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancecase"><span class="underline">*-Get-compliancecase</span></a></p>
 <p> </p></td>
 <td><p>Microsoft 365 合规性中心中的保留必须与 Get-compliancecase 相关联。 首先，创建合规性事例，然后创建 CaseHoldPolicy 和 New-caseholdrule。</p>
 <p><strong>注意：</strong>创建没有创建 New-caseholdrule 的 CaseHoldPolicy 将使保留不可操作，直到创建 New-caseholdrule 并将其与 CaseHoldPolicy 关联。 有关详细信息，请参阅 cmdlet 文档。</p></td>
@@ -239,7 +239,7 @@ Microsoft 365 合规性中心还使用[合规性边界](set-up-compliance-bounda
 
 **我们使用复制搜索来导出电子邮件或即时消息，以供其他电子数据展示和法律调查使用。停用这些 cmdlet 后还有哪些其他选项？**
 
-[<span class="underline">Microsoft Graph api</span>](https://developer.microsoft.com/en-us/graph)提供了多种方法，用于提取用于分析的数据，以及与使用** \*-new-mailboxsearch** cmdlet 相比更具弹性和可伸缩性的其他目的。
+[<span class="underline">Microsoft Graph api</span>](https://developer.microsoft.com/en-us/graph)提供了多种方法，用于提取用于分析的数据，以及与使用** \* -new-mailboxsearch** cmdlet 相比更具弹性和可伸缩性的其他目的。
 
 **如何将我的搜索和保留迁移到 Microsoft 365 合规性中心？**
 
@@ -282,16 +282,16 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 <tbody>
 <tr class="odd">
 <td>搜索邮箱</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-New-compliancesearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-New-compliancesearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
 <p></a></p></td>
 <td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和导出内容。 您可以使用<strong>new-</strong>、 <strong>Get</strong>和<strong>new-compliancesearch</strong> cmdlet 来创建新搜索并查看搜索估计。 然后，可以使用<strong>new-compliancesearchaction-export</strong>命令导出搜索结果。 您仍需使用 Microsoft 365 合规性中心中的核心电子数据展示工具将这些搜索结果下载到您的本地计算机上。</p></p>
 </td>
 </tr>
 <tr class="even">
 <td>清除邮箱中的邮件</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch?view=exchange-ps"><span class="underline">*-New-compliancesearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-New-compliancesearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
 <p></p></td>
 <td><p>New-compliancesearch 和 New-compliancesearchaction cmdlet 一起使用可帮助您搜索和清除内容。 您可以使用<strong>new-compliancesearch</strong>和<strong>new-compliancesearch</strong> cmdlet 创建和运行搜索，然后您可以使用<strong>new-compliancesearchaction-PurgeType</strong>命令清除内容的内容。 有关详细信息，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">搜索和删除邮件</span></a>。</p>
 </td>
@@ -313,7 +313,7 @@ Exchange Online PowerShell 中的**搜索邮箱**cmdlet 将被停用，因为最
 
 ## <a name="exchange-web-services-api-operations"></a>Exchange Web 服务 API 操作
 
-Exchange Web Services API 中的这些操作由 exchange 管理中心中的 "就地电子数据展示 & 保留" 功能使用，并** \*** 在 exchange Online PowerShell 中使用 new-mailboxsearch cmdlet。 在停用其他旧的电子数据展示工具时，它们也会被停用。
+Exchange Web Services API 中的这些操作由 Exchange 管理中心中的 "就地电子数据展示 & 保留" 功能使用，并在 Exchange Online PowerShell 中使用** \* new-mailboxsearch** cmdlet。 在停用其他旧的电子数据展示工具时，它们也会被停用。
 
 ### <a name="scope-of-affected-organizations"></a>受影响组织的范围
 

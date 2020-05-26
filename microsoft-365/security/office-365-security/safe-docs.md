@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 ATP 中的安全文档。
-ms.openlocfilehash: 11c2736edee3dd1fcbc2560d5fa574def05a8f6e
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: f792b1acbdacfd29db5bbbf377f41396c35e3f17
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213112"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350947"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 高级威胁防护安全文档
 
@@ -55,7 +55,7 @@ ms.locfileid: "44213112"
 
    - **允许用户在受保护的视图中单击，即使安全文档将文件标识为恶意文件**也是如此：我们建议您不要启用此选项。
 
-4. 完成时，请单击“保存”****。
+4. 完成后，单击“保存”****。
 
 ![ATP 安全附件页面](../../media/safe-docs.png)
 
@@ -77,7 +77,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$f
 Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 ```
 
-有关语法和参数的详细信息，请参阅[AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-atppolicyforo365)。
+有关语法和参数的详细信息，请参阅[AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)。
 
 ### <a name="how-do-i-know-this-worked"></a>我如何知道这有效？
 

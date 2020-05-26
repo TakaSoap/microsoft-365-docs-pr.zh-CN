@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全与合规中心创建并导入 DLP 的自定义敏感信息类型。
-ms.openlocfilehash: 536662737e2e3fc4fc2796b616adf59b544b2376
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 187a95eb460b18fc05b2608f4a3adcfee645c6ab
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327784"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352145"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>使用安全与合规中心 PowerShell 创建自定义敏感信息类型
 
@@ -348,7 +348,7 @@ Version 元素也很重要。当你首次上传规则包时，Microsoft 365 会�
 
 之前，你可能使用 Exchange Online PowerShell 来导入 DLP 的自定义敏感信息类型。而现在，自定义敏感信息类型可同时在 Exchange 管理中心和安全与合规中心使用。作为该项改进的一部分，你应使用安全与合规中心 PowerShell 来导入自定义敏感信息类型 - 不可再从 Exchange PowerShell 中导入它们。自定义敏感信息类型将继续像之前一样发挥作用，但是可能 1 小时（最长时间）后，在安全与合规中心对自定义敏感信息所作的更改才会在 Exchange 管理中心显示。
   
-请注意，在安全与合规中心，要使用 **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** cmdlet 上传规则包。（以前，在 Exchange 管理中心，使用的是 **ClassificationRuleCollection**` cmdlet。） 
+请注意，在安全与合规中心，要使用 **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage?view=exchange-ps)** cmdlet 上传规则包。（以前，在 Exchange 管理中心，使用的是 **ClassificationRuleCollection**` cmdlet。） 
   
 ## <a name="upload-your-rule-package"></a>上传规则包
 
@@ -372,20 +372,20 @@ New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "PathToU
 New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\My Documents\MyNewRulePack.xml" -Encoding Byte) -ReadCount 0
 ```
 
-    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpsensitiveinformationtyperulepackage).
+    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
 > [!NOTE]
 > 自定义敏感信息类型集合的限制是 10。
 
 4. 若要验证是否已成功新建敏感信息类型，请按以下任一步骤操作：
 
-  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证新规则包是否已列出：
+  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证新规则包是否已列出：
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
 ``` 
 
-  - Run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps)，验证敏感信息类型是否已列出：
+  - Run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps)，验证敏感信息类型是否已列出：
 
 ```powershell
 Get-DlpSensitiveInformationType
@@ -393,7 +393,7 @@ Get-DlpSensitiveInformationType
 
     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
 
-  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet：
+  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet：
 
 ```powershell
 Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -454,7 +454,7 @@ DLP 使用搜索爬网程序，对网站内容中的敏感信息进行标识和�
 
 1. [连接到安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771)
 
-2. 若要删除自定义规则包，请使用 [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
+2. 若要删除自定义规则包，请使用 [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
 
 ```powershell
 Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
@@ -468,17 +468,17 @@ Remove-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageIdentity"
 Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule Pack"
 ```
 
-    For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/remove-dlpsensitiveinformationtyperulepackage).
+    For detailed syntax and parameter information, see [Remove-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage).
 
 3. 若要验证是否已成功删除自定义敏感信息类型，请执行以下任意步骤：
 
-  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证规则包不再列出：
+  - 运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，验证规则包不再列出：
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
 ``` 
 
-  - 运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，验证已删除的规则包中的敏感信息类型不再列出：
+  - 运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，验证已删除的规则包中的敏感信息类型不再列出：
 
 ```powershell
 Get-DlpSensitiveInformationType
@@ -486,7 +486,7 @@ Get-DlpSensitiveInformationType
 
     For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
 
-  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet ，验证敏感信息类型是否不再列出：
+  - 将 \<Name\> 替换为敏感信息类型的 Name 值（例如，员工 ID），然后运行 [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet ，验证敏感信息类型是否不再列出：
 
 ```powershell
 Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -509,7 +509,7 @@ Get-DlpSensitiveInformationType -Identity "<Name>"
 > [!NOTE]
 > 如果有 XML 文件的副本 （例如，只需创建并导入它），可跳到下一步来修改 XML 文件。
 
-1. 如果你还不确定，请运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，查找自定义规则包的名称：
+1. 如果你还不确定，请运行 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet，查找自定义规则包的名称：
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
@@ -518,7 +518,7 @@ Get-DlpSensitiveInformationTypeRulePackage
 > [!NOTE]
 > 包含内置敏感信息类型的内置规则包被称为 Microsoft 规则包。 包含你在“安全与合规中心” UI中创建的自定义敏感信息类型的规则包称为 Microsoft.SCCManaged.CustomRulePack。
 
-2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，将自定义规则包存储到变量：
+2. 使用 [Get-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet，将自定义规则包存储到变量：
 
 ```powershell
 $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "RulePackageName"
@@ -548,13 +548,13 @@ Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Valu
 
 #### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>步骤 3：将更新的 XML 文件导回现有规则包。
 
-若要将更新的 XML 导回现有规则包，请使用 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
+若要将更新的 XML 导回现有规则包，请使用 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage?view=exchange-ps) cmdlet：
 
 ```powershell
 Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Path "C:\My Documents\External Sensitive Info Type Rule Collection.xml" -Encoding Byte -ReadCount 0))
 ```
 
-有关语法和参数的详细信息，请参阅 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/set-dlpsensitiveinformationtyperulepackage)。
+有关语法和参数的详细信息，请参阅 [Set-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage)。
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>参考：规则包 XML 架构定义
 

@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: 独立 Exchange Online Protection （EOP）组织中的管理员可以了解如何在 Exchange 管理中心（EAC）和独立 Exchange Online Protection （EOP） PowerShell 中创建、修改和删除通讯组和启用邮件的安全组。
-ms.openlocfilehash: fc3f3807216b269a9868e87c5ec784d75385f878
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209015"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352187"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -93,7 +93,7 @@ ms.locfileid: "44209015"
 
 3. 在打开的 "通讯组属性" 页上，单击下列选项卡之一以查看或更改属性。
 
-   完成时，请单击“保存”****。
+   完成后，单击“保存”****。
 
 #### <a name="general"></a>常规
 
@@ -147,7 +147,7 @@ Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurit
 Get-DistributionGroupMember -Identity <GroupIdentity>
 ```
 
-有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)" 和 " [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-distributiongroupmember)"。
+有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/get-recipient)" 和 " [get-distributiongroupmember](https://docs.microsoft.com/powershell/module/exchange/get-distributiongroupmember)"。
 
 ### <a name="use-standalone-eop-powershell-to-create-groups"></a>使用独立的 EOP PowerShell 创建组
 
@@ -173,7 +173,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 New-EOPDistributionGroup -Name "IT Administrators" -Alias itadmin -Members @("michelle@contoso.com","laura@contoso.com","julia@contoso.com") -ManagedBy "chris@contoso.com"
 ```
 
-有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/New-EOPDistributionGroup)。
+有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/New-EOPDistributionGroup)。
 
 ### <a name="use-standalone-eop-powershell-to-modify-groups"></a>使用独立的 EOP PowerShell 修改组
 
@@ -207,7 +207,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopdistributiongroup)和[EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/update-eopdistributiongroupmember)。
+有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup)和[EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember)。
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>使用远程 Windows PowerShell 删除组
 
@@ -217,7 +217,7 @@ Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMem
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopdistributiongroup)。
+有关语法和参数的详细信息，请参阅[set-eopdistributiongroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 

@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在独立 Exchange Online Protection （EOP）中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录该报告，EOP 记录每个事件。
-ms.openlocfilehash: f5641e9900c786f976d05cdeeec148caab12a03d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209171"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350935"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在独立 EOP 中运行管理员角色组报告
 
@@ -115,7 +115,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 如果您的搜索返回了多个日志条目，我们建议使用 Exchange Online PowerShell 中提供的过程**来搜索审核日志条目，并**在本主题后面的内容中将结果发送给收件人。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
 
-有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog)。
+有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>查看审核日志条目的详细信息
 

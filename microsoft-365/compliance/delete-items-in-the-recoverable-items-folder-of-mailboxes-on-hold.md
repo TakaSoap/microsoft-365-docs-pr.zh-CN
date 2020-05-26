@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 223c589d191eef14662b7e19aa5ed113db9ff3b2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232051"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352177"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -272,7 +272,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>步骤5：删除 "可恢复的项目" 文件夹中的项目
 
-现在，您已准备好在 "可恢复的项目" 文件夹中实际删除项目，方法是使用 Security & 合规性中心中的[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)和[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction) cmdlet。 
+现在，您已准备好在 "可恢复的项目" 文件夹中实际删除项目，方法是使用 Security & 合规性中心中的[new-compliancesearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)和[new-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction) cmdlet。 
 
 若要执行此操作，请参阅[搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
 
@@ -294,7 +294,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
 
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>步骤6：将邮箱还原到其以前的状态
 
-最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 具体包括：
+最后一步是将邮箱还原回其以前的配置。 这意味着重置您在步骤2中更改的属性，并重新应用您在步骤3中删除的保留。 这包括：
   
 - 将已删除项目的保留期更改回其以前的值。 或者，您可以仅将此设置保留为30天，即 Exchange Online 中的最大值。
     

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下，邮箱审核日志记录处于打开状态（也称为默认邮箱审核或邮箱审核默认情况下启用）。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 458e5c9797874f35e99c09edbc3ef45753132cba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631727"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352105"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -98,7 +98,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 - 复选标记 ( ![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)）表示可以为登录类型记录邮箱操作（并非所有操作都适用于所有登录类型）。
 
-- 在复选标记<sup>\*</sup>后面有一个星号（）表示邮箱操作在默认情况下会记录在登录类型中。
+- 在复选标记后面有一个星号（ <sup>\*</sup> ）表示邮箱操作在默认情况下会记录在登录类型中。
 
 - 请记住，对邮箱具有完全访问权限的管理员被视为代理。
 
@@ -153,19 +153,19 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 默认情况之下的邮箱审核将新的*DefaultAuditSet*属性添加到所有邮箱。 此属性的值指示是否在邮箱上审核默认邮箱操作（由 Microsoft 管理）。
 
-若要在用户邮箱或共享邮箱上显示值， \<请\>将 MailboxIdentity 替换为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下命令：
+若要在用户邮箱或共享邮箱上显示值，请将 MailboxIdentity 替换为 \< \> 邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下命令：
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-若要在 Microsoft 365 组邮箱中显示值， \<请\>将 MailboxIdentity 替换为共享邮箱的名称、别名或电子邮件地址，并在 Exchange Online PowerShell 中运行以下命令：
+若要在 Microsoft 365 组邮箱中显示值，请将 MailboxIdentity 替换为 \< \> 共享邮箱的名称、别名或电子邮件地址，并在 Exchange Online PowerShell 中运行以下命令：
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
 ```
 
-该值`Admin, Delegate, Owner`指示：
+该值 `Admin, Delegate, Owner` 指示：
 
 - 审核所有三种登录类型的默认邮箱操作。 这是你在 Microsoft 365 组邮箱中看到的唯一值。
 
@@ -173,11 +173,11 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 如果管理员曾更改过为登录类型审核的邮箱操作（通过使用**设置邮箱**cmdlet 上的*AuditAdmin*、 *AuditDelegate*或*AuditOwner*参数），则该属性值将有所不同。
 
-例如，用户邮箱或`Owner`共享邮箱上的*DefaultAuditSet*属性的值表示：
+例如， `Owner` 用户邮箱或共享邮箱上的*DefaultAuditSet*属性的值表示：
 
 - 审核邮箱所有者的默认邮箱操作。
 
-- 已从默认操作更改了`Delegate`和`Admin`登录类型的已审核邮箱操作。
+- 已 `Delegate` `Admin` 从默认操作更改了和登录类型的已审核邮箱操作。
 
 *DefaultAuditSet*属性的空值表示已在用户邮箱或共享邮箱上更改了所有三种登录类型的邮箱操作。
 
@@ -185,10 +185,10 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>显示正在登录邮箱的邮箱操作
 
-若要查看当前登录用户邮箱或共享邮箱的邮箱操作，请将 MailboxIdentity \<\>替换为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下一个或多个命令。
+若要查看当前登录用户邮箱或共享邮箱的邮箱操作，请将 MailboxIdentity 替换 \< \> 为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下一个或多个命令。
 
 > [!NOTE]
-> 虽然您可以将此`-GroupMailbox`开关添加到 Microsoft 365 组邮箱的以下**Get 邮箱**命令中，但不相信返回的值。 本主题前面的 " [microsoft 365 组邮箱的邮箱操作](#mailbox-actions-for-microsoft-365-group-mailboxes)" 一节中介绍了为 Microsoft 365 组邮箱审核的默认和静态邮箱操作。
+> 虽然您可以将此 `-GroupMailbox` 开关添加到 Microsoft 365 组邮箱的以下**Get 邮箱**命令中，但不相信返回的值。 本主题前面的 " [microsoft 365 组邮箱的邮箱操作](#mailbox-actions-for-microsoft-365-group-mailboxes)" 一节中介绍了为 Microsoft 365 组邮箱审核的默认和静态邮箱操作。
 
 #### <a name="owner-actions"></a>所有者操作
 
@@ -223,9 +223,9 @@ Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdm
 
 您可以使用两种不同的方法来指定邮箱操作：
 
-- 使用以下语法*替换*（覆盖）现有邮箱操作： `action1,action2,...actionN`。
+- 使用以下语法*替换*（覆盖）现有邮箱操作： `action1,action2,...actionN` 。
 
-- 使用以下语法在不影响其他现有值的情况下*添加或删除*邮箱操作： `@{Add="action1","action2",..."actionN"}`或`@{Remove="action1","action2",..."actionN"}`。
+- 使用以下语法在不影响其他现有值的情况下*添加或删除*邮箱操作： `@{Add="action1","action2",..."actionN"}` 或 `@{Remove="action1","action2",..."actionN"}` 。
 
 此示例通过使用 SoftDelete 和 HardDelete 覆盖默认操作来更改名为 "Gabriela Laureano" 的邮箱的管理员邮箱操作。
 
@@ -323,7 +323,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 - 不会记录绕过用户执行的管理操作。
 
-若要绕过特定用户的邮箱审核日志记录\<，\>请将 MailboxIdentity 替换为用户的名称、电子邮件地址、别名或用户主体名称（用户名），并运行以下命令：
+若要绕过特定用户的邮箱审核日志记录，请将 MailboxIdentity 替换为 \< \> 用户的名称、电子邮件地址、别名或用户主体名称（用户名），并运行以下命令：
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -343,16 +343,16 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
   若要检索没有 E5 许可证的用户的邮箱审核日志条目，可以执行以下操作：
 
-  - 手动启用单个邮箱的邮箱审核（运行命令`Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`）。 执行此操作后，您可以在安全 & 合规性中心中或通过 Office 365 管理活动 API 使用审核日志搜索。
+  - 手动启用单个邮箱的邮箱审核（运行命令 `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true` ）。 执行此操作后，您可以在安全 & 合规性中心中或通过 Office 365 管理活动 API 使用审核日志搜索。
   
     > [!NOTE]
-    > 如果邮箱审核在邮箱上似乎已启用，但您的搜索未返回任何结果，请将_AuditEnabled_参数的值更改为`$false` ，然后再更改`$true`回。
+    > 如果邮箱审核在邮箱上似乎已启用，但您的搜索未返回任何结果，请将_AuditEnabled_参数的值更改为 `$false` ，然后再更改回 `$true` 。
   
   - 在 Exchange Online PowerShell 中使用以下 cmdlet：
 
-    - [搜索-search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog)以搜索特定用户的邮箱审核日志。
+    - [搜索-search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog)以搜索特定用户的邮箱审核日志。
 
-    - [New-mailboxauditlogsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/new-mailboxauditlogsearch)搜索特定用户的邮箱审核日志，并将结果通过电子邮件发送给指定的收件人。
+    - [New-mailboxauditlogsearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxauditlogsearch)搜索特定用户的邮箱审核日志，并将结果通过电子邮件发送给指定的收件人。
 
   - 使用 exchange Online 中的 Exchange 管理中心（EAC）执行以下操作：
 
@@ -362,11 +362,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 - 默认情况下，邮箱审核日志记录会在被删除前的90天后保留。 您可以使用 Exchange Online PowerShell 中的 "**设置邮箱**" cmdlet 上的*AuditLogAgeLimit*参数更改审核日志记录的期限。 但是，增加此值不会允许您在审核日志中搜索超过90天的事件。
 
-  如果增加期限，则需要使用 Exchange Online PowerShell 中的[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) cmdlet 在用户的邮箱审核日志中搜索早于90天的记录。
+  如果增加期限，则需要使用 Exchange Online PowerShell 中的[search-mailboxauditlog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet 在用户的邮箱审核日志中搜索早于90天的记录。
 
 - 如果您已在邮箱审核之前对邮箱的*AuditLogAgeLimit*属性进行了更改，则该邮箱的现有审核日志期限不会发生更改。 也就是说，默认情况下邮箱审核不会影响邮箱审核记录的当前期限。
 
-- 若要更改 Microsoft 365 组邮箱上的*AuditLogAgeLimit*值，需要将该`-GroupMailbox`开关包含在 "**设置邮箱**" 命令中。
+- 若要更改 Microsoft 365 组邮箱上的*AuditLogAgeLimit*值，需要将该开关包含 `-GroupMailbox` 在 "**设置邮箱**" 命令中。
 
 - 邮箱审核日志记录存储在每个用户邮箱的 "可恢复的项目" 文件夹中的子文件夹（称为*审核*）中。 请记住以下有关邮箱审核记录和 "可恢复的项目" 文件夹的事项：
 

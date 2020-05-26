@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 了解如何管理 Exchange Online Protection （EOP）中的邮件用户，包括使用目录同步、EAC 和 PowerShell 管理用户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e40465901747bcbd006d437fa527a9803aad1e24
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208641"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352428"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在独立 EOP 中管理邮件用户
 
@@ -80,7 +80,7 @@ ms.locfileid: "44208641"
 
 3. 在打开的 "邮件用户属性" 页上，单击下列选项卡之一以查看或更改属性。
 
-   完成时，请单击“保存”****。
+   完成后，单击“保存”****。
 
 #### <a name="general"></a>常规
 
@@ -113,7 +113,7 @@ ms.locfileid: "44208641"
   - **Office**
   - **住宅电话**
   - **网页**
-  - **Notes**
+  - **注释**
 
 #### <a name="organization"></a>组织
 
@@ -149,7 +149,7 @@ Get-Recipient -Identity <MailUserIdentity> | Format-List
 Get-User -Identity <MailUserIdentity> | Format-List
 ```
 
-有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-recipient)" 和 "[获取用户](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user)"。
+有关语法和参数的详细信息，请参阅 "[获取-收件人](https://docs.microsoft.com/powershell/module/exchange/get-recipient)" 和 "[获取用户](https://docs.microsoft.com/powershell/module/exchange/get-user)"。
 
 ### <a name="use-standalone-eop-powershell-to-create-mail-users"></a>使用独立的 EOP PowerShell 创建邮件用户
 
@@ -178,7 +178,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 New-EOPMailUser -Name JeffreyZeng -MicrosoftOnlineServicesID jeffreyz@contoso.onmicrosoft.com -Password (ConvertTo-SecureString -String 'Pa$$word1' -AsPlainText -Force) -ExternalEmailAddress jeffreyz@tailspintoys.com -DisplayName "Jeffrey Zeng" -Alias jeffreyz -FirstName Jeffrey -LastName Zeng
 ```
 
-有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-eopmailuser)。
+有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/new-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-modify-mail-users"></a>使用独立 EOP PowerShell 修改邮件用户
 
@@ -205,7 +205,7 @@ $Recip = Get-Recipient -RecipientType MailUser -ResultSize unlimited
 $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 ```
 
-有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-eopmailuser)。
+有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/set-eopmailuser)。
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>使用独立 EOP PowerShell 删除邮件用户
 
@@ -221,7 +221,7 @@ Remove-EOPMailUser -Identity <MailUserIdentity\>
 Remove-EOPMailUser -Identity "Jeffrey Zeng"
 ```
 
-有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/remove-eopmailuser)。
+有关语法和参数的详细信息，请参阅[new-eopmailuser](https://docs.microsoft.com/powershell/module/exchange/remove-eopmailuser)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
@@ -255,7 +255,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 - 建议将目录同步用于以下功能：
 
-  - **Outlook 安全发件人列表和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这使用户可以管理其自己的安全发件人列表和阻止的发件人列表和单个发件人和域条目。 有关详细信息，请参阅[在 Exchange Online 邮箱上配置垃圾邮件设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
+  - **Outlook 安全发件人列表和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这使用户可以管理其自己的安全发件人列表和阻止的发件人列表和单个发件人和域条目。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
 
   - **基于目录的边缘阻止（DBEB）**：有关 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 管理员可以了解如何创建将用于验证 Exchange Online 中的 S/MIME 证书的虚拟证书集合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89061e3c07803d741e25846ffe8a3325a12668a4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5bd453383a263fdb2c0c7e2ce0014ad205e5fdc2
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035292"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352165"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>在 Exchange Online 中设置虚拟证书集合以验证 S/MIME
 
@@ -42,14 +42,14 @@ Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -E
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content "C:\My Documents\Exported Certificate Store.sst" -Encoding Byte)
 ```
 
-有关语法和参数的详细信息，请参阅[get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-smimeconfig)。
+有关语法和参数的详细信息，请参阅[get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/set-smimeconfig)。
 
 ## <a name="ensuring-a-certificate-is-valid"></a>确保证书有效
 
 在 Exchange Online 中，仅将 SST 用于证书验证。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 [邮件签名和加密的 S/MIME](s-mime-for-message-signing-and-encryption.md)
 
-[Get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-smimeconfig)
+[Get-smimeconfig](https://docs.microsoft.com/powershell/module/exchange/get-smimeconfig)

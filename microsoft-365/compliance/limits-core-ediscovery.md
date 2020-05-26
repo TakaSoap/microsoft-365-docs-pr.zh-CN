@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍了 Microsoft 365 核心电子数据展示事例的限制。
-ms.openlocfilehash: 4d91b81caee31e693ce29c6d8d629d563d973ae7
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: 00df8cff683701ce5ee38dca12b6f7af5b31c8b0
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551373"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351893"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心电子数据展示中的限制
 
@@ -38,4 +38,4 @@ ms.locfileid: "43551373"
   |||
 
    > [!NOTE]
-   > <sup>1</sup>若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+   > <sup>1</sup>若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

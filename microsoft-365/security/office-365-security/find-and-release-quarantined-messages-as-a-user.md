@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，你将了解如何在 Microsoft 365 的安全与合规中心中查看和管理隔离邮件。
-ms.openlocfilehash: ff6cb3dbf9a0a2010bf792115c53265689873090
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
+ms.openlocfilehash: 802c2a5ce196a1ca67b01b973be5889b141f57f5
+ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173376"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44208847"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user"></a>以用户身份查找并释放隔离的邮件
+# <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
-无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [Office 365 中的隔离功能](quarantine-email-messages.md)。
+无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [EOP 的隔离功能](quarantine-email-messages.md)。
 
 作为用户，你可以查看、释放和删除你是收件人的隔离邮件，这些邮件作为垃圾邮件或批量邮件被隔离。 从 2020 年 4 月起，你可以查看或删除你是收件人的被隔离（非高可信度钓鱼邮件）钓鱼邮件。 你可以在“安全与合规中心”或[最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)（如果管理员已对此进行了设置）中查看和管理隔离的邮件。
 
@@ -36,11 +36,11 @@ ms.locfileid: "44173376"
 
 - 若要打开安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
 
-- 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 Office 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+- 管理员可以配置邮件在永久删除前的隔离期限（反垃圾邮件策略）。 隔离到期的邮件不可恢复。 有关详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-- 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 用户可以直接从这些通知中释放垃圾邮件隔离邮件，但不能释放隔离的网络钓鱼邮件。 有关详细信息，请参阅 [Office 365 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+- 此外，管理员还可以在反垃圾邮件策略中[启用最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。 用户可以直接从这些通知中释放垃圾邮件隔离邮件，但不能释放隔离的网络钓鱼邮件。 有关详细信息，请参阅 [EOP 中的最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 钓鱼邮件可以由用户查看，但只能由管理员发布。 有关详细信息，请参阅[在 Office 365 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
+- 只有管理员才能访问因为是高可信度钓鱼电子邮件、恶意软件或根据邮件流规则（亦称为“传输规则”）被隔离的邮件。 钓鱼邮件可以由用户查看，但只能由管理员发布。 有关详细信息，请参阅[在 EOP 中以管理员身份管理已隔离邮件](manage-quarantined-messages-and-files.md)。
 
 - 可以释放邮件，并将它报告为误报（非垃圾邮件），但只能执行一次。
 
@@ -96,7 +96,7 @@ ms.locfileid: "44173376"
 
      - **垃圾邮件**
 
-     - **钓鱼邮件**（自 2020 年 4 月起）
+     - **网络钓鱼**
 
    若要清除筛选器，请单击“清除”****。 若要隐藏筛选器浮出控件，请再次单击“筛选器”****。
 
@@ -134,7 +134,7 @@ ms.locfileid: "44173376"
 
 - **主题**
 
-- **隔离原因**：显示邮件是被标识为“垃圾邮件”****、“大量邮件”**** 还是（自 2020 年 4 月起）“钓鱼邮件”****。
+- **隔离原因**：显示邮件是否被标识为“**垃圾邮件**”，“**批量邮件**”或“**钓鱼邮件**”。
 
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”**** 或“查看邮件头”****，以查看完整的收件人列表。
 

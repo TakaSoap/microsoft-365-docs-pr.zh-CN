@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）中的欺骗智能，可以在其中允许或阻止特定的欺骗性发件人。
-ms.openlocfilehash: fb5193566ee359dfe2e5652707c1846280a45c33
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 638f130c448f14bf7214afc705b5650311866fce
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347839"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351935"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
@@ -48,7 +48,7 @@ ms.locfileid: "44347839"
 
   - 外部公司代表其他公司发送电子邮件（例如，自动报告或作为服务的软件公司）。
 
-欺骗性智能，特别是默认（仅适用于）欺骗智能策略，可帮助确保合法发件人发送的欺骗电子邮件不会在 Microsoft 365 或外部电子邮件系统中出现垃圾邮件筛选器，同时保护您的用户免受垃圾邮件或网络钓鱼攻击。
+欺骗智能，尤其是默认（仅适用于）欺骗智能策略，可帮助确保合法发件人发送的欺骗电子邮件不会在 EOP 垃圾邮件筛选器或外部电子邮件系统中受到攻击，同时保护用户免受垃圾邮件或网络钓鱼攻击的攻击。
 
 您可以在安全 & 合规性中心或 PowerShell （Exchange Online PowerShell for Microsoft 365 组织中使用 Exchange Online 中的邮箱; 独立 EOP PowerShell for 组织，无需 Exchange Online 邮箱）中管理欺骗智能。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44347839"
 
 - 必须先分配有权限，然后才能执行这些过程。 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对欺骗智能策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 有关我们针对欺骗情报的建议设置，请[EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
+- 有关我们推荐的欺骗性智能设置，请参阅[EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>使用安全 & 合规性中心管理欺骗性发件人
 
@@ -140,7 +140,7 @@ Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <
 Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
-有关语法和参数的详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy)。
+有关语法和参数的详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy)。
 
 若要在欺骗智能中配置允许和阻止的发件人，请按照以下步骤操作：
 
@@ -162,7 +162,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
    ```
 
-有关语法和参数的详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)。
+有关语法和参数的详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy)。
 
 ## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>使用安全 & 合规中心配置欺骗性智能
 
@@ -195,28 +195,16 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- 在使用 Exchange Online 邮箱的 Microsoft 365 组织中，执行以下步骤之一：
+- 在安全 & 合规性中心中，转到 "**威胁管理** \> **策略**" " \> **反网络钓鱼**" 或 " **ATP 反网络钓鱼**"，然后执行以下任一步骤：  
 
-  - 在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **反网络钓鱼** \> " 单击 "**默认策略**"，然后在浮出控件中查看详细信息。
+  - 从列表中选择一个策略。 在出现的浮出控件中，验证**欺骗**部分中的值。
+  - 单击 "**默认策略**"。 在出现的浮出控件中，验证**欺骗**部分中的值。
 
-  - 在 Exchange Online PowerShell 中，运行以下命令并验证设置：
+- 在 Exchange Online PowerShell 中， \< \> 使用 Office365 AntiPhish 将 Name 替换为默认值或自定义策略的名称，然后运行以下命令来验证设置：
 
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
-    ```
-
-- 在 Microsoft 365 ATP 组织中，执行以下任一步骤：
-
-  - 在安全 & 合规性中心中，转到 "**威胁管理** \> **策略** \> **ATP 反网络钓鱼**"，并执行下列步骤之一：
-
-    - 从列表中选择一个策略。 在出现的浮出控件中，验证**欺骗**部分中的值。
-    - 单击 "**默认策略**"。 在出现的浮出控件中，验证**欺骗**部分中的值。
-
-  - 在 Exchange Online PowerShell 中，将 \< Name 替换 \> 为 Office365 AntiPhish 默认值或自定义 ATP 反网络钓鱼策略的名称，然后运行以下命令并验证设置：
-
-    ```PowerShell
-    Get-AntiPhishPolicy -Identity "<Name>"
-    ```
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableAntiSpoofEnforcement,EnableUnauthenticatedSender,AuthenticationFailAction
+  ```
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>管理欺骗和网络钓鱼的其他方法
 

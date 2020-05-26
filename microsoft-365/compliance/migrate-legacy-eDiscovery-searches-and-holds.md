@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 409afed8ea927f1bdfc602264bbff7bce34e8533
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 216ec3853f1b55c7fb34de3a236f50094202bca5
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943331"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352462"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>将旧式电子数据展示搜索和保留迁移到 Microsoft 365 合规性中心
 
@@ -79,11 +79,11 @@ $search | FL
 ![使用 New-mailboxsearch 进行单个搜索的 PowerShell 输出示例](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy)和[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule)的安全电子数据展示 cmdlet 来保留方案，而不是在安全 & 合规中心 PowerShell 中使用电子数据展示 cmdlet 来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
+> 此示例中就地保留的持续时间不定（*ItemHoldPeriod：无限制*）。 这对于电子数据展示和法律调查方案来说是典型的。 如果保留期的值与不定的值不同，原因可能是由于保留正在用于保留方案中的内容。 我们建议您使用[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)和[New-retentioncompliancerule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)的安全电子数据展示 cmdlet 来保留方案，而不是在安全 & 合规中心 PowerShell 中使用电子数据展示 cmdlet 来保留内容。 使用这些 cmdlet 的结果将类似于使用**CaseHoldPolicy**和**new-caseholdrule**，但您可以指定保留期和保留操作，例如，在保留期过期后删除内容。 此外，使用保留 cmdlet 不需要将保留挂起与电子数据展示事例相关联。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-365-compliance-center"></a>步骤4：在 Microsoft 365 合规性中心中创建事例
 
-若要创建电子数据展示保留，必须创建电子数据展示事例以将保留与保留关联。 下面的示例使用您选择的名称创建电子数据展示事例。 我们将在变量中存储新事例的属性以供以后使用。 您可以通过在创建事例后运行`$case | FL`命令来查看这些属性。
+若要创建电子数据展示保留，必须创建电子数据展示事例以将保留与保留关联。 下面的示例使用您选择的名称创建电子数据展示事例。 我们将在变量中存储新事例的属性以供以后使用。 您可以通过在创建事例后运行命令来查看这些属性 `$case | FL` 。
 
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
@@ -132,7 +132,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 ## <a name="step-8-verify-the-case-hold-and-search-in-the-microsoft-365-compliance-center"></a>步骤8：确认在 Microsoft 365 合规性中心中的案例、保留和搜索
 
-若要确保一切都已正确设置，请转到 Microsoft 365 合规性中心[https://compliance.microsoft.com](https://compliance.microsoft.com)，然后单击 "**电子数据展示 > 核心**"。
+若要确保一切都已正确设置，请转到 Microsoft 365 合规性中心 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击 "**电子数据展示 > 核心**"。
 
 ![Microsoft 365 合规性中心电子数据展示](../media/MigrateLegacyeDiscovery7.png)
 
@@ -156,18 +156,18 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 - 有关本文中使用的 PowerShell cmdlet 的详细信息，请参阅：
 
-  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-mailboxsearch)
+  - [New-mailboxsearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch)
   
-  - [新 Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-compliancecase)
+  - [新 Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/new-compliancecase)
 
-  - [新 CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-caseholdpolicy)
+  - [新 CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/new-caseholdpolicy)
   
-  - [新 New-caseholdrule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/new-caseholdrule)
+  - [新 New-caseholdrule](https://docs.microsoft.com/powershell/module/exchange/new-caseholdrule)
 
-  - [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)
+  - [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
   
-  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+  - [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+  - [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 - 有关 Microsoft 365 合规性中心的详细信息，请参阅[microsoft 365 合规性中心概述](microsoft-365-compliance-center.md)。

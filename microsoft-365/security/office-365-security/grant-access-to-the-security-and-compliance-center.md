@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Microsoft 365 安全 & 合规性中心中分配权限，才能管理其任何安全性或合规性功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6071bb6260e0c0f524eb6e5d4e78c78fa8ff750
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036664"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351947"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
 
@@ -50,11 +50,11 @@ ms.locfileid: "44036664"
 
 3. 在安全 & 合规性中心中，转到 "**权限**"。
 
-4. 从列表中，选择要向其添加用户的角色组，然后单击 "**编辑** ![编辑图标](../../media/O365-MDM-CreatePolicy-EditIcon.gif)"。
+4. 从列表中，选择要向其添加用户的角色组，然后单击 "**编辑** ![ 编辑图标" ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。
 
-5. 在 "**成员**" 下的角色组的 "属性" 页中](../../media/ITPro-EAC-AddIcon.gif) ，单击 "**添加**![" "添加" 图标，然后选择要添加的一个或一组用户的名称。
+5. 在 "**成员**" 下的角色组的 "属性" 页中，单击 "**添加**" "添加" ![ 图标， ](../../media/ITPro-EAC-AddIcon.gif) 然后选择要添加的一个或一组用户的名称。
 
-6. 在选择了要添加到角色组的所有用户后，单击 "**添加\> ** "，然后单击 **"确定"**。
+6. 在选择了要添加到角色组的所有用户后，单击 "**添加 \> ** "，然后单击 **"确定"**。
 
 7. 单击“保存”**** 以保存对角色组的更改。
 
@@ -82,7 +82,7 @@ ms.locfileid: "44036664"
 
    - _Member_是要添加到角色组的邮箱、通用安全组（USG）或计算机。 每次只能指定一个成员。
 
-有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember)。
+有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
@@ -92,4 +92,4 @@ ms.locfileid: "44036664"
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-有关语法和参数的详细信息，请参阅[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember)。
+有关语法和参数的详细信息，请参阅[add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。

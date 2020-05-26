@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文将指导你打开，如何阻止网络钓鱼邮件到达您的邮箱、Outlook.com 和 web 上的 Outlook。
-ms.openlocfilehash: 2172a9890d629dd840c3e2e2591d78546899d17e
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224869"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352450"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -50,7 +50,7 @@ ms.locfileid: "44224869"
 
 如果你是 Office 365 客户，则可以通过 Office 365 安全性 & 合规性中心管理此功能。
 
-- 在安全 & 合规性中心中，全局管理员或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外，还可以使用 Exchange Online PowerShell 中的**AntiPhishPolicy** cmdlet。 有关详细信息，请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy)。
+- 在安全 & 合规性中心中，全局管理员或安全管理员可以通过反网络钓鱼策略下的反欺骗保护来打开或关闭该功能。 此外，还可以使用 Exchange Online PowerShell 中的**AntiPhishPolicy** cmdlet。 有关详细信息，请参阅[Office 365 中的反钓鱼防护](anti-phishing-protection.md)和 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/set-antiphishpolicy)。
 
     ![在图形界面中编辑未经身份验证的发件人。](../../media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 
@@ -58,7 +58,7 @@ ms.locfileid: "44224869"
 
   - 通过欺骗性智能洞察力添加域对。 有关详细信息，请参阅[演练：欺骗性智能洞察力](walkthrough-spoof-intelligence-insight.md)。
 
-  - 通过 Exchange Online PowerShell 中的**将 get-phishfilterpolicy** cmdlet 添加域对。 有关详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)。
+  - 通过 Exchange Online PowerShell 中的**将 get-phishfilterpolicy** cmdlet 添加域对。 有关详细信息，请参阅[将 get-phishfilterpolicy](https://docs.microsoft.com/powershell/module/exchange/set-phishfilterpolicy)和[设置 Office 365 ATP 反网络钓鱼和反网络钓鱼策略](set-up-anti-phishing-policies.md)。
 
 此外，如果邮件通过邮件流规则（也称为传输规则）或安全域列表（反垃圾邮件策略）传递到收件箱，则不会应用未验证的发件人处理。
 

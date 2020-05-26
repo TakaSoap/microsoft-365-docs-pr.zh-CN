@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Exchange Online 中的 Outlook 网页版（Outlook Web App）中内置的 "垃圾邮件"、"非垃圾邮件" 和 "网络钓鱼电子邮件报告" 选项，以及如何为用户禁用这些报告选项。
-ms.openlocfilehash: dd4b23efa9e12a02ce69167712bc0466b3445c44
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 514d84d2eb2ac4361a444a6d249b7679af596c47
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224693"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350979"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中的 Outlook 网页上报告垃圾邮件和仿冒电子邮件
 
@@ -113,7 +113,7 @@ ms.locfileid: "44224693"
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-有关语法和参数的详细信息，请参阅[set-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy)和[set-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy)。
+有关语法和参数的详细信息，请参阅[set-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy)和[set-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy)。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 

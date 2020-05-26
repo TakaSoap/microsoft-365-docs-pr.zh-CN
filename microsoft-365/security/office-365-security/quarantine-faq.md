@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以在 Exchange Online Protection （EOP）中查看有关隔离邮件的常见问题和解答。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2022a43f1dd89d47fdb4f3898f8f481419962c0
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 0a231e363d5764465547ee1e80cc080c3d7c006c
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213100"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351091"
 ---
 # <a name="quarantined-messages-faq"></a>隔离的邮件常见问题解答
 
@@ -62,7 +62,7 @@ ms.locfileid: "44213100"
 
 在安全 & 合规性中心中，可以一次选择并发布最高100个邮件。
 
-管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)和[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage) cmdlet 来批量查找和释放隔离的邮件，并批量报告误报。
+管理员可以使用 Exchange Online PowerShell 或独立 EOP PowerShell 中的[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)和[get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) cmdlet 来批量查找和释放隔离的邮件，并批量报告误报。
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>搜索隔离邮件时是否支持通配符？ 是否可以搜索特定域的隔离邮件？
 

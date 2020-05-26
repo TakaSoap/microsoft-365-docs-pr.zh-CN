@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f73493f53937c38f33eeab9595ddb07ef4813c89
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5aa45e3e9dea5ce413b2b0e62d825003bc24e20e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035028"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352321"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
@@ -49,7 +49,7 @@ ms.locfileid: "44035028"
 
     **如果用户未包含在信息屏障策略中，请联系支持人员**。 否则，继续执行下一步。
 
-2. 了解信息屏障策略中包括的段落。 若要执行此操作， `Get-InformationBarrierPolicy`请将 Cmdlet 与 Identity 参数结合使用。 
+2. 了解信息屏障策略中包括的段落。 若要执行此操作，请将 `Get-InformationBarrierPolicy` cmdlet 与 Identity 参数结合使用。 
 
     |语法  |示例  |
     |---------|---------|
@@ -57,7 +57,7 @@ ms.locfileid: "44035028"
 
     运行 cmdlet 后，在 "结果" 中，查找 " **AssignedSegment**"、" **SegmentsAllowed**" 和 " **SegmentsBlocked** " 值。
 
-    例如，运行`Get-InformationBarrierPolicy` cmdlet 后，我们在结果列表中看到以下内容：
+    例如，运行 `Get-InformationBarrierPolicy` cmdlet 后，我们在结果列表中看到以下内容：
 
     ```powershell
         AssignedSegment      : Sales
@@ -68,13 +68,13 @@ ms.locfileid: "44035028"
     
     如果看上去正确，则信息障碍按预期工作。 如果没有，继续执行下一步。
 
-4. 请确保正确定义了段。 为此，请使用`Get-OrganizationSegment` cmdlet，并查看结果列表。 
+4. 请确保正确定义了段。 为此，请使用 `Get-OrganizationSegment` cmdlet，并查看结果列表。 
 
     |语法  |示例  |
     |---------|---------|
     |`Get-OrganizationSegment`<p>将此 cmdlet 与 Identity 参数一起使用。     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>在此示例中，我们将获取有关具有 GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*的段的信息。         |
 
-    查看段的详细信息。 如有必要，请[编辑段](information-barriers-edit-segments-policies.md#edit-a-segment)，然后重新使用`Start-InformationBarrierPoliciesApplication` cmdlet。
+    查看段的详细信息。 如有必要，请[编辑段](information-barriers-edit-segments-policies.md#edit-a-segment)，然后重新使用 `Start-InformationBarrierPoliciesApplication` cmdlet。
 
     **如果您仍遇到信息障碍策略问题，请联系支持人员**。
 
@@ -104,7 +104,7 @@ ms.locfileid: "44035028"
     |---------|---------|
     |未列出所选用户的任何段     |执行下列操作之一：<br/>-通过在 Azure Active Directory 中编辑用户配置文件，将用户分配到现有分段。 （请参阅[Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。）<br/>-使用[受支持的信息障碍属性](information-barriers-attributes.md)定义段。 然后，[定义新策略](information-barriers-policies.md#part-2-define-information-barrier-policies)或[编辑现有策略](information-barriers-edit-segments-policies.md#edit-a-policy)以包含该分段。  |
     |列出了分段，但没有为这些分段分配信息障碍策略     |执行下列操作之一：<br/>- 为问题的每个段[定义新的信息障碍策略](information-barriers-policies.md#part-2-define-information-barrier-policies)<br/>- [编辑现有的信息屏障策略](information-barriers-edit-segments-policies.md#edit-a-policy)以将其分配给正确的段         |
-    |列出了分段，每个段都包含在信息屏障策略中     |-运行`Get-InformationBarrierPolicy` cmdlet 以验证信息屏障策略是否处于活动状态<br/>-运行`Get-InformationBarrierPoliciesApplicationStatus` cmdlet 以确认应用了策略<br/>-运行`Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略          |
+    |列出了分段，每个段都包含在信息屏障策略中     |-运行 `Get-InformationBarrierPolicy` cmdlet 以验证信息屏障策略是否处于活动状态<br/>-运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 以确认应用了策略<br/>-运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动信息屏障策略          |
     
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>问题：我需要从信息屏障策略中删除一个用户
@@ -126,7 +126,7 @@ ms.locfileid: "44035028"
 
 3. 若要从受信息障碍影响的段中删除用户，请[在 Azure Active Directory 中更新用户的配置文件信息](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
-4. 大约等待30分钟，FwdSync 才会发生。 或者，运行`Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动的信息屏障策略。
+4. 大约等待30分钟，FwdSync 才会发生。 或者，运行 `Start-InformationBarrierPoliciesApplication` cmdlet 以应用所有活动的信息屏障策略。
 
 ## <a name="issue-the-information-barrier-application-process-is-taking-too-long"></a>问题：信息障碍应用程序进程花费的时间太长
 
@@ -155,7 +155,7 @@ ms.locfileid: "44035028"
 
 ## <a name="issue-information-barrier-policies-are-not-being-applied-at-all"></a>问题：根本不应用信息屏障策略
 
-在这种情况下，您已定义了分段，定义了信息屏障策略，并试图应用这些策略。 但是，在运行`Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，可以看到策略应用程序已失败。
+在这种情况下，您已定义了分段，定义了信息屏障策略，并试图应用这些策略。 但是，在运行 cmdlet 时 `Get-InformationBarrierPoliciesApplicationStatus` ，可以看到策略应用程序已失败。
 
 ### <a name="what-to-do"></a>需执行的操作
 
@@ -163,7 +163,7 @@ ms.locfileid: "44035028"
 
 1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。 
 
-2. 运行[AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) cmdlet，并查看结果。
+2. 运行[AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) cmdlet，并查看结果。
 
     |结果  |后续步骤  |
     |---------|---------|
@@ -175,7 +175,7 @@ ms.locfileid: "44035028"
 ## <a name="issue-information-barrier-policy-not-applied-to-all-designated-users"></a>问题：信息屏障策略未应用于所有指定用户
 
 定义了分段、定义的信息屏障策略并尝试应用这些策略后，您可能会发现策略应用于某些收件人，而不是应用于其他收件人。
-运行`Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，请按如下所示搜索输出中的文本。
+运行 `Get-InformationBarrierPoliciesApplicationStatus` cmdlet 时，请按如下所示搜索输出中的文本。
 
 > 窃取`<application guid>`
 >
@@ -189,13 +189,13 @@ ms.locfileid: "44035028"
 
 ### <a name="what-to-do"></a>需执行的操作
 
-1. 在审核日志中搜索`<application guid>`。 您可以复制此 PowerShell 代码并对变量进行修改。
+1. 在审核日志中搜索 `<application guid>` 。 您可以复制此 PowerShell 代码并对变量进行修改。
 
 ```powershell
 $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
 ```
 
-2. 检查 "" `"UserId"`和`"ErrorDetails"` "" 字段的值的审核日志中的详细输出。 这将为您提供失败的原因。 您可以复制此 PowerShell 代码并对变量进行修改。
+2. 检查 "" 和 "" 字段的值的审核日志中的详细输出 `"UserId"` `"ErrorDetails"` 。 这将为您提供失败的原因。 您可以复制此 PowerShell 代码并对变量进行修改。
 
 ```powershell
    $DetailedLogs[1] |fl
@@ -206,7 +206,7 @@ $DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDat
 > 
 >"ErrorDetails"： "Status： IBPolicyConflict。 错误： IB 段 "segment id1" 和 IB 段 "segment id2" 发生冲突，无法将其分配给收件人。 
 
-3. 通常情况下，您会发现某个用户已包含在多个段中。 您可以通过更新中`-UserGroupFilter` `OrganizationSegments`的值来解决此问题。
+3. 通常情况下，您会发现某个用户已包含在多个段中。 您可以通过更新中的值来解决此问题 `-UserGroupFilter` `OrganizationSegments` 。
 
 4. 使用这些过程[信息障碍策略](information-barriers-policies.md#part-3-apply-information-barrier-policies)重新应用信息屏障策略。
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关新邮件保护功能的工作原理，有什么问题？ 在此处查找答案。
-ms.openlocfilehash: 75b414aecfbe9d3952d7e3c5994946775d353a6f
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f7c6de7eba9cb5e0f165b345b5c97e98cb96b870
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049517"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352076"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题
 
@@ -28,7 +28,7 @@ ms.locfileid: "44049517"
 ## <a name="what-is-office-365-message-encryption-ome"></a>什么是 Office 365 邮件加密（OME）？
 
 OME 将电子邮件加密和权限管理功能结合在一起。 权限管理功能由 Azure 信息保护提供支持。
-  
+
 ## <a name="who-can-use-ome"></a>谁可以使用 OME？
 
 在下列情况下，您可以使用 OME 的新功能：
@@ -61,7 +61,7 @@ OME 将电子邮件加密和权限管理功能结合在一起。 权限管理功
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护执行 OME 和 BYOK 更改 Microsoft 对第三方数据请求（如 subpoenas）的方法？
 
-否。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对[政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)Microsoft 信任中心上的客户数据。 此外，请参阅[在线服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
+不正确。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。 （请阅读 Brad Smith 的博客：[保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)）。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对[政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)Microsoft 信任中心上的客户数据。 此外，请参阅[在线服务条款（OST）](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>此功能与旧版 Office 365 邮件加密（OME）和信息权限管理（IRM）功能有何关系？
 
@@ -87,7 +87,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的组织使用 Active Directory 权限管理，我是否可以使用此功能？
 
-否。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
+不正确。 如果您使用的是 Active Directory 权限管理服务（AD RMS）的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将[AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有 Exchange 混合部署。 我是否可以使用此功能？
 
@@ -137,9 +137,9 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 
 管理员可以设置邮件流规则，以删除传出邮件的加密。 无法设置规则以删除传入邮件的加密。
 
-## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以通过安全&amp;合规中心在数据丢失防护（DLP）中设置策略来自动加密邮件？
+## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以通过安全合规中心在数据丢失防护（DLP）中设置策略来自动加密邮件 &amp; ？
 
-是的！ 您可以在 Exchange Online 中设置邮件流规则，也可以使用安全&amp;合规性中心中的 DLP 进行设置。
+是的！ 您可以在 Exchange Online 中设置邮件流规则，也可以使用安全合规性中心中的 DLP 进行设置 &amp; 。
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我是否可以使用我的公司品牌自定义加密邮件？
 
@@ -185,3 +185,9 @@ Not yet. OneDrive for business 附件不受支持，最终用户无法对包含�
 - 仅支持通过直接用户分配向共享邮箱提供的访问权限。 我们不支持通过启用电子邮件的安全组进行分配。
 
 - 您不能使用 Outlook mobile 打开在移动设备上收到的电子邮件附件。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>如果我在请求一次性处理后未收到此代码，我该怎么办？
+
+首先，检查电子邮件客户端中的 "垃圾邮件" 或 "垃圾邮件" 文件夹。 您的组织的 DKIM 和 DMARC 设置可能会导致这些电子邮件最终被筛选为垃圾邮件。
+
+接下来，检查安全性 & 合规性中心中的 "隔离"。 通常情况下，包含一次性传递代码的邮件（尤其是您的组织收到的第一次代码）将最终成为隔离。

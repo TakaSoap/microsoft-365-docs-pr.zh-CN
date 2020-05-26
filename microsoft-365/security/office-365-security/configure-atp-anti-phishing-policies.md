@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（Office 365 ATP）的组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: 5b67fe1a39f577209d1f10688215722a67d5546a
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 7b1806b20ef5974b83cc4e5ab681c847d826d04b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213456"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352041"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -147,7 +147,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 4. **策略设置**：单击 "**编辑**" 可修改在上一节中[创建策略](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies)时可用的相同设置：
 
-   - **Name**
+   - **名称**
    - **说明**
    - **应用于**
    - **查看设置**
@@ -203,7 +203,7 @@ ATP 反网络钓鱼策略的基本要素为：
      - **显示模拟域的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
      - **显示不正常字符的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
 
-     完成时，请单击“保存”****。
+     完成后，单击“保存”****。
 
    - **邮箱智能**：
 
@@ -411,7 +411,7 @@ New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Addit
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy)。
+有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy)。
 
 #### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a>步骤2：使用 PowerShell 创建反网络钓鱼规则
 
@@ -431,7 +431,7 @@ New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient 
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishRule)。
+有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule)。
 
 ### <a name="use-powershell-to-view-anti-phish-policies"></a>使用 PowerShell 查看反网络钓鱼策略
 
@@ -453,7 +453,7 @@ Get-AntiPhishPolicy | Format-Table Name,IsDefault
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishPolicy)。
+有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy)。
 
 ### <a name="use-powershell-to-view-anti-phish-rules"></a>使用 PowerShell 查看反网络钓鱼规则
 
@@ -485,7 +485,7 @@ Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule)。
+有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule)。
 
 ### <a name="use-powershell-to-modify-anti-phish-policies"></a>使用 PowerShell 修改反网络钓鱼策略
 
@@ -501,7 +501,7 @@ Get-AntiPhishRule -Identity "Contoso Executives"
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy)。
+有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy)。
 
 ### <a name="use-powershell-to-modify-anti-phish-rules"></a>使用 PowerShell 修改反网络钓鱼规则
 
@@ -515,7 +515,7 @@ Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule)。
+有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule)。
 
 ### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a>使用 PowerShell 启用或禁用反网络钓鱼规则
 
@@ -539,7 +539,7 @@ Disable-AntiPhishRule -Identity "Marketing Department"
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-有关语法和参数的详细信息，请参阅[Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/enable-AntiPhishrule)和[Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/disable-AntiPhishrule)。
+有关语法和参数的详细信息，请参阅[Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule)和[Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>使用 PowerShell 设置反网络钓鱼规则的优先级
 
@@ -579,7 +579,7 @@ Remove-AntiPhishPolicy -Identity "<PolicyName>"
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy)。
+有关语法和参数的详细信息，请参阅[AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy)。
 
 ### <a name="use-powershell-to-remove-anti-phish-rules"></a>使用 PowerShell 删除反网络钓鱼规则
 
@@ -597,7 +597,7 @@ Remove-AntiPhishRule -Identity "<PolicyName>"
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule)。
+有关语法和参数的详细信息，请参阅[AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule)。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 

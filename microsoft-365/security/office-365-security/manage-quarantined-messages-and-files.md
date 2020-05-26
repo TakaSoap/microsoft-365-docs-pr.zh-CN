@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何查看和管理 Exchange Online Protection （EOP）中所有用户的隔离邮件。 具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: 472a5258c112db7e8b8017e5d2ff19dc4741e93c
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 521268d291c73cc94e8be87f1f2896a17c623678
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213324"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352416"
 ---
-# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>以管理员身份在 EOP 中管理隔离的邮件和文件
+# <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
 在没有 Exchange Online 邮箱的 Exchange Online 或独立 Exchange Online 保护（EOP）组织中具有邮箱的 Microsoft 365 组织中，隔离会保留可能有害或不需要的邮件。 有关详细信息，请参阅[EOP 中隔离的电子邮件](quarantine-email-messages.md)。
 
@@ -338,12 +338,12 @@ ms.locfileid: "44213324"
 
 用于查看和管理隔离区中的邮件和文件的 cmdlet 为：
 
-- [删除-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/delete-quarantinemessage)
+- [删除-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/delete-quarantinemessage)
 
-- [Export-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/export-quarantinemessage)
+- [Export-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/export-quarantinemessage)
 
-- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-quarantinemessage)
+- [Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/preview-quarantinemessage)：请注意，此 cmdlet 仅适用于邮件，而不适用于 SharePoint Online、OneDrive for Business 或团队的 ATP 中的恶意软件文件。
+- [Preview-get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/preview-quarantinemessage)：请注意，此 cmdlet 仅适用于邮件，而不适用于 SharePoint Online、OneDrive for Business 或团队的 ATP 中的恶意软件文件。
 
-- [发布-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/release-quarantinemessage)
+- [发布-Get-quarantinemessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage)

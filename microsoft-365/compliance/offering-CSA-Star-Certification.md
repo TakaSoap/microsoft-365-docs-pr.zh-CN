@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37c460732704da4c5904005cf8ebaabf36b92c49
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 897fc513d0f129a273f87107dc8e85127890ee6e
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066103"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254391"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>云安全联盟 (CSA) STAR 认证
 
@@ -42,21 +42,22 @@ Microsoft Azure、Microsoft Intune 和 Microsoft Power BI 已获得 STAR 认证�
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- 云应用安全
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Cloud App Security
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Microsoft Defender 高级威胁防护
 - OMS Service Map
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- Power Automate (以前称为 Microsoft Flow)： 云服务作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务：作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI：Power BI 的云服务部分，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
-- Stream
+- Power BI Embedded
+- Microsoft Stream
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 托管桌面、OMS Service Map、PowerApps、Power BI、Stream — CSA STAR 认证](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Dynamics 365 和联机服务 – CSA STAR 证书](https://aka.ms/azurecsastarcert)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -66,16 +67,16 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 
 **在哪里可以查看有关 Microsoft 云服务的 CSA STAR 认证？**
 
-可从 CSA Registry 下载适用于 Azure 的 [CSA STAR 认证](https://aka.ms/csastar-certification)（还包括 Intune 和 Power BI）。
+可从 CSA Registry 查看适用于 Azure 的 [CSA STAR 认证](https://aka.ms/csastar-certification)（还包括 Dynamics 365、Intune 和 Power BI）。
 
 **Microsoft 云服务达到了什么成熟度级别？**
 
-Azure、Cloud App Security、Intune 和 Power BI 在成熟度能力评估中均获得了最高的金奖。
+Azure、Microsoft Cloud App Security、Intune 和 Power BI 在成熟度能力评估中均获得了最高的金奖。
 
 **Microsoft 商业云服务的 CSA STAR 保障达到了什么级别？**
 
 - **第 1 个级别** - **CSA STAR 自我评估**：Azure、Dynamics 365 和 Office 365。 [自我评估](offering-csa-star-self-assessment.md)是云服务提供商免费提供的一项产品/服务，可用于记录其安全控制措施，帮助客户对服务的安全性进行评估。
-- **第 2 个级别** - **CSA STAR 认证**：Azure、Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
+- **第 2 个级别**：**CSA STAR 认证**：Azure、Microsoft Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
 - **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
 
 ## <a name="resources"></a>资源

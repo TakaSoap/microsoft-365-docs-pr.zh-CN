@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: 如果尚未将组织移动到新的 OME 功能，但已部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能。 如果您想要详细了解新功能的工作方式，请参阅 Office 365 邮件加密。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
-ms.openlocfilehash: 9f9d4cdd9ee75becb6b7c7d9716b9fcb543c48d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00b42dfceaeac5b7e9e28263c56f9f7490644a3b
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632681"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44351903"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
@@ -108,7 +108,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 1. 使用远程 PowerShell 连接到 Exchange Online，如[connect To Exchange Online Using Remote powershell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述。
 
-2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为`""`一个空字符串。 对于所有图像值（如 "徽标"），请将`"$null"`值设置为。
+2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为一个空字符串 `""` 。 对于所有图像值（如 "徽标"），请将值设置为 `"$null"` 。
 
    **加密自定义选项**
 
@@ -153,7 +153,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
  **问：能否使用我的品牌自定义加密电子邮件？**
   
-可以。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅[将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
+是。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅[将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
   
  **问：该服务是否要求我的组织中的每个用户都有许可证？**
   
@@ -203,7 +203,7 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
   
  **问：我是否需要在组织的防火墙中打开任何 Url、IP 地址或端口以支持 Office 365 邮件加密？**
   
-可以。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅[Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+是。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅[Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
   
  **问：我可以向多少个收件人发送 Microsoft 365 加密邮件？**
   
@@ -220,3 +220,9 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
  **问：Microsoft 会如何处理我通过 OME 门户和 OME 查看器应用提供的信息？**
   
 [Office 365 邮件加密门户隐私声明](https://privacy.microsoft.com/privacystatement)提供了有关 Microsoft 在你的私人信息方面所做的操作和不会执行的操作的详细信息。
+
+## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>如果我在请求一次性处理后未收到此代码，我该怎么办？
+
+首先，检查电子邮件客户端中的 "垃圾邮件" 或 "垃圾邮件" 文件夹。 您的组织的 DKIM 和 DMARC 设置可能会导致这些电子邮件最终被筛选为垃圾邮件。
+
+接下来，检查安全性 & 合规性中心中的 "隔离"。 通常情况下，包含一次性传递代码的邮件（尤其是您的组织收到的第一次代码）将最终成为隔离。

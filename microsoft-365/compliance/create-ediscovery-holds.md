@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以创建与核心电子数据展示事例相关联的保留，以保留可能与调查相关的内容。
-ms.openlocfilehash: 6405dac51c34163f8eadb359d9c29f1aa81a1b82
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551376"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352249"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -43,7 +43,7 @@ ms.locfileid: "43551376"
 
 创建与核心电子数据展示事例相关联的电子数据展示保留：
   
-1. 转到[https://compliance.microsoft.com](https://compliance.microsoft.com)并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。
 
 2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 "**全部显示**"，然后单击 "**电子数据展示 > 核心**"。
 
@@ -63,7 +63,7 @@ ms.locfileid: "43551376"
 
    b. **网站位置**-单击 "**选择网站**"，然后单击 "再次**选择网站**" 以指定要置于保留状态的 SharePoint 和 OneDrive 帐户。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 团队、Office 365 组或 Yammer 组添加 SharePoint 网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
   
-   c. **Exchange 公用文件夹。** 将切换开关![切换控件](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)移到 "**所有**位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 您不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
+   c. **Exchange 公用文件夹。** 将切换开关切换 ![ 控件移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 到 "**所有**位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 您不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
 
 8. 将内容位置添加到保留后，请单击 "**下一步**"。
 
@@ -173,7 +173,7 @@ ms.locfileid: "43551376"
 若要收集组织中的 OneDrive for business 网站的 Url 列表，以便可以将其添加到与电子数据展示事例关联的保留或搜索，请参阅[创建组织中所有 OneDrive 位置的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文中的脚本创建一个文本文件，该文件包含组织中所有 OneDrive 站点的列表。 若要运行此脚本，必须安装并使用 SharePoint Online Management Shell。 请务必将你组织的 MySite 域的 URL 附加到你想要搜索的每个 OneDrive 网站。 这是包含你所有的 OneDrive 的域；例如，`https://contoso-my.sharepoint.com`。 下面是用户的 OneDrive 网站的 URL 示例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
 
 > [!IMPORTANT]
-> 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是电子数据展示保留的一部分（旧的和其 UPN 的更改），则需要更新保留，并且必须更新保留，然后添加用户的新 OneDrive URL 并删除旧的旧 URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+> 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是电子数据展示保留的一部分（旧的和其 UPN 的更改），则需要更新保留，并且必须更新保留，然后添加用户的新 OneDrive URL 并删除旧的旧 URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
 
 ## <a name="ediscovery-hold-limits"></a>电子数据展示保留限制
 
@@ -189,4 +189,4 @@ ms.locfileid: "43551376"
   |||
 
    > [!NOTE]
-   > <sup>1</sup>若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-ediscovery/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/get-compliancesearchaction)
+   > <sup>1</sup>若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

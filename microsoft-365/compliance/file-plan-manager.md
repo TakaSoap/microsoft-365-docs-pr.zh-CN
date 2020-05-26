@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划管理器提供了对保留标签和保留标签策略的高级管理功能，并提供了便于遍历整个内容生存期（从创建、协作、记录声明、保留到最终处置）中的标签活动和标签到内容活动的集成方式。
-ms.openlocfilehash: b3270538cf2a1454840f6beff4e52fda84fa0afe
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d47e0df05ec7dacbb2d0eaa9a7593183d5d0c557
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327680"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352135"
 ---
 # <a name="overview-of-file-plan-manager"></a>文件计划管理器概述
 
@@ -152,7 +152,7 @@ ms.locfileid: "44327680"
    |CitationUrl|字符串|该属性指定在**预配/引文**文件计划描述符中显示的 URL。|
    |CitationJurisdiction|字符串|该属性指定在**预配/引文**文件计划描述符中显示的管辖权地或机构；例如“美国证券交易委员会 (SEC)”。|
    |Regulatory|字符串|保留为空白。 此属性目前不可用。|
-   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。 请注意，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。 这是因为 EventType 值对于组织是唯一的。 |
+   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。 请注意，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。 这是因为 EventType 值对于组织是唯一的。 |
    |||
 
    下面是包含有关保留标签的信息的模板示例。

@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 22ae7293dfe85fe5354d21e690de6f060a931788
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44212982"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352494"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
@@ -27,7 +27,7 @@ Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递�
 Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）中提供的原始邮件跟踪之后改进。 您可以使用邮件跟踪中的信息来有效地回答有关邮件发生的问题、解决邮件流问题以及验证策略更改的用户问题。
 
 > [!NOTE]
-> •若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或独立 EOP PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
+> •若要执行邮件跟踪，您必须是 "组织管理"、"合规性管理" 或 "技术支持" 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•结果中显示的最大邮件数取决于所选的报告类型（有关详细信息，请参阅 "[选择报告类型](#choose-report-type)" 一节）。 Exchange Online PowerShell 或独立 EOP PowerShell 中的[start-historicalsearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet 将返回结果中的所有邮件。
 
 ## <a name="open-message-trace"></a>打开邮件跟踪
 

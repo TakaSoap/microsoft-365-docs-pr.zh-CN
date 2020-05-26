@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 358b87fca010aa5e910337b0942df0b33ee38951
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 50411e04ac04dc0bf00e7b743f3f30d25b9fa12e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232719"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352209"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -75,7 +75,7 @@ ms.locfileid: "44232719"
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>附加标签设置在安全与合规中心 PowerShell 中可用
 
-附加标签设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)中使用。
+附加标签设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)中使用。
 
 使用 *LocaleSettings* 参数来进行跨国部署，以便用户可查看使用本地语言的标签名称和工具提示。 有关配置示例，请参阅下面的部分。 
 
@@ -151,7 +151,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 
-附加标签策略设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps)中使用。
+附加标签策略设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)中使用。
 
 使用此 cmdlet，可为 Azure 信息保护统一标签客户端指定[“高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)”。 这些高级设置包括为 Outlook 设置不同的默认标签，并在 Outlook 中实现弹出消息，警告、两端对齐或阻止正在发送的电子邮件。 如需完整的列表，请参阅“[可用的高级标签设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)”。 
 

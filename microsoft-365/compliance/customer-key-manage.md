@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在设置客户密钥之后，请了解如何通过还原 AKV 密钥以及管理权限和数据加密策略来管理它。
-ms.openlocfilehash: 4796fcef69e052725b635acb4170d73bb36de787
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635598"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352199"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 
@@ -88,7 +88,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
   Get-DataEncryptionPolicy
   ```
 
-  有关 DataEncryptionPolicy cmdlet 的详细信息，请参阅[DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/get-dataencryptionpolicy?view=exchange-ps)。
+  有关 DataEncryptionPolicy cmdlet 的详细信息，请参阅[DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>在将邮箱迁移到云中之前分配一个 DEP
 
@@ -104,7 +104,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
   Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
   ```
 
-  其中*GeneralMailboxOrMailUserIdParameter*指定邮箱， *DataEncryptionPolicyIdParameter*是 DEP 的 ID。 有关 MailUser cmdlet 的详细信息，请参阅[MailUser](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-mailuser?view=exchange-ps)。
+  其中*GeneralMailboxOrMailUserIdParameter*指定邮箱， *DataEncryptionPolicyIdParameter*是 DEP 的 ID。 有关 MailUser cmdlet 的详细信息，请参阅[MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>确定分配给邮箱的 DEP
 
@@ -116,7 +116,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   其中*GeneralMailboxOrMailUserIdParameter*指定邮箱和 DATAENCRYPTIONPOLICYID 返回 DEP 的 GUID。 有关 Get-mailboxstatistics cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/mailboxes/get-mailboxstatistics?view=exchange-ps)。
+   其中*GeneralMailboxOrMailUserIdParameter*指定邮箱和 DATAENCRYPTIONPOLICYID 返回 DEP 的 GUID。 有关 Get-mailboxstatistics cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)。
   
 2. 运行 DataEncryptionPolicy cmdlet 以查找邮箱分配到的 DEP 的友好名称。
   
@@ -148,7 +148,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 New-MoveRequest <alias>
 ```
 
-有关此 cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/move-and-migration/new-moverequest?view=exchange-ps)。
+有关此 cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps)。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>验证 SharePoint Online、OneDrive for Business 和团队文件的加密是否已完成
 
@@ -201,7 +201,7 @@ Microsoft 365 审核并验证数据清除路径。 有关详细信息，请参�
 
 2. 在您的组织中使用具有全局管理员权限的工作或学校帐户，[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
-3. 对于包含要删除的邮箱的每个 DEP，请运行[DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-dataencryptionpolicy) cmdlet，如下所示。
+3. 对于包含要删除的邮箱的每个 DEP，请运行[DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) cmdlet，如下所示。
 
     ```powershell
     Set-DataEncryptionPolicy <Policy ID> -PermanentDataPurgeRequested -PermanentDataPurgeReason <Reason> -PermanentDataPurgeContact <ContactName>

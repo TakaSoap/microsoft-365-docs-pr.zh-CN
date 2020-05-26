@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e6d28d3095f0a08aa7c2bf66df3b32b2dc7bec86
-ms.sourcegitcommit: b6ab845d64e2801051d249de09ad5059809b649a
+ms.openlocfilehash: 8a4f59a817e8ddd38ee8132e7028a3357d15d578
+ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42222014"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44254165"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
@@ -67,10 +67,30 @@ ISO/IEC 27001 和 PIMS 的要点：
 
 无论你组织的规模如何，无论其是控制者还是处理者，你的组织都应该考虑为自己的组织获得认证，或者根据业务需求向供应商请求认证。 这尤其适用于处理敏感个人数据或大量个人数据的处理者、下层处理者和联合控制者。 无论是哪种情况，组织都应评估其业务需求，以确定自己的产品和服务的认证是否适合。
 
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+
+- Azure、Azure 政府和 Azure 德国
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365、Dynamics 365 政府和 Dynamics 365 德国
+- Microsoft Graph
+- Microsoft 医疗保健机器人
+- Intune
+- Microsoft 托管桌面
+- Power Automate（以前称为 Microsoft Flow） 
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft Stream
+- Microsoft 威胁专家
+- Windows Defender 高级威胁防护
+
+
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-- [Azure ISO/IEC 27701 认证](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701 评估报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure、Dynamics 365 和联机服务：ISO27701 认证](https://aka.ms/azureiso27701cert)
+- [Azure、Dynamics 365 和联机服务：ISO27701 评估报告](https://aka.ms/azureiso27701report)
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
 

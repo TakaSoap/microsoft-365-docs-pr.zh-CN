@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: 在本文中，您将找到发行说明，其中包含 Microsoft 365 中的数据调查（预览）工具的更改和新功能。
-ms.openlocfilehash: 5bb18ccb3354082634780720938fb18164da0ccb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035724"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352279"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）发布说明
 
@@ -50,4 +50,4 @@ ms.locfileid: "44035724"
 
 - **作业**–跟踪长时间运行的进程的状态。
 
-- **硬删除邮箱项目**-在紧急情况下，您可能需要永久删除错放的项目。 为此，您可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearchaction-PurgeType HardDelete**命令，以永久删除邮箱中的项目。 有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction)。
+- **硬删除邮箱项目**-在紧急情况下，您可能需要永久删除错放的项目。 为此，您可以在 Security & 合规性中心 PowerShell 中运行**new-compliancesearchaction-PurgeType HardDelete**命令，以永久删除邮箱中的项目。 有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction)。
