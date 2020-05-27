@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: ab05b9226c244b1e6cdf1e552d32d4d9fc0d95d2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208673"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327130"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -40,7 +40,7 @@ ms.locfileid: "44208673"
     
     有关定义分类法的更多深入指南，请从“[服务信任门户](https://aka.ms/DataClassificationWhitepaper)”下载白皮书“数据分类和敏感度标签分类”。
 
-2. **定义每个标签的用途。** 配置要与每个标签关联的保护设置。 例如，你可能希望较低灵敏度的内容（例如“常规”标签）仅应用页眉或页脚，而较高灵敏度的内容（例如“机密”标签）应该应用水印、加密和端点保护。
+2. **定义每个标签的用途。** 配置要与每个标签关联的保护设置。 例如，你可能希望较低灵敏度的内容（例如“常规”标签）仅应用页眉或页脚，而较高灵敏度的内容（例如“机密”标签）应该应用水印和加密。
 
 3. **发布标签。** 配置灵敏度标签后，使用标签策略发布它们。 确定应该应用标签的用户和组以及要使用的策略设置。 单个标签可重用，可将其定义一次，然后可将其包含在分配给不同用户的多个标签策略中。 例如，可以通过将标签策略分配给少数用户来试用灵敏度标签。 然后，当你准备在整个组织中推广标签时，可以为标签创建新的标签策略，这次指定所有用户。
 
@@ -82,15 +82,15 @@ ms.locfileid: "44208673"
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |在 Power BI 中应用和查看敏感性标签，并保护下载的报表|[Power BI （预览版）中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
-|查看敏感标签的使用和位置，并深入查看标签内容|[了解你的数据 - 数据分类概述（预览）](data-classification-overview.md)|
+|监视和了解在我的组织中如何使用灵敏度标签|[了解你的数据 - 数据分类概述](data-classification-overview.md) <br /><br /> [使用标签分析查看标签使用情况](label-analytics.md)|
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度标签的最终用户文档
 
 最有效的最终用户文档将用作你为所选标签名称和配置提供的定制指南和说明。 但你可通过以下资源查看基本说明：   
 
-- [将敏感度标签应用到 Office 中的文件和电子邮件](https://support.office.com/article/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-    - [Office 中敏感度标签的已知问题](https://support.office.com/zh-CN/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [将敏感度标签应用到 Office 中的文件和电子邮件](https://support.microsoft.com/zh-CN/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Office 中敏感度标签的已知问题](https://support.microsoft.com/zh-CN/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 - [向 Office 中的文件和电子邮件自动应用或建议敏感度标签](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [有关自动应用或建议敏感度标签的已知问题](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 了解可用于在组织中部署 Microsoft 365 企业版的不同资源。
-ms.openlocfilehash: 0e588816cb2393af05b48900821d7aae92b6853d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031422"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268324"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -55,7 +55,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 - 针对内置安全性和集成部署所需的[底层基础架构](deploy-foundation-infrastructure.md)，以简化管理，从而可更轻松地确保使用最新生产力和安全增强功能更新客户端软件。 
  
-  底层基础架构将以一系列编号阶段的形式组织，它们建立在彼此的基础上，适合于支持 Microsoft 365 企业版工作负载和场景的环境。 
+  底层基础架构将以一系列编号阶段的形式组织，它们建立在彼此的基础上，适合于支持 Microsoft 365 企业版工作负载。 
 
   **如果你是较小或较新的组织**，请按照各个阶段操作，以便有条不紊地构建基础架构。
 
@@ -63,13 +63,13 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
   **如果你是企业组织**，请将阶段视作 IT 基础架构的层，而不是定义的路径，并确定如何更好地工作，以最终满足组织中每个层的要求。
 
-- 在基础架构上面部署关键生产力[工作负载和应用场景](deploy-workloads.md)。 这些将会激发组织的创造力，有利于团队协作。
+- 在基础架构上面部署关键生产力[工作负载](deploy-workloads.md)。 这些将会激发组织的创造力，有利于团队协作。
 
-以下是底层基础架构与工作负载与应用场景之间的关系。
+以下是底层基础架构与工作负载之间的关系。
 
-![底层基础架构与工作负载与应用场景之间的关系](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![底层基础架构与工作负载之间的关系](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-工作负载和应用场景在底层基础架构上面运行。 但是，无需构建所有底层基础架构即可开始使用工作负载，以提高生产力和协作。
+工作负载在底层基础架构上面运行。 但是，无需构建所有底层基础架构即可开始使用工作负载，以提高生产力和协作。
 
 从[此处](deploy-foundation-infrastructure.md)开始你的端对端部署旅程吧。
 
@@ -125,10 +125,6 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 ### <a name="how-the-contoso-corporation-deployed-microsoft-365-for-enterprise"></a>Contoso Corporation 如何部署 Microsoft 365 企业版
 
 Contoso Corporation 是一家虚构但具代表性的全球大型制企业，总部设在法国巴黎。 了解 [Contoso 如何部署 Microsoft 365 企业版](contoso-case-study.md)，并做出主要设计决策和确定以下方面的实现细节：网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性。 
-
-## <a name="stay-current-with-deployment-content"></a>随时了解部署内容
-
-有关内容的最新变化，请参阅[此文章](microsoft-365-deploment-guide-changes.md)。
 
 ## <a name="next-step"></a>后续步骤
 

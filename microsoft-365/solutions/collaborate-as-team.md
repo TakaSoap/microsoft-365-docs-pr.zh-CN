@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解在团队中设置与来宾协作的团队所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: dabcfa53e9ccf4b3ea136b5ab522619fe81ae738
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160023"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371484"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -44,10 +44,10 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 设置组织关系设置
 
-1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com)。
+1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左侧导航中，单击 " **Azure Active Directory**"。
-3. 在 "**概述**" 窗格中，单击 "**组织关系**"。
-4. 在 "**组织关系**" 窗格中，单击 "**设置**"。
+3. 在 "**概述**" 窗格中，单击 "**外部标识**"。
+4. 在 "**组织标识**" 窗格中，单击 "**外部协作设置**"。
 5. 确保**来宾邀请者角色中的管理员和用户可以邀请**和**成员**都可以邀请都设置为 **"是"**。
 6. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -102,7 +102,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -161,12 +161,12 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 现在已配置来宾共享设置，因此您可以开始向团队添加内部用户和来宾。 
 
 向团队邀请内部用户
-1. 在团队中，单击 "**更多选项**" （**\*\***），然后单击 "**添加成员**"。
+1. 在团队中，单击 "**更多选项**" （ **\*\*\*** ），然后单击 "**添加成员**"。
 2. 键入要邀请的人员的姓名。
 3. 单击“**添加**”，然后单击“**关闭**”。
 
 向团队邀请来宾
-1. 在团队中，单击 "**更多选项**" （**\*\***），然后单击 "**添加成员**"。
+1. 在团队中，单击 "**更多选项**" （ **\*\*\*** ），然后单击 "**添加成员**"。
 2. 键入要邀请的来宾的电子邮件地址。
 3. 单击 "**编辑来宾信息**"。
 4. 键入来宾的全名并单击复选标记。

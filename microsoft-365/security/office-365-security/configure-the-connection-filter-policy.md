@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: 14221298ed8e85bd776e7a58a1d2e427c3d19438
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6fb1fd95a701802d9373c07b7661196271ac1e2c
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352007"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371470"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -31,7 +31,7 @@ ms.locfileid: "44352007"
 
 - **IP 允许列表**：跳过来自您通过 ip 地址或 ip 地址范围指定的源电子邮件服务器的所有传入邮件的垃圾邮件筛选。 对于来自这些来源的邮件，可能仍会出现垃圾邮件筛选的情况，请参阅本主题后面的 "[仍在筛选 IP 允许列表中的邮件"](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered)部分中的 "来自此来源的邮件" 部分。 有关 IP 允许列表应适合您的整体安全发件人策略的详细信息，请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
-- **Ip 阻止列表**：阻止来自您通过 ip 地址或 ip 地址范围指定的源电子邮件服务器的所有传入邮件。 传入的邮件将被拒绝，不会被标记为垃圾邮件，并且不会发生其他筛选。有关 IP 阻止列表应适合您的总体阻止发件人策略的详细信息，请参阅[EOP 中的创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
+- **Ip 阻止列表**：阻止来自您通过 ip 地址或 ip 地址范围指定的源电子邮件服务器的所有传入邮件。 传入的邮件将被拒绝，不会被标记为垃圾邮件，并且不会发生其他筛选。 有关 IP 阻止列表应适合您的总体阻止发件人策略的详细信息，请参阅[EOP 中的创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
 - **安全列表**：*安全列表*是 Microsoft 数据中心中不需要客户配置的动态允许列表。 Microsoft 会将这些受信任的电子邮件源标识为对各种第三方列表的订阅。 启用或禁用安全列表的使用;您不能在安全列表上配置源电子邮件服务器。 从安全列表上的电子邮件服务器传入的邮件中跳过垃圾邮件筛选。
 
@@ -72,15 +72,15 @@ ms.locfileid: "44352007"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的网络掩码值为/24 到/32。 若要跳过 CIDR IP 掩码值/1 到/23 的垃圾邮件筛选，请参阅本主题后面的 "[跳过对 CIDR ip 的垃圾邮件筛选](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range)"。在本主题后面的 "可用范围" 部分之外。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
 
    - **IP 阻止列表**：单击 "**编辑**"。 在出现的 " **IP 阻止列表**" 浮出控件中，按照**ip 允许列表**设置中的前面所述，在 "**地址" 或 "地址范围**" 框中输入单个 ip 地址、ip 地址范围或 CIDR IP。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
 
    - **打开安全列表**：启用或禁用安全列表的使用，以确定将跳过垃圾邮件筛选的已知、良好的发件人。
 
-4. 完成后，单击“保存”****。
+4. 完成时，请单击“保存”****。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全 & 合规性中心查看默认连接筛选器策略
 

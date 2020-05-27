@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 的多重身份验证
+title: 适用于 Microsoft 365 的 Multi-Factor Authentication
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Microsoft 365 中的多因素身份验证。
-ms.openlocfilehash: 128296b7dbc37ba5ebffb25a87bce589f8e5a904
-ms.sourcegitcommit: 185d62f41f6b173894ba6e3e87b11b2b5d02db58
+ms.openlocfilehash: eba9ae38dbc17a22abb5d5ef92b8cd30a827ae11
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44340819"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371448"
 ---
-# <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重身份验证
+# <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
 密码是对计算机或联机服务进行身份验证的最常用方法，但它们也最容易受到攻击。 用户可以选择轻松使用密码，并将相同的密码用于多个登录到不同的计算机和服务。
 
@@ -151,17 +151,10 @@ ms.locfileid: "44340819"
 |:-------|:-----|:-------|:-------|
 | **安全性默认值** | 无法使用条件访问策略 |   可以使用条件访问策略 | Microsoft Authenticator 应用 |
 | **条件访问策略** |如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值 | 由用户在 MFA 注册期间指定 |
-| **每用户帐户设置（不推荐）** | 由需要 MFA 的安全默认值和条件访问策略重写 | 由安全默认值和条件访问策略重写 | 由用户在 MFA 注册期间指定|
+| **每用户帐户设置（不推荐）** | 覆盖在每次登录时要求进行 MFA 的安全默认值和条件访问策略 | 由安全默认值和条件访问策略重写 | 由用户在 MFA 注册期间指定|
 ||||
 
 如果启用了安全默认设置，则系统会提示用户在下一次登录时进行 MFA 注册和使用 Microsoft 身份验证器应用的所有新用户。
-
-但是，如果用户具有可接收短信但无法运行 Microsoft 验证程序应用程序的较旧的电话，则可以对该特定用户帐户启用 MFA，并让它们使用文本代码其他验证方法注册这些步骤：
-
-1. 禁用 Azure 门户中的安全默认设置。
-2. 为 Microsoft 365 管理中心中的用户帐户启用 MFA。
-3. 让用户登录并注册 MFA 和文本代码身份验证方法。
-4. 完成后，在 Azure 门户中启用安全默认设置
 
 ## <a name="ways-to-manage-mfa-settings"></a>管理 MFA 设置的方法
 

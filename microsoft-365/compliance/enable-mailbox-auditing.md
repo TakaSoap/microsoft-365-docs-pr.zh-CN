@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: 默认情况下，邮箱审核日志记录处于打开状态（也称为默认邮箱审核或邮箱审核默认情况下启用）。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: f25232dd30fe0fba0f4cc31acae3235012bb025a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
+ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352105"
+ms.lasthandoff: 05/26/2020
+ms.locfileid: "44371426"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -39,7 +39,8 @@ ms.locfileid: "44352105"
 - 您的组织中有一致的邮箱审核策略（因为您正在审核对所有邮箱的相同操作）。
 
 > [!NOTE]
->* 有关默认情况下的邮箱审核发布的重要事项是：不需要执行任何操作来管理邮箱审核。 但是，若要了解详细信息，自定义邮箱审核的默认设置，或将其全部关闭，本主题可为你有所帮助。 <br><br>* 默认情况下，仅在安全 & 合规中心或通过 Office 365 管理活动 API 中的审核日志搜索中提供了 E5 用户的邮箱审核事件。 有关详细信息，请参阅本主题中的[详细信息](#more-information)部分。
+>* 有关默认情况下的邮箱审核发布的重要事项是：不需要执行任何操作来管理邮箱审核。 但是，若要了解详细信息，自定义邮箱审核的默认设置，或将其全部关闭，本主题可为你有所帮助。
+>- 默认情况下，在安全 & 合规中心或通过 Office 365 管理活动 API 中的审核日志搜索中仅提供用于 E5 用户的邮箱审核事件。 有关详细信息，请参阅本主题中的[详细信息](#more-information)部分。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>默认情况下验证邮箱审核启用
 
@@ -337,7 +338,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 如果值**为 True** ，则表示对用户绕过邮箱审核日志记录。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 - 虽然默认情况下已对所有组织启用邮箱审核日志记录功能，但只有拥有 E5 许可证的用户才会在[安全 & 合规性中心中](search-the-audit-log-in-security-and-compliance.md)或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)在审核日志搜索中返回邮箱审核日志事件（**默认情况下**）。
 
