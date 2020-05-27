@@ -1,5 +1,5 @@
 ---
-title: 活动资源管理器（预览版）入门
+title: 活动资源管理器入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,69 +16,66 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 68304bc75d33c993db52895828ec49e3b5203a4c
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929456"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327838"
 ---
-# <a name="get-started-with-activity-explorer-preview"></a><span data-ttu-id="773c0-103">活动资源管理器（预览版）入门</span><span class="sxs-lookup"><span data-stu-id="773c0-103">Get started with activity explorer (preview)</span></span>
+# <a name="get-started-with-activity-explorer"></a><span data-ttu-id="f454d-103">活动资源管理器入门</span><span class="sxs-lookup"><span data-stu-id="f454d-103">Get started with activity explorer</span></span>
 
-<span data-ttu-id="773c0-104">数据分类概述和内容浏览器选项卡使你可以查看已发现和已标记的内容以及该内容的位置。</span><span class="sxs-lookup"><span data-stu-id="773c0-104">The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is.</span></span> <span data-ttu-id="773c0-105">活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。</span><span class="sxs-lookup"><span data-stu-id="773c0-105">Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content.</span></span> <span data-ttu-id="773c0-106">活动资源管理器提供历史视图。</span><span class="sxs-lookup"><span data-stu-id="773c0-106">Activity explorer provides a historical view.</span></span>
+<span data-ttu-id="f454d-104">数据分类概述和内容浏览器选项卡使你可以查看已发现和已标记的内容以及该内容的位置。</span><span class="sxs-lookup"><span data-stu-id="f454d-104">The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is.</span></span> <span data-ttu-id="f454d-105">活动资源管理器通过允许你监视对已标记内容所执行的操作来完善此功能套件。</span><span class="sxs-lookup"><span data-stu-id="f454d-105">Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content.</span></span> <span data-ttu-id="f454d-106">活动资源管理器提供历史视图。</span><span class="sxs-lookup"><span data-stu-id="f454d-106">Activity explorer provides a historical view.</span></span>
 
 ![占位符屏幕截图概述活动资源管理器](../media/data-classification-activity-explorer-1.png)
 
-<span data-ttu-id="773c0-108">可通过以下方式筛选数据：</span><span class="sxs-lookup"><span data-stu-id="773c0-108">You can filter the data by:</span></span>
+<span data-ttu-id="f454d-108">有 30 多种不同筛选器可供使用，其中有：</span><span class="sxs-lookup"><span data-stu-id="f454d-108">There are over 30 different filters available for use, some are:</span></span>
 
-- <span data-ttu-id="773c0-109">日期范围</span><span class="sxs-lookup"><span data-stu-id="773c0-109">date range</span></span>
-- <span data-ttu-id="773c0-110">活动类型</span><span class="sxs-lookup"><span data-stu-id="773c0-110">activity type</span></span>
-- <span data-ttu-id="773c0-111">位置</span><span class="sxs-lookup"><span data-stu-id="773c0-111">location</span></span>
-- <span data-ttu-id="773c0-112">用户</span><span class="sxs-lookup"><span data-stu-id="773c0-112">user</span></span>
-- <span data-ttu-id="773c0-113">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="773c0-113">sensitivity label</span></span>
-- <span data-ttu-id="773c0-114">保留标签</span><span class="sxs-lookup"><span data-stu-id="773c0-114">retention label</span></span>
+- <span data-ttu-id="f454d-109">日期范围</span><span class="sxs-lookup"><span data-stu-id="f454d-109">date range</span></span>
+- <span data-ttu-id="f454d-110">活动类型</span><span class="sxs-lookup"><span data-stu-id="f454d-110">activity type</span></span>
+- <span data-ttu-id="f454d-111">位置</span><span class="sxs-lookup"><span data-stu-id="f454d-111">location</span></span>
+- <span data-ttu-id="f454d-112">用户</span><span class="sxs-lookup"><span data-stu-id="f454d-112">user</span></span>
+- <span data-ttu-id="f454d-113">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="f454d-113">sensitivity label</span></span>
+- <span data-ttu-id="f454d-114">保留标签</span><span class="sxs-lookup"><span data-stu-id="f454d-114">retention label</span></span>
+- <span data-ttu-id="f454d-115">文件路径</span><span class="sxs-lookup"><span data-stu-id="f454d-115">file path</span></span>
+- <span data-ttu-id="f454d-116">DLP 策略</span><span class="sxs-lookup"><span data-stu-id="f454d-116">DLP policy</span></span>
 
 
-<span data-ttu-id="773c0-115">可以以列表或条形图的形式查看数据。</span><span class="sxs-lookup"><span data-stu-id="773c0-115">You can view the data either as a list or a bar graph.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f454d-117">必备条件</span><span class="sxs-lookup"><span data-stu-id="f454d-117">Prerequisites</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="773c0-116">先决条件</span><span class="sxs-lookup"><span data-stu-id="773c0-116">Prerequisites</span></span>
+<span data-ttu-id="f454d-118">访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：</span><span class="sxs-lookup"><span data-stu-id="f454d-118">Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:</span></span>
 
-<span data-ttu-id="773c0-117">访问和使用活动资源管理器的每个帐户，都必须拥有从以下之一订阅向其分配的许可证：</span><span class="sxs-lookup"><span data-stu-id="773c0-117">Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:</span></span>
+- <span data-ttu-id="f454d-119">Microsoft 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="f454d-119">Microsoft 365 (E5)</span></span>
+- <span data-ttu-id="f454d-120">Office 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="f454d-120">Office 365 (E5)</span></span>
+- <span data-ttu-id="f454d-121">高级合规性（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="f454d-121">Advanced Compliance (E5) add-on</span></span>
+- <span data-ttu-id="f454d-122">高级威胁智能（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="f454d-122">Advanced Threat Intelligence (E5) add-on</span></span>
 
-- <span data-ttu-id="773c0-118">Microsoft 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="773c0-118">Microsoft 365 (E5)</span></span>
-- <span data-ttu-id="773c0-119">Office 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="773c0-119">Office 365 (E5)</span></span>
-- <span data-ttu-id="773c0-120">高级合规性（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="773c0-120">Advanced Compliance (E5) add-on</span></span>
-- <span data-ttu-id="773c0-121">高级威胁智能（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="773c0-121">Advanced Threat Intelligence (E5) add-on</span></span>
+### <a name="permissions"></a><span data-ttu-id="f454d-123">权限</span><span class="sxs-lookup"><span data-stu-id="f454d-123">Permissions</span></span>
 
-## <a name="activity-type"></a><span data-ttu-id="773c0-122">活动类型</span><span class="sxs-lookup"><span data-stu-id="773c0-122">Activity type</span></span>
+ <span data-ttu-id="f454d-124">若要访问“活动资源管理器”选项卡，必须在其中任一角色或角色组中向帐户分配成员身份。</span><span class="sxs-lookup"><span data-stu-id="f454d-124">In order to get access to the activity explorer tab, an account must be assigned membership in any one of these roles or role groups.</span></span>
 
-<span data-ttu-id="773c0-123">Microsoft 365 监视和报告跨 SharePoint Online、OneDrive 和终结点的 12 种活动类型。</span><span class="sxs-lookup"><span data-stu-id="773c0-123">Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, OneDrive and endpoints.</span></span> <span data-ttu-id="773c0-124">终结点是运行 Windows 10 的用户设备。</span><span class="sxs-lookup"><span data-stu-id="773c0-124">Endpoints are user devices running Windows 10.</span></span>
+<span data-ttu-id="f454d-125">**Microsoft 365 角色组**</span><span class="sxs-lookup"><span data-stu-id="f454d-125">**Microsoft 365 role groups**</span></span>
 
-- <span data-ttu-id="773c0-125">已创建文件</span><span class="sxs-lookup"><span data-stu-id="773c0-125">File created</span></span>
-- <span data-ttu-id="773c0-126">已修改文件</span><span class="sxs-lookup"><span data-stu-id="773c0-126">File modified</span></span>
-- <span data-ttu-id="773c0-127">已重命名文件</span><span class="sxs-lookup"><span data-stu-id="773c0-127">File renamed</span></span>
-- <span data-ttu-id="773c0-128">已复制到云的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-128">File copied to cloud</span></span>
-- <span data-ttu-id="773c0-129">不允许应用访问的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-129">File accessed by unallowed app</span></span>
-- <span data-ttu-id="773c0-130">已打印的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-130">File printed</span></span>
-- <span data-ttu-id="773c0-131">已复制到可移动媒体的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-131">File copied to removable media</span></span>
-- <span data-ttu-id="773c0-132">已复制到网络共享的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-132">File copied to network share</span></span>
-- <span data-ttu-id="773c0-133">已读文件</span><span class="sxs-lookup"><span data-stu-id="773c0-133">File read</span></span>
-- <span data-ttu-id="773c0-134">已复制到剪贴板的文件</span><span class="sxs-lookup"><span data-stu-id="773c0-134">file copied to clipboard</span></span>
-- <span data-ttu-id="773c0-135">已应用的标签</span><span class="sxs-lookup"><span data-stu-id="773c0-135">Label applied</span></span>
-- <span data-ttu-id="773c0-136">已更改（已升级、已降级或已删除）的标签</span><span class="sxs-lookup"><span data-stu-id="773c0-136">Label changed (upgraded, downgraded, or removed)</span></span>
+- <span data-ttu-id="f454d-126">全局管理员</span><span class="sxs-lookup"><span data-stu-id="f454d-126">Global administrator</span></span>
+- <span data-ttu-id="f454d-127">合规性管理员</span><span class="sxs-lookup"><span data-stu-id="f454d-127">Compliance administrator</span></span>
+- <span data-ttu-id="f454d-128">安全管理员</span><span class="sxs-lookup"><span data-stu-id="f454d-128">Security administrator</span></span>
+- <span data-ttu-id="f454d-129">合规性数据管理员</span><span class="sxs-lookup"><span data-stu-id="f454d-129">Compliance data administrator</span></span>
 
-<span data-ttu-id="773c0-137">了解对敏感的已标记内容采取何种措施的价值在于，你可以查看已经实施的控件（例如[数据丢失防护策略](data-loss-prevention-policies.md)）是否有效。</span><span class="sxs-lookup"><span data-stu-id="773c0-137">The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not.</span></span> <span data-ttu-id="773c0-138">如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。</span><span class="sxs-lookup"><span data-stu-id="773c0-138">If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.</span></span>
+## <a name="activity-type"></a><span data-ttu-id="f454d-130">活动类型</span><span class="sxs-lookup"><span data-stu-id="f454d-130">Activity type</span></span>
 
-<span data-ttu-id="773c0-139">设置筛选器后，可以执行以下操作：</span><span class="sxs-lookup"><span data-stu-id="773c0-139">Once your filters are set, you can:</span></span>
+<span data-ttu-id="f454d-131">Microsoft 365 监视和报告跨 SharePoint Online 和 OneDrive 和的活动类型，例如：</span><span class="sxs-lookup"><span data-stu-id="f454d-131">Microsoft 365 monitors and reports on types of activities across SharePoint Online, and OneDrive like:</span></span>
 
-- <span data-ttu-id="773c0-140">将鼠标悬停在条形图的某一部分，可查看属于该类别“![鼠标悬停在的活动资源管理器](../media/data-classification-activity-explorer-hover-over-2.png)”的项目数。</span><span class="sxs-lookup"><span data-stu-id="773c0-140">hover over a segment of the bar chart to see the number of items that fall into that category ![activity explorer hover over](../media/data-classification-activity-explorer-hover-over-2.png)</span></span>
-- <span data-ttu-id="773c0-141">导出数据</span><span class="sxs-lookup"><span data-stu-id="773c0-141">export the data</span></span>
-- <span data-ttu-id="773c0-142">从列表中选择任何给定项，并在弹出菜单中查看操作的详细信息</span><span class="sxs-lookup"><span data-stu-id="773c0-142">select any given item from the list and view the details of the action in the fly-out</span></span>
+- <span data-ttu-id="f454d-132">已应用的标签</span><span class="sxs-lookup"><span data-stu-id="f454d-132">label applied</span></span>
+- <span data-ttu-id="f454d-133">已更改（已升级、已降级或已删除）的标签</span><span class="sxs-lookup"><span data-stu-id="f454d-133">label changed (upgraded, downgraded, or removed)</span></span>
+- <span data-ttu-id="f454d-134">自动标记模拟</span><span class="sxs-lookup"><span data-stu-id="f454d-134">auto-labeling simulation</span></span>
 
-![活动资源管理器详细信息弹出菜单](../media/data-classification-activity-explorer-fly-out-3.png)
+<span data-ttu-id="f454d-135">了解对敏感的已标记内容采取何种措施的价值在于，你可以查看已经实施的控件（例如[数据丢失防护策略](data-loss-prevention-policies.md)）是否有效。</span><span class="sxs-lookup"><span data-stu-id="f454d-135">The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not.</span></span> <span data-ttu-id="f454d-136">如果无效，或者发现某项意外内容（如大量项目被标记为`highly confidential`并降级为`general`），则可管理各种策略并采取新操作来限制意外行为。</span><span class="sxs-lookup"><span data-stu-id="f454d-136">If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="773c0-144">另请参阅</span><span class="sxs-lookup"><span data-stu-id="773c0-144">See also</span></span>
-- [<span data-ttu-id="773c0-145">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="773c0-145">Sensitivity labels</span></span>](sensitivity-labels.md)
-- [<span data-ttu-id="773c0-146">保留标签</span><span class="sxs-lookup"><span data-stu-id="773c0-146">Retention labels</span></span>](labels.md)
-- [<span data-ttu-id="773c0-147">敏感信息类型查找的内容</span><span class="sxs-lookup"><span data-stu-id="773c0-147">What the sensitive information types look for</span></span>](what-the-sensitive-information-types-look-for.md)
-- [<span data-ttu-id="773c0-148">保留策略概述</span><span class="sxs-lookup"><span data-stu-id="773c0-148">Overview of retention policies</span></span>](retention-policies.md)
+> [!NOTE]
+> <span data-ttu-id="f454d-137">活动资源管理器当前不监视 Exchange Online 的保留活动。</span><span class="sxs-lookup"><span data-stu-id="f454d-137">Activity explorer doesn't currently monitor retention activities for Exchange Online.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f454d-138">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f454d-138">See also</span></span>
+- [<span data-ttu-id="f454d-139">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="f454d-139">Sensitivity labels</span></span>](sensitivity-labels.md)
+- [<span data-ttu-id="f454d-140">保留标签</span><span class="sxs-lookup"><span data-stu-id="f454d-140">Retention labels</span></span>](labels.md)
+- [<span data-ttu-id="f454d-141">敏感信息类型属性定义</span><span class="sxs-lookup"><span data-stu-id="f454d-141">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
+- [<span data-ttu-id="f454d-142">保留策略概述</span><span class="sxs-lookup"><span data-stu-id="f454d-142">Overview of retention policies</span></span>](retention-policies.md)
