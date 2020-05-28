@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 了解如何配置 Windows 10 设备在登录到其工作或学校帐户时将接收的默认设备策略的设置。
-ms.openlocfilehash: dfa6aca1f12ab37b8b0926dea4a6a79c934b1250
-ms.sourcegitcommit: 217de0fc54cbeaea32d253f175eaf338cd85f5af
+ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42561272"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402726"
 ---
 # <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 

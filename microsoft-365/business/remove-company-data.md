@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: 了解如何使用 Microsoft 365 for business 删除你的用户在其设备或 Windows 电脑上拥有的公司数据。
-ms.openlocfilehash: 80997a48bb3924ab20f16a454120d24caf76e1e7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 42784149fcf6b850e7d0483c17dd605e7ecb7cf0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634840"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402778"
 ---
 # <a name="remove-company-data-from-devices"></a>从设备中删除公司数据
 
@@ -40,7 +41,7 @@ ms.locfileid: "43634840"
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。
     
-2. 在左侧导航中，选择 "**设备**\> **管理**"。  
+2. 在左侧导航中，选择 "**设备** \> **管理**"。  
   
 3. 在 "**管理**" 页上，选择或搜索要删除的数据的用户，然后选择名称。 
     

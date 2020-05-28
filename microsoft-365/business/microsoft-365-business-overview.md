@@ -23,17 +23,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商业高级版，这是一项订阅服务，其中包括 Office 效率类应用，以及为企业抵御网络威胁的高级保护功能。
-ms.openlocfilehash: 14f6acdec79323d1dfff836ba945bb3c29059a3e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 61f4c34ade180717486ce889162947afe9be7ba6
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633215"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402246"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 

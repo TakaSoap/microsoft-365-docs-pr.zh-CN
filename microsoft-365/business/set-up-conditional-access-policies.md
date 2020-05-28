@@ -19,17 +19,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解如何设置 Microsoft 365 活动的条件访问策略，以增加额外的安全性。
-ms.openlocfilehash: 26fadecc69486d7931dac069d8f53061592f397f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
+ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153758"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403010"
 ---
 # <a name="set-up-conditional-access-policies"></a>设置条件访问策略
 
@@ -38,10 +39,10 @@ ms.locfileid: "43153758"
 这些策略要求管理员和用户在满足特定条件时输入第二种形式的身份验证（称为 "多重身份验证" 或 "MFA"）。 例如，如果用户从不同的国家/地区登录，则可能会认为登录是危险的，并且用户必须提供另一种形式的身份验证。 
 
 目前，基准策略包括以下各项：
-- **要求针对管理员** &ndash;的 MFA 要求对最具特权的管理员角色（包括全局管理员）进行多重身份验证。
-- 仅当登录存在风险时，**最终用户保护** &ndash;才需要用户进行多重身份验证。 
-- **阻止旧版身份验证** &ndash;早期客户端应用程序和一些新应用程序不使用较新的、更安全的身份验证协议。 这些较旧的应用程序可以绕过条件访问策略，并对您的环境进行未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
-- **要求进行服务管理** &ndash;的 MFA 需要多重身份验证以访问管理工具，包括 Azure 门户（在其中配置基准策略）。 
+- **要求对管理员** &ndash; 进行 MFA对最有特权的管理员角色（包括全局管理员）要求多重身份验证。
+- **最终用户保护** &ndash;仅当登录存在风险时，才需要对用户进行多重身份验证。 
+- **阻止旧版身份验证** &ndash;较旧的客户端应用和一些新的应用程序不使用较新的、更安全的身份验证协议。 这些较旧的应用程序可以绕过条件访问策略，并对您的环境进行未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
+- **需要进行服务管理** &ndash; 的 MFA需要多因素身份验证以访问管理工具，包括 Azure 门户（在其中配置基准策略）。 
 
 Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系统将提示管理员和用户注册 Azure Multii 身份验证。
 
@@ -58,7 +59,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 
   - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators)
 - [要求对用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-end-users)  
- - [阻止旧版身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
+ - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth)
   - [需要进行服务管理的 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-azure)
 
 您可以设置许多其他策略，如要求批准的客户端应用程序。 有关详细信息，请参阅[条件访问文档](https://docs.microsoft.com/azure/active-directory/conditional-access/)。

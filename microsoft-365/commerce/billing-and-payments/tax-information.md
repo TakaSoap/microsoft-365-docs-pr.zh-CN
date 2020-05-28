@@ -20,13 +20,15 @@ search.appverid:
 - MOE150
 - BEA160
 description: '了解在不同区域中为 Microsoft 365 for business 订阅收取的税款的多少。 '
-ms.custom: okr_SMB
-ms.openlocfilehash: 7c071a29fa5cedfc12c69a6471d1321a9167106f
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
+ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232825"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401746"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -186,4 +188,4 @@ ms.locfileid: "44232825"
   
 [查看帐单或发票](view-your-bill-or-invoice.md)
   
-[了解帐单或发票](understand-your-invoice.md)
+[了解你的帐单或发票](understand-your-invoice.md)

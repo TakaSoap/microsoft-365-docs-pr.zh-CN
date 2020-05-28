@@ -17,17 +17,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 在 Windows 10 设备上验证 Microsoft 365 商业高级应用保护设置，并验证用户不能将公司数据复制到个人文件或非托管应用。
-ms.openlocfilehash: 20b2e43ae53486c046440ff1066d241ec9661888
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635736"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403382"
 ---
 # <a name="validate-app-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的应用保护设置
 
@@ -37,11 +38,11 @@ ms.locfileid: "43635736"
   
  **验证连接设置**
   
-1. 使用 microsoft 365 商业高级凭据登录并连接到 Azure AD，如为[Microsoft 365 商业高级用户设置 windows 设备](set-up-windows-devices.md)中所述，请转到**Windows 设置** \> **帐户** \> **访问工作或学校**。 选择" **连接到 \<租户名称\> Azure AD**"，然后选择" **信息**"。
+1. 使用 microsoft 365 商业高级凭据登录并连接到 Azure AD，如为[Microsoft 365 商业高级用户设置 windows 设备](set-up-windows-devices.md)中所述，请转到**Windows 设置** \> **帐户** \> **访问工作或学校**。 选择 "**连接到 \<tenant name\> Azure AD**"，然后选择 "**信息**"。
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. 在 "**管理者** \<租户名称\> " 页上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示。 
+2. 在 "**管理者**" \<tenant name\> 页上，您可以看到包含**管理服务器地址**的**连接信息**，如下图中所示。 
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   

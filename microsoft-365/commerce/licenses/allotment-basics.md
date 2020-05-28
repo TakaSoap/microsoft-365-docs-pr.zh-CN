@@ -9,19 +9,17 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: None
-search.appverid:
-- MET150
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 description: 了解新的服务配额功能。
-ms.openlocfilehash: e6fe91ee2c0e2de58b54e40eddba6d3066999e6d
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942171"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402410"
 ---
 # <a name="allotment-basics"></a>服务配额基础
 
@@ -31,7 +29,7 @@ ms.locfileid: "43942171"
 
 您还可以委派对您的服务配额的管理。 委派的配额分配所有者可以访问管理中心，但只能查看和管理他们拥有的服务配额中的许可证。 这提供了组织中的更精细的许可证管理委派。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 您必须满足[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的许可要求。
 
@@ -51,4 +49,4 @@ ms.locfileid: "43942171"
 
 ## <a name="getting-started"></a>入门
 
-仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写以下表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。
+仅在一小部分客户的私人预览版中提供服务配额功能。 如果你有兴趣加入，请填写以下表单： [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup) 。

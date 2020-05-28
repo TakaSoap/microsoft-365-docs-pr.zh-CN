@@ -14,15 +14,16 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何为你的组织管理免费的自助服务注册订阅。
-ms.openlocfilehash: 46c77cb32fec4dfa1fb9c3d3f992bd842be1b969
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 81c67292a394c62d6057022babb88aa8796b9b3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045249"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403242"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>管理自助注册订阅
 
@@ -43,7 +44,7 @@ ms.locfileid: "44045249"
 > [!IMPORTANT]
 > 删除自助注册订阅时，将阻止所有用户访问其数据和电子邮件，并删除所有数据和电子邮件。
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 2. 查找要删除的自助注册订阅。 在 "**设置" & "操作**" 部分，选择 "**删除订阅**"。
 3. 在 "**删除订阅**" 窗格中，选中 "" 复选框，然后选择 "**删除订阅**"。
 

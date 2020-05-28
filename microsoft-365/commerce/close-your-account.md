@@ -11,23 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 关闭你的帐户。
-ms.openlocfilehash: e41d11502b0c0f738cc23405c387bd5fca1cb0fe
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f399a1ba4d67abf5982c111e9b915f02324150a5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141274"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402174"
 ---
 # <a name="close-your-account"></a>关闭你的帐户
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ ms.locfileid: "44141274"
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>步骤2：取消所有活动订阅
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果 "订阅" 列表位于**表格**视图中，则在右侧，选择 "**卡片**"。
 
@@ -59,7 +59,7 @@ ms.locfileid: "44141274"
 
 ## <a name="step-3-delete-all-disabled-subscriptions"></a>步骤3：删除所有禁用的订阅
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果 "订阅" 列表位于**表格**视图中，则在右侧，选择 "**卡片**"。
 
@@ -73,7 +73,7 @@ ms.locfileid: "44141274"
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步骤4：禁用多重身份验证
 
-1. 在 "管理中心" 中，转到 "**用户** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>" 页。
+1. 在 "管理中心" 中，转到 "**用户**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>" 页。
 
 2. 选择**多因素身份验证**。
 

@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d7e0fdedf6dfe88eba0cac341880787ae6d22934
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8235c74248933c903c6b4fab1c94683a27ba2fba
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355123"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402422"
 ---
 # <a name="contact-support-for-zambia"></a>联系对赞比亚的支持
 

@@ -11,30 +11,30 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 认证的解决方案提供商（合作伙伴）为您的组织或学校购买和管理产品和服务。
 keywords: 合作伙伴、解决方案提供商
-ms.openlocfilehash: 3ba5a62caf199bf1e111ecf921df0f21568d5257
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 752c9e0237bbdde7be996b5675848e948e866dce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141203"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402590"
 ---
 # <a name="manage-partner-relationships"></a>管理合作伙伴关系
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
 您可以与 Microsoft 认证的解决方案提供商（合作伙伴）合作，为您的组织或学校购买和管理产品和服务。 在设置过程中涉及几个步骤。
 
-- 管理员使用处<a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a>的表单查找并联系合作伙伴。
+- 管理员使用处的表单查找并联系合作伙伴 <a href="https://www.microsoft.com/en-us/solution-providers/home" target="_blank">https://www.microsoft.com/en-us/solution-providers/home</a> 。
 - 合作伙伴向客户发送电子邮件请求，以建立合作伙伴关系。
 - 客户接受 Microsoft 365 管理中心提供的邀请，并开始与合作伙伴合作。
 
@@ -42,7 +42,7 @@ ms.locfileid: "44141203"
 
 合作伙伴可以通过多种方式与你合作。 根据您规定的业务需求，他们在发送请求以与您合作时选择这些类型中的一种。
 
-| 合作伙伴类型 | 说明 |
+| 合作伙伴类型 | Description |
 | ------ | ------------------- |
 | 增值 | 向你的组织或学校销售 Microsoft 产品的合作伙伴。 |
 | 委派管理员 | 为组织或学校管理产品和服务的合作伙伴。 在 Azure Active Directory （AD）中，合作伙伴是租户的全局管理员。 此角色使他们能够管理服务，如创建用户帐户、分配和管理许可证以及重置密码。 |
@@ -90,7 +90,7 @@ ms.locfileid: "44141203"
 
 如果您向合作伙伴委派管理员权限，则可以随时删除这些权限。 删除管理员权限不会删除合作伙伴关系。 他们仍可以与你合作，例如，作为经销商。
 
-1. 在管理中心中，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">记帐帐户</a>" 页。
+1. 在管理中心中，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">记帐帐户</a>" 页。
 2. 在 "**记帐帐户**" 页上，选择 "**合作伙伴关系**" 选项卡。
 3. 选择包含合作伙伴名称的行。
 4. 在 "合作伙伴" 页上，选择 "**删除管理员角色**"。
@@ -99,7 +99,7 @@ ms.locfileid: "44141203"
 
 如果您决定不再使用合作伙伴，则可以结束关系。 但是，只能删除合作伙伴是委派管理员或顾问的关系。 对于所有其他合作伙伴类型，请与合作伙伴联系以结束关系。
 
-1. 在管理中心中，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">记帐帐户</a>" 页。
+1. 在管理中心中，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">记帐帐户</a>" 页。
 2. 在 "**记帐帐户**" 页上，选择 "**合作伙伴关系**" 选项卡。
 3. 选择包含合作伙伴名称的行。
 4. 在 "合作伙伴详细信息" 页上，选择 "**删除合作伙伴**"。

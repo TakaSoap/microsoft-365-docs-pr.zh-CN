@@ -18,17 +18,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业高级版附带的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
-ms.openlocfilehash: f6aef84afc76217161dee6b68d626128e0cc15b2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 839b5481e27591e1762a0d8eb5623f279d6d22dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165749"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402706"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级安全性和合规性功能
 
@@ -109,7 +110,7 @@ Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标
 
    Microsoft 365 商业高级版包括[Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建**敏感度标签**，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装**AzInfoProtection_UL .exe**。
 
-您可以在安全&amp;合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
+您可以在安全 &amp; 合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
   
     
 ## <a name="faq"></a>常见问题
@@ -118,7 +119,7 @@ Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标
   
 是的，在销售 Microsoft 365 商业高级版的所有市场中均提供这些功能。
   
-### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何查找安全&amp;合规性中心？
+### <a name="how-do-i-find-the-security-amp-compliance-center"></a>如何查找安全 &amp; 合规性中心？
   
 1. 使用管理员凭据[登录到 Microsoft 365 商业高级版](https://portal.microsoft.com/)。 
     
@@ -126,4 +127,4 @@ Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标
     
     ![在 Microsoft 365 管理中心的左侧导航中，选择 "管理中心"。](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
-3. 选择 **" &amp;安全合规性**" 以&amp;转到 "安全合规中心"。
+3. 选择 "**安全 &amp; 合规性**" 以转到 "安全 &amp; 合规中心"。

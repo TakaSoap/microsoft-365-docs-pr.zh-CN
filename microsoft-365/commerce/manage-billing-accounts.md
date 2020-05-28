@@ -11,16 +11,16 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解有关计费帐户以及如何管理这些帐户的信息。
-ms.openlocfilehash: ce7b9d2a2cc35261c7e6e3f5547574ea9c49e658
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+ms.openlocfilehash: 87cc861ab48b99106a3cbd50d8ded91205ffb0a2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826263"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402602"
 ---
 # <a name="manage-billing-accounts"></a>管理计费帐户
 
@@ -40,7 +40,7 @@ Microsoft 365 admin center 目前支持以下类型的计费帐户：
 
 下表列出了您在**记帐帐户**详细信息页面中看到的重要术语。
 
-| 字段名 | 说明 |
+| 字段名 | Description |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 售出地址 | 负责在发票上付款和标识的法人。 此处提供的地址用于确定您的税率，除非您在购买过程中选择提供备选送货地址。 有关详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。 |
 | 段落 | 一个只读字段，用于标识组织的业务部门（商业、教育、政府或非盈利）。 |

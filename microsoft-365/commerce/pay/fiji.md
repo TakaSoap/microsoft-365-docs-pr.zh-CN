@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4fe0811163d8633888fe7cef30edb314f75695e5
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 2692660fcccfe4468e027baec42c483f4a7c96a8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238323"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402102"
 ---
 # <a name="payment-information-for-fiji"></a>斐济的付款信息
 

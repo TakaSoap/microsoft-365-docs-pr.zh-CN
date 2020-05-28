@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a73632a1-62c8-4a13-8115-913773b30f93
 description: 了解如何解决 Microsoft 365 使用情况分析模板应用程序中的问题。
-ms.openlocfilehash: 7164aa246a79a8d8c5aa50d995b53b6221003c01
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: 4696dd0c5140cdc110781c226819fc64a90fae1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43212145"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402030"
 ---
 # <a name="troubleshooting-microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析疑难解答
 
@@ -39,7 +40,7 @@ ms.locfileid: "43212145"
   
  **原因：** 在连接到应用程序之前，您必须订阅来自 Microsoft 365 管理中心的数据。 如果不先执行此步骤，则不能连接到模板应用程序，即使你提供 Microsoft 365 租户 id 也是如此。 
   
- **若要修复此错误：** 若要订阅数据，请转到管理中心\> **报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 Microsoft 365 使用情况分析磁贴。 选择 "**开始**使用" 按钮，然后在打开的 "**报告**" 窗格中，打开 "将**数据提供给 Power BI 的 Microsoft 365 使用情况分析**" 和 "**保存**"。
+ **若要修复此错误：** 若要订阅数据，请转到管理中心 \> **报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 Microsoft 365 使用情况分析磁贴。 选择 "**开始**使用" 按钮，然后在打开的 "**报告**" 窗格中，打开 "将**数据提供给 Power BI 的 Microsoft 365 使用情况分析**" 和 "**保存**"。
   
 ## <a name="we-are-processing-your-data"></a>正在处理你的数据
 
@@ -67,7 +68,7 @@ ms.locfileid: "43212145"
   
  **原因：** 租户 ID 为 GUID，且必须为 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx 格式。如果在租户输入框中输入任何其他字符串，将收到此错误。 
   
- **若要修复此错误：** 转\>到 "管理中心"**报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 "Microsoft 365 使用情况分析" 磁贴。 该磁贴上列出了租户 ID。 您可以从此处复制它，并将其粘贴到对话框中，以连接到模板应用程序。 
+ **若要修复此错误：** 转到 "管理中心" \> **报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 "Microsoft 365 使用情况分析" 磁贴。 该磁贴上列出了租户 ID。 您可以从此处复制它，并将其粘贴到对话框中，以连接到模板应用程序。 
   
 ## <a name="the-tenant-id-you-provided-is-not-recognized-by-our-system"></a>系统无法识别你提供的租户 ID
 
@@ -77,7 +78,7 @@ ms.locfileid: "43212145"
   
  **原因：** 提供的租户 ID 无效或不存在。 
   
- **若要修复此错误：** 转\>到 "管理中心"**报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 "Microsoft 365 使用情况分析" 磁贴。 该磁贴上列出了租户 ID。 您可以从此处复制它，并将其粘贴到对话框中，以连接到模板应用程序。 
+ **若要修复此错误：** 转到 "管理中心" \> **报告** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>，并在主仪表板页面上找到 "Microsoft 365 使用情况分析" 磁贴。 该磁贴上列出了租户 ID。 您可以从此处复制它，并将其粘贴到对话框中，以连接到模板应用程序。 
   
 ## <a name="please-re-enter-your-credentials-to-sign-in-to-power-bi-again"></a>请重新输入凭据以再次登录到 Power BI
 

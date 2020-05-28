@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: 3e74160cc2e30dc9337e0203fd82ced98869faf7
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6619205fb62cce3ba7c62c3df773f650dc125dac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011755"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402018"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
 ---
@@ -55,13 +56,13 @@ Microsoft 365 使用情况分析包含以下各节中详细介绍的一些报告
 
 Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页顶部的选项卡来查看它们。 报表顶部显示的月份的所有值都是指最新的完整月份。
 
-- **采纳** &ndash;提供了采用趋势的全部摘要。 使用本节中的报告可了解用户采用的是 Microsoft 365 的方式，以及各个服务的整体使用情况在多个月的变化情况。 您可以了解如何启用用户、组织中的多少人主动使用 Microsoft 365、返回用户的数量以及在首次使用该产品的用户数。
+- **采用** &ndash;提供采用趋势的汇总摘要。 使用本节中的报告可了解用户采用的是 Microsoft 365 的方式，以及各个服务的整体使用情况在多个月的变化情况。 您可以了解如何启用用户、组织中的多少人主动使用 Microsoft 365、返回用户的数量以及在首次使用该产品的用户数。
 
-- **使用率** &ndash;提供了向活动用户数量的深入查看，以及最近12个月内每个产品的关键活动。 使用本节中的报告可了解组织中的人员如何使用 Microsoft 365。
+- **使用** &ndash;提供对活动用户数量的深入查看，以及最近12个月内每个产品的关键活动。 使用本节中的报告可了解组织中的人员如何使用 Microsoft 365。
 
-- 通过**交流** &ndash; ，您可以一目了然地了解组织中的人员是否愿意使用团队、Yammer、电子邮件或 Skype 呼叫保持联系。 如果在员工之间使用通信工具，您可以观察到模式是否发生了变化。 
+- **通信** &ndash;您可以一目了然地了解组织中的人员是否愿意使用团队、Yammer、电子邮件或 Skype 呼叫保持联系。 如果在员工之间使用通信工具，您可以观察到模式是否发生了变化。 
 
-- **协作** &ndash;请参阅组织中的人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势在各个月的变化情况。 您还可以查看在内部或外部共享的文档数，以及由所有者和其他协作者分解的 SharePoint 网站或 OneDrive 帐户的数量。
+- **协作** &ndash;了解组织中的人员如何使用 OneDrive 和 SharePoint 来存储文档和相互协作，以及这些趋势在各个月的变化情况。 您还可以查看在内部或外部共享的文档数，以及由所有者和其他协作者分解的 SharePoint 网站或 OneDrive 帐户的数量。
 
 - **存储** &ndash;使用此报告可跟踪邮箱、OneDrive 和 SharePoint 网站的云存储。
 
@@ -71,7 +72,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 激活和许可页面提供有关 Microsoft 365 激活的报告;也就是说，有多少用户已经下载并激活了 Office 应用程序，并且已为组织分配了多少个许可证。 指向顶部的月值是指当前月，而指标反映从月初到当前日期的汇总值。
 
-- **激活** &ndash;跟踪服务计划（例如，适用于企业版、Project 和 Visio 的 Microsoft 365 应用程序）在您的组织中激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用本节中的报告来查看用户安装了 Office 应用程序的设备。 请注意，若要激活计划，用户必须安装该应用并使用其帐户登录。
+- **激活** &ndash;跟踪组织中的服务计划（例如，适用于企业版、Project 和 Visio 的 Microsoft 365 应用程序）激活。 拥有 Office 许可证的每个人可以在最多五台设备上安装产品。 您还可以使用本节中的报告来查看用户安装了 Office 应用程序的设备。 请注意，若要激活计划，用户必须安装该应用并使用其帐户登录。
 
 - **许可** &ndash;此报告包含许可证类型、为每个许可证类型分配的用户数以及每个月的许可证分配分配的概述。 指向顶部的月值是指当前月，而指标反映从月初到当前日期的汇总值。
 
@@ -117,7 +118,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 ### <a name="is-it-possible-to-work-on-and-customize-the-same-template-app-with-a-group-of-people"></a>是否可以与一组人员一起使用和自定义同一个模板应用？
 
-是。 若要使一组管理员能够在同一个模板应用程序中协同工作，可以利用 Power BI 的应用程序工作区功能，有关详细信息，请参阅[应如何协作和共享仪表板和报表？](https://go.microsoft.com/fwlink/p/?linkid=851070) 
+正确。 若要使一组管理员能够在同一个模板应用程序中协同工作，可以利用 Power BI 的应用程序工作区功能，有关详细信息，请参阅[应如何协作和共享仪表板和报表？](https://go.microsoft.com/fwlink/p/?linkid=851070) 
 
 ### <a name="for-which-timeframe-is-data-available"></a>可以使用哪些时间范围的数据？
 

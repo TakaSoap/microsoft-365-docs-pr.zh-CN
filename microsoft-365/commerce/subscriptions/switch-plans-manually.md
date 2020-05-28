@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态，手动切换 Microsoft 365 for business 订阅。
-ms.openlocfilehash: f06e6a5f441286cbe048187eea39889772bb4e75
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 6d6f28dc45f1d5c8efc7202f1be718f8517cf12f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707507"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403194"
 ---
 # <a name="switch-microsoft-365-for-business-plans-manually"></a>手动切换 Microsoft 365 for business 计划
 
@@ -64,19 +65,19 @@ ms.locfileid: "43707507"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
@@ -110,19 +111,19 @@ ms.locfileid: "43707507"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -137,7 +138,7 @@ ms.locfileid: "43707507"
   
 5. 将此用户不再需要的许可证的开关切换到 "**关闭**" 位置。
 
-6. 在 "**产品许可证**" 窗格的底部，选择 "**分配** \> **关闭** \> " **"关闭"。**
+6. 在 "**产品许可证**" 窗格的底部，选择 "**分配** \> **关闭**" "关闭" \> **Close**。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次为多个用户重新分配许可证
 
@@ -149,13 +150,13 @@ ms.locfileid: "43707507"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 

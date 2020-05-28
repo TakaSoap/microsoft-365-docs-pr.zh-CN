@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
-ms.openlocfilehash: a3405207cd7d2d6565807ef0f3a51acbcb80409a
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165729"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402686"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 

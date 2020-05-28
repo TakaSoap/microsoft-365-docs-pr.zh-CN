@@ -20,17 +20,18 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 了解如何设置运行 Windows 10 Pro for Microsoft 365 商业高级版用户的 Windows 设备，从而实现集中管理和安全控制。
-ms.openlocfilehash: efe81a5547496f502232e1db2f3f092165475641
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635444"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402950"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级版用户设置 Windows 设备
 
@@ -104,7 +105,7 @@ ms.locfileid: "43635444"
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>验证设备是否连接到 Azure AD
 
-若要验证同步状态，请在" **设置**"中的" **访问工作或学校**"页面下，单击" **连接到**" _ \<organization name\> _区域以显示" **信息**"和" **断开连接**"按钮。单击" **信息**"，获取同步状态。 
+若要验证您的同步状态，请在 "**设置**" 中的 "**访问工作或学校**" 页上，单击 "**已连接到**_ \<organization name\> _" 区域以显示按钮**信息**并**断开连接**。 单击" **信息**"，获取同步状态。 
   
 在同步状态页面上，单击"同步"，将最新的移动设备管理策略同步到电脑上。
   
@@ -128,4 +129,4 @@ ms.locfileid: "43635444"
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>有关设置和使用 Microsoft 365 商业高级版的详细信息
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

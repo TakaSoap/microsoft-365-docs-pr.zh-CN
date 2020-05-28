@@ -17,16 +17,17 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: 0d23e293d599f5b9d6c829d101f2395d6ac21215
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633183"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402234"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
@@ -41,7 +42,7 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 | 功能    | Microsoft 365 商业高级版中的支持    | Office 365 E3 中的支持 | 
 |:-------|:-----|:-----|
 | **本地**        | | | 
-| Office 应用程序<sup>1</sup>    | 适用于企业的 Microsoft 365 应用程序    | 适用于企业的 Microsoft 365 应用程序 | 
+| Office 应用程序<sup>1</sup>    | Microsoft 365 商业应用版    | Microsoft 365 企业应用版 | 
 | **云生产力应用程序**        | | | 
 | Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档    | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
 | Teams    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 

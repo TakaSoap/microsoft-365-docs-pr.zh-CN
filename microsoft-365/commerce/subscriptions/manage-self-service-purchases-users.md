@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 用户可以了解如何管理自己的自助购买。
-ms.openlocfilehash: 8f141f28c2f1241d19ed34ae234c3b122dd9d69c
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141120"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403254"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -37,11 +38,11 @@ ms.locfileid: "44141120"
 
 ## <a name="view-your-subscriptions"></a>查看你的订阅
 
-您可以查看已购买的所有自助服务购买订阅的列表。 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+您可以查看已购买的所有自助服务购买订阅的列表。 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何购买更多或减少许可证
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要为其购买更多或减少许可证的订阅。
 
@@ -54,7 +55,7 @@ ms.locfileid: "44141120"
 
 ### <a name="to-assign-licenses"></a>分配许可证
 
-1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+1. 在管理中心，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 
 2. 选择要为其分配许可证的订阅。
 
@@ -69,7 +70,7 @@ ms.locfileid: "44141120"
 
 ### <a name="to-unassign-licenses"></a>取消分配许可证
 
-1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+1. 在管理中心，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 
 2. 选择要为其取消分配许可证的产品。
 
@@ -81,7 +82,7 @@ ms.locfileid: "44141120"
 
 ## <a name="cancel-a-subscription"></a>取消订阅
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要取消的订阅。
 
@@ -91,7 +92,7 @@ ms.locfileid: "44141120"
 
 ## <a name="manage-your-payment-details"></a>管理你的付款详细信息
 
-1. 在 "管理中心" 中，转到 "**计费** > 帐单 **& 付款** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">配置文件</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费**帐单  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">配置文件</a>" 页。
 
 2. 从列表中选择一个记帐配置文件。
 
@@ -104,7 +105,7 @@ ms.locfileid: "44141120"
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. 在 "管理中心" 中，转到 "**计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
 
 2. 若要编辑现有的付款方式，请从列表中选择该付款方式。
 
@@ -114,7 +115,7 @@ ms.locfileid: "44141120"
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. 在 "管理中心" 中，转到 "**计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
 
 2. 选择 "**添加付款方法**"。
 
@@ -122,11 +123,11 @@ ms.locfileid: "44141120"
 
 ## <a name="view-your-invoices"></a>查看你的发票
 
-1. 在 "管理中心" 中，转到 "**付费** > 帐单<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**付费**帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>" 页。
 
 2. 在 "**发票**" 下，选择要查看的发票。
 
-## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 

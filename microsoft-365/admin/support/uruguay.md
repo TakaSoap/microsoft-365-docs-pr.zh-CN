@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a90f8e803f18ad233552760b662c7b338cdbbdd2
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 4264520e2470f25810ca903b43148680b7ae929a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355703"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402350"
 ---
 # <a name="contact-support-for-uruguay"></a>联系乌拉圭支持
 

@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,12 +28,12 @@ search.appverid:
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
 description: 购买 Microsoft 365 for business 订阅。 您可以购买您尝试的相同类型的订阅，也可以购买不同的计划。
-ms.openlocfilehash: 48786ffc4bd0a8c5e8e13e0062b6db1dd5bed561
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: de141cb42b310bff6221d0bef6d923882dadadfd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045796"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402614"
 ---
 # <a name="buy-a-subscription-to-microsoft-365-for-business-from-your-free-trial"></a>从免费试用版购买 Microsoft 365 for business 订阅
 
@@ -50,7 +51,7 @@ ms.locfileid: "44045796"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 在 "**产品**" 页上，找到要购买的订阅。 在 "**许可证**" 部分，选择 "**购买订阅**"。
 
@@ -66,7 +67,7 @@ ms.locfileid: "44045796"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在" **订阅**"页面上，选择要购买的试用版订阅的" **立即购买**"按钮。
 
@@ -80,7 +81,7 @@ ms.locfileid: "44045796"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在" **订阅**"页面上，选择要购买的试用版订阅的" **立即购买**"按钮。
 
@@ -109,13 +110,13 @@ ms.locfileid: "44045796"
 
 5. 查看定价信息，然后选择 "**下一步**"。
 
-6. 提供你的付款信息，然后选择 "**下订单** \> "**转到 "管理员主页**"。
+6. 提供你的付款信息，然后选择 "**下订单**" \> **转到 "管理员主页**"。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 
@@ -138,7 +139,7 @@ ms.locfileid: "44045796"
 ::: moniker range="o365-21vianet"
 
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**添加订阅**"。
 

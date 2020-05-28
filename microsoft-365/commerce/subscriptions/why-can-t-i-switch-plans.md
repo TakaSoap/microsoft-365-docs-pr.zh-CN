@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 了解有时必须手动完成切换计划或通过呼叫支持的原因。
-ms.openlocfilehash: 8b6c4069f2c7f0cfd86981c1001a7211aa298ff7
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943139"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403146"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>为什么我无法切换 Microsoft 365 for business 计划？
 
@@ -41,18 +42,18 @@ ms.locfileid: "43943139"
   
 ::: moniker range="o365-worldwide"
 
- **需要其他内容吗？** [购买其他订阅](../buy-another-subscription.md) | [取消订阅](cancel-your-subscription.md) | 订阅[和帐单](../index.yml) | [呼叫支持](../../admin/contact-support-for-business-products.md)
+ **需要其他内容吗？** [购买其他订阅](../buy-another-subscription.md)  | [取消订阅](cancel-your-subscription.md)  | [订阅和帐单](../index.yml)  | [呼叫支持](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **需要其他内容吗？** [购买其他订阅](../buy-another-subscription.md) | [取消订阅](cancel-your-subscription.md) | 订阅[和帐单](../index.yml) | [呼叫支持](../../admin/contact-support-for-business-products.md)
+ **需要其他内容吗？** [购买其他订阅](../buy-another-subscription.md)  | [取消订阅](cancel-your-subscription.md)  | [订阅和帐单](../index.yml)  | [呼叫支持](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **需要其他内容吗？** [购买或尝试由世纪互联运营](../../admin/services-in-china/buy-or-try-subscriptions.md) | 的 Office 365 订阅[取消订阅](cancel-your-subscription.md) | [呼叫支持](../../admin/contact-support-for-business-products.md)
+ **需要其他内容吗？** [购买或尝试由世纪互联运营](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  的 Office 365 订阅[取消订阅](cancel-your-subscription.md)  | [呼叫支持](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

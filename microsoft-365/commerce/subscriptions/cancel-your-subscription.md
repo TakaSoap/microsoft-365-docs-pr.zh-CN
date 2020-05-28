@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,19 +22,19 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
-ms.openlocfilehash: f0f635529a7d7c6ee0f9a2d6b15b887e3fd23bfb
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141165"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403290"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -50,7 +51,7 @@ ms.locfileid: "44141165"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 找到要取消的订阅，在 "**设置" & "操作**" 下，选择 "**取消订阅**"。
 
@@ -62,7 +63,7 @@ ms.locfileid: "44141165"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择订阅。
 
@@ -78,7 +79,7 @@ ms.locfileid: "44141165"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择订阅。
 

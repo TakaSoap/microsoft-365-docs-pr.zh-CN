@@ -1,5 +1,5 @@
 ---
-title: 切换到其他 Microsoft 365 for business 计划
+title: 切换到其他 Microsoft 365 商业版计划
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,6 +16,7 @@ ms.collection:
 - commerce
 ms.custom:
 - SaRA
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,14 +25,14 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 了解如何切换到新的 Microsoft 365 for business 订阅。
-ms.openlocfilehash: 8682ced4aab6fd1b0cbfc132527e977eabc59306
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707495"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403182"
 ---
-# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 for business 计划
+# <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 商业版计划
 
 当您的业务发生变化，或者您需要更多功能时，您可以切换计划。  
 
@@ -49,25 +50,25 @@ ms.locfileid: "43707495"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 ::: moniker-end
 
 2. 选择 "**切换计划**" 以查看可用的新计划的列表。
 
-    ["切换计划" 按钮](#the-switch-plans-button-isnt-there) | 找不到[所需的计划](#i-dont-see-the-plan-i-want)
+    未提供 "[切换计划" 按钮](#the-switch-plans-button-isnt-there)  | [我看不到所需的计划](#i-dont-see-the-plan-i-want)
 
 3. 选择一个计划以查看每月的新总成本。 请务必阅读**密钥信息**，然后选择 "**下一步**" 以签出。
 

@@ -13,24 +13,24 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: f93ca5af11ba416fecd13fcceffe75055a776553
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140886"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401770"
 ---
 # <a name="manage-billing-profiles"></a>管理计费对象信息
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -38,11 +38,11 @@ ms.locfileid: "44140886"
 
 计费配置文件包括以下信息：
 
-- 与配置文件相关**的帐单帐户名称** &ndash;
-- **支付方式** &ndash;信用卡或借记卡、银行帐户、支票或电汇转帐
+- **帐单帐户** &ndash;与配置文件相关的帐单帐户的名称
+- **付款方式** &ndash;信用卡或借记卡、银行帐户、支票或电汇转帐
 - **联系人信息** &ndash;帐单地址和联系人姓名
-- **发票设置** &ndash;货币根据计费帐户所在的国家/地区、可选的 PO 号以及将发票作为电子邮件附件接收的选项。
-- 允许您更改帐单配置文件、支付帐单或使用付费配置文件上的付款方式进行购买的**权限** &ndash;权限
+- **发票设置** &ndash;基于计费帐户所在国家/地区的货币、可选的 PO 号以及将发票作为电子邮件附件接收的选项
+- **权限** &ndash;允许您更改帐单配置文件、支付帐单或使用记帐配置文件上的付款方式进行购买的权限
 
 使用计费配置文件控制购买和自定义发票。 为使用记帐配置文件购买的产品生成月度发票。 您可以自定义发票，例如更新采购订单编号和电子邮件发票首选项。
 
@@ -76,7 +76,7 @@ ms.locfileid: "44140886"
     > [!NOTE]
     > 如果你没有任何 Azure 信用，你将看不到**azure 信用余额**或**azure 积分**选项卡。
 
-## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
 
 如果你在 Azure 费用方面遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用 azure 支持创建支持请求</a>。
 

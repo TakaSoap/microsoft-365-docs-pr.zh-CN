@@ -20,17 +20,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: 了解 Microsoft 365 商业高级版中的保护功能如何映射到 Intune 设置。 订阅提供了修改 Intune 设置的许可证。
-ms.openlocfilehash: 572d3364e465067536e8369b49404d3d1de1bb5b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ce75073f748f6005a843e31f7c38d06b38a3c706
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633235"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401570"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 商业高级版中的保护功能如何映射到 Intune 设置
 
@@ -44,7 +45,7 @@ ms.locfileid: "43633235"
  > 
  > Microsoft 365 商业高级订阅为您提供了修改所有 Intune 设置的许可证。 请参阅[Intune 简介开始入门。](https://docs.microsoft.com/intune/introduction-intune)
   
-选择所需&mdash;的策略名称（例如，适用于 Android &mdash;的应用程序策略），然后选择 "**策略设置**"。
+选择所需的策略名称 &mdash; （例如，适用于 Android 的应用程序策略）， &mdash; 然后选择 "**策略设置**"。
   
 在" **设备丢失或被盗时保护工作文件**"下
   
@@ -103,7 +104,7 @@ ms.locfileid: "43633235"
 |帮助保护电脑免遭 Microsoft Edge 中基于 Web 的威胁  <br/> |" **Microsoft Edge 浏览器设置**"中的" **Microsoft SmartScreen**"设置为" **必需**"。  <br/> |
 |在闲置此时长后关闭设备屏幕(分钟)  <br/> |幕锁定前的最大非活动分钟数  <br/> |
 |允许用户从 Microsoft Store 下载应用  <br/> |自定义 URI 策略  <br/> |
-|允许用户访问 Cortana  <br/> |在 Microsoft 365 商业高级版中设置为**off**时，**常规** \> **Cortana**设置为在 Intune 中**阻止**。  <br/> |
+|允许用户访问 Cortana  <br/> |**常规** \>如果在 Microsoft 365 商业高级版中设置为**off** ， **Cortana**将设置为 "在 Intune 中**阻止**"。  <br/> |
 |允许用户接收来自 Microsoft 的 Windows 提示和广告  <br/> |**Windows 聚焦**，如果在 Microsoft 365 商业高级版中设置为 "**关闭**"，则会被阻止。  <br/> |
 |让 Windows 10 设备自动保持最新状态  <br/> | 此设置位于**Microsoft Intune** \> **Service updates-windows 10 更新环**中，选择 " **windows 10 设备的更新策略**"，然后选择 "**属性** \> **设置**"。  <br/>  将 Microsoft 365 商业高级设置设置为 **"开**" 时，将设置以下所有设置：  <br/> 在 Microsoft 365 商业高级版中关闭此功能时，**服务分支**将设置为 " **CB** " （CBB）。  <br/> " **Microsoft 产品更新**"设置为" **允许**"。  <br/> 将" **Windows 驱动程序**"设置为" **允许**"。  <br/> 将" **自动更新行为**"设置为" **维护时自动安装**"，其中：  <br/> " **开始时间**"设置为" **上午 6 点**"。  <br/> " **活动结束时间**"设置为" **晚上 10 点**"。  <br/> " **质量更新延迟期(天)**"设置为" **0**"。  <br/> " **功能更新延迟期(天)**"设置为" **0**"。  <br/> " **交付优化下载模式**"设置为" **与相同 NAT 后面的对等互连混合的 HTTP**"。  <br/> |
 |||

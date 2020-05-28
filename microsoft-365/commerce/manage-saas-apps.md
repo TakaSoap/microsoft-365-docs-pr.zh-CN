@@ -11,14 +11,15 @@ ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中激活和管理第三方应用程序。
-ms.openlocfilehash: 3e6d77eec71ca1137e0aaf44b62d198d9c87b0c5
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232741"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402578"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>为你的组织管理第三方应用订阅
 

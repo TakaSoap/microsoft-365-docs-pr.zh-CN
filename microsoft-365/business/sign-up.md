@@ -21,16 +21,17 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 了解 Microsoft 365 商业高级版中包含的内容，并获取注册 Microsoft 365 商业高级版的分步指南。
-ms.openlocfilehash: 443363fa673a112ae13eb5b63308115724d9bd00
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635096"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401550"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>注册 Microsoft 365 商业高级版
 
@@ -41,7 +42,7 @@ ms.locfileid: "43635096"
 - **对于 microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 - **获取 microsoft**store 的帮助：头到[microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可以帮助您解决计划、帮助您购买适合您的业务需求的计划，并帮助您完成设置。
 
-**需要不同的东西？** 可执行下列操作：
+**需要不同的东西？** 可以：
 - [将 Office 365 计划升级到 Microsoft 365 商业高级版](migrate-to-microsoft-365-business.md)。
 - 获取为期一个月的 Microsoft 365 商业高级[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
 - 如果你需要具有较少功能的计划，请[注册 Microsoft 365 商业标准](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
@@ -88,7 +89,7 @@ ms.locfileid: "43635096"
     3. 添加你的信用卡详细信息。 如果你的公司地址与信用卡地址不匹配，我们将需要你的公司地址。 您的公司地址确定要支付的税以及哪些服务可用。 有关税的详细信息，请参阅[我将收取什么税？](https://go.microsoft.com/fwlink/?linkid=2109701)。
     4. 选择 "**下订单**"。 Microsoft 需要较短的时间才能完成新计划的设置。
 
-## <a name="whats-next"></a>未来会有哪些更新？
+## <a name="whats-next"></a>下一步做什么？
 
 选择 "**转到安装程序**" 以完成其他步骤，如添加更多安全性以保护您的企业，以及下载 Word 和 Excel 等 Office 应用程序。
 
@@ -96,4 +97,4 @@ ms.locfileid: "43635096"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

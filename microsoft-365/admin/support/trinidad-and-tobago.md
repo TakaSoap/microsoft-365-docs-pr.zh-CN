@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e50734f4eba003567cbc63294dd17a68d85ff681
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c6414b01907c43db953213e48fb757f31f4e8829
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42355923"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401866"
 ---
-# <a name="contact-support-for-trinidad-amp-tobago"></a>联系特立尼达&amp;多巴哥的支持人员
+# <a name="contact-support-for-trinidad-amp-tobago"></a>联系特立尼达多巴哥的支持人员 &amp;
 
 [查找其他国家或地区](../contact-support-for-business-products.md)。
 

@@ -14,24 +14,25 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API，并提供各种 Microsoft 365 服务的每月使用趋势。  '
-ms.openlocfilehash: 2c39edd66bda19233a67c4623044ffc9e0e8046d
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011767"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402042"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用率分析表的数据
 
-Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 这些 API 处于预览状态，并可在 `https://reports.office.com/pbi/v1.0/\<tenantid\>` 进行访问（将 \<tenant id\> 替换为租户 GUID）。 
+Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 处于预览阶段，可在中进行访问 `https://reports.office.com/pbi/v1.0/\<tenantid\>` （将替换为 \<tenant id\> 租户 GUID）。 
   
 > [!NOTE]
 > 有关详细信息，请参阅[在 Microsoft Graph 中使用 microsoft 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 

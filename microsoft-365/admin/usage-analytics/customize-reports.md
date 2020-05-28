@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 了解如何在浏览器和 Power BI Desktop 中自定义报告。
-ms.openlocfilehash: 4f0c85802ecb5db9c57add2fa6dd561827e8fa22
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 121a9be4a83570b7fcf358c48bf558d3bc7c1131
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140705"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402926"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用情况分析中自定义报告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 在**激活/许可**报告中，单击 "**激活**" 选项卡。
     
-2. 通过单击 "Power BI ![](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)中的其他页面" 按钮上的 "**编辑**" 按钮，进入编辑模式。 
+2. 通过单击 "Power BI 中的其他页面" 按钮上的 "**编辑**" 按钮，进入编辑模式 ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 。 
     
     ![Click Edit report on the top right navigation](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -69,7 +70,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 使用左侧导航转到 "**产品使用情况**" 报表，然后单击 " **Yammer** " 选项卡。
     
-2. 单击 Power BI ![](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)和**edit**中的 "更多页面" 按钮，切换到编辑模式。 
+2. 单击 ![ POWER BI 和 edit 中的 "更多页面" 按钮，切换到编辑模式 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) 。 **Edit** 
     
 3. 在页面底部，单击 "" ![Power BI 中的 "添加页面" 按钮](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 创建新页面。
   
@@ -95,7 +96,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
 
     ![选择 Yammer 复选框](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在可视化效果列表的正下方，单击**Format** Power BI ![Visualizaions](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)中的 "格式" 图标格式图标。
+12. 在可视化效果列表的正下方，单击 Power BI Visualizaions 中的 "**格式**" 图标 ![ 格式图标 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
 13. 展开标题并将" **标题文本**"值更改为" **每月首次使用 Yammer 的用户**"。
     
@@ -115,7 +116,7 @@ Microsoft 365 使用情况分析在 Power BI 中提供了一个仪表板，可�
   
 1. 转到" **获取数据**"\>" **其他**"\>" **ODATA 源**"\>" **连接**"。
     
-2. 在 "URL" 窗口中，<i></i>输入\<"\>https://reports.office.com/pbi/v1.0/tenantid"
+2. 在 "URL" 窗口中，输入 "https:// <i></i> reports.office.com/pbi/v1.0/ \<tenantid\> "
     
     **注意：** 报告 Api 处于预览阶段，可能会发生更改，直到它们投入生产。 
   

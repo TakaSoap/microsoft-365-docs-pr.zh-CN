@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,19 +29,19 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 了解如何在 Microsoft 365 订阅中添加和减少文件存储。 使用额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
-ms.openlocfilehash: 921fd4a232d288971150a3379b138613f009f9dc
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140962"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402674"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为你的订阅添加存储空间
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -58,7 +59,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-germany"
 
-1. 以https://portal.office.de全局或 SharePoint 管理员的身份登录，然后选择 "管理员" 磁贴打开管理中心。 （如果您看到一条消息，表明您没有访问该页面的权限，则您的组织中没有 Microsoft 365 管理员权限。）
+1. 以 https://portal.office.de 全局或 SharePoint 管理员的身份登录，然后选择 "管理员" 磁贴打开管理中心。 （如果您看到一条消息，表明您没有访问该页面的权限，则您的组织中没有 Microsoft 365 管理员权限。）
 
 2. 在左窗格中的 "**管理中心**" 下，选择 " **SharePoint**"。 如果看到经典 SharePoint 管理中心，请选择页面顶部的“**立即打开**”，打开新的 SharePoint 管理中心。
 
@@ -70,7 +71,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-21vianet"
 
-1. 以https://login.partner.microsoftonline.cn/全局或 SharePoint 管理员的身份登录，然后选择 "管理员" 磁贴打开管理中心。 （如果您看到一条消息，表明您没有访问该页面的权限，则您的组织中没有 Microsoft 365 管理员权限。）
+1. 以 https://login.partner.microsoftonline.cn/ 全局或 SharePoint 管理员的身份登录，然后选择 "管理员" 磁贴打开管理中心。 （如果您看到一条消息，表明您没有访问该页面的权限，则您的组织中没有 Microsoft 365 管理员权限。）
 
 2. 在左窗格中的 "**管理中心**" 下，选择 " **SharePoint**"。 如果看到经典 SharePoint 管理中心，请选择页面顶部的“**立即打开**”，打开新的 SharePoint 管理中心。
 
@@ -107,13 +108,13 @@ ms.locfileid: "44140962"
 
 6. 在 "**此外观如何？** " 页上，验证所选存储的 gb 数，查看定价信息，然后选择 "**下一步**"。
 
-7. 在 "**完成订单**" 页上，验证总数。 如果需要进行任何更改，请选择 "**编辑订单**"。 如果订单要求进行信用检查，请选中 "" 复选框。 完成后，请选择 "**下订单** \> "**转到 "管理员主页**"。
+7. 在 "**完成订单**" 页上，验证总数。 如果需要进行任何更改，请选择 "**编辑订单**"。 如果订单要求进行信用检查，请选中 "" 复选框。 完成后，请选择 "**下订单**" \> **转到 "管理员主页**"。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  
 
 2. 在 "**订阅**" 页上，选择要向其添加存储空间的订阅，然后选择 "**加载项**"。
 
@@ -138,7 +139,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要向其添加存储空间的订阅，然后选择 "**加载项**"。
 
@@ -167,7 +168,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 选择包含**Office 365 额外文件存储附加设备**的订阅。
 
@@ -179,7 +180,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**加载项**"。
 
@@ -202,7 +203,7 @@ ms.locfileid: "44140962"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择 "**加载项**"。
 

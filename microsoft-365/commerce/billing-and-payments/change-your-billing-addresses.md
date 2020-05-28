@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,13 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何为 Microsoft 365 for business 更新帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
-ms.custom: okr_SMB
-ms.openlocfilehash: 87a9540218f7ef4bef48154930b62bddab7b54e8
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232883"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401794"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -204,7 +206,7 @@ ms.locfileid: "44232883"
 
 [查看帐单或发票](view-your-bill-or-invoice.md)
 
-[了解帐单或发票](understand-your-invoice2.md)
+[了解你的帐单或发票](understand-your-invoice2.md)
 
 [为订阅付款](pay-for-your-subscription.md)
 

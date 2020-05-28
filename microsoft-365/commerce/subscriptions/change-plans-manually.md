@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 通过购买新订阅并确保订阅已列出并处于活动状态来手动更改订阅。
-ms.openlocfilehash: fcaa3ebfd9d20fa50c9f37f3366aec9d4dd69103
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 20f5492a816c6c819456ac2ca4aa0f20da24eccd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046188"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403278"
 ---
 # <a name="change-plans-manually"></a>手动更改计划
 
@@ -53,12 +54,12 @@ OR
 
 **购买新的订阅和许可证：** 按照 "[购买其他 Microsoft 365 for business 订阅](../buy-another-subscription.md)" 中的步骤购买新订阅。
 
-请确保您购买了用户当前所在组织的订阅。 例如，检查您要移动的用户的电子邮件地址。 如果他们的电子邮件\@地址包含 contoso.com，则必须购买 contoso.com 的新订阅。
+请确保您购买了用户当前所在组织的订阅。 例如，检查您要移动的用户的电子邮件地址。 如果他们的电子邮件地址包含 \@ contoso.com，则必须购买 contoso.com 的新订阅。
 为您要移动的每个用户包含一个许可证。
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步骤3：检查新的订阅和许可证
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. **验证这两个订阅是否都已列出并处于活动状态**您要将用户移出的订阅和要将用户移动到的订阅必须一起列出。 如果在首次检查时新订阅不在此处，请稍后重试。 检查两个订阅是否都处于活动状态。 [新订阅未列出或未处于活动状态](#the-new-subscription-isnt-listed-or-isnt-active)。
 
@@ -83,7 +84,7 @@ OR
 
 ### <a name="reassign-a-license-for-one-user"></a>为一个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要为其分配许可证的用户。
 
@@ -91,7 +92,7 @@ OR
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次为多个用户重新分配许可证
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其替换现有许可证的用户的名称旁边的圆圈。
 

@@ -16,17 +16,18 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3。
-ms.openlocfilehash: a41b27b91bd049abb2231a397a328f4f53af9500
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633171"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401986"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3
 
@@ -50,7 +51,7 @@ Microsoft 365 商业高级版为小型企业提供了所需的一切，并将一
 |:-------|:-----|:-----|
 | **本地**        | | | 
 | Windows 10    | Windows 10 企业版  |     Windows 10 企业版 E3| 
-| Office 应用程序 *    | [适用于企业的 Microsoft 365 应用程序](#office-365-business)    | 适用于企业的 Microsoft 365 应用程序 | 
+| Office 应用程序 *    | [Microsoft 365 商业应用版](#office-365-business)    | Microsoft 365 企业应用版 | 
 | **云生产力应用程序**        | | | 
 | Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档    | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
 | Teams    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
@@ -140,7 +141,7 @@ Windows 10 企业版 E3 还包括针对 Microsoft Edge 的基于硬件的隔离�
 Microsoft 365 商业高级版包括 Windows 10 商业版，可以通过 Windows AutoPilot 安装。 在迁移到 Microsoft 365 E3 时，每个用户许可证都包含 Windows 10 企业版 E3，您还可以使用 Windows Autopilot 进行安装。
 
 <a name="office-365-business"></a>
-###  <a name="microsoft-365-apps-for-business"></a>适用于企业的 Microsoft 365 应用程序
+###  <a name="microsoft-365-apps-for-business"></a>Microsoft 365 商业应用版
 
 你的设备上安装的 Microsoft 365 应用程序业务客户端将自动开始使用适用于企业的 Microsoft 365 应用程序的功能。 迁移之后，您现在可以使用：
 

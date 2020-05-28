@@ -1,5 +1,5 @@
 ---
-title: 了解帐单或发票
+title: 了解你的帐单或发票
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,19 +13,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的帐单或发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: 25e9f2865c5970d11fac14d9427cb54374884541
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232813"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402638"
 ---
-# <a name="understand-your-bill-or-invoice"></a>了解帐单或发票
+# <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
 ::: moniker range="o365-21vianet"
 

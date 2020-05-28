@@ -15,15 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: 了解如何将许可证分配给组以用于设备。
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
-ms.openlocfilehash: 1a525117c25a2471ad696ef1447fd7e4ccb6bed0
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ce3c8f7d669f2fe5d19c48d7a1fb1f224aaec7f4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011181"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402866"
 ---
 # <a name="manage-licenses-for-devices"></a>管理设备的许可证
 
@@ -41,7 +43,7 @@ ms.locfileid: "44011181"
 
 将许可证分配给组时，会将许可证分配给组中的所有设备。 您只能将一个订阅分配给任何单个组。
 
-1. 在 Microsoft 365 管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+1. 在 Microsoft 365 管理中心，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 2. 在 "**许可证**" 页上，选择 "**适用于教育的 Microsoft 365 应用程序（设备）** " 或 "适用**于企业的 microsoft 365 应用（设备）**"。
 3. 在下一页上，选择 "订阅"，然后选择 "**分配许可证**"。
 4. 在 "**将许可证分配给组**" 窗格中，开始键入组名称，然后从结果中选择它以将其添加到列表中。
@@ -51,7 +53,7 @@ ms.locfileid: "44011181"
 
 从组中取消分配许可证时，将从组内的所有设备中删除许可证。 所有应用及其关联的数据都是只读的。
 
-1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+1. 在管理中心，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 2. 在 "**许可证**" 页上，选择 "**适用于教育的 Microsoft 365 应用程序（设备）** " 或 "适用**于企业的 microsoft 365 应用（设备）**"。
 3. 在下一页上，选择 "订阅"，选择 "**更多操作**"，然后选择 "未**分配许可证**"。
 4. 在 "未**分配许可证**" 对话框中，选择 "未**分配**"。

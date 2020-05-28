@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 了解适用于中国台湾的 Microsoft 365 for business 电子发票。
-ms.openlocfilehash: 0b57ce0cb6b30b4c9dcd37c3b6931a3389b50b68
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045876"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401782"
 ---
 # <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>了解 Microsoft 365 for business （中国台湾）的电子发票
 
@@ -55,7 +56,7 @@ Microsoft 将在**9 月15日**将当前 computerized 发票替换为电子发票
   
 创建帐户后，您可以通过执行以下步骤，通过管理中心更新 VAT ID：
   
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
     
 2. 选择一个订阅，然后选择 "**更多操作**"。
     

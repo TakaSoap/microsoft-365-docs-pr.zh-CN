@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: 363d8379bb2fa34e58a81892beadcebb9c6624f2
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165115"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403158"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
@@ -40,9 +41,9 @@ ms.locfileid: "44165115"
 
 下表介绍了付费 Microsoft 365 for business 订阅过期时的预期效果。
 
-| **Active**                                                             | **过期<br/>（30天\*）**                                                | **已<br/>禁用（90\*天）**                                               | **已取消设置**                                                                         |
+| **Active**                                                             | **过期 <br/> （30天 \* ）**                                                | **已禁用 <br/> （90天 \* ）**                                               | **已取消设置**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了<br/>数据删除的 Azure Active Directory （如果未被其他服务使用）** |
+| *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了数据删除的 <br/> Azure Active Directory （如果未被其他服务使用）** |
 | 用户具有对 Microsoft 365、数据和 Office 应用程序的常规访问权限  | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限              | 用户无法访问 Microsoft 365、文件或应用程序                        | 用户无法访问 Microsoft 365、文件或应用程序                                     |
 | 管理员具有对 Microsoft 365、数据和 Office 应用程序的常规访问权限 | 管理员可以访问管理中心                                           | 管理员可以访问管理中心，但不能向用户分配许可证       | 管理员可以访问管理中心来购买和管理其他订阅             |
 |                                                                        | 全局管理员或帐单管理员可以在管理中心重新激活订阅 | 全局管理员或帐单管理员可以在管理中心重新激活订阅 |                                                                                           |

@@ -11,22 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理组织中的用户所做的自我服务购买。
-ms.openlocfilehash: 991dc87c40f41a6cbd2f1c08d4bc72bbb34d28f1
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 562e0e26d9ca7d10d71a46b8cf2d87c487c1b529
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141146"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403266"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -36,7 +37,7 @@ ms.locfileid: "44141146"
 
 ## <a name="view-self-service-subscriptions"></a>查看自助服务订阅
 
-1. 在管理中心中，转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 在 "**优化结果**" 下，从 "**帐户类型**" 下拉选择 "**自助服务**"。
 
@@ -44,7 +45,7 @@ ms.locfileid: "44141146"
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看拥有自助服务购买订阅许可证的所有者
 
-1. 在管理中心，转到 "**记帐** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
+1. 在管理中心，转到 "**记帐**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>" 页面。
 
 2. 选择 "筛选器" 图标，然后选择 "**自助服务**"。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44141146"
 
 您可以使用**MSCommerce** PowerShell 模块执行以下操作：
 
-- 查看**AllowSelfServicePurchase**参数值&mdash;的默认状态，无论它是由产品启用还是禁用
+- 查看**AllowSelfServicePurchase**参数值的默认状态， &mdash; 无论它是由产品启用还是禁用
 - 查看适用产品的列表以及是否启用或禁用自助式购买
 - 查看或修改特定产品的当前设置以启用或禁用该产品
 
@@ -75,7 +76,7 @@ ms.locfileid: "44141146"
 
 1. 使用全局管理员或帐单管理员帐户登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
-2. 转到 "**付费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
+2. 转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
 
 3. 查找并选择要购买的产品，然后选择 "**购买**"。
 
@@ -87,7 +88,7 @@ ms.locfileid: "44141146"
 
 7. 请与购买自助服务购买订阅的人员联系，让他们取消该订阅。
 
-## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 

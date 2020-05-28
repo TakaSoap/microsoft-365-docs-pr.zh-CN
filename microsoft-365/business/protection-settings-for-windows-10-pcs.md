@@ -17,17 +17,18 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解 Microsoft 365 for business 中提供的用于保护 Windows 10 设备的默认设置和其他设置。
-ms.openlocfilehash: 9096fb6a8fc790d9a9432578cfd8623f9cb69c7a
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011559"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44402798"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
 
@@ -39,7 +40,7 @@ ms.locfileid: "44011559"
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
     
-2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
+2. 在左侧导航中，选择 "**设备** \> **策略**" " \> **添加**"。
   
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
