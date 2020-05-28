@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
 description: 使用针对你所在国家或地区列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: f1698de8c9b1d80763c983fbc9adf3778be45645
-ms.sourcegitcommit: d4d082292dc711a579fe925ad989ea54ec2e27f4
+ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43707543"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388241"
 ---
 # <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
 
