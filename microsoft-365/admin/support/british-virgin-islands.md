@@ -9,30 +9,31 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0f5c61790d74e6b9d4c40a3058500e729d628195
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 5b9130399d358b2a5a849a95b1bc38d062c1748e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42359743"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398422"
 ---
-# <a name="contact-support-for-british-virgin-islands"></a><span data-ttu-id="1fc15-103">联系支持部门英属维尔京群岛</span><span class="sxs-lookup"><span data-stu-id="1fc15-103">Contact support for British Virgin Islands</span></span>
+# <a name="contact-support-for-british-virgin-islands"></a><span data-ttu-id="b91cc-103">联系支持部门英属维尔京群岛</span><span class="sxs-lookup"><span data-stu-id="b91cc-103">Contact support for British Virgin Islands</span></span>
 
-<span data-ttu-id="1fc15-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1fc15-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b91cc-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="b91cc-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1fc15-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="1fc15-105">Phone number</span></span>
-<span data-ttu-id="1fc15-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="1fc15-106">800-865-9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b91cc-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="b91cc-105">Phone number</span></span>
+<span data-ttu-id="b91cc-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="b91cc-106">800-865-9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1fc15-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="1fc15-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1fc15-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="1fc15-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b91cc-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="b91cc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b91cc-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="b91cc-108">Billing Support:</span></span>
 
-<span data-ttu-id="1fc15-109">英语：周一至周五上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="1fc15-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b91cc-109">英语：周一至周五上午9点-下午5点</span><span class="sxs-lookup"><span data-stu-id="b91cc-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1fc15-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="1fc15-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b91cc-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="b91cc-110">Technical Support:</span></span>
 
-<span data-ttu-id="1fc15-111">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="1fc15-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b91cc-111">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="b91cc-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1fc15-112">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="1fc15-112">Local call charges apply</span></span>
+<span data-ttu-id="b91cc-112">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="b91cc-112">Local call charges apply</span></span>
