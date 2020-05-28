@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d910263bd7c6d5677baddf9c2de94d3cc907013d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: bfce134dcf94f6472788617e52154dd9f0b95acd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356903"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44391569"
 ---
 # <a name="contact-support-for-pitcairn-islands"></a>联系对皮特凯恩岛的支持
 
