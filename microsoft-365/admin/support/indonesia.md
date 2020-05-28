@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fa74b6d37dc7a47a3fd36427f86da0eb782cbbce
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: c39a6aad2272a4c55007859c96c2cfb1f2b4a20f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358343"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397582"
 ---
 # <a name="contact-support-for-indonesia"></a>联系人对印度尼西亚的支持
 

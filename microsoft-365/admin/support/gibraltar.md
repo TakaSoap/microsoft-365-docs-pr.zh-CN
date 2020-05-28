@@ -8,16 +8,17 @@ manager: mnirkhe
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
+ms.custom: AdminSurgePortfolio
 ms.collection: Adm_Support
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f91029c1c39b95b35dce78678f46faecaa79a2c6
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 61a6d161b252eb349bd461f69ffc32e04d34a0cf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42358723"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44397798"
 ---
 # <a name="contact-support-for-gibraltar"></a>联系直布罗陀支持
 
