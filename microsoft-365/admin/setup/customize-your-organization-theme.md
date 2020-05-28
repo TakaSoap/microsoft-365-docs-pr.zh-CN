@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: dba7003f6624a2635976ac689d608a83e62de5c0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 046f5f2f3544fd27a05fc0b3411d352b3131ee7a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327202"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398914"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为你的组织自定义 Microsoft 365 主题
 

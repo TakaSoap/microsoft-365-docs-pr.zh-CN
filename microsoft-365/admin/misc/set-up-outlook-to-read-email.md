@@ -13,18 +13,19 @@ ms.custom:
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: 了解如何在 Outlook 中为 Windows 和 Mac 设置电子邮件帐户，以及如何安装 Office 应用和在线访问电子邮件。
-ms.openlocfilehash: 6f256a9b528c5ee51490007f388b8d3bd5a92f02
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627784"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399274"
 ---
 # <a name="set-up-outlook-to-read-email"></a>将 Outlook 设置为阅读电子邮件
 
@@ -36,7 +37,7 @@ ms.locfileid: "43627784"
   
 1. 在 "**电子邮件帐户**" 页上，选择 "**下一步** \> **添加帐户**"。
     
-2. 在 "**自动帐户设置**" 页上，输入您的姓名、电子邮件地址和密码，然后选择 "**下一步** \> "**完成**。
+2. 在 "**自动帐户设置**" 页上，输入您的姓名、电子邮件地址和密码，然后选择 "**下一步**" \> **完成**。
     
 阅读[完整文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。
   

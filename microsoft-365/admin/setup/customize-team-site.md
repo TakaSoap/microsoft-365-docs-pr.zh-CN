@@ -17,18 +17,19 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您将了解如何自定义、组织和管理团队网站以实现文件存储和共享。
-ms.openlocfilehash: 465cd3781fb5023fa6a1c943b41fa7802d7b4a45
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a220fecdf6cafe1e042cc894631a224d0ab9a4fe
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165103"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398926"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 

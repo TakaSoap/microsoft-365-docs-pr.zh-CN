@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
 - GEA150
 description: 详细了解由世纪互联运营的 Office 365 的适用于 Android 的 Microsoft Office 应用，以及如何为中国的客户下载它。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 3ccf9d25d7b9ac6c036b83fdaf084a95c72b4d62
-ms.sourcegitcommit: 41c0bc5cf50f4ca63b4286d1ea0f58ab82984b7a
+ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42547673"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399058"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>由世纪互联运营的适用于 Office 365 的适用于 Android 的 office 应用程序
 

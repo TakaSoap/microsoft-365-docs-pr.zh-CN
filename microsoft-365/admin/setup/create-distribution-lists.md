@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 将电子邮件发送给一组人，而无需通过创建通讯组（列表）来键入每个收件人的姓名。
-ms.openlocfilehash: a845055acbc5428e0e261997f946f75dc4701d57
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627638"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398962"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建通讯组
   
@@ -58,7 +59,7 @@ ms.locfileid: "43627638"
     
     找不到需要的应用？ 在应用启动器中，选择 "**所有应用**" 以查看可供您使用的应用程序的按字母顺序排列的列表。 可在此处搜索特定应用。 
     
-2. 在左侧导航窗格中选择 "**组** \> **组**"，然后选择 "**添加组**"。 
+2. **Groups** \> 在左侧导航窗格中选择 "组**组**"，然后选择 "**添加组**"。 
       
 3. 在 "**选择组类型**" 字段中，选择 "**分发**"，然后选择 "**下一步**"。
   

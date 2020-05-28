@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何向进入或离开组织的所有电子邮件添加电子邮件签名、法律免责声明或泄露声明。
-ms.openlocfilehash: affd091f951b81541214b4f98c414b5cd4675cd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631973"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398950"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围的签名和免责声明
 
@@ -62,7 +63,7 @@ ms.locfileid: "43631973"
 
 ::: moniker-end
 
-1. 选择应用启动器图标![](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png)，然后选择 "**管理员**"。
+1. 选择应用启动器 ![ 图标 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然后选择 "**管理员**"。
    
     找不到需要的应用？ 在应用启动器中，选择 "**所有应用**" 以查看可供您使用的应用程序的按字母顺序排列的列表。 可在此处搜索特定应用。 
     

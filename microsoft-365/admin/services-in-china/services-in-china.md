@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEU150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 详细了解由世纪互联运营的 Office 365，旨在满足中国安全、可靠和可伸缩云服务的需要。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 6d3facba5beb9398f26ede5345b9121275a47b94
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155405"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399010"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -122,10 +123,10 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |**内部部署 Exchange 版本**|**Exchange 混合服务器版本**|**支持 "混合配置" 向导？**|**支持的混合功能**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
-| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 全部  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 全部  <br/> |
+| 2016  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
+| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 所有  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有，除了就地电子数据展示/存档之外，OWA 访问（请参阅下表）  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 是  <br/> | 仅手动配置的忙/闲  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | 否  <br/> | 无  <br/> |
@@ -178,7 +179,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|从**打开的****文件** \>中打开 Office 应用程序 .。。 button  <br/> |可用. 即将推出漫游时的功能。  <br/> |
+|从**File** \> **打开的文件中**打开 Office 应用程序 .。。 button  <br/> |可用. 即将推出漫游时的功能。  <br/> |
 |在使用 Microsoft 帐户登录时，保存到 OneDrive for business  <br/> |若要将你的数据保留在你所在的国家/地区，你在使用 Microsoft 帐户登录 Office 时无法将文档保存到你的组织网站（OneDrive for Business）。  <br/> |
 |翻译文本或页面的能力  <br/> |此功能可用，但默认情况下处于禁用状态。 管理员确实能够将其打开，但会收到一条警告消息，指示它可以使数据在你的国家/地区外可用。  <br/> |
    
@@ -186,7 +187,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|管理帐户（从 Office 客户端中）  <br/> |此功能以及用于转到 Office 365 门户的其他功能，目前指向全球 Office 365 门户，您无法使用由世纪互联运营的 Office 365 进行登录。 这是一个已修复的已知问题。 同时，您可以使用 URL https://portal.partner.microsoftonline.cn/登录到您的帐户并在那里管理设置。 有关详细信息，请参阅[管理 office 365 Pro Plus account for 由世纪互联运营的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
+|管理帐户（从 Office 客户端中）  <br/> |此功能以及用于转到 Office 365 门户的其他功能，目前指向全球 Office 365 门户，您无法使用由世纪互联运营的 Office 365 进行登录。 这是一个已修复的已知问题。 同时，您可以使用 URL https://portal.partner.microsoftonline.cn/ 登录到您的帐户并在那里管理设置。 有关详细信息，请参阅[管理 office 365 Pro Plus account for 由世纪互联运营的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 

@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: '了解如何使用工作或学校电子邮件注册 Microsoft online services，而不涉及其 IT 部门。 '
-ms.openlocfilehash: 261e1344455602cdf36f38ba647408078bd8dd09
-ms.sourcegitcommit: 4a34b48584071e0c43c920bb35025e34cb4f5d15
+ms.openlocfilehash: c602ba52e3cca1b031e2e772355a84c06b779b5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209684"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399262"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>如果其他人对你的域进行了注册，则可能会使用你的域
 

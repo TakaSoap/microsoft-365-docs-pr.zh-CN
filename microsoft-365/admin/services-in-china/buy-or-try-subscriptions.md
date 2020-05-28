@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: 了解如何在中国使用由世纪互联运营的现有 Office 365 帐户，试用 Office 365 订阅或立即将其购买、添加订阅或获取加载项。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0781430eaf2ccfeed7c31665029d514be9cc5f2e
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42360833"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399082"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>购买或尝试由世纪互联运营的 Office 365 订阅
 

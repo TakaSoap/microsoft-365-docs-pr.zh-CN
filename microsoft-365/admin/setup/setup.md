@@ -19,18 +19,19 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业版应用或 Office 365 教育版订阅。
-ms.openlocfilehash: 9415d81e88234ac537bb531d531b891f0a4feb80
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: f419059245f819352dd1e522984a0f0af59d625f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165079"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398818"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 

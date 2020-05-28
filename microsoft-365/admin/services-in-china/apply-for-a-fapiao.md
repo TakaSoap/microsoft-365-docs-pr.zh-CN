@@ -14,25 +14,26 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - GEA150
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 了解如何在中国由世纪互联运营的 Office 365 中付款后，向世纪发票管理系统提交发票请求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 55629654599dd20b813708a148e3ce49f6b6cf88
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c920f7497c50e7f961028624f9e3ca954a6108f3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140809"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399094"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的发票
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 

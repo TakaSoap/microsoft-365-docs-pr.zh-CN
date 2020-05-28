@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解 Power BI 以及组织中的用户可以如何使用此业务分析服务。
-ms.openlocfilehash: 3cf0c96534b6d8d02ef89f430ae246c6f32ac356
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627808"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399298"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -174,7 +175,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 查找要删除其许可证的用户，然后选择其名称。
     
@@ -209,7 +210,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
     
 4. 切换**Microsoft POWER BI**选项。
     
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 ::: moniker-end 
 

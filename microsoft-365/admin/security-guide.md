@@ -12,16 +12,17 @@ localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: 了解你的业务面临的安全威胁以及你和你的员工可以保护你的数据、帐户和设备的简单方法。
-ms.openlocfilehash: 4fafa348977d2eefe11cab865bacc999d625dc47
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a3c22f5644322beec942b8ba656a718317fc0940
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627664"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399106"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>适用于小型企业的安全信息图形
 
@@ -31,4 +32,4 @@ ms.locfileid: "43627664"
 
 ![用于保护小型企业信息图形的图像](../media/smbthreatprotectioninfographic-thumbnail.png)
 
-[PDF](downloads/smbthreatprotection-infographic.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)
+[PDF](downloads/smbthreatprotection-infographic.pdf)  | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/admin/downloads/smbthreatprotection-infographic.pptx)

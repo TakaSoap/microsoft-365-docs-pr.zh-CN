@@ -14,17 +14,18 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解设置 Microsoft 365 for business 所需的操作。
-ms.openlocfilehash: d02e1aaf03449bd976b8db549274002b3ebb6ed6
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794027"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398842"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版的设置
 
@@ -49,7 +50,7 @@ ms.locfileid: "43794027"
 > [!NOTE]
 > 如果需要将[Microsoft 365 for business 中的管理员角色分配](../add-users/assign-admin-roles.md)给您在向导中添加的用户，可以在稍后在 "**用户**" 页上执行此操作。 
   
-如果未完成设置向导，则可以随时通过[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339) > **安装**程序完成安装任务。 从这里，您可以从其他电子邮件服务迁移电子邮件和联系人、更改管理员帐户的域、管理付费信息、添加或删除用户、重置密码和执行其他业务功能。 有关安装向导和**setup**页面之间的差异的详细信息，请参阅[Microsoft 365 安装向导和设置页面之间的差异](o365-setup-wizard-and-setup-page.md)。
+如果未完成设置向导，则可以随时通过[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)安装程序完成安装任务  >  **Setup**。 从这里，您可以从其他电子邮件服务迁移电子邮件和联系人、更改管理员帐户的域、管理付费信息、添加或删除用户、重置密码和执行其他业务功能。 有关安装向导和**setup**页面之间的差异的详细信息，请参阅[Microsoft 365 安装向导和设置页面之间的差异](o365-setup-wizard-and-setup-page.md)。
 
 如果你有任何一点，请拨打我们的电话。 [我们在这里为你提供帮助！](../contact-support-for-business-products.md)
   
@@ -93,7 +94,7 @@ ms.locfileid: "43794027"
   
 如果要将 Microsoft 365 用于您的电子邮件，请执行以下操作：
   
-- 若要将业务电子邮件地址（如*\@contoso.com*）从其他电子邮件服务移动到 Microsoft 365，您需要将邮件传递到新的 microsoft 365 邮箱。 若要执行此操作，请选择 "**设置**" 页上的 **"迁移用户的数据"** ，我们将指导您完成需要在域主机上进行的更新（分步步骤）。
+- 若要将业务电子邮件地址（如* \@ contoso.com*）从其他电子邮件服务移动到 Microsoft 365，您需要将邮件传递到新的 microsoft 365 邮箱。 若要执行此操作，请选择 "**设置**" 页上的 **"迁移用户的数据"** ，我们将指导您完成需要在域主机上进行的更新（分步步骤）。
 
 - 更新域主机后，所做更改通常在一小时或两小时后生效。 但请注意，有时可能需要长达72小时才能在 internet 上更新更改。
 

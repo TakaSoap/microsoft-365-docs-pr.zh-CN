@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -26,12 +27,12 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: '了解如何将联系人、日历、来自 Gmail 的电子邮件或其他电子邮件提供程序导入 Microsoft 365。 '
-ms.openlocfilehash: 3200ee91e4ca01fb946cbb045805a213958be000
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165151"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398866"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>将电子邮件和联系人迁移到 Microsoft 365
 
@@ -67,9 +68,9 @@ ms.locfileid: "44165151"
     
 2. [将联系人导入到 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
     
-若要启动该过程，请打开 Outlook，然后选择 "**文件** \> ** &amp;打开导出** \> **导入/导出**"。
+若要启动该过程，请打开 Outlook，然后选择 "**文件** \> **打开 &amp; 导出** \> **导入/导出**"。
   
-![Outlook 2016 中的 "文件" 菜单](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![在&amp; Outlook 2016 中打开 "导出" 命令](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的 "导入/导出" 按钮](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
+![Outlook 2016 中的 "文件" 菜单](../../media/2f1c39a5-177e-4052-9dd8-90c0d140be2c.png)![&amp;在 Outlook 2016 中打开 "导出" 命令](../../media/eecab6df-c372-45b1-8a8a-2f6d7af0dd68.png)![Outlook 2016 中的 "导入/导出" 按钮](../../media/ed90ae47-20db-4be1-b0c0-826008432c6e.png)
   
 ## <a name="see-other-email-accounts-in-outlook"></a>在 Outlook 中查看其他电子邮件帐户
 
@@ -79,7 +80,7 @@ ms.locfileid: "44165151"
 
 将帐户（如专用 Gmail 帐户）添加到 Outlook。
   
-- 打开 Outlook，然后转到 "**文件** \> " "**添加帐户**"。
+- 打开 Outlook，然后转到 "**文件**" " \> **添加帐户**"。
     
 是否需要更详细的步骤？ 请参阅[添加帐户](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   

@@ -17,14 +17,15 @@ search.appverid:
 - MOE150
 ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
+- AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 2140e246882d9d9b30481bc20b78142708408f88
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011264"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44398806"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 
@@ -87,7 +88,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
 **选项2：购买 Office 的单个、一次性购买或通过批量许可证购买 Office**
 
- - 购买 Office 的单个一次性购买。 请参阅[Office &amp;家庭商业](https://products.office.com/home-and-business)[版或 office Professional](https://products.office.com/professional)
+ - 购买 Office 的单个一次性购买。 请参阅[Office 家庭 &amp; 商业](https://products.office.com/home-and-business)[版或 office Professional](https://products.office.com/professional)
 
      OR
 

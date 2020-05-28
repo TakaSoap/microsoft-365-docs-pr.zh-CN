@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 了解如何将数据移动到新的业务标识。
-ms.openlocfilehash: 64db403b27d661fe812acd209ca6ed8e95961125
-ms.sourcegitcommit: d688a296dc2b094b70da55334c9a3ad91236cf6f
+ms.openlocfilehash: 03a8ff6b3cfab43d80401a10825a1c274e278ed9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44155355"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399322"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到 Microsoft 365 商业标准
 
@@ -39,7 +40,7 @@ ms.locfileid: "44155355"
  **复制 OneDrive 数据**
 1. 在硬盘上创建一个临时文件夹，以临时存储要迁移到 Microsoft 365 for business 的文件。
     
-2. 转到[https://onedrive.live.com/](https://onedrive.live.com/)并使用用于访问 Microsoft 365 系列订阅的 microsoft 帐户登录。 
+2. 转到 [https://onedrive.live.com/](https://onedrive.live.com/) 并使用用于访问 microsoft 365 系列订阅的 microsoft 帐户登录。 
     
 3. 将您想要用于 Microsoft 365 for business 的文件复制到您在步骤1中创建的本地文件夹中。
     
