@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
 description: 了解如何向订阅添加许可证。
-ms.openlocfilehash: 20e822d6124b3a4383df5308e7a5d47a34d49ed6
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 370ed833a1c7c5142c7725666885a945e1524b53
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045400"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404006"
 ---
 # <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>将许可证添加到或扩展使用产品密钥支付的订阅
 
@@ -42,7 +43,7 @@ ms.locfileid: "44045400"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 查找要向其添加许可证的订阅。 在 "**许可证**" 部分，选择 "**添加更多许可证**"。
 
@@ -78,7 +79,7 @@ ms.locfileid: "44045400"
 
 ::: moniker range="o365-21vianet"
 
-1. 在 "管理中心" 中，转到 "**帐单** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">产品 & 服务</a>" 页。  
+1. 在 "管理中心" 中，转到 "**帐单** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">产品 & 服务</a>" 页。  
 
 2. 查找要向其添加许可证的订阅。 选择 "**更多操作**" 下拉列表，然后选择 "**续订" 或 "添加带令牌的许可证**"。
 
@@ -99,7 +100,7 @@ ms.locfileid: "44045400"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 查找要扩展的订阅。 在 "**记帐**" 部分，选择 "**延长结束日期**"。
 

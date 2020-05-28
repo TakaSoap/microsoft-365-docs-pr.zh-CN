@@ -20,17 +20,18 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: 了解如何验证 Microsoft 365 for business 应用保护设置是否在用户的 Windows 10 设备上生效。
-ms.openlocfilehash: b63681f040b0fe49127693e9cb7aac7ba6c41af6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635696"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403582"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>验证 Windows 10 电脑上的设备保护设置
 
@@ -38,21 +39,21 @@ ms.locfileid: "43635696"
 
 [设置设备策略](protection-settings-for-windows-10-pcs.md)后，可能需要几个小时才能使策略在用户的设备上生效。 您可以通过查看用户设备上的各种 Windows 设置屏幕来确认这些策略是否生效。 由于用户无法修改其 Windows 10 设备上的 Windows Update 和 Windows Defender 防病毒设置，因此许多选项将灰显。
   
-1. 转到 "**设置** \> " " ** &amp;更新安全** **Windows Update** \> \> Windows 更新**重新启动选项**"，并确认所有设置均显示为灰色。 
+1. 转到 "**设置**" " \> **更新 &amp; 安全** \> **Windows 更新** \> **重新启动选项**"，并确认所有设置均显示为灰色。 
     
     ![所有重新启动选项都将灰显。](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. 转到 "**设置** \> " "**更新&amp;安全** **Windows Update** \> \> Windows 更新**高级选项**"，并确认所有设置均显示为灰色。 
+2. 转到 "**设置**" " \> **更新 &amp; 安全** \> **Windows 更新** \> **高级选项**"，并确认所有设置均显示为灰色。 
     
     ![Windows 高级更新选项全部显示为灰色。](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
-3. 转到**设置** \> **更新&amp;安全** \> **Windows 更新** \> **高级选项** \> **选择如何传递更新**。
+3. 转到**设置** \> **更新 &amp; 安全** \> **Windows 更新** \> **高级选项** \> **选择如何传递更新**。
     
     确认您可以看到某些设置已被组织隐藏或管理的邮件（红色），所有选项都将灰显。
     
     ![选择如何传递更新页面指示你的组织隐藏或管理的设置。](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
-4. 若要打开 windows defender 安全中心，请转到**设置** \> **更新&amp;安全** \> \> **Windows defender**单击**打开 windows defender 安全中心** \> **病毒&amp;线程防护** \> ** &amp;病毒防护设置**。 
+4. 若要打开 windows defender 安全中心，请转到**设置** \> **更新 &amp; 安全** \> **Windows defender** \> 单击**打开 windows defender 安全中心** \> **病毒 &amp; 线程防护** \> **病毒 &amp; 防护设置**。 
     
 5. 验证所有选项是否都显示为灰色。 
     

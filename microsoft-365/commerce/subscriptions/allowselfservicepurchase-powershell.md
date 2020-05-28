@@ -11,17 +11,17 @@ ms.service: o365-administration
 localization_priority: None
 ms.collection:
 - commerce
-ms.custom: ''
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 启用或禁用自助购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6c0bcec70eab4266674ca2a22f1b2054807a26e8
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011671"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403686"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -33,7 +33,7 @@ ms.locfileid: "44011671"
 - 查看适用产品的列表以及是否启用或禁用自助式购买
 - 查看或修改特定产品的当前设置以启用或禁用该产品
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 若要使用**MSCommerce** PowerShell 模块，需要具备以下条件：
 
@@ -126,7 +126,7 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
-## <a name="troubleshooting"></a>问题排查
+## <a name="troubleshooting"></a>故障排除
 
 **问题**
 

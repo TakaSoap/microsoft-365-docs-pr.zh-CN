@@ -24,12 +24,13 @@ description: 了解哪些付款选项可用于为 Microsoft 365 for business 订
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
-ms.openlocfilehash: a1ee158079e30348c3b1f9f26ef0b62160bf9544
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+- AdminSurgePortfolio
+ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232871"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407952"
 ---
 # <a name="pay-for-your-subscription"></a>支付订阅费用
 
@@ -47,7 +48,7 @@ ms.locfileid: "44232871"
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>通过信用卡或银行帐户支付
 
-当通过信用卡或银行帐户付款时，将在发票日期后自动扣除你的订阅的费用，直到订阅期限结束。 只要你需要，可以随时[更新信用卡或银行帐户信息](add-update-or-remove-credit-card-or-bank-account.md)。 也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。
+当通过信用卡或银行帐户付款时，将在发票日期后自动扣除你的订阅的费用，直到订阅期限结束。 您可以随时[管理付款方法](manage-payment-methods.md)。 也可以选择[以电子邮件方式接收帐单副本](#receive-a-copy-of-your-billing-statement-in-email)。
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>如果信用卡被拒绝，并且付款已过期怎么办？
 
@@ -62,12 +63,12 @@ ms.locfileid: "44232871"
 
 2. 查找余额未结的订阅。 在“**帐单**”部分中的**订阅的预期付款**旁，选择“**结算余额**”。
 
-3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](add-update-or-remove-credit-card-or-bank-account.md)。
+3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。
 
     > [!NOTE]
     > 当使用“**结算余额**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。
 
-4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](add-update-or-remove-credit-card-or-bank-account.md)。
+4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。
 
 5. 更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**保存**”。
 
@@ -79,12 +80,12 @@ ms.locfileid: "44232871"
 
 2. 选择想要更改的订阅。 在“**我的帐单**”部分中，选择“**立即付款**”。
 
-3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](add-update-or-remove-credit-card-or-bank-account.md)。
+3. 如果是信用卡所有者，可更改卡的到期日期，选择另一张卡，或[添加新卡](manage-payment-methods.md)。
 
     > [!NOTE]
     > 当使用“**立即付款**”功能时，将收取帐户的全部未结余额，这可能会比其他位置显示的到期金额多。
 
-4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](add-update-or-remove-credit-card-or-bank-account.md)。
+4. 如果不是信用卡所有者，可选择另一张信用卡或[添加新卡](manage-payment-methods.md)。
 
 5. 更新信用卡信息或更改用于支付订阅的信用卡后，请选择“**提交**”。 将看到确认消息，显示“已更新付款方式并已结清所有未付费用。 谢谢大家。”
 
@@ -310,6 +311,6 @@ ms.locfileid: "44232871"
 
 ## <a name="related-articles"></a>相关文章
 
-[添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)
+[管理支付方式](manage-payment-methods.md)
 
-[了解帐单或发票](understand-your-invoice2.md)
+[了解你的帐单或发票](understand-your-invoice2.md)

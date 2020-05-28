@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何创建邮件流规则（传输规则），以标识邮件并在 Exchange Online Protection 中设置邮件的垃圾邮件可信度（SCL）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9af154a9f71992597e111147b792cd5286e2ad3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 223e676579c99eca7db641146d3a1b6bd22f9ca2
+ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208557"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44405115"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages-in-eop"></a>使用邮件流规则在 EOP 中设置邮件的垃圾邮件可信度（SCL）
 
@@ -54,7 +54,7 @@ ms.locfileid: "44208557"
 
    - **执行以下**操作：选择 "**修改邮件属性** \> **" 设置垃圾邮件可信度（SCL）**。 在出现的 "**指定 SCL** " 对话框中，配置下列值之一：
 
-   - **绕过垃圾邮件筛选**：这会将 SCL 设置为-1，这意味着邮件将跳过垃圾邮件筛选。
+   - **绕过垃圾邮件筛选**：邮件将跳过垃圾邮件筛选。
 
      > [!CAUTION]
      > 务必小心允许邮件跳过垃圾邮件筛选。 攻击者可以利用此漏洞将网络钓鱼和其他恶意邮件发送到您的组织中。 邮件流规则需要的不仅仅是发件人的电子邮件地址或域。 有关详细信息，请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。

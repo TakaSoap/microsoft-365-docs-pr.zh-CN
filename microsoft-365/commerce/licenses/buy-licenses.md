@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,19 +26,19 @@ search.appverid:
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
 description: 了解如何添加和删除适用于 Microsoft 365 的商业版订阅的许可证。
-ms.openlocfilehash: f8ae177052be325673af96d9535f25dfcdc93180
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: c4b2b30c9d444aad11ea4cd2faf8b2546e33c39c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44141229"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44404018"
 ---
 # <a name="manage-subscription-licenses"></a>管理订阅许可
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -49,7 +50,7 @@ ms.locfileid: "44141229"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 在 "**产品**" 页上，找到要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44141229"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
@@ -77,7 +78,7 @@ ms.locfileid: "44141229"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 在 "**订阅**" 页上，选择要向其添加或删除许可证的订阅，然后选择 "**添加/删除许可证**"。
 
@@ -93,7 +94,7 @@ ms.locfileid: "44141229"
 
 此表介绍 "**添加/删除许可证**" 链接不可用的原因，以及您可以执行的操作。 
 
-|原因  |说明  |解决方案  |
+|原因  |Description  |解决方案  |
 |---------|---------|---------|
 |正在等待信用检查。 |如果正在等待信用检查，你将看到"正在等待信用检查"消息，并在完成信用检查之后才能购买许可证。  | 稍后再次查看以查看是否已完成信用检查。 信用检查通常需要两个工作日才能完成。<br>完成信用检查后，应可在" **用户**"部分看到" **添加/删除许可证**"链接。 如果是这样，请转到[管理订阅许可证](#manage-subscription-licenses)。 |
 |您使用产品密钥激活了订阅。| 如果订阅是使用 25 个字符的产品密钥购买并激活的，你将看到"预付费"字样。  |请参阅[向使用产品密钥支付的订阅添加许可证](add-licenses-using-product-key.md)。 |

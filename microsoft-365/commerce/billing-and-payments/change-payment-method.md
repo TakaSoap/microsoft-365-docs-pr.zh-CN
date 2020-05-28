@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 了解如何更改业务订阅的付款方式。
-ms.openlocfilehash: 195bdcd580663fe2cb9789562a52208753500a79
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045900"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407964"
 ---
 # <a name="change-your-payment-method"></a>更改付款方式
 
@@ -42,7 +43,7 @@ ms.locfileid: "44045900"
 > [!IMPORTANT]
 > 在某些国家或地区不提供银行帐户付款。
 
- **仅想更改信用卡或银行帐户信息？** 请参阅[添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)。
+ **仅想更改信用卡或银行帐户信息？** 请参阅[管理支付方式](manage-payment-methods.md)。
 
  **只想更改你的帐单次数？** 请参阅[更改付款频率](change-payment-frequency.md)。
   
@@ -66,7 +67,7 @@ ms.locfileid: "44045900"
   
  **想要更改付款频率？** 如果要更改为订阅付费的频率（从每年到每月或每月到每年），则需要[致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
   
- **仅想更改信用卡或银行帐户信息？** 请参阅[添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)。
+ **仅想更改信用卡或银行帐户信息？** 请参阅[管理支付方式](manage-payment-methods.md)。
   
  **如果我有未结余额，该怎么办？**
   
@@ -88,7 +89,7 @@ ms.locfileid: "44045900"
   
 当你将通过发票支付更改为通过信用卡或银行账户支付时，我们会自动为你创建新的订阅，并将你的用户移至新订阅，然后禁用你的旧订阅。 请不要担心，为你的用户提供的服务不会中断，他们的所有信息都可以通过新的订阅获得。
 
-1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果是在**表格**视图中，请选择 "**卡片**"。
 
@@ -113,7 +114,7 @@ ms.locfileid: "44045900"
   
 当将通过发票支付更改为通过信用卡支付或银行帐户支付时，会自动为你创建一个新订阅，并将你的用户移至新订阅，然后禁用你的旧订阅。请不要担心，为你的用户提供的服务不会中断，他们可通过新订阅获取其全部信息。
 
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
 
 2. 查找要更改的订阅。 在 "**付款详细信息**" 部分，选择 "**更改付款详细信息**"。
   
@@ -152,7 +153,7 @@ ms.locfileid: "44045900"
 
 如果不需要进行信用检查，请使用以下步骤更改为 "按发票付款"。
 
-1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 如果是在**表格**视图中，请选择 "**卡片**"。
 
@@ -164,7 +165,7 @@ ms.locfileid: "44045900"
 
 6. 输入您的姓名、地址和电话号码。 您还可以添加要显示在发票上的采购订单编号。
   
-7. 完成后，请选择 "**保存**"。
+7. 完成后，选择“保存”****。
 
 8. 确认所选的支付方式正确，然后选择 "**保存**"。
 
@@ -177,7 +178,7 @@ ms.locfileid: "44045900"
 > [!NOTE]
 > 仅当您的订阅成本超过一定金额（因服务位置而异）时，才可使用 "按发票付款" 选项。 较大数额的发票付款可能要求进行信用检查。 若要了解详细信息，请参阅[订阅的付费](pay-for-your-subscription.md)。
 
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
 
 2. 查找要更改的订阅。 在 "**付款方法**" 部分，选择 "**更改付款详细信息**"。
   
@@ -198,13 +199,13 @@ ms.locfileid: "44045900"
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
 
-1. 在管理中心中，转到 "**付费**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**帐单**" 部分中。
 
 ### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>使用旧管理中心确认配置了哪种付款方式
 
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">订阅</a>" 页。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**付款方式**" 下。
 
@@ -216,7 +217,7 @@ ms.locfileid: "44045900"
 
 可随时使用以下步骤来验证为订阅配置的付款方式。
 
-1. 在管理中心中，转到 "**记帐**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。
 
 2. 查找要验证的订阅。 为订阅配置的付款方式将显示在 "**付款方式**" 下。
 

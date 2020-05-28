@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -16,12 +17,12 @@ search.appverid:
 - GEA150
 ms.assetid: 6f70de1b-a64d-4498-bfbd-be8c83a9c0fc
 description: 更新你的组织的联系信息，并选择要接收的与 Microsoft 365 产品相关的通信。
-ms.openlocfilehash: 4a667757990ec30f4514b094fd1592831601e679
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: afb69c52ba89c2a9e6ff7af014a74b0abfda4e5e
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628204"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407928"
 ---
 # <a name="change-your-contact-preferences-for-communications-from-microsoft"></a>针对来自 Microsoft 的通信更改联系人首选项
 
@@ -42,7 +43,7 @@ ms.locfileid: "43628204"
 4. 键入您要在其中接收这些通信的业务电话、业务移动电话或业务电子邮件。
     您可以使用任何电子邮件地址（包括您的 Microsoft 电子邮件地址）来接收这些通信。 如果没有添加用作联系人首选项的电子邮件地址，将会使用备选电子邮件地址（位于" **个人信息**"页面）。
 
-5. 选择“**保存**”。
+5. 选择“保存”****。
   
 对于 Office 365 企业版、Microsoft 365 商业标准版和 Microsoft 365 商业版，首次注册为 Microsoft 365 的管理员时，您的用户可能会被自动注册，以接收与产品相关的通信。
   
@@ -50,4 +51,4 @@ ms.locfileid: "43628204"
   
 - [更改 Microsoft 365 商业版的帐单邮寄地址](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [在 Microsoft 365 商业版中添加、更新或删除信用卡或银行帐户](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [管理支付方式](../../commerce/billing-and-payments/manage-payment-methods.md)
