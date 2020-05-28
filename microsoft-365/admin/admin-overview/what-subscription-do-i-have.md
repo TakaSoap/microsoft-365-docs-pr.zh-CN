@@ -1,5 +1,5 @@
 ---
-title: 我订阅了哪些产品？
+title: 我有什么订阅？
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,69 +24,68 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045208"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386741"
 ---
-# <a name="what-subscription-do-i-have"></a><span data-ttu-id="78afd-103">我订阅了哪些产品？</span><span class="sxs-lookup"><span data-stu-id="78afd-103">What subscription do I have?</span></span>
+# <a name="what-subscription-do-i-have"></a><span data-ttu-id="f7def-103">我有什么订阅？</span><span class="sxs-lookup"><span data-stu-id="f7def-103">What subscription do I have?</span></span>
 
-<span data-ttu-id="78afd-104">如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。</span><span class="sxs-lookup"><span data-stu-id="78afd-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
+<span data-ttu-id="f7def-104">如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。</span><span class="sxs-lookup"><span data-stu-id="f7def-104">If you're an admin, you can verify which subscriptions your organization has by going to the admin center.</span></span>
   
- <span data-ttu-id="78afd-105">**不是管理员？**</span><span class="sxs-lookup"><span data-stu-id="78afd-105">**Not an admin?**</span></span> <span data-ttu-id="78afd-106">查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)</span><span class="sxs-lookup"><span data-stu-id="78afd-106">See [What Microsoft 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)</span></span>
+ <span data-ttu-id="f7def-105">**不是管理员？**</span><span class="sxs-lookup"><span data-stu-id="f7def-105">**Not an admin?**</span></span> <span data-ttu-id="f7def-106">查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)</span><span class="sxs-lookup"><span data-stu-id="f7def-106">See [What Microsoft 365 for business product or license do I have?](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)</span></span>
 
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="78afd-107">如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。</span><span class="sxs-lookup"><span data-stu-id="78afd-107">If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.</span></span>
+> <span data-ttu-id="f7def-107">如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。</span><span class="sxs-lookup"><span data-stu-id="f7def-107">If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.</span></span>
 
-1. <span data-ttu-id="78afd-108">在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。</span><span class="sxs-lookup"><span data-stu-id="78afd-108">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="f7def-108">在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="f7def-108">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
-2. <span data-ttu-id="78afd-109">您的订阅将显示在 "**产品**" 页上，以及订阅名称、有关订阅的信息及其状态。</span><span class="sxs-lookup"><span data-stu-id="78afd-109">Your subscriptions are displayed on the **Your products** page, together with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="78afd-110">若要查看简洁视图，请选择 "**表格视图**"。</span><span class="sxs-lookup"><span data-stu-id="78afd-110">To see a condensed view, select **Table view**.</span></span>
+2. <span data-ttu-id="f7def-109">您的订阅将显示在 "**产品**" 页上，以及订阅名称、有关订阅的信息及其状态。</span><span class="sxs-lookup"><span data-stu-id="f7def-109">Your subscriptions are displayed on the **Your products** page, together with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="f7def-110">若要查看简洁视图，请选择 "**表格视图**"。</span><span class="sxs-lookup"><span data-stu-id="f7def-110">To see a condensed view, select **Table view**.</span></span>
 
 ::: moniker-end
   
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="78afd-111">在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  </span><span class="sxs-lookup"><span data-stu-id="78afd-111">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="f7def-111">在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  </span><span class="sxs-lookup"><span data-stu-id="f7def-111">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="78afd-112">如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。</span><span class="sxs-lookup"><span data-stu-id="78afd-112">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="78afd-113">在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。</span><span class="sxs-lookup"><span data-stu-id="78afd-113">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
+2. <span data-ttu-id="f7def-112">如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。</span><span class="sxs-lookup"><span data-stu-id="f7def-112">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="f7def-113">在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。</span><span class="sxs-lookup"><span data-stu-id="f7def-113">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. <span data-ttu-id="78afd-p104">如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。</span><span class="sxs-lookup"><span data-stu-id="78afd-p104">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
+3. <span data-ttu-id="f7def-p104">如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f7def-p104">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
 
-    <span data-ttu-id="78afd-117">如果有多个订阅，请选择要查看其详细信息的订阅。</span><span class="sxs-lookup"><span data-stu-id="78afd-117">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="78afd-118">订阅卡会随着该订阅信息的更新而更新。</span><span class="sxs-lookup"><span data-stu-id="78afd-118">The subscription card will update with information about that subscription.</span></span>
+    <span data-ttu-id="f7def-117">如果有多个订阅，请选择要查看其详细信息的订阅。</span><span class="sxs-lookup"><span data-stu-id="f7def-117">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="f7def-118">订阅卡会随着该订阅信息的更新而更新。</span><span class="sxs-lookup"><span data-stu-id="f7def-118">The subscription card will update with information about that subscription.</span></span>
 
     ![管理中心的 "订阅" 页面，其中显示了按其状态分组的多个订阅的列表。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
-    > <span data-ttu-id="78afd-120">如果你有已过期或禁用的订阅，它们将根据当前状态列出。</span><span class="sxs-lookup"><span data-stu-id="78afd-120">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
+    > <span data-ttu-id="f7def-120">如果你有已过期或禁用的订阅，它们将根据当前状态列出。</span><span class="sxs-lookup"><span data-stu-id="f7def-120">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="78afd-121">在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。  </span><span class="sxs-lookup"><span data-stu-id="78afd-121">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="f7def-121">在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。  </span><span class="sxs-lookup"><span data-stu-id="f7def-121">In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="78afd-122">如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。</span><span class="sxs-lookup"><span data-stu-id="78afd-122">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="78afd-123">在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。</span><span class="sxs-lookup"><span data-stu-id="78afd-123">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
+2. <span data-ttu-id="f7def-122">如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。</span><span class="sxs-lookup"><span data-stu-id="f7def-122">If you have only one subscription, it will be displayed on the **Subscriptions** page, along with the subscription name, information about the subscription, and its status.</span></span> <span data-ttu-id="f7def-123">在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。</span><span class="sxs-lookup"><span data-stu-id="f7def-123">In the following screenshot, you can see that I have an Microsoft 365 Apps for business subscription.</span></span>
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. <span data-ttu-id="78afd-p107">如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。</span><span class="sxs-lookup"><span data-stu-id="78afd-p107">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
+3. <span data-ttu-id="f7def-p107">如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f7def-p107">If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.</span></span>
 
-    <span data-ttu-id="78afd-127">如果有多个订阅，请选择要查看其详细信息的订阅。</span><span class="sxs-lookup"><span data-stu-id="78afd-127">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="78afd-128">订阅卡会随着该订阅信息的更新而更新。</span><span class="sxs-lookup"><span data-stu-id="78afd-128">The subscription card will update with information about that subscription.</span></span>
+    <span data-ttu-id="f7def-127">如果有多个订阅，请选择要查看其详细信息的订阅。</span><span class="sxs-lookup"><span data-stu-id="f7def-127">If you have multiple subscriptions, choose the one for which you want to see detailed information.</span></span> <span data-ttu-id="f7def-128">订阅卡会随着该订阅信息的更新而更新。</span><span class="sxs-lookup"><span data-stu-id="f7def-128">The subscription card will update with information about that subscription.</span></span>
 
     ![管理中心的 "订阅" 页面，其中显示了按其状态分组的多个订阅的列表。](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
-    > <span data-ttu-id="78afd-130">如果你有已过期或禁用的订阅，它们将根据当前状态列出。</span><span class="sxs-lookup"><span data-stu-id="78afd-130">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
+    > <span data-ttu-id="f7def-130">如果你有已过期或禁用的订阅，它们将根据当前状态列出。</span><span class="sxs-lookup"><span data-stu-id="f7def-130">If you have subscriptions that have expired or have been disabled, they'll be listed based on their current state.</span></span>
 
 ::: moniker-end
 
-## <a name="related-articles"></a><span data-ttu-id="78afd-131">相关文章</span><span class="sxs-lookup"><span data-stu-id="78afd-131">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="f7def-131">相关文章</span><span class="sxs-lookup"><span data-stu-id="f7def-131">Related articles</span></span>
   
-[<span data-ttu-id="78afd-132">订阅和计费</span><span class="sxs-lookup"><span data-stu-id="78afd-132">Subscriptions and billing</span></span>](../../commerce/index.yml)
+[<span data-ttu-id="f7def-132">订阅和计费</span><span class="sxs-lookup"><span data-stu-id="f7def-132">Subscriptions and billing</span></span>](../../commerce/index.yml)
