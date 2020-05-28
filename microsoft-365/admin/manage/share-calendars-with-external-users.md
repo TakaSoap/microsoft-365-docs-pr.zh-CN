@@ -15,18 +15,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: '了解如何让你的用户与外部用户共享会议和约会的日历。 '
-ms.openlocfilehash: f305505a9000b86c2c190e92f4c744c95f553e61
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 905280d3c23ffcb9fcf281c39b232a3d05ba1ec5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280518"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399562"
 ---
 # <a name="share-calendars-with-external-users"></a>与外部用户共享日历
 

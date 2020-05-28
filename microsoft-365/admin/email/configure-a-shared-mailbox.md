@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 创建共享邮箱后，您需要为其用户配置一些设置，如电子邮件转发和自动答复。 稍后，您可能需要更改其他设置，例如邮箱名称或成员。
-ms.openlocfilehash: 63d3d0a5867875344ff4635071bbbad69e02eadc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7c88ffa3276f40ea983f9060658f4e4091e36280
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629043"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400144"
 ---
 # <a name="configure-a-shared-mailbox"></a>配置共享邮箱
 
@@ -55,7 +56,7 @@ ms.locfileid: "43629043"
 
 3. 输入一个新名称，或添加另一个别名。 如果要更改主电子邮件地址，邮箱必须具有多个电子邮件别名。
 
-4. 选择“**保存**”。
+4. 选择“保存”****。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>转发共享邮箱收到的电子邮件
 
@@ -83,7 +84,7 @@ ms.locfileid: "43629043"
     
 3. 将切换设置为 **"开**"，然后输入一个电子邮件地址以将邮件转发给。 它可以是任何有效的电子邮件地址。 若要转发到多个地址，您需要为地址[创建通讯组](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists?view=o365-worldwide)，然后在此框中输入组的名称。
     
-4. 选择“**保存**”。
+4. 选择“保存”****。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>从共享邮箱发送自动答复
 
@@ -105,7 +106,7 @@ ms.locfileid: "43629043"
 
 ::: moniker-end
 
-2. 选择要编辑的共享邮箱，然后选择 "**自动答复** \> " "**编辑**"。
+2. 选择要编辑的共享邮箱，然后选择 "**自动答复**" " \> **编辑**"。
     
 3. 将开关切换到" **开**"，选择将答复发送给组织内部还是外部的人员。
 
@@ -113,13 +114,13 @@ ms.locfileid: "43629043"
 
 5. 如果*还要*向组织外部的人员发送答复，请选中要获取答复的用户的复选框，然后键入文本。 不能只发送给组织外部的人员而不发送给组织内部的人员。
 
-6. 选择“**保存**”。
+6. 选择“保存”****。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>使所有人都能看到已发送的电子邮件（答复邮件）
 
 默认情况下，发送自共享邮箱的邮件不会保存到共享邮箱的"已发送邮件"文件夹中。相反，它们会保存到发件人的"已发送邮件"文件夹中。
 
-如果要允许所有人都能看到已发送的电子邮件，请在管理中心中编辑共享邮箱设置，并选择 "**已发送邮件** \> " "**编辑**"。
+如果要允许所有人都能看到已发送的电子邮件，请在管理中心中编辑共享邮箱设置，并选择 "**已发送邮件**" " \> **编辑**"。
 
 
 ## <a name="choose-the-apps-that-a-shared-mailbox-can-use-to-access-microsoft-email"></a>选择共享邮箱可用于访问 Microsoft 电子邮件的应用程序
@@ -146,7 +147,7 @@ ms.locfileid: "43629043"
 
 3. 将所有您希望其成员能够使用的应用程序的切换设置为 **"开**"，以访问共享邮箱。 将您不希望其使用的任何应用程序的开关设置为 "**关闭**"。 
 
-4. 选择“**保存**”。
+4. 选择“保存”****。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>将共享邮箱置于诉讼保留状态
@@ -177,7 +178,7 @@ ms.locfileid: "43629043"
 
 4. （可选）输入持续时间、有关保留的说明以及包含详细信息的 URL。  
 
-5. 选择“**保存**”。
+5. 选择“保存”****。
 
 
 ## <a name="add-or-remove-members"></a>添加或删除成员
@@ -260,11 +261,11 @@ ms.locfileid: "43629043"
 
 ::: moniker-end
 
-2. 选择要编辑的共享邮箱，然后选择 "**在全局地址列表** \> **编辑**中显示"。
+2. 选择要编辑的共享邮箱，然后选择 "**在全局地址列表编辑中显示**" \> **Edit**。
 
 3. 将切换设置为 **"开**" 或 "**关**"。 
 
-4. 选择“**保存**”。
+4. 选择“保存”****。
 
 > [!NOTE]
 > 将共享邮箱从地址列表中隐藏将使新的共享邮箱成员无法将隐藏邮箱添加到其 Outlook 配置文件中，直到共享邮箱再次显示在地址列表中。 

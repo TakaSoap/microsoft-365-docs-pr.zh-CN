@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: 了解如何验证你的域并为 Microsoft 的悬停时设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 4779b8f6fadcd4b134d3954d2c6c133da40c19e6
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048983"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400421"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>在 Microsoft 悬停时创建 DNS 记录
 
@@ -125,9 +126,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 5. 在新记录的框中，选择**记录类型**的 " **MX** "，然后键入或复制并粘贴下表中的值。
     
-    |**主机名**|**记录类型**|**优先级**|**主机名**|
+    |**主机名**|**记录类型**|**Priority**|**主机名**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![键入或复制并粘贴 DNS 值](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
@@ -251,8 +252,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机名**|**记录类型**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![键入或复制并粘贴 DNS 值](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   

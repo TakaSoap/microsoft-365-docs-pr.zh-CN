@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: 993b0baf46b702322df64693f682e25b0240a0ab
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065665"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399490"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 
@@ -89,7 +90,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-例如，如果要升级5个使用 SMTP `dl1@contoso.com`地址的 dl，和`dl2@contoso.com` `dl3@contoso.com`、 `dl4@contoso.com`和`dl5@contoso.com`，请运行以下命令：
+例如，如果要升级5个使用 SMTP 地址的 dl， `dl1@contoso.com` 和、和，请 `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` 运行以下命令：
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -98,7 +99,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 可以通过两种方式升级所有符合条件的 Dl。
 
 > [!NOTE]
-> New-distributiongroup cmdlet 不接收管道中的数据，因此，必须使用 "foreach-object{}" 运算符才能成功运行。
+> New-distributiongroup cmdlet 不接收管道中的数据，因此，必须使用 "foreach-object {} " 运算符才能成功运行。
 
 1. 在租户中获取符合条件的 Dl 并使用升级命令对其进行升级：
 
@@ -122,7 +123,7 @@ Get-DistributionGroup| Foreach-Object{
 
 您只能升级云管理、简单、非嵌套的通讯组列表。 下表列出了**无法**升级的通讯组列表。
 
-|**属性**|**退税?**|
+|**Property**|**退税?**|
 |:-----|:-----|
 |内部部署管理通讯组列表。  <br/> |否  <br/> |
 |嵌套的通讯组列表。 通讯组列表具有子组或是另一个组的成员。  <br/> |否  <br/> |

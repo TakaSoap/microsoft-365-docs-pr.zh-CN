@@ -17,16 +17,17 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并针对网络钓鱼、恶意软件和其他威胁保护敏感数据。
-ms.openlocfilehash: 748868b07ac8759a66bac3c6b4165509270426a6
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224463"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400862"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -144,7 +145,7 @@ ms.locfileid: "44224463"
 |**设置或选项**<br/>|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |域和最有价值的市场活动员工  <br/> |
-|说明  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
+|Description  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
 |添加要保护的用户  <br/> |选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。  <br/> |
 |添加要保护的域  <br/> |选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。  <br/> |
 |选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳 <span> <span> @contoso .com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”****。  <br/> |
@@ -176,7 +177,7 @@ ms.locfileid: "44224463"
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件。  <br/> |
-|说明  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
+|Description  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
 |保存附件未知的恶意软件响应  <br/> |Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件**。  <br/> |
 |在检测时重定向附件  <br/> |启用重定向（选择此框）输入管理员帐户或邮箱设置进行隔离。          如果恶意软件扫描附件超时或发生错误（选中此框），请应用上面的选择。  <br/> |
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |

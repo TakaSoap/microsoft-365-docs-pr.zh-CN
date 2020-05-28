@@ -14,19 +14,21 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 了解如何验证您的域，并在 GoDaddy for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.custom: okr_smb
-ms.openlocfilehash: b1c5539af6683bbf8f94fd15880fb870caf31342
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 95bc9e1ca522796111bbf5146c93686bbbac1a3d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049019"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400457"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 GoDaddy 处为 Microsoft 创建 DNS 记录
 
@@ -57,7 +59,7 @@ ms.locfileid: "44049019"
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“添加”****。
+3. 选择“**添加**”。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -108,7 +110,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“添加”****。
+3. 选择“**添加**”。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -122,7 +124,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     |**记录类型**|**主机**|**指向**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX （邮件交换器）  <br/> |@  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小时  <br/> |
+    |MX （邮件交换器）  <br/> |@  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小时  <br/> |
 
 6. 选择“保存”****。
 
@@ -139,7 +141,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“添加”****。
+3. 选择“**添加**”。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -182,7 +184,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“添加”****。
+3. 选择“**添加**”。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -216,7 +218,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
-3. 选择“添加”****。
+3. 选择“**添加**”。
 
     ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
@@ -232,8 +234,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     |**记录类型**|**名称**|**目标**|**协议**|**服务**|**优先级**|**权重**|**端口**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV（服务）  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 小时  <br/> |
-    |SRV（服务）  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 小时  <br/> |
+    |SRV（服务）  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 小时  <br/> |
+    |SRV（服务）  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 小时  <br/> |
 
     ![GoDaddy-配置-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 

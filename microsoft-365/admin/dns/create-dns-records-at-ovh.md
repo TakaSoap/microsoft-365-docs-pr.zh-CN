@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 了解如何验证您的域，并在 OVH for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 18ddcba9cdb4f45f624d32369db07b24f9a357cf
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b462979a3ab1bcf769c78d15d9fd3ad03f307ef0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048911"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400336"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 处为 Microsoft 创建 DNS 记录
 
@@ -140,9 +141,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     > [!NOTE]
     > 默认情况下，OVH 对目标使用相对表示法，这会将域名添加到目标记录的末尾。 若要改为使用绝对表示法，请在目标记录中添加一个点，如下表所示。 
   
-    |**记录类型**|**子域**|**TTL**|**优先级**|**目标**|
+    |**记录类型**|**子域**|**TTL**|**Priority**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（保留为空白）  <br/> |3600（秒）  <br/> |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<\>mail.protection.outlook.com。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |（保留为空白）  <br/> |3600（秒）  <br/> |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |\<domain-key\>. mail.protection.outlook.com。  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![邮件的 OVH MX 记录](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -187,7 +188,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值，请从下拉列表中选择 "**个性化**"，然后在文本框中键入值。 
     
-    |**记录类型**|**子域**|**目标**|**TTL**|
+    |**记录类型**|**子域**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |3600秒  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> |3600秒  <br/> |
@@ -274,10 +275,10 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     在新记录的框中，键入或复制并粘贴下表中第一行的值。 若要分配 TTL 值，请从下拉列表中选择 "**个性化**"，然后在文本框中键入值。 
     
-    |**记录类型**|**子域**|**优先级**|**权重**|**端口**|**TTL**|**目标**|
+    |**记录类型**|**子域**|**优先级**|**权重**|**端口**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV（服务）  <br/> |_sip _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600（秒）  <br/> |sipdir.online.lync.com。  <br/> |
-    |SRV（服务）  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600（秒）  <br/> |sipfed.online.lync.com。  <br/> |
+    |SRV（服务）  <br/> |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600（秒）  <br/> |sipdir.online.lync.com。  <br/> |
+    |SRV（服务）  <br/> |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600（秒）  <br/> |sipfed.online.lync.com。  <br/> |
        
     ![OVH SRV 记录](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   

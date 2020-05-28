@@ -23,18 +23,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot 配置文件可帮助您控制 Windows 在用户设备上的安装方式。 配置文件包含 "跳过 Cortana 安装" 等默认和可选设置。
-ms.openlocfilehash: 0c706d12ba262856ff40ea3bee57c64234fd77f7
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165833"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401026"
 ---
 # <a name="about-autopilot-profile-settings"></a>关于"AutoPilot 配置文件"设置
 

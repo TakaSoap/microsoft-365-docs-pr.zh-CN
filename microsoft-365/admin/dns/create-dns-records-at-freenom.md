@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 了解如何验证您的域，并在 Freenom for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 39963b5c0f5f3f82fe193160e8aa8ab03894cedd
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049031"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400469"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 处为 Microsoft 创建 DNS 记录
 
@@ -70,7 +71,7 @@ ms.locfileid: "44049031"
   
 6. 在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    |**名称**|**Type**|**TTL**|**目标**|
+    |**名称**|**Type**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
@@ -137,9 +138,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 8. 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**Type**|**TTL**|**目标**|**优先级**|
+    |**名称**|**Type**|**TTL**|**Target**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<域密钥\>. mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX 记录](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
@@ -174,7 +175,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. 创建第一个 CNAME 记录。 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**记录类型**|**TTL**|**目标**|
+    |**名称**|**记录类型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
@@ -220,7 +221,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. In the boxes for the new record, type or copy and paste the following values. 
     
-    |**名称**|**记录类型**|**TTL**|**目标**|
+    |**名称**|**记录类型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
     |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
    

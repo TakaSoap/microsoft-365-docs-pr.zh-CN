@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c2899ad033b05d5bec3c3cedfbe2ff4f78558306
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: defd30fc2e67fa2e260314db53997bc1a7b9a940
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356333"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400770"
 ---
 # <a name="contact-support-for-solomon-islands"></a>针对所罗门群岛的联系支持
 

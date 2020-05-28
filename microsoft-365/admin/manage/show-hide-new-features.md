@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 决定向 Office 中的最终用户显示或隐藏哪些功能及其新增内容。 Office 桌面应用程序的新管理。
-ms.openlocfilehash: 7399da493f8e6878a92dc13d92482d7ddece0ba3
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011695"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399538"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>使用新增管理功能显示或隐藏新功能
 

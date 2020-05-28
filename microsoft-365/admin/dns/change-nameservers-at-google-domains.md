@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: 了解如何将 Microsoft 设置为在 Google 域管理自定义域的 DNS 记录。
-ms.openlocfilehash: ac2f98a6ff783917d88a2bd8d28e8242e0ba41a8
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43629895"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400649"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>更改名称服务器以使用 Google 域设置 Microsoft
 
@@ -36,7 +37,7 @@ ms.locfileid: "43629895"
     
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
-在将你的域用于 Microsoft 之前，我们必须确保你拥有此域。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
   
 > [!NOTE]
 >  此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -58,7 +59,7 @@ ms.locfileid: "43629895"
 |||||
 |:-----|:-----|:-----|:-----|
 |**名称** <br/> |**Type** <br/> |**TTL** <br/> |**数据** <br/> |
-|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注意：** 此为示例。 从表中使用您的特定**目标或指向 "地址**" 值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
+|@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. 选择“**添加**”。
     
@@ -66,9 +67,9 @@ ms.locfileid: "43629895"
     
 现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求搜索该记录。
   
-当 Microsoft 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsof 找到正确的 TXT 记录表明域已通过验证。
   
-1. 在 Microsoft 管理中心，转到 "**设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在 Microsoft 管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
     
 2. 在“**域**”页面上，选择要验证的域。 
@@ -78,7 +79,7 @@ ms.locfileid: "43629895"
 4. 在“**验证域**”页面上，选择“**验证**”。
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅在[添加域或 DNS 记录后查找并修复问题](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
@@ -133,7 +134,7 @@ ms.locfileid: "43629895"
     
     重复该过程，直到创建完全部 4 条名称服务器记录。
     
-4. 选择“**保存**”。
+4. 选择“保存”****。
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -174,7 +175,7 @@ ms.locfileid: "43629895"
     
     重复该过程，直到创建完全部 4 条名称服务器记录。
     
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

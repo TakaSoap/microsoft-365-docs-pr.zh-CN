@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: 了解如何验证您的域，并在 Names.co.uk for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 2df1a18f00fd7cd48b0d24860ddcf651c2fdac4e
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048935"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400372"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Names.co.uk 处为 Microsoft 创建 DNS 记录
 
@@ -118,9 +119,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （可能需要向下滚动。）
     
-    |**主机名**|**优先级**|**结果**|
+    |**主机名**|**Priority**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（将此字段留空。）  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> > [!NOTE]> *\<domain-key\>* 从你的 Microsoft 帐户获取。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-配置-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -234,8 +235,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**优先级**|**权重**|**端口**|**结果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-配置-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   

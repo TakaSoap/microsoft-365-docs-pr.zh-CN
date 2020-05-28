@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解如何管理消息中心消息以帮助进行更改管理。
-ms.openlocfilehash: 95a4544dd99ebce793242532ae144f00c3b16fcb
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628144"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399712"
 ---
 # <a name="manage-messages-in-message-center"></a>管理邮件中心中的邮件
 
@@ -32,7 +33,7 @@ ms.locfileid: "43628144"
   
 ## <a name="read-a-message"></a>阅读邮件
 
-若要转到 "信息中心"，请转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)"，然后选择 "**运行状况** > **消息中心**"。 
+若要转到 "信息中心"，请转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)"，然后选择 "**运行状况**  >  **消息中心**"。 
 
 选择邮件标题以在阅读窗格中打开它。 每封邮件都包含更改的摘要、更改可能对您有何影响的说明、有关如何为更改准备组织的信息，以及（在大多数情况下），您可以在其中了解详细信息的其他信息链接。 其他信息仍然可用，即使在邮件过期后也是如此。
 

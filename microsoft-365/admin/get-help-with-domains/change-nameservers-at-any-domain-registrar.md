@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom:
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,13 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
-ms.custom: okr_smb
-ms.openlocfilehash: e987d1194d3ee86548a6628310ebdfd14cdbb9ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628502"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399988"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任何域注册机构设置 Microsoft 365
 
@@ -48,7 +50,7 @@ ms.locfileid: "43628502"
 > [!NOTE]
 > 您必须仅创建这些记录中的其中一项。TXT 是首选记录类型，但某些 DNS 托管提供商不支持它，在这种情况下，您可以创建 MX 记录。 
   
-在将你的域用于 Microsoft 365 之前，我们必须确保你拥有它。 你能够在域注册机构登录到你的帐户，并创建向 Microsoft 365 证明你拥有该域的 DNS 记录。
+在将域用于 Microsoft 365 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 365 证明你是域所有者。
   
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
@@ -71,23 +73,23 @@ ms.locfileid: "43628502"
 |:-----|:-----|:-----|:-----|
 |**记录类型** <br/> |**别名**或**主机名称** <br/> |**值** <br/> |**TTL** <br/> |
 |TXT  <br/> |执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> > [!NOTE]> 此字段对不同的 DNS 主机有不同的要求。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 这是一个示例。 从 Microsoft 365 中的表，使用您的特定**目标或指向**此处的地址值。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
    
 **如果您创建 MX 记录，请使用这些值：**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**记录类型**|**别名**或**主机名称**|**值**|**优先级**|**TTL**|
-|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 从 Microsoft 365 中的表，使用您的特定**目标或指向**此处的地址值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.md#what-is-mx-priority) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
+|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.md#what-is-mx-priority) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
    
 ### <a name="save-the-record"></a>保存记录
 
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 365 并请求 Microsoft 365 查找该记录。
+在域注册机构网站添加了记录后，你将返回到 Microsoft 365 并请求 Microsoft 365 查找记录。
   
-当 Microsoft 365 找到正确的 TXT 记录时，您的域将会得到验证。
+Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
 
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
 2. 在“**域**”页面上，选择要验证的域。 
     
@@ -158,7 +160,7 @@ ms.locfileid: "43628502"
     
 - 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 你可以在以下步骤中添加域，以在网站托管的位置保持网站托管，以便在你将域的 NS 记录更改为指向 Microsoft 365 后，用户仍可访问网站。
 
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>页面。
+1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 3. 在" 域"页面上选择域。
 
@@ -166,7 +168,7 @@ ms.locfileid: "43628502"
 
 5. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
 
-6. 选择“**保存**”。
+6. 选择“保存”****。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 

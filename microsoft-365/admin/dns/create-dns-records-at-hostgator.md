@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 了解如何验证您的域，并在 Hostgator for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: fb510bcdcdefb141535e9a1099e18b63adffd2ab
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8adfc4b6154dad0da7dd2fe037c73fcfc4f84d58
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048995"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400433"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 处为 Microsoft 创建 DNS 记录
 
@@ -77,7 +78,7 @@ ms.locfileid: "44048995"
   
 1. 若要开始，请转到您在 Hostgator 上的 cPanel 页面。 系统将会提示您先登录。
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示https://YourSiteAddress:secure-port-number：。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示： https://YourSiteAddress:secure-port-number 。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始使用 Microsoft，你可以从 Hostgator 或委派中购买托管帐户，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -91,7 +92,7 @@ ms.locfileid: "44048995"
     |||||
     |:-----|:-----|:-----|:-----|
     |**名称** <br/> |**TTL** <br/> |**类型** <br/> |**TXT 数据** <br/> |
-    |使用您的*domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |使用您的*domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 选择 "**添加记录**"。
     
@@ -120,7 +121,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示https://YourSiteAddress:secure-port-number：。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示： https://YourSiteAddress:secure-port-number 。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始使用 Microsoft，你可以从 Hostgator 或委派中购买托管帐户，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -134,9 +135,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 5. 在 "**添加新记录**" 区域中新记录的框内，键入或复制并粘贴下表中的值。 
     
-    |**优先级**|**目标**|
+    |**Priority**|**目标**|
     |:-----|:-----|
-    |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你\<的 Microsoft 帐户中获取你的*域密钥*\> 。    [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：**\< *domain-key*  \>从你的 Microsoft 帐户获取你的。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
   
 6. 选择 "**添加新记录**"。
    
@@ -152,7 +153,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示https://YourSiteAddress:secure-port-number：。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示： https://YourSiteAddress:secure-port-number 。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始使用 Microsoft，你可以从 Hostgator 或委派中购买托管帐户，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -193,7 +194,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示https://YourSiteAddress:secure-port-number：。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示： https://YourSiteAddress:secure-port-number 。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始使用 Microsoft，你可以从 Hostgator 或委派中购买托管帐户，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -218,7 +219,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示https://YourSiteAddress:secure-port-number：。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
+    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 cPanel 地址应如下所示： https://YourSiteAddress:secure-port-number 。 从 Hostgator 接收的注册电子邮件将指定该地址，并且在**托管**页上也可以使用 cPanel 链接。
     
     > [!IMPORTANT]
     > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始使用 Microsoft，你可以从 Hostgator 或委派中购买托管帐户，[以指向 Microsoft](change-nameservers-at-hostgator.md)。 
@@ -234,8 +235,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**TTL**|**类型**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _tls。 *domain_name*。 （例如 _sip，_tls fourthcoffee）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _tcp。 *domain_name*。 （例如 _sipfederationtls，_tcp fourthcoffee）  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. 选择 "**添加记录**"。

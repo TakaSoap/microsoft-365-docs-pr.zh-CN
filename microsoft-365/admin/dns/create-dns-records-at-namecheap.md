@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 了解如何验证您的域，并在 Namecheap for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 57ba92f3ad31a54abae6a6a212a84d3b7a665da1
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048947"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400384"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>在 Namecheap 处为 Microsoft 创建 DNS 记录
 
@@ -150,7 +151,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分钟  <br/> |
+    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分钟  <br/> |
        
     ![Namecheap-配置-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
@@ -303,8 +304,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**服务**|**协议**|**优先级**|**权重**|**端口**|**目标**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |30分钟  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30分钟  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |30分钟  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30分钟  <br/> |
        
     ![Namecheap-配置-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   

@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: '了解如何在 Bluehost 中将 Microsoft 设置为管理 DNS 记录。 '
-ms.openlocfilehash: f20c09d2c9ca107648cba843cc93d839df8c53fc
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: 56ebeab025984f0ecfefa579c8060578a2299073
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939387"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400661"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>更改名称服务器以使用 Bluehost 设置 Microsoft
 

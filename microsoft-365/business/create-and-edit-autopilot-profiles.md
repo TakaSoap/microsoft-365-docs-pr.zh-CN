@@ -20,18 +20,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: 了解如何创建 AutoPilot 配置文件并将其应用到设备，以及编辑或删除配置文件或从设备中删除配置文件。
-ms.openlocfilehash: a6e02ab56faeb08718a9831657b55cff0356a4ec
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627366"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400966"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>创建和编辑 AutoPilot 配置文件
 
@@ -41,7 +42,7 @@ ms.locfileid: "43627366"
   
 1. 在 Microsoft 365 管理中心，选择 "**设备** \> **AutoPilot**"。
   
-2. 在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡\> **创建配置文件**。
+2. 在 " **AutoPilot** " 页上，选择 "**配置文件**" 选项卡 \> **创建配置文件**。
     
 3. 在 "**创建配置文件**" 页上，输入可帮助您识别它的配置文件的名称，例如 "营销"。 打开所需的设置，然后选择 "**保存**"。 有关 AutoPilot 配置文件设置的详细信息，请参阅[关于 AutoPilot 配置文件设置](autopilot-profile-settings.md)。
     
@@ -53,7 +54,7 @@ ms.locfileid: "43627366"
   
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "**分配的配置文件**" 下拉列表\> **中**选择一个配置文件。
+2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "**分配的配置文件**" 下拉列表中选择一个配置文件 \> **Save**。
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   
@@ -65,7 +66,7 @@ ms.locfileid: "43627366"
 
 1. 在" **准备 Windows**"页面上，选择" **配置文件**"选项卡。 
     
-2. 选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中，更新任何可用设置\> **保存**。
+2. 选中设备名称旁边的复选框，然后在 "**配置文件**" 面板中，更新任何可用设置 \> **保存**。
     
     如果在用户将设备连接到 internet 之前执行此操作，配置文件会应用于设置过程。
     
@@ -81,5 +82,5 @@ ms.locfileid: "43627366"
 
 1. 在" **准备 Windows**"页面上，选择" **设备**"选项卡。 
     
-2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "分配的**配置文件**" \> **下拉列表中**选择 "**无**"。
+2. 选中设备名称旁边的复选框，然后在 "**设备**" 面板中，从 "分配的**配置文件**" 下拉列表中选择 "**无**" \> **Save**。
     

@@ -14,17 +14,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成为管理员并为您的组织获取 Microsoft 365 订阅。 '
-ms.openlocfilehash: ac18b40a1160d58e343df8196881769b7200d5a5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627952"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399454"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>成为管理员并购买适用于贵组织的 Microsoft 365
 
@@ -75,10 +76,10 @@ ms.locfileid: "43627952"
 |||
 |:-----|:-----|
 |**如何启动向导** <br/> |**订阅选项** <br/> |
-|通过在应用启动器中使用"管理员"磁贴  <br/> |Microsoft 365 商业基本版  <br/> |
+|通过在应用启动器中使用"管理员"磁贴  <br/> |Microsoft 365 商业基础版  <br/> |
 |在 Skype 会议中选择 "**升级到 Microsoft 365 for business** "  <br/> |Microsoft 365 业务基本或 Microsoft 365 商业标准  <br/> |
    
-## <a name="whats-next"></a>未来会有哪些更新？
+## <a name="whats-next"></a>下一步做什么？
 
 现在你是管理员，你可能需要执行以下操作：
   
@@ -87,7 +88,7 @@ ms.locfileid: "43627952"
 |添加或删除许可证  <br/> |您可以为未使用 Microsoft 365 的用户[添加更多许可证](../../commerce/licenses/buy-licenses.md)，也可以从不需要使用组织的 microsoft 365 商业版订阅的[用户中删除许可证](../manage/remove-licenses-from-users.md)。  <br/> |
 |联系已注册的其他人  <br/> |与其他用户联系，让他们知道您正在管理其 Microsoft 365 订阅，并已升级。 [按照以下步骤](../add-users/add-users.md)查看**活动用户**及其电子邮件地址的列表。  <br/> |
 |开始使用 Microsoft 365  <br/> |请访问 [Office 365 学习中心](https://support.office.com/learn/office365-for-business)，了解如何登录、检查电子邮件和共享文档等。 你和你的用户可以使用此网站开始使用 Microsoft 365。  <br/> |
-|管理 Microsoft 365 订阅  <br/> |访问[Microsoft 365 管理中心](../admin-home.md)和了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
+|管理你的 Microsoft 365 订阅  <br/> |访问[Microsoft 365 管理中心](../admin-home.md)和了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
 
 ## <a name="still-need-help"></a>是否仍需要帮助？
 

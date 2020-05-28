@@ -14,18 +14,19 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: 了解如何在 Microsoft 365 中将电子邮件作为通讯组列表发送。
-ms.openlocfilehash: e9f8e52350dfd27e58ee160ed10f5c45e33391d7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a917e59bbac40846fa289a97465f6d6e065b87ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628060"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399586"
 ---
 # <a name="send-email-as-a-distribution-list"></a>以通讯组列表的形式发送电子邮件
 
@@ -45,7 +46,7 @@ ms.locfileid: "43628060"
     
 4. 在邮件底部，选择 "**更多** \> **显示来自**"。<br/> ![选择 "更多"，然后选择 "显示来源"](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. 右键单击 "发件人地址-例如`Ina@weewalter.me` -"，然后选择 "**删除**"。<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. 右键单击 "发件人地址-例如 `Ina@weewalter.me` -"，然后选择 "**删除**"。<br/> ![删除 FROM 别名](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
 6. 然后键入通讯组列表地址，如 support@contoso.com，并发送邮件。 下次从通讯组列表中答复时，其地址将显示为 "**发件**人" 列表中的一个选项。<br/>![共享邮箱的别名显示](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
   

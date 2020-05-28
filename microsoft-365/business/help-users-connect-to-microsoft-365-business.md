@@ -21,18 +21,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
 description: 了解在完成企业云套件安装程序后以及你的默认设备策略已就绪并准备好应用的情况。
-ms.openlocfilehash: 375a46fd946b42dc391ff6e4dabe98a435074377
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627206"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400914"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>帮助用户连接到 Microsoft 365 商业高级版
 

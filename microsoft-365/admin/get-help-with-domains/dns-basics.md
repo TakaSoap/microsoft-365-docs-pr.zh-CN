@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -21,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: feef7de31f1576173f7377afe3eac8a6f6aaacb1
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 9e86aed070023963635319cdd9fdb6a8ccca4c23
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053748"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399964"
 ---
 # <a name="dns-basics"></a>DNS 基础
 

@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 如果您在使用共享邮箱时遇到问题，请尝试这些解决方案。
-ms.openlocfilehash: 52aac8ab6936dfeba2ae4b5b7a80c45029ec6105
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628743"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400012"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解决共享邮箱问题
 
@@ -34,7 +35,7 @@ ms.locfileid: "43628743"
 ## <a name="error-when-creating-shared-mailboxes"></a>创建共享邮箱时出错
 <a name="bkmk_Fix"> </a>
 
-如果您看到错误消息，**则代理地址 "smtp： <共享邮箱名称\>" 已被代理地址或 "\<name>" 的 LegacyExchangeDN 使用。请选择其他代理地址**，这表示你尝试为共享邮箱提供一个已在使用中的名称。 例如，假设希望共享邮箱命名为 info@domain1 和 info@domain2。 可通过 2 种方法执行此操作：
+如果您看到错误消息，则**代理地址 "smtp： <共享邮箱名称 \> " 已由代理地址或 "" LegacyExchangeDN 使用 \<name> 。请选择其他代理地址**，这表示你尝试为共享邮箱提供一个已在使用中的名称。 例如，假设希望共享邮箱命名为 info@domain1 和 info@domain2。 可通过 2 种方法执行此操作：
 
   - 使用 Windows PowerShell。 有关说明，请参阅以下博客文章：[在不同的域中创建具有相同别名的共享邮箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     

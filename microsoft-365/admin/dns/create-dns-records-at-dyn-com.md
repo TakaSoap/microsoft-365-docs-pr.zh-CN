@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: 了解如何验证您的域，并在 Dyn.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 9d419cc26688cdbda792c0aaaa116ee01534247a
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 91ac642a43ba48845ec79d7d13d4bce6afbb716d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049115"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400493"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Dyn.com 处为 Microsoft 创建 DNS 记录
 
@@ -108,7 +109,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机**|**TTL**|**类型**|**数据**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |10 *\<domain-key\>* . mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **10** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)      <br>    有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![Dyn-配置-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -149,7 +150,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |sip  <br/> |600  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |lyncdiscover  <br/> |600  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseregistration  <br/> |600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
    
     ![Dyn-配置-3-1](../../media/1fd80695-d3d7-4298-9ebe-97a69f46f1b2.png)
   

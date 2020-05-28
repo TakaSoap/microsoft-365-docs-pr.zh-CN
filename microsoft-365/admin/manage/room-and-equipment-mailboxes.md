@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - Lean
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '创建会议室或设备邮箱，使组织中的每个人都能够通过 Outlook 预留供会议或活动使用。 '
-ms.openlocfilehash: 80562901ecc7382ce6e4ff3375b98efd89a991f0
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: ab48a0177acd212ff330a4a772ef84843406a3d5
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628072"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399598"
 ---
 # <a name="room-and-equipment-mailboxes"></a>会议室和设备邮箱
 

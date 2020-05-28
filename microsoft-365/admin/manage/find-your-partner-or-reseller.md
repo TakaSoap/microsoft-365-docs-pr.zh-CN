@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取你过去使用过的合作伙伴的联系信息。 '
-ms.openlocfilehash: 54933174816047188a8c084c63df6c1e8e166d82
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43628180"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399760"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
@@ -50,7 +51,7 @@ ms.locfileid: "43628180"
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在管理中心获取合作伙伴信息
 
-1. 在管理中心中，转到 "**设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系</a>" 页面。
+1. 在管理中心中，转到 "**设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系</a>" 页面。
   
 2. 如果你有合作伙伴，合作伙伴的名称和你的组织的关系将在此处列出。 若要查看合作伙伴联系人信息（电话号码和电子邮件地址），请选择合作伙伴名称。
     

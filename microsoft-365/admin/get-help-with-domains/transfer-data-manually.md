@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解在更改计划或公司名称时如何在两个 Microsoft 365 帐户之间手动转移数据，或将多个订阅组合为一个。
-ms.openlocfilehash: 1eaaf48f445eb54ebf91b96924c39e9062eea4fb
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053736"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399868"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
@@ -61,16 +62,16 @@ ms.locfileid: "44053736"
   
 |**Location**|**用途**|
 |:-----|:-----|
-|**Admin** \> **Microsoft 365** \> **服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
-|**管理员** \> **Exchange** <br/> | Exchange Online 设置  <br/> |
-|**管理** \> **SharePoint** <br/> | SharePoint Online 设置  <br/> |
-|**管理员** \> **Skype for business** <br/> |其他 Skype for Business 设置  <br/> |
+|**管理员** \>**Microsoft 365** \>**服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
+|**管理员** \>**Exchange** <br/> | Exchange Online 设置  <br/> |
+|**管理员** \>**SharePoint** <br/> | SharePoint Online 设置  <br/> |
+|**管理员** \>**Skype For business** <br/> |其他 Skype for Business 设置  <br/> |
 
 适用于 Microsoft 365 小型企业版
   
 |**Location**|**用途**|
 |:-----|:-----|
-|**管理员** \> **管理组织范围的设置** <br/> |管理设置  <br/> |
+|**管理员** \>**管理组织范围的设置** <br/> |管理设置  <br/> |
 
 ## <a name="transfer-a-public-website-between-subscriptions"></a>在订阅之间传输公共网站
 

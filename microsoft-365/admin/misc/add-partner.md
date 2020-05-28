@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -20,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 了解如何在 Microsoft 365 购买时添加订阅顾问合作伙伴作为记录的合作伙伴，更改合作伙伴或从订阅中删除合作伙伴。
-ms.openlocfilehash: daefb83335af84403cb2dd4e9c7759700eab8278
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045280"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399466"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -114,19 +115,19 @@ ms.locfileid: "44045280"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
     
 2. 如果您有多个订阅，请选择要编辑的订阅。
   
 3. 在 "订阅" 页上，选择 "**合作伙伴**" 选项卡，然后为你添加的合作伙伴键入合作伙伴网络 ID。你可以通过向合作伙伴索要合作伙伴 ID 来获取合作伙伴的 Microsoft 合作伙伴 id。
     
-4. 选择“添加”****。
+4. 选择“**添加**”。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
     
 2. 如果您有多个订阅，请选择要编辑的订阅。
   
@@ -161,7 +162,7 @@ ms.locfileid: "44045280"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
     
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -173,7 +174,7 @@ ms.locfileid: "44045280"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
   
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -185,7 +186,7 @@ ms.locfileid: "44045280"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
   
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -198,7 +199,7 @@ ms.locfileid: "44045280"
 
 ## <a name="view-your-partner-relationships"></a>查看合作伙伴关系
 
-- 在管理中心中，转到 "**设置** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系</a>" 页面。 此页面上列出了你的合作伙伴。 
+- 在管理中心中，转到 "**设置**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">合作伙伴关系</a>" 页面。 此页面上列出了你的合作伙伴。 
   
   如果没有合作伙伴，则会看到一条消息，指出 "这里没有任何内容"。
   
@@ -209,7 +210,7 @@ ms.locfileid: "44045280"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1.  在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1.  在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
     
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -221,7 +222,7 @@ ms.locfileid: "44045280"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     
@@ -233,7 +234,7 @@ ms.locfileid: "44045280"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**账单**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
 2. 如果你有多个订阅，请选择想要编辑的订阅的名称。
     

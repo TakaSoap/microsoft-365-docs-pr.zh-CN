@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: 了解如何验证您的域，并在 Netregistry for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: ed3e3bae232dcbb3c8e4eea3d1a3bc4dd0a88799
-ms.sourcegitcommit: c7f11d851073ef14a69669f6c8b7e0c11e4bb7a1
+ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43939151"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400360"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>在 Netregistry 处为 Microsoft 创建 DNS 记录
 
@@ -137,7 +138,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**TTL （秒）**|**Exchange （指向 "地址" 或 "值"）**|**主机是否处于完全限定状态？**|**首选项（优先级）**|
     |:-----|:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |3600（秒）  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)      |（选中 "" 复选框）  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
+    |（保留为空白）  <br/> |3600（秒）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)      |（选中 "" 复选框）  <br/> |10    <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
@@ -247,8 +248,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
     |**类型**|**名称**|**TTL （秒）**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV （服务）  <br/> |_sip _tls  <br/> |3600（秒）  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV （服务）  <br/> |_sipfederationtls _tcp  <br/> |3600（秒）  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV （服务）  <br/> |_sip _tls  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV （服务）  <br/> |_sipfederationtls _tcp  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   

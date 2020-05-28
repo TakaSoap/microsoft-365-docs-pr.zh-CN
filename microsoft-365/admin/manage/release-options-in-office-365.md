@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何为 Microsoft 365 管理中心中的新产品和功能更新设置发布选项。
-ms.openlocfilehash: 2738cf7af32d2e15b0c2c790a241dabbb1f104bc
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262313"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399688"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或目标发布选项
 
@@ -113,6 +114,6 @@ ms.locfileid: "44262313"
 
 
   
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 了解如何管理[Microsoft 365 消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)中的[邮件](https://docs.microsoft.com/office365/admin/manage/message-center)，以获取有关即将推出的 Microsoft 365 更新和版本的通知。

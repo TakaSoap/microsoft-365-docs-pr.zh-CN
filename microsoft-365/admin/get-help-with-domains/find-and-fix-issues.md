@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解在设置自定义域时，通过确保正确设置了 DNS 记录来跟踪你遇到的任何问题。
-ms.openlocfilehash: 457b9a0f76e66f121572064f359f120b770b65de
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053713"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399940"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -35,7 +36,7 @@ ms.locfileid: "44053713"
 将您的域设置为与 Microsoft 365 配合使用可能会非常困难。 DNS 系统要求严格，很难使用，并且，你的域的 DNS 设置会影响重要的业务活动，如电子邮件！
 
 > [!NOTE]
-> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置** > **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作（三个点）"，然后选择 "**检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
+> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置**  >  **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作（三个点）"，然后选择 "**检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
   
 ## <a name="whats-going-on"></a>What's going on?
 

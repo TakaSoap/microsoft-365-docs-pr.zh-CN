@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0db29490-2612-48bc-9b77-1862e7a41a8c
 description: 了解如何验证您的域并为 Microsoft 的 Google 域上的电子邮件、Lync 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 6bfe32ba8f77adec97f4ab5ee40e92126be91f10
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: e6b1dd1eb90957a4e7fe22bd4b66ac87b2a51d09
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049007"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400445"
 ---
 # <a name="create-dns-records-at-google-domains-for-microsoft"></a>在 Google 域 for Microsoft 中创建 DNS 记录
 
@@ -119,11 +120,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**Type**|**TTL**|**Data**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1H  <br/> |0  *\<域密钥\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **0** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：** 从 Microsoft 帐户获取\<*域密钥*\>。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |MX  <br/> |1H  <br/> |0 *\<domain-key\>* . mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **0** 是 MX 优先级值。将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：**\<*domain-key*\>从你的 Microsoft 帐户获取你的。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![在 "自定义资源记录" 部分键入或粘贴值](../../media/b660ca9e-984d-449f-ae59-a65fe4e2c6bd.png)
   
-5. 选择“添加”****。
+5. 选择“**添加**”。
     
     ![选择"添加"](../../media/32f8f23c-0b80-48da-b08e-4e04052971af.png)
   
@@ -145,7 +146,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ## <a name="add-the-five-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的五个 CNAME 记录
 
-1. 若要开始，请转到 [Google 域页面] （https://domains.google.com/registrar)并登录。
+1. 若要开始，请转到 [Google 域页面] （ https://domains.google.com/registrar) 并登录。
     
 2. 在 "**域**" 页上的 "**域**" 部分，为要编辑的域选择 "**配置 DNS** "。 
     
@@ -163,11 +164,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |sip  <br/> |CNAME  <br/> |1H  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |1H  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |1H  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |1H  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |
    
     ![在 "自定义资源记录" 部分键入或粘贴值](../../media/cff9832a-6d57-421f-a183-55320974ed87.png)
   
-4. 选择“添加”****。
+4. 选择“**添加**”。
     
     ![选择"添加"](../../media/4a78080a-e0b2-4582-9696-3fe4fea41e91.png)
   
@@ -246,7 +247,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![在 "自定义资源记录" 部分键入或粘贴值](../../media/429d06a9-c0af-4961-b7d2-7a8dea6db37e.png)
   
-6. 选择“添加”****。
+6. 选择“**添加**”。
     
     ![选择"添加"](../../media/89df6efd-e641-4441-baa2-d9a890424569.png)
   

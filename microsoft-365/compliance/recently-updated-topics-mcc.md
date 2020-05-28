@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 我们将不断创建新文章，更新现有文章，并根据你的反馈进行更改。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750165aab3612e3edb6a56f69eebf0778e141fde
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 94a4025a0a30ce26175a1a598713721aaa835ee7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231895"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401196"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -100,13 +100,6 @@ ms.locfileid: "44231895"
 ### <a name="pst-import"></a>PST 导入
 
 [有关导入 PST 文件的常见问题解答](faqimporting-pst-files-to-office-365.md)（更新）<br>添加了有关 PST 导入过程如何处理重复的电子邮件的常见问题解答。
-
-### <a name="retention"></a>保留
-
-[保留策略概述](retention-policies.md)（已更新）<br>这些更改包括：
-
-- 为仅保留和仅删除保留策略添加了内容路径（之前，内容路径仅保留并删除）。
-- [更新的部分](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)说明，对于 SharePoint 位置，您现在可以指定 URL，而不是选择网站。 这意味着您不需要访问该网站的权限即可将其包含在保留策略中。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

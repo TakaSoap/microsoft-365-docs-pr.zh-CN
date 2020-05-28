@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: 51817001b02c1dd5dd0e82f5795ef1a3f66bf7c7
-ms.sourcegitcommit: 9ffa2fd25776726475e10148940987fa076bbd91
+ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44162694"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400108"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -44,7 +45,7 @@ ms.locfileid: "44162694"
  
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
-2. 选择 "**收件人** \> " "**邮箱**"。
+2. 选择 "**收件人**" " \> **邮箱**"。
 
 3. 选择用户邮箱。 在 "**转换为共享邮箱**" 下，选择 "**转换**"。
 
@@ -56,7 +57,7 @@ ms.locfileid: "44162694"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户的名称。
 
@@ -71,7 +72,7 @@ ms.locfileid: "44162694"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -81,7 +82,7 @@ ms.locfileid: "44162694"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -117,7 +118,7 @@ ms.locfileid: "44162694"
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
    
-2. 选择 "**共享****收件人** \> "。
+2. 选择**Recipients** " \> **共享**收件人"。
 
 3. 选择共享邮箱。 在 "**转换为常规邮箱**" 下，选择 "**转换**"。
 

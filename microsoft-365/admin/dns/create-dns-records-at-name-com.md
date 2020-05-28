@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 了解如何验证您的域，并在 name.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: e9133b3701c2b454cad11b9579dc7463f1a74460
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048959"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400396"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 处为 Microsoft 创建 DNS 记录
 
@@ -118,7 +119,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**主机**|**应答**|**TTL**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（将此字段留空。）  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |（将此字段留空。）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
@@ -234,8 +235,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**服务**|**权重**|**TTL**|**优先级**|**协议**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1|使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
-    |SRV|sipfederationtls|1|使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sip|1 |使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sipfederationtls|1 |使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   

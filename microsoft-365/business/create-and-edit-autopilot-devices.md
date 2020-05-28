@@ -19,18 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
 description: 了解如何使用 Microsoft 365 商业高级版中的 AutoPilot 上传设备。 您可以将配置文件分配给一个或一组设备。
-ms.openlocfilehash: 83c027cfe019e037518c4ca13eb331e5300fc2c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 8c3d029d682ae30444bdc7d30a4790a8f982e0e0
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165853"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400986"
 ---
 # <a name="create-and-edit-autopilot-devices"></a>创建和编辑 AutoPilot 设备
 
@@ -46,11 +47,11 @@ ms.locfileid: "44165853"
 
 1. 在 Microsoft 365 管理中心，选择 "**设备** \> **AutoPilot**"。
   
-2. 在 " **AutoPilot** " 页上， **Devices**选择 " \>设备" 选项卡 "**添加设备**"。
+2. 在 " **AutoPilot** " 页上，选择 "**设备**" 选项卡 " \> **添加设备**"。
     
     ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. 在 "**添加设备**" 面板上，浏览到已准备好\> **保存** \> **Close**的[设备列表 CSV 文件](https://docs.microsoft.com/microsoft-365/admin/misc/device-list)。
+3. 在 "**添加设备**" 面板上，浏览到已准备好保存的[设备列表 CSV 文件](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) \> **Save** \> **Close**。
     
     您可以从您的硬件供应商处获取此信息，也可以使用[G-et-windowsautopilotinfo PowerShell 脚本](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo)生成 CSV 文件。 
     

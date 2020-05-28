@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 6f4daa66c11675674fdbfbfeb625128d8f817520
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140437"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400084"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建、编辑或删除安全组
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -46,7 +47,7 @@ ms.locfileid: "44140437"
 
 ### <a name="add-a-security-group"></a>添加安全组
 
-1. 在 Microsoft 365 管理中心，转到 "**组** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
+1. 在 Microsoft 365 管理中心，转到 "**组**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
   
 2. 在 "**组**" 页上，选择 "**添加组**"。
     
@@ -113,7 +114,7 @@ ms.locfileid: "44140437"
     
 3. 在 "安全组" 窗格中，选择 "**名称**" 或 "**成员**" 选项卡旁边的 "**编辑**" 以编辑组的详细信息或成员。
     
-4. 完成更改后，选择 "**保存** \> " "**关闭**"。
+4. 完成更改后，选择 "**保存**" " \> **关闭**"。
 
 ::: moniker-end
 
@@ -125,14 +126,14 @@ ms.locfileid: "44140437"
     
 3. 在 "安全组" 窗格中，选择 "**名称**" 或 "**成员**" 选项卡旁边的 "**编辑**" 以编辑组的详细信息或成员。
     
-4. 完成更改后，选择 "**保存** > " "**关闭**"。
+4. 完成更改后，选择 "**保存**" " > **关闭**"。
 
 ::: moniker-end
 
 
 ### <a name="delete-a-security-group"></a>删除安全组
 
-1. 在 "管理中心" 中，转到 "**组** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
+1. 在 "管理中心" 中，转到 "**组**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
     
 2. 在 "**组**" 页上，选择组的名称。 
     
@@ -142,7 +143,7 @@ ms.locfileid: "44140437"
     
 ## <a name="groups-in-exchange-online-and-sharepoint-online"></a>Exchange Online 和 SharePoint Online 中的组
 
-如果要创建用户组，以便可以同时向其发送电子邮件，您可以通过转到 "**管理员** \> **Exchange** \> **收件人** \> **组**" 在 Exchange 管理中心中执行此操作。 接下来， **New**![选择 "](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png)新建添加"，然后选择要创建的组类型： 
+如果要创建用户组，以便可以同时向其发送电子邮件，您可以通过转到 "**管理员** \> **Exchange** \> **收件人** \> **组**" 在 Exchange 管理中心中执行此操作。 接下来，选择 "**新建** ![ 添加 ](../../media/328ffb57-5f31-430a-b653-4a6b8e76d338.png) "，然后选择要创建的组类型： 
   
 - **通讯组**：用于将邮件分发给一组用户。 它也称为*启用邮件的通讯组*或*通讯组列表*。 有关详细信息，请参阅[管理通讯组](https://technet.microsoft.com/library/bb124513.aspx)。
     
@@ -164,5 +165,5 @@ ms.locfileid: "44140437"
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我是否可以向安全组发送电子邮件？
 
-是。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
+正确。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
   

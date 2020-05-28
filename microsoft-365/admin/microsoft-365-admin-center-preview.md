@@ -12,17 +12,18 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
 description: 了解新的 Microsoft 365 管理中心。
-ms.openlocfilehash: 95453380fc693c4313debf5baaa96264d486385b
-ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952635"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399478"
 ---
 # <a name="about-the-new-microsoft-365-admin-center"></a>关于新的 Microsoft 365 管理中心
 
@@ -30,7 +31,7 @@ ms.locfileid: "43952635"
 
 新的 Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
 
-Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，可在[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)中访问。 专家工作区（如安全或设备管理）允许更精确的控制。 有关管理中心如何协同工作的详细信息，请参阅本文后面[的特定类型的 IT 角色和其他工作区（如安全性、设备管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
+Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，可在中访问 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 专家工作区（如安全或设备管理）允许更精确的控制。 有关管理中心如何协同工作的详细信息，请参阅本文后面[的特定类型的 IT 角色和其他工作区（如安全性、设备管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
 ::: moniker-end
 
@@ -38,7 +39,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，
 
 新的 Microsoft 365 管理中心（当前处于预览阶段）是为 IT 团队构建的，这是一种管理 Microsoft 365 服务的简化方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
 
-Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，可通过登录来访问[https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627)。 此外，专家工作区（如 Azure Active Directory 和 Exchange）允许更精确的控制。 您可以从 Microsoft 365 管理中心的导航窗格中访问专家工作区。
+Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，可通过登录来访问 [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) 。 此外，专家工作区（如 Azure Active Directory 和 Exchange）允许更精确的控制。 您可以从 Microsoft 365 管理中心的导航窗格中访问专家工作区。
 
 ::: moniker-end
 
@@ -98,7 +99,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我是否可以在新管理中心中执行我可以在旧管理中心中执行的所有操作？
 
-可以。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
+正确。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可用于试用版或购买版？
 
@@ -118,13 +119,13 @@ Microsoft 365 是一个完整的智能解决方案，包括 Office 365、Windows
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色和其他工作区（如安全性、设备管理或 Exchange）的特定类型是什么？
 
-Microsoft 365 admin center 是管理 Microsoft 365 的所有团队和角色的常见入口点。 为每个管理员和角色定制和自定义体验、信息和控件。 此外，专家工作区允许深入、精确的控制。 这些专家工作区包括 SharePoint、 &amp;团队 Skype、Exchange、Security、合规性、设备管理和 Azure Active Directory。 您可以从位于[https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339)Microsoft 365 管理中心的导航窗格中找到专家工作区。
+Microsoft 365 admin center 是管理 Microsoft 365 的所有团队和角色的常见入口点。 为每个管理员和角色定制和自定义体验、信息和控件。 此外，专家工作区允许深入、精确的控制。 这些专家工作区包括 SharePoint、团队 &amp; Skype、Exchange、Security、合规性、设备管理和 Azure Active Directory。 您可以从位于 Microsoft 365 管理中心的导航窗格中找到专家工作区 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。
   
 将所有管理中心更新为具有一致的体验将需要一些时间，但您可以了解有关我们已开始 makeover 的管理中心的详细信息：
   
 - [开始使用新的 SharePoint 管理中心](https://go.microsoft.com/fwlink/?linkid=2024186)
     
-- [在过渡到新的 Microsoft 团队&amp; Skype For business 管理中心时管理团队](https://go.microsoft.com/fwlink/?linkid=2024308)
+- [在过渡到新的 Microsoft 团队 &amp; Skype For Business 管理中心时管理团队](https://go.microsoft.com/fwlink/?linkid=2024308)
     
 - [Microsoft 365 设备管理概述](https://go.microsoft.com/fwlink/?linkid=2006262)
     

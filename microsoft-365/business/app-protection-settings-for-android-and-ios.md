@@ -19,27 +19,28 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 0d9e901cac94fe7692ffe705c6b0a51df2bc542f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627426"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401046"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
-![指向的标题https://aka.ms/aboutM365preview。](../media/m365admincenterchanging.png)
+![指向的标题 https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
 
 ## <a name="create-an-app-management-policy"></a>创建应用管理策略
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。 
     
-2. 在左侧导航中，选择 "**设备** \> **策略** \> " "**添加**"。
+2. 在左侧导航中，选择 "**设备** \> **策略**" " \> **添加**"。
   
 3. 在" **添加策略**"窗格中，输入此策略的唯一名称。 
     
@@ -51,7 +52,7 @@ ms.locfileid: "43627426"
     
     ![Screenshot of Create a policy with Application management for Android selected](../media/eabbe06d-ac0a-4f3a-8630-68c808b1e662.png)
   
-6. Next decide **Who will get these settings?** 如果不想使用默认的 "**所有用户**" 安全组，请选择 "**更改**" \> **，选择获取这些设置的**安全组。
+6. Next decide **Who will get these settings?** 如果不想使用默认的 "**所有用户**" 安全组，请选择 "**更改**"，选择获取这些设置的安全组 \> **Select**。
     
 7. 最后，选择" **完成**"以保存该策略，并将其分配到设备。 
     

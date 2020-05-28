@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: 了解如何验证您的域，并在 DNSMadeEasy for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: d69a497c08ff905c28b923ebdb0e6fba6c5f82fa
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: db28ac0cb95bd86bc13a1a1ce47f273989aa4436
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049055"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400517"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>在 DNSMadeEasy 处为 Microsoft 创建 DNS 记录
 
@@ -55,7 +56,7 @@ ms.locfileid: "44049055"
     
 2. 在 "**管理控制台**" 页上的 "**最近更新的域**" 区域中，选择要更新的域。 
     
-3. 在 "**托管 DNS** " 页面上的 " **TXT 记录**" 区域中， **+** 选择 "（"）控件（**添加新**控件）。
+3. 在 "**托管 DNS** " 页面上的 " **TXT 记录**" 区域中，选择 "（" **+** ）控件（**添加新**控件）。
     
     (You may have to scroll down.)
     
@@ -109,7 +110,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**服务器**|**MX 级别**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **注意：** 从 Microsoft 帐户获取\<*域密钥*\>。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1800  <br/> |
+    |（将此字段留空。）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **This value MUST end with a period (.)** <br/> **注意：**\<*domain-key*\>从你的 Microsoft 帐户获取你的。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1800  <br/> |
    
     ![DNSMadeEasy-配置-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -213,8 +214,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**优先级**|**权重**|**端口**|**主机**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |1800  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1800  <br/> |
+    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |1800  <br/> |
+    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1800  <br/> |
    
     ![DNSMadeEasy-配置-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   

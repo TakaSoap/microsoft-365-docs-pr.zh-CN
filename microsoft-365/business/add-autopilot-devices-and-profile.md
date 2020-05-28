@@ -18,18 +18,19 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: 了解如何使用 Windows AutoPilot 为你的企业设置新的 Windows 10 设备，以便其可供员工使用。
-ms.openlocfilehash: de14012ebf9e7cdd22e41505f316ab665773c670
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: efcb5442b34d2d42275cedc30e71ac98c7ea1266
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165873"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44401086"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>使用分步指南添加 Autopilot 设备和配置文件
 
@@ -51,7 +52,7 @@ ms.locfileid: "44165873"
   
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。
 
-2. 在左侧导航窗格中，选择 "**设备** \> " " **AutoPilot**"。
+2. 在左侧导航窗格中，选择 "**设备**" " \> **AutoPilot**"。
 
     ![在管理中心中，选择 "设备"，然后选择 "AutoPilot"。](../media/AutoPilot.png)
   
@@ -59,7 +60,7 @@ ms.locfileid: "44165873"
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. 在 "**使用设备列表上载 .csv 文件**" 页上，浏览到已准备就绪的位置。CSV 文件，然后**打开** \> "**下一步**"。 该文件必须具有三个标头：
+3. 在 "**使用设备列表上载 .csv 文件**" 页上，浏览到已准备就绪的位置。CSV 文件，然后**打开**" \> **下一步**"。 该文件必须具有三个标头：
     
     - 列 A：设备序列号
     

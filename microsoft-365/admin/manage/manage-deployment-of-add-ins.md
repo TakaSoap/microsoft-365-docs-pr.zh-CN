@@ -13,25 +13,26 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: cb41d02d8075e94c788a9964e0a3ac69d8363ef4
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139705"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399724"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理加载项的部署
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -147,7 +148,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 
 部署后，管理员还可以修改用户对加载项的访问权限。
 
-1. 在 "管理中心" 中，转到 "**设置** > **服务" & "加载项**" 页面。
+1. 在 "管理中心" 中，转到 "**设置**  >  **服务" & "加载项**" 页面。
 
 2. 选择部署的加载项。
 
@@ -223,7 +224,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
-|Office 网页版  <br/> |无  <br/> |
+|Office 网页版  <br/> |不适用  <br/> |
    
  **对于 Outlook**： 
   
@@ -235,7 +236,7 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |Office 2016 for Mac  <br/> |16.0.9318.1000  <br/> |
 |适用于 iOS 的 Outlook mobile  <br/> |2.75.0  <br/> |
 |Outlook mobile for Android  <br/> |2.2.145  <br/> |
-|Outlook.com  <br/> |无  <br/> |
+|Outlook.com  <br/> |不适用  <br/> |
    
  **Office 2013 要求**
   
@@ -261,7 +262,7 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
   
 ### <a name="in-word-2016-excel-2016-or-powerpoint-2016"></a>在 Word 2016、Excel 2016 或 PowerPoint 2016 中
 
-1. 选择 **" \>插入我的外接程序"**。 
+1. 选择** \> "插入我的外接程序"**。 
     
 2. 选择 Office 加载项窗口中的" **由管理员管理** "选项卡。 
     
@@ -277,14 +278,14 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
 
 您还可以删除已部署的外接程序。
 
-1. 在 "管理中心" 中，转到 "**设置** > **服务" & "加载项**" 页面。
+1. 在 "管理中心" 中，转到 "**设置**  >  **服务" & "加载项**" 页面。
 
 2. 选择部署的加载项。
 
 3. 单击 "**删除加载项**"。 移除右下角的外接端按钮。
 4. 验证您的选择，然后选择 "**删除外接程序**"。
   
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 深入了解如何创建和构建 [Office 加载项](https://go.microsoft.com/fwlink/p/?linkid=846362)。
   

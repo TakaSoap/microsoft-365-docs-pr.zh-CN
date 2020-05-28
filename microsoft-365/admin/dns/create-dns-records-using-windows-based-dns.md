@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 了解如何在 Microsoft 的基于 Windows 的 DNS 中验证您的域并为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 1aaf81dddf27911ad3562bec6f56fb34c64fd37d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 8f65a397552813f22d4bde82f7fcd51c478d82bd
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048839"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400240"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用基于 Windows 的 DNS 为 Microsoft 创建 DNS 记录
 
@@ -38,21 +39,21 @@ ms.locfileid: "44048839"
 添加 DNS 记录后出现邮件流或其他问题的问题，请参阅[在更改域名或 DNS 记录后解决问题](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在基于 Windows 的 DNS 中查找 DNS 记录
-<a name="BKMK_find_your_dns_1"> </a>转到包含您的域的 DNS 记录的页面。 如果是在 Windows Server 2008 中工作，请转到 "**开始** > " "**运行**"。 如果使用的是 Windows Server 2012，请按 Windows 键和**r**键。 键入 " **Dnsmgmnt**"，然后选择 **"确定"**。 在 dns 管理器中，展开** \<"\> \> DNS 服务器名称" 正向查找区域  **"。 选择域。 现在已准备好创建 DNS 记录。
+<a name="BKMK_find_your_dns_1"> </a>转到包含您的域的 DNS 记录的页面。 如果是在 Windows Server 2008 中工作，请转到 "**开始**" "  >  **运行**"。 如果使用的是 Windows Server 2012，请按 Windows 键和**r**键。 键入 " **Dnsmgmnt**"，然后选择 **"确定"**。 在 DNS 管理器中，展开 " ** \<DNS server name\> \> 正向查找区域  **"。 选择域。 现在已准备好创建 DNS 记录。
    
 ## <a name="add-mx-record"></a>添加 MX 记录
 <a name="BKMK_add_MX"> </a>
 
 添加 MX 记录，以便你的域的电子邮件将发送给 Microsoft。
-- 您添加的 MX 记录包括以下类似值（" **指向地址**"值）：\<MX token\>.mail.protection.outlook.com，其中，\<MX 令牌\> 是类似于 MSxxxxxxx 的值。 
+- 您要添加的 MX 记录包括类似于以下内容的值（**指向地址**值）： \<MX token\> mail.protection.outlook.com，其中 \<MX token\> 是 MSxxxxxxx 等值。 
 - 在 Microsoft 的 "添加 DNS 记录" 页的 "Exchange Online" 部分的 "MX" 行中，复制 "磅到地址" 下方列出的值。 你将在此任务中创建的记录中使用此值。 
-- 在域的 "DNS 管理器" 页上，转到 "**操作** > **邮件交换器（MX）**"。 若要在此域中查找此页面，请参阅[在基于 Windows 的 dns 中查找 DNS 记录](#find-your-dns-records-in-windows-based-dns)。  
+- 在域的 "DNS 管理器" 页上，转到 "**操作**  >  **邮件交换器（MX）**"。 若要在此域中查找此页面，请参阅[在基于 Windows 的 dns 中查找 DNS 记录](#find-your-dns-records-in-windows-based-dns)。  
 - 在 "**新建资源记录**" 对话框中，确保字段已设置为 "正好为以下值"： 
     - 主机名： 
     - @Address：将点粘贴到刚才从 Microsoft 复制的地址值。  
     - Pref: 
 - 选择 "**保存更改**"。
-- 请删除任何已过时的 MX 记录。 如果此域的任何旧 MX 记录将电子邮件路由到其他位置，则选中每个旧记录旁边的复选框，然后选择 "**删除** > **" 确定 "**。 
+- 请删除任何已过时的 MX 记录。 如果此域的任何旧 MX 记录将电子邮件路由到其他位置，则选中每个旧记录旁边的复选框，然后选择**Delete**  >  **"删除" 确定 "**。 
    
 ## <a name="add-cname-records"></a>添加 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
@@ -62,7 +63,7 @@ ms.locfileid: "44048839"
 > [!IMPORTANT]
 > 如果你具有适用于 Microsoft 的移动设备管理（MDM），则必须创建两个附加的 CNAME 记录。 创建流程与你用于其他四个 CNAME 记录的流程一样，但需提供下表中的值。 （如果没有 MDM，则可以跳过此步骤。） 
 
-- 在域的 "DNS 管理器" 页上，转到 "**操作** > **CNAME （cname）**"。
+- 在域的 "DNS 管理器" 页上，转到 "**操作**  >  **CNAME （cname）**"。
 - 在 "**新建资源记录**" 对话框中，确保字段已设置为 "正好为以下值"：  
     - 主机名称：自动发现
     - 类型： 
@@ -183,7 +184,7 @@ ms.locfileid: "44048839"
 - 主机名：@
 - 类型： TXT
 - 地址：将目标或指向刚从 Microsoft 复制的地址值粘贴到此处。  
-- 选择 **"确定** > **完成**"。
+- 选择 **"确定**  >  **完成**"。
 
 在 Microsoft 中验证你的域。  
 > [!IMPORTANT]

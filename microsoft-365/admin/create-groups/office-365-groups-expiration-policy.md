@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 0cb67b87a542d021387365802bd5969f4c4332b8
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064817"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400721"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -50,14 +51,14 @@ ms.locfileid: "44064817"
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>哪些用户可以配置和使用 Microsoft 365 组过期策略？
 
-|角色|可以执行的操作|
+|Role|可以执行的操作|
 |---------|---------|
 |全局管理员（在 Azure 中，公司管理员）、用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
-|用户|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Microsoft 365 组|
+|User|续订或[还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted)自己拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
-如上所述，默认情况下过期功能处于关闭状态。 管理员必须启用过期策略并将其属性设置为生效。 若要启用它，请转到**Azure Active Directory （AAD）** > **组** > **过期**。 你可以在此处设置默认组生存期，并指定你希望第一个和第二个过期通知转到组所有者的提前程度。
+如上所述，默认情况下过期功能处于关闭状态。 管理员必须启用过期策略并将其属性设置为生效。 若要启用它，请转到**Azure Active Directory （AAD）**  >  **组**  >  **过期**。 你可以在此处设置默认组生存期，并指定你希望第一个和第二个过期通知转到组所有者的提前程度。
 
 组生存期以天为单位指定，可设置为180、365或指定的自定义值。 自定义值必须至少为30天。
 

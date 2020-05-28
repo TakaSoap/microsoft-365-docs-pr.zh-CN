@@ -1,8 +1,8 @@
 ---
-title: Microsoft 365 企业版工作负载和方案
+title: Microsoft 365 企业版工作负载
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/21/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 将组织用户载入到 Microsoft 365 企业版的工作效率工作负载。
-ms.openlocfilehash: 7767f01d87029c7fc641a65442a5171b0d03eab5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 0e1658655c4b97a7e571d1ac09c4b2edcc6c82ce
+ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066211"
+ms.lasthandoff: 05/16/2020
+ms.locfileid: "44268268"
 ---
-# <a name="microsoft-365-for-enterprise-workloads-and-scenarios"></a>Microsoft 365 企业版工作负载和方案
+# <a name="microsoft-365-for-enterprise-workloads"></a>Microsoft 365 企业版工作负载
 
 为了实现 Microsoft 365 企业版在创造力和团队合作方面的优势，请在基础结构上部署这些工作负载：
 
@@ -29,31 +29,13 @@ ms.locfileid: "44066211"
 
 有关将整个组织迁移到 Microsoft 365 企业版的常规路线图（其中包括 Microsoft Office 客户端产品、本地 Office Server 产品和基于 Microsoft Windows 的设备），请参阅[迁移](migration-microsoft-365-enterprise-workload.md)文章。
 
-这些方案以集成的方式使用 Microsoft 365 企业版中的功能和服务来满足业务需求。 
+以下是 Microsoft 365 企业版部署指南中的工作负载：
 
-此类需求的其中一项是确保员工在不直接连接到 Intranet 时可以高效、安全地工作。 请参阅[为远程工作者提供强大功能](empower-people-to-work-remotely.md)方案，了解部署基础结构元素并推动关键工作负载（例如 Teams 和 Exchange Online）远程用户采用率的路线图。
-
-另一项需求是保护存储在 Microsoft 365 中的高度管控数据。 高度管控数据包括的数字资产：
-
-- 受地区法规约束。
-- 组织最有价值的数据，例如商业机密、财务或人力资源信息以及组织策略。
-
-要保护此数据免受内部和外部威胁，请参阅：
-
-- [用于高度管控数据的 Teams](secure-teams-highly-regulated-data-scenario.md)
-- [用于高度管控数据的 SharePoint 网站](teams-sharepoint-online-sites-highly-regulated-data.md)。 
-
-这些方案将指导你配置 Microsoft Teams 团队或 SharePoint 网站，以便安全地存储最有价值的数据。
-
-以下是 Microsoft 365 企业版部署指南中的工作负载和方案：
-
-![Microsoft 365 企业版部署指南中的工作负载和方案：](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
-
-请参阅 [Microsoft 365 工作效率库](https://aka.ms/productivitylibrary) https://aka.ms/productivitylibrary)了解更多方案。 
+![Microsoft 365 企业版部署指南中的工作负载](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## <a name="foundation-infrastructure-prerequisites"></a>基础结构先决条件
 
-*理想情况下*，你应该在配置[基础结构](deploy-foundation-infrastructure.md)的所有阶段后部署工作负载和方案。 这可确保所有基础层设施都准备就绪，以便为用户及其设备提供集成、安全性和最佳体验。
+*理想情况下*，你应该在配置[基础结构](deploy-foundation-infrastructure.md)的所有阶段后部署工作负载。 这可确保所有基础层设施都准备就绪，以便为用户及其设备提供集成、安全性和最佳体验。
 
 | 阶段 | 结果 |
 |:-------|:-----|

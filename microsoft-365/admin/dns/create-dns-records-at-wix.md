@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 了解如何验证您的域，并在 Wix for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 6f88cc65ae19f747a9fc3740ea1578f30d18b5e2
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: b5fe216e65954bbcbdd9a1da223258a8362743ca
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44048851"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400288"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>在 Wix 处为 Microsoft 创建 DNS 记录
 
@@ -109,7 +110,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 |**Host Name**|**指向**|**优先级**|**TTL**|
 |:-----|:-----|:-----|:-----|
-|自动填充 <br/> | *\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从你的 Microsoft 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
+|自动填充 <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) | 1 Hour|
    
 6. 如果列出了任何其他 MX 记录，请将其删除。 
     
@@ -175,8 +176,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 |**服务**|**协议**|**名称**|**权重**|**端口**|**目标**|**优先级**|**TTL**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|sip  |tls  |自动填充 |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-|sipfed.online.lync.com>|tcp |自动填充|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+|sip  |tls  |自动填充 |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+|sipfed.online.lync.com>|tcp |自动填充|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. 选择 DNS 编辑器顶部的 "**保存 DNS** " 按钮。 
     

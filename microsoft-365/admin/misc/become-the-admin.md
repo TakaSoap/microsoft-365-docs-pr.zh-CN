@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 了解如何验证你的电子邮件和域所有权，以在 Microsoft 365 中接管非托管租户
-ms.openlocfilehash: 1772ba9929433c87603d4b9d7027419063fd2fca
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43627940"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44399442"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -40,9 +41,9 @@ ms.locfileid: "43627940"
 > [!NOTE]
 > 如果在租户中启用了自助服务，则用户可以自行订阅免费服务，例如 Power BI。 这些步骤假定自助服务用户订阅已创建要作为管理员接管的非托管租户。在第一步中，使用 Power BI 演示管理接管路径，在非托管租户中创建用户上下文。
 
-1. 若要注册 power bi，请转到[power bi 网站](https://powerbi.com)，然后选择 **"启动免费** > **启动免费试用版**" （在 "与 Power BI Pro 共享" 框中）。 
+1. 若要注册 power bi，请转到[power bi 网站](https://powerbi.com)，然后选择 "**启动免费**  >  **启动免费试用版**" （在 "与 Power BI Pro 共享" 框中）。 
 
-2. 使用您的组织的域名（如`powerbiadmin@contoso.com`）注册用户帐户。 如果你的帐户已在使用中，请使用你的当前密码登录。
+2. 使用您的组织的域名（如）注册用户帐户 `powerbiadmin@contoso.com` 。 如果你的帐户已在使用中，请使用你的当前密码登录。
 
 3. 检查您的电子邮件中的**验证代码**，并输入验证您的电子邮件地址的代码。
     

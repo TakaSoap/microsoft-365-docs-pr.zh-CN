@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 了解如何验证您的域，并在 Cloudflare for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 36578d8eed2c5630a9ce5abfb355983a26028888
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 9b717ddedaf6435f6599f4f75cc0fa7c4e618d59
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049067"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400541"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 处为 Microsoft 创建 DNS 记录
 
@@ -131,7 +132,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**名称**|**邮件服务器**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<域密钥\>*  .mail.protection.outlook.com  <br/> **注意：** 从 Microsoft 365 帐户中获取你* \<的域密钥\> * 。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分钟  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从 Microsoft 365 帐户获取。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分钟  <br/> |
    
 
   
@@ -218,8 +219,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
         
     |**类型**|**服务**|**协议**|**名称**|**TTL**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |使用*domain_name*;例如，contoso.com  |30 分钟 | 100|1 |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|使用*domain_name*;例如，contoso.com   |30 分钟 |100 |1 |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |使用*domain_name*;例如，contoso.com  |30 分钟 | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|使用*domain_name*;例如，contoso.com   |30 分钟 |100 |1  |5061 | sipfed.online.lync.com |
 
   
 5. 选择“保存”****。

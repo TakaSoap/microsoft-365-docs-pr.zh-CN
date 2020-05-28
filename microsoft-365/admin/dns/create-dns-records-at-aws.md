@@ -14,18 +14,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 了解如何验证您的域并为电子邮件、Skype for Business Online 和 Microsoft 的 Amazon Web 服务（AWS）上的其他服务设置 DNS 记录。
-ms.openlocfilehash: d75822feef5848575b8ec7fe09f834f67cdc6c55
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: fcc4da3a5841e9df2f6edabd540363fe70bb73ad
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049103"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44400565"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web Services （AWS）上为 Microsoft 创建 DNS 记录
 
@@ -105,7 +106,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**Type**|**别名**|**TTL（秒）**|**值**|**路由策略**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |MX - 邮件交换  <br/> |否  <br/> |300  <br/> |0  *\<域密钥\>*  .mail.protection.outlook.com。  <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft \<365 帐户中获取你的*域密钥*\> 。 [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |简单  <br/> |
+    |（将此字段留空。）  <br/> |MX - 邮件交换  <br/> |否  <br/> |300  <br/> |0 *\<domain-key\>* . mail.protection.outlook.com。  <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：**\<*domain-key*\>从 Microsoft 365 帐户获取。 [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |简单  <br/> |
        
     ![AWS-配置-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
