@@ -10,12 +10,13 @@ metadata:
   ms.author: sirkkuw
   ms.date: 04/16/2020
   localization_priority: Priority
-  ms.openlocfilehash: 65b0a249c5574ca149c0abe1e0ed879f649143fe
-  ms.sourcegitcommit: 9d8816ddc3a97676ff947db80265e47b734f5462
+  ms.custom: AdminSurgePortfolio
+  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
+  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/30/2020
-  ms.locfileid: "43952684"
+  ms.lasthandoff: 05/27/2020
+  ms.locfileid: "44400060"
 landingContent:
 - title: 管理电子邮件
   linkLists:
@@ -53,7 +54,7 @@ landingContent:
       url: configure-a-shared-mailbox.md
     - text: 将用户邮箱转换为共享邮箱
       url: convert-user-mailbox-to-shared-mailbox.md
-    - text: 从共享邮箱删除许可证
+    - text: 从共享邮箱中删除许可证
       url: remove-license-from-shared-mailbox.md
     - text: 解决共享邮箱问题
       url: resolve-issues-with-shared-mailboxes.md
