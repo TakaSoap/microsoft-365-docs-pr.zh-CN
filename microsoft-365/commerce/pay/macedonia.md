@@ -9,26 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2b3157540604f7779e3cde79d05c2a54177031ce
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: 6f8fe58eadc2d2e72372e87d7062b364bdc766bf
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238296"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403350"
 ---
-# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a><span data-ttu-id="2680d-103">马其顿共和国的付款信息，前南斯拉夫共和国</span><span class="sxs-lookup"><span data-stu-id="2680d-103">Payment information for Macedonia, Former Yugoslav Republic of</span></span>
+# <a name="payment-information-for-macedonia-former-yugoslav-republic-of"></a><span data-ttu-id="39a42-103">马其顿共和国的付款信息，前南斯拉夫共和国</span><span class="sxs-lookup"><span data-stu-id="39a42-103">Payment information for Macedonia, Former Yugoslav Republic of</span></span>
 
-<span data-ttu-id="2680d-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="2680d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
+<span data-ttu-id="39a42-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="39a42-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
 
-<span data-ttu-id="2680d-105">请仅以 USD 付款，并在发票汇款上参考你的发票编号。</span><span class="sxs-lookup"><span data-stu-id="2680d-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="39a42-105">请仅以 USD 付款，并在发票汇款上参考你的发票编号。</span><span class="sxs-lookup"><span data-stu-id="39a42-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="2680d-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="2680d-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="39a42-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="39a42-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="2680d-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="2680d-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="2680d-108">**SWIFT 代码：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="2680d-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="2680d-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="2680d-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="2680d-110">**帐号：** 12510049</span><span class="sxs-lookup"><span data-stu-id="2680d-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="2680d-111">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="2680d-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="39a42-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="39a42-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="39a42-108">**SWIFT 代码：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="39a42-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="39a42-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="39a42-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="39a42-110">**帐号：** 12510049</span><span class="sxs-lookup"><span data-stu-id="39a42-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="39a42-111">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="39a42-111">**Account Name:** MICROSOFT</span></span>  
