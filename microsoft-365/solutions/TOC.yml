@@ -3,7 +3,7 @@
   displayName: Home
 - name: 解决方案和体系结构插图
   items:
-    - name: Microsoft 365 效率说明图
+    - name: Microsoft 365 生产力插图
       href: productivity-illustrations.md
     - name: Microsoft 云体系结构模型
       href: cloud-architecture-models.md
@@ -11,20 +11,20 @@
   items:
     - name: 概述
       href: foundation-solutions-overview.md
-    - name: 通过 Microsoft 365 为远程工作人员提供动力
+    - name: 使用 Microsoft 365 为远程工作者提供强大帮助
       href: empower-people-to-work-remotely.md
       items:
-        - name: 第 1 步： 使用 MFA 为远程工作人员增加登录安全性
+        - name: 步骤 1. 增加登录安全性
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 步骤 2. 提供远程访问
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 第 3 步： 部署设备、电脑和其他终结点的终结点管理
+        - name: 第 3 步。 部署终结点管理
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 第 4 步： 部署远程工作人员生产效率应用程序和服务
+        - name: 第 4 步。 部署生产率应用程序和服务
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 第 5 步： 创建 COVID-19 危机通信场地
+        - name: 第 5 步： 创建通信场地
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: 步骤 6. 培训远程工作人员和解决使用反馈
+        - name: 步骤 6. 培训远程工作人员
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 设置与 Microsoft 365 的安全协作
       href: setup-secure-collaboration-with-teams.md

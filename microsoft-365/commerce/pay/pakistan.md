@@ -9,26 +9,27 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6ea6aafa1d53e2f22fc4409e9df7aedec52a0e8c
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: f333d608de3a175f8e135fa07d91278c00e93904
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42238274"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44403946"
 ---
-# <a name="payment-information-for-pakistan"></a><span data-ttu-id="d520d-103">巴基斯坦的付款信息</span><span class="sxs-lookup"><span data-stu-id="d520d-103">Payment information for Pakistan</span></span>
+# <a name="payment-information-for-pakistan"></a><span data-ttu-id="64dbb-103">巴基斯坦的付款信息</span><span class="sxs-lookup"><span data-stu-id="64dbb-103">Payment information for Pakistan</span></span>
 
-<span data-ttu-id="d520d-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="d520d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="64dbb-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="64dbb-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="d520d-105">请仅以 USD 为单位付款，并在付款汇款中引用发票编号。</span><span class="sxs-lookup"><span data-stu-id="d520d-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="64dbb-105">请仅以 USD 为单位付款，并在付款汇款中引用发票编号。</span><span class="sxs-lookup"><span data-stu-id="64dbb-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="d520d-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="d520d-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="64dbb-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="64dbb-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="d520d-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="d520d-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="d520d-108">**SWIFT 代码：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="d520d-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="d520d-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="d520d-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="d520d-110">**帐号：** 12510049</span><span class="sxs-lookup"><span data-stu-id="d520d-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="d520d-111">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="d520d-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="64dbb-107">**银行：** Citibank，伦敦</span><span class="sxs-lookup"><span data-stu-id="64dbb-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="64dbb-108">**SWIFT 代码：** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="64dbb-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="64dbb-109">**IBAN：** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="64dbb-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="64dbb-110">**帐号：** 12510049</span><span class="sxs-lookup"><span data-stu-id="64dbb-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="64dbb-111">**帐户名称：** WORD</span><span class="sxs-lookup"><span data-stu-id="64dbb-111">**Account Name:** MICROSOFT</span></span>  
