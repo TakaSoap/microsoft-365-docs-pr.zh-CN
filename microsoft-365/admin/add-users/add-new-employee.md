@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 将新员工添加到 Microsoft 365 电子邮件、Skype 和 Office 相关应用程序的商业版。
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049493"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387305"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>将新员工添加到 Microsoft 365
 
@@ -63,7 +64,7 @@ ms.locfileid: "44049493"
 
 就像 Facebook、Amazon 或 Gmail 一样，你的员工登录使用 Microsoft 365。 为他们提供以下登录信息：
   
-- 在上[https://www.office.com](https://www.office.com)登录。
+- 在上登录 [https://www.office.com](https://www.office.com) 。
     
 - 选择 "**登录**"，然后键入用户 ID 和密码。
     
@@ -74,9 +75,9 @@ ms.locfileid: "44049493"
   
 以下是帮助您开始使用的快速参考：
   
-|**任务**|**查找详细信息**|
+|**Task**|**查找详细信息**|
 |:-----|:-----|
-|登录到 Office  <br/> |转到[https://www.office.com](https://www.office.com)，选择 "**登录**"，然后输入您的用户 ID 和密码。  <br/> |
+|登录到 Office  <br/> |转到 [https://www.office.com](https://www.office.com) ，选择 "**登录**"，然后输入您的用户 ID 和密码。  <br/> |
 |将 Office 应用程序安装到您的计算机上。  <br/><br/> |登录后，主页将包含下载和安装应用程序（如 Word 和 Outlook）的链接。  选择 "**安装 Office**"。         有关说明，请参阅 how [to Install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。  <br/> |
 |在 Outlook 2016 中设置您的电子邮件。  <br/> |在您的计算机上安装 Office 应用程序后，请设置您的电子邮件。 有关说明，请参阅 how [to Setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。  <br/> |
 |设置 Skype for Business，以便您可以与公司或世界各地的同事或业务合作伙伴进行连接。 您可以开始与即时消息、语音或视频呼叫进行对话。  <br/> |[在计算机上安装 Skype For business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)。  <br/> <br/>若要了解如何使用 Skype for Business，请[观看视频。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>是否设置了 Skype for business，以便你的员工可以与你的企业外部的人员联系以使用免费的 Skype 应用？ 如果不是，请告诉你的新员工，让他们知道使用 Skype for Business 时预期的情况。  <br/> |

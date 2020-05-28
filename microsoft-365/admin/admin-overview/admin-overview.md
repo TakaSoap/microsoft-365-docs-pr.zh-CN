@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 了解 Microsoft 365 管理中心：如何登录，你的管理员是谁，以及观看有关它的视频介绍。
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623960"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386933"
 ---
 # <a name="admin-center-overview"></a>管理中心概述 
 
@@ -35,19 +36,19 @@ ms.locfileid: "43623960"
   
 ::: moniker range="o365-worldwide"
 
- **在上<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>使用管理员帐户登录。**
+ **在上使用管理员帐户登录 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**使用管理员帐户登录到位于<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>的 Office 365 德国。**
+**使用管理员帐户登录到位于的 Office 365 德国 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**使用管理员帐户登录到由世纪互联运营的 Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>。**
+**使用管理员帐户登录到由世纪互联运营的 Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 。**
 
 ::: moniker-end
 

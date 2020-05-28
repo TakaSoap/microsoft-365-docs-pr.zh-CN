@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140539"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386777"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ ms.locfileid: "44140539"
 
 如果要启用或禁用组中的来宾访问，可以在 Microsoft 365 管理中心中执行此操作。
 
-1. 在管理中心中，转到 "**设置** \> "**设置**并选择 " **Microsoft 365 组**"。
+1. 在管理中心中，转到 "**设置**" \> **设置**并选择 " **Microsoft 365 组**"。
   
 2. 在 " **Microsoft 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44140539"
 
 如果来宾已经存在于目录中，则可以从 Microsoft 365 管理中心将其添加到你的组。
   
-1. 在 "管理中心" 中，转到 "**组** > **组**" 页面。
+1. 在 "管理中心" 中，转到 "**组**  >  **组**" 页面。
   
 2. 单击要向其添加来宾的组，然后选择 "**成员**" 选项卡上的 "**查看全部和管理成员**"。 
   
@@ -90,7 +91,7 @@ ms.locfileid: "44140539"
 > [!NOTE]
 > 您必须具有全局管理员权限才能运行这些命令。 
 
-运行以下脚本，将其* / *更改为要阻止来宾访问的组的名称。
+运行以下脚本， */<GroupName/>* 将其更改为要阻止来宾访问的组的名称。
 
 ```PowerShell
 $GroupName = "<GroupName>"

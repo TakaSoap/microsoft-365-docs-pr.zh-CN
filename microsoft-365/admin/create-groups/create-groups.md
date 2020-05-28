@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何创建和删除 Microsoft 365 组、添加和删除组成员以及自定义组的工作方式。
-ms.openlocfilehash: a691f2363547c5bffb4c674d61cddde0cdb0266a
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 5e89c89c6b50e58f235877a61eaceaefe2bf6ee8
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049211"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388013"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建一个组
   
@@ -76,7 +77,7 @@ ms.locfileid: "44049211"
 ::: moniker range="o365-germany"
 
 用户可以[添加自己或请求审批](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
-1. 在管理中心内刷新页面，以便显示新组，选择 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">" 组，然后</a>选择要向其添加成员的组。
+1. 在管理中心内刷新页面，以便显示新组，选择 "组" **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>，然后选择要向其添加成员的组。
     
 2. 在 "**成员**" 旁边，选择 "**编辑**"。
 3. 选择“**添加成员**”。
@@ -92,7 +93,7 @@ ms.locfileid: "44049211"
 ::: moniker range="o365-21vianet"
 
 用户可以[添加自己或请求审批](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即添加。
-1. 在管理中心内刷新页面，以便显示新组，选择 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">" 组，然后</a>选择要向其添加成员的组。
+1. 在管理中心内刷新页面，以便显示新组，选择 "组" **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>，然后选择要向其添加成员的组。
     
 2. 在 "**成员**" 旁边，选择 "**编辑**"。
 3. 选择“**添加成员**”。

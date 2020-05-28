@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: 87c24ae2-82e0-4d1e-be01-c3bcc3f18c60
 description: 了解如何获取 Office 激活报告，以了解哪些用户已激活其 Office 订阅，并确定可能需要其他帮助的用户。
-ms.openlocfilehash: 632973c8d50dffd50725c46163e0af874c64b0c6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3b7d3e599d31377fb11a07623a53a3c75dced129
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621218"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387737"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-office-activations"></a>管理中心中的 microsoft 365 报表-Microsoft Office 激活
 
@@ -49,7 +50,7 @@ Office 激活报表将显示在至少一个设备上激活了其 Office 订阅�
   
 |||
 |:-----|:-----|
-|1  <br/> |Office 激活报表提供自报表数据显示在图表右上角起，Office 许可证激活数据的当前状态。  <br/> |
+|1   <br/> |Office 激活报表提供自报表数据显示在图表右上角起，Office 许可证激活数据的当前状态。  <br/> |
 |双面  <br/> |每个报告中的数据通常最长为过去24到48小时。  <br/> |
 |第三章  <br/> |" **激活**"图表显示台式计算机和其他设备上的 Office 激活次数。  <br/> |
 |4   <br/> |" **用户**"图表显示在台式计算机或其他设备上有权激活和已激活 Office 订阅的用户数。  <br/> |

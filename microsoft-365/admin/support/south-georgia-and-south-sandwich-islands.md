@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6401b5aaaea4ebeac73e1379efaa0811c5223b0d
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 8bb269ed768f1b3fc5c0a8cb5f73ad0ea2626431
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356313"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386469"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>对南乔治亚和南桑威奇群岛的联系支持
 

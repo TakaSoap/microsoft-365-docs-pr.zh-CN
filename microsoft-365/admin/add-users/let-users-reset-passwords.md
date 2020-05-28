@@ -17,18 +17,19 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 01099f6f678bbaa3b163ac59e0417614352e0e97
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173526"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387029"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -53,19 +54,19 @@ ms.locfileid: "44173526"
 以下步骤将为企业中的所有人启用自助密码重置。
   
 ::: moniker range="o365-worldwide"
-1. 在 "管理中心" 中，转到 "**设置** \> " <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">"设置" 页。</a>
+1. 在 "管理中心" 中，转到 "**设置**" "设置" \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a>页。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>" 中，转到 "**设置** \> **安全&amp;隐私**" 页。
+1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>" 中，转到 "**设置** \> **安全 &amp; 隐私**" 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到 "**设置** \>**设置** \> **安全&amp;隐私**" 页。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，转到 "**设置** \> **设置** \> **安全 &amp; 隐私**" 页。
 
 ::: moniker-end
 

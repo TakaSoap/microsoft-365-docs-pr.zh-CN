@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: 您可以创建和使用模板来节省时间并在添加多个用户时标准化设置。
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140648"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387221"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ ms.locfileid: "44140648"
 
 ## <a name="create-a-template"></a>创建模板
 
-可以轻松地创建&mdash;模板。可以选择 "**用户** > **活动用户** > "**用户模板**，然后从下拉列表中选择 "**添加模板**"，也可以添加新用户，完成后，可以选择将该条目保存为模板。
+可以轻松地创建模板 &mdash; 。可以选择 "**用户**  >  **活动用户**  >  "**用户模板**，然后从下拉列表中选择 "**添加模板**"，也可以添加新用户，完成后，可以选择将该条目保存为模板。
 
 在添加用户后创建模板时，您为以下设置选择的值会保存在模板中：
 
@@ -49,7 +50,7 @@ ms.locfileid: "44140648"
 - 许可证位置
 - 许可证选择
 - 应用程序选择
-- 角色
+- Role
 - 大多数配置文件信息，例如**作业配置文件**、**部门**、**办公室**、**办公室电话**和**街道地址** 
 
 以下信息是特定于用户的，不会保存在模板中：
@@ -68,12 +69,12 @@ ms.locfileid: "44140648"
 
 若要使用现有模板添加用户，请执行以下操作：
 
-1. 在管理中心内，选择 "**用户** > **活动用户**"。
+1. 在管理中心内，选择 "**用户**  >  **活动用户**"。
 
 2. 选择 "**用户模板**"，然后从下拉列表中选择一个模板。 （该列表将仅包含您创建的模板，而不是由其他管理员创建的模板。）
 
  > [!NOTE]
- > 您还可以使用模板来添加用户，方法是选择 "**用户模板** > " "**管理模板**"，选择一个模板，然后选择 "**使用模板**"。
+ > 您还可以使用模板来添加用户，方法是选择 "**用户模板**  >  " "**管理模板**"，选择一个模板，然后选择 "**使用模板**"。
 
 3. 按照步骤操作，从所选的模板中创建用户。
 
@@ -84,7 +85,7 @@ ms.locfileid: "44140648"
 
 您可以轻松地删除不再需要的模板并添加新模板。 若要删除模板，请执行以下操作：
 
-1. 在管理中心内，选择 "**用户** > **活动用户**"。
+1. 在管理中心内，选择 "**用户**  >  **活动用户**"。
 
 2. 选择 "**模板**"，然后从下拉列表中选择 "**管理模板**"。
 

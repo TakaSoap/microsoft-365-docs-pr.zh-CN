@@ -9,15 +9,16 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 157e143aa4c0b03eb26834ab25b75f6c224e40a0
-ms.sourcegitcommit: 812aab5f58eed4bf359faf0e99f7f876af5b1023
+ms.openlocfilehash: 6458eedcee21c01a1e9deae595cb85dbe5df8e97
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/02/2020
-ms.locfileid: "42356453"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386729"
 ---
 # <a name="contact-support-for-sint-eustatius"></a>对圣尤斯特歇斯的联系支持
 

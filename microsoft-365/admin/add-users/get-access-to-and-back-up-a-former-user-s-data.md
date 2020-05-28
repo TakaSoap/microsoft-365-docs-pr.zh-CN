@@ -16,25 +16,26 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140629"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387197"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理员中心正在更改。 如果你的体验与此处提供的详细信息不匹配，请参阅[关于新的 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
 
@@ -69,7 +70,7 @@ ms.locfileid: "44140629"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择一个用户。
 
@@ -85,7 +86,7 @@ ms.locfileid: "44140629"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
 2. 选择一个用户。
 
@@ -129,7 +130,7 @@ ms.locfileid: "44140629"
 
 ::: moniker-end
 
-2. 在左窗格中，选择 "**管理中心** \> " " **SharePoint**"。 （你可能需要选择“**全部显示**”以查看管理中心列表）。
+2. 在左窗格中，选择 "**管理中心**" " \> **SharePoint**"。 （你可能需要选择“**全部显示**”以查看管理中心列表）。
 
 3. 如果看到经典 SharePoint 管理中心，请选择页面顶部的“**立即打开**”，打开新的 SharePoint 管理中心。
 
@@ -156,7 +157,7 @@ ms.locfileid: "44140629"
     
     ![这就是功能区在 Outlook 2016 中的外观。](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
-3. 选择 **" &amp;打开导出** \> **导入/导出**"。
+3. 选择 "**打开 &amp; 导出** \> **导入/导出**"。
     
     ![Backstage 视图中的导入/导出命令](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
@@ -204,7 +205,7 @@ ms.locfileid: "44140629"
 > 您还可以[将前一个用户的邮箱转换为共享邮箱，或将](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox)[以前的员工的电子邮件转发给另一个员工](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox)。
 
   
-1. 在 Outlook 中，转到 "**文件** \> ** &amp;打开导出** \> **导入/导出**"。
+1. 在 Outlook 中，转到 "**文件** \> **打开 &amp; 导出** \> **导入/导出**"。
     
     这将启动 "导入和导出向导"。
     

@@ -1,5 +1,5 @@
 ---
-title: 我订阅了哪些产品？
+title: 我有什么订阅？
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,15 +24,14 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045208"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386741"
 ---
-# <a name="what-subscription-do-i-have"></a>我订阅了哪些产品？
+# <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
 如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。
   
@@ -40,7 +42,7 @@ ms.locfileid: "44045208"
 > [!NOTE]
 > 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
-1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
 2. 您的订阅将显示在 "**产品**" 页上，以及订阅名称、有关订阅的信息及其状态。 若要查看简洁视图，请选择 "**表格视图**"。
 
@@ -48,7 +50,7 @@ ms.locfileid: "44045208"
   
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>" 页。  
 
 2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。
 
@@ -67,7 +69,7 @@ ms.locfileid: "44045208"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**记帐** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。  
+1. 在管理中心中，转到 "**记帐** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>" 页。  
 
 2. 如果只有一个订阅，它将显示在" **订阅**"页上，随之还有订阅名、订阅的相关信息及状态。 在下面的屏幕截图中，你可以看到我有 Microsoft 365 Apps for business 订阅。
 

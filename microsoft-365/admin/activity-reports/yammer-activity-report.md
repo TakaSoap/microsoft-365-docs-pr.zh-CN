@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
 description: 获取 Yammer 活动报告，并了解有关使用 Yammer 发布、类似或阅读邮件的用户数的详细信息。
-ms.openlocfilehash: bd128e17b8d435b8d5c6b06f16ff37fea11a6ce3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618952"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387461"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>管理员中心内的 Microsoft 365 报告-Yammer 活动报告
 

@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft 365 应用程序的使用情况报告。
-ms.openlocfilehash: eb8978c878b2356c8fe73cb0f9f0021b65fcc333
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: bdf6863b47739e77355137f0bb559e7cc425d055
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781435"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387653"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理中心中的 microsoft 365 报表-Microsoft 365 应用程序使用情况
 
@@ -38,7 +39,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
- 2. 从 "**选择报告**" 下拉项中，选择 " **Office 365** \> **Microsoft 365 应用使用情况**"。
+ 2. 从 "**选择报告**" 下拉项中，选择 " **Office 365**   \>  **Microsoft 365 应用使用情况**"。
 
 ## <a name="interpret-the-microsoft-365-apps-usage-report"></a>解释 Microsoft 365 应用程序使用率报告
 
@@ -52,7 +53,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
  |2. <br/> |每个报告中的数据通常最长为过去24到48小时。 <br/> |
  |3. <br/> |**Users** view iew 显示了每个应用程序（Outlook、Word、Excel、PowerPoint、OneNote 和团队）的活动用户数的趋势。 "活动用户" 是在这些应用程序中执行任何故意操作的任何人。 <br/> |
  |4. <br/> |"**平台**" 视图显示每个平台（Windows、Mac、Web 和移动设备）上的每个应用程序的活动用户的趋势。 <br/> |
- |5.<br/>|在 "**用户**" 图表上，Y 轴表示各个应用程序的唯一活动用户数。 在 " **平台** " 图表中，Y 轴表示各个平台的唯一用户数。 这两个图表的 X 轴都是在给定平台上使用应用程序的日期。<br/>|
+ |5.<br/>|在 "**用户**" 图表上，Y 轴表示各个应用程序的唯一活动用户数。 在 " **平台**"   图表中，Y 轴表示各个平台的唯一用户数。 这两个图表的 X 轴都是在给定平台上使用应用程序的日期。<br/>|
  6.<br/>|您可以通过选择图例中的项目来筛选您在图表上看到的系列。 例如，在 "**用户**" 图表上，选择 "Outlook"、"Word"、"Excel"、"PowerPoint"、"OneDrive" 或 "团队"，仅查看与每个相关的信息。 更改此选择不会更改下方的网格表中的信息。|
  |7.<br/>|下表详细显示了每个用户的数据。 可在表格中添加或删除列。 <br/><br/>**Username**是在 Microsoft 应用上执行活动的用户的电子邮件地址。<br><br/>"**上次激活日期（UTC）** " 是用户激活其 Microsoft 365 应用订阅的最晚日期。<br/><br/>"**上次活动日期（UTC）** " 是用户有意执行的活动的最晚日期。 要查看指定日期发生的活动，请直接在图表中选择该日期。<br/><br/>与每个应用程序对应的以下各列，这些应用程序标识用户是否在选定时间段内处于活动状态的应用程序：<br> <br>**Outlook** <br>**Word** <br>**Excel**<br>**PowerPoint** <br>**OneNote**<br><br> 与每个平台相对应的以下各列，这些列确定用户是否在所选时间段内的任何应用程序（Microsoft 365 应用程序中）的该平台上处于活动状态：<br><br>**Outlook （Windows）**<br>**Outlook （Mac）**<br>**Outlook （Web）** <br>**Outlook （移动版）**<br> **Word （Windows）**<br> **Word （Mac）**<br> **Word （Web）**<br> **Word （移动版）**<br> **Excel （Windows）**<br> **Excel （Mac）**<br> **Excel （Web）**<br> **Excel （移动）**<br> **PowerPoint （Windows）**<br> **PowerPoint （Mac）**<br>**PowerPoint （Web）**<br> **PowerPoint （移动版）**<br> **OneNote （Windows）**<br> **OneNote （Mac）**<br> **OneNote （Web）**<br>**OneNote （移动）**<br> **团队（Windows）**<br> **团队（Mac）**<br> **团队（Web）**<br>**团队（移动）** |
  |8.<br/>|选择 "**管理列**" 图标可在报表中添加或删除列。|

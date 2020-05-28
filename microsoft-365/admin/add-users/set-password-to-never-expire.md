@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 了解如何使用 Windows PowerShell 将某些个人用户密码设置为永不过期。
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173492"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386995"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>将个人用户密码设置为永不过期
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
-1. 在 "管理中心" 中，转到 "**设置** \> " <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">"设置" 页。</a>
+1. 在 "管理中心" 中，转到 "**设置**" "设置" \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a>页。
 2. 在 "设置" 页面顶部，选择 "**安全 & 隐私**"。
 3. 选择“**密码过期策略**”。 
 4. 如果密码设置为永不过期，请单击 "**将用户密码设置为在数天后过期**" 旁边的复选框。 您将获得用于指定密码过期前的天数的选项。
@@ -127,4 +128,4 @@ Microsoft 云服务的全局管理员可以使用[Azure Active Directory PowerSh
     ```
 
 > [!WARNING]
-> 密码根据属性`-PasswordPolicies DisablePasswordExpiration`设置为 "仍存在`pwdLastSet`年龄"。 如果将用户密码设置为永不过期，然后设置为 90 + 天，则密码将过期。 根据`pwdLastSet`属性，如果将过期时间更改为`-PasswordPolicies None`，则所有`pwdLastSet`早于90天的密码都需要用户在下次登录时更改。 此更改可能会影响大量用户。
+> 密码根据属性设置为 `-PasswordPolicies DisablePasswordExpiration` "仍存在年龄" `pwdLastSet` 。 如果将用户密码设置为永不过期，然后设置为 90 + 天，则密码将过期。 根据 `pwdLastSet` 属性，如果将过期时间更改为，则 `-PasswordPolicies None` 所有 `pwdLastSet` 早于90天的密码都需要用户在下次登录时更改。 此更改可能会影响大量用户。

@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft Forms Pro 活动报告。
-ms.openlocfilehash: b86fffe580e67e86999379cc3186465dcfc7fed8
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: df03f3f0300dcd923f43987ee786981b1653b1ce
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804820"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387701"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-pro-activity"></a>管理中心中的 Microsoft 365 报表-Forms Pro 活动
 

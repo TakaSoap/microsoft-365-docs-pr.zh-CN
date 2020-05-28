@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 description: 了解如何使用 microsoft 365 管理中心中的 Microsoft 365 报告仪表板获取 Microsoft Forms 活动报告。
-ms.openlocfilehash: 63eb8613879849201876b237c659a4529ce2ca0f
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: f835533fb626c8d6e7bd408b90abaa558304e20b
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781501"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387749"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>"管理中心" 中的 Microsoft 365 报表-表单活动
 

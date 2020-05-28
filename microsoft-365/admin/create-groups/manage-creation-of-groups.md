@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MSP160
@@ -21,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 7a699a01687aec47fd39ce108c5a8c7a888afe65
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222379"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387989"
 ---
 # <a name="manage-who-can-create-groups"></a>管理可以创建组的用户
 
@@ -47,7 +48,7 @@ ms.locfileid: "44222379"
     
 - StaffHub
     
-- 规划器
+- Planner
     
 - PowerBI
 
@@ -120,7 +121,7 @@ ms.locfileid: "44222379"
 
 将下面的脚本复制到文本编辑器（如记事本）或[Windows POWERSHELL ISE](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)中。
 
-将* \< SecurityGroupName \> *替换为您创建的安全组的名称。 例如：
+*\<SecurityGroupName\>* 将替换为您创建的安全组的名称。 例如：
 
 `$GroupName = "Group Creators"`
 

@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -18,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
 description: 了解如何使用 Microsoft 365 管理中心的 Microsoft 365 报告仪表板获取活动用户报告，并了解使用了多少产品许可证。
-ms.openlocfilehash: e865fa1ed68e7e68c103bf6abc66816b844d7b2d
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 7f32059f01163a2a499f1befb9f4e3c519973549
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43046839"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387893"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---active-users"></a>Microsoft 365 在管理中心内报告-活动用户
 
@@ -50,7 +51,7 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 |3.  <br/> |" **活动用户**"图表可显示按产品区分的报表周期内的每日活动用户。  <br/> " **服务**"图表可按活动类型和服务显示用户数。  <br/> |
 |4.  <br/> | 在" **活动用户**"图表中，x 轴表示所选报表时间段，y 轴表示按许可证类型区分并进行颜色编码的活动用户。  <br/>  在" **服务**"活动图表中，X 轴表示给定时间段内为用户启用的单独服务，Y 轴表示各活动状态的用户数（按活动状态进行颜色编码）。  <br/> |
 |5.  <br/> |您可以通过选择图例中的项目来筛选您在图表上看到的系列。 更改选择不会更改网格表中的信息。  <br/> |
-|6.  <br/> |您还可以通过**选择 "将** ![数据导出到 excel 文件](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) " 链接，将报告数据导出到 excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。  <br/> |
+|6.  <br/> |您还可以通过**选择 "将** ![ 数据导出到 excel 文件" 链接，将报告数据导出到 excel .csv 文件中 ](../../media/816a224b-6ca7-4967-a135-4f6427f64dc8.JPG) 。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。  <br/> |
 |7.  <br/> |可使用列控件更改网格表中显示的信息。  <br/> 如果你的订阅由世纪互联运营，则你将看不到 Yammer。 <br/> <br/> |
 |||
 

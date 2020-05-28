@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何为 Microsoft 365 组创建命名策略。
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630439"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388001"
 ---
 # <a name="groups-naming-policy"></a>组命名策略
 
@@ -38,7 +39,7 @@ ms.locfileid: "43630439"
 
 组命名策略包含以下功能：
 
-- **前缀后缀命名策略**：您可以使用前缀或后缀定义组的命名约定（例如： "US\_My Group\_工程"）。 前缀/后缀可以是固定字符串或像 [部门] 这样的用户属性，将根据创建组的用户进行替换。
+- **前缀后缀命名策略**：您可以使用前缀或后缀定义组的命名约定（例如： "US \_ My Group \_ 工程"）。 前缀/后缀可以是固定字符串或像 [部门] 这样的用户属性，将根据创建组的用户进行替换。
 
 - **自定义阻止的词**：您可以将特定于您的组织的一组阻止的词上载到用户创建的组中被阻止。 （例如： "CEO，工资表，HR"）。
 
@@ -54,7 +55,7 @@ ms.locfileid: "43630439"
 
 ### <a name="fixed-strings"></a>固定字符串
 
-您可以使用简短字符串来帮助您区分 GAL 中的组和组工作负荷的左侧导航。 某些常用前缀后缀是关键字，如 "Grp\_Name"、"\#name"、"\_name"
+您可以使用简短字符串来帮助您区分 GAL 中的组和组工作负荷的左侧导航。 某些常用前缀后缀是关键字，如 "Grp \_ Name"、" \# name"、" \_ name"
 
 ### <a name="attributes"></a>属性
 
@@ -80,7 +81,7 @@ ms.locfileid: "43630439"
 
 - 前缀和后缀可以包含组名和组别名中支持的特殊字符。 当前缀和后缀包含在组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名称的前缀和后缀将不同于应用于组别名的前缀和后缀。
 
-- 如果\#使用 Yammer Microsoft 365 连接的组，请避免在命名策略中使用以下字符： @、、 \[ \] \<、、和。 \> 如果这些字符位于命名策略中，则常规 Yammer 用户将无法创建组。
+- 如果使用 Yammer Microsoft 365 连接的组，请避免在命名策略中使用以下字符： @、 \# 、、 \[ \] 、 \<, and \> 。 如果这些字符位于命名策略中，则常规 Yammer 用户将无法创建组。
 
 ## <a name="custom-blocked-words"></a>自定义阻止的单词
 
