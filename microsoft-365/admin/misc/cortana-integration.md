@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: '了解如何使用 Cortana 与 Office 365 集成。 你可以在管理中心关闭 Cortana 以限制其对你组织的数据的访问。 '
-ms.openlocfilehash: 80c4425814e6015d5a8116a1e8df7f7b528dbd66
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 使用有效的工作或学校帐户登录后，用户可以使用 Microsoft 365 体验中的 Cortana 获取基于云的协助服务，从而满足 Office 365 的企业级隐私、安全性和合规性承诺。
+ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399406"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44410997"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 

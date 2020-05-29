@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何管理核心电子数据展示事例。 这包括关闭事例、重新打开已关闭事例和删除案例。
-ms.openlocfilehash: 45282486c2c3b1d00b99a1cda5968b3bb042f6c2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208414"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412791"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>关闭、重新打开和删除核心电子数据展示事例
 
@@ -32,7 +32,7 @@ ms.locfileid: "44208414"
 
 当核心电子数据展示事例支持的法律案例或调查完成后，您可以关闭该事例。 以下是在关闭事例时将会发生的情况：
   
-- 如果案例在电子数据展示保留中包含任何内容位置，这些保留将被禁用。 这可能会导致用户或通过自动过程（如删除策略）永久删除或清除内容。
+- 如果案例在电子数据展示保留中包含任何内容位置，这些保留将被禁用。 关闭保留后，30天宽限期（称为*延迟保留*）将应用于处于保留状态的内容位置。 这有助于防止立即删除内容，并使管理员能够在延迟保留期到期之后永久删除内容之前，搜索并还原内容。 有关详细信息，请参阅[删除电子数据展示保留中的内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
 - 仅关闭案例只会关闭与该案例相关的保留。 如果将其他保留放置在内容位置（如诉讼保留、保留策略或来自不同核心电子数据展示案例的保留），仍将保留这些保留项。
 

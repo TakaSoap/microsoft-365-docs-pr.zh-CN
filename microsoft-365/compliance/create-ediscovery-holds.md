@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以创建与核心电子数据展示事例相关联的保留，以保留可能与调查相关的内容。
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352249"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412851"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -113,7 +113,7 @@ ms.locfileid: "44352249"
 
 - 如果将搜索配置为在保留范围内搜索位置，然后在此情况下更改电子数据展示保留（通过添加或删除位置或更改保留查询），则会使用这些更改更新搜索配置。 但是，在更改保留后，必须重新运行搜索以更新搜索结果。
 
-- 如果将多个电子数据展示保留放在电子数据展示事例中的单个位置上，并选择搜索保留的位置，则该搜索查询的最大关键字数为500。 这是因为搜索将使用**OR**运算符组合所有基于查询的保留。 如果在组合保留查询和搜索查询中有500个以上的关键字，则会搜索邮箱中的所有内容，而不仅仅是与基于查询的事例匹配的内容。 
+- 如果将多个电子数据展示保留放在电子数据展示事例中的单个位置上，并选择搜索保留的位置，则该搜索查询的最大关键字数为500。 这是因为搜索将使用**OR**运算符组合所有基于查询的保留。 如果在组合保留查询和搜索查询中有500个以上的关键字，则会搜索邮箱中的所有内容，而不仅仅是与基于查询的事例匹配的内容。
     
 - 如果电子数据展示保留状态为 "**开启**"，则您仍可以在保留处于打开状态时在保留位置搜索。
 
@@ -174,6 +174,26 @@ ms.locfileid: "44352249"
 
 > [!IMPORTANT]
 > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是电子数据展示保留的一部分（旧的和其 UPN 的更改），则需要更新保留，并且必须更新保留，然后添加用户的新 OneDrive URL 并删除旧的旧 URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>从电子数据展示保留中删除内容位置
+
+从电子数据展示保留中删除邮箱、SharePoint 网站或 OneDrive 帐户之后，将应用*延迟保留*。 这意味着保留的实际删除延迟30天，以防止永久删除（清除）内容位置中的数据。 这使管理员有机会搜索或恢复在删除电子数据展示保留后将清除的内容。 邮箱和网站的延迟保留的工作原理的详细信息是不同的。
+
+- **邮箱：** 下次托管文件夹助理处理邮箱并检测到删除电子数据展示保留已被删除时，会在邮箱上放置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为**True**时，将对邮箱应用延迟保留： 
+
+   - **DelayHoldApplied：** 此属性适用于存储在用户邮箱中的与电子邮件相关的内容（由使用 Outlook 和 web 上的 Outlook 生成的用户生成）。
+
+   - **DelayReleaseHoldApplied：** 此属性适用于存储在用户邮箱中的基于云的内容（由非 Outlook 应用程序（如 Microsoft 团队、Microsoft Forms 和 Microsoft Yammer）生成。 Microsoft 应用生成的云数据通常存储在用户邮箱的隐藏文件夹中。
+
+   在邮箱上放置延迟保留（当上述任一属性设置为**True**）时，邮箱仍被视为无限制保留持续时间处于保留状态，就像邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Microsoft 365 将自动尝试删除延迟保留（通过将 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为**False**），以便删除保留。 在这两个属性都设置为**False**后，在下一次由托管文件夹助理处理邮箱时，将清除标记为要删除的相应项。
+
+   有关详细信息，请参阅[管理延迟保留的邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
+
+- **SharePoint 和 OneDrive 网站：** 从电子数据展示保留中删除网站后，保留在保留保留库中的任何 SharePoint 或 OneDrive 内容不会在30天延迟保留期内删除。 这类似于从保留策略中发布网站时发生的情况。 此外，在30天的延迟保留期内，您无法手动删除保留保留库中的此内容。 
+
+   有关详细信息，请参阅[发布保留策略](retention-policies.md#releasing-a-retention-policy)。
+
+关闭核心电子数据展示事例时，延迟保留也会应用于保留状态，因为在关闭事例时保留处于关闭状态。 有关关闭事例的详细信息，请参阅[关闭、重新打开和删除核心电子数据展示事例](close-reopen-delete-core-ediscovery-cases.md)。
 
 ## <a name="ediscovery-hold-limits"></a>电子数据展示保留限制
 

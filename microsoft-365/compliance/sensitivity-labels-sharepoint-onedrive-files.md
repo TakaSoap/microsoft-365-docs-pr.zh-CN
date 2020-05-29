@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 62bc2b748cf004722f94a7231046930d78437603
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342514"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411009"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -57,6 +57,8 @@ ms.locfileid: "44342514"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 您始终可以选择在 SharePoint 和 OneDrive 中禁用 Office 文件的敏感度[标签（随时退出。](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out)
+
+如果当前通过使用 SharePoint 信息权限管理（IRM）保护 SharePoint 中的文档，请务必查看此页上的 " [SharePoint 信息权限管理（irm）和敏感度标签](#sharepoint-information-rights-management-irm-and-sensitivity-labels)" 部分。 
 
 ## <a name="requirements"></a>Requirements
 
@@ -171,6 +173,26 @@ ms.locfileid: "44342514"
 2. 在初始发布后至少等待24小时。 验证标签是否已完全同步。
 
 3. 更广泛地发布标签。
+
+## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint 信息权限管理（IRM）和敏感度标签
+
+[SharePoint 信息权限管理（IRM）](set-up-irm-in-sp-admin-center.md)是一种较旧的技术，可通过在下载文件时应用加密和限制来保护列表和库级别的文件。 此较旧的保护技术旨在防止未经授权的用户在 SharePoint 外部打开该文件。
+
+相比之下，敏感度标签提供了直观标记（页眉、页脚、水印）的保护设置以及加密。 加密设置支持完全范围的[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights)，以限制用户可以对内容执行的操作，并且[许多方案](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)都支持相同的敏感度标签。 在工作负载和应用中使用具有一致设置的相同保护方法将导致一致的保护策略。
+
+但是，可以同时使用这两个保护解决方案，行为如下所示： 
+
+- 如果您上载的文件具有适用于加密的敏感度标签，则不会删除加密，因此不支持这些文件、共同创作、电子数据展示、DLP 和搜索。
+
+- 如果使用 web 上的 Office 标记文件，则将强制应用标签中的所有加密设置。 对这些文件、共同创作、电子数据展示、DLP 和搜索均受支持。
+
+- 如果下载使用 web 上的 Office 标记的文件，则会保留标签，并强制实施标签中的所有加密设置，而不是 IRM 限制设置。
+
+- 如果下载未使用敏感度标签加密的 Office 或 PDF 文件，则会应用 IRM 设置。
+
+- 如果已启用任何其他 IRM 库设置，其中包括阻止用户上载不支持 IRM 的文档，则强制实施这些设置。
+
+在这种情况下，您可以确信，如果下载了所有 Office 和 PDF 文件，即使这些文件不带标签，也可以防止未经授权的访问。 但是，已上传的已标记文件不会受益于新功能。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>如何禁用 SharePoint 和 OneDrive 的敏感度标签（自愿退出）
 

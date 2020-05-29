@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解当关闭或删除高级电子数据展示事例支持的调查或合法案例时，会发生什么情况。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292408"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412781"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除高级电子数据展示事例
 
@@ -32,7 +32,7 @@ ms.locfileid: "44292408"
 
 以下是在关闭高级电子数据展示事例时会发生的情况：
 
-- 如果事例包含处于保留状态的任何内容位置，则这些保留将被禁用。 这可能会导致用户或通过自动过程（如删除策略）永久删除或清除内容。
+- 如果事例包含处于保留状态的任何内容位置，则这些保留将被禁用。 关闭保留后，30天宽限期（称为*延迟保留*）将应用于处于保留状态的内容位置。 这有助于防止立即删除内容，并使管理员能够搜索或恢复在延迟保留期过期后将永久删除的内容。 有关详细信息，请参阅[删除电子数据展示保留中的内容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
 - 仅关闭案例只会关闭与该案例相关的保留。 如果其他保留项放置在内容位置（如诉讼保留、核心电子数据展示保留或来自不同高级电子数据展示事例的保留），则仍将保留这些保留。
 

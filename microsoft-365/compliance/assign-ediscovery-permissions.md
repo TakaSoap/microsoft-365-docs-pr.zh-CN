@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374401"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411029"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -43,7 +43,7 @@ ms.locfileid: "44374401"
   有关您可能想要组织中的电子数据展示管理员的原因，请参阅[详细信息](#more-information)部分。
 
 > [!NOTE]
-> 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 或 Microsoft E5 许可证。 或者，可以为具有 E1 或 E3 许可证的用户分配一个 E5 附加许可证。 被分配为事例作为成员并使用高级电子数据展示来收集、查看和分析数据的管理员、合规性监察官或法律人员不需要 E5 许可证。 有关许可的详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://aka.ms/complianceSD)。
+> 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配一个 Office 365 E5 或 Microsoft 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 Office 365 或 Microsoft 365 E3 许可证的用户分配 Microsoft 365 E5 合规性或 Microsoft 365 电子数据展示和审核附加许可证。 被分配为事例作为成员并使用高级电子数据展示来收集、查看和分析数据的管理员、合规性监察官或法律人员不需要 E5 许可证。 有关高级电子数据展示许可的详细信息，请参阅[高级电子数据展示入门](get-started-with-advanced-ediscovery.md)。
   
 ## <a name="before-you-begin"></a>准备工作
 
