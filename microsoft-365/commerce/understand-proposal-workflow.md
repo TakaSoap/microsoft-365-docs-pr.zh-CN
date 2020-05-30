@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解可帮助您购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403122"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419108"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -31,7 +31,7 @@ Microsoft 代表将包含你和你的代表所讨论的项目的建议草案。 
 
 收到通知电子邮件后，请访问建议网站的链接。 登录网站后，可以启动建议审阅过程。
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>使用建议来购买项目的组织先决条件是什么？
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>使用建议购买项目的先决条件
 
 在购买建议的项目之前，您必须具有与 Microsoft 的帐单帐户和协议。
 
@@ -49,7 +49,7 @@ Microsoft 代表将包含你和你的代表所讨论的项目的建议草案。 
 
 Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 有关详细信息，请参阅[Microsoft 客户协议](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>为项目签署协议或付款需要什么权限？
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>签署协议或支付项目所需的权限
 
 如果您在付费帐户中没有分配的角色，则当您查看建议时，将为您分配 "基本读者" 角色。 此角色允许你查看（但不执行）建议的任何操作。 在签署协议或购买产品和服务之前，您必须分配有帐单帐户所有者或帐单帐户参与者角色。 您的帐单帐户所有者可以将此角色分配给您。
 
@@ -59,7 +59,7 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 
 - 是建议 \ 中指定的人员 \
     OR
-- 已是你的组织的 Azure Active Directory 全局管理员
+- 已是你的组织的[Azure Active Directory 全局管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="what-is-the-overall-workflow"></a>总工作流是什么？
 
@@ -86,7 +86,6 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 帐单帐户 | 用于管理帐户设置、发票、付款方式和产品的帐户。 |
 | 计费配置文件 | 有关您的组织的信息，可让您自定义发票中包含的项目以及您为发票付款的方式。 记帐配置文件包括帐单帐户名称、用于特定记帐配置文件的付款方式、联系人信息、发票设置以及允许您更改计费配置文件、支付帐单和购买产品和服务的权限。 |
-| 客户关联购买条款（CAPT） | 一组额外的术语，允许组织的关联购买产品和服务，而无需签署单独的 MCA。 |
 | 现有协议 | 您的组织已与 Microsoft 进行的任何协议。 这可能包括但不限于企业协议、Microsoft 产品 & 服务协议或 Microsoft 客户协议。 |
 | Microsoft 客户协议（MCA） | 概述你的组织在 Microsoft 中持有的帐户的条款和条件的协议。 |
 | Microsoft 代表 | 为您和您的组织准备建议的授权 Microsoft 代表。 |
@@ -120,7 +119,7 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 
 建议包含以下信息：
 
-| 分区 | Description |
+| 分区 | 说明 |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 组织名称 | 为其准备建议的组织的名称。 |
 | 有效期截止日期 | 建议提供的到期日期。 如果你错过了此到期日期，请联系你的 Microsoft 代表，让他们知道你仍然对此建议感兴趣。 |

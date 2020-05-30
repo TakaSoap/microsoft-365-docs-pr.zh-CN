@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解当关闭或删除高级电子数据展示事例支持的调查或合法案例时，会发生什么情况。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412781"
+ms.locfileid: "44419058"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>关闭或删除高级电子数据展示事例
 
@@ -56,7 +56,7 @@ ms.locfileid: "44412781"
 
 重新打开已关闭的事例：
 
-1. 在 "**高级电子数据展示**" 页上，选择要删除的大小写。
+1. 在 "**高级电子数据展示**" 页上，选择要重新打开的大小写。
 
 2. 在 "**设置**" 选项卡上的 "**事例信息**" 下，单击 "**选择**"。
 

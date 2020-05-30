@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400709"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419132"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -84,12 +84,27 @@ Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员
 
 在具有有关组使用的可操作信息时，管理 Microsoft 365 组会更有效。 Microsoft 365 管理中心有一个报告工具，可让你查看存储使用情况、拥有的活动组数以及你的用户使用组的数量。 有关详细信息，请参阅： [Microsoft 365 Reports in admin center](../activity-reports/office-365-groups.md) 。
 
+## <a name="sensitivity-labels"></a>敏感度标签
+
+您可以创建您的组织中的用户在创建 Microsoft 365 组时可以设置的敏感度标签。 使用灵敏度标签，您可以配置： 
+
+- 隐私（公用或专用）
+- 外部用户访问
+- 非托管设备访问
+
+例如，可以创建一个名为 "*高度机密*" 的标签，并指定使用此标签创建的任何组都是私有的，并且不允许外部用户。 如果组织中的用户在创建组的过程中选择此标签，则组将设置为 "私人"，并且不允许组成员将外部用户添加到组中。
+
+> [!IMPORTANT]
+> 如果你当前正在使用分类标签，则在启用灵敏度标签后，创建组的用户将无法再使用这些标签。 
+
+有关创建、管理和使用敏感度标签的信息，请参阅[使用敏感度标签保护 Microsoft 团队、microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 计划包括组？
 
 任何具有 Exchange Online 和 SharePoint Online 的 Microsoft 365 订阅都将支持组。 其中包括业务重点和业务高级计划，以及企业版 E1、E3 和 E5 计划。 该组将接受创建组的人员（也称为组的 "组织者"）的许可。 只要组织者具有对您希望组拥有的任何功能的正确许可证，该许可证就会传递到组。
 
 > [!NOTE]
-> 有关 Microsoft 365 服务系列和计划的更多详细信息，请参阅[microsoft 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 有关 Microsoft 365 服务系列和计划的更多详细信息，请参阅[microsoft 365 计划选项](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 如果您具有仅 Exchange 计划，您仍可以在 Outlook 中获取组的共享收件箱和共享日历功能，但不会获取文档库、计划程序或任何其他功能。
 

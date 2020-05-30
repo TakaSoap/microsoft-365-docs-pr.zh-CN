@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
-ms.openlocfilehash: 10e75be9541c4bd2b5a62d8bea46c45d213655e2
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141578"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429187"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合规性分数（预览）计算
 
 > [!IMPORTANT]
-> 合规性分数不表示对任何特定标准或法规的组织合规性的绝对衡量。 它表示您已采用的控制程度，可降低个人数据和个人隐私的风险。 不应将合规性分数和合规性管理器中的建议解释为合规性保证。 此服务目前处于预览阶段，并受[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件的制约。
+> 合规性分数和合规性管理器中提供的建议不应解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务当前处于预览阶段，并遵循[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件。 另请参阅[适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="overview"></a>概述
 
@@ -37,7 +37,7 @@ ms.locfileid: "43141578"
 - **实现状态**等于已**实现**或**替代实施**，以及
 - **测试结果**等于已**通过**。
 
-通过采取改进操作达到的分数总和是控制得分。 控制分数的总和是评估分数。 评估分数总和是您的总体合规性分数
+通过采取改进操作达到的分数总和是控制得分。 控制分数的总和是评估分数。 评估分数总和是您的总体合规性分数。
 
 ## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>基于 Microsoft 365 数据保护基准的初始分数
   
@@ -83,8 +83,8 @@ ms.locfileid: "43141578"
 | 预防性强制 | 27 |
 | 预防自由 | 9  |
 | 侦探必备 | 第三章 |
-| 侦探自由 | 1 |
+| 侦探自由 | 1  |
 | 强制纠正 | 第三章 |
-| 随机纠正 | 1 |
+| 随机纠正 | 1  |
   
 ![合规性分数控制点值](../media/compliance-score-controls-scoring.png "合规性分数控制点值")
