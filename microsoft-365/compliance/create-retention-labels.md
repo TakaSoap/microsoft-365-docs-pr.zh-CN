@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 有关创建、发布和自动应用保留标签以保留所需内容、删除不需要的内容，并在 Office 365 环境中将项目声明为记录的说明。
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352239"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408464"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>创建、发布和自动应用保留标签
 
@@ -80,7 +80,7 @@ ms.locfileid: "44352239"
 
 2. 按照向导中的提示进行操作。
     
-    有关配置位置的信息，请参阅此页面上的[保留标签和位置](#retention-labels-and-locations)部分。 
+    有关保留标签支持的位置的信息，请参阅[保留标签和位置](labels.md#retention-label-policies-and-locations)部分。 
 
 ## <a name="auto-apply-a-retention-label"></a>自动应用保留标签
 
@@ -100,21 +100,7 @@ ms.locfileid: "44352239"
     
     有关配置自动应用保留标签的条件的信息，请参阅此页面上的[配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels)部分。
     
-    有关配置位置的信息，请参阅此页面上的下一部分[保留标签和位置](#retention-labels-and-locations)。
-
-## <a name="retention-labels-and-locations"></a>保留标签和位置
-
-不同类型的保留标签可发布到不同位置，具体视保留标签用途而定。
-  
-|**如果保留标签…**|**可将标签策略应用于…**|
-|:-----|:-----|
-|发布给最终用户  <br/> |Exchange、SharePoint、OneDrive 和 Office 365 组  <br/> |
-|根据敏感信息类型自动应用  <br/> |Exchange（仅全部邮箱）、SharePoint 和 OneDrive  <br/> |
-|根据查询自动应用  <br/> |Exchange、SharePoint、OneDrive 和 Office 365 组  <br/> |
-   
-在 Exchange 中，自动应用（同时针对查询和敏感信息类型）的保留标签只会应用于新发送的邮件（传输中的数据），而非当前邮箱中的所有项目（静态数据）。 此外，用于敏感信息类型的自动应用的保留标签只能应用于全部邮箱；不能选择特定邮箱。
-  
-Exchange 公用文件夹和 Skype 不支持保留标签。
+    有关保留标签支持的位置的信息，请参阅[保留标签和位置](labels.md#retention-label-policies-and-locations)部分。
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>配置自动应用保留标签的条件
@@ -206,7 +192,7 @@ Exchange 公用文件夹和 Skype 不支持保留标签。
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何检查发布到 Exchange 的保留标签的状态
 
-在 Exchange Online 中，有一个流程每 7 天运行一次，用于向最终用户提供保留标签。使用 PowerShell，可查看此流程的上次运行时间，从而确定它何时再次运行。
+在 Exchange Online 中，保留标签通过每 7 天运行一次的进程向最终用户提供。 通过 Powershell，可看到此进程上次运行的时间，并进而确定其再次运行的时间。
   
 1. [连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。
     

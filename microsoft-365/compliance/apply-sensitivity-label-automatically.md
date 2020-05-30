@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 752a394b2e1c3d2219093f2342f597bdac38aee1
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 318ecd19d7dcfb4b80e1bdcec743057462c44b1b
+ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280552"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44408474"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -45,10 +45,7 @@ ms.locfileid: "44280552"
     
     有关配置说明，请参阅此页面上的[如何配置 Office 应用的自动标签](#how-to-configure-auto-labeling-for-office-apps)。
 
-- **当内容已保存（在 SharePoint Online 或 OneDrive for Business 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略—目前处于预览阶段。 
-    
-    > [!NOTE]
-    > 请参阅预览版公告[在 Microsoft 365 服务中推出使用敏感度标签自动分类的公共预览版](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961)和网络研讨会[带敏感度标签的 SharePoint 和 OneDrive 自动标记简介](https://aka.ms/SPOAutoLabelWebinar-Recording)。
+- **当内容已保存（在 SharePoint 或 OneDrive 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略。 
     
     此方法称为使用敏感度标签自动分类。 你可能还会听到它称为自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。 
     
@@ -60,6 +57,7 @@ ms.locfileid: "44280552"
     - 租户中每天最多自动标记 25,000 个文件（Word、PowerPoint 或 Excel）
     - 所有策略中最多 10 个网站集
     - 跨租户最多 10 个策略
+    - 无论是在模拟模式下还是在应用标签时，修改日期都不会因自动标记策略而更改
 
     特定于 Exchange 的自动标记：
     - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 Office 附件。 如果存在匹配项，则会标记电子邮件，但不标记附件。
@@ -186,12 +184,14 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 - 敏感信息可以在文档和电子邮件的正文文本和页眉、页脚中检测到，但无法在电子邮件的主题行或附件中检测到。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略
-> [!NOTE]
-> 自动标记策略处于公共预览版状态，可能会发生更改。
+
+在配置自动标记策略前，请确保你了解这些先决条件。 
 
 ### <a name="prerequisites-for-auto-labeling-policies"></a>自动标记策略的先决条件
 
-- 必须为模拟模式启用 Microsoft 365 审核。 如果你需要启用审核，或者不确定是否已启用审核，请参阅[启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)。
+- 模拟模式：
+    - 必须启用 Microsoft 365 审核。 如果你需要启用审核，或者不确定是否已启用审核，请参阅[启用或禁用审核日志搜索](turn-audit-log-search-on-or-off.md)。
+    - 要在源视图中查看文件内容（电子邮件不支持），如果你不是全局管理员，则必须具有**内容浏览器内容查看器**角色。如果你没有此权限，则从“**匹配项**”选项卡中选择一个项时，将看不到“预览器”窗格。
 
 - 若要自动标记 SharePoint 和 OneDrive 中的文件：
     - 你已[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
@@ -236,9 +236,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     
     如果看不到此选项，请先选择“**全部显示**”。
 
-2. 选择“**自动标记(预览)**”选项卡：
+2. 选择“**自动标记**”选项卡：
     
-    ![“自动标记(预览)”选项卡](../media/auto-labeling-tab.png)
+    ![“自动标记”选项卡](../media/auto-labeling-tab.png)
     
 
 3. 选择“**+ 创建策略**”。
@@ -248,6 +248,12 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 5. 对于“**为自动标记策略命名**”页面：提供唯一的名称，并选择性地提供描述，以帮助识别自动应用的标签、位置和条件（用于标识要标记的内容）。
 
 6. 对于“**选择要应用标签的位置**”页面：选择并指定 Exchange、SharePoint 网站和 OneDrive 的位置。 然后选择“**下一步**”。
+    
+    对于 OneDrive，必须指定单独的帐户。 用户的 OneDrive URL 采用以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)。
 
 7. 对于“**定义策略设置**”页面：保留“**查找所包含内容**”的默认设置，以定义用于在所有选定位置标识要标记的内容的规则。 如果每个位置需要不同的规则，请选择“**高级设置**”。 然后选择“**下一步**”。
     
@@ -280,7 +286,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     
     与 Office 应用的自动标记不同，无单独的发布选项。 但是，与发布标签一样，自动标记策略最多需要 24 小时才能在整个组织中复制。
 
-现在，在“**信息保护**”页面上，“**自动标记（预览）**”选项卡，可在“**模拟**”或“**禁用**”部分看到自动标记策略，取决于是否选择在模拟模式下运行它。 选择你的策略以查看配置和状态的详细信息（例如，**策略模拟仍在运行**）， 对于模拟模式中的策略，选择“**匹配的项**”选项卡，以查看与你指定的规则匹配的电子邮件或文档。
+现在，在“**信息保护**”页面上，“**自动标记**”选项卡，可在“**模拟**”或“**禁用**”部分看到自动标记策略，取决于是否选择在模拟模式下运行它。 选择你的策略以查看配置和状态的详细信息（例如，**策略模拟仍在运行**）， 对于模拟模式中的策略，选择“**匹配的项**”选项卡，以查看与你指定的规则匹配的电子邮件或文档。
 
 可直接从此界面修改策略：
 

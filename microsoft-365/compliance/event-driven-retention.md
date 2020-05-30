@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签，能让保留期以特定类型事件发生的时间为依据。也就是说，事件触发开始计算保留期，并对包含与相应事件类型关联的保留标签的所有内容强制执行标签的保留操作。事件驱动保留通常用于记录管理流程。
-ms.openlocfilehash: 00bc5b44a23dfd08eb56fd7b1f6577bf8411003d
-ms.sourcegitcommit: 83f980927728bc080f97a3e6dc70dc305f3df841
+ms.openlocfilehash: 100381d87c51a8ef403a88f19159235081c2a8df
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44053880"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385008"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -108,13 +108,16 @@ ms.locfileid: "44053880"
   
 ![用于创建或选择事件类型的选项](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### <a name="step-3-publish-the-event-based-retention-labels"></a>第 3 步：发布基于事件的保留标签
+### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>第 3 步：发布或自动应用基于事件的保留标签
 
-发布基于事件的保留标签，以便可以将它们手动应用到内容。 无法为自动应用策略选择基于事件的保留标签。 
+与任何保留标签类似，需要[发布或自动应用](create-retention-labels.md)基于事件的标签，以便将其手动或自动应用到内容。
 
-若要发布基于事件的保留标签，请依次转到“分类”**** > “保留标签”**** 页。
-  
-![用于发布或自动应用保留标签的选项](../media/options-to-publish-auto-apply-retention-label.png)
+> [!NOTE]
+> 如果从“**记录管理**” > “**文件计划**”选项卡或“**数据管理**” > “**标签**”选项卡中选择事件驱动的保留标签，“**自动应用标签**”按钮将不可用。
+> 
+> 请使用以下位置之一的标签或策略列表上方的“**自动应用标签**”选项来代替此按钮：
+> - “**记录管理**” > “**标签策略**”选项卡
+> - “**数据管理**” > “**标签**”选项卡或“**标签策略**”选项卡
 
 ### <a name="step-4-enter-an-asset-id"></a>第 4 步：输入资产 ID
 
@@ -144,7 +147,7 @@ ms.locfileid: "44053880"
 
 现在指定 SharePoint 和 OneDrive 内容的资产 ID，或指定 Exchange 内容的关键字，以缩小内容范围。对于资产 ID，只会对包含指定属性:值对的内容强制执行保留操作。如果未输入资产 ID，包含与相应事件类型关联的标签的**所有内容**都会被应用相同的保留日期。 
   
-请注意，“资产 ID”就是 SharePoint 和 OneDrive for Business 中的另一文档属性。如果使用的是“资产 ID”属性，应在下面的资产 ID 框中输入 ComplianceAssetID:\<value\>。
+请务必理解，资产 ID 只是 SharePoint 和 OneDrive for Business 中的另一种文档属性。 如果使用的是资产 ID 属性，需在下方所示的资产 ID 框中输入 ComplianceAssetID:\<value\>。
   
 组织可能已向与此事件类型相关的文档应用其他属性和 ID。例如，如果你需要检测特定产品的记录，那么 ID 可能是自定义属性 ProductID 和值“XYZ”的组合。在这种情况下，应在下面的资产 ID 框中输入 ProductID:XYZ。
   
@@ -162,7 +165,7 @@ ms.locfileid: "44053880"
   
 - 若要查找所有包含特定保留标签的内容，请选择“合规性标记”**** 条件，再输入完整或部分标签名称并使用通配符。 
     
-- 若要查找所有包含特定资产 ID 的内容，请输入 **ComplianceAssetID** 属性和值，如 ComplianceAssetID:\<value\>。 
+- 要查找所有包含特定资产 ID 的内容，请输入 **ComplianceAssetID** 属性和值，如 ComplianceAssetID:\<value\>。 
     
 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
