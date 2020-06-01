@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何向用户或业务中的多个用户分配管理员角色，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387233"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432095"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -47,13 +47,6 @@ ms.locfileid: "44387233"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>分配管理员角色 
 
@@ -99,7 +92,7 @@ ms.locfileid: "44387233"
 
 1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。 
+2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。
 
     如果看不到 "**编辑**" 选项，则无权编辑，也不能将管理员角色分配给其他人。 请求企业中的全局管理员为您分配角色。 在小型企业中，企业所有者（购买订阅的人员）是全局管理员。在大型企业中，IT 部门的关键人员是全局管理员。
 
@@ -125,9 +118,10 @@ ms.locfileid: "44387233"
 
 ## <a name="related-articles"></a>相关文章
 
+[关于 Microsoft 365 管理员角色](about-admin-roles.md)
+
 [使用 PowerShell 向用户帐户分配角色](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [授权或删除合作伙伴关系](../misc/add-partner.md)
 
 [使用 Exchange 管理中心添加备选电子邮件地址](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

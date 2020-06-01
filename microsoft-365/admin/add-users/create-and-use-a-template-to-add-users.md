@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以创建和使用模板来节省时间并在添加多个用户时标准化设置。
-ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387221"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431805"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>创建和使用模板来添加用户
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
-
-::: moniker-end
 
 您可以创建和使用模板来节省时间，并在添加多个用户时标准化设置。 如果有用户共享许多常用属性，如具有相同角色且在同一位置工作的用户以及需要同一软件的用户，则模板尤其有用。 例如，您可能拥有在同一 office 中工作的支持工程师团队。  
 

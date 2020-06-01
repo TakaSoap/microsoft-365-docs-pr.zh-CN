@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 了解 Power BI 以及组织中的用户可以如何使用此业务分析服务。
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399298"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432167"
 ---
 # <a name="power-bi-in-your-organization"></a>您的组织中的 Power BI
 
@@ -171,9 +171,6 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
 如果用户注册了 Power BI，但是您不再希望该用户访问 Power BI，则可以删除该用户的 Power BI 许可证。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
@@ -210,7 +207,7 @@ Microsoft Power BI 使用户能够以全新的直观方法可视化数据、共�
     
 4. 切换**Microsoft POWER BI**选项。
     
-5. 选择“保存”****。
+5. 选择“**保存**”。
 
 ::: moniker-end 
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399118"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432375"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -42,7 +42,8 @@ ms.locfileid: "44399118"
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>步骤1：决定要求用户使用 MFA 的方法
 
-有三种方法可以要求用户使用 MFA 进行登录。有关详细信息，请参阅[Microsoft 365 中的 MFA 支持](multi-factor-authentication-microsoft-365.md)。
+> [!NOTE]
+> 您必须是全局管理员才能设置或修改 MFA。 有三种方法可以要求用户使用 MFA 进行登录。有关详细信息，请参阅[Microsoft 365 中的 MFA 支持](multi-factor-authentication-microsoft-365.md)。
 
 - 安全性默认值（针对小型企业版推荐）
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '删除共享邮箱中的许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 1f69cd6f0e572da18abf7253832604ad3ac0ab8f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400024"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432215"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
@@ -51,10 +51,7 @@ ms.locfileid: "44400024"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。 
@@ -82,7 +79,7 @@ ms.locfileid: "44400024"
 
 3. 一个 "**产品许可证**" 页上，将您要删除的许可证的开关设置为 "**关闭**"。
 
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
 
@@ -101,7 +98,7 @@ ms.locfileid: "44400024"
 
 3. 一个 "**产品许可证**" 页上，将您要删除的许可证的开关设置为 "**关闭**"。
 
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
 

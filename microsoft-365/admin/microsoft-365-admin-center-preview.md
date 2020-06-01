@@ -1,5 +1,5 @@
 ---
-title: 关于新的 Microsoft 365 管理中心
+title: 关于 Microsoft 365 管理中心
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 了解新的 Microsoft 365 管理中心。
-ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解 Microsoft 365 管理中心。
+ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399478"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432203"
 ---
-# <a name="about-the-new-microsoft-365-admin-center"></a>关于新的 Microsoft 365 管理中心
+# <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
 ::: moniker range="o365-worldwide"
 
-新的 Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
+Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
 
 Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，可在中访问 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 专家工作区（如安全或设备管理）允许更精确的控制。 有关管理中心如何协同工作的详细信息，请参阅本文后面[的特定类型的 IT 角色和其他工作区（如安全性、设备管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
@@ -37,7 +37,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的通用入口点，
 
 ::: moniker range="o365-21vianet"
 
-新的 Microsoft 365 管理中心（当前处于预览阶段）是为 IT 团队构建的，这是一种管理 Microsoft 365 服务的简化方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
+Microsoft 365 管理中心是为 IT 团队构建的，这是管理 Microsoft 365 服务的简单方法。 管理中心根据您的角色或组织的独特需求，提供了量身定制的体验，提高了日常任务的效率，并提供了可操作的见解，可帮助您做出数据驱动的决策，以为用户提供更好的体验。
 
 Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，可通过登录来访问 [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) 。 此外，专家工作区（如 Azure Active Directory 和 Exchange）允许更精确的控制。 您可以从 Microsoft 365 管理中心的导航窗格中访问专家工作区。
 
@@ -45,14 +45,11 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
 
 ::: moniker range="o365-worldwide"
 
-当 Microsoft 365 管理中心中的新功能可用时，你将能够选择加入新的管理中心并与 Microsoft 共享你的反馈，以便我们可以继续改进管理体验。 如果你选择加入，将对你的用户没有任何影响，你可以随时切换回旧管理中心。
-[新的 Microsoft 365 管理中心的新增功能](whats-new-in-preview.md)。
+当 Microsoft 365 管理中心中的新功能可用时，你将能够选择加入到管理中心并与 Microsoft 共享你的反馈，以便我们可以继续改进管理体验。 如果你选择加入，将对你的用户没有任何影响，你可以随时切换回旧管理中心。
+[Microsoft 365 管理中心的新增功能](whats-new-in-preview.md)。
   
 > [!NOTE]
-> 目标版本管理员将具有对新功能的第一次访问权限。 然后，新功能将向所有管理员推出。 这意味着您可能看不到新管理中心，或者看起来可能与帮助文章中所述的不同。 若要在第一个中查看新功能，请参阅下面的 "加入新管理中心"。 
-    
-## <a name="participate-in-the-new-admin-center"></a>参与新管理中心
-我们将喜欢参加新的 Microsoft 365 管理中心，以便准备更改并向我们提供反馈。
+> 目标版本管理员将具有对新功能的第一次访问权限。 然后，新功能将向所有管理员推出。 这意味着您可能看不到管理中心，或者看起来可能与帮助文章中所述的不同。 若要在第一个中查看新功能，请参阅下面的 "参与管理中心"。 
 
 ### <a name="turn-on-targeted-release"></a>启用目标版本
 
@@ -64,18 +61,9 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
     
 3. 为**所选用户**选择 "每个人" 或 "目标版本"**的目标版本**。 如果为所选用户选择目标版本，请确保将您的管理员帐户（以及您的组织中要加入的任何其他管理员）添加到所选用户列表中。
     
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>切换到新的管理中心并再次切换回来
+### <a name="admin-center-feedback"></a>管理员中心反馈
 
-- 当新的 Microsoft 365 管理中心可供您使用时，您可以选择在主页顶部的 "**尝试新管理中心**" 切换（位于主页顶部）选择 ""。 如果你注销管理中心，我们会记住你的选择，你将重新登录到新的管理中心。 <br/><br/>![新管理中心从旧管理中心切换](../media/admin-center-toggle-off.png) 
-  
-- 通过将切换关闭到 "**关闭**"，从主页切换回旧管理中心。 <br/><br/>![新管理中心切换功能打开](../media/admin-center-toggle-on.png)
-
-在新管理中心内，您可以在每个页面底部的 "**需要帮助"** 按钮旁选择 "**提供反馈**"，从而为 Microsoft 提供有关您的体验的反馈。 请告诉我们你喜欢的内容以及我们能做些什么。 此外，您还可以通过及时了解你的整体印象或新发布的特定体验来获取弹出调查。 您还可以在本文结束时提供反馈，具体方法是选择**此信息是否有用？**
-  
-如果您想要成为新管理中心的早期采用，则需要打开目标版本，然后在新的管理中心可用时，可以切换到该中心以将其签出并提供反馈。
-  
-> [!NOTE]
-> 对新管理中心的访问权限将向所有 Microsoft 365 管理员推出。 组织中的目标版本组中的管理员将首先获取新的管理中心中心。 在目标版本中，不能保证立即看到切换，但将比标准版中的版本快得。 
+在管理中心内，您可以在每个页面底部的 "**需要帮助"** 按钮旁选择 "**提供反馈**"，从而为 Microsoft 提供有关您的体验的反馈。 请告诉我们你喜欢的内容以及我们能做些什么。 此外，您还可以通过及时了解你的整体印象或新发布的特定体验来获取弹出调查。 您还可以在本文结束时提供反馈，具体方法是选择**此信息是否有用？**
   
 ::: moniker-end
 
@@ -99,7 +87,7 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我是否可以在新管理中心中执行我可以在旧管理中心中执行的所有操作？
 
-正确。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
+是。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可用于试用版或购买版？
 

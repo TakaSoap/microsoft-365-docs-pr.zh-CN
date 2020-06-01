@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400084"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432273"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建、编辑或删除安全组
 
@@ -58,9 +58,6 @@ ms.locfileid: "44400084"
 ### <a name="add-members-to-a-security-group"></a>将成员添加到安全组
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
     
 1. 在 "**组**" 页上选择安全组名称，然后在 "**成员**" 选项卡上选择 "**查看所有和管理成员**"。 
     
@@ -95,9 +92,6 @@ ms.locfileid: "44400084"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
 1. 在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
   
 2. 在 "**组**" 页上，选择组的名称。 
@@ -108,7 +102,7 @@ ms.locfileid: "44400084"
 
 ::: moniker range="o365-germany"
 
-1. 在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
+1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>" 中，转到 "**组** \> **组**" 页面。  
   
 2. 在 "**组**" 页上，选择组的名称。 
     
@@ -120,7 +114,7 @@ ms.locfileid: "44400084"
 
 ::: moniker range="o365-21vianet"
 
-1. 在 "管理中心" 中，转到 "**组** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组</a>" 页面。
+1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>" 中，转到 "**组** \> **组**" 页面。
   
 2. 在 "**组**" 页上，选择组的名称。 
     
@@ -161,9 +155,9 @@ ms.locfileid: "44400084"
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>我是否需要使用安全组来保护组织的安全？
 
-否。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
+不正确。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我是否可以向安全组发送电子邮件？
 
-正确。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
+是。 但是，如果您想要使用组进行电子邮件和协作，我们建议您改为[创建 Microsoft 365 组](../create-groups/create-groups.md)。 
   

@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387029"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431697"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -37,19 +37,19 @@ ms.locfileid: "44387029"
   
 以下是需要了解的一些事项：
   
-- 通过任何 Microsoft 365 商业版、教育版或非盈利的计划**免费**为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。 
-    
-- 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。 
-    
-- **如果使用的是本地 Active Directory**，则不适用以上两个点。 相反，您可以对此进行设置，但**需要付费的 AZURE AD Premium 订阅**。 
+- 通过任何 Microsoft 365 商业版、教育版或非盈利的计划**免费**为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。
+
+- 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。
+
+- **如果使用的是本地 Active Directory**，则不适用以上两个点。 相反，您可以对此进行设置，但**需要付费的 AZURE AD Premium 订阅**。
 
 观看有关允许用户重置其自己的密码的简短视频。 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="let-people-reset-their-own-passwords"></a>允许用户重置自己的密码 
+## <a name="let-people-reset-their-own-passwords"></a>允许用户重置自己的密码
 
 以下步骤将为企业中的所有人启用自助密码重置。
   
@@ -70,7 +70,6 @@ ms.locfileid: "44387029"
 
 ::: moniker-end
 
-   
 2. 在 "设置" 页面顶部，选择 "**安全 & 隐私**"。
   
 3. 选择 "**自助服务密码重置**"。

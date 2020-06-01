@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 了解如何从用户帐户中删除许可证。
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399676"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432227"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -45,9 +45,6 @@ ms.locfileid: "44399676"
 
 使用 "**许可证**" 页面取消分配许可证时，将为最高20个用户的特定产品取消分配许可证。 
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
 1. 在管理中心，转到“**账单**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>”页面。
 2. 选择要为其取消分配许可证的产品。
 3. 选择要为其取消分配许可证的用户。
@@ -59,11 +56,8 @@ ms.locfileid: "44399676"
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>从 "活动用户" 页面上的一个用户取消分配许可证
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要为其取消分配许可证的用户所在的行。
 
@@ -105,10 +99,7 @@ ms.locfileid: "44399676"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配许可证的用户的名称旁边的圆圈。
 

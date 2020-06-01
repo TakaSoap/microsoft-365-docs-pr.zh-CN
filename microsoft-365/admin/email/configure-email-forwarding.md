@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置向一个或多个电子邮件帐户转发电子邮件。
-ms.openlocfilehash: 72eca099f0c7e60efe8f616dfe23201cd46975cf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400120"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432297"
 ---
 # <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -53,10 +53,7 @@ ms.locfileid: "44400120"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
  
@@ -80,7 +77,7 @@ ms.locfileid: "44400120"
 
 3. 展开 "**邮件设置**"，然后在 "**电子邮件转发**" 部分，选择 "**编辑**"。
 
-4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“保存”****。
+4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
     **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
     
@@ -98,7 +95,7 @@ ms.locfileid: "44400120"
 
 3. 展开 "**邮件设置**"，然后在 "**电子邮件转发**" 部分，选择 "**编辑**"。
 
-4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“保存”****。
+4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
     **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 了解如何管理消息中心消息以帮助进行更改管理。
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399712"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432261"
 ---
 # <a name="manage-messages-in-message-center"></a>管理邮件中心中的邮件
 
@@ -36,13 +36,6 @@ ms.locfileid: "44399712"
 若要转到 "信息中心"，请转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)"，然后选择 "**运行状况**  >  **消息中心**"。 
 
 选择邮件标题以在阅读窗格中打开它。 每封邮件都包含更改的摘要、更改可能对您有何影响的说明、有关如何为更改准备组织的信息，以及（在大多数情况下），您可以在其中了解详细信息的其他信息链接。 其他信息仍然可用，即使在邮件过期后也是如此。
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>筛选和排序
 

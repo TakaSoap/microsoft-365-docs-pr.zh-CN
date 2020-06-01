@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Microsoft 365 商业版帐户相关联。 '
-ms.openlocfilehash: 778d927d9ab830aea674b9bff72df250e6e430b1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: bab4ace6d497bac8892a29c76b6f2d05c4fa018f
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400180"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432321"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
 
@@ -59,10 +59,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
   
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择 "用户 >**管理电子邮件别名**。 如果没有为用户分配许可证，则不会看到此选项。 
     

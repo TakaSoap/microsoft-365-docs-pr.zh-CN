@@ -21,21 +21,17 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 了解如何在中国由世纪互联运营的 Office 365 中付款后，向世纪发票管理系统提交发票请求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: c920f7497c50e7f961028624f9e3ca954a6108f3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4503226d50a719e169e9112538e7d0dcd172197e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399094"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432399"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的发票
 
-::: moniker range="o365-21vianet"
-
 > [!NOTE]
 > 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
-
-::: moniker-end
 
 你可以在付费后大约三天向世纪发票管理系统提交发票请求。 提交发票请求后，将在两天内进行处理。
   
@@ -46,39 +42,39 @@ ms.locfileid: "44399094"
 有两种应用于发票的方法：
   
 1. 在由世纪互联运营的 Office 365 网站中进行付款后，你将收到订单确认电子邮件，其中包含你的订单号和指向发票管理系统的链接。 您可以使用电子邮件中的链接在<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪互联发票信息管理系统</a>中创建帐户。
-    
+
     或
-    
+
 2. 您可以从<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申请发票。
-    
+
     ![Microsoft 365 管理中心中的 "帐单" 页。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步骤2：在世纪互联运营管理系统中注册发票
 
 > [!NOTE]
-> 您可以使用与 Office 365 帐户相同的电子邮件名称和密码，也可以使用其他内容。 
+> 您可以使用与 Office 365 帐户相同的电子邮件名称和密码，也可以使用其他内容。
   
 1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世纪发票信息管理系统</a>"。
-    
+
 2. 在 "注册" 表单中，输入订单编号、电子邮件地址和密码，然后选择 "**注册**"。
-    
+
     !["世纪 Fapioa 管理系统注册" 页。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
 3. 注册完成后，系统会将激活电子邮件发送到您的电子邮件地址。 打开电子邮件并选择用于激活您的帐户的链接。
-    
+
 ## <a name="step-3-submit-your-bill-for-a-fapiao"></a>步骤3：提交帐单以获取发票
 
 1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">发票管理系统</a>。
-    
+
 2. 选择帐单记录，然后选择 "**应用帐单**"。
-    
+
     > [!NOTE]
-    > 付款系统位于第三方平台上，并需要三天来同步订单和付款记录。 
+    > 付款系统位于第三方平台上，并需要三天来同步订单和付款记录。
   
     ![显示最近订单的发票管理系统页面。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
 3. 选择 "发票" 类型，输入所需的信息，然后选择 "**下一步**"。
-    
+
     ![您在其中选择 "发票" 类型的 "发票请求" 表单。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
@@ -86,9 +82,9 @@ ms.locfileid: "44399094"
     > - 如有必要，可以为具有不同标题的发票应用。 但是，只能对系统中的一个帐单应用一个发票标题。 如果要将发票拆分为不同的金额或职务，请<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">在管理中心提交您的请求</a>。
     > - 下次应用于发票时，系统会自动显示以前的发票信息。
     > - 如果需要购买证书或退款，付款人名称和发票标题必须匹配。
-    
+
 4. 选择发货方式并输入邮寄信息。 您可以选择 "Yunda" 或 "SF" （货运收集）。 您还可以转到 "世纪上海" 分支机构以获取发票。 选择 "**下一步**"。
-    
+
     ![显示邮寄信息的发票请求窗体。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
     **世纪上海分公司地址：**
@@ -98,9 +94,9 @@ ms.locfileid: "44399094"
     **联系人信息：**
 
     Zhu qin qin 021-28986102
-   
+
 5. 验证信息正确无误，然后选择 "**确认**"。
-    
+
     ![发票请求表单的 "确认" 页。](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
 ## <a name="step-4-check-application-progress"></a>步骤4：检查应用程序进度
@@ -128,25 +124,24 @@ ms.locfileid: "44399094"
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何更改我的登录电子邮件地址和密码？
 
 1. 登录到<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">发票管理系统</a>，然后选择 "**更改电子邮件地址**"。
-    
+
     ![用户登录到世纪发票管理系统后的下拉菜单。](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
 2. 如果您忘记了登录密码，可以使用您的登录电子邮件地址重置密码。 发票管理系统将向您的电子邮件地址发送新密码。 您可以使用新密码进行登录。
-    
+
     ![显示如何在世纪发票管理系统中重置密码的连续图像。](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
 3. 如果您忘记了登录电子邮件地址，请联系世纪互联客户服务（86）400-089-0365。
-    
+
 ### <a name="how-do-i-find-my-order-id"></a>如何查找我的订单 ID？
 
 1. 在 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)" 中，转到 "**计费** \> **帐单 & 付款**" 页。
-    
+
 2. 查找所需的发票，选择查看或选择下载 PDF。
 
-  
 ### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>如果我在注册时输入了错误的电子邮件地址，该怎么办？
 
-如果您在注册时输入了错误的电子邮件地址，则不会收到激活电子邮件。 电子邮件中的注册链接将在24小时后自动过期。 您可以返回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">注册页</a>，并使用正确的电子邮件地址重新注册。 
+如果您在注册时输入了错误的电子邮件地址，则不会收到激活电子邮件。 电子邮件中的注册链接将在24小时后自动过期。 您可以返回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">注册页</a>，并使用正确的电子邮件地址重新注册。
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>如果我没有收到激活电子邮件，该怎么办？
 

@@ -20,23 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器在 Microsoft 365 中创建、编辑或删除自定义用户视图。
-ms.openlocfilehash: faea21f0e5142d197cc2b90d6ade99490f9f88e3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387209"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431637"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中创建、编辑或删除自定义用户视图
 
 如果您是 Office 365 的全局管理员或用户管理管理员，则可以创建自定义用户视图以查看特定的用户子集。 这些视图是与 Office 365 附带的标准视图集的补充。 您可以创建、编辑或删除自定义用户视图，您创建的自定义视图可供所有管理员使用。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-::: moniker-end
   
 ## <a name="custom-user-views-in-the-admin-center"></a>管理员中心内的自定义用户视图
 

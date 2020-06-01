@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 了解如何删除用户帐户。 决定如何处理用户的电子邮件、OneDrive 内容以及是否保留产品许可证或停止付款。
-ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 81243286b70985082f8b671d7e021735a76cffc4
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387185"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431673"
 ---
 # <a name="delete-a-user-from-your-organization"></a>从组织删除用户
   
@@ -67,13 +67,6 @@ ms.locfileid: "44387185"
 |Active Directory  <br/> |如果你的公司使用与 Azure AD 同步的 **Active Directory** ，则需要从 Active Directory 中删除用户帐户。 无法通过 Office 365 删除帐户。 有关说明，请参阅[删除用户帐户](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
    
 ### <a name="get-started"></a>入门
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-::: moniker-end
 
 由于引导式体验会逐步完成删除用户的步骤，下面介绍了如何入门。
 

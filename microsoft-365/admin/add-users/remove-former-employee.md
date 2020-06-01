@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387041"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431649"
 ---
 # <a name="remove-a-former-employee"></a>删除前员工
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387041"
 ## <a name="sign-out-now"></a>立即注销！
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 观看有关删除员工的简短视频。 <br><br>
 
@@ -156,10 +153,7 @@ ms.locfileid: "44387041"
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工的姓名，然后选择 "**邮件**" 选项卡。
 
@@ -167,7 +161,7 @@ ms.locfileid: "44387041"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“保存”****。 
+5. 选择“**保存**”。 
     
 6. 注意，切勿删除以前员工的帐户。
  
@@ -183,7 +177,7 @@ ms.locfileid: "44387041"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“保存”****。 
+5. 选择“**保存**”。 
     
 6. 注意，切勿删除以前员工的帐户。
 
@@ -199,7 +193,7 @@ ms.locfileid: "44387041"
 
 4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
-5. 选择“保存”****。 
+5. 选择“**保存**”。 
     
 6. 注意，切勿删除以前员工的帐户。
 
@@ -221,7 +215,7 @@ ms.locfileid: "44387041"
     
 5. 在 "**移动设备详细信息**" 页的 "**移动设备**" 下，选择移动设备，选择 "**擦除数据** ![ 擦除设备 ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) "，然后选择 "**阻止**"。 
     
-6. 选择“保存”****。 
+6. 选择“**保存**”。 
     
     **提示** ：请确保从本地 BlackBerry 企业服务删除或禁用用户。还应禁用该用户的所有 BlackBerry 设备。有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
     
@@ -234,10 +228,7 @@ ms.locfileid: "44387041"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工的姓名，在用户的名称下，选择 "**阻止此用户**" 的符号。
 
@@ -288,10 +279,7 @@ ms.locfileid: "44387041"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要阻止的员工的名称，然后选择 "**许可证和应用**" 选项卡。
 
@@ -365,10 +353,7 @@ ms.locfileid: "44387041"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要删除的雇员的姓名。
 

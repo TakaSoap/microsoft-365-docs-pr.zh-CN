@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理员管理组织的电子邮件和邮箱。 例如，他们可以恢复用户邮箱中的已删除邮件。 '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387415"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432131"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
@@ -56,9 +56,10 @@ ms.locfileid: "44387415"
   
  例如，Exchange 管理员可能会将某人分配到 "发现管理" 角色组，以便他们可以对满足特定条件的数据执行邮箱搜索。 若要了解详细信息，请参阅 Exchange Online 和[管理角色组](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)[中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
   
-## <a name="learn-about-other-admin-roles"></a>了解其他管理员角色
-    
+## <a name="learn-about-other-admin-role"></a>了解其他管理员角色
+
+- [关于 Microsoft 365 管理员角色](about-admin-roles.md)
+
 - [关于 SharePoint Online 管理员角色](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [关于 Skype for Business 管理员角色](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

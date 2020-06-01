@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从 Microsoft 365 中删除旧域，并将用户和组移动到另一个域。
-ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399892"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432387"
 ---
 # <a name="remove-a-domain"></a>删除域
 
@@ -47,9 +47,6 @@ ms.locfileid: "44399892"
 #### <a name="move-users"></a>移动用户
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
@@ -100,9 +97,6 @@ ms.locfileid: "44399892"
 #### <a name="move-yourself"></a>移动您自己
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
 

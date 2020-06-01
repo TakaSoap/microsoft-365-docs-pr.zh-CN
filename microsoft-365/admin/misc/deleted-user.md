@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: 了解如何删除或还原用户的 Microsoft 365 帐户。
-ms.openlocfilehash: 3b7e71aa11c153372c9b38c54e45397c5f840c2e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399382"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432179"
 ---
 # <a name="quick-help-deleted-user"></a>快速帮助：已删除的用户
 
@@ -35,11 +35,8 @@ ms.locfileid: "44399382"
 ## <a name="delete-a-user"></a>删除用户
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
   
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择一个用户，然后在用户列表的上方选择 "**更多选项**（**...**）"，然后选择 "**删除用户**"。
   

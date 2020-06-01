@@ -23,21 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387197"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431709"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
-
-::: moniker-end
 
 
 当员工离开组织时，您可能希望访问其数据（文档和电子邮件），并对其进行查看、备份或将其提供给新员工。
@@ -51,10 +44,7 @@ ms.locfileid: "44387197"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
     
 2. 选择一个用户。
 
@@ -132,7 +122,7 @@ ms.locfileid: "44387197"
 
 2. 在左窗格中，选择 "**管理中心**" " \> **SharePoint**"。 （你可能需要选择“**全部显示**”以查看管理中心列表）。
 
-3. 如果看到经典 SharePoint 管理中心，请选择页面顶部的“**立即打开**”，打开新的 SharePoint 管理中心。
+3. 如果出现经典 SharePoint 管理中心，请选择 "立即在页面顶部**打开它**" 以打开 SharePoint 管理中心。
 
 4. 在左窗格中，选择 "**更多功能**"。
 

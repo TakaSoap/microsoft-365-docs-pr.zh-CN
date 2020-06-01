@@ -25,21 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: 了解如何将用户添加到 Microsoft 365，一次向一个或多个用户添加一个 CSV 文件。
-ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387257"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432119"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>单独或批量添加用户
 
 团队中的人员每个人都需要用户帐户，才能登录并访问[Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)。 添加用户帐户最简单的方法是在 Microsoft 365 管理中心中一次添加一个用户帐户。 执行此步骤后，你的用户将拥有 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
 

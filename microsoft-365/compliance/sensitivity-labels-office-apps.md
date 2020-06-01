@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222501"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432591"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -168,6 +168,34 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>支持由敏感度标签保护的 SharePoint 和 OneDrive 文件
 
 若要对 SharePoint 或 OneDrive 中的文档使用 office 内置标签客户端与 Office 网页版，请确保已[在 sharepoint 和 onedrive 中为 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+
+## <a name="support-for-external-users-and-labeled-content"></a>支持外部用户和带标签的内容
+
+当您标记文档或电子邮件时，该标签将存储为包括租户和标签 GUID 的元数据。 当支持敏感度标签的 Office 应用打开带标签的文档或电子邮件时，将读取此元数据，并且只有当该用户属于同一租户时，该标签才会显示在其应用中。 例如，对于 Word、PowerPoint 和 Excel 的内置标签，标签名称将显示在状态栏上。 
+
+这意味着，如果您与使用不同标签名称的其他组织共享文档，则每个组织都可以应用并查看其自己的标签应用于该文档的标签。 但是，在您的组织外部的用户可以看到已应用标签中的以下元素：
+
+- 内容标记。 当标签应用页眉、页脚或水印时，它们将直接添加到内容中并保持可见，直到有人修改或删除它们。
+
+- 来自应用了加密的标签的基础保护模板的名称和说明。 此信息显示在文档顶部的消息栏中，以提供有关有权打开文档的用户的信息，以及该文档的使用权限。
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>与外部用户共享加密文档
+
+除了限制对自己组织中的用户的访问之外，还可以将访问权限扩展到在 Azure Active Directory 中具有帐户的任何其他用户。 在用户成功通过身份验证后，所有 Office 应用和其他智能型[应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)都可以打开加密的文档。 
+
+如果外部用户在 Azure Active Directory 中没有帐户，则可以在租户中为其创建一个来宾帐户。 对于其电子邮件地址，您可以指定他们已使用的任何电子邮件地址。 例如，它们的 Gmail 地址。 当您在[sharepoint 和 onedrive 中为 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)时，也可以使用此来宾帐户访问 Sharepoint 或 onedrive 中的共享文档。
+
+外部用户也可以在使用 Windows 上的 Microsoft 365 应用时，使用和创建加密文档的 Microsoft 帐户。 MacOS、Android 或 iOS 尚不支持此功能。 例如，有人与一个加密的文档共享一个加密的文档，而加密设置则指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在使用此帐户登录后，用户可以打开文档并对其进行编辑，具体取决于为该用户指定的使用限制。 有关此方案的演练示例，请参阅[打开和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+
+> [!NOTE]
+> Microsoft 帐户的电子邮件地址必须与指定用于限制加密设置访问权限的电子邮件地址相匹配。
+
+当使用 Microsoft 帐户的用户以这种方式打开加密文档时，如果具有相同名称的来宾帐户尚不存在，则会自动为该租户创建来宾帐户。 如果来宾帐户存在，则它可用于在 SharePoint 和 OneDrive 中使用浏览器（在 web 上）打开文档，以及从 Windows 桌面应用中打开加密的文档。 
+
+但是，由于复制延迟，自动来宾帐户不会立即创建。 如果您将个人电子邮件地址指定为标签加密设置的一部分，我们建议您在 Azure Active Directory 中创建相应的来宾帐户。 然后，让这些用户知道他们必须使用此帐户从您的组织中打开加密的文档。
+
+> [!TIP]
+> 由于您无法确定外部用户将使用受支持的 Office 客户端应用程序，因此，在创建来宾帐户后共享 SharePoint 和 OneDrive 中的链接是更可靠的方法来支持与外部用户进行安全协作。
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 应用程序何时应用内容标记和加密
 
