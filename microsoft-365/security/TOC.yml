@@ -283,7 +283,7 @@
                   items:
                     - name: 配置出站垃圾邮件筛选
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: 出站邮件的高风险传递池
+                    - name: 出站传递池
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: 从“受限的用户”门户中删除被阻止的用户
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
