@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何设置 Microsoft 365 活动的条件访问策略，以增加额外的安全性。
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403010"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470639"
 ---
 # <a name="set-up-conditional-access-policies"></a>设置条件访问策略
+
+本文适用于 Microsoft 365 商业高级版。
 
 [条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略添加了实实在在的额外安全性。 Microsoft 提供一组针对所有客户推荐的基准条件访问策略。 基准策略是一组预定义策略，可帮助组织抵御多种常见攻击。 这些常见攻击可能包括密码喷涂、重放和网络钓鱼。
 

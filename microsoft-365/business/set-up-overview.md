@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解 Microsoft 365 商业高级版的安装步骤、订阅、添加域和用户、设置安全策略等。
-ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402970"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470517"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -48,7 +48,7 @@ ms.locfileid: "44402970"
 
    - **[添加你的域](set-up.md#add-your-domain-to-personalize-sign-in)**（如果你在[注册](sign-up.md)过程中购买了你的域，则此步骤已完成。）
 
-    - **添加用户**。 可以通过以下三种方式之一添加用户：
+   - **添加用户**。 可以通过以下三种方式之一添加用户：
         - 在[向导](set-up.md#add-users-in-the-wizard)中。
         - 如果你有本地 Active directory，请使用目录同步来[使用 AZURE AD Connect 添加用户](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
         - 您还可以在随后的管理中心[添加用户](add-users-m365b.md)。

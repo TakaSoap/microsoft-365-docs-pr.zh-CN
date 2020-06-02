@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: 了解 Microsoft 365 for business 中提供的用于保护 Windows 10 设备的默认设置和其他设置。
-ms.openlocfilehash: 0403ea2c30221dd5693b7f3e9b4921ad175399a1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af3f58ba13a1011e65be45337c63ff714bfdaf0c
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402798"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470839"
 ---
 # <a name="set-device-protection-settings-for-windows-10-pcs"></a>设置 Windows 10 电脑的设备保护设置
+
+本文适用于 Microsoft 365 商业高级版。
 
 ## <a name="secure-windows-10-devices"></a>保护 Windows 10 设备
 

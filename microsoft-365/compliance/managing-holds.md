@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在保管人及其数据源中放置保留，以保留适用于高级电子数据展示事例的相关内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034120"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477158"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -40,7 +40,7 @@ ms.locfileid: "44034120"
    
 2. 转到 "**保管人**" 选项卡，在你的事例中添加保管人。 若要了解如何在高级电子数据展示事例中添加和将保管人置于保留状态，请参阅[将保管人添加到高级电子数据展示事例](add-custodians-to-case.md)。 如果你已添加了保管人并将其置于保留状态，请转到步骤3。
    
-3. 转到 "**保留**" 选项卡，然后单击 " **CustodianHold\<HoldId>**"。
+3. 转到 "**保留**" 选项卡，然后单击 " **CustodianHold \<HoldId> **"。
    
 4. 在弹出页面中，可以看到策略的 "保留统计信息"。 您还可以执行将查询应用于基于保管人的保留等操作。 有关创建保留查询和使用条件的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
  
@@ -80,7 +80,7 @@ ms.locfileid: "44034120"
      有关将 Microsoft 365 组和 Microsoft 团队置于保留状态的提示，请参阅**FAQ**部分。
 
     > [!NOTE]
-    > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+    > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
 
      c. **Exchange 公用文件夹**-将切换开关移动到 "所有位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 请注意，不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
 

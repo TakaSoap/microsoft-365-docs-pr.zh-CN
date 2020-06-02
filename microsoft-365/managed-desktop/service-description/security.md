@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327722"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470485"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全性
 
@@ -27,7 +27,6 @@ Microsoft 托管桌面使用几种 Microsoft 技术来帮助保护受管理的�
 
 有关 Microsoft 托管桌面使用的数据存储、使用情况和安全做法的信息，请下载我们的白皮书 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
-有关 Microsoft 托管桌面的安全操作团队以及它们如何为你的设备提供安全性的详细信息，请参阅视频[Microsoft 托管桌面安全操作](https://www.microsoft.com/videoplayer/embed/RE4q6nP)。 
 
 ## <a name="device-security"></a>设备安全性
 

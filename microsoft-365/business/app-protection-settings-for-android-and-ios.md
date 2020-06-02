@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: 了解如何创建、编辑或删除应用管理策略，以及如何保护 Android 或 iOS 设备上的工作文件。
-ms.openlocfilehash: 01c50e6660d8d8640a2bff2794ee0ea8a69188c8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67e7aaec5ff5a28f1e2d489913246c1c15c2f7b6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401046"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471191"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>设置 Android 或 iOS 设备的应用保护设置
 
-![指向的标题 https://aka.ms/aboutM365preview 。](../media/m365admincenterchanging.png)
+本文适用于 Microsoft 365 商业高级版。
 
 ## <a name="create-an-app-management-policy"></a>创建应用管理策略
 

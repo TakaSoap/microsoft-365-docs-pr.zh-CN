@@ -22,17 +22,19 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 了解在安装 Microsoft 365 for business 后如何保护 Windows 10 电脑。
-ms.openlocfilehash: 88fb149e521848d6a7daa9498cd7d6240169c9fa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何在设置 Microsoft 365 商业高级版后保护 Windows 10 电脑。
+ms.openlocfilehash: 5d5dda9c1faa7d50063c9b2b05bd938c67b54a76
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402746"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470607"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
-在[设置](set-up.md)了 Microsoft 365 for business 之后，可以保护贵组织中的 Windows 10 计算机免受盗窃，以及病毒和恶意软件等恶意威胁。
+本文适用于 Microsoft 365 商业高级版。
+
+[设置](set-up.md)Microsoft 365 商业高级版后，可以保护贵组织中的 Windows 10 计算机失窃，并在病毒和恶意软件等恶意威胁时对其进行保护。
 观看此视频，了解有关如何设置策略以保护 Windows 10 计算机安全的概述。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 

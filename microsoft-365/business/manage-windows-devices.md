@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 了解如何启用 Microsoft 365 以仅在几个步骤中保护本地的 Active Directory 加入 Windows 10 设备。
-ms.openlocfilehash: e7f83e620fbb43a478dba98f78d5f471a541aea7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7bfe5da8701a17712fa249eac99a22b8d5a1b2d1
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403050"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471039"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>启用要由 Microsoft 365 for business 管理的加入域的 Windows 10 设备
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>启用要由 Microsoft 365 商业高级版管理的加入域的 Windows 10 设备
 
-如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 for business 设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
+如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 商业高级版设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。
 若要设置此保护，可以实现**混合 AZURE AD 加入的设备**。 这些设备将加入本地 Active Directory 和 Azure Active Directory。
 
 本视频介绍了有关如何针对最常见方案对此进行设置的步骤，在下面的步骤中也将对此进行详细介绍。

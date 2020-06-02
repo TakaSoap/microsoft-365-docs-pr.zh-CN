@@ -22,14 +22,16 @@ search.appverid:
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
 description: 了解使用 Microsoft 365 for business 和保护用户设备上的工作数据来设置组织的要求。
-ms.openlocfilehash: e170f7ca4fb8373c9070bcbfc1783138c20422c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1bfa2b2d2ceba68d39da9c65560e67a6602e6cfa
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401334"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470959"
 ---
 # <a name="prerequisites-for-protecting-data-on-devices-with-microsoft-365-for-business"></a>使用 Microsoft 365 for business 保护设备上的数据的先决条件
+
+本文适用于 Microsoft 365 商业高级版。
 
 使用 Microsoft 365 for business 设置组织的第一步是确保您可以满足先决条件。
   

@@ -27,16 +27,18 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: 了解允许您管理用户如何从移动设备访问 Office 应用程序和工作文件的保护策略。
-ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403070"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471059"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理用户访问移动设备上的 Office 文档的方式
 
- 用于控制用户如何在移动设备上访问 Office 文件的策略默认设置为" **关闭**"。 建议您在安装过程中接受默认值，以创建适用于所有用户的 Android、iOS 和 Windows 10 应用程序策略。 在设置完成后，可以创建多个策略。 
+本文适用于 Microsoft 365 商业高级版。
+
+用于控制用户如何在移动设备上访问 Office 文件的策略默认设置为" **关闭**"。 建议您在安装过程中接受默认值，以创建适用于所有用户的 Android、iOS 和 Windows 10 应用程序策略。 在设置完成后，可以创建多个策略。 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>用于控制用户如何在移动设备上访问 Office 文件的设置
 

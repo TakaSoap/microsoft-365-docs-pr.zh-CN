@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: da5fab99cf00a65986fb5e555cc19e432fe0fe8d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9615ecc9469992d3e5a7479f4799c610db11fb41
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401106"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471243"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>从 Microsoft 365 商业高级版中的 Azure AD 加入设备访问本地资源
+
+本文适用于 Microsoft 365 商业高级版。
 
 任何已加入 Azure Active Directory 的 Windows 10 设备都有权访问所有基于云的资源（如 Microsoft 365 应用），并且可以通过 Microsoft 365 商业高级版进行保护。 您还可以允许访问本地资源，如业务线（LOB）应用程序、文件共享和打印机。 若要允许访问，请使用[AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect)将本地 Active Directory 与 Azure active directory 同步。 
 
