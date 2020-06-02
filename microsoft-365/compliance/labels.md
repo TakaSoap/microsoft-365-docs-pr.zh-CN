@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留标签如何对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: fa24bacedf0e8bd3707fa9a6fd87fff81041e2e8
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411039"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432239"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留标签
 
@@ -362,4 +362,6 @@ Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留�
     
 - [信息管理策略](intro-to-info-mgmt-policies.md)（仅限删除） 
     
+## <a name="next-steps"></a>后续步骤
 
+如果已准备好创建和发布保留标签，请参阅[创建、发布和自动应用保留标签](create-retention-labels.md)。

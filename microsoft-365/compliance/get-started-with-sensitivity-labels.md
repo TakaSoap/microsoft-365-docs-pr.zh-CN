@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: a69b71ec364eae4258960c3b33876f0df9530611
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 88b9ad0ea97ff035491f6e2d2ec2ec57b2b8d796
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411019"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432611"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -78,7 +78,7 @@ ms.locfileid: "44411019"
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)|
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|在 Power BI 中应用和查看敏感性标签，并保护下载的报表|[Power BI （预览版）中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|在 Power BI 中应用和查看敏感性标签，并保护下载的报表|[Power BI 中的数据保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |监视和了解在我的组织中如何使用灵敏度标签|[了解你的数据 - 数据分类概述](data-classification-overview.md) <br /><br /> [使用标签分析查看标签使用情况](label-analytics.md)|
 
 

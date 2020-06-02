@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略主动决定是保留内容还是删除内容，或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: b91b4be724c3d664cdd237fc01596372a2a6bdcc
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412811"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432333"
 ---
 # <a name="learn-about-retention-policies"></a>了解保留策略
 
@@ -178,8 +178,12 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 ## <a name="related-information"></a>相关信息
 
-- [创建和配置保留策略](create-retention-policies.md)
 - [了解保留标签](labels.md)
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Microsoft Teams 的限制和规范](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [符合 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>后续步骤
+
+如果已准备好创建保留策略，请参阅[创建和配置保留策略](create-retention-policies.md)。
+
