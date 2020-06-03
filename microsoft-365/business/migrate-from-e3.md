@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402234"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515895"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
@@ -78,8 +78,9 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 - 订阅配置，如 DNS 记录和域名。
 - 用户和组帐户以及身份验证设置，例如多重因素身份验证或条件访问策略。
 - 生产率服务配置及其数据，如团队、Exchange Online 邮箱、SharePoint Online 网站、OneDrive for Business 文件夹和 OneNote 笔记本。
+- Office 应用程序将自动缩放。 Office 365 新式许可将每72小时检查一次用户的许可证分配，并将 Office 应用程序转换为与用户订阅相匹配的版本。
 
-### <a name="windows-10"></a>Windows 10
+### <a name="windows-10"></a>Windows 10
 
 如果 windows Pro Creator 更新中还没有你的 Windows，请[将其升级到 Windows Pro 创意者更新](upgrade-to-windows-pro-creators-update.md)。
 

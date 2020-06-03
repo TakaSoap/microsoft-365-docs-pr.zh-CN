@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 EmailEvents 表
-description: 了解在高级搜寻架构的 EmailEvents 表中与 Microsoft 电子邮件关联的事件
+description: 了解在高级搜寻架构的 EmailEvents 表中与 Microsoft 365 电子邮件相关联的事件
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailEvents、网络邮件 id、发件人、收件人、附件 id、附件名称、恶意软件结论、仿冒判定、附件计数、链接计数、url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633527"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515851"
 ---
 # <a name="emailevents"></a>EmailEvents
 

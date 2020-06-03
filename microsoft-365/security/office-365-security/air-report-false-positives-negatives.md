@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262404"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520154"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何报告自动调查和响应功能中的误报/否定
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262404"
 [Office 365 中的自动化调查和响应（空气）功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否未命中或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可以：
 - [向 Microsoft 报告误报/负数，](#report-a-false-positivenegative-to-microsoft-for-analysis)或者
 - [调整通知](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如果需要）;并 
-- [撤消对设备所执行的修正操作](#undo-a-remediation-action)。 
+- [撤消所执行的修正操作](#undo-a-remediation-action)。 
 
 将本文用作指南。 
 
@@ -61,7 +61,7 @@ ms.locfileid: "44262404"
 
 通过威胁浏览器，安全操作团队可以找到受操作影响的电子邮件，并可能撤消该操作。
 
-|应用场景  |撤消选项  |了解更多 |
+|应用场景  |撤消选项  |了解详细信息 |
 |---------|---------|---------|
 |将电子邮件路由到用户的 "垃圾邮件" 文件夹     |-将邮件移动到用户的 "已删除邮件" 文件夹<br/>-将邮件移动到用户的收件箱 <br/>-删除邮件          |[查找并调查 Office 365 中提供的恶意电子邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
 |已隔离电子邮件或文件     |-释放电子邮件或文件 <br/>-删除电子邮件或文件         |[以 Office 365 中的管理员身份管理隔离的邮件和文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
@@ -71,7 +71,7 @@ ms.locfileid: "44262404"
 
 在操作中心中，你可以看到已执行的更正操作，并且可能会撤消该操作。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规性中心。
+1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规中心。
 
 2. 转到**威胁管理**  >  **调查**。
 

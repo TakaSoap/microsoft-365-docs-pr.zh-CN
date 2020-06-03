@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352506"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498659"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "44352506"
 管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可以使用 Exchange Online PowerShell 在邮箱（安全发件人列表、安全收件人列表和阻止发件人列表）上配置安全列表集合中的条目。
 
 > [!NOTE]
-> 来自用户添加到其自己的安全发件人列表中的发件人的邮件将跳过 EOP 筛选（SCL 为-1）。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请按照本主题后面的[关于 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)一节中所述的那样使用组策略。
+> 来自用户添加到其自己的安全发件人列表中的发件人的邮件将跳过连接筛选作为 EOP 的一部分（SCL 为-1）。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请按照本主题后面的[关于 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)一节中所述的那样使用组策略。 策略筛选、内容筛选和高级威胁防护（ATP）检查仍将应用于邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -89,7 +89,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要验证是否已成功启用或禁用邮箱的垃圾邮件规则，请执行以下任一操作：
 
-- 将_ \< MailboxIdentity \> _替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证**Enabled**属性值：
+- _\<MailboxIdentity\>_ 将替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证**Enabled**属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要验证是否已成功配置邮箱的安全列表集合，请执行以下任一操作：
 
-- 将_ \< MailboxIdentity \> _替换为邮箱的名称、别名或电子邮件地址，并运行以下命令来验证属性值：
+- _\<MailboxIdentity\>_ 将替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

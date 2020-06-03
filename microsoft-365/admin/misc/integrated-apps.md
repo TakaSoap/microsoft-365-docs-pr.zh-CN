@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 了解用户对应用程序的同意，以及如何将其打开以允许第三方应用访问用户的 Microsoft 365 信息。
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477168"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498313"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理用户同意 Microsoft 365 中的应用程序
 
@@ -42,7 +42,7 @@ ms.locfileid: "44477168"
 
 1. 在管理中心中，转到 "**设置** \> **组织设置**  >  [服务](https://go.microsoft.com/fwlink/p/?linkid=2053743)" 页面，然后选择 "**用户同意应用**"。
 
-2. 在 "**用户同意应用程序**" 页上，选择要启用或禁用集成应用的选项。
+2. 在 "**用户同意应用程序**" 页上，选择打开或关闭用户同意的选项。
 
 ## <a name="more-info"></a>详细信息
 <a name="__toc379982114"> </a>

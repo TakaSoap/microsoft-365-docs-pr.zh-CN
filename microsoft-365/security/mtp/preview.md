@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503979"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515863"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -48,7 +48,7 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 2. 选择 " **Microsoft 威胁防护**"。
 
 
-3. 选择 "**预览功能** > **" "打开预览功能"**。 
+3. 选择 "**预览功能**  >  **" "打开预览功能"**。 
 
 3. 选择“**保存**”。
 
@@ -57,6 +57,8 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 ## <a name="preview-features"></a>预览功能
 目前，预览中提供了以下功能和增强功能：
 
-- **[自定义检测](custom-detections-overview.md)**-使用高级搜索查询创建规则，以定期搜索入侵活动和其他感兴趣的项目。 与查询触发警报和指定响应操作的匹配项。
-
 - **[标识和应用程序表](advanced-hunting-schema-tables.md)**—使用高级搜寻架构中的[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表深入了解身份验证事件、Active Directory 查询和与应用程序相关的活动。
+
+- **[EmailPostDeliveryEvents 表](advanced-hunting-emailpostdeliveryevents-table.md)**—使用此表可创建[高级搜寻](advanced-hunting-overview.md)查询，以检查在将电子邮件传递到收件人邮箱后对电子邮件所执行的操作。
+
+- **[FileProfile （）函数](advanced-hunting-fileprofile-function.md)**—在你的[高级搜寻](advanced-hunting-overview.md)查询中使用，以合并全面的文件信息。

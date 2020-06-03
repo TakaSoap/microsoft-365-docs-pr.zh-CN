@@ -14,26 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解对 Microsoft 365 中的高级电子数据展示解决方案的有效限制。 这包括使用搜索工具收集事例数据时的大小写限制、索引限制和搜索限制。
-ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224659"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520144"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 
 本文介绍了 Microsoft 365 中的高级电子数据展示解决方案中的限制。
 
-## <a name="case-limits"></a>大小写限制
+## <a name="case-and-review-set-limits"></a>案例和审阅设置限制
 
-下表列出了高级电子数据展示中事例的限制。
+下表列出了高级电子数据展示中案例和审阅集的限制。
 
 |**限制说明**|**限制**|
 |:-----|:-----|
 |可添加到案例中的文档的总数（案例中的所有审阅集）。  <br/> |100 万  <br/> |
-|每个加载集的总文件大小。  <br/> |100 GB  <br/> |
-|每日加载到事例中的总数据量。<br/> |2 TB <br/> |
+|每个加载集的总文件大小。 这包括将非 Office 365 加载到评审集中。  <br/> |100 GB  <br/> |
+|每天在组织中的所有审阅集中加载的数据总量。<br/> |2 TB <br/> |
 |每个事例的最大加载集数。  <br/> |15  <br/> |
 |每个案例的最大审阅集数。  <br/> |20 <br/> |
 |||
@@ -60,7 +60,7 @@ ms.locfileid: "44224659"
 |可以同时运行的最大搜索数。  <br/> |无限制  <br/> | 
 |一个用户可以同时启动的最大搜索数。  <br/> |10    <br/> | 
 |搜索查询的最大字符数（包括运算符和条件）。  <br/> |**邮箱**：10000<br/>**网站**：4000搜索所有网站或2000时搜索20个网站<sup>2</sup> <br/> |
-|前缀通配符的最小字母字符数;例如**一个或 \* 一个** **set \* **。 <br/> |3   <br/> |  
+|前缀通配符的最小字母字符数;例如**一个或 \* 一个** **set \* **。 <br/> |第三章  <br/> |  
 |使用前缀通配符搜索精确短语或使用前缀通配符和**接近**的布尔运算符时返回的最大变体。  <br/> |10000 <sup>3</sup> <br/> |
 |在搜索的预览页面上显示的每个用户邮箱的最大项目数。 显示最新项目。   <br/> |100  <br/> |
 |用于搜索的预览页面上显示的所有邮箱中的最大项目数。  <br/> |1,000  <br/> |

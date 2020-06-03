@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292470"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515759"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -95,14 +95,17 @@ ms.locfileid: "44292470"
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>配置数据丢失防护（DLP）策略
 
-内幕风险管理支持使用 DLP 策略来帮助将敏感信息有意或无意暴露给不需要的团体。 使用*数据泄露*模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。
+内幕风险管理支持使用 DLP 策略来帮助将敏感信息的有意或无意暴露给不需要的高严重性级别 DLP 警报。 使用**数据泄露**模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。
 
-此策略可帮助推动针对敏感信息的高严重性 DLP 警报的内幕风险管理指标，这是在组织中配置完全风险管理覆盖范围的重要部分。 如果您为您的组织配置了多个 DLP 策略，则需要为每个 DLP 策略分配一个内幕风险管理策略。
-
-有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，请返回到这些配置步骤。
+此策略可帮助推动针对敏感信息的高严重性 DLP 警报的内幕风险管理指标，这是在组织中配置完全风险管理覆盖范围的重要部分。 有关内幕风险管理和 DLP 策略集成和规划注意事项的详细信息，请参阅[内幕风险管理策略](insider-risk-management-policies.md#data-leaks)。
 
 >[!IMPORTANT]
->请确保为用于此模板的内部人员风险管理的 DLP 策略中的 "**事件报告**" 设置配置了*高*严重性级别警报。 内幕风险管理警报不会从具有 "**事件报告**" 字段设置为 "*低*" 或 "*中*" 的 DLP 策略生成。
+>请确保已完成以下操作：
+>
+>- 您了解并正确配置了 DLP 和有问必答风险管理策略中的范围内用户，以生成预期的策略覆盖范围。
+>- 请确保为用于此模板的内部人员风险管理的 DLP 策略中的 "**事件报告**" 设置配置了*高*严重性级别警报。 内幕风险管理警报不会从具有 "**事件报告**" 字段设置为 "*低*" 或 "*中*" 的 DLP 策略生成。
+
+有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，请返回到这些配置步骤。
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步骤4（必需）：配置内幕风险设置
 

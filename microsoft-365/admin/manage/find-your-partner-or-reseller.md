@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取你过去使用过的合作伙伴的联系信息。 '
-ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399760"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515791"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
@@ -47,7 +47,7 @@ ms.locfileid: "44399760"
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>查找你过去合作的合作伙伴的联系信息
 
 > [!NOTE]
-> 在某些情况下，您可以在 Microsoft 365 管理中心为以前使用过的合作伙伴 findinformation。 请注意，这些信息可能已经过时。 我们建议你联系组织中负责采购的人员或部门，了解你应与哪位合作伙伴合作。 
+> 在某些情况下，您可以在 Microsoft 365 管理中心为过去使用过的合作伙伴查找信息。 请注意，这些信息可能已经过时。 我们建议你联系组织中负责采购的人员或部门，了解你应与哪位合作伙伴合作。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在管理中心获取合作伙伴信息
 
