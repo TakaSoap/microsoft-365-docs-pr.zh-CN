@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 681fb02e504c590610a0ed040756fd418f4221fd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
+ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352259"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44474533"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -47,7 +47,7 @@ ms.locfileid: "44352259"
 
 你必须是全局管理员、合规性管理员或 Exchange Online 管理员才能执行本文中描述的任务。 若要了解有关 DLP 权限的详细信息，请参阅 [权限](data-loss-prevention-policies.md#permissions)。
 
-当正式发布时，基于 EDM 的分类将包含在这些订阅中
+这些订阅中包含基于 EDM 的分类
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -447,11 +447,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用
 
-DLP for Exchange Online（电子邮件）、OneDrive for Business（文件）、Microsoft Teams（对话）和 Microsoft Cloud App Security DLP 策略将支持 EDM 敏感信息类型。
+这些位置支持 EDM 敏感信息类型：
+
+- 针对 Exchange Online 的 DLP（电子邮件）
+- OneDrive for Business（文件）
+- Microsoft Teams（对话）
+- 针对 SharePoint 的 DLP（文件）
+- Microsoft Cloud App Security DLP 策略
 
 以下方案的 EDM 敏感信息类型目前正在开发中，尚不可用：
 
-- DLP for SharePoint（文件）
 - 灵敏度标签和保留标签的自动分类
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 创建 DLP 策略

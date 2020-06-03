@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 795803b79a60c7fb8ce6154c61730d10baabdce1
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419078"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470659"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -191,7 +191,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     - 要在源视图中查看文件内容（电子邮件不支持），如果你不是全局管理员，则必须具有**内容浏览器内容查看器**角色。如果你没有此权限，则从“**匹配项**”选项卡中选择一个项时，将看不到“预览器”窗格。
 
 - 若要自动标记 SharePoint 和 OneDrive 中的文件：
-    - 你已[启用 SharePoint 和 OneDrive（公共预览版）中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+    - 你已[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
     - 当自动标记策略运行时，该文件不得由其他进程或用户打开。
 
 - 如果计划使用[自定义敏感信息类型](custom-sensitive-info-types.md)，而不是内置敏感度类型： 

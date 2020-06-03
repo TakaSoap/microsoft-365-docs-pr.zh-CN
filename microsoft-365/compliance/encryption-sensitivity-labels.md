@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 创建敏感度标签时，可以限制对将要应用标签的内容的访问。敏感度标签可以使用加密来保护内容。
+description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166033"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470669"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -38,7 +38,7 @@ ms.locfileid: "44166033"
 
 - 只能由标签的加密设置授权的用户解密。
 - 无论其所在位置（组织内部或外部）如何，仍保持加密状态，即使该文件被重命名也是如此。
-- 静态加密（例如，在 OneDrive 帐户中）和传输加密（例如，发送的电子邮件）。
+- 静态加密（例如，在 OneDrive 帐户中）和传输加密（例如，正在通过 Internet 传输的电子邮件）。
 
 最后，作为管理员，你在配置敏感度标签来应用加密时可选择执行下述任一操作：
 
@@ -359,7 +359,7 @@ ms.locfileid: "44166033"
 
 加密最敏感的文档和电子邮件有助于确保只有授权人员可访问此数据。 但是，需要考虑以下注意事项：
 
-- 如果你的组织未[在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签（公共预览版）](sensitivity-labels-sharepoint-onedrive-files.md)：
+- 如果你的组织未[启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签](sensitivity-labels-sharepoint-onedrive-files.md)：
     
     - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。 
     - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。

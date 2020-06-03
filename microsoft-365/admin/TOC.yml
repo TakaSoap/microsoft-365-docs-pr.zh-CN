@@ -11,7 +11,15 @@
         - name: 计划安装
           href: setup/plan-your-setup.md
         - name: 使用引导式安装为组织安装
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 商业基础版
+              href: setup/setup-business-basic.md
+            - name: Microsoft 365 商业标准版
+              href: setup/setup-business-standard.md
+            - name: Microsoft 商业高级版
+              href: ../business/set-up.md
+            - name: Microsoft 365 商业应用版
+              href: setup/setup-apps-for-business.md
         - name: 浏览“安装”页和向导
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: 迁移数据
@@ -21,7 +29,7 @@
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 面向所有人的应用培训
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: 我有什么订阅？
           href: admin-overview/what-subscription-do-i-have.md
         - name: 自定义登录页
@@ -240,10 +248,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 为 Office 2013 启用新式验证
           href: security-and-compliance/enable-modern-authentication.md
+        - name: 安全的 Microsoft 商业高级版
+          items:
+            - name: 数据保护的先决条件
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: 安全功能
+              href: ../business/security-features.md
+            - name: 增强威胁防护
+              href: ../business/increase-threat-protection.md
+            - name: 设置合规性功能
+              href: ../business/set-up-compliance.md
         - name: 安全评分
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
+    - name: 管理设备
+      items:
+        - name: 查看和编辑策略和设备
+          href: ../business/view-policies-and-devices.md
+        - name: 删除公司数据
+          href: ../business/remove-company-data.md
+        - name: 将设备重置为出厂设置
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: 将保护功能映射到 Intune 设置
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: Android 和 iOS 的应用保护设置
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: 验证 Android 或 iOS 上的设置
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Windows 10 PC 的设备保护设置
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: 验证 Windows 10 PC 上的设置
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: Windows 10 PC 的应用保护设置
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: 与客户合作
       href: work-with-customers/index.yml
       items:
