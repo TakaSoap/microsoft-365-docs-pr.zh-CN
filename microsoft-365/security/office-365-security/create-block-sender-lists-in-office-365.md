@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 管理员可以了解在 Exchange Online Protection （EOP）中阻止入站邮件的可用和首选选项。
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209543"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545896"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中创建阻止的发件人列表
 
@@ -38,6 +38,18 @@ ms.locfileid: "44209543"
 > 虽然您可以使用组织范围内的阻止设置来解决漏报（丢失的垃圾邮件），但还应将这些邮件提交给 Microsoft 进行分析。 使用阻止列表管理漏报会显著增加管理开销。 如果使用阻止列表转移丢失的垃圾邮件，则需要将主题[报告邮件和文件](report-junk-email-messages-to-microsoft.md)保留在 Microsoft 准备就绪。
 
 相比之下，您还可以使用多个选项始终允许使用_安全发件人列表_从特定来源发送电子邮件。 有关详细信息，请参阅[创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
+
+## <a name="email-message-basics"></a>电子邮件基础知识
+
+标准 SMTP 电子邮件由*邮件信封*和邮件内容组成。 邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。 邮件内容包含邮件头字段（统称为*邮件头*）和邮件正文。 RFC 5321 中介绍了邮件信封，并且 RFC 5322 中介绍了邮件头。 收件人从不会看到实际邮件信封，因为它是由邮件传输进程生成的，并且实际上并不是邮件的一部分。
+
+- `5321.MailFrom`地址（也称为 "**发**件人地址"、"P1 发件人" 或 "信封发件人"）是在邮件的 SMTP 传输中使用的电子邮件地址。 此电子邮件地址通常记录在邮件标头中的 "**返回路径**标头" 字段中（尽管发件人可以指定不同的**返回路径**电子邮件地址）。 如果无法传递邮件，则表示未送达报告的收件人（也称为 "NDR" 或 "退回邮件"）。
+
+- `5322.From`（也称为 "**来自**地址" 或 "P2 发件人"）是 "**发**件人" 头字段中的电子邮件地址，是电子邮件客户端中显示的发件人的电子邮件地址。
+
+通常， `5321.MailFrom` 和 `5322.From` 地址相同（人到个人的通信）。 但是，如果代表其他人发送电子邮件，则地址可能会不同。
+
+EOP 中的反垃圾邮件策略中阻止的发件人列表和阻止的域列表将检查 `5321.MailFrom` 和 `5322.From` 地址。 Outlook 阻止的发件人仅使用该 `5322.From` 地址。
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 阻止的发件人
 

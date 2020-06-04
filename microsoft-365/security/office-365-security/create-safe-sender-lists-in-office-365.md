@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解可用的首选选项以允许入站邮件在 Exchange Online Protection （EOP）中。
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209531"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545942"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -39,7 +39,7 @@ ms.locfileid: "44209531"
 > [!IMPORTANT]
 > •请务必密切监视使用安全发件人列表的垃圾邮件筛选的*任何*例外情况。 <br/><br/> •虽然您可以使用安全发件人列表帮助误报（电子邮件被标记为垃圾邮件），但您应考虑将安全发件人列表用作临时解决方案，如果可能，应尽可能避免使用。 我们不建议使用安全发件人列表管理误报，因为垃圾邮件筛选例外可以将组织打开为哄骗和其他攻击。 如果您坚持使用安全发件人列表来管理误报，您需要时刻小心，并在准备好时让主题[报告邮件和文件到 Microsoft](report-junk-email-messages-to-microsoft.md) 。 <br/><br/> •若要允许域发送未经身份验证的电子邮件（绕过反欺骗保护），但不绕过反垃圾邮件和反恶意软件检查，可以将其添加到[AllowedToSpoof 安全发件人列表](walkthrough-spoof-intelligence-insight.md) <br/><br/> • EOP 和 Outlook 检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本主题后面的 "[批量电子邮件的注意事项](#considerations-for-bulk-email)" 一节。
 
-相比之下，您还可以使用_阻止发件人列表_的多个选项阻止来自特定来源的电子邮件。 有关详细信息，请参阅[EOP 中的创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
+相比之下，您还可以使用_阻止发件人列表_的多个选项阻止来自特定来源的电子邮件。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="recommended-use-mail-flow-rules"></a>适合使用邮件流规则
 
@@ -66,13 +66,13 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
    - **发件人** \>**内部/外部** \>在**组织外部**：此条件是隐式的，但可使用它来考虑可能未正确配置的本地电子邮件服务器。
 
-   - **主题或正文** \>**主题或正文包含以下任何词语** \>\<关键字 \> ：如果可以通过主题行或邮件正文中的关键字或短语进一步限制邮件，则可以使用这些词作为条件。
+   - **主题或正文** \>**主题或正文包含以下任何词语** \>\<keywords\>：如果可以通过主题行或邮件正文中的关键字或短语进一步限制邮件，则可以使用这些词作为条件。
 
 4. **操作**：在规则中配置这两个操作：
 
    a. **修改邮件属性** \>**设置垃圾邮件信任级别（SCL）** \>**绕过垃圾邮件筛选**。
 
-   b. **邮件头** \>**包括以下任何词语** \>**标头名称**： \< CustomHeaderName \> **头值**： \< CustomHeaderValue \> 。
+   b. **邮件头** \>**包括以下任何词语** \>**标头名称**： \<CustomHeaderName\> **头值**： \<CustomHeaderValue\> 。
 
       例如，`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`。 如果规则中有多个域，则可以根据需要自定义标题文本。
 
@@ -118,7 +118,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 - `5322.From`（也称为 "**来自**地址" 或 "P2 发件人"）是 "**发**件人" 头字段中的电子邮件地址，是电子邮件客户端中显示的发件人的电子邮件地址。
 
-通常， `5321.MailFrom` 和 `5322.From` 地址相同（人到个人的通信）。 但是，当代表其他人发送电子邮件时，地址往往是不同。 通常这对于批量电子邮件是经常发生的。
+通常， `5321.MailFrom` 和 `5322.From` 地址相同（人到个人的通信）。 但是，如果代表其他人发送电子邮件，则地址可能会不同。 对于批量电子邮件，这通常会发生。
 
 例如，假设蓝色 Yonder 航空公司已雇用玛吉的旅行，发出电子邮件广告。 您在收件箱中收到的邮件具有以下属性：
 

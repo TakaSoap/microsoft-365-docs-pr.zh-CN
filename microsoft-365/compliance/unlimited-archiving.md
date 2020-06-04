@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 了解自动扩展存档，该存档为 Exchange Online 邮箱提供无限制的存档存储。
-ms.openlocfilehash: 584502092e04822a91bf6d04c77daa277ed70547
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633397"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534914"
 ---
 # <a name="overview-of-unlimited-archiving"></a>无限制存档概述
 
@@ -57,7 +57,7 @@ Microsoft 365 中的无限制存档功能（称为*自动扩展存档*）在存�
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>移动到其他存档存储空间的内容是什么？
 
-为了高效地使用自动扩展存档存储，文件夹可能会移动。 Microsoft 365 确定在向存档中添加额外存储时哪些文件夹会移动。 有时移动文件夹时，会自动创建一个或多个子文件夹，并将原始文件夹中的项目分发到这些文件夹，以促进移动过程。 在 Outlook 中查看文件夹列表的存档部分时，这些子文件夹将显示在原始文件夹下。  Microsoft 365 用于命名这些子文件夹的命名约定是** \<文件夹\>名称 _yyyy （在 mmm dd，yyyy h_mm 创建）**，其中：
+为了高效地使用自动扩展存档存储，文件夹可能会移动。 Microsoft 365 确定在向存档中添加额外存储时哪些文件夹会移动。 有时移动文件夹时，会自动创建一个或多个子文件夹，并将原始文件夹中的项目分发到这些文件夹，以促进移动过程。 在 Outlook 中查看文件夹列表的存档部分时，这些子文件夹将显示在原始文件夹下。  Microsoft 365 用于命名这些子文件夹的命名约定是** \<folder name\> _yyyy （在 mmm dd，Yyyy h_mm 创建）**，其中：
 
 - **yyyy**是接收文件夹中邮件的年份。
 
@@ -90,7 +90,7 @@ Microsoft 365 中的无限制存档功能（称为*自动扩展存档*）在存�
 
 - 您可以访问存档邮箱中的任何文件夹，包括已移动到自动扩展存储区域的文件夹。
 
-- 您可以仅通过搜索文件夹本身来搜索已移动到其他存储区域的项目。 这意味着，您必须在文件夹列表中选择 "存档" 文件夹，以选择**当前文件夹**选项作为搜索范围。 同样，如果自动扩展存储区域中的文件夹包含子文件夹，则必须单独搜索每个子文件夹。
+- 搜索自动扩展存档仅在内部人员构建16.0.12716.10000 时才在 Outlook 桌面上提供。 Outlook for web 中提供了搜索功能。 与联机存档类似，您可以仅通过搜索文件夹本身来搜索已移动到其他存储区域的项目。 这意味着，您必须在文件夹列表中选择 "存档" 文件夹，以选择**当前文件夹**选项作为搜索范围。 同样，如果自动扩展存储区域中的文件夹包含子文件夹，则必须单独搜索每个子文件夹。
 
 - Outlook 中的项目计数和可读/未读的计数（在 Outlook 和 web 上的 outlook 中）在自动展开的存档中可能不准确。
 
@@ -110,6 +110,6 @@ Microsoft 365 中的无限制存档功能（称为*自动扩展存档*）在存�
 
 - **导入服务：** 您可以使用 Office 365 导入服务将 PST 文件导入到用户的自动扩展存档中。 你可以将 PST 文件中的最大为 100 GB 的数据导入用户的存档邮箱。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 有关自动扩展存档的更多技术详细信息，请参阅[Microsoft 365：自动扩展存档常见问题解答](https://blogs.technet.microsoft.com/exchange/2018/04/09/office-365-auto-expanding-archives-faq/)。

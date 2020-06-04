@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 9fca3af2c53c57bbc010c5e95976cbde9ddcbbdc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432591"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545908"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -185,7 +185,7 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 如果外部用户在 Azure Active Directory 中没有帐户，则可以在租户中为其创建一个来宾帐户。 对于其电子邮件地址，您可以指定他们已使用的任何电子邮件地址。 例如，它们的 Gmail 地址。 当您在[sharepoint 和 onedrive 中为 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)时，也可以使用此来宾帐户访问 Sharepoint 或 onedrive 中的共享文档。
 
-外部用户也可以在使用 Windows 上的 Microsoft 365 应用时，使用和创建加密文档的 Microsoft 帐户。 MacOS、Android 或 iOS 尚不支持此功能。 例如，有人与一个加密的文档共享一个加密的文档，而加密设置则指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在使用此帐户登录后，用户可以打开文档并对其进行编辑，具体取决于为该用户指定的使用限制。 有关此方案的演练示例，请参阅[打开和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部用户也可以在 Windows 上使用 Microsoft 365 应用（[正式的 Office 365 应用程序](https://docs.microsoft.com/deployoffice/name-change)）时，使用和创建用于加密文档的 microsoft 帐户。 MacOS、Android 或 iOS 尚不支持此功能。 例如，有人与一个加密的文档共享一个加密的文档，而加密设置则指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在使用此帐户登录后，用户可以打开文档并对其进行编辑，具体取决于为该用户指定的使用限制。 有关此方案的演练示例，请参阅[打开和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帐户的电子邮件地址必须与指定用于限制加密设置访问权限的电子邮件地址相匹配。

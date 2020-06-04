@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515876"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534924"
 ---
 # <a name="insider-risk-management-policies"></a>内幕风险管理策略
 
@@ -67,7 +67,7 @@ ms.locfileid: "44515876"
      >[!NOTE]
      >使用内置模板创建新的 DLP 策略时，需要选择 "**创建或自定义高级 DLP 规则**" 选项，以配置*高*严重性级别的**事件报告**设置。
 
-从**数据泄露**模板创建的每个内幕风险管理策略只能分配一个 DLP 策略。 如果您有多个 DLP 策略，而您希望拥有内幕风险管理策略处理的高严重性警报，则需要为每个 DLP 策略创建单独的内幕风险管理策略。
+从**数据泄露**模板创建的每个内幕风险管理策略只能分配一个 DLP 策略。 请考虑创建一个专用的 DLP 策略，将您要检测的不同活动组合起来，并将其用作使用**数据泄露**模板的内幕风险策略的触发指示器。
 
 有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。
 
