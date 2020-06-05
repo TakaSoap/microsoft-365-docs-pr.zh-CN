@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留标签如何对整个组织中的数据进行分类来管理数据，并根据此分类强制执行保留规则。另外，还可以使用保留标签来在 Microsoft 365 中实施记录管理解决方案。
-ms.openlocfilehash: 4291e32760a585be7610612b81cc54ecfcf0863e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432239"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545964"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留标签
 
@@ -129,7 +129,9 @@ Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留�
   
 - 保留期结束时，触发处置审查，这样就必须先审阅 SharePoint 和 OneDrive 文档，再删除它们。 有关详细信息，请参阅[处置评审](disposition.md#disposition-reviews)。
     
-- 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终基于发送或接收邮件的日期，无论此处选择哪个选项，都是如此。
+- 保留期从内容分配有标签时开始计算，而不是根据内容年限或上次修改时间计算。 使用此选项时：
+    - 此选项仅适用于 SharePoint 网站和 OneDrive 帐户中的内容。 对于 Exchange 电子邮件，保留期限始终是基于发送或接收邮件的日期。
+    - 保存标签后，无法再更改保留期限。
     
 ![包含标签专用选项的保留设置](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
