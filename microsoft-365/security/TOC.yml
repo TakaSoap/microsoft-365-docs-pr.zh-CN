@@ -373,26 +373,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: 安全与合规中心内的智能报告和见解
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items:
-                - name: 安全仪表板概述
-                  href: ./office-365-security/security-dashboard.md
-                  items:
-                    - name: 演练 - 从详细报表到见解
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: 演练 - 从见解到详细报表
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: 演练 - 从仪表板到见解
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: 创建报表计划
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: 管理多个报表的计划
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: 设置并下载自定义报表
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: 下载现有报表
-                      href: ./office-365-security/download-existing-reports.md
-                - name: 查看恶意文件的相关信息
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: 安全仪表板概述
+              href: ./office-365-security/security-dashboard.md
+            - name: 查看恶意文件的相关信息
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: 高级威胁防护
           href: ./office-365-security/office-365-atp.md
           items:
