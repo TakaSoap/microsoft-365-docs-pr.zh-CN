@@ -26,6 +26,10 @@
           href: setup/migrate-email-and-contacts-admin.md
         - name: 安装 Office 应用
           href: setup/install-applications.md
+        - name: 设置 Windows 设备
+          href: ../business/set-up-windows-devices.md
+        - name: 设置移动设备
+          href: ../business/set-up-mobile-devices.md
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 面向所有人的应用培训

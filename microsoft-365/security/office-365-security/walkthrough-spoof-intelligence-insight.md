@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解欺骗性智能洞察力的工作原理，包括如何快速确定哪些发件人合法地向您发送未经身份验证的电子邮件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a71b885926d742f86a5a0c86443a5f5ba23b8a6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208460"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566700"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>演练-在 Microsoft 365 中 ATP 欺骗智能洞察力
 
@@ -102,9 +102,3 @@ ms.locfileid: "44208460"
 ## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)
-
-[演练 - 从仪表板到见解](from-a-dashboard-to-an-insight.md)
-
-[演练 - 从详细报告到见解](from-a-detailed-report-to-an-insight.md)
-
-[演练 - 从见解到详细报告](from-an-insight-to-a-detailed-report.md)

@@ -16,12 +16,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: d750c0055a9a55f573e4b920166284f6d95ae70f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c18c25fcb35661ae8703a98ca0e83cdddc0a9f2e
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208032"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566712"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -47,11 +47,12 @@ ms.locfileid: "44208032"
 ![安全仪表板-威胁管理摘要小部件](../../media/SecDash-ThreatMgmtSummary.png)
 
 您在威胁管理摘要中看到的信息取决于订阅所包含的内容。 下表介绍了 Office 365 E3 和 Office 365 E5 包含的信息。
-|||
+
+
+|Office 365 E3 |Office 365 E5 |
 |---|---|
-|**Office 365 E3**|**Office 365 E5**|
 |阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br>|阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url|
-|
+
 
 若要查看或访问 "威胁管理摘要" 小部件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 
@@ -63,12 +64,10 @@ ms.locfileid: "44208032"
 
 详细信息取决于您的 Microsoft 365 订阅是否包含具有或不包含[Office 365 高级威胁防护](office-365-atp.md)（ATP）的[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）。
 
-|||
+|如果你的订阅包括 .。。|你将看到这些详细信息|
 |---|---|
-|**如果你的订阅包括 .。。**|**你将看到这些详细信息**|
 |EOP，而不是 Office 365 ATP|由 EOP 检测并阻止的恶意电子邮件。<br><br> 请参阅[威胁防护状态报告（EOP）](view-email-security-reports.md#threat-protection-status-report)。|
 |Office 365 ATP|EOP 和 Office 365 ATP 检测到并阻止了恶意内容和恶意电子邮件<br><br>由反恶意软件引擎、[零小时自动清除](zero-hour-auto-purge.md)和 atp 功能（包括[安全链接](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)和[atp 反网络钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)）阻止的包含恶意内容的独特电子邮件的聚合计数。<br><br>请参阅[威胁防护状态报告（ATP）](view-reports-for-atp.md#threat-protection-status-report)。|
-|
 
 若要查看或访问威胁防护状态小部件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 
@@ -80,14 +79,13 @@ ms.locfileid: "44208032"
 
 指标的计算如下表所述：
 
-|||
+|跃点数|如何计算 |
 |---|---|
-|**跃点数**|**如何计算**|
 |扫描的邮件|扫描的电子邮件数乘以收件人数|
 |威胁已停止|被标识为包含恶意软件的电子邮件数乘以收件人数|
 |由[ATP](office-365-atp.md)阻止|由 ATP 阻止的电子邮件数乘以收件人数|
 |传递后删除|由[零小时自动清除](zero-hour-auto-purge.md)删除的邮件数乘以收件人数|
-|
+
 
 ## <a name="malware"></a>恶意软件
 
@@ -105,9 +103,9 @@ ms.locfileid: "44208032"
 
 ## <a name="threat-investigation-and-response"></a>威胁调查和响应
 
-如果贵组织的订阅包括[Office 365 高级威胁防护计划 2](office-365-ti.md)，则安全仪表板包含一个包含高级威胁调查和响应工具的部分。 您的组织的安全团队可以使用本节中的信息来了解新兴的市场活动、调查威胁和管理事件。
+如果贵组织的订阅包括[Office 365 高级威胁防护计划 2](office-365-ti.md)，则安全仪表板包含一个包含高级威胁调查和响应工具的部分。 这些工具包括[自动调查和响应功能](automated-investigation-response-office.md)。 自动调查和响应在诸如[快速解决已泄露用户帐户](address-compromised-users-quickly.md)的方案中非常有用。
 
-![威胁智能可帮助您了解组织的目标攻击](../../media/threatintelwidget.png)
+若要了解详细信息，请参阅[Office 365 中的入门使用自动调查和响应（AIR）](office-365-air.md)。
 
 ## <a name="trends"></a>趋势
 

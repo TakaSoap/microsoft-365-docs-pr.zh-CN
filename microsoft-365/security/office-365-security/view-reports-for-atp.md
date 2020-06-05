@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全合规中心中查找和使用适用于 Office 365 高级威胁防护的报告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351869"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566724"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -173,8 +173,4 @@ ATP 报告包括以下内容：
 
 [安全合规中心中的报告和见解 &amp;](reports-and-insights-in-security-and-compliance.md)
   
-[在安全合规中心中创建报表的日程安排 &amp;](create-a-schedule-for-a-report.md)
-
-[在安全合规中心中设置和下载自定义报告 &amp;](set-up-and-download-a-custom-report.md)
-
 [角色权限（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
