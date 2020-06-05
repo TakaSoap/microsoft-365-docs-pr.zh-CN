@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 有关创建、发布和自动应用保留标签以保留所需内容、删除不需要的内容，并在 Office 365 环境中将项目声明为记录的说明。
-ms.openlocfilehash: 65319baa0fd238ebdc403307fb8bb91a59d87cd6
-ms.sourcegitcommit: 3cd487476efe4138d1b42499fbffbbe4bacfe5b8
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44408464"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545954"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>创建、发布和自动应用保留标签
 
@@ -56,13 +56,13 @@ ms.locfileid: "44408464"
 
 2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
     
-    - 有关文件计划描述符的信息，请参阅[文件计划管理器概述](file-plan-manager.md)
+    - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
     - 要使用保留标签将内容声明为记录，请启用“**使用标签将内容分类为“记录”**”复选框。
 
 3. 重复这些步骤以创建更多标签。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”。 这将启动同一向导，可用于更改步骤 2 中的标签说明和设置。
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”启动同一向导，以便在步骤 2 中更改标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>通过创建保留标签策略发布保留标签
 
@@ -81,6 +81,8 @@ ms.locfileid: "44408464"
 2. 按照向导中的提示进行操作。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](labels.md#retention-label-policies-and-locations)部分。 
+
+若要编辑现有保留标签策略，请将其选中，然后选择“**编辑策略**”启动同一向导，以便在步骤 2 中更改策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
 
 ## <a name="auto-apply-a-retention-label"></a>自动应用保留标签
 
@@ -101,6 +103,8 @@ ms.locfileid: "44408464"
     有关配置自动应用保留标签的条件的信息，请参阅此页面上的[配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels)部分。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](labels.md#retention-label-policies-and-locations)部分。
+
+若要编辑现有自动应用标签策略，请将其选中，然后选择“**编辑策略**”启动同一向导，以便在步骤 2 中更改策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>配置自动应用保留标签的条件
@@ -217,7 +221,11 @@ ms.locfileid: "44408464"
 
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留标签及其策略
 
-如果要编辑保留标签、保留标签策略或自动应用策略，并且该保留标签已应用到内容，则更新后的设置将自动应用于此内容以及新标记的内容。
+在编辑保留标签、保留标签策略或自动应用策略，并且该保留标签或策略已应用到内容时，更新后的设置将自动应用于此内容以及新标识的内容。
+
+某些设置无法在创建并保存标签或策略后更改，包括：
+- 除保留期外的保留设置，除非已将标签配置为根据创建的时间保留或删除内容。
+- 用于分类为记录的选项。
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>查找保留标签的 PowerShell cmdlet
 

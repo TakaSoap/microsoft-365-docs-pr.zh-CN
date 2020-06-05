@@ -16,22 +16,25 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用内容搜索电子数据展示工具在 Microsoft 365 中搜索从第三方数据源导入到邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值，以搜索可导入到 Microsoft 365 的第三方数据类型。
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942965"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564965"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>使用内容搜索来搜索第三方导入的数据
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索来搜索自定义合作伙伴连接器导入的第三方数据
 
-您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。 
+您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。
   
-有关导入第三方数据和可以导入到 Microsoft 365 的第三方数据类型列表的详细信息，请参阅[在 Office 365 中使用合作伙伴存档第三方数据](work-with-partner-to-archive-third-party-data.md)。 
+有关使用合作伙伴导入第三方数据的详细信息以及可以导入到 Microsoft 365 的第三方数据类型的列表，请参阅[使用合作伙伴在 Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。
+
+> [!IMPORTANT]
+> 本文中的指导仅适用于自定义合作伙伴连接器导入的第三方数据。 本文不适用于使用 Microsoft 合规性中心中的[第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)导入的第三方数据。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
-若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以在内容`kind:externaldata`搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。 例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询： 
+若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以 `kind:externaldata` 在内容搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。 例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询： 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -55,9 +58,9 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-下表列出了可以搜索的第三方数据类型，以及要用于`itemclass:`邮件属性以专门搜索那种类型的第三方数据的值。 查询语法不区分大小写。 
+下表列出了可以搜索的第三方数据类型，以及要用于 `itemclass:` 邮件属性以专门搜索那种类型的第三方数据的值。 查询语法不区分大小写。 
   
-|**第三方数据类型**|**属性的`itemclass:`值**|
+|**第三方数据类型**|**属性的值 `itemclass:`**|
 |:-----|:-----|
 |对准  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Bloomberg 邮件  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg 消息传递  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco IM &amp;状态服务器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Cisco IM &amp; 状态服务器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |适用于 Salesforce Chatter 的 CipherCloud  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

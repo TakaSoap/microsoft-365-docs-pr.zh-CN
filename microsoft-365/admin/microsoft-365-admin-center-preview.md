@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: 了解 Microsoft 365 管理中心。
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432203"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560419"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -55,8 +55,6 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
 
 1. 在[admin.microsoft.com](https://admin.microsoft.com)中登录，转到导航窗格，然后选择 "**设置** \> **组织配置文件**"。
 
-1. 在[portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)中登录，转到导航窗格，然后选择 "**设置** \> **组织配置文件**"。
-
 2. 转到 "**发布首选项**卡"，然后选择 "**编辑**"。 
     
 3. 为**所选用户**选择 "每个人" 或 "目标版本"**的目标版本**。 如果为所选用户选择目标版本，请确保将您的管理员帐户（以及您的组织中要加入的任何其他管理员）添加到所选用户列表中。
@@ -81,13 +79,13 @@ Microsoft 365 管理中心是所有 Microsoft 365 管理员的常见入口点，
 
 ::: moniker range="o365-worldwide"
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 在此处看不到你的问题答案？ 请转到本页底部的 "**反馈**" 部分，询问你的问题。 
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我是否可以在新管理中心中执行我可以在旧管理中心中执行的所有操作？
 
-是。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
+是的。 新管理中心的功能完全正常，并具有旧管理中心的所有功能。
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>哪些 Microsoft 365 计划可用于试用版或购买版？
 
