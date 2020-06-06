@@ -23,7 +23,7 @@
           href: empower-people-to-work-remotely-manage-endpoints.md
         - name: 第 4 步。 部署生产率应用程序和服务
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 第 5 步： 创建通信场地
+        - name: 第 5 步： 创建交流平台
           href: empower-people-to-work-remotely-communication-venues.md
         - name: 步骤 6. 培训远程工作人员
           href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -81,7 +81,7 @@
         - name: 电话解决方案
           items:
             - name: 选择解决方案
-              href: 'https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+              href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 针对多国公司的案例研究
               href: null
         - name: 使用 Microsoft 365 在 SharePoint 中进行文件协作
@@ -89,7 +89,7 @@
         - name: 规划智能 SharePoint intranet
           href: 'https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 适用于企业的 OneDrive 指南
-          href: 'https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+          href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 安全性
       items:
         - name: 用于安全团队的主要任务，以支持在家工作
@@ -158,6 +158,8 @@
       href: identity-design-principles.md
     - name: 您可以 sail 的安全障碍
       href: security-design-principles.md
+    - name: 联网（到云）
+      href: networking-design-principles.md
 - name: Microsoft 365 部署资源
   items:
     - name: 部署 Microsoft 365
