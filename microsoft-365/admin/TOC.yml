@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md
         - name: 了解 Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: 访问本地用户和资源
+          items:
+            - name: 将域用户同步到 Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: 启用要进行托管的已加入域的 Windows 10 设备
+              href: ../business/manage-windows-devices.md
+            - name: 从已加入 Azure AD 的设备访问资源
+              href: ../business/access-resources.md
     - name: Microsoft 365 管理中心概述
       items:
         - name: 管理中心概述
@@ -278,6 +286,8 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: 将保护功能映射到 Intune 设置
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: 设备状态
+          href: ../business/device-states.md
         - name: Android 和 iOS 的应用保护设置
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -290,6 +300,16 @@
               href: ../business/validate-settings-on-windows-10-pcs.md
         - name: Windows 10 PC 的应用保护设置
           href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items:
+            - name: 添加 Autopilot 设备和配置文件
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: 创建和编辑 AutoPilot 配置文件
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: 创建和编辑 AutoPilot 设备
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot 配置文件设置
+              href: ../business/autopilot-profile-settings.md
     - name: 与客户合作
       href: work-with-customers/index.yml
       items:
