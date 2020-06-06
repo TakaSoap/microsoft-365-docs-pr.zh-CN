@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 了解独立 Exchange Online Protection 中的任务所需的权限
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208861"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588248"
 ---
 # <a name="permissions-in-standalone-eop"></a>独立 EOP 中的权限
 
@@ -134,17 +134,17 @@ ms.locfileid: "44208861"
 |安全读取者|SecurityReader|
 |
 
-其他 Microsoft 365 角色没有相应的 EOP 角色组，也不会在 EOP 中授予管理权限。 有关将 Microsoft 365 角色分配给用户的详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)。
+其他 Microsoft 365 角色没有相应的 EOP 角色组，也不会在 EOP 中授予管理权限。 有关将 Microsoft 365 角色分配给用户的详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
 
 可以在 EOP 中向用户授予管理权限，而无需将其添加到 Microsoft 365 角色。 为此，请将用户添加为 EOP 角色组的成员。 用户将在 EOP 中获取权限，但他们不会在其他 Microsoft 365 工作负荷中获取权限。
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证是否已成功复制角色组，请执行以下步骤之一：
 
 - 在 EAC 中，转到 "**权限** \> " "**管理员角色**"，然后验证角色组是否已列出（或未列出）。 选择角色组，并验证详细信息窗格中的设置，或单击 "**编辑** ![ 编辑图标 ](../../media/ITPro-EAC-EditIcon.png) " 以验证设置。
 
-- 在 Exchange Online PowerShell 中，将 \< 角色组名称替换 \> 为角色组的名称，然后运行以下命令来验证角色组是否存在（或不存在）并验证设置：
+- 在 Exchange Online PowerShell 中，将替换 \<Role Group Name\> 为角色组的名称，然后运行以下命令来验证角色组是否存在（或不存在）并验证设置：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

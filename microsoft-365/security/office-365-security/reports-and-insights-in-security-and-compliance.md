@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解安全与合规中心中提供的智能报告和见解，以及如何使用它们查看和浏览数据并快速执行操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a033231b808964829ced0b9520515c426f5b81f
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566688"
+ms.locfileid: "44588152"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>安全合规中心中的智能报告和见解 &amp;
 
@@ -50,7 +50,7 @@ ms.locfileid: "44566688"
 |**威胁资源管理器**（也称为资源管理器）或**实时检测** <br/> 在 Microsoft 365 中的电子邮件和文件中检测到可疑的恶意软件  <br/> |在 "安全 &amp; 合规性中心" 中，转到 "**威胁管理** \> **资源管理器**" 或 "**实时检测**"<br/> |[威胁资源管理器（或实时检测）](threat-explorer.md) <br/> |
 |**高级威胁防护和电子邮件安全报告** <br/> 电子邮件安全和威胁防护报告（包括恶意软件、垃圾邮件、网络钓鱼和欺骗报告）  <br/> |在安全 &amp; 合规性中心中，转到 "**报告**" \> **仪表板** <br/> |[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md) <br/><br/> [查看安全 &amp; 合规性中心中的电子邮件安全报告](view-email-security-reports.md) <br/> |
 |**邮件流** <br/> 已发送和已接收的电子邮件、最近的警报、主要发件人和收件人、电子邮件转发报告等相关信息  <br/> |在 "安全 &amp; 合规性中心" 中，转到 "**邮件流**" \> **仪表板** <br/> |[安全与合规中心内的邮件流见解](mail-flow-insights-v2.md)<br/> |
-|**GDPR 合规性** <br/> 有关 GDPR 合规性的信息，包括指向数据主体的链接、标签趋势和活动 &amp; 关闭的案例  <br/> |在安全 &amp; 合规性中心中，转到 "**数据隐私**" \> **GDPR 仪表板** <br/> |[针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr) <br/> |
+|**GDPR 合规性** <br/> 有关 GDPR 合规性的信息，包括指向数据主体的链接、标签趋势和活动 &amp; 关闭的案例  <br/> |在安全 &amp; 合规性中心中，转到 "**数据隐私**" \> **GDPR 仪表板** <br/> |[针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr) <br/> |
 |**审核日志** <br/> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息  <br/> |在安全 &amp; 合规性中心中，转到**搜索 &amp; 调查** \> **审核日志搜索** <br/> |[在安全合规中心中搜索审核日志 &amp;](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**合规性报告** <br/> FedRAMP 报告、管理、风险和合规性报告、ISO 信息安全管理报告以及 Service Organization Controls 审核和评估报告  <br/> |在 "安全 &amp; 合规性中心" 中，转到 "**服务保证** \> **合规性报告**" <br/> |[&amp;在 Office 365 中规划安全合规性](../../compliance/plan-for-security-and-compliance.md) <br/> |
   

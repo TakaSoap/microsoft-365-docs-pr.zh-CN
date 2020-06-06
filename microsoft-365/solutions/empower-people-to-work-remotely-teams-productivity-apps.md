@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 2fc55ff9f991c75e8124c710e60fe2ba34ed7f17
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160734"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560443"
 ---
 # <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>第 4 步。 部署远程工作者生产力应用和服务
 
@@ -39,7 +39,9 @@ ms.locfileid: "44160734"
 
 Teams 让你可以在一个位置聊天、开会、呼叫和协作。 数百万人每天在 Teams 中完成自己的工作，因为它能将远程工作所需的所有内容整合到一个中心，以进行团队合作。 
 
-可使用[本文](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)获得通过 Teams 为远程工作者提供支持的指南。 
+在[本文](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)中获取通过 Teams 为远程工作者提供支持的指南。 
+
+观看[第 1 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)，了解有关使用 Teams 进行远程工作的指南和演示。
 
 ### <a name="chat-and-conversations"></a>聊天和对话
 
@@ -63,25 +65,34 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 借助 Outlook，远程工作者可以在同一位置通过电子邮件、日历、联系人、任务等保持联系，并且有条不紊。 Outlook 可帮助你根据与你相关的内容，随时跟踪日常工作并确定其优先级。 通过 Outlook，你能够直接从 OneDrive 共享附件、计划和加入 Teams 会议、查看和共享日历，以及向其他人提供委派权限。 了解工作和个人承诺方面的后续发展以及需要关注的内容可以帮助远程工作者专注于重要事项。 Outlook 为远程工作者提供了有用的方式来管理其时间和查找所需内容（包括文件、组织中的人员等）。 
 
+请参阅[本文](../enterprise/secure-email-recommended-policies.md)，了解用于保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端的建议身份验证和设备访问策略。
+
 ## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>使用 SharePoint Online 和 OneDrive 存储和协作处理文件
 
 对于内容协作，远程工作者可将 SharePoint Online 和 OneDrive 文件夹用作云中的中心位置，以便存储和共享文件、共同创作、通信和协作。 远程工作者可通过 Web 浏览器、Teams 和 Office 应用从任意位置安全地进行工作。
+
+请参阅[本文](../enterprise/sharepoint-file-access-policies.md)，了解用于保护 SharePoint Online 和 OneDrive for business 的建议身份验证和设备访问策略。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 应用创建和协作处理内容
 
 Microsoft 365 应用是适用于企业的最高效、最安全的 Office 体验，可让用户随时随地无缝协同工作。 远程工作者可与多人同时协作处理文档、实时查看编辑和更改，以及在任何便携式电脑、电脑或移动设备上与其他人共同创作。
 
+请参阅[本文](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)，在自己的企业环境中计划、部署和管理 Microsoft 365 应用版。
+
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>面向生产力应用和服务的管理员技术资源
 
 - [使用 Microsoft Teams 支持远程工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [有关适用于远程工作者的 Teams 的第 1 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Teams 客户成功工具包下载](https://www.microsoft.com/download/details.aspx?id=54244)
 - [用于促进 Teams 采用的工具](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [为 Microsoft Teams 创建变更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [部署具有三层保护的 Teams](configure-teams-three-tiers-protection.md)
+
+## <a name="user-training-resources-for-productivity-apps-and-services"></a>面向生产力应用和服务的用户培训资源
 
 - [对用户进行 Office 和 Office 365 方面的培训](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [使用 Office 网页版](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>后续步骤
 
-继续执行[步骤 5](empower-people-to-work-remotely-communication-venues.md)，创建可满足 COVID-19 危机独特需求的其他交流平台。
+继续执行[步骤 5](empower-people-to-work-remotely-communication-venues.md)，创建可为远程工作者服务的其他交流平台。

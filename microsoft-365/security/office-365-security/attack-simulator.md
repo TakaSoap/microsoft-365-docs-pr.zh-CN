@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用攻击模拟器在 Microsoft 365 E5 或 ATP Plan 2 组织中运行模拟的网络钓鱼和密码攻击。
-ms.openlocfilehash: e2c6859291e4a25e56dd8dd20a8ecc5962310680
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 166a8ab9f6ef08ca089bc8924b686e392e870526
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035854"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587564"
 ---
 # <a name="attack-simulator-in-atp"></a>ATP 中的攻击模拟器
 
@@ -39,7 +39,7 @@ ms.locfileid: "44035854"
 
 - 您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 您的帐户需要配置用于多重身份验证（MFA），以在攻击模拟器中创建和管理市场活动。 有关说明，请参阅[设置多因素身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+- 您的帐户需要配置用于多重身份验证（MFA），以在攻击模拟器中创建和管理市场活动。 有关说明，请参阅[设置多因素身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 为成功启动攻击，请确保用于运行模拟攻击的帐户使用多重身份验证。 此外，您必须是全局管理员或安全管理员。 （若要了解有关角色和权限的详细信息，请参阅[安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。）
 
@@ -55,7 +55,7 @@ ms.locfileid: "44035854"
 
 在攻击模拟器中，可以使用两种不同类型的 spear 网络钓鱼活动：
 
-- [多因素身份验证/条件访问](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)已打开，至少为全局管理员帐户和将使用攻击模拟器的安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
+- [多因素身份验证/条件访问](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)已打开，至少为全局管理员帐户和将使用攻击模拟器的安全管理员。 （理想情况下，为组织中的所有用户启用多重身份验证/条件访问。）
 
   - 一个说明这只是一个测试的默认页面，并提供了有关识别网络钓鱼邮件的提示。
 
@@ -63,7 +63,7 @@ ms.locfileid: "44035854"
 
   - 您指定的自定义页面（URL）。
 
-- **Spear 网络钓鱼（附件）**：攻击试图说服收件人在邮件中打开 .docx 或 .pdf 附件。 该附件包含来自默认仿冒链接的相同内容，但第一个句子以 "显示名称\<\>" 开头，并且您已打开 "你最近打开的电子邮件 ..."。
+- **Spear 网络钓鱼（附件）**：攻击试图说服收件人在邮件中打开 .docx 或 .pdf 附件。 附件包含来自默认仿冒链接的相同内容，但第一句以 "" \<Display Name\> ，您将看到此邮件是您打开的最近的电子邮件 ... "。
 
 > [!NOTE]
 > 目前，攻击模拟器中的 spear 网络钓鱼活动不会过期。
@@ -291,7 +291,7 @@ ms.locfileid: "44035854"
 
 - **成功的尝试**：单击链接的用户数 **，并**输入其凭据（*任何*用户名和密码值）。
 
-- **总体成功率**：由**成功尝试** / 的**用户的目标总数**计算所得的百分比。
+- **总体成功率**：由**成功尝试**的  /  **用户的目标总数**计算所得的百分比。
 
 - **最快的点击**次数：启动市场活动后，第一个用户单击链接所需的时间。
 
@@ -331,7 +331,7 @@ ms.locfileid: "44035854"
 
 - **成功的尝试**：打开或下载并打开附件的用户数（预览不计数）。
 
-- **总体成功率**：由**成功尝试** / 的**用户的目标总数**计算所得的百分比。
+- **总体成功率**：由**成功尝试**的  /  **用户的目标总数**计算所得的百分比。
 
 - **最快的附件打开时间**：启动市场活动后，首个用户打开附件所需的时间。
 
@@ -349,7 +349,7 @@ ms.locfileid: "44035854"
 
 - **成功的尝试**：找到的使用指定密码之一的用户数。
 
-- **总体成功率**：由**成功尝试** / 的**用户的目标总数**计算所得的百分比。
+- **总体成功率**：由**成功尝试**的  /  **用户的目标总数**计算所得的百分比。
 
 - "已**损坏的用户**" 部分列出了受影响的用户的电子邮件地址。 您可以单击 "**导出**" 将结果导出到 CSV 文件中。
 
@@ -363,4 +363,4 @@ ms.locfileid: "44035854"
 
 - **成功的尝试**：找到的使用指定密码的用户数量。
 
-- **总体成功率**：由**成功尝试** / 的**用户的目标总数**计算所得的百分比。
+- **总体成功率**：由**成功尝试**的  /  **用户的目标总数**计算所得的百分比。

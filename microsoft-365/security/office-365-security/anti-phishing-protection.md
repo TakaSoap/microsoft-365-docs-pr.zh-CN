@@ -19,12 +19,12 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中的反钓鱼防护功能。
-ms.openlocfilehash: 2b5d5786e363b0d74e29b1f0c27ab110d2e60b0d
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262279"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588308"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼保护
 
@@ -62,6 +62,6 @@ Office 365 ATP 包含更高级和更高级的反网络钓鱼功能：
 
 ## <a name="other-anti-phishing-resources"></a>其他反网络钓鱼资源
 
-- 对于最终用户：[保护自己免受网络仿冒骗术和其他形式的在线欺诈](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593)。
+- 对于最终用户：[保护自己免受网络仿冒骗术和其他形式的在线欺诈](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)。
 
 - [Microsoft 365 如何验证发件人地址以防止仿冒](how-office-365-validates-the-from-address.md)。

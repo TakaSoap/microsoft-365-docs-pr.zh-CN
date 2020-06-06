@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498659"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588448"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -32,7 +32,7 @@ ms.locfileid: "44498659"
 - **启用或禁用垃圾邮件规则**： "垃圾邮件" 规则是一个隐藏的 "收件箱" 规则，默认情况下，在每个邮箱中启用该规则。 垃圾邮件规则控制以下功能：
 
   - **根据反垃圾邮件策略将邮件移动到 "垃圾邮件" 文件夹**：当使用 "操作**将邮件移动到垃圾邮件" 文件夹**中的垃圾邮件策略筛选判定时，垃圾邮件筛选规则会在邮件传递到邮箱后将邮件移动到 "垃圾邮件" 文件夹。 有关反垃圾邮件策略中的垃圾邮件筛选 verdicts 的详细信息，请参阅[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。 同样，如果0小时自动清除（ZAP）确定传递的邮件是垃圾邮件或网络钓鱼，垃圾邮件筛选规则会将邮件移至 "垃圾邮件" 文件夹，以**将邮件移动到垃圾邮件文件夹**垃圾邮件筛选判定操作。 有关 ZAP 的详细信息，请参阅[Exchange Online 中的零小时自动清除（ZAP）](zero-hour-auto-purge.md)。
-  
+
   - **用户在 outlook 或 web 上的 outlook 中为自己配置的垃圾邮件设置**：安全列表_集合_是安全发件人列表、安全收件人列表和每个邮箱的阻止发件人列表。 这些列表中的条目确定垃圾邮件规则是否将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 用户可以在 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）中为自己的邮箱配置安全列表集合。 管理员可以在任何用户的邮箱上配置安全列表集合。
 
 在邮箱上启用垃圾邮件规则时，EOP 可以将邮件移动到 "垃圾邮件" 文件夹，具体取决于垃圾邮件筛选判定操作 "**将邮件移至垃圾邮件" 文件夹**或邮箱中的阻止发件人列表，并阻止邮件传递到 "垃圾邮件" 文件夹（基于邮箱上的 "安全发件人" 列表）。
@@ -148,7 +148,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 > 
 > - 即使在邮箱上禁用了垃圾邮件规则，仍可以配置安全列表集合，并且 Outlook 垃圾邮件筛选器能够将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[关于 Outlook 中的配置垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
 > 
-> - Outlook 垃圾邮件筛选器包含其他安全列表集合设置（例如，**自动将我的电子邮件添加到安全发件人列表**中）。 For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> - Outlook 垃圾邮件筛选器包含其他安全列表集合设置（例如，**自动将我的电子邮件添加到安全发件人列表**中）。 For more information, see [Use Junk Email Filters to control which messages you see](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
@@ -197,7 +197,7 @@ Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集
   - 500阻止的发件人列表和阻止的域列表中的条目总数。
 
   达到1024项限制时，将发生以下情况：
-  
+
   - 该列表将停止接受 PowerShell 中的条目和 web 上的 Outlook，但不会显示任何错误。
 
     Outlook 用户可以继续添加1024个以上的条目，直到达到 Outlook 限制值 510 KB。 Outlook 可以使用这些额外的条目，只要 EOP 筛选器在传递到邮箱之前不会阻止邮件（邮件流规则、反欺骗等）。
@@ -208,7 +208,7 @@ Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集
   2. 只要对前1024个条目进行了更改，就会对安全发件人列表和安全收件人列表进行组合、消除重复并按字母顺序对其进行排序。
 
   使用前1024个条目，并在邮件头中标记相关信息。
-  
+
   1024以上未同步到 Azure AD 的条目由 Outlook （而非 web 上的 Outlook）处理，邮件头中不会标记任何信息。
 
 您可以看到，启用 "**来自我的联系人的信任电子邮件**" 设置可以减少可同步的安全发件人和安全收件人的数量。 如果这是个问题，我们建议使用组策略关闭此功能：

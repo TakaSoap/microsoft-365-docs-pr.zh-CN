@@ -2,8 +2,8 @@
 title: Microsoft 365 管理中心的新增功能有哪些？
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401138"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587576"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -43,18 +43,62 @@ ms.locfileid: "44401138"
 > **"经典" 管理员中心在三月份开始退休**<br><br>
 登录到 Microsoft 365 管理中心后，你现在将每次都转到新管理中心。 在三月份，我们开始禁用切换回经典管理中心的功能。 现在，你仍可以切换回来，但由于新的管理中心有奇偶校验（并超过它），我们将关闭所有组织的切换。 <br><br> *上次更新时间：2020年5月11日*
 
-如果你对其他 Microsoft 云服务中的新增功能感兴趣，请尝试以下操作：
+如果你想要了解其他 Microsoft 云服务的新增功能，请执行以下操作：
 
-- [Exchange Online 中的新增功能](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Microsoft Intune 中的新增功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 合规性中心的新增功能](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Azure Active Directory 中的新增功能](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Exchange 管理中心中的新增功能](https://docs.microsoft.com/Exchange/whats-new)
+- [Microsoft Intune 新增功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Microsoft 365 合规性中心的新增功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Microsoft 威胁防护的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>2020 年 5 月
+
+### <a name="new-update-channel-for-office"></a>Office 的新更新频道
+
+5月12日，我们宣布推出新的 Office 更新频道：每月企业频道的可用性。 此更新频道在每月的第二个星期二为你的用户提供新的 Office 功能。
+
+如果您允许用户从门户自行安装 Office，则可以为其选择每月的企业频道。 为此，请登录 Microsoft 365 管理中心并转到 "**显示所有**  > **设置**" "  >  **组织**  >  **Services**  >  **Office 软件下载设置**"。 如果选择 "每**月一次（每月企业频道）**"，则会将 Office 的任何新的自安装配置为使用每月企业版频道。
+
+与每月企业频道的发布一起，我们还将修订现有更新频道的名称。 例如，每月频道将被重命名为当前频道。 新名称将在2020年6月9日生效。
+
+有关详细信息，请参阅[对 Microsoft 365 应用更新频道的更改](https://docs.microsoft.com/DeployOffice/update-channels-changes)。
+
+### <a name="new-admin-roles"></a>新管理员角色
+
+我们已将一些新的 Azure Active Directory 管理员角色添加到 Microsoft 365 管理中心。
+
+- 混合标识管理员角色向用户提供管理云设置和身份验证服务的权限。
+- 通过网络管理员角色，用户可以管理网络位置并查看 Microsoft 365 软件作为服务应用程序的网络见解。
+- 打印机管理员角色授予管理打印机和打印机连接的所有方面的权限。
+- 打印机技术人员是打印机管理员角色的子集，用户可在其中注册和注销打印机，并更新打印机状态。
+若要了解有关这些角色的详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+
+### <a name="export-groups-list"></a>导出组列表
+
+我们从很多管理员那里听说过，他们需要共享有关组的信息以及他们对管理员中心不具有访问权限的人员的使用。 现在，您可以将 "组" 列表导出为 CSV 文件，以进行审核，这意味着您可以扔掉旧的 PowerShell 脚本。 若要试用，请转到 "**组**  >  **Groups**" 组，然后从命令栏中选择 "**导出组**"。
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解决方案和体系结构中心
+
+仅在本月发布了一个 [https://docs.microsoft.com](https://docs.microsoft.com) 名为[Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)的新网站，该网站提供了了解、规划和实施集成的 Microsoft 365 解决方案以实现安全和合规协作所需的技术指导。 在此中心中，你将发现：
+
+- 基础解决方案指南
+- 工作负载解决方案和方案指南
+- 解决方案和体系结构插图（海报!!!）
+- 特定于行业的指南
+- 企业体系结构设计主体
+
+### <a name="docs-training-and-videos"></a>文档、培训和视频
+
+- **Microsoft 365 video 系列中的新增功能**：本月，我们将在团队管理员和安全与合规中心、规划器与邮件中心的集成以及 Microsoft 团队中的新的3x3 视频布局中介绍新的支持体验。 [Microsoft 365 中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- [Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/)页面已更新，可帮助您更快地找到所需内容。 如果你现在查看此页，我们添加了卡片以通知你重要更新和更改。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
 ### <a name="intune-roles-management"></a>Intune 角色管理
+
+[2020 年 4 月](#april-2020)
 
 嗯，我们做了！ 我们已采用了统一角色体验的第二步，你现在可以在 Microsoft 365 管理中心管理 Intune 角色。 您还可以利用功能（如搜索角色和查看角色权限的功能）。 这意味着，您不需要两个单独的工具来管理 Microsoft 365 和 Intune 的角色。 登录到 Microsoft 365 管理中心后，你将看到 "角色" 页面上有两个透视，一个用于 Azure AD，另一个用于 Intune。
 
@@ -103,7 +147,7 @@ ms.locfileid: "44401138"
 - 现在，您可以编辑 Office 365 组的电子邮件地址（也称为 Outlook 中的组），并在不久中称为 "Microsoft 365 组"。
 - 我们已听取你的反馈意见，我们添加了更清楚的错误消息，了解为什么无法将组转换为 Microsoft 团队。
 
-### <a name="docs-videos-and-training"></a>文档、视频和培训
+### <a name="docs-videos-and-training-april"></a>文档、视频和培训（四月）
 
 **Microsoft 365 video 系列中的新增功能**：本月，我们将介绍一些提示和资源，以帮助小型企业过渡到远程工作，包括如何实施 Microsoft 团队、远程工作培训资源以与客户和合作伙伴保持联系，以及新的 Microsoft 365 商业语音计划。 [Microsoft 365 中的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ ms.locfileid: "44401138"
 
 #### <a name="for-admins-and-business-owners"></a>对于管理员和企业所有者
 
-- [通过远程工作为小型企业提供支持](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [通过远程工作为小型企业提供支持](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [运行远程小型企业](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [注册 Microsoft 商业基本版](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [设置双因素登录](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ ms.locfileid: "44401138"
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="将管理中心设置映射到移动应用的关系图。":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>对 "添加组" 向导的改进
 
 当管理员创建一个新的组并将其作为同一时间的团队时，他们可以分配没有包含团队的许可证的所有者。 这就产生了一些麻烦。 我们已更新向导流，以验证所有者是否具有团队许可证，以及他们是否不选择将组转换为团队已禁用。
@@ -162,7 +204,7 @@ ms.locfileid: "44401138"
 |Office 365 商业协作版     |   Microsoft 365 商业基础版      |
 | Office 365 商业高级版     |    Microsoft 365 商业标准版     |
 |Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
-|Office 365 商业版     |    Microsoft 365 商业应用版       | 
+|Office 365 商业版     |    Microsoft 365 商业应用版       |
 |Office 365 专业增强版    |   适用于企业的 Microsoft 365 应用程序      |
 
 ### <a name="videos-training-and-docs"></a>视频、培训和文档
@@ -185,14 +227,14 @@ ms.locfileid: "44401138"
 
 这就是它!!!
 
-### <a name="groups"></a>组
+### <a name="groups"></a>Groups
 
 本月的 "组" 区域中的两个更改：
 
 - **按组名称排序**：您可以通过选择 "**组名称**" 列按字母顺序对组列表进行排序。
 - **还原已删除的 microsoft 365 组**：无需再转到 Exchange 管理中心即可还原已删除的 microsoft 365 组。 转到**Microsoft 365 管理中心** \> **组** \> **已删除** \> 的组（从列表中选择一个组） \> **还原组**。 它会将组还原回 "**组**" 列表，并还原组的电子邮件、对话、笔记本、文件和日历。
 
-### <a name="videos-training-and-docs"></a>视频、培训和文档
+### <a name="videos-training-and-docs-february"></a>视频、培训和文档（二月）
 
 - **Microsoft 365 video 系列中的新增**功能：本月，我们重点介绍了 SharePoint Online 的自定义搜索功能、Office "新增功能" 管理功能，可让您通过应用程序帮助窗格、最新的安全性和 Yammer 中的兼容性更新等，在最终用户中显示或隐藏特定功能。 以下是最新的剧集： [Microsoft 365 的新增功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 

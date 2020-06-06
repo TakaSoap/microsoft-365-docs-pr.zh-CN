@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心（包括见解、报告和小部件）中的邮件流仪表板。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034142"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588012"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -57,19 +57,19 @@ ms.locfileid: "44034142"
 
 - Security & 合规中心中的**邮件流管理员角色**的成员。 如果此角色被明确分配给不是全局管理员或 Exchange 管理员角色成员的用户：
 
-  - 用户必须直接在[https://protection.office.com](https://protection.office.com)中直接登录到安全 & 合规性中心。
+  - 用户必须直接在中直接登录到安全 & 合规性中心 [https://protection.office.com](https://protection.office.com) 。
 
   - 用户将只具有对邮件流仪表板的只读权限。
 
   - 用户将无法访问 Microsoft 365 管理中心。
 
-有关全局管理员角色的详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+有关全局管理员角色的详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 有关为用户分配安全 & 合规性中心角色的信息，请参阅[为用户提供对安全 & 合规性中心的访问权限](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
 
-1. 转到上[https://protection.office.com](https://protection.office.com)的安全性 & 合规性中心。
+1. 转到上的安全性 & 合规性中心 [https://protection.office.com](https://protection.office.com) 。
 
 2. 展开 "**邮件流**"，然后选择 "**仪表板**"。
 

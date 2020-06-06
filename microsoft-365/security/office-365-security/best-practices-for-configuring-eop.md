@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循这些有关独立 Exchange Online Protection （EOP）的最佳实践建议，以便自行设置成功并避免常见配置错误。
-ms.openlocfilehash: ade41b5343e19f75658f01e6c395c470e230b315
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351923"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587528"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>配置独立 EOP 的最佳实践
 
@@ -56,7 +56,7 @@ ms.locfileid: "44351923"
 |[PowerShell 连接](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|禁用|禁用|适用于邮箱用户或邮件用户（由[获取用户](https://docs.microsoft.com/powershell/module/exchange/get-user)cmdlet 返回的用户对象）。|
 |尽可能使用[欺骗智能](learn-about-spoof-intelligence.md)白名单发件人|是|是||
 |[基于目录的边缘阻止（DBEB）](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已启用|已启用|域类型 = 权威|
-|[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
+|[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
 |
 
 ## <a name="troubleshooting"></a>故障排除

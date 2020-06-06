@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045232"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588084"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅[Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[ATP 安全链接](atp-safe-links.md)是[Office 365 高级威胁防护](office-365-atp.md)（ATP）的一项功能，可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接。 如果您对[ &amp;安全合规中心](permissions-in-the-security-and-compliance-center.md)具有必要的权限，则可以设置 ATP 安全链接策略，以帮助确保当用户单击 "Web 地址" （url）时，您的组织受到保护。 您的 ATP 安全链接策略可以配置为扫描 Office 文档中的电子邮件和 Url 中的 Url。
+[ATP 安全链接](atp-safe-links.md)是[Office 365 高级威胁防护](office-365-atp.md)（ATP）的一项功能，可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接。 如果您对[安全 &amp; 合规中心](permissions-in-the-security-and-compliance-center.md)具有必要的权限，则可以设置 ATP 安全链接策略，以帮助确保当用户单击 "web 地址" （url）时，您的组织受到保护。 您的 ATP 安全链接策略可以配置为扫描 Office 文档中的电子邮件和 Url 中的 Url。
 
 启用 ATP 安全链接后，如果用户单击电子邮件中的链接，并且该 URL 已被组织的自定义 "阻止 URL" 列表阻止，或者如果该 URL 被确定为 "恶意"，则会打开 "警告" 页。
   
@@ -51,13 +51,13 @@ ms.locfileid: "44045232"
     
 - 请确保您具有必要的权限。 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例： <br>
 
-    |角色  |分配的位置/方式  |
+    |Role  |分配的位置/方式  |
     |---------|---------|
-    |全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）         |
-    |安全管理员 |Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-    |Exchange Online 组织管理 |Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
+    |全局管理员 |默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以了解详细信息。）         |
+    |安全管理员 |Azure Active Directory 管理中心（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ）|
+    |Exchange Online 组织管理 |Exchange 管理中心（ [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)） |
 
-    若要了解有关角色和权限的详细信息，请参阅[安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+    若要了解有关角色和权限的详细信息，请参阅[安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 请确保将 Office 客户端配置为使用[新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)（这适用于 office 文档中的 ATP 安全链接保护）。
     
@@ -69,9 +69,9 @@ ms.locfileid: "44045232"
 
 当您拥有[Office 365 高级威胁防护功能](office-365-atp.md)时，将拥有适用于组织中每个人的默认 ATP 安全链接策略。 请务必查看，如果需要，请编辑您的默认策略。
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) 并使用你的工作或学校帐户登录。 
     
-2. 在左侧导航中的 "**威胁管理**" 下，选择 "**策略\> ** **安全链接**"。
+2. 在左侧导航中的 "**威胁管理**" 下，选择 "**策略 \> ** **安全链接**"。
     
 3. 在 "**适用于整个组织的策略**" 部分，选择 "**默认**"，然后选择 "**编辑**" （"编辑" 按钮类似于铅笔）。<br/>![单击 "编辑" 编辑安全链接保护的默认策略](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
   
@@ -79,19 +79,19 @@ ms.locfileid: "44045232"
     
 5. 在 "**应用于除电子邮件以外的内容的设置**" 部分，选择（或清除）要使用的选项。 （我们建议您选择所有选项。） 
     
-6. 选择**保存**。
+6. 选择“保存”****。
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>步骤3：添加（或编辑）适用于特定电子邮件收件人的 ATP 安全链接策略
 
 在查看（或编辑）适用于每个人的默认 ATP 安全链接策略之后，下一步是定义适用于特定收件人的其他策略。 例如，您可以通过定义其他策略来指定您的默认策略的例外。 
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) 并使用你的工作或学校帐户登录。 
     
 2. 在左侧导航中的 "**威胁管理**" 下，选择 "**策略**"。
     
 3. 选择 "**安全链接**"。
     
-4. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似**+** 于 "加号" （））。<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. 在 "**适用于特定收件人的策略**" 部分，选择 "**新建**" （"新建" 按钮类似于 "加号" （ **+** ））。<br/>![选择 "新建" 为特定的电子邮件收件人添加安全链接策略](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
 5. 指定策略的名称、说明和设置。<br/>**示例：** 若要设置一个名为 "无直接单击" 的策略，且不允许组织中特定组中的用户在没有 ATP 安全链接保护的情况下单击特定网站，可以指定以下推荐设置： 
     
@@ -111,7 +111,7 @@ ms.locfileid: "44045232"
 
     - 在 "**应用**于" 部分中，选择 **"收件人是其成员**"，然后选择要包括在策略中的组。 选择 "**添加**"，然后选择 **"确定"**。
     
-6. 选择**保存**。
+6. 选择“保存”****。
 
 > [!NOTE]
 > 优先级较高的 ATP 安全链接策略将优先。 如果用户接受两个或更多个策略，则只有较高优先级的策略才能生效。
@@ -144,7 +144,7 @@ ms.locfileid: "44045232"
 |**将安全链接应用于在组织内发送的邮件** <br/> | 当此选项可用并选中时，如果电子邮件帐户托管在 Office 365 中，则会将 ATP 安全链接保护应用于在组织中的人员之间发送的电子邮件。  <br/> |
 |**不跟踪用户点击** <br/> |选择此选项后，请单击 "来自外部发件人的电子邮件中的 Url 数据未存储"。 URL 单击 "跟踪" 以查找在组织内发送的电子邮件中的链接当前不受支持。  <br/> |
 |**不允许用户单击到原始 URL** <br/> |选择此选项后，用户将无法继续处理被确定为恶意的 URL 之后的[警告页](atp-safe-links-warning-pages.md)。  <br/> |
-|**不重写以下 Url** <br/> |将 Url 保留为。 保留自定义不需要在组织中对特定电子邮件收件人组进行扫描的安全 Url 列表。  有关更多详细信息（包括对通配符星号（\*）支持的最新更改），请参阅[设置自定义 "不重写" url 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。  <br/> |
+|**不重写以下 Url** <br/> |将 Url 保留为。 保留自定义不需要在组织中对特定电子邮件收件人组进行扫描的安全 Url 列表。  有关更多详细信息（包括对通配符星号（）支持的最新更改），请参阅[设置自定义 "不重写" url 列表](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) \* 。  <br/> |
    
 ## <a name="next-steps"></a>后续步骤
 
@@ -152,6 +152,6 @@ ms.locfileid: "44045232"
 
 - [查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)
 
-- [在安全&amp;合规中心中使用资源管理器](threat-explorer.md)
+- [在安全合规中心中使用资源管理器 &amp;](threat-explorer.md)
 
 继续在新功能的前面提供 ATP。 请访问[Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。

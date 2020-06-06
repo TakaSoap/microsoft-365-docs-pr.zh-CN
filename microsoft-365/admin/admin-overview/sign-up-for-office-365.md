@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '了解在完成 Office 365 注册过程之前需要了解的内容。 '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386753"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579165"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册管理员帮助
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386753"
 
 注册 Microsoft 365 for business，以便你的团队可以开始在你的企业中使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
   
-观看三个 Microsoft 365 商业版计划的快速概述，或向下滚动查看详细信息。
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 注册 Microsoft 365 for business，以便你的团队可以开始在你的企业中使用最新版本的 Word、Excel、PowerPoint 和其他 Office 程序。
-  
-观看最适合您的企业的三个计划的快速概述。 或向下滚动以获取详细信息。
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 

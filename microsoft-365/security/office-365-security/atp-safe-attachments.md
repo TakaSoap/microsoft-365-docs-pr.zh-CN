@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 在本文中，您将了解有关 Office 365 的 ATP 安全附件功能以及如何获取订阅的功能。
-ms.openlocfilehash: e6cbd5cb494e765bdb849da93114ea4168ab3c93
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 75b047c1761a936f1fb0e08c65d9c270a136a953
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034848"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588296"
 ---
 # <a name="atp-safe-attachments"></a>ATP 安全附件
 
@@ -45,11 +45,11 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 
 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
 
-|角色|分配的位置/方式|
+|Role|分配的位置/方式|
 |---------|---------|
-|全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以了解详细信息。）|
-|安全管理员|Azure Active Directory 管理中心（[https://aad.portal.azure.com](https://aad.portal.azure.com)）|
-|Exchange Online 组织管理|Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
+|全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以了解详细信息。）|
+|安全管理员|Azure Active Directory 管理中心（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ）|
+|Exchange Online 组织管理|Exchange 管理中心（ [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>如何知道 ATP 安全附件保护是否已就绪
 
@@ -61,7 +61,7 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 |:-----|:-----|
 |Pat 的组织具有 Office 365 E5，但尚未为 ATP 安全附件定义任何策略。|否。 虽然功能可用，但必须至少定义一个 ATP 安全附件策略，才能将 ATP 安全附件保护到位。|
 |先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。|否。 在这种情况下，财务员工将具有 ATP 安全附件保护，但在定义包含这些组的策略之前，其他员工（包括销售部门）将不会。|
-|昨天，Jean 的组织中的管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|是。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
+|昨天，Jean 的组织中的管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|是的。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
 |丽丽的组织有 Office 365 E5，其中的 ATP 安全附件策略适用于组织中的所有人。 Chris 收到包含附件的电子邮件，并将邮件转发给组织外部的其他人。|对于 Chris 收到的邮件，ATP 安全附件保护已就绪。 如果收件人的组织还设置了 ATP 安全附件策略，则 Chris 转发的邮件将在转发的邮件到达时服从这些策略。|
 |晓明的组织已准备好 ATP 安全附件策略，并且已打开[SharePoint、OneDrive 和 Microsoft 团队的 atp](atp-for-spo-odb-and-teams.md) 。 晓明假定已扫描 SharePoint Online 中的每个文件，并且可以安全地打开或下载。|根据定义的策略，ATP 安全附件保护已就绪;但是，这并不意味着会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个文件。 （若要了解详细信息，请参阅[适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。）|
 

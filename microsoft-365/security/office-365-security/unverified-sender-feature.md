@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文将指导你打开，如何阻止网络钓鱼邮件到达您的邮箱、Outlook.com 和 web 上的 Outlook。
-ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b49cc27685f62f5fb5d123a8a7aa4e51e0065e64
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352450"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588332"
 ---
 # <a name="unverified-sender"></a>未验证发件人
 
@@ -66,7 +66,7 @@ ms.locfileid: "44352450"
 
 如果你是 Office 365 客户，则可以通过 Office 365 安全性 & 合规性中心管理此功能，这与管理未验证的发件人处理的方法相同。 如果将发件人添加到欺骗智能欺骗允许列表中，将不会应用 "via" 处理。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-win32-desktop-use-to-add-the--and-the-via-properties"></a>Outlook.com 和 Outlook Win32 desktop 用于添加 "？" 和 "via" 属性的条件是什么？
 
@@ -86,8 +86,8 @@ ms.locfileid: "44352450"
 
 ## <a name="related-topics"></a>相关主题
 
-[帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+[帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 [在 Outlook.com 中处理网络钓鱼或欺骗](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
-[在 web 上的 Outlook 中筛选垃圾电子邮件和垃圾邮件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)
+[在 web 上的 Outlook 中筛选垃圾电子邮件和垃圾邮件](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在独立 Exchange Online Protection （EOP）中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录该报告，EOP 记录每个事件。
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350935"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587360"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在独立 EOP 中运行管理员角色组报告
 
@@ -54,7 +54,7 @@ ms.locfileid: "44350935"
 
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
 
-## <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+## <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 如果您已成功运行管理员角色组报告，那么在此日期范围内更改的角色组将显示在搜索结果窗格中。如果没有显示任何结果，那么在指定日期范围内没有发生对角色组的任何更改。如果您认为应该显示结果，请更改日期范围，然后再次运行报告。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44350935"
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用独立 Exchange Online PowerShell 搜索审核日志条目
 
-您可以使用 Exchange Online PowerShell 搜索符合指定条件的审核日志条目。 有关搜索条件列表，请参阅[管理员审核日志记录](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)。 此过程使用**search-adminauditlog** cmdlet 并在 Exchange Online PowerShell 中显示搜索结果。 如果需要返回超出在 **New-AdminAuditLogSearch** cmdlet 或 EAC"审核报告"报告中定义的限制的一组结果时，可使用此 cmdlet。
+您可以使用 Exchange Online PowerShell 搜索符合指定条件的审核日志条目。 有关搜索条件的列表，请参阅[search-adminauditlog 搜索条件](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此过程使用**search-adminauditlog** cmdlet 并在 Exchange Online PowerShell 中显示搜索结果。 如果需要返回超出在 **New-AdminAuditLogSearch** cmdlet 或 EAC"审核报告"报告中定义的限制的一组结果时，可使用此 cmdlet。
 
 若要搜索满足指定条件的审核日志，请使用以下语法。
 
@@ -119,7 +119,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 ### <a name="view-details-of-audit-log-entries"></a>查看审核日志条目的详细信息
 
-**Search-AdminAuditLog** cmdlet 可返回 [管理员审核日志记录](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)的"审核日志内容"部分中介绍的字段。在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
+**Search-adminauditlog** Cmdlet 返回[审核日志内容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的字段。 在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
 
 若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用 Exchange Online PowerShell 中的过程来**搜索审核日志条目，并**在本主题后面的内容中将结果发送到收件人，以创建一个 XML 文件。
 

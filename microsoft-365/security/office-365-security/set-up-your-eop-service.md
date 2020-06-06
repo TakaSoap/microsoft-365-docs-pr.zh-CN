@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理员可以了解如何设置独立的 Exchange Online Protection （EOP），以保护本地电子邮件环境。
-ms.openlocfilehash: bf762eabcfebf34ca8cb8d37935ffac011228df0
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b50ec7e2bca3765bb81e165b74596155da1f7940
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209795"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588060"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>设置独立的 EOP 服务
 
@@ -43,12 +43,12 @@ ms.locfileid: "44209795"
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤1：使用 Microsoft 365 管理中心添加并验证你的域
 
-1. 在[Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)，转到 "**安装程序**"，将您的域添加到服务中。
+1. 在[Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)，转到 "**安装程序**"，将您的域添加到服务中。
 
 2. 按照该步骤将适用的 DNS 记录添加到您的 DNS 托管提供程序以验证域所有权。
 
 > [!TIP]
-> 在 office 365 的任何 DNS 托管提供程序中[添加域到 office 365](https://docs.microsoft.com/office365/admin/setup/add-domain) ，并在将您的域添加到服务和配置 DNS 时，[在任何 dns 托管提供程序中创建 dns 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+> 在 office 365 的任何 DNS 托管提供程序中[添加域到 office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) ，并在将您的域添加到服务和配置 DNS 时，[在任何 dns 托管提供程序中创建 dns 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>步骤 2：添加收件人，并选择性启用 DBEB
 
@@ -77,7 +77,7 @@ ms.locfileid: "44209795"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步骤6：使用 Microsoft 365 管理中心将 MX 记录指向 EOP
 
-按照域配置步骤更新您的域的 MX 记录，以便入站电子邮件通过 EOP 流。 请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。 有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+按照域配置步骤更新您的域的 MX 记录，以便入站电子邮件通过 EOP 流。 请务必将你的 MX 记录直接指向 EOP 而不是让第三方筛选服务将电子邮件中继到 EOP。 有关详细信息，请再次参阅[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!NOTE]
 > 如果您必须将 MX 记录指向位于 EOP 前面的另一台服务器或服务，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。

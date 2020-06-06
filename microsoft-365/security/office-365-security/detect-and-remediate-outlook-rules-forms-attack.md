@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351971"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588260"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -165,7 +165,7 @@ ms.locfileid: "44351971"
 
 4. 安装最新版本的 Outlook。 请注意，默认情况下，当前版本的 Outlook 阻止这两种攻击类型。
 
-5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），如果尚未启用 MFA，请按照[为用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步骤进行操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
+5. 删除邮箱的所有脱机副本后，重置用户的密码（使用高质量的密码），如果尚未启用 MFA，请按照[为用户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步骤进行操作。 这可确保用户的凭据不会通过其他方式（如网络钓鱼或密码重用）公开。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -193,7 +193,7 @@ ms.locfileid: "44351971"
 
 只有攻击者在窃取或破坏用户的帐户后，才会使用这些规则和表单攻击。 因此，阻止对组织使用这些漏洞的第一步是主动保护您的用户帐户。 帐户受到破坏的一些最常见的方法是通过网络钓鱼或[密码 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻击。
 
-保护用户帐户（尤其是管理员帐户）的最佳方法是为[用户设置多重身份验证](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 此外，还应执行以下操作：
+保护用户帐户（尤其是管理员帐户）的最佳方法是为[用户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。 此外，还应执行以下操作：
 
 - 监视如何[访问和使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的用户帐户。 您可能不会阻止最初的破坏，但您将通过更快地进行检测来缩短危害的持续时间和影响。 您可以使用这些[Office 365 云应用安全策略](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)来监视您在异常活动上的帐户和警报：
 

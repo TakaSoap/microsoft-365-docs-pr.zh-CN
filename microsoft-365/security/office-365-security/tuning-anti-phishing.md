@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 中确定仿冒邮件的原因以及在将来阻止更多网络钓鱼邮件的原因。
-ms.openlocfilehash: a9b7a58f32fd14c157d72e8f91a1f1b8bfe3aedc
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208581"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588436"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -75,4 +75,4 @@ ms.locfileid: "44208581"
 
 - 多重因素身份验证（MFA）是防止受损帐户的一种不错的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法，先在为每个人启用 MFA 之前为最敏感的用户（管理员、高级管理人员等）启用 MFA。 有关说明，请参阅[设置多因素身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
-- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅[Microsoft 安全分数](../mtp/microsoft-secure-score.md)中的**邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息，请参阅[通过安全分数缓解客户端外部转发规则](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/)。
+- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅[Microsoft 安全分数](../mtp/microsoft-secure-score.md)中的**邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息，请参阅[通过安全分数缓解客户端外部转发规则](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。

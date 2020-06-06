@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解 Microsoft Exchange Online Protection （EOP）管理员可用的报告和故障排除工具。
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206438"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588164"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -37,13 +37,13 @@ ms.locfileid: "44206438"
 
 有关详细信息，请参阅下列资源：
 
-- [Microsoft 365 组-管理中心中的 microsoft 365 报告](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 组-管理中心中的 microsoft 365 报告](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365 管理中心内的报告-电子邮件活动](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365 管理中心内的报告-电子邮件活动](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [管理中心中的 Microsoft 365 报表-电子邮件应用程序使用情况](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [管理中心中的 Microsoft 365 报表-电子邮件应用程序使用情况](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- ["管理中心" 中的 Microsoft 365 报表-邮箱使用情况](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- ["管理中心" 中的 Microsoft 365 报表-邮箱使用情况](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的安全性 & 合规性报告
 

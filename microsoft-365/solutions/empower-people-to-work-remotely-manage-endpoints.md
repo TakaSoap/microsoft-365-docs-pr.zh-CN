@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用 Microsoft Endpoint Manager 管理管理设备、电脑和其他终结点。
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160794"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560489"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>第 3 步。 部署设备、电脑和其他终结点的终结点管理
 
-使用远程工作者，需要支持越来越多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式工作区和新式管理功能，使你的数据在云中和本地保持安全。 
+使用远程工作者，需要支持越来越多的个人设备。 终结点管理是一种基于策略的安全方法，要求设备在获得对资源的访问权限之前满足特定条件。 Microsoft Endpoint Manager 提供新式管理功能，使你的数据在云中和本地保持安全。 
 
 Endpoint Manager 通过结合以下可能已知和正在使用的服务，提供用于管理移动设备、台式计算机、虚拟机、嵌入式设备和服务器的服务和工具。
 
@@ -34,7 +34,7 @@ Endpoint Manager 通过结合以下可能已知和正在使用的服务，提供
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune 旨在帮助你在不管理用于访问组织数据的设备时保护数据。 Intune 应用保护策略与 Azure AD 条件访问相结合，提供对移动设备上的数据的精细控制。 借助 Intune，你还可以定义全面的策略，仅允许适当人员在适当条件下访问你的公司数据，并通过控制其在 Office、Outlook 和其他移动应用中使用数据的方式来确保数据持续受保护。
+Intune 旨在帮助你在不管理用于访问组织数据的设备时保护数据。 Intune 应用保护策略与 Azure Active Directory (Azure AD) 条件访问相结合，提供对移动设备上的数据的精细控制。 借助 Intune，你还可以定义全面的策略，仅允许适当人员在适当条件下访问你的公司数据，并通过控制其在 Office、Outlook 和其他移动应用中使用数据的方式来确保数据持续受保护。
 
 有关详细信息，请参阅此 [Microsoft Intune 概述](https://docs.microsoft.com/intune/fundamentals/what-is-intune)。
 
@@ -66,8 +66,10 @@ Windows Autopilot 是一个零接触、自助式的 Windows 部署平台。 它�
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>用于终结点管理的管理员技术资源
 
-- [注册托管设备以实现安全，利用未托管设备的应用设置，并使用设备和应用策略](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
-- [如何注册用于移动设备管理 (MDM) 的不同类型的设备](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [有关管理面向远程工作者的 Windows 10 设备的第 3 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [有关管理面向远程工作者的用户桌面和浏览器的第 5 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [部署适用于 Microsoft 365 的移动基础结构](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [如何注册用于移动设备管理的不同类型的设备](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [如何向最终用户讲解 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>步骤 3 的结果

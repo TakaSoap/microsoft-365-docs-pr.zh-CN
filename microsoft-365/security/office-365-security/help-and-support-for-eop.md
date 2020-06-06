@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: 2ef6bacbce6f46a17abcceb98e40d20ed3ad5363
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 277c48a8ac9503681eb695fba3697ddd16e49b88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209195"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588236"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -29,7 +29,7 @@ ms.locfileid: "44209195"
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[联系商业版产品的支持人员 - 管理员帮助](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[联系商业版产品的支持人员 - 管理员帮助](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 [Microsoft 365 社区](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 

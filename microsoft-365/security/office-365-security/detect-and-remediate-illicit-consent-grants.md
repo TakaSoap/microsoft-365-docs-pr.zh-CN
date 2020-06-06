@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Microsoft Office 365 中的非法许可授予攻击。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034824"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587492"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测并修正违法许可授予
 
@@ -90,7 +90,7 @@ ms.locfileid: "44034824"
 
 ### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>让用户枚举其应用程序访问权限的步骤
 
-让你的用户转https://myapps.microsoft.com到并查看其自己的应用程序访问权限。 他们应该能够查看具有访问权限的所有应用程序，查看有关这些应用程序的详细信息（包括访问范围），并能够撤销可疑或违法应用程序的权限。
+让你的用户转到 https://myapps.microsoft.com 并查看其自己的应用程序访问权限。 他们应该能够查看具有访问权限的所有应用程序，查看有关这些应用程序的详细信息（包括访问范围），并能够撤销可疑或违法应用程序的权限。
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 执行此操作的步骤
 
@@ -158,7 +158,7 @@ ms.locfileid: "44034824"
 
 - 您还可以完全禁用受影响帐户的登录，这将禁用对该帐户中的数据的应用程序访问。 这并不是最终用户的工作效率的理想之处，但如果您正在努力快速限制影响，则它可能是一个可行的短期补救措施。
 
-- 您可以为租赁启用集成的应用程序。 这是一项重大步骤，可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做，因为这会严重削弱用户在第三方应用程序中的工作效率。 为此，可以按照[启用或禁用集成应用程序](https://docs.microsoft.com/office365/admin/misc/integrated-apps)中的步骤操作。
+- 您可以为租赁启用集成的应用程序。 这是一项重大步骤，可禁用最终用户对租户范围授予许可的能力。 这样可以防止您的用户无意中授予对恶意应用程序的访问权限。 强烈建议不要这样做，因为这会严重削弱用户在第三方应用程序中的工作效率。 为此，可以按照[启用或禁用集成应用程序](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)中的步骤操作。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 

@@ -16,17 +16,17 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 获取在 Office 365 高级威胁防护工作时可能看到的警告页面的概述。
-ms.openlocfilehash: f061d4a35b1c77721464fe2cc5ac4a85ca4bd16e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635982"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588284"
 ---
 # <a name="atp-safe-links-warning-pages"></a>ATP 安全链接警告页
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 个人版，并且您要查找有关 Outlook 中安全链接的信息，请参阅[Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 个人版，并且您要查找有关 Outlook 中安全链接的信息，请参阅[Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 [Office 365 高级威胁防护](office-365-atp.md)（ATP）通过功能（如[atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反网络钓鱼防护](anti-phishing-protection.md)）帮助保护您的组织免受网络钓鱼企图和恶意软件的攻击。 保护准备就绪后，将检查电子邮件和 Office 文档中的链接（Url）。 如果 URL 被标识为可疑或恶意，则在单击时可能会阻止您打开该 URL。 您可能会看到一个警告页面，而不是直接转到该网站。
 
