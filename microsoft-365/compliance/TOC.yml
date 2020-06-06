@@ -249,17 +249,19 @@
           href: archiving-third-party-data.md
         - name: 存档脸书数据（预览版）
           href: archive-facebook-data-with-sample-connector.md
-        - name: 存档推特数据（预览版）
-          href: archive-twitter-data-with-sample-connector.md
-        - name: 存档领英数据
-          href: archive-linkedin-data.md
-        - name: 存档即时 Bloomberg 数据
-          href: archive-instant-bloomberg-data.md
         - name: 导入 HR 数据（预览版）
           href: import-hr-data.md
+        - name: 存档即时 Bloomberg 数据
+          href: archive-instant-bloomberg-data.md
+        - name: 存档领英数据
+          href: archive-linkedin-data.md
+        - name: 存档推特数据（预览版）
+          href: archive-twitter-data-with-sample-connector.md
         - name: 与合作伙伴联系以存档第三方数据
           href: work-with-partner-to-archive-third-party-data.md
-    - name: 存储数据
+        - name: 搜索第三方数据
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: 存储邮箱数据
       items:
         - name: 启用存档邮箱
           href: enable-archive-mailboxes.md
@@ -388,8 +390,6 @@
               href: bulk-edit-content-searches.md
             - name: 准备用于 ID 列表搜索的 CSV 文件
               href: csv-file-for-an-id-list-content-search.md
-            - name: 搜索第三方数据
-              href: use-content-search-to-search-third-party-data-that-was-imported.md
             - name: 检查搜索查询中是否有错误
               href: check-your-content-search-query-for-errors.md
             - name: 常见电子数据展示问题疑难解答
