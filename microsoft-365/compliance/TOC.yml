@@ -885,8 +885,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: 信息保护
-          href: gdpr-information-protection.md
         - name: 数据主体请求
           items:
             - name: 数据主体请求
@@ -927,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: 信息保护
+          href: gdpr-information-protection.md
         - name: Microsoft 数据保护官员
           href: gdpr-data-protection-officer.md
+        - name: 导出系统生成的日志数据所需的其他步骤
+          href: gdpr-system-generated-log-data.md
 - name: 混合合规性功能
   items:
     - name: 带 AD RMS 的 Exchange Online 邮件加密
