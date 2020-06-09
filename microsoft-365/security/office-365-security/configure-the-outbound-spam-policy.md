@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中查看、创建、修改和删除出站垃圾邮件策略。
-ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351995"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616574"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -77,7 +77,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -120,7 +120,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成后，单击“保存”****。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 
@@ -143,7 +143,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成后，单击“保存”****。
+     e. 完成时，请单击“保存”****。
 
      若要禁用此设置，请清除该复选框。
 
@@ -178,7 +178,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 6. 需要展开 "**应用于**" 部分，以标识应用该策略的内部发件人。
 
-    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _ \< sender1 \> _或_ \< sender2 \> _）。 不同的条件或例外使用和逻辑（例如， _ \< sender1 \> _和_ \< group 1 \> 的 member_）。
+    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _\<sender1\>_ 或 _\<sender2\>_ ）。 不同的条件或例外使用和逻辑（例如 _\<sender1\>_ 和 _\<member of group 1\>_ ）。
 
     若要查看所有可配置的条件，最简单的方法是单击 **“添加条件”** 三次。 若要删除不需要配置的条件，可以单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
 
@@ -286,7 +286,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
   - 将新策略创建为禁用（_Enabled_ `$false` 在**HostedOutboundSpamFilterRule** cmdlet 上启用）。
 
-  - 在**HostedOutboundSpamFilterRule** cmdlet 上创建（_优先级_ _ \< 编号 \> _）过程中设置策略的优先级。
+  - _Priority_ _\<Number\>_ 在**HostedOutboundSpamFilterRule** cmdlet 上创建（优先级）过程中设置策略的优先级。
 
 - 在 PowerShell 中创建的新的出站垃圾邮件筛选器策略在安全 & 合规性中心中不可见，除非您将策略分配给垃圾邮件筛选器规则。
 

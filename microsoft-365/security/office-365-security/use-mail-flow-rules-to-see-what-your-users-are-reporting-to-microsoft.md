@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用邮件流规则（也称为传输规则）接收用户向 Microsoft 报告的邮件的副本。
-ms.openlocfilehash: f8e4310fef19a8925640c485d060389352218e0b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d50a0f02dd3d65b8576261fc2332aba86d55df56
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352404"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616786"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用邮件流规则来查看用户向 Microsoft 报告的内容
 
@@ -36,7 +36,7 @@ ms.locfileid: "44352404"
 
 - 若要打开 EAC，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)或[独立 EOP 中的 exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 有关 Exchange Online 和独立 EOP 中的邮件流规则的详细信息，请参阅下列主题：
 
@@ -73,7 +73,7 @@ ms.locfileid: "44352404"
 
 4. 您可以进行其他选择来审核规则、测试规则、在特定时间段内激活规则，以及其他设置。 建议在强制执行规则之前对其进行测试。
 
-5. 完成后，单击“保存”****。
+5. 完成时，请单击“保存”****。
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 创建邮件流规则以接收报告的邮件的副本
 

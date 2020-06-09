@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Exchange online Protection （EOP）组织（带有或不包含 Exchange Online 邮箱）中可用的反网络钓鱼策略。
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352053"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616694"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反网络钓鱼策略
 
@@ -69,7 +69,7 @@ ms.locfileid: "44352053"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 "**反钓鱼**" 页面，请使用 <https://protection.office.com/antiphishing> 。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
   您无法在独立 EOP PowerShell 中管理反网络钓鱼策略。
 
@@ -103,7 +103,7 @@ ms.locfileid: "44352053"
 
 4. 在显示的 "**应用于**" 页上，确定该策略应用于的内部收件人。
 
-   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“且”逻辑（例如，_\<recipient1\>_ 且 _\<组成员 1\>_）。
+   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _\<recipient1\>_ 或 _\<recipient2\>_ ）。 不同的条件或例外使用和逻辑（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
 
    单击 "**添加条件**"。 在出现的下拉列表中，选择 "**应用**条件：
 
@@ -141,11 +141,11 @@ ms.locfileid: "44352053"
 
 2. 选择要修改的自定义反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 将显示 "**编辑您的策略 \< \> 名称**" 浮出控件。 单击任意部分中的 "**编辑**" 可访问该部分中的设置。
+3. 将出现 "**编辑 \<name\> 您的策略**" 浮出控件。 单击任意部分中的 "**编辑**" 可访问该部分中的设置。
 
    - 以下步骤按各节的显示顺序显示，但它们不是连续的（您可以按任何顺序选择和修改节）。
 
-   - 在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任意页面上的 "**保存**" （或 "**取消**" 或 "**关闭** ![ 关闭" 图标， ](../../media/scc-remove-icon.png) 以返回到 "**编辑策略 \< 名称 \> ** " 页（无需访问向导的最后一页即可保存或保留）。
+   - 在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任意页面上的 "**保存**" （或 "**取消**" 或 "**关闭** ![ 关闭" 图标， ](../../media/scc-remove-icon.png) 以返回到 "**编辑策略 \<name\> ** " 页（无需访问向导的最后一页即可保存或保留）。
 
 4. **策略设置**：单击 "**编辑**" 可修改在上一节中[创建策略](#use-the-security--compliance-center-to-create-anti-phishing-policies)时可用的相同设置：
 
@@ -184,7 +184,7 @@ ms.locfileid: "44352053"
 
    完成后，请单击任意页面上的 "**保存**"。
 
-6. 返回到 "**编辑你的 \< 策略 \> 名称**" 页，查看你的设置，然后单击 "**关闭**"。
+6. 返回到 "**编辑你的 \<Name\> 策略**" 页，查看你的设置，然后单击 "**关闭**"。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>使用安全 & 合规性中心修改默认的反网络钓鱼策略
 
@@ -234,7 +234,7 @@ ms.locfileid: "44352053"
 
 2. 选择要修改的策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 将显示 "**编辑您的策略 \< \> 名称**" 浮出控件。
+3. 将出现 "**编辑 \<name\> 您的策略**" 浮出控件。
 
    - **优先级**值为**0**的自定义反网络钓鱼策略只有 "**降低优先级**" 按钮可用。
 
@@ -256,7 +256,7 @@ ms.locfileid: "44352053"
 
    - 单击 "**默认策略**" 以查看默认的反网络钓鱼策略。
 
-3. 将出现 "**编辑您的策略 \< \> 名称**" 浮出控件，您可以在其中查看设置和值。
+3. 将出现 "**编辑 \<name\> 策略**" 浮出控件，您可以在其中查看设置和值。
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>使用安全 & 合规性中心删除反网络钓鱼策略
 
@@ -264,7 +264,7 @@ ms.locfileid: "44352053"
 
 2. 选择要删除的策略。 如果已被选中，请取消选择并再次选择它。
 
-3. 在 "**编辑您的 \< 策略 \> 名称**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。
+3. 在出现的 "**编辑 \<name\> 策略**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。
 
 无法删除默认策略。
 
@@ -288,7 +288,7 @@ ms.locfileid: "44352053"
 
   - 将新策略创建为禁用（_Enabled_ `$false` 在**AntiPhishRule** cmdlet 上启用）。
 
-  - 在**AntiPhishRule** cmdlet 上创建（_优先级_ _ \< 编号 \> _）过程中设置策略的优先级。
+  - _Priority_ _\<Number\>_ 在**AntiPhishRule** cmdlet 上创建（优先级）过程中设置策略的优先级。
 
 - 在 PowerShell 中创建的新反网络钓鱼策略在安全 & 合规性中心中不可见，除非您将策略分配给反网络钓鱼规则。
 
@@ -507,7 +507,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
   - 从列表中选择策略，并在浮出控件中查看详细信息。
   - 单击 "**默认策略**" 并在浮出控件中查看详细信息。
 
-- 在 Exchange Online PowerShell 中，将 " \< 名称 \> " 替换为策略或规则的名称，然后运行以下命令并验证设置：
+- 在 Exchange Online PowerShell 中，将替换 \<Name\> 为策略或规则的名称，然后运行以下命令并验证设置：
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

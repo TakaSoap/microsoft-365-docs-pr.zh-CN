@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Microsoft 365 安全 & 合规性中心中分配权限，才能管理其任何安全性或合规性功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19358e3cca0c4d47338fe5fc72b671e36477ce7e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bfded9d3f75f57eca1097fec6f18dc55410b65fb
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351947"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616970"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
 
@@ -68,7 +68,7 @@ ms.locfileid: "44351947"
 
 ## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 授予另一个用户对安全 & 合规中心的访问权限
 
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 使用 **Add-rolegroupmember** 命令将用户添加到组织管理角色，如以下示例中所示。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44351947"
 
 有关语法和参数的详细信息，请参阅[外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)。
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证您是否已授予用户对安全 & 合规中心的访问权限，请使用**add-rolegroupmember** Cmdlet 查看组织管理角色组中的成员，如以下示例所示。
 

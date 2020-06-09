@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: fc9a13ce7a2fc8782ed260ce0ce64aec456a4d51
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: 820f635e679be9d579ba94fc3288830dc6996a0e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213420"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617038"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -78,7 +78,7 @@ ms.locfileid: "44213420"
 |基于 Web 的管理|管理员可以在 Exchange 管理中心（EAC）中管理服务，该服务在60语言中受支持。 有关详细信息，请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。|
 |目录同步|目录同步通过 Azure Active Directory 同步工具提供。有关详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"部分。  |
 |基于目录的边缘阻止 (DBEB)|通过 DBEB 功能，您可以在服务网络外围拒绝发送至无效收件人的邮件。 DBEB 允许管理员将已启用邮件的收件人添加到 Microsoft 365，并阻止发送到 Microsoft 365 中不存在的电子邮件地址的所有邮件。 有关配置 DBEB 的详细信息，请参阅[使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。|
-|PowerShell|在独立 EOP PowerShell 中提供完整的 EOP 功能。 有关详细信息，请参阅[Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。|
+|PowerShell|在独立 EOP PowerShell 中提供完整的 EOP 功能。 有关详细信息，请参阅[Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)。|
 |**报告和日志记录**||
 |邮件跟踪|当电子邮件通过服务时，管理员可以追随电子邮件。 您可以确定服务是否已接收、拒绝、推迟或传递目标电子邮件。 这使得您可以有效回答用户的问题，解决邮件流问题，验证策略更改，并减少联系技术支持寻求帮助的需要。 有关详细信息，请参阅“[安全与合规中心中的邮件跟踪](message-trace-scc.md)”。|
 |基于 Web 的报告|安全 & 合规性中心中的邮件保护报告提供了邮件传输数据。 例如，您可以监视检测到的垃圾邮件和恶意软件的数量或邮件流规则匹配的频率。 通过这些交互式报告，您可以快速获取摘要数据的可视报告，并进一步了解每封邮件的详细信息（可回溯 90 天）。 有关详细信息，请参阅[使用邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。|

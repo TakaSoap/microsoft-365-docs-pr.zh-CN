@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: 了解独立 Exchange Online Protection （EOP）中的 web 管理界面。
-ms.openlocfilehash: 378754f2565604236f7ac33e471d1f991238d304
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209711"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616994"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>独立 EOP 中的 Exchange 管理中心
 
@@ -70,7 +70,7 @@ Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Prot
 
 - **邮件流**：您可以在此处管理邮件流规则（也称为传输规则）、接受域和连接器，以及可以转到运行邮件跟踪的位置。
 
-- **混合**：您可以在这里运行 "[混合配置" 向导](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)，以及可以在其中安装[Exchange Online PowerShell 模块](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell)。
+- **混合**：您可以在这里运行 "[混合配置" 向导](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)，以及可以在其中安装[Exchange Online PowerShell 模块](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
 
 ### <a name="tabs"></a>选项卡
 

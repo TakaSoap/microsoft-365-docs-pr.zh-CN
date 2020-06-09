@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用邮件流规则（传输规则）在 Exchange Online Protection （EOP）中标识和筛选批量邮件（灰色邮件）。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa2c13aed1fd7f9c34872d05693f88577bbbc9c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 860c9a1af2cb560c4fd966b303501686a1cbfea7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352392"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613308"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用邮件流规则筛选批量电子邮件
 
@@ -41,7 +41,7 @@ ms.locfileid: "44352392"
 
 - 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在独立 EOP 中打开 EAC，请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 有关 Exchange Online 和独立 EOP 中的邮件流规则的详细信息，请参阅下列主题：
 
@@ -148,7 +148,7 @@ New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWor
 
 - 在 EAC 中，转到 "**邮件流** \> **规则**"。 \> 选择该规则 \> ，然后单击 "**编辑** ![ 编辑 ](../../media/ITPro-EAC-EditIcon.png) " 图标，并验证设置。
 
-- 在 PowerShell 中，将 \< 规则名称替换 \> 为规则名称，然后运行以下命令来验证设置：
+- 在 PowerShell 中，将替换 \<Rule Name\> 为规则名称，然后运行以下命令来验证设置：
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List

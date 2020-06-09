@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c0b58d41996df2829590d7184615e8f30f4c4e16
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 610cdebaf4e010c78d7356286901fb18c5d740d1
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234801"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616486"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42234801"
 
 
 
-`DeviceRegistryEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关创建和修改注册表项的信息。 使用此参考来构建从此表返回信息的查询。
+`DeviceRegistryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关创建和修改注册表项的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -51,6 +51,7 @@ ms.locfileid: "42234801"
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
 | `InitiatingProcessAccountSid` | string | 运行负责事件的进程的帐户的安全标识符（SID） |
 | `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |
+| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件的进程（图像文件）的 MD5 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessId` | int | 启动事件的进程的进程 ID （PID） |

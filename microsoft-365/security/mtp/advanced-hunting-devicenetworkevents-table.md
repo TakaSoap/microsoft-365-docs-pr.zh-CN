@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929036"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617114"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42929036"
 
 
 
-`DeviceNetworkEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关网络连接和相关事件的信息。 使用此参考来构建从此表返回信息的查询。
+`DeviceNetworkEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关网络连接和相关事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -50,6 +50,7 @@ ms.locfileid: "42929036"
 | `LocalIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、环回、Teredo、FourToSixMapping 和广播 |
 | `RemoteIPType` | string | IP 地址的类型，例如 Public、Private、Reserved、环回、Teredo、FourToSixMapping 和广播 |
 | `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |
+| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessMD5` | string | 启动事件的进程（图像文件）的 MD5 哈希 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessId` | int | 启动事件的进程的进程 ID （PID） |

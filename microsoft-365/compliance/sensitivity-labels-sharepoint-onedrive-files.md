@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
+ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432601"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44604307"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -195,6 +195,35 @@ ms.locfileid: "44432601"
 - 如果已启用任何其他 IRM 库设置，其中包括阻止用户上载不支持 IRM 的文档，则强制实施这些设置。
 
 在这种情况下，您可以确信，如果下载了所有 Office 和 PDF 文件，即使这些文件不带标签，也可以防止未经授权的访问。 但是，已上传的已标记文件不会受益于新功能。
+
+## <a name="search-for-documents-by-sensitivity-label"></a>按敏感度标签搜索文档
+
+使用托管属性**InformationProtectionLabelId**在 SharePoint 或 OneDrive 中查找具有特定灵敏度标签的所有文档。 使用以下语法：`InformationProtectionLabelId:<GUID>`
+
+例如，若要搜索已标记为 "保密" 的所有文档，并且该标签的 GUID 为 "8faca7b8-8d20-48a3-8ea2-0f96310a848e"，请在搜索框中键入以下内容：
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+若要获取敏感度标签的 Guid，请使用 "[获取标签](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps)" cmdlet：
+    
+1. 首先，[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
+    
+    例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录：
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. 然后运行以下命令：
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+有关使用托管属性的详细信息，请参阅[在 SharePoint 中管理搜索架构](https://docs.microsoft.com/sharepoint/manage-search-schema)。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>如何禁用 SharePoint 和 OneDrive 的敏感度标签（自愿退出）
 

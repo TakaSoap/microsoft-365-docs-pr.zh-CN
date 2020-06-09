@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 混合环境中的用户垃圾邮件文件夹。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d5d83f8cfb994499be98eccf77b36d83e1f3d7c
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351959"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617050"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹
 
@@ -60,7 +60,7 @@ ms.locfileid: "44351959"
 
   - 是否在邮箱上启用垃圾邮件规则（_启用_的参数值将在 Exchange 命令行管理[程序的 set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration) cmdlet 中 $true）。 它是传递邮件后实际将邮件移动到 "垃圾邮件" 文件夹的垃圾邮件规则。 默认情况下，在邮箱上启用垃圾邮件规则。 有关详细信息，请参阅[在邮箱上配置 Exchange 反垃圾邮件设置](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
-- 若要在 Exchange 服务器上打开 EAC，请参阅 exchange [administration center In Exchange server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 Exchange 命令行管理程序，请参阅 [https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/exchange-server/open-the-exchange-management-shell) 。
+- 若要在 Exchange 服务器上打开 EAC，请参阅 exchange [administration center In Exchange server](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要打开 Exchange 命令行管理程序，请参阅 [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) 。
 
 - 有关本地 Exchange 中的邮件流规则的详细信息，请参阅下列主题：
 
@@ -134,7 +134,7 @@ New-TransportRule -Name "EOP SFV:SKB to SCL 6" -HeaderContainsMessageHeader "X-F
 
 - 在 EAC 中，转到 "**邮件流** \> **规则**"，选择规则，然后单击 "**编辑** ![ 编辑图标 ](../../media/ITPro-EAC-EditIcon.png) " 以验证设置。
 
-- 在 Exchange 命令行管理程序中，将 \< RuleName 替换 \> 为邮件流规则的名称，并 rul 以下命令以验证设置：
+- 在 Exchange 命令行管理程序中，将替换 \<RuleName\> 为邮件流规则的名称，并 rul 以下命令来验证设置：
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f99420b978f77f8b4a4660394d4a6f335c5aad66
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f340a34b3c88f1caba83861c4d36ce140846d495
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235041"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617170"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235041"
 
 
 
-[高级搜寻](advanced-hunting-overview.md)架构中的`DeviceEvents` "杂项设备事件" 或 "表" 包含有关各种事件类型的信息，包括由安全控制触发的事件，如 Windows Defender 防病毒和利用漏洞保护。 使用此参考来构建从此表返回信息的查询。
+高级搜寻架构中的 "杂项设备事件" 或 `DeviceEvents` "表" 包含有关各种事件类型的信息，包括由安全控制触发的事件，如 Windows Defender 防病毒和利用漏洞保护。 [advanced hunting](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "42235041"
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
-| `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不填充此字段—使用 SHA1 列（如果可用） |
+| `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 将录制的操作应用于的文件的 MD5 哈希值 |
 | `AccountDomain` | string | 帐户的域 |
 | `AccountName` | string | 帐户的用户名 |
@@ -68,7 +68,7 @@ ms.locfileid: "42235041"
 | `FileOriginIP` | string | 从中下载文件的 IP 地址 |
 | `AdditionalFields` | string | 有关 JSON 数组格式事件的其他信息 |
 | `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |
-| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不填充此字段—使用 SHA1 列（如果可用） |
+| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件的进程（图像文件）的文件夹 |
 | `InitiatingProcessId` | int | 启动事件的进程的进程 ID （PID） |

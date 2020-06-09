@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 了解如何管理 Exchange Online Protection （EOP）中的邮件用户，包括使用目录同步、EAC 和 PowerShell 管理用户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352428"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616830"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在独立 EOP 中管理邮件用户
 
@@ -35,7 +35,7 @@ ms.locfileid: "44352428"
 
 - 若要打开 Exchange 管理中心（EAC），请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 当您在 EOP PowerShell 中创建邮件用户时，您可能会遇到限制。 此外，EOP PowerShell cmdlet 使用一种批处理方法，该方法会导致几分钟的传播延迟，然后才会显示命令的结果。
 
@@ -80,9 +80,9 @@ ms.locfileid: "44352428"
 
 3. 在打开的 "邮件用户属性" 页上，单击下列选项卡之一以查看或更改属性。
 
-   完成后，单击“保存”****。
+   完成时，请单击“保存”****。
 
-#### <a name="general"></a>常规
+#### <a name="general"></a>概要
 
 使用 "**常规**" 选项卡可以查看或更改有关邮件用户的基本信息。
 
@@ -100,7 +100,7 @@ ms.locfileid: "44352428"
 
 使用 "**联系人信息**" 选项卡查看或更改用户的联系信息。 该页上的信息显示在通讯簿中。
 
-- **地址**
+- **Street**
 - **市/县**
 - **省/市/自治区**
 - **邮政编码**
@@ -113,7 +113,7 @@ ms.locfileid: "44352428"
   - **Office**
   - **住宅电话**
   - **网页**
-  - **注释**
+  - **备注**
 
 #### <a name="organization"></a>组织
 
@@ -139,7 +139,7 @@ ms.locfileid: "44352428"
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-若要查看有关特定邮件用户的详细信息，请将 \< MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，并运行以下命令：
+若要查看有关特定邮件用户的详细信息，请将 \<MailUserIdentity\> 其替换为邮件用户的名称、别名或帐户名称，并运行以下命令：
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>使用独立 EOP PowerShell 删除邮件用户
 
-若要删除独立 EOP PowerShell 中的邮件用户，请将 \< MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，然后运行以下命令：
+若要删除独立 EOP PowerShell 中的邮件用户，请将 \<MailUserIdentity\> 其替换为邮件用户的名称、别名或帐户名称，然后运行以下命令：
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- \<将 MailUserIdentity 替换 \> 为邮件用户的名称、别名或帐户名称，然后运行以下命令来验证设置：
+- 将替换 \<MailUserIdentity\> 为邮件用户的名称、别名或帐户名称，然后运行以下命令来验证设置：
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

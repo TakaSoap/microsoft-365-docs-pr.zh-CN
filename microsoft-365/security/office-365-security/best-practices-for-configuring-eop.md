@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循这些有关独立 Exchange Online Protection （EOP）的最佳实践建议，以便自行设置成功并避免常见配置错误。
-ms.openlocfilehash: 69b0789612d6490305ff31d89954bc1d9258ac01
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587528"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616718"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>配置独立 EOP 的最佳实践
 
@@ -53,13 +53,13 @@ ms.locfileid: "44587528"
 |[到邮箱的 POP 连接](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|禁用|禁用||
 |已通过身份验证的 SMTP 提交|禁用|禁用|POP3 和 IMAP4 客户端需要经过身份验证的客户端 SMTP 提交（也称为 "客户端 SMTP 提交" 或 "SMTP 身份验证"）才能发送电子邮件。|
 |到邮箱的 EWS 连接|禁用|禁用||
-|[PowerShell 连接](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|禁用|禁用|适用于邮箱用户或邮件用户（由[获取用户](https://docs.microsoft.com/powershell/module/exchange/get-user)cmdlet 返回的用户对象）。|
+|[PowerShell 连接](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|禁用|禁用|适用于邮箱用户或邮件用户（由[获取用户](https://docs.microsoft.com/powershell/module/exchange/get-user)cmdlet 返回的用户对象）。|
 |尽可能使用[欺骗智能](learn-about-spoof-intelligence.md)白名单发件人|是|是||
 |[基于目录的边缘阻止（DBEB）](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已启用|已启用|域类型 = 权威|
 |[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
 |
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关详细信息，请参阅[安全性 & 合规性中心中的邮件跟踪中](message-trace-scc.md)的邮件跟踪工具。
 

@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: 独立 Exchange Online Protection （EOP）组织中的管理员可以了解如何在 Exchange 管理中心（EAC）和独立 Exchange Online Protection （EOP） PowerShell 中创建、修改和删除通讯组和启用邮件的安全组。
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352187"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616498"
 ---
 # <a name="manage-groups-in-eop"></a>在 EOP 中管理组
 
@@ -38,7 +38,7 @@ ms.locfileid: "44352187"
 
 - 若要打开 Exchange 管理中心，请参阅[独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 当您在独立 EOP PowerShell 中管理组时，您可能会遇到限制。 本主题中的 PowerShell 过程使用一种批处理方法，该方法会导致在几分钟内发生传播延迟，然后才能看到命令的结果。
 
@@ -93,9 +93,9 @@ ms.locfileid: "44352187"
 
 3. 在打开的 "通讯组属性" 页上，单击下列选项卡之一以查看或更改属性。
 
-   完成后，单击“保存”****。
+   完成时，请单击“保存”****。
 
-#### <a name="general"></a>常规
+#### <a name="general"></a>概要
 
 使用此选项卡可以查看或更改有关组的基本信息。
 
@@ -141,7 +141,7 @@ ms.locfileid: "44352187"
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-若要返回组成员的列表，请将 \< GroupIdentity 替换 \> 为组的名称、别名或电子邮件地址，并运行以下命令：
+若要返回组成员的列表，请将 \<GroupIdentity\> 其替换为组的名称、别名或电子邮件地址，并运行以下命令：
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- \<将 GroupIdentity 替换 \> 为组的名称、别名或电子邮件地址，并运行以下命令来验证设置：
+- \<GroupIdentity\>将替换为组的名称、别名或电子邮件地址，并运行以下命令来验证设置：
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- 若要查看组成员，请将 \< GroupIdentity 替换 \> 为组的名称、别名或电子邮件地址，并运行以下命令：
+- 若要查看组成员，请将 \<GroupIdentity\> 其替换为组的名称、别名或电子邮件地址，并运行以下命令：
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

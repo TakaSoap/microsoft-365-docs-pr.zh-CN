@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解安全与合规中心中提供的智能报告和见解，以及如何使用它们查看和浏览数据并快速执行操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588152"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617304"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>安全合规中心中的智能报告和见解 &amp;
 
@@ -54,11 +54,6 @@ ms.locfileid: "44588152"
 |**审核日志** <br/> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息  <br/> |在安全 &amp; 合规性中心中，转到**搜索 &amp; 调查** \> **审核日志搜索** <br/> |[在安全合规中心中搜索审核日志 &amp;](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**合规性报告** <br/> FedRAMP 报告、管理、风险和合规性报告、ISO 信息安全管理报告以及 Service Organization Controls 审核和评估报告  <br/> |在 "安全 &amp; 合规性中心" 中，转到 "**服务保证** \> **合规性报告**" <br/> |[&amp;在 Office 365 中规划安全合规性](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>后续步骤
-
-现在您已概述了报告和见解，下一步是了解如何自定义、管理和下载报告。 另请参阅以下文章：
-  
-
     
 ## <a name="related-topics"></a>相关主题
 

@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceFileEvents 表
 description: 了解高级搜寻架构的 DeviceFileEvents 表中与文件相关的事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、filecreationevents、DeviceFileEvents、文件、路径哈希、sha1、sha256、md5
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、filecreationevents、DeviceFileEvents、md5、md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,21 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07569b93244bd420fe5961e20e6951ea84ae47d7
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235031"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617158"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-
-
-`DeviceFileEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
+`DeviceFileEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -44,7 +42,7 @@ ms.locfileid: "42235031"
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
-| `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不填充此字段—使用 SHA1 列（如果可用） |
+| `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MD5` | string | 将录制的操作应用于的文件的 MD5 哈希值 |
 | `FileOriginUrl` | string | 从中下载文件的 URL |
 | `FileOriginReferrerUrl` | string | 链接到下载文件的网页的 URL |
@@ -54,6 +52,7 @@ ms.locfileid: "42235031"
 | `InitiatingProcessAccountSid` | string | 运行负责事件的进程的帐户的安全标识符（SID） |
 | `InitiatingProcessMD5` | string | 启动事件的进程（图像文件）的 MD5 哈希 |
 | `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |
+| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `InitiatingProcessFolderPath` | string | 包含启动事件的进程（图像文件）的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
 | `InitiatingProcessId` | int | 启动事件的进程的进程 ID （PID） |
@@ -64,6 +63,13 @@ ms.locfileid: "42235031"
 | `InitiatingProcessParentId` | int | 生成负责事件的进程的父进程的进程 ID （PID） |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 负责启动事件的进程的父项的日期和时间 |
+| `RequestProtocol` | string | 用于启动活动的网络协议（如果适用）：未知、本地、SMB 或 NFS |
+| `ShareName` | string | 包含该文件的共享文件夹的名称 |
+| `RequestSourceIP` | string | 启动活动的远程设备的 IPv4 或 IPv6 地址 |
+| `RequestSourcePort` | string | 启动活动的远程设备上的源端口 |
+| `RequestAccountName` | string | 远程启动活动时使用的帐户的用户名 |
+| `RequestAccountDomain` | string | 用于远程启动活动的帐户的域 |
+| `RequestAccountSid` | string | 用于远程启动活动的帐户的安全标识符（SID） |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签以对其进行分类以实现信息保护 |

@@ -14,12 +14,12 @@ ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 ms.custom:
 - seo-marvel-apr2020
 description: 获取有关 Exchange Online Protection （EOP）云托管的电子邮件筛选服务的最常见一般问题的答案。
-ms.openlocfilehash: 02aa7175e95cf706ed13268035953400af2485a7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0908fd5cf3a799f5a253122efac2b4d56d80ee76
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206658"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617026"
 ---
 # <a name="eop-general-faq"></a>EOP 一般常见问题解答
 
@@ -89,4 +89,4 @@ Microsoft 365 管理中心将包含此信息中的一些信息。 如果您受�
 
 ## <a name="does-eop-support-powershell"></a>EOP 是否支持 PowerShell？
 
-是的，完整的 EOP 功能可通过 PowerShell： Exchange Online PowerShell 提供，适用于具有 Exchange Online 邮箱的组织;独立的 EOP PowerShell 用于独立的 EOP 组织。 有关详细信息，请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)和[Exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/exchange-online-protection-powershell)。
+是的，完整的 EOP 功能可通过 PowerShell： Exchange Online PowerShell 提供，适用于具有 Exchange Online 邮箱的组织;独立的 EOP PowerShell 用于独立的 EOP 组织。 有关详细信息，请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)和[Exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-protection-powershell)。

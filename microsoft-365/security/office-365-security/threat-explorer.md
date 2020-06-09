@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: 了解如何在安全&amp;合规中心中使用 Explorer 和实时检测，以有效且高效地对威胁进行调查和响应。
+description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036748"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613440"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -36,7 +36,7 @@ ms.locfileid: "44036748"
 
 使用浏览器（或实时检测）时，您将拥有一个功能强大的报告，使安全操作团队能够有效且高效地调查威胁并对其做出响应。 该报告类似于以下图像：
 
-![转到 "威胁\>管理资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![转到 "威胁管理 \> 资源管理器"](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 使用此报告，可以执行以下操作：
 
@@ -103,13 +103,13 @@ ms.locfileid: "44036748"
 
 此外，您现在可以将 URL 单击的报告导出到 Microsoft Excel 中，以查看其网络消息 ID 和单击结论，从而使了解您的 URL 单击流量更容易的任务。 下面介绍了它的工作原理。 从 "Office 365 快速启动" 上的 "威胁管理" 开始，依次单击 "通过此链"：
 
-**资源管理器** \> **视图网络钓鱼** \> **单击** \> **顶部的 url 或 URL 顶部** \>单击**单击任意记录以打开 URL 浮出控件**
+**浏览器** \>**查看网络钓鱼** \>**单击** \>**顶部 url 或 URL 顶部单击** \>**单击任意记录以打开 "URL 飞出**"
 
 当您单击列表中的某个 URL 时，将会在弹出面板上看到一个新的 "导出" 按钮。 使用此按钮可以将数据移动到 Excel 电子表格，以便更轻松地进行报告。
 
 您可以在实时检测报告中获取相同的位置，如下所示：
 
-**资源管理器** \> **实时检测** \> **查看网络钓鱼** \> **url** \> **顶部 url 或顶部** \>单击**单击任意记录打开 URL 飞出** \> **导航到 "单击" 选项卡。**
+**浏览器** \>**实时检测** \>**查看网络钓鱼** \>**Url** \>**顶部的 url 或顶部的单击** \>**单击任意记录以打开 "URL 飞出** \> "**导航到 "单击" 选项卡。**
 
 > [!TIP]
 > 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在有导出功能的情况下，网络邮件 ID 的关联标识将使分析速度更快、更强大。
@@ -120,13 +120,13 @@ ms.locfileid: "44036748"
 
 假设您想要查看 Microsoft 365 技术在电子邮件中检测到的恶意软件。 为此，请使用[电子邮件 >](threat-explorer-views.md#email--malware)浏览器（或实时检测）的恶意软件视图。
 
-1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
+1. 在 "安全性 & 合规性中心（ [https://protection.office.com](https://protection.office.com) ）中，选择"**威胁管理**  >  **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **恶意软件**"。
+2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **恶意软件**"。
 
    ![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. 单击 "**发件人**"，然后选择 "**基本** > **检测技术**"。
+3. 单击 "**发件人**"，然后选择 "**基本**  >  **检测技术**"。
 
    您的检测技术现在可用作报告的筛选器。
 
@@ -144,13 +144,13 @@ ms.locfileid: "44036748"
 
 若要查看邮件中的网络钓鱼 Url 并单击网络钓鱼邮件中的 Url，请使用[电子邮件 >](threat-explorer-views.md#email--phish)浏览器（或实时检测）的网络钓鱼视图。
 
-1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
+1. 在 "安全性 & 合规性中心（ [https://protection.office.com](https://protection.office.com) ）中，选择"**威胁管理**  >  **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **网络钓鱼**"。
+2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **网络钓鱼**"。
 
    ![浏览器的视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. 单击 "**发件人**"，然后选择 " **url** > **" 单击 "判定"**。
+3. 单击 "**发件人**"，然后选择 " **url**  >  **" 单击 "判定"**。
 
 4. 选择一个或多个选项（如 "已**阻止**" 和 "**阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 "**刷新**" 按钮。 （不要刷新浏览器窗口。）
 
@@ -175,13 +175,13 @@ ms.locfileid: "44036748"
 
 假设您想要查看您的组织中的用户使用[Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 若要执行此操作，请使用 "[电子邮件 > 提交](threat-explorer-views.md#email--submissions)" 浏览器（或实时检测）。
 
-1. 在 "安全性 & 合规性中心[https://protection.office.com](https://protection.office.com)（）中，选择"**威胁管理** > **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
+1. 在 "安全性 & 合规性中心（ [https://protection.office.com](https://protection.office.com) ）中，选择"**威胁管理**  >  **资源管理器**"（或"**实时检测**"）。 （此示例使用 Explorer。）
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件** > **提交**"。
+2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **提交**"。
 
    ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
-3. 单击 "**发件人**"，然后选择 "**基本** > **报告类型**"。
+3. 单击 "**发件人**"，然后选择 "**基本**  >  **报告类型**"。
 
 4. 选择一个选项，如 "**网络钓鱼**"，然后单击 "**刷新**" 按钮。
 
@@ -216,13 +216,13 @@ ms.locfileid: "44036748"
 
 若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如，授予安全管理员或安全阅读者的权限。
 
-- 对于安全&amp;合规中心，您必须具有以下分配的角色之一：
+- 对于安全 &amp; 合规中心，您必须具有以下分配的角色之一：
 
   - 组织管理
-  - 安全管理员（可在 Azure Active Directory 管理中心中分配（[https://aad.portal.azure.com](https://aad.portal.azure.com)））
+  - 安全管理员（可在 Azure Active Directory 管理中心中分配（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ））
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心（[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)）或 PowerShell cmdlet 中分配以下角色之一（请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)）：
+- 对于 Exchange Online，必须在 Exchange 管理中心（）或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)）：
 
   - 组织管理
   - 仅限查看组织管理
@@ -231,7 +231,7 @@ ms.locfileid: "44036748"
 
 若要了解有关角色和权限的详细信息，请参阅以下资源：
 
-- [安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)
+- [安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测的区别
