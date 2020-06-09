@@ -1,5 +1,5 @@
 ---
-title: GDPR 和 CCPA 下规定的数据主体请求
+title: GDPR 和 CCPA 下规定的 Office 365 数据主题要求
 description: 了解 GDPR 和 CCPA 下规定的用户权限，以及 Office 365 如何帮助企业查找和处理数据以响应 DSR。
 keywords: Office 365, DSR, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221426"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579267"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的数据主体请求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
 ## <a name="introduction-to-dsrs"></a>DSR 简介
 
@@ -1130,9 +1130,9 @@ PowerApps 服务还包括 Common Data Service For Apps，可让用户在 Common 
 可使用内容搜索来搜索与某个项目关联的 SharePoint Online 网站（首次创建项目时，可选择创建关联的 SharePoint Online 网站）；内容搜索不会搜索 Project Online 中实际项目包含的数据，只会搜索关联的网站。 尽管内容搜索将搜索有关项目的元数据（如主题中提及的人员），但是，这可能有助于查找（和访问）包含 DSR 相关数据的项目。
 
 >[!TIP]
->组织中与项目关联的网站所属的网站集的 URL 为 **https://\<你的组织\>.sharepoint.com/sites/pwa**；例如，**https://contoso.sharepoint.com/pwa**。可以使用此特定网站集作为内容搜索位置，然后作为搜索查询中项目的名称。此外，IT 管理员可在 SharePoint 管理中心使用“网站集”页面来获取组织中的 PWA 网站集列表。
+>组织中与项目关联的网站所属的网站集的 URL 为 **https://\<your org\>.sharepoint.com/sites/pwa**；例如，**https://contoso.sharepoint.com/pwa**。可以使用此特定网站集作为内容搜索位置，然后作为搜索查询中项目的名称。此外，IT 管理员可在 SharePoint 管理中心使用“网站集”页面来获取组织中的 PWA 网站集列表。
 
-#### <a name="delete"></a>删除
+#### <a name="delete"></a>Delete
 
 可从 Project Online 环境删除有关用户的信息。请参阅[从 Project Online 删除用户数据](https://support.office.com/article/delete-user-data-from-project-online-252fa593-9c25-47ed-b861-643fe8bf1cb7)。
 
@@ -1382,7 +1382,7 @@ Power BI 依赖在其仪表板和报表中使用的基础源数据来保持完�
 
 对于消息，用户可编辑给定消息以纠正任何不准确的内容。用户可从 Yammer 验证管理员处请求其所有消息的列表，然后单击文件中的链接查看每条消息。
 
-对于文件，用户可编辑给定文件以纠正任何不准确的内容。用户可从 Yammer 验证管理员处请求其发布的所有文件，然后在 Yammer 中访问这些文件。可以通过按数字搜索文件来查看导出到“文件”文件夹中的文件。例如，对于导出中名为 12345678.ppx 的文件，使用 Yammer 中的搜索框搜索 1235678.ppx。或者，转到 <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>；例如，<strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>。
+对于文件，用户可编辑给定文件以纠正任何不准确的内容。用户可从 Yammer 验证管理员处请求其发布的所有文件，然后在 Yammer 中访问这些文件。可以通过按数字搜索文件来查看导出到“文件”文件夹中的文件。例如，对于导出中名为 12345678.ppx 的文件，使用 Yammer 中的搜索框搜索 1235678.ppx。或者，转到 <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>；例如 <strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>。
 
 对于用户可通过其个人资料和设置访问的数据，用户可以进行任何必要的更改。
 
@@ -1581,24 +1581,62 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>访问和导出系统生成日志
 
-“数据可携带性权限”允许数据主体可请求为个人数据保存电子格式的副本（这是一种“结构化、常用、机器可读、可互操作的格式"），该副本可传输给另一个数据控制者。 Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。
+租户管理员是组织内唯一可以访问与特定用户的 Office 365 服务和应用使用情况相关联的系统生成日志的人员。 为导出请求检索到的数据将以机器可读格式提供，并在允许用户知道数据与哪些服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及服务安全性或稳定性的数据。
+
+访问和导出系统生成的日志：
+
+1. 登录到 Azure 门户，然后选择“**所有服务**。
+2. 在筛选器中键入“策略”，然后选择“**策略**”。
+3. 在“**策略**”边栏选项卡中，依次选择“**用户策略**”、“**管理用户请求**”和“**添加导出请求**”。
+4. 完成“**导出数据请求**”：
+
+    - **用户**。 键入请求导出的 Azure Active Directory 用户的电子邮件地址。
+    - **订阅**。 选择用于报告资源使用情况并计算服务费用的帐户。 这也是您的 Azure 存储帐户位置。
+    - **存储帐户**。 选择 Azure 存储的位置 (Blob)。 有关详细信息，请参阅 “Microsoft Azure 存储简介 — Blob 存储”一文。
+    - **容器**。 创建新的（或选择现有的）容器作为存放用户导出的隐私数据的存储位置。
+
+5. 选择“创建”****。
+
+导出请求进入**挂起**状态。 你可以在“**用户隐私**” > “**概述**”边栏选项卡上查看报告状态。
 
 >[!IMPORTANT]
->你必须是租户管理员才能从租户中导出用户数据。
+>由于个人数据可能来自多个系统，因此导出过程可能需要一个月才能完成。
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>通知导出或删除问题
 
-关于客户数据，Microsoft 提供了门户和产品内体验，让企业客户的租户管理员能够管理对一个最终用户的身份信息的导出请求。
+如果在从 Azure 门户导出或删除数据时遇到问题，请转到 Azure 门户“**帮助 + 支持**”边栏选项卡，并在“**订阅管理**” > “**其他安全与合规请求**” > “**隐私边栏选项卡和 GDPR 请求**”下提交新票证。
 
-#### <a name="service-specific-interfaces"></a>特定于服务的界面
+>[!NOTE]
+ >从 Azure 门户导出数据时，将不会导出某些应用程序的系统生成的数据。 若要导出这些应用程序的数据，请参阅[导出系统生成的日志数据所需的其他步骤](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data)。
 
-Microsoft 让你能够直接通过特定服务的预先存在的应用程序编程接口 (API) 或用户界面 (UI) 发现客户数据。详细信息在各个服务的参考文档中进行了介绍，描述了适用的（创建、读取、更新、删除）操作。
+下面概述了如何访问和导出系统生成日志：
+
+- **使用 Azure 门户执行的导出请求需要多长时间才能完成请求？**：这取决于若干因素。 通常，一到两天内可以完成，但最多可能需要 30 天。
+- **输出内容采用什么格式？**：输出内容是结构化的计算机可读文件（如 XML、CSV 或 JSON）。
+- **谁有权访问 Azure 门户以提交对系统所生成数据的访问请求？**：Office 365 全局管理员有权访问 Azure 门户。
+- **导出结果将返回哪些数据？**：结果中包含 Microsoft 所存储的系统生成的日志。 导出的数据将跨越各种 Microsoft 服务，包括 Office 365、Azure 和 Dynamics。 结果不包括可能会危及服务安全性或稳定性的数据。
+- **如何向用户返回数据？**：数据将导出到你组织的 Azure 存储位置；由你组织的管理员来确定他们如何向用户显示/返回此数据。
+- **系统生成的日志数据的样式是怎样的？**：下面是 JSON 格式的数据的示例：
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+还可通过在安全与合规中心搜索 Office 365 审核日志来检索一些最常用的 Microsoft 服务（如 Exchange Online、SharePoint Online、Skype for Business、Yammer 和 Office 365 组）的产品和服务使用情况。 有关详细信息，请参阅附录 A 中的[在 DSR 调查中使用 Office 365 审核日志搜索工具](#use-the-audit-log-search-tool-in-dsr-investigations)。你可能会对使用审核日志感兴趣，因为无法向组织中的其他人（例如合规部主管）分配搜索审核日志并访问此数据的权限。
 
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 
 要删除通过访问请求检索到的系统生成日志，必须从服务中移除用户并永久删除其 Azure Active Directory 帐户。有关永久删除用户的说明，请参阅本指南的[删除用户](#deleting-a-user)部分。请务必注意，永久删除用户帐户操作一旦启动便无法恢复。
 
-永久删除用户帐户将在 30 天内从几乎所有 Office 365 服务的系统生成日志中删除用户数据（不包括可能会危及服务安全性和稳定性的数据）。 一个例外情况是在 Exchange Online 中永久删除用户帐户所用的时间超过 30 天。 鉴于 Exchange Online 内容的关键性质，并且为了防止数据意外丢失， 此系统设计为有意地在永久删除用户帐户后将数据置于保留状态最多 60 天。 要在 30 天的时间范围内永久删除用户 Exchange Online 数据，请在永久删除 Azure Active Directory 中的用户帐户后联系 [Microsoft 支持人员](https://support.microsoft.com/)，请求在计划删除流程之外手动删除用户的 Exchange Online 数据。 有关详细信息，请参阅本指南前文所述的[删除 Exchange Online 数据](#removing-exchange-online-data)
+永久删除用户帐户将在 30 天内从几乎所有 Office 365 服务的系统生成日志中删除用户数据（不包括可能会危及服务安全性和稳定性的数据）。 
+
+此 30 天期限一个例外情况是在 Exchange Online 中永久删除用户帐户所用的时间超过 30 天。 这是由于 Exchange Online 内容的关键性质，以防止数据意外丢失。 Exchange Online 设计为有意地在永久删除用户帐户后将数据置于保留状态最多 60 天。 要在 30 天的时间范围内永久删除用户 Exchange Online 数据，请在永久删除 Azure Active Directory 中的用户帐户后联系 [Microsoft 支持人员](https://support.microsoft.com/)，请求在计划删除流程之外手动删除用户的 Exchange Online 数据。 有关详细信息，请参阅本指南前文所述的[删除 Exchange Online 数据](#removing-exchange-online-data)
 
 删除用户帐户将删除 Yammer 和 Kaizala 的系统生成日志。若要从这些应用程序中删除数据，请参阅以下文章之一：
 
@@ -1607,11 +1645,11 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 #### <a name="national-clouds"></a>国家云
 
-全局 IT 管理员需要执行以下操作以删除以下国家云中的系统生成日志：
+全局 IT 管理员需要执行以下操作以导出以下国家云中的系统生成日志数据：
 
-- Office 365 德国版 - 当永久删除用户帐户时，也将删除系统生成的日志。 
-- Office 365 美国政府版：通过 [Office 365 管理门户](https://portal.office365.us)向 Microsoft 支持部门提交请求。
-- 由世纪互联运营的 Office 365（中国版） - 通过此处 [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) 中的 Office 365 管理门户向 Microsoft 支持部门提交请求。转到“**商务**”，然后选择“**订阅**” -> “**隐私**” -> “**GDPR**”并输入所需的信息。
+- **Office 365 德国版**：按照上面的步骤操作。
+- **Office 365 美国政府版**：[转到 Office 365 管理门户](https://portal.office365.us)，然后向 Microsoft 支持部门提交请求。
+- **由世纪互联运营的 Office 365（中国版）**：[转到由世纪互联运营的 Office 365 的管理门户](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)，然后转到“**商务**“ > “**订阅**” > “**隐私**” > “**GDPR**”并输入所需的信息。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>第 4 部分：可提供 DSR 协助的其他资源
 
