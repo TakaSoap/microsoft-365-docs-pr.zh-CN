@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用户如何使用适用于桌面的 Office 应用程序中的敏感度标签、适用于 mobile 的 Office 应用程序以及 web 上的 Office 应用程序。 找出支持灵敏度标签的应用程序。
-ms.openlocfilehash: 9fca3af2c53c57bbc010c5e95976cbde9ddcbbdc
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 7d37eae65775a79ef49db6c7d13d2ce0d2965acb
+ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545908"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44649381"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -51,7 +51,7 @@ ms.locfileid: "44545908"
 |功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | 正在审阅                                                        |
+|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | 即将推出                                                        |
 |[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -201,7 +201,7 @@ Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感�
 
 Office 应用程序使用敏感度标签以不同方式应用内容标记和加密，具体取决于您使用的应用程序。
 
-| 应用 | 内容标记 | 加密 |
+| App | 内容标记 | 加密 |
 | --- | --- | --- |
 | 所有平台上的 Word、Excel 和 PowerPoint | 立即 | 立即 |
 | Outlook for PC 和 Outlook for Mac | Exchange Online 发送电子邮件后 | 立即 |
