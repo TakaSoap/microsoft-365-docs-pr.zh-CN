@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043323"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579187"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
@@ -242,13 +242,10 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 |**如何向用户返回数据？**| 数据将导出到你组织的 Azure 存储位置；由你组织的管理员来确定他们如何向用户显示/返回此数据。 |
 |**系统生成日志中的数据看上去是怎样的？**| JSON 格式的系统生成日志记录示例： <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> 出于安全和审核目的，部分功能将禁止导出或删除包含个人信息的系统生成日志，以维护此类信息的完整性。
-
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 
-要删除通过访问请求检索的系统生成日志，必须从服务中删除该用户，然后永久删除其 Azure Active Directory 帐户。 请务必注意，永久删除用户帐户的操作一旦启动便不可逆。 如果永久删除用户帐户，则会在 30 天内将用户数据从几乎所有 Dynamics 365 服务的系统生成日志中移除。
+要删除通过访问请求检索的系统生成日志，必须从服务中删除该用户，然后永久删除其 Azure Active Directory 帐户。 有关如何永久删除用户的说明，请参阅“Azure 数据主体请求”主题中的[步骤 5：删除](gdpr-dsr-azure.md#step-5-delete)部分。 请务必注意，永久删除用户帐户的操作一旦启动便不可逆。 永久删除用户帐户将在 30 天内从几乎所有 Dynamics 365 服务的系统生成日志中删除用户数据（不包括可能会危及服务安全性和稳定性的数据）。
 
-## <a name="learn-more"></a>了解更多
+## <a name="learn-more"></a>了解详细信息
 
 - [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

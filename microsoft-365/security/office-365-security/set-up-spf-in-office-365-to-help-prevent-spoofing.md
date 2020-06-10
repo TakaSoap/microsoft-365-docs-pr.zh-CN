@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
-ms.openlocfilehash: 9d5d300b7397d719d9ab85139cd27d912627a3ff
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6061cd9ea52f4ed4073f510dcba60fba9b4fd23c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035304"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588072"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
@@ -49,7 +49,7 @@ ms.locfileid: "44035304"
 
 收集此信息：
 
-- 自定义域的当前 SPF TXT 记录。有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records)。
+- 自定义域的当前 SPF TXT 记录。有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)。
 
 - 所有本地邮件服务器的外部 IP 地址。例如，**131.107.2.200**。
 
@@ -67,9 +67,9 @@ ms.locfileid: "44035304"
    |2|Exchange Online|常见|include:spf.protection.outlook.com|
    |3|Exchange Online 专用|不常见|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
    |4|仅 Office 365 Germany、Microsoft Cloud Germany|不常见|include:spf.protection.outlook.de|
-   |5|第三方电子邮件系统|不常见|include:\<域名\>  <br/> 其中域名是第三方电子邮件系统的域名。|
-   |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见| 为每个附加的邮件系统使用以下其中一个： <br> ip4:\<_IP address_\>  <br/>  ip6:\<_IP address_\>  <br/>  include：\<_域名_\>  <br/>  其中 \<_IP address_\>的值是其他邮件系统的 IP 地址，\<_domain name_\> 是另一个代表您的域发送邮件的邮件系统的 IP 地址。|
-   |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|\<_强制规则_\>  <br/> 这可以是多个值之一。我们建议您使用 **-all**。|
+   |5|第三方电子邮件系统|不常见|包括：\<domain name\>  <br/> 其中域名是第三方电子邮件系统的域名。|
+   |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见| 为每个附加的邮件系统使用以下其中一个： <br> ip4：\<_IP address_\>  <br/>  ip6：\<_IP address_\>  <br/>  包括：\<_domain name_\>  <br/>  其中 \<_IP address_\> 的值是其他邮件系统的 IP 地址，\<_domain name_\> 是另一个代表您的域发送邮件的邮件系统的 IP 地址。|
+   |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|\<_enforcement rule_\>  <br/> 这可以是多个值之一。我们建议您使用 **-all**。|
 
 2. 如果尚未创建 SPF TXT 记录，请使用该表中的语法执行此操作：
 
@@ -85,7 +85,7 @@ ms.locfileid: "44035304"
 
    如果你已在 Office 365 中进行部署并已为自定义域设置 SPF TXT 记录，而当前正在向 Office 365 Germany 迁移，则需要更新 SPF TXT 记录。 为此，请将 include:spf.protection.outlook.com**** 更改为 include.spf.protection.outlook.de****。
 
-3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)然后单击 DNS 主机的链接。
+3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)然后单击 DNS 主机的链接。
 
 4. 测试 SPF TXT 记录。
 

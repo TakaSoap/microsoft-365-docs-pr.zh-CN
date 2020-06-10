@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 Microsoft 信息保护框架中的灵敏度标签，对组织的数据进行分类和保护，同时不妨碍用户的工作效率和协作。
-ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 26b916f2a6aa86131da6f0bf9250291bad85dd74
+ms.sourcegitcommit: 57afde60f81499f58a9dce13649361c62f2b5a01
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292540"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44590923"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -163,7 +163,7 @@ ms.locfileid: "44292540"
 
 创建为用户和组分配敏感度标签的标签策略后，这些用户最多需要 24 小时才能在其 Office 应用中看到标签。
 
-可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可以有 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
+可创建和发布的敏感度标签的数量没有限制，但有一种例外：如果标签应用了加密，则最多可创建 500 个标签。 但是，最佳做法是减少管理开销并降低用户复杂程度，尽量将标签的数量保持在最低限度。 事实证明，当用户拥有五个以上的主标签或者每个主标签拥有五个以上的子标签时，实际部署的效率就会显著降低。
 
 ### <a name="label-policy-priority-order-matters"></a>标签策略优先级（顺序非常重要）
 
