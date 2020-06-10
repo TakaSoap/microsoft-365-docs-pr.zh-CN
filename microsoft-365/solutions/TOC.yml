@@ -7,7 +7,7 @@
       href: productivity-illustrations.md
     - name: Microsoft 云体系结构模型
       href: cloud-architecture-models.md
-- name: Microsoft 365 foundation 解决方案
+- name: Microsoft 365 基础解决方案
   items:
     - name: 概述
       href: foundation-solutions-overview.md
@@ -15,22 +15,22 @@
       items:
         - name: 概述
           href: empower-people-to-work-remotely.md
-        - name: 步骤 1. 增加登录安全性
+        - name: 步骤 1. 提升登录安全性
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 步骤 2. 提供远程访问
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 第 3 步。 部署终结点管理
+        - name: 步骤 3. 部署终结点管理
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 第 4 步。 部署生产率应用程序和服务
+        - name: 步骤 4. 部署生产力应用和服务
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 第 5 步： 创建交流平台
+        - name: 步骤 5. 创建交流平台
           href: empower-people-to-work-remotely-communication-venues.md
-        - name: 步骤 6. 培训远程工作人员
+        - name: 步骤 6. 培训远程员工
           href: empower-people-to-work-remotely-train-monitor-usage.md
-    - name: 设置与 Microsoft 365 的安全协作
+    - name: 与 Microsoft 365 建立安全协作
       href: setup-secure-collaboration-with-teams.md
       items:
-        - name: 三层保护与 Microsoft 团队的协作
+        - name: Microsoft Teams 的三层保护
           items:
             - name: 三层保护概述
               href: configure-teams-three-tiers-protection.md
@@ -66,23 +66,23 @@
                   href: share-limit-accidental-exposure.md
                 - name: 保护来宾共享环境
                   href: create-secure-guest-sharing-environment.md
-            - name: 外部共享参考
+            - name: 来宾共享参考
               href: microsoft-365-guest-settings.md
     - name: 在 Microsoft 365 中部署威胁防护
       href: deploy-threat-protection.md
-- name: 工作负载解决方案和应用场景
+- name: 工作负载解决方案和方案
   items:
     - name: 概述
       href: workload-solutions-scenarios-overview.md
     - name: 团队合作和协作
       items:
-        - name: 团队体系结构海报
+        - name: Teams 体系结构海报
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 电话解决方案
           items:
-            - name: 选择解决方案
+            - name: 选择你的解决方案
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-            - name: 针对多国公司的案例研究
+            - name: 跨国公司案例研究
               href: null
         - name: 使用 Microsoft 365 在 SharePoint 中进行文件协作
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
@@ -92,9 +92,9 @@
           href: 'https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 安全性
       items:
-        - name: 用于安全团队的主要任务，以支持在家工作
+        - name: 安全团队为支持在家办公需完成的首要任务
           href: 'https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: 适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
+        - name: 面向业务决策者 (BDM) 的 Microsoft 365 安全
           href: 'https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 部署 Microsoft Defender 高级威胁防护
           href: 'https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
@@ -110,17 +110,17 @@
               href: 'https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: CCPA - 常见问题
               href: 'https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-            - name: GDPR-建议的操作计划
+            - name: GDPR - 建议的行动计划
               href: 'https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-    - name: Contoso 个案研究
+    - name: Contoso 案例研究
       items:
         - name: Contoso Corporation 的 Microsoft 365 解决方案
           href: contoso-case-study-solutions.md
-        - name: 主要项目的独立团队
+        - name: 适用于最高机密项目的独立团队
           href: contoso-team-for-top-secret-project.md
     - name: 测试实验室指南
       items:
-        - name: 测试实验室指南的解决方案和应用场景
+        - name: 用于解决方案和方案的测试实验室指南
           href: test-lab-guides-overview-solutions.md
         - name: 具有安全隔离的团队
           href: team-security-isolation-dev-test.md
@@ -130,13 +130,13 @@
       href: industry-specific-guidance-overview.md
     - name: 财务
       items:
-        - name: 金融服务业的安全性和合规性
+        - name: 金融服务的安全性和合规性
           href: financial-services-secure-collaboration.md
-    - name: 能源和实用工具服务
+    - name: 能源和公用事业服务
       items:
-        - name: 能源和实用程序服务的安全性和合规性
+        - name: 能源和公用事业服务的安全性和合规性
           href: energy-secure-collaboration.md
-    - name: 行业
+    - name: 医疗
       items:
         - name: 适用于医疗保健业的 Teams
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
@@ -148,17 +148,17 @@
       items:
         - name: Teams 政府版
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: 使用团队支持远程政府工作人员
+        - name: 使用 Teams 支持远程政府工作者
           href: 'https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
 - name: 企业体系结构设计原则
   items:
     - name: 概述
       href: design-principles.md
-    - name: To identity and 超越
+    - name: 超越无限
       href: identity-design-principles.md
-    - name: 您可以 sail 的安全障碍
+    - name: 可跨越的安全障碍
       href: security-design-principles.md
-    - name: 联网（到云）
+    - name: 联网（到云端）
       href: networking-design-principles.md
 - name: Microsoft 365 部署资源
   items:
