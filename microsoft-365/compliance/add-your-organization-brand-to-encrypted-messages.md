@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: 8d8e0a75a88cfe5dbcd5b1e6ed2c276e2edef904
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351733"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679106"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 
@@ -79,16 +79,16 @@ ms.locfileid: "44351733"
 
 |**自定义加密体验的这一功能**|**使用这些命令**|
 |:-----|:-----|
-|背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|徽标|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支持的文件格式：.png、.jpg、.bmp 或 .tiff  <br/> 徽标文件的最佳大小：小于 40 KB  <br/> 徽标图像的最佳大小：170x70 像素。 如果您的图像超过这些尺寸，服务将调整徽标大小以在门户中显示。 服务不会修改图形文件本身。 为获得最佳效果，请使用最佳大小。|
-|发件人姓名和电子邮件地址旁边的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|显示在 "阅读邮件" 按钮上的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|显示在 "阅读邮件" 按钮下方的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|隐私声明链接的 URL|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|为此自定义模板启用或禁用一次性传递代码的身份验证|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用一次性密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> 禁用此自定义模板的一次性密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|为此自定义模板启用或禁用与 Microsoft、Google 或 Yahoo 身份的身份验证|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 Id <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 若要禁用此自定义模板的社交 Id <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> 有关背景颜色的详细信息，请参阅本主题后面的 "[背景色](#background-color-reference)" 一节。|
+|徽标|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支持的文件格式：.png、.jpg、.bmp 或 .tiff  <br/> 徽标文件的最佳大小：小于 40 KB  <br/> 徽标图像的最佳大小：170x70 像素。 如果您的图像超过这些尺寸，服务将调整徽标大小以在门户中显示。 服务不会修改图形文件本身。 为获得最佳效果，请使用最佳大小。|
+|发件人姓名和电子邮件地址旁边的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|显示在 "阅读邮件" 按钮上的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|显示在 "阅读邮件" 按钮下方的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|隐私声明链接的 URL|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|为此自定义模板启用或禁用一次性传递代码的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用一次性密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> 禁用此自定义模板的一次性密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|为此自定义模板启用或禁用与 Microsoft、Google 或 Yahoo 身份的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 Id <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 若要禁用此自定义模板的社交 Id <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>创建 OME 品牌打造模板（高级邮件加密）
 
@@ -101,7 +101,7 @@ ms.locfileid: "44351733"
 2. 使用[set-omeconfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) cmdlet 可以创建新的模板。
 
    ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    For example,
@@ -122,11 +122,11 @@ ms.locfileid: "44351733"
 
    **将加密体验的此功能还原到默认的文本和图片**|**使用这些命令**|
    |:-----|:-----|
-   |加密电子邮件随附的默认文本  <br/> 默认文本显示在说明的上方，以查看加密邮件|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **将恢复为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |徽标|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **将恢复为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |背景色|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **将恢复为默认值的示例：** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |加密电子邮件随附的默认文本  <br/> 默认文本显示在说明的上方，以查看加密邮件|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **将恢复为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |徽标|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **将恢复为默认值的示例：** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **将恢复为默认值的示例：** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
    |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>删除自定义品牌打造模板（高级邮件加密）
@@ -140,7 +140,7 @@ ms.locfileid: "44351733"
 2. 使用**set-omeconfiguration** cmdlet，如下所示：
 
    ```powershell
-   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
    For example,
@@ -184,3 +184,154 @@ ms.locfileid: "44351733"
    模板列表包含所有默认模板和选项，以及您创建的用于 Office 365 的任何自定义模板。 如果列表为空，请确保已使用新功能设置了 Office 365 邮件加密，如[设置新的 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)中所述。 有关默认模板的信息，请参阅[配置和管理 Azure 信息保护的模板](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)。 有关 "**不要转发**" 选项的信息，请参阅[电子邮件](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)的 "不要转发" 选项。 有关**仅加密**选项的信息，请参阅[仅加密电子邮件选项](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)。
 
    如果要指定另一个操作，请选择 "**添加操作**"。
+
+## <a name="background-color-reference"></a>背景色参考
+
+可用于背景色的颜色名称将受到限制。 您可以使用十六进制代码值（#RRGGBB），而不是颜色名称。 您可以使用与颜色名称对应的十六进制代码值，也可以使用自定义十六进制代码值。 请务必将十六进制代码值放在引号中（例如， `"#f0f8ff"` ）。
+
+下表介绍了可用的背景颜色名称及其对应的十六进制代码值。
+
+|||
+|---|---|
+|**颜色名称**|**颜色代码**|
+|aliceblue|#f0f8ff|
+|antiquewhite|#faebd7|
+|水绿色|#00ffff|
+|aquamarine|#7fffd4|
+|azure|#f0ffff|
+|褐色|#f5f5dc|
+|bisque|#ffe4c4|
+|black|#000000|
+|blanchedalmond|#ffebcd|
+|蓝色|#0000ff|
+|blueviolet|#8a2be2|
+|褐色|#a52a2a|
+|burlywood|#deb887|
+|cadetblue|#5f9ea0|
+|chartreuse|#7fff00|
+|光临|#d2691e|
+|红色|#ff7f50|
+|cornflowerblue|#6495ed|
+|cornsilk|#fff8dc|
+|crimson|#dc143c|
+|浅蓝|#00ffff|
+|darkblue|#00008b|
+|darkcyan|#008b8b|
+|darkgoldenrod|#b8860b|
+|darkgray|#a9a9a9|
+|darkgreen|#006400|
+|darkkhaki|#bdb76b|
+|darkmagenta|#8b008b|
+|darkolivegreen|#556b2f|
+|darkorange|#ff8c00|
+|darkorchid|#9932cc|
+|darkred|#8b0000|
+|darksalmon|#e9967a|
+|darkseagreen|#8fbc8f|
+|darkslateblue|#483d8b|
+|darkslategray|#2f4f4f|
+|darkturquoise|#00ced1|
+|darkviolet|#9400d3|
+|deeppink|#ff1493|
+|deepskyblue|#00bfff|
+|dimgray|#696969|
+|dodgerblue|#1e90ff|
+|firebrick|#b22222|
+|floralwhite|#fffaf0|
+|forestgreen|#228b22|
+|紫红色|#ff00ff|
+|gainsboro|#dcdcdc|
+|ghostwhite|#f8f8ff|
+|手指|#ffd700|
+|金黄色|#daa520|
+|底纹|#808080|
+|绿色|#008000|
+|greenyellow|#adff2f|
+|honeydew|#f0fff0|
+|hotpink|#ff69b4|
+|indianred|#cd5c5c|
+|靛蓝色|#4b0082|
+|ivory|#fffff0|
+|深褐色|#f0e68c|
+|浅|#e6e6fa|
+|lavenderblush|#fff0f5|
+|lawngreen|#7cfc00|
+|lemonchiffon|#fffacd|
+|lightblue|#add8e6|
+|lightcoral|#f08080|
+|lightcyan|#e0ffff|
+|lightgoldenrodyellow|#fafad2|
+|lightgray|#d3d3d3|
+|lightgrey|#d3d3d3|
+|lightgreen|#90ee90|
+|lightpink|#ffb6c1|
+|lightsalmon|#ffa07a|
+|lightseagreen|#20b2aa|
+|lightskyblue|#87cefa|
+|lightslategray|#778899|
+|lightsteelblue|#b0c4de|
+|lightyellow|#ffffe0|
+|橙|#00ff00|
+|limegreen|#32cd32|
+|linen|#faf0e6|
+|紫色|#ff00ff|
+|紫红色|#800000|
+|mediumaquamarine|#66cdaa|
+|mediumblue|#0000cd|
+|mediumorchid|#ba55d3|
+|mediumpurple|#9370db|
+|mediumseagreen|#3cb371|
+|mediumslateblue|#7b68ee|
+|mediumspringgreen|#00fa9a|
+|mediumturquoise|#48d1cc|
+|mediumvioletred|#c71585|
+|midnightblue|#191970|
+|mintcream|#f5fffa|
+|mistyrose|#ffe4e1|
+|moccasin|#ffe4b5|
+|navajowhite|#ffdead|
+|海军蓝|#000080|
+|oldlace|#fdf5e6|
+|色|#808000|
+|olivedrab|#6b8e23|
+|橙色|#ffa500|
+|orangered|#ff4500|
+|兰花色|#da70d6|
+|palegoldenrod|#eee8aa|
+|palegreen|#98fb98|
+|paleturquoise|#afeeee|
+|palevioletred|#db7093|
+|papayawhip|#ffefd5|
+|peachpuff|#ffdab9|
+|秘鲁|#cd853f|
+|粉色|#ffc0cb|
+|梅红色|#dda0dd|
+|powderblue|#b0e0e6|
+|紫色|#800080|
+|红色|#ff0000|
+|rosybrown|#bc8f8f|
+|royalblue|#4169e1|
+|saddlebrown|#8b4513|
+|橙红|#fa8072|
+|sandybrown|#f4a460|
+|seagreen|
+|seashell|#fff5ee|
+|sienna|#a0522d|
+|优势|#c0c0c0|
+|skyblue|#87ceeb|
+|slateblue|#6a5acd|
+|slategray|#708090|
+|雪|#fffafa|
+|springgreen|#00ff7f|
+|steelblue|#4682b4|
+|tan|#d2b48c|
+|深|#008080|
+|thistle|#d8bfd8|
+|tomato|#ff6347|
+|青|#40e0d0|
+|色|#ee82ee|
+|wheat|#f5deb3|
+|white|#ffffff|
+|whitesmoke|#f5f5f5|
+|黄色|#ffff00|
+|yellowgreen|#9acd32|

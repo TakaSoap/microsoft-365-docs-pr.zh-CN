@@ -13,12 +13,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 92a2cc7603a1a49be5ee72fc7b6d132ce46e38d7
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: ee3acf0729920f1ab4fdaa3fb79b2b541a7a608b
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160866"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664594"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
 
@@ -48,7 +48,7 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 
 ![M365 威胁防护信号](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-|解决方案/功能  |说明  |
+|解决方案/功能  |Description  |
 |---------|---------|
 |多重身份验证和条件访问     |针对泄露的标识和设备进行防护。 从这种保护开始，因为它是基础。 本指南中建议的配置包括作为先决条件的 Azure AD 标识保护。     |
 |Azure 高级威胁防护     |  一种基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。       | 
@@ -83,8 +83,8 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 Microsoft 已测试并建议一组特定的条件访问和相关策略，用于保护对所有 SaaS 应用程序的访问，尤其是 Microsoft 365。 建议将策略用于比较基准、敏感和高度管控保护。 首先实施针对基准保护的策略。 
 
 
-[![用于配置标识和设备访问](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
-[的常见策略请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ 用于配置标识和设备访问的常见策略](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
+ [请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>实施 Microsoft 365 的基准保护
 
@@ -206,7 +206,7 @@ Microsoft 威胁防护将警报、事件、自动调查和响应以及跨工作�
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>步骤7：监视状态并执行操作
 
-在设置并部署了威胁防护服务和功能之后，下一步是监视威胁检测，并采取适当的措施。 您最好的起点是 Microsoft 365 安全中心（[https://security.microsoft.com](https://security.microsoft.com)），您可以在其中监视和管理整个 Microsoft 标识、数据、设备、应用程序和基础结构中的安全性。 
+在设置并部署了威胁防护服务和功能之后，下一步是监视威胁检测，并采取适当的措施。 您最好的起点是 Microsoft 365 安全中心（ [https://security.microsoft.com](https://security.microsoft.com) ），您可以在其中监视和管理整个 Microsoft 标识、数据、设备、应用程序和基础结构中的安全性。 
 
 :::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 安全中心":::
 
@@ -245,5 +245,5 @@ Microsoft 365 提供了以下资源来帮助您在组织中通知用户：
 - 在 Windows 10 和 Mac 电脑（针对非托管设备）上启用安全功能
     
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
-- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [通过2步验证保护你的 Gmail 帐户](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

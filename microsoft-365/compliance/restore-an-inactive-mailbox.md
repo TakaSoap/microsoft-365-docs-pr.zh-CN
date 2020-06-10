@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/28/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新员工或其他用户需要访问 Office 365 中非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。
-ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b3cc574b96f616debec38a2b69406bf20dabf7b9
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621314"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678958"
 ---
 # <a name="restore-an-inactive-mailbox"></a>还原非活动邮箱
 

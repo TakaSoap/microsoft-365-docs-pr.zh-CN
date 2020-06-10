@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 决定向 Office 中的最终用户显示或隐藏哪些功能及其新增内容。 Office 桌面应用程序的新管理。
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399538"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678598"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>使用新增管理功能显示或隐藏新功能
 
-Office Win 32 的新管理功能使组织能够在 Office 桌面应用程序中决定向最终用户显示或隐藏的功能。 每个版本的 Office 都包含新的和改进的功能，内容预览允许您查看每个发布版本和频道的新内容，并选择是隐藏还是显示每个功能到最终用户的新增内容。 
+Office 的新的 Windows 管理功能使组织能够在 Office 桌面应用程序中决定向最终用户显示或隐藏的功能。 每个版本的 Office 都包含新的和改进的功能，内容预览允许您查看每个发布版本和频道的新内容，并选择是隐藏还是显示每个功能到最终用户的新增内容。 
 
 Office 桌面应用程序中的 "新增功能" 内容可突出显示为该应用程序发布的新功能的 curated 列表，并提供简短说明，并且通常是由团队创建的图片或视频发布功能，以帮助客户了解如何使用该功能。 
 
@@ -41,7 +41,7 @@ Office 的新管理功能在 Microsoft 365 管理中心和[客户端配置服务
 
 管理员可以预览频道的新增功能内容，并使用 Office 的新增管理功能管理内容的发布。
 
-1. 在 Microsoft 365 管理中心的 "**设置**" 下，选择 "**设置**"。
+1. 在 Microsoft 365 管理中心的 "**设置**" 下，选择 "**组织设置**"。
 
 2. 在 "**服务**" 选项卡上，选择 " **Office 新增功能管理**"。
 
@@ -59,11 +59,11 @@ Office 的新管理功能在 Microsoft 365 管理中心和[客户端配置服务
 ||||
 |:-----|:-----|:-----|
 |**频道** <br/> |**在管理预览中** <br/> |**执行操作** <br/> |
-|**每月** <br/> |一个月的15号  <br/> |每月发布前 1-3 周 <br/> |
-|**半年（定向）** <br/> |9月1日和3月1日 <br/> | 在主要发布新功能之前2周
-|**半年** <br/> |1月1日和7月1 <br/> | 在主要发布新功能之前2周<br/> |
+|**Current** <br/> |一个月的15号  <br/> |每月发布前 1-3 周 <br/> |
+|**半年企业（预览）** <br/> |9月1日和3月1日 <br/> | 在主要发布新功能之前2周
+|**半年企业** <br/> |1月1日和7月1 <br/> | 在主要发布新功能之前2周<br/> |
 
-有关频道更新计划的详细信息，请参阅[Microsoft 365 应用的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)。
+有关频道更新计划的详细信息，请参阅[Microsoft 365 应用的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
 
 ## <a name="related-articles"></a>相关文章
 

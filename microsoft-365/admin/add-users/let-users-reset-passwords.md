@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 40f094489a1981302e97043b019e8c90a52ffc55
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431697"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678678"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
@@ -54,7 +54,8 @@ ms.locfileid: "44431697"
 以下步骤将为企业中的所有人启用自助密码重置。
   
 ::: moniker range="o365-worldwide"
-1. 在 "管理中心" 中，转到 "**设置**" "设置" \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a>页。
+
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>中，转到 "**设置** > **组织设置**" 页。
 
 ::: moniker-end
 
@@ -70,13 +71,17 @@ ms.locfileid: "44431697"
 
 ::: moniker-end
 
-2. 在 "设置" 页面顶部，选择 "**安全 & 隐私**"。
+2. 在 "**组织设置**" 页的顶部，选择 "**安全性" & "隐私**" 选项卡。
   
-3. 选择 "**自助服务密码重置**"。
+3. 选择 "**自助密码重置**"。
+
+4. 在 "**自助密码重置**" 下，选择 **"转到 Azure 门户" 以启用自助密码重置**。
+
+5. 在左侧导航窗格中，选择 "**用户**"，然后在 "**用户" | ""所有用户**" 页上，选择 "**密码重置**"。
   
-4. 在 "属性" 页上，选择 "**全部**" 以为企业中的所有人启用它，然后选择 "**保存**"。
+6. 在 "**属性**" 页上，选择 "**全部**" 以为企业中的所有人启用它，然后选择 "**保存**"。
   
-5. 当用户登录时，系统会提示他们输入其他联系人信息，这将帮助他们将来重置其密码。
+7. 当用户登录时，系统会提示他们输入其他联系人信息，这将帮助他们将来重置其密码。
 
 ## <a name="related-articles"></a>相关文章
 

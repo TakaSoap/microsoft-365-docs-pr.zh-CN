@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 了解如何使用筛选器在 Microsoft 365 中创建、编辑或删除自定义用户视图。
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431637"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664570"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中创建、编辑或删除自定义用户视图
+# <a name="create-edit-or-delete-a-custom-user-view"></a>创建、编辑或删除自定义用户视图
 
-如果您是 Office 365 的全局管理员或用户管理管理员，则可以创建自定义用户视图以查看特定的用户子集。 这些视图是与 Office 365 附带的标准视图集的补充。 您可以创建、编辑或删除自定义用户视图，您创建的自定义视图可供所有管理员使用。
+如果你是 Microsoft 365 for business 订阅的全局管理员或用户管理管理员，则可以创建自定义用户视图以查看特定的用户子集。 这些视图是对标准视图集的补充。 您可以创建、编辑或删除自定义用户视图，您创建的自定义视图可供所有管理员使用。
   
 ## <a name="custom-user-views-in-the-admin-center"></a>管理员中心内的自定义用户视图
 
@@ -98,7 +98,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>"。
     
 2. 在 "**活动用户**" 页上，选择 "**筛选器**" 并选择 "**新建筛选器**"。
   
@@ -108,7 +108,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>"。  
 
 2. 在 "**活动用户**" 页上，选择 "**视图**"，然后选择 "**添加自定义视图**"。
   
@@ -119,7 +119,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>"。 
 
 2. 在 "**活动用户**" 页上，选择 "**视图**"，然后选择 "**添加自定义视图**"。
   
@@ -132,7 +132,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>"。
     
 2. 在 "**活动用户**" 页上，选择 "**筛选**器"，选择要更改的筛选器，然后选择 "**编辑筛选器**"。 
     
@@ -145,7 +145,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>"。  
 
 2. 在 "**活动用户**" 页上，选择 "**视图**"，选择要更改的筛选器，然后选择 "**编辑此视图**"。 
     
@@ -158,7 +158,7 @@ ms.locfileid: "44431637"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>"。 
 
 2. 在 "**活动用户**" 页上，选择 "**视图**"，选择要更改的筛选器，然后选择 "**编辑此视图**"。 
     

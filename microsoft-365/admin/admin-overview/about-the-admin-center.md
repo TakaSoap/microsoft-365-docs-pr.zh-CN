@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386957"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678644"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -75,7 +75,7 @@ ms.locfileid: "44386957"
   
 |**菜单**|**它有何用途？**|
 |-----|-----|
-|**主页** <br/> |这是新的管理中心内的登陆页面。 你将看到在何处管理用户、帐单、服务运行状况和报表。  <br/> |
+|**主页** <br/> |这是管理中心的登陆页面。 你将看到在何处管理用户、帐单、服务运行状况和报表。  <br/> |
 |**用户** <br/> |创建和管理你组织中的用户，如员工或学生。 你还可设置其权限级别或重置其密码。  <br/> |
 |**组** <br/> |创建和管理组织中的组，例如 Microsoft 365 组、通讯组、安全组或共享邮箱。 了解如何[创建](../create-groups/create-groups.md)和[管理](../create-groups/manage-groups.md)组。  <br/> |
 |**资源** <br/> |创建和管理资源，如 SharePoint 网站集。 了解如何[创建网站集](https://docs.microsoft.com/sharepoint/create-site-collection)。  <br/> |

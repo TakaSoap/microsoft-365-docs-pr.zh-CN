@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156887"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678988"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -35,7 +35,7 @@ ms.locfileid: "44156887"
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规性中心中的 "**处置**" 选项卡，您必须是 "**处置管理**" 角色和 "**仅查看审核日志**" 角色的成员。 我们建议您创建一个名为 "**处置审阅者**" 的新角色组，并将这两个角色添加到该角色组。 
+若要成功访问 Microsoft 365 合规性中心中的 "**处置**" 选项卡，您必须是 "**处置管理**" 角色和 "**仅查看审核日志**" 角色的成员。 我们建议您创建一个名为 "**处置审阅者**" 的新角色组，并将这两个角色添加到该角色组。 即使您是**全局管理员**用户，您也必须是**处置管理**角色的一部分，才能访问 "处置" 选项卡。
 
 特定于**仅查看审核日志**角色：
 
@@ -43,11 +43,11 @@ ms.locfileid: "44156887"
 
 - 此角色不支持 Microsoft 365 组（[以前称为 "Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)"）。 而是分配用户邮箱、邮件用户或启用邮件的安全组。
 
-有关向用户授予**处置管理**角色和创建新的**处置审阅者**角色的说明，请参阅[向用户授予对 Office 365 &amp;安全合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关向用户授予**处置管理**角色和创建新的**处置审阅者**角色的说明，请参阅[向用户授予对 Office 365 安全 &amp; 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>启用审核
 
-确保至少已在第一个处置操作之前的一天内启用审核。 有关详细信息，请参阅[在 Office 365 安全&amp;合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
+确保至少已在第一个处置操作之前的一天内启用审核。 有关详细信息，请参阅[在 Office 365 安全 &amp; 合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
 
 ## <a name="disposition-reviews"></a>处置评审
 

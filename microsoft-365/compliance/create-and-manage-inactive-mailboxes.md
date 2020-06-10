@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 通过对邮箱应用保留策略或保留策略，然后删除相应的用户帐户，可以在 Microsoft 365 中创建非活动邮箱。 非活动邮箱中的项目会在保留或应用到其非活动状态的保留策略的持续时间内保留。 若要永久删除非活动邮箱，只需删除保留策略或保留策略即可。
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166083"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679096"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>创建和管理非活动邮箱
 
@@ -75,9 +75,9 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
   
 1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用你组织中的管理员帐户的凭据进行登录。 
     
-2. 单击 "**信息治理** > **保留**"。
+2. 单击 "**信息治理**  >  **保留**"。
     
-3. 在 "**保留**" 页上，单击 "**更多**![导航栏省略号](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)"，然后单击 "**非活动邮箱**"。
+3. 在 "**保留**" 页上，单击 "**更多** ![ 导航栏省略号"，然后 ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) 单击 "**非活动邮箱**"。
     
     ![在 "保留" 页上，单击 "更多"，然后单击 "非活动邮箱" 以显示非活动邮箱的列表](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-您可以单击!["导出搜索结果](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 图标 "**导出**" 以查看或下载包含有关组织中非活动邮箱的其他信息的 CSV 文件。 
+您可以单击 " ![ 导出搜索结果" 图标 " ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **导出**" 以查看或下载包含有关组织中非活动邮箱的其他信息的 CSV 文件。 
   
 您还可以运行以下命令，将非活动邮箱列表和其他信息导出到 CSV 文件中。 在此示例中，将在当前目录中创建 CSV 文件。
 
@@ -112,7 +112,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
     
 以下是在搜索非活动邮箱时应记住的一些事项。
   
-- 如果内容搜索包括用户邮箱，并且该邮箱随后变为非活动状态，则当您在搜索变为非活动状态后重新运行该搜索时，内容搜索将继续搜索非活动邮箱。
+- 如果内容搜索包含用户邮箱，并且该邮箱变为非活动状态，则当您在搜索处于非活动状态之后重新运行搜索时，内容搜索将继续搜索非活动邮箱。
     
 - 在某些情况下，用户可能有一个活动邮箱和一个具有相同 SMTP 地址的非活动邮箱。 在这种情况下，将仅搜索您选择作为内容搜索的位置的特定邮箱。 换句话说，如果将用户的邮箱添加到搜索，则不能假定将搜索其活动邮箱和非活动邮箱;将仅搜索您显式添加到搜索中的邮箱。
     

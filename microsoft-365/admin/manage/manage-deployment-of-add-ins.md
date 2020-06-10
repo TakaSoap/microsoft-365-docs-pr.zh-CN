@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: e71afad19690d3a05dc5f06bc0718861cb22f12d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399724"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678632"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理加载项的部署
 
@@ -219,8 +219,8 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
 |||
 |:-----|:-----|
 |**平台** <br/> |**内部版本号** <br/> |
-|适用于企业的 Microsoft 365 应用（月度频道）  <br/> |9001.2138   <br/> |
-|适用于企业的 Microsoft 365 应用（半年频道）  <br/> |8431.2159  <br/> |
+|适用于企业的 Microsoft 365 应用（当前频道）  <br/> |9001.2138   <br/> |
+|适用于企业的 Microsoft 365 应用（半年企业频道）  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |

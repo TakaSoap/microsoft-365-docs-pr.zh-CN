@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南将 Intune 设备合规性策略添加到 Microsoft 365 企业版测试环境中。
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631581"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679022"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>适用于 Microsoft 365 企业版测试环境的设备合规性策略
 
@@ -30,7 +30,7 @@ ms.locfileid: "43631581"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，即可获得 Microsoft 365 企业版测试实验室指南堆栈中所有文章的直观目录图。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -46,9 +46,9 @@ ms.locfileid: "43631581"
 
 在此阶段中，将为 Windows 10 设备创建设备合规性策略。
   
-1. 转到 Office 365 门户（[https://portal.office.com](https://portal.office.com)），并使用全局管理员帐户登录到你的 office 365 测试实验室订阅。
+1. 转到 Office 365 门户（ [https://portal.office.com](https://portal.office.com) ），并使用全局管理员帐户登录到你的 office 365 测试实验室订阅。
     
-2. 在浏览器的新选项卡上，在上打开 Azure [https://portal.azure.com](https://portal.azure.com)门户。
+2. 在浏览器的新选项卡上，在上打开 Azure 门户 [https://portal.azure.com](https://portal.azure.com) 。
 
 3. 从浏览器的 "Azure 门户" 选项卡中，在搜索框中键入**Intune** ，然后单击 " **intune**"。
     
@@ -87,7 +87,7 @@ ms.locfileid: "43631581"
 
 20. 在 "**添加应用程序**" 窗格中，选择 "**应用程序套件设置**"。
 
-21. 对于 "**更新频道**"，选择 "**半年**"，然后单击 **"确定"**。
+21. 对于 "**更新频道**"，选择 "**半年企业**"，然后单击 **"确定"**。
 
 22. 在 "**添加应用程序**" 窗格中，单击 "**添加**"。
 
