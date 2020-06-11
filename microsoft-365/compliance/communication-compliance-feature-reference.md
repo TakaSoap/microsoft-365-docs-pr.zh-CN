@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352078"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689240"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -62,7 +62,9 @@ ms.locfileid: "44352078"
 
 若要简化设置，请为需要查看其通信的用户创建组，并为查看这些通信的用户分组。 如果使用的是组，可能需要多个。 例如，如果要扫描两个不同的人员组之间的通信，或者要指定未受监督的组。
 
-当您为受监督的用户选择 Microsoft 365 组时，该策略将扫描共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将扫描单个用户邮箱。 将组和通讯组列表添加到通信合规性策略中是整体条件和规则集的一部分，因此策略支持的组和通讯组列表的最大数量因也添加到策略中的条件数量而异。 每个策略应支持大约20个组或通讯组列表，具体取决于策略中存在的额外条件的数量。
+当您在策略中分配通讯组时，该策略将监视通讯组中每个用户的所有电子邮件。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件，而不是每个组成员收到的单个电子邮件。
+
+将组和通讯组列表添加到通信合规性策略中是整体条件和规则集的一部分，因此策略支持的组和通讯组列表的最大数量因也添加到策略中的条件数量而异。 每个策略应支持大约20个组或通讯组列表，具体取决于策略中存在的额外条件的数量。
 
 ## <a name="supported-communication-types"></a>支持的通信类型
 
@@ -232,7 +234,7 @@ ms.locfileid: "44352078"
 | **Date** | 组织中的用户发送或接收邮件的日期。 |
 | **File 类** | 基于邮件类型（*邮件*或*附件*）的邮件类。 |
 | **有附件** | 邮件中的附件状态。 |
-| **Item 类** | 基于邮件类型、电子邮件、Microsoft 团队聊天、Bloonmberg 等的邮件源。 |
+| **Item 类** | 基于邮件类型、电子邮件、Microsoft 团队聊天、Bloonmberg 等的邮件源。有关常见项目类型和邮件类别的详细信息，请参阅[项目类型和邮件类别](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件人域** | 向其发送邮件的域。 默认情况下，此域通常为 Microsoft 365 订阅域。 |
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |

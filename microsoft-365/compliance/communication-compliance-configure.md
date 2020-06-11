@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b1ce2de627e7068124a1dfd15b84d40a2063d3a2
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210558"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689286"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -96,7 +96,7 @@ ms.locfileid: "44210558"
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 |
 | Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
-当您为受监督的用户选择 Microsoft 365 组时，该策略将监视共享邮箱的内容以及与该组关联的 Microsoft 团队频道。 当您选择通讯组列表时，该策略将监视单个用户邮箱。
+当您在策略中分配通讯组时，该策略将监视通讯组中每个用户的所有电子邮件。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件，而不是每个组成员收到的单个电子邮件。
 
 有关设置组的详细信息，请参阅：
 
@@ -144,7 +144,7 @@ ms.locfileid: "44210558"
     - 选择是否要启用分类器。 分类器可检测在电子邮件正文或其他类型的文本中发送或接收的不正确的语言。
 
     >[!CAUTION]
-    >我们正在弃用采用**冒犯性语言**的内置分类器，因为它生成了大量误报。 请勿使用该功能，如果您当前正在使用它，则应将业务流程移出它。 我们建议改为使用**威胁**、**猥亵**和**骚扰**内置分类符。
+    >我们正在弃用**冒犯性语言**内置分类器，因为它会生成大量误报。 请勿使用该功能，如果您当前正在使用它，则应将业务流程移出它。 我们建议改为使用**威胁**、**猥亵**和**骚扰**内置分类符。
 
     - 定义要查看的通信百分比。
     - 查看策略选择并创建策略。
