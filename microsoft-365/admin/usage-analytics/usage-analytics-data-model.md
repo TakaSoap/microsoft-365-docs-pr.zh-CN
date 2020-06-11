@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API，并提供各种 Microsoft 365 服务的每月使用趋势。  '
-ms.openlocfilehash: 6b0b005e6e07e52731a84490a6df7c9ead614321
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402042"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695087"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
@@ -43,16 +43,16 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 
 |**表名**|**表中信息**|**日期范围**|
 |:-----|:-----|:-----|
-|租户产品使用情况  <br/> |包含已启用的活动用户、逐月保留的用户、首次使用的用户和累积活动用户的每月总计。  <br/> |包含滚动的为期 12 个月（包含当月）的每月汇总数据。  <br/> |
+|租户产品使用情况  <br/> |包含已启用的活动用户、每月的保留用户、第一次用户和累积活动用户的每月总计。  <br/> |包含滚动的为期 12 个月（包含当月）的每月汇总数据。  <br/> |
 |租户产品活动  <br/> |包含活动以及产品中各种活动的活动用户计数的每月总计。  <br/> 有关在此数据表中返回的产品中的活动的信息，请参阅[活动用户定义](active-user-in-usage-reports.md)。  <br/> |包含滚动的为期 12 个月（包含当月）的每月汇总数据。  <br/> |
-|租户 Office 许可证  <br/> |包含分配给用户的 Microsoft Office 订阅数的数据  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|租户邮箱使用情况  <br/> |包含有关用户邮箱的数据，即邮箱数总计和存储使用情况。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
+|租户 Office 许可证  <br/> |包含分配给用户的 Microsoft Office 订阅数的数据  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|租户邮箱使用情况  <br/> |包含有关用户邮箱的数据，即邮箱数总计和存储使用情况。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
 |租户客户端使用情况  <br/> |包含有关频繁使用特定客户端/设备连接到 Exchange Online、Skype for Business 和 Yammer 的用户数的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的每月汇总数据。  <br/> |
-|租户 SharePoint Online 使用情况  <br/> |包含有关 SharePoint 网站（包括团队网站或组网站）的数据，如网站总数、网站上的文档数、各活动类型的文件数和已用存储。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|租户 OneDrive for Business 使用情况  <br/> |包含有关 OneDrive 帐户的数据，如帐户数、跨 OneDrive 的文档数、已用存储、各活动类型的文件数。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|租户 Microsoft 365 组使用情况  <br/> |包含有关 Microsoft 365 组用途（包括邮箱、SharePoint 和 Yammer）的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|租户 Office 激活  <br/> |包含有关 Office 订阅激活次数、每个设备的激活计数（Android/iOS/Mac/电脑）、按服务计划激活的数据（例如，Microsoft 365 Apps for enterprise、Visio、Project）的数据。  <br/> |包含滚动的为期 12 个月（包含当月）的月末状态数据。  <br/> |
-|用户状态  <br/> |包含有关用户的元数据，包括用户显示名称、分配的产品、位置、部门、职务、公司。此数据有关在刚刚结束的一个月内分配到许可证的用户。每个用户都以唯一的用户 ID 表示。  <br/> |此数据有关在刚刚结束的一个月内分配到许可证的用户。  <br/> |
+|租户 SharePoint Online 使用情况  <br/> |包含有关 SharePoint 网站（包括团队网站或组网站）的数据，如网站总数、网站上的文档数、各活动类型的文件数和已用存储。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|租户 OneDrive for Business 使用情况  <br/> |包含有关 OneDrive 帐户的数据，如帐户数、跨 OneDrive 的文档数、已用存储、各活动类型的文件数。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|租户 Microsoft 365 组使用情况  <br/> |包含有关 Microsoft 365 组用途（包括邮箱、SharePoint 和 Yammer）的数据。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|租户 Office 激活  <br/> |包含有关 Office 订阅激活次数、每个设备的激活计数（Android/iOS/Mac/电脑）、按服务计划激活的数据（例如，Microsoft 365 Apps for enterprise、Visio、Project）的数据。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|用户状态  <br/> |包含有关用户的元数据，包括用户显示名称、分配的产品、位置、部门、职务、公司。 此数据有关在刚刚结束的一个月内分配到许可证的用户。 每个用户都由用户 ID 唯一表示。  <br/> |此数据有关在刚刚结束的一个月内分配到许可证的用户。  <br/> |
 |用户活动  <br/> |包含有关授权用户执行的活动的每用户级别的信息。  <br/> 有关在此数据表中返回的产品中的活动的信息，请参阅[活动用户定义](active-user-in-usage-reports.md)。  <br/> |此数据有关刚刚结束的一个月内在任何服务中执行活动的用户。  <br/> |
    
 展开以下各部分，查看每个数据表的详细信息。
@@ -63,11 +63,11 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
   
 |**列名称**|**列说明**|
 |:-----|:-----|
-|UserID  <br/> |代表某一用户的唯一用户 ID，通过它可与数据集内的其他数据表联接。  <br/> |
+|UserId  <br/> |唯一的用户 ID，它代表用户并允许与数据集中的其他数据表进行联接。  <br/> |
 |Timeframe  <br/> |月份值，此表包含该月份的数据。  <br/> |
 |UPN  <br/> |用户主体名称，用于唯一标识用户，使其能够与其他外部数据源联接。  <br/> |
 |DisplayName  <br/> |用户的显示名称。  <br/> |
-|IDType  <br/> |如果用户是 Yammer 用户（通过使用其 Yammer ID 连接），则 Id 类型设置为 1; 如果用户使用 Microsoft 365 ID 连接到 Yammer，则设置为0。  <br/> 值为1表示此用户使用其 Yammer id 连接到 Yammer，而不是使用其 Microsoft 365 id 连接到 Yammer  <br/> |
+|IDType  <br/> |如果用户是 Yammer 用户（通过使用其 Yammer ID 连接），则 ID 类型设置为 1; 如果用户使用 Microsoft 365 ID 连接到 Yammer，则设置为0。  <br/> 值为1表示此用户使用其 Yammer ID 连接到 Yammer，而不是使用其 Microsoft 365 ID 连接到 Yammer  <br/> |
 |HasLicenseEXO  <br/> |如果用户分配有许可证，并且能够使用 Exchange，则设置为 true。  <br/> |
 |HasLicenseODB  <br/> |如果用户分配有许可证，并且能够使用 OneDrive for Business，则设置为 true。  <br/> |
 |HasLicenseSPO  <br/> |如果用户分配有许可证，并且能够使用 SharePoint Online，则设置为 true。  <br/> |
@@ -95,7 +95,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |**列名称**|**列说明**|
 |:-----|:-----|
 |UserID  <br/> |代表某一用户的唯一用户 ID，通过它可与数据集内的其他数据表联接。  <br/> |
-|IDType  <br/> |如果用户是 Yammer 用户（通过使用其 Yammer ID 连接），则 Id 类型设置为 1; 如果用户使用 Microsoft 365 ID 连接到 Yammer，则设置为0。  <br/> 值为1表示此用户使用其 Yammer id 连接到 Yammer，而不是使用其 Microsoft 365 id 连接到 Yammer  <br/> |
+|IDType  <br/> |如果用户是 Yammer 用户（通过使用其 Yammer ID 连接），则 Id 类型设置为 1; 如果用户使用 Microsoft 365 ID 连接到 Yammer，则设置为0。  <br/> 值为1表示此用户使用其 Yammer ID 连接到 Yammer，而不是使用其 Microsoft 365 ID 连接到 Yammer  <br/> |
 |Timeframe  <br/> |月份值，此表代表该月份的数据。  <br/> |
 |EXO_EmailSent  <br/> |发送的邮件数。  <br/> |
 |EXO_EmailReceived  <br/> |接收的邮件数。  <br/> |
@@ -143,7 +143,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
    
 ### <a name="data-table---tenant-product-usage"></a>数据表 - 租户产品使用情况
 
-此表提供了每个月在 Microsoft 365 中每个产品的启用、活动、返回和首次用户的采用情况数据。 Microsoft 365 值表示任一产品中的活动使用率。
+此表根据 Microsoft 365 中每个产品的启用、活动、返回和首次用户提供每月采用情况数据。 Microsoft 365 值表示任一产品中的活动使用率。
   
 |**列名称**|**列说明**|
 |:-----|:-----|
@@ -191,7 +191,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
    
 ### <a name="data-table---tenant-client-usage"></a>数据表 - 租户客户端使用情况
 
-下表提供了有关用户用于连接到 Exchange Online、Skype for Business 和 Yammer 的客户端的逐月汇总数据。此表中的客户端尚未使用 SharePoint Online 和 OneDrive for Business 数据。
+此表提供了有关用户使用的客户端连接到 Exchange Online、Skype for Business 和 Yammer 的每月摘要数据。 此表中的客户端尚未使用 SharePoint Online 和 OneDrive for Business 数据。
   
 |**列名称**|**列说明**|
 |:-----|:-----|

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中提供的反网络钓鱼策略。
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209807"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689274"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -114,7 +114,7 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 - **应用**于：标识 ATP 反网络钓鱼策略应用于的内部收件人。 此值在自定义策略中是必需的，在默认策略中不可用（默认策略适用于所有收件人）。
 
-    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“且”逻辑（例如，_\<recipient1\>_ 且 _\<组成员 1\>_）。
+    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
   - **收件人为**：组织中的一个或多个邮箱、邮件用户或邮件联系人。
   - **收件人是**组织中的一个或多个组的成员：
@@ -128,7 +128,7 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的模拟设置
 
-模拟是邮件中发件人或发件人的电子邮件域的外观与真实发件人或域非常相似：
+模拟是邮件中发件人或发件人的电子邮件域类似于真实的发件人或域：
 
 - 域 contoso.com 的模拟示例是ćóntoso.com。
 
@@ -140,11 +140,11 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 - **要保护的用户**：阻止模拟指定的内部或外部用户。 例如，高级管理人员（内部）和董事会成员（外部）。 您可以添加最高为60的内部和外部地址。 此受保护的用户列表与**应用**于设置的策略所适用的收件人列表不同。
 
-  例如，在应用于名为 "主管" 的组的策略中，将 Felipe Apodaca （felipea@contoso.com）指定为受保护的用户。 向执行人员组的成员发送的入站邮件（其中 Felipe Apodaca 将被模拟）将由策略处理（为模拟用户配置的操作）。
+  例如，在应用于名为 "主管" 的组的策略中，将 Felipe Apodaca （felipea@contoso.com）指定为受保护的用户。 发送给执行人员组成员的入站邮件将由策略（为模拟用户配置的操作）处理 Felipe Apodaca。
 
 - **要保护的域**：阻止模拟指定的域。 例如，您拥有的所有域（[接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）或特定域（拥有或合作伙伴域的域）。 此受保护域的列表与**应用**于设置的策略所适用的域列表不同。
 
-  例如，将 tailspintoys.com 指定为应用于名为 "主管" 的组成员的策略中的受保护域。 向执行人员组的成员发送的入站邮件将由策略对其中的 tailspintoys.com 进行处理（为模拟域配置的操作）。
+  例如，将 tailspintoys.com 指定为应用于名为 "主管" 的组成员的策略中的受保护域。 发送到 tailspintoys.com 在其中模拟的行政组成员的入站邮件将由策略处理（为模拟域配置的操作）。
 
 - **针对受保护的用户或域的操作**：选择对入站邮件执行的操作，这些邮件包含对策略中的受保护用户和受保护域的模拟尝试。 您可以为受保护的用户和模拟的受保护域的模拟指定不同的操作：
 
