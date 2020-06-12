@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678988"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702556"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -35,7 +35,10 @@ ms.locfileid: "44678988"
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规性中心中的 "**处置**" 选项卡，您必须是 "**处置管理**" 角色和 "**仅查看审核日志**" 角色的成员。 我们建议您创建一个名为 "**处置审阅者**" 的新角色组，并将这两个角色添加到该角色组。 即使您是**全局管理员**用户，您也必须是**处置管理**角色的一部分，才能访问 "处置" 选项卡。
+若要成功访问 Microsoft 365 合规性中心中的 "**处置**" 选项卡，用户必须具有 "**处置管理**" 角色和 "**仅查看审核日志**" 角色。 虽然标准建议是将用户添加到默认角色组，在这种情况下，我们建议您创建一个名为 "**处置审阅者**" 的新角色组，该角色组具有这两个角色，并根据需要向该组添加用户。 用于处置的单个角色组可减少管理开销，并使用户能够更轻松地拥有所需的组合权限。
+
+> [!NOTE]
+> 即使是全局管理员也需要授予**处置管理**角色。 因此，如果全局管理员需要访问 "处置审阅者" 角色组的成员，则将其作为 "处置**审阅者**" 角色组的成员。 
 
 特定于**仅查看审核日志**角色：
 

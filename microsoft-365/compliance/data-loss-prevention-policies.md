@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 通过安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
-ms.openlocfilehash: 68e81a83242ef4a1a099760044b5ccaec5bd91b7
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630599"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679066"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ DLP 策略包含以下基本内容：
     
 - 内容是与贵组织的外部还是内部人员共享。
 
-> [!NOTE]
-> 在主体组织的 Active Directory 或 Azure Active Directory 租户中具有非来宾帐户的用户是否被视为该组织内部人员。
+  > [!NOTE]
+  > 在主体组织的 Active Directory 或 Azure Active Directory 租户中具有非来宾帐户的用户是否被视为该组织内部人员。
     
 #### <a name="types-of-sensitive-information"></a>敏感信息类型
 
@@ -127,13 +127,13 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Micro
   
 当 DLP 策略查找信用卡号之类的敏感信息类型时，它不只是在查找 16 位数字。 通过以下组合对每种敏感信息类型进行定义和检测：
   
-- 关键字
+- 关键字。
     
-- 用于验证校验和或撰写的内部函数
+- 用于验证校验和或撰写的内部函数。
     
-- 用于查找模式匹配的正则表达式评估
+- 用于查找模式匹配的正则表达式评估。
     
-- 其他内容检查
+- 其他内容检查。
     
 这将有助于实现高度准确的 DLP 检测，同时减少导致用户工作中断的误报数。
   
@@ -145,13 +145,19 @@ DLP 策略可帮助保护定义为**敏感信息类型**的敏感信息。 Micro
   
 借助可用操作，能够：
   
-- **限制对内容的访问** 对于网站内容，这就意味着，除主要网站集管理员、文档所有者和上次修改文档的人员外，所有人访问该文档均受限。 这些用户可从文档中删除敏感信息或执行其他补救操作。 如果文档符合规则，则会自动恢复原始权限。 访问文档受阻时，文档将在网站的库中显示一个特殊策略提示图标。 
+- **限制对内容的访问权限**，根据需要，可通过以下三种方式限制对内容的访问权限：
+
+  1. 限制所有人对内容的访问权限。
+  2. 限制组织外部人员对内容的访问权限。
+  3. 将访问权限限制为“拥有链接的任何人”。
+
+  对于网站内容，这就意味着，除主要网站集管理员、文档所有者和上次修改文档的人员外，所有人访问该文档均受限。 这些用户可从文档中删除敏感信息或执行其他补救操作。 如果文档符合规则，则会自动恢复原始权限。 访问文档受阻时，文档将在网站的库中显示一个特殊策略提示图标。 
     
-    ![显示文档访问被拦截的策略提示](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![显示文档访问被拦截的策略提示](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    对于电子邮件内容，此操作阻止发送该邮件。 根据 DLP 规则的配置方式，发件人将看到 NDR 或（如果规则使用通知）策略提示和/或电子邮件通知。
+  对于电子邮件内容，此操作阻止发送该邮件。 根据 DLP 规则的配置方式，发件人将看到 NDR 或（如果规则使用通知）策略提示和/或电子邮件通知。
     
-    ![警告：必须从邮件中删除未经授权的收件人](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![警告：必须从邮件中删除未经授权的收件人](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>用户通知和用户覆盖
 
@@ -289,7 +295,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
   
 ### <a name="match-accuracy"></a>匹配准确度
 
-如上文所述，使用不同类型的证据组合定义并检测敏感信息类型。 敏感信息类型通常由多个此类组合（称为模式）定义。 需要越少证据的模式匹配准确度（即置信水平）越低，而需要越多证据的模式匹配准确度（即置信水平）更高。 若要了解每种敏感信息类型使用的实际模式和置信水平，请参阅[使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)。
+如上文所述，使用不同类型的证据组合定义并检测敏感信息类型。 敏感信息类型通常由多个此类组合（称为模式）定义。 需要越少证据的模式匹配准确度（即置信水平）越低，而需要越多证据的模式匹配准确度（即置信水平）更高。 若要了解每种敏感信息类型使用的实际模式和置信水平，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
   
 例如，名为“信用卡号”的敏感信息类型由两种模式定义：
   
@@ -332,18 +338,17 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 将以前创建和发布的[保留标签](labels.md)用作 DLP 策略中的条件时，请注意以下事项：
 
 - 在尝试将保留标签用作 DLP 策略中的条件之前，你以前必须已创建、发布和应用了该标签。
-- 创建并发布保留标签后，它们可能需要长达一天的时间来同步，并且最多需要 7 天来自动应用。 有关详细信息，请参阅[保留标签需要多长时间才能生效](labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
+- 创建并发布保留标签后，它们可能需要长达一天的时间来同步，并且最多需要 7 天来自动应用。 有关详细信息，请参阅[保留标签需要多长时间才能生效](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
 - ***仅支持 SharePoint Online 和 OneDrive for Business 中的项目***在策略中使用保留标签。
 
+  ![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  如果你有项目处于保留和处置状态，并且还希望为其应用其他控件，则可能需要在 DLP 策略中使用保留标签，例如：
 
-如果你有项目处于保留和处置状态，并且还希望为其应用其他控件，则可能需要在 DLP 策略中使用保留标签，例如：
+  - 你发布了一个名为“**2018 纳税年度**”的保留标签，当它应用于存储在 SharePoint 中的 2018 年税务文档后，系统会将其保留 10 年，并在此期限后处置它们。 你也不希望在组织外部共享这些项目，你可以使用 DLP 策略来完成此操作。
 
-- 你发布了一个名为“**2018 纳税年度**”的保留标签，当它应用于存储在 SharePoint 中的 2018 年税务文档后，系统会将其保留 10 年，并在此期限后处置它们。 你也不希望在组织外部共享这些项目，你可以使用 DLP 策略来完成此操作。
-
-> [!IMPORTANT]
-> 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：**“不支持保护电子邮件和团队消息中带标签的内容。请删除下述标签或取消将 Exchange 和 Teams 设为位置。”** 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
+  > [!IMPORTANT]
+  > 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：**“不支持保护电子邮件和团队消息中带标签的内容。请删除下述标签或取消将 Exchange 和 Teams 设为位置。”** 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>即将推出对敏感度标签的支持
 
@@ -449,15 +454,15 @@ DLP 使用深入内容分析（而不仅仅是简单的文本扫描）来检测�
 
 在安全 &amp; 合规中心创建 DLP 策略后，它将存储在中心策略存储中，然后同步到各种内容源，其中包括：
   
-- Exchange Online，并从它同步到 Outlook 网页版和 Outlook
+- Exchange Online，并从它同步到 Outlook 网页版和 Outlook。
     
-- OneDrive for Business 站点
+- OneDrive for Business 网站。
     
-- SharePoint Online 站点
+- SharePoint Online 网站。
     
-- Office 桌面程序（Excel、PowerPoint 和 Word）
+- Office 桌面程序（Excel、PowerPoint 和 Word）。
 
-- Microsoft Teams 频道和聊天消息
+- Microsoft Teams 频道和聊天消息。
     
 该策略同步到正确的位置后，它将开始评估内容并强制执行操作。
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -504,9 +509,13 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 1. 在 Microsoft 365 中创建组并向其添加合规部主管。
     
 2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
+
+3. 创建角色组时，使用“**选择角色**”部分向角色组添加以下角色：**DLP 合规性管理**。
     
-3. 将 Microsoft 365 组添加到角色组。
-    
+4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
+
+此外，还可通过授予“**仅查看 DLP 合规性管理**”角色，创建对 DLP 策略和 DLP 报告具有仅查看权限的角色组。
+
 有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
 只有在创建和应用 DLP 策略时才需要这些权限。 策略执行不需要访问此内容。
@@ -515,19 +524,19 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
 
 若要使用安全 &amp; 合规中心的大多数 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Office 365 安全 &amp; 合规中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [使用远程 PowerShell 连接到 Office 365 安全与合规中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
-2. 使用任何[策略和合规性 dlp cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
+2. 使用任一 [policy-and-compliance-dlp cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)。
     
 但是，DLP 报告需要从 Microsoft 365（包括 Exchange Online）提取数据。 因此，**可以在 Exchange Online Powershell 中使用 DLP 报告的 cmdlet，而不能在安全 &amp; 合规中心 Powershell 中使用**。 因此，若要使用适用于 DLP 报告的 cmdlet，你需要执行以下操作：
   
-1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
 2. 对 DLP 报告使用以下任意 cmdlet：
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>更多信息
 
@@ -539,8 +548,8 @@ Office 中的 DLP 策略评估旨在不对程序的性能或处理内容的用�
     
 - [DLP 策略模板包含的内容](what-the-dlp-policy-templates-include.md)
     
-- [使用敏感信息类型查找什么](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
     
-- [DLP 函数查找的内容](what-the-dlp-functions-look-for.md)
+- [DLP 函数查找什么](what-the-dlp-functions-look-for.md)
     
 - [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)
