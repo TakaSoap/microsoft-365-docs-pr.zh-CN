@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470669"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678978"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -349,7 +349,7 @@ ms.locfileid: "44470669"
 
 5. 选择“**从当前选择权限或自定义**”。
 
-6. 在“**从当前选择权限或自定义**”窗格中，选择下拉框，选择所需的“**查看者**”权限，然后选择“**保存**”。
+6. 在“**从当前选择权限或自定义**”窗格中，选择下拉框，选择所需的权限，然后选择“**保存**”。
 
 7. 返回到“**分配权限**”窗格中，选择“**保存**”。
 

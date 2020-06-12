@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: bfbebf78664cdce34d224c5cc4b24ed6a9ad0646
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470659"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44658354"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -135,7 +135,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 在预览期间，以下应用支持敏感度标签的可训练分类器：
 
-- 适用于 Windows 的 Microsoft 365 企业应用版（以前称为 Office 365 专业增强版），从 [Office 预览体验计划](https://office.com/insider)：
+- 适用于 Windows 的 Microsoft 365 企业应用版（[以前称为 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/name-change)），从 [Beta  频道](https://office.com/insider)（[以前称为 Office 预览体验计划](https://docs.microsoft.com/deployoffice/update-channels-changes)）：
     - Word
     - Excel
     - PowerPoint

@@ -18,17 +18,17 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 对于管理员：了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到 Exchange Online 的用户邮箱中。 本主题提供了常见问题解答并解释了 PST 导入流程的工作原理。
-ms.openlocfilehash: baf8fc0dbfb464dcf6b8054a9d91aacda00e3da6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636625"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679056"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
 > [!NOTE]
-> 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> 本文适用于管理员。 你正在尝试将 PST 文件导入到自己的邮箱吗？ 请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
 
 可以使用安全与合规中心的导入服务，将 PST 文件快速批量导入到组织的 Exchange Online 邮箱中。 可通过两种方法将 PST 文件导入到 Office 365 中：
 
@@ -145,7 +145,7 @@ ms.locfileid: "43636625"
   
  **网络上传在哪些地区提供？**
   
-网络上传当前在以下区域提供：美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国和澳大利亚。该功能将很快在更多区域提供。
+网络上传当前在以下区域提供：美国、加拿大、巴西、英国、欧洲、印度、东亚地址、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国。该功能将很快在更多区域提供。
 
 > [!NOTE]
 > 目前，不可在德国和瑞士使用 PST 文件的网络上传功能。 当这些国家/地区提供网络上传功能后，此常见问题解答将更新。

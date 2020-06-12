@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Microsoft 365 企业应用版。
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011883"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679034"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 的 Microsoft 365 企业应用版部署
 
@@ -53,10 +53,10 @@ Contoso 从云中启用自动更新，而非使用 Configuration Manager 来管�
 
 Contoso 使用了与部署 Office 时相同的两阶段功能更新方法：试点组中的设备收到功能更新的时间比组织中的剩余组（广泛组）中的设备早 4 个月。为了为 Office 启用此功能，Contoso 使用了两个推荐的[更新频道](https://docs.microsoft.com/DeployOffice/overview-update-channels)： 
 
-- 试点组更新的半年频道（定向） 
-- 广泛组更新的半年频道。 
+- 试点组更新的 Enterprise 半年频道（预览）。 
+- 广泛组更新的 Enterprise 半年频道。 
 
-因为半年（定向）频道发布 Microsoft 365 企业应用版的时间比半年频道早 4 个月，所以，Contoso 有时间来验证更新，无需对其进行管理。 
+因为半年 Enterprise 频道（预览）发布 Microsoft 365 企业应用版的时间比半年 Enterprise 频道早 4 个月，所以，Contoso 有时间来验证更新，无需对其进行管理。 
 
 ## <a name="deployment-process"></a>部署过程
 
@@ -65,7 +65,7 @@ Contoso 使用了与部署 Office 时相同的两阶段功能更新方法：试�
 1. 在部署前，它们使用了 Readiness Toolkit 来测试其应用和 Office 加载项，以评估其与 Microsoft 365 企业应用版的兼容性。
 2. 在 Configuration Manager 中，Contoso 在其客户端设备上启用了对等缓存，在部署到偏远位置的客户端设备时，这有助于节省有限的网络容量。 
 3. 它们将两个部署组作为 Configuration Manager 中的设备集合来定义：试点组和广泛组。试点组包含一小组跨组织的代表设备，用于对 Windows 10 企业版和 Microsoft 365 企业应用版中的应用、加载项和硬件执行其他测试。 
-4. 它们使用 Office 客户端管理仪表板和 Office 365 安装程序向导（两者都是 Configuration Manager 控制台的一部分）为 Office 创建了部署包。生成了两个 Microsoft 365 企业应用版包，一个适用于半年频道（定向）的试点组，另一个适用于半年频道的广泛组。 
+4. 它们使用 Office 客户端管理仪表板和 Office 365 安装程序向导（两者都是 Configuration Manager 控制台的一部分）为 Office 创建了部署包。生成了两个 Microsoft 365 企业应用版包，一个适用于半年 Enterprise 频道（预览）的试点组，另一个适用于半年 Enterprise 频道的广泛组。 
 5. 作为每个 Office 包的一部分，它们包含了英语、法语和德语包。如果某个设备要求的语言不在 Office 包内，则从 Office 内容交付网络 (CDN) 自动下载该语言。
 6. 在安装 Microsoft 365 企业应用版前，它们使用 Office 包中的内置功能来自动删除所有现有的 Office 的 MSI 版本。
 7. 在 Configuration Manager 中，它们将 Windows 和 Office 包部署到跨其网络的分发点，然后运行 Configuration Manager 部署任务序列，以将试点 Microsoft 365 企业应用版包部署到试点组。

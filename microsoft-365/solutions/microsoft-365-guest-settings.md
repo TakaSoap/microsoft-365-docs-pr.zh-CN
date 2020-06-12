@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: a1c734adfe72d5eff5f18e67116544fd63eb854a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160131"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679140"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -195,7 +195,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 |仅让所选安全组中的用户与已验证的外部用户共享|关闭|设置为“**打开**”时，只有指定安全组中的人员才能与外部用户共享。 仅提供“*特定人员*”链接。 除非“**仅让所选安全组中的用户使用匿名链接与已验证的外部用户共享**”也设置为“**打开**”，才会有效禁用“*任何人*”链接。|
 |仅让所选安全组中的用户使用匿名链接与已验证的外部用户共享|关闭|设置为“**打开**”时，只有指定安全组中的人员才能与来宾共享。 提供“*任何人*”和“*特定人员*”链接。|
 
-可同时使用这两个设置。 如果用户位于为这两个设置指定的安全组中，则以更高权限级别为准（“*任何人*”加“*特定用户*”）。
+可同时使用这两个设置。 如果用户位于为这两个设置指定的安全组中，则以更高权限级别为准（“*任何人*”加“*特定用户*”）。 支持嵌套安全组。
 
 ## <a name="sharepoint-site-level"></a>SharePoint（网站级别）
 

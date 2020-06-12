@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略主动决定是保留内容还是删除内容，或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: cf38eecaeaf23371c370ad07e723177e3770c7ba
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432333"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695135"
 ---
 # <a name="learn-about-retention-policies"></a>了解保留策略
 
@@ -141,18 +141,17 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
   
 **Exchange Online 中的早期功能：**
 
-- [在 Office 365 安全与合规中心内管理电子数据展示案件集](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery)（电子数据展示保留） 
-    
 - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)（电子数据展示保留） 
 
 - [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [保留标记和保留策略](https://go.microsoft.com/fwlink/?linkid=846125)，亦称为[邮件传递记录管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126)（仅限删除）
     
+另请参阅[旧版电子数据展示工具的停用](legacy-ediscovery-retirement.md)。
+
+
 **SharePoint 和 OneDrive 中的早期功能：**
 
-- [在 Office 365 安全与合规中心内管理电子数据展示案件集](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery)（电子数据展示保留） 
-    
 - [在电子数据展示中心内将内容添加到案件集并保留源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)（电子数据展示保留） 
     
 - [文档删除策略](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff)（仅删除）
