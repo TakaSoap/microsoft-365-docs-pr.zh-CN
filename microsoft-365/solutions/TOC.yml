@@ -28,9 +28,10 @@
         - name: 步骤 6. 培训远程员工
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 与 Microsoft 365 建立安全协作
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: Microsoft Teams 的三层保护
+        - name: 概述
+          href: setup-secure-collaboration-with-teams.md
+        - name: 步骤 1. 配置 Microsoft Teams 的三层保护
           items:
             - name: 三层保护概述
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: 配置具有安全隔离的团队
               href: secure-teams-security-isolation.md
-        - name: 配置外部共享
+        - name: 步骤 2. 配置外部共享
           items:
             - name: 外部共享概述
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,11 @@
             - name: 来宾共享参考
               href: microsoft-365-guest-settings.md
     - name: 在 Microsoft 365 中部署威胁防护
-      href: deploy-threat-protection.md
+      items:
+        - name: 概述
+          href: deploy-threat-protection.md
+        - name: 威胁防护部署步骤
+          href: deploy-threat-protection-configure.md
     - name: 为数据隐私法规部署信息保护
       items:
         - name: 概述
