@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
-ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
+ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604307"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724796"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -32,22 +32,22 @@ ms.locfileid: "44604307"
 
 在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签时，将启用所有这些功能。 除了向用户显示敏感度标签之外，对于应用了敏感标签的新文件和已更改文件，包括使用基于云的密钥进行加密：
 
-- SharePoint 可识别应用于 SharePoint 和 OneDrive 中的 Word、Excel 和 PowerPoint 文件的敏感度标签。当文件存储在 SharePoint 中时，将删除来自 Azure 信息保护的加密，以便可以对文件内容进行处理。 有关在将文档存储在 SharePoint 中时如何保护文档的信息，请参阅[OneDrive For business 和 SharePoint Online 中的数据加密](data-encryption-in-odb-and-spo.md)。
+- 对于 Word、Excel 和 PowerPoint 文件，SharePoint 会识别该标签，现在可以处理加密文件的内容。
 
-- 从 SharePoint 或 OneDrive 下载或访问此文件时，标签中的敏感度标签和任何加密设置都会重新应用于该文件，并且在保存文件的任何位置都将强制执行这些设置。 由于此行为，请确保提供仅使用标签来保护文档的用户指南。 有关详细信息，请参阅[信息权限管理（IRM）选项和敏感度标签](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
+- 从 SharePoint 或 OneDrive 下载或访问这些文件时，将强制应用标签中的敏感度标签和任何加密设置，并在存储文件的任何位置保留这些设置。 确保提供用户指南以仅使用标签来保护文档。 有关详细信息，请参阅[信息权限管理（IRM）选项和敏感度标签](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
 
-- 为了使 SharePoint 能够在上载时从文件中删除加密，上载已标记和已加密文件的用户必须至少具有查看该文件的使用权限。 如果用户无法在 SharePoint 外部打开加密，则 SharePoint 不会从文件中删除加密。
+- 当用户将标记和加密的文件上传到 SharePoint 时，他们必须至少具有对这些文件的查看权限。 例如，他们可以在 SharePoint 外部打开文件。 如果没有合适的最小使用率，则上载将会成功，但 SharePoint 无法识别标签，也无法处理文件内容。
 
 - 使用 web 上的 Office （Word、Excel、PowerPoint）打开和编辑具有应用加密的敏感度标签的 Office 文件。 将强制实施通过加密分配的权限。 在 web 上使用 Word 时，您还可以在编辑这些文档时使用自动标记。
 
 - 外部用户可以使用来宾帐户访问标记为加密的文档。 有关详细信息，请参阅[对外部用户的支持和带标签的内容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
-- Office 365 电子数据展示支持对这些文件进行全文搜索。 数据丢失防护（DLP）策略涵盖这些文件中的内容。
+- Office 365 电子数据展示支持对这些文件进行全文搜索。 数据丢失防护（DLP）策略支持这些文件中的内容。
 
 > [!NOTE]
 > 如果加密尚未应用于基于云的密钥，而是本地密钥，则密钥管理拓扑通常称为 "保留自己的密钥" （HYOK），用于处理文件内容的 SharePoint 行为不会发生变化。
 >
-> Sharepoint 中的现有标记和加密文件的 SharePoint 行为也不会更改。 为了使这些文件受益于新功能，必须下载和上载这些文件，或者在运行命令以启用 SharePoint 和 OneDrive 的敏感度标签后对这些文件进行编辑。 例如，它们将在搜索和电子数据展示结果中返回。
+> Sharepoint 中的现有标记和加密文件的 SharePoint 行为也不会更改。 为了使这些文件受益于新功能，必须下载和上载这些文件，或者在运行命令以启用 SharePoint 和 OneDrive 的敏感度标签后对这些文件进行编辑。 然后，SharePoint 可以处理这些文件。 例如，它们将在搜索和电子数据展示结果中返回。
 
 在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签后，可使用三个新的[审核事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)来监视应用于 Sharepoint 和 onedrive 中文档的敏感度标签：
 - **已向文件应用敏感度标签**

@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: 在本文中，查找适用于 Skype、OneDrive、SharePoint 和 Exchange Online 的 Office 365 加密的说明。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 摘要：对 Skype、OneDrive、SharePoint、Microsoft 团队和 Exchange Online 加密的说明。
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031392"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717333"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>Skype for Business、OneDrive for Business、SharePoint Online 和 Exchange Online 的加密
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>Skype for business、OneDrive for Business、SharePoint Online、Microsoft 团队和 Exchange Online 加密
 
 Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保护：物理数据中心安全性、网络安全性、访问安全性、应用程序安全性和数据安全性。
 
@@ -87,3 +86,32 @@ Exchange Online 对所有邮箱数据使用 BitLocker，并且 bitlocker 配置�
 除了服务加密之外，Microsoft 365 还支持客户密钥，这是基于服务加密的基础构建的。 "客户密钥" 是 Exchange Online 服务加密的 Microsoft 托管密钥选项，也在 Microsoft 的路线图中。 此加密方法提供了 BitLocker 不提供的增强保护，因为它提供了服务器管理员的分离和解密数据所需的加密密钥，并且，由于加密直接应用于数据（与 BitLocker 在逻辑磁盘卷上应用加密），因此从 Exchange 服务器复制的任何客户数据仍保持加密。
 
 Exchange Online 服务加密的作用域是 Exchange Online 中存储在 rest 上的客户数据。 （Skype for Business 存储几乎在用户的 Exchange Online 邮箱中的所有用户生成的内容，因此继承了 Exchange Online 的服务加密功能。）
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+团队使用 TLS 和 MTLS 对即时消息进行加密。 所有服务器到服务器的通信都需要 MTLS，无论流量是限制到内部网络还是跨越内部网络外围。
+
+此表汇总了团队使用的协议。
+
+***流量加密***
+
+|||
+|:-----|:-----|
+|**通信类型**|**加密者**|
+|服务器到服务器|MTLS|
+|客户端到服务器（ex 即时消息和状态）|TLS|
+|媒体流（ex） 媒体的音频和视频共享）|TLS|
+|媒体的音频和视频共享|SRTP/TLS|
+|信号|TLS|
+|||
+
+#### <a name="media-encryption"></a>媒体加密
+
+媒体通信是使用安全 RTP (SRTP) 进行加密的，SRTP 是为 RTP 通信提供保密性、身份验证和重播攻击保护的实时传输协议 (RTP) 的配置文件。 SRTP 使用使用安全随机数生成器生成的会话密钥，并使用信号 TLS 通道进行交换。 客户端到客户端媒体流量通过客户端到服务器连接信号进行协商，但在客户端到客户端直接转时使用 SRTP 进行了加密。
+
+团队使用基于凭据的令牌，通过转而对媒体中继进行安全访问。 媒体中继通过 TLS 安全通道交换令牌。
+
+#### <a name="fips"></a>FIPS
+
+团队对加密密钥交换使用 FIPS （联邦信息处理标准）兼容的算法。 有关实现 FIPS 的详细信息，请参阅[联邦信息处理标准（FIPS）发布 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide)。

@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为适用于 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件的 Microsoft 365 设置客户密钥。
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352269"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717259"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -108,15 +108,15 @@ SharePoint Online 和 OneDrive for Business：
 
 2. 登录后，请浏览到**仪表板**。
 
-3. 选择 "**服务**"，并查看当前提供的列表。
+3. 从导航栏中选择 "**部署**"，**或**选择 "在**部署**信息卡上**查看所有部署资源**"，并查看当前提供的列表。
 
-4. 有关适用于你的优惠，请选择 "**了解详细信息**"：
+4. 选择适用于你的产品的信息卡片：
 
-   - **Exchange Online 和 Skype For business：** 选择 "了解 Exchange 的**客户密钥**" 提供的**详细信息**。
+   - **Exchange Online 和 Skype For business：****为 Exchange online 提供程序选择 "请求加密密钥帮助**"。
 
-   - **SharePoint Online、OneDrive For business 和团队文件：** 有关**详细信息**，请选择了解**SharePoint 和 OneDrive for Business 产品的客户密钥**。
+   - **SharePoint Online、OneDrive 和团队文件：** 选择 "**请求加密密钥帮助" 和 "Sharepoint" 和 "OneDrive**提供"。
 
-5. 在 "**提供详细信息**" 页上，选择 "**创建请求**"。
+5. 查看提供详细信息后，选择 "**继续执行步骤 2**"。
 
 6. 填写 "产品" 窗体上的所有适用详细信息和请求的信息。 特别注意您的组织中要授权的监察官，以批准永久和不可恢复的加密密钥和数据的销毁。 完成表单后，选择 "**提交**"。
 
@@ -137,7 +137,7 @@ SharePoint Online 和 OneDrive for Business：
 
 3. 请与 Microsoft 联系以完成此过程。 对于 SharePoint 和 OneDrive for Business 团队，请联系[spock@microsoft.com](mailto:spock@microsoft.com)。 对于 Exchange Online 和 Skype for Business，请联系[exock@microsoft.com](mailto:exock@microsoft.com)。 在您的电子邮件中包括以下内容：
 
-   **Subject**： \< *租户的完全限定域名*的客户密钥\>
+   **Subject**：客户密钥\<*Your tenant's fully-qualified domain name*\>
 
    **正文**：要为其完成强制保留期的订阅 id。
    每个订阅的 AzProviderFeature 的输出。

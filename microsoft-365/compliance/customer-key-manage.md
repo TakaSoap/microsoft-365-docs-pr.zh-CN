@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在设置客户密钥之后，请了解如何通过还原 AKV 密钥以及管理权限和数据加密策略来管理它。
-ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352199"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717303"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 
@@ -142,13 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 如果邮箱已加密，则 IsEncrypted 属性返回**true** ，如果邮箱未加密，则返回**false**值。
 
-完成邮箱移动的时间取决于邮箱的大小。 如果客户密钥在72小时后未从分配新的 DEP 中完全加密邮箱，则启动邮箱移动。 为此，请使用 New-moverequest cmdlet，并提供邮箱的别名。 例如：
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-有关此 cmdlet 的详细信息，请参阅[get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps)。
+完成邮箱移动的时间取决于邮箱的大小。 如果客户密钥尚未在72小时后从分配新的 DEP 中完全加密邮箱，请与 Microsoft 支持部门联系以获取帮助。 New-moverequest cmdlet 不再可用于本地邮箱移动。 有关详细信息，请参阅本次[通知](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141)。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>验证 SharePoint Online、OneDrive for Business 和团队文件的加密是否已完成
 

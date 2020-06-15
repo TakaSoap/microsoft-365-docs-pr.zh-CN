@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208394"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717313"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>调查和修正通信合规性警报
 
@@ -70,7 +70,7 @@ ms.locfileid: "44208394"
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>使用接近和完全重复的分析
 
-通信合规性策略在不进行任何其他配置步骤的情况下自动扫描和预先分组的邻近邮件和完全邮件重复。 通过此视图，可以快速一次性地更正类似的邮件或作为一个组，从而减少审阅者的邮件调查负担。 在检测到重复项时，"修正操作" 工具栏中将显示 "**接近的重复项**" 和 "/" 和 "**完全重复**" 控件。
+通信合规性策略在不进行任何其他配置步骤的情况下自动扫描和预先分组的邻近邮件和完全邮件重复。 通过此视图，可以快速一次性地更正类似的邮件或作为一个组，从而减少审阅者的邮件调查负担。 在检测到重复项时，"修正操作" 工具栏中将显示 "**接近的重复项**" 和 "/" 和 "**完全重复**" 控件。 如果找不到或不找到精确的重复项，则此视图不可用。
 
 #### <a name="to-remediate-duplicates"></a>更正重复项
 

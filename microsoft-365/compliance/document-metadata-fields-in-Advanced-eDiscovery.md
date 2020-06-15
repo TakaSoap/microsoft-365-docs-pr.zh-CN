@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941234"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726448"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -44,8 +44,8 @@ ms.locfileid: "42941234"
 |附件名称|AttachmentNames|Attachment_Names|附件的名称列表。|
 |律师客户端权限分数|AttorneyClientPrivilegeScore||律师-客户端权限模型内容分数。|
 |作者|作者|Doc_authors|来自文档元数据的作者。|
-|BCC|Bcc|Email_bcc|邮件类型的 "密件抄送" 字段。 格式为**DisplayName \<SMTPAddress>**。|
-|CC|Cc|Email_cc|邮件类型的 "抄送" 字段。 格式为**DisplayName \<SMTPAddress>**。|
+|BCC|Bcc|Email_bcc|邮件类型的 "密件抄送" 字段。 格式为**DisplayName \<SMTPAddress> **。|
+|CC|Cc|Email_cc|邮件类型的 "抄送" 字段。 格式为**DisplayName \<SMTPAddress> **。|
 |合规性标签|ComplianceLabels|Compliance_labels|将[保留标签](labels.md)应用于 Office 365 中的内容。|
 |复合路径|CompoundPath|Compound_path|描述项目来源的可读路径。|
 |内容|内容||提取的项的文本。|
@@ -103,17 +103,18 @@ ms.locfileid: "42941234"
 |Item 类|ItemClass|Item_class|由 exchange server 提供的 Item 类;例如， **IPM。注释**|
 |上次修改日期|LastModifiedDate|Doc_date_modified|文档元数据中的上次修改日期。|
 |加载 ID|LoadId|Load_ID|将项目添加到评审集的负载集的 Id。|
-|位置|位置|位置|表示文档来源的位置的类型的字符串。<br /><br />**导入的数据**-非 Office 365 数据<br />**团队**-Microsoft 团队<br />**Exchange** -exchange 邮箱<br />**Sharepoint** -sharepoint 网站<br />**Onedrive** -onedrive 帐户|
+|Location|Location|Location|表示文档来源的位置的类型的字符串。<br /><br />**导入的数据**-非 Office 365 数据<br />**团队**-Microsoft 团队<br />**Exchange** -exchange 邮箱<br />**Sharepoint** -sharepoint 网站<br />**Onedrive** -onedrive 帐户|
 |位置名称|LocationName|Location_name|标识项的源的字符串。 对于 exchange，这将是邮箱的 SMTP 地址;对于 SharePoint 和 OneDrive，是网站集的 URL。|
 |标记为代表|MarkAsRepresentative||每组精确的重复项中的一个文档被标记为代表。|
 |标记为前置标记事例问题 1 *||Marked_as_pre_tagged_Case_issue_1|标记为 "预先标记的案例问题 1" 与 "相关性"。|
 |标记为 "种子情况问题 1 *"||Marked_as_seed_Case_issue_1|从相关性中标记为 "种子事例问题 1"。|
 |会议结束日期|MeetingEndDate|Meeting_end_date|会议的会议结束日期。|
 |会议开始日期|MeetingStartDate|Meeting_start_date|会议的会议开始日期。|
-|邮件类型|MessageKind|Message_kind|要搜索的邮件的类型。 可能的值** <br /> <br />： <br />联系人<br />文档<br />电子<br />邮件<br />externaldata <br />传真<br />im <br />日记会议 microsoftteams** （返回 Microsoft 团队中的聊天、会议和呼叫中的项目） ** <br />备注<br />帖子<br />rssfeeds <br />任务<br />语音邮件**| 
+|邮件类型|MessageKind|Message_kind|要搜索的邮件的类型。 可能的值： ** <br /> <br /> 联系人 <br /> 文档 <br /> 电子邮件 <br /> externaldata <br /> 传真 <br /> im <br /> 日记 <br /> 会议 <br /> microsoftteams** （返回 Microsoft 团队中的聊天、会议和呼叫中的项目） ** <br /> 备注 <br /> 帖子 <br /> rssfeeds <br /> 任务 <br /> 语音邮件**| 
 |本机扩展|NativeExtension|Native_extension|项目的本机扩展。|
 |本机文件名|NativeFileName|Native_file_name|项目的本机文件名。|
-|NativeMD5||Native_MD5|文件流的 MD5 哈希值。|
+|NativeMD5||Native_MD5|文件流的 MD5 哈希（128位哈希值）。|
+|NativeSHA256||Native_SHA_256|文件流的 SHA256 哈希（256位哈希值）。|
 |ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|电子邮件线程（ET）集和接近重复（ND）集的串联。 此字段用于在审阅时进行有效排序。 **D**的前缀为 ND 集， **E**的前缀设置为 ET。|
 |ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|电子邮件线程（ET）集和接近重复（ND）集的串联。 此字段用于在审阅时进行有效排序。 **D**的前缀为 ND 集， **E**的前缀设置为 ET。 ET 集内的每个电子邮件项的后面都有相应的附件。|
 |标准化相关性分数事例问题1||Normalized_relevance_score_case_issue_1|来自相关性的标准化相关性分数事例问题1。|
@@ -142,20 +143,20 @@ ms.locfileid: "42941234"
 |相关性分数|RelevanceScore||基于相关性的文档的相关性分数。|
 |相关性标记|RelevanceTag||基于相关性的文档的相关性分数。|
 |代表 ID|RepresentativeId||每个精确副本集的数字标识符。|
-|发件人|发件人|Email_sender|邮件类型的发件人（发件人）域。 格式为**DisplayName \<SmtpAddress>**。|
+|Sender|Sender|Email_sender|邮件类型的发件人（发件人）域。 格式为**DisplayName \<SmtpAddress> **。|
 |发件人/作者|SenderAuthor||由项目的发件人或作者组成的计算字段。|
 |发件人域|SenderDomain|Email_sender_domain|发件人的域。|
 |发件箱|发件箱|Email_date_sent|邮件的发送日期。|
 |设置顺序：首次包含|SetOrderInclusivesFirst|Set_order_inclusives_first|排序字段-电子邮件和附件：按时间顺序排列;文档：先透视，再按降序对相似性得分。|
 |SimilarityPercent||Similarity_percent|指示文档与邻近的重复集的透视方式的相似之处。|
-|本机文件大小|大小|Native_size|本机项的字节数。|
+|本机文件大小|Size|Native_size|本机项的字节数。|
 |Subject|Subject|Email_subject|邮件的主题。|
 |主题/职务|SubjectTitle||由项目的主题或标题组成的计算字段。|
 |标记的案例问题1||Tagged_by_Case_issue_1|将此文档标记为相关问题1的用户。|
 |标记|标记|标记|在审阅集中应用的标记。|
 |主题列表|ThemesList|Themes_list|为分析而计算的主题列表。|
-|标题|标题|Doc_title|文档元数据中的标题。|
-|To|To|Email_to|邮件类型的 "To" 字段。 Format 为**DisplayName\<SmtpAddress>**|
+|Title|Title|Doc_title|文档元数据中的标题。|
+|To|To|Email_to|邮件类型的 "To" 字段。 格式为**DisplayName \<SmtpAddress> **|
 |电子邮件集中的唯一|UniqueInEmailSet||**假**如果电子邮件集中存在附件的副本。|
 |已修正|WasRemediated|Was_Remediated|如果项目已修正，**则为 True** ，否则为**False**。|
 |Word count|WordCount|Word_count|项目中的单词数。|
