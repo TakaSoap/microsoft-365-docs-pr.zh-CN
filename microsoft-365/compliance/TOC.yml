@@ -472,6 +472,8 @@
               href: retry-failed-content-search.md
             - name: 使用 Microsoft Edge 下载搜索结果
               href: configure-edge-to-export-search-results.md
+            - name: 在审核日志中搜索电子数据展示活动
+              href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: 高级电子数据展示
       items:
         - name: 高级电子数据展示概述
@@ -587,6 +589,8 @@
               href: permissions-filtering-for-content-search.md
             - name: 设置合规性边界
               href: set-up-compliance-boundaries.md
+            - name: 在审核日志中搜索电子数据展示活动
+              href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: AzCopy 疑难解答
               href: troubleshooting-azcopy.md
     - name: 高级电子数据展示（经典）
