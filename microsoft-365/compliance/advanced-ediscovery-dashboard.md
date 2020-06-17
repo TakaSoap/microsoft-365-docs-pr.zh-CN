@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ''
-ms.openlocfilehash: 65a0e6dc2857a51b10d1fa3b6674ccf24dbc4799
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用高级电子数据展示仪表板进行审阅集以快速分析您的文档集，以确定可帮助您开发您的审阅策略的趋势或关键统计信息。
+ms.openlocfilehash: 36f30689047eec7ff2c2c49c6b0d54f1a60470e4
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080066"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741695"
 ---
-# <a name="advanced-ediscovery-dashboard-for-review-sets-preview"></a>审阅集的高级电子数据展示仪表板（预览）
+# <a name="advanced-ediscovery-dashboard-for-review-sets"></a>适用于审阅集的高级电子数据展示仪表板
 
 在高级电子数据展示中的某些情况下，您可能会遇到大量需要审阅的文档和电子邮件。 在开始审核过程之前，您可能希望快速分析文档集，以确定可帮助您开发您的审阅策略的趋势或关键统计信息。 为此，您可以使用高级电子数据展示仪表板进行审阅，以快速分析您的文档集。
 
@@ -77,7 +77,7 @@ ms.locfileid: "42080066"
 
 4. 完成后，单击 "**另存为查询**" 将您的条件保存为审阅集的新搜索查询。
 
-   ![查询](../media/savequery.png)
+   ![Query](../media/savequery.png)
 
 5. 关闭**搜索配置文件视图**以返回到 "搜索结果" 视图。
 

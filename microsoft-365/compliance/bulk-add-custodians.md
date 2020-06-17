@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: 使用批量添加工具将多个保管人及其关联的数据源快速添加到高级电子数据展示的案例中。
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432435"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741640"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>向高级电子数据展示案例批量添加保管人（预览）
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例批量添加保管人
 
 对于涉及大量保管人的高级电子数据展示事例，您可以一次导入多个保管人（包含将其添加到事例所需的所有信息的 CSV 文件）。
 

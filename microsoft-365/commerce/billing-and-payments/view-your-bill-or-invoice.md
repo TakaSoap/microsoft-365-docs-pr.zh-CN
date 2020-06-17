@@ -25,18 +25,19 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232777"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407940"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
-本文适用于已订阅 Microsoft 365 商业版的用户。只有全局管理员或帐单管理员才能执行本文所述步骤。
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 如果需要帮助解读你在帐单上看到的费用，请参阅[了解你的帐单或发票](understand-your-invoice2.md)获取详细演练。
   
@@ -89,6 +90,6 @@ ms.locfileid: "44232777"
 
 [通过发票、信用卡或银行帐户支付](pay-for-your-subscription.md)
   
-[添加、更新或删除信用卡或银行帐户](add-update-or-remove-credit-card-or-bank-account.md)
+[管理支付方式](manage-payment-methods.md)
 
 [Minecraft:Education Edition 付款方式](https://go.microsoft.com/fwlink/p/?linkid=838761)

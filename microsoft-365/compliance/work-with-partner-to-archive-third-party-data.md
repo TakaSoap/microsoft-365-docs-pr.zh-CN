@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 您的组织可以与 Microsoft 合作伙伴合作，设置自定义连接器，以便从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。 这允许您存档第三方数据源中的数据，以便您可以使用 Microsoft 365 合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据的管理。
-ms.openlocfilehash: 0892e0c02e72516b6abc4502eb9777bd824f9073
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943151"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739063"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 
@@ -49,11 +49,11 @@ ms.locfileid: "43943151"
     
 3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务（EWS）连接到 Microsoft 365 中的 Azure 服务。
     
-4. 项目便导入到特定用户的邮箱或“catch-all”第三方数据邮箱。无论项目是导入到特定用户邮箱还是第三方数据邮箱，都要基于以下条件：
+4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
     
-    a. **具有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过，您可以使用电子数据展示工具搜索 "清除" 文件夹中的项目。
+   1. **具有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过，您可以使用电子数据展示工具搜索 "清除" 文件夹中的项目。
     
-    b. **没有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器无法将某个项目的用户 ID 映射到特定用户 ID，则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
+   1. **没有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器无法将某个项目的用户 ID 映射到特定用户 ID，则会将该项目复制到第三方数据邮箱的 **"收件箱**" 文件夹中。 将项目导入到收件箱允许您或组织中的其他人登录到第三方邮箱来查看和管理这些项目，并查看是否需要在合作伙伴连接器配置中进行任何调整。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步骤 1：寻找第三方数据合作伙伴
 
@@ -159,11 +159,11 @@ ms.locfileid: "43943151"
     
 - 适用于 Salesforce Chatter 的 CipherCloud
     
-- Cisco IM &amp;状态服务器（v10，v v10.5.1 SU1，app-v 11.0，v 11.5 SU2）
+- Cisco IM &amp; 状态服务器（v10，v V10.5.1 SU1，app-v 11.0，v 11.5 SU2）
 
 - Cisco Webex 团队
 
-- Citrix 工作&amp;区 ShareFile
+- Citrix 工作区 &amp; ShareFile
 
 - CrowdCompass
 
@@ -273,7 +273,7 @@ ms.locfileid: "43943151"
     
 - Chatter
     
-- Cisco IM &amp;状态服务器（v 9.0.1、9.1、v 9.1.1 SU1、v10、v v10.5.1 SU1）
+- Cisco IM &amp; 状态服务器（v 9.0.1、9.1、v 9.1.1 SU1、v10、v V10.5.1 SU1）
     
 - Cisco Unified Presence 服务器（v8.6.3、v8.6.4、v8.6.5）
     
@@ -521,7 +521,7 @@ ms.locfileid: "43943151"
   
 - 用于连接到 Office 365 中的 Azure 服务的终结点：
 
-    ```text
+    ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
@@ -529,7 +529,7 @@ ms.locfileid: "43943151"
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步骤5：在 Azure Active Directory 中注册第三方数据连接器
 
-从2018年9月30日起，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到您的组织以导入数据的第三方数据连接器。 此更改的原因是新式验证提供的安全性高于当前方法，后者基于使用前面所述的终结点连接到 Azure 服务的白名单第三方连接器。
+从2018年9月30日起，Office 365 中的 Azure 服务将开始使用 Exchange Online 中的新式验证来验证尝试连接到您的组织以导入数据的第三方数据连接器。 此更改的原因是新式验证提供的安全性高于当前方法，这是基于使用前面所述的终结点连接到 Azure 服务的第三方连接器的允许列表。
 
 若要使第三方数据连接器能够使用新式新式身份验证方法连接到 Office 365，组织中的管理员必须同意在 Azure Active Directory 中将连接器注册为受信任的服务应用程序。 这是通过接受允许连接器在 Azure Active Directory 中访问组织数据的权限请求来实现的。 接受此请求后，第三方数据连接器将作为企业应用程序添加到 Azure Active Directory，并表示为服务主体。 有关许可过程的详细信息，请参阅[租户管理员同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
@@ -543,7 +543,7 @@ ms.locfileid: "43943151"
 
 2. 单击“Accept”****。
 
-接受请求后，将显示[Azure 门户](https://portal.azure.com)。 若要查看您的组织的应用程序列表，请单击 " **Azure Active Directory** > **企业应用程序**"。 **企业应用程序**边栏上列出了 Office 365 第三方数据连接器。
+接受请求后，将显示[Azure 门户](https://portal.azure.com)。 若要查看您的组织的应用程序列表，请单击 " **Azure Active Directory**  >  **企业应用程序**"。 **企业应用程序**边栏上列出了 Office 365 第三方数据连接器。
 
 > [!IMPORTANT]
 > 在2018年9月30日之后，如果未在 Azure Active Directory 中注册第三方数据连接器，则将不再将第三方数据导入组织中的邮箱。 注释现有的第三方数据连接器（在9月30日之前创建的数据连接器）还必须在 Azure Active Directory 中进行注册2018，具体步骤是执行步骤5中的过程。
@@ -556,7 +556,7 @@ ms.locfileid: "43943151"
   
 ## <a name="more-information"></a>更多信息
 
-- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性，则不会将其导入 Office 365。 导入过程将返回一条错误消息，说明无法导入项目的原因和缺少的属性。
+- 如前所述，第三方数据源中的项目将作为电子邮件导入到 Exchange 邮箱。 合作伙伴连接器使用 Office 365 API 所需的架构导入项目。 下表介绍了第三方数据源中的项目作为电子邮件导入到 Exchange 邮箱之后的邮件属性。 该表还指出该邮件属性是否是强制属性。 必须填充强制属性。 如果某项缺少强制属性，则不会将其导入 Office 365。 导入过程将返回一条错误消息，说明无法导入项目的原因和缺少的属性。<br/><br/>
     
     |**邮件属性**|**强制？**|**说明**|**示例值**|
     |:-----|:-----|:-----|:-----|
@@ -566,11 +566,11 @@ ms.locfileid: "43943151"
     |**结束** <br/> |是  <br/> |在客户数据源中最初创建或发布项目的日期。 例如，tweeted Twitter 邮件时的日期。  <br/> | `01 NOV 2015` <br/> |
     |**大量** <br/> |否  <br/> |消息或帖子的内容。 对于某些数据源，此属性的内容可能与****“主题”属性的内容相同。 在导入过程中，合作伙伴连接器会尽可能保持内容源完全保真。 如果可能，源项目正文中的文件、图形或其他内容会包含在此属性中。 否则，源项目中的内容会包含在****“附件”属性中。 此属性的内容取决于合作伙伴连接器和源平台的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附着** <br/> |否  <br/> |如果数据源中的项（如 Twitter 或即时消息对话中的 twitter）具有附加的文件或包含图像，则合作伙伴连接将首先尝试在**BODY**属性中包含附件。 如果无法这样做，则会将其添加到 * * 附件 * * 属性中。 其他附件示例包括 Facebook 中的点赞，内容源中的元数据，以及对消息或帖子的回复。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |是  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为`IPM.NOTE.Source.Event`。 （此属性必须以开头`IPM.NOTE`。 此格式类似于`IPM.NOTE.X`邮件类的格式。此属性包含以下信息：  <br/><br/>`Source`：指示第三方数据源;例如，Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`：指示在生成项目的第三方数据源中执行的活动类型。例如，在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 这是一个多值属性，由合作伙伴连接器创建和填充。 此属性的格式为 `IPM.NOTE.Source.Event` 。 （此属性必须以开头 `IPM.NOTE` 。 此格式类似于 `IPM.NOTE.X` 邮件类的格式。此属性包含以下信息：  <br/><br/>`Source`：指示第三方数据源;例如，Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`：指示在生成项目的第三方数据源中执行的活动类型。例如，在 Twitter 中的 twitter 或 Facebook 中的帖子。 事件是特定于数据源的。  <br/> <br/>  此属性的一个目的是基于项目源自的数据源或基于事件类型筛选特定项目。 例如，在电子数据展示搜索中，您可以创建一个搜索查询来查找特定用户发布的所有微博。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- 将项目成功导入 Office 365 中的邮箱时，会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符（称为`x-IngestionCorrelationID`）可用于合作伙伴进行项的端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
+- 将项目成功导入 Office 365 中的邮箱时，会将唯一标识符作为 HTTP 响应的一部分返回给调用方。 此标识符（称为 `x-IngestionCorrelationID` ）可用于合作伙伴进行项的端到端跟踪的后续故障排除目的。 建议合作伙伴捕获此信息，并在他们的所在端相应地记录此信息。 下面是显示此标识符的 HTTP 响应的示例：
 
-    ```text
+    ```http
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset=utf-8
     Server: Microsoft-IIS/8.5
@@ -582,11 +582,11 @@ ms.locfileid: "43943151"
 
 - 您可以使用 "安全和合规中心" 中的内容搜索工具搜索从第三方数据源导入邮箱的项目。 若要专门搜索这些导入项，可以在内容搜索的关键字框中使用以下消息属性-值对。
     
-  - **`kind:externaldata`**：使用此属性-值对可搜索所有第三方数据类型。 例如，若要搜索从第三方数据源导入，并在导入项目的 Subject 属性中包含 "contoso" 一词的项目，请使用关键字查询`kind:externaldata AND subject:contoso`。
+  - **`kind:externaldata`**：使用此属性-值对可搜索所有第三方数据类型。 例如，若要搜索从第三方数据源导入，并在导入项目的 Subject 属性中包含 "contoso" 一词的项目，请使用关键字查询 `kind:externaldata AND subject:contoso` 。
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此属性-值对仅搜索第三方数据的指定类型。 例如，若要在 Subject 属性中仅搜索包含 "contoso" 一词的 Facebook 数据，则应使用关键字查询`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此属性-值对仅搜索第三方数据的指定类型。 例如，若要在 Subject 属性中仅搜索包含 "contoso" 一词的 Facebook 数据，则应使用关键字查询 `itemclass:ipm.externaldata.Facebook* AND subject:contoso` 。 
 
-  有关用于`itemclass`属性的第三方数据类型的值的完整列表，请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)
+  有关用于属性的第三方数据类型的值的完整列表 `itemclass` ，请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)。
     
    有关如何使用内容搜索以及创建关键字搜索查询的详细信息，请参阅：
     

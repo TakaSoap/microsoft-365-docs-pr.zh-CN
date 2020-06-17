@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: aac4966efca3dabc0edac1ceada96d2238cb266f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400096"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432285"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -35,7 +35,7 @@ ms.locfileid: "44400096"
 > 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
-创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。
+It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
 共享邮箱包含共享日历。 许多小型企业喜欢使用共享日历，方便每个人在其中输入约会。 例如，如果有 3 个人在进行客户访问工作，则他们都可以使用共享日历来输入约会。 这是使每个人都知道他人位置的简便方法。
 
@@ -89,10 +89,7 @@ ms.locfileid: "44400096"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
-
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在用户帐户列表中，找到共享邮箱的帐户（例如，将筛选器更改为“**未经授权的用户**”）。
 
