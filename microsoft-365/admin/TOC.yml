@@ -22,14 +22,14 @@
               href: setup/setup-apps-for-business.md
         - name: 浏览“安装”页和向导
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: 迁移数据
-          href: setup/migrate-email-and-contacts-admin.md
         - name: 安装 Office 应用
           href: setup/install-applications.md
         - name: 设置 Windows 设备
           href: ../business/set-up-windows-devices.md
         - name: 设置移动设备
           href: ../business/set-up-mobile-devices.md
+        - name: 将数据迁移到 Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 面向所有人的应用培训
@@ -117,6 +117,8 @@
               href: add-users/resend-user-password.md
             - name: 创建用于添加用户的模板
               href: add-users/create-and-use-a-template-to-add-users.md
+            - name: 将用户升级到最新应用
+              href: setup/upgrade-users-to-latest-office-client.md
         - name: 组
           items:
             - name: 组概述
@@ -154,6 +156,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: 使用自定义域
           href: email/change-email-address.md
+        - name: 将电子邮件和联系人迁移到 Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: 创建签名和免责声明
           href: setup/create-signatures-and-disclaimers.md
         - name: 创建、编辑或删除安全组
@@ -204,8 +208,6 @@
     - name: 管理数据和服务
       href: manage/index.yml
       items:
-        - name: 将组织升级为使用最新应用
-          href: setup/upgrade-users-to-latest-office-client.md
         - name: 使用报告监视用户活动
           href: activity-reports/activity-reports.md
         - name: 更改组织联系人信息
@@ -313,15 +315,15 @@
     - name: 与客户合作
       href: work-with-customers/index.yml
       items:
-        - name: 在外部共享网站和文件
+        - name: 与来宾用户共享网站和文件
           href: manage/share-sites-with-external-users.md
         - name: 与来宾用户共享日历
           href: manage/share-calendars-with-external-users.md
-        - name: 以来宾身份创建团队
+        - name: 创建包含来宾用户的团队
           href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: 以来宾身份安排 Teams 会议
+        - name: 安排有来宾用户参加的 Teams 会议
           href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
-        - name: 以来宾身份加入 Teams 会议
+        - name: 加入有来宾用户参加的 Teams 会议
           href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
     - name: 疑难解答
       href: 'https://docs.microsoft.com/office/troubleshoot/'

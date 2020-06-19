@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649391"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739049"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -64,17 +64,24 @@ ms.locfileid: "44649391"
 
 只有在创建和配置灵敏度标签及其标签策略时才需要这些权限。 在应用或服务中应用标这些签时不需要这些权限。 如果与敏感度标签相关的特定配置需要其他权限，则这些权限将在其各自的文档说明中列出。
 
+## <a name="deployment-strategy-for-sensitivity-labels"></a>敏感度标签部署策略
+
+为组织部署敏感度标签的成功策略是创建一个工作虚拟团队，该团队可识别和管理业务和技术要求、概念证明测试、内部检查点和审批以及针对生产环境的最终部署。
+
+建议使用下一节中的表，确定映射到最有影响的业务需求的前一两个场景。 部署这些场景后，返回到列表，确定下一个或两个部署的优先级。
+
+可以在可下载的 Microsoft 365 信息保护与合规性部署加速指南中找到其他常规部署指南。 有关详细信息，请参阅博客文章，[Microsoft 信息保护与合规性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493)。
+
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度标签的常见场景
 
-使用以下文档支持敏感度标签部署：
+所有场景都要求[创建和配置灵敏度标签及其策略](create-sensitivity-labels.md)。
 
 |我想...|文档|
 |----------------|---------------|
-|创建并发布有助于保护组织数据的敏感度标签|[创建和配置敏感度标签及其策略](create-sensitivity-labels.md)|
+|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
 |使用户能够使用 Office 应用、文件资源管理器和 PowerShell 标记和保护 Windows 计算机中的文件|[适用于 Windows 的 Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
-|在 Web 上为 Office 启用敏感标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此。 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
-|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
+|在 Web 上为 Office 启用敏感度标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
 |自动将敏感度标签应用于文档和电子邮件 | [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)|
 |使用敏感度标签来保护 Teams和 SharePoint 中的内容 |[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）配合使用](sensitivity-labels-teams-groups-sites.md)|
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
