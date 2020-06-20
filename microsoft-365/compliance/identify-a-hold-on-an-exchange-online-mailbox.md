@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: 了解如何识别可放在 Microsoft 365 邮箱上的不同类型的保留。 这些保留类型包括诉讼保留、电子数据展示保留和 Microsoft 365 保留策略。 您还可以确定是否已从组织范围的保留策略中排除了用户。
-ms.openlocfilehash: 331fd37f48e42666ceb33a2a751b7d7a7a945e4b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何确定可在 Microsoft 365 中的 Exchange Online 邮箱上放置的不同保留类型。
+ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352311"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817601"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -236,9 +238,9 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 在确定了应用于邮箱的保留后，可以执行一些任务，如更改保留的持续时间、临时或永久删除保留或从 Microsoft 365 保留策略中排除非活动邮箱。 有关执行与保留相关的任务的详细信息，请参阅下列主题之一：
 
-- 在 Security & 合规中心 PowerShell 中运行[new-retentioncompliancepolicy-AddExchangeLocationException \< user 邮箱>](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)命令，以从组织范围内的 Microsoft 365 保留策略中排除邮箱。 此命令仅可用于*ExchangeLocation*属性值等于的保留策略 `All` 。
+- 在 Security & 合规性中心 PowerShell 中运行[AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)命令，以将邮箱从组织范围的 Microsoft 365 保留策略中排除。 此命令仅可用于*ExchangeLocation*属性值等于的保留策略 `All` 。
 
-- 在 Exchange Online PowerShell 中运行[ExcludeFromOrgHolds \< 不带前缀或后缀>命令中的设置邮箱-保留 GUID](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) ，以从组织范围内的 Microsoft 365 保留策略中排除非活动邮箱。
+- 在 Exchange Online PowerShell 中运行 "[设置邮箱-ExcludeFromOrgHolds \<hold GUID without prefix or suffix> ](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps) " 命令，以从组织范围内的 Microsoft 365 保留策略中排除非活动邮箱。
 
 - [更改非活动邮箱的保留期](change-the-hold-duration-for-an-inactive-mailbox.md)
 

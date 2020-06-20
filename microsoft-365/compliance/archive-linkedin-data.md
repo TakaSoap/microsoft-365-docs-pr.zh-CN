@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 设置连接器以将 LinkedIn 数据导入 Microsoft 365，以便您可以使用合规性工具，如合法保留、内容搜索和保留策略。
-ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.custom: seo-marvel-apr2020
+description: 了解管理员如何设置 & 使用本机连接器将数据从 LinkedIn 公司页面导入到 Microsoft 365。
+ms.openlocfilehash: c7801dc7ab00f1193b05a50ae10ee67d78e11065
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043343"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818441"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>设置连接器以存档 LinkedIn 数据
 
@@ -29,7 +28,7 @@ ms.locfileid: "44043343"
 
 在将 LinkedIn 公司页面数据存储在邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核和 Microsoft 365 保留策略）应用于 LinkedIn 数据。 例如，可以使用内容搜索来搜索这些项目，或将存储邮箱与高级电子数据展示事例中的管理员相关联。 创建连接器以在 Microsoft 365 中导入和存档 LinkedIn 数据可帮助您的组织遵守政府和法规策略。
 
-## <a name="before-you--begin"></a>开始之前
+## <a name="give-consent-assign-roles-and-verify-credentials"></a>授予同意，分配角色，并验证凭据
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全局管理员的凭据登录，然后接受该请求。
 
@@ -39,7 +38,7 @@ ms.locfileid: "44043343"
 
 ## <a name="create-a-linkedin-connector"></a>创建 LinkedIn 连接器
 
-1. 转到<https://compliance.microsoft.com> ，然后单击 "**数据连接器** > **LinkedIn 公司" 页面**。
+1. 转到 <https://compliance.microsoft.com> ，然后单击 "**数据连接器**  >  **LinkedIn 公司" 页面**。
 
 2. 在 " **LinkedIn 公司页面**产品" 页上，单击 "**添加连接器**"。
 

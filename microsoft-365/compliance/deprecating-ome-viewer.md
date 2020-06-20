@@ -15,13 +15,15 @@ search.appverid:
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
-description: 在2018年8月15日，我们将从 Android 和 Apple 商店中删除 Office 365 邮件加密（OME）查看器移动应用。 Office 365 邮件加密查看器移动应用程序需要阅读使用 Apple 和 Android 手机上的早期版本的 OME 加密的电子邮件和附件。 除了删除 OME Viewer 应用程序，我们不会对早期版本的 OME 进行任何其他更改。
-ms.openlocfilehash: 37a10942e49ca0e6249b2b6a0737411a0d6de1c5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: Office 365 邮件加密（OME）查看器应用已从2018中的 Android 和 Apple 存储中删除。
+ms.openlocfilehash: 9aca6fa2c0e9b276b666ffa187e3d18f061e7224
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636110"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817861"
 ---
 # <a name="deprecating-message-encryption-viewer-app"></a>弃用邮件加密查看器应用程序
 

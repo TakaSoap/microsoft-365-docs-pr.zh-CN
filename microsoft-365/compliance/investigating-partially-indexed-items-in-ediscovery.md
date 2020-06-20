@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: 部分索引项目（也称为未编制索引项）是 SharePoint 和 OneDrive 网站上的 Exchange 邮箱项目和文档，由于某些原因未完全为内容搜索编制索引。 在本文中，您可以了解为什么无法将项目编入搜索，并作为部分索引项目返回，确定部分索引项目的搜索错误，以及使用 PowerShell 脚本确定组织的部分索引的电子邮件项的公开程度。
-ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何在组织中管理来自 Exchange、SharePoint 和 OneDrive 的部分索引的（或未编制索引的）项。
+ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942125"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817521"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>在电子数据展示中调查部分索引项目
 
@@ -80,9 +82,9 @@ ms.locfileid: "43942125"
   
 ![选择第二个或第三个选项以导出部分索引项目](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-当您使用其中一个选项导出内容搜索结果或内容搜索报告时，导出将包含一个名为 "未编制索引的项目 .csv" 的报告。 此报告包含与 ResultsLog 文件相同的大部分信息;但是，未编制索引的项目 .csv 文件还包含与部分索引项目相关的两个字段：**错误标记**和**错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可帮助您确定您的调查是否有特定影响的索引错误。 如果这样做，您可以执行目标内容搜索并检索和导出特定的电子邮件和 SharePoint 或 OneDrive 文档，以便您可以对其进行检查以确定它们是否与您的调查相关。 有关分步说明，请参阅[在 Office 365 中准备用于目标内容搜索的 CSV 文件](csv-file-for-an-id-list-content-search.md)。
+当您使用这些选项之一导出内容搜索结果或内容搜索报告时，该导出会包含一个名为 "未编制索引 Items.csv" 的报表。 此报告包含与 ResultsLog.csv 文件相同的大部分信息;但是，未编制索引的 Items.csv 文件还包含与部分索引项目相关的两个字段：**错误标记**和**错误属性**。 这些字段包含有关每个部分索引项的索引错误的信息。 使用这两个字段中的信息可帮助您确定您的调查是否有特定影响的索引错误。 如果这样做，您可以执行目标内容搜索并检索和导出特定的电子邮件和 SharePoint 或 OneDrive 文档，以便您可以对其进行检查以确定它们是否与您的调查相关。 有关分步说明，请参阅[在 Office 365 中准备用于目标内容搜索的 CSV 文件](csv-file-for-an-id-list-content-search.md)。
   
- **注意：** 未编制索引的项目 .csv 文件还包含名为 "**错误类型**" 和 "**错误消息**" 的字段。 这些字段包含的信息与 "**错误标记**" 和 "**错误属性**" 字段中的信息类似，但详细信息较少。 您可以安全地忽略这些旧字段。 
+ **注意：** 未编制索引的 Items.csv 文件还包含名为 "**错误类型**" 和 "**错误消息**" 的字段。 这些字段包含的信息与 "**错误标记**" 和 "**错误属性**" 字段中的信息类似，但详细信息较少。 您可以安全地忽略这些旧字段。 
   
 ## <a name="errors-related-to-partially-indexed-items"></a>与部分索引项目相关的错误
 
@@ -93,7 +95,7 @@ ms.locfileid: "43942125"
 ```
 
    
- `parseroutputsize`是错误， `xls`是发生错误的文件的文件类型。 如果无法识别文件类型或文件类型不适用于该错误，您将看到替换文件类型的值`noformat` 。 
+ `parseroutputsize`是错误， `xls` 是发生错误的文件的文件类型。 如果无法识别文件类型或文件类型不适用于该错误，您将看到 `noformat` 替换文件类型的值。 
   
 下面列出了索引错误和可能的错误原因的说明。
   
@@ -116,13 +118,13 @@ ms.locfileid: "43942125"
 | `retrieverrms` <br/> |内容检索器无法对受 RMS 保护的邮件进行解码。  <br/> |
 | `wordbreakertruncated` <br/> |编制索引期间在文档中标识了过多的单词。 属性处理在达到限制时停止，属性被截断。  <br/> |
    
-"错误" 域说明 "错误标记" 字段中列出的处理错误会影响哪些字段。 如果您正在搜索属性（例如`subject`或`participants`），则邮件正文中的错误不会影响您的搜索结果。 当准确确定可能需要进一步调查的部分已编制索引项时，这可能很有用。
+"错误" 域说明 "错误标记" 字段中列出的处理错误会影响哪些字段。 如果您正在搜索属性（例如 `subject` 或 `participants` ），则邮件正文中的错误不会影响您的搜索结果。 当准确确定可能需要进一步调查的部分已编制索引项时，这可能很有用。
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 脚本确定组织部分索引的电子邮件项的公开程度
 
 下面的步骤演示了如何运行在所有 Exchange 邮箱中搜索所有项目的 PowerShell 脚本，然后生成有关组织的部分索引的电子邮件项目（按计数和按大小）的比率的报告，并显示每个出现的索引错误的项目数（及其文件类型）。 使用上一节中的错误标记说明来标识索引错误。
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `PartiallyIndexedItems.ps1`。
+1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `PartiallyIndexedItems.ps1` 。
 
 ```powershell
   write-host "**************************************************"
@@ -180,7 +182,7 @@ ms.locfileid: "43942125"
   
 ![生成来自组织公开的报告的脚本的输出示例，以部分索引的电子邮件项目](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
-请注意以下几点：
+请注意以下事项：
   
 1. 电子邮件项目的总数和大小，以及组织的部分索引的电子邮件项目的比率（按计数和按大小）
     

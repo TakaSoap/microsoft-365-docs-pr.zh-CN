@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: 使用本文中的脚本生成一个报告，该报告包含有关与 Office 365 或 Microsoft 365 中的符合性中心中的电子数据展示事例相关联的所有保留的信息。
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何生成包含有关与电子数据展示事例关联的所有保留的信息的报告。
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208374"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818031"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>创建电子数据展示事例中的保留的报告
   
@@ -31,13 +33,13 @@ ms.locfileid: "44208374"
 
 有关报告中包含的信息的详细说明，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="admin-requirements-and-script-information"></a>管理员要求和脚本信息
 
 - 若要生成组织中所有电子数据展示事例的报告，您必须是组织中的电子数据展示管理员。 如果您是电子数据展示管理器，则报告将仅包含有关您可以访问的事例的信息。 有关电子数据展示权限的详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
 - 本文中的脚本具有最少的错误处理。 主要目的是快速创建有关与组织中的电子数据展示事例相关联的保留报告。
     
-- 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步骤1：连接到安全 & 合规性中心 PowerShell
 
@@ -49,7 +51,7 @@ ms.locfileid: "44208374"
 
 在连接到安全 & 合规性中心 PowerShell 之后，下一步是创建并运行用于收集组织中的电子数据展示事例信息的脚本。 
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如，CaseHoldsReport。 
+1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如，CaseHoldsReport.ps1。 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     此外，该脚本还将创建一个报告，其中包含不包含任何保留的案例列表。 此报告的文件名为 `CaseswithNoHolds<DateTimeStamp>.csv` 。
     
-    下面的示例展示了如何运行 CaseHoldsReport 脚本。 
+    下面的示例展示了如何运行 CaseHoldsReport.ps1 脚本。 
     
-    ![运行 CaseHoldsReport 脚本后的输出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![运行 CaseHoldsReport.ps1 脚本后的输出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>更多信息
 

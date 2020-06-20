@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '共享是 SharePoint Online 和 OneDrive for business 中的关键活动。 管理员现在可以在审核日志中使用共享审核来确定与组织外部的用户共享的资源。 '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理员可以了解如何在 Microsoft 365 审核日志中使用共享审核，以确定与组织外部的用户共享的资源。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626378"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819292"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>在审核日志中使用共享审核
 
@@ -97,7 +98,7 @@ ms.locfileid: "43626378"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在安全与合规中心的左侧窗格中，单击“**搜索**”  > “**审核日志搜索**”。
     
@@ -111,11 +112,11 @@ ms.locfileid: "43626378"
     
 6. 单击 "**搜索**" 以运行搜索。 
     
-7. 当搜索运行完成并显示结果后，单击 "**导出结果** \> " "**下载所有结果**"。
+7. 当搜索运行完成并显示结果后，单击 "**导出结果**" " \> **下载所有结果**"。
     
     选择 "导出" 选项后，窗口底部的一条消息将提示您打开或保存 CSV 文件。
     
-8. 单击 "**另** \>存**为**"，然后将 CSV 文件保存到本地计算机上的文件夹中。 
+8. 单击 "**另**存 \> **为**"，然后将 CSV 文件保存到本地计算机上的文件夹中。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>步骤2：使用 PowerQuery 编辑器设置导出的审核日志的格式
 
@@ -152,4 +153,4 @@ ms.locfileid: "43626378"
     现在，Excel 将显示共享事件的行以及目标用户在组织外部的位置，因为外部用户由值**TargetUserOrGroupType： Guest**标识。 
   
 > [!TIP]
-> 对于显示的审核记录， **ObjectId**列标识与目标用户共享的资源;例如`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`。
+> 对于显示的审核记录， **ObjectId**列标识与目标用户共享的资源;例如 `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` 。

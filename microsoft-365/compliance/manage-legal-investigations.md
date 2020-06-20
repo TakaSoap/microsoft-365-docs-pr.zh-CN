@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: 使用 Microsoft 365 合规性中心中的电子数据展示案例来管理您的组织的法律调查。 如果你拥有 E5 订阅，则可以使用高级电子数据展示的文本分析、机器学习和预测编码功能进一步分析事例数据。
-ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.custom:
+- seo-marvel-apr2020
+description: 在 Office 365 的安全性 & 合规性中心中使用电子数据展示案例来管理组织的法律调查。
+ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799903"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815499"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>在 Microsoft 365 中管理法律调查
 

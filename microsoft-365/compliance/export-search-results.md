@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
-ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615986"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817751"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -36,7 +37,7 @@ ms.locfileid: "43615986"
   
 导出内容搜索结果包括准备结果，然后将其下载到本地计算机。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-export-content-search-results"></a>导出内容搜索结果之前
 
 - 若要导出搜索结果，您必须在安全 & 合规性中心中分配有导出管理角色。 此角色分配给内置电子数据展示管理员角色组。 它没有默认分配至组织管理角色组。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
@@ -60,15 +61,15 @@ ms.locfileid: "43615986"
     
 - 下载搜索结果时（如步骤2中所述），您可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息，请参阅[在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     
-- 当您导出搜索结果时，数据暂时存储在 Microsoft 云中的 Microsoft 提供的 Azure 存储位置中，然后将其下载到本地计算机。 确保您的组织可以连接到 Azure 中的终结点， ** \*即 blob.core.windows.net** （通配符代表导出的唯一标识符）。 搜索结果数据在创建后的两周内从 Azure 存储位置中删除。 
+- 当您导出搜索结果时，数据暂时存储在 Microsoft 云中的 Microsoft 提供的 Azure 存储位置中，然后将其下载到本地计算机。 确保您的组织可以连接到 Azure 中的终结点，即** \* blob.core.windows.net** （通配符代表导出的唯一标识符）。 搜索结果数据在创建后的两周内从 Azure 存储位置中删除。 
     
-- 如果您的组织使用代理服务器与 Internet 通信，则需要在用于导出搜索结果的计算机上定义代理服务器设置（以便您的代理服务器可以对导出工具进行身份验证）。 为此，请在与你的 Windows 版本*匹配的位置打开 machine.config 文件。* 
+- 如果您的组织使用代理服务器与 Internet 通信，则需要在用于导出搜索结果的计算机上定义代理服务器设置（以便您的代理服务器可以对导出工具进行身份验证）。 为此，请在与您的 Windows 版本相匹配的位置打开*machine.config*文件。 
     
   - **32 位：**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64 位：**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    将以下行添加到位于`<configuration>`和`</configuration>`标记之间的 machine.config 文件中。 *machine.config* 请务必将和`ProxyServer` `Port`替换为你的组织的正确值;例如， `proxy01.contoso.com:80` 。 
+    将以下行添加到 " *machine.config* " 文件中的 " `<configuration>` 和" 标记之间 `</configuration>` 。 请务必将和替换为 `ProxyServer` `Port` 你的组织的正确值; 例如， `proxy01.contoso.com:80` 。 
     
     ```text
     <system.net>
@@ -87,7 +88,7 @@ ms.locfileid: "43615986"
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您的工作或学校帐户登录。
+2. 使用工作或学校帐户进行登录。
     
 3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"。
     
@@ -96,7 +97,7 @@ ms.locfileid: "43615986"
 5. 在详细信息窗格中的“将结果导出到计算机”**** 下，单击“开始导出”****。
     
     > [!NOTE]
-    > 如果搜索结果超过 7 天，将提示你更新搜索结果。如果发生这种情况，取消导出，单击选定搜索的详细信息窗格中的“更新搜索结果”****，然后在结果更新后再次启动导出。  
+    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
   
 6. 在 "**导出搜索结果**" 页上的 "**输出选项**" 下，选择下列选项之一：
     
@@ -123,7 +124,7 @@ ms.locfileid: "43615986"
   
 8. 单击 "**启用重复数据**删除" 复选框以排除重复的邮件。 仅当搜索的内容源包括 Exchange 邮箱或公用文件夹时，才会出现此选项。 
     
-    如果选择此选项，则即使在搜索的邮箱中找到同一邮件的多个副本，也只导出邮件的一个副本。 导出结果报告（结果 .csv）将对重复邮件的每个副本包含一行，以便您可以识别包含重复邮件副本的邮箱（或公用文件夹）。 有关重复数据删除和标识重复项目的详细信息，请参阅[电子数据展示搜索结果中的重复数据](de-duplication-in-ediscovery-search-results.md)消除。
+    如果选择此选项，则即使在搜索的邮箱中找到同一邮件的多个副本，也只导出邮件的一个副本。 "导出结果报告（Results.csv）" 将对重复邮件的每个副本包含一行，以便您可以识别包含重复邮件副本的邮箱（或公用文件夹）。 有关重复数据删除和标识重复项目的详细信息，请参阅[电子数据展示搜索结果中的重复数据](de-duplication-in-ediscovery-search-results.md)消除。
     
 9. 单击 "**包括 sharepoint 文档的版本**" 复选框以导出 sharepoint 文档的所有版本。 仅当搜索的内容源包括 SharePoint 或 OneDrive for Business 网站时，才会出现此选项。 
     
@@ -248,7 +249,7 @@ ms.locfileid: "43615986"
     
   - **错误和警告**包含导出过程中遇到的文件的错误和警告。 有关特定于每个单独的错误或警告的信息，请参阅 "错误详细信息" 列。 
     
-  - **跳过的项目**当您从 SharePoint 和 OneDrive for business 网站导出搜索结果时，导出通常会包含跳过的项目报告（SkippedItems）。 此报告中引用的项目通常是不会下载的项目，如文件夹或文档集。 不能导出这些类型的项目是设计的。 对于跳过的其他项目，跳过的项目报告中的 "错误类型" 和 "错误详细信息" 字段将显示跳过项目的原因并在其他搜索结果中下载。 
+  - **跳过的项目**当您从 SharePoint 和 OneDrive for business 网站导出搜索结果时，导出通常会包含跳过的项目报告（SkippedItems.csv）。 此报告中引用的项目通常是不会下载的项目，如文件夹或文档集。 不能导出这些类型的项目是设计的。 对于跳过的其他项目，跳过的项目报告中的 "错误类型" 和 "错误详细信息" 字段将显示跳过项目的原因并在其他搜索结果中下载。 
     
   - **跟踪日志**包含有关导出过程的详细日志记录信息，并且有助于在导出过程中发现问题。 
     
@@ -282,13 +283,13 @@ ms.locfileid: "43615986"
     
     如果选择导出部分索引项目，部分索引的邮箱项目将导出到单独的 PST 文件中，而不考虑您在 "将**Exchange 内容导出为**" 下选择的选项。
 
-- 如果搜索结果中返回部分索引项目（因为部分索引项目的其他属性与搜索条件匹配），则将使用常规搜索结果导出部分索引的项目。 因此，如果选择同时导出已编制索引的项目和部分索引项目（通过选择**所有项目（包括不可识别格式的项目）、加密或未按其他原因为导出选项编制索引**，则在结果 .csv 报告中将列出以常规结果导出的部分已编制索引的项目。 它们将不会列在未编制索引的 items .csv 报告中。
+- 如果搜索结果中返回部分索引项目（因为部分索引项目的其他属性与搜索条件匹配），则将使用常规搜索结果导出部分索引的项目。 因此，如果选择同时导出已编制索引的项目和部分索引项目（通过选择**所有项目（包括不可识别格式的项目）、加密或未按其他原因为导出选项编制索引**，则会在 Results.csv 报告中列出与常规结果一起导出的部分索引项目。 它们不会列在未编制索引的 items.csv 报告中。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>导出单个邮件或 PST 文件
   
 - 如果邮件的文件路径名称超过了 Windows 的最大字符数限制，文件路径名称将被截断。 但原始文件路径名称将在清单和 ResultsLog 中列出。
     
-- 如前所述，电子邮件搜索结果导出到文件系统中的文件夹。 每个邮件的文件夹路径将复制用户邮箱中的文件夹路径。 例如，在用户收件箱中名为 "ContosoCase101" 的搜索邮件位于文件夹路径`~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`中。 
+- 如前所述，电子邮件搜索结果导出到文件系统中的文件夹。 每个邮件的文件夹路径将复制用户邮箱中的文件夹路径。 例如，在用户收件箱中名为 "ContosoCase101" 的搜索邮件位于文件夹路径中 `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` 。 
     
 - 如果选择在一个 PST 文件中导出电子邮件，其中包含单个文件夹中的所有邮件，则 "**已删除邮件**" 文件夹和 "**搜索文件夹**" 文件夹将包含在 pst 文件夹的顶层。 这些文件夹是空的。 
   
@@ -310,7 +311,7 @@ ms.locfileid: "43615986"
   
  ### <a name="filenames-of-exported-items"></a>导出项目的文件名
   
-- 对于要导出到本地计算机的电子邮件和网站文档的完整路径名，有260个字符的限制（由操作系统设定）。 导出项目的完整路径名称包括项目的原始位置和本地计算机上将搜索结果下载到的文件夹位置。 例如，如果您指定将搜索结果下载到`C:\Users\Admin\Desktop\SearchResults`电子数据展示导出工具中，则下载的电子邮件项目的完整路径名将为。 `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg`
+- 对于要导出到本地计算机的电子邮件和网站文档的完整路径名，有260个字符的限制（由操作系统设定）。 导出项目的完整路径名称包括项目的原始位置和本地计算机上将搜索结果下载到的文件夹位置。 例如，如果您指定将搜索结果下载到 `C:\Users\Admin\Desktop\SearchResults` 电子数据展示导出工具中，则下载的电子邮件项目的完整路径名将为 `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` 。
     
     如果超过260字符的限制，将截断项目的完整路径名称。
     
@@ -318,11 +319,11 @@ ms.locfileid: "43615986"
     
   - 如果缩短文件名后完整路径名仍然过长，则项目将从当前位置移至父文件夹。 如果路径名仍然太长，则重复该过程：缩短文件名，并在需要时再次移到父文件夹。 将重复此过程，直到完整路径名低于260个字符的限制。
     
-  - 如果已存在截断的完整路径名称，则会将版本号添加到文件名的末尾;例如， `statusmessage(2).msg`。
+  - 如果已存在截断的完整路径名称，则会将版本号添加到文件名的末尾;例如， `statusmessage(2).msg` 。
     
-    若要帮助缓解此问题，请考虑将搜索结果下载到具有短路径名称的位置;例如，将搜索结果下载到名为`C:\Results`的文件夹中时，会向导出项的路径名称添加更少的字符，而`C:\Users\Admin\Desktop\Results`不是将其下载到名为的文件夹中。
+    若要帮助缓解此问题，请考虑将搜索结果下载到具有短路径名称的位置;例如，将搜索结果下载到名为的文件夹中时， `C:\Results` 会向导出项的路径名称添加更少的字符，而不是将其下载到名为的文件夹中 `C:\Users\Admin\Desktop\Results` 。
     
-- 导出网站文档时，也可能会修改文档的原始文件名。 对于已从 SharePoint 或 OneDrive for business 网站中删除的文档已被置于保留状态，这一点尤其适用。 删除处于保留状态的网站上的文档后，已删除的文档将自动移至网站的保留保留库（该网站是在将网站置于保留状态时创建的）。 将已删除的文档移到保留保留库时，将在文档的原始文件名后追加随机生成的唯一 ID。 例如，如果某个文档的文件名为`FY2017Budget.xlsx` ，并且随后删除该文档并移到保留保留库中，则移动到保留保留库的文档的文件名将修改为类似`FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`的内容。 如果保留保留库中的文档与内容搜索的查询相匹配，并且您导出该搜索的结果，则导出的文件具有修改后的文件名;在此示例中，导出的文档的文件名为`FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`。
+- 导出网站文档时，也可能会修改文档的原始文件名。 对于已从 SharePoint 或 OneDrive for business 网站中删除的文档已被置于保留状态，这一点尤其适用。 删除处于保留状态的网站上的文档后，已删除的文档将自动移至网站的保留保留库（该网站是在将网站置于保留状态时创建的）。 将已删除的文档移到保留保留库时，将在文档的原始文件名后追加随机生成的唯一 ID。 例如，如果某个文档的文件名为 `FY2017Budget.xlsx` ，并且随后删除该文档并移到保留保留库中，则移动到保留保留库的文档的文件名将修改为类似的内容 `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。 如果保留保留库中的文档与内容搜索的查询相匹配，并且您导出该搜索的结果，则导出的文件具有修改后的文件名;在此示例中，导出的文档的文件名为 `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。
     
     修改处于保留状态的网站上的文档时（已启用网站中的文档库的版本控制），会在保留保留库中自动创建该文件的副本。 在这种情况下，随机生成的唯一 ID 也会追加到复制到保留保留库的文档的文件名。
     

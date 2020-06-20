@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: '查看 "文档相似性" 值，将两个文件视为临近重复的最小 resemblance 级别，可在高级电子数据展示中工作。 '
-ms.openlocfilehash: bfce2e3018c690fc0a25bcda8e2c03690a334dc4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83c68eca8fba1ee8672f02f315585161c9abf2e3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633407"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819122"
 ---
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>了解高级电子数据展示中的文档相似性（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，"文档相似性" 是两个文档被视为临近重复项所需的最低级别的 resemblance。
   
@@ -55,7 +56,7 @@ Resemblance 的级别如下所示：
   
 合并设置后，在将新文档添加到集合中时，数据透视文档可能会发生变化。 
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

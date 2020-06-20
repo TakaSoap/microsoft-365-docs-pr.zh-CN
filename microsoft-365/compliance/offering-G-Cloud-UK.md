@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254175"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773763"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
 
@@ -37,19 +37,17 @@ Microsoft 每年都准备好文档并提交证据，证明它的范围内的企�
 
 Microsoft 服务到数字市场的约会意味着，英国政府机构和合作伙伴可以使用范围内的服务来存储和处理英国官方政府数据（大多数政府数据）。 此外，现已有450个 Microsoft 合作伙伴，其中包含 Microsoft 云服务的经销商。 他们可以直接断言范围内服务与自己的应用程序中的14个原则的合规性。 但是，客户和合作伙伴需要为 Microsoft 云服务的合规性和确定合规性中未包括的任何组件实现自己的符合性。
 
-了解有关 Microsoft 云上英国 G 云 v6 的优势的详细信息：[下载英国 g-云 v6 背景文档](https://aka.ms/uk-g-cloud_backgrounder)
-
 了解如何使用我们的 Azure 安全性和合规性蓝图加快英国 G-云 v6 部署：[下载 Azure 蓝图 UK G-云原则实现指南](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- 将 "电源自动化" （以前称为 Microsoft Flow）云服务作为独立服务或在 Office 365 或 Dynamics 365 标记计划或套件中包含
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365： Exchange Online、SharePoint Online 和 Skype for Business Online
-- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书

@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何使用错误修正来更正可能阻止对内容进行正确处理的数据调查（预览）中的数据问题。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035114"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817811"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>处理调查数据时的错误修正
 
@@ -57,7 +59,7 @@ ms.locfileid: "44035114"
     >建议使用本地文件路径，而不是远程网络路径，以实现最佳性能。
 
     > [!NOTE]
-    > 如果尚未安装 AzCopy，则可以从此处进行安装：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > 如果尚未安装 AzCopy，请转到[AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)以安装它。
 
 6. 通过单击 "**复制到剪贴板**" 复制预定义命令。 启动 windows 命令提示符，粘贴命令，然后按**enter**。  
 
@@ -71,7 +73,7 @@ ms.locfileid: "44035114"
 7. 下载文件后，可以使用适当的工具对它们进行修正。 对于受密码保护的文件，可以使用几种密码破解工具。 如果您知道这些文件的密码，则可以打开它们并删除密码保护。
     
    > [!NOTE]
-    > 必须保留已修正文件的目录结构和文件名，这一点非常重要。 通过下载的文件和文件夹的路径名称，可以将修正的文件与原始文件进行关联。  如果更改了目录结构或文件的名称，您将收到以下错误： `Cannot apply Error Remediation to the current Evidenceset`。
+    > 必须保留已修正文件的目录结构和文件名，这一点非常重要。 通过下载的文件和文件夹的路径名称，可以将修正的文件与原始文件进行关联。  如果更改了目录结构或文件的名称，您将收到以下错误： `Cannot apply Error Remediation to the current Evidenceset` 。
 
 8. 现在，返回到 "数据调查（预览）"，然后单击 "**下一步：上传文件**"。  此操作将移至下一步，你现在可以在其中上传文件。
 
@@ -81,7 +83,7 @@ ms.locfileid: "44035114"
 
 10. 将命令粘贴到 Windows 命令提示符中，然后按**enter**上传文件。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. 最后，返回到 "数据调查（预览）"，然后单击 "**下一步：处理文件**"。
 

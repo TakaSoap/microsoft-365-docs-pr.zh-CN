@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 获取评估阶段及其在高级电子数据展示中的相关性培训期间确定问题的角色的概述。
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在 Microsoft 365 高级电子数据展示中的相关性培训期间，获取有关评估阶段及其角色的概述。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636150"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818411"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>了解高级电子数据展示中的相关评估（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 高级电子数据展示支持早期评估，例如，针对定义的问题和为事例导入的数据。 高级电子数据展示让专家做出有关采用方法的决策，并将这些决策应用于文档审阅项目。
   
@@ -51,9 +52,9 @@ ms.locfileid: "43636150"
 您可以接受相关性建议，也可以根据需要调整当前误差。 在等于或高于75% 时，将确定默认的错误当前边距。
   
 > [!NOTE]
-> 通过清除每个问题的 "**评估**" 复选框，然后针对 "所有问题"，可以绕过评估阶段的展开视图的 "**相关性\>跟踪**" 选项卡中的该问题。 但因此，此问题不会提供任何统计信息。 > 清除 "**评估**" 复选框只能在执行评估之前完成。 在案例中存在多个问题的情况下，仅当针对每个问题清除该复选框时，才会跳过评估 
+> 通过清除每个问题的 "**评估**" 复选框，然后针对 "所有问题"，可以绕过评估阶段的展开视图的 "**相关性 \> 跟踪**" 选项卡中的该问题。 但因此，此问题不会提供任何统计信息。 > 清除 "**评估**" 复选框只能在执行评估之前完成。 在案例中存在多个问题的情况下，仅当针对每个问题清除该复选框时，才会跳过评估 
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

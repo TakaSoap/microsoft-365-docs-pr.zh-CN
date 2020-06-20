@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在安全 & 合规性中心中添加和管理活动警报，以便 Microsoft 365 将在用户执行特定活动时向你发送电子邮件通知
-ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035804"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818021"
 ---
 # <a name="create-activity-alerts"></a>创建活动通知
 
@@ -34,11 +34,11 @@ ms.locfileid: "44035804"
 > [!NOTE]
 > 活动通知将被弃用。 我们建议您开始使用安全与合规中心中的通知策略，而不是创建新的活动通知。 警报策略提供了一些附加功能，如创建在任何用户执行指定活动时触发警报的通知策略，以及在安全与合规中心的 "**查看通知**" 页上显示警报的功能。 有关详细信息，请参阅[警报策略](alert-policies.md)。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="confirm-roles-and-configure-audit-logging"></a>确认角色和配置审核日志记录
 
 - 您必须在安全 & 合规中心中向您分配 "组织配置" 角色，以管理活动通知。 默认情况下，此角色分配给合规性管理员和组织管理角色组。 有关向角色组添加成员的详细信息，请参阅[为用户提供对安全 & 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
-- 您（或另一个管理员）必须先为您的组织启用审核日志记录，然后才能开始使用活动通知。 若要执行此操作，只需单击 "**活动通知**" 页面上的 "**开始记录用户和管理员活动**"。 （如果看不到此链接，表明已为您的组织启用了审核。）您还可以在安全 & 合规性中心（转到**搜索** \> **审核日志搜索**）中的 "**审核日志搜索**" 页上启用审核。 您只需为组织执行一次此操作。
+- 您（或另一个管理员）必须先为您的组织启用审核日志记录，然后才能开始使用活动通知。 若要执行此操作，只需单击 "**活动通知**" 页面上的 "**开始记录用户和管理员活动**"。 （如果看不到此链接，表明已为您的组织启用了审核。）您还可以在安全 & 合规性中心（转到**搜索**审核日志搜索）中的 "**审核日志搜索**" 页上启用审核 \> **Audit log search**。 您只需为组织执行一次此操作。
   
 - 您可以为可以在审核日志中搜索的相同活动创建通知。 请参阅[详细信息](#more-information)部分，了解您可以为其创建通知的常见方案（和要监视的特定活动）的列表。 
     
@@ -50,7 +50,7 @@ ms.locfileid: "44035804"
     
 2. 使用工作或学校帐户进行登录。
     
-3. 在 "**活动通知**" 页面上![，单击](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) "**新建**图标"。
+3. 在 "**活动通知**" 页面上，单击 " ![ ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新建**图标"。
 
    将显示用于创建活动通知的飞出页面。
 
@@ -85,7 +85,7 @@ ms.locfileid: "44035804"
 
 您可以关闭活动通知，以便不发送电子邮件通知。 关闭活动通知后，它仍显示在您的组织的活动通知列表中，您仍可以查看其属性。
   
-1. 转到 "转[https://protection.office.com/managealerts](https://protection.office.com/managealerts)到"。
+1. 转到 "转到" [https://protection.office.com/managealerts](https://protection.office.com/managealerts) 。
     
 2. 使用工作或学校帐户进行登录。
     

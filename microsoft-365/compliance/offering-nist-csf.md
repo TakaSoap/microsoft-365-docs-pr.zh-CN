@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 3ebed6af6ba1e3e82178ad87cfe3592e0df4bc48
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066147"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799977"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
 
@@ -37,10 +37,10 @@ NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用
 
 了解如何使用合规性分数和我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
 
-- [下载 Azure 安全性和合规性蓝图-NIST CSF 风险评估清单](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [NIST SP 800-53 R4 蓝图示例概述](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
 - [在合规性分数中了解有关适用于 Office 365 的 NIST CSF 评估的详细信息](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [适用于政府的 Dynamics 365](https://aka.ms/d365-compliance-list)

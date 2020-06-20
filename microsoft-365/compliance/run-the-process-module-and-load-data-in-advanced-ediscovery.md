@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: '了解如何使用安全&amp;合规中心来访问高级电子数据展示，并运行进程模块的情况。  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '了解如何使用安全 &amp; 合规中心来访问高级电子数据展示，并运行进程模块的情况。  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626468"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818901"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中运行 Process module 和 load data
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本节介绍高级电子数据展示过程模块的功能。 
   
@@ -41,9 +42,9 @@ ms.locfileid: "43626468"
   
 执行以下步骤以运行进程。
   
-1. [打开 "安全&amp;合规中心"](go-to-the-securitycompliance-center.md) 。 
+1. [打开安全 &amp;合规性中心](go-to-the-securitycompliance-center.md)。 
     
-2. 转到**搜索&amp;调查** \> **电子数据展示**，然后单击 "**转到高级电子数据展示**"。
+2. 转到**搜索 &amp; 调查** \> **电子数据展示**，然后单击 "**转到高级电子数据展示**"。
     
 3. 在高级电子数据展示中，在 "显示**事例**" 页面中选择适当的事例，然后单击 "**转到大小写**"。
     
@@ -77,11 +78,11 @@ ms.locfileid: "43626468"
     
 6. 若要开始，请单击 "**处理**"。 完成后，将显示流程结果。
     
-7. Optional如果需要向特定保管人分配数据源，可以在**保管人** \>中添加和编辑保管人名称**管理**和**分配保管人** \> **assign**中的保管人。 
+7. Optional如果需要向特定保管人分配数据源，可以在**保管人**中添加和编辑保管人名称 \> **管理**和分配保管人 assign 中的保管人**Custodians** \> **Assign**。 
     
 如果向事例添加，则可以再次处理。
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

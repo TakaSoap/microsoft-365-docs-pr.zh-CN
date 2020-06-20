@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232048"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817541"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
-
-## <a name="overview"></a>概述
 
 通过信息障碍，您可以定义旨在防止某些用户段相互通信的策略，或允许特定的分段仅与某些其他网段进行通信。 信息屏障策略可帮助您的组织保持遵守相关的行业标准和法规，并避免潜在的利益冲突。 若要了解详细信息，请参阅[信息障碍](information-barriers.md)。 
 

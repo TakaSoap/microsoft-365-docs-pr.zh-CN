@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724796"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780715"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -184,7 +184,7 @@ ms.locfileid: "44724796"
 
 但是，可以同时使用这两个保护解决方案，行为如下所示： 
 
-- 如果您上载的文件具有适用于加密的敏感度标签，则不会删除加密，因此不支持这些文件、共同创作、电子数据展示、DLP 和搜索。
+- 如果您上载的文件具有适用于加密的敏感度标签，SharePoint 将无法处理此文件，因此不能对此文件进行共同创作、电子数据展示、DLP 和搜索。
 
 - 如果使用 web 上的 Office 标记文件，则将强制应用标签中的所有加密设置。 对这些文件、共同创作、电子数据展示、DLP 和搜索均受支持。
 

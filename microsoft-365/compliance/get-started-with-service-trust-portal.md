@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: 对于 Microsoft 365、Azure 和 Dynamics 365 Online 规章合规性报告，若要查看第三方审核，请了解 Microsoft 如何使客户数据安全，以及如何在使用这些在线服务时遵守 ISO、HIPAA、NIST、FINRA、GDPR 和 FedRAMP 的合规性。
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何访问和使用 Microsoft 服务信任门户，以帮助实现安全性、隐私和合规性实践。
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632443"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817621"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -29,7 +31,7 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 服务信任门户包含有关 Microsoft 实施的控制和过程的详细信息，可保护我们的云服务和其中的客户数据。 若要访问服务信任门户上的一些资源，您必须使用 Microsoft 云服务帐户（Azure Active Directory 组织帐户或 Microsoft 帐户）以已通过身份验证的用户身份登录，并查看并接受 Microsoft 保密协议（针对合规性材料）。
   
-**现有客户可以** [https://aka.ms/STP](https://aka.ms/STP)使用以下联机订阅之一（试用版或付费版）访问服务信任门户： 
+**现有客户可以** [https://aka.ms/STP](https://aka.ms/STP) 使用以下联机订阅之一（试用版或付费版）访问服务信任门户： 
   
 - Microsoft 365
 

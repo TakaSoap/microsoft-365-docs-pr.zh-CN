@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何从一个评审集选择文档，并在高级电子数据展示事例中单独处理它们，并在另一组中使用它们。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034676"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818599"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>从另一个评审集向评审集添加数据
 
@@ -30,9 +32,9 @@ ms.locfileid: "44034676"
 
 请遵循本文中的工作流，将内容从一个审阅集添加到另一个评审集。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="create-a-review-set"></a>创建审阅集
 
-在开始之前，您需要创建新的审阅集以将数据添加到。  可以在案例的 "**审阅集**" 选项卡上添加新的审阅集。 有关详细信息，请参阅[创建审阅集](managing-review-sets.md#create-a-review-set)。
+在开始之前，您需要创建要将数据添加到的审阅集。  可以在案例的 "**审阅集**" 选项卡上添加新的审阅集。 有关详细信息，请参阅[创建审阅集](managing-review-sets.md#create-a-review-set)。
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>步骤1：确定要添加到另一评审集的内容
 

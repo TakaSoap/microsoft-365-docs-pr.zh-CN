@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高级电子数据展示中的处理包括对保管人数据的重新编制索引、嵌入文档和附件的扩展以及 OCR。 处理还包括对索引错误的修正。
-ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 阅读有关在 Office 365 中的高级电子数据展示工具中处理各种形式的数据的概述。
+ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632217"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818781"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>处理高级电子数据展示中的处理错误
 

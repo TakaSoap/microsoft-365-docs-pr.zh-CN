@@ -15,17 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: '了解导出电子数据展示事例数据的准则和在高级电子数据展示中使用导出过程进行审阅的结果。  '
-ms.openlocfilehash: 8a46a0c3d04cb89d50486d032a7958ccb779b5e1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615936"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817761"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出事例数据（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 高级电子数据展示中的导出过程可用于导出高级电子数据展示内容和外部审阅结果。 
   
@@ -37,7 +38,7 @@ ms.locfileid: "43615936"
     
 - 将大量数据导出到数据库可能会对所需的数据库大小和高级电子数据展示数据库所需的配置产生重大影响。
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

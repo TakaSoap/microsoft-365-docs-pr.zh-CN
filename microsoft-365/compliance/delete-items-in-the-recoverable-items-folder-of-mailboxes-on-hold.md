@@ -1,5 +1,5 @@
 ---
-title: 删除处于保留状态的云邮箱中的项目 "可恢复的项目" 文件夹-管理员帮助
+title: 在保留 "可恢复的项目" 文件夹中删除云邮箱中的项目
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 对于管理员：删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。 这是一种删除意外溅入 Microsoft 365 的数据的有效方法。
+description: 了解如何删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352177"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817871"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -46,7 +46,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 > [!CAUTION]
 > 本文中所述的过程将导致从 Exchange Online 邮箱永久删除（清除）的数据。 这意味着无法恢复从 "可恢复的项目" 文件夹中删除的邮件，也不会提供用于法律查询或其他合规性的邮件。 如果要从作为诉讼保留的一部分放置在保留邮箱中的邮件、就地保留、电子数据展示保留或安全与合规中心中创建的保留策略，请在删除保留之前与您的记录管理或法律部门进行确认。 您的组织可能有定义邮箱处于保留状态或 data 外泄事件是否优先的策略。 
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-delete-items"></a>删除项目之前
 
 - 若要创建并运行内容搜索，您必须是电子数据展示管理员角色组的成员，或者分配有“合规性搜索”管理角色。 若要删除邮件，您必须是组织管理角色组的成员或分配有“搜索并清除”管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 

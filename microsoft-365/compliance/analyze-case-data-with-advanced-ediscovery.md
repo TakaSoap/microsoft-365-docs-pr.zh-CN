@@ -14,20 +14,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '获取分析过程的概述，它允许您在高级电子数据展示中设置参数、运行选项和查看结果。 '
-ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '概述了在 Microsoft 365 高级电子数据展示中的分析过程，它允许您设置参数、运行选项和查看结果。 '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a5a3dc8d9bb6568545bbe0868a673fd0090f12e8
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637056"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818481"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>使用高级电子数据展示分析事例数据（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-高级电子数据展示中的**准备** \> **分析**过程将以下功能应用于所包含的文件： 
+**Prepare** \> 高级电子数据展示中的准备**分析**过程将以下功能应用于所包含的文件： 
   
 - 标识加载的文件并将其组织成组的唯一文件、重复项和临近的重复项。
     
@@ -43,7 +44,7 @@ ms.locfileid: "43637056"
     
 在运行分析之前，请定义用于选择和处理文件的条件，包括将对哪些已加载文件进行分析，以及每种类型的文件将被提交到的分析类型。 
   
-## <a name="see-also"></a>另请参阅
+## <a name="additional-resources-for-advanced-ediscovery-classic-analysis"></a>用于高级电子数据展示（经典）分析的其他资源
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

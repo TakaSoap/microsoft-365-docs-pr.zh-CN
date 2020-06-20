@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: 您可以在安全 & 合规性中心启用审核日志搜索功能。 如果你更改了想法，你可以随时关闭。 当 "审核日志搜索" 关闭时，管理员无法在您的组织中搜索用户和管理员活动的 Microsoft 365 审核日志。
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: 如何在安全 & 合规中心中打开或关闭审核日志搜索功能，以启用或禁用管理员在审核日志中搜索的功能。
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330786"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819132"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>启用或禁用审核日志搜索
 
@@ -33,7 +34,7 @@ ms.locfileid: "44330786"
 > [!IMPORTANT]
 > 如果您在 Microsoft 365 中关闭审核日志搜索，则不能使用 Office 365 管理活动 API 或 Azure Sentinel 来访问您的组织的审核数据。 按照本文中的步骤关闭审核日志搜索意味着，在使用 Security & 合规中心或在 Exchange Online PowerShell 中运行**UnifiedAuditLog** cmdlet 时，搜索审核日志时不会返回任何结果。 这也意味着不会通过 Office 365 管理活动 API 或 Azure Sentinel 提供审核日志。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>在打开或关闭审核日志搜索之前
 
 - 您必须在 Exchange Online 中向您分配 "审核日志" 角色，才能在 Microsoft 365 组织中打开或关闭审核日志搜索。 默认情况下，此角色在 Exchange 管理中心中的 "**权限**" 页上分配给合规性管理和组织管理角色组。 Microsoft 365 中的全局管理员是 Exchange Online 中的 "组织管理" 角色组的成员。 
     

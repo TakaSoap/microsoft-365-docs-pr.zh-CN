@@ -15,24 +15,25 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 操作方法：将未存储在 Microsoft 365 中的内容导入到 Azure blob 中，以便可以使用 AeD 对其进行分析
-ms.openlocfilehash: be49e7d44c56988baa3cdc718498a03ee4acd50b
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: fbb21f6bc3fdfd2a5251a9ec773a22351db5749e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214536"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817591"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>导入非 Microsoft 365 内容以实现高级电子数据展示（经典）分析
 
 并非所有可能需要使用高级电子数据展示进行分析的文档都会在 Microsoft 365 中生存。 使用高级电子数据展示中的非 Microsoft 365 内容导入功能，可以将不在 Microsoft 365 （PST 文件除外）中生存的文档上传到已链接的 Azure 存储 blob，并使用高级电子数据展示分析这些文档。 此过程向您演示如何将非 Microsoft 365 文档转换为高级电子数据展示以进行分析。
   
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
 > 您可以购买非 Microsoft 365 内容的高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照[为 Microsoft 365 for Business 购买或编辑加载](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)项中的步骤进行操作，并购买高级电子数据展示存储加载项。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="requirements-to-upload-non-office-365-content"></a>上载非 Office 365 内容的要求
 
 如以下过程所述，使用 "上载非 Office 365" 功能需要具备以下条件：
   

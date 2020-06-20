@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何使用安全 & 合规性中心中的新数据调查（预览版）工具删除其原始位置中的项目。
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630519"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817881"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>从原始位置删除项目（预览）
 
@@ -31,7 +32,7 @@ ms.locfileid: "43630519"
 
 使用数据调查，可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您拥有在证据集内保留的项目的副本以供进一步调查或保留为参考。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-delete-items"></a>删除项目之前
 
 - 若要删除项目，您必须在安全 & 合规性中心中为其分配**搜索和清除**角色。 默认情况下，此角色分配给内置的 "数据调查者" 角色组。
 

@@ -16,13 +16,15 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 完成设置 Office 365 邮件加密（OME）后，您可以通过多种方式自定义部署的配置。 例如，您可以配置是否启用一次性传递代码，在 Outlook 网页版中显示 "保护" 按钮，等等。 本文中的任务介绍了如何。
-ms.openlocfilehash: 25cb5cebda48432afdc670a6dab0a5229167df15
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: 完成设置 Office 365 邮件加密（OME）后，了解如何通过多种方式自定义您的部署。
+ms.openlocfilehash: 83fa620852ea9b2e0cd50d50b6715742658b7239
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165973"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815429"
 ---
 # <a name="manage-office-365-message-encryption"></a>管理 Office 365 邮件加密
 
@@ -191,9 +193,9 @@ IOS 邮件应用程序无法解密受 Office 365 邮件加密保护的邮件。 
 
    - `mail flow rule name`是要用于新邮件流规则的名称。
 
-   - `option name`可以`Encrypt`是或`Do Not Forward`。
+   - `option name`可以是 `Encrypt` 或 `Do Not Forward` 。
 
-   - `template name`是您赋予自定义品牌打造模板的名称，例如`OME Configuration`。
+   - `template name`是您赋予自定义品牌打造模板的名称，例如 `OME Configuration` 。
 
    若要使用 "OME 配置" 模板对所有外部电子邮件进行加密，并应用 "仅加密" 选项，请执行以下操作：
 

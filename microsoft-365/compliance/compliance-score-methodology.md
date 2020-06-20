@@ -14,19 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
-ms.openlocfilehash: e1a13cee8086e158f3869a00384166366c0a63dc
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: cf8a691b558614896cc17207e761035e1f360280
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429187"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818071"
 ---
 # <a name="microsoft-compliance-score-preview-calculation"></a>Microsoft 合规性分数（预览）计算
 
 > [!IMPORTANT]
 > 合规性分数和合规性管理器中提供的建议不应解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务当前处于预览阶段，并遵循[在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件。 另请参阅[适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-## <a name="overview"></a>概述
+## <a name="how-compliance-score-works"></a>合规性分数的工作原理
 
 合规性分数仪表板显示分数，用于衡量在控件中完成改进操作的进度。 完成操作时，会对点进行累算。
 

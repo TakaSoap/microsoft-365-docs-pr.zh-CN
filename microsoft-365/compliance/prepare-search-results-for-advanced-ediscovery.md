@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: 了解如何准备安全 & 合规性中心中的内容搜索结果，以使用高级电子数据展示工具进行进一步分析。
-ms.openlocfilehash: 14bc98dc9cca656e23fc76f00c6adc975bb61c5e
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c0f1540e9745351269e019ea95399ce5c636d8b3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412841"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818761"
 ---
 # <a name="prepare-search-results-for-advanced-ediscovery-classic"></a>为高级电子数据展示准备搜索结果（经典）
 
@@ -51,7 +52,7 @@ ms.locfileid: "44412841"
     
 - **导出数据以供审阅应用程序**-在完成分析并减小数据集后，您可以从高级电子数据展示和 Microsoft 365 导出数据。 导出包包含一个 CSV 文件，其中包含导出的内容和分析元数据中的属性。 然后，可以将此导出包导入到电子数据展示审阅应用程序中。 
     
-## <a name="before-you-begin"></a>准备工作
+## <a name="get-licenses-and-permissions"></a>获取许可证和权限
 
 - 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配 Office 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 E3 许可证的用户分配高级电子数据展示独立许可证。 分配给案例并使用高级电子数据展示分析数据的管理员和合规性监察官不需要 E5 许可证。 
     
@@ -98,7 +99,7 @@ ms.locfileid: "44412841"
     
 2. 在高级电子数据展示中，单击要在其中将数据加载到的事例旁边的 "**打开**"。 
     
-3. 在此案例的**主页**上，单击 "**切换到高级电子数据展示**"。 
+3. 在此案件集的“**主页**”上，单击“**切换至高级电子数据展示**”。 
     
     ![单击 "切换到高级电子数据展示" 以在高级电子数据展示中打开事例](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
@@ -114,7 +115,7 @@ ms.locfileid: "44412841"
 
 将电子数据展示搜索的结果添加到事例之后，下一步是使用高级电子数据展示工具来分析数据，并确定对特定法律案例做出响应的内容。 有关使用高级电子数据展示的信息，请参阅[高级电子数据展示（经典）](office-365-advanced-ediscovery.md)。
   
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 在准备高级电子数据展示中的分析时，搜索结果中包含的任何 RMS 加密的电子邮件都将被解密。 默认情况下，将为电子数据展示管理器角色组的成员启用此解密功能。 这是因为将 RMS 解密管理角色分配给此角色组。 请记住以下有关解密电子邮件的事项：
   

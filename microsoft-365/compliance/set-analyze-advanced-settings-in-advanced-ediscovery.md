@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '了解如何为高级电子数据展示中的分析过程配置高级设置，包括临近的重复、电子邮件线索和主题。 '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631269"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819232"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>在高级电子数据展示中设置分析高级设置
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 高级电子数据展示可提供分析模块设置的默认高级参数。 下面的过程介绍了可指定的设置。
   
-1. 在 "**准备\>分析\>设置**" 选项卡上，单击页面底部的 "**高级设置**"。 将显示以下面板。 
+1. 在 "**准备 \> 分析 \> 设置**" 选项卡上，单击页面底部的 "**高级设置**"。 将显示以下面板。 
     
     ![设置分析高级设置](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -46,7 +47,7 @@ ms.locfileid: "43631269"
     
 4. 单击“保存”****。 
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

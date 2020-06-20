@@ -16,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '查看在高级电子数据展示中设置分析过程的选项的步骤，包括临近的重复、电子邮件线索和主题。  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631259"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819222"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置分析选项（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，在运行分析之前设置 "分析" 选项。
   
 ## <a name="set-analyze-options"></a>设置分析选项
 
-打开**准备\>分析** \> **设置**。 将显示以下窗口。
+打开**准备 \> 分析** \> **设置**。 将显示以下窗口。
   
 ![设置分析选项](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -55,7 +56,7 @@ ms.locfileid: "43631259"
   
 1. 若要查看、添加或编辑建议的主题，请单击 "**修改**"。
     
-2. 在 "**建议的主题**" 面板中，单击 "](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **添加** ![" "添加图标" 图标以添加主题。 在 "**添加建议的主题**" 面板中，添加单词，并以逗号分隔。 
+2. 在 "**建议的主题**" 面板中，单击 "**添加**" "添加 ![ 图标" ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 图标以添加主题。 在 "**添加建议的主题**" 面板中，添加单词，并以逗号分隔。 
     
 3. 在 "**主题数量**" 中，选择一个值以确定高级电子数据展示将尝试为这些单词生成的主题数（默认为1主题）。
     
@@ -76,7 +77,7 @@ ms.locfileid: "43631259"
   
 设置这些选项后，请单击 "**分析**" 以运行。 显示 "[查看分析结果](view-analyze-results-in-advanced-ediscovery.md)"。 
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

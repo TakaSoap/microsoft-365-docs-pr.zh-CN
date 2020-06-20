@@ -16,17 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: '了解如何在高级电子数据展示中查看所选导出批处理会话的详细信息以及如何撤消上次导出会话。  '
-ms.openlocfilehash: 356b0b61288b466da38bc640f9aad636ee654da2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626348"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819052"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>高级电子数据展示（经典）中的查看批次历史记录和导出过去的结果
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 下一节介绍了用于在高级电子数据展示中批量查看和导出数据的其他选项。 
   
@@ -34,7 +35,7 @@ ms.locfileid: "43626348"
 
 "导出历史记录" 对话框提供了所选导出批处理会话的详细信息，还提供了撤消上一会话的功能。
   
-1. 在 **" \>导出设置**" 中，从 "**导出批处理**" 下拉列表中选择批次名称。 
+1. 在 "**导出 \> 设置**" 中，从 "**导出批处理**" 下拉列表中选择批次名称。 
     
 2. 在 "导出批处理名称" 的右侧，选择 "**批次历史记录**" 图标： 
     
@@ -46,9 +47,9 @@ ms.locfileid: "43626348"
   
 3. 如果需要回滚之前的会话，请单击 "**撤消上次会话**"。 回滚可以执行多次，这将取消最后一个会话。
     
-4. 如果要从以前执行的导出批处理会话随时下载数据，请单击要导出的所**Download**需导出![批处理旁边的 "下载](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif)图标导出批次历史记录下载" 图标。 
+4. 如果要从以前执行的导出批处理会话随时下载数据，请单击要**Download** ![ ](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) 导出的所需导出批处理旁边的 "下载图标导出批次历史记录下载" 图标。 
     
-5. 当显示 "**共享访问签名**" 对话框时，单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机，然后单击 "**关闭**"。 将显示&amp;安全符合性中心**电子数据展示导出工具**对话框。 
+5. 当显示 "**共享访问签名**" 对话框时，单击 "**复制到剪贴板**" 以将导出会话数据复制到本地计算机，然后单击 "**关闭**"。 将 &amp; 显示安全符合性中心**电子数据展示导出工具**对话框。 
     
     ![“导出电子数据展示”对话框](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -60,7 +61,7 @@ ms.locfileid: "43626348"
     
 3. 单击“**开始**”。 将导出文件下载到本地计算机。 
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

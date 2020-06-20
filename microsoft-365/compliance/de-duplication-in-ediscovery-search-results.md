@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: 您可以选择执行已导出的电子数据展示搜索结果，以便即使在不同邮箱中找到同一邮件的多个实例，也只导出电子邮件的一个副本。
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何消除重复的电子数据展示搜索结果，以便只导出电子邮件的一个副本。
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166043"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817911"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>电子数据展示搜索结果中的重复数据删除
 
@@ -41,17 +43,17 @@ ms.locfileid: "44166043"
 
 - **BodyTagInfo** -这是一个内部 Exchange 存储属性。 此属性的值是通过检查邮件正文中的各种属性计算得出的。 此属性用于标识邮件正文中的差异。 
 
-在电子数据展示导出过程中，将对匹配搜索条件的每封邮件比较这三个属性。 如果两个（或更多）邮件的这些属性相同，则确定这些邮件是重复的，并且结果是，如果启用重复数据消除功能，则将只导出邮件的一个副本。 导出的邮件称为 "源项目"。 有关重复邮件的信息包含在导出的搜索结果附带的**结果 .csv**和**清单 .xml**报告中。 在**结果 .csv**文件中，通过在 "**复制到项目**" 列中包含一个值来标识重复的邮件。 此列中的值与导出的邮件的 "**项目标识**" 列中的值相匹配。 
+在电子数据展示导出过程中，将对匹配搜索条件的每封邮件比较这三个属性。 如果两个（或更多）邮件的这些属性相同，则确定这些邮件是重复的，并且结果是，如果启用重复数据消除功能，则将只导出邮件的一个副本。 导出的邮件称为 "源项目"。 有关重复邮件的信息包含在**Results.csv**和导出的搜索结果附带的**Manifest.xml**报告中。 在**Results.csv**文件中，通过在 "**复制到项**" 列中包含一个值来标识重复的邮件。 此列中的值与导出的邮件的 "**项目标识**" 列中的值相匹配。 
   
-下图显示了在搜索结果中导出的**结果 .csv**和**清单 .xml**报告中显示重复邮件的方式。 这些报告不包括前面所述的电子邮件属性，这些属性在重复数据消除算法中使用。 相反，报告包括分配给 Exchange 存储中的项目的**项目标识**属性。 
+下图显示了如何在**Results.csv**中显示重复的邮件，以及如何在搜索结果中导出**Manifest.xml**报告。 这些报告不包括前面所述的电子邮件属性，这些属性在重复数据消除算法中使用。 相反，报告包括分配给 Exchange 存储中的项目的**项目标识**属性。 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>结果 .csv 报告（在 Excel 中查看）
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv 报表（在 Excel 中查看）
   
-![查看有关结果 .csv 报告中的重复项的信息](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![查看有关 Results.csv 报表中的重复项的信息](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>清单 .xml 报告（在 Excel 中查看）
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml 报表（在 Excel 中查看）
   
-![查看有关清单 .xml 报告中的重复项的信息](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![查看有关 Manifest.xml 报表中的重复项的信息](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 此外，还会在导出报告中包含重复邮件中的其他属性。 这包括重复邮件所在的邮箱、邮件是否已发送到通讯组，以及邮件是否为 "抄送" 或 "密件抄送" 给其他用户。
   

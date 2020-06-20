@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 将组织的品牌化应用于组织的加密电子邮件和加密门户的内容。
-ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+- seo-marvel-jun2020
+description: 了解 Office 365 全局管理员如何将组织的品牌打造给加密的电子邮件 & 加密门户的内容。
+ms.openlocfilehash: 6ec13a9d986019e6eb91d1b7a395f1c6199fe12a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679106"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818655"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>在加密的邮件中添加组织的品牌
 

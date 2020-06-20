@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 默认情况下，邮箱审核日志记录处于打开状态（也称为默认邮箱审核或邮箱审核默认情况下启用）。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: 默认情况下，邮箱审核日志记录在 Microsoft 365 （也称为默认邮箱审核或邮箱审核）中处于打开状态。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371426"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817831"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -154,13 +155,13 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 默认情况之下的邮箱审核将新的*DefaultAuditSet*属性添加到所有邮箱。 此属性的值指示是否在邮箱上审核默认邮箱操作（由 Microsoft 管理）。
 
-若要在用户邮箱或共享邮箱上显示值，请将 MailboxIdentity 替换为 \< \> 邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下命令：
+若要在用户邮箱或共享邮箱上显示值，请将 \<MailboxIdentity\> 其替换为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下命令：
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-若要在 Microsoft 365 组邮箱中显示值，请将 MailboxIdentity 替换为 \< \> 共享邮箱的名称、别名或电子邮件地址，并在 Exchange Online PowerShell 中运行以下命令：
+若要在 Microsoft 365 组邮箱中显示值，请将 \<MailboxIdentity\> 其替换为共享邮箱的名称、别名或电子邮件地址，并在 Exchange Online PowerShell 中运行以下命令：
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>显示正在登录邮箱的邮箱操作
 
-若要查看当前登录用户邮箱或共享邮箱的邮箱操作，请将 MailboxIdentity 替换 \< \> 为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下一个或多个命令。
+若要查看当前登录用户邮箱或共享邮箱的邮箱操作，请将其替换 \<MailboxIdentity\> 为邮箱的名称、别名、电子邮件地址或用户主体名称（用户名），并在 Exchange Online PowerShell 中运行以下一个或多个命令。
 
 > [!NOTE]
 > 虽然您可以将此 `-GroupMailbox` 开关添加到 Microsoft 365 组邮箱的以下**Get 邮箱**命令中，但不相信返回的值。 本主题前面的 " [microsoft 365 组邮箱的邮箱操作](#mailbox-actions-for-microsoft-365-group-mailboxes)" 一节中介绍了为 Microsoft 365 组邮箱审核的默认和静态邮箱操作。
@@ -324,7 +325,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 - 不会记录绕过用户执行的管理操作。
 
-若要绕过特定用户的邮箱审核日志记录，请将 MailboxIdentity 替换为 \< \> 用户的名称、电子邮件地址、别名或用户主体名称（用户名），并运行以下命令：
+若要绕过特定用户的邮箱审核日志记录，请将其替换为 \<MailboxIdentity\> 用户的名称、电子邮件地址、别名或用户主体名称（用户名），并运行以下命令：
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
@@ -338,7 +339,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 如果值**为 True** ，则表示对用户绕过邮箱审核日志记录。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 虽然默认情况下已对所有组织启用邮箱审核日志记录功能，但只有拥有 E5 许可证的用户才会在[安全 & 合规性中心中](search-the-audit-log-in-security-and-compliance.md)或通过[Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)在审核日志搜索中返回邮箱审核日志事件（**默认情况下**）。
 

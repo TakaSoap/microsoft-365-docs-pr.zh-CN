@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解对 Microsoft 365 中的高级电子数据展示解决方案的有效限制。 这包括使用搜索工具收集事例数据时的大小写限制、索引限制和搜索限制。
-ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.custom:
+- seo-marvel-apr2020
+description: 了解 Microsoft 365 中适用于高级电子数据展示解决方案的案例限制、索引限制和搜索限制。
+ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520144"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817089"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 

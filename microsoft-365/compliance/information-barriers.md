@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232005"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817531"
 ---
 # <a name="information-barriers"></a>信息屏障
-
-## <a name="overview"></a>概述
 
 Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制两个组之间的通信，以避免组织中发生利益冲突。 或者，您可能希望限制组织内的某些人之间的通信，以便保护内部信息。 Microsoft 365 支持跨组和组织进行通信和协作，因此有一种方法可以在必要时限制特定用户组之间的通信吗？ 通过信息障碍，你可以！ 
 

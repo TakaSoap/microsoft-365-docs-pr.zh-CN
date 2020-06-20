@@ -17,12 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全 & 合规中心分配执行与电子数据展示相关的任务所需的权限。
-ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b5c2cf20d3f417429c6e3793c23c299b860b28fa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411029"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818431"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全 & 合规中心中分配电子数据展示权限
 
@@ -45,7 +46,7 @@ ms.locfileid: "44411029"
 > [!NOTE]
 > 若要使用高级电子数据展示分析用户的数据，必须为用户（数据管理员）分配一个 Office 365 E5 或 Microsoft 365 E5 许可证。 或者，可以为具有 Office 365 E1 或 Office 365 或 Microsoft 365 E3 许可证的用户分配 Microsoft 365 E5 合规性或 Microsoft 365 电子数据展示和审核附加许可证。 被分配为事例作为成员并使用高级电子数据展示来收集、查看和分析数据的管理员、合规性监察官或法律人员不需要 E5 许可证。 有关高级电子数据展示许可的详细信息，请参阅[高级电子数据展示入门](get-started-with-advanced-ediscovery.md)。
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="confirm-your-roles"></a>确认你的角色
 
 - 您必须是 "组织管理" 角色组的成员，或分配有角色管理角色才能在安全 & 合规性中心中分配电子数据展示权限。
     
@@ -82,7 +83,7 @@ ms.locfileid: "44411029"
 |Custodian <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |导出 <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|预览 <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Preview <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |审阅 <br/>  | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS 解密 <br/>  ||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
 |搜索和清除 <br/> | <br/> | <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
@@ -138,7 +139,7 @@ ms.locfileid: "44411029"
 
 - [在高级电子数据展示中创建保留](add-custodians-to-case.md#step-4-place-custodians-on-hold)
 
-### <a name="preview"></a>预览
+### <a name="preview"></a>Preview
 
 此角色允许用户查看从内容搜索返回的项目列表。 他们还可以打开并查看列表中的每个项目以查看其内容。
 

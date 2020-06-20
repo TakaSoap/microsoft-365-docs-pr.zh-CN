@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bcffe85011bad55a458f2359051fe659f5720c8b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066335"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773753"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融行业法规颁发机构（FINRA）规则4511（c）美国
 
@@ -47,11 +47,11 @@ Cohasset 验证了使用策略锁定选项的[Azure 不可变 Blob 存储](https
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-为了评估符合 FINRA Rule 4511 （c）的 Office 365 合规性，Microsoft 保留了一个主要独立法律事务所，专门从事法规问题、Covington & Burling、LLP。 在生成的报告中，Microsoft Office 365 中的存档、数据保留和规则17a-4 合规性中，Covington 验证[了 Office 365 的保留锁定](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)功能是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 FINRA 记录保留要求的方式存储数据。
+为了评估符合 FINRA Rule 4511 （c）的 Office 365 合规性，Microsoft 保留了一个主要独立法律事务所，专门从事法规问题、Covington & Burling、LLP。 在生成的报告中，Microsoft Office 365 中的存档、数据保留和规则17a-4 合规性中，Covington 验证[了 Office 365 的保留锁定](retention-policies.md)功能是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 FINRA 记录保留要求的方式存储数据。
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)

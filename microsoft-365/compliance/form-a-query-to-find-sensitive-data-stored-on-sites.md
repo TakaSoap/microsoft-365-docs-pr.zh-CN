@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 使用 SharePoint Online 中的数据丢失防护（DLP），您可以发现在整个租户中包含敏感数据的文档。 在发现文档之后，可以使用文档所有者来保护数据。 本主题可帮助您形成查询以搜索敏感数据。
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: 使用 SharePoint Online 中的数据丢失防护（DLP）发现包含整个租户中的敏感数据的文档。
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327910"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817701"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>创建查询以查找存储在站点上的敏感数据
 
@@ -33,7 +33,7 @@ ms.locfileid: "44327910"
   
 ## <a name="forming-a-basic-dlp-query"></a>创建一个基本的 DLP 查询
 
-基本的 DLP 查询包括三个部分：SensitiveType、计数范围和置信区间。 如下图所示， **SensitiveType： " \< type \> "** 是必需的，并且** | \< 计数范围 \> **和** | \< 可信度 \> 范围**都是可选的。 
+基本的 DLP 查询包括三个部分：SensitiveType、计数范围和置信区间。 如下图所示， **SensitiveType： " \<type\> "** 是必需的，两者 **|\<count range\>** 和 **|\<confidence range\>** 都是可选的。 
   
 ![示例查询分为必需和可选两种](../media/DLP-query-example-text.png)
   
@@ -86,9 +86,9 @@ SharePoint 中的 DLP 还引入了 LastSensitiveContentScan 属性，此属性�
 | `SensitiveType:"Credit Card Number| |1..|80.."` <br/> |管道分隔符过多（|). 请改为遵循以下格式：`SensitiveType: "Credit Card Number|1..|80.."` <br/> |
 | `SensitiveType:"Credit Card Number|1..|80..101"` <br/> |因为可信度值表示百分比，所以它们不能超过100。 请选择 1 至 100 之间的数值。  <br/> |
    
-## <a name="for-more-information"></a>有关详细信息，请参阅以下内容：
+## <a name="for-more-information"></a>详细信息
 
-- [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [运行内容搜索](content-search.md)
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
   

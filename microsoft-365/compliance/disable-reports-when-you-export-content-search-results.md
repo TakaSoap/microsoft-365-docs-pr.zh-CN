@@ -14,17 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 在您的本地计算机上编辑 Windows 注册表，以便在从 Office 365 中的安全性 & 合规性中心导出内容搜索结果时禁用报告。 禁用这些报告可加快下载时间并节省磁盘空间。
-ms.openlocfilehash: 89ea5e073a2c33d5f04fe3eef74b5b26510eef2f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 在您的本地计算机上编辑 Windows 注册表，以便在从安全 & 合规中心导出内容搜索结果时禁用报告。
+ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943005"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817851"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>导出内容搜索结果时禁用报告
 
-当您使用电子数据展示导出工具导出安全性 & 合规性中心中的内容搜索结果时，该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是结果 .csv 文件和 Manifest .xml 文件（有关这些报告的详细说明，请参阅本主题中[有关禁用导出报告](#frequently-asked-questions-about-disabling-export-reports)部分的常见问题）。 由于这些文件可能非常大，因此可以通过防止导出这些文件，加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告，可以编辑注册表设置。 
+当您使用电子数据展示导出工具导出安全性 & 合规性中心中的内容搜索结果时，该工具会自动创建和导出包含有关导出内容的其他信息的两个报告。 这些报告是 Results.csv 文件和 Manifest.xml 文件（有关详细说明，请参阅本主题中[有关禁用 "导出报告](#frequently-asked-questions-about-disabling-export-reports)" 一节的常见问题）。 由于这些文件可能非常大，因此可以通过防止导出这些文件，加快下载时间并节省磁盘空间。 您可以通过更改用于导出搜索结果的计算机上的 Windows 注册表来执行此操作。 如果您想要在以后包含这些报告，可以编辑注册表设置。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>创建注册表设置以禁用导出报告
 
@@ -34,7 +36,7 @@ ms.locfileid: "43943005"
     
 2. 执行下列一项或两项操作，具体取决于要禁用的导出报告。
     
-    - **结果 .csv**
+    - **Results.csv**
     
       使用文件名后缀 .reg 将以下文本保存到 Windows 注册表文件中;例如，DisableResultsCsv。
     
@@ -43,7 +45,7 @@ ms.locfileid: "43943005"
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **清单 .xml**
+    - **Manifest.xml**
     
       使用文件名后缀 .reg 将以下文本保存到 Windows 注册表文件中;例如，DisableManifestXml。
     
@@ -62,24 +64,24 @@ ms.locfileid: "43943005"
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>编辑注册表设置以重新启用导出报告
 
-如果通过在上一过程中创建 .reg 文件禁用了结果. .csv 和 .Manifest 报告，则可以编辑这些文件以重新启用报告，以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
+如果您禁用了 Results.csv 并通过在上一过程中创建 .reg 文件 Manifest.xml 报告，则您可以编辑这些文件以重新启用报告，以便将其导出到搜索结果中。 再次在将用于将结果导出到内容搜索的计算机上执行以下过程。
   
 1. 如果电子数据展示导出工具处于打开状态，则将其关闭。
     
 2. 编辑您在上一过程中创建的 .reg 编辑文件中的一个或两个。
     
-    - **结果 .csv**
+    - **Results.csv**
     
-        在记事本中打开 DisableResultsCsv 文件，将值`False`更改为`True`，然后保存文件。 例如，在编辑文件后，其外观如下所示：
+        在记事本中打开 DisableResultsCsv 文件，将值更改 `False` 为，然后 `True` 保存文件。 例如，在编辑文件后，其外观如下所示：
     
         ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **清单 .xml**
+    - **Manifest.xml**
     
-        在记事本中打开 DisableManifestXml 文件，将值`False`更改为`True`，然后保存文件。 例如，在编辑文件后，其外观如下所示：
+        在记事本中打开 DisableManifestXml 文件，将值更改 `False` 为，然后 `True` 保存文件。 例如，在编辑文件后，其外观如下所示：
     
       ```text
       Windows Registry Editor Version 5.00
@@ -96,11 +98,11 @@ ms.locfileid: "43943005"
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>有关禁用导出报告的常见问题
 
- **什么是结果 .csv 和清单 .xml 报告？**
+ **Results.csv 和 Manifest.xml 报告是什么？**
   
-结果 .csv 和清单 .xml 文件包含有关导出的内容的其他信息。
+Results.csv 和 Manifest.xml 文件包含有关导出的内容的其他信息。
   
-- **结果 .csv**包含作为搜索结果下载的每个项目的相关信息的 Excel 文档。 对于电子邮件，结果日志包含有关每封邮件的信息，其中包括： 
+- **Results.csv**包含作为搜索结果下载的每个项目的相关信息的 Excel 文档。 对于电子邮件，结果日志包含有关每封邮件的信息，其中包括： 
     
   - 邮件在源邮箱中的位置（包括邮件位于主邮箱还是存档邮箱）。
     
@@ -122,7 +124,7 @@ ms.locfileid: "43943005"
     
   - 文档的名称（位于结果日志中的主题列）。
     
-- **.Manifest**一个清单文件（xml 格式），包含搜索结果中包含的每个项目的相关信息。 此报告中的信息与 "结果 .csv" 报告相同，但其格式为 "电子发现参考模型（EDRM）" 指定的格式。 有关 EDRM 的详细信息，请转[https://www.edrm.net](https://www.edrm.net)到。
+- **Manifest.xml**包含搜索结果中包含的每个项目的相关信息的清单文件（XML 格式）。 此报告中的信息与 Results.csv 报告相同，但其格式为电子发现参考模型（EDRM）指定的格式。 有关 EDRM 的详细信息，请转到 [https://www.edrm.net](https://www.edrm.net) 。
     
  **何时应禁止导出这些报告？**
   

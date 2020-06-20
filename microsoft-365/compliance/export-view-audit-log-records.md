@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 将审核日志搜索的结果导出并下载到 CSV 文件后，可以在 Excel 的 Power Query 编辑器中使用 JSON 转换功能，将 AuditData 列中的 JSON 对象中的每个属性拆分为自己的列。 这可以帮助您快速找到要查找的特定审核数据。 您还可以使用 PowerShell 搜索和导出审核日志记录。
-ms.openlocfilehash: 763a20a7da09007e54c0714b82b86ffe3586e501
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom: seo-marvel-apr2020
+description: 在本文中，您将了解如何导出、配置和查看 Microsoft 365 审核日志记录。
+ms.openlocfilehash: 833d42ee37722092bddf14d0ef3418fac1ab03bb
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352382"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817741"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>导出、配置和查看审核日志记录
 
@@ -116,7 +117,7 @@ $auditlog | Select-Object -Property CreationDate,UserIds,RecordType,AuditData | 
 
 您还可以将记录类型的名称或枚举值用作*RecordType*参数的值。 有关记录类型名称及其相应的枚举值的列表，请参阅[Office 365 管理活动 API 架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#enum-auditlogrecordtype---type-edmint32)中的*AuditLogRecordType*表。
 
-您只能包含*RecordType*参数的单个值。 若要搜索其他记录类型的审核记录，您必须再次运行前面的两个命令以指定不同的记录类型，并将这些结果追加到原始 CSV 文件中。 例如，您可以运行以下两个命令，将 SharePoint 文件活动从同一日期范围添加到 PowerShellAuditlog 文件中。
+您只能包含*RecordType*参数的单个值。 若要搜索其他记录类型的审核记录，您必须再次运行前面的两个命令以指定不同的记录类型，并将这些结果追加到原始 CSV 文件中。 例如，您可以运行以下两个命令，将 SharePoint 文件活动从同一日期范围添加到 PowerShellAuditlog.csv 文件中。
 
 ```powershell
 $auditlog = Search-UnifiedAuditLog -StartDate 06/01/2019 -EndDate 06/30/2019 -RecordType SharePointFileOperation

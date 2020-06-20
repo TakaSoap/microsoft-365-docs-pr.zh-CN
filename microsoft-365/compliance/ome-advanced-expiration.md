@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 使用 office 365 高级邮件加密功能在 Office 365 邮件加密（OME）上，您可以通过自定义品牌化模板来设置电子邮件的过期日期，从而扩展电子邮件的安全性。
+description: 使用 Office 365 高级邮件加密通过自定义品牌化模板设置电子邮件的过期日期来扩展电子邮件的安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f555e707cb377033c3bf643785e18b9203be0560
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036055"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818685"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 

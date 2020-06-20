@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Microsoft 365 高级电子数据展示中支持的文件类型列表。 这包括高级电子数据展示中的 OCR 功能支持的图像文件类型的列表。
-ms.openlocfilehash: 562b39664dd29ff3cf738e0d3ded7cc2f0cbb21c
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+description: Microsoft 365 高级电子数据展示中支持的文件类型列表，包括高级电子数据展示中的 OCR 功能支持的图像文件类型。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42634630"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819152"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
@@ -130,7 +131,7 @@ ms.locfileid: "42634630"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 必需 | mpp |
+| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 可访问 | mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
@@ -154,7 +155,7 @@ ms.locfileid: "42634630"
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
 | application/msword | 是 | 是 | 是 | 是 | 是 | .dat; .doc |
 | 应用程序/rtf | 是 | 是 | 是 | 是 | 是 | .doc; .rtf |
-| ms-word 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | .docm |
+| application/vnd.ms-word.document macroenabled | 是 | 是 | 是 | 是 | 是 | .docm |
 | ms-word 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | normal.dotm |
 | application/vnd.openxmlformats-officedocument.wordprocessingml.document | 是 | 是 | 是 | 是 | 是 | .docx |
 | openxmlformats-officedocument 的应用程序/vnd.ms-excel | 是 | 是 | 是 | 是 | 是 | 。 .dotx |

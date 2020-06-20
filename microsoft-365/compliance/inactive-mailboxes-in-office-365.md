@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: 了解如何通过将邮箱转变成非活动邮箱来保留以前员工的邮箱内容。 为此，可以将邮箱置于诉讼保留状态，或将 Microsoft 365 保留策略应用于邮箱，然后删除相应的 Microsoft 365 帐户。
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何通过将邮箱转变成非活动邮箱来保留以前员工的邮箱内容。
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679046"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817571"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非活动邮箱概述
 

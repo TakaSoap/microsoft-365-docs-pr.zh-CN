@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何使用高级电子数据展示中的内置保管人管理工具来协调工作流，并在某个情况下确定相关的数据源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034686"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818609"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例中添加保管人
 
@@ -32,7 +32,7 @@ ms.locfileid: "44034686"
 
 ![保管人管理选项卡](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="make-sure-you-have-the-necessary-permissions"></a>确保拥有必要的权限
 
 若要将保管人添加到案例，您必须是电子数据展示管理器角色组的成员。 这将为您提供将保管人添加到事例的必要权限，并在 custodial 数据源上放置保留。
 

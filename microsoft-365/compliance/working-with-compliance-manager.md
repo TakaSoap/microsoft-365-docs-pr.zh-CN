@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合规性管理器是基于工作流的免费风险评估工具。 使用它来跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何使用合规性管理器跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790659"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817079"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -149,7 +151,7 @@ ms.locfileid: "43790659"
 
 维度是提供有关模板、评估或措施项的信息的元数据的集合。 维度使用键和值的概念，其中维度键表示属性，维度值表示属性的有效值。 例如，在合规性管理器中有三种类型的操作。 它们由**操作目的**的维度键和**预防**、**侦探**和**纠正**的维度值定义。
 
-### <a name="owners"></a>所有者
+### <a name="owners"></a>Owners
 
 所有者用于标识负责每个控件的人员。 所有内置控件由 Microsoft、客户或这两者拥有。 您可以创建可用于在组织中指定更精确的职责的所有者的自定义值。 例如，可以创建代表组织中的特定组、团队或业务单位的所有者。
 

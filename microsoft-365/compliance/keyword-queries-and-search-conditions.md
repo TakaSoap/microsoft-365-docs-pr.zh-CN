@@ -19,13 +19,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: '了解可以使用安全 & 合规中心中的内容搜索工具在 Exchange Online 邮箱和 SharePoint 或 OneDrive for Business 网站中搜索的电子邮件和文件属性。  '
-ms.openlocfilehash: eb733d17b4d14d56bec3fc475735921d72e8ce27
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.custom:
+- seo-marvel-apr2020
+description: 了解可以在 Office 365 安全 & 合规中心中搜索的电子邮件和文件属性。
+ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224493"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817511"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -52,20 +54,20 @@ ms.locfileid: "44224493"
   
 |**属性**|**属性描述**|**示例**|**示例返回的搜索结果**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames： .pptx|含有名称为 annualreport.ppt 的附件的邮件。 在第二个示例中，使用通配符返回附件名中带有单词"annual"的邮件。 第三个示例返回具有 .pptx 文件扩展名的所有附件。|
+|AttachmentNames|电子邮件附件的文件名。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|含有名称为 annualreport.ppt 的附件的邮件。 在第二个示例中，使用通配符返回附件名中带有单词"annual"的邮件。 第三个示例返回具有 .pptx 文件扩展名的所有附件。|
 |Bcc|电子邮件的 "密件抄送" 字段。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有示例都返回"密件抄送"字段中包含"Pilar Pinilla"的邮件。|
 |Category| 搜索类别。 用户可以使用 Outlook 或 web 上的 Outlook （以前称为 Outlook Web App）定义类别。 可能的值是：  <br/><br/>  蓝色  <br/>  绿色  <br/>  橙色  <br/>  紫色  <br/>  红色  <br/>  黄色|`category:"Red Category"`|在源邮箱中已指定红色类别的邮件。|
 |抄送|电子邮件的 "抄送" 字段。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在这两个示例中，在 "抄送" 字段中指定了包含 Pilar Pinilla 的邮件。|
 |Folderid|特定邮箱文件夹的文件夹 ID （GUID）。 如果使用此属性，请务必搜索指定文件夹所在的邮箱。 将仅搜索指定的文件夹。 不会搜索文件夹中的所有子文件夹。 若要搜索子文件夹，您需要使用要搜索的子文件夹的 Folderid 属性。  <br/> 有关搜索 Folderid 属性和使用脚本获取特定邮箱的文件夹 Id 的详细信息，请参阅[使用目标集合的内容搜索](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一个示例返回指定邮箱文件夹中的所有项目。 第二个示例返回指定邮箱文件夹中由 garthf@contoso.com 发送或接收的所有项目。|
 |发件人|电子邮件的发件人。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|由指定用户或指定域发送的邮件。|
 |HasAttachment|指示邮件是否包含附件。 使用值**true**或**false**。|`from:pilar@contoso.com AND hasattachment:true`|由指定用户发送的包含附件的邮件。|
-|Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|将重要性标记为高、中等或低的邮件。|
+|Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|将重要性标记为高、中等或低的邮件。|
 |IsRead|指示是否已读取邮件。 使用值**true**或**false**。|`isread:true`  <br/> `isread:false`|第一个示例返回 IsRead 属性设置为**True**的邮件。 第二个示例返回 IsRead 属性设置为**False**的邮件。|
 |ItemClass|使用此属性可搜索组织导入到 Office 365 中的特定第三方数据类型。 对此属性使用以下语法：`itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一个示例返回在 Subject 属性中包含 "contoso" 一词的 Facebook 项目。 第二个示例返回由王小姐 Beebe 发布且包含关键字短语 "罗斯文商贸" 的 Twitter 项目。  <br/> 有关 ItemClass 属性的第三方数据类型要使用的值的完整列表，请参阅[使用内容搜索来搜索导入到 Office 365 的第三方数据](use-content-search-to-search-third-party-data-that-was-imported.md)。|
 |Kind| 要搜索的电子邮件的类型。 可能的值：  <br/>  联系人  <br/>  文档  <br/>  电子邮件  <br/>  externaldata  <br/>  传真  <br/>  即时消息  <br/>  日志  <br/>  会议  <br/>  microsoftteams （返回 Microsoft 团队中的聊天、会议和呼叫中的项目）  <br/>  注释  <br/>  公告  <br/>  RSS 源  <br/>  任务  <br/>  语音邮件|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一个示例返回满足搜索条件的电子邮件。 第二个示例返回电子邮件、即时消息对话（包括 Microsoft 团队中的 Skype for Business 对话和聊天）以及符合搜索条件的语音邮件。 第三个示例返回从 Microsoft 365 中的邮箱导入的项目，这些项目是符合搜索条件的第三方数据源（如 Twitter、Facebook 和 Cisco Jabber）中的邮箱。 有关详细信息，请参阅[在 Office 365 中存档第三方数据](https://www.microsoft.com/?ref=go)。|
-|Participants|电子邮件中的所有人员字段。 这些字段分别为 "发件人"、"收件人" 和 "密件抄送"。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|发送自/到 garthf@contoso.com 的邮件。第二个示例返回 contoso.com 域中的用户发送的所有邮件或发送至 contoso.com 域中的用户的所有邮件。|
+|Participants|电子邮件中的所有人员字段。 这些字段分别为 "发件人"、"收件人" 和 "密件抄送"。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.|
 |Received|收件人接收电子邮件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的邮件。 第二个示例返回在2016年1月1日到2016年3月31日之间收到的所有邮件。|
-|Recipients|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|发送到 garthf@contoso.com 的邮件。第二个示例返回发送至 contoso.com 域中任何收件人的邮件。|
+|收件人|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
 |Sent|发件人发送电子邮件的日期。|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|在指定日期或指定日期范围内发送的邮件。|
 |Size|邮件的大小（以字节为单位）。|`size>26214400`  <br/> `size:1..1048567`|大于25的邮件？？10mb. 第二个示例返回大小介于 1 到 1,048,567 (1 MB) 字节之间的邮件。|
 |Subject|电子邮件主题行中的文本。  <br/> **注意：** 在查询中使用 Subject 属性时，搜索将返回主题行中包含您要搜索的文本的所有邮件。 换言之，查询不会仅返回那些具有完全匹配的邮件。 例如，如果您搜索，则 `subject:"Quarterly Financials"` 结果将包含主题为 "季度财务 2018" 的邮件。|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|在主题行文本中的任意位置包含短语 "季度财务" 的邮件。 第二个示例返回主题行中包含单词"northwind"的所有邮件。|
@@ -90,14 +92,14 @@ ms.locfileid: "44224493"
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
 |DocumentLink|SharePoint 或 OneDrive for business 网站上特定文件夹的路径（URL）。 如果使用此属性，请务必搜索指定文件夹所在的网站。  <br/> 若要返回在为 documentlink 属性指定的文件夹的子文件夹中的项目，您必须将/添加 \* 到指定文件夹的 URL; 例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上的文件夹的 documentlink Url 的详细信息，请参阅[使用目标集合的内容搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for Business 文件夹中的所有项目。 第二个示例在指定的网站文件夹（和所有子文件夹）中返回文件名中包含单词 "保密信息" 的文档。|
 |文件扩展名|文件的扩展名;例如，.docx、one、.pptx 或 .xlsx。|`fileextension:xlsx`|所有 Excel 文件（Excel 2007 及更高版本）|
-|FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一个示例返回标题中具有完全匹配短语“marketing plan”的文件。第二个示例返回文件名中具有单词“estimate”的文件。|
+|FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
 |LastModifiedTime|项目的上次更改日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在2016年5月1日或之后更改的项。 第二个示例返回在5月1日、2016和6月1日之间更改的项目2016。|
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
 |Path|SharePoint 或 OneDrive for Business 网站中特定网站的路径（URL）。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须将/添加 \* 到指定网站的 URL; 例如，`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该 `Path` 属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站（和网站中的文件夹）中的文档，其中包含文件名中的 "保密" 一词。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 "**与我共享**" 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅[搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 "**与我共享**" 页上的内部文档。|
-|站点|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
-|Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
-|标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
+|Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
+|Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|The first example returns items larger than 1 byte. The second example returns items from 1 through 10,000 bytes in size.|
+|Title|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
    
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
@@ -125,8 +127,8 @@ ms.locfileid: "44224493"
 |Nickname|**昵称**属性中的名称。|
 |OfficeLocation|**Office**或**office location**属性中的值。|
 |OtherAddress|**其他**地址属性的值。|
-|姓氏|" **Last** name" 属性中的名称。|
-|标题|"**职务" 属性中**的标题。|
+|Surname|" **Last** name" 属性中的名称。|
+|Title|"**职务" 属性中**的标题。|
 |||||
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
@@ -154,14 +156,14 @@ ms.locfileid: "44224493"
 |NEAR|keyword1 NEAR(n) keyword2|返回包含邻近字词的项目，其中 n 表示间隔的字词数量。 例如， `best NEAR(5) worst` 返回任何一个 "最差" 为 "最佳" 的五个字中的项。 如果您没有指定数目，则默认距离是 8 个字词。 <sup>双面</sup>|
 |:|property:value|冒号（:)在语法中， `property:value` 指定要搜索的属性的值包含指定的值。 例如，  `recipients:garthf@contoso.com` 返回发送至 garthf@contoso.com 的所有邮件。|
 |=|property=value|与 **：** 运算符相同。|
-|\<|property\<value|表示正在搜索的属性小于指定的值。<sup>1</sup>|
+|\<|property\<value|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
 |\>|property\>value|表示正在搜索的属性大于指定的值。<sup>1</sup>|
 |\<=|property\<=value|表示正在搜索的属性小于等于指定的值。<sup>1</sup>|
 |\>=|property\>=value|表示正在搜索的属性大于等于指定的值。<sup>1</sup>|
 |..|属性： value1。value2|表示正在搜索的属性大于等于 value1，小于等于 value2。<sup>1</sup>|
 |"  "|"fair value"  <br/> subject:"Quarterly Financials"|使用双引号（""）搜索关键字和搜索查询中的确切短语或字词 `property:value` 。|
 |\*|cat\*  <br/> subject:set\*|前缀通配符（其中星号放在单词的末尾）用于在关键字或  `property:value` 查询中搜索零个或多个匹配字符。 例如， `title:set*` 返回文档标题中包含 word set、setup 和 setting （以及以 "set" 开头的其他单词）的文档。  <br/><br/> **注意：** 只能使用前缀通配符搜索;例如， **cat \* **或**set \* **。 后缀搜索（** \* cat** ）、中缀搜索（**c \* t**）和子字符串搜索（** \* cat \* **）不受支持。|
-|(  )| (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|括号将布尔短语、 `property:value` 项目和关键字结合到一起。例如，  `(quarterly financials)` 返回包含单词"quarterly"和"financials"的项目。  |
+|(  )| (fair OR free) AND (from:contoso.com)  <br/> (IPO OR initial) AND (stock OR shares)  <br/> (quarterly financials)|Parentheses group together Boolean phrases,  `property:value` items, and keywords. For example,  `(quarterly financials)` returns items that contain the words quarterly and financials.|
 |||||
    
 > [!NOTE]
@@ -206,8 +208,8 @@ ms.locfileid: "44224493"
 |Participants|电子邮件中的所有人员字段。 这些字段分别为 "收件人"、"收件人" 和 "密件抄送"。|
 |类型|电子邮件项目的邮件类属性。 这是 ItemClass 电子邮件属性的相同属性。 它也是一个多值条件。 因此，若要选择多个邮件类，请按住**CTRL**键，然后在下拉列表中单击要添加到条件的两个或多个邮件类。 在列表中选择的每个邮件类别将在相应的搜索查询中通过**OR**运算符逻辑连接。  <br/> 有关 Exchange 使用的邮件类别（及其相应的邮件类 ID）的列表，可以在**邮件类**列表中选择，请参阅[项目类型和邮件类](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |Received|收件人接收电子邮件的日期。 此属性与“Received”电子邮件属性相同。|
-|Recipients|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。|
-|发件人|电子邮件的发件人。|
+|收件人|电子邮件中的所有收件人字段。 这些字段分别为 "收件人"、"抄送" 和 "密件抄送"。|
+|Sender|电子邮件的发件人。|
 |Sent|发件人发送电子邮件的日期。 此属性与“Sent”电子邮件属性相同。|
 |Subject|电子邮件主题行中的文本。|
 |To|"收件人" 字段中的电子邮件的收件人。|
@@ -220,7 +222,7 @@ ms.locfileid: "44224493"
 |**条件**|**说明**|
 |:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其发送给其他人，然后再将其上载到 SharePoint，则该文档仍将保留原作者。|
-|标题|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。|
+|Title|文档的标题。 Title 属性是 Office 文档中指定的元数据。 它与文档的文件名不同。|
 |已创建|创建文档的日期。|
 |上次修改时间|上次修改文档的日期。|
 |文件类型|文件的扩展名;例如，.docx、one、.pptx 或 .xlsx。 此属性与 FileExtension 网站属性相同。|
@@ -228,18 +230,18 @@ ms.locfileid: "44224493"
   
 ### <a name="operators-used-with-conditions"></a>与条件一起使用的运算符
 
-当您添加一个条件时，您可以选择与该条件的属性类型相关的运算符。下表描述了与条件一起使用的运算符，并列出了在搜索查询中使用的等效项。
+When you add a condition, you can select an operator that is relevant to type of property for the condition. The following table describes the operators that are used with conditions and lists the equivalent that is used in the search query.
   
 |**Operator**|**查询等效项**|**说明**|
 |:-----|:-----|:-----|
-|段后|`property>date`|使用日期条件。返回在指定日期后发送、接收或修改的项。 |
-|Before|`property<date`|使用日期条件。返回在指定日期前发送、接收或修改的项。|
+|段后|`property>date`|Used with date conditions. Returns items that were sent, received, or modified after the specified date.|
+|Before|`property<date`|Used with date conditions. Returns items that were sent, received, or modified before the specified date.|
 |行间|`date..date`|使用日期和大小条件。 当使用日期条件时，返回在指定的日期范围内发送、接收或修改的项。 当使用大小条件时，返回大小在指定范围内的项。|
 |包含任意|`(property:value) OR (property:value)`|与指定字符串值的属性条件一起使用。 返回包含一个或多个指定字符串值任何部分的项目。|
 |不包含任何|`-property:value`  <br/> `NOT property:value`|与指定字符串值的属性条件一起使用。 返回不包含指定字符串值任何部分的项目。|
-|不等于任何|`-property=value`  <br/> `NOT property=value`|与指定字符串值的属性条件一起使用。返回不包含特定字符串的项目。|
+|不等于任何|`-property=value`  <br/> `NOT property=value`|Used with conditions for properties that specify a string value. Returns items that don't contain the specific string.|
 |等于|`size=value`|返回与指定大小相等的项。<sup>1</sup>|
-|等于任何|`(property=value) OR (property=value)`|与指定字符串值的属性条件一起使用。返回完全匹配一个或多个指定字符串值的项目。|
+|等于任何|`(property=value) OR (property=value)`|Used with conditions for properties that specify a string value. Returns items that are an exact match of one or more specified string values.|
 |多于|`size>value`|返回指定属性大于指定值的项。<sup>1</sup>|
 |大于或等于|`size>=value`|返回指定属性大于或等于指定值的项。<sup>1</sup>|
 |小于|`size<value`|返回大于或等于特定值的项。<sup>1</sup>|
@@ -275,7 +277,7 @@ ms.locfileid: "44224493"
     ![同一属性的多个搜索条件](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
-> 如果条件接受多个值，则建议您使用一个条件，并指定多个值（用逗号或分号分隔）。这有助于确保所应用的查询逻辑就是您想要的。 
+> If a condition accepts multiple values, we recommend that you use a single condition and specify multiple values (separated by commas or semi-colons). This helps ensure the query logic that's applied is what you intend. 
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>示例
 
@@ -299,7 +301,7 @@ ms.locfileid: "44224493"
   
 #### <a name="example-2"></a>示例 2
 
-本示例返回包含关键字“report”且在 2105 年 4 月 1 日之前发送或创建的电子邮件项目或文档，且电子邮件的主题字段或文档的标题属性中包含词语“northwind”。查询不包括符合其他搜索条件的网页。 
+This example returns email items or documents that contain the keyword "report", that were sent or created before April 1, 2105, and that contain the word "northwind" in the subject field of email messages or in the title property of documents. The query excludes Web pages that meet the other search criteria.
   
  **GUI**
   
@@ -414,7 +416,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 - 使用与格式相匹配的语法 `property:value` 。 值不区分大小写，并且它们不可以在运算符后留有空格。 如果有空格，则您的预期值将是全文本搜索。 例如 `to: pilarp` ，搜索 "pilarp" 作为关键字，而不是发送到 pilarp 的邮件。 
 
-- 在搜索收件人属性（如 To、From、Cc 或 Recipients）时，您可以使用 SMTP 地址、别名或显示名来表示收件人。例如，您可以使用 pilarp@contoso.com、pilarp 或"Pilar Pinilla"。
+- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
 
 - 只能使用前缀通配符搜索;例如， **cat \* **或**set \* **。 后缀搜索（** \* cat**）、中缀搜索（**c \* t**）和子字符串搜索（** \* cat \* **）不受支持。
 

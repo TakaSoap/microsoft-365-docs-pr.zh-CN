@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: '了解高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
-ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '了解 Microsoft 365 高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。 '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630569"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817901"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>基于高级电子数据展示中的结果的决策（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
  在高级电子数据展示中，"决定" 选项卡提供了其他信息，用于查看和使用决策支持统计信息来确定审阅事例文件集的大小。 
   
@@ -53,7 +54,7 @@ ms.locfileid: "43630569"
     
 展开的详细信息窗格将显示其他详细信息。 集合中的文件不包含空或 nebulous 文件。 "系列文件" 图表示未在相关性中加载但仍作为系列一部分计数的文件。
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)
   

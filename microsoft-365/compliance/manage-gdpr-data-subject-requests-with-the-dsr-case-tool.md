@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: GDPR 向欧盟公民（称为 "数据主体"）授予对其个人数据的特定权限;这些权限包括获取副本、请求对其进行更改、限制处理、删除或以电子格式接收。 通过数据主体对其个人数据执行操作的正式请求称为 "数据" 主题请求或 "DSR"。 您可以使用 Office 365 和 Microsoft 365 中的合规性中心中的 DSR 案例来管理您的组织的 DSR 调查。
+description: 了解如何使用 DSR 机箱工具管理欧盟常规数据保护法规（GDPR）数据主体请求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035866"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815449"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -88,9 +88,9 @@ EU 常规数据保护条例（GDPR）是关于保护和启用欧盟（EU）内�
 
 下一步是创建 DSR 事例。 创建事例时，可以选择启动内置搜索，也可以在不启动搜索的情况下创建事例。 下面的过程指示创建用例而不启动搜索，然后向您演示如何向事例中添加成员。
   
-1. 转到[https://protection.office.com](https://protection.office.com)并使用你的工作或学校帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com) 并使用你的工作或学校帐户登录。 
     
-2. 在安全 & 合规性中心中，单击 "**数据隐私** \> **数据主体请求**"， ![然后单击](../media/ITPro-EAC-AddIcon.gif) "添加图标" "**新建 DSR 事例**"。
+2. 在安全 & 合规性中心中，单击 "**数据隐私** \> **数据主体请求**"，然后单击 " ![ 添加图标" " ](../media/ITPro-EAC-AddIcon.gif) **新建 DSR 事例**"。
     
 3. 在 "**新建 DSR 事例**" 弹出页面上，为事例指定名称，键入可选说明，然后单击 "**下一步**"。 事例名称在你的组织中必须保持唯一。
     
@@ -196,7 +196,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 2. 单击页面顶部的 "**搜索**" 选项卡，然后单击创建 DSR 事例时创建的内置搜索旁边的复选框。 或单击其他搜索以从该搜索中导出数据。 
     
-3. 在 "搜索" 飞出页面![上，单击 "](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
+3. 在 "搜索" 飞出页面上，单击 " ![ 更多" "导出搜索结果 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**" 图标，然后从下拉列表中选择 "**导出结果**"。 
     
 4. 在 "**导出结果**" 页上，选择适用于 DSR 导出请求的以下推荐选项。 
     
@@ -206,7 +206,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     b. 在 "将**Exchange 内容导出为**" 下，选择第三个选项（**包含单个文件夹中的所有邮件的一个 PST 文件**）。 由于某些结果可能针对的是其他用户的邮箱中的项目，因此此选项仅在单个文件夹中列出项目，而不指示实际邮箱，并且是在下一项目中按推荐方式对结果进行重复复制时使用的最佳选项。 此选项还允许数据主体按时间顺序查看项目（按发送日期对项目进行排序），而无需导航到每个项目的原始邮箱文件夹结构。
     
-    c. 选择 "**启用重复数据**删除选项" 以排除重复的电子邮件。 我们建议您选择此选项，因为内置搜索将搜索组织中的所有邮箱。 因此，如果在搜索的邮箱中找到同一邮件的多个副本，则此选项意味着将只导出邮件的一个副本。 此选项一起将一个 PST 文件中的邮件导出到一个文件夹中，从而导致用户体验到 DSR 导出请求的最佳用户体验。 "结果 .csv 导出报告" 会列出找到重复邮件的所有位置。
+    c. 选择 "**启用重复数据**删除选项" 以排除重复的电子邮件。 我们建议您选择此选项，因为内置搜索将搜索组织中的所有邮箱。 因此，如果在搜索的邮箱中找到同一邮件的多个副本，则此选项意味着将只导出邮件的一个副本。 此选项一起将一个 PST 文件中的邮件导出到一个文件夹中，从而导致用户体验到 DSR 导出请求的最佳用户体验。 Results.csv 导出报告将列出找到重复邮件的所有位置。
     
     （可选）您可以选择 "**包括 sharepoint 文档的版本**" 选项以导出 Sharepoint 和 OneDrive 文档的所有版本。 这要求已为文档库启用版本控制。 此选项有助于确保导出所有相关数据。
     
@@ -220,7 +220,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 8. 在“**导出密钥**”下，单击“**复制到剪贴板**”。 您可以使用步骤11中的此项下载搜索结果。
     
-9. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
+9. 单击 ![ "导出弹出页面" 顶部的 "导出搜索结果图标 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **下载结果**"。 
     
 10. 在页面底部的弹出窗口中，单击 "**打开**" 以打开 "**电子数据展示导出工具**"。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     
@@ -243,11 +243,11 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 下面是可以添加到 DSR 机箱的内置搜索查询的一些条件示例。 在搜索查询中使用的实际属性的名称显示在括号中。
   
-- **文件类型（ `filetype`）** –指定文档或文件的扩展名。 使用此条件可搜索由特定 Office 应用程序（如 Word、Excel 和 OneNote）创建的文档和文件。 
+- **文件类型（ `filetype` ）** –指定文档或文件的扩展名。 使用此条件可搜索由特定 Office 应用程序（如 Word、Excel 和 OneNote）创建的文档和文件。 
     
-- **邮件类型（ `kind`）** –指定要搜索的电子邮件项目的类型。 例如，可以使用语法`kind:email OR kind:im`仅返回 Microsoft 团队中的电子邮件和 Skype for business 对话或一对一聊天。 
+- **邮件类型（ `kind` ）** –指定要搜索的电子邮件项目的类型。 例如，可以使用语法 `kind:email OR kind:im` 仅返回 Microsoft 团队中的电子邮件和 Skype For business 对话或一对一聊天。 
     
-- **合规性标记`compliancetag`（）** –指定分配给电子邮件或文档的标签。 此条件返回使用特定标签分类的项目。 标签用于根据标签定义的分类对电子邮件和文档进行分类，并强制执行保留规则。 这是用于 DSR 调查的有用条件，因为您的组织可能会使用标签对与数据隐私相关的内容或包含个人数据或敏感信息的内容进行分类。 对于此条件的值，请使用完整的标签名称或标签名称的第一部分和通配符。 有关详细信息，请参阅[Office 365 中的标签概述](labels.md)。
+- **合规性标记（ `compliancetag` ）** –指定分配给电子邮件或文档的标签。 此条件返回使用特定标签分类的项目。 标签用于根据标签定义的分类对电子邮件和文档进行分类，并强制执行保留规则。 这是用于 DSR 调查的有用条件，因为您的组织可能会使用标签对与数据隐私相关的内容或包含个人数据或敏感信息的内容进行分类。 对于此条件的值，请使用完整的标签名称或标签名称的第一部分和通配符。 有关详细信息，请参阅[Office 365 中的标签概述](labels.md)。
     
 有关在 DSR 机箱工具中可用的所有条件的列表和说明，请参阅 "内容搜索的关键字查询和搜索条件" 一文中的 "[搜索条件](keyword-queries-and-search-conditions.md#search-conditions)" 一文。 
   
@@ -273,7 +273,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     c. "Exchange 公用文件夹" 部分中的 "切换" 处于选中状态，这意味着将搜索所有 Exchange 公用文件夹。 只能搜索所有 Exchange 公用文件夹，也可以不搜索任何。 您不能选择要搜索的特定文件。
     
-3. 如果要修改内置搜索中的内容位置，请单击 "**保存&amp;运行**" 以重新启动搜索。 
+3. 如果要修改内置搜索中的内容位置，请单击 "**保存 &amp; 运行**" 以重新启动搜索。 
 
 > [!NOTE]
 > 当您搜索所有邮箱位置或仅搜索特定邮箱时，当您导出搜索结果时，将包括保存到用户邮箱的来自其他 Office 365 应用程序的数据。 此数据将不会包括在估计的搜索结果中，并且也不可用于预览。 但在导出和下载搜索结果时，会将其包括在内。 有关将数据存储在用户邮箱中的应用程序的详细信息，请参阅[存储在 Exchange Online 邮箱中的内容](what-is-stored-in-exo-mailbox.md)。
@@ -305,7 +305,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 1. 在 "安全性 & 合规性中心" 中，单击 "**数据隐私** \> **数据主体请求**"，然后单击要为其导出使用率数据的数据主体在 DSR 事例旁边的 "**打开**"。 
     
-2. 单击页面顶部的 "**搜索**" 选项卡，然后单击!["添加图标](../media/ITPro-EAC-AddIcon.gif) " "**导向搜索**"。
+2. 单击页面顶部的 "**搜索**" 选项卡，然后单击 " ![ 添加图标" " ](../media/ITPro-EAC-AddIcon.gif) **导向搜索**"。
     
 3. 在 "**命名您的搜索**" 页上，单击 "**取消**"。 
     
@@ -327,9 +327,9 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
  **若要导出 Office 漫游服务数据，请执行以下操作：**
   
-1. 在上一步中创建的搜索完成后，单击页面顶部的 "**搜索**" 选项卡，然后单击 "搜索" 旁边的复选框。 您可能需要单击 " ![刷新](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **刷新**" 以显示搜索。 
+1. 在上一步中创建的搜索完成后，单击页面顶部的 "**搜索**" 选项卡，然后单击 "搜索" 旁边的复选框。 您可能需要单击 " ![ 刷新 ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **刷新**" 以显示搜索。 
     
-2. 在 "搜索" 飞出页面![上，单击 "](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**" "导出搜索结果" 图标，然后从下拉列表中选择 "**导出结果**"。 
+2. 在 "搜索" 飞出页面上，单击 " ![ 更多" "导出搜索结果 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**" 图标，然后从下拉列表中选择 "**导出结果**"。 
     
 3. 在 "**导出结果**" 页上，选择用于导出使用率数据的推荐选项。 
     
@@ -351,7 +351,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 7. 在“**导出密钥**”下，单击“**复制到剪贴板**”。 您可以使用步骤10中的此键下载搜索结果。
     
-8. 单击!["导出弹出页面](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) " 顶部的 "导出搜索结果图标**下载结果**"。 
+8. 单击 ![ "导出弹出页面" 顶部的 "导出搜索结果图标 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **下载结果**"。 
     
 9. 在页面底部的弹出窗口中，单击 "**打开**" 以打开 "**电子数据展示导出工具**"。 首次下载搜索结果时，将会安装**电子数据展示导出工具**。 
     

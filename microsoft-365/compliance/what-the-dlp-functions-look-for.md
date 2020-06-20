@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 敏感信息类型查找特定模式，并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。
-ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: 了解数据丢失防护（DLP）函数的外观，以帮助您了解预定义的敏感信息类型的工作方式。
+ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327744"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819272"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
@@ -51,7 +53,7 @@ ms.locfileid: "44327744"
     
 接受的月份名称：
   
-- 英语
+- English
     
   - 一月份、二月、三月份、四月、六月、六月、七月、八月、九月、十月、十一月、十二月
     
@@ -79,7 +81,7 @@ ms.locfileid: "44327744"
     
 接受的月份名称：
   
-- 英语
+- English
     
   - 一月份、二月、三月份、四月、六月、六月、七月、八月、九月、十月、十一月、十二月
     
@@ -209,7 +211,7 @@ ms.locfileid: "44327744"
     
 接受的月份名称：
   
-- 英语
+- English
     
   - 一月份、二月、三月份、四月、六月、六月、七月、八月、九月、十月、十一月、十二月
     

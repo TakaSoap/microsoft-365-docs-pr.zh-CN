@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: 如果需要，您可以将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务（AD RMS），以满足您的组织的要求。 这并不常见。 如果您不需要使用 AD RMS，请改用 Office 邮件加密。
-ms.openlocfilehash: fa4d950ac52e48ac4fc554dff7e9fb800a8017d1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何将 Exchange Online IRM 配置为使用内部部署 Active Directory 权限管理服务（AD RMS）来满足您的组织要求。
+ms.openlocfilehash: be53b54328c2c1e08e51a84b7251e23c3e7468c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165983"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815439"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>带 AD RMS 的 Exchange Online 邮件加密
 

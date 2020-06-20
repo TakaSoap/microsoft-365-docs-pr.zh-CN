@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '了解如何配置用户角色、创建事例以及将用户分配给高级电子数据展示中的案例。  '
-ms.openlocfilehash: 386be1201b30e6b0e7a46c9de47dd6cf2fc4b53c
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412801"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819172"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置用户和案例（经典）
 
@@ -29,7 +30,7 @@ ms.locfileid: "44412801"
 > [!IMPORTANT]
 > 当我们继续对较新版本的高级电子数据展示进行投资时，我们将宣布停用高级电子数据展示（也称为*高级电子数据展示（经典）* 或*高级电子数据展示 v1.0*）。 如果仍在使用高级电子数据展示 v1.0，请尽快切换到[高级电子数据展示 v2.0](overview-ediscovery-20.md)（也称为 *Microsoft 365 中的高级电子数据展示解决方案*）。 高级电子数据展示 2.0 不仅包含高级电子数据展示 v1.0 中提供的类似功能，还提供了许多新功能，如保管人管理、沟通管理和审阅集。 若要了解停用高级电子数据展示 v1.0 的详细信息，请参阅[停用旧式电子数据展示工具](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。 
   
-## <a name="prerequisites"></a>必备条件
+## <a name="requirements-to-set-up-users-and-cases"></a>设置用户和案例的要求
 
 在高级电子数据展示中设置事例和用户之前，需要满足以下条件：
   

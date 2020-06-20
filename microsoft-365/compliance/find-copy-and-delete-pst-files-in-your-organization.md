@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。 查找 PST 文件后，可以使用 PST 集合工具将其复制到一个中心位置，以便可以将其导入 Office 365。
+description: 使用 Microsoft PST 收集工具搜索组织的网络，以获取分散在整个组织中的 PST 文件的清单。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d388eb9cfe0a894e5ae5eed89e5d4ed35a79a1fc
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 4f1ac7b0bfe30ec2d8a11b4882a29c064d22ef78
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224483"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817711"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>使用 PST 集合工具在您的组织中查找、复制和删除 PST 文件
 
@@ -54,9 +54,9 @@ ms.locfileid: "44224483"
     
     1. [下载 "PST 集合" 工具](https://aka.ms/pstcollectiontool)。
     
-    2. 在弹出窗口中，单击 "**保存** \> **另存为**"，将 PSTCollectionTool 文件保存到本地计算机上的文件夹中。 
+    2. 在弹出窗口中，单击 "**另**存 \> **为**" 以将 PSTCollectionTool.zip 文件保存到本地计算机上的文件夹中。 
     
-    3. 将 PSTCollectionTool 文件提取到本地计算机上的文件夹中;默认文件夹名称为 PSTCollectionTool。
+    3. 将 PSTCollectionTool.zip 文件提取到本地计算机上的文件夹中;默认文件夹名称为 PSTCollectionTool。
     
 - 若要在任何模式（查找、阻止、复制或删除）中运行 PST 集合工具，您必须是 Active Directory 域中的 Domain Administrators 组的成员。 
 
@@ -77,7 +77,7 @@ ms.locfileid: "44224483"
   
 1. 在您的本地计算机上打开命令提示符（以管理员身份运行）。
     
-2. 转到 PSTCollectionTool 文件夹（或您将 PSTCollectionTool 文件提取到的文件夹）。
+2. 转到 PSTCollectionTool 文件夹（或您提取的 PSTCollectionTool.zip 文件的文件夹）。
     
 3. 转到 DataCollectorMaster 目录。
     
@@ -87,7 +87,7 @@ ms.locfileid: "44224483"
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName <Name> -Locations <Locations to search for PSTs> -LogLocation <Location to store log files> -ConfigurationLocation <Location to store configuration files>
     ```
 
-    下表介绍了运行 DataCollectorMaster 命令查找 PST 文件时的参数及其所需的值。 
+    下表介绍了运行 DataCollectorMaster.exe 命令查找 PST 文件时的参数及其必需值。 
     
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
@@ -100,7 +100,7 @@ ms.locfileid: "44224483"
     | `ExcludedLocations` <br/> |此可选参数指定在查找操作过程中要跳过的位置。 您可以排除特定 Ou、计算机和网络文件共享。 例如，您可以排除计算机，如配置为 SQL server 的计算机（或其他类型的应用程序服务器），用户无法访问这些计算机。 如果指定要排除的一个或多个位置，请使用分号（;)分隔各个位置。 请务必用双引号（""）将此参数的各个值括起来。  <br/> | `-ExcludedLocations "SQLSERVER01.contoso.com"` <br/> |
     | `ForceRestart` <br/> |此可选开关允许您在 "查找" 模式下为现有的 PST 集合作业运行该工具。 使用此开关时 `ForceRestart` ，将丢弃作业的上一个查找操作的结果，并且该工具将重新扫描指定的位置并创建新的日志和配置文件。  <br/> | `-ForceRestart` <br/> |
    
-    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster 命令的语法：
+    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster.exe 命令的语法：
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Find -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -LogLocation "c:\users\admin\desktop\PSTCollection" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration"
@@ -108,18 +108,18 @@ ms.locfileid: "44224483"
 
     运行命令后，将显示详细的状态消息，显示在指定位置查找 PST 文件的进度。 一段时间后，最终状态邮件会显示找到的 PST 文件总数、作业是否已完成以及是否有任何错误。 将相同的状态邮件复制到 .log 文件。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>在 "查找" 模式下运行 DataCollectorMaster 的结果
+### <a name="results-of-running-datacollectormasterexe-in-the-find-mode"></a>在查找模式下运行 DataCollectorMaster.exe 的结果
 
 在成功运行 PST 集合工具的 "查找" 模式后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- ** \< JobName \> _Find_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
+- ** \<JobName\> _查找_ \<DateTimeStamp\> ** .log-日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- ** \< JobName \> _找到_ \< DateTimeStamp \> ** -CSV 文件中包含每个找到的 PST 文件对应的行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
+- ** \<JobName\> _查找_ \<DateTimeStamp\> .csv** -csv 文件包含每个找到的 PST 文件对应的行。 每个 PST 的信息包括找到 PST 文件的计算机、PST 文件的完整文件路径位置、PST 文件的所有者以及 PST 文件的大小（以 kb、Kb）。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
     > [!TIP]
     > 使用 Excel 中的 "自动求和" 工具计算 CSV 文件中列出的所有 PST 文件的总大小（以 KB 为单位）。 然后，可以使用转换计算器将总大小转换为兆字节（MB）或千兆字节（GB）。 
   
-- ** \< JobName \> _Find_ \< DateTimeStamp \> ** -xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 
+- ** \<JobName\> _Find_ \<DateTimeStamp\> ** -xml 文件包含在 "查找" 模式下运行该工具时使用的参数值的相关信息。 此文件还包含有关找到的每个 PST 文件的信息。 当您运行同一作业的工具以阻止、收集或删除找到的 PST 文件时，将使用此文件中的数据。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 
     
     > [!IMPORTANT]
     > 请勿重命名、更改或移动此文件。 当您在相同作业的阻止、复制或删除模式下重新运行该工具时，它将由 PST 收集工具使用。 
@@ -147,7 +147,7 @@ ms.locfileid: "44224483"
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -BlockChangesToFiles -BlockNewFiles
     ```
 
-    下表介绍了运行 DataCollectorMaster 命令以阻止创建和更改 PST 文件时所需的参数及其所需的值。 
+    下表介绍了在运行 DataCollectorMaster.exe 命令以阻止创建和更改 PST 文件时所需的参数及其所需的值。 
     
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
@@ -159,7 +159,7 @@ ms.locfileid: "44224483"
     | `BlockChangesToFiles` <br/> |使用此开关可阻止用户更改 PST 文件。 使用此开关时，将创建以下注册表项：并将 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\PST\PstDisableGrow` 数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockChangesToFiles` <br/> |
     | `BlockNewFiles` <br/> |使用此开关可阻止用户创建新的 PST 文件、打开和导入 PST 文件并将其导入 outlook，以及从 Outlook 导出 PST 文件。 使用此开关时，将创建以下注册表项：并将 `HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\<version>\Outlook\DisablePst` 数据值设置为1。 在您的组织中的计算机上创建此注册表设置，该 GPO 在您在阻止模式下运行 PST 集合工具时创建。  <br/> | `-BlockNewFiles` <br/> |
    
-    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster 命令的语法：
+    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster.exe 命令的语法：
 
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Block -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection" -BlockChangesToFiles -BlockNewFiles
@@ -184,7 +184,7 @@ ms.locfileid: "44224483"
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName <Name of job from Step 1> -Locations <same locations from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    下表介绍了运行 DataCollectorMaster 命令复制 PST 文件时所需的参数及其所需的值。 
+    下表介绍了运行 DataCollectorMaster.exe 命令复制 PST 文件时的参数及其必需值。 
     
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
@@ -197,7 +197,7 @@ ms.locfileid: "44224483"
     | `LogLocation` <br/> |指定要将收集模式的日志文件复制到的文件夹。 这是一个可选参数。 如果不包含此文件，则会将日志文件复制到您在其中下载 PST 集合工具的文件夹。 考虑在第1步中的 "查找" 模式下运行该工具时使用的相同日志位置，以便将所有日志文件保存在同一文件夹中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |此可选开关允许您在集合模式下为现有的 PST 集合作业重新运行该工具。 如果您以前在收集模式下运行该工具，但随后在查找模式下再次运行该工具 `ForceRestart` 以重新扫描 PST 文件的位置，则可以使用此开关在 "收集" 模式下重新运行该工具，并重新复制在重新扫描位置时找到的 PST 文件。 `ForceRestart`在收集模式下使用切换时，该工具将忽略任何以前的集合操作，并尝试从头开始复制 PST 文件。  <br/> | `-ForceRestart` <br/> |
    
-    下面的示例展示了 DataCollectorMaster 工具的语法，使用每个参数的实际值：
+    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster.exe 工具的语法：
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Collect -JobName PstSearch1 -Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com";"CN=FILESERVER02,CN=Computers,DC=contoso,DC=com" -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -CopyLocation "\\FILESERVER03\PSTs" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -205,18 +205,18 @@ ms.locfileid: "44224483"
 
     运行命令后，将显示详细的状态消息，显示收集在步骤1中找到的 PST 文件的进度。 一段时间后，最终状态消息将显示是否存在任何错误以及日志复制到的位置。 将相同的状态邮件复制到 .log 文件。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>在收集模式下运行 DataCollectorMaster 的结果
+### <a name="results-of-running-datacollectormasterexe-in-the-collect-mode"></a>在收集模式下运行 DataCollectorMaster.exe 的结果
 
-在收集模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
+在收集模式下成功运行 DataCollectorMaster.exe 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
+- ** \<JobName\> _Collect_ \<DateTimeStamp\> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- ** \< JobName \> _收集_ \< DateTimeStamp \> ** -xml 文件仅包含在收集模式下运行工具所使用的参数值的相关信息。 当您运行 DataCollectorMaster 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
+- ** \<JobName\> _Collect_ \<DateTimeStamp\> ** -xml 文件仅包含在收集模式下运行该工具所使用的参数值的相关信息。 当您运行 DataCollectorMaster.exe 工具以删除 PST 文件时，将使用此文件中的数据;请参阅[第5步](#step-5-delete-the-pst-files-found-on-your-network)。
     
 
 ## <a name="step-4-import-the-pst-files-to-office-365"></a>步骤4：将 PST 文件导入到 Office 365
 
-在您收集了在第1步中找到的 PST 文件之后，下一步是将其导入到 Office 365 中的邮箱。 作为部件或导入过程，您必须创建一个 CSV 映射文件，其中包含要导入的每个 PST 文件的行。 每行中的信息指定 PST 文件的名称、用户的电子邮件地址以及是否要将 PST 文件导入到用户的主邮箱或存档邮箱。 使用**JobName \> _Find_ \< DateTimeStamp**文件（在步骤中创建）1中的信息来帮助您创建 csv 映射文件。 
+在您收集了在第1步中找到的 PST 文件之后，下一步是将其导入到 Office 365 中的邮箱。 作为部件或导入过程，您必须创建一个 CSV 映射文件，其中包含要导入的每个 PST 文件的行。 每行中的信息指定 PST 文件的名称、用户的电子邮件地址以及是否要将 PST 文件导入到用户的主邮箱或存档邮箱。 使用**JobName \> _Find_ \<DateTimeStamp.csv**文件（在步骤中创建）1中的信息来帮助您创建 CSV 映射文件。 
   
 有关将 PST 文件导入到 Office 365 的分步说明，请参阅下列主题之一：
   
@@ -239,7 +239,7 @@ ms.locfileid: "44224483"
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName <Name of job from Step 1> -ConfigurationLocation <Location of configuration files from Step 1> -CopyLocation <Location to copy PST files to>
     ```
 
-    下表介绍了运行 DataCollectorMaster 命令删除 PST 文件时的参数及其所需的值。 
+    下表介绍了运行 DataCollectorMaster.exe 命令以删除 PST 文件时的参数及其所需的值。 
     
     |参数 * * * *|****说明****|示例 * * * *|
     |:-----|:-----|:-----|
@@ -250,7 +250,7 @@ ms.locfileid: "44224483"
     | `LogLocation` <br/> |指定要将删除模式的日志文件复制到的文件夹。 这是一个可选参数。 如果不包含此文件，则会将日志文件复制到您在其中下载 PST 集合工具的文件夹。 考虑在第1步和第3步中的查找和收集模式下运行该工具时使用的相同日志位置，以便将所有日志文件保存在同一文件夹中。  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |此可选开关允许您在删除模式下为现有的 PST 集合作业重新运行该工具。 如果您之前在删除模式下运行该工具，但随后在查找模式下再次运行该工具 `ForceRestart` 以重新扫描 PST 文件的位置，则可以使用此开关在删除模式下重新运行该工具，并删除在重新扫描位置时找到的 PST 文件。 `ForceRestart`在删除模式下使用切换时，该工具将忽略任何以前的删除操作，并再次尝试删除 PST 文件。  <br/> | `-ForceRestart` <br/> 
 
-    下面的示例展示了 DataCollectorMaster 工具的语法，使用每个参数的实际值：
+    下面的示例展示了使用每个参数的实际值的 DataCollectorMaster.exe 工具的语法：
     
     ```powershell
     DataCollectorMaster.exe -DataSource Pst -Mode Delete -JobName PstSearch1 -ConfigurationLocation "c:\users\admin\desktop\PSTCollection\Configuration" -LogLocation "c:\users\admin\desktop\PSTCollection"
@@ -258,10 +258,10 @@ ms.locfileid: "44224483"
 
     运行命令后，将显示详细的状态消息，显示删除在步骤1中找到并在步骤3中收集的 PST 文件的进度。 一段时间后，最终状态消息将显示是否存在任何错误以及日志复制到的位置。 将相同的状态邮件复制到 .log 文件。
     
-### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>在删除模式下运行 DataCollectorMaster 的结果
+### <a name="results-of-running-datacollectormasterexe-in-the-delete-mode"></a>在删除模式下运行 DataCollectorMaster.exe 的结果
 
-在删除模式下成功运行 DataCollectorMaster 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
+在删除模式下成功运行 DataCollectorMaster.exe 后，将创建以下文件并将其存储在由和参数指定的文件夹中 `LogLocation` `ConfigurationLocation` 。 
   
-- ** \< JobName \> _删除_ \< DateTimeStamp \> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
+- ** \<JobName\> _Delete_ \<DateTimeStamp\> ** -日志文件包含显示的状态消息。 此文件在由参数指定的文件夹中创建 `LogLocation` 。 
     
-- ** \< JOBNAME \> _Delete_ \< \> ** -xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 
+- ** \<JobName\> _Delete_ \<DateTimeStamp\> ** .xml-xml 文件仅包含在删除模式下运行工具所使用的参数值的相关信息。 它还列出了每个已删除的 PST 文件的名称和文件路径。 此文件在由参数指定的文件夹中创建 `ConfigurationLocation` 。 

@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 了解如何使用非 Office 365 内容导入功能将非 Office 365 文档上载到数据调查中的证据中。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034410"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815479"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>将非 Microsoft 365 数据加载到证据中
 
 并非所有可能需要在数据调查中进行分析的文档都将位于 Microsoft 365 中。 使用非 Microsoft 365 内容导入功能，可以将不在 Microsoft 365 中的文档上传到证据，以便可以在数据调查中分析这些文档。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="requirements-to-upload-non-office-365-content"></a>上载非 Office 365 内容的要求
 
 使用此过程中所述的上传非 Microsoft 365 功能时，需要具备以下条件：
 
@@ -42,7 +44,7 @@ ms.locfileid: "44034410"
 
 - 一种帐户，既可以是电子数据展示管理器，也可以是安装在可访问非 Microsoft 365 内容文件夹结构的计算机上的电子数据展示管理员 Microsoft Azure 存储工具。
 
-- 安装 AzCopy，您可以从以下位置执行此操作：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- 安装 AzCopy，可以从[AzCopy 开始使用](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>将非 Microsoft 365 内容上传到数据调查
 

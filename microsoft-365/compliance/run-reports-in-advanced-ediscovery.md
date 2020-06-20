@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 了解如何运行所选进程的报告，然后在高级电子数据展示中下载其 .csv 文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034586"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818912"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>在高级电子数据展示中运行报告（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主题介绍如何在高级电子数据展示中运行报告。
   
@@ -43,6 +43,6 @@ ms.locfileid: "44034586"
     
 3. 单击 "**下载 CSV**"。 将生成并下载请求的报告。
     
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [高级电子数据展示（经典）](office-365-advanced-ediscovery.md)

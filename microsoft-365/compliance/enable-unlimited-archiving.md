@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 对于管理员：了解如何启用自动扩展存档，从而为用户提供对其 Exchange Online 邮箱的无限制存储。 您可以为整个组织或仅为特定用户启用自动扩展存档。
-ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d550e562e8226d586a9538f9f366e3283ad0437
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631707"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817821"
 ---
 # <a name="enable-unlimited-archiving--admin-help"></a>启用无限制存档—管理帮助
 
 您可以使用 Exchange Online 自动扩展存档功能为存档邮箱启用无限存储空间。 启用自动扩展存档后，会在用户的存档邮箱接近存储限制时自动向其添加额外的存储空间。 结果是邮箱存储容量无限制。 您可以为组织中的所有人或仅为特定用户启用自动扩展存档。 有关自动扩展存档的详细信息，请参阅[Office 365 中的无限制存档概述](unlimited-archiving.md)。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-enable-auto-expanding-archiving"></a>启用自动扩展存档之前
 
 - 您必须是组织中的全局管理员或 Exchange Online 组织中的组织管理角色组的成员，才能为您的整个组织或特定用户启用自动扩展存档。 或者，您必须是分配有 "邮件收件人" 角色的角色组的成员，才能为特定用户启用自动扩展存档。
     
@@ -86,7 +87,7 @@ ms.locfileid: "43631707"
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
-值`True`表示已为组织启用自动扩展存档。 
+值 `True` 表示已为组织启用自动扩展存档。 
   
 若要验证自动扩展存档是否为特定用户的 enabledd，请在 Exchange Online PowerShell 中运行以下命令。
   
@@ -94,13 +95,13 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
 
-值`True`表示已为用户启用自动扩展存档。 
+值 `True` 表示已为用户启用自动扩展存档。 
   
 启用自动扩展存档后，请牢记以下事项：
   
-- 如果您运行**set-organizationconfig-AutoExpandingArchive**命令为您的组织启用自动扩展存档，则无需对各个邮箱运行**启用邮箱-AutoExpandingArchive** 。 运行**set-organizationconfig** cmdlet 以启用组织的自动扩展存档不会将用户邮箱上的*AutoExpandingArchiveEnabled*属性更改为`True`。
+- 如果您运行**set-organizationconfig-AutoExpandingArchive**命令为您的组织启用自动扩展存档，则无需对各个邮箱运行**启用邮箱-AutoExpandingArchive** 。 运行**set-organizationconfig** cmdlet 以启用组织的自动扩展存档不会将用户邮箱上的*AutoExpandingArchiveEnabled*属性更改为 `True` 。
     
-- 同样，在启用自动扩展存档时， *ArchiveQuota*和*ArchiveWarningQuota*邮箱属性的值不会更改。 实际上，如果为用户邮箱启用自动扩展存档，并且*AutoExpandingArchiveEnabled*属性设置为`True`，则*ArchiveQuota*和*ArchiveWarningQuota*属性将被忽略。 以下是在为用户邮箱启用自动扩展存档后，这些邮箱属性的示例。 
+- 同样，在启用自动扩展存档时， *ArchiveQuota*和*ArchiveWarningQuota*邮箱属性的值不会更改。 实际上，如果为用户邮箱启用自动扩展存档，并且*AutoExpandingArchiveEnabled*属性设置为 `True` ，则*ArchiveQuota*和*ArchiveWarningQuota*属性将被忽略。 以下是在为用户邮箱启用自动扩展存档后，这些邮箱属性的示例。 
     
     ![启用自动扩展存档后，ArchiveQuota 和 ArchiveWarningQuota 属性将被忽略](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 

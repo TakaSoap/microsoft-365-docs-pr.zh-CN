@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066355"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800093"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会（FFIEC）
 
@@ -33,7 +33,7 @@ ms.locfileid: "44066355"
 
 Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金融服务机构提供云服务的严格要求而构建的。 作为我们支持的一部分，我们提供的指导可帮助您遵守信息技术的 FFIEC 审核要求，并能够在满足您的 FFIEC 合规性义务时使用 Azure SOC attestations。
 
-加速金融服务部署：[下载 Azure 安全性和合规性 FFIEC 金融服务蓝图](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+加速金融服务部署：[下载 Azure 安全性和合规性 FFIEC 金融服务蓝图](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 为了帮助金融机构客户端符合 Azure 的 FFIEC 合规性要求，Microsoft 已开发：
 
@@ -42,12 +42,12 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 
 为了进一步帮助您遵守 FFIEC 要求，Microsoft 云服务提供独立 CPA 事务所生成的[SOC 认证报告](offering-SOC.md)。 例如，SOC 1 类型2证明基于 AICPA SSAE 18 standard （请参阅 C：105节），它取代了 SAS 70，并且适用于报告特定的财务报告控制措施。 SOC 报告包括审计员对 Microsoft 控件的有效性的意见，以实现指定监控期内的相关控制目标。 金融机构可以在满足在 Azure、Power BI 和 Office 365 上部署的资产的 FFIEC 合规性义务时使用此正式审核。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 

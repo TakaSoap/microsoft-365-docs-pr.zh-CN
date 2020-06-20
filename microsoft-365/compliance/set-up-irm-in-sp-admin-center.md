@@ -17,16 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: 了解如何通过 Microsoft Azure Active Directory 权限管理服务（RMS）使用 SharePoint Online IRM 来保护 SharePoint 列表和文档库。
-ms.openlocfilehash: ab045c2319897a98bffd14f898dd254b06890bee
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 33e5a72ea1d0733656379bc4efdca7dd14f78cb1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222369"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819192"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center
-
-## <a name="introduction"></a>简介
 
 在 SharePoint Online 中，IRM 保护应用于列表和库级别的文件。 您的组织可以使用 IRM 保护之前，必须先设置权限管理。 IRM 依赖 azure 权限管理服务（来自 Azure 信息保护）来加密和分配使用限制。 一些 Microsoft 365 计划包括 Azure 权限管理，但并非全部。 若要了解详细信息，请参阅[Office 应用程序和服务如何支持 Azure 权限管理](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support)。
   
@@ -79,4 +78,4 @@ SharePoint Online 支持对以下文件类型进行加密：
   
 新的 OneDrive 同步客户端现在支持同步受 IRM 保护的 SharePoint 文档库和 OneDrive 位置（只要库的 IRM 设置未设置为 "过期文档访问权限"）。 有关详细信息，或者若要开始部署新的同步客户端，请参阅[部署新的 OneDrive 同步客户端 For Windows](https://docs.microsoft.com/onedrive/deploy-on-windows)。
   
-[页面顶部](#introduction)  
+[页面顶部](set-up-irm-in-sp-admin-center.md)

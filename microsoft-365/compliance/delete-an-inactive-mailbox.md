@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: 当不再需要保留 Microsoft 365 非活动邮箱的内容时，可以通过删除保留永久删除非活动邮箱。 删除保留后，非活动邮箱将标记为删除，并在处理后被永久删除。
-ms.openlocfilehash: fafedd1ccf78c3e763c9e02dc37c594d8f2c9785
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 当不再需要保留 Microsoft 365 非活动邮箱的内容时，可以永久删除非活动邮箱。
+ms.openlocfilehash: 05357ce1b3e10394854844f15ec6a18c1c427d5b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630529"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817891"
 ---
 # <a name="delete-an-inactive-mailbox"></a>删除非活动邮箱
 
@@ -30,9 +32,9 @@ ms.locfileid: "43630529"
 > [!IMPORTANT]
 > 随着我们继续投资保留邮箱内容的不同方式，我们宣布在 Exchange 管理中心中停用就地保留。 这意味着，应使用诉讼保留和保留策略来创建非活动邮箱。 从2020年6月1日开始，你将无法在 Exchange Online 中创建新的就地保留。 但您仍可以更改非活动邮箱上设置的就地保留的保留持续时间。 但是，从2020年10月1日开始，你将无法更改保留期。 你将只能通过删除就地保留来删除非活动邮箱。 在删除保留之前，就地保留中的现有非活动邮箱仍将保留。 有关停用就地保留的详细信息，请参阅[旧版电子数据展示工具的退休](legacy-ediscovery-retirement.md)。
   
-请参阅[More information](#more-information)部分了解从非活动邮箱删除保留后会发生什么情况。
+请参阅[详细信息](#more-information)部分了解从非活动邮箱删除保留后会发生什么情况。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-delete-an-inactive-mailbox"></a>删除非活动邮箱之前
 
 - 您必须使用 Exchange Online PowerShell 从非活动邮箱删除诉讼保留。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 您可以使用 Exchange Online PowerShell 或 EAC 从非活动邮箱中删除就地保留。 
     
@@ -73,18 +75,18 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
   
 ## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>步骤 2：从非活动邮箱删除保留
 
-在确定了非活动邮箱上设置的保留类型（以及是否存在多个保留）后，接下来是删除邮箱上的保留。如前所述，您必须删除所有保留后方可永久删除非活动邮箱。 
+After you identify what type of hold is placed on the inactive mailbox (and whether there are multiple holds), the next step is to remove the holds on the mailbox. As previously stated, you have to remove all holds to permanently delete an inactive mailbox. 
   
 ### <a name="remove-a-litigation-hold"></a>删除诉讼保留
 
-如前所述，您必须使用 Windows PowerShell 从非活动邮箱删除诉讼保留。不能使用 EAC。运行以下命令以删除诉讼保留。
+As previously stated, you have to use Windows PowerShell to remove a Litigation Hold from an inactive mailbox. You can't use the EAC. Run the following command to remove a Litigation Hold.
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
 ```
 
 > [!TIP]
-> 若要识别非活动邮箱，最好的方法是通过其可分辨名称或 Exchange GUID 值。使用下列值之一有助于防止意外地指定了错误的邮箱。 
+> The best way to identify an inactive mailbox is by using its Distinguished Name or Exchange GUID value. Using one of these values helps prevent accidentally specifying the wrong mailbox. 
   
 ### <a name="remove-in-place-holds"></a>删除就地保留
 
@@ -93,13 +95,13 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 - **删除就地保留对象**如果要永久删除的非活动邮箱是就地保留的唯一源邮箱，则只需删除就地保留对象即可。 
     
     > [!NOTE]
-    > 您必须先禁用该保留，然后才能删除就地保留对象。如果尝试删除启用了该保留的就地保留对象，您将收到一条错误消息。 
+    > You have to disable the hold before you can delete an In-Place Hold object. If you try to delete an In-Place Hold object that has the hold enabled, you'll receive an error message. 
   
 - **删除非活动邮箱作为就地保留的源邮箱**如果要保留对就地保留的其他源邮箱，可以从源邮箱列表中删除非活动邮箱，并保留就地保留对象。 
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>使用 EAC 删除就地保留
 
-1. 如果您知晓要删除的就地保留的名称，则可前往下一步。否则，请运行以下命令以获取想要永久删除的非活动邮箱上设置的就地保留的名称。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
+1. If you know the name of the In-Place Hold that you want to delete, you can go to the next step. Otherwise, run the following command to get the name of the In-Place Hold that is placed on the inactive mailbox that you want to permanently delete. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
    ```powershell
    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
@@ -107,17 +109,17 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
-3. 选择要删除的就地保留，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+3. 选择要删除的就地保留，然后单击 "**编辑** ![ 编辑图标" ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-4. 在 "**就地电子数据展示&amp;保留**属性" 页上，单击 "**就地保留**"，取消选中 "**将与所选邮箱中的搜索查询匹配的内容置于保留**状态" 框中，然后单击 "**保存**"。
+4. 在 "**就地电子数据展示 &amp; 保留**属性" 页上，单击 "**就地保留**"，取消选中 "**将与所选邮箱中的搜索查询匹配的内容置于保留**状态" 框中，然后单击 "**保存**"。
     
-5. 在 "**就地电子数据展示&amp;保留**" 页上，再次选择就地保留，然后单击 "**删除**![删除图标](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)"。
+5. 在 "**就地电子数据展示 &amp; 保留**" 页上，再次选择就地保留，然后单击 "**删除** ![ 删除图标" ](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
     
 6. 在警告框中，单击“是”**** 删除该就地保留。 
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>使用 Exchange Online PowerShell 删除就地保留
 
-1. 创建一个变量，其中包含您想要删除的就地保留的属性。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
+1. Create a variable that contains the properties of the In-Place Hold that you want to delete. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
    ```powershell
    $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -137,7 +139,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>使用 EAC 从就地保留删除非活动邮箱
 
-1. 如果您知晓非活动邮箱上设置的就地保留的名称，则可前往下一步。否则，请运行以下命令以获取该邮箱上设置的就地保留的名称。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
+1. If you know the name of the In-Place Hold that's placed on the inactive mailbox, you can go to the next step. Otherwise, run the following command to get the name of the In-Place Hold placed on the mailbox. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
    ```powershell
    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
@@ -145,11 +147,11 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. 在 EAC 中，转到"合规管理"****"就地电子数据展示和保留"。
     
-3. 选择非活动邮箱上放置的就地保留，然后单击 "**编辑** ![编辑图标](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)"。
+3. 选择非活动邮箱上放置的就地保留，然后单击 "**编辑** ![ 编辑图标" ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-4. 在 "**就地电子数据展示&amp;保留**属性" 页上，单击 "**源**"。
+4. 在 "**就地电子数据展示 &amp; 保留**属性" 页上，单击 "**源**"。
     
-5. 在源邮箱列表中，单击要删除的非活动邮箱的名称，然后单击 "**删除**![删除图标](../media/adf01106-cc79-475c-8673-065371c1897b.gif)"。
+5. 在源邮箱列表中，单击要删除的非活动邮箱的名称，然后单击 "**删除** ![ 删除图标" ](../media/adf01106-cc79-475c-8673-065371c1897b.gif) 。
     
 6. 单击“保存”**** 以保存所做的更改。 这将显示一条消息，提示已成功完成该操作。 
     
@@ -159,7 +161,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 如果就地保留中包含大量的源邮箱，则非活动邮箱有可能不会列在 EAC 的“源”页面上****。 在编辑就地保留时，“源”**** 页面上最多显示 3000 个邮箱。 如果未在 "**源**" 页上列出非活动邮箱，则可以使用 Exchange Online PowerShell 将其从就地保留中删除。 
   
-1. 创建一个变量，其中包含非活动邮箱上设置的就地保留的属性。使用您在[步骤 1：识别非活动邮箱上设置的保留](#step-1-identify-the-holds-on-an-inactive-mailbox) 中获得的就地保留 GUID。
+1. Create a variable that contains the properties of the In-Place Hold placed on the inactive mailbox. Use the In-Place Hold GUID that you obtained in [Step 1: Identify the holds on an inactive mailbox](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
     ```powershell
     $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>

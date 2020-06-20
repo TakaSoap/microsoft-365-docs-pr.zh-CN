@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: '如果以前的员工返回到您的组织，或者如果雇用新员工来承担 departed 员工的工作职责，则可以在 Office 365 中恢复非活动邮箱的内容。 恢复非活动邮箱时，会将其转换为新邮箱，其中包含非活动邮箱的内容。 '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: 了解如何在 Office 365 中恢复非活动邮箱的内容，方法是将其转换为包含非活动邮箱内容的新邮箱。
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678968"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818942"
 ---
 # <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
@@ -31,9 +32,9 @@ ms.locfileid: "44678968"
     
 - **还原非活动邮箱。** 如果其他员工承担前一个员工的工作职责，或者如果其他用户需要访问非活动邮箱的内容，则可以将非活动邮箱的内容还原（或合并）到现有邮箱。 您还可以从非活动邮箱还原存档。 有关此方法的过程，请参阅[还原 Office 365 中的非活动邮箱](restore-an-inactive-mailbox.md)。
 
-有关恢复和还原非活动邮箱之间的差异的详细信息，以及恢复非活动邮箱后所发生情况的描述，请参阅[More information](#more-information)部分。
+有关恢复和还原非活动邮箱之间的差异的详细信息，以及恢复非活动邮箱后所发生情况的描述，请参阅[详细信息](#more-information)部分。
   
-## <a name="before-you-begin"></a>开始之前
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>恢复非活动邮箱的要求
 
 - 您必须使用 Exchange Online PowerShell 来恢复非活动邮箱。 不能使用 Exchange 管理中心 (EAC)。 有关分步说明，请参阅[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     
@@ -56,7 +57,7 @@ ms.locfileid: "44678968"
     ```
 
     > [!IMPORTANT]
-    > 在上一命令中，使用 **DistinguishedName** 或 **ExchangeGUID** 属性的值来标识非活动邮箱。这些属性对于您组织中的每个邮箱都是唯一的，但活动和非活动邮箱可能具有相同的主 SMTP 地址。 
+    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
   
 2. 此示例使用在上一个命令中获取的属性，并将非活动邮箱恢复到用户 Ann Beebe 的活动邮箱。 请确保为*Name*和*MicrosoftOnlineServicesID*参数指定的值在您的组织中是唯一的。 
 
@@ -84,7 +85,7 @@ ms.locfileid: "44678968"
   
      - **Microsoft 365 保留策略，无保留锁定。** 非活动邮箱将从应用于它的任何未锁定的 Microsoft 365 保留策略中删除。 但是，在恢复的邮箱上启用了诉讼保留，以防止根据删除超过特定年龄的内容的任何组织范围的保留策略来删除邮箱内容。 您可以保留诉讼保留或将其删除。 有关详细信息，请参阅[创建诉讼保留](create-a-litigation-hold.md)。
 
-  - 单个项目恢复期间（由 **RetainDeletedItemsFor** 邮箱属性定义）设置为 30 天。通常情况下，在 Exchange Online 中创建新邮箱时，此保留期设置为 14 天。将此值设置为最大值 30 天，可留出更多时间从非活动邮箱中恢复任何已永久删除（或清除）的数据。您也可以禁用单个项目恢复，或将单个项目恢复期设置为默认的 14 天。有关详细信息，请参阅 [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769)。
+  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
   
   - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 365 范围的保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目（或根据为 Exchange 或 Microsoft 365 保留策略配置的设置，将项目移至存档邮箱（如果已启用）。 30天后，保留挂起会过期， **RetentionHoldEnabled**邮箱属性设置为**False**，并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)。
 

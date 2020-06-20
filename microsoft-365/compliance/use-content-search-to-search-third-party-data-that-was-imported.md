@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: 使用内容搜索电子数据展示工具在 Microsoft 365 中搜索从第三方数据源导入到邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值，以搜索可导入到 Microsoft 365 的第三方数据类型。
-ms.openlocfilehash: c494f4bbb13919f9a980f227093d291c148e9afe
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+description: 通过创建查询，使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Microsoft 365 中的邮箱的项目。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 916a780bccc3f24d509991e8ac72f31b374757d4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566666"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819092"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索来搜索自定义合作伙伴连接器导入的第三方数据
 

@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
-ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 389cc9e15bc661e967f7af769ac48c4ae6e27228
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208136"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817981"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
  当你尝试了解基础数据以及搜索的丰富程度和质量时，快速创建和报告发现搜索通常是电子数据展示和调查中的重要步骤。 为帮助你执行此操作，安全 & 合规性中心 PowerShell 提供了一组用于自动执行耗时的内容搜索任务的 cmdlet。 这些脚本提供了创建大量搜索的快速、简便的方法，然后运行估计的搜索结果报告，这些报告可帮助您确定所讨论的数据量。 您还可以使用脚本来创建不同版本的搜索，以比较每个搜索结果所产生的结果。 这些脚本可帮助您快速高效地识别和挑选数据。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-create-a-content-search"></a>在创建内容搜索之前
 
 - 您必须是 Security & 合规性中心中的电子数据展示管理器角色组的成员，才能运行本主题中所述的脚本。 
     
@@ -39,7 +40,7 @@ ms.locfileid: "44208136"
     
 - 这些脚本包括最少的错误处理。 其主要目的是快速创建、报告和删除多个内容搜索。
     
-- 本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步骤1：创建包含有关要运行的搜索的信息的 CSV 文件
 
@@ -61,7 +62,7 @@ ms.locfileid: "44208136"
     
 2. 在 Excel 中打开 .txt 文件，然后使用下表中的信息编辑包含每个搜索的信息的文件。 
     
-    |**Parameter**|**说明**|
+    |**参数**|**说明**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |用户邮箱的 SMTP 地址。  <br/> |
     | `SharePointLocation` <br/> |用户的 OneDrive for business 网站的 URL 或组织中任何网站的 URL。 对于 OneDrive for business 网站的 URL，请使用以下格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例如，`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。  <br/> |

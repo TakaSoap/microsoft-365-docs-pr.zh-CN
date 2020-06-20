@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 使用 "客户密钥"，可以控制组织的加密密钥，然后将 Microsoft 365 配置为使用它们在 Microsoft 数据中心中对静态数据进行加密。
-ms.openlocfilehash: 701dc306a81e12db7dd1062d2a840621b710abd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: 在本文中，您将了解如何使用 Microsoft 365 中的客户密钥处理服务加密。
+ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635588"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817951"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客户密钥进行服务加密
 

@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 高级电子数据展示中的保管人管理工具使您可以管理工作流，以确定、保留和收集与法律案件相关人员相关的数据。
-ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何在高级电子数据展示中使用保管人管理工具来管理法律案件的数据。
+ms.openlocfilehash: 400793a6779cef5b1e823f40fa08cc1e05f93f15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551235"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815489"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>在高级电子数据展示中与保管人合作
 

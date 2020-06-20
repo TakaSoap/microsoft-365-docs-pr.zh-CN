@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: 了解如何检查关键字查询的内容搜索是否有错误和拼写错误，例如不受支持的字符和小写的布尔运算符。
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: 了解如何在运行搜索之前检测关键字查询中的错误和打字错误。
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035624"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818091"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>检查内容搜索查询中是否有错误
 
@@ -38,7 +37,7 @@ ms.locfileid: "44035624"
     
 - **从左到右和从右到左标记**-这些标记是用于指明从左到右语言（如英语和西班牙语）和从右到左语言（如阿拉伯语和希伯来语）的文字方向的控制字符。
     
-- **小写布尔运算符**-如果在搜索查询中使用布尔运算符，例如**AND**、 **OR**和**NOT** ，则它必须为大写。 当我们检查输入拼写的查询时，查询语法通常会指示是否使用了布尔运算符，即使可能使用了小写运算符也是如此。例如， `(WordA or WordB) and (WordC or WordD)`。
+- **小写布尔运算符**-如果在搜索查询中使用布尔运算符，例如**AND**、 **OR**和**NOT** ，则它必须为大写。 当我们检查输入拼写的查询时，查询语法通常会指示是否使用了布尔运算符，即使可能使用了小写运算符也是如此。例如， `(WordA or WordB) and (WordC or WordD)` 。
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>如果查询包含不受支持的字符，会发生什么情况？
 

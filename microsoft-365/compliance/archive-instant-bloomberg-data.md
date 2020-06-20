@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 设置用于将数据从即时 Bloomberg 导入到 Microsoft 365 的连接器，以便您可以使用各种合规性工具。
-ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: 了解管理员如何设置 & 使用本机连接器将数据从即时 Bloomberg 聊天工具导入 Microsoft 365。
+ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035144"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818451"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -43,7 +42,7 @@ ms.locfileid: "44035144"
     
 4. 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为 InstantBloomberg 的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用*CorporateEmailAddress*属性的值实现此功能。 每个聊天邮件都包含此属性，该属性由聊天消息的每个参与者的电子邮件地址填充。 除了使用*CorporateEmailAddress*属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的*CorporateEmailAddress*属性。 如果连接器在自定义映射文件或聊天项目的*CorporateEmailAddress*属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 存档即时 Bloomberg 数据所需的许多实施步骤都是 Microsoft 365 外部的，必须先完成，然后才能在合规性中心中创建连接器。
 
@@ -75,7 +74,7 @@ ms.locfileid: "44035144"
 
 第一步是获取用于安全命令行管理程序（SSH）和相当出色的隐私（PGP）的公钥副本。 您可以在步骤2中使用这些键来配置 Bloomberg SFTP 站点，以允许连接器（在步骤3中创建）连接到 SFTP 站点，并将 "即时 Bloomberg" 聊天数据传输到 Microsoft 365 邮箱。 您还可以在此步骤中获取 IP 地址，在配置 Bloomberg SFTP 站点时使用此地址。
 
-1. 转到<https://compliance.microsoft.com> ，然后单击 "**数据连接器** > **即时 Bloomberg**"。
+1. 转到 <https://compliance.microsoft.com> ，然后单击 "**数据连接器**  >  **即时 Bloomberg**"。
 
 2. 在 "**即时 Bloomberg**产品说明" 页上，单击 "**添加连接器**"
 
@@ -102,7 +101,7 @@ ms.locfileid: "44035144"
 
 最后一步是在 Microsoft 365 合规性中心中创建一个即时 Bloomberg 连接器。 连接器使用您提供的信息连接到 Bloomberg SFTP 站点，并将聊天邮件传输到 Microsoft 365 中对应的用户邮箱框中。 
 
-1. 转到<https://compliance.microsoft.com> ，然后单击 "**数据连接器** > **即时 Bloomberg**"。
+1. 转到 <https://compliance.microsoft.com> ，然后单击 "**数据连接器**  >  **即时 Bloomberg**"。
 
 2. 在 "**即时 Bloomberg**产品说明" 页上，单击 "**添加连接器**"
 

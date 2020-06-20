@@ -16,17 +16,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
-description: 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
-ms.openlocfilehash: f5ce3103a6fc8c9f025d657408814a954cf0a13e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom:
+- seo-marvel-apr2020
+description: 了解如何在组织内部和外部的人员之间发送和接收加密的电子邮件。
+ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717323"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818727"
 ---
 # <a name="message-encryption"></a>邮件加密
 
-人们经常使用电子邮件来交换敏感信息，例如财务数据、法律合同、机密产品信息、销售报表和预测、患者健康信息或客户和员工信息。因此，邮箱可能会成为一个包含大量潜在敏感信息的存储库，信息泄露可能会成为您组织的严重威胁。
+People often use email to exchange sensitive information, such as financial data, legal contracts, confidential product information, sales reports and projections, patient health information, or customer and employee information. As a result, mailboxes can become repositories for large amounts of potentially sensitive information and information leakage can become a serious threat to your organization.
 
 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo！、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
 
@@ -44,11 +46,11 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 
 有关 OME 的早期版本和新的 OME 功能之间的差异的详细列表，请参阅[比较版本的 OME](ome-version-comparison.md)。
 
-当某人发送与加密邮件流规则匹配的电子邮件时，会在发送邮件之前对其进行加密。 所有使用 Outlook 客户端的 Microsoft 365 最终用户读取邮件接收对加密和受权限保护的邮件的本机、第一类阅读体验，即使它们与发件人不在同一组织中也是如此。 支持的 Outlook 客户端包括 Outlook 桌面、Outlook Mac、iOS 和 Android 上的 Outlook 移动以及 web 上的 Outlook （以前称为 Outlook Web App）。
+当某人发送与加密邮件流规则匹配的电子邮件时，会在发送邮件之前对其进行加密。 使用 Outlook 客户端读取邮件的所有 Microsoft 365 最终用户将接收对加密和受权限保护的邮件的本机、第一类阅读体验，即使它们与发件人不在同一组织中也是如此。 支持的 Outlook 客户端包括 Outlook 桌面、Outlook Mac、iOS 和 Android 上的 Outlook 移动以及 web 上的 Outlook （以前称为 Outlook Web App）。
 
 接收被加密邮件或受权限保护的邮件发送到其 Outlook.com、Gmail 和 Yahoo 帐户的邮件收件人将收到一封包装邮件，该邮件将其定向到 OME 门户，在该门户中，可以使用 Microsoft 帐户、Gmail 或 Yahoo 凭据轻松地对其进行身份验证。
 
-在 Outlook 之外的客户端上阅读加密或受权限保护邮件的最终用户也使用 OME 门户来查看他们收到的加密邮件和受权限保护的邮件。
+在 Outlook 以外的客户端上阅读加密或受权限保护的邮件的最终用户也使用 OME 门户来查看他们收到的加密邮件和受权限保护的邮件。
 
 如果受保护邮件的发件人在 GCC 高，且收件人不在 GCC 高（包括商业用户、Outlook.com 用户和其他电子邮件提供商（如 Gmail）的用户）中，则收件人会收到包装邮件。 包装邮件将收件人定向到 OME 门户，在该门户中，收件人能够读取和回复邮件。 否则，如果发件人和收件人都在 GCC 高环境中，即使它们不在同一组织中，使用 Outlook 客户端读取邮件的收件人可以接收对加密和受权限保护的邮件的本机、第一类阅读体验。 有关 GCC High 中的不同体验的详细信息，请参阅[比较版本的 OME](ome-version-comparison.md)。
 
@@ -86,9 +88,9 @@ Microsoft 365 中的高级邮件加密帮助您满足合规性义务，这些要
 |:-----|:-----|
 |阅读本文 .。。|如果您是 .。。|
 |[了解 Office 365 中的受保护邮件](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx)|想要详细了解加密邮件的工作方式以及可供您使用的选项的最终用户。|
-|[如何打开受保护的邮件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|要读取已发送给您的受保护邮件的最终用户。 本文包含有关在 Outlook 的多个版本和不同的电子邮件帐户（包括除 gmail 和 Yahoo！等其他电子邮件帐户之外）中读取邮件365的信息。 账号.|
-|[在 Outlook 中发送、查看和回复加密邮件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|要从 Outlook 发送、查看或回复加密邮件的最终用户。 即使您不是组织的成员，仍会收到在 Outlook 中发送给您的加密邮件的通知。 使用此文章可获取有关如何查看和回复从 Office 365 发送的加密邮件的说明。|
-|[发送经过数字签名或加密的邮件](https://support.microsoft.com/en-us/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|希望使用 Outlook for Mac 发送、查看或回复加密邮件的最终用户。 本文还介绍了如何使用 OME 以外的加密方法，如 S/MIME。|
+|[如何打开受保护的邮件？](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)|要读取已发送给您的受保护邮件的最终用户。 本文包含有关在 Outlook 的多个版本和不同的电子邮件帐户（包括除 gmail 和 Yahoo！之类的帐户之外的其他帐户）中读取邮件365的信息。 账号.|
+|[在 Outlook 中发送、查看和回复加密邮件](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)|要从 Outlook 发送、查看或回复加密邮件的最终用户。 即使您不是组织的成员，仍会收到在 Outlook 中发送给您的加密邮件的通知。 使用此文章可获取有关如何查看和回复从 Office 365 发送的加密邮件的说明。|
+|[发送经过数字签名或加密的邮件](https://support.microsoft.com/office/send-a-digitally-signed-or-encrypted-message-a18ecf7f-a7ac-4edd-b02e-687b05eff547)|希望使用 Outlook for Mac 发送、查看或回复加密邮件的最终用户。 本文还介绍了如何使用 OME 以外的加密方法，如 S/MIME。|
 |[在 Android 设备上查看加密邮件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb)|已收到使用 Office 365 邮件加密在 Android 设备上加密的邮件的最终用户，可以使用免费的 OME 查看器应用程序查看邮件并发送加密答复。 本文介绍如何操作。|
-|[查看 iPhone 或 iPad 上的加密邮件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|已收到使用 Office 365 邮件加密在 iPhone 或 iPad 上加密的邮件的最终用户，您可以使用免费的 OME 查看器应用来查看邮件并发送加密答复。 本文介绍如何操作。|
+|[查看 iPhone 或 iPad 上的加密邮件](https://support.microsoft.com/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf)|已收到使用 Office 365 邮件加密在 iPhone 或 iPad 上加密的邮件的最终用户，您可以使用免费的 OME 查看器应用来查看邮件并发送加密答复。 本文介绍如何操作。|
 ||
