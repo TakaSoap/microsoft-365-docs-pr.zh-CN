@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 设置连接器以将 Facebook 数据导入 Microsoft 365，以便您可以使用合规性功能，如合法保留、内容搜索和保留策略。
-ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: 了解如何设置 & 使用 Microsoft 365 合规性中心中的连接器将 & 存档数据从 Facebook Business pages 导入到 Microsoft 365。
+ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210522"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818461"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>设置连接器以存档 Facebook 数据（预览）
 

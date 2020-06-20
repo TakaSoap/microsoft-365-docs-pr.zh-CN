@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: 使用合规性边界在组织内创建逻辑边界，以控制电子数据展示管理器可以搜索的用户内容位置。 合规性边界使用搜索权限筛选（也称为合规性安全筛选器）控制特定用户可以搜索哪些邮箱、SharePoint 网站和 OneDrive 帐户。
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: 了解如何使用合规性边界来创建逻辑边界，以控制电子数据展示管理器可在 Microsoft 365 中搜索的用户内容位置。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262565"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819202"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
@@ -264,11 +265,11 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
  **如果更改了用作搜索权限筛选器中的符合性属性的属性的值，会发生什么情况？**
   
-如果更改了筛选器中使用的属性的值，搜索权限筛选器将花费最长三天的时间来强制实施符合性边界。 例如，在 Contoso 方案中，假设第四个咖啡店中的用户转移到 Coho Winery 机构。 因此，user 对象上的**部门**属性值从*FourthCoffee*更改为*CohoWinery*。 在这种情况下，第四个咖啡电子数据展示和投资者将在属性更改后的三天内为该用户获取搜索结果。 同样，在 Coho Winery 电子数据展示管理人员和调查人员获取用户的搜索结果之前，最长需要三天。 
+如果更改了筛选器中使用的属性的值，搜索权限筛选器将花费最长三天的时间来强制实施符合性边界。 例如，在 Contoso 方案中，假设第四个咖啡店中的用户转移到 Coho Winery 机构。 因此，user 对象上的**部门**属性值从*FourthCoffee*更改为*CohoWinery*。 在这种情况下，第四个咖啡电子数据展示和投资者将在属性更改后的三天内为该用户获取搜索结果。 同样，在 Coho Winery 电子数据展示管理人员和调查人员获取用户的搜索结果之前，最长需要三天。
   
  **电子数据展示管理器能否从两个单独的合规性边界中查看内容？**
   
-是。 为此，可以将用户添加到对这两个机构都可见的角色组。
+是的，通过将电子数据展示管理器添加到对两个代理都可见的角色组来搜索 Exchange 邮箱时，可以完成此操作。 但是，在搜索 SharePoint 网站和 OneDrive 帐户时，电子数据展示管理器可以仅在这些机构在同一地区或地理位置中搜索不同合规性边界的内容。 **注意：** 此网站限制不适用于高级电子数据展示，因为搜索 SharePoint 和 OneDrive 中的内容不受地理位置的约束。
   
  **搜索权限筛选器是否适用于电子数据展示事例保留、Microsoft 365 保留策略或 DLP？**
   
