@@ -15,130 +15,131 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: 使用内容搜索电子数据展示工具在 Microsoft 365 中搜索从第三方数据源导入到邮箱的项目。 您可以创建查询以搜索所有导入的项，或创建查询以搜索特定的第三方数据类型。 本文列出了可以在关键字查询中使用的值，以搜索可导入到 Microsoft 365 的第三方数据类型。
-ms.openlocfilehash: c494f4bbb13919f9a980f227093d291c148e9afe
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+description: 通过创建查询，使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Microsoft 365 中的邮箱的项目。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 916a780bccc3f24d509991e8ac72f31b374757d4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566666"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819092"
 ---
-# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a><span data-ttu-id="f47bd-105">使用内容搜索来搜索自定义合作伙伴连接器导入的第三方数据</span><span class="sxs-lookup"><span data-stu-id="f47bd-105">Use Content Search to search third-party data imported by a custom partner connector</span></span>
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a><span data-ttu-id="5fadf-103">使用内容搜索来搜索自定义合作伙伴连接器导入的第三方数据</span><span class="sxs-lookup"><span data-stu-id="5fadf-103">Use Content Search to search third-party data imported by a custom partner connector</span></span>
 
-<span data-ttu-id="f47bd-106">您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。</span><span class="sxs-lookup"><span data-stu-id="f47bd-106">You can use the [Content Search eDiscovery tool](content-search.md) in the Security & Compliance Center to search for items imported to mailboxes in Microsoft 365 from a third-party data source.</span></span> <span data-ttu-id="f47bd-107">您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。</span><span class="sxs-lookup"><span data-stu-id="f47bd-107">You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items.</span></span> <span data-ttu-id="f47bd-108">此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。</span><span class="sxs-lookup"><span data-stu-id="f47bd-108">Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.</span></span>
+<span data-ttu-id="5fadf-104">您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。</span><span class="sxs-lookup"><span data-stu-id="5fadf-104">You can use the [Content Search eDiscovery tool](content-search.md) in the Security & Compliance Center to search for items imported to mailboxes in Microsoft 365 from a third-party data source.</span></span> <span data-ttu-id="5fadf-105">您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。</span><span class="sxs-lookup"><span data-stu-id="5fadf-105">You can create a query to search all imported third-party data items or you can create a query to search specific third-party data items.</span></span> <span data-ttu-id="5fadf-106">此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。</span><span class="sxs-lookup"><span data-stu-id="5fadf-106">Also, you can also create a query-based retention policy or a query-based eDiscovery hold to preserve third-party data.</span></span>
   
-<span data-ttu-id="f47bd-109">有关使用合作伙伴导入第三方数据的详细信息以及可以导入到 Microsoft 365 的第三方数据类型的列表，请参阅[使用合作伙伴在 Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。</span><span class="sxs-lookup"><span data-stu-id="f47bd-109">For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).</span></span>
+<span data-ttu-id="5fadf-107">有关使用合作伙伴导入第三方数据的详细信息以及可以导入到 Microsoft 365 的第三方数据类型的列表，请参阅[使用合作伙伴在 Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。</span><span class="sxs-lookup"><span data-stu-id="5fadf-107">For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="f47bd-110">本文中的指导仅适用于自定义合作伙伴连接器导入的第三方数据。</span><span class="sxs-lookup"><span data-stu-id="f47bd-110">The guidance in this article only applies to third-party data that was imported by a custom partner connector.</span></span> <span data-ttu-id="f47bd-111">本文不适用于使用 Microsoft 合规性中心中的[第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)导入的第三方数据。</span><span class="sxs-lookup"><span data-stu-id="f47bd-111">This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.</span></span>
+> <span data-ttu-id="5fadf-108">本文中的指导仅适用于自定义合作伙伴连接器导入的第三方数据。</span><span class="sxs-lookup"><span data-stu-id="5fadf-108">The guidance in this article only applies to third-party data that was imported by a custom partner connector.</span></span> <span data-ttu-id="5fadf-109">本文不适用于使用 Microsoft 合规性中心中的[第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)导入的第三方数据。</span><span class="sxs-lookup"><span data-stu-id="5fadf-109">This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.</span></span>
   
-## <a name="creating-a-query-to-search-all-third-party-data"></a><span data-ttu-id="f47bd-112">创建查询以搜索所有第三方数据</span><span class="sxs-lookup"><span data-stu-id="f47bd-112">Creating a query to search all third-party data</span></span>
+## <a name="creating-a-query-to-search-all-third-party-data"></a><span data-ttu-id="5fadf-110">创建查询以搜索所有第三方数据</span><span class="sxs-lookup"><span data-stu-id="5fadf-110">Creating a query to search all third-party data</span></span>
 
-<span data-ttu-id="f47bd-113">若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以 `kind:externaldata` 在内容搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。</span><span class="sxs-lookup"><span data-stu-id="f47bd-113">To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold.</span></span> <span data-ttu-id="f47bd-114">例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询：</span><span class="sxs-lookup"><span data-stu-id="f47bd-114">For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query:</span></span> 
+<span data-ttu-id="5fadf-111">若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以 `kind:externaldata` 在内容搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。</span><span class="sxs-lookup"><span data-stu-id="5fadf-111">To search (or place on hold) any type of third-party data that you've imported to Office 365, you can use the  `kind:externaldata` message property-value pair in the keyword box for a Content Search or when creating a query-based hold.</span></span> <span data-ttu-id="5fadf-112">例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询：</span><span class="sxs-lookup"><span data-stu-id="5fadf-112">For example, to search for items imported from any third-party data source and contain the word "contoso" in the Subject property of the imported item, you would use the following query:</span></span> 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-<span data-ttu-id="f47bd-115">上一个关键字查询示例包括 subject 属性。</span><span class="sxs-lookup"><span data-stu-id="f47bd-115">The previous keyword query example includes the subject property.</span></span> <span data-ttu-id="f47bd-116">有关可包括在关键字查询中的第三方数据项的其他属性列表，请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。</span><span class="sxs-lookup"><span data-stu-id="f47bd-116">For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md#more-information).</span></span>
+<span data-ttu-id="5fadf-113">上一个关键字查询示例包括 subject 属性。</span><span class="sxs-lookup"><span data-stu-id="5fadf-113">The previous keyword query example includes the subject property.</span></span> <span data-ttu-id="5fadf-114">有关可包括在关键字查询中的第三方数据项的其他属性列表，请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。</span><span class="sxs-lookup"><span data-stu-id="5fadf-114">For a list of other properties for third-party data items that can include in a keyword query, see the "More information" section in [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md#more-information).</span></span>
   
-<span data-ttu-id="f47bd-117">创建查询以搜索并保存第三方数据时，您还可以使用条件来缩小搜索结果的范围。</span><span class="sxs-lookup"><span data-stu-id="f47bd-117">When creating queries to search and hold third-party data, you can also use conditions to narrow the search results.</span></span> <span data-ttu-id="f47bd-118">有关创建内容搜索查询的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。</span><span class="sxs-lookup"><span data-stu-id="f47bd-118">For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).</span></span>
+<span data-ttu-id="5fadf-115">创建查询以搜索并保存第三方数据时，您还可以使用条件来缩小搜索结果的范围。</span><span class="sxs-lookup"><span data-stu-id="5fadf-115">When creating queries to search and hold third-party data, you can also use conditions to narrow the search results.</span></span> <span data-ttu-id="5fadf-116">有关创建内容搜索查询的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。</span><span class="sxs-lookup"><span data-stu-id="5fadf-116">For more information about creating Content Search queries, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).</span></span>
   
-## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a><span data-ttu-id="f47bd-119">创建查询以搜索特定类型的第三方数据</span><span class="sxs-lookup"><span data-stu-id="f47bd-119">Creating a query to search specific types of third-party data</span></span>
+## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a><span data-ttu-id="5fadf-117">创建查询以搜索特定类型的第三方数据</span><span class="sxs-lookup"><span data-stu-id="5fadf-117">Creating a query to search specific types of third-party data</span></span>
 
-<span data-ttu-id="f47bd-120">除了搜索所有类型的第三方数据之外，您可以使用以下消息*属性：值*对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询：</span><span class="sxs-lookup"><span data-stu-id="f47bd-120">Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property:value* pair in the keyword box for a Content Search:</span></span>
+<span data-ttu-id="5fadf-118">除了搜索所有类型的第三方数据之外，您可以使用以下消息*属性：值*对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询：</span><span class="sxs-lookup"><span data-stu-id="5fadf-118">Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property:value* pair in the keyword box for a Content Search:</span></span>
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-<span data-ttu-id="f47bd-121">例如，若要在 Subject 属性中搜索包含 "contoso" 一词的 Facebook 数据，应使用以下查询：</span><span class="sxs-lookup"><span data-stu-id="f47bd-121">For example, to search Facebook data that contains the word "contoso" in the Subject property, you would use the following query:</span></span>
+<span data-ttu-id="5fadf-119">例如，若要在 Subject 属性中搜索包含 "contoso" 一词的 Facebook 数据，应使用以下查询：</span><span class="sxs-lookup"><span data-stu-id="5fadf-119">For example, to search Facebook data that contains the word "contoso" in the Subject property, you would use the following query:</span></span>
   
 ```powershell
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-<span data-ttu-id="f47bd-122">下表列出了可以搜索的第三方数据类型，以及要用于 `itemclass:` 邮件属性以专门搜索那种类型的第三方数据的值。</span><span class="sxs-lookup"><span data-stu-id="f47bd-122">The following table lists the third-party data types that you can search, and the value to use for the  `itemclass:` message property to specifically search for that type of third-party data.</span></span> <span data-ttu-id="f47bd-123">查询语法不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="f47bd-123">The query syntax isn't case-sensitive.</span></span> 
+<span data-ttu-id="5fadf-120">下表列出了可以搜索的第三方数据类型，以及要用于 `itemclass:` 邮件属性以专门搜索那种类型的第三方数据的值。</span><span class="sxs-lookup"><span data-stu-id="5fadf-120">The following table lists the third-party data types that you can search, and the value to use for the  `itemclass:` message property to specifically search for that type of third-party data.</span></span> <span data-ttu-id="5fadf-121">查询语法不区分大小写。</span><span class="sxs-lookup"><span data-stu-id="5fadf-121">The query syntax isn't case-sensitive.</span></span> 
   
-|<span data-ttu-id="f47bd-124">**第三方数据类型**</span><span class="sxs-lookup"><span data-stu-id="f47bd-124">**Third-party data type**</span></span>|<span data-ttu-id="f47bd-125">**属性的值 `itemclass:`**</span><span class="sxs-lookup"><span data-stu-id="f47bd-125">**Value for  `itemclass:` property**</span></span>|
+|<span data-ttu-id="5fadf-122">**第三方数据类型**</span><span class="sxs-lookup"><span data-stu-id="5fadf-122">**Third-party data type**</span></span>|<span data-ttu-id="5fadf-123">**属性的值 `itemclass:`**</span><span class="sxs-lookup"><span data-stu-id="5fadf-123">**Value for  `itemclass:` property**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="f47bd-126">对准</span><span class="sxs-lookup"><span data-stu-id="f47bd-126">AIM</span></span>  <br/> | `ipm.externaldata.AIM*` <br/> |
-|<span data-ttu-id="f47bd-127">American Idol</span><span class="sxs-lookup"><span data-stu-id="f47bd-127">American Idol</span></span>  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
-|<span data-ttu-id="f47bd-128">使用 Pivot 客户端的 AOL</span><span class="sxs-lookup"><span data-stu-id="f47bd-128">AOL with Pivot Client</span></span>  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
-|<span data-ttu-id="f47bd-129">Apple Juice</span><span class="sxs-lookup"><span data-stu-id="f47bd-129">Apple Juice</span></span>  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
-|<span data-ttu-id="f47bd-130">Ares</span><span class="sxs-lookup"><span data-stu-id="f47bd-130">Ares</span></span>  <br/> | `ipm.externaldata.Ares*` <br/> |
-|<span data-ttu-id="f47bd-131">Axs Encrypted</span><span class="sxs-lookup"><span data-stu-id="f47bd-131">Axs Encrypted</span></span>  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
-|<span data-ttu-id="f47bd-132">Axs Exchange</span><span class="sxs-lookup"><span data-stu-id="f47bd-132">Axs Exchange</span></span>  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
-|<span data-ttu-id="f47bd-133">Axs 本地存档</span><span class="sxs-lookup"><span data-stu-id="f47bd-133">Axs Local Archive</span></span>  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
-|<span data-ttu-id="f47bd-134">Axs 占位符</span><span class="sxs-lookup"><span data-stu-id="f47bd-134">Axs Placeholder</span></span>  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
-|<span data-ttu-id="f47bd-135">Axs Signed</span><span class="sxs-lookup"><span data-stu-id="f47bd-135">Axs Signed</span></span>  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
-|<span data-ttu-id="f47bd-136">Bazaarvoice</span><span class="sxs-lookup"><span data-stu-id="f47bd-136">Bazaarvoice</span></span>  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
-|<span data-ttu-id="f47bd-137">Bearshare</span><span class="sxs-lookup"><span data-stu-id="f47bd-137">Bearshare</span></span>  <br/> | `ipm.externaldata.Bearshare*` <br/> |
-|<span data-ttu-id="f47bd-138">BitTorrent</span><span class="sxs-lookup"><span data-stu-id="f47bd-138">BitTorrent</span></span>  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
-|<span data-ttu-id="f47bd-139">Blackberry</span><span class="sxs-lookup"><span data-stu-id="f47bd-139">Blackberry</span></span>  <br/> | `ipm.externaldata.Blackberry*` <br/> |
-|<span data-ttu-id="f47bd-140">BlackBerry 呼叫日志</span><span class="sxs-lookup"><span data-stu-id="f47bd-140">BlackBerry Call Logs</span></span>  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
-|<span data-ttu-id="f47bd-141">BlackBerry Messenger</span><span class="sxs-lookup"><span data-stu-id="f47bd-141">BlackBerry Messenger</span></span>  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
-|<span data-ttu-id="f47bd-142">BlackBerry 针</span><span class="sxs-lookup"><span data-stu-id="f47bd-142">BlackBerry PIN</span></span>  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
-|<span data-ttu-id="f47bd-143">BlackBerry 短信</span><span class="sxs-lookup"><span data-stu-id="f47bd-143">BlackBerry SMS</span></span>  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
-|<span data-ttu-id="f47bd-144">Bloomberg</span><span class="sxs-lookup"><span data-stu-id="f47bd-144">Bloomberg</span></span>  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|<span data-ttu-id="f47bd-145">Bloomberg 邮件</span><span class="sxs-lookup"><span data-stu-id="f47bd-145">Bloomberg Mail</span></span>  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
-|<span data-ttu-id="f47bd-146">Bloomberg 消息传递</span><span class="sxs-lookup"><span data-stu-id="f47bd-146">Bloomberg Messaging</span></span>  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|<span data-ttu-id="f47bd-147">Box</span><span class="sxs-lookup"><span data-stu-id="f47bd-147">Box</span></span>  <br/> | `ipm.externaldata.Box*` <br/> |
-|<span data-ttu-id="f47bd-148">Cisco IM &amp; 状态服务器</span><span class="sxs-lookup"><span data-stu-id="f47bd-148">Cisco IM &amp; Presence Server</span></span>  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
-|<span data-ttu-id="f47bd-149">Cisco Jabber</span><span class="sxs-lookup"><span data-stu-id="f47bd-149">Cisco Jabber</span></span>  <br/> | `ipm.externaldata.Jabber*` <br/> |
-|<span data-ttu-id="f47bd-150">适用于 Salesforce Chatter 的 CipherCloud</span><span class="sxs-lookup"><span data-stu-id="f47bd-150">CipherCloud for Salesforce Chatter</span></span>  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
-|<span data-ttu-id="f47bd-151">Direct Connect</span><span class="sxs-lookup"><span data-stu-id="f47bd-151">Direct Connect</span></span>  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
-|<span data-ttu-id="f47bd-152">Facebook</span><span class="sxs-lookup"><span data-stu-id="f47bd-152">Facebook</span></span>  <br/> | `ipm.externaldata.Facebook*` <br/> |
-|<span data-ttu-id="f47bd-153">FastTrack</span><span class="sxs-lookup"><span data-stu-id="f47bd-153">FastTrack</span></span>  <br/> | `ipm.externaldata.FastTrack*` <br/> |
-|<span data-ttu-id="f47bd-154">FXConnect</span><span class="sxs-lookup"><span data-stu-id="f47bd-154">FXConnect</span></span>  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
-|<span data-ttu-id="f47bd-155">Flickr</span><span class="sxs-lookup"><span data-stu-id="f47bd-155">Flickr</span></span>  <br/> | `ipm.externaldata.Flickr*` <br/> |
-|<span data-ttu-id="f47bd-156">Gnutella</span><span class="sxs-lookup"><span data-stu-id="f47bd-156">Gnutella</span></span>  <br/> | `ipm.externaldata.Gnutella*` <br/> |
-|<span data-ttu-id="f47bd-157">Google +</span><span class="sxs-lookup"><span data-stu-id="f47bd-157">Google+</span></span>  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
-|<span data-ttu-id="f47bd-158">Google 对话</span><span class="sxs-lookup"><span data-stu-id="f47bd-158">Google Talk</span></span>  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
-|<span data-ttu-id="f47bd-159">GoToMyPC</span><span class="sxs-lookup"><span data-stu-id="f47bd-159">GoToMyPC</span></span>  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
-|<span data-ttu-id="f47bd-160">HipChat</span><span class="sxs-lookup"><span data-stu-id="f47bd-160">HipChat</span></span>  <br/> | `ipm.externaldata.HipChat*` <br/> |
-|<span data-ttu-id="f47bd-161">Hopster</span><span class="sxs-lookup"><span data-stu-id="f47bd-161">Hopster</span></span>  <br/> | `ipm.externaldata.Hopster*` <br/> |
-|<span data-ttu-id="f47bd-162">HubConnex</span><span class="sxs-lookup"><span data-stu-id="f47bd-162">HubConnex</span></span>  <br/> | `ipm.externaldata.HubConnex*` <br/> |
-|<span data-ttu-id="f47bd-163">IBM 连接</span><span class="sxs-lookup"><span data-stu-id="f47bd-163">IBM Connections</span></span>  <br/> | `ipm.externaldata.Connections*` <br/> |
-|<span data-ttu-id="f47bd-164">IBM SameTime</span><span class="sxs-lookup"><span data-stu-id="f47bd-164">IBM SameTime</span></span>  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|<span data-ttu-id="f47bd-165">ICE 聊天</span><span class="sxs-lookup"><span data-stu-id="f47bd-165">ICE Chat</span></span>  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
-|<span data-ttu-id="f47bd-166">Indii Messenger</span><span class="sxs-lookup"><span data-stu-id="f47bd-166">Indii Messenger</span></span>  <br/> | `ipm.externaldata.Indii*` <br/> |
-|<span data-ttu-id="f47bd-167">Instagram</span><span class="sxs-lookup"><span data-stu-id="f47bd-167">Instagram</span></span>  <br/> | `ipm.externaldata.Instagram*` <br/> |
-|<span data-ttu-id="f47bd-168">即时 Bloomberg</span><span class="sxs-lookup"><span data-stu-id="f47bd-168">Instant Bloomberg</span></span>  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
-|<span data-ttu-id="f47bd-169">InvestEdge</span><span class="sxs-lookup"><span data-stu-id="f47bd-169">InvestEdge</span></span>  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
-|<span data-ttu-id="f47bd-170">IRC</span><span class="sxs-lookup"><span data-stu-id="f47bd-170">IRC</span></span>  <br/> | `ipm.externaldata.IRC*` <br/> |
-|<span data-ttu-id="f47bd-171">Jive</span><span class="sxs-lookup"><span data-stu-id="f47bd-171">Jive</span></span>  <br/> | `ipm.externaldata.Jive*` <br/> |
-|<span data-ttu-id="f47bd-172">JiveApiRetention</span><span class="sxs-lookup"><span data-stu-id="f47bd-172">JiveApiRetention</span></span>  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
-|<span data-ttu-id="f47bd-173">JXTA</span><span class="sxs-lookup"><span data-stu-id="f47bd-173">JXTA</span></span>  <br/> | `ipm.externaldata.JXTA*` <br/> |
-|<span data-ttu-id="f47bd-174">领英</span><span class="sxs-lookup"><span data-stu-id="f47bd-174">LinkedIn</span></span>  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
-|<span data-ttu-id="f47bd-175">MFTP</span><span class="sxs-lookup"><span data-stu-id="f47bd-175">MFTP</span></span>  <br/> | `ipm.externaldata.MFTP*` <br/> |
-|<span data-ttu-id="f47bd-176">Microsoft UC</span><span class="sxs-lookup"><span data-stu-id="f47bd-176">Microsoft UC</span></span>  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
-|<span data-ttu-id="f47bd-177">构思对齐</span><span class="sxs-lookup"><span data-stu-id="f47bd-177">Mind Align</span></span>  <br/> | `ipm.externaldata.MindAlign*` <br/> |
-|<span data-ttu-id="f47bd-178">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="f47bd-178">Mobile Guard</span></span>  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|<span data-ttu-id="f47bd-179">直接</span><span class="sxs-lookup"><span data-stu-id="f47bd-179">MSN</span></span>  <br/> | `ipm.externaldata.MSN*` <br/> |
-|<span data-ttu-id="f47bd-180">MySpace</span><span class="sxs-lookup"><span data-stu-id="f47bd-180">MySpace</span></span>  <br/> | `ipm.externaldata.MySpace*` <br/> |
-|<span data-ttu-id="f47bd-181">NEONetwork</span><span class="sxs-lookup"><span data-stu-id="f47bd-181">NEONetwork</span></span>  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
-|<span data-ttu-id="f47bd-182">OpenNap</span><span class="sxs-lookup"><span data-stu-id="f47bd-182">OpenNap</span></span>  <br/> | `ipm.externaldata.OpenNap*` <br/> |
-|<span data-ttu-id="f47bd-183">Pinterest</span><span class="sxs-lookup"><span data-stu-id="f47bd-183">Pinterest</span></span>  <br/> | `ipm.externaldata.Pinterest*` <br/> |
-|<span data-ttu-id="f47bd-184">透视</span><span class="sxs-lookup"><span data-stu-id="f47bd-184">Pivot</span></span>  <br/> | `ipm.externaldata.Pivot*` <br/> |
-|<span data-ttu-id="f47bd-185">QQ</span><span class="sxs-lookup"><span data-stu-id="f47bd-185">QQ</span></span>  <br/> | `ipm.externaldata.QQ*` <br/> |
-|<span data-ttu-id="f47bd-186">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="f47bd-186">Microsoft SharePoint</span></span>  <br/> | `ipm.externaldata.SharePoint*` <br/> |
-|<span data-ttu-id="f47bd-187">Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="f47bd-187">Salesforce Chatter</span></span>  <br/> | `ipm.externaldata.Chatter*` <br/> |
-|<span data-ttu-id="f47bd-188">Skype for Business</span><span class="sxs-lookup"><span data-stu-id="f47bd-188">Skype for Business</span></span>  <br/> | `ipm.externaldata.Skype*` <br/> |
-|<span data-ttu-id="f47bd-189">Slack Enterprise Grid</span><span class="sxs-lookup"><span data-stu-id="f47bd-189">Slack Enterprise Grid</span></span>  <br/> | `ipm.externaldata.Slack.IM` <br/> |
-|<span data-ttu-id="f47bd-190">SoftEther</span><span class="sxs-lookup"><span data-stu-id="f47bd-190">SoftEther</span></span>  <br/> | `ipm.externaldata.SoftEther*` <br/> |
-|<span data-ttu-id="f47bd-191">Squawker</span><span class="sxs-lookup"><span data-stu-id="f47bd-191">Squawker</span></span>  <br/> | `ipm.externaldata.Squawker*` <br/> |
-|<span data-ttu-id="f47bd-192">Symphony</span><span class="sxs-lookup"><span data-stu-id="f47bd-192">Symphony</span></span>  <br/> | `ipm.externaldata.Symphony*` <br/> |
-|<span data-ttu-id="f47bd-193">Thomson Reuters</span><span class="sxs-lookup"><span data-stu-id="f47bd-193">Thomson Reuters</span></span>  <br/> | `ipm.externaldata.Reuters*` <br/> |
-| <span data-ttu-id="f47bd-194">Thomson Reuters Eikon Messenger</span><span class="sxs-lookup"><span data-stu-id="f47bd-194">Thomson Reuters Eikon Messenger</span></span>  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
-|<span data-ttu-id="f47bd-195">Tor</span><span class="sxs-lookup"><span data-stu-id="f47bd-195">Tor</span></span>  <br/> | `ipm.externaldata.Tor*` <br/> |
-|<span data-ttu-id="f47bd-196">TTT</span><span class="sxs-lookup"><span data-stu-id="f47bd-196">TTT</span></span>  <br/> | `ipm.externaldata.TTT*` <br/> |
-|<span data-ttu-id="f47bd-197">Twitter</span><span class="sxs-lookup"><span data-stu-id="f47bd-197">Twitter</span></span>  <br/> | `ipm.externaldata.Twitter*` <br/> |
-|<span data-ttu-id="f47bd-198">UBS 聊天</span><span class="sxs-lookup"><span data-stu-id="f47bd-198">UBS Chat</span></span>  <br/> | `ipm.externaldata.UBS*` <br/> |
-|<span data-ttu-id="f47bd-199">Vimeo</span><span class="sxs-lookup"><span data-stu-id="f47bd-199">Vimeo</span></span>  <br/> | `ipm.externaldata.Vimeo*` <br/> |
-|<span data-ttu-id="f47bd-200">WinMX</span><span class="sxs-lookup"><span data-stu-id="f47bd-200">WinMX</span></span>  <br/> | `ipm.externaldata.WinMX*` <br/> |
-|<span data-ttu-id="f47bd-201">Winny</span><span class="sxs-lookup"><span data-stu-id="f47bd-201">Winny</span></span>  <br/> | `ipm.externaldata.Winny*` <br/> |
-|<span data-ttu-id="f47bd-202">Yahoo！</span><span class="sxs-lookup"><span data-stu-id="f47bd-202">Yahoo!</span></span>  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
-|<span data-ttu-id="f47bd-203">Yammer</span><span class="sxs-lookup"><span data-stu-id="f47bd-203">Yammer</span></span>  <br/> | `ipm.externaldata.Yammer*` <br/> |
-|<span data-ttu-id="f47bd-204">YellowJacket</span><span class="sxs-lookup"><span data-stu-id="f47bd-204">YellowJacket</span></span>  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
-|<span data-ttu-id="f47bd-205">YouTube</span><span class="sxs-lookup"><span data-stu-id="f47bd-205">YouTube</span></span>  <br/> | `ipm.externaldata.YouTube*` <br/> |
+|<span data-ttu-id="5fadf-124">对准</span><span class="sxs-lookup"><span data-stu-id="5fadf-124">AIM</span></span>  <br/> | `ipm.externaldata.AIM*` <br/> |
+|<span data-ttu-id="5fadf-125">American Idol</span><span class="sxs-lookup"><span data-stu-id="5fadf-125">American Idol</span></span>  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
+|<span data-ttu-id="5fadf-126">使用 Pivot 客户端的 AOL</span><span class="sxs-lookup"><span data-stu-id="5fadf-126">AOL with Pivot Client</span></span>  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
+|<span data-ttu-id="5fadf-127">Apple Juice</span><span class="sxs-lookup"><span data-stu-id="5fadf-127">Apple Juice</span></span>  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
+|<span data-ttu-id="5fadf-128">Ares</span><span class="sxs-lookup"><span data-stu-id="5fadf-128">Ares</span></span>  <br/> | `ipm.externaldata.Ares*` <br/> |
+|<span data-ttu-id="5fadf-129">Axs Encrypted</span><span class="sxs-lookup"><span data-stu-id="5fadf-129">Axs Encrypted</span></span>  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
+|<span data-ttu-id="5fadf-130">Axs Exchange</span><span class="sxs-lookup"><span data-stu-id="5fadf-130">Axs Exchange</span></span>  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
+|<span data-ttu-id="5fadf-131">Axs 本地存档</span><span class="sxs-lookup"><span data-stu-id="5fadf-131">Axs Local Archive</span></span>  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
+|<span data-ttu-id="5fadf-132">Axs 占位符</span><span class="sxs-lookup"><span data-stu-id="5fadf-132">Axs Placeholder</span></span>  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
+|<span data-ttu-id="5fadf-133">Axs Signed</span><span class="sxs-lookup"><span data-stu-id="5fadf-133">Axs Signed</span></span>  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
+|<span data-ttu-id="5fadf-134">Bazaarvoice</span><span class="sxs-lookup"><span data-stu-id="5fadf-134">Bazaarvoice</span></span>  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
+|<span data-ttu-id="5fadf-135">Bearshare</span><span class="sxs-lookup"><span data-stu-id="5fadf-135">Bearshare</span></span>  <br/> | `ipm.externaldata.Bearshare*` <br/> |
+|<span data-ttu-id="5fadf-136">BitTorrent</span><span class="sxs-lookup"><span data-stu-id="5fadf-136">BitTorrent</span></span>  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
+|<span data-ttu-id="5fadf-137">Blackberry</span><span class="sxs-lookup"><span data-stu-id="5fadf-137">Blackberry</span></span>  <br/> | `ipm.externaldata.Blackberry*` <br/> |
+|<span data-ttu-id="5fadf-138">BlackBerry 呼叫日志</span><span class="sxs-lookup"><span data-stu-id="5fadf-138">BlackBerry Call Logs</span></span>  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
+|<span data-ttu-id="5fadf-139">BlackBerry Messenger</span><span class="sxs-lookup"><span data-stu-id="5fadf-139">BlackBerry Messenger</span></span>  <br/> | `ipm.externaldata.BlackBerryMessenger*` <br/> |
+|<span data-ttu-id="5fadf-140">BlackBerry 针</span><span class="sxs-lookup"><span data-stu-id="5fadf-140">BlackBerry PIN</span></span>  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
+|<span data-ttu-id="5fadf-141">BlackBerry 短信</span><span class="sxs-lookup"><span data-stu-id="5fadf-141">BlackBerry SMS</span></span>  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
+|<span data-ttu-id="5fadf-142">Bloomberg</span><span class="sxs-lookup"><span data-stu-id="5fadf-142">Bloomberg</span></span>  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
+|<span data-ttu-id="5fadf-143">Bloomberg 邮件</span><span class="sxs-lookup"><span data-stu-id="5fadf-143">Bloomberg Mail</span></span>  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|<span data-ttu-id="5fadf-144">Bloomberg 消息传递</span><span class="sxs-lookup"><span data-stu-id="5fadf-144">Bloomberg Messaging</span></span>  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
+|<span data-ttu-id="5fadf-145">Box</span><span class="sxs-lookup"><span data-stu-id="5fadf-145">Box</span></span>  <br/> | `ipm.externaldata.Box*` <br/> |
+|<span data-ttu-id="5fadf-146">Cisco IM &amp; 状态服务器</span><span class="sxs-lookup"><span data-stu-id="5fadf-146">Cisco IM &amp; Presence Server</span></span>  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|<span data-ttu-id="5fadf-147">Cisco Jabber</span><span class="sxs-lookup"><span data-stu-id="5fadf-147">Cisco Jabber</span></span>  <br/> | `ipm.externaldata.Jabber*` <br/> |
+|<span data-ttu-id="5fadf-148">适用于 Salesforce Chatter 的 CipherCloud</span><span class="sxs-lookup"><span data-stu-id="5fadf-148">CipherCloud for Salesforce Chatter</span></span>  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
+|<span data-ttu-id="5fadf-149">Direct Connect</span><span class="sxs-lookup"><span data-stu-id="5fadf-149">Direct Connect</span></span>  <br/> | `ipm.externaldata.DirectConnect*` <br/> |
+|<span data-ttu-id="5fadf-150">Facebook</span><span class="sxs-lookup"><span data-stu-id="5fadf-150">Facebook</span></span>  <br/> | `ipm.externaldata.Facebook*` <br/> |
+|<span data-ttu-id="5fadf-151">FastTrack</span><span class="sxs-lookup"><span data-stu-id="5fadf-151">FastTrack</span></span>  <br/> | `ipm.externaldata.FastTrack*` <br/> |
+|<span data-ttu-id="5fadf-152">FXConnect</span><span class="sxs-lookup"><span data-stu-id="5fadf-152">FXConnect</span></span>  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
+|<span data-ttu-id="5fadf-153">Flickr</span><span class="sxs-lookup"><span data-stu-id="5fadf-153">Flickr</span></span>  <br/> | `ipm.externaldata.Flickr*` <br/> |
+|<span data-ttu-id="5fadf-154">Gnutella</span><span class="sxs-lookup"><span data-stu-id="5fadf-154">Gnutella</span></span>  <br/> | `ipm.externaldata.Gnutella*` <br/> |
+|<span data-ttu-id="5fadf-155">Google +</span><span class="sxs-lookup"><span data-stu-id="5fadf-155">Google+</span></span>  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
+|<span data-ttu-id="5fadf-156">Google 对话</span><span class="sxs-lookup"><span data-stu-id="5fadf-156">Google Talk</span></span>  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
+|<span data-ttu-id="5fadf-157">GoToMyPC</span><span class="sxs-lookup"><span data-stu-id="5fadf-157">GoToMyPC</span></span>  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
+|<span data-ttu-id="5fadf-158">HipChat</span><span class="sxs-lookup"><span data-stu-id="5fadf-158">HipChat</span></span>  <br/> | `ipm.externaldata.HipChat*` <br/> |
+|<span data-ttu-id="5fadf-159">Hopster</span><span class="sxs-lookup"><span data-stu-id="5fadf-159">Hopster</span></span>  <br/> | `ipm.externaldata.Hopster*` <br/> |
+|<span data-ttu-id="5fadf-160">HubConnex</span><span class="sxs-lookup"><span data-stu-id="5fadf-160">HubConnex</span></span>  <br/> | `ipm.externaldata.HubConnex*` <br/> |
+|<span data-ttu-id="5fadf-161">IBM 连接</span><span class="sxs-lookup"><span data-stu-id="5fadf-161">IBM Connections</span></span>  <br/> | `ipm.externaldata.Connections*` <br/> |
+|<span data-ttu-id="5fadf-162">IBM SameTime</span><span class="sxs-lookup"><span data-stu-id="5fadf-162">IBM SameTime</span></span>  <br/> | `ipm.externaldata.Sametime*` <br/> |
+|<span data-ttu-id="5fadf-163">ICE 聊天</span><span class="sxs-lookup"><span data-stu-id="5fadf-163">ICE Chat</span></span>  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|<span data-ttu-id="5fadf-164">Indii Messenger</span><span class="sxs-lookup"><span data-stu-id="5fadf-164">Indii Messenger</span></span>  <br/> | `ipm.externaldata.Indii*` <br/> |
+|<span data-ttu-id="5fadf-165">Instagram</span><span class="sxs-lookup"><span data-stu-id="5fadf-165">Instagram</span></span>  <br/> | `ipm.externaldata.Instagram*` <br/> |
+|<span data-ttu-id="5fadf-166">即时 Bloomberg</span><span class="sxs-lookup"><span data-stu-id="5fadf-166">Instant Bloomberg</span></span>  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
+|<span data-ttu-id="5fadf-167">InvestEdge</span><span class="sxs-lookup"><span data-stu-id="5fadf-167">InvestEdge</span></span>  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
+|<span data-ttu-id="5fadf-168">IRC</span><span class="sxs-lookup"><span data-stu-id="5fadf-168">IRC</span></span>  <br/> | `ipm.externaldata.IRC*` <br/> |
+|<span data-ttu-id="5fadf-169">Jive</span><span class="sxs-lookup"><span data-stu-id="5fadf-169">Jive</span></span>  <br/> | `ipm.externaldata.Jive*` <br/> |
+|<span data-ttu-id="5fadf-170">JiveApiRetention</span><span class="sxs-lookup"><span data-stu-id="5fadf-170">JiveApiRetention</span></span>  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
+|<span data-ttu-id="5fadf-171">JXTA</span><span class="sxs-lookup"><span data-stu-id="5fadf-171">JXTA</span></span>  <br/> | `ipm.externaldata.JXTA*` <br/> |
+|<span data-ttu-id="5fadf-172">领英</span><span class="sxs-lookup"><span data-stu-id="5fadf-172">LinkedIn</span></span>  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
+|<span data-ttu-id="5fadf-173">MFTP</span><span class="sxs-lookup"><span data-stu-id="5fadf-173">MFTP</span></span>  <br/> | `ipm.externaldata.MFTP*` <br/> |
+|<span data-ttu-id="5fadf-174">Microsoft UC</span><span class="sxs-lookup"><span data-stu-id="5fadf-174">Microsoft UC</span></span>  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
+|<span data-ttu-id="5fadf-175">构思对齐</span><span class="sxs-lookup"><span data-stu-id="5fadf-175">Mind Align</span></span>  <br/> | `ipm.externaldata.MindAlign*` <br/> |
+|<span data-ttu-id="5fadf-176">Mobile Guard</span><span class="sxs-lookup"><span data-stu-id="5fadf-176">Mobile Guard</span></span>  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
+|<span data-ttu-id="5fadf-177">直接</span><span class="sxs-lookup"><span data-stu-id="5fadf-177">MSN</span></span>  <br/> | `ipm.externaldata.MSN*` <br/> |
+|<span data-ttu-id="5fadf-178">MySpace</span><span class="sxs-lookup"><span data-stu-id="5fadf-178">MySpace</span></span>  <br/> | `ipm.externaldata.MySpace*` <br/> |
+|<span data-ttu-id="5fadf-179">NEONetwork</span><span class="sxs-lookup"><span data-stu-id="5fadf-179">NEONetwork</span></span>  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
+|<span data-ttu-id="5fadf-180">OpenNap</span><span class="sxs-lookup"><span data-stu-id="5fadf-180">OpenNap</span></span>  <br/> | `ipm.externaldata.OpenNap*` <br/> |
+|<span data-ttu-id="5fadf-181">Pinterest</span><span class="sxs-lookup"><span data-stu-id="5fadf-181">Pinterest</span></span>  <br/> | `ipm.externaldata.Pinterest*` <br/> |
+|<span data-ttu-id="5fadf-182">透视</span><span class="sxs-lookup"><span data-stu-id="5fadf-182">Pivot</span></span>  <br/> | `ipm.externaldata.Pivot*` <br/> |
+|<span data-ttu-id="5fadf-183">QQ</span><span class="sxs-lookup"><span data-stu-id="5fadf-183">QQ</span></span>  <br/> | `ipm.externaldata.QQ*` <br/> |
+|<span data-ttu-id="5fadf-184">Microsoft SharePoint</span><span class="sxs-lookup"><span data-stu-id="5fadf-184">Microsoft SharePoint</span></span>  <br/> | `ipm.externaldata.SharePoint*` <br/> |
+|<span data-ttu-id="5fadf-185">Salesforce Chatter</span><span class="sxs-lookup"><span data-stu-id="5fadf-185">Salesforce Chatter</span></span>  <br/> | `ipm.externaldata.Chatter*` <br/> |
+|<span data-ttu-id="5fadf-186">Skype for Business</span><span class="sxs-lookup"><span data-stu-id="5fadf-186">Skype for Business</span></span>  <br/> | `ipm.externaldata.Skype*` <br/> |
+|<span data-ttu-id="5fadf-187">Slack Enterprise Grid</span><span class="sxs-lookup"><span data-stu-id="5fadf-187">Slack Enterprise Grid</span></span>  <br/> | `ipm.externaldata.Slack.IM` <br/> |
+|<span data-ttu-id="5fadf-188">SoftEther</span><span class="sxs-lookup"><span data-stu-id="5fadf-188">SoftEther</span></span>  <br/> | `ipm.externaldata.SoftEther*` <br/> |
+|<span data-ttu-id="5fadf-189">Squawker</span><span class="sxs-lookup"><span data-stu-id="5fadf-189">Squawker</span></span>  <br/> | `ipm.externaldata.Squawker*` <br/> |
+|<span data-ttu-id="5fadf-190">Symphony</span><span class="sxs-lookup"><span data-stu-id="5fadf-190">Symphony</span></span>  <br/> | `ipm.externaldata.Symphony*` <br/> |
+|<span data-ttu-id="5fadf-191">Thomson Reuters</span><span class="sxs-lookup"><span data-stu-id="5fadf-191">Thomson Reuters</span></span>  <br/> | `ipm.externaldata.Reuters*` <br/> |
+| <span data-ttu-id="5fadf-192">Thomson Reuters Eikon Messenger</span><span class="sxs-lookup"><span data-stu-id="5fadf-192">Thomson Reuters Eikon Messenger</span></span>  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
+|<span data-ttu-id="5fadf-193">Tor</span><span class="sxs-lookup"><span data-stu-id="5fadf-193">Tor</span></span>  <br/> | `ipm.externaldata.Tor*` <br/> |
+|<span data-ttu-id="5fadf-194">TTT</span><span class="sxs-lookup"><span data-stu-id="5fadf-194">TTT</span></span>  <br/> | `ipm.externaldata.TTT*` <br/> |
+|<span data-ttu-id="5fadf-195">Twitter</span><span class="sxs-lookup"><span data-stu-id="5fadf-195">Twitter</span></span>  <br/> | `ipm.externaldata.Twitter*` <br/> |
+|<span data-ttu-id="5fadf-196">UBS 聊天</span><span class="sxs-lookup"><span data-stu-id="5fadf-196">UBS Chat</span></span>  <br/> | `ipm.externaldata.UBS*` <br/> |
+|<span data-ttu-id="5fadf-197">Vimeo</span><span class="sxs-lookup"><span data-stu-id="5fadf-197">Vimeo</span></span>  <br/> | `ipm.externaldata.Vimeo*` <br/> |
+|<span data-ttu-id="5fadf-198">WinMX</span><span class="sxs-lookup"><span data-stu-id="5fadf-198">WinMX</span></span>  <br/> | `ipm.externaldata.WinMX*` <br/> |
+|<span data-ttu-id="5fadf-199">Winny</span><span class="sxs-lookup"><span data-stu-id="5fadf-199">Winny</span></span>  <br/> | `ipm.externaldata.Winny*` <br/> |
+|<span data-ttu-id="5fadf-200">Yahoo！</span><span class="sxs-lookup"><span data-stu-id="5fadf-200">Yahoo!</span></span>  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
+|<span data-ttu-id="5fadf-201">Yammer</span><span class="sxs-lookup"><span data-stu-id="5fadf-201">Yammer</span></span>  <br/> | `ipm.externaldata.Yammer*` <br/> |
+|<span data-ttu-id="5fadf-202">YellowJacket</span><span class="sxs-lookup"><span data-stu-id="5fadf-202">YellowJacket</span></span>  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
+|<span data-ttu-id="5fadf-203">YouTube</span><span class="sxs-lookup"><span data-stu-id="5fadf-203">YouTube</span></span>  <br/> | `ipm.externaldata.YouTube*` <br/> |
