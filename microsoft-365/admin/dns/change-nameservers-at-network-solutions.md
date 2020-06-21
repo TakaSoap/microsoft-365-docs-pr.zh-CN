@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '如果希望 Microsoft 管理 DNS 记录，请了解如何设置包含网络解决方案的 Microsoft 自定义域。 '
-ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400601"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780381"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>更改名称服务器以使用网络解决方案设置 Microsoft
 
@@ -37,14 +37,14 @@ ms.locfileid: "44400601"
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>在 Network Solutions 处添加 TXT 记录以验证是否拥有该域
 
-在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-请按下列步骤操作或[观看视频（从 0:47 开始）](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频（从 0:47 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。
   
-1. 若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。系统将会提示您登录。
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
     > [!IMPORTANT]
     > 在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。
@@ -108,7 +108,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
   
 > [!NOTE]
->  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
@@ -117,7 +117,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 > [!CAUTION]
 > 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，在进行此更改后，发送到您的域的所有电子邮件（如 rob@ *your_domain* .com）都将启动到 Microsoft。
   
-准备好更改你的 NS 记录，以便 Microsoft 可以设置你的域了吗？ 请按下列步骤操作或[观看视频（从 2:23 开始）](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US)。
+准备好更改你的 NS 记录，以便 Microsoft 可以设置你的域了吗？ 请按下列步骤操作或[观看视频（从 2:23 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。
   
 > [!IMPORTANT]
 >  完成本节中的步骤后，应列出的*唯一*名称服务器为以下四个： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 以下过程将演示如何从列表中删除任何其他不需要的名称服务器，以及如何添加 *正确*  的名称服务器（如果它们尚未显示在列表中）。 
@@ -179,7 +179,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ### <a name="if-there-are-nameservers-already-listed"></a>如果已列出名称服务器
 
 > [!CAUTION]
-> *仅*  当具有这四个  *正确*  的名称服务器以外的现有名称服务器时，执行以下步骤。（即，  *仅*  删除名称  *不是* **ns1.bdm.microsoftonline.com** 、 **ns2.bdm.microsoftonline.com** 、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的任何当前名称服务器。）
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. (That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)
   
 1. 如果列有任何其他名称服务器，选择服务器，然后按键盘上的 **Delete** 键，将其删除。
     

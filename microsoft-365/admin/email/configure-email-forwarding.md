@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置向一个或多个电子邮件帐户转发电子邮件。
-ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432297"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780249"
 ---
 # <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -53,7 +53,7 @@ ms.locfileid: "44432297"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
  
@@ -61,7 +61,7 @@ ms.locfileid: "44432297"
   
 4. 在 "电子邮件转发" 页面上，选择 "**转发所有发送到此邮箱的电子邮件**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存更改**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
@@ -71,7 +71,7 @@ ms.locfileid: "44432297"
 
 ::: moniker range="o365-germany"
     
- 1.   在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
+ 1.   在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
 
@@ -79,7 +79,7 @@ ms.locfileid: "44432297"
 
 4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
@@ -89,7 +89,7 @@ ms.locfileid: "44432297"
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
 
@@ -97,7 +97,7 @@ ms.locfileid: "44432297"
 
 4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     

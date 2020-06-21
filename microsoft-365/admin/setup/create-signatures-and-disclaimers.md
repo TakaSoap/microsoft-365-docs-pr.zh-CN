@@ -23,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 了解如何向进入或离开组织的所有电子邮件添加电子邮件签名、法律免责声明或泄露声明。
-ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398950"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779877"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围的签名和免责声明
 
- 可向发送到组织或从组织发出的电子邮件添加电子邮件签名、法律免责声明或公开声明。可将其设置为应用于所有待收和待发邮件，如下所示。也可将其应用到某些邮件，例如包含特定字词或文本模式的邮件。
+ You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  观看有关创建公司范围的电子邮件签名的简短视频。 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>创建一个应用于所有邮件的签名
 
@@ -89,7 +89,7 @@ ms.locfileid: "44398950"
 
 9. 选择 "**选择一个**"，然后选择 "**包装**为回退" 选项。 然后选择" **确定**"。 这意味着如果由于加密或其他邮件设置而无法添加免责声明，免责声明将封装在邮件信封中。
     
-10. 保留" **用安全性级别审核此规则**"处于选中状态。然后选择要在邮件日志中使用的" **低**"、" **中**"或" **高**"。 
+10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
     
 11. 选择" **强制使用**"，立即打开免责声明，除非需要首先进行测试。 
     

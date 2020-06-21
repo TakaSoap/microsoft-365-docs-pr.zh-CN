@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: '通过将自定义磁贴添加到应用启动器中，创建指向您的电子邮件、文档、应用程序、SharePoint 网站、外部网站和其他资源的快速链接。 '
-ms.openlocfilehash: cad78207c5d4025d385a7452fbe86df79a694067
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7220f0be8ad6605b7ad6d30000fde6411948c996
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399772"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780129"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>向应用启动器添加自定义磁贴
 
@@ -37,9 +37,9 @@ ms.locfileid: "44399772"
 
 ::: moniker-end
 
-在 Microsoft 365 中，可以使用应用启动器快速轻松地访问您的电子邮件、日历、文档和应用程序（[了解详细信息](https://support.office.com/article/79f12104-6fed-442f-96a0-eb089a3f476a.aspx)）。 这些是使用 Microsoft 365 获取的应用以及从[SharePoint 应用商店](https://support.office.com/article/dd98e50e-d3db-4ecb-9bb7-82b189822d43.aspx)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)添加的自定义应用程序。
+在 Microsoft 365 中，可以使用应用启动器快速轻松地访问您的电子邮件、日历、文档和应用程序（[了解详细信息](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)）。 这些是使用 Microsoft 365 获取的应用以及从[SharePoint 应用商店](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)添加的自定义应用程序。
   
-可将自己的自定义磁贴添加到应用启动器，这些磁贴指向 SharePoint 网站、外部网站、旧版应用等。自定义磁贴显示在应用启动器的" **全部**"应用下，可将其固定到" **主页**"应用，并指示用户执行相同操作。这样做便于查找相关网站、应用和资源来完成工作。 在以下示例中，名为"Contoso 门户"的自定义磁贴用于访问组织的主要 SharePoint 网站。 
+You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
   
 ![应用启动器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   
@@ -89,6 +89,6 @@ ms.locfileid: "44399772"
   
 ## <a name="whats-next"></a>下一步做什么？
 
-除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏中（[了解详细信息](https://support.office.com/article/personalize-your-office-365-experience-eb34a21b-52fa-4fbf-a8d5-146132242985)）。 若要自定义 Microsoft 365 的外观以与您的组织的品牌相匹配，请参阅[自定义 microsoft 365 主题](../setup/customize-your-organization-theme.md)。
+除了将磁贴添加到应用启动器之外，还可以将应用启动器磁贴添加到导航栏中（[了解详细信息](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985)）。 若要自定义 Microsoft 365 的外观以与您的组织的品牌相匹配，请参阅[自定义 microsoft 365 主题](../setup/customize-your-organization-theme.md)。
   
 

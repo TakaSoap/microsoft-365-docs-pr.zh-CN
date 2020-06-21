@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209747"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726847"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -36,7 +36,17 @@ ms.locfileid: "44209747"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**提交**页面，请使用 <https://protection.office.com/reportsubmission> 。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反垃圾邮件策略，您必须是 "**组织管理**"、"**安全管理员**" 或 "**安全读者**" 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
+
+  - 若要向 Microsoft 提交邮件和文件，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对提交门户进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
 
 - 有关用户如何向 Microsoft 提交邮件和文件的详细信息，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -198,7 +208,7 @@ ms.locfileid: "44209747"
 若要更改筛选条件，请单击 "**发件人**" 按钮，然后选择下列值之一：
 
 - **发件人域**
-- **Subject**
+- **主题**
 - **提交者**
 - **提交类型**
 - **发件人 IP**

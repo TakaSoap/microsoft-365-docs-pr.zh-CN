@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 了解计费配置文件如何支持发票。
 keywords: 计费配置文件、发票、费用、管理费用
-ms.openlocfilehash: 64f0f6bf456b1251a2db49aa9c2f7473cb7c885b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2979909e3b916cc4bc8704f32a821b13fa6090e0
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401770"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741712"
 ---
 # <a name="manage-billing-profiles"></a>管理计费对象信息
 
@@ -61,7 +61,7 @@ ms.locfileid: "44401770"
 
 ## <a name="view-billing-profiles"></a>查看帐单配置文件
 
-1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">账单和付款</a>”页。
+1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
 
 2. 选择 "**帐单配置文件**"，然后从列表中选择帐单配置文件。
 
@@ -76,7 +76,7 @@ ms.locfileid: "44401770"
     > [!NOTE]
     > 如果你没有任何 Azure 信用，你将看不到**azure 信用余额**或**azure 积分**选项卡。
 
-## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
 
 如果你在 Azure 费用方面遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">使用 azure 支持创建支持请求</a>。
 

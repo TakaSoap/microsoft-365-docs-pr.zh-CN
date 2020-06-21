@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 本分步部署指南可用于在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站。
-ms.openlocfilehash: 772a9e5ea08871857a70cc840e377046d459a314
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036447"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755220"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -66,7 +66,7 @@ ms.locfileid: "44036447"
     
 - 网站查看器（将包含步骤3中的列表）
     
-1. 在浏览器中，转到 Azure 门户， [https://portal.azure.com](https://portal.azure.com)并使用已分配给用户管理管理员或公司管理员角色的帐户的凭据进行登录。
+1. 在浏览器中，转到 Azure 门户， [https://portal.azure.com](https://portal.azure.com) 并使用已分配给用户管理管理员或公司管理员角色的帐户的凭据进行登录。
     
 2. 在 Azure 门户中，单击“**Azure Active Directory”>“组**”。
     
@@ -93,7 +93,7 @@ ms.locfileid: "44036447"
   
 ![用于部署独立 SharePoint Online 网站的三个访问组。](../../media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
-### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>第 5 步： 将用户帐户添加到访问组
+### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>步骤 5. 将用户帐户添加到访问组
 
 在此步骤中，请执行以下操作：
   
@@ -161,7 +161,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用这些步骤创建 SharePoint Online 团队网站。
   
-1. 使用将用于管理 SharePoint Online 团队网站（SharePoint Online 管理员）的帐户登录到 Microsoft 365 管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将用于管理 SharePoint Online 团队网站（SharePoint Online 管理员）的帐户登录到 Microsoft 365 管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在 Microsoft 365 管理中心的 "**管理中心**" 下，单击 " **SharePoint**"。
 
@@ -187,11 +187,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 4. 将 "**允许访问请求**" 设置为 "**关闭**"。
 
-5. 单击“**保存**”。
+5. 单击“保存”****。
     
 6. 在 "**权限**" 窗格中，单击 "**高级权限设置**"。
     
-7. 在浏览器的 "**权限**" 选项卡上，单击** \<** 列表中的 "网站名称"> 成员。
+7. 在浏览器的 "**权限**" 选项卡上，单击列表中的 " ** \<site name> 成员**"。
     
 8. 在“人员和组”中，单击“新建”********。
     
@@ -199,7 +199,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 10. 单击浏览器上的后退按钮。
     
-11. 单击列表中的 " ** \<网站名称"> 所有者**"。
+11. 单击列表中的 " ** \<site name> 所有者**"。
     
 12. 在“人员和组”中，单击“新建”********。
     
@@ -207,7 +207,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 14. 单击浏览器上的后退按钮。
     
-15. 在列表中单击 " ** \<网站名称"> 访问者**。
+15. 单击列表中的 " ** \<site name> 访问者**"。
     
 16. 在“人员和组”中，单击“新建”********。
     
@@ -217,11 +217,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 以下是这些权限设置的结果：
   
-- " ** \<网站名称> 所有者**" SharePoint 组包含 "网站管理员" 访问组，其中所有成员都具有 "**完全控制**" 权限级别。
+- " ** \<site name> 所有者**" SharePoint 组包含 "网站管理员" 访问组，其中所有成员都具有 "**完全控制**" 权限级别。
     
-- " ** \<网站名称> 成员**" SharePoint 组包含 "网站成员" 访问组，其中所有成员都具有 "**编辑**" 权限级别。
+- " ** \<site name> 成员**" SharePoint 组包含 "网站成员" 访问组，其中所有成员都具有 "**编辑**" 权限级别。
     
-- " ** \<网站名称> 访问者**" SharePoint 组包含 "网站查看者" 访问组，其中所有成员都具有 "**读取**" 权限级别。
+- ** \<site name> 访问者**SharePoint 组包含 "网站查看者" 访问组，其中所有成员都具有 "**读取**" 权限级别。
     
 - 禁用成员邀请其他成员或非成员请求访问的功能已被禁用。
     

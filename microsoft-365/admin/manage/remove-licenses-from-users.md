@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 了解如何从用户帐户中删除许可证。
-ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 2918d8263318e9b6ce14076fb121e898249b5c48
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432227"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780069"
 ---
 # <a name="unassign-licenses-from-users"></a>取消分配用户许可证
 
@@ -57,7 +57,7 @@ ms.locfileid: "44432227"
 
 ::: moniker range="o365-worldwide"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要为其取消分配许可证的用户所在的行。
 
@@ -69,7 +69,7 @@ ms.locfileid: "44432227"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配许可证的用户。
 
@@ -99,7 +99,7 @@ ms.locfileid: "44432227"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配许可证的用户的名称旁边的圆圈。
 
@@ -113,7 +113,7 @@ ms.locfileid: "44432227"
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配所有许可证的用户的名称旁边的框。
 
@@ -127,7 +127,7 @@ ms.locfileid: "44432227"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要为其取消分配所有许可证的用户的名称旁边的框。
 
@@ -145,7 +145,7 @@ ms.locfileid: "44432227"
 
 - 可[使用 Office 365 PowerShell 删除用户帐户的许可证](https://go.microsoft.com/fwlink/p/?linkid=848428)。
 
-- 还可[删除向其分配了许可证的用户帐户](../add-users/delete-a-user.md)，方便其他用户使用其许可证。删除用户帐户时，其许可证会立即可分配给其他用户。
+- You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 - 从用户中删除许可证后，与该帐户关联的数据将保留30天。 30天宽限期后，数据将被删除，并且无法恢复。
 
@@ -157,7 +157,7 @@ ms.locfileid: "44432227"
 
 - 若要了解如何在删除许可证后阻止用户访问 Microsoft 365 数据，以及如何在以后获取对数据的访问权限，请参阅[删除以前的员工](../add-users/remove-former-employee.md)。
 
-- 如果您删除用户的许可证，但他们仍安装了 Office，他们会在使用 Office 时看到未[授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- 如果您删除用户的许可证，但他们仍安装了 Office，他们会在使用 Office 时看到未[授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)。
 
 ## <a name="related-articles"></a>相关文章
 

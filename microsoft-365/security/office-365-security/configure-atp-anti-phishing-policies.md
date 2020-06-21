@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护（Office 365 ATP）的组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: 137c29784c27912b2f8c1a84ac704418722aaf59
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 458a4eac348598d1b752267ed7d79b97bc594580
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616642"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726764"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -73,7 +73,17 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反网络钓鱼策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对反网络钓鱼策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
+
+  - 若要添加、修改和删除 ATP 反网络钓鱼策略，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对 ATP 反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
 
 - 有关 ATP 反网络钓鱼策略的建议设置，请参阅[OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
 
@@ -101,7 +111,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 4. 在显示的 "**应用于**" 页上，确定该策略应用于的内部收件人。
 
-   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _\<recipient1\>_ 或 _\<recipient2\>_ ）。 不同的条件或例外使用和逻辑（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
+   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
    单击 "**添加条件**"。 在出现的下拉列表中，选择 "**应用**条件：
 
@@ -203,7 +213,7 @@ ATP 反网络钓鱼策略的基本要素为：
      - **显示模拟域的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
      - **显示不正常字符的提示**：默认值为**Off**。 若要打开它，请将开关滑到 **"开**"。
 
-     完成时，请单击“保存”****。
+     完成后，单击 **“保存”**。
 
    - **邮箱智能**：
 

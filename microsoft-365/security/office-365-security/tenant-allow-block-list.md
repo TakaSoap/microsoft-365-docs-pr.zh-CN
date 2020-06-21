@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以了解如何在安全 & 合规性中心中配置租户允许/阻止列表中的 URL 和文件条目。
-ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613416"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726812"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>管理租户允许/阻止列表中的 Url 和文件
 
@@ -56,9 +56,19 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
 - 默认情况下，租户允许/阻止列表中的条目将在30天后过期。 您可以指定一个日期或将它们设置为永不过期。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加和删除租户允许/阻止列表中的值，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对租户允许/阻止列表进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
+
+  - 若要添加和删除租户允许/阻止列表中的值，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对租户允许/阻止列表进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全 & 合规性中心在租户允许/阻止列表中创建 URL 条目
 
@@ -166,7 +176,7 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
    - **可选注释**：输入条目的描述性文本。
 
-5. 完成时，请单击“保存”****。
+5. 完成后，单击 **“保存”**。
 
 ## <a name="use-the-security--compliance-center-to-remove-url-and-file-entries-from-the-tenant-allowblock-list"></a>使用安全 & 合规性中心从租户允许/阻止列表中删除 URL 和文件条目
 
@@ -262,7 +272,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 - 允许使用 IP4v 和 IPv6 地址，但 TCP/UDP 端口不允许。
 
-- 不允许使用文件扩展名（例如，"test"）。
+- 不允许使用文件扩展名（例如，test.pdf）。
 
 - Unicode 不受支持，但 Punycode 是。
 

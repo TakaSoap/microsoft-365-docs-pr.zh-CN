@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 中确定仿冒邮件的原因以及在将来阻止更多网络钓鱼邮件的原因。
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588436"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755048"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -51,17 +51,21 @@ ms.locfileid: "44588436"
 
 - 在每月的基础上，运行[安全分数](../mtp/microsoft-secure-score.md)以评估组织的安全设置。
 
-- 定期查看[欺骗智能报告](learn-about-spoof-intelligence.md)并[将欺骗智能配置](set-up-anti-phishing-policies.md#spoof-settings)为**隔离**可疑邮件，而不是将其传递到用户的 "垃圾邮件" 文件夹。
+- 对于因错误而在隔离的邮件中或允许通过的邮件，我们建议您在[威胁资源管理器和实时检测](threat-explorer.md)中搜索这些邮件。 您可以按发件人、收件人或邮件 ID 进行搜索。 找到该邮件后，单击 "主题" 以转到 "详细信息"。 对于隔离的邮件，请查看 "检测技术" 是什么，以便您可以使用相应的方法进行替代。 对于允许的邮件，请查看允许邮件使用的策略。 
+
+- 哄骗邮件在 ATP 中被标记为网络钓鱼。 有时欺骗是良性的，有时用户不希望隔离。 若要最大限度地减少对用户的影响，请定期查看[欺骗智能报告](learn-about-spoof-intelligence.md)。 一旦您查看并进行了任何必需的替代，您就可以放心地[将欺骗智能配置](set-up-anti-phishing-policies.md#spoof-settings)为**隔离**可疑邮件，而不是将其传递到用户的 "垃圾邮件" 文件夹。
+
+- 您可以为模拟（域或用户）重复上述步骤。 在**威胁管理** \> **仪表板** \> **见解**下找到模拟报告。
 
 - 定期查看[威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)。
 
-- 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中，在无意中允许网络钓鱼邮件。 如果选择执行此操作，则必须小心使用。 虽然此配置允许某些合法邮件通过，但它还会允许垃圾邮件和/或网络钓鱼筛选器通常会阻止的恶意邮件。
+- 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中，在无意中允许网络钓鱼邮件。 虽然此配置允许某些合法邮件通过，但它还会允许垃圾邮件和/或网络钓鱼筛选器通常会阻止的恶意邮件。 应更正基本问题，而不是允许域。
 
   处理由 Microsoft 365 （误报）阻止的合法邮件（涉及域中的发件人）的最佳方式是在 DNS 中为_所有_电子邮件域完全且完整地配置 SPF、DKIM 和 DMARC 记录：
 
   - 验证您的 SPF 记录是否标识了您的域中的发件人的_所有_电子邮件源（不要忘记第三方服务！）。
 
-  - 使用硬故障（ \- ）以确保配置为这样做的电子邮件系统拒绝未经授权的发件人。 您可以使用[欺骗智能](learn-about-spoof-intelligence.md)来帮助标识使用您的域的发件人，以便您可以在 SPF 记录中包括授权的第三方发件人。
+  - 使用硬故障（ \- 全部）可确保配置为这样做的电子邮件系统拒绝未经授权的发件人。 您可以使用[欺骗智能](learn-about-spoof-intelligence.md)来帮助标识使用您的域的发件人，以便您可以在 SPF 记录中包括授权的第三方发件人。
 
   有关配置说明，请参阅：
   
@@ -72,6 +76,8 @@ ms.locfileid: "44588436"
   - [使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)
 
 - 如果可能，我们建议您将域的电子邮件直接传递到 Microsoft 365。 换句话说，将 Microsoft 365 域的 MX 记录指向 Microsoft 365。 Exchange Online Protection （EOP）能够在将其邮件直接传递到 Microsoft 365 时为你的云用户提供最佳保护。 如果必须在 EOP 前面使用第三方电子邮件清洁系统，请对连接器使用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+
+- 用户应将[邮件报告](enable-the-report-message-add-in.md)给 Microsoft，这样可以培训我们的系统。 管理员还应充分利用[管理员提交](admin-submission.md)功能。
 
 - 多重因素身份验证（MFA）是防止受损帐户的一种不错的方法。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法，先在为每个人启用 MFA 之前为最敏感的用户（管理员、高级管理人员等）启用 MFA。 有关说明，请参阅[设置多因素身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 

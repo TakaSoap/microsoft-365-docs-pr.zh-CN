@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 了解如何允许成员以 Microsoft 365 组的形式发送电子邮件，或代表 Microsoft 365 组发送电子邮件。
-ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388133"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780465"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允许成员作为组发送或代表组发送
 
@@ -39,7 +39,7 @@ ms.locfileid: "44388133"
 > 您可以为给定用户配置 "**代理发送**" 或 **"代表发送**"，但不能同时配置两者。 如果同时配置两者，则默认为 "**代理发送**"。
 
 > [!TIP]
-> 请参阅[通过或代表 Microsoft 365 组发送电子邮件](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)，了解如何使用 Outlook 和 Web 上的 outlook 从组发送电子邮件。
+> 请参阅[通过或代表 Microsoft 365 组发送电子邮件](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)，了解如何使用 Outlook 和 Web 上的 outlook 从组发送电子邮件。
     
 ## <a name="allow-members-to-send-email-as-a-group"></a>允许成员以组的形式发送电子邮件
 
@@ -79,7 +79,7 @@ ms.locfileid: "44388133"
 
 ## <a name="related-articles"></a>相关文章
 
-[了解有关 Microsoft 365 组的详细信息](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解有关 Microsoft 365 组的详细信息](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [外接 Add-recipientpermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

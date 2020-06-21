@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: db5a9669464a9c4cb150dee119d8c0bcc2dc9833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399808"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717269"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
 集中部署是大多数客户将 Office 外接程序部署到组织内的用户和组的建议功能和功能最丰富的方法。 如果你是管理员，请使用本指南来确定你的租户和用户是否符合要求，以便你可以使用集中部署。
-集中部署支持 Windows、Mac、iOS、Android 和 Online Office 应用。
-加载项最长可能需要12个小时才能为所有用户显示客户端。
+集中部署支持三个桌面平台 Windows、Mac 和 Online Office 应用。 集中部署还支持 iOS 和 Android （仅适用于 Outlook 移动外接程序）。
+加载项最长可能需要24小时才能为所有用户显示客户端。
   
 ## <a name="requirements"></a>Requirements
 
@@ -87,7 +87,7 @@ ms.locfileid: "44399808"
 
 Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程序的管理员和接收这些外接程序的用户必须是支持 OAuth 身份验证的 Exchange Online 版本。
   
-请与组织的 Exchange 管理员联系，了解正在使用哪个配置。可使用 [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet 验证每个用户的 OAuth 连接。 
+Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中部署兼容性检查器
@@ -96,7 +96,7 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
   
 #### <a name="run-the-compatibility-checker"></a>运行兼容性检查器
   
-1. 启动提升的 PowerShell .exe 窗口。
+1. 启动提升的 PowerShell.exe 窗口。
     
 2. 运行以下命令：
 
@@ -139,7 +139,7 @@ Invoke-CompatibilityCheck
   
 集中部署支持对租户中的单个用户、组和每个人的工作分配。 集中部署支持顶级组或没有父组的组中的用户，但不支持嵌套组或有父组的组中的用户。
    
-请查看以下示例，在这里，柏隼、康霓以及销售部门组被分配了加载项。由于西海岸销售部门是嵌套组，赵强和熊飞未被分配加载项。
+Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
   
 ![销售部门的关系图](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -150,11 +150,11 @@ Invoke-CompatibilityCheck
   
 ![Outlook 联系人卡片的 "成员" 选项卡](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
-可以解析某个组，查看该组是否是任何组的成员，从而进行反向查询。在以下示例中，可以在 Outlook 联系人卡片的" **成员身份**"选项卡下看到子组 1 是测试组的成员。 
+You can do the opposite query by resolving the group to see if it's a member of any group. In the example below, you can see under the **Membership** tab of the Outlook contact card that Sub Group 1 is a member of the Test Group. 
   
 ![Outlook 联系人卡片的 "成员资格" 选项卡](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-或者，可以使用 Azure Active Directory 图形 API 运行查询，查找组内的组列表。有关详细信息，请参阅 [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342)（组操作 | 图形 API 参考）。
+Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
   
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 

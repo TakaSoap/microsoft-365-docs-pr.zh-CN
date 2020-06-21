@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）中的欺骗智能，可以在其中允许或阻止特定的欺骗性发件人。
-ms.openlocfilehash: fe1e8f8a2e9f0cc792dc802ea5c7362af00687ae
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e1c282076d054c338a02a50412ec376406f5ce98
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613236"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726748"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
@@ -56,9 +56,19 @@ ms.locfileid: "44613236"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。 若要直接转到 "**反钓鱼**" 页面，请使用 <https://protection.office.com/antiphishing> 。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对欺骗智能策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
+
+  - 若要修改欺骗性智能策略或启用或禁用欺骗智能，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对欺骗智能策略进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
 
 - 有关我们推荐的欺骗性智能设置，请参阅[EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 

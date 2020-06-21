@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BSA160
 description: 了解如何规划 Microsoft 365 组治理。
-ms.openlocfilehash: f61d07bbb4434b493ffede47df401da6304d0063
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 37d243b56de363985ecb9463dfe5eb182d9e40b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388181"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780489"
 ---
 # <a name="plan-for-governance-in-groups"></a>在组中规划管理
 
@@ -51,16 +51,16 @@ Microsoft 365 组支持三种主要的通信方法。 可以在这些体验中�
 > 通过其他团队应用程序（如 SharePoint、Planner 或 Stream）创建新组-将使用 Outlook 收件箱创建一个组，并能够连接到 Microsoft 团队。
 
 根据创建组的位置，将自动预配某些资源，如：
-- [收件箱](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)-组成员之间的电子邮件对话。 此收件箱有一个电子邮件地址，可以将其设置为接受来自组外部的人的邮件，甚至来自您的组织外部的邮件，这与传统的通讯组列表非常相似。
- - [日历](https://support.office.com/article/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a)–用于计划与组相关的事件
-- [SharePoint 团队网站](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)–中心存储库，其中提供了与您的组相关的信息、链接和内容
-- [SharePoint 文档库](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403)–用于存储和共享文件的组的中心位置
-- [OneNote 笔记本](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)–用于收集想法、研究和信息
-- [Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) –用于分配和管理组成员中的项目任务
-- [Yammer 组](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)–一个用于提供对话和共享信息的常见位置
+- [收件箱](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22)-组成员之间的电子邮件对话。 此收件箱有一个电子邮件地址，可以将其设置为接受来自组外部的人的邮件，甚至来自您的组织外部的邮件，这与传统的通讯组列表非常相似。
+ - [日历](https://support.microsoft.com/office/0cf1ad68-1034-4306-b367-d75e9818376a)–用于计划与组相关的事件
+- [SharePoint 团队网站](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)–中心存储库，其中提供了与您的组相关的信息、链接和内容
+- [SharePoint 文档库](https://support.microsoft.com/office/749bc73b-90c9-4760-9b6f-9aa1cf01b403)–用于存储和共享文件的组的中心位置
+- [OneNote 笔记本](https://support.microsoft.com/office/e768fafa-8f9b-4eac-8600-65aa10b2fe97)–用于收集想法、研究和信息
+- [Planner](https://support.microsoft.com/office/4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) –用于分配和管理组成员中的项目任务
+- [Yammer 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)–一个用于提供对话和共享信息的常见位置
 - Microsoft 团队– Microsoft 365 中的基于聊天的工作区
 
-若要了解有关为每个组创建的资源的详细信息，请参阅[了解 Microsoft 365 组](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+若要了解有关为每个组创建的资源的详细信息，请参阅[了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 > [!NOTE]
 > 当通过 Yammer 或团队创建新的 Microsoft 365 组时，该组在 Outlook 或通讯簿中不可见，因为这些用户之间的主要通信发生在其各自的客户端中。 Yammer 组无法连接到 Microsoft 团队。
@@ -82,7 +82,7 @@ Microsoft 365 组支持三种主要的通信方法。 可以在这些体验中�
 
 - Outlook 组：新式 DL （基于电子邮件的协作）
   - 目标通信的普遍情况
-  - 将 Dl 升级到 Microsoft 365 组–[为什么要升级？](https://support.microsoft.com/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+  - 将 Dl 升级到 Microsoft 365 组–[为什么要升级？](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - SharePoint –所有 Microsoft 365 组的核心内容协作体验
   - 每个组都将获取一个连接的 SharePoint 团队网站
@@ -135,7 +135,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 #### <a name="resources"></a>*资源*
 - [管理可以创建 Microsoft 365 组的用户](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups?view=o365-worldwide)
 - [根据对象属性动态填充组](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-with-advanced-rules)
-- [如何将适用于 Outlook 的 Microsoft 365 组的默认设置更改为公用或专用](https://support.office.com/article/office-365-groups-in-outlook-private-by-default-36236e39-26d3-420b-b0ac-8072d2d2bedc)
+- [如何将适用于 Outlook 的 Microsoft 365 组的默认设置更改为公用或专用](https://support.microsoft.com/office/36236e39-26d3-420b-b0ac-8072d2d2bedc)
 - [将安全组与团队成员身份同步](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Syncing-Security-Groups-with-team-membership/ba-p/241959)
 
 ### <a name="group-soft-delete-and-restore"></a><a name="group-soft-delete-and-restore"></a>组软删除和还原
@@ -152,7 +152,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 |![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>传递和发布删除和还原策略，以通知用户他们可能会想到的行为 </li><li> 记录监视已删除组的组织需求。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
 
 > [!Important]
->在"软删除"过程中，如果用户尝试访问该网站，将显示 403 禁止访问消息。 该过程结束后，如果用户尝试访问该网站，将显示 404 未找到消息。
+>During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
 
 #### <a name="resources"></a>*资源*
 - [还原已删除的 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)
@@ -208,7 +208,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 >当您更改过期策略时，服务将重新计算每个组的到期日期。 它始终从创建组的日期开始计数，然后应用新的过期策略。
 
 #### <a name="resources"></a>*资源*
-- [Microsoft 365 组过期策略](https://support.office.com/article/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+- [Microsoft 365 组过期策略](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups-expiration-policy)
 - [为 Microsoft 365 组配置过期策略](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a><a name="group-guest-access"></a>组来宾访问
@@ -227,7 +227,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 #### <a name="resources"></a>*资源*
 - [与组织外部的人员进行协作](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 - [在 Microsoft 365 组中管理来宾访问](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups)
-- [Microsoft 365 组中的来宾访问](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+- [Microsoft 365 组中的来宾访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 - [Azure AD 访问审查](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 - [Azure Active Directory 使用条款功能](https://docs.microsoft.com/azure/active-directory/active-directory-tou)
 - [Google 联合](https://docs.microsoft.com/azure/active-directory/b2b/google-federation)
@@ -328,7 +328,7 @@ Microsoft 365 组提供了您的组织可能需要的一组丰富的管理功能
 | 阶段 | 说明 |
 | --------------- | ------------------------------------------------------------ |
 | 指南 |<ul><li>确定开放或 IT led 设置模型。</li><li> 考虑基于 Azure AD 属性（如部门）创建绑定到[动态成员身份规则](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)的特定组</li><li> 在您的组织内定义分类，例如高度机密、机密（默认）、常规。</li><li>  根据分类（如保留和敏感度）定义策略。</li><li> SharePoint 是每个 Microsoft 365 组的内容服务。 考虑为三层保护（基准、敏感和高度机密）设计和[部署 SharePoint Online 网站](https://docs.microsoft.com/office365/enterprise/deploy-sharepoint-online-sites-for-three-tiers-of-protection)。 有关三层保护的详细信息，请参阅[保护 SharePoint Online 网站和文件](https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files)。</li><li> 默认情况下，公共组和专用组都列在 GAL 中。 确定要在 Microsoft 团队之外的特定于 GAL 中创建的组中显示的组。  使用[remove-unifiedgroup](https://technet.microsoft.com/library/mt238274(v=exchg.160).aspx) cmdlet 的 "HiddenFromAddressListsEnabled" 或 "HidefromExchangeClients" 可隐藏特定组。</li></ul> |
-| 后续步骤      |<ul><li>定义[使用指南](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)，以向用户介绍有助于保持其组织有效的最佳做法，并在内部内容策略上进行培训。 例如，了解分类、策略和过程。 </li><li>定义组生命周期周期必须更新组或将被删除-过期策略。</li><li>考虑创建以下自定义作业，以根据分类实施策略。</li><li>将隐私设置为私有。</li><li>禁用外部成员身份/共享。 </li><li>向[没有所有者](https://support.office.com/article/Assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)的组通知组成员的电子邮件。</li><li>强制实施所有权策略（最小2所有者）。</li><li> 根据分类定义组的保留策略。 </li><li>保留策略概述。</li><li>使用 Powershell 确定具有分类和[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)的组。</li><li>请考虑使用网站设计和网站脚本来定义使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>请考虑[使用网站设计和 Microsoft 流构建一个简单的网站目录](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)。 每当使用此网站设计创建网站时，都会捕获网站的详细信息并将其写入列表。 </li></ul>|
+| 后续步骤      |<ul><li>定义[使用指南](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)，以向用户介绍有助于保持其组织有效的最佳做法，并在内部内容策略上进行培训。 例如，了解分类、策略和过程。 </li><li>定义组生命周期周期必须更新组或将被删除-过期策略。</li><li>考虑创建以下自定义作业，以根据分类实施策略。</li><li>将隐私设置为私有。</li><li>禁用外部成员身份/共享。 </li><li>向[没有所有者](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)的组通知组成员的电子邮件。</li><li>强制实施所有权策略（最小2所有者）。</li><li> 根据分类定义组的保留策略。 </li><li>保留策略概述。</li><li>使用 Powershell 确定具有分类和[new-retentioncompliancepolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)的组。</li><li>请考虑使用网站设计和网站脚本来定义使用[JSON 架构引用](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema)中定义的操作的控件。</li><li>请考虑[使用网站设计和 Microsoft 流构建一个简单的网站目录](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-trigger-flow-tutorial)。 每当使用此网站设计创建网站时，都会捕获网站的详细信息并将其写入列表。 </li></ul>|
 
 ### <a name="regulated-or-enterprise"></a>管控或企业
 除了上述建议之外，还请考虑以下几个方面的 prises （如政府、金融服务或保健），其中至少部署了带有 Azure Active Directory 高级 P1/P2 许可证的企业版 E3/E5 的 Office 365。

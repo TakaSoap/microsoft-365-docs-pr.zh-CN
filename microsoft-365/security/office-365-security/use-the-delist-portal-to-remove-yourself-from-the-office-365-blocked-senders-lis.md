@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何使用除名门户将自己从 Microsoft 365 阻止的发件人列表中删除。
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208533"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739243"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
 
@@ -43,7 +43,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 1. 在 Web 浏览器中，请转至 [https://sender.office.com](https://sender.office.com)。
 
-2. 按照页面上的说明执行操作。请确保您使用收到错误消息的电子邮件地址，以及错误消息中指定的 IP 地址。每次访问只能输入一个电子邮件地址和一个 IP 地址。
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. Click **Submit**.
 
@@ -60,4 +60,4 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
     > [!NOTE]
     > 在删除限制之前，可能需要长达24小时或结果相差很大。
 
-请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[EOP 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被列入黑名单。
+请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[EOP 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被阻止。

@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 922457d231681bc4643ea1805fc6060de3abcb65
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 15bd63a35b4279efc634115bbdb5248cdd5038db
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342532"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761702"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -95,6 +95,8 @@ ms.locfileid: "44342532"
 
 若要创建和配置出站垃圾邮件策略，请参阅[在 Office 365 中配置出站垃圾邮件筛选](configure-the-outbound-spam-policy.md)。
 
+有关服务中的默认发送限制的详细信息，请参阅[发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
 |||||
 |---|---|---|---|
 |**安全功能名称**|**标准**|**全**|**Comment**|
@@ -152,9 +154,9 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |||||
 |---|---|---|---|
 |**安全功能名称**|**标准**|**全**|**Comment**|
-|受保护的用户：**添加要保护的用户** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|打开 <br/><br/> `$true` <br/><br/> \<用户列表\>|取决于您的组织，但我们建议在关键角色中添加用户。 在内部，这些可能是 CEO、CFO 和其他高级领导者。 在外部，这些可以包括理事会成员或董事会。|
+|受保护的用户：**添加要保护的用户** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|打开 <br/><br/> `$true` <br/><br/> \<list of users\>|打开 <br/><br/> `$true` <br/><br/> \<list of users\>|取决于您的组织，但我们建议在关键角色中添加用户。 在内部，这些可能是 CEO、CFO 和其他高级领导者。 在外部，这些可以包括理事会成员或董事会。|
 |受保护的域：**自动包括我拥有的域** <br/><br/> _EnableOrganizationDomainsProtection_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
-|受保护的域：**包含自定义域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|打开 <br/><br/> `$true` <br/><br/> \<域列表\>|打开 <br/><br/> `$true` <br/><br/> \<域列表\>|取决于您的组织，但我们建议添加经常与您不拥有的域进行交互的域。|
+|受保护的域：**包含自定义域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|打开 <br/><br/> `$true` <br/><br/> \<list of domains\>|打开 <br/><br/> `$true` <br/><br/> \<list of domains\>|取决于您的组织，但我们建议添加经常与您不拥有的域进行交互的域。|
 |受保护的用户：**如果模拟用户发送电子邮件** <br/><br/> _TargetedUserProtectionAction_|**隔离邮件** <br/><br/> `Quarantine`|**隔离邮件** <br/><br/> `Quarantine`||
 |受保护的域：**如果模拟域发送电子邮件** <br/><br/> _TargetedUserProtectionAction_|**隔离邮件** <br/><br/> `Quarantine`|**隔离邮件** <br/><br/> `Quarantine`||
 |**为模拟用户显示提示** <br/><br/> _EnableSimilarUsersSafetyTips_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||

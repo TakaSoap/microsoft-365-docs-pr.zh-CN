@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
 description: 了解如何在 Outlook 中为 Windows 和 Mac 设置电子邮件帐户，以及如何安装 Office 应用和在线访问电子邮件。
-ms.openlocfilehash: 04d14c314fbcda4f8d0edff57a141a89688bec28
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e17e532afca0a552b7e0e2565cd34e9dda256421
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399274"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779985"
 ---
 # <a name="set-up-outlook-to-read-email"></a>将 Outlook 设置为阅读电子邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "44399274"
     
 2. 在 "**自动帐户设置**" 页上，输入您的姓名、电子邮件地址和密码，然后选择 "**下一步**" \> **完成**。
     
-阅读[完整文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。
+阅读[完整文章](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
 ## <a name="how-do-i-install-the-office-apps-including-outlook"></a>如何安装 Office 应用程序，包括 Outlook？
 
@@ -59,7 +59,7 @@ ms.locfileid: "44399274"
     
 3. 在 "**输入您的 Exchange 帐户信息**" 页面上，输入您的姓名、电子邮件地址和密码，然后选择 "**添加帐户**"。
     
-阅读[完整文章](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)。 
+阅读[完整文章](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)。 
   
 ## <a name="how-do-i-access-my-mail-online"></a>如何联机访问我的邮件？
 

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 团队提供的用于实施安全功能以保护您的 Microsoft 365 环境的主要建议。 '
-ms.openlocfilehash: 39d6bc975ecd4b49ae29705c0b52ab154801a8e6
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 968d2c5a2e8954df97fb884da6fab967b7cc806b
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588200"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726466"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全路线图-前30天、90天及以上的首要优先级
 
@@ -64,7 +64,7 @@ ms.locfileid: "44588200"
 |安全管理|* 检查安全得分并记录你的当前得分（ [https://securescore.office.com](https://securescore.office.com) ）。  <br/>  * 打开 Office 365 的审核日志记录。 请参阅[搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。  <br/> * [配置 Microsoft 365 以提高安全性](tenant-wide-setup-for-increased-security.md)。  <br/>  * 定期查看 Microsoft 365 安全中心和云应用安全中的仪表板和报告。|
 |威胁防护|[将 microsoft 365 连接到 Microsoft 云应用安全](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)，开始使用默认威胁检测策略对反常行为进行监视。 为异常检测构建基准需要七天时间。  <br><br/>  对管理员帐户实施保护：  <br/> * 使用专用管理员帐户进行管理活动。  <br/>  * 对管理员帐户强制执行多重身份验证（MFA）。  <br/>  * 使用[高度安全的 Windows 10 设备](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure)进行管理活动。|
 |标识和访问管理|* [启用 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。  <br/> * 对于联合身份环境，强制实施帐户安全性（密码长度、年龄、复杂性等）。|
-|信息保护| 查看示例信息保护建议。 信息保护需要跨整个组织进行协作。 开始使用这些资源：  <br/> * [适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> * [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md)（包括共享、分类、数据丢失防护和 Azure 信息保护）|
+|信息保护| 查看示例信息保护建议。 信息保护需要跨整个组织进行协作。 开始使用这些资源：  <br/> * [适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> * [配置具有三层保护的团队](../../solutions/configure-teams-three-tiers-protection.md)（包括共享、分类、数据丢失防护和 Azure 信息保护）|
 
 ## <a name="90-days--enhanced-protections"></a>90天—增强型保护
 <a name="Ninetydays"> </a>
@@ -77,7 +77,7 @@ ms.locfileid: "44588200"
 |安全管理|* 检查安全分数以了解针对你的环境推荐的操作（ [https://securescore.office.com](https://securescore.office.com) ）。  <br/>  * 继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。 <br/> * 查找并实施软件更新。 <br/> * 使用[攻击模拟器](attack-simulator.md)（包含在[Office 365 威胁智能](office-365-ti.md)中）对 spear 进行攻击模拟，从而实现网络钓鱼、密码喷涂和强力密码攻击。  <br/> * 通过查看 Cloud App Security 中的内置报告（在 "调查" 选项卡上），查找共享风险。 <br/> * 检查[合规性分数](https://docs.microsoft.com/microsoft-365/compliance/compliance-score)以查看适用于您的组织的规章的状态（如 GDPR、NIST 800-171）。|
 |威胁防护| 为管理员帐户实施增强的保护： <br/> * 为管理员活动配置[权限访问工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations)（PAWs）。 <br/> * 配置[AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。 <br/> * 配置安全信息和事件管理（SIEM）工具以收集 Office 365、云应用安全性和其他服务（包括 AD FS）中的日志记录数据。 审核日志仅存储90天的数据。 通过在 SIEM 工具中捕获此数据，可以将数据存储在更长的时间段中。|
 |标识和访问管理|* 为所有用户启用和强制执行 MFA。 <br/> * 实现一组[条件访问和相关策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。 |
-|信息保护| 修改和实施信息保护策略。 这些资源包括示例： <br/> * [适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> * [保护 SharePoint Online 网站和文件](secure-sharepoint-online-sites-and-files.md) <br/> <br> 使用 Microsoft 365 中存储的数据丢失防护策略和监视工具来存储在 Microsoft 365 中的数据（而不是云应用安全）。 <br><br>将云应用安全性与 Microsoft 365 结合使用，以获取高级警报功能（而不是数据丢失防护）。|
+|信息保护| 修改和实施信息保护策略。 这些资源包括示例： <br/> * [适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> * [配置具有三层保护的团队](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> 使用 Microsoft 365 中存储的数据丢失防护策略和监视工具来存储在 Microsoft 365 中的数据（而不是云应用安全）。 <br><br>将云应用安全性与 Microsoft 365 结合使用，以获取高级警报功能（而不是数据丢失防护）。|
 
 ## <a name="beyond"></a>满足
 <a name="Beyond"> </a>

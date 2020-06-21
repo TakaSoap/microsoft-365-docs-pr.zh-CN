@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387989"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761670"
 ---
 # <a name="manage-who-can-create-groups"></a>管理可以创建组的用户
 
@@ -45,14 +45,12 @@ ms.locfileid: "44387989"
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- 路线图
+- Web 和路线图的项目
     
 您可以将 Microsoft 365 组创建限制为特定安全组的成员。 若要配置此设置，请使用 Windows PowerShell。 本文将引导您完成所需的步骤。
   
@@ -125,7 +123,7 @@ ms.locfileid: "44387989"
 
 `$GroupName = "Group Creators"`
 
-将文件另存为 GroupCreators。 
+将文件另存为 GroupCreators.ps1。 
 
 在 PowerShell 窗口中，导航到保存文件的位置（键入 "CD <FileLocation> "）。
 
@@ -173,7 +171,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 如果要关闭组创建限制，并再次允许所有用户创建组，请将 $GroupName 设置为 "" 并 $AllowGroupCreation 为 "True"，然后重新运行该脚本。
     
-## <a name="step-4-verify-that-it-works"></a>步骤4：验证它是否正常运行
+## <a name="step-3-verify-that-it-works"></a>步骤 3：验证有效性
 
 更改可能需要30分钟或更长时间才能生效。 您可以通过执行以下操作来验证新设置：
 

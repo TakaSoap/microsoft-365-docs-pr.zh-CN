@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632835"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735510"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -53,7 +53,7 @@ Microsoft 支持和恢复助手 | \*。 apibasic.diagnostics.office.com  <br>\*�
 
 Microsoft 服务 | 文档源-允许列表上需要 Url
 --- | ---
-Windows 10 企业版，包括 Windows Update for Business | [管理 Windows 10 版本1803的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+Windows 10 企业版，包括 Windows Update for Business | [管理 Windows 10 版本1803的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本2004的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
 传递优化 | [配置 Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)以及[Active Directory 和 Active Directory 域服务端口要求](https://aka.ms/AA26ygm) 

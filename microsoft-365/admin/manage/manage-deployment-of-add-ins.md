@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678632"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780117"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心管理加载项的部署
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678632"
 
 ::: moniker-end
 
-Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)）。 作为管理员，您可以为组织中的用户部署 Office 外接程序。 您可以使用 Microsoft 365 管理中心中的集中部署功能来执行此操作。
+Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的信息（请参阅[开始使用 Office 加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)）。 作为管理员，您可以为组织中的用户部署 Office 外接程序。 您可以使用 Microsoft 365 管理中心中的集中部署功能来执行此操作。
   
 集中部署是大多数管理员为将外接程序部署到组织内的用户和组的建议功能和功能最丰富的方式。 若要详细了解如何确定组织是否可以支持集中部署，请参阅[确定加载项的集中部署是否适用于你的组织](centralized-deployment-of-add-ins.md)。
   
@@ -44,7 +44,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 - 全局管理员可以将外接程序直接分配给用户、通过一个组将加载项分配给多个用户，或分配给租户中的所有人。
     
-- 相关 Office 应用程序启动时，将自动为用户下载加载项。如果加载项支持加载项命令，加载项会自动显示在 Office 应用程序的"功能区"中。
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - 如果管理员关闭或删除加载项，或者从 Azure Active Directory 或将外接程序分配到的组中删除了用户，外接程序将不再显示给用户。
     
@@ -53,11 +53,11 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 外接程序的推荐方法
 
-请考虑采用分阶段方法推出加载项，帮助确保加载项部署顺利进行。推荐以下计划：
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. 向小部分业务利益干系人和 IT 部门成员推出加载项。评估部署是否成功，如果成功，请转到步骤 2。
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. 向企业内将使用加载项的较多人员推出加载项。同样，评估结果，如果一切顺利，请转至完整部署的下一步。
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. 全面向目标受众用户推出加载项。
     
@@ -83,7 +83,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
 7. 部署外接程序后，将显示绿色计时周期。 您可以按照页面上的说明测试外接程序是否已成功部署。
 
 > [!NOTE]
-> 用户可能需要重新启动 Office 以查看应用程序功能区上显示的外接程序图标。 Outlook 外接程序最长可能需要12个小时才能显示在用户的功能区上。
+> 用户可能需要重新启动 Office 以查看应用程序功能区上显示的外接程序图标。 Outlook 外接程序最长可能需要24小时才能显示在用户的功能区上。
     
 8. 完成后，选择 "**下一步**"。 如果只部署到自己的，则可以选择 "**更改谁有权访问外接程序**"，以便将其部署到更多用户。
 
@@ -95,13 +95,13 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>为用户和组分配加载项时的注意事项
 
-管理员可以为每个人或特定用户和组分配加载项。每个选项都有含义：
+Admins can assign an add-in to everyone or to specific users and groups. Each option has implications:
   
-- **每个人**：顾名思义，此选项为租户中的每位用户分配加载项。请谨慎使用此选项，且仅应用于真正在组织中通用的加载项。 
+- **Everyone**: As the name implies, this option assigns the add-in to every user in the tenant. Use this option sparingly and only for add-ins that are truly universal to your organization. 
     
-- **用户** ：如果向单个用户分配加载项，那么为新用户部署加载项时，需要先添加该用户。这同样适用于删除用户。 
+- **Users**: If you assign an add-in to an individual user, then to deploy the add-in to a new user, you will need to first add that user. The same goes for removing users. 
     
-- **组** ：如果为组分配加载项，添加到组的用户将自动被分配该加载项。并且，当从组中删除用户时，该用户无法再访问该加载项。在任一情况下，不需要管理员执行任何额外操作。 
+- **Groups**: If you assign an add-in to a group, users who are added to the group will automatically be assigned the add-in. And, when a user is removed from a group, the user loses access to the add-in. In either case, no additional action is required from you as the admin. 
 
 - **仅限我**：如果只向自己分配加载项，则会将外接程序仅分配给您的帐户。 如果您希望先测试加载项，这是理想之选。
     
@@ -121,7 +121,7 @@ Office 加载项可帮助用户个性化设置文档并加速访问 Web 上的�
   
 ### <a name="security-of-office-add-ins"></a>Office 加载项的安全性
 
-Office 加载项结合了一个包含加载项相关元数据的 XML 清单文件，但最重要的是它指向包含所有代码和逻辑的 Web 应用程序。加载项的功能范围很广。例如，加载项可以：
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - 显示数据。
     
@@ -131,18 +131,18 @@ Office 加载项结合了一个包含加载项相关元数据的 XML 清单文�
     
 若要详细了解 Office 加载项的类型和功能，请参阅 [Office Add-ins platform overview](https://go.microsoft.com/fwlink/p/?linkid=846362)（Office 加载项平台概述），尤其是"Anatomy of an Office Add-in"（Office 加载项分析）一节。
   
-若要与用户文档进行交互，加载项需要在清单中声明需要哪些权限。五级 JavaScript API 访问权限模型为任务窗格加载项的用户提供隐私和安全性的基础。Office 应用商店 中的大多数加载项是 ReadWriteDocument 级别，几乎所有加载项均至少支持 ReadDocument 级别。有关权限级别的详细信息，请参阅 [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863)（请求在内容和任务窗格加载项中使用 API 的权限）。
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-更新清单时，通常更改加载项的图标和文本。有时会更改加载项命令。但是，不会更改加载项的权限。Web 应用程序（加载项的所有代码和逻辑在其中运行）可以随时更改，这是 Web 应用程序的特性。
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 加载项更新的情况如下：
   
-- **业务线加载项：** 在这种情况下，管理员显式上传清单，加载项需要管理员上传新的清单文件以支持元数据的更改。相关 Office 应用程序下次启动时，该加载项会更新。Web 应用程序可以随时更改。 
+- **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
     > [!NOTE]
     > 管理员无需删除 LOB 加载项即可进行更新。   在 "外接程序" 部分中，管理员只需单击 LOB 外接程序，然后选择右下角的 "**更新" 按钮**即可。 仅当新外接程序的版本大于现有加载项的版本时，更新才有效。   
     
-- **Office 应用商店加载项：** 管理员从 Office 应用商店 中选择加载项后，如果 Office 应用商店 中更新了加载项，则该加载项会稍后以集中式部署方式更新。相关 Office 应用程序下次启动时，该加载项会更新。Web 应用程序可以随时更改。 
+- **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time. 
 
 ### <a name="edit-add-in-access"></a>编辑外接访问
 
@@ -252,9 +252,9 @@ Word、Excel 和 PowerPoint 2013 for Windows 将支持相同的次要检查（�
     
 ## <a name="end-user-experience-with-add-ins"></a>加载项最终用户体验
 
-部署加载项后，最终用户就可开始在 Office 应用程序中使用此加载项（请参阅[开始使用 Office 加载项](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)）。加载项会显示在所有加载项支持的平台上。
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
-如果加载项支持加载项命令，则 Office 功能区上会显示命令。在以下示例中，显示" **引文** "加载项的" **搜索引文** "命令。 
+If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
 ![带有搜索引文的 Office 功能区](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

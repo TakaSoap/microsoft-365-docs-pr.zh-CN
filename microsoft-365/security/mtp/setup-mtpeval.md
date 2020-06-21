@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209219"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717291"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>设置你的 Microsoft 威胁防护试用实验室环境 
 
@@ -110,7 +110,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 <br>![图像 of_Office 365 E5，您可以在其中设置是否迁移电子邮件](../../media/mtp-eval-20.png) <br>
  
 13. 选择 "在线服务"。 选择 " **Exchange** " 并单击 "**下一步**"。 
-<br>![图像 of_Office 365 E5，您可以在其中选择在线服务，如 Exchangem Skype for Business 或 Mibile Device Management for Office 365](../../media/mtp-eval-21.png) <br>
+<br>![可以在其中选择在线服务的图像 of_Office 365 E5](../../media/mtp-eval-21.png) <br>
 
 14. 向您的域中添加 MX、CNAME 和 TXT 记录。 完成后，选择 "**验证**"。
 <br>![Image of_Office 365 E5 在这里，你可以添加 DNS 记录](../../media/mtp-eval-22.png) <br>
@@ -137,7 +137,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 5. 单击 "**立即试用**" 以确认你的 Microsoft 365 E5 试用版。
 <br>![Image of_Microsoft 365 E5 开始免费试用页面，应在此处时钟 "立即试用" 按钮开始](../../media/mtp-eval-27.png) <br>
  
-6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 "**管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为**Microsoft 365 e5**。 单击“**保存**”。
+6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 "**管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为**Microsoft 365 e5**。 单击“保存”****。
 ![Image of_Microsoft 365 管理中心 "页面，您可以在其中选择 Microsoft 365 E5 许可证](../../media/mtp-eval-28.png) <br>
  
 7. 再次选择全局管理员帐户，然后单击 "**管理用户名**"。
@@ -149,4 +149,6 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
 
 ## <a name="next-step"></a>后续步骤
-||||：-------|：-----| config-onboard （.png） <br>[第3阶段：配置 & 板载](config-mtpeval.md)|为 Microsoft 威胁防护试用实验室环境配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起。
+|||
+|:-------|:-----|
+|![第3阶段： Configure & 板载](../../media/config-onboard.png) <br>[第3阶段： Configure & 板载](config-mtpeval.md) | 为 Microsoft 威胁防护评估实验室配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起。

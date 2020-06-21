@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '了解如何使用 Exchange PowerShell 为组织中的所有用户或特定用户启用或禁用杂乱功能。 '
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400132"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780273"
 ---
 # <a name="configure-clutter-for-your-organization"></a>为您的组织配置邮件筛选
 
 > [!TIP]
 > [重点收件箱](../setup/configure-focused-inbox.md)将替换混乱。 了解详细信息：[更新重点收件箱和我们关于待筛选计划](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-作为管理员，您可能需要在 Microsoft 365 中管理邮件筛选功能。 若要为组织中的用户打开/关闭筛选功能，必须使用 Exchange PowerShell。 （个人可以使用以下说明打开/关闭它：[关闭/打开 Outlook 中的杂乱功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)。） 
+作为管理员，您可能需要在 Microsoft 365 中管理邮件筛选功能。 若要为组织中的用户打开/关闭筛选功能，必须使用 Exchange PowerShell。 （个人可以使用以下说明打开/关闭它：[关闭/打开 Outlook 中的杂乱功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)。
   
 请查看[使用 PowerShell With Exchange online](https://go.microsoft.com/fwlink/?LinkID=402831) ，并[连接到 Exchange online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415) ，以了解有关使用 exchange PowerShell 的详细信息。 您需要拥有至少具有 Exchange 服务管理员角色的帐户，并且能够使用 PowerShell 连接到 Exchange Online。 
   
@@ -99,10 +99,10 @@ ms.locfileid: "44400132"
 ## <a name="related-articles"></a>相关文章
 <a name="bkmk_onoff"> </a>
 
-[使用杂乱在 Outlook 中对低优先级邮件进行排序](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[使用杂乱在 Outlook 中对低优先级邮件进行排序](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[使用杂乱在 OWA 中对低优先级邮件进行排序](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[使用杂乱在 OWA 中对低优先级邮件进行排序](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[关闭 Outlook 中的杂乱功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[关闭 Outlook 中的杂乱功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

@@ -17,18 +17,18 @@ search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何通过你的移动设备访问电子邮件。
-ms.openlocfilehash: 594091776025adcb7bbd92e2fa982cda36d50053
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dc75f0e873d6ab1ea2d734188e5e050f898c493c
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400192"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780297"
 ---
 # <a name="options-for-accessing-email-from-your-mobile-device"></a>从移动设备访问电子邮件的选项
 
 您的组织已配置了用于控制可用于访问电子邮件、日历和联系人的工作帐户的移动应用程序的设置。
   
-Outlook for Android 和 Outlook for iOS 移动应用程序是为您的工作或学校电子邮件设计的，并且是仅提供[重点收件箱](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx)功能（如重要的电子邮件前端和中心和[日程安排助理](https://www.microsoft.com/?ref=go)）的应用程序，可帮助您查找与同事一起工作的会议时间，并简单地查找可用的会议室。
+Outlook for Android 和 Outlook for iOS 移动应用程序是为您的工作或学校电子邮件设计的，并且是仅提供[重点收件箱](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978)功能（如重要的电子邮件前端和中心和[日程安排助理](https://www.microsoft.com/?ref=go)）的应用程序，可帮助您查找与同事一起工作的会议时间，并简单地查找可用的会议室。
   
 ## <a name="end-user-experience"></a>最终用户体验
 
@@ -38,7 +38,7 @@ Outlook for Android 和 Outlook for iOS 移动应用程序是为您的工作或�
   
 ![使用 Outlook 同步电子邮件的示例电子邮件](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
-查看为[你的 iOS 或 Android 手机优化 outlook 移动应用](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx)，了解更多 outlook 功能。 如果遇到任何问题，请转到[Outlook For iOS 和 Android 帮助中心](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx)。 
+查看为[你的 iOS 或 Android 手机优化 outlook 移动应用](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890)，了解更多 outlook 功能。 如果遇到任何问题，请转到[Outlook For iOS 和 Android 帮助中心](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6)。 
   
  **任何电子邮件应用程序**
   

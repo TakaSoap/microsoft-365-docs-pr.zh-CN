@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 将电子邮件发送给一组人，而无需通过创建通讯组（列表）来键入每个收件人的姓名。
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398962"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779889"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建通讯组
   
@@ -69,7 +69,7 @@ ms.locfileid: "44398962"
     
 6. 若要将用户添加到通讯组，请参阅[向通讯组添加用户或联系人](../email/add-user-or-contact-to-distribution-list.md)。
     
-请参阅 Outlook 主题中的[使用联系人组（以前的通讯组列表）](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx)中的 outlook 2016 和 outlook 网页中的 "使用组"。 
+请参阅 Outlook 主题中的[使用联系人组（以前的通讯组列表）](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)中的 outlook 2016 和 outlook 网页中的 "使用组"。 
   
 查看[通讯组问题](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues)，以获取有关通讯组问题的帮助。 
   

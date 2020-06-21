@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 了解在更改计划或公司名称时如何在两个 Microsoft 365 帐户之间手动转移数据，或将多个订阅组合为一个。
-ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e64872ad7e145b63eb71d89ea2d69e5d8697eb6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399868"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780165"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在两个帐户之间手动传输数据
 
@@ -60,7 +60,7 @@ ms.locfileid: "44399868"
   
 对于 Microsoft 365 企业版和 Microsoft 365 中型企业版：
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理员** \>**Microsoft 365** \>**服务设置** <br/> |选择每个选项卡，以获取邮件、网站、Lync、用户软件、密码、社区、权限管理和移动的设置。  <br/> |
 |**管理员** \>**Exchange** <br/> | Exchange Online 设置  <br/> |
@@ -69,7 +69,7 @@ ms.locfileid: "44399868"
 
 适用于 Microsoft 365 小型企业版
   
-|**Location**|**用途**|
+|**位置**|**用途**|
 |:-----|:-----|
 |**管理员** \>**管理组织范围的设置** <br/> |管理设置  <br/> |
 
@@ -91,9 +91,9 @@ ms.locfileid: "44399868"
   
 - 您可以将旧网站另存为模板，并将该模板导入到新网站。
 
-- 若要传输文档，请首先手动在新网站上重新创建层次结构。 然后，您可以同时打开这两个 SharePoint 团队网站，同时使用 Windows 资源管理器打开文档库，并复制并粘贴文档。 请参阅[视频：使用 "使用资源管理器打开" 复制或移动库文件](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)。
+- 若要传输文档，请首先手动在新网站上重新创建层次结构。 然后，您可以同时打开这两个 SharePoint 团队网站，同时使用 Windows 资源管理器打开文档库，并复制并粘贴文档。 请参阅[视频：使用 "使用资源管理器打开" 复制或移动库文件](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
 
-- 若要转移列表数据，请保存[列表模板](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新网站上重新创建列表。
+- 若要转移列表数据，请保存[列表模板](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，并使用保存的模板在新网站上重新创建列表。
 
 - 若要将文档库或列表内容从 SharePoint Online 环境（OneDrive for Business 或工作组网站）保存到文件共享或本地计算机，请参阅[有关手动迁移 Sharepoint online 内容的信息](https://support.microsoft.com/kb/2783484)。
 
@@ -101,8 +101,8 @@ ms.locfileid: "44399868"
 
 ### <a name="email"></a>电子邮件：
 
-在设置新的订阅之后，要求用户[移动其电子邮件、联系人、任务和日历信息](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx)。 他们可以使用其初始用户名（如 sue@contoso.onmicrosoft.com）访问其旧的电子邮件。
+在设置新的订阅之后，要求用户[移动其电子邮件、联系人、任务和日历信息](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc)。 他们可以使用其初始用户名（如 sue@contoso.onmicrosoft.com）访问其旧的电子邮件。
   
 ### <a name="onedrive-for-business-data"></a>OneDrive For Business 数据：
 
-请用户将 OneDrive for business 内容复制/同步[到其计算机](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)，然后将其添加回其新订阅。
+请用户将 OneDrive for business 内容复制/同步[到其计算机](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)，然后将其添加回其新订阅。

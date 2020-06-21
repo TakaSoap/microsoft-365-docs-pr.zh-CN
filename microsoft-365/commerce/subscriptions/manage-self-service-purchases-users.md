@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 用户可以了解如何管理自己的自助购买。
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403254"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741658"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
@@ -105,9 +105,9 @@ ms.locfileid: "44403254"
 
 ### <a name="update-an-existing-payment-method"></a>更新现有的付款方式
 
-1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单 & 付款</a>" 页。
 
-2. 若要编辑现有的付款方式，请从列表中选择该付款方式。
+2. 在 "**付款方法**" 选项卡上，从列表中选择现有的付款方式。
 
 3. 在右窗格中，选择 "**编辑**"。 您可以更改安全代码、到期日期、名片上的名称和地址。
 
@@ -115,20 +115,20 @@ ms.locfileid: "44403254"
 
 ### <a name="add-a-new-payment-method"></a>添加新的付款方式
 
-1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帐单 & 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单 & 付款</a>" 页。
 
-2. 选择 "**添加付款方法**"。
+2. 在 "**付款方式**" 选项卡上，选择 "**添加支付方式**"。
 
 3. 在 "**添加付款方法**" 窗格中，输入新付款方式的信息，然后选择 "**添加**"。
 
 ## <a name="view-your-invoices"></a>查看你的发票
 
-1. 在 "管理中心" 中，转到 "**付费**帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**付费**帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>" 页。
 
-2. 在 "**发票**" 下，选择要查看的发票。
+2. 在 "**发票**" 选项卡上，选择要查看的发票。 如果没有任何发票可见，则将**过去3个月**更改为**过去6个月**或**指定日期范围**。
 
-## <a name="need-help-contact-us"></a>是否需要帮助？ 联系我们。
+## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。
 
 有关自助购买的常见问题，请参阅[自助服务购买 FAQ](self-service-purchase-faq.md)。
 
-如果你有任何疑问或需要有关自助购买的帮助，请[联系支持人员](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+如果你有任何疑问或需要有关自助购买的帮助，请[联系支持人员](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。

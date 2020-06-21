@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 了解如何设置注册表项以启用安装了 Microsoft Office 2013 的设备的新式验证。
-ms.openlocfilehash: 8bf6f50068f1a1435897c49656823302df40235e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399166"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779961"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>在 Windows 设备上启用适用于 Office 2013 的新式验证
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399166"
 > [!NOTE]
 > 已为 Office 2016 客户端启用新式验证，无需设置 Office 2016 的注册表项。 
   
-若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ ms.locfileid: "44399166"
    
 设置注册表项后，可以将 Office 2013 设备应用设置为使用具有 Microsoft 365 的[多重身份验证（MFA）](set-up-multi-factor-authentication.md) 。 
   
-如果当前登录了任何客户端应用，需注销并重新登录以使更改生效。否则，在建立 ADAL 标识之前，MRU 和漫游设置将不可用。
+If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
   
 ## <a name="disable-modern-authentication-on-devices"></a>在设备上禁用新式验证
 
@@ -56,7 +56,7 @@ ms.locfileid: "44399166"
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
 ## <a name="related-articles"></a>相关文章
-[使用第二种验证方法登录 Office 2013](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+[使用第二种验证方法登录 Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
   
 

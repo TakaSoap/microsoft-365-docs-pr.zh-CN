@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 了解如何验证您的域，并在 Register.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7a11fa248f2602eb02fe1242234d26584bd33fd2
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400324"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780321"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 处为 Microsoft 创建 DNS 记录
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400324"
   
 如果 DNS 托管提供者是 Register.com，请按本文中的步骤验证域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
   
-下面是要添加的主要记录。 请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+下面是要添加的主要记录。 请按下列步骤操作或[观看视频](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 - [在 Register.com 添加 TXT 记录以验证您是否拥有该域](#add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain)
     
@@ -56,12 +56,12 @@ ms.locfileid: "44400324"
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>在 Register.com 添加 TXT 记录以验证您是否拥有该域
 <a name="BKMK_verify"> </a>
 
-在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-请执行以下步骤或[观看视频（从0:44 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从0:44 开始）](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
@@ -104,7 +104,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-请执行以下步骤或[观看视频（从3:32 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从3:32 开始）](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
@@ -143,7 +143,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
-请执行以下步骤或[观看视频（从4:23 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从4:23 开始）](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
@@ -189,7 +189,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 > [!IMPORTANT]
 > 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 可以将所需的 Microsoft 值添加到当前记录，这样就拥有包含两组值的单个 SPF 记录。  
   
-请执行以下步骤或[观看视频（从5:12 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从5:12 开始）](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     
@@ -222,7 +222,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-请执行以下步骤或[观看视频（从5:55 开始）](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请执行以下步骤或[观看视频（从5:55 开始）](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 若要开始，请使用[此链接](https://www.register.com/myaccount/)转到 Register.com 上您的域页面。 系统将会提示您登录。
     

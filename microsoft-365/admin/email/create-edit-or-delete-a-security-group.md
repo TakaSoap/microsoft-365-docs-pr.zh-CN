@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 了解如何创建、编辑或删除安全组。
-ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c7c8d57037d972cd89dad45358dc5a7aa3fb86e8
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432273"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780237"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中创建、编辑或删除安全组
 
@@ -41,7 +41,7 @@ ms.locfileid: "44432273"
 也存在您可以用于向用户组发送电子邮件或分配权限的 [Exchange Online 和 SharePoint Online 中的组](#groups-in-exchange-online-and-sharepoint-online)和向用户授权对网站和网站集的权限和访问权限的 [Exchange Online 和 SharePoint Online 中的组](#groups-in-exchange-online-and-sharepoint-online)。 
   
 > [!IMPORTANT]
->  计划使用网站邮箱？ 通过安全组添加到 SharePoint 网站而不是单独添加的所有用户只能从 SharePoint 使用网站邮箱。 这些用户将无法从 Outlook 访问网站邮箱。 有关详细信息，请参阅[使用 Microsoft 365 组而不是站点邮箱](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)。 
+>  计划使用网站邮箱？ 通过安全组添加到 SharePoint 网站而不是单独添加的所有用户只能从 SharePoint 使用网站邮箱。 这些用户将无法从 Outlook 访问网站邮箱。 有关详细信息，请参阅[使用 Microsoft 365 组而不是站点邮箱](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)。 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>管理中心中的安全组
 
@@ -155,7 +155,7 @@ ms.locfileid: "44432273"
   
 ## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>我是否需要使用安全组来保护组织的安全？
 
-不正确。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
+否。 这只是管理组织安全性的一种更好的方法。 您可以始终授予用户权限并单独访问网站。 但使用安全组，您可以轻松地管理更多的用户组。
   
 ## <a name="can-i-send-email-to-a-security-group"></a>我是否可以向安全组发送电子邮件？
 

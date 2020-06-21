@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: 14758161f827cf231a8f3a0415748c7a2dd5981f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616586"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755244"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -44,11 +44,21 @@ ms.locfileid: "44616586"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要修改默认连接筛选器策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对默认连接筛选器策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
 
-- 若要查找您想要允许或阻止的电子邮件服务器（发件人）的源 IP 地址，可以检查邮件头中的连接 IP （**CIP**）头字段。 若要查看各种电子邮件客户端中的邮件头，请参阅[在 Outlook 中查看 internet 邮件头](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
+  - 若要修改默认连接筛选器策略，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对默认连接筛选器策略进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
+
+- 若要查找您想要允许或阻止的电子邮件服务器（发件人）的源 IP 地址，可以检查邮件头中的连接 IP （**CIP**）头字段。 若要查看各种电子邮件客户端中的邮件头，请参阅[在 Outlook 中查看 internet 邮件头](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
 - IP 允许列表的优先级高于 IP 阻止列表（两个列表中的地址不被阻止）。
 
@@ -72,15 +82,15 @@ ms.locfileid: "44616586"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的网络掩码值为/24 到/32。 若要跳过 CIDR IP 掩码值/1 到/23 的垃圾邮件筛选，请参阅本主题后面的 "[跳过对 CIDR ip 的垃圾邮件筛选](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range)"。在本主题后面的 "可用范围" 部分之外。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**允许的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击 **“保存”**。
 
    - **IP 阻止列表**：单击 "**编辑**"。 在出现的 " **IP 阻止列表**" 浮出控件中，按照**ip 允许列表**设置中的前面所述，在 "**地址" 或 "地址范围**" 框中输入单个 ip 地址、ip 地址范围或 CIDR IP。
 
-     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 "**添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 "**阻止的 IP 地址**" 中的条目，然后单击 "**删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成后，单击 **“保存”**。
 
    - **打开安全列表**：启用或禁用安全列表的使用，以确定将跳过垃圾邮件筛选的已知、良好的发件人。
 
-4. 完成时，请单击“保存”****。
+4. 完成后，单击 **“保存”**。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全 & 合规性中心查看默认连接筛选器策略
 

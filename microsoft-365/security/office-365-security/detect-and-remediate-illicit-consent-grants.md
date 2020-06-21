@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Microsoft Office 365 中的非法许可授予攻击。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587492"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726803"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>检测并修正违法许可授予
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587492"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什么是 Office 365 中的非法同意授权攻击？
 
-在违法许可授予攻击中，攻击者将创建一个 Azure 注册的应用程序，该应用程序请求对联系人信息、电子邮件或文档等数据的访问权限。 然后，攻击者向最终用户授予权限，允许该应用程序通过网络钓鱼攻击或将非法代码注入到受信任的网站来访问其数据。 在违法应用程序被授予同意后，它将具有对数据的帐户级别访问权限，而无需组织帐户。 常规修正步骤（如重置已违例帐户的密码或要求对帐户进行多重身份验证（MFA））不会对此类型的攻击有效，因为它们是第三方应用程序，并且是组织外部的。 
+在违法许可授予攻击中，攻击者将创建一个 Azure 注册的应用程序，该应用程序请求对联系人信息、电子邮件或文档等数据的访问权限。 然后，攻击者向最终用户授予权限，允许该应用程序通过网络钓鱼攻击或将非法代码注入到受信任的网站来访问其数据。 在违法应用程序被授予同意后，它将具有对数据的帐户级别访问权限，而无需组织帐户。 常规修正步骤（如重置已违例帐户的密码或要求对帐户进行多重身份验证（MFA））不会对此类型的攻击有效，因为它们是第三方应用程序，并且是组织外部的。
 
 这些攻击利用交互模型，该模型假定调用信息的实体是自动化的，而不是人工。
 
@@ -43,18 +43,21 @@ ms.locfileid: "44587492"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>查找此攻击的迹象的步骤
 
-1. 在租户中打开**安全 & 合规性中心**。
+1. 在上打开**安全 & 合规性中心** <https://protection.office.com> 。
 
 2. 导航到 "**搜索**"，然后选择 "**审核日志搜索**"。
 
-3. 搜索（所有活动和所有用户）并输入开始日期和结束日期（如果需要），然后单击 "**搜索**"。 
+3. 搜索（所有活动和所有用户）并输入开始日期和结束日期（如果需要），然后单击 "**搜索**"。
 
 4. 单击 "**筛选结果**" 并在 "**活动**" 字段中输入应用同意。
 
 5. 单击结果以查看活动的详细信息。 若要获取活动的详细信息，请单击 "**详细信息**"。 查看 "IsAdminContent" 是否设置为 True。
 
 > [!NOTE]
-> 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。 <br/><br/> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 
+> 在事件发生后，在搜索结果中显示相应的审核日志条目可能需要30分钟到24小时的时间。
+> 
+> 审核记录的保留和可在审核日志中搜索的时间长度取决于您的 Microsoft 365 订阅，以及分配给特定用户的许可证类型。 有关详细信息，请参阅[审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 > 
 > 如果此值为 true，则表示具有全局管理员访问权限的人员可能已授予对数据的广泛访问权限。 如果这是意外情况，请执行相应的步骤来[确认攻击](#how-to-confirm-an-attack)。
 
@@ -94,7 +97,7 @@ ms.locfileid: "44587492"
 
 ### <a name="steps-for-doing-this-with-powershell"></a>使用 PowerShell 执行此操作的步骤
 
-验证非法同意授予攻击的最简单方法是运行[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，这会将租赁中所有用户的所有 oauth 同意授权和 oauth 应用转储到一个 .csv 文件中。
+验证违法许可授予攻击的最简单方法是运行[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)，这会将租赁中所有用户的所有 oauth 同意授权和 oauth 应用转储到一个 .csv 文件中。
 
 #### <a name="pre-requisites"></a>先决条件
 
@@ -109,7 +112,7 @@ ms.locfileid: "44587492"
 
 1. 使用本地管理员权限登录到您将运行脚本的计算机。
 
-2. 将[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本从 GitHub 下载或复制到一个要从中运行脚本的文件夹中。 这将是将写入输出 "权限 .csv" 文件的文件夹。
+2. 将[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)脚本从 GitHub 下载或复制到将从中运行脚本的文件夹中。 这将是将在其中写入输出 "permissions.csv" 文件的文件夹。
 
 3. 以管理员身份打开 PowerShell 实例，并打开将脚本保存到的文件夹。
 
@@ -121,7 +124,7 @@ ms.locfileid: "44587492"
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-该脚本将生成一个名为 "权限 .csv" 的文件。 按照以下步骤查找违法应用程序权限授予：
+该脚本将生成一个名为 Permissions.csv 的文件。 按照以下步骤查找违法应用程序权限授予：
 
 1. 在 ConsentType 列（列 G）中搜索值 "AllPrinciples"。 AllPrincipals 权限允许客户端应用程序访问租赁中的所有人的内容。 本机 Microsoft 365 应用程序需要此权限才能正常工作。 应仔细查看具有此权限的每个非 Microsoft 应用程序。
 

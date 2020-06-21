@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399178"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754792"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 工作效率分数（预览）
 
@@ -134,6 +134,22 @@ ms.locfileid: "44399178"
 移动的主要洞察力是访问文件以及跨多个平台使用电子邮件和聊天的人员数量。 能够在所选设备上的任何位置工作，对于具有销售角色、高级经理、顾问和其他需要从 office 执行工作以提高工作效率的人员来说非常重要。 对这些工作人员的改进会产生很大影响。 
 
 我们衡量在两个或更多平台（包括桌面、移动和 web）中使用至少一个 Microsoft 365 效率应用的人员的百分比和绝对数量。 我们测量的工作效率应用是 Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype。 用户必须拥有 Microsoft 365 应用程序，才能衡量企业、Exchange、Yammer、Skype 或团队许可证。 
+
+## <a name="business-continuity-special-report"></a>业务连续性特殊报告
+
+业务连续性报告是适用于所有 Microsoft 365 客户的受限制的工作场所智能报告，可帮助他们在这一富有挑战性的时间指导其组织。  
+
+此报告可帮助业务负责人了解： 
+
+- 协作和通信如何受移动到远程工作的影响。 
+
+- 用户调整为在家工作时对工作寿命余额的影响。 
+
+- 如果用户有效地使用会议，以及他们是如何 
+
+[了解有关业务连续性报告的详细信息](https://aka.ms/bcrps)
+
+[了解有关 Microsoft Graph 的详细信息](https://docs.microsoft.com/graph/)
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
 

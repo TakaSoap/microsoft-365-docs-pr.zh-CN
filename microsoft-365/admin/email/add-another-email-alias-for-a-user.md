@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Microsoft 365 商业版帐户相关联。 '
-ms.openlocfilehash: bab4ace6d497bac8892a29c76b6f2d05c4fa018f
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432321"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780285"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
 
@@ -59,7 +59,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
   
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择 "用户 >**管理电子邮件别名**。 如果没有为用户分配许可证，则不会看到此选项。 
     
@@ -89,7 +89,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
 
 ::: moniker range="o365-germany"
     
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。 
     
     
 2. 在" **活动用户**"页面上，选择要编辑的用户名。
@@ -120,7 +120,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
     
 2. 在" **活动用户**"页面上，选择要编辑的用户名。
@@ -162,7 +162,7 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
   
 ## <a name="related-articles"></a>相关文章
 
-[从不同的地址发送电子邮件](https://support.office.com/article/ccba89cb-141c-4a36-8c56-6d16a8556d2e.aspx)
+[从不同的地址发送电子邮件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [更改用户名和电子邮件地址](../add-users/change-a-user-name-and-email-address.md)
   

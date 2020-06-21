@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（Office 365 ATP）中提供的反网络钓鱼策略。
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689274"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754660"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -95,7 +95,7 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
     - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
     - 对于 via 标记，确认域在 "DKIM" 签名中，或 "发件人地址中的**邮件**" 与 "发件人" 地址中的域（或为其子域）。
 
-  有关详细信息，请参阅[识别可疑邮件在 Outlook.com 和 web 上的 Outlook](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  有关详细信息，请参阅[识别可疑邮件在 Outlook.com 和 web 上的 Outlook](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的独占设置
 

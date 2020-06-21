@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 详细了解由世纪互联运营的 Office 365，旨在满足中国安全、可靠和可伸缩云服务的需要。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399010"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779913"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -57,10 +57,10 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 |:-----|:-----|
 |自定义域  <br/> |管理员可以创建和/或使用通过特定于中文的域提供程序注册的自定义域。 如果没有自定义域，则可以从域名注册机构[购买域名](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果您已经有一个，请[查找您的域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果使用 Office 365 SharePoint Online 服务创建公共网站，则中国 Internet 合规性策略要求你获取 Internet 内容提供商（ICP）号码。  **注意：** 自定义域名称中不允许的单词的自动验证不可用。           |
 |订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 获取商业版支持](../contact-support-for-business-products.md)。  <br/> |
-|自助式密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自助式密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Microsoft 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |安全、隐私、合规性以及有关支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
-|Office 桌面安装程序  <br/> |Office 桌面安装程序不适用于 Office 2010 和 Office 2007。 但是，管理员可以[将当前的 office 桌面应用程序配置为与 Office 365 配合](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
-|移动和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理（MDM）  <br/>  Blackberry Business 云服务（BBCS）不可用，但您可以使用 Exchange ActiveSync 设备或来自移动（边缘、BlackBerry 无线电子邮件解决方案）的信息，以运行 Blackberry Enterprise Server （BE）。  <br/>  有关移动支持的详细信息，请参阅[设置和管理用户的移动访问](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
+|Office 桌面安装程序  <br/> |Office 桌面安装程序不适用于 Office 2010 和 Office 2007。 但是，管理员可以[将当前的 office 桌面应用程序配置为与 Office 365 配合](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
+|移动和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理（MDM）  <br/>  Blackberry Business 云服务（BBCS）不可用，但您可以使用 Exchange ActiveSync 设备或来自移动（边缘、BlackBerry 无线电子邮件解决方案）的信息，以运行 Blackberry Enterprise Server （BE）。  <br/>  有关移动支持的详细信息，请参阅[设置和管理用户的移动访问](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
 |Office Lens  <br/> |不可用。  <br/> |
 |Microsoft Planner  <br/> |即将推出。  <br/> |
 |Microsoft Teams  <br/> |不可用。  <br/> |
@@ -74,7 +74,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|通过电子邮件与组织外部的某个人共享文档、库或网站  <br/> |此功能可用，但默认情况下，使用它可能会使共享文件在您所在的国家/地区之外进行访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 尝试与组织外部的某个人共享的用户也会收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。  <br/> |
+|通过电子邮件与组织外部的某个人共享文档、库或网站  <br/> |此功能可用，但默认情况下，使用它可能会使共享文件在您所在的国家/地区之外进行访问。 管理员确实能够将其打开，但会收到一条警告消息，表明它可以使共享文件在你所在的国家/地区之外获得访问。 尝试与组织外部的某个人共享的用户也会收到警告。 有关详细信息，请参阅[在 Office 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支持 Access 2013，但添加新的 Access 应用程序可能不可用，因为此功能将从 Office 365 和 SharePoint Online 中停用。 在365和 SharePoint Online 中创建新的基于 Access 的 web 应用程序和 Access web 数据库将在6月2017和任何剩余的 web 应用程序和 web 数据库中停止启动，4月2018。 此外，Access 2010 功能不受支持，尝试使用 Access 2010 数据库将导致错误和可能的数据丢失。  <br/> |
 |Microsoft PowerApps  <br/> |即将推出。  <br/> |
 |信息权限管理 (IRM)  <br/> |即将推出为组织将 IRM 功能设置为适用于 SharePoint 的功能。  <br/> |
@@ -99,7 +99,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 |共享日历  <br/> |内部部署和 Exchange Online 邮箱之间的日历共享可用。  <br/> |
 |共享联系人  <br/> |即将推出。  <br/> |
 |邮件跟踪  <br/> |即将推出。  <br/> |
-|应用  <br/> |即将推出。  <br/> |
+|Apps  <br/> |即将推出。  <br/> |
 |位置功能  <br/> |此功能显示电子邮件中的地址的地图;由于它可能允许您所在国家/地区之外的数据，因此不可用。  <br/> |
 |已连接帐户  <br/> |即将即将连接到其他帐户，如 Hotmail （Outlook.com）。  <br/> |
    
@@ -108,12 +108,12 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
  全新的 Exchange 2013 累积更新5（CU5），现已支持内部部署 Exchange 2013 组织和 Office 365 服务之间的全功能混合部署。 利用混合配置向导中的新改进功能，Exchange 2013 CU5 支持内部部署组织与 Exchange Online 组织之间的以下混合功能：  
 
 - 内部部署组织与 Exchange Online 组织之间的安全邮件路由。 
-- 使用共享域命名空间的邮件路由。例如，内部部署与 Exchange Online 组织都使用 @contoso.com SMTP 域。 
+- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
 - 统一全局地址列表 (GAL)，也称为"共享地址簿"。  
 - 内部部署组织与 Exchange Online 组织之间的忙/闲状态共享和日历共享。  
-- 集中控制入站和出站邮件流。可以将所有入站和出站 Exchange Online 邮件配置为通过内部部署 Exchange 组织路由。 
+- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
 - 内部部署组织和 Exchange Online 组织的单个 Office Outlook Web App URL。  
-- 可以将现有内部部署邮箱移到 Exchange Online 组织。如果需要，还可以将 Exchange Online 邮箱移回内部部署组织。  
+- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
 - 使用内部部署 Exchange 管理中心 (EAC) 集中管理邮箱。  
 - Outlook 联系人的邮件提示、HD 照片支持和内部部署和 Exchange Online 组织之间的多邮箱搜索。 
 - 内部部署 Exchange 邮箱基于云的邮件存档。 
@@ -123,10 +123,10 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |**内部部署 Exchange 版本**|**Exchange 混合服务器版本**|**支持 "混合配置" 向导？**|**支持的混合功能**|
 |:-----|:-----|:-----|:-----|
-| 2016  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有  <br/> |
-| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 所有  <br/> |
+| 2016  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 CU5  <br/> | 不适用  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 SP1  <br/> | 2013 CU5  <br/> | 是  <br/> | 全部  <br/> |
+| 2013 SP1  <br/> | 2013 SP1  <br/> | 是  <br/> | 全部  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 CU5  <br/> | 是  <br/> | 所有，除了就地电子数据展示/存档之外，OWA 访问（请参阅下表）  <br/> |
 | 混合 2013 SP1/2010 SP3  <br/> | 2013 SP1  <br/> | 是  <br/> | 仅手动配置的忙/闲  <br/> |
 | 2010 SP3  <br/> | 2010 SP3  <br/> | 否  <br/> | 无  <br/> |
@@ -165,7 +165,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 - [使用混合配置向导创建混合部署](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是一个基于 web 的免费工具，可帮助您在内部部署组织和 office 365 之间配置混合部署，或完全迁移到 office 365。 该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。 强烈建议使用部署助理配置混合部署。 > 对于不希望升级到或添加 Exchange 2013 CU5 服务器的组织，Exchange 2013 SP1 组织可在其内部部署组织和 Exchange Online 组织之间配置共享的日历忙/闲共享。 若要配置此混合部署功能，请参阅[使用由世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
+>  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是一个基于 web 的免费工具，可帮助您在内部部署组织和 office 365 之间配置混合部署，或完全迁移到 office 365。 该工具会询问您一些简单的问题，然后根据您的回答，创建一个自定义检查表，其中包含配置混合部署的说明。 强烈建议使用部署助理配置混合部署。 > 对于不希望升级到或添加 Exchange 2013 CU5 服务器的组织，Exchange 2013 SP1 组织可在其内部部署组织和 Exchange Online 组织之间配置共享的日历忙/闲共享。 若要配置此混合部署功能，请参阅[使用由世纪互联运营的 Office 365 配置 Exchange 混合部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
 
 |||  
 |---|---|
@@ -187,7 +187,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 
 |||
 |:-----|:-----|
-|管理帐户（从 Office 客户端中）  <br/> |此功能以及用于转到 Office 365 门户的其他功能，目前指向全球 Office 365 门户，您无法使用由世纪互联运营的 Office 365 进行登录。 这是一个已修复的已知问题。 同时，您可以使用 URL https://portal.partner.microsoftonline.cn/ 登录到您的帐户并在那里管理设置。 有关详细信息，请参阅[管理 office 365 Pro Plus account for 由世纪互联运营的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
+|管理帐户（从 Office 客户端中）  <br/> |此功能以及用于转到 Office 365 门户的其他功能，目前指向全球 Office 365 门户，您无法使用由世纪互联运营的 Office 365 进行登录。 这是一个已修复的已知问题。 同时，您可以使用 URL https://portal.partner.microsoftonline.cn/ 登录到您的帐户并在那里管理设置。 有关详细信息，请参阅[Manage a Microsoft 365 Apps For Office 的 enterprise account for 由世纪互联运营的 Office 365](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -213,7 +213,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 |:-----|:-----|
 |支持 Skype for business 的域提供程序  <br/> |你将需要使用支持 SRV 记录的中文特定域提供程序注册你的域。 有关如何注册域的详细信息，请参阅[查找您的域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> |
 |电话拨入式会议（为无法进入计算机的用户向会议添加电话访问的能力）  <br/> |您可能会看到 Skype for Business 中和 Skype for Business 管理中心中的电话拨入式会议和提供商的选项，但这些功能尚不可用。 即将推出。  <br/> |
-|Skype for Business 桌面帮助  <br/> |你可以[在此处](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx)查找有关 Skype for business 桌面的帮助。 但是，除非您使用的是 Office 即点即用，否则无法从产品中获取桌面帮助。  <br/> |
+|Skype for Business 桌面帮助  <br/> |你可以[在此处](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)查找有关 Skype for business 桌面的帮助。 但是，除非您使用的是 Office 即点即用，否则无法从产品中获取桌面帮助。  <br/> |
 |Lync 2010  <br/> |不可用。  <br/> |
 |使用基于 Samsung 的设备和 Google Chrome 时从日历加入会议的能力  <br/> |即将推出。 同时，您可以打开 Skype for Business，转到 "会议" 视图，并从那里加入会议。  <br/> |
 |桌面电话设备，如 Polycom、Ares 和 Tanjay  <br/> |不可用。  <br/> |

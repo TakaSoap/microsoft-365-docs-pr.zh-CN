@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '了解如何查找新的 Microsoft 365 合作伙伴，或获取你过去使用过的合作伙伴的联系信息。 '
-ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515791"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780105"
 ---
 # <a name="find-your-partner-or-reseller"></a>查找合作伙伴或经销商
 
@@ -61,6 +61,6 @@ ms.locfileid: "44515791"
   
  **适用于 Microsoft 合作伙伴**
   
-[适于合作伙伴的帮助](https://support.office.com/article/ae811622-b838-4f62-b7e9-659627374963.aspx)
+[适于合作伙伴的帮助](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 

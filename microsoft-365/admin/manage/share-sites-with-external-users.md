@@ -1,5 +1,5 @@
 ---
-title: 在外部共享网站和文件
+title: 与来宾用户共享网站和文件
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -21,14 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '了解如何与组织外部的人员共享网站和文件。 '
-ms.openlocfilehash: 6990b4ffe45af1a591c72e36c1348d1e804e829b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399550"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780045"
 ---
-# <a name="share-sites-and-files-externally"></a>在外部共享网站和文件
+# <a name="share-sites-and-files-with-guest-users"></a>与来宾用户共享网站和文件
 
 ::: moniker range="o365-21vianet"
 
@@ -62,7 +62,7 @@ ms.locfileid: "44399550"
 |共享文档，但不要求进行身份验证。  <br/> |与您的组织外部的用户共享非敏感或非机密文档的链接，以便他们可以查看该文档或在其中更新反馈意见。 这些人员不需要访问网站上的内容。  <br/> |
    
 > [!IMPORTANT]
-> 如果禁用外部共享，则当前具有访问权限的组织外部的人员将不再具有访问权限。 如果稍后再次打开外部共享，将为这些人员还原访问权限。 若要阻止用户访问共享内容，请将[其从 Microsoft 365 组](/office365/admin/create-groups/add-or-remove-members-from-groups)中删除，从网站中删除其权限，或[停止与这些文件或文件夹共享文件或文件夹](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
+> 如果禁用外部共享，则当前具有访问权限的组织外部的人员将不再具有访问权限。 如果稍后再次打开外部共享，将为这些人员还原访问权限。 若要阻止用户访问共享内容，请将[其从 Microsoft 365 组](/office365/admin/create-groups/add-or-remove-members-from-groups)中删除，从网站中删除其权限，或[停止与这些文件或文件夹共享文件或文件夹](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>在组织级别启用外部共享
 
@@ -75,7 +75,7 @@ ms.locfileid: "44399550"
   
 2. 在打开的页面上，选择用户是否可以仅与现有来宾共享、新的和现有的来宾或任何人。 
     
-3. 选择“保存”****。
+3. 选择“**保存**”。
     
 在组织级别启用外部共享之后，可以微调共享设置以禁用特定网站的外部共享。 有关信息，请参阅[打开或关闭网站的外部共享](/sharepoint/change-external-sharing-site)。
   

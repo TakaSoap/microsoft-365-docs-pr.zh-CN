@@ -1,5 +1,5 @@
 ---
-title: 设置与 Microsoft 365 的安全协作
+title: 与 Microsoft 365 建立安全协作
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 了解如何设置团队以根据其敏感度保护你的数据
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159463"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724803"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>设置与 Microsoft 365 的安全协作
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>与 Microsoft 365 建立安全协作
 
 能够在阻止 oversharing 的情况下轻松地与适当的人共享信息是组织成功的关键。 这包括能够安全地与仅有权访问的人共享敏感数据。 这可能包括与组织外部的人员共享敏感数据，具体取决于项目。
 
@@ -57,7 +57,16 @@ ms.locfileid: "44159463"
 
 对于以上所述的所有情况，可以使用 Microsoft 团队中的团队来存储、共享和协作处理信息。 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>对所有类型的数据使用团队
+若要配置安全 collabration，请使用以下 Microsoft 365 功能和功能。
+
+| 产品或组件 | 功能或特性 | 许可 |
+|:-------|:-----|:-------|
+| Office 365 高级威胁防护 | SPO、OneDrive 和团队的 ATP 安全附件;ATP 安全文档;团队的 ATP 安全链接    | Microsoft 365 E1、E3 和 E5 |
+| SharePoint    | 网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置 | Microsoft 365 E1、E3 和 E5 |
+| Microsoft Teams   | 来宾访问、专用团队、专用频道 | Microsoft 365 E1、E3 和 E5 |
+| Microsoft 365 合规中心  | 敏感度标签    | Microsoft 365 E3 和 E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>对所有类型的数据使用团队
 
 若要使用不同的 sensitivities 管理对信息的访问，我们[为团队开发了三个不同的保护层](configure-teams-three-tiers-protection.md)。 您可以自定义这些层中的任何一个，以更好地满足需求或业务。 
 
@@ -91,7 +100,7 @@ ms.locfileid: "44159463"
 
 如果您有一个高度敏感的项目，该项目需要在组织内进行额外的共享保护，则可以将使用其自己的敏感度标签的团队配置为加密文件，以便只有工作组成员可以读取这些文件。 有关详细信息，请参阅[Configure a team with security 隔离](secure-teams-security-isolation.md)。
 
-## <a name="sharing-with-people-outside-your-organization"></a>与组织外部的人员共享
+### <a name="sharing-with-people-outside-your-organization"></a>与组织外部的人员共享
 
 您可能需要[与组织外部的人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这可能包括与单个用户共享单个文档，以便在大型合作伙伴组织或来自世界各地的兼职翻译的主要项目上进行协作。 在 Microsoft 365 中，可以轻松地完成这一范围的外部共享，并提供适当的保护措施来帮助保护您的敏感信息。
 
@@ -108,6 +117,12 @@ ms.locfileid: "44159463"
 - [创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
 如果您有一个包含合作伙伴组织的主要项目，您可以使用 Azure 权利管理在您为项目设置的团队中管理来自该组织的来宾。 有关详细信息，请参阅[Create a B2B extranet with 托管来宾](b2b-extranet.md)。
+
+## <a name="deploy-the-secure-collaboration-solution"></a>部署安全协作解决方案
+
+当您准备好部署此解决方案时，请继续执行以下步骤：
+1. [为团队配置三个不同的保护层](configure-teams-three-tiers-protection.md)。
+2. 配置[与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)的设置。
 
 ## <a name="see-also"></a>另请参阅
 

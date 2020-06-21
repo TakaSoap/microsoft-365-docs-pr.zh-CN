@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: d5eaadc6d177acf91ea4d9d149c92a4de6cc8dd3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 4e40e3fa2186022a64c8ccdf66f62db24b9f9794
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616630"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755256"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -110,7 +110,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 <sup>\*</sup>**备注**：
 
-- 在 Exchange Online 中，不能识别安全发件人列表或_TrustedSendersAndDomains_参数中的**域条目**，因此只能使用电子邮件地址。 在具有目录同步的独立 EOP 中，默认情况下不会同步域条目，但可以为域启用同步。 有关详细信息，请参阅[KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange)。
+- 在 Exchange Online 中，不能识别安全发件人列表或_TrustedSendersAndDomains_参数中的**域条目**，因此只能使用电子邮件地址。 在具有目录同步的独立 EOP 中，默认情况下不会同步域条目，但可以为域启用同步。 有关详细信息，请参阅[KB3019657](https://support.microsoft.com/help/3019657)。
 
 - 您不能使用**set-mailboxjunkemailconfiguration** cmdlet 直接修改安全收件人列表（ _TrustedRecipientsAndDomains_参数不起作用）。 修改"安全发件人"列表后，这些更改将同步到"安全收件人"列表。
 
@@ -168,11 +168,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ## <a name="about-junk-email-settings-in-outlook"></a>关于 Outlook 中的配置垃圾邮件设置
 
-若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅[管理模板文件（ADMX/ADML）和 Office 自定义工具 For Microsoft 365 Apps for enterprise、office 2019 和 office 2016](https://www.microsoft.com/download/details.aspx?id=49030)以及[如何使用组策略部署垃圾邮件设置（如安全发件人列表](https://support.microsoft.com/help/2252421/how-to-deploy-junk-email-settings-such-as-the-safe-senders-list-by-usi)）。
+若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅[管理模板文件（ADMX/ADML）和 Office 自定义工具 For Microsoft 365 Apps for enterprise、office 2019 和 office 2016](https://www.microsoft.com/download/details.aspx?id=49030)以及[如何使用组策略部署垃圾邮件设置（如安全发件人列表](https://support.microsoft.com/help/2252421)）。
 
-将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭**垃圾邮件中**不自动筛选**" "垃圾 \> **Junk** \> **邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
+将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在**家庭**垃圾邮件中**不自动筛选**" "垃圾 \> **Junk** \> **邮件选项** \> "**选项**时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍使用安全发件人列表、安全收件人列表和阻止发件人列表）将邮件移动到 "垃圾邮件" 文件夹。 有关这些设置的详细信息，请参阅[垃圾邮件筛选器概述](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
 
-When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. 这种垃圾邮件分类独立于由 EOP 确定的垃圾邮件可信度（SCL）。 实际上，Outlook 会忽略 EOP 中的 SCL （除非 EOP 将邮件标记为 "跳过垃圾邮件筛选"），并使用其自己的条件来确定邮件是否为垃圾邮件。 当然，可能会出现来自 EOP 和 Outlook 的垃圾邮件结论。 有关这些设置的详细信息，请参阅在[垃圾邮件筛选器中更改保护级别](https://support.office.com/article/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。
+When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. 这种垃圾邮件分类独立于由 EOP 确定的垃圾邮件可信度（SCL）。 实际上，Outlook 会忽略 EOP 中的 SCL （除非 EOP 将邮件标记为 "跳过垃圾邮件筛选"），并使用其自己的条件来确定邮件是否为垃圾邮件。 当然，可能会出现来自 EOP 和 Outlook 的垃圾邮件结论。 有关这些设置的详细信息，请参阅在[垃圾邮件筛选器中更改保护级别](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。
 
 > [!NOTE]
 > 在2016年11月，Microsoft 已停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。 现有的 SmartScreen 垃圾邮件定义保留不变，但其有效性可能会随着时间的推移而下降。 有关详细信息，请参阅“[停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332)”。
@@ -189,7 +189,7 @@ Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集
 
   > 无法/无法将添加到 "垃圾邮件" 的服务器列表。 您已超出服务器允许的大小。 服务器上的垃圾邮件筛选器将被禁用，直到垃圾邮件列表缩小到服务器允许的大小。
 
-  有关此限制以及如何更改此限制的详细信息，请参阅[KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit)。
+  有关此限制以及如何更改此限制的详细信息，请参阅[KB2669081](https://support.microsoft.com/help/2669081)。
 
 - EOP 中的同步安全列表集合具有以下同步限制：
 

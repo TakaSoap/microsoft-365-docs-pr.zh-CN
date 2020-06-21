@@ -21,12 +21,12 @@ search.appverid:
 - BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 了解如何将成员添加到组、从组中删除成员和在 Microsoft 365 管理中心中管理组所有者状态。
-ms.openlocfilehash: 7a223d6387ca7d261d959c6803a484bc29cdd4b1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f873d4f4a20804ada3222178b59c4e1cc8ddb6fb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431589"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780477"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用管理中心添加或删除 Microsoft 365 组中的成员
 
@@ -37,10 +37,10 @@ ms.locfileid: "44431589"
 
 ::: moniker-end
 
-在 Microsoft 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。 如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。 只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。 [什么是 Microsoft 365 组？](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+在 Microsoft 365 中，组成员通常会创建自己的组、将自己添加到要加入的组或由组所有者邀请。 如果组所有权发生更改，或者您确定应添加或删除某个成员，则您也可以进行此更改。 只有全局管理员、Exchange 管理员、组管理员或用户管理员可以进行这些更改。 [什么是 Microsoft 365 组？](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> 如果你不是管理员，则可以[使用 Outlook 添加或删除成员](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx)。
+> 如果你不是管理员，则可以[使用 Outlook 添加或删除成员](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)。
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>将成员添加到管理员中心的组中
 
@@ -90,7 +90,7 @@ ms.locfileid: "44431589"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
 
 2. 选择一个用户。
 
@@ -179,7 +179,7 @@ ms.locfileid: "44431589"
 
 ## <a name="manage-group-owner-status"></a>管理组所有者状态
 
-组的创建者默认为组所有者。通常，出于备份支持或其他原因，一个组将具有多个所有者。可将成员提升为所有者状态，并可将所有者降级为成员状态。
+By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>将成员提升为管理中心中的所有者状态
 
@@ -281,13 +281,13 @@ ms.locfileid: "44431589"
 
 - 若要将成百上千个用户添加到组中，请使用[加载项 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)。
 
-- [向孤立组分配新的所有者](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+- [向孤立组分配新的所有者](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 ## <a name="articles-about-managing-groups"></a>有关组管理的文章
 
 - [将通讯组列表升级到 Outlook 中的 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
 
-- [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+- [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [在 Microsoft 365 组中管理来宾访问](manage-guest-access-in-groups.md)
 

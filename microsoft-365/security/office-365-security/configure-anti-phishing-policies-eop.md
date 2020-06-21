@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Exchange online Protection （EOP）组织（带有或不包含 Exchange Online 邮箱）中可用的反网络钓鱼策略。
-ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b6b95515ad44a65dbdd8a7516d8e6c8b2a386450
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616694"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726776"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中配置反网络钓鱼策略
 
@@ -73,9 +73,19 @@ ms.locfileid: "44616694"
 
   您无法在独立 EOP PowerShell 中管理反网络钓鱼策略。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除反网络钓鱼策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对反网络钓鱼策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
 
-- 若要能够在独立 EOP 中创建和修改反垃圾邮件策略，您需要为租户执行需要_水合_的操作。 例如，在 EAC 中，您可以转到 "**权限**" 选项卡，选择现有角色组，单击 "**编辑**" "编辑 ![ " 图标 ](../../media/ITPro-EAC-EditIcon.png) ，然后删除角色（最终会将其添加回来）。 如果您的租户从未 hydrated 过，您将看到一个名为 "**更新组织设置**" 的对话框，其中包含应成功完成的进度栏。 有关水合的详细信息，请参阅[OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) cmdlet （不可在独立 EOP PowerShell 中或安全 & 合规中心中）。
+  - 若要添加、修改和删除反网络钓鱼策略，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
+
+- 若要能够在独立 EOP 中创建和修改反垃圾邮件策略，您需要为租户执行需要_水合_的操作。 例如，在 Exchange 管理中心（EAC）中，您可以转到 "**权限**" 选项卡，选择现有角色组，单击 "**编辑** ![ " "编辑 ](../../media/ITPro-EAC-EditIcon.png) " 图标，然后删除角色（最终会将其添加回来）。 如果您的租户从未 hydrated 过，您将看到一个名为 "**更新组织设置**" 的对话框，其中包含应成功完成的进度栏。 有关水合的详细信息，请参阅[OrganizationCustomization](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization) cmdlet （不可在独立 EOP PowerShell 中或安全 & 合规中心中）。
 
 - 有关反网络钓鱼策略的推荐设置，请参阅[EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
@@ -103,7 +113,7 @@ ms.locfileid: "44616694"
 
 4. 在显示的 "**应用于**" 页上，确定该策略应用于的内部收件人。
 
-   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _\<recipient1\>_ 或 _\<recipient2\>_ ）。 不同的条件或例外使用和逻辑（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
+   只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
    单击 "**添加条件**"。 在出现的下拉列表中，选择 "**应用**条件：
 

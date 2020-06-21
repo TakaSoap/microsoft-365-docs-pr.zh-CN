@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: '了解如何更改 Microsoft 365 的默认主题，并对其进行自定义以与公司徽标或颜色相匹配。 '
-ms.openlocfilehash: 034e5cff726ea97397d5eee1592265ae3452209b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: f3ba6021205289426ee78f16c7d0678e4b81ef75
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678610"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779853"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>为你的组织自定义 Microsoft 365 主题
 
@@ -67,7 +67,7 @@ ms.locfileid: "44678610"
     
 4. 选择“**保存更改**”。
     
-你可以立即在管理中心中看到你的新主题。 在短时间内，你可以在 Microsoft 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile 应用 For iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 SharePoint 移动应用](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284)。
+你可以立即在管理中心中看到你的新主题。 在短时间内，你可以在 Microsoft 365 中看到它，包括 Outlook 中的页面、SharePoint、 [sharepoint mobile 应用 For iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a)和[适用于 Android 的 SharePoint 移动应用](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284)。
 
 可随时删除自定义图标或自定义颜色。 只需返回主题页面，然后选择 "**删除自定义主题**"。
   

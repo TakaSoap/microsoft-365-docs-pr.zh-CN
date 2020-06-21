@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029824"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773783"
 ---
 # <a name="device-configuration"></a>设备配置
 
@@ -31,9 +31,9 @@ ms.locfileid: "43029824"
 
 此表突出显示在设备预配过程中应用于所有 Microsoft 托管桌面设备的默认策略。 所有检测到的 Microsoft 托管桌面操作团队未批准的更改将还原为 Microsoft 托管桌面管理的对象。
 
-策略 | Description
+Policy | 说明
 --- | ---
-安全基准 | 针对所有 Microsoft 托管桌面设备配置了适用于 MDM 的[microsoft 安全基准](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基准是业界标准的配置。 它已公开发布、经过充分测试，并已由 Microsoft 安全专家进行了检查，以保持 Microsoft 托管桌面设备和应用在新式工作区中的安全。 <br><br>为了缓解不断发展的安全威胁中的威胁，Microsoft 安全基准将更新并部署到 Microsoft 托管桌面设备（每个 Windows 10 功能更新）。<br><br>有关详细信息，请参阅[Windows 10 安全基准](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
+安全基准 | 针对所有 Microsoft 托管桌面设备配置了适用于 MDM 的[microsoft 安全基准](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基准是业界标准的配置。 它已公开发布、经过充分测试，并已由 Microsoft 安全专家进行了检查，以保持 Microsoft 托管桌面设备和应用在新式工作区中的安全。 <br><br>为了缓解不断发展的安全威胁中的威胁，Microsoft 安全基准将更新并部署到 Microsoft 托管桌面设备（每个 Windows 10 功能更新）。<br><br>有关详细信息，请参阅[Windows 安全基准](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)。
 Microsoft 托管桌面建议的安全模板 | 对安全基准的一组建议更改，以优化用户体验。  这些更改记录在[安全附录](#security-addendum)中。 策略附录更新根据需要进行。  
 更新部署 | 使用 Windows Update for Business 执行软件更新的逐步部署。 IT 管理员无法修改部署组策略的设置。 有关基于组的部署的详细信息，请参阅[如何在 Microsoft 托管桌面中处理更新](updates.md)。
 按流量计费的连接 | 默认情况下，将关闭通过按流量计费的连接（如 LTE 网络）进行的更新，尽管每个用户可以在**Settings > updates > 高级选项**中单独打开此功能。 如果您希望允许所有用户通过按流量计费的连接启用更新，请[提交更改请求](../working-with-managed-desktop/admin-support.md)，这将为所有设备启用此设置。

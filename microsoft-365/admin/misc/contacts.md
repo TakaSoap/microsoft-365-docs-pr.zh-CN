@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 了解如何在管理中心中创建联系人并管理全局地址列表。
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399418"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780009"
 ---
 # <a name="quick-help-contacts"></a>快速帮助：联系人
 
@@ -42,7 +42,7 @@ ms.locfileid: "44399418"
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>这些联系人与"我的联系人"有何区别？
 
-"我的联系人" 是您为自己创建的联系人，而您的用户自己创建的联系人，但其他人无法查看。 您在管理中心中创建的联系人是组织的联系人，每个人都可以看到他们自己的联系人。 若要了解详细信息，请参阅[人员概述-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf)。
+"我的联系人" 是您为自己创建的联系人，而您的用户自己创建的联系人，但其他人无法查看。 您在管理中心中创建的联系人是组织的联系人，每个人都可以看到他们自己的联系人。 若要了解详细信息，请参阅[人员概述-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)。
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>其他人如何查看我在管理中心创建的联系人？
 

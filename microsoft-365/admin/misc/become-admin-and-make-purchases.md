@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '了解如何成为管理员并为您的组织获取 Microsoft 365 订阅。 '
-ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ecfde457cc04e28ef544701fe623a53a8e610b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399454"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780033"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>成为管理员并购买适用于贵组织的 Microsoft 365
 
 借助 Microsoft，组织中的用户可轻松注册并使用生产力工具和服务，而无需等待 IT 部门的正式部署。
   
-组织可让用户"按原样"继续使用这些服务。但是，如果用户作为一项服务注册 Skype 会议，可分配管理员进行升级，并通过 Skype for Business 和 Office 应用程序、文件存储及共享功能等获取更完整的会议解决方案。
+Your organization can let people continue to use these services "as is." But if people signed up for Skype Meetings as one of those services, you can assign an admin to upgrade and get a more complete meeting solution with Skype for Business and Office applications, file storage and sharing, and more.
   
 ## <a name="why-become-the-admin-and-buy-microsoft-365-for-your-organization"></a>为什么要成为管理员并为组织购买 Microsoft 365？
 
-员工使用工作帐户注册 Skype 会议 时，不能管理服务。他们只能获得最基本的功能：仅可举行参与者不超过 10 人的不受限会议（60 天后，参与者最多为 3 人）。 
+When an employee signs up for Skype Meetings with their work account, they can't manage the service. And they get only the most basic features: they can have unlimited meetings but only with 10 or fewer participants (after 60 days, the maximum participants is three people). 
   
 当您设置服务的管理员并为用户购买 Microsoft 365 时，他们将获得更多的高级功能。 而你可管理服务，进而强制实施策略和添加新用户。
   
@@ -87,9 +87,9 @@ ms.locfileid: "44399454"
 |:-----|:-----|
 |添加或删除许可证  <br/> |您可以为未使用 Microsoft 365 的用户[添加更多许可证](../../commerce/licenses/buy-licenses.md)，也可以从不需要使用组织的 microsoft 365 商业版订阅的[用户中删除许可证](../manage/remove-licenses-from-users.md)。  <br/> |
 |联系已注册的其他人  <br/> |与其他用户联系，让他们知道您正在管理其 Microsoft 365 订阅，并已升级。 [按照以下步骤](../add-users/add-users.md)查看**活动用户**及其电子邮件地址的列表。  <br/> |
-|开始使用 Microsoft 365  <br/> |请访问 [Office 365 学习中心](https://support.office.com/learn/office365-for-business)，了解如何登录、检查电子邮件和共享文档等。 你和你的用户可以使用此网站开始使用 Microsoft 365。  <br/> |
+|开始使用 Microsoft 365  <br/> |请访问 [Office 365 学习中心](https://support.microsoft.com/training)，了解如何登录、检查电子邮件和共享文档等。 你和你的用户可以使用此网站开始使用 Microsoft 365。  <br/> |
 |管理你的 Microsoft 365 订阅  <br/> |访问[Microsoft 365 管理中心](../admin-home.md)和了解常见管理任务，如添加和删除用户、重置密码和设置移动设备。  <br/> |
 
-## <a name="still-need-help"></a>是否仍需要帮助？
+## <a name="still-need-help"></a>仍然需要帮助？
 
 [致电 Microsoft 支持部门](../contact-support-for-business-products.md)

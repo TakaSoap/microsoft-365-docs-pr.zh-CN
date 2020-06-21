@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 概述 Microsoft 365 消息中心及其在更改管理中的角色。
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694955"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780081"
 ---
 # <a name="message-center"></a>邮件中心
 
@@ -164,7 +164,7 @@ ms.locfileid: "44694955"
 我们使用机器翻译以首选语言自动显示邮件。 有关如何设置语言的详细信息，请阅读[邮件中心发布的语言翻译](language-translation-for-message-center-posts.md)。
   
 > [!NOTE]
-> 按电子邮件发送的每周摘要和所有帖子均以英文形式发送。 收件人可以使用[Outlook 的 "翻译工具](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx)" 以其首选语言阅读邮件。 
+> 按电子邮件发送的每周摘要和所有帖子均以英文形式发送。 收件人可以使用[Outlook 的 "翻译工具](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa)" 以其首选语言阅读邮件。 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>无法访问邮件中心的管理员角色
 

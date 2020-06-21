@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: cac0232b721c07ce8e07c7b101e0313eb9cd91df
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399490"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780021"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 
-您可以使用 Outlook 将通讯组列表升级到 Microsoft 365 组。 这是为组织的通讯组提供 Microsoft 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+您可以使用 Outlook 将通讯组列表升级到 Microsoft 365 组。 这是为组织的通讯组提供 Microsoft 365 组的所有特性和功能的好方法。 [为什么应将通讯组列表升级至 Outlook 中的组](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 您可以一次升级一个 DLs，也可以同时升级多个。
 
@@ -52,7 +52,7 @@ ms.locfileid: "44399490"
 7. 如果选择了 DL 进行升级，但它在页面上仍显示为可升级，则升级失败。 [如果升级不起作用，请查看要执行的操作](#what-to-do-if-the-upgrade-doesnt-work)。
 
 > [!NOTE]
-> 如果你正在获取组摘要电子邮件，你可能会注意到，有时会通过它来升级你是其所有者的任何符合条件的通讯组列表。 有关摘要电子邮件的详细信息，请参阅[在 Outlook 中有组对话](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)。
+> 如果你正在获取组摘要电子邮件，你可能会注意到，有时会通过它来升级你是其所有者的任何符合条件的通讯组列表。 有关摘要电子邮件的详细信息，请参阅[在 Outlook 中有组对话](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22)。
 
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>如果升级不起作用，该怎么办
@@ -123,7 +123,7 @@ Get-DistributionGroup| Foreach-Object{
 
 您只能升级云管理、简单、非嵌套的通讯组列表。 下表列出了**无法**升级的通讯组列表。
 
-|**Property**|**退税?**|
+|**属性**|**退税?**|
 |:-----|:-----|
 |内部部署管理通讯组列表。  <br/> |否  <br/> |
 |嵌套的通讯组列表。 通讯组列表具有子组或是另一个组的成员。  <br/> |否  <br/> |
@@ -156,7 +156,7 @@ Get-DistributionGroup| Foreach-Object{
 
 - 对于 Outlook：如果有人尝试在迁移后键入 Microsoft 365 组名称来在 Outlook 中发送电子邮件，则收件人将解析为通讯组列表，而不是组。 收件人的联系人卡片将是通讯组列表联系人卡片。 这是因为 Outlook 中的收件人缓存或 nick 名称缓存。 电子邮件将成功发送到组，但可能会导致发件人混淆。<br/>您可以执行本主题中的步骤，[有关 Outlook 自动完成列表的信息](https://go.microsoft.com/fwlink/?LinkID=798736)，以重置缓存，这将修复此问题。
 
-- 对于 web 上的 Outlook：在 Outlook 网页版中，通讯组列表收件人仍将保留在缓存中。 您可以按照 "[删除建议的名称" 或 "自动完成" 列表中的电子邮件地址](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx)中的步骤操作，以刷新缓存以查看组联系人卡片。
+- 对于 web 上的 Outlook：在 Outlook 网页版中，通讯组列表收件人仍将保留在缓存中。 您可以按照 "[删除建议的名称" 或 "自动完成" 列表中的电子邮件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)中的步骤操作，以刷新缓存以查看组联系人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组成员是否可在其收件箱中获取欢迎电子邮件？
 

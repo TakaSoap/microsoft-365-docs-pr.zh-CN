@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 了解设置 Microsoft 365 for business 所需的操作。
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398842"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778945"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版的设置
 
@@ -72,7 +72,7 @@ ms.locfileid: "44398842"
 
     1. [将你的员工添加到 Microsoft 365](../add-users/add-users.md) ，以便他们可以下载和安装 Office 应用。
 
-    2. [下载和安装 Office 应用](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)以在你的计算机和设备上使用 Word、Excel 和 PowerPoint。
+    2. [下载和安装 Office 应用](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)以在你的计算机和设备上使用 Word、Excel 和 PowerPoint。
 
     3. [设置 Microsoft 团队](#plan-for-teams)以供你的会议使用。
 
@@ -111,9 +111,9 @@ ms.locfileid: "44398842"
 
 ## <a name="plan-for-file-storage-and-migration"></a>计划文件存储和迁移
 
-Microsoft 365 为个人、小型组织和企业提供云存储。 有关存储位置的指导，请参阅在[Microsoft 365 中将文档存储在何处](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
+Microsoft 365 为个人、小型组织和企业提供云存储。 有关存储位置的指导，请参阅在[Microsoft 365 中将文档存储在何处](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
   
-- **你可以将数百个文件移动**到[OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx)或[SharePoint 团队网站](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
+- **你可以将数百个文件移动**到[OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)或[SharePoint 团队网站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 一次可以上传 100 个文件。 请避免上传超过 2 GB 的文件，这是默认最大文件大小。
   
 - **如果要将一千个文件移动**到 Microsoft 365 存储，请查看[SharePoint Online 限制](https://go.microsoft.com/fwlink/p/?LinkID=856113)。 建议使用迁移工具或考虑雇用[合作伙伴](https://go.microsoft.com/fwlink/?linkid=391089)来帮助进行迁移。 有关如何迁移大量文件的信息，请参阅 [SharePoint Online 和 OneDrive 迁移用户指南](https://go.microsoft.com/fwlink/?LinkId=723574)。
   

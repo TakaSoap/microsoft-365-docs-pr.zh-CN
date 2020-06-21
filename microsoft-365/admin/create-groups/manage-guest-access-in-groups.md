@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386777"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761658"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
-
-::: moniker-end
 
 默认情况下，为您的组织启用对 Microsoft 365 组的来宾访问。 管理员可以控制是否允许来宾访问整个组织或单个组的组。
 
 当它打开时，组成员可以通过 Web 上的 Outlook 将来宾用户邀请到 Microsoft 365 组。 邀请将发送给组所有者以供审批。
 
+批准后，会将来宾用户添加到目录和组中。
+
 > [!Note]
 > 处于本机模式或[欧盟地区](https://go.microsoft.com/fwlink/?linkid=2107357)的 Yammer 企业网络不支持网络来宾。
 > Microsoft 365 连接的 Yammer 组目前不支持来宾访问，但你可以在 Yammer 网络中创建未连接的外部组。 有关说明，请参阅[在 Yammer 中创建和管理外部组](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups)。
-
-### <a name="edit-guest-information"></a>编辑来宾信息
-
-批准后，会将来宾用户添加到目录和组中。
 
 组中的来宾访问通常用作包括 SharePoint 或团队的更广泛方案的一部分。 这些服务具有自己的来宾共享设置。 有关在组、SharePoint 和团队中设置来宾共享的完整说明，请参阅：
 
@@ -56,7 +47,7 @@ ms.locfileid: "44386777"
 
 如果要启用或禁用组中的来宾访问，可以在 Microsoft 365 管理中心中执行此操作。
 
-1. 在管理中心中，转到 "**设置**" \> **设置**并选择 " **Microsoft 365 组**"。
+1. 在管理中心中，转到 "**设置**" " \> **组织设置**"，然后在 "**服务**" 选项卡上选择 " **Microsoft 365 组**"。
   
 2. 在 " **Microsoft 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
 
@@ -70,7 +61,7 @@ ms.locfileid: "44386777"
   
 4. 选择 "**添加成员**"，然后选择要添加的来宾的名称。
     
-5. 选择“保存”****。
+5. 选择“**保存**”。
 
 如果要直接将来宾添加到目录中，可以[在 azure 门户中添加 Azure Active DIRECTORY B2B 协作用户](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)。
 

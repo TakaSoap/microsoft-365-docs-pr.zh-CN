@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过在 FAQ 中查找问题的答案，了解有关域的详细信息。
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398902"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739153"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
@@ -435,11 +435,11 @@ ms.locfileid: "44398902"
         
     4. 在打开的窗口中，选择 "**内部中继**"。 
         
-    5. 选择“保存”****。 此设置可能需要几分钟时间才能生效。 
+    5. 选择“**保存**”。 此设置可能需要几分钟时间才能生效。 
     
 4. （可选）取消阻止现有的电子邮件服务器
     
-    1. Office 365 使用 Exchange Online Protection （EOP）进行垃圾邮件保护。 如果 EOP 检测到当前邮件服务器要转发的大量垃圾邮件，则可能会阻止邮件，从而阻止转发工作。 如果你确信其他电子邮件提供商使用的垃圾邮件保护，则可以在 Office 365 中对其服务器进行白名单。 但是，这还将允许通过原始服务器到达的所有垃圾邮件进入 Office 365 邮箱，并且您无法评估 Office 365 如何防止垃圾邮件。
+    1. Office 365 使用 Exchange Online Protection （EOP）进行垃圾邮件保护。 如果 EOP 检测到当前邮件服务器要转发的大量垃圾邮件，则可能会阻止邮件，从而阻止转发工作。 如果你确信其他电子邮件提供商使用的垃圾邮件保护，则可以将其服务器添加到 Office 365 中的允许列表中。 但是，这还将允许通过原始服务器到达的所有垃圾邮件进入 Office 365 邮箱，并且您无法评估 Office 365 如何防止垃圾邮件。
     
     2. 转到 Exchange 管理中心（EAC）。
         

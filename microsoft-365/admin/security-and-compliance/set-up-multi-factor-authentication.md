@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515803"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779937"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -75,19 +75,19 @@ ms.locfileid: "44515803"
 
 与您的试点用户合作，以解决为您的组织准备平稳推出的问题和问题。
 
-## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>第 3 步。 通知贵组织即将推出 MFA
+## <a name="step-3-inform-your-organization-that-mfa-is-coming"></a>步骤 3. 通知贵组织即将推出 MFA
 
 使用电子邮件通知、hallway 海报、团队会议或正式培训以确保员工了解：
 
 - 为什么登录需要进行 MFA
-- [如何注册以获取其附加验证方法](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [注册后如何登录](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [如何更改其其他验证方法](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [如何处理像新的智能手机这样的情况](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [如何注册以获取其附加验证方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [注册后如何登录](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [如何更改其其他验证方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [如何处理像新的智能手机这样的情况](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 最重要的是，请确保你***的员工了解何时强制实施 MFA 要求***，以使其不会令他们感到吃惊。
 
-## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>第 4 步。 向你的组织或用户推出 MFA 要求
+## <a name="step-4-roll-out-the-mfa-requirement-to-your-organization-or-users"></a>步骤 4. 向你的组织或用户推出 MFA 要求
 
 根据所选的 MFA 要求方法，将 MFA 身份验证部署到您的试点测试人员之外的员工。
 
@@ -120,6 +120,6 @@ ms.locfileid: "44515803"
 
 在你的员工注册并开始使用 MFA 登录时，请确保你的 IT 专家、IT 部门或技术支持人员能够快速回答问题并解决问题。
 
-有关对[MFA 登录进行疑难解答的信息](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)，请参阅本文。 
+有关对[MFA 登录进行疑难解答的信息](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)，请参阅本文。 
 
 

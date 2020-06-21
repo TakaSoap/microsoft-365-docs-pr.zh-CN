@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: c153b94b450b834687e83f39fc7179e0dda1a21f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 894486951deac7e9c157409af8da5e813b53343b
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943563"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739234"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于商业决策者的 Microsoft 365 安全决策者（Bdm）
 
@@ -95,7 +95,7 @@ Microsoft 向你提供租户中的安全分数工具，以根据你的常规活�
 其他建议：
 - 安全的合作伙伴通道通信，如使用 TLS 的电子邮件。
 - 仅打开与您与之通信的合作伙伴的团队联盟。
-- 不要对发件人域、单个发件人或源 Ip 进行白名单，这样就可以绕过垃圾邮件和恶意软件检查了—通常情况下，客户会白名单他们自己的接受域或许多其他域，其中可能会报告电子邮件流问题。 请勿在垃圾邮件和连接筛选列表中添加域，因为这可能会绕过所有垃圾邮件检查。 
+- 不要将发件人域、单个发件人或源 Ip 添加到允许列表中，因为这样可以绕过垃圾邮件和恶意软件检查—通常情况下，客户会将其自己的接受域或许多其他域添加到允许列表中，其中可能会报告电子邮件流问题。 请勿在垃圾邮件和连接筛选列表中添加域，因为这可能会绕过所有垃圾邮件检查。 
 - 启用出站垃圾邮件通知—对位于 "支持人员" 或 IT 管理员团队内部的通讯组启用出站垃圾邮件通知，以报告是否有任何内部用户在外部发送垃圾邮件。 这可能表示帐户已泄露。
 - 对所有用户禁用远程 PowerShell —远程 PowerShell 主要供管理员用来访问服务，以实现管理目的或编程 API 访问。 我们建议为非管理员用户禁用此选项，以避免侦测，除非他们有业务要求对其进行访问。 
 - 阻止对所有非管理员的 Microsoft Azure 管理门户的访问。 若要实现此目的，可以创建一个条件访问规则来阻止所有用户，但管理员除外。 
@@ -117,7 +117,7 @@ Microsoft 365 信息保护功能可帮助您发现您拥有的信息、存储的
 |**查看并优化你的条件访问和相关策略，以适应零信任网络的目标**。 防范已知威胁包括实施一组建议的[策略](../enterprise/microsoft-365-policies-configurations.md)。 检查这些策略的实现，以确保您正在保护您的应用程序和数据免受已访问您的网络的黑客的攻击。 请注意，推荐的适用于 Windows 10 的 Intune 应用保护策略启用 Windows 信息保护（WIP）。 WIP 可防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄漏组织数据。 |         |![绿色复选标记](../media/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 通过将邮箱设置为自动转发电子邮件，获取对用户邮箱的访问权限的黑客可以盗取您的邮件。 即使没有用户的意识，也会发生这种情况。 您可以通过配置邮件流规则来防止这种情况发生。|![绿色复选标记](../media/green-check-mark.png) |![绿色复选标记](../media/green-check-mark.png)|
 |**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历共享](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy)，以减少敏感信息的可能泄漏。|![绿色复选标记](../media/green-check-mark.png) |![绿色复选标记](../media/green-check-mark.png)|
-|**配置敏感数据的数据丢失防护策略**。 在安全&amp;合规中心中创建数据丢失防护策略，以发现和保护敏感数据，如信用卡号、社会保险号码和银行帐户号码。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为您的环境自定义的敏感数据创建您自己的敏感信息类型。 |![绿色复选标记](../media/green-check-mark.png)|![绿色复选标记](../media/green-check-mark.png)|
+|**配置敏感数据的数据丢失防护策略**。 在安全合规中心中创建数据丢失防护策略 &amp; ，以发现和保护敏感数据，如信用卡号、社会保险号码和银行帐户号码。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为您的环境自定义的敏感数据创建您自己的敏感信息类型。 |![绿色复选标记](../media/green-check-mark.png)|![绿色复选标记](../media/green-check-mark.png)|
 |**实施数据分类和信息保护策略**。 实施灵敏度标签并使用它们对敏感数据进行分类和应用保护。 您还可以在数据丢失防护策略中使用这些标签。 如果使用的是 Azure 信息保护标签，我们建议您避免在其他管理中心创建新标签。|         |![绿色复选标记](../media/green-check-mark.png)|
 |**使用云应用安全性保护第三方应用程序和服务中的数据**。 配置云应用安全策略以保护跨第三方云应用（如 Salesforce、Box 或 Dropbox）的敏感信息。 您可以使用您在云应用安全策略中创建的敏感信息类型和敏感度标签，并在您的 SaaS 应用程序中应用它们。 <br><br>Microsoft 云应用安全性使您能够强制实施各种自动化的过程。 可以将策略设置为提供连续合规性扫描、法律电子数据展示任务、DLP 对公开共享的敏感内容等。 云应用安全可以根据20个以上的元数据筛选器（例如，访问级别、文件类型）监视任何文件类型。 |         |![绿色复选标记](../media/green-check-mark.png)|
 |**使用[MICROSOFT Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)来确定用户是否将敏感信息存储在其 Windows 设备上**。 |         |![绿色复选标记](../media/green-check-mark.png)|

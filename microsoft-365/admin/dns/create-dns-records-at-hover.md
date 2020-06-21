@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: 了解如何验证你的域并为 Microsoft 的悬停时设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
-ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e51cb77831f4e29ac3a51602a1bb19f8b0c9e0e3
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400421"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780345"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>在 Microsoft 悬停时创建 DNS 记录
 
@@ -39,19 +39,19 @@ ms.locfileid: "44400421"
 
   
 > [!NOTE]
->  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 <a name="BKMK_verify"> </a>
 
-在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 若要开始，请使用[此链接](https://www.hover.com/domains)转到 Hover 上您的域页面。系统将会提示您首先登录。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登录](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -76,7 +76,7 @@ ms.locfileid: "44400421"
    
     ![键入或复制并粘贴 DNS 值](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![选择 "保存"](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -101,14 +101,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
   
 > [!NOTE]
->  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 若要开始，请使用[此链接](https://www.hover.com/domains)转到 Hover 上您的域页面。系统将会提示您首先登录。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登录](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -132,7 +132,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![键入或复制并粘贴 DNS 值](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![选择 "保存"](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -151,9 +151,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
 
-请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 若要开始，请使用[此链接](https://www.hover.com/domains)转到 Hover 上您的域页面。系统将会提示您首先登录。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登录](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -183,7 +183,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![键入或复制并粘贴 DNS 值](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![选择 "保存"](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -195,9 +195,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 > [!IMPORTANT]
 > 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
   
-请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 若要开始，请使用[此链接](https://www.hover.com/domains)转到 Hover 上您的域页面。系统将会提示您首先登录。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登录](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -221,16 +221,16 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![键入或复制并粘贴 DNS 值](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![选择 "保存"](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-请按下列步骤操作或[观看视频](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+请按下列步骤操作或[观看视频](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 若要开始，请使用[此链接](https://www.hover.com/domains)转到 Hover 上您的域页面。系统将会提示您首先登录。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登录](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -257,12 +257,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![键入或复制并粘贴 DNS 值](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![选择 "保存"](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   
 7. 使用前面的三个步骤和表中第二行的值，添加另一条 SRV 记录。
     
 > [!NOTE]
-> DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   

@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: '查找适用于 Microsoft 365 商业版订阅的首要付费问题的答案。 '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400757"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741689"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>适用于 Microsoft 365 商业版的主要帐单问题
 
@@ -107,7 +107,7 @@ ms.locfileid: "44400757"
 
 ## <a name="can-i-change-the-method-i-use-to-pay-for-my-subscription"></a>我是否可以更改我用来为我的订阅付费的方法？
 
-正确。 请参阅[更改支付方式](change-payment-method.md)。
+是。 请参阅[更改支付方式](change-payment-method.md)。
   
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-change-how-frequently-i-pay-for-my-subscription"></a>我是否可以更改我对我的订阅付费的频率？
@@ -119,9 +119,9 @@ ms.locfileid: "44400757"
 ::: moniker range="o365-worldwide"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-正确。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
-1. 在 Microsoft 365 管理中心，转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">记帐通知</a>" 页面，或选择 "**帐单**帐单 \> **通知**"。
+1. 在 Microsoft 365 管理中心，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帐单通知</a>" 页面。
 
 2. 在“**以电子邮件附件形式接收帐单？**”下，将开关切换到“**开**”。
 
@@ -132,7 +132,7 @@ ms.locfileid: "44400757"
 ::: moniker range="o365-germany"
 ## <a name="can-i-get-a-copy-of-my-billing-statement-sent-via-email"></a>我是否可以获取通过电子邮件发送的帐单表的副本？
 
-正确。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
+是。 若要获取作为电子邮件附件的帐单，请按照以下步骤操作：
   
 1. 在管理中心中，转到“**账单**” \> “<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">账单通知</a>”页面。
 
@@ -200,9 +200,10 @@ ms.locfileid: "44400757"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">汇票</a>" 页面上，选择发票日期范围。
-  
-2. 若要打印或保存帐单的 PDF 副本，请选择 "**下载发票 PDF**"，然后打印 pdf。
+1. 在 "管理中心" 中，转到 "**计费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单 & 付款</a>" 页。
+2. 在 "**发票**" 选项卡上，选择发票日期范围。
+3. 选择要查看的发票。
+4. 若要打印或保存帐单的 PDF 副本，请选择 "**下载 pdf**"，然后打印 pdf。
 
 若要了解详细信息，请参阅[查看你的帐单或发票](view-your-bill-or-invoice.md)。
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中查看、创建、修改和删除出站垃圾邮件策略。
-ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616574"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761714"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -77,9 +77,19 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 若要添加、修改和删除出站垃圾邮件策略，您必须是 "**组织管理**" 或 "**安全管理员**" 角色组的成员。 若要对出站垃圾邮件策略进行只读访问，您需要是**安全读者**角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能执行本主题中的过程：
+
+  - 若要添加、修改和删除出站垃圾邮件策略，您必须是下列角色组之一的成员：
+
+    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+
+  - 若要对出站垃圾邮件策略进行只读访问，您必须是下列角色组之一的成员：
+
+    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
 
 - 有关出站垃圾邮件策略的建议设置，请参阅[EOP 出站垃圾邮件筛选器策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -120,7 +130,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成时，请单击“保存”****。
+     e. 完成后，单击 **“保存”**。
 
      若要禁用此设置，请清除该复选框。
 
@@ -143,7 +153,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成时，请单击“保存”****。
+     e. 完成后，单击 **“保存”**。
 
      若要禁用此设置，请清除该复选框。
 
@@ -154,7 +164,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
    - **每个用户的最大收件人数**
 
-     有效的值为0到10000。 默认值为0，表示使用服务默认值。 有关详细信息，请参阅[在 Microsoft 365 选项中发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)。
+     有效的值为0到10000。 默认值为0，表示使用服务默认值。 有关详细信息，请参阅[发送限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
      - **外部小时限制**：每个小时的最大外部收件人数。
 
@@ -178,7 +188,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 6. 需要展开 "**应用于**" 部分，以标识应用该策略的内部发件人。
 
-    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一条件或异常的多个值使用或逻辑（例如， _\<sender1\>_ 或 _\<sender2\>_ ）。 不同的条件或例外使用和逻辑（例如 _\<sender1\>_ 和 _\<member of group 1\>_ ）。
+    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<sender1\>_ 或 _\<sender2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<sender1\>_ 和 _\<member of group 1\>_）。
 
     若要查看所有可配置的条件，最简单的方法是单击 **“添加条件”** 三次。 若要删除不需要配置的条件，可以单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
 

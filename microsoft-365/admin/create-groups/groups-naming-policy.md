@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何为 Microsoft 365 组创建命名策略。
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388001"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702544"
 ---
 # <a name="groups-naming-policy"></a>组命名策略
 
@@ -80,6 +80,9 @@ ms.locfileid: "44388001"
 - 在创建策略的过程中，总前缀和后缀字符串长度限制为53个字符。
 
 - 前缀和后缀可以包含组名和组别名中支持的特殊字符。 当前缀和后缀包含在组别名中不允许的特殊字符时，它们仅应用于组名称。 因此，在这种情况下，应用于组名称的前缀和后缀将不同于应用于组别名的前缀和后缀。
+
+  > [!NOTE]
+  > 组名称的开头或结尾处允许使用句点（.）或连字符（-），但不允许使用句点（.）或连字符（-）。 组名称中的任意位置（包括在名称的开头或结尾）都允许有下划线（_）。
 
 - 如果使用 Yammer Microsoft 365 连接的组，请避免在命名策略中使用以下字符： @、 \# 、、 \[ \] 、 \<, and \> 。 如果这些字符位于命名策略中，则常规 Yammer 用户将无法创建组。
 

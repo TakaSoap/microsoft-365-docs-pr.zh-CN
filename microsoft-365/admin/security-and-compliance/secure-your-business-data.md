@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 9a9b6c01d979f4a5bb055f907dc0292a33f40993
-ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
+ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44405175"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779949"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -64,7 +64,7 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
 使用多重身份验证是提高组织安全性的最简单且最有效的方法之一。 它比听起来更容易-当你登录时，多重身份验证意味着你将键入手机中的代码以获取对 Microsoft 365 的访问权限。 这样可以防止黑客在知道你的密码时接管。 多重身份验证也称为2步验证。 个人可以轻松地将双重验证添加到大多数帐户，例如，添加到 Google 或 Microsoft 帐户。 下面介绍如何[将双重验证添加到你的个人 Microsoft 帐户](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409)。
   
 对于使用 Microsoft 365 的企业，添加一个设置，要求用户使用多重身份验证登录。 进行此更改后，系统将提示用户在下次登录时设置其电话以进行双重身份验证。
-若要查看有关如何设置 MFA 以及用户如何完成设置的培训视频，请参阅[设置 mfa](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787)和[用户设置](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)。
+若要查看有关如何设置 MFA 以及用户如何完成设置的培训视频，请参阅[设置 mfa](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787)和[用户设置](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)。
   
 若要设置多重身份验证，请执行以下操作：
 
@@ -79,7 +79,7 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
 5. 在弹出窗口中，选择 "**启用多重身份验证**"。
 
 
-为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅[为 Microsoft 365 设置2步验证](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
+为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅[为 Microsoft 365 设置2步验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
   
 有关完整详细信息和完整建议，请参阅为[用户设置多重身份验证](set-up-multi-factor-authentication.md)。
   
@@ -88,7 +88,7 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
 
 Harvard 肯尼迪 School [Cybersecurity 活动手册](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)提供了有关在组织内建立强大的安全感知文化的最佳指南，包括培训用户以识别网络钓鱼攻击。 
   
-除了本指南之外，Microsoft 还建议您的用户执行本文中所述的操作：[保护您的帐户和设备免受黑客和恶意软件的攻击](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)。 这些操作包括：
+除了本指南之外，Microsoft 还建议您的用户执行本文中所述的操作：[保护您的帐户和设备免受黑客和恶意软件的攻击](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)。 这些操作包括：
   
 - 使用强密码
     
@@ -98,7 +98,7 @@ Harvard 肯尼迪 School [Cybersecurity 活动手册](https://go.microsoft.com/f
     
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
   
-- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [通过2步验证保护你的 Gmail 帐户](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -116,7 +116,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4：针对邮件中的恶意软件提高保护级别
 <a name="malware"> </a>
 
-你的 Microsoft 365 环境包括针对恶意软件的防护，但你可以通过阻止常见恶意软件使用的文件类型的附件来提高此保护。 若要增大电子邮件中的恶意软件保护，请查看[简短的培训视频](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0)，或完成以下步骤：
+你的 Microsoft 365 环境包括针对恶意软件的防护，但你可以通过阻止常见恶意软件使用的文件类型的附件来提高此保护。 若要增大电子邮件中的恶意软件保护，请查看[简短的培训视频](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com) 并使用你的管理员帐户凭据登录。 
     
@@ -143,7 +143,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
     
 - 阻止可能包含勒索软件或其他恶意代码的文件类型。 我们将从可执行文件的常用列表（在下表中列出）开始。 如果您的组织使用这些可执行类型中的任何类型，并且您希望在电子邮件中发送这些类型，请将它们添加到上一规则（警告用户）。
     
-若要创建邮件传输规则，请查看[简短的培训视频](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)，或完成以下步骤：
+若要创建邮件传输规则，请查看[简短的培训视频](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)，或完成以下步骤：
   
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理中心</a>。
 
@@ -155,7 +155,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
     
 5. 对每个规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|**阻止可能包含勒索软件或其他恶意代码的文件类型**|
 |:-----|:-----|:-----|
@@ -172,7 +172,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
   
 - [如何处理勒索软件](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [还原你的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [还原你的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
     
 ## <a name="6-stop-auto-forwarding-for-email"></a>6：停止自动转发电子邮件
 <a name="forwarding"> </a>
@@ -191,7 +191,7 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
     
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 |**设置**|**拒绝将自动转发电子邮件发送到外部域**|
 |:-----|:-----|
@@ -231,7 +231,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
   
 如果收件人使用的是另一个电子邮件客户端或电子邮件帐户（如 Gmail 或 Yahoo），他们将看到一个链接，让他们可以登录以阅读电子邮件，也可以请求一次性密码以在 web 浏览器中查看邮件。 如果用户没有收到电子邮件，请让他们检查其垃圾邮件或垃圾邮件文件夹。 
   
-有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
+有关详细信息，请参阅[Outlook FOR PC 中的发送、查看和回复加密邮件](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)。
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. 保护你的电子邮件免受网络钓鱼攻击
 <a name="phishing"> </a>
@@ -242,7 +242,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
   
 ![创建 ATP 反网络钓鱼策略](../../media/security-and-compliance-center.png)
   
-若要创建 ATP 反网络钓鱼策略，请查看[简短的培训视频](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
+若要创建 ATP 反网络钓鱼策略，请查看[简短的培训视频](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。 
     
@@ -260,7 +260,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |域和最有价值的市场活动员工  <br/> |
-|Description  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
+|说明  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
 |添加要保护的用户  <br/> |选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。  <br/> |
 |添加要保护的域  <br/> |选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。  <br/> |
 |选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，securityadmin@contoso.com。          如果由模拟域发送电子邮件：选择 "**隔离邮件**"。  <br/> |
@@ -276,7 +276,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 
 用户定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 只需查看一封电子邮件，就能判断附件是安全还是恶意的，并不总是容易。 Office 365 高级威胁防护包括 ATP 安全附件保护，但默认情况下不启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护功能扩展到 SharePoint、OneDrive 和 Microsoft 团队中的文件。
   
-若要创建 ATP 安全附件策略，请查看[简短的培训视频](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
+若要创建 ATP 安全附件策略，请查看[简短的培训视频](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com) 并使用管理员帐户登录。 
     
@@ -296,7 +296,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件。  <br/> |
-|Description  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
+|说明  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
 |保存附件未知的恶意软件响应  <br/> |Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件**。  <br/> |
 |在检测时重定向附件  <br/> |启用重定向（选择此框）输入管理员帐户或邮箱设置进行隔离。          如果恶意软件扫描附件超时或发生错误（选中此框），请应用上面的选择。  <br/> |
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |
@@ -315,7 +315,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
     
 - 添加目标为域中所有收件人的新策略。
     
-若要获取 ATP 安全链接，请查看[简短的培训视频](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
+若要获取 ATP 安全链接，请查看[简短的培训视频](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com) 并使用管理员帐户登录。 
     
@@ -329,7 +329,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 "适用于**企业的 Microsoft 365 应用，Office For iOS 和 Android**"。
     
-3. 选择“保存”****。 
+3. 选择“**保存**”。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -337,7 +337,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
     
 2. 应用下表中列出的设置。
     
-3. 选择“保存”****。 
+3. 选择“**保存**”。 
     
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|

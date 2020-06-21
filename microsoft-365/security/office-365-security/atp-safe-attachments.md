@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 在本文中，您将了解有关 Office 365 的 ATP 安全附件功能以及如何获取订阅的功能。
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616774"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754756"
 ---
 # <a name="atp-safe-attachments"></a>ATP 安全附件
 
@@ -41,7 +41,7 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 
 - 已设置 ATP 安全附件策略。 （请参阅[在 Office 365 中设置 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)。）
 
-- 用户使用其工作或学校帐户登录。 （请参阅[登录到 office 或 office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)。）
+- 用户使用其工作或学校帐户登录。 （请参阅[登录到 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。）
 
 若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
 
@@ -61,7 +61,7 @@ ATP 安全附件（和[ATP 安全链接](atp-safe-links.md)）是[Office 365 高
 |:-----|:-----|
 |Pat 的组织具有 Office 365 E5，但尚未为 ATP 安全附件定义任何策略。|否。 虽然功能可用，但必须至少定义一个 ATP 安全附件策略，才能将 ATP 安全附件保护到位。|
 |先生为在 Contoso 的销售部门的员工。 先生/她的组织有一个仅适用于财务员工的 ATP 安全附件策略。|否。 在这种情况下，财务员工将具有 ATP 安全附件保护，但在定义包含这些组的策略之前，其他员工（包括销售部门）将不会。|
-|昨天，Jean 的组织中的管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|是的。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
+|昨天，Jean 的组织中的管理员设置适用于所有员工的 ATP 安全附件策略。 在今天的早期，Jean 收到包含附件的电子邮件。|是。 在此示例中，Jean 具有高级威胁防护的许可证，并且已定义了包含 Jean 的 ATP 安全附件策略。 新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。|
 |丽丽的组织有 Office 365 E5，其中的 ATP 安全附件策略适用于组织中的所有人。 Chris 收到包含附件的电子邮件，并将邮件转发给组织外部的其他人。|对于 Chris 收到的邮件，ATP 安全附件保护已就绪。 如果收件人的组织还设置了 ATP 安全附件策略，则 Chris 转发的邮件将在转发的邮件到达时服从这些策略。|
 |晓明的组织已准备好 ATP 安全附件策略，并且已打开[SharePoint、OneDrive 和 Microsoft 团队的 atp](atp-for-spo-odb-and-teams.md) 。 晓明假定已扫描 SharePoint Online 中的每个文件，并且可以安全地打开或下载。|根据定义的策略，ATP 安全附件保护已就绪;但是，这并不意味着会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个文件。 （若要了解详细信息，请参阅[适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。）|
 

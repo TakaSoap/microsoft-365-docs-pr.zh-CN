@@ -24,23 +24,20 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
-ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386741"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780501"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
 如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。
   
- **不是管理员？** 查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.office.com/article/f8ab5e25-bf3f-4a47-b264-174b1ee925fd.aspx)
+ **不是管理员？** 查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
 
@@ -56,7 +53,7 @@ ms.locfileid: "44386741"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. 如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     如果有多个订阅，请选择要查看其详细信息的订阅。 订阅卡会随着该订阅信息的更新而更新。
 
@@ -75,7 +72,7 @@ ms.locfileid: "44386741"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. 如果有多个订阅，将在详细的订阅信息旁边看到一个列，列出了已购买订阅及全部试用版订阅。默认情况下，位于列表顶部的订阅已自动选中，并显示该订阅的详细信息。
+3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
 
     如果有多个订阅，请选择要查看其详细信息的订阅。 订阅卡会随着该订阅信息的更新而更新。
 

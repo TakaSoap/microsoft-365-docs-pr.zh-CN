@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 管理独立的 SharePoint Online 团队网站，添加新用户和组，删除用户和组，并创建具有自定义权限的 documents 子文件夹。
-ms.openlocfilehash: 05e3cf742482d34c158e14253eed9d1b99c82995
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036628"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755374"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的 SharePoint Online 团队网站
 
@@ -150,7 +150,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 若要创建具有自定义权限的 documents 子文件夹，请执行以下操作：
   
-1. 登录到属于该网站的 "管理员" 访问组成员的帐户。 如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 登录到属于该网站的 "管理员" 访问组成员的帐户。 如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 转到独立的团队网站，然后单击 "**文档**"。
     
@@ -168,9 +168,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 9. 单击 "**授予权限 > 与 > 高级共享**"。
     
-10. 在 "权限" 页上，单击** \<列表中的 "网站名称"> 成员**。
+10. 在 "权限" 页上，单击** \<site name> 列表中的 "成员"**。
     
-11. 在 " ** \<网站名称> 成员**" 页上，选择 "网站成员访问" 组旁边的复选标记，单击 "**操作**"，单击 "**从组中删除用户**"，然后单击 **"确定"**。
+11. 在 " ** \<site name> 成员**" 页上，选中 "网站成员访问" 组旁边的复选标记，单击 "**操作**"，单击 "**从组中删除用户**"，然后单击 **"确定"**。
     
 12. 若要将特定成员添加到此子文件夹，请单击 "**新建 > 添加用户**"。
     
@@ -178,9 +178,9 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 14. 刷新网页以查看新结果。
     
-15. 在左侧导航组中的 "**组**" 下，单击 " ** \<网站名称"> "访问者**" 组，并使用步骤11-14 指定可以查看子文件夹中的文件的用户帐户集（根据需要）。
+15. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 访问者**" 组，并使用步骤11-14 指定可查看子文件夹中的文件的用户帐户集（根据需要）。
     
-16. 在左侧导航组中的 "**组**" 下，单击 " ** \<网站名称"> "所有者**" 组，然后使用步骤11-14 指定可在子文件夹中管理权限的用户帐户集（根据需要）。
+16. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 所有者**" 组，并使用步骤11-14 指定可在子文件夹中管理权限的用户帐户集（根据需要）。
     
 17. 关闭浏览器中的 "**人员和组**" 选项卡。
     

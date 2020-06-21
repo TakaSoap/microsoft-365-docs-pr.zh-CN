@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: 9358df6728e1e29228241887be65fb68a4720281
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fcf13314d7206837f10459ed8c0a44e5d41f219b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400000"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780189"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
@@ -88,9 +88,9 @@ ms.locfileid: "44400000"
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>将你的域转移到另一家域注册机构
 
-如果注册你的域的提供商不支持所有必要的 DNS 记录，则可以将域转移到其他域注册机构。在你转移域时，为了续订并保留域名，可以更改收款人。
+If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
   
-在要将您的域移动到的注册机构请求转移。在其网站上查找" **转移 DNS**"之类的选项。请注意，完成更改后，此更新可能需要几天时间才能传遍 Internet。
+Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
  
 
 
@@ -100,12 +100,12 @@ ms.locfileid: "44400000"
 
 
 
-如果尚没有自己的域，可轻松联机进行购买，可在域名注册机构、域经销商，甚至是在当前的 Internet 提供商处购买。注册 由世纪互联运营的 Office 365 时可获取一个域名，例如，contoso.onmicrosoft.com。但你可能希望使用自定义域名，例如 fourthcoffee.com。
+If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
   
 若要在 Microsoft 365 中设置域，您必须拥有域并更改您的域的某些 DNS 记录。
   
 > [!CAUTION]
-> 某些域注册机构或 DNS 托管提供商不允许创建 Microsoft 365 所需的所有 DNS 记录。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.office.com/article/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
+> 某些域注册机构或 DNS 托管提供商不允许创建 Microsoft 365 所需的所有 DNS 记录。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
 注册域（在域注册机构中）后，以管理员身份登录 Microsoft 365，并设置您的域，以便您可以将其用于电子邮件地址和其他服务。。
   
