@@ -15,16 +15,16 @@ search.appverid:
 ms.assetid: 1ce37ada-0a80-4b47-8611-d008979589ff
 description: 在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c6d1e546141474ba263e141bc9a731f3f04ef74d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: d03479fd83ac037c67d97a2378062589210eaf9f
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224681"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810998"
 ---
 # <a name="send-and-receive-smime-signed-and-encrypted-email-in-exchange-online"></a>在 Exchange Online 中发送和接收 S/MIME 签名和加密的电子邮件
 
-在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。 有关从电子邮件程序（如 Outlook 网页版（以前称为 Outlook Web App）读取或发送 S/MIME 加密邮件的详细信息，请参阅[web 上的使用 S/Mime 加密邮件](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480)。
+在 Microsoft Outlook 中发送或回复 S/MIME 加密邮件与发送或回复未加密邮件类似。 有关从电子邮件程序（如 Outlook 网页版（以前称为 Outlook Web App）读取或发送 S/MIME 加密邮件的详细信息，请参阅[web 上的使用 S/Mime 加密邮件](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="for-more-information"></a>详细信息
 

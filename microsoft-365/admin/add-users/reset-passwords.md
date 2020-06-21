@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '了解如何在 Microsoft 365 for business 订阅中重置用户的密码。 '
-ms.openlocfilehash: 44052ee0c795143d67d832f9528e3eea7232f1cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386969"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780561"
 ---
 # <a name="reset-passwords"></a>重置密码
 
@@ -40,11 +40,11 @@ ms.locfileid: "44386969"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
-强烈建议设置自助服务密码重置。通过此方式，无需为用户手动重置密码。若要了解操作方式，请参阅[允许用户在 Office 365 中重置其密码](let-users-reset-passwords.md)。
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>重置其他人的业务密码
 
@@ -53,19 +53,19 @@ ms.locfileid: "44386969"
  
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ ms.locfileid: "44386969"
 
 这些步骤适用于拥有数十位用户的企业。 如果你有成百上千个用户，请参阅下一节：批量重置密码（最多为40个用户一次）。
   
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 选择 "**显示名称**" 旁边的选项以选择您的企业中的所有人。 然后取消选中你自己。 重置其他所有用户的密码时无法重置自己的密码。
     
@@ -118,11 +118,11 @@ ms.locfileid: "44386969"
 ## <a name="reset-business-passwords-in-bulk"></a>批量重置业务密码
 <a name="bkmk_forgot"> </a>
 
-使用 PowerShell! 请查看这篇由 Eyal Doron 发表的文章：[使用 PowerShell 管理密码](https://go.microsoft.com/fwlink/?linkid=853696)。
+Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 相关文章：[为多个用户帐户设置密码](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
   
-有关概述信息，请参阅[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
+有关概述信息，请参阅[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>为企业中的所有用户强制更改密码
 <a name="bkmk_forgot"> </a>
@@ -132,7 +132,7 @@ ms.locfileid: "44386969"
 ## <a name="im-lost"></a>我迷惑了！
 <a name="bkmk_forgot"> </a>
 
-请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
+请尝试阅读此文：[我忘记了 Office 所用的帐户用户名或密码。](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## <a name="related-articles"></a>相关文章
 <a name="bkmk_forgot"> </a>
@@ -147,4 +147,4 @@ ms.locfileid: "44386969"
 
 [删除以前的员工](remove-former-employee.md)
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

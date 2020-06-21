@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何识别和修正 Office 365 中的 Outlook 规则和自定义窗体注入攻击
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613380"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811046"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>检测和修正 Outlook 规则和自定义窗体注入攻击
 
@@ -95,13 +95,13 @@ ms.locfileid: "44613380"
 
 - 使用 Outlook 客户端手动检查每个邮箱的规则和窗体。 这种方法是彻底的，但如果您有多个用户要进行检查，则一次只能检查邮箱用户。 此外，它还会导致破坏正在运行检查的计算机。
 
-- 使用[Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本自动为租户中的所有用户转储所有邮件转发规则和自定义窗体。 这是最快、最安全的方法，最小开销。
+- 使用[Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本自动为租户中的所有用户转储所有邮件转发规则和自定义窗体。 这是最快、最安全的方法，最小开销。
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>使用 Outlook 客户端确认规则攻击
 
 1. 以用户的形式打开用户 Outlook 客户端。 用户可能需要您的帮助来检查其邮箱上的规则。
 
-2. 有关如何在 Outlook 中打开 rules 接口的过程，请参阅[使用规则文章管理电子邮件](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)。
+2. 有关如何在 Outlook 中打开 rules 接口的过程，请参阅[使用规则文章管理电子邮件](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
 3. 查找用户未创建的规则或具有可疑名称的任何意外规则或规则。
 
@@ -113,7 +113,7 @@ ms.locfileid: "44613380"
 
 1. 以用户的形式打开用户 Outlook 客户端。
 
-2. 按照中的步骤，为用户版本的 Outlook[显示 "开发工具" 选项卡](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)。
+2. 按照中的步骤，为用户版本的 Outlook[显示 "开发工具" 选项卡](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45)。
 
 3. 在 Outlook 中打开 "现在可见的开发工具" 选项卡，然后单击 "**设计窗体**"。
 
@@ -125,7 +125,7 @@ ms.locfileid: "44613380"
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>使用 PowerShell 确认规则和表单攻击的步骤
 
-验证规则或自定义表单攻击的最简单方法是运行[Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本。 此脚本将连接到租户中的每个邮箱，并将所有规则和窗体转储为两个 .csv 文件。
+验证规则或自定义表单攻击的最简单方法是运行[Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 脚本。 此脚本将连接到租户中的每个邮箱，并将所有规则和窗体转储为两个 .csv 文件。
 
 #### <a name="pre-requisites"></a>先决条件
 
@@ -133,11 +133,11 @@ ms.locfileid: "44613380"
 
 1. 登录到您将使用本地管理员权限运行脚本的计算机。
 
-2. 将 Get-AllTenantRulesAndForms 脚本从 GitHub 下载或复制到将从中运行它的文件夹中。 该脚本将创建两个日期戳文件到此文件夹、MailboxFormsExport-yyyy-mm-dd 和 MailboxRulesExport-yyyy-mm-dd。
+2. 将 Get-AllTenantRulesAndForms.ps1 脚本从 GitHub 下载或复制到将从中运行它的文件夹中。 该脚本将创建两个日期戳文件到此文件夹、MailboxFormsExport-yyyy-mm-dd.csv 和 MailboxRulesExport-yyyy-mm-dd.csv。
 
 3. 以管理员身份打开 PowerShell 实例，并打开保存脚本的文件夹。
 
-4. 按如下所示运行此 PowerShell 命令行 `.\Get-AllTenantRulesAndForms.ps1` .\Get-AllTenantRulesAndForms.ps1
+4. 按如下所示运行此 PowerShell 命令行 `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>解释输出
 
@@ -159,7 +159,7 @@ ms.locfileid: "44613380"
 
 1. 标识用户在 Outlook 中使用的所有设备。 所有这些人都需要清除潜在的恶意软件。 在清理所有设备之前，不要允许用户登录并使用电子邮件。
 
-2. 按照 "删除每个设备的[规则](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)" 中的步骤操作。
+2. 按照 "删除每个设备的[规则](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f)" 中的步骤操作。
 
 3. 如果您不确定是否存在其他恶意软件，可以在设备上格式化并重新安装所有软件。 对于移动设备，您可以按照制造商的步骤操作，将设备重置为出厂映像。
 
@@ -177,7 +177,7 @@ ms.locfileid: "44613380"
 
 2. 如果要从邮箱中完全删除单个规则、多个规则或所有规则，请使用[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet。
 
-3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
+3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) cmdlet。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中邮箱的步骤
 
@@ -185,7 +185,7 @@ ms.locfileid: "44613380"
 
 2. 如果要完全删除单个规则、多个规则或来自一个邮箱的所有规则，请使用 "[删除收件箱" 规则](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)cmdlet。
 
-3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet。
+3. 如果要保留规则及其内容以进行进一步调查，请使用[new-inboxrule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) cmdlet。
 
 ## <a name="how-to-minimize-future-attacks"></a>如何最大限度地减少未来攻击
 
@@ -207,7 +207,7 @@ ms.locfileid: "44613380"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>其次：将 Outlook 客户端保持为最新
 
-完全更新和修补的 Outlook 2013 版本，2016默认禁用 "启动应用程序" 规则/表单操作。 这将确保即使攻击者破坏了帐户，规则和表单操作也将受到阻止。 您可以按照[安装 Office 更新](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步骤安装最新的更新和安全修补程序。
+完全更新和修补的 Outlook 2013 版本，2016默认禁用 "启动应用程序" 规则/表单操作。 这将确保即使攻击者破坏了帐户，规则和表单操作也将受到阻止。 您可以按照[安装 Office 更新](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步骤安装最新的更新和安全修补程序。
 
 下面是 Outlook 2013 和2016客户端的修补程序版本：
 
@@ -225,7 +225,7 @@ ms.locfileid: "44613380"
 
 请注意，即使安装了修补程序和更新，攻击者也有可能更改本地计算机配置以重新启用 "启动应用程序" 行为。 您可以使用[高级组策略管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)在客户端上监视和强制实施本地计算机策略。
 
-通过使用[如何使用 Windows 的64位版本查看系统注册表](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)中的信息，可以查看是否已通过注册表中的替代重新启用了 "启动应用程序"。 检查以下子项：
+通过使用[如何使用 Windows 的64位版本查看系统注册表](https://support.microsoft.com/help/305097)中的信息，可以查看是否已通过注册表中的替代重新启用了 "启动应用程序"。 检查以下子项：
 
 - **Outlook 2016**：`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 

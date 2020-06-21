@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企业版测试环境的多重身份验证
+title: Microsoft 365 企业版测试环境多重身份验证
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,17 +14,18 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: 使用发送到 Microsoft 365 企业版测试环境中的智能手机的短信配置多重身份验证。
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213136"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819372"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企业版测试环境的多重身份验证
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
 若要使用其他级别的安全来登录 Microsoft 365 或使用 Azure AD 租户订阅订阅的任何服务或应用程序，您可以启用 Azure 多重身份验证，它需要的用户和密码不只需要用户名和密码即可验证帐户。 
 
@@ -43,7 +44,7 @@ ms.locfileid: "44213136"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 转到 "[测试实验室指南" 堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，获取 Microsoft 365 企业版测试实验室指南堆栈中的所有文章的可视化地图。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
@@ -60,7 +61,7 @@ ms.locfileid: "44213136"
   
 1. 打开浏览器的单独私有实例，转到 Microsoft 365 管理中心（ [https://portal.microsoft.com](https://portal.microsoft.com) ），然后使用全局管理员帐户登录。
     
-2. 在左侧导航栏中，单击“用户”>“活动用户”****。
+2. 在左侧导航窗格中，单击“**用户 > 活动用户**”。
     
 3. 在 "活动用户" 窗格中，单击 "**多因素身份验证**"。
     
@@ -98,7 +99,7 @@ ms.locfileid: "44213136"
     
 7. 在 "**步骤3：保留现有应用程序**" 页上，单击 "**完成**"。
     
-8. 如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”****。将新密码记录在安全位置。
+8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     
     您应在浏览器的 " **Microsoft Office 主页**" 选项卡上看到 "用户 2" 的 Office 门户。
 

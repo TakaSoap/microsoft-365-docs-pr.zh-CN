@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '了解在完成 Office 365 注册过程之前需要了解的内容。 '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579165"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780513"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册管理员帮助
 
@@ -70,7 +70,7 @@ ms.locfileid: "44579165"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 需要我们帮助你进行选择？ 销售顾问可以解答你的疑问。 只需转到 "[比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2)" 并选择页面左侧列出的联系人支持选项之一即可。
   
@@ -115,9 +115,9 @@ ms.locfileid: "44579165"
 
 - **您的订阅的地址和联系信息：**
 
-  - 使用服务所在的 **国家/地区**。以后 **不能** 更改此内容，即使是在注册过程中也是如此；必须重新开始启动注册向导才能更改。
+  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > 您在此处输入的电子邮件地址与 Microsoft 365 电子邮件地址（您的登录名，如下所示）不同。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
@@ -137,4 +137,4 @@ ms.locfileid: "44579165"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 了解如何切换到新的 Microsoft 365 for business 订阅。
-ms.openlocfilehash: c1216f0eb5069610ea63ca1a81d90243d3ef111d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403182"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818631"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 商业版计划
 
@@ -41,7 +41,7 @@ ms.locfileid: "44403182"
 
 **需要其他内容吗？**
 - [取消订阅](cancel-your-subscription.md)
-- [将 Microsoft 365 系列升级到业务订阅](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [将 Microsoft 365 系列升级到业务订阅](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)
 
 ## <a name="use-the-switch-plans-button"></a>使用 "切换计划" 按钮

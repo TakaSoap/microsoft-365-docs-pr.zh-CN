@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解 Microsoft 365 商业高级版中包含的内容，并获取注册 Microsoft 365 商业高级版的分步指南。
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401550"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785664"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>注册 Microsoft 365 商业高级版
 
@@ -42,7 +42,7 @@ ms.locfileid: "44401550"
 - **对于 microsoft 合作伙伴**：如果你是合作伙伴，请参阅[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 - **获取 microsoft**store 的帮助：头到[microsoft store](https://go.microsoft.com/fwlink/?linkid=2109652)。 Microsoft 商店可以帮助您解决计划、帮助您购买适合您的业务需求的计划，并帮助您完成设置。
 
-**需要不同的东西？** 可以：
+**需要不同的东西？** 可执行下列操作：
 - [将 Office 365 计划升级到 Microsoft 365 商业高级版](migrate-to-microsoft-365-business.md)。
 - 获取为期一个月的 Microsoft 365 商业高级[版免费试用版](https://go.microsoft.com/fwlink/p/?linkid=2102309)。
 - 如果你需要具有较少功能的计划，请[注册 Microsoft 365 商业标准](https://go.microsoft.com/fwlink/p/?LinkID=510935)。 了解每个业务计划在[products.office.com](https://go.microsoft.com/fwlink/?linkid=2109397)中所包含的内容。
@@ -54,7 +54,7 @@ ms.locfileid: "44401550"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 若要注册并购买适用于您的企业的 Microsoft 365，请完成以下步骤：
 
@@ -97,4 +97,4 @@ ms.locfileid: "44401550"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

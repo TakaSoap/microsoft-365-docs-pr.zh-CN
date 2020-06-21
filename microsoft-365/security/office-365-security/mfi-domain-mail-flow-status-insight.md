@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
-ms.openlocfilehash: 42ce0545dad2804829d15572ce6e1f5a0ca6b49f
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082833"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818587"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态见解
 
@@ -32,6 +34,6 @@ ms.locfileid: "42082833"
 
 ![顶级域流状态洞察力中的详细信息浮出控件](../../media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

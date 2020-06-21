@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224705"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811022"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
@@ -42,7 +42,7 @@ ms.locfileid: "44224705"
 
 如果您怀疑电子邮件是目标，应暂时禁用用户对邮箱的访问。 移动设备使用 Exchange ActiveSync 在设备与 Exchange Online 邮箱之间同步数据。
 
-若要禁用邮箱的 ActiveSync，请参阅[如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
+若要禁用邮箱的 ActiveSync，请参阅[如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303)。
 
 若要禁用对邮箱的其他类型的访问，请参阅：
 
@@ -50,7 +50,7 @@ ms.locfileid: "44224705"
 
 - [对用户启用或禁用 POP3 或 IMAP4 访问](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暂停 OneDrive 同步将有助于防止可能受感染的设备更新你的云数据。 有关详细信息，请参阅[如何暂停和恢复 OneDrive 中的同步](https://support.office.com/article/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
+暂停 OneDrive 同步将有助于防止可能受感染的设备更新你的云数据。 有关详细信息，请参阅[如何暂停和恢复 OneDrive 中的同步](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤3：从受影响的设备中删除恶意软件
 
@@ -60,11 +60,11 @@ ms.locfileid: "44224705"
 
 此外，还可帮助您删除勒索软件或恶意软件的另一种方法是[恶意软件删除工具（MSRT）](https://www.microsoft.com/download/details.aspx?id=9905)。
 
-如果这些选项不起作用，可以尝试让[Windows Defender 脱机](https://support.microsoft.com/help/17466/windows-defender-offline-help-protect-my-pc)或[解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)。
+如果这些选项不起作用，可以尝试让[Windows Defender 脱机](https://support.microsoft.com/help/17466)或[解决检测和删除恶意软件的问题](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步骤4：在已清理的计算机或设备上恢复文件
 
-完成上一步以从环境中删除勒索软件负载（这将阻止勒索软件加密或删除文件）后，可以使用 windows 10 中的[文件历史记录](https://support.microsoft.com/help/17128/windows-8-file-history)或 windows 7 中的 windows 8.1 或系统保护尝试恢复您的本地文件和文件夹。
+完成上一步以从环境中删除勒索软件负载（这将阻止勒索软件加密或删除文件）后，可以使用 windows 10 中的[文件历史记录](https://support.microsoft.com/help/17128)或 windows 7 中的 windows 8.1 或系统保护尝试恢复您的本地文件和文件夹。
 
 **注意**：
 
@@ -74,7 +74,7 @@ ms.locfileid: "44224705"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步骤5：在 OneDrive for Business 中恢复文件
 
-通过 OneDrive for Business 还原文件，可以在过去的30天内将整个 OneDrive 还原到以前的时间点。 有关详细信息，请参阅[还原 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+通过 OneDrive for Business 还原文件，可以在过去的30天内将整个 OneDrive 还原到以前的时间点。 有关详细信息，请参阅[还原 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步骤6：恢复已删除的电子邮件
 
@@ -82,7 +82,7 @@ ms.locfileid: "44224705"
 
 - [恢复用户邮箱中的已删除邮件](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [在 Outlook for Windows 中恢复已删除项目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [在 Outlook for Windows 中恢复已删除项目](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤7：重新启用 Exchange ActiveSync 和 OneDrive 同步
 
@@ -132,11 +132,11 @@ ms.locfileid: "44224705"
 
 - [Norsk Hydro 使用透明度响应勒索软件攻击](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [你的 OneDrive 中的勒索软件检测和恢复文件](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [你的 OneDrive 中的勒索软件检测和恢复文件](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsoft 安全研究报告](https://www.microsoft.com/securityinsights/)
 
-- [启用或禁用 Office 文件中的宏](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [启用或禁用 Office 文件中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [EOP 和 Office 365 ATP 安全性的建议设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 

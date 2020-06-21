@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 了解如何设置运行 Windows 10 Pro for Microsoft 365 商业高级版用户的 Windows 设备，从而实现集中管理和安全控制。
-ms.openlocfilehash: ecd9f5aa348d29d34e77061657619c015b09c41a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402950"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785844"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>为 Microsoft 365 商业高级版用户设置 Windows 设备
 
@@ -49,7 +49,7 @@ ms.locfileid: "44402950"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>将 Windows 10 设备加入到组织的 Azure AD
 
@@ -67,7 +67,7 @@ ms.locfileid: "44402950"
     
 3. 完成 Windows 10 设备设置。
     
-   完成后，用户将连接到组织的 Azure AD。请参阅[验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad)确保完成操作。 
+   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>已经设置并运行 Windows 10 专业版的设备
 
@@ -97,7 +97,7 @@ ms.locfileid: "44402950"
   
 6. 在 "**请确保这是你的组织**" 页上，验证信息是否正确，然后单击 "**加入**"。
   
-   在" **设置完毕!**"页面上，单击" **完成**"。
+   On the **You're all set!** page, click **Done**.
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
@@ -129,4 +129,4 @@ ms.locfileid: "44402950"
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>有关设置和使用 Microsoft 365 商业高级版的详细信息
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索将 Windows 设备升级到 Windows 10 专业版以利用更高级安全性和商业网络功能的方法。
-ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403522"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785522"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>将 Windows 设备升级到 Windows 10 专业版
 
@@ -39,11 +39,11 @@ ms.locfileid: "44403522"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="upgrade-to-windows-10-pro"></a>升级到 Windows 10 专业版
   
-若要升级到 Windows 10 专业版，你有多种选择。 可以：
+若要升级到 Windows 10 专业版，你有多种选择。 可执行下列操作：
     
 - 从[Microsoft 软件下载网站](https://go.microsoft.com/fwlink/?LinkID=836951 )安装升级 &ndash; 如果要登录的设备与要更新的设备位于同一设备上，请选择此选项。 
 
@@ -62,4 +62,4 @@ ms.locfileid: "44403522"
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>有关设置和使用 Microsoft 365 商业版的详细信息
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

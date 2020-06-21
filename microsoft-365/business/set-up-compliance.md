@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置合规性功能以防止数据丢失，并帮助保护您的客户和客户的敏感信息。
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402686"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785824"
 ---
 # <a name="set-up-compliance-features"></a>设置合规性功能
 
@@ -61,7 +61,7 @@ DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例
 
 敏感度标签随附有 Azure 信息保护（AIP）计划1，并通过应用标签帮助您对文档和电子邮件进行分类和（可选）保护。 可以由管理员自动应用标签，这些管理员定义规则和条件、手动按用户或通过使用用户提供建议的组合。
 
-若要设置敏感度标签，请查看[创建和管理敏感度标签](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。
+若要设置敏感度标签，请查看[创建和管理敏感度标签](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。
 
 
 
@@ -69,7 +69,7 @@ DLP 提供了许多不同区域设置的多种可供使用的策略模板。 例
 
 若要手动安装 AIP 客户端：
 
-1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载**AzinfoProtection_UL** 。
+1. 从[Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=53018)下载**AzinfoProtection_UL.exe** 。
  
 2. 您可以通过查看 Word 文档，并确保 "**开始**" 选项卡上的 "**敏感度**" 选项可用来验证安装是否正常进行。
 <br/>![Word 文档中的 "保护" 选项卡下拉箭头。](../media/word-sensitivity.png)

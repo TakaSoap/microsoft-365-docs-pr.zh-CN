@@ -24,18 +24,18 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678644"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780549"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
 **如果您购买了 Microsoft 365 for business 计划，并且您具有管理员权限，则可以访问管理中心**。 本文包含你所需要的内容！
 
-**如果您是用户或拥有 Microsoft 365 系列计划，则没有管理中心。** 若要设置 Microsoft 365，请转到[在电脑或 Mac 上下载并安装或重新安装 microsoft 365 或 Office 2019](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。
+**If you are a user or have a Microsoft 365 Family plan, you do not have an admin center.** To set up Microsoft 365, go to [Download and install or reinstall Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658).
 
 可使用管理中心在云中设置组织，还可用它来管理用户和订阅等等。 在本文中，学习如何访问管理中心并了解可用的功能和设置。
 
@@ -43,7 +43,7 @@ ms.locfileid: "44678644"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="how-to-get-to-the-admin-center"></a>如何访问管理中心
 
@@ -67,7 +67,7 @@ ms.locfileid: "44678644"
 
 2. 选择左上角的应用启动器图标，然后选择“**管理员**”。
 
-    **管理员**磁贴仅对拥有 Microsoft 365[管理员权限](../add-users/about-admin-roles.md)的用户显示。如果看不到磁贴，则表示你没有权限访问你的组织的管理中心。
+    The **Admin** tile appears only to people who have Microsoft 365 [admin permissions](../add-users/about-admin-roles.md). If you don't see the tile, then you don't have permissions to access the admin center for your organization.
 
 ## <a name="admin-center-features-and-settings"></a>管理中心功能和设置
 
@@ -83,9 +83,9 @@ ms.locfileid: "44678644"
 |**支持** <br/> | 查看现有服务请求或创建新请求。 在[联系商业版产品的支持人员 - 管理员帮助](../contact-support-for-business-products.md)中了解详细信息。 |
 |**Settings** <br/> |管理应用（如电子邮件、网站和 Office 套件）的全局设置。 更改你的密码策略和到期日期。 添加和更新域名，如 contoso.com。 更改组织配置文件和发布首选项。 选择合作伙伴能否访问你的管理中心。  <br/> |
 |**设置** <br/> |管理现有域、启用和管理多重身份验证、管理管理员访问权限、将用户邮箱迁移到 Office 365、管理功能更新，并帮助用户安装其 Office 应用。 |
-|**报表** <br/> |快速浏览有关电子邮件使用、Office 激活等的详细报告，了解您的组织如何使用 Microsoft 365。了解如何使用新的[活动报表](../activity-reports/activity-reports.md)。<br/> |
+|**报表** <br/> |See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).  <br/> |
 |**运行状况** <br/> |一目了然地查看服务运行状况。 还可查看更多详细信息和服务运行状况历史记录。 请参阅[如何查看服务运行状况](https://docs.microsoft.com/office365/enterprise/view-service-health)。  <br/> 使用消息中心跟踪即将推出的功能和服务更改。 我们会在该中心发布公告，其中含有帮助你规划更改和了解更改可能对用户产生的影响的信息。 请在 [Office 365 中的消息中心](../manage/message-center.md)获取更多详细信息。  <br/> |
-|**管理中心** <br/> |为 Exchange、Skype for Business、SharePoint、Yammer 和 Azure AD 打开单独的管理中心。 每个管理中心均包含可用于此服务的所有设置。  <br/> 例如,在 Exchange 管理中心中，设置和管理电子邮件、日历、通讯组等。在 SharePoint 管理中心中，创建和管理网站集、网站设置和 OneDrive for Business。在 Skype for Business 管理中心中，设置即时消息通知、电话拨入式会议和联机状态。  <br/> 深入了解 [Exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)和 [SharePoint 管理中心](https://docs.microsoft.com/sharepoint/sharepoint-online)。<br/> **注意：** 可使用哪些管理中心取决于你的计划和区域。           |
+|**管理中心** <br/> |为 Exchange、Skype for Business、SharePoint、Yammer 和 Azure AD 打开单独的管理中心。 每个管理中心均包含可用于此服务的所有设置。  <br/> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <br/> 深入了解 [Exchange 管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)和 [SharePoint 管理中心](https://docs.microsoft.com/sharepoint/sharepoint-online)。<br/> **注意：** 可使用哪些管理中心取决于你的计划和区域。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理中心内的常见任务
 
@@ -101,4 +101,4 @@ ms.locfileid: "44678644"
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

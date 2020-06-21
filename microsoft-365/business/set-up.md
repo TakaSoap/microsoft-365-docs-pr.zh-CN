@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 发现 Microsoft 365 商业高级版的设置步骤，包括添加域和用户、设置安全策略等。
-ms.openlocfilehash: 58dc5eb71b41f5b9316e8d68cc3fc3c8c91748b3
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 89186fbd00e47385f0320c45f7fc44c258742aa3
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564903"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785696"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安装向导中设置 Microsoft 365 商业高级版
 
@@ -43,7 +43,7 @@ ms.locfileid: "44564903"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>添加你的域、用户并设置策略
 
@@ -131,8 +131,8 @@ ms.locfileid: "44564903"
 
 若要在移动 iOS 或 Android 设备上安装 Office，请参阅[为 Microsoft 365 商业高级版用户设置移动设备](set-up-mobile-devices.md)。
 
-您也可以单独安装 Office。 有关说明，请参阅[在电脑或 Mac 上安装 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658) 。
+您也可以单独安装 Office。 有关说明，请参阅[在电脑或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 。
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401998"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786146"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -65,7 +65,7 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置 Microsoft 365 for business （管理员）
@@ -113,4 +113,4 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
   
 [管理 microsoft 365 for](manage.md)business[迁移到 microsoft 365 商业](migrate-to-microsoft-365-business.md)版
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

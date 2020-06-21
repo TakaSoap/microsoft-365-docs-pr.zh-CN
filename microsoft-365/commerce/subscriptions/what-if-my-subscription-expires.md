@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403158"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818619"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
@@ -57,13 +57,13 @@ ms.locfileid: "44403158"
 
 订阅处于活动状态时，您和最终用户对数据具有常规访问权限，如电子邮件和 OneDrive for Business，以及 Office 应用程序等服务。 作为管理员，你将在你的订阅临近到期日期时通过电子邮件和管理中心收到一系列通知。
   
-在订阅实际达到到期日期之前，您有几个选项：
+订阅的到期日期真正到来之前，你有一些选择：
 
 ::: moniker range="o365-worldwide"
   
 - **为订阅启用定期帐单。**
 
-  - 如果**定期记帐**已打开，则无需执行任何操作。 你的订阅将自动计费，并且将根据你当前的付款频率，向你收取额外一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
+  - 如果**定期记帐**已打开，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
 
   - 如果使用预付卡购买了 Microsoft 365 的商业应用程序，则可以为订阅[启用定期帐单](renew-your-subscription.md)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "44403158"
   
 - **管理订阅的定期帐单。**
 
-  - 如果**定期记帐**已打开，则无需执行任何操作。 你的订阅将自动计费，并且将根据你当前的付款频率，向你收取额外一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
+  - 如果**定期记帐**已打开，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
 
   - 如果使用预付卡购买了 Microsoft 365 的商业应用程序，则可以为订阅[启用定期帐单](renew-your-subscription.md)。
 
@@ -109,7 +109,7 @@ ms.locfileid: "44403158"
 
 ::: moniker range="o365-21vianet"
   
-- **续订订阅。** 如果**定期记帐**已打开，则无需执行任何操作。 你的订阅将自动计费，并且将根据你当前的付款频率，向你收取额外一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
+- **续订订阅。** 如果**定期记帐**已打开，则无需执行任何操作。 系统将自动对你的订阅计费，并且将根据你当前的付款频率，向你另外收取一年或一个月的费用。 如果您已关闭**定期付费**的任何原因，您始终可以[重新启用定期付费](renew-your-subscription.md)。
 
 - **允许订阅过期。** 如果是通过信用卡或发票付款，并且不希望继续订阅，请关闭[定期付费](renew-your-subscription.md)。 你的订阅将在到期日期后过期，你可以忽略所有相关的电子邮件通知。
 
@@ -168,7 +168,7 @@ ms.locfileid: "44403158"
 
 ::: moniker range="o365-worldwide"
 
-在此状态下，您的访问会显著降低。 您的用户无法登录，或者无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终将移动到只读、缩减功能模式，并显示未[授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍可以登录并进入管理中心，但不能向用户分配许可证。 您的客户数据（包括所有用户数据、电子邮件和工作组网站上的文件）仅供您和其他管理员使用。
+在此状态下，您的访问会显著降低。 您的用户无法登录，或者无法访问电子邮件或 SharePoint Online 等服务。 Office 应用程序最终将移动到只读、缩减功能模式，并显示未[授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍可以登录并进入管理中心，但不能向用户分配许可证。 您的客户数据（包括所有用户数据、电子邮件和工作组网站上的文件）仅供您和其他管理员使用。
 
 ::: moniker-end
 
@@ -216,7 +216,7 @@ ms.locfileid: "44403158"
   
 - **管理员访问**管理员仍可以登录并访问管理中心，并根据需要购买其他订阅。 作为全局或帐单管理员，你有90天的时间来[重新激活订阅](reactivate-your-subscription.md)的所有数据都完好无损。
 
-- **用户访问**您的用户不能使用 OneDrive for Business 等服务，也不能访问客户数据，例如，电子邮件或工作组网站上的文档。 Word 和 Excel 等 Office 应用程序最终将进入只读的缩减功能模式，并显示 [未经授权的产品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **用户访问**您的用户不能使用 OneDrive for Business 等服务，也不能访问客户数据，例如，电子邮件或工作组网站上的文档。 Word 和 Excel 等 Office 应用程序最终将进入只读的缩减功能模式，并显示 [未经授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
 若要了解如何取消，请参阅[取消订阅](cancel-your-subscription.md)。
   

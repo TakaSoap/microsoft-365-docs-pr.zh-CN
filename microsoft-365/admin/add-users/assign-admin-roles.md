@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何向用户或业务中的多个用户分配管理员角色，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432095"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780633"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -46,7 +46,7 @@ ms.locfileid: "44432095"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="assign-admin-roles"></a>分配管理员角色 
 
@@ -78,7 +78,7 @@ ms.locfileid: "44432095"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。 
 
@@ -90,7 +90,7 @@ ms.locfileid: "44432095"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 在 "**活动用户**" 页上，选择要更改其管理员角色的用户。 在浮出控件窗格中，单击 "**角色**" 旁边的 "**编辑**"。
 

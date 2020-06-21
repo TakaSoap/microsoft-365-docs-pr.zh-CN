@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: 了解如何激活、续订或将许可证添加到 Microsoft 365 for business 订阅。
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404678"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818551"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>输入从 Microsoft Open 购买的产品密钥
 
@@ -38,7 +38,7 @@ ms.locfileid: "44404678"
   
  **需要其他内容吗？**
  
- **有关 Microsoft 365 主页或个人的帮助**，请参阅将[产品密钥与 Office 结合使用](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)。
+ **有关 Microsoft 365 主页或个人的帮助**，请参阅将[产品密钥与 Office 结合使用](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。
   
  **有关从零售商店购买的 Microsoft 365 商业标准的帮助**，请参阅[输入从零售店购买的产品密钥](enter-your-product-key.md)。 
   
@@ -64,7 +64,7 @@ ms.locfileid: "44404678"
 
 查看以下常见错误和解决方案列表：你的[产品密钥有问题？](product-key-errors-and-solutions.md)
   
-合作伙伴，请参阅[合作伙伴：使用产品密钥设置客户订阅](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)。
+合作伙伴，请参阅[合作伙伴：使用产品密钥设置客户订阅](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40)。
   
 批量许可客户可以通过访问 [Microsoft 批量许可服务中心的培训和资源](https://go.microsoft.com/fwlink/p/?LinkId=618103)。
   

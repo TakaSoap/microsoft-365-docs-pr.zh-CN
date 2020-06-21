@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并针对网络钓鱼、恶意软件和其他威胁保护敏感数据。
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400862"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786198"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -78,7 +78,7 @@ ms.locfileid: "44400862"
     
 5. 对规则应用下表中的设置。 对其余设置使用默认值，除非您要对其进行更改。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**||
 |:-----|:-----|:-----|
@@ -92,13 +92,13 @@ ms.locfileid: "44400862"
   
 - [如何处理勒索软件](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [还原你的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [还原你的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>停止电子邮件的自动转发
 
 获取对用户邮箱的访问权限的黑客可以通过将邮箱设置为自动转发电子邮件来盗取邮件。 即使没有用户的意识，也会发生这种情况。 若要防止这种情况发生，请配置邮件流规则。 
   
-若要创建邮件传输规则，请观看[此简短视频](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)或按照以下步骤操作：
+若要创建邮件传输规则，请观看[此简短视频](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7)或按照以下步骤操作：
   
 1. 在 Microsoft 365 管理中心，选择 "**管理中心**" " \> **Exchange**"。
     
@@ -110,7 +110,7 @@ ms.locfileid: "44400862"
     
 5. 应用下表中的设置。 对其余设置使用默认值，除非您要对其进行更改。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
 |**设置**|**在打开 Office 文件附件之前警告用户**|
 |:-----|:-----|
@@ -127,7 +127,7 @@ ms.locfileid: "44400862"
   
 我们建议您通过创建策略来保护最重要的用户和您的自定义域，以此来开始保护。 
 
-若要创建 ATP 反网络钓鱼策略，请观看[此简短的培训视频](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
+若要创建 ATP 反网络钓鱼策略，请观看[此简短的培训视频](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。 
     
@@ -145,7 +145,7 @@ ms.locfileid: "44400862"
 |**设置或选项**<br/>|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |域和最有价值的市场活动员工  <br/> |
-|Description  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
+|说明  <br/> |确保不会模拟大多数重要的人员和我们的域。  <br/> |
 |添加要保护的用户  <br/> |选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。  <br/> |
 |添加要保护的域  <br/> |选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。  <br/> |
 |选择操作  <br/> |如果模拟用户发送电子邮件：选择 "**将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，*刘爱琳 <span> <span> @contoso .com*。 如果电子邮件是由模拟域发送的：请选择“隔离邮件”****。  <br/> |
@@ -157,7 +157,7 @@ ms.locfileid: "44400862"
 
 用户定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 只需查看一封电子邮件，就能判断附件是安全还是恶意的，并不总是容易。 Office 365 高级威胁防护包括 ATP 安全附件保护，但默认情况下不启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护功能扩展到 SharePoint、OneDrive 和 Microsoft 团队中的文件。
   
-若要创建 ATP 安全附件策略，请观看[此简短视频](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
+若要创建 ATP 安全附件策略，请观看[此简短视频](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的管理员帐户登录。 
     
@@ -177,7 +177,7 @@ ms.locfileid: "44400862"
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|
 |名称  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件。  <br/> |
-|Description  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
+|说明  <br/> |使用检测到的恶意软件阻止当前和将来的电子邮件和附件。  <br/> |
 |保存附件未知的恶意软件响应  <br/> |Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件**。  <br/> |
 |在检测时重定向附件  <br/> |启用重定向（选择此框）输入管理员帐户或邮箱设置进行隔离。          如果恶意软件扫描附件超时或发生错误（选中此框），请应用上面的选择。  <br/> |
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |
@@ -194,7 +194,7 @@ ms.locfileid: "44400862"
     
 - 添加目标为域中所有收件人的新策略。
     
-若要设置 ATP 安全链接，请观看[此简短的培训视频](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
+若要设置 ATP 安全链接，请观看[此简短的培训视频](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
   
 1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的管理员帐户登录。 
     
@@ -208,7 +208,7 @@ ms.locfileid: "44400862"
     
 2. 在 "**适用于除电子邮件以外的内容的设置**" 下，选择 "适用于**企业的 Microsoft 365 应用，Office For iOS 和 Android**"。
     
-3. 选择“保存”****。 
+3. 选择“**保存**”。 
     
 创建一个面向域中所有收件人的新策略：
   
@@ -216,7 +216,7 @@ ms.locfileid: "44400862"
     
 2. 应用下表中列出的设置。
     
-3. 选择“保存”****。 
+3. 选择“**保存**”。 
 
 |**设置或选项**|**推荐设置** <br/>|
 |:-----|:-----|

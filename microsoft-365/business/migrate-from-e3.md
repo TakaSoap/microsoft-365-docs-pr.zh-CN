@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515895"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785924"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
@@ -45,7 +45,7 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 | Office 应用程序<sup>1</sup>    | Microsoft 365 商业应用版    | Microsoft 365 企业应用版 | 
 | **云生产力应用程序**        | | | 
 | Exchange Online 和 Outlook    | 每个邮箱 50 GB 存储限制和不受限制的 Exchange Online 存档    | 每个邮箱 100 GB 存储限制和不受限制的 Exchange Online 存档 | 
-| Teams    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
+| 团队    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
 | OneDrive for Business    | 每个用户 1 TB 存储限制    | 无限制 | 
 | Yammer、SharePoint Online、Planner、Stream    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
 | StaffHub    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
@@ -117,8 +117,8 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 
 ### <a name="threat-protection"></a>威胁防护
 
-迁移到 Microsoft 365 商业高级版后，你将拥有 Office 365 ATP。 有关概述，请参阅[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅[设置 atp 安全链接](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及[设置 atp 反网络钓鱼](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
+迁移到 Microsoft 365 商业高级版后，你将拥有 Office 365 ATP。 有关概述，请参阅[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅[设置 atp 安全链接](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)、[设置 atp 安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及[设置 atp 反网络钓鱼](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
-若要开始使用敏感度标签，请参阅[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)和[创建和管理敏感度标签](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。
+若要开始使用敏感度标签，请参阅[敏感度标签概述](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)和[创建和管理敏感度标签](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)视频。

@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 管理员可以了解如何使用 Exchange Online 中的 S/MIME （安全/多用途 Internet 邮件扩展）加密电子邮件并对其进行数字签名。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf9859240914e078eb62b0e914f8de79cf647f2d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224669"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811010"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>Exchange Online 中的邮件签名和加密的 S/MIME
 
@@ -46,12 +46,12 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 3. 对于 Exchange Online 组织，使用相应版本的 Azure AD Connect 将用户证书从 AD DS 同步到 Azure Active Directory。 然后，这些证书将从 Azure Active Directory 同步到 Exchange Online 目录，并将在将邮件加密给收件人时使用。
 
-4. 设置虚拟证书集合以验证 S/MIME。此信息供 Web 上的 Outlook 用于验证电子邮件的签名并确保它是由可信证书签名的。
+4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
 
 5. 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
 
 > [!NOTE]
-> 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480)。
+> 无法在 Mac、iOS、Android 或其他非 Windows 设备上的 web 上的 Outlook 中安装 S/MIME 控件。 有关详细信息，请参阅[web 上的在 Outlook 中使用 S/MIME 加密邮件](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>设置 web 上的 Outlook 的 S/MIME
 

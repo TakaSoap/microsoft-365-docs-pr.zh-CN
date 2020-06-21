@@ -1,5 +1,5 @@
 ---
-title: SMTP 身份验证客户端报表
+title: SMTP 身份验证客户端报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,15 +10,17 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
-ms.openlocfilehash: e80ee36fd7e94cc4dc2791f71ae594f0182b4269
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082598"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818815"
 ---
-# <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报表
+# <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报告
 
 **Smtp auth 客户端**报告突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧协议（使用终结点 smtp.office365.com）仅提供基本身份验证，并且容易被受攻击帐户用来发送电子邮件。  此报告允许您检查异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
 
@@ -50,6 +52,6 @@ ms.locfileid: "42082598"
 
 ![SMTP Auth 客户端报告中 TLS 用法的详细信息表](../../media/smtp-auth-clients-report-details-tls-usage.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352542"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800127"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To identity and 超越-一个架构师的视点
 
@@ -134,7 +134,7 @@ Azure AD 的策略引擎是使用[条件访问策略](https://docs.microsoft.com
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/)（azure ATP）
 - [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)（MICROSOFT defender ATP）
-- [Microsoft 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)（MICROSOFT 365 ATP）
+- [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)（OFFICE 365 ATP）
 - [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security/)（MCAS）
 - [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)（MTP）
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Office 365 具有[统一的审核日志](https://docs.microsoft.com/microsoft-36
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="用于委派管理的 Azure 组件的高级视图":::
 
-正如您可以从上图中看到的，许多其他服务应视为设计的一部分（例如： [Azure 策略](https://docs.microsoft.com/azure/governance/policy/overview)、 [Asure 蓝图](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理组](https://docs.microsoft.com/azure/governance/management-groups/)等）
+从上图中可以看到，许多其他服务应视为设计的一部分（例如： [Azure 策略](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 蓝图](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理组](https://docs.microsoft.com/azure/governance/management-groups/)等）
 
 ## <a name="conclusion"></a>总结
 作为简短摘要启动，结束时间超过了预期时间。  我希望你现在可以深入了解如何为你的组织创建委派模型。  此对话对客户非常常见。 没有一个适用于每个人的模型。 在记录我们跨客户看到的常见模式之前，请先等待 Microsoft 工程部门的几个计划改进。 同时，你可以与 Microsoft 帐户团队合作，安排对最接近[Microsoft 技术中心](https://www.microsoft.com/mtc)的访问。  向你显示！

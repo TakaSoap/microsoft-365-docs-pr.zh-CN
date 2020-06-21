@@ -13,14 +13,14 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用威胁资源管理器和实时检测报告来调查安全 & 合规性中心中的威胁并对其做出响应。
+description: 了解如何使用威胁资源管理器和实时检测报告来调查安全合规性中心中的威胁并对其做出响应 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 824fde8d6f6a03dd61a46d1f0ccc08c93b85adf8
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: ae063cdcbd3d9b5d371e64513c90ff46503ec982
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267187"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819469"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 

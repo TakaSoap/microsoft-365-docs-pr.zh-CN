@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何配置 Microsoft 365 以与组织外部的人员进行协作。
-ms.openlocfilehash: 5d85b164133d235dce410cd6cbda778588fd093a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 4d5be2d560017978d08bf9f5b06c9e2011606c6d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160011"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819408"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 
@@ -57,7 +57,7 @@ Microsoft 365 中的外部共享功能为组织中的人员与合作伙伴、供
 
 如果 Microsoft 365 中的某些共享功能与您的治理策略冲突，请参阅[在 microsoft 365 中限制共享](microsoft-365-limit-sharing.md)以了解用于限制共享的选项。
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [Microsoft 365 中的文件协作简介](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

@@ -15,17 +15,19 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: 6aedc0e499a489d7526737700ecc76deab9e6e32
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679128"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819444"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
-## <a name="overview"></a>概述
+## <a name="basic-functions-and-how-to-open-security-dashboard"></a>基本功能以及如何打开安全仪表板
 
 [安全 & 合规中心](../../compliance/go-to-the-securitycompliance-center.md)使组织能够管理数据保护和合规性。 如果您具有必要的权限，安全仪表板将使您能够查看威胁保护状态，并查看安全警报并对其采取措施。
 

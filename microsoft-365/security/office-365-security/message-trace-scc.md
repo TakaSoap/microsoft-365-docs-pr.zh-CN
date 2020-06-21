@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以使用安全 & 合规性中心中的邮件跟踪来查明邮件发生了什么情况。
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352494"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819336"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全与合规中心内的消息跟踪
 
-## <a name="overview"></a>概述
+## <a name="message-trace-features"></a>邮件跟踪功能
 
 Security & 合规中心中的邮件跟踪在通过 Exchange Online 组织传递的电子邮件中遵循这些电子邮件。 您可以确定服务是否已接收、拒绝、推迟或发送邮件。 它还显示邮件在到达其最终状态之前对邮件执行的操作。
 
@@ -230,7 +232,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 
 - **sender_address**：发件人的电子邮件地址（*别名* @ *域*）。
 
-- **Recipient_status**：将邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \< *电子邮件地址* \> ## \< *状态* \> 。 例如：
+- **Recipient_status**：将邮件传递给收件人的状态。 如果邮件发送给多个收件人，则它将显示所有收件人以及每个收件人的相应状态，格式为： \<*email address*\> ## \<*status*\> 。 例如：
 
   - **# #Receive，Send**表示该邮件由服务接收，并发送到预定的目标。
 
@@ -337,7 +339,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 |`SFV=BLK`|跳过筛选但阻止邮件，因为它是由已阻止发件人发送。|
 |`SFV=SKS`|在反垃圾邮件筛选处理之前，邮件被标记为垃圾邮件。 这包括符合以下邮件流程规则条件（也称为传输规则）的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
 |`SCL=<number>`|有关不同的 SCL 值及其含义的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。|
-|`PCL=<number>`|邮件的仿冒可能性等级 (PCL) 值。可按照[垃圾邮件可信度](spam-confidence-levels.md)中介绍 SCL 值的方式对这些值做出解释。  |
+|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|已阻止邮件发件人。|
 |`DI=SQ`|邮件已隔离。|
 |`DI=SD`|邮件已删除。|

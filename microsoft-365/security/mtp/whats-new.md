@@ -15,19 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d95879816193eb00881835b63f2aae3e232ddfb7
-ms.sourcegitcommit: cc3b64a91e16ccdaa9c338b9a9056dbe3963ba9e
+ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
+ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42569066"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44820544"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威胁防护的新增功能
 
 以下功能在最新版本的 Microsoft 威胁防护中是普遍提供的（GA）。
 
-RSS 源：通过将以下 URL 复制并粘贴到订阅源阅读器中来更新此页面时收到通知：`https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us`
-
+RSS 源：通过将以下 URL 复制并粘贴到订阅源阅读器中来更新此页面时收到通知：
+```http
+https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
+```
 ## <a name="february-2020"></a>2020 年 2 月
 - [事件](incidents-overview.md) <br> 确切知道攻击的启动位置和其他详细信息，以帮助您了解攻击的程度。
 - [自动调查和响应](mtp-autoir.md) <br> AIR 使你的安全运营团队能够极大地提高组织处理安全警报和事件的能力。

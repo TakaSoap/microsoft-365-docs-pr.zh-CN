@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173388"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818563"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft 安全得分（以前的迭代）
 
@@ -43,7 +46,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 此外，你还可以通过[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)访问你的建议和评分。 了解[安全分数资源类型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>工作原理
+## <a name="how-your-secure-score-is-calculated"></a>如何计算安全得分
 
 为您提供配置推荐安全功能、执行与安全相关的任务（如查看报告）或使用第三方应用程序或软件解决改进操作的相关积分。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。
 
@@ -102,8 +105,8 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 在 "Microsoft 安全分数概述" 页中，您可以看到在这些组之间如何拆分点以及哪些点可用。 [！注意] 概述页面也是获取总分和基准对比的安全分数的历史趋势的完整视图的位置，以及可采取的优先改进措施以提高成绩。
 
-![安全积分主页](../../media/secure-score/homepage-original.png)
-*图1： Microsoft 安全分数概述页面*
+![安全积分主页 ](../../media/secure-score/homepage-original.png)
+ *图1： Microsoft 安全分数概述页面*
 
 ## <a name="take-action-to-improve-your-score"></a>采取行动以提高成绩
 

@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 了解当某人离开你的组织时，如何保留员工的文件和电子邮件。
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431709"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780609"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>访问并备份以往用户的数据的访问
 
@@ -44,7 +44,7 @@ ms.locfileid: "44431709"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。  
     
 2. 选择一个用户。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44431709"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择一个用户。
 
@@ -76,7 +76,7 @@ ms.locfileid: "44431709"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。 
 
 2. 选择一个用户。
 
@@ -141,7 +141,7 @@ ms.locfileid: "44431709"
 
 若要保存以前员工的电子邮件、日历、任务和联系人，请将信息导出到 Outlook 数据文件（.pst）。
   
-1. [将前员工的电子邮件添加](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)到你的 Outlook （如果[重置用户的密码](reset-passwords.md)，则可以将其设置为仅你知道的内容。）
+1. [将前员工的电子邮件添加](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)到你的 Outlook （如果[重置用户的密码](reset-passwords.md)，则可以将其设置为仅你知道的内容。）
     
 2. 在 Outlook 中，选择 "**文件**"。
     
@@ -181,7 +181,7 @@ ms.locfileid: "44431709"
     
   - 如果要导出到受密码保护的现有 Outlook 数据文件（.pst）中，请在 " **Outlook 数据文件密码**" 对话框中，键入*密码*，然后选择 **"确定"**。
     
-请参阅如何在 Outlook 2010 中[将电子邮件、联系人和日历导出或备份到 outlook .pst 文件](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。 
+请参阅如何在 Outlook 2010 中[将电子邮件、联系人和日历导出或备份到 outlook .pst 文件](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)。 
   
   
   > [!NOTE]

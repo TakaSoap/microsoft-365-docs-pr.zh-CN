@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: e0aa16bd01e81e89e80db51c6569009e177ed687
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386945"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780537"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
@@ -58,10 +58,10 @@ ms.locfileid: "44386945"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
  
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 以下是一些有关应用的常见问题的解答。
   
@@ -105,4 +105,4 @@ ms.locfileid: "44386945"
   
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

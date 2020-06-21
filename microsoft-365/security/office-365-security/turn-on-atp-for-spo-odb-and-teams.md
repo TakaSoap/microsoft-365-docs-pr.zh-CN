@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1276faf9883fda9bb73674b27f3e5fb1a648d5d3
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613392"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811070"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
@@ -71,7 +71,7 @@ ms.locfileid: "44613392"
 
 若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用[Powershell 管理 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
 
-若要详细了解在将文件检测为恶意时的用户体验，请参阅在[SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.microsoft.com/en-us/office/what-to-do-when-a-malicious-file-is-found-in-sharepoint-online-onedrive-or-microsoft-teams-01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
+若要详细了解在将文件检测为恶意时的用户体验，请参阅在[SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
 
 ## <a name="set-up-alerts-for-detected-files"></a>为检测到的文件设置通知
 

@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631213"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818705"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中添加对通过 IPv6 的匿名入站电子邮件的支持
 
@@ -34,7 +36,7 @@ ms.locfileid: "43631213"
 
 在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。
 
-## <a name="troubleshooting"></a>疑难解答
+## <a name="troubleshooting"></a>故障排除
 
 - 如果源电子邮件服务器没有 IPv6 反向 DNS 查找记录，则邮件将被拒绝，并出现以下错误：
 
@@ -48,6 +50,6 @@ ms.locfileid: "43631213"
 
   > 550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 的电子邮件。
 
-## <a name="for-more-information"></a>有关详细信息
+## <a name="related-topics"></a>相关主题
 
 [支持 DKIM 签名邮件验证](support-for-validation-of-dkim-signed-messages.md)

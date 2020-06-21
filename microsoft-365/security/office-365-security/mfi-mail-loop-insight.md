@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件循环见解。
-ms.openlocfilehash: d17c698cf66be56b6a08fa5efc2aaff78aaece07
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082805"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819312"
 ---
 # <a name="mail-loop-insight"></a>邮件循环见解
 
@@ -28,6 +30,6 @@ ms.locfileid: "42082805"
 
 ![在邮件流仪表板中单击 "查看详细信息" 中的 "查看详细信息" 后的浮出控件窗格](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

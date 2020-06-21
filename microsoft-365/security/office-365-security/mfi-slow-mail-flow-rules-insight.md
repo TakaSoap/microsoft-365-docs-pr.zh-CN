@@ -11,13 +11,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则速度缓慢。
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088345"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819360"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>慢邮件流规则见解
 
@@ -37,6 +39,6 @@ ms.locfileid: "42088345"
 
 ![在邮件流仪表板中单击慢速邮件流规则中的 "查看详细信息" 后的浮出控件窗格](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流映射报告。
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635288"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818839"
 ---
 # <a name="mail-flow-map-report"></a>邮件流图报告
 
@@ -30,7 +32,7 @@ ms.locfileid: "43635288"
 
 ![邮件流映射小组件中的向左和向右箭头](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>概述
+## <a name="mail-flow-map-basics"></a>邮件流映射基础知识
 
 单击 "**邮件流地图**" 小部件将转到**邮件流地图**报告。 您可以在此处查看更详细的报告级别，可以单击 "查看详细信息表" 以查看详细数据。 您还可以通过单击 "请求报告" 下载详细报告。
 

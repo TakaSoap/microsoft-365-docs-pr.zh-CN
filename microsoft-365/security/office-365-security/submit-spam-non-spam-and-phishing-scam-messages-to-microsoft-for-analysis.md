@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理员和用户可以了解如何将电子邮件（正确的邮件标记为错误或坏邮件允许）进行分析。
+description: 管理员和最终用户可以了解如何将电子邮件（正确的邮件标记为损坏或坏邮件允许）进行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed605d88f025996646c928200c20945df9c9871f
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208605"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811034"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 

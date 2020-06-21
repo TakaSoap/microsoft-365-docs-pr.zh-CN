@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
 description: 在 iPhone 或 Android 手机上安装 Office，Office 应用中的工作文件将受到 Microsoft 365 for business 的保护。
-ms.openlocfilehash: e96e2edc0fc2bc25449d8f50239fa25179b345bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e847a794d34731c22f7a0fca87d246151a6f80a5
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402990"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785864"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>为 Microsoft 365 for business 用户设置移动设备
 
@@ -46,7 +46,7 @@ ms.locfileid: "44402990"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 转到" **App Store**"，在搜索字段中键入 Microsoft Outlook。
   
@@ -78,7 +78,7 @@ ms.locfileid: "44402990"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 若要在 Android 手机上开始安装程序，请转到 "播放存储区"。
   
@@ -100,12 +100,12 @@ ms.locfileid: "44402990"
   
 ![Screenshot that shows the install button for Intune Company Portal in Google Play Store](../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
-再次打开 Outlook，然后输入并确认 PIN。现在即可开始使用 Outlook 应用。
+Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready for use.
   
 ![Set  PIN for Outlook app in Android](../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 商业版培训视频](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

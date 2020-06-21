@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400685"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818503"
 ---
 # <a name="restore-a-deleted-group"></a>还原已删除的组
 
@@ -52,13 +52,13 @@ ms.locfileid: "44400685"
     
 - Planner
     
-- Teams
+- 团队
 
 - Yammer 组和组内容（如果 Microsoft 365 组是从 Yammer 创建的）
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a>使用 Outlook 还原您拥有的组
+## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>使用 web 上的 Outlook 还原您拥有的组
 
-如果你是 Microsoft 365 组的所有者，则可以通过执行以下步骤在 Outlook 中自行还原组：
+如果你是 Microsoft 365 组的所有者，则可以通过执行以下步骤，在 web 上的 Outlook 中自行还原组：
 
 1. 在 "[已删除的组" 页](https://outlook.office.com/people/group/deleted)上，选择 "**组**" 节点下的 "**管理组**" 选项，然后选择 "**已删除**"。
 
@@ -96,7 +96,7 @@ Get-AzureADMSDeletedGroup
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-若要确认是否成功清除该组，请再次运行  *Get-AzureADMSDeletedGroup*  cmdlet 以确认该组不再出现在软删除的组列表中。某些情况下，要永久删除该组及其所有数据可能需要长达 24 小时。 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>遇到有关 Microsoft 365 组的问题？
 
@@ -108,6 +108,6 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
   
 [使用 Remove-UnifiedGroup cmdlet 删除组](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[管理连接了组的团队网站设置](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[管理连接了组的团队网站设置](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   
-[在 Outlook 中删除组](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[在 Outlook 中删除组](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)
