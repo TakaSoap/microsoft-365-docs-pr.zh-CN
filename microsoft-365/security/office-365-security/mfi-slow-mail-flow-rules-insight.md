@@ -11,32 +11,34 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则速度缓慢。
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088345"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819360"
 ---
-# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="a010f-103">慢邮件流规则见解</span><span class="sxs-lookup"><span data-stu-id="a010f-103">Slow mail flow rules insight</span></span>
+# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="fb8eb-103">慢邮件流规则见解</span><span class="sxs-lookup"><span data-stu-id="fb8eb-103">Slow mail flow rules insight</span></span>
 
-<span data-ttu-id="a010f-104">低效率的邮件流规则（也称为传输规则）可能会导致贵组织的邮件流延迟。</span><span class="sxs-lookup"><span data-stu-id="a010f-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="a010f-105">此洞察力可报告影响组织的邮件流的邮件流规则。</span><span class="sxs-lookup"><span data-stu-id="a010f-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="a010f-106">这些规则类型的示例如下：</span><span class="sxs-lookup"><span data-stu-id="a010f-106">Examples of these types of rules are:</span></span>
+<span data-ttu-id="fb8eb-104">低效率的邮件流规则（也称为传输规则）可能会导致贵组织的邮件流延迟。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="fb8eb-105">此洞察力可报告影响组织的邮件流的邮件流规则。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="fb8eb-106">这些规则类型的示例如下：</span><span class="sxs-lookup"><span data-stu-id="fb8eb-106">Examples of these types of rules are:</span></span>
 
-- <span data-ttu-id="a010f-107">使用的条件**是**大型组的成员。</span><span class="sxs-lookup"><span data-stu-id="a010f-107">Conditions that use **Is member of** for large groups.</span></span>
+- <span data-ttu-id="fb8eb-107">使用的条件**是**大型组的成员。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-107">Conditions that use **Is member of** for large groups.</span></span>
 
-- <span data-ttu-id="a010f-108">使用复杂正则表达式（regex）模式匹配的条件。</span><span class="sxs-lookup"><span data-stu-id="a010f-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
+- <span data-ttu-id="fb8eb-108">使用复杂正则表达式（regex）模式匹配的条件。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
 
-- <span data-ttu-id="a010f-109">使用附件中的内容检查的条件。</span><span class="sxs-lookup"><span data-stu-id="a010f-109">Conditions that use content checking in attachments.</span></span>
+- <span data-ttu-id="fb8eb-109">使用附件中的内容检查的条件。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-109">Conditions that use content checking in attachments.</span></span>
 
-<span data-ttu-id="a010f-110">这些洞察力将帮助您识别和微调邮件流规则，以帮助减少邮件流延迟。</span><span class="sxs-lookup"><span data-stu-id="a010f-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
+<span data-ttu-id="fb8eb-110">这些洞察力将帮助您识别和微调邮件流规则，以帮助减少邮件流延迟。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
 
 ![安全 & 合规中心中的邮件流仪表板中的邮件流规则速度较慢](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-<span data-ttu-id="a010f-112">单击 "**查看详细信息**" 时，将显示一个弹出窗格，可在其中查看规则。</span><span class="sxs-lookup"><span data-stu-id="a010f-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="a010f-113">在浮出控件窗格中，也可以单击 "**查看示例消息**" 来查看规则所影响的邮件类型。</span><span class="sxs-lookup"><span data-stu-id="a010f-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
+<span data-ttu-id="fb8eb-112">单击 "**查看详细信息**" 时，将显示一个弹出窗格，可在其中查看规则。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="fb8eb-113">在浮出控件窗格中，也可以单击 "**查看示例消息**" 来查看规则所影响的邮件类型。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
 
 ![在邮件流仪表板中单击慢速邮件流规则中的 "查看详细信息" 后的浮出控件窗格](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a><span data-ttu-id="a010f-115">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a010f-115">See also</span></span>
+## <a name="related-topics"></a><span data-ttu-id="fb8eb-115">相关主题</span><span class="sxs-lookup"><span data-stu-id="fb8eb-115">Related topics</span></span>
 
-<span data-ttu-id="a010f-116">有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="a010f-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="fb8eb-116">有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="fb8eb-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
