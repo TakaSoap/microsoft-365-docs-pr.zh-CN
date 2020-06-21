@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: dd490fa2dd85189931e9917ba5c3ba60a2742b46
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
+  ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44400060"
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "44780213"
 landingContent:
 - title: 管理电子邮件
   linkLists:
@@ -36,21 +36,13 @@ landingContent:
       url: configure-email-forwarding.md
     - text: 使用安全组
       url: create-edit-or-delete-a-security-group.md
-- title: 管理日历
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 在 outlook 中管理日历和联系人
-      url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
-  - linkListType: video
-    links:
-    - text: 创建共享日历
-      url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+    - text: 将电子邮件和联系人迁移到 Microsoft 365
+      url: ../setup/migrate-email-and-contacts-admin.md
 - title: 管理共享邮箱
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 设置共享邮箱
+    - text: 配置共享邮箱设置
       url: configure-a-shared-mailbox.md
     - text: 将用户邮箱转换为共享邮箱
       url: convert-user-mailbox-to-shared-mailbox.md
@@ -58,6 +50,16 @@ landingContent:
       url: remove-license-from-shared-mailbox.md
     - text: 解决共享邮箱问题
       url: resolve-issues-with-shared-mailboxes.md
+- title: 管理日历
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 在 outlook 中管理日历和联系人
+      url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
+  - linkListType: video
+    links:
+    - text: 创建共享日历
+      url: https://support.microsoft.com/office/8385667b-d758-4489-a53f-f542dd01e6ff
 - title: 解决电子邮件连接和送达问题
   linkLists:
   - linkListType: how-to-guide
@@ -69,4 +71,4 @@ landingContent:
     - text: 在用户邮箱中恢复已删除的电子邮件
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: 修复 Microsoft 365 和 Exchange Online 中的 Outlook 连接问题
-      url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f
+      url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

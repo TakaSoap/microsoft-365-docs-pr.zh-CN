@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何为 Office 365 ATP 安全链接策略中的用户组设置用户的自定义已阻止 Url 和不重写的 Url 列表。
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617238"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702532"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义不重写 Url 列表
 
@@ -73,13 +73,15 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 - 您在 "不重写" 列表中指定的任何 Url 将从 ATP 安全链接扫描中排除，用于您指定的收件人。
 
+- 请考虑将常用的内部 Url 添加到 "不重写" 列表中，以改善用户体验。 例如，如果您有本地服务（如 Skype for Business 或 Sharepoint），则可以将其 Url 添加到列表中，以将其排除在扫描之外。
+
 - 如果您在 "不重写" 列表中已经有 Url 列表，请务必查看该列表并根据需要添加通配符。 例如，如果您的现有列表中有类似的条目， `https://contoso.com/a` 并且您希望 `https://contoso.com/a/b` 在策略中包含类似的子路径，请将通配符添加到您的条目，使其看起来像这样 `https://contoso.com/a/*` 。
 
-- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符星号（ \* ）。 通配符（ \* ）用于显式包含前缀或子域。 该条目与 `contoso.com` 相同 `*.contoso.com/*` ，因为 `*.contoso.com/*` 允许人们访问指定域中的子域和路径。
+- 当您为 ATP 安全链接策略指定 "不重写" 列表时，可以包含最大为三个通配符（ \* ）。 通配符显式包含前缀或子域。 例如，输入项与 `contoso.com` 不同 `*.contoso.com/*` ，因为 `*.contoso.com/*` 允许用户访问指定域中的子域和路径。
 
 下表列出了可以输入的内容的示例以及这些项有何影响。
 
-|**示例条目**|**功能**|
+|示例条目|功能|
 |:-----|:-----|
 |`contoso.com`|允许收件人访问的网站（如 `https://contoso.com` 不是子域或路径）。|
 |`*.contoso.com/*`|允许收件人访问域、子域和路径，例如 `https://www.contoso.com` 、、 `https://www.contoso.com` `https://maps.contoso.com` 或 `https://www.contoso.com/a` 。 <br/><br/> 此条目的本质上优于 `*contoso.com*` ，因为它不包含潜在的欺诈网站，如 `https://www.falsecontoso.com` 或`https://www.false.contoso.completelyfalse.com`|

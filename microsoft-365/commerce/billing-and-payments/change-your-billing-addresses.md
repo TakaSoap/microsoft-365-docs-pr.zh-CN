@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何为 Microsoft 365 for business 更新帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401794"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817025"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -47,9 +47,9 @@ ms.locfileid: "44401794"
 
 - **帐单寄往地址** 帐单部门地址，通常与" **售达**"地址相同。
 
-- **服务使用地址** 正在使用服务的地址，通常与" **售达**"地址相同。如果组织具有远程用户或多个办公室，请使用你的大多数用户所在的地址。
+- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
 
-大多数情况下，这些地址都相同。如果需要，可更改其中一个或多个地址。也可提供备用电子邮件地址以接收帐单通知或更改其他管理员的备用电子邮件地址。
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ ms.locfileid: "44401794"
 
 默认情况下，你的组织的帐单通知将被发送到 Microsoft 电子邮件地址和组织中每个全局和帐单管理员的备用电子邮件地址。 每个管理员可以通过更新其个人资料信息来更改其备选电子邮件地址。
   
-1. 以全局管理员身份，使用你的工作或学校帐户登录 Microsoft 365。[了解如何登录](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 以全局管理员身份，使用你的工作或学校帐户登录 Microsoft 365。[了解如何登录](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 选择 "**用户" 图标**，然后选择 **"我的帐户**"。
   

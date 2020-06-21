@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解未送达报告。
-ms.openlocfilehash: 2ea15237900abd3d73634a9aa744b59ef7bce5ee
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42082667"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819505"
 ---
 # <a name="non-delivery-report"></a>未送达报告
 
@@ -32,6 +34,6 @@ ms.locfileid: "42082667"
 
 ![在未送达报告的详细信息表中选择一行](../../media/non-delivery-report-details-table-select-row.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
