@@ -230,7 +230,7 @@
               href: mtp/feedback.md
             - name: 通过 ServiceNow 管理票证
               href: ./mtp/tickets.md
-    - name: Microsoft 365 安全中心
+    - name: Office 365 高级威胁防护
       items:
         - name: 入门
           items:
