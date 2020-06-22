@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254315"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773859"
 ---
 # <a name="european-union-model-clauses"></a>欧盟模式条款
 
@@ -86,7 +86,7 @@ Microsoft 会持续评估欧盟标准，并根据需要更新其服务。
 - [欧盟数据保护指令](https://aka.ms/EU-DPD)
 - [欧洲数据保护委员会](https://edpb.europa.eu/)
 - [Dynamics 365 和 Office 365 欧盟模式条款常见问题解答](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft 和欧盟-美国隐私盾](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft 和欧盟-美国隐私盾](offering-eu-us-privacy-shield.md)
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

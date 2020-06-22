@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432083"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780621"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -38,7 +38,7 @@ ms.locfileid: "44432083"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="change-a-users-email-address"></a>更改用户的电子邮件地址
 
@@ -93,7 +93,7 @@ ms.locfileid: "44432083"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -103,7 +103,7 @@ ms.locfileid: "44432083"
  
   - 此更改可能需要一些时间才会生效。
   
-  - 新的用户名。登录 Office 365 时需要此用户名。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
 
@@ -121,7 +121,7 @@ ms.locfileid: "44432083"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -131,7 +131,7 @@ ms.locfileid: "44432083"
  
   - 此更改可能需要一些时间才会生效。
   
-  - 新的用户名。登录 Office 365 时需要此用户名。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
 
@@ -149,7 +149,7 @@ ms.locfileid: "44432083"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **重要提示**：如果从 GoDaddy 或提供管理控制台的另一合作伙伴服务购买 Office 365，则不会看到“设置为主要”选项。请改为登录到 GoDaddy/合作伙伴的管理控制台，设置主要别名。 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -159,7 +159,7 @@ ms.locfileid: "44432083"
  
   - 此更改可能需要一些时间才会生效。
   
-  - 新的用户名。登录 Office 365 时需要此用户名。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
 
@@ -181,7 +181,7 @@ ms.locfileid: "44432083"
 
     如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
 
-此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ ms.locfileid: "44432083"
 
     如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
 
-此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ ms.locfileid: "44432083"
 
     如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
 
-此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -217,7 +217,7 @@ ms.locfileid: "44432083"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-如果收到错误消息：“**找不到与参数名称 "EmailAddresses" 匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
 
@@ -226,15 +226,15 @@ ms.locfileid: "44432083"
 
 ## <a name="what-to-do-with-old-email-addresses"></a>对旧电子邮件地址的处理
 
-用户先前的主要电子邮件地址将作为其他电子邮件地址保留。**强烈建议不要删除旧电子邮件地址。**
+A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-某些联系人可能会继续向旧的电子邮件地址发送电子邮件，删除此地址可能导致 NDR 故障。Microsoft 会自动将邮件路由到新地址。此外，不要重复使用旧的 SMTP 电子邮件地址和将其应用到新帐户。这也会导致 NDR 故障或传递到计划外的邮箱。
+Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>用户的脱机通讯簿未与全局地址列表同步怎么办？
 
-如果用户使用 Exchange Online，或其帐户与组织的本地 Exchange 环境链接，则在你尝试更改用户名和电子邮件地址时可能会看到以下错误："此用户已与你的本地 Active Directory 同步。某些详细信息仅可通过本地 Active Directory 进行编辑。"
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-这是由 Microsoft 联机电子邮件路由地址 (MOERA) 引起的。MOERA 通过 Active Directory 中的用户  _userPrincipalName_ 属性进行构造，其在初始同步期间自动分配到云帐户，且创建后不可在 Office 365 中修改或删除。随后，可在 Active Directory 中更改用户名，但这不会更改 MOERA，并且可能在全局地址列表中显示新更改的名称方面遇到问题。 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 若要修复此问题，请使用 Microsoft 365 管理员凭据登录到[用于 PowerShell 的 Azure Active Directory 模块]( https://go.microsoft.com/fwlink/?LinkId=823193)， 然后使用以下语法： 
   

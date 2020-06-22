@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: 9e86aed070023963635319cdd9fdb6a8ccca4c23
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a3a03c408d480b5d4678fde25c8830e063b1310
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399964"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780177"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -155,7 +155,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 添加自定义域（如 fourthcoffee.com）至 Office 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Office 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Office 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
-> 如果只希望下载和使用 Microsoft 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) 即可。 
+> 如果只希望下载和使用 Microsoft 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
 您可以在 Office 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
@@ -174,7 +174,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 添加自定义域（如 fourthcoffee.com）至 Office 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Office 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Office 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
-> 如果只希望下载和使用 Office 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) 即可。 
+> 如果只希望下载和使用 Office 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
 您可以在 Office 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   

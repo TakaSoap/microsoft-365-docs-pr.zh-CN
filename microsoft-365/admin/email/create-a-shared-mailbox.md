@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432285"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780261"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -138,15 +138,15 @@ It's easy to create shared mailboxes so a group of people can monitor and send e
 
 要详细了解 Outlook 中的共享邮箱，请参阅：
 
-- <a href="https://support.office.com/article/d94a8e9e-21f1-4240-808b-de9c9c088afd.aspx" target="_blank">在 Outlook 中打开和使用共享邮箱</a>
+- <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">在 Outlook 中打开和使用共享邮箱</a>
 
-- <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">将共享邮箱添加到 Outlook 网页版</a>
+- <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">将共享邮箱添加到 Outlook 网页版</a>
 
-- <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">将共享邮箱添加到 Outlook Mobile</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">将共享邮箱添加到 Outlook Mobile</a>
 
-- <a href="https://support.office.com/article/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2.aspx" target="_blank">在 Outlook for Mac 中打开共享文件夹或邮箱</a>
+- <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">在 Outlook for Mac 中打开共享文件夹或邮箱</a>
 
-- <a href="https://support.office.com/article/b0963400-2a51-4c64-afc7-b816d737d164.aspx" target="_blank">向共享邮箱添加规则</a>
+- <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">向共享邮箱添加规则</a>
 
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>在移动设备（手机或平板电脑）上使用共享邮箱
@@ -154,11 +154,11 @@ It's easy to create shared mailboxes so a group of people can monitor and send e
 可采用下列两种方式在移动设备上访问共享邮箱：
 - 在 <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook for iOS 应用</a>或 <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook for Android 移动应用</a>中添加共享邮箱。 
     
-    有关说明，请参阅<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">在 Outlook Mobile 中添加共享邮箱</a>。
+    有关说明，请参阅<a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">在 Outlook Mobile 中添加共享邮箱</a>。
 
 - 打开浏览器、登录，然后转到 Outlook 网页版。 可从 Outlook 网页版访问共享邮箱。
 
-    有关说明，请参阅<a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">在 Outlook 网页版中添加共享邮箱</a>。
+    有关说明，请参阅<a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">在 Outlook 网页版中添加共享邮箱</a>。
 
 ## <a name="use-the-shared-calendar"></a>使用共享日历
 

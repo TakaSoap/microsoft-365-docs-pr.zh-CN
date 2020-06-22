@@ -18,20 +18,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 了解独立的 SharePoint Online 团队网站，包括其用途、要求和功能。
-ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0646ffc37256702844b550fd1beb841944b2d509
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209039"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819529"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>单独的 SharePoint Online 团队网站
 
  **摘要：** 了解有关单独的 SharePoint Online 团队网站的用法。
   
-SharePoint Online 团队网站是在 Microsoft Office 365 中为笔记、文档、文章、日历和其他资源协作快速创建专属空间的一种简单方法。SharePoint Online 团队网站基于 Microsoft 365 组，它具有一个简化的管理模型，允许与一组私有组成员或整个组织展开开放式协作。默认 SharePoint Online 团队网站允许 Microsoft 365 组的成员邀请其他用户并控制权限设置。
+SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
   
-但是，在某些情况下，你想要创建用于协作的 SharePoint Online 团队网站，其权限通过组成员身份和仅由 SharePoint 管理员负责管理的 SharePoint Online 权限级别进行紧密控制。我们称之为单独网站，它独立于正在协作、查看其内容或管理网站的用户组。对于以下情况，你可能需要一个单独的网站：
+However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
   
 - 组织内的一个机密项目。
     
@@ -47,9 +47,9 @@ SharePoint Online 团队网站是在 Microsoft Office 365 中为笔记、文档�
     
 - 网站成员不能邀请其他成员到团队网站。
     
-- 不是单独网站成员的用户不能请求对该网站的访问。当他们尝试访问与该网站相关联的任何 URL 时，将会收到拒绝访问网页的消息。
+- Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.
     
-通过 SharePoint Online 管理员要求进行集中式访问控制和自定义权限的折衷方案是，随着时间的推移，该网站仍然保持独立。例如，当前成员不能以有意或无意的方式在 Microsoft 365 订阅中邀请不是该网站成员的其他用户或为其配置自定义权限。
+The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.
   
 单独网站可以与其他功能结合使用，例如：
   
@@ -63,7 +63,7 @@ SharePoint Online 团队网站是在 Microsoft Office 365 中为笔记、文档�
   
 当准备好在生产中部署单独的 SharePoint Online 团队网站后，请参阅[设计单独的 SharePoint Online 团队网站](design-an-isolated-sharepoint-online-team-site.md)中的分步设计注意事项。
   
-## <a name="see-also"></a>另请参阅
+## <a name="related-topics"></a>相关主题
 
 [设计单独的 SharePoint Online 团队网站](design-an-isolated-sharepoint-online-team-site.md)
   
