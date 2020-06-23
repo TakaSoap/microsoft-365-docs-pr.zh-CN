@@ -92,6 +92,8 @@
           items:
             - name: Microsoft Project 和 Microsoft Visio
               href: get-started/project-visio.md
+            - name: 新版 Microsoft Edge 应用
+              href: get-started/edge-browser-app.md
     - name: 使用 Microsoft 托管桌面
       href: working-with-managed-desktop/index.md
       items:
