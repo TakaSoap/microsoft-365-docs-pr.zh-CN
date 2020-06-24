@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全文档。
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811058"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835343"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -28,9 +28,9 @@ ms.locfileid: "44811058"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 此功能仅适用于使用 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证的用户。
+- 安全文档现在通常对使用 Office 版本2004（12730）或更高版本的用户可用！ 此功能在默认情况下处于禁用状态，将需要由安全管理员启用。
 
-- 安全文档当前可供公共预览使用，在当前频道（预览）上的[Office 预览体验计划](https://insider.office.com/join)中的用户可使用 office 版本2002（12527.20092）或更高版本。 此功能在默认情况下处于禁用状态，将需要由安全管理员启用。
+- 此功能仅适用于使用*microsoft 365 e5*或*Microsoft 365 e5 安全*许可证（不包括在 Office 365 ATP 计划中）的用户。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "44811058"
 
 为了使你受到保护，安全文档会将文件发送到[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)云进行分析。
 
-- 可在[此处](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)找到关于 Microsoft Defender 高级线程保护处理数据的方式的详细信息
+- 有关 Microsoft Defender 高级威胁防护如何处理你的数据的详细信息，请参阅[此处](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 - 除了上述准则之外，通过安全文档发送的文件不会在进行分析所需的时间（通常少于24小时）的情况下保留在 Defender 中。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全 & 合规中心配置安全文档
@@ -51,7 +51,7 @@ ms.locfileid: "44811058"
 
 3. 在 "**信任文件以在 Office 应用程序中打开外部受保护的视图**" 部分中，在 "帮助用户保持安全" 中，配置以下任一设置：
 
-   - **打开 Office 客户端的安全文档（文件也将发送到 Microsoft 云进行深入分析）**
+   - **打开 Office 客户端的安全文档**
 
    - **允许用户在受保护的视图中单击，即使安全文档将文件标识为恶意文件**也是如此：我们建议您不要启用此选项。
 
@@ -64,7 +64,7 @@ ms.locfileid: "44811058"
 使用以下语法：
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - _EnableSafeDocs_参数为整个组织启用或禁用安全文档。

@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,20 +16,37 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 配置安全和服务基础结构，以保护您的信息并遵守数据隐私法规。
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695100"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854325"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为 Microsoft 365 中的数据隐私法规部署信息保护
 
-此解决方案提供了有关如何在 Microsoft 365 服务中规划和保护存储在 Microsoft 服务中的个人数据的指南，并可能会遵守数据隐私法规（如欧盟的常规数据保护法规（GDPR））。 此解决方案重点介绍了适用的 Microsoft 信息保护和合规性功能、Microsoft 合规性分数和评估工具，可帮助您了解数据。 
- 
-此外，还提供了有关您的数据隐私需求的 Microsoft 标识、设备和威胁防护控制以及数据事件发现和响应工具的其他信息。 
+您的组织可能受区域数据隐私法规的约束，这些法规要求您保护、管理和提供对存储在 IT 基础结构中的个人信息（包括内部部署和云中的个人信息）的权限和控制。 数据隐私法规的最佳示例是欧盟的一般数据保护法规（GDPR）。 如果不遵守数据隐私法规，可能会导致巨额罚款。
 
-## <a name="organization-of-this-guidance-material"></a>本指南资料的组织结构
+Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive 中的文件。 此解决方案提供了有关如何识别、查找、保护、管理和响应 Microsoft 365 服务中存储的个人数据的数据隐私事件的指南，这些数据受数据隐私法规约束。
+
+![为数据隐私法规部署信息保护](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+此外，还提供了针对你的数据隐私需求使用 Microsoft 365 标识、设备和威胁防护控制的其他信息。 
+
+若要符合保护信息以实现与数据隐私法规遵从性的标准，请使用以下 Microsoft 365 功能和功能。
+
+| 功能或特性 | 说明 | 许可 |
+|:-------|:-----|:-------|
+| 合规性管理器 | 使用 Microsoft 服务信任门户中的基于工作流的风险评估工具管理与 Microsoft 云服务相关的法规遵从性活动。 | Microsoft 365 E3 和 E5 |
+| 合规性分数（预览版） | 请参阅当前合规性配置的整体得分以及在 Microsoft 365 合规性中心改进此功能的建议。 | Microsoft 365 E3 和 E5 |
+| Office 高级威胁防护（ATP） | 保护 Microsoft 365 应用程序和数据（例如，电子邮件、Office 文档和协作工具）免遭攻击。 | Microsoft 365 E3 和 E5 | 
+| 敏感度标签 | 通过在电子邮件、文件或网站上放置具有不同保护级别的标签来分类和保护组织的数据，而不会阻碍用户的工作效率和协作能力。 | Microsoft 365 E3 和 E5 |
+| 数据丢失保护（DLP） | 检测、警告和阻止存在风险、无意或不适当的共享，例如在内部和外部共享包含个人信息的数据。 | Microsoft 365 E3 和 E5 | 
+| 数据保留标签和策略 | 实施信息管理控件，例如，在客户的个人数据存储上保留数据和要求的时间，以符合组织的策略或数据法规。 | Microsoft 365 E3 和 E5 |
+| 电子邮件加密 | 在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含管控数据，如客户的个人数据。 | Microsoft 365 E3 和 E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>本解决方案中指南的组织结构
 
 为了帮助您了解可用于识别、管理、控制和监视个人数据受一种或多种与隐私相关的法规约束的 Microsoft 365 工具，本指南分为几节。
  

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761658"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854242"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
 
@@ -47,7 +47,7 @@ ms.locfileid: "44761658"
 
 如果要启用或禁用组中的来宾访问，可以在 Microsoft 365 管理中心中执行此操作。
 
-1. 在管理中心中，转到 "**设置**" " \> **组织设置**"，然后在 "**服务**" 选项卡上选择 " **Microsoft 365 组**"。
+1. 在管理中心中，转到 "**显示所有** \> **设置**" " \> **组织设置**"，并在 "**服务**" 选项卡上选择 " **Microsoft 365 组**"。
   
 2. 在 " **Microsoft 365 组**" 页上，选择是否要让组织外部的用户访问组资源，或允许组所有者将组织外部的人员添加到组中。
 

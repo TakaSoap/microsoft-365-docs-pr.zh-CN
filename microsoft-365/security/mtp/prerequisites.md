@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773847"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844902"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威胁防护先决条件
 
@@ -43,7 +43,7 @@ ms.locfileid: "44773847"
 - Office 365 E5 或 A5
 - Microsoft Defender 高级威胁防护
 - Azure 高级威胁防护 
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - Office 365 高级威胁防护（计划 2）
 
 > [!NOTE]
@@ -60,7 +60,7 @@ ms.locfileid: "44773847"
 > 您需要在[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)为**帐单管理员**或**全局读者**角色分配，以便能够查看许可证信息。 如果遇到访问问题，请联系全局管理员。
 
 ## <a name="required-permissions"></a>所需权限
-有关所需角色的列表以及如何对数据的访问进行管控，请阅读有关[管理 Microsoft 威胁防护的访问权限](mtp-permissions.md)。
+您必须是**全局管理员**或 Azure Active Directory 中的**安全管理员**才能打开 Microsoft 威胁防护。 有关使用 Microsoft 威胁防护所需角色的列表，以及如何对数据访问进行管控的信息，请阅读[管理 Microsoft 威胁防护的访问权限](mtp-permissions.md)。
 
 ## <a name="browser-requirements"></a>浏览器要求
 使用 microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 的 web 浏览器访问 microsoft 365 安全中心中的 Microsoft 威胁防护。

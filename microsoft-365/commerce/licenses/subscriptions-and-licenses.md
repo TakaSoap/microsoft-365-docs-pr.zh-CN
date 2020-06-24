@@ -24,18 +24,20 @@ description: '了解 Microsoft 365 for business 中的订阅和许可证，并�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402398"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844676"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>了解 Microsoft 365 for business 中的订阅和许可证
 
 本文介绍了订阅和许可证之间的关系，并提供了有关[可分配许可证的人员](#find-out-who-can-assign-licenses)的详细信息，[了解在向某人分配许可证时会发生什么](#understand-what-happens-when-you-assign-a-license-to-someone)，以及[用户可以在哪些设备上安装 Office](#how-many-devices-can-people-install-office-on)。 它还包括[了解非用户邮箱的许可证的](#understand-licenses-for-non-user-mailboxes)链接，以及[有关管理许可证的文章](#articles-about-managing-licenses)。
   
 当你购买 Microsoft 365 for business 订阅时，你需要注册一组应用程序和服务，这些应用程序和服务按月或按年的频率付费。 作为订阅的一部分收到的应用程序和服务取决于所购买的产品，如 Microsoft 365 应用程序或 Microsoft 365 商业标准。 您可以查看[购买 Microsoft 365 页面](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)上的每个产品所附带的功能。 
+
+你可以在 Microsoft 365 中查看适用于中小型[企业的](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)不同许可选项
 
 购买订阅时，根据组织中的人数指定所需的许可证数。 完成购买后，为这些人员创建帐户，然后将许可证分配给每个人。 当您的组织需求发生变化时，您可以购买更多许可证以适应新人员，或在某人离开你的组织时将许可证重新分配给其他用户。 
 
@@ -44,7 +46,7 @@ ms.locfileid: "44402398"
   
 ## <a name="find-out-who-can-assign-licenses"></a>了解谁可以分配许可证
 
-不同类型的管理员可以根据其角色以不同方式处理许可证。下表列出了最常见的选项。有关管理员角色和特权的完整列表，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**管理员角色**|**分配许可证**|**删除许可证**|**购买更多许可证**|**删除帐户**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -81,7 +83,7 @@ ms.locfileid: "44402398"
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非用户邮箱的许可证
 
-不需要为资源邮箱、会议室邮箱和共享邮箱分配许可证，除非这些邮箱超过了其 50 千兆字节 (GB) 的存储配额。有关非用户邮箱的详细信息，请参阅以下文章：
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [创建共享邮箱](../../admin/email/create-a-shared-mailbox.md)
     

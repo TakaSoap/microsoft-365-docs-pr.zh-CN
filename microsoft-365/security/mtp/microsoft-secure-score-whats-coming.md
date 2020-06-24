@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545930"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844878"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
-为了使[Microsoft 安全得分](microsoft-secure-score-new.md)更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
+为了使[Microsoft 安全得分](microsoft-secure-score.md)更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。 你的分数和可能的最大分数都将发生变化。 但是，这并不意味着您的安全状况发生了变化。
 
-若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score-new.md#whats-new)
+若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>6月2020
+## <a name="june-2020"></a>2020 年 6 月
 
 ### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>删除 Microsoft Defender 高级威胁防护的提高操作
 
@@ -51,5 +51,5 @@ ms.locfileid: "44545930"
 * 阻止 Office 应用程序将代码注入其他进程
 * 阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件
 * 阻止进程创建源自 PSExec 和 WMI 命令
-* 阻止从 Windows 本地安全颁发机构子系统（lsass.exe）中盗取凭据
+* 阻止从 Windows 本地安全颁发机构子系统盗取凭据（lsass.exe）
 * 阻止来自 Office 宏的 Win32 API 调用

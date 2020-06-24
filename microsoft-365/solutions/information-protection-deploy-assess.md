@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 确定 Microsoft 365 环境中的数据隐私法规、相关方案、准备情况和敏感信息类型。
-ms.openlocfilehash: 532a6764cd1d21eb5eb0402c3451e320d306dc03
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695181"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854348"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>评估数据隐私风险并使用 Microsoft 365 标识敏感项目
 
@@ -59,7 +59,7 @@ GDPR （最著名和引用的数据隐私法规）规定了收集、存储、处
 
 | 管制 | 文章/部分 | 部分 | 适用的技术控制类别 |
 |:-------|:-----|:-------|:-------|
-| GDPR | 第5篇文章（1）（f） | 应以确保个人数据的适当安全性的方式处理个人数据，包括使用适当的技术或组织措施（"完整性" 和 "机密性"）来防止未经授权或非法处理以及防止意外丢失、破坏或损坏。  |  各种 <br> Identity <br> 设备 <br> 威胁防护 <br> 保护信息 <br> 管理信息 <br> 发现和响应 |
+| GDPR | 第5篇文章（1）（f） | 应以确保个人数据的适当安全性的方式处理个人数据，包括使用适当的技术或组织措施（"完整性" 和 "机密性"）来防止未经授权或非法处理以及防止意外丢失、破坏或损坏。  |  各种 <br> 标识 <br> 设备 <br> 威胁防护 <br> 保护信息 <br> 管理信息 <br> 发现和响应 |
 |  | 文章（32）（1）（a） | 考虑到艺术的状态、实现的成本以及处理的性质、范围、上下文和目的，以及对自然人员的权利和自然人的可能性和严重性有不同的风险，而控制器和处理器应实施适当的技术和组织措施，以确保适合风险的安全级别，其中包括 alia：（a）个人数据的假名化和加密。 | 保护信息 |
 |  | 文章（13）（2）（a） | "...在获取个人数据时，控制器应提供以下详细信息，以确保公平和透明处理：（a）存储个人数据的时间段，或者，如果不可能，则用于确定该时间段的条件。 | 管理信息 |
 |  | 文章（15）（1）（e） | 数据主体应具有从控制器确认获取的权限，以确定是否正在处理与他/她有关的个人数据，在这种情况下，对个人数据和以下信息的访问权限：（e）是否存在从控制器纠正请求的权限，或擦除个人数据或将有关数据主体或对象的个人数据处理限制为此类处理。 | 发现和响应 |
@@ -133,7 +133,7 @@ Microsoft 365 中的数据隐私暴露可能更有限，相对于你的 web 应�
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>执行日常业务功能所需的员工数据
 
-按性质组织的组织需要收集有关电子邮件标识和 HR 目的的员工的数据，具体取决于他们在员工协议中同意的内容。 只要某人为公司工作，通常就不会出现问题。 组织可能希望设置适当的机制来防止恶意参与者 exfiltrating 或泄漏员工个人数据。 
+按性质组织的组织需要收集有关电子邮件标识和 HR 目的的员工的数据，具体取决于他们在员工协议中同意的内容。 只要某人为公司工作，通常就不会出现问题。 组织可能希望设置适当的机制来防止恶意参与者 exfiltration 或泄漏员工个人数据。 
 
 如果某人离开公司，组织通常会在删除用户帐户、取消邮箱和个人驱动器以及更改员工在诸如人力资源系统等方面的状态时进行流程、过程和保留和删除计划。 在涉及诉讼的情况下，法律调查的员工或另一方可能具有获取有关组织系统中存储的个人数据的信息的有效原因。 在某些情况下，该方可能会请求删除或匿名此类数据。 
 
@@ -151,7 +151,7 @@ B2B 信息的收集也是一项挑战，因为您的组织可能需要在其各�
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>组织关于向在 B2C 方案中组织管理的联机服务提供信息的使用者的数据
 
-由于客户数据泄露的许多公共实例，大多数人都会想到数据隐私的类别。 这可以是有意的，例如向提供程序提供合同的第三方，或无意中，例如由恶意主角泄露。 消费者数据保护是欧盟和其他公司颁布这些法规的主要原因之一。 像 GDPR 和 CCPA 这样的数据隐私法规要求您规划以下内容：
+由于客户数据泄露的许多公共实例，大多数人都会想到数据隐私的类别。 这可以是有意的，例如向提供程序提供合同的第三方，或无意中，例如由恶意主角 exfiltration。 消费者数据保护是欧盟和其他公司颁布这些法规的主要原因之一。 像 GDPR 和 CCPA 这样的数据隐私法规要求您规划以下内容：
 
 - [行动计划](../compliance/gdpr-action-plan.md)和[责任就绪清单](../compliance/gdpr-arc-office365.md)
 - [数据保护影响评估](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -181,7 +181,7 @@ GDPR 评估包括以下几个部分：
 | | |
 |:-------|:-----|
 | 治理 | <ol><li>您的隐私策略是否明确声明要处理的数据信息？ </li><li>您是否定期运行隐私影响评估（Pia）？ </li><li> 您是否使用工具来管理个人信息（PI）？ </li><li> 您是否有合法的颁发机构在任何给定的人上使用 PI 数据开展业务？ 您是否跟踪数据的同意？ </li><li> 您是否跟踪、实现和管理审核控件？ 您是否监视数据泄露？ </li></ol>|
-| 删除 & 通知 | <ol><li>您是否提供了有关如何访问用户数据的显式说明？ </li><li> 您是否已记录处理自愿退出同意的流程？ </li><li>   您是否有数据的自动删除过程？ </li><li>   您是否有在与客户合作时验证标识的过程？ </li></ol>|
+| 删除和通知 | <ol><li>您是否提供了有关如何访问用户数据的显式说明？ </li><li> 您是否已记录处理自愿退出同意的流程？ </li><li> 您是否有数据的自动删除过程？ </li><li>   您是否有在与客户合作时验证标识的过程？ </li></ol>|
 | 风险缓解和信息安全 | <ol><li>您是否使用工具扫描非结构化数据？ </li><li>所有服务器是否都处于最新状态，是否使用防火墙来保护它们？ </li><li>您是否在运行服务器的定期备份？ </li><li>您是否积极监视数据泄露？ </li><li>您是否在静态和传输中对数据进行加密？ </li></ol>|
 | 策略管理 | <ol><li>如何管理您的绑定企业规则（BCRs）？ </li><li>您是否跟踪数据的同意？ </li><li> 在完全覆盖1到5、5个范围的情况下，您的合同是否涵盖数据分类和处理要求？ </li><li>您是否有并定期测试事件响应计划？ </li><li>您使用什么策略来管理访问？ </li></ol>|
 |||
@@ -190,7 +190,7 @@ GDPR 评估包括以下几个部分：
 
 此步骤涉及标识特定的敏感信息类型，这些类型受特定管理法规控制，以及在 Microsoft 365 环境中出现的问题。 
 
-在您的环境中查找包含个人的内容可能是一项艰巨的任务，以前的任务结合使用合规性搜索、电子数据展示、高级电子数据展示 DLP 和审核。 
+在您的环境中查找包含个人的内容可能是一项艰巨的任务，以前的任务结合使用合规性搜索、电子数据展示、高级电子数据展示、DLP 和审核。 
 
 使用 Microsoft 合规性管理中心中的新**数据分类**解决方案，[内容资源管理器](../compliance/data-classification-content-explorer.md)功能就变得更加简单，该功能可用于内置或自定义敏感信息类型，包括与个人数据相关的信息类型。
  
@@ -212,7 +212,7 @@ Microsoft 合规性管理中心预加载了100以上的敏感信息类型，与�
 - [自定义敏感信息类型](../compliance/custom-sensitive-info-types.md)
 - [在安全与合规中心内创建自定义敏感信息类型](../compliance/create-a-custom-sensitive-information-type.md)
 - [使用安全与合规中心 PowerShell 创建自定义敏感信息类型](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [使用基于数据的确切分类创建自定义敏感信息类型](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [使用基于精确数据匹配的分类创建自定义敏感信息类型](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>内容浏览器
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 决定向 Office 中的最终用户显示或隐藏哪些功能及其新增内容。 Office 桌面应用程序的新管理。
-ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 9f63da1870253c9023fa1e2e169bae22435807e4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717171"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844724"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>使用新增管理功能显示或隐藏新功能
 
@@ -42,13 +42,9 @@ Office 的新管理功能在 Microsoft 365 管理中心和[客户端配置服务
 管理员可以预览频道的新增功能内容，并使用 Office 的新增管理功能管理内容的发布。
 
 1. 在 Microsoft 365 管理中心的 "**设置**" 下，选择 "**组织设置**"。
-
 2. 在 "**服务**" 选项卡上，选择 " **Office 新增功能管理**"。
-
 3. 选择一个或多个功能以查看弹出面板中每个功能的功能名称、简短说明、应用程序和发布版本。
-
 4. 选择 "**从用户隐藏**" 或 "向**用户显示**"。  
-
     **默认情况下显示**的状态指示在管理员将功能的状态设置为 "**隐藏**" 或 "已**显示**" 之前，默认情况下将向用户显示功能信息。  
 
     > [!NOTE]
@@ -65,6 +61,13 @@ Office 的新管理功能在 Microsoft 365 管理中心和[客户端配置服务
 |**半年企业** <br/> |1月1日和7月1 <br/> | 在主要发布新功能之前2周<br/> |
 
 有关频道更新计划的详细信息，请参阅[Microsoft 365 应用的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
+
+## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>将 Office 的新增管理卡添加到管理中心主页
+
+1. 在 "Microsoft 365 管理" 页上，选择页面顶部的 "添加卡片"
+2. 在列表中查找**Office 应用程序中的新增功能**并选择它。
+3. 在主页上的卡片后，可以选择 "**管理** [" 以显示或隐藏 yor 组织的功能](#show-or-hide-new-features)。 
+
 
 ## <a name="related-articles"></a>相关文章
 

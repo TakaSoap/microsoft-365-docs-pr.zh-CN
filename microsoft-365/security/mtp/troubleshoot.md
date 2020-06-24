@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bbc7d5d434765b94b0b2707605be2edfbbc8e423
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41661978"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844914"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>解决 Microsoft 威胁防护服务问题
 
@@ -44,12 +44,7 @@ ms.locfileid: "41661978"
 
 有关详细信息，请参阅[Azure ATP 集成](https://docs.microsoft.com/cloud-app-security/aatp-integration)。
 
-## <a name="is-microsoft-threat-protection-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft 威胁防护是否可供美国政府社区云（GCC）或 GCC High使用？
-目前不可用。
-
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>打开服务的设置页面在什么位置？
 若要打开 Microsoft 威胁防护，请访问 Microsoft 365 安全中心中的导航窗格中的**设置**。 仅当您具有[必备权限和许可证](mtp-enable.md#check-license-eligibility-and-required-permissions)时，才会看到此导航项。
-
-## <a name="can-i-use-an-add-on-instead-of-the-required-e5-licenses"></a>我是否可以使用加载项，而不是所需的 E5 许可证？
-目前没有适用于 Microsoft 威胁防护的加载项。 [请参阅许可要求](prerequisites.md) 
+ 
 
