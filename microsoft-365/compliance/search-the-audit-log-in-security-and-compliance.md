@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
-ms.openlocfilehash: dfc4c3c72748084ae5e9ebaadfd7616e8e081460
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401186"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818982"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
-
-## <a name="introduction"></a>简介
 
 需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的[用户和管理员活动](#audited-activities)：
 
@@ -65,7 +64,7 @@ ms.locfileid: "44401186"
 
 - 使用 SharePoint Online 或 Microsoft Teams 的网站的敏感度标签的用户和管理员活动
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="requirements-to-search-the-audit-log"></a>搜索审核日志的要求
 
 在开始搜索审核日志之前，请务必阅读以下各项。
 
@@ -310,10 +309,10 @@ ms.locfileid: "44401186"
 |[用户管理活动](#user-administration-activities)|[Azure AD 组管理活动](#azure-ad-group-administration-activities)|[应用程序管理活动](#application-administration-activities)|
 |[角色管理活动](#role-administration-activities)|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|
 |[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Yammer 活动](#yammer-activities)|
-|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)
-|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|||
+|[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活动](#microsoft-teams-shifts-activities)|
+|[Yammer 活动](#yammer-activities)|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|
+|[Microsoft Stream 活动](#microsoft-stream-activities)|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|
+|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|
 ||||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
@@ -336,7 +335,7 @@ ms.locfileid: "44401186"
 |已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
 |检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的优先级比该网站应用的敏感度标签高。 例如，标有“机密”的文档上传到标有“常规”的网站上。 <br/><br/> 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不触发此事件。 例如，标有“常规”的文档上传到标有“机密”的网站上。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
-|已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的更改，而不将其保存到文档库中的文档版本。|
+|已放弃文件签出|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
 |已修改文件|FileModified|用户或系统帐户修改网站上文档的内容或属性。|
 |(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
@@ -673,38 +672,11 @@ ms.locfileid: "44401186"
 有关记录的电子数据展示活动的列表和详细说明，请参阅[搜索审核日志中的电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
-> “**活动**”下拉列表中“**电子数据展示活动**”下列出的活动结果需要最多 30 分钟即可显示在搜索结果中。 相反，电子数据展示 cmdlet 活动的相应事件需要长达 24 小时才可显示在搜索结果中。
+> “**活动**”下拉列表中“**电子数据展示活动**”和“**高级电子数据展示活动**”下列出的活动结果需要最多 30 分钟即可显示在搜索结果中。 相反，电子数据展示 cmdlet 活动的相应事件需要长达 24 小时才可显示在搜索结果中。
 
 ### <a name="advanced-ediscovery-activities"></a>高级电子数据展示活动
 
-下表列出了 IT 和法律专业人员在 Microsoft 365 高级电子数据展示中执行任务所产生的活动。 有关详细信息，请参阅 [Microsoft 365 中的高级电子数据展示解决方案概述](overview-ediscovery-20.md)。
-
-|**友好名称**|**操作**|**说明**|
-|:-----|:-----|:-----|
-|已将数据添加到另一审阅集|AddWorkingSetQueryToWorkingSet|用户已将文档从一个审阅集添加到另一审阅集。|
-|已将数据添加到审阅集|AddQueryToWorkingSet|用户已将与高级电子数据展示案例相关联的内容搜索的搜索结果添加到审阅集。|
-|已将非 Microsoft 365 数据添加到审阅集|AddNonOffice365DataToWorkingSet|用户已将非 Microsoft 365 数据添加到审阅集。|
-|已将修正的文档添加到审阅集|AddRemediatedData|用户上传了文档，这些文档具有已在审阅集中修复的索引错误。|
-|已分析审阅集中的数据|RunAlgo|用户已对审阅集中的文档运行分析。|
-|已批注审阅集中的文档|AnnotateDocument|用户已批注审阅集中的文档。 批注包含文档中的编修内容。|
-|已比较加载集|LoadComparisonJob|用户已对审阅集中的两个不同加载集进行比较。 将与案例关联的内容搜索中的数据添加到审阅集时需要使用加载集。|
-|已将编修文档转换为 PDF|BurnJob|用户已将审阅集中的所有编修文档转换为 PDF 文件。|
-|已创建审阅集|CreateWorkingSet|用户已创建审阅集。|
-|已创建审阅集搜索|CreateWorkingSetSearch|用户已创建用于在审阅集中搜索文档的搜索查询。|
-|已创建标记|CreateTag|用户已在审阅集中创建标记组。 标记组可以包含一个或多个子标记。 这些标记随后用于标记审阅集中的文档。|
-|已删除审阅集搜索|DeleteWorkingSetSearch|用户已删除审阅集中的搜索查询。|
-|已删除标记|DeleteTag|用户已删除审阅集中的标记或标记组。|
-|已下载文档|DownloadDocument|用户从审阅集下载了文档。|
-|已编辑标记|UpdateTag|用户已更改审阅集中的标记。|
-|已从审阅集导出文档|ExportJob|用户已从审阅集导出文档。|
-|已修改案例设置|UpdateCaseSettings|用户已修改案例设置。 案例设置包括控制搜索和分析行为的案例信息、访问权限和设置。|
-|已修改审阅集搜索|UpdateWorkingSetSearch|用户已编辑审阅集中的搜索查询。|
-|已预览审阅集搜索|PreviewWorkingSetSearch|用户已预览审阅集中的搜索查询结果。|
-|已修正错误文档|ErrorRemediationJob|用户修复了包含索引错误的文件。|
-|已标记文档|TagFiles|用户标记审阅集中的文档。|
-|已标记查询结果|TagJob|用户标记与审阅集中的搜索查询条件相匹配的所有文档。|
-|已查看审阅集中的文档|ViewDocument|用户已查看审阅集中的文档。|
-|||
+你还可以在审核日志中搜索高级电子数据展示中的活动。 有关这些活动的说明，请参阅[在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities)中的“高级电子数据展示活动”部分。
 
 ### <a name="power-bi-activities"></a>Power BI 活动
 
@@ -745,10 +717,10 @@ ms.locfileid: "44401186"
 |已添加连接器|ConnectorAdded|用户将连接器添加到频道。|
 |已添加成员|MemberAdded|团队所有者将成员添加到团队、频道或群组聊天中。|
 |已添加选项卡|TabAdded|用户将选项卡添加到频道。|
-|已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队频道的名称（“**频道名称**”）。 <br/><br/>* 更改团队频道的说明（“**频道说明**”）。|
-|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>* 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>* 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图**”）。<br/><br/>* 允许或禁止团队成员安排私人会议（“**私人会议安排**”）。<br/><br/>* 允许或禁止团队成员安排频道会议（“频道会议安排**”）。<br/><br/>* 启用或禁用 Teams 会议中的视频呼叫（“Skype 会议视频通话”）。<br/><br/>* 启用或禁用在 Microsoft Teams 聚会中屏幕共享（“**Skype 会议屏幕共享**”）。 <br/><br/>允许或禁止将动画图像（称为 Giphy）添加到 Teams 对话（动画图像 **）。<br/><br/>* 更改组织的内容评级设置（**内容评级**）。内容评级限制了可在对话中显示的动画图像的类型。<br/><br/>* 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>* 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（**可编辑图像**）。<br/><br/>* 允许或禁止团队成员在 Microsoft Teams 使用机器人（组织范围内的机器人 **）。<br/><br/>* 为 Microsoft Teams 启用特定的机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（**单个机器人**）。<br/><br/>* 允许或禁止团队成员添加扩展或选项卡（**扩展或选项卡**）。 <br/><br/>* 启用或禁用 Microsoft Teams 专有自动程序旁加载（“**自动程序旁加载**”）。 <br/><br/>* 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（“**频道电子邮件**”）。|
+|已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队频道的名称（“**频道名称**”）。 <br/><br/>• 更改团队频道的说明（“**频道说明**”）。|
+|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>• 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图 **”）。<br/><br/>• 允许或禁止团队成员安排私人会议（“** 私人会议安排 **”）。<br/><br/>• 允许或禁止团队成员安排频道会议（“频道会议安排**”）。 <br/><br/>• 启用或禁用 Teams 会议中的视频呼叫（“**Skype 会议视频通话”）。<br/><br/>• 为组织启用或禁用 Microsoft Teams 聚会中的屏幕共享（“** Skype 会议屏幕共享 **”）。<br/><br/>• 允许或禁止将动画图像（称为 Giphys）添加到 Teams 对话（“动画图像**”）。 <br/><br/>• 更改组织的内容评级设置（“**内容评级**”）。 内容评级限制了可在对话中显示的动画图像的类型。 <br/><br/>• 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>• 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（** 可编辑图像 **）。<br/><br/>• 允许或禁止团队成员在 Microsoft Teams 聊天和频道中使用机器人（组织范围内的机器人）。<br/><br/>• 为 Microsoft Teams 启用特定机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（** 单个机器人 **）。<br/><br/>• 允许或禁止团队成员添加扩展或选项卡（** 扩展或选项卡 **）。<br/><br/>• 启用或禁用 Microsoft Teams 专有自动程序旁加载（** 自动程序旁加载 **）。<br/><br/>• 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（** 频道电子邮件**）。|
 |已更改团队成员的角色|MemberRoleChanged|团队所有者更改团队中成员的角色。 以下值表示分配给用户的角色类型。 <br/><br/> **1** - 表示“所有者”角色。<br/>**2** - 表示“成员”角色。 <br/>**3** - 表示“来宾”角色。 <br/><br/> 成员属性还包括组织的名称和成员的电子邮件地址。|
-|已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>* 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>* 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>* 更改团队的名称（“**团队名称**”）。 <br/><br/>* 更改团队说明（团队说明**）。 <br/><br/>* 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
+|已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>• 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>• 更改团队的名称（“**团队名称**”）。 <br/><br/>• 更改团队说明（“团队说明”**）。 <br/><br/>• 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
 |已创建团队|TeamCreated|用户创建团队。|
 |已删除频道|ChannelDeleted|用户从团队中删除频道。|
 |已删除团队|TeamDeleted|团队所有者删除了团队。|
@@ -768,6 +740,12 @@ ms.locfileid: "44401186"
 ![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](../media/TeamsHealthcareAuditActivities.png)
 
 有关患者应用活动的说明，请参阅[患者应用的审核日志](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
+
+### <a name="microsoft-teams-shifts-activities"></a>Microsoft Teams 班次活动
+
+如果你的组织正在使用 Microsoft Teams 中的“班次”应用，你可以在审核日志中搜索与使用“班次”应用相关的活动。 如果你的环境配置为支持“班次”应用，则可在“**活动**”选择器列表中找到这些活动的附加活动组。
+
+有关“班次”应用活动的说明，请参阅[在 Microsoft Teams 中搜索审核日志查找事件](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities)。
 
 ### <a name="yammer-activities"></a>Yammer 活动
 
@@ -937,7 +915,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **审核记录在事件发生后的多长时间内可用？**
 
-发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[准备工作](#before-you-begin)部分中的表格，其中显示了各种服务提供事件审核记录所需的时间。
+发生事件后，大部分审核数据在 30 分钟内可用，但最长可能需要 24 小时才能在搜索结果中显示相应的审核日志条目。 请参阅本文[搜索审核日志的要求](#requirements-to-search-the-audit-log)部分中的表，其中显示了各种服务提供事件审核记录所需的时间。
 
 **审核记录将保留多长时间？**
 
@@ -953,7 +931,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **是否需要在每个要捕获审核日志的服务中单独启用审核？**
 
-在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[准备工作](#before-you-begin)部分所述）。
+在大多数服务中，在首次为组织启用审核后将默认启用审核功能（如本文[搜索审核日志的要求](#requirements-to-search-the-audit-log)部分所述）。
 
 **审核服务是否支持记录的重复数据删除？**
 

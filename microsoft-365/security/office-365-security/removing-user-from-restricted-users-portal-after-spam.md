@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 43312ee6eff9b56ac4faf8173666a1ba79b9e067
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617358"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726727"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -42,7 +42,17 @@ ms.locfileid: "44617358"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 必须是“组织管理”**** 或“安全管理员”**** 角色组的成员，才能从“受限的用户”门户中删除用户。 必须是“安全信息读取者”**** 角色组的成员，才能获得对“受限的用户”门户的只读访问权限。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
+- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+
+  - 若要从“受限的用户”门户中删除用户，你必须是以下任一角色组的成员：
+
+    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+
+  - 若要以只读方式访问“受限的用户”门户，你必须是以下任一角色组的成员：
+
+    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
 
 - 发件人超过出站电子邮件限制是帐户遭入侵的标志。 请务必先按照必需步骤操作来重新获得对帐户的控制，再从“受限的用户”门户中删除用户。 有关详细信息，请参阅[在 Office 365 中响应遭入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
