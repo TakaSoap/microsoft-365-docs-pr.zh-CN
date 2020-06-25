@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,51 +17,39 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 763c8e745eb54897c1df88ecb5a9064987ed5a13
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560456"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844866"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
-企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 对于许多组织而言，允许员工在离开办公室时无缝、安全地工作非常重要，这有助于：
+企业可能需要让员工能够从家中安全地访问组织的本地和基于云的信息、工具和资源。 对于许多组织而言，允许员工在离开办公室时工作非常重要，这有助于：
 
 - 节省办公空间。
 - 聘用并留住不愿意调动的员工。
 - 减少员工通勤，让他们有更多的时间来提高工作效率并在工作之外进行减压活动。
 
-远程工作（也称为远程办公）可以涵盖以下对象：
+Microsoft 365 提供了帮助员工远程工作的功能。
 
-- 偶尔离开办公室参加会议或客户会议的员工。
-- 一些远程工作的全职员工。
-- 没有办公室且所有员工均为远程员工的完全远程运作的组织。
+![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-远程员工必须能够随时随地访问：
 
-- 组织资源，例如由本地应用程序数据中心提供的资源。
-- Microsoft 365 订阅中基于云的服务和数据，如 Teams、Exchange Online、SharePoint 和 OneDrive。
+| | |
+|:-------|:-----|
+| 已连接 | 远程员工能够随时随地访问： <ul><li>Microsoft 365 订阅中基于云的服务和数据。 </li><li>组织资源，例如由本地应用程序数据中心提供的资源。</li></ul> |
+| 安全 | 使用 Microsoft 365 和 Windows 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。 |
+| 托管 | 可以使用安全设置、允许的应用以及需要与系统运行状况保持一致的方式，从云中管理远程员工的设备。 |
+| 协作高效 | 远程员工可采用与本地相媲美的高协作方式实现高效工作，方式如下： <ul><li>通过 Teams 进行的联机会议和聊天会话。 </li><li>基于云的文件存储的共享工作区，可通过 SharePoint 和 OneDrive 实现全球可访问性和实时协作。 </li><li>用于划分工作并完成任务的共享任务和工作流。 </li></ul> |
+|||
 
-为获得无缝登录体验，应将 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
+为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
 ![面向使用 Microsoft 365 的远程工作者的基本基础结构](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-为了支持远程工作者（例如，为了应对 COVID-19 危机），Microsoft 365 中的功能组合可使远程工作者采用高度协作的方式开展工作，例如：
-
-- 在线会议和聊天会话。
-- 基于云的文件存储的共享工作区，可实现全球可访问性和实时协作。
-- 用于划分工作并完成任务的共享任务和工作流。
-
-为实现强大的安全性，Microsoft 365 包括：
-
-- 强制实施的身份验证要求，用于检测和响应高风险的登录，以及阻止所选应用和不合规的设备。
-- 在云中加密的连接和数字资产。
-- 用于定义谁可以对文件执行哪些操作的权限。
-- 保护 Windows 10 设备的全面安全功能。
-
-若要满足针对远程工作者的这些条件，请使用以下 Microsoft 365 功能和特性。
+若要满足针对远程员工的条件，请使用以下 Microsoft 365 功能和特性。
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
@@ -85,9 +73,9 @@ ms.locfileid: "44560456"
 
 1. [借助 MFA 提升登录安全性](empower-people-to-work-remotely-secure-sign-in.md)
 2. [提供对本地应用和服务的远程访问权限](empower-people-to-work-remotely-remote-access.md)
-3. [部署设备、电脑和其他终结点的终结点管理](empower-people-to-work-remotely-manage-endpoints.md)
-4. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [创建交流平台](empower-people-to-work-remotely-communication-venues.md)
+3. [部署安全与合规服务](empower-people-to-work-remotely-security-compliance.md)
+4. [部署设备、电脑和其他终结点的终结点管理](empower-people-to-work-remotely-manage-endpoints.md)
+5. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [培训远程工作者和处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![使用 Microsoft 365 为远程工作者提供帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
