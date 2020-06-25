@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 步骤 2. 提供远程访问
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 步骤 3. 部署终结点管理
+        - name: 步骤 3. 部署安全与合规
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: 步骤 4. 部署终结点管理
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 步骤 4. 部署生产力应用和服务
+        - name: 步骤 5. 部署生产力应用和服务
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步骤 5. 创建交流平台
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: 步骤 6. 培训远程员工
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 与 Microsoft 365 建立安全协作
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: 适用于最高机密项目的独立团队
           href: contoso-team-for-top-secret-project.md
+        - name: Teams 语音迁移
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 测试实验室指南
       items:
         - name: 用于解决方案和方案的测试实验室指南

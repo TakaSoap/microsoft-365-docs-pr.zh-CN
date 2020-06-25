@@ -1,6 +1,6 @@
 ---
 title: 符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
-description: 本指南将帮助你了解如何查找个人数据并对其进行操作，并对 Dynamics 365 客户提出的 DSR 和 CCPA 请求作出响应。
+description: 了解如何查找个人数据并对其进行操作，并对 Dynamics 365 客户提出的 DSR 和 CCPA 请求作出响应。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
@@ -18,16 +18,16 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: 04ecbd6e52a56ea83f3b2e2eaebd02de20cfbe52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579187"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817661"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
-根据欧盟[一般数据保护条例 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm)，用户（在条例中称为“*数据主体*”）有权管理由雇主或其他类型机构或组织（称为“*数据控制者*”或简称为“*控制者*”）收集的个人数据。在 GDPR 中，个人数据的定义很广泛，包括与身份已识别或可识别的自然人相关的任何数据。根据 GDPR，数据主体有权对自己的个人数据执行以下操作：获取个人数据副本、请求更改个人数据、限制个人数据处理、删除个人数据或接收电子格式的个人数据（以便于转移给其他控制者）。数据主体为了对自己的个人数据执行操作而向控制者发出的正式请求，在本文档中称为“*数据主体权利请求*”或“DSR 请求”。
+The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called in this document a *Data Subject Rights Request* or DSR request.
 
 同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。  CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
@@ -64,15 +64,15 @@ ms.locfileid: "44579187"
 当数据主体行使其权利并提出请求时，请考虑以下几点：
 
 - 通过使用数据主体在请求中提供给你的信息，正确识别人员和角色 — 例如员工、客户、供应商。 此信息可能是姓名、员工 ID 或客户编码或其他标识符。
-- 记录请求的日期和时间（必须在 30 天内完成请求）。
-- 确认请求符合组织有关接受或拒绝数据主体请求的要求。例如，必须确保执行请求与你的其他法律、财务或法规义务不冲突，也不侵犯他人的权利和自由。
+- Record the data and time of the request. (You have 30 days to complete the request.)
+- Affirm that the request meets your organization's requirements for honoring or declining a data subject's request. For example, you must make sure that executing the request doesn't conflict with any other legal, financial, or regulatory obligations that you have, or infringe on the rights and freedoms of others.
 - 确认你有与该请求相关的信息。
 
 ## <a name="part-1-responding-to-data-subject-rights-requests-for-personal-data-included-in-customer-data"></a>第 1 部分：响应针对客户数据中包含的个人数据的数据主体权限请求
 
-在下面的文章中，你将找到可帮助你准备和响应对 Dynamics 365 中处理的客户数据中所包括的个人数据的 DSR 请求。请务必注意，个人数据可能存在于 Microsoft 在联机服务订阅的服务过程中处理的其他数据类别，例如 Microsoft 隐私声明中定义的管理员数据或支持数据。本文档仅限于在发现和管理影响你提供给 Dynamics 365 的客户数据中存在的个人数据的 DSR 请求。
+In the articles below, you'll find information to help you prepare for and respond to DSR requests for personal data included in customer data processed in Dynamics 365. It is important to note that personal data could be present in other categories of data processed by Microsoft during the course of the service of an online services subscription, such as administrator data or support data defined in the Microsoft Privacy Statement. This document is limited to assist you in the process of discovery and management of DSR requests affecting personal data present in the customer data that you have provided to Dynamics 365.
 
-Dynamics 365 是一个提供多项数据处理功能的联机服务，采用软件即服务 (SaaS) 形式。因此，Dynamics 365 提供了一组广泛的功能来处理各种数据，这些按性质、用途或其他特定属性（如销售数据、交易、财报、HR 信息等）而不同。鉴于这种多样性，Dynamics 365 提供了多个表单、字段、架构、端点和客户数据处理逻辑，这也反映在每个应用程序中处理 DSR 请求的多种方式上。当 Dynamics 365 应用程序提供多种方式来处理特定 DSR 请求时，我们将通过指向每个应用程序所提供的技术说明，在本指南中指出这些方式。
+Dynamics 365 is an online service that offers multiple data processing capabilities as a software-as-a-service (SaaS). As such, Dynamics 365 offers a broad array of functionality intended to process a diverse collection of data, which could vary by nature, purpose or other specific attributes, such as sales data, transactions, financials, HR information, etc. In light of this diversity, Dynamics 365 offers multiple forms, fields, schemas, end points, and logic to process customer data, which is also reflected in the multiple ways in which DSR requests could be addressed in each application. When Dynamics 365 applications offer several ways to address specific DSR requests, we will note those in this guide by pointing to the technical descriptions offered by each application.
 
 ### <a name="dynamics-365"></a>Dynamics 365
 
@@ -80,9 +80,9 @@ Dynamics 365 是一个提供多项数据处理功能的联机服务，采用软�
 
 响应数据主体权利请求的第一步是搜索并标识作为请求主体的客户数据。
 
-对客户数据进行适当分类是处理 Dynamics 365 Customer Engagement 商业版应用程序中的个人数据的基础。Dynamics 365 for Customer Engagement 可以围绕数据分类灵活构建应用程序扩展。适当的分类可帮助你将信息识别为个人数据，从而能够在响应数据主体的请求时找到并进行检索。这还可帮助遵守有关收集和管理个人数据的法律和法规要求。
+Classifying customer data appropriately is the cornerstone of working with personal data in Dynamics 365 Customer Engagement business applications. Dynamics 365 for Customer Engagement offers flexibility to build out an application extension around data classification. Proper classification enables you to identify information as personal data, thereby making it possible to locate and retrieve it when responding to requests from a data subject. It can also help enable compliance with legislative and regulatory requirements for collecting and managing personal data.
 
-Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，从而访问客户数据。但是，你需要负责确保找到个人数据并适当分类。
+Microsoft provides capabilities that assist you in responding to data subject rights requests, and thereby accessing customer data. However, it is your responsibility to ensure that personal data is located and classified appropriately.
 
 ***Dynamics 365 for Customer Engagement*** 提供了多种方法在记录中搜索个人数据：高级查找搜索、搜索记录。 所有这些功能都可以用来识别（查找）个人数据。
 
@@ -116,7 +116,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。 客户数据可以导出到静态的 Excel 文件以促进数据移植请求。 然后，使用 Excel，可以编辑要包含在移植请求中的个人数据，然后另存为常用的机器可读格式，例如 .csv 或 .xml。 可通过[公共数据服务 Web API](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/overview) 导出 Dynamics 365 for Customer Engagement 记录。
 
-此外，在 Dynamics 365 for Marketing 中，提供了一个[专用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact)，让客户能够建立扩展以检索所捕获的可能包含个人数据的客户交互的其他记录。该 API 从后端系统加载所有相关信息并将其汇总到单个可移植文档中。
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 ***Dynamics 365 Customer Service Insights*** 允许你使用数据导出功能[提供客户数据的副本](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)。
 
@@ -138,7 +138,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 此外，在 Dynamics 365 for Marketing 中，还可以：
 
 - 通过直接编辑一行或多行“更新我的数据”登录页面
-- 准备一个具有许多可编辑的联系人字段的[订阅中心](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center)页面。这可以让最终用户尽可能多地更新自己的信息。
+- Prepare a [subscription centers](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center) page that has as many editable contact fields that can be included. This enables an end user to update their own information as much as possible.
 
 ***Dynamics 365 Customer Service Insights*** 还提供了一些功能，使组织能够[纠正或更改客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)。
 
@@ -146,15 +146,15 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 ***Dynamics 365 Business Central*** 提供了两种方法来更正不准确或不完整的客户数据。
 
-若要快速地批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将列表导出为 Excel 以更正多个记录，然后在 Business Central 中从 Excel 发布修改过的数据。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
+To quickly bulk-edit multiple Business Central records, you can export lists to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to correct multiple records, and then publish the modified data from Excel in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 
 可以更改存储在任何字段中的客户数据 — 例如客户卡片中有关客户的信息 — 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>有关修改业务交易条目的简短说明
 
-交易记录（如常规、客户和纳税分类账条目）对于企业资源规划系统的完整性至关重要。作为财务或其他事务一部分的个人数据将“按原样”保存，以符合财务法律（例如税法）、防范诈骗（例如安全审计跟踪）或遵从行业认证。因此，Dynamics 365 for Finance and Operations 和 Dynamics 365 Business Central 限制修改此类记录中的数据。
+Transactional records, such as general, customer, and tax ledger entries, are essential to the integrity of an enterprise resource planning system. Personal data that is part of a financial or other transaction is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications. Therefore, Dynamics 365 for Finance and Operations and Dynamics 365 Business Central restrict modifying data in such records.
 
-如果你将个人数据存储在业务交易记录中，则更正、删除数据或限制个人数据处理以接受数据主体的请求的唯一方法是使用 Dynamics 365 Business Central[ 自定义功能](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index)。[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)因此，由你负责决定接受和实施数据主体的修改请求。
+If you store personal data in business transaction records, the only way to correct, delete, or restrict processing of personal data to honor a data subject's request is to use the Dynamics 365 Business Central [customization capabilities](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index). Th[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)e decision to honor a modification data subject request and implementation thereof is your responsibility.
 
 ### <a name="restricting-the-processing-of-customer-data"></a>限制客户数据的处理
 
@@ -177,18 +177,18 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 在 ***Dynamics 365 Business Central*** 中，当数据主体要求你删除其碰巧包括在你的客户数据中的个人数据时，有几种方法可处理此请求：
 
-- 若要快速批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将数据导出到 Excel 以删除多条记录，然后将这些更改从 Excel 发布回 Business Central。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
+- To quickly bulk-edit multiple Business Central records, you can export data to Excel using the [Business Central Excel Add-in](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in) to delete multiple records, and then publish these changes from Excel back in Business Central. For details, see [Exporting your Business Data to Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data).
 - 可以通过手动删除包含目标客户数据的数据元素来删除存储在任何字段中的客户数据。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 - 你可以直接删除客户数据，例如通过删除联系人然后运行“删除已取消交互日志条目”批处理作业来删除该联系人的交互。
 - 你可以[删除文档](https://docs.microsoft.com/dynamics365/business-central/admin-manage-documents)，包含诸如备忘录和已过帐的销售与采购发票等客户数据的文档。
 
-除了批量或单个删除零散记录之外，请注意，只有已离职的工作人员可以完全从 ***Dynamics 365 for Talent*** 中删除。[请按照这些步骤删除已离职的工作人员](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data)。
+Besides bulk or individual deletion of discrete records, please note that only terminated workers can be fully deleted from ***Dynamics 365 for Talent***. [Follow these steps to delete terminated workers](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/respond-dsr-request-talent#additional-notes-that-apply-to-requests-for-personal-data).
 
 ### <a name="exporting-customer-data"></a>导出客户数据
 
 若要响应数据移植请求，可使用全面的实体导出功能导出 ***Dynamics 365 for Customer Engagement*** 中的客户数据。 客户数据可以导出到静态的 Excel 文件以促进数据移植请求。 然后，使用 Excel，可以编辑要包含在移植请求中的个人数据，然后另存为常用的机器可读格式，例如 .csv 或 .xml。
 
-此外，在 Dynamics 365 for Marketing 中，提供了一个[专用 API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact)，让客户能够建立扩展以检索所捕获的可能包含个人数据的客户交互的其他记录。该 API 从后端系统加载所有相关信息并将其汇总到单个可移植文档中。
+Additionally, for Dynamics 365 for Marketing a [dedicated API](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/developer/retrieve-interactions-contact) is provided that allows customer to build extensions that retrieve additional records of captured customer interactions that may contain personal data. The API loads all the relevant information from the back-end system and assembles it into a single, portable document.
 
 对于 ***Dynamics 365 Customer Service Insights***，你可以通过 Azure 管理门户来[导出客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)。
 
@@ -204,26 +204,26 @@ Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提
 
 ## <a name="part-2-responding-to-dsrs-for-system-generated-logs"></a>第 2 部分：响应针对系统生成日志的 DSR
 
-Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数据”的广泛定义可能被视为个人数据的系统生成日志。根据 GDPR，系统生成日志的示例包括：
+Microsoft also provides you with the ability to access, export, and delete system-generated logs that may be deemed personal under the GDPR's broad definition of "personal data." Examples of system-generated logs that may be deemed personal under GDPR include:
 
 - 产品和服务使用情况数据，例如用户活动日志
 - 用户搜索请求和查询数据
 - 作为系统功能一部分的产品和服务所生成的数据以及用户或其他系统的交互
 
-请注意，不支持限制或纠正系统生成日志中的数据。系统生成日志中的数据构成 Microsoft 云内执行的实际操作和诊断数据，对此类数据的修改将会损坏操作的历史记录，增加诈骗及安全风险。
+Note that the ability to restrict or rectify data in system-generated logs is not supported. Data in system-generated logs constitutes factual actions conducted within the Microsoft cloud and diagnostic data, and modifications to such data would compromise the historical record of actions and increase fraud and security risks.
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>访问和导出系统生成日志
 
-管理员可以访问与特定用户使用 Dynamics 365 服务和应用程序的情况相关联的系统生成日志。若要访问和导出系统生成日志，请执行以下操作：
+Admins can access system-generated logs associated with a particular user's use of Dynamics 365 services and applications. To access and export system-generated logs:
 
 1. 转到 [Microsoft 服务信任门户](https://servicetrust.microsoft.com/)并使用 Dynamics 365 全局管理员的凭据登录。
 2. 在页面顶部的“**隐私**”下拉列表中，单击“**数据主体请求**”。
 3. 在“**数据主体请求**”页面的“**系统生成日志**”下，单击“**数据日志导出**”。
     > [!NOTE]
-    > “**数据日志导出**”随即显示。请注意，将显示由你的组织提交的导出数据请求列表。
+    > The **Data Log Export** is displayed. Note that a list of export data requests submitted by your organization is displayed.
 4. 若要为用户创建新的请求，请单击“创建导出数据请求”****。
 
-在创建新的请求后，它将列在“数据日志导出”**** 页面上，在这里你可以跟踪其状态。完成请求后，可以单击链接以访问系统生成日志，这些日志将在请求创建 30 内导出到你组织的 Azure 存储位置。数据将保存为常用的机器可读文件格式，如 JSON 和 XML。如果你还没有 Azure 帐户和 Azure 存储位置，将需要为你的组织创建 Azure 帐户和/或 Azure 存储位置，以便数据日志导出工具可以导出系统生成日志。
+After you create a new request, it will be listed on the **Data Log Export** page where you can track its status. After a request is complete, you can click a link to access the system-generated logs, which will be exported to your organization's Azure storage location within 30 days of creating the request. The data will be saved in common, machine-readable file formats such as JSON or XML. If you don't have an Azure account and Azure storage location, you'll need to create an Azure account and/or Azure storage location for your organization so that the Data Log Export tool can export the system-generated logs.
 
 Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。 检索到的数据不包括可能会危及服务安全性和稳定性的数据。
 
@@ -235,7 +235,7 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 | | |
 |:----|:---|
 | | |
-|**“Microsoft 数据日志导出”工具需要多长时间才能完成请求？**| 这取决于若干因素。在大多数情况下，一到两天内可以完成，但最多可能需要 30 天。 |
+|**“Microsoft 数据日志导出”工具需要多长时间才能完成请求？**| This can depend on several factors. In most cases it should complete in one or two days, but it can take up to 30 days. |
 |**输出内容采用什么格式？**| 输出内容是结构化的机器可读文件（如 XML、CSV 或 JSON）。 |
 |**“数据日志导出”工具会返回哪些数据？**| “数据日志导出”工具会返回 Microsoft 存储的系统生成日志。 导出的数据将跨越各种 Microsoft 服务，包括 Office 365、Azure 和 Dynamics。 |
 |***谁有权访问“数据日志导出”工具以提交对系统生成日志的访问请求？**| Dynamics 365 全局管理员将有权访问 GDPR 日志管理器实用工具。 |

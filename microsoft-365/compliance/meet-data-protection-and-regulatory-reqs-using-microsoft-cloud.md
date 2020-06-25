@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: Microsoft 服务信任门户中的合规性管理器提供用于跟踪、实现和管理控制措施的工具，以确保在衡量依据为 Microsoft 云服务（如 Office 365 和 Microsoft Azure）时，组织符合安全和数据保护行业标准（如 GDPR、ISO 27001、27018 和 HIPAA）。使用合规性管理器，负责监督组织数据保护和隐私策略的人员可管理合规性和风险评估流程。
+description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165963"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815593"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
@@ -48,16 +48,16 @@ ms.locfileid: "44165963"
 
     
 > [!IMPORTANT]
-> 作为仪表板，合规性管理器汇总了数据保护和合规性状态，以及数据保护和合规性改进建议。合规性管理器中的“客户行动”就是建议；在实现前于各自监管环境中评估这些建议的有效性，完全取决于各个组织。不得将合规性管理器中的建议解读为合规性保证。
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器？
 
-合规性管理器是基于工作流的风险评估工具，旨在帮助管理云共同责任模型中的合规性。合规性管理器提供了仪表板视图，汇总了标准、法规和评估，其中包含 Microsoft 的控制措施实现详情和测试结果，以及供组织入门的客户控制措施实现指导和跟踪。合规性管理器提供了认证评估控制措施定义、控制措施实现和测试指导、控制措施风险加权评分、基于角色的访问管理和就地控制措施行动分配工作流，以便跟踪控制措施实现、测试状态和证据管理。合规性管理器可便于客户按逻辑对评估进行分组，并将评估控制措施测试应用于完全相同或相关的控制措施，同时减少了符合不同认证的完全相同控制措施要求所需的重复工作，从而优化了合规性工作负载。
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>合规性管理器中的评估
 
-合规性管理器的核心组件称为 *“评估”*。评估是指根据认证标准或数据保护条例（如 ISO 27001:2013 和 GDPR）对 Microsoft 服务进行评估。评估有助于根据选定 Microsoft 云服务的选定行业标准认清组织的数据保护和合规性态势。评估的完成是通过实现映射到评估依据的认证标准的控制措施。 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 评估的结构依据为 Microsoft 和组织共同承担的责任，双方负责评估云中的安全性和合规性风险，并实现合规性标准、数据保护标准、法规或法律规定的数据保护安全措施。
   
@@ -65,13 +65,13 @@ ms.locfileid: "44165963"
   
 - **范围内服务** - 每项评估都适用于一组特定的 Microsoft 服务，这些服务在“范围内云服务”部分中列出。 
     
-- **Microsoft 管理的控制措施** - 对于每项云服务，Microsoft 都会在合规性流程中实现和管理一组*控制措施*，以遵守各种标准和法规。这些控制措施分为多个*控制措施系列*，这些系列与评估要遵守的相应认证或法规中的结构保持一致。对于每项 Microsoft 管理的控制措施，合规性管理器都会详细介绍 Microsoft 是如何实现控制措施的，以及独立的第三方审计如何、何时对实现进行测试和验证。 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     下面的示例展示了三项 Microsoft 管理的控制措施，均来自“Office 365 + GDPR”评估中的“**安全**”控制措施系列。 
 
     ![合规性管理器中 Microsoft 管理的控制措施的详细信息](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. 根据映射到 Microsoft 管理的控制措施的认证或法规，指定以下信息。
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **控制措施 ID** - 控制措施映射到的认证或法规中的节或条款编号。
     
@@ -81,15 +81,15 @@ ms.locfileid: "44165963"
     
   - **说明** - 映射到选定 Microsoft 管理的控制措施的标准或法规文本。
 
-  b. 控制措施的合规性分数，表示与每项 Microsoft 管理的控制措施相关联的风险级别（不合规或无法实现控制措施所带来的风险）。有关详细信息，请参阅[了解合规性分数](#understanding-the-compliance-score)。请注意，合规性分数的评分范围介于 1 和 10 之间，且有颜色标记。黄色表示低风险控制措施，橙色表示中等风险控制措施，红色表示高风险控制措施。 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. 说明以下信息：控制措施的实现状态、控制措施的测试日期、测试者和测试结果。
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. 对于每项控制措施，可单击“更多”**** 查看其他信息，包括 Microsoft 的控制措施实现详情，以及独立的第三方审计如何对控制措施进行测试和验证的详细信息。 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **客户管理的控制措施** - 这是由组织管理的一系列控制措施。组织负责在合规性流程中实现这些控制措施，以遵守给定标准或法规。客户管理的控制措施也分为多个映射到相应认证或法规的控制措施系列。客户管理的控制措施用于实现 Microsoft 建议的行动，作为合规性活动的一部分。组织可以在每项客户管理的控制措施中使用说明性指导和建议的客户行动，以管理相应控制措施的实现和评估流程。
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    在评估中，客户管理的控制措施还内置有工作流管理功能，可用于管理和跟踪组织的评估完成进度。例如，组织中的合规部主管可以将行动项分配给 IT 管理员，后者有责任且拥有必要权限，可对控制措施执行建议行动。完成工作后，IT 管理员可以先上传实现任务的证据（例如，配置或策略设置的屏幕截图），再将行动项分配回合规部主管，以方便其评估收集到的证据，测试控制措施的实现，并在合规性管理器中记录实现日期和测试结果。有关详细信息，请参阅本文中的[管理评估流程](#managing-the-assessment-process)部分。 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>权限和基于角色的访问控制
 
@@ -97,7 +97,7 @@ ms.locfileid: "44165963"
   
 请注意，“**来宾访问**”这一默认角色已不复存在。 必须为每位用户分配一个角色，使其可访问合规性管理器并在其中工作。
   
-下表列出了每种合规性管理器权限及其允许用户执行的行动。此表还指明了每种权限分配到的角色。
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**合规性管理器读者**|**合规性管理器参与者**|**合规性管理器评估员**|**合规性管理器管理员**|**门户管理员**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ ms.locfileid: "44165963"
 |**编辑数据** - 用户可编辑除“测试结果”和“测试日期”字段以外的其他所有字段。  <br/> ||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**编辑测试结果** - 用户可编辑“测试结果”和“测试日期”字段。  <br/> ||<br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**管理评估** - 用户可创建、存档和删除评估。  <br/> |||<br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**管理用户** - 用户可将组织中的其他用户添加到读者、参与者、评估员和管理员角色。只有组织中拥有全局管理员角色的用户，才能在门户管理员角色中添加或删除用户。<br/> ||||<br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>了解合规性分数
 
@@ -125,17 +125,17 @@ ms.locfileid: "44165963"
   
 ![合规性管理器 - 低严重程度的评估控制措施 - 3 分](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-合规性管理器向每项控制措施分配默认的严重程度。风险级别是根据以下条件计算得出：
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - 控件是防止事件发生（排名最高）、检测已发生的事件，还是更正事件造成的影响（排名最低）。 在严重度排名方面，向防止威胁的强制性控件分配最高分数；向检测性或纠正性控件（无论是强制性的还是自主性的）分配最低分数。
     
 - 控制措施（在实现后）是用户无法规避的必需措施（例如，用户必须重置密码，并符合密码长度和字符数要求），还是用户可规避的随意措施（例如，要求用户在计算机无人使用时锁定屏幕的业务规则）。
     
-- 控制措施与数据机密性、完整性和可用性风险的相关程度，这些风险是来自内部威胁还是来自外部威胁，威胁是恶意还是偶发。例如，与防止员工意外错误配置网络路由器设置而导致网络中断的控制措施相比，帮助防止外部攻击者破坏相应网络并访问个人身份信息的控制措施所分配到的分数更高。
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - 与法律和外部驱动因素相关的风险，如每项控制措施对应的合同、法规和公开承诺。
     
-控制措施的合规性分数值以通过/不通过为基准（控制措施要么得以实现并通过后续评估测试，要么未实现且未通过测试），被*整体*累积到总合规性分数中；不会累积部分实现对应的部分分数。仅当控制措施的“实现状态”**** 设置为“已实现”****，或“替换实现”**** 和“测试结果”**** 均设置为“通过”****，才会将控制措施分配到的分数计入总合规性分数。 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 最重要的是，合规性分数可通过在出现与控件相关的故障时指出存在较高潜在风险的控件，帮助用户确定要优先实施的控件。 除了基于风险的优先级排序外，如果评估控件与其他控件相关（在同一评估中或在同一评估组中的其他评估中），那么基于控件测试结果的同步，成功完成单一控件可显著降低相关工作量。
   
@@ -145,7 +145,7 @@ ms.locfileid: "44165963"
   
 在评估中，GDPR 控件 7.5.5 与其他 5 个控件（7.4.1、7.4.3、7.4.4、7.4.8 和 7.4.9）相关，每个控件的风险等级均达到中度或重度，分数为 6 或 8。 使用评估筛选器，选择所有这些控件，使它们显示在评估视图中，可在下方看到它们当前都没有被评估。 
   
-![合规性管理器 - 评估视图 - 筛选控制措施，未评估任何控制措施](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) 由于这 6 项控制措施相互关联，因此完成其中任何一项控制措施，都会跨此评估中的相关控制措施同步这些测试结果（就像跨同一评估分组中评估内的任何相关控制措施同步测试结果一样）。完成实现和测试 GDPR 控制措施 7.5.5 后，控制措施明细区域便会刷新显示，所有这 6 项控制措施均已获评估，已评估控制措施数会相应地增加到 57，变成已评估 51%，并且总合规性分数也会增加超过 40 分。 
+![合规性管理器 - 评估视图 - 筛选控制措施，未评估任何控制措施](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![合规性管理器 - 评估视图 - 已同步控制措施结果](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ ms.locfileid: "44165963"
 ![合规性管理器 - 评估视图 - 相关控制措施的更新确认对话框](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> 目前，只有 Office 365 云服务的评估，才有合规性分数。对于 Azure 和 Dynamics 评估，显示的是评估状态。 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>合规性分数计算方法
 
 合规性分数（如 Microsoft 安全功能分数）类似于其他基于行为的评分系统；组织可通过执行与数据保护、隐私和安全性相关的活动，增加合规性分数。
   
 > [!NOTE]
-> 合规性分数并不是组织遵守任何特定标准或法规情况的绝对度量。它表示执行控制措施的程度，这些控制措施可降低个人数据和个人隐私面临的风险。任何服务都无法保证遵守标准或法规，不得以任何方式将合规性分数解读为保证。 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-合规性管理器中的评估以云计算的共同责任模型为依据。在共同责任模型中，Microsoft 和每位客户共同承担保护云中存储的客户数据的责任。
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 如下方的 Office 365 GDPR 评估所示，Microsoft 和客户各自负责执行一些操作，以便满足所评估标准或法规要求。 为了解释并理解 各种标准和法规所需的操作，合规性管理器将所有标准和法规都视为控制框架。 如此，Microsoft 和客户为每项评估所执行的操作将涉及各种控件的实施和验证。
   
@@ -171,7 +171,7 @@ ms.locfileid: "44165963"
   
 下面是典型行动的基本工作流：
   
-1. 组织的合规部、风险部、隐私部和/或数据保护部主管将任务分配给组织中的某人，让其实现控制措施。此人可能是：
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - 业务策略所有者
     
@@ -179,7 +179,7 @@ ms.locfileid: "44165963"
     
     - 组织中另一个负责执行任务的人员
     
-2. 此人执行实现控制措施所需的任务，将控制措施实现证据上传到合规性管理器，并将与行动相关联的一项或多项控制措施标记为“已实现”。完成这些任务后，此人便会将行动分配给评估员以供验证。评估员可以是：
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - 在组织内部验证控制措施的内部评估员
     
@@ -189,13 +189,13 @@ ms.locfileid: "44165963"
     
 当与评估相关联的所有控制措施都已获评估后，便认为评估已完成。
   
-合规性管理器中的每项评估都预加载有信息，详细介绍了 Microsoft 为符合自己负责的控制措施的要求而执行的行动。此类信息详细介绍了 Microsoft 是如何实现每项控制措施的，以及第三方审计是如何、何时评估和验证 Microsoft 实现的控制措施。因此，每项评估的 Microsoft 管理的控制措施都标记为“已评估”，并且评估的合规性分数也反映了这一点。
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-每项评估都包含以共同责任模型为依据的总合规性分数。Microsoft 对 Office 365 控制措施的实现和测试仅占与“GDPR”评估相关联的可能满分的一部分。随着客户实现和测试每项客户行动，评估的合规性分数会递增控制措施分配到的分数值。 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>基于风险的评分方法
   
-合规性管理器使用基于风险的评分方法，评分范围介于 1 和 10 之间。分数高的控制措施表示，无法实现控制措施或不合规所带来的风险高。合规性分数使用的评分系统以多个关键因素为依据，如：
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - 控制措施的本质
     
@@ -211,17 +211,17 @@ ms.locfileid: "44165963"
   
  ### <a name="mandatory-or-discretionary"></a>必需或随意
   
- *必需控制措施*是无法规避的控制措施，无论是有意还是无意。常见的必需控制措施示例是，规定必须满足密码长度、复杂程度和到期要求的集中管理密码策略。用户必须遵守这些要求，才能访问系统。 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- *随意控制措施*依赖用户了解策略并采取相应行动。例如，要求用户在离开时锁定计算机的策略就是随意控制措施，因为它依赖用户。 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>预防型、检测型或纠正型
   
- *预防型控制措施*是指防范特定风险的控制措施。例如，通过加密保护静态信息是抵御攻击、泄露等行为的预防性控制措施。职责分离是管理利益冲突和防范欺诈的预防性控制措施。 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- *检测型控制措施*是指主动监视系统以发现异常条件或行为的控制措施，这些异常条件或行为代表风险，或可用于检测入侵或确定是否出现了漏洞。例如，系统访问审核和特权管理行动审核是检测型监视控制措施；合规性审核是用于发现流程问题的检测型控制措施。 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- *纠正型控制措施*是指试图将安全事件的负面影响降至最低，采取纠正措施以减少直接影响，并尽可能逆转损失的控制措施。例如，隐私事件响应是纠正型控制措施，用于在出现泄露后止损，并将系统还原到可运行状态。 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 我们根据这些因素评估每项控制措施，从而确定控制措施的本质，并向它分配与之所代表的风险相关的分数值。
   
@@ -242,7 +242,7 @@ ms.locfileid: "44165963"
     
 - 可用性是指信息可供轻松访问，并能获取优质服务。
     
-不符合其中任一特性都被视为影响整个系统。威胁可能来自内部源，也可能来自外部源；参与者的意图可能是偶发的，也可能是恶意的。威胁矩阵对这些因素进行估计，并为各种方案组合分配高、中等、低威胁级别。
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**内部**<br/>||**外部**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ ms.locfileid: "44165963"
   
 ### <a name="summary-of-scoring-methodology"></a>评分方法总结
   
-合规性分数是合规性管理器帮助组织了解并管理合规性的核心组件。评估的合规性分数以数字形式展现了公司遵守给定标准或法规的情况，分数越高（满分为评估分配到的最高分数），公司的合规性态势越好。了解合规性评分方法（即向评估控制措施分配介于 1 和 10（从低到高）之间的风险严重程度值），以及完成的控制措施评估的分数如何计入总合规性分数，对组织确定行动优先级至关重要。
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>对评估进行分组
 
 创建新的评估时，系统会提示创建用于将评估分配到其中的组，或将评估分配到现有组。 借助组，可以在具有相同或相关客户托管控件的评估之间逻辑地整理评估，并共享常见信息和工作流任务。
   
-例如，可以按年份或组织内的团队、部门或机构对评估进行分组，也可以按年份进行分组。下面的示例展示了一些组及其中可能包含的评估。
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - GDPR 评估 - 2018 年
     
@@ -315,7 +315,7 @@ ms.locfileid: "44165963"
   
 - 组名（亦称为“*组 ID”）在组织中必须是唯一的。 
     
-- 组可以包含相同认证/法规的评估，但每个组只能包含特定云服务/认证对的一个评估。例如，一个组不能包含 Office 365 和 GDPR 的两个评估。同样，一个组可以包含相同云服务的多个评估，只要每个评估对应的认证/法规不同即可。
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 将评估添加到评估分组中后，就无法更改分组。 可重命名评估组，这会更改与该组相关的所有评估的评估分组名称。 可以创建评估和新评估组，并从现有评估中复制信息，这会在另一个评估组中创建该评估的有效副本。 对评估进行存档会破坏评估与评估组之间的关系。 对其他相关评估的后续更新将不再反映在已存档的评估中。
   
@@ -346,11 +346,11 @@ ms.locfileid: "44165963"
 有一些特定的管理功能只对租户管理员帐户可用，并且只有在以全局管理员身份登录时才可见。
   
 > [!NOTE]
-> 使用下拉列表中的“对受限文档的访问权限”，管理员可以向用户授予对 Microsoft 在服务信任门户上共享的受限文档的访问权限。“受限文档”功能暂不可用，但即将推出。 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>向用户分配合规性管理器角色
 
-每个合规性管理器角色的权限略有不同。可查看分配给每个角色的权限，也可查看哪些用户拥有哪些角色，并能通过服务信任门户在相应角色中添加或删除用户，具体方法是依次选择“管理员”**** 菜单项和“设置”****。 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![STP“管理员”菜单 — 已选择“设置”](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ ms.locfileid: "44165963"
     
 5. “**选择角色**”页上会列出已添加到每个角色的用户。 
     
-6. 若要将用户添加到此角色，请单击“添加”****。在“添加用户”**** 对话框中，单击用户字段。可滚动浏览可添加用户列表，也可开始键入用户名以按搜索词筛选列表。单击用户字段即可将相应帐户添加到“添加用户”**** 列表中，使其预配有相应角色。若要同时添加多个用户，请先键入用户名以筛选列表，再单击要添加到列表的用户。单击“保存”****，以向这些用户预配选定角色。 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![合规性管理器 — 预配角色 — 添加用户](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ ms.locfileid: "44165963"
  
 ## <a name="user-privacy-settings"></a>用户隐私设置
 
-一些法规要求，组织必须能够删除用户历史记录数据。为了方便组织遵守这项要求，合规性管理器提供了“用户隐私设置”**** 功能，可便于管理员： 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [搜索用户](#search-for-a-user)
 
@@ -396,7 +396,7 @@ ms.locfileid: "44165963"
     
 2. 正确输入用户名后，单击“搜索”****。 
     
-3. 如果找不到用户帐户，页面上会显示错误消息“找不到用户”。请检查用户的电子邮件地址信息是否正确。必要时，更正电子邮件地址，并单击“搜索”**** 重试。 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. 如果找到了用户帐户，按钮文本会从“**搜索**”更改为“**清除**”，这表明返回的用户帐户是下方显示的附加功能的操作上下文，运行这些功能会应用于此用户帐户。 
     
@@ -415,11 +415,11 @@ ms.locfileid: "44165963"
 3. 打开文档即可查看报告数据。
     
 > [!NOTE]
-> 这并不是保留和显示行动项分配历史记录状态变更的历史记录报告。生成的报告是在报告运行时分配的控制措施行动项的快照（日期和时间戳已写入报告）。例如，如果为同一用户重新生成此报告，任何后续重新分配行动项都会导致生成不同的快照报告数据。 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>重新分配行动项
 
-使用此功能，组织可以删除用户帐户的任何活动或未完成的依赖项，具体方法是将所有行动项所有权（包括活动和已完成的行动项）从已返回用户帐户重新分配到下面选定的新用户。此操作不会更改已返回用户帐户的文档上传历史记录。 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  若要向其他用户重新分配行动项，请执行以下操作：
   
@@ -432,9 +432,9 @@ ms.locfileid: "44165963"
 4. 若要继续，请单击“确定”****；否则，请单击“取消”****。 
     
 > [!NOTE]
-> 所有行动项（包括活动和已完成的行动项）都会分配给新选定用户。不过，此操作并不影响文档上传历史记录；以前分配的用户上传的任何文档仍会显示日期/时间，以及以前分配的用户的用户名。 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-若要将文档上传历史记录更改为删除以前分配的用户，必须手动完成。在这种情况下，管理员必须执行以下操作：
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. 打开以前下载的“导出”报告。
   
@@ -446,17 +446,17 @@ ms.locfileid: "44165963"
   
 5. 从证据存储库中删除此文档。
   
-6. 重新上传此文档。此时，这个文档就会显示新上传日期、时间和“上传者:用户名”。 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>删除用户数据历史记录
 
-这会将分配给已返回用户的所有控制措施行动项都设置为“未分配”。此外，这还会将已返回用户上传的所有文档的“上传者”值设置为“已删除用户”。
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  若要删除用户帐户行动项和文档上传历史记录，请执行以下操作：
   
 1. 单击“删除”****。 
 
-    此时，系统会显示确认对话框，提示“这会删除选定用户的所有控制措施行动项分配和文档上传历史记录。此操作无法撤消。确定要继续吗?”
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. 若要继续，请单击“确定”****；否则，请单击“取消”****。 
   
@@ -468,7 +468,7 @@ ms.locfileid: "44165963"
 
 ## <a name="accessing-compliance-manager"></a>访问合规性管理器
 
-合规性管理器是从服务信任门户进行访问。任何拥有 Microsoft 帐户或 Azure Active Directory 组织帐户的人，都可以访问合规性管理器。
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![合规性管理器 — 从 STP 菜单访问合规性管理器](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -478,7 +478,7 @@ ms.locfileid: "44165963"
     
 3. 在服务信任门户中，单击“合规性管理器”****。 
     
-4. 阅读所显示的保密协议，再单击“同意”**** 以便继续操作。此操作只需执行一次，即可看到合规性管理器仪表板。 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     为了帮助你开始使用，我们已默认添加以下评估：
     
@@ -498,7 +498,7 @@ ms.locfileid: "44165963"
     
 2. 单击“行动项”**** 链接，此时页面刷新为显示已分配给你的行动项。 
     
-    默认情况下，所有行动项都会显示。若有多个认证对应的行动项，认证名称就会在评估控制措施之上的选项卡中列出。若要查看特定认证对应的行动项，请单击相应选项卡。
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>添加评估
 
@@ -506,7 +506,7 @@ ms.locfileid: "44165963"
   
 1. 在合规性管理器仪表板中，单击 ![“添加”图标](../media/ITPro-EAC-AddIcon.gif)“添加评估”****。 
     
-2. 在“添加评估”**** 窗口中，可新建用于添加评估的组，也可将评估添加到现有组（名为“初始组”的内置组）中。可以键入新组的名称，也可以从下拉列表中选择现有组，具体视选择的选项而定。有关详细信息，请参阅[对评估进行分组](#grouping-assessments)。
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     如果创建了组，还可以选择将现有组的信息复制到新的评估中。 这意味着，添加到正在从中进行复制的组中的评估的客户托管控件的“实施详细信息”和“测试计划”和“管理响应”字段中的任何信息都会复制到新评估中的同一（或相关）客户托管控件。 要为现有组添加新的评估，该组中评估的常见信息会复制到新的评估中。 有关详细信息，请参阅[从现有评估复制信息](#copying-information-from-existing-assessments)。
     
@@ -532,7 +532,7 @@ ms.locfileid: "44165963"
   
 可以将下面的信息从客户复制到新评估：
   
-- 评估用户。评估用户是向其分配控制措施的用户。
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - 状态、测试日期和测试结果。
     
@@ -548,7 +548,7 @@ ms.locfileid: "44165963"
   
 1. 此部分显示了评估摘要信息，包括评估分组名称、产品、评估名称和评估控制措施数
     
-2. 此部分显示了评估筛选器控件。若要详细了解如何使用评估筛选器控件，请参阅[管理评估流程](#managing-the-assessment-process)部分。 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. 此部分显示了评估的各个范围内云服务。
     
@@ -584,19 +584,19 @@ ms.locfileid: "44165963"
     
     - **测试结果** - 返回包含选定测试结果的控制措施列表。 
     
-    当你应用筛选条件时，适用的控制措施视图会发生变化，以响应筛选条件。展开控制措施系列部分可在下面显示控制措施详情。 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![合规性管理器 - 评估视图 - 筛选条款结果](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. 如果在选择相应筛选器后没有任何结果显示，表示没有符合指定筛选条件的控制措施。例如，如果先选择“已分配用户”****，再选择与分配给此用户的控制措施不对应的“控制措施”**** 名称，页面下方不会显示任何评估。 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **向用户分配行动项** - 可以向人员分配行动项，让其实现认证/法规要求，或测试、验证和记录组织的实现要求。分配行动项时，可选择向此人发送包含详细信息的电子邮件，包括建议的客户行动和行动项优先级。此外，还可以取消分配行动项，或将行动项重新分配给其他人。 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **管理文档** - 客户托管控件还提供管理与实施任务的执行、测试和验证任务的执行相关的文档的功能。 有权在合规性管理器中编辑数据的任何人都可以通过单击“**管理文档**”上传文档。 上传文档后，可以单击“**管理文档**”，查看和下载文件。 
     
 5. **提供实现和测试详情** - 每项客户管理的控制措施都有一个可编辑字段，便于用户添加实现详情，以记录组织为符合认证/法规要求，以及为验证和记录组织如何符合这些要求所采取的步骤。
     
-6. **设置状态** - 在评估流程中设置各项的状态。可取状态值包括“已实现”****、“替换实现”****、“已计划”**** 和“不在范围内”****。 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **输入测试日期和测试结果** - 具有合规性管理器评估方角色的人员可以验证是否执行了合适的测试，查看实施详细信息、测试计划、测试结果和上传的任何证据，然后设置“测试日期”和“测试结果”。 可能的测试结果值有“**通过**”、“**失败 - 低风险**”、“**失败 - 中等风险**”和“**失败 - 高风险**”。 
 
@@ -604,7 +604,7 @@ ms.locfileid: "44165963"
 
 组织中参与评估过程的人员可以使用合规性管理器检查其作为用户的所有评估中的客户托管控件。 用户登录合规性管理器并打开“**操作项目**”仪表板时，会显示分配给他们的操作项目列表。 根据分配给用户的合规性管理器角色，他们可以提供实施或测试详细信息，更新状态或分配操作项目。 
   
-由于认证控制措施通常由一个人来执行，并由另一个人进行测试，因此控制措施行动项可以最初分配给一个人以供实现，此人可在完成后将控制措施行动项重新分配给下一个人，以便测试控制措施并上传证据。这种分配/重新分配控制措施行动可由拥有足够权限的任何合规性管理器角色用户执行，这样就可以集中管理控制措施分配，或相应地从实现者到测试人员分散路由控制措施行动项。
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 若要分配行动项，请执行以下操作：
   
@@ -616,7 +616,7 @@ ms.locfileid: "44165963"
     
 4. 在“已分配用户”**** 列下，单击“分配”****。 
     
-5. 在“分配行动项”对话框中，单击“分配到”**** 字段，以填充可向其分配行动的用户列表。可滚动浏览列表来查找目标用户，也可开始在字段中键入内容来搜索用户名。 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. 单击用户，以向其分配此行动项。
     
@@ -626,7 +626,7 @@ ms.locfileid: "44165963"
  
     用户收到的通知中既包含行动项分配，也包含你提供的任何备注。
     
-与行动项相关联的备注暂留在“备注”部分中，以供下次分配行动项时使用。这些备注并不是只读文本，可由分配行动项的人员编辑、替换或删除。
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>导出评估中的信息
 
@@ -640,14 +640,14 @@ ms.locfileid: "44165963"
     
 - 若要查看评估详情页，请单击“**导出为 Excel**”按钮，此按钮位于页面右上角的评估合规性分数上方。
     
-此时，评估报告会在浏览器会话中进行下载。如果未看到弹出窗口提示，建议查看浏览器的“下载内容”文件夹。
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>存档评估
 
-如果已完成评估，且不再需要它来实现合规性目标，可以将它存档。已存档评估会从“评估”仪表板中删除。
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> 评估一旦存档，既无法“取消存档”，也无法还原到正在读写状态。请注意，由于已存档评估不会保留指向已上传证据文档的链接，因此强烈建议先导出评估，再存档评估，因为导出的评估报告包含指向证据文档的链接，以便于继续访问它们。 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 若要存档评估，请执行以下操作：
   
@@ -673,9 +673,9 @@ ms.locfileid: "44165963"
 
 ![服务信任门户 -“搜索”输入字段](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-单击页面右上角的放大镜以展开“搜索”输入字段，输入搜索词并按 Enter。此时，“搜索”控件显示，其中搜索窗格输入字段中显示搜索词，下方显示搜索结果。
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-默认情况下，“搜索”返回“文档”结果，你可以使用“筛选依据”下拉列表来精简所显示的文档列表，或从视图中添加或删除搜索结果。可同时使用多个筛选器特性，将返回的文档范围缩小到特定的云服务、合规性或安全做法类别、世界区域或行业。单击文档名称链接可下载文档。
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![服务信任门户 - 搜索文档（应用了筛选器）](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -688,7 +688,7 @@ ms.locfileid: "44165963"
  
 ## <a name="localization-support"></a>本地化支持
 
-使用服务信任门户，可查看不同语言的页面内容。若要更改页面语言，只需单击页面左下角的地球图标，再选择所需语言即可。 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![服务信任门户 - 本地化内容选项](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -697,9 +697,9 @@ ms.locfileid: "44165963"
 
 合规性管理器旨在定期更新，以与法规要求的更改以及我们云服务中的更改保持同步。 这些更新包括对客户托管控件的更改。 并提供更改日志，帮助用户了解这些更改的影响，包括已添加或更改的内容的详细信息以及有关更改对现有评估的影响的指南。 通常有两种类型的更改：
   
-- **主要**更改是指客户行动的重大更改（如添加或删除控制措施或特定编号的步骤），或更改职责、建议或证据方面的指导。对于主要更改，建议重新评估受影响控制措施的实现和/或评估。
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- **次要**更改是指客户行动的不重要更改，如更正拼写错误或格式化问题，或更新或纠正超链接。次要更改通常不要求重新评估控制措施；但建议查看更新后的客户行动。
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>客户管理的控制措施 - 2018 年 7 月更改日志
 

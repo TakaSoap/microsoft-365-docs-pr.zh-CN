@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解在 Microsoft 365 中安全的客户共享环境的可用选项。
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159475"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874890"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -40,7 +40,7 @@ ms.locfileid: "44159475"
 
 本文中所述的某些选项要求来宾在 Azure Active Directory 中具有帐户。 若要确保在与来宾共享文件和文件夹时在目录中包含这些来宾，请使用[与 Azure AD B2B 预览版的 SharePoint 和 OneDrive 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 
-请注意，我们不在本文中讨论如何启用来宾共享设置。 有关为不同方案启用来宾共享的详细信息，请参阅[与组织外部人员进行协作](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization)。
+请注意，我们不在本文中讨论如何启用来宾共享设置。 有关为不同方案启用来宾共享的详细信息，请参阅[与组织外部人员进行协作](collaborate-with-people-outside-your-organization.md)。
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>为来宾设置多重身份验证
 
