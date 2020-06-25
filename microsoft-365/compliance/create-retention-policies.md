@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 35c93ed6ee942f9553e196d3f15634e53c0bf25d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352229"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844748"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -34,7 +34,7 @@ ms.locfileid: "44352229"
 
 ## <a name="before-you-begin"></a>准备工作
 
-负责创建和管理保留策略的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员有权访问此位置，并可向合规部主管及其他人员授予访问权限，而不授予他们租户管理员的所有权限。为此，建议转到 [Microsoft 365 合规中心](https://compliance.microsoft.com/)的“**权限**”页，编辑“**合规性管理员**”管理员角色，再向该角色组添加成员。 
+负责创建和管理保留策略的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**合规性管理员**管理角色组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有在创建和应用保留策略时才需要这些权限。 配置保留策略的人员不需要访问该内容。
 
@@ -66,7 +66,7 @@ ms.locfileid: "44352229"
 
 若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请在选择保留策略的位置时，选择“**Office 365 组**”位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件**位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
 
-应用于 Microsoft 365 组的保留策略涵盖组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
+应用于 Microsoft 365 组的保留策略包含组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 
@@ -78,7 +78,7 @@ ms.locfileid: "44352229"
   
 ![用于选择 Skype 用户的页](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
   
-请注意，Outlook 中的“对话历史记录”**** 文件夹是一项与 Skype 存档无关的功能。“对话历史记录”**** 可以由最终用户禁用，但 Skype 存档是通过将 Skype 对话副本存储在用户无法访问但电子数据展示可访问的隐藏文件夹中而完成。
+Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>保留和删除内容的设置
@@ -113,7 +113,7 @@ ms.locfileid: "44352229"
   
 例如，假设创建了一个保留策略 - 该策略会在三年后删除内容，然后将该策略分配到所有 OneDrive 帐户，这些帐户中含有许多四五年前创建的内容。 在这种情况下，第一次分配保留策略后将会有许多内容被删除。 为此，请务必了解删除内容的保留策略会对内容造成重大影响。 
   
-因此，首次将保留策略分配到网站集之前，应先考虑现有内容的年限，以及保留策略可能会对此内容产生的影响。我们还建议在分配策略前向用户传达新策略，让用户有时间评估策略可能会产生的影响。请注意，在创建保留策略前检查策略设置时会看到以下警告。
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
   
 ![内容删除警告](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
@@ -135,7 +135,7 @@ ms.locfileid: "44352229"
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>识别包含敏感信息的内容
 
-此外，还可以将保留策略只应用于包含[特定类型敏感信息](what-the-sensitive-information-types-look-for.md)的内容。例如，可选择将唯一保留要求只应用于包含个人身份信息（PII，如纳税人标识号、身份证号或护照号）的内容。
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![用于选择敏感信息类型的页](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
