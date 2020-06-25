@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 了解可用于在组织中部署 Microsoft 365 企业版的不同资源。
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268324"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819324"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企业版
 
@@ -59,7 +59,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
   **如果你是较小或较新的组织**，请按照各个阶段操作，以便有条不紊地构建基础架构。
 
-  但是，你可以根据需要以任何顺序（[逐个部署或者并行部署](deployment-strategies-microsoft-365-enterprise.md)）部署所有或部分阶段，以便与当前的基础架构集成，适用于你的 IT 计划和资源并满足你的业务需求。 有关针对非企业的简化部署，请单击[此处](deploy-foundation-infrastructure-non-enterprises.md)。
+  但是，你可以根据需要以任何顺序（[逐个部署或者并行部署](deployment-strategies-microsoft-365-enterprise.md)）部署所有或部分阶段，以便与当前的基础架构集成，适用于你的 IT 计划和资源并满足你的业务需求。 有关非企业的简化部署，请转到[非企业的基本基础结构](deploy-foundation-infrastructure-non-enterprises.md)。
 
   **如果你是企业组织**，请将阶段视作 IT 基础架构的层，而不是定义的路径，并确定如何更好地工作，以最终满足组织中每个层的要求。
 
@@ -71,7 +71,7 @@ Microsoft 365 企业版部署指南可指导你完成 Microsoft 365 企业版产
 
 工作负载在底层基础架构上面运行。 但是，无需构建所有底层基础架构即可开始使用工作负载，以提高生产力和协作。
 
-从[此处](deploy-foundation-infrastructure.md)开始你的端对端部署旅程吧。
+在 [Microsoft 365 企业版底层基础结构](deploy-foundation-infrastructure.md)开启端到端部署之旅的自我入门。
 
 ## <a name="take-a-test-drive"></a>试用体验版
 

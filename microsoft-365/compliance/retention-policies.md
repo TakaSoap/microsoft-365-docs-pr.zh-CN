@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 使用保留策略主动决定是保留内容还是删除内容，或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: 了解如何使用保留策略来保留或删除内容，以及如何将单个策略应用于整个组织或特定位置或用户。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695135"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818922"
 ---
-# <a name="learn-about-retention-policies"></a>了解保留策略
+# <a name="learn-about-retention-policies"></a>了解有关保留策略的信息
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-对于大多数组织，数据量和数据复杂性每天都在增加 — 包括电子邮件、文档、即时消息等。有效管理或管理此类信息非常重要，因为要：
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **主动遵守规定至少必须在一段时间内保留内容的行业法规和内部策略**：例如，《萨班斯-奥克斯利法案》规定，必须保留特定类型的内容七年。 
     
@@ -36,7 +37,7 @@ ms.locfileid: "44695135"
     
 - **帮助组织有效共享知识并提高敏捷性**：通过确保用户仅处理与自己相关的最新内容。 
     
-保留策略可有助于实现所有这些目标。管理内容通常需要执行以下两项操作：
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **保留**内容，这样除非保留期到期，否则无法永久删除内容。 
     
@@ -50,7 +51,7 @@ ms.locfileid: "44695135"
     
 - 将策略应用于所有内容，或满足特定条件（如包含特定关键字或[特定类型的敏感信息](what-the-sensitive-information-types-look-for.md)）的内容。
     
-如果内容受保留策略约束，用户可以继续编辑和处理内容，就像什么都没改变一样。内容留在原处。但若有人编辑或删除受保留策略约束的内容，原始内容的副本就会保存到内容的安全保留位置上，直至该内容的保留策略失效。请参阅此页面上的[保留策略如何处理留在原处的内容](#how-a-retention-policy-works-with-content-in-place)部分
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 最后，某些组织可能需要遵从特定规则，如美国证券交易委员会 (SEC) 规则 17a-4。 这要求在某个保留策略启用后，不得关闭该策略或减少限制。 为满足这一要求，你可以使用**保留锁定**。 锁定某个保留策略后，包括管理员在内的任何人都无法关闭该策略或减少其限制。 有关详细信息，请参阅此页面上的[使用保留锁定遵从合规性要求](#use-preservation-lock-to-comply-with-regulatory-requirements)部分。
 

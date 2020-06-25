@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dfbb5ed43c5256109ccc0a137a3d144d084e573e
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: da379da565f853561141888c4f275852f0044103
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214238"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799997"
 ---
 # <a name="isoiec-270012013-information-security-management-standards"></a>ISO/IEC 27001:2013 信息安全管理标准
 
@@ -35,28 +35,31 @@ ISO/IEC 27001 是一个正式规范信息安全管理体系 (ISMS) 的安全标�
 
 ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信息安全方面走在此标准认证前列的关键原因。 Microsoft 在 ISO/IEC 27001 认证方面取得的成就表明，Microsoft 致力于从业务、安全合规角度兑现客户的承诺。 目前，Azure 公用和 Azure 德国由一个经认可的第三方认证机构对其是否符合 ISO/IEC 27001 进行一年一次的审核，以提供独立验证，证明安全控制措施已经就位且有效运行。
 
-了解有关 Microsoft 云的 ISO-Iec-27001 优势：[下载 ISO/IEC 27001:2013](https://go.microsoft.com/fwlink/p/?linkid=2100068)
+了解有关 Microsoft 云的 ISO/IEC 27001 优势：[下载 ISO/IEC 27001:2013](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure、Azure 政府和 Azure 德国](https://aka.ms/AzureCompliance)
-- 云应用安全
-- [Dynamics 365 和 Dynamics 365 美国政府](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
-- Health Bot
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Microsoft Defender 高级威胁防护
+- [Dynamics 365、Dynamics 365 政府和 Dynamics 365 德国](https://aka.ms/d365-compliance-list)
+- Microsoft Graph
+- Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Flow 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
-- [Office 365、Office 365 美国政府版和 Office 365 美国政府版防御](https://go.microsoft.com/fwlink/p/?linkid=2077751)
+- Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 德国
 - OMS Service Map
 - PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
+- Power BI Embedded
+- Power Virtual Agents
 - [Microsoft 专业服务](https://go.microsoft.com/fwlink/p/?linkid=2100022)
-- Stream
-- Azure DevOps Services
-- Microsoft Defender ATP — 终结点检测和响应、自动调查和修正、安全分数
+- Microsoft Stream
+- Microsoft 威胁专家
+- Microsoft Translator
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -64,17 +67,11 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、Microsoft 托管桌面、OMS Service Map、PowerApps、Power BI、Stream 和 Microsoft Datacenter — ISO 27001 证书](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure、Dynamics 365 和联机服务：ISO27001 证书](https://aka.ms/azureiso27001cert)
 
 ### <a name="office-365"></a>Office 365
 
 - [Office 365 — 全球和德国 ISO 27001 — 信息安全管理标准 — 证书](https://aka.ms/o365iso27001cert)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 —（以前称为 Dynamics CRM）ISO 27001 — 信息安全管理标准 — 证书](https://aka.ms/D365ISO27001Cert)
-- [Dynamics 365 — Microsoft Dynamics Marketing Service (MDM) ISO 27001 — 信息安全管理标准 — 证书](https://aka.ms/d365mdm27001cert)
-- [Dynamics 365 — Microsoft Social Engagement Service ISO 27001 — 信息安全管理标准 — 证书](https://aka.ms/d365siso27001cert)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
@@ -84,36 +81,23 @@ ISO/IEC 27001 的国际接受度和适用性是 Microsoft 在实施和管理信�
 
 - [Microsoft 专业服务](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP — 终结点检测和响应、自动调查和修正、安全分数 — ISO 27001 证书](https://aka.ms/windowsdefenderatpiso27001certificate)
-
 ## <a name="assessments-and-reports"></a>评估和报告
 
 ### <a name="azure"></a>Azure
 
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream 和 Microsoft Datacenter — ISO 27001 和 27018 审核评估报告](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure、Cloud App Security、Flow、Genomics、Graph、Health Bot、Intune、OMS Service Map、PowerApps、Power BI、Stream 和 Microsoft Datacenter — ISO 27001 和 27018 适用性声明 (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure、Dynamics 365 和联机服务：ISO 27001, 27018 和 27701 审核评估报告](https://aka.ms/azureiso27001report)
+- [Azure、Dynamics 365 和联机服务：27001, 27018, 27701 适用性声明 (SOA)](https://aka.ms/Azureiso27001soa)
 
 ### <a name="office-365"></a>Office 365
 
-- [Office 365 — ISO 27001、ISO 27018 和 ISO 27017 审核评估报告](https://aka.ms/o365isoreport)
+- [Office 365: ISO 27001、27018 和 27017 审核评估报告](https://aka.ms/o365isoreport)
 - [Office 365 信息安全管理系统 (ISMS) — 适用于安全和隐私的适用性声明](https://aka.ms/o365isosoa)
-- [Office 365 — 德国 ISO 27001、ISO 27017 和 ISO 27018 审核评估报告](https://aka.ms/o365gerisoaudit)
-- [Yammer ISO 27001 审核评估报告](https://aka.ms/yammeriso)
-
-### <a name="dynamics-365"></a>Dynamics 365
-
-- [Dynamics 365 — ISO27001 适用性声明 (SOA)](https://aka.ms/d365isosoa)
+- [Office 365 — 德国 ISO 27001、27017 和 27018 审核评估报告](https://aka.ms/o365gerisoaudit)
+- [Yammer: ISO27001 审核评估报告](https://aka.ms/yammeriso)
 
 ### <a name="azure-devops-services"></a>Azure DevOps Services
 
 - [Azure DevOps Services ISO 27001 证书 IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
-
-### <a name="microsoft-defender-atp"></a>Microsoft Defender ATP
-
-- [Microsoft Defender ATP — 终结点检测和响应、自动调查和修正、安全分数 — ISO 27001 审核评估报告](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Microsoft Defender ATP — 终结点检测和响应、自动调查和修正、安全分数 — ISO 27001 和 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [查看其他审核报告](https://aka.ms/auditreports)
 

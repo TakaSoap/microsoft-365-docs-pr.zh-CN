@@ -14,13 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 通过 Microsoft 365 中的记录管理，你可以将组织的特定保留计划应用到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
-ms.openlocfilehash: b7c2febafdfe0b234bedf439236a6a7bd2aec549
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
+ms.openlocfilehash: 48705ac6d0c271ca2646de7c058a340ee3f736ae
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432343"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818952"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
 

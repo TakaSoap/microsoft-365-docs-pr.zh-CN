@@ -16,20 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何访问组织已购买付费订阅中包含的 Azure Active Directory。
-ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626368"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819282"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用免费的 Azure Active Directory 订阅
 
-如果组织已购买 Microsoft 365、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务的付费订阅，表明你已免费订阅 Microsoft Azure Active Directory。你和其他管理员可使用 Azure AD 创建并管理用户和组帐户。要使用 Azure AD，只需转到 Azure 门户，并登录到你的帐户即可。
+If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="open-a-private-browsing-session"></a>打开专用浏览会话
 
-使用专用浏览会话（而不是常规会话）来访问 Azure 门户（下面的第 1 步），这样可以防止将当前登录时使用的凭据传递到 Azure。若要打开专用浏览会话：
+Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
 
 - 在 Microsoft Edge（旧版）、Internet Explorer 或 Mozilla FireFox 中，按下 `CTRL+SHIFT+P`。
 

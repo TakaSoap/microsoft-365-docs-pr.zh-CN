@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 保护 Microsoft Teams 中文件的配置建议。
-ms.openlocfilehash: 129baed3286e445b9e0e440d4ec7f7a3402d3305
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 643ca5d5c340dc72cb375c114c2c7edaecf3dd46
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159427"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702508"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -50,7 +50,7 @@ ms.locfileid: "44159427"
 
 下表总结了各层的配置。 使用这些配置作为起点建议并调整网站配置，以满足组织的需求。 可能不需要每一层。
 
-||**基准（公共）**|**基准（专用）**|**敏感**|**高度敏感**|
+||基准（公共）|基准（专用）|敏感|高度敏感|
 |:-----|:-----|:-----|:-----|:-----|
 |专用或公用团队|公开|Private|Private|Private|
 |谁可以访问？|组织中的每个人（包括 B2B 用户）。|仅限团队成员。 其他人可以请求访问关联的网站。|仅限团队成员。|仅限团队成员。|

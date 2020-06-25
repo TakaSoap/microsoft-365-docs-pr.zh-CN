@@ -16,13 +16,14 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-description: 新的 Office 365 邮件加密功能在 Azure 信息保护的基础上构建，你的组织可使用受保护的电子邮件通信，与组织内部和外部的人员通信。 新的 OME 功能适用于其他组织、Outlook.com、Gmail 和其他电子邮件服务。
-ms.openlocfilehash: 95ac1528c59dc3f59e0d0e923d78ffb7138456d5
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解新的 Office 365 邮件加密功能，可与组织内部和外部的人员实现受保护的电子邮件通信。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6d6e37da7456cfbb0b7cbf8d986b54615aca60f0
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635464"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819182"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>设置全新的邮件加密功能
 

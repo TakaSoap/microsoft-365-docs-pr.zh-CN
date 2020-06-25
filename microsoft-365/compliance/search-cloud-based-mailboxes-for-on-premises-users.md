@@ -16,13 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 MicrosoftTeams 聊天数据（称为 1xN 聊天）。
-ms.openlocfilehash: ab523c0d2d334d3d2366711e241b3bafa2e0002f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+description: 在 Exchange 混合部署中，使用安全与合规中心中的内容搜索工具搜索并导出本地用户的 Teams 聊天数据。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 159c9c674feca4b01618289b194dd162c9020d59
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352115"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818881"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜索本地用户基于云的邮箱
 

@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解可以使用的组类型。
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388025"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780453"
 ---
 # <a name="compare-groups"></a>比较组
 
 在 Microsoft 365 管理中心的 **组** 部分中，可创建和管理以下类型的组： 
 
-- **Microsoft 365 组**用于公司内部和外部用户之间的协作。
+- **Microsoft 365 组** （之前称为 Office 365 组）用于公司内部和外部用户之间的协作。
 - **通讯组** 用于向一组人员发送通知。
 - **安全组**用于授予对资源（如 SharePoint 网站）的访问权限。
 - **启用邮件的安全组**用于授予对资源（如 SharePoint）的访问权限，并向这些用户发送电子邮件通知。
@@ -81,4 +81,4 @@ Microsoft 365 组用于公司内部和外部用户之间的协作。 对于每�
 
 ## <a name="related-articles"></a>相关文章
 
-[了解 Microsoft 365 组](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[了解 Microsoft 365 组](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

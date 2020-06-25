@@ -18,13 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: 使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
-ms.openlocfilehash: f544e739bc28b2383492baec5465be1502a08d0d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom: seo-marvel-apr2020
+description: 了解如何使用 Office 365 中的安全 & 合规性中心来启用存档邮箱, 以便支持组织的邮件保留、电子数据展示和保留要求。
+ms.openlocfilehash: d3f8cc292419cce258b750b77c1f1802accd5f21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166013"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817841"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>在安全与合规中心中启用存档邮箱
   
@@ -33,7 +34,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
 > [!NOTE]
 > Office 365 中的自动扩展存档功能在存档邮箱中提供额外的存储空间。 当启用自动扩展存档，并到达用户存档邮箱中的初始存储配额时，Office 365 将自动增加额外的存储空间。 这意味着用户不会耗尽邮箱存储空间, 并且在最初启用存档邮箱为贵公司打开自动扩展存档后, 你将不必管理任何内容。 有关详细信息，请参阅 [在 Office 365 中不受限制地存档概述](unlimited-archiving.md)。 
   
-## <a name="before-you-begin"></a>准备工作
+## <a name="get-the-necessary-permissions"></a>获取必要的权限
 
 必须在 Exchange Online 中分配 "邮件收件人" 角色, 才能启用或禁用存档邮箱。 默认情况下, 此角色分配给 Exchange 管理中心的**权限** 页上的 "收件人管理" 和 "组织管理" 角色组。 如果在 "安全和合规性中心" 中看不到**存档** 页, 请让管理员为你分配必要的权限。 
   
@@ -45,7 +46,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
-    将显示“存档”**** 页。“存档邮箱”**** 列表示每个用户的存档邮箱已启用还是禁用。 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. 在邮箱的列表中，选择要启用存档邮箱的用户。
     
@@ -60,7 +61,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     可能需要一些时间才会创建存档邮箱。 创建后，所选用户的详细信息窗格中将显示**存档邮箱：已启用**。 可能需要单击**刷新** ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
     
 > [!TIP]
-> 您也可以通过选择多个禁用存档邮箱的用户（使用 Shift 或 Ctrl 键）批量启用存档邮箱。选择多个邮箱后，在详细信息窗格中，单击“启用”****。 
+> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
   
 ## <a name="disable-an-archive-mailbox"></a>禁用存档邮箱
   
@@ -76,7 +77,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     
 3. 在安全与合规中心的左窗格中，单击**信息管理** \> **存档**。
     
-    将显示“存档”**** 页。“存档邮箱”**** 列表示每个用户的存档邮箱已启用还是禁用。 
+    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
     
 4. 在邮箱的列表中，选择要禁用存档邮箱的用户。
     
@@ -89,7 +90,7 @@ Office 365 中的存档（称为“就地存档”）为用户提供额外的邮
     可能需要一些时间才会禁用存档邮箱。 禁用后，所选用户的详细信息窗格中将显示**存档邮箱：已禁用**。 可能需要单击**刷新** ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)才能更新详细信息窗格中的信息。 
     
 > [!TIP]
-> 您也可以通过选择多个启用存档邮箱的用户（使用 Shift 或 Ctrl 键）批量禁用存档邮箱。选择多个邮箱后，在详细信息窗格中，单击“禁用”****。 
+> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 启用或禁用存档邮箱。
 

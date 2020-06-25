@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036205"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800017"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -293,7 +293,6 @@ GDPR 规范了“个人数据”的收集、存储、使用和共享。 根据 G
 - 税务档案号码
 - 工作地址
 - 信用卡或借记卡号
-- 社交媒体文章
 - 社交媒体文章
 - IP 地址（欧盟地区）
 - 位置/GPS 数据
