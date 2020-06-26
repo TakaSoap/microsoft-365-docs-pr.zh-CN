@@ -1,0 +1,80 @@
+---
+title: Office 365 中的 ATP 防钓鱼功能
+f1.keywords:
+- NOCSH
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
+audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
+ms.collection:
+- M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
+description: 了解属于 Office 365 高级威胁防护一部分的反网络钓鱼功能，以提供针对商品 & spear 网络钓鱼攻击的保护。
+ms.openlocfilehash: dda94145dfbef7466ebd8e1fb9f01d592515f598
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44875411"
+---
+# <a name="atp-anti-phishing-capabilities-in-office-365"></a><span data-ttu-id="cd897-103">Office 365 中的 ATP 防钓鱼功能</span><span class="sxs-lookup"><span data-stu-id="cd897-103">ATP anti-phishing capabilities in Office 365</span></span>
+
+<span data-ttu-id="cd897-104">ATP 反网络钓鱼是[Office 365 高级威胁防护](office-365-atp.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="cd897-104">ATP anti-phishing is part of [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="cd897-105">ATP 防网络钓鱼将一组机器学习模型与模拟检测算法一起应用于传入的消息，提供对商品和鱼叉式钓鱼攻击的保护。</span><span class="sxs-lookup"><span data-stu-id="cd897-105">ATP anti-phishing applies a set of machine learning models together with impersonation detection algorithms to incoming messages to provide protection for commodity and spear phishing attacks.</span></span> <span data-ttu-id="cd897-106">所有邮件都服从一组专门培训的计算机学习模式，以检测网络钓鱼邮件，以及一组用于防止各种用户和域模拟攻击的高级算法。</span><span class="sxs-lookup"><span data-stu-id="cd897-106">All messages are subject to an extensive set of machine learning models trained to detect phishing messages, together with a set of advanced algorithms used to protect against various user and domain impersonation attacks.</span></span> <span data-ttu-id="cd897-107">ATP 反网络钓鱼根据 Office 365 全局或安全管理员设置的策略来保护您的组织。</span><span class="sxs-lookup"><span data-stu-id="cd897-107">ATP anti-phishing protects your organization according to polices that are set by your Office 365 global or security administrators.</span></span>
+  
+<span data-ttu-id="cd897-108">若要了解详细信息，请参阅[在 Office 365 中设置反网络钓鱼策略](set-up-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="cd897-108">To learn more, see [Set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).</span></span>
+  
+> [!NOTE]
+> <span data-ttu-id="cd897-109">ATP 反网络钓鱼仅适用于订阅中包含的高级威胁防护，如[microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业](https://www.microsoft.com/microsoft-365/business)版、Office 365 企业版 E5、Office 365 教育版 A5 等。如果您的组织有一个不包含 Office 365 ATP 的 Office 365 订阅，则可能会将 ATP 作为加载项进行购买。</span><span class="sxs-lookup"><span data-stu-id="cd897-109">ATP anti-phishing is only available in Advanced Threat Protection, which is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has an Office 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on.</span></span> <span data-ttu-id="cd897-110">有关详细信息，请参阅[office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)和[Office 365 高级威胁防护服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)。</span><span class="sxs-lookup"><span data-stu-id="cd897-110">For more information, see [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection) and the [Office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).</span></span>
+
+## <a name="how-atp-anti-phishing-works"></a><span data-ttu-id="cd897-111">ATP 反网络钓鱼的工作原理</span><span class="sxs-lookup"><span data-stu-id="cd897-111">How ATP anti-phishing works</span></span>
+
+<span data-ttu-id="cd897-112">ATP 反网络钓鱼检查传入邮件，以了解邮件可能是网络钓鱼的指示器。</span><span class="sxs-lookup"><span data-stu-id="cd897-112">ATP anti-phishing checks incoming messages for indicators that the message may be phishing.</span></span> <span data-ttu-id="cd897-113">只要 ATP 策略涵盖用户（安全链接、安全链接或反网络钓鱼），传入的邮件将由多个机器学习模型进行评估，以确定该策略是否适用于该邮件，并根据配置的策略采取相应的操作。</span><span class="sxs-lookup"><span data-stu-id="cd897-113">Whenever a user is covered by an ATP policy (safe attachments, safe links or anti-phishing) the incoming message is evaluated by multiple machine learning models that analyze the message to determine if the policy applies to the message and the appropriate action is taken, based on the configured policy.</span></span>
+  
+<span data-ttu-id="cd897-114">ATP 反网络钓鱼允许 Office 365 全局管理员或安全管理员定义策略，以抵御包含用户或域模拟的网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="cd897-114">ATP anti-phishing allows Office 365 global administrators or security admins to define policies that provide protection against phishing attacks that include impersonation of either users or domains.</span></span> <span data-ttu-id="cd897-115">（或两者）。</span><span class="sxs-lookup"><span data-stu-id="cd897-115">(or both).</span></span> <span data-ttu-id="cd897-116">Office 365 全局管理员或安全管理员在策略中定义应使用用户或域的固定列表或使用邮箱智能来保护用户和域的模拟攻击。</span><span class="sxs-lookup"><span data-stu-id="cd897-116">Office 365 global administrators or security admins define within the policy which user and domains should be protected from impersonation attacks using either a fixed list of users or domains or by using mailbox intelligence.</span></span> <span data-ttu-id="cd897-117">邮箱智能是对用户的电子邮件习惯和个人联系人的高级了解。</span><span class="sxs-lookup"><span data-stu-id="cd897-117">Mailbox intelligence is an advanced understanding of a user's email habits and personal contacts.</span></span> <span data-ttu-id="cd897-118">ATP 学习了每个用户如何与组织内部和外部的其他用户通信，并建立这些关系的地图。</span><span class="sxs-lookup"><span data-stu-id="cd897-118">ATP learns how each individual user communicates with other users inside and outside the organization and builds up a map of these relationships.</span></span> <span data-ttu-id="cd897-119">此地图允许 ATP 了解有关如何确保将正确的邮件标识为模拟的更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="cd897-119">This map allows ATP to understand more details about how to ensure the right messages are identified as impersonation.</span></span>
+  
+<span data-ttu-id="cd897-120">ATP 反网络钓鱼策略可应用于组织中的一组特定用户或组，或者应用于整个域或所有自定义域。</span><span class="sxs-lookup"><span data-stu-id="cd897-120">ATP anti-phishing polices can be applied to a specific set of people or groups in your organization, or to an entire domain or all of your custom domains.</span></span> <span data-ttu-id="cd897-121">若要了解详细信息，请参阅[在 Office 365 中设置反网络钓鱼策略](set-up-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="cd897-121">To learn more, see [Set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).</span></span>
+  
+## <a name="how-to-get-atp-anti-phishing"></a><span data-ttu-id="cd897-122">如何获取 ATP 反网络钓鱼</span><span class="sxs-lookup"><span data-stu-id="cd897-122">How to get ATP anti-phishing</span></span>
+
+<span data-ttu-id="cd897-123">ATP 反网络钓鱼功能是[高级威胁防护](office-365-atp.md)的一部分;但是，当定义了反网络钓鱼策略时，将应用 ATP 反钓鱼保护。</span><span class="sxs-lookup"><span data-stu-id="cd897-123">ATP Anti-Phishing features are part of [Advanced Threat Protection](office-365-atp.md); however, ATP anti-phishing protection applies when anti-phishing policies are defined.</span></span> <span data-ttu-id="cd897-124">（一个示例是基于模拟的策略。）请参阅[在 Office 365 中设置反网络钓鱼策略](set-up-anti-phishing-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="cd897-124">(One example is an impersonation-based policy.) See [Set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).</span></span>
+  
+## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a><span data-ttu-id="cd897-125">如何了解 ATP 反网络钓鱼是否已就绪</span><span class="sxs-lookup"><span data-stu-id="cd897-125">How to know if ATP anti-phishing is in place</span></span>
+
+<span data-ttu-id="cd897-126">必须定义 ATP 反网络钓鱼策略，才能使保护生效。</span><span class="sxs-lookup"><span data-stu-id="cd897-126">ATP anti-phishing policies must be defined in order for protection to be in effect.</span></span> <span data-ttu-id="cd897-127">先检查此项以验证是否已实施保护。</span><span class="sxs-lookup"><span data-stu-id="cd897-127">Check this first to verify protection is in place.</span></span>
+
+<span data-ttu-id="cd897-128">此外，报告可用于显示服务在您的组织中的工作方式。</span><span class="sxs-lookup"><span data-stu-id="cd897-128">In addition, reports are available to show how the service is working for your organization.</span></span> <span data-ttu-id="cd897-129">若要了解详细信息，请参阅[查看 Office 365 高级威胁防护的报告](view-reports-for-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="cd897-129">To learn more, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).</span></span>
+
+<span data-ttu-id="cd897-130">对于特定用户的 ATP 反钓鱼计算机学习模型处于活动状态，该用户必须是定义的[ATP 安全附件](atp-safe-attachments.md)、 [atp 安全链接](atp-safe-links.md)或 atp 反网络钓鱼策略的一部分。</span><span class="sxs-lookup"><span data-stu-id="cd897-130">For ATP anti-phishing machine learning models to be active for a particular user, that user must be part of a defined [ATP Safe attachments](atp-safe-attachments.md), [ATP Safe Links](atp-safe-links.md), or ATP Anti-Phishing policy.</span></span> 
+
+<span data-ttu-id="cd897-131">下表介绍了几个示例方案。</span><span class="sxs-lookup"><span data-stu-id="cd897-131">The following table describes a few example scenarios.</span></span> <span data-ttu-id="cd897-132">在上述每个示例中，组织都使用 Office 365 企业版 E5，其中包括高级威胁防护。</span><span class="sxs-lookup"><span data-stu-id="cd897-132">In each of these examples, the organization is using Office 365 Enterprise E5, which includes Advanced Threat Protection.</span></span>
+  
+|<span data-ttu-id="cd897-133">**示例方案**</span><span class="sxs-lookup"><span data-stu-id="cd897-133">**Example scenario**</span></span>|<span data-ttu-id="cd897-134">**在这种情况下，ATP 反网络钓鱼是否适用？**</span><span class="sxs-lookup"><span data-stu-id="cd897-134">**Does ATP anti-phishing apply in this case?**</span></span>|
+|:-----|:-----|
+|<span data-ttu-id="cd897-135">Pat 的组织拥有 Office 365 企业版 E5，但没有人为 ATP 安全附件、ATP 安全链接或 ATP 高级网络钓鱼定义任何策略。</span><span class="sxs-lookup"><span data-stu-id="cd897-135">Pat's organization has Office 365 Enterprise E5, but no one has defined any policies for ATP safe attachments, ATP safe links or ATP advanced phishing yet.</span></span>|<span data-ttu-id="cd897-136">否。</span><span class="sxs-lookup"><span data-stu-id="cd897-136">No.</span></span> <span data-ttu-id="cd897-137">虽然该功能可用，但必须至少定义一个 ATP 策略，才能使 ATP 机器学习模型能够正常工作。</span><span class="sxs-lookup"><span data-stu-id="cd897-137">Although the feature is available, at least one ATP policy must be defined in order for the ATP machine learning models to work.</span></span> <span data-ttu-id="cd897-138">对于模拟，ATP 反网络钓鱼策略也必须已准备就绪。</span><span class="sxs-lookup"><span data-stu-id="cd897-138">For impersonation an ATP anti-phishing policy must also be in place.</span></span>|
+|<span data-ttu-id="cd897-139">先生为在 Contoso 的销售部门的员工。</span><span class="sxs-lookup"><span data-stu-id="cd897-139">Lee is an employee in the sales department at Contoso.</span></span> <span data-ttu-id="cd897-140">先生/她的组织已实施了仅适用于财务员工的 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="cd897-140">Lee's organization has an ATP anti-phishing policy in place that applies to finance employees only.</span></span>|<span data-ttu-id="cd897-141">否。</span><span class="sxs-lookup"><span data-stu-id="cd897-141">No.</span></span> <span data-ttu-id="cd897-142">在这种情况下，ATP 反网络钓鱼（计算机模型和模拟保护）将应用于财务员工，但其他员工（包括销售部门）将不会。</span><span class="sxs-lookup"><span data-stu-id="cd897-142">In this case, ATP anti-phishing (machine models and impersonation protection) would apply to finance employees, but other employees, including the sales department, would not.</span></span>|
+|<span data-ttu-id="cd897-143">昨天，Jean 的组织中的 Office 365 管理员设置适用于所有员工的 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="cd897-143">Yesterday, an Office 365 administrator at Jean's organization set up an ATP anti-phishing policy that applies to all employees.</span></span> <span data-ttu-id="cd897-144">在今天的早期，Jean 收到一封包含策略所涵盖的模拟的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="cd897-144">Earlier today, Jean received an email message that includes an impersonation covered by the policy.</span></span>|<span data-ttu-id="cd897-145">是。</span><span class="sxs-lookup"><span data-stu-id="cd897-145">Yes.</span></span> <span data-ttu-id="cd897-146">在此示例中，Jean 具有高级威胁防护的许可证，并且已定义包括 Jean 的 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="cd897-146">In this example, Jean has a license for Advanced Threat Protection, and an ATP anti-phishing policy that includes Jean has been defined.</span></span> <span data-ttu-id="cd897-147">新策略通常需要30分钟的时间才能在数据中心内生效;由于在这种情况下已过一天，因此该策略应有效。</span><span class="sxs-lookup"><span data-stu-id="cd897-147">It typically takes about 30 minutes for a new policy to take effect across datacenters; since a day has passed in this case, the policy should be in effect.</span></span>|
+
+## <a name="related-topics"></a><span data-ttu-id="cd897-148">相关主题</span><span class="sxs-lookup"><span data-stu-id="cd897-148">Related topics</span></span>
+
+[<span data-ttu-id="cd897-149">Office 365 高级威胁防护</span><span class="sxs-lookup"><span data-stu-id="cd897-149">Office 365 Advanced Threat Protection</span></span>](office-365-atp.md)
+  
+[<span data-ttu-id="cd897-150">Office 365 中的防钓鱼保护</span><span class="sxs-lookup"><span data-stu-id="cd897-150">Anti-phishing protection in Office 365</span></span>](anti-phishing-protection.md)
+  
+[<span data-ttu-id="cd897-151">在 Office 365 中设置反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="cd897-151">Set up anti-phishing policies in Office 365</span></span>](set-up-anti-phishing-policies.md)
+  
+[<span data-ttu-id="cd897-152">Office 365 中的 ATP 安全链接</span><span class="sxs-lookup"><span data-stu-id="cd897-152">ATP safe links in Office 365</span></span>](atp-safe-links.md)
+  
+[<span data-ttu-id="cd897-153">在 Office 365 中设置 ATP 安全链接策略</span><span class="sxs-lookup"><span data-stu-id="cd897-153">Set up ATP safe links policies in Office 365</span></span>](set-up-atp-safe-links-policies.md)
+  
+[<span data-ttu-id="cd897-154">Office 365 中的 ATP 安全附件</span><span class="sxs-lookup"><span data-stu-id="cd897-154">ATP safe attachments in Office 365</span></span>](atp-safe-attachments.md)
+  
+[<span data-ttu-id="cd897-155">在 Office 365 中设置 ATP 安全附件策略</span><span class="sxs-lookup"><span data-stu-id="cd897-155">Set up ATP safe attachments policies in Office 365</span></span>](set-up-atp-safe-attachments-policies.md)
+  
+[<span data-ttu-id="cd897-156">查看高级威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="cd897-156">View the reports for Advanced Threat Protection</span></span>](view-reports-for-atp.md)
