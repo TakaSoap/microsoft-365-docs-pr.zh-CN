@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e4d7ec213a4b4d1108c06784fb5e6675c79429c1
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929512"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899013"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42929512"
 
 
 
-`AlertInfo` [高级搜寻](advanced-hunting-overview.md)架构中的表包含来自 Microsoft Defender ATP、Office 365 Atp、Microsoft 云应用安全性和 Azure atp 的警报信息。 使用此参考来构建从此表返回信息的查询。
+`AlertInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含来自 Microsoft Defender ATP、Office 365 Atp、Microsoft 云应用安全性和 Azure atp 的警报信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -47,7 +47,7 @@ ms.locfileid: "42929512"
 | `AttackTechniques` | string | MITRE ATT&与触发警报的活动相关联的 CK 技术 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

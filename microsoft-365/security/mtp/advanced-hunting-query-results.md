@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft 威胁防护中的高级搜寻查询结果
 description: 在 Microsoft 威胁防护中充分利用高级搜寻返回的最多查询结果
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、microsoft 365、Microsoft 威胁防护、可视化、图表、筛选器、向下钻取
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、microsoft 365、Microsoft 威胁防护、可视化、图表、筛选器、深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f9838908ca0dbfb498601c3509b920b064a2eb22
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929100"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899074"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -56,7 +56,7 @@ ms.locfileid: "42929100"
 在呈现图表时，高级搜寻将自动标识感兴趣的列和要聚合的数值。 若要获取有意义的图表，请构建查询以返回您想要以可视化方式查看的特定值。 下面是一些示例查询和生成的图表。
 
 #### <a name="alerts-by-severity"></a>按严重性的警报
-使用`summarize`运算符获取要绘制图表的值的数值计数。 下面的查询使用`summarize`运算符按严重性获取警报数。
+使用 `summarize` 运算符获取要绘制图表的值的数值计数。 下面的查询使用 `summarize` 运算符按严重性获取警报数。
 
 ```kusto
 AlertInfo
@@ -64,13 +64,13 @@ AlertInfo
 ```
 呈现结果时，柱形图将每个严重性值显示为单独的列：
 
-![高级搜索查询结果的图像显示为](../../media/advanced-hunting-column-chart.jpg)
-*按严重性显示为柱形图的警报*的柱形图查询结果
+![高级搜索查询结果的图像显示为 ](../../media/advanced-hunting-column-chart.jpg)
+ *按严重性显示为柱形图的警报*的柱形图查询结果
 
 #### <a name="alert-severity-by-operating-system"></a>警报严重性（按操作系统）
-您还可以使用`summarize`运算符为来自多个字段的图表值准备结果。 例如，您可能想要了解如何在操作系统（OS）之间分布警报严重性。 
+您还可以使用 `summarize` 运算符为来自多个字段的图表值准备结果。 例如，您可能想要了解如何在操作系统（OS）之间分布警报严重性。 
 
-下面`join`的查询使用运算符从`DeviceInfo`表中提取 OS 信息，然后使用`summarize`对和`OSPlatform` `Severity`列中的值进行计数：
+下面的查询使用 `join` 运算符从表中提取 OS 信息 `DeviceInfo` ，然后使用 `summarize` 对和列中的值进行计数 `OSPlatform` `Severity` ：
 
 ```kusto
 AlertInfo
@@ -80,11 +80,11 @@ AlertInfo
 ```
 以下是使用堆积柱形图的最佳可视化效果：
 
-![高级搜索查询结果的图像显示为](../../media/advanced-hunting-stacked-chart.jpg)
-*按 OS 和严重性显示为堆叠图表的通知图表查询结果*
+![高级搜索查询结果的图像显示为 ](../../media/advanced-hunting-stacked-chart.jpg)
+ *按 OS 和严重性显示为堆叠图表的通知图表查询结果*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>多个前十个发件人域的网络钓鱼电子邮件
-如果要处理不有限的值列表，则可以使用`Top`运算符仅绘制具有最多实例的值。 例如，若要获取最多包含最多网络钓鱼电子邮件的前十个发件人域，请使用以下查询：
+如果要处理不有限的值列表，则可以使用 `Top` 运算符仅绘制具有最多实例的值。 例如，若要获取最多包含最多网络钓鱼电子邮件的前十个发件人域，请使用以下查询：
 
 ```kusto
 EmailEvents
@@ -94,11 +94,11 @@ EmailEvents
 ```
 使用饼图视图有效显示跨顶级域的分布：
 
-![以饼图](../../media/advanced-hunting-pie-chart.jpg)
-形式显示的高级搜索查询结果的图像，该饼图*显示了多发件人域之间的网络钓鱼电子邮件分布情况*
+![以饼图形式显示的高级搜索查询结果的图像，该饼图 ](../../media/advanced-hunting-pie-chart.jpg)
+ *显示了多发件人域之间的网络钓鱼电子邮件分布情况*
 
 #### <a name="file-activities-over-time"></a>一段时间内的文件活动
-将`summarize`运算符与`bin()`函数结合使用，可以检查一段时间内涉及特定指示器的事件。 下面的查询按30分钟的间隔`invoice.doc`对涉及文件的事件进行计数，以显示与该文件相关的活动峰值：
+将 `summarize` 运算符与函数结合使用 `bin()` ，可以检查一段时间内涉及特定指示器的事件。 下面的查询 `invoice.doc` 按30分钟的间隔对涉及文件的事件进行计数，以显示与该文件相关的活动峰值：
 
 ```kusto
 AppFileEvents
@@ -106,10 +106,10 @@ AppFileEvents
 | where FileName == "invoice.doc"
 | summarize FileCount = count() by bin(Timestamp, 30m)
 ```
-下面的行图清晰突出显示了包含更多活动`invoice.doc`的时间段： 
+下面的行图清晰突出显示了包含更多活动的时间段 `invoice.doc` ： 
 
-![高级搜索查询结果的图像显示为折线图图表](../../media/advanced-hunting-line-chart.jpg)
-*折线图，显示有关一段时间内涉及文件的事件数*
+![高级搜索查询结果的图像显示为折线图图表 ](../../media/advanced-hunting-line-chart.jpg)
+ *折线图，显示有关一段时间内涉及文件的事件数*
 
 
 ## <a name="export-tables-and-charts"></a>导出表和图表
@@ -119,7 +119,15 @@ AppFileEvents
 - **任何图表**—查询结果将导出为呈现的图表的 JPEG 图像
 
 ## <a name="drill-down-from-query-results"></a>从查询结果中向下钻取
-若要查看有关查询结果中的实体（如计算机、文件、用户、IP 地址和 URL）的详细信息，只需单击实体标识符。 这将为 Microsoft Defender 安全中心中的所选实体打开详细的配置文件页。
+若要快速检查查询结果中的记录，请选择相应的行以打开 "**检查记录**" 面板。 该面板提供了基于所选记录的以下信息：
+
+- **资产**—在记录中发现的主要资产（邮箱、设备和用户）的汇总视图，通过可用信息（如风险和暴露程度）进行了丰富的汇总
+- **进程树**—为包含进程信息的记录生成，并使用可用的上下文信息进行丰富处理;通常情况下，返回更多列的查询可能会导致更丰富的过程树。
+- **所有详细信息**—记录中各列的所有值  
+
+![包含用于检查记录的面板的选定记录的图像](../../media/mtp-ah/inspect-record.png)
+
+若要查看有关查询结果中的特定实体（如计算机、文件、用户、IP 地址或 URL）的详细信息，请选择实体标识符以打开该实体的详细配置文件页。
 
 ## <a name="tweak-your-queries-from-the-results"></a>调整结果中的查询
 右键单击结果集中的值以快速增强查询。 可以使用这些选项执行以下操作：
@@ -133,7 +141,7 @@ AppFileEvents
 ## <a name="filter-the-query-results"></a>筛选查询结果
 右侧显示的筛选器提供结果集的摘要。 每列都有其自己的部分，其中列出了该列找到的非重复值和实例数。
 
-通过选择要包含或排除`+`的`-`值上的或按钮，然后选择 "**运行查询**" 来优化查询。
+通过选择 `+` `-` 要包含或排除的值上的或按钮，然后选择 "**运行查询**" 来优化查询。
 
 ![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
 

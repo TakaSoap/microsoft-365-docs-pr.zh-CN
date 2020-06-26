@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceNetworkInfo 表
 description: 了解高级搜寻架构的 DeviceNetworkInfo 表中的网络配置信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machinenetworkinfo、DeviceNetworkInfo、设备、计算机、mac、ip、适配器、dns、dhcp、网关、隧道
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machinenetworkinfo、DeviceNetworkInfo、设备、计算机、mac、ip、适配器、dns、dhcp、gateway、隧道
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ce392ee074327114b0794edfeef9eb83091447d6
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 0fd6000f4d3a4b9fafb0eede74cbbe4e6c3d494e
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234991"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899239"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42234991"
 
 
 
-`DeviceNetworkInfo` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关计算机的网络配置的信息，包括网络适配器、IP 和 MAC 地址以及连接的网络或域。 使用此参考来构建从此表返回信息的查询。
+`DeviceNetworkInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关计算机的网络配置的信息，包括网络适配器、IP 和 MAC 地址以及连接的网络或域。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "42234991"
 | `IPAddresses` | string | 包含分配给适配器的所有 IP 地址的 JSON 数组及其各自的子网前缀和 IP 地址空间，如 public、private 或 link 本地 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

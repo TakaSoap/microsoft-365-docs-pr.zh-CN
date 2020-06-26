@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2ed89a676525b91f6b0923cf39be5b014638e93e
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515839"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899359"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -63,9 +63,6 @@ ms.locfileid: "44515839"
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源（包括 Azure Active Directory）的帐户信息 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | 由 Active Directory 和其他 Microsoft online services 记录的身份验证事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）执行的查询活动 |
-
-
-
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

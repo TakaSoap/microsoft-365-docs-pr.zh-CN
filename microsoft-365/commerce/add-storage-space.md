@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 了解如何在 Microsoft 365 订阅中添加和减少文件存储。 使用额外的文件存储，可以在 SharePoint Online 和 OneDrive 中存储更多内容。
-ms.openlocfilehash: f31495127feb345cccdc792c60333f5fc0c7cc6f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402674"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899121"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>为你的订阅添加存储空间
 
@@ -46,6 +46,9 @@ ms.locfileid: "44402674"
 ::: moniker-end
 
 如果你的 SharePoint Online 网站集存储空间即将用完，并且你的计划符合条件，则可以为你的订阅增加存储空间。 如果在可用加载项列表中看不到**Office 365 额外文件存储空间**，说明您的计划不符合条件。 有关详细信息，请参阅["我的计划是否符合条件？"](#is-my-plan-eligible-for-office-365-extra-file-storage)
+
+> [!NOTE]
+> 如果你通过批量许可或 CSP 购买了订阅，则无法为你的组织购买**Office 365 额外文件存储**。 请联系你的代表或合作伙伴寻求帮助。
 
 ## <a name="view-available-storage"></a>查看可用存储
 
@@ -197,7 +200,7 @@ ms.locfileid: "44402674"
 
     例如，如果你目前拥有 200 GB 的额外文件存储空间，但你只需要 100 GB，则可以在框中输入" **100**"。
 
-5. 选择“关闭”****。
+5. 选择“**关闭**”。
 
 ::: moniker-end
 
@@ -220,7 +223,7 @@ ms.locfileid: "44402674"
 
     例如，如果你目前拥有 200 GB 的额外文件存储空间，但你只需要 100 GB，则可以在框中输入" **100**"。
 
-5. 选择“关闭”****。
+5. 选择“**关闭**”。
 
 ::: moniker-end
 

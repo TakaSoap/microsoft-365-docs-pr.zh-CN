@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceLogonEvents 表
 description: 了解高级搜寻架构的 DeviceLogonEvents 表中的身份验证或登录事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、logonevents、DeviceLogonEvents、身份验证登录、登录
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、logonevents、DeviceLogonEvents、身份验证、登录、登录
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7c7f1bba23379b25ccecc427b2aa866a1105396d
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235011"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899263"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235011"
 
 
 
-`DeviceLogonEvents` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
+`DeviceLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -72,7 +72,7 @@ ms.locfileid: "42235011"
 | `IsLocalAdmin` | boolean | 指示用户是否为计算机上的本地管理员的布尔指示符 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

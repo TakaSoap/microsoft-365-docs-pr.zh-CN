@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fcbd487aeed633176c86fd22bfcd156be02fea22
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900783"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899311"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
 **适用于：**
 - Microsoft 威胁防护
 
-`DeviceFileCertificateInfo` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件签名证书的信息。 此表使用从证书验证活动获取的数据，这些数据定期对终结点上的文件执行。
+`DeviceFileCertificateInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件签名证书的信息。 此表使用从证书验证活动获取的数据，这些数据定期对终结点上的文件执行。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "43900783"
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用。 | 
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

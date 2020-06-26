@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 DeviceInfo 表
 description: 了解高级搜寻架构的 DeviceInfo 表中的操作系统、计算机名称和其他计算机信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machineinfo、DeviceInfo、设备、计算机、OS、平台，用户
+keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、machineinfo、DeviceInfo、设备、计算机、OS、平台、用户
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 71bd9e9ff1dfb17e4a9266d9ee351799e18888c9
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235021"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899275"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235021"
 
 
 
-`DeviceInfo` [高级搜寻](advanced-hunting-overview.md)架构中的表包含有关组织中的计算机的信息，包括 OS 版本、活动用户和计算机名称。 使用此参考来构建从此表返回信息的查询。
+`DeviceInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关组织中的计算机的信息，包括 OS 版本、活动用户和计算机名称。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "42235021"
 | `MachineGroup` | string | 计算机的计算机组。 此组由基于角色的访问控制用于确定对计算机的访问权限 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

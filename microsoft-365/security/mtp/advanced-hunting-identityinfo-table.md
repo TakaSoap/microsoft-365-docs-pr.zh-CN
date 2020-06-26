@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 12f8d0995d00daffe8a1ca1c2c8d9dfe25a11581
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209771"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898953"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -56,7 +56,7 @@ ms.locfileid: "44209771"
 | `IsAccountEnabled` | boolean | 指示帐户是否已启用 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

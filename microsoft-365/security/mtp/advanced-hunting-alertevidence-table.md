@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617082"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899347"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -53,7 +53,7 @@ ms.locfileid: "44617082"
 | `AdditionalFields` | string | 有关 JSON 数组格式事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)

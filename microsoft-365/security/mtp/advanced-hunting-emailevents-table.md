@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: eefd6848e5ae0ddb077db576d55aaf9555e33729
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515851"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44898989"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -65,7 +65,7 @@ ms.locfileid: "44515851"
 | `EmailLanguage` | string | 检测到的电子邮件内容的语言 |
 
 ## <a name="related-topics"></a>相关主题
-- [主动搜寻威胁](advanced-hunting-overview.md)
+- [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
 - [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
