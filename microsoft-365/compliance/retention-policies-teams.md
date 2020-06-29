@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268267"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861159"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>了解 Microsoft Teams 的保留策略
 
@@ -77,7 +77,7 @@ Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype f
 
 ## <a name="files-in-teams"></a>Teams 中的文件
 
-在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到频道的文件存储在团队的 SharePoint 网站中。 这意味着，若要保留或删除 Teams 中的文件，除了为 Teams 配置的保留策略外，还必须配置一个或多个应用于 **OneDrive** 帐户以及 **SharePoint 网站**的保留策略。 有关保留策略如何应用于这些位置的详细信息，请参阅[了解 SharePoint 和 OneDrive 的保留策略](retention-policies-sharepoint.md)。
+在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到频道的文件存储在团队的 SharePoint 网站中。 这意味着，若要保留或删除 Teams 中的文件，除了为 Teams 配置的任何保留策略外，还必须配置一个或多个应用于 OneDrive 和 SharePoint 的保留策略。 有关保留策略如何应用于这些位置的详细信息，请参阅[了解 SharePoint 和 OneDrive 的保留策略](retention-policies-sharepoint.md)。
 
 > [!NOTE]
 > 包含 Teams 频道消息或 Teams 聊天的保留策略只能包含 Teams 位置。 若要保留或删除 Teams 中的这些文件，必须创建单独的保留策略。
@@ -98,6 +98,12 @@ Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype f
 
 - 如果外部用户使用来自其他 Microsoft 365 组织的帐户加入，则你的保留策略无法删除此用户的邮件，因为它们存储在该用户在其他租户中的邮箱中。 但是对于同一会议，你的保留策略可以为你的用户删除邮件。
 
+
+## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
+
+如果用户离开你的组织，并且其 Office 365 帐户被删除，则其要保留的聊天消息将存储在非活动邮箱中。 聊天消息仍受用户在其邮箱变为非活动状态之前所应用的任何保留策略的约束，并且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
+
+如果用户在 Teams 中存储了任何文件，请参阅 SharePoint 和 OneDrive 的[等效部分](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)。
 
 ## <a name="limitations"></a>限制
 
@@ -123,12 +129,9 @@ Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype f
     
     - 为“**Teams 聊天**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
-
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>如何配置 Microsoft Teams 的保留策略
 
-请参阅[创建和配置保留策略](create-retention-policies.md)。
-
-对于向导的“**选择位置**”页面，请选择下列选项：
+按照[创建和配置保留策略](create-retention-policies.md)以及向导的**选择位置**页面的说明，选择以下选项：
 
 - “**让我选择特定位置**” > “**Teams 频道消息**”和“**Teams 聊天**”
 
