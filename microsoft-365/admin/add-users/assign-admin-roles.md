@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何向用户或业务中的多个用户分配管理员角色，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780633"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900772"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -110,9 +110,9 @@ ms.locfileid: "44780633"
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>不起作用？
+## <a name="check-your-permissions"></a>检查你的权限
 
-您可能没有适当的权限，因此您没有权限将管理员角色分配给其他用户。 请其他管理员为你分配角色。
+您可能没有将管理员角色分配给其他用户的正确权限。 请进行检查以确保您具有正确的权限，或者让其他管理员为您分配角色。
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ ms.locfileid: "44780633"
 
 [关于 Microsoft 365 管理员角色](about-admin-roles.md)
 
+[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [使用 PowerShell 向用户帐户分配角色](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [授权或删除合作伙伴关系](../misc/add-partner.md)
-
-[使用 Exchange 管理中心添加备选电子邮件地址](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)

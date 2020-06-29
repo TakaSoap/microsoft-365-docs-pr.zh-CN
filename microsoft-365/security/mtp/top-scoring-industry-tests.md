@@ -2,7 +2,7 @@
 title: 行业测试中的主要评分（AV 测试、AV 比较级、SE 实验室、MITRE ATT&CK）
 ms.reviewer: ''
 description: Microsoft Defender ATP 在独立测试中持续实现高分。 查看最新的分数和分析。
-keywords: Windows Defender 防病毒、av 检查、防病毒测试、av 测试、最新 av 分数、检测分数、安全产品测试安全行业测试、行业防病毒测试、最佳防病毒、防病毒、av 测试、av-比较级、SE 实验室、MITRE ATT&CK、endpoint protection 平台、EPP、终结点检测和响应、EDR、Windows 10、Microsoft Defender 防病毒、WDAV、MDATP、Microsoft 威胁防护、安全性、恶意软件、av、防病毒、分数、计分、下一代保护
+keywords: Microsoft Defender 防病毒、Windows Defender 防病毒、av 评论、防病毒测试、av 测试、最新 av 分数、检测分数、安全产品测试安全行业测试、行业防病毒测试、最佳防病毒、防病毒、av 测试、av-比较级、SE 实验室、MITRE ATT&CK、endpoint protection 平台、EPP、终结点检测和响应、EDR、Windows 10、Microsoft Defender 防病毒、WDAV、MDATP、Microsoft 威胁防护、安全性、恶意软件、av、防病毒、分数、计分、下一代保护
 ms.prod: w10
 ms.mktglfcycl: secure
 ms.sitesec: library
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 10999a23ccaf3fbf5ee372cfdfe67428a5d1f74f
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
+ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292672"
+ms.lasthandoff: 06/27/2020
+ms.locfileid: "44909272"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -41,20 +41,22 @@ MITRE 的测试方法的核心是模拟实际攻击，以了解解决方案是�
 
 ## <a name="next-generation-protection"></a>下一代保护
 
-[Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)在独立测试中持续执行非常严格，显示了它在防病毒市场中的最佳选择。 请记住，这些测试仅提供防病毒的结果，不会测试其他安全保护。
+[Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)在独立测试中持续执行非常严格，显示了它在防病毒市场中的最佳选择。 请记住，这些测试仅提供防病毒的结果，不会测试其他安全保护。
 
-Windows Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全堆栈](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新和最复杂的威胁。 在某些情况下，客户可能甚至不知道它们受到保护，因为在[市场活动启动之后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)cyberattack 停止毫秒。 这是因为 Microsoft Defender 中的 Windows Defender 防病毒和其他[endpoint protection 平台（EPP）](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/)功能可在首次使用[机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术时检测并阻止恶意软件。
+Microsoft Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全堆栈](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新和最复杂的威胁。 在某些情况下，客户可能甚至不知道它们受到保护，因为在[市场活动启动之后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)cyberattack 停止毫秒。 这是因为 Microsoft Defender 中的 Microsoft Defender 防病毒和其他[endpoint protection 平台（EPP）](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/)功能可在首次使用[机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术时检测并阻止恶意软件。
 <br><br>
 
-**下载最新透明度报告：[检查行业测试结果（2019年11月）](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)**
+**下载最新透明度报告：[检查 AVT 测试结果-2020 年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 ### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-测试：最新测试中 5.5/6.0 的保护得分
 
 AV 测试产品检查和认证报告测试有以下三个类别：保护、性能和可用性。 以下分数适用于包含两个分数的保护类别：实际测试和 AV 测试参考集（称为 "流行恶意软件"）。
 
-- 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**最新**</sup>
+- 3月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**最新**</sup>
 
-    Windows Defender 防病毒实现了 5.5/6.0 的整体保护分数，并使用了21008恶意软件示例。
+    Microsoft Defender 防病毒实现了 5.5/6.0 的整体保护分数，并使用了20540恶意软件示例。
+
+- 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)
 
 - 11月-2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
@@ -64,15 +66,15 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 - 可能-6 月 2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-- 3月-2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/april-2019/microsoft-windows-defender-antivirus-4.18-191517/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-### <a name="av-comparatives-protection-rating-of-996-in-the-latest-test"></a>AV-比较级：99.6% 在最新测试中的保护评级
+### <a name="av-comparatives-protection-rating-of-995-in-the-latest-test"></a>AV-比较级：99.5% 在最新测试中的保护评级
 
 业务安全测试包含三个主要部分：模拟在线恶意软件攻击的真实保护测试、恶意软件保护在其中进入 internet 外部的系统的恶意软件保护测试（例如，USB）以及对系统性能产生影响的性能测试。
 
-- Business Security Test 2019 （十一月-11 月）：[实际保护率为 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) （<sup>**最新**</sup>）
+- Business Security Test 2020 Factsheet （四月—四月份）：[实际保护率 99.5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**最新**</sup>
 
-    在过去的一年中，Windows Defender 防病毒软件在实际的保护率上得分过高，在最新的测试中有99.6%。
+    在过去的一年中，Microsoft Defender 防病毒软件的实际保护率已经过高，在最新的测试中有99.5% 的分数。
+
+- Business Security Test 2019 （11月-11 月）：[实际保护率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
 - Business Security Test 2019 Factsheet （九月年8月）：[实际保护率 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
@@ -110,7 +112,7 @@ MITRE 测试了产品的功能，以检测目标攻击组 APT3 常用的技术�
 
 独立安全行业测试旨在以无偏差的方式评估最佳防病毒和安全产品。 但是，请务必记住，Microsoft 看到在本主题中突出显示的评估之外的更广泛、更广泛的威胁集之外。 例如，在 Microsoft 安全产品的平均一个月中，可确定超过100000000个新的威胁。 即使独立的测试人员可以获取和测试这些威胁中的1%，这是20个或30个以上产品中的一百万个测试。 换句话说，恶意软件的 vastness 使得评估抵御实际威胁的质量非常困难。
 
-Microsoft Defender ATP 中的功能提供了不属于行业防病毒测试的[更多层保护](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)，并解决了一些最新、最复杂的威胁。 将 AV 与 Microsoft Defender ATP 的其余部分隔离，创建了 Microsoft 安全堆栈在现实世界中的工作方式的部分图。 例如，攻击面降低和终结点检测 & 响应功能可帮助防止恶意软件在第一个位置进入设备。 我们已证明[Microsoft DEFENDER ATP 组件捕获](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)了 Windows Defender 防病毒在这些行业测试中丢失的示例，这更具代表性 Microsoft 安全套件如何有效地保护现实世界中的客户。
+Microsoft Defender ATP 中的功能提供了不属于行业防病毒测试的[更多层保护](https://cloudblogs.microsoft.com/microsoftsecure/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)，并解决了一些最新、最复杂的威胁。 将 AV 与 Microsoft Defender ATP 的其余部分隔离，创建了 Microsoft 安全堆栈在现实世界中的工作方式的部分图。 例如，攻击面降低和终结点检测 & 响应功能可帮助防止恶意软件在第一个位置进入设备。 我们已证明， [Microsoft DEFENDER ATP 组件捕获](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2ouJA)了 Microsoft Defender 防病毒在这些行业测试中丢失的示例，这更具代表性 microsoft 安全套件如何有效地保护真实世界中的客户。
 
 通过注册[Microsoft DEFENDER atp 的90天试用版](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp)或在[现有租户上启用预览功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/preview)，[详细了解 microsoft defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)并在自己的网络中对其进行评估。
 
