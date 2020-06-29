@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 了解保留标签通过保留所需内容、删除不需要的内容以及将内容标记为记录，来管理数据。
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817437"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879297"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留标签
 
@@ -347,9 +347,9 @@ It's possible or even likely that content might have several retention policies 
 
 在保留标签分配到内容后（无论是用户分配还是自动应用），你都可通过内容搜索来查找所有已使用特定保留标签进行分类的内容。
   
-创建内容搜索时，选择“**合规性标记**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+创建内容搜索时，选择“**合规性标签**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
-![“合规性标记”条件](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![合规性标签条件](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>使用保留标签代替较旧的功能
 
