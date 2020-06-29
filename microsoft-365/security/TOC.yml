@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: 配置和载入
               href: mtp/config-mtpeval.md
-            - name: 打开 Microsoft 威胁防护
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: 启动 Microsoft 威胁防护服务
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 生成警报测试
               href: mtp/generate-test-alert.md
         - name: 操作指南
           items:
             - name: 创建试用实验室环境
               href: mtp/mtp-evaluation.md
-              items:
-                - name: 准备
-                  href: mtp/prepare-mtpeval.md
-                - name: 设置
-                  href: mtp/setup-mtpeval.md
-                - name: 配置和载入
-                  href: mtp/config-mtpeval.md
-                - name: 打开 Microsoft 威胁防护
-                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
-                - name: 生成警报测试
-                  href: mtp/generate-test-alert.md
             - name: 部署支持的服务
               href: mtp/deploy-supported-services.md
             - name: 打开 Microsoft 威胁防护
               href: mtp/mtp-enable.md
+            - name: 打开常见问题
+              href: mtp/mtp-enable-faq.md
             - name: 事件
               items:
                 - name: 概述
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: 创建和管理检测规则
                       href: mtp/custom-detection-rules.md
-            - name: 安全功能分数
+            - name: Microsoft 安全功能分数
               items:
-                - name: 安全功能分数（新）
-                  href: mtp/microsoft-secure-score-new.md
-                - name: 安全功能分数（之前的迭代）
+                - name: 安全功能分数概述
                   href: mtp/microsoft-secure-score.md
-                - name: 安全功能分数（预览版）
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: 即将推出的功能
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: 报告
@@ -324,6 +311,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 使用除名门户将自己从阻止的发件人名单中删除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: 管理租户允许/阻止列表中的 URL 和文件
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: 防钓鱼保护
               href: ./office-365-security/anti-phishing-protection.md
               items:
