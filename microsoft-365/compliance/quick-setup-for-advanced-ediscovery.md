@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: '了解如何从安全与合规中心访问高级电子数据展示，并查看使用高级电子数据展示的典型工作流。  '
-ms.openlocfilehash: b824183c88e4bbf300c2e07c9e8802dfb704aadf
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: 了解如何从安全与合规中心访问高级电子数据展示，并查看使用高级电子数据展示的典型工作流。
+ms.openlocfilehash: 5bd183f0f5f1c2f091fb374aab1e54f191665ce6
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412831"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936255"
 ---
 # <a name="quick-setup-advanced-ediscovery-classic"></a>快速设置高级电子数据展示（经典）
 
@@ -32,7 +32,7 @@ ms.locfileid: "44412831"
   
 ## <a name="accessing-a-case-in-advanced-ediscovery"></a>访问高级电子数据展示中的案件集
 
-可以从安全与合规中心访问高级电子数据展示。必须是安全与合规中心内电子数据展示案件集的成员，才能访问高级电子数据展示中的案件集。若要了解如何分配电子数据展示案件集权限，以及如何将用户添加到电子数据展示案件集，请参阅[在 Office 365 中管理电子数据展示案件集](ediscovery-cases.md)。 
+You access Advanced eDiscovery from the Security &amp; Compliance Center. You have to be a member of an eDiscovery case in the Security &amp; Compliance Center to access the case in Advanced eDiscovery. For instructions about assigning eDiscovery case permissions and adding users to an eDiscovery case, see [Manage eDiscovery cases in Office 365](ediscovery-cases.md). 
   
 若要转到高级电子数据展示中的案件集，请执行以下操作： 
   
@@ -44,7 +44,7 @@ ms.locfileid: "44412831"
     
 4. 在此案件集的“**主页**”上，单击“**切换至高级电子数据展示**”。
     
-    此时，“正在连接到高级电子数据展示”**** 进度栏显示。一旦连接，此案件集便会在高级电子数据展示中打开。 
+    The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected, the case is opened in Advanced eDiscovery. 
     
 ## <a name="workflow"></a>工作流
 
@@ -52,15 +52,15 @@ ms.locfileid: "44412831"
   
 ![图中显示了包含四个设置阶段的高级电子数据展示工作流，包括设置用户和案件集、标识案件集数据、导出和处理，然后是分析和导出到本地计算机这两个阶段。](../media/76589ccc-789d-4581-b3a8-98d339b05979.png)
   
-本设置部分展示了工作流中的前四步。若要了解工作流中的其他步骤，请参阅以下内容。
+This setup section describes the first four steps in the workflow. For a description of the other steps in the workflow, see the following.
   
 ## <a name="analyze"></a>分析
 
-[分析案件集数据](analyze-case-data-with-advanced-ediscovery.md)：可通过各种参数标识和整理文件，允许使用主题，并能显示结果。用户可自定义分析功能，以获得更优质的结果。 
+[Analyzing case data](analyze-case-data-with-advanced-ediscovery.md) Identifies and organizes the files by various parameters, enables the use of Themes, and displays the results. Analyze functionality can be customized by the user in order to achieve enhanced results. 
   
 ## <a name="relevance-setup-and-relevance"></a>相关性设置和相关性
 
-[相关性设置](manage-relevance-setup-in-advanced-ediscovery.md)和[使用相关性模块](use-relevance-in-advanced-ediscovery.md)：可根据随机文件样本执行评估和相关性定型，并能使用它们将决策应用于预测编码过程。可计算并显示中期结果，同时监视过程的统计有效性。可显示有助于制定审阅决策的结果。 
+[Relevance Setup](manage-relevance-setup-in-advanced-ediscovery.md) and [Using the Relevance module](use-relevance-in-advanced-ediscovery.md) Enables assessment and relevance training based on a random sample of files and uses them to apply decisions to the predictive coding process. Calculates and displays interim results while monitoring statistical validity of the process. Displays the results to facilitate in making review decisions. 
   
 ## <a name="export"></a>导出
 
