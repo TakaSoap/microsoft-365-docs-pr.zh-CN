@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: '了解如何使用安全 &amp; 合规中心来访问高级电子数据展示，并运行进程模块的情况。  '
+description: 了解如何使用安全 &amp; 合规中心来访问高级电子数据展示，并运行进程模块的情况。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818901"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936155"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中运行 Process module 和 load data
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689240"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936781"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -70,10 +70,16 @@ ms.locfileid: "44689240"
 
 通过通信合规性策略，您可以选择将以下一个或多个通信平台中的邮件作为组或独立的源进行扫描。 默认情况下，跨这些平台捕获的通信每个策略保留7年，即使用户离开组织并删除了其邮箱也是如此。
 
-- **Microsoft 团队**：可以扫描公共和私有 Microsoft 团队频道和个人聊天中的交流通信和相关附件。 团队聊天和附件匹配通信合规性策略条件可能需要长达24小时才能完成处理。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
+- **Microsoft 团队**：可以扫描公共和私有 Microsoft 团队频道和个人聊天中的聊天通信。 如果将用户分配给选择 Microsoft 团队覆盖范围的通信合规性策略，则会在用户所属的所有 Microsoft 团队中自动监视用户的聊天通信。 Microsoft 团队覆盖范围将自动包含在预定义的策略模板中，并且默认情况下将在自定义策略模板中选中。 团队聊天匹配通信合规性策略条件可能需要长达24小时才能完成处理。 使用以下组管理配置监督团队中的个人用户聊天和通道通信：
 
     - **对于团队聊天通信：** 分配单个用户或将[通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
     - **对于团队渠道通信：** 分配要扫描的每个 Microsoft 团队频道或 Microsoft 365 组，其中包含特定用户的通信合规性策略。 如果将同一用户添加到其他 Microsoft 团队频道或 Microsoft 365 组，请确保将这些新的频道和组添加到通信合规性策略中。
+    - **对于团队聊天与混合电子邮件环境**之间的通信：通信合规性可以为具有 Exchange 本地部署的组织或已启用 Microsoft 团队的外部电子邮件提供程序监视用户的聊天消息。 您必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 创建通信合规性策略时，将在策略向导中将此通讯组分配为受**监督的用户和组**选择。
+
+    >[!IMPORTANT]
+    >您必须将请求与 Microsoft 支持文件一起使用，以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的团队聊天数据。 有关详细信息，请参阅针对[本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+
+你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户基于云的邮箱中的 Teams 聊天数据。
 
 - **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 Exchange 电子邮件和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: '了解可以在高级电子数据展示中的事例级别定义的标签、跨模块和租户设置。  '
-ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解可以在高级电子数据展示中的事例级别定义的标签、跨模块和租户设置。
+ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630559"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936419"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>在高级电子数据展示中定义大小写和租户设置（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主题中介绍了高级电子数据展示事例和租户设置。
   
@@ -44,7 +44,7 @@ ms.locfileid: "43630559"
     
 - 文件显示名称：将在整个高级电子数据展示中显示文件的文件标识符，以标识文件标题/路径或电子邮件主题的高级电子数据展示显示名称的替代方法。
     
-1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 打开 "**设置和\>实用程序机箱设置**" 选项卡\> **跨模块**。 
+1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 打开 "**设置和实用程序 \> 机箱设置**" 选项卡 \> **跨模块**。 
     
 2. 从 "**登录后的默认页面**" 选项中进行选择： 
     
@@ -52,7 +52,7 @@ ms.locfileid: "43630559"
     
   - **事例页**
     
-3. 单击“**保存**”。
+3. 单击“保存”****。
     
 ## <a name="tenant-settings"></a>租户设置
 
@@ -68,7 +68,7 @@ ms.locfileid: "43630559"
   
 1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 
     
-2. 在 "**设置和实用工具\>租户设置**" 选项卡中，选择 "**事件日志**"。 显示事件日志数据。
+2. 在 "**设置和实用工具 \> 租户设置**" 选项卡中，选择 "**事件日志**"。 显示事件日志数据。
     
   - 若要按事例筛选日志输出，请从 "**事例**" 列表中选择事例。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "43630559"
     
   - 若要修改列顺序，请单击并拖动列标题。
     
-  - 若要在日志页面之间移动**\>** ， **\<** 请单击 "" 和 "图标"。 
+  - 若要在日志页面之间移动，请单击 "" **\>** 和 " **\<** 图标"。 
     
 ### <a name="system-information"></a>系统信息
 
@@ -84,7 +84,7 @@ ms.locfileid: "43630559"
   
 1. 通过单击 " **Cogwheel** " 图标打开 "**设置和实用工具**"。 
     
-2. 在 "**设置和实用工具\>租户设置**" 选项卡中，选择 "**系统信息**"。 将显示版本信息。
+2. 在 "**设置和实用工具 \> 租户设置**" 选项卡中，选择 "**系统信息**"。 将显示版本信息。
     
 可以通过单击租户信息下方的 "**刷新**" 图标来更新显示。 
   

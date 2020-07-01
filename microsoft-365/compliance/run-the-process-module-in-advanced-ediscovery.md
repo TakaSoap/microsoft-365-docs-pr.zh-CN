@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: '了解有关使用高级电子数据展示为分析准备数据的事例文件的指南。  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解有关使用高级电子数据展示为分析准备数据的事例文件的指南。
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626458"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936195"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>在高级电子数据展示中运行流程模块（经典）
 
-在**准备** \> **过程**中，将事例文件加载到高级电子数据展示中。 
+在**准备**过程中，将事例文件加载到高级电子数据展示中 \> **Process**。 
   
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>指南：为高级电子数据展示准备数据
 
@@ -42,7 +42,7 @@ ms.locfileid: "43626458"
     
 - **文件类型和名称**：
     
-  - 高级电子数据展示可以处理各种格式的文件，并将加载的本机文件提取为标准\*格式，例如。TXT、HTML 或。XML. 文本文件的处理速度比本机文件更快。 提取的文本文件存储在事例文件夹中。
+  - 高级电子数据展示可以处理各种格式的文件，并将加载的本机文件提取为标准格式，例如 \* 。TXT、HTML 或。XML. 文本文件的处理速度比本机文件更快。 提取的文本文件存储在事例文件夹中。
     
   - 不加载无法提取的文件，如系统文件或图形图像。 这些文件可能会延迟处理。
     

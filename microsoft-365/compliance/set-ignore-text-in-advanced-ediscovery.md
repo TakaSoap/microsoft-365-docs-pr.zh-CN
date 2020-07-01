@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: '了解在使用高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。  '
-ms.openlocfilehash: cd425c71c06074b5d12851dd126692c914b95489
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解在使用高级电子数据展示中的分析和处理模块时，如何定义要忽略特定文本的规则。
+ms.openlocfilehash: fd7b1f3236c88faf792a97146bbed35802f6c695
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631249"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936889"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>设置用于在高级电子数据展示中进行分析的 "忽略文本" 选项（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 "忽略文本" 功能可应用于以下所有高级电子数据展示模块或以下任一高级电子数据展示模块：分析（接近重复项、电子邮件线程、主题）和相关性。 已忽略的文本不会出现在相关性中显示的文件中，并且分析/计算将丢弃忽略的文本。
   
@@ -62,7 +62,7 @@ ms.locfileid: "43631249"
     
     **这是第二个句子和第二行 "**
     
-    正则表达式 first （.\*）$ 将导致：
+    正则表达式 first （. \* ）$ 将导致：
     
     **"这是**
     
@@ -76,7 +76,7 @@ ms.locfileid: "43631249"
     
     例如，以下正则表达式将删除在开始和结束字符串之间的电子邮件线程中的免责声明和法律声明：
     
-    **此邮件包含机密信息（. |\s）\*如果需要验证，请请求硬复制版本**
+    **此邮件包含机密信息（. |\s） \* 如果需要验证，请请求硬复制版本**
     
 - 若要删除免责声明（包括特殊字符），请执行以下操作： 
     
@@ -90,11 +90,11 @@ ms.locfileid: "43631249"
     
     要删除上述免责声明的正则表达式应为： 
     
-    **\/\\*\\此邮件包含机密信息\.（. |\s）\*如果需要验证，请请求硬复制版本\.\/\\*\\**
+    **\/\\*\\此邮件包含机密信息 \. （. |\s） \* 如果需要验证，请请求硬复制版本 \.\/\\*\\**
     
 - 正则表达式规则：
     
-  - 除空格、"_" 和 "-" 之外不属于字母表的任何字符都必须以 "\"." 开头。
+  - 除空格、"_" 和 "-" 之外不属于字母表的任何字符都必须以 "." 开头 \" 。
     
   - 正则 eExpression 字段的长度不受限制。
     
@@ -103,7 +103,7 @@ ms.locfileid: "43631249"
   
 ## <a name="define-ignore-text-rule"></a>定义 "忽略文本" 规则
 
-1. 在 "**管理\>分析\>分析选项**" 选项卡的 "**忽略文本**" 部分中**+** ，单击图标以添加规则。 
+1. 在 "**管理 \> 分析 \> 分析选项**" 选项卡的 "**忽略文本**" 部分中，单击 **+** 图标以添加规则。 
     
 2. 在 "**添加忽略文本**" 对话框的 "**名称**" 字段中，为 "忽略文本" 规则键入一个名称。 
     

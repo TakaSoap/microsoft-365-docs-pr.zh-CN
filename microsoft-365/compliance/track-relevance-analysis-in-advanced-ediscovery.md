@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: '了解如何查看和解释高级电子数据展示中的案例问题的相关性培训状态和结果。  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何查看和解释高级电子数据展示中的案例问题的相关性培训状态和结果。
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636615"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936215"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>跟踪高级电子数据展示中的相关性分析（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，"相关性跟踪" 选项卡将显示在 "标签" 选项卡中执行的相关性培训的计算有效性，并指示要在相关的迭代培训过程中执行的下一步。 
   
@@ -72,7 +72,7 @@ ms.locfileid: "43636615"
   
 如果存在多个问题，则批处理计算在每个问题中完成。 在批处理计算期间，在处理所有文件时监视进度。 
   
-在这里，建议的下一步是 "无"，这表明此时不需要进行任何额外的迭代相关性培训。 下一阶段是 "**相关性\>决定**" 选项卡。 
+在这里，建议的下一步是 "无"，这表明此时不需要进行任何额外的迭代相关性培训。 下一阶段是 "**相关性 \> 决定**" 选项卡。 
   
 如果要在计算批次后导入新文件，管理员可以将导入的文件添加到新的负载。
   
@@ -84,9 +84,9 @@ ms.locfileid: "43636615"
 如果文件标记中存在不一致，则会影响分析。 当结果不是最佳或一致性不确定时，可以使用高级电子数据展示标记一致性流程。 返回可能不一致的标记文件的列表，并根据需要对其进行查看和重新标记。
   
 > [!NOTE]
-> 在七个或更多的培训完成后，可在 "**相关性** \> **跟踪** \> **问题** \> " 中查看 "**详细结果** \> **培训进度**" 中的标记一致性。 一次对一个问题完成了此评审。 
+> 在七个或更多的培训完成后，可在 "**相关性**跟踪问题" 中查看 " \> **Track** \> **Issue** \> **详细结果** \> **培训进度**" 中的标记一致性。 一次对一个问题完成了此评审。 
   
-1. 在**关联\>跟踪**中，展开问题的行。
+1. 在**关联 \> 跟踪**中，展开问题的行。
     
 2. 在 "**下一步**" 的右侧，单击 "**修改**"。
     
@@ -98,7 +98,7 @@ ms.locfileid: "43636615"
     
 ## <a name="viewing-and-using-relevance-results"></a>查看和使用相关性结果
 
-在 "**相关性\>跟踪**" 选项卡中，展开问题的行，然后单击 "**详细结果**" 旁边的 "**查看**"。 将显示详细的结果窗格，如下所示，如下所示。
+在 "**相关性 \> 跟踪**" 选项卡中，展开问题的行，然后单击 "**详细结果**" 旁边的 "**查看**"。 将显示详细的结果窗格，如下所示，如下所示。
   
 ![相关性培训详细结果](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
@@ -108,7 +108,7 @@ ms.locfileid: "43636615"
   
 ![相关性跟踪标记摘要](../media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>关键字
+### <a name="keywords"></a>Keywords
 
 关键字是由高级电子数据展示作为文件是否相关的重要指示器而标识的文件中的唯一字符串、单词、短语或单词序列。 标记为相关的文件中的 "包括" 列列表关键字和权重，"Exclude" 列列出标记为不相关的文件中的关键字和权重。
   
@@ -133,7 +133,7 @@ ms.locfileid: "43636615"
  **培训进度图**：显示与 F 度量值相比，在大量相关培训周期后的相关性培训稳定性程度。 当我们在图形中从左到右移动时，置信区间会缩小，并在高级电子数据展示优化时，与 F 度量标准一起使用，以确定稳定性。
   
 > [!NOTE]
-> 相关性使用 F2 的 F 度量标准，在这种情况下，回调的精确度应为精度的两倍。 对于高丰富的情况（超过25%），相关性使用 F1 （1:1 比率）。 可以在**关联设置** \> "**高级设置**" 中配置 F 度量比率。 
+> 相关性使用 F2 的 F 度量标准，在这种情况下，回调的精确度应为精度的两倍。 对于高丰富的情况（超过25%），相关性使用 F1 （1:1 比率）。 可以在**关联设置**" \> **高级设置**" 中配置 F 度量比率。 
   
 ### <a name="batch-calculation-results"></a>批量计算结果
 

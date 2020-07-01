@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: '了解如何使用安全 &amp; 合规中心准备数据以使用高级电子数据展示进行分析。 '
-ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: 了解如何使用安全 &amp; 合规中心准备数据以使用高级电子数据展示进行分析。
+ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412821"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936327"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>为高级电子数据展示准备数据（经典）
 
@@ -51,7 +51,7 @@ ms.locfileid: "44412821"
     
 4. 在高级电子数据展示中，单击要在其中将数据加载到的事例旁边的 "**打开**"。 
     
-5. 在此案例的**主页**上，单击 "**切换到高级电子数据展示**"。 
+5. 在此案件集的“**主页**”上，单击“**切换至高级电子数据展示**”。 
     
     ![单击 "切换到高级电子数据展示" 以在高级电子数据展示中打开事例](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

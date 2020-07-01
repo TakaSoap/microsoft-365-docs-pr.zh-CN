@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: '了解高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解高级电子数据展示中的相关性模块，包括用于培训和文件审阅的工作流和指南以及步骤。
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626388"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936605"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>在高级电子数据展示中使用相关性模块（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，相关性模块包含与案例相关的相关文件的相关性培训和审核。 相关性工作流如下所示，如下所示：
   
@@ -90,7 +90,7 @@ ms.locfileid: "43626388"
     
 ## <a name="steps-in-relevance-training"></a>相关培训中的步骤
 
-在 "**相关性\>跟踪**" 选项卡中，高级电子数据展示了在处理过程中如何继续进行操作的建议，并提供以下后续步骤。 如果在相关培训过程中建议执行以下每个步骤，则会对这些含义进行说明。 
+在 "**相关性 \> 跟踪**" 选项卡中，高级电子数据展示了在处理过程中如何继续进行操作的建议，并提供以下后续步骤。 如果在相关培训过程中建议执行以下每个步骤，则会对这些含义进行说明。 
   
 - 标记/继续标记：专家对示例中的每个文件和问题执行的文件审阅和相关性标记。
     

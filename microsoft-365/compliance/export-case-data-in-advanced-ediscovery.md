@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: '了解导出电子数据展示事例数据的准则和在高级电子数据展示中使用导出过程进行审阅的结果。  '
+description: 了解导出电子数据展示事例数据的准则和在高级电子数据展示中使用导出过程进行审阅的结果。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817761"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936409"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高级电子数据展示中导出事例数据（经典）
 

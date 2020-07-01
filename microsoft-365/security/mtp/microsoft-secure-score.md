@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844620"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936625"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -41,7 +41,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 组织可以获得对指标和趋势的可靠可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较以及其他更多。 分数还可以反映第三方解决方案解决建议操作的时间。
 
-## <a name="how-it-works"></a>运作方式
+## <a name="how-it-works"></a>工作原理
 
 你可以配置推荐的安全功能、执行与安全相关的任务，或使用第三方应用程序或软件或其他缓解措施解决改进操作。 某些改进操作仅在完全完成时给出点，而有些改进操作在为某些设备或用户完成一些点时提供部分点。 如果不能或不希望执行其中一个改进操作，则可以选择接受风险或剩余风险。
 
@@ -56,6 +56,19 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
 目前有关于 Microsoft 365 （包括 Exchange Online）、Azure AD、Microsoft Defender ATP、Azure ATP 和云应用安全性的建议。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但都是一个很棒的基准。 您还可以将改进操作标记为由第三方或备用缓解措施覆盖。
+
+### <a name="security-defaults"></a>安全性默认值
+
+Microsoft 安全评分已更新了[在 Azure Active Directory 中支持安全默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)的改进操作，这使组织能够更轻松地使用预配置的安全设置进行常见攻击，从而帮助保护组织。
+
+如果启用安全默认设置，将为你授予以下改进操作的完整分数：
+
+- 确保所有用户都可以完成多重身份验证以实现安全访问（9点）
+- 需要对管理角色进行 MFA （10磅）
+- 启用策略以阻止旧版身份验证（7磅）
+
+>[!IMPORTANT]
+>安全性默认值包括为 "登录风险策略" 和 "用户风险策略" 改进操作提供类似安全性的安全功能。 建议将这些策略的安全默认值更新为 "通过其他缓解措施进行解决"，而不是将这些策略设置为 "通过其他缓解措施"。
 
 ## <a name="required-permissions"></a>所需权限
 
@@ -78,7 +91,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 * 帮助台管理员
 * 用户管理员
 * 服务管理员
-* 安全读取者
+* 安全读者
 * 安全操作员
 * 全局读取者
 

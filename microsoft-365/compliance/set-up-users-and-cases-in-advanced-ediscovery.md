@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: '了解如何配置用户角色、创建事例以及将用户分配给高级电子数据展示中的案例。  '
+description: 了解如何配置用户角色、创建事例以及将用户分配给高级电子数据展示中的案例。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8e24354960b517815bef3cf498822d6ce9fd9dbe
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819172"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936739"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置用户和案例（经典）
 

@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: '了解如何为高级电子数据展示中的分析过程配置高级设置，包括临近的重复、电子邮件线索和主题。 '
+description: 了解如何为高级电子数据展示中的分析过程配置高级设置，包括临近的重复、电子邮件线索和主题。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 39d99609cfff92dcd6e6d2f4483076b8bfe808be
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819232"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936749"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>在高级电子数据展示中设置分析高级设置
 

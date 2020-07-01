@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全合规中心中查找和使用适用于 Office 365 高级威胁防护的报告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613356"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936991"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -51,9 +51,9 @@ ATP 报告包括以下内容：
 
 |||
 |---|---|
-|按检测类型|哪些策略有助于捕捉这些威胁？|
+|按策略类型|哪些策略有助于捕捉这些威胁？|
 |按检测技术|哪种基本的 Microsoft 技术会发现威胁？|
-|按传递状态|作为威胁检测到的电子邮件发生了什么？|
+|按传递状态|作为威胁检测到的电子邮件的最终传递状态是什么？|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ ATP 报告包括以下内容：
 
 ![此图显示了导出为恶意软件视图菜单中的一个选项、"创建计划" 和 "请求报告"。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**注意**：可以为**网络钓鱼**和**恶意软件**导出的最大条目数就是10000。 如果导出视图，则仅导出最新的10000项。
+> [!NOTE]
+> 可以为**网络钓鱼**和**恶意软件**导出的最大条目数是10000。 如果导出视图，则仅导出最新的10000项。 在导出的数据中，"_邮件计数_" 列表示检测技术和策略类型检测到的邮件数。    
 
 概述和电子邮件视图将在处理小时数（而不是24小时）内显示信息（请求重新）。 此处的提高速度是一个清晰的信号）！
 
@@ -80,7 +81,7 @@ ATP 报告包括以下内容：
 
 ![一天的 ATP 威胁防护状态数据](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-默认情况下，威胁防护状态报告显示过去七天的数据。 不过，您可以选择 "**筛选器**" 并将日期范围更改为查看最多90天的数据。 （如果使用的是试用订阅，则可能限制为30天的数据。）
+默认情况下，威胁防护状态报告显示过去七天的数据。 但是，您可以选择**筛选器**并更改日期范围，以查看聚合视图的最多90天的数据，以及详细信息视图的30天。 （如果使用的是试用订阅，则可能限制为30天的数据。）
 
 ![ATP 威胁防护状态筛选器](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ ATP 报告包括以下内容：
 
 ![ATP 文件类型报告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-当您将鼠标悬停在特定的一天时，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾邮件 &amp; 反恶意软件保护](anti-spam-and-anti-malware-protection.md)检测到的恶意文件的类型细目。
+当您将鼠标悬停在特定的一天时，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾邮件 &amp; 反恶意软件保护](anti-spam-and-anti-malware-protection.md)检测到的恶意文件的类型细目。 报告的聚合视图允许在筛选过程中90天，而详细信息视图只允许进行10天的筛选。 
   
 ![ATP 文件类型报告一天的数据](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 

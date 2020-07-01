@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: '了解在高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解在高级电子数据展示中查看分析过程结果的位置，包括所显示的任务选项的定义。
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626358"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936945"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>查看高级电子数据展示中的分析结果（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，分析过程的进度和结果可在各种显示器中查看，如下所述。
   
 ## <a name="view-analyze-task-status"></a>查看分析任务状态
 
-在**准备\>分析\>结果\>任务状态**中，状态在分析流程执行期间和之后都会显示。 
+在**准备 \> 分析 \> 结果 \> 任务状态**中，状态在分析流程执行期间和之后都会显示。 
   
 ![分析任务状态](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   

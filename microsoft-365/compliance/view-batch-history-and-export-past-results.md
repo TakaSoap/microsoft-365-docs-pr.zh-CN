@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: '了解如何在高级电子数据展示中查看所选导出批处理会话的详细信息以及如何撤消上次导出会话。  '
+description: 了解如何在高级电子数据展示中查看所选导出批处理会话的详细信息以及如何撤消上次导出会话。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 498cd5d0fbeea4902a0992e8210666884a308f72
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b142c5d582b9a7bb84dd518325369e4b1adccf69
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819052"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936185"
 ---
 # <a name="view-batch-history-and-export-past-results-in-advanced-ediscovery-classic"></a>高级电子数据展示（经典）中的查看批次历史记录和导出过去的结果
 

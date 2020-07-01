@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 使用此文章了解有关在 Office 365 中启用和配置特权访问管理的详细信息。
-ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036417"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936317"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
 本主题指导您在组织中启用和配置特权访问管理。 您可以使用 Microsoft 365 管理中心或 Exchange 管理 PowerShell 管理和使用特权访问。
 
-## <a name="before-you-begin"></a>开始之前
+## <a name="before-you-begin"></a>准备工作
 
 在开始使用特权访问管理之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用特权访问管理，您的组织必须具有以下订阅或加载项之一：
 
@@ -81,7 +81,7 @@ ms.locfileid: "44036417"
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**组** > " "**添加组**"。
+2. 在管理中心中，转到 "**组**" "  >  **添加组**"。
 
 3. 选择 "**已启用邮件的安全组**"，然后完成 "**名称**"、"**组电子邮件地址**" 和 "新组的**说明**" 字段。
 
@@ -99,7 +99,7 @@ ms.locfileid: "44036417"
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置" > 设置 > 安全性 & 隐私** > 权限**访问**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 启用 "**需要批准以获取特权任务**" 控件。
 
@@ -134,7 +134,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 选择 "**管理访问策略和请求**"。
 
@@ -180,7 +180,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 使用您的凭据登录到[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 选择 "**管理访问策略和请求**"。
 
@@ -220,7 +220,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. 使用你的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 选择 "**管理访问策略和请求**"。
 
@@ -248,7 +248,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. 使用你的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 选择 "**管理访问策略和请求**"。
 
@@ -290,7 +290,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 选择 "**管理访问策略和请求**"。
 
@@ -298,7 +298,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 5. 选择要删除的策略，然后选择 "**删除策略**"。
 
-6. 选择“关闭”****。
+6. 选择“**关闭**”。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 
@@ -316,7 +316,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 使用组织中的管理员帐户的凭据登录[Microsoft 365 管理中心](https://admin.microsoft.com)。
 
-2. 在管理中心中，转到 "**设置** > **安全 & 隐私** > "**特权访问权限**。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
 
 3. 启用 "**需要批准以进行特权访问**控制"。
 

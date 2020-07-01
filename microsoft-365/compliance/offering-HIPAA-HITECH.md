@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773713"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936347"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任（HIPAA） & 高科技行为
 
@@ -92,13 +92,13 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **如何了解有关遵守 HIPAA 和高科技法案的更多信息？**
 
 为帮助客户执行此任务，Microsoft 已发布以下指南：
 
-- 适用于[Azure](https://aka.ms/azurehipaaguidance)和[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案实现指南*。 为隐私、安全性和合规性监察官以及其他负责 HIPAA 和高科技法案实施的人员，它们描述了组织为保持合规性应采取的具体步骤。
+- 适用于[Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)和[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案实现指南*。 为隐私、安全性和合规性监察官以及其他负责 HIPAA 和高科技法案实施的人员，它们描述了组织为保持合规性应采取的具体步骤。
 - [使用 Microsoft Azure 设计安全运行状况解决方案的实践指南](https://aka.ms/azureindustrysecurity)可帮助您更好地了解以安全方式成功采用云服务所需的操作。
 - [解决 Microsoft 云中的 HIPAA 安全性和隐私要求](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)提供了管理法规要求的简短概述。 此外，它还详细分析了 Microsoft 云服务是如何使用映射到这些要求的方法构建的，并提供了有关如何构建合规性解决方案的指南。
 
@@ -110,7 +110,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 - [HIPAA Omnibus 规则](https://aka.ms/HIPAA-omnibus)（最终管理法规-修改 HIPAA 规则）
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解 Azure 的 HIPAA 合规性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（5月19日，2016）
 - [Azure HIPAA HITRUST 蓝图示例](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)

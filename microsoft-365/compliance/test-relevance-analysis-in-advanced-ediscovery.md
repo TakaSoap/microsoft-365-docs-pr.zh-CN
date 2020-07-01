@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: '了解如何使用高级电子数据展示中的批量计算之后的 "测试" 选项卡来测试、比较和验证总体处理质量。  '
-ms.openlocfilehash: 67b480ea340dace4cab0b038d678b6d005bf545b
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何使用高级电子数据展示中的批量计算之后的 "测试" 选项卡来测试、比较和验证总体处理质量。
+ms.openlocfilehash: c5a885b3483b9ce319fffefa55037c0c2c8f3c85
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637196"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936205"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>在高级电子数据展示中测试相关性分析（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 利用高级电子数据展示中的 "测试" 选项卡，可以测试、比较和验证总体处理质量。 这些测试是在批量计算后执行的。 通过在集合中标记文件，专家就是否对每个已标记的文件实际是否与事例相关做出最后的判断。 
   
@@ -42,7 +42,7 @@ ms.locfileid: "43637196"
     
 - 以表格形式比较评审集和其余部分的总体参数，例如，文件数、估计的相关文件数、估计丰富程度以及查找其他相关文件所需的平均成本。 成本参数设置可由管理员进行设置。
     
-1. 打开 "**相关性\>测试**" 选项卡。 
+1. 打开 "**相关性 \> 测试**" 选项卡。 
     
 2. 在 "**测试**" 选项卡中，单击 "**新建测试**"。 将显示 "**创建测试**" 对话框，如下面的示例所示。 
     
@@ -62,7 +62,7 @@ ms.locfileid: "43637196"
     
 9. 单击 "**开始标记**"。 生成测试示例。
     
-10. 查看并标记** \>相关性标记**选项卡中的每个文件，完成后，单击 "**计算**"。
+10. 查看并标记**相关性 \> 标记**选项卡中的每个文件，完成后，单击 "**计算**"。
     
 11. 在 "测试" 选项卡中，可以单击 "**查看结果**" 以查看测试结果。 下图中显示了一个示例。 
     
@@ -86,7 +86,7 @@ ms.locfileid: "43637196"
 
 "测试切片" 测试执行的测试类似于 "测试 Rest" 测试，而是对由相关性读取% 指定的一段文件集执行测试。
   
-1. 打开 "**相关性\>测试**" 选项卡。 
+1. 打开 "**相关性 \> 测试**" 选项卡。 
     
 2. 在 "**测试**" 选项卡中，单击 "**新建测试**"。 将显示 "**创建测试**" 对话框。 
     
@@ -106,7 +106,7 @@ ms.locfileid: "43637196"
     
 9. 单击 "**开始标记**"。 生成测试示例。
     
-10. 查看并标记** \>相关性标记**选项卡中的每个文件，完成后，单击 "**计算**"。 
+10. 查看并标记**相关性 \> 标记**选项卡中的每个文件，完成后，单击 "**计算**"。 
     
 11. 在 "测试" 选项卡中，可以单击 "**查看结果**" 以查看测试结果。 
     

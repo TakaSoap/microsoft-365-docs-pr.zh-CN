@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: '查看执行评估培训的步骤，包括标记文件，并在高级电子数据展示中查看评估结果。 '
-ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 查看执行评估培训的步骤，包括标记文件，并在高级电子数据展示中查看评估结果。
+ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630689"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936689"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>高级电子数据展示中的标记和评估（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本节介绍高级电子数据展示相关性评估模块的过程。 
   
 ## <a name="performing-assessment-training-and-analysis"></a>执行评估培训和分析
 
-1. 在 "**相关性\>跟踪**" 选项卡中，单击 "**评估**以启动案例评估"。 
+1. 在 "**相关性 \> 跟踪**" 选项卡中，单击 "**评估**以启动案例评估"。 
     
     例如，在此过程中，将创建一个包含500个文件的示例评估集，并显示 "**标记**" 选项卡，其中包含 "标记" 面板、显示的 "文件内容" 和 "其他标记" 选项。 
     
@@ -121,7 +121,7 @@ ms.locfileid: "43630689"
 如果没有基于统计的稳定性，则会有较低级别的精确性和置信度的结果。 但是，当您不需要知道找到的相关文件的百分比时，可以使用这些结果查找相关文件。 同样，此状态也可用于培训较低丰富的问题，其中相关性分数可加快对与特定问题相关的文件的访问。
   
 > [!TIP]
-> 在 "**相关性\>跟踪**" 选项卡中，展开 "问题显示" 中，可使用以下查看选项： > 建议的下一步骤（如**下一步）：** 通过单击其右侧的 "**修改**" 按钮，然后在**下一步**中选择不同的步骤，可以跳过标记（每个问题）。 如果评估进度指示器尚未完成，则评估将是下一个推荐的选项，以标记更多评估文件并提高统计信息准确性。 > 您可以通过单击 "**修改**"，并在 "**评估级别" 对话框**中更改 "**撤回估计" 的目标误差距**，然后单击 "**更新值**" 来更改错误边距并评估其影响。 此外，在此对话框中，可以通过单击 "**高级**" 来查看高级选项。 > 可以通过单击 "**视图**" 来查看其他评估级别统计信息及其影响。 在显示的 "详细结果" 对话框中，如果有至少500个标记的评估文件，并且至少18个文件已标记为与问题相关，则统计信息将可用于每个问题。 
+> 在 "**相关性 \> 跟踪**" 选项卡中，展开 "问题显示" 中，可使用以下查看选项： > 建议的下一步骤（如**下一步）：** 通过单击其右侧的 "**修改**" 按钮，然后在**下一步**中选择不同的步骤，可以跳过标记（每个问题）。 如果评估进度指示器尚未完成，则评估将是下一个推荐的选项，以标记更多评估文件并提高统计信息准确性。 > 您可以通过单击 "**修改**"，并在 "**评估级别" 对话框**中更改 "**撤回估计" 的目标误差距**，然后单击 "**更新值**" 来更改错误边距并评估其影响。 此外，在此对话框中，可以通过单击 "**高级**" 来查看高级选项。 > 可以通过单击 "**视图**" 来查看其他评估级别统计信息及其影响。 在显示的 "详细结果" 对话框中，如果有至少500个标记的评估文件，并且至少18个文件已标记为与问题相关，则统计信息将可用于每个问题。 
   
 ## <a name="see-also"></a>另请参阅
 

@@ -2,10 +2,10 @@
 title: 查看安全与合规中心内的电子邮件安全报告
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 01/16/2020
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,120 +18,364 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfee1fa2c6e515bfc10ed7a633584c54763fdec4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819457"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44937010"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
-[安全 & 合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能如何保护您的组织）。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。
+[安全 & 合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能如何保护您的组织）。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
 ![Security & 合规中心中的报告仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-您的电子邮件安全报告包括以下内容：
-
-- [URL 威胁防护报告](#url-threat-protection-report-new)（**新！**）
-- [已泄露用户报告](#compromised-users-report)
-- [加密报告](#encryption-report)
-- [威胁防护状态](#threat-protection-status-report)
-- [恶意软件检测报告](#malware-detections-report)
-- [主要恶意软件报告](#top-malware-report)
-- [主要发件人和收件人报告](#top-senders-and-recipients-report)
-- [欺骗检测报告](#spoof-detections-report)
-- [垃圾邮件检测报告](#spam-detections-report)
-- [发送和接收的电子邮件报告](#sent-and-received-email-report)
-- [用户报告的邮件报告](#user-reported-messages-report)
-
-## <a name="url-threat-protection-report-new"></a>URL 威胁防护报告（**新！**）
-
-任何人都可以使用 URL 威胁防护报告：
-
-- Exchange Online Protection*和*高级威胁防护外接程序（计划 1*或*计划2）
-- Microsoft 365 E5 订阅
-
-这是一个具有两个聚合视图的 "单击中心" 报告。
-
-1. 第一个视图是*URL 单击保护操作*，它重点显示由租户中的用户单击的 URL 的数目，以及单击的结果。 A 单击此处指示用户已通过阻止页面单击到恶意网站（可由管理员在安全链接策略中禁用）。
-
-2. 第二个视图是*URL 单击 "按应用程序*"，它显示了在当今支持安全链接的不同应用程序（如在电子邮件客户端或 Microsoft Word 中）单击的 url 的数目。 两个聚合视图中的数据每4小时刷新一次。
-
-URL 威胁防护报告的详细信息表提供了在租户内发生的所有点击的近实时视图，其中包括诸如*username*、 *URL*、*网络邮件 ID* （如果从电子邮件中单击该 URL）的调查信息，以及有关调查和分析的其他有用信息。
-
-默认情况下，报告仅显示通过安全链接阻止的 Url 单击时的数据，但也可以查看筛选器中的 "通过选择*允许的 url* " 复选框的所有 URL 单击的信息。
-
-如果应用了 "安全链接策略" 的用户已选中 "不*跟踪用户单击*" 选项，则此报告将不会有单击的数据。
-
-![操作中的 URL 威胁防护报告的图形。](../../media/tp-URLThreatProRpt1.PNG)
-
 ## <a name="compromised-users-report"></a>已泄露用户报告
 
-此报告可供任何具有 Exchange Online Protection 的用户使用，并显示标记为可疑用户或受限制用户的用户帐户数。在帐户中，数据尤其有用的是表明用户帐户可能有问题或甚至已泄露的状态。 通过频繁使用，已损坏的用户报告可以发现处于可疑或受限制状态的帐户中的峰值、甚至是趋势，从而提供证据可能存在安全和租户的 wellness 问题。
+"已**泄露的用户**" 报告显示在最近7天内被标记为**可疑**或**受限制**的用户帐户数。 在上述任一状态中的帐户都有问题或甚至已损坏。 通过频繁使用，您可以使用报告发现可疑或受限帐户中的峰值、甚至是趋势。 有关受损用户的详细信息，请参阅[响应已泄露的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
-![已泄露的用户报告显示在 Microsoft 365 中。](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+聚合视图显示最近90天的数据，详细信息视图显示最近30天的数据。
+
+若要查看报告，请打开 "[安全 & 合规中心](https://protection.office.com)"，转到 "**报告**" \> **仪表板**，然后选择 "已**损坏用户**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=CompromisedUsers> 。
+
+可以通过单击 "**筛选**器" 并选择以下一个或多个值来筛选图表和详细信息表：
+
+- **开始日期**和**结束日期**
+
+- **可疑**：用户帐户发送了可疑电子邮件，并且存在受限制的发送电子邮件的风险。
+
+- **受限**：由于高度可疑的模式，用户帐户受到限制，无法发送电子邮件。
+
+![受到威胁的用户在 Microsoft 365 中显示的报告](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+
+如果单击 "**查看详细信息表**"，则可以看到以下详细信息：
+
+- **创建时间**
+- **用户 ID**
+- **Action**
+
+若要返回到报告视图，请单击 "**查看报告**"。
 
 ## <a name="encryption-report"></a>加密报告
 
-**加密报告**显示有关通过组织策略或通过最终用户控件进行加密的电子邮件的信息。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。
+**加密报告**在 EOP 中可用（使用 exchange online 中的邮箱订阅或独立 EOP，无需 Exchange online 邮箱）。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。 例如：
 
-若要查看此报告，请在安全 & 合规性中心中，转到 "**报告**" \> **仪表板** \> **加密报告**。
+- 如果您看到用户加密了大量的电子邮件，则可能需要添加加密策略以对某些用例自动进行加密。 有关详细信息，请参阅[在 Microsoft 365 中定义用于加密电子邮件的邮件流规则](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 
-![加密报告](../../media/encryptionreport-defaultview.png)
+- 如果有许多可用的加密模板，但没有用户正在使用它们，则可以考察用户是否需要功能培训。
 
-当报告第一次打开时，您将看到有关过去七（7）天的电子邮件上使用的加密方法的数据。 通过单击屏幕右上角的 "**筛选器**"，可以更改报告中显示的日期范围和详细信息。
+"聚合" 视图允许筛选过去的90天，而 "详细信息" 视图允许筛选10天。
 
-![加密报告筛选器](../../media/encryptionreport-filters.png)
+若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**加密报告**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=EncryptionReport> 。
 
-您还可以使用 "**向下分页**" 菜单查看通过加密模板（或方法）的数据。
+若要了解有关加密的详细信息，请参阅[Microsoft 365 中的电子邮件加密](../../compliance/email-encryption.md)。
 
-![加密方法或模板](../../media/encryptionreport-breakdownby.png)
+### <a name="report-view-for-the-encryption-report"></a>加密报告的报告视图
 
-您还可以使用 "**查看数据方式**" 菜单更改视图，以查看前五个收件人域的加密邮件数。
+您可以在图表上使用以下筛选器：
 
-![加密报告按菜单查看数据](../../media/encryptionreport-viewdataby.png)
+- **数据查看依据：邮件加密报告**和**分解方式：加密方法**：以下是可用的加密方法：
 
-通过新的加密报告的灵活性，您可以查看趋势并采取适当的操作。 例如，如果您看到用户加密了大量的电子邮件，您可能希望添加加密策略以对某些用例自动进行加密。 （若要获取有关信息，请参阅[定义邮件流规则以在 Microsoft 365 中对电子邮件进行加密](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。）另一个示例是，如果有许多可用的加密模板，但没有用户正在使用它们，则可以考察用户是否需要针对该功能的培训。
+  - **按用户加密**
+  - **按策略加密**
 
-使用此报告使组织的安全和合规性团队能够监视邮件加密的使用情况，以及是否需要进一步的操作。 若要了解有关加密的详细信息，请参阅[Microsoft 365 中的电子邮件加密](../../compliance/email-encryption.md)。
+  如果单击 "**筛选器**"，则可以使用以下筛选器修改图表：
 
-## <a name="threat-protection-status-report"></a>威胁防护状态
+  - **开始日期**和**结束日期**
+  - 加密方法。
+  - 加密模板。
 
-**威胁防护状态**报告是一个智能报告，显示 Exchange Online Protection 检测到并阻止的恶意电子邮件。 此报告可用于查看标识为恶意软件的电子邮件或一段时间内的网络钓鱼尝试（最长为90天），并使安全管理员能够确定趋势或确定策略是否需要调整。
+- **数据查看依据：邮件加密报告**和**分解方式：加密模板**：以下是可用的加密方法：
 
-> [!NOTE]
-> 拥有[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)或[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）的客户可以使用威胁防护状态报告;但是，在 ATP 客户的威胁防护状态报告中显示的信息可能包含不同的 EOP 客户可能看到的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不是关于[在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)的信息，这是与 ATP 相关的功能。 （[了解有关 ATP 报告的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。）
+  - **请勿转发**
+  - **仅加密**
+  - **OME 以前**
+  - **自定义**
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板** \> **威胁防护状态**。
+  如果单击 "**筛选器**"，则可以使用以下筛选器修改图表：
+
+  - **开始日期**和**结束日期**
+  - 加密方法
+  - 加密模板
+
+- **按数据查看：前5个收件人域**：此视图显示包含前5个收件人域的已发送邮件计数的饼图。
+
+  如果单击 "**筛选器**"，则可以选择 "**开始日期**" 和 "**结束日期**"。
+
+### <a name="details-table-view-for-the-encryption-report"></a>加密报告的详细信息表格视图
+
+如果您单击 "**查看详细信息表**"，则显示的信息将取决于所查看的图表：
+
+- **分解方式：加密方法**或**分解方式：加密模板**：显示以下信息：
+
+  - **Date**
+  - **发件人地址**
+  - **加密模板**
+  - **加密方法**
+  - **收件人地址**
+  - **主题**
+
+- **数据查看依据：前5个收件人域**：
+
+  - **Date**
+  - **收件人域**
+  - **邮件计数**
+  
+如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以使用以下筛选器修改结果：
+
+- **开始日期**和**结束日期**
+- 加密方法
+- 加密模板
+
+若要返回到报告视图，请单击 "**查看报告**"。
+
+## <a name="mailflow-status-report"></a>邮件流状态报告
+
+**邮件流状态报告**包含有关恶意软件、垃圾邮件、网络钓鱼和边缘阻止的邮件的信息。 有关更多详细信息，请参阅[邮件流 status report](view-mail-flow-reports.md#mailflow-status-report)。
+
+## <a name="malware-detection-in-email-report"></a>电子邮件中的恶意软件检测报告
+
+"**电子邮件中的恶意软件检测**" 报告显示传入和传出电子邮件（由 Exchange Online PROTECTION 或 EOP 检测到的恶意软件）中的恶意软件检测的相关信息。 有关 EOP 中的恶意软件保护的详细信息，请参阅[EOP 中的反恶意软件保护](anti-malware-protection.md)。
+
+ 聚合视图筛选器允许90天，而详细信息表筛选器仅允许10天。
+
+若要查看报告，请打开[安全 & 合规中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 **"在电子邮件中检测到恶意软件"**。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=MalwareDetections> 。
+
+!["报告" 仪表板中电子邮件小组件中的恶意软件检测](../../media/malware-detections-widget.png)
+
+您可以通过单击 "**筛选**器" 并选择 "筛选器" 来筛选图表和详细信息表：
+
+- **开始日期**和**结束日期**
+- **进货**
+- **出站**
+
+![电子邮件中的恶意软件检测报告中的报告视图](../../media/malware-detections-report-view.png)
+
+如果单击 "**查看详细信息表**"，则可以看到以下详细信息：
+
+- **Date**
+- **发件人地址**
+- **收件人地址**
+- **邮件 ID**
+- **主题**
+- **Filename**
+- **恶意软件名称**
+
+若要返回到报告视图，请单击 "**查看报告**"。
+
+## <a name="sent-and-received-email-report"></a>发送和接收的电子邮件报告
+
+**发送和接收的电子邮件**报告包含有关恶意软件、垃圾邮件、邮件流规则（也称为传输规则）的信息，以及在电子邮件进入服务后进行的高级恶意软件检测。 有关详细信息，请参阅[发送和接收的电子邮件报告](view-mail-flow-reports.md#sent-and-received-email-report)。
+
+## <a name="spam-detections-report"></a>垃圾邮件检测报告
+
+**垃圾邮件检测**报告显示由 EOP 阻止的垃圾电子邮件。 邮件单独计数，而不是每个收件人。 例如，如果将相同的垃圾邮件发送给组织中的100收件人，则会将其计为一封邮件。
+
+聚合视图允许90天筛选，而详细信息表允许进行10天的筛选。
+
+若要查看报告，请打开 "[安全 & 合规中心](https://protection.office.com)"，转到 "**报告**" \> **仪表板**，然后选择 "**垃圾邮件检测**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=SpamDetections> 。
+
+!["报告" 仪表板中的 "垃圾邮件检测" 小部件](../../media/spam-detections-widget.png)
+
+有关反垃圾邮件保护的详细信息，请参阅[EOP 中的反垃圾邮件保护](anti-spam-protection.md)。
+
+### <a name="report-view-for-the-spam-detections-report"></a>垃圾邮件检测报告的报告视图
+
+报表视图中提供了以下图表：
+
+- **分解方式：操作**：显示以下事件类型：
+
+  - **筛选出的垃圾邮件内容**
+  - **垃圾邮件 IP 阻止**
+  - **垃圾邮件信封块**
+  - **垃圾邮件 DBEB 筛选器**：基于目录的边缘阻止（DBEB）
+
+  当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以看到该日已阻止的项目数，以及这些项目的分类方式。
+
+  ![垃圾邮件检测报告的报告视图中的操作视图](../../media/spam-detections-report-action-view.png)
+
+- **分解方式：方向**：以下说明如下所示：
+
+  - **进货**
+  - **出站**
+
+如果您在报告视图中单击 "**筛选器**"，则可以使用以下筛选器修改结果：
+
+- **开始日期**和**结束日期**
+- 方向值
+- 事件类型值
+
+### <a name="details-table-view-for-the-spam-detections-report"></a>垃圾邮件检测报告的详细信息表格视图
+
+如果您在任何报告视图中单击 "**查看详细信息表**"，将显示以下信息：
+
+- **Date**
+- **发件人地址**
+- **收件人地址**
+- **事件类型**
+- **Action**
+- **主题**
+
+如果单击 "详细信息" 表中的 "**筛选器**"，则可以使用以下筛选器修改结果：
+
+- **开始日期**和**结束日期**
+- 方向值
+- 事件类型值
+
+若要返回到报告视图，请单击 "**查看报告**"。
+
+## <a name="spoof-detections-report"></a>欺骗检测报告
+
+**欺骗检测**报告显示检测到的欺骗邮件的数量以及这些邮件被视为 "好" （欺骗邮件出于合理商业原因而完成）。 有关哄骗的详细信息，请参阅[EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+
+报告的聚合视图允许在筛选过程中90天，而详细信息视图只允许进行10天的筛选。
+
+若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**欺骗检测**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=SpoofMailReport> 。
+
+!["报告" 仪表板中的欺骗检测小部件](../../media/spoof-detections-widget.png)
+
+当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以看到通过的欺骗邮件的数量。
+
+可以通过单击 "**筛选**器" 并选择以下一个或多个值来筛选图表和详细信息表：
+
+- **开始日期**和**结束日期**
+
+- **正常邮件**
+
+- **作为垃圾邮件捕获**
+
+![欺骗检测报告中的报告视图](../../media/spoof-detections-report-view.png)
+
+如果单击 "**查看详细信息表**"，则可以看到以下详细信息：
+
+- **Date**
+- **欺骗发件人**
+- **真正发件人**
+- **发件人 IP**
+- **Action**
+- **邮件计数**
+
+若要返回到报告视图，请单击 "**查看报告**"。
+
+## <a name="threat-protection-status-report"></a>威胁防护状态报告
+
+"**威胁防护状态**报告" 在 EOP 和 OFFICE 365 ATP 中均可用。但是，报告包含不同的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不是关于[SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息。 有关 Office 365 ATP 报告的详细信息，请参阅[查看 office 365 高级威胁防护的报告](view-reports-for-atp.md)。
+
+这是一个显示检测到并阻止的恶意电子邮件的智能报告，它使安全管理员能够确定趋势或确定组织策略是否需要调整。
+
+若要查看报告，请打开[安全 & 合规中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**威胁保护状态**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
 
 ![威胁防护状态](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
 
-当您首次打开 "威胁 Protection 状态报告" 时，报告默认显示过去七天的数据;不过，您可以单击 "**筛选器**" 并将日期范围更改为最多90天的详细信息。 （如果使用的是试用订阅，则可能限制为30天的数据。）
+默认情况下，图表显示过去7天的数据。 如果单击 "**筛选器**"，则可以选择一个90天的日期范围（试用订阅可能限制为30天）。 [！说明] [！说明] 详细信息表视图允许筛选30天。
 
-此报告对查看组织的[Exchange Online Protection 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)和长期趋势分析的有效性和影响非常有用。
+### <a name="report-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的报告视图
 
-![威胁防护状态报告筛选器](../../media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
+可以使用以下视图：
 
-您还可以选择查看标识为恶意的电子邮件的数据、被标识为网络钓鱼尝试的电子邮件，或确定为包含恶意软件的电子邮件。
+- **查看数据的依据：概述**：显示以下检测信息：
 
-![威胁防护状态报告视图选项](../../media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
+  - **电子邮件恶意软件**
+  - **电子邮件网络钓鱼**
+  - **内容恶意软件**
 
-## <a name="malware-detections-report"></a>恶意软件检测报告
+- **数据查看依据：内容 \>恶意软件**：显示以下信息：
 
-**恶意软件检测**报告将显示检测到多少传入邮件和传出邮件，以包含贵组织的恶意软件。
+  - **反恶意软件引擎**
+  - **文件沙箱**
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板** \> **恶意软件检测**。
+- **分解方式：检测技术**和**查看数据的方式：电子邮件 \> 网络钓鱼**：将显示以下信息：
 
-![恶意软件检测报告示例](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
+  - **ATP 生成的 URL 信誉**<sup>\*</sup>
+  - **高级网络钓鱼筛选器**<sup>\*</sup>
+  - **反欺骗： DMARC 故障**
+  - **反欺骗：组织内**
+  - **反欺骗：外部域**
+  - **品牌模拟**<sup>\*</sup>
+  - **域模拟**<sup>\*</sup>
+  - **EOP URL 信誉**
+  - **常规网络钓鱼筛选器**
+  - **其他**
+  - **网络钓鱼 ZAP**<sup>\*\*</sup>
+  - **URL 沙箱**<sup>\*\*</sup>
+  - **用户模拟**<sup>\*</sup>
 
-与其他报告（如 "[威胁防护状态报告](#threat-protection-status-report)"）类似，报告默认显示过去七天的数据。 不过，您可以选择**筛选器**来更改日期范围。
+- **分解方式：检测技术**和**查看数据的依据：电子邮件 \> 恶意软件**：显示以下信息：
+
+  - **ATP 生成的文件信誉**<sup>\*\*</sup>
+  - **反恶意软件引擎**
+  - **反恶意软件策略文件类型块**
+  - **文件沙箱**<sup>\*\*</sup>
+  - **恶意文件信誉**
+  - * * 恶意软件 ZAP * * * *<sup>\*\*</sup>
+  - **其他**
+
+- **分解方式：策略类型**和**查看数据的依据：电子邮件 \> 网络钓鱼诈骗**或**查看数据：电子邮件 \> 恶意软件**：显示以下信息：
+
+  - **反恶意软件**<sup>\*\*</sup>
+  - **安全附件**<sup>\*\*</sup>
+  - **反网络钓鱼**
+  - **反垃圾邮件**
+  - **邮件流规则**（也称为传输规则）
+  - **其他**
+
+- **分解方式：传递状态**和**查看数据方式：电子邮件 \> 网络钓鱼**或**查看数据：电子邮件 \> 恶意软件**：显示以下信息：
+
+  - **传递失败**
+  - **已**
+  - **哪个**
+  - **托管邮箱：自定义文件夹**
+  - **托管邮箱：已删除项目**
+  - **托管邮箱：收件箱**
+  - **托管邮箱：垃圾邮件**
+  - **内部部署服务器：已交付**
+  - **隔离**
+
+<sup>\*</sup>仅限 Office 365 ATP
+
+<sup>\*\*</sup>零小时自动清除（ZAP）在独立 EOP 中不可用（它仅适用于 Exchange Online 邮箱）。
+
+如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
+
+- **开始日期**和**结束日期**
+- 检测值
+- **受保护者**（仅限 OFFICE 365 ATP）： **ATP**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
+
+### <a name="details-table-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的详细信息表格视图
+
+如果您单击 "**查看详细信息表**"，则显示的信息将取决于所查看的图表：
+
+- **数据查看依据：内容 \>恶意软件**：
+
+- **Date**
+- **位置**
+- **指导者**
+- **恶意软件名称**
+
+- **数据查看方式：概述**：没有可用的**视图详细信息表**按钮。
+
+- 所有其他图表：
+
+  - **Date**
+  - **主题**
+  - **发件人**
+  - **Recipients**
+  - **指导者**
+  - **传递状态**
+  - **泄露来源**
+
+如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
+
+- **开始日期**和**结束日期**
+- 检测值
+- **受保护者**（仅限 OFFICE 365 ATP）： **ATP**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
 
 ## <a name="top-malware-report"></a>主要恶意软件报告
 
-**上面的恶意软件**报告显示[Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features)检测到的各种类型的恶意软件。
+**上面的恶意软件**报告显示由[EOP](eop-features.md)检测到的各种类型的恶意软件。
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板**" \> **热门恶意软件**"。
+若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**主要恶意软件**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=TopMalwaret> 。
 
 ![SCC-EOP 主要恶意软件](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
 
@@ -141,75 +385,68 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 ![此报告显示为你的组织检测到的主要恶意软件](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
 
-在图表下方，你将看到检测到的恶意软件的列表以及检测到该恶意软件的邮件数。
+在图表下方，你将看到检测到的恶意软件的列表以及检测到该恶意软件的邮件数。 请注意，聚合视图仅允许90天的筛选。
 
-## <a name="top-senders-and-recipients-report"></a>主要发件人和收件人报告
+## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
-**最上面的发件人和收件人**报告是显示主要电子邮件发件人的饼形图。
+此报告的小部件在报告仪表板上命名为**URL 保护报告**，并且仅在 Office 365 高级威胁防护（ATP）中可用。 具体来说：
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板**的 \> **主要发件人和收件人**。
+- Microsoft 365 E5 订阅。
+- 高级威胁防护外接程序（Plan 1*或*plan 2）到包括 Exchange Online PROTECTION （EOP）的任何其他订阅。
 
-![若要查看此报告，请在安全 & 合规性中心中，转到 "报告" \> 仪表板 \> 主要发件人和收件人](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+若要直接转到 " **URL 威胁防护**" 报告，请打开 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
-当您将鼠标指针悬停在饼图中时，您可以看到发送或接收的邮件数。
+> [!NOTE]
+> 此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不**跟踪用户点击**" 选项。
 
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
+![操作中的 URL 威胁防护报告的图形。](../../media/tp-URLThreatProRpt1.PNG)
 
-使用 "**显示数据**" 列表选择是查看主要发件人、收件人、垃圾邮件收件人和恶意软件收件人的数据。 您还可以查看[Exchange Online Protection](exchange-online-protection-overview.md)检测到的恶意软件的接收人。
+### <a name="report-view-for-the-url-threat-protection-report"></a>URL 威胁防护报告的报告视图
 
-![使用 "显示数据" 列表查看特定信息](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
+**URL 威胁防护**报告包含两个聚合视图，每四个小时刷新一次，显示最近90天的数据：
 
-在图表下方，你将看到首要的电子邮件发件人或收件人，以及在给定时间段内发送或接收的邮件数。
+- **URL 单击 "保护操作**"：显示组织中的用户单击的 url 的数量以及单击的结果：
 
-## <a name="spoof-detections-report"></a>欺骗检测报告
+  - **Blocked**
+  - **阻止并单击**
+  - **在扫描过程中单击**
 
-**欺骗检测**报告显示检测到的欺骗邮件的数量以及这些邮件被视为 "好" （欺骗邮件出于合理商业原因而完成）。
+  单击指示用户已通过阻止页面单击到恶意网站（管理员可以禁用 "在安全链接策略中单击"）。
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板** \> **欺骗邮件**。
+  如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
-![在安全 & 合规性中心中，转到 "报告" \> 仪表板 \> 欺骗邮件](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+  - **开始日期**和**结束日期**
+  - 可用的单击保护操作，以及**允许**查看所有 URL 单击的信息的值（不只是阻止单击）。
 
-当您将鼠标指针悬停在图表中的某一天时，您可以看到通过的欺骗邮件的数量。
+- **URL 单击应用程序**：显示支持 OFFICE 365 ATP 安全链接的应用程序的 url 单击次数：
 
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。 若要了解有关反欺骗保护的详细信息，请参阅[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
+  - **电子邮件客户端**
+  - **PowerPoint**
+  - **Word**
+  - **Excel**
+  - **OneNote**
+  - **Visio**
+  - **Teams**
+  - **其他**
 
-## <a name="spam-detections-report"></a>垃圾邮件检测报告
+  如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
-**垃圾邮件检测**报告显示 Exchange Online 阻止的所有垃圾邮件内容。 邮件按每封邮件计数，而不是按收件人计数。 例如，如果电子邮件发送给组织中的100收件人，则会将其计为一封邮件。
+  - **开始日期**和**结束日期**
+  - 可用的应用程序。
 
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板** \> **垃圾邮件检测**。
+### <a name="details-table-view-for-the-threat-protection-report"></a>威胁防护报告的详细信息表格视图
 
-![若要查看此报告，请在安全 & 合规性中心中，转到 "报告" \> 仪表板 \> EOP "垃圾邮件检测"](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+如果单击 "**查看详细信息表**"，则报告将提供最近7天内在组织内发生的所有点击的近实时视图，并提供以下详细信息：
 
-当您将鼠标指针悬停在图表中的某一天时，您可以看到该日已被阻止的项目数，以及这些项目的分类方式。 例如，您可以查看筛选出的垃圾邮件的数量，以及来自阻止的 Internet 协议（IP）地址的项目数。
+- **单击 "时间"**
+- **用户**
+- **URL**
+- **Action**
+- **App**
 
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
+如果单击 "详细信息表" 视图中的 "**筛选器**"，则可以按与报表视图中相同的条件进行筛选，也可以按逗号分隔的**域**或**收件人**进行筛选。
 
-![垃圾邮件检测报告可告知您阻止或筛选出的垃圾邮件数](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
-
-在图表下方，你将看到检测到的垃圾邮件项目的列表。 选择一个项目以查看其他信息，例如垃圾邮件项目是否为入站或出站、其邮件 ID 及其收件人。 若要了解有关反垃圾邮件保护的详细信息，请参阅[Office 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)。
-
-## <a name="sent-and-received-email-report"></a>发送和接收的电子邮件报告
-
-**已发送和已接收的电子邮件**报告是一个智能报告，显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为 "正常" 的电子邮件。
-
-若要查看此报告，请在[安全 & 合规性中心](https://protection.office.com)中，转到 "**报告**" \> **仪表板** \> **发送和接收的电子邮件**。
-
-![若要查看此报告，请在安全 & 合规性中心中，转到 "报告" \> 仪表板 \> 发送和接收电子邮件](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
-
-当您将鼠标指针悬停在图表中的某一天时，可以看到传入的邮件数以及这些邮件的分类方式。 例如，您可以查看检测到包含恶意软件的邮件数，以及被标识为垃圾邮件的邮件数。
-
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
-
-您可以使用 "**分解依据**" 列表按类型或按方向（传入和传出）查看信息。
-
-![使用 "分解依据" 列表按类型或方向查看信息](../../media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
-
-在图表下方，您将看到一个电子邮件类别的列表，如**GoodMail**、 **SpamContentFiltered**等。 选择类别以查看其他信息，例如对恶意软件所执行的操作以及电子邮件是传入的还是传出的。
-
-![此报告告诉你有关反恶意软件、反垃圾邮件和其他邮件检测](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
-
-若要了解有关电子邮件智能的详细信息，请参阅[Microsoft 365 中的邮件流智能](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365)。
+若要返回到 "报告" 视图，请单击 "**查看报告**"。
 
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
@@ -232,28 +469,26 @@ URL 威胁防护报告的详细信息表提供了在租户内发生的所有点�
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 
-若要查看和使用本文中所述的报告，**您必须为安全 & 合规中心和 Exchange 管理中心分配适当的角色**。
+若要查看和使用报告，您必须是安全 & 合规性中心**和**Exchange Online 中指定角色组的成员。
 
-- 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
+- 在安全 & 合规性中心中，您必须是下列角色组之一的成员：
 
-  -组织管理-安全管理员（可在 Azure Active Directory 管理中心中分配（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ）-安全读取器
+  -组织管理-安全管理员（也可以在[Azure Active Directory 管理中心](https://aad.portal.azure.com)中执行此操作-安全读取器
 
-- 对于 Exchange Online，必须在 Exchange 管理中心（）或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)）：
+  有关详细信息，请参阅[安全与合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 
-  -组织管理-仅查看组织管理-仅查看收件人角色合规性管理
+- 在 Exchange Online 中，您必须是下列角色组之一的成员：
 
-若要了解详细信息，请参阅以下资源：
+  -组织管理-仅查看组织管理-仅查看收件人-合规性管理
 
-- [安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
- 
-- [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+有关详细信息，请参阅[Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo)中的权限和[管理 exchange online 中的角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 
-如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[在 Microsoft 365 中防御威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
+如果您未在报告中看到数据，请仔细检查您的策略设置是否正确。 若要了解详细信息，请参阅[防止威胁](protect-against-threats.md)。
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 电子邮件反垃圾邮件保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[EOP 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)
 
-[安全 & 合规中心中的报告和见解](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)

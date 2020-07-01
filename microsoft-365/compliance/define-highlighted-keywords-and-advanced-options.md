@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: '了解如何将用户定义的关键字添加到相关性，以帮助标识高级电子数据展示中的标记相关文件，并指定成本参数。  '
-ms.openlocfilehash: b36032c148e5819440bc31cbf4692db51abf1add
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何将用户定义的关键字添加到相关性，以帮助标识高级电子数据展示中的标记相关文件，并指定成本参数。
+ms.openlocfilehash: 61ec74109f13d8056047e0aaf14aaa87c846e17f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630549"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936451"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中定义突出显示的关键字和高级选项
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-在高级电子数据展示中，可以将用户定义的关键字添加到相关性，以帮助您在标记时识别相关文件。 关键字将以指定的颜色显示在**相关性\>标记**中。 
+在高级电子数据展示中，可以将用户定义的关键字添加到相关性，以帮助您在标记时识别相关文件。 关键字将以指定的颜色显示在**相关性 \> 标记**中。 
   
 如下所述，可以添加关键字列表，并将颜色分配给关键字列表和相关问题。 如果有，工具提示将显示关键字的说明（如果有），如双下划线所示。
   
@@ -36,9 +36,9 @@ ms.locfileid: "43630549"
   
 ## <a name="adding-highlighted-keywords"></a>添加突出显示的关键字
 
-1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**突出显示的关键字**"。
+1. 在 "**相关性 \> 关联设置**" 选项卡中，选择 "**突出显示的关键字**"。
     
-2. 单击**+** 图标以添加关键字。 将显示 "**添加新关键字**" 对话框。 
+2. 单击 **+** 图标以添加关键字。 将显示 "**添加新关键字**" 对话框。 
     
 3. 在 "**关键字**" 中，键入关键字列表，用逗号分隔关键字。 
     
@@ -54,13 +54,13 @@ ms.locfileid: "43630549"
     
     ![相关性设置关键字列表](../media/a05d5ec0-8bde-470d-97e2-456b169281d6.png)
   
-用户定义的关键字将以关联\>标记中的指定颜色显示。 
+用户定义的关键字将以关联标记中的指定颜色显示 \> 。 
   
 ## <a name="specifying-relevance-setup-advanced-settings"></a>指定相关性设置程序的高级设置
 
 这些设置会影响跟踪并决定关系图的相关性。
   
-1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**高级设置**"。
+1. 在 "**相关性 \> 关联设置**" 选项卡中，选择 "**高级设置**"。
     
 2. 在 "**成本参数**" 对话框中，进行以下选择： 
     
@@ -70,7 +70,7 @@ ms.locfileid: "43630549"
     
     ![成本参数的相关性设置](../media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. 单击“**保存**”。 将保存所选设置。
+3. 单击“保存”****。 将保存所选设置。
     
 ## <a name="see-also"></a>另请参阅
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何查看和管理 Exchange Online Protection （EOP）中所有用户的隔离邮件。 具有 Office 365 高级威胁防护（Office 365 ATP）的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: bf5b532b3830333fb42e2371d48e37991385e5f4
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d3dadeb4035d55fa60785c7a752737cc83038730
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616818"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936967"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -39,7 +39,7 @@ ms.locfileid: "44616818"
 
 - 若要打开安全与合规中心，请转到 <https://protection.office.com>。 若要直接打开“隔离”页，请转到 <https://protection.office.com/quarantine>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立的 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您需要先分配权限，然后才能以管理员身份管理隔离。权限由 Security & 合规中心中的**隔离**角色控制。 默认情况下，将此角色分配给安全 & 合规中心中的 "**组织管理**" （全局管理员）、"**隔离管理员**" 和 "**安全管理员**" 角色组。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 

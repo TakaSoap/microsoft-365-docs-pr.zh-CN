@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: fab3147b5226b2d69a8dac6d214da7efdd26def6
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 658c71ec05078f745584a63e9a503775b957ff08
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564987"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936545"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -40,8 +40,10 @@ Microsoft 365 允许管理员使用数据连接器将第三方数据从社交媒
 
 |第三方数据  |诉讼保留|电子数据展示  |保留策略  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Bloomberg 消息](archive-bloomberg-message-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[HR 数据](import-hr-data.md) ||||||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|[ICE 聊天](archive-icechat-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
 |[即时 Bloomberg](archive-instant-bloomberg-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||

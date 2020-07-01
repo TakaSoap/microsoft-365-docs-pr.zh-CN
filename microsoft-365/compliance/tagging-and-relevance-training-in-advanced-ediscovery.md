@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: '了解在高级电子数据展示的相关培训阶段，要标记并使用40文件的培训示例的步骤。  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解在高级电子数据展示的相关培训阶段，要标记并使用40文件的培训示例的步骤。
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636260"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936668"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>高级电子数据展示中的标记和相关性培训（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主题介绍使用高级电子数据展示相关性培训模块的过程。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "43636260"
   
 ## <a name="performing-relevance-training"></a>执行关联性培训
 
-1. 在 "**相关性\>标记**" 选项卡中，默认情况下将在左窗格中显示 "标记" 窗格，并显示示例文件（一次显示一个标记）。 
+1. 在 "**相关性 \> 标记**" 选项卡中，默认情况下将在左窗格中显示 "标记" 窗格，并显示示例文件（一次显示一个标记）。 
     
     ![相关性标签面板](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -50,11 +50,11 @@ ms.locfileid: "43636260"
 |-----|-----|-----|-----|
 |R  <br/> |符合  <br/> |Z  <br/> |Shift + Z  <br/> |
 |FÜHRERSCHEIN-NR  <br/> |无关  <br/> |X  <br/> |Shift + X  <br/> |
-|过  <br/> |过  <br/> |C  <br/> |Shift + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Shift + A  <br/> |
    
   - 如果一个文件存在多个问题，则在标记一个问题后，所选内容将移至下一个问题（如果有）。 
     
-  - 在突出显示关键字（相关性设置\>突出显示的关键字）时，由管理员或事例管理者定义的关键字将显示（以指定的颜色为单位），以帮助标识相关文件在加标签时。 如果一个关键字有双下划线，则可单击它以显示带有关键字说明的工具提示。 
+  - 在突出显示关键字（相关性设置突出显示的关键字）时，由管理员或事例管理者定义的关键字 \> 将显示（以指定的颜色为单位），以帮助标识相关文件在加标签时。 如果一个关键字有双下划线，则可单击它以显示带有关键字说明的工具提示。 
     
     （可选）在 "**标记**" 选项卡中，单击 "**标记设置**" 以设置以下选项： 
     
@@ -78,7 +78,7 @@ ms.locfileid: "43636260"
 
 示例文件列表允许您查看培训示例中的文件列表，并对一个或多个文件执行各种操作。 在 "**相关性** \> **标记**" 选项卡中，**示例文件**左窗格显示了用于处理评估、培训、追赶和不一致流程的示例文件的列表。 
   
-1. 在 "**相关性\>标记**" 选项卡中，选择左窗格下拉列表中的示例文件。 示例文件在左窗格中列出。 
+1. 在 "**相关性 \> 标记**" 选项卡中，选择左窗格下拉列表中的示例文件。 示例文件在左窗格中列出。 
     
     ![相关性标记示例文件列表](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   

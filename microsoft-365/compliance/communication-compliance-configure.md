@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689286"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936847"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -97,6 +97,11 @@ ms.locfileid: "44689286"
 | Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
 当您在策略中分配通讯组时，该策略将监视通讯组中每个用户的所有电子邮件。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件，而不是每个组成员收到的单个电子邮件。
+
+如果您是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且想要监视用户的团队聊天，则必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 在后面的这些步骤中，您将分配此通讯组作为策略向导中的受**监督的用户和组**选择。
+
+>[!IMPORTANT]
+>您必须将请求与 Microsoft 支持文件一起使用，以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的团队聊天数据。 有关详细信息，请参阅针对[本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 有关设置组的详细信息，请参阅：
 

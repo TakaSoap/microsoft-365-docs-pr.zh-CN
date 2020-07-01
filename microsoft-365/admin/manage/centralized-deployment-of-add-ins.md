@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717269"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936439"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -40,16 +40,12 @@ ms.locfileid: "44717269"
 
 集中部署不支持以下内容：
   
-- 针对 Office 2013 中 Word、Excel 或 PowerPoint 的加载项
-    
+- 针对 Office 2013 中 Word、Excel 或 PowerPoint 的加载项 
 - 本地目录服务
-    
+- 外接程序部署到本地邮箱的 Exchange
 - 部署到 SharePoint 的加载项  
-
 - 团队应用程序
-   
 - 组件对象模型 (COM) 或 Visual Studio Tools for Office (VSTO) 的加载项的部署
-    
 - 不包括 Exchange （如 Microsoft 365 商业应用程序）的 Microsoft 365 部署
 
 ### <a name="office-requirements"></a>Office 要求

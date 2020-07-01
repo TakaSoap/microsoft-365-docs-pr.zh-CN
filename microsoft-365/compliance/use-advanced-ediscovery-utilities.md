@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: '了解高级电子数据展示中的实用程序，包括案例日志、清除数据、处理错误、修改相关性和透明度分析。  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解高级电子数据展示中的实用程序，包括案例日志、清除数据、处理错误、修改相关性和透明度分析。
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633387"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936615"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>使用高级电子数据展示（经典）实用工具
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中显示和可用的实用程序取决于上下文和用户角色。
   
@@ -38,7 +38,7 @@ ms.locfileid: "43633387"
   
 1. 在菜单栏中，单击 " **Cogwheel** " 图标。 
     
-2. 在 "**设置和实用\>程序实用程序**" 选项卡中，选择 "**事例日志\>设置**"。
+2. 在 "**设置和实用 \> 程序实用程序**" 选项卡中，选择 "**事例日志 \> 设置**"。
     
 3. 选择**日志级别**，如下所示： 
     
@@ -57,7 +57,7 @@ ms.locfileid: "43633387"
   
 1. 在菜单栏中，单击 " **Cogwheel** " 图标。 
     
-2. 在 "**设置和实用工具\>实用程序**" 选项卡中，选择 "**清除\>数据安装程序**"。
+2. 在 "**设置和实用工具 \> 实用程序**" 选项卡中，选择 "**清除数据 \> 安装程序**"。
     
 3. 选择要初始化的信息的选项：
     
@@ -77,7 +77,7 @@ ms.locfileid: "43633387"
   
 1. 在菜单栏中，单击 " **Cogwheel** " 图标。 
     
-2. 在 "**设置和实用工具\>实用程序**" 选项卡中，选择 "**修改相关性**"。
+2. 在 "**设置和实用工具 \> 实用程序**" 选项卡中，选择 "**修改相关性**"。
     
 3. 从选项中选择： 
     
@@ -99,7 +99,7 @@ ms.locfileid: "43633387"
   
 1. 在菜单栏中，单击 " **Cogwheel** " 图标。 
     
-2. 在 "**设置和实用工具\>实用程序**" 选项卡中，选择 "**透明度\>分析安装程序**"。
+2. 在 "**设置和实用工具 \> 实用程序**" 选项卡中，选择 "**透明度分析 \> 安装程序**"。
     
 3. 在 * * 文件 ID * * 中，输入要处理的文件的文件 ID。
     

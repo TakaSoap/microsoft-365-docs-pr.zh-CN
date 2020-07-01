@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: '查看在高级电子数据展示中执行关联性培训之前，将导入的文件添加到文件的最后一个定义的负载或批处理中的步骤。  '
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 查看在高级电子数据展示中执行关联性培训之前，将导入的文件添加到文件的最后一个定义的负载或批处理中的步骤。
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636290"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936813"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>在高级电子数据展示中设置加载以添加导入的文件（经典）
 
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高级电子数据展示中，加载项是添加到事例中的一批新文件。 默认情况下，将定义一个加载项，并将所有导入的文件添加到其中。 在执行关联性培训之前，必须将导入的文件添加到负载中。 
   
@@ -40,7 +40,7 @@ ms.locfileid: "43636290"
 
 必须将所有导入的文件添加到负载，才能在高级电子数据展示中进行处理。 导入的文件将添加到最后定义的负载中。 如果稍后导入其他文件，则还必须将它们添加到负载中。
   
-1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**加载**"。
+1. 在 "**相关性 \> 关联设置**" 选项卡中，选择 "**加载**"。
     
     ![相关性设置加载选项卡](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -61,7 +61,7 @@ ms.locfileid: "43636290"
 
 如果更改加载名称，建议使用对事例有重大意义的名称。
   
-1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**加载**"。
+1. 在 "**相关性 \> 关联设置**" 选项卡中，选择 "**加载**"。
     
 2. 从 "**加载管理**" 列表中选择一个负载，然后单击 "**编辑**" 图标。 将显示 "编辑加载" 窗口。 
     
@@ -95,9 +95,9 @@ ms.locfileid: "43636290"
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>使用追赶和滚动负载添加新的文件负载
 
-1. 在 "**相关性\>关联设置**" 选项卡中，选择 "**加载**"。
+1. 在 "**相关性 \> 关联设置**" 选项卡中，选择 "**加载**"。
     
-2. 在 "**加载管理**" 下**+** ，单击图标以添加负载。 将显示一条确认消息。 
+2. 在 "**加载管理**" 下，单击 **+** 图标以添加负载。 将显示一条确认消息。 
     
 3. 单击" **是**"即可继续。 将显示 "**添加新加载**" 对话框。 
     
@@ -116,7 +116,7 @@ ms.locfileid: "43636290"
     
     然后，您可以标记文件并运行计算操作。 通过使用标记，可以确定加载的相似或不同之处，并使您能够继续处理新的文件集。
     
-7. 检查完追赶集后，查看追赶结果的**相关性\>跟踪**。 
+7. 检查完追赶集后，查看追赶结果的**相关性 \> 跟踪**。 
     
 1. 如果在相关性培训过程中添加了新文件加载（即，该问题尚未通过成批计算），则**继续训练**是下一步，而不考虑追赶结果。 
     

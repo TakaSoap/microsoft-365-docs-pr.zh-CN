@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: '了解如何查找在高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。  '
-ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 了解如何查找在高级电子数据展示中运行的进程模块的结果，包括任务状态和过程摘要。
+ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626308"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936165"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>在高级电子数据展示中查看进程模块结果（经典）
 
 启动**准备** \> **过程**后，可以查看进度和结果。 
   
 > [!NOTE]
-> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>处理任务状态
 
@@ -64,7 +64,7 @@ ms.locfileid: "43626308"
   
 ## <a name="process-summary"></a>流程摘要
 
-在准备\>流程\>结果\>流程摘要中，根据成功的文件处理和错误结果显示加载的文件结果的细目。
+在准备 \> 流程 \> 结果 \> 流程摘要中，根据成功的文件处理和错误结果显示加载的文件结果的细目。
   
 这些窗格显示导入文件统计信息的图形显示，如下所示：
   
@@ -104,7 +104,7 @@ ms.locfileid: "43626308"
     
 ## <a name="last-process-errors"></a>上一个进程错误
 
-在准备\>过程\>结果\>中，上次处理错误时，将显示上一次会话或执行的操作中的错误详细信息。
+在准备 \> 过程 \> 结果中 \> ，上次处理错误时，将显示上一次会话或执行的操作中的错误详细信息。
   
 ![进程模块错误](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   

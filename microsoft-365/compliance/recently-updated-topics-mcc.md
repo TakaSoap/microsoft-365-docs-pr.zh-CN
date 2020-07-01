@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818962"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936145"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -112,7 +112,7 @@ ms.locfileid: "44818962"
 [使用敏感度标签保护 Microsoft 团队、microsoft 365 组和 SharePoint 网站中的内容](sensitivity-labels-teams-groups-sites.md)（已更新）<br>这些更改包括：
 
 - 删除了 Azure AD 说明，而不是链接到[AZURE ad 权威信息](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
-- 更新了[如何在创建或编辑敏感度标签部分时配置网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels)，以及有关**Office 365 组连接的团队网站**设置（包括 "**无**新" 选项）的隐私信息。
+- 更新了 "[如何配置网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings)" 部分，其中包含有关**Office 365 组连接的团队网站**设置（包括新的 "**无**" 选项）的隐私信息。
 - 添加了说明在用户创建团队、组和网站时，如何仅使用带有网站和组设置的标签的说明。 此功能将向组织逐步推出。
 
 [使用敏感度标签限制对内容的访问权限，以应用加密](encryption-sensitivity-labels.md)（已更新）<br>[新分区](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings)，其中包含用于保护文档和电子邮件的一些最常用配置的示例加密设置。

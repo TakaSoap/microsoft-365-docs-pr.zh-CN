@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
-description: '了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。 '
-ms.openlocfilehash: 29e0a09046e3be756cc363243dede08d2aa5c310
-ms.sourcegitcommit: 5b7630b8692c692aef3eefc8857f46a7ee172dfd
+description: 了解在 Office 365 中使用电子数据展示工具的搜索运行中估计的估计和实际搜索结果可能有所不同。
+ms.openlocfilehash: e3dcda1de920dc8266a93a890742f53f409357dc
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44174046"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936429"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>估计的和实际的电子数据展示搜索结果之间的差异
 
