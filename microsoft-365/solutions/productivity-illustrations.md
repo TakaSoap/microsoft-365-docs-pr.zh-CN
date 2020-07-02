@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2ad424741ecbfe6f4bb8693df13a92bc71f012ce
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-ms.translationtype: HT
+ms.openlocfilehash: 3dc20db78139bc86daff6bf0a3ba3e0983746974
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160083"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016375"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -38,7 +38,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 2019 年 6 月更新|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
+|[![组信息图的缩略图](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新时间可能为2020|这些图示详细介绍了不同类型的组，如何创建和管理这些组，以及一些治理建议。|
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
 拥有单一 microsoft 365 租户的多区域组织安全和信息保护
@@ -74,7 +74,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 2018 年 11 月更新|请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护标识和设备功能相媲美的功能的详细信息。  <br/> |
+|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 2018 年 11 月更新|It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
    
 <!--
 
@@ -112,7 +112,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 
 ### <a name="microsoft-telephony-solutions"></a>Microsoft 电话解决方案
 
-当你开始在 Microsoft 云中使用 Teams 时，Microsoft 支持多种选项。此海报可帮助你确定哪种 Microsoft 电话解决方案（云端的电话系统或本地企业语音）适合你组织中的用户，以及你的组织如何连接到公用电话交换网 (PSTN)。
+Microsoft supports several options as you begin your journey to Teams in the Microsoft cloud. This poster helps you decide which Microsoft telephony solution (Phone System in the cloud or Enterprise Voice on-premises) is right for users in your organization, and how your organization can connect to the Public Switched Telephone Network (PSTN).
 
 
 [![Microsoft 电话服务解决方案海报缩略图](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>

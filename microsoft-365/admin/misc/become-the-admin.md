@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 了解如何验证你的电子邮件和域所有权，以在 Microsoft 365 中接管非托管租户
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399442"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022153"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>执行内部管理员接管
 
@@ -64,7 +64,7 @@ ms.locfileid: "44399442"
 4. 将 TXT 记录添加到注册器网站后，返回到向导，然后选择 "确定 **"，我已添加记录**。
     
 > [!NOTE]
-> 对卷影租户进行接管不会影响任何现有信息或服务。 但是，如果域中的任何用户已注册需要许可证的服务，则系统将要求你为其购买许可证，作为接管管理员角色的一部分。 管理员设置过程完成后，您可以添加或删除许可证。 
+> 对卷影租户进行接管不会影响任何现有信息或服务。 但是，如果域中的任何用户已注册需要许可证的服务，则系统将要求你为其购买许可证，作为接管管理员角色的一部分。 管理员设置过程完成后，你可以购买或删除许可证。
   
 ## <a name="related-articles"></a>相关文章
 

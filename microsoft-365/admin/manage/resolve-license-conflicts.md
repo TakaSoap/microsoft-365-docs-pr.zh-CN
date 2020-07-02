@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: 了解如何解决与 Microsoft 365 for business 订阅的许可证冲突。
-ms.openlocfilehash: 05efe9e75b051ece900ba9defe047f1244b713a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2270fd3ad831ec0ad92ac4eddec5f08a1d07f8be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399664"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015967"
 ---
 # <a name="resolve-license-conflicts"></a>解决许可证冲突
 
@@ -59,7 +59,6 @@ ms.locfileid: "44399664"
 
 ::: moniker-end
 
-
 2. 检查" **状态**"列以查看冲突信息。 如果存在冲突，您将看到一条警告消息，指出一个或多个用户需要有效的许可证。
 
     > [!NOTE]
@@ -69,7 +68,7 @@ ms.locfileid: "44399664"
 
 您可以通过[购买更多许可证](../../commerce/licenses/buy-licenses.md)或[从不再需要这些许可证的用户那里删除许可证](remove-licenses-from-users.md)来解决许可证冲突。 你可以根据需要[删除用户帐户以空出许可证](../add-users/delete-a-user.md)。
   
-## <a name="related-articles"></a>相关文章 
+## <a name="related-articles"></a>相关文章
 
 [向用户分配许可证](assign-licenses-to-users.md)
   

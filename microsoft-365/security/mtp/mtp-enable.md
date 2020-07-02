@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844585"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016339"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>打开 Microsoft 威胁防护
 
@@ -61,10 +61,12 @@ Microsoft 威胁防护可从已部署的各种受支持的服务中聚合数据�
 >如果在导航窗格中看不到**设置**或无法访问页面，请检查您的权限和许可证。
 
 ### <a name="data-center-location"></a>数据中心位置
-Microsoft 威胁防护将在[Microsoft DEFENDER ATP 使用的相同位置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)存储和处理数据。 如果你没有 Microsoft Defender ATP，将根据活动的 Microsoft 365 安全服务的位置自动选择新的数据中心位置。 屏幕上显示了所选的数据中心位置。
+Microsoft 威胁防护将在[Microsoft DEFENDER ATP 使用的相同位置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)存储和处理数据。 如果你没有 Microsoft Defender ATP，将根据活动的 Microsoft 365 安全服务的位置自动选择新的数据中心位置。 屏幕上显示了所选的数据中心位置。 
+
+在 Microsoft 365 安全中心中选择 **"需要帮助？** "，以与 microsoft 支持部门联系，以了解如何在其他数据中心位置设置 Microsoft 威胁保护。 
 
 >[!NOTE]
->在 Microsoft 365 安全中心中选择 **"需要帮助？** "，以与 microsoft 支持部门联系，了解如何在不同的数据中心位置设置 Microsoft 威胁保护。 
+>在通过 Azure 安全中心启用欧盟（EU）数据中心时，Microsoft Defender ATP 将自动设置。 对于已使用此方式预配 Microsoft Defender ATP 的客户，microsoft 威胁防护将自动在同一 EU 数据中心中进行设置。 
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 设置服务后，它将添加：

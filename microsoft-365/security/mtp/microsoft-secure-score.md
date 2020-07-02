@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936625"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023399"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -203,6 +203,31 @@ Microsoft 安全分数是基于系统配置、用户行为和其他安全相关�
 * 筛选、标记、搜索和分组您的改进操作
 * 使用分数预测和计划操作来管理未来目标
 * 更多！
+
+### <a name="june-2020"></a>2020 年 6 月
+
+#### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender 高级威胁防护的已删除改进操作
+
+* 打开攻击面降低规则
+
+#### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>新增了 Microsoft Defender 高级威胁防护的改进措施
+
+* 阻止 Adobe Reader 创建子流程
+* 对勒索软件使用高级防护
+* 阻止所有 Office 应用程序创建子进程
+* 阻止 Office 应用程序创建可执行内容
+* 阻止 JavaScript 或 VBScript 启动下载的可执行内容
+* 阻止执行可能模糊的脚本
+* 阻止来自电子邮件客户端和 web 邮件的可执行内容
+* 阻止 Office 通信应用程序创建子进程
+* 阻止从 USB 运行的不受信任和未签名的进程
+* 通过 WMI 事件订阅阻止持久化
+* 阻止 Office 应用程序将代码注入其他进程
+* 阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件
+* 阻止进程创建源自 PSExec 和 WMI 命令
+* 阻止从 Windows 本地安全颁发机构子系统盗取凭据（lsass.exe）
+* 阻止来自 Office 宏的 Win32 API 调用
+
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
 

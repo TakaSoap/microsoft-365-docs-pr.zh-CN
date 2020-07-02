@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: '了解管理员中心的用户类型。 '
-ms.openlocfilehash: 4e28715674360dbbed7ef398207e39e45b1fec81
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b0b0638ee9fb258cfd84bafdc1c09ab691a1d060
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399214"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022199"
 ---
 # <a name="quick-help-types-of-users"></a>快速帮助：用户类型
 
@@ -46,12 +46,12 @@ ms.locfileid: "44399214"
 |全局管理员  <br/> |这些用户有权访问所有管理功能。 注册 Microsoft 365 的人将成为全局管理员，但如果你愿意，可以使用多个。 全局管理员是唯一能够向他人分配管理员角色的管理员。  <br/> |
 |密码管理员  <br/> |这些用户可以代表你重置密码、管理服务请求和监视服务运行状况。  <br/> |
 |服务管理员  <br/> |这些用户可以代表你管理服务请求和监视服务运行状况。  <br/> |
-|用户管理管理员  <br/> |这些用户可以重置密码，监视服务运行状况以及管理用户帐户、用户组和服务请求。他们无法删除全局管理员，无法创建其他管理员角色或者为帐单、全局和服务管理员重置密码。  <br/> |
+|用户管理管理员  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
 |添加自定义筛选器  <br/> |使用此选项，可以创建自定义筛选器以仅查看特定类型的首选项，例如，哪些用户位于 Microsoft 365 Apps for business plan 中。 [快速帮助：筛选用户](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view)。  <br/> |
    
 ## <a name="related-articles"></a>相关文章
 
-[在 Microsoft 365 中添加用户](../add-users/add-users.md)
+[同时添加用户和分配许可证](../add-users/add-users.md)
     
 [在 Microsoft 365 for business 中向用户分配许可证](../manage/assign-licenses-to-users.md)
     

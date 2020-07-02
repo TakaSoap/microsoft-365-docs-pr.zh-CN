@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 中基于云的应用生成的数据存储或与用户的 Exchange Online 邮箱相关联。
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626278"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016295"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>存储在 Exchange Online 邮箱中的内容
 
@@ -32,7 +32,7 @@ Exchange Online 中的邮箱主要用于存储与电子邮件相关的项目，�
 
 |Microsoft 365 应用程序|说明|
 |:---------|:---------|
-|Forms|表单（存储为 PDF 文件）和对表单（存储在 CSV 文件中）的响应将附加到电子邮件中，并存储在创建表单的用户邮箱中的隐藏文件夹中。 从 PST 文件中的表单导出内容时，此数据位于名为的子文件夹中的 " **ApplicationDataRoot** " 文件夹中，该文件夹具有以下全局唯一标识（GUID）： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**。|
+|Forms|表单和对表单的响应存储在附加到电子邮件的文件中，并存储在创建表单的用户邮箱中的隐藏文件夹中。 在2020年4月之前创建的表单存储为 PDF 文件。 在2020之后创建的表单存储为 JSON 文件。  对表单的响应存储在 CSV 文件中。 从 PST 文件中的表单导出内容时，此数据位于名为的子文件夹中的 " **ApplicationDataRoot** " 文件夹中，该文件夹具有以下全局唯一标识（GUID）： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**。|
 |Microsoft 365 组|电子邮件、日历项目、联系人（人员）、便笺和任务存储在与 Microsoft 365 组相关联的邮箱中。|
 |Outlook/Exchange Online|电子邮件、日历项目、联系人（人员）、便笺和任务存储在用户的邮箱中。|
 |人员|"人员" 应用中的联系人（与 Outlook 中可访问的联系人相同）存储在用户的邮箱中。|

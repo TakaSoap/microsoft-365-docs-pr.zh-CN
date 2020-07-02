@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 microsoft 服务信任门户中的 Microsoft 合规性管理器，这是一种基于工作流的免费风险评估工具。
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330742"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016125"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合规性管理器（预览）
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330742"
 
 **本文**内容：阅读本文，了解什么是合规性管理器并了解其主要组件。
 
-**了解更新**：我们在四月份2020公开预览版中发布了几个更新。 访问[合规性管理器发行说明](compliance-manager-release-notes.md)，查看新增功能和已知问题。
+**了解更新**：访问[合规性管理器发行说明](compliance-manager-release-notes.md)，了解新增功能和已知问题。
 
 ## <a name="what-is-compliance-manager"></a>什么是合规性管理器
 
@@ -53,7 +53,7 @@ ms.locfileid: "44330742"
 
 [Microsoft 合规性分数（预览版）](compliance-score.md)是 microsoft 365 合规性中心中的一项功能，可提供组织的合规性状况的顶级视图。 它将计算基于风险的分数，以衡量您在帮助降低数据保护和法规标准方面的风险的完成操作的进度。 了解您的总体合规性分数可帮助您的组织了解和管理合规性。 了解[如何计算合规性分数](compliance-score-methodology.md)。
 
-合规性管理器与合规性分数共享相同的后端。 在这两种工具的公共预览阶段，合规性管理器是管理评估和自定义控制实施的地方。 了解有关[合规性分数和合规性管理器之间关系](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)的详细信息。
+合规性管理器与合规性分数共享相同的后端。 在这两种工具的公共预览阶段，合规性管理器都将管理您的自定义控件实现。 了解有关[合规性分数和合规性管理器之间关系](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)的详细信息。
 
 ## <a name="compliance-manager-components"></a>合规性管理器组件
 
@@ -129,7 +129,7 @@ ms.locfileid: "44330742"
 
 请注意，合规性分数中的**改进操作**等效于合规性管理器中的**操作项**。
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>权限
 
 合规性管理器使用基于角色的访问控制权限模型。 只有分配了用户角色的用户可访问合规性管理器，并且每位用户允许的操作受到角色类型的限制。 [查看](working-with-compliance-manager.md#permissions)显示每个权限允许执行的操作的表。
 

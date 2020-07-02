@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498359"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005706"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -118,8 +118,8 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>对设备的操作
 这些操作适用于 `DeviceId` 查询结果列中的设备：
-- **隔离设备**—使用 MICROSOFT Defender ATP 应用完全网络隔离，以阻止设备连接到任何应用程序或服务。 [了解有关 Microsoft Defender ATP 计算机隔离的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **收集调查包**—收集 ZIP 文件中的设备信息。 [了解有关 Microsoft Defender ATP 调查包的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **隔离设备**—使用 MICROSOFT Defender ATP 应用完全网络隔离，以阻止设备连接到任何应用程序或服务。 [了解有关 Microsoft Defender ATP 计算机隔离的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **收集调查包**—收集 ZIP 文件中的设备信息。 [了解有关 Microsoft Defender ATP 调查包的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **运行防病毒扫描**—在设备上执行完整的 Windows Defender 防病毒扫描
 - **启动调查**—启动对设备的[自动调查](mtp-autoir.md)
 - **限制应用程序执行**—将对设备的限制设置为仅允许使用 Microsoft 颁发的证书签名的文件运行。 [了解有关 Microsoft Defender ATP 的应用限制的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)

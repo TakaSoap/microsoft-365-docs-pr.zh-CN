@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您将了解如何自定义、组织和管理团队网站以实现文件存储和共享。
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779865"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022165"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
@@ -104,7 +104,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 查看带有[了解和管理组](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)的组的视频。 
   
-若要向 Microsoft 365 组添加用户，请参阅[在 microsoft 365 中单独或批量添加用户-管理员帮助](../add-users/add-users.md)。
+若要将用户添加到 Microsoft 365 组，请参阅[添加用户并同时分配许可证](../add-users/add-users.md)。
   
 了解如何处理[设置和管理访问请求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)的访问请求。
   

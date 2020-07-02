@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f5c226b6028c845acc674ec0a0536727386c2380
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899383"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005694"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
 **适用于：**
 - Microsoft 威胁防护
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `EmailPostDeliveryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关在 Microsoft 365 处理的电子邮件上执行投递后操作的信息。 使用此参考来构建从此表返回信息的查询。
 

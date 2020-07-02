@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用管理中心在云中设置组织，还可用它来管理用户和订阅。 首先使用管理员权限登录帐户。
-ms.openlocfilehash: 9295d16f19ebaabdd9960331f1d875f436156b79
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e4b1570afd8572df31af970fb168b6d22deee979
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780549"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022177"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>关于 Microsoft 365 管理中心
 
@@ -89,7 +89,7 @@ ms.locfileid: "44780549"
    
 ## <a name="common-tasks-in-the-admin-center"></a>管理中心内的常见任务
 
-- 管理用户：[逐一添加用户](../add-users/add-users.md)、[删除或还原用户](../add-users/delete-a-user.md)或[重置用户密码](../add-users/reset-passwords.md)。
+- 管理用户：[添加用户并同时分配许可证](../add-users/add-users.md)、[删除或还原用户](../add-users/delete-a-user.md)或[重置用户密码](../add-users/reset-passwords.md)。
 
 - 获取账单相关帮助：[账单](../../commerce/index.yml)
 

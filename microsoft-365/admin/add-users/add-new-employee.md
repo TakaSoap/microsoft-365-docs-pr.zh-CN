@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 将新员工添加到 Microsoft 365 电子邮件、Skype 和 Office 相关应用程序的商业版。
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780669"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022129"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>将新员工添加到 Microsoft 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "44780669"
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>步骤1：为员工创建 Microsoft 365 帐户
 
 
-有关说明，请参阅[在 Microsoft 365 中单独或批量添加用户-管理员帮助](add-users.md)。 在设置新员工时，您可以选择将登录详细信息发送到员工的个人帐户。 这样，他们将收到来自 Microsoft Online 服务团队的电子邮件，告知他们如何登录到 Microsoft 365。
+有关说明，请参阅[添加用户并同时分配许可证](add-users.md)。 在设置新员工时，您可以选择将登录详细信息发送到员工的个人帐户。 这样，他们将收到来自 Microsoft Online 服务团队的电子邮件，告知他们如何登录到 Microsoft 365。
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>步骤2：为员工提供其用户 ID 和密码
 
@@ -85,12 +85,8 @@ ms.locfileid: "44780669"
 |完成 OneDrive for Business 培训，以帮助您了解如何在云中存储和组织文档、演示文稿和电子表格。  <br/> |使用 OneDrive for Business 将与业务相关的文档保留在云中。 你始终可以访问你的内容，即使你已登录到另一台计算机上的 Microsoft 365 也是如此。 [观看视频以了解如何使用 OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **培训：** [onedrive for business 培训](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132)（选择 "onedrive for business"）。  <br/> |
 |完成 SharePoint Online 培训可帮助您与同事协作并共享内容。  <br/> |在 SharePoint Online 中，将您的同事也可以访问的文档的最佳位置。  <br/> <br/>**培训**：[视频：使用 SharePoint Online 与团队内容协作](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **查找：** 您的组织如何使用 SharePoint Online 以及存储在这里的文档类型。 此外，哪些文档存储在 OneDrive for Business 中。  <br/> |
 
-   
 ## <a name="related-articles"></a>相关文章
-
 
 [从 Microsoft 365 中删除以前的员工](remove-former-employee.md)
   
-[将用户逐个或批量添加到 Microsoft 365](add-users.md)
-  
-
+[在同一 time65 添加用户并分配许可证](add-users.md)

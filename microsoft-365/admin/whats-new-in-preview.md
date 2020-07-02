@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0bb0955e08c187ae7b425228f435566bcd8e01d7
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780703"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015989"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -349,7 +349,7 @@ Howdy，合作伙伴！ （无法帮助我自己。）我们也为你提供了�
 
 - **收藏夹**-您可以将星形添加到您喜欢的角色或大多数使用的角色，以便通过对列进行排序或创建筛选器来轻松地找到它们。
 - **活动用户**  > **管理角色**-已对此进行了更新，以与角色中的更改保持一致。 与 "角色" 列表一样，我们已将角色的默认列表范围限定为最有用，但您可以通过展开 "**按类别显示所有**角色" 来查看所有角色。
-- **全局读者角色**-你需要了解！ 没问题！ [全局读者](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center)角色！
+- **全局读者角色**-你需要了解！ 没问题！ [全局读者](add-users/about-admin-roles.md)角色！
 
 ### <a name="report-an-issue"></a>报告问题
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 了解如何在 Microsoft 365 购买时添加订阅顾问合作伙伴作为记录的合作伙伴，更改合作伙伴或从订阅中删除合作伙伴。
-ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 07e0d47d45f20e206fb8ca4c5ff5e81785bc74b9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432191"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005682"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>添加、更改或删除订阅顾问合作伙伴
 
@@ -56,7 +56,7 @@ ms.locfileid: "44432191"
 
 ::: moniker range="o365-germany"
 
-您选择的合作伙伴取决于您使用的 Office 365 服务以及将在哪个国家/地区使用这些服务。如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
+The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ ms.locfileid: "44432191"
     
 4. 如果您已经有一个合作伙伴，则在 "签出向导" 的第二步中，在 "合作伙伴信息" 下的 "合作伙伴信息" 下，选择 "**添加**"。
 
-5. 键入您要添加的合作伙伴的 Microsoft 合作伙伴 ID。您可以通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. 完成向导的其他部分，以完成购买订阅。 
     
@@ -98,7 +98,7 @@ ms.locfileid: "44432191"
     
 4. 如果您已经有一个合作伙伴，则在 "签出向导" 的第二步中，在 "合作伙伴信息" 下的 "合作伙伴信息" 下，选择 "**添加**"。
 
-5. 键入您要添加的合作伙伴的 Microsoft 合作伙伴 ID。您可以通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. 完成向导的其他部分，以完成购买订阅。 
     
@@ -127,7 +127,7 @@ ms.locfileid: "44432191"
   
 3. 在右侧的 "订阅成本" 下，选择 "**更多操作** > **添加记录的合作伙伴**"。
 
-4. 键入要添加的合作伙伴的 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
+4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 5. 合作伙伴 ID 将显示在" **订阅**"页面。
     
@@ -159,7 +159,7 @@ ms.locfileid: "44432191"
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ ms.locfileid: "44432191"
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ ms.locfileid: "44432191"
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。   
+4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
 
 ::: moniker-end
 
@@ -255,7 +255,7 @@ ms.locfileid: "44432191"
 
 你无法自行删除经销商关系。
   
-如果要删除转销商关系，"**删除**" 选项灰显，您将需要向转销商合作伙伴执行以下说明：[删除与合作伙伴的转销商关系](https://docs.microsoft.com/partner-center/remove-a-relationship)。
+您必须向经销商合作伙伴咨询以下说明：[删除与合作伙伴的转销商关系](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 了解如何使用 Complance 分数和合规性管理器改进个人数据保护级别。
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695169"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016363"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>使用合规性分数和合规性管理器管理改进操作
 
@@ -109,7 +109,7 @@ Microsoft 合规性分数和合规性管理器可结合使用，以管理与数�
 
 ## <a name="compliance-score"></a>合规性分数
 
-在合规性管理器中执行评估和审阅规范之后，你现在可以转到 "[合规性分数](../compliance/working-with-compliance-score.md)" 工具并查看分数和切片，并进一步切出数据，包括控制区域。
+在合规性管理器中执行评估和审阅规范之后，你现在可以转到 "[合规性分数](../compliance/compliance-score.md)" 工具并查看分数和切片，并进一步切出数据，包括控制区域。
 
 Microsoft 365 合规性管理中心中的合规性分数工具提供了几种查看和筛选从合规性管理器和各种 Microsoft 365 服务获取的合规性数据的方法。 在实施各种配置设置并共享带有 Microsoft 安全分数的信号时，将自动更新此工具，以便在两个分数中显示多个改进操作。 
  
@@ -141,7 +141,7 @@ Microsoft 365 合规性管理中心中的合规性分数工具提供了几种查
 
 - 每个数据隐私法规都结合了技术控制、文档规范以及操作、过程和报告要求。 所有这些操作都显示在改进操作中。 
 
-- 本文重点介绍了在合规性管理器和合规性分数中为数据隐私指定的技术控件的子集。 有关非技术性管理控件的详细信息，请参阅合规性管理器工具和[文档](../compliance/working-with-compliance-score.md)。
+- 本文重点介绍了在合规性管理器和合规性分数中为数据隐私指定的技术控件的子集。 有关非技术性管理控件的详细信息，请参阅合规性管理器工具和[文档](../compliance/compliance-score.md)。
 
 - 若要将改进操作视图集中到您感兴趣的领域，可以在合规性分数管理中的 "**解决方案**" 选项卡上按操作类型进行筛选。
 

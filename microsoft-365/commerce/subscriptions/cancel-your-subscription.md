@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818515"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023365"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -144,10 +144,12 @@ ms.locfileid: "44818515"
 
 ### <a name="uninstall-office-optional"></a>卸载 Office （可选）
 
-如果取消了你的订阅，但未将用户移动到包含 Microsoft 365 的其他订阅，Microsoft 365 将在缩减功能模式下运行。 当发生这种情况时，用户只能读取和打印文档，Microsoft 365 应用程序将显示未[授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 若要避免任何混淆，请要求用户卸载计算机上的 [Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果取消了你的订阅，但未[将用户移动到](move-users-different-subscription.md)包含 Microsoft 365 的其他订阅，Microsoft 365 将在缩减功能模式下运行。 当发生这种情况时，用户只能读取和打印文档，Microsoft 365 应用程序将显示未[授权的产品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 若要避免任何混淆，请要求用户卸载计算机上的 [Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
 
 ## <a name="related-articles"></a>相关文章
 
 [续订订阅](renew-your-subscription.md)
 
 [重新激活订阅](reactivate-your-subscription.md)
+
+[将用户移动到其他订阅](move-users-different-subscription.md)

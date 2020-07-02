@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用合规性管理器跟踪、分配和验证与 Microsoft 产品相关的法规遵从性活动。
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817079"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023389"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合规性管理器（预览）
 
@@ -41,7 +41,10 @@ ms.locfileid: "44817079"
 
 ## <a name="administration"></a>管理
 
-只有全局管理员可以使用特定的管理功能，并且只有在使用全局管理员帐户登录时才可见。 全局管理员可以分配用户权限并打开自动安全得分更新。
+只有全局管理员可以使用特定的管理功能，并且只有在使用全局管理员帐户登录时才可见。 全局管理员可以执行以下操作：
+- [分配用户角色](#assigning-compliance-manager-roles-to-users)
+- [打开和关闭自动安全得分更新](#controlling-automatic-secure-score-updates)
+- [配置用户隐私设置](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>向用户分配合规性管理器角色
 
@@ -94,6 +97,92 @@ ms.locfileid: "44817079"
 8. 选择 "**保存"。** 现已为该操作启用安全分数连续监控。
 
 **注意：** 只有全局管理员才能打开或关闭所有操作的自动更新。 合规性管理器管理员可以为单个操作启用自动更新，而不是全局执行所有操作。
+
+### <a name="configuring-user-privacy-settings"></a>配置用户隐私设置
+
+某些法规要求组织能够删除用户历史记录数据。 若要启用此功能，**用户隐私设置**功能允许管理员执行以下操作：
+  
+- [搜索用户](#search-for-a-user)
+
+- [导出帐户数据历史记录报告](#export-a-report-of-account-data-history)
+
+- [重新分配行动项](#reassign-action-items)
+
+- [删除用户数据历史记录](#delete-user-data-history)
+    
+![合规性管理器管理员 —“用户隐私设置”功能](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>搜索用户
+
+若要搜索用户帐户，请执行以下操作：
+  
+1. 键入别名（@ 符号左侧的信息）并通过单击右侧的域后缀列表选择域名，从而输入用户电子邮件地址。 如果您的组织具有多个注册的域，则可以仔细检查电子邮件地址域名后缀以确保其正确无误。
+    
+2. 正确输入了用户名后，选择 "**搜索**"。
+    
+3. 如果找不到用户帐户，页面上将显示错误消息 "未找到用户"。 检查用户的电子邮件地址信息，根据需要进行更正并选择 "**搜索**"，再试一次。
+    
+4. 如果找到了用户帐户，按钮文本会从“**搜索**”更改为“**清除**”，这表明返回的用户帐户是下方显示的附加功能的操作上下文，运行这些功能会应用于此用户帐户。
+    
+5. 若要清除搜索结果并搜索其他用户，请选择 "**清除**"。
+    
+#### <a name="export-a-report-of-account-data-history"></a>导出帐户数据历史记录报告
+
+识别用户帐户后，可能要生成与此帐户链接的依赖项报告。 通过此信息，可以重新分配未完成的操作项目，或确保可访问之前上传的证据。
+  
+ 若要生成并导出报告，请执行以下操作：
+  
+1. 选择 "**导出**" 以生成和下载当前分配给返回的用户帐户的合规性管理器控件操作项的报告以及该用户上载的文档列表。 如果没有分配的操作或上载的文档，则错误消息将显示 "此用户没有数据"。
+
+2. 报告在活动浏览器窗口的后台下载。 如果看不到 "下载" 弹出窗口，请查看浏览器下载历史记录。
+
+3. 打开文档即可查看报告数据。
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>重新分配行动项
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ 若要向其他用户重新分配行动项，请执行以下操作：
+  
+1. 单击输入框，浏览并选择组织内的另一名用户，向其分配已返回用户的行动项。
+    
+2. 选择“替换”****，将所有控制措施行动项从已返回用户重新分配给新选择的用户。
+    
+3. 此时将显示确认对话框，"这将把所有控制措施项从当前用户重新分配给选定的用户。 此操作无法撤消。 你确定要继续吗?”
+    
+4. 若要继续，请选择 **"确定"**，否则选择 "**取消**"。
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. 打开以前下载的“导出”报告。
+  
+2. 标识并转到相应控制措施行动项。
+  
+3. 选择 "**管理文档**" 以导航到该控件的证据存储库。
+  
+4. 下载文档。
+  
+5. 从证据存储库中删除此文档。
+  
+6. 重新上载文档。 该文档现在将具有新的上传日期、时间和 "上载者" 用户名。
+  
+#### <a name="delete-user-data-history"></a>删除用户数据历史记录
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ 若要删除用户帐户行动项和文档上传历史记录，请执行以下操作：
+  
+1. 选择“删除”****。
+
+2. 确认对话框将显示： "这将删除所选用户的所有控制措施项分配和文档上载历史记录。 此操作无法撤消。 你确定要继续吗?”
+    
+3. 若要继续，请选择 **"确定"**，否则选择 "**取消**"。
 
 ## <a name="groups"></a>组
 
@@ -196,6 +285,9 @@ ms.locfileid: "44817079"
 ## <a name="assessments"></a>评估
 
 本节介绍如何查看和使用评估，包括如何添加新的评估、导出、复制现有评估中的信息，以及如何通过版本控制对其进行更新。
+
+> [!NOTE]
+> 你现在可以在合规性分数中创建评估。 [查看指南和说明](compliance-score-assessments.md)。
 
 ### <a name="view-an-assessment-and-action-details"></a>查看评估和操作详细信息
   
@@ -408,13 +500,16 @@ ms.locfileid: "44817079"
 
 有三种方法可以使用模板来创建评估：
 
-1. 使用 Microsoft 提供的预先配置的模板之一。
-2. 通过扩展过程自定义预先配置的模板以及您自己的操作和控件。
+1. 使用 Microsoft 提供的模板准备使用的模板之一。
+2. 通过扩展过程自定义准备好使用模板和您自己的操作和控件。
 3. 创建您自己的模板并将其导入到合规性管理器中。
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>使用 Microsoft 预先配置的模板
+> [!NOTE]
+> 将模板上传到合规性管理器中时，必须由保留管理员角色的两个用户批准，才能发布并可供使用。
 
-预配置的模板在**模板**仪表板上可用。 查看当前[模板列表](compliance-manager-overview.md#templates)，该列表会在每次有新模板时更新。
+#### <a name="use-a-ready-to-use-template"></a>使用已准备好使用模板
+
+可以在**模板**仪表板上使用模板。 查看当前[模板列表](compliance-score-templates.md)，该列表会在每次有新模板时更新。
 
 #### <a name="customize-a-template-through-the-extension-process"></a>通过扩展过程自定义模板
 
@@ -423,21 +518,23 @@ ms.locfileid: "44817079"
 3. 从下拉式菜单中选择要扩展的模板。
 4. 如果尚未在 Excel 中设置模板数据的格式，请选择浮出控件窗格中的链接以下载 Excel 文件。 根据 "[导入模板数据](#import-template-data-with-excel)" 和下面的 Excel 说明填写电子表格，并将其保存到本地驱动器。
 5. 通过选择 "**浏览**" 来上载您的 Excel 文件，以导入自定义模板数据。
-6. 选择 "**添加到仪表板**"。 然后，你将看到添加到**模板**仪表板的新模板。
+6. 选择 "**添加到仪表板**"。
+7. 对模板所做的更改需要批准拥有管理员角色的两个用户。 这些用户会收到模板更新的通知。 其中一个更改由两个管理员批准，您将在**模板**仪表板上看到更新后的模板。
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>创建您自己的模板并将其导入到合规性管理器
 
 1. 打开 "**模板**" 仪表板，然后选择 " **+ 添加模板**"。
 2. 在 "模板" 浮出控件窗格中，选择 "**创建新模板**"。
 3. 通过选择 "**浏览**" 以上传包含数据的 Excel 文件（请参阅以下[Excel 中的导入模板数据](#import-template-data-with-excel)）导入模板数据。
-4. 选择 "**添加到仪表板**"。 然后，你将看到添加到**模板**仪表板的新模板。
+4. 选择 "**添加到仪表板**"。
+5. 新模板需要审批两个拥有管理员角色的用户。 这些用户会收到通知，指出新模板已准备好进行审批。 一个模板由两个管理员批准，您将在 "**模板**" 仪表板上看到您的新模板。
 
 #### <a name="import-template-data-with-excel"></a>使用 Excel 导入模板数据
 
 若要修改模板或创建自己的模板，您将使用[Excel 电子表格](https://go.microsoft.com/fwlink/?linkid=2124865)来捕获必要数据并将其上载到合规性管理器。 此电子表格模板具有必须使用的特定格式和架构，或者不会将其导入到合规性管理器中。
 
 > [!IMPORTANT]
-> 如果之前已在合规性管理器中创建或自定义模板，则**此过程已**作为2020年4月发布的合规性管理器（预览版）的一部分进行了更新。 **请仔细查看此部分。**
+> 如果之前已在合规性管理器中创建或自定义模板，则**此过程最近更新。请仔细查看此部分。**
 
 电子表格包含四个选项卡，其中三个选项卡是必需的：
 
@@ -496,7 +593,7 @@ ms.locfileid: "44817079"
 
 - **actionDescription**：提供操作的说明。 您可以应用粗体文本和超链接等格式。 这是必填字段。
 
-- **维度-操作目的**：这是可选字段。 如果包含，则标头必须包含 "dimension-" 前缀。 此处包含的任何维度将用作[符合性分数中的筛选器](compliance-score-setup.md#filtering-your-dashboard-view)，并显示在[合规性分数的 "改进操作详细信息" 页](working-with-compliance-score.md#view-your-improvement-actions)上。
+- **维度-操作目的**：这是可选字段。 如果包含，则标头必须包含 "dimension-" 前缀。 此处包含的任何维度将用作[符合性分数中的筛选器](compliance-score-setup.md#filtering-your-dashboard-view)，并显示在合规性分数的 "改进操作详细信息" 页上。
 
 ##### <a name="dimensions-tab"></a>维度选项卡
 

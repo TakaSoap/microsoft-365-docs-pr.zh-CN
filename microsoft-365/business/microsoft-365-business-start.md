@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786146"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022109"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -84,7 +84,7 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
     
     - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Office 365 的目录同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)。
     
-    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 可以在 "[安装向导](set-up.md)" 中执行此操作，也可以在[Microsoft 365 for business 中向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
+    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 您可以在 "[安装向导](set-up.md)" 中执行此操作，也可以[向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：准备移动设备
 

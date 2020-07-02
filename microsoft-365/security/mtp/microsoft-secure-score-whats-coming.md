@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 39fbc934dabcb3b0b24bd0b861be8db14b6e0c35
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844878"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023377"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分数中的情况如何？
 
@@ -30,26 +30,11 @@ ms.locfileid: "44844878"
 
 若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>2020 年 6 月
+## <a name="july-2020"></a>2020月
 
-### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>删除 Microsoft Defender 高级威胁防护的提高操作
+### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a>为 Azure 高级威胁防护添加改进操作
 
-* 打开攻击面降低规则
-
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>为 Microsoft Defender 高级威胁防护添加改进操作
-
-* 阻止 Adobe Reader 创建子流程
-* 对勒索软件使用高级防护
-* 阻止所有 Office 应用程序创建子进程
-* 阻止 Office 应用程序创建可执行内容
-* 阻止 JavaScript 或 VBScript 启动下载的可执行内容
-* 阻止执行可能模糊的脚本
-* 阻止来自电子邮件客户端和 web 邮件的可执行内容
-* 阻止 Office 通信应用程序创建子进程
-* 阻止从 USB 运行的不受信任和未签名的进程
-* 通过 WMI 事件订阅阻止持久化
-* 阻止 Office 应用程序将代码注入其他进程
-* 阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件
-* 阻止进程创建源自 PSExec 和 WMI 命令
-* 阻止从 Windows 本地安全颁发机构子系统盗取凭据（lsass.exe）
-* 阻止来自 Office 宏的 Win32 API 调用
+- 有风险的横向移动路径
+- 不安全帐户属性
+- 在 Active Directory 信任上启用安全功能
+- 从实体中删除不安全的 SID 历史记录属性
