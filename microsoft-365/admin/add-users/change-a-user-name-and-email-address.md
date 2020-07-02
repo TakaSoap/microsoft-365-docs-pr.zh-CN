@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936523"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -50,7 +50,7 @@ ms.locfileid: "44780621"
     
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
     
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 
+3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Office 365，则可使用下拉列表为新电子邮件别名选择域。 
 
 4. 选择“**保存更改**”。
 
@@ -99,23 +99,23 @@ ms.locfileid: "44780621"
   
 4. 你会看到一个大的黄色警告，提示你将更改用户的登录信息。 依次选择“**保存**”和“**关闭**”。
     
-5. 告知用户以下信息：
+5. 为用户提供以下信息：
  
-  - 此更改可能需要一些时间才会生效。
+  - 此更改可能需要一些时间。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - Their new username. They'll need it to sign in to Microsoft 365.
     
-  - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
+  - 如果用户使用的是 Skype for Business Online，他们必须重新安排其组织召开的所有 Skype for Business Online 会议并告知其外部联系人以更新联系人信息。
 
-  - 如果他们使用的是 OneDrive，请告诉他们此位置的 URL 已更改。 如果他们的 OneDrive 中有 OneNote 笔记本，可能需要在 OneNote 中关闭并重新打开笔记本。 如果他们具有 OneDrive 中的共享文件，则指向这些文件的链接可能不起作用，这种情况下，用户可以重新共享。    
+  - 如果他们使用的是 OneDrive，则此位置的 URL 已更改。 如果他们的 OneDrive 中有 OneNote 笔记本，则可能需要在 OneNote 中关闭后再重新打开笔记本。 如果他们在 OneDrive 中具有共享文件，则指向这些文件的链接可能不起作用，这种情况下，用户可以重新共享。    
   
-  - 如果还更改了密码，需告知用户系统将提示他们在移动设备上输入新密码，否则将不会同步。
+  - 如果还更改了密码，系统将提示他们在移动设备上输入新密码，否则将不会同步。
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
 
@@ -181,13 +181,13 @@ ms.locfileid: "44780621"
 
     如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。  
 
 2. 选择该用户。 在浮出窗格中的“**联系人信息**”旁，选择“**编辑**”。
 
@@ -217,7 +217,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
 
@@ -228,13 +228,13 @@ If you get the error message " **A parameter cannot be found that matches parame
 
 A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
+Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>用户的脱机通讯簿未与全局地址列表同步怎么办？
 
-If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 若要修复此问题，请使用 Microsoft 365 管理员凭据登录到[用于 PowerShell 的 Azure Active Directory 模块]( https://go.microsoft.com/fwlink/?LinkId=823193)， 然后使用以下语法： 
   

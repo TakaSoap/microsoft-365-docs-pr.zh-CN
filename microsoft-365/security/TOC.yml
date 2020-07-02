@@ -464,6 +464,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: 查看安全与合规中心内的电子邮件安全报告
               href: ./office-365-security/view-email-security-reports.md
+            - name: 查看安全与合规中心中的邮件流报告
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: 安全与合规中心内的邮件流见解
               href: ./office-365-security/mail-flow-insights-v2.md
               items:

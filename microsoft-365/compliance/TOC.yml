@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md
     - name: 有关 Office 365 加密的技术参考详情
       href: technical-reference-details-about-encryption.md
+    - name: Office 365 的 TLS 1.0 和 1.1 停用
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: 客户密钥
       items:
         - name: 使用 Office 365 中的客户密钥执行服务加密
@@ -249,10 +251,14 @@
       items:
         - name: 有关存档第三方数据的概述
           href: archiving-third-party-data.md
+        - name: 存档 Bloomberg 邮件数据（预览版）
+          href: archive-bloomberg-message-data.md
         - name: 存档脸书数据（预览版）
           href: archive-facebook-data-with-sample-connector.md
         - name: 导入 HR 数据（预览版）
           href: import-hr-data.md
+        - name: 存档 ICE 聊天数据（预览版）
+          href: archive-icechat-data.md
         - name: 存档即时 Bloomberg 数据
           href: archive-instant-bloomberg-data.md
         - name: 存档领英数据
