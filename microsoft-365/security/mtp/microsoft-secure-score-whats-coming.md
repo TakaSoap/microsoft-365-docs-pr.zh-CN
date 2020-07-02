@@ -17,39 +17,24 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 39fbc934dabcb3b0b24bd0b861be8db14b6e0c35
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844878"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023377"
 ---
-# <a name="whats-coming-in-microsoft-secure-score"></a><span data-ttu-id="41698-104">Microsoft 安全分数中的情况如何？</span><span class="sxs-lookup"><span data-stu-id="41698-104">What's coming in Microsoft Secure Score?</span></span>
+# <a name="whats-coming-in-microsoft-secure-score"></a><span data-ttu-id="1ae0f-104">Microsoft 安全分数中的情况如何？</span><span class="sxs-lookup"><span data-stu-id="1ae0f-104">What's coming in Microsoft Secure Score?</span></span>
 
-<span data-ttu-id="41698-105">为了使[Microsoft 安全得分](microsoft-secure-score.md)更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。</span><span class="sxs-lookup"><span data-stu-id="41698-105">To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future.</span></span> <span data-ttu-id="41698-106">你的分数和可能的最大分数都将发生变化。</span><span class="sxs-lookup"><span data-stu-id="41698-106">Your score and the maximum possible score will change.</span></span> <span data-ttu-id="41698-107">但是，这并不意味着您的安全状况发生了变化。</span><span class="sxs-lookup"><span data-stu-id="41698-107">However, this does not imply a change in your security posture.</span></span>
+<span data-ttu-id="1ae0f-105">为了使[Microsoft 安全得分](microsoft-secure-score.md)更好地代表安全状况并提高可用性，我们在不久的将来进行一些更改。</span><span class="sxs-lookup"><span data-stu-id="1ae0f-105">To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future.</span></span> <span data-ttu-id="1ae0f-106">你的分数和可能的最大分数都将发生变化。</span><span class="sxs-lookup"><span data-stu-id="1ae0f-106">Your score and the maximum possible score will change.</span></span> <span data-ttu-id="1ae0f-107">但是，这并不意味着您的安全状况发生了变化。</span><span class="sxs-lookup"><span data-stu-id="1ae0f-107">However, this does not imply a change in your security posture.</span></span>
 
-<span data-ttu-id="41698-108">若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)</span><span class="sxs-lookup"><span data-stu-id="41698-108">To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)</span></span>
+<span data-ttu-id="1ae0f-108">若要了解最近所做的更改，请参阅[Microsoft 安全分数中的新增功能？](microsoft-secure-score.md#whats-new)</span><span class="sxs-lookup"><span data-stu-id="1ae0f-108">To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)</span></span>
 
-## <a name="june-2020"></a><span data-ttu-id="41698-109">2020 年 6 月</span><span class="sxs-lookup"><span data-stu-id="41698-109">June 2020</span></span>
+## <a name="july-2020"></a><span data-ttu-id="1ae0f-109">2020月</span><span class="sxs-lookup"><span data-stu-id="1ae0f-109">July 2020</span></span>
 
-### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="41698-110">删除 Microsoft Defender 高级威胁防护的提高操作</span><span class="sxs-lookup"><span data-stu-id="41698-110">Remove improvement action for Microsoft Defender Advanced Threat Protection</span></span>
+### <a name="add-improvement-actions-for-azure-advanced-threat-protection"></a><span data-ttu-id="1ae0f-110">为 Azure 高级威胁防护添加改进操作</span><span class="sxs-lookup"><span data-stu-id="1ae0f-110">Add improvement actions for Azure Advanced Threat Protection</span></span>
 
-* <span data-ttu-id="41698-111">打开攻击面降低规则</span><span class="sxs-lookup"><span data-stu-id="41698-111">Turn on Attack Surface Reduction rules</span></span>
-
-### <a name="add-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="41698-112">为 Microsoft Defender 高级威胁防护添加改进操作</span><span class="sxs-lookup"><span data-stu-id="41698-112">Add improvement actions for Microsoft Defender Advanced Threat Protection</span></span>
-
-* <span data-ttu-id="41698-113">阻止 Adobe Reader 创建子流程</span><span class="sxs-lookup"><span data-stu-id="41698-113">Block Adobe Reader from creating child processes</span></span>
-* <span data-ttu-id="41698-114">对勒索软件使用高级防护</span><span class="sxs-lookup"><span data-stu-id="41698-114">Use advanced protection against ransomware</span></span>
-* <span data-ttu-id="41698-115">阻止所有 Office 应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="41698-115">Block all Office applications from creating child processes</span></span>
-* <span data-ttu-id="41698-116">阻止 Office 应用程序创建可执行内容</span><span class="sxs-lookup"><span data-stu-id="41698-116">Block Office applications from creating executable content</span></span>
-* <span data-ttu-id="41698-117">阻止 JavaScript 或 VBScript 启动下载的可执行内容</span><span class="sxs-lookup"><span data-stu-id="41698-117">Block JavaScript or VBScript from launching downloaded executable content</span></span>
-* <span data-ttu-id="41698-118">阻止执行可能模糊的脚本</span><span class="sxs-lookup"><span data-stu-id="41698-118">Block execution of potentially obfuscated scripts</span></span>
-* <span data-ttu-id="41698-119">阻止来自电子邮件客户端和 web 邮件的可执行内容</span><span class="sxs-lookup"><span data-stu-id="41698-119">Block executable content from email client and webmail</span></span>
-* <span data-ttu-id="41698-120">阻止 Office 通信应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="41698-120">Block Office communication application from creating child processes</span></span>
-* <span data-ttu-id="41698-121">阻止从 USB 运行的不受信任和未签名的进程</span><span class="sxs-lookup"><span data-stu-id="41698-121">Block untrusted and unsigned processes that run from USB</span></span>
-* <span data-ttu-id="41698-122">通过 WMI 事件订阅阻止持久化</span><span class="sxs-lookup"><span data-stu-id="41698-122">Block persistence through WMI event subscription</span></span>
-* <span data-ttu-id="41698-123">阻止 Office 应用程序将代码注入其他进程</span><span class="sxs-lookup"><span data-stu-id="41698-123">Block Office applications from injecting code into other processes</span></span>
-* <span data-ttu-id="41698-124">阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件</span><span class="sxs-lookup"><span data-stu-id="41698-124">Block executable files from running unless they meet a prevalence, age, or trusted list criterion</span></span>
-* <span data-ttu-id="41698-125">阻止进程创建源自 PSExec 和 WMI 命令</span><span class="sxs-lookup"><span data-stu-id="41698-125">Block process creations originating from PSExec and WMI commands</span></span>
-* <span data-ttu-id="41698-126">阻止从 Windows 本地安全颁发机构子系统盗取凭据（lsass.exe）</span><span class="sxs-lookup"><span data-stu-id="41698-126">Block credential stealing from the Windows local security authority subsystem (lsass.exe)</span></span>
-* <span data-ttu-id="41698-127">阻止来自 Office 宏的 Win32 API 调用</span><span class="sxs-lookup"><span data-stu-id="41698-127">Block Win32 API calls from Office macros</span></span>
+- <span data-ttu-id="1ae0f-111">有风险的横向移动路径</span><span class="sxs-lookup"><span data-stu-id="1ae0f-111">Risky lateral movement paths</span></span>
+- <span data-ttu-id="1ae0f-112">不安全帐户属性</span><span class="sxs-lookup"><span data-stu-id="1ae0f-112">Unsecure account attributes</span></span>
+- <span data-ttu-id="1ae0f-113">在 Active Directory 信任上启用安全功能</span><span class="sxs-lookup"><span data-stu-id="1ae0f-113">Enable security features on Active Directory trusts</span></span>
+- <span data-ttu-id="1ae0f-114">从实体中删除不安全的 SID 历史记录属性</span><span class="sxs-lookup"><span data-stu-id="1ae0f-114">Remove unsecure SID history attributes from entities</span></span>
