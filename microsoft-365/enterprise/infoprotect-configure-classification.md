@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解并配置对组织中的数据进行分类的各种方法。
-ms.openlocfilehash: e8c40ca4c419edc2d59a060dfd4fe8918cf4e784
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 57d4c692630826f371ea825d86fc64b959b71df2
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633470"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005806"
 ---
 # <a name="step-2-configure-classification-for-your-environment"></a>第 2 步：配置环境分类
 
@@ -92,7 +92,7 @@ Microsoft 365 中的敏感信息类型定义了自动化流程（例如搜索）
 
 现有 Azure 信息保护标签与敏感度标签无缝工作。 例如，你可以保留现有 Azure 信息保护标签以及应用于文档和电子邮件的标签。
 
-如果使用了敏感度和 Azure 信息保护标签，则应[将 Azure 信息保护标签迁移到敏感度标签](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels)。
+如果使用了敏感度和 Azure 信息保护标签，则应[将 Azure 信息保护标签迁移到敏感度标签](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection)。
 
 ## <a name="example-classification-for-gdpr"></a>示例：GDPR 分类
 

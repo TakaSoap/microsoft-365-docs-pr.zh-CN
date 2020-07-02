@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 理解并部署 Microsoft 365 中的 Windows 信息保护。
-ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7b76ef28d41810d6e9e45e98adb7a94cf8ae2f4
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631641"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005718"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步骤 4：配置 Windows 信息保护
 
@@ -37,11 +37,14 @@ Windows 信息保护 (WIP) 有助于防止 Windows 10 设备上的这些类型�
 若要使用 Microsoft 365 企业版在组织中部署 WIP：
 
 1. 在 Intune 中注册 Windows 设备。 你应该已经在[阶段 5：移动设备管理](mobility-infrastructure.md)过程中完成了此操作。
-2. 创建[WIP 的 Intune 策略](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)。
-  - 确保已填写“受保护应用列表”。
-  - 选择 WIP 保护等级。
 
-还可以将 WIP 与 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm) 结合使用。 
+2. 创建[WIP 的 Intune 策略](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)。
+
+   -    确保已填写“受保护应用列表”。
+  
+   - 选择 WIP 保护等级。
+
+还可以将 WIP 与 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr) 结合使用。 
 
 请参阅 [WIP 最佳做法]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)以获取详细信息。
 
