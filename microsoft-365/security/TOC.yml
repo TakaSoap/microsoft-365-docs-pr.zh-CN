@@ -217,7 +217,7 @@
               href: mtp/feedback.md
             - name: 通过 ServiceNow 管理票证
               href: ./mtp/tickets.md
-    - name: Office 365 高级威胁防护
+    - name: Office 365 安全中心
       items:
         - name: 入门
           items:
@@ -366,7 +366,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: 查看恶意文件的相关信息
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: 高级威胁防护
+        - name: Office 365 高级威胁防护
           href: ./office-365-security/office-365-atp.md
           items:
             - name: 查看新增功能
