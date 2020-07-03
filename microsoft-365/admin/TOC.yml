@@ -93,14 +93,12 @@
               href: manage/assign-licenses-to-users.md
             - name: 分配管理员角色
               href: add-users/assign-admin-roles.md
+            - name: 取消分配用户许可证
+              href: manage/remove-licenses-from-users.md
             - name: 来宾用户
               href: add-users/about-guest-users.md
             - name: 在 Microsoft 365 组添加来宾用户
               href: create-groups/manage-guest-access-in-groups.md
-            - name: 删除用户的许可证
-              href: manage/remove-licenses-from-users.md
-            - name: 解决许可证冲突
-              href: manage/resolve-license-conflicts.md
             - name: 更改用户名和电子邮件地址
               href: add-users/change-a-user-name-and-email-address.md
             - name: 删除前员工

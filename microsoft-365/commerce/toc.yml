@@ -36,12 +36,14 @@
       href: subscriptions/manage-self-service-purchases-admins.md
 - name: 管理许可证
   items:
-    - name: 管理订阅许可
+    - name: 购买或删除订阅许可证
       href: licenses/buy-licenses.md
     - name: 向用户分配许可证
       href: ../admin/manage/assign-licenses-to-users.md
     - name: 取消分配用户许可证
       href: ../admin/manage/remove-licenses-from-users.md
+    - name: 将用户移动到其他订阅
+      href: subscriptions/move-users-different-subscription.md
     - name: 了解订阅和许可证
       href: licenses/subscriptions-and-licenses.md
 - name: 帐单和付款
