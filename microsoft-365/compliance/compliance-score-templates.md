@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 查看准备用于在 Microsoft 合规性分数中设置评估的所有模板（预览）。
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016566"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035617"
 ---
 # <a name="compliance-score-preview-templates"></a>合规性分数（预览）模板
 
 ## <a name="templates-overview"></a>模板概述
 
-合规性分数提供了一组**用于创建评估的综合模板**。 这些模板可帮助您的组织遵守管理数据收集和使用所需的国家、地区和特定于行业的要求。 新模板将随着管理法规的颁布和更新而被添加。
+[合规性分数](compliance-score.md)提供了一组**用于创建评估的综合模板**。 这些模板可帮助您的组织遵守管理数据收集和使用所需的国家、地区和特定于行业的要求。 新模板将随着管理法规的颁布和更新而被添加。
 
 您可以根据组织的需要修改下面的任何模板。 您还可以通过创建自己的模板来创建自定义评估。 
 

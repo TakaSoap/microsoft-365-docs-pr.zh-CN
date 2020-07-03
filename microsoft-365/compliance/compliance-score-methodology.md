@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 合规性分数如何根据为解决风险而采取的措施计算个性化分数，并提高您的合规性状况。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023243"
+ms.locfileid: "45024672"
 ---
 # <a name="compliance-score-preview-calculation"></a>合规性分数（预览）计算
 
@@ -74,7 +74,7 @@ ms.locfileid: "45023243"
 
  - 无法绕过**强制操作**，无论是有意的还是意外的。 例如，集中管理的密码策略，设置密码长度、复杂性和过期的要求。 用户必须遵循以下要求才能访问系统。
   
- - **任意操作**取决于用户了解策略并相应地执行操作。 例如，要求用户在其离开时锁定其计算机的策略是自由控制，因为它依赖于用户。
+ - **任意操作**取决于用户了解策略并相应地执行操作。 例如，要求用户在离开它时锁定其计算机的策略是一个随意的操作，因为它依赖于用户。
   
 ### <a name="preventative-detective-and-corrective-actions"></a>预防性、侦探和纠正措施
   

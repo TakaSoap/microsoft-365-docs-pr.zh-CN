@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在保管人及其数据源中放置保留，以保留适用于高级电子数据展示事例的相关内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: f56d12b6d69e56e85f0e7ad37fbf65746a1cff23
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477158"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024732"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高级电子数据展示中管理保留
 
@@ -37,13 +37,13 @@ ms.locfileid: "44477158"
 若要查看保管人保留策略，请执行以下操作：
 
 1. 在 Microsoft 365 合规性中心中，单击 "**电子数据展示 > 高级**" 以显示组织中的案例列表。
-   
-2. 转到 "**保管人**" 选项卡，在你的事例中添加保管人。 若要了解如何在高级电子数据展示事例中添加和将保管人置于保留状态，请参阅[将保管人添加到高级电子数据展示事例](add-custodians-to-case.md)。 如果你已添加了保管人并将其置于保留状态，请转到步骤3。
-   
+
+2. 转到 "**源**" 选项卡，在你的事例中添加保管人。 若要了解如何在高级电子数据展示事例中添加和将保管人置于保留状态，请参阅[向事例添加保管人](add-custodians-to-case.md)。 如果你已添加了保管人并将其置于保留状态，请转到步骤3。
+
 3. 转到 "**保留**" 选项卡，然后单击 " **CustodianHold \<HoldId> **"。
-   
-4. 在弹出页面中，可以看到策略的 "保留统计信息"。 您还可以执行将查询应用于基于保管人的保留等操作。 有关创建保留查询和使用条件的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
- 
+
+4. 在飞出页面上，您可以查看策略的保留统计信息。 您还可以执行将查询应用于基于保管人的保留等操作。 有关创建保留查询和使用条件的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+
 ## <a name="manage-non-custodial-holds"></a>管理非 custodial 保留
 
 在创建保留时，您可以使用以下选项来限定指定内容位置中保留的内容：
@@ -70,19 +70,19 @@ ms.locfileid: "44477158"
   
 8. 选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
 
-   a. **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**" 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（在组成员的邮箱上放置保留）以使其处于保留状态。 您还可以在 Microsoft 365 组或 Microsoft 团队的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
+   1. **Exchange 电子邮件**-单击 "**选择用户、组或团队**"，然后再次单击 "**选择用户、组或团队**" 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组（在组成员的邮箱上放置保留）以使其处于保留状态。 您还可以在 Microsoft 365 组或 Microsoft 团队的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 "**选择**"，然后单击 "**完成**"。
  
-    > [!NOTE]
-    > 当您单击 "**选择用户、组或团队**以指定要置于保留状态的邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将人员添加到此列表，请在搜索框中键入一个名称（至少3个字符）。
+      > [!NOTE]
+      > 当您单击 "**选择用户、组或团队**以指定要置于保留状态的邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将人员添加到此列表，请在搜索框中键入一个名称（至少3个字符）。
 
-    b. **SharePoint 网站**-单击 "**选择网站**"，然后单击 "再次**选择网站**" 以指定 SharePoint 和 OneDrive for business 网站置于保留状态。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
+   1. **SharePoint 网站**-单击 "**选择网站**"，然后单击 "再次**选择网站**" 以指定 SharePoint 和 OneDrive for business 网站置于保留状态。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
     
-     有关将 Microsoft 365 组和 Microsoft 团队置于保留状态的提示，请参阅**FAQ**部分。
+      有关将 Microsoft 365 组和 Microsoft 团队置于保留状态的提示，请参阅**FAQ**部分。
 
-    > [!NOTE]
-    > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
+      > [!NOTE]
+      > 用户的 OneDrive 帐户的 URL 包括其用户主体名称（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在极少数情况下，某人的 UPN 发生更改时，其 OneDrive URL 也将更改为包含新的 UPN。 如果用户的 OneDrive 帐户是非 custodial 保留的一部分，并且其 UPN 已更改，则需要更新保留，并指向新的 OneDrive URL。 有关详细信息，请参阅 [UPN 更改如何影响 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes)。
 
-     c. **Exchange 公用文件夹**-将切换开关移动到 "所有位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 请注意，不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
+   1. **Exchange 公用文件夹**-将切换开关移动到 "所有位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 请注意，不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 "**无**"。
 
 9. 将内容位置添加到保留后，请单击 "**下一步**"。
   
@@ -126,7 +126,7 @@ Microsoft 团队基于 Office 365 组构建。 因此，在高级电子数据展
   - 在 Exchange Online 中运行**remove-unifiedgroup** cmdlet，以查看 Microsoft 365 组或 microsoft 团队的属性。 若要获取与 Microsoft 365 组或 Microsoft 团队相关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为“高层领导团队”的 Microsoft 365 组的选定属性：
 
 
-    ```text
+    ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam

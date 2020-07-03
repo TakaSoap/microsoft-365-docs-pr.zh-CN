@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: 您可以将非 custodial 数据源添加到高级电子数据展示事例，并在数据源中放置保留。 未 custodial 的数据源将被重新编制索引，因此被视为部分索引的所有内容都将被重新处理，以使其完全和快速地可搜索。
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: 您可以将非 custodial 数据源添加到高级电子数据展示事例，并在数据源中放置保留。 非 custodial 数据源是编制索引，因此被视为部分索引的任何内容都将重新处理，以使其完全和快速地可搜索。
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695495"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024742"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>将非 custodial 数据源添加到高级电子数据展示事例
 
@@ -47,7 +46,7 @@ ms.locfileid: "44695495"
 
    您添加的每个非 custodial 数据源都列在 "**数据源**" 页上。
 
-   此外，将创建一个名为 "*重新编制索引*" 的作业，并显示在该案例的 "**作业**" 选项卡上的 "custodial" 数据。 在创建作业之后，启动中的高级索引过程，并对数据源重新编制索引。
+   此外，将创建一个名为 "*索引非 custodial" 数据*的作业，并将其显示在该案例的 "**作业**" 选项卡上。 在创建作业之后，启动的高级索引过程和数据源将编制索引。
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>管理对非 custodial 数据源的保留
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 通过创建评估来帮助您管理组织的合规性，从而设计自定义的 Microsoft 合规性分数。
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023305"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035627"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>使用评估功能自定义合规性分数（预览）
 
@@ -35,7 +35,7 @@ ms.locfileid: "45023305"
 
 ## <a name="data-protection-baseline-default-assessment"></a>数据保护基线默认评估
 
-为了让你入门，Microsoft 在合规性分数中提供了一个**默认**评估，其中包含 Microsoft 365 数据保护基准。 此基准是一组控件，包括用于数据保护和常规数据管理的关键法规和标准。 此基线主要从 NIST CSF （美国国家标准和技术协会 Cybersecurity Framework）和 ISO （国际标准化组织）以及 FedRAMP （联邦风险和授权管理计划）和 GDPR （欧盟的常规数据保护法规）中提取元素。
+为入门，Microsoft 在合规性分数中提供了**默认**评估，其中包含 Microsoft 365 数据保护基准。 此基准是一组控件，包括用于数据保护和常规数据管理的关键法规和标准。 此基线主要从 NIST CSF （美国国家标准和技术协会 Cybersecurity Framework）和 ISO （国际标准化组织）以及 FedRAMP （联邦风险和授权管理计划）和 GDPR （欧盟的常规数据保护法规）中提取元素。
 
 在配置任何其他评估之前，此评估功能用于计算首次遵守合规性得分时的初始分数。 合规性分数收集来自 Microsoft 365 解决方案的初始信号。 你将快速了解你的组织是如何相对于关键数据保护标准和管理法规执行的，并查看建议采取的改进措施。
 
@@ -46,7 +46,7 @@ ms.locfileid: "45023305"
 您可以通过三种方法来设置评估：
 
 1. 选择 "已准备好使用评估"。
-2. 修改评估的模板以满足您自己的需求。
+2. 修改[评估的模板](compliance-score-templates.md)以满足您自己的需求。
 3. 创建您自己的自定义评估。
 
 用户必须拥有全局管理员、合规性管理员、合规性数据管理员或安全管理员角色才能创建或修改评估。 了解有关[角色和权限](compliance-score-setup.md#set-user-permissions-and-assign-roles)的详细信息。

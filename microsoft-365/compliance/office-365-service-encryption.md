@@ -14,21 +14,21 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：了解 Microsoft Office 365 中的数据恢复能力。
-ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4759cfda13ab5044ddf5980d7e61004e9e7626fa
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717343"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024772"
 ---
 # <a name="service-encryption"></a>服务加密
 
 除了使用卷级加密之外，Exchange Online、Skype for business、SharePoint Online 和 OneDrive for business 还使用服务加密来加密客户数据。 服务加密允许两个密钥管理选项：
 
-## <a name="microsoft-managed-keys"></a>Microsoft 托管密钥： 
+## <a name="microsoft-managed-keys"></a>Microsoft 托管密钥
 Microsoft 管理所有加密密钥，包括服务加密的根密钥。 此选项目前在 SharePoint Online 和 OneDrive for business 中可用。 此选项当前正在为 Exchange Online 推出。 Microsoft 托管密钥提供了默认服务加密，除非你决定使用客户密钥进行板载。 如果以后你决定停止使用客户密钥，而不考虑数据清除路径，则你的数据将使用 Microsoft 托管密钥进行加密。 你的数据始终至少在此默认级别进行加密。 
 
-## <a name="customer-key"></a>客户密钥： 
+## <a name="customer-key"></a>客户密钥
 提供用于服务加密的根密钥，并使用 Azure Key Vault 管理这些密钥。 Microsoft 管理所有其他密钥。 此选项称为 "客户密钥"，目前适用于 Exchange Online、SharePoint Online 和 OneDrive for Business。 （以前称为使用 BYOK 的高级加密。 请参阅增强针对原始公告的[Office 365 客户的透明度和控制](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)。
 
 服务加密提供了多项优势。 例如，客户密钥：

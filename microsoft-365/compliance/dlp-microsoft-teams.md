@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 现在，你可以将 DLP 策略应用于 Microsoft 团队聊天和频道。 阅读本文，了解详细了解它的工作原理。
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347851"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024722"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>数据丢失防护和 Microsoft 团队
 
@@ -95,7 +95,7 @@ ms.locfileid: "44347851"
 
 5. 保留所有帐户的默认设置，或指定要包含或排除的帐户。
 
-6. 单击“**保存**”。
+6. 单击“保存”****。
 
 允许大约一小时的更改通过数据中心工作并同步到用户帐户。
 <!-- again, why user accounts? -->
@@ -113,8 +113,8 @@ ms.locfileid: "44347851"
 
 5. 在 "**选择位置**" 选项卡上，保留 "所有位置" 的默认设置，或选择 "**让我选择特定位置**"，然后选择 "**下一步**"。<br/>如果您选择了特定位置，请为您的 DLP 策略选择它们，然后选择 "**下一步**"。<br/>![DLP 策略位置](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > 如果要确保包含敏感信息的文档不会被不当共享，请确保**SharePoint 网站**和**OneDrive 帐户**以及**团队聊天和频道消息**都已打开。
-    > Microsoft 团队中的频道强烈依赖 Exchange Online 功能。 请确保还为应用于频道内容的策略启用了**Exchange 电子邮件**位置。  
+    > 如果要确保包含敏感信息的文档不会在团队中不恰当地共享，请确保**SharePoint 网站**和**OneDrive 帐户**以及**团队聊天和频道消息**都已打开。
+
 <br/>
 
 6. 在 "**策略设置**" 选项卡上的 "**自定义要保护的内容类型**" 下，保留默认的简单设置，或选择 "**使用高级设置**"，然后选择 "**下一步**"。 如果选择 "高级设置"，则可以为策略创建或编辑规则。 （若要获取有关此方面的帮助，请参阅[简单设置与高级设置](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。）

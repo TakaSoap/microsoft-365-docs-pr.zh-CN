@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937010"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035696"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -32,6 +32,9 @@ ms.locfileid: "44937010"
 ![Security & 合规中心中的报告仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>已泄露用户报告
+
+> [!NOTE]
+> 此报告在具有 Exchange Online 邮箱的 Microsoft 365 组织中可用。 在没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）组织中不可用。
 
 "已**泄露的用户**" 报告显示在最近7天内被标记为**可疑**或**受限制**的用户帐户数。 在上述任一状态中的帐户都有问题或甚至已损坏。 通过频繁使用，您可以使用报告发现可疑或受限帐户中的峰值、甚至是趋势。 有关受损用户的详细信息，请参阅[响应已泄露的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
@@ -176,7 +179,7 @@ ms.locfileid: "44937010"
 
 若要查看报告，请打开 "[安全 & 合规中心](https://protection.office.com)"，转到 "**报告**" \> **仪表板**，然后选择 "**垃圾邮件检测**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=SpamDetections> 。
 
-!["报告" 仪表板中的 "垃圾邮件检测" 小部件](../../media/spam-detections-widget.png)
+!["报告" 仪表板中的 "垃圾邮件检测" 小部件](../../media/spam-detections-report-widget.png)
 
 有关反垃圾邮件保护的详细信息，请参阅[EOP 中的反垃圾邮件保护](anti-spam-protection.md)。
 
@@ -193,12 +196,14 @@ ms.locfileid: "44937010"
 
   当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以看到该日已阻止的项目数，以及这些项目的分类方式。
 
-  ![垃圾邮件检测报告的报告视图中的操作视图](../../media/spam-detections-report-action-view.png)
+  ![垃圾邮件检测报告中的操作视图](../../media/spam-detections-report-action-view.png)
 
 - **分解方式：方向**：以下说明如下所示：
 
   - **进货**
   - **出站**
+
+  ![垃圾邮件检测报告中的 "方向" 视图](../../media/spam-detections-report-direction-view.png)
 
 如果您在报告视图中单击 "**筛选器**"，则可以使用以下筛选器修改结果：
 
@@ -266,7 +271,7 @@ ms.locfileid: "44937010"
 
 若要查看报告，请打开[安全 & 合规中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**威胁保护状态**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
 
-![威胁防护状态](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+!["报告" 仪表板中的 "威胁防护状态" 小部件](../../media/threat-protection-status-report-widget.png)
 
 默认情况下，图表显示过去7天的数据。 如果单击 "**筛选器**"，则可以选择一个90天的日期范围（试用订阅可能限制为30天）。 [！说明] [！说明] 详细信息表视图允许筛选30天。
 
@@ -280,45 +285,55 @@ ms.locfileid: "44937010"
   - **电子邮件网络钓鱼**
   - **内容恶意软件**
 
-- **数据查看依据：内容 \>恶意软件**：显示以下信息：
+  ![威胁 protection 状态报告中的概述视图](../../media/threat-protection-status-report-overview-view.png)
+
+- **数据查看依据：内容 \>恶意软件**<sup>1</sup>：为 Office 365 ATP 组织显示以下信息：
 
   - **反恶意软件引擎**
   - **文件沙箱**
 
+  ![威胁 protection 状态报告中的内容恶意软件视图](../../media/threat-protection-status-report-content-malware-view.png)
+
 - **分解方式：检测技术**和**查看数据的方式：电子邮件 \> 网络钓鱼**：将显示以下信息：
 
-  - **ATP 生成的 URL 信誉**<sup>\*</sup>
-  - **高级网络钓鱼筛选器**<sup>\*</sup>
+  - **ATP 生成的 URL 信誉**<sup>1</sup>
+  - **高级网络钓鱼筛选器**
   - **反欺骗： DMARC 故障**
   - **反欺骗：组织内**
   - **反欺骗：外部域**
-  - **品牌模拟**<sup>\*</sup>
-  - **域模拟**<sup>\*</sup>
+  - **品牌模拟**
+  - **域模拟**<sup>1</sup>
   - **EOP URL 信誉**
   - **常规网络钓鱼筛选器**
   - **其他**
-  - **网络钓鱼 ZAP**<sup>\*\*</sup>
-  - **URL 沙箱**<sup>\*\*</sup>
-  - **用户模拟**<sup>\*</sup>
+  - **网络钓鱼 ZAP**<sup>2</sup>
+  - **URL 沙箱**<sup>1</sup>
+  - **用户模拟**<sup>1</sup>
+
+  ![威胁防护状态报告中的网络钓鱼电子邮件的检测技术视图](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分解方式：检测技术**和**查看数据的依据：电子邮件 \> 恶意软件**：显示以下信息：
 
-  - **ATP 生成的文件信誉**<sup>\*\*</sup>
-  - **反恶意软件引擎**
+  - **ATP 生成的文件信誉**<sup>1</sup>
+  - **反恶意软件引擎**<sup>1</sup>
   - **反恶意软件策略文件类型块**
-  - **文件沙箱**<sup>\*\*</sup>
+  - **File 沙箱**<sup>1</sup>
   - **恶意文件信誉**
-  - * * 恶意软件 ZAP * * * *<sup>\*\*</sup>
+  - **恶意软件 ZAP**<sup>2</sup>
   - **其他**
+
+  ![威胁防护状态报告中的恶意软件的检测技术视图](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 - **分解方式：策略类型**和**查看数据的依据：电子邮件 \> 网络钓鱼诈骗**或**查看数据：电子邮件 \> 恶意软件**：显示以下信息：
 
-  - **反恶意软件**<sup>\*\*</sup>
-  - **安全附件**<sup>\*\*</sup>
+  - **反恶意软件**
+  - **安全附件**<sup>1</sup>
   - **反网络钓鱼**
   - **反垃圾邮件**
   - **邮件流规则**（也称为传输规则）
   - **其他**
+
+  ![威胁防护状态报告中的仿冒电子邮件的策略类型视图](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **分解方式：传递状态**和**查看数据方式：电子邮件 \> 网络钓鱼**或**查看数据：电子邮件 \> 恶意软件**：显示以下信息：
 
@@ -332,9 +347,11 @@ ms.locfileid: "44937010"
   - **内部部署服务器：已交付**
   - **隔离**
 
-<sup>\*</sup>仅限 Office 365 ATP
+  ![威胁防护状态报告中的仿冒电子邮件的传递状态视图](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>\*\*</sup>零小时自动清除（ZAP）在独立 EOP 中不可用（它仅适用于 Exchange Online 邮箱）。
+仅<sup>1</sup>个 OFFICE 365 ATP
+
+<sup>2</sup> 0 小时自动清除（ZAP）在独立 EOP 中不可用（它仅适用于 Exchange Online 邮箱）。
 
 如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
@@ -348,10 +365,10 @@ ms.locfileid: "44937010"
 
 - **数据查看依据：内容 \>恶意软件**：
 
-- **Date**
-- **位置**
-- **指导者**
-- **恶意软件名称**
+  - **Date**
+  - **位置**
+  - **指导者**
+  - **恶意软件名称**
 
 - **数据查看方式：概述**：没有可用的**视图详细信息表**按钮。
 
@@ -361,7 +378,7 @@ ms.locfileid: "44937010"
   - **主题**
   - **发件人**
   - **Recipients**
-  - **指导者**
+  - **检测人**
   - **传递状态**
   - **泄露来源**
 
@@ -373,33 +390,31 @@ ms.locfileid: "44937010"
 
 ## <a name="top-malware-report"></a>主要恶意软件报告
 
-**上面的恶意软件**报告显示由[EOP](eop-features.md)检测到的各种类型的恶意软件。
+**最上面的恶意软件**报告显示了[EOP 中的反恶意软件保护](anti-malware-protection.md)检测到的各种类型的恶意软件。
 
-若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**主要恶意软件**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=TopMalwaret> 。
+若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 "**主要恶意软件**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=TopMalware> 。
 
-![SCC-EOP 主要恶意软件](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+!["报告" 仪表板中的主要恶意软件小部件](../../media/top-malware-report-widget.png)
 
 当您将鼠标指针悬停在饼图中时，您可以看到某种类型的恶意软件的名称以及检测到该恶意软件的邮件数。
 
-单击（或点击）报表以在新的浏览器窗口中打开它，您可以在其中获取报表的更详细视图。
+![主要恶意软件报告视图](../../media/top-malware-report-view.png)
 
-![此报告显示为你的组织检测到的主要恶意软件](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+如果单击 "**查看详细信息表**"，则可以看到以下详细信息：
 
-在图表下方，你将看到检测到的恶意软件的列表以及检测到该恶意软件的邮件数。 请注意，聚合视图仅允许90天的筛选。
+- **主要恶意软件**
+- **Count**
+
+如果单击 "报表视图" 或 "详细信息表" 视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
 
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
-此报告的小部件在报告仪表板上命名为**URL 保护报告**，并且仅在 Office 365 高级威胁防护（ATP）中可用。 具体来说：
-
-- Microsoft 365 E5 订阅。
-- 高级威胁防护外接程序（Plan 1*或*plan 2）到包括 Exchange Online PROTECTION （EOP）的任何其他订阅。
-
-若要直接转到 " **URL 威胁防护**" 报告，请打开 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
-
 > [!NOTE]
-> 此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不**跟踪用户点击**" 选项。
+> 此报告仅适用于 Office 365 高级威胁防护（ATP）。 例如，Microsoft 365 E5 订阅，或 ATP 计划1或 ATP 计划2加载项。
 
-![操作中的 URL 威胁防护报告的图形。](../../media/tp-URLThreatProRpt1.PNG)
+**Url 威胁防护报告**提供了检测到的威胁的汇总和趋势视图，以及对 URL 单击执行的操作作为[ATP 安全链接](atp-safe-links.md)的一部分。 此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不**跟踪用户点击**" 选项。
+
+若要查看报告，请打开[安全性 & 合规性中心](https://protection.office.com)，转到 "**报告**" \> **仪表板**，然后选择 " **URL 保护**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>URL 威胁防护报告的报告视图
 
@@ -417,6 +432,8 @@ ms.locfileid: "44937010"
 
   - **开始日期**和**结束日期**
   - 可用的单击保护操作，以及**允许**查看所有 URL 单击的信息的值（不只是阻止单击）。
+
+  ![URL 单击 URL 威胁防护报告中的 "保护操作" 视图](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 - **URL 单击应用程序**：显示支持 OFFICE 365 ATP 安全链接的应用程序的 url 单击次数：
 

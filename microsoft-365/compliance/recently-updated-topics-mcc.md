@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936145"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035637"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -150,7 +150,7 @@ ms.locfileid: "44936145"
 
 [管理邮箱审核](enable-mailbox-auditing.md#logon-types-and-mailbox-actions)（更新）<br>添加了有关新的 MailItemsAccessed 邮箱操作的信息，该操作是通过高级审核引入的。
 
-[搜索审核日志](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)（更新）<br>新增了有关敏感度标签活动的新说明以及有关审核[表单协作活动](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)的其他信息。
+[搜索审核日志](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)（更新）<br>新增了有关敏感度标签活动的新说明以及有关审核[表单协作活动](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders)的其他信息。
 
 ### <a name="compliance-offerings"></a>合规性产品/服务
 

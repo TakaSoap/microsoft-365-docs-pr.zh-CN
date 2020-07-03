@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用批量添加工具将多个保管人及其关联的数据源快速添加到高级电子数据展示的案例中。
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741640"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024662"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>向高级电子数据展示案例批量添加保管人
 
@@ -37,7 +37,8 @@ ms.locfileid: "44741640"
 
 4. 将 custodial 信息添加到 CSV 文件，并将其保存在您的本地计算机上。 有关 CSV 文件中的属性的信息，请参阅下一节。
 
-5. 在 "**源**" 选项卡上，再次单击 "**导入保管人**"。 
+5. 在 "**源**" 选项卡上，再次单击 "**导入保管人**"。
+
 6. 在弹出页面上，单击 "**浏览**"，然后上传 CSV 文件。
 
    在上传 CSV 文件后，将创建一个 BulkAddCustodian 作业并将其显示在 "**作业**" 选项卡上。该作业将验证保管人及其相应的数据源，然后将其添加到事例的 "**源**" 页上的 "**保管人**" 选项卡上。

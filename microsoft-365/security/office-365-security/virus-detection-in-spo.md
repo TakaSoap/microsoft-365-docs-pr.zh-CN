@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解 SharePoint Online 如何检测用户上载的文件中的病毒并阻止用户下载或同步文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a47f52a30f90d7a19cc01dc9e14eb9b534ec244
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
+ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034946"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45029604"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online 中的病毒检测
 
@@ -62,4 +62,10 @@ Microsoft 365 使用通用的病毒检测引擎。 引擎在 SharePoint Online �
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步客户端尝试同步受感染的文件时，会发生什么情况？
 
-无论用户是使用新 OneDrive 同步客户端（OneDrive .exe）还是以前的 OneDrive for Business 同步客户端（Groove）同步文件，同步客户端也不会下载该病毒。 同步客户端将显示一条通知，指出文件无法同步。
+用户是使用新 OneDrive 同步客户端（OneDrive.exe）还是以前的 OneDrive for Business 同步客户端（Groove.exe）同步文件，如果文件包含病毒，同步客户端不会下载它。 同步客户端将显示一条通知，指出文件无法同步。
+
+## <a name="more-information"></a>更多信息
+
+有关如何配置 SharePoint Online 防病毒的详细信息，请参阅[针对威胁进行保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements)和[打开有关 sharepoint、OneDrive 和 MICROSOFT 团队的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) 。
+
+

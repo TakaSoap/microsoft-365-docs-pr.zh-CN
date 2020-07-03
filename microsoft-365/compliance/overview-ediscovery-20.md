@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 description: 本文概述了 Microsoft 365 中的高级电子数据展示，这是用于内部和外部调查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322037"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024783"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
 Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中现有的电子数据展示和分析功能之上。 这一新的解决方案称为*高级电子数据展示*，它提供了一个端到端工作流，用于保留、收集、查看、分析和导出对组织的内部和外部调查做出响应的内容。 它还允许法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 
 
 > [!NOTE]
-> 高级电子数据展示需要 Office 365 或 Microsoft 365 E5 企业版订阅。 有关高级电子数据展示许可的更多详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
+> 高级电子数据展示需要 Office 365 或 Microsoft 365 E5 企业版订阅。 有关高级电子数据展示许可的详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
 
 ## <a name="alignment-with-edrm"></a>与 EDRM 的对齐方式
 
@@ -59,13 +59,13 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 以下各节介绍高级电子数据展示中的内置工作流中的每个步骤。 以下屏幕截图显示了名为 "*产品责任 2019002*" 的事例的 "**主页**" 选项卡。 注释将对页面顶部的工作流选项卡进行排序，使其与 EDRM 进程一致。 
 
-有关高级电子数据展示中的端到端工作流的详细信息，请参阅此[Microsoft 机械视频](https://go.microsoft.com/fwlink/?linkid=2066133)。 
+有关高级电子数据展示中的端到端工作流的详细信息，请参阅此[Microsoft 机械视频](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
 ![高级电子数据展示中的选项卡遵循 EDRM 工作流](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>管理保管人
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 数据源
 
-使用 "**保管人**" 选项卡可以在案例中添加和管理已确定为感兴趣的人员。 在添加保管人时，可以快速执行与保管人相关的操作，例如，在保管人数据源上放置合法保留、与保管人进行通信以及搜索保管人数据源，以收集与案例相关的内容。 在这种情况下，可以轻松地从案例中添加新的保管人或发布保管人。 有关详细信息，请参阅[高级电子数据展示中的与保管人合作](managing-custodians.md)。
+使用 "**源**" 选项卡可以在案例中添加和管理已标识为 "感兴趣" 的人员，以及可能不与保管人关联的其他数据源。 在添加保管人或非 custodial 数据源时，可以快速执行操作，例如，在保管人和非 custodial 数据源上放置合法保留、与保管人进行通信以及搜索保管人和非 custodial 数据源，以收集与事例相关的内容。 在这种情况下，可以轻松地添加新的保管人或非 custodial 的日期源，也可以从案例中释放它们。 有关详细信息，请参阅[高级电子数据展示中的与保管人合作](managing-custodians.md)。
 
 ## <a name="managing-legal-hold-notifications"></a>管理法律保留通知
 
