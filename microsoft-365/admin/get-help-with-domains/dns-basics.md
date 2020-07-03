@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: 3a3a03c408d480b5d4678fde25c8830e063b1310
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780177"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035605"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -43,7 +43,7 @@ ms.locfileid: "44780177"
 
 ::: moniker range="o365-germany"
 
-域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理 Office 365 中的域。
+域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理域。
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -51,7 +51,7 @@ ms.locfileid: "44780177"
 
 ::: moniker range="o365-21vianet"
 
-域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理员管理由世纪互联运营的 Office 365 中的域。
+域名（如 contoso.com）可通过全球范围的域注册机构和数据库托管。 域名系统（DNS ）在可人工读取的计算机主机名与网络设备所用的 IP 地址之间进行映射。 理解 DNS 和域注册机构的基础知识，有助于管理员管理域。
   
 ::: moniker-end
 
@@ -65,30 +65,30 @@ ms.locfileid: "44780177"
     
 - **mail** 是第三级域名 
     
-为什么使用第三级域名？ 可能希望针对市场营销或博客使用不同的域名。 例如 blog.contoso.com。 通常添加二级域（如 contoso.com）以与 Office 365 一起使用，但也可以根据需要使用第三级域。
+为什么使用第三级域名？ 可能希望针对市场营销或博客使用不同的域名。 例如 blog.contoso.com。 通常添加二级域（如 contoso.com）以与 Microsoft 一起使用，但也可以根据需要使用第三级域。
   
-在 [Office 365 域的服务说明](https://go.microsoft.com/fwlink/?LinkId=402693)中了解有关对于每种类型的服务你可以使用域执行的操作的更多信息。
+在 [Microsoft 365 和 Office 365 平台服务说明](https://go.microsoft.com/fwlink/?LinkId=402693)中了解有关对于每种类型的服务你可以使用域执行的操作的更多信息。
   
 ## <a name="understand-dns-record-types"></a>了解 DNS 记录类型
 
-域 DNS 主机上存储的 DNS 记录用于定向域的通信。 下表介绍了常用的 DNS 记录以及如何与 Office 365 配合使用。
+域 DNS 主机上存储的 DNS 记录用于定向域的通信。 下表介绍了常用的 DNS 记录以及如何使用。
   
-|**NS（名称服务器）记录**|**标识属于域的“权威名称服务器”的名称服务器。 当你更改域的名称服务器时，你将更改管理 DNS 记录的位置以及 DNS 系统查找邮件服务器等相关信息的位置。 Office 365 有其自己的名称服务器，或者你也可以一直使用你的域已设置好的名称服务器。**|
+|**NS（名称服务器）记录**|**标识属于域的“权威名称服务器”的名称服务器。 当你更改域的名称服务器时，你将更改管理 DNS 记录的位置以及 DNS 系统查找邮件服务器等相关信息的位置。 Microsoft 有其自己的名称服务器，或者你也可以一直使用你的域已设置好的名称服务器。**|
 |:-----|:-----|
 |记录（地址记录）  <br/> |让一个域名和一个 IP 地址产生关联。  <br/> |
 |CNAME（别名或规范名称）记录  <br/> |将一个域重定向到 DNS 系统中的另一个域。 当名称服务器查找一个域，且找到一个 CNAME 记录时，它会用 CNAME 替换第一个域名，然后查找新的名称。  <br/> |
 |MX（邮件交换器）记录  <br/> |指向应发送您的电子邮件的位置。 它还具有一个优先级字段，以便您可以按优先顺序向不同服务器发送邮件。  <br/> |
 |SPF（发送方策略框架）记录  <br/> |有助于防止电子邮件欺诈和网络钓鱼的 TXT 记录。  <br/> |
-|SRV（服务）记录  <br/> |由 Skype for Business Online 和 Exchange Online 用来协调 Office 365 服务间的信息流。 例如在 Outlook Web App 中查看联机状态、使用 Skype for Business Online、Skype 或其他即使消息工具与其他公司的人员交流，SRV 记录必不可少。  <br/> |
+|SRV（服务）记录  <br/> |由 Skype for Business Online 和 Exchange Online 用来协调 Microsoft 服务间的信息流。 例如在 Outlook Web App 中查看联机状态、使用 Skype for Business Online、Skype 或其他即使消息工具与其他公司的人员交流，SRV 记录必不可少。  <br/> |
 |TTL（生存时间）  <br/> |服务器查找更新版本之前名称服务器保留 DNS 记录的时间量。  <br/> |
    
 ## <a name="how-does-dns-work"></a>DNS 如何工作？
 
-使用云服务（如 Office 365）设置域包括更改或添加域的 [DNS 记录](dns-basics.md)。 由于 DNS、域名系统和域名在 Internet 中的工作方式，需要这些更改才能知道从何处发送或查找内容，例如电子邮件和网站。 
+使用云服务（如 Microsoft 365）设置域包括更改或添加域的 [DNS 记录](dns-basics.md)。 由于 DNS、域名系统和域名在 Internet 中的工作方式，需要这些更改才能知道从何处发送或查找内容，例如电子邮件和网站。 
   
 Internet 已设置为使用 DNS 或域名系统（允许我们使用熟悉的名称，如 contoso.com），可在标有难以记住的数字（称为 Internet 协议 (IP) 地址）的范围下查找实际的特定 Internet 位置。 IP 地址类似于 70.42.241.42，因此，您可以更轻松地使用域名来识别电子邮件主机和网站等位置。
   
-简而言之：DNS 记录告诉 Internet 在何处发送电子邮件（如 joe@contoso.com）或查找使用域名的网站（如 www.contoso.com）。 存储合适的信息至正确的域 DNS 记录中时，DNS 系统正确路由，例如电子邮件能够到达 Office 365，而不是其它地方。
+简而言之：DNS 记录告诉 Internet 在何处发送电子邮件（如 joe@contoso.com）或查找使用域名的网站（如 www.contoso.com）。 存储合适的信息至正确的域 DNS 记录中时，DNS 系统正确路由，例如电子邮件能够到达 Microsoft 365，而不是其它地方。
   
 域的 DNS 记录可以通过其他方式发挥作用。 例如，Exchange 检查允许 Outlook 自动设置与合适 Exchange Server 的连接的 DNS 记录。
   
@@ -96,11 +96,11 @@ Internet 已设置为使用 DNS 或域名系统（允许我们使用熟悉的名
 
 如上所述，DNS 实际会路由 Internet 上的流量，将友好域名映射到难于记住的 IP 地址。  一个 DNS 记录（称为 MX 记录）专门用于向合适的主机发送电子邮件。 
   
-DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件中，文件中含有各域记录及其数值的列表。 域注册机构和其他 DNS 托管公司在网站上提供用户界面，因此可在域区域文件中编辑记录。 在那里可更新域的 MX 记录，发送电子邮件至 Office 365。
+DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件中，文件中含有各域记录及其数值的列表。 域注册机构和其他 DNS 托管公司在网站上提供用户界面，因此可在域区域文件中编辑记录。 在那里可更新域的 MX 记录，发送电子邮件至 Microsoft 365。
   
- *当将你的电子邮件更改为 Office 365 时，在下一步中更新的域的 MX 记录，那么发送到该域的所有电子邮件都将开始传送到 Office 365。*  如果其他用户的电子邮件使用你的域，必须为每个这些用户设置 Office 365 邮箱。 
+ *当将你的电子邮件更改为 Microsoft 365 时，在下一步中更新的域的 MX 记录，那么发送到该域的所有电子邮件都将开始传送到 Microsoft 365。*  如果其他用户的电子邮件使用你的域，必须为每个这些用户设置 Microsoft 365 邮箱。 
   
-听起来很复杂？  可能是，我们将引导您完成 Office 365 域设置中的每个步骤。
+听起来很复杂？  可能是，我们将引导您完成 Microsoft 域设置中的每个步骤。
   
 ### <a name="dns-tells-the-internet-where-to-look-for-websites-too"></a>DNS 告知 Internet 在哪里查找网站
 
@@ -108,23 +108,23 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 ::: moniker range="o365-worldwide"
 
-假设 contoso.com 的 NS 记录为 “godaddy.com”。 现在 Internet 知道，GoDaddy.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Office 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
+假设 contoso.com 的 NS 记录为 “godaddy.com”。 现在 Internet 知道，GoDaddy.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Microsoft 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-假设 contoso.com 的 NS 记录为 “godaddy.com”。 现在 Internet 知道，GoDaddy.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Office 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
+假设 contoso.com 的 NS 记录为 “godaddy.com”。 现在 Internet 知道，GoDaddy.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Microsoft 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-假设 contoso.com 的 NS 记录为 “hichina.com”。 现在 Internet 知道，hichina.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Office 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
+假设 contoso.com 的 NS 记录为 “hichina.com”。 现在 Internet 知道，hichina.com 是查找区域文件的位置，区域文件列出了用于 contoso.com 的所有其他 DNS 记录。 这些 DNS 记录包含 MS 记录，显示发送 contoso.com 电子邮件和其他记录的位置。 如果 MX 拥有一个数值 "send email to Microsoft 365"，表示所有发送至 contoso.com 电子邮件地址（如 joe@contoso.com）的所有电子邮件将被发送到那里。 随后只要此位置有一个名为“joe”的收件箱，电子邮件就会被递送。
 
 ::: moniker-end
 
-如果在域设置步骤中设置域，必须输入以使用 Office 365 工作的实际值为你列出。 若要手动执行设置，可将值复制并粘贴到 DNS 主机上的正确 DNS 记录（MX 记录、CNAME 记录等）中，这可能是域注册机构，但不强制。
+如果在域设置步骤中设置域，必须输入以使用 Microsoft 365 工作的实际值为你列出。 若要手动执行设置，可将值复制并粘贴到 DNS 主机上的正确 DNS 记录（MX 记录、CNAME 记录等）中，这可能是域注册机构，但不强制。
   
 ::: moniker range="o365-worldwide"
 
@@ -145,21 +145,21 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 ::: moniker-end
 
 > [!NOTE]
-> 如果你在 Office 365 中设置你的域，以便 [Microsoft 设置和管理您的 DNS 记录](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，那么在设置过程中，请[更改 DNS 管理至 Office 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
+> 如果你在 Microsoft 365 中设置你的域，以便 [Microsoft 设置和管理您的 DNS 记录](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，那么在设置过程中，请[更改 DNS 管理至 Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
  
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>为什么要在 Office 365 中添加域？
 
 
-添加自定义域（如 fourthcoffee.com）至 Office 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Office 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Office 365 用于电子邮件，许多人更愿意添加组织或商业域。 
+添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
 > 如果只希望下载和使用 Microsoft 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
-您可以在 Office 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
+您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Office 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的 Microsoft 365 订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
@@ -168,17 +168,17 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-## <a name="why-add-a-domain-in-office-365"></a>为什么要在 Office 365 中添加域？
+## <a name="why-add-a-domain-in-microsoft-365"></a>为什么要在 Microsoft 365 中添加域？
 
 
-添加自定义域（如 fourthcoffee.com）至 Office 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Office 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Office 365 用于电子邮件，许多人更愿意添加组织或商业域。 
+添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 
   
 > [!NOTE]
-> 如果只希望下载和使用 Office 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
+> 如果只希望下载和使用 Microsoft 365 应用（如 Outlook 或 Word），则不需要添加域：[在 PC 或 Mac 上安装 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) 即可。 
   
-您可以在 Office 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
+您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Office 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
@@ -186,20 +186,17 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
     
 ::: moniker-end
 
-## <a name="the-dns-records-required-for-office-365"></a>Office 365 所需的 DNS 记录
+## <a name="the-dns-records-required-for-microsoft-365"></a>Microsoft 365 所需的 DNS 记录
 
-对于 Office 365，需要几个 DNS 记录才能使用你的域。 除了设置您的域的 MX 记录来将电子邮件发送到 Office 365，还有一些记录可以帮助您完成以下任务：确保 Outlook 可以自动连接到正确的 Exchange 服务器，设置即时消息，帮助防止垃圾电子邮件等。
+对于 Microsoft 365，需要几个 DNS 记录才能使用你的域。 除了设置您的域的 MX 记录来将电子邮件发送到 Microsoft 365，还有一些记录可以帮助您完成以下任务：确保 Outlook 可以自动连接到正确的 Exchange 服务器，设置即时消息，帮助防止垃圾电子邮件等。
   
 可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 Microsoft 365 管理中心中。 
   
-或者，如果您正在筹划部署，您可能希望查看 Office 365 所需的所有 DNS 记录的列表、其函数和示例值。  查看 “[Office 365 的外部域名系统记录](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)”。
+或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)”。
   
 ## <a name="how-can-i-learn-more"></a>如何了解更多信息？
 
 请查看以下内容之一： 
   
 - 不确定域的注册位置？ [获取查找域名注册机构的帮助。](find-your-domain-registrar.md)
-    
-- 了解[为什么您必须完成向导步骤操作](../setup/add-domain.md)，然后才能将您的域与 Office 365 配合使用。 
-    
-
+- 了解[为什么您必须完成向导步骤操作](../setup/add-domain.md)，然后才能将您的域与 Microsoft 365 配合使用。
