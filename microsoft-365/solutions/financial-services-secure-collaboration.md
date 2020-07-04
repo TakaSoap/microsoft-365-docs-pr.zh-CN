@@ -13,12 +13,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214692"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432423"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -99,7 +99,7 @@ FINRA 建议的有效做法包括以下内容：
 * 清晰定义和控制允许的数字频道。 定义批准和禁止的数字频道。 阻止或限制使用数字频道中禁止的数字频道或禁止的功能，这些频道和功能会限制组织遵守记录管理和监管要求的能力。
 * 提供数字通信培训。 在授权注册代表访问批准的数字频道之前实施强制培训计划。 培训有助于明确组织对商业和个人数字通信的期望，并通过以合规方式使用每个频道的允许功能来指导员工。
 
-FINRA 针对数字通信的发现和观测结果直接与组织遵循 [SEC 条例 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)（用于保留所有业务相关的通信）、FINRA 条例 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)（用于监督和审查通信）以及条例系列 [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510)（用于保留记录）的能力相关。 商品期货交易委员会 (FTC) 颁布了与 17 CFR 131 类似的要求。 本文后面将深入讨论这些规章。
+FINRA 针对数字通信的发现和观测结果直接与组织遵循 [SEC 条例 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4)（用于保留所有业务相关的通信）、FINRA 条例 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)（用于监督和审查通信）以及条例系列 [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510)（用于保留记录）的能力相关。 商品期货交易委员会 (CFTC) 颁布了与 17 CFR 131 类似的要求。 本文后面将深入讨论这些规章。
 
 ***Teams 和全面的 Microsoft 365 安全与合规产品套件为金融服务机构提供企业数字通信频道，以便高效地开展业务并遵守法规。*** 本文的其余部分介绍了 Microsoft 365 内置的记录管理功能、信息保护、信息屏障和监管控制是如何为 Teams 提供强大的工具集来帮助实现这些法规义务的。
 

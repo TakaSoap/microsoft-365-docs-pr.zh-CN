@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 SharePoint 和 OneDrive 的保留策略。
-ms.openlocfilehash: f3c7d805309a86f05cdea8769693ec6de9c1bf51
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292491"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016243"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>了解 SharePoint 和 OneDrive 的保留策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "44292491"
     > [!NOTE]
     > 为了防止意外的数据丢失，不再从保留库中永久删除内容。 相反，只从回收站中永久删除内容，因此保留库中的所有内容现在都要移到第二阶段回收站。
     
-2. **如果在保留期限内未修改或删除内容**，则计时器作业会在保留期限结束后将此内容移到第一阶段回收站。 如果用户在第一阶段回收站中删除了该内容或清空了此回收站（也称为清除），则文档会被移到第二阶段回收站。 93 天保留期包含了在第一阶段和第二阶段回收站中的停留时间。93 天后，无论文档位于第一阶段还是第二阶段回收站中，都将被永久删除。 回收站未被编入索引，因此无法进行搜索。 因此，电子数据展示搜索无法找到任何要在其上保留的回收站内容。
+2. **如果在保留期限内未修改或删除内容**，则计时器作业会在保留期限结束后将此内容移到第一阶段回收站。 如果用户在第一阶段回收站中删除了该内容或清空了此回收站（也称为清除），则文档会被移到第二阶段回收站。 在第一阶段和第二阶段回收站中的停留时间都计入 93 天保持期。93 天后，无论文档是位于第一阶段回收站中，还是位于第二阶段回收站中，都会从驻留位置永久删除。 回收站未被编入索引，因此无法进行搜索。 因此，电子数据展示搜索无法找到任何要在其上保留的回收站内容。
 
 如果保留策略为“仅保留”或“仅删除”，内容路径在“保留后删除”策略的基础上有所变化：
 
@@ -75,14 +75,14 @@ ms.locfileid: "44292491"
   
 “仅保留”策略将保留 SharePoint 网站集或 OneDrive 帐户中文档的所有版本。 当受保留或仅保留策略约束的文档被首次编辑时，都会将原始文档的一个版本复制到保存保留库中。 当受保留或仅保留策略约束的文档遭删除时，如果版本控制已启用，所有版本都会复制到保存保留库中。 在保存保留库中，文档的每个版本都以单独项目的形式存在，并具有自己的保留期：
   
-- 如果保留策略以内容创建时间为依据，每一版文档的到期日期都与原始文档相同。原始文档及其各版本全都在同一时间到期。
+- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
     
-- 如果保留策略以内容的上次修改时间为依据，每一版文档都有自己的到期时间（依据为修改原始文档以创建相应版本的时间）。原始文档及其各版本的到期互不相干。
+- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
 > [!NOTE]
 > 电子数据展示工具无法用于搜索 SharePoint 和 OneDrive 文档的保留版本。
 
-### <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
+## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
 **SharePoint**：
 
@@ -94,19 +94,13 @@ ms.locfileid: "44292491"
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>如何配置 SharePoint 和 OneDrive 的保留策略
 
-请参阅[创建和配置保留策略](create-retention-policies.md)。
-
-对于向导的“**选择位置**”页面，选择下列选项之一：
+按照[创建和配置保留策略](create-retention-policies.md)以及向导的**选择位置**页面的说明，选择以下选项之一：
 
 - **仅将策略应用于 Exchange 电子邮件、公用文件夹、Office 365 组、OneDrive 和 SharePoint 文档中的内容**
 
-- **让我选择特定位置** > **SharePoint 网站**或 **OneDrive 帐户**
+- **让我选择特定位置** > **SharePoint 网站**、**OneDrive 帐户**和 **Office 365 组**。
 
-### <a name="sharepoint-locations"></a>SharePoint 位置 
-
-保留策略可以保留 SharePoint 通信网站、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“Office 365 组”**** 位置。 
-
-如果你指定的网站不受支持，保留策略会忽略这些网站。 
+选择 **SharePoint 网站**位置时，保留策略可以保留 SharePoint 通信网站、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“**Office 365 组**”位置，该位置适用于该组的邮箱、站点和文件中的内容。 
 
 如果为 SharePoint 网站指定位置，无需网站访问权限，且在“编辑位置”**** 页上指定 URL 时不会进行任何验证。 不过，必须将网站编入索引，系统会检查你指定的网站是否在向导结束时存在。 
 
