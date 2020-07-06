@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034252"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039408"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>调查并修正在 Office 365 中提供的恶意电子邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "44034252"
     
 - 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅防御[Office 365 中的威胁](protect-against-threats.md)。
     
-- 您是全局管理员，或者您具有安全管理员或在安全&amp;合规中心中分配的搜索和清除角色。 查看[安全&amp;合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。 
+- 您是全局管理员，或者您具有安全管理员或在安全合规中心中分配的搜索和清除角色 &amp; 。 查看[安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。 
 
 #### <a name="preview-role-permissions"></a>预览角色权限
 
@@ -49,10 +49,10 @@ ms.locfileid: "44034252"
 |---------|---------|---------|
 |使用威胁浏览器（和实时检测）分析威胁     |全局管理员 <br> 安全管理员 <br> 安全读取者     | 否   |
 |使用威胁资源管理器（和实时检测）查看电子邮件的邮件头，以及预览和下载隔离的电子邮件    |全局管理员 <br> 安全管理员 <br>安全读取者   |       否  |
-|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览   |   是      |
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |全局管理员 <br>安全管理员 <br> 安全读取者 <br> Preview   |   是      |
 
 > [!NOTE]
-> *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配了 Microsoft 365 管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），安全管理员和安全读者角色是在安全 & 合规中心（[https://protection.office.com](https://protection.office.com)）中分配的。 若要了解有关角色和权限的详细信息，请参阅[Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配了 Microsoft 365 管理中心（ [https://admin.microsoft.com](https://admin.microsoft.com) ），安全管理员和安全读者角色是在安全 & 合规中心（）中分配的 [https://protection.office.com](https://protection.office.com) 。 若要了解有关角色和权限的详细信息，请参阅[Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>查找并删除已传递的可疑电子邮件
 
@@ -61,7 +61,7 @@ ms.locfileid: "44034252"
 > [!NOTE]
 > 资源管理器中的默认搜索当前不包含 Zapped 项目。  这适用于所有视图，例如恶意软件或网络钓鱼视图。 若要包含 Zapped 项，需要将 "传递操作" 设置为 "已删除的由 ZAP 删除"。 如果包含所有选项，您将看到所有传递操作结果，包括 Zapped 项目。
 
-1. **导航到 "威胁资源管理器**"：转到[https://protection.office.com](https://protection.office.com)并使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到&amp;安全合规中心。
+1. **导航到 "威胁资源管理器**"：转到 [https://protection.office.com](https://protection.office.com) 并使用 Office 365 的工作或学校帐户登录并登录。 这会将您带到安全 &amp; 合规中心。
 
 2. 在左侧导航快速启动栏中，选择 "**威胁管理** \> **资源管理器**"。
 
@@ -88,7 +88,7 @@ ms.locfileid: "44034252"
 
 5. **高级筛选器**：使用这些筛选器，可以生成复杂的查询和筛选数据集。 单击 "*高级" 筛选器*将打开带选项的浮出控件。
 
-   高级筛选是搜索功能的一个极好的补充。 *收件人*、*发件人*和*发件人域*中引入了 boolean **NOT** filter，以允许管理员通过排除值来进行调查。 此选项显示在 "选择参数不*包含任何*"。 **不**允许管理员排除警报邮箱、默认的答复邮箱不会受到调查，并且在管理员搜索特定主题（主题 = "注意"）的情况下，可以将收件人设置为 "无" *defaultMail@contoso.com 的*情况很有用。 这是精确的值搜索。
+   高级筛选是搜索功能的一个极好的补充。 *收件人*、*发件人*和*发件人域*中引入了 boolean **NOT** filter，以允许管理员通过排除值来进行调查。 此选项显示在 "选择参数不*包含任何*"。 **不**允许管理员排除警报邮箱、默认的答复邮箱不会受到调查，并且在管理员搜索特定主题（主题 = "注意"）的情况下，可以将收件人设置为*defaultMail \@ contoso.com*中的 "无"，这一点非常有用。 这是精确的值搜索。
 
    ![收件人-"不包含任何" 高级筛选器。](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 

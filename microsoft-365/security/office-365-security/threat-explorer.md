@@ -17,20 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613440"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039499"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
 如果您的组织具有[Office 365 高级威胁防护](office-365-atp.md)（OFFICE 365 ATP），并且您拥有[必要的权限](#required-licenses-and-permissions)，则您可以使用**资源管理器**或**实时检测**（以前的*实时报告*）[查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！ 在安全 & 合规性中心中，转到 "**威胁管理**"，然后选择 "**浏览器**"_或_"**实时检测**"。
 
-|||
+| 在 ATP 计划2中，您将看到： | 在 ATP 计划1中，您将看到： |
 |---|---|
-|**在 ATP 计划2中，您将看到：**|**在 ATP 计划1中，您将看到：**|
 |![威胁资源管理器](../../media/threatmgmt-explorer.png)|![实时检测](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -44,6 +43,43 @@ ms.locfileid: "44613440"
 - [查看有关仿冒 Url 的数据，然后单击 "判定"](#view-data-about-phishing-urls-and-click-verdict)
 - [从浏览器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response)（仅限 ATP 计划2）
 - ...[调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>对威胁资源管理器和实时检测的改进体验
+
+在改进搜寻过程的过程中，我们已经对威胁浏览器和实时检测进行了一些更新。 这些是 "体验" 改进，重点是让求职体验更一致。 下面概述了这些更改： 
+
+- [时区改进](#timezone-improvements)
+- [刷新过程中的更新](#update-in-the-refresh-process)
+- [要添加到筛选器的图表深入分析](#chart-drilldown-to-add-to-filters)
+- [在产品信息更新中](#in-product-information-updates)
+
+### <a name="timezone-improvements"></a>时区改进 
+
+我们将显示门户中的电子邮件记录的时区以及导出的数据的时区。 在电子邮件网格、详细信息浮出控件、电子邮件日程表和类似的电子邮件等体验中，时区将可见，从而使用户可以清楚地了解结果集的时区。 
+
+![在资源管理器中查看时区](../media/TimezoneImprovements.png)
+
+### <a name="update-in-the-refresh-process"></a>刷新过程中的更新 
+
+我们已经听说过与自动刷新有关混淆的反馈（例如，更改日期后，会立即刷新页面）和手动刷新（对于其他筛选器）。 同样，删除筛选器会导致自动刷新，这会导致在修改查询时更改不同的筛选器会导致不一致的搜索体验的情况。 若要解决此情况，我们将迁移到手动筛选机制。
+从体验的角度来看，用户可以应用和删除不同的筛选器范围（从筛选器集和日期），然后按 "刷新" 按钮以在完成定义查询后筛选结果。 "刷新" 按钮也已更新，可在屏幕上清楚地调用它。 我们还提供了有关此更改的更新工具提示和产品内文档。 
+
+![单击 "刷新" 以筛选结果](../media/ManualRefresh.png)
+
+### <a name="chart-drilldown-to-add-to-filters"></a>要添加到筛选器的图表深入分析
+
+现在，您可以单击 "图表图例" 值，将该值作为筛选器添加。 请注意，您仍必须单击 "刷新" 按钮，才能将结果作为上述更改的一部分进行筛选。
+
+![通过要筛选的图表深入分析](../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>在产品信息更新中 
+
+您还应查看产品中的其他详细信息。 例如，网格中的搜索结果总数（如下所示）以及有关标签、错误消息和工具提示的改进，可提供有关筛选器、搜索体验和结果集的详细信息。 
+
+![查看产品信息](../media/ProductInfo.png)
+
+
+## <a name="new-features-in-real-time-detections"></a>实时检测中的新功能
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的新功能和实时检测
 
@@ -68,20 +104,22 @@ ms.locfileid: "44613440"
 
 传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作：
 
-|||||
+|附带  |Junked  |Blocked  |代替  |
+|---------|---------|---------|---------|
+|电子邮件已传递到用户的收件箱或文件夹，用户可以直接访问它。    | 电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户有权访问这些文件夹中的电子邮件。       | 隔离的、失败的或已丢弃的任何电子邮件。 用户完全无法访问它！     | 所有恶意附件都被替换为 .txt 文件的电子邮件，以表明附件是恶意的。     |
+    
+
+| 附带 | Junked | Blocked | 代替 |
 |---|---|---|---|
-|**附带**|**Junked**|**Blocked**|**代替**|
 |电子邮件已传递到用户的收件箱或其他文件夹，用户可以直接访问它。| 电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户有权访问这些文件夹中的电子邮件。| 隔离的、失败的或已删除的任何电子邮件、以及用户无法访问的任何电子邮件。| 任何电子邮件，其中恶意附件被替换为 .txt 文件，以表明这些附件是恶意的。|
 |
 
 用户可以看到的内容及其不能执行的操作：
 
-|||
+| 最终用户可以访问 | 最终用户无法访问 |
 |---|---|
-|**最终用户可以访问**|**最终用户无法访问**|
 |附带|Blocked|
 |Junked|代替|
-|
 
 "送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的可能值：
 
@@ -114,7 +152,7 @@ ms.locfileid: "44613440"
 > [!TIP]
 > 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在有导出功能的情况下，网络邮件 ID 的关联标识将使分析速度更快、更强大。
 
-![tp_ExportClickResultAndNetworkID .png](../../media/tp_ExportClickResultAndNetworkID.png)
+![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 
@@ -205,6 +243,7 @@ ms.locfileid: "44613440"
 - [查找和调查投递的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)
 - [查看 SharePoint Online、OneDrive 和 Microsoft 团队中检测到的恶意文件](malicious-files-detected-in-spo-odb-or-teams.md)
 - [获取威胁资源管理器中的视图（和实时检测）的概述](threat-explorer-views.md)
+- [Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -242,3 +281,4 @@ ms.locfileid: "44613440"
 - **威胁资源管理器**中包含更多筛选功能和可用操作。
 
 有关更多详细信息，请参阅[Office 365 ATP 服务说明：功能在高级威胁防护（ATP）计划](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中的可用性。
+

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267163"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039396"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -60,6 +60,11 @@ ms.locfileid: "44267163"
 
 - [使用 Office 365 ATP 中的市场活动视图（**预览**）](campaigns.md)
 
+## <a name="july-2020"></a>2020月 
+ 
+- [体验对求职体验的改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## <a name="november-2019"></a>2019 年 11 月
 
 - [查看新的已损坏用户检测和响应功能](address-compromised-users-quickly.md)（**预览**）（Office 365 ATP 计划2）
@@ -94,4 +99,4 @@ ms.locfileid: "44267163"
 
 [Office 365 ATP 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
