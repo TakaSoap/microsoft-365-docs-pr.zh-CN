@@ -19,12 +19,11 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005886"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048263"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -56,6 +55,8 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 ## <a name="preview-features"></a>预览功能
 目前，预览中提供了以下功能和增强功能：
+
+- **["门户架构参考"](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —有关安全中心中直接使用的架构表的信息。 除了表和列说明之外，此参考还提供有关受支持的事件类型（ `ActionType` 值）和示例查询的信息。  
 
 - **[标识和应用程序表](advanced-hunting-schema-tables.md)**—使用高级搜寻架构中的[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表深入了解身份验证事件、Active Directory 查询和与应用程序相关的活动。
 

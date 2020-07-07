@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 SharePoint 和 OneDrive 的保留策略。
-ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
-ms.translationtype: HT
+ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016243"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049880"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>了解 SharePoint 和 OneDrive 的保留策略
 
@@ -57,18 +56,18 @@ ms.locfileid: "45016243"
 
 如果保留策略为“仅保留”或“仅删除”，内容路径在“保留后删除”策略的基础上有所变化：
 
-#### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
+### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
 1. **如果有人在保持期内修改或删除内容**：则会在保留库中创建原始文档的副本，并保留到保持期结束，然后保留库中的副本会移到第二阶段回收站中，并在 93 天后永久删除。
 
 2. **如果内容在保持期内未遭修改或删除**：保持期前后无变化；文档仍保留在它的原始位置上。
 
-#### <a name="content-paths-for-delete-only-retention-policy"></a>“仅删除”保留策略的内容路径
+### <a name="content-paths-for-delete-only-retention-policy"></a>“仅删除”保留策略的内容路径
 
 1. **如果有人在配置的期限内删除内容**：文档会移到第一阶段回收站中。 如果用户从此回收站中删除文档或清空此回收站，文档就会移到第二阶段回收站中。 在第一阶段和第二阶段回收站中的停留时间都计入 93 天保持期。93 天后，无论文档是位于第一阶段回收站中，还是位于第二阶段回收站中，都会从驻留位置永久删除。 如果有人在配置的期限内修改内容，内容就会在配置的期限到期后遵循相同的删除路径。
 
 2. **如果内容在配置的期限内未遭删除**：在保留策略中配置的期限结束时，文档会移到第一阶段回收站中。 如果用户从此回收站中删除文档或清空此回收站（亦称为“清除”），文档就会移到第二阶段回收站中。 在第一阶段和第二阶段回收站中的停留时间都计入 93 天保持期。93 天后，无论文档是位于第一阶段回收站中，还是位于第二阶段回收站中，都会从驻留位置永久删除。 回收站未被编入索引，因此无法进行搜索。 因此，电子数据展示搜索无法找到任何要在其上保留的回收站内容。
-    
+
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>保留策略如何处理网站集中的文档版本
 
 版本控制是 SharePoint 和 OneDrive 中所有文档库的一项功能。 默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。 有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
@@ -76,13 +75,13 @@ ms.locfileid: "45016243"
 “仅保留”策略将保留 SharePoint 网站集或 OneDrive 帐户中文档的所有版本。 当受保留或仅保留策略约束的文档被首次编辑时，都会将原始文档的一个版本复制到保存保留库中。 当受保留或仅保留策略约束的文档遭删除时，如果版本控制已启用，所有版本都会复制到保存保留库中。 在保存保留库中，文档的每个版本都以单独项目的形式存在，并具有自己的保留期：
   
 - If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
-    
+
 - If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
 > [!NOTE]
 > 电子数据展示工具无法用于搜索 SharePoint 和 OneDrive 文档的保留版本。
 
-## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
+## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织
 
 **SharePoint**：
 
@@ -90,7 +89,7 @@ ms.locfileid: "45016243"
 
 **OneDrive**：
 
-如果某用户离开组织，任何受保留策略约束或包含保留标签的文件都会在策略或标签有效期间保留。 在此期间，所有共享访问继续有效。 在保留期到期后，内容会移到网站集回收站，且不可供除管理员之外的其他任何人访问。如果文档被保留策略标记为记录，那么它在保留期到期前不会遭到删除，之后将永久删除。 
+如果某用户离开组织，任何受保留策略约束或包含保留标签的文件都会在策略或标签有效期间保留。 在此期间，所有共享访问继续有效。 在保留期到期后，内容会移到网站集回收站，且不可供除管理员之外的其他任何人访问。如果文档被保留策略标记为记录，那么它在保留期到期前不会遭到删除，之后将永久删除。
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>如何配置 SharePoint 和 OneDrive 的保留策略
 
@@ -100,8 +99,8 @@ ms.locfileid: "45016243"
 
 - **让我选择特定位置** > **SharePoint 网站**、**OneDrive 帐户**和 **Office 365 组**。
 
-选择 **SharePoint 网站**位置时，保留策略可以保留 SharePoint 通信网站、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“**Office 365 组**”位置，该位置适用于该组的邮箱、站点和文件中的内容。 
+选择 **SharePoint 网站**位置时，保留策略可以保留 SharePoint 通信网站、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“**Office 365 组**”位置，该位置适用于该组的邮箱、站点和文件中的内容。
 
-如果为 SharePoint 网站指定位置，无需网站访问权限，且在“编辑位置”**** 页上指定 URL 时不会进行任何验证。 不过，必须将网站编入索引，系统会检查你指定的网站是否在向导结束时存在。 
+如果为 SharePoint 网站指定位置，无需网站访问权限，且在“编辑位置”**** 页上指定 URL 时不会进行任何验证。 不过，必须将网站编入索引，系统会检查你指定的网站是否在向导结束时存在。
 
 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除网站。

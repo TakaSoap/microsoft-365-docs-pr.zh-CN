@@ -17,19 +17,18 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 17e12e9095219b7ad7923f7b5664946fff6ce724
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 2116d8f6f1006f5acf9d468006fa07a04e13087b
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899371"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046024"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
 **适用于：**
 - Microsoft 威胁防护
 
-`IdentityLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含 Azure Active Directory 和其他 Microsoft 云应用程序和服务记录的身份验证活动的相关信息。 使用此参考来构建从此表返回信息的查询。
+`IdentityLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含通过 Azure ATP 和与 Microsoft 云应用安全捕获的 microsoft online 服务捕获的身份验证活动捕获的身份验证活动的相关信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

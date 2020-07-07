@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 67fa551fd7c2add815d5698a22b5eb3ae607f716
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899263"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048275"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +30,7 @@ ms.locfileid: "44899263"
 
 
 
-`DeviceLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
+`DeviceLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关设备上的用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 

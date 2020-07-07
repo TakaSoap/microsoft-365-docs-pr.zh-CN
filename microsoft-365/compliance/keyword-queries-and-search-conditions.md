@@ -22,12 +22,11 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可以在 Office 365 安全 & 合规中心中搜索的电子邮件和文件属性。
-ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: MT
+ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817511"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049800"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -87,7 +86,7 @@ ms.locfileid: "44817511"
 |:-----|:-----|:-----|:-----|
 |作者|作者字段位于 Office 文档中，复制文档后仍然存在其中。 例如，如果用户创建一个文档，并将其发送给其他人，然后再将其上载到 SharePoint，则该文档仍将保留原作者。 请务必对此属性使用用户的显示名称。|`author:"Garth Fort"`|所有文档的作者均为 Garth Fort。|
 |ContentType|项目的 SharePoint 内容类型，如项目、文档或视频。|`contenttype:document`|将返回所有文档。|
-|已创建|创建项目的日期。|`created\>=06/01/2016`|在2016年6月1日或之后创建的所有项目。|
+|已创建|创建项目的日期。|`created>=06/01/2016`|在2016年6月1日或之后创建的所有项目。|
 |CreatedBy|创建或上载项目的人员。 请务必对此属性使用用户的显示名称。|`createdby:"Garth Fort"`|所有项目均由 Garth Fort 创建或上载。|
 |DetectedLanguage|项目的语言。|`detectedlanguage:english`|所有项目均为英语。|
 |DocumentLink|SharePoint 或 OneDrive for business 网站上特定文件夹的路径（URL）。 如果使用此属性，请务必搜索指定文件夹所在的网站。  <br/> 若要返回在为 documentlink 属性指定的文件夹的子文件夹中的项目，您必须将/添加 \* 到指定文件夹的 URL; 例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>有关搜索 documentlink 属性和使用脚本获取特定网站上的文件夹的 documentlink Url 的详细信息，请参阅[使用目标集合的内容搜索](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for Business 文件夹中的所有项目。 第二个示例在指定的网站文件夹（和所有子文件夹）中返回文件名中包含单词 "保密信息" 的文档。|

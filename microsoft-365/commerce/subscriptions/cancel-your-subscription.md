@@ -22,12 +22,11 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
-ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
-ms.translationtype: MT
+ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023365"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049744"
 ---
 # <a name="cancel-your-subscription"></a>取消订阅
 
@@ -132,7 +131,7 @@ ms.locfileid: "45023365"
 
 如果您在设置域时没有切换 NS 记录，则当您更改 MX 记录时，您的邮件会立即开始转到新的地址。
 
-有关详细信息，请参阅[Microsoft 365 管理我的 DNS 记录的方式？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要更改 NS 记录，请参阅[删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
+若要更改 NS 记录，请参阅[删除域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ### <a name="save-your-data"></a>保存数据
 

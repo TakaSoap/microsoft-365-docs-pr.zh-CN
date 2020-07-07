@@ -16,12 +16,11 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: 20c57f1d11af8fded15cc2fdf280414f7172ffd7
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
-ms.translationtype: HT
+ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262575"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327646"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -37,13 +36,13 @@ MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAP
 
 ### <a name="auditing-sync-access"></a>审核同步访问权限
 
-仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此我们取代生成同步的各邮件项的审核记录，我们只针对含有被同步项的邮件文件夹生成审核事件。 这假设已同步文件夹中的*所有*邮件项已被盗用。 访问权限类型记录在审核记录的 OperationsProperties 字段中。 
+仅当邮箱由适用于 Windows 或 Mac 的桌面版 Outlook 客户端存取时，才记录同步操作。 同步操作期间，这些客户端通常从云端下载大型邮件项至本地计算机。 同步操作的审核量非常大。 因此我们取代生成同步的各邮件项的审核记录，我们只针对含有被同步项的邮件文件夹生成审核事件。 这假设已同步文件夹中的*所有*邮件项已被盗用。 访问权限类型会记录在审核记录的 OperationProperties 字段中。 
 
 参见“[使用 MailItemsAccessed 审核记录进行司法鉴定调查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)”一节的第 2 步了解在审核记录中显示同步访问权限的示例。
 
 ### <a name="auditing-bind-access"></a>审核绑定访问权限
 
-绑定操作是对电子邮件所进行的一种单独访问。 对于绑定访问权限，单独邮件的 internet 邮件 id 将记录在审核记录中。 MailItemsAccessed 审核操作记录绑定操作并随后聚合至单独的审核记录中。 2分钟间隔内发生的所有绑定操作都聚合在 AuditData 属性内文件夹字段中的一个单独审核记录内。 每封被存取的邮件通过 internet 邮件 id 标识。聚合在记录中的绑定操作数在 AuditData 属性的 OperationCount 字段中显示。
+绑定操作是对电子邮件所进行的一种单独访问。 对于绑定访问权限，单独邮件的 InternetMessageId 将记录在审核记录中。 MailItemsAccessed 审核操作记录绑定操作并随后聚合至单独的审核记录中。 2分钟间隔内发生的所有绑定操作都聚合在 AuditData 属性内文件夹字段中的一个单独审核记录内。 所访问的每封邮件都由其 InternetMessageId 标识。 聚合在记录中的绑定操作数将在 AuditData 属性的 OperationCount 字段中显示。
 
 参见“[使用 MailItemsAccessed 审核记录进行司法鉴定调查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)”一节的第 4 步了解在审核记录中显示绑定访问权限的示例。
 
@@ -152,13 +151,13 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
  
    可以使用审核数据采用两种方式进行绑定操作：
 
-     - 访问或收集通过 internet 访问的所有电子邮件，该邮件 id 可用于查找，然后检查这些邮件是否包含敏感信息。
+     - 访问或收集攻击者访问的所有电子邮件，方法是使用 InternetMessageId 查找这些邮件，然后检查这些邮件是否包含敏感信息。
 
-     - 使用 internet 邮件 id 搜索与一组潜在敏感的电子邮件相关的审核记录。 如果只考虑少数邮件，这非常有用。
+     - 使用 InternetMessageId 搜索与一组可能敏感的电子邮件相关的审核记录。 如果只考虑少数邮件，这非常有用。
 
 ## <a name="filtering-of-duplicate-audit-records"></a>筛选重复的审核记录
 
-一小时内所发生的相同绑定操作的重复审核记录将被依次筛选出，以清除审核噪音。 同步操作还以一小时的间隔进行筛选。 如果对于同一 internet 邮件 id，下表中所述的属性不同，则此重复数据删除会出现异常。 如果这些属性之一与重复操作中的不同，生成新的审核记录。 此流程在下一节中详细描述。
+一小时内所发生的相同绑定操作的重复审核记录将被依次筛选出，以清除审核噪音。 同步操作还以一小时的间隔进行筛选。 如果对于同一 InternetMessageId，下表中所述的任何属性不同，则此重复数据删除过程会出现异常。 如果这些属性之一与重复操作中的不同，生成新的审核记录。 此流程在下一节中详细描述。
 
 | 属性| 描述|
 |:--------|:---------|

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,18 +20,17 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 65a6d687-a16a-4415-9fd5-011ba9c5fd80
 description: 摘要：为 Microsoft 365 测试环境配置联合身份验证。
-ms.openlocfilehash: b0aa967570c3d12554cdb273a8b39b8931af1fbd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: efe2e196b95feff2aab1577f8e5d3ee29b5e39ba
+ms.sourcegitcommit: 330e9baf02b5bc220d61f777c2338814459626ec
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634094"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44385063"
 ---
 # <a name="federated-identity-for-your-microsoft-365-test-environment"></a>用于 Microsoft 365 测试环境的联合身份
 
 *本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
 
-Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户转到 Microsoft 365 信任的联合身份验证服务器，而不是自己执行凭据验证。如果用户的凭据正确，联合身份验证服务器会颁发安全令牌，然后客户端将此令牌作为通过身份验证的证明发送给 Microsofte 365。借助联合标识，可以为 Microsoft 365 订阅以及高级身份验证和安全方案卸载和扩展身份验证。
+Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
 本文介绍了如何为 Microsoft 365 或 Office 365 测试环境配置联合身份验证，从而实现以下配置：
 
@@ -41,7 +40,7 @@ Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户�
   
 - Microsoft 365 E5 或 Office 365 E5 试用版或生产订阅。
     
-- 连接 Internet 的简化组织 Intranet，由 Azure 虚拟网络子网中的五个虚拟机（DC1、APP1、CLIENT1、ADFS1 和 PROXY1）组成。Azure AD Connect 在 APP1 上运行，以便将 Active Directory 域服务域中的帐户列表同步到 Office 365。PROXY1 接收传入的身份验证请求。ADFS1 使用 DC1 验证凭据并颁发安全令牌。
+- A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
 设置此测试环境分为五个阶段：
   
@@ -60,7 +59,7 @@ Microsoft 365 支持联合标识。也就是说，Microsoft 365 将连接用户�
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>阶段 1：为 Microsoft 365 测试环境配置密码哈希同步
 
-按照 [Microsoft 365 的密码哈希同步](password-hash-sync-m365-ent-test-environment.md)中的说明操作。下面是生成的配置。
+Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
 ![使用密码哈希同步测试环境的模拟企业配置](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
@@ -141,7 +140,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 > [!NOTE]
 > PROXY1 分配有一个静态公共 IP 地址，因为将创建一个指向它的公共 DNS 记录，并且它不得在 PROXY1 虚拟机重启时有变化。 
   
-接下来，将规则添加到 CorpNet 子网的网络安全组中，以允许来自 Internet 未经请求的入站流量流入 PROXY1 的专用 IP 地址和 TCP 端口 443。在本地计算机上的 Azure PowerShell 命令提示符处，运行下面这些命令。
+Next, add a rule to the network security group for the CorpNet subnet to allow unsolicited inbound traffic from the Internet to PROXY1's private IP address and TCP port 443. Run these commands at the Azure PowerShell command prompt on your local computer.
   
 ```powershell
 $rgName="<the resource group name of your Base Configuration>"
@@ -166,7 +165,7 @@ Restart-Computer
 Write-Host (Get-AzPublicIpaddress -Name "PROXY1-PIP" -ResourceGroup $rgName).IPAddress
 ```
 
-接下来，结合使用公共 DNS 提供程序，为解析为 **Write-Host** 命令显示的 IP 地址的 **fs.testlab.**\<DNS 域名> 新建一个公共 DNS A 记录。**fs.testlab.**\<DNS 域名> 以下称为*联合身份验证服务 FQDN*。
+Next, work with your public DNS provider and create a new public DNS A record for **fs.testlab.**\<your DNS domain name> that resolves to the IP address displayed by the **Write-Host** command. The **fs.testlab.**\<your DNS domain name> is hereafter referred to as the  *federation service FQDN*.
   
 接下来，通过 [Azure 门户](https://portal.azure.com)，使用 CORP\\User1 凭据连接 DC1 虚拟机，然后在管理员级 Windows PowerShell 命令提示符处运行以下命令：
   
@@ -191,9 +190,9 @@ Add-DnsServerResourceRecordA -Name "fs" -ZoneName corp.contoso.com -AllowUpdateA
 ```powershell
 New-ADUser -SamAccountName ADFS-Service -AccountPassword (read-host "Set user password" -assecurestring) -name "ADFS-Service" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
-请注意，此命令会提示你提供帐户密码。选择强密码，然后在安全位置记录此密码。此阶段和阶段 5 都要用到它。
+Note that this command prompts you to supply the account password. Choose a strong password and record it in a secured location. You will need it for this phase and Phase 5.
   
-通过 [Azure 门户](https://portal.azure.com)，使用 CORP\\User1 凭据连接 ADFS1 虚拟机。在 ADFS1 上打开管理员级 Windows PowerShell 命令提示符，填写联合身份验证服务 FQDN，然后运行下面这些命令，从而创建自签名证书：
+Use the [Azure portal](https://portal.azure.com) to connect to the ADFS1 virtual machine using the CORP\\User1 credentials. Open an administrator-level Windows PowerShell command prompt on ADFS1, fill in your federation service FQDN, and then run these commands to create a self-signed certificate:
   
 ```powershell
 $fedServiceFQDN="<federation service FQDN>"
@@ -230,7 +229,7 @@ New-SmbShare -name Certs -path c:\Certs -changeaccess CORP\User1
     
 13. 在“要导出的文件”页上，单击“下一步”。********
     
-14. 在“正在完成证书导出向导”页上，单击“完成”。当出现提示时，单击“确定”。************
+14. On the **Completing the Certificate Export Wizard** page, click **Finish**. When prompted, click **OK**.
     
 接下来，在 ADFS1 上的 Windows PowerShell 命令提示符处运行以下命令，安装 AD FS 服务：
   
@@ -278,7 +277,7 @@ Install-WindowsFeature ADFS-Federation -IncludeManagementTools
     
 通过 CORP\\User1 帐户凭据从 [Azure 门户](https://portal.azure.com)连接到 PROXY1。
   
-接下来，按下面这些步骤操作，安装自签名证书并配置 PROXY1。
+接下来，按下面这些步骤操作，在 **PROXY1 和 APP1** 上安装自签名证书。
   
 1. 单击“开始”，键入“mmc.exe”，然后按 Enter 键。************
     
@@ -387,13 +386,13 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
   
 1. 在本地计算机上打开浏览器的新专用实例，然后转到 [https://admin.microsoft.com](https://admin.microsoft.com)。
     
-2. 对于登录凭据，请键入 **user1@**\<在阶段 1 创建的域>。 
+2. 对于登录凭据，请键入 **user1@**\<the domain created in Phase 1>。 
     
-    例如，如果测试域是 **testlab.contoso.com**，你会键入“user1@testlab.contoso.com”。按 TAB 或允许 Microsoft 365 自动重定向你。
+    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press TAB or allow Microsoft 365 to automatically redirect you.
     
-    现在应该可以看到“**你所用连接不是专用连接**”页。之所以会看到此页是因为你在 ADFS1 上安装了台式计算机无法验证的自签名证书。在联合身份验证的生产部署中，将使用受信任的证书颁发机构颁发的证书，你的用户将不会看到此页。
+    You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer cannot validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.
     
-3. 在“你所用连接不是专用连接”页上，依次单击“高级”和“继续处理 \<联合身份验证服务 FQDN>”。************ 
+3. 在“**你所用连接不是专用连接**”页面上，单击“**高级**”，然后单击“**继续处理 \<your federation service FQDN>**”。 
     
 4. 在包含虚构组织名称的页上，使用以下凭据登录：
     
@@ -403,7 +402,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
     应该会看到“Microsoft Office 主页”页面。****
     
-此过程证明了试用订阅与 DC1 上托管的 AD DS corp.contoso.com 域进行了联合。下面是身份验证流程的基本信息：
+This procedure demonstrates that your trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
   
 1. 如果你在登录帐户名中使用在第 1 阶段中创建的联盟域，Microsoft 365 将浏览器重定向到联合身份验证服务 FQDN 和 PROXY1。
     
@@ -417,7 +416,7 @@ Install-WindowsFeature Web-Application-Proxy -IncludeManagementTools
     
 6. Microsoft 365 验证安全令牌是否由 ADFS1 创建，并在验证通过后允许访问。
     
-现在，试用订阅已配置了联合身份验证。可以将此开发/测试环境用于高级身份验证方案。
+Your trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
   
 ## <a name="next-step"></a>后续步骤
 

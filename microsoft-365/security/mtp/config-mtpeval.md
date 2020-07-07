@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854360"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049936"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>为试用版实验室环境配置 Microsoft 威胁防护支柱
 
@@ -247,8 +246,9 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 
 有关更全面的指导，请参阅[启用 Microsoft 威胁防护](mtp-enable.md)。 
 
-恭喜！ 你刚刚创建了 Microsoft 威胁防护试用实验室环境！ 您现在可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应对终结点的 fileless 攻击。
+恭喜！ 你刚刚创建了 Microsoft 威胁防护试用实验室环境！ 现在，你可以熟悉 Microsoft 威胁防护用户界面！ 请参阅您可以从哪些仪表板了解如何使用每个仪表板执行日常安全操作任务： [Microsoft 威胁防护交互式指南](https://aka.ms/MTP-Interactive-Guide)。
 
+接下来，您可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应对终结点的 fileless 攻击。
 
 ## <a name="next-steps"></a>后续步骤
 [生成测试警报](generate-test-alert.md)。

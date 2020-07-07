@@ -17,12 +17,11 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用安全与合规中心内的搜索和清除功能，在组织中的所有邮箱中搜索并删除电子邮件。
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626438"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352095"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜索和删除电子邮件
 
@@ -42,14 +41,16 @@ ms.locfileid: "43626438"
 ## <a name="before-you-begin"></a>准备工作
 
 - 若要创建并运行内容搜索，你必须是**电子数据展示管理员**角色组的成员，或者分配有**合规性搜索**管理角色。 若要删除邮件，你必须是**组织管理**角色组的成员或分配有**搜索并清除**管理角色。 有关将用户添加到角色组的信息，请参阅[分配安全与合规中心中的电子数据展示权限](assign-ediscovery-permissions.md)。
-    
+
 - 你必须使用安全与合规中心 PowerShell 删除邮件。 有关如何连接的说明，请参阅[步骤 2](#step-2-connect-to-security--compliance-center-powershell)。
-    
+
 - 一次最多可以删除每个邮箱的 10 封邮件。 因为搜索和删除邮件的功能是用作事件响应工具，所以此限制可帮助确保从邮箱中快速删除邮件。 此功能并不用于清理用户邮箱。
-    
+
 - 在内容搜索中，可通过搜索和清除操作删除其内项目的最大邮箱数为 50,000。 如果内容搜索（在[步骤 1](#step-1-create-a-content-search-to-find-the-message-to-delete) 中创建）具有超过 50,000 个源邮箱，则清除操作（在步骤 3 中创建）将失败。 请参阅[详细信息](#more-information)部分，以了解有关对超过 50,000 个邮箱执行搜索和清除操作的提示。 
-    
+
 - 本文中所述的步骤只能用于删除 Exchange Online 邮箱和公用文件夹中的项目。 无法将其用于删除 SharePoint 或 OneDrive for Business 网站中的内容。
+
+- 使用本文中的程序，无法删除高级电子数据展示案例中的审阅集中的电子邮件项目。 这是因为审阅集中的项目存储在 Azure 存储位置，而不是实时服务中。 这意味着，这些内容无法通过在步骤 1 中创建的内容搜索返回。 若要删除某个审阅集中的项目，必须删除包含该审阅集的高级电子数据展示案例。 有关详细信息，请参阅[关闭或删除高级电子数据展示案例](close-or-delete-case.md)。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步骤 1：创建内容搜索来查找要删除的邮件
 
@@ -59,16 +60,16 @@ ms.locfileid: "43626438"
     
 - [内容搜索的关键字查询](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > 在此步骤中创建的内容搜索中搜索的内容位置不能包含 SharePoint 或 OneDrive for Business 网站。 只能在内容搜索中包含将用于电子邮件的邮箱和公用文件夹。 如果内容搜索包含网站，则在运行 **New-ComplianceSearchAction** cmdlet 时，你将在步骤 3 中收到错误消息。 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>查找要删除的邮件的提示
 
-搜索查询的目标是将搜索结果的范围缩小到仅包含您想要删除的邮件。以下是一些提示：
+The goal of the search query is to narrow the results of the search to only the message or messages that you want to remove. Here are some tips:
   
 - 如果你知道邮件的主题行中使用的确切文本或短语，请在搜索查询中使用**主题**属性。 
     
@@ -127,7 +128,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 当你运行上一个命令以软删除或硬删除邮件时，*SearchName* 参数是你在步骤 1 中创建的内容搜索。 
   
-有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction)。
+有关详细信息，请参阅 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction)。
 
 ## <a name="more-information"></a>详细信息
 

@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035605"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049650"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -143,10 +142,6 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 为什么域区域文件可能是在域注册机构之外的其他位置？ 嗯，你可能会在域注册机构（如 HiChina）中注册域名，但 DNS 记录可能被托管在其他位置，如独立 DNS 托管公司或 web 托管公司。 域 NS 记录存储的信息，能够使 DNS 服务器知道在哪里查找。
 
 ::: moniker-end
-
-> [!NOTE]
-> 如果你在 Microsoft 365 中设置你的域，以便 [Microsoft 设置和管理您的 DNS 记录](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，那么在设置过程中，请[更改 DNS 管理至 Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>为什么要在 Office 365 中添加域？

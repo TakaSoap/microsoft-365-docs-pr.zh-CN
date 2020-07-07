@@ -21,12 +21,11 @@ search.appverid:
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: 开始在 Office 365 中对电子邮件、网站和帐户使用您自己的域。 了解域、对域进行更改、集成电子邮件和网站以及获取工具和提示。
-ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399916"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049674"
 ---
 # <a name="get-help-with-office-365-domains"></a>获取有关 Office 365 域的帮助
 
@@ -158,7 +157,6 @@ ms.locfileid: "44399916"
                             <p><a href="information-for-dns-records.md">收集创建 DNS 记录所需的信息</a></p>
                             <p><a href="find-your-domain-registrar.md">查找你的域注册机构</a></p>
                             <p><a href="buy-a-domain-name.md">购买域名</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">使用你的自定义域，为公司中的几个人员设置试点</a></p>
                             <p><a href="domain-connect.md">快速向 Office 365 添加 GoDaddy 域</a></p>
                             <p>获取分步帮助，从而<a href="create-dns-records-at-any-dns-hosting-provider.md">为 Office 365 服务添加所需 DNS 记录</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">如何准备不可路由域（如 .local 域）进行目录同步</a></p>
@@ -208,8 +206,7 @@ ms.locfileid: "44399916"
                         <h3>进行更改</h3>
                             <p><a href="find-and-fix-issues.md">查找并解决更改域名或 DNS 记录后出现的问题</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">在 Office 365 中添加或编辑自定义 DNS 记录</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">在 Office 365 中添加自定义子域或多个域</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">更改 Office 365 为你的域管理 DNS 的方式</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">在 Microsoft 365 中添加自定义子域或多个域</a></p>
                             <p><a href="remove-a-domain.md">删除域</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">使用你的域与本地电子邮件进行集成（例如，使用目录服务）</a></p>
                             <p><a href="../contact-support-for-business-products.md">更多问题？请致电支持人员或打开支持票证</a></p>

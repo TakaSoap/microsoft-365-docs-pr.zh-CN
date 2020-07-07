@@ -23,12 +23,11 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-ms.translationtype: MT
+ms.openlocfilehash: b0fd16fc74319c88a6f91bf56ac96346915c35ac
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779937"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049756"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -40,10 +39,8 @@ ms.locfileid: "44779937"
 
 - 如果您具有具有 Active Directory 联合身份验证服务（AD FS）的第三方目录服务，请设置 Azure MFA 服务器。 有关详细信息，请参阅[使用 Azure 多重身份验证和第三方 VPN 解决方案的高级方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
 
-
 必要时，系统将要求其他所有用户执行额外的身份验证。 有关详细信息，请访问[双因素验证方法和设置](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device)。
 
-=======
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>步骤1：决定要求用户使用 MFA 的方法
 
 > [!NOTE]
