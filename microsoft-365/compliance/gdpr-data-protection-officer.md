@@ -16,12 +16,11 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 334c6bfaf041b189a127d34e3eacd8997b349394
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 885055aa0684dc0ad0788a7e056c51b6cfd4c587
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817691"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049768"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 数据保护官员
 
@@ -50,7 +49,7 @@ Leopardstown<br>
 Dublin 18<br>
 D18 P521<br>
 爱尔兰<br>
-电话：+353 (0) 1 295-3826<br>
+电话: +353 (1) 706-3117<br>
 
 数据保护官员的详细联系信息已发送至 Microsoft 监督机构。
 

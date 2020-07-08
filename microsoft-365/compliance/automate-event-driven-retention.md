@@ -15,12 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
-ms.openlocfilehash: e3e58aab9bdcb5debcfe805b1ebdfd637c1d3851
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035647"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046060"
 ---
 # <a name="automate-event-based-retention"></a>自动执行基于事件的保留
 
@@ -207,7 +206,7 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 |参数|说明|注释|
 |--- |--- |--- |
-|<d:Name></d:Name>|为事件提供唯一的名称，|不能包含尾随空格和以下字符： % * \ & < > | # ? , : ;|
+|<d:Name></d:Name>|为事件提供唯一的名称，|不能包含尾随空格和以下字符： % * \ & < \> \| # ? , : ;|
 |<d:EventType></d:EventType>|输入事件类型名称（或 Guid），|Example: “Employee termination”. Event type has to be associated with a retention label.|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|输入“ComplianceAssetId:” + 员工 Id|示例："ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|事件日期和时间|格式：yyyy-MM-ddTHH:mm:ssZ，示例：2018-12-01T00:00:00Z
@@ -224,16 +223,18 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 ##### <a name="get-events-based-on-time-range"></a>根据时间范围获取事件
 
+- **方法**: GET
 
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
 
-|方法|GET||
-|--- |--- |--- |
-|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
-|标头|Content-Type|application/atom+xml|
-||||
-|身份验证|基本||
-|用户名|“Complianceuser”||
-|密码|“Compliancepassword”||
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
 
 ##### <a name="response-codes"></a>响应代码
 
@@ -247,13 +248,19 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 ##### <a name="get-an-event-by-id"></a>按 ID 获取事件。
 
-| 方法         | GET   |                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
-| 标头         | Content-Type                                                                                                                                                                                                                                                       | application/atom+xml |
-| 身份验证 | 基本                                                                                                                                                                                                                                                              |                      |
-| 用户名       | “Complianceuser”                                                                                                                                                                                                                                                   |                      |
-| 密码       | “Compliancepassword”                                                                                                                                                                                                                                               |                      |
+- **方法**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
+
 
 ##### <a name="response-codes"></a>响应代码
 
@@ -267,13 +274,18 @@ Rest API 是一个支持多组 HTTP 操作（方法）的服务终结点，提�
 
 ##### <a name="get-an-event-by-name"></a>按名称获取事件
 
-| 方法         | GET       |                      |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| 标头        | Content-Type                                                                                                                                 | application/atom+xml |
-| 身份验证 | 基本                                                                                                                                        |                      |
-| 用户名       | “Complianceuser”                                                                                                                             |                      |
-| 密码       | “Compliancepassword”                                                                                                                         |                      |
+- **方法**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
 
 ##### <a name="response-codes"></a>响应代码
 
