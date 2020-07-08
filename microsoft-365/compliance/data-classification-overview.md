@@ -1,5 +1,5 @@
 ---
-title: 数据分类入门（预览）
+title: 数据分类入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957272"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327868"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a>了解你的数据 - 数据分类概述（预览）
+# <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
 作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。 你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](labels.md)和敏感信息类型分类来实现这一目标。 可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。 应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。 数据分类页面提供了对内容主体的可见性，具体如下：
 
@@ -33,11 +33,41 @@ ms.locfileid: "43957272"
 - 用户对敏感内容所执行的操作的摘要
 - 敏感数据和已保留数据的位置
 
+此外，还可在数据分类页面上管理以下功能：
+- [可训练的分类器](classifier-getting-started-with.md)
+- [敏感信息类型](what-the-sensitive-information-types-look-for.md)
+
 可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
+
+获取介绍我们的数据分类功能的视频教程。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+创建任何策略前，数据分类将先扫描敏感内容和标记内容。 这称为 ** 零变更管理 **。 这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。
+
+## <a name="prerequisites"></a>先决条件
+
+访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
+
+- Microsoft 365 (E5)
+- Office 365 (E5)
+- 高级合规性（E5）加载项
+- 高级威胁智能（E5）加载项
+
+### <a name="permissions"></a>权限
+
+ 为了访问数据分类页面，必须在以下任一角色或角色组中向帐户分配成员身份。
+
+**Microsoft 365 角色组**
+
+- 全局管理员
+- 合规性管理员
+- 安全管理员
+- 合规性数据管理员
 
 ## <a name="sensitive-information-types-used-most-in-your-content"></a>内容中的最常用敏感信息类型
 
-Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安全号码或信用卡号的项目。 有关敏感信息类型的详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)。
+Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安全号码或信用卡号的项目。 有关敏感信息类型的详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
 
 敏感信息类型卡片显示了在整个组织中找到并标记的最常用敏感信息类型。
 
@@ -51,7 +81,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 > 如果卡片上显示消息“找不到包含敏感信息的数据”。 这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
 >- [敏感度标签](sensitivity-labels.md)
 >- [保留标签](labels.md)
->- [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
+>- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>应用于内容的最常用敏感度标签
 
@@ -106,5 +136,6 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 - [查看已应用标签的内容（预览）](data-classification-content-explorer.md)
 - [敏感度标签](sensitivity-labels.md)
 - [保留标签](labels.md)
-- [敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 - [保留策略概述](retention-policies.md)
+- [可训练分类器入门（预览）](classifier-getting-started-with.md)

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818982"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035657"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -335,7 +335,7 @@ ms.locfileid: "44818982"
 |已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
 |检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的优先级比该网站应用的敏感度标签高。 例如，标有“机密”的文档上传到标有“常规”的网站上。 <br/><br/> 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不触发此事件。 例如，标有“常规”的文档上传到标有“机密”的网站上。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
-|已放弃文件签出|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|已放弃文件签出|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |已下载的文件|FileDownloaded|用户从网站下载文档。|
 |已修改文件|FileModified|用户或系统帐户修改网站上文档的内容或属性。|
 |(无)|FileModifiedExtended|这与“已修改文件”(FileModified) 活动相关。 如果一个用户长时间（至 3 小时）持续修改某一文件，则会记录下 FileModifiedExtended 事件。 <br/><br/> 记录 FileModifiedExtended 事件是为了减少持续修改文件时所记录的 FileModified 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileModified 记录的干扰，从而专注于初始（和更重要的）FileModified 事件。|
@@ -368,7 +368,7 @@ ms.locfileid: "44818982"
 
 - 合规性功能。 管理员实现合规性功能（如保留策略、电子数据展示保留和自动应用敏感度标签）时。
 
-在这些和其他情形下，你还会注意到，以 app@sharepoint 作为指定用户的多个审核记录是在非常短的时间范围内创建的，通常彼此之间只有几秒。 这也表明它们可能由同一个用户启动的任务触发。 而且，审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或应用程序。
+在这些和其他情形下，你还会注意到，以 app@sharepoint 作为指定用户的多个审核记录是在较短的时间范围内创建的，通常每条记录只需几秒钟。 这也表明它们可能由同一个用户启动的任务触发。 而且，审核记录中的 ApplicationDisplayName 和 EventData 字段可以帮助你识别触发此事件的应用场景或应用程序。
 
 ### <a name="folder-activities"></a>文件夹活动
 
@@ -560,7 +560,7 @@ ms.locfileid: "44818982"
 
 ### <a name="sway-activities"></a>Sway 活动
 
-下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、整理和共享意见、案例和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
+下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、案例和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -704,34 +704,7 @@ ms.locfileid: "44818982"
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams 活动
 
-下表列出了 Microsoft Teams 中记录在审核日志中的用户和管理员活动。 Microsoft Teams 是 Office 365 中以聊天为中心的工作区。 它将团队的对话、会议、文件和笔记集中到一个位置。 有关帮助主题的详细信息和链接，请参阅：
-
-- [有关 Microsoft Teams 的常见问题 - 管理员帮助](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Microsoft Teams 帮助](https://support.office.com/teams)
-
-|**友好名称**|**操作**|**说明**|
-|:-----|:-----|:-----|
-|已向团队添加自动程序|BotAddedToTeam|用户将自动程序添加到团队。|
-|已添加频道|ChannelAdded|用户将频道添加到团队。|
-|已添加连接器|ConnectorAdded|用户将连接器添加到频道。|
-|已添加成员|MemberAdded|团队所有者将成员添加到团队、频道或群组聊天中。|
-|已添加选项卡|TabAdded|用户将选项卡添加到频道。|
-|已更改的频道设置|ChannelSettingChanged|团队成员执行以下活动时将记录 ChannelSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队频道的名称（“**频道名称**”）。 <br/><br/>• 更改团队频道的说明（“**频道说明**”）。|
-|已更改组织设置|TeamsTenantSettingChanged|当全局管理员（使用 Microsoft 365 管理中心）执行以下活动时，将记录 TeamsTenantSettingChanged 操作；请注意，这些活动会影响整个组织的 Microsoft Teams 设置。 有关详细信息，请参阅 [Microsoft Teams 的管理员设置](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams（“**Microsoft Teams**”）。 <br/><br/>• 为组织启用或禁用 Microsoft Teams 和 Skype for Business 之间的互操作性（“**Skype for Business 互操作性**”）。 <br/><br/>• 在 Microsoft Teams 客户端中启用或禁用组织结构图视图（“组织结构图视图 **”）。<br/><br/>• 允许或禁止团队成员安排私人会议（“** 私人会议安排 **”）。<br/><br/>• 允许或禁止团队成员安排频道会议（“频道会议安排**”）。 <br/><br/>• 启用或禁用 Teams 会议中的视频呼叫（“**Skype 会议视频通话”）。<br/><br/>• 为组织启用或禁用 Microsoft Teams 聚会中的屏幕共享（“** Skype 会议屏幕共享 **”）。<br/><br/>• 允许或禁止将动画图像（称为 Giphys）添加到 Teams 对话（“动画图像**”）。 <br/><br/>• 更改组织的内容评级设置（“**内容评级**”）。 内容评级限制了可在对话中显示的动画图像的类型。 <br/><br/>• 允许或禁止团队成员将来自 Internet 的可自定义图像（称为自定义 Meme）添加到团队对话（来自 Internet 的可自定义图像 **）。<br/><br/>• 允许或禁止团队成员将可编辑图像（称为贴纸）添加到团队对话（** 可编辑图像 **）。<br/><br/>• 允许或禁止团队成员在 Microsoft Teams 聊天和频道中使用机器人（组织范围内的机器人）。<br/><br/>• 为 Microsoft Teams 启用特定机器人；这不包括 T-Bot，即组织启用机器人时可用的 Teams 帮助机器人（** 单个机器人 **）。<br/><br/>• 允许或禁止团队成员添加扩展或选项卡（** 扩展或选项卡 **）。<br/><br/>• 启用或禁用 Microsoft Teams 专有自动程序旁加载（** 自动程序旁加载 **）。<br/><br/>• 允许或禁止用户向 Microsoft Teams 频道发送电子邮件（** 频道电子邮件**）。|
-|已更改团队成员的角色|MemberRoleChanged|团队所有者更改团队中成员的角色。 以下值表示分配给用户的角色类型。 <br/><br/> **1** - 表示“所有者”角色。<br/>**2** - 表示“成员”角色。 <br/>**3** - 表示“来宾”角色。 <br/><br/> 成员属性还包括组织的名称和成员的电子邮件地址。|
-|已更改的团队设置|TeamSettingChanged|团队所有者执行以下活动时将记录 TeamSettingChanged 操作。 对于每个活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的说明（显示在下方括号中）。 <br/><br/>• 更改团队的访问权限类型。 可将团队设置为“专用​​”或“公用”（“**团队访问权限类型**”）。 当团队为专用（默认设置）时，用户只能通过邀请访问该团队。 当团队为公用时，任何人都可以发现它。 <br/><br/>• 更改团队的信息分类（“**团队分类**”）。 <br/> 例如，可将团队数据分类为高业务影响、中等业务影响或低业务影响。<br/><br/>• 更改团队的名称（“**团队名称**”）。 <br/><br/>• 更改团队说明（“团队说明”**）。 <br/><br/>• 更改任何团队设置。 团队所有者可通过右键单击某个团队，单击“**管理团队**”，然后单击“**设置**”选项卡在 Teams 客户端中访问这些设置。对于这些活动，审核日志搜索结果中的“**项目**”列将显示已更改设置的名称。|
-|已创建团队|TeamCreated|用户创建团队。|
-|已删除频道|ChannelDeleted|用户从团队中删除频道。|
-|已删除团队|TeamDeleted|团队所有者删除了团队。|
-|已从团队中删除自动程序|BotRemovedFromTeam|用户从团队中删除自动程序。|
-|已删除连接器|ConnectorRemoved|用户从频道删除连接器。|
-|已删除的成员|MemberRemoved|团队所有者从团队、频道或群组聊天中删除成员。|
-|已删除选项卡|TabRemoved|用户从频道中删除选项卡。|
-|已更新连接器|ConnectorUpdated|用户修改了频道中的连接器。|
-|已更新选项卡|TabUpdated|用户修改了频道中的选项卡。|
-|用户已登录到 Teams|TeamsSessionStarted|用户登录到 Microsoft Teams 客户端。 此事件不会捕获令牌刷新活动。|
-||||
+你可以在审核日志中搜索 Microsoft Teams 内的用户和管理员活动。 Teams 是 Office 365 内以聊天为中心的工作区。 它将团队的对话、会议、文件和笔记集中到一个位置。 有关所审核的 Teams 活动的说明，请参阅[在审核日志中搜索 Microsoft Teams 中的活动](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)。
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医疗保健活动
 
@@ -813,7 +786,7 @@ ms.locfileid: "44818982"
 在下面的说明中可以看到，一些操作包含其他活动参数。
 
 > [!NOTE]
-> 如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-co-authors-and-anonymous-responders)部分。
+> 如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-coauthors-and-anonymous-responders)部分。
 
 |**友好名称**|**操作**|**说明**|
 |:-----|:-----|:-----|
@@ -827,8 +800,8 @@ ms.locfileid: "44818982"
 |已导出表单|ExportForm|表单所有者将结果导出到 Excel。 <br><br>属性 ExportFormat:string 表示 Excel 文件是下载还是在线文件。|
 |已允许共享表单以进行复制|AllowShareFormForCopy|表单所有者创建模板链接以便与其他用户共享表单。 当表单所有者通过单击生成模板 URL 时，将记录此事件。|
 |不允许共享表单以进行复制|DisallowShareFormForCopy|表单所有者删除模板链接。|
-|已添加表单共同创作|AddFormCoauthor|用户使用协作链接来帮助设计/查看响应。 当用户使用协作 URL 时（而不是首次生成协作 URL 时），将记录此事件。|
-|已删除表单共同创作|RemoveFormCoauthor|表单所有者删除协作链接。|
+|已添加表单合著者|AddFormCoauthor|用户使用协作链接来帮助设计/查看响应。 当用户使用协作 URL 时（而不是首次生成协作 URL 时），将记录此事件。|
+|已删除表单合著者|RemoveFormCoauthor|表单所有者删除协作链接。|
 |已查看响应页面|ViewRuntimeForm|用户已打开响应页面以进行查看。 无论用户是否提交响应，都将记录此事件。|
 |已创建响应|CreateResponse|类似于接收新响应。  用户提交了对表单的响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
 |已更新响应|UpdateResponse|表单所有者更新了测验的批注或分数。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
@@ -846,17 +819,17 @@ ms.locfileid: "44818982"
 |已提交响应|SubmitResponse|用户提交对表单的响应。 <br><br>属性 IsInternalForm:boolean 表示响应者是否与表单所有者位于同一组织中。|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>共同创作者和匿名响应者执行的 Forms 活动
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>合著者和匿名响应者执行的 Forms 活动
 
-Forms 支持在设计表单时和分析响应时进行协作。 表单协作者被称为*共同创作者*。 共同创作者可执行表单所有者可执行的所有操作，但删除或移动表单除外。 Forms 还允许你创建可以匿名响应的表单。 这意味着响应者无需登录到组织即可响应表单。 
+Forms 支持在设计表单时和分析响应时进行协作。 表单协作者被称为*合著者*。 合著者可执行表单所有者可执行的所有操作，但删除或移动表单除外。 Forms 还允许你创建可以匿名响应的表单。 这意味着响应者无需登录到组织即可响应表单。 
 
-下表介绍了共同创作者和匿名响应者执行的活动的审核记录中的审核活动和信息。
+下表介绍了合著者和匿名响应者执行的活动的审核记录中的审核活动和信息。
 
 |**活动类型**|**内部或外部用户**|**记录的用户 ID**|**登录到的组织**|**Forms 用户类型**|
 |:-----|:-----|:-----|:-----|:-----|
-|共同创作活动|内部|UPN|表单所有者的组织|共同创作者|
-|共同创作活动|外部|UPN<br>|共同创作者的组织<br>|共同创作者|
-|共同创作活动|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>（ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织<br>|共同创作者|
+|共同创作活动|内部|UPN|表单所有者的组织|合著者|
+|共同创作活动|外部|UPN<br>|合著者的组织<br>|合著者|
+|共同创作活动|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>（ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织<br>|合著者|
 |响应活动|外部|UPN<br>|响应者的组织<br>|响应者|
 |响应活动|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|
 |响应活动|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|

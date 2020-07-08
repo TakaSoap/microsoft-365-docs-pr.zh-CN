@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815593"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016253"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
 > [!NOTE]
-> 此文档介绍此产品的先前版本。 强烈建议用户不要使用此版本的合规性管理器，而应鼓励用户使用新的 [Microsoft 合规性分数](compliance-score.md)。
+> 此文档介绍此产品的先前版本。 *强烈建议用户不要使用此版本的合规性管理器*。 **如果你使用的是合规性管理器的当前预览版本，请参阅[合规性管理器（预览）文档](working-with-compliance-manager.md)。**
 
  *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。*
   
@@ -227,7 +227,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
   
  **威胁**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**必需** <br/> |**随意** <br/> |
 |**预防型** <br/> |高风险  <br/> |中等风险  <br/> |
@@ -244,7 +244,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**内部**<br/>||**外部**<br/>||||
+|<br>|**内部**<br/>|<br>|**外部**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*恶意*<br/>|*偶发*<br/>|*恶意*<br/>|*偶发*<br/>|||
 |**机密性**<br/>|（高、中等或低）  <br/> |（高、中等或低）  <br/> |（高、中等或低）  <br/> |（高、中等或低）|

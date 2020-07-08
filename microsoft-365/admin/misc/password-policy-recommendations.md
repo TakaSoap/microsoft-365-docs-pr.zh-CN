@@ -19,18 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399310"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015919"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
  
 作为组织的管理员，你负责为组织内部用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了加强组织对密码攻击的防护的建议。
   
 要决定 Microsoft 365 密码在你组织中过期的频率，请参阅[设置 Microsoft 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
+
+有关 Microsoft 365 密码的详细信息，请参阅这些[相关文章](#related-articles)。
   
 ## <a name="understanding-password-recommendations"></a>了解密码建议
 
@@ -131,3 +133,13 @@ ms.locfileid: "44399310"
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)（2015 最差密码）
 
 - [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)（下载 Web 中的文件）
+
+## <a name="related-articles"></a>相关文章
+
+[重置密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[将个人用户密码设置为永不过期](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[允许用户重置自己的密码](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[重新发送用户密码 - 管理员帮助](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解如何评估环境中的目录和网络就绪情况。
-ms.openlocfilehash: b9b2ed38afd77a5dd487b7e319eeee5300a62a25
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 78087b7e0c1cb7031954d3a9ac4188b59879db20
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011647"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679010"
 ---
 # <a name="step-2-directory-and-network-readiness"></a>步骤 2：目录和网络就绪情况
 
-请确保目录和网络都已配置好，可以支持转换到 Windows 10 和 Microsoft 365 企业应用版。这要求 Azure Active Directory 服务为用户准备就绪，并且网络必须有能力处理其常规流量以及在电脑升级、用户文件、设置和应用程序恢复时可能移动的大量数据。
+Ensure your directory and the network are configured and ready to support to your shift to Windows 10 and Microsoft 365 Apps for enterprise. This will require Azure Active Directory Services to be in place for users, and your network must have the capacity to handle both its regular traffic and the movement of potentially vast amounts of data as PCs are upgraded, and users’ files, settings and applications are restored.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-1.png)
 
@@ -32,7 +32,7 @@ ms.locfileid: "44011647"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-5.png" alt="Step 2" height="144" width="144" /></td>
 <td><p><strong>步骤 2：目录和网络就绪情况</strong></p>
-<p>Microsoft 365 企业应用版中的云连接服务和 Windows Autopilot 等新的部署解决方案都需要 Azure Active Directory。将 Windows 映像、应用、驱动程序和相关文件迁移到电脑时，网络和连接性也是需要计划的重要方面。了解新的工具和部署解决方案如何减少和简化网络流量。</p></td>
+<p>Cloud connected services in Microsoft 365 Apps for enterprise and new deployment options like Windows Autopilot require Azure Active Directory. Your network and connectivity are also important areas to plan when moving Windows images, apps, drivers and related files to your PCs. Learn how new tools and deployment options reduce and streamline network traffic.</p></td>
 <td><a href="https://aka.ms/ddev2" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-15.png" alt="Step 2" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -41,9 +41,9 @@ ms.locfileid: "44011647"
 >目录和网络就绪情况是我们建议的部署过程轮的第二步，重点是 Azure Active Directory 和优化网络。 若要查看完整的桌面部署过程，请访问[桌面部署中心](https://aka.ms/HowToShift)。
 >
 
-目录和网络就绪情况是确保平稳的 OS 和桌面部署的基础。与任何自动部署一样，必须确保完成文件共享，并且你的网络需要能够支持非常大的文件传输，一次可能支持数百台甚至数千台电脑。
+Directory and Network readiness is fundamental to ensuring a smooth OS and desktop deployment. As with any automated deployment, it is important to ensure your file shares can be reached, and your network will need to be able to support the transfer of very large files, possibly to hundreds or even thousands of PCs at a time.
 
-若要转换到 Windows 10 和 Microsoft 365 企业应用版，现在还需要确保已使用 Azure Active Directory 设置基于云的标识。这不仅是激活 Microsoft 365 企业应用版的关键，还可便于你利用 Windows Autopilot 等新式预配解决方案。
+With your shift to Windows 10 and Microsoft 365 Apps for enterprise you also now need to make sure that cloud-based identity is set up with Azure Active Directory. This is key not only to activating Microsoft 365 Apps for enterprise, it also allows you to take advantage of modern provisioning solutions like Windows Autopilot.
 
 本文将探讨用于准备目录服务、用户和设备权限的工具和解决方案，以便部署到 Windows 10 和 Microsoft 365 企业应用版。
 
@@ -69,21 +69,21 @@ ms.locfileid: "44011647"
 
 需要为软件更新规划网络带宽。 Windows 10 和 Microsoft 365 企业应用版使用新的服务模型来分发每月更新和半年更新。 如果你不熟悉此模型，可以在[此处](https://docs.microsoft.com/windows/deployment/update/waas-overview)了解模型的更多信息。
 
-新的服务模型包括一年两次的 Windows 功能更新、Office 半年频道更新和每月质量更新。功能更新大小通常为 2 - 4 GB，Office 半年频道更新大小为每次更新 300 - 400 MB。然后，每月质量更新大小可能从几百 MB 到 1 GB 以上。这是因为每月更新是累积更新，因此每个 Windows 10 版本的服务生命周期内的大小都会增加。也就是说，有些工具可以帮助减少必须通过网络传递实现更新的数据量。我们将在下面更详细地介绍这一点。
+The new servicing model includes Feature Updates for Windows twice a year, Office Semi-Annual Enterprise Channel Updates, and monthly Quality Updates. Feature Updates are typically 2 – 4GB in size, and Office Semi-Annual Enterprise Channel updates are 300 – 400 MB per update. Then there are the monthly Quality Updates. These may range from a few hundred megabytes to over a gigabyte. This is because monthly updates are cumulative, so these increase in size over the servicing lifetime for each Windows 10 version. That said, there are tools that can help reduce the amount of data that must pass over the network to implement updates. We will cover this in more detail below.
 
 ### <a name="user-personalization"></a>用户个性化设置
 
-要考虑的第三个部分是用户个性化设置。对于这一点，需要规划网络带宽，以便在电脑刷新或更换过程中能够恢复用户文件、用户设置和应用程序。每台电脑上的这些项目的大小加起来通常超过 20 GB；对于某些用户，可能超过 100 GB。
+The third component to consider is user personalization. Here you need to plan network bandwidth to accommodate the restoring of user files, their settings, and their applications as part of the PC refresh or replacement process. Together, these items often exceed 20 GB per PC; for some users these may exceed 100 GB.
 
 ## <a name="limiting-bandwidth"></a>限制带宽
 
-限制部署相关流量对网络的影响的一种方法是使用客户端上的 BITS（后台智能传输服务）设置来限制它。BITS 使用自适应比特率 (ABR) 来调整可用于部署目的的带宽；可以使用组策略在客户端上配置它。
+One way to limit the impact of deployment-related traffic on the network is to throttle it using the BITS (Background Intelligent Transfer Service) setting on clients. BITS uses an Adaptive Bit Rate (ABR) to adjust bandwidth available for deployment purposes; it can be configured on clients using Group Policy.
 
 [关于 BITS](https://docs.microsoft.com/windows/desktop/bits/about-bits)
 
 如果使用 Microsoft Endpoint Configuration Manager（当前分支版本），还可以配置启用 BITS 的分发点或使用 WDS 启用多播。
 
-限制特定流量意味着正常的网络流量受下载更新和应用程序的电脑的影响较小。但为这些任务划出一定比例的带宽有助于确保工作效率不受 Windows 或 Office 部署的影响，并且进程会根据需要继续运行，这可能会增加与部署相关的停机时间，导致用户在部署运行期间被锁定在电脑外。
+Throttling specific traffic means that normal network traffic is less impacted by PCs downloading updates and applications. But carving out a certain percentage of bandwidth for these tasks helps ensure productivity isn’t impacted by Windows or Office deployment and processes continue to run as needed, it can worsen deployment-related downtime, with users locked out of their PCs while a deployment runs.
 
 幸好可以使用一些新工具更轻松地管理大规模桌面部署的网络影响，其中包括用于优化可用带宽使用情况的 LEDBAT，以及将部署流量从网络中心和外围移出的对等 (P2P) 选项
 
@@ -95,15 +95,15 @@ Windows Server 2019 和 Microsoft Endpoint Configuration Manager（当前分支�
 
 [Windows Server 2019 中的十大网络功能：\#9 LEDBAT - 延迟优化背景传输](https://blogs.technet.microsoft.com/networking/2018/07/25/ledbat/)
 
-与传统限制不同，LEDBAT 可以将所有可用的网络带宽用作后台任务，在其他流量请求时立即产生带宽。与 BITS 不同的是，它不存在延迟；所有操作自动化执行，无需手动调整或计划，所有内容都在服务器端设置。这可以带来潜在的巨大性能提升。
+Unlike traditional throttling, LEDBAT can use all available network bandwidth as a background task, instantly yielding bandwidth when other traffic requests it. Unlike BITS there is no delay; everything is automated – no manual tuning or scheduling required, and everything is setup server side. This affords potentially massive performance gains.
 
 ![](../media/step-2-directory-and-network-readiness-media/step-2-directory-and-network-readiness-media-4.png)
 
 ## <a name="peer-to-peer-options"></a>对等选项
 
-对等选项越来越多地用于 Windows 10 迁移、电脑映像、软件更新和用户个性化设置。在初始 Windows 10 部署之后，它们对于推动版本到版本升级也很有价值。我们下面介绍几个示例，帮助将 Windows 10 和 Office 相关流量从网络中心移出，减少对经典限制方法的需求，并允许电脑在本地网络中的对等端上查找所需的更新文件，而不是从分发点或 Internet 下载它们。
+Peer-to-Peer options are increasingly being used in Windows 10 migrations, for PC imaging, software updates and user personalization. They are also valuable in facilitating build-to-build upgrades after your initial Windows 10 deployment. Here we will cover several examples to help move Windows 10 and Office-related traffic away from the center of the network, reducing the need for classic throttling approaches, and allowing PCs to find the update files they need on peers in their local network rather than downloading them from a distribution point or the internet.
 
-**BranchCache** 可以帮助你在分布式环境中下载内容而不会使网络饱和。它包含两个选项：托管缓存模式（可以使用本地服务器缓存内容）和分布式缓存模式（Configuration Manager 支持的模式），它允许客户端彼此共享已下载的内容。
+**BranchCache** can help you download content in distributed environments without saturating the network. It comes in two options: Hosted Cache Mode, which lets you use local servers to cache content, and Distributed Cache Mode (a mode supported in Configuration Manager), which lets clients share already downloaded content with each other.
 
 **对等缓存** Configuration Manager 支持的客户端也可以使用对等缓存。 这使在网络上可以可靠地使用的电脑可以托管内容分发源。 不必启用所有电脑，只需启用连接了可靠网络的主机（例如台式机、小型立式或立式电脑）。 对等缓存甚至可以在安装过程中用于在 Windows PE 阶段运行的部署任务。
 
@@ -119,7 +119,7 @@ Windows Server 2019 和 Microsoft Endpoint Configuration Manager（当前分支�
 
 除了利用传递优化外，还可以采取下列三项措施，它们有助于减少因 Microsoft 365 企业应用版部署而产生的网络负载。
 
-**二进制增量压缩**：Microsoft 365 企业应用版使用二进制增量压缩，以减少从最新发行版 Microsoft 365 企业应用版更新到下一发行版时软件更新所消耗的带宽。通过只从旧发行版中拉取二进制级别更改，可以最大限度地减少累积更新的逐月增长所造成的影响。这样一来，每台电脑每月可能节省数百 MB 的数据空间。不过，为了使用此功能，就不能跳过发行版。如果这样做，必须下载完整的累积更新。
+**Binary Delta Compression** Microsoft 365 Apps for enterprise uses Binary Delta Compression to reduce bandwidth consumed by software updates when updating from the most recent release of Microsoft 365 Apps for enterprise to the next release. By only pulling the binary level changes from the previous release, the impact from month-over-month growth of cumulative updates is minimized. This has the potential of saving several hundred megabytes of data, per PC, each month. In order to use this capability though, you cannot skip releases. If you do, then the full cumulative update must be downloaded.
 
 [下载 Microsoft 365 应用版更新](https://docs.microsoft.com/deployoffice/overview-update-process-microsoft-365-apps#download-the-updates-for-microsoft-365-apps)
 
@@ -147,8 +147,8 @@ Windows Server 2019 和 Microsoft Endpoint Configuration Manager（当前分支�
 
 ## <a name="feedback"></a>反馈
 
-我们希望收到你的反馈。请选择要提供的类型：
+We'd love to hear your thoughts. Choose the type you'd like to provide:
 
 产品反馈登录以提供文档反馈
 
-我们的新反馈系统以 GitHub 问题为基础。请在我们的博客文章中了解此更改。
+Our new feedback system is built on GitHub Issues. Read about this change in our blog post.

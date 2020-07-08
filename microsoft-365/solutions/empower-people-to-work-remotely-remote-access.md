@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160746"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844974"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
 
@@ -70,7 +70,11 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 ![Azure AD 应用程序代理的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-有关详细信息，请参阅此 [Azure AD 应用程序代理概述](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
+有关详细信息，请参阅此 [Azure AD 应用程序代理概述](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)和[有关使用 Azure AD 应用程序代理的第 3 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)。
+
+>[!Note]
+>Microsoft 365 订阅中不包含 Azure AD 应用程序代理。 你必须使用单独的 Azure 订阅来进行付费。
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>在并非所有应用均为 Web 应用的情况下部署远程访问
 
@@ -82,13 +86,32 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 有关详细信息，请参阅此 [P2S VPN 概述](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about)。
 
+>[!Note]
+>Microsoft 365 订阅中不包含 Azure P2S VPN。 你必须使用单独的 Azure 订阅来进行付费。
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虚拟桌面，以便为使用个人设备的远程工作者提供远程访问权限 
 
-要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。
+要为仅可使用自己的个人和非托管设备的远程工作者提供支持，请使用 Azure 中的 Windows 虚拟桌面创建并分配虚拟桌面，以便用户在家中使用。 虚拟电脑可以像连接到组织网络的电脑一样操作。
 
-虚拟电脑可以像连接到组织网络的电脑一样操作。
+![Azure Windows 虚拟桌面的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-有关详细信息，请参阅此 [Windows 虚拟桌面概述](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+有关详细信息，请参阅： 
+
+- [Windows 虚拟桌面概述](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+- [有关使用 Windows 虚拟桌面支持远程工作者的第 2 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)。
+
+>[!Note]
+>Microsoft 365 订阅中不包含 Windows 虚拟桌面。 你必须使用单独的 Azure 订阅来进行付费。
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用远程桌面服务网关保护你的远程桌面服务连接
+
+如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 该网关使用安全套接字层 (SSL) 对通信进行加密，并防止托管 RDS 的系统直接暴露在 Internet 上。
+
+![带远程桌面服务网关的远程桌面服务连接](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+请参阅[这篇文章](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/)，了解详细信息。
 
 ## <a name="admin-technical-resources-for-remote-access"></a>用于远程访问的管理员技术资源
 
@@ -105,8 +128,9 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 | 没有远程访问 VPN 解决方案，并且只需远程访问基于 Web 的本地应用 | 已配置 Azure 应用程序代理。 |
 | 没有远程访问 VPN 解决方案，并且需要访问本地应用，其中一些应用并非基于 Web | 已配置 Azure P2S VPN。 |
 | 远程工作人员正在家中使用自己的个人设备 | 已配置 Windows 虚拟桌面。 |
+| 远程工作者将使用到本地系统的 RDS 连接 | 已在边缘网络中部署远程桌面服务网关。 |
 |||
 
 ## <a name="next-step"></a>后续步骤
 
-继续执行[步骤 3](empower-people-to-work-remotely-manage-endpoints.md)，以管理你的设备、电脑和其他终结点。
+继续[步骤 3](empower-people-to-work-remotely-security-compliance.md)，部署 Microsoft 365 安全和合规性服务，以保护你的应用、数据和设备。

@@ -20,12 +20,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819242"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936791"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -79,9 +79,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度标签有何用途
 
-> [!NOTE]
-> 除了将敏感度标签应用于电子邮件和文档以外，当前还可以在预览中[将敏感度标签与 Microsoft Teams、Microsoft 365 组和 SharePoint 网站配合使用](sensitivity-labels-teams-groups-sites.md)。
-
 当电子邮件或文档应用敏感度标签后，系统便会对内容强制执行相应标签的任何已配置保护设置。 敏感度标签可用于：
 
 - 仅**加密**加密电子邮件，或者同时加密电子邮件和文档。 可选择哪些用户或组有权执行哪些操作多长时间。 例如，可选择允许组织外特定组中的用户在标记内容后的 7 天内查看这些内容。 或者，可允许用户在应用标签时分配对内容的权限，而不是管理员分配权限。 
@@ -97,9 +94,9 @@ Each item of content can have a single sensitivity label applied to it. An item 
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
 
-- 选择加入预览以[将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站（公共预览版）](sensitivity-labels-teams-groups-sites.md)时，**可保护网站和组等容器中的内容**。
+- 启用相应功能以[将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时，**可保护网站和组等容器中的内容**。
     
-    在你选择预览之前，不会显示“网站和组设置”的配置选项。**** 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Microsoft 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
+    在启用此功能前，不会显示“**网站和组设置**”的配置选项。 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Microsoft 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
 
 - 在 Office 应用中自动应用标签，或推荐标签。**** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
