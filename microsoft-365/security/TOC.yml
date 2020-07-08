@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: 了解查询语言
                   href: mtp/advanced-hunting-query-language.md
+                - name: 应用查询最佳做法
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: 处理查询结果
                   href: mtp/advanced-hunting-query-results.md
                 - name: 使用共享查询
@@ -179,8 +181,6 @@
                   items:
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: 应用查询最佳做法
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: 自定义检测
                   items:
                     - name: 自定义检测概述
