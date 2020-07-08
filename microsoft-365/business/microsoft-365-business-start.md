@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022109"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080035"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -80,9 +80,9 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
     
     如果要将**本地 Active Directory 永久移动到云**，可以转到 Microsoft 365 管理中心并使用安装向导手动添加用户，也可以执行与 Azure AD Connect 的一次性同步。 可通过 2 种方法执行此操作： 
     
-    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以[使用最少混合将 Exchange 邮箱快速迁移到 Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
+    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以[使用最少混合将 Exchange 邮箱快速迁移到 Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
     
-    - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Office 365 的目录同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)。
+    - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Microsoft 365 的目录同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)。
     
     此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 您可以在 "[安装向导](set-up.md)" 中执行此操作，也可以[向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
     

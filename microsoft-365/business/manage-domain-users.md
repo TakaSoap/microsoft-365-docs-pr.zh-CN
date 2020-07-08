@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 将受域控制的用户与 Microsoft 365 for business 同步。
-ms.openlocfilehash: a22e567fa99456b35742fcf40c07193c96c83cf0
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565683"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080055"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>将域用户同步到 Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. 准备目录同步 
 
-在将用户和计算机从本地 Active Directory 域同步之前，请查看 "[准备将目录同步到 Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)"。 具体而言：
+在将用户和计算机从本地 Active Directory 域同步之前，请查看 "[准备将目录同步到 Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)"。 具体而言：
 
    - 请确保目录中不存在以下属性的重复项： **mail**、 **proxyAddresses**和**userPrincipalName**。 这些值必须是唯一的，并且必须删除任何重复的值。
    
@@ -59,7 +59,7 @@ ms.locfileid: "44565683"
  5. 按照向导步骤下载 Azure AD Connect，并使用它将域控制的用户同步到 Microsoft 365。
 
 
-若要了解详细信息，请参阅[设置 Office 365 的目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
+若要了解详细信息，请参阅[设置 Microsoft 365 的目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
 
 在为 Azure AD Connect 配置选项时，我们建议您启用**密码同步**、**无缝单一登录**和**密码写回**功能，这在 Microsoft 365 for business 中也受支持。
 

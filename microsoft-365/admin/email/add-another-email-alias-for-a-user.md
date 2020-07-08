@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '了解如何将多个电子邮件地址（称为 "电子邮件别名"）与 Microsoft 365 商业版帐户相关联。 '
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780285"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080011"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>为用户添加另一个电子邮件别名
 
@@ -73,12 +73,12 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
   
      
 5. 完成后，请选择 "**保存更改**"。
     
-6. 等待 24 小时，让新的别名跨整个 Office 365 进行填充。
+6. 等待24小时，以在整个 Microsoft 365 中填充新别名。
     
     用户现在将拥有一个主地址和一个别名。 例如，发送到陶湘 Hoffman 的主要地址、Eliza@NodPublishers.com 和她的别名 Sales@NodPublishers.com 的所有邮件都将转到陶湘的 "收件箱"。
     
@@ -99,17 +99,17 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > [!Important] 
     > 如果您收到错误消息 "**找不到与参数名匹配的参数" EmailAddresses**"，这意味着完成对租户的设置或自定义域（如果您最近添加了一个）会花一些时间。 设置过程最多需要 4 个小时才能完成。 稍等片刻，待设置过程完成后重试。 如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
 
-4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后，选择“**添加**”。
+4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果您向 Microsoft 365 添加了自己的域，则可以使用下拉列表选择新电子邮件别名的域。 然后，选择“**添加**”。
 
     > [!IMPORTANT]
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
-5. 完成后，请选择 "**保存**"。
+5. 完成后，选择“**保存**”。
 
-6. 等待 24 小时，让新的别名跨整个 Office 365 进行填充。 
+6. 等待24小时，以在整个 Microsoft 365 中填充新别名。 
     
     用户现在将拥有一个主地址和一个别名。 例如，发送到陶湘 Hoffman 的主要地址、Eliza@NodPublishers.com 和她的别名 Sales@NodPublishers.com 的所有邮件都将转到陶湘的 "收件箱"。
     
@@ -130,17 +130,17 @@ Microsoft 365 中的主电子邮件地址通常是创建帐户时分配给用户
     > [!Important] 
     > 如果您收到错误消息 "**找不到与参数名匹配的参数" EmailAddresses**"，这意味着完成对租户的设置或自定义域（如果您最近添加了一个）会花一些时间。 设置过程最多需要 4 个小时才能完成。 稍等片刻，待设置过程完成后重试。 如果问题仍然存在，请致电支持人员，他们会为你执行完全同步。
 
-4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。 然后，选择“**添加**”。
+4. 在 "**别名**" 下的文本框中，键入新电子邮件别名的第一部分。 如果您向 Microsoft 365 添加了自己的域，则可以使用下拉列表选择新电子邮件别名的域。 然后，选择“**添加**”。
 
     > [!IMPORTANT]
     > 如果从 GoDaddy 或另一合作伙伴购买订阅，则必须转到 GoDaddy/合作伙伴管理控制台，才能将新别名设置为主要。 
   
     > [!TIP]
-    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 电子邮件别名必须以下拉列表中的域结尾。 若要向列表中添加其他域名，请参阅[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
-5. 完成后，请选择 "**保存**"。
+5. 完成后，选择“**保存**”。
 
-6. 等待 24 小时，让新的别名跨整个 Office 365 进行填充。 
+6. 等待24小时，以在整个 Microsoft 365 中填充新别名。 
     
     用户现在将拥有一个主地址和一个别名。 例如，发送到陶湘 Hoffman 的主要地址、Eliza@NodPublishers.com 和她的别名 Sales@NodPublishers.com 的所有邮件都将转到陶湘的 "收件箱"。
     

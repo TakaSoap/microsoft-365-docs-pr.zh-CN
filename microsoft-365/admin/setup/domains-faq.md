@@ -24,11 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过查找您的常见问题的答案，了解有关域的详细信息。
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049732"
+ms.locfileid: "45068099"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
@@ -45,15 +46,15 @@ ms.locfileid: "45049732"
 
 本文内容
 
-[什么是 MX 优先级？](#what-is-mx-priority) 
-[如何验证我的域的 SPF 记录？](#how-can-i-validate-spf-records-for-my-domain) 
-[什么是域名？](#what-is-a-domain-name) 
-[如果我的 DNS 提供商不支持某些记录类型，会发生什么情况？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
-[如何在 Microsoft 365 中设置或更改默认域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
-[是否可以将自定义子域或多个域添加到 Microsoft 365？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
-[为什么我有 "onmicrosoft.com" 域？](#why-do-i-have-an-onmicrosoftcom-domain) 
-[为什么我有 "onmicrosoft.de" 域？](#why-do-i-have-an-onmicrosoftde-domain) 
-[如何验证我的非盈利或教育状态？](#how-do-i-verify-my-nonprofit-or-education-status)
+- [什么是 MX 优先级？](#what-is-mx-priority)
+- [如何验证我的域的 SPF 记录？](#how-can-i-validate-spf-records-for-my-domain)
+- [什么是域名？](#what-is-a-domain-name)
+- [如果我的 DNS 提供商不支持某些记录类型，会发生什么情况？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [如何在 Microsoft 365 中设置或更改默认域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [是否可以将自定义子域或多个域添加到 Microsoft 365？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [为什么我有 "onmicrosoft.com" 域？](#why-do-i-have-an-onmicrosoftcom-domain)
+- [为什么我有 "onmicrosoft.de" 域？](#why-do-i-have-an-onmicrosoftde-domain)
+- [如何验证我的非盈利或教育状态？](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>什么是 MX 优先级？
 

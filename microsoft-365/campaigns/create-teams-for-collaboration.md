@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 团队为你的团队创建协作空间。
-ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635644"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079781"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 团队中创建协作团队
 
@@ -85,5 +85,5 @@ Microsoft 团队是一种协作应用程序，可帮助你的员工在任何设�
 
 ## <a name="admin-settings"></a>管理设置
 
-您必须是管理员才能创建组织范围的团队。 有关详细信息，请参阅[什么是 Office 365 中的管理员？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必须是管理员才能创建组织范围的团队。 有关详细信息，请参阅[什么是 Microsoft 365 中的管理员？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   

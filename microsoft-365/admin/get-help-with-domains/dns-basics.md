@@ -22,11 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049650"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079987"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -144,7 +145,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-## <a name="why-add-a-domain-in-office-365"></a>为什么要在 Office 365 中添加域？
+## <a name="why-add-a-domain-in-microsoft-365"></a>为什么要在 Microsoft 365 中添加域？
 
 
 添加自定义域（如 fourthcoffee.com）至 Microsoft 365，让你能够使用更短、更熟悉的电子邮件和 userID 及服务。 注册 Microsoft 365 帐户时，将会[提供一个域供使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但它包含 "onmicrosoft.com"。 如果计划将 Microsoft 365 用于电子邮件，许多人更愿意添加组织或商业域。 

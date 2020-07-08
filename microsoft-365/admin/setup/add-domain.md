@@ -1,5 +1,5 @@
 ---
-title: 将域添加到 Office 365
+title: 将域添加到 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Office 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Microsoft 365。 安装向导将引导您完成该过程。
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398986"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079721"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398986"
     1. 如果您希望 Office 自动配置您的 DNS，请选择 **"为我添加 dns 记录"** 。 
     
   
-    2. 如果你想要仅将特定的 Office 365 服务附加到你的域，或者你现在想要跳过此操作，请选择 **"我要在自己添加 DNS 记录"** 。 **如果确切了解执行内容，请选择此选项。**
+    2. 如果你想要仅将特定 Microsoft 365 服务附加到你的域，或者你现在想要跳过此操作，请选择 "**我要在自己添加 DNS 记录"** ，然后稍后再执行此操作。 **如果确切了解执行内容，请选择此选项。**
     
 7. 如果你选择*自己添加 DNS 记录*，请选择 "**下一步**"，你将看到一个页面，其中包含你需要将其添加到注册机构网站以设置你的域的所有记录。 
     
@@ -124,7 +124,7 @@ ms.locfileid: "44398986"
 
 5. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
 
 ## <a name="registrars-with-domain-connect"></a>具有域连接的注册机构
 
@@ -149,7 +149,7 @@ ms.locfileid: "44398986"
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始进入 Microsoft 365。 请确保你已在 Office 365 中添加用户并为每个在你的域中收到电子邮件的人设置邮箱！
+完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已为在您的域中收到电子邮件的每个人添加了用户并为其设置了 Microsoft 365 中的邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。
 
@@ -159,7 +159,7 @@ ms.locfileid: "44398986"
 
 [什么是域？](../get-help-with-domains/what-is-a-domain.md)
 
-[在 Office 365 中购买域名](../get-help-with-domains/buy-a-domain-name.md)
+[在 Microsoft 365 中购买域名](../get-help-with-domains/buy-a-domain-name.md)
 
 [设置域（主机特定的操作说明）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

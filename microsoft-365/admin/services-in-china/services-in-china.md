@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 详细了解由世纪互联运营的 Office 365，旨在满足中国安全、可靠和可伸缩云服务的需要。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779913"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079733"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由世纪互联运营的 Office 365
 
@@ -57,7 +57,7 @@ Microsoft 本身并不运营此服务。 由世纪互联运营、提供和管理
 |:-----|:-----|
 |自定义域  <br/> |管理员可以创建和/或使用通过特定于中文的域提供程序注册的自定义域。 如果没有自定义域，则可以从域名注册机构[购买域名](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果您已经有一个，请[查找您的域注册机构或 DNS 托管提供商](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果使用 Office 365 SharePoint Online 服务创建公共网站，则中国 Internet 合规性策略要求你获取 Internet 内容提供商（ICP）号码。  **注意：** 自定义域名称中不允许的单词的自动验证不可用。           |
 |订阅、帐单和技术支持  <br/> |由世纪互联提供。 有关如何联系支持人员的信息，请参阅[联系 Office 365 获取商业版支持](../contact-support-for-business-products.md)。  <br/> |
-|自助式密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Microsoft 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自助式密码重置  <br/> |仅适用于管理员。 有关详细信息，请参阅[在由世纪互联运营的 Office 365 中更改或重置密码](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |安全、隐私、合规性以及有关支持级别的详细信息  <br/> |由世纪互联提供。  <br/> |
 |Office 桌面安装程序  <br/> |Office 桌面安装程序不适用于 Office 2010 和 Office 2007。 但是，管理员可以[将当前的 office 桌面应用程序配置为与 Office 365 配合](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
 |移动和设备支持\*  <br/> | 即将推出以下移动功能：  <br/>  移动设备管理（MDM）  <br/>  Blackberry Business 云服务（BBCS）不可用，但您可以使用 Exchange ActiveSync 设备或来自移动（边缘、BlackBerry 无线电子邮件解决方案）的信息，以运行 Blackberry Enterprise Server （BE）。  <br/>  有关移动支持的详细信息，请参阅[设置和管理用户的移动访问](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |

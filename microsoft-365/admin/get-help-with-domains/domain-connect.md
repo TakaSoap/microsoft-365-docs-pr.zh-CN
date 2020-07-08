@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: 了解如何使用启用域连接的注册机构并将你的域添加到 Microsoft 365。
-ms.openlocfilehash: 70a30201d4b795c7458959b6b2eee14c9b3c7186
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399952"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079975"
 ---
 # <a name="using-domain-connect"></a>使用域连接
 
@@ -54,6 +54,6 @@ ms.locfileid: "44399952"
 
 ## <a name="what-happens-to-my-email-and-website"></a>我的电子邮件和网站会发生什么情况？
 
-完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始进入 Microsoft 365。 请确保你已在 Office 365 中添加用户并为每个在你的域中收到电子邮件的人设置邮箱！
+完成设置后，你的域的 MX 记录将更新为指向 Microsoft 365，并且你的域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已为在您的域中收到电子邮件的每个人添加了用户并为其设置了 Microsoft 365 中的邮箱！
   
 如果你有一个用于你的企业的网站，它将在其所在的位置保持工作。 域连接设置步骤不会影响您的网站。

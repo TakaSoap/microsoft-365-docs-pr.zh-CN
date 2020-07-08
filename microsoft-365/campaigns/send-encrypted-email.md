@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解如何使用 Outlook 发送加密电子邮件。
-ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322143"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080023"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或标记敏感电子邮件
 
@@ -52,7 +52,7 @@ ms.locfileid: "44322143"
 
 ## <a name="admin-settings"></a>管理设置
 
-您可以在[Office 365 中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)了解有关设置电子邮件加密的电子邮件加密的所有信息。
+你可以在[Microsoft 365 中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)了解有关设置电子邮件加密的电子邮件加密的所有信息。
 
 ### <a name="automatically-encrypt-email-messages"></a>自动加密电子邮件
 
@@ -60,11 +60,11 @@ ms.locfileid: "44322143"
 
 您可以创建邮件流规则，以使用新的 Office 365 邮件加密（OME）功能对电子邮件进行加密。 使用 Exchange 管理中心（EAC）定义用于触发邮件加密的邮件流规则，这些规则使用新的 OME 功能。 
 
-1. 在 web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户，登录到 Office 365。 
+1. 在 web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户登录。 
 2. 选择 "管理" 磁贴。 
 3. 在 "管理中心" 中，选择 "**管理中心" > Exchange**。 
 
-有关详细信息，请参阅[在 Office 365 中定义用于加密电子邮件的邮件流规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
+有关详细信息，请参阅[定义邮件流规则以加密电子邮件](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>对加密邮件进行品牌打造
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '如果希望 Microsoft 管理 DNS 记录，请了解如何设置包含网络解决方案的 Microsoft 自定义域。 '
-ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780381"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079873"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>更改名称服务器以使用网络解决方案设置 Microsoft
 
@@ -189,8 +189,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NetworkSolutionsBP-委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-3. 在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。
- 
+3. 在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。 
     
 |||
 |:-----|:-----|
