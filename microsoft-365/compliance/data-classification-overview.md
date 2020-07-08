@@ -1,5 +1,5 @@
 ---
-title: 数据分类入门（预览）
+title: 数据分类入门
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,95 +16,126 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 15beb3c0716aeb780fb3bfed3b3a8fa74557574d
-ms.sourcegitcommit: fa6a1e432747e150df945050a3744b4408ceb2d9
+ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
+ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43957272"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44327868"
 ---
-# <a name="know-your-data---data-classification-overview-preview"></a><span data-ttu-id="5bba9-103">了解你的数据 - 数据分类概述（预览）</span><span class="sxs-lookup"><span data-stu-id="5bba9-103">Know your data - data classification overview (preview)</span></span>
+# <a name="know-your-data---data-classification-overview"></a><span data-ttu-id="147fe-103">了解你的数据 - 数据分类概述</span><span class="sxs-lookup"><span data-stu-id="147fe-103">Know your data - data classification overview</span></span>
 
-<span data-ttu-id="5bba9-104">作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。</span><span class="sxs-lookup"><span data-stu-id="5bba9-104">As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs.</span></span> <span data-ttu-id="5bba9-105">你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](labels.md)和敏感信息类型分类来实现这一目标。</span><span class="sxs-lookup"><span data-stu-id="5bba9-105">You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification.</span></span> <span data-ttu-id="5bba9-106">可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。</span><span class="sxs-lookup"><span data-stu-id="5bba9-106">There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large numbers of documents and emails that are tagged and classified with one or both of these labels.</span></span> <span data-ttu-id="5bba9-107">应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。</span><span class="sxs-lookup"><span data-stu-id="5bba9-107">After you apply  your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items.</span></span> <span data-ttu-id="5bba9-108">数据分类页面提供了对内容主体的可见性，具体如下：</span><span class="sxs-lookup"><span data-stu-id="5bba9-108">The data classification page provides visibility into that body of content, specifically:</span></span>
+<span data-ttu-id="147fe-104">作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。</span><span class="sxs-lookup"><span data-stu-id="147fe-104">As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs.</span></span> <span data-ttu-id="147fe-105">你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](labels.md)和敏感信息类型分类来实现这一目标。</span><span class="sxs-lookup"><span data-stu-id="147fe-105">You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification.</span></span> <span data-ttu-id="147fe-106">可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。</span><span class="sxs-lookup"><span data-stu-id="147fe-106">There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels.</span></span> <span data-ttu-id="147fe-107">应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。</span><span class="sxs-lookup"><span data-stu-id="147fe-107">After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items.</span></span> <span data-ttu-id="147fe-108">数据分类页面提供了对内容主体的可见性，具体如下：</span><span class="sxs-lookup"><span data-stu-id="147fe-108">The data classification page provides visibility into that body of content, specifically:</span></span>
 
-- <span data-ttu-id="5bba9-109">已分类为敏感信息类型的项目数量以及这些分类是什么</span><span class="sxs-lookup"><span data-stu-id="5bba9-109">the number items that have been classified as a sensitive information type and what those classifications are</span></span>
-- <span data-ttu-id="5bba9-110">Microsoft 365 和 Azure 信息保护中应用最多的敏感度标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-110">the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection</span></span>
-- <span data-ttu-id="5bba9-111">应用最多的保留标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-111">the top applied retention labels</span></span>
-- <span data-ttu-id="5bba9-112">用户对敏感内容所执行的操作的摘要</span><span class="sxs-lookup"><span data-stu-id="5bba9-112">a summary of activities that users are taking on your sensitive content</span></span>
-- <span data-ttu-id="5bba9-113">敏感数据和已保留数据的位置</span><span class="sxs-lookup"><span data-stu-id="5bba9-113">the locations of your sensitive and retained data</span></span>
+- <span data-ttu-id="147fe-109">已分类为敏感信息类型的项目数量以及这些分类是什么</span><span class="sxs-lookup"><span data-stu-id="147fe-109">the number items that have been classified as a sensitive information type and what those classifications are</span></span>
+- <span data-ttu-id="147fe-110">Microsoft 365 和 Azure 信息保护中应用最多的敏感度标签</span><span class="sxs-lookup"><span data-stu-id="147fe-110">the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection</span></span>
+- <span data-ttu-id="147fe-111">应用最多的保留标签</span><span class="sxs-lookup"><span data-stu-id="147fe-111">the top applied retention labels</span></span>
+- <span data-ttu-id="147fe-112">用户对敏感内容所执行的操作的摘要</span><span class="sxs-lookup"><span data-stu-id="147fe-112">a summary of activities that users are taking on your sensitive content</span></span>
+- <span data-ttu-id="147fe-113">敏感数据和已保留数据的位置</span><span class="sxs-lookup"><span data-stu-id="147fe-113">the locations of your sensitive and retained data</span></span>
 
-<span data-ttu-id="5bba9-114">可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。</span><span class="sxs-lookup"><span data-stu-id="5bba9-114">You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.</span></span>
+<span data-ttu-id="147fe-114">此外，还可在数据分类页面上管理以下功能：</span><span class="sxs-lookup"><span data-stu-id="147fe-114">You also manage these features on the data classification page:</span></span>
+- [<span data-ttu-id="147fe-115">可训练的分类器</span><span class="sxs-lookup"><span data-stu-id="147fe-115">trainable classifiers</span></span>](classifier-getting-started-with.md)
+- [<span data-ttu-id="147fe-116">敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="147fe-116">sensitive information types</span></span>](what-the-sensitive-information-types-look-for.md)
 
-## <a name="sensitive-information-types-used-most-in-your-content"></a><span data-ttu-id="5bba9-115">内容中的最常用敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="5bba9-115">Sensitive information types used most in your content</span></span>
+<span data-ttu-id="147fe-117">可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。</span><span class="sxs-lookup"><span data-stu-id="147fe-117">You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.</span></span>
 
-<span data-ttu-id="5bba9-116">Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安全号码或信用卡号的项目。</span><span class="sxs-lookup"><span data-stu-id="5bba9-116">Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number.</span></span> <span data-ttu-id="5bba9-117">有关敏感信息类型的详细信息，请参阅[敏感信息类型查找的内容](what-the-sensitive-information-types-look-for.md)。</span><span class="sxs-lookup"><span data-stu-id="5bba9-117">For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).</span></span>
+<span data-ttu-id="147fe-118">获取介绍我们的数据分类功能的视频教程。</span><span class="sxs-lookup"><span data-stu-id="147fe-118">Take a video tour of our data classification features.</span></span>
 
-<span data-ttu-id="5bba9-118">敏感信息类型卡片显示了在整个组织中找到并标记的最常用敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="5bba9-118">The sensitive information type card shows the top sensitive information types that have been found and labeled across your organization.</span></span>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+<span data-ttu-id="147fe-119">创建任何策略前，数据分类将先扫描敏感内容和标记内容。</span><span class="sxs-lookup"><span data-stu-id="147fe-119">Data classification will scan your sensitive content and labeled content before you create any policies.</span></span> <span data-ttu-id="147fe-120">这称为 \*\* 零变更管理 \*\*。</span><span class="sxs-lookup"><span data-stu-id="147fe-120">This is called **zero change management**.</span></span> <span data-ttu-id="147fe-121">这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。</span><span class="sxs-lookup"><span data-stu-id="147fe-121">This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="147fe-122">先决条件</span><span class="sxs-lookup"><span data-stu-id="147fe-122">Prerequisites</span></span>
+
+<span data-ttu-id="147fe-123">访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：</span><span class="sxs-lookup"><span data-stu-id="147fe-123">Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:</span></span>
+
+- <span data-ttu-id="147fe-124">Microsoft 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="147fe-124">Microsoft 365 (E5)</span></span>
+- <span data-ttu-id="147fe-125">Office 365 (E5)</span><span class="sxs-lookup"><span data-stu-id="147fe-125">Office 365 (E5)</span></span>
+- <span data-ttu-id="147fe-126">高级合规性（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="147fe-126">Advanced Compliance (E5) add-on</span></span>
+- <span data-ttu-id="147fe-127">高级威胁智能（E5）加载项</span><span class="sxs-lookup"><span data-stu-id="147fe-127">Advanced Threat Intelligence (E5) add-on</span></span>
+
+### <a name="permissions"></a><span data-ttu-id="147fe-128">权限</span><span class="sxs-lookup"><span data-stu-id="147fe-128">Permissions</span></span>
+
+ <span data-ttu-id="147fe-129">为了访问数据分类页面，必须在以下任一角色或角色组中向帐户分配成员身份。</span><span class="sxs-lookup"><span data-stu-id="147fe-129">In order to get access to the data classification page, an account must be assigned membership in any one of these roles or role groups.</span></span>
+
+<span data-ttu-id="147fe-130">**Microsoft 365 角色组**</span><span class="sxs-lookup"><span data-stu-id="147fe-130">**Microsoft 365 role groups**</span></span>
+
+- <span data-ttu-id="147fe-131">全局管理员</span><span class="sxs-lookup"><span data-stu-id="147fe-131">Global administrator</span></span>
+- <span data-ttu-id="147fe-132">合规性管理员</span><span class="sxs-lookup"><span data-stu-id="147fe-132">Compliance administrator</span></span>
+- <span data-ttu-id="147fe-133">安全管理员</span><span class="sxs-lookup"><span data-stu-id="147fe-133">Security administrator</span></span>
+- <span data-ttu-id="147fe-134">合规性数据管理员</span><span class="sxs-lookup"><span data-stu-id="147fe-134">Compliance data administrator</span></span>
+
+## <a name="sensitive-information-types-used-most-in-your-content"></a><span data-ttu-id="147fe-135">内容中的最常用敏感信息类型</span><span class="sxs-lookup"><span data-stu-id="147fe-135">Sensitive information types used most in your content</span></span>
+
+<span data-ttu-id="147fe-136">Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安全号码或信用卡号的项目。</span><span class="sxs-lookup"><span data-stu-id="147fe-136">Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number.</span></span> <span data-ttu-id="147fe-137">有关敏感信息类型的详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。</span><span class="sxs-lookup"><span data-stu-id="147fe-137">For more information on sensitive information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).</span></span>
+
+<span data-ttu-id="147fe-138">敏感信息类型卡片显示了在整个组织中找到并标记的最常用敏感信息类型。</span><span class="sxs-lookup"><span data-stu-id="147fe-138">The sensitive information type card shows the top sensitive information types that have been found and labeled across your organization.</span></span>
 
 ![最常用敏感信息类型](../media/data-classification-sens-info-types-card.png)
 
-<span data-ttu-id="5bba9-120">若要了解任何给定分类类别中的项目数量，请将鼠标悬停在该类别的栏上。</span><span class="sxs-lookup"><span data-stu-id="5bba9-120">To find out how many items are in any given classification category, hover over the bar for the category.</span></span>
+<span data-ttu-id="147fe-140">若要了解任何给定分类类别中的项目数量，请将鼠标悬停在该类别的栏上。</span><span class="sxs-lookup"><span data-stu-id="147fe-140">To find out how many items are in any given classification category, hover over the bar for the category.</span></span>
 
 ![最常用敏感信息类型悬停详细信息](../media/data-classification-sens-info-types-hover.png)
 
 > [!NOTE]
-> <span data-ttu-id="5bba9-122">如果卡片上显示消息“找不到包含敏感信息的数据”。</span><span class="sxs-lookup"><span data-stu-id="5bba9-122">If the card displays the message "No data found with sensitive information".</span></span> <span data-ttu-id="5bba9-123">这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。</span><span class="sxs-lookup"><span data-stu-id="5bba9-123">It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled.</span></span> <span data-ttu-id="5bba9-124">要开始使用标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="5bba9-124">To get started with labels, see:</span></span>
->- [<span data-ttu-id="5bba9-125">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-125">Sensitivity labels</span></span>](sensitivity-labels.md)
->- [<span data-ttu-id="5bba9-126">保留标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-126">Retention labels</span></span>](labels.md)
->- [<span data-ttu-id="5bba9-127">敏感信息类型查找的内容</span><span class="sxs-lookup"><span data-stu-id="5bba9-127">What the sensitive information types look for</span></span>](what-the-sensitive-information-types-look-for.md)
+> <span data-ttu-id="147fe-142">如果卡片上显示消息“找不到包含敏感信息的数据”。</span><span class="sxs-lookup"><span data-stu-id="147fe-142">If the card displays the message "No data found with sensitive information".</span></span> <span data-ttu-id="147fe-143">这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。</span><span class="sxs-lookup"><span data-stu-id="147fe-143">It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled.</span></span> <span data-ttu-id="147fe-144">要开始使用标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="147fe-144">To get started with labels, see:</span></span>
+>- [<span data-ttu-id="147fe-145">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="147fe-145">Sensitivity labels</span></span>](sensitivity-labels.md)
+>- [<span data-ttu-id="147fe-146">保留标签</span><span class="sxs-lookup"><span data-stu-id="147fe-146">Retention labels</span></span>](labels.md)
+>- [<span data-ttu-id="147fe-147">敏感信息类型属性定义</span><span class="sxs-lookup"><span data-stu-id="147fe-147">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
 
-## <a name="top-sensitivity-labels-applied-to-content"></a><span data-ttu-id="5bba9-128">应用于内容的最常用敏感度标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-128">Top sensitivity labels applied to content</span></span>
+## <a name="top-sensitivity-labels-applied-to-content"></a><span data-ttu-id="147fe-148">应用于内容的最常用敏感度标签</span><span class="sxs-lookup"><span data-stu-id="147fe-148">Top sensitivity labels applied to content</span></span>
 
-<span data-ttu-id="5bba9-129">通过 Microsoft 365 或 Azure 信息保护 (AIP) 将敏感度标签应用于项目时，会出现两种情况：</span><span class="sxs-lookup"><span data-stu-id="5bba9-129">When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:</span></span>
+<span data-ttu-id="147fe-149">通过 Microsoft 365 或 Azure 信息保护 (AIP) 将敏感度标签应用于项目时，会出现两种情况：</span><span class="sxs-lookup"><span data-stu-id="147fe-149">When you apply a sensitivity label to an item either through Microsoft 365 or Azure Information Protection (AIP), two things happen:</span></span>
 
-- <span data-ttu-id="5bba9-130">指示项目对组织的价值的标记已嵌入到文档中，可随时随地进行跟踪</span><span class="sxs-lookup"><span data-stu-id="5bba9-130">a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes</span></span>
-- <span data-ttu-id="5bba9-131">标记的存在将实现各种保护行为，例如强制性水印或加密。</span><span class="sxs-lookup"><span data-stu-id="5bba9-131">the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption.</span></span> <span data-ttu-id="5bba9-132">如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。</span><span class="sxs-lookup"><span data-stu-id="5bba9-132">With end point protection enabled you can even prevent an item from leaving your organizational control.</span></span>
+- <span data-ttu-id="147fe-150">指示项目对组织的价值的标记已嵌入到文档中，可随时随地进行跟踪</span><span class="sxs-lookup"><span data-stu-id="147fe-150">a tag that indicates the value of the item to your org is embedded in the document and will follow it everywhere it goes</span></span>
+- <span data-ttu-id="147fe-151">标记的存在将实现各种保护行为，例如强制性水印或加密。</span><span class="sxs-lookup"><span data-stu-id="147fe-151">the presence of the tag enables various protective behaviors, such as mandatory watermarking or encryption.</span></span> <span data-ttu-id="147fe-152">如果启用了终结点保护，你甚至还可阻止项目脱离组织控制。</span><span class="sxs-lookup"><span data-stu-id="147fe-152">With end point protection enabled you can even prevent an item from leaving your organizational control.</span></span>
 
-<span data-ttu-id="5bba9-133">有关敏感度标签的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md)。</span><span class="sxs-lookup"><span data-stu-id="5bba9-133">For more information on sensitivity labels, see: [Learn about sensitivity labels](sensitivity-labels.md)</span></span>
+<span data-ttu-id="147fe-153">有关敏感度标签的详细信息，请参阅[了解敏感度标签](sensitivity-labels.md)。</span><span class="sxs-lookup"><span data-stu-id="147fe-153">For more information on sensitivity labels, see: [Learn about sensitivity labels](sensitivity-labels.md)</span></span>
 
-<span data-ttu-id="5bba9-134">必须为 SharePoint 和 OneDrive 中的文件启用灵敏度标签，以使相应的数据出现在数据分类页面中。</span><span class="sxs-lookup"><span data-stu-id="5bba9-134">Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page.</span></span> <span data-ttu-id="5bba9-135">有关详细信息，请参阅[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。</span><span class="sxs-lookup"><span data-stu-id="5bba9-135">For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
+<span data-ttu-id="147fe-154">必须为 SharePoint 和 OneDrive 中的文件启用灵敏度标签，以使相应的数据出现在数据分类页面中。</span><span class="sxs-lookup"><span data-stu-id="147fe-154">Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page.</span></span> <span data-ttu-id="147fe-155">有关详细信息，请参阅[启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。</span><span class="sxs-lookup"><span data-stu-id="147fe-155">For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).</span></span>
 
-<span data-ttu-id="5bba9-136">敏感度标签卡片按敏感度级别显示项目（电子邮件或文档）的数量。</span><span class="sxs-lookup"><span data-stu-id="5bba9-136">The sensitivity label card shows the number of items (email or document) by sensitivity level.</span></span>
+<span data-ttu-id="147fe-156">敏感度标签卡片按敏感度级别显示项目（电子邮件或文档）的数量。</span><span class="sxs-lookup"><span data-stu-id="147fe-156">The sensitivity label card shows the number of items (email or document) by sensitivity level.</span></span>
 
 ![按敏感度标签分类占位符屏幕快照对内容进行细分](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> <span data-ttu-id="5bba9-138">如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。</span><span class="sxs-lookup"><span data-stu-id="5bba9-138">If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected".</span></span> <span data-ttu-id="5bba9-139">要开始使用标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="5bba9-139">To get started with labels, see:</span></span>
->- <span data-ttu-id="5bba9-140">[敏感度标签](sensitivity-labels.md)或[配置 Azure 信息保护策略](https://docs.microsoft.com/azure/information-protection/configure-policy)（对于 AIP）</span><span class="sxs-lookup"><span data-stu-id="5bba9-140">[sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)</span></span>
+> <span data-ttu-id="147fe-158">如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。</span><span class="sxs-lookup"><span data-stu-id="147fe-158">If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected".</span></span> <span data-ttu-id="147fe-159">要开始使用标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="147fe-159">To get started with labels, see:</span></span>
+>- <span data-ttu-id="147fe-160">[敏感度标签](sensitivity-labels.md)或[配置 Azure 信息保护策略](https://docs.microsoft.com/azure/information-protection/configure-policy)（对于 AIP）</span><span class="sxs-lookup"><span data-stu-id="147fe-160">[sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)</span></span>
 
-## <a name="top-retention-labels-applied-to-content"></a><span data-ttu-id="5bba9-141">应用于内容的最常用保留标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-141">Top retention labels applied to content</span></span>
+## <a name="top-retention-labels-applied-to-content"></a><span data-ttu-id="147fe-161">应用于内容的最常用保留标签</span><span class="sxs-lookup"><span data-stu-id="147fe-161">Top retention labels applied to content</span></span>
 
-<span data-ttu-id="5bba9-142">保留标签用于管理组织中的内容的处置方式。</span><span class="sxs-lookup"><span data-stu-id="5bba9-142">Retention labels are used to manage the disposition of content in your organization.</span></span> <span data-ttu-id="5bba9-143">应用后，它们可用于控制在删除文档之前将其保留多长时间，是否应在删除之前对其进行评审，保留期何时到期或是否应将其标记为永远无法删除的记录。</span><span class="sxs-lookup"><span data-stu-id="5bba9-143">When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted.</span></span> <span data-ttu-id="5bba9-144">有关详细信息，请参阅[保留标签概述](labels.md)。</span><span class="sxs-lookup"><span data-stu-id="5bba9-144">For more information see, [Overview of retention labels](labels.md).</span></span>
+<span data-ttu-id="147fe-162">保留标签用于管理组织中的内容的处置方式。</span><span class="sxs-lookup"><span data-stu-id="147fe-162">Retention labels are used to manage the disposition of content in your organization.</span></span> <span data-ttu-id="147fe-163">应用后，它们可用于控制在删除文档之前将其保留多长时间，是否应在删除之前对其进行评审，保留期何时到期或是否应将其标记为永远无法删除的记录。</span><span class="sxs-lookup"><span data-stu-id="147fe-163">When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted.</span></span> <span data-ttu-id="147fe-164">有关详细信息，请参阅[保留标签概述](labels.md)。</span><span class="sxs-lookup"><span data-stu-id="147fe-164">For more information see, [Overview of retention labels](labels.md).</span></span>
 
-<span data-ttu-id="5bba9-145">“应用最多的保留标签”卡片显示具有给定保留标签的项目数量。</span><span class="sxs-lookup"><span data-stu-id="5bba9-145">The top applied retention labels card shows you how many items have a given retention label.</span></span>
+<span data-ttu-id="147fe-165">“应用最多的保留标签”卡片显示具有给定保留标签的项目数量。</span><span class="sxs-lookup"><span data-stu-id="147fe-165">The top applied retention labels card shows you how many items have a given retention label.</span></span>
 
 ![应用最多的保留标签占位符屏幕快照](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> <span data-ttu-id="5bba9-147">如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。</span><span class="sxs-lookup"><span data-stu-id="5bba9-147">If this card displays the message, "No retention labels detected, it means you haven't created or published any retention  labels or no content has had a retention label applied.</span></span> <span data-ttu-id="5bba9-148">要开始使用保留标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="5bba9-148">To get started with retention labels, see:</span></span>
->- [<span data-ttu-id="5bba9-149">保留标签概述</span><span class="sxs-lookup"><span data-stu-id="5bba9-149">Overview of retention labels</span></span>](labels.md)
+> <span data-ttu-id="147fe-167">如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。</span><span class="sxs-lookup"><span data-stu-id="147fe-167">If this card displays the message, "No retention labels detected, it means you haven't created or published any retention  labels or no content has had a retention label applied.</span></span> <span data-ttu-id="147fe-168">要开始使用保留标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="147fe-168">To get started with retention labels, see:</span></span>
+>- [<span data-ttu-id="147fe-169">保留标签概述</span><span class="sxs-lookup"><span data-stu-id="147fe-169">Overview of retention labels</span></span>](labels.md)
 
-## <a name="top-activities-detected"></a><span data-ttu-id="5bba9-150">检测到的热门活动</span><span class="sxs-lookup"><span data-stu-id="5bba9-150">Top activities detected</span></span>
+## <a name="top-activities-detected"></a><span data-ttu-id="147fe-170">检测到的热门活动</span><span class="sxs-lookup"><span data-stu-id="147fe-170">Top activities detected</span></span>
 
-<span data-ttu-id="5bba9-151">此卡片提供用户对具有敏感度标签的项目执行的最常见操作的快速摘要。</span><span class="sxs-lookup"><span data-stu-id="5bba9-151">This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items.</span></span> <span data-ttu-id="5bba9-152">可使用[活动资源管理器](data-classification-activity-explorer.md)深入了解 Microsoft 365 对位于 Windows 10 终结点上的已标记内容进行跟踪的八种不同活动。</span><span class="sxs-lookup"><span data-stu-id="5bba9-152">You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="5bba9-153">如果此卡片显示消息“未检测到任何活动”，则表示未对文件执行任何操作，或者未启用用户和管理员审核功能。</span><span class="sxs-lookup"><span data-stu-id="5bba9-153">If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on.</span></span> <span data-ttu-id="5bba9-154">若要打开审核日志，请参阅：</span><span class="sxs-lookup"><span data-stu-id="5bba9-154">To turn the audit logs on , see:</span></span>
->- [<span data-ttu-id="5bba9-155">在安全与合规中心搜索审核日志</span><span class="sxs-lookup"><span data-stu-id="5bba9-155">Search the audit log in security & compliance center</span></span>](search-the-audit-log-in-security-and-compliance.md)
-
-## <a name="sensitivity-and-retention-labeled-data-by-location"></a><span data-ttu-id="5bba9-156">按位置列出的敏感度和保留标签数据</span><span class="sxs-lookup"><span data-stu-id="5bba9-156">Sensitivity and retention labeled data by location</span></span>
-
-<span data-ttu-id="5bba9-157">数据分类报告的重点是让用户了解具有标签的项目数量及其位置。</span><span class="sxs-lookup"><span data-stu-id="5bba9-157">The point of the data classification reporting is to provide visibility into the number of items that have which label as well as their location.</span></span> <span data-ttu-id="5bba9-158">通过这些卡片，你可以了解在 Exchange、SharePoint 和 OneDrive 等应用中具有标签的项目数量。</span><span class="sxs-lookup"><span data-stu-id="5bba9-158">These cards let you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc.</span></span>
+<span data-ttu-id="147fe-171">此卡片提供用户对具有敏感度标签的项目执行的最常见操作的快速摘要。</span><span class="sxs-lookup"><span data-stu-id="147fe-171">This card provides a quick summary of the most common actions that users are taking on the sensitivity labeled items.</span></span> <span data-ttu-id="147fe-172">可使用[活动资源管理器](data-classification-activity-explorer.md)深入了解 Microsoft 365 对位于 Windows 10 终结点上的已标记内容进行跟踪的八种不同活动。</span><span class="sxs-lookup"><span data-stu-id="147fe-172">You can use the [Activity explorer](data-classification-activity-explorer.md) to drill deep down on eight different activities that Microsoft 365 tracks on labeled content and content that is located on Windows 10 endpoints.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="5bba9-159">如果此卡片显示消息“未检测到任何位置”，则表示尚未创建或发布任何敏感度标签，或者任何内容均未应用保留标签。</span><span class="sxs-lookup"><span data-stu-id="5bba9-159">If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied.</span></span> <span data-ttu-id="5bba9-160">若要开始使用敏感度标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="5bba9-160">To get started with sensitivity labels, see:</span></span>
->- [<span data-ttu-id="5bba9-161">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-161">Sensitivity labels</span></span>](sensitivity-labels.md)
+> <span data-ttu-id="147fe-173">如果此卡片显示消息“未检测到任何活动”，则表示未对文件执行任何操作，或者未启用用户和管理员审核功能。</span><span class="sxs-lookup"><span data-stu-id="147fe-173">If this card displays the message, "No activity detected" it means that there's been no activity on the files or that user and admin auditing isn't turned on.</span></span> <span data-ttu-id="147fe-174">若要打开审核日志，请参阅：</span><span class="sxs-lookup"><span data-stu-id="147fe-174">To turn the audit logs on , see:</span></span>
+>- [<span data-ttu-id="147fe-175">在安全与合规中心搜索审核日志</span><span class="sxs-lookup"><span data-stu-id="147fe-175">Search the audit log in security & compliance center</span></span>](search-the-audit-log-in-security-and-compliance.md)
 
-## <a name="see-also"></a><span data-ttu-id="5bba9-162">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5bba9-162">See also</span></span>
+## <a name="sensitivity-and-retention-labeled-data-by-location"></a><span data-ttu-id="147fe-176">按位置列出的敏感度和保留标签数据</span><span class="sxs-lookup"><span data-stu-id="147fe-176">Sensitivity and retention labeled data by location</span></span>
 
-- [<span data-ttu-id="5bba9-163">查看标签活动（预览）</span><span class="sxs-lookup"><span data-stu-id="5bba9-163">View label activity (preview)</span></span>](data-classification-activity-explorer.md)
-- [<span data-ttu-id="5bba9-164">查看已应用标签的内容（预览）</span><span class="sxs-lookup"><span data-stu-id="5bba9-164">View labeled content (preview)</span></span>](data-classification-content-explorer.md)
-- [<span data-ttu-id="5bba9-165">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-165">Sensitivity labels</span></span>](sensitivity-labels.md)
-- [<span data-ttu-id="5bba9-166">保留标签</span><span class="sxs-lookup"><span data-stu-id="5bba9-166">Retention labels</span></span>](labels.md)
-- [<span data-ttu-id="5bba9-167">敏感信息类型查找的内容</span><span class="sxs-lookup"><span data-stu-id="5bba9-167">What the sensitive information types look for</span></span>](what-the-sensitive-information-types-look-for.md)
-- [<span data-ttu-id="5bba9-168">保留策略概述</span><span class="sxs-lookup"><span data-stu-id="5bba9-168">Overview of retention policies</span></span>](retention-policies.md)
+<span data-ttu-id="147fe-177">数据分类报告的重点是让用户了解具有标签的项目数量及其位置。</span><span class="sxs-lookup"><span data-stu-id="147fe-177">The point of the data classification reporting is to provide visibility into the number of items that have which label as well as their location.</span></span> <span data-ttu-id="147fe-178">通过这些卡片，你可以了解在 Exchange、SharePoint 和 OneDrive 等应用中具有标签的项目数量。</span><span class="sxs-lookup"><span data-stu-id="147fe-178">These cards let you know how many labeled items the are in Exchange, SharePoint, and OneDrive etc.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="147fe-179">如果此卡片显示消息“未检测到任何位置”，则表示尚未创建或发布任何敏感度标签，或者任何内容均未应用保留标签。</span><span class="sxs-lookup"><span data-stu-id="147fe-179">If this card displays the message, "No locations detected, it means you haven't created or published any sensitivity labels or no content has had a retention label applied.</span></span> <span data-ttu-id="147fe-180">若要开始使用敏感度标签，请参阅：</span><span class="sxs-lookup"><span data-stu-id="147fe-180">To get started with sensitivity labels, see:</span></span>
+>- [<span data-ttu-id="147fe-181">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="147fe-181">Sensitivity labels</span></span>](sensitivity-labels.md)
+
+## <a name="see-also"></a><span data-ttu-id="147fe-182">另请参阅</span><span class="sxs-lookup"><span data-stu-id="147fe-182">See also</span></span>
+
+- [<span data-ttu-id="147fe-183">查看标签活动（预览）</span><span class="sxs-lookup"><span data-stu-id="147fe-183">View label activity (preview)</span></span>](data-classification-activity-explorer.md)
+- [<span data-ttu-id="147fe-184">查看已应用标签的内容（预览）</span><span class="sxs-lookup"><span data-stu-id="147fe-184">View labeled content (preview)</span></span>](data-classification-content-explorer.md)
+- [<span data-ttu-id="147fe-185">敏感度标签</span><span class="sxs-lookup"><span data-stu-id="147fe-185">Sensitivity labels</span></span>](sensitivity-labels.md)
+- [<span data-ttu-id="147fe-186">保留标签</span><span class="sxs-lookup"><span data-stu-id="147fe-186">Retention labels</span></span>](labels.md)
+- [<span data-ttu-id="147fe-187">敏感信息类型属性定义</span><span class="sxs-lookup"><span data-stu-id="147fe-187">Sensitive information type entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
+- [<span data-ttu-id="147fe-188">保留策略概述</span><span class="sxs-lookup"><span data-stu-id="147fe-188">Overview of retention policies</span></span>](retention-policies.md)
+- [<span data-ttu-id="147fe-189">可训练分类器入门（预览）</span><span class="sxs-lookup"><span data-stu-id="147fe-189">Getting started with trainable classifiers (preview)</span></span>](classifier-getting-started-with.md)
