@@ -21,194 +21,193 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '如果希望 Microsoft 管理 DNS 记录，请了解如何设置包含网络解决方案的 Microsoft 自定义域。 '
-ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780381"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079873"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a><span data-ttu-id="48461-103">更改名称服务器以使用网络解决方案设置 Microsoft</span><span class="sxs-lookup"><span data-stu-id="48461-103">Change nameservers to set up Microsoft with Network Solutions</span></span>
+# <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a><span data-ttu-id="ce16c-103">更改名称服务器以使用网络解决方案设置 Microsoft</span><span class="sxs-lookup"><span data-stu-id="ce16c-103">Change nameservers to set up Microsoft with Network Solutions</span></span>
 
- <span data-ttu-id="48461-104">如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="48461-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
+ <span data-ttu-id="ce16c-104">如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="ce16c-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span>
   
-<span data-ttu-id="48461-105">如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。</span><span class="sxs-lookup"><span data-stu-id="48461-105">Follow these instructions if you want Microsoft to manage your DNS records for you.</span></span> <span data-ttu-id="48461-106">（如果你愿意，可以[在网络解决方案中管理所有 MICROSOFT DNS 记录](create-dns-records-at-network-solutions.md)。）</span><span class="sxs-lookup"><span data-stu-id="48461-106">(If you prefer, you can [manage all your Microsoft DNS records at Network Solutions](create-dns-records-at-network-solutions.md).)</span></span>
+<span data-ttu-id="ce16c-105">如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。</span><span class="sxs-lookup"><span data-stu-id="ce16c-105">Follow these instructions if you want Microsoft to manage your DNS records for you.</span></span> <span data-ttu-id="ce16c-106">（如果你愿意，可以[在网络解决方案中管理所有 MICROSOFT DNS 记录](create-dns-records-at-network-solutions.md)。）</span><span class="sxs-lookup"><span data-stu-id="ce16c-106">(If you prefer, you can [manage all your Microsoft DNS records at Network Solutions](create-dns-records-at-network-solutions.md).)</span></span>
   
     
-## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a><span data-ttu-id="48461-107">在 Network Solutions 处添加 TXT 记录以验证是否拥有该域</span><span class="sxs-lookup"><span data-stu-id="48461-107">Add a TXT record at Network Solutions to verify that you own the domain</span></span>
+## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a><span data-ttu-id="ce16c-107">在 Network Solutions 处添加 TXT 记录以验证是否拥有该域</span><span class="sxs-lookup"><span data-stu-id="ce16c-107">Add a TXT record at Network Solutions to verify that you own the domain</span></span>
 
-<span data-ttu-id="48461-108">Before you use your domain with Microsoft, we have to make sure that you own it.</span><span class="sxs-lookup"><span data-stu-id="48461-108">Before you use your domain with Microsoft, we have to make sure that you own it.</span></span> <span data-ttu-id="48461-109">Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span><span class="sxs-lookup"><span data-stu-id="48461-109">Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
+<span data-ttu-id="ce16c-108">Before you use your domain with Microsoft, we have to make sure that you own it.</span><span class="sxs-lookup"><span data-stu-id="ce16c-108">Before you use your domain with Microsoft, we have to make sure that you own it.</span></span> <span data-ttu-id="ce16c-109">Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span><span class="sxs-lookup"><span data-stu-id="ce16c-109">Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="48461-110">This record is used only to verify that you own your domain; it doesn't affect anything else.</span><span class="sxs-lookup"><span data-stu-id="48461-110">This record is used only to verify that you own your domain; it doesn't affect anything else.</span></span> <span data-ttu-id="48461-111">You can delete it later, if you like.</span><span class="sxs-lookup"><span data-stu-id="48461-111">You can delete it later, if you like.</span></span> 
+> <span data-ttu-id="ce16c-110">This record is used only to verify that you own your domain; it doesn't affect anything else.</span><span class="sxs-lookup"><span data-stu-id="ce16c-110">This record is used only to verify that you own your domain; it doesn't affect anything else.</span></span> <span data-ttu-id="ce16c-111">You can delete it later, if you like.</span><span class="sxs-lookup"><span data-stu-id="ce16c-111">You can delete it later, if you like.</span></span> 
   
-<span data-ttu-id="48461-112">请按下列步骤操作或[观看视频（从 0:47 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。</span><span class="sxs-lookup"><span data-stu-id="48461-112">Follow the steps below or [watch the video (start at 0:47)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).</span></span>
+<span data-ttu-id="ce16c-112">请按下列步骤操作或[观看视频（从 0:47 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。</span><span class="sxs-lookup"><span data-stu-id="ce16c-112">Follow the steps below or [watch the video (start at 0:47)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).</span></span>
   
-1. <span data-ttu-id="48461-113">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span><span class="sxs-lookup"><span data-stu-id="48461-113">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span></span> <span data-ttu-id="48461-114">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="48461-114">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="ce16c-113">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span><span class="sxs-lookup"><span data-stu-id="ce16c-113">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span></span> <span data-ttu-id="ce16c-114">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="ce16c-114">You'll be prompted to log in.</span></span>
     
     > [!IMPORTANT]
-    > <span data-ttu-id="48461-115">在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。</span><span class="sxs-lookup"><span data-stu-id="48461-115">Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list.</span></span>
+    > <span data-ttu-id="ce16c-115">在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-115">Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list.</span></span>
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
-2. <span data-ttu-id="48461-117">选择要修改的域名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="48461-117">Select the check box next to the name of the domain that you are modifying.</span></span>
+2. <span data-ttu-id="ce16c-117">选择要修改的域名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="ce16c-117">Select the check box next to the name of the domain that you are modifying.</span></span>
     
     ![选择域的复选框](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. <span data-ttu-id="48461-119">选择 "**编辑 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="48461-119">Select **Edit DNS**.</span></span>
+3. <span data-ttu-id="ce16c-119">选择 "**编辑 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-119">Select **Edit DNS**.</span></span>
     
     ![选择 "编辑 DNS"](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. <span data-ttu-id="48461-121">选择 "**管理高级 DNS 记录**"。</span><span class="sxs-lookup"><span data-stu-id="48461-121">Select **Manage Advanced DNS Records**.</span></span>
+4. <span data-ttu-id="ce16c-121">选择 "**管理高级 DNS 记录**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-121">Select **Manage Advanced DNS Records**.</span></span>
     
-    <span data-ttu-id="48461-122">(You may have to scroll down.)</span><span class="sxs-lookup"><span data-stu-id="48461-122">(You may have to scroll down.)</span></span>
+    <span data-ttu-id="ce16c-122">(You may have to scroll down.)</span><span class="sxs-lookup"><span data-stu-id="ce16c-122">(You may have to scroll down.)</span></span>
     
     ![选择 "管理高级 DNS 记录"](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. <span data-ttu-id="48461-124">向下滚动到 "**文本（TXT 记录）** " 部分，然后选择 "**编辑 TXT 记录**"。</span><span class="sxs-lookup"><span data-stu-id="48461-124">Scroll down to the **Text (TXT Records)** section, and then select **Edit TXT Records**.</span></span>
+5. <span data-ttu-id="ce16c-124">向下滚动到 "**文本（TXT 记录）** " 部分，然后选择 "**编辑 TXT 记录**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-124">Scroll down to the **Text (TXT Records)** section, and then select **Edit TXT Records**.</span></span>
     
     ![选择 "编辑 TXT 记录"](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
-6. <span data-ttu-id="48461-126">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="48461-126">In the boxes for the new record, type or copy and paste the values in the following table.</span></span>
+6. <span data-ttu-id="ce16c-126">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="ce16c-126">In the boxes for the new record, type or copy and paste the values in the following table.</span></span>
     
-|<span data-ttu-id="48461-127">**主机**</span><span class="sxs-lookup"><span data-stu-id="48461-127">**Host**</span></span>|<span data-ttu-id="48461-128">**TTL**</span><span class="sxs-lookup"><span data-stu-id="48461-128">**TTL**</span></span>|<span data-ttu-id="48461-129">**文本**</span><span class="sxs-lookup"><span data-stu-id="48461-129">**Text**</span></span>|
+|<span data-ttu-id="ce16c-127">**主机**</span><span class="sxs-lookup"><span data-stu-id="ce16c-127">**Host**</span></span>|<span data-ttu-id="ce16c-128">**TTL**</span><span class="sxs-lookup"><span data-stu-id="ce16c-128">**TTL**</span></span>|<span data-ttu-id="ce16c-129">**文本**</span><span class="sxs-lookup"><span data-stu-id="ce16c-129">**Text**</span></span>|
 |:-----|:-----|:-----|
-|@  <br/> <span data-ttu-id="48461-130">(The system will change this value to **@ (None)** when you save the record.)</span><span class="sxs-lookup"><span data-stu-id="48461-130">(The system will change this value to **@ (None)** when you save the record.)</span></span>  <br/> |<span data-ttu-id="48461-131">3600</span><span class="sxs-lookup"><span data-stu-id="48461-131">3600</span></span>  <br/> |<span data-ttu-id="48461-132">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="48461-132">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="48461-133">**注意**：这是一个示例。</span><span class="sxs-lookup"><span data-stu-id="48461-133">**Note**: This is an example.</span></span> <span data-ttu-id="48461-134">在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。</span><span class="sxs-lookup"><span data-stu-id="48461-134">Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.</span></span>           [<span data-ttu-id="48461-135">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="48461-135">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> <span data-ttu-id="ce16c-130">(The system will change this value to **@ (None)** when you save the record.)</span><span class="sxs-lookup"><span data-stu-id="ce16c-130">(The system will change this value to **@ (None)** when you save the record.)</span></span>  <br/> |<span data-ttu-id="ce16c-131">3600</span><span class="sxs-lookup"><span data-stu-id="ce16c-131">3600</span></span>  <br/> |<span data-ttu-id="ce16c-132">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="ce16c-132">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="ce16c-133">**注意**：这是一个示例。</span><span class="sxs-lookup"><span data-stu-id="ce16c-133">**Note**: This is an example.</span></span> <span data-ttu-id="ce16c-134">在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。</span><span class="sxs-lookup"><span data-stu-id="ce16c-134">Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365.</span></span>           [<span data-ttu-id="ce16c-135">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="ce16c-135">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)
    
     
    ![在新记录的框中键入或粘贴值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. <span data-ttu-id="48461-137">选择 "**继续**"。</span><span class="sxs-lookup"><span data-stu-id="48461-137">Select **Continue**.</span></span>
+7. <span data-ttu-id="ce16c-137">选择 "**继续**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-137">Select **Continue**.</span></span>
     
     ![选择 "继续"](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. <span data-ttu-id="48461-139">选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="48461-139">Select **Save Changes**.</span></span>
+8. <span data-ttu-id="ce16c-139">选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-139">Select **Save Changes**.</span></span>
     
     ![选择 "保存更改"](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
-9. <span data-ttu-id="48461-141">请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。</span><span class="sxs-lookup"><span data-stu-id="48461-141">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
+9. <span data-ttu-id="ce16c-141">请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。</span><span class="sxs-lookup"><span data-stu-id="ce16c-141">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
     
-<span data-ttu-id="48461-142">在域注册机构网站添加了记录后，你将返回到 Microsoft 365 并请求 Microsoft 365 查找记录。</span><span class="sxs-lookup"><span data-stu-id="48461-142">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.</span></span>
+<span data-ttu-id="ce16c-142">在域注册机构网站添加了记录后，你将返回到 Microsoft 365 并请求 Microsoft 365 查找记录。</span><span class="sxs-lookup"><span data-stu-id="ce16c-142">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.</span></span>
   
-<span data-ttu-id="48461-143">Microsof 找到正确的 TXT 记录表明域已通过验证。</span><span class="sxs-lookup"><span data-stu-id="48461-143">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
+<span data-ttu-id="ce16c-143">Microsof 找到正确的 TXT 记录表明域已通过验证。</span><span class="sxs-lookup"><span data-stu-id="ce16c-143">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
   
-1. <span data-ttu-id="48461-144">在 Microsoft 管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="48461-144">In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="ce16c-144">在 Microsoft 管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="ce16c-144">In the Microsoft admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
     
-2. <span data-ttu-id="48461-145">在“**域**”页面上，选择要验证的域。</span><span class="sxs-lookup"><span data-stu-id="48461-145">On the **Domains** page, select the domain that you are verifying.</span></span> 
+2. <span data-ttu-id="ce16c-145">在“**域**”页面上，选择要验证的域。</span><span class="sxs-lookup"><span data-stu-id="ce16c-145">On the **Domains** page, select the domain that you are verifying.</span></span> 
     
     
   
-3. <span data-ttu-id="48461-146">在“**设置**”页面上，选择“**开始设置**”。</span><span class="sxs-lookup"><span data-stu-id="48461-146">On the **Setup** page, select **Start setup**.</span></span>
+3. <span data-ttu-id="ce16c-146">在“**设置**”页面上，选择“**开始设置**”。</span><span class="sxs-lookup"><span data-stu-id="ce16c-146">On the **Setup** page, select **Start setup**.</span></span>
     
     
   
-4. <span data-ttu-id="48461-147">在“**验证域**”页面上，选择“**验证**”。</span><span class="sxs-lookup"><span data-stu-id="48461-147">On the **Verify domain** page, select **Verify**.</span></span>
+4. <span data-ttu-id="ce16c-147">在“**验证域**”页面上，选择“**验证**”。</span><span class="sxs-lookup"><span data-stu-id="ce16c-147">On the **Verify domain** page, select **Verify**.</span></span>
     
     
   
 > [!NOTE]
->  <span data-ttu-id="48461-148">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="48461-148">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="48461-149">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span><span class="sxs-lookup"><span data-stu-id="48461-149">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="48461-150">If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="48461-150">If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+>  <span data-ttu-id="ce16c-148">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="ce16c-148">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="ce16c-149">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span><span class="sxs-lookup"><span data-stu-id="ce16c-149">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="ce16c-150">If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span><span class="sxs-lookup"><span data-stu-id="ce16c-150">If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="change-your-domains-nameserver-ns-records"></a><span data-ttu-id="48461-151">更改域的名称服务器 (NS) 记录</span><span class="sxs-lookup"><span data-stu-id="48461-151">Change your domain's nameserver (NS) records</span></span>
+## <a name="change-your-domains-nameserver-ns-records"></a><span data-ttu-id="ce16c-151">更改域的名称服务器 (NS) 记录</span><span class="sxs-lookup"><span data-stu-id="ce16c-151">Change your domain's nameserver (NS) records</span></span>
 
-<span data-ttu-id="48461-152">若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。</span><span class="sxs-lookup"><span data-stu-id="48461-152">To complete setting up your domain with Microsoft, you change your domain's NS records at your domain registrar to point to the Microsoft primary and secondary name servers.</span></span> <span data-ttu-id="48461-153">这将设置 Microsoft 为您更新域的 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="48461-153">This sets up Microsoft to update the domain's DNS records for you.</span></span> <span data-ttu-id="48461-154">我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。</span><span class="sxs-lookup"><span data-stu-id="48461-154">We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.</span></span>
+<span data-ttu-id="ce16c-152">若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。</span><span class="sxs-lookup"><span data-stu-id="ce16c-152">To complete setting up your domain with Microsoft, you change your domain's NS records at your domain registrar to point to the Microsoft primary and secondary name servers.</span></span> <span data-ttu-id="ce16c-153">这将设置 Microsoft 为您更新域的 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="ce16c-153">This sets up Microsoft to update the domain's DNS records for you.</span></span> <span data-ttu-id="ce16c-154">我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。</span><span class="sxs-lookup"><span data-stu-id="ce16c-154">We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.</span></span>
   
 > [!CAUTION]
-> <span data-ttu-id="48461-155">当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。</span><span class="sxs-lookup"><span data-stu-id="48461-155">When you change your domain's NS records to point to the Microsoft name servers, all the services that are currently associated with your domain are affected.</span></span> <span data-ttu-id="48461-156">例如，在进行此更改后，发送到您的域的所有电子邮件（如 rob@ *your_domain* .com）都将启动到 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="48461-156">For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft after you make this change.</span></span>
+> <span data-ttu-id="ce16c-155">当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。</span><span class="sxs-lookup"><span data-stu-id="ce16c-155">When you change your domain's NS records to point to the Microsoft name servers, all the services that are currently associated with your domain are affected.</span></span> <span data-ttu-id="ce16c-156">例如，在进行此更改后，发送到您的域的所有电子邮件（如 rob@ *your_domain* .com）都将启动到 Microsoft。</span><span class="sxs-lookup"><span data-stu-id="ce16c-156">For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft after you make this change.</span></span>
   
-<span data-ttu-id="48461-157">准备好更改你的 NS 记录，以便 Microsoft 可以设置你的域了吗？</span><span class="sxs-lookup"><span data-stu-id="48461-157">Ready to change your NS records so Microsoft can set up your domain?</span></span> <span data-ttu-id="48461-158">请按下列步骤操作或[观看视频（从 2:23 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。</span><span class="sxs-lookup"><span data-stu-id="48461-158">Follow the steps below or [watch the video (start at 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).</span></span>
+<span data-ttu-id="ce16c-157">准备好更改你的 NS 记录，以便 Microsoft 可以设置你的域了吗？</span><span class="sxs-lookup"><span data-stu-id="ce16c-157">Ready to change your NS records so Microsoft can set up your domain?</span></span> <span data-ttu-id="ce16c-158">请按下列步骤操作或[观看视频（从 2:23 开始）](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。</span><span class="sxs-lookup"><span data-stu-id="ce16c-158">Follow the steps below or [watch the video (start at 2:23)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261).</span></span>
   
 > [!IMPORTANT]
->  <span data-ttu-id="48461-159">完成本节中的步骤后，应列出的*唯一*名称服务器为以下四个： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。</span><span class="sxs-lookup"><span data-stu-id="48461-159">When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, and **ns4.bdm.microsoftonline.com**.</span></span> <span data-ttu-id="48461-160">以下过程将演示如何从列表中删除任何其他不需要的名称服务器，以及如何添加 *正确*  的名称服务器（如果它们尚未显示在列表中）。</span><span class="sxs-lookup"><span data-stu-id="48461-160">The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list.</span></span> 
+>  <span data-ttu-id="ce16c-159">完成本节中的步骤后，应列出的*唯一*名称服务器为以下四个： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。</span><span class="sxs-lookup"><span data-stu-id="ce16c-159">When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, and **ns4.bdm.microsoftonline.com**.</span></span> <span data-ttu-id="ce16c-160">以下过程将演示如何从列表中删除任何其他不需要的名称服务器，以及如何添加 *正确*  的名称服务器（如果它们尚未显示在列表中）。</span><span class="sxs-lookup"><span data-stu-id="ce16c-160">The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list.</span></span> 
   
-1. <span data-ttu-id="48461-161">若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。</span><span class="sxs-lookup"><span data-stu-id="48461-161">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span></span> <span data-ttu-id="48461-162">系统将会提示您登录。</span><span class="sxs-lookup"><span data-stu-id="48461-162">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="ce16c-161">若要开始，请使用[此链接](https://www.networksolutions.com/manage-it)转到 Network Solutions 上你的域页面。</span><span class="sxs-lookup"><span data-stu-id="ce16c-161">To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it).</span></span> <span data-ttu-id="ce16c-162">系统将会提示您登录。</span><span class="sxs-lookup"><span data-stu-id="ce16c-162">You'll be prompted to log in.</span></span>
     
     > [!IMPORTANT]
-    > <span data-ttu-id="48461-163">在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。</span><span class="sxs-lookup"><span data-stu-id="48461-163">Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list.</span></span> 
+    > <span data-ttu-id="ce16c-163">在选择 "**登录**" 按钮之前，先在 "**登录到：** " 下拉列表中选择 **"管理我的域名**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-163">Before you select the **Login** button, first choose **Manage My Domain Names** in the **Log In to:** drop-down list.</span></span> 
   
     ![选择'管理我的域名'并登录到 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
-2. <span data-ttu-id="48461-165">选择要修改的域名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="48461-165">Select the check box next to the name of the domain that you are modifying.</span></span>
+2. <span data-ttu-id="ce16c-165">选择要修改的域名称旁边的复选框。</span><span class="sxs-lookup"><span data-stu-id="ce16c-165">Select the check box next to the name of the domain that you are modifying.</span></span>
     
     ![选择域的复选框](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. <span data-ttu-id="48461-167">选择 "**编辑 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="48461-167">Select **Edit DNS**.</span></span>
+3. <span data-ttu-id="ce16c-167">选择 "**编辑 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-167">Select **Edit DNS**.</span></span>
     
     ![选择 "编辑 DNS"](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. <span data-ttu-id="48461-169">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="48461-169">Select **Move DNS**.</span></span>
+4. <span data-ttu-id="ce16c-169">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-169">Select **Move DNS**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-1](../../media/e57a30f3-63d5-4bcb-84c6-c8be21c261a2.png)
   
-5. <span data-ttu-id="48461-171">根据现在显示的页面上是否已列出名称服务器，继续执行以下两个过程之一：</span><span class="sxs-lookup"><span data-stu-id="48461-171">Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures:</span></span>
+5. <span data-ttu-id="ce16c-171">根据现在显示的页面上是否已列出名称服务器，继续执行以下两个过程之一：</span><span class="sxs-lookup"><span data-stu-id="ce16c-171">Depending on whether or not there are already nameservers listed on the page that is displayed now, continue to one of the two following procedures:</span></span>
     
-  - <span data-ttu-id="48461-172">如果 **未** 列出名称服务器，则 [如果未列出名称服务器](#if-there-are-no-nameservers-already-listed)。</span><span class="sxs-lookup"><span data-stu-id="48461-172">If there are **NO** nameservers already listed, [If there are NO nameservers already listed](#if-there-are-no-nameservers-already-listed).</span></span>
+  - <span data-ttu-id="ce16c-172">如果 **未** 列出名称服务器，则 [如果未列出名称服务器](#if-there-are-no-nameservers-already-listed)。</span><span class="sxs-lookup"><span data-stu-id="ce16c-172">If there are **NO** nameservers already listed, [If there are NO nameservers already listed](#if-there-are-no-nameservers-already-listed).</span></span>
     
-  - <span data-ttu-id="48461-173">如果 **已** 列出名称服务器，则 [如果已列出名称服务器](#if-there-are-nameservers-already-listed)。</span><span class="sxs-lookup"><span data-stu-id="48461-173">If there **ARE** nameservers already listed, [If there ARE nameservers already listed](#if-there-are-nameservers-already-listed).</span></span>
+  - <span data-ttu-id="ce16c-173">如果 **已** 列出名称服务器，则 [如果已列出名称服务器](#if-there-are-nameservers-already-listed)。</span><span class="sxs-lookup"><span data-stu-id="ce16c-173">If there **ARE** nameservers already listed, [If there ARE nameservers already listed](#if-there-are-nameservers-already-listed).</span></span>
     
-### <a name="if-there-are-no-nameservers-already-listed"></a><span data-ttu-id="48461-174">如果未列出名称服务器</span><span class="sxs-lookup"><span data-stu-id="48461-174">If there are NO nameservers already listed</span></span>
+### <a name="if-there-are-no-nameservers-already-listed"></a><span data-ttu-id="ce16c-174">如果未列出名称服务器</span><span class="sxs-lookup"><span data-stu-id="ce16c-174">If there are NO nameservers already listed</span></span>
 
-1. <span data-ttu-id="48461-175">在 "**域**" 页上的 "**指定域名服务器**" 部分，选择 "**添加更多名称服务器**"。</span><span class="sxs-lookup"><span data-stu-id="48461-175">On the **Domains** page, in the **Specify Domain Name Servers** section, select **Add More Name Servers**.</span></span>
+1. <span data-ttu-id="ce16c-175">在 "**域**" 页上的 "**指定域名服务器**" 部分，选择 "**添加更多名称服务器**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-175">On the **Domains** page, in the **Specify Domain Name Servers** section, select **Add More Name Servers**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-2. <span data-ttu-id="48461-177">在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。</span><span class="sxs-lookup"><span data-stu-id="48461-177">On the **Domain Names** page, type or copy and paste the nameserver values from the following table.</span></span> 
+2. <span data-ttu-id="ce16c-177">在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。</span><span class="sxs-lookup"><span data-stu-id="ce16c-177">On the **Domain Names** page, type or copy and paste the nameserver values from the following table.</span></span> 
     
 |||
 |:-----|:-----|
-|<span data-ttu-id="48461-178">**名称服务器 1**</span><span class="sxs-lookup"><span data-stu-id="48461-178">**Name Server 1**</span></span> <br/> |<span data-ttu-id="48461-179">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-179">ns1.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-180">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="48461-180">**Name Server 2**</span></span> <br/> |<span data-ttu-id="48461-181">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-181">ns2.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-182">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="48461-182">**Name Server 2**</span></span> <br/> |<span data-ttu-id="48461-183">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-183">ns3.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-184">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="48461-184">**Name Server 2**</span></span> <br/> |<span data-ttu-id="48461-185">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-185">ns4.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-178">**名称服务器 1**</span><span class="sxs-lookup"><span data-stu-id="ce16c-178">**Name Server 1**</span></span> <br/> |<span data-ttu-id="ce16c-179">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-179">ns1.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-180">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="ce16c-180">**Name Server 2**</span></span> <br/> |<span data-ttu-id="ce16c-181">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-181">ns2.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-182">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="ce16c-182">**Name Server 2**</span></span> <br/> |<span data-ttu-id="ce16c-183">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-183">ns3.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-184">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="ce16c-184">**Name Server 2**</span></span> <br/> |<span data-ttu-id="ce16c-185">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-185">ns4.bdm.microsoftonline.com</span></span>  <br/> |
    
     
 ![NetworkSolutionsBP-委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-3. <span data-ttu-id="48461-187">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="48461-187">Select **Move DNS**.</span></span>
+3. <span data-ttu-id="ce16c-187">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-187">Select **Move DNS**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
-4. <span data-ttu-id="48461-189">选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="48461-189">Select **Save Changes**.</span></span>
+4. <span data-ttu-id="ce16c-189">选择 "**保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-189">Select **Save Changes**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
-> <span data-ttu-id="48461-191">你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。</span><span class="sxs-lookup"><span data-stu-id="48461-191">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="48461-192">然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。</span><span class="sxs-lookup"><span data-stu-id="48461-192">Then your Microsoft email and other services will be all set to work with your domain.</span></span> 
+> <span data-ttu-id="ce16c-191">你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。</span><span class="sxs-lookup"><span data-stu-id="ce16c-191">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="ce16c-192">然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。</span><span class="sxs-lookup"><span data-stu-id="ce16c-192">Then your Microsoft email and other services will be all set to work with your domain.</span></span> 
   
-### <a name="if-there-are-nameservers-already-listed"></a><span data-ttu-id="48461-193">如果已列出名称服务器</span><span class="sxs-lookup"><span data-stu-id="48461-193">If there ARE nameservers already listed</span></span>
+### <a name="if-there-are-nameservers-already-listed"></a><span data-ttu-id="ce16c-193">如果已列出名称服务器</span><span class="sxs-lookup"><span data-stu-id="ce16c-193">If there ARE nameservers already listed</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="48461-194">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.</span><span class="sxs-lookup"><span data-stu-id="48461-194">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.</span></span> <span data-ttu-id="48461-195">(That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span><span class="sxs-lookup"><span data-stu-id="48461-195">(That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span></span>
+> <span data-ttu-id="ce16c-194">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.</span><span class="sxs-lookup"><span data-stu-id="ce16c-194">Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.</span></span> <span data-ttu-id="ce16c-195">(That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span><span class="sxs-lookup"><span data-stu-id="ce16c-195">(That is, delete  *only*  any current nameservers that are  *not*  named **ns1.bdm.microsoftonline.com**, **ns2.bdm.microsoftonline.com**, **ns3.bdm.microsoftonline.com**, or **ns4.bdm.microsoftonline.com**.)</span></span>
   
-1. <span data-ttu-id="48461-196">如果列有任何其他名称服务器，选择服务器，然后按键盘上的 **Delete** 键，将其删除。</span><span class="sxs-lookup"><span data-stu-id="48461-196">If there are any other nameservers listed, delete each one by selecting it and then pressing the **Delete** key on your keyboard.</span></span>
+1. <span data-ttu-id="ce16c-196">如果列有任何其他名称服务器，选择服务器，然后按键盘上的 **Delete** 键，将其删除。</span><span class="sxs-lookup"><span data-stu-id="ce16c-196">If there are any other nameservers listed, delete each one by selecting it and then pressing the **Delete** key on your keyboard.</span></span>
     
     ![NetworkSolutions-委派-1-5](../../media/eeb8ad22-bf4a-43a8-b97a-f09c3654d89b.png)
   
-2. <span data-ttu-id="48461-198">选择 "**添加更多名称服务器**"。</span><span class="sxs-lookup"><span data-stu-id="48461-198">Select **Add More Name Servers**.</span></span>
+2. <span data-ttu-id="ce16c-198">选择 "**添加更多名称服务器**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-198">Select **Add More Name Servers**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-3. <span data-ttu-id="48461-200">在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。</span><span class="sxs-lookup"><span data-stu-id="48461-200">On the **Domain Names** page, type or copy and paste the nameserver values from the following table.</span></span>
- 
+3. <span data-ttu-id="ce16c-200">在" **域名**"页面中，键入或复制并粘贴下表中的名称服务器值。</span><span class="sxs-lookup"><span data-stu-id="ce16c-200">On the **Domain Names** page, type or copy and paste the nameserver values from the following table.</span></span> 
     
 |||
 |:-----|:-----|
-|<span data-ttu-id="48461-201">**名称服务器 1**</span><span class="sxs-lookup"><span data-stu-id="48461-201">**Name Server 1**</span></span> <br/> |<span data-ttu-id="48461-202">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-202">ns1.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-203">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="48461-203">**Name Server 2**</span></span> <br/> |<span data-ttu-id="48461-204">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-204">ns2.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-205">**名称服务器 3**</span><span class="sxs-lookup"><span data-stu-id="48461-205">**Name Server 3**</span></span> <br/> |<span data-ttu-id="48461-206">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-206">ns3.bdm.microsoftonline.com</span></span>  <br/> |
-|<span data-ttu-id="48461-207">**名称服务器 4**</span><span class="sxs-lookup"><span data-stu-id="48461-207">**Name Server 4**</span></span> <br/> |<span data-ttu-id="48461-208">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="48461-208">ns4.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-201">**名称服务器 1**</span><span class="sxs-lookup"><span data-stu-id="ce16c-201">**Name Server 1**</span></span> <br/> |<span data-ttu-id="ce16c-202">ns1.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-202">ns1.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-203">**名称服务器 2**</span><span class="sxs-lookup"><span data-stu-id="ce16c-203">**Name Server 2**</span></span> <br/> |<span data-ttu-id="ce16c-204">ns2.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-204">ns2.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-205">**名称服务器 3**</span><span class="sxs-lookup"><span data-stu-id="ce16c-205">**Name Server 3**</span></span> <br/> |<span data-ttu-id="ce16c-206">ns3.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-206">ns3.bdm.microsoftonline.com</span></span>  <br/> |
+|<span data-ttu-id="ce16c-207">**名称服务器 4**</span><span class="sxs-lookup"><span data-stu-id="ce16c-207">**Name Server 4**</span></span> <br/> |<span data-ttu-id="ce16c-208">ns4.bdm.microsoftonline.com</span><span class="sxs-lookup"><span data-stu-id="ce16c-208">ns4.bdm.microsoftonline.com</span></span>  <br/> |
    
     
 ![NetworkSolutionsBP-委派-1-2-2](../../media/795e8c6b-4828-4de2-b624-82f067bb2eb1.png)
   
-4. <span data-ttu-id="48461-210">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="48461-210">Select **Move DNS**.</span></span>
+4. <span data-ttu-id="ce16c-210">选择 "**移动 DNS**"。</span><span class="sxs-lookup"><span data-stu-id="ce16c-210">Select **Move DNS**.</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-3](../../media/d4a0a7c2-6868-471f-bbf4-16ce2e2348de.png)
   
-5. <span data-ttu-id="48461-212">选择 "**保存更改"。**</span><span class="sxs-lookup"><span data-stu-id="48461-212">Select **Save Changes.**</span></span>
+5. <span data-ttu-id="ce16c-212">选择 "**保存更改"。**</span><span class="sxs-lookup"><span data-stu-id="ce16c-212">Select **Save Changes.**</span></span>
     
     ![NetworkSolutionsBP-委派-1-2-4](../../media/897bc864-b340-4385-abeb-f94bc7f73e5e.png)
   
 > [!NOTE]
-> <span data-ttu-id="48461-214">你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。</span><span class="sxs-lookup"><span data-stu-id="48461-214">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="48461-215">然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。</span><span class="sxs-lookup"><span data-stu-id="48461-215">Then your Microsoft email and other services will be all set to work with your domain.</span></span>
+> <span data-ttu-id="ce16c-214">你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。</span><span class="sxs-lookup"><span data-stu-id="ce16c-214">Your nameserver record updates may take up to several hours to update across the Internet's DNS system.</span></span> <span data-ttu-id="ce16c-215">然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。</span><span class="sxs-lookup"><span data-stu-id="ce16c-215">Then your Microsoft email and other services will be all set to work with your domain.</span></span>
