@@ -1,7 +1,7 @@
 ---
-title: 通过 ServiceNow 创建和跟踪票证
-description: 了解如何从 Microsoft 365 安全中心创建和跟踪 ServiceNow 中的票证。
-keywords: security、Microsoft 365、M365、安全分数、安全中心、ServiceNow、票证、任务
+title: 将 ServiceNow 票证集成到 Microsoft 365 安全中心和合规性中心
+description: 了解如何从 Microsoft 365 安全中心和合规中心在 ServiceNow 中创建和跟踪票证。
+keywords: security、Microsoft 365、M365、合规性、合规性中心、安全中心、ServiceNow、票证、任务、雪、connection
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -19,22 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 6070878d6cf0efd8a85d05ff6ef89ee49baf4144
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d258bf3ec4c04eafd22e850329ca925b4c974e94
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034184"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086663"
 ---
-# <a name="manage-tickets-through-servicenow"></a>通过 ServiceNow 管理票证
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>将 ServiceNow 票证集成到 Microsoft 365 安全中心和合规性中心
 
-ServiceNow 是一款受欢迎的云计算平台，可帮助公司管理企业运营的数字工作流。 他们的 Now 平台具有 IT 工作流、员工工作流和客户工作流。 Microsoft 已与 ServiceNow 合作，使 IT 管理员可以更轻松地管理两个平台中的票证和任务。 [了解有关 ServiceNow 的详细信息](https://www.servicenow.com/)
+[!include[Prerelease information](../includes/prerelease.md)]
 
-Microsoft 365 安全中心现已得到增强，能够在 ServiceNow 中以本机方式创建和跟踪票证。 安全管理员可以直接向 ServiceNow 发送[Microsoft Secure 得分](microsoft-secure-score.md)改进操作，并创建一个票证。 可以创建事件管理和变更管理票证。 然后，可以在 Microsoft 安全中心主页和 ServiceNow 中跟踪它们。
+ServiceNow 是一款受欢迎的云计算平台，可帮助公司管理企业运营的数字工作流。 他们的 Now 平台具有 IT 工作流、员工工作流和客户工作流。 [了解有关 ServiceNow 的详细信息](https://www.servicenow.com/)
+
+Microsoft 已与 ServiceNow 合作，使 IT 管理员可以更轻松地管理两个平台中的票证和任务。 [Microsoft 365 安全中心](overview-security-center.md)和[microsoft 365 合规性中心](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center)已得到增强，能够在 ServiceNow 中以本机方式创建和跟踪票证。
+
+- [**在安全中心中管理 ServiceNow 票证**](tickets-security-center.md)
+- **在合规中心中管理 ServiceNow 票证**（即将推出）
 
 ## <a name="prerequisites"></a>先决条件
 
-有权访问 Microsoft 365 安全中心和 ServiceNow 实例，请执行以下操作：  
+有权访问 Microsoft 365 安全中心或合规性中心和包含以下内容的 ServiceNow 实例：  
 
 * Kingston 或更高版本
 * 拥有管理员的高凭据
@@ -44,57 +49,28 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ## <a name="data-exchange"></a>数据交换
 
-当您将 Microsoft 365 安全中心连接到 ServiceNow 时，Microsoft 会收到以下附加数据：
+当您将 Microsoft 365 安全中心或合规中心连接到 ServiceNow 时，Microsoft 会收到以下附加数据：
 
 * ServiceNow 实例名称
 * ServiceNow 客户端 ID
 * ServiceNow 客户端密码
 * ServiceNow 访问 & 刷新令牌
 
-当您从 Microsoft 365 安全中心创建 ServiceNow 票证时，会将以下数据发送到 ServiceNow：
+当您从 Microsoft 365 安全中心或合规中心创建 ServiceNow 票证时，会将以下数据发送到 ServiceNow：
 
 * 启动创建票证的用户 ID
 * 任务名称
 * 任务说明
-* 优先级
+* Priority
 * 截止日期
 * 建议源（用户建议或 Microsoft 推荐）
 * 建议类别（设备、数据、应用、标识、基础结构）
 
-## <a name="connect-microsoft-365-security-center-to-servicenow"></a>将 Microsoft 365 安全中心连接到 ServiceNow
+## <a name="connect-to-servicenow"></a>连接到 ServiceNow
 
-导航到 Microsoft 365 安全中心主页以查看 ServiceNow 连接卡。
+请转到[Microsoft 365 安全中心中的创建和跟踪 ServiceNow 票证](tickets-security-center.md)，了解如何连接到 ServiceNow。 即将推出从 Microsoft 365 合规中心进行连接。
 
-![您是否使用 ServiceNow](../../media/do-you-use-servicenow-250.png)
-
-选择 "连接到 ServiceNow" 以转到 "ServiceNow 设置" 页。 按照说明授权 Microsoft 365 连接器应用。
-
-> [!NOTE]
-> 在授权 Microsoft 365 安全中心和 ServiceNow 之间的连接之前，请确保使用您在安装步骤中创建的集成用户登录名和密码。 请勿使用你的个人凭据。
-
-按照说明进行操作并授权连接后，请查看 Microsoft 365 安全中心连接页和 ServiceNow Microsoft 365 票证发放连接器应用程序体验中的连接状态。 现在，你已设置为开始创建任务！
-
-## <a name="create-a-task-and-share-it-to-servicenow"></a>创建一个任务并将其共享到 ServiceNow
-
-建立集成后，基于特定 Microsoft 安全得分改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心门户中安全得分的任何改进措施，并选择 "共享" 图标。 其中一个下拉选项是 ServiceNow。
-
-![安全分数中的 ServiceNow 共享](../../media/servicenow-share.png)
-
-将生成一个任务，您可以在其中设置优先级并编辑名称、说明或截止日期。 填写所有必填字段后，将该任务发送到 ServiceNow。
-
-在 ServiceNow 中，此任务显示为 Microsoft 365 安全性和配置更改请求。
-
-## <a name="track-tickets"></a>跟踪票证
-
-一旦创建了 ServiceNow 更改管理和事件管理票证，它们就会显示在 Microsoft 365 安全中心主页上的卡片上。 通过这些卡，您可以创建一个票证、查看所有票证或管理 ServiceNow 配置。
-
-![ServiceNow 更改管理票证](../../media/change-management-375.png)  ![ServiceNow 事件管理票证](../../media/incident-management-375.png)
-
-若要在 Microsoft 365 安全中心中重新设置或管理你的 ServiceNow 集成，请选择任一卡片上的 "**管理 servicenow 配置**"。 在此处，删除当前的 ServiceNow 连接并自定义票证状态名称。
-
-借助 Microsoft 365 security center 中显示的 ServiceNow 票证，你的任务可以在某个位置进行跟踪，并在你的其他安全仪表板项目旁边进行操作。
-
-## <a name="troubleshooting"></a>问题排查
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>您在安装清单（OAuth 创建）的第一步中收到错误
 
@@ -152,5 +128,8 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="installation-is-complete-but-dont-see-tickets-and-cant-share"></a>安装已完成，但看不到票证且无法共享
 
-如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处https://security.microsoft.com/ticketProvisioning检查设置页面的状态。 选择 "**授权**" 并返回到主页。 应显示卡片。
+如果已完成安装和设置步骤，但您在主页上看不到 ServiceNow 卡，并且无法从 Microsoft 安全分数中共享到 ServiceNow，请在处检查设置页面的状态 https://security.microsoft.com/ticketProvisioning 。 选择 "**授权**" 并返回到主页。 应显示卡片。
 
+## <a name="resources"></a>资源
+
+- [在安全中心中管理 ServiceNow 票证](tickets-security-center.md)

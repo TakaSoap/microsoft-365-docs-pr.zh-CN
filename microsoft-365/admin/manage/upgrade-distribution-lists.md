@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 了解如何将一个或多个通讯组列表升级到 Outlook 中的 Microsoft 365 组，以及如何使用 PowerShell 同时升级多个通讯组列表。
-ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780021"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083570"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>将通讯组列表升级到 Outlook 中的 Microsoft 365 组
 
@@ -71,11 +71,15 @@ ms.locfileid: "44780021"
 
 若要升级单个 DL，请运行以下命令：
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 例如，如果您想要使用 SMTP 地址 dl1@contoso.com 升级 Dl，请运行以下命令：
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > 您还可以使用[Remove-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet 将单个通讯组列表升级到 Microsoft 365 组
@@ -84,9 +88,8 @@ ms.locfileid: "44780021"
 
 您还可以将多个 Dl 作为批处理传递，并将它们升级到一起：
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -103,7 +106,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 
 1. 在租户中获取符合条件的 Dl 并使用升级命令对其进行升级：
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -111,7 +114,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. 获取所有 Dl 的列表并仅升级符合条件的 Dl：
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -160,7 +163,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新组成员是否可在其收件箱中获取欢迎电子邮件？
 
-否。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
+不正确。 默认情况下，启用欢迎邮件的设置设置为 false。 此设置会影响在迁移完成后可能加入的现有和新组成员。 如果组所有者稍后允许来宾用户，则来宾用户不会在其收件箱中收到欢迎电子邮件。 来宾成员可以继续使用该组。
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>如果一个或多个 Dl 未升级，该怎么办？
 

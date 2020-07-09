@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 设置 Office 365 高级威胁防护，并针对网络钓鱼、恶意软件和其他威胁保护敏感数据。
-ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 0e6cb7ed13a0851ef249e1f599d17e03c052414a
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786198"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083594"
 ---
 # <a name="increase-threat-protection"></a>增强威胁防护
 
@@ -137,7 +137,7 @@ ms.locfileid: "44786198"
     
 4. 在 "**反钓鱼网站**" 页上，选择 " **+ 创建**"。 向导将启动，引导您完成定义您的反网络钓鱼策略。
     
-5. 按下表中的建议指定策略的名称、说明和设置。 有关更多详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options)。 
+5. 按下表中的建议指定策略的名称、说明和设置。 有关更多详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。 
     
 6. 查看设置后，根据需要选择 "**创建此策略**" 或 "**保存**"。
     

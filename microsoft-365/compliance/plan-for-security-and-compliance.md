@@ -1,5 +1,5 @@
 ---
-title: 规划安全&amp;合规性
+title: 规划安全 &amp; 合规性
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页为 Office 365 中的安全性和合规性提供了链接和规划信息。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034892"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086653"
 ---
-# <a name="plan-for-security-amp-compliance"></a>规划安全&amp;合规性
+# <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
 管理安全性和合规性是一个合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 大力保护 Microsoft 365 服务。 你可以将 Microsoft 365 和企业移动性 + 安全性（EMS）结合使用，以帮助你为你的组织实现适当级别的保护。
   
@@ -32,7 +32,7 @@ ms.locfileid: "44034892"
 
 为您自己的信息保护功能提供 Office 365 海报的信息保护功能。 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[为 Microsoft 365 中的数据隐私法规部署信息保护](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>步骤2：检查安全分数
 
@@ -56,15 +56,15 @@ ms.locfileid: "44034892"
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>第5步：利用 Microsoft 365 安全&amp;合规中心
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>第5步：利用 Microsoft 365 安全 &amp; 合规中心
 
-安全&amp;合规性中心为您提供了用于管理 Microsoft 365 安全系列（包括威胁管理、数据管理以及搜索和调查）的控件的单一视图。 
+安全 &amp; 合规性中心为您提供了用于管理 Microsoft 365 安全系列（包括威胁管理、数据管理以及搜索和调查）的控件的单一视图。 
   
-- [转到安全&amp;合规中心](go-to-the-securitycompliance-center.md)
+- [转到安全 &amp; 合规中心](go-to-the-securitycompliance-center.md)
     
-- [安全&amp;合规性中心中的权限](~/security/office-365-security/protect-against-threats.md)
+- [安全 &amp; 合规性中心中的权限](~/security/office-365-security/protect-against-threats.md)
     
-- [授予用户对安全&amp;合规中心的访问权限](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [授予用户对安全合规中心的访问权限 &amp;](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步骤6：将端到端安全方案用作起始点
 

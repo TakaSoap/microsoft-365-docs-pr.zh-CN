@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 44c9992be3fe0e6919a498fea0ee1b480a30a2bb
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023399"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086675"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -91,7 +91,7 @@ Microsoft 安全评分已更新了[在 Azure Active Directory 中支持安全默
 * 帮助台管理员
 * 用户管理员
 * 服务管理员
-* 安全读者
+* 安全读取者
 * 安全操作员
 * 全局读取者
 
@@ -131,7 +131,7 @@ Microsoft 安全评分已更新了[在 Azure Active Directory 中支持安全默
 
 * 选择 "**管理**" 以转到配置屏幕并进行更改。 然后，您将获得该操作所需要的要点，在飞出中可见。点通常需要大约24小时才能更新。
 
-* 选择 "**共享**" 将直接链接复制到 "改进" 操作，或选择用于共享链接（如电子邮件、microsoft 团队、microsoft Planner 或 ServiceNow）的平台。 选择 ServiceNow 将允许你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解详细信息，请参阅[Microsoft 365 安全中心和 ServiceNow 集成](tickets.md)。
+* 选择 "**共享**" 将直接链接复制到 "改进" 操作，或选择用于共享链接（如电子邮件、microsoft 团队、microsoft Planner 或 ServiceNow）的平台。 选择 ServiceNow 将允许你创建将在 ServiceNow 和 Microsoft 365 安全中心主页中可见的更改票证。 若要了解详细信息，请参阅[Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)。
 
 ### <a name="choose-an-improvement-action-status"></a>选择改进操作状态
 

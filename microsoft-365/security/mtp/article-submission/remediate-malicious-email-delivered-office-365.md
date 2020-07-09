@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威胁补救措施
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068157"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086687"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 
@@ -77,8 +77,6 @@ ms.locfileid: "45068157"
 可以打开每个补救项以查看有关它的详细信息。 在打开修正项目时，将显示基本修正详细信息、修正名称、创建日期、说明、威胁严重性和状态。 它还显示两个选项卡。 
 
 1. **"邮件提交" 选项卡**：这些是通过威胁浏览器提交的电子邮件数或要修正的自动调查数。 这些电子邮件可以是：
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="具有可操作和无可操作威胁的操作中心。":::
 
 可操作：可对以下云邮箱位置中的电子邮件进行**操作**和移动，即 remediable 类别中的任何电子邮件都可以从一个位置移动到另一个位置：
   - Inbox 

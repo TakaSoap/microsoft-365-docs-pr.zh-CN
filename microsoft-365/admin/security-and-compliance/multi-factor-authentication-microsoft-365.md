@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Microsoft 365 中的多因素身份验证。
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399142"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083582"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>适用于 Microsoft 365 的 Multi-Factor Authentication
 
@@ -75,7 +75,7 @@ ms.locfileid: "44399142"
 
 您可以在 Azure 门户中的 Azure AD 的**属性**窗格中启用或禁用安全默认设置。
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+!["目录属性" 页的图片。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 您可以使用任何 Microsoft 365 计划的安全性默认设置。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44399142"
 
 在 Azure 门户中，从 Azure AD 的 "**安全**" 窗格中配置条件访问策略。
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picure 条件访问的菜单选项](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 您可以通过以下方式使用条件访问策略：
 
@@ -123,7 +123,7 @@ ms.locfileid: "44399142"
 
 有关详细信息，请参阅此[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
-### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
+### <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 
 使用 Azure AD Identity Protection，可以创建额外的条件访问策略，以便[在登录风险为中或高时需要进行 MFA](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)。
 
@@ -140,7 +140,7 @@ ms.locfileid: "44399142"
 
 您可以从 Microsoft 365 管理中心的 "**活动用户**" 窗格中为单个用户帐户启用 MFA。
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+!["活动用户" 页面上的多因素身份验证选项的图片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 启用后，下次用户登录时，系统将提示他们注册 MFA，并选择和测试其他验证方法。
 

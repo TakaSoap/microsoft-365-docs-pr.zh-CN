@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 使用有效的工作或学校帐户登录后，用户可以使用 Microsoft 365 体验中的 Cortana 获取基于云的协助服务，从而满足 Office 365 的企业级隐私、安全性和合规性承诺。
-ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410997"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083546"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -33,7 +33,7 @@ Cortana 和你的个人工作效率助手提供了 AI 功能体验，以节省�
 
 作为个人的工作效率助手，Cortana 旨在提供安全且安全的功能，在 Office 365 数据（如电子邮件、文件、聊天等）上进行安全和安全的处理和原因，以节省时间、提高效率，并提高用户的工作效率。
 
-向前发展，我们将把 Cortana 集中在企业的工作效率上。
+向前发展，我们将把 Cortana 集中在企业的工作效率上。 
 
 - 与其他 Office 365 服务保持一致，Cortana enterprise 服务能够满足在[在线服务条款（OST）](https://www.microsoft.com/licensing/product-licensing/products)中反映的相同企业级隐私、安全性和合规性承诺。
 
@@ -61,7 +61,7 @@ Cortana enterprise 服务处理来自用户的查询、满足用户请求所需�
 |**留在 Geo 中**  <br/> |客户数据存储在 Geo 中的 Office 365 云内部的 Microsoft 服务器上。 你的数据是租户的一部分。  <br/> |
 |**保留**  <br/> |当租户管理员或 GDPR 数据主体权限删除请求发出帐户时，将删除客户数据。 <br/> 不保留语音音频。  <br/> |
 |**处理和机密性**  <br/> |参与处理客户数据和个人数据（i）的人员将仅根据客户的说明处理此类数据，而（ii）将负责维护此类数据的机密性和安全性（即使在其合约结束后也是如此）。  <br/> |
-|**使用**  <br/> |Microsoft 仅使用客户数据提供商定的服务以及与这些服务兼容的目的。 用于开发和改进模型的机器学习是这些用途之一。 机器学习在 Office 365 云中完成，并且不会进行人为查看、查看或标记客户数据。 <br/> 您的数据不用于目标广告。  <br/> |
+|**使用情况**  <br/> |Microsoft 仅使用客户数据提供商定的服务以及与这些服务兼容的目的。 用于开发和改进模型的机器学习是这些用途之一。 机器学习在 Office 365 云中完成，并且不会进行人为查看、查看或标记客户数据。 <br/> 您的数据不用于目标广告。  <br/> |
 
 ## <a name="cortana-enterprise-services-in-microsoft-365-experiences"></a>Microsoft 365 中的 Cortana 企业服务体验
 
@@ -80,6 +80,26 @@ Windows 10 版本2004及更高版本中的 cortana 符合对 Cortana 企业服�
 从 Windows 10 版本2004开始，Cortana 是预先安装了 Windows 的通用 Windows 平台（UWP）应用，并定期通过 Microsoft Store 进行更新。 若要接收 Cortana 的最新更新，你将需要[通过 Microsoft Store 启用更新](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)。
 
 [了解有关 Windows 10 中 Cortana 的详细信息](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+
+### <a name="cortana-voice-assistance-in-teams"></a>团队中的 Cortana 语音协助
+
+团队移动应用中的 Cortana 语音协助使 Microsoft 365 企业用户能够使用口头自然语言优化通信、协作和会议相关任务。 用户可以通过单击位于 "工作组移动" 应用程序右上角的麦克风按钮来向 Cortana 讲话。 通过发出语音查询（如 "呼叫 Megan" 或 "向我的下一会议发送邮件"），用户可以在旅途中连接到某人。 用户还可以通过说 "加入我的下一个会议" 来加入会议，并使用语音协助共享文件、检查日历等。 这些语音协助体验使用 Cortana 企业级服务提供，这些服务完全符合 Office 365 的隐私、安全性和合规性承诺，以反映在[在线服务条款（OST）](https://www.microsoft.com/licensing/product-licensing/products)中。
+
+**管理控制**
+
+默认情况下，将为租户启用 Cortana 语音协助。 管理员可以通过策略（TeamsCortanaPolicy）控制他们的租户中的哪些用户可以在团队中使用 Cortana voice 协助。 可以在用户帐户级别或租户级别设置此策略。 管理员还可以使用此策略控制中的 CortanaVoiceInvocationMode 字段来确定 Cortana 是否已禁用、是否启用了仅按下按钮调用，或者是否同时启用了唤醒 word 调用（适用于支持它的设备）。 请注意，在 Microsoft 365 企业用户首次发布英语版时，工作组移动应用程序将不支持唤醒 word 激活，但将来会受到支持。
+
+**用户控件**
+
+通过单击麦克风按钮，单个用户可以在 "团队移动应用" 中试用 Cortana voice 协助。 他们还可以通过工作组移动应用程序中的设置来控制是否为其设备启用了团队中的 Cortana： 
+
+1. 打开 "团队移动应用"。
+
+2. 转到 "**设置**"。
+
+3. 选择 " **Cortana**"。
+
+4. 将切换方式移到 "打开" 或 "关闭"，具体取决于您是否希望在此设备上启用 Cortana 语音协助。
 
 ### <a name="play-my-emails"></a>播放我的电子邮件
 
