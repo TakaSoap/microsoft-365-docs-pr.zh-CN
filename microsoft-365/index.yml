@@ -15,7 +15,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
   ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 06/27/2020
   ms.locfileid: "44909284"
@@ -54,7 +54,7 @@ additionalContent:
       summary: 专为大型组织设计。 保护你的企业并转换你使用 Office 应用、Windows 10 和企业移动性 + 安全性的方式。
       url: ./enterprise/index.yml
     - title: Microsoft 365 解决方案和体系结构中心
-      summary: 了解如何设计适合您的组织的解决方案和体系结构。
+      summary: 了解如何设计适合组织的解决方案和体系结构。
       url: ./solutions/index.yml
     - title: Microsoft 365 教育版
       summary: 专为教育工作者设计，通过为教育版构建单一、价格合理的解决方案，使其可以充分发挥创造力、提升团队合作，并提供安全易用的用户体验。

@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理电子邮件和日历
-summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+summary: 请查看这些资源，帮助管理员执行常见任务，或查看左侧的导航窗格获得完整列表。
 metadata:
   title: 管理电子邮件和日历
-  description: 管理电子邮件设置、通讯组、安全设置和设置共享邮箱
+  description: 管理电子邮件设置、通讯组和安全设置以及设置共享邮箱
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780213"
@@ -28,7 +28,7 @@ landingContent:
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
-    - text: 添加另一个电子邮件别名
+    - text: 添加其他电子邮件别名
       url: add-another-email-alias-for-a-user.md
     - text: 使用自定义域
       url: change-email-address.md
@@ -54,21 +54,21 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 在 outlook 中管理日历和联系人
+    - text: 在 Outlook 中管理日历和联系人
       url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
   - linkListType: video
     links:
-    - text: 创建共享日历
+    - text: 使用共享日历
       url: https://support.microsoft.com/office/8385667b-d758-4489-a53f-f542dd01e6ff
 - title: 解决电子邮件连接和送达问题
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 查找并修复电子邮件传递问题
+    - text: 查找并修复电子邮件送达问题
       url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
-    - text: 修复并查找添加域或 DNS 记录后出现的问题
+    - text: 修复和查找添加域或 DNS 记录后出现的问题
       url: ../get-help-with-domains/find-and-fix-issues.md
-    - text: 在用户邮箱中恢复已删除的电子邮件
+    - text: 恢复用户邮箱中的已删除电子邮件
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: 修复 Microsoft 365 和 Exchange Online 中的 Outlook 连接问题
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

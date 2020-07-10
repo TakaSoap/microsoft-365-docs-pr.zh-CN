@@ -15,7 +15,7 @@ metadata:
   search.appverid: MET150
   ms.openlocfilehash: 4f5634b720079f57a37f9b7079a8bece6cf150cd
   ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 05/27/2020
   ms.locfileid: "44402138"
@@ -26,7 +26,7 @@ landingContent:
     links:
     - text: 查看帐单或发票
       url: billing-and-payments/view-your-bill-or-invoice.md
-    - text: 管理支付方式
+    - text: 管理付款方式
       url: billing-and-payments/manage-payment-methods.md
     - text: 了解你的帐单或发票
       url: billing-and-payments/understand-your-invoice.md
