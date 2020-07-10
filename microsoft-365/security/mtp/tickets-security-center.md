@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087908"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094830"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中创建和跟踪 ServiceNow 票证
 
@@ -33,7 +33,7 @@ ms.locfileid: "45087908"
 在安全中心中，安全管理员可以直接向 ServiceNow 发送[Microsoft Secure 得分](microsoft-secure-score.md)改进操作，并创建一个票证。 可以创建事件管理和变更管理票证。 然后，可以在安全中心主页和 ServiceNow 中跟踪它们。
 
 - [**了解先决条件、数据交换和疑难解答**](tickets.md)
-- **在合规中心中管理 ServiceNow 票证**（即将推出）
+- **在合规中心中管理 ServiceNow 票证** (即将推出) 
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>将 Microsoft 365 安全中心连接到 ServiceNow
 
@@ -54,9 +54,7 @@ ms.locfileid: "45087908"
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>创建一个任务并将其共享到 ServiceNow
 
-建立集成后，基于特定 Microsoft 安全得分改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心门户中安全得分的任何改进措施，并选择 "共享" 图标。 其中一个下拉选项是 ServiceNow。
-
-![安全分数中的 ServiceNow 共享](../../media/servicenow-share.png)
+建立集成后，基于特定[Microsoft 安全得分](microsoft-secure-score.md)改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心门户中安全得分的任何改进措施，并选择 "**共享**"。 其中一个下拉选项是 ServiceNow。
 
 将生成一个任务，您可以在其中设置优先级并编辑名称、说明或截止日期。 填写所有必填字段后，将该任务发送到 ServiceNow。
 

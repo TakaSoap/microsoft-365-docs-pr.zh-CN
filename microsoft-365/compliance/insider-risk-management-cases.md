@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9959d41cf112c1ebcc88a8dd0335cae5a5537059
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: d4c2ed423743bb0f7a9c4550421c5266cc5d08b0
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327858"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091948"
 ---
 # <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
@@ -94,7 +94,7 @@ ms.locfileid: "44327858"
 1. **日期和时段筛选器**：默认情况下，在事例中确认的最后六个月的警报显示在用户活动图中。 您可以使用图表窗口两端的滑块控件轻松筛选图表视图，也可以在图表筛选控件中定义特定的开始日期和结束日期。
 2. **风险警报活动和详细信息**：风险活动在用户活动图中直观显示为彩色气泡。 为不同类别的风险和气泡大小创建气泡与类别的风险活动数成正比。 选择一个气泡以显示每个风险活动的详细信息。 详细信息包括：
     - 风险活动的**日期**。
-    - **风险活动类别**。 例如，*电子邮件中的附件发送到**从 SharePoint Online 下载*的组织或文件之外。
+    - **风险活动类别**。 例如，*电子邮件 (s) 将附件发送到组织外部*或*文件 (s) 从 SharePoint Online 下载*。
     - 警报的**风险分数**。 此分数是警报风险严重级别的数值分数。
     - 与警报关联的事件数。 此外，还提供了指向与风险活动相关联的每个文件或电子邮件的链接。
 3. **风险活动图例**：在用户活动图的底部，通过颜色编码的图例可帮助您快速确定每个通知的风险类别。
@@ -103,7 +103,7 @@ ms.locfileid: "44327858"
 
 ### <a name="content-explorer"></a>内容浏览器
 
-"**内容资源管理器**" 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果在员工将数百个文件从 SharePoint Online 下载到一个 USB 设备，并且该活动触发策略警报时创建了一个警报，则会捕获警报的所有下载文件，并将其从原始存储源复制到内幕风险管理事例中。
+"**内容资源管理器**" 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果某个员工在从 SharePoint Online 下载数百个文件时创建了一个警报，并且该活动触发了一个策略通知，则会捕获该警报的所有下载文件，并将其从原始存储源复制到内幕版风险管理事例中。
 
 内容资源管理器是一个功能强大的工具，具有基本和高级的搜索和筛选功能。 若要了解有关使用内容资源管理器的详细信息，请参阅[内幕风险管理内容浏览器](insider-risk-management-content-explorer.md)。
 

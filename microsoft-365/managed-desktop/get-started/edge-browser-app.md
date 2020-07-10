@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d11fd8f29e3232472f9457ba1fc288a5084429e9
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936133"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094782"
 ---
 # <a name="new-microsoft-edge-app"></a>新建 Microsoft Edge 应用
 
@@ -40,7 +40,7 @@ Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策
 
 Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在具有 Chromium 扩展模型的已知 risksassociated，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许用户级别的本机邮件主机（无需管理员权限即可安装）
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许没有管理员权限的情况下 (安装用户级别的本机邮件主机) 
 
 **默认值：** 禁用
 
@@ -86,7 +86,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 禁用
 
-由于相关的安全风险，建议不要使用 Flash。 如果仍有依赖于 Flash 的进程，请设置**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 策略以为需要它的网站启用 Flash。 如果无法维护允许的网站列表以使用 Flash，请将更改请求更改为**单击以播放**，这样用户就可以选择何时运行 flash。
+由于相关的安全风险，建议不要使用 Flash。 如果仍有依赖于 Flash 的进程，请设置**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 策略以为需要它的网站启用 Flash。 如果不能将允许的网站列表维护为使用 Flash，请将更改请求更改为**单击以播放**，这样用户就可以选择何时运行 flash。
 
 ### <a name="password-manager"></a>密码管理器
 

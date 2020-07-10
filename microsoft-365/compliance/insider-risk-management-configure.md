@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515759"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091918"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -32,10 +32,10 @@ ms.locfileid: "44515759"
 
 在开始使用 "内幕风险管理" 之前，应确认你的[Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何加载项。 若要访问和使用内幕风险管理，您的组织必须具有以下订阅或加载项之一：
 
-- Microsoft 365 E5 订阅（付费或试用版）
+- Microsoft 365 E5 订阅 (付费或试用版) 
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
-- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A5 订阅 (付费版或试用版) 
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
 
@@ -43,7 +43,7 @@ ms.locfileid: "44515759"
 
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有订阅或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步骤1（必需）：为内部人员风险管理启用权限
+## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步骤 1 (必需) ：为内部人员风险管理启用权限
 
 有四个角色组用于配置权限以管理内幕风险管理功能。 若要继续执行这些配置步骤，租户管理员必须首先将您分配给 "**内幕风险管理**" 或 "**内幕风险管理" 管理员**角色组。 若要在初始配置后访问和管理内幕风险管理功能，用户必须是至少一个 "内幕风险管理" 角色组的成员。
 
@@ -60,7 +60,7 @@ ms.locfileid: "44515759"
 
 完成以下步骤以将用户添加到 "内幕风险管理" 角色组：
 
-1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中登录使用管理员帐户凭据。 "" "" "" ""
+1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 组织中使用管理员帐户的凭据进行登录。
 
 2. 在 "安全 &amp; 合规性中心" 中，转到 "**权限**"。 选择用于查看和管理 Office 365 中的角色的链接。
 
@@ -74,26 +74,26 @@ ms.locfileid: "44515759"
 
 7. 选择 "**保存**" 将用户添加到角色组。 选择 "**关闭**" 完成这些步骤。
 
-## <a name="step-2-required-enable-the-audit-log"></a>步骤2（必需）：启用审核日志
+## <a name="step-2-required-enable-the-audit-log"></a>步骤 2 (必需) ：启用审核日志
 
 内幕风险管理对在策略中配置的用户见解和活动使用审核日志。 审核日志是与内幕风险管理策略关联的所有活动的摘要，也是策略更改的任何时间的摘要。
 
 有关启用审核的分步说明，请参阅[打开或关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。 启用审核后，会显示一条消息，指出正在准备审核日志，并且您可以在准备完成后的几小时内运行搜索。 您只需执行一次此操作。 有关使用审核日志的详细信息，请参阅[Search the audit log](search-the-audit-log-in-security-and-compliance.md)。
 
-## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步骤3（可选）：配置模板的先决条件
+## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步骤 3 (可选) ：配置模板的必备组件
 
 某些内幕风险管理模板具有必须为策略指示器配置的先决条件，以生成相关的活动通知。 根据计划为组织配置的策略配置适当的先决条件。
 
 ### <a name="configure-microsoft-365-hr-connector"></a>配置 Microsoft 365 HR 连接器
 
-内幕风险管理支持导入从第三方风险管理和人力资源平台导入的用户和日志数据。 Microsoft 365 人力资源（HR）数据连接器允许您从 CSV 文件中提取人力资源数据，包括用户终止和上次雇用日期。 此数据可帮助推动内幕风险管理策略中的警报指示器，这是在组织中配置完全风险管理覆盖范围的重要部分。
+内幕风险管理支持导入从第三方风险管理和人力资源平台导入的用户和日志数据。 Microsoft 365 人力资源 (HR) 数据连接器允许您从 CSV 文件中提取人力资源数据，包括用户终止和上次雇用日期。 此数据可帮助推动内幕风险管理策略中的警报指示器，这是在组织中配置完全风险管理覆盖范围的重要部分。
 
 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[设置连接器以导入 HR 数据](import-hr-data.md)主题。 配置 HR 连接器后，请返回到这些配置步骤。
 
 >[!IMPORTANT]
 >如果使用 "*传出员工数据失窃*" 模板配置策略，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
 
-### <a name="configure-data-loss-prevention-dlp-policies"></a>配置数据丢失防护（DLP）策略
+### <a name="configure-data-loss-prevention-dlp-policies"></a>配置数据丢失防护 (DLP) 策略
 
 内幕风险管理支持使用 DLP 策略来帮助将敏感信息的有意或无意暴露给不需要的高严重性级别 DLP 警报。 使用**数据泄露**模板配置内幕风险管理策略时，必须向策略分配特定的 DLP 策略。
 
@@ -107,7 +107,7 @@ ms.locfileid: "44515759"
 
 有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。 配置 DLP 策略后，请返回到这些配置步骤。
 
-## <a name="step-4-required-configure-insider-risk-settings"></a>步骤4（必需）：配置内幕风险设置
+## <a name="step-4-required-configure-insider-risk-settings"></a>步骤 4 (必需) ：配置内部人员风险设置
 
 [内幕风险设置](insider-risk-management-policies.md#policy-settings)适用于所有内幕风险管理策略，而不管您在创建策略时选择的模板如何。 设置是使用位于所有内幕风险管理选项卡顶部的 "**内幕风险设置**" 控件配置的。 这些设置控制隐私、指示器、监视窗口和智能检测。
 
@@ -124,23 +124,23 @@ ms.locfileid: "44515759"
 5. 在 "**智能检测**" 页面上，为内幕风险策略配置[异常检测、攻击性语言检测和警报卷级别](insider-risk-management-policies.md#intelligent-detections)。
 6. 选择 "**保存**" 为您的内幕风险策略启用这些设置。
 
-## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步骤5（必需）：创建内幕风险管理策略
+## <a name="step-5-required-create-an-insider-risk-management-policy"></a>第5步 (所需) ：创建内部人员风险管理策略
 
 内幕风险管理策略包括分配的用户并定义为通知配置的风险指示器类型。 在活动可以触发通知之前，必须配置策略。
 
 1. 在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中，转到 "**内幕风险管理**"，然后选择 "**策略**" 选项卡。
 2. 选择 "**创建策略**" 以打开策略向导
 3. 在 "**新建内幕风险策略**" 页上，填写下列字段：
-    - **Name （必需）**：输入策略的友好名称。
-    - **Description （可选）**：输入策略的说明。
-    - **选择 "策略模板（必需）**"：选择一个[策略模板](insider-risk-management-policies.md#policy-templates)来定义风险指示器的类型由策略监视。
+    - **Name (必需的) **：为策略输入一个友好名称。
+    - **Description (可选) **：输入策略的说明。
+    - **选择 "策略模板" (必需的) **：选择一个[策略模板](insider-risk-management-policies.md#policy-templates)以定义由策略监视的风险指示器类型。
 
     >[!IMPORTANT]
     >如果选择 "*数据泄漏*" 模板，则需要至少配置一个您稍后将在向导中分配的 DLP 策略。 如果选择 "*传出员工数据失窃*" 模板，则需要将 HR 连接器配置为使用策略模板的 "完全信号检测" 功能。
 
 4. 选择 "**下一步**" 继续。
 5. 在 "**用户**" 页上，选择 "**添加用户或组**" 以定义将哪些用户包括在策略中，或者选择 "**所有用户" 和 "已启用邮件的组**" 复选框。 选择 "**下一步**" 继续。
-6. 在 "**指定要设置优先顺序的内容（可选）** " 页上，您可以为有风险的用户活动分配优先级的源：
+6. 在 "**指定要优先处理哪些内容 (可选的) ** " 页上，您可以为有风险的用户活动分配优先级的源：
     - **SharePoint 网站**：选择 "**添加 SharePoint 网站**"，然后选择要设置优先顺序的 SharePoint 组织。 例如， *"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感信息类型**：选择 "**添加敏感信息类型**"，然后选择要设置优先级的敏感度类型。 例如， *"美国银行帐户号码"* 和 *"信用卡号码"*。
     - **敏感度标签**：选择 "**添加灵敏度标签**"，然后选择要设置优先顺序的标签。 例如， *"保密"* 和 *"Secret"*。

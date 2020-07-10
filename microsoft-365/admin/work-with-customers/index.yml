@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 与客户合作
-summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+summary: 为帮助管理员执行常见任务，请查看这些资源，或查看左侧的导航窗格获得完整列表。
 metadata:
   title: 与客户合作
-  description: 共享文档并使用团队协作和开会
+  description: 共享文档和使用 Teams 进行协作和会谈
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785456"
@@ -30,11 +30,11 @@ landingContent:
     links:
     - text: 创建包含来宾用户的团队
       url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-    - text: 将团队加入为来宾
+    - text: 作为来宾加入团队
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
-    - text: 与员工和客户聊天
+    - text: 与客户和员工聊天
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: 安排与来宾用户的团队会议
+    - text: 安排有来宾用户参加的 Teams 会议
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
     - text: 加入有来宾用户参加的 Teams 会议
       url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
