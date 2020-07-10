@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: 本文提供有关管理用户设置的信息。
-ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780201"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079999"
 ---
 # <a name="user-email-settings"></a>用户电子邮件设置
 
@@ -44,4 +44,4 @@ ms.locfileid: "44780201"
 
 > [!NOTE]
 >
-> <sup>1</sup> 只能管理完全托管在 Office 365 中的邮箱电子邮件应用程序。 无法使用此功能管理本地托管邮箱的电子邮件应用。
+> <sup>1</sup> 只能管理完全托管在 Microsoft 365 中的邮箱电子邮件应用。 无法使用此功能管理本地托管邮箱的电子邮件应用。

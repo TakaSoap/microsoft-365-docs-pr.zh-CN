@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 入门
-summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+summary: 请查看这些资源，帮助管理员执行常见任务，或查看左侧的导航窗格获得完整列表。
 metadata:
   title: 入门
-  description: 设置你的订阅和电子邮件。 添加用户和安装应用程序
+  description: 设置订阅和电子邮件。 添加用户和安装应用
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44779841"
@@ -22,17 +22,17 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 选择计划并注册 Microsoft 365
+    - text: 选择计划和注册 Microsoft 365
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
-    - text: 注册并设置 Microsoft 商业基本版
+    - text: 注册和设置 Microsoft 商业基本版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: 注册 Microsoft 商业标准
+    - text: 注册 Microsoft 商业标准版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
     - text: 注册 Microsoft 商业高级版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-- title: 引导设置
+- title: 引导式设置
   linkLists:
   - linkListType: overview
     links:
@@ -42,11 +42,11 @@ landingContent:
     links:
     - text: 设置 Microsoft 商业基本版
       url: setup-business-basic.md
-    - text: 设置 Microsoft 商业标准
+    - text: 设置 Microsoft 商业标准版
       url: setup-business-standard.md
     - text: 设置 Microsoft 商业高级版
       url: ../../business/set-up.md
-    - text: 设置 Microsoft 应用程序的商业版
+    - text: 设置 Microsoft 商业应用版
       url: setup-apps-for-business.md
 - title: 完成设置
   linkLists:
@@ -54,15 +54,15 @@ landingContent:
     links:
     - text: 迁移数据
       url: migrate-email-and-contacts-admin.md
-    - text: 安装应用程序
+    - text: 安装应用
       url: install-applications.md
     - text: 推出 Teams
       url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
   - linkListType: video
     links:
-    - text: 在 Android 上安装应用程序
+    - text: 在 Android 上安装应用
       url: https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236
-    - text: 在 iOS 上安装应用程序
+    - text: 在 iOS 上安装应用
       url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
     - text: 培训用户
       url: https://support.microsoft.com/training

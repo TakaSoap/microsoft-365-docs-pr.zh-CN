@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理数据和服务
-summary: 请查看这些资源以帮助管理员执行常见任务，或查看左侧的导航窗格查看完整列表。
+summary: 请查看这些资源，帮助管理员执行常见任务，或查看左侧的导航窗格获得完整列表。
 metadata:
   title: 管理数据和服务
-  description: 监视服务的状态、备份数据、安装外接程序并升级到最新的应用程序
+  description: 监视服务状态、备份数据、安装加载项，以及升级到最新应用
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,12 +13,12 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780093"
 landingContent:
-- title: 监视我们的服务的状态
+- title: 监视服务状态
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -42,11 +42,11 @@ landingContent:
     links:
     - text: 访问并备份前用户的数据
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: 设置电子邮件保留期（Microsoft 365 商业高级版）
+    - text: 设置电子邮件保留（Microsoft 365 商业高级版）
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
     - text: 从设备中删除公司数据（Microsoft 365 商业高级版）
       url: ../../business/remove-company-data.md
-- title: 管理外接程序和应用程序
+- title: 管理加载项和应用
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -62,9 +62,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 团队管理文档
+    - text: Microsoft Teams 管理文档
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: 同时使用 Outlook 和团队
+    - text: 结合使用 Outlook 和 Teams
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
@@ -76,11 +76,11 @@ landingContent:
     links:
     - text: 面向 IT 专业人员和管理员的 SharePoint 文档
       url: https://docs.microsoft.com/sharepoint/
-    - text: 适用于 IT 专业人员和管理员的 OneDrive 文档
+    - text: 面向 IT 专业人员和管理员的 OneDrive 文档
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:
     - text: 管理 OneDrive 和 SharePoint 中的共享
       url: https://docs.microsoft.com/onedrive/manage-sharing
-    - text: 创建和管理网站。
+    - text: 创建和管理网站
       url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center

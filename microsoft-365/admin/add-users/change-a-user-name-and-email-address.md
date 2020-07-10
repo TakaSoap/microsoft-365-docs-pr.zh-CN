@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fedc1532bfec246392180d386a6960dbb08bd137
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936523"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079709"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -50,7 +50,7 @@ ms.locfileid: "44936523"
     
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
     
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Office 365，则可使用下拉列表为新电子邮件别名选择域。 
+3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，请使用下拉列表为新电子邮件别名选择域。 
 
 4. 选择“**保存更改**”。
 
@@ -63,7 +63,7 @@ ms.locfileid: "44936523"
 
 2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
 
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。
+3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，则可使用下拉列表为新电子邮件别名选择域。
 
 4. 选择“**保存**”。
 
@@ -75,7 +75,7 @@ ms.locfileid: "44936523"
 
 2. 选择该用户。 在浮出窗格中的“**用户名/电子邮件**”旁，选择“**编辑**”。
 
-3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Office 365，可以使用下拉列表，选择新电子邮件别名的域。
+3. 在第一个框中，键入新电子邮件地址的第一部分。 如果已将自己的域添加到 Microsoft 365，则可使用下拉列表为新电子邮件别名选择域。
 
 4. 选择“**保存**”。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44936523"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -121,7 +121,7 @@ ms.locfileid: "44936523"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -131,7 +131,7 @@ ms.locfileid: "44936523"
  
   - 此更改可能需要一些时间才会生效。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
 
@@ -149,7 +149,7 @@ ms.locfileid: "44936523"
 
 3. 对于要为该用户设置为主要电子邮件地址的地址，选择“**设置为主要电子邮件地址**”。 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     此外，只有全局管理员才能看到此选项。如果没有看到此选项，则表明你不具有更改用户名称和主要电子邮件地址的权限。
   
@@ -159,7 +159,7 @@ ms.locfileid: "44936523"
  
   - 此更改可能需要一些时间才会生效。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - 如果用户使用 Skype for Business Online，需告知用户重新安排其组织召开的所有 Skype for Business Online 会议并通知其需要告知外部联系人以更新旧联系人信息。
 
@@ -234,7 +234,7 @@ Some people might continue to send email to the person's old email address and d
 
 If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 若要修复此问题，请使用 Microsoft 365 管理员凭据登录到[用于 PowerShell 的 Azure Active Directory 模块]( https://go.microsoft.com/fwlink/?LinkId=823193)， 然后使用以下语法： 
   

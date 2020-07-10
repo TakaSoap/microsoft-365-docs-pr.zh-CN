@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以帮助您在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470577"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080099"
 ---
 # <a name="learn-about-records"></a>了解记录
 
@@ -62,7 +62,7 @@ ms.locfileid: "44470577"
 
     有关将保留标签应用于 SharePoint 和 OneDrive 文件夹的详细信息，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
 
-  - **记录无法删除。** 如果用户尝试删除 Exchange 中的记录，相应项会移至“可恢复项”文件夹中，如[如何使用 Exchange 位置的保留策略](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations)中所述。
+  - **记录无法删除。** 如果用户尝试删除 Exchange 中的记录，相应项会移至“可恢复的项目”文件夹中，如[保留策略如何作用于 Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange) 中所述。
 
     如果用户尝试删除 SharePoint 中的记录，将会显示错误，提醒你注意项未删除，仍留在库中。
 

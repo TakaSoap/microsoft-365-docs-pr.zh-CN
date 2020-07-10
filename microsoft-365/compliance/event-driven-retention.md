@@ -20,11 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: f2cf60eac1197ed7be3fd8cbbe69e41a37614f86
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048287"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068121"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
 
@@ -104,17 +105,19 @@ Event-driven retention is typically used as part of a records-management process
 在标签设置中，选择将标签基于**事件**的选项后，将看到“**选择事件类型**”选项。 事件类型就是对要将标签与之相关联的事件的一般说明。
   
 例如，如果创建“产品生存期”事件类型，将创建基于事件的保留标签，标签名称描述了要将标签应用于什么类型的内容（如“产品开发文件”或“产品业务决策记录”）。
-  
+
+选择一种内置事件类型，或自行创建一种类型并选中。
+
 选择事件类型并保存保留标签后，便无法再更改事件类型。
   
 ![用于创建或选择事件类型的选项](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>第 3 步：发布或自动应用基于事件的保留标签
 
-与任何保留标签类似，需要[发布或自动应用](create-retention-labels.md)基于事件的标签，以便将其手动或自动应用到内容。
+与任何保留标签类似，需要[发布或自动应用](create-retention-labels.md)基于事件的标签，以便将其应用于文档或电子邮件。
 
 > [!NOTE]
-> 如果从“**记录管理**” > “**文件计划**”选项卡或“**数据管理**” > “**标签**”选项卡中选择事件驱动的保留标签，“**自动应用标签**”按钮将不可用。
+> 如果从“**记录管理**” > “**文件计划**”选项卡或“**数据管理**” > “**标签**”选项卡中选择基于事件的保留标签，“**自动应用标签**”按钮将不可用。
 > 
 > 请使用以下位置之一的标签或策略列表上方的“**自动应用标签**”选项来代替此按钮：
 > - “**记录管理**” > “**标签策略**”选项卡
@@ -125,7 +128,7 @@ Event-driven retention is typically used as part of a records-management process
 
 ### <a name="step-4-enter-an-asset-id"></a>第 4 步：输入资产 ID
 
-After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
+将基于事件的标签应用于内容后，可为每一项输入资产 ID。 例如，组织可能使用：
   
 - 产品代码：可用于仅保留特定产品的内容。
     
@@ -133,13 +136,13 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - 员工 ID：可用于仅保留特定人员的内容。
     
-资产 ID 只是 SharePoint 和 OneDrive 中的另一种文档属性。 你的组织可能已经使用其他文档属性和 ID 来分类内容。 如果是这样，还可以在创建事件时使用这些属性和值（请参见后面的第 6 步）。 请务必注意，组织必须在文档属性中使用某种属性:值组合，将相应项与事件类型相关联。
+资产 ID 只是 SharePoint 和 OneDrive 中提供的另一种文档属性。 你的组织可能已经使用其他文档属性和 ID 来分类内容。 如果是这样，还可以在创建事件时使用这些属性和值（请参见后面的第 6 步）。 请务必注意，必须在文档属性中使用某种*属性:值*组合，将相应项与事件类型相关联。
   
 ![用于输入资产 ID 的文本框](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>第 5 步：创建事件
 
-当相应事件类型的特定实例（例如，产品的生存期结束）发生时，请转到 Microsoft 365 合规中心内的“**记录管理**” > “**事件**”页，并创建事件。 需要通过创建事件来手动触发事件。
+当相应事件类型的特定实例（例如，产品的生存期结束）发生时，请转到 Microsoft 365 合规中心内的“**记录管理**” > “**事件**”页，并创建事件。 可通过创建事件来手动触发事件。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>第 6 步：选择第 2 步中标签使用的相同事件类型
 
@@ -149,20 +152,19 @@ After an event-driven label is applied to content, you can enter an asset ID for
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>第 7 步：输入关键字或资产 ID
 
-Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all content** with labels of that event type get the same retention date applied to them. 
+现在通过指定 SharePoint 和 OneDrive 内容的资产 ID 或指定 Exchange 内容的关键字，缩小内容的范围。 对于资产 ID，仅具有指定*属性:值*对的内容才会执行保留。 如果未输入资产 ID，具有该事件类型标签的所有内容都将应用相同的保留日期。
+
+例如：如果使用的是资产 ID 属性，请在下方所示的资产 ID 框中输入 `ComplianceAssetID:<value>`。
   
-资产 ID 只是 SharePoint 和 OneDrive 中的另一种文档属性。 如果使用的是资产 ID 属性，需在下方所示的资产 ID 框中输入 `ComplianceAssetID:<value>`。
+组织可能已经对与此事件类型相关的文档应用了其他属性和 ID。 例如，如果需要检测特定产品记录，ID 可能为自定义属性 ProductID 和值“XYZ”的组合。 在此情况下，需在下图所示的资产 ID 框中输入 `ProductID:XYZ`。
   
-组织可能已经对与此事件类型相关的文档应用了其他属性和 ID。 例如，如果需要检测特定产品记录，ID 可能为自定义属性 ProductID 和值“XYZ”的组合。 在此情况下，需在下方所示的资产 ID 框中输入 `ProductID:XYZ`。
-  
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+对于 Exchange 项目，请使用关键字。 你可以通过使用 AND、OR 和 NOT 等搜索运算符来使用查询。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 最后，选择事件发生日期；此日期用作保留期的开始日期。 创建事件后，相应事件日期就会同步到所有具有相应事件类型的保留标签、资产 ID 和关键字的内容。 与任何保留标签一样，这种同步最长可能需要七天才能完成。
   
 ![“事件设置”页](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
-> [!NOTE]
-> 创建事件后，保留设置将对已标记和索引的内容生效。 如果创建事件后将保留标签添加到新内容，则必须创建具有相同详细信息的新事件。
+创建事件后，保留设置将对已标记和索引的内容生效。 如果创建事件后将保留标签添加到新内容，则必须创建具有相同详细信息的新事件。
 
 删除事件不会取消现在对内容生效的保留设置。 若要执行此操作，请创建具有相同详细信息的新事件，但将日期保留为空。 
 
@@ -186,7 +188,7 @@ To get access to the **Events** page, reviewers must be members of a role group 
 
 Microsoft 365 合规性中心可用于手动创建事件，并且不支持在事件发生时自动触发事件。 但是，可以使用 Rest API 自动触发事件。 有关详细信息，请参阅[自动执行基于事件的保留](automate-event-driven-retention.md)。
 
-此外，还可使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 适用于事件驱动保留的 PowerShell cmdlet：
+此外，还可使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 适用于基于事件的保留的 PowerShell cmdlet：
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

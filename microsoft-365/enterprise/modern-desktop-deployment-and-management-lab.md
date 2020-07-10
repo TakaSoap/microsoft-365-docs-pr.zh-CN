@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869852"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45052721"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
 这些实验室旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
 
-强烈建议准备停用 Windows 7 的组织使用此培训，它同时也适用于使用 Windows 10 和 Office 365 专业增强版或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
+强烈建议准备停用 Windows 7 的组织使用此培训，它同时也适用于使用 Windows 10 和 Microsoft 365 企业应用版（以前称为 Office 365 专业增强版）或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -52,12 +52,13 @@ ms.locfileid: "44869852"
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
-详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和配置管理器（版本 1910）的最新版本进行了更新。 
+详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。 
 
 ### <a name="device-and-app-readiness"></a>设备和应用就绪情况
 
   - 桌面分析
   - 新增内容！ 部署和更新新版 Microsoft Edge 
+  - 新增内容！ 安装和配置云管理网关 (CMG) 
   - Internet Explorer 模式 
   - 应用程序防护 
 
@@ -73,6 +74,7 @@ ms.locfileid: "44869852"
   - 使用配置管理器和 Microsoft Intune 进行企业托管部署
   - 使用 Microsoft Intune 进行应用部署和管理
   - 使用适用于企业的 Microsoft Store 进行应用部署和自助式安装
+  - 新增内容！ 安装 Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>用户文件和设置迁移
 
@@ -92,6 +94,7 @@ ms.locfileid: "44869852"
   - Windows Defender 攻击防护
   - Windows Defender 应用程序控制
   - Windows Defender 高级威胁防护
+  - 新增内容！ 终结点安全性 
 
 ### <a name="os-deployment-and-feature-updates"></a>OS 部署和功能更新
 
@@ -105,7 +108,8 @@ ms.locfileid: "44869852"
   - 使用组策略管理 Windows 更新
   - 使用配置管理器和 Intune 服务 Windows 10
   - 使用 Configuration Manager 服务 Microsoft 365 企业应用版
-
+  - 新增内容！ 有关 Configuration Manager 和 Intune 的 Office 更新
+  
 ### <a name="new-windows-virtual-desktop"></a>新增内容！ Windows 虚拟桌面
   - Windows 虚拟桌面：准备、部署、优化 
 
