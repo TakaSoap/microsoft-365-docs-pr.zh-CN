@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754792"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101643"
 ---
-# <a name="microsoft-productivity-score-preview"></a>Microsoft 工作效率分数（预览）
+# <a name="microsoft-productivity-score-preview"></a> (预览的 Microsoft 工作效率分数) 
 
 生产效率分数可帮助组织转换工作方式，并了解有关用户如何使用 Microsoft 365 以及支持它们的技术体验方面的见解。 分数反映了组织在员工和技术经验方面的绩效，并将您的成绩与您的组织（如您的组织）进行比较。
 
@@ -53,11 +53,11 @@ ms.locfileid: "44754792"
 
 ### <a name="score-categories"></a>分数类别 
 
-- 内容协作（100点）
-- 通信（100磅）
-- 移动（100点）
-- 终结点分析（100点）
-- 网络连接（100点）
+- 内容协作 (100 点) 
+-  (100 磅的通信) 
+- 移动 (100 点) 
+- 终结点分析 (100 点) 
+- 网络连接 (100 磅) 
 - **总可能值 = 500 磅**
  
  在每个类别中，我们都确定主要活动的模式，这些是有关用户如何使用 Microsoft 365 产品在平台之间进行协作、通信和工作的指标。 我们为关键活动提供了28天和180天的视图。 我们还提供不属于分数计算的支持指标，但对于帮助您确定可对其进行驱动更改的基础行为和设置，这一点非常重要。
@@ -66,7 +66,7 @@ ms.locfileid: "44754792"
 
 生产效率分数包括来自 Exchange、SharePoint、OneDrive、工作组、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 的数据。
 
-你的得分每天更新，并反映最近28至180天（包括当前日期）内完成的用户操作。
+您的分数每日更新一次，并反映在最近28至180天内完成的用户操作 (包括当前日期) 。
 
 
 ## <a name="pre-requisites"></a>先决条件 
@@ -91,7 +91,7 @@ ms.locfileid: "44754792"
 
 ![工作效率分数主页](../../media/pslanding.png)
 
-**您的分数**显示为百分比值和点，以便您可以看到点（分子）和最大可能的点（分母）。
+**您的分数**显示为百分比值和磅值，以便您可以查看 (分子) 的要点以及 (分母) 的最大可能分数。
 
 **对等基准**使您能够将您的成绩与像你的组织进行比较。 对于 "员工体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
 
@@ -111,7 +111,7 @@ ms.locfileid: "44754792"
 
 ### <a name="content-collaboration-details"></a>内容协作详细信息
 
-内容协作的主要洞察力是在线创建、阅读和协作（编辑和共享）的人员数量。 这些措施很重要，因为研究表明当人们使用联机文件进行协作时，每个人平均每周保存100分钟或几乎2小时。
+内容协作的主要洞察力是创建、阅读和协作 (编辑和共享) online 的人员数量。 这些措施很重要，因为研究表明当人们使用联机文件进行协作时，每个人平均每周保存100分钟或几乎2小时。
 
 我们将内容协作定义为一个人，创建和共享 Office 文件，然后至少是其他人对其进行编辑。 
 
@@ -145,7 +145,7 @@ ms.locfileid: "44754792"
 
 - 用户调整为在家工作时对工作寿命余额的影响。 
 
-- 如果用户有效地使用会议，以及他们是如何 
+- 如果远程会议支持有效的决策制定。
 
 [了解有关业务连续性报告的详细信息](https://aka.ms/bcrps)
 

@@ -20,22 +20,32 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936439"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102868"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
-集中部署是大多数客户将 Office 外接程序部署到组织内的用户和组的建议功能和功能最丰富的方法。 如果你是管理员，请使用本指南来确定你的租户和用户是否符合要求，以便你可以使用集中部署。
-集中部署支持三个桌面平台 Windows、Mac 和 Online Office 应用。 集中部署还支持 iOS 和 Android （仅适用于 Outlook 移动外接程序）。
+集中部署是大多数客户将 Office 外接程序部署到组织内的用户和组的建议功能和功能最丰富的方法。 如果您是管理员，请使用本指南来确定您的组织和用户是否满足要求，以便您可以使用集中部署。
+
+集中部署有以下优点：
+  
+- 全局管理员可以将外接程序直接分配给用户，也可以通过组或组织中的所有人将其分配给多个用户。
+    
+- 当相关的 Office 应用程序启动时，加载项会自动下载。 如果外接程序支持外接程序命令，则外接程序将自动显示在 Office 应用程序中的功能区上。
+    
+- 如果管理员关闭或删除加载项，或者从 Azure Active Directory 或将外接程序分配到的组中删除了用户，则不再向用户显示外接程序。
+
+集中部署支持三个桌面平台 Windows、Mac 和 Online Office 应用。 集中部署还支持仅) 的 iOS 和 Android (Outlook 移动外接程序。
+
 加载项最长可能需要24小时才能为所有用户显示客户端。
   
 ## <a name="requirements"></a>Requirements
 
-集中部署加载项需要用户使用适用于企业的 Microsoft 365 应用程序（并使用组织 ID 登录 Office），并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
+集中部署加载项需要用户使用 Microsoft 365 应用程序的企业版 (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[集中部署兼容性检查器](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -57,8 +67,8 @@ ms.locfileid: "44936439"
 - 对于 Outlook，您的用户必须使用以下各项之一： 
   - 适用于企业的 Microsoft 365 应用版本1701或更高版本。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更高版本。
-  - Office Professional Plus 2016 （MSI）或 Office Standard 2016 （MSI）的版本16.0.4494.1000 或更高版本\*
-  - Office Professional Plus 2013 （MSI）或 Office Standard 2013 （MSI）的版本15.0.4937.1000 或更高版本\*
+  - 版本16.0.4494.1000 或更高版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
+  - 版本15.0.4937.1000 或更高版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*
   - 版本16.0.9318.1000 或更高版本的 Office 2016 for Mac 
 - 版本2.75.0 或更高版本的 Outlook mobile for iOS 
 - 适用于 Android 的 Outlook mobile 版本2.2.145 或更高版本 
@@ -96,19 +106,19 @@ Check with your organization's Exchange admin to find out which configuration is
     
 2. 运行以下命令：
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. 运行**CompatabilityCheck**命令：
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   这将提示您输入*_TenantDomain_* （例如， *TailspinToysIncorporated。 </span>com*）和*_TenantAdmin_* 凭据（使用您的全局管理员凭据），然后请求许可。
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   此命令将提示您输入*_TenantDomain_* (例如， *TailspinToysIncorporated。 </span>com*) 和*_TenantAdmin_* 凭据 (使用您的全局管理员凭据) ，然后请求许可。
     
-> [!NOTE]
-> 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
+   > [!NOTE]
+   > 检查器可能需要数分钟或数小时时间来完成检查，具体取决于租户中的用户数。 
   
 工具运行完毕后，会生成逗号分隔格式的输出文件 (.csv)。 默认情况下，该文件保存到**C:\windows\system32** 。 输出文件包含以下信息：
   
@@ -154,11 +164,11 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
   
 ### <a name="contacting-microsoft-for-support"></a>联系 Microsoft 以获取支持
 
-如果您或您的用户在使用 Office 应用程序（Word、Excel 等）中加载外接程序时遇到问题，则可能需要与 Microsoft 支持人员联系（[了解如何](../contact-support-for-business-products.md)）。 在支持票证中提供有关你的 Microsoft 365 环境的以下信息。
+如果您或您的用户在使用 Office 应用程序时加载加载项时遇到问题 (Word、Excel 等 ) （已集中部署），您可能需要联系 Microsoft 支持部门 ([了解](../contact-support-for-business-products.md)) 。 在支持票证中提供有关你的 Microsoft 365 环境的以下信息。
   
 |**平台**|**调式信息**|
 |:-----|:-----|
 |Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx)）  <br/>  CorrelationID. 查看其中一个 office 页面的来源，查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  客户端应用程序的内部版本号（最好是从**文件/帐户**中的屏幕截图）  <br/> |
+|丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  客户端应用程序的内部版本号 (最好是从**文件/帐户**) 中的屏幕截图  <br/> |
    
 

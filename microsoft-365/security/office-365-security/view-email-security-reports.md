@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 26dfa8ec046122dce28582fb3d7b395843572a88
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035696"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102895"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -34,9 +34,11 @@ ms.locfileid: "45035696"
 ## <a name="compromised-users-report"></a>已泄露用户报告
 
 > [!NOTE]
-> 此报告在具有 Exchange Online 邮箱的 Microsoft 365 组织中可用。 在没有 Exchange Online 邮箱的独立 Exchange Online Protection （EOP）组织中不可用。
+> 此报告在具有 Exchange Online 邮箱的 Microsoft 365 组织中可用。 在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中不提供此功能。
 
 "已**泄露的用户**" 报告显示在最近7天内被标记为**可疑**或**受限制**的用户帐户数。 在上述任一状态中的帐户都有问题或甚至已损坏。 通过频繁使用，您可以使用报告发现可疑或受限帐户中的峰值、甚至是趋势。 有关受损用户的详细信息，请参阅[响应已泄露的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+
+!["报告" 仪表板中的 "已损坏用户" 小部件](../../media/compromised-users-report-widget.png)
 
 聚合视图显示最近90天的数据，详细信息视图显示最近30天的数据。
 
@@ -50,7 +52,7 @@ ms.locfileid: "45035696"
 
 - **受限**：由于高度可疑的模式，用户帐户受到限制，无法发送电子邮件。
 
-![受到威胁的用户在 Microsoft 365 中显示的报告](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![已损坏的用户报告中的报告视图](../../media/compromised-users-report-activity-view.png)
 
 如果单击 "**查看详细信息表**"，则可以看到以下详细信息：
 
@@ -62,7 +64,7 @@ ms.locfileid: "45035696"
 
 ## <a name="encryption-report"></a>加密报告
 
-**加密报告**在 EOP 中可用（使用 exchange online 中的邮箱订阅或独立 EOP，无需 Exchange online 邮箱）。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。 例如：
+在 Exchange Online 或独立 EOP 中邮箱的 EOP (订阅中提供**加密报告**，而无需 Exchange online 邮箱) 。 您组织的安全团队可以使用此报告中的信息来标识模式，并主动应用或调整敏感电子邮件的策略。 例如：
 
 - 如果您看到用户加密了大量的电子邮件，则可能需要添加加密策略以对某些用例自动进行加密。 有关详细信息，请参阅[在 Microsoft 365 中定义用于加密电子邮件的邮件流规则](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 
@@ -139,7 +141,7 @@ ms.locfileid: "45035696"
 
 ## <a name="malware-detection-in-email-report"></a>电子邮件中的恶意软件检测报告
 
-"**电子邮件中的恶意软件检测**" 报告显示传入和传出电子邮件（由 Exchange Online PROTECTION 或 EOP 检测到的恶意软件）中的恶意软件检测的相关信息。 有关 EOP 中的恶意软件保护的详细信息，请参阅[EOP 中的反恶意软件保护](anti-malware-protection.md)。
+"**电子邮件中的恶意软件检测**" 报告显示在 Exchange Online PROTECTION 或 EOP) 检测到的传入和传出电子邮件中的恶意软件检测 (的相关信息。 有关 EOP 中的恶意软件保护的详细信息，请参阅[EOP 中的反恶意软件保护](anti-malware-protection.md)。
 
  聚合视图筛选器允许90天，而详细信息表筛选器仅允许10天。
 
@@ -169,7 +171,7 @@ ms.locfileid: "45035696"
 
 ## <a name="sent-and-received-email-report"></a>发送和接收的电子邮件报告
 
-**发送和接收的电子邮件**报告包含有关恶意软件、垃圾邮件、邮件流规则（也称为传输规则）的信息，以及在电子邮件进入服务后进行的高级恶意软件检测。 有关详细信息，请参阅[发送和接收的电子邮件报告](view-mail-flow-reports.md#sent-and-received-email-report)。
+**发送和接收的电子邮件**报告包含有关恶意软件、垃圾邮件、邮件流规则的信息 (也称为传输规则) ，以及在电子邮件进入服务后进行的高级恶意软件检测。 有关详细信息，请参阅[发送和接收的电子邮件报告](view-mail-flow-reports.md#sent-and-received-email-report)。
 
 ## <a name="spam-detections-report"></a>垃圾邮件检测报告
 
@@ -192,9 +194,9 @@ ms.locfileid: "45035696"
   - **筛选出的垃圾邮件内容**
   - **垃圾邮件 IP 阻止**
   - **垃圾邮件信封块**
-  - **垃圾邮件 DBEB 筛选器**：基于目录的边缘阻止（DBEB）
+  - **垃圾邮件 DBEB 筛选器**：基于目录的边缘阻止 (DBEB) 
 
-  当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以看到该日已阻止的项目数，以及这些项目的分类方式。
+  当您悬停在图表中 (数据点) 的某一天时，您可以看到该日已阻止的项目数，以及这些项目的分类方式。
 
   ![垃圾邮件检测报告中的操作视图](../../media/spam-detections-report-action-view.png)
 
@@ -232,7 +234,7 @@ ms.locfileid: "45035696"
 
 ## <a name="spoof-detections-report"></a>欺骗检测报告
 
-**欺骗检测**报告显示检测到的欺骗邮件的数量以及这些邮件被视为 "好" （欺骗邮件出于合理商业原因而完成）。 有关哄骗的详细信息，请参阅[EOP 中的反欺骗保护](anti-spoofing-protection.md)。
+**欺骗检测**报告显示检测到的欺骗邮件和这些邮件的数目，这些邮件被视为 "好" (欺骗邮件出于) 的合法商业原因而完成。 有关哄骗的详细信息，请参阅[EOP 中的反欺骗保护](anti-spoofing-protection.md)。
 
 报告的聚合视图允许在筛选过程中90天，而详细信息视图只允许进行10天的筛选。
 
@@ -240,7 +242,7 @@ ms.locfileid: "45035696"
 
 !["报告" 仪表板中的欺骗检测小部件](../../media/spoof-detections-widget.png)
 
-当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以看到通过的欺骗邮件的数量。
+当鼠标悬停在图表中 (数据点) 时，您可以看到通过的欺骗邮件的数量。
 
 可以通过单击 "**筛选**器" 并选择以下一个或多个值来筛选图表和详细信息表：
 
@@ -273,7 +275,7 @@ ms.locfileid: "45035696"
 
 !["报告" 仪表板中的 "威胁防护状态" 小部件](../../media/threat-protection-status-report-widget.png)
 
-默认情况下，图表显示过去7天的数据。 如果单击 "**筛选器**"，则可以选择一个90天的日期范围（试用订阅可能限制为30天）。 [！说明] [！说明] 详细信息表视图允许筛选30天。
+默认情况下，图表显示过去7天的数据。 如果单击 "**筛选器**"，则可以选择一个90天的日期范围 (试用订阅可能限制为30天) 。 [！说明] [！说明] 详细信息表视图允许筛选30天。
 
 ### <a name="report-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的报告视图
 
@@ -330,7 +332,7 @@ ms.locfileid: "45035696"
   - **安全附件**<sup>1</sup>
   - **反网络钓鱼**
   - **反垃圾邮件**
-  - **邮件流规则**（也称为传输规则）
+  - **邮件流规则** (也称为传输规则) 
   - **其他**
 
   ![威胁防护状态报告中的仿冒电子邮件的策略类型视图](../../media/threat-protection-status-report-phishing-policy-type-view.png)
@@ -351,13 +353,13 @@ ms.locfileid: "45035696"
 
 仅<sup>1</sup>个 OFFICE 365 ATP
 
-<sup>2</sup> 0 小时自动清除（ZAP）在独立 EOP 中不可用（它仅适用于 Exchange Online 邮箱）。
+<sup>2</sup>个零小时自动清除 (ZAP) 在独立 EOP 中不可用 (它仅适用于 Exchange Online 邮箱) 。
 
 如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
 - **开始日期**和**结束日期**
 - 检测值
-- **受保护者**（仅限 OFFICE 365 ATP）： **ATP**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
+- **受** (OFFICE 365 ATP) ： **atp**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的详细信息表格视图
 
@@ -386,7 +388,7 @@ ms.locfileid: "45035696"
 
 - **开始日期**和**结束日期**
 - 检测值
-- **受保护者**（仅限 OFFICE 365 ATP）： **ATP**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
+- **受** (OFFICE 365 ATP) ： **atp**或**EOP**。 请注意，"可筛选" 属性在**View data by： Content \> 恶意软件**中不可用。
 
 ## <a name="top-malware-report"></a>主要恶意软件报告
 
@@ -410,7 +412,7 @@ ms.locfileid: "45035696"
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
 > [!NOTE]
-> 此报告仅适用于 Office 365 高级威胁防护（ATP）。 例如，Microsoft 365 E5 订阅，或 ATP 计划1或 ATP 计划2加载项。
+> 此报告仅适用于 Office 365 高级威胁防护 (ATP) 。 例如，Microsoft 365 E5 订阅，或 ATP 计划1或 ATP 计划2加载项。
 
 **Url 威胁防护报告**提供了检测到的威胁的汇总和趋势视图，以及对 URL 单击执行的操作作为[ATP 安全链接](atp-safe-links.md)的一部分。 此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不**跟踪用户点击**" 选项。
 
@@ -426,12 +428,12 @@ ms.locfileid: "45035696"
   - **阻止并单击**
   - **在扫描过程中单击**
 
-  单击指示用户已通过阻止页面单击到恶意网站（管理员可以禁用 "在安全链接策略中单击"）。
+  单击指示用户已通过阻止页面单击了恶意网站， (管理员可以禁用 "安全链接策略") 中的 "单击"。
 
   如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
   - **开始日期**和**结束日期**
-  - 可用的单击保护操作，以及**允许**查看所有 URL 单击的信息的值（不只是阻止单击）。
+  - 可用的单击保护操作，以及**允许**查看所有 URL 的信息的值。单击 " (不只是被阻止" 单击 ") "。
 
   ![URL 单击 URL 威胁防护报告中的 "保护操作" 视图](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -490,7 +492,7 @@ ms.locfileid: "45035696"
 
 - 在安全 & 合规性中心中，您必须是下列角色组之一的成员：
 
-  -组织管理-安全管理员（也可以在[Azure Active Directory 管理中心](https://aad.portal.azure.com)中执行此操作-安全读取器
+  -组织管理-安全管理员 (你也可以在[Azure Active Directory 管理中心](https://aad.portal.azure.com)中执行此操作-安全读者
 
   有关详细信息，请参阅[安全与合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936535"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101667"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通信合规性
 
@@ -53,7 +53,7 @@ Microsoft 365 中的通信合规性策略可帮助您解决与合规性、内部
 
 - **合规性**
 
-    大多数组织必须符合其正常操作过程中的某些类型的法规遵从性标准。 这些法规通常要求组织为适合其行业的邮件服务实施某种类型的监督或监督过程。 金融行业规章颁发机构（FINRA）规则3110是一个很好的示例，它是组织实施监督过程以扫描员工通信以及它所参与的企业类型的一个很好的示例。 另一个示例可能是查看组织中的经纪人通信以防止潜在的金钱 laundering、内幕交易、collusion 或 bribery 活动的需要。 通过提供扫描和报告公司通信的过程，通信合规性策略可以帮助您的组织满足这些要求。 有关对金融组织的支持的详细信息，请参阅[美国银行和资金市场的关键合规性和安全注意事项](../solutions/financial-services-secure-collaboration.md)。
+    大多数组织必须符合其正常操作过程中的某些类型的法规遵从性标准。 这些法规通常要求组织为适合其行业的邮件服务实施某种类型的监督或监督过程。 金融行业监管机构 (FINRA) 规则3110是一个很好的示例，即组织实施监督过程以扫描员工通信以及它所参与的企业类型的一个很好的示例。 另一个示例可能是查看组织中的经纪人通信以防止潜在的金钱 laundering、内幕交易、collusion 或 bribery 活动的需要。 通过提供扫描和报告公司通信的过程，通信合规性策略可以帮助您的组织满足这些要求。 有关对金融组织的支持的详细信息，请参阅[美国银行和资金市场的关键合规性和安全注意事项](../solutions/financial-services-secure-collaboration.md)。
 
 ## <a name="new-enhancements"></a>新的增强功能
 
@@ -101,7 +101,7 @@ Microsoft 365 中的通信合规性建立在[Office 365 中的监督策略](supe
 - **Exchange online**：在 Microsoft 365 组织中的[exchange online](https://docs.microsoft.com/Exchange/exchange-online)上托管的所有邮箱都符合扫描条件。 与通信合规性策略条件匹配的电子邮件和附件可立即用于监视和合规性报告。 Exchange Online 现在是一个可选的源通道，并且在通信合规性策略中不再需要。
 - **Yammer**：通信合规性策略支持[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的专用邮件和公共社区对话。 Yammer 是一个可选的频道，并且必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)以支持邮件和附件的扫描。
 - **Skype For Business online**：通信合规性策略支持在[Skype for business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中扫描聊天通信和关联的附件。
-- **第三方来源**：您可以从[第三方来源](archiving-third-party-data.md)扫描邮件，以获取在 Microsoft 365 组织中导入到邮箱中的数据。 通信合规性支持与几个流行平台（包括即时 Bloomberg、Facebook、Twitter 和其他平台）的连接。
+- **第三方来源**：您可以从[第三方来源](archiving-third-party-data.md)扫描邮件，以获取在 Microsoft 365 组织中导入到邮箱中的数据。 通信合规性支持与多个流行平台（包括即时 Bloomberg 和其他平台）的连接。
 
 若要了解有关通信合规性策略中的邮件传递通道支持的详细信息，请参阅[支持的通信类型](communication-compliance-feature-reference.md#supported-communication-types)。
 

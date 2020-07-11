@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看有关从 Microsoft 365 管理中心进行集中部署的常见问题解答。
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083558"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102880"
 ---
 # <a name="centralized-deployment-faq"></a>集中部署常见问题解答
 
-通过集中部署，Office 365 管理员可以将 Office 外接程序（Word、Excel、PowerPoint 和 Outlook）部署到组织内的用户和组，前提是组织满足本文中所述的使用集中部署的所有要求。   
+通过集中部署，Office 365 管理员可以将 Office 外接程序 (Word、Excel、PowerPoint 和 Outlook) 部署到组织内的用户和组，前提是该组织满足本文中所述的使用集中部署的所有要求。   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>如何知道我的组织是否设置了集中式部署？  
 
-集中部署加载项需要用户将 Microsoft 365 应用程序用于企业（并使用组织的登录凭据登录到 Office）并拥有 Exchange Online 邮箱。 你的订阅目录必须在 Azure Active Directory 中或联合到 Azure Active Directory。  
+集中部署加载项需要用户使用 Microsoft 365 应用程序的企业版 (并使用其组织的登录凭据登录到 Office) 并拥有 Exchange Online 邮箱。 你的订阅目录必须在 Azure Active Directory 中或联合到 Azure Active Directory。  
  
 仅联机邮箱支持集中部署。 它不支持部署到本地 Exchange 邮箱。
- 
+
 您可以使用[集中部署兼容性检查器](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)   来确定您的订阅是否符合条件。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>如何将加载项用户分配与集中部署进行定位？  
@@ -54,39 +54,41 @@ ms.locfileid: "45083558"
 
 为了方便地将外接程序部署到用户、组或整个组织，我们建议管理员使用集中部署。
 
-有关管理用户访问的详细信息，请参阅 </br>[通过在所有客户端（Outlook 除外）中关闭 Office 应用商店来阻止外接程序下载](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) </br>[指定可以安装和管理适用于 Outlook 的外接程序的管理员和用户](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN)。
+有关管理用户访问的详细信息，请参阅：
+ - [通过在除 Outlook) 之外的所有客户端中关闭 Office 应用商店来阻止加载项下载 (](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [指定可安装和管理 Outlook 加载项的管理员和用户](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>集中部署是否为管理员提供了选择 Outlook 外接程序的部署方法的灵活性？  
 
 是。 集中部署为管理员提供了在加载项部署过程中选择 Outlook 外接程序的三种部署方法之一的灵活性：
 
-**固定（默认值）**  将自动向分配的用户部署加载项，并且无法将其删除。  
+**固定 (默认) **  将自动向分配的用户部署加载项，并且无法将其删除。  
  
-**可用**用户可以通过选择 "家庭 > 获取更多加载项 > 管理员管理" 来在 Outlook 中安装外接程序。   
+**可用**用户可以通过选择 "**家庭 > 获取更多加载项 > 管理员管理**" 来在 Outlook 中安装外接程序。
  
 **可选**加载项将自动部署到分配的用户，但可以选择将其删除。  
     
-## <a name="can-admins-update-line-of-business-lob-add-ins"></a>管理员是否可以更新业务线（LOB）加载项？  
+## <a name="can-admins-update-line-of-business-lob-add-ins"></a>管理员是否可以更新业务线 (LOB) 外接程序？  
 
 是。 管理员可以上传新的清单文件，以支持管理员部署的 LOB 外接程序的元数据更改。下次 Office 应用程序启动时，外接程序会更新。 Web 应用程序可以随时更改。  
  
-有关详细信息，请参阅[业务线外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins)。  
+有关详细信息，请参阅[业务线外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理员是否可以关闭外接程序？  
 
 是。 管理员可以打开或关闭他们为 Microsoft 管理中心中的所有用户部署的外接程序。
 
-有关详细信息，请参阅[外接程序状态](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states)。  
+有关详细信息，请参阅[外接程序状态](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>是否可以管理员删除或删除加载项？
 
 是。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。
 
-有关详细信息，请参阅[删除外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in)。 
+有关详细信息，请参阅[删除外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理员是否可以使用集中部署从 Office 应用商店部署付费的外接程序？ 
 
-不正确。 此时无法使用集中部署从 Office 应用商店中部署付费的外接程序。  
+不是。 此时无法使用集中部署从 Office 应用商店中部署付费的外接程序。  
  
 建议与付费外接程序的 ISV 开发人员联系，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。
     

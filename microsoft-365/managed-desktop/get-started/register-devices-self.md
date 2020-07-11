@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 3c43c42ba2cb1feb339ad61b76d28fde4ed94298
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347815"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101655"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
-Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用可能已有的设备（这将需要您对其进行重新映像）。 您可以使用 Azure 门户上的 Microsoft 托管桌面注册设备。
+Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 您可以使用 Microsoft 托管桌面管理门户注册设备。
 
 > [!NOTE]
 > 与合作伙伴合作获取设备？ 如果是这样，则无需担心获取硬件哈希值。他们将为你负责。 请确保您的合作伙伴在 [合作伙伴中心](https://partner.microsoft.com/dashboard)建立与您的关系。 你的合作伙伴可以在 [合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)中了解详细信息。 建立此关系后，你的合作伙伴将代表你直接注册设备–无需进一步操作。 如果您想要查看详细信息，或者您的合作伙伴有问题，请参阅[合作伙伴注册设备的步骤](register-devices-partner.md)。 注册设备后，可以继续[检查映像](#check-the-image)并将[设备传递](#deliver-the-device)给用户。
@@ -74,7 +74,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 >[!NOTE]
 >为方便起见，可以下载[示例 CSV 文件](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-self.csv)。
 
-您的文件需要包含与示例1（制造商、模型等）**完全相同的列标题**，但您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
+您的文件需要包含**完全相同的列标题**，如 (制造商、模型等的示例 ) ，而您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
     
   ```
  Manufacturer,Model,Serial Number,Hardware Hash
@@ -86,9 +86,9 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 >[!NOTE]
 >如果您忘记更改任何示例数据，则注册将失败。
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 门户注册设备
+#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 Microsoft 托管桌面[Azure 门户](https://aka.ms/mmdportal)中，在左侧导航窗格中选择 "**设备**"。 选择 **+ 注册设备**;将打开 "飞入"：
+在 Microsoft 托管桌面[管理门户](https://aka.ms/mmdportal)中，选择左侧导航窗格中的 "**设备**"。 选择 **+ 注册设备**;将打开 "飞入"：
 
 [![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
@@ -107,13 +107,13 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 
 你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
 
-| 状态 | 说明 |
+| State | 说明 |
 |---------------|-------------|
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
 | 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
-| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  | 
+| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们在过去7天内未使用最近 (设备) 。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册故障排除
 

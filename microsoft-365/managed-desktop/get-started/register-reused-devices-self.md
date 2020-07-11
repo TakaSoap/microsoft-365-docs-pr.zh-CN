@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a971d8dc413e7794aa48c0b39cc0f42e511739ed
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.openlocfilehash: abe9e63eb4fcd31993bd26822dc445ff0e48e369
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250442"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101481"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -21,7 +21,7 @@ ms.locfileid: "42250442"
 
 合作伙伴的过程记录在[合作伙伴注册设备的步骤](register-devices-partner.md)中。
 
-Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用可能已有的设备（这将需要您对其进行重新映像）。 您可以使用 Azure 门户上的 Microsoft 托管桌面注册设备。
+Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 您可以使用 Microsoft 托管桌面管理门户注册设备。
 
 ## <a name="prepare-to-register-existing-devices"></a>准备注册现有设备
 
@@ -48,7 +48,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 您可以使用 Microsoft 终结点配置管理器收集要使用 Microsoft 托管桌面注册的现有设备的硬件哈希值。
 
 > [!IMPORTANT]
-> 要获取此信息的任何设备都必须运行 Windows 10 版本1703或更高版本。 此外，还需要一个设备，该设备是连接到配置管理器（"当前分支"）网站的 Configuration Manager 客户端。 您还需要在启用了 SQL Server Reporting Services 的环境中设置报告点站点系统角色。 
+> 要获取此信息的任何设备都必须运行 Windows 10 版本1703或更高版本。 您还需要与 configuration manager 客户端连接到 Configuration Manager (当前分支) 网站的设备。 您还需要在启用了 SQL Server Reporting Services 的环境中设置报告点站点系统角色。 
 
 如果你已满足所有这些先决条件，则可以按照以下步骤收集信息：
 
@@ -60,7 +60,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
     - **说明：** 指定报表的说明。 
     - **服务器：** 显示要在其上创建此报告的报表服务器的名称。 
     - **路径：** 选择 "**浏览**" 以指定要在其中存储报告的文件夹。 
-5. 选择“下一步”****。 
+5. 选择“**下一步**”。 
 6. 在 "**摘要**" 页上，查看设置。 选择 "**上一**步" 更改设置，或选择 "**下一步**" 在配置管理器中创建报表。 
 7. 在 "**完成**" 页上，选择 "**关闭**" 退出向导，并打开 "**报告生成器**" 以输入报告设置。 如果出现提示，请输入您的用户帐户和密码，然后选择 **"确定"。** 如果设备上未安装报表生成器，则系统会提示您安装它。 选择 "**运行" 以安装 "报告生成器**"，这是修改和创建报告所必需的。 
 
@@ -104,14 +104,14 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 
 1. 选择**表或矩阵**;将打开一个新的向导。
 2. 在 "**选择数据集**" 中，选择 "**选择此报告中的现有数据集" 或 "共享数据集**"。  
-3. 选择 " **DataSet0** " （默认值），然后选择 "**下一步**"。
+3. 选择 " **DataSet0** " (默认) ，然后选择 "**下一步**"。
 4. 将 "**制造商**"、"**模型**" 和 "**序列号**" 拖到 "**行组**" 框中。 将**HardwareHash**拖到 "**值**" 框中，然后选择 "**下一步**"。
 5. 清除 "**显示分类汇总和**总计" 和 "**展开/折叠组**" 复选框。 选择“下一步”****。
 6. 选择“完成”****。
 7. 选择 "**运行**" 运行报告。 验证报告是否提供了您所需的信息。 如有必要，选择 "**设计**" 以返回到 "设计" 视图以修改报告。
 8. 选择 "**保存**" 将报告保存到报告服务器。 您可以在 "监控" 工作区的 "报告" 节点中运行新报告。 
 
-**最后，按以下步骤导出报告并使用它来注册设备**。 （如果您在前面的步骤中导航掉了，则只需遵循本节中的步骤1和步骤2。）：
+**最后，按以下步骤导出报告并使用它来注册设备**。  (如果您在前面的步骤后面导航掉了，则只需按照本节中的步骤1和步骤2操作。 ) ：
 
 1. 在 Configuration Manager 控制台中，选择 "**监控**"。
 2. 在 "**监视**" 中，展开 "**报告**"，然后选择 "**报告**"。
@@ -124,19 +124,19 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > Configuration Manager 中的查询不允许导出的列名称中包含空格;这就是为什么这些步骤输入 "Serial_Number" 和 "HardwareHash" 的原因所在。 现在，您已导出了 CSV 文件，您必须编辑报告标头，以便阅读此处所示的*序列号*和*硬件哈希*，然后再继续执行设备注册。
 
-现在，你可以继续[使用 Azure 门户注册设备](#register-devices-by-using-the-azure-portal)。
+现在，你可以继续[使用管理门户注册设备](#register-devices-by-using-the-admin-portal)。
 
 
 #### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell 脚本方法
 
-在 Active Directory 环境中，您可以使用`Get-MMDRegistrationInfo` PowerShell Cmdlet 从 Active directory 组中的设备远程收集信息，方法是使用 WinRM。 您还可以使用`Get-AD Computer` cmdlet 并获取目录中包含的特定硬件模型名称的筛选结果。 为此，请首先确认这些先决条件，然后继续执行以下步骤：
+在 Active Directory 环境中，您可以使用 `Get-MMDRegistrationInfo` PowerShell cmdlet 从 Active Directory 组中的设备远程收集信息，方法是使用 WinRM。 您还可以使用 `Get-AD Computer` cmdlet 并获取目录中包含的特定硬件模型名称的筛选结果。 为此，请首先确认这些先决条件，然后继续执行以下步骤：
 
 - 启用 WinRM。
-- 要注册的设备在网络上是活动的（即，它们未断开连接或已关闭）。
+- 您要注册的设备在网络 (上是活动的，它们不会断开连接或关闭) 。
 - 请确保您有一个具有在设备上远程执行的权限的域凭据参数。
 - 请确保 Windows 防火墙允许访问 WMI。 为此，请按照以下步骤操作：
     1. 打开**Windows Defender 防火墙**控制面板，然后选择 "**允许通过 Windows defender 防火墙的应用程序或功能**"。
-    2. 在列表中查找**Windows Management Instrumentation （WMI）** ，启用 "**专用" 和 "公用**"，然后选择 **"确定"**。
+    2. 在列表中查找**Windows Management Instrumentation (WMI) ** ，启用 "**专用" 和 "公共**"，然后选择 **"确定"**。
 
 1.  打开具有管理权限的 PowerShell 提示。
 2.  运行以下*任意一个*脚本：
@@ -168,7 +168,7 @@ Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-MMDRegistration
 3. 以`Save-Script -Name Get-MMDRegistrationInfo -Path <pathToUsb>`
 4. 打开要注册的设备，但*不要启动安装程序体验*。 如果您意外启动了设置体验，则必须重置或重新映像设备。
 5. 插入 u 盘，然后按 SHIFT + F10。
-6. 打开具有管理权限的 PowerShell 提示符，然后运行`cd <pathToUsb>`。
+6. 打开具有管理权限的 PowerShell 提示符，然后运行 `cd <pathToUsb>` 。
 7. 以`Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
 8. 以`.\Get-MMDRegistrationInfo -OutputFile <path>\hardwarehash.csv`
 9. 删除 USB 驱动器，然后通过运行来关闭设备`shutdown -s -t 0`
@@ -194,7 +194,7 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 >[!NOTE]
 >为方便起见，可以下载此 CSV 文件的[模板](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/device-registration-sample-partner.xlsx)。
 
-您的文件需要包含与示例1（制造商、模型等）**完全相同的列标题**，但您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
+您的文件需要包含**完全相同的列标题**，如 (制造商、模型等的示例 ) ，而您自己的数据用于其他行。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，仅在第2行和更低的行中输入数据。 
     
   ```
  Manufacturer,Model,Serial Number,Hardware Hash
@@ -206,9 +206,9 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 >[!NOTE]
 >如果您忘记更改任何示例数据，则注册将失败。
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 门户注册设备
+#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 Microsoft 托管桌面[Azure 门户](https://aka.ms/mmdportal)中，在左侧导航窗格中选择 "**设备**"。 选择 **+ 注册设备**;将打开 "飞入"：
+在 Microsoft 托管桌面[管理门户](https://aka.ms/mmdportal)中，选择左侧导航窗格中的 "**设备**"。 选择 **+ 注册设备**;将打开 "飞入"：
 
 [![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 
@@ -227,13 +227,13 @@ CSV 文件必须为注册的特定格式。 如果您在前面的步骤中收集
 
 你可以在主**Microsoft 托管台式机-设备**页面上监视设备注册的进度。 可能报告的状态包括：
 
-| 状态 | 说明 |
+| State | 说明 |
 |---------------|-------------|
 | 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅[设备注册故障排除](#troubleshooting-device-registration)。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
 | 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
-| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们最近未使用设备（最近7天）。  | 
+| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们在过去7天内未使用最近 (设备) 。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册故障排除
 

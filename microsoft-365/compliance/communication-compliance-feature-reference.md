@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 017946c08bb1c44f31bbcb87b3ce46571ab8b480
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936781"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101603"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -83,7 +83,7 @@ ms.locfileid: "44936781"
 
 - **Exchange 电子邮件**：作为 Microsoft 365 或 Office 365 订阅的一部分托管在 Exchange Online 上的邮箱都有资格进行邮件扫描。 Exchange 电子邮件和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 通信合规性支持的附件类型与[Exchange 邮件流规则内容检查支持的文件类型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
-- **Yammer**：可以扫描 yammer 社区中的私人邮件和公共对话以及关联的附件。 将用户添加到包含 Yammer 作为定义的频道的通信合规性策略时，扫描过程中将包含该用户所属的所有 Yammer 社区之间的通信。 Yammer 聊天和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 Yammer 必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以使通信合规性策略监视 Yammer 通信和附件。 在本机模式中，所有 Yammer 用户都在 Azure Active Directory （AAD）中，所有组都是 Office 365 组，并且所有文件都存储在 SharePoint Online 中。
+- **Yammer**：可以扫描 yammer 社区中的私人邮件和公共对话以及关联的附件。 将用户添加到包含 Yammer 作为定义的频道的通信合规性策略时，扫描过程中将包含该用户所属的所有 Yammer 社区之间的通信。 Yammer 聊天和与通信合规性策略条件匹配的附件可能需要长达24小时才能完成处理。 Yammer 必须处于[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以使通信合规性策略监视 Yammer 通信和附件。 在本机模式中，所有 Yammer 用户都在 Azure Active Directory (AAD) 中，所有组都是 Office 365 组，并且所有文件都存储在 SharePoint Online 中。
 
 - **Skype For Business online**：可以监督 skype For business online 中的聊天通信和相关附件。 符合通信合规性策略条件的 Skype for Business Online 聊天可能需要长达24小时才能完成处理。 受监督聊天对话源于[以前在 Skype for Business Online 中保存的对话](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  使用以下组管理配置监督 Skype for Business Online 中的用户聊天通信：
 
@@ -92,10 +92,8 @@ ms.locfileid: "44936781"
 - **第三方来源**：可以扫描第三方源的通信，以获取导入到 Microsoft 365 组织中的邮箱的数据。 连接器支持以下第三方资源：
 
     - [即时 Bloomberg](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [领英](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [自定义数据连接器](archiving-third-party-data.md)
+    - [Bloomberg 消息](archive-bloomberg-message-data.md)
+    - [ICE 聊天](archive-icechat-data.md)
 
 您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略向导" 的 "**第三方源**" 部分仅显示当前配置的第三方连接器。
 
@@ -125,7 +123,7 @@ ms.locfileid: "44936781"
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
-您可以选择将敏感信息类型作为通信合规性策略的一部分包括在内。 敏感信息类型可以是预定义的，也可以是自定义的数据类型，可帮助确定和保护信用卡号码、银行帐号、护照号码等。 作为[数据丢失防护（DLP）](data-loss-prevention-policies.md)的一部分，敏感信息配置可以使用模式、字符邻近度、可信度和偶数自定义数据类型，以帮助识别和标记可能敏感的内容。 默认的敏感信息类型为：
+您可以选择将敏感信息类型作为通信合规性策略的一部分包括在内。 敏感信息类型可以是预定义的，也可以是自定义的数据类型，可帮助确定和保护信用卡号码、银行帐号、护照号码等。 作为[数据丢失防护 (DLP) ](data-loss-prevention-policies.md)的一部分，敏感信息配置可以使用模式、字符邻近度、可信度和偶数自定义数据类型，以帮助识别和标记可能敏感的内容。 默认的敏感信息类型为：
 
 - 金融
 - 医疗和运行状况
@@ -136,7 +134,7 @@ ms.locfileid: "44936781"
 
 ### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
-配置自定义关键字词典（或词典），以提供特定于您的组织或行业的关键字的简单管理。 关键字字典支持每个字典最高为100000个术语，并支持任何语言。 如果需要，您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在通信合规性策略中分配，可从文件（如 .csv 或 .txt 列表）或可以[在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。 当您需要支持特定于您的组织和策略的术语或语言时，请使用自定义词典。
+配置自定义关键字词典 (或词典) ，以提供特定于您的组织或行业的关键字的简单管理。 关键字字典支持每个字典最高为100000个术语，并支持任何语言。 如果需要，您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在通信合规性策略中分配，可从文件 (如 .csv 或 .txt 列表) 中，或从您可以[在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。 当您需要支持特定于您的组织和策略的术语或语言时，请使用自定义词典。
 
 ### <a name="classifiers"></a>符
 
@@ -155,7 +153,7 @@ ms.locfileid: "44936781"
 ### <a name="conditional-settings"></a>条件设置
 <a name="ConditionalSettings"> </a>
 
-您为策略选择的条件适用于来自组织中的电子邮件和第三方来源的通信（如 Facebook 或 DropBox）。
+您为策略选择的条件适用于来自组织中的电子邮件和第三方源的通信 (例如来自即时 Bloomberg 或 DropBox) 。
 
 下表对每个条件进行了详细说明。
   
@@ -163,19 +161,19 @@ ms.locfileid: "44936781"
 |:-----|:-----|
 | **内容与这些分类器中的任何类元匹配** | 在邮件中包含或排除任何分类器时，应用于该策略。 某些分类器在租户中预定义，必须单独配置自定义分类器，然后才可用于此条件。 只能将一个分类器定义为策略中的条件。 有关配置分类器的详细信息，请参阅[分类](classifier-getting-started-with.md)器。 |
 | **内容包含这些敏感信息类型中的任何一种** | 在邮件中包含或排除任何敏感信息类型时，应用于该策略。 有些分类器是在租户中预定义的，可以单独配置自定义分类程序，也可以将其作为条件分配过程的一部分进行配置。 您选择的每种敏感信息类型都是单独应用的，只有其中一种敏感信息类型必须适用于该策略应用于邮件。 有关自定义敏感信息类型的详细信息，请参阅[自定义敏感信息类型](custom-sensitive-info-types.md)。 |
-| **从这些域中的任何域接收邮件**  <br><br> **不从这些域中的任何域接收邮件** | 应用该策略以在接收的邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址，并使用逗号分隔多个域或电子邮件地址。 输入的每个域或电子邮件地址将单独应用，只有一个域或电子邮件地址必须应用于该邮件的策略。 <br><br> 如果要扫描来自特定域的所有电子邮件，但又要排除不需要审阅的邮件（新闻稿、通知等），则必须配置**不会从任何不接收**电子邮件地址的域条件（示例 "newsletter@contoso.com"）中接收邮件。 |
-| **将邮件发送到这些域中的任何域**  <br><br> **邮件不会发送到这些域中的任何域** | 应用该策略以在已发送邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址，并使用逗号分隔多个域或电子邮件地址。 每个域或电子邮件地址单独应用，只有一个域或电子邮件地址必须申请策略才能应用于邮件。 <br><br> 如果要扫描发送到特定域的所有电子邮件，但要排除不需要审阅的已发送邮件，则必须配置两个条件： <br> -将**消息发送到**定义域的任何域条件（"contoso.com"），并 <br> -**邮件不会发送到任何**不包括电子邮件地址（"subscriptions@contoso.com"）的域条件。 |
-| **邮件使用以下任何标签进行分类**  <br><br> **不使用这些标签中的任何一个对邮件进行分类** | 在邮件中包含或排除某些保留标签时应用策略。 必须单独配置保留标签，并在此条件中选择已配置的标签。 您选择的每个标签都将单独应用（必须只有其中一个标签适用于该策略应用于邮件）。 有关配置保留标签的详细信息，请参阅[保留标签概述](labels.md)。|
-| **邮件包含以下任何词语**  <br><br> **邮件不包含以下任何词语** | 若要在邮件中包含或排除某些字词或短语时应用策略，请输入以逗号分隔的每个单词。 对于两个或多个单词的短语，请在短语两边使用引号。 您输入的每个单词或短语都将单独应用（必须只有一个词适用于该策略应用于邮件）。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords)。|
-| **附件包含这些词语中的任何一个**  <br><br> **附件中不包含任何词语** | 若要在邮件附件（如 Word 文档）中包含或排除某些字词或短语时应用该策略，请输入以逗号分隔的每个单词。 对于两个或多个单词的短语，请在短语两边使用引号。 您输入的每个单词或短语都将单独应用（必须只有一个词适用于该策略应用于附件）。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords)。|
-| **附件是这些文件类型中的任何一种**  <br><br> **附件是这些文件类型中的任何一种** | 若要监督包含或排除特定类型附件的通信，请输入文件扩展名（如 .exe 或 .pdf）。 如果要包含或排除多个文件扩展名，请在单独的行上输入这些扩展名。 要应用的策略仅有一个附件扩展名必须匹配。|
+| **从这些域中的任何域接收邮件**  <br><br> **不从这些域中的任何域接收邮件** | 应用该策略以在接收的邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址，并使用逗号分隔多个域或电子邮件地址。 输入的每个域或电子邮件地址将单独应用，只有一个域或电子邮件地址必须应用于该邮件的策略。 <br><br> 如果要扫描来自特定域的所有电子邮件，但要排除不需要查看 () 的新闻通讯、通知等的邮件，则必须配置**不会从以下任何域中接收邮件：不**包括电子邮件地址的任何条件 (示例 "newsletter@contoso.com" ) 。 |
+| **将邮件发送到这些域中的任何域**  <br><br> **邮件不会发送到这些域中的任何域** | 应用该策略以在已发送邮件中包含或排除特定域或电子邮件地址。 输入每个域或电子邮件地址，并使用逗号分隔多个域或电子邮件地址。 每个域或电子邮件地址单独应用，只有一个域或电子邮件地址必须申请策略才能应用于邮件。 <br><br> 如果要扫描发送到特定域的所有电子邮件，但要排除不需要审阅的已发送邮件，则必须配置两个条件： <br> -将**消息发送到**定义域 ( "contoso.com" ) 的任何域条件，并 <br> -**不会将邮件发送到**排除电子邮件地址 ( "subscriptions@contoso.com" ) 的任何域条件。 |
+| **邮件使用以下任何标签进行分类**  <br><br> **不使用这些标签中的任何一个对邮件进行分类** | 在邮件中包含或排除某些保留标签时应用策略。 必须单独配置保留标签，并在此条件中选择已配置的标签。 您选择的每个标签都将单独应用 (只有其中一个标签必须适用于将策略应用于邮件) 。 有关配置保留标签的详细信息，请参阅[保留标签概述](labels.md)。|
+| **邮件包含以下任何词语**  <br><br> **邮件不包含以下任何词语** | 若要在邮件中包含或排除某些字词或短语时应用策略，请输入以逗号分隔的每个单词。 对于两个或多个单词的短语，请在短语两边使用引号。 您输入的每个单词或短语都将单独应用 (只有一个词必须应用于该策略才能应用于邮件) 。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords)。|
+| **附件包含这些词语中的任何一个**  <br><br> **附件中不包含任何词语** | 若要在邮件附件 (（如 Word 文档) ）中包含或排除某些字词或短语时应用该策略，请输入以逗号分隔的每个单词。 对于两个或多个单词的短语，请在短语两边使用引号。 您输入的每个单词或短语都将单独应用 (只有一个词必须应用于该策略才能应用于附件) 。 若要详细了解如何输入字词或短语，请参阅下一部分[Matching words and phrases to emails or attachments](communication-compliance-feature-reference.md#Matchwords)。|
+| **附件是这些文件类型中的任何一种**  <br><br> **附件是这些文件类型中的任何一种** | 若要监督包含或排除特定类型附件的通信，请输入文件扩展名 (如 .exe 或 .pdf) 。 如果要包含或排除多个文件扩展名，请在单独的行上输入这些扩展名。 要应用的策略仅有一个附件扩展名必须匹配。|
 | **邮件大小大于**  <br><br> **邮件大小不大于** | 若要查看基于特定大小的邮件，请使用这些条件来指定邮件在被审阅前可以达到的最大或最小大小。 例如，如果您指定的**邮件大小大于** \> **1.0 mb**，则所有 1.01 MB 和更大的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
 | **附件大于**  <br><br> **附件不大于** | 若要根据附件的大小查看邮件，请指定邮件之前的附件的最大或最小大小，并且其附件可能会被审阅。 例如，如果指定**附件大于** \> **2.0 mb**，则所有附件为 2.01 mb 的邮件都将被审阅。 这种情况下，您可以选择字节、千字节、兆字节或千兆字节。|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>将字词和短语与电子邮件或附件匹配
 <a name="Matchwords"> </a>
 
-您输入的每个单词将单独应用（必须只有一个词适用于策略条件应用于电子邮件或附件）。 例如，我们将使用条件，**邮件包含这些词语中的任何词语**，关键字为 "银行家"、"机密" 和 "内幕交易"，由逗号（银行家，机密，"内幕交易"）分隔。 该策略适用于任何邮件，其中包括 "银行家"、"保密" 或短语 "内幕交易" 一词。 只有出现其中一个字词或短语，才能应用此策略条件。 邮件或附件中的单词必须与您输入的内容完全匹配。
+您输入的每个单词都将单独应用 (只有一个 word 必须应用于策略条件，才能应用于电子邮件或附件) 。 例如，我们将使用条件，**邮件包含这些词语中的任何词语**，关键字 "银行家"、"保密" 和 "内幕交易" 由逗号分隔 (银行家、机密、"内幕交易" ) 。 该策略适用于任何邮件，其中包括 "银行家"、"保密" 或短语 "内幕交易" 一词。 只有出现其中一个字词或短语，才能应用此策略条件。 邮件或附件中的单词必须与您输入的内容完全匹配。
 
 >[!IMPORTANT]
 >在导入自定义词典文件时，每个单词或短语必须用回车符分隔，并在单独的行上。 <br> 例如： <br><br>
@@ -183,7 +181,7 @@ ms.locfileid: "44936781"
 >*秘密* <br>
 >*内幕交易*
 
-若要扫描相同关键字的电子邮件和附件，请为您希望在邮件中扫描的术语创建一个包含[自定义关键字词典](create-a-keyword-dictionary.md)的[数据丢失防护策略](create-test-tune-dlp-policy.md)。 此策略配置标识在电子邮件**或**电子邮件附件中显示的已定义关键字。 使用标准条件策略设置（*邮件包含以下任何词语*和*附件包含这些词语中的*任意词语）标识邮件中和附件中的术语时，需要在邮件和附件**BOTH**中显示这些术语。
+若要扫描相同关键字的电子邮件和附件，请为您希望在邮件中扫描的术语创建一个包含[自定义关键字词典](create-a-keyword-dictionary.md)的[数据丢失防护策略](create-test-tune-dlp-policy.md)。 此策略配置标识在电子邮件**或**电子邮件附件中显示的已定义关键字。 使用标准条件策略设置 (*邮件包含以下任何词语*和附件中的任何词语) 若要标识邮件中和附件中的术语 **，则需要**在邮件和附件中显示*这些*术语。
   
 #### <a name="enter-multiple-conditions"></a>输入多个条件
 
@@ -304,7 +302,7 @@ ms.locfileid: "44936781"
 
 您还可以在统一审核日志中或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 
-例如，下面的示例返回所有监管审核活动（策略和规则）的活动：
+例如，下面的示例返回 (策略和规则) 的所有监管审核活动的活动：
 
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType AeD -Operations SupervisoryReviewTag

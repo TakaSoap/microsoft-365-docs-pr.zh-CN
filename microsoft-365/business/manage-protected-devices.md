@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 了解如何从通过保护策略管理的设备中删除公司数据，以及如何将 Windows 10 设备重置为其出厂设置。
-ms.openlocfilehash: 1f4b267f5a58429d40c5ece7df42a1bb5727c4e2
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564917"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101613"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>使用 Microsoft 365 商业高级版管理受保护的设备
 
@@ -44,5 +44,7 @@ ms.locfileid: "44564917"
 [从设备中删除公司数据](remove-company-data.md)
   
 [将 Windows 10 设备重置为其出厂设置](reset-devices-to-factory-settings.md)
+
+[添加托管设备](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
   
 
