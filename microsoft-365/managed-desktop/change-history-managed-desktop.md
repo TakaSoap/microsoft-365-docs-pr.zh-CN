@@ -10,25 +10,51 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9d7d33d3936d6fef21deb67c6b23f95c2f4bf24a
-ms.sourcegitcommit: 8edad75338cf74712ca1ab5d6631b9b52ff54410
+ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
+ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43115998"
+ms.lasthandoff: 07/13/2020
+ms.locfileid: "45107595"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本文列出了[Microsoft 托管桌面文档](index.yml)中的新增和更新的文章。 "已更新" 的文章是指那些具有材料添加或更正的文章--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
+
+## <a name="june-2020"></a>2020 年 6 月
+新增或已更改的文章 | 说明
+--- | ---
+[新建 Microsoft Edge 应用](get-started/edge-browser-app.md) | 新增文章
+[设备配置](service-description/device-policies.md) | 更新的文章
+
+
+
+## <a name="may-2020"></a>2020 年 5 月
+新增或已更改的文章 | 说明
+--- | ---
+[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[合作伙伴注册设备的步骤](get-started/register-devices-partner.md) | 更新的文章
+[Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
+[自行注册新设备](get-started/register-devices-self.md) | 更新的文章
+
+
+
+
+
+## <a name="april-2020"></a>2020 年 4 月
+新增或已更改的文章 | 说明
+--- | ---
+[合规性](intro/compliance.md) | 新增文章
+[Microsoft 托管桌面支持的区域和语言](service-description/regions-languages.md) | 更新的文章
+
+
 
 ## <a name="march-2020"></a>2020 年 3 月
 新增或已更改的文章 | 说明
 --- | ---
 [合作伙伴注册设备的步骤](get-started/register-devices-partner.md)| 更新的文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
-[准备打印 Microsoft 托管桌面的资源](get-ready/printing.md) | 新增文章
-
-
+[为 Microsoft 托管桌面准备打印资源](get-ready/printing.md) | 新增文章
 
 
 ## <a name="february-2020"></a>2020 年 2 月
@@ -45,7 +71,7 @@ ms.locfileid: "43115998"
 ## <a name="january-2020"></a>2020 年 1 月
 新增或已更改的文章 | 说明
 --- | ---
-[让用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
+[为用户做好使用设备的准备](get-started/get-started-devices.md)| 更新的文章
 [在管理门户中添加和验证管理员联系人](get-started/add-admin-contacts.md) | 更新的文章
 [设备配置](service-description/device-policies.md) | 更新的文章
 
@@ -68,7 +94,7 @@ ms.locfileid: "43115998"
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [Microsoft 托管桌面主页](https://docs.microsoft.com/microsoft-365/managed-desktop/) | 更新的文章
 [什么是 Microsoft 托管桌面？](https://docs.microsoft.com/microsoft-365/managed-desktop/intro/index) | 更新的文章
-[让用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
+[为用户做好使用设备的准备](get-started/get-started-devices.md) | 更新的文章
 [服务计划的例外情况](service-description/customizing.md) | 更新的文章
 
 
@@ -76,7 +102,7 @@ ms.locfileid: "43115998"
 新增或已更改的文章 | 说明
 --- | ---
 [服务计划的例外情况](service-description/customizing.md) | 新增文章
-[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
 [服务更改和通信](service-description/servicechanges.md) | 新增文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
@@ -90,11 +116,11 @@ ms.locfileid: "43115998"
 新增或已更改的文章 | 说明
 --- | ---
 [Microsoft 托管桌面技术](intro/technologies.md) | 更新的文章
-[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [部署和跟踪可配置的设置-Microsoft 托管桌面](working-with-managed-desktop/config-setting-deploy.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
-[Microsoft 托管桌面的系统必备](get-ready/prerequisites.md) | 更新的文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
 [设置 Microsoft 托管桌面设备](get-started/set-up-devices.md) | 新增文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
 [自行注册现有设备](get-started/register-reused-devices-self.md) | 新增文章
@@ -105,8 +131,8 @@ ms.locfileid: "43115998"
 --- | ---
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
-[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
-[Microsoft 托管桌面的系统必备](get-ready/prerequisites.md) | 更新的文章
+[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
 [Microsoft 托管桌面技术](intro/technologies.md) | 更新的文章
 
 
@@ -122,9 +148,9 @@ ms.locfileid: "43115998"
 ## <a name="june-2019"></a>2019 年 6 月
 新增或已更改的文章 | 说明
 --- | ---
-[Microsoft 托管桌面中的应用程序](get-ready/apps.md) | 更新的文章
+[Microsoft 托管桌面中的应用](get-ready/apps.md) | 更新的文章
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 新增文章
-[Microsoft 托管桌面角色和职责](intro/roles-and-responsibilities.md) | 更新的文章
+[Microsoft 托管桌面角色和责任](intro/roles-and-responsibilities.md) | 更新的文章
 [Microsoft 托管桌面产品生命周期](service-description/device-lifecycle.md) | 新增文章
 
 
@@ -138,7 +164,7 @@ ms.locfileid: "43115998"
 [为 Microsoft 托管桌面准备映射的驱动器](get-ready/mapped-drives.md) | 新增文章
 [为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 新增文章
 [订购 Microsoft 托管桌面设备](get-started/devices.md) | 更新的文章
-[获取最终用户的帮助](working-with-managed-desktop/end-user-support.md)
+[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 新增文章
 
 ## <a name="april-2019"></a>2019 年 4 月
 新增或已更改的文章 | 说明
@@ -169,7 +195,7 @@ ms.locfileid: "43115998"
 新增或已更改的文章 | 说明
 --- | ---
 [部署 Microsoft 托管桌面设备的应用程序](get-started/deploy-apps.md) | 新文章。
-[管理 Microsoft 托管桌面的应用程序](working-with-managed-desktop/manage-apps.md) | 使用有关如何更新或回滚到 previoius 版本的业务线应用程序的信息进行了更新。 
+[管理 Microsoft 托管桌面的应用程序](working-with-managed-desktop/manage-apps.md) | 使用有关如何更新或回滚到以前版本的业务线应用程序的信息进行了更新。 
 
 ## <a name="december-2018"></a>2018 年 12 月
 新增或已更改的文章 | 说明
