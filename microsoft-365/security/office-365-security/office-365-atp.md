@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818803"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039374"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -45,9 +45,8 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 下表概括了每个计划中包含的内容。
 
-|||
+| Office 365 ATP 计划 1 | Office 365 ATP 计划 2 |
 |---|---|
-|**Office 365 ATP 计划 1**|**Office 365 ATP 计划 2**|
 |配置、保护和检测功能：<br/>• [安全附件](atp-safe-attachments.md)<br/>• [安全链接](atp-safe-links.md)<br/>• [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>• [ATP 防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [实时检测](threat-explorer.md)|Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>• [威胁跟踪器](threat-trackers.md)<br/>• [威胁资源管理器](threat-explorer.md)<br/>• [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [攻击模拟器](attack-simulator.md)|
 |
 
@@ -56,6 +55,8 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 - Office 365 ATP 计划 1 包含在 Microsoft 365 商业高级版中。
 
 - Office 365 ATP 计划 1 和 Office 365 ATP 计划 2 可各自用作特定订阅的加载项。 要了解详细信息，请参阅[跨高级威胁防护 (ATP) 计划的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+- 只有拥有 Microsoft 365 E5 或 Microsoft 365 E5 安全版许可证（未包括在 Office 365 ATP 计划内）的用户才能使用[安全文档](safe-docs.md)功能。
 
 - 如果你当前的订阅不包括 Office 365 ATP，请[与销售人员联系以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并查看 ATP 如何为你的组织所用。
 
