@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 服务事件情景的一些缓解措施示例。
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601059"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086629"
 ---
 # <a name="service-incident-mitigation-strategies"></a>服务事件缓解策略
 
@@ -36,6 +36,7 @@ ms.locfileid: "41601059"
 |VoIP 电话用作辅助通信方式。|实现支持 PSTN 通话的非 VoIP 电话，尤其对于事件期间的网络和服务运营中心。 将员工移动电话号码添加到公司目录，以便通过移动数据网络联系关键人员。|
 |文件存储和用户高效工作需要使用 OneDrive for Business。 配置[文件随选](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234)来释放本地用户驱动器上的空间。|OneDrive 同步功能提供了组策略，允许管理员要求在本地同步特定内容或在需要时释放空间。 若要缓解无法访问文档的风险，请配置此策略以便在本地同步重要文档。 告知用户对重要文档手动应用“始终在此设备上保留”设置。|
 |使用 Exchange Online 与客户和供应商沟通业务中断情况。|公用的第三方社交网络可用作大量通信的替代方法。
+|混合本地体系结构（如 ADFS 或直通身份验证）将失败，从而导致用户无法再对云服务进行身份验证。|将[密码哈希同步](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication)与混合身份验证服务一起配置为基于云的辅助身份验证服务，以避免在故障过程中出现登录中断。 有关构建弹性身份验证和访问控制体系结构的详细信息，请参阅[使用 Azure Active Directory 创建弹性访问控制管理策略](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls)。|  
 
 ## <a name="leveraging-mobile-app-access"></a>利用移动应用访问方法
 

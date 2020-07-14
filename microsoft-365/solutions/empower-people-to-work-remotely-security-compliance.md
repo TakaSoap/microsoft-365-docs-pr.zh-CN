@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: f1c6f509477b4f4523951a64e6b4298753a1519d
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005991"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049857"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
-对于远程工作者来说，他们中的一些人永远不会上班或很少上班，安全性和合规性是整个解决方案的重要组成部分。 他们的所有通信都通过 Internet 进行，而不是局限于组织 Intranet。 
+对于远程工作者来说，他们中的一些人永远不会或很少来办公室，安全性和合规性是整个解决方案的重要组成部分。 他们的所有通信都通过 Internet 进行，而不是局限于组织 Intranet。 
 
 你和你的员工可以做一些事情来保持工作效率，同时降低网络安全风险并保持遵守内部策略和数据法规。
 
@@ -47,7 +47,7 @@ ms.locfileid: "45005991"
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| Office 高级威胁防护 (ATP) | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Office ATP 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 | Microsoft 365 E3 和 E5 | 
+| Office 365 高级威胁防护 (ATP) | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Office ATP 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 | Microsoft 365 E3 和 E5 | 
 | 恶意软件防护 | ‎Windows Defender 防病毒和 Device Guard 提供基于设备的恶意软件防护。 <br><br> SharePoint‎ Online 会自动扫描上传文件中已知的恶意软件。 ‎<br><br> Exchange Online Protection‎ (‎EOP‎) 可保护云邮箱。 | Microsoft 365 E3 和 E5 |
 | Microsoft Defender ATP | 保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。 | Microsoft 365 E5 |
 | 云应用安全 | 保护基于云的服务（Microsoft 365 和其他 SaaS 应用）免受攻击。 | Microsoft 365 E5 或单独的云应用安全许可证 |

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 开发云感知业务连续性计划时要考虑的事项。
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601089"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083502"
 ---
 # <a name="developing-your-continuity-plan"></a>开发连续性计划
 
@@ -80,6 +80,8 @@ ms.locfileid: "41601089"
 
 在对业务流程进行盘存并将关系映射到其他流程和技术后，需要为所有流程构建验证方案。 基本而言，就是确定如何验证业务流程连续性计划。 你可能会发现某些人比其他人更重要，你希望对他们设置优先级。
 请记住，制定计划后，在事件响应和连续性措施方面定期培训员工是非常重要的。 应通过将学习与每个验证或测试相结合，采用事后回顾的方法来增强复原策略。
+
+![功能验证 visio](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>事件协调和通信
 

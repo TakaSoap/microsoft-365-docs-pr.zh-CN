@@ -17,11 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: ead16cf4d89b5dbea2fee4a6669f537a0338984e
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049846"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083490"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>了解 Microsoft Teams 的保留策略
 
@@ -33,7 +34,7 @@ ms.locfileid: "45049846"
 
 可使用保留策略保留 Teams 中的聊天和频道消息。 Teams 聊天存储在参与聊天的每个用户的邮箱中的隐藏文件夹内，Teams 频道消息存储在团队组邮箱中类似的隐藏文件夹中。 
 
-务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，我们强烈建议使用 Teams 位置来保留和删除 Teams 数据。 使用 Teams 位置将从 Exchange 邮箱和基于 Azure 支持的聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
+务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，我们强烈建议使用 Teams 位置来保留和删除此 Teams 数据。 使用 Teams 位置将从 Exchange 邮箱和基于 Azure 支持的聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 
 Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，此 Teams 数据仍将仅包含在针对 **Teams 频道消息**和 ** Teams 聊天**位置配置的保留策略中。
 
@@ -70,20 +71,27 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天
 
-Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype for Business 聊天进入 Teams 时，它将成为 Teams 聊天线程中的消息，并接收到相应的邮箱中。 Teams 保留策略将从 Teams 线程中删除这些消息。 
+Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype for Business 聊天进入 Teams 时，它将成为 Teams 聊天线程中的消息，并接收到相应的邮箱中。 Teams 保留策略将从 Teams 线程应用于这些消息。 
 
-但是，如果已为 Skype for Business 开启对话历史记录，并且从 Skype for Business 客户端将其保存到邮箱中，则 Teams 保留策略不会处理该聊天数据。
+但是，如果已为 Skype for Business 开启对话历史记录，并且从 Skype for Business 客户端将其保存到邮箱中，则 Teams 保留策略不会处理该聊天数据。 对于此内容，请使用为 Skype for Business 配置的保留策略。
 
-## <a name="files-in-teams"></a>Teams 中的文件
+## <a name="additional-retention-policies-needed-to-support-teams"></a>支持团队所需的其他保留策略
 
-在 Teams 中，聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 上传到频道的文件存储在团队的 SharePoint 网站中。 这意味着，若要保留或删除 Teams 中的文件，除了为 Teams 配置的任何保留策略外，还必须配置一个或多个应用于 OneDrive 和 SharePoint 的保留策略。 有关保留策略如何应用于这些位置的详细信息，请参阅[了解 SharePoint 和 OneDrive 的保留策略](retention-policies-sharepoint.md)。
+Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以前称为 Office 365 组）创建的团队，则应另外使用 **Office 365 组**位置来配置包括该 Microsoft 365 组的保留策略。 此保留策略适用于组的邮箱、网站和文件中的内容。
+
+如果团队网站未连接到 Microsoft 365 组，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略来保留和删除 Teams 中的文件：
+
+- 聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
+
+- 上传到频道的文件存储在团队的 SharePoint 网站中。
+
+> [!TIP]
+> 当特定团队未连接到 Microsoft 365 组时，可以将保留策略应用于该特定团队的文件，方法是选择该团队的 SharePoint 网站以及该团队中用户的 OneDrive 帐户。
+
+应用于 Microsoft 365 组、SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Teams 聊天或频道消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Teams 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
 
 > [!NOTE]
-> 包含 Teams 频道消息或 Teams 聊天的保留策略只能包含 Teams 位置。 若要保留或删除 Teams 中的这些文件，必须创建单独的保留策略。
-> 
-> 如果希望仅将保留策略应用于特定团队的文件，可选择 Teams 的 SharePoint 网站以及 Teams 中用户的 OneDrive 帐户。
-
-应用于 SharePoint 或 OneDrive 的保留策略可能会先删除在 Teams 聊天或频道消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍将显示在 Teams 消息中，但当用户单击文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
+> 包含 Teams 频道消息或 Teams 聊天的保留策略只能包含 Teams 位置。 因此，若要保留或删除 Teams 支持的其他内容，则必须创建单独的保留策略。
 
 ## <a name="meetings-and-external-users"></a>会议和外部用户
 
@@ -99,7 +107,7 @@ Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype f
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
-如果用户离开你的组织，并且其 Office 365 帐户被删除，则其要保留的聊天消息将存储在非活动邮箱中。 聊天消息仍受用户在其邮箱变为非活动状态之前所应用的任何保留策略的约束，并且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
+如果用户离开你的组织，并且其 Microsoft 365 帐户被删除，则其要保留的聊天消息将存储在非活动邮箱中。 聊天消息仍受用户在其邮箱变为非活动状态之前所应用的任何保留策略的约束，并且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
 
 如果用户在 Teams 中存储了任何文件，请参阅 SharePoint 和 OneDrive 的[等效部分](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)。
 
@@ -113,17 +121,17 @@ Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype f
 
 - **Teams 不支持高级保留**。 创建保留策略时，如果选择“[标识满足特定条件的内容的高级设置](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)”，则 Teams 位置不可用。 目前，当你选择这些位置时，Teams 中的保留适用于所有聊天和频道消息内容。
 
-- **配置 Teams 频道消息的保留策略时，不包括专用频道中的 Teams 消息**。 相反，选择“**Teams 聊天**”选项时，将为用户包含来自专用频道的消息作为群组聊天。 
+- **配置 Teams 频道消息的保留策略时，不包括专用频道中的 Teams 消息**。 保留策略目前不支持专用频道。 
+
+- **Teams 最多可能需要七天的时间来清理过期的消息**。 应用于 Teams 的保留策略将在保留期到期时删除聊天和频道消息。 但是，它最多可能需要三到七天的时间来清理这些消息并永久删除它们。 此外，在保留期到期后和永久删除消息期间，可以使用电子数据展示工具搜索聊天和频道消息。
     
-- **Teams 最多可能需要三天的时间来清理过期的消息**。 应用于 Teams 的保留策略将在保留期到期时删除聊天和频道消息。 但是，它最多可能需要三天的时间来清理这些消息并永久删除它们。 此外，在保留期到期后和永久删除消息期间，可以使用电子数据展示工具搜索聊天和频道消息。
-    
-   > [!NOTE]
-   > 过去的情况是，保留策略无法删除短于 30 天的 Teams 内容，但是我们已经删除了此限制。 现在，Teams 内容的保留期可以是你选择的任意天数，它可以短至 1 天。 如果保留期为一天，则在保留期到期后的最多三天内将永久删除消息。
+    > [!NOTE]
+    > 过去的情况是，保留策略无法删除短于 30 天的 Teams 内容，但是我们已经删除了此限制。 现在，Teams 内容的保留期可以是你选择的任意天数，它可以短至 1 天。 如果保留期为一天，则在保留期到期后的最多七天内将永久删除消息。
 
 - **Outlook 错误显示的问题**。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
 
-- **配置问题**：
-    - 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Office 365 组。 不要选择这些组。
+- **配置问题**： 
+    - 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
     
     - 为“**Teams 聊天**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
