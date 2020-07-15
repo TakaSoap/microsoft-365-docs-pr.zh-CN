@@ -1,5 +1,5 @@
 ---
-title: 在管理中心部署外接程序
+title: 在管理中心部署加载项
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 了解如何通过在管理中心中使用集中部署将外接程序部署到组织中的用户和组。
-ms.openlocfilehash: 51db2bf7b618bddf2c6de417b7f5e53c91a64a1b
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4e9a3a4b7182bfd452c63abd03836623dc77260c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102856"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138240"
 ---
-# <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署外接程序
+# <a name="deploy-add-ins-in-the-admin-center"></a>在管理中心部署加载项
 
 ::: moniker range="o365-21vianet"
 
@@ -116,9 +116,9 @@ Office add-ins combine an XML manifest file that contains some metadata about th
     
 - 从用户文档读取数据并向用户文档写入数据，以便向该用户提供价值。
     
-若要详细了解 Office 加载项的类型和功能，请参阅 [Office Add-ins platform overview](https://go.microsoft.com/fwlink/p/?linkid=846362)（Office 加载项平台概述），尤其是"Anatomy of an Office Add-in"（Office 加载项分析）一节。
+若要详细了解 Office 加载项的类型和功能，请参阅 [Office Add-ins platform overview](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)（Office 加载项平台概述），尤其是"Anatomy of an Office Add-in"（Office 加载项分析）一节。
   
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
 When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
@@ -133,9 +133,9 @@ When updating a manifest, the typical changes are to an add-in's icon and text. 
   
 ## <a name="learn-more"></a>了解详细信息
 
-创建和生成[Office 外接程序](https://go.microsoft.com/fwlink/p/?linkid=846362)
+[在管理中心管理加载项](manage-addins-in-the-admin-center.md)
 
-[在管理中心中管理外接程序](manage-addins-in-the-admin-center.md)
+[生成 Office 外接程序](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals)。
 
 [向应用商店中的未成年人和收购外接程序](minors-and-acquiring-addins-from-the-store.md)
   

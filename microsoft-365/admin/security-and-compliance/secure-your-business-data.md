@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005626"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138286"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -252,7 +252,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
     
 4. 在 "反钓鱼网站" 页上，选择 " **+ 创建**"。 向导将启动，引导您完成定义您的反网络钓鱼策略。
     
-5. 按照下表中的建议，指定策略的名称、说明和设置。 有关详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。 
+5. 按照下表中的建议，指定策略的名称、说明和设置。 有关详细信息，请参阅[了解 ATP 反网络钓鱼策略选项](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。 
     
 6. 查看设置后，根据需要选择 "**创建此策略**" 或 "**保存**"。
 
@@ -269,7 +269,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 |应用于  <br/> |选择“收件人域为”****。 在“以下任何项”**** 中，选择“选择”****。 选择“+ 添加”****。 选中域的名称旁边的复选框，例如，contoso.com，在列表中，然后选择 "**添加**"。 选择“完成”****。  <br/> |
 |
    
-有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
+有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9：使用 ATP 安全附件防止恶意附件和文件
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 |应用于  <br/> |收件人域为。 . . 选择您的域。  <br/> |
 |
    
-有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
+有关详细信息，请参阅[设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10：使用 ATP 安全链接防御网络钓鱼攻击
 <a name="phishingatp"> </a>

@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: 了解如何使用 Complance 分数和合规性管理器改进个人数据保护级别。
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: 了解如何使用合规性分数和合规性管理器改进个人数据保护级别。
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016363"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126544"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>使用合规性分数和合规性管理器管理改进操作
 
 Microsoft 合规性分数和合规性管理器可结合使用，以管理与数据隐私法规相关的改进（如欧盟[通用数据保护条例（GDPR）](../compliance/gdpr.md)、[加利福尼亚州消费者保护法 CCPA）](../compliance/ccpa-faq.md)、HIPAA-高科技（美国卫生保健隐私法案）和巴西数据保护法案（LGPD）。 
 
 本文提供了有关如何使用这些工具来实现数据保密的指南。
+
+![管理合规性分数和合规性管理器以管理改进操作](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >合规性管理器中提供的客户操作是建议。 在实施之前，您需要评估这些建议在法规环境中的有效性。 合规性管理器建议不应解释为合规性保证。

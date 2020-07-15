@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039396"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126405"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -34,6 +34,10 @@ ms.locfileid: "45039396"
 
 > [!TIP]
 > 尚不具有 Office 365 ATP？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+
+## <a name="julyaugust-2020"></a>7月/8 月2020 
+
+- [体验对求职体验的改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
 ## <a name="marchapril-2020"></a>3月/4 月2020
 

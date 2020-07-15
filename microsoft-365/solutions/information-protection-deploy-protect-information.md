@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合规性功能，并保护你的个人信息。
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844688"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126444"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私法规制约的信息
 
@@ -33,6 +33,8 @@ ms.locfileid: "44844688"
 - 数据丢失防护 (DLP)
 - Office 邮件加密（OME）
 - 团队和网站访问控制
+
+![保护受数据隐私法规制约的个人信息的关键服务](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >此解决方案介绍了安全性和合规性功能，以保护受数据隐私法规约束的信息。 有关 Microsoft 365 中安全功能的完整列表，请参阅[microsoft 365 安全文档](https://docs.microsoft.com/microsoft-365/security/)。 有关 Microsoft 365 中合规性功能的完整列表，请参阅[microsoft 365 合规性文档](https://docs.microsoft.com/microsoft-365/compliance/)。
@@ -102,14 +104,14 @@ Microsoft 信息保护框架中的敏感度标签允许您对组织的数据进�
         - 将拔出并发送一封电子邮件。
       - 在 SharePoint 和 OneDrive 中的 rest 文件以及通过 Exchange 传输的电子邮件中，自动应用程序都有敏感性标签。 它们的目标是所有网站或特定网站，并在这些环境中自动应用于 rest 上的文件。
 
-2. 合理化当前敏感度标签和过去的或替代方法
+2. 合理化了过去或替代方法的当前敏感度标记
 
    - Azure 信息保护
 
-      当前灵敏度标签方案可能需要与任何现有的[Azure 信息保护](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)标记实现协调在一起。
+      当前的敏感度标签方案可能需要与任何现有的[Azure 信息保护](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)标记实施进行协调。
    - OME
 
-      如果您计划使用新式灵敏度标签进行电子邮件保护，并使用现有的电子邮件加密方法（如 OME），则可以共存，但您应了解应应用其中的方案。 请参阅[Office 365 邮件加密新功能（OME）](#office-365-message-encryption-ome-new-capabilities)，其中包括比较新式敏感度标签类型保护和基于 OME 的保护的表格。
+      如果您计划使用新式灵敏度标签进行电子邮件保护和现有的电子邮件加密方法（如 OME），则它们可能会共存，但您应了解应应用其中的情况。 请参阅[Office 365 邮件加密新功能（OME）](#office-365-message-encryption-ome-new-capabilities)，其中包括比较新式敏感度标签类型保护和基于 OME 的保护的表格。
 
 3. 规划集成到一个更广泛的信息保护方案中。 在与 OME 共存的同时，可以使用当前敏感度标签（如 Microsoft 365 数据丢失防护（DLP）和 Microsoft 云应用安全性）等并行功能。 请参阅[敏感度标签和 Microsoft 云应用安全](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)，以实现与您的数据隐私相关的信息保护目标。
 
@@ -174,7 +176,7 @@ Microsoft 信息保护框架中的敏感度标签允许您对组织的数据进�
 - 无需依赖用户，即可对全部内容进行正确分类。
 - 用户不再需要了解你的策略，反而可以专注于自己的工作。
 
-自动标签支持向用户推荐一个标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。
+自动标记支持向用户推荐一个标签，并自动应用标签。 但在这两种情况下，用户都可以决定接受还是拒绝标签，以帮助确保正确标记内容。
 
 此客户端标记的文档延迟最少，因为即使在保存文档之前也可以应用标签。 但是，并非所有客户端应用都支持自动标记。 Azure 信息保护统一标记客户端和[某些版本的 Office 应用](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)支持此功能。
 
@@ -235,7 +237,7 @@ DLP 用于标识包含健康记录的文档或电子邮件，然后自动阻止�
 
 - 持续性的 DLP 策略管理，这要求组织中的人员对敏感信息类型、保留标签、法规和合规性策略中的更改进行操作和调整策略。
 
-[！注意] 尽管不能在 DLP 策略条件中使用敏感度标签，但若要阻止访问，则可以使用仅根据敏感信息类型自动应用的敏感度标签来实现访问。 如果就地设置了强健的灵敏度，请考虑是否应使用 DLP 加强保护，因为：
+[！注意] 尽管不能在 DLP 策略条件中使用敏感度标签，但若要阻止访问，则可以使用仅根据敏感信息类型自动应用的敏感度标签来实现访问。 如果存在强大的敏感度标记，请考虑是否应使用 DLP 来增强保护，因为：
 
   - DLP 可以阻止共享文件。 敏感度标签仅可防止访问。
 
@@ -279,7 +281,7 @@ DLP 策略在 Microsoft 合规性管理中心中配置，并指定保护级别�
 3. 建立了解决要求和保护和控制数据隐私热点的整体策略。
 4. 制定用于解决数据隐私控制策略的分阶段行动计划。
 
-确定这些元素后，可以使用敏感信息类型、敏感度标签分类和 DLP 策略一起使用。 此图显示了一个示例。
+确定这些元素后，您可以使用敏感信息类型、敏感度标签分类和 DLP 策略一起使用。 此图显示了一个示例。
 
 ![使用 DLP 的敏感度标签示例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
@@ -287,7 +289,7 @@ DLP 策略在 Microsoft 合规性管理中心中配置，并指定保护级别�
 
 下面是使用 DLP 和敏感度标签的一些数据保护方案，如图所示。
 
-| 应用场景 | 流程 |
+| 方案 | 流程 |
 |:-------|:-----|
 | A | <ol><li>内容的敏感度标签由管理员发布到用户和组，以供手动或自动应用到内容和电子邮件。 </li><li>用户 A 在与内容交互时（已应用加密或其他设置）手动或自动应用标签。 </li><li>用户 A 将受保护的电子邮件或文件发送给用户 B，即来宾用户。 </li></ol> |
 | B | 管理员向用户 A 发布的 DLP 策略阻止用户 A 向用户 B 发送电子邮件和/或文件。 |
@@ -313,13 +315,13 @@ DLP 策略在 Microsoft 合规性管理中心中配置，并指定保护级别�
 
 应用于加密电子邮件的 OME 和敏感度标签有一些重叠，因此，了解可能适用于哪些方案，这一点很重要，如下表所示。
 
-| 应用场景 | 敏感度标签 | OME |
+| 方案 | 敏感度标签 | OME |
 |:-------|:-----|:-------|
 | 内部 + 合作伙伴 <br> 内部用户与受信任合作伙伴之间的安全通信和协作 | 推荐–使用完全自定义的分类和保护的标签 | 是–仅加密或不转发保护（无分类） |
 | 外部方 <br> 与任何外部/消费者用户安全地通信和协作 | 是–预定义标签中的收件人 | 建议–基于收件人的实时保护 |
 | 具有过期/撤消的内部 + 合作伙伴 <br> 使用过期和吊销控制对内部用户和受信任合作伙伴的邮件和内容的访问 | 建议-使用 access 持续时间进行完全自定义保护，用户可以手动跟踪和撤消文件 | 否–内部邮件没有吊销或过期 |
 | 具有过期/撤消的外部方 <br> 使用过期和吊销控制对具有外部/消费者用户的邮件和内容的访问 | 是–用户可以手动跟踪文件 | 推荐（E5）–管理员可以从安全 & 合规中心撤销邮件 |
-| 自动标签 <br> 组织希望自动保护包含特定敏感内容和/或特定收件人的邮件/附件 | 建议（E5）-在 Exchange 和 Outlook 客户端中自动标记，扩大邮件流规则和 DLP 策略 | 是-仅加密或不转发保护的邮件流规则和 DLP 策略 |
+| 自动标记 <br> 组织希望自动保护包含特定敏感内容和/或特定收件人的邮件/附件 | 建议（E5）-在 Exchange 和 Outlook 客户端中自动标记，扩大邮件流规则和 DLP 策略 | 是-仅加密或不转发保护的邮件流规则和 DLP 策略 |
 ||||
 
 在这两种方法之间，最终用户和管理员体验也会有所不同。

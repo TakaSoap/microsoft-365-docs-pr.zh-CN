@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商业高级版，这是一项订阅服务，其中包括 Office 效率类应用，以及为企业抵御网络威胁的高级保护功能。
-ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786166"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138220"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商业高级版概述
 
@@ -110,11 +110,6 @@ Microsoft 365 商业高级版通过以下方式**抵御威胁**：
 - 如果你有合作伙伴，他们将获取 Microsoft 365 商业高级版：[从 Microsoft 合作伙伴中心获取 Microsoft 365 商业高级版](get-microsoft-365-business.md)。
 
 - 如果你没有合作伙伴，又要获取 Microsoft 365 商业高级版，可以[在此处购买](https://www.microsoft.com/microsoft-365/business)，并按照[注册](sign-up.md)说明操作。
-
-- 也可以转到 [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer)，以购买 Microsoft 365 商业高级版，并同时获取安装帮助。
-
-    > [!NOTE]
-    > 此链接只适用于美国的应用商店
 
 ## <a name="see-also"></a>另请参阅
 
