@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091938"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127157"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -99,7 +99,7 @@ ms.locfileid: "45091938"
     
   - 使用[电子数据展示事例](ediscovery-cases.md)管理组织的法律调查 
     
-  - 使用安全与合规中心的“[保留策略](retention-policies.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。 
+  - 使用安全与合规中心的“[保留策略](retention.md)”来控制邮箱内容的保留时长，然后在保留期限到期之后删除内容。 
 
   - 使用“[沟通合规性策略](communication-compliance.md)”检查邮件，以确保它们符合邮件标准并添加分类类型。
     
