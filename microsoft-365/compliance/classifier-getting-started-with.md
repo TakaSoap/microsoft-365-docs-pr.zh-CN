@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护（DLP）或保留策略中。
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371460"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126331"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>可训练分类器入门（预览）
 
@@ -38,16 +38,16 @@ ms.locfileid: "44371460"
 - 识别项目，因为它是模板的变体[（文档指纹打印）](document-fingerprinting.md)。
 - 使用完全字符串的状态[（精确数据匹配）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
-然后，可以自动应用敏感度和保留标签，以使内容可用于[数据丢失防护（DLP）](data-loss-prevention-policies.md)和[保留策略](retention-policies.md)。
+然后，可以自动应用敏感度和保留标签，以使内容可用于[数据丢失防护（DLP）](data-loss-prevention-policies.md)和[保留标签的自动应用策略](apply-retention-labels-automatically.md)。
 
 ## <a name="trainable-classifiers"></a>Trainable 类元
 
 此分类方法尤其适合于手动或自动模式匹配方法无法轻松识别的内容。 此分类方法详细介绍了如何培训分类器，以根据项目的具体内容（而不是项目中的元素）来标识项目（模式匹配）。 分类器了解如何通过查看您感兴趣的内容的数百个示例来标识内容类型。 首先，我们对类别中明确的示例进行了介绍。 处理这些程序后，通过为匹配和不匹配的示例提供组合来对其进行测试。 然后，分类器将对任何给定项是否属于您要生成的类别进行预测。 然后，确认其结果，并对误报、负、误报和漏报进行排序，以帮助提高预测的准确性。 在发布训练有素的分类器时，它会通过 SharePoint Online、Exchange 和 OneDrive 等位置中的项目进行排序，并对内容进行分类。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>在哪里可以使用 trainable 分类程序
-内置分类器和 trainable 分类器都可用作基于条件和[通信合规性](communication-compliance-configure.md)[自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)的条件。 
+内置分类器和 trainable 分类器都可用作基于条件和[通信合规性](communication-compliance-configure.md)[自动应用保留标签策略](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)的条件。 
 
-敏感度标签可将内置和内部自定义的分类器用作条件，请参阅[向内容自动应用灵敏度标签](apply-sensitivity-label-automatically.md)和[为 Office 应用程序自动添加标签](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)。
+敏感度标签可将内置和内部自定义的分类器用作条件，请参阅[将灵敏度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
 
 > [!IMPORTANT]
 > Trainable 类元仅适用于未加密且为英语的项目。
@@ -87,7 +87,7 @@ Microsoft 365 附带了五个建议的内置分类器：
 
   |语言名称|||||
   |---------|---------|---------|---------|---------|
-  |ActionScript|C        |Lc#       |C     |Clojure  |
+  |ActionScript|C        |C#       |C     |Clojure  |
   |CoffeeScript|CSS     |转到       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |编写     |PHP      |Python   |R        |Ruby     |
@@ -129,8 +129,7 @@ Microsoft 365 附带了五个建议的内置分类器：
 ## <a name="see-also"></a>另请参阅
 
 
-- [保留标签](labels.md)
-- [保留策略](retention-policies.md)
+- [保留标签](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [敏感度标签](sensitivity-labels.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)

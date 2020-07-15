@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: 了解如何使用 DSR 机箱工具管理欧盟常规数据保护法规（GDPR）数据主体请求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815449"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126773"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>在安全 & 合规中心中使用 DSR 事例工具管理 GDPR 数据主体请求
 
@@ -247,7 +247,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 - **邮件类型（ `kind` ）** –指定要搜索的电子邮件项目的类型。 例如，可以使用语法 `kind:email OR kind:im` 仅返回 Microsoft 团队中的电子邮件和 Skype For business 对话或一对一聊天。 
     
-- **合规性标记（ `compliancetag` ）** –指定分配给电子邮件或文档的标签。 此条件返回使用特定标签分类的项目。 标签用于根据标签定义的分类对电子邮件和文档进行分类，并强制执行保留规则。 这是用于 DSR 调查的有用条件，因为您的组织可能会使用标签对与数据隐私相关的内容或包含个人数据或敏感信息的内容进行分类。 对于此条件的值，请使用完整的标签名称或标签名称的第一部分和通配符。 有关详细信息，请参阅[Office 365 中的标签概述](labels.md)。
+- **合规性标记（ `compliancetag` ）** –指定分配给电子邮件或文档的标签。 此条件返回使用特定标签分类的项目。 标签用于根据标签定义的分类对电子邮件和文档进行分类，并强制执行保留规则。 这是用于 DSR 调查的有用条件，因为您的组织可能会使用标签对与数据隐私相关的内容或包含个人数据或敏感信息的内容进行分类。 对于此条件的值，请使用完整的标签名称或标签名称的第一部分和通配符。 有关详细信息，请参阅[了解 Office 365 中的保留策略和保留标签](retention.md)。
     
 有关在 DSR 机箱工具中可用的所有条件的列表和说明，请参阅 "内容搜索的关键字查询和搜索条件" 一文中的 "[搜索条件](keyword-queries-and-search-conditions.md#search-conditions)" 一文。 
   

@@ -22,11 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可以在 Office 365 安全 & 合规中心中搜索的电子邮件和文件属性。
-ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 90365889ed60a5250514fa50b8034d5cfcb904bd
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049800"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127177"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
 
@@ -194,7 +195,7 @@ ms.locfileid: "45049800"
 |发件人/作者|对于电子邮件而言，是指发送邮件的人。 对于文档而言，是指从 Office 文档的作者字段中引用的人员。 你可以键入多个名称，用逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
 |大小（以字节为单位）|对于电子邮件和文档而言，是项目的大小（以字节为单位）。|
 |主题/职务|对电子邮件而言，是指邮件的主题行中的文本。 对于文档而言，是指文档的标题。 如上文所述，Title 属性是在 Microsoft Office 文档中指定的元数据。 您可以键入多个主题/标题的名称，以逗号分隔。 通过 **OR** 运算符在逻辑上连接两个或多个值。|
-|合规性标签|对于电子邮件和文档，通过标签策略或由用户手动分配的保留标签自动分配给邮件和文档的保留标签。 保留标签用于对电子邮件和文档进行分类，以根据标签定义的设置对电子邮件和文档进行分类和强制实施保留规则。 您可以键入部分保留标签名称，然后使用通配符或键入完整的标签名称。 有关详细信息，请参阅[保留标签概述](labels.md)。|
+|合规性标签|对于电子邮件和文档，自动标记策略或已由用户手动分配的保留标签自动分配给邮件和文档的保留标签。 保留标签用于对电子邮件和文档进行分类，以根据标签定义的设置对电子邮件和文档进行分类和强制实施保留规则。 您可以键入部分保留标签名称，然后使用通配符或键入完整的标签名称。 有关保留标签的详细信息，请参阅[了解保留策略和保留标签](retention.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>邮件属性的条件

@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 了解可帮助您在 Microsoft 365 中快速开始遵守合规性的任务。
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732477"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126611"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门的快速任务
 
@@ -83,7 +83,7 @@ To get their work done, people in your organization collaborate with others both
 
 ## <a name="task-7-configure-a-retention-policy"></a>任务7：配置保留策略
 
-[保留策略](retention-policies.md)使您能够主动决定是保留内容、删除内容还是两者都保留，然后在指定的保留期结束时删除内容。 您可能需要执行这些操作以遵守行业法规和内部策略，以及在发生诉讼或违反安全漏洞时降低风险。
+[保留策略](retention.md)使您能够主动决定是保留内容、删除内容还是两者都保留，然后在指定的保留期结束时删除内容。 您可能需要执行这些操作以遵守行业法规和内部策略，以及在发生诉讼或违反安全漏洞时降低风险。
 
 当内容符合保留策略时，用户可以继续编辑和处理内容，就好像没有任何更改。 内容将保留在其原始位置。 但是，如果有人编辑或删除了保留策略遵守的内容，则原始内容的副本会保存到一个安全位置，在该位置保存该内容的保留策略生效。
 
@@ -107,11 +107,15 @@ To get their work done, people in your organization collaborate with others both
 
 ### <a name="configure-retention-labels"></a>配置保留标签
 
-虽然保留策略适用于容器级别和 SharePoint 网站和 Exchange 邮箱等位置，但[保留标签](labels.md)允许对保留和删除策略进行更具体的设定。 例如，在文档或电子邮件级别，最终用户除了可由管理员自动应用之外，还可以手动应用。 您还可以将保留标签应用于 SharePoint 中的文档库、文件夹或文档集，以便存储在该位置的所有文档都继承默认保留标签。
+虽然保留策略适用于容器级别和 SharePoint 网站和 Exchange 邮箱等位置，但[保留标签](retention.md#retention-labels)允许对保留和删除策略进行更具体的设定。 例如，在文档或电子邮件级别，最终用户除了可由管理员自动应用之外，还可以手动应用。 您还可以将保留标签应用于 SharePoint 中的文档库、文件夹或文档集，以便存储在该位置的所有文档都继承默认保留标签。
 
 此外，保留标签支持[记录管理](records-management.md)以将内容标记为记录。 在此情况下，无法更改或删除标签，也不能编辑或删除内容。 为了帮助组织遵守法规要求，可能需要这些限制。
 
-有关创建和发布保留标签的分步指南，请参阅[创建、发布和自动应用保留标签](create-retention-labels.md)。 有关记录管理许可的信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
+有关创建和发布保留标签的分步指南，请参阅以下指南：
+- [创建保留标签并在应用程序中应用](create-apply-retention-labels.md)
+- [将保留标签自动应用于内容](apply-retention-labels-automatically.md)
+
+有关记录管理许可的信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
 
 ### <a name="identify-and-define-sensitive-information-types"></a>标识和定义敏感信息类型
 

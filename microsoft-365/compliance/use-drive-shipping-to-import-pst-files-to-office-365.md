@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 管理员可以通过将 PST 文件复制到硬盘并将其发布到 Microsoft，了解如何将 PST 文件批量导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819082"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127339"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>使用驱动器发货以导入组织的 PST 文件
 
@@ -51,7 +51,7 @@ ms.locfileid: "44819082"
   
 有关使用驱动器发货将 PST 文件导入到 Office 365 的常见问题，请参阅[使用 drive 航运导入 pst 文件的常见问题解答](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)。 
   
-## <a name="before-you-import-pst-files"></a>导入 PST 文件之前
+## <a name="before-you-import-pst-files"></a>导入 PST 文件前
 
 - 必须分配有 Exchange Online 中的邮箱导入导出角色，才能将 PST 文件导入到 Microsoft 365 邮箱。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 可以向“组织管理”角色组添加“邮箱导入导出”角色。 或者，可以创建一个角色组，分配“邮箱导入导出”角色，然后将自己添加为成员。 有关详细信息，请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?LinkId=730688)中的“向角色组添加角色”或“创建角色组”部分。
     
@@ -460,7 +460,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 使用 Microsoft[电子数据展示工具](search-for-content.md)搜索数据。 
     
-  - 应用[Microsoft 365 保留策略](retention-policies.md)以控制保留数据的时间长度，以及保留期过期后要执行的操作。 
+  - 应用[Microsoft 365 保留策略](retention.md)以控制保留数据的时间长度，以及保留期过期后要执行的操作。 
     
   - 在[审核日志](search-the-audit-log-in-security-and-compliance.md)中搜索与此数据相关的事件。 
     

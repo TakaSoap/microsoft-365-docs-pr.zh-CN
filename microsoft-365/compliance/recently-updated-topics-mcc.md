@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 合规性中心中的功能一样，我们的帮助内容始终在发展中。 了解本月新增和更新的内容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035637"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127509"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 合规性内容的最新更新
 
@@ -202,7 +202,7 @@ ms.locfileid: "45035637"
 
 ### <a name="records-management"></a>记录管理
 
-[保留标签概述](labels.md)（已更新）<br>基于条件应用保留标签的部分现在包括使用 trainable 分类器的选项。
+[保留标签概述](retention.md)（已更新）<br>基于条件应用保留标签的部分现在包括使用 trainable 分类器的选项。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

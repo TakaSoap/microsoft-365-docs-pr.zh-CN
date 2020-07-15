@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何确定可在 Microsoft 365 中的 Exchange Online 邮箱上放置的不同保留类型。
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817601"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126803"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -36,7 +36,7 @@ Microsoft 365 提供了多种方法，使您的组织可以阻止邮箱内容被
 
 - **[就地保留](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 使用 exchange Online 中 Exchange 管理中心的就地电子数据展示 & 保留工具对用户邮箱应用的保留。
 
-- ** [Microsoft 365 保留策略](retention-policies.md)：** 可以配置为保留（或保留并删除） Exchange Online 中的用户邮箱中的内容，以及 Microsoft 365 组和 Microsoft 团队对应的邮箱中的内容。 您还可以创建保留策略以保留 Skype for Business 对话，这些会话存储在用户邮箱中。
+- ** [Microsoft 365 保留策略](retention.md)：** 可以配置为保留（或保留并删除） Exchange Online 中的用户邮箱中的内容，以及 Microsoft 365 组和 Microsoft 团队对应的邮箱中的内容。 您还可以创建保留策略以保留 Skype for Business 对话，这些会话存储在用户邮箱中。
 
   有两种类型的 Microsoft 365 保留策略可分配给邮箱。
 
@@ -46,7 +46,7 @@ Microsoft 365 提供了多种方法，使您的组织可以阻止邮箱内容被
     
   有关详细信息，请参阅[将保留策略应用于整个组织或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)部分。
 
-- **[Microsoft 365 保留标签](labels.md)：** 如果用户应用 microsoft 365 保留标签（配置为保留内容或保留内容，然后将内容删除）到其邮箱中的*任何*文件夹或项目中，则会在邮箱上放置保留，就像邮箱被置于诉讼保留状态或分配到 Microsoft 365 保留策略。 有关详细信息，请参阅[保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
+- **[Microsoft 365 保留标签](retention.md)：** 如果用户应用 microsoft 365 保留标签（配置为保留内容或保留内容，然后将内容删除）到其邮箱中的*任何*文件夹或项目中，则会在邮箱上放置保留，就像邮箱被置于诉讼保留状态或分配到 Microsoft 365 保留策略。 有关详细信息，请参阅[保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)部分。
 
 若要管理处于保留状态的邮箱，您可能需要确定邮箱中放置的保留类型，以便可以执行诸如更改保留持续时间、临时或永久删除保留或从 Microsoft 365 保留策略中排除邮箱等任务。 在这些情况下，第一步是确定邮箱上放置的保留类型。 由于多个保留（和不同类型的保留）可以放置在单个邮箱上，因此，如果您想要删除或更改保留，则必须标识邮箱中的所有保留项。
 
@@ -100,7 +100,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |适用于 Exchange 邮箱、Exchange 公用文件夹和团队聊天的 Microsoft 365 保留策略    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   在 Microsoft 团队中应用于 Exchange 邮箱、Exchange 公用文件夹和1xN 聊天的组织范围内的保留策略由以前缀开头的 Guid 进行标识 `mbx` 。 注意1xN 聊天存储在各个聊天参与者的邮箱中。      |
 |适用于 Microsoft 365 组和团队频道消息的 microsoft 365 保留策略     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 团队中应用于 Microsoft 365 组和频道消息的组织范围内的保留策略由以前缀开头的 Guid 标识 `grp` 。 注释通道邮件存储在与 Microsoft 团队相关联的组邮箱中。     |
 
-有关应用于 Microsoft 团队的详细信息保留策略，请参阅[保留策略](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的 "团队位置" 一节概述。
+有关应用于 Microsoft 团队的保留策略的详细信息，请参阅[了解 Microsoft 团队的保留策略](retention-policies-teams.md)。
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>了解保留策略的 InPlaceHolds 值的格式
 
@@ -120,7 +120,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |**双面**    |    指示保留策略配置为保留项目。 在保留期过期后，策略不会删除项目。     |
 |**第三章**     |   指示保留策略配置为保留项目，然后在保留期过期后将其删除。      |
 
-有关保留操作的详细信息，请参阅[保留策略概述](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)中的 "在特定时间段内保留内容" 部分。
+有关保留操作的详细信息，请参阅在[特定时间段内保留内容](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)一节。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步骤2：使用 GUID 标识保留
 
@@ -179,7 +179,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-有关保留标签的详细信息，请参阅[Microsoft 365 保留标签概述](labels.md)。
+有关保留标签的详细信息，请参阅[保留标签](retention.md#retention-labels)。
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>在延迟保留时管理邮箱
 

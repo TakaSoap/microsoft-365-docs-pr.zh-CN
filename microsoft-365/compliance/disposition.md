@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702556"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127009"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -86,11 +86,11 @@ ms.locfileid: "44702556"
 
 ### <a name="workflow-for-a-disposition-review"></a>用于处置评审的工作流
 
-这是在发布保留标签，然后由用户手动应用时进行处置评审的基本工作流。 此外，还可以将为处置评审配置的保留标签自动应用于内容。
+下图显示了在发布保留标签并随后由用户手动应用时进行处置评审的基本工作流。 此外，还可以将为处置评审配置的保留标签自动应用于内容。
   
 ![显示处置的工作流的图表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-在保留期结束时触发处置评审是一个仅可用于[保留标签](labels.md)的配置选项。 此选项在保留策略中不可用。
+在保留期结束时触发处置评审是一个仅可用于保留标签的配置选项。 此选项不适用于保留策略。 有关这两种保留解决方案的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
   
 ![标签的保留设置](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -119,7 +119,7 @@ ms.locfileid: "44702556"
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>在永久删除已释放内容之前的时间
 
-等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将成为符合以下条件的标准清理过程：[保留策略如何处理就地内容](retention-policies.md#how-a-retention-policy-works-with-content-in-place)。
+等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将成为符合[保留设置如何与内容配合](retention.md#how-retention-settings-work-with-content-in-place)使用的标准清理过程。
 
 ## <a name="disposition-of-records"></a>记录的处置
 

@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 中的非活动邮箱功能保留已删除邮箱的内容。
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023355"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127539"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>创建和管理非活动邮箱
 
@@ -42,7 +42,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
 
 - 如果诉讼保留或保留策略（配置为保留或保留，然后删除内容）未在删除邮箱之前应用于该邮箱，则不会保留或发现邮箱的内容。 但是，删除的邮箱可以在删除后的30天内恢复，但是如果未恢复，则30天后将永久删除该邮箱及其内容。
 
-- 有关诉讼保留的详细信息，请参阅[就地保留和诉讼保留](https://go.microsoft.com/fwlink/p/?LinkId=846124)。 有关保留策略的详细信息，请参阅[Microsoft 365 中的保留策略概述](retention-policies.md)。
+- 有关诉讼保留的详细信息，请参阅[就地保留和诉讼保留](https://go.microsoft.com/fwlink/p/?LinkId=846124)。 有关保留策略的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
   
 ## <a name="create-an-inactive-mailbox"></a>创建非活动邮箱
 
@@ -58,7 +58,7 @@ Microsoft 365 使您可以保留已删除邮箱的内容。 此功能称为“�
   
 - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Office 365 中的保留策略概述](retention-policies.md)
+- [了解 Office 365 中的保留策略和保留标签](retention.md)
     
 > [!NOTE]
 > 对于诉讼保留和保留策略，您可以创建无限保留或基于时间的保留。 在无限期保留中，非活动邮箱的内容将永远保留，或直到删除保留或保留持续时间更改为止。 删除保留策略（假定邮箱已在30天前删除）后，非活动邮箱将标记为永久删除，邮箱的内容将不再保留或不可发现。 在基于时间的保留策略或保留策略中，您可以指定保留的持续时间。 这个时间段以每个项目为基础，从邮箱项目接收或创建之日算起。 邮箱项目的保留过期，并且该项目移到或位于非活动邮箱的 "可恢复的项目" 文件夹中时，该项目会在已删除项目的保留期过期后从非活动邮箱中永久删除（清除）。 

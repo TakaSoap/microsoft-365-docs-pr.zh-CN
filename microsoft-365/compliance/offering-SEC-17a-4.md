@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89456de1ec4ef170d85d7bd9c6b210d8bdb39f28
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 63a7c4f7385ec3d782ff030374ba344406c6d094
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773723"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126661"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>证券和交换委员会（SEC）规则17a-4 （f）美国
 
@@ -40,7 +40,7 @@ Microsoft Azure 不可变 Blob 存储 with with Policy Lock 和 Microsoft Office
 为了评估 Azure 和 Office 365 符合 SEC Rule 17a-4 （f），Microsoft 保留了一个独立的评估事务所，专门从事记录管理和信息治理，Cohasset 相关。 在生成的报告中：
 
 - **Azure**： [SEC 17a-4 （f）合规性评估： Microsoft azure 存储](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用策略锁定选项验证了[Azure 不可变 blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)，用于保留不可擦除和不可改写（WORM）格式的基于时间的 blob，满足 SEC 规则的不可变存储要求。 每个 Blob （记录）都受到保护，无法进行修改、覆盖或删除，除非所需的保留期已过期，并且已释放所有关联的合法保留期。 具有敏感工作负载的软件提供商和合作伙伴现在可以依赖 Azure 不可变 Blob 存储作为 onestop 云解决方案，以实现记录保留和不可变存储。 金融机构现在可以构建自己的应用程序，利用这些功能，同时保持兼容性。
-- **Office 365**：[使用 EXCHANGE Online 符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 验证了[具有保留锁定的 Office 365](retention-policies.md)包括存档功能，这些功能可让受管制的客户（包括经纪人代理商）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Office 365 中的保留策略帮助保留一系列数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
+- **Office 365**：[使用 EXCHANGE Online 符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 验证了[具有保留锁定的 Office 365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)包括存档功能，这些功能可让受管制的客户（包括经纪人代理商）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Office 365 中的保留策略帮助保留一系列数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 

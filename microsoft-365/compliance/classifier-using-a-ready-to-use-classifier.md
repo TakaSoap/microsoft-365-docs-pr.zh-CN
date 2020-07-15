@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 附带了大量内置分类器，可用于在组织中标识和标记内容。 本主题介绍如何准备使用这些分类器。
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371404"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126311"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留标签测试内置分类器（预览）
 
@@ -40,7 +40,7 @@ Microsoft 365 附带了五个建议的内置分类器：
 
   |语言名称|||||
   |---------|---------|---------|---------|---------|
-  |ActionScript|C        |Lc#       |C     |Clojure  |
+  |ActionScript|C        |C#       |C     |Clojure  |
   |CoffeeScript|CSS     |转到       |Haskell |HTML     |
   |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
   |编写     |PHP      |Python   |R        |Ruby     |
@@ -71,9 +71,9 @@ Microsoft 365 附带了五个建议的内置分类器：
 
 5. 选择 `Choose a label to auto-apply` 。
 
-6. 选择 `Create new labels` 并创建一个标签，以便在此测试中直接使用。 执行此操作时，请将 `Retention` 设置为 `off` 。 您不希望启用任何保留或其他操作。 在这种情况下，您将使用保留标签，只是将其用作文本标签，而不会强制执行任何操作。 例如，您可以创建一个名为 "SourceCode 分类程序测试" 的保留标签，无操作，然后将该保留标签自动应用于将源代码分类器作为条件的内容。 若要了解有关创建保留标签的详细信息，请参阅[保留标签概述](labels.md)。
+6. 选择 `Create new labels` 并创建一个标签，以便在此测试中直接使用。 执行此操作时，请将 `Retention` 设置为 `off` 。 您不希望启用任何保留或其他操作。 在这种情况下，您将使用保留标签，只是将其用作文本标签，而不会强制执行任何操作。 例如，您可以创建一个名为 "SourceCode 分类程序测试" 的保留标签，无操作，然后将该保留标签自动应用于将源代码分类器作为条件的内容。 若要了解有关保留标签的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
   
-7. 依次选择 "" 和 "" `Auto-apply a label` `Choose a label to auto-apply` 。 若要了解有关使用基于条件的自动应用标签的详细信息，请参阅[根据条件自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
+7. 依次选择 "" 和 "" `Auto-apply a label` `Choose a label to auto-apply` 。 若要了解有关使用基于条件的自动应用标签的详细信息，请参阅，[配置自动应用保留标签的条件](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。
 
 8. 从列表中选择您的测试标签，然后选择 "" `Next` 。
 
@@ -106,5 +106,5 @@ Microsoft 365 附带了五个建议的内置分类器：
 另请参阅：
 
 - [可训练分类器入门（预览）](classifier-getting-started-with.md)
-- [保留标签概述](labels.md)
-- [根据条件自动应用保留标签策略](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [了解保留策略和保留标签](retention.md)
+- [自动应用保留标签以保留或删除内容](apply-retention-labels-automatically.md)

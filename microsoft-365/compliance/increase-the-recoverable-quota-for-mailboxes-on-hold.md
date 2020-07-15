@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: '启用存档邮箱并打开自动扩展存档，以增加 Office 365 中的 "可恢复的项目" 文件夹的大小。 '
-ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: 启用存档邮箱并打开自动扩展存档，以增加 Microsoft 365 中邮箱的 "可恢复的项目" 文件夹的大小。
+ms.openlocfilehash: 3c2ac29fe650d03db7e5d4d1282b870eaece447c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222705"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138264"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>为置于保留状态的邮箱增加可恢复项目的配额
 
-将自动应用于 Exchange Online 中新邮箱的默认保留策略（名为 "默认 MRM 策略"）包含一个名为 "可恢复的项目14天" 的保留标记，可转移到存档中。 此保留标记将项目从用户主邮箱中的 "可恢复的项目" 文件夹移动到用户的存档邮箱中的 "可恢复的项目" 文件夹中，在该项目的14天保留期到期之后。 为此，必须启用用户的存档邮箱。 如果未启用存档邮箱，则不会执行任何操作，这意味着保留邮箱的 "可恢复的项目" 文件夹中的项目在14天保留期过期后不会移动到存档邮箱。 由于保留邮箱时不会从邮箱中删除任何内容，因此可能会超出 "可恢复的项目" 文件夹的存储配额，尤其是在未启用用户的存档邮箱的情况下。 
+将自动应用于 Exchange Online 中的新邮箱的默认 Exchange 保留策略（名为 "*默认 MRM 策略*"）包含一个名为 "可恢复的项目" 的保留标记。移动到存档的14天。 此保留标记将项目从用户主邮箱中的 "可恢复的项目" 文件夹移动到用户的存档邮箱中的 "可恢复的项目" 文件夹中，在该项目的14天保留期到期之后。 为此，必须启用用户的存档邮箱。 如果未启用存档邮箱，则不会执行任何操作，这意味着保留邮箱的 "可恢复的项目" 文件夹中的项目在14天保留期过期后不会移动到存档邮箱。 由于保留邮箱时不会从邮箱中删除任何内容，因此可能会超出 "可恢复的项目" 文件夹的存储配额，尤其是在未启用用户的存档邮箱的情况下。 
   
 为了帮助降低超出此限制的可能性，在 Exchange Online 中的邮箱上放置保留时，"可恢复的项目" 文件夹的存储配额将自动从 30 GB 增加到 100 GB。 如果启用存档邮箱，则存档邮箱中的 "可恢复的项目" 文件夹的存储配额也会从 30 GB 增加到 100 GB。 如果启用了 Exchange Online 中的自动扩展存档功能，则用户存档中的 "可恢复的项目" 文件夹的存储配额将不受限制。
   
@@ -42,20 +42,20 @@ ms.locfileid: "44222705"
   
 当置于保留状态的邮箱的主邮箱"可恢复的项目"文件夹的存储配额接近其限额时，可以执行以下操作：
   
-- **启用存档邮箱并打开自动扩展存档**-您只需启用存档邮箱，然后在 Exchange Online 中打开自动扩展存档功能，即可为 "可恢复的项目" 文件夹启用无限存储容量。 这将导致主邮箱中的 "可恢复的项目" 文件夹的 110 GB 和用户存档中 "可恢复的项目" 文件夹的存储容量不受限制。 请参阅如何：[在安全 & 合规性中心中启用存档邮箱](enable-archive-mailboxes.md)，以及如何[在 Office 365 中启用无限存档](enable-unlimited-archiving.md)。
+- **启用存档邮箱并启用自动扩展存档。** 只需启用存档邮箱，然后启用 ExchangeOnline 中的自动扩展存档功能，就可以为“可恢复的项目”文件夹开启无限制存储容量。 这将导致主邮箱中的 "可恢复的项目" 文件夹的 110 GB 和用户存档中 "可恢复的项目" 文件夹的存储容量不受限制。 请参阅如何：[在安全 & 合规性中心中启用存档邮箱](enable-archive-mailboxes.md)，以及如何[在 Office 365 中启用无限存档](enable-unlimited-archiving.md)。
     
     > [!NOTE]
     > 为"可恢复的项目"文件夹存储配额接近上限的邮箱启用存档功能后，可能需要运行托管文件夹助理以自动触发助理处理邮箱，以便将过期项目移至存档邮箱的"可恢复的项目"文件夹。 有关说明，请参阅[步骤 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。 注意，用户邮箱中的其他项目可能会移至新的存档邮箱。 请考虑告诉用户在启用存档邮箱后可能会发生这种情况。 
   
-- 在**保留时为邮箱创建自定义保留策略**，除了在诉讼保留或就地保留中启用邮箱的存档邮箱和自动扩展存档外，您可能还需要为处于保留状态的邮箱创建自定义保留策略。 你可以将保留策略应用于保留的邮箱，此策略与应用到未保留邮箱的"默认 MRM 策略"有所不同。 这样就可以应用专为置于保留状态的邮箱设计的保留标记。 其中包括为"可恢复的项目"文件夹创建新的保留标记。 
+- **为处于保留状态的邮箱创建自定义 Exchange 保留策略。** 除了在诉讼保留或就地保留中启用邮箱的存档邮箱和自动扩展存档之外，您可能还需要为处于保留状态的邮箱创建自定义 Exchange 保留策略。 这使您可以将保留策略应用于保留的邮箱，这些邮箱与应用于不保留的邮箱的默认 MRM 策略不同，并允许您应用专为邮箱保留的保留标记。 其中包括为"可恢复的项目"文件夹创建新的保留标记。 
     
-本主题的其余部分介绍了为处于保留状态的邮箱创建自定义保留策略的分步过程。
+本主题的其余部分介绍了为处于保留状态的邮箱创建自定义 Exchange 保留策略的分步过程。
   
 [步骤1：为 "可恢复的项目" 文件夹创建自定义保留标记](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[[步骤2：为处于保留状态的邮箱创建新的保留策略](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+[步骤2：为处于保留状态的邮箱创建新的 Exchange 保留策略](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[步骤3：将新的保留策略应用于处于保留状态的邮箱](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
+[步骤3：将新的 Exchange 保留策略应用于处于保留状态的邮箱](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [Optional步骤4：运行托管文件夹助理以应用新的保留设置](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
@@ -80,7 +80,7 @@ ms.locfileid: "44222705"
     > [!TIP]
     > 我们建议可恢复项目 RPT 的保留期（由_AgeLimitForRetention_参数定义）与 RPT 将应用到的邮箱的已删除项目保留期相同。 这允许用户整个已删除项目的保留期在将已删除邮件移至存档邮箱之前将其恢复。 在上面的示例中，假定邮箱的已删除邮件保留期也为30天，则保留期已设置为30天。 默认情况下，Exchange Online 邮箱配置为将已删除项目保留14天。 但您最多可以将此设置更改为30天。 有关详细信息，请参阅[在 Exchange Online 中更改邮箱的已删除邮件保留期](https://www.microsoft.com/?ref=go)。 
   
-## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>步骤2：为处于保留状态的邮箱创建新的保留策略
+## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>步骤2：为处于保留状态的邮箱创建新的 Exchange 保留策略
 
 下一步是创建新的保留策略并向其添加保留标记，包括您在步骤1中创建的 "可恢复的项目" RPT。 在下一步中，此新策略将应用于处于保留状态的邮箱。 
   
@@ -131,13 +131,13 @@ New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list o
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
 
-## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>步骤3：将新的保留策略应用于处于保留状态的邮箱
+## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>步骤3：将新的 Exchange 保留策略应用于处于保留状态的邮箱
 
 最后一步是将您在步骤2中创建的新的保留策略应用于组织中的 "保留中的邮箱"。 您可以使用 EAC 或 Exchange Online PowerShell 将保留策略应用于单个邮箱或多个邮箱。 
   
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>使用 EAC 应用新的保留策略
   
-1. 转到" **收件人**"\>" **邮箱**"。
+1. 转到 "**收件人**" "  >  **邮箱**"。
     
 2. 在列表视图中，选择要应用保留策略的邮箱，然后单击 "**编辑** ![ 编辑图标" ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
@@ -147,7 +147,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
     
 您还可以使用 EAC 将保留策略应用于多个邮箱。
   
-1. 转到" **收件人**"\>" **邮箱**"。
+1. 转到 "**收件人**" "  >  **邮箱**"。
     
 2. 在此列表视图中，使用 Shift 或 Ctrl 键选择多个邮箱。
     
@@ -205,7 +205,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Optional步骤4：运行托管文件夹助理以应用新的保留设置
 
-将新的保留策略应用于保留邮箱后，托管文件夹助理在 Exchange Online 中最长可能需要7天才能使用新的保留策略中的设置处理这些邮箱。 您可以使用**start-managedfolderassistant** cmdlet 手动触发助理以处理应用新的保留策略的邮箱，而不是等待托管文件夹助理运行。 
+将新的 Exchange 保留策略应用于保留邮箱后，在 Exchange Online 中可能需要长达7天的时间，托管文件夹助理才能使用新保留策略中的设置处理这些邮箱。 您可以使用**start-managedfolderassistant** cmdlet 手动触发助理以处理应用新的保留策略的邮箱，而不是等待托管文件夹助理运行。 
   
 运行以下命令以启动 Pilar Pinilla 的邮箱的托管文件夹助理。
   

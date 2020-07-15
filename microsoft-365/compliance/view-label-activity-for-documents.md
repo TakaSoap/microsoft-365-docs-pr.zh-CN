@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 了解如何使用 Microsoft 365 安全与合规中心中的标签活动浏览器来搜索和查看标签活动。
-ms.openlocfilehash: 9cf505575a17c8f6eb4d48e609d358f9c988965f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e21bb867044b2a6644b125aad9983ce3518f70ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819022"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127269"
 ---
 # <a name="view-label-activity-for-documents"></a>查看文档的标签活动
 
@@ -51,7 +51,7 @@ After you create your labels, you'll want to verify that they're being applied t
 
 At the top of the Label Activity Explorer, you can choose whether to view activities for files or folders. Note that folder activity includes only the folder itself, not the files inside the folder.
   
-You might want to see label activity for folders because if you label a folder, all files inside that folder also get that label (except for files that have had a label applied explicitly to them). Therefore, labeling folders might affect a significant number of files. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+You might want to see label activity for folders because if you label a folder, all files inside that folder also get that label (except for files that have had a label applied explicitly to them). Therefore, labeling folders might affect a significant number of files. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
 ![用于显示文件和文件夹的标签活动的下拉菜单](../media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文在 Microsoft 365 中的高级电子数据展示案例中的审阅集中定义文档的元数据字段。
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726448"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126949"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>高级电子数据展示中的文档元数据字段
 
@@ -46,7 +46,7 @@ ms.locfileid: "44726448"
 |作者|作者|Doc_authors|来自文档元数据的作者。|
 |BCC|Bcc|Email_bcc|邮件类型的 "密件抄送" 字段。 格式为**DisplayName \<SMTPAddress> **。|
 |CC|Cc|Email_cc|邮件类型的 "抄送" 字段。 格式为**DisplayName \<SMTPAddress> **。|
-|合规性标签|ComplianceLabels|Compliance_labels|将[保留标签](labels.md)应用于 Office 365 中的内容。|
+|合规性标签|ComplianceLabels|Compliance_labels|将[保留标签](retention.md)应用于 Office 365 中的内容。|
 |复合路径|CompoundPath|Compound_path|描述项目来源的可读路径。|
 |内容|内容||提取的项的文本。|
 |对话正文|对话正文||项目的对话正文。|
@@ -103,7 +103,7 @@ ms.locfileid: "44726448"
 |Item 类|ItemClass|Item_class|由 exchange server 提供的 Item 类;例如， **IPM。注释**|
 |上次修改日期|LastModifiedDate|Doc_date_modified|文档元数据中的上次修改日期。|
 |加载 ID|LoadId|Load_ID|将项目添加到评审集的负载集的 Id。|
-|Location|Location|Location|表示文档来源的位置的类型的字符串。<br /><br />**导入的数据**-非 Office 365 数据<br />**团队**-Microsoft 团队<br />**Exchange** -exchange 邮箱<br />**Sharepoint** -sharepoint 网站<br />**Onedrive** -onedrive 帐户|
+|位置|位置|位置|表示文档来源的位置的类型的字符串。<br /><br />**导入的数据**-非 Office 365 数据<br />**团队**-Microsoft 团队<br />**Exchange** -exchange 邮箱<br />**Sharepoint** -sharepoint 网站<br />**Onedrive** -onedrive 帐户|
 |位置名称|LocationName|Location_name|标识项的源的字符串。 对于 exchange，这将是邮箱的 SMTP 地址;对于 SharePoint 和 OneDrive，是网站集的 URL。|
 |标记为代表|MarkAsRepresentative||每组精确的重复项中的一个文档被标记为代表。|
 |标记为前置标记事例问题 1 *||Marked_as_pre_tagged_Case_issue_1|标记为 "预先标记的案例问题 1" 与 "相关性"。|

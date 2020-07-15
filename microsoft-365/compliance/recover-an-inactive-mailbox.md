@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 了解如何在 Office 365 中恢复非活动邮箱的内容，方法是将其转换为包含非活动邮箱内容的新邮箱。
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818942"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127459"
 ---
 # <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
@@ -81,7 +81,7 @@ ms.locfileid: "44818942"
   
      - **就地保留**就地保留将从恢复的邮箱中删除。 这意味着恢复的邮箱将从任何就地保留或就地电子数据展示搜索中作为源邮箱删除。
      
-     - **使用保留锁定的 Microsoft 365 保留策略。** 如果将非活动邮箱分配给具有保留锁定（称为*锁定的保留策略*）的保留策略，则会将恢复的邮箱分配给同一个锁定的保留策略。 有关锁定的保留策略的详细信息，请参阅[了解保留策略](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+     - **使用保留锁定的 Microsoft 365 保留策略。** 如果将非活动邮箱分配给具有保留锁定（称为*锁定的保留策略*）的保留策略，则会将恢复的邮箱分配给同一个锁定的保留策略。 有关锁定的保留策略的详细信息，请参阅[使用保留锁定来符合法规要求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
   
      - **Microsoft 365 保留策略，无保留锁定。** 非活动邮箱将从应用于它的任何未锁定的 Microsoft 365 保留策略中删除。 但是，在恢复的邮箱上启用了诉讼保留，以防止根据删除超过特定年龄的内容的任何组织范围的保留策略来删除邮箱内容。 您可以保留诉讼保留或将其删除。 有关详细信息，请参阅[创建诉讼保留](create-a-litigation-hold.md)。
 

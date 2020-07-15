@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何设置自定义连接器以从数据源（如 Salesforce Chatter、Yahoo Messenger 或 Yammer）导入第三方数据。
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817037"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126651"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>与合作伙伴联系以存档第三方数据
 
@@ -499,7 +499,7 @@ ms.locfileid: "44817037"
     
       - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [保留策略概述](retention-policies.md)
+      - [了解保留策略和保留标签](retention.md)
     
     - 为对第三方数据邮箱的所有者、代理和管理员访问启用邮箱审核日志记录;请参阅[启用邮箱审核](enable-mailbox-auditing.md)。 这使您可以审核任何有权访问第三方数据邮箱的用户执行的所有活动。
 
@@ -513,7 +513,7 @@ ms.locfileid: "44817037"
     
     - [将邮箱置于诉讼保留状态](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [保留策略概述](retention-policies.md)
+    - [了解保留策略和保留标签](retention.md)
     
     如前所述，在将邮箱置于保留时，您可以设置保留第三方数据源中项目的时长，或者也可以选择无限期保留这些项目。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 了解如何删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于 "合法保留" 中也是如此。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817871"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127019"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>删除保留的基于云的邮箱的 "可恢复的项目" 文件夹中的项目-管理员帮助
 
@@ -52,7 +52,7 @@ Exchange Online 邮箱的 "可恢复的项目" 文件夹存在，以防止意外
 
 - 非活动邮箱不支持本文中介绍的过程。 这是因为删除后不能对非活动邮箱重新应用保留（或保留策略）。 从非活动邮箱删除保留时，它会更改为标准软删除邮箱，并且在托管文件夹助理处理后，将从组织中永久删除。
 
-- 您不能对已分配给已使用保留锁锁定的保留策略的邮箱执行此过程。 这是因为保留锁可防止您从保留策略中删除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[使用保留锁定符合法规要求](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+- 您不能对已分配给已使用保留锁锁定的保留策略的邮箱执行此过程。 这是因为保留锁可防止您从保留策略中删除邮箱，也无法在邮箱上禁用托管文件夹助理。 有关锁定保留策略的详细信息，请参阅[使用保留锁定符合法规要求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
 - 如果未将邮箱置于保留状态（或未启用单个项目恢复），则可以从 "可恢复的项目" 文件夹中删除这些项目。 有关如何执行此操作的详细信息，请参阅[在组织中搜索和删除电子邮件](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
@@ -224,7 +224,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 确定邮箱处于保留状态，因为保留标签应用于文件夹或项目，您可以使用 "安全和合规中心" 中的 "内容搜索" 工具来搜索带标签的项目，方法是使用 New-compliancetag 搜索条件。 有关详细信息，请参阅关键字查询中的 "搜索条件" 部分[和内容搜索的搜索条件](keyword-queries-and-search-conditions.md#conditions-for-common-properties)。
 
-若要详细了解标签，请参阅[标签概述](labels.md)。
+有关标签的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
 
  ### <a name="ediscovery-holds"></a>电子数据展示保留
   

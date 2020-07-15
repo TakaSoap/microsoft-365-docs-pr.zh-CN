@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 邮箱变为非活动状态后，更改分配给非活动邮箱的保留或 Office 365 保留策略的持续时间。
-ms.openlocfilehash: 113a3af38d83eabef2e3022f47952c2db70f47a9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 675e6eb36f762a50c3caafce07d09fda9ba9d98e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818401"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126373"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>更改非活动邮箱的保留期
 
@@ -60,9 +60,6 @@ Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,Litigat
 
 如果 **LitigationHoldEnabled** 属性的值为 **True** ，则表示非活动邮箱被置于诉讼保留状态。 如果非活动邮箱上设置了就地保留、电子数据展示保留或 Microsoft 365 保留策略，则保留或保留策略的 GUID 将显示为**InPlaceHolds**属性的值。 例如，下面显示了五个非活动邮箱的结果。 
   
-||
-|:-----|
-|
 ```text
 DisplayName           : Ann Beebe
 Name                  : annb
@@ -110,7 +107,7 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |Carol Olson  <br/> |适用于特定邮箱的安全性 & 合规性中心内的 Microsoft 365 保留策略  <br/> |*InPlaceHolds*属性包含应用于非活动邮箱的 Microsoft 365 保留策略的 GUID。 您可以告诉这是应用于特定邮箱的保留策略，因为 GUID 以 `mbx` 前缀开头。 如果应用于非活动邮箱的保留策略的 GUID 是使用前缀启动的 `skp` ，则会显示该保留策略应用于 Skype For business 会话。  <br/><br/> 若要标识应用于非活动邮箱的 Microsoft 365 保留策略，请在 Security & 合规性中心 PowerShell 中运行以下命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>`mbx`运行此命令时，请务必删除或 `skp` 前缀。  <br/> |
 |Abraham McMahon  <br/> |安全 & 合规中心中的电子数据展示案例保留  <br/> |*InPlaceHolds*属性包含非活动邮箱上所放置的电子数据展示事例保留的 GUID。 你可以告诉这是电子数据展示事例保留，因为 GUID 以 `UniH` 前缀开头。  <br/> 您可以使用 `Get-CaseHoldPolicy` Security & 合规性中心 PowerShell 中的 cmdlet，以获取有关非活动邮箱上保留的电子数据展示事例的相关信息。 例如，您可以运行命令 `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` 以显示非活动邮箱上的事例保留的名称。 `UniH`运行此命令时，请务必删除前缀。  <br/><br/> 若要标识非活动邮箱上的保留的电子数据展示事例与关联，请运行以下命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **注意：** 建议不要对非活动邮箱使用电子数据展示保留。 这是因为电子数据展示事例适用于与法律问题相关的特定的与时间绑定的情况。 有时，法律案例可能会结束，与事例关联的保留将被删除，并且电子数据展示事例将关闭（或删除）。 实际上，如果在非活动邮箱上设置的保留与电子数据展示事例相关联，并且已释放保留或电子数据展示事例关闭或删除，则非活动邮箱将被永久删除。 
 
-有关 Microsoft 365 保留策略的详细信息，请参阅[保留策略概述](retention-policies.md)。
+有关 Microsoft 365 保留策略的详细信息，请参阅[了解保留策略和保留标记](retention.md)。
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>第 2 步：更改非活动邮箱的保留期
 

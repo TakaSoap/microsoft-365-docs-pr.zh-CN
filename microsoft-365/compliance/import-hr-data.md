@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 7578b0e6c53d85c0216dbb4b82a2ab4e0f5aac87
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210568"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138299"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以导入 HR 数据（预览）
 
@@ -49,7 +49,7 @@ ms.locfileid: "44210568"
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>步骤2：使用 HR 数据准备 CSV 文件
 
-下一步是创建一个 CSV 文件，其中包含有关已离开组织的员工的信息。 如 "开始之前" 一节中所述，您需要确定如何从组织的 HR 系统生成此 CSV 文件。 下面的示例展示了一个完整的 CSV 文件（在记事本中打开），其中包含三个必需的参数（列）。 在 Microsoft Excel 中编辑 CSV 文件要容易得多。
+下一步是创建一个 CSV 文件，其中包含有关已离开组织的员工的信息。 如 "开始之前" 一节中所述，您需要确定如何从组织的 HR 系统生成此 CSV 文件。 下面的示例显示了一个完整的 CSV 文件（在 "Note" 中打开），其中包含三个必需的参数（列）。 在 Microsoft Excel 中编辑 CSV 文件要容易得多。
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -72,7 +72,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤3：创建 HR 连接器
 
-下一步是在 Microsoft 365 合规性中心中创建 HR 连接器。 在步骤4中运行脚本后，您创建的 HR 连接器会将 HR 数据从 CSV 文件中接收到 Microsoft 365 组织。 在此步骤中，请务必复制创建连接器时生成的 JobId。 运行该脚本时，您将使用 JobId。
+下一步是在 Microsoft 365 合规性中心中创建 HR 连接器。 在步骤4中运行脚本后，您创建的 HR 连接器会将 HR 数据从 CSV 文件中接收到 Microsoft 365 组织。 在此步骤中，请务必复制创建连接器时生成的作业 ID。 运行脚本时，将使用作业 ID。
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击左侧导航中的 "**数据连接器**"。
 
@@ -92,13 +92,19 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 6. 在 "**检查**" 页上，查看您的设置，然后单击 "**完成**" 以创建连接器。
 
-   将显示 "状态" 页，确认已创建连接器。 此页面还包含作业 ID。 在下一步中，你将需要此作业 ID 来运行脚本。 您可以从此页面或连接线的飞出页面复制它。
+   将显示 "状态" 页，确认已创建连接器。 此页面包含完成下一步以运行示例脚本以上载 HR 数据所需的两个重要事项。
+
+   ![查看包含作业 ID 的页面并链接到 github 以获取示例脚本](../media/HRConnector_Confirmation.png)
+
+   a. **作业 ID。** 在下一步中，你将需要此作业 ID 来运行脚本。 您可以从此页面或从 "连接线" 飞出页面复制它。
+   
+   b. **指向示例脚本的链接。** 单击**此处**链接转到 GitHub 网站以访问示例脚本（该链接将打开一个新窗口）。 保持此窗口处于打开状态，以便您可以在第4步中复制脚本。 或者，您可以为目标添加书签或复制 URL，以便您可以在第4步中再次访问它。 此链接在 "连接线" 弹出页面上也可用。
 
 7. 单击“**完成**”。
-   
+
    新的连接器将显示在 "**连接器**" 选项卡上的列表中。 
 
-8. 单击刚创建的 HR 连接器以显示弹出页面，其中包含有关连接器的属性和其他信息。 
+8. 单击刚创建的 HR 连接器以显示弹出页面，其中包含有关连接器的属性和其他信息。
 
    ![新 HR 连接器的飞出页面](../media/HRConnectorWizard7.png)
 
@@ -110,9 +116,9 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 设置 HR 连接器的最后一步是运行一个示例脚本，将 CSV 文件（您在步骤2中创建的）中的 HR 数据上载到 Microsoft 云。 具体来说，该脚本会将数据上载到 HR 连接器。 运行该脚本后，您在步骤3中创建的 HR 连接器会将 HR 数据导入到 Microsoft 365 组织中，以供其他合规性工具（如内幕风险管理解决方案）进行访问。 运行脚本后，请考虑计划任务每天定期自动运行，以便将最新的员工终止数据上载到 Microsoft 云。 请参阅[安排脚本自动运行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
-1. 请转到[此 GitHub 网站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)以访问示例脚本。
+1. 转到您在上一步中打开的窗口以使用示例脚本访问 GitHub 网站。 或者，也可以打开已加书签的网站或使用您复制的 URL。
 
-2. 单击 "**原始**" 按钮以在文本视图中显示脚本
+2. 单击 "**原始**" 按钮以在文本视图中显示脚本。
 
 3. 复制示例脚本中的所有行，然后将它们保存到一个文本文件中。
 
@@ -130,12 +136,12 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    下表介绍了要与此脚本一起使用的参数及其必需的值。 您在前面步骤中获取的信息用于这些参数的值。
 
-   |**Parameter**|**说明**
+   |**参数**|**说明**
    |:-----|:-----|:-----|
-   |`tenantId`|这是您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的**概述**边栏上获取您的组织的 tenantId。 这用于标识你的组织。|
+   |`tenantId`|这是您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的**概述**边栏中获取组织的租户 Id。 这用于标识你的组织。|
    |`appId` |这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
    |`appSecret`|这是您在第1步中的 Azure AD 中创建的应用程序的 AAD 应用程序密码。 这也用于身份验证。|
-   |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 Id。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
+   |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
    |`csvFilePath`|这是您在步骤2中创建的 CSV 文件（与脚本存储在同一系统上）的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
    |||
    
@@ -161,7 +167,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    ![HR 连接器日志文件显示从 CSV 文件上载的编号行数](../media/HRConnectorLogFile.png)
 
-   **RecordsSaved**字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含四行，则**RecordsSaved**字段的值为4，如果脚本成功上传了 CSV 文件中的所有行。
+   该 `RecordsSaved` 字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含四行，则字段的值 `RecordsSaved` 为4，如果脚本成功上传了 CSV 文件中的所有行。
 
 如果您没有在步骤4中运行该脚本，则在 "**上次导入**" 下将显示下载该脚本的链接。 您可以下载该脚本，然后按照步骤4中的步骤运行它。
 

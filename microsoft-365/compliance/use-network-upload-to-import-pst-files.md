@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819062"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127329"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -336,7 +336,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 使用 Microsoft [电子数据展示工具](search-for-content.md)搜索你导入的数据。 
     
-  - 使用 [Microsoft 365 保留策略](retention-policies.md)来控制导入数据的保留时间，以及在保留期到期后要执行的操作。 
+  - 使用 [Microsoft 365 保留策略](retention.md)来控制导入数据的保留时间，以及在保留期到期后要执行的操作。 
     
   - 在[审核日志](search-the-audit-log-in-security-and-compliance.md)中搜索影响你导入的数据的邮箱相关事件。 
     

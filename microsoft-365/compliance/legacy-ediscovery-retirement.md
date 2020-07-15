@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的就地电子数据展示和就地保留（以及相应的 PowerShell cmdlet）将在2020的上半年中停用。 搜索邮箱 cmdlet 和高级电子数据展示 v1.0 也会在同一时间段内被停用。
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761682"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126939"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>旧版电子数据展示工具的停用
 
@@ -124,7 +124,7 @@ ms.locfileid: "44761682"
 <p>将策略应用于特定的内容位置，如 Exchange Online、SharePoint Online、OneDrive for Business、Skype for Business、Microsoft 团队和 Office 365 组</p></li>
 <li>
 <p>将策略应用于特定用户</p></li></ul>
-<p>有关详细信息，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">保留策略概述</a>。</td>
+<p>有关详细信息，请参阅<a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">了解保留策略和保留标签</a>。</td>
 </tr>
 <tr class="odd">
 <td>将电子邮件搜索结果复制到发现邮箱以供审阅</td><td>高级电子数据展示2.0 版中的审阅集</td>
