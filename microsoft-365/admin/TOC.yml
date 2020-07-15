@@ -222,8 +222,10 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: 加载项集中部署要求
           href: manage/centralized-deployment-of-add-ins.md
-        - name: 使用集中部署对加载项进行安装和管理
+        - name: 在管理中心部署加载项
           href: manage/manage-deployment-of-add-ins.md
+        - name: 在管理中心管理加载项
+          href: manage/manage-addins-in-the-admin-center.md
         - name: 集中部署常见问题解答
           href: manage/centralized-deployment-faq.md
         - name: 寻找合作伙伴或经销商
@@ -294,12 +296,12 @@
           href: ../business/device-states.md
         - name: Windows 10 电脑的应用保护设置
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: Android 和 iOS 的应用保护设置
+        - name: 设置 Android 和 iOS 的应用保护设置
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
             - name: 验证 Android 或 iOS 上的设置
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Windows 10 PC 的设备保护设置
+        - name: 设置 Windows 10 电脑的设备保护设置
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: 验证 Windows 10 PC 上的设置
