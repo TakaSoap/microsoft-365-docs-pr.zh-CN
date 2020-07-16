@@ -191,6 +191,10 @@
               items:
                 - name: 安全功能分数概述
                   href: mtp/microsoft-secure-score.md
+                - name: 深入了解你的安全状况
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: 跟踪分数历史记录并实现目标
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: 即将推出的功能
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: 报告
@@ -215,8 +219,12 @@
               href: mtp/device-profile.md
             - name: 提供反馈
               href: mtp/feedback.md
-            - name: 通过 ServiceNow 管理票证
-              href: ./mtp/tickets.md
+            - name: 创建 ServiceNow 票证和任务
+              items:
+                - name: ServiceNow 集成概述
+                  href: ./mtp/tickets.md
+                - name: 安全中心中的 ServiceNow 票证
+                  href: ./mtp/tickets-security-center.md
     - name: Office 365 安全中心
       items:
         - name: 入门
@@ -407,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: 快速检测和处理受影响的用户帐户
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: 调查并修正恶意电子邮件问题
+            - name: 调查恶意电子邮件问题
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: 修正恶意电子邮件问题
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: 查看和阅读 ATP 报告
               href: ./office-365-security/view-reports-for-atp.md
             - name: 通过威胁分析了解最新的攻击
