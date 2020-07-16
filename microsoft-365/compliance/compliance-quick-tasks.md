@@ -75,7 +75,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>任务6：对敏感数据进行分类和保护
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
 [灵敏度标签](sensitivity-labels.md)允许您对组织的数据进行分类和保护，同时确保用户工作效率和协作能力不阻止。 使用敏感度标签强制实施加密和使用限制应用视觉标记，并保护跨平台和设备、内部部署和云中的信息。
 

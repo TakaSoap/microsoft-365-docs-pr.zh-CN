@@ -67,7 +67,7 @@ ms.locfileid: "44785844"
     
 3. 完成 Windows 10 设备设置。
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   完成后，用户将连接到组织的 Azure AD。请参阅[验证设备是否连接到 Azure AD](#verify-the-device-is-connected-to-azure-ad)确保完成操作。 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>已经设置并运行 Windows 10 专业版的设备
 
@@ -97,7 +97,7 @@ ms.locfileid: "44785844"
   
 6. 在 "**请确保这是你的组织**" 页上，验证信息是否正确，然后单击 "**加入**"。
   
-   On the **You're all set!** page, click **Done**.
+   在" **设置完毕!**"页面上，单击" **完成**"。
   
    ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   

@@ -51,7 +51,7 @@ ms.locfileid: "45126651"
     
 3. 合作伙伴连接器通过已知终结点使用 Exchange Web 服务（EWS）连接到 Microsoft 365 中的 Azure 服务。
     
-4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
+4. 项目便导入到特定用户的邮箱或“catch-all”第三方数据邮箱。无论项目是导入到特定用户邮箱还是第三方数据邮箱，都要基于以下条件：
     
    1. **具有与用户帐户对应的用户 ID 的项：** 如果合作伙伴连接器可以将第三方数据源中项目的用户 ID 映射到 Office 365 中的特定用户 ID，则会将该项目复制到用户的 "可恢复的项目" 文件夹中的 "**清除**" 文件夹中。 用户无法访问“清除”文件夹中的项目。 不过，您可以使用电子数据展示工具搜索 "清除" 文件夹中的项目。
     

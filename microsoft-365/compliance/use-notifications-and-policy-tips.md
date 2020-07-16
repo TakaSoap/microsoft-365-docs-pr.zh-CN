@@ -92,7 +92,7 @@ ms.locfileid: "44819302"
 
 对于 DLP 策略中的每个规则，您可以：
   
-- Send the notification to the people you choose. These people can include the owner of the content, the person who last modified the content, the owner of the site where the content is stored, or a specific user.
+- 将通知发送给您选择的人员。这些人员可以包含内容的所有者、最后一次修改内容的人员、存储内容的网站所有者或特定用户。
     
 - 使用 HTML 或标记自定义通知中包含的文本。 有关详细信息，请参阅下面的部分。
     
@@ -107,13 +107,13 @@ ms.locfileid: "44819302"
   
 ![消息通知](../media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
-By default, notifications display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+默认情况下，通知显示类似于网站上以下项的文本。通知文本针对每个规则单独配置，因此根据匹配的规则，显示的文本有所不同。
 
 |**如果 DLP 策略规则也是如此...**|**然后，SharePoint 或 OneDrive for business 文档的默认通知如下所说 .。。**|**然后，Outlook 邮件的默认通知说 .。。**|
 |:-----|:-----|:-----|
 |发送通知但不允许替代  <br/> |此项与您的组织中的策略相冲突。  <br/> |您的电子邮件与组织中的策略相冲突。  <br/> |
 |阻止访问，发送通知，并允许重写  <br/> |此项与您的组织中的策略相冲突。 如果不解决此冲突，则可能会阻止对此文件的访问。  <br/> |您的电子邮件与组织中的策略相冲突。 邮件未传递给所有收件人。  <br/> |
-|阻止访问，并向发送通知  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |您的电子邮件与组织中的策略相冲突。 邮件未传递给所有收件人。  <br/> |
+|阻止访问，并向发送通知  <br/> |此项与您的组织中的策略相冲突。除非是项目的所有者、最后一次修改内容的用户以及网站集主管理员，否则其他人对此项目的访问将受到阻止。  <br/> |您的电子邮件与组织中的策略相冲突。 邮件未传递给所有收件人。  <br/> |
    
 ### <a name="custom-email-notification"></a>自定义电子邮件通知
 
@@ -139,17 +139,17 @@ By default, notifications display text similar to the following for an item on a
     
   - 要求用户输入替换该策略的业务理由。 将记录此信息，您可以在安全合规性中心的 "**报告**" 部分的 "DLP 报告" 中查看此信息 &amp; 。 
     
-  - Allow the person to report a false positive and override the DLP policy. This information is also logged for reporting, so that you can use false positives to fine tune your rules.
+  - 允许用户报告误报并替换 DLP 策略。此信息还被记录下来用于报告，以便您可以使用误报来微调您的规则。
     
 ![策略提示选项](../media/0d2f2c68-028a-4900-afe6-1d9fce5303ef.png)
   
 例如，您可以将 DLP 策略应用于检测个人身份信息（PII）的 OneDrive for Business 网站，并且此策略具有三个规则：
   
-1. First rule: If fewer than five instances of this sensitive information are detected in a document, and the document is shared with people inside the organization, the **Send a notification** action displays a policy tip. For policy tips, no override options are necessary because this rule is simply notifying people and not blocking access. 
+1. 第一个规则：如果在文档中检测到包含此敏感信息的实例少于五个，并且该文档与组织内部的人员共享，则“发送通知”**** 操作将显示策略提示。对于策略提示，无需提供任何替换选项，因为此规则只是通知相关人员，但不会阻止访问。 
     
 2. 第二个规则：如果在文档中检测到包含此敏感信息的实例多于五个，并且该文档与组织内部的人员共享，则“阻止访问内容”**** 操作将限制文件权限，并且“发送通知”**** 操作会允许用户通过提供业务理由来替换该规则中的操作。 您的组织的业务有时需要内部人员共享 PII 数据，并且您不希望您的 DLP 策略阻止此工作。 
     
-3. Third rule: If greater than five instances of this sensitive information are detected in a document, and the document is shared with people outside the organization, the **Block access to content** action restricts the permissions for the file, and the **Send a notification** action does not allow people to override the actions in this rule because the information is shared externally. Under no circumstances should people in your organization be allowed to share PII data outside the organization. 
+3. 第三个规则：如果在文档中检测到包含此敏感信息的实例多于五个，并且该文档与组织外部的人员共享，则“阻止访问内容”**** 操作将限制文件权限，并且“发送通知”**** 操作将不允许用户替换该规则中的操作，因为该信息是与外部共享的。决不允许您组织中的用户在组织外部共享 PII 数据。 
     
 以下几点有助于您对使用策略提示替换规则的理解：
   
@@ -177,17 +177,17 @@ By default, notifications display text similar to the following for an item on a
   
 ![具有重写选项的策略提示](../media/e250bff9-41d5-4ce4-82ea-1dc2d043fab1.png)
   
-DLP policies are synced to sites and contented is evaluated against them periodically and asynchronously, so there may be a short delay between the time you create the DLP policy and the time you begin to see policy tips. There may be a similar delay from when you resolve or override a policy tip to when the icon on the document on the site goes away.
+将 DLP 策略同步到网站，并定期以异步方式根据这些策略对内容进行评估，因此，您创建 DLP 策略的时间与开始看到策略提示的时间之间可能出现短暂的延迟。类似延迟还有可能出现在从您解决或替换策略提示到网站的文档上的图标消失的这段时间里。
   
 ### <a name="default-text-for-policy-tips-on-sites"></a>网站上的策略提示的默认文本
 
-By default, policy tips display text similar to the following for an item on a site. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+默认情况下，策略提示显示在网站上类似于以下项的文本。通知文本针对每个规则单独配置，因此根据匹配的规则，显示的文本有所不同。
 
 |**如果 DLP 策略规则也是如此...**|**然后默认策略提示的说明如下...**|
 |:-----|:-----|
 |发送通知但不允许替代  <br/> |此项与您的组织中的策略相冲突。  <br/> |
 |阻止访问，发送通知，并允许重写  <br/> |此项与您的组织中的策略相冲突。 如果不解决此冲突，则可能会阻止对此文件的访问。  <br/> |
-|阻止访问，并向发送通知  <br/> |This item conflicts with a policy in your organization. Access to this item is blocked for everyone except its owner, last modifier, and the primary site collection administrator.  <br/> |
+|阻止访问，并向发送通知  <br/> |此项与您的组织中的策略相冲突。除非是项目的所有者、最后一次修改内容的用户以及网站集主管理员，否则其他人对此项目的访问将受到阻止。  <br/> |
    
 ### <a name="custom-text-for-policy-tips-on-sites"></a>网站上的策略提示的自定义文本
 
@@ -266,7 +266,7 @@ Office 桌面程序将自动从 Office 365 中直接同步 DLP 策略，然后�
   
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Excel 2016、PowerPoint 2016 和 Word 2016 中的策略提示的默认文本
 
-By default, policy tips display text similar to the following on the Message Bar and Backstage view of an open document. The notification text is configured separately for each rule, so the text that's displayed differs depending on which rule is matched.
+默认情况下，策略提示将在打开文档的消息栏和 Backstage 视图中显示类似于以下的文本。通知文本针对每个规则单独配置，因此根据匹配的规则，显示的文本有所不同。
 
 |**如果 DLP 策略规则也是如此...**|**然后默认策略提示的说明如下...**|
 |:-----|:-----|
