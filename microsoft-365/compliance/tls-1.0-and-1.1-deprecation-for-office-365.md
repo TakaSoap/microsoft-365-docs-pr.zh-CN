@@ -1,31 +1,34 @@
 ---
-title: Office 365 的 TLS 1.0 和1.1 弃用
+title: Office 365 的 TLS 1.0 和 1.1 停用
 description: 介绍了 Office 365 的 TLS 1.0 和1.1 弃用情况。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937320"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148144"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 的 TLS 1.0 和1.1 弃用
+# <a name="tls-10-and-11-deprecation-for-office-365"></a>Office 365 的 TLS 1.0 和 1.1 停用
+> [!IMPORTANT]
+> 由于 covid-19，我们暂时停止了针对商业客户的过时强制执行的 TLS 1.0 和1.1，但由于提供链已调整，而某些国家/地区已重新打开，我们正在将 TLS 强制重置为开始 Oct 15、2020。 
 
-从2018年10月31日起，Office 365 服务的传输层安全性（TLS）1.0 和1.1 协议已被弃用。 最终用户的效果应最小。 此更改可在将近两年的时间内公布，在12月2017日宣布推出首次公开通知。 本文仅用于涵盖与 Office 365 服务相关的 Office 365 本地客户端，但也适用于 Office 和 Office Online Server/Office Web Apps 的本地 TLS 问题。
+从2018年10月31日起，Office 365 服务的传输层安全性（TLS）1.0 和1.1 协议已被弃用。 最终用户的效果应最小。 此更改已在两年的时间内公布，第一次公开发布在12月2017。 本文仅用于涵盖与 Office 365 服务相关的 Office 365 本地客户端，但也适用于 Office 和 Office Online Server/Office Web Apps 的本地 TLS 问题。
 
 ## <a name="office-and-tls-overview"></a>Office 和 TLS 概述
 

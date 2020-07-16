@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b8f7e3bbb6d2348c3f19e8df251d700d8adf8e33
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235081"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148110"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>管理 Microsoft 威胁防护中的事件
 
@@ -44,7 +44,16 @@ ms.locfileid: "42235081"
 
 ## <a name="edit-incident-name"></a>编辑事件名称
 默认情况下，将为事件分配一个编号。 可以修改事件名称，以便更好地与首选命名约定保持一致。
- 
+
+> [!TIP]
+> 若要更深入地查看快速事件命名，在公共预览版中，将基于警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）生成事件名称。 这使您可以快速了解事件的范围。
+>
+> 例如：多*个源报告的多个终结点上的多阶段事件。*
+>
+> 在自动事件命名的首次部署之前已存在的事件将不会更改其名称。
+>
+> 了解有关[打开预览功能](preview.md#turn-on-preview-features)的详细信息。
+
 ## <a name="assign-incidents"></a>分配事件
 如果尚未分配事件，可以选择“分配给我”**** 将事件分配给自己。 执行此操作时，假定所有权不仅限于事件，而且还针对与之关联的所有警报。
 
@@ -68,4 +77,3 @@ ms.locfileid: "42235081"
 
 ## <a name="add-incident-tags"></a>添加事件标记
 可以向事件添加自定义标记，例如，标记一组具有共同特征的事件。 以后可以筛选包含特定标记的所有事件的事件队列。
-

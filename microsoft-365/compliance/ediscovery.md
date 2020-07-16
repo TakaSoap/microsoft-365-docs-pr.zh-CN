@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 提供了许多不同的电子数据展示工具，可用于搜索和保存在不同位置（如 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站、Microsoft 365 组和 Skype for business 会话）中找到的内容。
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943427"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148122"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的电子数据展示
 
@@ -88,3 +88,7 @@ Microsoft 365 中的高级电子数据展示解决方案（也称为*高级电�
 |[分析评审集中的数据](analyzing-data-in-review-set.md)|了解如何对审阅集中的文档运行分析。 运行分析的结果包括邻近重复检测、电子邮件线程和主题标识。|
 |[导出事例数据](exporting-data-ediscover20.md)|了解如何从外部审阅的案例中导出数据。|
 |||
+
+## <a name="roadmap"></a>路线图
+
+若要查看已启动的电子数据展示功能、正在进行滚动或正在开发中，请访问[Microsoft 365 路线图](https://aka.ms/eDiscoRoadMap)。

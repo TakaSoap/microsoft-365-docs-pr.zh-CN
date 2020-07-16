@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 附带了大量内置分类器，可用于在组织中标识和标记内容。 本主题介绍如何准备使用这些分类器。
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126311"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146216"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留标签测试内置分类器（预览）
 
@@ -38,7 +38,7 @@ Microsoft 365 附带了五个建议的内置分类器：
 - **恢复**：检测作为申请人个人、教育、专业资格、工作经验和其他个人身份信息的文本帐户的项目
 - **源代码**：检测包含一组由 GitHub 上的前25个使用的计算机编程语言编写的指令和语句的项
 
-  |语言名称|||||
+  |**语言名称**|||||
   |---------|---------|---------|---------|---------|
   |ActionScript|C        |C#       |C     |Clojure  |
   |CoffeeScript|CSS     |转到       |Haskell |HTML     |
@@ -107,4 +107,4 @@ Microsoft 365 附带了五个建议的内置分类器：
 
 - [可训练分类器入门（预览）](classifier-getting-started-with.md)
 - [了解保留策略和保留标签](retention.md)
-- [自动应用保留标签以保留或删除内容](apply-retention-labels-automatically.md)
+- [自动应用保留标签来保留或删除内容](apply-retention-labels-automatically.md)
