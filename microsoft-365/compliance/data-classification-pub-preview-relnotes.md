@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 数据分类发行说明。
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327597"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127137"
 ---
 # <a name="data-classification-release-notes"></a>数据分类发行说明
 
@@ -48,6 +48,6 @@ SharePoint 搜索不支持包含 `-` 或者 `_` 的保留标签名称。 例如 
 - [数据分类入门（预览）](data-classification-overview.md)
 - [查看标签活动（预览）](data-classification-activity-explorer.md)
 - [查看已应用标签的内容（预览）](data-classification-content-explorer.md)
-- [敏感度标签](sensitivity-labels.md)
-- [保留标签](labels.md)
+- [了解敏感度标签](sensitivity-labels.md)
+- [了解保留策略和保留标签](retention.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活动资源管理器通过查看和筛选用户对你的标记内容执行的操作来完善数据分类功能的功能。
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327838"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126641"
 ---
 # <a name="get-started-with-activity-explorer"></a>活动资源管理器入门
 
@@ -75,7 +75,7 @@ Microsoft 365 监视和报告跨 SharePoint Online 和 OneDrive 和的活动类�
 > 活动资源管理器当前不监视 Exchange Online 的保留活动。
 
 ## <a name="see-also"></a>另请参阅
-- [敏感度标签](sensitivity-labels.md)
-- [保留标签](labels.md)
+- [了解敏感度标签](sensitivity-labels.md)
+- [了解保留策略和保留标签](retention.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [保留策略概述](retention-policies.md)
+

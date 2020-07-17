@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 48705ac6d0c271ca2646de7c058a340ee3f736ae
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0179f208f10921293c164516b26440f5bd043517
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818952"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127479"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
 
@@ -33,11 +33,11 @@ ms.locfileid: "44818952"
 
 Microsoft 365 中的记录管理提供了以下功能：
 
-- **将内容标记为记录**。 创建并发布将内容标记为[记录](records.md)的保留标签，该类标签随后可由最终用户应用，或通过标识敏感信息、关键字或内容类型[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
+- **将内容标记为记录**。 创建并发布将内容标记为[记录](records.md)的保留标签，该类标签随后可由最终用户应用，或通过标识敏感信息、关键字或内容类型[自动应用](apply-retention-labels-automatically.md)。
 
 - **使用文件计划迁移和管理保留要求**。 通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
 
-- **在记录标签中建立保留和删除策略**。 根据各种因素（包括上次修改日期或创建日期）定义[保留](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)和[处置](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age)期间。
+- **使用保留标签配置保留和删除设置**。 根据各种因素（包括上次修改日期或上次创建日期）定义保留期和操作。
 
 - 使用[基于事件的保留](event-driven-retention.md)**触发基于事件的保留**。
 
@@ -48,6 +48,10 @@ Microsoft 365 中的记录管理提供了以下功能：
 - 为组织中的记录管理器功能**设置特定权限**，以便[具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 通过 Microsoft 365 中的记录管理解决方案，你可以将组织的保留计划合并到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
+
+## <a name="additional-resources"></a>其他资源
+
+有关记录管理，请参阅[网络研讨会记录](https://aka.ms/MIPC/Video-RecordsManagementWebinar)和[包含 FAQ 的演示文稿](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)。
 
 ## <a name="next-steps"></a>后续步骤
 

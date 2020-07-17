@@ -1,5 +1,5 @@
 ---
-title: 了解 Teams 的保留策略
+title: 了解用于 Teams 的保留
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,24 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 8e163aa9f5072e0b2685521fcae37f130d132473
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083490"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127379"
 ---
-# <a name="learn-about-retention-policies-for-microsoft-teams"></a>了解 Microsoft Teams 的保留策略
+# <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-本文中的信息是对[了解保留策略](retention-policies.md)的补充，因为它包含特定于 Microsoft Teams 的信息。
+本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Microsoft Teams 的信息。
 
-## <a name="how-a-retention-policy-works-with-microsoft-teams"></a>保留策略如何处理 Microsoft Teams
+## <a name="how-retention-works-with-microsoft-teams"></a>用于 Microsoft Teams 的保留的工作原理
 
 可使用保留策略保留 Teams 中的聊天和频道消息。 Teams 聊天存储在参与聊天的每个用户的邮箱中的隐藏文件夹内，Teams 频道消息存储在团队组邮箱中类似的隐藏文件夹中。 
 
-务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，我们强烈建议使用 Teams 位置来保留和删除此 Teams 数据。 使用 Teams 位置将从 Exchange 邮箱和基于 Azure 支持的聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
+务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，建议创建保留策略来使用 Teams 位置保留和删除此 Teams 数据。 此保留策略可以从 Exchange 邮箱和由 Azure 提供技术支持的基础聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 
 Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，此 Teams 数据仍将仅包含在针对 **Teams 频道消息**和 ** Teams 聊天**位置配置的保留策略中。
 
@@ -71,27 +71,9 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天
 
-Skype for Business 和 Teams 互操作聊天适用相同的流程。 当 Skype for Business 聊天进入 Teams 时，它将成为 Teams 聊天线程中的消息，并接收到相应的邮箱中。 Teams 保留策略将从 Teams 线程应用于这些消息。 
+当 Skype for Business 聊天进入 Teams 时，它将成为 Teams 聊天线程中的消息，并接收到相应的邮箱中。 Teams 保留策略将从 Teams 线程应用于这些消息。 
 
 但是，如果已为 Skype for Business 开启对话历史记录，并且从 Skype for Business 客户端将其保存到邮箱中，则 Teams 保留策略不会处理该聊天数据。 对于此内容，请使用为 Skype for Business 配置的保留策略。
-
-## <a name="additional-retention-policies-needed-to-support-teams"></a>支持团队所需的其他保留策略
-
-Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以前称为 Office 365 组）创建的团队，则应另外使用 **Office 365 组**位置来配置包括该 Microsoft 365 组的保留策略。 此保留策略适用于组的邮箱、网站和文件中的内容。
-
-如果团队网站未连接到 Microsoft 365 组，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略来保留和删除 Teams 中的文件：
-
-- 聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
-
-- 上传到频道的文件存储在团队的 SharePoint 网站中。
-
-> [!TIP]
-> 当特定团队未连接到 Microsoft 365 组时，可以将保留策略应用于该特定团队的文件，方法是选择该团队的 SharePoint 网站以及该团队中用户的 OneDrive 帐户。
-
-应用于 Microsoft 365 组、SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Teams 聊天或频道消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Teams 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
-
-> [!NOTE]
-> 包含 Teams 频道消息或 Teams 聊天的保留策略只能包含 Teams 位置。 因此，若要保留或删除 Teams 支持的其他内容，则必须创建单独的保留策略。
 
 ## <a name="meetings-and-external-users"></a>会议和外部用户
 
@@ -113,11 +95,11 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 ## <a name="limitations"></a>限制
 
-我们正在不断努力优化 Teams 中的保留功能。 同时，下面介绍了应注意的一些限制：
+我们正在不断努力优化 Teams 中的保留功能。 在此期间，在对 Teams 频道消息和聊天使用保留时，需要注意以下几个限制：
   
 - **Teams 需要单独的保留策略**。 创建保留策略并切换到 Teams 位置时，所有其他位置都会切换为关闭。 带有 Teams 的保留策略仅可包含 Teams，不可包含其他位置。
 
-- **组织范围策略不包含 Teams**。 若要创建组织范围策略，其中不会包含 Teams，因为 Teams 必须有单独的保留策略。
+- **组织范围策略不包含 Teams**。 若要创建全组织范围策略，则不包括 Teams 频道消息和 Teams 聊天，因为它们需要单独的保留策略。
 
 - **Teams 不支持高级保留**。 创建保留策略时，如果选择“[标识满足特定条件的内容的高级设置](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)”，则 Teams 位置不可用。 目前，当你选择这些位置时，Teams 中的保留适用于所有聊天和频道消息内容。
 
@@ -135,14 +117,6 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
     
     - 为“**Teams 聊天**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
-## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>如何配置 Microsoft Teams 的保留策略
+## <a name="configuration-guidance"></a>配置指南
 
-按照[创建和配置保留策略](create-retention-policies.md)以及向导的**选择位置**页面的说明，选择以下选项：
-
-- “**让我选择特定位置**” > “**Teams 频道消息**”和“**Teams 聊天**”
-
-适用于 Teams 的保留策略可使用“[保留锁定](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)”，这可能出于监管原因必需的设置。
-
-## <a name="related-information"></a>相关信息
-
-[Microsoft Teams 中的保留策略](https://docs.microsoft.com/microsoftteams/retention-policies)
+如果你已准备好在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。

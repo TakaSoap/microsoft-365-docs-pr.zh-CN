@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874902"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126875"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -42,7 +42,7 @@ ms.locfileid: "44874902"
 
 ![文件计划页面](../media/compliance-file-plan.png)
 
-有关什么是保留标签以及如何使用的信息，请参阅[了解保留标签](labels.md)。
+若要了解什么是保留标签以及如何使用它们，请参阅[了解保留策略和保留标签](retention.md)。
 
 ## <a name="accessing-file-plan"></a>访问文件计划
 
@@ -182,4 +182,6 @@ ms.locfileid: "44874902"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关创建和编辑保留标签及其策略的更多信息，请参阅[创建、发布和自动应用保留标签](create-retention-labels.md)。
+若要详细了解如何创建和编辑保留标签及其策略，请参阅以下指南：
+- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+- [自动向内容应用保留标签](apply-retention-labels-automatically.md)

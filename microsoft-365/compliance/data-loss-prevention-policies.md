@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在 Office 365 中识别、监视和自动保护组织中的敏感信息。
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817941"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127529"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>将保留标签用作 DLP 策略中的条件
 
-将以前创建和发布的[保留标签](labels.md)用作 DLP 策略中的条件时，请注意以下事项：
+将以前创建和发布的[保留标签](retention.md#retention-labels)用作 DLP 策略中的条件时，请注意以下事项：
 
-- 在尝试将保留标签用作 DLP 策略中的条件之前，你以前必须已创建、发布和应用了该标签。
-- 创建并发布保留标签后，它们可能需要长达一天的时间来同步，并且最多需要 7 天来自动应用。 有关详细信息，请参阅[保留标签需要多长时间才能生效](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
-- ***仅支持 SharePoint Online 和 OneDrive for Business 中的项目***在策略中使用保留标签。
+- 必须先创建和发布保留标签，然后才能尝试将它用作 DLP 策略中的条件。
+- 已发布的保留标签可能需要一到七天的时间才能同步。有关详细信息，请参阅[当保留标签可应用时](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply)（对于已在保留策略中发布的保留标签），以及[保留标签多长时间生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)（对于已自动发布的保留标签）。
+- **只有 SharePoint 和 OneDrive 中的项才支持***在策略中使用保留标签。
 
   ![用作条件的标签](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
 
 可对包含敏感信息的内容应用多个功能：
   
-- [保留标签](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留策略](retention-policies.md)均可对此内容执行**保留**操作。 
+- [保留标签和保留策略](retention.md)都可以对此内容强制执行**保留**操作。 
     
 - DLP 策略可对此内容执行**保护**操作。 执行这些操作之前，DLP 策略可要求内容除包含标签之外还需满足其他条件。 
     

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: b509c1581f3b4120e9cf70e7603e56da86126539
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: 9974bebef9809647e7fb87f98f9d2f505baca4f3
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091992"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126503"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -30,41 +30,125 @@ ms.locfileid: "45091992"
 
 使用保留策略来主动决定是保留内容还是删除内容 — 亦或是先保留再删除内容。 
 
-有关保留策略工作方式的信息，请参阅[了解保留策略](retention-policies.md)。
+透过将相同的保留设置依照位置如网站或信箱层级的内容进行指派，保留策略可让你工作的更有效率。 如果你不确定是使用保留策略还是保留标签，请参阅[保留策略和保留标签](retention.md#retention-policies-and-retention-labels)。
+
+有关保留策略的保留工作方式的详细信息，请参阅[了解保留策略](retention.md)。
 
 ## <a name="before-you-begin"></a>准备工作
 
-负责创建和管理保留策略的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**合规性管理员**管理角色组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
-
-只有在创建和应用保留策略时才需要这些权限。 配置保留策略的人员不需要访问该内容。
+组织的全局管理员具有创建和编辑保留策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
 ## <a name="create-and-configure-a-retention-policy"></a>创建和配置保留策略
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择“**策略**” > “**保留**”。
+虽然保留策略可支持多个位置，但你无法创建包含所有受支持位置的单个保留策略：
+- Exchange 电子邮件
+- SharePoint 网站
+- OneDrive 帐户
+- Microsoft 365 组
+- Skype for Business
+- Exchange 公用文件夹
+- Teams 通道消息
+- Teams 聊天
 
-2. 选择“**新保留策略**”或编辑现有保留策略。
+当您在创建保留策略时选择其中一个 Teams 位置时，其他位置将被自动排除。 因此，请依照你是否需要包含 Teams 地点来取决于要遵循的指示:
 
-3. 对于“**设置**”，请先指定用于保留和删除内容的配置选项。 你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)：
+- [有关 Teams 位置的保留策略的说明](#retention-policy-for-teams-locations)
+- [有关 Teams 以外位置的保留策略的说明](#retention-policy-for-locations-other-than-teams)
+
+如果你有多个保留策略，但同时你又有使用保留标签，请参阅[保留原则或优先原则？](retention.md#the-principles-of-retention-or-what-takes-precedence)了解多个保留设置应用于同一内容时的结果。
+
+### <a name="retention-policy-for-teams-locations"></a>Teams 位置的保留策略
+
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+
+2. 选择**新保留策略**创建新的保留策略。
+
+3. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。 
+    
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
+    
+    请勿选择 **使用高级保留设置** ，因为这并不支持 Teams 位置。 
+
+4. 有关**选择位置**的页面，请选择**让我选择特定位置**。 然后切换 Teams 的一个或两个位置： **Teams 频道消息** 和 **Teams 聊天**。
+     
+    请注意，对于**Teams 频道消息**，将包括来自标准频道的消息，但不包括来自[专用频道](https://docs.microsoft.com/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
+    
+    默认情况下，所有团队都处于选中状态，但你可以通过指定要纳入的团队或团队来优化此设置。
+
+5. 完成向导以保存设置。
+
+有关 Teams 保留策略的详细信息，请参阅[Microsoft Teams 中的 保留策略](https://docs.microsoft.com/microsoftteams/retention-policies)来自 Teams 文档。
+
+#### <a name="additional-retention-policy-needed-to-support-teams"></a>支持团队所需的其他保留策略
+
+Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以前称为 Office 365 组）创建的团队，则应另外使用 **Office 365 组**位置来配置包括该 Microsoft 365 组的保留策略。 此保留策略适用于组的邮箱、网站和文件中的内容。
+
+如果你有团队网站未连接到 Microsoft 365 组，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略来保留和删除 Teams 中的文件：
+
+- 聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
+
+- 上传到频道的文件存储在团队的 SharePoint 网站中。
+
+> [!TIP]
+> 当特定团队未连接到 Microsoft 365 组时，可以将保留策略应用于该特定团队的文件，方法是选择该团队的 SharePoint 网站以及该团队中用户的 OneDrive 帐户。
+
+应用于 Microsoft 365 组、SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Teams 聊天或频道消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Teams 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
+
+
+### <a name="retention-policy-for-locations-other-than-teams"></a>团队以外位置的保留策略
+
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+
+2. 选择**新保留策略**创建新的保留策略。
+
+3. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。 
+    
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
     
     然后，确定应将保留策略应用于所有内容还是满足特定条件的内容。 有关这些高级保留设置的详细信息，请参阅本页上的[用于识别满足特定条件的内容的高级设置](#advanced-settings-to-identify-content-that-meets-specific-conditions)。 
 
 4. 对于“**选择位置**”页面，选择应将保留策略应用到组织中的所有受支持位置，还是想要指定位置。 如果选择特定位置，还可以指定包括和排除项。 
     
-    对于 Microsoft Teams： 
-    - 如果想要删除或保留 Teams 频道消息或 Teams 聊天，则必须选择可供选择特定位置的选项。 如果选择这些选项之一作为位置，则其他位置将被自动排除，因为包含此 Teams 数据的保留策略不能包含其他位置。 
-    - 请注意，对于 **Teams 频道消息**，将包括来自标准频道的消息，但不包括来自[专用频道](https://docs.microsoft.com/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
-    
     有关在组织或特定位置的保留策略之间进行选择的详细信息，请参阅本页上的[将保留策略应用于整个组织或特定位置](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)。
     
-    有关 **Office 365 组**和 **Skype for Business** 的特定信息，请参阅以下部分 [Microsoft 365 组的配置信息](#configuration-information-for-microsoft-365-groups)和 [Skype for Business 的配置信息](#configuration-information-for-skype-for-business)。
+    特定于位置的信息：
+    - [交换电子邮件和交换公共文件夹](#configuration-information-for-exchange-email-and-exchange-public-folders)
+    - [SharePoint 网站和 OneDrive 账户](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
+    - [Office 365 组](#configuration-information-for-microsoft-365-groups)
+    - [Skype for Business](#configuration-information-for-skype-for-business)
 
 5. 完成向导以保存设置。
 
-当你有多个保留策略时，请参阅[保留原则或优先原则？](retention-policies.md#the-principles-of-retention-or-what-takes-precedence)
+
+#### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
+
+通过在邮箱级别应用保留设置，**Exchange 电子邮件**位置支持用户的电子邮件、日历和其他邮箱项的保留。
+
+以下邮件项目包含在内：包含任何附件的邮件（包括草稿）、任务和日历项目（如果有结束日期）以及便签。 其中不包括不具备结束日期的任何联系人、任务和日历项目。 存储在邮箱中的其他项目（如 Skype 和 Teams 保存的消息）并不包含在其位置中。 这些项目有自己的保留位置。
+
+即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Office 365 组**的位置。
+
+**Exchange 公用文件夹** 位置将保留设置应用于所有公共文件夹，并且不能在文件夹或邮箱级别应用。
+
+#### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint 网站的配置信息和 OneDrive 帐户
+
+选择 **SharePoint 网站**位置时，保留策略可以保留和删除在 SharePoint 通信网站的文件、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“**Office 365 组**”位置，该位置适用于该组的邮箱、站点和文件中的内容。
+
+尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 保留设置不适用于站点内包括库、列表和文件夹的组织结构。 
+
+如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在**编辑位置**页上指定 URL 时不会进行任何验证。 不过，必须将 SharePoint 网站编入索引，系统会检查你指定的网站是否在向导结束时存在。
+
+如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
+
+若要指定单个 OneDrive 帐户包含或排除的，URL 具有以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+
+例如，对于 contoso 租户中用户名为“rsimone”的用户：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+
+要验证租户的语法并标识用户的 URL，请参阅[获取组织中所有用户 OneDrive URL 的列表](https://docs.microsoft.com/onedrive/list-onedrive-urls)。
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
-若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请在选择保留策略的位置时，选择“**Office 365 组**”位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件**位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
+若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Office 365 组**位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件**位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
 
 应用于 Microsoft 365 组的保留策略包含组的邮箱和网站。 应用于 Microsoft 365 组的保留策略将保护由 Microsoft 365 组（包括 Microsoft Teams）创建的资源。
 
@@ -135,7 +219,7 @@ ms.locfileid: "45091992"
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>识别包含敏感信息的内容
 
-此外，还可以将保留策略只应用于包含[特定类型敏感信息](what-the-sensitive-information-types-look-for.md)的内容。例如，可选择将唯一保留要求只应用于包含个人信息（如纳税人标识号、身份证号或护照号）的内容。
+也可以只对包含[特定类型的敏感信息](what-the-sensitive-information-types-look-for.md)的内容应用保留策略。 例如，可以选择只对纳税人识别号、社会保障号或护照号等包含个人信息的内容应用独特的保留要求。
   
 ![用于选择敏感信息类型的页](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -159,7 +243,7 @@ ms.locfileid: "45091992"
     
 - OneDrive 帐户
     
-- Microsoft 365 组（应用于组的邮箱和相关 SharePoint 网站中的内容。）
+- Microsoft 365 组
     
 - Exchange 公用文件夹
     
@@ -202,36 +286,11 @@ ms.locfileid: "45091992"
 
 此更新通常非常快，但可能需要数天。 完成跨 Microsoft 365 位置的策略复制后，你将看到 Microsoft 365 合规中心中的保留策略状态从“**打开（挂起）**”变为“**打开（成功）**”。
 
-## <a name="find-the-powershell-cmdlets-for-retention-policies"></a>查找保留策略的 PowerShell cmdlet
-
-使用“保留策略” cmdlet：
-  
-1. [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
-    
-2. 使用这些 Office 365 安全与合规中心 cmdlet：
-    
-    - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
-    
-    - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
-    
-    - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
-    
-    - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
-    
-    - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
-    
-    - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
-    
-    - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
-    
-    - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
-
-
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 锁定保留策略
 
-如果需要使用“[保留锁定](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)”来满足法规要求，则必须使用 PowerShell。
+如果需要使用“[保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)”来满足法规要求，则必须使用 PowerShell。
 
-1. [连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
 2. 运行 `Get-RetentionCompliancePolicy`，列出保留策略并查找要锁定的策略的名称。
     

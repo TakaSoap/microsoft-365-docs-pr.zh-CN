@@ -1,7 +1,7 @@
 ---
-title: 行业测试中的主要评分（AV 测试、AV 比较级、SE 实验室、MITRE ATT&CK）
+title: 行业测试中的主要评分-Microsoft 威胁防护
 ms.reviewer: ''
-description: Microsoft Defender ATP 在独立测试中持续实现高分。 查看最新的分数和分析。
+description: 查看最新的 Microsoft 威胁防护的得分和分析，它在独立测试（AV 测试、AV 比较级、SE 实验室、MITRE ATT&CK）中持续实现高分数。 查看最新的分数和分析。
 keywords: Microsoft Defender 防病毒、Windows Defender 防病毒、av 评论、防病毒测试、av 测试、最新 av 分数、检测分数、安全产品测试安全行业测试、行业防病毒测试、最佳防病毒、防病毒、av 测试、av-比较级、SE 实验室、MITRE ATT&CK、endpoint protection 平台、EPP、终结点检测和响应、EDR、Windows 10、Microsoft Defender 防病毒、WDAV、MDATP、Microsoft 威胁防护、安全性、恶意软件、av、防病毒、分数、计分、下一代保护
 ms.prod: w10
 ms.mktglfcycl: secure
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 6a3263154794ef8638c5c3c96709b61e67b9ec5a
-ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/27/2020
-ms.locfileid: "44909272"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158865"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以帮助您在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: aa5952b26549f9ba9b1c584eb55e203fd53c50e5
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080099"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127499"
 ---
 # <a name="learn-about-records"></a>了解记录
 
@@ -38,7 +38,7 @@ ms.locfileid: "45080099"
 
 - 保留期结束时将其删除时，拥有处置证明。
 
-使用[保留标签](labels.md)将内容标记为记录。 创建声明记录的保留标签后，你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。 有关说明，请参阅 [创建、发布和自动应用保留标签](create-retention-labels.md)。
+使用[保留标签](retention.md#retention-labels)将内容标记为记录。 创建声明记录的保留标签后，你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。
 
 通过使用保留标签来声明记录，可在 Microsoft 365 环境中实现单一一致的记录管理策略。
 
@@ -60,15 +60,15 @@ ms.locfileid: "45080099"
 
     此外，如果将应用于某个文件夹（在 SharePoint 和 OneDrive 中）的记录标签更改为不将内容声明为记录的保留标签，则该文件夹中的各项将保留其现有的记录标签。
 
-    有关将保留标签应用于 SharePoint 和 OneDrive 文件夹的详细信息，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+    有关将保留标签应用于 SharePoint 和 OneDrive 文件夹的详细信息，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
 
-  - **记录无法删除。** 如果用户尝试删除 Exchange 中的记录，相应项会移至“可恢复的项目”文件夹中，如[保留策略如何作用于 Exchange](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange) 中所述。
+  - **记录无法删除。** 如果用户尝试删除 Exchange 中的记录，相应项会移到“可恢复项”文件夹中，如[用于 Exchange 的保留的工作原理](retention-policies-exchange.md#how-retention-works-for-exchange)中所述。
 
     如果用户尝试删除 SharePoint 中的记录，将会显示错误，提醒你注意项未删除，仍留在库中。
 
     ![指明项未从 SharePoint 中删除的消息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-    如果用户尝试删除 OneDrive 中的记录，相应项会移至保留库中，如[如何使用SharePoint 和 OneDrive 的保留策略](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive)中所述。
+    如果用户尝试删除 OneDrive 中的记录，相应项会移到保留库中，如[用于 SharePoint 和 OneDrive 的保留的工作原理](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)中所述。
 
   - **记录标签无法移除。** 对项应用记录标签后，仅该位置（例如 SharePoint 网站的网站集管理员）的管理员可以移除该记录标签。
 
@@ -82,7 +82,11 @@ ms.locfileid: "45080099"
     
    ![选中“使用标签将内容分类为‘记录’”复选框](../media/recordversioning6.png)
 
-3. 将保留标签[发布](labels.md#how-retention-labels-work-with-retention-label-policies)或[自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)到 SharePoint 网站和/或 OneDrive 帐户。
+3. 向 SharePoint 网站和 OneDrive 帐户应用保留标签：
+    
+    - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+    
+    - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
 
 ### <a name="applying-a-retention-label-to-content"></a>对内容应用保留标签
@@ -167,4 +171,6 @@ ms.locfileid: "45080099"
 
 ## <a name="next-steps"></a>后续步骤
 
-有关如何创建和发布包含将内容标记为记录的设置的保留标签的说明，请参阅[创建、发布和自动应用保留标签](create-retention-labels.md)。
+如果还没有用于记录管理的保留标签，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+
+若要观看与如何配置和使用记录管理相关的视频，请参阅 [YouTube 上的数据管理选择](https://go.microsoft.com/fwlink/?linkid=867039)。

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00ad2290a252ad014e9b364d9aa5ce59f94c6516
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f3f2f5525337ded683145a6d570562784910f236
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817641"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126733"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Office 365 数据主体请求
 
@@ -163,12 +163,11 @@ Microsoft Office 365 服务也可以在以下区域云环境中适用：[Office 
 
 ***表 2：使用条件缩小搜索范围***
 
-||||
+| Condition | 说明 | 条件值示例 |
 | :--- | :--- |:--- |
-|**条件**|**说明** |**条件值示例**|
 | 文件类型 | 文档或文件的扩展名。 使用此条件，可搜索通过 Office 365 应用程序创建的 Office 文档和文件。 在搜索位于 SharePoint Online 网站和 OneDrive for Business 帐户中的文档时，可使用此条件。<br/>相应的文档属性为 filetype。 <br/>有关可搜索的文件扩展名的完整列表，请参阅“SharePoint 中的默认爬网文件扩展名和解析文件类型”（https://technet.microsoft.com/library/jj219530.aspx)）。|&nbsp;&bull;&nbsp;&nbsp;csv — 搜索逗号分隔值 (CSV) 文件；Excel 可保存为 CSV 格式，CSV 文件可轻松导入 Excel 中<br><br>&bull;&nbsp;&nbsp;docx — 搜索 Word 文件 <br><br>&bull;&nbsp;&nbsp;mpp — 搜索 Project 文件<br/><br>&bull;&nbsp;&nbsp;one — 搜索 OneNote 文件 <br><br>&bull;&nbsp;&nbsp;pdf — 搜索保存为 PDF 格式的文件 <br><br>&bull;&nbsp;&nbsp;pptx — 搜索 PowerPoint 文件 <br><br>&bull;&nbsp;&nbsp;xlxs — 搜索 Excel 文件 <br><br>&bull;&nbsp;&nbsp;vsd — 搜索 Visio 文件 <br><br>&bull;&nbsp;&nbsp;wmv — 搜索 Windows Media 视频文件 <br>|
 | 邮件类型 | 要搜索的电子邮件类型。 使用此条件，可在邮箱中搜索联系人（人员）、会议（日历）任务或 Skype for Business 对话。 相应的电子邮件属性为 *kind*。|&bull;&nbsp;&nbsp;*联系人 — 搜索邮箱的“我的联系人”列表（人员）<br><br>&bull;&nbsp;&nbsp;* 电子邮件 — 搜索电子邮件 <br><br>&bull;&nbsp;&nbsp;*即时消息 — 搜索 Skype for Business 对话<br><br>&bull;&nbsp;&nbsp;* 会议 — 搜索约会和会议请求（日历） <br><br>&bull;&nbsp;&nbsp;*任务 — 搜索“我的任务”列表（任务）；使用此值将返回在微软待办中创建的任务。<br>|
-| 合规性标记 |为电子邮件或文档分配的标签。标签用于对电子邮件和文档进行分类，以便进行数据治理，并基于标签定义的分类强制实施保留规则。使用此条件，可搜索自动或手动向其分配了标签的项目。<br/>此条件对于 DSR 调查非常有用，因为组织可能使用了标签对数据隐私相关内容或者包含个人数据或敏感信息的内容进行了分类。请参阅 [Office 365 中的标签概述](https://docs.microsoft.com/microsoft-365/compliance/labels)的“使用内容搜索查找应用了特定标签的所有内容”部分。|合规性标记=“个人数据”|
+| 合规性标记 |为电子邮件或文档分配的标签。标签用于对电子邮件和文档进行分类，以便进行数据治理，并基于标签定义的分类强制实施保留规则。使用此条件，可搜索自动或手动向其分配了标签的项目。<br/>此条件对于 DSR 调查非常有用，因为组织可能在使用标签来分类与数据隐私有关的内容或包含个人数据或敏感信息的内容。请参阅[了解保留策略和保留标签](https://docs.microsoft.com/microsoft-365/compliance/labels)中的“使用内容搜索来查找应用有特定标签的所有内容”部分。|合规性标记=“个人数据”|
 ||||
 
 还可使用许多其他电子邮件和文档属性以及搜索条件来生成更复杂的搜索查询。请参阅[内容搜索的关键字查询和搜索条件](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions)帮助主题中的以下各节了解详细信息。
@@ -366,7 +365,7 @@ OneNote 课堂笔记本存储在课堂团队 SharePoint Online 网站中。课�
 4. 编辑在步骤 1 中创建的搜索，将关键字查询中的课堂名称替换为课堂笔记本的文件夹路径，并在文件夹路径之前追加 **path** 网站属性，例如，**path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**。请务必包括引号和末尾斜杠。
 5. 添加搜索条件，选择文件类型条件，使用 one 作为文件类型的值。 这将在搜索结果中返回所有 OneNote 文件。 最终的关键字语法如下所示：[](#building-search-queries-to-find-personal-data)
 
-    ```Query
+   ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
 

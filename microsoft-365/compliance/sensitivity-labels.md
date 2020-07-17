@@ -20,12 +20,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d5b8e3c540c133ce4e04a434d03ef4bdb16b6f32
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936791"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127359"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -72,7 +72,7 @@ ms.locfileid: "44936791"
 
 在 Office 应用中，敏感度标签就像是电子邮件或文档上向用户显示的标记。
 
-每个内容项都可以应用有一个敏感度标签。一个内容项可以同时应用有一个敏感度标签和一个[保留标签](labels.md)。
+每个内容项都可以应用有一个敏感度标签。一个内容项可以同时应用有一个敏感度标签和一个[保留标签](retention.md#retention-labels)。
 
 > [!div class="mx-imgBorder"]
 > ![应用于电子邮件的敏感度标签](../media/Sensitivity-label-on-email.png)
@@ -181,7 +181,7 @@ ms.locfileid: "44936791"
 
 ![敏感度标签策略页上的移动选项](../media/sensitivity-label-policy-priority.png)
 
-如果除了“敏感度标签”之外还使用“保留标签”，请务必记住优先级对“敏感度标签策略”至关重要，而与“[保留标签策略](labels.md#the-principles-of-retention-or-what-takes-precedence)”无关。
+如果除了敏感度标签之外还使用保留标签，请务必注意优先级对敏感度标签策略至关重要，而对[保留标签](retention.md#the-principles-of-retention-or-what-takes-precedence)则不重要。
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度标签和 Azure 信息保护
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
-ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: aeb0b05b2bf9b62dbeff43370edf6902e577a0d7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068111"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126395"
 ---
 # <a name="automate-event-based-retention"></a>自动执行基于事件的保留
 
@@ -28,11 +28,11 @@ ms.locfileid: "45068111"
 
 了解组织中呈爆炸式增长的内容以及它们如何变为 ROT（冗余、过时、无关紧要的）内容是一件头等大事。为了继续应对法律、业务和法规遵从性挑战，组织必须能够保留和保护重要信息，并快速找到相关信息。仅保留重要的相关信息是组织取得成功的关键。
 
-为了帮助满足此需求，组织可以利用 Office 365 安全与合规中心中的保留解决方案。可以使用[保留标签](labels.md)触发保留。保留标签允许选择[基于特定事件的保留期](event-driven-retention.md)。通常，保留期基于已知日期，如内容的创建日期或上次修改日期。但是，组织还要求根据事件的发生处理内容，例如在员工离开组织 7 年后进行处理。
+为了帮助满足此需求，组织可以利用 Office 365 安全与合规中心中的保留解决方案。可以使用[保留标签](retention.md#retention-labels)触发保留。保留标签允许选择[基于特定事件的保留期](event-driven-retention.md)。通常，保留期基于已知日期，如内容的创建日期或上次修改日期。但是，组织还要求根据事件的发生处理内容，例如在员工离开组织 7 年后进行处理。
 
 为了确保内容的合规处理，必须知道事件何时发生。随着内容量的快速增长，以及时且合规的方式保留和处理内容变得更具挑战性。
 
-基于事件的保留可解决这个问题。本主题介绍如何使用 Microsoft 365 REST API 设置业务流程以通过事件自动执行保留。
+基于事件的保留可以解决此问题。本文介绍了如何使用 Microsoft 365 REST API 设置业务流程流来通过事件自动执行保留。
 
 ## <a name="about-event-based-retention"></a>关于基于事件的保留
 
@@ -44,7 +44,7 @@ ms.locfileid: "45068111"
 
 - **内容保留期也可以是未知日期**。例如，对于保留标签，你还可以根据特定类型事件的发生时间（如员工离开组织）来确定保留期。
 
-该事件会触发保留期的开始，并且会对已为该事件类型应用标签的所有内容强制执行标签的保留操作。这称为基于事件的保留。有关详细信息，请参阅[事件驱动保留概述](event-driven-retention.md)。
+事件触发保留期开始计算，并且已针对相应类型的事件应用有标签的所有内容都会强制执行标签的保留操作。这称为“基于事件的保留”。若要了解详细信息，请参阅[从事件发生时开始计算保留期](event-driven-retention.md)。
 
 ## <a name="set-up-event-based-retention"></a>设置基于事件的保留
 
@@ -87,8 +87,8 @@ ms.locfileid: "45068111"
 
 2. 执行下列操作之一：
         
-   - 创建 SharePoint 库：在库级别设置基于事件的标签。有关详细信息，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
-          
+    - 创建 SharePoint 库：在库级别设置基于事件的标签。有关详细信息，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+
    - 在 SharePoint 中设置文档集。 有关详细信息，请参阅[文档集简介](https://support.microsoft.com/zh-CN/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234)。
       
 3. 为每个员工文档集分配资产 ID。 资产 ID 是组织使用的产品名称或代码，例如员工编号可以是资产 ID。 通过将资产 ID 分配给文件夹，该文件夹中的每个项目都会自动继承相同的资产 ID。 这意味着所有项目的保留期都可以由同一事件触发。
@@ -97,7 +97,7 @@ ms.locfileid: "45068111"
 
 可通过两种方法触发基于事件的保留：
 
-- **使用管理中心 UI** 此流程适用于一次保留较少内容或者不经常触发保留的情形，例如每月或每年保留一次。 有关此方法的详细信息，请参阅[事件驱动保留概述](event-driven-retention.md)。 但是，这种触发保留的方法可能比较耗时且容易出错，这会影响可伸缩性。 用于触发保留的自动化无缝解决方案可以增强数据的安全性和合规性。
+- **使用管理中心 UI** 此流程适用于一次保留较少内容或者不经常触发保留的情形，例如每月或每年保留一次。 若要详细了解此方法，请参阅[从事件发生时开始计算保留期](event-driven-retention.md)。 但是，这种触发保留的方法可能比较耗时且容易出错，这会影响可伸缩性。 用于触发保留的自动化无缝解决方案可以增强数据的安全性和合规性。
 
 - **使用 M365 REST API** 当一次保留大量内容和/或触发保留的频率通常是每天或每周时，可以使用此流程。该流程会检测你的业务线系统中何时发生事件，然后在安全与合规中心自动创建相关事件。每次发生事件时，你无需在 UI 中手动创建事件。
 

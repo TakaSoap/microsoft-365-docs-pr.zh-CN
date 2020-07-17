@@ -1,5 +1,5 @@
 ---
-title: 事件驱动保留概述
+title: 从事件发生时开始计算保留期
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: 15330c5be34d0cd482b83b4aab5f229cecf2a447
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068121"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126855"
 ---
-# <a name="overview-of-event-driven-retention"></a>事件驱动保留概述
+# <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -44,12 +44,13 @@ ms.locfileid: "45068121"
 事件驱动保留通常用于记录管理流程。也就是说：
   
 - 基于事件的标签通常还可将内容分类为记录。 有关详细信息，请参阅[了解记录](records.md)。
-    
+
 - 如果文档已归类为记录，但其触发事件尚未发生，那么文档会无限期保留（因为无法永久删除记录），直到触发文档保留期的事件发生。
     
 - 基于事件的保留标签通常在保留期末尾触发处置评审，因此记录管理人员可以手动评审并处置内容。 有关详细信息，请参阅[内容的处置](disposition.md)。
     
-基于事件的保留标签与 Microsoft 365 中的任何保留标签具有相同的功能。 有关详细信息，请参阅[了解保留标签](labels.md)。
+
+基于事件的标签与 Microsoft 365 中的任何保留标签具有相同的功能。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>了解事件类型、标签、事件和资产 ID 之间的关系
 
@@ -114,7 +115,10 @@ ms.locfileid: "45068121"
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>第 3 步：发布或自动应用基于事件的保留标签
 
-与任何保留标签类似，需要[发布或自动应用](create-retention-labels.md)基于事件的标签，以便将其应用于文档或电子邮件。
+与任何保留标签一样，需要发布或自动应用基于事件的标签，以便将它手动或自动应用于内容：
+- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+- [自动向内容应用保留标签](apply-retention-labels-automatically.md)
+
 
 > [!NOTE]
 > 如果从“**记录管理**” > “**文件计划**”选项卡或“**数据管理**” > “**标签**”选项卡中选择基于事件的保留标签，“**自动应用标签**”按钮将不可用。

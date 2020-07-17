@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327848"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127039"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -92,7 +92,7 @@ ms.locfileid: "44327848"
 
 ### <a name="retention-labels"></a>保留标签
 
-[保留标签](labels.md)可用于定义带标记的项目将保留多长时间以及删除项目前要采取哪些操作。 这些标签可手动应用，也可通过策略自动应用。 它们在帮助组织持续遵守法律法规要求方面发挥着作用。
+[保留标签](retention.md)可用于定义带标记的项目将保留多长时间以及删除项目前要采取哪些操作。 这些标签可手动应用，也可通过策略自动应用。 它们在帮助组织持续遵守法律法规要求方面发挥着作用。
 
 ### <a name="how-to-use-content-explorer"></a>如何使用内容资源管理器
 
@@ -139,8 +139,7 @@ ms.locfileid: "44327848"
 
 ## <a name="see-also"></a>另请参阅
 
-- [敏感度标签](sensitivity-labels.md)
-- [保留标签](labels.md)
+- [了解敏感度标签](sensitivity-labels.md)
+- [了解保留策略和保留标签](retention.md)
 - [敏感信息类型实体定义.md](sensitive-information-type-entity-definitions.md)
-- [保留策略概述](retention-policies.md)
 - [数据丢失防护概述](data-loss-prevention-policies.md)

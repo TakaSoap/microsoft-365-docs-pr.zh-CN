@@ -16,37 +16,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解专门适用于 Exchange 电子邮件和 Exchange 公用文件夹的保留行为。
-ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+description: 了解用于 Exchange 的保留的工作原理。
+ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080089"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127439"
 ---
-# <a name="learn-about-retention-policies-for-exchange"></a>了解 Exchange 的保留策略
+# <a name="learn-about-retention-for-exchange"></a>了解用于 Exchange 的保留
 
-本文中的信息是对[了解保留策略](retention-policies.md)的补充，因为它包含特定于 Exchange 的信息。
+本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Exchange 的信息。
 
-## <a name="how-a-retention-policy-works-with-exchange"></a>保留策略如何作用于 Exchange
-
-对于用户的邮件、日历和其他邮箱项目，保留策略在邮箱级别应用。
-
-对于公用文件夹，保留策略将应用于所有公用文件夹，而不是文件夹或邮箱级别。
-
-在为这些位置配置保留策略时，会将以下邮件项目包含在内：包含任何附件的邮件（包括草稿）、任务和日历项目（如果有结束日期）以及便签。 其中不包括联系人以及不具备结束日期的任何任务和日历项目。 存储在邮箱中的其他项目（如 Skype 和 Teams 保存的消息）包含在其单独的保留策略中。
+## <a name="how-retention-works-for-exchange"></a>用于 Exchange 的保留的工作原理
 
 邮箱和公用文件夹都使用“[可恢复的项目](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder)”文件夹来保留项目。 只有已分配电子数据展示权限的人员才可以查看其他用户的“可恢复的项目”文件夹中的项目。
   
 当用户从“已删除邮件”文件夹以外的文件夹中删除邮件时，默认情况下，该邮件将移动到“已删除邮件”文件夹中。 当用户删从“已删除邮件”文件夹中删除邮件时，该邮件将移动到“可恢复的项目”文件夹中。 但是，用户可以软删除 (Shift+Delete) 任何文件夹中的邮件，这会避开“已删除邮件”文件夹，直接将邮件移到“可恢复的项目”文件夹中。
   
-将保留策略应用于 Exchange 位置时，计时器作业会定期评估“可恢复的项目”文件夹中的项目。 如果某个项目与至少一个保留策略的规则不匹配，则将从“可恢复项目”文件夹中永久删除该项目（也称为硬删除）。
+在你向 Exchange 数据应用保留设置时，计时器作业会定期评估“可恢复项”文件夹中的项。 如果某项与至少一个保留策略或保留标签的规则不匹配，则会从“可恢复项”文件夹中永久删除（亦称为“硬删除”）。
 
 计时器作业运行可能需要长达 7 天的时间，并且 Exchange 位置必须至少包含 10 MB。
   
 当用户尝试更改邮箱邮件的属性（如主题、正文、附件、发件人和收件人或邮件发送和接收日期）时，在提交更改之前，会将原始邮件的副本保存到“可恢复的项目”文件夹中。 每个后续更改都会执行此操作。 保留期结束时，将永久删除“可恢复的项目”文件夹中的副本。
 
-将保留策略分配给邮箱或公用文件夹后，内容路径取决于保留设置是“保留后删除”、“仅保留”还是“仅删除”。
+在向 Exchange 内容应用保留设置后，内容路径取决于保留设置是“保留后删除”、“仅保留”还是“仅删除”。
 
 如果保留设置为“保留后删除”：
 
@@ -70,24 +64,10 @@ ms.locfileid: "45080089"
 
 2. **如果项目在配置的期限内遭到删除**：项目会立即移到“可恢复的项目”文件夹中。 如果用户从“可恢复的项”文件夹中删除项或清空此文件夹，该项将被永久删除。 否则，项会在“可恢复的项”文件夹中保留 14 天后永久删除。 
 
-## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>从保留策略中排除特定类型的 Exchange 项目
-
-通过使用 PowerShell，当保留设置对应的是仅保留时，可以从保留策略中排除特定类型的 Exchange 项目。 例如，可以排除邮箱中的语音邮件、即时消息对话和其他 Skype for Business Online 内容。 此外，还可以排除日历、便笺和任务项目。 此功能仅可通过 PowerShell 使用；使用 Microsoft 365 合规中心中的向导创建保留策略时，此功能不可用。
-  
-若要在保留策略中排除 Exchange 项目的选定类型，请将 `ExcludedItemClasses` 参数与 [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) 和 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlet 一起使用。
-
-若要使用保留策略 cmdlet，必须先[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
-
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织 
 
-如果某用户离开组织，且此用户的邮箱包含在保留策略内，那么在此用户的 Microsoft 365 帐户遭到删除后，其邮箱会变成非活动状态。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。 
+如果某用户离开组织，且此用户的邮箱包含在保留策略内，那么在此用户的 Microsoft 365 帐户遭到删除后，其邮箱会变成非活动状态。 非活动邮箱的内容仍受在邮箱变成非活动状态之前对邮箱应用的所有保留策略约束，且内容支持电子数据展示搜索。 有关详细信息，请参阅 [Exchange Online 中的非活动邮箱](inactive-mailboxes-in-office-365.md)。
 
-## <a name="how-to-configure-a-retention-policy-for-exchange"></a>如何配置 Exchange 的保留策略
+## <a name="configuration-guidance"></a>配置指南
 
-按照[创建和配置保留策略](create-retention-policies.md)以及向导的**选择位置**页面的说明，选择以下选项之一：
-
-- **仅将策略应用于 Exchange 电子邮件、公用文件夹、Office 365 组、OneDrive 和 SharePoint 文档中的内容**
-
-- **让我选择特定位置** > **Exchange 电子邮件**、**Exchange 公用文件夹**和 **Office 365 组**。
-
-即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Office 365 组**的位置。
+如果你已准备好在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。

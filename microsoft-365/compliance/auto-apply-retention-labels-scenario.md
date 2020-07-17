@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 此解决方案说明了如何使用保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用保留标签并配置基于事件的保留。
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419098"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126473"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留标签管理 SharePoint 文档的生命周期
 
@@ -108,11 +108,11 @@ ms.locfileid: "44419098"
 
 - **保留期：** 五年（1825 天）
 
-- **记录标签：** 配置保留标签以将内容分类为[记录](labels.md#using-retention-labels-for-records-management)（用户无法修改或删除分类为记录的文档）
+- **记录标签：** 配置保留标签以将内容分类为[记录](records.md)（用户无法修改或删除分类为记录的文档）
 
 - **文件计划描述符：**（为简化方案，未提供文件描述符）
 
-以下屏幕截图显示了在安全与合规中心内创建产品规范[保留标签](labels.md)时的设置。 创建保留标签时，可创建“**产品停产**”事件类型。 请参阅以下步骤。
+以下屏幕截图显示了在安全与合规中心内创建产品规范[保留标签](retention.md#retention-labels)时的设置。 创建保留标签时，可创建“**产品停产**”事件类型。 请参阅以下步骤。
 
 ![产品规标签保留设置](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ ms.locfileid: "44419098"
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>通过自动应用保留标签对内容进行分类
 
-我们将使用关键字查询语言 (KQL) [自动应用](labels.md#applying-a-retention-label-automatically-based-on-conditions)为此方案创建的保留标签。 KQL 是用于构建搜索查询的语言。 在 KQL 中，可使用关键字或托管属性进行搜索。 有关 KQL 的详细信息，请参阅 <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+我们将使用关键字查询语言 (KQL) [自动应用](apply-retention-labels-automatically.md)为此方案创建的保留标签。 KQL 是用于构建搜索查询的语言。 在 KQL 中，可使用关键字或托管属性进行搜索。 有关 KQL 的详细信息，请参阅 <https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
 在较高级别中，我们希望告诉 Microsoft 365 将“产品规范”**** 保留标签应用于所有“状态”**** 为“终稿”**** 且“文档类型”**** 为“产品规范”**** 的文档。 请记住，**状态**和**文档类型**是我们先前在“[信息体系结构](#information-architecture)”部分中为产品文档内容类型定义的网站栏。 为了完成此操作，我们需要配置搜索架构。
 
@@ -268,7 +268,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 现在已成功地自动应用了保留标签，下面我们将重点介绍用于指示特定产品停产的事件。 发生此事件时，它将触发在自动应用于文档的保留标签中定义的保留期。 例如，对于产品规范文档，当触发“产品停产”事件时，将开始五年的保留期。
 
-可在安全与合规中心内手动创建事件（方法是转到**记录管理** > **事件**），选择事件类型，设置正确的资产 ID，然后输入事件的日期。 有关详细信息，请参阅[事件驱动保留概述](event-driven-retention.md)。
+可在安全与合规中心内手动创建事件（方法是转到**记录管理** > **事件**），选择事件类型，设置正确的资产 ID，然后输入事件的日期。 有关详细信息，请参阅[从事件发生时开始计算保留期](event-driven-retention.md)。
 
 对于此方案，我们将通过从外部生产系统生成事件来自动创建事件。 在这种情况下，生成事件的系统是一个简单的 SharePoint 列表，它指示产品是否在生产中，[Microsoft 流程](https://docs.microsoft.com/flow/getting-started)是否与列表相关并触发事件。 在现实方案中，它可以是生成事件的任何系统，例如 HR 或 CRM 系统。 Flow 包含许多可供 Microsoft 365 工作负载（例如 Exchange、SharePoint、Teams 和 Dynamics 365）及第三方应用（例如 Twitter、Box、Salesforce 和 Workdays）使用的交互和构建块。 这使你可以轻松地将 Flow 与这些系统进行集成。 有关详细信息，请参阅[自动执行事件驱动的保留](automate-event-driven-retention.md)。
 
@@ -333,7 +333,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ### <a name="more-about-asset-ids"></a>有关资产 ID 的详细信息
 
-如[事件驱动保留概述](event-driven-retention.md)中所述，了解事件类型、标签、事件和资产 ID 之间的关系非常重要。 资产 ID 只是 SharePoint 和 OneDrive 中的另一种文档属性。 它可以帮助你进一步标识将由事件触发其保留期的文档。 默认情况下，SharePoint 具有一个资产 ID 属性，你可以将其用于事件驱动的保留：
+正如[从事件发生时开始计算保留期](event-driven-retention.md)一文中所解释的，理解事件类型、保留标签、事件和资产 ID 之间的关系非常重要。 资产 ID 只是 SharePoint 和 OneDrive 中的另一种文档属性。 它可以帮助你进一步标识将由事件触发其保留期的文档。 默认情况下，SharePoint 具有一个资产 ID 属性，你可以将其用于事件驱动的保留：
 
 ![文档属性详细信息页面中显示的资产 Id 属性](../media/SPRetention26.png)
 

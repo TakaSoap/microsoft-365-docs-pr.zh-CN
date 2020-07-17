@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: eda58ea2d34713a5c2cef40bbc2aa21b9964ddab
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327868"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127217"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
-作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。 你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](labels.md)和敏感信息类型分类来实现这一目标。 可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。 应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。 数据分类页面提供了对内容主体的可见性，具体如下：
+作为 Microsoft 365 管理员或合规性管理员，你可以评估并标记组织中的内容，以便控制其去向，随时随地提供保护，并确保根据组织的需要保留和删除该内容。 你可以通过应用[敏感度标签](sensitivity-labels.md)、[保留标签](retention.md#retention-labels)和敏感信息类型分类来实现这一目标。 可通过多种方法进行发现、评估和标记，但最终的结果是，你可能拥有大量的文档和电子邮件，它们使用其中一个或两个标签进行了标记和分类。 应用保留标签和敏感度标签后，你希望了解如何在租户中使用这些标签以及对这些项目所执行的操作。 数据分类页面提供了对内容主体的可见性，具体如下：
 
 - 已分类为敏感信息类型的项目数量以及这些分类是什么
 - Microsoft 365 和 Azure 信息保护中应用最多的敏感度标签
@@ -79,8 +79,8 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 > [!NOTE]
 > 如果卡片上显示消息“找不到包含敏感信息的数据”。 这表示你的组织中没有任何项目归类为敏感信息类型，也没有对任何项目进行爬网。 要开始使用标签，请参阅：
->- [敏感度标签](sensitivity-labels.md)
->- [保留标签](labels.md)
+>- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)
+>- [开始使用保留策略和保留标签](get-started-with-retention.md)
 >- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
 
 ## <a name="top-sensitivity-labels-applied-to-content"></a>应用于内容的最常用敏感度标签
@@ -104,7 +104,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 ## <a name="top-retention-labels-applied-to-content"></a>应用于内容的最常用保留标签
 
-保留标签用于管理组织中的内容的处置方式。 应用后，它们可用于控制在删除文档之前将其保留多长时间，是否应在删除之前对其进行评审，保留期何时到期或是否应将其标记为永远无法删除的记录。 有关详细信息，请参阅[保留标签概述](labels.md)。
+保留标签用于管理组织中的内容的处置方式。 应用后，它们可用于控制在删除文档之前将其保留多长时间，是否应在删除之前对其进行评审，保留期何时到期或是否应将其标记为永远无法删除的记录。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
 
 “应用最多的保留标签”卡片显示具有给定保留标签的项目数量。
 
@@ -112,7 +112,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 > [!NOTE]
 > 如果此卡片显示消息“未检测到任何保留标签”，则表示尚未创建或发布任何保留标签，或者任何内容均未应用保留标签。 要开始使用保留标签，请参阅：
->- [保留标签概述](labels.md)
+>- [开始使用保留策略和保留标签](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>检测到的热门活动
 
@@ -134,8 +134,7 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 
 - [查看标签活动（预览）](data-classification-activity-explorer.md)
 - [查看已应用标签的内容（预览）](data-classification-content-explorer.md)
-- [敏感度标签](sensitivity-labels.md)
-- [保留标签](labels.md)
+- [了解敏感度标签](sensitivity-labels.md)
+- [了解保留策略和保留标签](retention.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [保留策略概述](retention-policies.md)
 - [可训练分类器入门（预览）](classifier-getting-started-with.md)
