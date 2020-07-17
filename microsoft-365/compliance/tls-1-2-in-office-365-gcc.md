@@ -1,35 +1,33 @@
 ---
 title: Office 中的弃用 TLS 1.0 和 1.1 365 GCC High and DoD
 description: 讨论了 Microsoft 如何在 Office 365 和准备好使用 TLS 1.2 的情况下，在 GCC 的高和 DoD 环境中停止支持 TLS 1.1 和1.0。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
-ms.service: O365-seccomp
+ms.collection: M365-security-compliance
+ms.service: information-protection
 ms.topic: article
-ms.author: v-six
-ms.reviewer: lobrion
+ms.reviewer: krowley
+ms.author: shmehta
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: f61c0a809c4666981ee0f2d67eea21474b83a675
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 76e9b203e58ba7fa23942ea42810456e3bee377d
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024813"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158877"
 ---
 # <a name="deprecating-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>Office 中的弃用 TLS 1.0 和 1.1 365 GCC High and DoD
 
-> [!IMPORTANT]
-> 世界正处于病毒大流行之中，Microsoft 意识到这对我们的客户和合作伙伴会有很大影响。 为了减轻商业客户的负担，我们暂时停止了 TLS 1.0 和 1.1 的任何强制弃用。 在当前危机稳定后，将基于修订后的时间表发送更新。 （本文经过修订以反映更改。）
+## <a name="summary"></a>总结
 
-## <a name="summary"></a>摘要
+为符合联邦风险和授权管理程序（FedRAMP）的最新合规性标准，我们在 Microsoft Office 365 for GCC High and DoD 环境中弃用了传输层安全性（TLS）版本1.1 和1.0。 此更改之前已通过 Microsoft 支持部门宣布，以 [准备在 Office 365 中强制使用 TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
 
-为了符合联邦风险和授权管理程序（FedRAMP）的最新合规性标准，我们将迁移到 Microsoft Office 365 for GCC High and DoD 环境中的弃用传输层安全性（TLS）版本1.1 和1.0。 此更改之前已通过 Microsoft 支持部门宣布，以 [准备在 Office 365 中强制使用 TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
-
-我们了解您的数据的安全性非常重要，我们承诺对可能影响您的服务使用的更改的透明性。
+您的数据的安全是非常重要的，我们承诺对可能影响您的服务使用的更改的透明性。
 
 尽管[MICROSOFT TLS 1.0 实现](https://support.microsoft.com/help/3117336)没有已知的安全漏洞，但我们仍将致力于 FedRAMP 合规性标准。 因此，在从2020年1月15日起，在 GCC 高和 DoD 环境中，我们将弃用 TLS 1.1 和 365 1.0。 有关如何删除 TLS 1.1 和1.0 依赖项的信息，请参阅以下白皮书：
 

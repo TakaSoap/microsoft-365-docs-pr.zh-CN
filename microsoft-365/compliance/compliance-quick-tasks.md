@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 了解可帮助您在 Microsoft 365 中快速开始遵守合规性的任务。
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126611"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153685"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门的快速任务
 
@@ -101,6 +101,34 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 有关规划和配置通信合规性的分步指南，请参阅[plan for communication 合规性](communication-compliance-plan.md)并[开始进行通信合规性](communication-compliance-configure.md)。 有关通信合规性许可的信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>任务9：查看敏感项目发生的情况
+
+敏感度标签、敏感信息类型、保留标签和策略和 trainable 分类器可用于在 Exchange、SharePoint 和 OneDrive 中对敏感项目进行分类和标记，就像您在以前的任务中看到的那样。 您的快速任务旅程中的最后一步是查看哪些项目已标记，以及用户对这些敏感项目所执行的操作。 [内容浏览](data-classification-content-explorer.md)器和[活动资源管理器](data-classification-activity-explorer.md)提供此可见性。
+
+### <a name="content-explorer"></a>内容资源管理器
+ 内容资源管理器允许您以本机格式查看已分类为敏感信息类型或属于特定分类的所有项目，以及已应用灵敏度或保留标签的所有项目。
+
+有关使用内容资源管理器的分步指南，请参阅[了解您的数据数据分类概述](data-classification-overview.md)，并[开始使用内容浏览器](data-classification-content-explorer.md)。
+
+### <a name="activity-explorer"></a>活动资源管理器
+活动资源管理器可帮助您监视在以下范围内对保密项目和标记敏感项目执行的操作：
+- SharePoint
+- Exchange
+- OneDrive
+
+有 30 多种不同筛选器可供使用，其中有：
+
+- 日期范围
+- 活动类型
+- 位置
+- 用户
+- 敏感度标签
+- 保留标签
+- 文件路径
+- DLP 策略
+
+有关使用活动资源管理器的分步指南，请参阅[活动资源管理器入门](data-classification-activity-explorer.md)。
+
 ## <a name="next-steps"></a>后续步骤
 
 至此，已为组织配置合规性管理基础知识，请考虑 Microsoft 365 中的以下合规性解决方案，以帮助保护敏感信息，并检测和操作其他内幕风险。
@@ -112,8 +140,8 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 此外，保留标签支持[记录管理](records-management.md)以将内容标记为记录。 在此情况下，无法更改或删除标签，也不能编辑或删除内容。 为了帮助组织遵守法规要求，可能需要这些限制。
 
 有关创建和发布保留标签的分步指南，请参阅以下指南：
-- [创建保留标签并在应用程序中应用](create-apply-retention-labels.md)
-- [将保留标签自动应用于内容](apply-retention-labels-automatically.md)
+- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+- [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
 有关记录管理许可的信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
 
@@ -125,7 +153,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 ### <a name="prevent-data-loss"></a>防止数据丢失
 
-[数据丢失防护（DLP）策略](data-loss-prevention-policies.md)允许您识别、监视和自动保护 Microsoft 365 组织内的敏感信息。 使用 DLP 策略可识别 Microsoft 服务中的敏感信息，防止意外共享敏感信息，并帮助用户了解如何在不中断其工作流的情况下保持合规性。
+[数据丢失防护（DLP）策略](data-loss-prevention-policies.md)允许您识别、监视和自动保护 Microsoft 365 组织内的敏感信息。 使用 DLP 策略在 Microsoft 服务之间标识敏感项目，以防止意外共享敏感项目，并帮助用户了解如何在不中断其工作流的情况下保持合规性。
 
 有关配置 DLP 策略的分步指南，请参阅[DLP 策略建议](get-started-with-dlp-policy-recommendations.md)入门和[开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)。 有关数据丢失管理许可的信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 
