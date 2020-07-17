@@ -25,44 +25,44 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 06/19/2020
 ms.locfileid: "44818791"
 ---
-# <a name="security-incident-response"></a><span data-ttu-id="29c91-103">安全事件响应</span><span class="sxs-lookup"><span data-stu-id="29c91-103">Security Incident Response</span></span>
+# <a name="security-incident-response"></a><span data-ttu-id="e0a3f-103">安全事件响应</span><span class="sxs-lookup"><span data-stu-id="e0a3f-103">Security Incident Response</span></span>
 
- <span data-ttu-id="29c91-104">**摘要：** 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击的指标，如何正确确认任何给定的攻击以及如何对其做出响应。</span><span class="sxs-lookup"><span data-stu-id="29c91-104">**Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.</span></span>
+ <span data-ttu-id="e0a3f-104">**摘要：** 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击的指标，如何正确确认任何给定的攻击以及如何对其做出响应。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-104">**Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.</span></span>
 
-## <a name="learn-how-to-respond-to-cyberattacks"></a><span data-ttu-id="29c91-105">了解如何响应 cyberattacks</span><span class="sxs-lookup"><span data-stu-id="29c91-105">Learn how to respond to cyberattacks</span></span>
+## <a name="learn-how-to-respond-to-cyberattacks"></a><span data-ttu-id="e0a3f-105">了解如何响应 cyberattacks</span><span class="sxs-lookup"><span data-stu-id="e0a3f-105">Learn how to respond to cyberattacks</span></span>
 
-<span data-ttu-id="29c91-106">并非所有 cyberattacks 都可以 thwarted。</span><span class="sxs-lookup"><span data-stu-id="29c91-106">Not all cyberattacks can be thwarted.</span></span> <span data-ttu-id="29c91-107">攻击者经常在防御策略中寻找新的弱点，或者他们在利用旧弱点。</span><span class="sxs-lookup"><span data-stu-id="29c91-107">Attackers are constantly looking for new weaknesses in your defensive strategy or they are exploiting old ones.</span></span> <span data-ttu-id="29c91-108">了解如何识别攻击允许您更快地响应它，从而缩短了安全事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="29c91-108">Knowing how to recognize an attack allows you to respond to it faster, which shortens the duration of the security incident.</span></span>
+<span data-ttu-id="e0a3f-106">并非所有 cyberattacks 都可以 thwarted。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-106">Not all cyberattacks can be thwarted.</span></span> <span data-ttu-id="e0a3f-107">攻击者经常在防御策略中寻找新的弱点，或者他们在利用旧弱点。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-107">Attackers are constantly looking for new weaknesses in your defensive strategy or they are exploiting old ones.</span></span> <span data-ttu-id="e0a3f-108">了解如何识别攻击允许您更快地响应它，从而缩短了安全事件的持续时间。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-108">Knowing how to recognize an attack allows you to respond to it faster, which shortens the duration of the security incident.</span></span>
 
-<span data-ttu-id="29c91-109">本系列文章可帮助您了解特定类型的攻击在 Microsoft 365 中的外观，并提供了您可以采取的措施来做出响应。</span><span class="sxs-lookup"><span data-stu-id="29c91-109">This series of article helps you understand what a particular type of attack might look like in Microsoft 365 and gives you steps you can take to respond.</span></span> <span data-ttu-id="29c91-110">它们是快速入门点以了解：</span><span class="sxs-lookup"><span data-stu-id="29c91-110">They are quick entry points to understanding:</span></span>
+<span data-ttu-id="e0a3f-109">本系列文章可帮助您了解特定类型的攻击在 Microsoft 365 中的外观，并提供了您可以采取的措施来做出响应。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-109">This series of article helps you understand what a particular type of attack might look like in Microsoft 365 and gives you steps you can take to respond.</span></span> <span data-ttu-id="e0a3f-110">它们是快速入门点以了解：</span><span class="sxs-lookup"><span data-stu-id="e0a3f-110">They are quick entry points to understanding:</span></span>
 
-- <span data-ttu-id="29c91-111">什么是攻击以及它的工作原理。</span><span class="sxs-lookup"><span data-stu-id="29c91-111">What the attack is and how it works.</span></span>
+- <span data-ttu-id="e0a3f-111">什么是攻击以及它的工作原理。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-111">What the attack is and how it works.</span></span>
 
-- <span data-ttu-id="29c91-112">应查找的标志（称为 "泄露" （IOC））以及如何查找它们。</span><span class="sxs-lookup"><span data-stu-id="29c91-112">What signs, called indicators of compromise (IOC), to look for and how to look for them.</span></span>
+- <span data-ttu-id="e0a3f-112">应查找的标志（称为 "泄露" （IOC））以及如何查找它们。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-112">What signs, called indicators of compromise (IOC), to look for and how to look for them.</span></span>
 
-- <span data-ttu-id="29c91-113">如何正确地确认攻击。</span><span class="sxs-lookup"><span data-stu-id="29c91-113">How to positively confirm the attack.</span></span>
+- <span data-ttu-id="e0a3f-113">如何正确地确认攻击。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-113">How to positively confirm the attack.</span></span>
 
-- <span data-ttu-id="29c91-114">减少攻击并在将来更好地保护组织的步骤。</span><span class="sxs-lookup"><span data-stu-id="29c91-114">Steps to take to cut off the attack and better protect your organization in the future.</span></span>
+- <span data-ttu-id="e0a3f-114">减少攻击并在将来更好地保护组织的步骤。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-114">Steps to take to cut off the attack and better protect your organization in the future.</span></span>
 
-- <span data-ttu-id="29c91-115">指向有关每种攻击类型的详细信息的链接。</span><span class="sxs-lookup"><span data-stu-id="29c91-115">Links to in-depth information on each attack type.</span></span>
+- <span data-ttu-id="e0a3f-115">指向有关每种攻击类型的详细信息的链接。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-115">Links to in-depth information on each attack type.</span></span>
 
-<span data-ttu-id="29c91-116">每月查看一次，在一段时间后将添加更多文章。</span><span class="sxs-lookup"><span data-stu-id="29c91-116">Check back here monthly as more articles will be added over time.</span></span>
+<span data-ttu-id="e0a3f-116">每月查看一次，在一段时间后将添加更多文章。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-116">Check back here monthly as more articles will be added over time.</span></span>
 
-## <a name="detect-and-remediate-articles"></a><span data-ttu-id="29c91-117">检测和修正文章</span><span class="sxs-lookup"><span data-stu-id="29c91-117">Detect and remediate articles</span></span>
+## <a name="detect-and-remediate-articles"></a><span data-ttu-id="e0a3f-117">检测和修正文章</span><span class="sxs-lookup"><span data-stu-id="e0a3f-117">Detect and remediate articles</span></span>
 
-- [<span data-ttu-id="29c91-118">检测和修正 Office 365 中的非法授权</span><span class="sxs-lookup"><span data-stu-id="29c91-118">Detect and Remediate Illicit Consent Grants in Office 365</span></span>](detect-and-remediate-illicit-consent-grants.md)
+- [<span data-ttu-id="e0a3f-118">检测和修正 Office 365 中的非法授权</span><span class="sxs-lookup"><span data-stu-id="e0a3f-118">Detect and Remediate Illicit Consent Grants in Office 365</span></span>](detect-and-remediate-illicit-consent-grants.md)
 
-- [<span data-ttu-id="29c91-119">在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击</span><span class="sxs-lookup"><span data-stu-id="29c91-119">Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365</span></span>](detect-and-remediate-outlook-rules-forms-attack.md)
+- [<span data-ttu-id="e0a3f-119">在 Office 365 中检测并修正 Outlook 规则和自定义窗体注入攻击</span><span class="sxs-lookup"><span data-stu-id="e0a3f-119">Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365</span></span>](detect-and-remediate-outlook-rules-forms-attack.md)
 
-## <a name="incident-response-articles"></a><span data-ttu-id="29c91-120">事件响应文章</span><span class="sxs-lookup"><span data-stu-id="29c91-120">Incident response articles</span></span>
+## <a name="incident-response-articles"></a><span data-ttu-id="e0a3f-120">事件响应文章</span><span class="sxs-lookup"><span data-stu-id="e0a3f-120">Incident response articles</span></span>
 
-- [<span data-ttu-id="29c91-121">响应 Office 365 中遭到入侵的电子邮件帐户</span><span class="sxs-lookup"><span data-stu-id="29c91-121">Responding to a Compromised Email Account in Office 365</span></span>](responding-to-a-compromised-email-account.md)
+- [<span data-ttu-id="e0a3f-121">响应 Office 365 中遭到入侵的电子邮件帐户</span><span class="sxs-lookup"><span data-stu-id="e0a3f-121">Responding to a Compromised Email Account in Office 365</span></span>](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a><span data-ttu-id="29c91-122">像网络安全专家那样保护 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="29c91-122">Secure Microsoft 365 like a cybersecurity pro</span></span>
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a><span data-ttu-id="e0a3f-122">像网络安全专家那样保护 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e0a3f-122">Secure Microsoft 365 like a cybersecurity pro</span></span>
 
-<span data-ttu-id="29c91-123">你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。</span><span class="sxs-lookup"><span data-stu-id="29c91-123">Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.</span></span>  <span data-ttu-id="29c91-124">使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的最佳实践，以确保 microsoft 365 组织的安全。</span><span class="sxs-lookup"><span data-stu-id="29c91-124">Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 organization.</span></span>
+<span data-ttu-id="e0a3f-123">你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-123">Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.</span></span>  <span data-ttu-id="e0a3f-124">使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的最佳实践，以确保 microsoft 365 组织的安全。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-124">Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 organization.</span></span>
 
-- <span data-ttu-id="29c91-125">需要在前 30 天完成的任务。</span><span class="sxs-lookup"><span data-stu-id="29c91-125">Tasks to accomplish in the first 30 days.</span></span>  <span data-ttu-id="29c91-126">这些任务会对你的用户产生直接影响并且影响很小。</span><span class="sxs-lookup"><span data-stu-id="29c91-126">These have immediate affect and are low-impact to your users.</span></span>
+- <span data-ttu-id="e0a3f-125">需要在前 30 天完成的任务。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-125">Tasks to accomplish in the first 30 days.</span></span>  <span data-ttu-id="e0a3f-126">这些任务会对你的用户产生直接影响并且影响很小。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-126">These have immediate affect and are low-impact to your users.</span></span>
 
-- <span data-ttu-id="29c91-127">需要在 90 天内完成的任务。</span><span class="sxs-lookup"><span data-stu-id="29c91-127">Tasks to accomplish in 90 days.</span></span> <span data-ttu-id="29c91-128">这些工作需要花一点时间来进行规划和实施，但大大提高了安全状况</span><span class="sxs-lookup"><span data-stu-id="29c91-128">These take a bit more time to plan and implement but greatly improve your security posture</span></span>
+- <span data-ttu-id="e0a3f-127">需要在 90 天内完成的任务。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-127">Tasks to accomplish in 90 days.</span></span> <span data-ttu-id="e0a3f-128">这些工作需要花一点时间来进行规划和实施，但大大提高了安全状况</span><span class="sxs-lookup"><span data-stu-id="e0a3f-128">These take a bit more time to plan and implement but greatly improve your security posture</span></span>
 
-- <span data-ttu-id="29c91-129">90 天后。</span><span class="sxs-lookup"><span data-stu-id="29c91-129">Beyond 90 days.</span></span> <span data-ttu-id="29c91-130">这些增强功能基于前 90 天的工作构建。</span><span class="sxs-lookup"><span data-stu-id="29c91-130">These enhancements build in your first 90 days work.</span></span>
+- <span data-ttu-id="e0a3f-129">90 天后。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-129">Beyond 90 days.</span></span> <span data-ttu-id="e0a3f-130">这些增强功能基于前 90 天的工作构建。</span><span class="sxs-lookup"><span data-stu-id="e0a3f-130">These enhancements build in your first 90 days work.</span></span>
