@@ -1,0 +1,80 @@
+---
+title: 开始使用保留策略和保留标签
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- SPO_Content
+search.appverid:
+- MOE150
+- MET150
+description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
+ms.openlocfilehash: 415313ac31fe4ad56f9a476576f14b90d7dd97f4
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127554"
+---
+# <a name="get-started-with-retention-policies-and-retention-labels"></a><span data-ttu-id="cccae-104">开始使用保留策略和保留标签</span><span class="sxs-lookup"><span data-stu-id="cccae-104">Get started with retention policies and retention labels</span></span>
+
+><span data-ttu-id="cccae-105">*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*</span><span class="sxs-lookup"><span data-stu-id="cccae-105">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+
+<span data-ttu-id="cccae-106">已准备好通过保留需要保留的内容和删除不需要的内容来开始管理组织的数据？</span><span class="sxs-lookup"><span data-stu-id="cccae-106">Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't?</span></span> <span data-ttu-id="cccae-107">请遵循下面的简要指南来入门：</span><span class="sxs-lookup"><span data-stu-id="cccae-107">Use the following high-level guidance to get started:</span></span>
+
+1. <span data-ttu-id="cccae-108">**了解保留在 Microsoft 365 中的工作原理**，然后确定是需要使用保留策略还是保留标签，亦或是两者的组合：[了解保留](retention.md)</span><span class="sxs-lookup"><span data-stu-id="cccae-108">**Understand how retention works** in Microsoft 365, and then identify whether you need to use retention policies or retention labels, or a combination: [Learn about retention](retention.md)</span></span>
+
+2. <span data-ttu-id="cccae-109">**确定组织策略或行业法规所要求的保留设置和操作**。</span><span class="sxs-lookup"><span data-stu-id="cccae-109">**Identify the retention settings and actions** that are required by your organization policies or industry regulations.</span></span>
+    
+    <span data-ttu-id="cccae-110">在此评估过程中，请确定是否将使用[记录管理](records-management.md)。</span><span class="sxs-lookup"><span data-stu-id="cccae-110">As part of this assessment, determine whether you will use [records management](records-management.md).</span></span>
+
+3. <span data-ttu-id="cccae-111">根据已确定的保留设置和操作，**创建保留策略和保留标签**。</span><span class="sxs-lookup"><span data-stu-id="cccae-111">**Create retention policies and retention labels**, based on the retention settings and actions that you identified.</span></span>
+    
+    <span data-ttu-id="cccae-112">对于保留标签，你可能会发现使用[文件计划](file-plan-manager.md)在电子表格中定义和优化保留标签很有用。</span><span class="sxs-lookup"><span data-stu-id="cccae-112">For retention labels, you might find it useful to use [file plan](file-plan-manager.md) to define and refine your retention labels in a spreadsheet.</span></span> <span data-ttu-id="cccae-113">然后，导入相应电子表格来创建标签。</span><span class="sxs-lookup"><span data-stu-id="cccae-113">Then, import that spreadsheet to create your labels.</span></span>
+    
+3. <span data-ttu-id="cccae-114">**发布并应用保留标签**。</span><span class="sxs-lookup"><span data-stu-id="cccae-114">**Publish and apply your retention labels**.</span></span> <span data-ttu-id="cccae-115">保留策略是为“一次设置、后顾无忧”配置而设计的，而保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中。</span><span class="sxs-lookup"><span data-stu-id="cccae-115">While retention policies are designed for "set it and forget it" configuration, retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows.</span></span> <span data-ttu-id="cccae-116">请参阅[常见应用场景](#common-scenarios-for-retention-policies-and-retention-labels)列表，此列表有助于确定如何使用保留标签。</span><span class="sxs-lookup"><span data-stu-id="cccae-116">See the list of [common scenarios](#common-scenarios-for-retention-policies-and-retention-labels) to help you identify how retention labels can be used.</span></span> 
+
+## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a><span data-ttu-id="cccae-117">保留策略和保留标签的订阅和许可要求</span><span class="sxs-lookup"><span data-stu-id="cccae-117">Subscription and licensing requirements for retention policies and retention labels</span></span>
+
+<span data-ttu-id="cccae-118">许多不同的订阅都支持保留策略和保留标签，用户的许可要求取决于你使用的功能。</span><span class="sxs-lookup"><span data-stu-id="cccae-118">A number of different subscriptions support retention policies and retention labels and the licensing requirements for users depend on the features you use.</span></span>
+
+<span data-ttu-id="cccae-119">若要查看许可用户以便受益于 Microsoft 365 合规性功能的选项，请参阅 [Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。</span><span class="sxs-lookup"><span data-stu-id="cccae-119">To see the options for licensing your users to benefit from Microsoft 365 compliance features, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).</span></span> <span data-ttu-id="cccae-120">对于保留，请参阅[信息管理](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance)部分和相关 PDF 或 Excel 下载内容，以了解功能级别许可要求。</span><span class="sxs-lookup"><span data-stu-id="cccae-120">For retention, see the [Information Governance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) section and related PDF or Excel download for feature-level licensing requirements.</span></span>
+
+## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a><span data-ttu-id="cccae-121">创建和管理保留策略和保留标签所需的权限</span><span class="sxs-lookup"><span data-stu-id="cccae-121">Permissions required to create and manage retention policies and retention labels</span></span>
+
+<span data-ttu-id="cccae-122">负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。</span><span class="sxs-lookup"><span data-stu-id="cccae-122">Members of your compliance team who will create and manage retention policies and retention labels need permissions to the [Microsoft 365 compliance center](https://compliance.microsoft.com/).</span></span> <span data-ttu-id="cccae-123">默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**合规性管理员**管理角色组。</span><span class="sxs-lookup"><span data-stu-id="cccae-123">By default, the tenant admin (global administrator) has access to this location and can give compliance officers and other people access without giving them all the permissions of a tenant admin. To grant permissions for this limited administration, we recommend that you add users to the **Compliance Administrator** admin role group.</span></span> <span data-ttu-id="cccae-124">有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。</span><span class="sxs-lookup"><span data-stu-id="cccae-124">For instructions, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).</span></span>
+
+<span data-ttu-id="cccae-125">只有在创建和应用保留策略时才需要这些权限。</span><span class="sxs-lookup"><span data-stu-id="cccae-125">These permissions are required only to create and apply a retention policy.</span></span> <span data-ttu-id="cccae-126">配置保留策略的人员不需要访问该内容。</span><span class="sxs-lookup"><span data-stu-id="cccae-126">The person configuring the retention policy doesn't require access to the content.</span></span>
+
+## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a><span data-ttu-id="cccae-127">保留策略和保留标签的常见应用场景</span><span class="sxs-lookup"><span data-stu-id="cccae-127">Common scenarios for retention policies and retention labels</span></span>
+
+<span data-ttu-id="cccae-128">请使用下表来帮助你将业务需求映射到保留策略和保留标签支持的保留应用场景。</span><span class="sxs-lookup"><span data-stu-id="cccae-128">Use the following table to help you map your business requirements to retention scenarios supported by retention policies and retention labels.</span></span>
+
+|<span data-ttu-id="cccae-129">我想...</span><span class="sxs-lookup"><span data-stu-id="cccae-129">I want to ...</span></span>|<span data-ttu-id="cccae-130">文档</span><span class="sxs-lookup"><span data-stu-id="cccae-130">Documentation</span></span>|
+|----------------|---------------|
+|<span data-ttu-id="cccae-131">高效地为组织或按位置设置保留和删除操作：</span><span class="sxs-lookup"><span data-stu-id="cccae-131">Efficiently set retain and delete actions for the organization, or by location:</span></span> <br /><span data-ttu-id="cccae-132">- Exchange</span><span class="sxs-lookup"><span data-stu-id="cccae-132">-  Exchange</span></span>  <br /><span data-ttu-id="cccae-133">- SharePoint</span><span class="sxs-lookup"><span data-stu-id="cccae-133">- SharePoint</span></span>  <br /><span data-ttu-id="cccae-134">- OneDrive</span><span class="sxs-lookup"><span data-stu-id="cccae-134">- OneDrive</span></span>  <br /><span data-ttu-id="cccae-135">- Microsoft 365 组</span><span class="sxs-lookup"><span data-stu-id="cccae-135">- Microsoft 365 groups</span></span> <br /><span data-ttu-id="cccae-136">- Skype for Business</span><span class="sxs-lookup"><span data-stu-id="cccae-136">- Skype for Business</span></span>  <br /><span data-ttu-id="cccae-137">- Teams</span><span class="sxs-lookup"><span data-stu-id="cccae-137">- Teams</span></span>  |[<span data-ttu-id="cccae-138">创建和配置保留策略</span><span class="sxs-lookup"><span data-stu-id="cccae-138">Create and configure retention policies</span></span>](create-retention-policies.md)|
+|<span data-ttu-id="cccae-139">让管理员和用户手动为文档和电子邮件应用一组保留和删除操作：</span><span class="sxs-lookup"><span data-stu-id="cccae-139">Let admins and users manually apply a set of retain and delete actions for documents and emails:</span></span> <br /><span data-ttu-id="cccae-140">- SharePoint</span><span class="sxs-lookup"><span data-stu-id="cccae-140">-  SharePoint</span></span> <br /><span data-ttu-id="cccae-141">- OneDrive</span><span class="sxs-lookup"><span data-stu-id="cccae-141">- OneDrive</span></span> <br /><span data-ttu-id="cccae-142">- Outlook 和 Outlook 网页版</span><span class="sxs-lookup"><span data-stu-id="cccae-142">- Outlook and Outlook on the web</span></span>|[<span data-ttu-id="cccae-143">创建保留标签并在应用中应用它们</span><span class="sxs-lookup"><span data-stu-id="cccae-143">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)|
+|<span data-ttu-id="cccae-144">让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留标签</span><span class="sxs-lookup"><span data-stu-id="cccae-144">Let site admins set a default retention label for all content in a SharePoint library, folder, or document set</span></span>|[<span data-ttu-id="cccae-145">创建保留标签并在应用中应用它们</span><span class="sxs-lookup"><span data-stu-id="cccae-145">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)|
+|<span data-ttu-id="cccae-146">让用户使用 Outlook 规则向电子邮件自动应用保留标签</span><span class="sxs-lookup"><span data-stu-id="cccae-146">Let users automatically apply a retention label to emails by using Outlook rules</span></span>|[<span data-ttu-id="cccae-147">创建保留标签并在应用中应用它们</span><span class="sxs-lookup"><span data-stu-id="cccae-147">Create retention labels and apply them in apps</span></span>](create-apply-retention-labels.md)|
+|<span data-ttu-id="cccae-148">向文档和电子邮件自动应用一组保留和删除操作</span><span class="sxs-lookup"><span data-stu-id="cccae-148">Automatically apply a set of retain and delete actions to documents and emails</span></span> |[<span data-ttu-id="cccae-149">自动向内容应用保留标签</span><span class="sxs-lookup"><span data-stu-id="cccae-149">Apply a retention label to content automatically</span></span>](apply-retention-labels-automatically.md)|
+|<span data-ttu-id="cccae-150">从事件发生时开始计算保留期，比如：</span><span class="sxs-lookup"><span data-stu-id="cccae-150">Start the retention period when an event occurs, such as:</span></span>  <br /><span data-ttu-id="cccae-151">- 员工离开组织</span><span class="sxs-lookup"><span data-stu-id="cccae-151">- Employees leave the organization</span></span> <br /><span data-ttu-id="cccae-152">- 合同到期</span><span class="sxs-lookup"><span data-stu-id="cccae-152">- Contracts expire</span></span> <br /><span data-ttu-id="cccae-153">- 产品生存期结束</span><span class="sxs-lookup"><span data-stu-id="cccae-153">- End of product lifetime</span></span>| [<span data-ttu-id="cccae-154">从事件发生时开始计算保留期</span><span class="sxs-lookup"><span data-stu-id="cccae-154">Start retention when an event occurs</span></span>](event-driven-retention.md)|
+|<span data-ttu-id="cccae-155">将一个记录管理解决方案同时用于文档和电子邮件</span><span class="sxs-lookup"><span data-stu-id="cccae-155">Use a single records management solution for both documents and emails</span></span> |[<span data-ttu-id="cccae-156">Microsoft 365 中的记录管理</span><span class="sxs-lookup"><span data-stu-id="cccae-156">Records management in Microsoft 365</span></span>](records-management.md) |
+|<span data-ttu-id="cccae-157">遵守 SEC 规则 17a-4</span><span class="sxs-lookup"><span data-stu-id="cccae-157">Comply with SEC Rule 17a-4</span></span>|[<span data-ttu-id="cccae-158">使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4</span><span class="sxs-lookup"><span data-stu-id="cccae-158">Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4</span></span>](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
+|<span data-ttu-id="cccae-159">确保内容在内容保留期结束时被删除之前，有人进行评审和批准</span><span class="sxs-lookup"><span data-stu-id="cccae-159">Make sure somebody reviews and approves before content is deleted at the end of its retention period</span></span>|[<span data-ttu-id="cccae-160">处置评审</span><span class="sxs-lookup"><span data-stu-id="cccae-160">Disposition reviews</span></span>](disposition.md#disposition-reviews) |
+|<span data-ttu-id="cccae-161">对在保留期结束时删除的内容有处置证明</span><span class="sxs-lookup"><span data-stu-id="cccae-161">Have proof of disposition for content that is deleted at the end of it's retention period</span></span>|[<span data-ttu-id="cccae-162">处置记录</span><span class="sxs-lookup"><span data-stu-id="cccae-162">Disposition of records</span></span>](disposition.md#disposition-of-records) |
+
+## <a name="end-user-documentation-for-retention-labels"></a><span data-ttu-id="cccae-163">保留标签的最终用户文档</span><span class="sxs-lookup"><span data-stu-id="cccae-163">End-user documentation for retention labels</span></span>
+
+<span data-ttu-id="cccae-164">与保留策略不同，保留标签在 Microsoft 365 应用中有 UI。</span><span class="sxs-lookup"><span data-stu-id="cccae-164">Retention labels, unlike retention policies, have a UI presence in Microsoft 365 apps.</span></span> <span data-ttu-id="cccae-165">请务必在将保留标签部署到生产网络前，为最终用户和技术支持人员提供指导。</span><span class="sxs-lookup"><span data-stu-id="cccae-165">Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.</span></span>
+
+<span data-ttu-id="cccae-166">最有效的最终用户文档将是你针对所选保留标签名称和配置提供的定制指南和说明。</span><span class="sxs-lookup"><span data-stu-id="cccae-166">The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose.</span></span> <span data-ttu-id="cccae-167">不过，可以使用以下信息作为基本说明：</span><span class="sxs-lookup"><span data-stu-id="cccae-167">However, you can use the following information for basic instructions:</span></span>
+
+- [<span data-ttu-id="cccae-168">手动应用保留标签</span><span class="sxs-lookup"><span data-stu-id="cccae-168">Manually apply retention labels</span></span>](create-apply-retention-labels.md#manually-apply-retention-labels)
