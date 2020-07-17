@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 批量创建和发布保留标签
+title: 使用 PowerShell 创建和发布保留标签
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用 Office 365 保留标签，通过 PowerShell 实现组织的保留计划。
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 了解如何使用 PowerShell 从命令行来创建和发布保留标签，而不受 Microsoft 365合规中心影响。
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035530"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126363"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 批量创建和发布保留标签
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 创建和发布保留标签
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-在 Office 365 中，可使用保留标签为组织实现保留计划。记录管理者或合规部主管可能需要创建和发布数百个保留标签。为此，可使用安全&amp;合规中心 UI，但一次只能创建一个保留标签，这样既费时又低效。
+决定使用[保留标签](retention.md)帮助您保留或删除 Microsoft 365 中的文档和电子邮件后，可能会经意识到要创建和发布许多甚至可能数百个保留标签。 批量创建保留标签的建议方法是使用 Microsoft 365 合规中心中的“[文件计划](file-plan-manager.md)”。 但是，你也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。
   
-使用以下提供的脚本和 .csv 文件，可批量创建保留标签并发布保留标签策略。 首先在 Excel 中创建保留标签列表和保留标签策略列表，然后使用 PowerShell 在这些列表中批量创建保留标签和保留标签策略。 这样可更轻松地一次性创建和发布保留计划所需的所有保留标签。
-  
-若要详细了解保留标签，请参阅[标签概述](labels.md)。
+使用本文中的信息，模板文件和示例以及脚本来帮助您批量创建保留标签并将其发布在保留标签策略中。 然后，可以[由管理员和用户应用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)保留标签。
+
+提供的说明不支持自动应用的保留标签。
+
+概述： 
+
+1. 在 Excel 中，创建保留标签列表及保留标签策略列表。
+
+2. 使用 PowerShell 在这些列表中创建保留标签和保留标签策略。
   
 ## <a name="disclaimer"></a>免责声明
 
-本主题中的示例脚本不受任何 Microsoft 标准支持计划或服务支持。示例脚本按原样提供，不提供任何种类的担保。Microsoft 进一步声明，不提供任何默示担保，包括但不限于适销性或特定用途适用性的默示担保。使用或运行示例脚本和文档所产生的任何风险均由你自己承担。对于因使用或无法使用示例脚本或文档而产生的任何损失（包括但不限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者或参与创建、生成或交付脚本的任何人都不承担任何责任，即使 Microsoft 已被告知存在这种损失的可能性，也不例外。
+本文中提供的示例脚本在任意 Microsoft 标准支持程序或服务下都不受支持。 示例脚本“原样”提供，不提供任何形式的保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由于示例脚本及文档的使用或性能所引起的全部风险均由您承担。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
   
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>第 1 步：创建用于创建保留标签的 .csv 文件
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>第 1 步：创建用于保留标签的 .csv 文件
 
-首先，创建包含保留标签列表及其设置的 .csv 文件。可将下面的示例用作模板，具体方法是将示例复制到 Excel 中，将文本转换为列（Excel \>“**数据**”选项卡 \>“**将文本转换为列**”\>“**分隔符号**”\>“**逗号**”\>“**常规**”），再将工作表另存为 .csv 文件，并保存到易于查找的位置。
-  
-若要详细了解此 cmdlet 的参数值，请参阅 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+1. 复制以下用于模板的示例 .csv 文件和用于四个不同保留标签的示例条目，然后将其粘贴到 Excel 中。 
+
+2. 将文本转换为列： **数据** 制表符\> **文本至列** \> **分隔** \> **逗号**\> **常规**
+
+2. 将示例替换为自己的保留标签和设置的条目。 若要详细了解参数值，请参阅 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+
+3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：C:\>Scripts\Labels.csv
+
   
 注意：
-  
-- 如果你没有提供用于创建保留标签的源文件，脚本会继续运行，并提示你提供用于发布保留标签的源文件（请参阅下一部分），否则脚本只会发布现有保留标签。
-    
+
 - 如果 .csv 文件中有保留标签与现有保留标签同名，脚本会跳过创建此保留标签。原则是不创建重复保留标签。
     
-- 如果更改或重命名列标题，脚本会失败。脚本要求 .csv 文件必须采用本文中的格式。
+- 请勿更改或重命名示例 .csv 文件提供的列标题，否则脚本将失败。
     
-### <a name="sample-csv-file"></a>示例 .csv 文件
+### <a name="sample-csv-file-for-retention-labels"></a>保留标签示例.csv文件
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>第 2 步：创建用于发布标签的 .csv 文件
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>第 2 步：创建保留标签策略的 .csv 文件
 
-接下来，创建包含保留标签列表及其位置和其他设置的 .csv 文件。可将下面的示例用作模板，具体方法是将示例复制到 Excel 中，将文本转换为列（Excel \>“**数据**”选项卡 \>“**将文本转换为列**”\>“**分隔符号**”\>“**逗号**”\>“**常规**”），再将工作表另存为 .csv 文件，并保存到易于查找的位置。
-  
-若要详细了解此 cmdlet 的参数值，请参阅 [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512)。
-  
+1. 复制以下用于模板的示例 .csv 文件和用于三个不同保留标签策略的示例条目，然后将其粘贴到 Excel 中。 
+
+2. 将文本转换为列： **数据** 制表符\> **文本至列** \> **分隔** \> **逗号**\> **常规**
+
+2. 将示例替换为自己的保留标签策略和其设置的条目。 若要详细了解此 cmdlet 的参数值，请参阅 [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)。
+
+3. 将工作表另存为 .csv 文件，保存在便于后续步骤的位置。 例如：`<path>Policies.csv`
+
+
 注意：
   
-- 如果你没有提供用于发布保留标签的源文件，脚本会创建保留标签（请参阅上一部分），但不会发布保留标签。
-    
 - 如果 .csv 文件中有保留标签策略与现有保留标签策略同名，脚本会跳过创建此保留标签策略。原则是不创建重复保留标签策略。
     
-- 该脚本仅发布手动应用于内容的保留标签。 此脚本不支持自动应用于内容的保留标签。
+- 请勿更改或重命名示例 .csv 文件提供的列标题，否则脚本将失败。
     
-- 如果更改或重命名列标题，脚本会失败。脚本要求 .csv 文件必须采用本文中的格式。
-    
-### <a name="sample-csv-file"></a>示例 .csv 文件
+### <a name="sample-csv-file-for-retention-policies"></a>保留策略示例 .csv 文件
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -90,20 +100,30 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>第 3 步：创建 PowerShell 脚本
 
-复制下面的 PowerShell 脚本，并将它粘贴到记事本中。使用 .ps1 文件名后缀将文件保存到易于查找的位置（例如，\<path\>CreateRetentionSchedule.ps1）。
-  
+1. 将以下 PowerShell 脚本复制并粘贴到记事本中。
+
+2. 将使用扩展名为 **.ps1** 的文件保存至易于查找的位置。 例如：`<path>CreateRetentionSchedule.ps1`
+
+注意：
+
+- 脚本提示您提供在前两个步骤中创建的两个源文件：
+    - 如果未指定源文件来创建保留标签，则脚本将继续创建保留标签策略。 
+    - 如果未指定源文件来创建保留标签策略，则脚本仅创建保留标签。
+
+- 脚本会生成一个日志文件，记录执行的每个操作以及该操作成功还是失败。 有关如何查找此日志文件的说明，请参阅最后一步。
+
 ### <a name="powershell-script"></a>PowerShell 脚本
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>第 4 步：连接到安全与合规中心 PowerShell
+## <a name="step-4-run-the-powershell-script"></a>第 4 步：运行 PowerShell 脚本
 
-请按照下列步骤操作：
+首先，[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+
+然后，运行创建并发布保留标签的脚本：
   
-- [连接到安全与合规中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+1. 在安全与合规中心 PowerShell 会话中，输入路径，后跟 `.\` 字符和脚本的文件名，再按 ENTER 运行脚本。 例如：
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>第 5 步：运行 PowerShell 脚本以创建并发布保留标签
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-连接到安全&amp;合规中心 PowerShell 后，下一步是运行用于创建和发布保留标签的脚本。
-  
-1. 在安全与合规中心 PowerShell 会话中，输入路径，后跟 .\ 字符和脚本的文件名，再按 ENTER 运行脚本。例如：
+2. 脚本会提示你输入上一步骤中创建的 .csv 文件的位置。 输入路径，后跟 `.\` 字符和 .csv 文件的文件名，再按 ENTER。 例如，对于第一个提示：
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    脚本会提示你输入上面创建的 .csv 文件的位置。
-    
-2. 输入路径，后跟 .\ 字符和 .csv 文件的文件名，再按 ENTER。例如：
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>第 5 步：查看日志文件中的结果
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>第 6 步：查看日志文件中的结果
+使用脚本创建的日志文件检查结果并确定需要解决的所有错误。
 
-运行后的脚本生成一个日志文件，用于记录它执行的所有操作以及操作是否成功。日志文件包含已创建保留标签和已发布保留标签的所有元数据。日志文件位于下面的位置，但请注意，文件名中的数字会有所不同。
+可以在以下位置找到日志文件，尽管示例文件名中的数字有所不同。
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
