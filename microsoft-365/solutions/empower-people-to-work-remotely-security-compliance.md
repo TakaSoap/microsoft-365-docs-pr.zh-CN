@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049857"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127070"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -54,6 +54,8 @@ ms.locfileid: "45049857"
 | Azure AD 标识保护  | 自动检测和修复基于标识的风险。 <br><br>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
 ||||
 
+有关详细信息，请参阅 [Microsoft 365 合规性入门快速任务](../compliance/compliance-quick-tasks.md)。
+
 ## <a name="compliance"></a>合规性
 
 使用 Microsoft 365 的这些合规性功能来遵守内部政策或法规要求。
@@ -64,10 +66,12 @@ ms.locfileid: "45049857"
 | 数据丢失防护 (DLP) | 在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。 | Microsoft 365 E3 和 E5 | 
 | 条件访问应用控制 | 防止敏感数据下载到用户的个人设备。 | Microsoft 365 E3 和 E5 |
 | 数据保留标签和策略 | 实施信息治理控制，例如将数据保留多长时间以及对客户个人数据存储的要求，以符合组织的政策或数据法规。 | Microsoft 365 E3 和 E5 |
-| 电子邮件加密 | 在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含受监管的数据，例如客户的个人数据。 | Microsoft 365 E3 和 E5 |
+| Office 邮件加密 (OME) | 在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含受监管的数据，例如客户的个人数据。 | Microsoft 365 E3 和 E5 |
 | 合规性管理器 | 使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。 | Microsoft 365 E3 和 E5 |
 | 合规性分数（预览版） | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 和 E5 |
 ||||
+
+有关详细信息，请参阅[安全团队为支持在家办公需完成的 12 大任务](../security/top-security-tasks-for-remote-work.md)。
 
 ## <a name="results-of-step-3"></a>步骤 3 的结果
 

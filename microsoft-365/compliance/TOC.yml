@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: Office 365 的 TLS 1.0 和 1.1 停用
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: Office 365 GCC High 和 DoD 中的 TLS 1.0 和 1.1 停用
+      href: tls-1-2-in-office-365-gcc.md
+    - name: Office 365 中的 TLS 1.2
+      href: prepare-tls-1.2-in-office-365.md
     - name: 客户密钥
       items:
         - name: 使用 Office 365 中的客户密钥执行服务加密
@@ -279,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: 设置邮箱的存档和删除策略
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: 保留数据
+    - name: 保留和删除数据
       items:
-        - name: 了解有关保留策略的信息
-          href: retention-policies.md
-        - name: 创建和配置保留策略
+        - name: 了解有关保留的信息
+          items:
+            - name: 保留策略和标签
+              href: retention.md
+            - name: 保留 Microsoft Office Sharepoint Online 和 OneDrive
+              href: retention-policies-sharepoint.md
+            - name: 保留 Microsoft Teams
+              href: retention-policies-teams.md
+            - name: 保留 Exchange
+              href: retention-policies-exchange.md
+        - name: 开始使用保留
+          href: get-started-with-retention.md
+        - name: 创建保留策略
           href: create-retention-policies.md
-        - name: 保留 Microsoft Office Sharepoint Online 和 OneDrive
-          href: retention-policies-sharepoint.md
-        - name: 保留 Microsoft Teams
-          href: retention-policies-teams.md
-        - name: 保留 Exchange
-          href: retention-policies-exchange.md
-        - name: 文件计划
+        - name: 使用文件计划
           href: file-plan-manager.md
-        - name: 了解保留标签
-          href: labels.md
-        - name: 用于创建、发布和自动应用保留标签
-          href: create-retention-labels.md
+        - name: 创建保留标签并将其应用到应用中
+          href: create-apply-retention-labels.md
+        - name: 将保留标签自动应用于内容
+          href: apply-retention-labels-automatically.md
         - name: 符合 SEC 规则 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: 使用 PowerShell 创建和发布保留标签
+        - name: 使用 PowerShell 创建保留标签
           href: bulk-create-publish-labels-using-powershell.md
-        - name: 基于事件的保留
-          href: event-driven-retention.md
-        - name: 自动执行基于事件的保留
-          href: automate-event-driven-retention.md
-        - name: 管理 SharePoint 文档的生命周期
-          href: auto-apply-retention-labels-scenario.md
+        - name: 使用基于事件的保留
+          items:
+            - name: 事件发生时启动保留
+              href: event-driven-retention.md
+            - name: 自动执行基于事件的保留
+              href: automate-event-driven-retention.md
+            - name: 管理 SharePoint 文档的生命周期
+              href: auto-apply-retention-labels-scenario.md
     - name: 处理数据
       href: disposition.md
     - name: 管理非活动邮箱
@@ -341,34 +351,6 @@
           href: records-management.md
         - name: 记录
           href: records.md
-        - name: 文件计划
-          items:
-            - name: 管理保留标签
-              href: file-plan-manager.md
-            - name: 了解保留标签
-              href: labels.md
-            - name: 创建和发布保留标签
-              href: create-retention-labels.md
-            - name: 大规模使用 PowerShell 创建和发布保留标签
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: 使用标签分析查看标签使用情况
-              href: label-analytics.md
-            - name: 查看文档的标签活动
-              href: view-label-activity-for-documents.md
-            - name: 查看数据管理报告
-              href: view-the-data-governance-reports.md
-        - name: 活动
-          items:
-            - name: 基于事件的保留
-              href: event-driven-retention.md
-            - name: 自动执行基于事件的保留
-              href: automate-event-driven-retention.md
-        - name: 处置
-          href: disposition.md
-        - name: 有关记录管理的详细信息
-          items:
-            - name: 观看有关记录管理的视频
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: 管理电子数据展示
   items:
     - name: Microsoft 365 中的电子数据展示
@@ -488,15 +470,19 @@
           href: overview-ediscovery-20.md
         - name: 高级电子数据展示入门
           href: get-started-with-advanced-ediscovery.md
-        - name: 使用保管人
+        - name: 配合保管人和非保管人数据源一起使用
           href: managing-custodians.md
           items:
             - name: 向事例添加保管人
               href: add-custodians-to-case.md
+            - name: 向事例批量添加保管人
+              href: bulk-add-custodians.md
             - name: 管理保管人
               href: manage-new-custodians.md
             - name: 查看保管人活动
               href: view-custodian-activity.md
+            - name: 向事例添加非保管人数据源
+              href: non-custodial-data-sources.md
         - name: 处理通信
           href: managing-custodian-communications.md
           items:
@@ -809,19 +795,19 @@
   items:
     - name: Microsoft 服务信任门户
       href: get-started-with-service-trust-portal.md
-    - name: 合规性分数和合规性管理器
+    - name: 合规性分数和合规性管理器（预览版）
       items:
         - name: 合规性分数（预览版）
           href: compliance-score.md
-        - name: 设置合规性分数（预览版）
+        - name: 设置合规性分数
           href: compliance-score-setup.md
-        - name: 使用合规性分数（预览版）
-          href: working-with-compliance-score.md
-        - name: 合规性分数计算（预览版）
+        - name: 使用评估自定义合规性分数
+          href: compliance-score-assessments.md
+        - name: 分配并执行改进措施
+          href: compliance-score-improvement-actions.md
+        - name: 计算分数的方式
           href: compliance-score-methodology.md
-        - name: 合规性分数发行说明（预览版）
-          href: compliance-score-release-notes.md
-        - name: 合规性分数常见问题解答（预览版）
+        - name: 常见问题 (FAQ)
           href: compliance-score-faq.md
         - name: 合规性管理器（预览版）
           href: compliance-manager-overview.md

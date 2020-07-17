@@ -20,12 +20,12 @@ description: 了解如何验证域和在任何 DNS 托管提供商处为 Microso
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049662"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138252"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -37,7 +37,9 @@ ms.locfileid: "45049662"
 
 如果在下文中找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)。
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>步骤 1：添加 TXT 记录以验证你是否拥有相应的域
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>步骤 1：添加 TXT 或 MX 记录以验证你是否拥有相应的域
+
+### <a name="recommended-verify-with-a-txt-record"></a>建议：使用 TXT 记录进行验证
 
 首先，你需要证明自己拥有要添加到 Microsoft 365 的域。
 
@@ -56,6 +58,25 @@ ms.locfileid: "45049662"
 
 当 Microsof 找到正确的 TXT 记录时，表明域已通过验证。
 
+### <a name="verify-with-an-mx-record"></a>使用 MX 记录进行验证
+
+如果注册机构不支持添加 TXT 记录，可通过添加 MX 记录进行验证。
+
+1. 登录到 [Microsoft 365 管理中心](https://admin.microsoft.com/)，然后选择“**全部显示**” > “**设置**” > “**域**”。
+2. 在新的浏览器标签页或窗口中，登录 DNS 托管提供商网站，然后找到管理 DNS 设置（如“区域文件设置”、“管理域”、“域管理器”和“DNS 管理器”）的位置。
+3. 转到提供商的“DNS 管理器”页面，然后将管理中心中指示的 MX 记录添加到域中。
+
+此 MX 记录的**优先级**必须是域的所有现有 MX 记录中最高的。 否则，它可能会干扰发送和接收电子邮件。 域验证完成后，应立即删除此记录。
+
+请确保将字段设置为以下值：
+
+- 记录类型：`MX`
+- 优先级：设置为可用的最高值，通常为 `0`。
+- 主机名：`@`
+- 指向地址：从管理中心复制值并将其粘贴到此处。
+- TTL：`3600‎`（或提供商的默认值）
+
+当 Microsof 找到正确的 MX 记录时，表明域已通过验证。
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>步骤 2：添加 DNS 记录以连接 Microsoft 服务
 

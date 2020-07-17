@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: a5c1d27afdb7afd8b4ee3052f745c4c986299a2e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005958"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127093"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
@@ -67,11 +67,18 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 请参阅[本文](../enterprise/secure-email-recommended-policies.md)，了解用于保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端的建议身份验证和设备访问策略。
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>使用 SharePoint Online 和 OneDrive 存储和协作处理文件
+## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>使用 SharePoint 和 OneDrive 存储和协作处理文件
 
-对于内容协作，远程工作者可将 SharePoint Online 和 OneDrive 文件夹用作云中的中心位置，以便存储和共享文件、共同创作、通信和协作。 远程工作者可通过 Web 浏览器、Teams 和 Office 应用从任意位置安全地进行工作。
+对于内容协作，远程工作者可将 SharePoint 和 OneDrive 文件夹用作云中的中心位置，以便存储和共享文件、共同创作、通信和协作。 远程工作者可通过 Web 浏览器、Teams 和 Office 应用从任意位置安全地进行工作。
 
-请参阅[本文](../enterprise/sharepoint-file-access-policies.md)，了解用于保护 SharePoint Online 和 OneDrive for business 的建议身份验证和设备访问策略。
+可能需要将文档从以下位置迁移到 SharePoint 或 OneDrive：
+
+- [SharePoint Server 团队网站](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [文件共享](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+请参阅[本文](../enterprise/sharepoint-file-access-policies.md)，了解用于保护 SharePoint 和 OneDrive 的建议身份验证和设备访问策略。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 应用创建和协作处理内容
 
