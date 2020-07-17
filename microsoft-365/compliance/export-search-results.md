@@ -97,7 +97,7 @@ ms.locfileid: "44817751"
 5. 在详细信息窗格中的“将结果导出到计算机”**** 下，单击“开始导出”****。
     
     > [!NOTE]
-    > If the results for a search are older than 7 days, you are prompted to update the search results. If this happens, cancel the export, click **Update search results** in the details pane for the selected search, and then start the export again after the results are updated. 
+    > 如果搜索结果超过 7 天，将提示你更新搜索结果。如果发生这种情况，取消导出，单击选定搜索的详细信息窗格中的“更新搜索结果”****，然后在结果更新后再次启动导出。  
   
 6. 在 "**导出搜索结果**" 页上的 "**输出选项**" 下，选择下列选项之一：
     

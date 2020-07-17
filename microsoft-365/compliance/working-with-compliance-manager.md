@@ -139,11 +139,11 @@ ms.locfileid: "45023389"
 3. 打开文档即可查看报告数据。
 
 > [!NOTE]
-> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+> 这并不是保留和显示行动项分配历史记录状态变更的历史记录报告。生成的报告是在报告运行时分配的控制措施行动项的快照（日期和时间戳已写入报告）。例如，如果为同一用户重新生成此报告，任何后续重新分配行动项都会导致生成不同的快照报告数据。
   
 #### <a name="reassign-action-items"></a>重新分配行动项
 
-This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+使用此功能，组织可以删除用户帐户的任何活动或未完成的依赖项，具体方法是将所有行动项所有权（包括活动和已完成的行动项）从已返回用户帐户重新分配到下面选定的新用户。此操作不会更改已返回用户帐户的文档上传历史记录。
   
  若要向其他用户重新分配行动项，请执行以下操作：
   
@@ -156,9 +156,9 @@ This function enables an organization to remove any active or outstanding depend
 4. 若要继续，请选择 **"确定"**，否则选择 "**取消**"。
     
 > [!NOTE]
-> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+> 所有行动项（包括活动和已完成的行动项）都会分配给新选定用户。不过，此操作并不影响文档上传历史记录；以前分配的用户上传的任何文档仍会显示日期/时间，以及以前分配的用户的用户名。 
   
-Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+若要将文档上传历史记录更改为删除以前分配的用户，必须手动完成。在这种情况下，管理员必须执行以下操作：
   
 1. 打开以前下载的“导出”报告。
   
@@ -174,7 +174,7 @@ Changing the document upload history to remove the previously assigned user will
   
 #### <a name="delete-user-data-history"></a>删除用户数据历史记录
 
-This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+这会将分配给已返回用户的所有控制措施行动项都设置为“未分配”。此外，这还会将已返回用户上传的所有文档的“上传者”值设置为“已删除用户”。
   
  若要删除用户帐户行动项和文档上传历史记录，请执行以下操作：
   

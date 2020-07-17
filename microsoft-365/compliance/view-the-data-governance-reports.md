@@ -25,9 +25,9 @@ ms.locfileid: "44819002"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 
-After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
+建议在创建标签后，验证它们是否按预期应用于内容。借助安全与合规中心内的数据管理报告，可快速查看：
   
-- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
+- **前 5 大标签**：此报告显示已应用于内容的前 5 大标签的应用次数。单击此报告，可查看最近应用于内容的所有标签列表，其中包括每个标签的应用次数、位置、应用方式、保留操作、是否是记录及其处置类型。 
     
 - **手动应用与自动应用**：此报告显示所有已手动或自动标记的内容量，以及手动标记与自动标记的内容百分比。 
     
@@ -41,7 +41,7 @@ After you create your labels, you'll want to verify that they're being applied t
   
 ![显示过去 90 天内标签趋势的图表](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
+可以按日期（最多 90 天）和位置（Exchange、SharePoint 和 OneDrive for Business）筛选数据管理报告。最新数据最长可能需要 24 小时，才能显示在报告中。
   
 ![数据管理报告的筛选器](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   

@@ -45,7 +45,7 @@ ms.locfileid: "44755268"
 
 3. 在浏览器的“Microsoft 365 管理中心”标签页的左侧导航中，单击“帐单”>“购买服务”********。
 
-4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
+4. 在“购买服务”页上，找到“企业移动性 + 安全性 E5”项。将鼠标指针悬停在此项之上，然后单击“开始免费试用”************。
 
 5. 在“确认订单”页上，单击“立即试用”********。
 
@@ -65,7 +65,7 @@ ms.locfileid: "44755268"
 
 首先，通过 Azure 门户为典型政治宣传活动创建一系列组。
 
-1. On a separate tab in your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.
+1. 在浏览器的单独标签页上，转到 Azure 门户 ([https://portal.azure.com](https://portal.azure.com))。如有需要，请使用 Office 365 E5 试用订阅的全局管理员帐户凭据登录。
 
 2. 在 Azure 门户中，单击“Azure Active Directory”>“用户和组”>“所有组”****。
 
@@ -166,7 +166,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions. As you sign in with each of these new user accounts, you will be prompted to change the password.
+> 此处使用常用密码是为了自动化和方便配置开发/测试环境。但是对于生产订阅，不建议这样做。在登录这些新用户帐户时，系统将提示你更改密码。
 
 使用这些步骤验证动态组成员资格和基于组的许可是否工作正常。
 

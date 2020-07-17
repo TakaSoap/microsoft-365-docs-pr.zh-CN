@@ -146,7 +146,7 @@ ms.locfileid: "45127157"
   
  **网络上传在哪些地区提供？**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域提供。
   
  **使用网络上传导入 PST 文件的定价如何？**
   
@@ -186,7 +186,7 @@ Using network upload to import PST files is free.
   
  **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
   
  **是否可以使用网络上传将 PST 文件导入到 Office 365 中的非活动邮箱？**
   
@@ -245,7 +245,7 @@ Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **传送硬盘后，需要多长时间才能转到 Microsoft 数据中心？**
   
-That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
+这取决于几点，例如你与 Microsoft 数据中心之间的距离、使用哪种类型的送货选项来配送硬盘（如隔天送达、两天送达或地面配送）。对于大多数运货商，可使用跟踪编号跟踪配送状态。
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST 文件上传到 Azure？**
   
@@ -283,7 +283,7 @@ Microsoft 数据中心收到你的硬盘后，需花 7 到 10 个工作日将 PS
   
  **我想要导入邮箱的 PST 文件是否存在文件夹层次结构的级别数目限制？**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+是的。不能导入包含 300 个或更多级别的嵌套文件夹的 PST 文件。
   
  **是否可以使用驱动器传送将 PST 文件导入到 Microsoft 365 中的非活动邮箱？**
   
@@ -299,19 +299,19 @@ Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Microsoft 将硬盘运回给我之前，是否会进行擦除？**
   
-No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+不会，Microsoft 将硬盘运回给客户前不会进行擦除。硬盘将以 Microsoft 接收到的状态返回给你。
   
  **Microsoft 是否会销毁我的硬盘，而不是寄回给我？**
   
-No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+不会，Microsoft 不会销毁硬盘。硬盘将以 Microsoft 接收到的状态返回给你。
   
  **寄回时支持哪些快递服务？**
   
-If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+对于美国或欧洲客户，Microsoft 使用 FedEx 运回硬盘。对于所有其他区域的客户，Microsoft 将使用 DHL。
   
  **寄回的运费是多少？**
   
-Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+运回的运费有所不同，具体取决于你与硬盘运达的 Microsoft 数据中心之间的距离。Microsoft 将向你收取通过 FedEx 或 DHL 运回硬盘的费用。返回运费需由你支付。
   
  **是否可以使用 FedEx Custom Shipping 等自定义快递运输服将我的硬盘寄送至 Microsoft？**
   
@@ -319,4 +319,4 @@ Return shipping costs vary, depending on your proximity to the Microsoft data ce
   
  **如果我必须将我的硬盘发运到其他国家/地区，是否有任何需要执行的操作？**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+你发运到 Microsoft 的硬盘可能会跨越国际边界。如果是这种情况，你有责任确保硬盘及其所含数据是根据适用法律导入和/或导出的。发运硬盘前，请与顾问联系，确保驱动器和数据可以合法地发送到指定的 Microsoft 数据中心。这有助于确保它及时送达 Microsoft。

@@ -31,7 +31,7 @@ ms.locfileid: "44779925"
 
   如果你负责配置公司中每个人的电子邮件使用方式，则本文非常适合你！ 其中说明如何根据业务来自定义或关闭电子邮件，还将解答[常见问题](#faq-for-focused-inbox)。  <br/> 如果只想关闭重点收件箱，请参阅[关闭重点收件箱](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
    
-If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
+如果想确保用户收到特定业务的电子邮件（例如来自 HR 或薪酬专员），可配置重点收件箱，让这些邮件出现在“重点”视图中。还可控制组织内部用户的邮箱中是否显示重点收件箱。
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>在组织中打开或关闭重点收件箱
 
@@ -39,11 +39,11 @@ If you want to be sure that your users receive business-specific email messages,
   
  **关闭重点收件箱：**
   
-The following PowerShell example turns Focused Inbox **Off** in your organization. However, it doesn't block the availability of the feature for your users. If they want, they can still re-enable Focused Inbox again on each of their clients. 
+以下 PowerShell 示例演示如何在组织中**关闭**重点收件箱。但是，它不会阻止用户使用此功能。如果用户想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
 1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](https://go.microsoft.com/fwlink/p/?LinkId=829796)中的"传输规则"条目。
     
 3. 运行 **Get-OrganizationConfig** cmdlet。 
     
@@ -73,23 +73,23 @@ Get-OrganizationConfig
 
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>打开重点收件箱后，用户会看到什么？ 
 
-Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
+用户关闭并重启 Outlook​​ 后才可看到“重点”视图。重启 Outlook​​ 后，用户会在 Outlook​​ 用户界面中看到一条提示，其中含有使用新“重点收件箱”的选项。
   
 ![用户首次打开 Outlook 网页版时重点收件箱的外观图像。](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
+如果从待筛选邮件切换到重点收件箱，用户可决定启用（"试用"）或关闭该功能。如果用户拥有多个（受支持的）客户端，可在每个客户端上单独启用/禁用重点收件箱。将出现如下所示的提示：
   
 ![显示“重点收件箱”外观的图像，此时“重点收件箱”向你的用户推出且 Outlook 重新打开。](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
+用户决定开始使用重点收件箱后，将自动禁用待筛选邮件。“待筛选邮件”文件夹转换成标准文件夹，用户可以重命名或将其删除。
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>为特定用户打开或关闭重点收件箱
 
-This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organization. However, it doesn't block the availability of the feature to him. If his wants, he can still re-enable Focused Inbox again on each of his clients. 
+本示例会为 Contoso 组织中的 Tim Matthews **关闭**重点收件箱。但是，它并不禁止他使用此功能。如果他想使用，仍可在其每个客户端上重新启用重点收件箱。 
   
 1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
+2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅邮件策略和合规性权限主题中的“传输规则”条目。
     
 3. 运行 **Get-FocusedInbox** cmdlet，例如： 
     
@@ -129,7 +129,7 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. 需要分配有权限，然后才可执行此程序。要查看需要哪些权限，请参阅[邮件策略和符合性权限](https://go.microsoft.com/fwlink/p/?LinkId=829796)中的"传输规则"条目。
 
 3. 例如，运行以下命令即可允许所有来自"工资单管理部门"的邮件定向到重点收件箱。
     
@@ -147,7 +147,7 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
  
 ## <a name="turn-onoff-clutter"></a>打开/关闭待筛选邮件
  
-We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
+我们已收到一些报告，了解到某些用户的待筛选邮件会突然停止工作。如果发生此情况，可为特定用户再次启用待筛选邮件。请参阅[为组织配置待筛选邮件](../email/configure-clutter.md)。
  
 ## <a name="faq-for-focused-inbox"></a>重点收件箱的常见问题解答
 
@@ -155,7 +155,7 @@ We've received reports that Clutter suddenly stopped working for some users. If 
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>我能否控制重点收件箱在组织中的推广方式？
 
-Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
+可以。可为整个组织打开或关闭重点收件箱，也可为特定用户执行此操作。具体步骤请见上文。
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>重点收件箱功能是否仅供 Office 2016 客户端使用？
 
@@ -167,17 +167,17 @@ Yes. You can turn Focused Inbox on or off for your entire organization, or you c
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>启用重点收件箱后，待筛选邮件有什么变化？
 
-After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
+切换后，待筛选邮件文件夹中将不再接收可操作性较低的电子邮件。相反，电子邮件将分散位于收件箱的“重点”和“其他”选项卡上。将项目移动到待筛选邮件文件夹时所用的同一算法现支持重点收件箱，这意味着设置为“移至待筛选邮件”的任何电子邮件现都将移动到“其他”。在你决定删除或移动之前，待筛选邮件文件夹中已存的任何邮件都将保留在此处。
   
 请查看由 Microsoft 的 MVP [Tony Redmond](https://www.petri.com/author/tony-redmond) 撰写的该文章： [重点收件箱如何替换 Office 365 中的待筛选邮件](https://www.petri.com/focused-inbox-office-365)。
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>能否让用户继续使用待筛选邮件？ 在使用待筛选邮件还是重点收件箱方面，Microsoft 有何建议？
 
-Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+可以，可让用户继续使用待筛选邮件并禁用重点收件箱，但重点收件箱最终将完全替换待筛选邮件，因此 Microsoft 建议立即移到重点收件箱。若要详细了解何时在 Exchange Online 中使用待筛选邮件，请参阅以下博客文章：[Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)（重点收件箱上的更新及针对待筛选邮件的计划）。
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>如果要将每个人均移动到重点收件箱，则我是否应对最终用户禁用待筛选邮件？
 
-No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
+不。可运行 Set-Clutter cmdlet，以显式禁用邮箱的待筛选邮件。但是，如果执行此操作，邮箱所有者将发现曾经重定向到待筛选邮件文件夹的邮件保留在收件箱中，而他们需要处理这些邮件，直到其客户端升级到支持重点收件箱的版本。因此最好在升级的客户端可用之后，再禁用待筛选邮件。
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>为何存在两个不同的 cmdlet 用于管理重点收件箱？
 
@@ -189,12 +189,12 @@ No. It's possible to disable Clutter for a mailbox explicitly by running the Set
     
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Outlook 决定如何呈现有这两种状态的重点收件箱体验？
 
-Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
+Outlook​​ 通过选择具有最新时间戳的 cmdlet 来决定显示相应的体验。两个时间戳均默认为“null”，且本例启用了此功能。
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>我已在组织中关闭重点收件箱，但为何 Get-FocusedInbox cmdlet 返回 “true”？
 
-There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
+存在两个 cmdlet 来控制重点收件箱。对邮箱运行 Get-FocusedInbox 时，将返回此功能的邮箱级别状态。根据 cmdlet 状态修改时间的先后，在 Outlook​​ 中选择相应的体验。
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>我能通过运行脚本来查看谁启用了重点收件箱吗？
 
-No, and this is by design. Focused Inbox enablement is a client side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
+不能，这是由设计决定的。启用重点收件箱是客户端设置，cmdlet 仅能告知你用户的邮箱是否符合客户端体验的条件。可在一些客户端中启用它，同时在另一些客户端中禁用它，例如，在 Outlook 应用和 Outlook Mobile 中启用，但在 Outlook 网页版中禁用。

@@ -179,11 +179,11 @@ S/MIME 实质上是一种客户端加密技术，需要复杂的证书管理和�
   
  **问：是否对回复和转发的邮件进行加密？**
   
-Yes. Responses continue to be encrypted throughout the duration of the thread.
+是，在整个线程期限内，响应都会继续进行加密。
   
  **问： Office 365 邮件加密是否提供本地化？**
   
-Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
+传入电子邮件和 HTML 内容会进行本地化，具体取决于发件人电子邮件设置。查看门户根据收件人的浏览器设置进行本地化。不过，加密邮件的实际正文（内容）不会进行本地化。
   
  **问： Office 365 邮件加密使用什么加密方法？**
   
@@ -191,13 +191,13 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
   
 - 如果使用 Microsoft Azure RMS 获取密钥，则使用加密模式2。 加密模式 2 是更新和增强的 AD RMS 加密实现。 它支持 RSA 2048 签名和加密，并支持 sha-256 签名。
 
-- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
+- 如果您使用 Active Directory (AD) RMS 获取这些密钥，则可以使用加密模式 1，也可以使用加密模式 2。使用的方法取决于您的本地 AD RMS 部署。加密模式 1 是原始的 AD RMS 加密实现。它支持 RSA 1024 签名和加密，并支持 sha-1 签名。该模式继续支持 RMS 的所有当前版本。
 
 有关详细信息，请参阅[AD RMS 加密模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
   
  **问：为什么一些加密的邮件说它们**来自 Office365@messaging.microsoft.com？
   
-When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
+当加密回复从加密门户或通过 OME 查看器应用发送时，发送电子邮件地址将设为 Office365@messaging.microsoft.com，因为该加密邮件是通过 Microsoft 终结点发送的。这有助于防止加密邮件被标记为垃圾邮件。电子邮件上显示的名称和加密门户内的地址不会因为这个标签而更改。此外，该标签仅适用于通过门户而不是通过任何其他电子邮件客户端发送的邮件。
   
  **问：我是 Exchange 托管加密（EHE）订阅者。在哪里可以了解有关升级到 Office 365 邮件加密的更多信息？**
   

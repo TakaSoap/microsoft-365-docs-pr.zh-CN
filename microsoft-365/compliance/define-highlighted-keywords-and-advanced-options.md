@@ -25,7 +25,7 @@ ms.locfileid: "44936451"
 # <a name="define-highlighted-keywords-and-advanced-options-in-advanced-ediscovery-classic"></a>在高级电子数据展示（经典）中定义突出显示的关键字和高级选项
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 在高级电子数据展示中，可以将用户定义的关键字添加到相关性，以帮助您在标记时识别相关文件。 关键字将以指定的颜色显示在**相关性 \> 标记**中。 
   

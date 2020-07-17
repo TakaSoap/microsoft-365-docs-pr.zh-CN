@@ -26,7 +26,7 @@ ms.locfileid: "44936205"
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>在高级电子数据展示中测试相关性分析（经典）
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 利用高级电子数据展示中的 "测试" 选项卡，可以测试、比较和验证总体处理质量。 这些测试是在批量计算后执行的。 通过在集合中标记文件，专家就是否对每个已标记的文件实际是否与事例相关做出最后的判断。 
   

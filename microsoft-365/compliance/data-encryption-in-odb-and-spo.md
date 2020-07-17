@@ -42,9 +42,9 @@ Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保
 
 在 OneDrive for Business 和 SharePoint Online 中，有两种数据进入和退出数据中心的方案。
   
-- **Client communication with the server** Communication to OneDrive for Business across the Internet uses SSL/TLS connections. All SSL connections are established using 2048-bit keys.
+- **与服务器进行的客户端通信**：在 Internet 上与 OneDrive for Business 的通信使用的是 SSL/TLS 连接。所有 SSL 连接都是使用 2048 位密钥建立而成。
 
-- **Data movement between datacenters** The primary reason to move data between datacenters is for geo-replication to enable disaster recovery. For instance, SQL Server transaction logs and blob storage deltas travel along this pipe. While this data is already transmitted by using a private network, it is further protected with best-in-class encryption. 
+- **数据中心之间的数据移动**：之所以要在数据中心之间移动数据，主要原因是为了通过异地复制来实现灾难恢复。例如，SQL Server 事务日志和 blob 存储增量沿着此管道传输。虽然已使用专用网络传输此数据，但还将进一步使用一流加密技术来保护此数据。 
 
 ## <a name="encryption-of-data-at-rest"></a>静态数据的加密
 
@@ -52,24 +52,24 @@ Microsoft 365 是一个高度安全的环境，可在多个层中提供广泛保
   
 已为 OneDrive for Business 和 SharePoint Online 跨服务部署 BitLocker。 在 Microsoft 365 多租户和基于多租户技术的新专用环境中，每个文件加密也位于 OneDrive for Business 和 SharePoint Online 中。
   
-While BitLocker encrypts all data on a disk, per-file encryption goes even further by including a unique encryption key for each file. Further, every update to every file is encrypted using its own encryption key. Before they're stored, the keys to the encrypted content are stored in a physically separate location from the content. Every step of this encryption uses Advanced Encryption Standard (AES) with 256-bit keys and is Federal Information Processing Standard (FIPS) 140-2 compliant. The encrypted content is distributed across a number of containers throughout the datacenter, and each container has unique credentials. These credentials are stored in a separate physical location from either the content or the content keys.
+虽然 BitLocker 加密磁盘上的所有数据，每个文件加密还是会通过包含唯一加密密钥来进一步加密每个文件。此外，对每个文件的每次更新都使用其自己的加密密钥进行加密。在存储之前，加密内容的密钥存储在与内容不同的单独物理位置中。此加密的每一个步骤都使用带有 256 位密钥的高级加密标准 (AES)，并且符合美国联邦信息处理标准 (FIPS) 140-2。加密的内容分布在整个数据中心的多个容器中，每个容器都有唯一的凭据。这些凭据存储在与内容和内容密钥存储位置不同的单独物理位置中。
   
 有关 FIPS 140-2 合规性的详细信息，请参阅[FIPS 140-2 合规性](https://go.microsoft.com/fwlink/?LinkId=517625)。
   
-File-level encryption at rest takes advantage of blob storage to provide for virtually unlimited storage growth and to enable unprecedented protection. All customer content in OneDrive for Business and SharePoint Online will be migrated to blob storage. Here's how that data is secured:
+静态文件级加密利用 blob 存储提供几乎不受限制的存储增长，并启用前所未有的保护。OneDrive for Business 和 SharePoint Online 中的所有客户内容都将被迁移到 blob 存储。下面介绍了保护此数据的方法：
   
-1. All content is encrypted, potentially with multiple keys, and distributed across the datacenter. Each file to be stored is broken into one or more chunks, depending its size. Then, each chunk is encrypted using its own unique key. Updates are handled similarly: the set of changes, or deltas, submitted by a user is broken into chunks, and each is encrypted with its own key.
+1. 所有内容都可能使用多个密钥进行加密，并分布在整个数据中心中。根据每个要存储的文件大小，将其分成一个或多个区块。然后，使用每个区块自己的唯一密钥对其进行加密。类似地处理更新：将用户提交的更改或增量集分成多个区块，并使用其自己的密钥进行加密。
 
-2. All of these chunks—files, pieces of files, and update deltas—are stored as blobs in our blob store. They also are randomly distributed across multiple blob containers.
+2. 在我们的 blob 存储中，所有这些区块（文件、文件片段和更新增量）都存储为 blob。它们还会随机分布在多个 blob 容器中。
 
 3. 用于从文件的组件重组此文件的"映射"存储在内容数据库中。
 
-4. Each blob container has its own unique credentials per access type (read, write, enumerate, and delete). Each set of credentials is held in the secure Key Store and is regularly refreshed.
+4. 每个 blob 容器根据访问类型（读取、写入、枚举和删除）的不同，具有其自己的唯一凭据。每组凭据都存放在安全的密钥存储中，并定期刷新。
 
 换言之，静态的每个文件加密涉及三种不同存储类型，每种类型都有不同的功能：
   
-- Content is stored as encrypted blobs in the blob store. The key to each chunk of content is encrypted and stored separately in the content database. The content itself holds no clue as to how it can be decrypted.
+- 在 blob 存储中，将内容存储为加密的 blob。每个内容区块的密钥都进行加密，并单独存储在内容数据库中。内容本身不包含如何对其进行解密的任何线索。
 
-- The Content Database is a SQL Server database. It holds the map required to locate and reassemble all of the content blobs held in the blob store as well as the keys needed to decrypt those blobs.
+- "内容数据库"是一个 SQL Server 数据库。它存放所需的映射，以便找到并重组保留在 blob 存储中的所有内容 blob，以及解密这些 blob 所需的密钥。
 
-Each of these three storage components—the blob store, the Content Database, and the Key Store—is physically separate. The information held in any one of the components is unusable on its own. This provides an unprecedented level of security. Without access to all three it is impossible to retrieve the keys to the chunks, decrypt the keys to make them usable, associate the keys with their corresponding chunks, decrypt any chunk, or reconstruct a document from its constituent chunks.
+这三个存储组件（blob 存储、内容数据库和密钥存储）在物理上相互独立。保留在其中任一个组件中的信息在其自身上都不可用。这提供了前所未有的安全级别。不访问所有这三个组件就不可能实现以下操作：检索这些区块的密钥，解密这些密钥来使它们可用，将这些密钥与其相应的区块关联，解密任何区块或通过其构成区块重新构建文档。

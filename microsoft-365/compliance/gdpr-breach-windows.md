@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: bfadeae0f4f0b01197f58f0610d1040da3080922
 ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "45023594"
@@ -33,9 +34,9 @@ Microsoft 的 Windows 数据处理者服务严格履行《一般数据保护条�
 |**Stage**|**说明**|
 | ------- | ------------- |
 | ***1 — 检测*** | 潜在事件的第一个指征。 |
-| ***2 — 评估*** | An on-call incident response team member assesses the impact and severity of the event. Based on evidence, the assessment may or may not result in further escalation to the security response team. |
+| ***2 — 评估*** | 时刻待命的事件响应团队成员评估事件的影响和严重性。根据证据，评估可能会也可能不会导致进一步向安全响应团队上报。 |
 | ***3 — 诊断*** | 安全响应专家开展技术或鉴证调查，确定遏制、缓解和解决方法策略。 如果安全团队认为非法或未经授权的个人可能接触到了客户数据，将开始并行执行客户事件通知流程。 |
-| ***4 — 稳定和恢复*** | The incident response team creates a recovery plan to mitigate the issue. Crisis containment steps such as quarantining impacted systems may occur immediately and in parallel with diagnosis. Longer term mitigations may be planned which occur after the immediate risk has passed. |
+| ***4 — 稳定和恢复*** | 事件响应团队创建恢复计划以缓解问题。将立即执行危机遏制步骤。例如隔离受影响的系统，同时进行诊断。在即时风险过去之后，还会规划更长期的缓解措施。 |
 | ***5 — 关闭和事后分析*** | 事件响应团队创建事后分析，其中会列出事件详情，目的是修改策略、过程和流程，以防事件再次发生。 |
 
 Microsoft 的 Windows 数据处理者服务使用的检测流程旨在发现威胁 Windows 数据处理者服务机密性、完整性和可用性的事件。 多个事件可能会触发调查： 
@@ -65,11 +66,11 @@ Microsoft 的 Windows 数据处理者服务使用的检测流程旨在发现威�
  - **客户可报告的安全事件 (CRSI)**：非法或未经授权访问或使用 Microsoft 的系统、设备或设施，从而导致客户数据泄露、修改或丢失。 
  - **隐私泄露**：涉及个人数据的安全事件的子类型。 处理过程与安全事件没有区别。 
 
- For a CRSI to be declared, Microsoft must determine that unauthorized access to customer data has or has very likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared a CRSI after the conclusion of the Diagnose stage of a security incident; however, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process. 
+ 针对要声明的 CRSI，Microsoft 必须确定是否很有可能发生了未经授权的客户数据访问，并且/或者具有必须发送通知的法定或合同义务。最好是知道具体客户影响、资源访问及修复步骤，但不是必须这么做。事件通常是安全事件的诊断阶段结束后的声明 CRSI，但是，声明也可能发生在取得所有相关信息的任何时间点。安全事件经理必须建立超出合理怀疑的证据，证明发生了可报告的事件，以便开始执行客户事件通知流程。 
 
-Throughout the investigation, the security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. There are also significant restrictions on system and customer data viewing and handling in various operating environments. Sensitive or confidential data, as well as Customer Data, are not transferred out of the production environment without explicit written approval from the Incident Manager recorded in the corresponding incident ticket. 
+在整个调查过程中，安全响应团队与全球法律顾问密切合作，帮助确保取证是根据法律义务和对客户的承诺来执行的。对于各种操作环境中系统和客户数据的查看和处理，还存在重大限制。敏感或机密数据以及客户数据不会转移出生产环境，除非有事件经理的明确书面批准，且记录在对应的事件票证中。 
 
-Microsoft verifies that customer and business risk is successfully contained, and that corrective measures are implemented. If necessary, emergency mitigation steps to resolve immediate security risks associated with the event are taken. 
+Microsoft 验证是否成功遏制了客户和业务风险并实施了纠正措施。如有必要，会采取紧急缓解步骤来解决与事件直接关联的安全风险。 
 
 Microsoft 还会完成数据泄露的内部事后分析。 作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施安全事件响应 SOP 或相关流程所必需的任何更新。 数据泄露的内部事后分析是高度机密的记录，不会提供给客户。 但是，会汇总事后分析并将其包括在其他客户事件通知中。 作为 Windows 数据处理者服务例行审核周期的一部分，会将这些报告提供给外部审计员进行审阅。 
 
@@ -79,7 +80,7 @@ Microsoft 的 Windows 数据处理者服务会根据需要将数据泄露通知�
 
 声明 CRSI 后，将尽快进行通知流程，同时仍然考虑快速移动的安全风险。 通常，在进行事件调查时，会就开始起草通知。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况除外： 
 
- - Microsoft believes the act of performing a notification will increase the risk to other customers. For example, the act of notifying may tip off an adversary causing an inability to remediate. 
+ - Microsoft 认为通知操作将增加其他客户面临的风险。例如，发送通知可能向对手预警，导致无法进行补救。 
  - 经 Microsoft 的法律部门公司外部和法律事务部 (CELA) 和行政事件经理审查的其他异常或极端情况。 
 
  Microsoft 的 Windows 数据处理者服务向客户提供详细信息，使他们能够执行内部调查，并协助其履行最终用户承诺，而不是过度地延迟通知流程。 

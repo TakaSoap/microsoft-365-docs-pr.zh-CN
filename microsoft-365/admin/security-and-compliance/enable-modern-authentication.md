@@ -36,7 +36,7 @@ ms.locfileid: "44779961"
 > [!NOTE]
 > 已为 Office 2016 客户端启用新式验证，无需设置 Office 2016 的注册表项。 
   
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+若要为运行 Windows 且安装了 Microsoft Office 2013 的任何设备（例如笔记本电脑和平板电脑）启用新式验证，需设置以下注册表项。必须在每台要启用新式验证的设备上设置注册表项：
   
 |**注册表项**|**类型**|**值** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ To enable modern authentication for any devices running Windows (for example on 
    
 设置注册表项后，可以将 Office 2013 设备应用设置为使用具有 Microsoft 365 的[多重身份验证（MFA）](set-up-multi-factor-authentication.md) 。 
   
-If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
+如果当前登录了任何客户端应用，需注销并重新登录以使更改生效。否则，在建立 ADAL 标识之前，MRU 和漫游设置将不可用。
   
 ## <a name="disable-modern-authentication-on-devices"></a>在设备上禁用新式验证
 

@@ -27,7 +27,7 @@ ms.locfileid: "44818411"
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>了解高级电子数据展示中的相关评估（经典）
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 高级电子数据展示支持早期评估，例如，针对定义的问题和为事例导入的数据。 高级电子数据展示让专家做出有关采用方法的决策，并将这些决策应用于文档审阅项目。
   

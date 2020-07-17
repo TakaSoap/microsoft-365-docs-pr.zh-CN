@@ -29,7 +29,7 @@ ms.locfileid: "44818695"
 
  **摘要：** 此解决方案演示了如何保护 Office 365 服务中存储的敏感数据。
   
-This solution includes prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
+此解决方案包括针对发现、分类、保护和监视个人数据的指导性建议。该解决方案以一般数据保护条例 (GDPR) 为例，但用户可以采用同一流程实现对许多其他条例的符合性。
 
 [![针对 GDPR 的 Office 365 信息保护海报的缩略图。](../media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)
 

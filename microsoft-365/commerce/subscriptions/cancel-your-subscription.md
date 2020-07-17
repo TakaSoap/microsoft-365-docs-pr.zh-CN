@@ -24,6 +24,7 @@ ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 了解如何取消 Microsoft 365 for business 试用版或付费订阅。
 ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049744"

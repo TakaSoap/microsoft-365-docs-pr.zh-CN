@@ -110,7 +110,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>下面有更多你可能感兴趣的主题
 
-- **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+- **在平板电脑和手机上设置 Office 应用** 。需要执行此操作，以便可以从平板电脑或手机上编辑存储在团队网站中的文件。如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
     
   - [使用 Microsoft 365 在 Android 上安装和设置 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

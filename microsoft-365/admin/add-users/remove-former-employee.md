@@ -104,18 +104,18 @@ ms.locfileid: "44844854"
 > [!NOTE]
 > 如果你是全局管理员，你可以删除员工，转发其电子邮件，选择使用新的引导式体验对其 OneDrive 内容执行的操作。 有关详细信息，请参阅[全局管理员：删除用户](remove-former-employee.md)。 但是，我们建议您完成此处列出的所有其他步骤，以确保员工无法访问贵公司的数据。 
   
-Here's a quick overview. Each step is explained in detail in this article.
+以下是快速概述。本文详细介绍了每个步骤。
   
 |||
 |:-----|:-----|
 |**步骤** <br/> |**为什么执行此操作** <br/> |
 |1. [保存以前员工的邮箱的内容](#save-the-contents-of-a-former-employees-mailbox) <br/> |此功能对要接管此员工工作的人员或在发生诉讼时非常有用。  <br/> |
-|2.[将前员工的电子邮件转发给其他员工或转换为共享邮箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
+|2.[将前员工的电子邮件转发给其他员工或转换为共享邮箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |这可保证前员工的电子邮件地址处于活动状态。如果客户或合作伙伴仍向以前员工的地址发送电子邮件，此功能可让他们发送给接管该工作的员工。  <br/> |
 |3.[擦除并阻止以前员工的移动设备](#wipe-and-block-a-former-employees-mobile-device) <br/> |从手机或平板电脑删除业务数据。  <br/> |
 |4.[阻止以前的员工对 Microsoft 365 数据的访问权限](#block-a-former-employees-access-to-microsoft-365-data)<br/> |阻止用户访问其旧的 Microsoft 365 邮箱和数据。  <br/><br/> **提示**：当您阻止用户的访问时，您仍在为其许可证付费。 必须删除订阅中的许可证，才可停止付费（步骤 5）。           |
-|5.[移动员工的 OneDrive 内容](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。  <br/><br/> Before you delete the account, you should move the content of their OneDrive to another location that's easy for you to access. After you delete an employee's account, the content in their OneDrive is retained for **30** days. During that 30 days, however, you can restore the user's account, and gain access to their OneDrive content. If you restore the user's account, the OneDrive content will remain accessible to you even after 30 days.  <br/> |
-|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |如果用户使用个人计算机（而不是公司计算机）从 OneDrive 和 SharePoint 下载文件，则无法擦除其存储的文件。  <br/><br/> 他们将继续有权访问已同步到计算机的任意文件。  <br/> |
-|6.[从以前的员工处删除并删除 Microsoft 365 许可证](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.  <br/> |
+|5.[移动员工的 OneDrive 内容](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |如果仅删除用户的许可证但不删除其帐户，则甚至 30 天后仍可访问该用户的 OneDrive 中的内容。  <br/><br/> 删除帐户之前，应将其 OneDrive 内容移至另一个易访问的位置。删除员工帐户后，其 OneDrive 中的内容会保留 **30** 天。在此 30 天中可以还原用户帐户并获取访问其 OneDrive 内容的权限。如果还原用户帐户，即使是在 30 天后也可以访问 OneDrive 内容。  <br/> |
+|5a.如果用户使用其个人计算机访问 OneDrive 和 SharePoint，将发生什么情况？  <br/> |如果用户使用个人计算机（而不是公司计算机）从 OneDrive 和 SharePoint 下载文件，则无法擦除其存储的文件。  <br/><br/> 他们将继续有权访问已同步到计算机的任意文件。  <br/> |
+|6.[从以前的员工处删除并删除 Microsoft 365 许可证](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |移除许可证后，可将许可证分配给其他人。也可删除许可证，以便在聘用其他人员之前，无需为其付费。  <br/><br/> 移除或删除许可证时，用户的旧电子邮件、联系人和日历将保留 **30 days** ，然后永久删除。如果删除许可证但不删除其帐户，则在 30 天后仍可以访问该用户的 OneDrive 中的内容。  <br/> |
 |7.[删除以前员工的用户帐户](#delete-a-former-employees-user-account)<br/> |这将从您的管理中心删除帐户。 进行清除，保持干净。  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>保存以前员工的邮箱的内容
@@ -123,11 +123,11 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 有两种方法可以保存以前员工邮箱的内容：
   
-1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
+1. 将以前员工的电子邮件地址添加到 Outlook 2013 或 2016 版，然后将数据导出到 .pst 文件。可以根据需要将数据导入到其他电子邮件帐户。若要了解如何执行此操作，请参阅[访问并备份以前用户的数据](get-access-to-and-back-up-a-former-user-s-data.md)。
     
     或者
     
-2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
+2. 在删除用户帐户之前，对邮箱执行诉讼保留或就地保留功能。这比第一种方式复杂得多，但在以下情况下是值得的：企业版计划包括存档和法定保留项，可能进行诉讼且拥有强大的 IT 部门。
     
     将邮箱转换为"非活动邮箱"后，管理员、合规部主管或记录管理者就可以使用 Exchange Online 中的就地电子数据展示工具访问和搜索内容。
     
@@ -140,9 +140,9 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 在此步骤中，将前员工的电子邮件地址分配给其他员工，或者将[该用户的邮箱转换成之前创建的共享邮箱](../email/convert-user-mailbox-to-shared-mailbox.md)。 
   
-- Creating a shared mailbox is the less expensive way to go because you won't have to pay for a license **as long as the mailbox is smaller than 50GB**. Over 50GB and you'll need to assign a license to it. 
+- 创建共享邮箱是一种较为便宜的方法，因为 **只要邮箱小于 50 GB** ，就不必支付许可证费用。如果超过 50 GB 就需向其分配许可证。 
     
-- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
+- 如果将邮箱转换为共享邮箱，则所有的旧电子邮件也仍然可用。这会占用大量空间。
     
 - If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee. 
     
@@ -159,7 +159,7 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 3. 在 "**电子邮件转发**" 下，选择 "**管理电子邮件转发**"。
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
 5. 选择“**保存**”。 
     
@@ -175,7 +175,7 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 3. 在 "**电子邮件转发**" 旁边，选择 "**编辑**"。
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
 5. 选择“**保存**”。 
     
@@ -191,7 +191,7 @@ Here's a quick overview. Each step is explained in detail in this article.
 
 3. 在 "**电子邮件转发**" 旁边，选择 "**编辑**"。
 
-4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee (or shared mailbox) who's going to get the email. 
+4. 启用" **转发发至此邮箱的所有电子邮件** "。在" **转发地址** "框中，键入将收到电子邮件的当前员工（或共享邮箱）的电子邮件地址。 
   
 5. 选择“**保存**”。 
     
@@ -217,7 +217,7 @@ Here's a quick overview. Each step is explained in detail in this article.
     
 6. 选择“**保存**”。 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+    **提示** ：请确保从本地 BlackBerry 企业服务删除或禁用用户。还应禁用该用户的所有 BlackBerry 设备。有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>阻止以前的员工对 Microsoft 365 数据的访问权限
 <a name="bkmk_block"> </a>
@@ -340,16 +340,16 @@ Here's a quick overview. Each step is explained in detail in this article.
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已删除的员工帐户如何影响 Skype for Business
 <a name="bkmk_remove"> </a>
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+从 Office 365 删除用户许可证时，与该用户相关联的 PSTN 呼叫号码将被释放。可将其分配给其他用户。
   
-If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+如果用户属于队列组，则他不再是呼叫队列代理的可行目标。因此，我们还建议将该用户从与呼叫队列相关联的组中删除。 
   
 ## <a name="delete-a-former-employees-user-account"></a>删除以前员工的用户帐户
 <a name="bkmk_delete"> </a>
 
 保存并访问以前员工的所有用户数据之后，可以删除以前员工的帐户。
   
-Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
+如果设置了电子邮件转发或将帐户转换成共享邮箱，则不要删除该帐户。这两项都需要帐户来定位转发或共享邮箱。
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker-end
 
-When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
+删除用户后，其帐户将在大约 30 天内处于非活动状态。在永久删除用户之前，可还原帐户。
   
 ### <a name="does-your-organization-use-active-directory"></a>组织是否使用 Active Directory？
 
@@ -400,8 +400,8 @@ When you delete a user, the account becomes inactive for approximately 30 days. 
 |:-----|:-----|
 |**可执行的操作** <br/> |**实现方式** <br/> |
 |终止会话（如 Outlook 网页版、Outlook、Exchange Active Sync 等）并强制打开一个新的会话  <br/> |重置密码  <br/> |
-|终止会话并阻止对未来会话的访问（针对所有协议）  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|针对特定协议终止会话（如 ActiveSync）  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|终止会话并阻止对未来会话的访问（针对所有协议）  <br/> |禁用帐户。示例（在 Exchange 管理中心或使用 PowerShell）：  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|针对特定协议终止会话（如 ActiveSync）  <br/> |禁用协议示例（在 Exchange 管理中心或使用 PowerShell）：<br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 可以在 3 个位置完成上述操作：
   
@@ -414,9 +414,9 @@ When you delete a user, the account becomes inactive for approximately 30 days. 
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>如何最迅速地响应帐户终止
 
- **Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through DirSync. 
+ **最快** ：使用 Exchange 管理中心（使用 PowerShell）或 Azure Active Directory 管理中心。在本地环境中可能需要数小时才能通过 DirSync 同步更改。 
   
- **Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by DirSync. 
+ **对于本地和 Exchange 数据中心中的用户最快** ：使用 Azure Active Directory 管理中心/Exchange 管理中心终止会话，同时在本地环境中进行更改。否则，DirSync 将覆盖 Azure Active Directory 管理中心/Exchange 管理中心中的更改。 
   
 ## <a name="related-articles"></a>相关文章
 

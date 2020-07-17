@@ -56,7 +56,7 @@ ms.locfileid: "45005682"
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+您选择的合作伙伴取决于您使用的 Office 365 服务以及将在哪个国家/地区使用这些服务。如果您要添加合作伙伴或更改您的订阅的合作伙伴，首先需要通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 4. 如果您已经有一个合作伙伴，则在 "签出向导" 的第二步中，在 "合作伙伴信息" 下的 "合作伙伴信息" 下，选择 "**添加**"。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 键入您要添加的合作伙伴的 Microsoft 合作伙伴 ID。您可以通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
 
 6. 完成向导的其他部分，以完成购买订阅。 
     
@@ -98,7 +98,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 4. 如果您已经有一个合作伙伴，则在 "签出向导" 的第二步中，在 "合作伙伴信息" 下的 "合作伙伴信息" 下，选择 "**添加**"。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 键入您要添加的合作伙伴的 Microsoft 合作伙伴 ID。您可以通过向合作伙伴询问来获取合作伙伴的 Microsoft 合作伙伴 ID。
 
 6. 完成向导的其他部分，以完成购买订阅。 
     
@@ -127,7 +127,7 @@ The partner you choose depends on the Office 365 services you use and the countr
   
 3. 在右侧的 "订阅成本" 下，选择 "**更多操作** > **添加记录的合作伙伴**"。
 
-4. Type the Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. 键入要添加的合作伙伴的 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
 
 5. 合作伙伴 ID 将显示在" **订阅**"页面。
     
@@ -159,7 +159,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.
+4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。
   
 ::: moniker-end
 
@@ -171,7 +171,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。   
 
 ::: moniker-end
 
@@ -183,7 +183,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 3. 在" **合作伙伴 ID**"下，选择" **编辑在录合作伙伴**"。
   
-4. Type the new Microsoft Partner ID for the partner you're adding, select **Check ID**, and then **Submit**. You can get the partner's Microsoft Partner ID by asking the partner for it.   
+4. 键入要添加的合作伙伴的新 Microsoft 合作伙伴 ID，选择" **检查 ID**"，然后选择" **提交**"。你可以通过向合作伙伴询问来获取其 Microsoft 合作伙伴 ID。   
 
 ::: moniker-end
 

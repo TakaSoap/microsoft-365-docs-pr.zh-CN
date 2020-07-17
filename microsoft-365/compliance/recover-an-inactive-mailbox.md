@@ -57,7 +57,7 @@ ms.locfileid: "45127459"
     ```
 
     > [!IMPORTANT]
-    > In the previous command, use the value of the **DistinguishedName** or **ExchangeGUID** property to identify the inactive mailbox. These properties are unique for each mailbox in your organization, whereas it's possible that an active and an inactive mailbox might have the same primary SMTP address. 
+    > 在上一命令中，使用 **DistinguishedName** 或 **ExchangeGUID** 属性的值来标识非活动邮箱。这些属性对于您组织中的每个邮箱都是唯一的，但活动和非活动邮箱可能具有相同的主 SMTP 地址。 
   
 2. 此示例使用在上一个命令中获取的属性，并将非活动邮箱恢复到用户 Ann Beebe 的活动邮箱。 请确保为*Name*和*MicrosoftOnlineServicesID*参数指定的值在您的组织中是唯一的。 
 
@@ -85,7 +85,7 @@ ms.locfileid: "45127459"
   
      - **Microsoft 365 保留策略，无保留锁定。** 非活动邮箱将从应用于它的任何未锁定的 Microsoft 365 保留策略中删除。 但是，在恢复的邮箱上启用了诉讼保留，以防止根据删除超过特定年龄的内容的任何组织范围的保留策略来删除邮箱内容。 您可以保留诉讼保留或将其删除。 有关详细信息，请参阅[创建诉讼保留](create-a-litigation-hold.md)。
 
-  - The single item recovery period (which is defined by the **RetainDeletedItemsFor** mailbox property) is set to 30 days. Typically, when a new mailbox is created in Exchange Online, this retention period is set to 14 days. Setting this to the maximum value of 30 days gives you more time to recover any data that's been permanently deleted (or purged) from the inactive mailbox. You can also disable single item recovery or set the single item recovery period back to the default of 14 days. For more information, see [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
+  - 单个项目恢复期间（由 **RetainDeletedItemsFor** 邮箱属性定义）设置为 30 天。通常情况下，在 Exchange Online 中创建新邮箱时，此保留期设置为 14 天。将此值设置为最大值 30 天，可留出更多时间从非活动邮箱中恢复任何已永久删除（或清除）的数据。您也可以禁用单个项目恢复，或将单个项目恢复期设置为默认的 14 天。有关详细信息，请参阅 [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769)。
   
   - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 365 范围的保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目（或根据为 Exchange 或 Microsoft 365 保留策略配置的设置，将项目移至存档邮箱（如果已启用）。 30天后，保留挂起会过期， **RetentionHoldEnabled**邮箱属性设置为**False**，并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300)。
 

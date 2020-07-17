@@ -99,7 +99,7 @@ ms.locfileid: "44819372"
     
 7. 在 "**步骤3：保留现有应用程序**" 页上，单击 "**完成**"。
     
-8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
+8. 如果这是你第一次使用 User 2 帐户登录，那么系统将提示你更改密码。键入原始密码和新密码两次，然后单击“更新密码并登录”****。将新密码记录在安全位置。
     
     您应在浏览器的 " **Microsoft Office 主页**" 选项卡上看到 "用户 2" 的 Office 门户。
 

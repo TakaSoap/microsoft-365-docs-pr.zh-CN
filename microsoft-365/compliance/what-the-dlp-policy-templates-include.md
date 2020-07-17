@@ -220,47 +220,47 @@ ms.locfileid: "44819262"
 |沙特阿拉伯 PII：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  沙特阿拉伯国家/地区身份证号码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
 |沙特阿拉伯 PII：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  沙特阿拉伯国家/地区身份证号码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-access-to-medical-reports-act"></a>U.K. Access to Medical Reports Act
+## <a name="uk-access-to-medical-reports-act"></a>英国获取医疗报告法案
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. AMRA: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数1，最大值计数9  <br/>  U.K. 国家保险业号码（NINO）—最小值计数1，最大值计数9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. AMRA: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数10，最大值计数任意  <br/>  U.K. 国家保险业号码（NINO）—最小值计数10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 AMRA：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数1，最大值计数9  <br/>  U.K. 国家保险业号码（NINO）—最小值计数1，最大值计数9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 AMRA：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  U.K. 国家/地区运行状况服务号码—最小值计数10，最大值计数任意  <br/>  U.K. 国家保险业号码（NINO）—最小值计数10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-data-protection-act"></a>U.K. Data Protection Act
+## <a name="uk-data-protection-act"></a>英国数据保护法案
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. DPA: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  美国/英国 护照号码—最小值计数1，最大值计数9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. DPA: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  美国/英国 护照号码—最小值计数10，最大值计数任意  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 DPA：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 1，最大值计数 9  <br/>  美国/英国 护照号码—最小值计数1，最大值计数9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 DPA：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 10，最大值计数任意  <br/>  美国/英国 护照号码—最小值计数10，最大值计数任意  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-financial-data"></a>U.K. Financial Data
+## <a name="uk-financial-data"></a>英国财务数据
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. Financial: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  信用卡卡号 — 最小值计数 1，最大值计数 9  <br/>  欧盟借记卡号码 — 最小值计数 1，最大值计数 9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. Financial: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  信用卡卡号 — 最小值计数 10，最大值计数任意  <br/>  欧盟借记卡号码 — 最小值计数 10，最大值计数任意  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国财务：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  信用卡卡号 — 最小值计数 1，最大值计数 9  <br/>  欧盟借记卡号码 — 最小值计数 1，最大值计数 9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国财务：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  信用卡卡号 — 最小值计数 10，最大值计数任意  <br/>  欧盟借记卡号码 — 最小值计数 10，最大值计数任意  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-personal-information-online-code-of-practice-piocp"></a>U.K. Personal Information Online Code of Practice (PIOCP)
+## <a name="uk-personal-information-online-code-of-practice-piocp"></a>英国个人信息在线行为守则 (PIOCP)
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PIOCP: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.K. National Health Service Number — Min count 1, Max count 9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. PIOCP: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.K. National Health Service Number — Min count 10, Max count any  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 PIOCP：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 1，最大值计数 9  <br/>  英国国家卫生服务号码 — 最小值计数 1，最大值计数 9  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 PIOCP：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 10，最大值计数任意  <br/>  英国国家卫生服务号码 — 最小值计数 10，最大值计数任意  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-personally-identifiable-information-pii-data"></a>U.K. Personally Identifiable Information (PII) Data
+## <a name="uk-personally-identifiable-information-pii-data"></a>英国个人身份信息 (PII) 数据
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PII: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 1, Max count 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. PII: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  U.K. National Insurance Number (NINO) — Min count 10, Max count any  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 PII：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 1，最大值计数 9  <br/>  美国/英国护照号码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 PII：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  英国国家保险号码 (NINO) — 最小值计数 10，最大值计数任意  <br/>  美国/英国护照号码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
-## <a name="uk-privacy-and-electronic-communications-regulations"></a>U.K. Privacy and Electronic Communications Regulations
+## <a name="uk-privacy-and-electronic-communications-regulations"></a>英国隐私和电子通信规则
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|U.K. PECR: Scan content shared outside - low count  <br/> | 内容包含敏感信息：  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|U.K. PECR: Scan content shared outside - high count  <br/> | 内容包含敏感信息：  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|英国 PECR：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  SWIFT 代码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|英国 PECR：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  SWIFT 代码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
 ## <a name="us-federal-trade-commission-ftc-consumer-rules"></a>美国联邦贸易委员会 (FTC) 消费者规则
 
@@ -300,8 +300,8 @@ ms.locfileid: "44819262"
 
 |**规则名称**|**条件 <br/> （包括敏感信息类型）**|**Actions**|
 |:-----|:-----|:-----|
-|美国 PII：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  美国单独的纳税人标识号 (ITIN) — 最小值计数 1，最大值计数 9  <br/>  美国社会保险号 (SSN) — 最小值计数 1，最大值计数 9  <br/>  U.S. / U.K. Passport Number — Min count 1, Max count 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
-|美国 PII：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  美国单独的纳税人标识号 (ITIN) — 最小值计数 10，最大值计数任意  <br/>  美国社会保险号 (SSN) — 最小值计数 10，最大值计数任意  <br/>  U.S. / U.K. Passport Number — Min count 10, Max count any  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
+|美国 PII：扫描与外部共享的内容 - 较低的计数  <br/> | 内容包含敏感信息：  <br/>  美国单独的纳税人标识号 (ITIN) — 最小值计数 1，最大值计数 9  <br/>  美国社会保险号 (SSN) — 最小值计数 1，最大值计数 9  <br/>  美国/英国护照号码 — 最小值计数 1，最大值计数 9  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> |发送通知  <br/> |
+|美国 PII：扫描与外部共享的内容 - 较高的计数  <br/> | 内容包含敏感信息：  <br/>  美国单独的纳税人标识号 (ITIN) — 最小值计数 10，最大值计数任意  <br/>  美国社会保险号 (SSN) — 最小值计数 10，最大值计数任意  <br/>  美国/英国护照号码 — 最小值计数 10，最大值计数任意  <br/>  该内容与以下人员共享：  <br/>  我的组织外部的用户  <br/> | 阻止对内容的权限  <br/>  发送通知  <br/>  允许替换  <br/>  需要业务理由  <br/>  发送事件报告  <br/> |
    
 ## <a name="us-state-breach-notification-laws"></a>美国国家违约通知法
 

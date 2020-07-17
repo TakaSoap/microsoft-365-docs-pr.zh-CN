@@ -47,9 +47,9 @@ ms.locfileid: "44817025"
 
 - **帐单寄往地址** 帐单部门地址，通常与" **售达**"地址相同。
 
-- **Service Usage Address** The address where the service is being used, usually the same as the **Sold-To** address. If your organization has remote users or multiple offices, use the address where the majority of your users are located.
+- **服务使用地址** 正在使用服务的地址，通常与" **售达**"地址相同。如果组织具有远程用户或多个办公室，请使用你的大多数用户所在的地址。
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+大多数情况下，这些地址都相同。如果需要，可更改其中一个或多个地址。也可提供备用电子邮件地址以接收帐单通知或更改其他管理员的备用电子邮件地址。
   
 ::: moniker range="o365-worldwide"
 

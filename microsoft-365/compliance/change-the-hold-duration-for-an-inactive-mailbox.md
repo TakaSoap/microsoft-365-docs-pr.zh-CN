@@ -124,7 +124,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 结果是非活动邮箱中的项目会无限期保留，或者直到删除保留或保留持续时间更改为其他值。
   
 > [!TIP]
-> The best way to identify an inactive mailbox is by using its **Distinguished Name** or **Exchange GUID** value. Using one of these values helps prevent accidentally specifying the wrong mailbox. 
+> 标识非活动邮箱的最佳方式是使用 **Distinguished Name** 或 **Exchange GUID** 值。 使用下列值之一有助于避免意外指定错误的邮箱。 
   
 ### <a name="change-the-duration-for-an-in-place-hold"></a>更改就地保留的保留期
 
@@ -172,13 +172,13 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ## <a name="more-information"></a>详细信息
 
-- **How is the hold duration calculated for an item in an inactive mailbox?** The duration is calculated from the original date a mailbox item was received or created. 
+- **如何计算非活动邮箱中项目的保留期？** 保留期从邮箱项目的接收或创建原始日期开始计算。 
     
 - **当保留期过期时，会怎么样？** 当 "可恢复的项目" 文件夹中某个邮箱项目的保留持续时间过期时，将从非活动邮箱中永久删除（清除）此项目。 如果没有为非活动邮箱上的保留指定持续时间，则永远不会清除 "可恢复的项目" 文件夹中的项目（除非对非活动邮箱的保留期进行了更改）。 
     
 - **是否仍在非活动邮箱上处理 Exchange 保留策略？** 如果 Exchange 保留策略（Exchange Online 中的 "邮件记录管理" 或 "MRM" 功能）在邮箱变为非活动状态时应用于该邮箱，则将继续在非活动邮箱上处理删除策略（即，使用**删除**保留操作配置的保留标记）。 也就是说，在保留期过期时，标记有删除策略的项目会移到“可恢复的项目”文件夹中。 当项目的保留期过期时，这些项目会从非活动邮箱中清除。 
     
-    Conversely, any archive policies (which are retention tags configured with a **MoveToArchive** retention action) that are included in the retention policy assigned to an inactive mailbox are ignored. That means items in an inactive mailbox that are tagged with an archive policy remain in the primary mailbox when the retention period expires. They're not moved to the archive mailbox or to the Recoverable Items folder in the archive mailbox. Because a user can't sign in to an inactive mailbox, there's no reason to consume datacenter resources to process archive policies. 
+    当项目的保留期过期时，这些项目会从非活动邮箱中清除。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。这些项目不会移到存档邮箱或其中的"可恢复的项目"文件夹内。由于用户无法登录非活动邮箱，因此没有理由消耗数据中心资源来处理存档策略。 相反，分配给非活动邮箱的保留策略中包含的所有存档策略（配置了 MoveToArchive 保留操作的保留标记）会遭到忽略。 也就是说，在保留期过期时，非活动邮箱中标记有存档策略的项目会保留在主邮箱中。 
     
 - 由于用户无法登录非活动邮箱，因此没有理由消耗数据中心资源来处理存档策略。 第一个命令适用于诉讼保留;第二个用于就地保留。 
 

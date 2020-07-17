@@ -88,9 +88,9 @@ ms.locfileid: "44780189"
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>将你的域转移到另一家域注册机构
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+如果注册你的域的提供商不支持所有必要的 DNS 记录，则可以将域转移到其他域注册机构。在你转移域时，为了续订并保留域名，可以更改收款人。
   
-Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
+在要将您的域移动到的注册机构请求转移。在其网站上查找" **转移 DNS**"之类的选项。请注意，完成更改后，此更新可能需要几天时间才能传遍 Internet。
  
 
 
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+如果尚没有自己的域，可轻松联机进行购买，可在域名注册机构、域经销商，甚至是在当前的 Internet 提供商处购买。注册 由世纪互联运营的 Office 365 时可获取一个域名，例如，contoso.onmicrosoft.com。但你可能希望使用自定义域名，例如 fourthcoffee.com。
   
 若要在 Microsoft 365 中设置域，您必须拥有域并更改您的域的某些 DNS 记录。
   

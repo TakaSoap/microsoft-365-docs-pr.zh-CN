@@ -30,7 +30,7 @@ ms.locfileid: "44678998"
 <thead>
 <td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-10.png" alt="Step 7" height="144" width="144" /></td>
 <td><p><strong>步骤 7：Windows 和 Office 服务</strong></p>
-<p>Both Windows 10 and Microsoft 365 Apps for enterprise continually add new capabilities to keep bringing user experiences and security forward with the latest innovations. Learn how to stay current with semi-annual and monthly updates, how the new servicing model works and the tools and options you have.</p></td>
+<p>Windows 10 和 Microsoft 365 企业应用版都会不断添加新功能，以利用最新的创新来不断提升用户体验和安全性。请了解如何及时获得最新的半年和每月更新、新服务模式的工作原理以及你所拥有的工具和选项。</p></td>
 <td><a href="https://aka.ms/ddev7" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-20.png" alt="Step 7" height="130" width="231" /></a></td>
 </thead>
 </table>
@@ -59,7 +59,7 @@ Windows 10 和 Microsoft 365 企业应用版都引入了新的服务选项、支
 
 ### <a name="feature-update-benefits"></a>功能更新优势
 
-First, we’ve moved away from the model of the past that would introduce huge waves of change around every three years to now incremental smaller changes with feature updates twice per year. Why? With technology trends moving so fast in addition to rapidly evolving security threats, this keeps experiences and protections current. Some of the security related updates for example can’t just be delivered by monthly security updates or antivirus signature files; they may be low-level changes platform, like virtualization-based security.
+首先，我们已经弃用了过去的模式，该模式每三年会引发一波巨大的变革浪潮，而现在每年进行两次功能更新，每次更新的增量变化较小。为什么？除了快速演进的安全威胁之外，技术趋势也在快速发展，此做法将保持最新的体验和防护状态。例如，一些与安全相关的更新无法仅通过每月安全更新或反病毒签名文件来提供；它们可能是低级别的变更平台，比如基于虚拟化的安全性。
 
 [Windows 即服务的快速指南](https://docs.microsoft.com/windows/deployment/update/waas-quick-start)
 
@@ -67,9 +67,9 @@ First, we’ve moved away from the model of the past that would introduce huge w
 
 ### <a name="cumulative-update-model-benefits"></a>累积更新模型优势
 
-Second delivering quality and security updates as a cumulative update package corrects many of the issues of the past. It used to be that you might pick and choose sometimes from a dozen updates or more each month for both Windows and Office. As you can imagine, this creates a nearly impossible set of test matrices for support. Also, if you install a version of Windows or Office that is a year or more old, it might take hours or sometimes days to apply all updates delivered since that version was released.
+第二次交付质量和安全更新作为一个累积的更新包修正了过去的许多问题。过去，每月你可能有时会从十几个或更多更新中针对 Windows 和 Office 进行选择。正如你所能想象的，这将创建一个几乎不可能的支持测试矩阵集。另外，如果安装的 Windows 或 Office 版本是一年前或更旧的版本，可能需要几个小时甚至几天的时间来应用自该版本发布以来交付的所有更新。
 
-With the cumulative model, you’re always one update away from being current and in doing so the number of monthly updates that you need to deploy is reduced. Each update builds upon updates from previous months and contains all of the fixes that you need to get current. Cumulative updates are especially helpful when PCs has been turned off for several months because they are in storage waiting to be reassigned to a different user.
+有了累积模型，你所获得的更新始终次于最新更新，为此你需要部署的每月更新的数量就会减少。每个更新都建立在前几个月的更新之上，并且包含全部所需的最新修复程序。当电脑关闭几个月后，累积更新会特别有用，因为它们在存储中等待被重新分配给其他用户。
 
 ### <a name="expanded-validation-of-updates"></a>扩展更新验证
 
@@ -79,7 +79,7 @@ With the cumulative model, you’re always one update away from being current an
 
 ### <a name="supporting-management-tools"></a>支持管理工具
 
-We've also thought through how to make the deployment of updates seamless to you. Configuration Manager (Current Branch) is updated frequently to support the roll-out of these updates to Windows and Office and any new capabilities.
+我们还考虑了如何无缝部署更新。Configuration Manager（当前分支版本）会经常更新，以支持推出这些 Windows 和 Office 更新，以及任何新功能。
 
 [使用 Configuration Manager 部署 Windows 10 更新](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
@@ -107,15 +107,15 @@ Microsoft 365 提供 4 个服务频道：
 
 ## <a name="phased-deployment-of-updates"></a>分阶段部署更新
 
-Now let’s shift gears to how you will roll out these updates. For any release, we recommend at least three deployment phases for IT – validation, piloting and broad production deployment. Once you’re up and running on Windows 10 and Microsoft 365 Apps for enterprise, you'll use monthly servicing to stay current with critical security and quality updates, then you’ll move to semi-annual servicing for new features.
+现在我们换个话题，讨论如何推出这些更新。对于任何版本，我们的建议是至少有 3 个 IT 部署阶段 - 验证、试验和广泛生产部署。一旦在 Windows 10 和 Microsoft 365 企业应用版上启动并运行，你便会使用每月服务来保持最新的关键安全和质量更新，然后切换到半年服务来获取新功能。
 
 ### <a name="monthly-updating"></a>每月更新
 
-The service model is designed so you can choose to limit the roll-out of new features to twice per year, and if needed you can even skip a semi-annual update and continue receiving quality and security updates. As mentioned, the cumulative nature of monthly updates means each will increase in size per month.
+服务模型旨在让你选择将新功能的发布限制在每年两次，如果需要的话，甚至可以跳过半年更新，继续接收质量和安全更新。如上所述，每月更新的累积特性意味着每个月各更新大小的增加。
 
 #### <a name="express-updates"></a>快速更新
 
-Using a technology called "Express Updates" in Windows and Binary Delta Compression in Office, we can reduce the download size significantly. In both approaches, the update engines compare what’s on the PC and finds only the differentials needed to update what’s there.
+使用 Windows 中名为“快速更新”的技术和 Office 中的二进制增量压缩可以显著减少下载大小。在这两种方法中，更新引擎比较电脑上的内容，并且只查找其中需要更新的内容的差别。
 
 [Windows 10 质量更新说明和增量更新结语](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-quality-updates-explained-amp-the-end-of-delta/ba-p/214426)
 
@@ -127,7 +127,7 @@ Using a technology called "Express Updates" in Windows and Binary Delta Compress
 
 只有在从 Microsoft 365 企业应用版的最新版本进行更新时，才能在 Office 中使用二进制增量压缩。因此，要使用这种方法，需要从之前的版本进行更新，而且不能跳过更新。
 
-Windows and Office update channels can be managed via Configuration Manager using the standard approval and targeting process. Additionally, you can use policy settings in Office and Windows to enforce update channels used, as well as related settings.
+Windows 和 Office 更新通道可以通过 Configuration Manager 使用标准审批和目标流程来管理。此外，还可以在 Office 和 Windows 中使用策略设置来强制使用更新通道，以及相关设置。
 
 ### <a name="semi-annual-updates"></a>半年更新
 
@@ -135,7 +135,7 @@ Windows and Office update channels can be managed via Configuration Manager usin
 
 正如我们在“设备和应用就绪情况”中所介绍的，你将希望使用我们在“部署过程轮”步骤 1 中设置的相同准备工具开始准备这些更大的更新。
 
-As for tooling, you can use policy settings with Windows Update for Business, software update management via Microsoft Endpoint Configuration Manager (Current Branch), Windows Server Update Services (WSUS), or update policies set by Microsoft Intune. If you are concerned about network bandwidth, see Step 2: Directory and Network Readiness, to learn about your options to reduce network traffic via Delivery Optimization and other peer to peer caching technologies.
+至于工具，你可以使用适用于企业的 Windows 更新中的策略设置、通过 Microsoft Endpoint Configuration Manager（当前分支版本）、Windows Server Update Services (WSUS) 进行软件更新管理或者通过 Microsoft Intune 更新策略设置。如果你担心网络带宽，请参见“步骤 2：目录和网络就绪情况”，了解通过交付优化和其他对等缓存技术来减少网络流量的选项。
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-4.png)
 
@@ -151,7 +151,7 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 ![](../media/step-7-windows-and-office-as-a-service-media/step-7-windows-and-office-as-a-service-media-5.png)
 
-If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
+如果已经在使用任务序列将 Windows 7 计算机迁移到 Windows 10，并且非常精通这些工具，那么这是启动和提供最终控制的理想位置。虽然可以为整个升级使用单个任务序列，但是组织使用两个任务序列是很常见的。一个任务序列用于确保计算机已经准备好进行升级，它在目标计算机上以静默方式预先暂存所有所需的安装文件，另一个任务序列则用于实际升级。这种方法可确保用户生产力受到较小影响。
 
 [在 Configuration Manager 中创建升级 OS 的任务序列](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 

@@ -37,7 +37,7 @@ ms.locfileid: "45016316"
 
 - **“发件人”地址**：由邮件应用程序显示为发件人地址的地址。 此地址标识电子邮件的作者。 即，负责撰写邮件的个人或系统的邮箱。 有时也称其为"5322.From 地址"。
 
-SPF uses a DNS TXT record to provide a list of authorized sending IP addresses for a given domain. Normally, SPF checks are only performed against the 5321.MailFrom address. This means that the 5322.From address is not authenticated when you use SPF by itself. This allows for a scenario where a user can receive a message which passes an SPF check but has a spoofed 5322.From sender address. For example, consider this SMTP transcript:
+SPF 使用 DNS TXT 记录为给定的域提供获得授权的发送 IP 地址的列表。通常情况下，仅会针对 5321.MailFrom 地址执行 SPF 检查。这意味着，使用 SPF 本身时 5322.From 地址未通过身份验证。这样允许用户接收通过 SPF 检查但具有伪造的 5322.From 发件人地址的邮件。以下面的 SMTP 脚本为例：
 
 ```text
 S: Helo woodgrovebank.com
@@ -66,13 +66,13 @@ S: .
 
 - 发件人地址 (5322.From)：security@woodgrovebank.com
 
-If you configured SPF, then the receiving server performs a check against the Mail from address phish@phishing.contoso.com. If the message came from a valid source for the domain phishing.contoso.com then the SPF check passes. Since the email client only displays the From address, the user sees that this message came from security@woodgrovebank.com. With SPF alone, the validity of woodgrovebank.com was never authenticated.
+如果你配置了 SPF，那么接收服务器针对从 phish@phishing.contoso.com 地址发送的邮件执行检查。如果该邮件来自 phishing.contoso.com 域的有效源，则会通过 SPF 检查。由于电子邮件客户端仅显示发件人地址，用户可以看到此邮件来自 security@woodgrovebank.com。单独使用 SPF，永远不会验证 woodgrovebank.com 的有效性。
 
-When you use DMARC, the receiving server also performs a check against the From address. In the example above, if there is a DMARC TXT record in place for woodgrovebank.com, then the check against the From address fails.
+使用 DMARC 时，接收服务器还会针对发件人地址执行检查。在上面的示例中，如果正好存在 woodgrovebank.com 的 DMARC TXT 记录，那么针对发件人地址的检查会失败。
 
 ## <a name="what-is-a-dmarc-txt-record"></a>什么是 DMARC TXT 记录？
 
-Like the DNS records for SPF, the record for DMARC is a DNS text (TXT) record that helps prevent spoofing and phishing. You publish DMARC TXT records in DNS. DMARC TXT records validate the origin of email messages by verifying the IP address of an email's author against the alleged owner of the sending domain. The DMARC TXT record identifies authorized outbound email servers. Destination email systems can then verify that messages they receive originate from authorized outbound email servers.
+像 SPF 的 DNS 记录一样，DMARC 的记录是一个 DNS 文本 (TXT) 记录，有助于防止欺骗和钓鱼。在 DNS 中发布 DMARC TXT 记录。DMARC TXT 记录根据发送域的可疑所有者来验证电子邮件作者的 IP 地址，从而验证电子邮件的来源。 DMARC TXT 记录可以标识得到授权的出站电子邮件服务器。然后，目标电子邮件系统可以验证接收的邮件是否来自得到授权的出站电子邮件服务器。
 
 Microsoft 的 DMARC TXT 记录如下所示：
 
@@ -84,13 +84,13 @@ Microsoft 将其 DMARC 报告发送至 [Agari](https://agari.com)（第三方）
 
 ## <a name="implement-dmarc-for-inbound-mail"></a>为入站邮件实现 DMARC
 
-You don't have to do a thing to set up DMARC for mail that you receive in Microsoft 365. We've taken care of everything for you. If you want to learn what happens to mail that fails to pass our DMARC checks, see [How Microsoft 365 handles inbound email that fails DMARC](#how-microsoft-365-handles-inbound-email-that-fails-dmarc).
+你不必为在 Microsoft 365 中收到的邮件设置 DMARC。我们已经为你处理好了一切。如果你想了解未通过我们的 DMARC 检查时如何处理邮件，请参阅 [Microsoft 365 如何处理未通过 DMARC 检查的入站电子邮件](#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。
 
 ## <a name="implement-dmarc-for-outbound-mail-from-microsoft-365"></a>从 Microsoft 365 中为出站邮件实现 DMARC
 
-If you use Microsoft 365 but you aren't using a custom domain, that is, you use onmicrosoft.com, you don't need to do anything else to configure or implement DMARC for your organization. SPF is already set up for you and Microsoft 365 automatically generates a DKIM signature for your outgoing mail. For more information about this signature, see [Default behavior for DKIM and Microsoft 365](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior).
+如果使用 Microsoft 365 但没有使用自定义域，即，使用 onmicrosoft.com，无需执行任何其他操作即可为组织配置或实现 DMARC。SPF 已为你和 Microsoft 365 自动设置就绪，并为发送邮件生成 DKIM 签名。有关此签名的详细信息，请参阅 [DKIM 和 Microsoft 365 的默认行为](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
 
- If you have a custom domain or you are using on-premises Exchange servers in addition to Microsoft 365, you need to manually implement DMARC for your outbound mail. Implementing DMARC for your custom domain includes these steps:
+ 如果有自定义域，或者除了 Microsoft 365 以外还使用本地 Exchange 服务器，则需要为出站邮件手动实现 DMARC。可以通过以下步骤为自定义域实现 DMARC：
 
 - [步骤 1：为域标识邮件的有效源](#step-1-identify-valid-sources-of-mail-for-your-domain)
 
@@ -102,7 +102,7 @@ If you use Microsoft 365 but you aren't using a custom domain, that is, you use 
 
 ### <a name="step-1-identify-valid-sources-of-mail-for-your-domain"></a>步骤 1：为域标识邮件的有效源
 
-If you have already set up SPF then you have already gone through this exercise. However, for DMARC, there are additional considerations. When identifying sources of mail for your domain there are two questions you need to answer:
+如果你已经设置了 SPF，那么你已经通过了本练习。但是，对于 DMARC，还有其他一些注意事项。为域标识邮件的源时需要回答以下两个问题：
 
 - 哪些 IP 地址从我的域发送邮件？
 
@@ -122,15 +122,15 @@ contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.p
 
 ### <a name="step-3-set-up-dkim-for-your-custom-domain"></a>步骤 3：为自定义域设置 DKIM
 
-Once you have set up SPF, you need to set up DKIM. DKIM lets you add a digital signature to email messages in the message header. If you do not set up DKIM and instead allow Microsoft 365 to use the default DKIM configuration for your domain, DMARC may fail. This is because the default DKIM configuration uses your initial onmicrosoft.com domain as the 5322.From address, not your custom domain. This forces a mismatch between the 5321.MailFrom and the 5322.From addresses in all email sent from your domain.
+一旦设置了 SPF，就需要设置 DKIM。你可以使用 DKIM 将数字签名添加到电子邮件的邮件头中。如果你不设置 DKIM，反而允许 Microsoft 365 对你的域使用默认的 DKIM 配置，则 DMARC 可能会失败。这是因为默认的 DKIM 配置使用你的初始 onmicrosoft.com 域作为 5322.From 地址，而不是使用自定义域。这将强制从你的域发送的所有电子邮件的 5321.MailFrom 和 5322.From 地址不匹配。
 
-If you have third-party senders that send mail on your behalf and the mail they send has mismatched 5321.MailFrom and 5322.From addresses, DMARC will fail for that email. To avoid this, you need to set up DKIM for your domain specifically with that third-party sender. This allows Microsoft 365 to authenticate email from this 3rd-party service. However, it also allows others, for example, Yahoo, Gmail, and Comcast, to verify email sent to them by the third-party as if it was email sent by you. This is beneficial because it allows your customers to build trust with your domain no matter where their mailbox is located, and at the same time Microsoft 365 won't mark a message as spam due to spoofing because it passes authentication checks for your domain.
+如果你有代表你发送邮件的第三方发件人，并且他们发送的邮件的 5321.MailFrom 和 5322.From 地址不匹配，则该电子邮件将无法通过 DMARC。若要避免此问题，你需要专门为具有该第三方发件人的域设置 DKIM。这将允许 Microsoft 365 验证来自此第三方服务的电子邮件。但是，它也允许其他方（例如，Yahoo、Gmail 和 Comcast）验证通过该第三方发送给他们的电子邮件，就好像电子邮件是由你发送的一样。这是有好处的，因为它允许你的客户构建对你的域的信任，无论他们的邮箱位于何处，与此同时，Microsoft 365 不会因欺骗而将邮件标记为垃圾邮件，因为它通过了对你的域的身份验证检查。
 
 有关为域设置 DKIM 的说明，包括如何为第三方发件人设置 DKIM，以便他们可以欺骗你的域，请参阅[使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。
 
 ### <a name="step-4-form-the-dmarc-txt-record-for-your-domain"></a>步骤 4：为域生成 DMARC TXT 记录
 
-Although there are other syntax options that are not mentioned here, these are the most commonly used options for Microsoft 365. Form the DMARC TXT record for your domain in the format:
+尽管还有此处未提及的其他语法选项，但这些都是最常用于 Microsoft 365 的选项。为域生成 DMARC TXT 记录，格式如下：
 
 ```text
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
@@ -140,11 +140,11 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 - *域*是你想要保护的域。 默认情况下，该记录可保护从该域和所有子域发送的邮件。 例如，如果指定 \_dmarc.contoso.com，那么 DMARC 会保护从该域和所有子域（例如 housewares.contoso.com 或 plumbing.contoso.com）发送的邮件。
 
-- *TTL* should always be the equivalent of one hour. The unit used for TTL, either hours (1 hour), minutes (60 minutes), or seconds (3600 seconds), will vary depending on the registrar for your domain.
+- *TTL* 应始终相当于一小时。用于 TTL 的单位可以为小时（1 小时）、分钟（60 分钟）或秒（3600 秒），具体取决于你的域的注册机构。
 
 - pct=100** 表示此规则应该用于所有的电子邮件。
 
-- *policy* specifies what policy you want the receiving server to follow if DMARC fails. You can set the policy to none, quarantine, or reject.
+- *策略*指定 DMARC 失败时你希望接收服务器遵循的策略。你可以将策略设置为无、隔离或拒绝。
 
 有关要使用的选项的信息，请熟悉[在 Microsoft 365 中实现 DMARC 的最佳做法](#best-practices-for-implementing-dmarc-in-microsoft-365)中的概念。
 
@@ -168,31 +168,31 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
-Once you have formed your record, you need to update the record at your domain registrar. For instructions on adding the DMARC TXT record to your DNS records for Microsoft 365, see [Create DNS records for Microsoft 365 when you manage your DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+生成记录后，你需要在你的域注册机构中更新记录。有关为 Microsoft 365 将 DMARC TXT 记录添加到 DNS 记录的说明，请参阅[管理 DNS 记录时为 Microsoft 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="best-practices-for-implementing-dmarc-in-microsoft-365"></a>在 Microsoft 365 中实现 DMARC 的最佳做法
 
-You can implement DMARC gradually without impacting the rest of your mail flow. Create and implement a roll out plan that follows these steps. Do each of these steps first with a sub-domain, then other sub-domains, and finally with the top-level domain in your organization before moving on to the next step.
+你可以逐渐实现 DMARC，而不会影响邮件流的其余部分。创建和实施遵循以下步骤的推广计划。首先使用任一子域执行以下每一个步骤，然后使用其他子域，最后使用组织内的顶级域，然后再继续下一步骤。
 
 1. 监视实现 DMARC 的影响
 
-    Start with a simple monitoring-mode record for a sub-domain or domain that requests that DMARC receivers send you statistics about messages that they see using that domain. A monitoring-mode record is a DMARC TXT record that has its policy set to none (p=none). Many companies publish a DMARC TXT record with p=none because they are unsure about how much email they may lose by publishing a more restrictive DMARC policy.
+    从请求 DMARC 接收器向你发送关于使用该域时看到的消息的统计信息的子域或域的简单的监视模式记录开始。监视模式记录是将策略设置为无 (p=none) 的 DMARC TXT 记录。许多公司发布了 p=none 的 DMARC TXT 记录，因为他们不确定通过发布更严格的 DMARC 策略可能会丢失多少电子邮件。
 
-    You can do this even before you've implemented SPF or DKIM in your messaging infrastructure. However, you won't be able to effectively quarantine or reject mail by using DMARC until you also implement SPF and DKIM. As you introduce SPF and DKIM, the reports generated through DMARC will provide the numbers and sources of messages that pass these checks, and those that don't. You can easily see how much of your legitimate traffic is or isn't covered by them, and troubleshoot any problems. You'll also begin to see how many fraudulent messages are being sent, and from where.
+    即使在邮件传递基础结构中实现 SPF 或 DKIM 之前，你也可以这样做。但是，你将无法使用 DMARC 有效地隔离或拒绝邮件，直到你也实现了 SPF 和 DKIM 之后才可以。当引入 SPF 和 DKIM 时，通过 DMARC 生成的报告将提供通过这些检查和未通过检查的邮件的数量和源。你可以轻松地查看这些邮件占用了多少合法通信量，并解决所有问题。你还将开始看到即将发送的欺诈邮件的数量以及发送地点。
 
 2. 请求外部邮件系统隔离未通过 DMARC 的邮件
 
-    When you believe that all or most of your legitimate traffic is protected by SPF and DKIM, and you understand the impact of implementing DMARC, you can implement a quarantine policy. A quarantine policy is a DMARC TXT record that has its policy set to quarantine (p=quarantine). By doing this, you are asking DMARC receivers to put messages from your domain that fail DMARC into the local equivalent of a spam folder instead of your customers' inboxes.
+    当你相信全部或大部分合法通信受 SPF 和 DKIM 保护，并且了解实现 DMARC 的影响时，你可以实施隔离策略。隔离策略是策略设置为隔离 (p=quarantine) 的 DMARC TXT 记录。通过执行此操作，你将要求 DMARC 接收器将来自你的域的未通过 DMARC 的邮件放入相当于垃圾邮件文件夹的本地位置，而不是客户的收件箱。
 
 3. 请求外部邮件系统不接受未通过 DMARC 的邮件
 
-    The final step is implementing a reject policy. A reject policy is a DMARC TXT record that has its policy set to reject (p=reject). When you do this, you're asking DMARC receivers not to accept messages that fail the DMARC checks.
+    最后一步是实施拒绝策略。拒绝策略是策略设置为拒绝 (p=reject) 的 DMARC TXT 记录。执行此操作时，你将要求 DMARC 接收器不接受未通过 DMARC 检查的邮件。
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 如何处理未通过 DMARC 的出站电子邮件
 
 如果邮件是从 Microsoft 365 出站的而且未通过 DMARC，并且你已将策略设置为 p=quarantine 或 p=reject，则该邮件通过[出站邮件的高风险传递池](high-risk-delivery-pool-for-outbound-messages.md)进行路由。 出站电子邮件不存在任何替代方法。
 
-If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 365 can spoof your domain because messages will not be able to pass SPF or DKIM for your domain when relaying a message outbound through the service. However, if you do publish a DMARC reject policy but don't have all of your email authenticated through Microsoft 365, some of it may be marked as spam for inbound email (as described above), or it will be rejected if you do not publish SPF and try to relay it outbound through the service. This happens, for example, if you forget to include some of the IP addresses for servers and apps that send mail on behalf of your domain when you form your DMARC TXT record.
+如果你发布 DMARC 拒绝策略 (p=reject)，则 Microsoft 365 中的任何其他客户都无法欺骗你的域，因为通过服务中继出站邮件时邮件将无法通过你的域的 SPF 或 DKIM。不过，如果你发布 DMARC 拒绝策略，但并非所有电子邮件均通过 Microsoft 365 进行了验证，部分可能会被标记为入站电子邮件的垃圾邮件（如上所述），或者如果你不发布 SPF 且尝试通过服务将其中继到出站，邮件将被拒绝。例如，当你生成 DMARC TXT 记录时，如果你忘记包括代表你的域发送邮件的服务器和应用的某些 IP 地址，就会出现这种情况。
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Microsoft 365 如何处理未通过 DMARC 的入站电子邮件
 
@@ -231,7 +231,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ## <a name="for-more-information"></a>详细信息
 
-Want more information about DMARC? These resources can help.
+想要了解有关 DMARC 的详细信息？以下资源可以派上用场。
 
 - [反垃圾邮件邮件头](anti-spam-message-headers.md) 包括 Microsoft 365 执行 DMARC 检查时使用的语法和标头字段。
 

@@ -19,6 +19,7 @@ search.appverid:
 description: 了解适用于 SharePoint 和 OneDrive 的保留策略。
 ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
 ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/07/2020
 ms.locfileid: "45049880"
@@ -74,9 +75,9 @@ ms.locfileid: "45049880"
   
 “仅保留”策略将保留 SharePoint 网站集或 OneDrive 帐户中文档的所有版本。 当受保留或仅保留策略约束的文档被首次编辑时，都会将原始文档的一个版本复制到保存保留库中。 当受保留或仅保留策略约束的文档遭删除时，如果版本控制已启用，所有版本都会复制到保存保留库中。 在保存保留库中，文档的每个版本都以单独项目的形式存在，并具有自己的保留期：
   
-- If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
+- 如果保留策略以内容创建时间为依据，每一版文档的到期日期都与原始文档相同。原始文档及其各版本全都在同一时间到期。
 
-- If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
+- 如果保留策略以内容的上次修改时间为依据，每一版文档都有自己的到期时间（依据为修改原始文档以创建相应版本的时间）。原始文档及其各版本的到期互不相干。
 
 > [!NOTE]
 > 电子数据展示工具无法用于搜索 SharePoint 和 OneDrive 文档的保留版本。

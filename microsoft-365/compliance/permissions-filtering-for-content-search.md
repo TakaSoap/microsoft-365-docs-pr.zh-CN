@@ -80,7 +80,7 @@ ms.locfileid: "44818771"
   
 如果收到错误，则查看以下要求：
   
-- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
+- 常见问题是密码错误。重新运行上述两个步骤，并仔细查看在步骤 1 中输入的用户名和密码。
     
 - 验证您的帐户是否有权访问安全 & 合规性中心。 有关详细信息，请参阅[为用户提供对安全 & 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
@@ -150,7 +150,7 @@ New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
+此示例允许“美国发现管理员”角色组的成员仅对美国的邮箱执行所有内容搜索操作。此筛选器包含 ISO 3166-1 标准的美国三位数字国家/地区代码。
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

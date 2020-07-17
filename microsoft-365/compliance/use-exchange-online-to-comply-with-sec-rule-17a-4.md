@@ -29,13 +29,13 @@ ms.locfileid: "45127299"
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-If your organization needs to comply with regulatory standards for retaining your data, the Security & Compliance Center provides features to manage the lifecycle of your data in Exchange Online. This includes the ability to retain, audit, search, and export your data. These capabilities are sufficient to meet the needs of most organizations.
+如果组织需要遵守保留数据的相关法规标准，安全与合规中心将提供一些功能来管理 Exchange Online 中数据的生命周期。包括保留、审核、搜索和导出数据的功能。这些功能足以满足大多数组织的需求。
 
-However, some organizations in highly regulated industries are subject to more stringent regulatory requirements. For example, financial institutions such as banks or broker dealers are subject to Rule 17a-4 issued by the Securities and Exchange Commission (SEC). Rule 17a-4 has specific requirements for electronic data storage, including many aspects of record management, such as the duration, format, quality, availability, and accountability of records retention.
+然而，高度监管行业中的某些组织会受到更严格的法规要求。例如，银行或经纪交易商等金融机构必须遵守美国证券交易委员会 (SEC) 颁布的规则 17a-4。这条规则对电子数据存储有特定要求，包括记录管理的许多方面，如记录保留的持续时间、格式、质量、可用性和责任。
 
 为了帮助这些组织更好地了解如何利用安全与合规中心来履行其对 Exchange Online 的监管义务，特别是与规则 17a-4 要求相关的监管义务，我们已与 Cohasset Associates 合作发布了一份评估报告。
 
-Cohasset validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. We targeted this set of rules because they represent the most prescriptive guidance globally for records retention for financial institutions.
+Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行配置时，它们将符合 CFTC 规则 1.31(c)-(d)、FINRA 规则 4511 和 SEC 规则 17a-4 的相关存储要求。我们以这组规则为准绳，因为它们代表了针对金融机构保留记录的最为规范的全球性指导。
 
 ## <a name="download-the-cohasset-assessment"></a>下载 Cohasset 评估报告
 
@@ -45,20 +45,20 @@ Cohasset validated that when Exchange Online and the Security & Compliance Cente
 
 ## <a name="this-assessment-is-specific-to-exchange-online"></a>此评估专门针对 Exchange Online
 
-Note that this assessment is specific to Exchange Online. The assessment does not include other Microsoft 365 services such as SharePoint Online or OneDrive for Business, although we are planning support for those services with respect to SEC 17a-4 in the future.
+请注意，此评估专门针对 Exchange Online。该评估不包括其他 Microsoft 365 服务，如 SharePoint Online 或 OneDrive for Business（尽管我们计划在未来就 SEC 17a-4 对这些服务提供支持）。
 
-It's important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
+请务必知晓 Skype for Business 和 Teams 也会在 Exchange Online 中存储数据。因此，评估涵盖了 Skype for Business 和频道的消息，以及 Teams 的聊天消息。
 
 ## <a name="using-preservation-lock-is-key-to-the-recommended-configuration"></a>使用保留锁定是推荐配置的关键
 
-Highly regulated industries are often required to store electronic communications to meet the WORM (write once, read many) requirement. The WORM requirement dictates a storage solution in which a record must be:
+高度监管行业通常需要存储电子通信来满足 WORM（一次写入，多次读取）要求。WORM 要求规定了一个存储解决方案，其中的记录必须：
 
 - 在规定的保留期内保留，不能缩短，只能增加。
 - 不可变，即在要求的保留期间，不能覆盖、删除或更改记录。
 
-In Exchange Online, when a [retention policy](retention.md) is applied to a user's mailbox, all the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention policies can help ensure that an organization retains electronic communications, but those policies can be modified.
+在 Exchange Online 中，当将[保留策略](retention.md)应用于用户邮箱时，用户的所有内容都将根据策略标准进行保留。实际上，如果用户试图删除或修改电子邮件，更改前的电子邮件副本将保留在用户邮箱中的安全、隐藏位置。保留策略可帮助确保组织保留电子通信，但可以修改这些策略。
 
-By placing a Preservation Lock on a retention policy, an organization ensures that the policy cannot be modified. In fact, after a Preservation Lock is applied to a retention policy, the following actions are restricted:
+通过对保留策略实施保留锁定，组织可确保策略不会遭到修改。实际上，在将保留锁定应用于保留策略后，以下操作将受到限制：
 
 - 策略的保留期限只能增加，不能缩短。
 - 可以将用户添加到策略，但不能删除用户。

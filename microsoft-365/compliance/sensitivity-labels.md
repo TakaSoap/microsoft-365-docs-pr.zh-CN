@@ -31,7 +31,7 @@ ms.locfileid: "44936791"
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
 通过 Microsoft 信息保护框架中的灵敏度标签，可以对组织的数据进行分类和保护，同时确保用户工作效率及其协作能力不受影响。
 
@@ -48,7 +48,7 @@ To get their work done, people in your organization collaborate with others both
 
 借助敏感度标签，你可以：
   
-- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
+- **强制执行保护设置，如对已标记内容设置加密或水印。** 例如，用户可以向文档或电子邮件应用“机密”标签，然后此标签便能加密相应内容，并应用“机密”水印。
 
 - **跨不同平台和设备保护 Office 应用中的内容。** 有关受支持的应用的列表，请参阅[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)。
 
@@ -64,7 +64,7 @@ To get their work done, people in your organization collaborate with others both
 
 为文档或电子邮件分配敏感度标签时，它就像是应用于以下内容的标记：
 
-- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
+- **可自定义**：可以为组织中不同级别的敏感内容创建类别，如“个人”、“公开”、“常规”、“机密”和“高度机密”。
 
 - **明文。** 由于该标签以明文的方式存储在内容的元数据中，因此第三方应用和服务可以读取它，然后根据需要应用其自己的保护操作。
 
@@ -72,7 +72,7 @@ To get their work done, people in your organization collaborate with others both
 
 在 Office 应用中，敏感度标签就像是电子邮件或文档上向用户显示的标记。
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+每个内容项都可以应用有一个敏感度标签。一个内容项可以同时应用有一个敏感度标签和一个[保留标签](labels.md)。
 
 > [!div class="mx-imgBorder"]
 > ![应用于电子邮件的敏感度标签](../media/Sensitivity-label-on-email.png)

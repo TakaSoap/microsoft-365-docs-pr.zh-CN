@@ -32,7 +32,7 @@ ms.locfileid: "44779877"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>创建组织范围的签名和免责声明
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ 可向发送到组织或从组织发出的电子邮件添加电子邮件签名、法律免责声明或公开声明。可将其设置为应用于所有待收和待发邮件，如下所示。也可将其应用到某些邮件，例如包含特定字词或文本模式的邮件。
 
  观看有关创建公司范围的电子邮件签名的简短视频。 <br><br>
   
@@ -89,7 +89,7 @@ ms.locfileid: "44779877"
 
 9. 选择 "**选择一个**"，然后选择 "**包装**为回退" 选项。 然后选择" **确定**"。 这意味着如果由于加密或其他邮件设置而无法添加免责声明，免责声明将封装在邮件信封中。
     
-10. Leave **Audit this rule with severity level** selected. Then choose **Low**, **Medium**, or **High** to be used in the message log. 
+10. 保留" **用安全性级别审核此规则**"处于选中状态。然后选择要在邮件日志中使用的" **低**"、" **中**"或" **高**"。 
     
 11. 选择" **强制使用**"，立即打开免责声明，除非需要首先进行测试。 
     

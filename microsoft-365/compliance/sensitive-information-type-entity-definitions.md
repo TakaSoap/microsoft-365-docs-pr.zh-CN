@@ -6776,7 +6776,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 1-7 个包含 4 个字母或数字的组（可以使用空格进行分隔）
 - 1-3 个字母或数字
 
-The format for each country is slightly different. The IBAN sensitive information type covers these 60 countries:
+每个国家/地区的格式稍有不同。IBAN 敏感信息类型涵盖这 60 个国家/地区：
 
 ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 

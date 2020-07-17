@@ -26,11 +26,11 @@ ms.locfileid: "44819282"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用免费的 Azure Active Directory 订阅
 
-If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
+如果组织已购买 Microsoft 365、Microsoft Dynamics CRM Online、企业移动性套件或其他 Microsoft 服务的付费订阅，表明你已免费订阅 Microsoft Azure Active Directory。你和其他管理员可使用 Azure AD 创建并管理用户和组帐户。要使用 Azure AD，只需转到 Azure 门户，并登录到你的帐户即可。
 
 ## <a name="open-a-private-browsing-session"></a>打开专用浏览会话
 
-Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
+使用专用浏览会话（而不是常规会话）来访问 Azure 门户（下面的第 1 步），这样可以防止将当前登录时使用的凭据传递到 Azure。若要打开专用浏览会话：
 
 - 在 Microsoft Edge（旧版）、Internet Explorer 或 Mozilla FireFox 中，按下 `CTRL+SHIFT+P`。
 

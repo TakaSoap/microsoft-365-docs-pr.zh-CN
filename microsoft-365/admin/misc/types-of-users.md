@@ -46,7 +46,7 @@ ms.locfileid: "45022199"
 |全局管理员  <br/> |这些用户有权访问所有管理功能。 注册 Microsoft 365 的人将成为全局管理员，但如果你愿意，可以使用多个。 全局管理员是唯一能够向他人分配管理员角色的管理员。  <br/> |
 |密码管理员  <br/> |这些用户可以代表你重置密码、管理服务请求和监视服务运行状况。  <br/> |
 |服务管理员  <br/> |这些用户可以代表你管理服务请求和监视服务运行状况。  <br/> |
-|用户管理管理员  <br/> |These users can reset passwords, monitor service health, manage user accounts, user groups, and service requests. They can't delete a global admin, create other admin roles, or reset passwords for billing, global, and service admins.  <br/> |
+|用户管理管理员  <br/> |这些用户可以重置密码，监视服务运行状况以及管理用户帐户、用户组和服务请求。他们无法删除全局管理员，无法创建其他管理员角色或者为帐单、全局和服务管理员重置密码。  <br/> |
 |添加自定义筛选器  <br/> |使用此选项，可以创建自定义筛选器以仅查看特定类型的首选项，例如，哪些用户位于 Microsoft 365 Apps for business plan 中。 [快速帮助：筛选用户](https://docs.microsoft.com/microsoft-365/admin/add-users/create-edit-or-delete-a-custom-user-view)。  <br/> |
    
 ## <a name="related-articles"></a>相关文章

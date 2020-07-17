@@ -43,7 +43,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 1. 在 Web 浏览器中，请转至 [https://sender.office.com](https://sender.office.com)。
 
-2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
+2. 按照页面上的说明执行操作。请确保您使用收到错误消息的电子邮件地址，以及错误消息中指定的 IP 地址。每次访问只能输入一个电子邮件地址和一个 IP 地址。
 
 3. Click **Submit**.
 

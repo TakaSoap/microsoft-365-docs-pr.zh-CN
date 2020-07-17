@@ -27,7 +27,7 @@ ms.locfileid: "44818891"
 在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。 有关搜索和标记的简短演示，请参阅[使用高级电子数据展示视频管理数据](https://www.youtube.com/watch?v=VaPYL3DHP6I)。
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="search-the-documents-in-your-case"></a>在你的案例中搜索文档
 

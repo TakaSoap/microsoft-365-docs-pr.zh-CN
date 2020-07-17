@@ -60,12 +60,12 @@ ms.locfileid: "44780141"
 
 |**Field**  |**说明**  |
 |---------|---------|
-|名称  <br/>   | 此处输入的名称是用户将在以下页面中看到的名称：  <br/>  Sign-in page: If your users have set up other Microsoft accounts with their business or school email address, they may see the organization name on the sign-in page. This helps them distinguish between their work or school account and their other accounts, so they can identify which one to use when they sign in.  <br/>  组织配置文件链接和页面：指向您所在组织的配置文件的链接会显示组织名称。  <br/>  Yammer 导航：在 Yammer 中，左侧导航使用组织名称作为 "家庭 Yammer" 网络的名称。  <br/> OneDrive 同步客户端：组织名称显示在 Windows 上的 "文件资源管理器" 和 "Mac 上的查找工具"、"文件路径"、"OneDrive 活动中心"、"onedrive 云" 图标的工具提示和 "OneDrive 设置" 窗口中。 目前，更新组织名称不会为配置的客户端更新它。 <br/> MS 团队：团队中的组织切换器显示组织名称 <br/>  |
+|名称  <br/>   | 此处输入的名称是用户将在以下页面中看到的名称：  <br/>  登录页面：如果用户已经使用其企业或学校电子邮件地址设置了其他 Microsoft 帐户，则他们可能会在登录页面上看到组织名称。这可以帮助用户区分其 工作或学校帐户 和其他帐户，以便他们可以确定在登录时要使用的帐户。  <br/>  组织配置文件链接和页面：指向您所在组织的配置文件的链接会显示组织名称。  <br/>  Yammer 导航：在 Yammer 中，左侧导航使用组织名称作为 "家庭 Yammer" 网络的名称。  <br/> OneDrive 同步客户端：组织名称显示在 Windows 上的 "文件资源管理器" 和 "Mac 上的查找工具"、"文件路径"、"OneDrive 活动中心"、"onedrive 云" 图标的工具提示和 "OneDrive 设置" 窗口中。 目前，更新组织名称不会为配置的客户端更新它。 <br/> MS 团队：团队中的组织切换器显示组织名称 <br/>  |
 |地址、城市、省/自治区/直辖市、邮政编码  <br/>     | 此处输入的地址是您在帐单中看到的内容，在 "销售人" 中，您的帐单上的 "销售地址" 与您在您的配置文件页面上的组织地址相同（请参阅[了解 Microsoft 365 for business 的帐单或发票](../../commerce/billing-and-payments/understand-your-invoice2.md)）。  <br/>        |
-|"国家或地区"  <br/>    | This is the country or region where the company is headquartered. The selected country or region determines which services are available to you, the taxes and billing currency for your country or region, and the location of the data center closest to you (see [Microsoft Office license restrictions](https://office.microsoft.com/redir/FX103037529)).<br/>注意：选择此选项后，将无法更改国家或地区。 如果要更改选定内容，需取消订阅并重新注册。 有关此过程的帮助，请[与支持人员联系](../contact-support-for-business-products.md)。        |
-|电话  <br/>     | This is the primary number for your company. It's usually the number of your company headquarters.  <br/>        |
+|"国家或地区"  <br/>    | 这是公司总部所在的国家或地区。所选的国家或地区将决定你可以使用的服务、你所在国家或地区的税务和支付货币，以及最接近你的数据中心的位置（请参阅 [Microsoft Office 许可限制](https://office.microsoft.com/redir/FX103037529)）。  <br/>注意：选择此选项后，将无法更改国家或地区。 如果要更改选定内容，需取消订阅并重新注册。 有关此过程的帮助，请[与支持人员联系](../contact-support-for-business-products.md)。        |
+|电话  <br/>     | 这是您的公司主要号码。它通常是您的公司总部的号码。  <br/>        |
 |技术联系人  <br/> |这是管理 Microsoft 365 订阅的主要技术人员的电子邮件地址。 这是将收到有关 Microsoft 365 服务状态的通信的人员。  <br/> |
-|首选语言  <br/> |The preferred language determines the language for all communications that are sent from Microsoft to your organization. When you sign up, this setting determines the language used by SharePoint Online, which your users see on your team site. If you change the language preference setting after you sign up, all future communications are sent in the most recent language selected.  <br/> 注意： SharePoint Online 使用的语言无法更改。           |
+|首选语言  <br/> |首选语言将决定从 Microsoft 发送给你的组织的所有通信的语言。注册时，此设置决定 SharePoint Online 使用的语言，即用户将在团队网站上看见的语言。如果注册后要更改语言首选项设置，则以后的所有通信将使用选择的最新语言发送。    <br/> 注意： SharePoint Online 使用的语言无法更改。           |
 
 ## <a name="change-your-alternate-email-address"></a>更改备用电子邮件地址
 

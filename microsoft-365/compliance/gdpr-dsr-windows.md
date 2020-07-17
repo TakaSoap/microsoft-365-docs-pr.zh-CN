@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
 ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "45023588"
@@ -31,7 +32,7 @@ ms.locfileid: "45023588"
 
 同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。 CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[加州消费者隐私法案常见问题解答](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
-The guide discusses how to use Microsoft products, services and administrative tools to help our controller customers find and act on personal data to respond to DSRs. Specifically, this includes how to find, access, and act on personal data that reside in the Microsoft cloud. Here’s a quick overview of the processes outlined in this guide: 
+本指南讨论了如何使用 Microsoft 产品、服务和管理工具以帮助我们的控制者客户查找和操作个人数据以响应 DSR。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述： 
 
 1. **访问** - 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。 
 2. **删除** - 永久删除驻留在 Microsoft 云中的个人数据。 

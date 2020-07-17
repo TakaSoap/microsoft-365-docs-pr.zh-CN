@@ -160,7 +160,7 @@ ms.locfileid: "45127339"
 1. 在您的本地计算机上打开命令提示符。
     
     > [!TIP]
-    > If you run the command prompt as an administrator (by selecting "Run as administrator" when you open it) error messages will be displayed in the command prompt window. This can help you troubleshoot problems running the WAImportExport.exe tool. 
+    > 如果您以管理员身份运行命令提示符（打开命令提示符时选择“以管理员身份运行”），将在命令提示符窗口中显示错误消息。这可以帮助您解决运行 WAImportExport.exe 工具时出现的问题。 
   
 2. 转到您在步骤 1 中安装 WAImportExport.exe 工具的目录。
     
@@ -176,7 +176,7 @@ ms.locfileid: "45127339"
     |:-----|:-----|:-----|
     | `/j:` <br/> |指定日志文件的名称。 此文件保存到 WAImportExport.exe 工具所在的同一文件夹中。 您寄送到 Microsoft 的每个硬盘驱动器必须有一个日志文件。 每次您运行 WAImportTool.exe 将 PST 文件复制到硬盘驱动器时，相关信息将追加到该驱动器的日志文件中。  <br/> Microsoft 数据中心人员使用日记文件中的信息将硬驱与您在步骤4中创建的导入作业相关联，并将 PST 文件上载到 Microsoft 云中的 Azure 存储区域。  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |连接到本地计算机时，请指定硬盘驱动器的驱动器号。  <br/> | `/t:h` <br/> |
-    | `/id:` <br/> |Specifies the name of the copy session. A session is defined as each time you run the WAImportExport.exe tool to copy files to the hard drive. The PST files are copied to a folder named with the session name specified by this parameter.  <br/> | `/id:driveship1` <br/> |
+    | `/id:` <br/> |指定复制会话的名称。会话定义为每次运行 WAImportExport.exe 工具将文件复制到硬盘驱动器。PST 文件复制到使用此参数所指定的会话名称命名的文件夹中。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |指定组织中包含在会话期间将复制的 PST 文件的源目录。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
     | `/dstdir:` <br/> |指定将在其中上载 Pst 的 Microsoft 云中 Azure 存储区域中的目标目录。 必须使用值 `ingestiondata/` 。 请务必用双引号 (" ") 引住此参数的值。  <br/> （可选）还可以向此参数的值添加额外的文件路径。 例如，您可以使用硬驱（转换为 URL 格式）的源目录的文件路径（在参数中指定） `/srcdir:` 。 例如，"" `\\FILESERVER01\PSTs` 更改为 "" `FILESERVER01/PSTs` 。 在这种情况下，您仍必须包含 `ingestiondata` 在文件路径中。 因此，在此示例中，参数的值 `/dstdir:` 为 `"ingestiondata/FILESERVER01/PSTs"` 。  <br/> 添加其他文件路径的原因之一是如果您有具有相同文件名的 PST 文件。  <br/> > [!NOTE]> 如果包含可选路径名，则将 PST 文件上传到 Azure 存储区域之后的命名空间包括 PST 文件的路径名和名称;例如， `FILESERVER01/PSTs/annb.pst` 。 如果不包含 pathname，则命名空间仅为 PST 文件名;例如 `annb.pst` 。           | `/dstdir:"ingestiondata/"` <br/> 或  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |指定您在步骤 1 中获得的存储帐户密钥。 请务必用双引号 (" ") 引住此参数的值。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
@@ -190,7 +190,7 @@ ms.locfileid: "45127339"
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
-    After you run the command, status messages are displayed that show the progress of copying the PST files to the hard drive. A final status message shows the total number of files that were successfully copied.
+    运行该命令后，显示的状态消息会显示将 PST 文件复制到硬盘驱动器的进度。最终状态消息显示已成功复制的文件总数。 
     
 4. 以后每次运行 WAImportExport.ext 工具将 PST 文件复制到同一个硬盘驱动器时运行此命令。
 
@@ -210,7 +210,7 @@ ms.locfileid: "45127339"
   
 1. [下载 PST 导入映射文件的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
     
-2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
+2. 打开或将 CSV 文件保存到您的本地计算机。下面的示例显示已完成的 PST 导入映射文件（在记事本中打开）。使用 Microsoft Excel 编辑 CSV 文件变得容易得多。
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
@@ -330,7 +330,7 @@ ms.locfileid: "45127339"
     
 - 将硬盘驱动器寄送到您在步骤 4 中创建导入作业时所显示的 Microsoft 位置的地址。 请务必将“Office 365 导入服务”包括在收货人地址中。
     
-- After you ship the hard drive, be sure to write down the name of the delivery carrier and the tracking number. You'll provide these in the next step.
+- 寄送硬盘驱动器之后，请务必记下交付承运人的名称和跟踪号。您将在下一步中提供这些信息。
     
 ### <a name="enter-the-tracking-number-and-other-shipping-information"></a>输入跟踪号和其他寄送信息
 
@@ -468,7 +468,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
   - 保护您的组织不受敏感信息的[数据丢失](data-loss-prevention-policies.md)。 
     
-- Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
+- 以下是安全存储帐户密钥和 BitLocker 加密密钥的示例。此示例还包含 WAImportExport.exe 命令的语法，运行此命令可将 PST 文件复制到硬盘驱动器。一定要采取预防措施来保护这些文件，就像保护密码或其他与安全相关的信息一样。
     
 
     ```text

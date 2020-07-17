@@ -339,7 +339,7 @@ Security & 合规性中心中的邮件跟踪在 Exchange 管理中心（EAC）�
 |`SFV=BLK`|跳过筛选但阻止邮件，因为它是由已阻止发件人发送。|
 |`SFV=SKS`|在反垃圾邮件筛选处理之前，邮件被标记为垃圾邮件。 这包括符合以下邮件流程规则条件（也称为传输规则）的邮件：自动将邮件标记为垃圾邮件并规避其他所有筛选。|
 |`SCL=<number>`|有关不同的 SCL 值及其含义的详细信息，请参阅[垃圾邮件可信度](spam-confidence-levels.md)。|
-|`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
+|`PCL=<number>`|邮件的仿冒可能性等级 (PCL) 值。可按照[垃圾邮件可信度](spam-confidence-levels.md)中介绍 SCL 值的方式对这些值做出解释。  |
 |`DI=SB`|已阻止邮件发件人。|
 |`DI=SQ`|邮件已隔离。|
 |`DI=SD`|邮件已删除。|

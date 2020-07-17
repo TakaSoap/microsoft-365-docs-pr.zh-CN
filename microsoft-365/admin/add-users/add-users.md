@@ -78,7 +78,7 @@ ms.locfileid: "45015883"
     - **联系信息** 展开以填写移动电话号码、地址等。
     - **密码**使用自动生成的密码或展开以指定用户的强密码。 他们必须在90天后更改密码。 也可以选择 **允许此用户在首次登录时更改其密码**。
     - **角色** 如果需要使此用户成为管理员，请展开。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **产品许可证** 展开此部分，并选择相应的许可证。如果没有可用的许可证，仍然可以添加用户并购买更多许可证。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "45015883"
     - **联系信息** 展开以填写移动电话号码、地址等。
     - **密码**使用自动生成的密码或展开以指定用户的强密码。 他们必须在90天后更改密码。 也可以选择 **允许此用户在首次登录时更改其密码**。
     - **角色** 如果需要使此用户成为管理员，请展开。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **产品许可证** 展开此部分，并选择相应的许可证。如果没有可用的许可证，仍然可以添加用户并购买更多许可证。
 
 ::: moniker-end
 

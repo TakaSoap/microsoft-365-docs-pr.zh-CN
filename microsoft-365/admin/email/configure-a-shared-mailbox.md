@@ -118,7 +118,7 @@ ms.locfileid: "44739202"
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>使所有人都能看到已发送的电子邮件（答复邮件）
 
-By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
+默认情况下，发送自共享邮箱的邮件不会保存到共享邮箱的"已发送邮件"文件夹中。相反，它们会保存到发件人的"已发送邮件"文件夹中。
 
 如果要允许所有人都能看到已发送的电子邮件，请在管理中心中编辑共享邮箱设置，并选择 "**已发送邮件**" " \> **编辑**"。
 

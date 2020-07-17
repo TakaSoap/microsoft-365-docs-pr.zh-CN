@@ -39,7 +39,7 @@ ms.locfileid: "44780585"
   
 - 通过任何 Microsoft 365 商业版、教育版或非盈利的计划**免费**为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。
 
-- It uses Azure. You'll automatically get this feature in Azure for **free** when you do these steps. It won't cost you anything to turn on self-service password reset if you don't use other Azure features.
+- 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。
 
 - **如果使用的是本地 Active Directory**，则不适用以上两个点。 相反，您可以对此进行设置，但**需要付费的 AZURE AD Premium 订阅**。
 

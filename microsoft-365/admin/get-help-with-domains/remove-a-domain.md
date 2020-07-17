@@ -58,7 +58,7 @@ ms.locfileid: "45079757"
 
 5. 在 "**更改域**" 窗格中，选择其他域。
 
-You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
+如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
 
 ::: moniker-end
 
@@ -74,7 +74,7 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 5. 在 "**编辑域**" 窗格中，选择其他域。
   
-You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
+如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
 
 ::: moniker-end
 
@@ -90,7 +90,7 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 5. 在 "**编辑域**" 窗格中，选择其他域。
   
-You'll need to do this for yourself, too, if you're on the domain that you want to remove. When you edit the domain for your account, you'll have to log out and log back in using the new domain you chose to continue.
+如果位于要删除的域中，则也需要自行执行此过程。编辑自己帐户的域时，必须先注销，然后使用选择继续的新域重新登录。
 
 ::: moniker-end
 
@@ -212,7 +212,7 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 
 如果在许多地方（如安全组、通讯组列表、用户和 Microsoft 365 组）中未引用域，则 Microsoft 365 可能只需5分钟即可删除域。 如果存在众多使用该域的引用，则删除域可能需要数小时（一天）。
   
-If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+如果有数百或数千用户，使用 PowerShell 查询所有用户，然后将其移至另一个域。否则，可能大量用户将在 UI 中丢失，然后当你要删除域时，将无法删除而且找不到原因。有关详细信息，请参阅 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0)。若要设置默认域，请使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0)。
   
 ## <a name="still-need-help"></a>仍然需要帮助？
 
@@ -221,7 +221,7 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 > [!NOTE]
 > 不能从你的帐户中删除 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 域。
   
-Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
+仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../contact-support-for-business-products.md)，让我们打理一切！
   
 ::: moniker-end
 

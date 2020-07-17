@@ -128,7 +128,7 @@ Office 加载项可帮助您对文档进行个性化设置，并简化访问 web
 
 部署加载项后，最终用户可以开始在 Office 应用程序中使用它 (请参阅[开始使用 Office 加载项](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)) 。 外接程序将显示在外接程序支持的所有平台上。
   
-If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
+如果加载项支持加载项命令，则 Office 功能区上会显示命令。在以下示例中，显示" **引文** "加载项的" **搜索引文** "命令。 
 
 ![带有搜索引文的 Office 功能区](../../media/553b0c0a-65e9-4746-b3b0-8c1b81715a86.png)
   

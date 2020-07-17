@@ -62,7 +62,7 @@ ms.locfileid: "45015955"
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非用户邮箱的许可证
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+不需要为资源邮箱、会议室邮箱和共享邮箱分配许可证，除非这些邮箱超过了其 50 千兆字节 (GB) 的存储配额。有关非用户邮箱的详细信息，请参阅以下文章：
   
 - [创建共享邮箱](../../admin/email/create-a-shared-mailbox.md)
 - [从共享邮箱删除许可证](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>谁可以分配许可证？
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+不同类型的管理员可以根据其角色以不同方式处理许可证。下表列出了最常见的选项。有关管理员角色和特权的完整列表，请参阅[关于管理员角色](../../admin/add-users/about-admin-roles.md)。
   
 |**管理员角色**|**分配许可证**|**取消分配许可证**|**购买更多许可证**|**删除帐户**|
 |:-----|:-----|:-----|:-----|:-----|

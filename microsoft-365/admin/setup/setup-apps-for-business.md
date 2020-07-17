@@ -66,7 +66,7 @@ ms.locfileid: "44778885"
 
 ## <a name="install-office"></a>安装 Office
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+在为企业中的其他人创建帐户之后，你和你的团队成员将能够安装 Office 的完整桌面版本（Word、Excel、Outlook 等）。每个人可在最多 5 台电脑或 Mac 上安装 Office。
   
 ::: moniker range="o365-worldwide"
 
@@ -100,9 +100,9 @@ Once you've created accounts for other people in your business, you and your tea
   
 ## <a name="store-files-online"></a>联机存储文件
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft 轻松实现联机存储文件。若要了解最适合企业的存储位置，请参阅 [Office 365 中可存储文件的位置](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+为用户创建 Microsoft 帐户时，每个用户都会自动获得 **OneDrive** 云存储位置。借助 OneDrive，可以跨计算机、手机和平板电脑访问文件。
   
 1. 在计算机上使用文件资源管理器打开 OneDrive。 或者在 [Office 365](https://www.office.com) 中，通过应用启动器打开“**OneDrive**”。
 

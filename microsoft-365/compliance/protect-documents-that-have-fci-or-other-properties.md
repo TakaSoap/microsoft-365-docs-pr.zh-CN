@@ -34,7 +34,7 @@ ms.locfileid: "44818717"
   
 例如，您的组织可能会使用 Windows Server FCI 来识别包含个人身份信息 (PII) 的文档（如社会保险号），然后通过基于文档中找到的 PII 的类型和出现次数将“个人身份信息”**** 属性设置为“高”****、“中等”****、“低”****、“公开”**** 或“非 PII”**** 来对文档进行分类。 在 Microsoft 365 中，可以创建一个 DLP 策略，用于标识将该属性设置为特定值（如 "**高**" 和 "**中**"）的文档，然后执行诸如阻止对这些文件的访问等操作。 如果将属性设置为“低”****，则同一个策略可以使用其他规则来执行不同的操作，如发送电子邮件通知。 通过这种方式，DLP 与 Windows Server FCI 集成，并可帮助保护从基于 Windows Server 的文件服务器上载或共享到 Microsoft 365 的 Office 文档。
   
-A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy — for example, if you want a rule that blocks access to the document for external users when the **Customer** field contains **Contoso**.
+DLP 策略只需查找特定的属性名称/值对。可以使用任何文档属性，只要该属性具有 SharePoint 搜索的相应托管属性。例如，SharePoint 网站集可能使用名为“行程报告”**** 的内容类型，包含名为“客户”**** 的必填字段。只要有人创建行程报告，就必须输入客户名称。此属性名称/值对还可在 DLP 策略中使用 — 例如，当“客户”**** 字段包含“Contoso”**** 时，您希望有一个规则可以阻止外部用户访问此文档。
   
 请注意，如果要将 DLP 策略应用于具有特定 Microsoft 365 标签的内容，则不应遵循此处的步骤。 而是了解如何[使用保留标签作为 DLP 策略中的条件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
@@ -42,7 +42,7 @@ A DLP policy simply looks for a specific property name/value pair. Any document 
 
 您需要在 SharePoint 管理中心中创建托管属性，才能在 DLP 策略中使用 Windows Server FCI 属性或其他属性。 下面介绍了原因。
   
-In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
+示例
   
 这一点很重要，因为 DLP 使用搜索爬网程序来标识和分类网站上的敏感信息，然后将这些敏感信息存储在搜索索引的安全部分中。 当您将文档上载到 Office 365 时，SharePoint 会自动创建基于文档属性的已爬网属性。 但是，要在 DLP 策略中使用 FCI 或其他属性，该已爬网属性需要映射到托管属性，以便将包含该属性的内容保留在索引中。
   
@@ -66,7 +66,7 @@ In SharePoint Online and OneDrive for Business, the search index is built up by 
     
     ![突出显示“新建托管属性”按钮的“托管属性”页面](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
-5. Enter a name and description for the property. This name is what will appear in your DLP policies.
+5. 输入属性的名称和说明。此名称将显示在您的 DLP 策略中。
     
 6. 对于“类型”****，选择“文本”****。 
     
@@ -128,7 +128,7 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
 
 执行前面各节中的步骤将创建一个 DLP 策略，该策略将使用该属性快速检测内容，但前提是该内容是新上传的（以便对内容编制索引），或者该内容是旧的，但只是进行了编辑（以便对内容重新编制索引）。
   
-To detect content with that property everywhere, you may want to manually request that your library, site, or site collection be re-indexed, so that the DLP policy is aware of all the content with that property. In SharePoint Online, content is automatically crawled based on a defined crawl schedule. The crawler picks up content that has changed since the last crawl and updates the index. If you need your DLP policy to protect content before the next scheduled crawl, you can take these steps.
+若要在任意位置检测包含该属性的内容，您可能需要手动请求对您的库、网站或网站集重新编制索引，以便 DLP 策略识别包含该属性的所有内容。在 SharePoint Online 中，内容基于已定义的爬网计划进行自动爬网。爬网程序选取自上次爬网以来已更改的内容，并更新索引。如果您需要在下一次计划的爬网之前，让您的 DLP 策略保护内容，您可以执行下列步骤。
   
 > [!CAUTION]
 > 重新编制网站的索引可能会导致搜索系统上的负荷大量增加。 除非您的方案确实需要，否则不要对网站重新编制索引。 

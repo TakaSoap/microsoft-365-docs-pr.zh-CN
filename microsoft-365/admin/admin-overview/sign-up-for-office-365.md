@@ -115,9 +115,9 @@ ms.locfileid: "44780513"
 
 - **您的订阅的地址和联系信息：**
 
-  - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
+  - 使用服务所在的 **国家/地区**。以后 **不能** 更改此内容，即使是在注册过程中也是如此；必须重新开始启动注册向导才能更改。
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
 
     > [!NOTE]
     > 您在此处输入的电子邮件地址与 Microsoft 365 电子邮件地址（您的登录名，如下所示）不同。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。

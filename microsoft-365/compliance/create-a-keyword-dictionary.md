@@ -31,7 +31,7 @@ ms.locfileid: "44818051"
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 
-The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
+词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
 1. 使用**安全 & 合规性中心**（ [https://protection.office.com](https://protection.office.com) ）或连接到**安全 &amp; 合规中心 PowerShell**。
     
@@ -69,11 +69,11 @@ The keywords for your dictionary could come from a variety of sources, most comm
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+通常，当您需要创建大型词典时，将使用来自文件或从其他源导出的列表中的关键字。在这种情况下，将在外部电子邮件中创建包含不恰当语言的列表的关键字词典。您必须先[连接到安全 &amp; 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
-2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
+2. 使用 Unicode 编码保存文本文件。在记事本中，依次单击“另存为”****\>“编码”****\>“Unicode”****。
     
 3. 运行下面的 cmdlet，以将文件读入变量中：
     
@@ -107,11 +107,11 @@ $dict = Get-DlpKeywordDictionary -Name "Diseases"
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-Now you'll remove some terms from the dictionary. Because the example dictionary has only a few keywords, you could just as easily skip to exporting the dictionary and editing it in Notepad, but dictionaries generally contain a large amount of text, so you'll first learn this way to edit them easily in PowerShell.
+现在从词典中删除一些关键字。由于示例词典中只有几个关键字，因此你可以很轻松地就跳到导出词典并在记事本中编辑关键字，但词典通常包含大量文本，所以必须先了解如何在 PowerShell 中轻松编辑关键字。
   
-In the last step, you saved the keywords to an array. There are several ways to [remove items from an array](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), but as a straightforward approach, you'll create an array of the terms you want to remove from the dictionary, and then copy only the dictionary terms to it that aren't in the list of terms to remove.
+你在最后一步中将关键字保存到了数组中。虽然[从数组中删除项](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))的方法有多种，但简单方法是创建要从词典中删除的关键字数组，再只将要删除的关键字列表中没有的词典关键字复制到其中。
   
-Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
+运行命令 `$terms`，以显示当前关键字列表。此命令的输出如下所示： 
   
 `aarskog's syndrome`
 `abandonment`
@@ -144,7 +144,7 @@ $termsToRemove = @('abandonment', 'ablatio')
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
-Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
+运行命令 `$updatedTerms`，以显示更新后的关键字列表。此命令的输出如下所示（指定关键字已遭删除）： 
   
 `aarskog's syndrome`
 `abasia`
@@ -172,13 +172,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
+现在只需打开文件，添加其他关键字，并使用 Unicode 编码 (UTF-16) 保存文件即可。现在将上传更新后的关键字，并就地更新词典。
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-Now the dictionary has been updated in place. Note that the  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
+至此，词典已就地更新。请注意，`Identity` 字段需要使用词典名称。如果还要使用 `set-` cmdlet 更改词典名称，只需将包含新词典名称的 `-Name` 参数添加到上面的命令中即可。 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>在自定义敏感信息类型和 DLP 策略中使用关键字词典
 
@@ -210,7 +210,7 @@ Get-DlpKeywordDictionary -Name "Diseases"
 `ObjectState       : Unchanged`
 
 
-Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
+将标识粘贴到自定义敏感信息类型的 XML 中，并上传它。此时，词典会出现在敏感信息类型列表中，你可以直接在策略中使用它，同时指定必须匹配多少个关键字。
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">

@@ -25,7 +25,7 @@ ms.locfileid: "44854278"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 解决方案
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+Contoso Corporation 是一家虚构但具代表性的全球大型制造集团，总部设在法国巴黎。Contoso 已部署了 Microsoft 365 企业版，并且制定了以下方面的主要设计决策和实现详情：网络、标识、Windows 10 企业版、Microsoft 365 企业应用版、移动设备管理、信息保护和安全性。 
 
 Contoso 针对 Microsoft 365 企业版的总体目标是通过使用云服务将员工、合作伙伴、数据和流程汇集在一起来加快他们的数字转型，从而创造客户价值并在数字优先的世界中保持竞争优势。
 

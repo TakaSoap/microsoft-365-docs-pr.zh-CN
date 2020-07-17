@@ -152,7 +152,7 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织可能需要
 |![图像 desc](../../media/next_steps.png)|后续步骤|<ul><li>传递和发布删除和还原策略，以通知用户他们可能会想到的行为 </li><li> 记录监视已删除组的组织需求。</li><li>计划在你的组部署过程中实施这些要求。</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>在"软删除"过程中，如果用户尝试访问该网站，将显示 403 禁止访问消息。 该过程结束后，如果用户尝试访问该网站，将显示 404 未找到消息。
 
 #### <a name="resources"></a>*资源*
 - [还原已删除的 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

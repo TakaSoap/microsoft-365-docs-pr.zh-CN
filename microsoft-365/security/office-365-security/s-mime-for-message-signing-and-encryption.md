@@ -46,7 +46,7 @@ S/MIME （安全/多用途 Internet 邮件扩展）是发送经过数字签名�
 
 3. 对于 Exchange Online 组织，使用相应版本的 Azure AD Connect 将用户证书从 AD DS 同步到 Azure Active Directory。 然后，这些证书将从 Azure Active Directory 同步到 Exchange Online 目录，并将在将邮件加密给收件人时使用。
 
-4. Set up a virtual certificate collection in order to validate S/MIME. This information is used by Outlook on the web when validating the signature of an email and ensuring that it was signed by a trusted certificate.
+4. 设置虚拟证书集合以验证 S/MIME。此信息供 Web 上的 Outlook 用于验证电子邮件的签名并确保它是由可信证书签名的。
 
 5. 将 Outlook 或 EAS 终结点设置为使用 S/MIME。
 

@@ -72,27 +72,27 @@ Cloud App Security 目前不支持保留标签，但你可以通过 Cloud App Se
 <tbody>
 <tr class="odd">
 <td align="left">保留标签。 示例：个人、公共、客户数据、人力资源数据、机密、高度机密</td>
-<td align="left"><p>Auto apply this label . . .</p>
+<td align="left"><p>自动将此标签 . . .</p>
 <p>客户数据</p>
-<p>. . . to documents that match these sensitive information types . . .</p>
+<p>. . . 应用于与这些敏感信息类型匹配的文档 . . .</p>
 <p>&lt;敏感信息类型示例列表&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>将此保护 . . .</p>
 <p>&lt;定义保护&gt;</p>
-<p>. . . to documents with this label . . .</p>
+<p>. . . 应用于带此标签的文档 . . .</p>
 <p>客户数据</p></td>
-<td align="left"><p>Alert when files with these attributes . . .</p>
+<td align="left"><p>在以下情况下发出警报：当批准的 SaaS 应用中的带这些属性的文件 . . .</p>
 <p>选择一个或多个属性：预定义的 PII 属性、Microsoft 365 敏感信息类型、敏感度标签 (AIP)、自定义表达式</p>
 <p>。 。 。 （组织外部共享的任何批准 SaaS 应用中）</p><p>注释：保留标签当前在 Cloud App Security 中不受支持。</td>
 </tr>
 <tr class="even">
-<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
-<td align="left"><p>Publish these labels for users to manually apply . . .</p>
+<td align="left">敏感信息类型示例：比利时国家/地区号码、信用卡号、克罗地亚身份证号、芬兰国家/地区身份证号码</td>
+<td align="left"><p>发布这些标签，以便用户手动将 . . .</p>
 <p>&lt;选择标签&gt;</p>
-<p>. . . to these locations . . .</p>
+<p>. . . 应用于这些位置 . . .</p>
 <p>&lt;所有位置或选择特定位置&gt;</p></td>
-<td align="left"><p>Apply this protection . . .</p>
+<td align="left"><p>将此保护 . . .</p>
 <p>&lt;定义保护&gt;</p>
-<p>. . . to documents that match these sensitive information types&gt;</p></td>
+<p>. . . 应用于与这些敏感信息类型匹配的文档&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -100,9 +100,9 @@ Cloud App Security 目前不支持保留标签，但你可以通过 Cloud App Se
 
 ## <a name="prioritize-auto-apply-label-policies"></a>设置自动应用标签策略的优先级
 
-For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
+对于受 GDPR 制约的个人数据，Microsoft 建议使用为环境策展的敏感信息类型自动应用标签。请务必精心设计和谨慎测试自动应用标签策略，以确保实现预期目标行为。
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
+创建自动应用策略的顺序以及用户是否也会应用这些标签，这两点会影响结果。因此，请务必认真规划策略的展示。以下是需要注意的事项。
 
 ### <a name="one-label-at-a-time"></a>一次使用一个标签
 
@@ -110,11 +110,11 @@ The order that auto-apply policies are created and whether users are also applyi
 
 ### <a name="older-auto-apply-policies-win"></a>旧的自动应用策略优先
 
-If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
+如果有多个分配自动应用标签的规则且内容符合多个规则的条件，将分配最旧的规则的标签。因此，配置标签策略前请务必先认真进行规划。如果组织需要更改标签策略的优先级，需要删除这些策略，然后重新创建策略。
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>用户手动应用的标签优先于自动应用的标签
 
-Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
+用户手动应用的标签优先于自动应用的标签。自动应用策略无法替换用户已应用的标签。用户可以替换自动应用的标签。
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>可以更新自动分配的标签
 
@@ -124,7 +124,7 @@ Manual user applied labels trump auto-applied labels. Auto-apply policies can't 
 
 - 设置自动应用策略创建顺序的优先级。
 
-- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
+- 预留足够的时间，以便可以在展示标签供用户手动应用前自动应用这些标签。标签应用于符合条件的所有内容最多可能需要 7 天。
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>用于创建自动应用策略的优先级示例
 
@@ -181,7 +181,7 @@ Manual user applied labels trump auto-applied labels. Auto-apply policies can't 
 <tbody>
 <tr class="odd">
 <td align="left"><p>向合规性团队成员提供权限。</p></td>
-<td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
+<td align="left"><p>将创建标签的合规性团队成员需要使用安全中心和/或合规中心的权限。请转到安全中心或合规中心中的“权限”，然后修改合规性管理员组的成员。</p>
 <p>请参阅<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">为用户授予访问安全中心和/或合规中心的权限</a>。</p></td>
 </tr>
 <tr class="even">
@@ -190,7 +190,7 @@ Manual user applied labels trump auto-applied labels. Auto-apply policies can't 
 </tr>
 <tr class="odd">
 <td align="left"><p>为标签创建自动应用策略。</p></td>
-<td align="left">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</td>
+<td align="left">转到安全中心或合规中心中的“分类”，选择“标签策略”，然后为自动应用标签创建策略。请务必按优先级顺序创建这些策略。</td>
 </tr>
 </tbody>
 </table>

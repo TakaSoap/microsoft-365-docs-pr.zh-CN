@@ -39,7 +39,7 @@ ms.locfileid: "44780129"
 
 在 Microsoft 365 中，可以使用应用启动器快速轻松地访问您的电子邮件、日历、文档和应用程序（[了解详细信息](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a)）。 这些是使用 Microsoft 365 获取的应用以及从[SharePoint 应用商店](https://support.microsoft.com/office/dd98e50e-d3db-4ecb-9bb7-82b189822d43)或[Azure AD](https://msdn.microsoft.com/office/office365/howto/connect-your-app-to-o365-app-launcher)添加的自定义应用程序。
   
-You can add your own custom tiles to the app launcher that point to SharePoint sites, external sites, legacy apps, and more. The custom tile appears under the app launcher's **All** apps, but you can pin it to the **Home** apps and instruct your users to do the same. This makes it easy to find the relevant sites, apps, and resources to do your job. In the below example, a custom tile called "Contoso Portal" is used to access an organization's SharePoint intranet site. 
+可将自己的自定义磁贴添加到应用启动器，这些磁贴指向 SharePoint 网站、外部网站、旧版应用等。自定义磁贴显示在应用启动器的" **全部**"应用下，可将其固定到" **主页**"应用，并指示用户执行相同操作。这样做便于查找相关网站、应用和资源来完成工作。 在以下示例中，名为"Contoso 门户"的自定义磁贴用于访问组织的主要 SharePoint 网站。 
   
 ![应用启动器](../../media/7acc06cc-ac7a-4c6e-8ea7-81570a5bdbab.png)
   

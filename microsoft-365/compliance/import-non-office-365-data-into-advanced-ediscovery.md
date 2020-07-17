@@ -28,7 +28,7 @@ ms.locfileid: "44817591"
 并非所有可能需要使用高级电子数据展示进行分析的文档都会在 Microsoft 365 中生存。 使用高级电子数据展示中的非 Microsoft 365 内容导入功能，可以将不在 Microsoft 365 （PST 文件除外）中生存的文档上传到已链接的 Azure 存储 blob，并使用高级电子数据展示分析这些文档。 此过程向您演示如何将非 Microsoft 365 文档转换为高级电子数据展示以进行分析。
   
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
 > 您可以购买非 Microsoft 365 内容的高级电子数据展示数据存储附加订阅。 这仅适用于要使用高级电子数据展示进行分析的内容。 按照[为 Microsoft 365 for Business 购买或编辑加载](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)项中的步骤进行操作，并购买高级电子数据展示存储加载项。 

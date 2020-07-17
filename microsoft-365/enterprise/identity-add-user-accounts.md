@@ -49,12 +49,12 @@ Azure AD Connect 是受支持的 Microsoft 工具，可引导你只将真正需�
 1. 服务器上运行的 Azure AD Connect 将轮询 AD DS，以了解帐户、组和联系人是否发生了更改。
 2. Azure AD Connect 将更改发送至 Microsoft 365 订阅的 Azure AD 租户。
 
-The first decision in your hybrid identity solution is your authentication requirement. The following options are options:
+在混合身份解决方案中首先要决定的是身份验证要求。以下是可供选择的选项：
 
-- With **managed authentication**, Azure AD handles the authentication process for user sign-in. There are two methods for managed authentication: 
+- 使用“托管身份验证”****，Azure AD 将处理用户登录的身份验证过程。有两种托管身份验证的方法： 
     - **密码哈希同步 (PHS)** [推荐使用，对某些高级功能来说是必需的]。 这是对 Azure AD 中的本地目录对象进行身份验证的最简单方式。 Azure AD Connect 将从 AD DS 提取哈希密码，对密码进行额外的安全处理并将其同步到 Azure AD 中。 有关详细信息，请参阅[使用 Azure AD Connect 同步实现密码哈希同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。
     - **传递身份验证 (PTA)** 为基于 Azure AD 的服务提供简单的密码验证解决方案。 PTA 使用在一个或多个本地服务器上运行的代理直接在本地 AD DS 中验证用户身份验证。 有关详细信息，请参阅[使用 Azure Active Directory 传递身份验证的用户登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)。
-- With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
+- 通过**联合身份验证**，身份验证过程会通过身份联合服务器被重定向到其他标识提供者（例如，Active Directory 联合身份验证服务 (AD FS)），以用于用户登录。该标识提供者可提供其他身份验证方法（例如，基于智能卡的身份验证）。有关详细信息，请参阅[为你的 Azure Active Directory 混合身份解决方案提供正确的身份验证方法](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn)。
 
 观看此视频，以获取 Microsoft 365 企业版身份模型和身份验证的概述。
 
@@ -116,7 +116,7 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 有关其他信息和配置说明，请参阅 [Azure AD SSPR 密码写回](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback)。
 
 >[!Note]
->Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
+>升级到最新版本的 Azure AD Connect，以确保即时获取最佳体验和新功能。有关详细信息，请参阅 [Azure AD Connect 自定义安装](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom)。
 >
 
 |||

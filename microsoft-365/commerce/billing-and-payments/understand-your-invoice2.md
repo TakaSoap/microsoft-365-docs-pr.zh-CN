@@ -36,7 +36,7 @@ ms.locfileid: "44909260"
 
 每月或每年（根据购买订阅时选择的选项），您将收到一封电子邮件，告知您的新帐单声明在管理中心可用。 [了解如何查找和查看你的帐单或发票](view-your-bill-or-invoice.md)。
   
-Your invoice contains two pages. Page 1 is the invoice summary, and contains general information about the invoice, order, amount due, how to make a payment, and how to contact support.
+你的发票包含两页。第 1 页是发票摘要，包含有关发票、订单、到期金额、付款方式和联系支持人员的方式等一般信息。
   
 ![Page 1 of a sample invoice.](../../media/b2f2cf85-a005-4f8a-a7b7-bea231372025.png)
   
@@ -62,7 +62,7 @@ Your invoice contains two pages. Page 1 is the invoice summary, and contains gen
   
 ## <a name="invoice-field-glossary"></a>发票字段术语
 
-The following table describes the fields you might see on your invoice. Some fields listed here might not appear in your invoice, depending on whether you pay by invoice or by credit card or bank account.
+下表介绍了发票上可能显示的字段。此处列出的某些字段可能未在发票中显示，具体取决于是通过发票还是通过信用卡或银行帐户付款。
   
 > [!NOTE]
 > 某些国家或地区不支持银行帐户支付。
@@ -70,30 +70,30 @@ The following table describes the fields you might see on your invoice. Some fie
 |**名称**|**说明**|
 |:-----|:-----|
 |年度价格|订阅每月或每年计费一次。 如果您在购买订阅期间选择了 "年度帐单"，则该发票上的年许可证价格将反映出来。 如果想要更改记帐频率，则必须取消订阅并使用新的记帐频率进行购买。|
-|计费周期|Billing Period is the time period since the last invoice date. Service Period is the time period during which you are charged to use the service.|
+|计费周期|计费周期是指自上次发票日期起的时间段。服务期是就你使用服务进行收费的时间段。|
 |帐单寄往地址|这是你帐单部门的地址，通常与售达地址相同。 若要更新帐单邮寄地址，请参阅[更改帐单邮寄地址](change-your-billing-addresses.md)。|
-|费用|Page 1 of your invoice summarizes all charges for the invoice Billing Period. Page 2 shows the detailed charges for each subscription.|
-|支票|If you pay by invoice and check payment is offered in your country, the bottom of page 1 includes information about where to send your payment. Please reference the invoice number on your check.|
-|贷项|Page 1 of your invoice summarizes all credits for the invoice Billing Period. Page 2 shows the detailed credits for each subscription.|
-|客户 PO 编号|Your Purchase Order (PO) number. If you update the PO number, future invoices will include it. [Change your purchase order number](#change-your-purchase-order-number). <br/> **注释**您不能将 PO 号码添加到现有发票。           |
-|天数|Each billing transaction is associated with a Service Period. The Days column indicates the number of days in that service period.|
-|折扣|Page 1 of your invoice summarizes all discounts for the invoice Billing Period. Page 2 shows the detailed discounts for each subscription.|
-|截止日期|The date when payment is due for the invoice. If your subscription is paid with a credit card or bank account, we will charge your credit card or banking account the day after the Invoice Date. <br/> **注释**在某些国家或地区不提供按银行帐户付款。           |
+|费用|发票的第 1 页将汇总发票计费周期的所有费用。第 2 页显示每个订阅的详细费用。|
+|支票|如果你通过发票支付，并且你所在国家/地区支持支票付款，则第 1 页的底部将包括付款寄往地址的相关信息。请参考支票上的发票号。|
+|贷项|发票的第 1 页将汇总发票计费周期的所有贷项。第 2 页显示每个订阅的详细贷项。|
+|客户 PO 编号|你的采购订单 (PO) 编号。如果你更新 PO 编号，则之后的发票将显示该项。[更改采购订单编号](#change-your-purchase-order-number)<br/> **注释**您不能将 PO 号码添加到现有发票。           |
+|天数|每个计费交易都与服务期相关联。"天数"列指示该服务期的天数。|
+|折扣|发票的第 1 页将汇总发票计费周期的所有折扣。第 2 页显示每个订阅的详细折扣。|
+|截止日期|发票的付款截止日期。如果订阅使用信用卡或银行帐户进行支付，我们将在发票日期后向信用卡或银行帐户收费。<br/> **注释**在某些国家或地区不提供按银行帐户付款。           |
 |电子资金转帐|如果选择 "发票" 作为订阅支付方式，则第1页包含用于电子（电线、ACH、SEPA 等）付款的 Microsoft 银行帐户信息。 通常，银行会出具你在发送付款时填写的参考字段。 请参考此字段中显示的发票编号。|
 |总计|此行包括所有费用、折扣、贷项、分类汇总和税款的总和，以及发票上针对所有订阅的全部列。|
-|发票日期|The date the invoice was created. The invoice date is the day after the end of your Billing Period. For example, if your Billing Period is Jan 15 - Feb 14, your Invoice Date is Feb 15.|
-|发票号|The unique number assigned to your invoice. Please reference the Invoice Number with your payment.|
+|发票日期|发票的创建日期。发票日期是指计费周期结束后的日期。例如，如果你的计费周期为 1 月 15 日 - 2 月 14 日，则你的发票日期为 2 月 15 日。|
+|发票号|分配给你发票的唯一编号。请参考你付款的发票号。|
 |月度价格|订阅每月或每年计费一次。 如果您在购买订阅期间选择了 "每月计费"，则发票上将反映每月的许可证价格。 如果想要更改记帐频率，则必须取消订阅并使用新的记帐频率进行购买。|
-|订单编号|Every time you buy a new subscription, an order is created. Every month, you'll receive an invoice for each order.|
-|付款说明|If you pay by credit card, you'll see "Do not pay - charged to credit card on file." If you pay by invoice, you'll see instructions for paying by Electronic Funds Transfer (EFT) and check (if applicable).|
-|付款期限|The number of days from the Invoice Date when payment is due. The standard is 30 days.|
-|产品|On page 1 of your invoice, "Online Services" is the generic term used to describe your subscriptions. On page 2 , you'll see the individual subscription names.|
+|订单编号|每次购买新订阅时，都会创建一份订单。每月都会收到每份订单的发票。|
+|付款说明|如果你使用信用卡支付，将会看见"不支付 - 已向存档信用卡收费。"如果通过发票支付，则将看到通过电子资金转帐 (EFT) 和支票（如适用）支付的说明。|
+|付款期限|自发票截止付款日期起的天数。标准为 30 天。|
+|产品|发票第 1 页中的"联机服务"是用于描述你的订阅的通用名称。第 2 页上将显示每个订阅的名称。|
 |数量|服务期间购买的许可证数量。|
-|服务期|Service Period is the time period during which you are charged to use the service. A Billing Period is the time period since the last invoice date.|
+|服务期|服务期是就你使用服务进行收费的时间段。帐单期是自上次发票日期后的时间段。|
 |服务使用地址|表示正在使用服务的地址，通常与你的售达地址相同。 若要更新服务使用地址，请参阅[更改帐单地址](change-your-billing-addresses.md)。|
-|售达地址|Your company name and address. To update this information, see [Change your organization's address, technical contact email, and other information](../../admin/manage/change-address-contact-and-more.md).|
+|售达地址|你的公司名称和地址。若要更新此信息，请参阅[更改你组织的地址、技术联系人电子邮件和其他信息](../../admin/manage/change-address-contact-and-more.md)。  |
 |计算|发票上列出的每个订阅都具有针对所有费用、折扣、贷项、分类汇总和税款的单独分类汇总行，以及所有针对该订阅的列。|
-|税款|Page 1 of your invoice shows the total tax. Page 2 shows the tax rate applied, and the total tax amount for each line item. If your invoice contains taxes and your company is tax exempt, please [contact support](../../admin/contact-support-for-business-products.md).|
+|税款|发票的第 1 页显示税款总额。第 2 页显示所采用的税率，以及各行项目的税款总额。如果你的发票包含税款而你的公司是免税的，请[联系支持人员](../../admin/contact-support-for-business-products.md)。  |
 |总计|发票计费周期的到期金额。|
 
 ## <a name="change-your-purchase-order-number"></a>更改采购订单编号
@@ -101,7 +101,7 @@ The following table describes the fields you might see on your invoice. Some fie
 如果通过发票付款，可以添加或更改订阅的采购订单 (PO) 编号。
   
 > [!NOTE]
-> You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
+> 不得在现有发票上添加 PO 编号。该 PO 编号将显示在以后的所有发票上。
 
 ::: moniker range="o365-worldwide"
 

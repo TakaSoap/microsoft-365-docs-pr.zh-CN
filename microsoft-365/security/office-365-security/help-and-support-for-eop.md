@@ -43,7 +43,7 @@ ms.locfileid: "44755184"
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
-If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
+如果您是 EOP 客户，而且具有 Microsoft Premier Support 合同，您可以通过正常的 Microsoft Premier Support 渠道获得支持。这允许您接收对 Premier Support 客户可用的所有进程和资源（如 Premier 技术客户经理 (TAM) 和实例提交）的访问权限。适用于 Microsoft Online Services 的 Premier Support 将 Premier Support 框架从内部部署产品扩展到联机服务，从而为您提供跨所有产品和服务的统一支持体验。该服务有助于确保客户可以快速解决问题，并且简化对 IT 基础结构不同组件的支持进行管理的任务。
 
 有关高级支持如何帮助组织最大限度地提高 IT 投资价值的详细信息，请参阅[适用于合作伙伴的首要支持](https://partner.microsoft.com/support/microsoft-services-premier-support)。
 
