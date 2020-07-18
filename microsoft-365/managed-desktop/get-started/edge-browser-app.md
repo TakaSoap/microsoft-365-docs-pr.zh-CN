@@ -4,14 +4,18 @@ description: ''
 keywords: 浏览器、Microsoft 托管桌面、Microsoft 365、服务、文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094782"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170667"
 ---
 # <a name="new-microsoft-edge-app"></a>新建 Microsoft Edge 应用
 
@@ -38,9 +42,9 @@ Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策
 #### <a name="extension-installation-blocklist"></a>扩展安装阻止列表
 **默认值：** 各种
 
-Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在具有 Chromium 扩展模型的已知 risksassociated，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
+Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在具有 Chromium 扩展模型的已知风险 sassociated，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许没有管理员权限的情况下 (安装用户级别的本机邮件主机) 
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许用户级别的本机邮件主机（无需管理员权限即可安装）
 
 **默认值：** 禁用
 
@@ -119,7 +123,7 @@ Microsoft 托管桌面不支持基本或摘要式身份验证方案。
 
 ## <a name="settings-you-manage"></a>您管理的设置
 
-您可以使用 Microsoft Intune 中的 "管理模板" 配置文件，部署先前未介绍的任何 Microsoft 边缘设置。 有关详细信息，请参阅[Configure Microsoft Edge policy settings With Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果要评估当前未包含在 Intune 中的 Microsoft Edge 管理模板中的策略，可以在 Intune 中使用 Windows 10 设备的自定义设置。
+您可以使用 Microsoft Intune 中的 "管理模板" 配置文件来部署之前未介绍的任何 Microsoft Edge 设置。 有关详细信息，请参阅[Configure Microsoft Edge policy settings With Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果要评估当前未包含在 Intune 中的 Microsoft Edge 管理模板中的策略，可以在 Intune 中使用 Windows 10 设备的自定义设置。
 
 ### <a name="enabling-specific-chrome-extensions"></a>启用特定的部件版式扩展
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过从 Microsoft 365 报告中获取 Microsoft 团队应用使用情况报告，深入了解你的组织中使用的 Microsoft 团队应用。
-ms.openlocfilehash: 3599ba24e8df9406b5e0bc93d934604880ca4c39
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158853"
+ms.locfileid: "45167349"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况-预览
 
@@ -57,5 +57,4 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 |Web  <br/> |如果用户在设备上的工作组 web 客户端中处于活动状态，则选择此选项。|
 |上次活动日期（UTC）  <br/> |用户参与团队活动的最后日期（UTC）。  <br/> |
 |已许可|如果用户已被授权使用团队，则选择此选项。|
-|团队活动总数|选定时间段内的团队活动总数。 |
 |||

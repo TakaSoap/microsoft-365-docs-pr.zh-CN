@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取 Microsoft 团队用户活动报告，并深入了解组织中的团队活动。
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158841"
+ms.locfileid: "45167337"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>Microsoft 团队中的 microsoft 365 报表-Microsoft 团队用户活动-预览
 
@@ -51,9 +51,9 @@ Microsoft 365 "**报告**" 仪表板显示组织中各产品的活动概述。 �
 |会议总数   <br/> |用户在指定时间段内参与的联机会议的数量。  <br/> |
 |1:1 调用   <br/> | 用户在指定时间段内参与的1:1 呼叫数。  <br/> |
 |上次活动日期（UTC）  <br/> |用户参与 Microsoft 团队活动的最后日期。<br/> |
-|会议是临时参与的   <br/> | 用户在指定时间段内参与的即席会议的数量。  <br/> |
-|以即席方式组织的会议 <br/> |在指定时间段内用户组织的即席会议的数量。 <br/>|
+|会议是临时参与的   <br/> | 在指定时间段内用户参与的日历上未计划的会议数。  <br/> |
+|以即席方式组织的会议 <br/> |在指定时间段内，用户组织的日历上未计划的会议数。 <br/>|
 |安排的会议  <br/> |用户在指定时间段内组织的已安排会议数。  <br/> |
 |已许可 |如果用户已被授权使用团队，则选择此选项。|
-|其他活动|用户的其他团队活动数。 |
+|其他活动|用户被视为处于活动状态，但其值为零：聊天消息、1:1 呼叫、频道消息、会议总数和组织的会议。 示例操作是在将 Microsoft 团队客户端激活到前台时，在撰写邮件区域中执行操作，toast 在 Microsoft 团队客户端中显示，横幅显示在 Microsoft 团队客户端等中。 |
 |||
