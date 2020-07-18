@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 597d8383166e0ddae0984573d77ba75cf54dafdd
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146226"
+ms.locfileid: "45153673"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -77,6 +77,8 @@ ms.locfileid: "45146226"
 "条件访问" 适用于购买了 Azure AD 高级版 P1 的客户，或购买了包含此项许可证的客户，比如 Microsoft 365 商业高级版和 Microsoft 365 E3。 有关详细信息，请参阅 [创建条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
 可通过 Azure AD 高级 P2 许可证，或包含此项的许可证，例如 Microsoft 365 E5 来获取基于风险的条件访问。 有关详细信息，请参阅[基于风险的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
+
+有关 Azure AD P1 和 P2 的详细信息，请参阅 [Azure Active Directory 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>为你的组织启用新式验证
 
