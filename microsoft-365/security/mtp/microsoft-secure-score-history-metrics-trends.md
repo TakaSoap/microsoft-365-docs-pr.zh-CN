@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b99f927711ed1015b38d8020e287d76155ce706f
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 85d1a7d5a5507e674c4c9bb5c579322a1ca1c4b6
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095018"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200082"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>跟踪你的 Microsoft 安全分数历史记录并实现目标
 
@@ -76,5 +76,6 @@ ms.locfileid: "45095018"
 ## <a name="related-resources"></a>相关资源
 
 - [Microsoft 安全评分概述](microsoft-secure-score.md)
-- [深入了解你的安全状况](microsoft-secure-score-improvement-actions.md)
+- [评估安全状况](microsoft-secure-score-improvement-actions.md)
 - [即将推出的功能](microsoft-secure-score-whats-coming.md)
+- [新增功能](microsoft-secure-score-whats-new.md)

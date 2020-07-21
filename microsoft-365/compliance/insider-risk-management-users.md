@@ -12,18 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c2b1a229bad5bc82f61227bd5a273af1aefb3481
-ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
+ms.openlocfilehash: 0997ecc83ad7f97d1fb7273bcac8b026f6432091
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44900806"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199503"
 ---
 # <a name="insider-risk-management-users-dashboard"></a>内幕风险管理用户仪表板
 
 **用户仪表板**是内幕风险管理工作流中的一个重要工具，可帮助调查人员和分析师更全面地了解风险活动。 此仪表板提供了视图和管理功能，可满足创建内幕风险管理策略和管理内幕风险管理案例之间的管理需求。
 
-将用户添加到内幕风险管理策略后，后台流程将自动评估[触发指标](insider-risk-management-policies.md#indicators)的用户活动。 存在触发指示器后，会为用户活动分配风险分数。 其中一些活动可能会导致出现内幕风险警报，但某些活动可能无法满足最低风险分数水平，并且不会创建内幕风险警报。 **用户仪表板**允许您查看具有这些类型的指示器和风险分数的用户，以及具有活动的内幕风险警报的用户。
+将用户添加到内幕风险管理策略后，后台流程将自动评估[触发指标](insider-risk-management-settings.md#indicators)的用户活动。 存在触发指示器后，会为用户活动分配风险分数。 其中一些活动可能会导致出现内幕风险警报，但某些活动可能无法满足最低风险分数水平，并且不会创建内幕风险警报。 **用户仪表板**允许您查看具有这些类型的指示器和风险分数的用户，以及具有活动的内幕风险警报的用户。
 
 此外，在内幕风险管理工作流外部报告不正常的事件后，还可能需要将临时用户添加到内幕风险策略中。 **用户仪表板**允许您将用户手动添加到内幕风险策略中的特定时间段，并绕过对用户具有触发指示器的要求。 当活动分配到策略时，这些用户将始终显示在用户仪表板中。
 
@@ -39,7 +39,7 @@ ms.locfileid: "44900806"
 
 ## <a name="dashboard-users-with-triggering-indicators"></a>具有触发指示器的仪表板用户
 
-**用户仪表板**将自动显示具有触发指示器的所有用户，但不具有可创建内幕风险活动的活动风险分数。 例如，将显示一个具有报告的辞职日期的用户，因为此事件是触发指示器，而不是具有风险分数的活动。 通过在**用户仪表板**中选择用户并导航到 "**用户活动**" 选项卡，可以查看这些用户的活动。
+**用户仪表板**将自动显示具有触发指示器的所有用户，但不具有可创建内幕风险警报的活动风险分数。 例如，将显示一个具有报告的辞职日期的用户，因为此事件是触发指示器，而不是具有风险分数的活动。 通过在**用户仪表板**中选择用户并导航到 "**用户活动**" 选项卡，可以查看这些用户的活动。
 
 ## <a name="dashboard-users-added-temporarily-to-policies"></a>向策略临时添加的仪表板用户
 

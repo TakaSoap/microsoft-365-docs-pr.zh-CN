@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业高级版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 06/08/2018
-ms.openlocfilehash: a2feb91ddcd2d95da28c3363d983b382cf2aa6dc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30437825a896acb470b23cb8f68ea36235ee80c8
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403442"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185968"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商业高级版常见问题
 
@@ -137,9 +137,9 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 是的，Microsoft 365 商业高级版订阅者已获得许可，可使用 iOS、Android、MacOS 和其他跨平台设备管理相关的完整 Intune 功能。 Microsoft 365 商业高级版的简化管理控制台中不可用的功能（如第三方应用管理和 WiFi 配置文件配置、VPN 证书）可以在完整的 Intune 控制台中进行管理。 
   
 
-### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business"></a>Microsoft 365 商业版是否附带 Azure Active Directory (Azure AD) Premium P1？ 
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory （Azure AD）高级 P1 是否带有 Microsoft 365 商业高级版？ 
 
-以前，Microsoft 365 商业版包含 Azure AD Premium Plan 1 功能的子集，包括条件访问、自助式密码重置和多重身份验证。 现在，我们正在将完整的 Azure AD Premium P1 许可证推出给 Microsoft 365 商业版订阅者，起初是向新客户，然后是向当前订阅者。 有关详细信息，请参阅 [Microsoft 365 商业版服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)和此[博客](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/azure-active-directory-premium-p1-is-coming-to-microsoft-365/ba-p/1275496)。
+是的，Azure AD Premium P1 包含在 Microsoft 商业高级版中。
  
  
 ### <a name="does-microsoft-365-business-premium-allow-customers-to-manage-macs"></a>Microsoft 365 商业高级版是否允许客户管理 Mac？ 

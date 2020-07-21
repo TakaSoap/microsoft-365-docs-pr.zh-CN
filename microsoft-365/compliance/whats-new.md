@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 我们不断将新功能添加到 Microsoft 365 合规性中心。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2a48a47c631b0fd3c7e785d98b7221a0c3550c79
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126905"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199462"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 合规性中心的新增功能
 
@@ -42,7 +42,7 @@ ms.locfileid: "45126905"
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付费或试用版）
 - Microsoft [E5 合规性加载](https://go.microsoft.com/fwlink/?linkid=2120432)项的 Microsoft 365 企业版 E3 订阅
 
-在预览版本（包括[新的角色组](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)和[解决方案范围的设置](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)）之后进行了一些改进。
+在预览版本（包括[新的角色组](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)和[解决方案范围的设置](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)）之后进行了一些改进。
 
 与往常一样，请在使用解决方案时留下反馈，以便我们可以继续进行改进。
 
@@ -171,14 +171,14 @@ ms.locfileid: "45126905"
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
 |数据主体请求 |数据隐私 > 数据主体请求 <br/> https://protection.office.com/dsrcases |数据主体请求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR case 工具管理 GDPR 数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |电子数据展示|电子数据展示 > 电子数据展示 <br/> https://protection.office.com/ediscoveryv1 |电子数据展示 > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理电子数据展示事例](ediscovery-cases.md) |
-|活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件发生时启动保留](event-driven-retention.md)|
+|活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[从事件发生时开始计算保留期](event-driven-retention.md)|
 |文件计划|记录管理 > 文件计划 <br/> https://protection.office.com/fileplan |记录管理 > 文件计划选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用文件计划管理保留标签](file-plan-manager.md)|
 |导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[有关导入组织的 PST 文件的概述](importing-pst-files-to-office-365.md)|
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](retention.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[了解保留策略和保留标签](retention.md)|
 |敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)|
-|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感性标签](sensitivity-labels.md) |
+|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全与合规中心内的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通信合规性（预览）](communication-compliance.md) |
 

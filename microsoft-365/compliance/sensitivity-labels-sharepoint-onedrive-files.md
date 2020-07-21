@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理员可以在 SharePoint 和 OneDrive 中为 Word、Excel 和 PowerPoint 文件启用敏感度标签支持。
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780715"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199522"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签
 
@@ -164,17 +164,18 @@ ms.locfileid: "44780715"
     ```
 3. 对于 Microsoft 365 多地理位置：对剩下的每个地理位置重复步骤1和2。
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>创建或更改敏感度标签后计划回滚
+## <a name="publishing-and-changing-sensitivity-labels"></a>发布和更改敏感度标签
 
-在 Microsoft 365 合规性中心中创建或更改灵敏度标签后，请分阶段发布它。 如果您发布尚未完全同步的标签，则当用户将标签应用于文件并将其上传到 SharePoint 时，将无法在 Office 应用程序的 web 版本中打开这些文件。 搜索和电子数据展示也不适用于这些文件。
+当您在 SharePoint 和 OneDrive 中使用敏感度标签时，请记住，在发布新的敏感度标签或更新现有的敏感度标签时，需要允许复制时间。 对于适用于加密的新标签，这一点尤其重要。
 
-我们建议您按照以下步骤操作：
+例如：您创建并发布了一个新的敏感度标签，它将应用加密并快速显示在用户的桌面应用程序中。 用户将此标签应用于文档，然后将其上载到 SharePoint 或 OneDrive。 如果该服务的标签复制尚未完成，则在上载时不会对该文档应用新功能。 因此，不会在搜索或电子数据展示中返回该文档，也不能在 Office for web 中打开该文档。
 
-1. 仅将新的或修改的敏感度标签发布给一个或两个人。
+- 以下更改在一小时内复制：新的和删除的敏感度标签，以及包括哪些标签在策略中的敏感度标签策略设置。
 
-2. 在初始发布后至少等待24小时。 验证标签是否已完全同步。
+- 以下更改将在24小时内复制：对现有标签的敏感度标签设置的更改。
 
-3. 更广泛地发布标签。
+由于对于新的敏感度标签，复制延迟现在仅为一小时，因此您不太可能会遇到此示例中的情形。 但作为一项安全措施，我们建议先将新标签发布到少数测试用户，再等待一小时，然后在 SharePoint 和 OneDrive 上验证标签行为。 最后一步是，通过向现有标签策略中添加更多用户，或为标准用户将标签添加到现有的标签策略中，使更多的用户可以使用该标签。 当您的标准用户看到标签时，它已同步到 SharePoint 和 OneDrive。
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint 信息权限管理（IRM）和敏感度标签
 

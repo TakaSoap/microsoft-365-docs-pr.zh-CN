@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解将有助于防止 Exchange Online Protection （EOP）垃圾邮件的反垃圾邮件设置和筛选器。
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800103"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189557"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾邮件保护
 
@@ -36,6 +36,9 @@ ms.locfileid: "44800103"
 Microsoft 的电子邮件安全路线图包括不匹配的跨产品方法。 EOP 在我们的电子邮件平台中应用了反垃圾邮件和反网络钓鱼技术，为用户提供了整个网络中最新的反垃圾邮件和反钓鱼工具和革新。 EOP 的目标是提供全面且可用的电子邮件服务，以帮助用户检测垃圾邮件、诈骗电子邮件威胁（网络钓鱼）和恶意软件，并免受其侵扰。
 
 随着电子邮件的普及，电子邮件滥用的问题也日趋严重。 无人监控的垃圾邮件会阻塞收件箱和网络、影响用户满意度，并阻碍合法电子邮件通信的有效性。 这就是 Microsoft 仍继续致力于反垃圾邮件技术的原因。 简单地说，它从包含和筛选垃圾邮件开始。
+
+> [!TIP]
+> 当您想要根据邮件信封（例如发件人的域或邮件的源 IP 地址）允许或阻止邮件时，以下反垃圾邮件技术将非常有用。 若要根据有效负载（例如，邮件或附加文件中的 Url）允许或阻止邮件，应使用[租户允许/阻止列表门户](tenant-allow-block-list.md)。
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP 中的反垃圾邮件技术
 

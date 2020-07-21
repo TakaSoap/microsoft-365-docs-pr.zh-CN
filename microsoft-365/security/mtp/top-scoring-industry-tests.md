@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 279376288f28e99d5881e5e482470407111c4add
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
+ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158865"
+ms.lasthandoff: 07/20/2020
+ms.locfileid: "45185988"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -44,19 +44,18 @@ MITRE 的测试方法的核心是模拟实际攻击，以了解解决方案是�
 [Microsoft Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)在独立测试中持续执行非常严格，显示了它在防病毒市场中的最佳选择。 请记住，这些测试仅提供防病毒的结果，不会测试其他安全保护。
 
 Microsoft Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全堆栈](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新和最复杂的威胁。 在某些情况下，客户可能甚至不知道它们受到保护，因为在[市场活动启动之后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)cyberattack 停止毫秒。 这是因为 Microsoft Defender 中的 Microsoft Defender 防病毒和其他[endpoint protection 平台（EPP）](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/)功能可在首次使用[机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、[人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术时检测并阻止恶意软件。
-<br><br>
-
-**下载最新透明度报告：[检查 AVT 测试结果-2020 年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 ### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-测试：最新测试中 5.5/6.0 的保护得分
 
 AV 测试产品检查和认证报告测试有以下三个类别：保护、性能和可用性。 以下分数适用于包含两个分数的保护类别：实际测试和 AV 测试参考集（称为 "流行恶意软件"）。
 
+**下载最新的透明度报告：[检查 AV 测试结果-2020 年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+
 - 3月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**最新**</sup>
 
     Microsoft Defender 防病毒实现了 5.5/6.0 的整体保护分数，并使用了20540恶意软件示例。
 
-- 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)
+- 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - 11月-2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
@@ -84,7 +83,9 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 SE 实验室测试产品和服务使用的一系列解决方案，以检测和/或防御攻击（包括终结点软件、网络设备和云服务）。
 
-- 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>
+**下载最新透明度报告：[检查 SE 实验测试结果（1月-2020 年3月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)）**
+
+- 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
     Microsoft 的下一代保护称为主要产品之一，停止所有目标攻击和除一个公开的所有威胁。
 
