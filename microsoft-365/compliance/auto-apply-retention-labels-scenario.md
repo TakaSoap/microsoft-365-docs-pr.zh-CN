@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 此解决方案说明了如何使用保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用保留标签并配置基于事件的保留。
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126473"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199846"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留标签管理 SharePoint 文档的生命周期
 
@@ -112,7 +112,7 @@ ms.locfileid: "45126473"
 
 - **文件计划描述符：**（为简化方案，未提供文件描述符）
 
-以下屏幕截图显示了在安全与合规中心内创建产品规范[保留标签](retention.md#retention-labels)时的设置。 创建保留标签时，可创建“**产品停产**”事件类型。 请参阅以下步骤。
+以下屏幕截图显示了在 Microsoft 365 合规中心内创建产品规范[保留标签](retention.md#retention-labels)时的设置。 创建保留标签时，可创建“**产品停产**”事件类型。 请参阅以下步骤。
 
 ![产品规标签保留设置](../media/SPRetention5.png)
 
@@ -181,7 +181,7 @@ ms.locfileid: "45126473"
 
 KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性。 在普通搜索方案中，我们将创建托管属性，并将其映射到所需的已爬网属性。 但是，对于自动应用保留标签，只能在 KQL 中指定预定义的托管属性，而不能指定自定义托管属性。 已在系统中创建一组预定义的托管属性，可使用字符串 RefinableString00 到 RefinableString199。 有关完整列表，请参阅[默认未使用托管属性](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties)。 这些默认托管属性通常用于定义搜索精简程序。
 
-为了使 KQL 查询正常工作并自动将正确的保留标签应用于产品文档内容，我们将已爬网属性 **ows\_Doc\_x0020\_Type** 和 **ows\_\_Status** 映射到两个可精简的托管属性。 在此方案的测试环境中，未使用 **RefinableString00** 和 **RefinableString01**。 通过在 SharePont 管理中心的“**管理搜索架构**”中查看“**托管属性**”，可以确定这一点。
+为了使 KQL 查询正常工作并自动将正确的保留标签应用于产品文档内容，我们将已爬网属性 **ows\_Doc\_x0020\_Type** 和 **ows\_\_Status** 映射到两个可精简的托管属性。 在此方案的测试环境中，未使用 **RefinableString00** 和 **RefinableString01**。 通过在 SharePoint 管理中心的“**管理搜索架构**”中查看“**托管属性**”，可以确定这一点。
 
 ![搜索架构中托管属性](../media/SPRetention12.png)
 
@@ -217,7 +217,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 现在，我们已验证 KQL 查询可正常工作，下面让我们创建标签策略，它使用 KQL 查询将产品规范保留标签自动应用于相应的文档。
 
-1. 在[安全与合规中心](https://protection.office.com)，转到“**分类**” > “**保留标签**”，然后选择“**自动应用标签**”。 
+1. 在[合规中心](https://compliance.microsoft.com/homepage)，转到“**记录管理**” > “**标签策略**”，然后选择“**标签**”。 
 
    ![选择“标签”页面上的“自动应用标签”](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>验证保留标签是否已自动应用
 
-七天后，使用安全与合规中心内的“[标签活动资源管理器](view-label-activity-for-documents.md)”，查看我们创建的标签策略是否已自动将此方案中的保留标签应用于产品文档。 在以下屏幕截图中，保留标签也已应用于产品协议和用户手册，即使我们在本文中并未介绍如何创建这些保留标签和标签策略。
-
-![使用标签活动浏览器验证标是否自动应用](../media/SPRetention20.png)
+7 天后，使用合规中心内的“[标签活动资源管理器](view-label-activity-for-documents.md)”查看我们创建的标签策略是否已自动将此方案中的保留标签应用于产品文档。 
 
 另一个验证步骤是查看文档库中文档的属性。 在信息面板中，你可以看到保留标签已应用于所选文档。
 
