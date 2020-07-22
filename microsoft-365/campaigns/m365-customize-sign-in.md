@@ -1,5 +1,7 @@
 ---
 title: 使用隐私和同意通知自定义登录页
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,13 +20,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 使用针对市场活动的 Microsoft 365 的隐私和同意通知来自定义您的您的签入页面。
-ms.openlocfilehash: 94a18a4f1763a93d3ff1be5976df66b6fb112165
-ms.sourcegitcommit: cf7b0fd80ecfb7a216111a801269c5322794795e
+description: 针对市场活动的 Microsoft 365 的隐私和同意通知自定义登录页面。
+ms.openlocfilehash: 7ace4f1fe28bece1859cecb968a4352f015b8ca2
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "40995303"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204787"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隐私和同意通知自定义登录页面
 
@@ -34,16 +36,15 @@ ms.locfileid: "40995303"
 
 ## <a name="customize-the-text-on-your-sign-in-page"></a>自定义登录页上的文本
 
-若要更新登录上的可自定义元素，您必须是全局管理员。有关具体说明，请参阅[添加公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)文章。
+若要更新登录页面上的可自定义元素，您必须是全局管理员。有关具体说明，请参阅[添加公司品牌](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)文章。
 
 您可以更新的元素包括：
 
 - **登录页文本**
 
-    这是一个添加隐私声明和同意声明的简单位置。
-- 页面背景图像
+     一个简单的位置来添加 "隐私声明" 和 "同意" 声明。
+- 登录页面背景图像
 - 横幅徽标
 - Username 提示
 
 有关隐私和许可通知的示例，请参阅[搜索和抓住计算机并获取 "刑事调查](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)" PDF 文件中的电子证据，具体讲**附录 A：示例网络横幅语言**。
-

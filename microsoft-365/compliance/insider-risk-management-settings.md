@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200201"
+ms.locfileid: "45201418"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内幕风险管理设置入门
 
@@ -74,7 +74,7 @@ ms.locfileid: "45200201"
 
 ![内幕风险管理自定义指示器设置](../media/insider-risk-custom-indicators.png)
 
-- 对于第一天的事件级别，将阈值设置为*每日10个或更多个事件*，以降低*对事件的*风险分数的影响、*每天20个或更多*个事件的影响，以及每天*30 个或以上事件*对事件风险分数的影响。 这些设置有效地表示：
+对于第一天的事件级别，将阈值设置为*每日10个或更多个事件*，以降低对事件的风险分数的影响、*每天20个或更多*个事件的影响，以及每天*30 个或以上事件*对事件风险分数的影响。 这些设置有效地表示：
 
 - 如果在触发事件后发生了 1-9 SharePoint 事件，风险分数将受到最低影响，并且往往不会生成警报。
 - 如果在触发事件之后发生了 10-19 SharePoint 事件，风险分数的优先级将变低，警报的严重性级别通常会降低。

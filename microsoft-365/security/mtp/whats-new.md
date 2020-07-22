@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084151"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204931"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威胁防护的新增功能
 
@@ -30,6 +30,10 @@ RSS 源：通过将以下 URL 复制并粘贴到订阅源阅读器中来更新�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="july-2020"></a>2020 年 7 月
+- [FileProfile （）函数](advanced-hunting-fileprofile-function.md) <br> 在[高级搜寻](advanced-hunting-overview.md)查询中使用此功能，通过全面的文件信息丰富结果。
+- [标识和应用程序表](advanced-hunting-schema-tables.md)<br> 在高级搜寻架构中获取对[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表的身份验证事件、Active Directory 查询和应用程序相关活动的可见性。
+
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 源 <br> 在仪表板中获取最新的安全研究、威胁智能、产品新闻和更多权限。
 - [EmailPostDeliveryEvents 架构表](advanced-hunting-emailpostdeliveryevents-table.md) <br> 将有关在您的高级搜寻查询中对电子邮件执行的送达操作的信息合并在一起。
@@ -46,4 +50,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 登录页面到各种搜索功能，使您能够主动找到影响电子邮件和数据、设备和标识的威胁。
 - [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织的安全状态的度量值，其数字越高表示执行了更多改进操作。 按照安全得分建议，可以保护您的组织免受威胁。 
-- [报表](monitoring-and-reporting.md) <br>  提供一系列涵盖安全分析员和管理员在日常运营中进行跟踪的各种领域的卡片主机。
+- [报告](monitoring-and-reporting.md) <br>  提供一系列涵盖安全分析员和管理员在日常运营中进行跟踪的各种领域的卡片主机。

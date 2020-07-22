@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 了解如何将来宾添加到 Microsoft 365 组，查看来宾用户，以及如何使用 PowerShell 控制来宾访问。
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854242"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204739"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 组中管理来宾访问
 
@@ -114,7 +114,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 ## <a name="add-guests-to-the-global-address-list"></a>将来宾添加到全局地址列表
 
-默认情况下，来宾在 Exchange 全局地址列表中不可见。 使用下面列出的步骤使来宾在全局地址列表中可见。
+默认情况下，来宾在 Exchange 全局地址列表中不可见。 使用下面列出的步骤使来宾在全局地址列表中可见。 确保来宾在 Exchange Online 管理中心中可见。 添加新的来宾后，可能会在该处出现一小段时间。
 
 通过运行以下命令查找来宾用户的 ObjectID：
 

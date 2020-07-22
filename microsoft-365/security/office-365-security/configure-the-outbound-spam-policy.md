@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）中查看、创建、修改和删除出站垃圾邮件策略。
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024578"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204847"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -136,26 +136,10 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
    - **如果发件人因发送出站垃圾邮件而被阻止，请通知特定人员**：
 
-     > [!NOTE]
-     > 当用户因超出 "**收件人限制**" 部分中的限制而被阻止时，名为 "**用户限制发往发送电子邮件**" 的默认[通知策略](../../compliance/alert-policies.md)将已向**TenantAdmins** （**全局管理员**）组的成员发送电子邮件通知。 我们建议您在出站垃圾邮件策略中使用通知策略而不是此设置来通知管理员和其他用户。 有关说明，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 <br/><br/> 此设置仅适用于默认的出站垃圾邮件策略。 它在您创建的自定义出站垃圾邮件策略中不起作用。
-
-     要启用此设置，请执行以下操作：
-
-     a. 选中该复选框以启用该设置。
-
-     b. 单击 "**添加人员**"。 在显示的 "**添加或删除收件人**" 浮出控件中：
-
-     c. 输入发件人的电子邮件地址。 可以指定用分号分隔的多个电子邮件地址（;)或每行一个收件人。
-
-     d. 单击 ![添加图标](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 添加收件人。
-
-        根据需要重复执行这些步骤（次数不限）。
-
-        您添加的收件人将显示在浮出控件的 "**收件人列表**" 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
-
-     e. 完成后，单击 **“保存”**。
-
-     若要禁用此设置，请清除该复选框。
+     > [!IMPORTANT]
+     > 此设置正在从出站垃圾邮件策略中弃用。
+     > 
+     > 当用户因超出 "**收件人限制**" 部分中的限制而被阻止时，名为 "**用户限制发往发送电子邮件**" 的默认[通知策略](../../compliance/alert-policies.md)将已向**TenantAdmins** （**全局管理员**）组的成员发送电子邮件通知。 **强烈建议您在出站垃圾邮件策略中使用通知策略而不是此设置来通知管理员和其他用户**。 有关说明，请参阅[验证受限制用户的通知设置](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
 
 5. Optional展开 "**收件人限制**" 部分，为可疑的出站电子邮件配置限制和操作：
 
@@ -189,11 +173,11 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
    > [!NOTE]
    > 这些设置仅适用于基于云的邮箱。
-   
+
    - **自动转发**
   
       选择用于控制自动转发的处理方式的选项之一。
-    
+
       - **自动**：默认情况下，允许系统控制自动转发的默认设置，默认情况下禁用自动转发。
       - **启用：在**策略中启用外部转发而不受限制。
       - **Off**：外部转发被禁用并将被阻止
@@ -300,7 +284,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 2. 创建用于指定应用规则的出站垃圾邮件筛选器策略的出站垃圾邮件筛选器规则。
 
- **注意：**
+ **注意**：
 
 - 您可以创建新的出站垃圾邮件筛选器规则，并向其分配现有的未关联的出站垃圾邮件筛选器策略。 一个出站垃圾邮件筛选器规则不能与多个出站垃圾邮件筛选器策略相关联。
 

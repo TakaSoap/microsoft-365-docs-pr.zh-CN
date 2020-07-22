@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048263"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204823"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -59,8 +59,4 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 - **["门户架构参考"](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —有关安全中心中直接使用的架构表的信息。 除了表和列说明之外，此参考还提供有关受支持的事件类型（ `ActionType` 值）和示例查询的信息。  
 
-- **[标识和应用程序表](advanced-hunting-schema-tables.md)**—使用高级搜寻架构中的[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表深入了解身份验证事件、Active Directory 查询和与应用程序相关的活动。
-
 - **[进入寻找](advanced-hunting-go-hunt.md)**--快速透视，从调查事件到使用基于查询的[高级](advanced-hunting-overview.md)搜索功能检查特定事件、用户、设备或其他实体类型。
-
-- **[FileProfile （）函数](advanced-hunting-fileprofile-function.md)**—在你的[高级搜寻](advanced-hunting-overview.md)查询中使用，以合并全面的文件信息。

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185988"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204955"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -100,6 +100,8 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 ## <a name="endpoint-detection--response"></a>终结点检测 & 响应
 
 Microsoft Defender ATP[终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)功能提供了接近实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
+
+Microsoft Defender ATP 的 EDR 和 endpoint protection 功能已从行业测试和出版物收到正面结果。 SC Labs 在6月2020日[评估了终结点安全工具](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)，并提供了 MICROSOFT Defender ATP [5/5 星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)。 他们还称之为 Microsoft Defender ATP，它能够使用一组完整的安全功能，并将终结点安全解决方案确定为整体和统一，从而保护组织免受新式威胁。 他们还确认了 endpoint protection 与终结点检测和响应功能的融合，因为攻击链现在完全受解决方案的覆盖。
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE：业界领先的光学器件和检测功能
 

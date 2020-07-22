@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da3b331d4f607aa0961e275db9444aadbec4fcf2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899335"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204751"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -36,18 +36,28 @@ ms.locfileid: "44899335"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | string | 触发事件的活动类型 |
-| `Application` | string | 执行录制操作的应用程序 |
+| `ActionType` | 字符串 | 触发事件的活动类型 |
+| `Application` | 字符串 | 执行录制操作的应用程序 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
-| `PreviousFileName` | string | 作为操作的结果重命名的文件的原始名称 |
-| `AccountName` | string | 帐户的用户名 |
-| `AccountDomain` | string | 帐户的域 |
-| `AccountUpn` | string | 帐户的用户主体名称（UPN） |
-| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
-| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `FolderPath` | 字符串 | 包含录制的操作所应用于的文件的文件夹 |
+| `PreviousFileName` | 字符串 | 作为操作的结果重命名的文件的原始名称 |
+| `PreviousFolderPath` | 字符串 | 在应用录制的操作之前包含文件的原始文件夹 |
+| `Protocol` | 字符串 | 使用的网络协议 |
+| `AccountName` | 字符串 | 帐户的用户名 |
+| `AccountDomain` | 字符串 | 帐户的域 |
+| `AccountUpn` | 字符串 | 帐户的用户主体名称（UPN） |
+| `AccountObjectId` | 字符串 | Azure AD 中的帐户的唯一标识符 |
+| `AccountDisplayName` | 字符串 | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `DeviceName` | 字符串 | 设备的完全限定的域名（FQDN） |
+| `DeviceType` | 字符串 | 设备类型 | 
+| `OSPlatform` | 字符串 | 设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `Location` | string | 与事件关联的城市、国家或其他地理位置 |
+| `DestinationDeviceName` | 字符串 | 运行处理录制操作的服务器应用程序的设备的名称 |
+| `DestinationIPAddress` | 字符串 | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
+| `Location` | 字符串 | 与事件关联的城市、国家或其他地理位置 |
+| `Isp` | 字符串 | 与终结点 IP 地址关联的 Internet 服务提供商（ISP） |
+| `ReportId` | long | 事件的唯一标识符 |
+| `AdditionalFields` | 字符串 | 有关实体或事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

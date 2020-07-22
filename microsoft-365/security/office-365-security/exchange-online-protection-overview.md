@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Exchange Online Protection （EOP）如何帮助保护您的内部部署电子邮件组织在独立和混合环境中。
-ms.openlocfilehash: a3f71ea5366224465cdaf3922c6c467fcb49f3cc
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 37b38df9e94bee93202be02c01a220afa9470b8a
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616982"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204799"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -61,7 +61,13 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 - 在亚太地区（APAC）中，所有 Exchange Online 邮箱均位于 APAC 数据中心中，并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
 
-- 在美洲，所有 Exchange Online 邮箱均位于美国数据中心，但使用巴西和智利中的数据中心和加拿大中使用数据中心（在加拿大的位置）的情况除外。 所有电子邮件（包括在南美洲和加拿大的客户的邮件）通过本地数据中心进行路由，以进行 EOP 筛选;隔离的电子邮件存储在租户所在的数据中心中。
+- 在美洲，服务分布在以下位置：
+
+  - 南美洲： Exchange Online 邮箱位于巴西和智利的数据中心。 所有邮件通过本地数据中心路由，以进行 EOP 筛选。 隔离的邮件存储在租户所在的数据中心中。
+
+  - 加拿大： Exchange Online 邮箱位于加拿大的数据中心。 所有邮件通过本地数据中心路由，以进行 EOP 筛选。 隔离的邮件存储在租户所在的数据中心中。
+
+  - 美国： Exchange Online 邮箱位于美国数据中心。 所有邮件通过本地数据中心路由，以进行 EOP 筛选。 隔离的邮件存储在租户所在的数据中心中。
 
 - 对于政府社区云 (GCC)，所有 Exchange Online 邮箱均位于美国数据中心，所有邮件均通过美国数据中心路由以进行 EOP 筛选。
 
