@@ -24,6 +24,8 @@
           href: insider-risk-management.md
         - name: 内部风险管理计划
           href: insider-risk-management-plan.md
+        - name: 内部风险设置入门
+          href: insider-risk-management-settings.md
         - name: 内部风险管理入门
           href: insider-risk-management-configure.md
         - name: 创建和管理内部风险策略
@@ -105,30 +107,32 @@
       items:
         - name: DLP 和 Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: 观看 DLP 的扩展概述
-          href: 'https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111'
-        - name: 设置 DLP
-          items:
-            - name: 开始使用 DLP 策略建议
-              href: get-started-with-dlp-policy-recommendations.md
-            - name: 开始使用默认 DLP 策略
-              href: get-started-with-the-default-dlp-policy.md
-            - name: 通过模板创建 DLP 策略
-              href: create-a-dlp-policy-from-a-template.md
-            - name: 创建、测试和优化 DLP 策略
-              href: create-test-tune-dlp-policy.md
-            - name: 使用 DLP 策略中的通知和策略提示
-              href: use-notifications-and-policy-tips.md
-            - name: DLP 策略模板包含的内容
-              href: what-the-dlp-policy-templates-include.md
-            - name: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
-              href: protect-documents-that-have-fci-or-other-properties.md
-            - name: 查看 DLP 报告
-              href: view-the-dlp-reports.md
-            - name: 创建查询以查找存储在站点上的敏感数据
-              href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
-              href: how-dlp-works-between-admin-centers.md
+        - name: 了解终结点数据丢失防护（预览）
+          href: endpoint-dlp-learn-about.md
+        - name: 终结点数据丢失防护（预览）入门
+          href: endpoint-dlp-getting-started.md
+        - name: 使用终结点数据丢失防护（预览）
+          href: endpoint-dlp-using.md
+        - name: 开始使用 DLP 策略建议
+          href: get-started-with-dlp-policy-recommendations.md
+        - name: 开始使用默认 DLP 策略
+          href: get-started-with-the-default-dlp-policy.md
+        - name: 通过模板创建 DLP 策略
+          href: create-a-dlp-policy-from-a-template.md
+        - name: 创建、测试和优化 DLP 策略
+          href: create-test-tune-dlp-policy.md
+        - name: 使用 DLP 策略中的通知和策略提示
+          href: use-notifications-and-policy-tips.md
+        - name: DLP 策略模板包含的内容
+          href: what-the-dlp-policy-templates-include.md
+        - name: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
+          href: protect-documents-that-have-fci-or-other-properties.md
+        - name: 查看 DLP 报告
+          href: view-the-dlp-reports.md
+        - name: 创建查询以查找存储在站点上的敏感数据
+          href: form-a-query-to-find-sensitive-data-stored-on-sites.md
+        - name: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
+          href: how-dlp-works-between-admin-centers.md
     - name: 敏感信息类型
       items:
         - name: 敏感信息类型属性定义
