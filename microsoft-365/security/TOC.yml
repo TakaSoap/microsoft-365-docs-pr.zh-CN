@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: 建议的 SharePoint Online 访问策略
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft 安全功能分数
+      items:
+        - name: 安全功能分数概述
+          href: mtp/microsoft-secure-score.md
+        - name: 评估你的安全状况
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: 跟踪分数历史记录并实现目标
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: 即将推出的功能
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: 最近更新
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft 威胁防护
       items:
         - name: 概述
@@ -187,16 +199,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: 创建和管理检测规则
                       href: mtp/custom-detection-rules.md
-            - name: Microsoft 安全功能分数
-              items:
-                - name: 安全功能分数概述
-                  href: mtp/microsoft-secure-score.md
-                - name: 深入了解你的安全状况
-                  href: mtp/microsoft-secure-score-improvement-actions.md
-                - name: 跟踪分数历史记录并实现目标
-                  href: mtp/microsoft-secure-score-history-metrics-trends.md
-                - name: 即将推出的功能
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: 报告
               items:
                 - name: 监视和查看报告

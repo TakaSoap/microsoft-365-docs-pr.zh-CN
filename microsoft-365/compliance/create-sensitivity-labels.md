@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679076"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200024"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -53,17 +53,29 @@ ms.locfileid: "44679076"
     - 安全与合规中心：
         - **分类** > **灵敏度标签**
 
-2. 在“**标签**”选项卡上，选择“**+ 创建标签**”，以启动“**新建灵敏度标签**”向导 。
-
-3. 按照提示进行操作以设置标签。
+2. 在“**标签**”页面，选择“**+ 创建标签**”，以启动“新建灵敏度标签”向导。 
     
-    有关标签设置的详细信息，请参阅概述信息中的“[敏感度标签可以做什么](sensitivity-labels.md#what-sensitivity-labels-can-do)”。
+    例如，从 Microsoft 365 合规中心：
+    
+    ![创建敏感度标签](../media/create-sensitivity-label-full.png)
+    
+    注意：默认情况下，租户没有任何标签，你必须创建它们。 示例图片中的标签显示 [从 Azure 信息保护迁移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)的默认标签。
+
+3. 在向导中按照提示进行标签设置。
+    
+    有关标签设置的详细信息，请参阅概述信息中的“[敏感度标签有何用途](sensitivity-labels.md#what-sensitivity-labels-can-do)”并使用向导中针对单个设置的帮助。
 
 4. 重复这些步骤以创建更多标签。 但是，如果想要创建子标签，请先选择父标签，然后点击“**...**”并选择“**更多操作**”，然后选择“**添加子标签**”。
 
 5. 创建所需的所有标签后，请查看其顺序，如有必要，请向上或向下移动它们。 若要更改标签的顺序，请选择“**...**”进行**更多操作**”，然后选择 “**上移 **”或 “**下移**”。 有关详细信息，请参阅概述信息中的“[标签优先级（顺序非常重要）](sensitivity-labels.md#label-priority-order-matters)”。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”。 这将启动“**编辑敏感度标签**”向导，可用于更改步骤 3 中的所有标签设置。 
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”按钮：
+
+![编辑敏感度标签](../media/edit-sensitivity-label-full.png)
+
+此按钮将启动“**编辑敏感度标签**”向导，可用于更改步骤 3 中的所有标签设置。
+
+除非你了解对用户的影响，否则不要删除标签。 有关更多信息，请参阅[移除和删除标签](#removing-and-deleting-labels)部分。 
 
 > [!NOTE]
 > 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，即可对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
@@ -125,20 +137,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - 安全与合规中心：
         - **分类** > **灵敏度标签**
 
-2. 选择“**标签策略**”选项卡。
-
-3. 选择“**发布标签**”以启动“**创建策略向导**”。
-
-4. 选择 “**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
+2. 依次选择“**标签策略**”选项卡和“**发布标签**”，以启动“创建策略”向导：
     
-    > [!NOTE]
+    例如，从 Microsoft 365 合规中心：
+        
+    ![发布标签](../media/publish-sensitivity-labels-full.png)
+    
+    注意：默认情况下，租户没有任何策略，你必须创建它们。 
+
+3. 在想到中，选择“**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
+    
+    > [!IMPORTANT]
     > 如果选择子标签，请确保也选择其父标签。
     
-5. 查看所选标签，若要进行任何更改，请选择“**编辑 **”。 否则选择“**下一步**”。
+4. 查看所选标签，若要进行任何更改，请选择“**编辑 **”。 否则选择“**下一步**”。
 
-6. 按照提示配置策略设置。
+5. 按照提示配置策略设置。
     
-    有关这些设置的详细信息，请参阅概述信息中的“[标签策略可以做什么](sensitivity-labels.md#what-label-policies-can-do)”。
+    有关这些设置的详细信息，请参阅概述信息中的“[标签策略有何用途](sensitivity-labels.md#what-label-policies-can-do)”并使用向导中针对单个设置的帮助。
 
 7. 如果不同的用户或位置需要不同的策略设置，请重复这些步骤。 例如，希望为一组用户创建附加标签，或用户为子集创建不同的默认标签。
 
@@ -146,9 +162,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 完成向导会自动发布标签策略。 若要更改已发布的策略，只需对其进行编辑。 没有特定发布或重新发布操作可供选择。
 
-若要编辑现有标签策略，请将其选中，然后选择“**编辑策略**”。 这将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
+若要编辑现有标签策略，请将其选中，然后选择“**编辑策略**”按钮： 
 
-通常情况下，用户会在几个小时内查看其 Office 应用中的标签。 但是，可允许在 24 小时内将标签策略及其任何更改复制到所有用户和服务。
+![编辑敏感度标签](../media/edit-sensitivity-label-policy-full.png)
+
+此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
+
+用户在一小时内即可在其 Office 应用程序中看到新标签。 但是，最多需要 24 小时以将所做的更改复制到用户和服务。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 
@@ -174,7 +194,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - 对于桌面应用程序：元数据中的标签信息会保留，但由于无法再进行标签 ID 到名称的映射，导致用户看不到显示的已应用标签名称（例如，在状态栏中），因此用户会假定内容未标记。 如果标签应用了加密，则会保留加密，且用户仍会在内容打开时看到当前已存档保护模板的名称和说明。
 
-- 对于 Office 网页版：用户在状态栏或“敏感度”**** 列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 Onedrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
+- 对于 Office 网页版：用户在状态栏或“敏感度”**** 列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 OneDrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
+
+从标签策略中移除敏感度标签或删除敏感度标签时，这些更改最多可能需要一个小时才能复制到所有用户和服务。
 
 ## <a name="next-steps"></a>后续步骤
 

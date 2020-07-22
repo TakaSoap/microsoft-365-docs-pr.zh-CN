@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936923"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199622"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -109,11 +109,13 @@ ms.locfileid: "44936923"
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>创建和发布为网站和组配置的标签
 
-创建并发布敏感度标签后，团队、组和网站中的用户最长可能需要 24 小时才能看到该标签。 为网站和组设置配置标签后，请按照以下指南为你的用户发布标签：
+创建并发布新敏感度标签后，团队、组和网站中的用户可在 1 小时内能看到该标签。 但是，如果修改现有标签，最多需要 24 小时才能看到。 为网站和组设置配置标签后，请按照以下指南为你的用户发布标签：
 
 1. 创建并配置敏感度标签后，将此标签添加到仅应用于少数测试用户的标签策略。
 
-2. 等待 24 小时。
+2. 等待更改复制：
+    - 新标签：等待一小时。
+    - 现有标签：等待 24 小时。
 
 3. 在此等待期之后，使用测试用户帐户之一，创建具有在步骤 1 中创建的标签的团队、Microsoft 365 组或 SharePoint 网站。
 
@@ -121,7 +123,7 @@ ms.locfileid: "44936923"
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>修改为网站和组配置的已发布标签
 
-最佳做法是，在为团队、组或网站应用标签后，不要更改敏感度标签的网站和组设置。 如果这样做，最多需要 3 天的时间才能将更改复制到应用了标签的所有容器。 
+最佳做法是，在为团队、组或网站应用标签后，不要更改敏感度标签的网站和组设置。 如果这样做，请记住等待 24 小时，使更改复制到应用了标签的所有容器。 
 
 此外，如果所做的更改包括**外部用户访问**设置：
 
@@ -136,7 +138,7 @@ ms.locfileid: "44936923"
 
 1. 从包含敏感度标签的所有标签策略中删除该标签。
 
-2. 等待 48 小时。
+2. 等待一小时。
 
 3. 在此等待期之后，尝试创建团队、组或网站，并确认标签不再可见。
 
