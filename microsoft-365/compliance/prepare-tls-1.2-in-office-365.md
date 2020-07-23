@@ -1,28 +1,26 @@
 ---
 title: 在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
 description: 在停止对 TLS 1.0 和 1.1 的支持后，如何让 Office 365 和 Office 365 GCC 中的所有客户端-服务器和浏览器-服务器组合准备好使用 TLS 1.2。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: d3086c85adf76a322775ce53697504b77e672f9a
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: b76854442fd74dddddcef778ae03a9d76ceb3cc6
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024814"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372495"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
-
-> [!IMPORTANT]
-> 世界正处于病毒大流行之中，Microsoft 意识到这对我们的客户和合作伙伴会有很大影响。 为了减轻商业客户的负担，我们暂时停止了 TLS 1.0 和 1.1 的任何强制弃用。 在当前危机稳定后，将基于修订后的时间表发送更新。 （本文经过修订以反映更改。）
 
 ## <a name="summary"></a>摘要
 
@@ -34,7 +32,7 @@ ms.locfileid: "45024814"
 
 ## <a name="more-information"></a>更多信息
 
-自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于我们的 Office 365 商业客户，我们将停止 TLS 1.0 和 1.1 的任何强制弃用，直到有关 COVID-19 的情况稳定下来。
+自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于我们的 Office 365 商业客户，TLS 1.0 和1.1 的弃用将于10月15日的2020开始。
 
 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS1.2（或更高版本）以保持与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 

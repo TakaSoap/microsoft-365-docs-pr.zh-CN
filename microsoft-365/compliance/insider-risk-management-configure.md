@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b968de12a2dee9d6b820558af05f99c7be29763c
+ms.sourcegitcommit: b3316b947059d3a2e31acbf0ab57d2e000b662ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199686"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45255337"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -54,7 +54,7 @@ ms.locfileid: "45199686"
 | **内幕风险管理** | 使用此角色组可在单个组中管理组织的内幕风险管理。 通过添加指定管理员、分析师和调查人员的所有用户帐户，您可以在单个组中配置内幕风险管理权限。 此角色组包含所有内幕风险管理权限角色。 此配置是快速开始使用 "内幕风险管理" 的最简单方法，非常适合于不需要为单独的用户组定义单独权限的组织。|
 | **内幕风险管理管理员** | 使用此角色组最初配置内幕风险管理和更高版本，以便将内幕风险管理员与定义的组分离。  此角色组中的用户可以创建、读取、更新和删除内幕风险管理策略、全局设置和角色组分配。 |
 | **内幕风险管理分析师** | 使用此组可将权限分配给将充当内幕风险案例分析人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例和通知模板。 他们无法访问内幕风险内容浏览器。 |
-| **内幕风险管理调查人员** | 使用此组可将权限分配给将充当内部人员风险数据调查人员的用户。 在所有情况下，此角色组中的用户都可以访问所有内幕风险管理警报、案例、通知模板和内容资源管理器。 |
+| **内幕风险管理调查人员** | 使用此组可将权限分配给将充当内部人员风险数据调查人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例、通知模板和内容浏览器。 |
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>将用户添加到 "内幕风险管理" 角色组
 
