@@ -169,6 +169,8 @@
       href: tls-1-2-in-office-365-gcc.md
     - name: Office 365 中的 TLS 1.2
       href: prepare-tls-1.2-in-office-365.md
+    - name: 用于 Microsoft 365 公共预览版的双密钥加密
+      href: double-key-encryption.md
     - name: 客户密钥
       items:
         - name: 使用 Office 365 中的客户密钥执行服务加密

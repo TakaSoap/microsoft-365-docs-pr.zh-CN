@@ -13,12 +13,12 @@ ms.collection:
 - SPO_Content
 ms.custom: ''
 description: 在你的组织中，逐步完成对 SharePoint 的价值规划、推广和推动过程。
-ms.openlocfilehash: 6b0483073a836f29b1faa5a30018848ef7b2df34
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 77beb26065a9ecfd37acf976e7415cc870ff8ea4
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268205"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201494"
 ---
 # <a name="deploy-sharepoint-and-onedrive-for-microsoft-365-enterprise"></a>为 Microsoft 365 企业版部署 SharePoint 和 OneDrive
 
@@ -85,12 +85,11 @@ SharePoint 可用于不同用途。需要确定哪些用途能够满足业务需
 
 若要自行计划（或结合使用 FastTrack），需要确定网络和组织是否都已具备使用 SharePoint 的条件。 在底层基础结构中满足[网络退出条件](networking-exit-criteria.md)尤其重要，需要特别注意 Internet 带宽、吞吐量和流量延迟，以最大限度地提升基于 SharePoint 文档的附加流量的性能。
 
-使用 [迁移至 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)，为 SharePoint 推出做好准备： 
+使用 [迁移至 SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)，为 SharePoint 推出做好准备。
 
 若要更好地了解 SharePoint 安全性，请参阅以下资源：
-
--     [SharePoint 和 OneDrive 如何保护云数据](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--     [OneDrive 和 SharePoint 中的数据加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+- [SharePoint 和 OneDrive 如何保护云数据](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+- [OneDrive 和 SharePoint 中的数据加密](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### <a name="result"></a>结果
 

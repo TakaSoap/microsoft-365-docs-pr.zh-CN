@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726832"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204859"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -352,14 +352,14 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
    - **发送最终用户垃圾邮件通知的间隔天数**：选择通知发送频率。 默认值为 3 天。 可输入介于 1 和 15 天之间的值。
 
-     在 24 小时内，有 3 个从以下时间开始计时的最终用户垃圾邮件通知周期：01:00 UTC、08:00 UTC 和 16:00 UTC。 
+     在 24 小时内，有 3 个从以下时间开始计时的最终用户垃圾邮件通知周期：01:00 UTC、08:00 UTC 和 16:00 UTC。
 
      > [!NOTE]
      > 如果我们在上一个周期中错过了通知，则后续周期会推送通知。 这可能会在同一天内显示多个通知。
 
-   - **通知语言**：单击下拉列表，并从列表中选择可用语言。 默认值是 **“默认”**，表示最终用户隔离通知使用 EOP 组织的默认语言。
+   - **通知语言**：单击下拉列表，并从列表中选择可用语言。 默认值是**默认**，这意味着基于云的组织的默认语言。
 
-   完成后，单击 **“保存”**。
+   完成时，请单击“保存”****。
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-spam-policies"></a>使用安全与合规中心删除反垃圾邮件策略
 
