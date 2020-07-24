@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 了解如何阅读和了解 Microsoft 商业产品的帐单或发票。
 keywords: 帐单帐户、组织信息、发票
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402638"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391514"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解你的帐单或发票
 
@@ -79,11 +79,11 @@ ms.locfileid: "44402638"
 
 行项目详细信息取决于所收费产品的类型。 例如，对于 Azure 产品，将显示应用的 Azure 点数的数量。 基于座位的产品显示单价和数量。 发票详细信息显示已采购的产品、已应用的折扣或片尾、税率和金额以及明细项目总计。
 
-    `Total = Charges - Azure Credit + Tax`
+> Total = 费用-Azure 信用卡 + 税
 
 每个服务系列的到期总金额是通过从信用/费用中减去 Azure 信用和加税来计算的：
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> 总计 = 费用/片尾-Azure 信用卡 + 税
 
 如果你希望更详细了解你的发票上的 Azure 费用，请参阅[查看你的 Microsoft 客户协议发票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
@@ -151,7 +151,7 @@ ms.locfileid: "44402638"
 
 Azure 预付款仅作为付款方法提供给符合条件的 Azure 产品和服务。
 
-## <a name="need-help-contact-support"></a>是否需要帮助？ 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
 
 如果你在使用 Azure 信用时遇到疑问或需要帮助，请<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">创建支持 azure 支持的支持请求</a>。
 

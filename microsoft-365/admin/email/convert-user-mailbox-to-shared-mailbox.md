@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: c4f71f12b430e239f5ea5791ba5b98a3109452b0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400108"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391526"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -57,7 +57,7 @@ ms.locfileid: "44400108"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户的名称。
 
@@ -72,7 +72,7 @@ ms.locfileid: "44400108"
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -82,7 +82,7 @@ ms.locfileid: "44400108"
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
 2. 选择要转换其邮箱的用户。
 
@@ -94,6 +94,9 @@ ms.locfileid: "44400108"
 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
+
+> [!NOTE]
+> 共享邮箱不需要单独的许可证。 但是，如果你想要启用就地存档或将就地保留或诉讼保留置于共享邮箱，则必须向邮箱分配带有 Exchange Online Archiving 的 Exchange Online 计划 1 或 Exchange Online 计划 2 许可证。
 
 
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>转换已删除用户的邮箱
@@ -113,6 +116,7 @@ ms.locfileid: "44400108"
 6. 完成此操作后，您可以从用户的邮箱中删除许可证。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。
     
 7. 将成员添加到共享邮箱。
+
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>将共享邮箱转换回用户的（专用）邮箱
 

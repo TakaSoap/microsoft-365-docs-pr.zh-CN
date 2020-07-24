@@ -1,5 +1,5 @@
 ---
-title: 符合 GDPR 和 CCPA 的适用于 Windows 数据主体请求的数据处理者服务
+title: 符合 GDPR 和 CCPA 的适用于 Windows 企业数据主体请求的数据处理者服务
 description: 了解如何使用 Microsoft 产品、服务和管理工具来查找和处理个人数据以响应 DSR。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
@@ -15,17 +15,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
+ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023588"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45374798"
 ---
-# <a name="data-processor-service-for-windows-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的适用于 Windows 数据主体请求的数据处理者服务 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的适用于 Windows 企业数据主体请求的数据处理者服务 
 
 >[!NOTE]
->本主题面向 Windows 预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。 若要了解有关计划的详细信息并同意使用条款，请参阅 [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview)。
+>本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。 若要了解有关计划的详细信息并同意使用条款，请参阅 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>数据主体请求 (DSR) 简介 
 一般数据保护条例 (GDPR) 赋予民众（在条例中称为_数据主体_）权利，即管理已由雇主或其他类型机构或组织（称为_数据控制者_或简称为_控制者_）收集的个人数据。 根据 GDPR，个人数据的定义非常宽泛，即指与已识别或可识别的自然人相关的任何数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。 数据主体向控制者发出的对其个人数据执行操作的正式请求，称为_数据主体请求_ (DSR)。 
@@ -57,11 +57,11 @@ ms.locfileid: "45023588"
 
 ## <a name="how-to-use-this-guide"></a>如何使用本指南 
 
-在对 Windows 注册设备使用数据处理者服务时，Windows 会生成一些信息（称为 Windows 诊断数据），以提供该服务。
+在对 Windows 企业注册设备使用数据处理者服务时，Windows 会生成一些信息（称为 Windows 诊断数据），以提供该服务。
 
 ## <a name="windows-diagnostic-data"></a>Windows 诊断数据 
 
-Microsoft 为你提供了访问、删除和导出与用户使用 Windows 数据处理者服务相关的 Windows 诊断数据的功能。
+Microsoft 为你提供了访问、删除和导出与用户使用 Windows 企业数据处理者服务相关的 Windows 诊断数据的功能。
 
 >[!IMPORTANT]
 >不支持修正 Windows 诊断数据的功能。 Windows 诊断数据构成 Windows 内执行的实际操作，对此类数据的修改将会损坏操作的历史记录，增加安全风险并危害可靠性。 文档中涵盖的所有数据都被视为 Windows 诊断数据。 
@@ -72,7 +72,7 @@ Microsoft 让你能够通过 Azure 门户访问、删除和导出某些 Windows 
 
 ### <a name="step-1-access"></a>步骤 1：访问 
 
-租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 注册设备的数据处理者服务的使用有关）的人员。 为访问请求检索到的数据将通过导出方式，以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 
+租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为访问请求检索到的数据将通过导出方式，以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 
 
 Microsoft 提供了门户体验，让企业客户的租户管理员能够管理 DSR 访问请求。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户以导出方式执行 DSR 访问请求。
 
@@ -91,7 +91,7 @@ Microsoft 提供通过预先存在的应用程序编程接口 (API) 直接删除
 
 ### <a name="step-3-export"></a>步骤 3：导出 
 
-租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 注册设备的数据处理者服务的使用有关）的人员。 为导出请求检索到的数据将以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户执行 DSR 导出请求。 
+租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为导出请求检索到的数据将以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户执行 DSR 导出请求。 
 
 Microsoft 提供通过预先存在的应用程序编程接口 (API) 直接导出客户数据的功能。 有关详细信息，请参阅 [API 参考文档](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)。
 

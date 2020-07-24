@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126405"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391550"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -38,6 +38,7 @@ ms.locfileid: "45126405"
 ## <a name="julyaugust-2020"></a>7月/8 月2020 
 
 - [体验对求职体验的改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>3月/4 月2020
 
@@ -63,11 +64,6 @@ ms.locfileid: "45126405"
 - [导出 URL 单击数据以进行脱机分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)（OFFICE 365 ATP 计划1或计划2）
 
 - [使用 Office 365 ATP 中的市场活动视图（**预览**）](campaigns.md)
-
-## <a name="july-2020"></a>2020月 
- 
-- [体验对求职体验的改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>2019 年 11 月
 

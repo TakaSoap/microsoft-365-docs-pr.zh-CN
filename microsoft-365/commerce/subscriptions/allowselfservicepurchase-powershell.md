@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 启用或禁用自助购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ec5ebe814066916de5cafc176cdcd82bfd416a57
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403686"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391538"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -33,7 +33,7 @@ ms.locfileid: "44403686"
 - 查看适用产品的列表以及是否启用或禁用自助式购买
 - 查看或修改特定产品的当前设置以启用或禁用该产品
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 若要使用**MSCommerce** PowerShell 模块，需要具备以下条件：
 
@@ -126,14 +126,13 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 **问题**
 
 您会看到以下错误消息：
 
-    HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying
-    connection was closed: An unexpected error occurred on a send.
+> HandleError：无法使用 PolicyId ' AllowSelfServicePurchase ' 检索策略，错误-基础连接已关闭：发送时发生意外错误。
 
 这可能是由于较旧版本的传输层安全性（TLS）造成的。 若要连接此服务，您需要使用 TLS 1.2 或更高版本
 
