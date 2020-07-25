@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: 5a04e97b341c66a78010e7255554be72aa073593
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199726"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391504"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -66,16 +66,16 @@ ms.locfileid: "45199726"
     
 3. 事件类型是“产品生存期”，即事件是特定产品的生存期结束。当相应事件类型的事件（在本示例中，为产品生存期结束）发生时，创建指定以下信息的事件：
     
-  - 资产 ID（对于 SharePoint 和 OneDrive 文档）
+   - 资产 ID（对于 SharePoint 和 OneDrive 文档）
     
-  - 关键字（对于 Exchange 项）。在本示例中，组织在包含产品记录的邮件中使用产品代码，因此 Exchange 项的关键字与 SharePoint 和 OneDrive 文档的资产 ID 相同。
+   - 关键字（对于 Exchange 项）。在本示例中，组织在包含产品记录的邮件中使用产品代码，因此 Exchange 项的关键字与 SharePoint 和 OneDrive 文档的资产 ID 相同。
     
-  - 事件发生日期。此日期用作保留期的开始日期。该日期可以是当前日期、过去日期或未来日期。
-    
-4. 在你创建事件后，相应事件日期就会同步到符合以下条件的所有内容：具有相应事件类型的保留标签，且包含指定的资产 ID 或关键字。 与任何保留标签一样，这种同步最长可能需要 7 天才能完成。 在上图中，所有用红色圈起来的项的保留期都是由此事件触发的。 换言之，当此产品的生存期结束时，相应事件就会触发此产品的记录的保留期。
-    
+   - 事件发生日期。此日期用作保留期的开始日期。该日期可以是当前日期、过去日期或未来日期。
+
+4. 在你创建事件后，相应事件日期就会同步到符合以下条件的所有内容：具有相应事件类型的保留标签，且包含指定的资产 ID 或关键字。 与任何保留标签一样，这种同步最长可能需要七天才能完成。 在上图中，所有用红色圈起来的项的保留期都是由此事件触发的。 换言之，当此产品的生存期结束时，相应事件就会触发此产品的记录的保留期。
+
 请务必注意，如果没有为事件指定资产 ID 或关键字，则具有该事件类型标签的**所有内容**均由该事件触发保留期。 也就是说，在上图中，所有内容将开始被保留。 这可能并非如你所愿。 
-  
+
 最后，请注意，每个保留标签都有自己的保留设置。 在此示例中，它们全都指定保留 10 年，但事件也可触发保留期不同的各个保留标签。
   
 ## <a name="how-to-set-up-event-driven-retention"></a>如何设置事件驱动保留
@@ -190,9 +190,7 @@ ms.locfileid: "45199726"
   
 ## <a name="automate-events-by-using-powershell"></a>使用 PowerShell 自动触发事件
 
-Microsoft 365 合规性中心可用于手动创建事件，并且不支持在事件发生时自动触发事件。 但是，可以使用 Rest API 自动触发事件。 有关详细信息，请参阅[自动执行基于事件的保留](automate-event-driven-retention.md)。
-
-此外，还可使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 适用于基于事件的保留的 PowerShell cmdlet：
+可以使用 PowerShell 脚本从业务应用程序中自动执行基于事件的保留。 适用于基于事件的保留的 PowerShell cmdlet：
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -206,4 +204,257 @@ Microsoft 365 合规性中心可用于手动创建事件，并且不支持在事
     
 - [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
     
+
+## <a name="automate-events-by-using-a-rest-api"></a>使用 REST API 自动触发事件
+
+可使用 REST API 自动创建用于触发保留期开始的事件。
+
+REST API 是一个支持多组 HTTP 操作（方法）的服务终结点，提供对服务资源的创建/检索/更新/删除操作权限。 有关详细信息，请参阅 [REST API 请求/响应组件](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)。 通过使用 Microsoft 365 REST API，可以使用 POST 和 GET 方法来创建和检索事件。
+
+使用 REST API 有两种选择：
+
+- **Microsoft Power Automate 或类似的应用程序**，可用于自动触发事件的发生。 Microsoft Power Automate 是一种用于连接其他系统的协调程序，你无需编写自定义解决方案。 有关详细信息，请参阅 [Power Automate 网站](https://flow.microsoft.com/zh-CN/)。
+
+- **通过 PowerShell 或 HTTP 客户端调用 REST API**，可使用 PowerShell（版本 6 或更高版本）创建事件，它是自定义解决方案的一部分。
+
+在使用 REST API 之前，请以全局管理员身份，确认要用于保留事件调用的 URL。 为此，请使用 REST API URL 运行 GET 保留事件调用：
+
+```console
+https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+```
+
+检查响应代码。 如果是 302，则从响应标头的 Location 属性获取重定向 URL，并使用该 URL，而不是随后说明中的 `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`。
+
+通过在 Microsoft 365 合规中心 >“**记录管理**” >  “**事件**”中进行查看，确认自动创建的事件。
+
+### <a name="use-microsoft-power-automate-to-create-the-event"></a>使用 Microsoft Power Automate 创建事件
+
+使用 Microsoft 365 REST API 创建用于创建事件的流：
+
+![使用流创建事件](../media/automate-event-driven-retention-flow-1.png)
+
+![使用流调用 REST API](../media/automate-event-driven-retention-flow-2.png)
+
+#### <a name="create-an-event"></a>创建事件
+
+用于调用 REST API 的示例代码：
+
+- **方法**：POST
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **标头**：键 = Content-Type，值 = application/atom+xml
+- **正文**：
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+    
+- **身份验证**: 基本
+- **用户名**: "Complianceuser"
+- **密码**: "Compliancepassword"
+
+
+##### <a name="available-parameters"></a>可用参数
+
+
+|参数|说明|注释|
+|--- |--- |--- |
+|<d:Name></d:Name>|为事件提供唯一的名称，|不能包含尾随空格或以下字符：% * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|输入事件类型名称（或 Guid），|示例：“雇佣终止”。 事件类型必须与保留标签相关联。|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|输入“ComplianceAssetId:” + 员工 ID|示例："ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|事件日期和时间|格式：yyyy-MM-ddTHH:mm:ssZ，示例：2018-12-01T00:00:00Z
+|
+
+###### <a name="response-codes"></a>响应代码
+
+| 响应代码 | 说明       |
+| ----------------- | --------------------- |
+| 302               | 重定向              |
+| 201               | 已创建               |
+| 403               | 授权失败  |
+| 401               | 身份验证失败 |
+
+##### <a name="get-events-based-on-a-time-range"></a>根据时间范围获取事件
+
+- **方法**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>响应代码
+
+| 响应代码 | 说明                   |
+| ----------------- | --------------------------------- |
+| 200               | 正常，atom+ xml 中的事件列表 |
+| 404               | 未找到                         |
+| 302               | 重定向                          |
+| 401               | 授权失败              |
+| 403               | 身份验证失败             |
+
+##### <a name="get-an-event-by-id"></a>按 ID 获取事件。
+
+- **方法**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
+###### <a name="response-codes"></a>响应代码
+
+| 响应代码 | 说明                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | 正常，响应正文包含 atom+xml 中的事件 |
+| 404               | 未找到                                            |
+| 302               | 重定向                                             |
+| 401               | 授权失败                                 |
+| 403               | 身份验证失败                                |
+
+##### <a name="get-an-event-by-name"></a>按名称获取事件
+
+- **方法**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **标头**：键 = Content-Type，值 = application/atom+xml
+
+- **身份验证**: 基本
+
+- **用户名**: "Complianceuser"
+
+- **密码**: "Compliancepassword"
+
+
+###### <a name="response-codes"></a>响应代码
+
+| 响应代码 | 说明                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | 正常，响应正文包含 atom+xml 中的事件 |
+| 404               | 未找到                                            |
+| 302               | 重定向                                             |
+| 401               | 授权失败                                 |
+| 403               | 身份验证失败                                |
+
+### <a name="use-powershell-or-any-http-client-to-create-the-event"></a>使用 PowerShell 或任何 HTTP 客户端创建事件
+
+PowerShell 必须是版本 6 或更高版本。
+
+在 PowerShell 会话中，运行以下脚本：
+
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
 
