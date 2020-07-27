@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204859"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372557"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -357,7 +357,7 @@ EOP 中反垃圾邮件策略的基本要素如下：
      > [!NOTE]
      > 如果我们在上一个周期中错过了通知，则后续周期会推送通知。 这可能会在同一天内显示多个通知。
 
-   - **通知语言**：单击下拉列表，并从列表中选择可用语言。 默认值是**默认**，这意味着基于云的组织的默认语言。
+   - **通知语言**：单击下拉列表，并从列表中选择可用语言。 默认值是“默认”****（即英语）。
 
    完成时，请单击“保存”****。
 
