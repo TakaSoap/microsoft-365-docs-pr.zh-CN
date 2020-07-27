@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 此解决方案说明了如何使用保留标签管理存储在 SharePoint Online 中的产品相关文档的生命周期。 可通过使用文档元数据对内容进行分类来完成此操作，具体方法是自动应用保留标签并配置基于事件的保留。
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199846"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387449"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留标签管理 SharePoint 文档的生命周期
 
@@ -124,10 +124,10 @@ ms.locfileid: "45199846"
 1. 在“**基于以下条件保留或删除内容**”下拉列表中，选择“**事件**”。
 
 2. 选择“**选择事件类型**”。
+    
+    ![为产品规范标签新建事件类型](../media/SPRetention6.png)
 
-   ![为产品规范标签新建事件类型](../media/SPRetention6.png)
-
-3. 在“**选择事件类型**”页面上，选择“**你可以在此处创建新的事件类型**”。
+3. 选择“选择事件类型”****。 然后在“选择事件类型”**** 页上，选择“创建新的事件类型”****。
 
 4. 创建名为“**产品停产**”的事件类型，提供说明，然后选择“**完成**”以创建它。 
 
@@ -252,7 +252,7 @@ KQL 不能在搜索查询中使用已爬网属性。 它必须使用托管属性
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>验证保留标签是否已自动应用
 
-7 天后，使用合规中心内的“[标签活动资源管理器](view-label-activity-for-documents.md)”查看我们创建的标签策略是否已自动将此方案中的保留标签应用于产品文档。 
+7 天后，使用合规中心内的[活动资源管理器](data-classification-activity-explorer.md)查看我们创建的标签策略是否已自动将此方案中的保留标签应用于产品文档。 
 
 另一个验证步骤是查看文档库中文档的属性。 在信息面板中，你可以看到保留标签已应用于所选文档。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 35a8a7a00c8374dd938a3c05e3ffe0c3c85fd347
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b435d80a6f2ce4f056e446bbc32e5580d063d4a9
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199606"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372475"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -164,7 +164,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
 
 - **将默认保留标签应用于 SharePoint 中的文档库、文件夹或文档集**，以让存储在该位置的所有文档都继承默认保留标签。
 
-此外，保留标签支持跨 Microsoft 365 应用和服务对电子邮件和文档实施[记录管理](records-management.md)。 你可以使用保留标签将内容分类为记录。 如果发生这种情况，并且内容仍保留在 Microsoft 365 中，则无法更改或删除标签，也不能编辑或删除内容。 
+此外，保留标签支持跨 Microsoft 365 应用和服务对电子邮件和文档实施[记录管理](records-management.md)。 你可以使用保留标签将内容分类为记录。 如果发生这种情况，而内容仍保留在 Microsoft 365 中，则标签会对内容进行进一步的限制，这可能是监管原因所致。 有关详细信息，包括允许或禁止操作的比较，请参阅[了解记录](records.md)。
 
 如果内容被移动到 Microsoft 365 之外，则保留标签将不会继续存在，这一点与[敏感度标签](sensitivity-labels.md)是不同的。
 

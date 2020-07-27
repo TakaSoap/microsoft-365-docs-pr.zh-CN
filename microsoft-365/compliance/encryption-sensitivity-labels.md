@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
-ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
+ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201432"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229432"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -210,7 +210,8 @@ ms.locfileid: "45201432"
 
 ### <a name="double-key-encryption"></a>双密钥加密
 
-此功能目前为公共预览版。
+> [!NOTE]
+> 此功能目前在公共预览版中推出。 有关详细信息，请参阅[公布 Microsoft 365 双密钥加密的公共预览版](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
 
 只有配置了双密钥加密服务，并且需要为应用了此标签的文档和电子邮件使用此双密钥加密后，才可选择此选项。
 
@@ -369,9 +370,9 @@ ms.locfileid: "45201432"
 
 - 如果你的组织未[启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签](sensitivity-labels-sharepoint-onedrive-files.md)：
     
-    - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。 
+    - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。
     - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。
-    - 用户无法使用 Office 网页版打开加密文件。 如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括已通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）以及在不使用敏感度标签的情况下应用的加密。
+    - 用户无法使用 Office 网页版打开加密文件。 如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括已通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
 
 - 要使多名用户同时编辑一个加密文件，这些用户必须全都在使用 Web 版 Office。 如果不是这种情况且文件已打开：
     

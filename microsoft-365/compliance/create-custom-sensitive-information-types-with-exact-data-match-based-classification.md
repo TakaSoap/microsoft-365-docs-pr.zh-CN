@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b29ff790dbfafb281325879904fe5bfa71fdcf17
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023333"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229412"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -39,7 +39,7 @@ ms.locfileid: "45023333"
 
 ![基于 EDM 的分类](../media/EDMClassification.png)
 
-基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1000 万行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
@@ -67,7 +67,7 @@ ms.locfileid: "45023333"
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
 1. 确定要使用的敏感信息。 将数据导出到应用（如 Microsoft Excel），然后以 .csv 格式保存文件。 数据文件最多可包括以下内容：
-      - 高达 1000 万行的敏感数据
+      - 高达 1 亿行的敏感数据
       - 每个数据源最多 32 列（字段）
       - 最多 5 个列（字段）标记为可搜索
 
