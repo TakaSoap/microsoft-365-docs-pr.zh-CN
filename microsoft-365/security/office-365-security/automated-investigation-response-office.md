@@ -131,7 +131,7 @@ ms.locfileid: "44208907"
 
 <span data-ttu-id="cd922-201">使用 "**操作**" 菜单，可以选择**触发调查**。</span><span class="sxs-lookup"><span data-stu-id="cd922-201">Using the **Actions** menu, you can select **Trigger investigation**.</span></span>
 
-:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="选定邮件的 "操作" 菜单":::
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="选定邮件的 操作 菜单":::
 
 <span data-ttu-id="cd922-203">与由警报触发的行动手册类似，通过资源管理器中的视图触发的自动调查包括根调查、标识和关联威胁的步骤以及缓解这些威胁的建议操作。</span><span class="sxs-lookup"><span data-stu-id="cd922-203">Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.</span></span>
 
