@@ -220,7 +220,7 @@ ms.locfileid: "45387439"
 
 <span data-ttu-id="d5f66-253">此图显示了为角色授权正确设置文件格式的**appsettings.js** 。</span><span class="sxs-lookup"><span data-stu-id="d5f66-253">This image shows the **appsettings.json** file correctly formatted for role authorization.</span></span>
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="对显示角色授权方法的文件appsettings.js":::
+   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="对显示角色授权方法的文件 appsettings.js":::
 
 #### <a name="tenant-and-key-settings"></a><span data-ttu-id="d5f66-255">租户和密钥设置</span><span class="sxs-lookup"><span data-stu-id="d5f66-255">Tenant and key settings</span></span>
 
@@ -526,7 +526,7 @@ https://localhost:5001/TestKey1
 
 <span data-ttu-id="d5f66-430">例如：</span><span class="sxs-lookup"><span data-stu-id="d5f66-430">For example:</span></span>
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="在 Microsoft 365 合规性中心中选择 "使用双重密钥加密"":::
+:::image type="content" source="../media/dke-use-dke.png" alt-text="在 Microsoft 365 合规性中心中选择 使用双重密钥加密":::
 
 <span data-ttu-id="d5f66-432">您添加的任何 DKE 标签将为适用于企业的 Microsoft 365 应用程序的最新版本中的用户显示。</span><span class="sxs-lookup"><span data-stu-id="d5f66-432">Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.</span></span>
 

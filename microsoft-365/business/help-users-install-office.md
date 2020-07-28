@@ -61,7 +61,7 @@ ms.locfileid: "44786230"
 4. <span data-ttu-id="c63fa-114">在**电子邮件用户上下载 "Office 面板" 的链接**中，选择要发送电子邮件的用户，然后**通过电子邮件发送选定用户**。</span><span class="sxs-lookup"><span data-stu-id="c63fa-114">On the **Email users a link to download Office** panel, select the users you want to email, and then **Email selected users**.</span></span>
 
     
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="选择 "用户"，通过 Office 下载链接发送电子邮件。":::
+      :::image type="content" source="../media/sendemailtousers.png" alt-text="选择 用户，通过 Office 下载链接发送电子邮件。":::
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a><span data-ttu-id="c63fa-116">有关设置和使用 Microsoft 365 商业高级版的详细信息</span><span class="sxs-lookup"><span data-stu-id="c63fa-116">For more on setting up and using Microsoft 365 Business Premium</span></span>
 

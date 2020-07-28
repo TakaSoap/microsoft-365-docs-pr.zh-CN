@@ -102,7 +102,7 @@ ms.locfileid: "45015989"
 
 <span data-ttu-id="e0107-160">嗯，我们做了！</span><span class="sxs-lookup"><span data-stu-id="e0107-160">Well, we did it!</span></span> <span data-ttu-id="e0107-161">我们已采用了统一角色体验的第二步，你现在可以在 Microsoft 365 管理中心管理 Intune 角色。</span><span class="sxs-lookup"><span data-stu-id="e0107-161">We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center.</span></span> <span data-ttu-id="e0107-162">您还可以利用功能（如搜索角色和查看角色权限的功能）。</span><span class="sxs-lookup"><span data-stu-id="e0107-162">You can also leverage features such as the ability to search for roles and view role permissions.</span></span> <span data-ttu-id="e0107-163">这意味着，您不需要两个单独的工具来管理 Microsoft 365 和 Intune 的角色。</span><span class="sxs-lookup"><span data-stu-id="e0107-163">This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune.</span></span> <span data-ttu-id="e0107-164">登录到 Microsoft 365 管理中心后，你将看到 "角色" 页面上有两个透视，一个用于 Azure AD，另一个用于 Intune。</span><span class="sxs-lookup"><span data-stu-id="e0107-164">When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.</span></span>
 
-:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="选择了 Intune 数据透视的 "角色" 页":::
+:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="选择了 Intune 数据透视的 角色 页":::
 
 ### <a name="sync-message-center-posts-to-planner"></a><span data-ttu-id="e0107-166">将邮件中心发布内容同步到规划器</span><span class="sxs-lookup"><span data-stu-id="e0107-166">Sync Message Center posts to Planner</span></span>
 
