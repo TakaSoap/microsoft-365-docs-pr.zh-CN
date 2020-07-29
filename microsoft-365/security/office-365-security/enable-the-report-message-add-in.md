@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588224"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430503"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -49,10 +49,7 @@ Outlook 和 web 上的 Outlook （以前称为 "Outlook Web App"）的报告邮�
   - Outlook 2016 for Mac
   - Outlook 包含在适用于企业的 Microsoft 365 应用程序中
 
-- 报告邮件外接程序目前不可用于：
-
-  - 内部部署 Exchange 组织中的邮箱
-  - GCC、GCC 高或 DoD 订阅
+- 报告消息外接程序对本地 Exchange 组织中的邮箱不可用。
 
 - 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅[在 Exchange Online 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
 

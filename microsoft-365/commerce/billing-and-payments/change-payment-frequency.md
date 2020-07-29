@@ -1,5 +1,5 @@
 ---
-title: 更改付款频率
+title: 更改你的记帐频率
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何更改为你的业务订阅计费的频率。
-ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402650"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429998"
 ---
-# <a name="change-your-payment-frequency"></a>更改付款频率
+# <a name="change-your-billing-frequency"></a>更改你的记帐频率
 
 ::: moniker range="o365-21vianet"
 
@@ -37,7 +37,7 @@ ms.locfileid: "44402650"
 
 ::: moniker-end
 
-在购买订阅时，选择每月或每年的帐单。 若要更改订阅的计费频率，请执行以下步骤。
+在购买订阅时，选择每月或每年的帐单。 若要更改订阅的计费频率，请按照以下步骤操作。
 
 1. 在管理中心中，转到 "**付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
 

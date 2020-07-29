@@ -1,17 +1,17 @@
 ---
 title: 合规性
 description: 本文列出了与 Microsoft 托管桌面相关的合规性标准。
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322013"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434285"
 ---
 # <a name="compliance"></a>合规性
 
@@ -38,7 +38,7 @@ Microsoft 托管桌面已实现以下认证：
 您可以在[服务信任门户（STP）](https://servicetrust.microsoft.com/)中查找相关信息，包括控制和技术要求，其中中央存储库提供有关 Microsoft 云服务产品的此类信息。 您可以从 STP 的 "[审核报告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)" 部分下载审核员报告、合规性证书等更多。
 
 > [!NOTE]
-> 由于 Microsoft 托管桌面在 Azure 上运行，因此相关文档通常具有诸如 "Microsoft Azure、Dynamics 365 和其他在线服务" 的文件名。 在这些文档中，通常可以在 "监控 + 管理" 类别下找到 Microsoft 托管桌面。
+> 由于 Microsoft 托管桌面在 Azure 上运行，因此相关文档通常具有诸如 "Microsoft Azure、Dynamics 365 和其他在线服务" 的文件名。 在这些文档中，通常可以在 "Microsoft Online Services" 或 "Monitoring + Management" 类别下找到 Microsoft 托管桌面。
 
 ## <a name="shared-responsibility"></a>共享责任
 

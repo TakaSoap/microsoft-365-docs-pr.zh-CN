@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在组织内部和外部的人员之间发送和接收加密的电子邮件。
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818727"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429928"
 ---
 # <a name="message-encryption"></a>邮件加密
 
@@ -60,7 +60,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 
 Office 365 高级邮件加密功能使您可以创建多个品牌打造模板，以便您可以微调对收件人邮件的控制并创建自定义品牌打造体验以支持不同的组织结构。
 
-Microsoft 365 中的高级邮件加密帮助您满足合规性义务，这些要求需要更灵活地控制外部收件人对加密电子邮件的访问。 使用 Office 365 中的高级邮件加密作为管理员，您可以控制在组织外共享的敏感电子邮件，并通过自动策略检测敏感信息类型（如 PII、财务或运行状况 Id）或关键字以通过将安全 web 门户转到加密电子邮件进行访问来增强保护。 此外，作为管理员，您可以通过 Microsoft 365 web 门户进一步控制从外部访问的加密电子邮件，方法是随时撤销对电子邮件的访问权限。
+Microsoft 365 中的高级邮件加密帮助您满足合规性义务，这些要求需要更灵活地控制外部收件人对加密电子邮件的访问。 使用 Office 365 中的高级邮件加密作为管理员，您可以控制在组织外共享的敏感电子邮件，通过自动策略检测敏感信息类型（例如，PII、财务或运行状况 Id）或关键字以通过将安全 web 门户转到加密电子邮件来增强保护。 作为管理员，你可以随时撤销对电子邮件的访问权限，从而进一步控制通过 Microsoft 365 web 门户访问的加密电子邮件。
 
 邮件吊销和过期仅适用于您的用户向组织外部的收件人发送的电子邮件。 此外，收件人必须通过 web 门户访问电子邮件。 为了确保收件人使用门户接收电子邮件，您设置了一个应用包装的自定义品牌模板。 然后，在邮件流规则中应用品牌模板。 有关高级邮件加密的详细信息，请参阅[Office 365 高级邮件加密](ome-advanced-message-encryption.md)。
 

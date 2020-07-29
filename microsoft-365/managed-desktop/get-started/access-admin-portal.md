@@ -9,16 +9,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 17696b18b4109b568bb1d616813ba40e2a9dccdc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146261"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430467"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-你的 Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常情况下使用和自定义 Azure 门户体验的详细信息，请参阅[azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 
+你的 Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常情况下使用和自定义 Azure 门户体验的详细信息，请参阅[azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 在预览中，您还可以在[Microsoft 终结点管理器](https://endpoint.microsoft.com/)中找到 Microsoft 托管桌面。 如果你不熟悉此门户的设备管理功能，请参阅[Microsoft 终结点管理器文档](https://docs.microsoft.com/mem/)。
 
 您的管理帐户需要特定的权限才能访问 Microsoft 托管桌面管理门户。 通过使用基于角色的访问控制（RBAC），可以管理对组织中这些功能的管理员访问。 有关 Azure Active Directory 角色的详细信息，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 

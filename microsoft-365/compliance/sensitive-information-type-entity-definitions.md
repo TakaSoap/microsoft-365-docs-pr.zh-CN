@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 安全合规性中心中的数据丢失防护（DLP） &amp; 包括为您准备好在 DLP 策略中使用的80敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: 9e1b1261bbb58b1ca65818a5ad304ee186561ae6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084131"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430515"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -370,30 +370,19 @@ OR
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 95% 确信它检测到这种类型的敏感信息：
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_australian_medical_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_Australia_Medical_Account_Number 中的一个关键字。
 - 校验和通过。
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_australian_medical_account_number 找到与该模式匹配的内容。
-- 校验和通过。
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -2631,7 +2620,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="pattern"></a>模式
 
 格式
-- 三个数字  
+- 三位数字 
 - 连字符或空格 
 - 三位数字 
 - 连字符或空格 
@@ -2716,9 +2705,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 7-8 个数字加分隔符：
 - 1-2 个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个点  
-- 三位数字 
+- 三个数字  
 - 一个短划线  
 - 一个数字或字母（不区分大小写），是校验位
 
@@ -6813,7 +6802,7 @@ Dictionary
 
 ### <a name="pattern"></a>模式
 
-Keyword
+关键字
 
 ### <a name="checksum"></a>校验和
 
@@ -6855,7 +6844,7 @@ Dictionary
 
 ### <a name="pattern"></a>模式
 
-Keyword
+关键字
 
 ### <a name="checksum"></a>校验和
 
@@ -10413,7 +10402,7 @@ national id
 一个字符后跟七个数字
   
 - 一个字母（不区分大小写）或数字
--  七个数字  
+-  七个数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -11410,7 +11399,7 @@ national id
   
 -  六位数字 
 - 一个连字符
-- 四位数字
+- 四个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -11794,6 +11783,10 @@ national id
 - 找到 Keyword_taiwanese_national_id 中的一个关键字。
 - 校验和通过。
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_taiwanese_national_id 找到与该模式匹配的内容。
+- 校验和通过。
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11801,6 +11794,9 @@ national id
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 

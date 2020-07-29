@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: d9ed155576d69889e53e4e4d1ce03e4233fd08ff
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387439"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503033"
 ---
 # <a name="double-key-encryption-dke"></a>双密钥加密（DKE）
 
@@ -33,9 +33,11 @@ ms.locfileid: "45387439"
 
 有关默认的基于云的租户根密钥的详细信息，请参阅[规划和实现 Azure 信息保护租户密钥](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。
 
-下面的视频演示如何将双密钥加密用于保护内容。
+<!--
+The following video shows how Double Key Encryption works to secure your content.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+-->
 
 如果您的组织有以下任一要求，您可以使用 DKE 帮助保护您的内容：
 
@@ -45,7 +47,7 @@ ms.locfileid: "45387439"
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>DKE 的系统和许可要求
 
-Microsoft 365 E5 和 Office 365 E5 的 Microsoft 365 的双重密钥加密部分。 如果你没有 Microsoft 365 E5 许可证，你可以注册[试用版](https://aka.ms/M365E5ComplianceTrial)。 有关这些许可证的详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+Microsoft 365 E5 和 Office 365 E5 提供了适用于 Microsoft 365 的双重密钥加密。 如果你没有 Microsoft 365 E5 许可证，你可以注册[试用版](https://aka.ms/M365E5ComplianceTrial)。 有关这些许可证的详细信息，请参阅[适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 **Office 预览体验成员**若要使用公共预览版，您必须是 Office 预览体验成员计划的成员。 若要加入 Office 预览体验成员，请转到 [https://insider.office.com](https://insider.office.com) 。 一旦成为你的成员，请为你的组织选择正确的部署方法，准备环境以部署 Office 有问必答版内部版本。 有关说明，请参阅[部署 Office 预览体验成员内部版本](https://insider.office.com/business/deploy)入门。
 
@@ -69,7 +71,7 @@ Microsoft 365 E5 和 Office 365 E5 的 Microsoft 365 的双重密钥加密部分
 
 本文和部署视频使用 Azure 作为 DKE 服务的部署目标。 如果要部署到其他位置，则需要提供自己的值。
 
-观看 "[双重密钥加密部署" 视频](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e)，以查看本文中概念的分步概述。 完成该视频需要18分钟左右。
+观看 "[双重密钥加密部署" 视频](https://youtu.be/vDWfHN_kygg)，以查看本文中概念的分步概述。 完成该视频需要18分钟左右。
 
 您将按照这些常规步骤为您的组织设置双密钥加密。
 
@@ -535,11 +537,9 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 ### <a name="enable-dke-in-your-client"></a>在客户端中启用 DKE
 
-如果 Microsoft Office 中的灵敏度功能区下未显示您的 DKE 标签，则您的客户端可能未启用 DKE。
-
 通过添加以下注册表项为你的客户端启用 DKE：
 
-```ini
+```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection （EOP）和 Office 365 高级威胁防护（ATP）的保护功能中应用标准和严格的策略设置
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389866"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430395"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的预设安全策略
 
@@ -88,9 +88,10 @@ ms.locfileid: "45389866"
 
 1. **严格保护**预设安全策略
 2. **标准保护**预设安全策略
-3. 任何其他相关的策略。
+3. 自定义安全策略
+4. 默认安全策略
 
-换言之，**严格保护**策略的设置会覆盖**标准保护**策略的设置，这将覆盖任何其他相关策略中的设置。
+换言之，**严格保护**策略的设置会覆盖**标准保护**策略的设置，这将覆盖自定义策略中的设置，这将覆盖默认策略中的设置。
 
 ## <a name="assign-preset-security-policies-to-users"></a>为用户分配预设的安全策略
 

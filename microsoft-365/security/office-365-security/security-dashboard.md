@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: 3df48685e8068fd80baa4952753a1925fb237422
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7edfcfefc379aa30b7028097b21522d63cd26268
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819444"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434263"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -54,7 +54,7 @@ ms.locfileid: "44819444"
 |---|---|
 |阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br>|阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url|
 
-若要查看或访问 "威胁管理摘要" 小部件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限。](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)
+若要查看或访问 "威胁管理摘要" 小部件，您必须具有查看高级威胁防护报告的权限。 若要了解详细信息，请参阅[查看 ATP 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports)。
 
 ## <a name="threat-protection-status"></a>威胁保护状态
 

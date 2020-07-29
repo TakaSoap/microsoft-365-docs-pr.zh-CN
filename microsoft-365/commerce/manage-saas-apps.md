@@ -14,14 +14,16 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何在 Microsoft 365 管理中心中激活和管理第三方应用程序。
-ms.openlocfilehash: ed1a88345ae5cc135a43f4297ce518b444eaabe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c8d2764dfa7795707712cbd9ce212f78c4d43d45
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402578"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429986"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>为你的组织管理第三方应用订阅
+
+您可以在新的 Microsoft 365 管理中心中管理第三方应用程序的许可证和帐单。 更新的功能包括增强的订阅管理、改进的对帐单信息的访问权限，并提高了管理帐单的灵活性。 订阅管理基于 Microsoft 的更新的商业平台。 这适用于客户直接购买或从第三方提供商购买的软件即服务应用程序。
 
 ::: moniker range="o365-21vianet"
 
@@ -31,6 +33,7 @@ ms.locfileid: "44402578"
 ::: moniker-end
 
 您可以在启用了预览模式的 Microsoft 365 管理中心中管理第三方应用程序的许可证和帐单。 更新的功能包括增强的订阅管理、改进的对帐单信息的访问权限，并提高了管理帐单的灵活性。 订阅管理基于 Microsoft 的更新的商业平台。 这适用于客户直接购买或从第三方提供商购买的软件即服务应用程序。
+
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>如何获取服务软件应用程序
 
@@ -102,7 +105,7 @@ ms.locfileid: "44402578"
 2. 查找并选择要管理的应用程序。
 3. 选择 "**更改许可证数量**"。
 
-## <a name="manage-payment-methods"></a>管理支付方式
+## <a name="manage-payment-methods"></a>管理付款方式
 
 每个软件即服务应用程序都有分配给他们的计费配置文件。 通过计费配置文件，您可以自定义发票中包含的产品，以及您如何支付发票。 它们包括：
 

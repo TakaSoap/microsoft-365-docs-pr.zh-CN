@@ -1,5 +1,5 @@
 ---
-title: 查看安全 & 合规性中心中的邮件流报告
+title: 查看安全与合规中心中的邮件流报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的邮件流安全报告。 "安全性 & 合规性中心中提供了邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937109"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434175"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>查看安全 & 合规性中心中的邮件流报告
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>查看安全与合规中心中的邮件流报告
 
 除了安全性 & 合规性中心中提供的[邮件流见解](mail-flow-insights-v2.md)之外，还可以使用多种邮件流报告来帮助您监视 Microsoft 365 组织。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以 <https://office.protection.com> 通过转到 "**报告**" \> **仪表板**，在安全 & 合规性中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://office.protection.office.com/insightdashboard> 。
 
@@ -310,7 +310,7 @@ ms.locfileid: "44937109"
 
   ![已发送和已接收电子邮件报告中的方向视图](../../media/sent-and-received-email-report-direction-view.png)
 
-- **向下** \> 钻取**恶意软件（反恶意软件）**：此选择会将您带到[电子邮件报告中的恶意软件检测](view-email-security-reports.md#malware-detection-in-email-report)。
+- **向下** \> 钻取**恶意软件（反恶意软件）**：此选择会将您带到[电子邮件报告中的恶意软件检测](view-email-security-reports.md#malware-detections-in-email-report)。
 
 - **向下** \> 钻取**垃圾邮件检测）**：此选择会将您带到[垃圾邮件检测报告](view-email-security-reports.md#spam-detections-report)。
 

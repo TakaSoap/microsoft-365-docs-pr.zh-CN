@@ -1,19 +1,19 @@
 ---
 title: 获取对 Microsoft 托管桌面的支持
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327888"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430431"
 ---
-# <a name="getting-help-for-end-users"></a>获取最终用户的帮助
+# <a name="getting-help-for-end-users"></a>获取针对最终用户的帮助
 
 您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助：**获取帮助**应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。
  
@@ -31,13 +31,13 @@ ms.locfileid: "44327888"
 - 最终用户可以请求回叫提供的电话号码，或与服务代表在线聊天。
 - 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
 为了让最终用户能够通过应用获取帮助，请确保满足以下先决条件：
 
 - 必须使用[设置 Microsoft 托管桌面设备](../get-started/set-up-devices.md)中的方法之一在 Microsoft 托管桌面注册设备，例如[自己注册新设备](../get-started/register-devices-self.md)。
 - 设备的显示语言必须设置为以下任何英语语言区域设置： en-us、en、en、en、en 或 en-ca。
 - "获取帮助" 应用程序应处于最新状态。 若要确认这一点，请检查 Microsoft Store 中的应用程序更新。
-- 某些[终结点](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)必须可从设备访问。
+- 某些[终结点](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop)必须可从设备访问。
 
 > [!NOTE]
 > 在部署设备以完全运行后，获取帮助应用程序最多可能需要一小时时间。

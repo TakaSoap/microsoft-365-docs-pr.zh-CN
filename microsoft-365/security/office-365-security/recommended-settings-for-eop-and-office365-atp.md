@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高级威胁防护（ATP）安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护（ATP），还可以获得什么额外内容？
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389841"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430371"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
@@ -194,7 +194,8 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 |安全功能名称|Standard|全|评论|
 |---|---|---|---|
-|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在 Office 365 应用中使用 ATP 安全链接，Office for iOS 和 Android。|
+|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|使用 Office 365 桌面和移动（iOS 和 Android）客户端中的 ATP 安全链接。|
+|**使用中的安全链接： Office Web Access 助理** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在 Office Web Apps 中使用 ATP 安全链接。|
 |**用户单击安全链接时不进行跟踪** <br/><br/> _TrackClicks_|关闭 <br/><br/> `$true`|关闭 <br/><br/> `$true`||
 |**不要让用户通过指向原始 URL 的安全链接进行单击** <br/><br/> _AllowClickThrough_|打开 <br/><br/> `$false`|打开 <br/><br/> `$false`||
 |

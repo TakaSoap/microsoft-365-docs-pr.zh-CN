@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: fca4889167dd7eb5f57d4980c4b033e0903209eb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204931"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429962"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威胁防护的新增功能
 
@@ -33,6 +33,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="july-2020"></a>2020 年 7 月
 - [FileProfile （）函数](advanced-hunting-fileprofile-function.md) <br> 在[高级搜寻](advanced-hunting-overview.md)查询中使用此功能，通过全面的文件信息丰富结果。
 - [标识和应用程序表](advanced-hunting-schema-tables.md)<br> 在高级搜寻架构中获取对[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表的身份验证事件、Active Directory 查询和应用程序相关活动的可见性。
+- [转到查寻](advanced-hunting-go-hunt.md)<br> 通过使用基于查询的[高级搜寻](advanced-hunting-overview.md)功能，快速透视调查事件以检查特定事件、用户、设备或其他实体类型。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 源 <br> 在仪表板中获取最新的安全研究、威胁智能、产品新闻和更多权限。

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 设置 ATP 安全附件策略时，请选择 "动态传递" 以避免邮件延迟，并使用户能够预览正在扫描的附件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819348"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430347"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>使用 ATP 安全附件进行动态传递和预览
 
@@ -68,20 +68,20 @@ ATP 安全附件扫描发生在 Microsoft 365 数据所在的同一个区域中�
 
 ## <a name="additional-considerations"></a>其他注意事项
 
-在某些情况下，不支持动态传递。 其中包括以下项：
+在某些情况下，安全附件（包括不支持动态传递）是不受支持的。 具体包括：
 
-- 公用文件夹中的电子邮件
+- 公用文件夹中的电子邮件。
 
-- 使用自定义规则从用户邮箱中路由的电子邮件，然后再返回到该用户的邮箱
+- 使用自定义规则从用户的邮箱中路由的电子邮件，然后再返回。
 
-- 移动（自动或手动）从托管邮箱移到其他位置（包括存档文件夹）的电子邮件
+- 移动（自动或手动）从托管邮箱移到其他位置（包括存档文件夹）的电子邮件。
 
-- 删除的电子邮件
+- 删除的电子邮件。
 
-- 处于错误状态的用户的邮箱搜索文件夹
+- 处于错误状态的用户的邮箱搜索文件夹。
 
-- Exchange Online 管理员已在其中启用 Exclaimer 的环境。 若要解决此问题，请参阅[使用 ATP 动态传递和 Exclaimer 时，带有附件的邮件不会送达](https://support.microsoft.com/help/4014438)
+- Exchange Online 管理员已在其中启用 Exclaimer 的环境。 若要解决此问题，请参阅[使用 ATP 动态传递和 Exclaimer 时，带有附件的邮件不会送达](https://support.microsoft.com/help/4014438)。
 
-- 使用[安全/多用途 Internet 邮件扩展（S/MIME）](s-mime-for-message-signing-and-encryption.md)加密的邮件
+- 使用[安全/多用途 Internet 邮件扩展（S/MIME）](s-mime-for-message-signing-and-encryption.md)加密的邮件。
 
-- 在不支持动态传递的情况下，ATP 安全附件不会扫描电子邮件。 但是，将检查包含 Url 的附件的电子邮件，具体取决于您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式。 在这些情况下，将检查电子邮件和 Office 文件中的 Url。
+- 在动态传递不受支持的情况下，安全附件不会扫描电子邮件。 但是，将检查包含 Url 的附件的电子邮件，具体取决于您的[ATP 安全链接策略](set-up-atp-safe-links-policies.md)的配置方式。 在这些情况下，将检查电子邮件和 Office 文件中的 Url。

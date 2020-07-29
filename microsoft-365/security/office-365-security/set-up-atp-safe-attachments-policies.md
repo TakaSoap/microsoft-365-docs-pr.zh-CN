@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何定义安全附件策略以保护组织免受电子邮件中的恶意文件的攻击。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617226"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430419"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>设置 Office 365 ATP 安全附件策略
 
@@ -81,7 +81,7 @@ ms.locfileid: "44617226"
 
    - 在 "**应用**于" 部分中，选择 **"收件人域**"，然后选择您的域。 选择 "**添加**"，然后选择 **"确定"**。
 
-6. 选择“保存”****。
+6. 选择“**保存**”。
 
 考虑为您的组织设置多个 ATP 安全附件策略。 这些策略将按其在**ATP 安全附件**页面上列出的顺序应用。 在定义或编辑策略之后，至少需要30分钟才能使策略在整个 Microsoft 数据中心中生效。
 
@@ -92,7 +92,7 @@ ms.locfileid: "44617226"
 ||||
 |---|---|---|
 |**选项**|**Effect**|**在需要执行以下操作时使用：**|
-|**关闭**|不扫描附件中的恶意软件  <br/> 不延迟邮件传递|对仅发送已知、良好附件的扫描仪、传真或智能主机关闭扫描  <br/> 避免路由内部邮件中不必要的延迟。  <br/> **我们不建议大多数用户选择此选项。您只应使用此选项来禁用一小部分受信任发件人的 ATP 安全附件扫描。**|
+|**关闭**|不扫描附件中的恶意软件  <br/> 不延迟邮件传递|为选定的收件人关闭 "扫描"。  <br/> 避免路由内部邮件中不必要的延迟。  <br/> **对于大多数用户，不建议使用此选项。只应使用此选项来对仅获取来自受信任发件人的电子邮件的收件人启用 ATP 安全附件扫描。**|
 |**监视器**|传递包含附件的邮件，然后跟踪检测到的恶意软件所发生的情况|查看检测到的恶意软件在您的组织中的位置|
 |**阻止**|阻止包含检测到的恶意软件附件的邮件继续  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件  <br/> 自动阻止将来的邮件和附件|使用相同的恶意软件附件保护贵组织免受重复攻击|
 |**Replace**|删除检测到的恶意软件附件  <br/> 通知收件人已删除附件  <br/> 将带有检测到的恶意软件的邮件发送到[Office 365 中的隔离](manage-quarantined-messages-and-files.md)，安全管理员或分析师可以在其中查看并释放（或删除）这些邮件|对收件人可见由于检测到的恶意软件，附件已被删除|

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127309"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502923"
 ---
 # <a name="supervision-policies"></a>监督策略
 
@@ -286,14 +286,6 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 ## <a name="audit"></a>Audit
 
 在某些情况下，您必须向法规或合规性审核人员提供信息，以证明员工活动和通信的监督。 此信息可能是与定义的策略相关的所有监管活动的摘要，或任何监督策略更改的摘要。 监督策略具有内置审核跟踪，可以实现内部或外部审核的完整就绪状态。 监督策略监视的每个操作的详细审核历史记录都提供监督过程证明。
-
-审核并在统一审核日志中提供以下监察策略活动：
-
-|**活动**|**关联命令**|
-|:-----|:-----|
-| **创建策略** | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **编辑策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **删除策略** | [SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 在统一审核日志中查看审核活动，或使用[UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet 查看审核活动。
 

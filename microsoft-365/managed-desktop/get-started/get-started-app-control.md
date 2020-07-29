@@ -1,5 +1,5 @@
 ---
-title: 应用程序控制入门
+title: 开始使用应用程序控制
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 12df7b074019ea47f2e293b71c6b0b25fe46f66f
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 431e6cb3b8d7ab7e1dd317918fab4821889c7d4e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170685"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430455"
 ---
-# <a name="get-started-with-app-control"></a>应用程序控制入门
+# <a name="get-started-with-app-control"></a>开始使用应用程序控制
 
 在您的环境中启用应用程序控制之前，请务必查看并了解[Microsoft 托管桌面如何实现 it](../service-description/app-control.md)以及您的角色和职责。
 
@@ -26,6 +26,19 @@ Microsoft 托管桌面通过解决获取安全基准策略的更具挑战性的�
 ## <a name="initial-deployment-of-apps"></a>应用程序的初始部署
 
 首次部署应用时，Microsoft 托管桌面需要评估其当前行为。 启用应用程序控制的具体步骤取决于是否已在您的环境中部署设备。
+
+### <a name="devices-not-yet-in-use"></a>尚未使用的设备
+
+如果你还没有使用任何设备，请使用 Microsoft 托管桌面操作打开一个服务票证，请求我们启用应用程序控制。 按照此计划，操作将逐步将策略部署到部署组：
+
+|部署组  |策略类型  |Timing  |
+|---------|---------|---------|
+|测试     |  Audit       |  第0天       |
+|First     | Enforced        | 第 1 天        |
+|快速     | Enforced        |  第 2 天       |
+|宽泛     | Enforced        |  第 3 天       |
+
+在首次部署期间，您始终可以打开另一个服务请求以暂停或回滚此部署的部分。
 
 ### <a name="devices-already-in-use"></a>设备已在使用中
 
@@ -39,21 +52,10 @@ Microsoft 托管桌面通过解决获取安全基准策略的更具挑战性的�
 |---------|---------|---------|
 |测试     |  Audit       |  第0天       |
 |First     | Enforced        | 第 1 天        |
-|快速     | Enforced        |  第 3 天       |
-|宽泛     | Enforced        |  第 7 天       |
+|快速     | Enforced        |  已暂停，在请求时进行部署       |
+|宽泛     | Enforced        |  已暂停，在请求时进行部署       |
 
 在首次部署期间，您始终可以打开另一个服务请求以暂停或回滚此部署的部分。
 
-### <a name="devices-not-yet-in-use"></a>尚未使用的设备
 
-如果你还没有使用任何设备，请使用 Microsoft 托管桌面操作打开一个服务票证，请求我们启用应用程序控制。 按照此计划，操作将逐步将策略部署到部署组：
-
-|部署组  |策略类型  |Timing  |
-|---------|---------|---------|
-|测试     |  Audit       |  第0天       |
-|First     | Enforced        | 第 1 天        |
-|快速     | Enforced        |  第 3 天       |
-|宽泛     | Enforced        |  第 7 天       |
-
-在首次部署期间，您始终可以打开另一个服务请求以暂停或回滚此部署的部分。
 

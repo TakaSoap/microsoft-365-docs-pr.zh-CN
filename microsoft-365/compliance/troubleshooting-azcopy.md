@@ -19,12 +19,12 @@ description: 在加载非 Office 365 数据以进行高级电子数据展示中�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819142"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434275"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>解决高级电子数据展示中的 AzCopy
 
@@ -42,7 +42,7 @@ ms.locfileid: "44819142"
 
 如果未安装 AzCopy 或安装在默认安装位置之外的某个位置（即 " `%ProgramFiles(x86)%` ）"，则在运行 AzCopy 命令时，可能会收到以下错误消息：
 
-    The system cannot find the path specified.
+> 系统找不到指定的路径。
 
 如果本地计算机上未安装 AzCopy，则可以在[Windows 上查找使用 AzCopy 中的的传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)的安装信息。 请务必将其安装在默认位置。
 

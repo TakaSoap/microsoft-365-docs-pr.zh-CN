@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: '了解在不同区域中为 Microsoft 365 for business 订阅收取的税款的多少。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401746"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434057"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -122,7 +119,7 @@ ms.locfileid: "44401746"
 
 3. 在 "**设置" & "操作**" 部分，选择 "**编辑服务使用地址**"。
 
-4. 在 "**编辑服务使用地址**" 页上，在 " **vat 号码**" 框中输入 vat ID，然后选择 "**保存**"。
+4. 在 "**编辑服务使用地址**" 页上的 " **VAT 号码**" 框中，输入您的 VAT ID，包括前缀，且不包含任何空格。 选择“**保存**”。
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ ms.locfileid: "44401746"
 
 2. 选择订阅名称，然后选择 "**更多操作**" \> **编辑 VAT 编号**。
   
-3. 在 "**编辑服务使用地址**" 页上，在 " **vat 号码**" 框中输入 vat ID，然后选择 "**提交**"。
+3. 在 "**编辑服务使用地址**" 页上的 " **VAT 号码**" 框中，输入您的 VAT ID，包括前缀，且不包含任何空格。 选择“**保存**”。
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ ms.locfileid: "44401746"
 | 持有免税的国际组织 | 来自当地税务主管机构的认证/信函确认 |
 | 波多黎各 | Certificado de Compras Exentas |
   
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
   
-[查看帐单或发票](view-your-bill-or-invoice.md)
-  
-[了解你的帐单或发票](understand-your-invoice.md)
+[查看帐单或发票](view-your-bill-or-invoice.md)（文章） \
+[了解帐单或发票](understand-your-invoice.md)（文章）

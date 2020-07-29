@@ -2,7 +2,7 @@
 title: 在团队中与来宾协作
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解在团队中设置与来宾协作的团队所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371484"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430383"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -82,7 +82,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 Microsoft 365 组来宾设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，展开 "**设置**"。
-2. 单击 "**服务" & 外接程序**。
+2. 单击 "**组织设置**"。
 3. 在列表中，单击 " **Microsoft 365 组**"。
 4. 确保将**组织外部的成员访问组内容**和**允许组所有者将组织外部的人员添加到组**复选框均选中。
 5. 如果进行了更改，请单击 "**保存更改**"。

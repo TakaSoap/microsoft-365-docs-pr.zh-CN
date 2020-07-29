@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4dde4d1b30fe5bcbe4d3bc63c4d998c804b0ce69
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204823"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430359"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -57,6 +57,5 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 ## <a name="preview-features"></a>预览功能
 目前，预览中提供了以下功能和增强功能：
 
-- **["门户架构参考"](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —有关安全中心中直接使用的架构表的信息。 除了表和列说明之外，此参考还提供有关受支持的事件类型（ `ActionType` 值）和示例查询的信息。  
+- **["门户架构参考"](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —有关安全中心中直接使用的架构表的信息。 除了表和列说明之外，此参考还提供有关受支持的事件类型（ `ActionType` 值）和示例查询的信息。
 
-- **[进入寻找](advanced-hunting-go-hunt.md)**--快速透视，从调查事件到使用基于查询的[高级](advanced-hunting-overview.md)搜索功能检查特定事件、用户、设备或其他实体类型。

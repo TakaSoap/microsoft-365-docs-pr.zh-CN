@@ -1,5 +1,5 @@
 ---
-title: 处理应用程序控件
+title: 使用应用程序控制
 description: ''
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170688"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430443"
 ---
-# <a name="work-with-app-control"></a>处理应用程序控件
+# <a name="work-with-app-control"></a>使用应用程序控制
 
 一旦在您的环境中部署了应用程序控制，您和 Microsoft 托管的桌面操作都将承担持续的责任。 例如，您可能希望在环境中添加新的应用程序，或添加（或删除）受信任的签名人。 为了提高安全性，在将所有应用发布到最终用户之前，应对其进行代码签名。 应用的发布者详细信息包括有关签署人的信息。
 
@@ -54,8 +54,8 @@ ms.locfileid: "45170688"
 |---------|---------|---------|
 |测试     |  Audit       |  第0天       |
 |First     | Enforced        | 第 1 天        |
-|快速     | Enforced        |  第 3 天       |
-|宽泛     | Enforced        |  第 7 天       |
+|快速     | Enforced        |  第 2 天       |
+|宽泛     | Enforced        |  第 3 天       |
 
 
 可以在首次部署过程中随时暂停或回滚部署。 为此，请打开另一个包含操作的服务请求。
