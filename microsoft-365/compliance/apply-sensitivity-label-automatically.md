@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094842"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503023"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -47,7 +47,7 @@ ms.locfileid: "45094842"
 
 - **当内容已保存（在 SharePoint 或 OneDrive 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略。 
     
-    此方法称为使用敏感度标签自动分类。 你可能还会听到它称为自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。 
+    你可能还听过该方法的另外一种称呼方式，即自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。 
     
     由于此标记是由服务而不是应用程序应用的，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟模式下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
     
@@ -74,7 +74,7 @@ ms.locfileid: "45094842"
 使用下表可帮助识别两种互补自动标记方法在行为上的差异：
 
 |功能或行为|标签设置：Office 应用的自动标记 |策略：自动标记|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 |
 |按位置限制|否 |是 |
 |条件：可训练分类器|是 |否 |
@@ -127,6 +127,8 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>为标签配置可训练分类器
 
+此选项目前处于预览阶段。
+
 当你选择“**可训练分类器**”选项时，请从 Microsoft 中选择一个或多个内置的可训练分类器。 如果你创建了自己的自定义可训练分类器，也可以选择：
 
 ![可训练分类器和敏感度标签选项](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 有关这些分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
 
-在预览期间，以下应用支持敏感度标签的可训练分类器：
+在此选项的预览期间，以下应用支持敏感度标签的可训练分类器：
 
-- 适用于 Windows 的 Microsoft 365 企业应用版（[以前称为 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/name-change)），从 [Beta  频道](https://office.com/insider)（[以前称为 Office 预览体验计划](https://docs.microsoft.com/deployoffice/update-channels-changes)）：
+- 适用于 Windows 的 Microsoft 365 企业应用版（[以前的 Office 365 专业增强版](https://docs.microsoft.com/deployoffice/name-change)），现已推出到版本 2006 及更高版本中的[当前频道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)：
     - Word
     - Excel
     - PowerPoint
