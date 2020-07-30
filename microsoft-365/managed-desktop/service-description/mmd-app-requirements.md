@@ -1,63 +1,44 @@
 ---
 title: Microsoft 托管桌面应用程序要求
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637848"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522021"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="fe991-103">Microsoft 托管桌面应用程序要求</span><span class="sxs-lookup"><span data-stu-id="fe991-103">Microsoft Managed Desktop app requirements</span></span>
+# <a name="microsoft-managed-desktop-app-requirements"></a><span data-ttu-id="ee6c2-103">Microsoft 托管桌面应用程序要求</span><span class="sxs-lookup"><span data-stu-id="ee6c2-103">Microsoft Managed Desktop app requirements</span></span>
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-<span data-ttu-id="fe991-104">为了保证 Microsoft 托管桌面设备的性能、可靠性和可维护性，客户的业务线应用程序不一定会严重影响最终用户体验，也不能修改安全的态度。</span><span class="sxs-lookup"><span data-stu-id="fe991-104">In order to guarantee the performance, reliability, and serviceability of Microsoft Managed Desktop devices a customer’s line of business apps must not seriously impact end user experience or modify the security stance.</span></span> <span data-ttu-id="fe991-105">因此，要部署到 Microsoft 托管桌面设备的业务线应用程序必须满足本主题中的要求。</span><span class="sxs-lookup"><span data-stu-id="fe991-105">Consequently, line of business applications that you want to deploy to Microsoft Managed Desktop devices must meet the requirements in this topic.</span></span>
-
-## <a name="application-condition"></a><span data-ttu-id="fe991-106">应用程序条件</span><span class="sxs-lookup"><span data-stu-id="fe991-106">Application condition</span></span>
-
-<span data-ttu-id="fe991-107">应用程序不会对 Microsoft 托管桌面环境产生负面影响，这一点非常重要。</span><span class="sxs-lookup"><span data-stu-id="fe991-107">It’s important that applications don’t adversely impact the Microsoft Managed Desktop environment.</span></span> <span data-ttu-id="fe991-108">以下是应用程序必须满足部署应用程序的要求。</span><span class="sxs-lookup"><span data-stu-id="fe991-108">The following are the requirements that an application must meet for an application to be deployed.</span></span> <span data-ttu-id="fe991-109">对于任何给定的应用程序或驱动程序，Microsoft 可能会停征此处提供的任何要求。</span><span class="sxs-lookup"><span data-stu-id="fe991-109">For any given application or driver, Microsoft may waive any requirement provided herein.</span></span> <span data-ttu-id="fe991-110">Microsoft 可能会决定删除对 Microsoft 托管桌面设备的性能和可靠性产生负面影响的任何应用程序或驱动程序。</span><span class="sxs-lookup"><span data-stu-id="fe991-110">Microsoft may decide to remove any application or driver that negatively impacts performance and reliability of Microsoft Managed Desktop devices.</span></span>
-
-## <a name="centrally-managed-apps"></a><span data-ttu-id="fe991-111">集中管理的应用程序</span><span class="sxs-lookup"><span data-stu-id="fe991-111">Centrally managed apps</span></span>
-
-<span data-ttu-id="fe991-112">所有安装在 Microsoft 托管设备上的应用程序和驱动程序都必须通过 Microsoft Intune、Microsoft Store 或 Microsoft Store for Business 进行部署;如果可用，还将通过 Windows Update 服务部署驱动程序。</span><span class="sxs-lookup"><span data-stu-id="fe991-112">All applications and drivers installed on Microsoft Managed Devices must be deployed through Microsoft Intune, the Microsoft Store, or the Microsoft Store for Business; if available, drivers will also be deployed through the Windows Update service.</span></span> 
-
-## <a name="prohibited-app-classes"></a><span data-ttu-id="fe991-113">禁止的应用程序类</span><span class="sxs-lookup"><span data-stu-id="fe991-113">Prohibited app classes</span></span>
-
-<span data-ttu-id="fe991-114">Microsoft 托管桌面设备上不允许某些应用程序类型：</span><span class="sxs-lookup"><span data-stu-id="fe991-114">Certain application types are not permitted on Microsoft Managed Desktop devices:</span></span>
-- <span data-ttu-id="fe991-115">第三方反病毒、安全性或审核软件</span><span class="sxs-lookup"><span data-stu-id="fe991-115">3rd party anti-virus, security, or audit software</span></span>
-- <span data-ttu-id="fe991-116">365 Microsoft Office 的 Microsoft Office 相关应用程序之前的版本</span><span class="sxs-lookup"><span data-stu-id="fe991-116">Versions of Microsoft Office prior to Microsoft 365 Apps for enterprise</span></span>
-- <span data-ttu-id="fe991-117">安装或捆绑其他第三方软件的应用程序</span><span class="sxs-lookup"><span data-stu-id="fe991-117">Applications that install or bundle other 3rd party software</span></span>
-
-## <a name="restricted-app-behaviors"></a><span data-ttu-id="fe991-118">受限制的应用程序行为</span><span class="sxs-lookup"><span data-stu-id="fe991-118">Restricted app behaviors</span></span>
-
-<span data-ttu-id="fe991-119">某些应用程序行为可能会对用户体验产生负面影响，也可能对 Microsoft 托管桌面设备带来安全风险。</span><span class="sxs-lookup"><span data-stu-id="fe991-119">Certain app behaviors can negatively impact the user experience or may present a security risk to Microsoft Managed Desktop devices.</span></span> <span data-ttu-id="fe991-120">在 Microsoft 托管桌面环境中，不允许运行具有以下行为的应用程序，而无需从 Microsoft 进行指定。</span><span class="sxs-lookup"><span data-stu-id="fe991-120">Apps with the following behaviors are not permitted to run in the Microsoft Managed Desktop environment without a specific  from Microsoft.</span></span>
-
-<span data-ttu-id="fe991-121">用户体验：</span><span class="sxs-lookup"><span data-stu-id="fe991-121">User Experience:</span></span>
-- <span data-ttu-id="fe991-122">安装后台服务</span><span class="sxs-lookup"><span data-stu-id="fe991-122">Install background services</span></span>
-- <span data-ttu-id="fe991-123">将自身添加到 Windows 启动路径</span><span class="sxs-lookup"><span data-stu-id="fe991-123">Add itself to the Windows startup path</span></span>
-- <span data-ttu-id="fe991-124">依赖驱动程序的应用程序</span><span class="sxs-lookup"><span data-stu-id="fe991-124">Applications dependent on drivers</span></span>
-- <span data-ttu-id="fe991-125">第三方 web 浏览器</span><span class="sxs-lookup"><span data-stu-id="fe991-125">3rd party web browsers</span></span>
-
-<span data-ttu-id="fe991-126">安全性：</span><span class="sxs-lookup"><span data-stu-id="fe991-126">Security:</span></span>
-- <span data-ttu-id="fe991-127">提升最终用户的权限</span><span class="sxs-lookup"><span data-stu-id="fe991-127">Elevate the end user’s privileges</span></span>
-- <span data-ttu-id="fe991-128">充当应用商店或具有内置扩展管理器</span><span class="sxs-lookup"><span data-stu-id="fe991-128">Act as an app store or have a built-in extension manager</span></span>
-- <span data-ttu-id="fe991-129">存在已知的安全漏洞</span><span class="sxs-lookup"><span data-stu-id="fe991-129">Have known security vulnerabilities</span></span>
-- <span data-ttu-id="fe991-130">加密或限制对最终用户数据的访问</span><span class="sxs-lookup"><span data-stu-id="fe991-130">Encrypt or restrict access to end-user data</span></span>
-- <span data-ttu-id="fe991-131">未签名或使用不会汇总到受信任的根的证书进行签名</span><span class="sxs-lookup"><span data-stu-id="fe991-131">Is unsigned or is signed using a certificate which doesn’t roll up to a trusted root</span></span>
+<span data-ttu-id="ee6c2-104">Microsoft 托管桌面要求我们使用特定的方法来管理设备，以确保设备的性能、可靠性和可维修性。</span><span class="sxs-lookup"><span data-stu-id="ee6c2-104">Microsoft Managed Desktop requires that we manage devices using a specific approach to guarantee the performance, reliability, and serviceability of devices.</span></span> <span data-ttu-id="ee6c2-105">如果你确信 Microsoft 托管桌面对以下区域执行的方法将不起作用，则可以[向服务计划请求异常](customizing.md)。</span><span class="sxs-lookup"><span data-stu-id="ee6c2-105">If you’re sure that the approach taken by Microsoft Managed Desktop for the areas below will not work for you, you can request an [exception to the service plan](customizing.md).</span></span>
 
 
-## <a name="driver-deployment"></a><span data-ttu-id="fe991-132">驱动程序部署</span><span class="sxs-lookup"><span data-stu-id="fe991-132">Driver deployment</span></span>
+|<span data-ttu-id="ee6c2-106">管理区域</span><span class="sxs-lookup"><span data-stu-id="ee6c2-106">Management area</span></span>  |<span data-ttu-id="ee6c2-107">Microsoft 托管桌面方法</span><span class="sxs-lookup"><span data-stu-id="ee6c2-107">Microsoft Managed Desktop approach</span></span>  |
+|---------|---------|
+|<span data-ttu-id="ee6c2-108">设备配置或策略管理</span><span class="sxs-lookup"><span data-stu-id="ee6c2-108">Device configuration or policy management</span></span>     |  <span data-ttu-id="ee6c2-109">Microsoft Intune</span><span class="sxs-lookup"><span data-stu-id="ee6c2-109">Microsoft Intune</span></span>       |
+|<span data-ttu-id="ee6c2-110">应用管理</span><span class="sxs-lookup"><span data-stu-id="ee6c2-110">Application management</span></span>     | <span data-ttu-id="ee6c2-111">Microsoft Intune 和公司门户</span><span class="sxs-lookup"><span data-stu-id="ee6c2-111">Microsoft Intune and Company Portal</span></span>        |
+|<span data-ttu-id="ee6c2-112">驱动程序部署</span><span class="sxs-lookup"><span data-stu-id="ee6c2-112">Driver deployment</span></span>     |  <span data-ttu-id="ee6c2-113">设备、Windows 更新或 Intune 附带的驱动程序</span><span class="sxs-lookup"><span data-stu-id="ee6c2-113">Drivers included with the device, Windows Update, or Intune</span></span>       |
+|<span data-ttu-id="ee6c2-114">设备安全性</span><span class="sxs-lookup"><span data-stu-id="ee6c2-114">Device security</span></span>     | <span data-ttu-id="ee6c2-115">请参阅[设备安全性](security.md#device-security)</span><span class="sxs-lookup"><span data-stu-id="ee6c2-115">See [Device security](security.md#device-security)</span></span>      |
+|<span data-ttu-id="ee6c2-116">标识和访问管理</span><span class="sxs-lookup"><span data-stu-id="ee6c2-116">Identity and access management</span></span>     | <span data-ttu-id="ee6c2-117">请参阅[标识和访问管理](security.md#identity-and-access-management)</span><span class="sxs-lookup"><span data-stu-id="ee6c2-117">See [Identity and access management](security.md#identity-and-access-management)</span></span>        |
+|<span data-ttu-id="ee6c2-118">网络安全</span><span class="sxs-lookup"><span data-stu-id="ee6c2-118">Network security</span></span>     | <span data-ttu-id="ee6c2-119">请参阅[网络安全性](security.md#network-security)</span><span class="sxs-lookup"><span data-stu-id="ee6c2-119">See [Network security](security.md#network-security)</span></span>        |
+|<span data-ttu-id="ee6c2-120">信息安全</span><span class="sxs-lookup"><span data-stu-id="ee6c2-120">Information security</span></span>     |  <span data-ttu-id="ee6c2-121">请参阅[信息安全性](security.md#information-security)</span><span class="sxs-lookup"><span data-stu-id="ee6c2-121">See [Information security](security.md#information-security)</span></span>       |
+|<span data-ttu-id="ee6c2-122">数据恢复</span><span class="sxs-lookup"><span data-stu-id="ee6c2-122">Data recovery</span></span>     | <span data-ttu-id="ee6c2-123">OneDrive for Business</span><span class="sxs-lookup"><span data-stu-id="ee6c2-123">OneDrive for Business</span></span>        |
+|<span data-ttu-id="ee6c2-124">核心工作效率</span><span class="sxs-lookup"><span data-stu-id="ee6c2-124">Core productivity</span></span>     | <span data-ttu-id="ee6c2-125">Microsoft 365 企业应用版</span><span class="sxs-lookup"><span data-stu-id="ee6c2-125">Microsoft 365 Apps for enterprise</span></span>    |
+|<span data-ttu-id="ee6c2-126">浏览器</span><span class="sxs-lookup"><span data-stu-id="ee6c2-126">Browser</span></span>     | <span data-ttu-id="ee6c2-127">Microsoft Edge</span><span class="sxs-lookup"><span data-stu-id="ee6c2-127">Microsoft Edge</span></span>        |
 
-<span data-ttu-id="fe991-133">Microsoft 托管桌面仅支持通过 Microsoft 托管设备在 Windows 更新或已安装的收件箱中提供的设备驱动程序。</span><span class="sxs-lookup"><span data-stu-id="fe991-133">Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device.</span></span> 
 
-<span data-ttu-id="fe991-134">如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并在将其部署到 Microsoft 托管桌面之前需要异常。</span><span class="sxs-lookup"><span data-stu-id="fe991-134">If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exception before being deployed to Microsoft Managed Desktop.</span></span> 
+
+
+<span data-ttu-id="ee6c2-128">Microsoft 托管桌面可能会监视在托管设备上运行的其他软件。</span><span class="sxs-lookup"><span data-stu-id="ee6c2-128">Microsoft Managed Desktop might monitor other software running on managed devices.</span></span> <span data-ttu-id="ee6c2-129">如果它对系统安全性、性能或可靠性造成负面影响，则可能需要向服务计划请求异常。</span><span class="sxs-lookup"><span data-stu-id="ee6c2-129">If it negatively impacts system security, performance, or reliability, you might be required to request an exception to the service plan.</span></span>
+
 
