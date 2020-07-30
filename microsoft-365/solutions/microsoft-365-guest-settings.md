@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679140"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514785"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -37,7 +37,7 @@ Azure Active Directory 是 Microsoft 365 使用的目录服务。 Azure Active D
 
 ### <a name="organizational-relationships-settings"></a>组织关系设置
 
-**导航：**[Azure Active Directory 管理中心](https://aad.portal.azure.com) > Azure Active Directory > 组织关系 > 设置
+**导航：**[Azure Active Directory 管理中心](https://aad.portal.azure.com) > Azure Active Directory > 外部标识 > 外部协作设置
 
 ![Azure Active Directory 组织关系设置页面的屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 
 ### <a name="sharing"></a>共享
 
-**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 设置 >“安全和隐私”选项卡 > 共享
+**导航：**[Microsoft 365 管理中心](https://admin.microsoft.com) > 设置 > 组织设置 >“安全和隐私”选项卡 > 共享
 
 ![Microsoft 365 管理中心中的安全和隐私来宾共享设置的屏幕截图](../media/sharepoint-security-privacy-sharing-setting.png)
 

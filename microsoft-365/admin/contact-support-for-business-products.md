@@ -1,10 +1,10 @@
 ---
-title: 联系商业版产品的支持人员 - 管理员帮助
+title: 联系商业版产品支持人员的方式 - 管理员帮助
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,44 +17,44 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 使用针对你所在国家或地区列出的电话号码、联机提交服务请求或访问 Microsoft Store，以获取技术和帐单支持。
+description: 通过使用针对你所在国家或地区列出的电话号码、在线提交服务请求或联系 Microsoft Store 获取虚拟客户支持来获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388241"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506305"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>联系商业版产品的支持人员 - 管理员帮助
+# <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
 ::: moniker range="o365-worldwide"
 
-## <a name="online-support"></a>[联机支持](#tab/online)
+> [!IMPORTANT]
+> 必须是业务订阅的管理员才能使用这些支持方法。 如果你不是企业管理员，请使用[此支持页面](https://support.microsoft.com/help/contactus)。
 
-通过在线发起服务请求节省时间。我们将帮助你找到解决方案，或请专家通过电子邮件或电话与你联系。[了解初始支持响应时间](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
+首先，[查看服务的当前运行状况](https://docs.microsoft.com/office365/enterprise/view-service-health)。 可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">“服务运行状况”仪表板</a>上查看关于当前和过去问题的详细信息。 如果你遇到的问题未列出，可通过以下其中一种方式获取支持：
+
+## <a name="online-support"></a>联机支持
+
+可通过在线发起服务请求节省时间。 我们将帮助你查找解决方案或连接到技术支持人员。
 
 1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。 如果收到消息，显示你无权访问此页或执行此操作，那么你应该不是管理员。[谁在我的公司中拥有管理员权限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
 2. 选择“**需要帮助?**”按钮。
 
-3. 在“**需要帮助?**”窗格中，告诉我们你需要哪方面的帮助，然后按 Enter。
+3. 在“**需要帮助?**”窗格中，告诉我们你需要哪方面的帮助，然后按 **Enter**。
 
 4. 如果所得结果没有帮助，请选择“**联系支持人员**”。
 
-5. 输入说明（如有需要），确认你的联系号码和电子邮件地址，选择你首选的联系方式，然后选择“**联系我**”。 预期等待时间在“**需要帮助?**”窗格中显示。
+5. 输入问题的说明（如有需要），确认你的联系号码和电子邮件地址，选择你首选的联系方式，然后选择“**联系我**”。 预期等待时间在“**需要帮助?**”窗格中显示。
 
-## <a name="phone-support"></a>[电话支持 ](#tab/phone)
+## <a name="phone-support"></a>电话支持
 
 帐单支持所用语言为英语，时间为星期一到星期五的上午 9 点到下午 5 点（澳大利亚为上午 9 点到下午 6 点）。\
 技术支持所用语言为英语，且全天候提供（每周 7 天，每天 24 小时）。\
-管理员应在致电时准备好提供帐户详细信息。\
+管理员应在致电时准备好提供帐户详细信息。
 
 - **在美国，请拨打 1 800 865 9408。**
 
@@ -64,23 +64,17 @@ ms.locfileid: "44388241"
 
 - **在英国，请拨打 0800 032 6417。**
 
-如果上方未列出你的 Microsoft 365 商业版支持电话号码，请使用下面的下拉菜单来选择你所在的国家或地区。
+### <a name="phone-numbers-for-other-countries"></a>其他国家/地区的电话号码
+
+如果上面未列出适合你的支持电话号码，请使用下面的下拉菜单，查找你所在的国家或地区的号码。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-若要了解如何打开服务请求，请选择上面的**在线支持**选项卡。
+## <a name="virtual-support-from-the-microsoft-store"></a>Microsoft Store 的虚拟支持
 
-## <a name="in-store-support"></a>[商店内支持](#tab/instore)
+你可以联系 Microsoft Store 销售和客户服务支持，与 Answer Desk 专家沟通，让他们帮助解决 Microsoft 365 问题。
 
-现在，你可以在本地 Microsoft Store 与 Answer Desk 专家进行预约，让他们帮助解决 Microsoft 365 问题。
-
-1. 转到“[Microsoft Store 日程安排](https://go.microsoft.com/fwlink/?LinkID=2041482)”页面，然后选择“**安排约会**”。
-
-2. 输入你的位置并进行搜索，以查找附近的 Microsoft Store。
-
-3. 选择商店，然后选择“**立即安排服务约会**”。
-
----
+转到[联系 Microsoft Store 支持](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020)页面，获取快速帮助链接和电话号码。
 
 ::: moniker-end
 
@@ -92,15 +86,15 @@ ms.locfileid: "44388241"
 
 由世纪互联运营的 Office 365 技术支持团队仅负责解决与世纪互联运营的 Office 365 相关的上述问题。源自客户网络的问题不在 Office 365 支持范围内，而且在这些情况下，客户必须与其网络团队共同协作以获得帮助。
 
-### <a name="community-and-self-service-support-options"></a>社区和自助服务支持选项
+## <a name="community-and-self-service-support-options"></a>社区和自助服务支持选项
 
 自助服务支持适用于所有由世纪互联运营的 Office 365 的用户，支持包括 [Office 365 社区](https://go.microsoft.com/fwlink/p/?linkid=842838)中的疑难解答工具与视频、帮助文章和视频以及论坛和 wiki。有关自助服务支持资源的详细信息，请参阅[了解由世纪互联运营的 Office 365](services-in-china/services-in-china.md)。
 
-### <a name="pre-sales-support"></a>售前支持
+## <a name="pre-sales-support"></a>售前支持
 
 由世纪互联运营的 Office 365 的售前支持提供有关订阅功能和优势、计划比较、定价和许可方面的帮助，可帮助确定满足你业务需求的合适解决方案。此外，售前支持还可帮助你寻找合作伙伴、购买和注册试用版。你可以在星期一至星期五的本地营业时间内拨打电话。售前支持的电话号码与技术支持相同。有关说明，请参阅[联系支持人员](#contact-support)。
 
-### <a name="billing-and-subscription-management-support"></a>帐单和订阅管理支持
+## <a name="billing-and-subscription-management-support"></a>帐单和订阅管理支持
 
 可通过在线方式或在星期一至星期五的中国营业时间（北京时间）通过电话获取有关帐单和订阅管理问题的帮助。帐单和订阅管理支持的电话号码和在线服务请求流程与技术支持相同。可在由世纪互联运营的 Office 365 的门户上找到支持电话号码。有关说明，请参阅[联系支持人员](#contact-support)。
 
@@ -118,7 +112,7 @@ ms.locfileid: "44388241"
 
 - 取消付费订阅
 
-### <a name="technical-support"></a>技术支持
+## <a name="technical-support"></a>技术支持
 
 由世纪互联运营的 Office 365 订阅的技术支持可提供有关基本安装、设置和一般技术用法的帮助。下表列出了这些问题的一些示例。
 
@@ -130,7 +124,7 @@ ms.locfileid: "44388241"
 > [!NOTE]
 > 你可以在此学习如何联系技术支持人员：[联系支持人员](#contact-support)。技术支持不包括第三方服务或外接程序的疑难解答。了解如何从[社区](https://go.microsoft.com/fwlink/p/?linkid=842838)内的其他客户那里找到答案。
 
-### <a name="technical-support-case-handling"></a>技术支持案例的处理
+## <a name="technical-support-case-handling"></a>技术支持案例的处理
 
 世纪互联会对问题的类型和及其对客户的影响进行评估，并据此在案例开通时为其指定严重级别。下表显示了问题类型和严重级别的示例。
 
@@ -140,7 +134,7 @@ ms.locfileid: "44388241"
 | 严重性 B（高） | 服务可用，但性能受损。这种情况对业务产生的影响不太严重，可在营业时间进行处理。单个用户、客户或服务部分受影响。 | <ul><li>Outlook 中的“发送”按钮出现乱码。</li> <li>无法从 EAC（Exchange 管理中心）进行设置，但可以在 Windows PowerShell 中进行设置。</li></ul> |
 | 严重级别 C（非关键） | 这种情况对业务的影响很小。此问题很重要，但不会对客户的当前服务或生产率产生严重影响。单个用户遇到部分中断，但存在可接受的解决方法。 | <ul><li>如何设置永不过期的用户密码。</li> <li>用户不能在 Exchange Online 中删除联系人信息。</li></ul> |
 
-### <a name="technical-support-initial-response-times"></a>技术支持初始响应时间
+## <a name="technical-support-initial-response-times"></a>技术支持初始响应时间
 
 初始响应时间将根据上文所述严重级别而定。世纪互联的客户服务团队将根据严重级别以合理的节奏来跟进调查和与客户沟通。世纪互联还希望客户能够相应地进行合理的配合。
 
@@ -154,22 +148,22 @@ ms.locfileid: "44388241"
 
 <sup>2</sup> 严重级别 A 仅适用于通过销售客户经理与世纪互联签署了高级在线服务协议的客户，且仅用于技术支持。帐单和订阅管理支持的最高严重级别为 B。
 
-### <a name="technical-support-working-hours"></a>技术支持工作时间
+## <a name="technical-support-working-hours"></a>技术支持工作时间
 
 严重级别 A：24\*7 连续服务
 
 严重级别 B/C：9:00 ~24:00（北京时间），全年无休。
 
-### <a name="contact-support"></a>联系支持人员
+## <a name="contact-support"></a>联系支持人员
 
 > [!NOTE]
 > 辅助支持选项仅面向订阅 Office 365 的组织中的管理员提供。如果你是 Office 365 用户，但不是管理员，则仍然可以在社区论坛中或通过联系管理员获得支持。
 
-#### <a name="open-an-online-request"></a>开启在线请求
+### <a name="open-an-online-request"></a>开启在线请求
 
 通过在线发起服务请求节省时间。在 Microsoft 365 管理中心内，选择“**支持**”\>“**新建服务请求**”。
 
-#### <a name="call-support"></a>致电支持人员
+### <a name="call-support"></a>致电支持人员
 
 致电支持人员。如果无法使用在线请求，也可以使用电话支持，号码为：(86) 400-089-0365。
 
@@ -177,7 +171,7 @@ ms.locfileid: "44388241"
 
 世纪互联深知及时从合格的专业人员获取技术支持是云服务的一个关键方面。客户的 IT 部门在支持其用户方面发挥的关键作用也同样重要。
 
-#### <a name="administrator-roles-and-responsibilities"></a>管理员角色和职责
+### <a name="administrator-roles-and-responsibilities"></a>管理员角色和职责
 
 在客户组织中，只有具有管理员角色的用户才有权访问由世纪互联运营的 Office 365 的门户的“管理员”部分并就 Office 365 服务请求直接与世纪互联进行沟通。
 
@@ -203,7 +197,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 管理员应为客户的用户提供初始帮助。但是，如果管理员无法借助自助服务支持资源解决问题，则应[联系支持人员](#contact-support)。
 
-#### <a name="21vianet-support-role"></a>世纪互联支持角色
+### <a name="21vianet-support-role"></a>世纪互联支持角色
 
 世纪互联支持角色的职责是：
 
@@ -221,11 +215,11 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 - 不断通过调查收集有关如何改善服务的客户反馈。
 
-### <a name="feature-availability"></a>功能可用性
+## <a name="feature-availability"></a>功能可用性
 
 若要查看各个 Office 365 计划的功能可用性，请参阅 [Office 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=846911)
 
-### <a name="follow-us-on-wechat"></a>在微信上关注我们
+## <a name="follow-us-on-wechat"></a>在微信上关注我们
 
 扫描此 QR 码在微信上关注我们，获取由世纪互联运营的 Office 365 的最新动态。
 
@@ -242,7 +236,7 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 > [!NOTE]
 > 下面的所有支持选项都是针对 Microsoft 云德国版的。有关 Microsoft 如何使用你在联系 Microsoft 支持人员时提供的数据的更多信息，请参阅[隐私声明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
 
-### <a name="get-assisted-support"></a>获取辅助支持
+## <a name="get-assisted-support"></a>获取辅助支持
 
 辅助支持选项仅面向订阅 Office 365 Germany 的组织中的管理员提供。如果你是在工作单位或学校中使用 Office 365 Germany，但不是管理员，则仍然可以在社区论坛中或通过联系管理员或 IT 部门获得支持。
 
@@ -252,10 +246,10 @@ Office 365 允许委派多个类型的管理员来行使不同的职能。此服
 
 | 区域 | 电话号码 | 工作时间 |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 德国 | 0800 589 2330 | 帐单支持：德语：周一至周五的上午 9 点至下午 5 点，柏林  英语：周一至周五的上午 9 点至下午 5 点，柏林  技术支持：德语：全天候 (24x7)  英语：全天候 (24x7)  替代电话号码：069 380 789 305（会产生本地话费） |
-| 欧洲经济区内的所有其他市场 | +49 69 380 789 305 | 帐单支持：周一至周五的上午 9 点至下午 5 点，柏林 (UTC+1)  英语：周一至周五的上午 9 点至下午 5 点，柏林 (UTC +1)  技术支持：德语：全天候 (24x7)  英语：全天候 (24x7)  电话支持通过到德国的国际通话实现。 需支付国际长途话费。 通过管理中心提交支持票证，可避免支付话费。 |
+| 德国 | 0800&nbsp;589&nbsp;2330 | 计费支持： <ul><li>德语：柏林时间星期一至星期五上午 9 点至下午 5 点</li><li>英语：柏林时间星期一至星期五上午 9 点至下午 5 点</li></ul>技术支持： <ul><li>德语：全天候</li><li>英语：全天候</li></ul>备选电话号码：069 380 789 305（需支付本地话费） |
+| 欧洲经济区内的所有其他市场 | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | 计费支持： <ul><li>德语：柏林时间星期一至星期五上午 9 点至下午 5 点 (UTC+1)</li><li>英语：柏林时间星期一至星期五上午 9 点至下午 5 点 (UTC+1)</li></ul>技术支持： <ul><li>德语：全天候</li><li>英语：全天候</li></ul>可通过向德国拨打国际电话获得电话支持。 需支付国际长途话费。 通过管理中心提交支持票证，可避免支付话费。 |
 
-### <a name="let-our-community-help"></a>通过社区获取帮助
+## <a name="let-our-community-help"></a>通过社区获取帮助
 
 你也可以[搜索 Microsoft 365 商业版社区论坛](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查找已知问题和新潮主题，或发帖提出新问题。社区论坛由训练有素的 Microsoft 支持专员监管，他们可以帮助你解决问题。
 

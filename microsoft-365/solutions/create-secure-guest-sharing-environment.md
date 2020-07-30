@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解在 Microsoft 365 中安全的客户共享环境的可用选项。
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167361"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502911"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -101,6 +101,9 @@ ms.locfileid: "45167361"
 12. 在“**新建**”边栏选项卡中的“**启用策略**”下面，单击“**打开**”，然后单击“**创建**”。
 
 现在，当来宾用户首次尝试访问组织中的内容、团队或网站时，必须接受使用条款。
+
+> [!NOTE]
+> 使用条件访问需要 Azure AD Premium P1 许可证。 有关详细信息，请参阅[什么是条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
 ### <a name="more-information"></a>更多信息
 [Azure Active Directory 使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
