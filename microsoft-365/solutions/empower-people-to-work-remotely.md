@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/14/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158888"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429880"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -36,8 +36,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 ![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-
-| | |
+| 关键功能 | 描述 |
 |:-------|:-----|
 | 已连接 | 远程员工能够随时随地访问： <ul><li>Microsoft 365 订阅中基于云的服务和数据。 </li><li>组织资源，例如由本地应用程序数据中心提供的资源。</li></ul> |
 | 安全 | 使用 Microsoft 365 和 Windows 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。 |
@@ -53,21 +52,23 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 和 E5 |
-| 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 和 E5 | 
+| 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 或 E5 |
+| 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 或 E5 | 
 | 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Azure 高级威胁防护的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） | 
-| 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 和 E5 |
+| 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 或 E5 |
 | Azure AD 应用程序代理    | 为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。   | 需要单独的付费 Azure 订阅 |
 | 配置点到站点 VPN   | 通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。   | 需要单独的付费 Azure 订阅 |
 | Windows 虚拟桌面   | 支持只能将其个人和非托管设备与在 Azure 中运行的虚拟桌面配合使用的远程工作者。 | 需要单独的付费 Azure 订阅 |
-| 远程桌面服务 (RDS) | 允许员工通过 Intranet 连接到基于 Windows 的计算机。 | Microsoft 365 E3 和 E5 | 
+| 远程桌面服务 (RDS) | 允许员工通过 Intranet 连接到基于 Windows 的计算机。 | Microsoft 365 E3 或 E5 | 
 | 远程桌面服务网关   | 加密通信，防止 RDS 主机直接向 Internet 公开。 | 需要单独的 Windows Server 许可证 |
-| Microsoft Intune | 管理设备和应用程序。   | Microsoft 365 E3 和 E5 | 
-| Configuration Manager | 管理设备上的软件安装、更新和设置 | 需要单独的 Configuration Manager 许可证 |
+| Microsoft Intune | 管理设备和应用程序。   | Microsoft 365 E3 或 E5 | 
+| 内容和功能， | 管理设备上的软件安装、更新和设置 | 需要单独的 Configuration Manager 许可证 |
 | 桌面分析 | 确定你的 Windows 客户端的更新准备情况。   | 需要单独的 Configuration Manager 许可证 |
-| Windows Autopilot | 设置和预配置新的 Windows 10 设备，以便高效使用。   | Microsoft 365 E3 和 E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer、Power Apps | 创建、沟通和协作。 | Microsoft 365 E3 和 E5 |
+| Windows Autopilot | 设置和预配置新的 Windows 10 设备，以便高效使用。   | Microsoft 365 E3 或 E5 |
+| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer、Power Apps | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
 ||||
+
+有关远程工作者的安全性和合规性标准，请参阅 [部署远程工作者的安全性和合规性](empower-people-to-work-remotely-security-compliance.md)
 
 <a name="poster"></a>有关此方案的 2 页摘要，请参阅[“为远程工作者提供强大功能”的海报](../downloads/empower-remote-workers.pdf)。
 

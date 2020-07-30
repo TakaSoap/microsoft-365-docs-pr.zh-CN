@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: Exchange online 管理员在 Exchange Online 中查看和配置 Outlook 网页中的 S/MIME 设置时需要执行的操作的简短说明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c1496025124717688cc812e22e0d8fe3a441112
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b9f4e6c33369640ad66956568959dd02b01c4fb9
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616618"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517481"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>在 Exchange Online 中为 web 上的 Outlook 配置 S/MIME 设置
 
@@ -31,7 +31,7 @@ ms.locfileid: "44616618"
 
 ## <a name="considerations-for-new-microsoft-edge-chromium-based"></a>新 Microsoft Edge 的注意事项（基于 Chromium）
 
-若要在新的[Microsoft edge](https://www.microsoft.com/windows/microsoft-edge) web 浏览器中使用 web 上的 Outlook 中的 S/MIME，您（或另一个管理员）必须设置和配置名为**ExtensionInstallForcelist**的 microsoft Edge 浏览器策略，以在新 Microsoft Edge 中安装 microsoft S/MIME 扩展。 策略值为 `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` 。 请注意，应用此策略需要加入域的计算机，因此在新的 Microsoft Edge 浏览器中使用 S/MIME 实际上需要加入域的计算机。
+若要在新的[Microsoft edge](https://www.microsoft.com/windows/microsoft-edge) web 浏览器中使用 web 上的 Outlook 中的 S/MIME，您（或另一个管理员）必须设置和配置名为**ExtensionInstallForcelist**的 microsoft Edge 浏览器策略，以便在新的 Microsoft Edge 中安装 microsoft S/MIME 扩展。 策略值为 `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` 。 请注意，应用此策略需要加入域或 Azure 的设备，因此在新的 Microsoft Edge 浏览器中使用 S/MIME 将有效地要求加入域或 Azure 已加入 Azure 的设备。
 
 有关**ExtensionInstallForcelist**策略的详细信息，请参阅[ExtensionInstallForcelist](https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#extensioninstallforcelist)。
 

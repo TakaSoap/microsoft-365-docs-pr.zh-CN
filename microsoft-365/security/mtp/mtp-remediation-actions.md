@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955587"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502933"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动调查遵循的补救措施
 
@@ -39,7 +39,7 @@ ms.locfileid: "42955587"
 
 |设备（终结点）修正操作  |电子邮件修正操作  |
 |---------|---------|
-|隔离<br/>删除注册表项<br/>终止进程 <br/>停止服务 <br/>禁用驱动程序 <br/>删除计划任务      |软删除电子邮件或群集<br/>阻止 URL（单击时）<br/>关闭外部邮件转发          |
+|-收集调查包 <br/>-隔离设备（可以撤消此操作）<br/>-分离 machine <br/>-释放代码执行 <br/>-从隔离区发布 <br/>-请求示例 <br/>-限制代码执行（可以撤消此操作） <br/>-运行防病毒扫描 <br/>-停止和隔离      |-阻止 URL （单击时间）<br/>-软删除电子邮件或群集<br/>-隔离电子邮件<br/>-隔离电子邮件附件<br/>-关闭外部邮件转发          |
 
 在[操作中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)中，可以查看更正操作（无论是等待审批还是已完成）。
 

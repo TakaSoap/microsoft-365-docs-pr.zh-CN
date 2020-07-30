@@ -12,13 +12,13 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业高级版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
-ms.date: 06/08/2018
-ms.openlocfilehash: 30437825a896acb470b23cb8f68ea36235ee80c8
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.date: 07/21/2020
+ms.openlocfilehash: 520009d26d0133a2c53c6149fe4938bea9db5a32
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185968"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502991"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商业高级版常见问题
 
@@ -33,13 +33,13 @@ Microsoft 365 是一个集成式解决方案，可为中小型企业集中提供
 * Office 业务应用（Bookings、MileIQ<sup>[1](#footnote1)</sup>）。 
  
 **企业级设备管理和安全功能** 
-- 利用 Office 365 高级威胁防护计划 1 和 Windows Defender 攻击防护，帮助抵御外部威胁（如钓鱼和复杂的恶意软件）。 
+- 帮助提供来自 Office 365 高级威胁防护计划1和 Microsoft Defender 入侵防护等来自外部威胁的保护（如网络钓鱼和完善的恶意软件）。 
 -  利用数据丢失防护策略和 Azure 信息保护计划 1，帮助控制和管理访问和传输敏感信息的方式。 
 -  使用 Exchange Online Archiving 帮助保护、保留和备份数据。  
 -   通过 Intune 应用保护为 Office 和其他移动应用提供应用保护。 
--  通过 Intune 设备管理为 Windows 10 电脑、MacOS 和移动设备提供设备管理。 
+-  使用 Intune 设备管理的 Windows 10 电脑、macOS 和移动设备的设备管理。 
 -  通过多重身份验证、自助式密码重置和条件访问实现身份保护。
--  跨设备的一致安全配置&mdash;跨设备保护公司数据；Windows Defender，始终处于启用和最新状态。 
+-  跨设备保护公司数据跨设备的一致性安全配置 &mdash; ;Microsoft Defender 防病毒，始终处于启用和最新状态。 
  
  
 **简化设备部署和用户设置** 
@@ -98,14 +98,14 @@ Windows 10 商业版还附带了某些高级 Microsoft Defender 功能，如受�
 Microsoft 365 商业高级版会为客户提供一种简单但却有效的方法，使员工能够使用他们的个人设备工作，同时使企业能够防止这些设备访问、保留和/或共享业务信息。 更具体地说： 
 * **适用于 Office 移动应用的应用保护**可通过强力执行策略（如在未连接到服务的规定时长过后自动删除业务数据、要求将信息仅存储到 OneDrive for Business、要求进行 PIN/指纹验证来访问 Office 应用，以及防止将公司数据从 Office 应用复制到个人应用）来帮助应用保护 Office 数据，包括 iOS 和 Android 移动设备上的电子邮件、日历、联系人和文档。 Microsoft 365 商业高级版订阅者也能通过 Intune 实现其他移动应用的移动应用程序管理。 
   
-* 利用**适用于 Windows 10 电脑的设备管理**，企业可以选择设置和实施一些功能，如 Windows Defender 恶意软件防护、自动更新以及在规定时长过后关闭屏幕。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
+* **适用于 Windows 10 电脑的设备管理**允许企业选择设置和强制实施诸如 Microsoft Defender 防病毒保护、自动更新和在指定时间段后关闭屏幕等功能。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
 
-* **iOS、Android 和 MacOS 的设备管理**功能可帮助企业安全地管理各种设备生态系统，包括 iOS、Android、Windows 和 MacOS 设备。 
+* **适用于 ios 的设备管理、Android & macOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 macOS 设备的各种设备生态系统。 
 
 ### <a name="how-does-microsoft-365-business-premium-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商业高级版如何帮助保护组织中的电脑免受恶意攻击？ 
-通过 Microsoft 365 商业高级版管理的电脑受 Windows Defender 保护，该保护软件 具备 Windows 10 中一流的防病毒功能，与任何其他解决方案相比，它可以保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁。  使用 Microsoft 365 商业高级版，组织可以确保在其所有 Windows 10 设备上 Windows Defender 防护软件都正在运行，且始终保持在最新状态。  
+使用 Microsoft 365 商业高级版管理的电脑受到 Microsoft Defender 防病毒的保护，即 "否"。 具备 Windows 10 中一流的防病毒功能，与任何其他解决方案相比，它可以保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁。 使用 Microsoft 365 商业高级版，组织可以确保 Microsoft Defender 防病毒保护在其所有 Windows 10 设备上运行且始终保持最新。  
  
-Windows 10 商业版还包括 Windows Defender 攻击防护，这是一组新的入侵防护功能。 它的其中一个功能是“受控文件夹访问权限”，通过锁定文件夹和防止未经授权的应用访问用户的重要文件来阻止勒索软件。 
+Windows 10 商业版还包括 Microsoft Defender 攻击防护，这是一组新的入侵防护功能。 它的功能之一是受控制的文件夹访问，它会锁定文件夹，并防止未授权的应用访问用户的重要文件，从而阻止勒索软件。 
 
 ### <a name="whats-the-difference-between-microsoft-365-business-standard-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Microsoft 365 商业标准版、Microsoft 365 商业高级版和 Microsoft 365 企业版之间的区别是什么？ 
 Microsoft 具有中小型客户在升级台式机和设备基础结构时可能会考虑的各种生产力和安全管理产品/服务，每种都具有越来越强大的特性和功能。 
@@ -126,7 +126,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 现有 Microsoft 365 商业高级版试用版适用于 CSP。 稍后将针对直接客户提供试用版。 
  
 ### <a name="what-should-customers-and-partners-know-before-running-microsoft-365-business-premium-within-their-organization"></a>在组织内运行 Microsoft 365 商业高级版之前，客户和合作伙伴应该了解哪些内容？ 
-如果客户想要体验 Microsoft 365 商业高级版的完整功能，必须在其现有台式机上运行 Windows 7、8.1 或 10 专业版<sup>[2](#footnote2)</sup>。 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。 
+希望体验 Microsoft 365 商业高级版的完整功能的客户必须在其现有桌面上运行 Windows 7、8.1 或 10 Pro<sup>[2](#footnote2)</sup> 。 现有的 Windows 10 专业版电脑应该运行创意者更新（如果还没有运行）。 
 
 ## <a name="deployment"></a>部署
 
@@ -134,7 +134,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
 成功部署 Microsoft 365 商业高级版的最直接途径是与 Microsoft 合作伙伴交流。 他们参加过与各种客户方案相关的大量培训并有丰富的相关经验，最能够了解你的环境和需求。 具有经验丰富的 IT 在职人员的客户可以使用 <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 商业高级版入门</a>，以帮助他们部署 Microsoft 365 商业高级版。 
 
 ### <a name="does-microsoft-365-business-premium-include-the-full-capabilities-of-microsoft-intune"></a>Microsoft 365 商业高级版是否包括 Microsoft Intune 的全部功能？ 
-是的，Microsoft 365 商业高级版订阅者已获得许可，可使用 iOS、Android、MacOS 和其他跨平台设备管理相关的完整 Intune 功能。 Microsoft 365 商业高级版的简化管理控制台中不可用的功能（如第三方应用管理和 WiFi 配置文件配置、VPN 证书）可以在完整的 Intune 控制台中进行管理。 
+是的，已授权 Microsoft 365 Business Premium 订阅者使用适用于 iOS、Android、macOS 和其他跨平台设备管理的完整 Intune 功能。 在 Microsoft 365 商业高级版的简化管理控制台中不可用的功能（如第三方应用程序管理、Wi-fi 配置文件的配置和 VPN 证书）可以在完整 Intune 控制台中进行管理。 
   
 
 ### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory （Azure AD）高级 P1 是否带有 Microsoft 365 商业高级版？ 
@@ -143,7 +143,7 @@ Microsoft 具有中小型客户在升级台式机和设备基础结构时可能�
  
  
 ### <a name="does-microsoft-365-business-premium-allow-customers-to-manage-macs"></a>Microsoft 365 商业高级版是否允许客户管理 Mac？ 
-Intune 可帮助你安全管理 iOS、Android、Windows 和 MacOS 设备。 
+Intune 可帮助您安全地管理 iOS、Android、Windows 和 macOS 设备。 
  
 ### <a name="what-is-windows-autopilot"></a>什么是 Windows AutoPilot？ 
 Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最终用户利用 Microsoft 365 商业高级版的集中管理控制首次登录到 Microsoft 365 商业高级版&mdash;（IT 人员从来都不需要触摸设备）&mdash;时，可以完成此过程。 你也可以对运行 Windows 10 专业版创意者更新（或更高版本）并且已恢复出厂设置的现有电脑使用 Windows AutoPilot。 有关 Windows AutoPilot 的详细信息可以在<a href="https://blogs.technet.microsoft.com/windowsitpro/2017/06/29/modernizing-windows-deployment-with-windows-autopilot/" target="_blank">此 2017 年 6 月份博客文章</a>中找到。
@@ -151,13 +151,13 @@ Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最�
 ## <a name="compatibility"></a>兼容性
 
 ### <a name="can-i-add-office-365-add-ons-to-microsoft-365-business-premium"></a>能否将 Office 365 加载项添加到 Microsoft 365 商业高级版中？ 
-所有可以添加到 Microsoft 365 商业标准版的加载项都可以添加到 Microsoft 365 商业高级版中。 这意味着可以购买 Office 365 云应用安全、高级合规性、威胁情报、MyAnalytics、PowerBI Pro 和音频会议功能。 
+所有可以添加到 Microsoft 365 商业标准版的加载项都可以添加到 Microsoft 365 商业高级版中。 这意味着您可以购买 Office 365 云应用安全性、高级合规性、威胁情报、MyAnalytics、Power BI Pro 和音频会议。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>能否将“电话系统”和“呼叫计划”添加到 Microsoft 365 商业高级版中？ 
 不可以，“电话系统”和“呼叫计划”是为具有更高级需求的客户保留的。 需要这些功能的客户应该考虑 Microsoft 365 企业版产品/服务。 
  
-### <a name="can-microsoft-365-business-premium-customers-use-windows-defender-advanced-threat-protection"></a>Microsoft 365 商业高级版客户能否使用 Windows Defender 高级威胁防护？ 
-不能，如果客户需要 Windows Defender 高级威胁防护，则需要使用 Windows 10 企业版 E5 或 Microsoft 365 企业版 E5。 
+### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 商业高级版客户是否可以使用 Microsoft Defender 高级威胁防护？ 
+是的，Microsoft Defender 高级威胁防护作为 Microsoft 365 商业高级客户的附加项提供。
 
 ## <a name="partner-opportunity"></a>合作伙伴机会
 

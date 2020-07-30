@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何为 Office 365 ATP 安全链接策略中的用户组设置用户的自定义已阻止 Url 和不重写的 Url 列表。
-ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
+ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702532"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46517469"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义不重写 Url 列表
 
@@ -60,11 +60,13 @@ ATP 安全链接保护使用多个列表，包括组织的阻止 Url 列表和 "
 
 4. 为策略指定名称和说明。
 
-5. 在 "**不重写以下 url"** 部分，选择 "**输入一个有效的 url** " 框，然后键入 URL，然后选择加号（+）。
+5. 当用户单击链接时，将会重写并**检查 url 的**已知恶意链接列表。
 
-6. 在 "**应用**于" 部分中，选择 **"收件人是其成员**"，然后选择要包括在策略中的组。 选择 "**添加**"，然后选择 **"确定"**。
+6. 在 "**不重写以下 url"** 部分，选择 "**输入一个有效的 url** " 框，输入一个 url，然后选择加号（+）。
 
-7. 添加完 Url 后，在屏幕的右下角，选择 "**保存**"。
+7. 在 "**应用**于" 部分中，选择 **"收件人是其成员**"，然后选择要包括在策略中的组。 选择 "**添加**"，然后选择 **"确定"**。
+
+8. 添加完 Url 后，在屏幕的右下角，选择 "**保存**"。
 
 > [!NOTE]
 > 请务必查看您的组织的已阻止 Url 的自定义列表。 请参阅[使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-atp.md)。

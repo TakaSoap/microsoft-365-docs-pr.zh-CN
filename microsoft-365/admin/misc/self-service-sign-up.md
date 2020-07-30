@@ -1,10 +1,10 @@
 ---
-title: 在你的组织中使用自助服务注册
+title: 在组织中使用自助式注册
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: 了解有关金融的 Microsoft 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365。
-ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解 Microsoft 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 for 金融。
+ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399286"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506293"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>在你的组织中使用自助服务注册
+# <a name="using-self-service-sign-up-in-your-organization"></a>在组织中使用自助式注册
 
 我们正在倾听你的反馈，让你组织中的用户能够更轻松地注册来自 Microsoft 的联机服务。 我们会调用此新的注册过程 "自助注册"，因为您的用户可以注册以使用订阅付费的服务，也可以使用免费服务，而无需让您代表自己执行操作。
   
@@ -66,5 +63,6 @@ ms.locfileid: "44399286"
 |**Microsoft 批量许可证服务中心** <br/> |Microsoft 批量许可证服务中心显示了在企业、选择、教育（校园或学校）、开放价值、开放许可证和 ISV 版税协议下购买的许可证。  <br/> |[VLSC 培训和资源](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
 |**Minecraft 教育版** <br/> |通过使用 Minecraft 作为学习的平台，教师可以鼓励和鼓舞每个学生以实现更多，并 ignite 为学习提供热情。 加入一社区教师学习，了解如何使用 Minecraft 解锁学生潜力。  <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841480) <br/> |[Minecraft 教育版](https://go.microsoft.com/fwlink/p/?linkid=841471) <br/> |
 |**Microsoft Stream** <br/> |在组织中上载并共享视频，以改进通信、参与和学习。  <br/> |[注册 &amp; 第0天的体验](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
-|**Power Automate** <br/> |电力自动化是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录以实现自动完成功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
+|**电源自动化** <br/> |电力自动化是一种产品，可帮助您在收藏的应用程序和服务之间设置自动工作流，以同步文件、获取通知、收集数据等。  <br/> |[注册并登录以实现自动完成功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[电源自动化](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |使用高级虚拟代理，团队可以使用无需数据科学家或开发人员，轻松创建功能强大的 bot，而无需使用引导式无代码图形界面。 电源虚拟代理解决了当今行业中的 bot 组装中的许多主要问题。 它消除了行业专家和构建 bot 的开发团队之间的缺口，以及识别问题和更新机器人以解决问题的团队之间的持续时间延迟。  <br/> |[许可和访问详细信息](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[注册 Power Virtual 代理](https://aka.ms/TryPVA) <br/> |
+|**Azure AD B2B** <br/> |Azure Active Directory （Azure AD）企业到企业（B2B）协作允许您邀请外部用户（或 "来宾用户"）使用付费的 Azure AD 服务。 某些功能是免费的，但对于任何付费的 Azure AD 功能，你可以在你的租户中为员工或非来宾用户拥有的每个 Azure AD 版本许可证邀请最高5个来宾用户。 <br/> |[适用于 Azure AD B2B 协作注册的自助服务](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory B2B 协作许可指南](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |

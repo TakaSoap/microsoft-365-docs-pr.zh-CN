@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127009"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506317"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -121,16 +121,16 @@ ms.locfileid: "45127009"
 
 等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将成为符合[保留设置如何与内容配合](retention.md#how-retention-settings-work-with-content-in-place)使用的标准清理过程。
 
-## <a name="disposition-of-records"></a>记录的处置
+## <a name="disposition-of-records"></a>处置记录
 
 > [!NOTE]
-> 若要查看在没有处置评审的情况下自动删除的记录，可以在四月份和5月2020之间逐步向租户推出租户，因此您可能无法立即看到此体验。
+> 若要查看在没有处置评审的情况下自动删除的记录，仍将向租户进行发布，以便在此首次展示期间，您可能无法看到所有已释放的项目。
 
 使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 例如：
 
 ![在没有处置评审的情况下处置的项目](../media/records-disposed2.png)
 
-在 "已**释放的项目**" 选项卡中显示的记录标签的项目在项目被释放前最长为7年，在该时间段中每条记录的项目数限制为1000000。 如果您看到 "**计数**数量" 接近此限制1000000，并且您需要对记录进行处置证明，请与[Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)部门联系。
+记录标签的 "已**释放的项目**" 选项卡中显示的项目在项目被释放前最长保留7年，在该时间段内每条记录的项目数限制为1000000。 如果您看到 "**计数**数量" 接近此限制1000000，并且您需要对记录进行处置证明，请与[Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)部门联系。
 
 > [!NOTE]
 > 此功能基于[统一审核日志](search-the-audit-log-in-security-and-compliance.md)中的信息，因此需要[启用和可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。

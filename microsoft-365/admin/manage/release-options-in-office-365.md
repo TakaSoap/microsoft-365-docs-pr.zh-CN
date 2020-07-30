@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 了解如何为 Microsoft 365 管理中心中的新产品和功能更新设置发布选项。
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399688"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502875"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>设置标准或目标发布选项
 
@@ -42,6 +42,9 @@ ms.locfileid: "44399688"
   
 > [!IMPORTANT]
 > 本文中所述的 Microsoft 365 更新适用于 Microsoft 365、SharePoint Online 和 Exchange Online。 这些更新不适用于 Skype for Business 及相关服务。 这些发布选项的目标是，将更改发布到 Microsoft 365 的最佳方法是，但不能始终保证，也不能保证所有更新。 
+
+> [!NOTE]
+> 有关应用程序更新通道的信息，请参阅[Microsoft 365 应用的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。 
   
 ## <a name="how-it-works---release-validation"></a>工作原理 - 发布验证
 

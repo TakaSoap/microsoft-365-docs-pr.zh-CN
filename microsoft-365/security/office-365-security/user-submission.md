@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: e9550ce6357ddf19041e752c17e8bd844cba1a11
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 0be1a4efa04d3e7a7968880b2a1cca108fdd34f9
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726491"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503087"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -29,6 +29,8 @@ ms.locfileid: "44726491"
 - [报告邮件加载项](enable-the-report-message-add-in.md)
 
 - [Outlook 网页网站中的内置报告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)（以前称为 "Outlook web App"）
+
+- Outlook for iOS 和 Outlook for Android 中的内置报告
 
   > [!NOTE]
   > 如果[在 web 上的 Outlook 中禁用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)了报告功能，则在此处启用用户提交将覆盖该设置，并使用户能够在 web 上再次报告 Outlook 中的邮件。
@@ -43,17 +45,17 @@ ms.locfileid: "44726491"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要先分配权限，然后才能执行本主题中的过程：
+- 你必须首先分配有权限，然后才能执行本主题中的步骤：
 
   - 若要修改用户提交的配置，您必须是下列角色组之一的成员：
 
-    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
 
   - 若要对用户提交进行只读访问，您必须是下列角色组之一的成员：
 
-    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
+    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全 & 合规性中心配置用户提交邮箱
 
@@ -73,7 +75,7 @@ ms.locfileid: "44726491"
 
       - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 "**标题**" 和 "**确认消息**" 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
 
-      完成后，单击 **“保存”**。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
+      完成时，请单击“保存”****。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
 
       - **将报告的邮件发送到**：执行下列任一选择：
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用来开始收集租户的数据。
-ms.openlocfilehash: fa0973521f5a5e7e8b9b0fda161a5b4779d64c68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401502"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502945"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -36,7 +36,7 @@ ms.locfileid: "44401502"
 
 ::: moniker-end
 
-Microsoft 365 美国政府社区也提供 microsoft 365 的使用情况分析。
+Microsoft 365 的使用情况分析尚不可用于 Microsoft 365 美国政府社区版。
   
 ## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析的步骤
 

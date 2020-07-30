@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039374"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434045"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -85,11 +85,11 @@ Office 365 ATP 包含用于监视 ATP 性能的高级[报告仪表板](view-repo
 
 - [威胁资源管理器（或实时检测）](threat-explorer.md)
 
-- [威胁防护状态](view-reports-for-atp.md#threat-protection-status-report)
+- [威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)
 
-- [ATP 文件类型报告](view-reports-for-atp.md#atp-file-types-report)
+- [高级威胁防护文件类型报告](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
 
-- [ATP 邮件处置报告](view-reports-for-atp.md#atp-message-disposition-report)
+- [高级威胁防护邮件处置报告](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
 
 - …及更多精彩内容。
 

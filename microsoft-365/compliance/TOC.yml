@@ -319,8 +319,8 @@
           href: event-driven-retention.md
         - name: 管理 SharePoint 文档的生命周期
           href: auto-apply-retention-labels-scenario.md
-    - name: 处理数据
-      href: disposition.md
+        - name: 管理数据的处置
+          href: disposition.md
     - name: 管理非活动邮箱
       items:
         - name: 非活动邮箱概述

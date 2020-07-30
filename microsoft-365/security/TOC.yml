@@ -423,7 +423,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: 修正恶意电子邮件问题
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: 查看和阅读 ATP 报告
+            - name: 查看安全与合规中心中的 ATP 报告
               href: ./office-365-security/view-reports-for-atp.md
             - name: 通过威胁分析了解最新的攻击
               href: ./mtp/latest-attack-campaigns.md
