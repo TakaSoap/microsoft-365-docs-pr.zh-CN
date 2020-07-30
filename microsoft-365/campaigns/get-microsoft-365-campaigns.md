@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取适用于市场活动的 Microsoft 365，以便您可以保护您的市场活动，从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635620"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527326"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取适用于市场活动的 Microsoft 365
 
@@ -55,7 +56,7 @@ Microsoft 365 商业高级版的这一配置包括可帮助您和您的员工安
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>如何有资格享受特殊定价？
 
-1. 转到https://m365forcampaigns.microsoft.com/ ，并提供有关您的组织的一些详细信息。 你提供的详细信息可帮助我们验证你是否表示美国的国家级政治市场活动或当事方。 填写此表单时，没有任何承诺。 
+1. 转到 https://m365forcampaigns.microsoft.com/ ，并提供有关您的组织的一些详细信息。 你提供的详细信息可帮助我们验证你是否表示美国的国家级政治市场活动或当事方。 填写此表单时，没有任何承诺。 
 2. 填写完表单后，我们需要花费几天时间查看你的信息。 
 3. 在我们确认你表示国家级政治活动或参与方之后，你将收到 Microsoft 发送的电子邮件邀请。 您的邀请包括特定于您的组织的注册链接。 
 

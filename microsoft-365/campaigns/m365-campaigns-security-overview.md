@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何通过为市场活动提高 Microsoft 365 的安全性来保护你的活动。
-ms.openlocfilehash: f2d57fe0cbc6765b359a759c3d33c6482d86bb06
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 0be3a3ef766686c830ffffc8aaee451b67c0b81f
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41594783"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527086"
 ---
 # <a name="bump-up-security-protection-for-your-campaign"></a>为你的市场活动增大安全保护
 

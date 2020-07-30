@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 55cb2e396b4e557a9fc6de2bba4a90b962137d7b
-ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
+ms.openlocfilehash: 1f9d2d1a8a1c346214fa58f0f6095683bee0b24f
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44664534"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520965"
 ---
 # <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解决方案和体系结构中心
 

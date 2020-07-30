@@ -1,18 +1,18 @@
 ---
 title: Microsoft 托管桌面应用程序要求
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5889a4e80f44349b4f149ee4f2a631f12b32251e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 94d51d7b28922a05c892eb4ffc14aee813a9069c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637848"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522021"
 ---
 # <a name="microsoft-managed-desktop-app-requirements"></a>Microsoft 托管桌面应用程序要求
 
@@ -20,44 +20,25 @@ ms.locfileid: "43637848"
 
 <!--Application addendum -->
  
-为了保证 Microsoft 托管桌面设备的性能、可靠性和可维护性，客户的业务线应用程序不一定会严重影响最终用户体验，也不能修改安全的态度。 因此，要部署到 Microsoft 托管桌面设备的业务线应用程序必须满足本主题中的要求。
-
-## <a name="application-condition"></a>应用程序条件
-
-应用程序不会对 Microsoft 托管桌面环境产生负面影响，这一点非常重要。 以下是应用程序必须满足部署应用程序的要求。 对于任何给定的应用程序或驱动程序，Microsoft 可能会停征此处提供的任何要求。 Microsoft 可能会决定删除对 Microsoft 托管桌面设备的性能和可靠性产生负面影响的任何应用程序或驱动程序。
-
-## <a name="centrally-managed-apps"></a>集中管理的应用程序
-
-所有安装在 Microsoft 托管设备上的应用程序和驱动程序都必须通过 Microsoft Intune、Microsoft Store 或 Microsoft Store for Business 进行部署;如果可用，还将通过 Windows Update 服务部署驱动程序。 
-
-## <a name="prohibited-app-classes"></a>禁止的应用程序类
-
-Microsoft 托管桌面设备上不允许某些应用程序类型：
-- 第三方反病毒、安全性或审核软件
-- 365 Microsoft Office 的 Microsoft Office 相关应用程序之前的版本
-- 安装或捆绑其他第三方软件的应用程序
-
-## <a name="restricted-app-behaviors"></a>受限制的应用程序行为
-
-某些应用程序行为可能会对用户体验产生负面影响，也可能对 Microsoft 托管桌面设备带来安全风险。 在 Microsoft 托管桌面环境中，不允许运行具有以下行为的应用程序，而无需从 Microsoft 进行指定。
-
-用户体验：
-- 安装后台服务
-- 将自身添加到 Windows 启动路径
-- 依赖驱动程序的应用程序
-- 第三方 web 浏览器
-
-安全性：
-- 提升最终用户的权限
-- 充当应用商店或具有内置扩展管理器
-- 存在已知的安全漏洞
-- 加密或限制对最终用户数据的访问
-- 未签名或使用不会汇总到受信任的根的证书进行签名
+Microsoft 托管桌面要求我们使用特定的方法来管理设备，以确保设备的性能、可靠性和可维修性。 如果你确信 Microsoft 托管桌面对以下区域执行的方法将不起作用，则可以[向服务计划请求异常](customizing.md)。
 
 
-## <a name="driver-deployment"></a>驱动程序部署
+|管理区域  |Microsoft 托管桌面方法  |
+|---------|---------|
+|设备配置或策略管理     |  Microsoft Intune       |
+|应用管理     | Microsoft Intune 和公司门户        |
+|驱动程序部署     |  设备、Windows 更新或 Intune 附带的驱动程序       |
+|设备安全性     | 请参阅[设备安全性](security.md#device-security)      |
+|标识和访问管理     | 请参阅[标识和访问管理](security.md#identity-and-access-management)        |
+|网络安全     | 请参阅[网络安全性](security.md#network-security)        |
+|信息安全     |  请参阅[信息安全性](security.md#information-security)       |
+|数据恢复     | OneDrive for Business        |
+|核心工作效率     | Microsoft 365 企业应用版    |
+|浏览器     | Microsoft Edge        |
 
-Microsoft 托管桌面仅支持通过 Microsoft 托管设备在 Windows 更新或已安装的收件箱中提供的设备驱动程序。 
 
-如果应用程序需要特定驱动程序来运行它，则会将其视为受限制的应用程序，并在将其部署到 Microsoft 托管桌面之前需要异常。 
+
+
+Microsoft 托管桌面可能会监视在托管设备上运行的其他软件。 如果它对系统安全性、性能或可靠性造成负面影响，则可能需要向服务计划请求异常。
+
 

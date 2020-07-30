@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解设置 SharePoint 网站以与来宾进行协作所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159999"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527902"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -44,7 +45,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 
 设置组织关系设置
 
-1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com)。
+1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左侧导航中，单击 " **Azure Active Directory**"。
 3. 在 "**概述**" 窗格中，单击 "**组织关系**"。
 4. 在 "**组织关系**" 窗格中，单击 "**设置**"。
@@ -82,7 +83,7 @@ Microsoft 365 中的共享受 Azure Active Directory 中的组织关系设置的
 设置 SharePoint 组织级别的共享设置
 
 1. 在 Microsoft 365 管理中心的左侧导航栏中，在 "**管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+2. 在 SharePoint 管理中心的左侧导航栏中，单击 **“共享”**。
 3. 确保将 SharePoint 的 "外部共享" 设置为 "**任何人**" 或 "**新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 

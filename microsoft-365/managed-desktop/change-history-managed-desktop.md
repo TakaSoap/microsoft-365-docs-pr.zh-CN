@@ -5,21 +5,40 @@ keywords: 修订记录
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107595"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528032"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本文列出了[Microsoft 托管桌面文档](index.yml)中的新增和更新的文章。 "已更新" 的文章是指那些具有材料添加或更正的文章--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
+
+
+## <a name="july-2020"></a>2020 年 7 月
+新增或已更改的文章 | 说明
+--- | ---
+[Microsoft 托管桌面应用程序要求](service-description/mmd-app-requirements.md) | 更新的文章
+[合规性](intro/compliance.md) | 更新的文章
+[开始使用应用程序控制](get-started/get-started-app-control.md) | 更新的文章
+[使用应用程序控制](working-with-managed-desktop/work-with-app-control.md) | 更新的文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
+[应用程序控制](service-description/app-control.md) | 更新的文章
+[Microsoft 托管桌面的网络配置](get-ready/network.md) | 更新的文章
+[新建 Microsoft Edge 应用](get-started/edge-browser-app.md) | 更新的文章
+[访问管理门户](get-started/access-admin-portal.md) | 新增文章
+[应用程序控制](service-description/app-control.md) | 新增文章
+[在 Microsoft 托管桌面设备上安装 Microsoft Project 或 Microsoft Visio](get-started/project-visio.md) | 更新的文章
 
 ## <a name="june-2020"></a>2020 年 6 月
 新增或已更改的文章 | 说明

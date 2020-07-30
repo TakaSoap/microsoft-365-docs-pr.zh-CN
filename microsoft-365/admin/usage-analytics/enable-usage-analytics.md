@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用来开始收集租户的数据。
-ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: b5cb8df7fbe8ce1844d2af3ecaf62c7903d4e98b
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502945"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527369"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -86,9 +86,9 @@ Microsoft 365 的使用情况分析尚不可用于 Microsoft 365 美国政府社
 
 6.  单击 "**连接**" 后，在 "**连接到 Microsoft 365 使用情况分析**" 屏幕上，键入在步骤（1）中复制的租户 Id （不带短划线），然后选择 "**下一步**"。
     
-7. 在下一个屏幕上，选择 " **oAuth2** " 作为**身份验证方法** \> **登录**。 如果选择任何其他身份验证方法，则与模板应用程序的连接将失败。
+7. 在下一个屏幕上，选择 " **Microsoft 帐户**" 作为**身份验证方法** \> **登录**。 如果选择任何其他身份验证方法，则与模板应用程序的连接将失败。
     
-    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![选择 Microsoft 帐户作为身份验证方法](../../media/ab6f0463-c3f7-4088-a605-67c699fa86ad.png)
   
 8. 模板应用程序实例化后，Microsoft 365 使用情况分析仪表板将在 Power BI 网页版中提供。 仪表板的初始加载将需要2到30分钟时间。
   

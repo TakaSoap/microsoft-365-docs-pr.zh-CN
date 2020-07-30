@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: 使用 Microsoft 365 的标识、设备和威胁防护服务防止个人数据泄露。
-ms.openlocfilehash: 74894037ef2fe56aeb5bc44340cd8a946863baff
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695075"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520977"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>对数据隐私法规使用标识、设备和威胁防护
 
@@ -48,7 +48,7 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
 使用[Azure Active Directory （AZURE AD）](https://azure.microsoft.com/services/active-directory/)获取标识和**控制访问**类别，以便可以：
 
 - 实现重抵抗式身份验证（以防止 "中间人" 攻击）
-- 阻止旧版身份验证。
+- 阻止旧式身份验证。
 - 配置用户风险和用户登录风险策略。
 - 为管理员和非管理员启用条件访问和多因素身份验证（MFA）。
 - 配置和强制实施密码策略。
