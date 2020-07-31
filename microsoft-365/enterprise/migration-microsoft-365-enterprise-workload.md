@@ -2,7 +2,7 @@
 title: 迁移到 Microsoft 365 企业版
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -12,14 +12,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 逐步完成将 Microsoft Office、Office 服务器和 Windows 的版本迁移到组织中的 Microsoft 365 企业版的过程。
-ms.openlocfilehash: 6830b4627eea799e18d32d3f9150617df339d7d4
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 05654e4714d2328f2f5853ed49df83a907e580f6
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011791"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528056"
 ---
 # <a name="migration-to-microsoft-365-enterprise"></a>迁移到 Microsoft 365 企业版
+
+
+>[!Note]
+>正在查找工具以帮助将*内容*迁移到 Microsoft 365？  无论从网络文件共享、SharePoint Server 还是其他云提供商处迁移内容，我们都有能满足你的需要的迁移工具。 在以下位置了解有关免费迁移工具的详细信息：
+>
+>[将内容迁移到 Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)。
 
 大多数企业组织拥有带有多种版本的操作系统、客户端软件和服务器软件的异类环境。Microsoft 365 企业版包含这些 IT 基础结构的关键组件的最安全版本，其中生产功能利用云技术设计。
 

@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: 培训用户，并确保快速处理问题。
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160722"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521429"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步骤 6：培训远程工作者和处理使用情况反馈
 
@@ -30,7 +31,7 @@ ms.locfileid: "44160722"
 
 - 使用 MFA 的正确登录程序，包括注册额外的验证方法。
 - 使用设备以及如何使用终结点管理策略阻止对不合规设备的访问。
-- 使用允许的应用以及如何使用终结点管理策略阻止使用应用。
+- 使用允许的应用以及如何使用终结点管理应用程序策略阻止使用应用。
 - Windows 10 企业版安全功能。
 - 如何使用 [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) 进行聊天、基于视频的会议、文档共享和线程对话。
 - 如何将 [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) 用于电子邮件和计划。
@@ -43,7 +44,7 @@ ms.locfileid: "44160722"
 - 快速处理远程工作者的反馈意见并微调相关策略和配置。
 - 分析 Teams、电子邮件、SharePoint 网站和 OneDrive 文件夹的使用情况，并将其与使用预期进行比较。
 
-根据需要重新培训用户。
+然后，根据需要重新培训用户。
 
 ## <a name="results-of-step-6"></a>步骤 6 的结果
 

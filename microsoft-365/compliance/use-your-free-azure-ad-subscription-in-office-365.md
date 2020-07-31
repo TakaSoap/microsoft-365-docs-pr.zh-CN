@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何访问组织已购买付费订阅中包含的 Azure Active Directory。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819282"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528148"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用免费的 Azure Active Directory 订阅
 
@@ -30,7 +30,7 @@ ms.locfileid: "44819282"
 
 ## <a name="open-a-private-browsing-session"></a>打开专用浏览会话
 
-使用专用浏览会话（而不是常规会话）来访问 Azure 门户（下面的第 1 步），这样可以防止将当前登录时使用的凭据传递到 Azure。若要打开专用浏览会话：
+使用专用浏览会话（而不是常规会话）来访问 Azure 门户（下面的第 1 步）。这样可以防止将当前登录时使用的凭据传递到 Azure。若要打开专用浏览会话：
 
 - 在 Microsoft Edge（旧版）、Internet Explorer 或 Mozilla FireFox 中，按下 `CTRL+SHIFT+P`。
 
