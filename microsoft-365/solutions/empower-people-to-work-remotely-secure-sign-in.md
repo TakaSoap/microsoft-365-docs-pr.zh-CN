@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
 ms.custom: ''
 description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: a8c0b8ac689407fa871d2373f1ca0a3658bb1668
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844950"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521513"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
 
