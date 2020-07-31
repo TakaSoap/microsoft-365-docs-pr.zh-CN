@@ -13,16 +13,17 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 6ad5de355055ac193979db9154d54ab9974fcde0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159917"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528190"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 

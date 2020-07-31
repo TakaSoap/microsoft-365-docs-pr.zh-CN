@@ -14,15 +14,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何使用安全隔离的团队对主要项目进行安全隔离，以开发一套新的产品和服务。
-ms.openlocfilehash: 1083c9d3db3be9ca528b2eee40f072aa17c7431e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: f7b38a7ef43cdb50b46f3e37f855f490dc32cfdf
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159451"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521621"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的主要机密项目的独立团队
 

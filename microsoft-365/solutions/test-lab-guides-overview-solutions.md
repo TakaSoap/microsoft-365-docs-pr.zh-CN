@@ -1,5 +1,5 @@
 ---
-title: 测试实验室指南的解决方案和应用场景
+title: 用于解决方案和方案的测试实验室指南
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,18 +14,17 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.custom:
 - Ent_Architecture
 description: 使用测试实验室指南在开发/测试环境中构建 Microsoft 365 解决方案和方案。
-ms.openlocfilehash: 38b06678df46189f49b40a5752803786a94784fe
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159439"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521297"
 ---
-# <a name="test-lab-guides-for-solutions-and-scenarios"></a>测试实验室指南的解决方案和应用场景
+# <a name="test-lab-guides-for-solutions-and-scenarios"></a>用于解决方案和方案的测试实验室指南
 
 测试实验室指南 (TLG) 可帮助你快速了解 Microsoft 产品。它们提供了用于配置已简化但具有代表性的测试环境的说明性指南。可以在试用版或付费订阅期间使用这些环境进行演示、自定义或创建概念的复杂论证。 
 

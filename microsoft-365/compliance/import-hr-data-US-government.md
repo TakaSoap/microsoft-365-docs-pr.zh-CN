@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美国政府云中的管理员可以设置数据连接器，将员工数据从其组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205020"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527640"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>设置连接器以在美国政府版中导入 HR 数据（预览）
 
@@ -87,7 +87,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    b. 键入 HR 连接器的名称。
 
-5. 在 "**文件映射**" 页上，键入三个列标题名称（也称为 "在第2步中在每个相应的框中创建的 CSV 文件中的*参数*）"。 名称不区分大小写。 如前面所述，在这些框中键入的名称必须与 CSV 文件中的参数名称相匹配。 例如，下面的屏幕截图显示了在第2步中显示的示例 CSV 文件示例中的参数名称。
+5. 在 "**文件映射**" 页上的每个相应框中，键入您在步骤2中创建的 CSV 文件中的三个列标题（也称为 "*参数*"）的名称。 名称不区分大小写。 如前面所述，在这些框中键入的名称必须与 CSV 文件中的参数名称相匹配。 例如，下面的屏幕截图显示了在第2步中显示的示例 CSV 文件示例中的参数名称。
 
    ![列标题名称与 CSV 文件中的名称相匹配](../media/HRConnectorWizard3.png)
 

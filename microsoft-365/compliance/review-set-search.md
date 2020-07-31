@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在审阅集中创建和运行查询，以在高级电子数据展示事例中组织数据以实现更高效的审阅。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1bf4d86ea4aecb33cbb2e7ad7b617cd58a5c086d
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034596"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527432"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查询审阅集中的数据
 

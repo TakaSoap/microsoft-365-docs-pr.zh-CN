@@ -18,12 +18,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 阅读有关在 Office 365 中的高级电子数据展示工具中处理各种形式的数据的概述。
-ms.openlocfilehash: f9940318ba7355303e8afed1c83bb314d98b86cf
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 0725b38af00ec787869090c5a57f5a865fb421e7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024752"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527402"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>处理高级电子数据展示中的处理错误
 

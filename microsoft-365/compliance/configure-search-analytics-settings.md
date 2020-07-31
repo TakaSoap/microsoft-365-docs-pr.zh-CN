@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在管理数据调查时配置搜索和分析设置，如临近重复项、电子邮件线程和主题。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06f39a3dd52ecb872c671035460bab9a34956e49
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033662"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527348"
 ---
 # <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
 
@@ -37,6 +37,7 @@ ms.locfileid: "44033662"
 - 默认情况下隐藏重复项：如果启用此设置，则默认情况下将在工作集中应用用于隐藏重复文档的筛选器。 如果需要，可以在工作集中手动删除筛选器。
 
 - 最小/最大单词数：临近重复项和电子邮件线程处理将仅在至少包含最少单词数和最大单词数的文档中运行。
+
 有关详细信息，请参阅[接近重复检测](near-duplicates.md)和[电子邮件线程](email-threading.md)。
 
 ## <a name="themes"></a>主题
@@ -44,8 +45,11 @@ ms.locfileid: "44033662"
 在本节中，您可以设置主题的参数。
 
 - 启用/禁用：将主题群集包含为分析流（如果已启用）的一部分。
-- 动态动态调整主题的最大数量：在某些情况下，没有足够的文档来生成所需数量的主题。 如果启用此设置，则不是尝试强制实施所需的最大主题数，系统会动态调整最大主题数。
-- 主题的最大数量：所需的主题数量
+
+- 动态调整主题的最大数量：在某些情况下，没有足够的文档来生成所需数量的主题。 如果启用此设置，则不是尝试强制实施所需的最大主题数，系统会动态调整最大主题数。
+
+- 主题的最大数量：所需的主题数。
+
 - 主题中包含数字：如果启用此选项，它将在生成主题时包含数字。  
 
 ## <a name="optical-character-recognition-ocr"></a>光学字符识别（OCR）

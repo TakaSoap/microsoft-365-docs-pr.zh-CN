@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: 确定 Microsoft 365 环境中的数据隐私法规、相关方案、准备情况和敏感信息类型。
-ms.openlocfilehash: 0cfa9f8a22810027e1a31ce2ace8b42f26ef9eb2
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ba47a43c7af8d97af852e0a3ef417cdc1dbab46a
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126592"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521369"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>评估数据隐私风险并使用 Microsoft 365 标识敏感项目
 
@@ -59,7 +59,7 @@ GDPR （最著名和引用的数据隐私法规）规定了收集、存储、处
 
 | 管制 | 文章/部分 | 部分 | 适用的技术控制类别 |
 |:-------|:-----|:-------|:-------|
-| GDPR | 第5篇文章（1）（f） | 应以确保个人数据的适当安全性的方式处理个人数据，包括使用适当的技术或组织措施（"完整性" 和 "机密性"）来防止未经授权或非法处理以及防止意外丢失、破坏或损坏。  |  各种 <br> 标识 <br> 设备 <br> 威胁防护 <br> 保护信息 <br> 管理信息 <br> 发现和响应 |
+| GDPR | 第5篇文章（1）（f） | 应以确保个人数据的适当安全性的方式处理个人数据，包括使用适当的技术或组织措施（"完整性" 和 "机密性"）来防止未经授权或非法处理以及防止意外丢失、破坏或损坏。  |  各种 <br> 标识 <br> Device <br> 威胁防护 <br> 保护信息 <br> 管理信息 <br> 发现和响应 |
 |  | 文章（32）（1）（a） | 考虑到艺术的状态、实现的成本以及处理的性质、范围、上下文和目的，以及对自然人员的权利和自然人的可能性和严重性有不同的风险，而控制器和处理器应实施适当的技术和组织措施，以确保适合风险的安全级别，其中包括 alia：（a）个人数据的假名化和加密。 | 保护信息 |
 |  | 文章（13）（2）（a） | "...在获取个人数据时，控制器应提供以下详细信息，以确保公平和透明处理：（a）存储个人数据的时间段，或者，如果不可能，则用于确定该时间段的条件。 | 管理信息 |
 |  | 文章（15）（1）（e） | 数据主体应具有从控制器确认获取的权限，以确定是否正在处理与他/她有关的个人数据，在这种情况下，对个人数据和以下信息的访问权限：（e）是否存在从控制器纠正请求的权限，或擦除个人数据或将有关数据主体或对象的个人数据处理限制为此类处理。 | 发现和响应 |

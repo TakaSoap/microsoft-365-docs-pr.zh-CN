@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 76ffc861465508486abebfcd13a84acb2b0379c4
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429880"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527442"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 

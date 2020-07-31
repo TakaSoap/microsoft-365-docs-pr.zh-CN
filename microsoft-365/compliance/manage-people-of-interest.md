@@ -17,21 +17,21 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何管理感兴趣的人员，以限定搜索范围或查看信息（如联系人、位置和活动日志）。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7cab1904731f325f1ec45685ddf122e5ee375a2b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 85f6bdbe7a0602f8ce0038a4aca912896d5c2079
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036065"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528168"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>管理数据调查中感兴趣的人员（预览）
 
-数据调查通常涉及感兴趣的人。 通常情况下，他们是拥有您调查或寻求补救措施的错放、敏感或恶意数据的人。 在**数据调查（预览版）** 中，可以将其添加到查找用于确定搜索范围的数据源，也可以查看其他信息（如联系人、位置和活动日志）。 
+数据调查通常涉及感兴趣的人。 通常情况下，他们是拥有您调查或寻求补救措施的错放、敏感或恶意数据的人员。 在 "**数据调查（预览）**" 中，可以将其添加到查找用于确定搜索范围的数据源，也可以查看其他信息（如联系人、位置和活动日志）。 
 
 
 ## <a name="add-people-of-interest"></a>添加感兴趣的人员
 
-在 "**感兴趣的人员**" 选项卡上，您可以添加感兴趣的人员并发现他们的数据源（如可用于确定搜索范围的 Exchange 邮箱或 OneDrive for business 网站）。 当受关注的人员限制时，搜索会提高性能和准确性，因为该工具会重新处理任何未编制索引的数据，如图像或不受支持的文件类型。 您还可以查看其联系人信息、位置信息和活动日志，您可以使用它们启动通信或进一步调查其活动。 
+在 "**感兴趣的人员**" 选项卡上，您可以添加感兴趣的人员并发现他们的数据源（如可用于确定搜索范围的 Exchange 邮箱或 OneDrive for business 网站）。 当受关注的人员限制时，由于工具 reprocesses 任何未编制索引的数据（如图像或不受支持的文件类型），因此搜索的性能和准确性更高。 您还可以查看其联系人信息、位置信息和活动日志，您可以使用它们启动通信或进一步调查其活动。 
 
 向调查中添加感兴趣的人员：
 
@@ -56,7 +56,7 @@ ms.locfileid: "44036065"
         > [!NOTE]
         > 当您单击 "选择用户、组或团队以指定邮箱" 时，显示的邮箱选取器为空。 这种设计旨在增强性能。 若要将人员添加到此列表，请在搜索框中键入一个名称（至少3个字符）。
      
-     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**"，以指定要添加到人员的其他 SharePoint 和 OneDrive for business 网站 wwant。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 键入要分配的每个网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
+     - **SharePoint 网站**-单击 "**选择网站**"，然后再次单击 "**选择网站**"，以指定要添加到人员的其他 SharePoint 和 OneDrive for business 网站。 您还可以为 Microsoft 365 组或 Microsoft 团队添加 SharePoint 网站的 URL。 键入要分配的每个网站的 URL。 单击 "**选择**"，然后单击 "**完成**"。
      - **Microsoft 团队**–单击 "**选择团队**"，然后再次单击 "**选择团队**" 以查看此人是今天的成员的 Microsoft 团队组列表。 选择要添加到人员的团队。 选择后，系统将自动识别 & 选择与该 Microsoft 团队相关联的关联 SharePoint 网站和组邮箱。 单击 "**选择**"，然后单击 "**完成**"。
         
       > [!NOTE]
@@ -66,11 +66,11 @@ ms.locfileid: "44036065"
 
 ## <a name="view-additional-people-of-interest-information"></a>查看其他感兴趣的人员信息
 
-在 "**感兴趣的人员**" 选项卡上，单击您 adeed 的人员。 在浮出控件中，您将看到：
+在 "**感兴趣的人员**" 选项卡上，单击您添加的人员。 在浮出控件中，您将看到：
 
 - 联系人信息
 
-  - **显示名称**：在通讯簿中显示的 peron 的名称。 这通常是名字、中间名首字母和姓氏的组合。
+  - **显示名称**：在通讯簿中显示的人员姓名。 这通常是名字、中间名首字母和姓氏的组合。
   - **Mail/smtp**：人员的 SMTP 地址，例如，jeff@contoso.onmicrosoft.com。  
   - **职务**：职务。
   - **部门**：人员在其中工作的部门的名称。

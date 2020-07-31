@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 针对市场活动的 Microsoft 365 的隐私和同意通知自定义登录页面。
-ms.openlocfilehash: 22ce3d1c2198c0bbf045cb4534b7074e318b86bc
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: 27d9ee496290c091c7bcdef4c59e0cc8df46b9b7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372505"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526954"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>使用隐私和同意通知自定义登录页面
 

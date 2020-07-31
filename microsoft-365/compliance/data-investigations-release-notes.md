@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: 在本文中，您将找到发行说明，其中包含 Microsoft 365 中的数据调查（预览）工具的更改和新功能。
-ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352279"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528022"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查（预览）发布说明
 
-您可以使用 Microsoft 365 中的新数据调查（预览版）工具对数据相关事件进行会审、调查和补救，如数据外泄事件或内部调查。 数据调查的公共预览为您提供了对即将推出的功能和更新的早期访问权限。 若要尽早访问最新功能，请在安全 & 合规性中心中创建一个新的数据调查（预览版）调查。 若要了解如何操作，请参阅[在 Microsoft 365 中管理数据外泄事件](manage-data-spillage-incidents.md)。
+您可以使用 Microsoft 365 中的新数据调查（预览版）工具来会审、调查和修正与数据相关的事件，例如数据外泄事件或内部调查。 数据调查的公共预览为您提供了对即将推出的功能和更新的早期访问权限。 若要尽早访问最新功能，请在安全 & 合规性中心中创建一个新的数据调查（预览版）调查。 若要了解如何操作，请参阅[在 Microsoft 365 中管理数据外泄事件](manage-data-spillage-incidents.md)。
 
 ## <a name="whats-new"></a>最近更新 
 
@@ -44,7 +44,7 @@ ms.locfileid: "44352279"
 
 - **密文、标记和批注**–在审阅文档时设置密文、应用标记和批注。
   
-- **高级索引**–如果有任何部分已编制索引的项目，则将按需重新编制索引，以便所有数据都可供搜索。
+- **高级索引**–如果有任何部分已编制索引的项目，它们将按需编制索引，以便所有数据都可供搜索。
 
 - **错误修正**–修正或下载处理错误。 这包括对大型文件类型的补救性支持、受密码保护的文件以及与索引错误相关的其他问题。 
 

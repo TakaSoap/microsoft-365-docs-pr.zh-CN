@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将员工数据从组织的人力资源（HR）系统导入到 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 0cb06bb25e3ba6d4e745094a51fb49663bc7b7b7
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189497"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527584"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以导入 HR 数据（预览）
 
@@ -29,9 +29,9 @@ ms.locfileid: "45189497"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 您需要确定要导入到 Microsoft 365 的 HR 方案和数据。 这将帮助您确定需要创建多少个 CSV 文件和 HR 连接器，以及如何生成和构造 CSV 文件。 您导入的 HR 数据由要实施的内幕风险管理策略确定。 有关详细信息，请参阅步骤1。
+- 确定要导入到 Microsoft 365 的 HR 方案和数据。 这将帮助您确定需要创建多少个 CSV 文件和 HR 连接器，以及如何生成和构造 CSV 文件。 您导入的 HR 数据由要实施的内幕风险管理策略确定。 有关详细信息，请参阅步骤1。
 
-- 您需要确定如何检索或导出组织的 HR 系统中的数据（定期），并将其添加到您在步骤1中创建的 CSV 文件。 您在步骤4中运行的脚本会将 CSV 文件中的 HR 数据上传到 Microsoft 云。
+- 确定如何检索或导出组织的 HR 系统中的数据（定期），并将其添加到您在步骤1中创建的 CSV 文件。 您在步骤4中运行的脚本会将 CSV 文件中的 HR 数据上传到 Microsoft 云。
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的数据。 若要同意此请求，请转到[此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能在步骤3中成功创建 HR 连接器。
 
@@ -69,7 +69,7 @@ ms.locfileid: "45189497"
 
 对于每个 HR 方案，您需要在一个或多个 CSV 文件中提供相应的 HR 数据。 要用于内幕风险管理实施的 CSV 文件的数量将在本节的后面部分中进行讨论。
 
-创建具有所需 HR 数据的 CSV 文件后，将其存储在您在步骤4中运行脚本的本地计算机上。 您还应实现更新策略，以确保 CSV 文件始终包含最新的信息，以便您运行脚本时，最新的 HR 数据数据将上传到 Microsoft 云中，并可供内幕风险管理解决方案访问。
+创建具有所需 HR 数据的 CSV 文件后，将其存储在您在步骤4中运行脚本的本地计算机上。 您还应实现更新策略，以确保 CSV 文件始终包含最新的信息，以便您运行脚本时，最新的 HR 数据将上传到 Microsoft 云中，并可供内幕风险管理解决方案访问。
 
 > [!IMPORTANT]
 > 以下各节中介绍的列名称不是必需参数，只是示例。 您可以在 CSV 文件中使用任何列名称。 但是，当您在步骤3中创建 HR 连接器时，您在 CSV 文件中使用的列名称*必须*映射到数据类型。 另请注意，以下部分中的示例 CSV 文件将显示在记事本视图中。 在 Microsoft Excel 中查看和编辑 CSV 文件要容易得多。
@@ -133,7 +133,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 | **EmailAddress**  | 指定用户的电子邮件地址（UPN）。|
 | **EffectiveDate** | 指定用户在其性能评审的结果中获得官方通知的日期。 这可以是绩效考核周期结束的日期。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 | **备注**| 指定评估程序为用户提供的用于性能评审的任何备注。 这是一个长度限制为200个字符的文本参数。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
-| **Rating**| 指定为执行性能评审而提供的分级。 这是一个文本参数，可以包含贵组织用于识别评估的任意自由格式文本。 例如，"3 达到预期" 或 "低于平均值 2"。 这是一个文本参数，最大限制为25个字符。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
+| **Rating**| 指定为执行性能评审而提供的分级。 这是一个文本参数，可包含贵组织用于识别评估的任意自由格式文本。 例如，"3 达到预期" 或 "低于平均值 2"。 这是一个文本参数，最大限制为25个字符。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>用于性能改进计划数据的 CSV 文件
@@ -164,7 +164,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 - 生成或收集 HR 数据的方法可能会决定 CSV 文件的数量。 例如，如果用于配置 HR 连接器的不同类型的 HR 数据位于组织中的单个 HR 系统中，则可以将该数据导出到单个 CSV 文件中。 但是，如果数据分布在不同的 HR 系统中，则将数据导出到不同的 CSV 文件可能会更容易。 例如，员工辞职数据所在的 HR 系统可能与作业级或绩效考核数据不同。 在这种情况下，可能更易于使用单独的 CSV 文件，而无需将数据手动组合到单个 CSV 文件中。 因此，从 HR 系统检索或导出数据的方式可能决定了所需的 CSV 文件的数量。
 
-- 通常情况下，您需要创建的 HR 连接器的数量由 CSV 文件中的数据类型决定。 例如，如果 CSV 文件包含支持您的内幕风险管理实施所需的所有数据类型，则只需要一个 HR 连接器。 但是，如果您有两个单独的 CSV 文件，每个文件都包含一个数据类型，那么您必须创建两个 HR 连接器。 一个例外是，如果将 HRScenario * * 列添加到 CSV 文件（请参阅下一节），则可以配置单个 HR 连接器来处理不同的 CSV 文件。
+- 通常情况下，您需要创建的 HR 连接器的数量由 CSV 文件中的数据类型决定。 例如，如果 CSV 文件包含支持您的内幕风险管理实施所需的所有数据类型，则只需要一个 HR 连接器。 但是，如果您有两个单独的 CSV 文件，每个文件都包含一个数据类型，那么您必须创建两个 HR 连接器。 例外情况是，如果向 CSV 文件添加**HRScenario**列（请参阅下一节），则可以配置单个 HR 连接器来处理不同的 CSV 文件。
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>为多个 HR 数据类型配置单个 CSV 文件
 
@@ -176,7 +176,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 - 若要将 CSV 文件与多种类型的 HR 数据结合使用，HR 连接器需要知道 CSV 文件中的哪些行包含 HR 数据类型。 这是通过向 CSV 文件添加其他**HRScenario**列来实现的。 此列中的值标识每行中 HR 数据的类型。 例如，与四个 HR 方案对应的值可能会 \` 让步 \` 、 \` 作业级别更改 \` 、 \` 性能评审 \` 和 \` 性能改进计划 \` 。
 
-- 如果有多个包含**HRScenario**列的 CSV 文件，请确保每个文件使用相同的列名称和标识特定 HR 方案的相同值。
+- 如果有多个包含 HRScenario * * 列的 CSV 文件，请确保每个文件使用相同的列名称和标识特定 HR 方案的相同值。
 
 下面的示例演示包含**HRScenario**列的 CSV 文件。 "HRScenario" 列中的值标识相应行中的数据类型。
 
@@ -380,6 +380,6 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="existing-hr-connectors"></a>现有 HR 连接器
 
-在2020年7月20日，我们发布了 HR 连接器支持的其他方案。 这些是上文中所述的 HR 方案。 在此日期之前创建的 HR 连接器仅支持员工辞职方案。 如果在2020年7月20日之前创建了 HR 连接器，我们已将其迁移，以便继续将 HR 数据迁移到 Microsoft 云。 您无需执行任何操作即可维护此功能。 您可以继续使用连接器，而无需任何中断。
+在2020年7月20日，我们发布了 HR 连接器支持的其他方案。 这些是上文中所述的 HR 方案。 在此日期之前创建的任何 HR 连接器都仅支持员工辞职方案。 如果在2020年7月20日之前创建了 HR 连接器，我们已将其迁移，以便继续将 HR 数据迁移到 Microsoft 云。 您无需执行任何操作即可维护此功能。 您可以继续使用连接器，而无需任何中断。
 
 如果要实现其他 HR 方案，请创建一个新的 HR 连接器并为其配置已发布的其他 HR 方案。 您还需要创建一个或多个包含数据的新 CSV 文件，以支持其他 HR 方案。 在创建新的 HR 连接器之后，使用新的连接器和 CSV 文件的作业 ID 运行该脚本，以获取其他 HR 方案的数据。

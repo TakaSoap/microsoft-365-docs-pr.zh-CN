@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: 在调查过程中，可以使用 "重试" 按钮来解析包含内容位置错误的内容搜索。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034626"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527630"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
-当您在安全与合规中心中使用内容搜索来搜索大量邮箱时，可能会收到类似于以下内容的搜索错误：
+当您在安全与合规中心中使用内容搜索来搜索大量邮箱时，可能会收到类似于错误的搜索错误：
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -41,7 +42,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="cause-of-content-location-errors"></a>内容位置错误的原因
 
-搜索大量邮箱时，会在 Microsoft 数据中心的数千台服务器之间分发搜索。 在任意时刻，特定服务器可能处于重新启动状态或在故障转移到冗余副本的过程中。 在上述任一情况下，内容搜索检索数据的请求都将超时。 在上面的示例中，失败的邮箱的错误是搜索超时的结果。
+搜索大量邮箱时，会在 Microsoft 数据中心的数千台服务器之间分发搜索。 在任意时刻，特定服务器可能处于重新启动状态或在故障转移到冗余副本的过程中。 在上述任一情况下，内容搜索检索数据的请求都将超时。在上面的示例中，失败的邮箱的错误是搜索超时的结果。
 
 ## <a name="resolving-content-location-errors"></a>解决内容位置错误
 
@@ -53,7 +54,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="tips-to-avoid-content-location-errors"></a>避免内容位置错误的提示
 
-下面是内容位置错误的一些加法原因和一些提示，可帮助您在搜索大量邮箱时避免这些错误。
+以下是内容位置错误的一些其他原因，以及一些提示，可帮助您在搜索大量邮箱时避免出现这些错误。
 
 - 正在搜索的邮箱可能因用户活动而繁忙。 在这种情况下，搜索服务可能会对自身进行限制以阻止邮箱变得不可用。 若要避免这种情况，请尝试在非工作时间运行搜索。
 

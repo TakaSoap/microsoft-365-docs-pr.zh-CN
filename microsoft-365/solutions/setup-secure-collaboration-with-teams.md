@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: 了解如何设置团队以根据其敏感度保护你的数据
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724803"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527704"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>与 Microsoft 365 建立安全协作
 
@@ -79,10 +80,10 @@ ms.locfileid: "44724803"
 |:--|:-----------|:------------|:-------------------|
 |公共或专用团队|两者皆可|Private|Private|
 |未经身份验证的共享|Blocked|Blocked|Blocked|
-|文件共享|Allowed|Allowed|仅工作组所有者可以共享。|
+|文件共享|允许|允许|仅工作组所有者可以共享。|
 |团队成员资格|任何人都可以加入公共团队。<br>需要团队所有者批准才能加入私有团队。|需要团队所有者批准才能加入。|需要团队所有者批准才能加入。|
 |文档加密|||可使用敏感度标签|
-|来宾共享|Allowed|可以允许或阻止|可以允许或阻止|
+|来宾共享|允许|可以允许或阻止|可以允许或阻止|
 |非托管设备|无限制|仅 Web 访问|Blocked|
 
 配置这些层涉及：

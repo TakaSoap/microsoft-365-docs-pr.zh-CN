@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: 使用 Microsoft 365 保留标签和策略来管理 Microsoft 365 环境中的个人数据。
-ms.openlocfilehash: 4c65eafa167d7224c4022d5634ce089952fada19
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695157"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522297"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私法规约束的信息
 

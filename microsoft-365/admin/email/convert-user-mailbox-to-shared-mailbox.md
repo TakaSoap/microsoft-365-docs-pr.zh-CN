@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391526"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521025"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "45391526"
 
 - 在转换为共享邮箱之前，要转换的用户邮箱需要分配有许可证。 否则，将看不到用于转换邮箱的选项。 如果已删除许可证，请将其添加回来，以便可以转换邮箱。 将邮箱转换为共享邮箱后，可以从用户帐户中删除该许可证。
 
-- 共享邮箱最高可包含50GB 的数据，而无需向其分配许可证。 若要保留的数据多于该数据，你需要分配给它的许可证。 您可能需要删除共享邮箱中的一组大型电子邮件（称为附件），以便将其缩小，以便您可以删除该许可证。
+- 共享邮箱最高可包含 50 GB 的数据，而无需向其分配许可证。 若要保留的数据多于该数据，你需要分配给它的许可证。 您可能需要删除共享邮箱中的一组大型电子邮件（称为附件），以便将其缩小，以便您可以删除该许可证。
 
 - 请勿删除旧用户的帐户。 这是锁定共享邮箱所必需的。 如果已删除用户帐户，请参阅[转换已删除用户的邮箱](#convert-the-mailbox-of-a-deleted-user)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "45391526"
 
 3. 选择用户邮箱。 在 "**转换为共享邮箱**" 下，选择 "**转换**"。
 
-4. 如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户帐户。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
+4. 如果邮箱小于 50 GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)并停止付款。 请勿删除用户帐户。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 5. 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
 
@@ -63,8 +63,8 @@ ms.locfileid: "45391526"
 
 3. 重置用户的密码。
 
-> [!NOTE]
-> 在邮箱转换过程中，不需要重置用户的密码。 但是，如果未重置密码，则在邮箱转换完成后，**原始用户名和密码将继续正常工作**。
+   > [!NOTE]
+   > 在邮箱转换过程中，不需要重置用户的密码。 但是，如果未重置密码，则在邮箱转换完成后，**原始用户名和密码将继续正常工作**。
 
 4. 在 "**邮件**" 选项卡上的 "**其他操作**" 下，选择 "**转换为共享邮箱**"。 
 
@@ -91,7 +91,7 @@ ms.locfileid: "45391526"
 ::: moniker-end
 
 
-如果邮箱小于50GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)，然后停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
+如果邮箱小于 50 GB，则可以[从用户处删除许可证](../manage/remove-licenses-from-users.md)并停止付款。 请勿删除用户的旧邮箱。 共享邮箱需要将其作为定位点。 如果要转换离开组织的员工的邮箱，则应执行其他步骤以确保他们无法再登录。 请参阅[从 Microsoft 365 删除以前的员工](../add-users/remove-former-employee.md)。
     
 有关共享邮箱需要了解的其他信息，请参阅[关于共享](about-shared-mailboxes.md)邮箱和[创建共享邮箱](create-a-shared-mailbox.md)。
 
@@ -132,19 +132,19 @@ ms.locfileid: "45391526"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>在混合环境中转换用户的邮箱
 
-如果此共享邮箱位于混合环境中，**强烈建议**（几乎需要！）将用户邮箱移回本地，将用户邮箱转换为共享邮箱，然后将共享邮箱移回云。
+如果此共享邮箱位于混合环境中，**强烈建议**（几乎需要！）将用户邮箱移回本地，将用户邮箱转换为共享邮箱，然后将共享邮箱移回云。 
 
 原因如下：如果您在云中转换邮箱，可以对其进行转换，但本地仍认为邮箱是用户邮箱，因为新的现实不会同步回本地。
 
 通常情况下，这并不是问题，但在某些情况下，本地属性（可能会认为邮箱是用户邮箱）可能会覆盖这些属性的新云版本，因此邮箱可能会转换回来。 这是一个问题，因为用户邮箱需要许可证**或在30天后软删除**！
 
-我们解决了这种情况的大部分原因，但仍可能会发生，尽管不常这样做。 最好是安全的，并将邮箱移回本地。
+我们解决了这种情况的大部分原因，但仍可能会发生，尽管不常这样做。 最好是安全的，并将邮箱移回本地，再进行转换，然后将共享邮箱移回云。 此建议的解决方案不违反混合环境的许可协议，因为本地用户邮箱的存在仅是临时性的。 如果您在内部部署组织中维护了用户邮箱或共享邮箱，并且未将其移回云，则会违反许可证。
 
 > [!NOTE]
-> 如果您是组织管理或收件人管理的一部分，则可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`。
+> 如果您是组织管理或收件人管理角色组的成员，则可以使用 Exchange 命令行管理程序将用户邮箱更改为本地共享邮箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`。
 
 > [!TIP]
-> 如果[共享邮箱意外转换为用户邮箱](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)，请参阅此支持解决方案中针对实例的解决方法
+> 如果[共享邮箱意外转换为用户邮箱](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)，请参阅此支持解决方案中有关实例的解决方法。
   
 ## <a name="related-articles"></a>相关文章
 

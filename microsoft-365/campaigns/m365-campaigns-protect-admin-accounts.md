@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何设置和保护管理员帐户。
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633649"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527182"
 ---
 # <a name="protect-your-administrator-accounts"></a>保护您的管理员帐户
 
@@ -46,7 +47,7 @@ ms.locfileid: "43633649"
 
 若要创建其他管理员帐户，请执行以下操作：
 
- 1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>"，然后选择左侧导航中的 "**用户** \> **活动用户**"。
+ 1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>"，然后选择**Users** \> 左侧导航中的 "用户**活动用户**"。
 
     ![选择左侧导航中的 "用户" 和 "活动用户"](../media/Activeusers.png)
 
@@ -67,10 +68,10 @@ ms.locfileid: "43633649"
 
 ## <a name="create-a-user-account-for-yourself"></a>为自己创建一个用户帐户
 
-使用您的用户帐户参与与您的组织的协作，包括检查邮件。 这意味着您的管理员凭据可能类似于*Chavez<span></span>@Contoso* ，并且您的常规用户帐户可能类似于*<span></span>小红 @Contoso .com*。
+使用您的用户帐户参与与您的组织的协作，包括检查邮件。 这意味着您的管理员凭据可能类似于*Chavez <span></span> @Contoso* ，并且您的常规用户帐户可能类似于*小红 <span></span> @Contoso .com*。
 
 若要创建新用户帐户，请执行以下操作：
-1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>"，然后选择左侧导航中的 "**用户** \> **活动用户**"。
+1. 转到 "<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>"，然后选择**Users** \> 左侧导航中的 "用户**活动用户**"。
 2. 在 "**活动用户**" 页上，选择页面顶部的 "**添加用户**"，并在新的 "**用户**" 面板上输入名称和其他信息。
 3. 展开 "**角色**" 部分，然后选择 "**用户" （无管理访问权限）**。
 1. 在 "**产品许可证**" 部分，将 " **Microsoft 365 企业**" 的选择器移到 **"打开**"。 
