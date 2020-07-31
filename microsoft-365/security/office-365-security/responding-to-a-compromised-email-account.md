@@ -10,6 +10,7 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
+- m365solution-smb
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -18,188 +19,188 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
-ms.openlocfilehash: f9d7b1dbcd9b54ca9b1bdca9e4a800be24286654
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094806"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527776"
 ---
-# <a name="responding-to-a-compromised-email-account"></a><span data-ttu-id="c8ef2-103">响应遭到入侵的电子邮件帐户</span><span class="sxs-lookup"><span data-stu-id="c8ef2-103">Responding to a Compromised Email Account</span></span>
+# <a name="responding-to-a-compromised-email-account"></a><span data-ttu-id="aad67-103">响应遭到入侵的电子邮件帐户</span><span class="sxs-lookup"><span data-stu-id="aad67-103">Responding to a Compromised Email Account</span></span>
 
-<span data-ttu-id="c8ef2-104">**摘要** 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-104">**Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.</span></span>
+<span data-ttu-id="aad67-104">**摘要** 了解如何识别并响应 Microsoft 365 中遭到入侵的电子邮件帐户。</span><span class="sxs-lookup"><span data-stu-id="aad67-104">**Summary** Learn how to recognize and respond to a compromised email account in Microsoft 365.</span></span>
 
-## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a><span data-ttu-id="c8ef2-105">什么是 Microsoft 365 中遭到入侵的电子邮件帐户？</span><span class="sxs-lookup"><span data-stu-id="c8ef2-105">What is a Compromised Email Account in Microsoft 365?</span></span>
+## <a name="what-is-a-compromised-email-account-in-microsoft-365"></a><span data-ttu-id="aad67-105">什么是 Microsoft 365 中遭到入侵的电子邮件帐户？</span><span class="sxs-lookup"><span data-stu-id="aad67-105">What is a Compromised Email Account in Microsoft 365?</span></span>
 
-<span data-ttu-id="c8ef2-106">通过使用凭据（例如用户名和密码或 PIN）来控制对 Microsoft 365 邮箱、数据和其他服务的访问。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-106">Access to Microsoft 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN.</span></span> <span data-ttu-id="c8ef2-107">如果除预期用户以外的其他人窃取了这些凭据，则被盗的凭据将视为遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-107">When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised.</span></span> <span data-ttu-id="c8ef2-108">借助这些凭据，攻击者能够以原始用户的身份登录并执行非法操作。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-108">With them the attacker can sign in as the original user and perform illicit actions.</span></span>
-<span data-ttu-id="c8ef2-109">通过使用窃取的凭据，攻击者可以访问用户的 Microsoft 365 邮箱、SharePoint 文件夹或用户 OneDrive 中的文件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-109">Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive.</span></span> <span data-ttu-id="c8ef2-110">其中一种常见操作是攻击者以原始用户的身份将电子邮件发送给组织内外的收件人。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-110">One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization.</span></span> <span data-ttu-id="c8ef2-111">当攻击者通过电子邮件将数据发送给外部收件人时，这称为数据泄露。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-111">When the attacker emails data to external recipients, this is called data exfiltration.</span></span>
+<span data-ttu-id="aad67-106">通过使用凭据（例如用户名和密码或 PIN）来控制对 Microsoft 365 邮箱、数据和其他服务的访问。</span><span class="sxs-lookup"><span data-stu-id="aad67-106">Access to Microsoft 365 mailboxes, data and other services, is controlled through the use of credentials, for example a user name and password or PIN.</span></span> <span data-ttu-id="aad67-107">如果除预期用户以外的其他人窃取了这些凭据，则被盗的凭据将视为遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="aad67-107">When someone other than the intended user steals those credentials, the stolen credentials are considered to be compromised.</span></span> <span data-ttu-id="aad67-108">借助这些凭据，攻击者能够以原始用户的身份登录并执行非法操作。</span><span class="sxs-lookup"><span data-stu-id="aad67-108">With them the attacker can sign in as the original user and perform illicit actions.</span></span>
+<span data-ttu-id="aad67-109">通过使用窃取的凭据，攻击者可以访问用户的 Microsoft 365 邮箱、SharePoint 文件夹或用户 OneDrive 中的文件。</span><span class="sxs-lookup"><span data-stu-id="aad67-109">Using the stolen credentials, the attacker can access the user's Microsoft 365 mailbox, SharePoint folders, or files in the user's OneDrive.</span></span> <span data-ttu-id="aad67-110">其中一种常见操作是攻击者以原始用户的身份将电子邮件发送给组织内外的收件人。</span><span class="sxs-lookup"><span data-stu-id="aad67-110">One action commonly seen is the attacker sending emails as the original user to recipients both inside and outside of the organization.</span></span> <span data-ttu-id="aad67-111">当攻击者通过电子邮件将数据发送给外部收件人时，这称为数据泄露。</span><span class="sxs-lookup"><span data-stu-id="aad67-111">When the attacker emails data to external recipients, this is called data exfiltration.</span></span>
 
-## <a name="symptoms-of-a-compromised-microsoft-email-account"></a><span data-ttu-id="c8ef2-112">遭到入侵的 Microsoft 电子邮件帐户的症状</span><span class="sxs-lookup"><span data-stu-id="c8ef2-112">Symptoms of a Compromised Microsoft Email Account</span></span>
+## <a name="symptoms-of-a-compromised-microsoft-email-account"></a><span data-ttu-id="aad67-112">遭到入侵的 Microsoft 电子邮件帐户的症状</span><span class="sxs-lookup"><span data-stu-id="aad67-112">Symptoms of a Compromised Microsoft Email Account</span></span>
 
-<span data-ttu-id="c8ef2-113">用户可能会注意到并报告其 Microsoft 365 邮箱中的异常活动。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-113">Users might notice and report unusual activity in their Microsoft 365 mailboxes.</span></span> <span data-ttu-id="c8ef2-114">下面是一些常见症状：</span><span class="sxs-lookup"><span data-stu-id="c8ef2-114">Here are some common symptoms:</span></span>
+<span data-ttu-id="aad67-113">用户可能会注意到并报告其 Microsoft 365 邮箱中的异常活动。</span><span class="sxs-lookup"><span data-stu-id="aad67-113">Users might notice and report unusual activity in their Microsoft 365 mailboxes.</span></span> <span data-ttu-id="aad67-114">下面是一些常见症状：</span><span class="sxs-lookup"><span data-stu-id="aad67-114">Here are some common symptoms:</span></span>
 
-- <span data-ttu-id="c8ef2-115">可疑活动，例如丢失或删除的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-115">Suspicious activity, such as missing or deleted emails.</span></span>
+- <span data-ttu-id="aad67-115">可疑活动，例如丢失或删除的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="aad67-115">Suspicious activity, such as missing or deleted emails.</span></span>
 
-- <span data-ttu-id="c8ef2-116">其他用户可能会收到来自遭到入侵的帐户的电子邮件，而发件人的“**已发送邮件**”文件夹中没有相应的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-116">Other users might receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.</span></span>
+- <span data-ttu-id="aad67-116">其他用户可能会收到来自遭到入侵的帐户的电子邮件，而发件人的“**已发送邮件**”文件夹中没有相应的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="aad67-116">Other users might receive emails from the compromised account without the corresponding email existing in the **Sent Items** folder of the sender.</span></span>
 
-- <span data-ttu-id="c8ef2-117">存在并非由预期用户或管理员创建的收件箱规则。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-117">The presence of inbox rules that weren't created by the intended user or the administrator.</span></span> <span data-ttu-id="c8ef2-118">这些规则可以自动将电子邮件转发到未知地址，或将其移动到“**便笺**”、“**垃圾邮件**”或“**RSS 订阅**”文件夹。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-118">These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.</span></span>
+- <span data-ttu-id="aad67-117">存在并非由预期用户或管理员创建的收件箱规则。</span><span class="sxs-lookup"><span data-stu-id="aad67-117">The presence of inbox rules that weren't created by the intended user or the administrator.</span></span> <span data-ttu-id="aad67-118">这些规则可以自动将电子邮件转发到未知地址，或将其移动到“**便笺**”、“**垃圾邮件**”或“**RSS 订阅**”文件夹。</span><span class="sxs-lookup"><span data-stu-id="aad67-118">These rules may automatically forward emails to unknown addresses or move them to the **Notes**, **Junk Email**, or **RSS Subscriptions** folders.</span></span>
 
-- <span data-ttu-id="c8ef2-119">在全局地址列表中，用户的显示名称可能已发生更改。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-119">The user's display name might be changed in the Global Address List.</span></span>
+- <span data-ttu-id="aad67-119">在全局地址列表中，用户的显示名称可能已发生更改。</span><span class="sxs-lookup"><span data-stu-id="aad67-119">The user's display name might be changed in the Global Address List.</span></span>
 
-- <span data-ttu-id="c8ef2-120">用户的邮箱被阻止发送电子邮件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-120">The user's mailbox is blocked from sending email.</span></span>
+- <span data-ttu-id="aad67-120">用户的邮箱被阻止发送电子邮件。</span><span class="sxs-lookup"><span data-stu-id="aad67-120">The user's mailbox is blocked from sending email.</span></span>
 
-- <span data-ttu-id="c8ef2-121">Microsoft Outlook 或 Outlook 网页版（以前称为 Outlook Web App）中的“已发送邮件”或“已删除邮件”文件夹包含常见的黑客帐户邮件，例如“我被困在伦敦，请给我汇款”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-121">The Sent or Deleted Items folders in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App) contain common hacked-account messages, such as "I'm stuck in London, send money."</span></span>
+- <span data-ttu-id="aad67-121">Microsoft Outlook 或 Outlook 网页版（以前称为 Outlook Web App）中的“已发送邮件”或“已删除邮件”文件夹包含常见的黑客帐户邮件，例如“我被困在伦敦，请给我汇款”。</span><span class="sxs-lookup"><span data-stu-id="aad67-121">The Sent or Deleted Items folders in Microsoft Outlook or Outlook on the web (formerly known as Outlook Web App) contain common hacked-account messages, such as "I'm stuck in London, send money."</span></span>
 
-- <span data-ttu-id="c8ef2-122">异常的个人资料更改，例如更新了姓名、电话号码或邮政编码。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-122">Unusual profile changes, such as the name, the telephone number, or the postal code were updated.</span></span>
+- <span data-ttu-id="aad67-122">异常的个人资料更改，例如更新了姓名、电话号码或邮政编码。</span><span class="sxs-lookup"><span data-stu-id="aad67-122">Unusual profile changes, such as the name, the telephone number, or the postal code were updated.</span></span>
 
-- <span data-ttu-id="c8ef2-123">异常的凭据更改，例如多次要求进行密码更改。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-123">Unusual credential changes, such as multiple password changes are required.</span></span>
+- <span data-ttu-id="aad67-123">异常的凭据更改，例如多次要求进行密码更改。</span><span class="sxs-lookup"><span data-stu-id="aad67-123">Unusual credential changes, such as multiple password changes are required.</span></span>
 
-- <span data-ttu-id="c8ef2-124">最近添加了邮件转发功能。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-124">Mail forwarding was recently added.</span></span>
+- <span data-ttu-id="aad67-124">最近添加了邮件转发功能。</span><span class="sxs-lookup"><span data-stu-id="aad67-124">Mail forwarding was recently added.</span></span>
 
-- <span data-ttu-id="c8ef2-125">最近添加了异常的签名，例如假银行签名或处方药签名。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-125">An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.</span></span>
+- <span data-ttu-id="aad67-125">最近添加了异常的签名，例如假银行签名或处方药签名。</span><span class="sxs-lookup"><span data-stu-id="aad67-125">An unusual signature was recently added, such as a fake banking signature or a prescription drug signature.</span></span>
 
-<span data-ttu-id="c8ef2-126">如果用户报告了上述任何症状，你应该进一步展开调查。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-126">If a user reports any of the above symptoms, you should perform further investigation.</span></span> <span data-ttu-id="c8ef2-127">Microsoft 365 安全与合规中心和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户的活动展开调查。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-127">The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.</span></span>
+<span data-ttu-id="aad67-126">如果用户报告了上述任何症状，你应该进一步展开调查。</span><span class="sxs-lookup"><span data-stu-id="aad67-126">If a user reports any of the above symptoms, you should perform further investigation.</span></span> <span data-ttu-id="aad67-127">Microsoft 365 安全与合规中心和 Azure 门户提供了各种工具，可帮助你对疑似遭到入侵的用户帐户的活动展开调查。</span><span class="sxs-lookup"><span data-stu-id="aad67-127">The Microsoft 365 Security & Compliance Center and the Azure Portal offer tools to help you investigate the activity of a user account that you suspect may be compromised.</span></span>
 
-- <span data-ttu-id="c8ef2-128">**安全与合规中心内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果，审阅可疑帐户的所有活动。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-128">**Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date.</span></span> <span data-ttu-id="c8ef2-129">不要在搜索过程中筛选活动。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-129">Do not filter on the activities during the search.</span></span>
+- <span data-ttu-id="aad67-128">**安全与合规中心内的统一审核日志**：通过筛选从可疑活动发生前到当前日期的日期范围内的结果，审阅可疑帐户的所有活动。</span><span class="sxs-lookup"><span data-stu-id="aad67-128">**Unified Audit Logs in the Security & Compliance Center**: Review all the activities for the suspected account by filtering the results for the date range spanning from immediately before the suspicious activity occurred to the current date.</span></span> <span data-ttu-id="aad67-129">不要在搜索过程中筛选活动。</span><span class="sxs-lookup"><span data-stu-id="aad67-129">Do not filter on the activities during the search.</span></span>
 
-- <span data-ttu-id="c8ef2-130">**EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-130">**Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log.</span></span> <span data-ttu-id="c8ef2-131">管理员审核日志根据管理员和分配有管理权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-131">The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges.</span></span> <span data-ttu-id="c8ef2-132">管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-132">Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.</span></span>
+- <span data-ttu-id="aad67-130">**EAC 中的管理员审核日志**：在 Exchange Online 中，可以使用 Exchange 管理中心 (EAC) 搜索和查看管理员审核日志中的条目。</span><span class="sxs-lookup"><span data-stu-id="aad67-130">**Admin Audit logs in the EAC**: In Exchange Online, you can use the Exchange admin center (EAC) to search for and view entries in the administrator audit log.</span></span> <span data-ttu-id="aad67-131">管理员审核日志根据管理员和分配有管理权限的用户执行的 Exchange Online PowerShell cmdlet 来记录特定操作。</span><span class="sxs-lookup"><span data-stu-id="aad67-131">The administrator audit log records specific actions, based on Exchange Online PowerShell cmdlets, performed by administrators and users who have been assigned administrative privileges.</span></span> <span data-ttu-id="aad67-132">管理员审核日志中的条目向您提供有关所运行的 cmdlet、所使用的参数、运行 cmdlet 的用户以及受影响的对象的相关信息。</span><span class="sxs-lookup"><span data-stu-id="aad67-132">Entries in the administrator audit log provide you with information about what cmdlet was run, which parameters were used, who ran the cmdlet, and what objects were affected.</span></span>
 
-- <span data-ttu-id="c8ef2-133">**Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：</span><span class="sxs-lookup"><span data-stu-id="c8ef2-133">**Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:</span></span>
+- <span data-ttu-id="aad67-133">**Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：</span><span class="sxs-lookup"><span data-stu-id="aad67-133">**Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:</span></span>
 
-  - <span data-ttu-id="c8ef2-134">查看 IP 地址</span><span class="sxs-lookup"><span data-stu-id="c8ef2-134">Review IP address</span></span>
+  - <span data-ttu-id="aad67-134">查看 IP 地址</span><span class="sxs-lookup"><span data-stu-id="aad67-134">Review IP address</span></span>
 
-  - <span data-ttu-id="c8ef2-135">登录位置</span><span class="sxs-lookup"><span data-stu-id="c8ef2-135">sign-in locations</span></span>
+  - <span data-ttu-id="aad67-135">登录位置</span><span class="sxs-lookup"><span data-stu-id="aad67-135">sign-in locations</span></span>
 
-  - <span data-ttu-id="c8ef2-136">登录时间</span><span class="sxs-lookup"><span data-stu-id="c8ef2-136">sign-in times</span></span>
+  - <span data-ttu-id="aad67-136">登录时间</span><span class="sxs-lookup"><span data-stu-id="aad67-136">sign-in times</span></span>
 
-  - <span data-ttu-id="c8ef2-137">登录成功或失败</span><span class="sxs-lookup"><span data-stu-id="c8ef2-137">sign-in success or failure</span></span>
+  - <span data-ttu-id="aad67-137">登录成功或失败</span><span class="sxs-lookup"><span data-stu-id="aad67-137">sign-in success or failure</span></span>
 
-## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a><span data-ttu-id="c8ef2-138">如何保护和恢复疑似遭到入侵的 Microsoft 365 帐户和邮箱的电子邮件功能</span><span class="sxs-lookup"><span data-stu-id="c8ef2-138">How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox</span></span>
+## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a><span data-ttu-id="aad67-138">如何保护和恢复疑似遭到入侵的 Microsoft 365 帐户和邮箱的电子邮件功能</span><span class="sxs-lookup"><span data-stu-id="aad67-138">How to secure and restore email function to a suspected compromised Microsoft 365 account and mailbox</span></span>
 
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=RE2jvOb&AutoPlayVideo=false]
 
-<span data-ttu-id="c8ef2-139">即使你重新获得对帐户的访问权限，攻击者也可能添加了后门条目，这让攻击者能够恢复对该帐户的控制权。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-139">Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.</span></span>
+<span data-ttu-id="aad67-139">即使你重新获得对帐户的访问权限，攻击者也可能添加了后门条目，这让攻击者能够恢复对该帐户的控制权。</span><span class="sxs-lookup"><span data-stu-id="aad67-139">Even after you've regained access to your account, the attacker may have added back-door entries that enable the attacker to resume control of the account.</span></span>
 
-<span data-ttu-id="c8ef2-140">你必须执行以下所有步骤才能重新获得对帐户的访问权限，以便更快地确保劫持者无法继续控制你的帐户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-140">You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account.</span></span> <span data-ttu-id="c8ef2-141">这些步骤可帮助你删除劫持者可能已添加到你帐户的任何后门条目。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-141">These steps help you remove any back-door entries that the hijacker may have added to your account.</span></span> <span data-ttu-id="c8ef2-142">执行这些步骤后，我们建议你运行病毒扫描以确保你的计算机不会遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-142">After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.</span></span>
+<span data-ttu-id="aad67-140">你必须执行以下所有步骤才能重新获得对帐户的访问权限，以便更快地确保劫持者无法继续控制你的帐户。</span><span class="sxs-lookup"><span data-stu-id="aad67-140">You must perform all the following steps to regain access to your account the sooner the better to make sure that the hijacker doesn't resume control your account.</span></span> <span data-ttu-id="aad67-141">这些步骤可帮助你删除劫持者可能已添加到你帐户的任何后门条目。</span><span class="sxs-lookup"><span data-stu-id="aad67-141">These steps help you remove any back-door entries that the hijacker may have added to your account.</span></span> <span data-ttu-id="aad67-142">执行这些步骤后，我们建议你运行病毒扫描以确保你的计算机不会遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="aad67-142">After you perform these steps, we recommend that you run a virus scan to make sure that your computer isn't compromised.</span></span>
 
-### <a name="step-1-reset-the-users-password"></a><span data-ttu-id="c8ef2-143">步骤 1 重置用户密码</span><span class="sxs-lookup"><span data-stu-id="c8ef2-143">Step 1 Reset the user's password</span></span>
+### <a name="step-1-reset-the-users-password"></a><span data-ttu-id="aad67-143">步骤 1 重置用户密码</span><span class="sxs-lookup"><span data-stu-id="aad67-143">Step 1 Reset the user's password</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="c8ef2-144">不要通过电子邮件将新密码发送给预期用户，因为此时攻击者仍可以访问邮箱。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-144">Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.</span></span>
+> <span data-ttu-id="aad67-144">不要通过电子邮件将新密码发送给预期用户，因为此时攻击者仍可以访问邮箱。</span><span class="sxs-lookup"><span data-stu-id="aad67-144">Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.</span></span>
 
-1. <span data-ttu-id="c8ef2-145">按照“[重置 Microsoft 365 企业应用版密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)”中的“为其他人重置 Microsoft 365 企业应用版密码”步骤执行操作。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-145">Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)</span></span>
+1. <span data-ttu-id="aad67-145">按照“[重置 Microsoft 365 企业应用版密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)”中的“为其他人重置 Microsoft 365 企业应用版密码”步骤执行操作。</span><span class="sxs-lookup"><span data-stu-id="aad67-145">Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)</span></span>
 
-<span data-ttu-id="c8ef2-146">**注意**：</span><span class="sxs-lookup"><span data-stu-id="c8ef2-146">**Notes**:</span></span>
+<span data-ttu-id="aad67-146">**注意**：</span><span class="sxs-lookup"><span data-stu-id="aad67-146">**Notes**:</span></span>
 
-- <span data-ttu-id="c8ef2-147">确保密码为强密码，并且包含大写和小写字母、至少一个数字和至少一个特殊字符。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-147">Make sure that the password is strong and that it contains upper and lowercase letters, at least one number, and at least one special character.</span></span>
+- <span data-ttu-id="aad67-147">确保密码为强密码，并且包含大写和小写字母、至少一个数字和至少一个特殊字符。</span><span class="sxs-lookup"><span data-stu-id="aad67-147">Make sure that the password is strong and that it contains upper and lowercase letters, at least one number, and at least one special character.</span></span>
 
-- <span data-ttu-id="c8ef2-148">不要重复使用过去五个密码中的任何一个。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-148">Don't reuse any of your last five passwords.</span></span> <span data-ttu-id="c8ef2-149">即使密码历史记录要求允许你重复使用最近使用过的密码，你也应该选择攻击者无法猜到的密码。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-149">Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.</span></span>
+- <span data-ttu-id="aad67-148">不要重复使用过去五个密码中的任何一个。</span><span class="sxs-lookup"><span data-stu-id="aad67-148">Don't reuse any of your last five passwords.</span></span> <span data-ttu-id="aad67-149">即使密码历史记录要求允许你重复使用最近使用过的密码，你也应该选择攻击者无法猜到的密码。</span><span class="sxs-lookup"><span data-stu-id="aad67-149">Even though the password history requirement lets you reuse a more recent password, you should select something that the attacker can't guess.</span></span>
 
-- <span data-ttu-id="c8ef2-150">如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-150">If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.</span></span>
+- <span data-ttu-id="aad67-150">如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="aad67-150">If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.</span></span>
 
 > [!TIP]
-> <span data-ttu-id="c8ef2-151">强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-151">We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.</span></span>  <span data-ttu-id="c8ef2-152">若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-152">To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).</span></span>
+> <span data-ttu-id="aad67-151">强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。</span><span class="sxs-lookup"><span data-stu-id="aad67-151">We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.</span></span>  <span data-ttu-id="aad67-152">若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。</span><span class="sxs-lookup"><span data-stu-id="aad67-152">To learn more about MFA, go to [Set up multi-factor authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).</span></span>
 
-### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a><span data-ttu-id="c8ef2-153">步骤 2 删除可疑的电子邮件转发地址</span><span class="sxs-lookup"><span data-stu-id="c8ef2-153">Step 2 Remove suspicious email forwarding addresses</span></span>
+### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a><span data-ttu-id="aad67-153">步骤 2 删除可疑的电子邮件转发地址</span><span class="sxs-lookup"><span data-stu-id="aad67-153">Step 2 Remove suspicious email forwarding addresses</span></span>
 
-1. <span data-ttu-id="c8ef2-154">打开“**Microsoft 365 管理中心 > 活动用户**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-154">Open the **Microsoft 365 admin center > Active Users**.</span></span>
+1. <span data-ttu-id="aad67-154">打开“**Microsoft 365 管理中心 > 活动用户**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-154">Open the **Microsoft 365 admin center > Active Users**.</span></span>
 
-2. <span data-ttu-id="c8ef2-155">找到存在问题的用户帐户并展开“**邮件设置**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-155">Find the user account in question and expand **Mail Settings**.</span></span>
+2. <span data-ttu-id="aad67-155">找到存在问题的用户帐户并展开“**邮件设置**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-155">Find the user account in question and expand **Mail Settings**.</span></span>
 
-3. <span data-ttu-id="c8ef2-156">对于“**电子邮件转发**”，单击“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-156">For **Email forwarding**, click **Edit**.</span></span>
+3. <span data-ttu-id="aad67-156">对于“**电子邮件转发**”，单击“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-156">For **Email forwarding**, click **Edit**.</span></span>
 
-4. <span data-ttu-id="c8ef2-157">删除所有可疑的转发地址。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-157">Remove any suspicious forwarding addresses.</span></span>
+4. <span data-ttu-id="aad67-157">删除所有可疑的转发地址。</span><span class="sxs-lookup"><span data-stu-id="aad67-157">Remove any suspicious forwarding addresses.</span></span>
 
-### <a name="step-3-disable-any-suspicious-inbox-rules"></a><span data-ttu-id="c8ef2-158">步骤 3 禁用任何可疑的收件箱规则</span><span class="sxs-lookup"><span data-stu-id="c8ef2-158">Step 3 Disable any suspicious inbox rules</span></span>
+### <a name="step-3-disable-any-suspicious-inbox-rules"></a><span data-ttu-id="aad67-158">步骤 3 禁用任何可疑的收件箱规则</span><span class="sxs-lookup"><span data-stu-id="aad67-158">Step 3 Disable any suspicious inbox rules</span></span>
 
-1. <span data-ttu-id="c8ef2-159">使用 Outlook 网页版登录用户的邮箱。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-159">Sign in to the user's mailbox using Outlook on the web.</span></span>
+1. <span data-ttu-id="aad67-159">使用 Outlook 网页版登录用户的邮箱。</span><span class="sxs-lookup"><span data-stu-id="aad67-159">Sign in to the user's mailbox using Outlook on the web.</span></span>
 
-2. <span data-ttu-id="c8ef2-160">单击齿轮图标，然后单击“**邮件**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-160">Click on the gear icon and click **Mail**.</span></span>
+2. <span data-ttu-id="aad67-160">单击齿轮图标，然后单击“**邮件**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-160">Click on the gear icon and click **Mail**.</span></span>
 
-3. <span data-ttu-id="c8ef2-161">单击“**收件箱和整理规则**”并查看规则。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-161">Click **Inbox and sweep rules** and review the rules.</span></span>
+3. <span data-ttu-id="aad67-161">单击“**收件箱和整理规则**”并查看规则。</span><span class="sxs-lookup"><span data-stu-id="aad67-161">Click **Inbox and sweep rules** and review the rules.</span></span>
 
-4. <span data-ttu-id="c8ef2-162">禁用或删除可疑的规则。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-162">Disable or delete suspicious rules.</span></span>
+4. <span data-ttu-id="aad67-162">禁用或删除可疑的规则。</span><span class="sxs-lookup"><span data-stu-id="aad67-162">Disable or delete suspicious rules.</span></span>
 
-### <a name="step-4-unblock-the-user-from-sending-mail"></a><span data-ttu-id="c8ef2-163">步骤 4 取消阻止用户发送邮件</span><span class="sxs-lookup"><span data-stu-id="c8ef2-163">Step 4 Unblock the user from sending mail</span></span>
+### <a name="step-4-unblock-the-user-from-sending-mail"></a><span data-ttu-id="aad67-163">步骤 4 取消阻止用户发送邮件</span><span class="sxs-lookup"><span data-stu-id="aad67-163">Step 4 Unblock the user from sending mail</span></span>
 
-<span data-ttu-id="c8ef2-164">如果疑似遭到入侵的邮箱被非法用于发送垃圾电子邮件，则可能是该邮箱已被阻止发送邮件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-164">If the suspected compromised mailbox was used illicitly to send spam email, it is likely that the mailbox has been blocked from sending mail.</span></span>
+<span data-ttu-id="aad67-164">如果疑似遭到入侵的邮箱被非法用于发送垃圾电子邮件，则可能是该邮箱已被阻止发送邮件。</span><span class="sxs-lookup"><span data-stu-id="aad67-164">If the suspected compromised mailbox was used illicitly to send spam email, it is likely that the mailbox has been blocked from sending mail.</span></span>
 
-<span data-ttu-id="c8ef2-165">若要取消阻止邮箱发送邮件，请按照[发送垃圾电子邮件后，从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)中的步骤执行操作。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-165">To unblock a mailbox from sending mail, follow the procedures in [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).</span></span>
+<span data-ttu-id="aad67-165">若要取消阻止邮箱发送邮件，请按照[发送垃圾电子邮件后，从受限用户门户删除用户](removing-user-from-restricted-users-portal-after-spam.md)中的步骤执行操作。</span><span class="sxs-lookup"><span data-stu-id="aad67-165">To unblock a mailbox from sending mail, follow the procedures in [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).</span></span>
 
-### <a name="step-5-optional-block-the-user-account-from-signing-in"></a><span data-ttu-id="c8ef2-166">步骤 5（可选）阻止用户帐户登录</span><span class="sxs-lookup"><span data-stu-id="c8ef2-166">Step 5 Optional: Block the user account from signing-in</span></span>
+### <a name="step-5-optional-block-the-user-account-from-signing-in"></a><span data-ttu-id="aad67-166">步骤 5（可选）阻止用户帐户登录</span><span class="sxs-lookup"><span data-stu-id="aad67-166">Step 5 Optional: Block the user account from signing-in</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="c8ef2-167">你可以阻止疑似遭到入侵的帐户登录，直到你认为重新启用访问权限是安全的。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-167">You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.</span></span>
+> <span data-ttu-id="aad67-167">你可以阻止疑似遭到入侵的帐户登录，直到你认为重新启用访问权限是安全的。</span><span class="sxs-lookup"><span data-stu-id="aad67-167">You can block the suspected compromised account from signing-in until you believe it is safe to re-enable access.</span></span>
 
-1. <span data-ttu-id="c8ef2-168">转到 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-168">Go to the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="aad67-168">转到 Microsoft 365 管理中心。</span><span class="sxs-lookup"><span data-stu-id="aad67-168">Go to the Microsoft 365 admin center.</span></span>
 
-2. <span data-ttu-id="c8ef2-169">在 Microsoft 365 管理中心，选择“**用户**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-169">In the Microsoft 365 admin center, select **Users**.</span></span>
+2. <span data-ttu-id="aad67-169">在 Microsoft 365 管理中心，选择“**用户**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-169">In the Microsoft 365 admin center, select **Users**.</span></span>
 
-3. <span data-ttu-id="c8ef2-170">选择要阻止的员工，然后在用户窗格中选择" **登录状态** "旁边的" **编辑** "。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-170">Select the employee that you want to block, and then choose **Edit** next to **Sign-in status** in the user pane.</span></span>
+3. <span data-ttu-id="aad67-170">选择要阻止的员工，然后在用户窗格中选择" **登录状态** "旁边的" **编辑** "。</span><span class="sxs-lookup"><span data-stu-id="aad67-170">Select the employee that you want to block, and then choose **Edit** next to **Sign-in status** in the user pane.</span></span>
 
-4. <span data-ttu-id="c8ef2-171">在“**登录状态**”窗格上，选择“**阻止登录**”，然后选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-171">On the **Sign-in status** pane, choose **Sign-in blocked** and then **Save**.</span></span>
+4. <span data-ttu-id="aad67-171">在“**登录状态**”窗格上，选择“**阻止登录**”，然后选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-171">On the **Sign-in status** pane, choose **Sign-in blocked** and then **Save**.</span></span>
 
-5. <span data-ttu-id="c8ef2-172">在管理中心左下方的导航窗格中，展开“**管理中心**”，然后选择“**Exchange**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-172">In the Admin center, in the lower-left navigation pane, expand **Admin Centers** and select **Exchange**.</span></span>
+5. <span data-ttu-id="aad67-172">在管理中心左下方的导航窗格中，展开“**管理中心**”，然后选择“**Exchange**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-172">In the Admin center, in the lower-left navigation pane, expand **Admin Centers** and select **Exchange**.</span></span>
 
-6. <span data-ttu-id="c8ef2-173">在 Exchange 管理中心，导航到“**收件人 > 邮箱**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-173">In the Exchange admin center, navigate to **Recipients > Mailboxes**.</span></span>
+6. <span data-ttu-id="aad67-173">在 Exchange 管理中心，导航到“**收件人 > 邮箱**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-173">In the Exchange admin center, navigate to **Recipients > Mailboxes**.</span></span>
 
-7. <span data-ttu-id="c8ef2-174">选择用户，然后在用户属性页面的“**移动设备**”下，单击“**禁用 Exchange ActivcSync**”和“**禁用适用于设备的 OWA**”，并对两者选择“**是**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-174">Select the user, and on the user properties page, under **Mobile Devices**, click **Disable Exchange ActivcSync** and **Disable OWA for Devices** and answer **yes** to both.</span></span>
+7. <span data-ttu-id="aad67-174">选择用户，然后在用户属性页面的“**移动设备**”下，单击“**禁用 Exchange ActivcSync**”和“**禁用适用于设备的 OWA**”，并对两者选择“**是**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-174">Select the user, and on the user properties page, under **Mobile Devices**, click **Disable Exchange ActivcSync** and **Disable OWA for Devices** and answer **yes** to both.</span></span>
 
-8. <span data-ttu-id="c8ef2-175">在“**电子邮件连接**”下，单击“**禁用**”并选择“**是**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-175">Under **Email Connectivity**, **Disable** and answer **yes**.</span></span>
+8. <span data-ttu-id="aad67-175">在“**电子邮件连接**”下，单击“**禁用**”并选择“**是**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-175">Under **Email Connectivity**, **Disable** and answer **yes**.</span></span>
 
-### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a><span data-ttu-id="c8ef2-176">步骤 6（可选）从所有管理角色组中删除疑似遭到入侵的帐户</span><span class="sxs-lookup"><span data-stu-id="c8ef2-176">Step 6 Optional: Remove the suspected compromised account from all administrative role groups</span></span>
+### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a><span data-ttu-id="aad67-176">步骤 6（可选）从所有管理角色组中删除疑似遭到入侵的帐户</span><span class="sxs-lookup"><span data-stu-id="aad67-176">Step 6 Optional: Remove the suspected compromised account from all administrative role groups</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c8ef2-177">在帐户受到保护后，可以恢复管理角色组成员身份。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-177">Administrative role group membership can be restored after the account has been secured.</span></span>
+> <span data-ttu-id="aad67-177">在帐户受到保护后，可以恢复管理角色组成员身份。</span><span class="sxs-lookup"><span data-stu-id="aad67-177">Administrative role group membership can be restored after the account has been secured.</span></span>
 
-1. <span data-ttu-id="c8ef2-178">使用全局管理员帐户登录 Microsoft 365 管理中心，然后打开“**活动用户**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-178">Sign in to the Microsoft 365 admin center with a global administrator account and open **Active Users**.</span></span>
+1. <span data-ttu-id="aad67-178">使用全局管理员帐户登录 Microsoft 365 管理中心，然后打开“**活动用户**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-178">Sign in to the Microsoft 365 admin center with a global administrator account and open **Active Users**.</span></span>
 
-2. <span data-ttu-id="c8ef2-179">找到疑似遭到入侵的帐户并手动检查是否为该帐户分配了任何管理角色。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-179">Find the suspected compromised account and manually check to see if there are any administrative roles assigned to the account.</span></span>
+2. <span data-ttu-id="aad67-179">找到疑似遭到入侵的帐户并手动检查是否为该帐户分配了任何管理角色。</span><span class="sxs-lookup"><span data-stu-id="aad67-179">Find the suspected compromised account and manually check to see if there are any administrative roles assigned to the account.</span></span>
 
-3. <span data-ttu-id="c8ef2-180">打开“**安全与合规中心**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-180">Open the **Security & Compliance Center**.</span></span>
+3. <span data-ttu-id="aad67-180">打开“**安全与合规中心**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-180">Open the **Security & Compliance Center**.</span></span>
 
-4. <span data-ttu-id="c8ef2-181">单击“**权限**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-181">Click **Permissions**.</span></span>
+4. <span data-ttu-id="aad67-181">单击“**权限**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-181">Click **Permissions**.</span></span>
 
-5. <span data-ttu-id="c8ef2-182">手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-182">Manually review the role groups to see if the suspected compromised account is a member of any of them.</span></span>  <span data-ttu-id="c8ef2-183">如果它是：</span><span class="sxs-lookup"><span data-stu-id="c8ef2-183">If it is:</span></span>
+5. <span data-ttu-id="aad67-182">手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。</span><span class="sxs-lookup"><span data-stu-id="aad67-182">Manually review the role groups to see if the suspected compromised account is a member of any of them.</span></span>  <span data-ttu-id="aad67-183">如果它是：</span><span class="sxs-lookup"><span data-stu-id="aad67-183">If it is:</span></span>
 
-   <span data-ttu-id="c8ef2-184">a.</span><span class="sxs-lookup"><span data-stu-id="c8ef2-184">a.</span></span> <span data-ttu-id="c8ef2-185">单击角色组，然后单击“**编辑角色组**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-185">Click the role group and click **Edit Role Group**.</span></span>
+   <span data-ttu-id="aad67-184">a.</span><span class="sxs-lookup"><span data-stu-id="aad67-184">a.</span></span> <span data-ttu-id="aad67-185">单击角色组，然后单击“**编辑角色组**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-185">Click the role group and click **Edit Role Group**.</span></span>
 
-   <span data-ttu-id="c8ef2-186">b.</span><span class="sxs-lookup"><span data-stu-id="c8ef2-186">b.</span></span> <span data-ttu-id="c8ef2-187">单击“**选择成员**”和“**编辑**”以从角色组中删除用户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-187">Click **Chose Members** and **Edit** to remove the user from the role group.</span></span>
+   <span data-ttu-id="aad67-186">b.</span><span class="sxs-lookup"><span data-stu-id="aad67-186">b.</span></span> <span data-ttu-id="aad67-187">单击“**选择成员**”和“**编辑**”以从角色组中删除用户。</span><span class="sxs-lookup"><span data-stu-id="aad67-187">Click **Chose Members** and **Edit** to remove the user from the role group.</span></span>
 
-6. <span data-ttu-id="c8ef2-188">打开“**Exchange 管理中心**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-188">Open the **Exchange admin center**.</span></span>
+6. <span data-ttu-id="aad67-188">打开“**Exchange 管理中心**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-188">Open the **Exchange admin center**.</span></span>
 
-7. <span data-ttu-id="c8ef2-189">单击“**权限**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-189">Click **Permissions**.</span></span>
+7. <span data-ttu-id="aad67-189">单击“**权限**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-189">Click **Permissions**.</span></span>
 
-8. <span data-ttu-id="c8ef2-190">手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-190">Manually review the role groups to see if the suspected compromised account is a member of any of them.</span></span> <span data-ttu-id="c8ef2-191">如果它是：</span><span class="sxs-lookup"><span data-stu-id="c8ef2-191">If it is:</span></span>
+8. <span data-ttu-id="aad67-190">手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。</span><span class="sxs-lookup"><span data-stu-id="aad67-190">Manually review the role groups to see if the suspected compromised account is a member of any of them.</span></span> <span data-ttu-id="aad67-191">如果它是：</span><span class="sxs-lookup"><span data-stu-id="aad67-191">If it is:</span></span>
 
-   <span data-ttu-id="c8ef2-192">a.</span><span class="sxs-lookup"><span data-stu-id="c8ef2-192">a.</span></span> <span data-ttu-id="c8ef2-193">单击角色组，然后单击“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-193">Click the role group and click **Edit**.</span></span>
+   <span data-ttu-id="aad67-192">a.</span><span class="sxs-lookup"><span data-stu-id="aad67-192">a.</span></span> <span data-ttu-id="aad67-193">单击角色组，然后单击“**编辑**”。</span><span class="sxs-lookup"><span data-stu-id="aad67-193">Click the role group and click **Edit**.</span></span>
 
-   <span data-ttu-id="c8ef2-194">b.</span><span class="sxs-lookup"><span data-stu-id="c8ef2-194">b.</span></span> <span data-ttu-id="c8ef2-195">使用“**成员**”部分从角色组中删除用户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-195">Use the **members** section to remove the user from the role group.</span></span>
+   <span data-ttu-id="aad67-194">b.</span><span class="sxs-lookup"><span data-stu-id="aad67-194">b.</span></span> <span data-ttu-id="aad67-195">使用“**成员**”部分从角色组中删除用户。</span><span class="sxs-lookup"><span data-stu-id="aad67-195">Use the **members** section to remove the user from the role group.</span></span>
 
-### <a name="step-7-optional-additional-precautionary-steps"></a><span data-ttu-id="c8ef2-196">步骤 7（可选）其他预防措施</span><span class="sxs-lookup"><span data-stu-id="c8ef2-196">Step 7 Optional: Additional precautionary steps</span></span>
+### <a name="step-7-optional-additional-precautionary-steps"></a><span data-ttu-id="aad67-196">步骤 7（可选）其他预防措施</span><span class="sxs-lookup"><span data-stu-id="aad67-196">Step 7 Optional: Additional precautionary steps</span></span>
 
-1. <span data-ttu-id="c8ef2-197">确保验证已发送的邮件。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-197">Make sure that you verify your sent items.</span></span> <span data-ttu-id="c8ef2-198">你可能需要通知联系人列表中的人员你的帐户遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-198">You may have to inform people on your contacts list that your account was compromised.</span></span> <span data-ttu-id="c8ef2-199">例如，攻击者可能会向他们要钱，谎称他们被困在另一个国家/地区并且需要钱，也可能会向他们发送病毒以便劫持其计算机。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-199">The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.</span></span>
+1. <span data-ttu-id="aad67-197">确保验证已发送的邮件。</span><span class="sxs-lookup"><span data-stu-id="aad67-197">Make sure that you verify your sent items.</span></span> <span data-ttu-id="aad67-198">你可能需要通知联系人列表中的人员你的帐户遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="aad67-198">You may have to inform people on your contacts list that your account was compromised.</span></span> <span data-ttu-id="aad67-199">例如，攻击者可能会向他们要钱，谎称他们被困在另一个国家/地区并且需要钱，也可能会向他们发送病毒以便劫持其计算机。</span><span class="sxs-lookup"><span data-stu-id="aad67-199">The attacker may have asked them for money, spoofing, for example, that you were stranded in a different country and needed money, or the attacker may send them a virus to also hijack their computers.</span></span>
 
-2. <span data-ttu-id="c8ef2-200">将此 Exchange 帐户用作其备用电子邮件帐户的任何其他服务可能已遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-200">Any other service that used this Exchange account as its alternative email account may have been compromised.</span></span> <span data-ttu-id="c8ef2-201">首先，为 Microsoft 365 订阅执行这些步骤，然后为其他帐户执行这些步骤。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-201">First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.</span></span>
+2. <span data-ttu-id="aad67-200">将此 Exchange 帐户用作其备用电子邮件帐户的任何其他服务可能已遭到入侵。</span><span class="sxs-lookup"><span data-stu-id="aad67-200">Any other service that used this Exchange account as its alternative email account may have been compromised.</span></span> <span data-ttu-id="aad67-201">首先，为 Microsoft 365 订阅执行这些步骤，然后为其他帐户执行这些步骤。</span><span class="sxs-lookup"><span data-stu-id="aad67-201">First, perform these steps for your Microsoft 365 subscription, and then perform these steps for your other accounts.</span></span>
 
-3. <span data-ttu-id="c8ef2-202">确保你的联系信息（如电话号码和地址）正确无误。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-202">Make sure that your contact information, such as telephone numbers and addresses, is correct.</span></span>
+3. <span data-ttu-id="aad67-202">确保你的联系信息（如电话号码和地址）正确无误。</span><span class="sxs-lookup"><span data-stu-id="aad67-202">Make sure that your contact information, such as telephone numbers and addresses, is correct.</span></span>
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a><span data-ttu-id="c8ef2-203">像网络安全专家那样保护 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="c8ef2-203">Secure Microsoft 365 like a cybersecurity pro</span></span>
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a><span data-ttu-id="aad67-203">像网络安全专家那样保护 Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="aad67-203">Secure Microsoft 365 like a cybersecurity pro</span></span>
 
-<span data-ttu-id="c8ef2-204">你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-204">Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.</span></span>  <span data-ttu-id="c8ef2-205">使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-205">Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.</span></span>
+<span data-ttu-id="aad67-204">你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。</span><span class="sxs-lookup"><span data-stu-id="aad67-204">Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.</span></span>  <span data-ttu-id="aad67-205">使用“[Microsoft 365 安全路线图 - 前 30 天、90 天内以及之后的首要行动](security-roadmap.md)”，通过实施 Microsoft 建议的最佳做法来保护你的 Microsoft 365 租户。</span><span class="sxs-lookup"><span data-stu-id="aad67-205">Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.</span></span>
 
-- <span data-ttu-id="c8ef2-206">需要在前 30 天完成的任务。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-206">Tasks to accomplish in the first 30 days.</span></span>  <span data-ttu-id="c8ef2-207">这些任务会对你的用户产生直接影响并且影响很小。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-207">These have immediate affect and are low-impact to your users.</span></span>
+- <span data-ttu-id="aad67-206">需要在前 30 天完成的任务。</span><span class="sxs-lookup"><span data-stu-id="aad67-206">Tasks to accomplish in the first 30 days.</span></span>  <span data-ttu-id="aad67-207">这些任务会对你的用户产生直接影响并且影响很小。</span><span class="sxs-lookup"><span data-stu-id="aad67-207">These have immediate affect and are low-impact to your users.</span></span>
 
-- <span data-ttu-id="c8ef2-208">需要在 90 天内完成的任务。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-208">Tasks to accomplish in 90 days.</span></span> <span data-ttu-id="c8ef2-209">这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-209">These take a bit more time to plan and implement but greatly improve your security posture.</span></span>
+- <span data-ttu-id="aad67-208">需要在 90 天内完成的任务。</span><span class="sxs-lookup"><span data-stu-id="aad67-208">Tasks to accomplish in 90 days.</span></span> <span data-ttu-id="aad67-209">这些任务需要花费更多时间来规划和实施，但会显著改善你的安全状况。</span><span class="sxs-lookup"><span data-stu-id="aad67-209">These take a bit more time to plan and implement but greatly improve your security posture.</span></span>
 
-- <span data-ttu-id="c8ef2-210">90 天后。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-210">Beyond 90 days.</span></span> <span data-ttu-id="c8ef2-211">这些增强功能基于前 90 天的工作构建。</span><span class="sxs-lookup"><span data-stu-id="c8ef2-211">These enhancements build in your first 90 days work.</span></span>
+- <span data-ttu-id="aad67-210">90 天后。</span><span class="sxs-lookup"><span data-stu-id="aad67-210">Beyond 90 days.</span></span> <span data-ttu-id="aad67-211">这些增强功能基于前 90 天的工作构建。</span><span class="sxs-lookup"><span data-stu-id="aad67-211">These enhancements build in your first 90 days work.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c8ef2-212">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c8ef2-212">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="aad67-212">另请参阅</span><span class="sxs-lookup"><span data-stu-id="aad67-212">See also</span></span>
 
-- [<span data-ttu-id="c8ef2-213">在 Microsoft 365 中检测并修正 Outlook 规则和自定义窗体注入攻击</span><span class="sxs-lookup"><span data-stu-id="c8ef2-213">Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365</span></span>](detect-and-remediate-outlook-rules-forms-attack.md)
+- [<span data-ttu-id="aad67-213">在 Microsoft 365 中检测并修正 Outlook 规则和自定义窗体注入攻击</span><span class="sxs-lookup"><span data-stu-id="aad67-213">Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Microsoft 365</span></span>](detect-and-remediate-outlook-rules-forms-attack.md)
 
-- [<span data-ttu-id="c8ef2-214">Internet 犯罪投诉中心</span><span class="sxs-lookup"><span data-stu-id="c8ef2-214">Internet Crime Complaint Center</span></span>](https://www.ic3.gov/preventiontips.aspx)
+- [<span data-ttu-id="aad67-214">Internet 犯罪投诉中心</span><span class="sxs-lookup"><span data-stu-id="aad67-214">Internet Crime Complaint Center</span></span>](https://www.ic3.gov/preventiontips.aspx)
 
-- [<span data-ttu-id="c8ef2-215">证券交易委员会 -“网络钓鱼”诈骗</span><span class="sxs-lookup"><span data-stu-id="c8ef2-215">Securities and Exchange Commission - "Phishing" Fraud</span></span>](https://www.sec.gov/investor/pubs/phishing.htm)
+- [<span data-ttu-id="aad67-215">证券交易委员会 -“网络钓鱼”诈骗</span><span class="sxs-lookup"><span data-stu-id="aad67-215">Securities and Exchange Commission - "Phishing" Fraud</span></span>](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- <span data-ttu-id="c8ef2-216">[使用报告消息加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)直接向 Microsoft 和你的管理员报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="c8ef2-216">To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)</span></span>
+- <span data-ttu-id="aad67-216">[使用报告消息加载项](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)直接向 Microsoft 和你的管理员报告垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="aad67-216">To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)</span></span>

@@ -10,16 +10,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 648813ffa5b7ac801ef0dd6028bd803315fdade5
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 85c85c086260932308da53fc511127e8c94fb6bb
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159951"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521285"
 ---
-# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="30587-103">Microsoft 365 工作负载解决方案和应用场景</span><span class="sxs-lookup"><span data-stu-id="30587-103">Microsoft 365 workload solutions and scenarios</span></span>
+# <a name="microsoft-365-workload-solutions-and-scenarios"></a><span data-ttu-id="f413e-103">Microsoft 365 工作负载解决方案和应用场景</span><span class="sxs-lookup"><span data-stu-id="f413e-103">Microsoft 365 workload solutions and scenarios</span></span>
 
-<span data-ttu-id="30587-104">![对象](https://docs.microsoft.com/office/media/icons/objects-blue.png) **工作负载方案和解决方案**这些方案和解决方案可帮助您实现特定的业务目标。</span><span class="sxs-lookup"><span data-stu-id="30587-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="30587-105">你可以将其添加到基础解决方案，以向你的环境添加功能。</span><span class="sxs-lookup"><span data-stu-id="30587-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
+<span data-ttu-id="f413e-104">![对象 ](https://docs.microsoft.com/office/media/icons/objects-blue.png) **工作负载方案和解决方案**这些方案和解决方案可帮助您实现特定的业务目标。</span><span class="sxs-lookup"><span data-stu-id="f413e-104">![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **Workload scenarios and solutions**  These scenarios and solutions help you accomplish a specific business objective.</span></span> <span data-ttu-id="f413e-105">你可以将其添加到基础解决方案，以向你的环境添加功能。</span><span class="sxs-lookup"><span data-stu-id="f413e-105">You can add them onto the foundational solutions to add capabilities to your environment.</span></span>
