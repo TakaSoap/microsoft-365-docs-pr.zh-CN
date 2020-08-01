@@ -1,20 +1,22 @@
 ---
-title: 准备打印 Microsoft 托管桌面的资源
+title: 为 Microsoft 托管桌面准备打印资源
 description: 确保打印顺利进行的重要步骤
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826424"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530243"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>准备打印 Microsoft 托管桌面的资源
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备打印资源
 
 在准备好在 Microsoft 托管桌面中注册时，应评估打印要求并为您的环境确定正确的方法。 有三个选项：
  

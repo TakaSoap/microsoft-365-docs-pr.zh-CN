@@ -1,17 +1,20 @@
 ---
 title: 使用见解
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: dd50e5d7291589d12261396aac62e4d07b06909f
-ms.sourcegitcommit: ca2b58ef8f5be24f09e73620b74a1ffcf2d4c290
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bcb47a7d5e5dc0880ade6a7e5900d1019e13a8d7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42250422"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529763"
 ---
 # <a name="work-with-insights"></a>使用见解
 
@@ -46,7 +49,7 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 
 了解有关[可靠性见解](reliability-insights.md)的详细信息。
 
-## <a name="battery-insights"></a>电池洞察力
+## <a name="battery-insights"></a>电池见解
 此视图显示有关您的环境中的设备的应用和计划电池寿命的信息。 若要查看此信息，请选择 "**电池**" 选项卡。
 
 了解有关[电池洞察力](battery-insights.md)的详细信息。

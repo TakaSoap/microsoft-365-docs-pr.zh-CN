@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430431"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529751"
 ---
 # <a name="getting-help-for-end-users"></a>获取针对最终用户的帮助
 
@@ -31,7 +34,7 @@ ms.locfileid: "45430431"
 - 最终用户可以请求回叫提供的电话号码，或与服务代表在线聊天。
 - 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。
 
-### <a name="prerequisites"></a>必备条件
+### <a name="prerequisites"></a>先决条件
 为了让最终用户能够通过应用获取帮助，请确保满足以下先决条件：
 
 - 必须使用[设置 Microsoft 托管桌面设备](../get-started/set-up-devices.md)中的方法之一在 Microsoft 托管桌面注册设备，例如[自己注册新设备](../get-started/register-devices-self.md)。
@@ -44,7 +47,7 @@ ms.locfileid: "45430431"
 
 如果你已检查这些先决条件且获取帮助应用仍无法正常工作，你作为 IT 管理员应将[支持请求](admin-support.md)文件。
 
-## <a name="phone-support"></a>电话支持 
+## <a name="phone-support"></a>电话支持
 
 使用 Microsoft 托管桌面设备的最终用户还可以访问他们可以拨打的免费电话号码。 当获取帮助不可用时，应使用此功能。 例如，如果用户无法登录到设备，或者设备已断开。 以下是电话支持电话号码：
 

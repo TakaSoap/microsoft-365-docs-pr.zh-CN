@@ -1,17 +1,20 @@
 ---
 title: 启用企业状态漫游
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a817e96d899564c3f46ea68088455210480989e3
-ms.sourcegitcommit: 3d37043c0447359c952dc99026c219dd69f6fb8d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8b9c4a96c3697ed7cfc13872de01ff31c0ec3894
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "38012450"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530195"
 ---
 # <a name="enable-enterprise-state-roaming"></a>启用企业状态漫游
 

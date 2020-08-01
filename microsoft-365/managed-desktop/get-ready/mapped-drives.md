@@ -1,22 +1,24 @@
 ---
 title: 为 Microsoft 托管桌面准备映射的驱动器
 description: 确保执行的重要步骤
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8bdbbefb1fc3bfff324787eedb497afe781184f0
-ms.sourcegitcommit: 6d672eb8287526a9db90df5fa85bc4984a7047d1
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42280170"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530171"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射的驱动器
 
-许多企业环境都具有对映射驱动器的旧版要求，以允许其用户或团队共享和存储文件，或用于本地应用程序。 Microsoft 不建议使用 Microsoft 托管桌面的映射驱动器。 相反，我们建议您现代化 yor 文件访问解决方案，如下所示：
+许多企业环境都具有对映射驱动器的旧版要求，以允许其用户或团队共享和存储文件，或用于本地应用程序。 Microsoft 不建议使用 Microsoft 托管桌面的映射驱动器。 相反，我们建议您将文件访问解决方案现代化，如下所示：
   
 - 将单个用户使用的映射驱动器迁移到 OneDrive for Business。 
 - 迁移团队使用的映射驱动器以将文件共享到 SharePoint Online。 

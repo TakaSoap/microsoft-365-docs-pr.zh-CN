@@ -1,19 +1,22 @@
 ---
-title: 电池洞察力
+title: 电池见解
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170592"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529835"
 ---
-# <a name="battery-insights"></a>电池洞察力
+# <a name="battery-insights"></a>电池见解
 此视图提供 Microsoft 托管桌面设备的电源、电池和应用使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
 
 若要查看使用率数据，请选择 "**电池**" 选项卡。

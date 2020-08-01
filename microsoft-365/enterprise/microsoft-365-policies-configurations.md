@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222323"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530267"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -33,7 +34,7 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 ## <a name="intended-audience"></a>目标受众
 
-这些建议适用于熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[Microsoft 企业移动性 + 安全性](https://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、azure Active Directory （Identity）、Microsoft Intune （设备管理）和 azure 信息保护（数据保护）。
+这些建议适用于熟悉[Office 365](https://docs.microsoft.com/microsoft-365/admin)和[Microsoft 企业移动性 + 安全性](https://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、azure Active Directory （Identity）、Microsoft Intune （设备管理）和 azure 信息保护（数据保护）。
 
 ### <a name="customer-environment"></a>客户环境
 
@@ -45,7 +46,7 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 ### <a name="caveats"></a>几点
 
-您的组织可能需要遵守管理法规或其他合规性要求，包括可能要求您应用从这些建议配置中分离的策略的特定建议。 这些配置推荐以前没有提供的使用情况控件。 推荐这些控件的原因是我们认为这些控件可实现安全性与生产力之间的平衡。  
+您的组织可能需要遵守管理法规或其他合规性要求，包括可能要求您应用从这些建议配置中分离的策略的特定建议。 这些配置推荐以前没有提供的使用情况控件。 我们建议使用这些控制措施，因为我们认为它们代表安全性和生产率之间的平衡。  
 
 我们已尽最大努力满足各种组织保护要求，但我们无法满足所有可能的要求，也无法考虑组织的所有独特方面。
 
@@ -57,7 +58,7 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 - **基准保护**：我们建议您建立用于保护数据的最低标准，以及访问您的数据的标识和设备。 您可以遵循这些基准建议，以提供满足许多组织需求的强默认保护。
 - **敏感保护**：某些客户具有必须在更高级别进行保护的数据子集，或者可能需要在更高级别保护所有数据。 您可以对 Microsoft 365 环境中的所有或特定的数据集应用增强的保护。 建议以与安全性相当的级别保护访问敏感数据的标识和设备。  
-- **高度管控**：某些组织可能具有少量的数据，这些数据高度保密、consititutes 商业秘密或受管制数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
+- **高度管控**：某些组织可能拥有高度分类的少量数据，构成商业机密或受管制数据。 Microsoft 提供多种功能，帮助组织满足相关要求，包括为标识和设备添加保护。
 
 ![安全圆锥-> 一些客户 > 特定客户的所有客户。 适用于特定应用程序的广泛应用程序](../media/M365-idquality-threetiers.png)
 
@@ -94,7 +95,7 @@ Microsoft 365 企业版专为大型组织而设计，并集成了 Office 365 企
 
 Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，我们建议使用以下功能：
 
-- **[自助密码重置（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：允许您的用户通过验证管理员可以控制的多种身份验证方法，安全地重置其密码，而不需要提供帮助程序干预。
+- **[自助密码重置（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：通过提供管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术人员干预。
 
 - **[多重身份验证（mfa）](/azure/active-directory/authentication/concept-mfa-howitworks)**： mfa 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了可用于访问您的环境的被窃的标识的风险。
 

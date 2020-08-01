@@ -1,20 +1,22 @@
 ---
-title: Microsoft 托管桌面角色和职责
+title: Microsoft 托管桌面角色和责任
 description: 本主题介绍 Microsoft 托管桌面所提供的角色和职责。
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 02a0b11a1a210367d76e73c75ac5c1fc7a66f94f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 85e352ec657da435e435311b2ad48beb6a0487ee
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636204"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529991"
 ---
-# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 托管桌面角色和职责
+# <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 托管桌面角色和责任
 
 
 <!--This topic is the target for a "Learn more" link in the Admin Portal (aka.ms/admin-access); do not delete.-->
@@ -37,7 +39,7 @@ Microsoft 托管桌面服务支持 | Microsoft 将通过 Microsoft 托管桌面�
 
 ## <a name="your-roles-and-responsibilities"></a>您的角色和职责
 
-以下是 Microsoft 不提供的一组额外的共同角色和职责，但它们是成功部署所必需的。 它并不详尽，但适用于大多数组织。 以下是 Microsoft 和客户共享 responsibilties 的一些项目。 
+以下是 Microsoft 不提供的一组额外的共同角色和职责，但它们是成功部署所必需的。 它并不详尽，但适用于大多数组织。 以下是 Microsoft 和客户共同承担责任的一些项目。 
 
 角色或责任 | 说明
 --- | ---

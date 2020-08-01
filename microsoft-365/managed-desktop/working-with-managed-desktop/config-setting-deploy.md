@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: e6946c138cb6fde15e35374b447038d5c302187e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085745"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530255"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署和跟踪可配置的设置-Microsoft 托管桌面
 
@@ -26,7 +29,7 @@ ms.locfileid: "42085745"
 部署 | 您的更改正在等待部署到此组。
 进行中 | 正在将更改应用到此组中的活动设备。 
 完全 | 此组中所有活动设备上的更改已完成。 
-Failed | 此更改在组中的10% 的活动设备上失败，因此部署已停止。<br><br> 将使用 Microsoft 托管桌面操作自动打开支持请求，以排除部署故障。 
+已失败 | 此更改在组中的10% 的活动设备上失败，因此部署已停止。<br><br> 将使用 Microsoft 托管桌面操作自动打开支持请求，以排除部署故障。 
 回复 | 更改已还原为已成功部署到所有部署组的最后更改。
 
 ## <a name="deploy-changes"></a>部署更改

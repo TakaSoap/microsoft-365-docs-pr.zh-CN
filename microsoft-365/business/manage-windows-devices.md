@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何启用 Microsoft 365 以仅在几个步骤中保护本地的 Active Directory 加入 Windows 10 设备。
-ms.openlocfilehash: 857651081fb10856d28dd419333ebef655388407
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564921"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533777"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>启用要由 Microsoft 365 商业高级版管理的加入域的 Windows 10 设备
 
@@ -77,44 +77,32 @@ ms.locfileid: "44564921"
         -  将 Azure AD 中同步的所需域用户添加到[安全组](../admin/create-groups/create-groups.md)。
         -  选择 "**选择组**" 以为该安全组启用 MDM 用户作用域。
 
-## <a name="4-set-up-service-connection-point-scp"></a>4. 设置服务连接点（SCP）
+## <a name="4-create-the-required-resources"></a>4. 创建所需的资源 
 
-可通过[配置混合 AZURE AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)简化这些步骤。 若要完成使用 Azure AD Connect 和 Microsoft 365 商业高级全局管理员和 Active Directory 管理员密码所需的步骤。
+通过使用在[SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell 模块中找到的[SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet，执行[配置混合 Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)所需的任务已得到简化。 调用此 cmdlet 时，它将创建并配置所需的服务连接点和组策略。
 
-1.  启动 Azure AD Connect，然后选择 "**配置**"。
-2.  在 "**其他任务**" 页上，选择 "**配置设备选项**"，然后选择 "**下一步**"。
-3.  在 "**概述**" 页上，选择 "**下一步**"。
-4.  在 "**连接到 AZURE AD** " 页上，输入 Microsoft 365 商业高级版全局管理员的凭据。
-5.  在 "**设备选项**" 页上，选择 "**配置混合 Azure AD 加入**"，然后选择 "**下一步**"。
-6.  在 " **SCP** " 页面上，对于您希望 Azure AD CONNECT 配置 SCP 的每个林，请完成以下步骤，然后选择 "**下一步**"：
-    - 选中林名称旁边的框。 林应为你的 AD 域名称。
-    - 在 "**身份验证服务**" 列下，打开下拉列表并选择匹配的域名（只能有一个选项）。
-    - 选择 "**添加**" 以输入域管理员凭据。  
-7.  在 "**设备操作系统**" 页面上，选择 "Windows 10 或更高版本仅加入域" 设备。
-8.  在 "**准备配置**" 页上，选择 "**配置**"。
-9.  在 "**配置完成**" 页上，选择 "**退出**"。
+您可以通过从 PowerShell 实例中调用以下命令来安装此模块：
 
-
-## <a name="5-create-a-gpo-for-intune-enrollment--admx-method"></a>5. 为 Intune 注册创建 GPO – ADMX 方法
-
-改用.ADMX 模板文件。
-
-1.  登录到 AD server、搜索和打开**服务器管理器**  >  **工具**  >  **组策略管理**。
-2.  选择 "**域**" 下的域名，然后右键单击 "**组策略对象**" 以选择 "**新建**"。
-3.  为新 GPO 指定名称，例如 "*Cloud_Enrollment*"，然后选择 **"确定**"。
-4.  右键单击 "**组策略对象**" 下的新 GPO，然后选择 "**编辑**"。
-5.  在**组策略管理编辑器**中，转到 "**计算机配置**  >  **策略**"  >  **管理模板**  >  **Windows 组件**  >  **MDM**。
-6. 右键单击 "**使用默认 Azure AD 凭据启用自动 MDM 注册**"，然后选择 "**启用**  >  **" "确定"**。 关闭编辑器窗口。
+```powershell
+Install-Module SecMgmt
+```
 
 > [!IMPORTANT]
-> 如果您没有看到策略**使用默认的 AZURE AD 凭据启用自动 MDM 注册**，请参阅[获取最新的管理模板](#get-the-latest-administrative-templates)。
+> 建议在运行 Azure AD Connect 的 Windows 服务器上安装此模块。
 
-## <a name="6-deploy-the-group-policy"></a>6. 部署组策略
+若要创建所需的服务连接点和组策略，您将调用[SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet。 执行此任务时，将需要 Microsoft 365 商业高级全局管理员凭据。 准备好创建资源时，请调用以下命令：
 
-1.  在服务器管理器的 "**域**> 组策略对象" 下，选择上面步骤3中的 GPO，例如 "Cloud_Enrollment"。
-2.  为 GPO 选择 "**作用域**" 选项卡。
-3.  在 GPO 的 "作用域" 选项卡中，右键单击 "**链接**" 下的域链接。
-4.  选择 "**强制**" 以部署 GPO，然后在确认屏幕中单击 **"确定"** 。
+```powershell
+PS C:\> Connect-SecMgmtAccount
+PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
+```
+
+第一个命令将与 Microsoft 云建立连接，当系统提示时，请指定 Microsoft 365 Business Premium 全局管理员凭据。
+
+## <a name="5-link-the-group-policy"></a>5. 链接组策略
+
+1. 在组策略管理控制台（GPMC）中，右键单击要将策略链接到的位置，然后从上下文菜单中选择 "*链接现有 GPO ...* "。
+2. 选择在上述步骤中创建的策略，然后单击 **"确定"**。
 
 ## <a name="get-the-latest-administrative-templates"></a>获取最新的管理模板
 
@@ -129,4 +117,3 @@ ms.locfileid: "44564921"
 6.  重新启动主域控制器，以使策略可用。 此过程也适用于将来的任何版本。
 
 此时，您应该能够看到策略**使用默认的 AZURE AD 凭据启用自动 MDM 注册**。
-

@@ -6,18 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0cb4da85b5548ced757197a3af818e212b065b47
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085933"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530159"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 咨询服务
 
 你可以与 Microsoft 咨询服务（MCS）接洽，以获取打包用于 Microsoft 托管桌面的应用。 有关详细信息，请与你的帐户代表联系 MCS 并将你的特定应用打包项目限定为范围。
 
-## <a name="roles-and-responsibilities"></a>角色和责任
+## <a name="roles-and-responsibilities"></a>角色和职责
 
 若要使用 MCS 应用程序打包，**您必须提供以下元素**：
 

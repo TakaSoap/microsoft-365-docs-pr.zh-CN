@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430491"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529477"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -25,7 +27,7 @@ ms.locfileid: "45430491"
 
 Microsoft 托管桌面是云托管服务。 Microsoft 托管桌面服务需要能够达到的一组终结点。 此部分列出了 Microsoft 托管桌面服务的各个方面需要允许的终结点。 
 
-客户可以通过防火墙或代理直接发送所有受信任的 Microsoft 365 网络请求，从而绕过身份验证和所有其他数据包级别检查或处理，从而优化其网络。 这可降低延迟和外围容量要求。 
+客户可以通过防火墙或代理直接发送所有受信任的 Microsoft 365 网络请求，从而绕过身份验证和所有其他数据包级别检查或处理，从而优化其网络。 这样可减少延迟和外围容量要求。 
 
 此外，为了优化基于 Microsoft 托管桌面云服务的性能，这些终结点需要客户客户端浏览器和其边缘网络中的设备进行特殊处理。 这些设备包括防火墙、SSL 中断和检查、数据包检查设备和数据丢失防护系统。
 

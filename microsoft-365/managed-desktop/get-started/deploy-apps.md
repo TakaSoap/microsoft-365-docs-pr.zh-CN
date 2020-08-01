@@ -1,19 +1,22 @@
 ---
-title: 将应用程序部署到设备
+title: 将应用部署到设备
 description: 将应用添加到 Microsoft 托管桌面设备并将其部署到的信息。
 keywords: Microsoft 托管桌面、Microsoft 365、服务、文档、应用程序、业务线应用程序、LOB 应用
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046324"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529393"
 ---
-# <a name="deploy-apps-to-devices"></a>将应用程序部署到设备
+# <a name="deploy-apps-to-devices"></a>将应用部署到设备
 Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并将其部署到用户设备。 在使用 Microsoft 托管桌面门户后，可以添加和部署应用。 
 
 整个过程如下所示：
@@ -85,7 +88,7 @@ Microsoft 托管桌面的加入部分包括向用户设备添加应用程序并�
 必需 |  应用程序安装在所选组中的设备上。 | MMD –*应用程序名称*–必需
 Uninstall |  将从所选组中的设备中卸载应用程序。 | MMD –*应用程序名称*–卸载
 
-将您的用户添加到这些组，以使应用程序 availabe、安装应用程序或从其 Microsoft 托管桌面设备中删除该应用程序。 
+将您的用户添加到这些组，以使应用程序可用，安装应用程序，或从 Microsoft 托管桌面设备中删除该应用。 
 
 <span id="3" />
 

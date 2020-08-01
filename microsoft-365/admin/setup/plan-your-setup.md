@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: 了解设置 Microsoft 365 for business 所需的操作。
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 了解有关将迁移到 Microsoft 365 商业版的要求和注意事项。
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778945"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529656"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>规划 Microsoft 365 商业版的设置
 
 本文适用于已订阅 Microsoft 365 for business plan 的人员。
   
-将组织移动到 Microsoft 365 之前，需要确定一些事项，并提供需要的信息。
+将组织迁移到 Microsoft 365 之前，需要满足以下要求，需要满足的信息，以及必须做出的决策。
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>在运行安装向导之前需要具有现有信息
 

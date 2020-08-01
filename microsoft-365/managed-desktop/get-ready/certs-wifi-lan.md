@@ -1,7 +1,7 @@
 ---
 title: 为 Microsoft 托管桌面准备证书和网络配置文件
 description: 证书/wifi/局域网
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,18 +9,20 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 0c3edda92e28b45b7f7b48c1d5002014f71116f6
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c7c57861986d275165484ae726140720a75da88e
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41596569"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530027"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备证书和网络配置文件  
  
 基于证书的身份验证是使用 Microsoft 托管桌面的客户的常见要求。 您可能需要证书访问 Wlan 或 LAN、连接到 VPN 解决方案或访问组织中的内部资源。   
  
-由于 Microsoft 托管桌面设备已加入 Azure Active Directory （Azure AD）并由 Microsoft Intune 进行管理，因此您必须使用简单证书注册协议（SCEP）或公钥加密标准（PKCS）部署此类证书与 Intune 集成的证书基础结构。    
+由于 Microsoft 托管桌面设备已加入 Azure Active Directory （Azure AD）并由 Microsoft Intune 进行管理，因此您必须使用与 Intune 集成的简单证书注册协议（SCEP）或公钥加密标准（PKCS）证书基础结构部署此类证书。    
  
 ## <a name="certificate-requirements"></a>证书要求 
  
@@ -37,7 +39,7 @@ ms.locfileid: "41596569"
   
 ## <a name="wi-fi-connectivity-requirements"></a>Wi-fi 连接要求
 
-若要允许自动为企业网络所需的 Wi-fi 配置提供设备，您可能需要 Wlan 配置配置文件。 你可以将 Microsoft 托管桌面配置为将这些配置文件部署到你的设备。 如果你的网络安全要求设备是本地域的一部分，你可能还需要评估 Wlan 网络基础结构，以确保它与 Microsoft 托管桌面设备兼容（Microsoft 托管桌面设备已加入 Azure AD）仅限）。 
+若要允许自动为企业网络所需的 Wi-fi 配置提供设备，您可能需要 Wlan 配置配置文件。 你可以将 Microsoft 托管桌面配置为将这些配置文件部署到你的设备。 如果你的网络安全要求设备是本地域的一部分，你可能还需要评估 Wlan 网络基础结构，以确保它与 Microsoft 托管桌面设备兼容（Microsoft 托管桌面设备仅在 Azure AD 中加入）。 
  
 在将 Wlan 配置部署到 Microsoft 托管桌面设备之前，你需要为每个 Wlan 网络收集组织的要求。 为了简化此过程，可以使用此[WiFi 配置文件模板](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)。
  
@@ -53,7 +55,7 @@ ms.locfileid: "41596569"
 2. 使用管理凭据打开命令提示符。 
 3. 通过运行**netsh interface show interface**查找 LAN 接口名称。 
 4. 通过运行**netsh LAN 导出配置文件文件夹来导出 LAN 配置文件 XML。 Interface = "interface_name"**。 
-5. 如果需要在 Microsoft 托管桌面设备上测试导出的配置文件，请运行**netsh lan add profile filename = "PATH_AND_FILENAME .xml" interface = "INTERFACE_NAME"**。 
+5. 如果需要在 Microsoft 托管桌面设备上测试导出的配置文件，请运行**netsh lan add profile filename = "PATH_AND_FILENAME.xml" interface = "INTERFACE_NAME"**。 
  
  
 ## <a name="deploy-certificate-infrastructure"></a>部署证书基础结构  
@@ -85,6 +87,6 @@ ms.locfileid: "41596569"
 2. 为每个 SCEP 或 PKCS 证书创建一个配置文件（请参阅[create a SCEP certificate profile](https://docs.microsoft.com/intune/protect/certificates-scep-configure#create-a-scep-certificate-profile)或[create a PKCS certificate profile](https://docs.microsoft.com/intune/protect/certficates-pfx-configure#create-a-pkcs-certificate-profile)）每个配置文件都必须有一个说明，其中包含一个以 DD/MM/YYYY 格式显示的到期日期。 **不会部署不具有过期日期的证书配置文件。**
 3. 为每个企业 WiFi 网络创建配置文件（请参阅[适用于 Windows 10 及更高版本设备的 wi-fi 设置](https://docs.microsoft.com/intune/wi-fi-settings-windows)）。
 4. 为每个公司 VPN 创建配置文件（请参阅[使用 Intune 添加 VPN 连接的 windows 10 和 Windows 全息设备设置](https://docs.microsoft.com/intune/vpn-settings-windows-10)）。
-5. 将名为 "证书部署" 或 "Wi-fi 配置文件部署" 的支持请求提交到 Microsoft 托管桌面管理门户使用 Microsoft 托管桌面管理门户查看配置文件并将其部署到 "新式工作区设备–测试"". Microsoft 托管桌面 IT 操作可让你知道在通过管理门户中的支持请求完成请求时。 
+5. 使用 Microsoft 托管桌面管理门户将名为 "证书部署" 或 "Wi-fi 配置文件部署" 的支持请求提交到 Microsoft 托管桌面管理门户，以查看配置配置文件并将其部署到 "新式 Workplace 设备–测试"。 Microsoft 托管桌面 IT 操作可让你知道在通过管理门户中的支持请求完成请求时。 
  
  

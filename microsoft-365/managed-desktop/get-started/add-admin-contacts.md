@@ -1,17 +1,20 @@
 ---
 title: 在管理门户中添加和验证管理员联系人
 description: 告诉我们每个焦点区域的联系人。
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085884"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529799"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在管理门户中添加和验证管理员联系人
 
@@ -72,5 +75,5 @@ IT 技术支持人员 | 如果我们的支持人员在 Microsoft 托管桌面支
 4. [在设备上安装 Intune 公司门户](company-portal.md)
 5. [启用企业状态漫游](enterprise-state-roaming.md)
 6. [设置 Microsoft 托管桌面设备](set-up-devices.md)
-7. [让用户做好使用设备的准备](get-started-devices.md)
-8. [将应用程序部署到设备](deploy-apps.md)
+7. [为用户做好使用设备的准备](get-started-devices.md)
+8. [将应用部署到设备](deploy-apps.md)

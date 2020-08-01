@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617260"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533807"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义已阻止 Url 列表
 
@@ -84,6 +84,10 @@ ms.locfileid: "44617260"
 |`https://contoso.com/a`|阻止网站， `https://contoso.com/a` 而不是其他子路径（如`https://contoso.com/a/b`|
 |`https://contoso.com/a*`|阻止网站 `https://contoso.com/a` 和其他子路径（如`https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|阻止子域（本例中为 "玩具"），但允许单击其他域 Url （如 `https://contoso.com` 或 `https://home.contoso.com` ）。|
+
+
+> [!NOTE]
+> 默认情况下，您只能在 Office 365 ATP 安全链接默认策略中将 500 Url 添加到阻止的 URL 列表中。
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何为组织中的某些用户定义例外
 

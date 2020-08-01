@@ -1,18 +1,20 @@
 ---
 title: Microsoft 托管桌面的可配置设置参考
 description: 在 Microsoft 托管桌面中设置可配置设置的类别
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 2/14/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9a405f96ee7a113197fbc9c237779db3e3e5e5ca
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: c3f8aec244b1b0685b8293fda0b048d662c7cef2
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42632980"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529357"
 ---
 # <a name="configurable-settings-reference---microsoft-managed-desktop"></a>可配置的设置参考-Microsoft 托管桌面
 
