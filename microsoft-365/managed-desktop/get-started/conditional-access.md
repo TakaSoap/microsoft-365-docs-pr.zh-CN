@@ -1,37 +1,40 @@
 ---
 title: 调整条件访问
 description: 如何排除某些 Microsoft 帐户
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1bc5d937616cba60c5af43fe22a7c4dccf89a55e
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8844c50f5faba609b3f5f53adc5ab45ba1dbaa74
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085802"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529679"
 ---
-# <a name="adjust-conditional-access"></a><span data-ttu-id="d3f6e-104">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="d3f6e-104">Adjust conditional access</span></span>
+# <a name="adjust-conditional-access"></a><span data-ttu-id="12e38-104">调整条件访问</span><span class="sxs-lookup"><span data-stu-id="12e38-104">Adjust conditional access</span></span>
 
-<span data-ttu-id="d3f6e-105">如果您在组织中使用[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略，则必须将其设置为排除某些帐户，以便 Microsoft 托管桌面能够正常工作。</span><span class="sxs-lookup"><span data-stu-id="d3f6e-105">If you use [conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies in your organization, you'll have to set them to exclude certain accounts so that Microsoft Managed Desktop can work properly.</span></span>
+<span data-ttu-id="12e38-105">如果您在组织中使用[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略，则必须将其设置为排除某些帐户，以便 Microsoft 托管桌面能够正常工作。</span><span class="sxs-lookup"><span data-stu-id="12e38-105">If you use [conditional access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) policies in your organization, you'll have to set them to exclude certain accounts so that Microsoft Managed Desktop can work properly.</span></span>
 
-<span data-ttu-id="d3f6e-106">要实现这一点，请执行下列步骤：</span><span class="sxs-lookup"><span data-stu-id="d3f6e-106">To do this, follow these steps:</span></span>
+<span data-ttu-id="12e38-106">为此，请按照下列步骤操作：</span><span class="sxs-lookup"><span data-stu-id="12e38-106">To do this, follow these steps:</span></span>
 
-1. <span data-ttu-id="d3f6e-107">请参阅 how [to： Plan a 条件 Access deployment in The Azure Active Directory 中](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps)的 "回滚步骤" 一节。</span><span class="sxs-lookup"><span data-stu-id="d3f6e-107">Refer to the "Rollback steps" section of [How To: Plan your Conditional Access deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps).</span></span>
-2. <span data-ttu-id="d3f6e-108">按照中的步骤操作，以排除所有策略的*新式 Workplace Service 帐户*组。</span><span class="sxs-lookup"><span data-stu-id="d3f6e-108">Follow the steps there to exclude the *Modern Workplace Service Accounts* group for all policies.</span></span>
+1. <span data-ttu-id="12e38-107">请参阅 how [to： Plan a 条件 Access deployment in The Azure Active Directory 中](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps)的 "回滚步骤" 一节。</span><span class="sxs-lookup"><span data-stu-id="12e38-107">Refer to the "Rollback steps" section of [How To: Plan your Conditional Access deployment in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps).</span></span>
+2. <span data-ttu-id="12e38-108">按照中的步骤操作，以排除所有策略的*新式 Workplace Service 帐户*组。</span><span class="sxs-lookup"><span data-stu-id="12e38-108">Follow the steps there to exclude the *Modern Workplace Service Accounts* group for all policies.</span></span>
 
 
-<span data-ttu-id="d3f6e-109">如果您在条件访问方面遇到困难，请与管理员[支持](../working-with-managed-desktop/admin-support.md)联系。</span><span class="sxs-lookup"><span data-stu-id="d3f6e-109">If you have any difficulty with conditional access, contact admin [support](../working-with-managed-desktop/admin-support.md).</span></span>
+<span data-ttu-id="12e38-109">如果您在条件访问方面遇到困难，请与管理员[支持](../working-with-managed-desktop/admin-support.md)联系。</span><span class="sxs-lookup"><span data-stu-id="12e38-109">If you have any difficulty with conditional access, contact admin [support](../working-with-managed-desktop/admin-support.md).</span></span>
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="d3f6e-110">Microsoft 托管桌面入门步骤</span><span class="sxs-lookup"><span data-stu-id="d3f6e-110">Steps to get started with Microsoft Managed Desktop</span></span>
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="12e38-110">Microsoft 托管桌面入门步骤</span><span class="sxs-lookup"><span data-stu-id="12e38-110">Steps to get started with Microsoft Managed Desktop</span></span>
 
-1. [<span data-ttu-id="d3f6e-111">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="d3f6e-111">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. <span data-ttu-id="d3f6e-112">调整条件访问（本主题）</span><span class="sxs-lookup"><span data-stu-id="d3f6e-112">Adjust conditional access (this topic)</span></span>
-3. [<span data-ttu-id="d3f6e-113">分配许可证</span><span class="sxs-lookup"><span data-stu-id="d3f6e-113">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="d3f6e-114">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="d3f6e-114">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. [<span data-ttu-id="d3f6e-115">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="d3f6e-115">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
-6. [<span data-ttu-id="d3f6e-116">设置设备</span><span class="sxs-lookup"><span data-stu-id="d3f6e-116">Set up devices</span></span>](set-up-devices.md)
-7. [<span data-ttu-id="d3f6e-117">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="d3f6e-117">Get your users ready to use devices</span></span>](get-started-devices.md)
-8. [<span data-ttu-id="d3f6e-118">部署应用</span><span class="sxs-lookup"><span data-stu-id="d3f6e-118">Deploy apps</span></span>](deploy-apps.md)
+1. [<span data-ttu-id="12e38-111">在管理门户中添加和验证管理员联系人</span><span class="sxs-lookup"><span data-stu-id="12e38-111">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. <span data-ttu-id="12e38-112">调整条件访问（本主题）</span><span class="sxs-lookup"><span data-stu-id="12e38-112">Adjust conditional access (this topic)</span></span>
+3. [<span data-ttu-id="12e38-113">分配许可证</span><span class="sxs-lookup"><span data-stu-id="12e38-113">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="12e38-114">部署 Intune 公司门户</span><span class="sxs-lookup"><span data-stu-id="12e38-114">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="12e38-115">启用企业状态漫游</span><span class="sxs-lookup"><span data-stu-id="12e38-115">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. [<span data-ttu-id="12e38-116">设置设备</span><span class="sxs-lookup"><span data-stu-id="12e38-116">Set up devices</span></span>](set-up-devices.md)
+7. [<span data-ttu-id="12e38-117">让用户做好使用设备的准备</span><span class="sxs-lookup"><span data-stu-id="12e38-117">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="12e38-118">部署应用</span><span class="sxs-lookup"><span data-stu-id="12e38-118">Deploy apps</span></span>](deploy-apps.md)
