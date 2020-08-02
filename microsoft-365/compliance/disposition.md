@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529597"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533819"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -124,9 +124,9 @@ ms.locfileid: "46529597"
 ## <a name="disposition-of-records"></a>处置记录
 
 > [!NOTE]
->为 SharePoint 和 OneDrive 中的记录提供处置证明的部署已完成。 您将在 Microsoft 365 合规性中心的 "记录管理" 页的 "处置" 部分中看到标记为 "内容为 SharePoint 和 OneDrive 的记录" 的保留标签列表。 在这些标签下，您可以在 SharePoint 和 OneDrive 中查看已自动处置或在处置评审之后的项的列表。
-
-Exchange 中的记录处置证明尚未激活。 当此推出开始且完成时，我们将更新此注释。
+> 为 SharePoint 和 OneDrive 中的记录提供处置证明的部署已完成。 您将在 Microsoft 365 合规性中心的 "记录管理" 页的 "处置" 部分中看到标记为 "内容为 SharePoint 和 OneDrive 的记录" 的保留标签列表。 在这些标签下，您可以在 SharePoint 和 OneDrive 中查看已自动处置或在处置评审之后的项的列表。
+>
+> Exchange 中的记录处置证明尚未激活。 当此推出开始且完成时，我们将更新此注释。
 
 使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 例如：
 

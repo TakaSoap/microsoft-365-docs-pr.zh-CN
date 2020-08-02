@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 管理中心 查找你的发票或账单。 你还可以保存和打印帐单。
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816993"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533609"
 ---
 # <a name="view-your-bill-or-invoice"></a>查看帐单或发票
 
-本文适用于已订阅 Microsoft 365 商业版的用户。只有全局管理员或帐单管理员才能执行本文所述步骤。
+本文适用于已订阅 Microsoft 365 商业版计划的用户。
   
-如果需要帮助解读你在帐单上看到的费用，请参阅[了解你的帐单或发票](understand-your-invoice2.md)获取详细演练。
+如果需要帮助解读在帐单上看到的费用，请参阅[了解你的帐单或发票](understand-your-invoice2.md)获取详细演练。
   
- **不是管理员？** 请联系 IT 管理员获取帮助。 
-  
- **对账单有问题？** [联系支持人员，获得有关商业版产品的帮助](../../admin/contact-support-for-business-products.md)。
+**对账单有问题？** [联系支持人员，获得有关商业版产品的帮助](../../admin/contact-support-for-business-products.md)。
 
- 观看查看账单或发票的短视频（注意发票可能与视频中的发票不同）。 <br><br>
+## <a name="before-you-begin"></a>准备工作
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
-
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+只有全局或帐单管理员才能执行本文所述步骤。
   
 ## <a name="view-a-bill-or-invoice"></a>查看账单或发票
 
-::: moniker range="o365-worldwide"
-
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心，转到“**账单**”> “<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">账单和付款</a>”页。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">账单和付款</a>”页。
-
-::: moniker-end
-
+    - 如果使用 Office 365 Germany，请转到此“<a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">账单和付款</a>”页。
+    - 如果使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">账单和付款</a>页。
 2. 在“**发票**”选项卡上，从下拉列表中选择日期范围，随后选择想要查看的顺序。
-
-3. 在“摘要”页面上，可以看到以下信息：
-
-    - 总余额、当前到期金额、付款截止日期、最后一次付款金额以及该金额的接收日期。
-
-    - 付款说明。
-
-    - 过去付款日期和付款金额和的记录。
-
-    - 订单创建日期和订单编号。
-
+3. 在摘要页面上，可以查看发票中项目，数量，价格，折扣和所有项的总计。
 4. 若要打印或保存发票的 PDF 副本，请选择“**下载 PDF**”。
 
-## <a name="related-articles"></a>相关文章
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>以电子邮件方式接收帐单副本
 
-[通过发票、信用卡或银行帐户支付](pay-for-your-subscription.md)
-  
-[管理支付方式](manage-payment-methods.md)
+可以选择以电子邮件附件的形式接收帐单副本。如果执行此操作，请注意：
 
-[Minecraft:Education Edition 付款方式](https://go.microsoft.com/fwlink/p/?linkid=838761)
+- 电子邮件会发送到列为通知收件人的每个人的主要和备用电子邮件地址。
+- 你会收到两封单独的电子邮件：第一封告知你的帐单已生成，其中包含如何登录管理中心查看帐单的说明，第二封电子邮件的附件中包含帐单。
+
+### <a name="to-receive-your-billing-statement-in-email"></a>以电子邮件的方式接收帐单
+
+1. 在管理中心中，转到“**账单**”  >  “<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">账单通知</a>”页面。
+    - 如果使用 Office 365 Germany，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帐单通知</a>页。
+    - 如果使用由世纪互联运营的 Office 365，请转到此<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帐单通知</a>页。
+1. 在“**以电子邮件附件形式接收帐单？**”下将开关切换到“**开**”。
+
+    将开关切换到" **关**"可随时停止接收帐单电子邮件。
+
+## <a name="next-steps"></a>后续步骤
+
+如果您有余额并想支付，则可以在线进行。 若要了解如何操作，请参阅[支付订阅费用](pay-for-your-subscription.md)。
+
+## <a name="related-content"></a>相关内容
+
+[通过发票、信用卡或银行帐户支付](pay-for-your-subscription.md)（文章） \
+[管理付款方式](manage-payment-methods.md)（文章） \
+[Minecraft:Education Edition 付款方式](https://go.microsoft.com/fwlink/p/?linkid=838761)（文章）

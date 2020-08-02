@@ -1,5 +1,5 @@
 ---
-title: DLP 函数查找的内容
+title: 数据丢失防护（DLP）函数查找的内容
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解数据丢失防护（DLP）函数的外观，以帮助您了解预定义的敏感信息类型的工作方式。
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 了解数据丢失防护（DLP）函数的查找内容。
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819272"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536307"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 函数查找的内容
 
 数据丢失防护（DLP）包括敏感信息类型，如信用卡号和欧盟借记卡号，可供您在 DLP 策略中使用。 这些敏感信息类型查找特定模式，并通过确保正确的格式设置、强制校验和来查找相关的关键字或其他信息来 corroborate。 其中一些功能是由内部函数执行的。 例如，信用卡号敏感信息类型使用函数查找类似于到期日期的日期，以帮助 corroborate 号码是信用卡号。
   
-本主题说明这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。 有关详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
+本文介绍了这些函数查找的内容，以帮助您了解预定义的敏感信息类型的工作原理。 有关详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ ms.locfileid: "44819272"
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-此函数查找欧盟常用格式的日期 （以及美国以外的大多数位置）。 这包括格式 "日/月/年"、"日-月-年" 和 "年月日"。 月份的名称或缩写不区分大小写。
+此函数查找欧盟常用格式的日期 （以及美国以外的大多数位置），例如 "日/月/年"、"日-月-年" 和 "月年"。 月份的名称或缩写不区分大小写。
   
 示例：
   
@@ -183,7 +183,7 @@ ms.locfileid: "44819272"
     
   - januari、februari、maart、四月、mei、juni、juli、augustus、九月、ocktober、十月、十一月、十二月
     
-  - 2004年1月1月 maart 日 mei 年9月8日9月9日 okt 年11月
+  - 2004年1月1月 maart 日 mei 日09月8日，okt 年11月9日
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ ms.locfileid: "44819272"
     
 以下格式支持 YY 或 YYYY：
   
-- 年月日-例如，。Jan-2010 或一月-2010 或 Jan-10 或一月-10
+- 年月日--例如 Jan-2010 或一月-2010 或 Jan-10 或一月-10
     
 - 年月日-例如，"一月 2010" 或 "Jan 2010" 或 "Jan 10" 或 "Jan 10"
     

@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229412"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536317"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](custom-sensitive-info-types.md) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用 [安全与合规中心](create-a-custom-sensitive-information-type.md)或 [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)，根据模式、证据（“员工”、“徽章”、“ID”等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。   ** ** ** 此类自定义敏感信息类型可满足许多组织的业务需求。
+[自定义敏感信息类型](custom-sensitive-info-types.md) 用于帮助防止无意或不适当的敏感信息共享。 作为管理员，你可以使用安全与合规中心或 PowerShell，根据模式、证据（ *员工*、 *徽章*、 *ID* 等关键字）、字符邻近度（特定模式下证据与字符的邻近度）以及可信度来定义自定义敏感信息类型。 此类自定义敏感信息类型可满足许多组织的业务需求。
 
 但是，如果你需要自定义敏感信息类型（它使用精确数据值而不是仅与泛型模式匹配），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
@@ -51,6 +51,16 @@ ms.locfileid: "45229412"
 - Microsoft 365 E5
 - Microsoft 365 E5 合规
 - Microsoft E5/A5 信息保护和治理
+
+## <a name="portal-links-for-your-subscription"></a>订阅门户链接
+
+
+|门户  |全球/GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
+|Microsoft 365 安全中心     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
+|Microsoft 365 合规中心     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
+
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概览
 
@@ -100,7 +110,7 @@ ms.locfileid: "45229412"
       </EdmSchema>
       ```
 
-4. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+4. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的步骤连接到安全与合规中心。
 
 5. 要上传数据库架构，请逐一运行下列 cmdlet：
 
@@ -133,7 +143,7 @@ ms.locfileid: "45229412"
 
 1. 编辑 **edm.xml** 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information) 部分中讨论的文件）。
 
-2. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+2. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的步骤连接到安全与合规中心。
 
 3. 要更新数据库架构，请逐一运行下列 cmdlet：
 
@@ -162,7 +172,7 @@ ms.locfileid: "45229412"
 
 （根据需要）若想删除正在对基于 EDM 的分类使用的架构，请按照以下步骤操作：
 
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的步骤连接到安全与合规中心。
 
 2. 运行下列 PowerShell cmdlet，将“patientrecords”的数据存储名称替换为要删除的名称：
 
@@ -223,7 +233,7 @@ ms.locfileid: "45229412"
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -290,7 +300,7 @@ ms.locfileid: "45229412"
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 以全局管理员身份转到管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/)) 并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 名为  **EDM\_DataUploaders**。
+1. 作为全局管理员，使用相应的[订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) ，名为  **EDM\_DataUploaders**。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -301,16 +311,25 @@ ms.locfileid: "45229412"
 >[!NOTE]
 > 在开始此过程之前，请确保你是  **EDM\_DataUploaders** 安全组的成员和计算机上的本地管理员。
 
-1. 下载并安装[EDM 上载代理](https://go.microsoft.com/fwlink/?linkid=2088639)。 默认情况下，安装位置应为 ** C:\\Program Files\\Microsoft\\EdmUploadAgent**。
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>按订阅类型链接到 EDM 上传代理
 
-      > [!TIP]
-      > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
+- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+
+1. 下载并安装适用于你的订阅的相应 [EDM 上载代理](#links-to-edm-upload-agent-by-subscription-type)。 默认情况下，安装位置应为 ** C:\\Program Files\\Microsoft\\EdmUploadAgent**。
+
+> [!TIP]
+> 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
+
+> [!NOTE]
+> 每天只能使用 EDMUploadAgent 将数据上传到任何给定的数据存储空间两次。
 
 2. 若要授权 EDM 上载代理，请打开 Windows 命令提示符（以管理员身份），然后运行以下命令：
 
     `EdmUploadAgent.exe /Authorize`
 
-3. 使用 Office 365 的工作或学校帐户登录。
+3. 使用添加到 EDM_DataUploaders 安全组的 Office 365 工作或学校帐户登录。
 
 下一步是使用 EDM 上载代理为敏感数据创建索引，然后上载索引数据。
 
@@ -347,6 +366,10 @@ ms.locfileid: "45229412"
 `EdmUploadAgent.exe /GetDataStore`
 
 你将看到数据存储区列表以及上次更新时间。
+
+如果要查看所有数据上载到特定存储的信息，请在 Windows 命令提示符下运行以下命令：
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
 继续设置 [刷新敏感信息数据库](#refreshing-your-sensitive-information-database)的流程和计划。
 
@@ -459,7 +482,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 创建 DLP 策略
 
-1. 转到“安全与合规中心”([https://protection.office.com](https://protection.office.com/))。
+1. 使用相应的[订阅链接](#portal-links-for-your-subscription)转到安全与合规中心。
 
 2. 选择“数据丢失防护”\>“策略”。 ****  ****
 
@@ -497,12 +520,9 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ## <a name="related-articles"></a>相关文章
 
-[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-
-[自定义敏感信息类型](custom-sensitive-info-types.md)
-
-[DLP 策略概述](data-loss-prevention-policies.md)
-
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
+- [自定义敏感信息类型](custom-sensitive-info-types.md)
+- [DLP 策略概述](data-loss-prevention-policies.md)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。

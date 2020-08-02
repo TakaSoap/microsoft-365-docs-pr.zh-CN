@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780261"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529631"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -159,6 +159,9 @@ ms.locfileid: "44780261"
 - 打开浏览器、登录，然后转到 Outlook 网页版。 可从 Outlook 网页版访问共享邮箱。
 
     有关说明，请参阅<a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">在 Outlook 网页版中添加共享邮箱</a>。
+    
+> [!NOTE]
+> 共享邮箱只能添加到 Outlook for iOS 应用程序或 Outlook for Android 移动应用程序
 
 ## <a name="use-the-shared-calendar"></a>使用共享日历
 

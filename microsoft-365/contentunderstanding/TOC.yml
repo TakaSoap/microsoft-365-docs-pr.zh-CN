@@ -1,0 +1,22 @@
+- name: 内容了解入门
+  items:
+    - name: 文档理解概述
+      href: document-understanding-overview.md
+    - name: 表单处理概述
+      href: form-processing-overview.md
+    - name: 文档理解和表单处理模型之间的区别
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: 创建内容中心
+      href: create-a-content-center.md
+    - name: 创建类元
+      href: create-a-classifier.md
+    - name: 创建提取程序
+      href: create-an-extractor.md
+    - name: 应用模型
+      href: apply-a-model.md
+    - name: 创建表单处理模型
+      href: create-a-form-processing-model.md
+- name: 开始使用安装程序
+  items:
+    - name: 设置内容了解
+      href: set-up-content-understanding.md
