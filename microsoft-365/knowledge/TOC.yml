@@ -1,0 +1,16 @@
+- name: 知识管理入门
+  items:
+    - name: 知识管理概述
+      href: knowledge-management-overview.md
+    - name: 主题中心概述
+      href: topic-center-overview.md
+    - name: 使用主题中心中的主题
+      href: work-with-topics.md
+    - name: 向用户授予对主题中心的权限
+      href: give-user-permissions-to-the-topic-center.md
+- name: 开始使用安装程序
+  items:
+    - name: 设置知识管理
+      href: set-up-knowledge-network.md
+    - name: 管理您的知识管理网络
+      href: manage-knowledge-network.md
