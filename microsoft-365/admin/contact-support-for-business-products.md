@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 通过使用针对你所在国家或地区列出的电话号码、在线提交服务请求或联系 Microsoft Store 获取虚拟客户支持来获取技术和帐单支持。
+description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: 4ee5a8adc17bb01a58ba79ccb53714c75af7de99
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
+ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506305"
+ms.lasthandoff: 08/01/2020
+ms.locfileid: "46536856"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
@@ -70,11 +70,6 @@ ms.locfileid: "46506305"
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-## <a name="virtual-support-from-the-microsoft-store"></a>Microsoft Store 的虚拟支持
-
-你可以联系 Microsoft Store 销售和客户服务支持，与 Answer Desk 专家沟通，让他们帮助解决 Microsoft 365 问题。
-
-转到[联系 Microsoft Store 支持](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020)页面，获取快速帮助链接和电话号码。
 
 ::: moniker-end
 
