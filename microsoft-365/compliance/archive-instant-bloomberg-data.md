@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用数据连接器以将来自即时 Bloomberg 聊天工具的数据导入和存档到 Microsoft 365。
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936555"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552502"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -120,7 +120,7 @@ ms.locfileid: "44936555"
 5. 在 "**用户映射**" 页上，启用自动用户映射并根据需要提供自定义用户映射
 
    > [!NOTE]
-   > 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为**InstantBloomberg**的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用*CorporateEmailAddress*属性的值来执行。 每个聊天邮件都包含此属性，并使用聊天消息的每个参与者的电子邮件地址填充该属性。 除了使用*CorporateEmailAddress*属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射映射，则连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的*CorporateEmailAddress*属性。 如果连接器在自定义映射文件或聊天项目的*CorporateEmailAddress*属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
+   > 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为**InstantBloomberg**的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用*CorporateEmailAddress*属性的值来执行。 每个聊天邮件都包含此属性，并使用聊天消息的每个参与者的电子邮件地址填充该属性。 除了使用*CorporateEmailAddress*属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的*CorporateEmailAddress*属性。 如果连接器在自定义映射文件或聊天项目的*CorporateEmailAddress*属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
 6. 单击 "**下一步**"，查看设置，然后单击 "**准备**" 以创建连接器。
 

@@ -20,12 +20,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bd8aaab95afd66881b842d902988276b9fde54ff
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199552"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552694"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -40,9 +40,6 @@ ms.locfileid: "45199552"
 ![Excel 功能区和状态栏上的敏感度标签](../media/Sensitivity-label-in-Excel.png)
 
 仅全局（公共）云中的租户支持敏感度标签。 目前，其他云（如[国家云](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)）中的租户不支持敏感度标签。
-
-> [!NOTE]
-> 敏感度标签不适用于美国政府社区 (GCC) 组织。
 
 若要应用敏感度标签，用户必须使用其工作或学校帐户登录到 Office。
 
