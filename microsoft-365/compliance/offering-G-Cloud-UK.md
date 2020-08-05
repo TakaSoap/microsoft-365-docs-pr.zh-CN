@@ -1,5 +1,5 @@
 ---
-title: 英国政府-云（G-云）
+title: '英国政府-云 (G-云) '
 description: Crown 商业服务已将 Microsoft 云服务分类续订为政府云。6。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
@@ -14,30 +14,30 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773763"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560769"
 ---
-# <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云（G-云）
+# <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云 (G-云) 
 
 ## <a name="uk-g-cloud-overview"></a>英国 G-云概述
 
-政府云（G-云）是一项英国政府计划，用于简化政府部门购买云服务，并促进政府广泛采用云计算。 G-云包含一系列包含云服务供应商（如 Microsoft）的框架协议以及其在在线商店中的服务（数字市场）列表。 它们使公共部门组织能够比较和购买这些服务，而无需执行自己的完整审查过程。 包含在数字市场中时，需要自行证明合规性，然后由政府版数字服务（GDS）分支按照自己的意愿进行验证。
+政府云 (G-云) 是一项英国政府计划，可方便政府部门购买云服务，并促进政府广泛采用云计算。 G-云包含一系列与云服务供应商 (的框架协议，如 Microsoft) ，以及在在线商店中的服务（数字市场）列表。 它们使公共部门组织能够比较和购买这些服务，而无需执行自己的完整审查过程。 包含在数字市场中时，需要自行证明合规性，然后由政府数字服务 (GDS) 分支按自己的意愿执行验证。
 
-在2014中优化了 G-云约会过程，以减少英国政府的时间和成本，并从6个级别简化了政府的安全分类方案：官方、机密和主要机密。 （G-云认证级别不再表示为影响级别或 IL;Microsoft 以前为 microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 举办了 IL2 资格鉴定。
+在2014中优化了 G-云约会过程，以减少英国政府的时间和成本，并从6个级别简化了政府的安全分类方案：官方、机密和主要机密。  (G-云认证级别不再表示为影响级别或 IL;Microsoft 以前为 microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 举办了 IL2 资格鉴定。 ) 
 
 除了以前提供的云服务的中心评估之外，新进程还需要云服务提供商进行自我认证，并提供证据以支持 G 云安全原则的 14-云。 此方法尚未更改 Microsoft 生成的证据或公司所遵守的标准。
 
 ## <a name="microsoft-and-uk-g-cloud"></a>Microsoft 和英国 G-云
 
-Microsoft 每年都准备好文档并提交证据，证明它的范围内的企业云服务符合这些原则，为潜在的 G 云客户提供了其风险环境的概述。 （与以前的 G 云资格鉴定一样，它依赖 ISO 27001 证书。）然后，GDS accreditor 对 Microsoft assertion 语句执行多次随机检查，并对证据进行取样，并确定合规性。
+Microsoft 每年都准备好文档并提交证据，证明它的范围内的企业云服务符合这些原则，为潜在的 G 云客户提供了其风险环境的概述。  (与以前的 G 云资格鉴定一样，它依赖 ISO 27001 证书。 ) GDS accreditor 然后对 Microsoft assertion 语句执行多次随机检查，并对证据取样，并确定合规性。
 
 Microsoft 服务到数字市场的约会意味着，英国政府机构和合作伙伴可以使用范围内的服务来存储和处理英国官方政府数据（大多数政府数据）。 此外，现已有450个 Microsoft 合作伙伴，其中包含 Microsoft 云服务的经销商。 他们可以直接断言范围内服务与自己的应用程序中的14个原则的合规性。 但是，客户和合作伙伴需要为 Microsoft 云服务的合规性和确定合规性中未包括的任何组件实现自己的符合性。
 
-了解如何使用我们的 Azure 安全性和合规性蓝图加快英国 G-云 v6 部署：[下载 Azure 蓝图 UK G-云原则实现指南](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
+ [14 使用 Microsoft Azure 的英国云的云安全控制](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/)提供了客户策略以将其服务移动到 Azure，并帮助满足 CESG/NSCS 规定的英国义务。 该白皮书提供了如何使用 Azure 来帮助解决云安全主体中概述的14个控件的情况，并概述了在采用 Microsoft Azure 服务的同时，客户如何更快、更快地完成工作，同时节省资金。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -47,7 +47,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 - Intune
 - Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Office 365： Exchange Online、SharePoint Online 和 Skype for Business Online
-- PowerApps 云服务，作为独立服务提供，后者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
+- PowerApps 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
@@ -103,7 +103,7 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便审计员能够将 Microsoft 结果与您自己的法律和法规要求进行比较。
 
 ## <a name="resources"></a>资源
 

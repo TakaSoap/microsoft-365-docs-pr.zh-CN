@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解在设置自定义域时，通过确保正确设置了 DNS 记录来跟踪你遇到的任何问题。
-ms.openlocfilehash: e3c66e10a673d840cfddad81a057739b6dfac721
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399940"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560247"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399940"
 将您的域设置为与 Microsoft 365 配合使用可能会非常困难。 DNS 系统要求严格，很难使用，并且，你的域的 DNS 设置会影响重要的业务活动，如电子邮件！
 
 > [!NOTE]
-> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置**  >  **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作（三个点）"，然后选择 "**检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
+> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置**  >  **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作 (三个点) "，然后选择 "**检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
   
 ## <a name="whats-going-on"></a>What's going on?
 
@@ -71,7 +71,7 @@ ms.locfileid: "44399940"
 ## <a name="everyones-email-got-switched-to-microsoft-365-and-you-only-wanted-your-email-to-switch"></a>每个人的电子邮件已切换到 Microsoft 365，并且您仅希望您的电子邮件切换？
 <a name="BKMK_EmailSwitched"> </a>
 
-将域添加到 Microsoft 365 时，通常您的域的 MX 记录将更新（您或 Microsoft 365）以指向 Microsoft 365，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中为每个在您的域中有电子邮件的用户创建了邮箱，然后再更改 MX 记录。
+将域添加到 Microsoft 365 时，通常会更新您的域的 MX 记录 (您或 Microsoft 365) 指向 Microsoft 365，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中为每个在您的域中有电子邮件的用户创建了邮箱，然后再更改 MX 记录。
   
 如果您不想将域中每个人的电子邮件移至 Microsoft 365，该怎么办？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。
   
@@ -88,7 +88,7 @@ ms.locfileid: "44399940"
 我们可帮助你跟踪域的 DNS 设置问题。 Microsoft 365 中的 "域" 疑难解答程序将向您显示需要修复的任何记录，以及记录需要设置到的确切内容。 
 
 > [!TIP]
-> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看[您可以使用 Microsoft 365 的不同邮件流方案](https://www.microsoft.com/?ref=go)，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
+> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看[您可以使用 Microsoft 365 的不同邮件流方案](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices)，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>无法正常访问你的网站？
 <a name="BKMK_Website"> </a>

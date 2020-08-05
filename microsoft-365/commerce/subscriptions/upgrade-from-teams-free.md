@@ -20,12 +20,13 @@ ms.custom: ''
 search.appverid: ''
 description: 了解如何从 Microsoft 团队免费升级到新的 Microsoft 365 for business 订阅。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.date: 07/08/2020
+ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087909"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552454"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>从 Microsoft 团队免费升级到 Microsoft 365 for business
 
@@ -40,7 +41,7 @@ ms.locfileid: "45087909"
 
 若要开始此过程，请获取你的基础工作或学校帐户 ID。 此帐户 ID 与用于免费访问 Microsoft 团队的电子邮件地址不同。
 
-1. 转到(G)<a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
+1. 转到 (G) <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
 2. 在页眉中，选择 "配置文件" 图标。 您的帐户 ID 显示在您的姓名下方，以 *. onmicrosoft.com*。
     您的管理员电子邮件地址将如下所示*admin@yourfreeorgname.onmicrosoft.com*。
 
@@ -49,7 +50,7 @@ ms.locfileid: "45087909"
 为 Microsoft 团队免费组织的基础工作或学校帐户之后，您必须重置该帐户的密码。
 
 1. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。 当系统提示您登录时，请选择 **"忘记我的密码**"。
-2. 使用基础工作或学校帐户（以*onmicrosoft.com*结尾）完成密码重置过程。
+2. 使用 (以*onmicrosoft.com*) 结尾的基础工作或学校帐户完成密码重置过程。
 3. 完成验证步骤。 您将收到一封电子邮件，其中包含用于设置新密码的代码。
 4. 输入代码以完成验证过程。
 
@@ -75,8 +76,8 @@ ms.locfileid: "45087909"
 
 ## <a name="related-content"></a>相关内容
 
-[欢迎使用 Microsoft 团队免费](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)（文章） \
-[免费升级 Microsoft 团队订阅版本](https://docs.microsoft.com/microsoftteams/upgrade-freemium)（文章） \
-[购买或删除订阅许可证](../licenses/buy-licenses.md)（文章） \
-[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[取消分配给用户的许可证](../../admin/manage/remove-licenses-from-users.md)（文章）
+[欢迎使用 Microsoft 团队免费](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (文章) \
+[免费升级 Microsoft 团队 (文章) 的订阅版本](https://docs.microsoft.com/microsoftteams/upgrade-freemium)\
+ (文章) \ 中[购买或删除订阅许可证](../licenses/buy-licenses.md)
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (文章) \
+[取消分配给用户](../../admin/manage/remove-licenses-from-users.md) (文章) 的许可证

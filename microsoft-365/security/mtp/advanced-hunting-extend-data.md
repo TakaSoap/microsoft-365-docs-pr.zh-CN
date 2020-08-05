@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9c1b9c1853d80d818d97084e2668d3b12b6da0e6
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 07c010a78d297a4a3c932c0d9a0e32cce0c43bfa
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503210"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560903"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>使用适当的设置扩展高级的求职覆盖范围
 
@@ -45,7 +45,7 @@ ms.locfileid: "46503210"
 
 | 数据 | 说明 | 架构表 | 如何配置 |
 | --- | --- | --- | --- |
-| 域控制器 | 将本地 Active Directory 中的数据发送到 Azure ATP，浓缩与标识相关的信息，例如帐户详细信息、登录活动和 Active Directory 查询 | 多个表，包括[IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)和[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | [安装 Azure ATP 传感器](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)|
+| 域控制器 | 将本地 Active Directory 中的数据发送到 Azure ATP，浓缩与标识相关的信息，例如帐户详细信息、登录活动和 Active Directory 查询 | 多个表，包括[IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)和[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [安装 Azure ATP 传感器](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [启用相关的 Windows 事件](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

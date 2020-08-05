@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: 在安全合规中心中查找和使用适用于 Office 365 高级威胁防护的报告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434074"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560293"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
-Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅或 ATP 计划1或 ATP 计划2加载项）包含各种与安全相关的报告。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-the-atp-reports)，则可以转到 "**报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。
+Office 365 高级威胁防护 (ATP) 组织 (例如，Microsoft 365 E5 订阅或 ATP Plan 1 或 ATP Plan 2 加载项) 包含各种与安全相关的报告。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-the-atp-reports)，则可以转到 "**报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
 ![安全 & 合规中心中的 "报告" 仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -59,7 +59,7 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
   - **恶意可执行附件**
   - **其他**
 
-  当您将鼠标指针悬停在特定的某一天（数据点）时，您可以看到由 EOP 中的[ATP 安全附件](atp-safe-attachments.md)和[反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。
+  当您将鼠标悬停在特定日期 (数据点) 时，您可以通过 EOP 中的[ATP 安全附件](atp-safe-attachments.md)和[反恶意软件保护](anti-malware-protection.md)来查看检测到的恶意文件类型的细目。
 
   ![ATP 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
 
@@ -91,7 +91,7 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
   - **Date**
   - **收件人地址**
   - **发件人地址**
-  - **邮件 id**：在邮件头的**邮件 id**标头字段中可用，并且应是唯一的。 示例值为 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` （请注意尖括号）。
+  - **邮件 id**：在邮件头的**邮件 id**标头字段中可用，并且应是唯一的。  (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。
   - **File**
 
   如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
@@ -155,7 +155,7 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
   - **恶意可执行附件**
   - **其他**
 
-  当您将鼠标指针悬停在特定的某一天（数据点）时，您可以看到由 EOP 中的[ATP 安全附件](atp-safe-attachments.md)和[反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。
+  当您将鼠标悬停在特定日期 (数据点) 时，您可以通过 EOP 中的[ATP 安全附件](atp-safe-attachments.md)和[反恶意软件保护](anti-malware-protection.md)来查看检测到的恶意文件类型的细目。
 
   ![ATP 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
 
@@ -199,7 +199,7 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-**威胁防护状态**报告是一个视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及[Exchange Online protection](exchange-online-protection-overview.md) （EOP）和 Office 365 ATP （）和 Office ATP 结合在一起。 有关详细信息，请参阅[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
+**威胁防护状态**报告是一个单一视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及[Exchange ONLINE protection](exchange-online-protection-overview.md) (EOP) 和 Office 365 ATP 进行了阻止。 有关详细信息，请参阅[威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)。
 
 ## <a name="url-threat-protection-report"></a>URL 威胁防护报告
 
@@ -218,16 +218,16 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 
 - **URL 单击 "保护操作**"：显示组织中的用户单击的 url 的数量以及单击的结果：
 
-  - **阻止**
+  - **阻止 (阻止**用户导航到 URL) 
   - **阻止并单击**
   - **在扫描过程中单击**
 
-  单击指示用户已通过阻止页面单击到恶意网站（管理员可以禁用 "在安全链接策略中单击"）。
+  单击指示用户已通过阻止页面单击了恶意网站， (管理员可以禁用 "安全链接策略") 中的 "单击"。
 
   如果单击 "**筛选器**"，则可以使用以下筛选器修改报表：
 
   - **开始日期**和**结束日期**
-  - 可用的单击保护操作，以及**允许**查看所有 URL 单击的信息的值（不只是阻止单击）。
+  - 可用的单击保护操作加上 (**允许**用户导航到 URL) 的值。
 
   ![URL 单击 URL 威胁防护报告中的 "保护操作" 视图](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
@@ -254,7 +254,7 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 - **单击 "时间"**
 - **用户**
 - **URL**
-- **Action**
+- **操作**
 - **App**
 
 如果单击 "详细信息表" 视图中的 "**筛选器**"，则可以按与报表视图中相同的条件进行筛选，也可以按逗号分隔的**域**或**收件人**进行筛选。
@@ -267,12 +267,12 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 
 |报告|主题|
 |---|---|
-|**资源管理器**（atp 计划2）或**实时检测**（atp 计划1）|[威胁资源管理器（和实时检测）](threat-explorer.md)|
+|**资源管理器** (atp plan 2) 或 (ATP plan 1) 的**实时检测**|[威胁资源管理器（和实时检测）](threat-explorer.md)|
 |**电子邮件安全报告**，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。|[查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)|
 |**邮件流报告**，例如转发报告、邮件流状态报告和主要发件人和收件人报告。|[查看安全 & 合规性中心中的邮件流报告](view-mail-flow-reports.md)|
-|**ATP 安全链接的 URL 跟踪**（仅限 PowerShell）。 此 cmdlet 的输出显示在过去七天内 ATP 安全链接操作的结果。|[UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP 和 ATP 的邮件流量结果**（仅限 PowerShell）。 此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
-|**EOP 和 ATP 检测的邮件详细信息报告**（仅限 PowerShell）。 此 cmdlet 的输出包含有关恶意文件或 Url、网络钓鱼企图、模拟以及电子邮件或文件中的其他潜在威胁的详细信息。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|**ATP 安全链接的 URL 跟踪**仅 (PowerShell) 。 此 cmdlet 的输出显示在过去七天内 ATP 安全链接操作的结果。|[UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|仅) **的 EOP 和 ATP (PowerShell 的邮件流量结果**。 此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|仅 (PowerShell) 中**的 EOP 和 ATP 检测的邮件详细信息报告**。 此 cmdlet 的输出包含有关恶意文件或 Url、网络钓鱼企图、模拟以及电子邮件或文件中的其他潜在威胁的详细信息。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告所需的权限是什么？
 
@@ -281,11 +281,11 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 - 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
 
   - 组织管理
-  - 安全管理员（可在 Azure Active Directory 管理中心中分配（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ））
-  - 安全操作员（可在 Azure Active Directory 管理中心中分配（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ））
+  - 安全管理员 (可以在 Azure Active Directory 管理中心 (中分配此项 [https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3
+  -  (可以在 Azure Active Directory 管理中心中分配安全操作员 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心（）或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)）：
+- 对于 Exchange Online，必须在 Exchange 管理中心 () 或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) (请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) ：
 
   - 组织管理
   - 仅限查看组织管理
@@ -306,4 +306,4 @@ Office 365 高级威胁防护（ATP）组织（例如，Microsoft 365 E5 订阅�
 
 [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
   
-[角色权限（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[Azure Active Directory (角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

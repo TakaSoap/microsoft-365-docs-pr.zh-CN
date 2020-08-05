@@ -20,12 +20,13 @@ search.appverid:
 - MET150
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
-ms.openlocfilehash: c63e30aa8db9fc4a3ddb6ea394e01db635a1bc23
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.date: 7/28/2020
+ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536856"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552442"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
@@ -64,12 +65,9 @@ ms.locfileid: "46536856"
 
 - **在英国，请拨打 0800 032 6417。**
 
-### <a name="phone-numbers-for-other-countries"></a>其他国家/地区的电话号码
-
 如果上面未列出适合你的支持电话号码，请使用下面的下拉菜单，查找你所在的国家或地区的号码。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 

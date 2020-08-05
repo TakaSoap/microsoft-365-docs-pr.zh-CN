@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 了解如何验证你的学校对 Microsoft 365 教育版教育版定价的资格。
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204996"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560699"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>验证 Microsoft 365 教育版订阅的学术资格
 
@@ -44,7 +45,7 @@ ms.locfileid: "45204996"
 
 ## <a name="verify-your-schools-academic-eligibility"></a>验证你的学校的学术资格
 
-在大多数情况下，当你注册免费试用版并完成资格验证向导以提供你的学校的域时，你将收到即时审批或拒绝你的学校的资格。 在某些情况下，我们需要详细信息才能完成手动资格评审。 此评审最长可能需要10个工作日内。 在我们查看你的学校的资格信息后，我们会发送一封电子邮件，通知你学校的状态。
+在大多数情况下，当你注册免费试用版并完成资格验证向导以提供你的学校的域时，你将收到即时审批或拒绝你的学校的资格。 在某些情况下，我们需要更多的信息来完成手动资格审查，并将向您提供调查表以完成。 此评审最长可能需要10个工作日内。 在我们查看你的学校的资格信息后，我们会发送一封电子邮件，通知你学校的状态。
 
 您可以在进入域之前关闭学术验证向导，并立即开始使用试用订阅。 但是，在完成验证过程之前，你不符合学术价格。 您必须在免费试用结束之前完成此过程，才能转换为付费订阅并继续使用它。 这也适用于转换为免费 A1 订阅的情况。
 
@@ -98,9 +99,9 @@ ms.locfileid: "45204996"
 
 ## <a name="related-content"></a>相关内容
 
-[适用于 IT 管理员的 Microsoft 365 教育文档](https://docs.microsoft.com/education/itadmins)（文章链接） \
-[Microsoft 教育版团队](https://microsoft.com/education/products/teams/default.aspx)（产品页面） \
-[了解 Microsoft 365 for business 中的订阅和许可证](../licenses/subscriptions-and-licenses.md)（文章） \
-[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[购买或删除订阅许可证](../licenses/buy-licenses.md)（文章） \
-[将用户移动到其他订阅](move-users-different-subscription.md)（文章）
+[适用于 IT 管理员的 Microsoft 365 教育文档](https://docs.microsoft.com/education/itadmins) (文章链接) \
+[Microsoft 教育版团队](https://microsoft.com/education/products/teams/default.aspx) (产品页面) \
+[了解 Microsoft 365 for business (文章中的订阅和许可证](../licenses/subscriptions-and-licenses.md)) \
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (文章) \
+ (文章) \ 中[购买或删除订阅许可证](../licenses/buy-licenses.md)
+[将用户移动到其他订阅](move-users-different-subscription.md) (文章) 

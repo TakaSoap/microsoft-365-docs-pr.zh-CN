@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011919"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552682"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>阶段 3：Windows 10 企业版
 
@@ -41,7 +41,7 @@ Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更
 
 | 部署方案 | 何时使用 |
 |:--- |:--- |
-| [使用 Microsoft 终结点配置管理器作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版，并且您的计算机当前是使用<a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">配置管理器（当前分支）</a>管理的，请选择此选项。 |
+| [使用 Microsoft 终结点配置管理器作为就地升级](windows10-deploy-inplaceupgrade.md) | 如果您需要将 Windows 7 或 Windows 8.1 计算机升级到<a href="https://aka.ms/windows-10-release-information" target="_blank">当前版本</a>的 Windows 10 企业版，并且您的计算机当前是使用<a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">Configuration Manager (当前分支) </a>管理的，请选择此选项。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果要设置 Windows 10 企业版、版本1703或更高版本预安装的新 Windows 计算机，请选择此选项。 最终用户将使用所需的配置来启动安装程序，方法是输入其工作或学校帐户凭据。 |
 
 如果这些部署方案不能满足您组织的需求，您可以了解其他方案并了解每个方案在[Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">计划 Windows 10 部署</a>。
@@ -56,7 +56,7 @@ Microsoft 365 企业版包括 Windows 10 企业版，为您提供用于执行更
 ## <a name="additional-services-and-features"></a>其他服务和功能
 作为 Windows 10 企业版部署的一部分，您可以添加这些额外的服务和功能。
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>桌面分析
 
 Windows 使用诊断数据提供丰富的可操作信息，以帮助您深入了解操作效率以及环境中 Windows 10 设备的运行状况。
 
@@ -64,7 +64,7 @@ Windows 使用诊断数据提供丰富的可操作信息，以帮助您深入了
 * 更新合规性-更新合规性面向希望获取其所有 Windows 10 设备的整体视图的 IT 管理员，而无需任何其他基础结构要求。
 * 设备运行状况-你可以使用设备运行状况主动检测并修正最终用户影响的问题。
 
-有关详细信息，请参阅[Windows Analytics 概述](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)。
+有关详细信息，请参阅[桌面 Analytics 概述](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
 
 ### <a name="windows-security"></a>Windows 安全
 

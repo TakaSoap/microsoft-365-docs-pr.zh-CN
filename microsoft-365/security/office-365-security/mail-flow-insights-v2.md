@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心（包括见解、报告和小部件）中的邮件流仪表板。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: e3139fa6a139c7fa159c2e5e5daa3879322f4bf0
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588012"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552670"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -57,7 +57,7 @@ ms.locfileid: "44588012"
 
 - Security & 合规中心中的**邮件流管理员角色**的成员。 如果此角色被明确分配给不是全局管理员或 Exchange 管理员角色成员的用户：
 
-  - 用户必须直接在中直接登录到安全 & 合规性中心 [https://protection.office.com](https://protection.office.com) 。
+  - 用户必须直接在中直接登录到安全 & 合规性中心 <https://protection.office.com> 。
 
   - 用户将只具有对邮件流仪表板的只读权限。
 

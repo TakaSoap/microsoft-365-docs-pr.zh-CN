@@ -25,24 +25,24 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399988"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560337"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任何域注册机构设置 Microsoft 365
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-先检查 "[设置域（特定于主机的说明）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) "，然后查看是否有关于注册器的说明。 
+检查[设置您的域 (特定主机的说明) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)先查看是否有注册注册程序的说明。 
   
 请按照以下说明在 Microsoft 365 中添加和设置你的域，以便你的服务（如电子邮件和 Skype for Business Online）将使用你自己的域名。 为此，您将验证您的域，然后将您的域的名称服务器更改为 Microsoft 365，以便可以为您设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
   
 - 你拥有自己的域，并希望将其设置为使用 Microsoft 365。
     
-- 你希望 Microsoft 365 为你管理 DNS 记录。 （如果愿意，您可以[管理自己的 DNS 记录](../setup/add-domain.md)。）
+- 你希望 Microsoft 365 为你管理 DNS 记录。  (如果您愿意，您可以[管理自己的 DNS 记录](../setup/add-domain.md)。 ) 
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
 <a name="BKMK_verify"> </a>
@@ -108,7 +108,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 <a name="BKMK_nameservers"> </a>
 
-当您转到 Microsoft 365 中的域设置向导的最后一步时，您有一个剩余的任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，您可以在您的域注册机构中更改域的名称服务器名称（或 NS）记录，以指向 Microsoft 365 主要和辅助名称服务器。 然后，由于 Microsoft 365 托管你的 DNS，将自动为你设置服务所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
+当您转到 Microsoft 365 中的域设置向导的最后一步时，您有一个剩余的任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，您可以更改域的 nameserver (或域注册机构中的 NS) 记录，以指向 Microsoft 365 主要和辅助名称服务器。 然后，由于 Microsoft 365 托管你的 DNS，将自动为你设置服务所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
 
 ::: moniker range="o365-worldwide"
   
@@ -162,15 +162,14 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
-3. 在" 域"页面上选择域。
+2. 在 "**域**" 页上，选择域，然后选择 " **DNS 记录**"。
 
-4. 在 " **DNS 设置**" 下，选择 "**自定义记录**"，然后选择 "**新建自定义记录**"。
+3. 在 " **DNS 设置**" 下，选择 "**自定义记录**"，然后选择 "**新建自定义记录**"。
 
-5. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
+4. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
 
-6. 选择“保存”****。
+5. 选择“**保存**”。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
   
-

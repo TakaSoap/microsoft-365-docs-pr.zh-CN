@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '按照此检查表操作，从 Microsoft 365 中删除员工并保护数据。 '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844854"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560383"
 ---
-# <a name="remove-a-former-employee"></a>删除前员工
+# <a name="remove-or-delete-a-former-employee"></a>删除或删除以前的员工
 
 ::: moniker range="o365-21vianet"
 
@@ -57,9 +57,9 @@ ms.locfileid: "44844854"
 
 2. 选择用户名称旁边的框，然后选择 "**重置密码**"。
 
-3. 输入新密码，然后选择 "**重置**"。 （不要将其发送给它们。）
+3. 输入新密码，然后选择 "**重置**"。  (不将其发送给他们。 ) 
     
-4. 选择要转到其属性窗格的用户的名称，然后在 " **OneDrive** " 选项卡上，选择 "**启动注销**"。
+4. 选择要转到其属性窗格的用户的名称，然后在 "**帐户**" 选项卡上，选择 "**启动注销**"。
 
 ::: moniker-end
 
@@ -69,9 +69,9 @@ ms.locfileid: "44844854"
 
 2. 选择该用户，然后选择 "**重置密码**"。
 
-3. 输入新密码，然后选择 "**重置**"。 （不要将其发送给它们。）
+3. 输入新密码，然后选择 "**重置**"。  (不将其发送给他们。 ) 
 
-4. 再次选择该用户，展开 " **OneDrive 设置**"，然后选择 "**启动**" "**注销**"。
+4. 选择要转到其属性窗格的用户的名称，然后在 "**帐户**" 选项卡上，选择 "**启动注销**"。
 
 ::: moniker-end
 
@@ -81,14 +81,17 @@ ms.locfileid: "44844854"
 
 2. 选择该用户，然后选择 "**重置密码**"。
 
-3. 输入新密码，然后选择 "**重置**"。 （不要将其发送给它们。）
+3. 输入新密码，然后选择 "**重置**"。  (不将其发送给他们。 ) 
 
-4. 再次选择该用户，展开 " **OneDrive 设置**"，然后选择 "**启动**" "**注销**"。
+4. 选择要转到其属性窗格的用户的名称，然后在 "**帐户**" 选项卡上，选择 "**启动注销**"。
 
 ::: moniker-end
 
+> [!NOTE]
+> 您必须是全局管理员才能启动注销。
+
     
-在一个小时内，或者在它们离开当前的 Microsoft 365 页面时，系统会提示他们重新登录。 （Access 令牌适用于一个小时，因此时间线取决于该令牌所剩的时间，以及它们是否从当前网页中移出。）
+在一个小时内，或者在它们离开当前的 Microsoft 365 页面时，系统会提示他们重新登录。  (访问令牌适用于一个小时，因此时间线取决于该令牌所剩的时间，以及它们是否在当前网页中导航。 ) 
   
  **警告** ：如果用户是在 Outlook 网页版中，只需在其邮箱中单击，但可能不会立即退出。 一旦选择了不同的磁贴（如 OneDrive）或刷新其浏览器，就会启动注销。 
   
@@ -217,7 +220,8 @@ ms.locfileid: "44844854"
     
 6. 选择“**保存**”。 
     
-    **提示** ：请确保从本地 BlackBerry 企业服务删除或禁用用户。还应禁用该用户的所有 BlackBerry 设备。有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
+   > [!TIP]
+   > 请确保从本地 Blackberry 企业服务中删除或禁用用户。 还应禁用该用户的所有 BlackBerry 设备。 有关如何禁用用户的具体步骤，可参阅 BlackBerry(R) 商务云服务管理指南。 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>阻止以前的员工对 Microsoft 365 数据的访问权限
 <a name="bkmk_block"> </a>
@@ -275,7 +279,7 @@ ms.locfileid: "44844854"
 
 因此，在有人离开你的组织后，你不会继续支付许可证，你需要删除其 Microsoft 365 许可证，然后将其从订阅中删除。 如果选择不从订阅中删除该许可证，可将其分配给其他用户。
   
-删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30天后，用户的所有数据（存储在 SharePoint Online 上的文档除外）将从 Microsoft 365 中永久删除，并且无法恢复。 
+删除许可证后，该用户的所有数据将保留 30 天。 可[访问](get-access-to-and-back-up-a-former-user-s-data.md)该数据，或在用户返回时[还原](restore-user.md)该帐户。 30天后，除存储在 SharePoint Online 上的文档以外的所有用户数据 () 将从 Microsoft 365 中永久删除，并且无法恢复。 
 
 ::: moniker range="o365-worldwide"
 
@@ -283,7 +287,7 @@ ms.locfileid: "44844854"
 
 2. 选择要阻止的员工的名称，然后选择 "**许可证和应用**" 选项卡。
 
-4. 清除要删除的许可证对应的复选框，然后选择 "**保存更改**"。
+4. 清除要删除的许可证 (s) 的复选框，然后选择 "**保存更改**"。
 
 ::: moniker-end
 
@@ -293,7 +297,7 @@ ms.locfileid: "44844854"
 
 2. 选择要阻止的员工，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
-3. 在 "**产品许可证**" 页上，关闭要删除的许可证，然后选择 "**保存**"。
+3. 在 "**产品许可证**" 页上，关闭要删除的许可证 (s) ，然后选择 "**保存**"。
 
 ::: moniker-end
 
@@ -303,7 +307,7 @@ ms.locfileid: "44844854"
 
 2. 选择要阻止的员工，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
-3. 在 "**产品许可证**" 页上，关闭要删除的许可证，然后选择 "**保存**"。
+3. 在 "**产品许可证**" 页上，关闭要删除的许可证 (s) ，然后选择 "**保存**"。
 
 ::: moniker-end
 
@@ -343,6 +347,10 @@ ms.locfileid: "44844854"
 从 Office 365 删除用户许可证时，与该用户相关联的 PSTN 呼叫号码将被释放。可将其分配给其他用户。
   
 如果用户属于队列组，则他不再是呼叫队列代理的可行目标。因此，我们还建议将该用户从与呼叫队列相关联的组中删除。 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>设置到组织中的人员的呼叫转接
+
+如果需要为已终止的员工的电话号码设置呼叫转移，则呼叫策略下的呼叫转接设置可以设置转发，在传入呼叫可以转发给其他用户或同时拨打其他用户。 有关详细信息，请参阅[Microsoft 团队中的呼叫策略](https://docs.microsoft.com/microsoftteams/teams-calling-policy)。
   
 ## <a name="delete-a-former-employees-user-account"></a>删除以前员工的用户帐户
 <a name="bkmk_delete"> </a>

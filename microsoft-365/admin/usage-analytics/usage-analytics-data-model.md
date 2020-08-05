@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API，并提供各种 Microsoft 365 服务的每月使用趋势。  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695087"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560855"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用率分析表的数据
 
-Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 处于预览阶段，可在中进行访问 `https://reports.office.com/pbi/v1.0/\<tenantid\>` （将替换为 \<tenant id\> 租户 GUID）。 
+Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 处于预览阶段，可通过 `https://reports.office.com/pbi/v1.0/\<tenantid\>` (将替换 \<tenant id\> 为租户 GUID) 。 
   
 > [!NOTE]
 > 有关详细信息，请参阅[在 Microsoft Graph 中使用 microsoft 365 使用率报告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 
@@ -51,7 +51,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |租户 SharePoint Online 使用情况  <br/> |包含有关 SharePoint 网站（包括团队网站或组网站）的数据，如网站总数、网站上的文档数、各活动类型的文件数和已用存储。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
 |租户 OneDrive for Business 使用情况  <br/> |包含有关 OneDrive 帐户的数据，如帐户数、跨 OneDrive 的文档数、已用存储、各活动类型的文件数。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
 |租户 Microsoft 365 组使用情况  <br/> |包含有关 Microsoft 365 组用途（包括邮箱、SharePoint 和 Yammer）的数据。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
-|租户 Office 激活  <br/> |包含有关 Office 订阅激活次数、每个设备的激活计数（Android/iOS/Mac/电脑）、按服务计划激活的数据（例如，Microsoft 365 Apps for enterprise、Visio、Project）的数据。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
+|租户 Office 激活  <br/> |包含有关 Office 订阅激活数、每个设备的激活计数 (Android/iOS/Mac/PC) 、按服务计划激活的数据（例如，Microsoft 365 Apps for enterprise、Visio、Project）的数据。  <br/> |包含滚动的12个月内的第几个月的状态数据，包括当前部分月份。  <br/> |
 |用户状态  <br/> |包含有关用户的元数据，包括用户显示名称、分配的产品、位置、部门、职务、公司。 此数据有关在刚刚结束的一个月内分配到许可证的用户。 每个用户都由用户 ID 唯一表示。  <br/> |此数据有关在刚刚结束的一个月内分配到许可证的用户。  <br/> |
 |用户活动  <br/> |包含有关授权用户执行的活动的每用户级别的信息。  <br/> 有关在此数据表中返回的产品中的活动的信息，请参阅[活动用户定义](active-user-in-usage-reports.md)。  <br/> |此数据有关刚刚结束的一个月内在任何服务中执行活动的用户。  <br/> |
    
@@ -63,7 +63,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
   
 |**列名称**|**列说明**|
 |:-----|:-----|
-|UserId  <br/> |唯一的用户 ID，它代表用户并允许与数据集中的其他数据表进行联接。  <br/> |
+|UserID  <br/> |唯一的用户 ID，它代表用户并允许与数据集中的其他数据表进行联接。  <br/> |
 |Timeframe  <br/> |月份值，此表包含该月份的数据。  <br/> |
 |UPN  <br/> |用户主体名称，用于唯一标识用户，使其能够与其他外部数据源联接。  <br/> |
 |DisplayName  <br/> |用户的显示名称。  <br/> |
@@ -107,25 +107,25 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |EXO_MeetingSent  <br/> |已发送的会议数。  <br/> |
 |ODB_FileViewedModified  <br/> |此用户在任何 OneDrive for Business 上与其进行了交互（如创建、更新、删除、查看或下载）的文件数。  <br/> |
 |ODB_FileSynched  <br/> |此用户在任何 OneDrive for Business 上同步的文件数。  <br/> |
-|ODB_FileSharedInternally  <br/> |此用户从任何 OneDrive for Business 或组中的用户（可能包含外部用户）内部共享的文件数。  <br/> |
+|ODB_FileSharedInternally  <br/> |此用户从任何 OneDrive for Business 在内部共享的文件数，或与可能包括外部用户) 的 (组中的用户共享的文件数。  <br/> |
 |ODB_FileSharedExternally  <br/> |此用户从任何 OneDrive for Business 进行外部共享的文件数。  <br/> |
 |ODB_AccessByOwner  <br/> |用户与之交互且位于其自己的 OneDrive for Business 上的文件数。  <br/> |
 |ODB_AccessOthers  <br/> |用户与之交互且位于其他用户的 OneDrive for Business 上的文件数。  <br/> |
 |SPO_GroupFileViewedModified  <br/> |此用户在任何组网站上进行交互的文件数。  <br/> |
 |SPO_GroupFileSynched  <br/> |此用户在任何组网站上进行同步的文件数。  <br/> |
-|SPO_GroupFileSharedInternally  <br/> |与组织中的用户或组中的用户共享的文件的计数（可能包含外部用户）。  <br/> |
+|SPO_GroupFileSharedInternally  <br/> |与组织中的用户或 (组中的用户共享的文件的计数，这些用户可能包括外部用户) 。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |此用户从任何组网站进行外部共享的文件数。  <br/> |
 |SPO_GroupAccessByOwner  <br/> |用户与之交互且位于该用户所拥有的组网站上的文件数。  <br/> |
 |SPO_GroupAccessByOthers  <br/> |用户与之交互且位于其他用户所拥有的组网站上的文件数。  <br/> |
 |SPO_OtherFileViewedModified  <br/> |此用户在任何其他网站上进行交互的文件数。  <br/> |
 |SPO_OtherFileSynched  <br/> |此用户从任何其他网站同步的文件数。  <br/> |
-|SPO_OtherFileSharedInternally  <br/> |此用户从任何其他网站或组中的用户（可能包含外部用户）内部共享的文件数。 <br/> |
+|SPO_OtherFileSharedInternally  <br/> |此用户从任何其他网站内部共享的文件数，或包含外部用户的组 (中的用户) 。 <br/> |
 |SPO_OtherFileSharedExternally  <br/> |此用户从其他任何网站进行外部共享的文件数。  <br/> |
 |SPO_OtherAccessedByOwner  <br/> |用户与之交互且驻留在其拥有的其他网站上的网站数。  <br/> |
 |SPO_OtherAccessedByOthers  <br/> |用户与之交互且位于其他用户所拥有的其他网站上的网站数。  <br/> |
 |SPO_TeamFileViewedModified  <br/> |与此用户在任何团队网站上进行交互的文件数。  <br/> |
 |SPO_TeamFileSynched  <br/> |此用户从任何团队网站进行同步的文件数。  <br/> |
-|SPO_TeamFileSharedInternally  <br/> |此用户从任何团队网站或组中的用户（可能包含外部用户）内部共享的文件数。  <br/> |
+|SPO_TeamFileSharedInternally  <br/> |此用户从任何团队网站内部共享的文件数，或与可能包括外部用户) 的 (组中的用户共享的文件数。  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |此用户从任何团队网站进行外部共享的文件数。  <br/> |
 |SPO_TeamAccessByOwner  <br/> |用户与之交互且位于该用户所拥有的团队网站上的文件数。  <br/> |
 |SPO_TeamAccessByOthers  <br/> |用户与之交互且位于其他用户所拥有的团队网站上的文件数。  <br/> |
@@ -140,6 +140,9 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |SFB_P2PSummary  <br/> |此用户参与的对等会话数。  <br/> |
 |SFB_ConfOrgSummary  <br/> |此用户组织的会议会话数。  <br/> |
 |SFB_ConfPartSummary  <br/> |此用户参与的会议会话数。  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction 表示用户被视为处于活动状态，但其值为0的聊天消息、1:1 呼叫、频道消息、会议总数和组织的会议。
    
 ### <a name="data-table---tenant-product-usage"></a>数据表 - 租户产品使用情况
 
@@ -244,7 +247,7 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |**列名称**|**列说明**|
 |:-----|:-----|
 |时间  <br/> |月份值。 对于过去 12 个月（包括当月），每个产品每月对应一行。  <br/> |
-|GroupType  <br/> |组的类型（private/public/any）。  <br/> |
+|GroupType  <br/> |Group (private/public/any) 的类型。  <br/> |
 |TotalGroups  <br/> |每个组类型中的组数。  <br/> |
 |ActiveGroups  <br/> |活动组的数量。  <br/> |
 |MBX_TotalGroups  <br/> |邮箱组的数量。  <br/> |
@@ -256,12 +259,12 @@ Microsoft 365 使用情况分析连接到公开多维数据模型的 API。 Api 
 |SPO_ActiveGroups  <br/> |活动 SharePoint 组的数量。  <br/> |
 |SPO_FileAccessedActiveGroups  <br/> |具有文件访问活动的 SharePoint 组的数量。  <br/> |
 |SPO_FileSyncedActiveGroups  <br/> |包含文件同步活动的 SharePoint 组的数量。  <br/> |
-|SPO_FileSharedInternallyActiveGroups  <br/> |包含内部共享活动或与组（可能包含外部用户）的 SharePoint 组的数量。  <br/> |
+|SPO_FileSharedInternallyActiveGroups  <br/> |内部具有共享活动的 SharePoint 组的数量，或包含) 外部用户的组 (。  <br/> |
 |SPO_FileSharedExternallyActiveGroups  <br/> |共享外部活动的 SharePoint 组的数量。  <br/> |
 |SPO_TotalActivities  <br/> |SharePoint 活动的数量。  <br/> |
 |SPO_FileAccessedActivities  <br/> |SharePoint 文件访问的活动的数量。  <br/> |
 |SPO_FileSyncedActivities  <br/> |SharePoint 文件同步活动的数量。  <br/> |
-|SPO_FileSharedInternallyActivities  <br/> |内部或与组（可能包含外部成员）的 SharePoint 文件共享活动的数量。  <br/> |
+|SPO_FileSharedInternallyActivities  <br/> |内部的 SharePoint 文件共享活动的数量，或与可能包含外部成员) 的组 (。  <br/> |
 |SPO_FileSharedExternallyActivities  <br/> |SharePoint 文件共享外部活动的数量。  <br/> |
 |SPO_TotalFiles  <br/> |SharePoint 文件数。  <br/> |
 |SPO_ActiveFiles  <br/> |活动 SharePoint 文件的数量。  <br/> |

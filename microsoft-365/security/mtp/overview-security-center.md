@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f7357c204105772ef1780ef94f211e9d711ec735
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516907"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560879"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
@@ -29,7 +29,9 @@ ms.locfileid: "43516907"
 
 新的 Microsoft 365 安全中心和[Microsoft 365 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)是专门为满足安全团队和合规性团队的需求而设计的专用工作区。 这些解决方案集成在 Microsoft 365 服务中，并提供可操作的见解，以帮助减少风险并保护您的数字空间。
 
-请访问 Microsoft 365 安全中心（ [https://security.microsoft.com](https://security.microsoft.com)网址为）。 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BmvV]
+
+请访问 Microsoft 365 安全中心（网址为） [https://security.microsoft.com](https://security.microsoft.com) 。 
 
 > [!NOTE]
 > 必须在 Azure Active Directory 中向您分配适当的角色，如全局管理员、安全管理员、安全操作员或安全阅读者，才能访问 Microsoft 365 安全中心。
@@ -50,7 +52,7 @@ Microsoft 365 安全中心包括：
 * **报告**-获取更好地保护用户、设备、应用程序等所需的详细信息和信息。
 * **安全功能分数** - 通过 Microsoft 安全功能分数改善整体安全状态。 此页面提供了已启用的不同安全特性和功能的汇总摘要，并提供了针对要改进的区域的建议。
 * **高级搜寻**-主动搜索 Microsoft 365 组织中的恶意软件、可疑文件和活动。
-* **分类** - 通过添加标签来对文档、电子邮件、文档、网站等进行分类，以防止数据丢失。 当应用标签（自动或用户）时，内容或网站将根据您选择的设置受到保护。 例如，可以创建标签，用于加密文件、添加内容标记和控制用户对特定网站的访问权限。
+* **分类** - 通过添加标签来对文档、电子邮件、文档、网站等进行分类，以防止数据丢失。 在 (自动或由用户) 应用标签时，将根据您选择的设置来保护内容或网站。 例如，可以创建标签，用于加密文件、添加内容标记和控制用户对特定网站的访问权限。
 * **策略** - 设置策略来管理设备、防范威胁，并接收有关组织中各种活动的警报。
 * **权限** - 管理组织中有权访问 Microsoft 365 安全中心以查看内容和执行任务的人员。 还可以在 Azure AD 门户中分配 Microsoft 365 权限。
 
