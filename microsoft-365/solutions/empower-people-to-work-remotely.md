@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 76ffc861465508486abebfcd13a84acb2b0379c4
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527442"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560915"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -71,7 +71,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 有关远程工作者的安全性和合规性标准，请参阅 [部署远程工作者的安全性和合规性](empower-people-to-work-remotely-security-compliance.md)
 
-<a name="poster"></a>有关此方案的 2 页摘要，请参阅[“为远程工作者提供强大功能”的海报](../downloads/empower-remote-workers.pdf)。
+<a name="poster"></a>有关此解决方案的两页摘要，请参阅[“为远程工作者助力”文章](../downloads/empower-remote-workers.pdf)。
 
 [![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200024"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560507"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -89,9 +89,15 @@ ms.locfileid: "45200024"
 
 附加标签设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)中使用。
 
-使用 *LocaleSettings* 参数来进行跨国部署，以便用户可查看使用本地语言的标签名称和工具提示。 有关配置示例，请参阅下面的部分。 
+例如：
 
-使用此 cmdlet，还可为 Azure 信息保护统一标签客户端指定[“高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)”。 这些高级设置包括应用标签时设定标签颜色，应用自定义属性。 如需完整的列表，请参阅“[可用的高级标签策略设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)”。 
+- 使用 *LocaleSettings* 参数来进行跨国部署，以便用户可查看使用本地语言的标签名称和工具提示。 [下列部分](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) 有一个示例配置，用于为法语、意大利语和德语指定标签名称和工具提示文本。
+
+- 使用 *ApplyContentMarkingFooterFontName* 参数来指定你选择的指定页脚字体。 Calibri 是页眉、页脚和水印文本的默认字体。 如果你的备选字体名称对显示标签的服务或设备不可用，则该字体将回退到 Calibri。
+
+- 使用 *ApplyContentMarkingHeaderFontColor* 参数来指定特定标头的自定义颜色，这些颜色使用的是红色、绿色和蓝色（RGB）组件的十六进制三原色代码。 例如，#40e0d0 是青绿色的 RGB 十六进制值。 你可以在许多用于编辑图片的应用程序中找到这些代码。 例如，Microsoft 画图可以让你从调色板中选择自定义颜色，并将自动显示 RGB 值，因此你可以复制该颜色。
+
+对于 Azure 信息保护 "仅限统一标记客户端"，你还可以指定包括设置标签颜色，以及在应用标签时应用自定义属性的 [高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 有关完整列表，请参阅该客户端管理员指南的 “[标签 的可用高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)”。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>配置不同语言的灵敏度标签的配置示例
 
@@ -172,11 +178,22 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>附加标签策略设置在安全与合规中心 PowerShell 中可用
 
-附加标签策略设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[设置标签](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)中使用。
+附加标签策略设置可在[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的[Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) cmdlet 中使用。
 
-使用此 cmdlet，可为 Azure 信息保护统一标签客户端指定[“高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)”。 这些高级设置包括为 Outlook 设置不同的默认标签，并在 Outlook 中实现弹出消息，警告、两端对齐或阻止正在发送的电子邮件。 如需完整的列表，请参阅“[可用的高级标签设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)”。 
+你可以指定 “[高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)”，这些高级设置包括为 Outlook 设置不同的默认标签，并在 Outlook 中实现弹出消息，警告、两端对齐或阻止正在发送的电子邮件，这仅可以用于 Azure 信息保护统一标记客户端。 有关完整列表，请参阅该客户端管理员指南的 “[适用于标签策略的高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)”。
 
-此外，还可使用此 cmdlet 在标签策略中添加和删除标签。
+## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>为灵敏度标签及其策略使用 PowerShell
+
+现在，你可以使用 [安全性 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 创建和配置你在标签管理中心里看到的所有设置。 这意味着，除了将 PowerShell 用于标记管理中心里不可用的设置外，你现在还可以完全编写灵敏度标签和灵敏度标签策略的创建和维护脚本。 
+
+请参阅以下文档，获取受支持的参数和值：
+
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+
+如果你需要编写对敏感度标签或灵敏度标签策略的删除脚本，则还可使用 [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) 和 [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps)。 但是，在你删除灵敏度标签前，请务必阅读以下部分。
 
 ## <a name="removing-and-deleting-labels"></a>移除和删除标签
 

@@ -2,7 +2,7 @@
 title: 未经身份验证共享的最佳做法
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解与身份未经验证的用户共享文件和文件夹的最佳做法。
-ms.openlocfilehash: 72da93a457b91ec7a25e88a0ac2aa8e64b6fe385
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: cea60152f06e8fbd242c9641b962bc9a96fdd019
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526930"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560471"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>有关与身份未经验证用户共享文件和文件夹的最佳做法
 
@@ -46,6 +46,8 @@ ms.locfileid: "46526930"
 4. 在输入框中键入天数，然后单击“**保存**”。
 
 请注意，*任何人*链接到期后，可以使用新的“*任何人*”链接重新共享该文件或文件夹。
+
+可使用 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) 设置特定网站或 OneDrive 的“*任何人*”链接的过期时间。
 
 ## <a name="set-link-permissions"></a>设置链接权限
 

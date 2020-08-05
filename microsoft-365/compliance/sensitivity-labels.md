@@ -20,12 +20,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2943de329bd42aca64d9d3d583b7f6c354780d0d
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
+ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552694"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46564043"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -39,9 +39,12 @@ ms.locfileid: "46552694"
 
 ![Excel 功能区和状态栏上的敏感度标签](../media/Sensitivity-label-in-Excel.png)
 
-仅全局（公共）云中的租户支持敏感度标签。 目前，其他云（如[国家云](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud)）中的租户不支持敏感度标签。
+若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
-若要应用敏感度标签，用户必须使用其工作或学校帐户登录到 Office。
+> [!NOTE]
+> 对于美国政府社区（GCC 和 GCC-HC）租户，目前仅支持将敏感度标签用于 Azure 信息保护统一标记客户端和扫描程序。 
+> 
+> 有关详细信息，请参阅博客文章：[公布统一标记在 GCC 和 GCC-H 环境中的整体可用性](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215)。
 
 借助敏感度标签，你可以：
   

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: '了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。 '
-ms.openlocfilehash: a4d5f5240a6d4cca686b4809d05970b5e18b897f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399574"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560867"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -75,13 +75,17 @@ ms.locfileid: "44399574"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>防止再次使用上一次使用过的密码
 
-如果要防止用户重新使用旧密码，可在 Azure AD 中进行阻止。 请参阅[强制实施密码历史记录](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history)。
-
-此外，如果某员工曾使用移动设备访问 Microsoft 365，你可擦除该设备，确保密码不再存储且不再从此处回收。 要了解详细信息，请参阅[擦除并阻止前任员工的移动设备](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device)。
-
+如果要防止用户重新使用旧密码，可通过在 Azure AD 中强制实施密码历史记录来实现。 请参阅[创建自定义密码策略](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>将用户密码哈希从本地 Active Directory 同步到 Azure AD (Microsoft 365)
 
 本文适用于为仅限云的用户 (Azure AD) 设置过期策略。 它不适用于使用密码哈希同步、直通身份验证或本地联合身份验证（如 ADFS）的混合标识用户。
   
 要了解如何将用户密码哈希从本地 AD 同步到 Azure AD，请参阅[使用 Azure AD Connect 同步实现密码哈希同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。
+
+
+## <a name="update-password-policy"></a>更新密码策略
+
+Set-MsolPasswordPolicy cmdlet 会更新指定的域或租户的密码策略。 需要两个设置：第一个用于指示密码在必须更改之前的有效时长，第二个用于指示在用户收到第一封显示其密码即将过期的通知时将触发的密码过期日期之前的剩余天数。
+
+若要了解如何更新特定域或租户的密码策略，请参阅 [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)。

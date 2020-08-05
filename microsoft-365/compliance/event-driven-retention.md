@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391504"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560529"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -85,7 +85,7 @@ ms.locfileid: "45391504"
 ![事件驱动保留的设置工作流的关系图](../media/event-based-retention-process.png)
   
 > [!TIP]
-> 有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
+> 有关使用 SharePont 中的托管属性来自动应用保留标签并实现事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>第 1 步：创建保留期以事件为依据的标签
 

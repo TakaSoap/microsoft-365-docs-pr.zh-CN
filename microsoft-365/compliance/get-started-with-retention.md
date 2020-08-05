@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430230"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560759"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -66,7 +66,7 @@ ms.locfileid: "45430230"
 |让用户使用 Outlook 规则向电子邮件自动应用保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
 |向文档和电子邮件自动应用一组保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
 |从事件发生时开始计算保留期，比如：  <br />- 员工离开组织 <br />- 合同到期 <br />- 产品生存期结束| [从事件发生时开始计算保留期](event-driven-retention.md)|
-|管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)|
+|管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)|
 |将一个记录管理解决方案同时用于文档和电子邮件 |[Microsoft 365 中的记录管理](records-management.md) |
 |遵守 SEC 规则 17a-4|[使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |

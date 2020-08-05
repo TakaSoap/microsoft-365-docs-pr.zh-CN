@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127575"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560613"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -56,7 +56,7 @@ ms.locfileid: "45127575"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的全局管理员具有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>如何自动应用保留标签
 
@@ -189,6 +189,4 @@ ms.locfileid: "45127575"
 
 ## <a name="next-steps"></a>后续步骤
 
-请考虑将保留标签与另一种形式的自动化配合使用，[事件驱动的保留](event-driven-retention.md)。 使用此配置时，将通过你标识的事件触发保留开始。 可通过自动策略或标签策略使用事件驱动的保留。
-
-有关使用 SharePont 中的托管属性来自动应用保留标签并实施事件驱动保留的详细方案，请参阅[使用保留标签管理 SharePoint 文档的生命周期](auto-apply-retention-labels-scenario.md)。
+有关使用事件驱动的保留和 SharePoint 中带有托管属性的自动应用策略来开启保留期的示例方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。

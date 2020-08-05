@@ -1,5 +1,5 @@
 ---
-title: 使用保留标签管理存储在 SharePoint 中的产品文档的生命周期
+title: 使用保留标签管理存储在 SharePoint 中的文档的生命周期
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文介绍了如何使用保留标签管理 SharePoint 中的产品相关文档的生命周期。 此过程使用文档元数据对内容进行分类、自动应用保留标签，并配置基于事件的保留。
-ms.openlocfilehash: b3b71757d887781a12c71f2c105409827230f33c
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: 如何通过以下方法使用保留标签来管理 SharePoint 中的文档的生命周期：使用元数据对内容进行分类、自动应用标签，以及使用基于事件的保留来开始保留期。
+ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552524"
+ms.locfileid: "46560665"
 ---
-# <a name="manage-the-lifecycle-of-product-documents-stored-in-sharepoint-with-retention-labels"></a>使用保留标签管理存储在 SharePoint 中的产品文档的生命周期
+# <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留标签管理存储在 SharePoint 中的文档的生命周期
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-本文介绍如何通过使用自定应用的保留标签并配置基于事件的保留来管理存储在 SharePoint 中的产品相关文档的生命周期。
+本文介绍如何通过使用自动应用的保留标签和基于事件的保留来管理存储在 SharePoint 中的文档的生命周期。
 
 自动应用功能使用 SharePoint 元数据来进行文档分类。 本文中的示例针对产品相关文档，但相同的概念也可以用于其他方案。 例如，在石油和天然气行业，可以使用它来管理与石油平台、钻井日志或生产许可证等实物资产相关的文档的生命周期。 在金融服务行业，你可以管理银行账户、抵押或保险合同方面的文档。 在公共部门，你可以管理与施工许可证或纳税表。
 
@@ -80,10 +80,8 @@ ms.locfileid: "46552524"
 | 项目规范      | 产品停产后保留 5 年  | 删除                                       |
 | 产品协议          | 产品停产后保留 10 年 | 审阅                                       |
 | 用户手册                | 产品停产后保留 5 年  | 删除                                       |
-| 所有其他类型的文档 | 不主动保留  | 文档超过 3 年时删除<sup>\*</sup>  |
+| 所有其他类型的文档 | 不主动保留  | 文档超过 3 年时删除 <br /><br /> 如果文档在过去 3 年内未曾修改，则视为超过 3 年。 |
 |||
-
-   <sup>\*</sup> 如果文档在过去 3 年内未曾修改，则视为超过 3 年。
 
 我们使用 Microsoft 365 合规中心创建以下[保留标签](retention.md#retention-labels)：
 

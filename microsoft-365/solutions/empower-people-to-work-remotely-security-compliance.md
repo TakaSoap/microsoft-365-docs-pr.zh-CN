@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521501"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560459"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -70,7 +70,7 @@ ms.locfileid: "46521501"
 | 合规性管理器 | 使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。 | Microsoft 365 E3 或 E5 |
 | 合规性分数（预览版） | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 或 E5 |
 | 通信合规性  | 对组织中的不当邮件进行检测、捕获和执行修正操作。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
-| 内部风险管理 |  对组织中的恶意和无意活动进行检测、调查并执行相关操作。 即使员工正在使用非托管设备，Microsoft 365 也可以检测到这些类型的活动。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
+| 内部风险管理 |  对组织中的恶意和意外风险进行检测、调查并采取相关措施。 即使员工使用的是非托管设备，Microsoft 365 也可检测到这些类型的风险。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
 ||||
 
 有关详细信息，请参阅[安全团队为支持在家办公需完成的 12 大任务](../security/top-security-tasks-for-remote-work.md)。

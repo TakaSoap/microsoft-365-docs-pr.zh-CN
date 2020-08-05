@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '了解如何授予用户访问其他用户的邮箱的权限。 这将使用户拥有从其他用户的邮箱读取邮件和发送邮件的权限。 '
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780597"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560371"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>向其他用户授予邮箱权限 - 管理员帮助
 
@@ -55,7 +55,10 @@ ms.locfileid: "44780597"
   
  **权限设置后如何使用：**
   
-授予访问权限后，你可以通过几种不同的方式访问邮箱。相关帮助请参阅以下文章：[访问他人的邮箱](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+获得访问权限后，你可通过几种不同的方式访问邮箱。相关帮助请参阅[访问他人的邮箱](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)一文。
+
+> [!NOTE]
+> 只能在当前组织租户中设置权限。 无法在没有租户用户的情况下设置邮箱权限。
   
 ## <a name="send-email-from-another-users-mailbox"></a>从其他用户的邮箱发送电子邮件
 
