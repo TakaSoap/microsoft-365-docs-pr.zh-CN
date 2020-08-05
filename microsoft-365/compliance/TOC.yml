@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: 从事件发生时开始计算保留期
           href: event-driven-retention.md
-        - name: 管理 SharePoint 文档的生命周期
+        - name: 使用保留标签管理文档生命周期
           href: auto-apply-retention-labels-scenario.md
         - name: 管理数据的处置
           href: disposition.md

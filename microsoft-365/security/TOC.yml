@@ -131,6 +131,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: 处理查询结果
                   href: mtp/advanced-hunting-query-results.md
+                - name: 对查询结果执行操作
+                  href: mtp/advanced-hunting-take-action.md
                 - name: 使用共享查询
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: 在设备和电子邮件中搜寻
@@ -327,7 +329,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 使用除名门户将自己从阻止的发件人名单中删除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: 管理租户允许/阻止列表中的 URL 和文件
+                - name: 管理租户允许/阻止列表中的 URL
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: 防钓鱼保护
               href: ./office-365-security/anti-phishing-protection.md
