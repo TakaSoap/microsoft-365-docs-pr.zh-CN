@@ -1,5 +1,5 @@
 ---
-title: 未送达报告
+title: 邮件流仪表板中的未送达报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,52 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以在安全 & 合规性中心的邮件流仪表板中了解未送达报告。
-ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何在安全 & 合规性中心中使用邮件流仪表板中的 "未送达详细信息" 报告来监视未送达报告中最常遇到的错误代码 (也称为 "Ndr" 或 "退回邮件") 来自组织中的发件人的邮件。
+ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819505"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577408"
 ---
-# <a name="non-delivery-report"></a>未送达报告
+# <a name="non-delivery-report-in-the-security--compliance-center"></a>安全 & 合规中心中的未送达报告
 
-**未送达报告**将在未送达报告（也称为 "ndr" 或 "退回邮件"）中显示最遇到的错误代码，以供组织中的用户查看。 此报告旨在显示 Ndr 的详细信息，因此您可以解决问题。
+Security & 合规性中心的[邮件流仪表板](mail-flow-insights-v2.md)中的**未送达报告**显示在未送达报告中遇到的最大错误代码 (也称为 "ndr" 或 "退回邮件") 组织中的用户。 此报告显示 Ndr 的详细信息，以便您可以解决电子邮件传递问题。
 
-![安全 & 合规性中心的邮件流仪表板中的未送达报告](../../media/non-delivery-report-selected.png)
+![Security & 合规性中心的邮件流仪表板中的未送达报告小部件](../../media/mfi-non-delivery-report-widget.png)
 
-可以通过单击 "**显示数据**" 来显示所有 NDR 代码或特定代码的信息。 您还可以单击 "**查看详细信息表**" 以查看更详细的视图，如下图所示：
+## <a name="report-view-for-the-non-delivery-report"></a>未送达报告的报告视图
 
-![未送达报告中的查看详细信息表](../../media/non-delivery-report-view-details-table.png)
+单击**未送达报告**小部件将转到**未送达报告**。
 
-当您在表中选择一行以查看特定 NDR 的详细信息时，您可以使用详细信息来排除故障并执行必要的操作。
+默认情况下，显示所有错误代码的活动。 如果单击 "**显示数据**"，则可以从下拉列表中选择特定的错误代码。
 
-![在未送达报告的详细信息表中选择一行](../../media/non-delivery-report-details-table-select-row.png)
+如果将鼠标悬停在特定颜色 (在图表中特定日期) 的错误代码，您将看到错误的邮件总数。
+
+![不接受的域报告中的报告视图](../../media/mfi-non-delivery-report-overview-view.png)
+
+## <a name="details-table-view-for-the-non-delivery-report"></a>未送达报告的详细信息表格视图
+
+如果您在报告视图中单击 "**查看详细信息表**"，将显示以下信息：
+
+- **Date**
+- **未送达报告代码**
+- **Count**
+- **示例邮件**：受影响邮件的示例的邮件 id。
+
+如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
+
+若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 "**请求下载**"。
+
+当您在表中选择一行时，将显示一个包含以下信息的浮出控件：
+
+- **Date**
+- **未送达报告代码**：您可以单击链接以查找有关特定错误代码的原因和解决方案的详细信息。
+- **Count**
+- **示例邮件**：您可以单击 "**查看示例邮件**"，查看有关受影响邮件的示例的[邮件跟踪](message-trace-scc.md)结果。
+
+![在未送达报告的 "详细信息表" 视图中选择行后的详细信息浮出控件](../../media/mfi-non-delivery-report-details-flyout.png)
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

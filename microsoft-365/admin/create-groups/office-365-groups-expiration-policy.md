@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560359"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572135"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -68,17 +68,25 @@ ms.locfileid: "46560359"
 
 ![Azure Active Directory 中的组过期设置的屏幕截图](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>到期日期如何与保留策略一起使用
+## <a name="how-expiration-and-renewal-work"></a>到期时间和续订工作方式
 
-如果您在组的安全性和合规性中心中设置了保留策略，则过期策略将与保留策略无缝运行。 当组过期时，组中的 "在邮箱中的对话" 框和组网站中的文件将保留在保留策略中定义的特定天数的保留容器中。 但是，用户在过期后将看不到该组或其内容。
+过期策略的工作方式如下所示： 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>组所有者在其组过期时的学习方式和时间
+- 在到期之前的一个月内，系统将检查自创建组后或自当前续订周期开始后是否存在任何组活动。
 
-组所有者将仅通过电子邮件通知。 如果组是通过计划者、SharePoint 或任何其他应用程序创建的，则到期通知将始终通过电子邮件发送。 如果组是通过团队创建的，则组所有者将通过 "活动" 部分收到要续订的通知。 如果您的组所有者没有有效的电子邮件地址，则建议您在组中启用过期。
+- 如果检测到之前的活动，则到期日期将在该时间内根据过期策略中指定的天数进行高级。
 
-在组过期之前的30天内，组所有者 (或为没有所有者) 的组指定的电子邮件地址将收到一封电子邮件，允许他们轻松地续订组。 如果不续订，他们将在到期前15天收到另一封续订电子邮件。 如果他们仍未续订，则会在过期前一天收到一封电子邮件通知。
+- 如果未检测到之前的活动，则系统将继续监视活动直到到期日期。 如果检测到活动，系统会在此时按指定的量提升到期日期。
+
+在组过期之前的30天内，组所有者 (或为没有所有者) 的组指定的电子邮件地址将收到一封电子邮件，允许他们轻松地续订组。 如果不续订，他们将在到期前15天收到另一封续订电子邮件。 如果他们仍未续订，则会在过期前一天收到一封电子邮件通知。 更新组后 (，在新的过期日期前30天内不会再发送电子邮件提醒。 ) 
+
+将通过电子邮件通知组所有者。 如果组是通过计划者、SharePoint 或任何其他应用程序创建的，则到期通知将始终通过电子邮件发送。 如果组是通过团队创建的，则组所有者将通过 "活动" 部分收到要续订的通知。 如果您的组所有者没有有效的电子邮件地址，则建议您在组中启用过期。
 
 如果由于某种原因，所有者或管理员在过期之前没有对组进行续订，并且由于组不符合自动续订的要求而导致自动续订，则管理员仍可以在到期后的30天内还原组。 有关详细信息，请参阅：[还原已删除的 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)。
+
+## <a name="how-expiry-works-with-retention-policies"></a>到期日期与保留策略的配合程度
+
+如果您在组的安全性和合规性中心中设置了保留策略，则过期策略将与保留策略无缝运行。 当组过期时，组中的 "在邮箱中的对话" 框和组网站中的文件将保留在保留策略中定义的特定天数的保留容器中。 但是，用户在过期后将看不到该组或其内容。
 
 ## <a name="related-articles"></a>相关文章
 

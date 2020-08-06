@@ -1,5 +1,5 @@
 ---
-title: 自动转发的消息报表
+title: 自动转发的邮件洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的自动转发的邮件报告。
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635300"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577807"
 ---
-# <a name="auto-forwarded-messages-report"></a>自动转发的消息报表
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>自动转发的邮件在安全 & 合规中心中的洞察力
 
-"邮件流" 仪表板中的**自动转发的邮件**报告显示有关自动从组织转发给外部域中的收件人的邮件的信息。
+在安全 & 合规性中心的[邮件流仪表板](mail-flow-insights-v2.md)中，**自动转发的邮件**可在安全合规性中心显示有关自动从您的组织转发给外部域中的收件人的邮件的信息。
 
-![自动转发的邮件在安全 & 合规中心中的洞察力](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
-
-![安全 & 合规性中心的邮件流仪表板中的自动转发的邮件报告](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![Security & 合规中心中的自动转发的邮件小部件](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>自动转发的邮件详细信息
 
-当您单击小组件中的邮件数量时，将显示一个弹出窗口，显示自动转发的邮件状态。 您可以通过单击 "**转发报告**" 链接来查看详细信息。
+当您单击小组件中的邮件数量时，将显示一个弹出窗口，其中显示有关自动转发邮件的详细信息：
 
-!["自动转发的邮件" 的 "详细信息" 浮出控件报告在安全 & 合规性中心](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+- **通过转发方法自动转发的邮件**：
+
+  - **按邮件流规则**
+  - **按收件箱规则**
+  - **通过 SMTP 转发**
+  - 有关更多详细信息，请[转到转发报告](view-mail-flow-reports.md#forwarding-report)的链接。
+
+- **按域和用户自动转发的邮件**：
+
+  - **转发到的前5个域**
+  - **上周 (新域) **
+  - **前5个转发用户**
+  - **上周 (新用户) **
+  - 有关更多详细信息，请[转到转发修改报告](mfi-new-users-forwarding-email.md#forwarding-modifications-report)的链接。
+
+![安全 & 合规中心中的自动转发的邮件的详细信息弹出报告](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>见解
 
-根据报告数据生成两个见解：新的**转发用户**和**新的转发域**。 每个洞察力都提供了一个新的转发器或域的数量摘要，其中包含指向**新的转发报告**的链接，该报告提供了两种数据类型的更多详细信息。 **新的转发报告**还会显示新活动的日程表视图，详细信息表标识了谁开始转发和转到了哪些域。
+根据报告数据生成两个见解：
+
+- [新用户转发电子邮件](mfi-new-users-forwarding-email.md)
+- [转发的新域电子邮件](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

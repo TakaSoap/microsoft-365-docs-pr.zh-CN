@@ -1,5 +1,5 @@
 ---
-title: 顶级域邮件流状态见解
+title: 邮件流仪表板中的主要域邮件流状态洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,34 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的顶层域邮件流状态洞察力。
-ms.openlocfilehash: 22b0f8cefe8baacac682550126de55dcbf880d73
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何使用安全 & 合规中心中的邮件流仪表板中的顶级域邮件流状态洞察力来解决与其电子邮件域中的 MX 记录相关的邮件流问题。
+ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818587"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577736"
 ---
-# <a name="top-domain-mail-flow-status-insight"></a>顶级域邮件流状态见解
+# <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全 & 合规中心中的主要域邮件流状态洞察力
 
-**顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到***邮件流影响***问题的域（例如，无法接收外部电子邮件），尤其是域过期或包含不正确的 MX 记录的域。
+Security & 合规中心中的[邮件流仪表板](mail-flow-insights-v2.md)中的**顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到***邮件流影响***问题的域 (例如，无法接收外部电子邮件) ，尤其是域过期或包含不正确的 MX 记录的域。
 
-![安全 & 合规性中心的邮件流仪表板中的顶级域流状态洞察力](../../media/domain-mail-flow-status-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的顶级域流状态构件](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-当您单击真知灼见中的 "**查看详细信息**" 时，将显示一个弹出项，显示每个域的状态的详细信息。
+当您单击小部件中的 "**查看详细信息**" 时，将显示一个**域状态**弹出控件，其中显示了有关每个域的状态的更多详细信息：
 
-域的绿色复选标记表示当前的 MX 记录（当您浏览到邮件流见解仪表板时）与我们记录的值相匹配，并且在过去的两个小时内，该域已收到电子邮件。
+- **域**
+- **以前的 MX 记录**
+- **当前 MX 记录**
+- **电子邮件接收状态**
+- **域状态**：绿色复选标记表示当前的 MX 记录 (您单击小组件时，) 与我们记录的值相匹配，并且在过去的两个小时内，该域已收到电子邮件。
 
-域中的红色 x 表示 MX 记录已更改，并且在过去6个小时内没有收到此域的电子邮件。 这可能表明你的域已过期，或者 MX 记录已被错误更新。 请与你的域注册机构或 DNS 托管服务核实域是否已过期，或者域的 MX 记录是否不正确。
+  红色的 X 表示 MX 记录已更改，并且在过去6小时内没有收到任何电子邮件。 这可能表明你的域已过期，或者 MX 记录已被错误更新。 请与你的域注册机构或 DNS 托管服务核实域是否已过期，或者域的 MX 记录是否不正确。
 
-![顶级域流状态洞察力中的详细信息浮出控件](../../media/domain-mail-flow-status-flyout.png)
+您可以单击 "**查看更多**" 查看更多域的相同信息。
+
+!["详细信息" 浮出在顶级域邮件流状态洞察力](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

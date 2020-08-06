@@ -1,5 +1,5 @@
 ---
-title: 入站和出站邮件流
+title: 邮件流仪表板中的出站和入站邮件流洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,46 +11,47 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流小组件。
-ms.openlocfilehash: a1070783f60edf2de62d78c3094e9c20e3dd26f3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流洞察力。
+ms.openlocfilehash: 347e53c51c347f12795008d39458773a94ff433f
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635192"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577365"
 ---
-# <a name="outbound-and-inbound-mail-flow"></a>入站和出站邮件流
+# <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全 & 合规中心中的出站和入站邮件流洞察力
 
-**出站和入站邮件流**小组件将**连接器报告**和以前的**TLS 概述报告**中的信息合并到一个位置。
+Security & 合规中心的[邮件流仪表板](mail-flow-insights-v2.md)中的**出站和入站邮件流**洞察力将[连接器报告](view-mail-flow-reports.md#connector-report)中的信息和以前的**TLS 概述报告**合并到一个位置。
 
-![安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流报告](../../media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+当邮件传递到组织或从组织中传递时，该小组件将显示用于连接的 TLS 加密。 当双方提供 TLS 时，使用其他电子邮件服务建立的连接将由 TLS 进行加密。 小组件提供邮件流的最后一周的快照。
 
-小组件中的信息与 Office 365 中的连接器和 TLS 邮件保护有关。 有关详细信息，请参阅以下主题：
+![Security & 合规中心的邮件流仪表板中的出站和入站邮件流小组件](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
-- [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+小组件中的信息与 Microsoft 365 中的连接器和 TLS 邮件保护有关。 有关详细信息，请参阅以下主题：
 
-- [Exchange Online 如何使用 TLS 保护 Office 365 中的电子邮件连接](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
+- [使用连接器配置邮件流](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
+- [Exchange Online 如何使用 TLS 保护电子邮件连接](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
+- [有关 Microsoft 365 中的加密的技术参考详细信息](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)
 
-## <a name="message-protected-in-transit-by-tls"></a>邮件在传输过程中受到保护（通过 TLS）
+## <a name="message-protected-in-transit-by-tls"></a>TLS 在 (传输中保护的邮件) 
 
-"**出站和入站邮件流**" 小组件显示在将邮件传递到组织或从组织发送邮件时用于连接的 TLS 加密。 当双方提供 TLS 时，使用其他电子邮件服务建立的连接将由 TLS 进行加密。 小组件提供邮件流的最后一周的快照。 单击 "**查看详细信息**" 时，**在传输过程中保护的邮件（通过 TLS）** 浮出控件将向您显示进入和离开组织的邮件的 TLS 保护。
+当您单击小部件上的 "**查看详细信息**" 时，**受 TLS 保护的邮件 (由 TLS) **浮出控件向您显示进入和离开组织的邮件的 TLS 保护。
 
-![安全 & 合规中心在传输过程中受到保护的邮件（通过 TLS）浮出控件](../../media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![在单击 "出站和入站电子邮件" 小组件上的 "查看详细信息" 之后，在传输 (由 TLS) 浮出的邮件](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-目前，TLS 1.2 是 Office 365 提供的最安全的 TLS 版本。 通常，您需要知道正在用于合规性审核的 TLS 加密。 您可能没有与源和目标电子邮件服务器的直接关系（您不拥有它们，也没有 Microsoft），因此，不需要使用很多选项来改进这些服务器所使用的 TLS 加密。
+目前，TLS 1.2 是 Microsoft 365 提供的最安全的 TLS 版本。 通常，您需要知道正在用于合规性审核的 TLS 加密。 您可能没有与源和目标电子邮件服务器的直接关系 (你不拥有它们，也不会) Microsoft。因此，Microsoft 不，因此不会有许多选项可用于改进这些服务器所使用的 TLS 加密。
 
-不过，您可以使用[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)来确保在电子邮件服务器和 Office 365 之间发送的邮件的最佳可用 TLS 保护。 在 Microsoft 365 与您自己的电子邮件服务器或属于您的合作伙伴的服务器之间流动的邮件通常比常规邮件更重要且敏感，因此您需要对这些邮件应用额外的安全和 vigilance。 您可以升级或修复自己的电子邮件服务器，以改进正在使用的 TLS 加密，或与您的合作伙伴进行相同的操作。 **连接器报告**为使用 Microsoft 365 连接器的邮件显示邮件流卷和 TLS 加密。
+不过，您可以使用[连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)来确保在电子邮件服务器和 Microsoft 365 之间发送的邮件的最佳可用 TLS 保护。 在 Microsoft 365 与您自己的电子邮件服务器或属于您的合作伙伴的服务器之间流动的邮件通常比常规邮件更重要且敏感，因此您需要对这些邮件应用额外的安全和 vigilance。
 
-## <a name="connector-report"></a>连接器报告
+您可以升级或修复自己的电子邮件服务器，以改进正在使用的 TLS 加密，或与您的合作伙伴进行相同的操作。 **连接器报告**为使用 Microsoft 365 连接器的邮件显示邮件流卷和 TLS 加密。
 
-当您从**传输（通过 TLS）** 浮出控件中保护的邮件中单击**连接器报告**链接时，报告将显示使用连接器传递到组织或从您的组织发送的邮件的相关信息。 您在自己的电子邮件服务器和 Microsoft 365 或合作伙伴的服务器和 Office 365 之间使用连接器。 每个连接器的邮件量和连接的 TLS 加密均可用。 此外，您还可以查看在 Microsoft 365 中发送或接收的邮件的数据，而不使用连接器。
+您可以单击 "**连接器报告**" 链接以转到[连接器报告](view-mail-flow-reports.md#connector-report)。 如果检测到相关的条件，**连接器报告**页上可能会提供以下见解：
 
-"**邮件流**" 视图显示过去一周内通过连接器的邮件量。 您可以更改日期范围，方法是选择 "**筛选器**" 可将范围增加到最多30天。 "**所有邮件流**" 视图通过所有连接器显示发送到组织或从组织发送的所有邮件流。 您可以在下拉菜单中按名称选择特定的连接器。
+- **入站合作伙伴连接器查看有效的 TLS 1.0 邮件流**
+- **入站 OnPremises 连接器查看有效的 TLS 1.0 邮件流**
 
-您可以从下拉视图中选择 " **tls 使用状况**" 视图，以查看通过连接器的邮件的 tls 保护细目。 与**Tls 概述报告**报告一样，此视图显示不同 TLS 版本的百分比。 对于 TLS 1.0 连接，确实需要将您的电子邮件服务器或合作伙伴的服务器升级或修复，以避免在 TLS 1.0 支持最终在 Office 365 中被弃用时出现的任何问题。 有关详细信息，请参阅[Office 365 中有关加密的技术参考详细](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)信息。
-
-Insights 指向连接器，有助于吸引你关注连接器的潜在 TLS 加密问题。 见解为：**没有任何 TLS 超过 25%** 或**tls 1.0 高于 50%**。 如果你看到这些见解，则需要调查与连接器关联的电子邮件服务器，或与合作伙伴组织联系。
+对于 TLS 1.0 连接，确实需要将您的电子邮件服务器或合作伙伴的服务器升级或修复，以避免在 Microsoft 365 中最终弃用 TLS 1.0 支持时出现的任何问题。
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

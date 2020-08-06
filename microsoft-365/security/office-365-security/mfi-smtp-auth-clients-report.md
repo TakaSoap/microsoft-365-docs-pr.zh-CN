@@ -1,5 +1,5 @@
 ---
-title: SMTP 身份验证客户端报告
+title: SMTP 身份验证客户端在邮件流仪表板中了解和报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,79 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端报告。
-ms.openlocfilehash: 90d008bf775c692431fb5b832652ceb97f9fd760
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何使用安全 & 合规性中心中的邮件流仪表板中的 SMTP 身份验证了解和报告来监视组织中的电子邮件发件人，这些发件人使用经过身份验证的 SMTP (SMTP AUTH) 发送电子邮件。
+ms.openlocfilehash: afdcf01260dd6dfcaf6b53d107e5addd007b1fb3
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818815"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577203"
 ---
-# <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报告
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP 身份验证客户端在安全 & 合规中心中了解和报告
 
-**Smtp auth 客户端**报告突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧协议（使用终结点 smtp.office365.com）仅提供基本身份验证，并且容易被受攻击帐户用来发送电子邮件。  此报告允许您检查异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
+**Smtp 身份验证客户端**在[邮件流仪表板](mail-flow-insights-v2.md)和关联的[SMTP auth 客户端](#smtp-auth-clients-report)中的洞察力报告突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧版协议 (使用终结点 smtp.office365.com) 仅提供基本身份验证，并且容易被受攻击帐户用来发送电子邮件。 通过真知灼见和报告，可以检查 SMTP 身份验证电子邮件提交是否有异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
 
-"邮件流" 仪表板中显示的小部件指示最近7天内已使用 SMTP 身份验证协议的用户或服务帐户的数量。
+该小部件指示最近7天内已使用 SMTP 身份验证协议的用户或服务帐户的数量。
 
-![SMTP 身份验证客户端在安全 & 合规性中心中的邮件流仪表板中报告](../../media/smtp-auth-clients-report-selected.png)
+![Security & 合规性中心的邮件流仪表板中的 SMTP 身份验证客户端小部件](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-单击小组件将打开一个浮出控件，该浮出控件可提供上一周的 TLS 使用情况和卷的聚合视图。
+如果单击小组件上的邮件数，则将显示**SMTP Auth 客户端**弹出。 浮出控件提供了上一周的 TLS 使用和卷的聚合视图。
 
-![SMTP Auth 客户端报告中的浮出控件](../../media/smtp-auth-clients-flyout.png)
+![单击邮件流仪表板中的 "SMTP 身份验证客户端" 小部件后的详细信息浮出控件](../../media/mfi-smtp-auth-clients-report-details.png)
 
-当您单击**SMTP Auth 客户端报告**链接时，您将看到两个主要数据透视和两个数据视图。 数据透视是**发送卷**和 TLS 的**使用情况**。 数据视图是图表和详细信息表。
+您可以单击 " **Smtp auth 客户端报告**" 链接以转到 smtp auth 客户端报告，如下一节中所述。
 
-**发送卷**视图显示在指定时间范围内使用 SMTP 身份验证发送的邮件数。 您可以通过单击 "**筛选器**" 来调整该区域。 图表按发件人域进行组织。 通过在 "**显示数据**" 下拉下拉箭头中选择域，可以查看每个域的单独数据。
+## <a name="smtp-auth-clients-report"></a>SMTP 身份验证客户端报告
 
-![在 SMTP Auth 客户端报告中发送卷](../../media/smtp-auth-clients-report-sending-volume.png)
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>SMTP Auth 客户端报告的报告视图
 
-您可以通过单击 "**查看详细**信息" 表来查看有关这些发件人及其邮件计数的详细信息。 若要返回图表，请单击 "**查看报告**"。
+默认情况下，此报告显示过去7天的数据，但数据可用于过去的90天。
 
-![SMTP Auth 客户端报告中用于发送卷的详细信息表](../../media/smtp-auth-clients-report-details-sending-volume.png)
+"概述" 部分包含以下图表：
 
-由于即将弃用的 TLS 1.0 和 TLS 1.1 在 Office 365 中， **Tls 使用**透视非常重要。 如果您的旧设备和应用程序仅能够将 TLS 1.0 与 SMTP Auth 一起使用，则这些设备和应用程序将无法发送电子邮件。此数据透视允许你识别仍在使用旧版 TLS 的用户和系统帐户并对其执行操作。
+- **数据查看依据：发送卷**：默认情况下，图表显示从所有域发送的 SMTP 身份验证客户端邮件的数量 (显示其数据：默认情况下，**所有发件人域**都处于选中状态) 。 您可以通过单击下拉列表中的 "**显示数据**" 并选择 "发件人域"，将结果筛选为特定发件人域。 如果将特定数据点悬停 (天) ，则显示邮件数。
 
-![SMTP Auth 客户端报告中的 TLS 用法](../../media/smtp-auth-clients-report-tls-usage.png)
+  ![在 SMTP Auth 客户端的 "安全 & 合规中心" 报告中发送卷视图](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-可以通过单击 "**查看详细**信息" 表，查看有关这些发件人、使用 SMTP 身份验证的 TLS 版本以及邮件数的详细信息。 若要返回图表，请单击 "**查看报告**"。
+- **查看数据的依据： TLS 用法**：图表显示选定时间段内所有 SMTP 身份验证客户端邮件的 TLS 使用百分比。 此图允许你识别仍在使用旧版 TLS 的用户和系统帐户，并对其执行操作。
 
-您还可以通过单击 "请求报告" 下载报告的更详细的版本。
+  ![SMTP Auth 客户端中的 TLS 使用情况视图报告中的安全性 & 合规性中心](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-![SMTP Auth 客户端报告中 TLS 用法的详细信息表](../../media/smtp-auth-clients-report-details-tls-usage.png)
+如果您在报告视图中单击 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
+
+单击 "**请求报告**" 可在电子邮件中接收更详细的报告版本。 您可以指定日期范围和接收报告的收件人。
+
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>SMTP Auth 客户端报告的详细信息表格视图
+
+如果您单击 "**查看详细信息表**"，则显示的信息将取决于所查看的图表：
+
+- **数据查看方式：发送卷**：表中显示以下信息：
+
+  - **发件人地址**
+  - **邮件计数**
+
+  如果选择了行，则会在浮出控件中显示相同的详细信息。
+
+- **数据查看依据： TLS 用法**：表中显示了以下信息：
+
+  - **发件人地址**
+  - **TLS 1.0%**<sup>\*</sup>
+  - **TLS 1.1%**<sup>\*</sup>
+  - **TLS 1.2%**<sup>\*</sup>
+  - **邮件计数**
+
+  <sup>\*</sup>此列显示发件人的邮件的百分比和数量。
+
+如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
+
+如果选择行，则在浮出控件中显示类似的详细信息：
+
+![来自 SMTP Auth 客户端报告中的 TLS 使用状况视图的详细信息表中的详细信息的浮出控件](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+
+单击 "**请求报告**" 可在电子邮件中接收更详细的报告版本。 您可以指定日期范围和接收报告的收件人。
+
+若要返回到 "报告" 视图，请单击 "**查看报告**"。
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

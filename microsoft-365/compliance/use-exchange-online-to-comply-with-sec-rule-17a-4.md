@@ -18,12 +18,12 @@ description: 配置 Exchange Online 与合规中心，帮助满足 CFTC Rule 1.3
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127299"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577112"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4
 
@@ -70,12 +70,3 @@ Cohasset 验证了当 Exchange Online 和安全与合规中心按照建议进行
 
 你可以使用 PowerShell 来锁定保留策略。 有关详细信息，请参阅[使用保留锁定遵从合规性要求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
-## <a name="known-limitations"></a>已知限制
-
-目前，Exchange Online 有一些限制：
-
-- 线程通信不适用于 Teams 聊天和频道消息。
-- 不会为 Teams 聊天和频道消息保留赞。
-
-> [!NOTE]
-> 项目级审核现已在 Microsoft 365 组邮箱中可用。 有关详细信息，请参阅[管理邮箱审核](enable-mailbox-auditing.md)。

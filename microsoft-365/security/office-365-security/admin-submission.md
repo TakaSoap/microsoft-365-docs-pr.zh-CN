@@ -17,18 +17,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726847"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577866"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
 在 Exchange Online 中有邮箱的 Microsoft 365 组织中，管理员可以使用安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交给 Microsoft 进行扫描。
 
-当您提交电子邮件时，您将获得可能允许传入的电子邮件进入租户的任何策略的信息，以及对邮件中的任何 Url 和附件的检查。 可能允许邮件的策略包括单个用户的安全发件人列表和租户级策略，如 Exchange 邮件流规则（也称为传输规则）。
+当您提交电子邮件时，您将获得可能允许传入的电子邮件进入租户的任何策略的信息，以及对邮件中的任何 Url 和附件的检查。 可能允许邮件的策略包括单个用户的安全发件人列表以及租户级别策略（如 Exchange 邮件流规则） (也称为传输规则) 。
 
 有关向 Microsoft 提交电子邮件、Url 和附件的其他方法，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -36,17 +36,17 @@ ms.locfileid: "44726847"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到**提交**页面，请使用 <https://protection.office.com/reportsubmission> 。
 
-- 您需要先分配权限，然后才能执行本主题中的过程：
+- 你必须首先分配有权限，然后才能执行本主题中的步骤：
 
   - 若要向 Microsoft 提交邮件和文件，您必须是下列角色组之一的成员：
 
-    - [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**"。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**组织管理**" 或 "**卫生管理**"。
+    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
 
   - 若要对提交门户进行只读访问，您必须是下列角色组之一的成员：
 
-    - Security [& 合规性中心](permissions-in-the-security-and-compliance-center.md)中的**安全阅读**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**的仅查看组织管理**。
+    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
 
 - 有关用户如何向 Microsoft 提交邮件和文件的详细信息，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44726847"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
-1. 在 "**对象类型**" 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL （例如， <https://www.fabrikam.com/marketing.html> ）。
+1. 在 "**对象类型**" 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL (例如， <https://www.fabrikam.com/marketing.html>) 。
 
 2. 在 "**提交原因**" 部分，选择下列选项之一：
 
@@ -118,7 +118,7 @@ ms.locfileid: "44726847"
 
 2. 在显示的 "**提交**" 页面上，验证 "**管理员提交**" 选项卡是否已选中。
 
-在页面顶部附近，可以输入开始日期、结束日期和（默认情况下）可以通过在框中输入值并单击 "刷新" 按钮按**提交 ID**进行筛选 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
+在页面顶部附近，您可以输入开始日期、结束日期和 (默认情况下) 您可以按**提交 ID** (筛选器分配给每个提交) 的 GUID 值，方法是在框中输入一个值，然后单击 " ![ 刷新" ](../../media/scc-quarantine-refresh.png) 按钮。 Update
 
 若要更改筛选条件，请单击 "**提交 ID** " 按钮，然后选择下列值之一：
 
@@ -126,13 +126,13 @@ ms.locfileid: "44726847"
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- **Status**
+- **状态**
 
 ![用于管理提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
 
 若要导出结果，请单击页面顶部附近的 "**导出**"，然后选择 "**图表数据**" 或 "**表格**"。 在出现的对话框中，保存 .csv 文件。
 
-在图形下方有三个选项卡：**电子邮件**（默认）、 **URL**和**附件**。
+在图形下方有三个选项卡：**电子邮件** (默认) 、 **URL**和**附件**。
 
 ### <a name="view-admin-email-submissions"></a>查看管理员电子邮件提交
 
@@ -141,7 +141,7 @@ ms.locfileid: "44726847"
 您可以单击页面底部附近的 "**列选项**" 按钮，在视图中添加或删除列：
 
 - **Date**
-- **提交 ID**
+- **提交 ID**：分配给每个提交的 GUID 值。
 - **提交者**<sup>\*</sup>
 - **主题**<sup>\*</sup>
 - **Sender**
@@ -203,7 +203,7 @@ ms.locfileid: "44726847"
 
 <sup>\*</sup>如果单击此值，则会在浮出控件中显示详细信息。
 
-在页面顶部附近，可以输入开始日期、结束日期和（默认情况下），您可以通过在框中输入值并单击 "刷新" 按钮来筛选**发件人** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
+在页面顶部附近，您可以输入开始日期、结束日期和 (默认情况下) 您可以通过在框中输入值并单击 "刷新" 按钮来按**发件人**进行筛选 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要更改筛选条件，请单击 "**发件人**" 按钮，然后选择下列值之一：
 

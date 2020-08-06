@@ -1,11 +1,11 @@
 ---
-title: 慢邮件流规则见解
+title: 修复邮件流规则的慢速了解
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 5/3/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,32 +13,39 @@ localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流规则速度缓慢。
-ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何使用安全 & 合规性中心中的 "修复缓慢的邮件流规则" 来识别和修复低效或损坏的邮件流规则 (也称为传输规则在其组织中) 。
+ms.openlocfilehash: bb1c09c2809260be8086059259a1aeec3f1fb3eb
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819360"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577148"
 ---
-# <a name="slow-mail-flow-rules-insight"></a>慢邮件流规则见解
+# <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修复了安全 & 合规中心中的邮件流规则的更慢理解
 
-低效率的邮件流规则（也称为传输规则）可能会导致贵组织的邮件流延迟。 此洞察力可报告影响组织的邮件流的邮件流规则。 这些规则类型的示例如下：
+邮件流规则效率低下 (也称为传输规则) 可能会导致贵组织的邮件流延迟。 此洞察力可报告影响组织的邮件流的邮件流规则。 这些规则类型的示例包括：
 
 - 使用的条件**是**大型组的成员。
-
-- 使用复杂正则表达式（regex）模式匹配的条件。
-
+- 使用复杂正则表达式 (regex) 模式匹配的条件。
 - 使用附件中的内容检查的条件。
 
-这些洞察力将帮助您识别和微调邮件流规则，以帮助减少邮件流延迟。
+在安全 & 合规中心中的[邮件流仪表板](mail-flow-insights-v2.md)的 "**建议**" 中，"**修复速度较慢的邮件流规则**" 了解如何在邮件流规则的完成时间过长时通知您。 此洞察力仅在检测到条件后出现 (如果您没有任何邮件循环，则不会看到) 的洞察力。
 
-![安全 & 合规中心中的邮件流仪表板中的邮件流规则速度较慢](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+您可以使用此通知来帮助您识别和微调邮件流规则，以帮助减少邮件流延迟。
 
-单击 "**查看详细信息**" 时，将显示一个弹出窗格，可在其中查看规则。 在浮出控件窗格中，也可以单击 "**查看示例消息**" 来查看规则所影响的邮件类型。
+![修复邮件流仪表板的 "为您推荐的情况" 区域中的邮件流规则的速度下降](../../media/mfi-fix-slow-mail-flow-rules.png)
 
-![在邮件流仪表板中单击慢速邮件流规则中的 "查看详细信息" 后的浮出控件窗格](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+当您单击小组件上的 "**查看详细信息**" 时，将显示一个弹出项，其中包含详细信息：
+
+- **规则**：您可以将鼠标悬停在摘要上以查看该规则的所有条件、例外和操作。 您可以单击摘要以编辑 Exchange 管理中心 (EAC) 中的规则。
+- 已**评估的邮件数**：您可以单击 "**查看示例邮件**"，查看受规则影响的邮件示例的[邮件跟踪](message-trace-scc.md)结果。
+- **每封邮件所用的平均时间**
+- **在邮件上花费**的中间时间：将上半部分与时间数据的下半部分隔开的中间值。
+
+![单击 "修复慢速邮件流规则" 中的 "查看详细信息" 后出现的详细信息浮出控件](../../media/mfi-fix-slow-mail-flow-rules-details.png)
+
+有关 Exchange Online 中的邮件流规则的条件和例外的详细信息，请参阅[mail flow rule 条件和例外 (谓词) 在 Exchange online 中](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
 ## <a name="related-topics"></a>相关主题
 
-有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

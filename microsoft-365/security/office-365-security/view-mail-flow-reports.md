@@ -1,5 +1,5 @@
 ---
-title: 查看安全与合规中心中的邮件流报告
+title: 查看 "报告" 仪表板中的邮件流报告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,20 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 了解如何查找和使用组织的邮件流安全报告。 "安全性 & 合规性中心中提供了邮件流报告。
+description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434175"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578014"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>查看安全与合规中心中的邮件流报告
+# <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
 
-除了安全性 & 合规性中心中提供的[邮件流见解](mail-flow-insights-v2.md)之外，还可以使用多种邮件流报告来帮助您监视 Microsoft 365 组织。 如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以 <https://office.protection.com> 通过转到 "**报告**" \> **仪表板**，在安全 & 合规性中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://office.protection.office.com/insightdashboard> 。
+除了安全性 & 合规性中心中的[邮件流仪表板](mail-flow-insights-v2.md)中提供的邮件流报告之外，"报告" 仪表板中还提供了多种其他邮件流报告，可帮助您监视 Microsoft 365 组织。
+
+如果您具有[必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 "**报告**" 仪表板，在[安全 & 合规中心](https://office.protection.com)中查看这些报告 \> **Dashboard**。 若要直接转到 "报表" 仪表板，请打开 <https://office.protection.office.com/insightdashboard> 。
 
 ![Security & 合规中心中的报告仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -54,7 +56,7 @@ ms.locfileid: "45434175"
 
   ![通过邮件流查看连接器报告中的数据](../../media/connector-report-view-data-by-mail-flow.png)
 
-- **数据查看依据： TLS 用法**：此图显示邮件流的传输层安全性（TLS）版本使用百分比。
+- **查看数据的依据： TLS 用法**：此图显示了邮件流的传输层安全性 (TLS) 版本使用情况的百分比。
 
   若要隔离图表中的数据，请使用 "**显示数据以供**控制" 选择以下选项之一：
 
@@ -75,10 +77,10 @@ ms.locfileid: "45434175"
 - **连接器方向和名称**
 - **连接器类型**
 - **强制 TLS？**：值**True**或**False**。
-- **无 TLS** （百分比）
-- **TLS 1.0** （百分比）
-- **TLS 1.1** （百分比）
-- **TLS 1.2** （百分比）
+- **没有 TLS** (百分比) 
+- **TLS 1.0** (百分比) 
+- **TLS 1.1** (百分比) 
+- **TLS 1.2** (百分比) 
 - **Volume**：邮件数。
 
 如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
@@ -87,7 +89,7 @@ ms.locfileid: "45434175"
 
 ## <a name="exchange-transport-rule-report"></a>Exchange 传输规则报告
 
-**Exchange 传输规则报告**显示了邮件流规则（也称为传输规则）对组织中的传入和传出邮件的影响。
+**Exchange 传输规则报告**显示邮件流规则的效果 (也称为传输规则) 组织中的传入和传出邮件。
 
 若要查看报告，请打开[安全 & 合规中心](https://protection.office.com)，转到 "**报告** \> **仪表板**"，然后选择 " **Exchange 传输规则**"。 若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ETRRuleReport> 。
 
@@ -99,9 +101,9 @@ ms.locfileid: "45434175"
 
 - **数据查看依据： Exchange 传输规则** \>**分解方式：方向**：此图显示受传输规则影响的**入站**和**出站**邮件的数量。
 
-- **数据查看依据： Exchange 传输规则** \>**分解方式：严重性**：此图显示**高严重性**和**中低严重性**以及**低严重性**邮件的数量。 将严重性级别设置为规则中的操作（**使用严重性级别或 SetAuditSeverity 审核此规则**） _SetAuditSeverity_。 有关详细信息，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+- **数据查看依据： Exchange 传输规则** \>**分解方式：严重性**：此图显示**高严重性**和**中低严重性**以及**低严重性**邮件的数量。 将严重性级别设置为规则中的操作 (使用严重级别或_SetAuditSeverity_) **审核此规则**。 有关详细信息，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **数据查看依据： DLP Exchange 传输规则** \>**分解方式：方向**：此图显示受数据丢失防护（DLP）传输规则影响的**入站**和**出站**邮件的数量。 您可以通过选择以下选项来进一步优化图表：
+- **数据查看依据： DLP Exchange 传输规则** \>**分解方式：方向**：此图显示受数据丢失防护 (DLP) 传输规则影响的**入站**和**出站**邮件的数量。 您可以通过选择以下选项来进一步优化图表：
 
   - **显示以下项的数据：所有 DLP 传输规则**
   - **显示以下项的数据：已损坏的用户**
@@ -204,7 +206,7 @@ ms.locfileid: "45434175"
 
 ## <a name="mailflow-status-report"></a>邮件流状态报告
 
-**邮件流状态报告**类似于[发送和接收的电子邮件报告](#sent-and-received-email-report)，其中包含有关在边缘上允许或阻止的电子邮件的其他信息。 这是唯一包含 edge 保护信息的报告，仅显示 Exchange Online Protection （EOP）在评估服务中被允许的电子邮件数量。
+**邮件流状态报告**类似于[发送和接收的电子邮件报告](#sent-and-received-email-report)，其中包含有关在边缘上允许或阻止的电子邮件的其他信息。 这是唯一包含 edge 保护信息的报告，仅显示在允许 Exchange Online Protection (EOP) 进行评估之前阻止的电子邮件的数量。
 
 若要查看报表，请打开 "[安全 & 合规中心](https://protection.office.com)"，转到 "**报告**" \> **仪表板**，然后选择 "**邮件流状态报告**"。 若要直接转到 "**邮件流状态" 报告**，请打开 <https://protection.office.com/mailflowStatusReport> 。
 
@@ -219,7 +221,7 @@ ms.locfileid: "45434175"
 
   - **进货**
   - **出站**
-  - **组织内**（独立于**入站**和**出站**计数）
+  - **组织内** (独立于**入站**和**出站**) 计数
 
 - **类型**：
 
@@ -297,22 +299,22 @@ ms.locfileid: "45434175"
 
   - **Total**
   - **正常邮件**
-  - **恶意软件（反恶意软件）** （EOP）
+  - **恶意软件 (反恶意软件) ** (EOP) 
   - **垃圾邮件检测**
   - **规则消息**
-  - **高级恶意软件**（OFFICE 365 ATP）
+  -  (Office 365 ATP) 的**高级恶意软件**
 
-  当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以查看那天的详细信息。
+  当鼠标悬停在图表中某天 (数据点) 时，可以查看那天的详细信息。
 
   ![发送和接收的电子邮件报告中的类型视图](../../media/sent-and-received-email-report-type-view.png)
 
-- **分解方式：方向**：图表显示**总计**、**入站**和**出站**数据。 当您将鼠标指针悬停在图表中的某一天（数据点）上时，您可以查看那天的详细信息。
+- **分解方式：方向**：图表显示**总计**、**入站**和**出站**数据。 当鼠标悬停在图表中某天 (数据点) 时，可以查看那天的详细信息。
 
   ![已发送和已接收电子邮件报告中的方向视图](../../media/sent-and-received-email-report-direction-view.png)
 
-- **向下** \> 钻取**恶意软件（反恶意软件）**：此选择会将您带到[电子邮件报告中的恶意软件检测](view-email-security-reports.md#malware-detections-in-email-report)。
+- **向下** \> 钻取**恶意软件 (反恶意软件) **：此选择会将您带到[电子邮件报告中的恶意软件检测](view-email-security-reports.md#malware-detections-in-email-report)。
 
-- **向下** \> 钻取**垃圾邮件检测）**：此选择会将您带到[垃圾邮件检测报告](view-email-security-reports.md#spam-detections-report)。
+- **向下** \> 钻取**垃圾邮件检测) **：选择此选项将转到[垃圾邮件检测报告](view-email-security-reports.md#spam-detections-report)。
 
 如果您在报告视图中单击 "**筛选器**"，则可以使用以下筛选器修改结果：
 
@@ -326,7 +328,7 @@ ms.locfileid: "45434175"
 
 如果在 "分解方式" 中单击 "**查看详细信息表** **：方向**" 或 "**分解方式"： "方向**" 视图，将显示以下信息：
 
-- **Date （UTC）**
+- **日期 (UTC) **
 - **类型**
 - **方向**
 - **邮件计数**
@@ -354,8 +356,8 @@ ms.locfileid: "45434175"
 - **显示 \> 主要邮件发件人的数据**
 - **显示 \> 主要邮件收件人的数据**
 - **显示 \> 排名靠前的垃圾邮件收件人的数据**
-- **显示数据 \>主要恶意软件收件人**（EOP）
-- **显示数据 \>主要恶意软件收件人（ATP）** （Office 365 ATP）
+- **显示数据 \>主要的恶意软件收件人** (EOP) 
+- **显示数据 \>主要的恶意软件收件人 (ATP) ** (Office 365 ATP) 
 
 饼图的复合根据这些选择的变化而变化。
 
@@ -384,14 +386,14 @@ ms.locfileid: "45434175"
   - **主要垃圾邮件收件人**
   - **Count**
 
-- **显示数据 \>主要恶意软件收件人**（EOP）
+- **显示数据 \>主要的恶意软件收件人** (EOP) 
 
   - **主要恶意软件收件人**
   - **Count**
 
-- **显示数据 \>主要恶意软件收件人（ATP）** （Office 365 ATP）
+- **显示数据 \>主要的恶意软件收件人 (ATP) ** (Office 365 ATP) 
 
-  - **主要恶意软件收件人（ATP）**
+  - ** (ATP) 的主要恶意软件收件人**
   - **Count**
 
 如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。
@@ -404,21 +406,13 @@ ms.locfileid: "45434175"
 
 - 在安全 & 合规性中心中，您必须是下列角色组之一的成员：
 
-  -组织管理
-
-  -安全管理员（也可以在[Azure Active Directory 管理中心](https://aad.portal.azure.com)中执行此操作-安全读取器
+  -组织管理-安全管理员 (你也可以在[Azure Active Directory 管理中心](https://aad.portal.azure.com)中执行此操作-安全读者
 
   有关详细信息，请参阅[安全与合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 
 - 在 Exchange Online 中，您必须是下列角色组之一的成员：
 
-  -组织管理
-
-  -仅查看组织管理
-
-  -仅查看收件人
-
-  合规性管理
+  -组织管理-仅查看组织管理-仅查看收件人-合规性管理
 
 有关详细信息，请参阅[Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo)中的权限和[管理 exchange online 中的角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
@@ -426,4 +420,8 @@ ms.locfileid: "45434175"
 
 [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
 
+[安全与合规中心内的邮件流见解](mail-flow-insights-v2.md)
+
 [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)
+
+[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)
