@@ -1,5 +1,5 @@
 ---
-title: 邮件流图报告
+title: 邮件流映射
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,46 +12,62 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的邮件流映射报告。
-ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何使用安全 & 合规性中心中邮件流仪表板中的邮件流映射，直观地显示和跟踪邮件在其组织中的流动和发件人，而无需使用连接器。
+ms.openlocfilehash: 2996227de3e0141635522ada4e41f2e8e65e9040
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818839"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577658"
 ---
-# <a name="mail-flow-map-report"></a><span data-ttu-id="f0a3f-103">邮件流图报告</span><span class="sxs-lookup"><span data-stu-id="f0a3f-103">Mail flow map report</span></span>
+# <a name="mail-flow-map-in-the-security--compliance-center"></a><span data-ttu-id="d087a-103">安全 & 合规中心中的邮件流映射</span><span class="sxs-lookup"><span data-stu-id="d087a-103">Mail flow map in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="f0a3f-104">此报告提供有关邮件通过您的组织的流动方式的见解。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-104">This report gives insights as to how mail flows through your organization.</span></span> <span data-ttu-id="f0a3f-105">您可以使用此信息来了解模式、确定异常，并在出现问题时解决问题。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-105">You can use this information to learn patterns, identify anomalies, and fix issues as they arise.</span></span>
+<span data-ttu-id="d087a-104">安全 & 合规性中心的邮件[流仪表板](mail-flow-insights-v2.md)中的**邮件流映射**可提供邮件在组织中流动的见解。</span><span class="sxs-lookup"><span data-stu-id="d087a-104">The **Mail flow map** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization.</span></span> <span data-ttu-id="d087a-105">您可以使用此信息来了解模式、确定异常并在出现问题时解决问题。</span><span class="sxs-lookup"><span data-stu-id="d087a-105">You can use this information to learn patterns, identify anomalies, and fix issues as they occur.</span></span>
 
-![安全 & 合规性中心的邮件流仪表板中的邮件流映射报告](../../media/mail-flow-map-selected.png)
+![安全 & 合规性中心的邮件流仪表板中的邮件流映射小部件](../../media/mfi-mail-flow-map-widget.png)
 
-## <a name="mail-flow-map-widget"></a><span data-ttu-id="f0a3f-107">邮件流映射小部件</span><span class="sxs-lookup"><span data-stu-id="f0a3f-107">Mail flow map widget</span></span>
+<span data-ttu-id="d087a-107">默认情况下，该小部件显示来自前一天的邮件流模式（称为 " *Sankey*图表"）。</span><span class="sxs-lookup"><span data-stu-id="d087a-107">By default, the widget shows the mail flow pattern from the previous day in a chart known as a *Sankey* diagram.</span></span> <span data-ttu-id="d087a-108">您可以使用向左箭头 ![ ](../../media/scc-left-arrow.png) 和向右箭头向 ![ 右箭头 ](../../media/scc-right-arrow.png) 来显示不同天的信息。</span><span class="sxs-lookup"><span data-stu-id="d087a-108">You can use the left arrow ![Left arrow](../../media/scc-left-arrow.png) and right arrow ![Right arrow](../../media/scc-right-arrow.png) to show information from different days.</span></span> <span data-ttu-id="d087a-109">每种不同的颜色代表不同入站或出站连接器上的邮件流 (或不使用连接器) 。</span><span class="sxs-lookup"><span data-stu-id="d087a-109">Each different color represents mail flow over a different inbound or outbound connector (or without using connectors).</span></span> <span data-ttu-id="d087a-110">如果将鼠标悬停在特定颜色上，则将显示该类型的连接符的邮件数。</span><span class="sxs-lookup"><span data-stu-id="d087a-110">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-<span data-ttu-id="f0a3f-108">默认情况下，邮件流地图显示前一天的高级别邮件流模式。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-108">By default, the mail flow map shows the high level mail flow pattern from the previous day.</span></span> <span data-ttu-id="f0a3f-109">您可以在不同的天使用左箭头和右箭头。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-109">You can use the left and right arrows for different days.</span></span> <span data-ttu-id="f0a3f-110">将鼠标光标悬停在报告中的每个区域上方将显示组织中的邮件数量，如下图所示：</span><span class="sxs-lookup"><span data-stu-id="f0a3f-110">Hovering your mouse cursor over each area in the report will show the volume of mail to and from your organization as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-mail-flow-map"></a><span data-ttu-id="d087a-111">邮件流映射的报告视图</span><span class="sxs-lookup"><span data-stu-id="d087a-111">Report view for the Mail flow map</span></span>
 
-![邮件流映射小组件中的向左和向右箭头](../../media/mail-flow-map-widget.png)
+<span data-ttu-id="d087a-112">单击 "**邮件流地图**" 小部件将转到**邮件流地图**报告。</span><span class="sxs-lookup"><span data-stu-id="d087a-112">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span>
 
-## <a name="mail-flow-map-basics"></a><span data-ttu-id="f0a3f-112">邮件流映射基础知识</span><span class="sxs-lookup"><span data-stu-id="f0a3f-112">Mail flow map basics</span></span>
+<span data-ttu-id="d087a-113">报表视图中提供了以下图表：</span><span class="sxs-lookup"><span data-stu-id="d087a-113">The following charts are available in the report view:</span></span>
 
-<span data-ttu-id="f0a3f-113">单击 "**邮件流地图**" 小部件将转到**邮件流地图**报告。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-113">Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report.</span></span> <span data-ttu-id="f0a3f-114">您可以在此处查看更详细的报告级别，可以单击 "查看详细信息表" 以查看详细数据。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-114">Here you can see more granular level of report, you can click View details table to see detailed data.</span></span> <span data-ttu-id="f0a3f-115">您还可以通过单击 "请求报告" 下载详细报告。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-115">You can also download the detailed report by clicking Request report.</span></span>
+- <span data-ttu-id="d087a-114">**显示数据：概述**：这基本上是小部件的更大视图。</span><span class="sxs-lookup"><span data-stu-id="d087a-114">**Show data for: Overview**: This is basically a larger view of the widget.</span></span> <span data-ttu-id="d087a-115">如果将鼠标悬停在特定颜色上，则将显示该类型的连接符的邮件数。</span><span class="sxs-lookup"><span data-stu-id="d087a-115">If you hover over a specific color, the number of messages is displayed for that type of connector.</span></span>
 
-![邮件流映射报告中的概述视图](../../media/mail-flow-map-overview.png)
+  ![邮件流映射报告中的概述视图](../../media/mfi-mail-flow-map-report-overview.png)
 
-## <a name="details"></a><span data-ttu-id="f0a3f-117">详细信息</span><span class="sxs-lookup"><span data-stu-id="f0a3f-117">Details</span></span>
+- <span data-ttu-id="d087a-117">**显示以下项的数据：详细**信息：此视图显示有关连接器和目标域的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d087a-117">**Show data for: Detail**: This view shows details about the connectors and destination domains.</span></span> <span data-ttu-id="d087a-118">将列出最上面的发件人和收件人域，其余部分将放入**其他**域中。</span><span class="sxs-lookup"><span data-stu-id="d087a-118">The top sender and recipient domains are listed, and the rest are put in **Others**.</span></span> <span data-ttu-id="d087a-119">如果将鼠标悬停在特定的颜色和节上，则会显示邮件数。</span><span class="sxs-lookup"><span data-stu-id="d087a-119">If you hover over a specific color and section, the number of messages is displayed.</span></span>
 
-<span data-ttu-id="f0a3f-118">默认情况下，"将**数据显示**" 设置为 "值**概述**"。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-118">By default, **Show data for** is set to the value **Overview**.</span></span> <span data-ttu-id="f0a3f-119">当您单击下拉下拉箭头并选择 "**详细信息**" 时，视图将切换到域级详细信息。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-119">When you click on the drop down and select **Detail**, the view switches to the domain level detail.</span></span>
+  ![邮件流映射报告中的详细信息视图](../../media/mfi-mail-flow-map-report-detail.png)
 
-![在邮件流映射报告中选择 "在概述视图中显示数据中的详细信息"](../../media/mail-flow-map-select-detail.png)
+<span data-ttu-id="d087a-121">如果您在报告视图中单击 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。</span><span class="sxs-lookup"><span data-stu-id="d087a-121">If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.</span></span>
 
-<span data-ttu-id="f0a3f-121">将列出最上面的发件人和收件人域，其余部分将放置在**其他**人中，如下图所示：</span><span class="sxs-lookup"><span data-stu-id="f0a3f-121">The top sender and recipient domains are listed, and the rest will be put in **Others** as shown in the following diagrams:</span></span>
+<span data-ttu-id="d087a-122">若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 "**请求下载**"。</span><span class="sxs-lookup"><span data-stu-id="d087a-122">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
 
-![邮件流映射报告中的详细信息视图](../../media/mail-flow-map-detail.png)
+<span data-ttu-id="d087a-123">如果可用，相关的见解将显示在邮件流地图的下面 (例如，[修复可能的邮件循环真知灼见](mfi-mail-loop-insight.md)) 。</span><span class="sxs-lookup"><span data-stu-id="d087a-123">Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).</span></span>
 
-## <a name="related-insights"></a><span data-ttu-id="f0a3f-123">相关见解</span><span class="sxs-lookup"><span data-stu-id="f0a3f-123">Related insights</span></span>
+## <a name="details-table-view-for-the-mail-flow-map"></a><span data-ttu-id="d087a-124">邮件流映射的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="d087a-124">Details table view for the Mail flow map</span></span>
 
-<span data-ttu-id="f0a3f-124">如果可用，相关的见解将显示在邮件流映射的下面（例如，发件人域洞察力或邮件循环见解）。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-124">Related insights are shown beneath the Mail flow map if they're available (for example, the Sender domain insight or the Mail loop insight).</span></span>
+<span data-ttu-id="d087a-125">如果您在报告视图中单击 "**查看详细信息表**"，将显示以下信息：</span><span class="sxs-lookup"><span data-stu-id="d087a-125">If you click **View details table** in a report view, the following information is shown:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f0a3f-125">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f0a3f-125">See also</span></span>
+- <span data-ttu-id="d087a-126">**Date**</span><span class="sxs-lookup"><span data-stu-id="d087a-126">**Date**</span></span>
+- <span data-ttu-id="d087a-127">**类别**</span><span class="sxs-lookup"><span data-stu-id="d087a-127">**Category**</span></span>
+- <span data-ttu-id="d087a-128">**连接器/第三方服务提供商**</span><span class="sxs-lookup"><span data-stu-id="d087a-128">**Connector / Third-party service provider**</span></span>
+- <span data-ttu-id="d087a-129">**发件人/收件人域**</span><span class="sxs-lookup"><span data-stu-id="d087a-129">**Sender/Recipient domain**</span></span>
+- <span data-ttu-id="d087a-130">**邮件计数**</span><span class="sxs-lookup"><span data-stu-id="d087a-130">**Message count**</span></span>
 
-<span data-ttu-id="f0a3f-126">有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="f0a3f-126">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="d087a-131">如果单击 "详细信息" 表视图中的 "**筛选器**"，则可以指定具有 "**开始日期**" 和 "**结束日期**" 的日期范围。</span><span class="sxs-lookup"><span data-stu-id="d087a-131">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="d087a-132">如果选择行，则在浮出控件中显示类似的详细信息：</span><span class="sxs-lookup"><span data-stu-id="d087a-132">If you select a row, similar details are shown in a flyout:</span></span>
+
+![详细信息从邮件流映射的详细信息表中飞出控件](../../media/mfi-mail-flow-map-view-details-table-details.png)
+
+<span data-ttu-id="d087a-134">若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 "**请求下载**"。</span><span class="sxs-lookup"><span data-stu-id="d087a-134">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="d087a-135">若要返回到 "报告" 视图，请单击 "**查看报告**"。</span><span class="sxs-lookup"><span data-stu-id="d087a-135">To go back to the reports view, click **View report**.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="d087a-136">另请参阅</span><span class="sxs-lookup"><span data-stu-id="d087a-136">See also</span></span>
+
+<span data-ttu-id="d087a-137">有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="d087a-137">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

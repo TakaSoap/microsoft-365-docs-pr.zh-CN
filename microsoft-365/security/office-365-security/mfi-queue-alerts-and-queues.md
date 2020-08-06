@@ -1,5 +1,5 @@
 ---
-title: 队列警报和队列
+title: 邮件流仪表板中的队列洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,68 +10,83 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的队列通知和队列。
-ms.openlocfilehash: 7bb103bad89ee39991a5c16d7101ab4658842479
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 管理员可以了解如何在安全 & 合规性中心中使用邮件流仪表板中的 "队列" 小部件，以通过出站连接器监视到其内部部署或合作伙伴组织的未成功邮件流。
+ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635180"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577283"
 ---
-# <a name="queue-alerts-and-queues"></a><span data-ttu-id="f8a14-103">队列警报和队列</span><span class="sxs-lookup"><span data-stu-id="f8a14-103">Queue alerts and Queues</span></span>
+# <a name="queues-insight-in-the-security--compliance-center"></a><span data-ttu-id="8ed6d-103">队列在安全 & 合规中心中的洞察力</span><span class="sxs-lookup"><span data-stu-id="8ed6d-103">Queues insight in the Security & Compliance Center</span></span>
 
-## <a name="queue-alerts"></a><span data-ttu-id="f8a14-104">队列通知</span><span class="sxs-lookup"><span data-stu-id="f8a14-104">Queue alerts</span></span>
+<span data-ttu-id="8ed6d-104">当无法使用连接器从组织向内部部署或合作伙伴电子邮件服务器发送邮件时，邮件将在 Microsoft 365 中排队。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-104">When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365.</span></span> <span data-ttu-id="8ed6d-105">导致出现此情况的常见示例为：</span><span class="sxs-lookup"><span data-stu-id="8ed6d-105">Common examples that cause this condition are:</span></span>
 
-<span data-ttu-id="f8a14-105">当无法使用连接器从组织向本地或合作伙伴电子邮件服务器发送邮件时，邮件将在 Office 365 中排队。</span><span class="sxs-lookup"><span data-stu-id="f8a14-105">When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365.</span></span> <span data-ttu-id="f8a14-106">导致出现此情况的常见示例为：</span><span class="sxs-lookup"><span data-stu-id="f8a14-106">Common examples that cause this condition are:</span></span>
+- <span data-ttu-id="8ed6d-106">连接器配置不正确。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-106">The connector is incorrectly configured.</span></span>
+- <span data-ttu-id="8ed6d-107">本地环境中的网络或防火墙发生变化。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-107">There have been networking or firewall changes in your on-premises environment.</span></span>
 
-- <span data-ttu-id="f8a14-107">连接器配置不正确。</span><span class="sxs-lookup"><span data-stu-id="f8a14-107">The connector is incorrectly configured.</span></span>
+<span data-ttu-id="8ed6d-108">Microsoft 365 将继续重试传递24小时。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-108">Microsoft 365 will continue to retry to delivery for 24 hours.</span></span> <span data-ttu-id="8ed6d-109">24小时后，邮件将会过期，并将返回到未送达报告中的发件人 (也称为 "Ndr" 或 "退回邮件") 。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-109">After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
 
-- <span data-ttu-id="f8a14-108">本地环境中的网络或防火墙发生变化。</span><span class="sxs-lookup"><span data-stu-id="f8a14-108">There have been networking or firewall changes in your on-premises environment.</span></span>
+<span data-ttu-id="8ed6d-110">如果排队的电子邮件量超过预定义的阈值 (默认值为 200) 的邮件，则可在以下位置获取这些信息：</span><span class="sxs-lookup"><span data-stu-id="8ed6d-110">If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:</span></span>
 
-<span data-ttu-id="f8a14-109">Microsoft 365 将继续重试传递24小时。</span><span class="sxs-lookup"><span data-stu-id="f8a14-109">Microsoft 365 will continue to retry to delivery for 24 hours.</span></span> <span data-ttu-id="f8a14-110">24小时后，邮件将会过期，并将返回到未送达报告（也称为 "Ndr" 或 "退回邮件"）中的发件人。</span><span class="sxs-lookup"><span data-stu-id="f8a14-110">After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).</span></span>
+- <span data-ttu-id="8ed6d-111">安全 & 合规性中心中的[邮件流仪表板](mail-flow-insights-v2.md)中的**队列**洞察力。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-111">The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center.</span></span> <span data-ttu-id="8ed6d-112">有关详细信息，请参阅本主题中的[邮件流仪表板](#queues-insight-in-the-mail-flow-dashboard)部分中的队列洞察力。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-112">For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this topic.</span></span>
+  
+- <span data-ttu-id="8ed6d-113">在 "[安全 & 合规中心](https://protection.office.com) ("**通知**" **Recent alerts** \> **仪表板**或") 中，"最近" 警报显示在 "警报" 仪表板中 <https://protection.office.com/alertsdashboard> 。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-113">An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).</span></span>
 
-<span data-ttu-id="f8a14-111">如果排队的电子邮件数量超过了预定义的阈值（默认值为2000邮件），则在**最近通知**的邮件流仪表板中将提供这些通知，并且管理员将收到电子邮件通知（指向其备用电子邮件地址）。</span><span class="sxs-lookup"><span data-stu-id="f8a14-111">If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address).</span></span> <span data-ttu-id="f8a14-112">若要配置警报阈值、每日通知限制和/或通知收件人，请参阅下面的 "**自定义队列通知**" 部分。</span><span class="sxs-lookup"><span data-stu-id="f8a14-112">To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.</span></span>
+  ![安全 & 合规中心中的 "警报" 仪表板中的最近通知](../../media/mfi-queued-messages-alert.png)
 
-![在安全 & 合规中心中的邮件流仪表板的 "最近的通知" 区域中对警报进行排队](../../media/5fc4a51c-6118-4270-960b-c6b176ef94ae.png)
+- <span data-ttu-id="8ed6d-115">管理员将根据名为 "**邮件**" 的默认警报策略的配置收到电子邮件通知。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-115">Admins will receive an email notification based on the configuration of the default alert policy named **Messages have been delayed**.</span></span> <span data-ttu-id="8ed6d-116">若要配置此通知的通知设置，请参阅下一节。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-116">To configure the notification settings for this alert, see the next section.</span></span>
 
-## <a name="customize-queue-alerts"></a><span data-ttu-id="f8a14-114">自定义队列通知</span><span class="sxs-lookup"><span data-stu-id="f8a14-114">Customize queue alerts</span></span>
+  <span data-ttu-id="8ed6d-117">有关通知策略的详细信息，请参阅[Security & 合规性中心中的警报策略](../../compliance/alert-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-117">For more information about alert policies, see [Alert policies in the Security & Compliance Center](../../compliance/alert-policies.md).</span></span>
 
-<span data-ttu-id="f8a14-115">邮件流 insights 创建名为 "邮件" 的通知策略已**延迟**（以下示例屏幕截图中的 "**发送电子邮件通知**" 复选框），它位于**警报** \> **警报策略**中。</span><span class="sxs-lookup"><span data-stu-id="f8a14-115">Mail flow insights create an alert policy named **Messages have been delayed** (the **Send email notifications** check box in the example screen shot below) found in **Alerts** \> **Alert Policies**.</span></span> <span data-ttu-id="f8a14-116">您可以通过单击策略来修改阈值并通知收件人。</span><span class="sxs-lookup"><span data-stu-id="f8a14-116">You can modify the threshold and alert recipients by clicking on the policy.</span></span>
+## <a name="customize-queue-alerts"></a><span data-ttu-id="8ed6d-118">自定义队列通知</span><span class="sxs-lookup"><span data-stu-id="8ed6d-118">Customize queue alerts</span></span>
 
-![通知导航](../../media/efb95976-9e0b-484e-a2fd-093c5bc7a40f.png)
+1. <span data-ttu-id="8ed6d-119">在[安全 & 合规性中心](https://protection.office.com)中，转到 "**通知**" "通知 \> **策略**" 或 "打开" <https://protection.office.com/alertpolicies> 。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-119">In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.</span></span>
 
-<span data-ttu-id="f8a14-118">你将看到一个新的策略信息叶片，现在可以单击 "**编辑策略**"。</span><span class="sxs-lookup"><span data-stu-id="f8a14-118">You'll see a new policy information blade, you can now click **Edit Policy**.</span></span>
+2. <span data-ttu-id="8ed6d-120">在 "**通知策略**" 页上，查找并选择名为 "邮件" 的策略已**延迟**。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-120">On the **Alert policies** page, find and select the policy named **Messages have been delayed**.</span></span>
 
-![编辑策略 ](../../media/ed2aceae-3ee2-4849-a17e-87915987a7dd.png)
+3. <span data-ttu-id="8ed6d-121">在邮件中打开了**延迟**的浮出浮出控件时，您可以打开或关闭通知并配置通知设置。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-121">In the **Message have been delayed** flyout that opens, you can turn the alert on or off and configure the notification settings.</span></span>
 
-<span data-ttu-id="f8a14-120">信息边栏将更改为 "**编辑策略**"。</span><span class="sxs-lookup"><span data-stu-id="f8a14-120">The information blade will change to the **Edit Policy**.</span></span> <span data-ttu-id="f8a14-121">您现在可以更改通知电子邮件的收件人、每天发送的通知数的限制以及触发警报的最小阈值（200或更多）。</span><span class="sxs-lookup"><span data-stu-id="f8a14-121">You can now change the recipients for the alert email, the limit on the number of notifications sent per day, and the minimum threshold to trigger the alert (200 or more).</span></span>
+   ![邮件已延迟通知策略详细信息安全 & 合规性中心](../../media/mfi-queued-messages-alert-policy.png)
 
-![编辑策略边栏](../../media/c657cc74-7867-474c-b2c9-dc478449f990.png)
+   - <span data-ttu-id="8ed6d-123">**状态**：您可以打开或关闭通知。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-123">**Status**: You can toggle the alert on or off.</span></span>
 
-## <a name="queue-alert-details"></a><span data-ttu-id="f8a14-123">队列警报详细信息</span><span class="sxs-lookup"><span data-stu-id="f8a14-123">Queue alert details</span></span>
+   - <span data-ttu-id="8ed6d-124">**电子邮件收件人**和**每日通知限制**：单击 "**编辑**" 配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="8ed6d-124">**Email recipients** and **Daily notification limit**: Click **Edit** to configure the following settings:</span></span>
 
-<span data-ttu-id="f8a14-124">单击警报时，警报详细信息将显示在浮出控件窗格中。</span><span class="sxs-lookup"><span data-stu-id="f8a14-124">When you click the alert, the alert details appear in a flyout pane.</span></span>
+4. <span data-ttu-id="8ed6d-125">若要配置通知设置，请单击 "**编辑**"。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-125">To configure the notification settings, click **Edit**.</span></span> <span data-ttu-id="8ed6d-126">在出现的 "**编辑策略**" 浮出控件中，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="8ed6d-126">In the **Edit policy** flyout that appears, configure the following settings:</span></span>
 
-![在安全 & 合规中心的邮件流仪表板的 "最近的通知" 区域中选择队列通知](../../media/1f6b0e96-5b2c-41ef-9684-9d813b3fabe6.png)
+   - <span data-ttu-id="8ed6d-127">**发送电子邮件通知**：默认值为 "开"。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-127">**Send email notifications**: The default value is on.</span></span>
+   - <span data-ttu-id="8ed6d-128">**电子邮件收件人**：默认值为**TenantAdmins**。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-128">**Email recipients**: The default value is **TenantAdmins**.</span></span>
+   - <span data-ttu-id="8ed6d-129">**每日通知限制**：默认值为**无限制**。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-129">**Daily notification limit**: The default value is **No limit**.</span></span>
+   - <span data-ttu-id="8ed6d-130">**阈值**：默认值为200。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-130">**Threshold**: The default value is 200.</span></span>
 
-![安全 & 合规中心中的队列警报详细信息浮出控件](../../media/105c8fff-912f-4763-8806-2740ebdecd4b.png)
+   ![邮件中的通知设置已延迟警报策略详细信息安全 & 合规性中心](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-<span data-ttu-id="f8a14-127">您可以单击警报详细信息中的 "**查看队列**"，在新的飞出窗格中查看队列详细信息、问题和指向可用修复程序的链接。</span><span class="sxs-lookup"><span data-stu-id="f8a14-127">You can click **View queue** in the alert details to see the queue details, problems, and links to the available fixes in a new flyout pane.</span></span>
+5. <span data-ttu-id="8ed6d-132">完成后，单击 "**保存**并**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-132">When you're finished, click **Save** and **Close**.</span></span>
 
-![安全 & 合规中心中的队列警报详细信息浮出控件](../../media/8ff60955-55ef-4f32-a966-85e02cb608d1.png)
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a><span data-ttu-id="8ed6d-133">邮件流仪表板中的队列洞察力</span><span class="sxs-lookup"><span data-stu-id="8ed6d-133">Queues insight in the Mail flow dashboard</span></span>
 
-![查看警报详细信息中的队列](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+<span data-ttu-id="8ed6d-134">即使排队邮件卷未超过阈值并生成警报，仍可以使用[邮件流仪表板](mail-flow-insights-v2.md)中的**队列**洞察力查看已排入一小时以上的邮件，并在队列中的邮件数变得过大之前采取措施。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-134">Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.</span></span>
 
-## <a name="queues"></a><span data-ttu-id="f8a14-130">队列</span><span class="sxs-lookup"><span data-stu-id="f8a14-130">Queues</span></span>
+![安全 & 合规性中心的邮件流仪表板中的 "队列" 小部件](../../media/mfi-queues-widget.png)
 
-<span data-ttu-id="f8a14-131">即使排队邮件量未超过阈值，仍可以使用邮件流仪表板的 "**队列**" 区域查看已排入超过1小时的邮件。</span><span class="sxs-lookup"><span data-stu-id="f8a14-131">Even if the queued message volume hasn't exceeded the threshold, you can still use the **Queues** area of the mail flow dashboard to see messages that have been queued for more than one hour.</span></span> <span data-ttu-id="f8a14-132">您可以使用 "**队列**" 区域来监视已排队的邮件数（值为0表示邮件流正常），并在队列中的邮件数变得过大之前执行操作。</span><span class="sxs-lookup"><span data-stu-id="f8a14-132">You can use the **Queues** area to monitor the number of queued messages (the value 0 indicates mail flow is OK) and take action before the number of queued messages becomes too large.</span></span>
+<span data-ttu-id="8ed6d-136">如果单击小组件上的邮件数，将显示一条包含以下信息的已**排队邮件**：</span><span class="sxs-lookup"><span data-stu-id="8ed6d-136">If you click the number of messages on the widget, a **Messages queued** flyout appears with the following information:</span></span>
 
-![安全 & 合规中心中的邮件流仪表板中的队列](../../media/0ef6e2ef-dd22-4363-9d4a-b20a00babc9f.png)
+- <span data-ttu-id="8ed6d-137">**排队邮件数**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-137">**Number of queued messages**</span></span>
+- <span data-ttu-id="8ed6d-138">**连接器名称**：单击连接器名称以管理 Exchange 管理中心内的连接器 (EAC) 。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-138">**Connector name**: Click on the connector name to manage the connector in the Exchange admin center (EAC).</span></span>
+- <span data-ttu-id="8ed6d-139">**队列启动时间**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-139">**Queue started time**</span></span>
+- <span data-ttu-id="8ed6d-140">**最旧邮件已过期**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-140">**Oldest messages expired**</span></span>
+- <span data-ttu-id="8ed6d-141">**目标服务器**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-141">**Destination server**</span></span>
+- <span data-ttu-id="8ed6d-142">**最后一个 IP 地址**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-142">**Last IP address**</span></span>
+- <span data-ttu-id="8ed6d-143">**上一个错误**</span><span class="sxs-lookup"><span data-stu-id="8ed6d-143">**Last error**</span></span>
+- <span data-ttu-id="8ed6d-144">**如何修复**：共有问题和解决方案可用。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-144">**How to fix**: Common issues and solutions are available.</span></span> <span data-ttu-id="8ed6d-145">如果 "是"**立即修复**链接可用，请单击它以解决问题。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-145">If is a **Fix it now** link is available, click it to fix the problem.</span></span> <span data-ttu-id="8ed6d-146">否则，请单击任何可用的链接，以获取有关错误和可能的解决方案的详细信息。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-146">Otherwise, click on any available links for more information about the error and possible solutions.</span></span>
 
-<span data-ttu-id="f8a14-134">单击**队列**中已排队的邮件数时，将在弹出窗口中显示有关如何修复问题的队列详细信息和指南（在队列警报的详细信息中单击 "**查看队列**" 后出现的同一浮出控件）。</span><span class="sxs-lookup"><span data-stu-id="f8a14-134">When you click the number of queued messages in **Queues**, the queue details and guidance for how to fix the issue will appear in a flyout pane (the same flyout that appears after you click **View queue** in the details of a queue alert).</span></span>
+![单击邮件流仪表板中的队列洞察力后的详细信息](../../media/mfi-queues-details.png)
 
-![队列详细信息](../../media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+<span data-ttu-id="8ed6d-148">在邮件的详细信息 "**延迟**" 警报中单击 "**查看队列**" 后，将显示相同的浮出控件。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-148">The same flyout is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f8a14-136">另请参阅</span><span class="sxs-lookup"><span data-stu-id="f8a14-136">See also</span></span>
+![邮件已在安全 & 合规中心中延迟警报详细信息](../../media/mfi-queued-messages-alert-details.png)
 
-<span data-ttu-id="f8a14-137">有关邮件流仪表板中的其他邮件流见解的详细信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="f8a14-137">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="see-also"></a><span data-ttu-id="8ed6d-150">另请参阅</span><span class="sxs-lookup"><span data-stu-id="8ed6d-150">See also</span></span>
+
+<span data-ttu-id="8ed6d-151">有关邮件流仪表板中的其他见解的信息，请参阅[Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="8ed6d-151">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
