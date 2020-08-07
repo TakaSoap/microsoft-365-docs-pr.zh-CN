@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560224"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577958"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -28,7 +28,7 @@ ms.locfileid: "46560224"
 
 除了专用访问之外，本文还介绍了如何配置关联 SharePoint 网站，你可以从团队频道的“**文件**”部分进行访问，以获得存储高度管控数据所需的其他安全性。
 
-针对高度管控数据的团队的配置元素如下：
+采用安全隔离的团队的配置元素如下：
 
 - 私人团队
 - 关联 SharePoint 团队网站上的其他安全性：
@@ -42,9 +42,9 @@ ms.locfileid: "46560224"
 > [!IMPORTANT]
 > 继续执行本文中的步骤之前，确保启用[敏感度标签来保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
-<a name="poster"></a> 有关此方案的两页摘要，请参阅[“采用安全隔离的 Microsoft 团队”文章](../downloads/team-security-isolation-poster.pdf)。
+<a name="poster"></a> 有关此方案的两页摘要，请参阅[“采用安全隔离的 Microsoft Teams”文章](../downloads/team-security-isolation-poster.pdf)。
 
-[![“采用安全隔离的 Microsoft 团队”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
 
@@ -226,7 +226,7 @@ Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项�
 
 随着团队的建立，是时候驱动该团队的采用以及提升它对团队成员的额外安全性。
 
-## <a name="train-your-users"></a>培训用户
+### <a name="train-your-users"></a>培训用户
 
 团队成员可以访问团队及其所有资源，包括聊天、会议和其他应用。 使用频道的“**文件**”部分中的文件时，团队成员应为所创建的文件分配敏感度标签。
 

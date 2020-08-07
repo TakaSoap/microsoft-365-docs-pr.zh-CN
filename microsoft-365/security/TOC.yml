@@ -489,28 +489,30 @@
             - name: 安全与合规中心内的邮件流见解
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: 邮件流图报告
+                - name: 自动转发的邮件见解
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: 修复可能的邮件循环见解
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: 修复慢邮件流规则见解
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: 邮件流地图
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: 顶级域邮件流状态见解
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP 身份验证客户端报告
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: 修复发件人域见解
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: 未送达报告
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 正在转发的新域的电子邮件见解
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: 新用户转发电子邮件见解
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: 非接受域报告
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: 入站和出站邮件流
+                - name: 未送达报告
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 出站和入站邮件流见解
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: 队列警报和队列
+                - name: 队列见解
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: 自动转发的消息报表
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: 邮件循环见解
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: 慢邮件流规则见解
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP 身份验证客户端见解和报告
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: 顶级域邮件流状态见解
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: 安全解决方案
           items:
             - name: Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南

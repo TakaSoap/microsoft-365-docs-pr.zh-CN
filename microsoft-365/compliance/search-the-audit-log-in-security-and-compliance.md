@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035657"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577992"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -112,7 +112,7 @@ ms.locfileid: "45035657"
 
 - 发生事件后，最多需要 30 分钟到 24 小时即可在审核日志搜索的结果中返回相应的审核日志记录。 下表显示了 Office 365 中不同服务所花费的时间。
 
-  |**Microsoft 365 服务或功能**|**30 分钟**|**24 小时**|
+  |Microsoft 365 服务或功能|30 分钟|24 小时|
   |:-----|:-----:|:-----:|
   |高级威胁防护和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -172,26 +172,26 @@ ms.locfileid: "45035657"
 
 4. 配置以下搜索条件：
 
-    a. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。
+   1. “**活动**”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“**显示所有活动的结果**”将显示由所选用户或用户组执行的所有活动的结果。
 
-    审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”**** 选项卡可查看每个不同服务中每个活动的描述。
+      审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”**** 选项卡可查看每个不同服务中每个活动的描述。
 
-    b. “**开始日期**”和“**结束日期**”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
+   1. “**开始日期**”和“**结束日期**”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
 
-    > [!TIP]
-    > 如果要使用为期 90 天的最大日期范围，请选择当前时间作为“**开始日期**”。 否则，你将收到说明开始日期早于结束日期的错误消息。 如果你在过去 90 天内打开了审核，则最大日期范围不能从打开审核的日期之前开始。
+      > [!TIP]
+      > 如果要使用为期 90 天的最大日期范围，请选择当前时间作为“**开始日期**”。 否则，你将收到说明开始日期早于结束日期的错误消息。 如果你在过去 90 天内打开了审核，则最大日期范围不能从打开审核的日期之前开始。
 
-    c. “**用户**”：单击此框，然后选择要为其显示搜索结果的一名或多名用户。 由你在此框中所选用户执行的所选活动的审核日志项目将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
+   1. “**用户**”：单击此框，然后选择要为其显示搜索结果的一名或多名用户。 由你在此框中所选用户执行的所选活动的审核日志项目将显示在结果列表中。 将此框留空以返回组织中所有用户（和服务帐户）的条目。
 
-    d. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保输入完整的 URL 路径，或者如果输入部分 URL，则请勿包含任何特殊字符或空格。
+   1. “**文件、文件夹或网站**”：键入部分或完整的文件或文件夹名称，搜索与包含指定关键字的文件夹文件相关的活动。 你还可以指定文件或文件夹的 URL。 如果使用 URL，请确保输入完整的 URL 路径，或者如果输入部分 URL，则请勿包含任何特殊字符或空格。
 
-    将此框留空以返回组织中所有文件和文件夹的条目。
+      将此框留空以返回组织中所有文件和文件夹的条目。
 
-   **提示**
-
-   - 如果要查找与**网站**相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，**"https://contoso-my.sharepoint.com/personal/*"**。
-
-   - 如果要查找与**文件**相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，**"*Customer_Profitability_Sample.csv"**。
+      > [!TIP]
+      >
+      > - 如果要查找与**网站**相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，**"https://contoso-my.sharepoint.com/personal/*"**。
+      >
+      > - 如果要查找与**文件**相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，**"*Customer_Profitability_Sample.csv"**。
 
 5. 单击“**搜索**”以使用搜索条件运行搜索。
 
@@ -313,17 +313,17 @@ ms.locfileid: "45035657"
 |[Yammer 活动](#yammer-activities)|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|
 |[Microsoft Stream 活动](#microsoft-stream-activities)|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|
 |[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|
-||||
+|[保留策略和保留标签活动](#retention-policy-and-retention-label-activities)|||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
 
 下表介绍了 SharePoint Online 和 OneDrive for Business 中的文件和页面活动。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已访问文件|FileAccessed|用户或系统帐户访问文件。|
 |(无)|FileAccessedExtended|这与“已访问文件”(FileAccessed) 活动有关。 如果一个用户长时间（至 3 小时）持续访问某一文件，则会记录下 FileAccessedExtended 事件。 <br/><br/> 记录 FileAccessedExtended 事件是为了减少持续访问文件时所记录的 FileAccessed 事件数。 这有助于减小（实际上是）同一用户活动的多个 FileAccessed 记录的干扰，从而专注于初始（和更重要的）FileAccessed 事件。|
-|已更改合规性策略标签|ComplianceSettingChanged|保留标签已应用于文档或已从文档中删除。 手动或自动将保留标签应用于消息时触发此事件。|
+|已更改文件的保留标签|ComplianceSettingChanged|保留标签已应用于文档或已从文档中删除。 手动或自动将保留标签应用于消息时触发此事件。|
 |已将记录状态更改为“已锁定”|LockRecord|将文档分类为记录的保留标签的记录状态为“已锁定”。 这意味着无法修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
 |已将记录状态更改为“未锁定”|UnlockRecord|将文档分类为记录的保留标签的记录状态为“未锁定”。 这意味着可以修改或删除文档。 仅至少分配有网站参与者权限的用户才能更改文档的记录状态。|
 |已签入文件|FileCheckedIn|用户签入其从文档库中签出的文档。|
@@ -332,7 +332,7 @@ ms.locfileid: "45035657"
 |已删除文件|FileDeleted|用户从网站删除文档。|
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
-|已删除记录合规性策略标签|ComplianceRecordDelete|已删除归类为记录的文档。 当将内容分类为记录的保留标签应用于文档时，该文档被视为记录。|
+|已删除记录合规性策略标签|ComplianceRecordDelete|已删除标记为记录的文档。 当将内容标记为记录的保留标签应用于文档时，该文档被视为记录。|
 |检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的优先级比该网站应用的敏感度标签高。 例如，标有“机密”的文档上传到标有“常规”的网站上。 <br/><br/> 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不触发此事件。 例如，标有“常规”的文档上传到标有“机密”的网站上。 有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的所有更改，而不将其保存到文档库中的文档版本。|
@@ -374,7 +374,7 @@ ms.locfileid: "45035657"
 
 下表介绍了 SharePoint Online 和 OneDrive for Business 中的文件夹活动。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已复制文件夹|FolderCopied|用户将文件夹从网站复制到 SharePoint 或 OneDrive for Business 的其他位置。|
 |已创建文件夹|FolderCreated|用户在网站上创建一个文件夹。|
@@ -391,7 +391,7 @@ ms.locfileid: "45035657"
 
 下表介绍了当用户与 SharePoint Online 中的列表和列表项进行交互时执行的相关活动。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已创建列表|ListCreated|用户已创建 SharePoint 列表。|
 |已创建列表列|ListColumnCreated|用户已创建 SharePoint 列表列。 列表列是指附加到一个或多个 SharePoint 列表的列。|
@@ -423,7 +423,7 @@ ms.locfileid: "45035657"
 > [!NOTE]
 > 根据用户对象的 UserType 属性，用户可以是*成员*或*来宾*。 通常，成员为员工，来宾则为组织外部的合作者。 用户接受共享邀请（而尚未成为你组织的一员）时，将在组织的目录中为其创建来宾帐户。 来宾用户在你的目录中拥有帐户后，即可与其直接共享资源（无需邀请）。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已向网站集添加权限级别|PermissionLevelAdded|已向网站集添加权限级别。|
 |已接受访问请求|AccessRequestAccepted|已接受对网站、文件夹或文档的访问请求，并已授予请求用户访问权限。|
@@ -455,7 +455,7 @@ ms.locfileid: "45035657"
 
 下表列出了 SharePoint Online 和 OneDrive for Business 中的文件同步活动。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。 同步关系之所以成功，是因为用户计算机是添加到域列表（称为*安全收件人列表*）的域成员，可以访问组织中的文档库。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
 |已阻止计算机同步文件|UnmanagedSyncClientBlocked|用户尝试从某计算机与网站建立同步关系，该计算机不是组织域的成员，或是尚未添加到可访问组织文档库的域列表（称为*安全收件人列表*）的域的成员。 不允许同步关系，并阻止用户计算机在文档库上同步、下载或上传文件。 <br/><br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
@@ -469,7 +469,7 @@ ms.locfileid: "45035657"
 
 下表列出了与在 SharePoint 中分配权限以及使用组授予（和撤销）网站访问权限相关的事件。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已添加网站集管理员|SiteCollectionAdminAdded|网站集管理员或所有者为网站添加了作为网站集管理员的人员。 网站集管理员具有网站集和所有子网站的完全控制权限。 当管理员（通过编辑 SharePoint 管理中心的用户配置文件或[使用 Microsoft 365 管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)）向自己授予对用户 OneDrive 帐户的访问权限时，也将记录此活动。|
 |已向 SharePoint 组添加用户或组|AddedToGroup|用户向 SharePoint 组添加了成员或来宾。 这可能是目的性操作，也可能是其他活动（例如共享事件）的结果。|
@@ -493,7 +493,7 @@ ms.locfileid: "45035657"
 
 下表列出了 SharePoint Online 中的网站管理任务所产生的事件。 如前所述，某些 SharePoint 活动的审核记录将表明 app@sharepoint 用户代表启动操作的用户或管理员执行了该活动。 有关详细信息，请参阅[审核记录中的 app\@sharepoint 用户](#the-appsharepoint-user-in-audit-records)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已添加允许的数据位置|AllowedDataLocationAdded|SharePoint 或全局管理员在多地理环境中添加了允许的数据位置。|
 |已添加豁免用户代理|ExemptUserAgentSet|SharePoint 或全局管理员向 SharePoint 管理中心的豁免用户代理列表添加了用户代理。|
@@ -533,7 +533,7 @@ ms.locfileid: "45035657"
 
  你还可以使用 Exchange Online PowerShell 中的 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) cmdlet 来搜索邮箱活动。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |访问的邮箱项目|MailItemsAccessed|已在邮箱中读取或访问邮件。 此活动的审核记录通过下面两种方式之一触发：当邮箱客户端（如 Outlook）对邮件执行绑定操作时，或者当邮箱客户端（如 Exchange ActiveSync 或 IMAP）同步邮箱文件夹中的项目时。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 调查被盗用的电子邮件帐户时，分析此活动的审核记录非常有用。 有关详细信息，请参阅 [高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。 |
 |已添加代理邮箱权限|AddMailboxPermissions|管理员已将一位用户（称为“代理”）的 FullAccess 邮箱权限分配给另一用户邮箱。 FullAccess 权限允许代理打开他人的邮箱，查看和管理邮箱内容。|
@@ -556,13 +556,14 @@ ms.locfileid: "45035657"
 |已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|有权访问邮箱的邮箱所有者或其他用户在 Outlook 客户端中修改了收件箱规则。|
 |已更新邮件|更新|已更改邮件或其属性。|
 |用户已登录到邮箱|MailboxLogin|用户登录其邮箱。|
+|将邮件标记为记录||用户已将保留标签应用于电子邮件，并且该标签被配置为将项目标记为记录。 |
 ||||
 
 ### <a name="sway-activities"></a>Sway 活动
 
 下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、案例和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已更改 Sway 共享级别|SwayChangeShareLevel|用户更改 Sway 的共享级别。 此事件捕获用户更改与 Sway 相关的共享范围；例如公共与组织内。|
 |已创建 Sway|SwayCreate|用户创建 Sway。|
@@ -584,7 +585,7 @@ ms.locfileid: "45035657"
 
 下表列出了管理员使用 Microsoft 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
 
-|**活动**|**操作**|**说明**|
+|活动|操作|说明|
 |:-----|:-----|:-----|
 |已添加用户|添加用户|已创建用户帐户。|
 |已更改用户许可证|更改用户许可证|分配给用户的许可证有所更改。 若要查看已更改的许可证，请参阅相应的“**已更新用户**”活动。|
@@ -600,7 +601,7 @@ ms.locfileid: "45035657"
 
 下表列出了管理员或用户创建或更改 Microsoft 365 组或管理员使用 Microsoft 365 管理中心或 Azure 管理门户创建安全组时记录的组管理活动。 有关 Office 365 中组的详细信息，请参阅[在 Office 365 管理中心查看、创建和删除组](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已添加组|添加组|已创建组。|
 |已向组添加成员|向组添加成员|已将成员添加到组。|
@@ -613,7 +614,7 @@ ms.locfileid: "45035657"
 
 下表列出了管理员添加或更改已在 Azure AD 中注册的应用程序时记录的应用程序管理活动。 利用 Azure AD 进行身份验证的任何应用程序必须在本目录中注册。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已添加委派条目|添加委派条目|已对 Azure AD 中的应用程序创建/授予身份验证权限。|
 |已添加服务主体|添加服务主体|已在 Azure AD 中注册应用程序。 在目录中，应用程序由服务主体表示。|
@@ -628,7 +629,7 @@ ms.locfileid: "45035657"
 
 下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理管理员角色时记录的 Azure AD 角色管理活动。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |向角色添加成员|向角色添加角色成员|已向 Microsoft 365 中的管理员角色添加用户。|
 |已从目录角色删除用户|删除角色中的角色成员|已从 Microsoft 365 中的管理员角色删除用户。|
@@ -639,7 +640,7 @@ ms.locfileid: "45035657"
 
 下表列出了管理员在 Microsoft 365 管理中心或 Azure 管理门户中管理其组织时记录的与 Azure AD 目录和域相关的活动。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已向公司添加域|向公司添加域|已向你的组织添加域。|
 |已向目录添加合作伙伴|向公司添加合作伙伴|已向你的组织添加合作伙伴（委派管理员）。|
@@ -688,7 +689,7 @@ ms.locfileid: "45035657"
 
 工作区分析可让你深入了解整个组织内的组协作方式。 下表列出了由在工作区分析中分配有管理员角色或分析员角色的用户执行的活动。 分配有分析员角色的用户拥有对所有服务功能的完全访问权限，并且可使用产品进行分析。 分配有管理员角色的用户可以配置隐私设置和系统默认设置，并且可以在工作区分析中准备、上传和验证组织数据。 有关详细信息，请参阅[工作区分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已访问 OData 链接|AccessedOdataLink|分析员已访问查询的 OData 链接。|
 |已取消查询|CanceledQuery|分析员已取消正在运行的查询。|
@@ -724,7 +725,7 @@ ms.locfileid: "45035657"
 
 下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“活动”**** 列表中的“显示所有活动的结果”****。 使用日期范围框和“**用户**”列表，缩小搜索结果的范围。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已更改数据保留策略|SoftDeleteSettingsUpdated|验证管理员将网络数据保留策略的设置更新为了硬删除或软删除。 仅验证管理员可以执行此操作。|
 |已更改网络配置|NetworkConfigurationUpdated|网络管理员或验证管理员更改了 Yammer 网络的配置。 其中包括设置了导出数据和启用聊天室的时间间隔。|
@@ -761,7 +762,7 @@ ms.locfileid: "45035657"
 
 下表列出了审核日志中记录的内容浏览器活动。 内容浏览器，可以在 Microsoft 365 合规中心的数据分类工具上访问。 有关详细信息，请参阅[使用数据分类内容浏览器](data-classification-content-explorer.md)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |访问的项|LabelContentExplorerAccessedItem|管理员（或是作为内容浏览器内容查看器角色组成员的用户）使用内容浏览器来查看电子邮件或 SharePoint/OneDrive 文档。|
 ||||
@@ -770,7 +771,7 @@ ms.locfileid: "45035657"
 
 下表列出了可在审核日志中搜索的隔离活动。 有关隔离的详细信息，请参阅 [Office 365 中的隔离电子邮件](../security/office-365-security/quarantine-email-messages.md)。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已删除隔离邮件|QuarantineDelete|用户删除了被视为有害的电子邮件。|
 |已导出隔离邮件|QuarantineExport|用户导出了被视为有害的电子邮件。|
@@ -788,7 +789,7 @@ ms.locfileid: "45035657"
 > [!NOTE]
 > 如果 Forms 活动由共同创作者或匿名响应者执行，则记录方式会稍有不同。 有关详细信息，请参阅[共同创作者和匿名响应者执行的 Forms 活动](#forms-activities-performed-by-coauthors-and-anonymous-responders)部分。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已创建批注|CreateComment|表单所有者向测验添加批注或分数。|
 |已创建表单|CreateForm|表单所有者创建一个新表单。|
@@ -825,21 +826,21 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 下表介绍了合著者和匿名响应者执行的活动的审核记录中的审核活动和信息。
 
-|**活动类型**|**内部或外部用户**|**记录的用户 ID**|**登录到的组织**|**Forms 用户类型**|
+|活动类型|内部或外部用户|记录的用户 ID|登录到的组织|Forms 用户类型|
 |:-----|:-----|:-----|:-----|:-----|
 |共同创作活动|内部|UPN|表单所有者的组织|合著者|
 |共同创作活动|外部|UPN<br>|合著者的组织<br>|合著者|
-|共同创作活动|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>（ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织<br>|合著者|
+|共同创作活动|外部|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>（ID 的第二部分是哈希，不同用户的哈希有所不同）|表单所有者的组织<br>|合著者|
 |响应活动|外部|UPN<br>|响应者的组织<br>|响应者|
-|响应活动|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|
-|响应活动|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的情况将不同）|表单所有者的组织|响应者|
+|响应活动|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的哈希有所不同）|表单所有者的组织|响应者|
+|响应活动|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>（用户 ID 的第二部分是哈希，不同用户的哈希有所不同）|表单所有者的组织|响应者|
 ||||
 
 ### <a name="sensitivity-label-activities"></a>敏感度标签活动
 
 下表列出了因标记 SharePoint Online 和 Teams 网站的活动而产生的事件。
 
-|**友好名称**|**操作**|**说明**|
+|友好名称|操作|说明|
 |:-----|:-----|:-----|
 |已向网站应用敏感度标签|SensitivityLabelApplied|已向 SharePoint 或 Teams 网站应用敏感度标签。|
 |已从网站中删除敏感度标签|SensitivityLabelRemoved|已从 SharePoint 或 Teams 网站中删除敏感度标签。|
@@ -847,6 +848,21 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 |已更改应用于文件的敏感度标签|FileSensitivityLabelChanged|已使用 Office 网页版或自动标记策略向文档应用其他敏感度标签。|
 |已从文件除敏感度标签|FileSensitivityLabelRemoved|已使用 Office 网页版或自动标记策略从文档删除敏感度标签。|
 ||||
+
+### <a name="retention-policy-and-retention-label-activities"></a>保留策略和保留标签活动
+
+|友好名称|操作|说明|
+|:-----|:-----|:-----|
+| 保留策略的配置设置 |NewRetentionComplianceRule |管理员已配置新保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet。|
+| 已创建保留标签 |NewComplianceTag |管理员已创建新的保留标签。|
+| 已创建保留策略 |NewRetentionCompliancePolicy|管理员已创建新的保留策略。|
+| 已从保留策略中删除设置| RemoveRetentionComplianceRule<br/>| 管理员已删除保留策略的配置设置。 当管理员删除保留策略或运行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) cmdlet 时，很可能会记录此活动。|
+| 已删除保留标签 |RemoveComplianceTag | 管理员已删除保留标签。|
+| 已删除保留策略 |RemoveRetentionCompliancePolicy<br/> |管理员已删除保留策略。 |
+| 已启用保留标签的合规性记录选项<br/> |SetRestrictiveRetentionUI |管理员已运行 [RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) cmdlet，以便随后可以选择保留标签的 UI 配置选项，将内容标记为合规性记录。|
+| 已更新保留策略的设置 | SetRetentionComplianceRule | 管理员已更改现有保留策略的保留设置。 保留设置包括项目保留时长和保留期到期时对项目执行的操作（例如，删除项目、保留项目，或保留然后将其删除）。 此活动还对应于运行 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet。 |
+| 已更新保留标签 |SetComplianceTag  | 管理员已更新现有保留标签。|
+| 已更新保留策略 |SetRetentionCompliancePolicy |管理员已更新现有保留策略。 触发此事件的更新包括添加或排除应用该保留策略的内容位置。|
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理员审核日志
 
@@ -874,7 +890,6 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    请注意，Exchange 管理员审核日志以及审核日志中记录了相同的 Exchange 管理员活动。
-
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 

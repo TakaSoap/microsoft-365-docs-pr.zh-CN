@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560759"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588170"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -71,6 +71,7 @@ ms.locfileid: "46560759"
 |遵守 SEC 规则 17a-4|[使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
 |对在保留期结束时删除的内容有处置证明|[处置记录](disposition.md#disposition-of-records) |
+| 监视如何和在哪里应用保留标签 | [监视保留标签](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>保留标签的最终用户文档
 
