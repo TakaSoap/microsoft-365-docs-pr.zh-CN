@@ -1,8 +1,8 @@
 ---
 title: 在 Microsoft 365 中部署威胁防护功能
 description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和功能。
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -14,18 +14,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 47ebc8fa23511fbb653b87a31c8a39e1d99c504e
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 312df25bf4fe2b91bb60b4122378b4457b25723c
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527716"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588180"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
 
-[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的 cyberattacks （如[fileless 威胁](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）是常见事件。 企业需要保护自己及其客户。 此类攻击可能会导致贵组织的主要问题，包括从失去信任到财务 woes、业务威胁停机等。 防御威胁非常重要，但确定组织的时间、工作和资源的位置可能会有很大难度。 
+[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的 cyberattacks （如[fileless 威胁](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）是常见事件。 企业需要保护自己及其客户。 网络安全攻击可能会导致贵组织出现主要问题，包括从失去信任到财务 woes、业务威胁停机等。 防御威胁非常重要，但确定组织的时间、工作和资源的位置可能会有很大难度。 
 
-Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可降低安全团队的负载，以确保解决正确的项目。 Microsoft 安全解决方案的优势是基于我们在我们的[智能安全图形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理的 trillions 信号来构建的。 Microsoft 365 安全解决方案包括[Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，这是一种解决方案，它将跨电子邮件、数据、设备和标识的信号汇集在一起，以在组织中绘制高级威胁的图片。
+Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可降低安全团队的负载，以确保解决正确的项目。 Microsoft 安全解决方案的优势是基于我们在我们的[智能安全图形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理的 trillions 信号来构建的。 Microsoft 365 安全解决方案包括[Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，这将跨你的电子邮件、数据、设备和标识一起提供各种信号，以在组织中绘制高级威胁的图片。
 
 观看此视频，了解部署过程的概述。
 
@@ -52,10 +52,10 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 |解决方案/功能  |说明  |
 |---------|---------|
 |多重身份验证和条件访问     |针对泄露的标识和设备进行防护。 从这种保护开始，因为它是基础。 本指南中建议的配置包括作为先决条件的 Azure AD 标识保护。     |
-|Azure 高级威胁防护     |  一种基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。       | 
-|Office 365 高级威胁防护     | 保护您的组织免受电子邮件、链接（Url）和协作工具带来的恶意威胁的侵扰。 针对恶意软件、网络钓鱼、欺骗和其他攻击类型的保护。 这是建议的下一步，因为更改控制、从委任系统迁移设置以及其他注意事项可能需要更长时间才能部署。 <br><br>注意：请确保同时配置所有 Office 365 订阅（Exchange Online Protection）中包含的威胁防护功能。       |
-|Microsoft Defender 高级威胁防护    | 一种 endpoint protection 平台，可帮助防止、检测、调查和响应高级威胁。 此过程的部署时间较长，但如果其他管理员负责，则可以与其他功能并行执行。   |
-|Microsoft Cloud App Security     |   用于发现、调查和治理的云访问安全代理。 你可以在早期启用此，以开始收集数据和见解。 在您的 SaaS 应用程序中实施信息和其他目标保护涉及规划，并可能需要更多时间。       | 
+|Azure 高级威胁防护     |  一种基于云的安全解决方案，利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。 重点关注 Azure 高级威胁防护下一步，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。       | 
+|Office 365 高级威胁防护     | 保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 针对恶意软件、网络钓鱼、欺骗和其他攻击类型的保护。 建议使用 "配置 Office 365 高级威胁防护"，因为 "更改控制"、"从委任系统迁移设置" 和其他注意事项可能需要更长时间才能部署。 <br><br>注意：请确保在 Exchange Online Protection)  (配置所有 Office 365 订阅中所包含的威胁防护功能。       |
+|Microsoft Defender 高级威胁防护    | 一种 endpoint protection 平台，可帮助防止、检测、调查和响应高级威胁。 Microsoft Defender 高级威胁防护可能需要一段时间才能部署，但可以与其他功能并行进行配置。   |
+|Microsoft Cloud App Security     |   用于发现、调查和治理的云访问安全代理。 你可以及早启用 Microsoft 云应用安全，以开始收集数据和见解。 在您的 SaaS 应用程序中实施信息和其他目标保护涉及规划，并可能需要更多时间。       | 
 
 > [!TIP]
 > 具有多个安全团队的组织可以并行实施这些功能。

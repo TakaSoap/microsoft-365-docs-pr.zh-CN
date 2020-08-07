@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: 删除非活动邮箱
           href: delete-an-inactive-mailbox.md
-    - name: 监视数据治理
-      items:
-        - name: 查看文档的标签活动
-          href: view-label-activity-for-documents.md
-        - name: 使用标签分析查看标签使用情况
-          href: label-analytics.md
-        - name: 查看数据治理报告
-          href: view-the-data-governance-reports.md
     - name: 数据治理详情
       items:
         - name: 观看 Microsoft 数据治理团队的视频

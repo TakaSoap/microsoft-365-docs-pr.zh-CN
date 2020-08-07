@@ -1,8 +1,8 @@
 ---
 title: 在 Microsoft 365 中配置威胁防护功能的步骤
 description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和功能。
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522081"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588224"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中配置威胁防护功能
 
@@ -27,7 +27,7 @@ ms.locfileid: "46522081"
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>步骤1：设置多重身份验证和条件访问策略
 
-[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)（MFA）要求用户使用电话呼叫或验证器应用验证其身份。 [条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)定义了必须满足的某些要求，以便用户能够访问 Microsoft 365 中的应用和数据。 MFA 和条件访问策略协同工作以保护您的组织。 例如，如果有人尝试使用未启用 MFA 的帐户从移动设备登录，且条件访问策略要求 MFA 有效，则将阻止该用户登录。  
+[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) 要求用户使用电话呼叫或验证器应用验证其身份。 [条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)定义了必须满足的某些要求，以便用户能够访问 Microsoft 365 中的应用和数据。 MFA 和条件访问策略协同工作以保护您的组织。 例如，如果有人尝试使用未启用 MFA 的帐户从移动设备登录，且条件访问策略要求 MFA 有效，则将阻止该用户登录。  
 
 Microsoft 已测试并建议一组特定的条件访问和相关策略，用于保护对所有 SaaS 应用程序的访问，尤其是 Microsoft 365。 建议将策略用于比较基准、敏感和高度管控保护。 首先实施针对基准保护的策略。 
 
@@ -50,9 +50,9 @@ Microsoft 已测试并建议一组特定的条件访问和相关策略，用于�
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>步骤2：配置 Azure 高级威胁防护
 
-[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)（azure ATP）是一种基于云的安全解决方案，可与本地[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)信号配合使用，以识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕行为。
+[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (azure ATP) 是一种基于云的安全解决方案，可与您的内部部署[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)信号配合使用，以识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。
 
-Azure ATP 启用安全操作（SecOps）分析师和安全专业人员，以检测混合环境中的高级攻击：
+Azure ATP 启用安全操作 (SecOps) 分析师和安全专业人员努力检测混合环境中的高级攻击：
 - 使用基于学习的分析监视用户、实体行为和活动。
 - 保护存储在 Active Directory 中的用户标识和凭据。
 - 发现并调查整个击杀链中的可疑用户活动和高级攻击。
@@ -64,7 +64,7 @@ Azure ATP 启用安全操作（SecOps）分析师和安全专业人员，以检�
 
 1. [设置 AZURE ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)以保护你的主要环境。
 2. 保护所有[域控制器](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring)和[林](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)。
-3. 将[AZURE ATP 警报](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external)集成到安全操作（SecOps）工作流中。
+3. 将[AZURE ATP 警报](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external)集成到安全操作 (SecOps) 工作流中。
 
 ### <a name="more-information-about-azure-atp"></a>有关 Azure ATP 的详细信息
 
@@ -76,7 +76,7 @@ Azure ATP 启用安全操作（SecOps）分析师和安全专业人员，以检�
 
 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)将信号和协调功能合并到单个解决方案中。 使用集成的 Microsoft 威胁防护解决方案，安全专业人员可以将威胁信号与这些产品中的每个产品一起接收并确定威胁的完整作用域和影响，并将它们结合起来。如何进入环境、受影响的内容以及当前对组织的影响。 Microsoft 威胁防护采用自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户身份。
 
-Microsoft 威胁防护将警报、事件、自动调查和响应以及跨工作负载（Azure ATP、Office 365 ATP、Microsoft Defender ATP 和 Microsoft 云应用安全）的高级调查统一到了单个界面体验中。 配置了一个或多个高级威胁防护服务后，请打开 Microsoft 威胁防护。 新功能将不断添加到 Microsoft 威胁防护中;考虑选择接收预览功能。
+Microsoft 威胁防护统一了警报、事件、自动调查和响应，以及跨工作负载 (Azure ATP、Office 365 ATP、Microsoft Defender ATP 和 Microsoft 云应用安全) 的高级调查，并将其转换为单一的玻璃体验。 配置了一个或多个高级威胁防护服务后，请打开 Microsoft 威胁防护。 新功能将不断添加到 Microsoft 威胁防护中;考虑选择接收预览功能。
 
 ### <a name="to-set-up-microsoft-threat-protection"></a>设置 Microsoft 威胁防护
 
@@ -93,11 +93,10 @@ Microsoft 威胁防护将警报、事件、自动调查和响应以及跨工作�
 
 ## <a name="step-4-configure-office-365-advanced-threat-protection"></a>步骤4：配置 Office 365 高级威胁防护
 
-[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)（OFFICE 365 ATP）保护您的组织免受电子邮件中的恶意威胁（附件和 url）、Office 文档和协作工具。 下表列出了 Microsoft 365 E5 中包含的 Office 365 ATP 特性和功能：
+[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (OFFICE 365 ATP) 保护您的组织免受电子邮件中的恶意威胁 (附件和 url) 、Office 文档和协作工具。 下表列出了 Microsoft 365 E5 中包含的 Office 365 ATP 特性和功能：
 
-|||
-|---|---|
 |配置、保护和检测功能|自动化、调查、修正和教育功能|
+|---|---|
 |[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP 反网络钓鱼防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[威胁跟踪器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻击模拟器](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
@@ -118,7 +117,7 @@ Microsoft 威胁防护将警报、事件、自动调查和响应以及跨工作�
 
 ## <a name="step-5-configure-microsoft-defender-advanced-threat-protection"></a>步骤5：配置 Microsoft Defender 高级威胁防护
 
-[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection)（MICROSOFT defender ATP）通过威胁、高级攻击和数据泄露保护组织设备（也称为终结点）。 安全团队在管理其终结点的安全性时可提高效率。 稳健的工具可帮助组织随时使用带有[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞检测功能，从而及时修补系统。 自动检测和修复功能（如[攻击面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、[下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、[终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)）以及[自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)有助于保护设备免受恶意软件的危害。 在这些功能之上，客户可以根据需要获取主动通知并与 Microsoft 威胁专家进行协商，作为自愿加入托管的搜寻服务的一部分。 
+Microsoft defender[高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection) (MICROSOFT defender ATP) 保护组织设备 (也称为) 来自威胁、高级攻击和数据泄露的终结点。 安全团队在管理其终结点的安全性时可提高效率。 稳健的工具可帮助组织随时使用带有[威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞检测功能，从而及时修补系统。 自动检测和修复功能（如[攻击面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、[下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、[终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)）以及[自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)有助于保护设备免受恶意软件的危害。 在这些功能之上，客户可以根据需要获取主动通知并与 Microsoft 威胁专家进行协商，作为自愿加入托管的搜寻服务的一部分。 
 
 
 ### <a name="set-up-microsoft-defender-atp"></a>设置 Microsoft Defender ATP
@@ -155,7 +154,7 @@ Microsoft 威胁防护将警报、事件、自动调查和响应以及跨工作�
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>步骤7：监视状态并执行操作
 
-在设置并部署了威胁防护服务和功能之后，下一步是监视威胁检测，并采取适当的措施。 您最好的起点是 Microsoft 365 安全中心（ [https://security.microsoft.com](https://security.microsoft.com) ），您可以在其中监视和管理整个 Microsoft 标识、数据、设备、应用程序和基础结构中的安全性。 
+在设置并部署了威胁防护服务和功能之后，下一步是监视威胁检测，并采取适当的措施。 您最好的起点是 Microsoft 365 安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) ，您可以在其中监视和管理 Microsoft 身份、数据、设备、应用程序和基础结构中的安全性。 
 
 :::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 安全中心":::
 
@@ -191,7 +190,7 @@ Microsoft 365 提供了以下资源来帮助您在组织中通知用户：
 除了本指南之外，Microsoft 还建议您的用户执行本文中所述的操作：[保护您的帐户和设备免受黑客和恶意软件的攻击](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)。 这些操作包括：
 - 使用强密码
 - 保护设备 
-- 在 Windows 10 和 Mac 电脑（针对非托管设备）上启用安全功能
+- 在非托管设备 (上启用 Windows 10 和 Mac 电脑上的安全功能) 
     
 Microsoft 还建议用户采取以下文章中建议的操作来保护其个人电子邮件帐户：
 - [帮助保护你的 Outlook.com 电子邮件帐户](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
