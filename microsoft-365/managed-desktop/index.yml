@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft 托管桌面文档和资源
+### YamlMime:Landing
+title: Microsoft 托管桌面文档
+summary: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
 metadata:
   title: Microsoft 托管桌面文档
-  description: null
-  keywords: 设备、应用、管理
+  description: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: <p>面向决策者的Microsoft托管桌面简介：内容、工作方式以及可以为做什么？</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: 什么是 Microsoft 托管桌面？
-          - href: service-description/index.md
-            html: <p>所有 Microsoft 托管桌面部件的详细说明</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: 服务说明
-          - href: get-ready/index.md
-            html: <p>所有步骤帮助你的环境和组织准备好使用服务</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: 准备就绪
-          - href: get-started/index.md
-            html: <p>利用 Microsoft 托管桌面使你的组织参与其中，包括设置设备和部署应用程序</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: 入门
-          - href: working-with-managed-desktop/index.md
-            html: <p>有关使用此服务执行日常操作的全部信息</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: 使用 Microsoft 托管桌面
-  - title: 新文章和博客文章
-    items:
-      - type: paragraph
-        text: 阅读需要知道的最新实用信息。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[路线图] Microsoft 托管桌面完整指南'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[白皮书] 研究：日益增长的托管桌面服务'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[电子书] 使用现代化工作场所提升公司满意度'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: 视频
-    items:
-      - type: paragraph
-        text: 从 Indiana Pacers 技术副总裁了解 Microsoft 托管桌面的优势。
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: Microsoft 托管桌面总经理在年度 Ignite 会议上了共享了服务的所有亮点。
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564139"
+landingContent:
+- title: 关于 Microsoft 托管桌面
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Microsoft 托管桌面？
+      url: /microsoft-365/managed-desktop/intro/
+    - text: 服务说明
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: 准备就绪
+      url: get-ready/index.md
+    - text: 入门
+      url: get-started/index.md
+    - text: 使用 Microsoft 托管桌面
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: 新文章和博客文章
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[路线图] Microsoft 托管桌面完整指南'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[白皮书] 研究：日益增长的托管桌面服务'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[电子书] 使用现代化工作场所提升公司满意度'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: 视频
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 从 Lloyds Banking Group 工程总监处了解 Microsoft 托管桌面的好处。
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: 年度 Ignite 大会中 Microsoft 托管桌面的亮点
+      url: /microsoft-365/managed-desktop/service-description
