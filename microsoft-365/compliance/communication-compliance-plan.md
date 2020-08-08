@@ -1,5 +1,5 @@
 ---
-title: 规划通信合规性
+title: 通信合规性规划
 description: 了解有关在组织中使用通信合规性的规划。
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 214c5376d4c074525253707e181eee69cefff85e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045845"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597419"
 ---
-# <a name="plan-for-communication-compliance"></a>规划通信合规性
+# <a name="plan-for-communication-compliance"></a>通信合规性规划
 
 在组织中开始使用[通信合规性](communication-compliance.md)之前，您的信息技术和合规性管理团队应检查重要的规划活动和注意事项。 在以下方面全面了解和规划部署可帮助确保实现和使用通信合规性功能，并与解决方案的最佳做法保持一致。
 
@@ -42,7 +42,19 @@ ms.locfileid: "44045845"
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>规划调查和修正工作流
 
-选择 "专用审阅者" 以在[Microsoft 365 合规性中心](https://compliance.microsoft.com/)中的定期节奏上监视和查看警报。 请记住，您需要[创建新的角色组](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)，以启用具有**监管审核管理员**、**案例管理**、**合规性管理员**和**审阅**角色的审阅者的权限，以使用策略匹配来调查和修正邮件。
+选择 "专用利益干系人" 以在[Microsoft 365 合规性中心](https://compliance.microsoft.com/)中的定期节奏上监视和查看警报和事例。 请确保了解如何将不同的通信合规性角色分配给组织中的利益干系人。
+
+根据您希望管理通信策略和通知的方式，您需要为管理员、审阅者和调查人员创建一个或多个新的角色组。 您可以选择将用户分配给特定角色组，以管理不同的通信合规性功能集。 或者，您可以决定创建一个角色组，并将所有通信合规性角色分配给该组。 创建单个角色组或多个组以最大限度地满足合规性管理要求。
+
+在配置通信合规性角色组时计划从这些角色选项中进行选择：
+
+|**角色**|**角色权限**|
+|:-----|:-----|
+| **通信合规性管理员** | 分配了此角色的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配了此角色的用户无法查看邮件警报。 |
+| **通信合规性分析** | 分配了此角色的用户可以查看将其分配为审阅者的策略、查看邮件元数据 (不是邮件内容) 、升级到其他审阅者或向用户发送通知。 分析师无法解决待处理的警报。 |
+| **通信合规性调查** | 分配了此角色的用户可以查看邮件元数据和内容、升级到其他审阅者、升级到高级电子数据展示事例、向用户发送通知以及解决警报。 |
+| **通信合规性查看器** | 分配了此角色的用户可以访问通信合规性主页上的所有报告小部件，并且可以查看所有通信合规性报告。 |
+| **通信合规性案例管理** | 分配了此角色的用户可以管理案例并对通知进行操作。 为管理员、分析师和调查人员创建自定义角色组时，需要此角色。 查看器的自定义组不需要分配此角色。 |
 
 ## <a name="plan-for-policies"></a>规划策略
 

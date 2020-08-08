@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d35179d38277ada22db9bc7ad879f1f7405a9aec
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936857"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597628"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 为 Microsoft 团队、Exchange 和 Yammer 通信快速配置冒犯性语言策略
 
-Microsoft 365 中的通信合规性通过帮助您检测、捕获和采取补救措施对组织中不适当的邮件进行补救，来帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以在组织中调查扫描的电子邮件、Microsoft 团队、Yammer 或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
+Microsoft 365 中的通信合规性可帮助您在组织中检测、捕获和处理不适当的邮件，从而帮助最大限度地减少通信风险。 通过预定义和自定义策略，可以扫描策略匹配的内部和外部通信，以便指定的审阅者可以对其进行检查。 审阅者可以在组织中调查扫描的电子邮件、Microsoft 团队、Yammer 或第三方通信，并采取适当的补救措施以确保它们符合组织的邮件标准。
 
-Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来监视冒犯性语言。 他们一直使用 Microsoft 365，主要是为其员工提供电子邮件、Microsoft 团队和 Yammer 支持，但需要在工作区骚扰方面强制实施公司策略的新要求。 Contoso IT 管理员和合规性专家对使用 Microsoft 365 的基础有一个基本的了解，并且正在寻找有关如何快速开始实现通信合规性的端到端指南。
+Contoso Corporation 是一个虚构的组织，需要快速配置一个策略来监视冒犯性语言。 他们一直使用 Microsoft 365，主要用于电子邮件、Microsoft 团队和 Yammer 对其用户的支持，但具有在工作区骚扰方面强制实施公司策略的新要求。 Contoso IT 管理员和合规性专家对使用 Microsoft 365 的基础有一个基本的了解，并且正在寻找有关如何快速开始实现通信合规性的端到端指南。
 
 此案例研究将介绍快速配置通信合规性策略以监视攻击性语言通信的基础知识。 本指南包括：
 
@@ -45,24 +45,24 @@ Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规
 
 - 需要访问通信合规性功能的 IT 管理员。
 - 需要创建和管理通信策略的合规性专家。
-- 需要调查和修正通信合规性警报的合规性专家和其他部门（人力资源、法律等）中的其他同事。
+- 其他部门的合规性专家和其他同事 (人力资源、法律等需要调查和修正通信合规性警报的 ) 。
 - 将为通信合规性攻击性语言策略的范围内的用户。
 
 ### <a name="licensing"></a>许可
 
 第一步是确认 Contoso 的 Microsoft 365 许可包括对通信合规性解决方案的支持。 若要访问和使用通信合规性，Contoso IT 管理员需要验证 Contoso 是否具有以下各项之一：
 
-- Microsoft 365 E5 订阅（付费或试用版）
+- Microsoft 365 E5 订阅 (付费或试用版) 
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项
 - Microsoft 365 E3 订阅 + Microsoft 365 E5 内幕人士风险管理加载项
-- Microsoft 365 A5 订阅（付费或试用版）
+- Microsoft 365 A5 订阅 (付费版或试用版) 
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项
 - Microsoft 365 A3 订阅 + Microsoft 365 A5 内幕成员风险管理加载项
-- Microsoft 365 G5 订阅（付费或试用版）
+- Microsoft 365 G5 订阅 (付费版或试用版) 
 - Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性附加
 - Microsoft 365 G5 订阅 + Microsoft 365 G5 内幕版风险管理加载项
-- Office 365 企业版 E5 订阅（付费或试用版）
-- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序（不再适用于新订阅，请参阅注意）
+- Office 365 企业版 E5 订阅 (付费或试用版) 
+- Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序 (不再可用于新订阅，请参阅 note) 
 
 他们还必须确认必须为通信合规性策略中包括的用户分配上述许可证之一。
 
@@ -71,7 +71,7 @@ Contoso IT 管理员和合规性专家在 Microsoft 365 中参加了有关合规
 
 Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 
-1. IT 管理员登录到**microsoft 365 管理中心** [（ https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 管理中心**  >  **帐单**  >  **许可证**。
+1. IT 管理员登录到**microsoft 365 管理中心** [ (https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 管理中心**  >  **帐单**  >  **许可证**。
 
 2. 在这里，他们确认他们有一个[许可证选项](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#before-you-begin)，其中包括支持通信合规性。
 
@@ -79,18 +79,30 @@ Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 
 ### <a name="permissions-for-communication-compliance"></a>通信合规性的权限
 
-默认情况下，全局管理员不具有对通信合规性功能的访问权限。 [必须配置权限](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance)，以便 Contoso IT 管理员和合规性专家可以访问通信合规性。
+有五个角色用于配置管理通信合规性功能的权限。 为了使通信合规性在 Microsoft 365 合规性中心中可用作菜单选项，若要继续执行这些配置步骤，则会为 Contoso 管理员分配*通信合规性管理员*角色。
 
-1. Contoso IT 管理员登录到**Office 365 安全与合规中心**权限页面[（ https://protection.office.com/permissions) ](https://protection.office.com/permissions)使用全局管理员帐户的凭据，并选择在 Microsoft 365 中查看和管理角色的链接。
+Contoso 决定创建一个 custome 角色组，并将所有通信合规性角色分配给该组。 这使 Contoso 能够更轻松地快速入门，并最大限度地满足合规性管理要求。
+
+Contoso 将创建一个包含所有以下通信合规性角色的角色组：
+
+|**角色**|**角色权限**|
+|:-----|:-----|
+| **通信合规性管理员** | 分配了此角色的用户可以创建、读取、更新和删除通信合规性策略、全局设置和角色组分配。 分配了此角色的用户无法查看邮件警报。 |
+| **通信合规性分析** | 分配了此角色的用户可以查看将其分配为审阅者的策略、查看邮件元数据 (不是邮件内容) 、升级到其他审阅者或向用户发送通知。 分析师无法解决待处理的警报。 |
+| **通信合规性调查** | 分配了此角色的用户可以查看邮件元数据和内容、升级到其他审阅者、升级到高级电子数据展示事例、向用户发送通知以及解决警报。 |
+| **通信合规性查看器** | 分配了此角色的用户可以访问通信合规性主页上的所有报告小部件，并且可以查看所有通信合规性报告。 |
+| **通信合规性案例管理** | 分配了此角色的用户可以管理案例并对通知进行操作。 为管理员、分析师和调查人员创建自定义角色组时，需要此角色。 查看器的自定义组不需要分配此角色。 |
+
+1. Contoso IT 管理员使用全局管理员帐户的凭据登录到**Office 365 安全与合规中心**权限[ (https://protection.office.com/permissions) ](https://protection.office.com/permissions)页面，并选择在 Microsoft 365 中查看和管理角色的链接。
 2. 选择 "**创建**" 后，将新角色组命名为 "*通信合规性*" 的友好名称，然后选择 "**下一步**"。
-3. 他们选择 "**选择角色**"，然后选择 "**添加**"。 他们通过选中*监管审核管理员*、*案例管理*、*合规性管理员*和*审阅*的复选框来添加所需的角色，然后选择 "**添加**"、 **"完成" 和 "** **下一步**"。
+3. 他们选择 "**选择角色**"，然后选择 "**添加**"。 它们通过选中*通信合规性管理*、*通信合规性分析*、*通信合规性调查*、*通信合规性查看器*和*通信合规*性调查的复选框来添加所需的角色，然后选择 "**添加**"、 **"完成" 和 "** **下一步**"。
 
-![通信合规性角色](../media/communication-compliance-case-roles.png)
+    ![通信合规性角色](../media/communication-compliance-case-roles.png)
 
 4. 接下来，IT 管理员选择 "**选择成员**"，然后选择 "**添加**"。 选中要为其创建策略并管理策略匹配的邮件的所有用户和组的复选框。 他们将 IT 管理员、合规性专家和其他同事添加到在初始规划中确定的人力资源和法律部门，然后选择 "**添加**"、"**完成**" 和 "**下一步**"。
 5. 若要完成权限，IT 管理员选择 "**创建角色组**" 以完成。 在 Contoso 的 Microsoft 365 服务中，角色将需要大约30分钟的时间才能生效。
 
-![通信合规性检查](../media/communication-compliance-case-review.png)
+    ![通信合规性检查](../media/communication-compliance-case-review.png)
 
 ## <a name="step-2-accessing-communication-compliance-in-microsoft-365"></a>步骤2：访问 Microsoft 365 中的通信合规性
 
@@ -103,13 +115,13 @@ Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 
 ### <a name="starting-directly-from-the-communication-compliance-solution"></a>直接从通信合规性解决方案开始
 
-访问解决方案的最快方法是直接登录到**通信合规性**（ <https://compliance.microsoft.com/supervisoryreview> ）解决方案。 使用此链接，Contoso IT 管理员和合规性专家将转到通信合规性概述仪表板，您可以在其中快速查看通知的状态并从预定义的模板创建新策略。
+访问解决方案的最快方法是直接登录到**通信合规性** (<https://compliance.microsoft.com/supervisoryreview>) 解决方案。 使用此链接，Contoso IT 管理员和合规性专家将转到通信合规性概述仪表板，您可以在其中快速查看通知的状态并从预定义的模板创建新策略。
 
 ![通信合规性概述](../media/communication-compliance-case-overview.png)
 
 ### <a name="starting-from-the-microsoft-365-compliance-center"></a>从 Microsoft 365 合规性中心开始
 
-Contoso IT 管理员和合规性专家访问通信合规性解决方案的另一种简单方法是直接登录**Microsoft 365 合规中心** [（ https://compliance.microsoft.com) ](https://compliance.microsoft.com)。 登录后，用户只需选择 "**全部显示**" 控制即可显示所有合规性解决方案，然后选择要开始的**通信合规性**解决方案。
+Contoso IT 管理员和合规性专家访问通信合规性解决方案的另一种简单方法是直接登录到**Microsoft 365 合规中心** [ (https://compliance.microsoft.com) ](https://compliance.microsoft.com)。 登录后，用户只需选择 "**全部显示**" 控制即可显示所有合规性解决方案，然后选择要开始的**通信合规性**解决方案。
 
 ![合规性中心](../media/communication-compliance-case-center.png)
 
@@ -121,11 +133,11 @@ Contoso IT 管理员和合规性专家也可以通过选择 Microsoft 365 解决
 
 ### <a name="starting-from-the-microsoft-365-admin-center"></a>从 Microsoft 365 管理中心开始
 
-若要在从 microsoft 365 管理中心开始时访问通信合规性，Contoso IT 管理员和合规性专家登录到 microsoft 365 管理中心[ https://admin.microsoft.com) （](https://admin.microsoft.com)并导航到**microsoft 365 管理中心**  >  **合规性**。
+若要在从 microsoft 365 管理中心开始时访问通信合规性，Contoso IT 管理员和合规性专家登录到 microsoft 365 管理中心[ (https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 admin center**  >  **合规性**。
 
 ![通信合规性链接](../media/communication-compliance-case-compliance-link.png)
 
-这将打开**Office 365 安全与合规中心**，并且必须选择页面顶部的横幅中提供的**Microsoft 365 合规性中心**的链接。
+此操作将打开**Office 365 安全与合规中心**，并且必须选择页面顶部的横幅中提供的**Microsoft 365 合规性中心**的链接。
 
 ![Office 365 安全与合规中心](../media/communication-compliance-case-scc.png)
 
@@ -151,22 +163,22 @@ Contoso IT 管理员查看并完成有关启用审核的[分步说明](https://d
 
 通信合规性要求组织的 Yammer 租户处于本机模式，以监视私人邮件和公共社区对话中的冒犯性语言。
 
-Contoso IT 管理员确保他们在[microsoft 365 主题中查看 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)中的信息，并按照在[为 Microsoft 365 的本机模式配置 Yammer 网络](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)主题中运行迁移工具的步骤进行操作。
+Contoso IT 管理员确保他们在[microsoft 365 文章中查看 Yammer 本机模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)中的信息，并按照在[为 Microsoft 365 的本机模式配置 Yammer 网络](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)主题中运行迁移工具的步骤进行操作。
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>为范围内用户设置组
 
-Contoso 合规性专家希望将所有员工添加到将监视攻击性语言的通信策略中。 他们可以决定单独将每个员工用户帐户添加到策略中，但他们已决定在使用此策略的用户的**所有员工**通讯组时，会轻松得多，并节省大量时间。
+Contoso 合规性专家希望将所有用户添加到将监视攻击性语言的通信策略中。 他们可以决定单独将每个用户帐户添加到策略中，但他们已决定使用此策略的用户的**所有用户**通讯组的时间更简单，并节省时间。
 
-他们需要创建一个新组来包含所有 Contoso 员工，因此他们需要执行以下步骤：
+他们需要创建一个新组，以包含所有 Contoso 用户，因此他们需要执行以下步骤：
 
-1. Contoso it 管理员：登录**microsoft 365 管理中心** [（ https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 管理中心**  >  **组**  >  **组**。
+1. Contoso it 管理员：登录**microsoft 365 管理中心** [ (https://admin.microsoft.com) ](https://admin.microsoft.com)并导航到**microsoft 365 管理中心**  >  **组**  >  **组**。
 2. 他们选择 "**添加组**" 并完成向导，以创建新的*Microsoft 365 组*或*通讯组*。
 
-![组](../media/communication-compliance-case-all-employees.png)
+    ![组](../media/communication-compliance-case-all-employees.png)
 
-3. 创建新组之后，需要将所有 Contoso 用户添加到新组中。 他们打开**exchange 管理中心** [（ https://outlook.office365.com/ecp) ](https://outlook.office365.com/ecp)并导航到**exchange 管理中心**"  >  **收件人**"  >  **组**。 Contoso IT 管理员选择成员资格区域和他们创建的新的*所有员工*组，并在向导中选择 "**编辑**" 控件以将所有 Contoso 员工添加到新组中。
+3. 创建新组之后，需要将所有 Contoso 用户添加到新组中。 他们打开**exchange 管理中心** [ (https://outlook.office365.com/ecp) ](https://outlook.office365.com/ecp)并导航到**Exchange 管理中心**  >  **收件人**  >  **组**。 Contoso IT 管理员选择成员资格区域和他们创建的新的*所有员工*组，并在向导中选择 "**编辑**" 控件以将所有 Contoso 用户添加到新组中。
 
-![Exchange 管理中心](../media/communication-compliance-case-eac.png)
+    ![Exchange 管理中心](../media/communication-compliance-case-eac.png)
 
 ### <a name="creating-the-policy-to-monitor-for-offensive-language"></a>创建用于监视冒犯性语言的策略
 
@@ -174,12 +186,12 @@ Contoso 合规性专家希望将所有员工添加到将监视攻击性语言的
 
 1. Contoso IT 管理员和合规性专家登录**Microsoft 365 合规性中心**，并从左侧导航窗格中选择 "**通信合规性**"。 此操作将打开**概述**仪表板，其中包含有关通信合规性策略模板的快速链接。 它们通过选择模板的 "**入门**" 来选择**用于攻击性语言**模板的监视器。
 
-![通信合规性攻击性语言模板](../media/communication-compliance-case-template.png)
+    ![通信合规性攻击性语言模板](../media/communication-compliance-case-template.png)
 
 2. 在策略模板向导中，Contoso IT 管理员和合规性专家将共同完成以下三个必填字段：**策略名称**、**要监督的用户或组**以及**审阅者**。
-3. 由于策略向导已经为策略建议了名称，IT 管理员和合规性专家决定保留建议的名称，并将重点放在其余字段上。 他们选择 "要管理的**用户或组**的*所有雇员*" 组，然后选择应调查和修正 "**审阅者**" 字段的策略通知的合规性专家。 配置策略和开始收集警报信息的最后一步是选择 "**创建策略**"。
+3. 由于策略向导已经为策略建议了名称，IT 管理员和合规性专家决定保留建议的名称，并将重点放在其余字段上。 他们选择 "要管理的**用户或组**" 字段的 "*所有用户*" 组，然后选择应调查和修正**审阅者**字段策略通知的合规性专家。 配置策略和开始收集警报信息的最后一步是选择 "**创建策略**"。
 
-![通信合规性冒犯性语言向导](../media/communication-compliance-case-wizard.png)
+    ![通信合规性冒犯性语言向导](../media/communication-compliance-case-wizard.png)
 
 ## <a name="step-4-investigate-and-remediate-alerts"></a>步骤4：调查并修正警报
 
