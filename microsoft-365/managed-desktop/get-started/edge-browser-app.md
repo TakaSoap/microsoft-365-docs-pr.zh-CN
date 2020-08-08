@@ -1,5 +1,5 @@
 ---
-title: 新建 Microsoft Edge
+title: 新版 Microsoft Edge
 description: ''
 keywords: 浏览器、Microsoft 托管桌面、Microsoft 365、服务、文档
 ms.service: m365-md
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170667"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597493"
 ---
 # <a name="new-microsoft-edge-app"></a>新建 Microsoft Edge 应用
 
@@ -25,11 +25,18 @@ ms.locfileid: "45170667"
 
 若要将 Microsoft 托管桌面设备迁移到新的 Microsoft Edge 浏览器，请通过 Microsoft 托管桌面门户文件提供 IT 支持票证。 在您对票证进行存档时，我们会将边缘稳定通道部署到测试组，然后在每个后续的部署组中每隔24小时部署它。 若要暂停部署，请文件另一个票证请求操作保留。
 
+[Beta 频道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 也可用于组织内的请求实现代表验证。 Microsoft 托管桌面将根据需要将应用程序部署到测试和第一组，以便除了稳定通道之外，所有这些用户都具有 Beta 通道。 对于需要访问 Beta 频道的任何其他用户，请将其添加到新式的 " **Workplace Edge Beta users** " 组，并让他们从公司门户安装它
+
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge 的更新
 
-Microsoft 托管桌面部署 Microsoft Edge 的[稳定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)，每六周自动更新一次。 对稳定通道的更新由 Microsoft Edge 产品组[逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)进行，以确保为客户提供最佳体验。 Microsoft Edge Beta 通道目前不可用。
+Microsoft 托管桌面部署 Microsoft Edge 的[稳定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)，每六周自动更新一次。 对稳定通道的更新由 Microsoft Edge 产品组[逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)进行，以确保为客户提供最佳体验。 
+
+[Beta 通道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 部署到组织内的代表验证的测试和第一组中的设备。 此渠道完全受支持，并在每六周的时间内自动更新一次新功能。
 
 若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge[更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+
+### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge Beta 通道
+
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft 托管桌面管理的设置
 
@@ -44,7 +51,7 @@ Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策
 
 Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在具有 Chromium 扩展模型的已知风险 sassociated，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许用户级别的本机邮件主机（无需管理员权限即可安装）
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许没有管理员权限的情况下 (安装用户级别的本机邮件主机) 
 
 **默认值：** 禁用
 
@@ -66,19 +73,19 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 ### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智能屏幕
 
-#### <a name="configure-microsoft-defender-smartscreen"></a>配置 Microsoft Defender SmartScreen
+#### <a name="configure-windows-defender-smartscreen"></a>配置 Windows Defender SmartScreen
 
 **默认值：** 了
 
 默认情况下启用以帮助保护最终用户。
 
-#### <a name="microsoft-defender-smartscreen-prompts-for-sites"></a>Microsoft Defender SmartScreen 网站提示
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen 网站提示
 
 **默认值：** 了
 
 建议您不要禁用此设置，因为这将允许用户忽略警告，并继续执行潜在的恶意网站。
 
-#### <a name="prevent-bypassing-of-microsoft-defender-smartscreen-warnings-about-downloads"></a>阻止绕过关于下载的 Microsoft Defender SmartScreen 警告
+#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>阻止绕过关于下载的 Windows Defender SmartScreen 警告
 
 **默认值：** 了
 
@@ -99,6 +106,19 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 **默认值：** 禁用
 
 建议不要让最终用户在其设备上保存密码。
+
+### <a name="internet-explorer-mode-in-microsoft-edge"></a>Microsoft Edge 中的 Internet Explorer 模式
+IE 模式在 Microsoft Edge 中，便于在单个浏览器中使用您的组织所需的所有网站。 它对与 Chromium 呈现引擎兼容的网站使用集成的 Chromium 引擎，并使用 Trident MSHTML 引擎从 Internet Explorer 11 (IE11) 获取对 IE 功能没有依赖关系的网站。 [了解详细信息] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+
+默认情况下，Microsoft 托管桌面为你的设备启用 Internet Explorer 模式 
+
+#### <a name="internet-explorer-mode-integration"></a>Internet Explorer 模式集成
+**默认值：** Internet Explorer 模式
+
+默认情况下，设备设置为使用 Internet Explorer 模式，但您可以将其设置为在独立 Internet Explorer 11 窗口中打开网站。 若要更改此文件，请提供支持请求。
+
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>将网站添加到企业模式网站列表
+若要在 Internet Explorer 模式下打开网站，必须将其包含在[企业网站列表](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 维护和部署企业网站列表是您的责任。 有关详细信息，请参阅[使用配置企业模式站点列表策略配置](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>其他设置
 
@@ -132,6 +152,9 @@ Microsoft 托管桌面不支持基本或摘要式身份验证方案。
 ### <a name="install-extensions-silently"></a>自动安装扩展
 
 您还可以使用管理模板设置 Microsoft Edge 以安装分机，而不向用户发出警告。 您可以在 "**计算机配置" > Microsoft Edge > 扩展中找到它，> 控制自动安装哪些扩展**。
+
+### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新策略
+若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge[更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="other-common-enterprise-policies"></a>其他常见的企业策略
 

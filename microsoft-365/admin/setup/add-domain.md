@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Microsoft 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079721"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592294"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -139,11 +139,12 @@ ms.locfileid: "45079721"
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains （使用 SecureServer DNS 托管的 GoDaddy 经销商）
+- 使用 SecureServer DNS 托管) 的 SecureServer 或 WildWestDomains (GoDaddy 经销商
     - [MadDog 域](https://www.maddogdomains.com/)
     - [CheapNames](https://www.cheapnames.com)
 

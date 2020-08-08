@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,14 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: 了解如何升级到新的订阅。
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何升级到不同的计划。
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403170"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597615"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升级到其他计划
 
@@ -78,6 +74,10 @@ ms.locfileid: "44403170"
 
 如果要使用较少的服务移动到计划，可以[手动更改计划](change-plans-manually.md)，也可以[致电支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>我只想升级部分用户。 如何执行此操作？
+
+如果只想将一些用户升级到其他计划，但需要先购买新订阅，请参阅[手动更改计划](change-plans-manually.md)。 如果您已具有要将用户升级到的订阅，请参阅[将用户移动到其他订阅](move-users-different-subscription.md)。
+
 ## <a name="why-some-changes-take-longer"></a>为什么某些更改需要花费更长时间
 
 **分配的用户数：** 如果有大量分配的用户，则升级将需要更长时间才能将其移动到新计划。
@@ -88,7 +88,7 @@ ms.locfileid: "44403170"
 
 如果在 "**升级**" 选项卡上看不到任何计划，则表示您的计划无法自动升级。 在某些情况下，您可能能够解决问题，以便查看可用于升级的计划，或者可以改为手动升级或更改计划。
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>为什么没有列出要升级的计划？
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>为什么没有列出要升级的计划？
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>你现在无法升级订阅，因为你的用户数超过许可证。
 
@@ -148,7 +148,7 @@ ms.locfileid: "44403170"
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升级计划对我的服务和帐单有何作用？
 
-使用 "**切换计划**" 按钮（或新管理中心中的 "**升级**" 选项卡）自动升级计划时，您的服务和帐单将受到影响。
+使用 "**切换计划**" 按钮自动升级计划时 (或新管理中心内的 "**升级**" 选项卡) ，您的服务和帐单将受到影响。
 
 ### <a name="access-to-services"></a>对服务的访问
 

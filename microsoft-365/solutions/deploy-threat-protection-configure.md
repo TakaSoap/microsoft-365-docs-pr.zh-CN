@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: fb1290a0f0b884fdbc630cbfcd10cd1102c8acae
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588224"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597505"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中配置威胁防护功能
 
@@ -156,7 +156,7 @@ Microsoft defender[高级威胁防护](https://docs.microsoft.com/windows/securi
 
 在设置并部署了威胁防护服务和功能之后，下一步是监视威胁检测，并采取适当的措施。 您最好的起点是 Microsoft 365 安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) ，您可以在其中监视和管理 Microsoft 身份、数据、设备、应用程序和基础结构中的安全性。 
 
-:::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 安全中心":::
+![Microsoft 365 安全中心](../media/solutions-architecture-center/m365-security-center.png)
 
 Microsoft 365 安全中心专为安全管理员和安全操作团队而设计。 在 Microsoft 365 安全中心中，可以执行以下操作：
 - 查看[安全得分](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)的组织的整体安全运行状况。
