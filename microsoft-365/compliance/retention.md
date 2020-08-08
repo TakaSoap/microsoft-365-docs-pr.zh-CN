@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: b435d80a6f2ce4f056e446bbc32e5580d063d4a9
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372475"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588204"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -233,10 +233,24 @@ Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留�
 
 显式分配的保留标签优先于隐式分配的保留标签。 有关详细信息，请参阅本页上的[保留原则或优先性是什么？](retention.md#the-principles-of-retention-or-what-takes-precedence)部分。
 
-#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用内容搜索来查找所有已应用有特定保留标签的内容
+#### <a name="monitoring-retention-labels"></a>监视保留标签
 
-在保留标签分配到内容后（无论是用户分配还是自动应用），你都可通过内容搜索来查找所有已使用特定保留标签进行分类的内容。
-  
+在 Microsoft 365 合规中心，使用 **“数据分类”** > **“概述”** 来监视保留标签在租户中的使用方式，并确定已标记项目的位置。 有关详细信息（包括重要先决条件），请参阅[了解你的数据 - 数据分类概述](data-classification-overview.md)。
+
+然后，你可以通过使用[内容资源管理器](data-classification-content-explorer.md)和[活动资源管理器](data-classification-activity-explorer.md)来深入了解详细信息。
+
+> [!TIP]
+>请考虑使用其他的一些数据分类见解（如可训练分类器和敏感信息类型），帮助你识别可能需要保留或删除的内容，或者作为记录进行管理的内容。
+
+Office 365 安全与合规中心的保留标签概述信息与 **“信息管理政策”** > **“仪表板”** 中的概述信息相同，更加详细的信息可以在 **“信息管理政策”** > **“标签活动资源管理器”** 中找到。 有关从较旧版本的管理中心监视保留标签的更多信息，请参阅以下文档：
+- [查看数据管理报告](view-the-data-governance-reports.md)
+- [使用标签分析查看标签使用情况](label-analytics.md)
+- [查看文档的标签活动](view-label-activity-for-documents.md)
+
+#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>使用“内容搜索”来查找所有带有特定保留标签的内容
+
+在将保留标签应用到内容后（无论是由用户应用还是自动应用），你都可以通过内容搜索来查找已经应用特定保留标签的所有项目。
+
 创建内容搜索时，选择“**保留标签**”条件，然后输入完整的保留标签名称或标签名称的一部分，并使用通配符。 有关详细信息，请参阅[适用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ![保留标签条件](../media/retention-label-condition.png)
@@ -258,6 +272,7 @@ Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留�
 |从内容被标记或事件发生时开始计算保留期 | 否 | 是 |
 |处置评审 | 否| 是 |
 |最长 7 年的处置证明 | 否 |是，当项被声明为记录时|
+|审核管理员活动| 是 | 是|
 |识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
 请注意，可以同时将保留策略和保留标签用作互补的保留方法。 例如：
@@ -292,6 +307,10 @@ Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留�
 4. **最短删除期优先。** 同样，如果内容遵循多个删除内容而无保留期的保留设置，内容会在最短保留期结束时删除。 
 
 最后，保留策略或保留标签无法永久删除任何保留用于电子数据展示的内容。 当保留解除时，此内容重新符合工作负载的安全位置中的清除过程的条件。
+
+## <a name="auditing-retention-configuration"></a>审核保留配置
+
+[启用审核后](turn-audit-log-search-on-or-off.md)，管理员针对保留政策和保留标签的操作会被保存到审核日志中。 例如，创建、配置或删除保留政策或标签时会创建审核事件。 如需完整的列表，请参阅[保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>用于保留策略和保留标签的 PowerShell cmdlet
 

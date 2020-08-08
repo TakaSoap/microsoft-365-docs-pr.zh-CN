@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430325"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588214"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
@@ -99,12 +99,12 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 ![按敏感度标签分类占位符屏幕快照对内容进行细分](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。 要开始使用标签，请参阅：
->- [敏感度标签](sensitivity-labels.md)或[配置 Azure 信息保护策略](https://docs.microsoft.com/azure/information-protection/configure-policy)（对于 AIP）
+> 如果尚未创建或发布任何敏感度标签，或者任何内容均未应用敏感度标签，则此卡片将显示消息“未检测到任何敏感度标签”。 若要开始使用敏感度标签，请参阅：
+>- [开始使用敏感度标签](get-started-with-sensitivity-labels.md)或[配置 Azure 信息保护策略](https://docs.microsoft.com/azure/information-protection/configure-policy)（对于 AIP）
 
 ## <a name="top-retention-labels-applied-to-content"></a>应用于内容的最常用保留标签
 
-保留标签用于管理组织中的内容的处置方式。 应用后，它们可用于控制在删除文档之前将其保留多长时间，是否应在删除之前对其进行评审，保留期何时到期或是否应将其标记为永远无法删除的记录。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
+保留标签用于管理组织中的内容的保留和处置方式。 应用后，它们可用于控制项目在删除之前的保留方式，是否应在删除之前对其进行评审，保留期何时到期以及是否应将其标记为记录。 有关详细信息，请参阅[了解保留策略和保留标签](retention.md)。
 
 “应用最多的保留标签”卡片显示具有给定保留标签的项目数量。
 
