@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521203"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597517"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -66,7 +66,7 @@ Teams 可提供一个协作空间来安全地存储敏感的客户端数据，�
 
 另一种常见的方案是将 Teams 用作“虚拟数据室”来安全地协作，包括存储和管理文档。 投资银行、资产管理或私募股权公司内的团队成员和财团可安全地进行交易或投资协作。 跨职能团队通常会参与规划和完成此类交易，并且能够安全地共享数据和执行对话是一项核心要求。 与外部投资者安全共享相关文档也是关键要求。 Teams 提供安全且完全可审核的位置，可从中集中存储、保护和共享投资数据。
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="一群办公室职员在会议上讨论大屏幕上的图像。":::
+![一群办公室职员在会议上讨论大屏幕上的图像](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams：改进协作并降低合规性风险
 
@@ -156,7 +156,7 @@ Identity Protection 工具使组织可以完成以下三项关键任务：
 
 Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户和实体行为分析 (UEBA) 以及机器学习 (ML) 的高级检测支持的云智能，帮助组织自动防止标识泄露。
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="一位信息工作者做演示时，会有另外五位工作者观看。":::
+![五名信息工作者观看另一名工作者做演示](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>识别敏感数据并防止数据丢失
 Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的敏感数据，包括：
@@ -178,7 +178,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 
 Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户和实体行为分析以及机器学习的高级检测支持的云智能，帮助组织自动防止标识泄露。
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="信息工作者显示在大型监视器数组前面。":::
+![一名信息工作者在一大排显示屏前做演示](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>堡垒防守
 
@@ -199,7 +199,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 * 发现并调查整个击杀链中的可疑用户活动和高级攻击。
 * 在简单的时间线上提供明确的事件信息，以实现快速会审。
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="办公室职员在小型会议室开会。一个职员做演示。":::
+![办公室职员在一个小会议室里开会。 一位职员在做演示。](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>管理数据和记录
 
@@ -285,7 +285,7 @@ Microsoft 365 中的信息屏障支持 Teams 中的对话和文件。 他们可�
  
 * [FINRA 条例 3120（监督控制系统）](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120)要求公司有一个监督控制策略和程序 (SCP) 系统，验证由条例 3110 定义的书面监督过程。 公司不仅要有 WSP，还需要有每年对这些程序进行测试的政策，以验证其确保遵守适用证券法律法规的能力。 可使用基于风险的方法体系和采样来定义测试范围。 在其他要求中，此条例要求公司向高级管理层提供年度报告，其中包括测试结果摘要和为响应测试结果确定的任何重大例外情况或修改程序。
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="办公室职员查看屏幕上的图表，其他人则在后台开会。":::
+![一位办公室职员在屏幕上查看图表和表格，而其他人在后台会面。](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>通信合规性
 
@@ -296,7 +296,7 @@ Microsoft 365 中的通信合规性使组织可以预配置策略，以捕获员
 
 除了遵守 FINRA 条例，通信合规性还允许组织监视通信是否符合其他法律要求、公司政策和道德标准。 通信合规性提供内置威胁、骚扰和猥亵语言分类器，可帮助在审查通信时减少误报，从而在调查和修正过程中节省审阅者的时间。 它还允许组织在发生敏感变更（如合并和收购或领导变更）时通过监视通信来降低风险。
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="信息工作者关注屏幕。":::
+![一位信息工作者注视着屏幕。](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>防止数据泄露和内部风险
 
@@ -312,15 +312,15 @@ Microsoft 365 最近启动了一个内部风险管理解决方案，它将 Micro
 
 Microsoft 365 中的内部风险管理显著增强了组织的功能，可监视和调查内部风险，同时允许组织继续满足数据隐私法规要求，并在需要更高级别操作的情况下遵循既定的升级途径。
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="一个呼叫中心的工作人员在小隔间里观看屏幕的同时键入。":::
+![在小隔间里的呼叫中心工作人员一边看屏幕一边打字。](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>租户限制
 处理敏感数据并严格重视安全性的组织通常希望控制用户可访问的联机资源。 同时，他们希望通过诸如 Office 365 之类的联机服务启用安全协作。 因此，控制用户可访问的 Office 365 环境将成为一个挑战，因为非企业 Office 365 环境可用于恶意或无意地从企业设备中窃取数据。 过去，组织将限制用户可从公司设备访问的域或 IP 地址。 但在以云为中心的世界里，用户需要合法访问 Office 365 服务，因此，此方法并不适用。
 
 Microsoft 365 提供的租户[限制](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)可以解决此问题。 可通过配置租户限制来限制员工使用未经授权的身份（不属于公司目录的身份）访问外部 Office 365 企业租户。 目前，租户限制适用于租户，仅允许访问配置列表中出现的租户。 Microsoft 将继续开发此解决方案，以提高控制粒度并增强其提供的保护。
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="图形":::
+![图形](../media/clo1717-corporate-office-001.jpg)
  
-## <a name="conclusion"></a>总结
+## <a name="conclusion"></a>结束语
 
 Microsoft 365 和 Teams 为金融服务公司提供了一个集成、全面的解决方案，以便在企业中实现简单而强大的基于云的协作和通信功能。 通过使用 Microsoft 365 中的安全与合规技术，机构可以采用更安全和合规的方式运营，同时提供强大的安全控制来保护数据、标识、设备和应用程序，以避免各种操作风险，包括网络安全和内部风险。 Microsoft 365 提供了一个非常安全的平台，金融服务组织可以在保护其公司、员工和客户的同时实现更多功能。

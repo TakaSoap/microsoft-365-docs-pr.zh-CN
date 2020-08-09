@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: '了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。 '
-ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560867"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597361"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -75,7 +75,9 @@ ms.locfileid: "46560867"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>防止再次使用上一次使用过的密码
 
-如果要防止用户重新使用旧密码，可通过在 Azure AD 中强制实施密码历史记录来实现。 请参阅[创建自定义密码策略](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
+如果要防止用户重新使用旧密码，可通过在本地 Active Directory (AD) 中强制实施密码历史记录来实现。 请参阅[创建自定义密码策略](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
+
+在 Azure AD 中，当用户更改密码后，不能再次使用上一个密码。 密码策略适用于直接在 Azure AD 中创建和管理的所有用户帐户。 无法修改此密码策略。 请参阅 [Azure AD 密码策略](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>将用户密码哈希从本地 Active Directory 同步到 Azure AD (Microsoft 365)
 
