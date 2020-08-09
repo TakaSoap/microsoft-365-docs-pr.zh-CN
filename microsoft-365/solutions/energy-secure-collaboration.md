@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521013"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597451"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用云的各种行业的全局视图的图示比拟":::
+![使用云的各种行业的全局视图的图示比拟](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>简介
 能源行业为社会提供了人们每日所需的燃料和关键基础结构。 为了确保与大型电力系统相关的基础结构的可靠性，监管机构对能源行业组织施加了严格的标准。 这些监管标准不仅涉及发电和输电，还涉及对能源公司日常运营至关重要的数据和通信。 
 
