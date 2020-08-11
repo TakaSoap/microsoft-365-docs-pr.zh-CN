@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e192ea19345da0c168b2bb09fd8ec51959ea47fb
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126629"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608319"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -40,16 +40,28 @@ Microsoft 365 允许管理员使用数据连接器将第三方数据从社交媒
 
 |第三方数据  |诉讼保留|电子数据展示  |保留策略  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android 数据<sup>1</sup>](archive-android-archiver-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[在&T 网络数据<sup>1</sup>](archive-att-network-archiver-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[铃声网络数据<sup>1</sup>](archive-bell-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Bloomberg 消息](archive-bloomberg-message-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[企业数字数据<sup>1</sup>](archive-enterprise-number-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[HR 数据](import-hr-data.md) ||||||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |[ICE 聊天](archive-icechat-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[即时 Bloomberg](archive-instant-bloomberg-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[O2 网络数据<sup>1</sup>](archive-o2-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[TELUS 网络数据<sup>1</sup>](archive-telus-network-data.md)    |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Verizon 网络数据<sup>1</sup>](archive-verizon-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 ||||||||
 
-上表中列出的第三方数据（HR 数据除外）将导入到用户邮箱中。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
+> [!NOTE]
+> <sup>1</sup>连接器由 TeleMessage 提供。 在 Microsoft 365 中存档数据之前，您必须使用 TeleMessage 为您的组织设置其存档服务。 有关详细信息，请参阅此数据类型的分步说明中的 "先决条件" 部分。
+>
+
+除了将 HR 数据) 导入到用户邮箱之外，上表中列出的第三方数据 (。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支持第三方数据的合规性解决方案概述
 
@@ -57,7 +69,7 @@ Microsoft 365 允许管理员使用数据连接器将第三方数据从社交媒
 
 ### <a name="litigation-hold"></a>诉讼保留
 
-你将[诉讼保留](create-a-litigation-hold.md)置于用户邮箱以保留第三方数据。 创建保留时，可以指定保留持续时间（也称为*基于时间的保留*），以便在指定时间段内保留已删除和已修改的第三方数据，然后从邮箱中永久删除。 或者，也可以无限期保留内容（称为*无限保留*），或者直到删除诉讼保留。
+你将[诉讼保留](create-a-litigation-hold.md)置于用户邮箱以保留第三方数据。 创建保留时，可以指定保留期 (也称为*基于时间的保留*) ，以便在指定时间段内保留已删除和已修改的第三方数据，然后从邮箱中永久删除。 或者，您可以只保留内容 (被称为*无限保留*) 或在删除诉讼保留之前。
 
 ### <a name="ediscovery"></a>电子数据展示
 
@@ -73,7 +85,7 @@ Microsoft 365 中的三个主要电子数据展示工具是内容搜索、核心
 
 ### <a name="retention-policies"></a>保留策略
 
-您可以将[保留策略](retention.md)应用于用户邮箱，以便在保留期过期后保留并删除第三方数据（和其他邮箱内容）。 您还可以使用保留策略删除特定年龄的第三方数据或在保留期到期时触发处置评审。
+您可以将[保留策略](retention.md)应用于用户邮箱，以便在保留期到期后保留并删除第三方数据 (和其他邮箱内容) 。 您还可以使用保留策略删除特定年龄的第三方数据或在保留期到期时触发处置评审。
 
 ### <a name="records-management"></a>记录管理
 
