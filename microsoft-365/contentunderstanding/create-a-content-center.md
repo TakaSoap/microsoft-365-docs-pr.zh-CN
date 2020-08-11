@@ -1,5 +1,5 @@
 ---
-title: 创建内容中心（预览）
+title: '创建内容中心 (预览) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何创建内容中心。
-ms.openlocfilehash: ced47f8029079910479dd9aa5c43b39870a56aea
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 5332ffa195519aebd5ae8dd2c26d7d62fd9b3267
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536963"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612746"
 ---
-# <a name="create-a-content-center-preview"></a>创建内容中心（预览）
+# <a name="create-a-content-center-preview"></a>创建内容中心 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。</br>

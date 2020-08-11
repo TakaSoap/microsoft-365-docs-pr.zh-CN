@@ -1,5 +1,5 @@
 ---
-title: '处理主题中心中的主题（预览） '
+title: '使用主题 center (Preview 中的主题)  '
 description: 操作方法：使用主题中心中的主题。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 3519b8a1ddcaae09779ae8761ac368e3bd84294f
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+localization_priority: None
+ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539853"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612486"
 ---
-# <a name="work-with-topics-in-the-topic-center-preview"></a>处理主题中心中的主题（预览）
+# <a name="work-with-topics-in-the-topic-center-preview"></a>使用主题 center (Preview 中的主题) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。

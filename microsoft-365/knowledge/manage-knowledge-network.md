@@ -1,5 +1,5 @@
 ---
-title: '管理您的知识管理网络（预览） '
+title: '管理您的知识管理网络 (预览)  '
 description: 如何设置知识管理。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 87275dba78ab402a9ea9553198ce1a84072e3351
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540114"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612616"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>管理您的知识管理网络（预览）
+# <a name="manage-your-knowledge-management-network-preview"></a>管理您的知识管理网络 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
@@ -60,9 +60,9 @@ ms.locfileid: "46540114"
 
     ![选择如何查找主题](../media/content-understanding/k-manage-select-topic-source.png) </br>
    
-    如果您有大量要排除的网站（如果选择 **"全部" （"选定网站" 除外**）或 "包括" （如果**只选择了 "选定网站**"），则可以选择使用网站名称和 url 上传 CSV 文件。 如果要使用 CSV 模板文件，则可以选择 "**下载网站模板 .csv"。**
+    如果您有大量要排除的网站 (如果选择 **"全部" （选择的网站除外**) 或包含 (）（如果只选择**了 "选定网站**) "，则可以选择使用网站名称和 url 上传 CSV 文件。 如果要使用 CSV 模板文件，则可以选择 "**下载网站模板 .csv"。**
 
-3. 选择 **“保存”**。
+3. 选择“**保存**”。
 
 ##  <a name="change-who-can-see-topics-in-your-organization"></a>更改可以查看组织中的主题的用户
 
@@ -75,7 +75,7 @@ ms.locfileid: "46540114"
     c. **没人**</br>
 
     ![谁可以查看主题](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. 选择 **“保存”**。  
+3. 选择“**保存**”。  
  
 > [!Note] 
 > 虽然此设置允许您选择组织中的任何用户，但只有分配有知识管理许可证的用户才能查看主题。
@@ -96,7 +96,7 @@ ms.locfileid: "46540114"
 
     ![创建和编辑主题](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
 
-3. 选择 **“保存”**。</br>
+3. 选择“**保存**”。</br>
 
 若要更新谁有权管理主题，请执行以下操作：
 
@@ -107,7 +107,7 @@ ms.locfileid: "46540114"
 
     ![管理主题](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
 
-3. 选择 **“保存”**。</br>
+3. 选择“**保存**”。</br>
 
 
 ##  <a name="update-your-topic-center-name"></a>更新你的主题中心名称

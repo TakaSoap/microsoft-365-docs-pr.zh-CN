@@ -1,5 +1,5 @@
 ---
-title: '设置知识管理（预览） '
+title: '设置知识管理 (预览)  '
 description: 如何设置知识管理。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: d4bc45bd1c88d4043df661972399dc6740dbed84
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540126"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612544"
 ---
-# <a name="set-up-knowledge-management-preview"></a>设置知识管理（预览）
+# <a name="set-up-knowledge-management-preview"></a>设置知识管理 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
@@ -53,7 +53,7 @@ ms.locfileid: "46540126"
 
 若要设置您的知识网络，请执行以下操作：
 
-1. 在 Microsoft 365 管理中心（admin.microsoft.com）中，选择 "**设置**"，然后查看 "**组织知识库**" 部分。
+1. 在 Microsoft 365 管理中心 (admin.microsoft.com) 中，选择 "**设置**"，然后查看 "**组织知识库**" 部分。
 2. 在 "**组织知识**" 部分，单击 "**将人员连接到知识**"。<br/>
 
     ![将用户连接到知识](../media/content-understanding/admin-org-knowledge-options.png) </br>

@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e44411fdc14279dac92b8829503fd636e3225600
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011835"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608229"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
 虽然[Microsoft 365 安全中心](overview-security-center.md)是用于监视和管理您的标识、数据、设备和应用程序的安全的新家，但您需要访问各种门户以实现某些特定的任务。
@@ -53,4 +53,4 @@ ms.locfileid: "44011835"
 | Microsoft 365 合规中心 | 管理数据处理策略并确保[遵守管理法规](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 管理中心 | 配置 Microsoft 365 服务;管理对 Microsoft 365 服务的角色、许可证和跟踪更新 | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Microsoft Endpoint Manager 管理中心 | 使用[Microsoft 终结点管理器](https://docs.microsoft.com/mem/configmgr/)通过组合 Intune 和配置管理器功能来管理和保护设备 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
-| Microsoft Intune 门户 | 使用[Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune)部署设备策略和监视设备以实现合规性 | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+| Microsoft Intune 门户 | 使用[Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune)部署设备策略和监视设备以实现合规性 | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

@@ -1,5 +1,5 @@
 ---
-title: 授予用户对主题中心的权限（预览）
+title: '向用户授予对主题中心 (预览的权限) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何为用户授予在主题中心执行任务的权限
-ms.openlocfilehash: 0e4e05d0addfdb754459e67acfdff3f61c7c812e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 2b7c745146b0386ff7f8bc2dcaf126a530b77598
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537115"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612568"
 ---
-# <a name="give-user-permissions-to-the-topic-center-preview"></a>授予用户对主题中心的权限（预览）
+# <a name="give-user-permissions-to-the-topic-center-preview"></a>向用户授予对主题中心 (预览的权限) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 [了解有关 Project Cortex 的详细信息](https://aka.ms/projectcortex) 

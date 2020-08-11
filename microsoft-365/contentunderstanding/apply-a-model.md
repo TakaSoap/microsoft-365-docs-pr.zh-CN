@@ -1,5 +1,5 @@
 ---
-title: 将文档理解模型应用于文档库（预览）
+title: '将文档理解模型应用于文档库 (预览) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何将已发布的模型应用到 SharePoint 文档库。
-ms.openlocfilehash: 7e5f3f02c2679769515b27026918a15c901c896e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537045"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612676"
 ---
-# <a name="apply-a-document-understanding-model-preview"></a>应用文档理解模型（预览）
+# <a name="apply-a-document-understanding-model-preview"></a>应用文档理解模型 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。

@@ -1,5 +1,5 @@
 ---
-title: '主题中心概述（预览） '
+title: '主题中心概述 (预览)  '
 description: 了解主题中心。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: bbc6a6b63f742939675e366b7fe95aaa3900d30e
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: e9306ff3f797e03422a40ceb189a76dee331ddd9
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540090"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612498"
 ---
-# <a name="topic-center-overview-preview"></a>主题中心概述（预览）
+# <a name="topic-center-overview-preview"></a>主题中心概述 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。

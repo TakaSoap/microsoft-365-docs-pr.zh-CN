@@ -1,5 +1,5 @@
 ---
-title: 创建提取程序（预览）
+title: '创建提取程序 (预览) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何创建提取程序
-ms.openlocfilehash: 76cb17df069c6905080baabb0b57d765fe5cc94c
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 64dede9f6613da82c65ca12c6c335a25301f5b9e
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540102"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612758"
 ---
-# <a name="create-an-extractor-preview"></a>创建提取程序（预览）
+# <a name="create-an-extractor-preview"></a>创建提取程序 (预览) 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "46540102"
 
 创建提取程序将打开 "提取程序" 页，您将在其中看到示例文件的列表，并在查看器中显示列表中的第一个文件。
 
-1. 在查看器中，选择要从文件中提取的数据。 例如，如果要提取*开始服务日期*，您将在第一个文件中突出显示它的日期值（*星期一，2019年10月14日*）。 然后单击“**保存**”。  您将在 "**标签**" 列下的 "标记的示例" 列表中看到该文件的值显示。
+1. 在查看器中，选择要从文件中提取的数据。 例如，如果要提取 "*开始" 服务日期*，您将在第一个文件中突出显示该日期的日期值 (*2019) 年10月14日星期一*的第一个文件中。 然后单击“**保存**”。  您将在 "**标签**" 列下的 "标记的示例" 列表中看到该文件的值显示。
 2. 选择 "**下一个文件**" 以自动保存并打开查看器列表中的下一个文件，也可以选择 "**保存**"，然后从 "**标记的示例**" 列表中选择另一个文件。
 3. 在查看器中，重复步骤1和步骤2，在将标签保存到五个文件中之前执行此操作。
 
@@ -75,14 +75,14 @@ ms.locfileid: "46540102"
 
 若要帮助确定*服务开始日期*，可以创建模式说明。
 
-1. 在 "说明" 部分，选择 "**新建**"，然后键入一个名称（例如， *Date*）。
+1. 在 "说明" 部分，选择 "**新建**"，然后键入名称 (例如， *Date*) 。
 2. 对于 "类型"，选择 "**模式列表**"。
 3. 对于值，需要提供在示例文件中显示的日期变体。 例如，如果您的日期格式显示为 "0/00/0000"，则可以在文档中输入可能出现的任何变体，如：
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
-4. 选择 **“保存”**。
+4. 选择“**保存**”。
 
 
 ### <a name="use-the-explanation-library"></a>使用解释库
@@ -97,7 +97,7 @@ ms.locfileid: "46540102"
 
     ![解释库](../media/content-understanding/explanation-library.png) 
 
-4. 在 "**创建说明**" 页面上，"解释" 库中的*日期*信息将自动填充字段。 选择 **“保存”**。</br>
+4. 在 "**创建说明**" 页面上，"解释" 库中的*日期*信息将自动填充字段。 选择“**保存**”。</br>
 
     ![解释库](../media/content-understanding/date-explanation-library.png) 
 
@@ -117,10 +117,10 @@ ms.locfileid: "46540102"
 
 对于我们的示例，我们注意到文本字符串的*开始服务日期*始终在实际值之前。 为了帮助确定服务开始日期，我们可以创建短语说明。
 
-1. 在 "说明" 部分中，选择 "**新建**"，然后键入一个名称（例如，"*前缀字符串*"）。
+1. 在 "说明" 部分，选择 "**新建**"，然后键入名称 (例如，*前缀 String*) 。
 2. 对于 "类型"，选择 "**短语列表**"。
 3. 使用*服务开始日期*作为值。
-4. 选择 **“保存”**。
+4. 选择“**保存**”。
 
     ![解释库](../media/content-understanding/prefix-string.png) 
 

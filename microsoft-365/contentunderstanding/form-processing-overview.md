@@ -1,5 +1,5 @@
 ---
-title: 表单处理概述（预览）
+title: '表单处理概述 (预览) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 Project Cortex 中的表单处理。
-ms.openlocfilehash: 9709c8170f5dc6ce0edbeb2d90cb4e1f6d759c64
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: dbea06cdf2dbb232a7ea48c78d7ea968dd18b9c0
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540054"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612722"
 ---
-# <a name="form-processing-overview-preview"></a>表单处理概述（预览）
+# <a name="form-processing-overview-preview"></a>表单处理概述 (预览) 
 > [!Note]
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
 

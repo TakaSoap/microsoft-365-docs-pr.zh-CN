@@ -1,5 +1,5 @@
 ---
-title: 创建表单处理模型（预览）
+title: " (预览中创建表单处理模型) "
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Project Cortex 中创建表单处理模型。
-ms.openlocfilehash: d3ca64ff5923e95704b72fd748884549a18624a3
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540138"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612770"
 ---
-# <a name="create-a-form-processing-model-preview"></a>创建表单处理模型（预览）
+# <a name="create-a-form-processing-model-preview"></a> (预览中创建表单处理模型) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
@@ -48,7 +48,7 @@ ms.locfileid: "46540138"
 1. 在文档库中，选择 "**自动**" 菜单，选择 " **AI 生成器**"，然后选择 "**创建表单处理模型**"。
 
     ![创建 AI 生成器模型](../media/content-understanding/create-ai-builder-model.png)</br>
-2. 在 "**新建表单处理模型**" 窗格中的 "**名称**" 字段中，键入您的模型的名称（例如，"*采购订单*"）。
+2. 在 "**新建表单处理模型**" 窗格中的 "**名称**" 字段中，键入模型 (的名称，例如，"*采购订单*) "。
 
     ![新表单处理模型](../media/content-understanding/new-form-model.png)</br> 
 

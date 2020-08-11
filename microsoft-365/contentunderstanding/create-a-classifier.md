@@ -1,5 +1,5 @@
 ---
-title: 创建分类器（预览）
+title: '创建 (预览的分类器) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何创建分类器
-ms.openlocfilehash: 029ac16310f8e95a69a713896b1109a778eb3b8d
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 088770ace8914b583b184c78c3ce110d9d68b4c7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536962"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612604"
 ---
-# <a name="create-a-classifier-preview"></a>创建分类器（预览）
+# <a name="create-a-classifier-preview"></a>创建 (预览的分类器) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
@@ -37,7 +37,7 @@ ms.locfileid: "46536962"
 
 创建分类器时，您需要创建*说明*，以帮助定义模型，方法是通过对此文档类型的预期持续查找的常用数据进行标注。 
 
-您可以使用文档类型（"示例文件"）的示例来帮助 "培训" 您的模型，以确定具有相同内容类型的文件。
+您可以使用文档类型的示例 ( "示例文件" ) 帮助 "培训" 您的模型以确定具有相同内容类型的文件。
 
 若要创建分类器，需要执行以下操作：
 1. 命名模型
@@ -119,7 +119,7 @@ ms.locfileid: "46536962"
 2. 在 "培训" 页上的 "**训练有素的文件**" 部分中，您将看到先前已标记的示例文件的列表。 从列表中选择一个正则文件，它将显示在查看器中。
 3. 在 "说明" 部分，单击 "**新建**"，然后单击 "**空白**"。
 4. 在 "**创建说明**" 页上：</br>
-    a. 键入**名称**（例如，"披露 Block"）。</br>
+    a. 键入**名称** (例如，"披露 Block" ) 。</br>
     b. 选择 "**类型**"。 对于我们的示例，我们将选择**短语 "列表**"，因为我们要添加文本字符串。</br>
     c. 在 "**请键入此处**" 框中，键入字符串。  对于我们的示例，我们将添加 "请求其他披露"。 如果字符串需要区分大小写，则可以选择 "区分**大小写**"。</br>
     d. 单击“**保存**”。
@@ -127,7 +127,7 @@ ms.locfileid: "46536962"
     ![创建说明](../media/content-understanding/explanation.png) 
     
  
-5.  模型现在将检查您创建的解释是否足够好，以确定剩余的标记的示例文件正确无误，如正面和负数示例。 在 "训练有素的文件" 部分中，选中 "完成培训后的**评估**" 列以查看结果。  如果您创建的解释足以匹配已标记为（正数或负数）的内容，则文件将显示**匹配**的值。
+5.  模型现在将检查您创建的解释是否足够好，以确定剩余的标记的示例文件正确无误，如正面和负数示例。 在 "训练有素的文件" 部分中，选中 "完成培训后的**评估**" 列以查看结果。  如果您创建的解释足以满足您为其标记的内容 (正或负) ，则文件将显示**匹配**的值。
 
     ![创建说明](../media/content-understanding/match.png) 
 

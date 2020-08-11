@@ -1,5 +1,5 @@
 ---
-title: 知识管理概述（预览）
+title: '知识管理概述 (预览) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 项目 Cortex 中的知识管理概述。
-ms.openlocfilehash: 99b0d0ece9ef8271666b1978db7947f3e3f2a4e8
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540067"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612592"
 ---
-# <a name="knowledge-management-0verview-preview"></a>知识管理0verview （预览）
+# <a name="knowledge-management-0verview-preview"></a>知识管理 0verview (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 [了解有关 Project Cortex 的详细信息](https://aka.ms/projectcortex) 
@@ -52,7 +52,7 @@ ms.locfileid: "46540067"
 提供正确权限的用户将能够在主题中心中执行以下操作：
 
 - 确认或拒绝在租户中发现的主题。
-- 根据需要手动创建新主题（例如，如果未提供足够的信息，无法通过 AI 发现它）。
+- 根据需要手动创建新主题 (例如，如果未提供足够的信息，则无法通过 AI) 发现它。
 - 编辑现有主题页面。</br>
 
 有关详细信息，请参阅[主题 center 中的使用主题一主题](work-with-topics.md)。  

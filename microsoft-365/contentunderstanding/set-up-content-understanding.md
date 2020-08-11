@@ -1,5 +1,5 @@
 ---
-title: '设置内容了解（预览） '
+title: '设置内容了解 (预览)  '
 description: 如何设置项目 Cortex。
 author: efrene
 ms.author: efrene
@@ -9,16 +9,16 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fca80e45dfa45ee5da9521854c6eebfbd87d8859
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539898"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612698"
 ---
-# <a name="set-up-content-understanding-preview"></a>设置内容了解（预览）
+# <a name="set-up-content-understanding-preview"></a>设置内容了解 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
@@ -53,7 +53,7 @@ ms.locfileid: "46539898"
      对于**哪个 SharePoint 库应显示用于创建表单处理模型的选项**，您可以选择：</br>
     - **所有 sharepoint 库**，使其可用于租户中的所有 sharepoint 库。</br>
     - **仅选定网站中的库**，然后选择要使其可用的网站。</br>
-    - 如果当前不希望使其对任何网站可用（可以在安装后更改此库），则**没有 SharePoint 库**。
+    - 如果您当前不希望将其用于任何网站，则**没有 SharePoint 库** (可以在安装程序) 后更改此库。
 </br>
 
    ![配置表单处理](../media/content-understanding/admin-configforms.png)
