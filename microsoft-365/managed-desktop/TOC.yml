@@ -103,6 +103,13 @@
     - name: 使用 Microsoft 托管桌面
       href: working-with-managed-desktop/index.md
       items:
+        - name: 处理报告
+          href: working-with-managed-desktop/reports.md
+          items:
+            - name: 设备合规性报告
+              href: working-with-managed-desktop/device-compliance-report.md
+            - name: 设备清点报告
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: 使用见解
           href: working-with-managed-desktop/insights.md
           items:
