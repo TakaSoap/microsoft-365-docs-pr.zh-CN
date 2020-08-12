@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46602005"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635018"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -52,6 +52,17 @@ ms.locfileid: "46602005"
 - [Microsoft 威胁防护的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="june-2020"></a>2020 年 6 月
+
+### <a name="keeping-up-with-office-whats-new-management"></a>与 Office 保持最新的管理
+
+几个月前，我们添加了一个设置，通过它可以管理[在用户的 Office 应用中显示的内容的新增消息](#office-whats-new-management)。 本月，我们发布了一个新的主页卡片，可帮助你快速操作并跟踪你希望向组织中的用户显示的**新**消息。
+
+### <a name="docs-training-and-videos-june"></a> (六月) 的文档、培训和视频
+
+- [团队入门](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
 
 ## <a name="may-2020"></a>2020 年 5 月
 
@@ -202,7 +213,7 @@ ms.locfileid: "46602005"
 |当前名称 |新的名称  |
 |---------|---------|
 |Office 365 商业协作版     |   Microsoft 365 商业基础版      |
-| Office 365 商业高级版     |    Microsoft 365 商业标准版     |
+|Office 365 商业高级版     |    Microsoft 365 商业标准版     |
 |Microsoft 365 商业版     |    Microsoft 365 商业高级版     |
 |Office 365 商业版     |    Microsoft 365 商业应用版       |
 |Office 365 专业增强版    |   适用于企业的 Microsoft 365 应用程序      |
@@ -403,7 +414,7 @@ Howdy，合作伙伴！  (无法帮助我。 ) 我们也为你提供了本月更
 本月我们提供了有关帐单和订阅的一些更新：
 
 - 基于设备的订阅：可以为 Microsoft 365 管理中心内的设备分配或取消分配**microsoft 365 应用程序教育版 (设备) **许可证。 **Microsoft 365 教育版 (设备) **是一个附加许可证，允许您将许可证分配给设备。 转到 "**付费**  >  **产品**" 以查找并购买许可证。
-- 基于用户的许可证管理：我们已更新了如何将**用户**  >  **活动用户**中的许可证分配给新样式。 有关更多信息，请参阅：
+- 基于用户的许可证管理：我们已更新了如何将**用户**  >  **活动用户**中的许可证分配给新样式。 有关详细信息，请参阅：
   - [向用户分配许可证](manage/assign-licenses-to-users.md)
   - [取消分配用户许可证](manage/remove-licenses-from-users.md)
 

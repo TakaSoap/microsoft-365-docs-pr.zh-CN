@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597551"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632125"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -68,11 +68,11 @@ ms.locfileid: "46597551"
 在开始使用通信合规性之前，必须确定哪些用户需要查看其通信。 在策略中，用户电子邮件地址标识要监督的个人或人员组。 这些组的一些示例是 Microsoft 365 组、基于 Exchange 的通讯组列表、Yammer 社区和 Microsoft 团队频道。 此外，还可以将特定用户或组排除在扫描时使用特定的排除组或组列表。
 
 >[!IMPORTANT]
->通信合规性策略涵盖的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+>通信合规性策略涵盖的用户必须拥有 Microsoft 365 E5 合规性许可证、具有高级合规性加载项的 Office 365 企业版 E3 许可证，或包含在 Office 365 企业版 E5 订阅中。 如果你没有现有的企业版 E5 计划，并且想要尝试进行通信合规性，则可以[注册 Office 365 企业版 e5 的试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ## <a name="reviewers"></a>Reviewers
 
-创建通信合规性策略时，必须确定谁审查受监督的用户的邮件。 在该策略中，用户电子邮件地址标识了要查看受监督的通信的个人或人员组。 AAll 审阅者必须在 Exchange Online 上托管邮箱，并且必须将邮箱分配给*通信合规性分析*或*通信合规性调查*角色。  (分析师或调查人员) 的审阅者还必须分配了*通信合规性案例管理*角色。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
+创建通信合规性策略时，必须确定谁审查受监督的用户的邮件。 在该策略中，用户电子邮件地址标识了要查看受监督的通信的个人或人员组。 所有审阅者都必须在 Exchange Online 上托管邮箱，并且必须将邮箱分配给*通信合规性分析*或*通信合规性调查*角色。  (分析师或调查人员) 的审阅者还必须分配了*通信合规性案例管理*角色。 将审阅者添加到策略时，他们将自动收到一封电子邮件，通知他们对策略的分配，并提供有关审阅过程的信息的链接。
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>受监督的用户和审阅者的组
 
@@ -246,13 +246,13 @@ ms.locfileid: "46597551"
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,7 +268,7 @@ ms.locfileid: "46597551"
 | **Date** | 组织中的用户发送或接收邮件的日期。 |
 | **File 类** | 基于邮件类型（*邮件*或*附件*）的邮件类。 |
 | **有附件** | 邮件中的附件状态。 |
-| **Item 类** | 基于邮件类型、电子邮件、Microsoft 团队聊天、Bloonmberg 等的邮件源。有关常见项目类型和邮件类别的详细信息，请参阅[项目类型和邮件类别](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
+| **Item 类** | 基于邮件类型、电子邮件、Microsoft 团队聊天、Bloomberg 等的邮件源。有关常见项目类型和邮件类别的详细信息，请参阅[项目类型和邮件类别](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件人域** | 向其发送邮件的域。 默认情况下，此域通常为 Microsoft 365 订阅域。 |
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |
@@ -289,7 +289,7 @@ ms.locfileid: "46597551"
 |:-----|:-----|
 | 聚合 | 简单聚合 |
 | 阈值 | 4个活动 |
-| Window | 60分钟 |
+| Window | 60 分钟 |
 
 >[!Note]
 >活动的警报策略阈值触发设置支持的通信合规性策略的最小值为3或更高。

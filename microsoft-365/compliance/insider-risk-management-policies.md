@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199533"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632171"
 ---
 # <a name="insider-risk-management-policies"></a>内幕风险管理策略
 
@@ -31,7 +31,7 @@ ms.locfileid: "45199533"
 - **主动警报**：每个策略的活动警报数。
 - 已**确认的警报**：在过去365天内从策略中产生的警报总数。
 - **对通知执行的操作**：最近365天内已确认或已消除的警报总数。
-- **策略有效性**：由已确认警报总数除以对警报执行的总操作（即过去一年已确认或消除的警报的总和）确定的百分比。
+- **策略有效性**：由已确认的警报总数除以警报 (的百分比，这是在过去一年中已确认或消除的警报的总和) 。
 - **Active**：案例的状态为 *"是"* 或 "*否*"。
 
 ![内幕风险管理策略仪表板](../media/insider-risk-policy-dashboard.png)
@@ -49,7 +49,7 @@ ms.locfileid: "45199533"
 
 ### <a name="general-data-leaks"></a>常规数据泄露
 
-对于大多数组织来说，保护数据和防止数据泄露是一项持续挑战，尤其是用户、设备和服务创建的新数据的快速增长。 用户能够在服务和设备之间创建、存储和共享信息，从而使管理数据泄露变得越来越复杂和困难。 数据泄露可能包括意外 oversharing 组织外部的信息或恶意的数据窃取。 此模板与已分配的数据丢失防护（DLP）策略结合使用，可开始对可疑 SharePoint Online 数据下载、文件和文件夹共享、打印文件以及将数据复制到个人云邮件和存储服务的实时检测进行评分。
+对于大多数组织来说，保护数据和防止数据泄露是一项持续挑战，尤其是用户、设备和服务创建的新数据的快速增长。 用户能够在服务和设备之间创建、存储和共享信息，从而使管理数据泄露变得越来越复杂和困难。 数据泄露可能包括意外 oversharing 组织外部的信息或恶意的数据窃取。 与已分配的数据丢失防护 (DLP) 策略结合使用时，此模板可开始对可疑 SharePoint Online 数据下载、文件和文件夹共享、打印文件以及将数据复制到个人云邮件和存储服务的实时检测进行评分。
 
 使用**数据泄露**模板时，您必须为组织中的高严重性警报分配一个 DLP 策略，以触发内幕风险策略中的指示器。 只要 DLP 策略规则生成的高严重性警报添加到 Office 365 审核日志，使用此模板创建的内幕风险策略将自动检查高严重性的 DLP 警报。 如果警报包含内幕风险策略中定义的范围内用户，则该警报将由内幕风险策略处理为新警报，并向其分配内幕风险严重性和风险分数。 此策略允许您在上下文中评估此警报，在案例中包含其他活动。
 
@@ -73,25 +73,25 @@ ms.locfileid: "45199533"
 
 有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md)主题。
 
-### <a name="data-leaks-by-priority-users-preview"></a>按优先级用户排序的数据泄露（预览）
+### <a name="data-leaks-by-priority-users-preview"></a>按优先级用户 (预览的数据泄露) 
 
-保护数据并防止组织中用户的数据泄露可能取决于其位置、敏感信息的访问级别或风险历史记录。 数据泄露可能包括意外 oversharing 组织外部的高度敏感信息或恶意数据窃取的情况。 在与已分配的数据丢失防护（DLP）策略结合使用时，此模板将启动对可疑活动的实时检测进行评分，并导致具有较高严重性级别的内幕风险警报和警报的可能性增加。 优先级用户是在 "内幕风险管理设置" 区域中配置的 "优先级用户组" 中定义的。 添加链接
+保护数据并防止组织中用户的数据泄露可能取决于其位置、敏感信息的访问级别或风险历史记录。 数据泄露可能包括意外 oversharing 组织外部的高度敏感信息或恶意数据窃取的情况。 与已分配的数据丢失防护 (DLP) 策略结合使用时，此模板可启动对可疑活动的实时检测，并导致具有较高严重性级别的内幕风险警报和警报的可能性增加。 优先级用户是在 "内幕风险管理设置" 区域中配置的 "[优先级用户组](insider-risk-management-settings.md#priority-user-groups-preview)" 中定义的。
 
 与**常规数据泄露模板**一样，您必须为组织中的高严重性警报分配一个 DLP 策略，以触发内幕风险策略中的指示器。 使用此模板创建策略时，请遵循上面的数据泄露策略准则。 此外，还需要在 "**内幕风险管理**  >  **设置**  >  **优先级" 用户组**中为策略分配创建的优先级用户组。
 
-### <a name="data-leaks-by-disgruntled-users-preview"></a>因不满用户而进行的数据泄露（预览）
+### <a name="data-leaks-by-disgruntled-users-preview"></a>因不满用户 (预览而进行的数据泄露) 
 
 当用户遇到雇用 stressors 时，他们可能会感到不满，这可能会增加内幕风险活动的机率。 此模板在标识与 disgruntlement 关联的指示器时开始评分用户活动。 示例包括性能改进通知、性能较差的检查或作业级状态的更改。 不满意用户的数据泄露可能包括从 SharePoint Online 下载文件以及将数据复制到员工 stressor 事件的个人云消息和存储服务中。
 
 使用此模板时，您还必须配置 Microsoft 365 HR 连接器，以定期导入性能改进通知、性能较差的检查状态或组织中用户的作业级更改信息。 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[Import data WITH HR connector](import-hr-data.md)一文。
 
-### <a name="general-security-policy-violations-preview"></a>常规安全策略违规（预览）
+### <a name="general-security-policy-violations-preview"></a> (预览的常规安全策略冲突) 
 
-在许多组织中，用户有权在其设备上安装软件或修改设备设置以帮助他们的任务。 无论是无意还是恶意意向，用户都可以安装恶意软件或禁用有助于保护其设备或网络资源上的信息的重要安全功能。 此策略模板使用 Microsoft Defender 高级威胁防护（ATP）的安全警报开始评分这些活动，并将检测和警报集中到此风险区域。 使用此模板可在应用程序可能有可能成为内幕风险指标的安全策略违规历史记录时，提供适用于安全策略冲突的见解。
+在许多组织中，用户有权在其设备上安装软件或修改设备设置以帮助他们的任务。 无论是无意还是恶意意向，用户都可以安装恶意软件或禁用有助于保护其设备或网络资源上的信息的重要安全功能。 此策略模板使用来自 Microsoft Defender 高级威胁防护 (ATP) 的安全警报来开始评分这些活动，并将检测和警报集中到此风险区域。 使用此模板可在应用程序可能有可能成为内幕风险指标的安全策略违规历史记录时，提供适用于安全策略冲突的见解。
 
 您需要在组织中配置 Microsoft Defender ATP，并在 "Defender 安全中心" 中启用 Microsoft Defender ATP 以获得内部风险管理集成，以导入安全冲突警报。 有关为内部人员风险管理集成配置 Microsoft Defender ATP 的详细信息，请参阅[在 Microsoft DEFENDER atp 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
-### <a name="security-policy-violations-by-departing-users-preview"></a>通过去声用户违反安全策略（预览）
+### <a name="security-policy-violations-by-departing-users-preview"></a>通过 (preview 中的去声用户进行安全策略违反) 
 
 如果传出的用户不是肯定的或负的术语，则可能会对安全策略违规产生较高的风险。 为了帮助防止对传出用户的意外或恶意安全违规，此策略模板使用 Microsoft Defender ATP 警报来提供与安全相关的活动的见解。 这些活动包括安装恶意软件或其他可能有害的应用程序以及在其设备上禁用安全功能的用户。 在用户将放弃或终止日期作为触发事件从 Microsoft 365 HR 连接器导入后，将激活策略指示器。
 
@@ -99,13 +99,13 @@ ms.locfileid: "45199533"
 
 您需要在组织中配置 Microsoft Defender ATP，并在 "Defender 安全中心" 中启用 Microsoft Defender ATP 以获得内部风险管理集成，以导入安全冲突警报。 有关为内部人员风险管理集成配置 Microsoft Defender ATP 的详细信息，请参阅[在 Microsoft DEFENDER atp 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
-### <a name="security-policy-violations-by-priority-users-preview"></a>按优先级用户进行的安全策略冲突（预览）
+### <a name="security-policy-violations-by-priority-users-preview"></a>按优先级用户 (预览的安全策略冲突) 
 
 防止组织中用户的安全冲突可能取决于组织的位置、敏感信息的访问级别或风险历史记录。 由于优先级用户可能会对组织的关键领域产生 outsized 影响，因此此策略模板会对这些指标开始评分，并使用 Microsoft Defender ATP 警报为这些用户提供与安全相关的活动的见解。 其中可能包括安装恶意软件或其他可能有害的应用程序以及在其设备上禁用安全功能的优先用户。 优先级用户是在 "内幕风险管理设置" 区域中配置的 "优先级用户组" 中定义的。
 
 您需要在组织中配置 Microsoft Defender ATP，并在 "Defender 安全中心" 中启用 Microsoft Defender ATP 以获得内部风险管理集成，以导入安全冲突警报。 有关为内部人员风险管理集成配置 Microsoft Defender ATP 的详细信息，请参阅[在 Microsoft DEFENDER atp 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，还需要在 "**内幕风险管理**  >  **设置**  >  **优先级" 用户组**中为策略分配创建的优先级用户组。
 
-### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不满的用户而违反安全策略（预览）
+### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不满用户 (预览) 而违反安全策略的情况
 
 体验雇用 stressors 的用户可能会受到意外或恶意安全策略冲突的较高风险。 这些 stressors 可能包括将用户置于性能改进计划、性能较差的审核状态或从其当前位置降级。 此策略模板根据与这些用户相关的这些指示和活动启动风险评分。
 
@@ -156,16 +156,16 @@ ms.locfileid: "45199533"
 1. 在[Microsoft 365 合规性中心](https://compliance.microsoft.com)中，转到 "**内幕风险管理**"，然后选择 "**策略**" 选项卡。
 2. 选择 "**创建策略**" 以打开策略向导
 3. 在 "**新建内幕风险策略**" 页上，填写下列字段：
-    - **Name （必需）**：输入策略的友好名称。
-    - **Description （可选）**：输入策略的说明。
-    - **选择 "策略模板（必需）**"：选择一个[策略模板](insider-risk-management-policies.md#policy-templates)来定义风险指示器的类型由策略监视。
+    - **Name (必需的) **：为策略输入一个友好名称。
+    - **Description (可选) **：输入策略的说明。
+    - **选择 "策略模板" (必需的) **：选择一个[策略模板](insider-risk-management-policies.md#policy-templates)以定义由策略监视的风险指示器类型。
 
     >[!IMPORTANT]
     >大多数策略模板都具有必须为策略配置的先决条件，以生成相关警报。 如果尚未配置适用的策略先决条件，请参阅[内幕风险管理入门](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)。
 
 4. 选择 "**下一步**" 继续。
-5. 在 "**用户**" 页上，选择 "**添加用户或组**" 或**选择 "优先级用户组**" 来定义哪些用户或优先级的用户组包括在策略中，具体取决于所选的策略模板。 如果适用，请选中 "**所有用户和已启用邮件的组**" 复选框（如果尚未选择基于用户的模板优先级）。 选择 "**下一步**" 继续。
-6. 在 "**指定要设置优先顺序的内容（可选）** " 页上，可以分配源以优先处理增加的风险分数。 但是，除非相关内容包含内置或自定义敏感信息类型或在此页面上指定为优先级，否则一些活动将不会生成警报：
+5. 在 "**用户**" 页上，选择 "**添加用户或组**" 或**选择 "优先级用户组**" 来定义哪些用户或优先级的用户组包括在策略中，具体取决于所选的策略模板。 如果还没有选择基于用户的模板) 的优先级，则选中 "**所有用户和已启用邮件的组**" 复选框（如果适用） (。 选择 "**下一步**" 继续。
+6. 在 "**指定要优先处理哪些内容 (可选的) ** " 页上，您可以分配源以优先考虑增加的风险分数。 但是，除非相关内容包含内置或自定义敏感信息类型或在此页面上指定为优先级，否则一些活动将不会生成警报：
     - **SharePoint 网站**：选择 "**添加 SharePoint 网站**"，然后选择要设置优先顺序的 SharePoint 组织。 例如， *"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感信息类型**：选择 "**添加敏感信息类型**"，然后选择要设置优先级的敏感度类型。 例如， *"美国银行帐户号码"* 和 *"信用卡号码"*。
     - **敏感度标签**：选择 "**添加灵敏度标签**"，然后选择要设置优先顺序的标签。 例如， *"保密"* 和 *"Secret"*。
@@ -194,8 +194,8 @@ ms.locfileid: "45199533"
     - **选择 "策略模板**"：用于定义由策略监视的风险指示器类型的模板。
 5. 在 "**说明**" 字段中输入策略的新说明。 
 6. 选择 "**下一步**" 继续。
-7. 在 "**用户**" 页上，选择 "**添加用户或组**" 或**选择 "优先级用户组**" 来定义哪些用户或优先级的用户组包括在策略中，具体取决于所选的策略模板。 如果适用，请选中 "**所有用户和已启用邮件的组**" 复选框（如果尚未选择基于用户的模板优先级）。 选择 "**下一步**" 继续。
-8. 在 "**指定要设置优先顺序的内容（可选）** " 页上，可以分配源以优先处理增加的风险分数。 但是，除非相关内容包含内置或自定义敏感信息类型或在此页面上指定为优先级，否则一些活动将不会生成警报：
+7. 在 "**用户**" 页上，选择 "**添加用户或组**" 或**选择 "优先级用户组**" 来定义哪些用户或优先级的用户组包括在策略中，具体取决于所选的策略模板。 如果还没有选择基于用户的模板) 的优先级，则选中 "**所有用户和已启用邮件的组**" 复选框（如果适用） (。 选择 "**下一步**" 继续。
+8. 在 "**指定要优先处理哪些内容 (可选的) ** " 页上，您可以分配源以优先考虑增加的风险分数。 但是，除非相关内容包含内置或自定义敏感信息类型或在此页面上指定为优先级，否则一些活动将不会生成警报：
     - **SharePoint 网站**：选择 "**添加 SharePoint 网站**"，然后选择要设置优先顺序的 SharePoint 组织。 例如， *"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感信息类型**：选择 "**添加敏感信息类型**"，然后选择要设置优先级的敏感度类型。 例如， *"美国银行帐户号码"* 和 *"信用卡号码"*。
     - **敏感度标签**：选择 "**添加灵敏度标签**"，然后选择要设置优先顺序的标签。 例如， *"保密"* 和 *"Secret"*。

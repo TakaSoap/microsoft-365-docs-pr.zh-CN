@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 69b2c3383862860b4616d95c2a6a1bb3a525d842
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: acf74136fc61d38ea9aac47f36d96aa51a7b9905
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46578014"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635030"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
 
@@ -206,8 +206,7 @@ ms.locfileid: "46578014"
 
 ## <a name="mailflow-status-report"></a>邮件流状态报告
 
-**邮件流状态报告**类似于[发送和接收的电子邮件报告](#sent-and-received-email-report)，其中包含有关在边缘上允许或阻止的电子邮件的其他信息。 这是唯一包含 edge 保护信息的报告，仅显示在允许 Exchange Online Protection (EOP) 进行评估之前阻止的电子邮件的数量。
-
+**邮件流状态报告**类似于[发送和接收的电子邮件报告](#sent-and-received-email-report)，其中包含有关在边缘上允许或阻止的电子邮件的其他信息。 这是唯一包含 edge 保护信息的报告，仅显示在允许 Exchange Online Protection (EOP) 进行评估之前阻止的电子邮件的数量。 请务必注意，如果将邮件发送给5个收件人，我们会将其计数为五个不同的邮件，而不是一封邮件。  
 若要查看报表，请打开 "[安全 & 合规中心](https://protection.office.com)"，转到 "**报告**" \> **仪表板**，然后选择 "**邮件流状态报告**"。 若要直接转到 "**邮件流状态" 报告**，请打开 <https://protection.office.com/mailflowStatusReport> 。
 
 !["报告" 仪表板中的邮件流状态报告小部件](../../media/mail-flow-status-report-widget.png)
@@ -221,7 +220,7 @@ ms.locfileid: "46578014"
 
   - **进货**
   - **出站**
-  - **组织内** (独立于**入站**和**出站**) 计数
+  - **组织内**：此计数用于租户中的邮件，即 发件人 abc@domain.com 从**入站**和**出站**) 分别发送给收件人 xyz@domain.com (计数
 
 - **类型**：
 

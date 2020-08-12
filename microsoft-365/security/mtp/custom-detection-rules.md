@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005706"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632147"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>创建和管理自定义检测规则
 
@@ -37,7 +37,7 @@ ms.locfileid: "45005706"
 
 - **安全管理员**-安全管理员或安全管理员角色是用于管理 Microsoft 365 安全中心和各种门户和服务中的各种安全设置的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)。
 
-- **安全操作员**—安全操作员角色是用于管理警报的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，它具有与安全相关的功能（包括 Microsoft 365 安全中心中的所有信息）的全局只读访问权限。 仅当在 Microsoft Defender ATP 中关闭基于角色的访问控制（RBAC）时，此角色才足够管理自定义检测。 如果配置了 RBAC，则还需要具有 Microsoft Defender ATP 的 "**管理安全设置**" 权限。
+- **安全操作员**—安全操作员角色是用于管理警报的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，它具有与安全相关的功能（包括 Microsoft 365 安全中心中的所有信息）的全局只读访问权限。 仅当基于角色的访问控制 (RBAC) 在 Microsoft Defender ATP 中处于关闭状态时，此角色才足够管理自定义检测。 如果配置了 RBAC，则还需要具有 Microsoft Defender ATP 的 "**管理安全设置**" 权限。
 
 若要管理所需的权限，**全局管理员**可以执行以下操作：
 
@@ -52,6 +52,10 @@ ms.locfileid: "45005706"
 
 在 Microsoft 365 安全中心中，转到 "**高级**搜索"，然后选择一个现有查询或创建新的查询。 使用新查询时，请运行查询以确定错误并了解可能的结果。
 
+>[!IMPORTANT]
+>若要防止服务返回过多警报，每个规则都限制为每次运行时仅生成100警报。 在创建规则之前，请调整您的查询以避免正常的日常活动的警报。
+
+
 #### <a name="required-columns-in-the-query-results"></a>查询结果中的必需列
 若要创建自定义检测规则，查询必须返回以下列：
 
@@ -61,8 +65,8 @@ ms.locfileid: "45005706"
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress`（信封发件人或寄信人路径地址）
-    - `SenderMailFromAddress`（电子邮件客户端显示的发件人地址）
+    - `SenderFromAddress` (信封发件人或寄信人路径地址) 
+    - `SenderMailFromAddress` (电子邮件客户端显示的发件人地址) 
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -77,7 +81,7 @@ ms.locfileid: "45005706"
 
 有多种方法可确保更复杂的查询返回这些列。 例如，如果您希望在等列下按实体进行聚合和计数 `DeviceId` ，则仍可 `Timestamp` 通过获取每个唯一涉及的最新事件来返回 `DeviceId` 。
 
-下面的示例查询计算带有防病毒检测的独特设备（）的数量 `DeviceId` ，并使用此计数来仅查找检测到五个以上的设备。 若要返回最新的 `Timestamp` ，它会将 `summarize` 运算符与函数一起使用 `arg_max` 。
+下面的示例查询计算使用防病毒检测 () 的唯一设备的数量 `DeviceId` ，并使用此计数来仅查找具有超过5个检测项的设备。 若要返回最新的 `Timestamp` ，它会将 `summarize` 运算符与函数一起使用 `arg_max` 。
 
 ```kusto
 DeviceEvents
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 创建新规则并提供警报详细信息。
 
 使用查询编辑器中的查询，选择 "**创建检测规则**"，并指定以下警报详细信息：
@@ -109,9 +114,9 @@ DeviceEvents
 选择与您要监视检测结果的接近程度相匹配的频率，并考虑组织的容量来响应警报。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 选择受影响的实体。
-确定您希望在其中查找受影响的主要或受影响的实体的查询结果中的列。 例如，查询可能会返回发件人（ `SenderFromAddress` 或 `SenderMailFromAddress` ）和收件人（ `RecipientEmailAddress` ）地址。 确定哪些列代表主要受影响的实体可帮助服务聚合相关警报、关联事件和目标响应操作。
+确定您希望在其中查找受影响的主要或受影响的实体的查询结果中的列。 例如，查询可能会返回发件人 (`SenderFromAddress` 或 `SenderMailFromAddress`) 和收件人 (`RecipientEmailAddress`) 地址。 确定哪些列代表主要受影响的实体可帮助服务聚合相关警报、关联事件和目标响应操作。
 
-您只能为每个实体类型（邮箱、用户或设备）选择一列。 无法选择查询未返回的列。
+您只能为每个实体类型 (邮箱、用户或设备) 选择一列。 无法选择查询未返回的列。
 
 ### <a name="4-specify-actions"></a>4. 指定操作。
 您的自定义检测规则可以对查询返回的设备、文件或用户自动执行操作。
@@ -175,14 +180,14 @@ DeviceEvents
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看和管理触发的警报
 
-在 "规则详细信息"**屏幕（**  >  搜索**自定义检测**  >  **[规则名称]**）中，转到 "**触发警报**" 以查看与该规则匹配生成的警报列表。 选择一个警报以查看有关该通知的详细信息，并对该警报执行以下操作：
+在 "规则详细信息" 屏幕**中 (**  >  搜索**自定义检测**  >  **[规则名称]**) 中，转到 "**触发警报**" 以查看与该规则匹配生成的警报列表。 选择一个警报以查看有关该通知的详细信息，并对该警报执行以下操作：
 
-- 通过设置警报的状态和分类来管理警报（true 或 false 警报）
+- 通过将警报的状态和分类设置 (true 或 false 警报来管理警报) 
 - 将警报链接到事件
 - 在高级搜寻中运行触发警报的查询
 
 ### <a name="review-actions"></a>查看操作
-在 "规则详细信息"**屏幕（**  >  搜索**自定义检测**  >  **[规则名称]**）中，转到 "**触发操作**"，以根据与规则的匹配项查看所执行的操作的列表。
+在 "规则详细信息" 屏幕**中 (**  >  搜索**自定义检测**  >  **[规则名称]**) 中，转到 "**触发操作**" 以查看基于与规则的匹配项所执行的操作的列表。
 
 >[!TIP]
 >若要快速查看信息并对表中的项目执行操作，请使用表左侧的选择列 [&#10003;]。

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577514"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641637"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -207,6 +207,20 @@ ms.locfileid: "46577514"
 
    > [!NOTE]
    > 在 "URL 浮出控件" 对话框中，将删除对电子邮件的筛选，以显示您的环境中 URL 公开的完整视图。 这样，您就可以在资源管理器中筛选出您关注的电子邮件，找出潜在威胁的特定 Url，然后通过 "URL 详细信息") 对话框 (了解您的环境中的 URL 公开情况，而无需向资源管理器视图本身添加 URL 筛选器。
+
+
+**不同的单击 verdicts 的解释**
+
+在电子邮件或 URL flyouts 中，点击率和在筛选体验中，你将看到不同的 click 值作为你的求职体验的一部分。 下面是单击 Verdicts 及其解释的可能值：
+
+- **无**：我们无法捕获 URL 的结论。 用户可能已通过 URL 单击。
+- **允许**：允许用户导航到 URL。
+- 已**阻止**：阻止用户导航到 URL。
+- **挂起的判定**：用户显示沙箱挂起页面。
+- **被阻止的被覆盖**：阻止用户导航到 URL;但是，用户 overrode 阻止导航到 URL。
+- **挂起的判定被绕过**：向用户显示沙箱页面;但是，用户 overrode 页面以导航到 URL。
+- **错误**：用户显示错误页。 这也意味着捕获判定的错误。
+- **失败**：捕获判定时出现未知异常。 用户可能已通过 URL 单击。 
 
 ## <a name="review-email-messages-reported-by-users"></a>查看用户报告的电子邮件
 

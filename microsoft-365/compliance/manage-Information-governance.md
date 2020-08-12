@@ -14,20 +14,33 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 365 中的信息管理。
-ms.openlocfilehash: d2c2977a4eeaebb28f37c69683a929cb9f64b085
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521239"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641605"
 ---
 # <a name="manage-information-governance"></a>管理信息治理
 
- 使用 Microsoft 365 功能管理内容生命周期，以导入、存储和分类业务关键数据，以便您可以保留所需的内容并删除不需要的内容。
+使用 Microsoft 信息管理功能来管理您的数据，以实现合规性或法规要求。
 
-|**功能**|**详细信息**|
-|:-----|:-----|
-| **管理数据** | 使用[保留策略和保留标签](retention.md)保留您需要保留的数据，并删除您不需要保留或出于法规或合规性原因而必须删除的内容。<br /><br /> 使用[导入服务](importing-pst-files-to-office-365.md)将 PST 文件快速批量导入到组织中的 Exchange Online 邮箱，并配置[无限制的存档](unlimited-archiving.md)以向用户提供额外的邮箱存储空间。|
-| **监视数据** | [验证保留标签](view-label-activity-for-documents.md)是否已正确应用于组织中的内容，并使用[标签分析](label-analytics.md)快速查看这些标签的使用位置最多以及应用到的位置。|
-| **管理非活动邮箱** | 您的组织可能需要在离开组织后保留以前员工的电子邮件。 根据组织的保留要求，您可能需要将邮箱内容保留几个月或几年的工作结束，或者可能需要无限期保留邮箱内容。 无论您需要保留电子邮件多长时间，您都可以创建[非活动邮箱](inactive-mailboxes-in-office-365.md)来保留前员工的邮箱。|
-| **记录管理** | 确保使用完全审核可见性正确声明和存储[核心业务记录](records-management.md)，以满足法规要求。|
+## <a name="information-governance"></a>信息治理
+
+若要保留所需内容并删除不需要的内容，请执行以下操作：
+ 
+|功能|它会解决什么问题？|入门|
+|:------|:------------|:--------------------|:-----------------------------|
+|[策略管理和删除工作流](retention.md)| 保留或删除包括电子邮件、文档、即时消息等内容 <br /><br />示例方案：[将保留标签自动应用于内容](apply-retention-labels-automatically.md) | [开始使用保留策略和保留标签](get-started-with-retention.md)|
+|[导入服务](importing-pst-files-to-office-365.md)| 批量导入 PST 文件到 Exchange Online 邮箱，以保留和搜索电子邮件，以满足合规性或法规要求 | [使用网络上传将组织的 PST 文件导入到 Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|[存档第三方数据](archiving-third-party-data.md)| 从社交媒体平台、即时消息平台和文档协作平台将合规性解决方案导入、存档并应用于第三方数据| [第三方连接器](archiving-third-party-data.md#third-party-data-connectors)|
+|[非活动邮箱](inactive-mailboxes-in-office-365.md)| 员工离开组织后保留邮箱内容 | [创建和管理非活动邮箱](create-and-manage-inactive-mailboxes.md)|
+
+## <a name="records-management"></a>记录管理
+
+若要管理针对法律、业务或法规义务的高价值内容，请使用记录管理：
+
+|功能|它会解决什么问题？|入门|
+|:------|:------------|---------------------|:----------------------------|
+|[记录管理](records-management.md)| 一个用于电子邮件和文档的解决方案，其中包括保留时间安排和要求，以管理保留、记录声明和处置，以支持内容的完整生命周期 <br /><br />示例方案：[记录的处置](disposition.md#disposition-of-records)|[了解记录](records.md) |
+

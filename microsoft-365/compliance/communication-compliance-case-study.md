@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597628"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632083"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 为 Microsoft 团队、Exchange 和 Yammer 通信快速配置冒犯性语言策略
 
@@ -81,7 +81,7 @@ Contoso IT 管理员需要执行以下步骤来验证 Contoso 的许可支持：
 
 有五个角色用于配置管理通信合规性功能的权限。 为了使通信合规性在 Microsoft 365 合规性中心中可用作菜单选项，若要继续执行这些配置步骤，则会为 Contoso 管理员分配*通信合规性管理员*角色。
 
-Contoso 决定创建一个 custome 角色组，并将所有通信合规性角色分配给该组。 这使 Contoso 能够更轻松地快速入门，并最大限度地满足合规性管理要求。
+Contoso 决定创建一个自定义角色组，并将所有通信合规性角色分配给该组。 这使 Contoso 能够更轻松地快速入门，并最大限度地满足合规性管理要求。
 
 Contoso 将创建一个包含所有以下通信合规性角色的角色组：
 
