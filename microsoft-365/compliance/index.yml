@@ -13,45 +13,27 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: 6dc99bbfb674c3119fb1926abe5690381a3d78cd
-  ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+  ms.openlocfilehash: 648b9a3256aaca8eaabba80af1edee3beccf1ac2
+  ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/29/2020
-  ms.locfileid: "46521191"
+  ms.lasthandoff: 08/12/2020
+  ms.locfileid: "46641615"
 landingContent:
-- title: 管理信息保护
+- title: 管理信息保护和治理
   linkLists:
   - linkListType: overview
     links:
-    - text: 敏感度标签
-      url: sensitivity-labels.md
-    - text: 数据丢失防护 (DLP)
-      url: data-loss-prevention-policies.md
-    - text: 敏感信息类型
-      url: custom-sensitive-info-types.md
-    - text: 电子邮件加密
-      url: email-encryption.md
-    - text: 客户密钥
-      url: customer-key-overview.md
-- title: 管理信息治理
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: 保留策略和标签
-      url: retention.md
-    - text: 记录管理
-      url: records-management.md
-    - text: 文件计划管理器
-      url: file-plan-manager.md
-    - text: 基于事件的保留
-      url: event-driven-retention.md
-    - text: PST 导入
-      url: importing-pst-files-to-office-365.md
-    - text: 第三方数据连接器
-      url: archiving-third-party-data.md
-    - text: 数据管理报表
-      url: view-the-data-governance-reports.md
+    - text: 了解你的数据
+      url: protect-information.md#know-your-data
+    - text: 保护你的数据
+      url: protect-information.md#protect-your-data
+    - text: 防止数据丢失
+      url: protect-information.md#prevent-data-loss
+    - text: 管理数据
+      url: manage-information-governance.md
+    - text: 学习路径：管理信息保护和治理
+      url: /learn/paths/m365-compliance-information
 - title: 管理预览体验计划风险
   linkLists:
   - linkListType: overview
