@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632135"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656607"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
@@ -61,7 +61,9 @@ ms.locfileid: "46632135"
 
 1. 请务必熟悉下表中的 SPF 语法。
 
-   ||如果您正在使用...|对于客户而言很常见？|添加以下内容...|
+   ****
+
+   |<!-- -->|如果您正在使用...|对于客户而言很常见？|添加以下内容...|
    |---|---|---|---|
    |1|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值开头|v=spf1|
    |2|Exchange Online|常见|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ ms.locfileid: "46632135"
    |5|第三方电子邮件系统|不常见|包括：\<domain name\>  <br/> 其中域名是第三方电子邮件系统的域名。|
    |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见| 为每个附加的邮件系统使用以下其中一个： <br> ip4：\<_IP address_\>  <br/>  ip6：\<_IP address_\>  <br/>  包括：\<_domain name_\>  <br/>  其中 \<_IP address_\> 的值是其他邮件系统的 IP 地址，\<_domain name_\> 是另一个代表您的域发送邮件的邮件系统的 IP 地址。|
    |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|\<_enforcement rule_\>  <br/> 这可以是多个值之一。我们建议您使用 **-all**。|
+   |
 
 2. 如果尚未创建 SPF TXT 记录，请使用该表中的语法执行此操作：
 
