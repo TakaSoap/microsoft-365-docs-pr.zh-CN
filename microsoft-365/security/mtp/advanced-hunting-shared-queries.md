@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fd497ce1733dd4770b9bbc8f699bbccf3237fbd
-ms.sourcegitcommit: b8a9994b26a6d9865212f5b1871286e719d1608e
+ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43781513"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649183"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -59,6 +59,9 @@ ms.locfileid: "43781513"
 
 2. 选择“删除”，并确认删除。**** 或者选择“重命名”，并为查询提供新名称。****
 
+## <a name="create-a-direct-link-to-a-query"></a>创建指向查询的直接链接
+若要生成直接在高级搜寻查询编辑器中打开您的查询的链接，请先完成查询，然后选择 "**共享链接**"。
+
 ## <a name="access-queries-in-the-github-repository"></a>访问 GitHub 存储库中的查询  
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。
 
@@ -69,6 +72,6 @@ Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [处理查询结果](advanced-hunting-query-results.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

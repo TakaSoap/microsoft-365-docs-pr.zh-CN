@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0f2ae36752a4415da7c1bc39ce35bd7f744a764
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 8fc713db33b0e40adcd0975d26c10daece636ab1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899347"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649507"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -45,7 +45,7 @@ ms.locfileid: "44899347"
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountDomain` | string | 帐户的域 |
-| `AccountSid` | string | 帐户的安全标识符（SID） |
+| `AccountSid` | string | 帐户的安全标识符 (SID)  |
 | `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `ThreatFamily` | string | 已在其下对可疑或恶意文件或流程进行了分类的恶意软件系列 |
@@ -56,6 +56,6 @@ ms.locfileid: "44899347"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

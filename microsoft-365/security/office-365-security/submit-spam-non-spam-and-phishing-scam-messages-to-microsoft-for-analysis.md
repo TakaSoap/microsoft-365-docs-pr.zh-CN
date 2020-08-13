@@ -15,23 +15,23 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: 管理员和最终用户可以了解如何将电子邮件（正确的邮件标记为损坏或坏邮件允许）进行分析。
+description: 管理员和最终用户可以了解如何通过电子邮件 (正常的邮件标记为损坏或坏邮件，以便) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6973330c4504bd6478265205f60798b3b7c1875
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: e90382b39b0cebb70568a53ac5aaeb40ac935f92
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811034"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653589"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
 > [!NOTE]
 > 如果您是具有 Exchange Online 邮箱的组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅[使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
 
-如果组织中的用户在其收件箱中收到垃圾邮件（垃圾邮件）或网络钓鱼邮件，或者如果邮件被标记为垃圾邮件，则可能会令人沮丧。 我们不断调整垃圾邮件筛选器，使其更加准确。
+如果组织中的用户收到垃圾邮件 (其收件箱中的垃圾邮件) 或网络钓鱼邮件，或者如果邮件被标记为垃圾邮件，则可能会令人沮丧。 我们不断调整垃圾邮件筛选器，使其更加准确。
 
-您和您的用户可以通过将误报（好的电子邮件标记为 "坏"）、"漏报（允许错误邮件）" 和 "网络钓鱼邮件" 提交给 Microsoft 进行分析来帮助此过程。
+您和您的用户可以通过提交误报 (正常的电子邮件标记为错误) 、漏报 (错误邮件（允许 Microsoft 进行分析) 和网络钓鱼邮件）来帮助此过程。
 
 > [!NOTE]
 > 由于我们收到的提交量很大，我们可能无法应答所有分析请求。
@@ -39,7 +39,7 @@ ms.locfileid: "44811034"
 ## <a name="submit-false-negatives-to-microsoft"></a>将漏报提交给 Microsoft
 
 > [!TIP]
-> Outlook 和 web 上的 Outlook （以前称为 Outlook Web App）中的用户可以使用 Microsoft Outlook 的报告消息外接程序，而不是使用以下过程来报告漏报。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
+> Outlook Web App) 可以使用 Microsoft Outlook 的报告消息外接程序，而不是使用以下过程来报告漏报，而不是在 Outlook 和 web 上的 Outlook 中的用户 (以前称为 Outlook Web App。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
 
 如果您收到一封邮件，该邮件将通过应标识为垃圾邮件或网络钓鱼的垃圾邮件筛选传递，则可以根据需要将邮件提交到 Microsoft 垃圾邮件分析和 Microsoft 仿冒分析团队。 分析师将检查邮件并将其添加到服务范围的筛选器中（如果它满足分类条件）。
 
@@ -49,10 +49,15 @@ ms.locfileid: "44811034"
 
    - **网络钓鱼**：`phish@office365.microsoft.com`
 
-2. 将垃圾邮件或仿冒邮件拖放到新邮件中。 这会将垃圾邮件或仿冒邮件保存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件（我们需要原始邮件，以便我们可以检查邮件头）。
+2. 将垃圾邮件或仿冒邮件拖放到新邮件中。 这会将垃圾邮件或仿冒邮件保存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件 (我们需要原始邮件，以便我们可以检查邮件头) 。
 
    > [!NOTE]
-   > <ul><li>您可以在新邮件中附加多封邮件。 确保所有邮件都属于同一类型： "仿冒欺诈邮件" 或 "垃圾邮件"。</li><li>保留新的邮件正文空白。</li><li>对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。</li></ul>
+   >
+   > - 您可以在新邮件中附加多封邮件。 请确保所有邮件的类型都相同：网络钓鱼邮件或垃圾邮件。
+   >
+   > - 保留新的邮件正文空白。
+   >
+   > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认的 Outlook Web 格式) 附加邮件的格式。
 
 3. 完成后，请单击 "**发送**"。
 
@@ -64,14 +69,19 @@ ms.locfileid: "44811034"
 > [!TIP]
 > Outlook 和 Outlook 网页版中的用户可以使用 Microsoft Outlook 的报告消息外接程序，而不是使用以下过程报告误报。 有关如何安装和使用此工具的信息，请参阅[Enable The Report Message 外接程序](enable-the-report-message-add-in.md)。
 
-如果邮件被错误地标识为垃圾邮件，您可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估邮件，并且（取决于分析结果）可以调整服务范围的筛选器以允许邮件通过。
+如果邮件被错误地标识为垃圾邮件，您可以将邮件提交给 Microsoft 垃圾邮件分析团队。 分析师将评估邮件，并根据分析的结果 () 可以调整服务范围的筛选器以允许邮件通过。
 
 1. 创建一个新的空白电子邮件， `not_junk@office365.microsoft.com` 作为收件人：
 
-2. 将 misidentified 邮件拖放到新邮件中。 这会将 misidentified 邮件另存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件（我们需要原始邮件，以便我们可以检查邮件头）。
+2. 将 misidentified 邮件拖放到新邮件中。 这会将 misidentified 邮件另存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件 (我们需要原始邮件，以便我们可以检查邮件头) 。
 
    > [!NOTE]
-   > <ul><li>您可以在新邮件中附加多封邮件。 请确保所有邮件的类型都相同：网络钓鱼邮件或垃圾邮件。</li><li>保留新的邮件正文空白。</li><li>对于附加的邮件，请使用 .msg （默认 Outlook 格式）或 .eml （默认 Outlook 网页格式）格式。</li></ul>
+   >
+   > - 您可以在新邮件中附加多封邮件。 请确保所有邮件的类型都相同：网络钓鱼邮件或垃圾邮件。
+   >
+   > - 保留新的邮件正文空白。
+   >
+   > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认的 Outlook Web 格式) 附加邮件的格式。
 
 3. 完成后，请单击 "**发送**"。
 

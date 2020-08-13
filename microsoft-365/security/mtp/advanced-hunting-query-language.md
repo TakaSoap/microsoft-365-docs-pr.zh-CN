@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049687"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649387"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -152,7 +152,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 利用以下功能更快地编写查询：
 - **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
 - **架构树**—在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
-- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—包含表和列说明以及受支持的事件类型（ `ActionType` 值）和示例查询的门户中的引用
+- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在编辑器中使用多个查询
 查询编辑器可用作试用多个查询的待用介质垫。 若要使用多个查询：
@@ -179,6 +179,6 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [处理查询结果](advanced-hunting-query-results.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

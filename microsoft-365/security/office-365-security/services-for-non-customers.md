@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: 3a3dc26d757de84f5abd46c85f3596db67d676ae
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208230"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652653"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365 的非客户服务
 
@@ -31,12 +31,15 @@ ms.locfileid: "44208230"
 
 ## <a name="sender-solutions"></a>发件人解决方案
 
-|**服务**|**优势**|
-|:-----|:-----|
+****
+
+|服务|优点|
+|---|---|
 |此联机帮助内容|提供： <br/> 有关向 EOP 用户提供通信的任何问题的起始点。 <br/><br/> 包含一个包含我们的策略和要求的简单联机指南。 <br/><br/> Microsoft 所采用的垃圾邮件筛选器和身份验证技术的概述。|
 |[Microsoft 支持](#microsoft-support)|提供有关传送问题的自助和升级支持。|
 |[反垃圾邮件 IP 除名门户](#anti-spam-ip-delist-portal)|一种提交 IP 除名请求的工具。在提交此请求前，发件人有责任确保任何源自可疑 IP 的后续邮件不是滥用的或恶意的。|
 |[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|阻止从 Exchange Online 发送垃圾邮件和其他不需要的邮件，并将 internet 和邮件系统打乱。|
+|
 
 ## <a name="microsoft-support"></a>Microsoft 支持
 
@@ -56,7 +59,7 @@ Microsoft 为在向 Microsoft 365 的收件人发送邮件时遇到问题的用�
 
 ## <a name="anti-spam-ip-delist-portal"></a>反垃圾邮件 IP 除名门户
 
-这是一个自助服务门户，可用于将自己从 Microsoft 365 阻止的发件人列表中删除。 如果您在尝试向其电子邮件地址位于 Microsoft 365 的收件人发送电子邮件时收到错误消息，并且您认为您不应这样做，请使用此门户。 有关详细信息，请参阅[使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+这是一个自助服务门户，可用于将自己从 Microsoft 365 阻止的发件人列表中删除。 如果您在尝试向其电子邮件地址位于 Microsoft 365 的收件人发送电子邮件时收到错误消息，并且您认为您不应这样做，请使用此门户。 有关详细信息，请参阅[使用除名门户来将自己从阻止的发件人名单中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 

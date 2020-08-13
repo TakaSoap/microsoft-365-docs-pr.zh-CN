@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 67749125d2f62f2774c36e6970cf8901b1fd5784
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: b88bdb09b84db5de813fc9020d9695f26c61f105
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899299"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649435"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -49,18 +49,18 @@ ms.locfileid: "44899299"
 | `FileOriginIP` | string | 从中下载文件的 IP 地址 |
 | `InitiatingProcessAccountDomain` | string | 运行负责事件的进程的帐户的域 |
 | `InitiatingProcessAccountName` | string | 运行负责事件的进程的帐户的用户名 |
-| `InitiatingProcessAccountSid` | string | 运行负责事件的进程的帐户的安全标识符（SID） |
-| `InitiatingProcessMD5` | string | 启动事件的进程（图像文件）的 MD5 哈希 |
-| `InitiatingProcessSHA1` | string | 启动事件的过程（图像文件）的 SHA-1 |
-| `InitiatingProcessSHA256` | string | SHA-256，其中启动了事件的进程（图像文件）。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
-| `InitiatingProcessFolderPath` | string | 包含启动事件的进程（图像文件）的文件夹 |
+| `InitiatingProcessAccountSid` | string | 运行负责事件的进程的帐户 (SID) 的安全标识符 |
+| `InitiatingProcessMD5` | string | 启动事件的过程 (映像文件) 的 MD5 哈希值 |
+| `InitiatingProcessSHA1` | string | 启动事件的过程 (图像文件) 的 SHA-1 |
+| `InitiatingProcessSHA256` | string | SHA-256 启动事件的过程 (图像文件) 。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
+| `InitiatingProcessFolderPath` | string | 包含启动事件的过程 (图像文件) 的文件夹 |
 | `InitiatingProcessFileName` | string | 启动事件的进程的名称 |
-| `InitiatingProcessId` | int | 启动事件的进程的进程 ID （PID） |
+| `InitiatingProcessId` | int | 启动事件的进程的进程 ID (PID)  |
 | `InitiatingProcessCommandLine` | string | 用于运行启动事件的进程的命令行 |
 | `InitiatingProcessCreationTime` | datetime | 启动启动事件的进程的日期和时间 |
 | `InitiatingProcessIntegrityLevel` | string | 启动事件的进程的完整性级别。 Windows 根据某些特征（如从 internet 下载启动）将完整性级别分配给流程。 这些完整性级别会影响对资源的权限 |
-| `InitiatingProcessTokenElevation` | string | 指示是否存在应用于启动事件的进程的用户访问控制（UAC）权限提升的标记类型 |
-| `InitiatingProcessParentId` | int | 生成负责事件的进程的父进程的进程 ID （PID） |
+| `InitiatingProcessTokenElevation` | string | 指示是否存在用户访问控制的令牌类型 (UAC) 权限提升应用于启动该事件的进程 |
+| `InitiatingProcessParentId` | int | 生成负责事件的进程的父进程 (PID) 的进程 ID |
 | `InitiatingProcessParentFileName` | string | 生成负责事件的进程的父进程的名称 |
 | `InitiatingProcessParentCreationTime` | datetime | 负责启动事件的进程的父项的日期和时间 |
 | `RequestProtocol` | string | 用于启动活动的网络协议（如果适用）：未知、本地、SMB 或 NFS |
@@ -69,7 +69,7 @@ ms.locfileid: "44899299"
 | `RequestSourcePort` | string | 启动活动的远程设备上的源端口 |
 | `RequestAccountName` | string | 远程启动活动时使用的帐户的用户名 |
 | `RequestAccountDomain` | string | 用于远程启动活动的帐户的域 |
-| `RequestAccountSid` | string | 用于远程启动活动的帐户的安全标识符（SID） |
+| `RequestAccountSid` | string | 用于远程启动活动的帐户 (SID) 的安全标识符 |
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用 |
 | `AppGuardContainerId` | string | 应用程序防护用于隔离浏览器活动的虚拟化容器的标识符 |
 | `SensitivityLabel` | string | 应用于电子邮件、文件或其他内容的标签以对其进行分类以实现信息保护 |
@@ -80,6 +80,6 @@ ms.locfileid: "44899299"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

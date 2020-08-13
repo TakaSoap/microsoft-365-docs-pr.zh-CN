@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 33f9c726839f17afbb935c6d028cc4eaa5b74843
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899311"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649447"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -43,10 +43,10 @@ ms.locfileid: "44899311"
 | `SignatureType` | string | 指示是否已将签名信息作为文件本身的嵌入内容读取或从外部目录文件读取 |
 | `Signer` | string | 有关文件签名者的信息 |
 | `SignerHash` | string | 标识签名者的唯一哈希值 |
-| `Issuer` | string | 有关颁发证书颁发机构（CA）的信息 |
-| `IssuerHash` | string | 标识颁发证书颁发机构（CA）的唯一哈希值 |
-| `CertificateSerialNumber` | string | 证书对于颁发证书颁发机构（CA）的唯一标识符 |
-| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书和证书吊销列表（Crl）的网络共享的 Url |
+| `Issuer` | string | 有关颁发证书颁发机构 (CA) 的信息 |
+| `IssuerHash` | string | 标识颁发证书颁发机构 (CA) 的唯一哈希值 |
+| `CertificateSerialNumber` | string | 颁发证书颁发机构 (CA 的唯一证书的标识符)  |
+| `CrlDistributionPointUrls` | string |  JSON 数组，列出包含证书和证书吊销列表 (Crl 的网络共享的 Url)  |
 | `CertificateCreationTime` | datetime | 证书的创建日期和时间 |
 | `CertificateExpirationTime` | datetime | 将证书设置为过期的日期和时间 |
 | `CertificateCountersignatureTime` | datetime | 副署证书的日期和时间 |
@@ -58,6 +58,6 @@ ms.locfileid: "44899311"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

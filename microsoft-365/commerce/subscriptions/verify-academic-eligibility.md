@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 了解如何验证你的学校对 Microsoft 365 教育版教育版定价的资格。
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560699"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653721"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>验证 Microsoft 365 教育版订阅的学术资格
 
@@ -59,7 +59,7 @@ ms.locfileid: "46560699"
 拥有 Microsoft 365 教育版试用版后，您可以随时检查学校的学术资格的状态。
 
 1. 转到[Microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)。
-2. 在主页上，滚动到底部并找到**帐单**卡片。
+2. 在主页上，找到**帐单**卡片。
     **帐单**卡片指示验证过程的状态。 该卡片显示以下状态之一： "已批准"、"挂起"、"已拒绝" 或 "添加你的域"。
 
     > [!NOTE]

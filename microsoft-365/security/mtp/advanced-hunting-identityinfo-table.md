@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204919"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649303"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -39,26 +39,26 @@ ms.locfileid: "45204919"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
-| `AccountUpn` | 字符串 | 帐户的用户主体名称（UPN） |
-| `OnPremSid` | 字符串 | 帐户的本地安全标识符（SID） |
-| `CloudSid` | 字符串 | 帐户的云安全标识符 |
-| `GivenName` | 字符串 | 帐户用户的指定名称或名字 |
-| `Surname` | 字符串 | 帐户用户的姓氏、系列名称或姓氏 |
-| `AccountDisplayName` | 字符串 | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
-| `Department` | 字符串 | 帐户用户所属部门的名称 |
-| `JobTitle` | 字符串 | 帐户用户的职务 |
-| `AccountName` | 字符串 | 帐户的用户名 |
-| `AccountDomain` | 字符串 | 帐户的域 |
-| `EmailAddress` | 字符串 | 帐户的 SMTP 地址 |
-| `SipProxyAddress` | 字符串 | 帐户的 IP 语音（VOIP）会话初始协议（SIP）地址 |
-| `City` | 字符串 | 帐户用户所在的城市 |
-| `Country` | 字符串 | 帐户用户所在的国家/地区 |
+| `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
+| `OnPremSid` | string | 帐户的本地安全标识符 (SID)  |
+| `CloudSid` | string | 帐户的云安全标识符 |
+| `GivenName` | string | 帐户用户的指定名称或名字 |
+| `Surname` | string | 帐户用户的姓氏、系列名称或姓氏 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `Department` | string | 帐户用户所属部门的名称 |
+| `JobTitle` | string | 帐户用户的职务 |
+| `AccountName` | string | 帐户的用户名 |
+| `AccountDomain` | string | 帐户的域 |
+| `EmailAddress` | string | 帐户的 SMTP 地址 |
+| `SipProxyAddress` | string | 帐户的 IP 语音 (VOIP) 会话初始协议 (SIP) 地址 |
+| `City` | string | 帐户用户所在的城市 |
+| `Country` | string | 帐户用户所在的国家/地区 |
 | `IsAccountEnabled` | boolean | 指示帐户是否已启用 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

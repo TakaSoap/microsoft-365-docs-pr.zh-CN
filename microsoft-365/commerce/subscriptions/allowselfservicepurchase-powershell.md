@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解如何使用 AllowSelfServicePurchase PowerShell cmdlet 启用或禁用自助购买。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391538"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653709"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>将 AllowSelfServicePurchase 用于 MSCommerce PowerShell 模块
 
@@ -33,7 +33,7 @@ ms.locfileid: "45391538"
 - 查看适用产品的列表以及是否启用或禁用自助式购买
 - 查看或修改特定产品的当前设置以启用或禁用该产品
 
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
 若要使用**MSCommerce** PowerShell 模块，需要具备以下条件：
 
@@ -92,6 +92,10 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | 每个用户的电源应用程序 | CFQ7TTC0KP0P |
 | 每个用户的电源自动化 | CFQ7TTC0KP0N |
 | Power BI Pro | CFQ7TTC0L3PB |
+| 项目计划1 | CFQ7TTC0KXND |
+| 项目计划3 | CFQ7TTC0KXNC |
+| Visio 计划1 | CFQ7TTC0KXN9 |
+| Visio 计划2 | CFQ7TTC0KXN8 |
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>查看或设置 AllowSelfServicePurchase 的状态
 
@@ -128,15 +132,15 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $pr
 
 ## <a name="troubleshooting"></a>疑难解答
 
-**问题**
+### <a name="problem"></a>问题
 
 您会看到以下错误消息：
 
 > HandleError：无法使用 PolicyId ' AllowSelfServicePurchase ' 检索策略，错误-基础连接已关闭：发送时发生意外错误。
 
-这可能是由于较旧版本的传输层安全性（TLS）造成的。 若要连接此服务，您需要使用 TLS 1.2 或更高版本
+这可能是由于较旧版本的传输层安全性 (TLS) 。 若要连接此服务，您需要使用 TLS 1.2 或更高版本
 
-**解决方案**
+### <a name="solution"></a>解决方案
 
 升级到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解 SharePoint Online 如何检测用户上载的文件中的病毒并阻止用户下载或同步文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6bfc23ca4120122ecfa44ad4d39795fed22af84
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0e58fa8dc8b30c5bc6ff5db1508d8b7f9189b73a
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429916"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653505"
 ---
 # <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 团队中的病毒检测
 
@@ -58,14 +58,14 @@ Microsoft 365 使用通用的病毒检测引擎。 引擎在 SharePoint Online �
 2. 向用户提供一条警告，指示已检测到病毒。 向用户提供下载文件的选项，并尝试使用自己的防病毒软件将其清除。
 
 > [!NOTE]
-> 
+>
 > 可以在 SharePoint Online PowerShell 中的[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 上使用*DisallowInfectedFileDownload*参数，以防止用户下载感染病毒的文件，即使在反病毒警告窗口中也是如此。
-> 
+>
 > 此外，请注意，只要您启用了*DisallowInfectedFileDownload*参数，就会完全阻止用户和管理员对检测到的/被阻止的文件的访问。
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步客户端尝试同步受感染的文件时，会发生什么情况？
 
-用户是使用新 OneDrive 同步客户端（OneDrive.exe）还是以前的 OneDrive for Business 同步客户端（Groove.exe）同步文件，如果文件包含病毒，同步客户端不会下载它。 同步客户端将显示一条通知，指出文件无法同步。
+无论用户是使用新 OneDrive 同步客户端同步文件 ( # A0) 还是以前的 OneDrive for Business 同步客户端 ( # A1) ，如果文件包含病毒，则同步客户端不会下载它。 同步客户端将显示一条通知，指出文件无法同步。
 
 ## <a name="extended-capabilities-with-office-365-atp"></a>Office 365 ATP 的扩展功能
 

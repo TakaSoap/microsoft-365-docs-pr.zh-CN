@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解安全 & 合规性中心中提供的智能报告和见解，以及如何使用它们查看和浏览数据并快速执行操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577182"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652773"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -40,7 +40,9 @@ ms.locfileid: "46577182"
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>安全 & 合规中心中的报告类型
 
 安全 & 合规中心中提供了各种各样的报告。  (转到 "**报告**" \> **仪表板**以获取一个详细视图。 ) 下表列出了包含链接的可用报告，以了解详细信息：
-  
+
+****
+
 |信息类型|如何到达那里|从何处转到了解详细信息|
 |---|---|---|
 |**安全 & 合规性中心报告** (全部更新)   <br/> 热门见解和建议，以及指向安全 & 合规性报告的链接，包括数据丢失防护报告、标签、电子邮件安全报告、高级威胁防护报告等|在安全 & 合规性中心中，转到 "**报告**" \> **仪表板**|[在 Microsoft 365 安全中心中监视和查看报告](../mtp/monitoring-and-reporting.md)|
@@ -53,6 +55,7 @@ ms.locfileid: "46577182"
 |**GDPR 合规性** <br/> 有关 GDPR 合规性的信息，包括指向数据主体的链接、标签趋势和活动 & 已结束案例|在安全 & 合规性中心中，转到**Data 隐私声明** \> **GDPR 仪表板**|[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**审核日志** <br/> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息|在安全 & 合规性中心中，转到**搜索 & 调查** \> **审核日志搜索**|[在安全 & 合规性中心中搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**合规性报告** <br/> FedRAMP 报告、管理、风险和合规性报告、ISO 信息安全管理报告以及 Service Organization Controls 审核和评估报告|在安全 & 合规性中心中，转到**服务保证** \> **合规性报告**|[在 Office 365 中规划安全 & 合规性](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## <a name="related-topics"></a>相关主题
 

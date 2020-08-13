@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: 获取与 Microsoft 365 云服务和应用程序的安全信息和事件管理（SIEM）服务器集成的概述
-ms.openlocfilehash: c52f24c6260c890b1f6d8612efacb78f9b08be86
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 获取安全信息和事件管理 (SIEM) server 与 Microsoft 365 云服务和应用程序集成的概述
+ms.openlocfilehash: d2be5e0127adf25b3884e3717caccf60d4db1d28
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035256"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653566"
 ---
-# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理（SIEM）服务器集成
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理 (SIEM) server 集成
 
-## <a name="summary"></a>Summary
+## <a name="summary"></a>摘要
 
-您的组织是使用还是计划获取安全信息和事件管理（SIEM）服务器？ 您可能想知道它是如何与 Microsoft 365 或 Office 365 集成的。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 服务和应用程序相集成的资源的列表。
+您的组织是使用还是计划在 SIEM) server 中获取安全信息和事件管理 (吗？ 您可能想知道它是如何与 Microsoft 365 或 Office 365 集成的。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 服务和应用程序相集成的资源的列表。
 
 > [!TIP]
 > 如果你还没有 SIEM 服务器并且正在浏览你的选项，请考虑使用**[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**。
@@ -37,7 +37,7 @@ ms.locfileid: "44035256"
 
 您是否需要 SIEM 服务器取决于多个因素，例如组织的安全要求和数据所在的位置。 Microsoft 365 包括各种安全功能，这些功能可满足许多组织的安全需要，而无需其他服务器（如 SIEM 服务器）。 某些组织具有需要使用 SIEM 服务器的特殊情况。 下面是一些示例：
 
-- *Fabrikam*在本地有一些内容和应用程序，而有些在云中（它们具有混合云部署）。 若要在其所有内容和应用程序中获取安全报告，Fabrikam 已实现 SIEM 服务器。
+- *Fabrikam*在本地拥有一些内容和应用程序，而其中一些内容和应用程序 (其具有混合云部署) 。 若要在其所有内容和应用程序中获取安全报告，Fabrikam 已实现 SIEM 服务器。
 
 - *Contoso*是一种具有特别严格的安全要求的金融服务组织。 他们已将 SIEM 服务器添加到其环境中，以充分利用他们所需的额外安全保护。
 
@@ -45,9 +45,10 @@ ms.locfileid: "44035256"
 
 SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数据。 下表列出了几个 Microsoft 365 服务和应用程序，以及 SIEM 服务器输入和资源，以了解详细信息。
 
-||||
+****
+
+|Microsoft 365 服务或应用程序|SIEM 服务器输入/方法|了解详细信息的资源|
 |---|---|---|
-|**Microsoft 365 服务或应用程序**|**SIEM 服务器输入/方法**|**了解详细信息的资源**|
 |[Office 365 高级威胁防护](office-365-atp.md)|审核日志|[SIEM 与 Office 365 高级威胁防护的集成](siem-integration-with-office-365-ti.md)|
 |[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中托管的 HTTPS 终结点 <br/>REST API|[将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|日志集成|[SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem)|

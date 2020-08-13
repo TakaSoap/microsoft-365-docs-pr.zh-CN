@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 4221af6b0378e67e12852dbef0bbc0a11ff56511
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204751"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649471"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -36,33 +36,33 @@ ms.locfileid: "45204751"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | 字符串 | 触发事件的活动类型 |
-| `Application` | 字符串 | 执行录制操作的应用程序 |
+| `ActionType` | string | 触发事件的活动类型 |
+| `Application` | string | 执行录制操作的应用程序 |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
-| `FolderPath` | 字符串 | 包含录制的操作所应用于的文件的文件夹 |
-| `PreviousFileName` | 字符串 | 作为操作的结果重命名的文件的原始名称 |
-| `PreviousFolderPath` | 字符串 | 在应用录制的操作之前包含文件的原始文件夹 |
-| `Protocol` | 字符串 | 使用的网络协议 |
-| `AccountName` | 字符串 | 帐户的用户名 |
-| `AccountDomain` | 字符串 | 帐户的域 |
-| `AccountUpn` | 字符串 | 帐户的用户主体名称（UPN） |
-| `AccountObjectId` | 字符串 | Azure AD 中的帐户的唯一标识符 |
-| `AccountDisplayName` | 字符串 | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
-| `DeviceName` | 字符串 | 设备的完全限定的域名（FQDN） |
-| `DeviceType` | 字符串 | 设备类型 | 
-| `OSPlatform` | 字符串 | 设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
+| `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
+| `PreviousFileName` | string | 作为操作的结果重命名的文件的原始名称 |
+| `PreviousFolderPath` | string | 在应用录制的操作之前包含文件的原始文件夹 |
+| `Protocol` | string | 使用的网络协议 |
+| `AccountName` | string | 帐户的用户名 |
+| `AccountDomain` | string | 帐户的域 |
+| `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
+| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `DeviceName` | string | 设备 (FQDN) 的完全限定的域名称 |
+| `DeviceType` | string | 设备类型 | 
+| `OSPlatform` | string | 设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `DestinationDeviceName` | 字符串 | 运行处理录制操作的服务器应用程序的设备的名称 |
-| `DestinationIPAddress` | 字符串 | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
-| `Location` | 字符串 | 与事件关联的城市、国家或其他地理位置 |
-| `Isp` | 字符串 | 与终结点 IP 地址关联的 Internet 服务提供商（ISP） |
+| `DestinationDeviceName` | string | 运行处理录制操作的服务器应用程序的设备的名称 |
+| `DestinationIPAddress` | string | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
+| `Location` | string | 与事件关联的城市、国家或其他地理位置 |
+| `Isp` | string | Internet 服务提供商 (与终结点 IP 地址关联的 ISP)  |
 | `ReportId` | long | 事件的唯一标识符 |
-| `AdditionalFields` | 字符串 | 有关实体或事件的其他信息 |
+| `AdditionalFields` | string | 有关实体或事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 747b6b875a3b7ebc8125ac27ed00c9a300845427
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: 193b637236957bd0543be847be97169600367ddf
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091953"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656917"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在 Office 365 中提供的恶意电子邮件
 
@@ -32,28 +32,31 @@ ms.locfileid: "45091953"
 
 > [!NOTE]
 > 请在[此处](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)跳转到修补文章。
-  
+
 ## <a name="before-you-begin"></a>准备工作
 
 请确保满足以下要求：
-  
-- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](../../admin/manage/assign-licenses-to-users.md)。
-    
-- 为你的组织启用[审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。 
-    
-- 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅防御[Office 365 中的威胁](protect-against-threats.md)。
-    
-- 您是全局管理员，或者您具有安全管理员或在安全合规中心中分配的搜索和清除角色 &amp; 。 查看[安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。 
 
-#### <a name="preview-role-permissions"></a>预览角色权限
+- 您的组织具有[Office 365 高级威胁防护](office-365-atp.md)，并将[许可证分配给用户](../../admin/manage/assign-licenses-to-users.md)。
+
+- 为你的组织启用[审核日志记录](../../compliance/turn-audit-log-search-on-or-off.md)。
+
+- 您的组织具有为反垃圾邮件、反恶意软件、反网络钓鱼等定义的策略。 请参阅防御[Office 365 中的威胁](protect-against-threats.md)。
+
+- 您是全局管理员，或者您具有安全管理员或在安全合规中心中分配的搜索和清除角色 &amp; 。 查看[安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。 对于某些操作，还必须分配新的预览角色。
+
+### <a name="preview-role-permissions"></a>预览角色权限
 
 若要执行某些操作（如查看邮件头或下载电子邮件内容），您必须具有一个名为*Preview*的新角色，并将其添加到另一个相应的角色组。 下表阐明了所需的角色和权限。
 
-|活动  |角色组 |是否需要预览角色？  |
-|---------|---------|---------|
-|使用威胁资源管理器 (和实时检测) 分析威胁     |全局管理员 <br> 安全管理员 <br> 安全读取者     | 否   |
-|使用威胁资源管理器 (和实时检测) 查看电子邮件的邮件头以及预览和下载隔离的电子邮件    |全局管理员 <br> 安全管理员 <br>安全读取者   |       否  |
-|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件     |全局管理员 <br>安全管理员 <br> 安全读取者 <br> Preview   |   是      |
+****
+
+|活动|角色组|是否需要预览角色？|
+|---|---|---|
+|使用威胁资源管理器 (和实时检测) 分析威胁 |全局管理员 <br> 安全管理员 <br> 安全读取者|否|
+|使用威胁资源管理器 (和实时检测) 查看电子邮件的邮件头以及预览和下载隔离的电子邮件|全局管理员 <br> 安全管理员 <br>安全读取者|否|
+|使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件|全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览|是|
+|
 
 > [!NOTE]
 > *预览*是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配有 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) ，并且安全管理员和安全读者角色在安全 & 合规性中心 () 中分配 [https://protection.office.com](https://protection.office.com) 。 若要了解有关角色和权限的详细信息，请参阅[Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -84,6 +87,7 @@ ms.locfileid: "45091953"
     "*提交*" 视图显示由管理员或用户提交的、报告给 Microsoft 的所有邮件。
 
 4. **威胁资源管理器中的搜索和筛选**器：筛选器显示在搜索栏中页面的顶部，以帮助管理员进行调查。 请注意，可以同时应用多个筛选器，添加筛选器中的多个逗号分隔值，以缩小搜索范围。 请注意：
+
     - 筛选器对大多数筛选条件执行完全匹配。
     - Subject 筛选器使用 CONTAINS 查询。
     - URL 筛选器使用或不使用协议 (ex。 https) 。
@@ -98,17 +102,19 @@ ms.locfileid: "45091953"
 
    *按小时筛选*可帮助贵组织的安全团队快速向下钻取。 允许的最短持续时间为30分钟。 如果可以根据时间帧缩小可疑操作 (例如，在3小时前) ，这将限制上下文并帮助查明问题。
 
-  ![按小时筛选选项，以缩小数据安全团队的处理量，并且其最短持续时间为30分钟。](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   ![按小时筛选选项，以缩小数据安全团队的处理量，并且其最短持续时间为30分钟。](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **威胁资源管理器中的字段**：威胁浏览器会公开更多与安全性相关的邮件信息，例如*传递操作*、*传递位置*、*特殊操作*、*方向*性、*覆盖*和*URL 威胁*。 它还允许组织的安全团队以更高确定性进行调查。 
+6. **威胁资源管理器中的字段**：威胁浏览器会公开更多与安全性相关的邮件信息，例如*传递操作*、*传递位置*、*特殊操作*、*方向*性、*覆盖*和*URL 威胁*。 它还允许组织的安全团队以更高确定性进行调查。
 
     *传递操作*是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作：
+
     - **传递**–将电子邮件传递到用户的收件箱或文件夹，用户可以直接访问它。
     - **Junked** (传递到垃圾) –将电子邮件发送到用户的垃圾邮件文件夹或已删除的文件夹，并且用户可以访问其垃圾邮件或已删除文件夹中的电子邮件。
     - 已**阻止**–隔离、失败或丢弃的任何电子邮件。  (完全无法被用户访问。 ) 
     - **已替换**–所有恶意附件替换为 .txt 文件的电子邮件，这些文件的状态为 "恶意附件"。
 
     **送达位置**：提供了传递位置筛选器，以便帮助管理员了解可疑的恶意邮件结束的位置以及对它执行了哪些操作。 可将生成的数据导出到电子表格。 可能的送达位置为：
+
     - **收件箱或文件夹**–电子邮件位于收件箱中或特定文件夹中，具体取决于您的电子邮件规则。
     - **本地或外部**–邮箱在云中不存在，但在本地。
     - **垃圾邮件文件夹**–电子邮件位于用户的垃圾邮件文件夹中。
@@ -121,15 +127,18 @@ ms.locfileid: "45091953"
 
     **替代**：此筛选器获取邮件的 "详细信息" 选项卡上显示的信息，并使用它来公开允许和阻止邮件的组织或用户策略被*覆盖*的位置。 此筛选器最重要的一点是，它可以帮助组织的安全团队查看由于配置而传递了多少可疑电子邮件。 这使他们有机会根据需要修改 "允许" 和 "阻止"。 可以将此筛选器的结果集导出到电子表格。
 
-|威胁资源管理器替代  | 它们的含义  |
-|---------|---------|
-|组织策略允许     |   按组织策略的指示，允许在邮箱中发送邮件。       |
-|已被组织策略阻止      |  邮件被阻止按照组织策略的指示将邮件传递到邮箱。    |
-|组织策略阻止的文件扩展名     | 根据组织策略的指示，文件被阻止传递到邮箱。        |
-|用户策略允许     | 用户策略允许在邮箱中发送邮件。        |
-|被用户策略阻止     | 阻止邮件按照用户策略的指导将邮件传递到邮箱。        |
+    ****
 
-**Url 威胁**： "url 威胁" 字段已包含在电子邮件的 "*详细信息*" 选项卡上，用于指示 URL 所呈现的威胁。 URL 表现的威胁可以包含*恶意软件*、*网络钓鱼*或*垃圾邮件*，而威胁部分中不会显示*任何**威胁*的 url。
+    |威胁资源管理器替代|它们的含义|
+    |---|---|
+    |组织策略允许|按组织策略的指示，允许在邮箱中发送邮件。|
+    |已被组织策略阻止|邮件被阻止按照组织策略的指示将邮件传递到邮箱。|
+    |组织策略阻止的文件扩展名|根据组织策略的指示，文件被阻止传递到邮箱。|
+    |用户策略允许|用户策略允许在邮箱中发送邮件。|
+    |被用户策略阻止|阻止邮件按照用户策略的指导将邮件传递到邮箱。|
+    |
+
+    **Url 威胁**： "url 威胁" 字段已包含在电子邮件的 "*详细信息*" 选项卡上，用于指示 URL 所呈现的威胁。 URL 表现的威胁可以包含*恶意软件*、*网络钓鱼*或*垃圾邮件*，而威胁部分中不会显示*任何**威胁*的 url。
 
 7. **电子邮件日程表视图**：安全操作团队可能需要深入研究电子邮件详细信息，以便进一步调查。 通过电子邮件时间线，管理员可以查看从传递到送达后对电子邮件执行的操作。 若要查看电子邮件日程表，请单击电子邮件的主题，然后单击 "电子邮件日程表"。  (它显示在面板上的其他标题中，如摘要或详细信息。 ) 可以将这些结果导出到电子表格。
 
@@ -141,52 +150,52 @@ ms.locfileid: "45091953"
 
     - [查看你的电子邮件的日程表](#view-the-timeline-of-your-email)。
 
-    ##### <a name="check-the-delivery-action-and-location"></a>检查传递操作和位置
+### <a name="check-the-delivery-action-and-location"></a>检查传递操作和位置
 
-    在[威胁资源管理器中 (和实时检测) ](threat-explorer.md)，现在您有 "**传递操作**" 和 "**传递位置**" 列，而不是以前的 "**传递状态**" 列。 这将导致您的电子邮件位于何处的更完整的图片。 此更改的目标部分是使调查更易于进行安全操作团队，但最终结果是了解问题电子邮件的位置。
+在[威胁资源管理器中 (和实时检测) ](threat-explorer.md)，现在您有 "**传递操作**" 和 "**传递位置**" 列，而不是以前的 "**传递状态**" 列。 这将导致您的电子邮件位于何处的更完整的图片。 此更改的目标部分是使调查更易于进行安全操作团队，但最终结果是了解问题电子邮件的位置。
 
-    传递状态现已分为两列：
+传递状态现已分为两列：
 
-    - **传递操作**-此电子邮件的状态是什么？
+- **传递操作**-此电子邮件的状态是什么？
 
-    - **送达位置**-此电子邮件的路由结果
+- **送达位置**-此电子邮件的路由结果
 
-    传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作：
+传递操作是由于现有策略或检测而导致对电子邮件执行的操作。 以下是电子邮件可能执行的操作：
 
-    - **传递**–将电子邮件传递到用户的收件箱或文件夹，用户可以直接访问它。
+- **传递**–将电子邮件传递到用户的收件箱或文件夹，用户可以直接访问它。
 
-    - **Junked** –将电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户可以访问其 "垃圾邮件" 或 "已删除" 文件夹中的电子邮件。
+- **Junked** –将电子邮件发送到用户的 "垃圾邮件" 文件夹或 "已删除" 文件夹，并且用户可以访问其 "垃圾邮件" 或 "已删除" 文件夹中的电子邮件。
 
-    - 已**阻止**–隔离、失败或丢弃的任何电子邮件。  (完全无法被用户访问。 ) 
+- 已**阻止**–隔离、失败或丢弃的任何电子邮件。  (完全无法被用户访问。 ) 
 
-    - **已替换**–所有恶意附件都被替换为 .txt 文件的电子邮件，这些文件的状态为 "恶意附件"。
- 
-    "送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的可能值：
+- **已替换**–所有恶意附件都被替换为 .txt 文件的电子邮件，这些文件的状态为 "恶意附件"。
 
-    - **收件箱或文件夹**–电子邮件位于收件箱中或文件夹 (根据您的电子邮件规则) 。
+"送达位置" 显示运行送达后的策略和检测结果。 它已链接到传递操作。 添加此字段是为了深入了解在发现问题邮件时所采取的操作。 以下是送达位置的可能值：
 
-    - **本地或外部**–邮箱在云上不存在，但在本地。
+- **收件箱或文件夹**–电子邮件位于收件箱中或文件夹 (根据您的电子邮件规则) 。
 
-    - **垃圾邮件文件夹**–电子邮件位于用户的垃圾邮件文件夹中。
+- **本地或外部**–邮箱在云上不存在，但在本地。
 
-    - "**已删除邮件" 文件夹**–电子邮件位于用户的 "已删除邮件" 文件夹中。
+- **垃圾邮件文件夹**–电子邮件位于用户的垃圾邮件文件夹中。
 
-    - **隔离**–隔离的电子邮件，而不是用户邮箱中的电子邮件。
+- "**已删除邮件" 文件夹**–电子邮件位于用户的 "已删除邮件" 文件夹中。
 
-    - **失败**–电子邮件无法访问邮箱。
+- **隔离**–隔离的电子邮件，而不是用户邮箱中的电子邮件。
 
-    - **丢弃**–电子邮件在邮件流中的某个位置丢失。
+- **失败**–电子邮件无法访问邮箱。
 
-     ##### <a name="view-the-timeline-of-your-email"></a>查看你的电子邮件的日程表
-  
-     **电子邮件日程表**是威胁资源管理器中的一个字段，可使您的安全操作团队更轻松地使用查找。 当电子邮件上的多个事件同时发生或在同一时间结束时，这些事件将显示在 "日程表" 视图中。 在 "**特殊操作**" 列中捕获到电子邮件的传递后发生的一些事件。 将电子邮件的时间线中的信息与在传递后进行的任何特殊操作组合在一起，管理员可以深入了解策略和威胁处理 (例如邮件路由的位置，在某些情况下，) 最终评估。
+- **丢弃**–电子邮件在邮件流中的某个位置丢失。
+
+### <a name="view-the-timeline-of-your-email"></a>查看你的电子邮件的日程表
+
+**电子邮件日程表**是威胁资源管理器中的一个字段，可使您的安全操作团队更轻松地使用查找。 当电子邮件上的多个事件同时发生或在同一时间结束时，这些事件将显示在 "日程表" 视图中。 在 "**特殊操作**" 列中捕获到电子邮件的传递后发生的一些事件。 将电子邮件的时间线中的信息与在传递后进行的任何特殊操作组合在一起，管理员可以深入了解策略和威胁处理 (例如邮件路由的位置，在某些情况下，) 最终评估。
 
 > [!IMPORTANT]
 > 请在[此处](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)跳转到修正主题。
 
 <!-- Reference material
 
-1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
+1. **Navigate to Threat Explorer**: Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
 
 2. In the left navigation quick-launch, choose **Threat management** \> **Explorer**.
 
@@ -194,34 +203,34 @@ ms.locfileid: "45091953"
 
     Once you've opened the email timeline, you should see a table that tells you the post-delivery events for that mail. In the case of no further events for the email, you should see a single event for the original delivery that states a result like **Blocked** with a verdict like **Phish**. The tab also has the option to export the entire email timeline, and this exports all the details on the tab and details on the email (things like Subject, Sender, Recipient, Network, and Message ID).
 
-    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view. 
-    
-    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was. 
+    The email timeline cuts down on randomization because there is less time spent checking different locations to try to understand events that happened since the email arrived. When multiple events happen at, or close to, the same time on an email, those events show up in a timeline view.
+
+    Some events that happen post-delivery to your mail are captured in the **Special actions** column. Combining the information from the email timeline along with special actions taken on email post-delivery gives admins insight into how their policies work, where the email was finally routed, and, in some cases, what the final assessment was.
 
 4. In the **View** menu, choose **All email**.
 
     ![Use the View menu to choose between Email and Content reports](../../media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
-  
+
     Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.
 
     ![Threat Explorer showing data for all email](../../media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
-    
+
     (Depending on the actions that were taken on email messages for your organization, you might see other labels, such as **Blocked** or **Replaced**.)
-    
+
 5. In the report, choose **Delivered** to view only email messages that ended up in users' inboxes.
 
     ![Clicking "Delivered to junk" removes that data from view](../../media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
-  
+
 6. Below the chart, review the **Email** list below the chart.
 
     ![Below the chart, view a list of email messages that were detected](../../media/dfb60590-1236-499d-97da-86c68621e2bc.png)
-  
+
 7. In the list, choose an item to view more details about that email message. For example, you can click the subject line to view information about the sender, recipients, attachments, and other similar email messages.
 
     ![You can view additional information about an item](../../media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
-  
+
 8. After viewing information about email messages, select one or more items in the list to activate **+ Actions**.
-    
+
 9. Use the **+ Actions** list to apply an action, such as **Move to deleted** items. This deletes the selected messages from the recipients' mailboxes.
 
     ![When you select one or more email messages, you can choose from several available actions](../../media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
@@ -234,7 +243,7 @@ Malicious attackers might be sending mail to people in your organization in an a
 
 Threat Explorer provides your security operations team with the details they need to investigate suspicious email. Your security operations team can:
 
-- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body) 
+- [View the email headers and download the email body](#view-the-email-headers-and-download-the-email-body)
 
 - [Check the delivery action and location](#check-the-delivery-action-and-location)
 
@@ -244,13 +253,13 @@ Threat Explorer provides your security operations team with the details they nee
 
 The ability to preview email headers and download the body of an email body are powerful capabilities in Threat Explorer. Appropriate [permissions](permissions-in-the-security-and-compliance-center.md) must be assigned. See [Preview role permissions](#preview-role-permissions).
 
-To access your message header and email download options, follow these steps: 
+To access your message header and email download options, follow these steps:
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center. 
-    
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. This takes you to the Security &amp; Compliance Center.
+
 2. In the left navigation, choose **Threat management** \> **Explorer**.
 
-3. Click on a subject in the Threat Explorer table. 
+3. Click on a subject in the Threat Explorer table.
 
     This opens the flyout, where both header preview and email download links are positioned.
 
@@ -265,7 +274,7 @@ To access your message header and email download options, follow these steps:
 [修正在 Office 365 中传递的恶意电子邮件](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
 
 [Office 365 高级威胁防护](office-365-ti.md)
-  
+
 [防御 Office 365 中的威胁](protect-against-threats.md)
-  
+
 [查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)

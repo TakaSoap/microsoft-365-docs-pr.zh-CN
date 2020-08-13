@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5a9bc0a28f8c9f360975325adbdd50ad22b0afc5
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005694"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648859"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -41,7 +41,7 @@ ms.locfileid: "45005694"
 | `InternetMessageId` | string | 发送电子邮件系统设置的电子邮件的面向公众的标识符 |
 | `Action` | string | 对实体执行的操作 |
 | `ActionType` | string | 触发事件的活动类型：手动修正、网络钓鱼 ZAP、恶意软件 ZAP |
-| `ActionTrigger` | string | 指示某个操作是由管理员触发的（手动执行还是通过审批挂起的自动操作）进行，还是通过某些特殊机制（如 ZAP 或动态传递）触发的 |
+| `ActionTrigger` | string | 指示管理员是由管理员触发操作 (手动触发，还是通过审批挂起的自动操作) 或通过某些特殊机制（如 ZAP 或动态传递）触发的操作 |
 | `ActionResult` | string | 操作结果 |
 | `RecipientEmailAddress` | string | 收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
@@ -49,14 +49,14 @@ ms.locfileid: "45005694"
 ## <a name="supported-event-types"></a>支持的事件类型
 此表捕获具有以下值的事件 `ActionType` ：
 
-- **手动修正**–管理员在将电子邮件传递到用户邮箱后手动对其采取操作。 这包括通过[威胁资源管理器](../office-365-security/threat-explorer.md)手动执行的操作或对[自动调查和响应（空中）操作](mtp-autoir-actions.md)的审批。
-- **网络钓鱼 ZAP** –[零小时自动清除（ZAP）](../office-365-security/zero-hour-auto-purge.md)传递后对网络钓鱼电子邮件采取了操作。
-- **恶意软件 ZAP** –零小时自动清除（ZAP）对在传递后包含恶意软件的电子邮件采取操作。
+- **手动修正** –管理员在将电子邮件传递到用户邮箱后手动对其采取操作。 这包括通过 [威胁资源管理器](../office-365-security/threat-explorer.md) 手动执行的操作或对 [自动调查和响应 (AIR) 操作](mtp-autoir-actions.md)的审批。
+- **网络钓鱼 ZAP** – [零小时自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 在传递后对网络钓鱼电子邮件采取操作。
+- **恶意软件 ZAP** –零小时自动清除 (ZAP) 对在传递后包含恶意软件的电子邮件采取操作。
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

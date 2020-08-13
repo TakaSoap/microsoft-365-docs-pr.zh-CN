@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14afd3c098c99a6e1e6ccfc7e9f6accbf8bf0e7d
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899074"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649375"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -68,7 +68,7 @@ AlertInfo
  *按严重性显示为柱形图的警报*的柱形图查询结果
 
 #### <a name="alert-severity-by-operating-system"></a>警报严重性（按操作系统）
-您还可以使用 `summarize` 运算符为来自多个字段的图表值准备结果。 例如，您可能想要了解如何在操作系统（OS）之间分布警报严重性。 
+您还可以使用 `summarize` 运算符为来自多个字段的图表值准备结果。 例如，您可能想要了解如何在操作系统 (OS) 之间分布警报严重性。 
 
 下面的查询使用 `join` 运算符从表中提取 OS 信息 `DeviceInfo` ，然后使用 `summarize` 对和列中的值进行计数 `OSPlatform` `Severity` ：
 
@@ -121,7 +121,7 @@ AppFileEvents
 ## <a name="drill-down-from-query-results"></a>从查询结果中向下钻取
 若要快速检查查询结果中的记录，请选择相应的行以打开 "**检查记录**" 面板。 该面板提供了基于所选记录的以下信息：
 
-- **资产**—在记录中发现的主要资产（邮箱、设备和用户）的汇总视图，通过可用信息（如风险和暴露程度）进行了丰富的汇总
+- **资产**—主要资产的汇总视图 (邮箱、设备和用户在记录中发现) ，并提供可用信息（如风险和暴露程度）
 - **进程树**—为包含进程信息的记录生成，并使用可用的上下文信息进行丰富处理;通常情况下，返回更多列的查询可能会导致更丰富的过程树。
 - **所有详细信息**—记录中各列的所有值  
 
@@ -151,7 +151,7 @@ AppFileEvents
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)
 - [自定义检测概述](custom-detections-overview.md)

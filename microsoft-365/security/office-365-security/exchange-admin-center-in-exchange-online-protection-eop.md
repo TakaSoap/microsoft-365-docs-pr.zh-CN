@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: 了解独立 Exchange Online Protection （EOP）中的 web 管理界面。
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: 了解独立 Exchange Online Protection (EOP) 中的 web 管理界面。
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616994"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652905"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>独立 EOP 中的 Exchange 管理中心
 
-Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Protection （EOP）的管理控制台。
+Exchange 管理中心 (EAC) 是一个基于 web 的管理控制台，用于 (EOP) 的独立 Exchange Online Protection。
 
 正在查找此主题的 Exchange Online 版本？ 请参阅 [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -35,15 +35,15 @@ Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Prot
 
 - **从 Microsoft 365 管理中心**：
 
-  1. 转到 <https://admin.microsoft.com> 并单击 "**全部显示**"。
+  1. 转到 <https://admin.microsoft.com> 并单击 " **全部显示**"。
 
      ![单击 Microsoft 365 管理中心中的 "全部显示"](../../media/m365-center-show-all.png)
 
-  2. 在出现的 "**管理中心**" 部分中，单击 "**所有管理中心**"。
+  2. 在出现的 " **管理中心** " 部分中，单击 " **所有管理中心**"。
 
      ![单击 Microsoft 365 管理中心内的 "所有管理中心"](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 在出现的 "**所有管理中心**" 页上，单击 " **Exchange Online Protection**"。
+  3. 在出现的 " **所有管理中心** " 页上，单击 " **Exchange Online Protection**"。
 
 - 直接转到 `https://admin.protection.outlook.com/ecp/` 。
 
@@ -66,11 +66,11 @@ Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Prot
 - **保护**：您可以在这里管理反恶意软件策略、默认连接筛选器策略和 DKIM。
 
   > [!NOTE]
-  > 应在安全 & 合规性中心管理反恶意软件策略和默认连接筛选器策略。 有关详细信息，请参阅[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)和[在 EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
+  > 应在安全 & 合规性中心管理反恶意软件策略和默认连接筛选器策略。 有关详细信息，请参阅 [在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md) 和 [在 EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
 
-- **邮件流**：您可以在此处管理邮件流规则（也称为传输规则）、接受域和连接器，以及可以转到运行邮件跟踪的位置。
+- **邮件流**：这是管理邮件流规则的地方， (也称为传输规则) 、接受域和连接器，以及可以转到运行邮件跟踪的位置。
 
-- **混合**：您可以在这里运行 "[混合配置" 向导](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)，以及可以在其中安装[Exchange Online PowerShell 模块](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
+- **混合**：您可以在这里运行 " [混合配置" 向导](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)，以及可以在其中安装 [Exchange Online PowerShell 模块](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)。
 
 ### <a name="tabs"></a>选项卡
 
@@ -80,15 +80,16 @@ Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Prot
 
 单击大多数选项卡时，将看到一个工具栏。工具栏包含执行特定操作的图标。下表介绍图标及其操作。
 
-||||
+****
+
+|图标|名称|Action|
 |---|---|---|
-|**图标**|**名称**|**Action**|
 |![添加图标](../../media/ITPro-EAC-AddIcon.gif)|添加、新建|使用此图标可创建一个新对象。其中一些图标有关联的向下箭头，单击该箭头会显示可以创建的其他对象。|
 |![编辑图标](../../media/ITPro-EAC-EditIcon.gif)|编辑|使用此图标可编辑对象。|
 |![删除图标](../../media/ITPro-EAC-DeleteIcon.gif)|删除|使用此图标可删除对象。有些删除图标有一个向下箭头，单击该箭头可显示其他选项。|
 |![搜索图标](../../media/ITPro-EAC-.gif)|搜索|使用此图标可打开一个搜索框，可在其中键入要查找的对象的搜索短语。|
 |![刷新图标](../../media/ITPro-EAC-RefreshIcon.gif)|刷新|使用此图标可刷新列表视图。|
-|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 "**收件人" \> 用户**单击此图标时，将显示用于执行**高级搜索**的选项。|
+|![更多选项图标](../../media/ITPro-EAC-MoreOptionsIcon.gif)|更多选项|使用此图标可以查看可对该选项卡的对象执行的更多操作。 例如，在 " **收件人" \> 用户** 单击此图标时，将显示用于执行 **高级搜索**的选项。|
 |![向上键图标](../../media/ITPro-EAC-UpArrowIcon.gif)![向下键图标](../../media/ITPro-EAC-DownArrowIcon.gif)|向上箭头和向下箭头|使用这些图标可以将对象的优先级上移或下移。|
 |![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)|删除|使用此图标可从列表中删除对象。|
 |
@@ -117,132 +118,70 @@ Exchange 管理中心（EAC）是基于 web 的用于独立 Exchange Online Prot
 
 ## <a name="supported-browsers"></a>支持的浏览器
 
-若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关支持的服务的浏览器和系统要求的详细信息，请参阅[Office 的系统要求](https://products.office.com/office-system-requirements)。
+若要获得最佳的 EAC 使用体验，我们建议您始终使用最新的浏览器、Office 客户端和应用程序。 我们还建议您安装可用的软件更新。 有关支持的服务的浏览器和系统要求的详细信息，请参阅 [Office 的系统要求](https://products.office.com/office-system-requirements)。
 
 ## <a name="supported-languages"></a>支持的语言
 
 在独立 EOP 中，EAC 支持并可使用以下语言。
 
 - 阿姆哈拉语
-
 - 阿拉伯语
-
 - 巴斯克语（巴斯克）
-
 - 孟加拉语（印度）
-
 - 保加利亚语
-
 - 加泰罗尼亚语
-
 - 中文（简体）
-
 - 中文（繁体）
-
 - 克罗地亚语
-
 - 捷克语
-
 - 丹麦语
-
 - 荷兰语
-
-- 荷兰语
-
 - 英语
-
 - 爱沙尼亚语
-
 - 菲律宾语（菲律宾）
-
 - 芬兰语
-
 - 法语
-
 - 加利西亚语
-
 - 德语
-
 - 希腊语
-
 - 古吉拉特语
-
 - 希伯来语
-
 - 印地语
-
 - 匈牙利语
-
 - 冰岛语
-
 - 印度尼西亚语
-
 - 意大利语
-
 - 日语
-
 - 卡纳达语
-
 - 哈萨克斯坦语
-
 - 斯瓦希里语
-
 - 朝鲜语
-
 - 拉脱维亚语
-
 - 立陶宛语
-
 - 马来语（文莱达鲁萨兰国）
-
 - 马来语（马来西亚）
-
 - 马拉雅拉姆语
-
 - 马拉地语
-
 - 挪威语（博克马尔）
-
 - 挪威语（尼诺斯克语）
-
 - 奥里雅语
-
 - 波斯语
-
 - 波兰语
-
 - 葡萄牙语（巴西）
-
 - 葡萄牙语（葡萄牙）
-
 - 罗马尼亚语
-
 - 俄语
-
 - 塞尔维亚语（西里尔文，塞尔维亚）
-
 - 塞尔维亚语（拉丁文）
-
 - 斯洛伐克语
-
 - 斯洛文尼亚语
-
 - 西班牙语
-
 - 瑞典语
-
 - 泰米尔语
-
 - 泰卢固语
-
 - 泰语
-
 - 土耳其语
-
 - 乌克兰语
-
 - 乌尔都语
-
 - 越南语
-
 - 威尔士语

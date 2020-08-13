@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811070"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656547"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
@@ -33,19 +33,22 @@ ms.locfileid: "44811070"
 
 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md)可防止您的组织无意中共享恶意文件。 检测到恶意文件时，将阻止该文件，以便在组织的安全团队执行进一步操作之前，任何人都无法打开、复制、移动或共享该文件。 阅读本文以打开 SharePoint、OneDrive 和团队的 ATP，设置通知以获得检测到的文件的通知，并采取后续步骤。
 
-若要定义（或编辑） ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
+若要定义 (或编辑) ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
+
+****
 
 |Role|分配的位置/方式|
-|---------|---------|
-|全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。 （请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以了解详细信息。）|
-|安全管理员|Azure Active Directory 管理中心（ [https://aad.portal.azure.com](https://aad.portal.azure.com) ）|
-|Exchange Online 组织管理|Exchange 管理中心（ [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) ） <br>或 <br>  PowerShell cmdlet （请参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)）|
+|---|---|
+|全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。  (参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)，了解详细信息。 ) |
+|安全管理员|Azure Active Directory 管理员中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) |
+|Exchange Online 组织管理|Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))  <br>或 <br>  PowerShell cmdlet (参阅[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 在**开始此过程之前，请确保已为您的 Microsoft 365 环境启用审核日志记录**。 这通常由在 Exchange Online 中分配了审核日志角色的人完成。 有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) ，然后使用你的工作或学校帐户登录。
+1. 转到 <https://protection.office.com> ，然后使用你的工作或学校帐户登录。
 
 2. 在安全 & 合规性中心的左侧导航窗格中的 "**威胁管理**" 下，选择 "**策略** \> **安全附件**"。
 
@@ -55,19 +58,19 @@ ms.locfileid: "44811070"
 
    ![为 SharePoint Online、OneDrive for Business 和 Microsoft 团队启用高级威胁防护](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
 
-4. 单击“保存”****。
+4. 单击“**保存**”。
 
-5. 查看（并根据需要编辑）您组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
+5. 查看 (，并根据需要编辑) 组织的[安全附件策略](set-up-atp-safe-attachments-policies.md)和[安全链接策略](set-up-atp-safe-links-policies.md)。
 
-6. 适合作为全局管理员或 SharePoint Online 管理员，运行**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将_DisallowInfectedFileDownload_参数设置为*true*。
+6.  (推荐) 为全局管理员或 SharePoint Online 管理员，请运行**[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将_DisallowInfectedFileDownload_参数设置为*true*。
 
-   - 如果将参数设置为*true，则*会阻止检测到的文件的所有操作（删除除外）。 用户无法打开、移动、复制或共享检测到的文件。
+   - 如果将参数设置为*true，则*会阻止对检测到的文件 (删除) 除外的所有操作。 用户无法打开、移动、复制或共享检测到的文件。
 
    - 将参数设置为*false*将阻止除 "删除" 和 "下载" 以外的所有操作。 用户可以选择接受风险并下载检测到的文件。
 
 7. 允许最长30分钟，你的更改将传播到所有 Microsoft 365 数据中心。
 
-8. 适合继续设置针对检测到的文件的通知。
+8.  (建议的) 继续设置针对检测到的文件的通知。
 
 若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用[Powershell 管理 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
 
@@ -93,7 +96,7 @@ ms.locfileid: "44811070"
 
 6. 在 "**将此通知发送给 ...** " 部分，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。
 
-7. 单击“保存”****。
+7. 单击“**保存**”。
 
 若要了解有关通知的详细信息，请参阅[在安全 & 合规性中心中创建活动通知](../../compliance/create-activity-alerts.md)。
 

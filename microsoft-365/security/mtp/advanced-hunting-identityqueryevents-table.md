@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204871"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649315"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -37,32 +37,32 @@ ms.locfileid: "45204871"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型 |
-| `Application` | 字符串 | 执行录制操作的应用程序 |
-| `QueryType` | 字符串 | 查询类型，如 QueryGroup、QueryUser 或 EnumerateUsers |
-| `QueryTarget` | 字符串 | 要查询的用户、组、设备、域或任何其他实体类型的名称 |
-| `Query` | 字符串 | 用于运行查询的字符串 |
-| `Protocol` | 字符串 | 通信过程中使用的协议 |
-| `AccountName` | 字符串 | 帐户的用户名 |
-| `AccountDomain` | 字符串 | 帐户的域 |
-| `AccountUpn` | 字符串 | 帐户的用户主体名称（UPN） |
-| `AccountSid` | 字符串 | 帐户的安全标识符（SID） |
-| `AccountObjectId` | 字符串 | Azure AD 中的帐户的唯一标识符 |
-| `AccountDisplayName` | 字符串 | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
-| `DeviceName` | 字符串 | 终结点的完全限定的域名（FQDN） |
-| `IPAddress` | 字符串 | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
-| `DestinationDeviceName` | 字符串 | 运行处理录制操作的服务器应用程序的设备的名称 |
-| `DestinationIPAddress` | 字符串 | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
-| `TargetDeviceName` | 字符串 | 应用录制的操作的设备的完全限定的域名（FQDN） |
-| `TargetAccountUpn` | 字符串 | 应用录制的操作的帐户的用户主体名称（UPN） |
-| `TargetAccountDisplayName` | 字符串 | 将录制的操作应用于的帐户的显示名称 |
-| `Location` | 字符串 | 与事件关联的城市、国家或其他地理位置 |
+| `Application` | string | 执行录制操作的应用程序 |
+| `QueryType` | string | 查询类型，如 QueryGroup、QueryUser 或 EnumerateUsers |
+| `QueryTarget` | string | 要查询的用户、组、设备、域或任何其他实体类型的名称 |
+| `Query` | string | 用于运行查询的字符串 |
+| `Protocol` | string | 通信过程中使用的协议 |
+| `AccountName` | string | 帐户的用户名 |
+| `AccountDomain` | string | 帐户的域 |
+| `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
+| `AccountSid` | string | 帐户的安全标识符 (SID)  |
+| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
+| `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
+| `DeviceName` | string | 终结点 (FQDN) 的完全限定的域名称 |
+| `IPAddress` | string | 分配给终结点的 IP 地址，并在相关的网络通信过程中使用 |
+| `DestinationDeviceName` | string | 运行处理录制操作的服务器应用程序的设备的名称 |
+| `DestinationIPAddress` | string | 运行用于处理录制操作的服务器应用程序的设备的 IP 地址 |
+| `TargetDeviceName` | string | 应用录制的操作的设备的完全限定的域名 (FQDN)  |
+| `TargetAccountUpn` | string | 应用了录制的操作的帐户 (UPN) 的用户主体名称 |
+| `TargetAccountDisplayName` | string | 将录制的操作应用于的帐户的显示名称 |
+| `Location` | string | 与事件关联的城市、国家或其他地理位置 |
 | `ReportId` | long | 事件的唯一标识符 |
-| `AdditionalFields` | 字符串 | 有关实体或事件的其他信息 |
+| `AdditionalFields` | string | 有关实体或事件的其他信息 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备和电子邮件搜寻威胁](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

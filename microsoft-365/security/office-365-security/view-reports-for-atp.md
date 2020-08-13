@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全合规中心中查找和使用适用于 Office 365 高级威胁防护的报告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: dc68df40e6b7b576644be607697d7b1ed0a33660
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577980"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653529"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>查看 Office 365 高级威胁防护报告
 
@@ -265,14 +265,17 @@ Office 365 高级威胁防护 (ATP) 组织 (例如，Microsoft 365 E5 订阅或 
 
 除了本主题中所述的 ATP 报告之外，还有几个其他报告可供使用，如下表所述：
 
+****
+
 |报告|主题|
 |---|---|
 |**资源管理器** (atp plan 2) 或 (ATP plan 1) 的**实时检测**|[威胁资源管理器（和实时检测）](threat-explorer.md)|
 |**电子邮件安全报告**，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。|[查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)|
 |**邮件流报告**，例如转发报告、邮件流状态报告和主要发件人和收件人报告。|[查看安全 & 合规性中心中的邮件流报告](view-mail-flow-reports.md)|
 |**ATP 安全链接的 URL 跟踪**仅 (PowerShell) 。 此 cmdlet 的输出显示在过去七天内 ATP 安全链接操作的结果。|[UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|仅) **的 EOP 和 ATP (PowerShell 的邮件流量结果**。 此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|仅) **的 EOP 和 ATP (PowerShell 的邮件流量结果**。 此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |仅 (PowerShell) 中**的 EOP 和 ATP 检测的邮件详细信息报告**。 此 cmdlet 的输出包含有关恶意文件或 Url、网络钓鱼企图、模拟以及电子邮件或文件中的其他潜在威胁的详细信息。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 报告所需的权限是什么？
 
