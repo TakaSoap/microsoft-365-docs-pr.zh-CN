@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588204"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649149"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -124,6 +124,8 @@ ms.locfileid: "46588204"
   
 > [!IMPORTANT]
 > 在锁定保留策略之前，请务必了解这样做的影响，并确认组织是否需要这样做来遵守法规要求。 在应用保留锁定后，管理员便无法禁用或删除保留策略。
+
+通过使用 PowerShell，在创建保留策略后应用保留锁定。 说明已经包含在[创建和配置保留策略](create-retention-policies.md)中。
 
 #### <a name="releasing-a-retention-policy"></a>解除保留策略
 

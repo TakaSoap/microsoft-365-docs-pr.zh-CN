@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解由 Exchange Online Protection (EOP) 添加到邮件的标头字段。 这些标头字段提供有关此邮件的信息，以及其处理方式的相关内容。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755352"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653421"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
@@ -43,9 +43,10 @@ ms.locfileid: "44755352"
 > [!NOTE]
 > **X-Forefront-Antispam-Report** 标头包含许多不同的标头字段和值。 此标头中未描述的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
 
-|||
+****
+
+|标头字段|说明|
 |---|---|
-|**标头字段**|**说明**|
 |ARC|ARC 协议有以下头： <ul><li>AAR：记录 DMARC 中身份验证结果邮件头的内容。</li><li>AMS：此邮件头包括邮件的加密签名。</li><li>AS：包括邮件头的加密签名。 此头包含名为“cv=”的链验证的标记，其中包括值为 **none**、**pass** 或 **fail** 的链验证结果。</li></ul>|
 |CAT：|应用于邮件的保护策略类别： <ul><li>BULK：批量邮件</li><li>DIMP：域模仿</li><li>GIMP：基于邮箱智能的模拟</li><li>HPHSH 或 HPHISH：高可信度钓鱼邮件</li><li>HSPM：高可信度垃圾邮件</li><li>MALW：恶意软件</li><li>PHSH：网络钓鱼</li><li>SPM：垃圾邮件</li><li>SPOOF：欺骗</li><li>UIMP：用户模拟</li><li>AMP：反恶意软件</li><li>SAP：安全附件</li><li>OSPM：出站垃圾邮件</li></ul><br/>入站邮件可能受到多种形式保护方法和多次检测扫描的标记。 策略的优先级不同，优先级最高的策略第一个应用。 有关详细信息，请参阅[在电子邮件上运行多种保护方法和多次检测扫描时应用什么策略](how-policies-and-protections-are-combined.md)。|
 |CIP：\[IP 地址\]|连接 IP 地址。 可以在 IP 允许列表或 IP 阻止列表中使用此 IP 地址。 有关详细信息，请参阅[配置连接筛选](configure-the-connection-filter-policy.md)。|
@@ -75,9 +76,10 @@ ms.locfileid: "44755352"
 
 下表描述了“**X-Microsoft-Antispam**”邮件头中的有用字段。此标头中的其他字段专供 Microsoft 反垃圾邮件团队用于进行诊断。
 
-|||
+****
+
+|标头字段|说明|
 |---|---|
-|**标头字段**|**说明**|
 |BCL|邮件的批量投诉级别 (BCL)。 BCL 越高，大量邮件（亦称为 _“灰色邮件”_）产生投诉的可能性就越大（因此更可能是垃圾邮件）。 有关详细信息，请参阅[批量投诉级别 (BCL)](bulk-complaint-level-values.md)。|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 本表描述了每封电子邮件身份验证检查的字段和可能的值。
 
-|||
+****
+
+|标头字段|说明|
 |---|---|
-|**标头字段**|**说明**|
 |action|指示垃圾邮件筛选器基于 DMARC 检查结果执行的操作。例如： <ul><li>**oreject** 或 **o.reject**：表示替代拒绝。 在这种情况下，Microsoft 365 在从 DMARC TXT 记录的策略为 p=reject 的域中接收未通过 DMARC 检查的邮件时使用此操作。 Microsoft 365 将该邮件标记为垃圾邮件，而不是删除或拒绝该邮件。 有关这样配置 Microsoft 365 的原因的详细信息，请参阅 [Microsoft 365 如何处理未通过 DMARC 的入站电子邮件](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。</li><li>**pct.quarantine**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为隔离，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**pct.reject**：表示未通过 DMARC 检查的部分邮件（少于 100%）仍将进行传递。 这表示邮件未通过 DMARC 且已将策略设置为拒绝，但 pct 字段未设置为 100% 且系统根据每个特定域的策略随机决定不执行 DMARC 操作。</li><li>**permerror**：DMARC 评估期间发生了永久性错误，例如在 DNS 中遇到格式有误的 DMARC TXT 记录。 尝试重新发送此邮件不太可能产生不同的结果。 你反而可能需要联系域的所有者，以解决该问题。</li><li>**temperror**：DMARC 评估期间出现暂时性错误。 你可能能够请求发件人稍后重新发送邮件，以便正确处理电子邮件。</li></ul>|
 |compauth|复合身份验证结果。 由 Microsoft 365 使用，用于合并多种类型的身份验证，例如 SPF、DKIM、DMARC 或邮件的任何其他部分，以确定是否对邮件进行身份验证。 使用“From: domain”作为评估的基础。|
 |dkim|说明邮件的 DKIM 检查结果。可能的值包括： <ul><li>**pass**：表示通过了邮件的 DKIM 检查。</li><li>**fail (reason)**：表示未通过了邮件的 DKIM 检查并给出原因。 例如，如果邮件未签名或签名未经验证。</li><li>**none**：表示邮件未签名。 这可能表示或不表示域存在 DKIM 记录或 DKIM 记录未生成结果，仅表示该邮件未签名。</li></ul>|

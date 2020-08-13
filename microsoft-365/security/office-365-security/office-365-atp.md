@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 高级威胁防护包括安全附件、安全链接、高级反钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434045"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653601"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 高级威胁防护
 
@@ -45,9 +45,11 @@ Office 365 高级威胁防护 (ATP) 可保护你的组织免受电子邮件、�
 
 下表概括了每个计划中包含的内容。
 
-| Office 365 ATP 计划 1 | Office 365 ATP 计划 2 |
+****
+
+|Office 365 ATP 计划 1|Office 365 ATP 计划 2|
 |---|---|
-|配置、保护和检测功能：<br/>• [安全附件](atp-safe-attachments.md)<br/>• [安全链接](atp-safe-links.md)<br/>• [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>• [ATP 防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [实时检测](threat-explorer.md)|Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：<br/>• [威胁跟踪器](threat-trackers.md)<br/>• [威胁资源管理器](threat-explorer.md)<br/>• [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [攻击模拟器](attack-simulator.md)|
+|<br/>配置、保护和检测功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全链接](atp-safe-links.md)</li><li>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[ATP 防钓鱼保护](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[实时检测](threat-explorer.md)</li></ul>|Office 365 ATP 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：</li><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻击模拟器](attack-simulator.md)</li></ul>|
 |
 
 - Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中包含 Office 365 ATP 计划 2。
@@ -112,11 +114,11 @@ Office 365 ATP 计划 2 包括同类最佳的[威胁调查和响应工具](offic
 若要访问安全与合规中心中的 ATP 功能，你必须分配有相应的角色。 下表提供一些示例：
 
 |角色或角色组|了解详细信息的资源|
-|---------|---------|
-|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限） |[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限） |[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
+|---|---|
+|全局管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|安全管理员（可以在 Azure Active Directory 或安全与合规中心内分配此权限）|[Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 组织管理（在 Exchange Online 中分配此权限）|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
-|搜索和清除（仅在安全与合规中心内分配此权限） |[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md|
+|搜索和清除（仅在安全与合规中心内分配此权限）|[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)|
 
 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
