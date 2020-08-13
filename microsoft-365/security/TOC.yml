@@ -135,7 +135,7 @@
                   href: mtp/advanced-hunting-take-action.md
                 - name: 使用共享查询
                   href: mtp/advanced-hunting-shared-queries.md
-                - name: 在设备和电子邮件中搜寻
+                - name: 跨设备、电子邮件、应用和标识进行查寻
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 转到查寻
                   href: mtp/advanced-hunting-go-hunt.md
