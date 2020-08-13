@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 了解用于 Office 365 中的加密的各种证书、技术和 TLS 密码套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: c9bc61a7c7a35d84d5e4ff338927ead98a932d9d
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024538"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649093"
 ---
 # <a name="technical-reference-details-about-encryption"></a>有关加密的技术参考详细信息
 
@@ -30,7 +30,7 @@ ms.locfileid: "45024538"
   
 - 如果你正在寻找概述信息，请参阅[Office 365 中的加密](encryption.md)。
 - 如果你正在寻找安装程序信息，请参阅[在 Office 365 企业版中设置加密](set-up-encryption.md)。
-- 有关 Windows 特定版本支持的密码套件的信息，请参阅[TLS/SSL 中的密码套件（SCHANNEL SSP）](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+- 有关 Windows 特定版本支持的密码套件的信息，请参阅[TLS/SSL 中的密码套件 (SCHANNEL SSP) ](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Microsoft Office 365 证书所有权和管理
 
@@ -42,33 +42,27 @@ ms.locfileid: "45024538"
 
 ## <a name="fips-compliance-for-office-365"></a>适用于 Office 365 的 FIPS 合规性
 
-Office 365 支持的所有密码套件使用 FIPS 140-2 可接受的算法。 Office 365 继承 Windows 中的 FIPS 验证（通过 Schannel）。 有关 Schannel 的信息，请参阅[TLS/SSL 中的密码套件（SCHANNEL SSP）](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
+Office 365 支持的所有密码套件使用 FIPS 140-2 可接受的算法。 Office 365 通过 Schannel) 从 Windows (继承 FIPS 验证。 有关 Schannel 的信息，请参阅[TLS/SSL 中的密码套件 (SCHANNEL SSP) ](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel)。
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Office 365 支持的 TLS 版本
 
-传输层安全性 (TLS) 和 TLS 之前的 SSL 都是一种加密协议，通过使用安全证书加密计算机之间的连接来保护网络通信的安全。 Office 365 支持 TLS 版本1.2 （TLS 1.2）。
+传输层安全性 (TLS) 和 TLS 之前的 SSL 都是一种加密协议，通过使用安全证书加密计算机之间的连接来保护网络通信的安全。 Office 365 支持 TLS 版本 1.2 (TLS 1.2) 。
 
-TLS 版本1.3 （TLS 1.3）目前不受支持。
+TLS 版本 1.3 (TLS 1.3) 目前不受支持。
   
 ## <a name="support-for-tls-10-and-11-deprecation-and-what-this-means-for-you"></a>支持 TLS 1.0 和1.1 弃用，以及这对你来说意味着什么
 
-自2018年10月31日起，Office 365 不再支持 TLS 1.0 和1.1。 这意味着对于使用 TLS 1.0 和 1.1 连接到 Office 365 的客户端、设备或服务，Microsoft 将不再修复其出现的新问题。
-
-这并不意味着 Office 365 将阻止 TLS 1.0 和1.1 连接。
-
-尽管我们最初为全球和 GCC 环境的 TLS 1.0 和 TLS 1.1 弃用设置了日期6月1日、2020、此日期不再有效。 这是由于 COVID-19 所致。 当我们为此过时日期提供新日期时，我们会将其发布到此处。 
-
-对于 GCC 高和 DoD 的环境，官方弃用发生在2020年1月15日。
+自2018年10月31日起，Office 365 不再支持 TLS 1.0 和1.1。 这意味着对于使用 TLS 1.0 和 1.1 连接到 Office 365 的客户端、设备或服务，Microsoft 将不再修复其出现的新问题。 适用于 GCC 高和 DoD 的正式弃用环境开始2020年1月15日。 在全球和 GCC 环境2020中，过时的 TLS 1.0 和1.1 将于年10月15日开始。 
 
 应确保所有客户端服务器和浏览器的组合都使用 TLS 1.2 和新式密码套件来维护与 Office 365 和 Microsoft 365 服务的安全连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。 有关这对你有何影响的信息，请参阅在[Office 365 中强制使用 TLS 1.2 的准备工作](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
   
 ## <a name="deprecating-support-for-3des"></a>对3DES 的弃用支持
 
-自2018年10月31日起，Office 365 不再支持使用3DES 密码套件与 Office 365 通信。 更具体地说，Office 365 不再支持 TLS_RSA_WITH_3DES_EDE_CBC_SHA 密码套件。 从2019年2月28日起，此密码套件在 Office 365 中已禁用。 在此日期之后，与 Office 365 通信的客户端和服务器必须至少支持本主题中列出的一个更安全的密码（请参阅[Office 365 支持的 TLS 密码套件](#tls-cipher-suites-supported-by-office-365)）。
+自2018年10月31日起，Office 365 不再支持使用3DES 密码套件与 Office 365 通信。 更具体地说，Office 365 不再支持 TLS_RSA_WITH_3DES_EDE_CBC_SHA 密码套件。 从2019年2月28日起，此密码套件在 Office 365 中已禁用。 在此日期之后，与 Office 365 通信的客户端和服务器必须至少支持本主题中列出的一个更安全的密码 (请参阅[Office 365 支持的 TLS 密码套件](#tls-cipher-suites-supported-by-office-365)) 。
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>在 Office 365 中弃用 SHA-1 证书支持
 
-从6月2016，Office 365 不再为出站或入站连接接受 SHA-1 证书。 如果您当前在证书链中使用 SHA-1 证书，则需要更新该链以使用 SHA-1 （安全哈希算法2）或更强的哈希算法。
+从6月2016，Office 365 不再为出站或入站连接接受 SHA-1 证书。 如果你当前在证书链中使用 SHA-1 证书，则需要更新链以使用 SHA-1 (安全哈希算法 2) 或更强的哈希算法。
   
 ## <a name="tls-cipher-suites-supported-by-office-365"></a>Office 365 支持的 TLS 密码套件
 
@@ -76,19 +70,30 @@ TLS 版本1.3 （TLS 1.3）目前不受支持。
 
 > [!IMPORTANT]
 > 请注意，TLS 版本弃用，如果有更新的版本，则*不应使用*此版本。 目前不支持 TLS 1.3。 如果您的旧服务不需要 TLS 1.0 或1.1，则应禁用它们。
-  
-|**协议**|**密码套件名称**|**密钥交换算法/强度**|**完全向前保密支持**|**身份验证算法/强度**|**密码/强度**|
+
+| 密码套件 | 密钥交换算法/强度 | 完全向前保密 | 密码/强度 | 身份验证算法 |
+|:-----|:-----|:-----|:-----|:-----|
+|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 <br/>     |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 <br/>     |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|是 <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|是 <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_GCM_SHA256 <br/>           |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |否 <br/> |AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |否 <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |否 <br/> |AES/128 <br/>|RSA/112 <br/> |
+
+以下是在其弃用日期之前仍支持 TLS 1.0 和1.1 协议的以下密码套件。 对于 GCC 的高和 DoD 环境，弃用日期为2020年1月15日，在全球和 GCC 环境中，日期为10月15日，即2020。
+
+| 协议 | 密码套件名称 | 密钥交换算法/强度 | 完全向前保密支持 | 身份验证算法/强度 | 密码/强度 |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |否  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |是  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |是  <br/> |RSA/112  <br/> |AES/128  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA        <br/> |RSA/112  <br/>  |否  <br/>  |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.0、1.1、1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA        <br/> |RSA/112  <br/>  |否  <br/>  |RSA/112  <br/> |AES/128  <br/> |
    
 ## <a name="related-topics"></a>相关主题
 [Windows 10 v1903 中的 TLS 密码套件](https://docs.microsoft.com/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903)
@@ -99,7 +104,6 @@ TLS 版本1.3 （TLS 1.3）目前不受支持。
   
 [在 Windows 安全状态更新中，TLS 1.0 的 Schannel 实现：11月24日，2015](https://support.microsoft.com/kb/3117336)
   
-[TLS/SSL 加密增强功能（Windows IT 中心）](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
+[ (Windows IT 中心) 的 TLS/SSL 加密增强功能](https://technet.microsoft.com/library/cc766285%28v=ws.10%29.aspx)
   
- [在 Office 365 和 Office 365 GCC 中准备 TLS 1.2](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)
-
+[在 Office 365 和 Office 365 GCC 中准备 TLS 1.2](https://docs.microsoft.com/office365/troubleshoot/security/prepare-tls-1.2-in-office-365)

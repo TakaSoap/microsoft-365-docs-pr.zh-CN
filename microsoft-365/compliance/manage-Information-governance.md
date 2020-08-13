@@ -14,14 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Microsoft 365 中的信息管理。
-ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 526f91eb70ec2e249d2f8b83c4238f0f43584db1
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641605"
+ms.locfileid: "46649139"
 ---
 # <a name="manage-information-governance"></a>管理信息治理
+
+>*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 使用 Microsoft 信息管理功能来管理您的数据，以实现合规性或法规要求。
 

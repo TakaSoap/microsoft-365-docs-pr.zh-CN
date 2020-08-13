@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577844"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653409"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -129,8 +129,7 @@ Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 有兴趣赏鸟，他加入了邮件列表 birdwatchers@fabrikam.com，并向列表发送了以下邮件：
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> 
-**主题：** 本周到瑞尼尔山顶。 观赏蓝鸟 <br/><br/>有人想本周一起去瑞尼尔山 赏鸟吗？
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <br/><br/>有人想本周一起去瑞尼尔山 赏鸟吗？
 
 邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 

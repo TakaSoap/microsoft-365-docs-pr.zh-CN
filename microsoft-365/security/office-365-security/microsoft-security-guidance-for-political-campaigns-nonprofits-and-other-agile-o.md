@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 摘要：针对发展迅速且配置文件威胁不断增加的组织的计划和实现指南。
-ms.openlocfilehash: d20d9f28f987b64f349510806c0d5b672998a9ab
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 98ede8a7dade750413dbdf2f35394cb8b15513e5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587516"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652881"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Microsoft 针对政治宣传活动、非营利组织和其他敏捷型组织的安全指南
 
@@ -38,11 +38,13 @@ ms.locfileid: "44587516"
 
 本指南介绍了如何实现安全的云环境。 该解决方案指南可供任何组织使用。 并且对带有 BYOD 访问权限和来宾帐户的敏捷型组织提供了更多帮助。 可使用本指南作为设计自己环境的起点。 我们欢迎你在 [CloudAdopt@microsoft.com](mailto:CloudAdopt@microsoft.com) 上提供反馈。
 
-|||
-|:-----|:-----|
-|**项**|**描述**|
+****
+
+|Item|说明|
+|---|---|
 |**Microsoft 针对政治宣传活动的安全指南** <br/> [![迷你海报集的缩略图。](../../media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx)|本指南以政治宣传活动的组织为例，可将本指南用作任何环境的起点。|
 |**Microsoft 针对非营利组织的安全指南** <br/> [![可下载文件的缩略图](../../media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx)|本指南经过略微修订，适用于非盈利组织。例如，引入了 Office 365 非盈利组织版计划。该技术指南与政治宣传活动解决方案指南相同。|
+|
 
 ## <a name="test-lab-guides"></a>测试实验室指南
 

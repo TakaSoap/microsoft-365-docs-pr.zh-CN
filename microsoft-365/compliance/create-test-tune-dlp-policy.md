@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您将了解如何根据您的组织需求来创建、测试和调整 DLP 策略。
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092002"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648779"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -37,6 +37,24 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
 - 主动阻止电子邮件或文件共享发生
 
 有时客户会关闭 DLP，因为他们不会认为自己需要保护的数据类型。 假定敏感数据（例如医疗记录或财务信息）仅适用于卫生保健行业或运行在线商店的公司。 但任何企业都可以定期处理敏感信息，即使他们不知道也是如此。 员工姓名和出生日期的电子表格与客户名称和信用卡详细信息的电子表格一样敏感。 此外，这种类型的信息可能会像你预期的那样浮动，因为员工不知不觉地转到日常任务，而不考虑从系统中导出 CSV 文件并向某人发送电子邮件的任何内容。 如果员工在不考虑结果的情况下发送包含信用卡或银行详细信息的电子邮件，您可能还会感到吃惊。
+
+## <a name="permissions"></a>权限
+
+创建 DLP 策略的合规性团队成员需要具有对安全 &amp; 合规中心的访问权限。 默认情况下，租户管理员将有权访问此位置，并可授予合规部主管和其他人访问安全 &amp; 合规中心的权限，而不为其提供租户管理员的所有权限。为此，我们建议你：
+  
+1. 在 Microsoft 365 中创建组并向其添加合规部主管。
+    
+2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
+
+3. 创建角色组时，请使用 "**选择角色**" 部分，将以下角色添加到角色组： " **DLP 合规性管理**"。
+    
+4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
+
+此外，还可通过授予“**仅查看 DLP 合规性管理**”角色，创建对 DLP 策略和 DLP 报告具有仅查看权限的角色组。
+
+有关详细信息，请访问[向用户授予对 Office 365 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+  
+只有在创建和应用 DLP 策略时才需要这些权限。 策略执行不需要访问此内容。
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP 如何检测敏感信息
 
