@@ -243,7 +243,7 @@
   items:
     - name: 管理信息治理
       href: manage-information-governance.md
-    - name: 导入数据
+    - name: 导入邮箱数据
       items:
         - name: 有关导入 PST 文件的概述
           href: importing-pst-files-to-office-365.md
@@ -251,8 +251,6 @@
           href: use-network-upload-to-import-pst-files.md
         - name: 使用驱动器传送导入 PST 文件
           href: use-drive-shipping-to-import-pst-files-to-office-365.md
-        - name: 使用 PST 收集工具查找、复制和删除 PST 文件
-          href: find-copy-and-delete-pst-files-in-your-organization.md
         - name: 导入 PST 文件时筛选数据
           href: filter-data-when-importing-pst-files.md
         - name: 有关导入 PST 文件的常见问题解答

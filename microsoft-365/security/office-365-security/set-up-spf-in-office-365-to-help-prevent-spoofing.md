@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936933"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632135"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
@@ -61,8 +61,8 @@ ms.locfileid: "44936933"
 
 1. 请务必熟悉下表中的 SPF 语法。
 
-   ||**如果您使用的是...**|**对于客户而言很常见？**|**添加以下内容...**|
-   |:-----|:-----|:-----|:-----|
+   ||如果您正在使用...|对于客户而言很常见？|添加以下内容...|
+   |---|---|---|---|
    |1|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值开头|v=spf1|
    |2|Exchange Online|常见|include:spf.protection.outlook.com|
    |3|Exchange Online 专用|不常见|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ ms.locfileid: "44936933"
 3. 一旦形成 SPF TXT 记录，则需要更新 DNS 中的记录。 只能为域使用一个 SPF TXT 记录。 如果存在 SPF TXT 记录，则需要更新现有的记录，而不是添加新记录。 转到[为 Office 365 创建 DNS 记录](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)然后单击 DNS 主机的链接。
 
 4. 测试 SPF TXT 记录。
+
+## <a name="how-to-handle-subdomains"></a>如何处理子域？
+
+请务必注意，您需要为每个子域创建单独的记录，因为子域不会继承其顶级域域的 SPF 记录。
+
+每个域和子域都需要一个额外的通配符SPF记录(`*.` )，以防止攻击者发送声称来自不存在的子域的电子邮件。 例如：
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>有关 SPF 的详细信息
 

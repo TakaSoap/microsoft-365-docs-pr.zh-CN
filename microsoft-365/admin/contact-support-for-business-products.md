@@ -21,12 +21,12 @@ search.appverid:
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552442"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641581"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
@@ -56,6 +56,9 @@ ms.locfileid: "46552442"
 帐单支持所用语言为英语，时间为星期一到星期五的上午 9 点到下午 5 点（澳大利亚为上午 9 点到下午 6 点）。\
 技术支持所用语言为英语，且全天候提供（每周 7 天，每天 24 小时）。\
 管理员应在致电时准备好提供帐户详细信息。
+
+> [!NOTE]
+> 为更好地保护组织，我们在现有的基于手机的验证过程中添加了基于 PIN 的验证步骤。 如果您通过未在组织配置文件中注册的号码与我们联系，Microsoft 支持代表会向您的 Microsoft 365 管理中心配置文件中注册的电子邮件或电话号码发送验证码。 您必须将此代码提供给支持代表，以授权他们访问您组织的账户。
 
 - **在美国，请拨打 1 800 865 9408。**
 

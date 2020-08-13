@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127329"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641627"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -117,16 +117,16 @@ ms.locfileid: "45127329"
     
     ![在“导入数据”页面上复制 SAS URL 并下载 AzCopy 工具](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a. 在步骤 2 中，单击“**显示网络上传 SAS URL**”。 系统显示 SAS URL 后，单击“**复制到剪贴板**”，然后将其粘贴并保存到文件中，以便以后可以访问它。
+    1. 在步骤 2 中，单击“**显示网络上传 SAS URL**”。 系统显示 SAS URL 后，单击“**复制到剪贴板**”，然后将其粘贴并保存到文件中，以便以后可以访问它。
     
-    b. 在步骤 3 中，单击“**下载 Azure AzCopy**”以下载并安装 AzCopy 工具。 在弹出的窗口中，单击“**运行**”来安装 AzCopy。 
+    1. 在步骤 3 中，单击“**下载 Azure AzCopy**”以下载并安装 AzCopy 工具。 在弹出的窗口中，单击“**运行**”来安装 AzCopy。 
     
-> [!NOTE]
-> 可将“**导入数据**”页面保留为打开状态（如果需要再次复制 SAS URL），也可以单击“**取消**”将其关闭。 
+   > [!NOTE]
+   > 可将“**导入数据**”页面保留为打开状态（如果需要再次复制 SAS URL），也可以单击“**取消**”将其关闭。 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>步骤 2：将 PST 文件上载到 Office 365
 
-现在就可以使用 AzCopy.exe 工具将 PST 文件上传到 Office 365。 此工具将其上传并存储在 Microsoft 云中的 Azure 存储位置。 如前所述，将 PST 文件上传到的 Azure 存储位置位于你组织所在的区域 Microsoft 数据中心。 若要完成此步骤，PST 文件必须位于你组织中的文件共享或文件服务器中。 这在此过程中称为源目录。 每次运行 AzCopy 工具时，都可以指定不同的源目录。 
+现在就可以使用 AzCopy.exe 工具将 PST 文件上传到 Office 365。 此工具将其上传并存储在 Microsoft 云中的 Azure 存储位置。 如前所述，您上传 PST 文件的 Azure 存储位置位于您的组织所在的 Microsoft 数据中心同一区域。 若要完成此步骤，PST 文件必须位于你组织中的文件共享或文件服务器中。 这在此过程中称为源目录。 每次运行 AzCopy 工具时，都可以指定不同的源目录。 
 
 > [!NOTE]
 > 如前文所述，上传到 Azure 存储位置的每个 PST 文件不应大于 20 GB。 大于 20 GB 的 PST 文件可能会影响在步骤 6 中启动的 PST 导入过程的性能。
@@ -146,7 +146,7 @@ ms.locfileid: "45127329"
  
     下表介绍了 AzCopy.exe 参数及其所需的值。 在上一步中获得的信息会用在这些参数的值中。
     
-    |**参数**|**说明**|**示例**|
+    | 参数 | 说明 | 示例 |
     |:-----|:-----|:-----|
     | `/Source:` <br/> |指定组织中包含将被上载到 Office 365 的 PST 文件的源目录。  <br/> 请务必用双引号 (" ") 引住此参数的值。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |指定你在步骤 1 中获得的 SAS URL。  <br/> 请务必用双引号 (" ") 引住此参数的值。<br/><br/>**注意：** 如果在脚本或批处理文件中使用 SAS URL，则需留意需要转义的某些字符。 例如，必须将 `%` 更改为 `%%` 并将 `&` 更改为 `^&`。<br/><br/>**提示：**（可选）可指定要将 PST 文件上传到的 Azure 存储位置中的子文件夹。 可以通过在 SAS URL 中添加子文件夹位置（在“ingestiondata”后面）来执行此操作。 第一个示例不指定子文件夹。 这意味着 PST 被上传到 Azure 存储位置的根文件夹（名为 *ingestiondata*）中。 第二个示例会将 PST 文件上传到 Azure 存储位置根文件夹中的一个子文件夹（名为 *PSTFiles*）中。  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> 或  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -208,7 +208,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
 2. 打开或将 CSV 文件保存到您的本地计算机。下面的示例显示已完成的 PST 导入映射文件（在记事本中打开）。使用 Microsoft Excel 编辑 CSV 文件变得容易得多。
 
-    ```text
+    ```console
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -229,7 +229,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
 
  3. 使用下表中的信息为 CSV 文件填充所需的信息。
 
-    |**参数**|**说明**|**示例**|
+    | 参数 | 说明 | 示例 |
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定将数据导入到的服务。 若要将 PST 文件导入到用户邮箱，请使用 `Exchange`。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |指定在步骤 2 中将 PST 文件上传到的 Azure 存储位置中的文件夹位置。  <br/> 如果在步骤 2 中你未在 SAS URL 中的 `/Dest:` 参数中包含可选子文件夹名称，请在 CSV 文件中将此参数留空。 如果包含了子文件夹名称，请在此参数中指定该名称（请参阅第二个示例）。 此参数的值区分大小写。  <br/> 无论采用哪种方法，均*不要*在 `FilePath` 参数的值中包含“ingestiondata”。  <br/><br/> **重要提示**：如果在步骤 2 中你在 SAS URL 中的 `/Dest:` 参数中包含了可选子文件夹名称，则文件路径名称的大小写必须与你使用的大小写相同。 例如，如果你在步骤 2 中将 `PSTFiles` 用作子文件夹名称，然后在 CSV 文件中的 `FilePath` 参数中使用 `pstfiles`，则导入 PST 文件将会失败。 请务必在两种情况下都使用相同的大小写。  <br/> |（保留为空白）  <br/> 或  <br/>  `PSTFiles` <br/> |
@@ -306,17 +306,17 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 3. 执行下列操作之一：
     
-    a. 若要缩减导入的数据，请单击“**是，我想在导入前将其筛选**”。
+   1. 若要缩减导入的数据，请单击“**是，我想在导入前将其筛选**”。
     
-    有关筛选 PST 文件中的数据然后启动导入作业的详细分步说明，请参阅[在将 PST 文件导入到 Office 365 时筛选数据](filter-data-when-importing-pst-files.md)。
+      有关筛选 PST 文件中的数据然后启动导入作业的详细分步说明，请参阅[在将 PST 文件导入到 Office 365 时筛选数据](filter-data-when-importing-pst-files.md)。
     
-    或
+      或
     
-    b. 若要导入 PST 文件中的所有数据，请单击“**不，我想要导入所有内容**”，然后单击“**下一步**”。
+   1. 若要导入 PST 文件中的所有数据，请单击“**不，我想要导入所有内容**”，然后单击“**下一步**”。
     
 4. 如果你选择导入所有数据，请单击“**导入数据**”来启动导入作业。 
     
-    导入作业的状态将显示在“**导入 PST 文件**”页面上。 单击 ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)“**刷新**”以更新“**状态**”列中显示的状态信息。 单击导入作业以显示状态浮出页面，该页面将显示正在导入的每个 PST 文件的状态信息。 
+   导入作业的状态将显示在“**导入 PST 文件**”页面上。 单击 ![刷新图标](../media/O365-MDM-Policy-RefreshIcon.gif)“**刷新**”以更新“**状态**”列中显示的状态信息。 单击导入作业以显示状态浮出页面，该页面将显示正在导入的每个 PST 文件的状态信息。 
 
 
   
@@ -346,7 +346,7 @@ Microsoft Azure 存储资源管理器处于预览阶段。
   
 - 下面是在步骤 1 中获得的共享访问签名 (SAS) URL 示例。 此示例还包含你在 AzCopy.exe 工具中运行的命令语法 - 用于上传 PST 文件。 请务必采取预防措施来保护 SAS URL，就像保护密码或其他与安全相关的信息一样。
 
-    ```text
+    ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
