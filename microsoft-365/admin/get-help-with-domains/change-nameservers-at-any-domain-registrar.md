@@ -1,7 +1,7 @@
 ---
 title: 更改名称服务器以使用任何域注册机构设置 Microsoft 365
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,24 +25,24 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560337"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662228"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任何域注册机构设置 Microsoft 365
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-检查[设置您的域 (特定主机的说明) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)先查看是否有注册注册程序的说明。 
+检查 [设置您的域 (特定主机的说明) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 先查看是否有注册注册程序的说明。 
   
-请按照以下说明在 Microsoft 365 中添加和设置你的域，以便你的服务（如电子邮件和 Skype for Business Online）将使用你自己的域名。 为此，您将验证您的域，然后将您的域的名称服务器更改为 Microsoft 365，以便可以为您设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
+请按照以下说明在 Microsoft 365 中添加和设置你的域，以便你的服务（如电子邮件和团队）将使用你自己的域名。 为此，您将验证您的域，然后将您的域的名称服务器更改为 Microsoft 365，以便可以为您设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
   
 - 你拥有自己的域，并希望将其设置为使用 Microsoft 365。
     
-- 你希望 Microsoft 365 为你管理 DNS 记录。  (如果您愿意，您可以[管理自己的 DNS 记录](../setup/add-domain.md)。 ) 
+- 你希望 Microsoft 365 为你管理 DNS 记录。  (如果您愿意，您可以 [管理自己的 DNS 记录](../setup/add-domain.md)。 ) 
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
 <a name="BKMK_verify"> </a>
@@ -114,17 +114,19 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
   
 若要在域注册机构的网站上更改您的域的名称服务器，请执行以下步骤：
   
-1. 在域注册机构的网站上查找您可以在其中编辑您的域的名称服务器的区域。
+1. 在域注册机构网站上查找可以在其中更改您的域的名称服务器的区域或可使用自定义名称服务器的区域。
     
-2. 创建两个名称服务器记录，或编辑现有名称服务器记录匹配以下值：
+2. 创建 nameserver 记录，或编辑现有的名称服务器记录以匹配以下值：
     
 |||
 |:-----|:-----|
 |首选名称服务器  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |次要名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|第三个名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|第四个名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > 应至少使用两个 nameserver 记录。 如果列出了任何其他名称服务器，则可以将其删除，也可以将其更改为**ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 
+   > 最好添加所有四条记录，但如果您的注册机构仅支持两个，请添加 **ns1.bdm.microsoftonline.com** 和 **ns2.bdm.microsoftonline.com**。 
   
 3. 保存所做的更改。
     
@@ -145,7 +147,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 |次要名称服务器  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 应至少使用两个 nameserver 记录。 如果列出了任何其他名称服务器，则可以将其删除，也可以将其更改为**ns3.dns.partner.microsoftonline.cn**和**ns4.dns.partner.microsoftonline.cn**。 
+   > 应至少使用两个 nameserver 记录。 如果列出了任何其他名称服务器，则可以将其删除，也可以将其更改为 **ns3.dns.partner.microsoftonline.cn** 和 **ns4.dns.partner.microsoftonline.cn**。 
   
 3. 保存所做的更改。
     
@@ -162,9 +164,9 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
-2. 在 "**域**" 页上，选择域，然后选择 " **DNS 记录**"。
+2. 在 " **域** " 页上，选择域，然后选择 " **DNS 记录**"。
 
-3. 在 " **DNS 设置**" 下，选择 "**自定义记录**"，然后选择 "**新建自定义记录**"。
+3. 在 " **DNS 设置**" 下，选择 " **自定义记录**"，然后选择 " **新建自定义记录**"。
 
 4. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
 
