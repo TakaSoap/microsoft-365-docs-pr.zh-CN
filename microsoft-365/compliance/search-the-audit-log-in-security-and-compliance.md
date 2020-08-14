@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577992"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674622"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -39,8 +39,6 @@ ms.locfileid: "46577992"
 - Azure Active Directory 中的管理员活动（Office 365 的目录服务）
 
 - Exchange Online 中的管理员活动（Exchange 管理员审核日志记录）
-
-- Sway 中的用户和管理员活动
 
 - 安全与合规中心中的电子数据展示活动
 
@@ -130,7 +128,6 @@ ms.locfileid: "46577992"
   |安全与合规中心|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |敏感度标签||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online 和 OneDrive for Business|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作区分析|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -305,15 +302,15 @@ ms.locfileid: "46577992"
 |:-----|:-----|:-----|
 |[文件和页面活动](#file-and-page-activities)|[文件夹活动](#folder-activities)|[SharePoint 列表活动](#sharepoint-list-activities)|
 |[共享和访问请求活动](#sharing-and-access-request-activities)|[同步活动](#synchronization-activities)|[网站权限活动](#site-permissions-activities)|
-|[网站管理活动](#site-administration-activities)|[Exchange 邮箱活动](#exchange-mailbox-activities)|[Sway 活动](#sway-activities)|
-|[用户管理活动](#user-administration-activities)|[Azure AD 组管理活动](#azure-ad-group-administration-activities)|[应用程序管理活动](#application-administration-activities)|
-|[角色管理活动](#role-administration-activities)|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|
-|[高级电子数据展示活动](#advanced-ediscovery-activities)|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活动](#microsoft-teams-activities)|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活动](#microsoft-teams-shifts-activities)|
-|[Yammer 活动](#yammer-activities)|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|
-|[Microsoft Stream 活动](#microsoft-stream-activities)|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|
-|[Microsoft Forms 活动](#microsoft-forms-activities)|[敏感度标签活动](#sensitivity-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)|
-|[保留策略和保留标签活动](#retention-policy-and-retention-label-activities)|||
+|[网站管理活动](#site-administration-activities)|[Exchange 邮箱活动](#exchange-mailbox-activities)|[用户管理活动](#user-administration-activities)|
+|[Azure AD 组管理活动](#azure-ad-group-administration-activities)|[应用程序管理活动](#application-administration-activities)|[角色管理活动](#role-administration-activities)|
+|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|[高级电子数据展示活动](#advanced-ediscovery-activities)|
+|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|[Microsoft Teams 活动](#microsoft-teams-activities)|
+|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活动](#microsoft-teams-shifts-activities)|[Yammer 活动](#yammer-activities)|
+|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
+|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)|
+|[敏感度标签活动](#sensitivity-label-activities)|[保留策略和保留标签活动](#retention-policy-and-retention-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)
+|||
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
 
@@ -557,28 +554,6 @@ ms.locfileid: "46577992"
 |已更新邮件|更新|已更改邮件或其属性。|
 |用户已登录到邮箱|MailboxLogin|用户登录其邮箱。|
 |将邮件标记为记录||用户已将保留标签应用于电子邮件，并且该标签被配置为将项目标记为记录。 |
-||||
-
-### <a name="sway-activities"></a>Sway 活动
-
-下表列出了 Sway 中的用户和管理员活动。 Sway 是一款 Microsoft 365 应用，可帮助用户在基于 Web 的交互式画布上收集、格式化和共享意见、案例和演示文稿。 有关详细信息，请参阅 [Sway 常见问题 - 管理员帮助](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
-
-|友好名称|操作|说明|
-|:-----|:-----|:-----|
-|已更改 Sway 共享级别|SwayChangeShareLevel|用户更改 Sway 的共享级别。 此事件捕获用户更改与 Sway 相关的共享范围；例如公共与组织内。|
-|已创建 Sway|SwayCreate|用户创建 Sway。|
-|已删除 Sway|SwayDelete|用户删除 Sway。|
-|已禁用 Sway 复制|SwayDisableDuplication|用户禁用 Sway 的复制。|
-|已复制 Sway|SwayDuplicate|用户复制 Sway。|
-|已编辑 Sway|SwayEdit|用户编辑 Sway。|
-|已启用 Sway 复制|EnableDuplication|用户启用 Sway 的复制。 默认允许用户启用 Sway 的复制。|
-|已撤销 Sway 共享|SwayRevokeShare|用户通过撤销对 Sway 的访问权限来停止共享它。 撤销访问更改与 Sway 关联的链接。|
-|已共享 Sway|SwayShare|用户尝试共享 Sway。 此事件捕获单击 Sway 共享菜单内特定共享目标的用户操作。 此事件不指示用户是否已完成共享操作。|
-|已关闭 Sway 的外部共享|SwayExternalSharingOff|管理员通过使用 Microsoft 365 管理中心为整个组织禁用外部 Sway 共享。|
-|已打开 Sway 的外部共享|SwayExternalSharingOn|管理员通过使用 Microsoft 365 管理中心为整个组织启用外部 Sway 共享。|
-|已关闭 Sway 服务|SwayServiceOff|管理员通过使用 Microsoft 365 管理中心为整个组织禁用 Sway。|
-|已打开 Sway 服务|SwayServiceOn|管理员通过使用 Microsoft 365 管理中心对整个组织启用 Sway（默认启用 Sway 服务）。|
-|已查看 Sway|SwayView|用户查看 Sway。|
 ||||
 
 ### <a name="user-administration-activities"></a>用户管理活动

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560613"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648801"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -136,6 +136,8 @@ ms.locfileid: "46560613"
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
 可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词、短语或可搜索属性值的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
+
+在对可搜索属性自动应用标签时，不能在查询中使用托管属性的别名。 它必须是托管属性的实际名称（例如，RefinableString01）。
 
 有关查询语法的详细信息，请参阅：
 

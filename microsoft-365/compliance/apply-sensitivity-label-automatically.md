@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560623"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656823"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -54,16 +54,15 @@ ms.locfileid: "46560623"
     有关配置说明，请参阅此页面上的[如何为 SharePoint、OneDrive 和 Exchange 配置自动标记策略](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     特定于 SharePoint 和 OneDrive 的自动标记：
-    - 支持以下 Office 文件：Word、PowerPoint 和 Excel。
+    - 支持以下 Office 文件：Word、PowerPoint 和 Excel。 支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 租户中每天最多自动标记 25,000 个文件。
-    - 每个自动标记策略最多 10 个网站集。
-    - 你的租户中最多 10 个自动标记策略。
+    - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
     - 如果标签应用了加密，则[权限管理颁发者和权限管理所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)是创建灵敏度标签的人。
 
     特定于 Exchange 的自动标记：
     - 与 Office 应用的手动标记或自动标记不同，系统还会根据你在自动标记策略中指定的条件来扫描 Office 附件（Word、Excel 和 PowerPoint 文件）和 PDF 附件。 如果存在匹配项，则会标记电子邮件，但不标记附件。
-        - 对于 Office 文件，支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+        - 对于这些 Office 文件，支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 如果你拥有已应用 IRM 加密的 Exchange 邮件流规则或数据丢失防护 (DLP) 策略：当内容由这些规则或策略和自动标记策略标识时，将应用该标签。 如果该标签已应用加密，则将忽略 Exchange 邮件流规则或 DLP 策略中的 IRM 设置。 但是，如果该标签未应用加密，则除了标签之外，还会应用邮件流规则或 DLP 策略中的 IRM 设置。
     - 如果存在匹配项，则具有 IRM 加密但没有标签的电子邮件将通过自动标记替换为具有加密设置的标签。
     - 与自动标记条件匹配时，将标记传入电子邮件。 但是，如果已将标签配置为加密，则不会应用该加密。
@@ -215,15 +214,15 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 用于自动标记策略的工作流：
 
-1. 创建和配置自动标记策略
+1. 创建和配置自动标记策略。
 
-2. 在模拟模式下运行策略并等待至少 24 小时
+2. 在模拟模式下运行策略，并等待 24 个小时，或者直到模拟完成。
 
-3. 查看结果，如有必要，优化策略、重新运行模拟模式并等待至少 24 小时
+3. 查看结果，并在必要时优化策略。 重新运行模拟模式，再等待 24 个小时，或者直到模拟完成。
 
-4. 根据需要重复步骤 3
+4. 根据需要重复步骤 3。
 
-5. 在生产中部署
+5. 在生产环境中部署。
 
 模拟部署的运行方式与 PowerShell 的 WhatIf 参数相同。 你将看到报告的结果，如同自动标记策略已使用你定义的规则应用了所选标签一样。 然后，你可以根据需要优化规则的准确性，并重新运行模拟。 但是，由于 Exchange 的自动标记适用于已发送和接收的电子邮件，而不是存储在邮箱中的电子邮件，因此不要期望模拟中的电子邮件结果保持一致，除非你能够发送和接收完全相同的电子邮件。
 

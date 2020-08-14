@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 9974bebef9809647e7fb87f98f9d2f505baca4f3
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126503"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656722"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -219,7 +219,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>识别包含敏感信息的内容
 
-也可以只对包含[特定类型的敏感信息](what-the-sensitive-information-types-look-for.md)的内容应用保留策略。 例如，可以选择只对纳税人识别号、社会保障号或护照号等包含个人信息的内容应用独特的保留要求。
+此外，还可以将保留策略只应用于包含[特定类型敏感信息](what-the-sensitive-information-types-look-for.md)的内容。例如，可选择将唯一保留要求只应用于包含个人信息（如纳税人标识号、身份证号或护照号）的内容。
   
 ![用于选择敏感信息类型的页](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -288,31 +288,37 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 锁定保留策略
 
-如果需要使用“[保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)”来满足法规要求，则必须使用 PowerShell。
+如果需要使用“[保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)”来满足法规要求，则必须使用 PowerShell。 由于管理员无法在应用保留锁定后禁用或删除保留策略，因此 UI 中不提供启用此功能，以防意外配置。
+
+具有任何配置的所有保留策略均支持“保留锁定”。 但是，在使用以下 PowerShell 命令时，你会注意到 **Workload** 参数始终显示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup**，而不是策略中配置的实际工作负载。 这只是显示问题。
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
 
-2. 运行 `Get-RetentionCompliancePolicy`，列出保留策略并查找要锁定的策略的名称。
+2. 运行 [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy)，列出保留策略并查找要锁定的策略的名称。 例如：
     
    ![PowerShell 中的保留策略列表](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. 若要在保留策略上启用保留锁定，请运行 `Set-RetentionCompliancePolicy` 并将 `RestrictiveRetention` 参数设置为 true。 例如：
-
-   ```powershell
-   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-   ```
-   
-   ![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+3. 若要对保留策略应用保留锁定，请运行带有保留策略名称的 [Set-RetentionCompliancePolicy]( ) cmdlet，并将 *RestrictiveRetention* 参数设置为 true：
     
-   运行该 cmdlet 后，请选择“**全是**”：
+    ```powershell
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    ```
+    
+    例如：
+    
+    ![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    
+     出现提示时，请阅读并确认此配置随附的限制，然后选择“**全是**”：
     
    ![用于确认你要在 PowerShell 中锁定保留策略的提示](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-现在，为保留策略提供了“保留锁定”功能。 如果运行 `Get-RetentionCompliancePolicy`，则 `RestrictiveRetention` 参数将设置为 true。 例如：
+现在，为保留策略提供了“保留锁定”功能。 若要确认，请再次运行 `Get-RetentionCompliancePolicy`，但指定保留策略名称并显示策略参数：
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+应看到 **RestrictiveRetention** 设置为 **True**。 例如：
 
 ![已在 PowerShell 中显示所有参数的锁定策略](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

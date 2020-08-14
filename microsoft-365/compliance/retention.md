@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649149"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662306"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -115,7 +115,7 @@ ms.locfileid: "46649149"
   
 锁定某个保留策略后：
 
-- 任何人都不能将其关闭
+- 任何人都无法关闭它
 - 可以添加位置，但不能删除位置
 - 无法在保留期内修改或删除受策略制约的内容
 - 可以延长保留期，但不能缩短保留期

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 面向管理员：了解如何使用网络上传将多个 PST 文件批量导入 Microsoft 365 中的用户邮箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: c126a8e00ae5182d42122fb98f95ffd585360412
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641627"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662286"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用网络上传将组织的 PST 文件导入到 Microsoft 365
 
@@ -390,4 +390,4 @@ Microsoft Azure 存储资源管理器处于预览阶段。
     
 5. **筛选将要导入到邮箱的 PST 数据：** 创建并启动导入作业之后，Microsoft 365 将通过确定项目的存在时长以及 PST 文件中所含的不同邮件类型来分析 PST 文件中的数据（以安全的方式）。 分析完成且数据准备就绪可供导入后，你可以选择导入 PST 文件中包含的所有数据，或者通过设置用于控制可导入哪些数据的筛选器来减少导入的数据。
     
-6. **启动 PST 导入作业：** 启动导入作业后，Microsoft 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在安全与合规中心的“**导入 PST 文件**”页。 导入作业完成后，作业的状态将设置为“**完成**”。
+6. **启动 PST 导入作业** - 启动导入作业后，Microsoft 365 使用 PST 导入映射文件中的信息将 PST 文件从 Azure 存储位置导入到用户邮箱。 与导入作业相关的状态信息（包括与每个导入的 PST 文件相关的信息）将显示在安全与合规中心的“**导入 PST 文件**”页。 导入作业完成后，作业的状态将设置为“**完成**”。

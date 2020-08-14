@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
-ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
+ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46536317"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648747"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -66,8 +66,8 @@ ms.locfileid: "46536317"
 
 |阶段  |所需项  |
 |---------|---------|
-|[第 1 部分：设置基于 EDM 的分类](#part-1-set-up-edm-based-classification)<br/><br/>（根据需要）<br/>- [编辑数据库架构](#editing-the-schema-for-edm-based-classification) <br/>- [删除架构](#removing-the-schema-for-edm-based-classification) |- 敏感数据的读取权限<br/>- .xml 格式的数据库架构（提供了示例）<br/>- .xml 格式的规则包（提供了示例）<br/>- 安全与合规中心的管理员权限（使用 PowerShell） |
-|[第 2 部分：创建索引并上载敏感数据](#part-2-index-and-upload-the-sensitive-data)<br/><br/>（根据需要）<br/>[刷新数据](#refreshing-your-sensitive-information-database) |- 自定义安全组和用户帐户<br/>- 使用 EDM 上载代理对计算机进行本地管理员访问<br/>- 敏感数据的读取权限<br/>- 刷新数据的流程和计划|
+|[第 1 部分：设置基于 EDM 的分类](#part-1-set-up-edm-based-classification)<br/><br/>（根据需要）<br/>- [编辑数据库架构](#editing-the-schema-for-edm-based-classification) <br/>- [删除架构](#removing-the-schema-for-edm-based-classification) |- 敏感数据的读取权限<br/>- XML 格式的数据库架构（提供了示例）<br/>- XML 格式的规则包（提供了示例）<br/>- 安全与合规中心的管理员权限（使用 PowerShell） |
+|[第 2 部分：为敏感数据创建哈希并上传](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>（根据需要）<br/>[刷新数据](#refreshing-your-sensitive-information-database) |- 自定义安全组和用户帐户<br/>- 使用 EDM 上载代理对计算机进行本地管理员访问<br/>- 敏感数据的读取权限<br/>- 刷新数据的流程和计划|
 |[第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- 具有 DLP 的 Microsoft 365 订阅<br/>- 已启用基于 EDM 的分类功能 |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：设置基于 EDM 的分类
@@ -83,14 +83,14 @@ ms.locfileid: "46536317"
 
 2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 请注意，列标题名称不得包含空格或下划线字符。 例如，.csv 文件名为  *PatientRecords.csv*，其中包含  *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN* 等列。
 
-3. 以 .xml 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml**并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
+3. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml**并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
 
       `\<Field name="" searchable=""/\>`（）。
 
       - 将列名用于 *字段名称*值。 
       - 将 *searchable="true"* 用于可搜索的字段，最多 5 个字段。 必须至少将一个字段指定为可搜索。
 
-      例如，以下 .xml 文件定义患者记录数据库的架构，其中五个字段指定为可搜索字段： *患者 ID*、 *MRN*、 *SSN*、 *电话*和 *DOB*。
+      例如，以下 XML 文件定义患者记录数据库的架构，其中五个字段指定为可搜索字段： *患者 ID*、 *MRN*、 *SSN*、 *电话*和 *DOB*。
 
       （可复制、修改和使用我们的示例。）
 
@@ -195,7 +195,7 @@ ms.locfileid: "46536317"
 
 ### <a name="set-up-a-rule-package"></a>设置规则包
 
-1. 按 .xml 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
+1. 按 XML 格式创建一个规则包（采用 Unicode 编码），如下例类似。 （可复制、修改和使用我们的示例。）
 
       设置规则包时，请确保正确引用 .csv 文件和 **edm.xml** 文件。 可复制、修改和使用我们的示例。 在此示例 xml 中，需要对以下字段进行自定义，以创建 EDM 敏感类型：
 
@@ -260,7 +260,7 @@ ms.locfileid: "46536317"
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-此时，你已设置基于 EDM 的分类。 下一步是为敏感数据创建索引，然后上传索引数据。
+此时，你已设置基于 EDM 的分类。 下一步是为敏感数据创建哈希，然后上传哈希以便编制索引。
 
 回想一下，在前面的过程中我们的 PatientRecords 架构将五个字段定义为可搜索： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和 *DOB*。 我们的示例规则包中有这些字段并引用数据库架构文件 (**edm.xml**)，其中每个可搜索的字段具有一个 *ExactMatch* 项目。 请考虑以下 ExactMatch 项目：
 
@@ -294,9 +294,9 @@ ms.locfileid: "46536317"
 > [!NOTE]
 > 为 EDMSchema 更新新增内容可能需要10-60 分钟。 更新必须完成，然后才能执行使用这些新增操作的步骤。
 
-### <a name="part-2-index-and-upload-the-sensitive-data"></a>第 2 部分：创建索引并上传敏感数据
+### <a name="part-2-hash-and-upload-the-sensitive-data"></a>第 2 部分：为敏感数据创建哈希并上传
 
-在此阶段，你将设置自定义安全组和用户帐户，并设置 EDM 上载代理工具。 然后，使用该工具为敏感数据创建索引，并上载索引数据。
+在此阶段，你将设置自定义安全组和用户帐户，并设置 EDM 上载代理工具。 然后，使用该工具为敏感数据创建哈希并上传哈希数据，以便对其编制索引。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
@@ -319,33 +319,33 @@ ms.locfileid: "46536317"
 
 1. 下载并安装适用于你的订阅的相应 [EDM 上载代理](#links-to-edm-upload-agent-by-subscription-type)。 默认情况下，安装位置应为 ** C:\\Program Files\\Microsoft\\EdmUploadAgent**。
 
-> [!TIP]
-> 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
+   > [!TIP]
+   > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
 
-> [!NOTE]
-> 每天只能使用 EDMUploadAgent 将数据上传到任何给定的数据存储空间两次。
+   > [!NOTE]
+   > 每天只能使用 EDMUploadAgent 将数据上传到任何给定的数据存储空间两次。
 
 2. 若要授权 EDM 上载代理，请打开 Windows 命令提示符（以管理员身份），然后运行以下命令：
 
-    `EdmUploadAgent.exe /Authorize`
+   `EdmUploadAgent.exe /Authorize`
 
 3. 使用添加到 EDM_DataUploaders 安全组的 Office 365 工作或学校帐户登录。
 
-下一步是使用 EDM 上载代理为敏感数据创建索引，然后上载索引数据。
+下一步是使用 EDM 上载代理为敏感数据创建哈希，然后上传哈希数据。
 
-#### <a name="index-and-upload-the-sensitive-data"></a>创建索引并上传敏感数据
+#### <a name="hash-and-upload-the-sensitive-data"></a>为敏感数据创建哈希并上传
 
 将敏感数据文件（注意我们的示例为 **PatientRecords.csv**）保存到计算机上的本地驱动器。 （我们已将示例 **PatientRecords.csv** 文件保存到 **C:\\Edm\\Data**。）
 
-若要为敏感数据创建索引并上传，请在 Windows 命令提示符中运行以下命令：
+若要为敏感数据创建哈希并上传，请在 Windows 命令提示符中运行以下命令：
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
 示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-若要分隔和执行独立环境中的敏感数据索引，请单独执行索引和上传步骤。
+若要在独立环境中分隔和执行敏感数据哈希，请单独执行哈希和上传步骤。
 
-若要为敏感数据创建索引，请在 Windows 命令提示符中运行以下命令：
+若要为敏感数据创建哈希，请在 Windows 命令提示符中运行以下命令：
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
@@ -353,7 +353,7 @@ ms.locfileid: "46536317"
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-若要上传索引数据，请在 Windows 命令提示符中运行以下命令：
+若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
@@ -361,7 +361,9 @@ ms.locfileid: "46536317"
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-若要验证是否已上传敏感数据，请在 Windows 命令提示符中运行以下命令：
+
+若要验证是否已上传敏感数据，请在“命令提示符”窗口中运行以下命令：
+
 
 `EdmUploadAgent.exe /GetDataStore`
 
@@ -377,28 +379,28 @@ ms.locfileid: "46536317"
 
 #### <a name="refreshing-your-sensitive-information-database"></a>刷新敏感信息数据库
 
-你可以每天或每周刷新敏感信息数据库，EDM 上载工具可以重新为敏感数据创建索引，然后重新上载索引数据。
+你可以每天或每周刷新敏感信息数据库，EDM 上载工具可以重新为敏感数据创建哈希，然后重新上载哈希数据。
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 
-2. 将敏感数据重新导出到应用（如 Microsoft Excel），并以 .csv 格式保存文件。 在按照 [创建索引并上传敏感数据](#index-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
+2. 将敏感数据重新导出到应用（如 Microsoft Excel），并以 .csv 格式保存文件。 在按照 [为敏感数据创建哈希并上传](#hash-and-upload-the-sensitive-data)中所述的步骤执行操作时，让所使用的文件名和位置保持不变。
 
       > [!NOTE]
       > 如果 .csv 文件的结构（字段名称）未发生更改，则刷新数据时无需对数据库架构文件进行任何更改。 但是，如果必须进行更改，请确保相应地编辑数据库架和规则包。
 
-3. 使用 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page)自动执行 [创建索引并上载敏感数据](#index-and-upload-the-sensitive-data)流程中的步骤 2 和 3。   你可以使用多种方法来计划任务：
+3. 使用 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 自动执行 [为敏感数据创建哈希并上传流程中的步骤 2 和 3](#hash-and-upload-the-sensitive-data) 。 你可以使用多种方法来计划任务：
 
-      | **方法**             | **需执行的操作**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | 方法             | 需执行的操作 |
+      | ---------------------- | ---------------- |
       | Windows PowerShell     | 请参阅本文中的 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文档和 [示例 PowerShell 脚本](#example-powershell-script-for-task-scheduler)  |
       | 任务计划程序 API     | 请参阅 [任务计划程序](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler)文档                                                                                                                                                                                                                                                                                 |
       | Windows 用户界面 | 在 Windows 中单击“开始”，然后键入 Task Scheduler。 **** 然后，在结果列表中，右键单击“任务计划程序”，然后选择“以管理员身份运行”。 **** ****                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>任务计划程序的示例 PowerShell 脚本
 
-此部分包含一个示例 PowerShell 脚本，你可以使用该脚本来计划创建数据索引并上传索引数据的任务：
+此部分包含一个示例 PowerShell 脚本，你可以使用该脚本来计划为数据创建哈希并上传哈希数据的任务：
 
-##### <a name="to-schedule-index-and-upload-in-a-combined-step"></a>在合并步骤中安排索引和上传
+##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a>在合并步骤中计划哈希和上传
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -430,7 +432,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="to-schedule-index-and-upload-as-separate-steps"></a>将索引和上传安排为单独的步骤
+#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a>将计划哈希和上传作为单独的步骤
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -525,4 +527,4 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP 策略概述](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-- [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+

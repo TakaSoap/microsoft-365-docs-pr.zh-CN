@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用 Microsoft 365 中的工具来识别并响应遭到入侵的电子邮件帐户。
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527776"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674610"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>响应遭到入侵的电子邮件帐户
 
@@ -68,11 +68,8 @@ ms.locfileid: "46527776"
 - **Azure AD 门户中的 Azure AD 登录日志和其他风险报告**：检查以下列中的值：
 
   - 查看 IP 地址
-
   - 登录位置
-
   - 登录时间
-
   - 登录成功或失败
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>如何保护和恢复疑似遭到入侵的 Microsoft 365 帐户和邮箱的电子邮件功能
@@ -85,31 +82,31 @@ ms.locfileid: "46527776"
 
 ### <a name="step-1-reset-the-users-password"></a>步骤 1 重置用户密码
 
-> [!WARNING]
-> 不要通过电子邮件将新密码发送给预期用户，因为此时攻击者仍可以访问邮箱。
+按照[为他人重置商业版密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password)中的程序操作。
 
-1. 按照“[重置 Microsoft 365 企业应用版密码](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)”中的“为其他人重置 Microsoft 365 企业应用版密码”步骤执行操作。
-
-**注意**：
-
-- 确保密码为强密码，并且包含大写和小写字母、至少一个数字和至少一个特殊字符。
-
-- 不要重复使用过去五个密码中的任何一个。 即使密码历史记录要求允许你重复使用最近使用过的密码，你也应该选择攻击者无法猜到的密码。
-
-- 如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
-
-> [!TIP]
-> 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。  若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+> [!IMPORTANT]
+>
+> - 不要通过电子邮件将新密码发送给预期用户，因为此时攻击者仍可以访问邮箱。
+>
+> - 确保密码为强密码，并且包含大写和小写字母、至少一个数字和至少一个特殊字符。
+>
+> - 不要重复使用过去五个密码中的任何一个。 即使密码历史记录要求允许你重复使用最近使用过的密码，你也应该选择攻击者无法猜到的密码。
+>
+> - 如果你的本地标识已与 Microsoft 365 联合，则必须在本地更改密码，然后通知管理员帐户遭到入侵。
+>
+> - 务必更新应用密码。 重置用户帐户密码后，不会自动撤消应用密码。 用户应删除现有应用程序密码并创建新密码。 有关说明，请参阅[从其他安全验证页面创建和删除应用密码](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
+>
+> - 强烈建议启用多重身份验证 (MFA)，以防发生泄漏，特别是对于拥有管理权限的帐户。 若要了解有关 MFA 的详细信息，请转到[设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步骤 2 删除可疑的电子邮件转发地址
 
-1. 打开“**Microsoft 365 管理中心 > 活动用户**”。
+1. 在 <https://admin.microsoft.com> 打开 Microsoft 365 管理中心，
 
-2. 找到存在问题的用户帐户并展开“**邮件设置**”。
+2. 转到“**用户**”\>“**活动用户**”。 查找有问题的用户帐户，然后选择用户（行），无需选中复选框。
 
-3. 对于“**电子邮件转发**”，单击“**编辑**”。
+3. 在出现的详细信息浮出控件中，选择“**邮件**”选项卡。
 
-4. 删除所有可疑的转发地址。
+4. 如果“**电子邮件转发**”部分中的值为“**已应用**”，请单击“**管理电子邮件转发**”。 在出现的“**管理电子邮件转发**”浮出控件中，清除“**转发发送至此邮箱的所有电子邮件**”，然后单击“**保存更改**”。
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>步骤 3 禁用任何可疑的收件箱规则
 
@@ -132,50 +129,50 @@ ms.locfileid: "46527776"
 > [!IMPORTANT]
 > 你可以阻止疑似遭到入侵的帐户登录，直到你认为重新启用访问权限是安全的。
 
-1. 转到 Microsoft 365 管理中心。
+1. 打开 Microsoft 365 管理中心，然后转到“**用户**”\>“**活动用户**”。
 
-2. 在 Microsoft 365 管理中心，选择“**用户**”。
+2. 查找并选择用户帐户，单击“![更多图标](../../media/ITPro-EAC-MoreOptionsIcon.png)”，然后选择“**编辑登录状态**”。
 
-3. 选择要阻止的员工，然后在用户窗格中选择" **登录状态** "旁边的" **编辑** "。
+3. 在出现的“**阻止登录**”窗格上，选择“**阻止此用户登录**”，然后单击“**保存更改**”。
 
-4. 在“**登录状态**”窗格上，选择“**阻止登录**”，然后选择“**保存**”。
+4. 在 <admin.protection.outlook.com/ecp/> 中打开 Exchange 管理中心 (EAC)，然后转到 **“收件人”>“邮​​箱”**。
 
-5. 在管理中心左下方的导航窗格中，展开“**管理中心**”，然后选择“**Exchange**”。
+5. 查找并选择用户。 在“详细信息”窗格，执行以下步骤：
 
-6. 在 Exchange 管理中心，导航到“**收件人 > 邮箱**”。
+   - 在“**电话和语音功能**”部分，执行以下步骤：
 
-7. 选择用户，然后在用户属性页面的“**移动设备**”下，单击“**禁用 Exchange ActivcSync**”和“**禁用适用于设备的 OWA**”，并对两者选择“**是**”。
+     - 选择“**禁用 Exchange ActiveSync**”，然后在出现的警告中单击“**是**”。
+     - 选择“**禁用适用于设备的 OWA**”，然后在出现的警告中单击“**是**”。
 
-8. 在“**电子邮件连接**”下，单击“**禁用**”并选择“**是**”。
+   - 在 Outlook 网页版的“**电子邮件连接**”部分中，单击“**禁用**”，然后在出现的警告中单击“**是**”。
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>步骤 6（可选）从所有管理角色组中删除疑似遭到入侵的帐户
 
 > [!NOTE]
 > 在帐户受到保护后，可以恢复管理角色组成员身份。
 
-1. 使用全局管理员帐户登录 Microsoft 365 管理中心，然后打开“**活动用户**”。
+1. 使用全局管理员帐户登录：
 
-2. 找到疑似遭到入侵的帐户并手动检查是否为该帐户分配了任何管理角色。
+2. 在 Microsoft 365 管理中心，执行以下步骤：
 
-3. 打开“**安全与合规中心**”。
+   1. 转到“**用户**”\>“**活动用户**”。
+   2. 查找并选择用户帐户，单击“![更多图标](../../media/ITPro-EAC-MoreOptionsIcon.png)”，然后选择“**管理角色**”。
+   3. 删除分配给该帐户的任何管理角色。 完成后，单击“**保存更改**”。
 
-4. 单击“**权限**”。
+3. 在 <https://protection.office.com> 中的安全与合规中心，执行以下步骤：
 
-5. 手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。  如果它是：
+   选择“**权限**”，在列表中选择每个角色组，然后在出现的详细信息弹出窗口的“**成员**”部分查找用户帐户。 如果角色组包含用户帐户，请执行以下步骤：
 
-   a. 单击角色组，然后单击“**编辑角色组**”。
+   a. 单击“**成员**”旁的“**编辑**”。
+   b. 在出现的“**编辑选择成员**”浮出控件中，单击“**编辑**”。
+   c. 在出现的“**选择成员**”浮出控件中，选择用户帐户，然后单击“**删除**”。 完成后，单击“**完成**”、“**保存**”，然后单击“**关闭**”。
 
-   b. 单击“**选择成员**”和“**编辑**”以从角色组中删除用户。
+4. 在 <admin.protection.outlook.com/ecp/> 的 EAC 中，执行以下步骤：
 
-6. 打开“**Exchange 管理中心**”。
+   选择“**权限**”，手动选择每个角色组，然后在详细信息窗格的“**成员**”部分验证用户帐户。  如果角色组包含用户帐户，请执行以下步骤：
 
-7. 单击“**权限**”。
-
-8. 手动检查角色组以查看疑似遭到入侵的帐户是否是其中任何一个组的成员。 如果它是：
-
-   a. 单击角色组，然后单击“**编辑**”。
-
-   b. 使用“**成员**”部分从角色组中删除用户。
+   a. 选择角色组，单击“**编辑**”![编辑图标](../../media/ITPro-EAC-EditIcon.png)。
+   b. 在“**成员**”部分，选择用户帐户，然后单击“**删除**”![删除图标](../../media/ITPro-EAC-RemoveIcon.gif)。 完成后，单击“**保存**”。
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>步骤 7（可选）其他预防措施
 
