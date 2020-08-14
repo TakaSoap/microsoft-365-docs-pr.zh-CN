@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
+ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656722"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46672907"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -308,7 +308,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
     
     ![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     出现提示时，请阅读并确认此配置随附的限制，然后选择“**全是**”：
+     出现提示时，请阅读并通过输入**Y**确认这个配置随附的限制：
     
    ![用于确认你要在 PowerShell 中锁定保留策略的提示](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
