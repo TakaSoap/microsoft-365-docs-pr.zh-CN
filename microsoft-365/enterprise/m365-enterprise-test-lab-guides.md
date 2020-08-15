@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818737"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686762"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
@@ -43,7 +43,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 ## <a name="base-configuration"></a>基本配置
 
-首先，为包含 Office 365 E5、企业移动性+安全性 (EMS) E5 和 Windows 10 企业版的 [Microsoft 365 企业版](https://docs.microsoft.com/microsoft-365-enterprise/)创建测试环境。你可以创建两种不同类型的基本配置：
+首先，为适用于 [企业的 Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)创建一个测试环境。您可以创建两种不同类型的基本配置：
 
 - 当你想要在仅限云环境（其中不包含任何本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[轻型基础配置](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
@@ -63,7 +63,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
   
    启用和测试到 AD DS 域控制器的传递身份验证。
 
-- [联合身份验证](federated-identity-for-your-office-365-dev-test-environment.md)
+- [联合身份验证](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    启用和测试到 AD DS 域控制器的联合身份验证。
 

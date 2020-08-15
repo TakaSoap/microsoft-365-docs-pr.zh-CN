@@ -1,5 +1,5 @@
 ---
-title: Contoso Corporation 的 Microsoft 365 企业版安全性摘要
+title: Microsoft 365 for Contoso Corporation 的企业安全摘要
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 如何使用 Microsoft 365 企业版的安全功能。
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Contoso 如何在 Microsoft 365 for 企业版中使用安全功能。
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268394"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686436"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 的 Microsoft 365 企业版安全性摘要
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Microsoft 365 for Contoso Corporation 的企业安全摘要
 
-若要获取 IT 安全部门签核的 Microsoft 365 企业版部署，需要执行彻底的安全审阅。以下是 Contoso 针对云的安全要求：
+若要获取 IT 安全部门用于企业版 Microsoft 365 部署的注销，请进行全面安全审查。以下是 Contoso 对云的安全要求：
 
 - 对访问云资源的员工使用最强身份验证方法
 - 确保电脑和移动设备以安全的方式连接和访问应用程序
@@ -36,7 +36,7 @@ ms.locfileid: "44268394"
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contoso 实现 Microsoft 365 安全就绪情况的方式
 
-Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准备：
+Contoso 使用以下步骤准备好其为 Microsoft 365 for enterprise 部署的安全性：
 
 1. 限制云的管理员帐户
 
@@ -44,13 +44,13 @@ Contoso 使用以下步骤为其 Microsoft 365 企业版部署的安全性做准
 
 2. 按三个级别执行数据分类分析
 
-   Contoso 进行了仔细的审阅并确定了三个用来确定 Microsoft 365 企业版功能的级别，以保护 Contoso 最有价值的数据。
+   Contoso 进行了仔细检查并确定了三个级别，它们用于确定适用于 Microsoft 365 的企业功能，以保护 Contoso 最有价值的数据。
 
 3. 确定数据级别的访问策略、保留策略和信息保护策略
 
    基于数据级别，Contoso 已确定将用于限定转移到云的未来 IT 工作负载的详细要求。
 
-根据安全最佳做法和 Microsoft 365 企业版部署要求，Contoso 的安全管理员和 IT 部门已部署许多安全特性和功能，如以下部分中所述。
+根据安全最佳做法和 Microsoft 365 企业级部署要求，Contoso 的安全管理员和 IT 部门已部署了许多安全特性和功能，如以下各节中所述。
 
 ## <a name="identity--access-management"></a>标识和访问管理 
 

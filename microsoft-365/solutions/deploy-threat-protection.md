@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 365 中部署威胁防护功能
-description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和功能。
+title: 在 Microsoft 365 中部署网络安全威胁保护
+description: 了解如何在 Microsoft 365 E5 中部署威胁保护服务和 IT 网络安全功能。
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,18 +14,19 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 312df25bf4fe2b91bb60b4122378b4457b25723c
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 0736151f1ceacecb888c8a3eb3dd88183cc3a060
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588180"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662316"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
 
-[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的 cyberattacks （如[fileless 威胁](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）是常见事件。 企业需要保护自己及其客户。 网络安全攻击可能会导致贵组织出现主要问题，包括从失去信任到财务 woes、业务威胁停机等。 防御威胁非常重要，但确定组织的时间、工作和资源的位置可能会有很大难度。 
+[恶意软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)和复杂的 cyberattacks （如 [fileless 威胁](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）是常见事件。 企业需要使用有效的 IT 网络安全功能来保护自己及其客户。 此类攻击可能会导致贵组织的主要问题，包括从失去信任到财务 woes、业务威胁停机等。 防御威胁非常重要，但确定组织的时间、工作和资源的位置可能会有很大难度。 
 
-Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可降低安全团队的负载，以确保解决正确的项目。 Microsoft 安全解决方案的优势是基于我们在我们的[智能安全图形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理的 trillions 信号来构建的。 Microsoft 365 安全解决方案包括[Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，这将跨你的电子邮件、数据、设备和标识一起提供各种信号，以在组织中绘制高级威胁的图片。
+Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和机器学习功能可降低安全团队的负载，以确保解决正确的项目。 Microsoft 网络安全解决方案的优势是基于我们在 [智能安全图形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中每天处理的 trillions 信号。 Microsoft 365 安全解决方案包括 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，这是一种解决方案，它将跨电子邮件、数据、设备和标识的信号汇集在一起，以在组织中绘制高级威胁的图片。
+
 
 观看此视频，了解部署过程的概述。
 
@@ -35,7 +36,7 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 
 ## <a name="threat-protection-in-microsoft-365-e5"></a>Microsoft 365 E5 中的威胁防护
 
-[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab)使你能够使用自适应内置智能来保护你的组织。 使用 Microsoft 365 E5 中的威胁防护功能，可以在内部部署和云环境中检测和调查高级威胁、受到危害的身份和恶意操作。
+[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) 使你能够使用自适应内置智能来保护你的组织。 使用 Microsoft 365 E5 中的威胁防护功能，可以在内部部署和云环境中检测和调查高级威胁、受到危害的身份和恶意操作。
 
 在 Microsoft 365 E5 中，默认情况下会集成威胁防护功能。 来自每个功能的信号将强度增加到检测和响应威胁的总体能力。 与运行非 Microsoft 产品相比，组合的一组功能为组织提供了最佳保护，尤其是多国组织。 下图描述了 Microsoft 365 E5 中的威胁防护服务和功能，如本文中所述。
 
@@ -73,7 +74,7 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 7. [监视状态并采取操作](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [培训用户](deploy-threat-protection-configure.md#step-8-train-users)
 
-您的威胁防护功能可以并行配置，因此，如果您有多个负责不同服务的安全团队，则可以同时配置组织的保护功能。 下图说明了部署威胁防护功能的高级别过程。 
+您的威胁防护功能可以并行配置，因此，如果您有多个负责不同服务的网络安全团队，则可以同时配置组织的保护功能。 下图说明了部署威胁防护功能的高级别过程。 
 
 ![部署威胁防护功能的过程](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
 

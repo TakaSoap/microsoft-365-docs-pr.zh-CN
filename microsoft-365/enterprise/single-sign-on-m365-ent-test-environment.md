@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录。
-ms.openlocfilehash: ba3f943a53f05c452a8e01e40bb6924dc42a866e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 3ba229a62f66cad715f604bab91cd12032da7be8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636864"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685768"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>适用于 Microsoft 365 测试环境的 Azure AD 无缝单一登录
 
-*此测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
 
 Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备上的用户登入。借助 Azure AD 无缝 SSO，用户无需使用其他任何本地组件，即可轻松访问基于云的应用程序。
 
@@ -51,7 +51,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
   
 此配置包括： 
   
-- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
+- Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 域定期同步到 Microsoft 365 订阅的 Azure AD 租户。
 
@@ -83,7 +83,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 11. 在 Azure 门户内的左侧窗格中，依次单击“Azure Active Directory”和“Azure AD Connect”****。验证“无缝单一登录”**** 功能的状态是否为“已启用”****。
 
-接下来，测试能否使用 User1 帐户的用户名 <strong>user1@testlab.</strong>\<公共域名> 登录你的订阅。
+接下来，测试使用 user1@testlab 登录订阅的功能 <strong>。</strong>\<your public domain> 测试能否登录订阅。
 
 1. 在 APP1 上，依次单击 Internet Explorer 中的设置图标和“Internet 选项”****。
  
@@ -97,7 +97,7 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 6. 注销，再重新登录，这次指定不同的帐户。
 
-7. 当出现登录提示时，指定用户名 <strong>user1@testlab.</strong>\<公共域> 名称，再单击“下一步”****。 应能够以 User1 身份成功登录，且不会看到密码输入提示。 这就证明无缝 SSO 能正常运行。
+7. 当系统提示您登录时，请指定 <strong>user1@testlab。</strong>\<your public domain> 名称，然后单击 " **下一步**"。 应能够以 User1 身份成功登录，且不会看到密码输入提示。 这就证明无缝 SSO 能正常运行。
 
 请注意，虽然 User1 具有 TESTLAB AD DS 域的域管理员权限，但它不是 Azure AD 全局管理员。 因此，不会看到作为一个选项的**管理员**图标。
 
@@ -108,12 +108,10 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
  
 此配置包括：
 
-- 包含已注册 DNS 域 testlab.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
+- 使用 DNS 域 testlab 的 Microsoft 365 E5 试用版或付费订阅。\<your domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 订阅同步到 TESTLAB AD DS 域。 
 - 已启用的 Azure AD 无缝 SSO，这样模拟 Intranet 上的计算机无需指定用户帐户密码，即可登录 Microsoft 365 云资源。
-
-若要了解如何在生产中配置 Azure AD 无缝 SSO 和相关链接，请参阅“标识”阶段中的[简化用户登录](identity-secure-your-passwords.md#identity-sso)步骤。
 
 ## <a name="next-step"></a>后续步骤
 
@@ -123,8 +121,8 @@ Azure AD 无缝单一登录 (SSO) 自动将连接到组织网络的 PC 或设备
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

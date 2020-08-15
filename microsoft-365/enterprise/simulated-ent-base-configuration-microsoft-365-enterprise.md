@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,37 +17,37 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用本测试实验室指南，创建针对 Microsoft 365 企业版的模拟企业测试环境。
-ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: 使用此测试实验室指南创建适用于企业的 Microsoft 365 的模拟企业测试环境。
+ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818491"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685672"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模拟企业基础配置
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
 
-本文分步介绍了如何创建适用于 Microsoft 365 企业版 的简化环境，其中包括：
+本文为您提供了创建适用于企业的 Microsoft 365 的简化环境的分步说明，其中包括：
 
 - Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化组织 Intranet，包含 Azure 虚拟网络中的三个虚拟机（DC1、APP1 和 CLIENT1）。
  
 ![模拟企业基础配置](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-利用生成的环境，可以通过额外的[测试实验室指南](m365-enterprise-test-lab-guides.md)或自行测试 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
+您可以使用生成的环境，通过其他[测试实验室指南](m365-enterprise-test-lab-guides.md)或在您自己的环境中测试[适用于企业的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到 [Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，以直观地映射到 Microsoft 365 企业测试实验室指南堆栈中的所有文章。
+> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>第 1 阶段：创建模拟 Intranet
 
 在该阶段，要在 Azure 基础结构服务中构建模拟 Intranet，包括 Active Directory 域服务 (AD DS) 域控制器、应用程序服务器和客户端计算机。 
 
-你将在额外的 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)中使用这些计算机来配置和演示混合标识和其他功能。
+您将在其他 [Microsoft 365 for 企业测试实验室指南](m365-enterprise-test-lab-guides.md) 中使用这些计算机来配置和演示混合身份和其他功能。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1：使用 Azure 资源管理器模板构建模拟 Intranet
 
@@ -371,7 +371,7 @@ Restart-Computer
 
 通过 CORP\User1 帐户从 Azure 门户连接到 CLIENT1。
 
-若要创建新的 Office 365 E5 试用版订阅，请按照“轻型基准配置测试实验室指南”[阶段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) 中的说明进行操作。
+若要创建新的 Office 365 E5 试用版订阅，请按照“轻型基准配置测试实验室指南”[阶段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) 中的说明进行操作。
 
 若要配置新的 Office 365 E5 试用版订阅，请按照“轻型基准配置测试实验室指南”[阶段 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) 中的说明进行操作。
 
@@ -379,7 +379,7 @@ Restart-Computer
 
 如果你只需要一个 Office 365 测试环境，则可以在此处停止。 
 
-有关同时适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Microsoft 365 和 Office 365 的其他测试实验室指南，请参阅适用于 [企业测试实验室指南的 Microsoft 365](m365-enterprise-test-lab-guides.md) 。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>添加 Microsoft 365 E5 试用版订阅
 
@@ -398,7 +398,7 @@ Restart-Computer
   
 ![模拟企业基础配置的第 2 阶段](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-现在可以试验 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+现在，你可以试用 [Microsoft 365 for 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -412,6 +412,6 @@ Restart-Computer
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)

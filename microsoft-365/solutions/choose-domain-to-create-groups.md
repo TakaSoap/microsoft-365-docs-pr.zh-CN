@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Microsoft 365 组时使用的域。
-ms.openlocfilehash: a4bc5bd499652109586c30462d484a12a6cbe876
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5ce0068f1b4562c37b2ccf2b1fb9a928b392a7ee
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662486"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686726"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建 Microsoft 365 组时要使用的域
 
@@ -71,7 +71,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- Groups.contoso.com 域中的所有其他用户。 请使用此命令：
+- 任何其他人创建的组将在 groups.contoso.com 域中创建。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3

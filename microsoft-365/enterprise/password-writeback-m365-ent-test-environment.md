@@ -9,7 +9,7 @@ ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置 Microsoft 365 测试环境的密码写回。
-ms.openlocfilehash: cc71b581730001d8dc021b5074e300fed636e3d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: b8c89ca7ef967c423b89db4559ef04f715a5f869
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632871"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686222"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码写回
 
-*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
+*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
 密码写回将允许用户通过 Azure Active Directory (Azure AD) 更新其密码，然后复制到本地 Active Directory 域服务 (AD DS)。通过密码写回，用户不需要通过本地 AD DS（原始用户帐户的存储位置）更新其密码。这非常适用于对本地网络没有远程访问连接的漫游或远程用户。
 
@@ -51,7 +51,7 @@ ms.locfileid: "43632871"
   
 此配置包括： 
   
-- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
+- Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB AD DS 域同步到 Microsoft 365 订阅的 Azure AD 租户。
 
@@ -128,12 +128,10 @@ ms.locfileid: "43632871"
 
 此配置包括：
 
-- 包含已注册 DNS 域 TESTLAB.\<你的域名> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅。
+- 使用 DNS 域 TESTLAB 的 Microsoft 365 E5 试用版或付费订阅。\<your domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 Azure AD 租户中的帐户和组列表从 Microsoft 365 订阅同步到 TESTLAB AD DS 域。 
 - 已启用密码写回，因此用户可以通过 Azure AD 更改其密码，而无需连接到简化的 Intranet。
-
-有关在生产中配置密码写回的信息和相关链接，请参阅“标识”阶段中的[简化密码更新](identity-add-user-accounts.md#identity-pw-writeback)步骤。
 
 ## <a name="next-step"></a>后续步骤
 
@@ -143,8 +141,8 @@ ms.locfileid: "43632871"
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633360"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686030"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
-Microsoft 通过 Azure Active Directory (Azure AD). 在其云产品中提供标识即服务 (IDaaS)。 若要采用 Microsoft 365 企业版，Contoso 的 IDaaS 解决方案必须利用其本地标识提供程序，并且仍包括其现有受信任的第三方标识提供程序提供的联合身份验证。
+Microsoft 通过 Azure Active Directory (Azure AD). 在其云产品中提供标识即服务 (IDaaS)。 若要采用 Microsoft 365 for enterprise，Contoso 的 IDaaS 解决方案必须利用其本地标识提供程序，并且仍包括与其现有的受信任的第三方标识提供程序的联合身份验证。
 
 ## <a name="contosos-active-directory-domain-services-forest"></a>Contoso 的 Active Directory 域服务林
 
@@ -55,7 +55,7 @@ Contoso 决定保留此基础结构，并将其专用于客户和合作伙伴的
 
 Contoso 想要利用其本地 AD DS 林来进行针对 Microsoft 365 云资源的身份验证。 它决定密码哈希同步 (PHS)。
 
-PHS 将本地 AD DS 林与 Microsoft 365 企业版订阅的 Azure AD 租户同步，同时复制用户和组帐户以及哈希版用户帐户密码。 
+PHS 将本地 AD DS 林与 Microsoft 365 for enterprise 订阅的 Azure AD 租户同步，复制用户和组帐户以及用户帐户密码的哈希版本。 
 
 为了执行持续目录同步，Contoso 在其巴黎数据中心的服务器上部署了 Azure AD Connect 工具。 
 
@@ -81,8 +81,8 @@ Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件�
 
 ## <a name="see-also"></a>另请参阅
 
-[Microsoft 365 企业版的标识](identity-infrastructure.md)
+[Microsoft 365 的身份路线图](identity-roadmap-microsoft-365.md)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
 [测试实验室指南](m365-enterprise-test-lab-guides.md)

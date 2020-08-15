@@ -9,24 +9,24 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: ae9f8545c20a169578d49b00bcee214526cc539a
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
-ms.translationtype: HT
+ms.openlocfilehash: 6aa6b1cd1b8f9459b27e46fa67c62b35014b2d7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153900"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686246"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
-*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
+*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
-[标识和设备访问配置](microsoft-365-policies-configurations.md)是一组配置和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问，包括 Microsoft 365 企业版中的 Office 365 和企业移动性 + 安全性 (EMS)。
+[标识和设备访问配置](microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
 
 本文介绍如何配置 Microsoft 365 测试环境，使其满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](identity-access-prerequisites.md#prerequisites)的要求。
 
@@ -120,10 +120,10 @@ ms.locfileid: "43153900"
 
 [其他标识测试实验室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[阶段 2：标识](identity-infrastructure.md)
+[标识路线图](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 企业版部署](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)

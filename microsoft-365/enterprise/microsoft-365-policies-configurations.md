@@ -1,5 +1,5 @@
 ---
-title: 标识和设备访问配置-Microsoft 365 企业版
+title: 标识和设备访问配置-适用于企业的 Microsoft 365
 description: 介绍了用于部署安全电子邮件、文档和应用策略和配置的 Microsoft 建议和核心概念。
 author: brendacarter
 manager: laurawi
@@ -17,32 +17,32 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530267"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686622"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
-本系列文章介绍了如何配置通过企业移动性 + 安全性（EMS）产品对云服务的安全访问，具体方法是实施建议的环境和配置，包括一组规定的条件访问策略和相关功能。 EMS 是 Microsoft 365 的核心组件。 您可以使用本指南来保护与 Azure Active Directory 集成的所有服务（包括 Microsoft 365 服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序）的访问权限。 
+本系列文章介绍了如何配置通过企业移动性 + 安全性 (EMS) 产品的对云服务的安全访问，具体方法是实施推荐的环境和配置，包括一组规定的条件访问策略和相关功能。 EMS 是 Microsoft 365 的核心组件。 您可以使用本指南来保护与 Azure Active Directory 集成的所有服务（包括 Microsoft 365 服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序）的访问权限。 
 
-这些建议与 Microsoft 安全分数以及[AZURE AD 中的标识分数](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)相一致，并将增加组织的这些分数。 这些建议还将帮助您实施以下[五个步骤来保护您的身份基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
+这些建议与 Microsoft 安全分数以及 [AZURE AD 中的标识分数](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)相一致，并将增加组织的这些分数。 这些建议还将帮助您实施以下 [五个步骤来保护您的身份基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
 
 Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你是这些组织之一，请使用这些建议作为起点。 但是，大多数组织都可以按规定实现这些建议。 
 
 ## <a name="intended-audience"></a>目标受众
 
-这些建议适用于熟悉[Office 365](https://docs.microsoft.com/microsoft-365/admin)和[Microsoft 企业移动性 + 安全性](https://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、azure Active Directory （Identity）、Microsoft Intune （设备管理）和 azure 信息保护（数据保护）。
+这些建议适用于熟悉 [Office 365](https://docs.microsoft.com/microsoft-365/admin) 和 [Microsoft 企业移动性 + 安全性](https://microsoft.com/ems)的企业架构师和 IT 专业人员，其中包括其他、Azure Active Directory (Identity) 、Microsoft Intune (设备管理) 和 Azure 信息保护 (数据保护) 。
 
 ### <a name="customer-environment"></a>客户环境
 
-建议的策略适用于完全在 Microsoft 云中运行的企业组织，以及适用于具有混合基础结构的客户（部署在本地和 Microsoft 云上）。
+建议的策略适用于完全在 Microsoft 云中运行的企业组织，并适用于具有混合基础结构的客户 (部署在本地和 Microsoft 云) 上。
 
-提供的许多建议依赖于仅适用于企业移动性 + 安全性（EMS） E5 许可证的服务。 提供的建议采用完整 EMS E5 许可证功能。
+提供的许多建议依赖于仅适用于企业移动性 + 安全性 (EMS) E5 许可证的服务。 提供的建议采用完整 EMS E5 许可证功能。
 
-对于没有企业移动性 + 安全 E5 许可证的组织，Microsoft 建议您至少实现所有计划附带的 Azure AD 基准保护功能。 有关详细信息，请参阅 Azure AD 库中的 "[比较基准保护](/azure/active-directory/active-directory-conditional-access-baseline-protection)" 一文。
+对于没有企业移动性 + 安全 E5 许可证的组织，Microsoft 建议您至少实现所有计划附带的 Azure AD 基准保护功能。 有关详细信息，请参阅 Azure AD 库中的 " [比较基准保护](/azure/active-directory/active-directory-conditional-access-baseline-protection)" 一文。
 
 ### <a name="caveats"></a>几点
 
@@ -87,7 +87,7 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>标识和设备访问保护的服务和概念
 
-Microsoft 365 企业版专为大型组织而设计，并集成了 Office 365 企业版、Windows 10 企业版和企业移动性 + 安全性（EMS），使每个人都能进行创造性和安全地协同工作。
+适用于企业的 Microsoft 365 面向大型组织，并将 Office 365 企业版、Windows 10 企业版和企业移动性 + 安全性 (EMS) ，使每个人都能进行创造性和安全协作。
 
 本节概述了对标识和设备访问非常重要的 Microsoft 365 服务和功能。
 
@@ -95,9 +95,9 @@ Microsoft 365 企业版专为大型组织而设计，并集成了 Office 365 企
 
 Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，我们建议使用以下功能：
 
-- **[自助密码重置（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：通过提供管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术人员干预。
+- **[自助服务密码重置 (SSPR) ](/azure/active-directory/authentication/concept-sspr-howitworks)**：允许用户通过验证管理员可以控制的多个身份验证方法，安全地重置其密码，而无需技术人员干预。
 
-- **[多重身份验证（mfa）](/azure/active-directory/authentication/concept-mfa-howitworks)**： mfa 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了可用于访问您的环境的被窃的标识的风险。
+- **[多重身份验证 (MFA) ](/azure/active-directory/authentication/concept-mfa-howitworks)**： mfa 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了可用于访问您的环境的被窃的标识的风险。
 
 - **[条件访问](/azure/active-directory/conditional-access/overview)**： Azure AD 评估用户登录的条件，并使用您创建的条件访问策略来允许访问。 例如，在本指南中，我们将向您介绍如何创建条件访问策略，以要求访问敏感数据的设备合规性。 这极大地降低了具有盗窃标识的黑客可以访问您的敏感数据的风险。 它还保护了设备上的敏感数据，因为这些设备会满足运行状况和安全性的特定要求。
 
@@ -109,11 +109,11 @@ Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，�
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune)是 Microsoft 基于云的移动设备管理服务。 本指南推荐使用 Intune 的 Windows 电脑的设备管理，并建议设备合规性策略配置。 Intune 确定设备是否合规，并将此数据发送到 Azure AD，以便在应用条件访问策略时使用。
+[Intune](https://docs.microsoft.com/intune/introduction-intune) 是 Microsoft 基于云的移动设备管理服务。 本指南推荐使用 Intune 的 Windows 电脑的设备管理，并建议设备合规性策略配置。 Intune 确定设备是否合规，并将此数据发送到 Azure AD，以便在应用条件访问策略时使用。
 
 #### <a name="intune-app-protection"></a>Intune 应用保护
 
-[Intune 应用保护](https://docs.microsoft.com/intune/app-protection-policy)策略可用于保护你的组织在移动应用中的数据，包括或不将设备注册到管理中。 Intune 可帮助保护信息，确保员工仍能高效工作，并防止数据丢失。 通过实施应用程序级别的策略，可以限制对公司资源的访问并将数据保留在 IT 部门的控制范围内。
+[Intune 应用保护](https://docs.microsoft.com/intune/app-protection-policy) 策略可用于保护你的组织在移动应用中的数据，包括或不将设备注册到管理中。 Intune 可帮助保护信息，确保员工仍能高效工作，并防止数据丢失。 通过实施应用程序级别的策略，可以限制对公司资源的访问并将数据保留在 IT 部门的控制范围内。
 
 本指南向您介绍如何创建建议的策略来强制使用已批准的应用程序，并确定这些应用程序如何与您的业务数据结合使用。
 
@@ -138,11 +138,11 @@ Azure AD 提供一套完整的标识管理功能。 为了确保访问安全，�
 |强制执行 MFA|针对中级或以上登录风险|针对低级或以上登录风险|针对所有新会话|
 |**强制更改密码**|对于高风险用户|对于高风险用户|对于高风险用户|
 |**强制实施 Intune 应用程序保护**|是|是|是|
-|**强制 Intune 注册（货至付款）**|需要兼容或加入域的电脑，但允许 BYOD 电话/平板电脑|需要兼容或加入域的设备|需要兼容或加入域的设备|
+|**强制 (货到) 的 Intune 注册 **|需要兼容或加入域的电脑，但允许 BYOD 电话/平板电脑|需要兼容或加入域的设备|需要兼容或加入域的设备|
 
 ## <a name="device-ownership"></a>设备所有权
 
-上面的表反映了许多组织支持公司拥有的设备的混合以及个人或附带的设备（BYODs），以便在整个工作中实现移动工作效率的趋势。 Intune 应用保护策略可确保电子邮件在企业拥有的设备和 BYODs 上的 exfiltrating 不会受到 Outlook 移动应用和其他 Office 移动应用的保护。  
+上面的表反映了许多组织支持企业拥有的设备的组合以及个人或附带的设备 (BYODs) 以实现员工在整个工作中的工作效率的发展趋势。 Intune 应用保护策略可确保电子邮件在企业拥有的设备和 BYODs 上的 exfiltrating 不会受到 Outlook 移动应用和其他 Office 移动应用的保护。  
 
 我们建议由 Intune 或加入域来管理企业拥有的设备，以应用更多的保护和控制。 根据数据敏感度的不同，您的组织可能会选择不允许对特定用户群体或特定应用的 BYODs。
 

@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 本地 IT 基础设施的基本结构，以及 Microsoft 365 企业版如何满足其业务需求。
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: 了解 Contoso 的本地 IT 基础结构的基本结构，以及 Microsoft 365 for 企业如何满足其业务需求。
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011193"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685826"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基础结构和业务需求
 
@@ -112,20 +112,20 @@ Contoso 的业务需求分为五个主要类别。
 
   在组织中自动安装 Windows 操作系统和 Microsoft 365 企业应用版更新。
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>将 Contoso 业务需求映射到 Microsoft 365 企业版
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>将 Contoso 业务需求映射到适用于企业的 Microsoft 365
 
 Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 E5 功能的业务需求：
 
-||||
+
+| 类别 | 业务需求 | 适用于企业产品或功能的 Microsoft 365 |
 |:-------|:-----|:-----|
-| **类别** | **业务需要** | **Microsoft 365 企业版的产品或功能** |
 | 工作效率 |  |  |
 |  | 简化协作 | Microsoft Teams、SharePoint、OneDrive |
 |  | 提高远程和移动工作者的工作效率 | Microsoft 365 工作负载和基于云的数据 |
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
 |  | 标识和访问管理 | 专用全局管理员帐户使用 Azure 多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Office 365 威胁调查和响应 <BR> |
+|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Microsoft 365 威胁调查和响应 <BR> |
 |  | 信息保护 | Azure 信息保护 <BR> 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
 |  | 安全管理 | Azure 安全中心  <BR> Windows Defender 安全中心 |
 | 远程和移动访问及业务合作伙伴 |  |  |
@@ -133,7 +133,7 @@ Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 E5
 |  | 减少员工远程访问基础结构 | Microsoft 365 工作负载和基于云的数据 |
 |  | 为 B2B 交易提供更好的连接并减少开销 | 联合身份验证和基于云的资源 |
 | 合规性 |  |  |
-|  | 遵守区域法规要求 | Office 365 中的 GDPR 功能 |
+|  | 遵守区域法规要求 | Microsoft 365 中的 GDPR 功能 |
 | 管理 |  |  |
 |  | 减少安装客户端更新的 IT 开销 | 部署圈 <BR> Windows 10 企业版更新 <BR> Microsoft 365 企业应用版更新 |
 ||||
@@ -144,6 +144,6 @@ Contoso 的 IT 部门会在部署之前，确定以下映射到 Microsoft 365 E5
 
 ## <a name="see-also"></a>另请参阅
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
 [测试实验室指南](m365-enterprise-test-lab-guides.md)

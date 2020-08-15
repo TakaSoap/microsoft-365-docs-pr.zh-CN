@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,34 +17,34 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 根据本测试实验室指南，可以创建轻型测试环境来测试 Microsoft 365 企业版。
-ms.openlocfilehash: 7a4800d374416a1e197536bc1a867d3fbc4b1243
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: 使用此测试实验室指南创建用于测试适用于企业的 Microsoft 365 的轻型测试环境。
+ms.openlocfilehash: 5de9e44f83d4c6bbae2b4148ce39ca371ead2d34
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818749"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686774"
 ---
 # <a name="the-lightweight-base-configuration"></a>轻型基本配置
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
 
 本文分步说明了如何使用 Microsoft 365 E5 订阅和运行 Windows 10 企业版的计算机创建简化的环境。 
 
 ![轻量级 Microsoft 365 企业版测试环境](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-使用生成的环境来测试 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
+使用生成的环境测试 [适用于企业的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 点击 [Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，以直观地映射到 Microsoft 365 企业测试实验室指南堆栈中的所有文章。
+> 单击 Microsoft 365 for 企业测试实验室指南堆栈365中的所有文章的可视化地图，然后单击 [microsoft for 企业测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) 。
 
-## <a name="phase-1-create-your-office-365-e5-subscription"></a>第 1 阶段：创建 Office 365 E5 订阅
+## <a name="phase-1-create-your-microsoft-365-e5-subscription"></a>第1阶段：创建 Microsoft 365 E5 订阅
 
-我们首先使用 Office 365 E5 试用版订阅，然后向其添加 Microsoft 365 E5 订阅。
+我们首先使用 Microsoft 365 E5 试用订阅，然后向其添加 Microsoft 365 E5 订阅。
 
-要启动 Office 365 E5 试用订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
+要启动 Microsoft 365 E5 试用版订阅，你首先需要一个虚构公司名称和一个新的 Microsoft 帐户。
   
 1. 我们建议你将公司名称 Contoso 的变体用作你的公司名称，它是 Microsoft 示例内容中使用的虚构公司，但这并不是必需的。在此记录虚构的公司名称： ![折线图](../media/Common-Images/TableLine.png)
     
@@ -76,7 +76,7 @@ ms.locfileid: "44818749"
 
 在这个阶段，你为订阅配置其他用户，并向这些用户分配 Office 365 E5 许可证。
   
-按照[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) 中的说明操作，在计算机中使用 Azure Active Directory PowerShell for Graph 模块连接到你的订阅。
+使用 " [连接到 Microsoft 365 With PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module) " 中的说明，通过计算机从 Azure Active Directory PowerShell for Graph 模块连接到你的订阅。
     
 在“Windows PowerShell 凭据请求”**** 对话框中，键入全局管理员名称（例如“jdoe@contosotoycompany.onmicrosoft.com”）和密码。
   
@@ -151,7 +151,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 
 如果你只需要一个 Office 365 测试环境，则可以在此处停止。 
 
-有关同时适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)。
+有关适用于 Office 365 和 Microsoft 365 的其他测试实验室指南，请参阅适用于 [企业测试实验室指南的 Microsoft 365](m365-enterprise-test-lab-guides.md) 。
   
 ## <a name="phase-3-add-a-microsoft-365-e5-trial-subscription"></a>第 3 阶段：添加 Microsoft 365 E5 试用版订阅
 
@@ -191,7 +191,7 @@ Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 - Microsoft 365 E5 试用版订阅。
 - 所有适当的用户帐户（无论是全局管理员帐户还是全部五个用户帐户）都可以使用 Microsoft 365 E5。
     
-下面是所得到的配置，它添加了 Microsoft 365 E5，还同时包含了 Office 365 和企业安全性 + 管理 (EMS)。
+下面是生成的配置，它将添加 Microsoft 365 E5。
   
 ![Microsoft 365 企业版测试环境的第 3 阶段](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -294,7 +294,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
     
 接下来，在 WIN10 计算机上安装 Microsoft 365 企业应用版。
   
-1. 打开 Microsoft Edge 浏览器，使用全局管理员帐户凭据登录到 Office 门户。 如需帮助，请参阅[如何登录到 Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 打开 Microsoft Edge 浏览器，并使用全局管理员帐户凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
     
 2. 在“**Microsoft Office 家庭版**”选项卡上，单击“**安装 Office**”。
     
@@ -312,7 +312,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 - 已注册为 Microsoft Intune (EMS) 中的 Azure AD 设备。
 - 已安装 Microsoft 365 企业应用版。
   
-现在可以试验 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+现在，你可以试用 [Microsoft 365 for 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -327,6 +327,6 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)

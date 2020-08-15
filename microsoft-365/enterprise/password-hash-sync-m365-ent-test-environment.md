@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 摘要：配置和展示 Microsoft 365 测试环境的密码哈希同步和登录。
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 2930d147e2ae3277b0af4d2aa81a602c73128439
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819384"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686544"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码哈希同步
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
 
 许多组织使用 Azure AD Connect 和密码哈希同步来同步他们内部部署的 Active Directory 域服务 (AD DS) 林帐户集与 Microsoft 365 订阅的 Azure AD 租户帐户集。 本文介绍了如何添加密码哈希同步至 Microsoft 365 测试环境，从而生成以下配置：
   
@@ -40,7 +40,7 @@ ms.locfileid: "44819384"
 2. 在 APP1 上安装和配置 Azure AD Connect。
     
 > [!TIP]
-> 转到 [Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，以直观地映射到 Microsoft 365 企业测试实验室指南堆栈中的所有文章。
+> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>第 1 阶段：创建 Microsoft 365 模拟企业测试环境
 
@@ -50,7 +50,7 @@ ms.locfileid: "44819384"
   
 此配置包括： 
   
-- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
+- Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络中的 DC1、APP1 和 CLIENT1 虚拟机。 DC1 是 testlab.\<your public domain name> AD DS 域的域控制器。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>第 2 阶段：创建和注册 testlab 域
@@ -59,7 +59,7 @@ ms.locfileid: "44819384"
 
 首先，与你的公共 DNS 注册提供商合作，根据当前的域名新建一个公共 DNS 域名，然后将其添加到订阅中。 建议命名为 **testlab.**\<your public domain>。 例如，如果你的公共域名是 **<span>contoso</span>.com**，请添加公共域名 **<span>testlab</span>.contoso.com**。
   
-接下来，通过域注册过程将 **testlab.**\<your public domain> 域添加到 Microsoft 365 或 Office 365 试用版或付费订阅。 这包括添加其他 DNS 记录到 **testlab.**\<your public domain> 域 。 有关详细信息，请参阅[添加域到 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。 
+接下来，通过域注册过程将 **testlab.**\<your public domain> 通过域注册过程将域发送到 Microsoft 365 试用版或付费订阅。 这包括添加其他 DNS 记录到 **testlab.**\<your public domain> 域 。 有关详细信息，请参阅 [将域添加到 Microsoft 365](../admin/setup/add-domain.md)。 
 
 下面是生成的配置。
   
@@ -67,7 +67,7 @@ ms.locfileid: "44819384"
   
 此配置包括：
 
-- 包含已注册 DNS 域 testlab.\<your public domain name> 的 Microsoft 365 E5 或 Office 365 E5 试用订阅或付费订阅 。
+- 使用 DNS 域 testlab 的 Microsoft 365 E5 试用版或付费订阅。\<your public domain name> 。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。
 
 注意 testlab.\<your public domain name> 的状况：
@@ -146,8 +146,8 @@ ms.locfileid: "44819384"
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

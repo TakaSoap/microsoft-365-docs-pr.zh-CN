@@ -2,31 +2,31 @@
 title: Windows 和 Office 部署实验室工具包
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052721"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685494"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
-这些实验室旨在帮助你规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 企业应用版台式计算机的部署和管理。 实验室涵盖“桌面部署”轮中概述的步骤和工具，包括 Microsoft Endpoint Configuration Manager、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等。
+这些实验旨在帮助您规划、测试和验证运行 Windows 10 企业版和 Microsoft 365 应用程序的桌面的部署和管理。 使用 Microsoft 终结点配置管理器、桌面分析、Office 自定义工具、OneDrive、Windows Autopilot 等的实验室封面。
 
-强烈建议准备停用 Windows 7 的组织使用此培训，它同时也适用于使用 Windows 10 和 Microsoft 365 企业应用版（以前称为 Office 365 专业增强版）或 Office 2019 的用户。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
+强烈建议将此工具包用于准备进行 Windows 8 升级的组织，如果你当前使用的是 Windows 10、Microsoft 365 的企业相关应用程序 (以前的 Office 365 专业增强版) 或 Office 2019，则也适用此工具包。 此外，作为独立环境，该实验室是探索部署工具更新和测试与部署相关的自动化的理想选择。
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -46,9 +46,8 @@ ms.locfileid: "45052721"
 
 此外，该实验室旨在与以下试用版连接： 
 
-  - Microsoft 365 E5、或
-  - Office 365 企业版 E5
-  - 企业移动性 + 安全性
+  - Microsoft 365 E5
+  - 使用企业移动性 + 安全性 (EMS) 的 Office 365 企业版 E5
 
 ## <a name="step-by-step-labs"></a>分步实验室
 
@@ -57,14 +56,14 @@ ms.locfileid: "45052721"
 ### <a name="device-and-app-readiness"></a>设备和应用就绪情况
 
   - 桌面分析
-  - 新增内容！ 部署和更新新版 Microsoft Edge 
-  - 新增内容！ 安装和配置云管理网关 (CMG) 
+  - 部署和更新新版 Microsoft Edge 
+  - 安装和配置云管理网关 (CMG) 
   - Internet Explorer 模式 
   - 应用程序防护 
 
 ### <a name="directory-and-network-readiness"></a>目录和网络就绪情况
 
-  - 新增内容！ 优化 Windows 10 更新传递 
+  - 优化 Windows 10 更新传递 
   - 配置管理器和 Microsoft Intune 共同管理
   - 远程访问 (VPN)
 
@@ -110,7 +109,7 @@ ms.locfileid: "45052721"
   - 使用 Configuration Manager 服务 Microsoft 365 企业应用版
   - 新增内容！ 有关 Configuration Manager 和 Intune 的 Office 更新
   
-### <a name="new-windows-virtual-desktop"></a>新增内容！ Windows 虚拟桌面
+### <a name="windows-virtual-desktop"></a>Windows 虚拟桌面
   - Windows 虚拟桌面：准备、部署、优化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下载 Windows 和 Office 部署实验室工具包
@@ -120,8 +119,6 @@ ms.locfileid: "45052721"
 *请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 12 月 12 日过期。新版本将于该过期日期前发布。*
 
 ## <a name="additional-guidance"></a>其他指南
-
-  - [桌面部署中心](https://www.aka.ms/howtoshift)
 
   - [Microsoft Mechanics 的桌面部署系列视频](https://www.aka.ms/watchhowtoshift)
 

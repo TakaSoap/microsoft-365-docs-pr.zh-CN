@@ -9,7 +9,7 @@ ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,22 +18,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：配置和测试适用于 Microsoft 365 测试环境的密码重置。
-ms.openlocfilehash: 96a8b03ca978ac2b2174742c0208444d853ba7c9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 98e6b8d8432c86e9d1c432128ed6d223da83610e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632883"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686532"
 ---
 # <a name="password-reset-for-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境的密码重置
 
-*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
+*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
 借助 Azure Active Directory (Azure AD) 自助服务密码重置 (SSPR)，用户可重置或解锁其密码或帐户。 
 
 本文介绍如何分三个阶段在 Microsoft 365 测试环境中配置和测试密码重置：
 
-1.    创建 Microsoft 365 企业版测试环境。
+1.    创建适用于企业级测试环境的 Microsoft 365。
 2.  启用密码写回。
 3.    为用户 3 帐户配置和测试密码重置。
     
@@ -50,7 +50,7 @@ ms.locfileid: "43632883"
   
 此配置包括： 
   
-- Microsoft 365 E5 或 Office 365 E5 试用版或付费版订阅。
+- Microsoft 365 E5 试用版或付费版订阅。
 - 连接到 Internet 的简化的组织 Intranet，包含 Azure 虚拟网络子网中的 DC1、APP1 和 CLIENT1 虚拟机。 
 - 在 APP1 上运行的 Azure AD Connect，用于将 TESTLAB Active Directory 域服务 (AD DS) 域同步到 Microsoft 365 订阅的 Azure AD 租户。
 
@@ -89,8 +89,6 @@ ms.locfileid: "43632883"
 11. 在“**返回帐户**”中，键入用户 3 帐户的新密码，然后单击“**完成**”。 记下已更改的用户 3 帐户密码并将其存储在安全的位置。
 12. 在同一浏览器的独立选项卡中，转到 [https://portal.office.com](https://portal.office.com)，然后使用用户 3 帐户名及其新密码登录。 应该会看到“Microsoft Office 主页”页面。****
 
-有关在生产中配置密码重置的信息和相关链接，请参阅“标识”阶段中的[简化密码重置](identity-secure-your-passwords.md#identity-pw-reset)步骤。
-
 ## <a name="next-step"></a>后续步骤
 
 在测试环境中探索其他[标识](m365-enterprise-test-lab-guides.md#identity)特性和功能。
@@ -99,6 +97,6 @@ ms.locfileid: "43632883"
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)

@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: 6a9eb7377ff7ce3aa5b251d345e57ae2a25ba926
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: afbf294d0637c3454cedadec3268e74411a3c399
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817067"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685720"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
-*本测试实验室指南可用于 Microsoft 365 企业版和 Office 365 企业版测试环境。*
+*此测试实验室指南可用于适用于企业和 Office 365 企业测试环境的 Microsoft 365。*
 
 本文逐步介绍了如何使用两个 Azure 虚拟网络来创建 Microsoft Azure 模拟混合云环境。下面是生成的配置。 
   
@@ -59,12 +59,12 @@ ms.locfileid: "44817067"
 > [!NOTE]
 > 此配置需要付费的 Azure 订阅。 
 
-利用生成的环境，可以通过额外的[测试实验室指南](m365-enterprise-test-lab-guides.md)或自行测试 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
+您可以使用生成的环境，通过其他[测试实验室指南](m365-enterprise-test-lab-guides.md)或在您自己的环境中测试[适用于企业的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的特性和功能。
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到 [Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，以直观地映射到 Microsoft 365 企业测试实验室指南堆栈中的所有文章。
+> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 
@@ -205,7 +205,7 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
   
 此时，你的模拟 Azure 混合云环境就可供测试了。
   
-现在可以试验 [Microsoft 365 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+现在，你可以试用 [Microsoft 365 for 企业版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>后续步骤
 
@@ -219,6 +219,6 @@ New-ADReplicationSubnet -Name "192.168.0.0/16" -Site "XPrem"
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企业版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)

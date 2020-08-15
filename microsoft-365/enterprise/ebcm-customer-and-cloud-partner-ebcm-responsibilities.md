@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服务事件期间采取了哪些措施来让你能够更好地准备业务连续性计划。
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067661"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686114"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>客户和云合作伙伴在企业业务连续性方面的责任
 
@@ -65,7 +65,7 @@ Microsoft 维持了多个渠道可供客户用来获取服务状态通知。
 
 ### <a name="location"></a>位置
 很多组织都要求员工在特定的物理位置或网络位置工作，以便连接到企业系统和云服务。  
-Microsoft 发布了[网络连接原则](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，它可引导企业找到最佳做法来设置到云资源的网络连接。 优化示例包括实施拆分的隧道 VPN，以便直接从用户的网络而不是通过 VPN 隧道进行连接。  虽然这些连接原则对维持低延迟连接很重要，但要保证服务弹性，需要用替代方法连接到公司资源来进行常规协作。
+Microsoft 发布了[网络连接原则](microsoft-365-network-connectivity-principles.md)，它可引导企业找到最佳做法来设置到云资源的网络连接。 优化示例包括实施拆分的隧道 VPN，以便直接从用户的网络而不是通过 VPN 隧道进行连接。  虽然这些连接原则对维持低延迟连接很重要，但要保证服务弹性，需要用替代方法连接到公司资源来进行常规协作。
 
 ### <a name="systems"></a>系统
 很多协作解决方案都依赖于系统，例如公司广域网 (WAN)。 当这些系统不可用时，你的组织会如何应对？

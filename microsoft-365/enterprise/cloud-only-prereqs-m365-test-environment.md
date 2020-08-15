@@ -9,24 +9,24 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附仅限云的身份验证的先决条件。
-ms.openlocfilehash: 94d3f5cdff7c8515ab775ae8070b74dd9b80df0f
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
-ms.translationtype: HT
+ms.openlocfilehash: a8025a2543a53a229be13d19c246165fe88ad433
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153778"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685780"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中仅限云的标识和设备访问先决条件
 
-*此测试实验室指南仅可用于 Microsoft 365 企业版测试环境。*
+*此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
-[标识和设备访问配置](microsoft-365-policies-configurations.md)是一组配置和条件访问策略，用于保护对与 Azure Active Directory (Azure AD) 集成的所有服务的访问，包括 Microsoft 365 企业版中的 Office 365 和 Microsoft Intune。
+[标识和设备访问配置](microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的所有服务的访问权限。
 
 本文介绍了如何配置 Microsoft 365 测试环境，使其满足标识和设备访问[仅限云的先决条件配置](identity-access-prerequisites.md#prerequisites)的要求。
 
@@ -116,10 +116,10 @@ ms.locfileid: "43153778"
 
 [其他标识测试实验室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[阶段 2：标识](identity-infrastructure.md)
+[标识路线图](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 企业版测试实验室指南](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 企业版部署](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企业版概述](microsoft-365-overview.md)
 
-[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365-enterprise/)
+[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365-enterprise/)
