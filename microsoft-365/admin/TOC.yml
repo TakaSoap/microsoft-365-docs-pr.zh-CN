@@ -133,20 +133,8 @@
               href: create-groups/add-or-remove-members-from-groups.md
             - name: 还原已删除的组
               href: create-groups/restore-deleted-group.md
-            - name: 计划对组进行管理
-              href: create-groups/plan-for-groups-governance.md
-            - name: 管理组创建
-              href: create-groups/manage-creation-of-groups.md
-            - name: 为组选择域
-              href: create-groups/choose-domain-to-create-groups.md
-            - name: 组命名策略概述
-              href: create-groups/groups-naming-policy.md
-            - name: 允许成员与组有邮件往来
-              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
             - name: 管理对组的来宾访问
               href: create-groups/manage-guest-access-in-groups.md
-            - name: 对组使用敏感度标签
-              href: ../compliance/sensitivity-labels-teams-groups-sites.md
     - name: 管理电子邮件和日历
       href: email/index.yml
       items:

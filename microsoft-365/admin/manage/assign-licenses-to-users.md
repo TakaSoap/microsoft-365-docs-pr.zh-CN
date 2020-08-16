@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何向用户分配许可证。
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015943"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757553"
 ---
 # <a name="assign-licenses-to-users"></a>向用户分配许可证
 
@@ -160,6 +160,25 @@ ms.locfileid: "45015943"
 5. 在“**产品许可证**”窗格底部，选择“**保存**”\>“**关闭**”\>“**关闭**”。
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>向来宾用户分配许可证
+
+可在 Azure Active directory 管理中心中邀请来宾用户与你的组织进行协作。 若要了解有关来宾用户的信息，请参阅 [Azure Active Directory B2B 中的来宾用户访问是什么？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) 如果你没有任何来宾用户，请参阅[快速入门：在 Azure 门户中将来宾用户添加到你的目录](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+
+> [!IMPORTANT]
+> 必须是全局管理员才能执行这些步骤。
+
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 管理中心</a>
+2. 在导航窗格中，选择“**用户**”。
+3. 在“**用户 | 所有用户（预览）**”页面上，选择“**添加筛选器**”。
+4. 在“**选择字段**”菜单中，选择“**用户类型**”，然后选择“**应用**”。
+5. 在下一个菜单中，选择“**来宾**”。
+6. 在结果列表中，选择需要许可证的用户。
+7. 在“**管理**”下，选择“**许可证**”。
+8. 选择“**分配**”。
+9. 在“**更新许可证分配**”页面上，选择要为其分配许可证的产品。
+10. 在右侧，清除不希望来宾用户拥有访问权限的任何服务所对应的复选框。
+11. 选择“**保存**”。
 
 ## <a name="next-steps"></a>后续步骤
 
