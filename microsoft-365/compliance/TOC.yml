@@ -343,8 +343,12 @@
       items:
         - name: 记录管理
           href: records-management.md
-        - name: 记录
+        - name: 了解记录
           href: records.md
+        - name: 声明记录
+          href: declare-records.md
+        - name: 记录版本控制
+          href: record-versioning.md
 - name: 管理电子数据展示
   items:
     - name: Microsoft 365 中的电子数据展示
