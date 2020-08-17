@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577970"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685804"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -66,7 +66,7 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 1. **如果消息在保持期内未遭删除**：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 
 
-2. **如果用户在保留期内删除项目**，该项目将立即移至 SubstrateHolds 文件夹。 如果用户从 SubstrateHolds 文件夹中删除消息或清空此文件夹，该项目将被永久删除。 否则，该消息将在移至 SubstrateHolds 文件夹一天后被永久删除。
+2. **如果用户在保留期内删除项目**，该项目将立即移至 SubstrateHolds 文件夹。 该消息将在移至 SubstrateHolds 文件夹一天后被永久删除。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天

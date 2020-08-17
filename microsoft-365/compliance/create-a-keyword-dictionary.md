@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.date: ''
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
@@ -17,33 +17,50 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解在 Office 365 安全 & 合规中心中创建关键字词典的基本步骤。
-ms.openlocfilehash: a2b56d013b452f02a26ea956da19e5644bf9d44a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
-ms.translationtype: MT
+description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
+ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648725"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686634"
 ---
-# <a name="create-a-keyword-dictionary"></a>创建关键字词典
+# <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
-数据丢失防护 (DLP) 可以识别、监视和保护您的敏感信息。 识别敏感信息有时需要查找关键字，尤其是在标识常规内容 (例如医疗保健相关的通信) 或不当或明确的语言时。 虽然您可以在敏感信息类型中创建关键字列表，但关键字列表的大小受到限制，并需要修改 XML 以创建或编辑它们。 关键字字典提供了更简单的关键字管理和更大的规模，支持每个字典最多为100000个术语，并支持任何语言。
+数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典提供了更简单的关键字管理方式，并且规模更大，每个字典最多可支持 100000 个词条。
+  
+> [!NOTE]
+> Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
+> - 简体中文
+> - 繁体中文
+> - 韩语
+> - 日语
+> 
+>此功能预览仅在商业云中提供，并且仅在以下地区推出：
+> - 日本
+> - 韩国
+> - 中国大陆
+> - 香港特别行政区
+> - 澳门特别行政区
+> - 中国台湾
+>
+>此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>创建关键字词典的基本步骤
 
 词典可能有多个关键字来源，最常见的来源是服务或 PowerShell cmdlet 中导入的文件（如 .csv 或 .txt 列表）、你直接在 PowerShell cmdlet 中输入的列表或现有词典。创建关键字词典时，请遵循下面的相同核心步骤：
   
-1. 使用**安全 & 合规性中心** ([https://protection.office.com](https://protection.office.com)) 或连接到**安全 &amp; 合规中心 PowerShell**。
+1. 使用**安全与合规中心** ([https://protection.office.com](https://protection.office.com)) 或连接到**安全与合规中心 PowerShell**。&amp;
     
-2. **定义或加载所需源中的关键字**。 向导和 cmdlet 都接受以逗号分隔的关键字列表来创建自定义关键字词典，因此此步骤将略有不同，具体取决于您的关键字来自何处。 加载后的关键字会在导入前编码并转换为字节数组。
+2. **定义或加载目标来源中的关键字**。 该向导和 cmdlet 均接受逗号分隔的关键字列表，以创建自定义关键字字典，所以这一步将会因关键字来源不同而略有差异。 加载后的关键字会在导入前编码并转换为字节数组。
     
-3. **创建词典**。 选择名称和说明并创建词典。
+3. **创建字典**。 选择名称和说明，并创建字典。
 
-## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>使用安全 & 合规中心创建关键字词典
+## <a name="create-a-keyword-dictionary-using-the-security--compliance-center"></a>使用安全与合规中心创建关键字字典
 
-使用以下步骤创建和导入自定义词典关键字：
+使用以下步骤创建和导入自定义字典关键字：
 
-1. 连接到安全 & 合规性中心 ([https://protection.office.com](https://protection.office.com)) 。
+1. 连接到安全与合规中心 ([https://protection.office.com](https://protection.office.com))。
 
 2. 导航到 **“分类”>“敏感信息类型”**。
 
@@ -69,7 +86,7 @@ ms.locfileid: "46648725"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 通过文件创建关键字词典
 
-通常，当您需要创建大型词典时，将使用来自文件或从其他源导出的列表中的关键字。在这种情况下，将在外部电子邮件中创建包含不恰当语言的列表的关键字词典。您必须先[连接到安全 &amp; 合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+通常情况下，在需要创建大型字典时，可使用从某些其他来源导出的文件或列表中的关键字。 在这种情况下，将会创建一个关键字字典，其中包含将在外部电子邮件中筛选的不当语言的列表。 首先，必须[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。&amp;
   
 1. 将关键字复制到文本文件中，并确保每个关键字都单独占一行。
     
@@ -91,17 +108,17 @@ ms.locfileid: "46648725"
 
 可能需要修改一个关键字词典中的关键字，或修改一个内置词典。 目前，只能使用 PowerShell 更新自定义关键字词典。 
 
-例如，我们将在 PowerShell 中修改一些术语，在本地保存这些术语，以便在编辑器中修改它们，然后就地更新以前的术语。 
+例如，我们将在 PowerShell 中修改一些词条，在可使用编辑器编辑词条的本地位置保存词条，然后就地更新旧词条。 
 
-首先，检索词典对象：
+首先，检索字典对象：
   
 ```powershell
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-打印 `$dict` 将显示各种变量。 关键字本身存储在后端的对象中，但 `$dict.KeywordDictionary` 包含它们的字符串表示形式，您将使用这些关键字来修改字典。 
+打印 `$dict` 将显示各种不同的变量。 关键字本身存储在后端的对象中，但 `$dict.KeywordDictionary` 包含它们的字符串表示形式，将用于修改字典。 
 
-在修改字典之前，需要使用方法将术语字符串重新转换为数组 `.split(',')` 。 然后，使用方法清除关键字之间不需要的空格 `.trim()` ，只保留要使用的关键字。 
+修改字典前，需要使用 `.split(',')` 方法将词条字符串转换回数组。 然后，使用 `.trim()` 方法清理掉关键字之间的多余空格，仅留下要使用的关键字。 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -182,7 +199,7 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>在自定义敏感信息类型和 DLP 策略中使用关键字词典
 
-关键字字典可用作自定义敏感信息类型的匹配要求的一部分，也可用作敏感信息类型本身。 两者都要求您创建[自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 按照链接的文章中的说明操作，以创建敏感的信息类型。 拥有 XML 之后，你将需要使用字典的 GUID 标识符来使用它。
+关键字字典可用作自定义敏感信息类型的匹配要求的一部分，也可用作敏感信息类型本身。 这两者都要求创建[自定义敏感信息类型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 请按照链接的文章中的说明创建敏感信息类型。 拥有 XML 后，你将需要 GUID 标识符，以供字典使用。
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

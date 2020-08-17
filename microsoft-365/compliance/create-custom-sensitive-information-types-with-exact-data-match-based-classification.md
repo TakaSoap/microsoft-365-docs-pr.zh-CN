@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648747"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686556"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -40,6 +40,23 @@ ms.locfileid: "46648747"
 ![基于 EDM 的分类](../media/EDMClassification.png)
 
 基于 EDM 的分类允许你创建自定义敏感信息类型，它们将引用敏感信息数据库中的精确值。 数据库可以每天或每周刷新一次，最多可包含 1 亿行数据。 因此，当员工、患者或客户往来并且记录发生更改时，你的自定义敏感信息类型仍将保持最新并且适用。 你还可以将基于 EDM 的分类与策略一起使用，例如 [数据丢失防护策略](data-loss-prevention-policies.md) (DLP) 或 [Microsoft Cloud App Security 文件策略](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+
+> [!NOTE]
+> Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：
+> - 简体中文
+> - 繁体中文
+> - 韩语
+> - 日语
+> 
+>此功能预览仅在商业云中提供，并且仅在以下地区推出：
+> - 日本
+> - 韩国
+> - 中国大陆
+> - 香港特别行政区
+> - 澳门特别行政区
+> - 中国台湾
+>
+>此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
