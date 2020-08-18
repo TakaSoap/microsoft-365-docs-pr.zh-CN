@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 配置安全性和基础结构，使你的员工能够随时随地远程工作。
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522249"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778331"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在开发/测试环境中配置具有安全隔离的团队
 
@@ -33,15 +33,15 @@ ms.locfileid: "46522249"
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>阶段 1：构建 Microsoft 365 企业版测试环境。
 
-如果只需要测试达到最低要求的轻型敏感和高度敏感团队，请按照[轻型基本配置](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中的说明进行操作。
+如果只需要测试达到最低要求的轻型敏感和高度敏感团队，请按照[轻型基本配置](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
 
-如果想要在模拟企业中测试敏感和高度敏感的团队，请按照[密码哈希同步](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)中的说明进行操作。
+如果想要在模拟企业中测试敏感和高度敏感的团队，请按照[密码哈希同步](../enterprise/password-hash-sync-m365-ent-test-environment.md)中的说明进行操作。
 
 >[!Note]
->测试具有安全隔离的团队不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟内部网和 Active Directory 域服务 (AD DS) 林的目录同步。 它在此处作为一个选项提供，以便你可以测试具有安全隔离的团队，并在代表典型组织的环境中对其进行试验。
+>测试具有安全隔离的团队不需要模拟的企业测试环境，该环境中包括连接到 Internet 的模拟内部网和  Active Directory Domain Services (AD DS) 资源林的目录同步。 它在此处作为一个选项提供，以便你可以测试具有安全隔离的团队，并在代表典型组织的环境中对其进行试验。
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>阶段 2：创建和配置 Azure Active Directory (AD) 组和用户
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>第 2 阶段：创建和配置你的 Azure Active Directory (Azure AD)  组和用户。
 
 此阶段为虚构组织创建和配置 Azure AD 组和用户。
   
@@ -63,7 +63,7 @@ ms.locfileid: "46522249"
       
 5. 单击“**创建**”，然后关闭“**组**”边栏选项卡。
     
-接下来，配置自动许可，使新的“**高层管理人员**”组的成员可以自动分配有 Microsoft 365 E5 许可证。
+接下来，配置自动许可，使新的“**高层管理人员**”组的成员可以自动分配 Microsoft 365 E5 许可。
   
 1. 在 Azure 门户中，单击“Azure Active Directory”>“许可证”>“所有产品”****。
     
@@ -77,7 +77,7 @@ ms.locfileid: "46522249"
     
 6. 关闭浏览器中的 Azure 门户选项卡。
     
-接下来，[连接到 Azure Active Directory PowerShell for Graph 模块](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+接下来，[连接到 Azure Active Directory PowerShell for Graph 模块](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 填写组织名称、位置和公用密码并从 PowerShell 命令提示符或集成脚本环境 (ISE) 中运行以下命令，创建新的用户帐户并将其添加到相应的高层管理人员组：
   
@@ -115,7 +115,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 在此阶段中，可为高级领导团队的成员创建和配置具有安全隔离的团队，以便协作处理公司战略。
 
-首先，在继续执行[本文](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)中的步骤之前，先启用敏感度标签来保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容。
+首先，在继续执行[本文](../compliance/sensitivity-labels-teams-groups-sites.md)中的步骤之前，先启用敏感度标签来保护 Microsoft Teams、Office 365 组和 SharePoint 网站中的内容。
 
 接下来，创建团队：
 
@@ -126,9 +126,15 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 5. 在“**隐私**”下，单击“**专用**”。
 6. 键入**公司战略**，然后单击“**创建**” > “**关闭**”。
 
-接下来，使用以下设置配置敏感度标签：
+接下来，限制公司战略组的所有者建立私人渠道。
 
-- 标签名称是“公司战略”
+1. 在团队中，单击“**更多选项**”，然后单击“**管理团队**”。
+2. 在“**设置**”选项卡上，展开“**成员权限**”。
+3. 清除“**允许成员创建专用频道**”复选框。
+
+下一步，你需要用以下设置配置灵敏度标签：
+
+- 名称为“公司战略”
 - 启用加密
 - 公司战略组具有共同创作权限
 
@@ -199,10 +205,6 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ![公司战略隔离团队的配置](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-团队中的文件可以拥有“公司战略”组中的成员分配的“公司战略敏感度”标签。 下面是一个示例。
-
-![应用了“公司战略敏感度”标签的文件示例](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
 ## <a name="next-step"></a>后续步骤
 
-准备好进行生产部署时，请参阅[配置具有安全隔离的团队](secure-teams-security-isolation.md)以获取详细的配置信息。
+当你准备好进行生产部署时，请参考 [配置说明](secure-teams-security-isolation.md)。
