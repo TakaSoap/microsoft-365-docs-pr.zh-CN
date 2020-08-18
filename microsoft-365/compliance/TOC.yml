@@ -6,8 +6,6 @@
       href: compliance-quick-tasks.md
     - name: 合规中心的新增功能
       href: whats-new.md
-    - name: 最新的合规性内容更新
-      href: recently-updated-topics-mcc.md
     - name: Microsoft 365 合规中心
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 解决方案目录
@@ -341,13 +339,13 @@
           href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: 记录管理
       items:
-        - name: 记录管理
+        - name: 了解有关记录管理的信息
           href: records-management.md
-        - name: 了解记录
-          href: records.md
+        - name: 开始进行记录管理
+          href: get-started-with-records-management.md
         - name: 声明记录
           href: declare-records.md
-        - name: 记录版本控制
+        - name: 使用记录版本控制
           href: record-versioning.md
 - name: 管理电子数据展示
   items:
