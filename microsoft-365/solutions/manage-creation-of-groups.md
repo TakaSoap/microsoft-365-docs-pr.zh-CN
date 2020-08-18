@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 49fdaa98d0b88b306b9fd3d84e52bcf52d9fdf7f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: f2b2837a762398bb065d36c7f849b2fdcbbb5816
+ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662498"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46788880"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可以创建 Microsoft 365 组的用户
 
@@ -163,7 +163,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 如果要关闭组创建限制，并再次允许所有用户创建组，请将 $GroupName 设置为 "" 并 $AllowGroupCreation 为 "True"，然后重新运行该脚本。
     
-## <a name="step-4-verify-that-it-works"></a>步骤4：验证它是否正常运行
+## <a name="step-3-verify-that-it-works"></a>步骤 3：验证有效性
 
 更改可能需要30分钟或更长时间才能生效。 您可以通过执行以下操作来验证新设置：
 
