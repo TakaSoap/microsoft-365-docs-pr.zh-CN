@@ -183,6 +183,10 @@
           href: get-help-with-domains/buy-a-domain-name.md
         - name: 删除域
           href: get-help-with-domains/remove-a-domain.md
+        - name: 将域从 Microsoft 365 转移到另一台主机上
+          href: get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md
+        - name: 从我的自定义域试点 Microsoft 365
+          href: misc/pilot-microsoft-365-from-my-custom-domain.md
         - name: 关于域的常见问题解答
           href: setup/domains-faq.md
         - name: 特定于主机的说明
