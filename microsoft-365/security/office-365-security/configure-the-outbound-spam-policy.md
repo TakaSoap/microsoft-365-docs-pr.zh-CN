@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除出站垃圾邮件策略。
-ms.openlocfilehash: 8a023917443f817476986682dac136ad5c735587
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 22a809370787df1798f2f777c852d1004565d2a6
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653013"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798278"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中配置出站垃圾邮件筛选
 
@@ -130,7 +130,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
         您添加的收件人将显示在浮出控件的 " **收件人列表** " 部分。 若要删除收件人，请单击 " ![ 删除" 按钮 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成时，请单击“保存”****。
+     1. 完成后，单击“**保存**”。
 
         若要禁用此设置，请清除该复选框。
 
@@ -245,7 +245,7 @@ EOP 中的出站垃圾邮件策略的基本元素为：
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>设置自定义出站垃圾邮件策略的优先级
 
-默认情况下，会为出站垃圾邮件策略指定一个优先级，这取决于在 (较旧策略中创建它们的顺序低于旧策略) 的优先级。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以有相同的优先级。
+默认情况下，会为出站垃圾邮件策略指定一个优先级，这取决于在 (较旧策略中创建它们的顺序低于旧策略) 的优先级。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 任何两个策略都不能具有相同的优先级，并且策略处理在应用第一个策略后停止。
 
 自定义出站垃圾邮件策略按其处理的顺序显示 (第一个策略的 **优先级** 值为 0) 。 名为 " **出站垃圾邮件筛选器策略** " 的默认出站垃圾邮件策略的优先级值为 **最低**，无法进行更改。
 

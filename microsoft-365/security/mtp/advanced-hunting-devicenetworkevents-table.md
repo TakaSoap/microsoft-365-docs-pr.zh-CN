@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 892ffe59f0902938b5d248e11a967b46de9c30b3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 00e8b30507228df41c8eb29eac88102e59d0950b
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649045"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797964"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -33,6 +33,9 @@ ms.locfileid: "46649045"
 
 `DeviceNetworkEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关网络连接和相关事件的信息。 使用此参考来构建从此表返回信息的查询。
 
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
@@ -40,7 +43,7 @@ ms.locfileid: "46649045"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `ActionType` | string | 触发事件的活动类型 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `RemoteIP` | string | 连接到的 IP 地址 |
 | `RemotePort` | int | 要连接到的远程设备上的 TCP 端口 |
 | `RemoteUrl` | string | 连接到的 URL 或完全限定域名 (FQDN) |
@@ -72,6 +75,6 @@ ms.locfileid: "46649045"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9b5fd9bfe881ec1313afb26da5d19cd96054862
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649291"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797824"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -36,17 +36,17 @@ ms.locfileid: "46649291"
 ## <a name="get-schema-information-in-the-security-center"></a>获取安全中心中的架构信息
 构建查询时，请使用内置架构参考快速获取有关架构中每个表的以下信息：
 
-- **表说明**—表中包含的数据类型和数据源。
-- **列**—表中的所有列。
-- **操作类型**： `ActionType` 表示表支持的事件类型的列中的可能值。 仅为包含事件信息的表提供此信息。
-- **示例查询**—示例查询，可介绍如何使用表。
+- **表说明** —表中包含的数据类型和数据源。
+- **列** —表中的所有列。
+- **操作类型** ： `ActionType` 表示表支持的事件类型的列中的可能值。 仅为包含事件信息的表提供此信息。
+- **示例查询** —示例查询，可介绍如何使用表。
 
 ### <a name="access-the-schema-reference"></a>访问架构参考
-若要快速访问架构引用，请在 "架构表示" 中选择表名称旁边的 "**查看引用**操作"。 您还可以选择 "**架构引用**" 以搜索表。   
+若要快速访问架构引用，请在 "架构表示" 中选择表名称旁边的 " **查看引用** 操作"。 您还可以选择 " **架构引用** " 以搜索表。   
 
 ![显示如何访问门户架构引用的图像 ](../../media/mtp-ah/ah-reference.png) 
 
-## <a name="schema-tables"></a>架构表
+## <a name="learn-the-schema-tables"></a>了解架构表
 以下引用列出了架构中的所有表。 每个表名称链接到描述该表的列名称的页面。 表和列名称作为架构表示的一部分列在安全中心的“高级搜寻”屏幕上。
 
 | 表名 | 说明 |
@@ -72,6 +72,7 @@ ms.locfileid: "46649291"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 电子邮件事件，包括电子邮件传递和阻止事件 |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 在 Microsoft 365 将电子邮件传递给收件人邮箱之后，在送达后发生的安全事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件上的 Url 的信息 |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory (AD) 的本地域控制器的事件。 此表涵盖了与标识相关的事件的范围以及域控制器上的系统事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源（包括 Azure Active Directory）的帐户信息 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的身份验证事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）执行的查询活动 |
@@ -81,5 +82,5 @@ ms.locfileid: "46649291"
 - [了解查询语言](advanced-hunting-query-language.md)
 - [处理查询结果](advanced-hunting-query-results.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

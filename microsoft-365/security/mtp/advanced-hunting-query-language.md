@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649387"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797848"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -33,7 +33,7 @@ ms.locfileid: "46649387"
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
-在 Microsoft 365 安全中心中，转到 "**搜寻**" 以运行第一个查询。 使用以下示例：
+在 Microsoft 365 安全中心中，转到 " **搜寻** " 以运行第一个查询。 使用以下示例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -66,7 +66,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先创建两个表的联合， `DeviceProcessEvents` 并 `DeviceNetworkEvents` 根据需要添加管道元素。
+查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先创建两个表的联合，  `DeviceProcessEvents` 并 `DeviceNetworkEvents` 根据需要添加管道元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自定义结果列和长度 
-现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project`返回特定的列，并 `top` 限制结果数。 这些运算符有助于确保结果格式良好且相当大且易于处理。
+现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project` 返回特定的列，并 `top` 限制结果数。 这些运算符有助于确保结果格式良好且相当大且易于处理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -115,9 +115,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![高级搜寻查询编辑器中的展开控件的图像](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
->您可以查看图表中的查询结果，并快速调整筛选器。 有关指南，请[阅读使用查询结果](advanced-hunting-query-results.md)
+>您可以查看图表中的查询结果，并快速调整筛选器。 有关指南，请 [阅读使用查询结果](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>了解高级搜寻的常见查询运算符
+## <a name="learn-common-query-operators"></a>了解通用查询运算符
 
 你已运行第一个查询并对其组成部分有了大致了解，现在是时候回顾并学习一些基础知识了。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
 
@@ -136,7 +136,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 若要查看这些操作符的实时示例，请在高级搜寻的**入门**部分中运行它们。
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>了解数据类型及其查询语法含义
+## <a name="understand-data-types"></a>了解数据类型
 
 高级搜寻表中的数据通常分为以下数据类型。
 
@@ -148,17 +148,19 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `int` | 32 位数值  |
 | `long` | 64 位数值 |
 
+若要了解有关这些数据类型及其含义的详细信息，请 [阅读有关 Kusto 标量数据类型的信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
+
 ## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
 利用以下功能更快地编写查询：
 - **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
-- **架构树**—在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
-- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
+- **架构树** —在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
+- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在编辑器中使用多个查询
 查询编辑器可用作试用多个查询的待用介质垫。 若要使用多个查询：
 
 - 使用空行分隔每个查询。
-- 将光标放在查询的任何部分，以在运行查询之前选择该查询。 这将只运行选定的查询。 若要运行其他查询，请相应地移动游标，然后选择 "**运行查询**"。
+- 将光标放在查询的任何部分，以在运行查询之前选择该查询。 这将只运行选定的查询。 若要运行其他查询，请相应地移动游标，然后选择 " **运行查询**"。
 
 ![包含多个查询的查询编辑器的图像](../../media/mtp-ah/ah-multi-query.png)
 
@@ -179,6 +181,6 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [处理查询结果](advanced-hunting-query-results.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

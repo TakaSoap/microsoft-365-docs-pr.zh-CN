@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c5756bd90daa84d91847970e3c358ff43aa89836
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 3c63808e503da5474176de11ff5df8d909ab58e3
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649423"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797940"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -33,6 +33,9 @@ ms.locfileid: "46649423"
 
 `DeviceImageLoadEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关 DLL 加载事件的信息。 使用此参考来构建从此表返回信息的查询。
 
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
@@ -40,7 +43,7 @@ ms.locfileid: "46649423"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `ActionType` | string | 触发事件的活动类型 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
@@ -69,6 +72,6 @@ ms.locfileid: "46649423"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

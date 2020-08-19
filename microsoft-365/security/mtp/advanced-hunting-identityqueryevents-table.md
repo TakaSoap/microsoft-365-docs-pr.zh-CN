@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b5238ca32cdf9050391ef69bae3be0914b93f452
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649315"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797800"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -31,12 +31,15 @@ ms.locfileid: "46649315"
 
 `IdentityQueryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含针对 Active Directory 对象（如用户、组、设备和域）执行的查询的相关信息。 使用此参考来构建从此表返回信息的查询。
 
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | string | 触发事件的活动类型 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | string | 执行录制操作的应用程序 |
 | `QueryType` | string | 查询类型，如 QueryGroup、QueryUser 或 EnumerateUsers |
 | `QueryTarget` | string | 要查询的用户、组、设备、域或任何其他实体类型的名称 |
@@ -63,6 +66,6 @@ ms.locfileid: "46649315"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

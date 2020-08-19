@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ad3cfe34c697cbef09a99efdcbe1c1bd6ced1ca2
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: e5f17da63f7bb0306c4b5899771d2e324770705c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649459"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798022"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,6 +33,9 @@ ms.locfileid: "46649459"
 
 高级搜寻架构中的 "杂项设备事件" 或 `DeviceEvents` "表" 包含有关各种事件类型的信息，包括由安全控制触发的事件，如 Windows Defender 防病毒和利用漏洞保护。 [advanced hunting](advanced-hunting-overview.md) 使用此参考来构建从此表返回信息的查询。
 
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
 
@@ -41,7 +44,7 @@ ms.locfileid: "46649459"
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `ActionType` | string | 触发事件的活动类型 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `FileName` | string | 录制操作所应用到的文件的名称 |
 | `FolderPath` | string | 包含录制的操作所应用于的文件的文件夹 |
 | `SHA1` | string | 录制操作所应用到的文件的 SHA-1 |
@@ -89,6 +92,6 @@ ms.locfileid: "46649459"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

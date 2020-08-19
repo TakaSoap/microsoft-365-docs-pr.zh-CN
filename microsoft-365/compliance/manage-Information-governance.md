@@ -1,31 +1,31 @@
 ---
-title: 管理信息治理
+title: Microsoft 365 中的 microsoft 信息管理
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Normal
+localization_priority: High
 search.appverid:
 - MOE150
 - MET150
-description: 了解 Microsoft 365 中的信息管理。
-ms.openlocfilehash: ff7d5ebc1b656aa62bac054cfbd2784b335d03e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+description: 在 Microsoft 365 中实施 Microsoft 信息治理功能，以针对合规性或法规要求控制数据。
+ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778562"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804240"
 ---
-# <a name="manage-information-governance"></a>管理信息治理
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息管理
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-使用 Microsoft 信息管理功能来管理您的数据，以实现合规性或法规要求。
+使用 Microsoft 信息治理 (有时缩写为 MIG) 功能，以针对合规性或法规要求来控制您的数据。
 
 ## <a name="information-governance"></a>信息治理
 
@@ -44,5 +44,5 @@ ms.locfileid: "46778562"
 
 |功能|它会解决什么问题？|入门|
 |:------|:------------|---------------------|:----------------------------|
-|[记录管理](records-management.md)| 一个用于电子邮件和文档的解决方案，该解决方案将保留时间安排和要求纳入到支持内容的完整生命周期的文件计划中，以记录声明、保留和处置 <br /><br />示例方案： [记录的处置](disposition.md#disposition-of-records)|[记录管理入门](get-started-with-records-management.md) |
+|[记录管理](records-management.md)| 一个用于电子邮件和文档的解决方案，该解决方案将保留时间安排和要求纳入到支持内容的完整生命周期的文件计划中，以记录声明、保留和处置 <br /><br />示例方案： [记录的处置](disposition.md#disposition-of-records)|[开始进行记录管理](get-started-with-records-management.md) |
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552658"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798230"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -43,7 +43,7 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 打开预览体验设置，使其在第一次尝试即将推出的功能中。
 
-1. 在导航窗格中，选择 "**设置**"。
+1. 在导航窗格中，选择 " **设置**"。
 
 2. 选择 " **Microsoft 威胁防护**"。
 
@@ -52,12 +52,13 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 
 3. 选择“**保存**”。
 
-当您看到 "**打开预览功能**" 复选框处于选中状态时，您将知道已经打开了预览功能。 
+当您看到 " **打开预览功能** " 复选框处于选中状态时，您将知道已经打开了预览功能。 
 
 ## <a name="preview-features"></a>预览功能
 目前，预览中提供了以下功能和增强功能：
 
-- **[在高级搜索中执行操作](advanced-hunting-take-action.md)**-快速包含威胁或在[高级](advanced-hunting-overview.md)搜索中找到的已泄露资产的地址。
-
-- **[在门户架构参考中](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**，直接在安全中心中获取有关高级搜寻架构表的信息。 除了表和列说明之外，此方便的参考还提供了有关受支持的事件类型 (`ActionType` 值) 和示例查询的信息。
+- **[高级搜索中的 IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md)** -查找涉及到内部部署域控制器的事件，该事件运行 Active DIRECTORY (AD) 。 此表涵盖了与标识相关的事件的范围以及域控制器上的系统事件。
+- **[AssignedIPAddresses ( # A1 函数](advanced-hunting-assignedipaddresses-function.md)** —在高级搜寻中使用此函数可快速获取从指定时间点分配给设备或最近的 ip 地址的最新 ip 地址。
+- **[在高级搜索中执行操作](advanced-hunting-take-action.md)** -快速包含威胁或在 [高级](advanced-hunting-overview.md)搜索中找到的已泄露资产的地址。
+- **[在门户架构参考中](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ，直接在安全中心中获取有关高级搜寻架构表的信息。 除了表和列说明之外，此方便的参考还提供了有关受支持的事件类型 (`ActionType` 值) 和示例查询的信息。
 

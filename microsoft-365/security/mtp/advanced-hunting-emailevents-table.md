@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4f7f578aef3612696a8d5ab2a76111ff16d27b7
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 63f95b281dd2284168817a8edd9777c470f01d34
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648883"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797918"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,6 +32,9 @@ ms.locfileid: "46648883"
 
 
 [高级搜寻](advanced-hunting-overview.md)架构中的 `EmailEvents` 表包含涉及 Office 365 ATP 处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
+
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -68,6 +71,6 @@ ms.locfileid: "46648883"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

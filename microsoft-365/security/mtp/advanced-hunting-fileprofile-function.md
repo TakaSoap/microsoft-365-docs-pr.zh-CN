@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威胁防护的高级搜寻中的 FileProfile （）函数
-description: 了解如何使用 FileProfile （）丰富有关高级搜索查询结果中的文件的信息
+title: 'Microsoft 威胁防护中的 FileProfile ( # A1 函数在高级搜寻中'
+description: '了解如何使用 FileProfile ( # A1 丰富有关高级搜索查询结果中的文件的信息'
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、FileProfile、文件配置文件、函数、扩充
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204943"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797778"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -31,23 +31,23 @@ ms.locfileid: "45204943"
 
 `FileProfile()`函数是[高级](advanced-hunting-overview.md)搜索中的一个扩充函数，可将以下数据添加到查询找到的文件中。
 
-| Column | 数据类型 | 说明 |
+| 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
-| SHA1 | 字符串 | 录制操作所应用到的文件的 SHA-1 |
-| SHA256 | 字符串 | 将所录制操作应用于的文件的 SHA-256 |
-| MD5 | 字符串 | 将录制的操作应用于的文件的 MD5 哈希值 |
+| SHA1 | string | 录制操作所应用到的文件的 SHA-1 |
+| SHA256 | string | 将所录制操作应用于的文件的 SHA-256 |
+| MD5 | string | 将录制的操作应用于的文件的 MD5 哈希值 |
 | FileSize | int | 文件大小（以字节为单位） |
 | GlobalPrevalence | int | 由 Microsoft 全局监视的实体的实例数 |
 | GlobalFirstSeen | datetime | Microsoft 全球首次观测实体的日期和时间 |
 | GlobalLastSeen | datetime | 上次 Microsoft 全局观察实体的日期和时间 |
-| 签字 | 字符串 | 有关文件签名者的信息 |
-| 颁发者 | 字符串 | 有关颁发证书颁发机构（CA）的信息 |
-| SignerHash | 字符串 | 标识签名者的唯一哈希值 |
+| 签字 | string | 有关文件签名者的信息 |
+| 颁发者 | string | 有关颁发证书颁发机构 (CA) 的信息 |
+| SignerHash | string | 标识签名者的唯一哈希值 |
 | IsCertificateValid | boolean | 用于对文件进行签名的证书是否有效 |
 | IsRootSignerMicrosoft | boolean | 指示根证书的签名者是否为 Microsoft |
-| IsExecutable | boolean | 文件是否为可迁移可执行（PE）文件 |
-| ThreatName | 字符串 | 发现的任何恶意软件或其他威胁的检测名称 |
-| Publisher | 字符串 | 发布文件的组织的名称 |
+| IsExecutable | boolean | 文件是否为可移植可执行文件 (PE) 文件 |
+| ThreatName | string | 发现的任何恶意软件或其他威胁的检测名称 |
+| Publisher | string | 发布文件的组织的名称 |
 | SoftwareName | string | 软件产品的名称 |
 
 ## <a name="syntax"></a>语法
@@ -87,3 +87,4 @@ DeviceFileEvents
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [了解架构](advanced-hunting-schema-tables.md)
+- [获取更多查询示例](advanced-hunting-shared-queries.md)

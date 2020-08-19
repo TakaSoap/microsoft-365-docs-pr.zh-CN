@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aec5bf5dfe29dd55bf5e5df471126db46fdfcb4c
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 86212bdecb58b2e79a94d0129a0a531ef22bd6e4
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648823"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797836"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -30,6 +30,9 @@ ms.locfileid: "46648823"
 - Microsoft 威胁防护
 
 `IdentityLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含通过 Azure ATP 和与 Microsoft 云应用安全捕获的 microsoft online 服务捕获的身份验证活动捕获的身份验证活动的相关信息。 使用此参考来构建从此表返回信息的查询。
+
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 >[!NOTE]
 >此表介绍了由云应用安全性跟踪的 Azure Active Directory (AD) 登录活动，特别是使用 ActiveSync 和其他旧协议的交互式登录和身份验证活动。 可以在 Azure AD 审核日志中查看此表中不可用的非交互式登录。 [了解有关将云应用安全连接到 Microsoft 365 的详细信息](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
@@ -39,8 +42,8 @@ ms.locfileid: "46648823"
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
-| `ActionType` | string | 触发事件的活动类型 |
-| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式**用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录**-用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络**-在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的**批处理**会话<br><br> - **服务**-服务会话启动时启动 |
+| `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录** -用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络** -在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的**批处理**会话<br><br> - **服务** -服务会话启动时启动 |
 | `Application` | string | 执行录制操作的应用程序 |
 | `Protocol` | string | 使用的网络协议 |
 | `FailureReason` | string | 解释录制的操作失败原因的信息 |
@@ -67,6 +70,6 @@ ms.locfileid: "46648823"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

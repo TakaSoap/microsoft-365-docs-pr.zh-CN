@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Office 365 高级威胁防护 (Office 365 ATP) 中提供的反网络钓鱼策略。
-ms.openlocfilehash: a7db287b8a8efb5c41488529fcaa8789b2f594b5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b492d37bea6135bccb770571f9984f9866c7cfd3
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652713"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804274"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -50,72 +50,27 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 |高级网络钓鱼阈值||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup>在默认策略中，"策略名称" 和 "说明" 是只读的 (说明为空) ，您不能指定该策略应用于的用户 (默认策略将应用于) 的所有收件人。
+<sup>\*</sup> 在默认策略中，"策略名称" 和 "说明" 是只读的 (说明为空) ，您不能指定该策略应用于的用户 (默认策略将应用于) 的所有收件人。
 
-若要配置反网络钓鱼策略，请参阅下列主题：
+若要配置反网络钓鱼策略，请参阅以下文章：
 
 - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 
 - [在 Microsoft 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
 
-本主题的其余部分介绍了反网络钓鱼策略和 ATP 反网络钓鱼策略中提供的设置。
+本文的其余部分介绍了反网络钓鱼策略和 ATP 反网络钓鱼策略中提供的设置。
 
-## <a name="spoof-settings"></a>欺骗设置
+## <a name="policy-settings"></a>策略设置
 
-哄骗是指电子邮件中的发件人地址 (在电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关哄骗的详细信息，请参阅[Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
-
-以下欺骗设置在反网络钓鱼策略和 ATP 反网络钓鱼策略中可用：
-
-- **反欺骗保护**：启用或禁用反欺骗保护。 建议您将其保留为启用状态。 您可以使用**欺骗智能策略**来允许或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
-
-  > [!NOTE]
-  > 默认情况下，在 EOP 的默认反网络钓鱼策略中启用了欺骗设置、默认的 ATP 反网络钓鱼策略，以及您创建的新的自定义反网络钓鱼策略或 ATP 反网络钓鱼策略。 <br/><br/> 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅[增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
-
-  对于阻止欺骗发件人发送的邮件，您还可以指定对邮件执行的操作：
-
-  - **将邮件移动到 "垃圾邮件" 文件夹**：这是默认值。 邮件传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则，则邮件将移至 "垃圾邮件" 文件夹 (默认情况下，将启用该规则) 。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
-
-  - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 若要了解隔离，请参阅以下主题：
-
-    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
-    - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
-    - [在 Microsoft 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
-
-- **未经身份验证的发件人**：启用或禁用 Outlook 中未识别的发件人标识 具体来说：
-
-  - 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或[复合身份验证](email-validation-and-authentication.md#composite-authentication) **，** 则会将 ) 添加到发件人的照片中的 ( 问号。
-
-  - 如果 "发件人" 地址中的域 (电子邮件客户) 端中显示的邮件发件人不同于 DKIM 签名中的域或**邮件的 "发**件人" 地址中的域，则会添加 via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) 。 有关这些地址的详细信息，请参阅[电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
-
-  若要防止将这些标识符添加到特定发件人的邮件中，可以使用以下选项：
-
-  - 允许发件人在欺骗智能策略中进行欺骗。 有关说明，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
-
-  - 为发件人域[配置电子邮件身份验证](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
-  
-    - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
-    - 对于 via 标记，确认 DKIM 签名中的域，或 "发**件人地址匹配** (" 或 "发件人地址中) 域的子域"。
-
-  有关详细信息，请参阅[识别可疑邮件在 Outlook.com 和 web 上的 Outlook](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
-
-## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的独占设置
-
-本节介绍仅在 ATP 反网络钓鱼策略中可用的策略设置。
-
-> [!NOTE]
-> 默认情况下，未配置或打开 ATP 专用设置，即使在默认策略中也是如此。 若要利用这些功能，您需要在默认的 ATP 反网络钓鱼策略中启用和配置这些功能，或者创建和配置自定义 ATP 反网络钓鱼策略。
-
-### <a name="policy-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的策略设置
-
-以下策略设置仅适用于 ATP 反网络钓鱼策略：
+以下策略设置在反网络钓鱼策略和 ATP 反网络钓鱼策略中可用：
 
 - **名称**：无法重命名默认的反网络钓鱼策略，但可以命名和重命名所创建的自定义策略。
 
-- **说明**您不能将说明添加到默认的反网络钓鱼策略中，但可以添加和更改所创建的自定义策略的说明。
+- **说明** 您不能将说明添加到默认的反网络钓鱼策略中，但可以添加和更改所创建的自定义策略的说明。
 
-- **应用**于：标识 ATP 反网络钓鱼策略应用于的内部收件人。 此值在自定义策略中是必需的，在默认策略中不可用 (默认策略适用于) 的所有收件人。
+- **应用**于：标识应用了反网络钓鱼策略的内部收件人。 此值在自定义策略中是必需的，在默认策略中不可用 (默认策略适用于) 的所有收件人。
 
-    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
+  只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
   - **收件人为**：组织中的一个或多个邮箱、邮件用户或邮件联系人。
   - **收件人是**组织中的一个或多个组的成员：
@@ -127,23 +82,73 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
     - **收件人是的成员**
     - **收件人域为**
 
+## <a name="spoof-settings"></a>欺骗设置
+
+哄骗是指电子邮件中的发件人地址 (在电子邮件客户端中显示的发件人地址) 与电子邮件源的域不匹配。 有关哄骗的详细信息，请参阅 [Microsoft 365 中的反欺骗保护](anti-spoofing-protection.md)。
+
+以下欺骗设置在反网络钓鱼策略和 ATP 反网络钓鱼策略中可用：
+
+- **反欺骗保护**：启用或禁用反欺骗保护。 建议您将其保留为启用状态。 您可以使用 **欺骗智能策略** 来允许或阻止特定的欺骗内部和外部发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+
+  > [!NOTE]
+  > 默认情况下，在 EOP 的默认反网络钓鱼策略中启用了欺骗设置、默认的 ATP 反网络钓鱼策略，以及您创建的新的自定义反网络钓鱼策略或 ATP 反网络钓鱼策略。 <br/><br/> 如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。 有关说明，请参阅 [增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+
+  对于阻止欺骗发件人发送的邮件，您还可以指定对邮件执行的操作：
+
+  - **将邮件移动到 "垃圾邮件" 文件夹**：这是默认值。 邮件传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则，则邮件将移至 "垃圾邮件" 文件夹 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+
+  - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 有关隔离的信息，请参阅以下文章：
+
+    - [Microsoft 365 中的隔离](quarantine-email-messages.md)
+    - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
+    - [在 Microsoft 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
+
+- **未经身份验证的发件人**：请参阅下一节中的说明。
+
+### <a name="unauthenticated-sender"></a>未经身份验证发件人
+
+未经身份验证的发件人标识是反网络钓鱼策略和 ATP 反网络钓鱼策略中提供的 [欺骗设置](#spoof-settings) 的一部分，如上一节中所述。
+
+**未经身份验证的发件人**设置启用或禁用 Outlook 中未识别的发件人标识。 具体来说：
+
+- 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或[复合身份验证](email-validation-and-authentication.md#composite-authentication) **，** 则会将 ) 添加到发件人的照片中的 ( 问号。
+
+- 如果 "发件人" 地址中的域 (电子邮件客户) 端中显示的邮件发件人不同于 DKIM 签名中的域或**邮件的 "发**件人" 地址中的域，则会添加 via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) 。 有关这些地址的详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+
+若要防止将这些标识符添加到特定发件人的邮件中，可以使用以下选项：
+
+- 允许发件人在欺骗智能策略中进行欺骗。 有关说明，请参阅 [在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+
+- 为发件人域[配置电子邮件身份验证](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
+  
+  - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
+  - 对于 via 标记，确认 DKIM 签名中的域，或 "发 **件人地址匹配** (" 或 "发件人地址中) 域的子域"。
+
+有关详细信息，请参阅 [识别可疑邮件在 Outlook.com 和 web 上的 Outlook](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
+
+## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的独占设置
+
+本节介绍仅在 ATP 反网络钓鱼策略中可用的策略设置。
+
+> [!NOTE]
+> 默认情况下，未配置或打开 ATP 专用设置，即使在默认策略中也是如此。 若要利用这些功能，您需要在默认的 ATP 反网络钓鱼策略中启用和配置这些功能，或者创建和配置自定义 ATP 反网络钓鱼策略。
+
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的模拟设置
 
 模拟是邮件中发件人或发件人的电子邮件域类似于真实的发件人或域：
 
 - 域 contoso.com 的模拟示例是ćóntoso.com。
-
 - 用户 michelle@contoso.com 的模拟示例是 michele@contoso.com。
 
 否则，模拟域可能被视为合法 (注册域、配置的电子邮件身份验证记录等 ) ，但其目的是欺骗收件人。
 
 以下模拟设置仅适用于 ATP 反网络钓鱼策略：
 
-- **要保护的用户**：阻止模拟指定的内部或外部用户。 例如，主管 (内部) 和董事会成员 (外部) 。 您可以添加最高为60的内部和外部地址。 此受保护的用户列表与**应用**于设置的策略所适用的收件人列表不同。
+- **要保护的用户**：阻止模拟指定的内部或外部用户。 例如，主管 (内部) 和董事会成员 (外部) 。 您可以添加最高为60的内部和外部地址。 此受保护的用户列表与 **应用** 于设置的策略所适用的收件人列表不同。
 
   例如，在应用于名为 "行政主管" 的组的策略中，将 Felipe Apodaca (felipea@contoso.com) 指定为受保护的用户。 发送给行政组成员的入站邮件，Felipe Apodaca 将被模拟，策略 (为模拟用户配置的操作的) 。
 
-- **要保护的域**：阻止模拟指定的域。 例如，您拥有的所有域都 ([接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 或拥有您拥有的域或合作伙伴域) 的特定域 (域。 此受保护域的列表与**应用**于设置的策略所适用的域列表不同。
+- **要保护的域**：阻止模拟指定的域。 例如，您拥有的所有域都 ([接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 或拥有您拥有的域或合作伙伴域) 的特定域 (域。 此受保护域的列表与 **应用** 于设置的策略所适用的域列表不同。
 
   例如，将 tailspintoys.com 指定为应用于名为 "主管" 的组成员的策略中的受保护域。 发送到 tailspintoys.com 在其中模拟的行政组成员的入站邮件将由策略 (为模拟域配置的操作) 。
 
@@ -153,9 +158,9 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
   - 将**邮件重定向到其他电子邮件地址**：将邮件发送给指定的收件人，而不是发送给目标收件人。
 
-  - **将邮件移动到 "垃圾邮件" 文件夹**：邮件将传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则，则邮件将移至 "垃圾邮件" 文件夹 (默认情况下，将启用该规则) 。 有关详细信息，请参阅[Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+  - **将邮件移动到 "垃圾邮件" 文件夹**：邮件将传递到邮箱并移动到 "垃圾邮件" 文件夹。 在 Exchange Online 中，如果在邮箱上启用了垃圾邮件规则，则邮件将移至 "垃圾邮件" 文件夹 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-    - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 若要了解隔离，请参阅以下主题：
+    - **隔离邮件**：将邮件发送到隔离，而不是发送给目标收件人。 有关隔离的信息，请参阅以下文章：
 
     - [Microsoft 365 中的隔离](quarantine-email-messages.md)
     - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
@@ -196,4 +201,4 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 - **4-最严格**：被标识为低、中或高可信度的网络钓鱼的邮件被视为以非常高的置信度进行标识。
 
-误报 (正常的可能性可能会随着此设置的增加而被标记为坏) 。 有关推荐设置的信息，请参阅[OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
+误报 (正常的可能性可能会随着此设置的增加而被标记为坏) 。 有关推荐设置的信息，请参阅 [OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。

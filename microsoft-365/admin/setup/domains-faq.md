@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 通过查找您的常见问题的答案，了解有关域的详细信息。
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068099"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804192"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
@@ -52,19 +52,20 @@ ms.locfileid: "45068099"
 - [如果我的 DNS 提供商不支持某些记录类型，会发生什么情况？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [如何在 Microsoft 365 中设置或更改默认域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [是否可以将自定义子域或多个域添加到 Microsoft 365？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [如何将域从 Microsoft 365 转移到另一台主机？]
 - [为什么我有 "onmicrosoft.com" 域？](#why-do-i-have-an-onmicrosoftcom-domain)
 - [为什么我有 "onmicrosoft.de" 域？](#why-do-i-have-an-onmicrosoftde-domain)
 - [如何验证我的非盈利或教育状态？](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>什么是 MX 优先级？
 
-邮件传递到具有最低首选项号码（最高优先级）的邮件 exchange 服务器，因此用于邮件路由的 MX 记录的首选项数量（通常为0或*高*优先级）应最低。 
+邮件传递到最低首选项编号 (最高优先级) 的邮件 exchange 服务器，因此用于邮件路由的 MX 记录应具有最低的首选数量（通常为0或  *高*  优先级）。 
   
 - 创建 MX 记录时，大多数 DNS 承载提供程序都要求您设置首选项号码。
     
-- 部分标签 "box"*首选项*，并为其添加标签*优先级*。 
+- 部分标签 "box"  *首选项*  ，并为其添加标签  *优先级*  。 
     
-- 有些用户需要一个数字，有些要求您选择 "*低*"、"*中*" 或 "*高*"。 
+- 有些用户需要一个数字，有些要求您选择 "  *低*  "、"  *中*  " 或 "  *高*  "。 
     
 - 如果您只有一个 MX 记录，则优先级或首选项的任何值都是很好的。
     
@@ -72,7 +73,7 @@ ms.locfileid: "45068099"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何验证我的域的 SPF 记录？
 
-必须具有或**仅为 SPF 创建一个 TXT 记录**，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Microsoft 365 值，而不是创建一个新的。 在添加或更新了 Microsoft 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
+必须具有或  **仅为 SPF 创建一个 TXT 记录**，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Microsoft 365 值，而不是创建一个新的。 在添加或更新了 Microsoft 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
   
 - [SPF 记录测试工具](http://www.kitterman.com/spf/validate.html)
     
@@ -82,11 +83,11 @@ ms.locfileid: "45068099"
 
 ## <a name="what-is-a-domain-name"></a>什么是域名？
 
-域是 **@** 注册电子邮件地址后和 Web 地址中 **www.** 后显示的唯一名称。 它通常采用您组织的名称和标准 Internet 后缀的形式，如*yourbusiness.com*或*stateuniversity.edu。* 
+域是 **@** 注册电子邮件地址后和 Web 地址中 **www.** 后显示的唯一名称。 它通常采用您组织的名称和标准 Internet 后缀的形式，如  *yourbusiness.com*  或  *stateuniversity.edu。* 
   
 将自定义域（如 "** \@ contoso.com**"）与 Microsoft 365 结合使用，可以帮助为你的品牌建立可信度和认可。 
   
-你可以[在 Microsoft 365 中购买域，我们将自动对其进行设置](../get-help-with-domains/buy-a-domain-name.md)，也可以从域注册机构购买或将已有的域引入。
+你可以 [在 Microsoft 365 中购买域，我们将自动对其进行设置](../get-help-with-domains/buy-a-domain-name.md)，也可以从域注册机构购买或将已有的域引入。
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>如果我的 DNS 提供商不支持某些记录类型，会发生什么情况？
 
@@ -140,25 +141,25 @@ ms.locfileid: "45068099"
 
 ::: moniker-end
     
-2. 在 "**域**" 页上，选择要将其设置为新电子邮件地址的默认域的域。 
+2. 在 " **域** " 页上，选择要将其设置为新电子邮件地址的默认域的域。 
     
 3. 选择“**设为默认值**”。
     
 ::: moniker range="o365-worldwide"
 
-您不能更改*onmicrosoft.com*域的名称。 
+您不能更改  *onmicrosoft.com*  域的名称。 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-您不能更改*onmicrosoft.de*域的名称。 
+您不能更改  *onmicrosoft.de*  域的名称。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-您不能更改*partner.onmschina.cn*域的名称。 
+您不能更改  *partner.onmschina.cn*  域的名称。 
 
 ::: moniker-end
 
@@ -188,18 +189,26 @@ ms.locfileid: "45068099"
   
 添加子域时，将根据正在验证的父域自动对其进行验证。
   
-将多个域添加到 Microsoft 365 时，可以在已添加的任何域中托管任何服务（如电子邮件）。  *当您将电子邮件更改为 Microsoft 365 时，通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始进入 Microsoft 365。* 
+将多个域添加到 Microsoft 365 时，可以在添加的任何域中承载电子邮件)  (之类的任何服务。  *当您将电子邮件更改为 Microsoft 365 时，通过更新域的 MX 记录，发送到该域的所有电子邮件都将开始进入 Microsoft 365。* 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > 如果向 Microsoft 365 订阅添加了 contoso.com 域，您还可以将子域 xyz.contoso.com 添加到另一个 Microsoft 365 组织。 添加子域时，系统会提示您在 DNS 托管提供程序中添加 TXT 记录。
 
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>如何将域从 Microsoft 365 传输到另一台主机？
+
+有关转移域的过程，请参阅将 [域从 Microsoft 转移到另一台主机](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)。
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
+
+有关从自定义域到 Microsoft 365 邮箱的试点 Microsoft 365 电子邮件功能的过程，请参阅 [试点 microsoft 365 from my custom domain](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)。
+
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>为什么我有 "onmicrosoft.com" 域？
 
-当您注册服务时，Microsoft 365 将为您创建一个域，如*contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.com*。 
+当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.com*。 
   
- **如果您想让您的电子邮件看起来像*alan \@ contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Microsoft 365](add-domain.md) " 中的步骤（如果已将其拥有）。 
+ **如果您想让您的电子邮件看起来像 *alan \@ contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) " 中的步骤（如果已将其拥有）。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.com"，则不能将其更改为 "fabrikam.onmicrosoft.com"。 若要使用不同的 onmicrosoft.com 域，您必须启动一个使用 Microsoft 365 的新订阅。 
     
@@ -214,9 +223,9 @@ ms.locfileid: "45068099"
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>为什么我有 "onmicrosoft.de" 域？
 
-当您注册服务时，Microsoft 365 将为您创建一个域，如*contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如*alan@contoso.onmicrosoft.de*。 
+当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.de*。 
   
- **如果您想让您的电子邮件看起来像*alan@contoso.de*：** [购买域](../get-help-with-domains/buy-a-domain-name.md)，或者只需按照 "[将用户和域添加到 Microsoft 365](add-domain.md)中的步骤" 中的步骤。如果你已拥有它。 
+ **如果您想让您的电子邮件看起来像 *alan@contoso.de*：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) 中的步骤" 中的步骤。如果你已拥有它。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.de"，则不能将其更改为 "fabrikam.onmicrosoft.de"。 若要使用不同的 onmicrosoft.de 域，您必须启动一个使用 Microsoft 365 的新订阅。 
     
@@ -230,15 +239,15 @@ ms.locfileid: "45068099"
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何验证我的非盈利或教育状态？
 
-1. 在[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)中选择 "**设置**" 以启动向导。 （请务必先登录到 Microsoft 365。） 
+1. 在[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)中选择 "**设置**" 以启动向导。  (务必先登录到 Microsoft 365。 )  
     
-2. 若要成为你的学校的管理员，请选择 "在 Microsoft 365 中**成为管理员**" 选项。 
+2. 若要成为你的学校的管理员，请选择 "在 Microsoft 365 中  **成为管理员** " 选项。 
     
 3. 系统将提示你在你的域的 DNS 主机网站上添加 TXT DNS 记录。 为什么？ 由于通过在 DNS 主机上登录并为你的域添加记录，你可以向 Microsoft 365 证明你拥有此域名。
     
 4. 添加记录后，您将返回到 Microsoft 365 门户，并确认您已添加它，以便 Microsoft 365 可以进行检查。
     
-是否有非盈利的，想要获取 Microsoft 365？ [请确保您的组织符合](https://www.microsoft.com/en-us/nonprofits/eligibility)条件，然后注册服务。 
+是否有非盈利的，想要获取 Microsoft 365？ [请确保您的组织符合](https://www.microsoft.com/en-us/nonprofits/eligibility) 条件，然后注册服务。 
   
 想要了解有关成为你的学校的管理员的详细信息吗？ [了解相关信息](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 )。

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0f93199fa23a422e82019730b38fcf407e8503a3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: f3c13025203a59eb192b9e0d193c429be57a83ce
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649411"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797976"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -32,6 +32,9 @@ ms.locfileid: "46649411"
 
 
 `DeviceLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关设备上的用户登录和其他身份验证事件的信息。 使用此参考来构建从此表返回信息的查询。
+
+>[!TIP]
+> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -44,7 +47,7 @@ ms.locfileid: "46649411"
 | `AccountDomain` | string | 帐户的域 |
 | `AccountName` | string | 帐户的用户名 |
 | `AccountSid` | string | 帐户的安全标识符 (SID)  |
-| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式**用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录**-用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络**-在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的**批处理**会话<br><br> - **服务**-服务会话启动时启动<br> |
+| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录** -用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络** -在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的**批处理**会话<br><br> - **服务** -服务会话启动时启动<br> |
 | `LogonId` | string | 登录会话的标识符。 此标识符仅在重启之间的同一台计算机上是唯一的 |
 | `RemoteDeviceName` | string | 在受影响的计算机上执行远程操作的计算机的名称。 根据报告的事件，此名称可以是完全限定的域名 (FQDN) 、NetBIOS 名称或不包含域信息的主机名 |
 | `RemoteIP` | string | 连接到的 IP 地址 |
@@ -75,6 +78,6 @@ ms.locfileid: "46649411"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)
