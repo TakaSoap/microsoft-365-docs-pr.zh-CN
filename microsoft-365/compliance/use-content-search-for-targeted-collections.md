@@ -18,28 +18,28 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: 在安全 & 合规中心中使用内容搜索来执行目标集合，从而确保项位于特定邮箱或站点文件夹中。
-ms.openlocfilehash: fb7f900e8deaef6946d1ed8ea109d42207a882b3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 使用安全与合规&中的内容搜索来执行目标集合，这样可以确保项目位于特定邮箱或网站文件夹中。
+ms.openlocfilehash: aa311d0f9226330d9f2d881af6dabbdc6d0a15b5
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819102"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814534"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>使用内容搜索进行目标收集
 
-安全合规中心中的内容搜索功能 &amp; 不能直接在 UI 中搜索特定文件夹在 Exchange 邮箱或 SharePoint 和 OneDrive for business 网站中的直接方法。 但是，通过为实际搜索查询语法中的网站的电子邮件或路径（DocumentLink）属性指定文件夹 ID 属性，可以搜索特定文件夹（称为*目标集合*）。 当您确信项目响应的情况或特权项目位于特定邮箱或站点文件夹中时，使用内容搜索来执行目标集合非常有用。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID 或 SharePoint 和 OneDrive for Business 网站上的文件夹的路径（DocumentLink）。 然后，您可以在搜索查询中使用文件夹 ID 或路径返回文件夹中的项目。
+在安全合规中心 &amp; 内的"内容搜索"功能不提供 UI 中搜索 Exchange 邮箱、SharePoint 和 OneDrive for Business 网站中特定文件夹的直接方式。 但是，可以搜索名为 (的特定文件夹 *) ，* 方法是在实际搜索查询语法中指定网站的电子邮件的文件夹 ID 属性或路径 (DocumentLink) 属性。 使用内容搜索来执行目标集合在你确信响应案例或特权项目位于特定邮箱或网站文件夹中时，可使用内容搜索执行目标收集。 您可以使用本文中的脚本获取邮箱文件夹的文件夹 ID，或 SharePoint 和 OneDrive for Business 站点上文件夹的路径 (DocumentLink) 。 然后，可在搜索查询中使用文件夹 ID 或路径返回位于文件夹中的项目。
 
 > [!NOTE]
-> 若要返回位于 SharePoint 或 OneDrive for business 网站中的文件夹中的内容，本主题中的脚本使用 DocumentLink 托管属性而不是 Path 属性。 DocumentLink 属性比 Path 属性更可靠，因为它将返回文件夹中的所有内容，而 Path 属性将不会返回某些媒体文件。
+> 若要返回位于 SharePoint 或 OneDrive for Business 网站中文件夹的内容，本主题中的脚本使用 DocumentLink 托管属性，而不是 Path 属性。 DocumentLink 属性比 Path 属性更加可靠，因为它将返回文件夹中的所有内容，而 Path 属性不会返回某些媒体文件。
 
-## <a name="before-you-use-content-search"></a>在使用内容搜索之前
+## <a name="before-you-use-content-search"></a>使用内容搜索之前
 
-- 您必须是安全合规中心中的电子数据展示管理器角色组的成员 &amp; ，才能在第1步中运行该脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+- 你必须是安全合规中心电子数据展示管理员角色 &amp; 组的成员，才能在步骤 1 中运行脚本。 有关详细信息，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
     
-    此外，还必须在 Exchange Online 组织中为 "邮件收件人" 角色分配。 这是运行**get-mailboxfolderstatistics** cmdlet （包含在步骤1中的脚本中）所必需的。 默认情况下，将 "邮件收件人" 角色分配给 Exchange Online 中的 "组织管理" 和 "收件人管理" 角色组。 有关在 Exchange Online 中分配权限的详细信息，请参阅[Manage role group members](https://go.microsoft.com/fwlink/p/?linkid=692102)。 您还可以创建自定义角色组，将 "邮件收件人" 角色分配给该角色组，然后添加需要在步骤1中运行该脚本的成员。 有关详细信息，请参阅[管理角色组](https://go.microsoft.com/fwlink/p/?linkid=730688)。
+    此外，必须在 Exchange Online 组织中分配有"邮件收件人"角色。 这是运行 **Get-MailboxFolderStatistics** cmdlet 所必需的，后者包含在步骤 1 的脚本中。 默认情况下，Mail Recipients 角色分配给 Exchange Online 中的 组织管理和收件人管理角色组。 有关在 Exchange Online 中分配权限的详细信息，请参阅 [管理角色组成员](https://go.microsoft.com/fwlink/p/?linkid=692102)。 您还可以创建自定义角色组，向其分配 Mail Recipients 角色，然后添加需要在步骤 1 中运行该脚本的成员。 有关详细信息，请参阅"[管理角色组"。](https://go.microsoft.com/fwlink/p/?linkid=730688)
     
-- 每次在第1步中运行脚本时，都会创建一个新的远程 PowerShell 会话。 因此，你可以使用所有可供你使用的远程 PowerShell 会话。 若要防止这种情况发生，可以运行以下命令来断开活动的远程 PowerShell 会话。
+- 每次在步骤 1 中运行此脚本时，都将创建新的远程 PowerShell 会话。 因此，你可以使用可用的远程 PowerShell 会话。 若要防止这种情况发生，可以运行以下命令断开与当前的远程 PowerShell 会话的连接。
     
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -47,56 +47,56 @@ ms.locfileid: "44819102"
 
     有关详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?linkid=396554)。
     
-- 该脚本包括最少的错误处理。 脚本的主要用途是快速显示邮箱文件夹 Id 或网站路径的列表，该列表可用于内容搜索的搜索查询语法以执行目标集合。
+- 此脚本包括最少的错误处理。 该脚本的主要目的是快速显示可以在内容搜索的搜索查询语法中用于执行目标集合的邮箱文件夹 ID 或网站路径列表。
     
-- 在任何 Microsoft standard 支持计划或服务下，本主题中提供的示例脚本不受支持。 示例脚本按原样提供，而不提供任何种类的担保。 Microsoft 也不提供任何默示担保，包括但不仅限于对适销性或针对特定目的的适用性的默示担保。 因使用或性能示例脚本和文档而导致的全部风险都将保留给您。 对于因使用或无法使用示例脚本或文档产生的任何损害（包括但不仅限于商业利润损失、业务中断、业务信息丢失或其他金钱损失），Microsoft、脚本作者以及参与脚本创建、生成或交付的任何人均不承担任何责任，即使 Microsoft 已被告知此类损害的可能性也是如此。
+- 本主题中提供的示例脚本在任何 Microsoft 标准支持程序或服务下都不受支持。 此示例脚本"按 AS"提供，不含任何保证。 Microsoft 进一步拒绝所有默示保证，包括但不限于针对特定用途的适销性或适用性的任何默示保证。 由示例脚本和文档产生的整个风险也将由您自行执行。 在任何情况下，对于由于使用或者无法使用示例脚本或文档所引起的任何损失（包括但不限于商业利润损失、业务中断、商业信息丢失或者其他经济损失），Microsoft、其作者或者参与创建、制作或交付脚本的任何人概不负责，即使 Microsoft 已被告知可能会出现此类损失。
   
-## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>步骤1：运行脚本以获取邮箱或网站的文件夹列表
+## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>步骤 1：运行脚本获取邮箱或站点的文件夹列表
 
-您在此第一步中运行的脚本将返回邮箱文件夹或 SharePoint 和 OneDrive for business 文件夹的列表，以及每个文件夹对应的文件夹 ID 或路径。 运行此脚本时，它将提示您提供以下信息。
+在此第一步中运行的脚本将返回邮箱文件夹或 SharePoint 和 OneDrive for Business 文件夹的列表，以及每个文件夹的相应文件夹 ID 或路径。 运行此脚本时，它将提示您提供以下信息。
   
-- **电子邮件地址或网站 URL**键入保管人的电子邮件地址，以返回 Exchange 邮箱文件夹和文件夹 Id 的列表。 或者键入 SharePoint 网站或 OneDrive for business 网站的 URL，以返回指定网站的路径列表。 下面是一些示例： 
+- **电子邮件地址或网站 URL** 键入保加大学的电子邮件地址以返回 Exchange 邮箱文件夹和文件夹 ID 的列表。 或者键入 SharePoint 网站或 OneDrive for Business 网站的 URL 以返回指定网站的路径列表。 下面是一些示例： 
     
-  - **Exchange** -stacig@contoso.onmicrosoft.com 
+  - **Exchange** - stacig@contoso.onmicrosoft.com 
     
   - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     
   - **OneDrive for Business** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **你的用户凭据**-脚本将使用你的凭据连接到 Exchange Online 和安全 & 合规性中心与远程 PowerShell。 如前面所述，您必须分配适当的权限才能成功运行此脚本。
+- **您的用户凭据** - 脚本通过远程 PowerShell 使用您的凭据连接到 Exchange Online &安全合规中心。 如前所述，您必须分配相应的权限才能成功运行此脚本。
     
-若要显示邮箱文件夹或网站 documentlink （路径）名称的列表，请执行以下操作：
+要显示邮箱文件夹或站点文档链接列表 (，) 名称：
   
-1. 使用文件名后缀. ps1; 将以下文本保存到 Windows PowerShell 脚本文件中。例如， `GetFolderSearchParameters.ps1` 。
+1. 使用 .ps1 Windows PowerShell 文件名后缀将以下文本保存到脚本文件的一个移动脚本文件中;例如， `GetFolderSearchParameters.ps1` _
     
-  ```powershell
-  #########################################################################################################
-  # This PowerShell script will prompt you for:                                #
-  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
-  # The script will then:                                            #
-  #    * If an email address is supplied: list the folders for the target mailbox.            #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.                                                                                    #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
-  #      appended to the folder ID or documentlink to use in a Content Search.                #
-  # Notes:                                                #
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
-  #      the current folder and all sub-folders are searched.                        #
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
-  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
-  #      each sub-folder that you want to search.                                #
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
-  #########################################################################################################
-  # Collect the target email address or SharePoint Url
-  $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
-  if (!$credentials)
-  {
+   ```powershell
+   #########################################################################################################
+   # This PowerShell script will prompt you for:                                #
+   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
+   #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+   # The script will then:                                            #
+   #    * If an email address is supplied: list the folders for the target mailbox.            #
+   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+   #    * for the site.                                                                                    #
+   #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+   #      appended to the folder ID or documentlink to use in a Content Search.                #
+   # Notes:                                                #
+   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+   #      the current folder and all sub-folders are searched.                        #
+   #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
+   #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
+   #      each sub-folder that you want to search.                                #
+   #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
+   #########################################################################################################
+   # Collect the target email address or SharePoint Url
+   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
+   # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
+   if (!$credentials)
+   {
       $credentials = Get-Credential
-  }
-  if ($addressOrSite.IndexOf("@") -ige 0)
-  {
+   }
+   if ($addressOrSite.IndexOf("@") -ige 0)
+   {
       # List the folder Ids for the target mailbox
       $emailAddress = $addressOrSite
       # Authenticate with Exchange Online
@@ -125,9 +125,9 @@ ms.locfileid: "44819102"
       }
       Write-Host "-----Exchange Folders-----"
       $folderQueries |ft
-  }
-  elseif ($addressOrSite.IndexOf("http") -ige 0)
-  {
+   }
+   elseif ($addressOrSite.IndexOf("http") -ige 0)
+   {
       $searchName = "SPFoldersSearch"
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
@@ -173,102 +173,102 @@ ms.locfileid: "44819102"
           Write-Host "No folders were found for $siteUrl"
       }
       Remove-ComplianceSearch $searchName -Confirm:$false -ErrorAction 'SilentlyContinue'
-  }
-  else
-  {
+   }
+   else
+   {
       Write-Error "Couldn't recognize $addressOrSite as an email address or a site URL"
-  }
-  ```
+   }
+   ```
 
-2. 在本地计算机上，打开 Windows PowerShell 并转到保存该脚本的文件夹。
+2. 在本地计算机上，打开Windows PowerShell请转到保存该脚本的文件夹。
     
 3. 运行脚本;例如：
     
-      ```powershell
-      .\GetFolderSearchParameters.ps1
-      ```
+   ```powershell
+   .\GetFolderSearchParameters.ps1
+   ```
 
-4. 输入脚本提示您输入的信息。
+4. 输入脚本提示你输入的信息。
     
-    该脚本将显示指定用户的邮箱文件夹或网站文件夹的列表。 让此窗口打开，以便您可以复制文件夹 ID 或 documentlink 名称，并将其粘贴到第2步中的搜索查询中。
+    该脚本显示指定用户的邮箱文件夹或站点文件夹的列表。 将此窗口保持打开状态，以便复制文件夹 ID 或 documentlink 名称并将其粘贴到步骤 2 中的搜索查询中。
     
     > [!TIP]
-    > 您可以将脚本的输出重新定向到文本文件，而不是在计算机屏幕上显示文件夹的列表。 此文件将保存到脚本所在的文件夹中。 例如，若要将脚本输出重定向到文本文件，请在第3步中运行以下命令： `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` 然后，可以从要在搜索查询中使用的文件中复制文件夹 ID 或 documentlink。
+    > 你可以将脚本的输出重新定向到某个文本文件，而无需在计算机屏幕上显示文件夹列表。 此文件将保存到脚本所在的文件夹中。 例如，若要将脚本输出重定向到文本文件，可在步骤 3 中运行以下命令：然后从该文件中复制文件夹 ID 或  `.\GetFolderSearchParameters.ps1 > StacigFolderIds.txt` documentlink 以用于搜索查询。
   
 ### <a name="script-output-for-mailbox-folders"></a>邮箱文件夹的脚本输出
 
-如果你获取的是邮箱文件夹 Id，脚本将使用远程 PowerShell 连接到 Exchange Online，运行**MailboxFolderStatisics** cmdlet，然后显示指定邮箱中的文件夹列表。 对于邮箱中的每个文件夹，该脚本都会在 " **FolderPath** " 列中显示文件夹的名称，并在 " **FolderQuery** " 列中显示文件夹 ID。 此外，该脚本还会将**folderId**的前缀（即邮箱属性的名称）添加到文件夹 ID。 由于**folderid**属性是一个可搜索的属性，因此您将 `folderid:<folderid>` 在步骤2中的搜索查询中使用搜索该文件夹。 该脚本最多显示100个邮箱文件夹。
+如果您在获取邮箱文件夹 ID，脚本将使用远程 PowerShell 连接到 Exchange Online，运行 **Get-MailboxFolderStatisics** cmdlet，然后显示指定邮箱中的文件夹的列表。 对于邮箱中的每个文件夹，脚本会在 **FolderPath 列** 中显示文件夹的名称，在 **FolderQuery** 列中显示文件夹 ID。 此外，该脚本还会为文件夹 ID (添加 **folderId** 参数的前缀，这是) 邮箱属性名称。 由于 **folderid 属性** 是可搜索的属性，因此您将  `folderid:<folderid>` 在步骤 2 的搜索查询中使用该属性来搜索该文件夹。 该脚本最多可以显示 100 个邮箱文件夹。
 
 > [!IMPORTANT]
-> 本文中的脚本包含编码逻辑，用于将**get-mailboxfolderstatistics**返回的64字符文件夹 Id 值转换为与为搜索编制索引的相同48字符格式。 如果您仅在 PowerShell 中运行**get-mailboxfolderstatistics** cmdlet 以获取文件夹 id （而不是在本文中运行脚本），则使用该文件夹 id 值的搜索查询将失败。 您必须运行脚本才能获取可在内容搜索中使用的格式正确的文件夹 Id。
+> 本文中的脚本包括编码逻辑，可将 **Get-MailboxFolderStatistics** 返回的 64 个字符的文件夹 ID 值转换为与编制索引以供搜索的 48 个字符格式。 如果刚刚在 PowerShell **中运行 Get-MailboxFolderStatistics** cmdlet 来获取文件夹 ID (，而不是运行本文) 中的脚本，则使用该文件夹 ID 值的搜索查询将会失败。 您必须运行脚本才能获取可以在内容搜索中使用的格式正确设置的文件夹 ID。
   
 下面的示例展示了邮箱文件夹的脚本返回的输出。
   
-![脚本返回的邮箱文件夹和文件夹 Id 列表的示例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![该脚本返回的邮箱文件夹和文件夹 ID 的列表的示例](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
-步骤2中的示例显示了用于在用户的 "可恢复的项目" 文件夹中搜索 "清除" 子文件夹的查询。
+步骤 2 中的示例演示用于在用户的"可恢复的项目"文件夹中搜索"清除"子文件夹的查询。
   
 ### <a name="script-output-for-site-folders"></a>网站文件夹的脚本输出
 
-如果从 SharePoint 或 OneDrive for Business 网站获取**documentlink**属性的路径，则该脚本将使用远程 PowerShell 连接到安全 & 合规性中心，创建一个新的内容搜索，用于搜索网站中的文件夹，然后显示位于指定网站中的文件夹的列表。 该脚本将显示每个文件夹的名称，并将**documentlink**的前缀添加到文件夹 URL 中。 由于**documentlink**属性是一个可搜索的属性，因此您将在 `documentlink:<path>` 步骤2中的搜索查询中使用属性： value 对来搜索该文件夹。 该脚本最多显示200个网站文件夹。 如果网站文件夹多于200，则显示最新的网站文件夹。
+如果从 SharePoint 或 OneDrive for Business 网站获取 **documentlink** 属性的路径，该脚本使用远程 PowerShell 连接到安全 & 合规中心，新建一个内容搜索，可在网站中搜索文件夹，然后显示指定站点中的文件夹列表。 该脚本显示每个文件夹的名称，并将 documentlink 的 **前缀添加到** 文件夹 URL 中。 由于 **documentlink 属性** 是一个可搜索的属性，因此将在步骤 2 的 `documentlink:<path>` 搜索查询中使用属性：value 对来搜索该文件夹。 该脚本最多可以显示 200 个站点文件夹。 如果有 200 个以上文件夹，将显示新文件夹。
   
 下面的示例展示了网站文件夹的脚本返回的输出。
   
-![脚本返回的网站文件夹的 documentlink 名称列表示例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![该脚本返回的站点文件夹的 documentlink 名称列表示例](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤2：使用文件夹 ID 或 documentlink 执行目标集合
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>步骤 2：使用文件夹 ID 或文档链接执行目标集合
 
-在运行脚本以收集特定用户的文件夹 Id 或 documentlinks 的列表后，下一步是转到安全 & 合规性中心，并创建新的内容搜索以搜索特定文件夹。 您将在 " `folderid:<folderid>` `documentlink:<path>` 内容搜索关键字" 框中配置的搜索查询中使用或 "属性：值" 对（如果使用**new-compliancesearch** Cmdlet，则为*ContentMatchQuery*参数的值）。 您可以将 `folderid` 或 `documentlink` 属性与其他搜索参数或搜索条件结合使用。 如果只 `folderid` `documentlink` 在查询中包括或属性，则搜索将返回位于指定文件夹中的所有项目。 
+运行脚本收集特定用户的文件夹 ID 或文档链接列表后，下一步可转到安全 & 合规中心，并创建一个新的内容搜索来搜索特定文件夹。 如果使用 New-ComplianceSearch cmdlet 来创建 SharePoint cmdlet，则需要在内容搜索关键字框中 (配置的搜索查询将这 `folderid:<folderid>` `documentlink:<path>` 两个或属性 **/值**对用作*ContentMatchQuery*参数) 。 可以将该属性  `folderid` 与其他  `documentlink` 搜索参数或搜索条件组合使用。 如果您仅在查询  `folderid` 中  `documentlink` 包含或属性，搜索将返回指定文件夹中的所有项目。 
   
 1. 转到 [https://protection.office.com](https://protection.office.com)。
     
-2. 使用您在步骤1中用于运行脚本的帐户和凭据登录。
+2. 使用您在步骤 1 中运行脚本所用的帐户和凭据登录。
     
-3. 在安全性 & 合规性中心的左侧窗格中，单击 "**搜索** \> **内容搜索**"，然后单击 "**新建** ![ 添加图标" ](../media/O365-MDM-CreatePolicy-AddIcon.gif) 。
+3. 在安全与合规中心的&窗格中，单击" **搜索** \> **内容搜索"，** 然后单击"新建 **添加** ![ "图标 ](../media/O365-MDM-CreatePolicy-AddIcon.gif) 。
     
 4. 在“新建搜索”**** 页上，键入内容搜索的名称。 此名称在组织中必须是唯一的。 
     
-5. 在 "**您希望我们在哪里进行查找**" 下，根据您搜索的是邮箱文件夹还是站点文件夹，执行下列操作之一：
+5. 在 **哪里，执行以下操作**之一，以确定是搜索邮箱文件夹还是站点文件夹：
     
-    - 单击 "**选择要搜索的特定邮箱**"，然后添加您在步骤1中运行脚本时指定的相同邮箱。 
+    - 单击 **"选择要搜索的特定** 邮箱"，然后添加您在步骤 1 中运行该脚本时指定的相同邮箱。 
     
       或
     
-    - 单击 "**选择要搜索的特定网站**" 搜索，然后添加在步骤1中运行脚本时指定的相同网站 URL。 
+    - 单击 **"选择要搜索的特定** 网站"，然后添加您在步骤 1 中运行该脚本时指定的同一网站 URL。 
     
 6. 单击“**下一步**”。
     
-7. 在 "**您希望我们在什么情况下查找**" 页上的 "关键字" 框中，粘贴 `folderid:<folderid>` `documentlink:<path>` 步骤1中的脚本返回的 or 值。 
+7. 在您希望我们 **查找页面的操作的关键字框中** ，粘贴  `folderid:<folderid>` 在步骤  `documentlink:<path>` 1 中由该脚本返回的值。 
     
-    例如，下面的屏幕截图中的查询将搜索用户的 "可恢复项目" 文件夹中的 "清除" 子文件夹中的任何项目（ `folderid` "清除" 子文件夹的属性值显示在步骤1中的屏幕截图中）：
+    例如，以下屏幕截图中的查询将在用户的"可恢复的项目"文件夹中的"清除"子文件夹中搜索任何项目 (" `folderid` 清除"子文件夹的属性值将显示在步骤 1 中的屏幕截图) ：
     
     ![将 folderid 或 documentlink 粘贴到搜索查询的关键字框中](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
-8. 单击 "**搜索**" 以启动目标集合搜索。 
+8. 单击 **"** 搜索"以启动目标集合搜索。 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>目标集合的搜索查询示例
 
-下面是 `folderid` `documentlink` 在搜索查询中使用和属性执行目标集合的一些示例。 请注意，占位符用于 `folderid:<folderid>` `documentlink:<path>` 节省空间。 
+下面是在搜索查询中使用  `folderid` 和  `documentlink` 属性来执行目标集合的一些示例。 请注意，占位符用于和  `folderid:<folderid>`  `documentlink:<path>` 节省空间。 
   
-- 本示例将搜索三个不同的邮箱文件夹。 可以使用类似的查询语法搜索用户的 "可恢复的项目" 文件夹中的隐藏文件夹。
+- 本示例搜索三个不同的邮箱文件夹。 可以使用类似的查询语法来搜索用户的"可恢复的项目"文件夹中的隐藏文件夹。
     
   ```powershell
   folderid:<folderid> OR folderid:<folderid> OR folderid:<folderid>
   ```
 
-- 本示例将在邮箱文件夹中搜索包含精确短语的项目。
+- 本示例在邮箱文件夹中搜索包含精确短语的项目。
     
   ```powershell
   folderid:<folderid> AND "Contoso financial results"
   ```
 
-- 本示例在标题中搜索包含字母 "NDA" 的文档的网站文件夹（和任何子文件夹）。
+- 本示例在标题中包含字母 ("NDA) 及其子文件夹及其所有子文件夹。
     
   ```powershell
   documentlink:<path> AND filename:nda
   ```
 
-- 本示例搜索某个日期范围内已更改的文档的网站文件夹（和任何子文件夹）。
+- 此示例在日期范围内对 (网站集) 及其所有子文件夹搜索。
     
   ```powershell
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
@@ -276,14 +276,14 @@ ms.locfileid: "44819102"
 
 ## <a name="more-information"></a>更多信息
 
-在使用本文中的脚本执行目标集合时，请记住以下事项。
+使用本文中的脚本执行目标集合时，请记住以下内容。
   
-- 脚本不会从结果中删除任何文件夹。 因此，结果中列出的某些文件夹可能是不可搜索的（或返回零个项目），因为它们包含系统生成的内容。
+- 脚本不会从结果中删除任何文件夹。 因此，结果中列出的某些文件夹可能不可搜索，也 (可能返回零) 因为它们包含系统生成的内容。
     
-- 此脚本仅返回用户的主邮箱的文件夹信息。 它不会返回有关用户存档邮箱中的文件夹的信息。
+- This script only returns folder information for the user's primary mailbox. 不会返回有关用户存档邮箱中文件夹的信息。
     
-- 在搜索邮箱文件夹时，将仅搜索指定的文件夹（由其 `folderid` 属性标识）; 不会搜索子文件夹。 若要搜索子文件夹，您需要使用要搜索的子文件夹的文件夹 ID。 
+- 在搜索邮箱文件夹时，将仅 (文件夹类型  `folderid`) 搜索;不能搜索子文件夹。 若要搜索子文件夹，您需要为要搜索的子文件夹使用文件夹 ID。 
     
-- 搜索站点文件夹时，将搜索文件夹（由其 `documentlink` 属性标识）和所有子文件夹。 
+- 搜索站点文件夹时，该文件夹 (属性和  `documentlink`) 系统将搜索所有子文件夹。 
     
-- 当您在搜索查询中导出仅指定属性的搜索结果时 `folderid` ，可以选择第一个导出选项 "。所有项目（不包括具有不可识别的格式的项目）已加密，或未对其他原因编制索引。 将始终导出文件夹中的所有项目（无论其索引状态如何），因为文件夹 ID 始终编制索引。
+- 导出仅在其中指定该属性的搜索的结果时，可 `folderid` 选择第一个导出选项"所有项目（不包括具有不可识别格式的项）、已加密或未编入索引的项。" 将始终导出该文件夹中的所有项目，而不考虑其索引状态，因为它始终为文件夹 ID 编制索引。
