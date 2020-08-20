@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 21e2142eb62c25a7301e2ea5f9160ef6d6ef7947
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656811"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804216"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -31,39 +31,24 @@ ms.locfileid: "46656811"
 
 若要配置反垃圾邮件策略，可以使用安全与合规中心，也可以使用 PowerShell（适用于有 Exchange Online 的 Microsoft 365 组织的 Exchange Online PowerShell，或适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell）。
 
-## <a name="anti-spam-policies-in-the-security--compliance-center-vs-powershell"></a>安全与合规中心与 PowerShell 中的反垃圾邮件策略
-
-EOP 中反垃圾邮件策略的基本要素如下：
+反垃圾邮件策略的基本要素如下：
 
 - **垃圾邮件筛选策略**：指定根据垃圾邮件筛选裁定执行的操作和通知选项。
-
 - **垃圾邮件筛选规则**：指定垃圾邮件筛选策略的优先级和收件人筛选器（即对谁应用策略）。
 
 在安全与合规中心内管理反垃圾邮件策略时，这两个要素之间的区别并不明显：
 
-- 在安全与合规中心内创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
+- 在创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
+- 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。 其他所有设置会修改关联的垃圾邮件筛选策略。
+- 如果你删除反垃圾邮件策略，垃圾邮件筛选规则和关联的垃圾邮件筛选策略也会随之删除。
 
-- 如果你在安全与合规中心内修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。 其他所有设置会修改关联的垃圾邮件筛选策略。
-
-- 如果你从安全与合规中心删除反垃圾邮件策略，垃圾邮件筛选规则和关联的垃圾邮件筛选策略也会随之删除。
-
-在 Exchange Online PowerShell 或独立 EOP PowerShell 中，垃圾邮件筛选策略与垃圾邮件筛选规则之间的区别很明显。 可以使用 **\*-HostedContentFilterPolicy** cmdlet 管理垃圾邮件筛选策略，并使用 **\*-HostedContentFilterRule** cmdlet 管理垃圾邮件筛选规则。
-
-- 在 PowerShell 中，先创建垃圾邮件筛选策略，再创建确定向哪个策略应用规则的垃圾邮件筛选规则。
-
-- 在 PowerShell 中，分别修改垃圾邮件筛选策略和垃圾邮件筛选规则中的设置。
-
-- 如果你通过 PowerShell 删除垃圾邮件筛选策略，相应的垃圾邮件筛选规则不会自动随之删除，反之亦然。
-
-### <a name="default-anti-spam-policy"></a>默认反垃圾邮件策略
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本主题后面的[使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置反垃圾邮件策略](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)部分。
 
 每个组织都有名为“默认”的内置反垃圾邮件策略，它具有以下属性：
 
-- 名为“默认”的垃圾邮件筛选策略会应用于组织中的所有收件人，即使没有与此策略关联的垃圾邮件筛选规则（亦称为“收件人筛选器”），也不例外。
-
-- 名为“默认”的策略有无法修改的自定义优先级值 **“最低”**（表示此策略始终最后应用）。 你创建的任何自定义策略的优先级始终高于名为“默认”的策略。
-
-- 名为“默认”的策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。
+- 该策略会应用于组织中的所有收件人，即使没有与此策略关联的垃圾邮件筛选规则（亦称为“收件人筛选器”），也不例外。
+- 该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。 你创建的任何自定义策略始终具有更高的优先级。
+- 该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。
 
 为了提高垃圾邮件筛选的有效性，可以创建自定义反垃圾邮件策略，它包含应用于特定用户或用户组的更严格设置。
 
@@ -320,7 +305,9 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>设置自定义反垃圾邮件策略的优先级
 
-默认情况下，反垃圾邮件策略根据创建顺序来获得优先级（新策略的优先级低于旧策略）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以有相同的优先级。
+默认情况下，反垃圾邮件策略根据创建顺序来获得优先级（新策略的优先级低于旧策略）。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+
+有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
 自定义反垃圾邮件策略按处理顺序显示（第一个策略的 **“优先级”** 值为“0”）。 名为 **“默认垃圾邮件筛选策略”** 的默认反垃圾邮件策略的优先级值为 **“最低”**，你无法更改此值。
 
@@ -383,6 +370,14 @@ EOP 中反垃圾邮件策略的基本要素如下：
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置反垃圾邮件策略
 
+如前文所述，反垃圾邮件策略由垃圾邮件筛选策略和垃圾邮件筛选规则组成。
+
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，垃圾邮件筛选策略与垃圾邮件筛选规则之间的区别很明显。 可以使用 **\*-HostedContentFilterPolicy** cmdlet 管理垃圾邮件筛选策略，并使用 **\*-HostedContentFilterRule** cmdlet 管理垃圾邮件筛选规则。
+
+- 在 PowerShell 中，先创建垃圾邮件筛选策略，再创建确定向哪个策略应用规则的垃圾邮件筛选规则。
+- 在 PowerShell 中，分别修改垃圾邮件筛选策略和垃圾邮件筛选规则中的设置。
+- 如果你通过 PowerShell 删除垃圾邮件筛选策略，相应的垃圾邮件筛选规则不会自动随之删除，反之亦然。
+
 以下反垃圾邮件策略设置仅在 PowerShell 中可配置：
 
 - 默认情况下，_MarkAsSpamBulkMail_ 参数的值为 `On`。 本主题前面的[使用安全与合规中心创建反垃圾邮件策略](#use-the-security--compliance-center-to-create-anti-spam-policies)部分中介绍了此设置的效果。
@@ -398,7 +393,6 @@ EOP 中反垃圾邮件策略的基本要素如下：
 在 PowerShell 中创建反垃圾邮件策略的过程分为两步：
 
 1. 创建垃圾邮件筛选策略。
-
 2. 创建垃圾邮件筛选规则，它指定了向哪个垃圾邮件筛选策略应用规则。
 
  **注意**：
@@ -408,7 +402,6 @@ EOP 中反垃圾邮件策略的基本要素如下：
 - 可以在 PowerShell 中对新垃圾邮件筛选策略配置以下设置（在安全与合规中心内，只有在创建策略后，才能配置这些设置）：
 
   - 新建禁用的策略（在 **New-HostedContentFilterRule** cmdlet 上 _Enabled_ 为 `$false`）。
-
   - 在创建过程中，在 **New-HostedContentFilterRule** cmdlet 上设置策略优先级（_优先级_ _\<Number\>_）。
 
 - 在 PowerShell 中新建的垃圾邮件筛选策略在安全与合规中心内不可见，除非你将策略分配到垃圾邮件筛选规则。
