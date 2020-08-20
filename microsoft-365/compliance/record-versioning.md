@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有关记录的信息，以便在 Microsoft 365 中实现记录管理解决方案。
-ms.openlocfilehash: 943bf3949ab57eb4603695495d7a8ca0c4b90db7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695231"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778448"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-能够将文档标记为[记录](records.md)并限制可对该记录执行的操作是任何记录管理解决方案的重要目标。 但是，用户创建后续版本时也可能需要开展协作。
+能够将文档标记为[记录](records-management.md#records)并限制可对该记录执行的操作是任何记录管理解决方案的重要目标。 但是，用户创建后续版本时也可能需要开展协作。
 
 例如，你可以将销售合同标记为记录，但需要使用新条款更新合同，并将最新版本标记为新记录，同时保留先前的记录版本。 对于这些类型的方案，SharePoint 和 OneDrive 现在支持*记录版本控制*。 OneNote 笔记本文件夹不支持记录版本控制。
 
@@ -103,6 +103,4 @@ ms.locfileid: "46695231"
 
 ## <a name="next-steps"></a>后续步骤
 
-若要将内容标记为记录，请参阅[使用保留标签声明记录](declare-records.md)。
-
-若要了解有关记录的处置，请参阅[处置内容](disposition.md)。
+有关记录管理所支持的其他方案，请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。

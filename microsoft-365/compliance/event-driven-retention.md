@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常，它是记录管理解决方案的一部分，你可以配置保留标签以根据所识别的事件开始保留期。
-ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 7286e65be2313f5716bfc59399c1755cadb9f6d6
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560529"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778522"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>从事件发生时开始计算保留期
 
@@ -43,7 +43,7 @@ ms.locfileid: "46560529"
     
 事件驱动保留通常用于记录管理流程。也就是说：
   
-- 基于事件的标签通常还可将内容分类为记录。 有关详细信息，请参阅[了解记录](records.md)。
+- 作为记录管理解决方案的一部分，基于事件的标签通常还会将内容分类为记录。 有关详细信息，请参阅[了解记录管理](records-management.md)。
 
 - 如果文档已归类为记录，但其触发事件尚未发生，那么文档会无限期保留（因为无法永久删除记录），直到触发文档保留期的事件发生。
     

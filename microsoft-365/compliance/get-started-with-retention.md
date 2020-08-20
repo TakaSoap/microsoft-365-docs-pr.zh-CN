@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588170"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778288"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -52,7 +52,7 @@ ms.locfileid: "46588170"
 
 负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**合规性管理员**管理角色组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
-只有在创建和应用保留策略时才需要这些权限。 配置保留策略的人员不需要访问该内容。
+只有在创建、配置和应用保留策略和保留标签时才需要这些权限。 配置这些策略和标签的人员不需要访问该内容。
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>保留策略和保留标签的常见应用场景
 
@@ -67,11 +67,12 @@ ms.locfileid: "46588170"
 |向文档和电子邮件自动应用一组保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
 |从事件发生时开始计算保留期，比如：  <br />- 员工离开组织 <br />- 合同到期 <br />- 产品生存期结束| [从事件发生时开始计算保留期](event-driven-retention.md)|
 |管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)|
-|将一个记录管理解决方案同时用于文档和电子邮件 |[Microsoft 365 中的记录管理](records-management.md) |
-|遵守 SEC 规则 17a-4|[使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
+|符合 SEC 规则 17a-4|[使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
-|对在保留期结束时删除的内容有处置证明|[处置记录](disposition.md#disposition-of-records) |
 | 监视如何和在哪里应用保留标签 | [监视保留标签](retention.md#monitoring-retention-labels) |
+|将一个记录管理解决方案同时用于文档和电子邮件 |[了解记录管理](records-management.md) |
+
+如果将保留标签用于记录管理，则对于将内容标记为记录的保留标签，还有其他一些特有的方案。 请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
 
 ## <a name="end-user-documentation-for-retention-labels"></a>保留标签的最终用户文档
 

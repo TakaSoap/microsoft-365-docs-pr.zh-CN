@@ -18,26 +18,26 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: 08b028bbd28c06684245321e09f8ef3252098956
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: c2ff344d22286fcd865aa08344389dad6334d48d
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372485"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778320"
 ---
-# <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的记录管理
+# <a name="learn-about-records-management"></a>了解记录管理
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
 所有类型的组织都需要一个记录管理解决方案跨公司数据管理法规、法律和业务关键记录。 Microsoft 365 中的记录管理有助于组织管理其法律义务，提供证明遵守法规的能力，并通过定期处置不再需要保留、不再具有价值或不再需要用于业务目的的项目来提高效率。
 
-Microsoft 365 中的记录管理提供了以下功能：
+请使用以下功能支持 Microsoft 365 中的记录管理解决方案：
 
-- **将内容标记为记录**。 创建并配置将内容标记为[记录](records.md)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型[自动应用](apply-retention-labels-automatically.md)。
+- **将内容标记为记录**。 创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
 
 - **使用文件计划迁移和管理保留要求**。 通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
 
-- **使用保留标签配置保留和删除设置**。 根据各种因素（包括上次修改日期或上次创建日期）定义保留期和操作。
+- **使用保留标签配置保留和删除设置**。 根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的[保留标签](retention.md#retention-labels)。
 
 - 使用[基于事件的保留](event-driven-retention.md)，**在事件发生时启动不同的保留期**。
 
@@ -47,12 +47,59 @@ Microsoft 365 中的记录管理提供了以下功能：
 
 - 为组织中的记录管理器功能**设置特定权限**，以便[具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
-通过 Microsoft 365 中的记录管理解决方案，你可以将组织的保留计划和要求合并到文件计划中，以管理保留、记录声明和处置，从而支持完整的内容生命周期。
+借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 
-## <a name="additional-resources"></a>其他资源
+除了阅读联机文档，你还可以收听有关记录管理的[网络研讨会录制内容](https://aka.ms/MIPC/Video-RecordsManagementWebinar)并下载随附的[常见问题幻灯片组](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)，这种方法可能也会非常有用。
 
-有关记录管理，请参阅[网络研讨会记录](https://aka.ms/MIPC/Video-RecordsManagementWebinar)和[包含 FAQ 的演示文稿](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)。
+## <a name="records"></a>记录
+
+当内容被标记为记录时：
+
+- 会针对[允许或阻止对记录项进行的操作](#compare-restrictions-for-what-actions-are-allowed-or-blocked)施加限制。
+
+- 记录了有关该项的其他活动。
+
+- 保留期结束时将其删除时，拥有处置证明。
+
+使用[保留标签](retention.md#retention-labels)将内容标记为记录。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。
+
+通过使用保留标签来将内容标记为记录，可在 Microsoft 365 环境中实现单一一致的记录管理策略。
+
+### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>比较对允许或阻止的操作的限制
+
+使用以下表格识别应用标准保留标签和将内容标记为记录的保留标签后，对内容施加的限制。 
+
+标准保留标签具有保留设置和操作，但不会将内容标记为记录。
+
+>[!NOTE] 
+> 为确保完整性，表格包括已锁定和已解锁的记录列，适用于 SharePoint 和 OneDrive，但不适用于 Exchange。 锁定和解锁记录的功能使用 Exchange 项目不支持的[记录版本控制](record-versioning.md)功能。 因此，对于标记为记录的所有 Exchange 项目，该行为会映射到**记录 - 已锁定**列，而**记录 - 已解锁列**则不相关。
+
+
+|操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁|
+|:-----|:-----|:-----|:-----|:-----|
+|编辑内容|允许 | **阻止** | 允许|
+|编辑属性（包括重命名）|Allowed |允许 | Allowed|
+|删除|允许 <sup>1</sup> |**阻止** | **阻止**|
+|复制|Allowed |允许 | Allowed|
+|在容器 <sup>2</sup> 中移动|Allowed |允许 | Allowed|
+|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | 允许|
+|打开/读取|Allowed |允许 | Allowed|
+|更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员|
+|删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员|
+
+页脚：
+
+<sup>1</sup>OneDrive 和 Exchange 支持此功能，方法是在安全位置保留一份副本，但 SharePoint 阻止此功能。
+
+向用户发送一条消息，询问用户是否尝试删除 SharePoint 中带标记的文档：
+
+![指明项未从 SharePoint 中删除的消息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+
+
+<sup>2</sup>容器包括 SharePoint 文档库和 Exchange 邮箱。
 
 ## <a name="next-steps"></a>后续步骤
 
-如果已准备好开始使用 Microsoft 365 中的记录管理，请参阅[了解记录](records.md)。
+请参阅[记录管理入门](get-started-with-records-management.md)。
+
+若要将内容标记为记录，请参阅[使用保留标签声明记录](declare-records.md)。

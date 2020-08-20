@@ -17,25 +17,27 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: c8024cf08be2259ffa8b6747bebf4943e11e4d60
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695234"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778512"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-使用[保留标签](retention.md#retention-labels)将内容标记为记录。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。
+若要将项目声明为记录，请使用将内容标记为记录的[保留标签](retention.md#retention-labels)。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>配置保留标签以声明记录
 
-创建[保留标签](retention.md#retention-labels)时，请选择将内容标记为记录的选项。
+创建或配置保留标签时，请选择将内容标记为记录的选项。
 
 >[!NOTE] 
 > 从 Microsoft 365 合规中心的“**信息管理**”创建或配置保留标签时，将内容标记为记录的选项不可用。 此时，反而是必须使用“**记录管理**”。
+
+若要创建将内容标记为记录的新保留标签，请执行以下操作：
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com)中，转到“**记录管理**”\>“**文件计划**”。 在“文件计划”**** 页面上，选择“创建标签”****。
 
@@ -62,6 +64,4 @@ ms.locfileid: "46695234"
 
 ## <a name="next-steps"></a>后续步骤
 
-如果需要更新作为记录的文档，请参阅[使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录](record-versioning.md)。
-
-若要了解记录的处置，请参阅[处置内容](disposition.md)。
+有关记录管理支持的方案的列表，请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。
