@@ -610,7 +610,7 @@
         - name: 使用 Windows PowerShell 为委派访问权限合作伙伴将域添加到客户端租赁
           href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
         - name: 通过远程 Windows PowerShell 为委派访问权限合作伙伴连接到 Exchange Online
-          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+          href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
         - name: 通过 Windows PowerShell 为委派访问权限合作伙伴检索客户报告数据
           href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
     - name: 管理 Microsoft Teams
