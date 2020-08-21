@@ -6,7 +6,7 @@ author: chrisda
 ms.author: chrisda
 manager: chrisda
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,40 +16,40 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件支持。
-ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 管理员可以了解如何在 Exchange Online 和 Exchange Online Protection 中配置来自 IPv6 源的匿名入站电子邮件的支持。
+ms.openlocfilehash: 7384c1044cc02ec20079dc03068c2ca99e68d2c2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818705"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826773"
 ---
-# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a><span data-ttu-id="1dbdc-103">在 Microsoft 365 中添加对通过 IPv6 的匿名入站电子邮件的支持</span><span class="sxs-lookup"><span data-stu-id="1dbdc-103">Add support for anonymous inbound email over IPv6 in Microsoft 365</span></span>
+# <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a><span data-ttu-id="5a300-103">在 Microsoft 365 中添加对通过 IPv6 发送的匿名入站电子邮件的支持</span><span class="sxs-lookup"><span data-stu-id="5a300-103">Add support for anonymous inbound email over IPv6 in Microsoft 365</span></span>
 
-<span data-ttu-id="1dbdc-104">具有 Exchange Online 邮箱和独立 Exchange Online Protection （EOP）组织的 Microsoft 365 组织（不含 Exchange Online 邮箱的远程电子邮件支持通过 IPv6 的匿名入站电子邮件）。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-104">Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6.</span></span> <span data-ttu-id="1dbdc-105">源 IPv6 电子邮件服务器必须满足以下两项要求：</span><span class="sxs-lookup"><span data-stu-id="1dbdc-105">The source IPv6 email server must meet both of the following requirements:</span></span>
+<span data-ttu-id="5a300-104">具有 Exchange Online 邮箱的 Microsoft 365 组织和独立的 Exchange Online Protection (EOP) 组织支持通过 IPv6 发送的匿名入站电子邮件。</span><span class="sxs-lookup"><span data-stu-id="5a300-104">Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6.</span></span> <span data-ttu-id="5a300-105">源 IPv6 电子邮件服务器必须满足以下两个要求：</span><span class="sxs-lookup"><span data-stu-id="5a300-105">The source IPv6 email server must meet both of the following requirements:</span></span>
 
-- <span data-ttu-id="1dbdc-106">源 IPv6 地址必须具有有效的反向 DNS 查找（PTR）记录，允许目标从 IPv6 地址中查找域名。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-106">The source IPv6 address must have a valid reverse DNS lookup (PTR) record that allows the destination to find the domain name from the IPv6 address.</span></span>
+- <span data-ttu-id="5a300-106">源 IPv6 地址必须具有有效的反向 DNS 查找 (PTR) 记录，它允许目标从 IPv6 地址中查找域名。</span><span class="sxs-lookup"><span data-stu-id="5a300-106">The source IPv6 address must have a valid reverse DNS lookup (PTR) record that allows the destination to find the domain name from the IPv6 address.</span></span>
 
-- <span data-ttu-id="1dbdc-107">发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-107">The sender must pass either SPF verification (defined in [RFC 7208](https://tools.ietf.org/html/rfc7208)) or [DKIM verification](https://dkim.org/) (defined in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).</span></span>
+- <span data-ttu-id="5a300-107">发件人必须通过 SPF 验证（在 [RFC 7208](https://tools.ietf.org/html/rfc7208) 中定义）或 [DKIM 验证](https://dkim.org/)（在 [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) 中定义）。</span><span class="sxs-lookup"><span data-stu-id="5a300-107">The sender must pass either SPF verification (defined in [RFC 7208](https://tools.ietf.org/html/rfc7208)) or [DKIM verification](https://dkim.org/) (defined in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).</span></span>
 
-<span data-ttu-id="1dbdc-108">在您的组织可以通过 IPv6 接收匿名入站电子邮件之前，管理员需要联系 Microsoft 支持部门并要求提供此电子邮件。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-108">Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it.</span></span> <span data-ttu-id="1dbdc-109">有关如何打开支持请求的说明，请参阅[联系支持人员以获取商业产品-管理员帮助](../../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-109">For instructions about how to open a support request, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="5a300-108">在您的组织可以通过 IPv6 接收匿名电子邮件之前，管理员需要与 Microsoft 支持部门联系并询问您。</span><span class="sxs-lookup"><span data-stu-id="5a300-108">Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it.</span></span> <span data-ttu-id="5a300-109">有关如何开放支持请求的说明，请参阅"联系[商业版产品支持人员 - 管理员帮助"。](../../admin/contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="5a300-109">For instructions about how to open a support request, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).</span></span>
 
-<span data-ttu-id="1dbdc-110">在组织中启用匿名入站 IPv6 邮件支持后，邮件将通过服务提供的常规邮件筛选功能。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-110">After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.</span></span>
+<span data-ttu-id="5a300-110">在组织中启用匿名入站 IPv6 邮件支持后，该邮件将通过服务提供的正常邮件筛选。</span><span class="sxs-lookup"><span data-stu-id="5a300-110">After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.</span></span>
 
-## <a name="troubleshooting"></a><span data-ttu-id="1dbdc-111">故障排除</span><span class="sxs-lookup"><span data-stu-id="1dbdc-111">Troubleshooting</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="5a300-111">故障排除</span><span class="sxs-lookup"><span data-stu-id="5a300-111">Troubleshooting</span></span>
 
-- <span data-ttu-id="1dbdc-112">如果源电子邮件服务器没有 IPv6 反向 DNS 查找记录，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="1dbdc-112">If the source email server doesn't have an IPv6 reverse DNS lookup record, the messages will be rejected with the following error:</span></span>
+- <span data-ttu-id="5a300-112">如果源电子邮件服务器没有反向 DNS 查找记录，则会拒绝邮件，并显示以下错误：</span><span class="sxs-lookup"><span data-stu-id="5a300-112">If the source email server doesn't have an IPv6 reverse DNS lookup record, the messages will be rejected with the following error:</span></span>
 
-  > <span data-ttu-id="1dbdc-113">450 4.7.25 服务不可用，发送 IPv6 地址 [2a01：111： f200：2004：： 240] 必须有反向 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-113">450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.</span></span>
+  > <span data-ttu-id="5a300-113">450 4.7.25 服务不可用，发送 IPv6 地址 [2a01：111：f200：2004：：240] 必须具有反向 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="5a300-113">450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.</span></span>
 
-- <span data-ttu-id="1dbdc-114">如果发件人未通过 SPF 或 DKIM 验证，则邮件将被拒绝，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="1dbdc-114">If the sender doesn't pass SPF or DKIM validation, the messages will be rejected with the following error:</span></span>
+- <span data-ttu-id="5a300-114">如果发件人未通过 SPF 或 DKIM 验证，则会拒绝邮件，并出现以下错误：</span><span class="sxs-lookup"><span data-stu-id="5a300-114">If the sender doesn't pass SPF or DKIM validation, the messages will be rejected with the following error:</span></span>
 
-  > <span data-ttu-id="1dbdc-115">450 4.7.26 服务不可用，通过 IPv6 发送的邮件 [2a01：111： f200：2004：： 240] 必须通过 SPF 或 DKIM 验证。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-115">450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.</span></span>
+  > <span data-ttu-id="5a300-115">450 4.7.26 服务不可用，通过 IPv6 发送的邮件 [2a01：111：f200：2004：：240] 必须通过 SPF 或 DKIM 验证。</span><span class="sxs-lookup"><span data-stu-id="5a300-115">450 4.7.26 Service unavailable, message sent over IPv6 [2a01:111:f200:2004::240] must pass either SPF or DKIM validation.</span></span>
 
-- <span data-ttu-id="1dbdc-116">如果您在选择加入之前尝试接收匿名 IPv6 邮件，则邮件将被拒绝，并显示以下错误：</span><span class="sxs-lookup"><span data-stu-id="1dbdc-116">If you try to receive anonymous IPv6 messages before you've opted in, the message will be rejected with the following error:</span></span>
+- <span data-ttu-id="5a300-116">如果在选择加入之前尝试接收匿名 IPv6 邮件，则会拒绝邮件，并显示以下错误：</span><span class="sxs-lookup"><span data-stu-id="5a300-116">If you try to receive anonymous IPv6 messages before you've opted in, the message will be rejected with the following error:</span></span>
 
-  > <span data-ttu-id="1dbdc-117">550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="1dbdc-117">550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.</span></span>
+  > <span data-ttu-id="5a300-117">550 5.2.1 服务不可用，[contoso.com] 不接受通过 IPv6 发送的电子邮件。</span><span class="sxs-lookup"><span data-stu-id="5a300-117">550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="1dbdc-118">相关主题</span><span class="sxs-lookup"><span data-stu-id="1dbdc-118">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="5a300-118">相关主题</span><span class="sxs-lookup"><span data-stu-id="5a300-118">Related topics</span></span>
 
-[<span data-ttu-id="1dbdc-119">支持 DKIM 签名邮件验证</span><span class="sxs-lookup"><span data-stu-id="1dbdc-119">Support for validation of DKIM signed messages</span></span>](support-for-validation-of-dkim-signed-messages.md)
+[<span data-ttu-id="5a300-119">支持 DKIM 签名邮件验证</span><span class="sxs-lookup"><span data-stu-id="5a300-119">Support for validation of DKIM signed messages</span></span>](support-for-validation-of-dkim-signed-messages.md)
