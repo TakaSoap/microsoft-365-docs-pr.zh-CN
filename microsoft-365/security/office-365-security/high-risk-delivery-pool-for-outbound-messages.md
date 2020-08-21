@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,47 +15,47 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
-description: 了解如何使用传递池来保护 Microsoft 365 数据中心中的电子邮件服务器的声誉。
-ms.openlocfilehash: 213149eda3dd121b65b64e3bddbb4bd73d66f57c
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+description: 了解如何在 Microsoft 365 数据中心中使用传递池来保护电子邮件服务器的信誉。
+ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419156"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827733"
 ---
 # <a name="outbound-delivery-pools"></a>出站传递池
 
-Microsoft 365 数据中心中的电子邮件服务器可能暂时 guilty 发送垃圾邮件。 例如，在内部部署电子邮件组织中通过 Microsoft 365 发送出站邮件的恶意软件或恶意垃圾邮件攻击，或者是 Microsoft 365 帐户受到危害。 攻击者还会尝试通过 Microsoft 365 转发中继邮件来避免检测。
+Microsoft 365 数据中心的电子邮件服务器可能暂时会强烈影响发送垃圾邮件。 例如，本地电子邮件组织（通过 Microsoft 365 或 Microsoft 365 帐户入站邮件）中进行的恶意软件或恶意垃圾邮件攻击。 攻击者还通过 Microsoft 365 转发功能中继邮件来避免检测。
 
-这些方案可能会导致出现在第三方阻止列表中的受影响的 Microsoft 365 数据中心服务器的 IP 地址。 使用这些阻止列表的目标电子邮件组织将拒绝来自这些邮件源的电子邮件。
+这些方案可能会导致受影响的 Microsoft 365 数据中心服务器的 IP 地址出现在第三方阻止列表中。 使用这些阻止列表的目标电子邮件组织将拒绝来自这些邮件来源的邮件。
 
-## <a name="high-risk-delivery-pool"></a>高风险传递池
-为防止出现这种情况，通过_高风险传递池_发送来自确定为垃圾邮件的 Microsoft 365 datacenter server 中的所有出站邮件，或超出[服务](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)的发送限制或[出站垃圾邮件策略](configure-the-outbound-spam-policy.md)的所有出站邮件。
+## <a name="high-risk-delivery-pool"></a>高风险传送池
+为了防止发生这种限制，来自 Microsoft 365 数据中心服务器（已确定为垃圾邮件或超过服务或出站垃圾邮件策略的发送[限制）](configure-the-outbound-spam-policy.md)的所有出站邮件均将通过_高风险传送池发送_。 [the service](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
-高风险传递池是仅用于发送 "低质量" 邮件（例如，垃圾邮件和[退信](backscatter-messages-and-eop.md)）的出站电子邮件的单独 IP 地址池。 使用高风险传递池有助于阻止出站电子邮件的常规 IP 地址池发送垃圾邮件。 出站电子邮件的常规 IP 地址池维护发送 "高质量" 邮件的信誉，从而降低了这些 IP 地址在 IP 阻止列表中出现的可能性。
+高风险传送池是用于出站电子邮件的单独 IP 地址池，它仅用于发送"低质量"邮件 (例如垃圾邮件[和退信) 。](backscatter-messages-and-eop.md) 使用高风险传送池有助于防止出站电子邮件的正常 IP 地址池发送垃圾邮件。 出站电子邮件的正常 IP 地址池维护"高质量"邮件发送信誉，这样可以降低这些 IP 地址出现在 IP 阻止列表中的可能性。
 
-高风险传递池中的 IP 地址可能会保留在 IP 阻止列表中，但这是设计的。 无法保证传递给预期的收件人，因为很多电子邮件组织不接受来自高风险传递池的邮件。
+高风险传送池中的 IP 地址将保留在 IP 阻止列表中的可能性，但这是按设计使不可行的。 无法保证传递到预期收件人，因为许多电子邮件组织不会接受来自高风险传送池的邮件。
 
-有关详细信息，请参阅[控制出站垃圾邮件](outbound-spam-controls.md)。
+有关详细信息，请参阅"[控制出站垃圾邮件"。](outbound-spam-controls.md)
 
 > [!NOTE]
-> 源电子邮件域没有记录且在公用 DNS 中定义的任何 MX 记录都不会通过高风险传递池路由（无论其垃圾邮件或发送限制处置）的邮件。
+> 不管源电子邮件域没有 A 记录也没有公共 DNS 中定义的 MX 记录的邮件，无论其垃圾邮件或发送限制处置如何，都始终会通过高风险传送池路由。
 
 ### <a name="bounce-messages"></a>退回邮件
 
-出站高风险传递池管理所有未送达报告（也称为 Ndr、弹跳邮件、传递状态通知或 Dsn）的传递。
+出站高风险传送池管理所有未送达报告 (也称为 NDR、退回邮件、传递状态通知或 DSN) 。
 
-Ndr 中的电涌可能的原因包括：
+NDR 中可能出现的问题的原因包括：
 
-- 对使用服务的客户之一产生影响的欺骗活动。
-- 目录搜集攻击。
+- 欺骗活动会影响使用该服务之一的客户。
+- 帐户收集攻击。
 - 垃圾邮件攻击。
-- 一个欺诈性电子邮件服务器。
+- 未创建电子邮件服务器。
 
-所有这些问题都会导致服务处理的 Ndr 数量突然增加。 许多情况下，这些 Ndr 似乎是垃圾邮件发送给其他电子邮件服务器和服务（也称为_[退信](backscatter-messages-and-eop.md)_）。
+所有这些问题都可能会导致服务处理 NDR 的数量显然增加。 在很多情况下，这些 NDR 对其他电子邮件服务器和服务组 (（也称为_[退信式垃圾邮件) 。](backscatter-messages-and-eop.md)_
 
 ## <a name="relay-pool"></a>中继池
 
-从 Microsoft 365 转发或中继的邮件是使用特殊中继池发送的，因为最终目标不应将 Microsoft 365 视为实际发件人。 此外，我们还必须隔离此流量，因为有适用于 autoforwarding 的合法和 illegitmate 方案，或者是 Microsoft 365 之外的中继电子邮件。 与高风险传递池类似，一个单独的 IP 地址池用于中继邮件。 此地址池不会发布，因为它可能会经常更改。 
+通过使用特殊中继池发送转发或中继来自 Microsoft 365 的邮件，因为最终目标不应将 Microsoft 365 视为实际的发件人。 我们根据某些要求，我们也必须隔离此通信，因为 Microsoft 365 的自动转发或中继电子邮件存在合法和无效的方案。 与高风险传送池类似，单独的 IP 地址池用于中继邮件。 该地址库未发布，因为它可能会经常更改。
 
-Microsoft 365 需要验证原始发件人是否合法，以便我们可以放心地传递转发的邮件。 若要执行此操作，电子邮件身份验证（SPF、DKIM 和 DMARC）需要在收到我们的邮件时传递。 在我们可以对发件人进行身份验证的情况下，我们将使用发件人改写来帮助收件人知道转发的邮件来自受信任的源。 您可以阅读有关如何工作的详细信息以及可帮助确保发送域在[发件人重写方案（SRS）](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)中传递身份验证的操作的详细信息。
+Microsoft 365 需要验证原始发件人是否为合法邮件，以便我们可以自信地传递转发的邮件。 为此，电子邮件身份验证必须 (符合 SPF、DKIM 和 DMARC) 通过邮件发送给我们时需要通过。 如果我们可以对发件人进行身份验证，我们使用发件人重写来帮助收件人知道转发的邮件来自受信任的来源。 可以详细了解这一如何工作，以及可以如何帮助确保发送域通过 [S) RS 域的发件人 (写入 ](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)。

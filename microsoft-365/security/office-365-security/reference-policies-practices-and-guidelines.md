@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,31 +15,31 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: 9684453503329e955c21051885c5d93e8c927c48
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: Microsoft 已开发了多种策略、过程并采用了几个行业的最佳实践，以保护我们的用户避免滥用、不需要或恶意的电子邮件。
+ms.openlocfilehash: 13bc62f8be25a21f5ed2d1c2c2f4208a56d28bf0
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208206"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826513"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
 
-Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全了解并遵循本文中的指导操作，以帮助避免潜在的传递问题。
+Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 试图向用户发送电子邮件的发件人应确保完全理解并按照本文中的指南进行操作，以帮助避免潜在的传送问题。
 
-如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明，请参阅[使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+如果您不遵从这些策略和指南，我们的支持小组可能无法协助您。 如果您遵循本文中介绍的指南、实践和策略，但基于您的发送 IP 地址仍然遇到传送问题，请按步骤提交除名请求。 有关说明，请参阅 [使用分解门户将自己从阻止的发件人名列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="general-microsoft-policies"></a>Microsoft 一般性策略
 
-发送给 Microsoft 365 用户的电子邮件必须符合管理电子邮件传输和 Microsoft 365 使用的所有 Microsoft 策略。
+发送给 Microsoft 365 用户的电子邮件必须遵从管理电子邮件传输和使用 Microsoft 365 的所有 Microsoft 策略。
 
-- 适用于 Microsoft 365 的服务条款;特别是，禁止使用服务进行垃圾邮件或分发恶意软件。
+- 适用于 Microsoft 365 的服务条款;尤其是，禁止使用该服务访问垃圾邮件或分发恶意软件。
 
 - [Microsoft 服务协议](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>政府法规
 
-发送给 Microsoft 365 用户的电子邮件必须遵守适用司法辖区中管理电子邮件通信的所有适用的法律和法规。
+发送给 Microsoft 365 用户的电子邮件必须遵守在管制后管理电子邮件通信的所有适用的法律和法规。
 
 - [CAN-SPAM Act:A Compliance Guide for Business](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -47,13 +47,13 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="technical-guidelines"></a>技术指南
 
-发送到 Microsoft 365 的电子邮件应符合以下文档中列出的适用建议（某些链接仅适用于英文）。
+发送到 Microsoft 365 的电子邮件应遵循以下文档中列出的适用性建议 (某些链接仅提供英文版) 。
 
 - [RFC 2505:Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920:SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-此外，连接到 Microsoft 365 的电子邮件服务器必须符合以下要求：
+此外，连接到 Microsoft 365 的电子邮件服务器必须遵从以下要求：
 
 - 发件人应符合互联网电子邮件传输的所有技术标准，该标准由互联网协会的互联网工程任务组 (IETF) 发布，包括 RFC 5321、RFC 5322 和其他。
 
@@ -75,7 +75,7 @@ Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Micr
 
 ## <a name="microsoft-365-limits"></a>Microsoft 365 限制
 
-发件人必须遵循[Exchange Online Protection 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)中列出的 Microsoft 365 限制。
+发件人必须遵循 Exchange Online Protection 限制中列出的 Microsoft [365 限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)。
 
 ## <a name="email-delivery-resources-and-organizations"></a>电子邮件传送资源和组织
 
@@ -83,13 +83,13 @@ Microsoft 积极与行业机构和服务提供商合作，以改善互联网和�
 
 - [信息传送、恶意软件和移动反滥用工作组](https://www.m3aawg.org/)
 
-- [在线信任联盟](https://www.otalliance.org/resources)
+- [在线信任联合](https://www.otalliance.org/resources)
 
-- [电子邮件发件人 & 提供商联盟](https://www.espcoalition.org/)
+- [电子邮件&提供程序强制](https://www.espcoalition.org/)
 
 ## <a name="abuse-and-spam-reporting"></a>滥用和垃圾邮件报告
 
-若要报告非法、滥用、不受欢迎或恶意的电子邮件，请参阅[将邮件和文件报告给 Microsoft](report-junk-email-messages-to-microsoft.md)。 发送这些类型的通信会违反 Microsoft 策略，并将对已确认的报告执行相应的操作。
+若要报告非法、滥用、不必要或恶意的电子邮件，请参阅["向 Microsoft 报告邮件和文件"。](report-junk-email-messages-to-microsoft.md) 发送这些类型的通信将导致 Microsoft 策略冲突，我们将对已确认的报告采取适当措施。
 
 ## <a name="law-enforcement"></a>法律执行
 

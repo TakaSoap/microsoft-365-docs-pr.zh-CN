@@ -7,35 +7,35 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: 您可以使用邮件流规则 (传输规则) 来识别通过组织传递的邮件并对其执行操作。
-ms.openlocfilehash: 6a70d5a23e3d65788143ea067a4702268e32f6ea
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+description: 可以使用邮件流规则 (路由) ，以识别通过你的组织传递的邮件并对这些邮件执行操作。
+ms.openlocfilehash: ed17ac62009f5e766772095985441fad2367edf4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653684"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827697"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>独立 EOP 中的邮件流规则（传输规则）
 
-在独立 Exchange Online Protection (EOP) 不含 Exchange Online 邮箱的组织中，可以使用邮件流 (规则（也称为传输规则) ）来识别通过组织传递的邮件并对其执行操作。
+在独立的 Exchange Online Protection (EOP) 组织中，无需 Exchange Online 邮箱，可以使用邮件流规则 (也称为传输规则) 识别通过组织的邮件并对邮件执行操作。
 
-本主题介绍了邮件流规则的组件及其工作方式。
+本主题说明邮件流规则的组件，及其工作方式。
 
-有关创建、复制和管理邮件流规则的步骤，请参阅[在 Exchange Online 中管理邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 若要了解有关测试选项的详细信息，请参阅[在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)[测试邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)和策略提示。
+有关创建、复制和管理邮件流规则的步骤，请参阅"管理[Exchange Online 中的邮件流规则"。](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) 可以选择强制实施每个规则、只是测试规则，或测试每个规则并通知发件人。 要了解测试选项的详细信息，请参阅 Exchange Online[中的测试邮件流](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules)[规则和策略提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)。
 
-有关与邮件流规则匹配的邮件的摘要和详细报告，请参阅[使用邮件保护报告查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
+有关与邮件流规则匹配的邮件的摘要和详细信息报告，请参阅 ["使用邮件保护报告"查看关于恶意软件、垃圾邮件和规则检测的数据](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)。
 
 若要通过使用邮件流规则实现特定的邮件策略，请参阅下列主题：
 
-- [使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [使用邮件流规则检查 Exchange Online 中的邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [设置 Office 365 企业版中的加密](../../compliance/set-up-encryption.md)
 
-- [Exchange Online 中的组织范围内的邮件免责声明、签名、页脚或邮件头](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [Exchange Online 中的组织范围内邮件免责声明、签名、脚注或标头](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [使用邮件流规则设置邮件中的垃圾邮件可信度 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -43,7 +43,7 @@ ms.locfileid: "46653684"
 
 - [通过 Exchange Online Protection 中的文件附件阻止功能降低恶意软件的威胁](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [定义用于在 Office 365 中加密或解密电子邮件的规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [在 Office 365 中为加密或解密电子邮件定义规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
 
 以下视频演示了如何在独立 EOP 中设置邮件流规则。
 
@@ -53,17 +53,17 @@ ms.locfileid: "46653684"
 
 邮件流规则由条件、例外、操作和属性组成：
 
-- **条件**：确定要向其应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。
+- **条件**：标识要应用操作的邮件。 一些条件检查邮件头字段（例如“收件人”、“发件人”或“抄送”字段）。 其他条件检查邮件属性（例如邮件主题、正文、附件、邮件大小或邮件分类）。 大多数条件要求你指定比较运算符（例如等于、不等于或包含）以及要匹配的值。 如果没有条件或例外，规则将应用到所有邮件。
 
-有关独立 EOP 中的邮件流规则条件的详细信息，请参阅[mail flow rule 条件和例外 (谓词) 在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+有关独立 EOP 中的邮件流规则条件的详细信息，请参阅 [Mail flow 规则条件 (和例外，以) Exchange Online) 规则条件和例外](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
-- **例外**：（可选）标识操作不应应用于的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。
+- **例外**：选择性地识别操作不应应用到的邮件。 条件中可用的相同邮件标识符同样在例外中可用。 例外会覆盖条件并阻止规则操作应用于邮件，即使邮件匹配所有配置的条件也是如此。
 
-- **操作**：指定要对与规则中的条件匹配的邮件执行的操作，并且不匹配任何例外。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。
+- **操作**：指定对匹配规则中的条件而不匹配任何例外的邮件执行哪些操作。 例外会覆盖条件并阻止将操作应用于电子邮件，即使该邮件符合所有配置的条件也是如此。
 
-有关独立 EOP 中可用的邮件流规则操作的详细信息，请参阅[Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
+有关独立 EOP 中可用的邮件流规则操作的详细信息，请参阅 [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。
 
-- **属性**：指定不是条件、例外或操作的其他规则设置。 例如，应何时应用规则、是否强制实施或测试规则，以及规则可用的时间段。
+- **属性**：指定条件、例外和操作不满足的其他规则设置。 例如，应何时应用规则、是否强制实施或测试规则，以及规则可用的时间段。
 
   有关详细信息，请参阅本主题中的[邮件流规则属性](#mail-flow-rule-properties)部分。
 
@@ -73,7 +73,7 @@ Use a transport rule so messages can bypass Clutter
 
 ****
 
-|组件|逻辑|评论|
+|组件|逻辑|备注|
 |---|---|---|
 |注释|AND|邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果要为带有附件的邮件和包含指定文本的邮件添加相同的免责声明，请为每个条件创建一个规则。在 EAC 中，你可以轻松地复制规则。|
 |邮件必须匹配该规则的所有条件。如果需要匹配一个条件或另一个条件，请对每个条件使用不同的规则。例如，如果您要为带有附件的邮件和内容匹配某个模式的邮件添加相同的免责声明，请为每个条件创建一个规则。您可以轻松地复制规则。|OR|一些条件允许你指定多个值。邮件必须匹配任一（并非全部）指定值。例如，如果电子邮件的主题为 Stock price information，并且 **主题包含这些词中的任一个**条件被配置为匹配单词 Contoso 或 stock，则符合该条件，因为主题中至少包含指定值中的一个。  |
@@ -89,10 +89,10 @@ Use a transport rule so messages can bypass Clutter
 
 |EAC 中的属性名称|PowerShell 中的参数名称|说明|
 |---|---|---|
-|**优先级**|_Priority_|指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。   <br/><br/> 通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。 在 PowerShell 中，将优先级编号设置 (0 是优先级最高的) 。 <br/><br/> 例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。  |
+|**优先级**|_Priority_|指示规则应用于邮件的顺序。默认优先级基于规则创建的先后顺序（较早规则的优先级高于较新规则的优先级，先处理具有较高优先级的规则，然后再处理具有较低优先级的规则）。   <br/><br/> 通过在规则列表中上移或下移规则可更改 EAC 中规则的优先级。 在 PowerShell 中，可设置优先级编号 (0 是最高优先级) 。 <br/><br/> 例如，如果有一个拒绝包含信用卡号码的邮件的规则，还有一个需要批准的规则，你希望拒绝规则先发生，并停止应用其他规则。  |
 |**模式**|_Mode_|可以指定是否让规则立即处理邮件，或是否在不影响邮件传递（启用或不启用数据丢失防护或 DLP 策略提示）的情况下测试规则。 <br/><br/> 策略提示在 Outlook 或 Web 上的 Outlook 中显示简短说明，该说明可提供有关邮件创建者可能违反策略的信息。有关详细信息，请参阅 **Policy Tips** 。  <br/><br/> 有关模式的详细信息，请参阅 **Test a mail flow rule** 。|
 |**在以下日期激活此规则** <br/><br/> **在以下日期停用此规则**|_ActivationDate_ <br/> _ExpiryDate_|指定启用该规则的日期范围。|
-|选中或未选中 **On** 复选框|新规则： **new-transportrule** cmdlet 上的_Enabled_参数。 <br/><br/> 现有规则：使用 **Enable-TransportRule** 或 **Disable-TransportRule** cmdlet。 <br/><br/> 该值显示在规则的 **State** 属性中。|可以创建一个禁用规则，并在准备测试它时将其启用。或者，在不删除该规则的情况下将其禁用，以保留设置。|
+|选中或未选中 **On** 复选框|新规则 **：New-TransportRule** cmdlet 中 Enabled 参数。 _Enabled_ <br/><br/> 现有规则：使用 **Enable-TransportRule** 或 **Disable-TransportRule** cmdlet。 <br/><br/> 该值显示在规则的 **State** 属性中。|可以创建一个禁用规则，并在准备测试它时将其启用。或者，在不删除该规则的情况下将其禁用，以保留设置。|
 |**如果规则处理未完成，则延迟邮件**|_RuleErrorAction_|如果无法完成规则处理，可以指定邮件的处理方式。默认情况下，系统将忽略该规则，但可以选择重新提交邮件进行处理。|
 |**匹配邮件中的发件人地址**|_SenderAddressLocation_|如果规则使用检查发件人的电子邮件地址的条件或例外，则可以在邮件标头、 邮件信封或同时在两者中查找该值。|
 |**停止处理更多规则**|_SenderAddressLocation_|这是一种规则操作，但它看起来像 EAC 中的属性。你可以选择在规则处理完某个邮件后，停止向邮件应用其他规则。|
@@ -101,7 +101,7 @@ Use a transport rule so messages can bypass Clutter
 
 ## <a name="how-mail-flow-rules-are-applied-to-messages"></a>如何将邮件流规则应用于邮件
 
-All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. 规则是按照 EAC 中 "**邮件流**规则" 页上列出的顺序进行处理 \> **Rules** ，还是根据 PowerShell 中相应的_优先级_参数值进行处理。
+All messages that flow through your organization are evaluated against the enabled mail flow rules in your organization. 规则按 EAC 中"邮件流规则"**页上**列出的顺序 \> **Rules**进行处理，或基于 PowerShell_中对应的_优先级参数值进行处理。
 
 每个规则还提供在规则匹配时停止处理其他规则的选项。此设置对于匹配多个邮件流规则中条件的邮件而言非常重要（想要哪个规则应用于邮件？全部？还是一个？）。
 
@@ -113,25 +113,25 @@ All messages that flow through your organization are evaluated against the enabl
 
 |通过组织的邮件有几种类型。下表显示了哪些消息类型可以通过传输规则进行处理。|消息类型|
 |---|---|
-|**常规邮件**：包含单个 rtf 格式的邮件 (rtf) 、HTML 或纯文本邮件正文、多部分或备用的邮件正文集。|是|
-|**Office 365 邮件加密**：在 office 365 中由 Office 365 邮件加密加密的邮件。 有关详细信息，请参阅 [Office 365 中的加密](https://docs.microsoft.com/microsoft-365/compliance/encryption)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。 有关详细信息，请参阅[在 Office 365 中定义用于加密或解密电子邮件的规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。|
+|**常规邮件**：包含一个 RTF 格式 (、RTF、HTML、纯) 文本邮件正文、多部分或备用的邮件正文集的邮件。|是|
+|**Office 365 邮件加密**：通过 Office 365 中的 Office 365 邮件加密进行加密的邮件。 有关详细信息，请参阅 [Office 365 中的加密](https://docs.microsoft.com/microsoft-365/compliance/encryption)。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改加密邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。 有关详细信息，请参阅" [为加密或解密 Office 365 中的电子邮件"定义规则](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。|
 |**S/MIME 加密邮件**|规则仅可根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 无法处理具有需要检查邮件内容的条件的规则或可以修改邮件内容的操作。|
-|**受 rms 保护的邮件**：具有 Active Directory 权限管理服务 (AD RMS) 或 Azure 权限管理 (RMS) 策略的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。|
-|**明文签名的邮件**：已签名但未加密的邮件。|是|
-|**UM 邮件**：由统一消息服务创建或处理的邮件，如语音邮件、传真、未接来电通知以及使用 Microsoft Outlook voice Access 创建或转发的邮件。|是|
-|**匿名邮件**：由匿名发件人发送的邮件。|是|
-|**阅读报告**：为响应发件人的阅读回执请求而生成的报告。 读取报告具有或的邮件类 `IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead` 。|是|
+|**受 RMS 保护的邮件**：应用了 AD RMS Active Directory Rights Management Services (Azure) Azure 权限管理或 RMS (管理) 的邮件。|规则可始终根据检查这些标头的条件来访问信封头并处理邮件。 <br/><br/> 对于检查或修改 RMS 保护的邮件内容的规则，需要验证是否启用了传输解密（强制或可选；默认为可选）。|
+|**已明文签名的邮件**：已签名但未加密的邮件。|是|
+|**UM 消息**：由统一消息服务创建或处理的邮件，如语音邮件、传真、未接来电通知以及使用 Microsoft Outlook Voice Access 创建或转发Outlook Voice Access。|是|
+|**匿名邮件**：匿名发件人发送的邮件。|是|
+|**读取**报告：为响应发件人的阅读回执请求而生成的报告。 读取报告具有的邮件类别或 `IPM.Note*.MdnRead` `IPM.Note*.MdnNotRead` 。|是|
 |
 
 ## <a name="what-else-should-i-know"></a>我还应该知道些什么？
 
-- 在 Exchange Online Protection 中，规则的**Version**或**RuleVersion**属性值并不重要。
+- 规则**的****版本属性值或 RuleVersion**属性值在 Exchange Online Protection 中并不重要。
 
-- 在创建或修改邮件流规则后，最长可能需要30分钟才能将新的或更新的规则应用于邮件。
+- 创建或修改邮件流规则后，可能需要 30 分钟才能将新规则或更新的规则应用于邮件。
 
 ## <a name="for-more-information"></a>详细信息
 
-[使用邮件流规则在 Exchange Online 中检查邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[使用邮件流规则检查 Exchange Online 中的邮件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Office 365 中的电子邮件加密](../../compliance/email-encryption.md)
 

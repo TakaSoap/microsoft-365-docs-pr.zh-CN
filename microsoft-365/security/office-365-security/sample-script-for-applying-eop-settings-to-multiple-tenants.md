@@ -1,5 +1,5 @@
 ---
-title: EOP 设置的示例脚本-多租户
+title: EOP 设置示例脚本 - 多个租户
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您将了解如何使用 PowerShell 将配置设置应用到您在 Microsoft Exchange Online Protection （EOP）中的租户。
-ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: 在本文中，您将了解到如何使用 PowerShell 将配置设置应用于 Microsoft Exchange Online EOP 规划 Protection 中的 () 租户。
+ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209135"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827453"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>将 EOP 设置应用到多个租户的示例脚本
 
@@ -33,7 +33,7 @@ ms.locfileid: "44209135"
 
 3. 对于 .csv 文件中的每一行，在 UserName 列中添加租户的管理员名称，在 Cmdlet 列中添加对该租户运行的 cmdlet。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。
 
-4. 将[runcmdletonmultipletenants.ps1](#runcmdletonmultipletenantsps1)脚本复制到记事本中，然后将该文件保存到易于查找的位置（例如，c：\scripts）。
+4. 将 [ 移动RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将文件保存到易于查找 (例如，c：\scripts) 。
 
 5. 使用以下语法运行此脚本：
 
@@ -44,12 +44,12 @@ ms.locfileid: "44209135"
    下面是一个示例：
 
    ```powershell
-   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. 每个租户都将登录到，脚本将运行。
+6. 每个租户都将登录，脚本将运行。
 
-## <a name="runcmdletonmultipletenantsps1"></a>Runcmdletonmultipletenants.ps1
+## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

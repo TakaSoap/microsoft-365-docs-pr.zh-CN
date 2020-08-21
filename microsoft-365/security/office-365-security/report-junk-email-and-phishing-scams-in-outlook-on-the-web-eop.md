@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Exchange Online 中 Outlook 网页版中的内置垃圾邮件、非垃圾邮件和 (Outlook Web App) 钓鱼电子邮件报告选项，以及如何为用户禁用这些报告选项。
-ms.openlocfilehash: a364afed9bb7e61d5f34ffc0206ede1c5155db65
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: 947f9bb9c1c686b549d83b27c262e86eda0d5008
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818329"
+ms.locfileid: "46826537"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 的 Outlook 网页版中报告垃圾和钓鱼电子邮件
 
@@ -39,9 +39,9 @@ ms.locfileid: "46818329"
 
 ## <a name="report-spam-and-phishing-messages-in-outlook-on-the-web"></a>在 Outlook 网页版中报告垃圾邮件和钓鱼邮件
 
-1. 对于"收件箱"或"垃圾邮件"之外的任何其他电子邮件文件夹中的邮件，请使用下列两种方法中的任何一种来报告垃圾邮件和网络钓鱼邮件：
+1. 对于"收件箱"或"垃圾邮件"之外的其他任何电子邮件文件夹中的邮件，请使用下列两种方法中的任何一种来报告垃圾邮件和网络钓鱼邮件：
 
-   - 选择邮件 **，然后在**工具栏上单击"垃圾邮件"，然后选择"**垃圾邮件"****或"网络钓鱼"。**
+   - 选择邮件，在工具栏**上**单击"垃圾邮件"，然后选择"**垃圾邮件****"或"网络钓鱼"。**
 
      ![从功能区报告垃圾或钓鱼电子邮件](../../media/owa-report-junk.png)
 
@@ -81,7 +81,7 @@ ms.locfileid: "46818329"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 必须先分配有权限，然后才能执行这些过程。 具体来说，你**需要**Exchange Online 中的**收件人策略或邮件收件人**角色，这些角色默认情况下被分配**到"组织管理****"和"收件人**管理"角色组。 有关 Exchange Online 中角色组的详细信息，请参阅 Exchange [Online 中的修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。
+- 必须先分配有权限，然后才能执行这些过程。 具体来说，你**需要**Exchange Online**中的收件人策略或邮件收件人**角色，这些角色默认情况下被分配**到"组织管理****"和"收件人**管理"角色组。 有关 Exchange Online 中角色组的详细信息，请参阅 Exchange [Online 中的修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。
 
 - 每个组织都有一个名为 OwaMailboxPolicy-Default 的默认策略，但您可以创建自定义策略。 自定义策略适用于默认策略前的已确定范围的用户。 有关 Web 上的 Outlook 邮箱策略的详细信息，请参阅 [Exchange Online 中的 Outlook 网页版邮箱策略](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
 
@@ -127,11 +127,11 @@ ms.locfileid: "46818329"
 
 - 在 Outlook 网页版中打开受影响用户的邮箱，在收件箱中选择一封邮件，单击**Junk** \> **"垃圾邮件"，** 然后验证是否显示向 Microsoft 报告该邮件的提示。<sup>\*</sup>
 
-- 在 Web 上的 Outlook中打开受影响用户的邮箱，选择"垃圾邮件"文件夹中的邮件，单击 **"** \> **垃圾邮件"，** 然后确认"将该邮件报告给 Microsoft 的提示"已显示或未显示。<sup>\*</sup>
+- 在 Web 上的 Outlook中打开受影响用户的邮箱，选择"垃圾邮件"文件夹中的邮件，单击 **"** \> **垃圾邮件"，** 然后确认是否显示向 Microsoft 报告该邮件的提示。<sup>\*</sup>
 
-<sup>\*</sup> 用户可以隐藏该提示以在仍报告邮件时报告邮件。 若要在 Outlook 网页版中检查此设置，请执行下列操作：
+<sup>\*</sup> 用户可以隐藏该提示以在仍报告邮件时报告邮件。 要在 Outlook 网页版中检查此设置：请执行下列操作：
 
-1. 单击 **"Web** ![ 上的设置"图标查看 ](../../media/owa-settings-icon.png) \> **所有 Outlook 设置** \> **垃圾邮件**。
+1. 单击 **"Web** ![ 上的设置"图标， ](../../media/owa-settings-icon.png) \> **查看所有 Outlook 设置** \> **垃圾邮件**。
 2. 在" **报告** "部分中，验证值 **：发送报告前先询问我**。
 
    ![Web 上的 Outlook 垃圾邮件报告设置](../../media/owa-junk-email-reporting-options.png)
