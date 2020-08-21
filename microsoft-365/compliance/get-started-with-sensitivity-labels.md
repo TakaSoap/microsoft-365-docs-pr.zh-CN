@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 50392693b92ac660445d5966168b143c70853291
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 4712cc4f2dd042c3564523a565b71db69a18f5bc
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506327"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845762"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -80,7 +80,7 @@ ms.locfileid: "46506327"
 
 |我想...|文档|
 |----------------|---------------|
-|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
+|管理 Office 应用的敏感度标签，以便在创建内容时对其进行标记 — 包括在所有平台上支持手动标记 |[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)|
 |使用户能够使用 Office 应用、文件资源管理器和 PowerShell 标记和保护 Windows 计算机中的文件|[适用于 Windows 的 Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度标签加密文档和电子邮件，并限制谁可以访问该内容以及可以如何使用它 |[通过敏感度标签应用加密，从而限制对内容的访问](encryption-sensitivity-labels.md)|
 |在 Web 上为 Office 启用敏感度标签，支持协同创作、eDiscovery、数据丢失防护和搜索，即便是加密文档也可如此 | [启用 SharePoint 和 OneDrive 中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -94,7 +94,7 @@ ms.locfileid: "46506327"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度标签的最终用户文档
 
-最有效的最终用户文档将用作你为所选标签名称和配置提供的定制指南和说明。 但你可通过以下资源查看基本说明：   
+最有效的最终用户文档将用作你为所选标签名称和配置提供的定制指南和说明。 但你可通过以下资源查看基本说明：
 
 - [将敏感度标签应用到 Office 中的文件和电子邮件](https://support.microsoft.com/zh-CN/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Office 中敏感度标签的已知问题](https://support.microsoft.com/zh-CN/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
@@ -104,4 +104,4 @@ ms.locfileid: "46506327"
 
 - [Azure 信息保护统一标记用户指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
 
-
+如果你的敏感度标签对 PDF 文档应用了加密，则可以使用 Windows 或 Mac 上的 Microsoft Edge 来打开这些文档。 有关详细信息和备选阅读器，请参阅[受保护的 PDF 支持哪些 PDF 阅读器？](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 849eae1c2c3153d8f17e561aa82312c95672ec04
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199622"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845740"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -32,7 +32,7 @@ ms.locfileid: "45199622"
 
 - 与 Microsoft 365 组连接的团队网站的隐私（公共或专用）
 - 外部用户访问
-- 非托管设备的访问 
+- 非托管设备的访问
 
 如果你将此敏感度标签应用于受支持的容器，此标签会自动向连接的网站或组应用分类和保护设置。
 
@@ -55,19 +55,12 @@ ms.locfileid: "45199622"
 
 1. 由于此功能使用 Azure AD 功能，因此请按照以下 Azure AD 文档中的说明来启用敏感度标签支持：[在 Azure Active Directory 中向 Microsoft 365 组分配敏感度标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
-2. 现在，你需要将敏感度标签同步到 Azure AD。 首先，[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录：
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+2. 现在，你需要将敏感度标签同步到 Azure AD。 首先，[连接到安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+   例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录。
 
 3. 然后运行以下命令，以确保可将敏感度标签与 Microsoft 365 组配合使用：
-    
+
     ```powershell
     Execute-AzureAdLabelSync
     ```
@@ -81,12 +74,12 @@ ms.locfileid: "45199622"
 在这个新的“**网站和组设置**”页面中，配置以下设置：
 
 - **连接 Office 365 组的团队网站的隐私**：如果希望你组织中的每个人都可访问应用了此标签的团队网站或组，请保留“**公用 - 组织中的任何人都可访问站点**”的默认设置。
-    
-    如果要将访问权限限制为仅允许组织中的已批准成员，请选择“**专用**”。
-    
-    如果希望使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请选择“**无 - 让用户选择谁可以访问该网站**”。
-    
-    “**公用**”或“**专用**”的设置可在你将此标签应用到容器时设置和锁定隐私设置。 你选择的设置将替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
+
+  如果要将访问权限限制为仅允许组织中的已批准成员，请选择“**专用**”。
+
+  如果希望使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请选择“**无 - 让用户选择谁可以访问该网站**”。
+
+  “**公用**”或“**专用**”的设置可在你将此标签应用到容器时设置和锁定隐私设置。 你选择的设置将替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
@@ -96,7 +89,7 @@ ms.locfileid: "45199622"
 
 > [!IMPORTANT]
 > 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。
-> 
+>
 > 正在逐步向租户推出：当用户创建团队、组和网站时，只有带有网站和组设置的标签才可供选择。 如果当前可以向容器应用未启用网站和组设置的标签，只有标签名称会应用于容器。
 
 如果尚未发布敏感度标签，现可通过[将其添加到敏感度标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。 分配有含有此标签的敏感度标签策略的用户，将能够为网站和组选择。
@@ -114,8 +107,9 @@ ms.locfileid: "45199622"
 1. 创建并配置敏感度标签后，将此标签添加到仅应用于少数测试用户的标签策略。
 
 2. 等待更改复制：
-    - 新标签：等待一小时。
-    - 现有标签：等待 24 小时。
+
+   - 新标签：等待一小时。
+   - 现有标签：等待 24 小时。
 
 3. 在此等待期之后，使用测试用户帐户之一，创建具有在步骤 1 中创建的标签的团队、Microsoft 365 组或 SharePoint 网站。
 
@@ -123,14 +117,13 @@ ms.locfileid: "45199622"
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>修改为网站和组配置的已发布标签
 
-最佳做法是，在为团队、组或网站应用标签后，不要更改敏感度标签的网站和组设置。 如果这样做，请记住等待 24 小时，使更改复制到应用了标签的所有容器。 
+最佳做法是，在为团队、组或网站应用标签后，不要更改敏感度标签的网站和组设置。 如果这样做，请记住等待 24 小时，使更改复制到应用了标签的所有容器。
 
 此外，如果所做的更改包括**外部用户访问**设置：
 
 - 新设置仅适用于新用户，并不适用于现有用户。 例如，如果以前选择了此设置，并且来宾用户访问了网站，则在标签配置中清除此设置后，这些来宾用户仍可访问该网站。
 
 - 组属性 hiddenMembership 和 roleEnabled 的隐私设置不会更新。
-
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>删除为网站和组配置的已发布标签
 
@@ -161,9 +154,9 @@ ms.locfileid: "45199622"
 
 - [在 Azure 门户中为新组分配标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
--  [为 Azure 门户中的现有组分配标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
+- [为 Azure 门户中的现有组分配标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-an-existing-group-in-azure-portal)
 
--  [从 Azure 门户中的现有组中删除标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)。
+- [从 Azure 门户中的现有组中删除标签](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)。
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>为新团队应用敏感度标签
 
@@ -199,35 +192,35 @@ ms.locfileid: "45199622"
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>使用 PowerShell 将敏感度标签应用于多个网站
 
-你可以将 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet 与当前 SharePoint Online 命令行管理程序中的 *SensitivityLabel* 参数一起使用，以将敏感度标签应用于多个网站。 网站可以是任何 SharePoint 网站集或 OneDrive 网站。
+你可以将 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet 与当前 [SharePoint Online 命令行管理程序](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)中的 *SensitivityLabel* 参数一起使用，以将敏感度标签应用于多个网站。 网站可以是任何 SharePoint 网站集或 OneDrive 网站。
 
 请确保你拥有 SharePoint Online 命令行管理程序的 16.0.19418.12000 或更高版本。
 
 1. 使用“**以管理员身份运行**”选项打开 PowerShell 会话。
 
-2. 如果你不知道标签 GUID：[连接到 Office 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，获取敏感度标签及其 GUID 的列表。
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+2. 如果你不知道标签 GUID：[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，获取敏感度标签及其 GUID 的列表。
 
-3. 现在[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 并将标签 GUID 存储为变量。 例如： 
-    
-    ```powershell
-    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
-    ```
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
+
+3. 现在，[连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) 并将标签 GUID 存储为变量。 例如：
+
+   ```powershell
+   $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
+   ```
 
 4. 创建一个新变量，用于标识在其 URL 中有共同标识字符串的多个网站。 例如：
-    
-    ```powershell
-    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
-    ```
+
+   ```powershell
+   $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
+   ```
 
 5. 运行以下命令以将标签应用于这些网站。 使用我们的示例：
-    
-    ```powershell
-    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
-    ```
+
+   ```powershell
+   $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
+   ```
 
 若要为不同的网站应用不同的标签，请为每个网站重复以下命令：`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
@@ -252,30 +245,34 @@ ms.locfileid: "45199622"
 以下应用和服务支持为网站和组设置配置的敏感度标签：
 
 - 管理中心：
-    - SharePoint 管理中心
-    - Azure Active Directory 高级版
-    - Microsoft 365 合规中心、Microsoft 365 安全中心、Office 365 安全与合规中心
+
+  - SharePoint 管理中心
+  - Azure Active Directory 高级版
+  - Microsoft 365 合规中心、Microsoft 365 安全中心、安全与合规中心
 
 - 用户应用和服务：
-    - SharePoint
-    - Teams
-    - Outlook 网页版以及 Windows、MacOS、iOS 和 Android 版 Outlook
-    - Forms
-    - Stream
+
+  - SharePoint
+  - Teams
+  - Outlook 网页版以及 Windows、MacOS、iOS 和 Android 版 Outlook
+  - Forms
+  - Stream
 
 以下应用和服务目前不支持为网站和组设置配置的敏感度标签：
 
 - 管理中心：
-    - Microsoft 365 管理中心
-    - Teams 管理中心
-    - Exchange 管理中心
+
+  - Microsoft 365 管理中心
+  - Teams 管理中心
+  - Exchange 管理中心
 
 - 用户应用和服务：
-    - Dynamics 365
-    - Yammer
-    - Planner
-    - Project
-    - PowerBI
+
+  - Dynamics 365
+  - Yammer
+  - Planner
+  - Project
+  - PowerBI
 
 ## <a name="classic-azure-ad-group-classification"></a>经典 Azure AD 组分类
 
@@ -286,7 +283,7 @@ ms.locfileid: "45199622"
 这些分类通过使用 Azure AD PowerShell 或 PnP Core 库以及定义 `ClassificationList` 设置值来进行配置。 如果租户定义了分类值，则在 [AzureADPreview PowerShell 模块](https://www.powershellgallery.com/packages/AzureADPreview)中运行以下命令时，将显示这些分类值：
 
 ```powershell
-   ($setting["ClassificationList"])
+($setting["ClassificationList"])
 ```
 
 若要将旧分类转换为敏感度标签，请执行下列操作之一：
@@ -295,46 +292,31 @@ ms.locfileid: "45199622"
 
 - 创建新标签：通过创建和发布与你的现有分类名称相同的新的敏感度标签，指定你希望网站和组使用的标签设置。
 
-则： 
+则：
 
 1. 使用 PowerShell 将敏感度标签应用至使用名称映射的现有 Microsoft 365 组和 SharePoint 网站。 相关说明，请参见下一节。
 
 2. 删除现有组和网站中的旧分类。
 
-虽然无法阻止用户在尚不支持敏感度标签的应用和服务中创建新组，但可运行定期 PowerShell 标签来查看用户已使用旧分类创建的新组，并转换这些分类以使用敏感度标签。 
+虽然无法阻止用户在尚不支持敏感度标签的应用和服务中创建新组，但可运行定期 PowerShell 标签来查看用户已使用旧分类创建的新组，并转换这些分类以使用敏感度标签。
 
 为了帮助管理网站和组的敏感度标签与 Azure AD 分类的共存，请参阅[适用于 Microsoft 365 组的 Azure Active Directory 分类和敏感度标签](migrate-aad-classification-sensitivity-labels.md)。
 
-#### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>使用 PowerShell 将 Microsoft 365 组的分类转换为敏感度标签
+### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>使用 PowerShell 将 Microsoft 365 组的分类转换为敏感度标签
 
-1. 首先，[连接到 Office 365 安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录：
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+1. 首先，[连接到安全与合规中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+   例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录：
 
 2. 通过运行 [ Get-Label ](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet 获取敏感度标签及 GUID 列表：
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
+
+   ```powershell
+   Get-Label |ft Name, Guid
+   ```
 
 3. 记下你想要应用到 Microsoft 365 组的敏感度标签的 Guid。
 
-4. 立即[连接 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
-    
-    例如：
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
-    ```
+4. 现在，在单独的 Windows PowerShell 窗口中[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
 
 5. 以下列命令为例，获取当前具有“常规”分类的组列表：
 
@@ -355,15 +337,15 @@ ms.locfileid: "45199622"
 
 如果有人将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，且不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
 
-虽然此操作未被阻止，但它经过审核，并会自动生成一封面向上传文档的人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。 
+虽然此操作未被阻止，但它经过审核，并会自动生成一封面向上传文档的人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。
 
 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不会出现安全问题。 例如，标有“**常规**”的文档上传到标有“**机密**”的网站上。 在这种情况中，不生成审核事件和电子邮件。
 
-要搜索此事件的审核日志，请从“**文件和页面活动**”类别中查找“**检测到文档敏感度不匹配**”。 
+要搜索此事件的审核日志，请从“**文件和页面活动**”类别中查找“**检测到文档敏感度不匹配**”。
 
 自动生成的电子邮件具有主题“**检测到不兼容的敏感度标签**”，该电子邮件将说明标记不匹配，并提供指向已上传文档和网站的链接。 此外，它还包含说明用户可以如何更改敏感度标签的文档链接。 目前，无法禁用或自定义这些自动发送的电子邮件。
 
-当有人向网站或组添加敏感度标签或从中删除敏感度标签时，也会审核这些活动，但不会自动生成电子邮件。 
+当有人向网站或组添加敏感度标签或从中删除敏感度标签时，也会审核这些活动，但不会自动生成电子邮件。
 
 可在“[敏感度标签活动](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)”类别中找到这些审核事件。 有关搜索审核日志的说明，请参阅[在安全与合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。
 

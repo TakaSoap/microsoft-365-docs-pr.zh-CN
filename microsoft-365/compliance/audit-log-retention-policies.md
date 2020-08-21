@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 审核日志保留策略是 Microsoft 365 中新增的高级审核功能的一部分。 通过审核日志保留策略，可指定组织中审核日志的保留时间。
-ms.openlocfilehash: 0b68eac3dde2f6802d5a5419f8f28b5df26e0a92
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b07965800c1258c03e3e7615fa88a0ed4e453c40
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351037"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845874"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理审核日志保留策略
 
@@ -41,19 +41,19 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 > [!NOTE]
 > 默认审核日志保留策略仅适用于分配了 Office 365 或 Microsoft 365 E5 许可证或具有 Microsoft 365 E5 合规版加载项许可证的用户执行的活动审核记录。 如果你的组织中有非 E5 用户，则其相应的审核记录将保留 90 天。
 
-## <a name="before-you-begin"></a>准备工作
+## <a name="before-you-create-an-audit-log-retention-policy"></a>在创建审核日志保留策略之前
 
 - 必须在安全与合规中心为你分配了“组织配置”角色，这样才能创建或修改审核保留策略。
 
 - 在组织中，你最多可以拥有 50 个审核日志保留策略。
 
-- 若要将审核日志保留超过 90 天，必须为生成审核日志的用户分配 Office 365 或 Microsoft 365 E5 许可证，或者该用户必须具有 Microsoft 365 E5 合规版加载项许可证。
+- 若要将审核日志保留超过 90 天，必须为生成审核日志的用户分配 Office 365 E5 或 Microsoft 365 E5 许可证，或者该用户必须具有 Microsoft 365 E5 合规版或 E5 电子数据展示和审核加载项许可证。
 
 - 所有自定义审核日志保留策略（由组织创建）都优先于默认保留策略。 例如，如果为保留期短于一年的 Exchange 邮箱活动创建审核日志保留策略，则 Exchange 邮箱活动的审核记录将在自定义策略指定的较短期限内保留。
 
-## <a name="create-an-audit-log-retention-policy-in-the-security--compliance-center"></a>在安全与合规中心创建审核日志保留策略
+## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>在合规中心创建审核日志保留策略
 
-1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用在安全与合规中心分配了“组织配置”角色的用户帐户登录。 
+1. 转到 [https://protection.office.com](https://protection.office.com)，然后使用在安全与合规中心分配了“组织配置”角色的用户帐户登录。
 
 2. 在安全与合规中心的左侧窗格中，单击“**搜索**” > “**审核日志搜索**”。
 
@@ -66,7 +66,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
     ![审核保留策略弹出页面](../media/AuditLogRetentionPolicy2.png)
 
    a. **名称**：审核日志保留策略的名称。 此名称必须在你的组织中保持唯一。
-   
+
    b. **说明**：可选，但有助于提供有关策略的信息，例如记录类型或工作负载、策略中指定的用户以及期限。
 
    c. **记录类型**：将为其应用策略的审核记录类型。 如果选择多个记录类型，则不能选择活动，因为该策略将应用于所选记录类型的所有活动。 此外，如果将此属性留空，则必须在“**用户**”框中选择用户。
@@ -79,7 +79,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
 
    g. **优先级**：此值确定处理组织中的审核日志保留策略的顺序。 该值越大，表示优先级越高。 例如，优先级值为 **5** 的策略将优先于优先级值为 **0** 的策略。 如前文所述，任何自定义审核日志保留策略都优先于组织的默认策略。
 
-6. 单击“**保存**”以创建新的审核日志保留策略。 
+4. 单击“**保存**”以创建新的审核日志保留策略。
 
 目前，不会指示已成功创建保留策略。 有关查看审核日志保留策略的属性，请参阅下一节。
 
@@ -94,7 +94,7 @@ Microsoft 365 中的高级审核功能为所有组织提供默认审核日志保
    ```powershell
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
    ```
-    
+
     本示例使用以下设置创建名为“Microsoft Teams 审核策略”的审核日志保留策略：
 
    - 策略说明。
@@ -130,7 +130,7 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 - 使用安全与合规中心 PowerShell 中的 **Set-UnifiedAuditLogRetentionPolicy** cmdlet 可修改现有审核日志保留策略。 有关详细信息，请参阅 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)。
 
-- 使用安全与合规中心 PowerShell 中的 **Remove-UnifiedAuditLogRetentionPolicy** cmdlet 可删除审核日志保留策略。 最长可能需要 30 分钟才能完全删除策略。 有关详细信息，请参阅 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
+- 使用安全与合规中心 PowerShell 中的 **Remove-UnifiedAuditLogRetentionPolicy** cmdlet 可删除审核日志保留策略。 最长可能需要 30 分钟才能删除策略。 有关详细信息，请参阅 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
 
 - 如前文所述，Azure Active Directory，Exchange 和 SharePoint 中针对操作的审核记录将保留一年。 下表列出了默认审核日志保留策略中包括的所有记录类型（针对每个服务）。 这意味着具有此记录类型的任何操作的审核日志都将保留一年，除非自定义审核日志保留策略对特定的记录类型、操作或用户具有优先权。 括号中显示了每种记录类型的枚举值（在审核记录中显示为 RecordType 属性值）。
 
