@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护 (Office 365 ATP) 中的组织中提供的高级防网络钓鱼策略。
-ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804228"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825733"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -49,8 +49,8 @@ ATP 反网络钓鱼策略的基本要素为：
 每个 Office 365 ATP 组织都具有一个名为 Office365 AntiPhish 的内置 ATP 反网络钓鱼策略，该策略具有以下属性：
 
 - 该策略将应用于组织中的所有收件人，即使没有反网络钓鱼规则 (收件人筛选器与策略关联) 。
-- 策略的自定义优先级值为 **最低** ，不能修改 (始终将最后一次应用策略的) 。 您创建的任何自定义策略始终具有更高的优先级。
-- 该策略是默认策略 (**IsDefault** 属性的值 `True`) ，不能删除默认策略。
+- 该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。 你创建的任何自定义策略始终具有更高的优先级。
+- 该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。
 
 若要提高反钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义 ATP 反网络钓鱼策略。
 
@@ -318,9 +318,9 @@ ATP 反网络钓鱼策略的基本要素为：
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>设置自定义 ATP 反网络钓鱼策略的优先级
 
-默认情况下，ATP 反网络钓鱼策略的优先级将取决于它们创建的顺序， (较旧的策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 任何两个策略都不能具有相同的优先级，并且策略处理在应用第一个策略后停止。
+默认情况下，ATP 反网络钓鱼策略的优先级将取决于它们创建的顺序， (较旧的策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
-有关优先级顺序以及评估和应用多个策略的方式的详细信息，请参阅 [电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
+有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
 自定义 ATP 反网络钓鱼策略按其处理顺序显示， (第一个策略的 **优先级** 值为 0) 。 名为 Office365 AntiPhish 的默认反网络钓鱼策略默认的自定义优先级值为 **最低**，无法更改。
 
