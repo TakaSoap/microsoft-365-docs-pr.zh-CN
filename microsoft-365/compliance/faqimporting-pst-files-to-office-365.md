@@ -16,23 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
-description: 本文包含有关使用 Office 365 导入服务将 PST 文件导入到 Microsoft 365 的一些常见问题的解答。
-ms.openlocfilehash: 5ba6df2f2c6ed10edee22f58308a5e3ee5acd533
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+description: 本文包含针对管理员使用 Office 365 导入服务将 PST 文件导入到 Microsoft 365 的一些常见问题解答。
+ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091896"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860697"
 ---
 # <a name="faq-about-importing-pst-files"></a>有关导入 PST 文件的常见问题解答
 
-**本文适用于管理员。是否要将 PST 文件导入到自己的邮箱？请参阅[从 Outlook .pst 文件导入电子邮件、联系人和日历](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**这篇文章适用于对象为管理员。您要将 PST 文件导入到您自己的邮箱吗？请参阅 ["从 Outlook .pst 导入电子邮件、联系人和日历"](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-下面是一些有关使用 Office 365 导入服务将 PST 文件批量导入 Microsoft 365 邮箱的常见问题。 有关如何导入 PST 文件的详细信息，请参阅[将 pst 文件导入到 Office 365 概述](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)。
+以下是与使用 Office 365 导入服务将 PST 文件批量上传至 Microsoft 365 邮箱有关的常见问题。 For more information about how to import PST files， see [Overview of importing PST files to Office 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365).
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用网络上传导入 PST 文件
 
-有关分步说明，请参阅[使用网络上载将 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md)。
+有关分步说明，请参阅"使用[网络上载将 PST 文件导入到 Office 365。"](use-network-upload-to-import-pst-files.md)
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
@@ -51,7 +51,7 @@ ms.locfileid: "45091896"
   
  **网络上传在哪些地区提供？**
   
-目前，这些地区提供了网络上传：美国、加拿大、巴西、英国、法国、德国、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE) 。 Network upload will be available in more regions soon.
+网络上传当前在以下地区可用：美国， 加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚地址、东南亚、东南亚、日本、加利亚、澳大利亚和阿拉伯语 (UAE) 。 Network upload will be available in more regions soon.
   
  **使用网络上传导入 PST 文件的定价如何？**
   
@@ -61,13 +61,13 @@ Using network upload to import PST files is free.
   
  **哪个版本的 PST 文件格式支持导入到 Office 365？**
   
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅 "[使用网络上载将组织的 PST 文件导入到 Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)" 中的步骤4。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Office 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅"使用网络上传将组织的 PST 文件导入到 [Office 365"中的步骤](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)4。
   
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
   
  **将 PST 文件上传到 Azure 存储区域后，这些文件在删除前可在 Azure 中保留多长时间？**
   
-使用网络上传方法导入 PST 文件时，会将这些文件上传到名为的 Azure blob 容器中 `ingestiondata` 。 如果 "安全性 & 合规中心" 中的 "**导入 PST 文件**" 页上没有正在进行的导入作业) ，则在 `ingestiondata` 安全 & 合规中心中创建最近的导入作业30天后，删除 Azure 中的容器中的所有 PST 文件。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。 
+当使用网络上传方法导入 PST 文件时，会将文件上传到已命名的 Azure Blob 容器`ingestiondata`。 如果安全与合规中心中的“**导入 PST 页面**”页面上没有正在进行的导入作业，则 Azure 中 `ingestiondata` 容器内的所有 PST 文件都会在安全与合规中心中创建最新导入作业 30 天后被删除。 这也意味着须在将 PST 文件上传到 Azure 后的 30 天内在安全与合规中心中创建新的导入作业（如网络上传说明的步骤 5 中所述）。 
   
 这也意味着 PST 文件从 Azure 存储区域删除后，将不再显示在安全与合规中心已完成导入作业的文件列表中。 虽然导入作业可能仍然列在安全与合规中心的“**导入 PST 文件**”页面，但查看较早导入作业的详细信息时，PST 文件的列表可能为空。 
   
@@ -79,7 +79,7 @@ Using network upload to import PST files is free.
   
  **PST 导入进程如何处理重复的电子邮件项？**
 
-如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定其他目标文件夹 (则使用 PST 导入映射文件中的 TargetRootFolder 属性) 而不是以前的导入作业中指定的属性，则 PST 文件中的所有项目都将为 reimported。
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
 
  **导入 PST 文件时是否有邮件大小限制？**
   
@@ -107,7 +107,7 @@ Using network upload to import PST files is free.
   
 ## <a name="using-drive-shipping-to-import-pst-files"></a>使用驱动器寄送导入 PST 文件
 
-有关分步说明，请参阅[使用驱动器发货将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
+有关分步说明，请参阅"[使用驱动器传送将 PST 文件导入到 Office 365。"](use-drive-shipping-to-import-pst-files-to-office-365.md)
   
  **在 Office 365 导入服务中创建导入作业需要哪些权限？**
   
@@ -141,7 +141,7 @@ Using network upload to import PST files is free.
   
  **哪类硬盘支持驱动器发运？**
   
-仅2.5 英寸固态驱动器 (Ssd) 或2.5 英寸或3.5 英寸 SATA II/III 内置硬盘支持与 Office 365 导入服务配合使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III 连接器直接连接硬盘，或可使用外部 2.5 英寸 SSD 或 2.5 英寸或 3.5 英寸 SATA II/III USB 适配器在外部连接硬盘。
+仅支持将 2.5 inch solid-state 驱动器 (SSD) 或 2.5 999 或 3.5 inch SATA II/III 内部硬盘与 Office 365 导入服务一起使用。 可使用最多 10 TB 的硬盘。 对于导入作业，仅将处理硬盘上的第一个数据卷。 必须使用 NTFS 格式化数据卷。 将数据复制到硬盘时，可使用 2.5 个接着 SSD 或 2.5 99 分解或 3.5 inch SATA II/III 连接器直接连接，或可使用外部 2.5 缩略 SSD 或 2.5 缩寸或 3.5 缩寸 SATA II/III USB 适应器在外部将其连接。
   
 > [!IMPORTANT]
 > Office 365 导入服务中不支持内置 USB 适配器随附的外部硬盘。 此外，无法使用外部硬盘盒内的磁盘。 请不要发运外部硬盘。 
@@ -156,7 +156,7 @@ Using network upload to import PST files is free.
   
  **硬盘驱动器到达 Microsoft 数据中心后，需要多久才能将 PST文件上传到 Azure？**
   
-在 Microsoft 数据中心收到硬盘驱动器后，需要7到10个工作日才能将 PST 文件上传到组织的 Azure 存储区。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
+Microsoft 数据中心收到你的硬盘后，需要 7 到 10 个工作日将 PST 文件上传到你组织的 Azure 存储区域。 PST 文件将上传到名为 `ingestiondata` 的 Azure Blob 容器。 
   
  **将 PST 文件导入到邮箱需要多长时间？**
   
@@ -172,7 +172,7 @@ Using network upload to import PST files is free.
   
  **哪个版本的 PST 文件格式支持导入到 Microsoft 365？**
   
-可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅 "[使用驱动器传送将 PST 文件导入到 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)" 中的步骤3。
+可选两个版本的 PST 文件格式：ANSI 和 Unicode。 建议导入使用 Unicode PST 文件格式的文件。 但是，采用 ANSI PST 文件格式的文件也可以导入到 Microsoft 365，如语言采用双字节字符集 (DBCS) 的文件。 有关导入 ANSI PST 文件的详细信息，请参阅"使用驱动器传送将 PST 文件导入 [到 Office 365"中的步骤](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)3。
   
 此外，来自 Outlook 2007 和更高版本 Outlook 的 PST 文件可导入到 Office 365。
   
@@ -182,7 +182,7 @@ Using network upload to import PST files is free.
   
   **PST 导入进程如何处理重复的电子邮件项？**
 
-如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果您重新导入同一个 PST 文件并指定其他目标文件夹 (则使用 PST 导入映射文件中的 TargetRootFolder 属性) 而不是以前的导入作业中指定的属性，则 PST 文件中的所有项目都将为 reimported。
+如果目标邮箱或目标存档的目标文件夹中存在匹配项，PST 导入进程将检查重复的项目，并且不会将邮件项从 PST 文件复制到邮箱或存档。 如果重新导入相同的 PST 文件并指定与上一个导入作业中指定的文件夹不同的目标文件夹（使用 PST 导入映射文件中的 TargetRootFolder 属性），将重新导入 PST 文件中的所有项。
  
  **PST 文件导入到 Microsoft 365 邮箱时，是否会保留邮件发送时间或接收时间、收件人列表和其他邮件属性？**
   

@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用安全与合规中心的导入服务将电子邮件数据（PST 文件）批量导入到用户邮箱中。
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127157"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860729"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>有关导入组织的 PST 文件的概述
 
@@ -146,7 +146,7 @@ ms.locfileid: "45127157"
   
  **网络上传在哪些地区提供？**
   
-目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域提供。
+目前，在以下区域提供网络上传功能：美国、加拿大、巴西、英国、法国、德国、瑞士、挪威、欧洲、印度、东亚、东南亚、日本、韩国、澳大利亚和阿拉伯联合酋长国 (UAE)。该功能将很快在更多区域中提供。
   
  **使用网络上传导入 PST 文件的定价如何？**
   

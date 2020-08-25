@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理员可了解 Exchange Online Protection (EOP) 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209495"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826645"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
@@ -41,7 +41,7 @@ ms.locfileid: "44209495"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用电子邮件身份验证帮助防止欺骗
 
-DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户端中看到的发件人电子邮件地址）来防止欺骗。 目标电子邮件组织还可以验证该域已通过 SPF 或 DKIM 检查，这意味着域已通过身份验证，因此未被欺骗。 
+DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户端中看到的发件人电子邮件地址）来防止欺骗。 目标电子邮件组织还可以验证该域已通过 SPF 或 DKIM 检查，这意味着域已通过身份验证，因此未被欺骗。
 
 但是，问题是 DNS 中用于电子邮件身份验证的 SPF、DKIM 和 DMARC 记录（统称为电子邮件身份验证策略）完全是可选的。 因此，具有强电子邮件身份验证策略的域（如 microsoft.com 和 skype.com）可以防止欺骗，而发布较弱电子邮件身份验证策略或根本没有策略的域则是欺骗活动攻击的主要目标。
 
@@ -61,7 +61,7 @@ DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户�
 
 虽然 SPF、DKIM 和 DMARC 本身都很有用，但如果邮件没有明确的身份验证记录，它们就无法传递充足的身份验证状态。 为此，Microsoft 开发了一种适用于隐式电子邮件身份验证的算法，将多个信号组合成一个称为_复合身份验证_（或简称为“compauth”）的单一值。 可以在邮件头的“**Authentication-Results**”标头中标记 compauth 值。
 
-> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
+> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> 理由=\<yyy\>
 
 [Authentication-results 邮件头](anti-spam-message-headers.md#authentication-results-message-header)对这些值进行了说明。
 
