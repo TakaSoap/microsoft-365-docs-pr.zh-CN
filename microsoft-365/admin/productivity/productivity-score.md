@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101643"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868851"
 ---
 # <a name="microsoft-productivity-score-preview"></a> (预览的 Microsoft 工作效率分数) 
 
@@ -40,11 +40,11 @@ ms.locfileid: "45101643"
 
 - **员工体验：** 我们衡量人员如何对内容进行协作、如何使用 Microsoft 365 产品进行通信，以及它们是否在平台上使用 Microsoft 365。 
 
-    我们提供了这些见解，因为当人们在线协作时，他们可以节省时间。 当他们可以自由地在任何设备上工作时，它们的工作效率更高且实现满意。 如果能够以灵活的方式进行通信，则效率更高，形成更好的关系，并且您的组织更加统一。 有关证据，请参阅[Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+    我们提供了这些见解，因为当人们在线协作时，他们可以节省时间。 当他们可以自由地在任何设备上工作时，它们的工作效率更高且实现满意。 如果能够以灵活的方式进行通信，则效率更高，形成更好的关系，并且您的组织更加统一。 有关证据，请参阅 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
-- **技术体验：** 生产效率取决于可靠和能力强的技术以及 Microsoft 365 的有效使用。 我们提供终结点分析，它提供有关设备设置和启动时间的见解和建议，并为您的组织提供 Microsoft 365 网络连接见解。
+- **技术体验：** 生产效率取决于可靠和能力强的技术以及 Microsoft 365 的有效使用。 我们提供了 [终结点分析](https://aka.ms/endpointanalytics)，可帮助你了解你的终结点硬件和软件的性能和运行状况问题对你的用户的生产率的影响，同时提供建议的操作以进行补救;我们为你的组织提供 Microsoft 365 网络连接见解。
 
-若要了解有关终结点分析的详细信息，请阅读[网络连接概述](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
+有关概述和先决条件的详细信息，请参阅 [什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview) 。 若要了解有关 Microsoft 365 网络 connectivity insights 的详细信息，请阅读 [网络连接概述](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>如何计算分数
@@ -91,15 +91,15 @@ ms.locfileid: "45101643"
 
 ![工作效率分数主页](../../media/pslanding.png)
 
-**您的分数**显示为百分比值和磅值，以便您可以查看 (分子) 的要点以及 (分母) 的最大可能分数。
+**您的分数** 显示为百分比值和磅值，以便您可以查看 (分子) 的要点以及 (分母) 的最大可能分数。
 
-**对等基准**使您能够将您的成绩与像你的组织进行比较。 对于 "员工体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
+**对等基准** 使您能够将您的成绩与像你的组织进行比较。 对于 "员工体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
 
 终结点分析对等基准包括设备启动性能的目标以及基于所有租户中聚合的中间值的建议软件配置。
 
 对于网络连接，推荐的准则为80点。
 
-"**分数细分**" 部分提供了由员工和技术经验领域的基准的工作效率分数细分。
+" **分数细分** " 部分提供了由员工和技术经验领域的基准的工作效率分数细分。
 
 分数历史记录显示最近6个月内每个类别中的得分如何变化。
 
@@ -107,7 +107,7 @@ ms.locfileid: "45101643"
 
 ## <a name="category-details-pages"></a>类别详细信息页面
 
-每个类别详细信息页面显示主要的洞察力和支持指标，以及可以采取的相关研究和操作以促进组织中的变化。 研究支持每个类别的主要见解背后的重要性和基本原理。 有关详细信息，请[参阅 Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+每个类别详细信息页面显示主要的洞察力和支持指标，以及可以采取的相关研究和操作以促进组织中的变化。 研究支持每个类别的主要见解背后的重要性和基本原理。 有关详细信息，请 [参阅 Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
 ### <a name="content-collaboration-details"></a>内容协作详细信息
 
@@ -153,4 +153,4 @@ ms.locfileid: "45101643"
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
 
-请分享你对工作效率分数的看法以及你对如何改进想法的看法。 使用产品中的**反馈**部分和/或与 ProductivityScorePreview@service.microsoft.com 的工作效率分数团队联系。
+请分享你对工作效率分数的看法以及你对如何改进想法的看法。 使用产品中的 **反馈** 部分和/或与 ProductivityScorePreview@service.microsoft.com 的工作效率分数团队联系。

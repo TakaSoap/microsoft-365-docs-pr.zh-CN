@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798166"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868969"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规性中的新增功能
 
@@ -97,8 +97,6 @@ ms.locfileid: "46798166"
 
 - "记录管理" 部分现已在合规性中心中完全可用。 充分利用更新的用户界面和功能，用于文件计划、保留标签和标签策略、事件和处置。
 - 说到了处置，我们还为 SharePoint 和 OneDrive 中的记录提供了 [处置证明](disposition.md#disposition-of-records) 。 现在，您可以在已自动或在处置评审之后处置的这些位置中的项目列表进行查看。
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Microsoft 365 合规性中心中的 "记录管理" 部分":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>敏感度标签：预览自动标记策略
 

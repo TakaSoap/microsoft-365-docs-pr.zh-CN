@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778532"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867207"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -35,18 +35,14 @@ ms.locfileid: "46778532"
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规性中心中的 " **处置** " 选项卡，用户必须具有 " **处置管理** " 角色和 " **仅查看审核日志** " 角色。 虽然标准建议是将用户添加到默认角色组，在这种情况下，我们建议您创建一个名为 " **处置审阅者** " 的新角色组，该角色组具有这两个角色，并根据需要向该组添加用户。 用于处置的单个角色组可减少管理开销，并使用户能够更轻松地拥有所需的组合权限。
+若要成功访问 Microsoft 365 合规性中心中的 " **处置** " 选项卡，用户必须具有 " **处置管理** " 管理员角色。 此角色包含在默认管理员角色组、 **合规性管理员** 和 **合规性数据管理员**中。
+
+若要向用户授予此必需的处置管理角色，请将其添加到其中一个默认角色组，或创建自定义角色组 (例如，名为 "处置审阅者" ) 并向此组授予处置管理角色。  
 
 > [!NOTE]
-> 即使是全局管理员也需要授予 **处置管理** 角色。 因此，如果全局管理员需要访问 "处置审阅者" 角色组的成员，则将其作为 "处置 **审阅者** " 角色组的成员。 
+> 即使是全局管理员也需要授予 **处置管理** 角色。 
 
-特定于 **仅查看审核日志** 角色：
-
-- 由于用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，因此您必须使用 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)（而不是使用 Security & 合规性中心中的 " **权限** " 页）为用户分配此角色。 有关说明，请参阅 [在 Exchange Online 中管理角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
-
-- 此角色不支持将 Microsoft 365 组 ([以前的 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 。 而是分配用户邮箱、邮件用户或启用邮件的安全组。
-
-有关向用户授予 **处置管理** 角色和创建新的 **处置审阅者** 角色的说明，请参阅 [向用户授予对 Office 365 安全 &amp; 合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>启用审核
 
