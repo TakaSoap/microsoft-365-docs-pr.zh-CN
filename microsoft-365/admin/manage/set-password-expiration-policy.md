@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: '了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。 '
-ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: e95184bda631a5efaad0376c766ce5408c0a95e7
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597361"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868863"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
@@ -50,7 +50,7 @@ ms.locfileid: "46597361"
 > [!IMPORTANT]
 > 只有[全局管理员](../add-users/about-admin-roles.md)可执行这些步骤。
   
-1. 在管理中心，转到“**设置**”\>“**设置**”。
+1. 在管理中心，转到“**设置**”\>“**组织设置**”。
 
 2. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全和隐私</a>页面。
  只有全局管理员能看到“安全和隐私”选项。
