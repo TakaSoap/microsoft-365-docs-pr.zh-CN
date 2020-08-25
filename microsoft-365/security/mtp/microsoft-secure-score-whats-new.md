@@ -1,7 +1,7 @@
 ---
-title: Microsoft 安全功能分数的新增功能
-description: 介绍 Microsoft 365 安全中心中 Microsoft 安全功能分数所发生的新变化。
-keywords: 安全， 恶意软件， Microsoft 365， M365， 安全功能分数， 安全中心， 改进操作
+title: Microsoft 安全分数中的新增功能
+description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数发生了哪些新更改。
+keywords: 安全性、恶意软件、Microsoft 365、M365、安全分数、安全中心、改进操作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,78 +20,78 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815227"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866891"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a><span data-ttu-id="52407-104">Microsoft 安全功能分数的新增功能</span><span class="sxs-lookup"><span data-stu-id="52407-104">What's new in Microsoft Secure Score</span></span>
+# <a name="whats-new-in-microsoft-secure-score"></a><span data-ttu-id="f8fad-104">Microsoft 安全分数中的新增功能</span><span class="sxs-lookup"><span data-stu-id="f8fad-104">What's new in Microsoft Secure Score</span></span>
 
-<span data-ttu-id="52407-105">为了让 Microsoft 能够更好地体验安全状态，我们做了一些更改。</span><span class="sxs-lookup"><span data-stu-id="52407-105">To make Microsoft Secure Score a better representative of your security posture, we have made some changes.</span></span> <span data-ttu-id="52407-106">若要了解计划的更改，请参阅 [Microsoft 安全功能分数中即将发生的变化](microsoft-secure-score-whats-coming.md)？</span><span class="sxs-lookup"><span data-stu-id="52407-106">To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).</span></span>
+<span data-ttu-id="f8fad-105">若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。</span><span class="sxs-lookup"><span data-stu-id="f8fad-105">To make Microsoft Secure Score a better representative of your security posture, we have made some changes.</span></span> <span data-ttu-id="f8fad-106">若要了解计划的更改，请参阅 [Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。</span><span class="sxs-lookup"><span data-stu-id="f8fad-106">To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).</span></span>
 
-## <a name="july-2020"></a><span data-ttu-id="52407-107">2020 年 7 月</span><span class="sxs-lookup"><span data-stu-id="52407-107">July 2020</span></span>
+## <a name="july-2020"></a><span data-ttu-id="f8fad-107">2020 年 7 月</span><span class="sxs-lookup"><span data-stu-id="f8fad-107">July 2020</span></span>
 
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a><span data-ttu-id="52407-108">为 Azure 高级威胁防护添加改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-108">Adding improvement actions for Azure Advanced Threat Protection</span></span>
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a><span data-ttu-id="f8fad-108">为 Azure 高级威胁防护添加改进操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-108">Adding improvement actions for Azure Advanced Threat Protection</span></span>
 
-- <span data-ttu-id="52407-109">有风险的后续移动路径</span><span class="sxs-lookup"><span data-stu-id="52407-109">Risky lateral movement paths</span></span>
-- <span data-ttu-id="52407-110">不安全帐户属性</span><span class="sxs-lookup"><span data-stu-id="52407-110">Unsecure account attributes</span></span>
-- <span data-ttu-id="52407-111">启用 Active Directory 信任上的安全功能</span><span class="sxs-lookup"><span data-stu-id="52407-111">Enable security features on Active Directory trusts</span></span>
-- <span data-ttu-id="52407-112">从实体中删除不安全 SID 历史记录属性</span><span class="sxs-lookup"><span data-stu-id="52407-112">Remove unsecure SID history attributes from entities</span></span>
+- <span data-ttu-id="f8fad-109">有风险的横向移动路径</span><span class="sxs-lookup"><span data-stu-id="f8fad-109">Risky lateral movement paths</span></span>
+- <span data-ttu-id="f8fad-110">不安全帐户属性</span><span class="sxs-lookup"><span data-stu-id="f8fad-110">Unsecure account attributes</span></span>
+- <span data-ttu-id="f8fad-111">在 Active Directory 信任上启用安全功能</span><span class="sxs-lookup"><span data-stu-id="f8fad-111">Enable security features on Active Directory trusts</span></span>
+- <span data-ttu-id="f8fad-112">从实体中删除不安全的 SID 历史记录属性</span><span class="sxs-lookup"><span data-stu-id="f8fad-112">Remove unsecure SID history attributes from entities</span></span>
 
-## <a name="june-2020"></a><span data-ttu-id="52407-113">2020 年 6 月</span><span class="sxs-lookup"><span data-stu-id="52407-113">June 2020</span></span>
+## <a name="june-2020"></a><span data-ttu-id="f8fad-113">2020 年 6 月</span><span class="sxs-lookup"><span data-stu-id="f8fad-113">June 2020</span></span>
 
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="52407-114">Microsoft Defender 高级威胁防护中删除了改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-114">Removed improvement action for Microsoft Defender Advanced Threat Protection</span></span>
+### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="f8fad-114">Microsoft Defender 高级威胁防护的已删除改进操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-114">Removed improvement action for Microsoft Defender Advanced Threat Protection</span></span>
 
-* <span data-ttu-id="52407-115">打开攻击面减少规则</span><span class="sxs-lookup"><span data-stu-id="52407-115">Turn on Attack Surface Reduction rules</span></span>
+* <span data-ttu-id="f8fad-115">打开攻击面降低规则</span><span class="sxs-lookup"><span data-stu-id="f8fad-115">Turn on Attack Surface Reduction rules</span></span>
 
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="52407-116">新增了 Microsoft Defender 高级威胁防护的改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-116">Added improvement actions for Microsoft Defender Advanced Threat Protection</span></span>
+### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a><span data-ttu-id="f8fad-116">新增了 Microsoft Defender 高级威胁防护的改进措施</span><span class="sxs-lookup"><span data-stu-id="f8fad-116">Added improvement actions for Microsoft Defender Advanced Threat Protection</span></span>
 
-* <span data-ttu-id="52407-117">阻止 Adobe Reader 创建子进程</span><span class="sxs-lookup"><span data-stu-id="52407-117">Block Adobe Reader from creating child processes</span></span>
-* <span data-ttu-id="52407-118">使用针对勒索软件的高级保护</span><span class="sxs-lookup"><span data-stu-id="52407-118">Use advanced protection against ransomware</span></span>
-* <span data-ttu-id="52407-119">阻止所有 Office 应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="52407-119">Block all Office applications from creating child processes</span></span>
-* <span data-ttu-id="52407-120">阻止 Office 应用程序创建可执行内容</span><span class="sxs-lookup"><span data-stu-id="52407-120">Block Office applications from creating executable content</span></span>
-* <span data-ttu-id="52407-121">阻止 JavaScript 或 VBScript 启动下载的可执行文件的内容</span><span class="sxs-lookup"><span data-stu-id="52407-121">Block JavaScript or VBScript from launching downloaded executable content</span></span>
-* <span data-ttu-id="52407-122">阻止执行可能混淆的脚本</span><span class="sxs-lookup"><span data-stu-id="52407-122">Block execution of potentially obfuscated scripts</span></span>
-* <span data-ttu-id="52407-123">阻止来自电子邮件客户端和 Web 邮件的可执行内容</span><span class="sxs-lookup"><span data-stu-id="52407-123">Block executable content from email client and webmail</span></span>
-* <span data-ttu-id="52407-124">阻止 Office 通信应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="52407-124">Block Office communication application from creating child processes</span></span>
-* <span data-ttu-id="52407-125">阻止从 USB 运行的未受信任和未签名的进程</span><span class="sxs-lookup"><span data-stu-id="52407-125">Block untrusted and unsigned processes that run from USB</span></span>
-* <span data-ttu-id="52407-126">通过 WMI 事件订阅阻止持久性</span><span class="sxs-lookup"><span data-stu-id="52407-126">Block persistence through WMI event subscription</span></span>
-* <span data-ttu-id="52407-127">阻止 Office 应用程序将代码注入其他进程</span><span class="sxs-lookup"><span data-stu-id="52407-127">Block Office applications from injecting code into other processes</span></span>
-* <span data-ttu-id="52407-128">除非可执行文件符合某个有的普及条件、年限或受信任的列表条件，否则阻止它们运行</span><span class="sxs-lookup"><span data-stu-id="52407-128">Block executable files from running unless they meet a prevalence, age, or trusted list criterion</span></span>
-* <span data-ttu-id="52407-129">阻止进程创建源自 PSExec 和 WMI 命令</span><span class="sxs-lookup"><span data-stu-id="52407-129">Block process creations originating from PSExec and WMI commands</span></span>
-* <span data-ttu-id="52407-130">阻止来自 Windows 本地安全机构子系统的凭据 (lsass.exe) </span><span class="sxs-lookup"><span data-stu-id="52407-130">Block credential stealing from the Windows local security authority subsystem (lsass.exe)</span></span>
-* <span data-ttu-id="52407-131">阻止从 Office 宏调用 Win32 API</span><span class="sxs-lookup"><span data-stu-id="52407-131">Block Win32 API calls from Office macros</span></span>
+* <span data-ttu-id="f8fad-117">阻止 Adobe Reader 创建子流程</span><span class="sxs-lookup"><span data-stu-id="f8fad-117">Block Adobe Reader from creating child processes</span></span>
+* <span data-ttu-id="f8fad-118">对勒索软件使用高级防护</span><span class="sxs-lookup"><span data-stu-id="f8fad-118">Use advanced protection against ransomware</span></span>
+* <span data-ttu-id="f8fad-119">阻止所有 Office 应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="f8fad-119">Block all Office applications from creating child processes</span></span>
+* <span data-ttu-id="f8fad-120">阻止 Office 应用程序创建可执行内容</span><span class="sxs-lookup"><span data-stu-id="f8fad-120">Block Office applications from creating executable content</span></span>
+* <span data-ttu-id="f8fad-121">阻止 JavaScript 或 VBScript 启动下载的可执行内容</span><span class="sxs-lookup"><span data-stu-id="f8fad-121">Block JavaScript or VBScript from launching downloaded executable content</span></span>
+* <span data-ttu-id="f8fad-122">阻止执行可能模糊的脚本</span><span class="sxs-lookup"><span data-stu-id="f8fad-122">Block execution of potentially obfuscated scripts</span></span>
+* <span data-ttu-id="f8fad-123">阻止来自电子邮件客户端和 web 邮件的可执行内容</span><span class="sxs-lookup"><span data-stu-id="f8fad-123">Block executable content from email client and webmail</span></span>
+* <span data-ttu-id="f8fad-124">阻止 Office 通信应用程序创建子进程</span><span class="sxs-lookup"><span data-stu-id="f8fad-124">Block Office communication application from creating child processes</span></span>
+* <span data-ttu-id="f8fad-125">阻止从 USB 运行的不受信任和未签名的进程</span><span class="sxs-lookup"><span data-stu-id="f8fad-125">Block untrusted and unsigned processes that run from USB</span></span>
+* <span data-ttu-id="f8fad-126">通过 WMI 事件订阅阻止持久化</span><span class="sxs-lookup"><span data-stu-id="f8fad-126">Block persistence through WMI event subscription</span></span>
+* <span data-ttu-id="f8fad-127">阻止 Office 应用程序将代码注入其他进程</span><span class="sxs-lookup"><span data-stu-id="f8fad-127">Block Office applications from injecting code into other processes</span></span>
+* <span data-ttu-id="f8fad-128">阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件</span><span class="sxs-lookup"><span data-stu-id="f8fad-128">Block executable files from running unless they meet a prevalence, age, or trusted list criterion</span></span>
+* <span data-ttu-id="f8fad-129">阻止进程创建源自 PSExec 和 WMI 命令</span><span class="sxs-lookup"><span data-stu-id="f8fad-129">Block process creations originating from PSExec and WMI commands</span></span>
+* <span data-ttu-id="f8fad-130">阻止从 Windows 本地安全颁发机构子系统中盗取凭据 ( # A0) </span><span class="sxs-lookup"><span data-stu-id="f8fad-130">Block credential stealing from the Windows local security authority subsystem (lsass.exe)</span></span>
+* <span data-ttu-id="f8fad-131">阻止来自 Office 宏的 Win32 API 调用</span><span class="sxs-lookup"><span data-stu-id="f8fad-131">Block Win32 API calls from Office macros</span></span>
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a><span data-ttu-id="52407-132">Identity 安全功能分数和图形 API 不兼容</span><span class="sxs-lookup"><span data-stu-id="52407-132">Incompatibility with Identity Secure Score and Graph API</span></span>
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a><span data-ttu-id="f8fad-132">标识安全分数和图形 API 不兼容</span><span class="sxs-lookup"><span data-stu-id="f8fad-132">Incompatibility with Identity Secure Score and Graph API</span></span>
 
-<span data-ttu-id="52407-133">在最新版本的 Microsoft 安全功能分数中，发布了改进的扫描模型。</span><span class="sxs-lookup"><span data-stu-id="52407-133">In the recent release of Microsoft Secure Score, an improved scoring model has been released.</span></span> <span data-ttu-id="52407-134">这些更改可对安全状态更灵活且更准确地了解。</span><span class="sxs-lookup"><span data-stu-id="52407-134">These changes allow for a more flexible and accurate view of your security posture.</span></span> <span data-ttu-id="52407-135">但是，这些更新让 Microsoft 安全功能分数临时与 Identity 安全功能分数和 Graph API 不兼容。</span><span class="sxs-lookup"><span data-stu-id="52407-135">However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.</span></span>
+<span data-ttu-id="f8fad-133">在最近发布的 Microsoft 安全分数中，已发布了一个改进的计分模型。</span><span class="sxs-lookup"><span data-stu-id="f8fad-133">In the recent release of Microsoft Secure Score, an improved scoring model has been released.</span></span> <span data-ttu-id="f8fad-134">通过这些更改，可以更灵活、准确地查看安全状况。</span><span class="sxs-lookup"><span data-stu-id="f8fad-134">These changes allow for a more flexible and accurate view of your security posture.</span></span> <span data-ttu-id="f8fad-135">但是，这些更新已使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。</span><span class="sxs-lookup"><span data-stu-id="f8fad-135">However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.</span></span>
 
-<span data-ttu-id="52407-136">此时，Identity 安全功能分数和 Graph API 将采用新的分段模型。</span><span class="sxs-lookup"><span data-stu-id="52407-136">In time, Identity Secure Score and the Graph API will adopt the new scoring model.</span></span> <span data-ttu-id="52407-137">在这之前，客户将看到 Microsoft 安全功能分数、Identity Secure Score 和 Graph API 报告的分数差异。</span><span class="sxs-lookup"><span data-stu-id="52407-137">Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API.</span></span> <span data-ttu-id="52407-138">我们对这一原因造成的任何不便表示，我们在努力确保这些体验以后兼容性更好。</span><span class="sxs-lookup"><span data-stu-id="52407-138">We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.</span></span>
+<span data-ttu-id="f8fad-136">在时间中，标识安全分数和图形 API 将采用新的评分模型。</span><span class="sxs-lookup"><span data-stu-id="f8fad-136">In time, Identity Secure Score and the Graph API will adopt the new scoring model.</span></span> <span data-ttu-id="f8fad-137">在此之前，客户将看到 Microsoft 安全分数、标识安全分数和图形 API 所报告的分数之间的差异。</span><span class="sxs-lookup"><span data-stu-id="f8fad-137">Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API.</span></span> <span data-ttu-id="f8fad-138">对于此导致的不便，我们深表歉意，并在努力确保这些体验在将来更具兼容性。</span><span class="sxs-lookup"><span data-stu-id="f8fad-138">We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.</span></span>
 
-## <a name="updated-improvement-actions"></a><span data-ttu-id="52407-139">更新的改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-139">Updated improvement actions</span></span>
+## <a name="updated-improvement-actions"></a><span data-ttu-id="f8fad-139">更新的提高操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-139">Updated improvement actions</span></span>
 
-- <span data-ttu-id="52407-140">添加了 Azure Active Directory 改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-140">Added Azure Active Directory improvement actions</span></span>
-- <span data-ttu-id="52407-141">添加了 Azure 高级威胁防护改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-141">Added Azure Advanced Threat Protection improvement actions</span></span>
-- <span data-ttu-id="52407-142">支持 Microsoft Defender ATP [威胁&管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议</span><span class="sxs-lookup"><span data-stu-id="52407-142">Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations</span></span>
-    - <span data-ttu-id="52407-143">现在 TVM 提供的所有已发布安全建议均可用</span><span class="sxs-lookup"><span data-stu-id="52407-143">All released security recommendations supplied by TVM are now available</span></span>
+- <span data-ttu-id="f8fad-140">添加了 Azure Active Directory 改善操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-140">Added Azure Active Directory improvement actions</span></span>
+- <span data-ttu-id="f8fad-141">添加了 Azure 高级威胁防护改进操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-141">Added Azure Advanced Threat Protection improvement actions</span></span>
+- <span data-ttu-id="f8fad-142">对 Microsoft Defender ATP 威胁的支持 [& 漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议</span><span class="sxs-lookup"><span data-stu-id="f8fad-142">Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations</span></span>
+    - <span data-ttu-id="f8fad-143">TVM 提供的所有已发布的安全建议现已推出</span><span class="sxs-lookup"><span data-stu-id="f8fad-143">All released security recommendations supplied by TVM are now available</span></span>
 
-## <a name="updated-interface-and-functionality"></a><span data-ttu-id="52407-144">已更新的界面和功能</span><span class="sxs-lookup"><span data-stu-id="52407-144">Updated interface and functionality</span></span>
+## <a name="updated-interface-and-functionality"></a><span data-ttu-id="f8fad-144">更新的界面和功能</span><span class="sxs-lookup"><span data-stu-id="f8fad-144">Updated interface and functionality</span></span>
 
-* <span data-ttu-id="52407-145">CISO 和潜在前导级别讨论的所有新的指标和趋势视图</span><span class="sxs-lookup"><span data-stu-id="52407-145">All new metrics and trends views for CISO and lead level discussions</span></span>
-* <span data-ttu-id="52407-146">跟踪分数和基准的新方法</span><span class="sxs-lookup"><span data-stu-id="52407-146">New ways to track and benchmark your score</span></span>
-* <span data-ttu-id="52407-147">更好地跟踪和了解分数回合</span><span class="sxs-lookup"><span data-stu-id="52407-147">Better tracking and understanding for score regressions</span></span>
-* <span data-ttu-id="52407-148">筛选、标记、搜索和分组改进操作</span><span class="sxs-lookup"><span data-stu-id="52407-148">Filter, tag, search, and group your improvement actions</span></span>
-* <span data-ttu-id="52407-149">使用得分和计划的操作管理你的未来目标</span><span class="sxs-lookup"><span data-stu-id="52407-149">Manage towards your future goals using score projections and planned actions</span></span>
-* <span data-ttu-id="52407-150">更多信息！</span><span class="sxs-lookup"><span data-stu-id="52407-150">And more!</span></span>
+* <span data-ttu-id="f8fad-145">CISO 和潜在客户级别讨论的所有新指标和趋势视图</span><span class="sxs-lookup"><span data-stu-id="f8fad-145">All new metrics and trends views for CISO and lead level discussions</span></span>
+* <span data-ttu-id="f8fad-146">跟踪和基准成绩的新方法</span><span class="sxs-lookup"><span data-stu-id="f8fad-146">New ways to track and benchmark your score</span></span>
+* <span data-ttu-id="f8fad-147">更好地跟踪和理解分数回归</span><span class="sxs-lookup"><span data-stu-id="f8fad-147">Better tracking and understanding for score regressions</span></span>
+* <span data-ttu-id="f8fad-148">筛选、标记、搜索和分组您的改进操作</span><span class="sxs-lookup"><span data-stu-id="f8fad-148">Filter, tag, search, and group your improvement actions</span></span>
+* <span data-ttu-id="f8fad-149">使用分数预测和计划操作来管理未来目标</span><span class="sxs-lookup"><span data-stu-id="f8fad-149">Manage towards your future goals using score projections and planned actions</span></span>
+* <span data-ttu-id="f8fad-150">更多！</span><span class="sxs-lookup"><span data-stu-id="f8fad-150">And more!</span></span>
 
-## <a name="we-want-to-hear-from-you"></a><span data-ttu-id="52407-151">我们希望收到你的欢迎大利</span><span class="sxs-lookup"><span data-stu-id="52407-151">We want to hear from you</span></span>
+## <a name="we-want-to-hear-from-you"></a><span data-ttu-id="f8fad-151">我们希望收到你的来信</span><span class="sxs-lookup"><span data-stu-id="f8fad-151">We want to hear from you</span></span>
 
-<span data-ttu-id="52407-152">如果你有任何问题，请通过发布安全、隐私条规 [社区&我们](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 了解我们。</span><span class="sxs-lookup"><span data-stu-id="52407-152">If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community.</span></span> <span data-ttu-id="52407-153">我们正在监控社区并提供帮助。</span><span class="sxs-lookup"><span data-stu-id="52407-153">We're monitoring the community and will provide help.</span></span>
+<span data-ttu-id="f8fad-152">如果你有任何问题，请通过在 [安全、隐私 & 合规](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社区中发布来告知我们。</span><span class="sxs-lookup"><span data-stu-id="f8fad-152">If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community.</span></span> <span data-ttu-id="f8fad-153">我们正在监视社区，并将提供帮助。</span><span class="sxs-lookup"><span data-stu-id="f8fad-153">We're monitoring the community and will provide help.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="52407-154">相关资源</span><span class="sxs-lookup"><span data-stu-id="52407-154">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="f8fad-154">相关资源</span><span class="sxs-lookup"><span data-stu-id="f8fad-154">Related resources</span></span>
 
-- [<span data-ttu-id="52407-155">评估你的安全状况</span><span class="sxs-lookup"><span data-stu-id="52407-155">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
-- [<span data-ttu-id="52407-156">跟踪 Microsoft 安全功能分数历史记录和达到目标</span><span class="sxs-lookup"><span data-stu-id="52407-156">Track your Microsoft Secure Score history and meet goals</span></span>](microsoft-secure-score-history-metrics-trends.md)
-- [<span data-ttu-id="52407-157">即将推出的功能</span><span class="sxs-lookup"><span data-stu-id="52407-157">What's coming</span></span>](microsoft-secure-score-whats-coming.md)
+- [<span data-ttu-id="f8fad-155">评估你的安全状况</span><span class="sxs-lookup"><span data-stu-id="f8fad-155">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
+- [<span data-ttu-id="f8fad-156">跟踪你的 Microsoft 安全分数历史记录并实现目标</span><span class="sxs-lookup"><span data-stu-id="f8fad-156">Track your Microsoft Secure Score history and meet goals</span></span>](microsoft-secure-score-history-metrics-trends.md)
+- [<span data-ttu-id="f8fad-157">即将推出的功能</span><span class="sxs-lookup"><span data-stu-id="f8fad-157">What's coming</span></span>](microsoft-secure-score-whats-coming.md)
