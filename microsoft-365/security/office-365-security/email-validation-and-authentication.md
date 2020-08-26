@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 管理员可了解 Exchange Online Protection (EOP) 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
+ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826645"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866631"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
-电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，EOP 都按照标准来验证入站电子邮件：
+电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 在所有 Microsoft 365 组织中，EOP 使用以下标准验证入站电子邮件：
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -37,31 +37,34 @@ ms.locfileid: "46826645"
 
 电子邮件身份验证会验证发件人的电子邮件（例如，laura@contoso.com）是否合法，是否来自该电子邮件域的预期来源（例如，contoso.com。）
 
-本主题的其余部分将说明这些技术的工作原理，以及 EOP 如何使用它们来检查入站电子邮件。
+本文的其余部分将说明这些技术的工作原理，以及 EOP 如何使用它们来检查入站电子邮件。
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用电子邮件身份验证帮助防止欺骗
 
-DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户端中看到的发件人电子邮件地址）来防止欺骗。 目标电子邮件组织还可以验证该域已通过 SPF 或 DKIM 检查，这意味着域已通过身份验证，因此未被欺骗。
+DMARC 通过检查邮件中的**发件人**地址来防止欺骗。 **发件人**地址是用户在其电子邮件客户端中看到的发件人的电子邮件地址。 目标电子邮件组织还可以验证电子邮件域是否已通过 SPF 或 DKIM。 换言之，已对域进行身份验证，因此发件人的电子邮件地址不是欺骗电子邮件地址。
 
-但是，问题是 DNS 中用于电子邮件身份验证的 SPF、DKIM 和 DMARC 记录（统称为电子邮件身份验证策略）完全是可选的。 因此，具有强电子邮件身份验证策略的域（如 microsoft.com 和 skype.com）可以防止欺骗，而发布较弱电子邮件身份验证策略或根本没有策略的域则是欺骗活动攻击的主要目标。
+但是，SPF、DKIM 和 DMARC 的 DNS 记录（统称为电子邮件身份验证策略）是可选的。 具有强电子邮件身份验证策略的域（例如 microsoft.com 和 skype.com）可防止欺骗。 但是，如果域中的电子邮件身份验证策略较弱，或者根本没有策略，则会成为欺骗的主要目标。
 
 截至 2018 年 3 月，在财富 500 强企业中，只有 9% 的域发布了强电子邮件身份验证策略。 其余 91% 的公司可能被攻击者欺骗。 除非已落实其他某种电子邮件筛选机制，否则这些域中的欺骗发件人发送的电子邮件可能会送达用户。
 
 ![财富 500 强企业的 DMARC 策略](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-未跻身财富 500 强的已发布强电子邮件身份验证策略的中小型公司所占比例较小，而对于北美和西欧以外的电子邮件域，发布强策略的比例仍较小。
+发布强电子邮件身份验证策略的中小型公司的比例更小。 对于北美和西欧以外的电子邮件域，该数字甚至更小。
 
-这是一个大问题，因为企业可能不知道电子邮件身份验证的工作方式，但攻击者完全了解这一点并且会加以利用。 由于网络钓鱼是一个大问题，并且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用*隐式电子邮件身份验证*来检查入站电子邮件。
+缺乏强大的电子邮件身份验证策略非同小可。 组织可能不了解电子邮件身份验证的工作原理，但攻击者完全了解，这就使他们占据了优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用*隐式电子邮件身份验证*来检查入站电子邮件。
 
-隐式电子邮件身份验证建立在对常规电子邮件身份验证策略的各种扩展之上。 这些扩展包括发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技巧。 除非包含其他表明其为合法邮件的信号，否则从未使用电子邮件身份验证策略的域发送的邮件将被标记为欺骗邮件。
+隐式电子邮件身份验证是对常规电子邮件身份验证策略的扩展。 这些扩展包括发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技巧。 如果没有这些扩展的其他信号，从不使用电子邮件身份验证策略的域发送的邮件将被标记为欺骗。
 
 若要查看 Microsoft 的一般声明，请参阅[网络钓鱼第 2 部分 - Microsoft 365 中的增强反欺骗功能](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209)。
 
 ## <a name="composite-authentication"></a>复合身份验证
 
-虽然 SPF、DKIM 和 DMARC 本身都很有用，但如果邮件没有明确的身份验证记录，它们就无法传递充足的身份验证状态。 为此，Microsoft 开发了一种适用于隐式电子邮件身份验证的算法，将多个信号组合成一个称为_复合身份验证_（或简称为“compauth”）的单一值。 可以在邮件头的“**Authentication-Results**”标头中标记 compauth 值。
+如果域没有传统的 SPF、DKIM 和 DMARC 记录，则这些记录检查将无法传达足够的身份验证状态信息。 为此，Microsoft 开发了一种用于隐式电子邮件身份验证的算法。 该算法可将多个信号组合成一个称为_复合身份验证_（或简称为 `compauth`）的单一值。 可以在邮件头的“`compauth`Authentication-Results **”标头中标记 ** 值。
 
-> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> 理由=\<yyy\>
+```text
+Authentication-Results:
+   compauth=<fail | pass | softpass | none> reason=<yyy>
+```
 
 [Authentication-results 邮件头](anti-spam-message-headers.md#authentication-results-message-header)对这些值进行了说明。
 
@@ -73,12 +76,11 @@ DMARC 通过检查邮件中的**发件人**地址（用户在电子邮件客户�
 
 - 发送域可能缺少所需的 DNS 记录，或者记录配置错误。
 
-- 源域已正确配置 DNS 记录，但该域与“发件人”地址中的域不匹配。 SPF 和 DKIM 不需要在“发件人”地址中使用该域。 攻击者或合法服务部门可以注册一个域，为该域配置 SPF 和 DKIM，在“发件人”地址中使用一个完全不同的域，该邮件将通过 SPF 和 DKIM 验证。
+- 源域已正确配置 DNS 记录，但该域与“发件人”地址中的域不匹配。 SPF 和 DKIM 不需要在“发件人”地址中使用该域。 攻击者或合法服务部门可以注册一个域、为该域配置 SPF 和 DKIM，以及在“发件人”地址中使用一个完全不同的域。 来自此域中的发件人的邮件将通过 SPF 和 DKIM 验证。
 
-复合身份验证可以让这些邮件通过检查（否则它们将无法通过电子邮件验证检查）来解决这些限制。
+复合身份验证可以让这些原本无法通过身份验证检查的邮件通过检查，从而解决这些限制。
 
-> [!NOTE]
-> 正如前文所述，隐式电子邮件身份验证使用多个信号来确定邮件是否是合法邮件。 为简单起见，以下示例专注于电子邮件身份验证结果。 其他后端智能因素可以识别通过电子邮件身份验证的欺骗邮件，或未通过电子邮件身份验证的合法邮件。
+为简单起见，以下示例专注于电子邮件身份验证结果。 其他后端智能因素可以识别通过电子邮件身份验证的欺骗邮件，或未通过电子邮件身份验证的合法邮件。
 
 例如，fabrikam.com 域没有 SPF、DKIM 或 DMARC 记录。 来自 fabrikam.com 域中的发件人的邮件可能无法通过复合身份验证（请注意 `compauth` 的值和理由）：
 
@@ -91,7 +93,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 配置了 SPF，但没有 DKIM 记录，邮件可通过复合身份验证，因为通过 SPF 验证的域与“发件人地址”中的域一致：
+如果 fabrikam.com 配置了没有 DKIM 记录的 SPF 验证，则该邮件可以通过复合身份验证。 通过 SPF 检查的域与“发件人”地址中的域保持一致：
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -102,7 +104,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 配置了 SPF，但没有 DKIM 记录，邮件可通过复合身份验证，因为通过 SPF 验证的域与“发件人”地址中的域一致：
+如果 fabrikam.com 配置了没有 SPF 记录的 DKIM 验证，则该邮件可以通过复合身份验证。 DKIM 签名中的域与“发件人”地址中的域保持一致：
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -114,7 +116,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 SPF 中的域或 DKIM 签名与“发件人”地址中的域不一致，则该邮件可能无法通过复合身份验证：
+如果 SPF 或 DKIM 签名中的域与“发件人”地址中的域不一致，则该邮件可能无法通过复合身份验证：
 
 ```text
 Authentication-Results: spf=none (sender IP is 192.168.1.8)
@@ -128,7 +130,7 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>适用于发送未经身份验证的电子邮件的合法发件人的解决方案
 
-Microsoft 365 跟踪谁在向你的组织发送未经身份验证的电子邮件。 如果服务部门认为该发件人不合法，则会将其标记为复合身份验证失败。 要避免这种情况，可使用本小节中的建议。
+Microsoft 365 跟踪谁在向你的组织发送未经身份验证的电子邮件。 如果服务部门认为该发件人不合法，则会将来自该发件人的邮件标记为复合身份验证失败。 若要避免这种裁定，可使用本小节中的建议。
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>为你自己的域配置电子邮件身份验证
 
@@ -140,7 +142,7 @@ Microsoft 365 跟踪谁在向你的组织发送未经身份验证的电子邮件
 
 - [考虑为你的域设置 DMARC 记录](use-dmarc-to-validate-email.md)，以确定合法发件人。
 
-Microsoft 不提供针对 SPF、DKIM 和 DMARC 记录的详细实施指南。 但是，线上提供了很多信息。 此外，还有第三方公司致力于帮助你的组织设置电子邮件身份验证记录。
+Microsoft 不提供针对 SPF、DKIM 和 DMARC 记录的详细实施指南。 但是，线上提供了许多信息。 此外，还有一些第三方公司致力于帮助你的组织设置电子邮件身份验证记录。
 
 #### <a name="you-dont-know-all-sources-for-your-email"></a>你不知道电子邮件的所有来源
 
@@ -152,7 +154,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 此示例意味着，来自公司基础结构的电子邮件将通过电子邮件身份验证，但来自未知来源的电子邮件将回退为中性。
 
-Microsoft 365 会将来自你的企业基础结构的入站电子邮件视为已通过身份验证，但来自未识别来源的电子邮件可能仍被标记为欺骗（具体取决于 Microsoft 365 能否对它进行隐式身份验证）。 不过，这对于所有电子邮件都被 Microsoft 365 标记为欺骗邮件来说，仍是一项改进。
+Microsoft 365 会将来自公司基础结构的入站电子邮件视为已经过身份验证。 如果来自未识别来源的电子邮件未通过隐式身份验证，则可能仍被标记为欺骗。 不过，这对于所有电子邮件都被 Microsoft 365 标记为欺骗邮件来说，仍是一项改进。
 
 开始使用 `?all` 的 SPF 回退策略后，你可以逐步你的邮件发现和包含更多电子邮件来源，然后使用更严格的策略更新 SPF 记录。
 
@@ -202,4 +204,4 @@ Microsoft 365 会将来自你的企业基础结构的入站电子邮件视为已
 
 即使你对来自平台的电子邮件进行身份验证，也无法保证向 Microsoft 的邮件传递，但至少可确保 Microsoft 不会因为未经过身份验证而将你的电子邮件标记为垃圾邮件。
 
-有关服务提供商最佳实践的更多详细信息，请参阅[服务提供商的 M3AAWG 移动消息传递最佳实践](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)。
+有关服务提供商最佳实践的更多信息，请参阅[服务提供商的 M3AAWG 移动消息传递最佳实践](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)。

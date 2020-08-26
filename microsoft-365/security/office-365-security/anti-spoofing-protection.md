@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826657"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868875"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -162,3 +162,7 @@ Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理�
 ## <a name="considerations-for-anti-spoofing-protection"></a>反欺骗防护注意事项
 
 如果你是当前向 Microsoft 365 发送邮件的管理员，则需要确保你的电子邮件经过了正确的身份验证。 否则，它可能被标记为垃圾邮件或网络钓鱼。 有关详细信息，请参阅[适用于发送未经身份验证的电子邮件的合法发件人的解决方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
+
+单个用户（或管理员）“安全发件人”列表中的发件人将绕过部分筛选堆栈，包括欺骗防护。 有关详细信息，请参阅 [Outlook 安全发件人](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)。
+
+管理员应避免（如果可能）使用允许的发件人列表或允许的域列表。 这些发件人将绕过所有垃圾邮件、欺骗和网络钓鱼防护以及发件人身份验证（SPF、DKIM、DMARC）。 有关详细信息，请参阅[使用允许的发件人列表或允许的域列表](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists)。
