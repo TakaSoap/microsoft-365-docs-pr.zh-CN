@@ -1,5 +1,5 @@
 ---
-title: 记录管理入门
+title: Microsoft 365 中的记录管理入门
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？ 请阅读一些实用指南来完成入门。
-ms.openlocfilehash: bec70df94ce81ee7497b3ec236dca5649ce90cb7
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778633"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868897"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-准备好开始使用记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？ 请遵循下面的简要指南来完成入门：
+准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？ 请遵循下面的简要指南来完成入门：
 
 1. **了解记录管理解决方案**以及在将文档和电子邮件声明为记录时允许或阻止的操作：[了解记录管理](records-management.md)。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "46778633"
     - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
     - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
 
-## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>保留策略和保留标签的订阅和许可要求
+## <a name="subscription-and-licensing-requirements-for-records-management"></a>记录管理的订阅和许可要求
 
 许多不同的订阅都支持记录管理，并且用户的许可要求取决于你使用的功能。
 
@@ -49,9 +49,15 @@ ms.locfileid: "46778633"
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
-负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**记录管理**管理员角色组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**记录管理**管理员角色组，这将为其授予 **RecordManagement** 角色。
 
-只有在创建、配置和应用用于声明记录的保留标签时才需要这些权限。 配置这些标签的人员不需要访问该内容。
+此角色组中包含的权限不包括[处置评审和验证](disposition.md)所需的权限，并且即使是全局管理员，默认情况下也没有此权限。 若要管理处置，可通过创建自定义角色组或使用包含此角色的默认角色组（例如**合规性管理员**）来使用**处置管理** 角色。
+
+有关这些角色组和角色的详细信息，请参阅[安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+
+只有在创建、配置和应用用于声明记录和管理处置的保留标签时才需要这些权限。 配置这些标签的人员不需要访问该内容。
 
 ## <a name="common-scenarios-for-records-management"></a>记录管理常见方案
 
