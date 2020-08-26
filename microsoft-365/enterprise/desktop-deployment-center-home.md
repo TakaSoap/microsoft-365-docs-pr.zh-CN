@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 如何获取与弃用的桌面部署中心等效的资源。
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686126"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898012"
 ---
 # <a name="desktop-deployment-center-deprecated"></a> (弃用的桌面部署中心) 
 
@@ -33,7 +33,7 @@ ms.locfileid: "46686126"
 
 您还可以 [从 Microsoft 结构中查看桌面部署系列视频](https://www.aka.ms/watchhowtoshift)。
 
-你也可以[寻求帮助](https://aka.ms/mddhelp)，以通过 Microsoft 合作伙伴和 FastTrack 服务进行桌面部署。
+你还可以从 Microsoft 合作伙伴和 [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)中查找有关你的桌面部署的帮助。
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 

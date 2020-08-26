@@ -10,30 +10,30 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597493"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903867"
 ---
 # <a name="new-microsoft-edge-app"></a>新建 Microsoft Edge 应用
 
-新的[Microsoft Edge 浏览器](https://www.microsoft.com/edge)在浏览过程中提供了世界一流的性能、更高的隐私、更高的工作效率和更多价值。 Microsoft 托管桌面提供了在您的环境中部署新边缘浏览器的公共预览。
+新的 [Microsoft Edge 浏览器](https://www.microsoft.com/edge) 在浏览过程中提供了世界一流的性能、更高的隐私、更高的工作效率和更多价值。 Microsoft 托管桌面提供了在您的环境中部署新边缘浏览器的公共预览。
 
 ## <a name="initial-deployment"></a>初始部署
 
 若要将 Microsoft 托管桌面设备迁移到新的 Microsoft Edge 浏览器，请通过 Microsoft 托管桌面门户文件提供 IT 支持票证。 在您对票证进行存档时，我们会将边缘稳定通道部署到测试组，然后在每个后续的部署组中每隔24小时部署它。 若要暂停部署，请文件另一个票证请求操作保留。
 
-[Beta 频道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 也可用于组织内的请求实现代表验证。 Microsoft 托管桌面将根据需要将应用程序部署到测试和第一组，以便除了稳定通道之外，所有这些用户都具有 Beta 通道。 对于需要访问 Beta 频道的任何其他用户，请将其添加到新式的 " **Workplace Edge Beta users** " 组，并让他们从公司门户安装它
+[Beta 通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)也适用于组织内部的代表验证请求。 Microsoft 托管桌面将根据需要将应用程序部署到测试和第一组，以便除了稳定通道之外，所有这些用户都具有 Beta 通道。 对于需要访问 Beta 频道的任何其他用户，请将其添加到新式的 " **Workplace Edge Beta users** " 组，并让他们从公司门户安装它
 
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge 的更新
 
-Microsoft 托管桌面部署 Microsoft Edge 的[稳定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)，每六周自动更新一次。 对稳定通道的更新由 Microsoft Edge 产品组[逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)进行，以确保为客户提供最佳体验。 
+Microsoft 托管桌面部署 Microsoft Edge 的 [稳定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) ，每六周自动更新一次。 对稳定通道的更新由 Microsoft Edge 产品组 [逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) 进行，以确保为客户提供最佳体验。 
 
-[Beta 通道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 部署到组织内的代表验证的测试和第一组中的设备。 此渠道完全受支持，并在每六周的时间内自动更新一次新功能。
+[Beta 通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)部署到测试和第一个组中的设备，用于组织内的代表验证。 此渠道完全受支持，并在每六周的时间内自动更新一次新功能。
 
-若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge[更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge [更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge Beta 通道
 
@@ -49,7 +49,7 @@ Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策
 #### <a name="extension-installation-blocklist"></a>扩展安装阻止列表
 **默认值：** 各种
 
-Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在具有 Chromium 扩展模型的已知风险 sassociated，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
+Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chrome 扩展。 存在与 Chromium 扩展模型关联的已知风险，其中包括数据丢失保护、隐私和可能危害设备的其他风险。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允许没有管理员权限的情况下 (安装用户级别的本机邮件主机) 
 
@@ -71,7 +71,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 建议您不要启用此设置，因为它允许用户访问具有 SSL 错误的网站。
 
-### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智能屏幕
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>配置 Windows Defender SmartScreen
 
@@ -97,7 +97,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 禁用
 
-由于相关的安全风险，建议不要使用 Flash。 如果仍有依赖于 Flash 的进程，请设置**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 策略以为需要它的网站启用 Flash。 如果不能将允许的网站列表维护为使用 Flash，请将更改请求更改为**单击以播放**，这样用户就可以选择何时运行 flash。
+由于相关的安全风险，建议不要使用 Flash。 如果仍有依赖于 Flash 的进程，请设置 **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 策略以为需要它的网站启用 Flash。 如果不能将允许的网站列表维护为使用 Flash，请将更改请求更改为 **单击以播放**，这样用户就可以选择何时运行 flash。
 
 ### <a name="password-manager"></a>密码管理器
 
@@ -118,7 +118,7 @@ IE 模式在 Microsoft Edge 中，便于在单个浏览器中使用您的组织�
 默认情况下，设备设置为使用 Internet Explorer 模式，但您可以将其设置为在独立 Internet Explorer 11 窗口中打开网站。 若要更改此文件，请提供支持请求。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>将网站添加到企业模式网站列表
-若要在 Internet Explorer 模式下打开网站，必须将其包含在[企业网站列表](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 维护和部署企业网站列表是您的责任。 有关详细信息，请参阅[使用配置企业模式站点列表策略配置](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+若要在 Internet Explorer 模式下打开网站，必须将其包含在 [企业网站列表](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 维护和部署企业网站列表是您的责任。 有关详细信息，请参阅 [使用配置企业模式站点列表策略配置](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>其他设置
 
@@ -143,18 +143,18 @@ Microsoft 托管桌面不支持基本或摘要式身份验证方案。
 
 ## <a name="settings-you-manage"></a>您管理的设置
 
-您可以使用 Microsoft Intune 中的 "管理模板" 配置文件来部署之前未介绍的任何 Microsoft Edge 设置。 有关详细信息，请参阅[Configure Microsoft Edge policy settings With Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果要评估当前未包含在 Intune 中的 Microsoft Edge 管理模板中的策略，可以在 Intune 中使用 Windows 10 设备的自定义设置。
+您可以使用 Microsoft Intune 中的 "管理模板" 配置文件来部署之前未介绍的任何 Microsoft Edge 设置。 有关详细信息，请参阅 [Configure Microsoft Edge policy settings With Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果要评估当前未包含在 Intune 中的 Microsoft Edge 管理模板中的策略，可以在 Intune 中使用 Windows 10 设备的自定义设置。
 
 ### <a name="enabling-specific-chrome-extensions"></a>启用特定的部件版式扩展
 
-管理模板提供了使用 Microsoft Intune 部署特定 Chrome 扩展的设置。 您可以在 "**计算机配置 > Microsoft Edge > 扩展中找到它，> 允许安装特定的扩展**。
+管理模板提供了使用 Microsoft Intune 部署特定 Chrome 扩展的设置。 您可以在 " **计算机配置 > Microsoft Edge > 扩展中找到它，> 允许安装特定的扩展**。
 
 ### <a name="install-extensions-silently"></a>自动安装扩展
 
-您还可以使用管理模板设置 Microsoft Edge 以安装分机，而不向用户发出警告。 您可以在 "**计算机配置" > Microsoft Edge > 扩展中找到它，> 控制自动安装哪些扩展**。
+您还可以使用管理模板设置 Microsoft Edge 以安装分机，而不向用户发出警告。 您可以在 " **计算机配置" > Microsoft Edge > 扩展中找到它，> 控制自动安装哪些扩展**。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新策略
-若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge[更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge [更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="other-common-enterprise-policies"></a>其他常见的企业策略
 

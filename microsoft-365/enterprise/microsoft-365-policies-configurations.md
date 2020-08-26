@@ -1,14 +1,14 @@
 ---
 title: 标识和设备访问配置-适用于企业的 Microsoft 365
 description: 介绍了用于部署安全电子邮件、文档和应用策略和配置的 Microsoft 建议和核心概念。
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686622"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898160"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -64,15 +64,14 @@ Microsoft 知道，某些组织有独特的环境要求或复杂性。 如果你
 
 本指南向您介绍如何针对每种级别的保护对标识和设备实施保护。 使用此指南作为组织的起点，并调整策略以满足组织的特定要求。
 
-请务必在数据、标识和设备中使用一致的保护级别。 例如，如果您实施了本指南，请务必保护您的数据处于可比较的级别。 这些体系结构模型显示了可比较的功能。
+请务必在数据、标识和设备中使用一致的保护级别。 例如，如果您实施了本指南，请务必保护您的数据处于可比较的级别。 
 
-**Office 365 的标识和设备保护**<br/>
+Office 365 体系结构模型的 **标识和设备保护** 显示了可比较的功能。
+
 ![海报 "适用于 Office 365 的标识和设备保护" 的缩略图](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Office 365 中的文件保护解决方案**<br/>
-![海报 "Office 365 中的文件保护解决方案" 的缩略图](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+此外，请参阅为 [数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) 解决方案，以保护存储在 Microsoft 365 中的信息。
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性和生产力权衡
 

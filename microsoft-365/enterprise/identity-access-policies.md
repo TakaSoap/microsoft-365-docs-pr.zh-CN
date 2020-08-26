@@ -1,13 +1,13 @@
 ---
 title: 常见标识和设备访问策略-适用于企业的 Microsoft 365 |Microsoft 文档
 description: 介绍针对有关如何应用标识和设备访问策略以及配置的 Microsoft 建议的策略。
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685970"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898112"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -250,7 +250,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Android 企业版
 - iOS/iPadOS
 - macOS
-- 此设置在以下类型的设备上可用：
+- Windows Phone 8.1
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
@@ -302,7 +302,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|中||
+|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|Medium||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>要求兼容的电脑 (但不符合合规性的电话和平板电脑) 

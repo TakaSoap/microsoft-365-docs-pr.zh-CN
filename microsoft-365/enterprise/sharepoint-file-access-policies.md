@@ -1,13 +1,13 @@
 ---
 title: 推荐的安全文档策略-适用于企业的 Microsoft 365 |Microsoft 文档
 description: 介绍 Microsoft 建议中有关如何保护 SharePoint 文件访问的策略。
-author: BrendaCarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1cd56b7b02dedfbdb544b49410d231f08a0d4c67
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695034"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898148"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保护 SharePoint 网站和文件的策略建议
 
