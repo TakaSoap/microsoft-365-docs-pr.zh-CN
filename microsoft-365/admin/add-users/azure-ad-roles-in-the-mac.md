@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 管理中心中管理这些 Azure 管理员角色。
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432455"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898024"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Azure Active Directory 角色
 
@@ -68,6 +68,7 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |消息中心隐私读取者     |    在消息中心访问数据隐私消息，获取电子邮件通知。     |
 |消息中心读取者     | 在消息中心中读取和共享常规消息，获取每周的电子邮件摘要，对用户、组、域和订阅具有只读访问权限。     |
 |Office 应用管理员    |   为 Office 管理基于云的策略，并管理用户在 Office 应用中看到的新增内容。   |
+|密码管理员    |   重置非管理员或以下用户角色的密码：目录读取者、来宾邀请者，或密码管理员。 此角色无法授予管理服务请求或监视服务运行状况的能力。   |
 |Power BI 管理员    |   可完全访问 Power Bl 管理任务、管理服务请求和监视服务运行状况。   |
 |Power 平台管理员     |    可完全访问 Microsoft Dynamics 365、PowerApps、数据丢失防护策略和 Microsoft Flow。     |
 |特权角色管理员     |    管理角色分配和 Privileged Identity Management 的所有访问控制功能。     |

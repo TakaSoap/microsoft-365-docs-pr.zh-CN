@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560915"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898124"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -69,7 +69,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 | Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer、Power Apps | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
 ||||
 
-有关远程工作者的安全性和合规性标准，请参阅 [部署远程工作者的安全性和合规性](empower-people-to-work-remotely-security-compliance.md)
+有关安全和合规性条件，请参阅[为远程工作者部署安全与合规](empower-people-to-work-remotely-security-compliance.md)。
 
 <a name="poster"></a>有关此解决方案的两页摘要，请参阅[“为远程工作者助力”文章](../downloads/empower-remote-workers.pdf)。
 
