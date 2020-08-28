@@ -1,5 +1,5 @@
 ---
-title: 设置 Windows 10 设备的应用程序保护设置
+title: 编辑或设置 Windows 10 设备的应用程序保护设置
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -28,48 +28,46 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: 了解如何创建应用管理策略并保护用户的个人 Windows 10 设备上的工作文件。
-ms.openlocfilehash: df10470c6bd7aad2f35700a267c4d24d949f569c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: 了解如何创建或编辑用户的个人 Windows 10 设备上的应用管理策略和保护工作文件。
+ms.openlocfilehash: f85a59649e43c141b62091337b842a490d411833
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470859"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289191"
 ---
-# <a name="set-application-protection-settings-for-windows-10-devices"></a><span data-ttu-id="d7926-103">设置 Windows 10 设备的应用程序保护设置</span><span class="sxs-lookup"><span data-stu-id="d7926-103">Set application protection settings for Windows 10 devices</span></span>
+# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a><span data-ttu-id="2a047-103">设置或编辑 Windows 10 设备的应用程序保护设置</span><span class="sxs-lookup"><span data-stu-id="2a047-103">Set or edit application protection settings for Windows 10 devices</span></span>
 
-<span data-ttu-id="d7926-104">本文适用于 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="d7926-104">This article applies to Microsoft 365 Business Premium.</span></span>
+<span data-ttu-id="2a047-104">本文适用于 Microsoft 365 商业高级版。</span><span class="sxs-lookup"><span data-stu-id="2a047-104">This article applies to Microsoft 365 Business Premium.</span></span>
 
-## <a name="create-an-app-management-policy-for-windows-10"></a><span data-ttu-id="d7926-105">创建适用于 Windows 10 的应用管理</span><span class="sxs-lookup"><span data-stu-id="d7926-105">Create an app management policy for Windows 10</span></span>
+## <a name="edit-an-app-management-policy-for-windows-10"></a><span data-ttu-id="2a047-105">编辑适用于 Windows 10 的应用程序管理策略</span><span class="sxs-lookup"><span data-stu-id="2a047-105">Edit an app management policy for Windows 10</span></span>
 
-<span data-ttu-id="d7926-106">如果用户在个人 Windows 10 设备上执行工作任务，也可以在该类设备上保护你的数据。</span><span class="sxs-lookup"><span data-stu-id="d7926-106">If your users have personal Windows 10 devices on which they perform work tasks, you can protect your data on those devices as well.</span></span>
+1. <span data-ttu-id="2a047-106">转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。</span><span class="sxs-lookup"><span data-stu-id="2a047-106">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span>     
+2. <span data-ttu-id="2a047-107">在左侧导航中，选择 " **设备** \> **策略** "。</span><span class="sxs-lookup"><span data-stu-id="2a047-107">On the left nav, choose **Devices** \> **Policies** .</span></span>
+1. <span data-ttu-id="2a047-108">选择现有的 Windows 应用策略，然后进行 **编辑**。</span><span class="sxs-lookup"><span data-stu-id="2a047-108">Choose an existing Windows app policy and then **Edit**.</span></span>
+1. <span data-ttu-id="2a047-109">选择要更改的设置旁边的 " **编辑** "，然后单击 " **保存**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-109">Choose **Edit** next to a setting you want to change and then **Save**.</span></span>
+
+## <a name="create-an-app-management-policy-for-windows-10"></a><span data-ttu-id="2a047-110">创建适用于 Windows 10 的应用管理</span><span class="sxs-lookup"><span data-stu-id="2a047-110">Create an app management policy for Windows 10</span></span>
+
+<span data-ttu-id="2a047-111">如果用户在个人 Windows 10 设备上执行工作任务，也可以在该类设备上保护你的数据。</span><span class="sxs-lookup"><span data-stu-id="2a047-111">If your users have personal Windows 10 devices on which they perform work tasks, you can protect your data on those devices as well.</span></span>
   
-1. <span data-ttu-id="d7926-107">转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。</span><span class="sxs-lookup"><span data-stu-id="d7926-107">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span> 
+1. <span data-ttu-id="2a047-112">转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> 的管理中心。</span><span class="sxs-lookup"><span data-stu-id="2a047-112">Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.</span></span> 
+2. <span data-ttu-id="2a047-113">在左侧导航中，选择 " **设备** \> **策略**" " \> **添加**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-113">On the left nav, choose **Devices** \> **Policies** \> **Add**.</span></span>
+3. <span data-ttu-id="2a047-114">在" **添加策略**"窗格中，输入此策略的唯一名称。</span><span class="sxs-lookup"><span data-stu-id="2a047-114">On the **Add policy** pane, enter a unique name for this policy.</span></span> 
+4. <span data-ttu-id="2a047-115">在" **策略类型**"下，选择" **适用于 Windows 10 的应用程序管理**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-115">Under **Policy type**, choose **Application Management for Windows 10**.</span></span>
+5. <span data-ttu-id="2a047-116">在 " **设备类型**" 下，选择 " **个人** 或 **公司所有者**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-116">Under **Device type**, choose either **Personal** or **Company Owned**.</span></span>
+6. <span data-ttu-id="2a047-117">将自动打开" **加密工作文件**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-117">The **Encrypt work files** is turned on automatically.</span></span> 
+7. <span data-ttu-id="2a047-118">如果不希望用户在其电脑上保存工作文件，请将" **阻止用户将公司数据复制到个人文件，并强制其将工作文件保存到 OneDrive for Business**"设置为" **开**"。</span><span class="sxs-lookup"><span data-stu-id="2a047-118">Set **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** to **On** if you don't want the users to save work files on their PC.</span></span> 
+9. <span data-ttu-id="2a047-119">扩展 **Windows 设备上的恢复数据**。</span><span class="sxs-lookup"><span data-stu-id="2a047-119">Expand **Recover data on Windows devices**.</span></span> <span data-ttu-id="2a047-120">我们建议您 **将其打开**。</span><span class="sxs-lookup"><span data-stu-id="2a047-120">We recommend that you turn it **On**.</span></span>
+    <span data-ttu-id="2a047-121">必须先创建一个数据恢复代理证书，才能浏览到该证书的位置。</span><span class="sxs-lookup"><span data-stu-id="2a047-121">Before you can browse to the location of the Data Recovery Agent certificate, you have to first create one.</span></span> <span data-ttu-id="2a047-122">有关说明，请参阅 [创建和验证加密文件系统 (EFS) Data Recovery 代理 (DRA) 证书](https://go.microsoft.com/fwlink/p/?linkid=853700)。</span><span class="sxs-lookup"><span data-stu-id="2a047-122">For instructions, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://go.microsoft.com/fwlink/p/?linkid=853700).</span></span>
     
-2. <span data-ttu-id="d7926-108">在左侧导航中，选择 "**设备** \> **策略**" " \> **添加**"。</span><span class="sxs-lookup"><span data-stu-id="d7926-108">On the left nav, choose **Devices** \> **Policies** \> **Add**.</span></span>
-
-3. <span data-ttu-id="d7926-109">在" **添加策略**"窗格中，输入此策略的唯一名称。</span><span class="sxs-lookup"><span data-stu-id="d7926-109">On the **Add policy** pane, enter a unique name for this policy.</span></span> 
-    
-4. <span data-ttu-id="d7926-110">在" **策略类型**"下，选择" **适用于 Windows 10 的应用程序管理**"。</span><span class="sxs-lookup"><span data-stu-id="d7926-110">Under **Policy type**, choose **Application Management for Windows 10**.</span></span>
-    
-5. <span data-ttu-id="d7926-111">在 "**设备类型**" 下，选择 "**个人**或**公司所有者**"。</span><span class="sxs-lookup"><span data-stu-id="d7926-111">Under **Device type**, choose either **Personal** or **Company Owned**.</span></span>
-    
-6. <span data-ttu-id="d7926-112">将自动打开" **加密工作文件**"。</span><span class="sxs-lookup"><span data-stu-id="d7926-112">The **Encrypt work files** is turned on automatically.</span></span> 
-    
-7. <span data-ttu-id="d7926-113">如果不希望用户在其电脑上保存工作文件，请将" **阻止用户将公司数据复制到个人文件，并强制其将工作文件保存到 OneDrive for Business**"设置为" **开**"。</span><span class="sxs-lookup"><span data-stu-id="d7926-113">Set **Prevent users from copying company data to personal files and force them to save work files to OneDrive for Business** to **On** if you don't want the users to save work files on their PC.</span></span> 
-    
-9. <span data-ttu-id="d7926-114">扩展**Windows 设备上的恢复数据**。</span><span class="sxs-lookup"><span data-stu-id="d7926-114">Expand **Recover data on Windows devices**.</span></span> <span data-ttu-id="d7926-115">我们建议您**将其打开**。</span><span class="sxs-lookup"><span data-stu-id="d7926-115">We recommend that you turn it **On**.</span></span>
-    
-    <span data-ttu-id="d7926-116">必须先创建一个数据恢复代理证书，才能浏览到该证书的位置。</span><span class="sxs-lookup"><span data-stu-id="d7926-116">Before you can browse to the location of the Data Recovery Agent certificate, you have to first create one.</span></span> <span data-ttu-id="d7926-117">有关说明，请参阅[创建和验证加密文件系统（EFS）数据恢复代理（DRA）证书](https://go.microsoft.com/fwlink/p/?linkid=853700)。</span><span class="sxs-lookup"><span data-stu-id="d7926-117">For instructions, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](https://go.microsoft.com/fwlink/p/?linkid=853700).</span></span>
-    
-    <span data-ttu-id="d7926-118">默认情况下，使用存储在设备上并与用户配置文件相关联的密钥对工作文件进行加密。</span><span class="sxs-lookup"><span data-stu-id="d7926-118">By default, work files are encrypted using a secret key that is stored on the device and associated with the user's profile.</span></span> <span data-ttu-id="d7926-119">只有该用户可以打开和解密文件。</span><span class="sxs-lookup"><span data-stu-id="d7926-119">Only the user can open and decrypt the file.</span></span> <span data-ttu-id="d7926-120">但是，如果设备丢失或用户被删除，文件可能停滞在加密状态。</span><span class="sxs-lookup"><span data-stu-id="d7926-120">However, if a device is lost or a user is removed, a file can be stuck in an encrypted state.</span></span> <span data-ttu-id="d7926-121">管理员可以使用数据恢复代理（DRA）证书对文件进行解密。</span><span class="sxs-lookup"><span data-stu-id="d7926-121">An admin can use the Data Recovery Agent (DRA) certificate to decrypt the file.</span></span>
+    <span data-ttu-id="2a047-123">默认情况下，使用存储在设备上并与用户配置文件相关联的密钥对工作文件进行加密。</span><span class="sxs-lookup"><span data-stu-id="2a047-123">By default, work files are encrypted using a secret key that is stored on the device and associated with the user's profile.</span></span> <span data-ttu-id="2a047-124">只有该用户可以打开和解密文件。</span><span class="sxs-lookup"><span data-stu-id="2a047-124">Only the user can open and decrypt the file.</span></span> <span data-ttu-id="2a047-125">但是，如果设备丢失或用户被删除，文件可能停滞在加密状态。</span><span class="sxs-lookup"><span data-stu-id="2a047-125">However, if a device is lost or a user is removed, a file can be stuck in an encrypted state.</span></span> <span data-ttu-id="2a047-126">管理员可以使用数据恢复代理 (DRA) 证书来解密文件。</span><span class="sxs-lookup"><span data-stu-id="2a047-126">An admin can use the Data Recovery Agent (DRA) certificate to decrypt the file.</span></span>
     
     ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. <span data-ttu-id="d7926-123">如果要添加其他域或 SharePoint Online 位置，请展开 "**保护其他网络和云位置**"，以确保所有列出的应用程序中的文件都受到保护。</span><span class="sxs-lookup"><span data-stu-id="d7926-123">Expand **Protect additional network and cloud locations** if you want to add additional domains or SharePoint Online locations to make sure that files in all the listed apps are protected.</span></span> <span data-ttu-id="d7926-124">如需为某字段输入多个项，请使用分号 (;) 进行分隔。</span><span class="sxs-lookup"><span data-stu-id="d7926-124">If you need to enter more than one item for either field, use a semicolon (;) between the items.</span></span>
+10. <span data-ttu-id="2a047-128">如果要添加其他域或 SharePoint Online 位置，请展开 " **保护其他网络和云位置** "，以确保所有列出的应用程序中的文件都受到保护。</span><span class="sxs-lookup"><span data-stu-id="2a047-128">Expand **Protect additional network and cloud locations** if you want to add additional domains or SharePoint Online locations to make sure that files in all the listed apps are protected.</span></span> <span data-ttu-id="2a047-129">如需为某字段输入多个项，请使用分号 (;) 进行分隔。</span><span class="sxs-lookup"><span data-stu-id="2a047-129">If you need to enter more than one item for either field, use a semicolon (;) between the items.</span></span>
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
-11. <span data-ttu-id="d7926-p105">Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.</span><span class="sxs-lookup"><span data-stu-id="d7926-p105">Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.</span></span>
-    
-12. <span data-ttu-id="d7926-128">最后，选择" **添加**"以保存该策略，并将其分配到设备。</span><span class="sxs-lookup"><span data-stu-id="d7926-128">Finally, choose **Add** to save the policy, and assign it to devices.</span></span> 
+11. <span data-ttu-id="2a047-p104">Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.</span><span class="sxs-lookup"><span data-stu-id="2a047-p104">Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.</span></span>
+12. <span data-ttu-id="2a047-133">最后，选择" **添加**"以保存该策略，并将其分配到设备。</span><span class="sxs-lookup"><span data-stu-id="2a047-133">Finally, choose **Add** to save the policy, and assign it to devices.</span></span> 
