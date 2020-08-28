@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，将员工数据从其组织的人力资源 (HR) 系统导入 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255765"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289247"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以将 HR 数据导入 (预览) 
 
@@ -201,15 +201,15 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步骤2：在 Azure Active Directory 中创建应用程序
 
-下一步是在 Azure Active Directory (AAD) 中创建和注册新应用程序。 应用将与您在步骤3中创建的 HR 连接器相对应。 创建此应用程序将允许 AAD 在运行 HR 连接器时对其进行身份验证，并尝试访问你的组织。 此应用程序还将用于对您在步骤4中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 在创建此 AAD 应用过程中，请务必保存以下信息。 这些值将在步骤3和步骤4中使用。
+下一步是在 Azure Active Directory (Azure AD) 中创建和注册新应用程序。 应用将与您在步骤3中创建的 HR 连接器相对应。 创建此应用程序将允许 Azure AD 在运行 HR 连接器时对其进行身份验证，并尝试访问你的组织。 此应用程序还将用于对您在步骤4中运行的脚本进行身份验证，以将 HR 数据上传到 Microsoft 云。 在创建此 Azure AD 应用过程中，请务必保存以下信息。 这些值将在步骤3和步骤4中使用。
 
-- AAD 应用程序 ID (也称为 " *应用程序* id" 或 " *客户端 id* ") 
+- Azure AD 应用程序 ID (也称为 " *应用程序 id* " 或 " *客户端 id* ") 
 
-- AAD 应用程序机密 (也称为 *客户端密码*) 
+- Azure AD 应用程序机密 (也称为 *客户端密码*) 
 
 - 租户 Id (也称为 *目录 Id*) 
 
-有关在 AAD 中创建应用程序的分步说明，请参阅 [向 Microsoft identity Platform 注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+有关在 Azure AD 中创建应用程序的分步说明，请参阅 [使用 Microsoft identity Platform 注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤3：创建 HR 连接器
 
@@ -225,7 +225,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 4. 在 " **设置连接"** 页面上，执行以下操作，然后单击 " **下一步**"：
 
-   a. 为您在步骤2中创建的 Azure 应用程序键入或粘贴 AAD 应用程序 ID。
+   a. 键入或粘贴您在步骤2中创建的 Azure 应用程序的 Azure AD 应用程序 ID。
 
    b. 键入 HR 连接器的名称。
 
@@ -294,8 +294,8 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
    |**参数**|**说明**
    |:-----|:-----|:-----|
    |`tenantId`|这是您在步骤2中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏中获取组织的租户 Id。 这用于标识你的组织。|
-   |`appId` |这是您在第2步中的 Azure AD 中创建的应用程序的 AAD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
-   |`appSecret`|这是在步骤2中的 Azure AD 中创建的应用程序的 AAD 应用程序密码。 这也用于身份验证。|
+   |`appId` |这是您在第2步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
+   |`appSecret`|这是您在第2步中在 Azure AD 中创建的应用程序的 Azure AD 应用程序密码。 这也用于身份验证。|
    |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
    |`csvFilePath`|这是 CSV 文件 (与您在步骤1中创建的脚本) 存储在同一系统上的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
    |||
@@ -307,9 +307,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
     ```
 
    如果上载成功，则脚本将显示 **上传成功** 消息。
-   
+
    > [!NOTE]
-   > 如果由于 excution 策略而运行上一个命令时遇到问题，请参阅 [关于执行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 和 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以获取有关设置执行策略的指南。 
+   > 如果由于执行策略而运行上一个命令时遇到问题，请参阅 [关于执行策略](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 和 [ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以获取有关设置执行策略的指南。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步骤5：监视 HR 连接器
 

@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e6311c0ad11d68c870b0c8185974b8913735e2a2
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530171"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289269"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射的驱动器
 
@@ -24,7 +24,7 @@ ms.locfileid: "46530171"
 - 迁移团队使用的映射驱动器以将文件共享到 SharePoint Online。 
 - 将使用本地文件共享的任何应用程序现代化或替换为删除该要求。
   
-新式化这些服务将允许在 Microsoft 托管桌面中获得最佳的最终用户体验。 Microsoft FastTrack 服务可帮助你使用 Microsoft 云服务新式化你的环境。 您可以检查是否符合[符合条件的服务和计划](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans)的 FastTrack 服务，然后直接与他们联系以准备好 Microsoft 托管桌面。 有关 FastTrack OneDrive for Business 或 SharePoint Online 迁移的背景，请参阅[数据迁移](https://docs.microsoft.com/fasttrack/o365-data-migration)。
+新式化这些服务将允许使用 Microsoft 托管桌面的最佳用户体验。 Microsoft FastTrack 服务可帮助你使用 Microsoft 云服务新式化你的环境。 您可以检查是否符合 [符合条件的服务和计划](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) 的 FastTrack 服务，然后直接与他们联系以准备好 Microsoft 托管桌面。 有关 FastTrack OneDrive for Business 或 SharePoint Online 迁移的背景，请参阅 [数据迁移](https://docs.microsoft.com/fasttrack/o365-data-migration)。
 
 ## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Microsoft 托管桌面上的映射驱动器
  
@@ -34,7 +34,7 @@ ms.locfileid: "46530171"
 
 - 将需要为 Microsoft 托管桌面设备映射的文件共享位置的所有 UNC 路径 
 - 需要访问这些文件共享位置的用户组 
-- 任何需要分配的特定驱动器号（如有必要）
+- 必要时 (需要分配的任何特定驱动器号) 
 
 例如：
 
@@ -48,8 +48,8 @@ ms.locfileid: "46530171"
  
 请确保无法避免映射的驱动器，并且在提交任何服务请求之前仔细查看了要求。 然后，按照以下步骤操作：
 
-1. 导航到[Microsoft 托管桌面门户](https://aka.ms/mmdportal)。  
-2. 通过 "**支持 > 支持请求**" 部分提交标题为 "映射驱动器部署" 的支持请求，并提供所有必需的文件共享详细信息。  
+1. 导航到 [Microsoft 托管桌面门户](https://aka.ms/mmdportal)。  
+2. 通过 " **支持 > 支持请求** " 部分提交标题为 "映射驱动器部署" 的支持请求，并提供所有必需的文件共享详细信息。  
 3. Microsoft 托管桌面 IT 操作将在请求完成时使用支持请求更新通知。 最初，此配置将仅部署到测试部署组中的设备。  
 4. 您必须测试和确认由 Microsoft 托管桌面 IT 操作部署的配置是否按预期工作。 使用支持请求中的 "讨论" 选项卡进行答复，以在完成测试后通知 Microsoft 托管的桌面 IT 操作。  
 5. Microsoft 托管桌面 IT 操作团队随后会将配置部署到其他部署组。 

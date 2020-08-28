@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在此处查找将域从 Microsoft 转移到另一个注册器的步骤。 '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788973"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289167"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>将域从 Microsoft 传输到另一台主机
 
@@ -43,7 +43,7 @@ ms.locfileid: "46788973"
 
 1. 在管理中心中，转到  **设置**   >  **域**。
 
-2. <在 " **域** " 页上，选择要转移到其他域注册机构的 Microsoft 365 域，然后选择 " **检查运行状况**"。
+2. 在 " **域** " 页上，选择要转移到其他域注册机构的 Microsoft 365 域，然后选择 " **检查运行状况**"。
 
 3. 在页面顶部，选择 " **转移域**"。
 
