@@ -13,16 +13,16 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528032"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289599"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
-本文列出了[Microsoft 托管桌面文档](index.yml)中的新增和更新的文章。 "已更新" 的文章是指那些具有材料添加或更正的文章--不列出更正拼写、样式或格式问题等次要修补程序。 您可以通过访问[GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库，随时查看特定提交的历史记录（包括任何更改的详细信息）。
+本文列出了 [Microsoft 托管桌面文档](index.yml)中的新增和更新的文章。 "已更新" 的文章是指那些具有材料添加或更正的文章--不列出更正拼写、样式或格式问题等次要修补程序。 您始终可以查看特定提交 (的历史记录，其中包括通过访问 [GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库) 任何更改的详细信息。
 
 
 ## <a name="july-2020"></a>2020 年 7 月
@@ -51,7 +51,7 @@ ms.locfileid: "46528032"
 ## <a name="may-2020"></a>2020 年 5 月
 新增或已更改的文章 | 说明
 --- | ---
-[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取用户帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [合作伙伴注册设备的步骤](get-started/register-devices-partner.md) | 更新的文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
@@ -121,7 +121,7 @@ ms.locfileid: "46528032"
 新增或已更改的文章 | 说明
 --- | ---
 [服务计划的例外情况](service-description/customizing.md) | 新增文章
-[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取用户帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
 [服务更改和通信](service-description/servicechanges.md) | 新增文章
 [自行注册新设备](get-started/register-devices-self.md) | 更新的文章
@@ -135,7 +135,7 @@ ms.locfileid: "46528032"
 新增或已更改的文章 | 说明
 --- | ---
 [Microsoft 托管桌面技术](intro/technologies.md) | 更新的文章
-[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取用户帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 托管桌面设备](service-description/device-list.md) | 更新的文章
 [部署和跟踪可配置的设置-Microsoft 托管桌面](working-with-managed-desktop/config-setting-deploy.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
@@ -150,7 +150,7 @@ ms.locfileid: "46528032"
 --- | ---
 [使用 Microsoft 咨询服务](get-ready/apps-mcs.md) | 更新的文章
 [Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
-[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[获取用户帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
 [Microsoft 托管桌面技术](intro/technologies.md) | 更新的文章
 
@@ -183,7 +183,7 @@ ms.locfileid: "46528032"
 [为 Microsoft 托管桌面准备映射的驱动器](get-ready/mapped-drives.md) | 新增文章
 [为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 新增文章
 [订购 Microsoft 托管桌面设备](get-started/devices.md) | 更新的文章
-[获取针对最终用户的帮助](working-with-managed-desktop/end-user-support.md) | 新增文章
+[获取用户帮助](working-with-managed-desktop/end-user-support.md) | 新增文章
 
 ## <a name="april-2019"></a>2019 年 4 月
 新增或已更改的文章 | 说明
@@ -226,8 +226,8 @@ ms.locfileid: "46528032"
 
 新增或已更改的文章 | 说明
 --- | ---
-[Microsoft 托管桌面支持](service-description/support.md)<br />[Microsoft 托管桌面的最终用户支持](working-with-managed-desktop/end-user-support.md) | 进行了更新以包括澳大利亚。
+[Microsoft 托管桌面支持](service-description/support.md)<br />[Microsoft 托管桌面的用户支持](working-with-managed-desktop/end-user-support.md) | 进行了更新以包括澳大利亚。
 
 ## <a name="october-30-2018"></a>2018年10月30日
-已重新组织内容：已添加[Microsoft 托管桌面服务说明](service-description/index.md)部分。 
+已重新组织内容：已添加 [Microsoft 托管桌面服务说明](service-description/index.md)部分。 
 

@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 470047da0a1902a6076add27a6e7ac516edd3150
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46869003"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289753"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -93,9 +93,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 |---------------|-------------|
 | AutopilotRegistrationRequested | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅 [设备注册故障排除](#troubleshooting-device-registration) 。 |
-| 为用户准备就绪 | 注册成功，现在设备已准备好传递给最终用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
-| 活动 | 设备已传递给最终用户，并且已向其注册了你的租户。 这也表明它们是定期使用设备的。 |
-| 不再 | 设备已传递给最终用户，并且已向其注册了你的租户。 但是，他们在过去7天内未使用最近 (设备) 。  | 
+| 为用户准备就绪 | 注册成功，现在设备已准备好传递给用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
+| 活动 | 设备已传递给用户，并且已向你的租户注册。 这也表明它们是定期使用设备的。 |
+| 不再 | 设备已传递给用户，并且已向你的租户注册。 但是，他们在过去7天内未使用最近 (设备) 。  | 
 
 #### <a name="troubleshooting-device-registration"></a>设备注册故障排除
 

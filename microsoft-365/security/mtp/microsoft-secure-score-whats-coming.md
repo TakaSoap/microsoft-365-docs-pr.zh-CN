@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866915"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289659"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>即将推出的 Microsoft 安全分数
 
@@ -30,9 +30,8 @@ ms.locfileid: "46866915"
 
 ## <a name="proposed-changes"></a>建议的更改
 
-根据你的许可证，这些更改可能会立即进入 Microsoft 安全分数。 若要了解最近所做的更改，请参阅 [Microsoft 安全分数中的新增功能？](microsoft-secure-score-whats-new.md)
-
-- 将 Azure Active Directory 提高操作的最大分数从7更改为 "启用策略以阻止旧版身份验证"
+### <a name="september-2020"></a>9月2020
+- 未计划更改
 
 ## <a name="related-resources"></a>相关资源
 

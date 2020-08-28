@@ -1,21 +1,21 @@
 ---
 title: Microsoft 托管桌面支持
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c68d12ccd339c863c2dd96b2a56cfaf19e604f79
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: de113fd61fbb8fabaea64d58525a2f8aca052e90
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631997"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289777"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
-Microsoft 将提供主动和反应性事件管理。 Microsoft 托管桌面管理门户中的事件跟踪。 根据[严重性定义](../working-with-managed-desktop/admin-support.md#sev)对它们进行分类。
+Microsoft 将提供主动和反应性事件管理。 Microsoft 托管桌面管理门户中的事件跟踪。 根据 [严重性定义](../working-with-managed-desktop/admin-support.md#sev)对它们进行分类。
 
 客户可以联系 Microsoft 托管桌面操作：
 - Microsoft 托管桌面租户或配置的信息请求
@@ -27,7 +27,7 @@ Microsoft 将提供主动和反应性事件管理。 Microsoft 托管桌面管�
 Microsoft 托管桌面支持包括：
 
 - 专用于 Microsoft 托管桌面设备的工程师团队
-- 适用于使用 Microsoft 托管桌面设备的最终用户的支持选项
+- 适用于使用 Microsoft 托管桌面设备的用户的支持选项
 - 为管理 Microsoft 托管桌面设备的工程师授予对 Microsoft 托管桌面设备的有限管理访问权限 
 
 支持的产品：
@@ -39,13 +39,13 @@ Microsoft 托管桌面支持包括：
 
 支持详细信息：
 
-- 当前：美国、加拿大（不包括魁北克）、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰（24x7x365） 
+- 当前：美国、加拿大 (不包括魁北克) 、英国、比利时、卢森堡、荷兰、澳大利亚和新西兰 (24x7x365)  
 - 英语是与客户进行电话和聊天对话的唯一受支持的语言 
-- 我们与你的公司支持人员合作，而不是更换。业务线（LOB）应用程序、网络资源等仍由你的技术支持人员处理 
+- 我们与你的公司支持人员合作，而不是更换。业务线 (LOB) 应用程序、网络资源等仍由你的技术支持人员处理 
 - "Test" 组中的 Microsoft 托管桌面设备和不属于 Microsoft 托管桌面的设备不在范围内 
 
 
 ## <a name="related-topics"></a>相关主题
 
 - [了解 IT 管理员如何才能获得支持](../working-with-managed-desktop/admin-support.md)
-- [了解最终用户可以获得支持的方式](../working-with-managed-desktop/end-user-support.md)
+- [了解用户如何获取支持](../working-with-managed-desktop/end-user-support.md)

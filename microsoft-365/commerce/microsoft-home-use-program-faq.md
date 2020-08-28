@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: 有关 Microsoft 家庭使用计划 (常见问题的常见问题) 常见问题。
-ms.openlocfilehash: 9d37afb952374b3d01d3ef3212b82cfd1ccde7a7
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903485"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294682"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 主页使用程序经常提出的问题 (FAQ) 
 
@@ -34,14 +34,13 @@ ms.locfileid: "46903485"
 
 Microsoft 家庭使用计划 (HUP) 允许符合条件的公司的员工购买 Microsoft 消费者产品的折扣。 您可以通过访问 " [家庭使用" 程序产品页](https://www.microsoft.com/home-use-program)检查每个产品产品的当前折扣。
 
-## <a name="in-which-countries-is-this-benefit-available"></a>在哪些国家/地区可提供此权益？
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>在哪个市场中提供了家庭使用计划？
 
-一旦您在 Microsoft Store for Business) 中激活了你的权益 (，Microsoft 产品的 HUP 折扣适用于世界各地大多数国家/地区的员工，但例外情况如下：
+Microsoft 365 系列和个人订阅上的折扣向全球的符合条件的公司提供以下例外：
 
-- 俄罗斯
-- 委内瑞拉
-
-HUP 折扣也可能适用于购买 Surface 设备和附件以及 Xbox 游戏终极版。 有关可用性，请参阅 [Microsoft 365 订阅](https://go.microsoft.com/fwlink/p/linkid=2139192)。
+- 中国澳门特别行政区，俄罗斯和委内瑞拉：此优惠在这些市场中不可用。
+- 中国和香港特别行政区：在这些市场中提供一年订阅。 对于中国，请访问 [中国的 Microsoft 365](https://www.microsoftstore.com.cn/home-use-program/invite)。 对于香港特别行政区，请访问 [以打折价格购买 Microsoft 365](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。
+- 日本： Microsoft 365 系列不可用。
 
 ## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>组织如何符合 HUP 折扣？
 
@@ -64,12 +63,6 @@ HUP 折扣也可能适用于购买 Surface 设备和附件以及 Xbox 游戏终�
 您必须在 DNS 中创建特殊记录以证明您拥有公司域（例如:contoso）。
 
 有关成为托管租户的分步过程，请参阅在 [Azure Active 中将非托管目录作为管理员接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)。
-
-## <a name="where-can-i-find-marketing-materials-to-help-promote-the-program-within-my-company"></a>在哪里可以找到营销材料以帮助促销公司中的计划？
-
-您可以在管理门户的 " _关于_ " 部分中找到 "Microsoft 家庭使用程序加入材料" 链接中的 "公司载入市场营销资料"。
-
-您还可以在 "IT/HR 管理资源" 页上快速查找促销材料。 访问 " [家庭使用程序" 主页](https://www.microsoft.com/home-use-program/resources) ，向下滚动到页面的 " _家庭使用程序宣传资源_ " 部分。
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>哪些资源可用于帮助促进家庭使用计划对员工有益的好处？
 

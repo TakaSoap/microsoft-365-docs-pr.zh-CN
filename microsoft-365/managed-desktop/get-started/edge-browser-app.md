@@ -1,6 +1,6 @@
 ---
 title: 新版 Microsoft Edge
-description: ''
+description: 介绍如何部署和更新新的边缘浏览器
 keywords: 浏览器、Microsoft 托管桌面、Microsoft 365、服务、文档
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903867"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294670"
 ---
 # <a name="new-microsoft-edge-app"></a>新建 Microsoft Edge 应用
 
@@ -35,7 +35,6 @@ Microsoft 托管桌面部署 Microsoft Edge 的 [稳定通道](https://docs.micr
 
 若要确保 Microsoft Edge 正确更新，请不要修改 Microsoft Edge [更新策略](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
-### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge Beta 通道
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft 托管桌面管理的设置
@@ -44,7 +43,7 @@ Microsoft 托管桌面已为 Microsoft Edge 创建了一组默认的策略，以
 
 ### <a name="microsoft-edge-extensions"></a>Microsoft Edge 扩展
 
-Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策略，以禁用所有 Chrome 扩展和安全最终用户。 若要在环境中启用和部署扩展，请参阅管理的设置。 
+Microsoft 托管桌面设备上 Microsoft Edge 的安全基准设置了两个策略来禁用所有 Chrome 扩展和安全用户。 若要在环境中启用和部署扩展，请参阅管理的设置。 
 
 #### <a name="extension-installation-blocklist"></a>扩展安装阻止列表
 **默认值：** 各种
@@ -77,7 +76,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 了
 
-默认情况下启用以帮助保护最终用户。
+默认情况下启用以帮助保护用户。
 
 #### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen 网站提示
 
@@ -105,7 +104,7 @@ Microsoft 托管桌面设置此策略，以防止在托管终结点上安装 Chr
 
 **默认值：** 禁用
 
-建议不要让最终用户在其设备上保存密码。
+建议您不要允许用户在其设备上保存密码。
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Microsoft Edge 中的 Internet Explorer 模式
 IE 模式在 Microsoft Edge 中，便于在单个浏览器中使用您的组织所需的所有网站。 它对与 Chromium 呈现引擎兼容的网站使用集成的 Chromium 引擎，并使用 Trident MSHTML 引擎从 Internet Explorer 11 (IE11) 获取对 IE 功能没有依赖关系的网站。 [了解详细信息] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866927"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294749"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -47,10 +47,10 @@ ms.locfileid: "46866927"
 
   - 若要修改用户提交的配置，您必须是下列角色组之一的成员：
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+    - Azure AD 和**组织管理**或**安全管理员**中的**[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 和[安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
 
-  - 若要对用户提交进行只读访问，您必须是下列角色组之一的成员：
+  - 若要对用户提交进行只读访问，您需要是以下两个角色组的成员：
 
     - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
@@ -73,7 +73,7 @@ ms.locfileid: "46866927"
 
       - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 " **标题** " 和 " **确认消息** " 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
 
-      完成后，单击“**保存**”。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
+      完成时，请单击“保存”****。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原**回"。
 
       - **将报告的邮件发送到**：执行下列任一选择：
 

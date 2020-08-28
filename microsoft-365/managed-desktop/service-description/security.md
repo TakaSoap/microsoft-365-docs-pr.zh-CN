@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778252"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289479"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全技术
 
@@ -62,7 +62,7 @@ Microsoft 托管桌面可确保所有托管设备都受到保护和保护，并�
 
 服务 | 说明
 --- | ---
-VPN | 客户拥有自己的 VPN 基础结构，以确保有限的公司资源可以在 intranet 外部公开。<br><br>最低要求： Microsoft 托管桌面需要 Windows 10 兼容且受支持的 VPN 解决方案。 如果你的组织需要 VPN 解决方案，则需要支持 Windows 10 并通过 Intune 打包和部署。 有关详细信息，请与软件发布者联系。<br><br>提出<br>-Microsoft 推荐了一个新式 VPN 解决方案，可以通过 Intune 轻松部署到推送 VPN 配置文件。 这提供了访问企业网络的永不间断、无缝、可靠且安全的方式。 有关详细信息，请参阅 [[Intune 中的 VPN 设置]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-使用 Microsoft 托管桌面时，Microsoft 不建议使用较厚的 VPN 客户端或旧版 VPN 客户端，因为这会影响最终用户环境。<br>-Microsoft 建议传出的 web 流量直接转到 Internet，而无需通过 VPN 即可避免任何性能问题。<br>-理想情况下，Microsoft 建议使用 Azure Active Directory 应用程序代理，而不是 VPN。
+VPN | 客户拥有自己的 VPN 基础结构，以确保有限的公司资源可以在 intranet 外部公开。<br><br>最低要求： Microsoft 托管桌面需要 Windows 10 兼容且受支持的 VPN 解决方案。 如果你的组织需要 VPN 解决方案，则需要支持 Windows 10 并通过 Intune 打包和部署。 有关详细信息，请与软件发布者联系。<br><br>提出<br>-Microsoft 推荐了一个新式 VPN 解决方案，可以通过 Intune 轻松部署到推送 VPN 配置文件。 这提供了访问企业网络的永不间断、无缝、可靠且安全的方式。 有关详细信息，请参阅 [[Intune 中的 VPN 设置]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-使用 Microsoft 托管桌面时，Microsoft 不建议使用较厚的 VPN 客户端或旧版 VPN 客户端，因为这会影响用户环境。<br>-Microsoft 建议传出的 web 流量直接转到 Internet，而无需通过 VPN 即可避免任何性能问题。<br>-理想情况下，Microsoft 建议使用 Azure Active Directory 应用程序代理，而不是 VPN。
 
 
 ## <a name="information-security"></a>信息安全
