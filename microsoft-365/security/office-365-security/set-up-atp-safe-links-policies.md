@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: f935002a300bd5f4553cbab429318dad4104b208
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662250"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307757"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
@@ -51,7 +51,7 @@ ms.locfileid: "46662250"
 
 - 请确保您具有必要的权限。 若要定义 (或编辑) ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
 
-    |角色|分配的位置/方式|
+    |Role|分配的位置/方式|
     |---|---|
     |全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。  (参阅 [关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ，了解详细信息。 ) |
     |安全管理员|Azure Active Directory 管理员中心 (<https://aad.portal.azure.com>) |
@@ -59,7 +59,7 @@ ms.locfileid: "46662250"
 
     若要了解有关角色和权限的详细信息，请参阅 [Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 请确保将 Office 客户端配置为使用 [新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (这适用于 office 文档中的 ATP 安全链接保护) 。
+- 请确保将 Office 客户端配置为使用 [新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (这适用于 office 文档中的 ATP 安全链接保护) 。
 
 - 了解本文中 (的[ATP 安全链接策略选项](#step-4-learn-about-atp-safe-links-policy-options)) 。
 

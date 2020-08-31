@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818503"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307183"
 ---
 # <a name="restore-a-deleted-group"></a>还原已删除的组
 
@@ -40,7 +40,7 @@ ms.locfileid: "44818503"
 
 还原组时，还可还原以下内容：
   
-- Azure Active Directory （AD） Microsoft 365 Groups 对象、属性和成员。
+- Azure Active Directory (AD) Microsoft 365 组对象、属性和成员。
     
 - 组的电子邮件地址。
     
@@ -52,9 +52,9 @@ ms.locfileid: "44818503"
     
 - Planner
     
-- 团队
+- Teams
 
-- Yammer 组和组内容（如果 Microsoft 365 组是从 Yammer 创建的）
+- Yammer group and group content (如果 Microsoft 365 组是从 Yammer 创建的) 
 
 ## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>使用 web 上的 Outlook 还原您拥有的组
 
@@ -62,7 +62,7 @@ ms.locfileid: "44818503"
 
 1. 在 "[已删除的组" 页](https://outlook.office.com/people/group/deleted)上，选择 "**组**" 节点下的 "**管理组**" 选项，然后选择 "**已删除**"。
 
-2. 单击要还原的组旁边的 "**还原**" 选项卡。
+2. 单击要还原的组旁边的 " **还原** " 选项卡。
 
 如果此处未显示已删除的组，请与管理员联系。
 
@@ -71,8 +71,8 @@ ms.locfileid: "44818503"
 如果您是全局管理员或组管理员，则可以在 Microsoft 365 管理中心中还原已删除的组：
 
 1. 转到[管理中心](https://admin.microsoft.com)。
-2. 展开 "**组**"，然后单击 "**已删除组**"。
-3. 选择要还原的组，然后单击 "**还原组**"。
+2. 展开 " **组**"，然后单击 " **已删除组**"。
+3. 选择要还原的组，然后单击 " **还原组**"。
 
 > [!NOTE]
 > 在某些情况下，可能需要长达24小时才能还原组及其所有数据。 
@@ -100,11 +100,11 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>遇到有关 Microsoft 365 组的问题？
 
-访问[Microsoft 技术社区](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups)以发布问题，并参与有关 Microsoft 365 组的对话。 
+访问 [Microsoft 技术社区](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) 以发布问题，并参与有关 Microsoft 365 组的对话。 
   
 ## <a name="related-articles"></a>相关文章
 
-[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
   
 [使用 Remove-UnifiedGroup cmdlet 删除组](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   

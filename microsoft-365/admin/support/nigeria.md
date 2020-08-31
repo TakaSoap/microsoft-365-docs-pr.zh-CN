@@ -13,31 +13,31 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1db3deb6be37fc9b22f4de73e55e8f59e2c5d35b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: adce3f2525c92b8cee565f759a94081bc2f75231
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44393913"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306511"
 ---
 # <a name="contact-support-for-nigeria"></a>对尼日利亚的联系支持
 
 [查找其他国家或地区](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>电话号码
-01 271 0156
+01 912 5070
 
 选择选项9
 
 输入代码7705
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
 英语：周一至周五上午9点-下午5点
 
 ### <a name="technical-support"></a>技术支持：
 
-英语：每天24小时，每周7天
+英语：全天候
 
 本地呼叫费用适用

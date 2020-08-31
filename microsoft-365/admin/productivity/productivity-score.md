@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868851"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307473"
 ---
 # <a name="microsoft-productivity-score-preview"></a> (预览的 Microsoft 工作效率分数) 
 
@@ -44,7 +44,7 @@ ms.locfileid: "46868851"
 
 - **技术体验：** 生产效率取决于可靠和能力强的技术以及 Microsoft 365 的有效使用。 我们提供了 [终结点分析](https://aka.ms/endpointanalytics)，可帮助你了解你的终结点硬件和软件的性能和运行状况问题对你的用户的生产率的影响，同时提供建议的操作以进行补救;我们为你的组织提供 Microsoft 365 网络连接见解。
 
-有关概述和先决条件的详细信息，请参阅 [什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview) 。 若要了解有关 Microsoft 365 网络 connectivity insights 的详细信息，请阅读 [网络连接概述](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
+有关概述和先决条件的详细信息，请参阅 [什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview) 。 若要了解有关 Microsoft 365 网络 connectivity insights 的详细信息，请阅读 [网络连接概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>如何计算分数

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529631"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306931"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
@@ -128,7 +128,7 @@ ms.locfileid: "46529631"
 4. 在“**登录状态**”浮出控件中，验证确定已选择“阻止用户登录”，选择“**保存**”，然后选择“**关闭**”。
 ::: moniker-end
 
-有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](https://docs.microsoft.com/office365/enterprise/powershell/block-user-accounts-with-office-365-powershell)。
+有关如何使用 Azure AD PowerShell 阻止登录帐户（包括同时登录多个帐户）的说明，请参阅 [使用 Office 365 PowerShell 阻止用户帐户](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell)。
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>向 Outlook 添加共享邮箱
 

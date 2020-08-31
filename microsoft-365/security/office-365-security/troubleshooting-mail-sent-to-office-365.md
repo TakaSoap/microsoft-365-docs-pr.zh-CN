@@ -1,5 +1,5 @@
 ---
-title: 对发送到 Microsoft 365 的邮件进行故障排除
+title: 有关发送到 Microsoft 365 的邮件的疑难解答
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208593"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307575"
 ---
-# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>对发送到 Microsoft 365 的邮件进行故障排除
+# <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
 
 本文提供了在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人故障排除信息，以及向客户批量发送电子邮件的最佳实践。
 
@@ -53,17 +53,17 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 - 172.16.0.0/11 (or 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>向 Office 365 中的用户发送电子邮件时收到未送达报告（NDR）
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>您在向 Office 365 中的用户发送电子邮件时 (NDR) 收到未送达报告
 
 出现一些传送问题是因为发件人的 IP 地址被 Microsoft 阻止或用户账户由于以前的垃圾邮件活动被标识为已禁止的发件人。如果您认为您错误地收到了 NDR，首先按照在 NDR 邮件中解决此问题的说明进行操作。
 
-有关收到的错误的详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)中的错误代码列表。
+有关收到的错误的详细信息，请参阅 [Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)中的错误代码列表。
 
  例如，如果您收到以下 NDR，则表明发送 IP 地址已被 Microsoft 阻止：
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-若要请求从此列表中删除，您可以[使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+若要请求从此列表中删除，您可以 [使用除名门户将自己从阻止的发件人列表中删除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>收件人的 "垃圾邮件" 文件夹中的 "我的电子邮件进入到"
 
@@ -79,7 +79,7 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我无法从 Microsoft 365 中的发件人接收电子邮件
 
- 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅[Exchange Online PROTECTION IP 地址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+ 为了从我们的用户接收邮件，请确保您的网络允许来自 EOP 在我们的数据中心使用的 IP 地址的连接。 有关详细信息，请参阅 [Exchange Online PROTECTION IP 地址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>批量向 Microsoft 365 用户发送电子邮件的最佳实践
 

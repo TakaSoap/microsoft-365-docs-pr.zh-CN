@@ -20,12 +20,12 @@ search.appverid:
 description: 了解如何从 Office 365 E4 订阅升级。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687999"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308001"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>从 Office 365 E4 订阅升级
 
@@ -130,7 +130,7 @@ ms.locfileid: "46687999"
 您可以使用 Microsoft 365 管理中心为最高20个用户一次重新分配许可证。 若要了解如何操作，请参阅 [将用户移动到其他订阅](move-users-different-subscription.md)。
 
 > [!TIP]
-> 如果有很多用户，则可以 [使用 Office 365 PowerShell 批量分配用户许可证](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)。
+> 如果有很多用户，则可以 [使用 Office 365 PowerShell 批量分配用户许可证](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>步骤4：取消 Office 365 E4 订阅
 

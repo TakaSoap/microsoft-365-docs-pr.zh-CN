@@ -21,12 +21,12 @@ search.appverid:
 description: 通过使用针对你所在国家或地区列出的电话号码或在线提交服务请求获取技术和帐单支持。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641581"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307357"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>联系商业版产品支持人员的方式 - 管理员帮助
 
@@ -35,7 +35,7 @@ ms.locfileid: "46641581"
 > [!IMPORTANT]
 > 必须是业务订阅的管理员才能使用这些支持方法。 如果你不是企业管理员，请使用[此支持页面](https://support.microsoft.com/help/contactus)。
 
-首先，[查看服务的当前运行状况](https://docs.microsoft.com/office365/enterprise/view-service-health)。 可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">“服务运行状况”仪表板</a>上查看关于当前和过去问题的详细信息。 如果你遇到的问题未列出，可通过以下其中一种方式获取支持：
+首先，[查看服务的当前运行状况](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)。 可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">“服务运行状况”仪表板</a>上查看关于当前和过去问题的详细信息。 如果你遇到的问题未列出，可通过以下其中一种方式获取支持：
 
 ## <a name="online-support"></a>联机支持
 

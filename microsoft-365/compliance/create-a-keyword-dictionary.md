@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bad95e9a5605631de3e8652e7243909f28b2abde
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686634"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282732"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
-数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典提供了更简单的关键字管理方式，并且规模更大，每个字典最多可支持 100000 个词条。
+数据丢失防护 (DLP) 可识别、监视和保护敏感项目。 标识敏感项目有时需要查找关键字，尤其是在标识常规内容（如与医疗保健相关的通信）或不当或露骨语言时。 虽然可以在敏感信息类型中创建关键字列表，但关键字列表的大小是有限的，且需要修改 XML 才能创建或编辑它们。 关键字字典提供了更简单的管理关键字管理方式，并且规模更大，可支持 100KB 的术语（压缩后），并支持所有语言。 租户限制同样为压缩后 100KB。
   
 > [!NOTE]
 > Microsoft 365 信息保护现可为以下语言提供双字节字符集语言支持（预览）：

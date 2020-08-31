@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632159"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307843"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -83,7 +83,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
 
 1. 如果你**已经配置了 DKIM**，请按如下所示轮换位数：
 
-   1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
+   1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
    1. 运行以下命令：
 
       ```powershell 
@@ -92,7 +92,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
 
 1. 或者，对于**新实现的 DKIM**：
 
-   1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
+   1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
    1. 运行以下命令：
 
       ```powershell

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079987"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306559"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
@@ -188,7 +188,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 可[查找值列表](information-for-dns-records.md)来设置域。 它们包含在 Microsoft 365 管理中心中。 
   
-或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)”。
+或者，如果您正在筹划部署，您可能希望查看 Microsoft 365 所需的所有 DNS 记录的列表、其函数和示例值。 查看 “[Microsoft 365 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)”。
   
 ## <a name="how-can-i-learn-more"></a>如何了解更多信息？
 

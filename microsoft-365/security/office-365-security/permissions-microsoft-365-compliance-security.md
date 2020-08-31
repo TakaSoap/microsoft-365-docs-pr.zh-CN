@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652833"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307769"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -101,7 +101,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|添加管理员、添加策略和设置、上传日志以及执行管理操作。|
 |[**Azure 安全中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)（即将支持）|查看安全策略、查看安全状态、编辑安全策略、查看警报和建议、关闭警报和建议。|
-|[**Office 365 服务运行状况**](https://docs.microsoft.com/office365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
+|[**Office 365 服务运行状况**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
 |
 
 ### <a name="security-operator"></a>安全操作员
@@ -119,7 +119,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |**Windows Defender ATP 和 EDR**|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查并响应警报。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|执行“安全读者”角色可以执行的所有操作，此外，还可以查看和关闭警报。|
-|[**Office 365 服务运行状况**](https://docs.microsoft.com/office365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
+|[**Office 365 服务运行状况**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
 |
 
 ### <a name="security-reader"></a>安全读取者
@@ -138,7 +138,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|视图用户、设备、注册、配置和应用程序信息。 <br/><br/> **无法**对 Intune 进行更改。|
 |[**云应用安全**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用只读权限查看信息。 <br/><br/> 管理警报。|
 |[**Azure 安全中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|查看建议和警报。 <br/><br/> 查看安全策略。 <br/><br/> 查看安全状态，但无法进行更改。|
-|[**Office 365 服务运行状况**](https://docs.microsoft.com/office365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
+|[**Office 365 服务运行状况**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|查看 Office 365 服务的运行状况。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全局管理员可以管理 Azure Active Directory 中的角色。

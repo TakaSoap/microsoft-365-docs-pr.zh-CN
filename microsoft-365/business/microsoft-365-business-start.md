@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 for business，如何对其进行设置，以及如何准备用户的设备和电脑以确保 Microsoft 365 的商业版受到保护。
-ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: ec50036f589cfd8497b0e7e9af6519b30d25dcd3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080035"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306481"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Microsoft 365 商业版入门
 
@@ -49,15 +49,15 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
   
 ## <a name="get-microsoft-365-for-business"></a>获取 Microsoft 365 for business
 
-- 如果你有合作伙伴，他们将获得 Microsoft 365 for business：[从 Microsoft 合作伙伴中心获取 microsoft 365 商业](get-microsoft-365-business.md)版。
+- 如果你有合作伙伴，他们将获得 Microsoft 365 for business： [从 Microsoft 合作伙伴中心获取 microsoft 365 商业](get-microsoft-365-business.md)版。
     
-- 如果你没有合作伙伴并且想要获取 Microsoft 365 for business，可以在[此处购买](https://www.microsoft.com/microsoft-365/business)。
+- 如果你没有合作伙伴并且想要获取 Microsoft 365 for business，可以在 [此处购买](https://www.microsoft.com/microsoft-365/business)。
     
 ## <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 
  **Microsoft 365 for business Suite 设置概述**
   
-下图介绍了管理员如何设置 Microsoft 365 for business。 此外，还介绍了为 Microsoft 365 for business 准备 Windows 电脑的步骤。 您还可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 管理中心添加新设备。 您可以使用 AutoPilot 来设置和预配置新设备，以便在用户使用其 Microsoft 365 商业版凭据登录后随时可以使用这些设备进行高效使用。
+下图介绍了管理员如何设置 Microsoft 365 for business。 此外，还介绍了为 Microsoft 365 for business 准备 Windows 电脑的步骤。 您还可以使用 [Windows AutoPilot](add-autopilot-devices-and-profile.md)在 Microsoft 365 管理中心添加新设备。 您可以使用 AutoPilot 来设置和预配置新设备，以便在用户使用其 Microsoft 365 商业版凭据登录后随时可以使用这些设备进行高效使用。
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
@@ -68,9 +68,9 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
   
-### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置 Microsoft 365 for business （管理员）
+### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：设置 Microsoft 365 for business (管理员) 
 
-使用全局管理员凭据登录[Microsoft 365 管理中心](https://portal.office.com/adminportal/home)，并完成以下步骤以设置 Microsoft 365 for business。 
+使用全局管理员凭据登录 [Microsoft 365 管理中心](https://portal.office.com/adminportal/home) ，并完成以下步骤以设置 Microsoft 365 for business。 
   
 1. [使用 Microsoft 365 for business 保护设备上的数据的先决条件](pre-requisites-for-data-protection.md)
     
@@ -78,25 +78,25 @@ Microsoft 365 for business 适用于最高300个许可证。 如果需要更多�
     
 2. [使用安装向导设置 Microsoft 365 for business](set-up.md)
     
-    如果要将**本地 Active Directory 永久移动到云**，可以转到 Microsoft 365 管理中心并使用安装向导手动添加用户，也可以执行与 Azure AD Connect 的一次性同步。 可通过 2 种方法执行此操作： 
+    如果要将 **本地 Active Directory 永久移动到云**，可以转到 Microsoft 365 管理中心并使用安装向导手动添加用户，也可以执行与 Azure AD Connect 的一次性同步。 可通过 2 种方法执行此操作： 
     
-    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以[使用最少混合将 Exchange 邮箱快速迁移到 Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
+    - 如果你还具有 Exchange 2010、Exchange 2013 或 Exchange 2016 服务器，则可以 [使用最少混合将 Exchange 邮箱快速迁移到 Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最小混合步骤包括将用户一次性同步到 Azure AD，并将电子邮件从本地迁移到云。 电子邮件迁移完成后，使用此方法时，目录同步将自动关闭。
     
-    - 使用目录同步向导将用户同步到云。 按照[为 Microsoft 365 设置目录同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)中的步骤完成此过程。 将用户同步到云后，必须[关闭 Microsoft 365 的目录同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)。
+    - 使用目录同步向导将用户同步到云。 按照 [为 Microsoft 365 设置目录同步](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) 中的步骤完成此过程。 将用户同步到云后，必须 [关闭 Microsoft 365 的目录同步](https://docs.microsoft.com/microsoft-365/enterprise/turn-off-directory-synchronization)。
     
-    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 您可以在 "[安装向导](set-up.md)" 中执行此操作，也可以[向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
+    此外，还必须为以这种方式添加的每个用户提供 Microsoft 365 for business 的许可证。 您可以在 " [安装向导](set-up.md) " 中执行此操作，也可以 [向用户分配许可证](../admin/manage/assign-licenses-to-users.md)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：准备移动设备
 
-按照为[microsoft 365 for business 用户设置移动设备](set-up-mobile-devices.md)中的步骤，在设备上安装 Office 应用，并确保它们受 Microsoft 365 for business 的保护。 
+按照为 [microsoft 365 for business 用户设置移动设备](set-up-mobile-devices.md) 中的步骤，在设备上安装 Office 应用，并确保它们受 Microsoft 365 for business 的保护。 
   
 ### <a name="3-prepare-pcs"></a>3：准备电脑
 
-管理员可以使用[Windows AutoPilot](add-autopilot-devices-and-profile.md)为新的 Windows 10 电脑预选择设置。 用户可以按照本主题中的步骤设置其现有的或新的 Windows 10 设备：为[商业用户设置适用于 Microsoft 365 的 Windows 电脑](set-up-windows-devices.md)。 对于现有设备，用户可以**选择**[将文件移动到 OneDrive for](move-files-to-onedrive.md)business。 他们还可以使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。
+管理员可以使用 [Windows AutoPilot](add-autopilot-devices-and-profile.md)为新的 Windows 10 电脑预选择设置。 用户可以按照本主题中的步骤设置其现有的或新的 Windows 10 设备：为 [商业用户设置适用于 Microsoft 365 的 Windows 电脑](set-up-windows-devices.md)。 对于现有设备，用户可以**选择**[将文件移动到 OneDrive for](move-files-to-onedrive.md)business。 他们还可以使用第三方工具将与 Windows 配置文件关联的文件移动到 OneDrive。
   
-如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 for business 设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照将[加入加入域的 Windows 10 设备中的步骤操作，以供 Microsoft 365 for business 管理](manage-windows-devices.md)，以便对此进行设置。 此方法是首选方法，在此状态的设备称为**混合 AZURE AD 加入的设备**。 
+如果您的组织使用的是本地 Windows Server Active Directory，则可以将 Microsoft 365 for business 设置为保护您的 Windows 10 设备，同时仍保持对需要本地身份验证的本地资源的访问权限。 按照将 [加入加入域的 Windows 10 设备中的步骤操作，以供 Microsoft 365 for business 管理](manage-windows-devices.md) ，以便对此进行设置。 此方法是首选方法，在此状态的设备称为 **混合 AZURE AD 加入的设备**。 
   
-如果保留包含某些本地资源（如文件共享和打印机）的本地 Active Directory，则可以按照以下步骤为**AZURE ad 联接的设备**授予对这些资源的访问权限：[从 Microsoft 365 for Business 中的 azure AD 联接的设备访问本地资源](access-resources.md)。
+如果保留包含某些本地资源的本地 Active Directory (如文件共享和打印机) ，则可以按照以下步骤为 **AZURE ad 联接的设备** 授予对这些资源的访问权限： [从 Microsoft 365 for Business 中的 azure AD 联接的设备访问本地资源](access-resources.md)。
   
   
 ## <a name="contact-support"></a>联系支持人员

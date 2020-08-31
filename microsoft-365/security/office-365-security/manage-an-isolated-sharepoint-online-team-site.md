@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 管理独立的 SharePoint Online 团队网站，添加新用户和组，删除用户和组，并创建具有自定义权限的 documents 子文件夹。
-ms.openlocfilehash: 43329aa72b3729200007441ce73838a7d6a60f55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: d66f9a349bd5834d07fbc13146127bde522923e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755374"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308263"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的 SharePoint Online 团队网站
 
@@ -39,13 +39,13 @@ ms.locfileid: "44755374"
     
 - 查看：将用户帐户添加到网站查看者访问组
     
-如果通过 Active Directory 域服务（AD DS）管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与订阅的同步。
+如果通过 Active Directory 域服务 (AD DS) 管理用户帐户和组，请使用常规 AD DS 用户和组管理过程将相应的用户添加到相应的访问组，并等待与订阅的同步。
   
 如果通过 Microsoft 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 Microsoft PowerShell：
   
 - 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户添加到相应的访问组。
     
-- 对于 PowerShell，首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。 若要将用户帐户添加到具有其用户主体名称（UPN）的访问组，请使用以下 PowerShell 命令块：
+- 对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。 若要将用户帐户添加到其用户主体名称 (UPN) 的访问组，请使用以下 PowerShell 命令块：
     
 ```powershell
 $userUPN="<UPN of the user account>"
@@ -77,7 +77,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
   
 - 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将适当的组添加到相应的访问组。
     
-- 对于 PowerShell，首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+- 对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
  然后，使用以下 PowerShell 命令：
  
 ```powershell
@@ -102,7 +102,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
   
 - 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的用户。
     
-- 对于 PowerShell，首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+- 对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
 若要从具有 UPN 的访问组中删除用户帐户，请使用以下 PowerShell 命令块：
     
 ```powershell
@@ -135,7 +135,7 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADUser | Where { $_.DisplayName -e
   
 - 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组从相应的访问组中删除相应的组。
     
-- 对于 PowerShell，首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。    
+- 对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。    
 若要使用用户的显示名称从访问组中删除组，请使用以下 PowerShell 命令块：
     
 ```powershell
@@ -152,37 +152,37 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
   
 1. 登录到属于该网站的 "管理员" 访问组成员的帐户。 如需帮助，请参阅[在哪里登录 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
-2. 转到独立的团队网站，然后单击 "**文档**"。
+2. 转到独立的团队网站，然后单击 " **文档**"。
     
 3. 浏览到 "documents" 文件夹中将包含具有自定义权限的子文件夹的文件夹，创建该文件夹，然后将其打开。
     
 4. 单击"共享"。
     
-5. 单击 "**共享并 > 高级**"。
+5. 单击 " **共享并 > 高级**"。
     
-6. 单击 "**停止继承权限**"，然后单击 **"确定"**。
+6. 单击 " **停止继承权限**"，然后单击 **"确定"**。
     
 7. 单击"共享"。
     
-8. 单击 "**共享并 > 高级**"。
+8. 单击 " **共享并 > 高级**"。
     
-9. 单击 "**授予权限 > 与 > 高级共享**"。
+9. 单击 " **授予权限 > 与 > 高级共享**"。
     
 10. 在 "权限" 页上，单击** \<site name> 列表中的 "成员"**。
     
 11. 在 " ** \<site name> 成员**" 页上，选中 "网站成员访问" 组旁边的复选标记，单击 "**操作**"，单击 "**从组中删除用户**"，然后单击 **"确定"**。
     
-12. 若要将特定成员添加到此子文件夹，请单击 "**新建 > 添加用户**"。
+12. 若要将特定成员添加到此子文件夹，请单击 " **新建 > 添加用户**"。
     
-13. 在 "**共享**" 对话框中，键入可在子文件夹中的文件上进行协作的用户帐户的名称，然后单击 "**共享**"。
+13. 在 " **共享** " 对话框中，键入可在子文件夹中的文件上进行协作的用户帐户的名称，然后单击 " **共享**"。
     
 14. 刷新网页以查看新结果。
     
-15. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 访问者**" 组，并使用步骤11-14 指定可查看子文件夹中的文件的用户帐户集（根据需要）。
+15. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 访问者**" 组，并使用步骤11-14 指定可以根据需要查看子文件夹中的文件 (的用户帐户集) 。
     
-16. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 所有者**" 组，并使用步骤11-14 指定可在子文件夹中管理权限的用户帐户集（根据需要）。
+16. 在左侧导航组中的 "**组**" 下，单击 " ** \<site name> 所有者**" 组，并使用步骤11-14 来指定可以根据需要在子文件夹中管理权限的用户帐户集 () 。
     
-17. 关闭浏览器中的 "**人员和组**" 选项卡。
+17. 关闭浏览器中的 " **人员和组** " 选项卡。
     
 ## <a name="see-also"></a>另请参阅
 

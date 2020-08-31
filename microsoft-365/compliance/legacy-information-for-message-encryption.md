@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何将旧版文件转换为您的组织的 Office 365 邮件加密（OME）。
-ms.openlocfilehash: e69a0d3f0d8803630ecff976d0060d8a7447b928
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 了解如何将旧版文件转换为 Office 365 邮件加密 (组织的 OME) 。
+ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817119"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306501"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
-如果尚未将组织移动到新的 OME 功能，但已部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅[设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 如果您想要详细了解新功能的工作方式，请参阅[Office 365 邮件加密](ome.md)。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
+如果尚未将组织移动到新的 OME 功能，但已部署了 OME，则本文中的信息适用于您的组织。 Microsoft 建议您制定一个计划，尽快移动到新的 OME 功能，因为它对您的组织合理。 有关说明，请参阅 [设置基于 Azure 信息保护基础构建的新 Office 365 邮件加密功能](set-up-new-message-encryption-capabilities.md)。 如果您想要详细了解新功能的工作方式，请参阅 [Office 365 邮件加密](ome.md)。 本文的其余部分是在发布新的 OME 功能之前的 OME 行为。
   
 使用 Office 365 邮件加密，组织可以在组织内部和外部的人员之间发送和接收加密的电子邮件。 Office 365 邮件加密适用于 Outlook.com、Yahoo、Gmail 和其他电子邮件服务。 电子邮件加密有助于确保只有预期的收件人可以查看邮件内容。
   
@@ -45,7 +45,7 @@ ms.locfileid: "44817119"
 
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>如何在没有新功能的情况下运行 Office 365 邮件加密
 
-Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构建的在线服务。 使用 Azure RMS，管理员可以定义邮件流规则，以确定加密的条件。 例如，规则可以要求对发送到特定收件人的所有邮件进行加密。
+Office 365 邮件加密是基于 Microsoft Azure 权限管理 (Azure RMS) 构建的联机服务。 使用 Azure RMS，管理员可以定义邮件流规则，以确定加密的条件。 例如，规则可以要求对发送到特定收件人的所有邮件进行加密。
   
 观看此简短视频，了解 Office 365 邮件加密如何工作而无需新功能。
   
@@ -57,7 +57,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 ![显示加密电子邮件路径的图表](../media/O365-Office365MessageEncryption-Concept.png)
   
-有关详细信息，请参阅[早期版本的 Office 365 邮件加密的服务信息，然后再发布新的 OME 功能](legacy-information-for-message-encryption.md#LegacyServiceInfo)。
+有关详细信息，请参阅 [早期版本的 Office 365 邮件加密的服务信息，然后再发布新的 OME 功能](legacy-information-for-message-encryption.md#LegacyServiceInfo)。
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>为不使用新 OME 功能的 Office 365 邮件加密定义邮件流规则
 
@@ -65,7 +65,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 邮件流规则是灵活的，允许您将条件组合在一起，以便您可以在单个规则中满足特定的安全要求。 例如，您可以创建一个规则，对包含特定关键字且发送给外部收件人的所有邮件进行加密。 Office 365 邮件加密还对加密邮件的收件人的回复进行加密；您可以创建一个规则来对这些回复进行解密，为您的电子邮件用户提供方便。 这样，组织中的用户无需登录到加密门户即可查看答复。
   
-有关如何创建 Exchange 邮件流规则的详细信息，请参阅[定义 Office 365 邮件加密的规则](define-mail-flow-rules-to-encrypt-email.md)。
+有关如何创建 Exchange 邮件流规则的详细信息，请参阅 [定义 Office 365 邮件加密的规则](define-mail-flow-rules-to-encrypt-email.md)。
   
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>发送、查看和回复加密电子邮件
 
@@ -93,9 +93,9 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
  **自定义加密电子邮件以及与组织品牌的加密门户**
   
-1. 使用远程 PowerShell 连接到 Exchange Online，如[connect To Exchange Online Using Remote powershell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated)中所述。
+1. 使用远程 PowerShell 连接到 Exchange Online，如 [connect To Exchange Online Using Remote powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中所述。
 
-2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)或使用下表进行指南。
+2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 或使用下表进行指南。
 
    **加密自定义选项**
 
@@ -108,9 +108,9 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 
  **从加密电子邮件和加密门户中删除品牌自定义**
   
-1. 使用远程 PowerShell 连接到 Exchange Online，如[connect To Exchange Online Using Remote powershell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述。
+1. 使用远程 PowerShell 连接到 Exchange Online，如 [connect To Exchange Online Using Remote powershell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述。
 
-2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为一个空字符串 `""` 。 对于所有图像值（如 "徽标"），请将值设置为 `"$null"` 。
+2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为一个空字符串  `""` 。 对于所有图像值（如 "徽标"），请将值设置为  `"$null"` 。
 
    **加密自定义选项**
 
@@ -129,9 +129,9 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 |**服务详细信息**|**说明**|
 |:-----|:-----|
 |客户端设备要求  <br/> |只要 HTML 附件可以在支持窗体发布的现代浏览器中打开，就可以在任何客户端设备上查看加密邮件。  <br/> |
-|加密算法和美国联邦信息处理标准 (FIPS) 合规性  <br/> |Office 365 邮件加密使用与 Windows Azure 信息权限管理 (IRM) 相同的加密密钥，并支持加密模式 2（对于 RSA 是 2K 密钥，对于 SHA-1 系统是 256 位密钥）。 有关基础 IRM 加密模式的详细信息，请参阅[AD RMS 加密模式](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx)。  <br/> |
-|支持的邮件类型  <br/> |如果是针对那些具有 **IPM.Note** 的邮件类 ID 项，才支持使用 Office 365 邮件加密。 有关详细信息，请参阅[项目类型和邮件类](https://msdn.microsoft.com/library/office/ff861573.aspx)。  <br/> |
-|邮件大小限制  <br/> |Office 365 邮件加密可以加密最多 25 兆字节的邮件。 有关邮件大小限制的详细信息，请参阅[Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。  <br/> |
+|加密算法和美国联邦信息处理标准 (FIPS) 合规性  <br/> |Office 365 邮件加密使用与 Windows Azure 信息权限管理 (IRM) 相同的加密密钥，并支持加密模式 2（对于 RSA 是 2K 密钥，对于 SHA-1 系统是 256 位密钥）。 有关基础 IRM 加密模式的详细信息，请参阅 [AD RMS 加密模式](https://technet.microsoft.com/library/hh867439%28WS.10%29.aspx)。  <br/> |
+|支持的邮件类型  <br/> |如果是针对那些具有 **IPM.Note** 的邮件类 ID 项，才支持使用 Office 365 邮件加密。 有关详细信息，请参阅 [项目类型和邮件类](https://msdn.microsoft.com/library/office/ff861573.aspx)。  <br/> |
+|邮件大小限制  <br/> |Office 365 邮件加密可以加密最多 25 兆字节的邮件。 有关邮件大小限制的详细信息，请参阅 [Exchange Online 限制](https://technet.microsoft.com/library/exchange-online-limits.aspx)。  <br/> |
 |Exchange Online 电子邮件保留策略  <br/> |Exchange Online 不存储加密的邮件。  <br/> |
 |Office 365 邮件加密的语言支持  <br/> | Office 365 邮件加密支持 Microsoft 365 语言，如下所示：  <br/>  传入的电子邮件和附加的 HTML 文件根据发件人的语言设置进行本地化。  <br/>  查看门户根据收件人的浏览器设置进行本地化。  <br/>  加密邮件的正文（内容）不进行本地化。  <br/> |
 |OME 门户和 OME 查看器应用的隐私信息  <br/> |[Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement)提供了有关 Microsoft 如何处理您的隐私信息的详细信息。  <br/> |
@@ -139,9 +139,9 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>有关旧 OME 的常见问题
 <a name="LegacyServiceInfo"> </a>
 
-遇到有关 Office 365 邮件加密的问题？ 下面对一些问题进行了解答。 如果找不到所需的内容，请查看[适用于 Office 365 的 Microsoft 技术社区论坛](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)。
+遇到有关 Office 365 邮件加密的问题？ 下面对一些问题进行了解答。 如果找不到所需的内容，请查看 [适用于 Office 365 的 Microsoft 技术社区论坛](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)。
   
- **问：我的用户将加密的电子邮件发送给组织外部的收件人。外部收件人是否有需要执行哪些操作才能阅读并回复通过 Office 365 邮件加密加密的电子邮件？**
+ **增长率.我的用户将加密的电子邮件发送给组织外部的收件人。外部收件人是否有需要执行哪些操作才能阅读并回复通过 Office 365 邮件加密加密的电子邮件？**
   
 组织外部接收 Microsoft 365 加密邮件的收件人可以通过以下两种方式之一查看：
   
@@ -149,13 +149,13 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
 
 - 通过使用一次性的 pass 代码。
 
- **问：存储在云中或 Microsoft 服务器上的 Microsoft 365 加密邮件是什么？**
+ **增长率.Microsoft 365 加密邮件是否存储在云中或 Microsoft 服务器上？**
   
 否，加密的邮件将保留在收件人的电子邮件系统中，当收件人打开邮件时，它将暂时发布，以便在 Microsoft 服务器上进行查看。 邮件并不存储在其中。
   
  **问：能否使用我的品牌自定义加密电子邮件？**
   
-是。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅[将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
+正确。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅 [将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
   
  **问：该服务是否要求我的组织中的每个用户都有许可证？**
   
@@ -165,13 +165,13 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理（Azure RMS）构�
   
 否，外部收件人不需要订阅即可阅读或回复加密邮件。
   
- **问： Office 365 邮件加密与 Rights Management Services （RMS）有何不同？**
+ **增长率.Office 365 邮件加密与 Rights Management Services (RMS) 的不同之处？**
   
 RMS 通过提供内置模板（例如：不要转发和公司机密）为组织的内部电子邮件提供信息权限保护功能。 Office 365 邮件加密支持对发送给外部以及内部收件人的邮件进行加密。
   
- **问： Office 365 邮件加密与 S/MIME 有何不同？**
+ **增长率.Office 365 邮件加密与 S/MIME 有何不同？**
   
-S/MIME 实质上是一种客户端加密技术，需要复杂的证书管理和发布基础结构。 Office 365 邮件加密使用邮件流规则（也称为传输规则），而不依赖于证书发布。
+S/MIME 实质上是一种客户端加密技术，需要复杂的证书管理和发布基础结构。 Office 365 邮件加密使用邮件流规则 (也称为传输规则) ，而不依赖于证书发布。
   
  **问：能否通过移动设备阅读加密邮件？**
   
@@ -181,35 +181,35 @@ S/MIME 实质上是一种客户端加密技术，需要复杂的证书管理和�
   
 是，在整个线程期限内，响应都会继续进行加密。
   
- **问： Office 365 邮件加密是否提供本地化？**
+ **增长率.Office 365 邮件加密是否提供本地化？**
   
 传入电子邮件和 HTML 内容会进行本地化，具体取决于发件人电子邮件设置。查看门户根据收件人的浏览器设置进行本地化。不过，加密邮件的实际正文（内容）不会进行本地化。
   
- **问： Office 365 邮件加密使用什么加密方法？**
+ **增长率.Office 365 邮件加密使用什么加密方法？**
   
-Office 365 邮件加密使用 Rights Management Services （RMS）作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。
+Office 365 邮件加密使用 Rights Management Services (RMS) 作为其加密基础结构。 所使用的加密方法取决于从何处获取用来加密和解密邮件的 RMS 密钥。
   
 - 如果使用 Microsoft Azure RMS 获取密钥，则使用加密模式2。 加密模式 2 是更新和增强的 AD RMS 加密实现。 它支持 RSA 2048 签名和加密，并支持 sha-256 签名。
 
 - 如果您使用 Active Directory (AD) RMS 获取这些密钥，则可以使用加密模式 1，也可以使用加密模式 2。使用的方法取决于您的本地 AD RMS 部署。加密模式 1 是原始的 AD RMS 加密实现。它支持 RSA 1024 签名和加密，并支持 sha-1 签名。该模式继续支持 RMS 的所有当前版本。
 
-有关详细信息，请参阅[AD RMS 加密模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
+有关详细信息，请参阅 [AD RMS 加密模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
   
- **问：为什么一些加密的邮件说它们**来自 Office365@messaging.microsoft.com？
+ **问：为什么有些加密邮件说它们** 来自 Office365@messaging.microsoft.com？
   
 当加密回复从加密门户或通过 OME 查看器应用发送时，发送电子邮件地址将设为 Office365@messaging.microsoft.com，因为该加密邮件是通过 Microsoft 终结点发送的。这有助于防止加密邮件被标记为垃圾邮件。电子邮件上显示的名称和加密门户内的地址不会因为这个标签而更改。此外，该标签仅适用于通过门户而不是通过任何其他电子邮件客户端发送的邮件。
   
- **问：我是 Exchange 托管加密（EHE）订阅者。在哪里可以了解有关升级到 Office 365 邮件加密的更多信息？**
+ **增长率.我是 Exchange 托管加密 (EHE) 订阅者。在哪里可以了解有关升级到 Office 365 邮件加密的更多信息？**
   
-所有 EHE 客户已升级为 Office 365 邮件加密客户。 有关详细信息，请访问[Exchange 托管加密升级中心](https://go.microsoft.com/fwlink/p/?LinkID=511077)。
+所有 EHE 客户已升级为 Office 365 邮件加密客户。 有关详细信息，请访问 [Exchange 托管加密升级中心](https://go.microsoft.com/fwlink/p/?LinkID=511077)。
   
- **问：我是否需要在组织的防火墙中打开任何 Url、IP 地址或端口以支持 Office 365 邮件加密？**
+ **增长率.我是否需要在组织的防火墙中打开任何 Url、IP 地址或端口以支持 Office 365 邮件加密？**
   
-是。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅[Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+正确。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅 [Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
   
- **问：我可以向多少个收件人发送 Microsoft 365 加密邮件？**
+ **增长率.有多少个收件人可以向其发送 Microsoft 365 加密邮件？**
   
-每封**邮件的收件人**数限制为500个收件人，或者，在通讯组列表展开后加上11980个字符（无论哪种情况先发生）。
+每封 **邮件的收件人** 数限制为500个收件人，或者，在通讯组列表展开后加上11980个字符（无论哪种情况先发生）。
   
  **问：是否可以取消发送给特定收件人的邮件？**
   
@@ -217,7 +217,7 @@ Office 365 邮件加密使用 Rights Management Services （RMS）作为其加�
   
  **问：是否可以查看已接收和阅读的加密邮件报告吗？**
   
-没有显示已查看加密邮件的报告，但有 Microsoft 365 报告可用于确定与特定邮件流规则匹配的邮件数（也称为 "传输规则"），例如。
+没有显示已查看加密邮件的报告，但有 Microsoft 365 报告可用于确定与特定邮件流规则匹配的邮件数 (也称为传输规则) ，例如 "传输规则"）。
   
  **问：Microsoft 会如何处理我通过 OME 门户和 OME 查看器应用提供的信息？**
   

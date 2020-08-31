@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 了解如何验证您的域，并在 Bluehost for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400553"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307039"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>在 Bluehost 处为 Microsoft 创建 DNS 记录
 
@@ -53,18 +53,18 @@ ms.locfileid: "44400553"
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
+3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**Host Record** <br/> |**TTL** <br/> |**类型** <br/> |**TXT Value** <br/> |
     |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -93,25 +93,25 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
+3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**Host Record**|**TTL**|**类型**|**指向**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/>**注意：**\<*domain-key*\>从你的 Microsoft 帐户获取你的。 如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**注意：** 从 Microsoft 帐户获取 \<*domain-key*\>。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![从下拉列表中选择 "类型"](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![选择 "添加记录"](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
-6. 如果**mx （邮件交换器）** 部分中有任何其他 MX 记录，请将其删除。 
+6. 如果 Mx 中有任何其他 MX 记录 ** (邮件交换器) ** 部分，请删除每条。 
     
-    对于其中一个 MX 记录，请选择 "**删除"。**
+    对于其中一个 MX 记录，请选择 " **删除"。**
     
     ![选择每个其他 MX 记录的 "删除"](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
@@ -130,14 +130,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
+3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
     
-4. 在 " **A （主机）** 记录" 部分中，找到**自动发现**记录所在的行，然后为该行选择 "**删除**"。 
+4. 在 " ** (主机) ** 记录" 部分，找到 **自动发现** 记录的行，然后选择该行的 " **删除** "。 
     
     > [!IMPORTANT]
-    > 在添加 Microsoft 所需的**自动发现**记录*之前*，必须删除现有的**自动发现**记录。 Bluehost 不允许同时维护两个**自动发现**记录。 
+    > 在添加 Microsoft 所需的**自动发现**记录*之前*，必须删除现有的**自动发现**记录。 Bluehost 不允许同时维护两个 **自动发现** 记录。 
   
-    ![选择 "删除"](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
+    ![选择“删除”](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
 5. 选择“确定”****。
     
@@ -145,9 +145,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 6. 创建 6 条 CNAME 记录中的第一条记录。
     
-    在 " **DNS 区域编辑器**" 页上的 "**添加 DNS 记录**" 区域中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
+    在 " **DNS 区域编辑器** " 页上的 " **添加 DNS 记录** " 区域中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**Host Record**|**TTL**|**类型**|**指向**|
     |:-----|:-----|:-----|:-----|
@@ -159,13 +159,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![创建第一个 CNAME 记录](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
-7. 选择 "**添加记录**"。
+7. 选择 " **添加记录**"。
     
     ![选择 "添加记录"](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. 逐一添加其他 5 条 CNAME 记录。
     
-    仍在 "**添加 DNS 记录**" 部分，使用表中下一行的值创建记录，然后再次选择 "**添加记录**" 以完成该记录。 
+    仍在 " **添加 DNS 记录** " 部分，使用表中下一行的值创建记录，然后再次选择 " **添加记录** " 以完成该记录。 
     
     重复该过程，直到创建完全部 6 条 CNAME 记录。
     
@@ -173,7 +173,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 若要验证您的 SPF 记录，您可以使用其中一种[SPF 验证工具](../setup/domains-faq.md)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要验证您的 SPF 记录，您可以使用其中一种[SPF 验证工具](../setup/domains-faq.md)。 
   
 1. 要开始，请使用[此链接](https://my.bluehost.com/cgi/dm)转到您在 Bluehost 上的域页面。 系统将会提示您先登录。
     
@@ -181,19 +181,19 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
+3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
         
     |**Host Record**|**TTL**|**类型**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
     ![复制 TXT 值](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![选择 "添加记录"](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
@@ -206,13 +206,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
+3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
     
 4. 创建两条 SRV 记录中的第一条记录。
     
-    在 " **DNS 区域编辑器**" 页上的 "**添加 DNS 记录**" 区域中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
+    在 " **DNS 区域编辑器** " 页上的 " **添加 DNS 记录** " 区域中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**服务**|**协议**|**主机**|**TTL**|**类型**|**优先级**|**权重**|**端口**|**指向**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -221,13 +221,13 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![复制新记录的值](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![选择 "添加记录"](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. 添加另一条 SRV 记录。
     
-    仍在 "**添加 DNS 记录**" 部分，使用表中其他行的值创建记录，然后再次选择 "**添加记录**" 以完成该记录。 
+    仍在 " **添加 DNS 记录** " 部分，使用表中其他行的值创建记录，然后再次选择 " **添加记录** " 以完成该记录。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 

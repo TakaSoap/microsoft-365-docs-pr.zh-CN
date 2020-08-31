@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，你的内容将在静止时加密，并在传输过程中提供最强大的加密、协议和技术。 获取 Office 365 中的加密概述。
-ms.openlocfilehash: 7a14cb1ab203ef1ee75962f4e55b4220c4ba06d9
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d3977902dfc1ee726fac696ae8b9cc0470e7dda8
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794171"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306431"
 ---
 # <a name="encryption"></a>加密
 
@@ -64,7 +64,7 @@ Microsoft 365 提供了 Microsoft 托管的解决方案，用于批量加密、�
   
 - [什么是 Azure 权限管理？](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
-- [在管理中心激活权限管理](https://docs.microsoft.com/office365/enterprise/activate-rms-in-office-365)
+- [在管理中心激活权限管理](https://docs.microsoft.com/microsoft-365/enterprise/activate-rms-in-microsoft-365)
 
 - [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)
 

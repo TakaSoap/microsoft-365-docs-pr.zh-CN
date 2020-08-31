@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: f2b2837a762398bb065d36c7f849b2fdcbbb5816
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: d6e6c6d9caff2ac7c13d03dad97b73906a509f46
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788880"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307855"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可以创建 Microsoft 365 组的用户
 
@@ -123,7 +123,7 @@ ms.locfileid: "46788880"
 
 `.\GroupCreators.ps1`
 
-出现提示时， [使用管理员帐户登录](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#step-2-connect-to-azure-ad-for-your-office-365-subscription) 。
+出现提示时， [使用管理员帐户登录](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) 。
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"

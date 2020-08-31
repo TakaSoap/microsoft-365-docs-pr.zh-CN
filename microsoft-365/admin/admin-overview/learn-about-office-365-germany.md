@@ -21,19 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解 Office 365 德国。
-ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386789"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307273"
 ---
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
 
 > [!NOTE]
 > Office 365 德国不会再接受新客户或部署新服务。 德国的新云区域在 2020 for Microsoft 365 和 Office 365 的第一季度中提供，将在德国提供核心客户数据派驻服务，以及与 Microsoft 全球云网络的完全连接。
 
-Office 365 德国在欧洲可提供的 Office 365 服务是一种不同的选择。 它通过为数字工作提供业界一流的工作效率服务，从德国数据中心的德国数据中心，通过德国法律管理的独特数据访问和控制措施，帮助您满足德国最受管控客户的需求、欧盟（EU）和欧洲自由贸易协会（EFTA）的需求。
+Office 365 德国在欧洲可提供的 Office 365 服务是一种不同的选择。 它通过在由德国法律管理的唯一数据受信者模型中为数字工作提供业界一流的工作效率服务、从德国数据中心 EFTA 到德国的数据访问和控制措施，帮助您满足德国最受管控客户的需求、欧盟 (EU) 以及欧洲免费贸易协会 () 。
   
 数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。德国法律规定，未经数据被信任方的批准或监督，不能访问客户数据。
   
@@ -45,7 +45,7 @@ Office 365 德国计划产品在此独立环境中尽可能与全球服务保持
   
 某些 [Office 365 Germany 订阅计划](https://go.microsoft.com/fwlink/p/?linkid=839016)中提供以下服务和功能。 此外，请参阅[联机服务条款](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
-- 适用于企业、Office 2016 和 Office 2013<sup>1</sup>的 Microsoft 365 应用程序。 请注意，Office 2013 需要[对 office 客户端使用 office 365 新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。
+- 适用于企业、Office 2016 和 Office 2013<sup>1</sup>的 Microsoft 365 应用程序。 请注意，Office 2013 需要 [对 office 客户端使用 office 365 新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。
     
 - Exchange Online
     
@@ -85,19 +85,19 @@ Office 365 德国计划产品在此独立环境中尽可能与全球服务保持
     
 - Delve
     
-<sup>1</sup>Office 365 德国计划包括在最终用户设备（"客户端软件应用程序"）上安装和运行的客户端软件应用程序，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 德国计划包括在最终用户的设备上安装和运行的客户端软件应用程序 ( "客户端软件应用程序" ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般信息
 
 |||
 |-----|-----|
 |登录门户  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|订阅、帐单和技术支持  <br/> |德语和英文版提供的基于德国的支持有关详细信息，请参阅[联系支持人员以获取商业产品-管理员帮助](../contact-support-for-business-products.md)。  <br/> |
-|IP 地址和 URL  <br/> |请参阅 [Office 365 德国版终结点](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints)。  <br/> |
+|订阅、帐单和技术支持  <br/> |德语和英文版提供的基于德国的支持有关详细信息，请参阅 [联系支持人员以获取商业产品-管理员帮助](../contact-support-for-business-products.md)。  <br/> |
+|IP 地址和 URL  <br/> |请参阅 [Office 365 德国版终结点](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints)。  <br/> |
 |Yammer  <br/> |不可用。  <br/> |
 |Office 版本低于 Office 2013 或 Microsoft 365 Apps for enterprise<sup>1</sup>的 office 版本 <br/> |不支持。  <br/> |
 |Office Lens  <br/> |不可用。  <br/> |
 |能够从 Microsoft 365 中购买域  <br/> |不可用。  <br/> |
 |SharePoint 应用商店  <br/> |Microsoft 应用商店中可用的所有应用均由 Microsoft 或第三方应用发行商提供，且需遵守单独的隐私声明以及条款和条件。通过使用 Microsoft 应用商店和任意应用提供的数据可由 Microsoft 或第三方应用发行商访问（若适用），并且此数据传输到、存储和处理的地点可能在美国，也可能在 Microsoft 或应用发行商及其关联公司或服务提供商驻地的任何其他国家/地区。请与应用发行商协作，确保它符合 Office 365 Germany 部署。  <br/> |
    
-有关可用于每个 Microsoft 365 计划的服务的详细信息，请参阅[Microsoft 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
+有关可用于每个 Microsoft 365 计划的服务的详细信息，请参阅 [Microsoft 365 服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。

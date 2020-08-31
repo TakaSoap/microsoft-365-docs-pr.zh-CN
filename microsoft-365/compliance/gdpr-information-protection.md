@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214566"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307679"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能履行 GDPR 信息保护
 
@@ -32,9 +32,9 @@ Microsoft 365 提供了一组丰富功能，有助于遵守一般数据保护条
 
 ## <a name="information-protection"></a>信息保护
 
-Office 365 提供了一组丰富的数据治理功能。若要获取查找、分类、保护和监视个人数据方面的帮助，请参阅 [Office 365 信息保护与 GDPR](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)。
+Office 365 提供了一组丰富的数据治理功能。若要获取查找、分类、保护和监视个人数据方面的帮助，请参阅 [Office 365 信息保护与 GDPR](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)。
 
-若要获取本地服务器（包括文件共享、SharePoint Server、Exchange Server、Skype for Business Server、Project Server 和 Office Online Server）方面的帮助，请参阅[本地 Office 服务器 GDPR](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers)。 
+若要获取本地服务器（包括文件共享、SharePoint Server、Exchange Server、Skype for Business Server、Project Server 和 Office Online Server）方面的帮助，请参阅[本地 Office 服务器 GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-for-office-servers)。 
 
 ## <a name="identity-and-access-management"></a>标识和访问管理
 
@@ -50,7 +50,7 @@ Office 365 提供了一组丰富的数据治理功能。若要获取查找、分
 Microsoft 提供了可入手的推荐配置：
 
 - [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)：实现三层保护（基线、敏感和高度受管制）的推荐策略配置。本指南介绍了适用于 Exchange Online 和 SharePoint Online（包括 OneDrive for Business）的推荐策略。
-- [适用于政治活动、非营利组织和其他敏捷组织的安全指南](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：除了包括一组相同的策略外，还提供了适用于 BYOD 环境和 B2B 帐户的更多指南。
+- [适用于政治活动、非营利组织和其他敏捷组织的安全指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：除了包括一组相同的策略外，还提供了适用于 BYOD 环境和 B2B 帐户的更多指南。
 
 ## <a name="threat-protection"></a>威胁防护
 
