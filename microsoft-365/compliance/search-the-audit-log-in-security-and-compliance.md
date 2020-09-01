@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: 75f807f2d09792838cab2ee5154578b5cbbbfde8
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674622"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294739"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -186,9 +186,9 @@ ms.locfileid: "46674622"
 
       > [!TIP]
       >
-      > - 如果要查找与**网站**相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，**"https://contoso-my.sharepoint.com/personal/*"**。
+      > - 如果要查找与**网站**相关的所有活动，请在 URL 后面添加通配符 (\*) 以返回该网站的所有条目，例如，`"https://contoso-my.sharepoint.com/personal*"`。
       >
-      > - 如果要查找与**文件**相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，**"*Customer_Profitability_Sample.csv"**。
+      > - 如果要查找与**文件**相关的所有活动，请在文件名后面添加通配符 (\*) 以返回该文件的所有条目，例如，`"*Customer_Profitability_Sample.csv"`。
 
 5. 单击“**搜索**”以使用搜索条件运行搜索。
 

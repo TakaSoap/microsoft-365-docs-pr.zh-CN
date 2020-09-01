@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 管理中心中管理这些 Azure 管理员角色。
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898024"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289089"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的 Azure Active Directory 角色
 
@@ -62,6 +62,8 @@ Microsoft 365 管理中心可让你管理 30 多个 Azure AD 角色。 然而，
 |组管理员   |在管理中心创建组并管理所有组设置。|
 |来宾邀请者     |    管理 Azure Active Directory B2B 来宾用户邀请。     |
 |支持管理员     | 为所有非管理员和某些管理员角色重置密码并重新进行身份验证、管理服务请求和监视服务运行状况。      |
+|见解管理员     | 管理 Microsoft 365 见解应用程序的所有方面，阅读 Azure Active Directory 信息，可监视服务运行状况并创建和管理服务请求。      |
+|见解商业版管理员     | 阅读 Microsoft 365 见解应用程序中的报告和见解。      |
 |Intune 管理员     | 可完全访问 Intune，管理用户和设备以关联策略，创建和管理组。      |
 |Kaizala 管理员     |    可完全访问 Kaizala 的所有管理功能和数据，管理服务请求。     |
 |许可证管理员     |     分配和删除用户的许可证以及编辑其使用位置。    |

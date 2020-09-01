@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1977009e6b0b1dbbf10a14b6a062207bbee04430
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529405"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289467"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 托管桌面服务说明
 
@@ -26,17 +26,17 @@ Microsoft 托管桌面服务为用户提供安全的新式体验，并总是提�
 - 应用程序兼容性，通过[桌面应用保证](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)实现
 - Windows 10 和 Microsoft 365 企业应用版的更新管理
 - 设备和应用使用情况的分析数据
-- 为你的最终用户提供 IT 支持
+- 面向用户的 IT 支持
 - 为 IT 专业人员提供操作支持
 
 如需 Microsoft 托管桌面特定服务的详细信息，请参阅本节中其他主题。 如已决定使用 Microsoft 托管桌面，可在 [Microsoft 托管桌面注册须知](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)主题了解加入该服务的步骤。
 
 - [Microsoft 托管桌面支持的区域和语言](regions-languages.md)介绍该服务支持的区域和语言。
-- 为保证最终用户的最佳体验，Microsoft 托管桌面仅支持一些设备。 [程序设备](device-list.md)指定可使用该服务的确切设备模型和配置，无论是由你提供还是与合作伙伴合作。
+- 为保证用户获得最佳体验，Microsoft 托管桌面仅支持某些设备。 [程序设备](device-list.md)指定可使用该服务的确切设备模型和配置，无论是由你提供还是与合作伙伴合作。
 - [设备服务](device-services.md)指定 Microsoft 向订阅者提供的设备相关服务。
 - [设备配置](device-policies.md)说明该服务将应用于注册设备的默认及与安全相关的移动设备管理策略。
 - [安全性](security.md)指定从注册设备收集的数据，以及与设备安全、标识和访问管理、网络安全和信息安全相关的功能和策略。
 - [更新](updates.md)描述 Microsoft 托管桌面用于更新设备的各种更新组。
-- [支持](support.md)说明 Microsoft 为你的组织和最终用户提供的支持。
+- [支持](support.md)说明 Microsoft 为你的组织和用户提供的支持。
 - [操作和监视](operations-and-monitoring.md)说明变更管理与 Microsoft 托管桌面如何协同工作，包括请求的标准流程以及部署中的变更准备。
 - [应用程序要求](mmd-app-requirements.md)描述 Microsoft 托管桌面允许的应用类型和行为，以及应用部署和管理的角色和职责划分。

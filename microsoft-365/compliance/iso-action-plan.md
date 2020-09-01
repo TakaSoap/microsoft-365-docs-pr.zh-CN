@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e94e20cf3936fc28497074cec05ddcb949314e07
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 7415fd8f455d90e791f9dfa6669378e78a5d741d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214526"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308285"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -59,7 +59,7 @@ ISO/IEC 27001 是实现信息安全管理系统 (ISMS) 的国际标准。ISMS �
 |||
 |:-----|:-----|
 |**区域**|**任务**|
-|使用 Microsoft 365 安全功能来控制对环境的访问，并根据定义的标准操作程序 (SOP) 保护组织信息和资产。|• 通过实现[标识和设备访问策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)（包括为所有用户帐户启用多重身份验证 (MFA)，以及为所有应用启用新式验证），保护管理员和最终用户帐户。<br>• 建立[强密码策略](https://www.microsoft.com/research/publication/password-guidance)来管理和保护用户帐户凭据。<br>• 设置 [Office 365 邮件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，以帮助最终用户在通过电子邮件发送敏感数据时遵守组织的 SOP。<br>•    将 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署到所有桌面，以防范恶意代码，并实施数据泄露防护和响应措施。<br>• 配置、测试和部署[数据丢失防护 (DLP) 策略](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)，以标识、监视和[自动保护](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>• 通过配置[策略提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，在电子邮件发件人发送违规邮件之前，自动通知他们可能违反了策略之一。 可将策略提示配置为，在 Outlook、Outlook 网页版和适用于设备的 OWA 中显示简要说明，以提供邮件创建期间可能的策略违反信息。<br>• 实现 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击途径，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
+|使用 Microsoft 365 安全功能来控制对环境的访问，并根据定义的标准操作程序 (SOP) 保护组织信息和资产。|• 通过实现[标识和设备访问策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)（包括为所有用户帐户启用多重身份验证 (MFA)，以及为所有应用启用新式验证），保护管理员和最终用户帐户。<br>• 建立[强密码策略](https://www.microsoft.com/research/publication/password-guidance)来管理和保护用户帐户凭据。<br>• 设置 [Office 365 邮件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，以帮助最终用户在通过电子邮件发送敏感数据时遵守组织的 SOP。<br>•    将 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署到所有桌面，以防范恶意代码，并实施数据泄露防护和响应措施。<br>• 配置、测试和部署[数据丢失防护 (DLP) 策略](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>• 通过配置[策略提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，在电子邮件发件人发送违规邮件之前，自动通知他们可能违反了策略之一。 可将策略提示配置为，在 Outlook、Outlook 网页版和适用于设备的 OWA 中显示简要说明，以提供邮件创建期间可能的策略违反信息。<br>• 实现 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击途径，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
 
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 天后 — 持续安全、数据管理和报告
@@ -70,8 +70,8 @@ ISO/IEC 27001 是实现信息安全管理系统 (ISMS) 的国际标准。ISMS �
 |||
 |:-----|:-----|
 |**区域**|**任务**|
-|使用 Microsoft 365 高级数据管理工具和信息保护来实现个人数据持续管理计划。|• 使用 [Office 365 高级数据管理](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)并通过自动应用 Microsoft 365 标签，标识文档和电子邮件中的个人信息。<br>• 使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保护整个组织中移动设备上存储和访问的敏感数据，并确保使用合规的公司设备访问数据。|
-|监视 Microsoft 365 和其他云应用程序的持续合规性。|•    若要根据标准操作过程 (SOP) 评估性能，请持续使用[合规性分数](compliance-score.md)，以定期对组织的信息安全策略及其实现执行 ISO 27001:2013 评估。<br>•  持续审查和监视信息安全管理系统。<br>• 使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 控制拥有高级权限的所有用户和组（即特权用户或管理用户），并对其执行定期评审。<br>• 部署和配置 [Office 365 中的特权访问管理](https://docs.microsoft.com/office365/enterprise/privileged-access-management-in-office-365)，以细化对 Office 365 中特权管理任务的访问控制。  启用后，用户需要通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成特权提升任务。<br>• 作为标准操作程序 (SOP) 的一部分，搜索审核日志，以检查租户配置设置的更改、最终用户特权提升以及有风险的用户活动。<br>• 审核[非所有者邮箱访问权限](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)，以标识潜在信息泄漏，并主动检查所有 Exchange Online 邮箱上的非所有者访问权限。<br>• 使用 [Microsoft 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data)，监视组织的云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>• 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自动跟踪有风险的活动，以标识潜在恶意管理员、调查数据泄露或验证是否符合合规性要求。|
+|使用 Microsoft 365 高级数据管理工具和信息保护来实现个人数据持续管理计划。|• 使用 [Office 365 高级数据管理](https://docs.microsoft.com/microsoft-365/compliance/apply-labels-to-personal-data-in-office-365)并通过自动应用 Microsoft 365 标签，标识文档和电子邮件中的个人信息。<br>• 使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保护整个组织中移动设备上存储和访问的敏感数据，并确保使用合规的公司设备访问数据。|
+|监视 Microsoft 365 和其他云应用程序的持续合规性。|•    若要根据标准操作过程 (SOP) 评估性能，请持续使用[合规性分数](compliance-score.md)，以定期对组织的信息安全策略及其实现执行 ISO 27001:2013 评估。<br>•  持续审查和监视信息安全管理系统。<br>• 使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure) 控制拥有高级权限的所有用户和组（即特权用户或管理用户），并对其执行定期评审。<br>• 部署和配置 [Office 365 中的特权访问管理](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview)，以细化对 Office 365 中特权管理任务的访问控制。  启用后，用户需要通过范围和时间高度受限的审核工作流，请求获取实时访问权限来完成特权提升任务。<br>• 作为标准操作程序 (SOP) 的一部分，搜索审核日志，以检查租户配置设置的更改、最终用户特权提升以及有风险的用户活动。<br>• 审核[非所有者邮箱访问权限](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports)，以标识潜在信息泄漏，并主动检查所有 Exchange Online 邮箱上的非所有者访问权限。<br>• 使用 [Microsoft 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data)，监视组织的云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>•    使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自动跟踪有风险的活动、标识潜在恶意管理员、调查数据泄露或验证是否符合合规性要求。|
 
 ## <a name="learn-more"></a>了解详细信息
 
