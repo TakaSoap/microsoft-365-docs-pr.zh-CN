@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294771"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308375"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -39,7 +40,7 @@ ms.locfileid: "47294771"
 
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
 - [使用租户允许/阻止列表手动重写筛选器 verdicts](tenant-allow-block-list.md)
-- [威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - "在 [威胁资源管理器](threat-explorer.md) 中覆盖信息" (电子邮件被租户/用户策略允许/阻止) 
 - 在 [威胁资源管理器](threat-explorer.md) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无) 
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f32dd33da0af0220cd2cf5b9eeb5f8ab9c2ecd92
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: e9f497c2692523ba8eb97257cac0c0a1b32c0857
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208106"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308353"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -54,8 +54,8 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 
 |**区域**|**Tasks**|
 |:-----|:-----|
-| **使用 Microsoft 365 数据管理和合规性功能开始推行合规性要求。** |* 使用 [Microsoft 服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) (STP) 中的 [Microsoft 合规性分数](compliance-score.md)来管理 GDPR 合规性。<br>* 通过适用于 Exchange 电子邮件、SharePoint 网站、OneDrive for Business 网站和 Microsoft 365 组的分类架构和相关 Office 365 标签，帮助用户根据 GDPR 规定来标识和分类个人数据。 请参阅[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)。|
-| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 将 [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署到所有桌面，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)和[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以标识、监视和[自动保护](https://docs.microsoft.com/office365/enterprise/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
+| **使用 Microsoft 365 数据管理和合规性功能开始推行合规性要求。** |* 使用 [Microsoft 服务信任门户](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) (STP) 中的 [Microsoft 合规性分数](compliance-score.md)来管理 GDPR 合规性。<br>* 通过适用于 Exchange 电子邮件、SharePoint 网站、OneDrive for Business 网站和 Microsoft 365 组的分类架构和相关 Office 365 标签，帮助用户根据 GDPR 规定来标识和分类个人数据。 请参阅[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)。|
+| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 将 [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署到所有桌面，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)和[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 天后 — 持续安全、数据管理和报告
 
@@ -63,8 +63,8 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 
 |**区域**|**Tasks**|
 |:-----|:-----|
-| **使用 Microsoft 365 高级数据管理工具和信息保护来实现个人数据持续管理计划。** |* 使用 [Office 365 高级数据管理](https://docs.microsoft.com/office365/enterprise/apply-labels-to-personal-data-in-office-365)并通过自动应用 Office 365 标签，标识文档和电子邮件中的个人信息。<br>* 通过部署 Microsoft Intune，保护整个组织中设备上存储的个人数据。<br>* 通过 Microsoft Intune 实现 [AAD 条件访问策略](https://docs.microsoft.com/intune/conditional-access)，以确保敏感个人信息的存储和访问符合公司策略。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)<br>* 使用 Office 365 标签、高级数据管理和保留策略来实现数据保留策略，以在必要长的时间段内保留管辖范围内的个人数据。|
-| **监视 Microsoft 365 和其他云应用程序的持续合规性。考虑符合欧盟个人数据的数据驻留要求。** |* 使用 [Office 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/office365/enterprise/monitor-for-leaks-of-personal-data)，监视云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>* 通过对 [Exchange Online 邮箱](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-exchange-online)、[OneDrive for Business 网站和 SharePoint Online 网站](https://docs.microsoft.com/office365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-office-365)使用 Microsoft 的多地理位置功能，在配置为一个全局组织的同时，满足组织、区域和本地的数据驻留要求。|
+| **使用 Microsoft 365 高级数据管理工具和信息保护来实现个人数据持续管理计划。** |* 使用 [Office 365 高级数据管理](https://docs.microsoft.com/microsoft-365/compliance/apply-labels-to-personal-data-in-office-365)并通过自动应用 Office 365 标签，标识文档和电子邮件中的个人信息。<br>* 通过部署 Microsoft Intune，保护整个组织中设备上存储的个人数据。<br>* 通过 Microsoft Intune 实现 [AAD 条件访问策略](https://docs.microsoft.com/intune/conditional-access)，以确保敏感个人信息的存储和访问符合公司策略。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)<br>* 使用 Office 365 标签、高级数据管理和保留策略来实现数据保留策略，以在必要长的时间段内保留管辖范围内的个人数据。|
+| **监视 Microsoft 365 和其他云应用程序的持续合规性。考虑符合欧盟个人数据的数据驻留要求。** |* 使用 [Office 365 警报策略、数据丢失防护报告和 Microsoft Cloud App Security](https://docs.microsoft.com/microsoft-365/security/office-365-security/monitor-for-leaks-of-personal-data)，监视云应用程序使用情况，并实现基于启发和用户活动的高级警报策略。<br>* 通过对 [Exchange Online 邮箱](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-exchange-online)、[OneDrive for Business 网站和 SharePoint Online 网站](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365)使用 Microsoft 的多地理位置功能，在配置为一个全局组织的同时，满足组织、区域和本地的数据驻留要求。|
 
 ## <a name="learn-more"></a>了解详细信息
 

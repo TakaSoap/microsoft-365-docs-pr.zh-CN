@@ -16,18 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 本分步部署指南可用于在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站。
-ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755220"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308411"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
  **摘要：** 按照这些分步说明部署一个新的独立 SharePoint Online 团队网站。
   
-本文是在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站的分步部署指南。 这些步骤假定使用三个默认 SharePoint 组和相应的权限级别，每个级别的访问权限都有一个基于 Azure Active Directory （AD）的访问组。
+本文是在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站的分步部署指南。 这些步骤假设使用了三个默认 SharePoint 组和相应的权限级别，每个级别的每个访问级别都有一个 Azure Active Directory (基于 AD) 的访问组。
   
 ## <a name="phase-1-create-and-populate-the-team-site-access-groups"></a>第1阶段：创建和填充团队网站访问组
 
@@ -40,7 +40,7 @@ ms.locfileid: "44755220"
 
 确定对应于独立团队网站的 SharePoint Online 管理员的用户帐户集。
   
-如果您通过 Microsoft 365 管理用户帐户和组，并且想要使用 Windows PowerShell，请列出其用户主体名称（upn）（示例 UPN： belindan@contoso.com）。
+如果您通过 Microsoft 365 管理用户帐户和组，并且想要使用 Windows PowerShell，请将其用户主体名称列表 (Upn)  (示例 UPN： belindan@contoso.com) 。
   
 ### <a name="step-2-list-the-members-for-the-site"></a>步骤2：列出网站的成员
 
@@ -60,11 +60,11 @@ ms.locfileid: "44755220"
 
 您需要在 Azure AD 中创建以下访问组：
   
-- 网站管理员（将包含步骤1中的列表）
+- 将包含步骤1中的列表的网站管理员 () 
     
-- 网站成员（将包含步骤2中的列表）
+- 将包含步骤2中的列表的网站成员 () 
     
-- 网站查看器（将包含步骤3中的列表）
+- 将包含步骤3中的列表的网站查看器 () 
     
 1. 在浏览器中，转到 Azure 门户， [https://portal.azure.com](https://portal.azure.com) 并使用已分配给用户管理管理员或公司管理员角色的帐户的凭据进行登录。
     
@@ -72,13 +72,13 @@ ms.locfileid: "44755220"
     
 3. 在“**组 - 所有组**”边栏选项卡上，单击“**+ 新建组**”。
     
-4. 在**新组**边栏上：
+4. 在 **新组** 边栏上：
     
     - 在“组类型”中选择“安全性”********。
 
-    - 在 "**名称**" 中键入组名称。
+    - 在 " **名称**" 中键入组名称。
 
-    - 在 "**组说明**" 中键入组的说明。
+    - 在 " **组说明**" 中键入组的说明。
 
     - 在“**成员身份**”类型中，选择“**已分配**”。
     
@@ -103,13 +103,13 @@ ms.locfileid: "44755220"
     
 3. 将步骤3中的用户列表添加到 "网站查看者访问" 组
     
-如果通过 Active Directory 域服务（AD DS）管理用户帐户和组，请使用常规 AD DS 用户和组管理程序将用户添加到相应的访问组，并等待与 Microsoft 365 订阅同步。
+如果通过 Active Directory 域服务 (AD DS) 管理用户帐户和组，请使用常规 AD DS 用户和组管理程序将用户添加到相应的访问组，并等待与 Microsoft 365 订阅同步。
   
 如果通过 Office 365 管理用户帐户和组，则可以使用 Microsoft 365 管理中心或 PowerShell。 如果有任何访问组的组名称重复，则应使用 Microsoft 365 管理中心。
   
 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户帐户和组添加到相应的访问组。
   
-对于 PowerShell，首先[与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来，使用以下命令块将单个用户帐户添加到访问组中：
   
@@ -161,19 +161,19 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用这些步骤创建 SharePoint Online 团队网站。
   
-1. 使用将用于管理 SharePoint Online 团队网站（SharePoint Online 管理员）的帐户登录到 Microsoft 365 管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用将用于管理 SharePoint Online 团队网站 (SharePoint Online 管理员) 的帐户登录到 Microsoft 365 管理中心。 如需帮助，请参阅[如何登录到 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 在 Microsoft 365 管理中心的 "**管理中心**" 下，单击 " **SharePoint**"。
+2. 在 Microsoft 365 管理中心的 " **管理中心**" 下，单击 " **SharePoint**"。
 
-3. 在 SharePoint 管理中心中，展开 "**网站**"，然后单击 "**活动网站**"。
+3. 在 SharePoint 管理中心中，展开 " **网站** "，然后单击 " **活动网站**"。
 
-4. 单击 "**创建**"，然后选择 "**其他选项**"。
+4. 单击 " **创建**"，然后选择 " **其他选项**"。
 
-5. 在 "**选择模板**" 列表中，选择 "**团队网站**"。
+5. 在 " **选择模板** " 列表中，选择 " **团队网站**"。
    
-6. 在 "**网站名称**" 中，键入团队网站的名称。 
+6. 在 " **网站名称**" 中，键入团队网站的名称。 
     
-7. 在**主管理员**中，键入您登录时使用的帐户。
+7. 在 **主管理员**中，键入您登录时使用的帐户。
  
 8. 单击“完成”****。
     
@@ -181,21 +181,21 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 1. 在工具栏中，依次单击设置图标和“**网站权限**”。
 
-2. 在 "**网站共享**" 下，单击 "**更改成员可以共享的方式**"。
+2. 在 " **网站共享**" 下，单击 " **更改成员可以共享的方式**"。
 
-3. 选择 "**仅网站所有者" 可以共享文件、文件夹和网站**。
+3. 选择 " **仅网站所有者" 可以共享文件、文件夹和网站**。
 
-4. 将 "**允许访问请求**" 设置为 "**关闭**"。
+4. 将 " **允许访问请求** " 设置为 " **关闭**"。
 
-5. 单击“保存”****。
+5. 单击“**保存**”。
     
-6. 在 "**权限**" 窗格中，单击 "**高级权限设置**"。
+6. 在 " **权限** " 窗格中，单击 " **高级权限设置**"。
     
 7. 在浏览器的 "**权限**" 选项卡上，单击列表中的 " ** \<site name> 成员**"。
     
 8. 在“人员和组”中，单击“新建”********。
     
-9. 在 "**共享**" 对话框中，键入网站成员访问组的名称，选择它，然后单击 "**共享**"。
+9. 在 " **共享** " 对话框中，键入网站成员访问组的名称，选择它，然后单击 " **共享**"。
     
 10. 单击浏览器上的后退按钮。
     
@@ -203,7 +203,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 12. 在“人员和组”中，单击“新建”********。
     
-13. 在 "**共享**" 对话框中，键入 "网站管理员" 访问组的名称，选择它，然后单击 "**共享**"。
+13. 在 " **共享** " 对话框中，键入 "网站管理员" 访问组的名称，选择它，然后单击 " **共享**"。
     
 14. 单击浏览器上的后退按钮。
     
@@ -211,7 +211,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 16. 在“人员和组”中，单击“新建”********。
     
-17. 在 "**共享**" 对话框中，键入 "网站查看者访问" 组的名称，选择它，然后单击 "**共享**"。
+17. 在 " **共享** " 对话框中，键入 "网站查看者访问" 组的名称，选择它，然后单击 " **共享**"。
     
 18. 关闭浏览器的“权限”标签页****。
     
@@ -233,7 +233,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 ## <a name="next-step"></a>后续步骤
 
-如果需要更改网站访问组成员身份或创建具有自定义权限的文档文件夹，请参阅[管理独立的 SharePoint Online 团队网站](manage-an-isolated-sharepoint-online-team-site.md)。
+如果需要更改网站访问组成员身份或创建具有自定义权限的文档文件夹，请参阅 [管理独立的 SharePoint Online 团队网站](manage-an-isolated-sharepoint-online-team-site.md)。
   
 ## <a name="see-also"></a>另请参阅
 

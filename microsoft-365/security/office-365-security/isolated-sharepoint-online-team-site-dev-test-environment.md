@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：在 Microsoft 365 开发/测试环境中配置与组织的其余部分隔离的 SharePoint Online 团队网站。
-ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 095b0e5098d86f69c21576e72439dde48a092db3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588024"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308399"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -56,20 +56,20 @@ Microsoft 365 中的 SharePoint Online 团队网站是使用通用文档库、On
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>第1阶段：构建轻型或模拟的企业 Microsoft 365 开发/测试环境
 
-如果只想使用最低要求以轻量方式创建独立的 SharePoint Online 团队网站，请按照[轻型基本配置](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)的第2阶段和第3阶段中的说明进行操作。
+如果只想使用最低要求以轻量方式创建独立的 SharePoint Online 团队网站，请按照 [轻型基本配置](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)的第2阶段和第3阶段中的说明进行操作。
 
-如果要在模拟的企业配置中创建独立的 SharePoint Online 团队网站，请按照[针对 Microsoft 365 测试环境的密码哈希同步](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)中的说明进行操作。
+如果要在模拟的企业配置中创建独立的 SharePoint Online 团队网站，请按照 [针对 Microsoft 365 测试环境的密码哈希同步](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)中的说明进行操作。
 
 > [!NOTE]
-> 创建独立的 SharePoint Online 网站不需要模拟企业开发/测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务（AD DS）林的目录同步。 可以根据需要选择此选项，以便能够测试独立 SharePoint Online 网站，并在代表典型组织的环境中对其进行试验。
+> 创建独立的 SharePoint Online 网站不需要模拟企业开发/测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 可以根据需要选择此选项，以便能够测试独立 SharePoint Online 网站，并在代表典型组织的环境中对其进行试验。
 
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>第2阶段：创建用户帐户和访问组
 
-使用[连接到 Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell)中的说明，通过全局管理员帐户连接到你的试用订阅：
+使用 [连接到 Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell) 中的说明，通过全局管理员帐户连接到你的试用订阅：
 
-- 您的计算机（适用于轻型 Microsoft 365 开发/测试环境）。
+- 您的计算机 (的轻型 Microsoft 365 开发/测试环境) 。
 
-- CLIENT1 虚拟机（针对模拟企业 Microsoft 365 开发/测试环境）。
+- 模拟企业 Microsoft 365 开发/测试环境的 CLIENT1 虚拟机 () 。
 
 若要为 ProjectX SharePoint Online 团队网站创建新的访问组，请从 Windows PowerShell 提示符的 Windows Azure Active Directory 模块运行以下命令：
 
@@ -148,13 +148,13 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 若要为 ProjectX 创建 SharePoint Online 团队网站，请执行以下操作：
 
-1. 使用本地计算机（轻量配置）或 CLIENT1 （模拟企业配置）上的浏览器，使用全局管理员帐户登录 Microsoft 365 管理中心（ [https://admin.microsoft.com](https://admin.microsoft.com) ）。
+1. 使用本地计算机上的浏览器 (轻量配置) 或在 CLIENT1 (模拟企业配置) 上，使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
 3. 在浏览器上的新“SharePoint”选项卡中，单击“+ 创建网站”****。
 
-4. 在“团队网站名称”**** 中，键入“ProjectX”****。 在 "**隐私设置**" 中，选择 "**仅专用成员可以访问此网站**"。
+4. 在“团队网站名称”**** 中，键入“ProjectX”****。 在 " **隐私设置**" 中，选择 " **仅专用成员可以访问此网站**"。
 
 5. 在“团队网站描述”**** 中，键入“ProjectX 的 SharePoint 网站”****，然后单击“下一步”****。
 
@@ -170,7 +170,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 11. 单击列表中的“ProjectX 成员”****。
 
-12. 在“人员和组”页中，单击“新建”********。
+12. 在“**人员和组**”页面上，单击“**新建**”。
 
 13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
 
@@ -194,11 +194,11 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 下面介绍了权限配置结果：
 
-- ProjectX Members SharePoint 组仅包含 ProjectX 成员访问组（它只包含领导设计人员和负责人研究人员用户帐户）和 ProjectX 组（其中仅包含全局管理员用户帐户）。
+- ProjectX Members SharePoint 组仅包含 ProjectX 成员访问组 (，其中仅包含领导设计人员和负责人研究人员用户帐户) 以及仅包含全局管理员用户帐户) 的 ProjectX 组 (。
 
-- ProjectX 所有者 SharePoint 组仅包含 ProjectX 访问组（仅包含全局管理员用户帐户）。
+- ProjectX 所有者 SharePoint 组仅包含 ProjectX 访问组 (仅包含全局管理员用户帐户的) 。
 
-- "ProjectX 访问者" SharePoint 组仅包含 "ProjectX" 访问群体（它只包含 "开发副总裁" 用户帐户）。
+- "ProjectX 访问者" SharePoint 组仅包含 "ProjectX" 访问组 (，其中仅包含 "开发副总裁" 用户帐户) 。
 
 - 成员无法修改网站级权限（只有 ProjectX-Admins 组成员才能修改）。
 
@@ -216,11 +216,11 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 2. 依次单击全局管理员名称和“注销”****。
 
-3. [https://admin.microsoft.com](https://admin.microsoft.com)使用主导设计器帐户名称及其密码登录 Microsoft 365 管理中心（）。
+3. [https://admin.microsoft.com](https://admin.microsoft.com)使用主导 Designer 帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
 4. 在磁贴列表中，单击“SharePoint”****。
 
-5. 在浏览器的 "新建**SharePoint** " 选项卡上，在 "搜索" 框中键入**ProjectX** ，激活搜索，然后单击 " **ProjectX**团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
+5. 在浏览器的 "新建 **SharePoint** " 选项卡上，在 "搜索" 框中键入 **ProjectX** ，激活搜索，然后单击 " **ProjectX** 团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
 
 6. 单击设置图标。请注意，没有“网站权限”**** 选项。这没有问题，因为只有 ProjectX-Admins 组成员才能修改网站级权限
 
@@ -234,11 +234,11 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 11. 在浏览器上的新“ProjectX-文档”**** 选项卡中，依次单击“新建”>“Word 文档”****。
 
-12. 在页面上键入一些文本，等待状态显示为 "**已保存**"，单击浏览器上的 "后退" 按钮，然后刷新页面。 应该会看到“文档”**** 文件夹中有新的“Document.docx”****。
+12. 在页面上键入一些文本，等待状态显示为 " **已保存**"，单击浏览器上的 "后退" 按钮，然后刷新页面。 应该会看到“文档”**** 文件夹中有新的“Document.docx”****。
 
 13. 依次单击“Document.docx”**** 文档对应的省略号和“获取链接”****。
 
-14. 复制**共享 ".docx"** 对话框中的 URL，并将其粘贴到记事本或文本编辑器中的新行上，然后关闭**共享的 ".docx"** 对话框。
+14. 复制 **共享 "Document.docx"** 对话框中的 URL，并将其粘贴到记事本或文本编辑器中的新行上，然后关闭 **共享 "Document.docx"** 对话框。
 
 15. 关闭浏览器中的“ProjectX-文档”**** 和“SharePoint”**** 选项卡，然后单击“Microsoft Office 主页”**** 选项卡。
 
@@ -246,11 +246,11 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 现在，让我们来演示如何使用开发 VP 用户帐户进行访问：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用开发副总裁帐户名称及其密码登录 Microsoft 365 管理中心（）。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)使用开发副总裁帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
-3. 在浏览器的 "新建**SharePoint** " 选项卡上，在 "搜索" 框中键入**ProjectX** ，激活搜索，然后单击 " **ProjectX**团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
+3. 在浏览器的 "新建 **SharePoint** " 选项卡上，在 "搜索" 框中键入 **ProjectX** ，激活搜索，然后单击 " **ProjectX** 团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
 
 4. 依次单击“文档”**** 和“Document.docx”**** 文件。
 
@@ -262,7 +262,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 现在，让我们使用没有权限的用户帐户演示访问权限：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用用户3帐户名称及其密码登录 Microsoft 365 管理中心（）。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)使用用户3帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
 2. 在磁贴列表中，单击“SharePoint”****。
 
@@ -286,7 +286,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 [独立 SharePoint Online 团队网站](isolated-sharepoint-online-team-sites.md)
 
-[云采用测试实验室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[云应用测试实验室指南 (TLG) ](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
 [模拟企业基础配置](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
