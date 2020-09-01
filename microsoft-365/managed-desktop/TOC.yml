@@ -102,6 +102,8 @@
               href: get-started/project-visio.md
             - name: 新版 Microsoft Edge
               href: get-started/edge-browser-app.md
+            - name: Microsoft 365 企业应用版
+              href: get-started/m365-apps.md
     - name: 使用 Microsoft 托管桌面
       href: working-with-managed-desktop/index.md
       items:
@@ -123,7 +125,7 @@
               href: working-with-managed-desktop/security-update-insights.md
         - name: 管理支持
           href: working-with-managed-desktop/admin-support.md
-        - name: 最终用户支持
+        - name: 用户支持
           href: working-with-managed-desktop/end-user-support.md
         - name: 管理应用
           href: working-with-managed-desktop/manage-apps.md
