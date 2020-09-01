@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 为 Microsoft 365 设置设备管理的路线图。
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687818"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315737"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的设备管理路线图
 
@@ -47,17 +47,11 @@ Intune 为你提供了使用移动设备管理 (MDM) 或移动应用程序管理
  
 ## <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
-Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于设备访问，请使用以下文章中的建议和设置以及此阶段中的步骤：
+Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于设备访问，请使用这些文章中的建议和设置：
 
 - [先决条件](identity-access-prerequisites.md)
 - [常见标识和设备访问策略](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Microsoft 如何将设备管理用于 Microsoft 365
-
-了解 Microsoft IT 专家如何 [使用 EMS 管理设备](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)。
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何为 Microsoft 365 进行设备管理
 
 了解 Contoso Corporation （一个虚构但具有代表性的多国企业）如何使用 Microsoft 365 云服务 [部署其移动设备管理基础结构](contoso-mdm.md) 。
-
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何管理组织中用户的 Office 脚本设置。
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300825"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317489"
 ---
 # <a name="manage-office-scripts-settings"></a>管理 Office 脚本设置
 
@@ -35,7 +35,7 @@ ms.locfileid: "47300825"
 
     - Microsoft 365 商业标准版
     - Microsoft 365 商业应用版
-    - Microsoft 365 企业应用版
+    - 适用于企业的 Microsoft 365 应用
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3
@@ -78,7 +78,7 @@ ms.locfileid: "47300825"
     
         若要了解有关不同类型的组的详细信息，请参阅 [比较组](../create-groups/compare-groups.md)。
 
-7. 选择“保存”****。
+7. 选择 **“保存”**。
 
     最长可能需要48小时才能使 Office 脚本设置的更改生效。
 

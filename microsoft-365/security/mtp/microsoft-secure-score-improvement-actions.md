@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ab75e7ddbf3ada01c3f1247e58d8dc9472ecae77
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866971"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315827"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 
@@ -35,7 +35,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 *  (Azure Active Directory 帐户 & 角色的标识) 
 * Microsoft 信息保护) 的数据 (
-* Microsoft Defender ATP (的设备，称为 [配置分数](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score)) 
+* 设备 (Microsoft Defender ATP，称为 [设备的 Microsoft 安全分数](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
 * 应用 (电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全) 
 * 基础结构 (现在没有任何改进操作) 
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 的身份标识指南。
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688199"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315795"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身份路线图
 
@@ -42,14 +42,14 @@ ms.locfileid: "46688199"
 
 ## <a name="plan"></a>套餐
 
-在您的身份实现的规划阶段：
+规划您的身份实现：
 
 - [了解不同的标识模型](about-microsoft-365-identity.md)
 - [规划混合标识和目录同步](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>部署
 
-在您的身份实现的部署阶段：
+若要部署您的身份实现：
 
 - [保护全局管理员帐户](protect-your-global-administrator-accounts.md)
 - [配置和使用仅限云的标识](cloud-only-identities.md)
@@ -59,14 +59,14 @@ ms.locfileid: "46688199"
 
 ### <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
-Microsoft 提供了一组有关[标识和设备访问](microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。对于标识，请使用下列文章中的建议和设置以及此阶段中的步骤：
+Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于 "标识"，请使用以下文章中的建议和设置：
 
 - [先决条件](identity-access-prerequisites.md)
 - [常见标识和设备访问策略](identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 
-在您的身份实现的管理阶段：
+若要管理您的身份实现：
 
 - [分配许可证并管理用户帐户](assign-licenses-to-user-accounts.md)
 - [监视目录同步](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Microsoft 提供了一组有关[标识和设备访问](microsoft-365-policies-co
 
 了解 Contoso Corporation（虚构但具代表性的跨国企业）如何为 Microsoft 365 云服务[部署混合身份基础结构](contoso-identity.md)。
 
-![Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>后续步骤
 
 开始使用 [标识模型](about-microsoft-365-identity.md)进行标识规划。
-

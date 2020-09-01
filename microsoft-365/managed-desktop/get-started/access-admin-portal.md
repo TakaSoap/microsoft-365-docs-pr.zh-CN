@@ -10,31 +10,54 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 420cdaabb607eacf0d7a7109827fe5437e2f999c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8a5de1673a7b67481c368c5c76444e817f237fe7
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530219"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315773"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
-你的 Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常情况下使用和自定义 Azure 门户体验的详细信息，请参阅[azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 在预览中，您还可以在[Microsoft 终结点管理器](https://endpoint.microsoft.com/)中找到 Microsoft 托管桌面。 如果你不熟悉此门户的设备管理功能，请参阅[Microsoft 终结点管理器文档](https://docs.microsoft.com/mem/)。
+你的 Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常情况下使用和自定义 Azure 门户体验的详细信息，请参阅 [azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 在预览中，您还可以在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中找到 Microsoft 托管桌面。 如果你不熟悉此门户的设备管理功能，请参阅 [Microsoft 终结点管理器文档](https://docs.microsoft.com/mem/)。
 
-您的管理帐户需要特定的权限才能访问 Microsoft 托管桌面管理门户。 通过使用基于角色的访问控制（RBAC），可以管理对组织中这些功能的管理员访问。 有关 Azure Active Directory 角色的详细信息，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+您的管理帐户需要特定的权限才能访问 Azure 门户或 Microsoft 终结点管理器中的 Microsoft 托管桌面管理功能。 您可以通过使用基于角色的访问控制 (RBAC) 管理对组织内的这些功能的管理员访问。 有几个 Azure AD 管理员角色和内置自定义角色可用于向 Microsoft 托管桌面管理门户中的不同功能提供更精细的控制。 有关 Azure Active Directory 角色的详细信息，请参阅 [Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 与适用于各种 Microsoft 产品和服务的 AAD 管理员角色不同，自定义角色特定于 Microsoft 托管桌面，并将仅保证能够访问此服务的管理功能。 管理员可以将自定义角色单独或与 AAD 管理员角色结合使用，以向现有管理员帐户添加 Microsoft 托管桌面权限。
 
-为您的管理员用户帐户分配以下任何角色以确保访问：
+可以分配以下每个角色，以提供不同级别的访问权限：
 
 |Azure AD 角色  |Microsoft 托管桌面权限  |
 |---------|---------|
-|全局管理员     | 具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的**读取和写入权限**。         |
-|全局读取者     | 具有此角色的管理员将对 Microsoft 托管桌面管理门户中的所有功能具有**只读权限**。         |
-|Intune 服务管理员     |  具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的**读取和写入权限**。       |
-|服务支持管理员     | 具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的**读取和写入权限**。         |
+|全局管理员     | 具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的 **读取和写入权限** 。         |
+|全局读取者     | 具有此角色的管理员将对 Microsoft 托管桌面管理门户中的所有功能具有 **只读权限** 。         |
+|Intune 服务管理员     |  具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的 **读取和写入权限** 。 **更改：** 从9月2020日起，此角色的管理员将无法访问 Microsoft 托管桌面安全功能。       |
+|服务支持管理员     | 具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中所有功能的 **读取和写入权限** 。 **更改：** 从9月2020日起，此角色的管理员将无法访问 Microsoft 托管桌面安全功能。         |
+|安全管理员 | ** 2020 年9月 (日预览) ** 具有此角色的管理员对管理门户中的 Microsoft 托管桌面中的所有功能和对安全相关功能的写入权限都具有只读权限。 |
+|安全读取者 | ** 2020 年9月 (日预览) **  具有此角色的管理员将对 Microsoft 托管桌面管理门户中的所有功能具有只读权限。|
 
 > [!IMPORTANT]
-> 只有全局管理员角色才具有在 Microsoft 托管桌面中*注册*组织所需的权限。 请注意，Azure Active Directory 角色将在各种 Microsoft 服务中提供用户帐户权限。 在 Microsoft 托管桌面完成注册后，应始终使用具有完成其他任务所需的*最少*权限的角色。
+> 只有全局管理员角色才具有在 Microsoft 托管桌面中 *注册* 组织所需的权限。 请注意，Azure Active Directory 角色将在各种 Microsoft 服务中提供用户帐户权限。 在 Microsoft 托管桌面完成注册后，应始终使用具有完成其他任务所需的 *最少* 权限的角色。
+
+ 
+|自定义角色  |Microsoft 托管桌面权限  |
+|---------|---------|
+|Microsoft 托管桌面服务管理员  | ** 2020 年9月 (日预览) ** 当分配给用户时，此角色使管理员读取 & 对与 Microsoft 托管桌面管理门户中的 **安全性无关的功能的写入权限** 。  |
+|Microsoft 托管桌面服务读取器 | ** 2020 年9月 (日预览) ** 当分配给用户时，此角色将为管理员 **只读权限，而不是与** Microsoft 托管桌面管理门户中的安全性相关的功能。 |
+|Microsoft 托管桌面安全管理器 | ** 2020 年9月 (日预览) ** 当分配给用户时，此角色会使管理员读取 & 对 Microsoft 托管桌面管理门户中的 **安全相关功能的写入权限** 。   |
+
+> [!NOTE]
+> 安全功能包括与安全性相关的通信、安全联系人的管理、与安全相关的支持请求的管理，以及对安全相关报告的访问。 
 
 ## <a name="assigning-roles-to-administrators"></a>向管理员分配角色
 
-如果你需要有关分配 Azure Active Directory 角色的帮助，请参阅[Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+如果你需要有关分配 Azure Active Directory 角色的帮助，请参阅 [Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+
+为了便于管理内置角色，已为每个自定义角色创建安全组 (例如，"新式工作区角色–安全管理器" ) 。 若要将用户分配给其中一个安全组，请按照以下步骤操作：
+1.  转到 Azure 门户并导航到 Azure Active Directory 边栏。
+2.  选择左侧的 "组"。
+3.  搜索新式工作区角色，然后选择与要分配的角色相关联的组。 
+4.  选择左侧的 "成员"，然后在命令栏上选择 "+ 添加成员"。
+5.  输入要添加的人员的电子邮件。 如果是外部用户，则必须先邀请它们，然后才能分配组。
+6.  选择底部的 "选择"。
+
+> [!NOTE]
+> 目前不支持为角色分配嵌套安全组。 
