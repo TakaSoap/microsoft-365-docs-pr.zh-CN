@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为适用于 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件的 Microsoft 365 设置客户密钥。
-ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868887"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324208"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -31,7 +31,9 @@ ms.locfileid: "46868887"
   
 ## <a name="before-you-set-up-customer-key"></a>设置客户密钥之前
 
-在开始之前，请确保您有适合您的组织的许可。 Microsoft 365 中的客户密钥在 Office 365 E5 或高级合规性 SKU 中提供。 若要了解本主题中的概念和过程，请参阅 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 文档。 此外，还应熟悉 Azure 中使用的术语（例如 [租户](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))）。
+在开始之前，请确保您有适合您的组织的许可。 2006年4月1日，2020，Office 365 中的客户密钥在 Office 365 E5、M365 E5、M365 E5 合规性和 M365 E5 信息保护 & 调控 Sku 中提供。 Office 365 高级合规性 SKU 不再可用于采购新的许可证。 现有 Office 365 高级合规性许可证将继续受支持。
+
+若要了解本主题中的概念和过程，请参阅 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 文档。 此外，还应熟悉 Azure 中使用的术语（例如， [AZURE AD 租户](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)）。
 
 FastTrack 仅用于收集用于注册客户密钥所需的租户和服务配置信息。 客户密钥提供通过 FastTrack 发布，以便您和我们的合作伙伴可以使用相同的方法提交所需的信息。 FastTrack 还使您可以轻松地将提供的数据存档。
   

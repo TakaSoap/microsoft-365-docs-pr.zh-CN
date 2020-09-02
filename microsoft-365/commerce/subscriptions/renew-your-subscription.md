@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '了解如何使用产品密钥续订 Microsoft 365 商业版订阅并关闭或打开定期计费功能。 '
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 了解如何通过关闭或打开定期计费功能来续订 Microsoft 365。
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403218"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324300"
 ---
 # <a name="renew-microsoft-365-for-business"></a>续订 Microsoft 365 商业版
 
@@ -57,18 +53,15 @@ ms.locfileid: "44403218"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
 2. 选择想要为其管理定期计费的订阅。
-
-3. 在“**计费**”下的“**续订日期**”或“**到期日期**”旁边，选择“**编辑**”。
-
-4. 在“**定期计费设置**”窗格中，选择“**关闭**”以将其关闭。 如果“定期计费”已关闭，请选择“**每月**”或“**一次性**”将其启用。
-
-5. 选择“**提交更改**”。
+3. 在“订阅详细信息”页面的“**订阅和付款设置**”下，选择“**编辑定期计费**”。
+4. 在“**编辑定期计费设置**”窗格中，选择“**开**”，“**开，但续订一次**”或“**关**”。
+5. 选择“**保存**”。
 
     > [!NOTE]
     > - 只能更改活动订阅的“**定期计费**”设置。 如果你的订阅已过期或处于禁用状态，则你需要[重新激活](reactivate-your-subscription.md)它，然后才能打开或关闭“**定期计费**”。
-    > - 关闭“**定期计费**”后，不会立即取消订阅。 它将在过期之前保持活动状态。 在“**你的产品**”页面上，可在订阅详细信息中的“**计费**”部分查看到期日期。
+    > - 关闭“**定期计费**”后，不会取消订阅。 如果要保持订阅有效，则必须手动支付帐单。
+    > - 如果关闭“**定期计费**”，订阅将保持活动状态，直至到期。 可在“订阅详细信息”页面的“**订阅和付款设置**”部分中查看到期日。
     > - 若要了解如何立即取消订阅，请参阅[取消订阅](cancel-your-subscription.md)。
 
 ::: moniker-end
