@@ -17,37 +17,37 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 通过创建查询，使用内容搜索电子数据展示工具搜索从第三方数据源导入到 Microsoft 365 中的邮箱的项目。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 823d95d6b32a15662004bfc5d92662b130fe4a65
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527412"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324568"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用内容搜索来搜索自定义合作伙伴连接器导入的第三方数据
 
-您可以使用安全 & 合规中心中的[内容搜索电子数据展示工具](content-search.md)，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。
+您可以使用安全 & 合规中心中的 [内容搜索电子数据展示工具](content-search.md) ，在第三方数据源中搜索从 Microsoft 365 导入邮箱的项目。 您可以创建查询以搜索所有导入的第三方数据项，也可以创建查询以搜索特定的第三方数据项。 此外，还可以创建基于查询的保留策略或基于查询的电子数据展示保留以保留第三方数据。
   
-有关使用合作伙伴导入第三方数据的详细信息以及可以导入到 Microsoft 365 的第三方数据类型的列表，请参阅[使用合作伙伴在 Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。
+有关使用合作伙伴导入第三方数据的详细信息以及可以导入到 Microsoft 365 的第三方数据类型的列表，请参阅 [使用合作伙伴在 Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md)。
 
 > [!IMPORTANT]
-> 本文中的指导仅适用于自定义合作伙伴连接器导入的第三方数据。 本文不适用于使用 Microsoft 合规性中心中的[第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)导入的第三方数据。
+> 本文中的指导仅适用于自定义合作伙伴连接器导入的第三方数据。 本文不适用于使用 Microsoft 合规性中心中的 [第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors) 导入的第三方数据。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>创建查询以搜索所有第三方数据
 
-若要搜索（或置于保留状态）您导入到 Office 365 的任何类型的第三方数据，可以 `kind:externaldata` 在内容搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留时使用。 例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询： 
+若要搜索 (或置于保留状态) 您导入到 Office 365 的第三方数据类型，可以  `kind:externaldata` 在内容搜索的关键字框中使用邮件属性-值对，也可以在创建基于查询的保留。 例如，若要搜索从任何第三方数据源导入的项目，并在导入项目的 Subject 属性中包含 "contoso" 一词，请使用以下查询： 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-上一个关键字查询示例包括 subject 属性。 有关可包括在关键字查询中的第三方数据项的其他属性列表，请参阅在[Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。
+上一个关键字查询示例包括 subject 属性。 有关可包括在关键字查询中的第三方数据项的其他属性列表，请参阅在 [Office 365 中存档第三方数据](work-with-partner-to-archive-third-party-data.md#more-information)一节中的 "详细信息" 部分。
   
-创建查询以搜索并保存第三方数据时，您还可以使用条件来缩小搜索结果的范围。 有关创建内容搜索查询的详细信息，请参阅[用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+创建查询以搜索并保存第三方数据时，您还可以使用条件来缩小搜索结果的范围。 有关创建内容搜索查询的详细信息，请参阅 [用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>创建查询以搜索特定类型的第三方数据
 
-除了搜索所有类型的第三方数据之外，您可以使用以下消息*属性：值*对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询：
+除了搜索所有类型的第三方数据之外，您可以使用以下消息 *属性：值* 对在内容搜索的关键字框中创建仅搜索指定类型的第三方数据的查询：
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -59,7 +59,7 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-下表列出了可以搜索的第三方数据类型，以及要用于 `itemclass:` 邮件属性以专门搜索那种类型的第三方数据的值。 查询语法不区分大小写。 
+下表列出了可以搜索的第三方数据类型，以及要用于  `itemclass:` 邮件属性以专门搜索那种类型的第三方数据的值。 查询语法不区分大小写。 
   
 |**第三方数据类型**|**属性的值 `itemclass:`**|
 |:-----|:-----|
@@ -82,7 +82,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |BlackBerry 针  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry 短信  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg 邮件  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg 消息  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg 消息传递  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; 状态服务器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -102,7 +102,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM 连接  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|ICE 聊天  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE 聊天  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |即时 Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 20f44244005f5a34a0d82f32f625fb067f02df20
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294761"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47321991"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -62,7 +62,7 @@ ms.locfileid: "47294761"
 
 在保留期结束时触发处置评审时：
   
-- 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 这些审阅者可以是单独的用户、分发或安全组，也可以是 Microsoft 365 组 ([以前的 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 。 请注意，每周会发送通知。
+- 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 这些审阅者可以是单个用户，也可以是启用邮件的安全组。 请注意，每周会发送通知。
     
 - 审阅者转到 Microsoft 365 合规性中心中的 " **处置** " 选项卡，以查看内容并决定是永久删除它、延长保留期还是应用不同的保留标签。
 
