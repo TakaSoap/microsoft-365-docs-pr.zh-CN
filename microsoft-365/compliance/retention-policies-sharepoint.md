@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127399"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315785"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -71,7 +71,7 @@ ms.locfileid: "45127399"
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>用于网站集中文档版本的保留的工作原理
 
-版本控制是 SharePoint 和 OneDrive 中所有文档库的一项功能。 默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。 有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
+版本控制是 SharePoint 和 OneDrive 中所有文档库的一项功能。 默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。 有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)和[版本控制在列表和库中的工作方式](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)。
   
 “仅保留”设置保留 SharePoint 网站集或 OneDrive 帐户中文档的所有版本。 当遵循保留或“仅保留”保留设置的文档被首次编辑时，原始文档的一个版本就会复制到保留库中。 当遵循保留或“仅保留”保留设置的文档被删除时，如果版本控制已启用，所有版本都会复制到保留库中。 在保留库中，文档的每个版本都以单独项的形式存在，并且有自己的保留期：
   
@@ -81,6 +81,10 @@ ms.locfileid: "45127399"
 
 > [!NOTE]
 > 电子数据展示工具无法用于搜索 SharePoint 和 OneDrive 文档的保留版本。
+
+对于受保留策略（或法定保留）约束的项目，将忽略文档库的版本控制限制，直到达到文档的保留期限。 在这种情况下，不会自动清除旧版本，并且会阻止用户删除版本。
+
+如果未对网站应用保留策略，保留标签的情况就不是这样。 相反，它将遵循版本控制限制，以便自动删除旧版本以容纳新版本，但仍阻止用户删除版本。
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织
 

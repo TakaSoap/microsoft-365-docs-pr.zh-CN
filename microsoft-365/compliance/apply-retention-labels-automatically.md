@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648801"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315809"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -38,8 +38,8 @@ ms.locfileid: "46648801"
     
 - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
     
-当内容包含敏感信息、关键字或[可训练分类器](classifier-getting-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
-    
+当内容包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-getting-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
+
 将基于以下条件自动应用保留标签的流程：
 
 ![自动应用标签的角色和任务关系图](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ ms.locfileid: "46648801"
 
 - [特定类型敏感信息](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [与你创建的查询匹配的特定关键字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [指定与所创建的查询匹配的特定关键字或可搜索属性](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [可训练分类器的匹配项](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ ms.locfileid: "46648801"
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
-可将标签自动应用于满足特定条件的内容。目前可用的条件支持将标签应用于包含特定字词、短语或可搜索属性值的内容。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
+可使用包含特定字词、短语或可搜索属性值的查询对内容自动应用标签。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
 
-在对可搜索属性自动应用标签时，不能在查询中使用托管属性的别名。 它必须是托管属性的实际名称（例如，RefinableString01）。
+![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-有关查询语法的详细信息，请参阅：
+有关使用关键字查询语言 (KQL) 的详细信息，请参阅[关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
-- [关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-基于查询的标签使用搜索索引来标识内容。有关有效可搜索属性的详细信息，请参阅：
+基于查询的标签使用搜索索引来标识内容。 有关可使用的可搜索属性的详细信息，请参阅：
 
 - [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
 - [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> 尽管 SharePoint 托管属性支持别名，但在配置保留标签时，请不要使用它们。 始终指定托管属性的实际名称，例如“RefinableString01”。
+
 示例查询：
 
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint 和 OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| 工作负载 | 示例 |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
