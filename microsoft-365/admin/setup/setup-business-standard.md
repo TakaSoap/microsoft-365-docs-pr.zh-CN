@@ -25,14 +25,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业标准版订阅。
-ms.openlocfilehash: b42dd0779c708410614ea2ab0d134aa3dcf0c7e9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778921"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324442"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
+
+观看有关设置 Microsoft 365 商业标准版的简短视频。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
+
+如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
  *这些步骤适用于具有 **[Microsoft 365 商业标准版计划](https://go.microsoft.com/fwlink/p/?LinkId=627220)*** 的企业和[非营利组织](https://go.microsoft.com/fwlink/p/?LinkId=627221)。
 

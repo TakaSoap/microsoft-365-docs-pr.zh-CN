@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,15 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 75533195-f1f6-4c2c-8ceb-0b5597790d7b
 description: 了解如何在30天内延长试用订阅。
-ms.openlocfilehash: 50f0548ddcd2eeef36a853cfb08b279cee8095a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c1c4134f944b07b177a92e03fc3e5ba2d9b362ef
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402150"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324312"
 ---
 # <a name="extend-your-trial"></a>延长试用期
 
@@ -43,19 +40,16 @@ ms.locfileid: "44402150"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-2. 在 "**产品**" 页上，找到要扩展的试用订阅。 在 "**设置 & 操作**" 部分，选择 "**扩展试用版**"。
-
-3. 查看扩展信息，如有必要，请更改您的付款方式。 完成后，请选择 "**扩展试用版**"。
+2. 在 " **产品** " 选项卡上，选择要扩展的试用订阅。 
+3. 在 "订阅详细信息" 页上的 " **订阅和付款设置** " 部分中，选择 " **延长结束日期**"。
+4. 在 " **结束日期** " 窗格中，查看扩展信息，如有必要，请选择一个付款方法。 完成后，请选择 " **扩展试用版**"。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 在 "**订阅**" 页上，选择要扩展的试用订阅，然后在过期日期下，选择 "**扩展试用版**"。
-
+2. 在 " **订阅** " 页上，选择要扩展的试用订阅，然后在过期日期下，选择 " **扩展试用版**"。
 3. 完成向导中的步骤。
 
 ::: moniker-end
@@ -63,11 +57,9 @@ ms.locfileid: "44402150"
 ::: moniker range="o365-21vianet"
 
 1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
-
-2. 在 "**订阅**" 页上，选择要扩展的试用订阅，然后在过期日期下，选择 "**扩展试用版**"。
-
+2. 在 " **订阅** " 页上，选择要扩展的试用订阅，然后在过期日期下，选择 " **扩展试用版**"。
 3. 完成向导中的步骤。
 
 ::: moniker-end
 
-准备好购买后，请参阅[购买试用版](buy-a-subscription-from-your-free-trial.md)。
+准备好购买后，请参阅 [购买试用版](buy-a-subscription-from-your-free-trial.md)。

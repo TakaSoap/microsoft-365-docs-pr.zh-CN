@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,30 +18,28 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: 了解如何通过转到 "订阅" 页来验证您的组织拥有哪些订阅。
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 了解如何通过转到 "产品" 页来验证您的组织拥有哪些订阅。
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780501"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324544"
 ---
 # <a name="what-subscription-do-i-have"></a>我有什么订阅？
 
 如果您是管理员，则可以通过转到管理中心来验证您的组织拥有哪些订阅。
   
- **不是管理员？** 查看[我有什么 Microsoft 365 的商业产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+ **不是管理员？** 查看 [我有什么 Microsoft 365 的商业产品或许可证？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-2. 您的订阅将显示在 "**产品**" 页上，以及订阅名称、有关订阅的信息及其状态。 若要查看简洁视图，请选择 "**表格视图**"。
+2. 在 " **产品** " 选项卡上，您将看到所有订阅。 每个订阅行都包含有关许可证、订阅状态和帐单的信息。
+3. 如果要更改列表中显示的列，请选择 " **选择列**"。 更改列的选定内容，然后选择 " **保存**"。
+4. 若要查看单个订阅的更多详细信息，请选择该订阅。
 
 ::: moniker-end
   
