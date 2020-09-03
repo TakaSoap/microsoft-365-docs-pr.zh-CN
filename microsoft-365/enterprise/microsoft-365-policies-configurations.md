@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321892"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332745"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -161,7 +161,7 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 ![配置标识和设备访问的步骤。](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. 配置必备组件标识功能及其设置。
-2. 配置最常见的标识和访问条件访问策略。
+2. 配置通用标识和访问条件访问策略。
 3. 为来宾和外部用户配置条件访问策略。
 4. 为 microsoft 团队、Exchange Online 和 SharePoint 等 Microsoft 365 云应用配置条件访问策略。
 

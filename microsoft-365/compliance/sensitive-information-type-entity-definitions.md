@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797790"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334845"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -506,9 +506,6 @@ OR
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ OR
 - individual tax return
 - tax file number
 - tfn
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>奥地利驾驶执照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
@@ -728,7 +692,9 @@ national id
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_austria_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 函数 "Func_austria_eu_
+
+_or_equivalent "找到与该模式匹配的内容。 
     
 - 找到了中的关键字  `Keywords_austria_eu_ssn_or_equivalent` 。 
     
@@ -2864,20 +2830,28 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- card verification
+- 
+card verification
+
 - card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- pin block
+- 
+pin block
 - security code
+
 - security number
+
 - security no
+
 - issue number
+
 - issue no
 - cryptogramme
-- numéro de sécurité
+- 
+numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -2888,24 +2862,32 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- 货. sicurezza
-- cod sicurezza
+- 货.sicurezza
+- 
+cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- 货. seg
-- cod seg
+- 货.seg
+- 
+cod seg
 - código de segurança
+
 - codigo de seguranca
+
 - codigo de segurança
+
 - código de seguranca
-- cód. segurança
-- 货. seguranca 货到付款。 segurança
-- cód. seguranca
-- cód segurança
-- 货到付款 seguranca 货到付款 segurança
-- cód seguranca
+- cód.segurança
+- 货.seguranca
+- 货.segurança
+- cód.seguranca
+- cód segurança
+- 货到付款 seguranca
+- 货到付款 segurança
+- cód seguranca
 - número de verificação
+
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -2913,54 +2895,79 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- data scad
+- 
+data scad
 - fecha de expiracion
+
 - fecha de venc
 - vencimiento
-- válido hasta
+- 
+válido hasta
 - valido hasta
 - vto
-- data de expiração
+- 
+data de expiração
 - data de expiracao
+
 - data em que expira
 - validade
 - valor
 - vencimento
-- Venc 
+- transaction
+- 交易记录编号
+- 参考编号
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番号
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - amex
 - american express
 - americanexpress
+- americano espresso
+
 - 反之
 - mastercard
 - Master Card
-- emc 
+- emc
 - mastercards
-- master cards
-- diner's Club
+- 
+master cards
+- 用餐俱乐部
 - diners club
 - dinersclub
+- 确定
 - discover card
 - discovercard
 - discover cards
 - JCB
+- BrandSmart
 - japanese card bureau
+
 - carte blanche
 - carteblanche
 - credit card
 - 收件人#
 - cc #：
-- expiration date
+- 过期日期
 - exp date
-- expiry date
-- 日期 d'expiration
-- date d'exp
-- date expiration
+
+- 
+expiry date
+- 
+date d’expiration
+- 
+date d'exp
+- 
+date expiration
 - bank card
 - bankcard
-- card number
+- 
+card number
 - card num
 - cardnumber
 - cardnumbers
@@ -2986,14 +2993,36 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - atm cards
 - atmcards
 - enroute
-- en route
+- 
+en route
 - card type
+
+- Cardmember 帐户
+- cardmember 帐户
+- Cardno
+- 公司卡片
+- 公司卡片
+- 卡片类型
+- 卡片帐号
+- 卡片成员帐户
+- Cardmember 帐户。
+- card no.
+
+- 卡片编号
+- card number
+
 - carte bancaire
+
 - carte de crédit
+
 - carte de credit
+
 - numéro de carte
+
 - numero de carte
+
 - nº de la carte
+
 - nº de carte
 - kreditkarte
 - karte
@@ -3003,61 +3032,124 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- carta di credito
+- 
+carta di credito
 - carta credito
-- carta
+- \n\n\-.carta
 - n carta
-- führerschein-nr. carta
-- nr carta
+- führerschein-nr.carta
+- 
+nr carta
 - numero carta
+
 - numero della carta
+
 - numero di carta
+
 - tarjeta credito
+
 - tarjeta de credito
-- tarjeta crédito
-- tarjeta de crédito
+
+- 
+tarjeta crédito
+- 
+tarjeta de crédito
 - tarjeta de atm
+
 - tarjeta atm
+
 - tarjeta debito
+
 - tarjeta de debito
-- tarjeta débito
-- tarjeta de débito
+
+- 
+tarjeta débito
+- 
+tarjeta de débito
 - nº de tarjeta
-- 不。 de tarjeta
-- no de tarjeta
+- 不。de tarjeta
+- 无 de tarjeta
 - numero de tarjeta
+
 - número de tarjeta
+
 - tarjeta no
 - tarjetahabiente
-- cartão de crédito
+- 
+cartão de crédito
 - cartão de credito
+
 - cartao de crédito
+
 - cartao de credito
+
 - cartão de débito
+
 - cartao de débito
+
 - cartão de debito
+
 - cartao de debito
+
 - débito automático
 - debito automatico
-- número do cartão
-- numero do cartão 
+
+- 
+número do cartão
+- numero do cartão
+
 - número do cartao
+
 - numero do cartao
+
 - número de cartão
+
 - numero de cartão
+
 - número de cartao
+
 - numero de cartao
-- nº do cartão
+
+- n º do cartão
 - nº do cartao
-- n º。 do cartão
-- no do cartão
-- no do cartao
-- 不。 do cartão
-- 不。 do cartao 
+- n º。do cartão
+- 不执行任何操作 cartão
+- 不执行任何操作 cartao
+- 不。do cartão
+- 不。do cartao
+- クレジットカード番号
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番号
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- 签证カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>克罗地亚驾照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
@@ -6724,12 +6816,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="definition"></a>定义
 
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_indonesia_id_card 中的一个关键字。
-
-在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6737,10 +6826,6 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -12258,7 +12343,16 @@ OR
 
 - 社会保障
 - great britain
-- 方面
+
+- NI 号码
+- NI 否。
+- NI#
+- NI#
+- 方面#
+- insurancenumber
+- nationalinsurance#
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>U.K. 税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -12693,14 +12787,18 @@ OR
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Social Security 
-- Social Security# 
-- Soc Sec 
-- SSN 
-- SSN 
-- SSN# 
-- SS# 
-- SSID 
+- SSA 编号
+- social security number
+- 社会保障#
+- 社会保障#
+- 社会保障号
+- Social Security#
+- Soc Sec
+- SSN
+- SSN
+- SSN#
+- SS#
+- SSID
    
 ## <a name="us--uk-passport-number"></a>美国/英国 passport number
 英国 护照号敏感信息类型实体在欧盟护照号敏感信息类型中可用，并可用作独立的敏感信息类型实体。

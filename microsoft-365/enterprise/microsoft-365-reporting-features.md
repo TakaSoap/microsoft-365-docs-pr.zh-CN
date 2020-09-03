@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 报告功能
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 了解 Microsoft 365 中的各种报告功能，包括 Azure Active Directory 和 Exchange Online。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 104d587ea87a61a66b73aa1441170f37e082a72f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688020"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332732"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365 报告功能
 
@@ -58,7 +58,7 @@ Exchange Online 审核报告包含有关邮箱访问和管理员对 Exchange Onl
 > [!NOTE]
 > 您必须为每个邮箱启用邮箱审核日志记录，以便将审核的事件保存在该邮箱的审核日志中。 如果没有为邮箱启用邮箱审核日志记录，则该邮箱的事件将不会保存在审核日志中，并且不会显示在邮箱审核报告中。 有关详细信息，请参阅 [启用邮箱审核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)。
 
-| Task | 说明 |
+| 任务 | 说明 |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [运行非所有者邮箱访问报告](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | 显示除邮箱所有者之外的其他人访问的邮箱的列表。 此报告包含有关访问邮箱的人员、他们在邮箱中执行的操作以及操作是否成功的信息。 |
 | [导出邮箱审核日志](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | 邮箱审核日志包含有关邮箱所有者之外的用户所执行的邮箱中的访问和操作的信息。 管理员可以指定邮箱以及日期范围来生成报告。 日志以 XML 形式导出，并附加到邮件，并发送给由管理员确定的特定用户。 |

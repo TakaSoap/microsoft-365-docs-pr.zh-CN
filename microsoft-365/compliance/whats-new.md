@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868969"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336665"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规性中的新增功能
 
@@ -36,6 +36,32 @@ ms.locfileid: "46868969"
 > [!TIP]
 > 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 威胁防护的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 并访问 [microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动的 microsoft 365 功能、正在开发、已被取消或之前已发布的功能。
+
+## <a name="july-2020"></a>2020 年 7 月
+
+### <a name="spotlight-on-help-docs"></a>在帮助文档上聚焦
+
+为了帮助您了解使用哪些合规性解决方案来保护和管理组织的敏感数据，我们创建了两个新登录页，并概述了这些解决方案如何协同工作以实现这些目标，包括指向相关文档的链接，以便您可以进一步深入研究。
+
+[Microsoft 365 中的 microsoft 信息保护](protect-information.md)<br>
+[Microsoft 365 中的 microsoft 信息管理](manage-Information-governance.md)
+
+### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高级电子数据展示：将非 custodial 数据源添加到你的案例
+
+向事例添加数据，而无需将其与称为 [非 custodial 数据源](non-custodial-data-sources.md)) 的保管人 (相关联。 如果你需要将此非 custodial 数据置于保留状态，你将能够使用新的高级索引功能执行此操作。
+
+### <a name="data-connectors-hr-connector-enhancements"></a>数据连接器： HR 连接器增强功能
+
+ (在预览中) [HR 连接器](import-hr-data.md) 的新版本允许您导入与作业级更改、性能检查和性能改进计划相关的数据。 然后，可以在几个 [内幕风险策略](insider-risk-management-policies.md) 中使用这些数据来检测相关活动。
+
+### <a name="retention-labels-new-support-for-email"></a>保留标签：对电子邮件的新支持
+
+您现在可以创建 [保留标签](retention.md#retention-labels) ，以根据邮件的标记时间来开始保留电子邮件。 这不适用于日历项目，这些项目将根据邮件的发送时间而保留。
+
+### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>敏感度标签：新增功能和改进
+
+-  (在预览中) 为标签配置加密设置时，查找新选项以使用 [双密钥加密](encryption-sensitivity-labels.md#double-key-encryption) 以进一步保护带标签的文件和电子邮件。
+- 在创建或删除敏感度标签或创建、编辑或删除其标签策略时，更改现在将在1小时内同步到所有用户、应用程序和服务。
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -293,20 +319,3 @@ ms.locfileid: "46868969"
 ### <a name="update-to-data-investigations"></a>对数据调查的更新
 
 在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 [了解详细信息](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 在执行数据调查时，您现在可以从其原始位置删除项目。 这意味着您可以在组织中删除 Exchange 邮箱、SharePoint 网站和 OneDrive 帐户中的项目。 由于已将项目作为证据收集，因此您可以将这些项目的副本保留在证据集中，以便您可以进一步调查或仅保留为参考。 请转到 [管理 Microsoft 365 中的 data 外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 以了解详细信息。 
-
-## <a name="july-2019"></a>2019 年 7 月
-
-### <a name="new-admin-roles"></a>新管理员角色
-
-我们发布了两个新的管理员角色，以帮助管理您的组织中的安全性和合规性。请告诉你的所有朋友。
-
-- **合规性数据管理员**。具有此角色的用户具有在 Microsoft 365 合规性中心、Microsoft 365 管理中心和 Azure 中保护和跟踪数据的权限。 它们还可以管理 Exchange 管理中心、合规性管理器、团队 & Skype for Business 管理中心并为 Azure 和 Microsoft 365 创建支持票证。
-- **Security 运算符**。 具有此角色的用户可以管理警报并拥有对安全相关功能的全局只读访问权限，其中包括 Microsoft 365 安全中心、Azure Active Directory、Identity Protection、特权身份管理和 Office 365 安全性 & 合规性中心中的所有内容。
-
-[了解有关这些角色的详细信息](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### <a name="search-and-filtering-for-reports"></a>搜索和筛选报告
-
-不会再滚动浏览报告的海洋，以查找您需要的报告。 现在，您可以根据报表 (的标题) 和筛选类别（如 "标签" 和 "合规性"）和源（如 "Office 365" 和 "Microsoft 云应用安全性"）搜索报表。
-
-![包含已应用筛选器的报表的搜索和筛选按钮的屏幕捕获](../media/mcc_report_filtering.png)
