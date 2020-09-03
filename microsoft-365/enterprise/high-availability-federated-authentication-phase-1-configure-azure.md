@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：配置 Microsoft Azure 基础结构以托管 Microsoft 365 的高可用性联合身份验证。
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688100"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332336"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性联合身份验证阶段 1：配置 Azure
 
@@ -57,7 +57,7 @@ ms.locfileid: "46688100"
     
 2. 将生成位转换为十进制并表示为一个地址空间，其中将前缀长度设置为网关子网的大小。
     
-有关为您执行此计算的 PowerShell 命令块和 c # 或 Python 控制台应用程序，请参阅 [Azure 网关子网的地址空间计算器](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) 。
+有关为您执行此计算的 PowerShell 命令块和 c # 或 Python 控制台应用程序，请参阅 [Azure 网关子网的地址空间计算器](address-space-calculator-for-azure-gateway-subnets.md) 。
   
 与 IT 部门协作以确定这些虚拟网络地址空间中的地址空间。
   

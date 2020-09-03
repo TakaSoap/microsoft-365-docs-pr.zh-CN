@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 电子数据展示和搜索功能概述
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 中的电子数据展示功能和其他搜索功能的概述，用于审核使用和透明度。
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688031"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331855"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 电子数据展示和搜索功能概述 
 
@@ -44,12 +44,12 @@ SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时�
 | 属性 | 说明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和时间 |
-| User | 执行操作的用户 |
+| 用户 | 执行操作的用户 |
 | ClientIP | 记录活动时使用的设备的 IPv4 或 IPv6 地址。 |
 | CreationTime | 用户执行活动时 (UTC) 的日期和时间（采用协调通用时间）。 |
 | EventSource | 标识发生的事件。 可能的值为 SharePoint 和 ObjectModel。 |
 | ID | 报告条目的 ID。 ID 唯一标识报告条目。 |
-| Operation | 用户或活动的名称，对应于在 "此用户活动的显示结果" 中选择的值。 |
+| 操作 | 用户或活动的名称，对应于在 "此用户活动的显示结果" 中选择的值。 |
 | OrganizationId | 发生事件的组织的 Microsoft 365 服务的 GUID。 |
 | UserAgent | 浏览器提供的有关用户浏览器的信息。 |
 | UserID | 执行操作的用户 (在操作属性) 中指定，从而导致记录记录。 |
@@ -57,7 +57,7 @@ SharePoint Online 和 OneDrive for business 中的事件在发生30分钟的时�
 |  | 0表示常规用户。 |
 |  | 2表示 Microsoft 365 组织中的管理员。 |
 |  | 3表示 Microsoft 数据中心管理员或数据中心系统帐户。 |
-| Workload | 发生活动的 Microsoft 365 服务。 此属性的可能值为： |
+| 工作负载 | 发生活动的 Microsoft 365 服务。 此属性的可能值为： |
 |  | Exchange Online |
 |  | SharePoint Online |
 |  | OneDrive for Business |

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 数据永久性
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 了解 Microsoft 365 如何在可发现的表单中保留数据，以满足法规遵从性、内部治理要求和诉讼风险。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c070eea4498aca89d7cdb8fea233d9b9596491a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce3b3f0f5036ab76be714747d7e95fe86139dd75
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687788"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331916"
 ---
 # <a name="immutability-in-microsoft-365"></a>Microsoft 365 中的永久性
 

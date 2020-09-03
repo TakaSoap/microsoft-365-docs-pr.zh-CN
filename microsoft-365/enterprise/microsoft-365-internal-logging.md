@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 工程版的 microsoft 365 内部日志记录
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: 在本文中，我们将介绍 Microsoft 365 工程团队的内部日志记录的工作原理。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695503"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332504"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 工程的内部日志记录
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 工程部的内部日志记录
 
 除了可供客户使用的事件和日志数据之外，microsoft 365 工程师还可以使用 Microsoft 的内部日志数据收集系统。 将许多不同类型的日志数据从 Microsoft 365 服务器上传到内部的大型数据计算服务（称为 Cosmos）。 每个服务团队将审核日志从各自的服务器上载到 Cosmos 数据库中，以进行聚合和分析。 此数据传输通过经过专用的自动化工具（称为 Office 数据加载程序 (ODL) ）在专门批准的端口和协议上进行 FIPS 140-2 验证的 TLS 连接。 Microsoft 365 中用于收集和处理审核记录的工具不允许对原始审核记录的内容或时间排序进行永久或不可恢复的更改。
 

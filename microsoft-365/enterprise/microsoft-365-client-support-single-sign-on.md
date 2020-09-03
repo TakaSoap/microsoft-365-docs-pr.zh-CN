@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 客户端应用支持—单一登录
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 description: 在本文中，了解哪些平台、客户端和 Powershell 模块支持 Microsoft 365 的单一登录。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0171e277d6072515e7fe0ca8ede8b8005ad8fe2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687796"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332000"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 客户端应用支持—单一登录
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 单一登录 (SSO) 当用户登录到 Azure Active Directory (Azure AD) 中的应用程序时，会增加安全性和方便性。 通过单一登录，用户可使用一个帐户登录一次，以访问加入域的设备、公司资源、软件作为服务 (SaaS) 应用程序和 web 应用程序。
 

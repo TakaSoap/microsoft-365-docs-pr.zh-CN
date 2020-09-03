@@ -1,6 +1,6 @@
 ---
 title: 常见标识和设备访问策略-适用于企业的 Microsoft 365 |Microsoft 文档
-description: 介绍针对有关如何应用标识和设备访问策略以及配置的 Microsoft 建议的策略。
+description: 描述建议的通用标识和设备访问策略和配置。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898112"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332087"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
@@ -32,8 +32,8 @@ ms.locfileid: "46898112"
 
 下图说明了建议的一组策略。 它显示了每个策略应用于哪一层的保护，以及这些策略是应用于 Pc、电话和平板电脑，还是适用于这两种类别的设备。 它还指示这些策略的配置位置。
 
-[ ![ 用于配置标识和设备访问的常见策略](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+[ ![ 用于配置标识和设备访问的常见策略](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 本文的其余部分介绍了如何配置这些策略。 
 
@@ -63,13 +63,13 @@ ms.locfileid: "46898112"
 
 下图提供了用户分配和排除的示例。
 
-![用于 MFA 规则的用户分配和排除示例](../media/identity-access-policies-assignment.png)
+![用于 MFA 规则的用户分配和排除示例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 在图中，"Top secret project X team" 分配了一个需要 *始终*进行 MFA 的条件访问策略。 对用户应用更高级别的保护时要合理。 此项目团队的成员将需要在每次登录时提供两种形式的身份验证，即使他们没有查看高度管控的内容也是如此。  
 
-作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Microsoft 365 组。 在 SharePoint Online 中保护文档时，这一点对于部署 Azure 信息保护 (AIP) 尤为重要。
+作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Microsoft 365 组。 这对于在 SharePoint Online 中保护文档时的敏感度标签部署尤其重要。
 
-![用于创建 Microsoft 365 组的屏幕捕获](../media/identity-device-AAD-groups.png)
+![用于创建 Microsoft 365 组的屏幕捕获](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要基于登录风险进行 MFA

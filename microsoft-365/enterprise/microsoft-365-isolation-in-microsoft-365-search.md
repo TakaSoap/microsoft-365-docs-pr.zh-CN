@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 搜索中的租户隔离
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，我们将详细介绍租户隔离如何在 Microsoft 365 搜索中对各个租户数据进行工作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b204e9c1f3ef459852900f3403a21f7ea40541f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3416afdeceaa7000b516ec89b4a2a1e59d8708d0
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687606"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332396"
 ---
 # <a name="tenant-isolation-in-microsoft-365-search"></a>Microsoft 365 搜索中的租户隔离
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 中的 Exchange Online 数据恢复能力
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，查找对 Exchange Online 和 Microsoft 365 中的数据弹性的各个方面的说明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfc53fd48a6de61cf47a0441cd2f8b0fa35a73f1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02a28a9099c329b943ab1f015326a674c79cf46e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332528"
 ---
 # <a name="exchange-online-data-resiliency-in-microsoft-365"></a>Microsoft 365 中的 Exchange Online 数据恢复能力
 

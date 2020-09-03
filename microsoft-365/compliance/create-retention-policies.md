@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903857"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315841"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -210,9 +210,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 ### <a name="identify-content-that-contains-specific-keywords"></a>识别包含特定关键字的内容
 
 可以只对满足特定条件的内容应用保留策略，然后只对这些内容执行保留操作。 可用的条件支持将保留策略应用于包含特定字词或短语的内容。 你可以使用 AND、OR 和 NOT 等搜索运算符优化查询。 有关这些运算符的详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
-  
-即将支持添加可搜索属性（例如，**subject:**）。
-  
+
 基于查询的保留策略使用搜索索引来标识内容。
   
 ![查询编辑器](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)

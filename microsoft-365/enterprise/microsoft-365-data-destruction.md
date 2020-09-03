@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 数据销毁
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 有关回收、处置或销毁 Microsoft 365 数据中心磁盘驱动器和服务器的 Microsoft 策略的概述。
-ms.openlocfilehash: bd5afd427f55952066bac06d2bd4e61f45a4562f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 981903db68a79632285d7c5170aeb22014940a4a
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687794"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331844"
 ---
 # <a name="microsoft-365-data-destruction"></a>Microsoft 365 数据销毁
 
