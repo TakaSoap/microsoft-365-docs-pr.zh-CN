@@ -24,44 +24,48 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 288613023ee61626bf12f7090ad0ff73139ef06d
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1684afd1baf32acc6c4245938b2ac7ee024d7374
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780585"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361803"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 
-因不断为用户重置密码而感到崩溃？ 作为 Microsoft 365 管理员，你可以让用户使用[自助密码重置工具](https://go.microsoft.com/fwlink/p/?LinkId=522677)，这样你就不必重置它们的密码。 减少工作量！ 
+作为 Microsoft 365 管理员，你可以让用户使用 [自助密码重置工具](https://go.microsoft.com/fwlink/p/?LinkId=522677) ，这样你就不必重置它们的密码。 减少工作量！
   
-以下是需要了解的一些事项：
+## <a name="before-you-begin"></a>准备工作
   
-- 通过任何 Microsoft 365 商业版、教育版或非盈利的计划**免费**为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。
+- 通过任何 Microsoft 365 商业版、教育版或非盈利的计划 **免费** 为云用户获取自助服务密码重置。 它不适用于 Microsoft 365 试用版。
 
 - 该功能使用 Azure。将在执行下面的步骤时，自动在 Azure 中 **免费** 获得此功能。如果不使用其他 Azure 功能，则不需要支付任何费用即可启用自助密码重置功能。
 
-- **如果使用的是本地 Active Directory**，则不适用以上两个点。 相反，您可以对此进行设置，但**需要付费的 AZURE AD Premium 订阅**。
+- **如果使用的是本地 Active Directory**，则不适用以上两个点。 相反，您可以对此进行设置，但 **需要付费的 AZURE AD Premium 订阅**。
 
-观看有关允许用户重置其自己的密码的简短视频。 <br><br>
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../admin-overview/admin-overview.md)
+
+您必须是 [全局管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
+
+## <a name="watch-let-users-reset-their-own-passwords"></a>手表：让用户重置自己的密码
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="let-people-reset-their-own-passwords"></a>允许用户重置自己的密码
+## <a name="steps-let-people-reset-their-own-passwords"></a>步骤：让用户重置自己的密码
 
 以下步骤将为企业中的所有人启用自助密码重置。
   
 ::: moniker range="o365-worldwide"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>中，转到 "**设置** > **组织设置**" 页。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>中，转到 " **设置** > **组织设置** " 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 "<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>" 中，转到 "**设置** \> **安全 &amp; 隐私**" 页。
+1. 在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>" 中，转到 " **设置** \> **安全 &amp; 隐私** " 页。
 
 ::: moniker-end
 
@@ -71,22 +75,22 @@ ms.locfileid: "44780585"
 
 ::: moniker-end
 
-2. 在 "**组织设置**" 页的顶部，选择 "**安全性" & "隐私**" 选项卡。
+2. 在 " **组织设置** " 页的顶部，选择 " **安全性" & "隐私** " 选项卡。
   
-3. 选择 "**自助密码重置**"。
+3. 选择 " **自助密码重置**"。
 
-4. 在 "**自助密码重置**" 下，选择 **"转到 Azure 门户" 以启用自助密码重置**。
+4. 在 " **自助密码重置**" 下，选择 **"转到 Azure 门户" 以启用自助密码重置**。
 
-5. 在左侧导航窗格中，选择 "**用户**"，然后在 "**用户" | ""所有用户**" 页上，选择 "**密码重置**"。
+5. 在左侧导航窗格中，选择 " **用户**"，然后在 " **用户" | ""所有用户** " 页上，选择 " **密码重置**"。
   
-6. 在 "**属性**" 页上，选择 "**全部**" 以为企业中的所有人启用它，然后选择 "**保存**"。
+6. 在 " **属性** " 页上，选择 " **全部** " 以为企业中的所有人启用它，然后选择 " **保存**"。
   
 7. 当用户登录时，系统会提示他们输入其他联系人信息，这将帮助他们将来重置其密码。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-content"></a>相关内容
 
 [为组织设置密码过期策略](../manage/set-password-expiration-policy.md)
-  
+
 [将个人用户密码设置为永不过期](set-password-to-never-expire.md)
 
 [Microsoft 365 商业版培训视频](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

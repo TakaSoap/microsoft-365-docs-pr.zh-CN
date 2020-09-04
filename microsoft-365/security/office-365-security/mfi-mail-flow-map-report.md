@@ -12,45 +12,45 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可了解如何使用安全 & 合规中心的邮件流仪表板中的邮件流地图，直观显示和跟踪通过连接器和不使用连接器如何流出其组织的邮件流。
-ms.openlocfilehash: d27513b905a2b6c1a7ae366040e9e29b2d67b258
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 管理员可以了解如何使用安全 & 合规性中心中邮件流仪表板中的邮件流映射，直观地显示和跟踪邮件在其组织中的流动和发件人，而无需使用连接器。
+ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826997"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358586"
 ---
-# <a name="mail-flow-map-in-the-security--compliance-center"></a>安全与合规中心&邮件流图
+# <a name="mail-flow-map-in-the-security--compliance-center"></a>安全 & 合规中心中的邮件流映射
 
-安全 &**合**[规中心的邮件流](mail-flow-insights-v2.md)仪表板中的邮件流图可以了解邮件流如何通过组织。 你可以使用此信息了解模式、识别异常并修复发生的问题。
+[安全 & 合规性中心](https://protection.office.com)的邮件[流仪表板](mail-flow-insights-v2.md)中的**邮件流映射**可提供邮件在组织中流动的见解。 您可以使用此信息来了解模式、确定异常并在出现问题时解决问题。
 
-![安全电子邮件合规性中心内邮件流仪表板中的邮件流&小部件](../../media/mfi-mail-flow-map-widget.png)
+![安全 & 合规性中心的邮件流仪表板中的邮件流映射小部件](../../media/mfi-mail-flow-map-widget.png)
 
-默认情况下，小部件显示图表（称为 *Sankey* 图表）中上一天的邮件流模式。 您可以使用向左箭头 ![ 和向右 ](../../media/scc-left-arrow.png) 键显示 ![ ](../../media/scc-right-arrow.png) 不同天的信息。 每种不同的颜色代表不同的入站或出站连接器的邮件流 (不使用连接器) 。 如果将鼠标悬停在特定颜色上，则将为该类型的连接线显示邮件数。
+默认情况下，该小部件显示来自前一天的邮件流模式（称为 " *Sankey* 图表"）。 您可以使用向左箭头 ![ ](../../media/scc-left-arrow.png) 和向右箭头向 ![ 右箭头 ](../../media/scc-right-arrow.png) 来显示不同天的信息。 每种不同的颜色代表不同入站或出站连接器上的邮件流 (或不使用连接器) 。 如果将鼠标悬停在特定颜色上，则将显示该类型的连接符的邮件数。
 
-## <a name="report-view-for-the-mail-flow-map"></a>邮件流地图的报表视图
+## <a name="report-view-for-the-mail-flow-map"></a>邮件流映射的报告视图
 
-单击邮件流 **地图小部件** 可转到邮件流 **地图** 报告。
+单击 " **邮件流地图** " 小部件将转到 **邮件流地图** 报告。
 
-下面的图表提供了报表视图：
+报表视图中提供了以下图表：
 
-- **显示数据：概述**：此基本上是小部件的更大视图。 如果将鼠标悬停在特定颜色上，则会为该类型的连接线显示邮件数。
+- **显示数据：概述**：这基本上是小部件的更大视图。 如果将鼠标悬停在特定颜色上，则将显示该类型的连接符的邮件数。
 
-  ![邮件流地图报告中的概述视图](../../media/mfi-mail-flow-map-report-overview.png)
+  ![邮件流映射报告中的概述视图](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **显示数据：详细信息**：此视图显示有关连接器和目标域的详细信息。 会列出顶部发件人和收件人域，其他域将放入其他 **域**。 如果您将鼠标悬停在特定颜色和节的上，将显示消息数。
+- **显示以下项的数据：详细**信息：此视图显示有关连接器和目标域的详细信息。 将列出最上面的发件人和收件人域，其余部分将放入 **其他**域中。 如果将鼠标悬停在特定的颜色和节上，则会显示邮件数。
 
-  ![邮件流地图报告中的详细信息视图](../../media/mfi-mail-flow-map-report-detail.png)
+  ![邮件流映射报告中的详细信息视图](../../media/mfi-mail-flow-map-report-detail.png)
 
-如果单击**筛选器 中的**筛选器报表视图，可以指定具有开始日期和结束**日期的****日期范围**。
+如果您在报告视图中单击 " **筛选器** "，则可以指定具有 " **开始日期** " 和 " **结束日期**" 的日期范围。
 
-若要通过电子邮件发送特定日期范围的报告，请单击"请求**下载"。**
+若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 " **请求下载**"。
 
-相关见解（如果存在）到 (例如 [，Fix 可能的邮件循环见](mfi-mail-loop-insight.md) 解和时间见) 。
+如果可用，相关的见解将显示在邮件流地图的下面 (例如， [修复可能的邮件循环真知灼见](mfi-mail-loop-insight.md)) 。
 
-## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流地图的详细信息表视图
+## <a name="details-table-view-for-the-mail-flow-map"></a>邮件流映射的详细信息表格视图
 
-如果单击 **链接控件中的** "查看详细信息报表视图，会显示以下信息：
+如果您在报告视图中单击 " **查看详细信息表** "，将显示以下信息：
 
 - **Date**
 - **类别**
@@ -58,16 +58,16 @@ ms.locfileid: "46826997"
 - **发件人/收件人域**
 - **邮件计数**
 
-如果在详细信息**表视图中单击**"筛选器"，可以指定具有开始日期和结束**日期的****日期范围**。
+如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以指定具有 " **开始日期** " 和 " **结束日期**" 的日期范围。
 
-如果选择行，类似于的详细信息会显示在浮出控件中：
+如果选择行，则在浮出控件中显示类似的详细信息：
 
-![来自邮件流地图中详细信息表格的详细信息浮出控件](../../media/mfi-mail-flow-map-view-details-table-details.png)
+![详细信息从邮件流映射的详细信息表中飞出控件](../../media/mfi-mail-flow-map-view-details-table-details.png)
 
-若要通过电子邮件发送特定日期范围的报告，请单击"请求**下载"。**
+若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 " **请求下载**"。
 
-若要返回报告视图，请单击"查看**报告"。**
+若要返回到 "报告" 视图，请单击 " **查看报告**"。
 
 ## <a name="see-also"></a>另请参阅
 
-有关邮件流仪表板中的其他见解的信息，请参阅安全与合规中心 [中的&见解](mail-flow-insights-v2.md)。
+有关邮件流仪表板中的其他见解的信息，请参阅 [Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

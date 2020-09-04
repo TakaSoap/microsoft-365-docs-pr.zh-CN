@@ -16,127 +16,136 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 4cbc4ceec734587137a284dd800f77b712c0168d
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332087"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358006"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
-本文介绍了用于保护云服务访问的常见建议策略，其中包括使用 Azure AD 应用程序代理发布的本地应用程序。 
+本文介绍了用于保护云服务访问的常见建议策略，包括使用 Azure Active Directory (Azure AD) 应用程序代理发布的本地应用程序。 
 
 本指南讨论如何在新预配的环境中部署建议的策略。 在单独的实验室环境中设置这些策略，可以在将首展转移到预生产和生产环境之前，了解和评估建议的策略。 您的新设置的环境可能是仅云或混合的。  
 
 ## <a name="policy-set"></a>策略集 
 
-下图说明了建议的一组策略。 它显示了每个策略应用于哪一层的保护，以及这些策略是应用于 Pc、电话和平板电脑，还是适用于这两种类别的设备。 它还指示这些策略的配置位置。
+下图说明了建议的一组策略。 它显示了每个策略应用于哪一层的保护，以及这些策略是应用于 Pc、电话和平板电脑，还是适用于这两种类别的设备。 它还指明了配置这些策略的位置。
 
 [ ![ 用于配置标识和设备访问的常见策略](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 本文的其余部分介绍了如何配置这些策略。 
 
-建议在将设备注册到 Intune 中之前使用多重身份验证，以确保设备已占有目标用户。 在强制实施设备合规性策略之前，还必须将设备注册到 Intune。
+>[!Note]
+>建议在 Intune 中注册设备之前，要求使用多重身份验证 (MFA) ，以确保设备在拥有预期的用户。 您必须先在 Intune 中注册设备，然后才能强制实施设备合规性策略。
+>
 
-为了让你有时间完成这些任务，我们建议你按照此表中所列的顺序实施基准策略。 但是，敏感和高度管控保护的 MFA 策略可在任何时候实施。
-
+为了让你有时间完成这些任务，我们建议你按照此表中所列的顺序实施基准策略。 但是，可随时实施针对敏感和高度受保护的保护级别的 MFA 策略。
 
 |保护级别|策略|更多信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
-|        |[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问规则，因此，请务必阻止这些|
-|        |[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为帐户检测到高风险活动，则强制用户在登录时更改其密码|
-|        |[应用应用数据保护策略](#apply-app-data-protection-policies)|每个平台 (iOS、Android、Windows) 一个策略。 Intune 应用保护策略 (应用程序) 是从1级到第3级的预定义保护集。|
-|        |[需要经批准的应用和应用保护](#require-approved-apps-and-app-protection)|为电话和平板电脑强制实施移动应用保护|
-|        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略|
-|        |[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|强制对电脑进行 Intune 管理|
+|        |[阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)|不使用新式身份验证的客户端可以绕过条件访问策略，因此阻止这些策略是很重要的。|
+|        |[高风险用户必须更改密码](#high-risk-users-must-change-password)|如果为其帐户检测到高风险活动，则强制用户在登录时更改其密码。|
+|        |[应用应用数据保护策略](#apply-app-data-protection-policies)|每个平台一个 Intune 应用保护策略 (Windows、iOS/iPadOS、Android) 。|
+|        |[需要经批准的应用和应用保护](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 为电话和平板电脑强制实施移动应用保护。|
+|        |[定义设备合规性策略](#define-device-compliance-policies)|每个平台一个策略。|
+|        |[需要兼容电脑](#require-compliant-pcs-but-not-compliant-phones-and-tablets)|使用 Windows 或 MacOS 强制对电脑进行 Intune 管理。|
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](#require-mfa-based-on-sign-in-risk)| |
-|         |[需要符合要求 *的 pc 和* 移动设备](#require-compliant-pcs-and-mobile-devices)|对电脑和电话/平板电脑强制 Intune 管理|
+|         |[需要符合要求 *的 pc 和* 移动设备](#require-compliant-pcs-and-mobile-devices)|为电脑 (Windows 或 MacOS) 和电话或平板电脑 (iOS、iPadOS 或 Android) 强制执行 Intune 管理。|
 |**高度管控**|[*始终* 要求进行 MFA](#require-mfa-based-on-sign-in-risk)|
 | | |
 
-## <a name="assigning-policies-to-users"></a>向用户分配策略
+## <a name="assigning-policies-to-groups-and-users"></a>将策略分配给组和用户
+
 在配置策略之前，请确定您对每个保护层使用的 Azure AD 组。 通常情况下，基准保护适用于组织中的每个人。 同时包含在基线和敏感保护中的用户将应用所有基准策略加上敏感策略。 保护是累积的，并且强制实施最严格的策略。 
 
 建议的做法是为条件访问排除创建 Azure AD 组。 将此组添加到 "Exclude" 下的所有条件访问规则。 这为您提供了在对访问问题进行故障排除时提供对用户的访问权限的方法。 建议仅将其作为临时解决方案。 监视此组的更改，并确保仅按预期使用排除组。 
 
-下图提供了用户分配和排除的示例。
+下面的示例展示了需要进行 MFA 的组分配和排除。
 
-![用于 MFA 规则的用户分配和排除示例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![MFA 规则的组分配和排除示例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
-在图中，"Top secret project X team" 分配了一个需要 *始终*进行 MFA 的条件访问策略。 对用户应用更高级别的保护时要合理。 此项目团队的成员将需要在每次登录时提供两种形式的身份验证，即使他们没有查看高度管控的内容也是如此。  
+结果如下：
 
-作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Microsoft 365 组。 这对于在 SharePoint Online 中保护文档时的敏感度标签部署尤其重要。
+- 如果登录风险为 "中" 或 "高"，则所有用户都需要使用 MFA。
+
+- 当登录风险为低、中或高时，执行人员组的成员需要使用 MFA。
+
+  在这种情况下，执行人员组的成员与比较基准和敏感的条件访问策略相匹配。 这两个策略的访问控制组合在一起，在这种情况下与敏感的条件访问策略是等效的。
+
+- Top Secret 项目 X 组的成员总是需要使用 MFA
+
+  在这种情况下，Top Secret 项目 X 组的成员与比较基准和高度管控的条件访问策略相匹配。 这两个策略的访问控制组合在一起。 由于高管控条件访问策略的访问控制更具限制性，因此使用它。
+
+对组和用户应用更高级别的保护时要小心。 例如，在每次登录时，最高密码项目 X 组的成员将需要使用 MFA，即使他们不负责项目 X 的高管控内容。  
+
+作为这些建议的一部分创建的所有 Azure AD 组都必须创建为 Microsoft 365 组。 在保护 Microsoft 团队和 SharePoint Online 中的文档时，这一点对敏感度标签的部署非常重要。
 
 ![用于创建 Microsoft 365 组的屏幕捕获](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
-
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要基于登录风险进行 MFA
-在要求进行 MFA 之前，首先使用标识保护 MFA 注册策略为用户注册 MFA。 注册用户后，可以强制进行 MFA 以进行登录。 [先决条件工作](identity-access-prerequisites.md)包括向具有 MFA 的所有用户注册。
 
-创建新的条件访问策略： 
+您应该让用户在需要使用之前注册 MFA。 如果您有 Microsoft 365 E5、Microsoft 365 E3 和 Identity & 威胁防护外接程序、Office 365 with EMS E5 或单独的 Azure AD 高级 P2 许可证，则可以将 MFA 注册策略与 Azure AD Identity Protection 结合使用，以要求用户注册进行 MFA。 [先决条件工作](identity-access-prerequisites.md)包括向具有 MFA 的所有用户注册。
 
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，您将看到 "Azure 仪表板"。
+注册用户后，您可以要求进行 MFA 以进行登录。
 
-2. 从左侧菜单中选择“Azure Active Directory”。
+若要创建新的条件访问策略，请执行以下操作： 
 
-3. 在“安全”部分之下，选择“条件访问”。
+1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。
 
-4. 选择“新策略”。
+2. 在 Azure 服务列表中，选择 " **Azure Active Directory**"。
 
-![基线 CA 策略](../media/secure-email/CA-EXO-policy-1.png)
+3. 在 " **管理** " 列表中，选择 " **安全性**"，然后选择 " **条件访问**"。
 
- 下表介绍了要为此策略实现的条件访问策略设置。
+4. 选择 " **新建策略** "，然后键入新策略的名称。
 
-**作业**
+下表介绍了根据登录风险要求进行 MFA 的条件访问策略设置。
 
-|类型|属性|值|注意|
+在 " **工作分配** " 部分：
+
+|Setting|属性|值|注意|
 |:---|:---------|:-----|:----|
-|用户和组|包括|选择用户和组 - 选择包含目标用户的特定安全组|从包含试点用户的安全组开始|
-||排除|例外安全组；服务帐户(应用标识)|根据需要在临时基础上修改的成员身份|
-|云应用|包括|选择要应用此规则的应用程序。 例如，选择 "Exchange Online"||
-|条件|已配置|是|根据自身环境和需求进行配置|
-|登录风险|风险级别||请参阅下表中的指南|
+|用户和组|包括| **选择 "用户和组" > 用户和组**：选择包含目标用户帐户的特定组。 |从包含试点用户帐户的组开始。|
+||排除| **用户和组**：选择您的条件访问例外组;)  (应用程序标识的服务帐户。|应在需要的临时基础上修改成员资格。|
+|云应用或操作|包括| **选择 "应用**程序"：选择要应用此规则的应用程序。 例如，选择 "Exchange Online"。||
+|条件| | |配置特定于您的环境和需求的条件。|
+||登录风险||请参阅下表中的指南。|
+|||||
 
-**登录风险**
+**登录风险条件设置**
 
-根据目标的保护级别应用设置。
+根据目标的保护级别应用风险级别设置。
 
-|属性|保护级别|值|注意|
+|保护级别|需要的风险级别值|Action|
+|:---------|:-----|:----|
+|基线|高、中|检查两者。|
+|敏感|高、中、低|检查全部三个。|
+|高度管控| |将所有选项保留为未选中状态，以始终强制执行 MFA。|
+||||
+
+在 " **访问控制** " 部分：
+
+|Setting|属性|值|Action|
 |:---|:---------|:-----|:----|
-|风险级别|基线|高、中|两项全选|
-| |敏感|高、中、低|三项全选|
-| |高度管控| |将所有选项保留为未选中状态以始终强制执行 MFA|
+|授予|**Grant access**| | Select |
+|||**需要多因素身份验证**| 支票 |
+||**需要所有已选控件** ||Select|
+|||||
 
-访问控制
+选择 " **选择** " 以保存 **授予** 设置。
 
-|类型|属性|值|注意|
-|:---|:---------|:-----|:----|
-|授予|授予访问权限|True|已选择|
-||需要进行 MFA|True|Check|
-||要求将设备标记为合规|False||
-||要求混合 Azure AD 加入设备|False||
-||需要经批准的客户端应用程序|False||
-||需要所有已选控件|True|已选择|
+最后，为 **"** **启用策略**" 选择 "启用"。
 
-> [!NOTE]
-> 请务必启用此策略，方法是选择 **"打开"**。 此外，请考虑使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具来测试策略。
-
+此外，请考虑使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具来测试策略。
 
 
 ## <a name="block-clients-that-dont-support-modern-authentication"></a>阻止不支持新式身份验证的客户端
-1. 转到 [Azure 门户](https://portal.azure.com)，然后使用你的凭据登录。 成功登录后，您将看到 "Azure 仪表板"。
 
-2. 从左侧菜单中选择“Azure Active Directory”。
+将这些表中的设置用于条件访问策略，以阻止不支持新式身份验证的客户端。
 
-3. 在“安全”部分之下，选择“条件访问”。
-
-4. 选择“新策略”。
-
-下表介绍了要为此策略实现的条件访问策略设置。
-
-**作业**
+在 " **工作分配** " 部分：
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
@@ -146,7 +155,7 @@ ms.locfileid: "47332087"
 |条件|已配置|是|配置客户端应用程序|
 |客户端应用|已配置|是|移动应用和桌面客户端，其他客户端 (同时选择这两个) |
 
-访问控制
+在 " **访问控制** " 部分：
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
@@ -227,7 +236,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 最后，为 iOS 和 Android 设备上的其他客户端应用程序阻止旧版身份验证，以确保这些客户端无法绕过条件访问规则。 如果你按照本文中的指导进行，你已配置 [阻止不支持新式身份验证的客户端](#block-clients-that-dont-support-modern-authentication)。
 
 <!---
-With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several conditional access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
+With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).
 
 1. Follow "Step 1: Configure an Azure AD Conditional Access policy for Microsoft 365" in [Scenario 1: Microsoft 365 apps require approved apps with app protection policies](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies), which allows Outlook for iOS and Android, but blocks OAuth capable Exchange ActiveSync clients from connecting to Exchange Online.
 
@@ -250,7 +259,6 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Android 企业版
 - iOS/iPadOS
 - macOS
-- Windows Phone 8.1
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
@@ -302,7 +310,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |类型|属性|值|注意|
 |:---|:---------|:-----|:----|
-|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|Medium||
+|Microsoft Defender 高级威胁防护规则|要求设备在计算机风险得分|中||
 
 
 ## <a name="require-compliant-pcs-but-not-compliant-phones-and-tablets"></a>要求兼容的电脑 (但不符合合规性的电话和平板电脑) 
@@ -314,7 +322,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
-3. 在“安全”部分之下，选择“条件访问”。
+3. 在 " **安全性** " 部分中，选择 " **条件访问**"。
 
 4. 选择“新策略”。
 
@@ -342,7 +350,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 2. 从左侧菜单中选择“Azure Active Directory”。
 
-3. 在“安全”部分之下，选择“条件访问”。
+3. 在 " **安全性** " 部分中，选择 " **条件访问**"。
 
 4. 选择“新策略”。
 
@@ -363,4 +371,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="next-steps"></a>后续步骤
 
-[了解有关用于保护电子邮件的策略建议](secure-email-recommended-policies.md)
+![步骤3：针对来宾和外部用户的策略](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
+
+
+[了解来宾和外部用户的策略建议](identity-access-policies-guest-access.md)
