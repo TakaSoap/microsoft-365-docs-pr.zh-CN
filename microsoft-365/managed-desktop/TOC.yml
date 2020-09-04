@@ -32,6 +32,8 @@
           href: service-description/security.md
         - name: 安全性操作
           href: service-description/security-operations.md
+        - name: 隐私
+          href: service-description/privacy-personal-data.md
         - name: 更新
           href: service-description/updates.md
         - name: 支持
