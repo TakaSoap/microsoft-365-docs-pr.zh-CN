@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 高级电子数据展示中支持的文件类型列表，包括高级电子数据展示中的 OCR 功能支持的图像文件类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4b23e0b0f428c91b13e461eb6514da99e5a69f42
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819152"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357743"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高级电子数据展示中支持的文件类型
 
-高级电子数据展示支持多种不同级别的文件类型，如下表所述。 此列表未定稿，我们将在继续进行验证测试时添加新的文件类型。 这些表指示文件类型是否受文本提取（和光学字符识别或图像文件的 OCR 文本提取）的支持，在本机查看器中可见，还支持高级电子数据展示中的批注查看器。
+高级电子数据展示支持多种不同级别的文件类型，如下表所述。 此列表未定稿，我们将在继续进行验证测试时添加新的文件类型。 这些表指示文件类型是否受文本提取 (和光学字符识别或 OCR 文本提取) 、可在本机查看器中查看以及在高级电子数据展示中的批注查看器中支持的图像文件。
 
 ## <a name="archive--container"></a>存档/容器
 
@@ -42,12 +42,12 @@ ms.locfileid: "44819152"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/ | 是 | 是 | 否 | 必需 | 否 | . m4v;. mp4v;. mpeg4 中的. m4a |
-| 音频/mpeg | 是 | 是 | 否 | 必需 | 否 | mpeg |
-| video/3gpp | 是 | 是 | 否 | 必需 | 否 | .3gp |
-| video/3gpp2 | 是 | 是 | 否 | 必需 | 否 | .3g2; .3gp2 |
-| 视频/quicktime | 是 | 是 | 否 | 必需 | 否 | . moov; mov;. qt |
-| 视频/x-m4v | 是 | 是 | 否 | 必需 | 否 | .m4v |
+| application/ | 是 | 是 | 否 | 是 | 否 | . m4v;. mp4v;. mpeg4 中的. m4a |
+| 音频/mpeg | 是 | 是 | 否 | 是 | 否 | mpeg |
+| video/3gpp | 是 | 是 | 否 | 是 | 否 | .3gp |
+| video/3gpp2 | 是 | 是 | 否 | 是 | 否 | .3g2; .3gp2 |
+| 视频/quicktime | 是 | 是 | 否 | 是 | 否 | . moov; mov;. qt |
+| 视频/x-m4v | 是 | 是 | 否 | 是 | 否 | .m4v |
 ||||||||
 
 ## <a name="database"></a>数据库
@@ -131,7 +131,7 @@ ms.locfileid: "44819152"
 
 | Mime 类型 | 文件标识 | 元数据提取 | 文本提取 | 本机查看器 | 批注查看器 | 可能的扩展 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 可访问 | mpp |
+| application/vnd.ms-excel ms-project | 是 | 是 | 是 | 否 | 是 | mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher

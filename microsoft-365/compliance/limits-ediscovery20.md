@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 中适用于高级电子数据展示解决方案的案例限制、索引限制和搜索限制。
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778458"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358470"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 
@@ -60,7 +60,7 @@ ms.locfileid: "46778458"
 |:-----|:-----|
 |可在单个搜索中搜索的邮箱或网站的最大数量。  <br/> |无限制  <br/> |
 |可以同时运行的最大搜索数。  <br/> |无限制  <br/> | 
-|一个用户可以同时启动的最大搜索数。  <br/> |10   <br/> | 
+|一个用户可以同时启动的最大搜索数。  <br/> |10    <br/> | 
 |搜索查询的最大字符数 (包括运算符和条件) 。  <br/> |**邮箱**：10000<br/>**网站**：4000搜索所有网站或2000时搜索20个网站 <sup>2</sup> <br/> |
 |前缀通配符的最小字母字符数;例如**一个或 \* 一个** **set \* **。 <br/> |第三章  <br/> |  
 |使用前缀通配符搜索精确短语或使用前缀通配符和 **接近** 的布尔运算符时返回的最大变体。  <br/> |10000 <sup>3</sup> <br/> |

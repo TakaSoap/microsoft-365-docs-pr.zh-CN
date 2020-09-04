@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将数据从 Bloomberg 邮件电子邮件工具导入和存档到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: f9793db545b5298663da7bbfa39a0878854e070d
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255859"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358288"
 ---
 # <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>设置连接器以存档 Bloomberg 消息数据 (预览) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "47255859"
 
 ## <a name="before-you-begin"></a>准备工作
 
-存档 Bloomberg 邮件数据所需的许多实施步骤在 Microsoft 365 中是外部的，并且必须先完成，然后才能在合规性中心中创建连接器。
+存档 Bloomberg 邮件数据所需的某些实施步骤是 Microsoft 365 外部的，必须先完成，然后才能在合规性中心中创建连接器。
 
 - 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要同意此请求，请转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能在步骤3中成功创建 Bloomberg 邮件连接器。
 

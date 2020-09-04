@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户如何在 Office 应用程序中使用桌面、移动和 web Office 应用程序中的敏感度标签，以及哪些应用程序支持灵敏度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c3e3bf903905ca241053ef110fb92bd220f3233f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 513a544239890f2299a7208d2ba2c20c4507a7ef
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797626"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357774"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -39,9 +39,9 @@ ms.locfileid: "46797626"
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用程序中的敏感度标签功能
 
-对于每项功能，下表列出了该应用程序为支持使用内置标记的敏感度标签所需的最低版本。 或者，如果标签功能处于公共预览或正在审阅中，以供将来的版本使用。
+对于每项功能，下表列出了该应用程序为支持使用内置标签的敏感度标签所需的最低 Office 版本。 或者，如果标签功能处于公共预览或正在审阅中，以供将来的版本使用。 使用 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap) 获取有关未来版本的详细信息。
 
-新版本的应用程序在不同的时间为不同的更新频道提供。 有关详细信息，包括如何配置更新频道以便能够测试您感兴趣的新标记功能，请参阅 [Microsoft 365 应用的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 专用预览中的新功能不包含在表中，但您可能可以通过 nominating 您的组织来加入 [Microsoft 信息保护专用预览计划](https://aka.ms/mip-preview)，从而加入这些预览。
+新版本的 Office 应用程序将在不同的时间为不同的更新频道提供。 有关详细信息，包括如何配置更新频道以便能够测试您感兴趣的新标记功能，请参阅 [Microsoft 365 应用的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 专用预览中的新功能不包含在表中，但您可能可以通过 nominating 您的组织来加入 [Microsoft 信息保护专用预览计划](https://aka.ms/mip-preview)，从而加入这些预览。
 
 > [!NOTE]
 > 最近更改了 Office 应用的更新通道的名称。 例如，"每月频道" 现在是 "当前频道"，Office 预览体验成员现已成为 Beta 频道。 有关详细信息，请参阅 [对 Microsoft 365 应用更新频道的更改](https://docs.microsoft.com/deployoffice/update-channels-changes)。

@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文介绍如何在 Microsoft 365 中开始使用核心电子数据展示。 分配电子数据展示权限并创建案例后，可以添加成员，创建电子数据展示保留，然后搜索和导出与调查相关的数据。
-ms.openlocfilehash: 5faae81eb81ce8c69e3ae801d153c664ac152bda
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: 94c85987be4cbc5da7a378abb7ea74294f6fe740
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280542"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357910"
 ---
 # <a name="get-started-with-core-ediscovery"></a>核心电子数据展示入门
 
@@ -48,13 +48,13 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
   - 使用 SharePoint Online 计划2或 OneDrive for business 计划2附加许可证的 Office 365 E1 许可证
   
-  有关如何分配许可证的信息，请参阅向[用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+  有关如何分配许可证的信息，请参阅向 [用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 有关许可的信息：
 
-- 下载并查看[Microsoft 365 合规性许可比较](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的 "发现 & 响应" 解决方案。
+- 下载并查看 [Microsoft 365 合规性许可比较](https://docs.microsoft.com/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)中的 "发现 & 响应" 解决方案。
 
-- 请参阅[Security & 合规性中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
+- 请参阅 [Security & 合规性中心服务说明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>步骤2：分配电子数据展示权限
 
@@ -64,17 +64,17 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 1. 转到 [https://protection.office.com/permissions](https://protection.office.com/permissions) 并使用 Microsoft 365 或 Office 365 组织中的管理员帐户的凭据登录。
 
-2. 在 "**权限**" 页上，选择 "**电子数据展示管理器**" 角色组。
+2. 在 " **权限** " 页上，选择 " **电子数据展示管理器** " 角色组。
 
 3. 在 "电子数据展示管理器" 弹出页面上，单击**电子数据展示管理器**部分旁边的 "**编辑**"。
 
-4. 在编辑角色组向导中的 "**选择电子数据展示管理器**" 页上，单击 "**选择发现管理器**"。
+4. 在编辑角色组向导中的 " **选择电子数据展示管理器** " 页上，单击 " **选择发现管理器**"。
 
-5. 单击 "**添加**"，然后选中要添加到角色组的所有用户的复选框。
+5. 单击 " **添加** "，然后选中要添加到角色组的所有用户的复选框。
 
-6. 单击 "**添加**" 以添加选定的用户，然后单击 "**完成**"。
+6. 单击 " **添加** " 以添加选定的用户，然后单击 " **完成**"。
 
-7. 单击 "**保存**" 将用户添加到角色组，然后单击 "**关闭**" 完成步骤。
+7. 单击 " **保存** " 将用户添加到角色组，然后单击 " **关闭** " 完成步骤。
 
 ### <a name="more-information-about-the-ediscovery-manager-role-group"></a>有关电子数据展示管理器角色组的详细信息
 
@@ -92,7 +92,7 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
   由于访问范围很广，组织应仅有几个作为电子数据展示管理员子组成员的管理员。
 
-有关电子数据展示权限的详细信息以及分配给电子数据展示管理器角色组的每个角色的说明，请参阅[分配电子数据展示权限](assign-ediscovery-permissions.md)。
+有关电子数据展示权限的详细信息以及分配给电子数据展示管理器角色组的每个角色的说明，请参阅 [分配电子数据展示权限](assign-ediscovery-permissions.md)。
 
 ## <a name="step-3-create-a-core-ediscovery-case"></a>步骤3：创建核心电子数据展示事例
 
@@ -100,31 +100,31 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。 组织管理角色组的成员也可以创建核心电子数据展示事例。
 
-2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 "**全部显示**"，然后单击 "**电子数据展示 > 核心**"。
+2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 " **全部显示**"，然后单击 " **电子数据展示 > 核心**"。
 
-3. 在**核心电子数据展示**页面上，单击 "**创建事例**"。
+3. 在 **核心电子数据展示** 页面上，单击 " **创建事例**"。
 
-4. 在 "**新事例**" 弹出页面上，为事例提供名称（必需），然后键入一个可选的事例编号和说明。 案例名称在您的组织中必须是唯一的。
+4. 在 " **新事例** " 弹出页面上，为事例提供 (必需) 的名称，然后键入一个可选的事例编号和说明。 案例名称在您的组织中必须是唯一的。
 
-5. 单击 "**保存**" 以创建事例。
+5. 单击 " **保存** " 以创建事例。
 
-   创建新事例并将其显示在核心电子数据展示页面上。 您可能需要单击 "**刷新**" 以显示新事例。 
+   创建新事例并将其显示在核心电子数据展示页面上。 您可能需要单击 " **刷新** " 以显示新事例。 
 
-## <a name="step-4-optional-add-members-to-a-core-ediscovery-case"></a>步骤4（可选）：将成员添加到核心电子数据展示事例
+## <a name="step-4-optional-add-members-to-a-core-ediscovery-case"></a>第4步 (可选) ：将成员添加到核心电子数据展示事例
 
-如果您在第3步中创建了一个事例，并且您是唯一将使用该事例的人，则不必执行此步骤。 您可以开始使用事例来创建电子数据展示保留、搜索内容或导出搜索结果。 如果要向其他用户（或角色组）授予对该案例的访问权限，请执行此步骤。
+如果您在第3步中创建了一个事例，并且您是唯一将使用该事例的人，则不必执行此步骤。 您可以开始使用事例来创建电子数据展示保留、搜索内容或导出搜索结果。 如果要向其他用户授予 (或角色组) 对该案例的访问权限，请执行此步骤。
 
-1. 在 Microsoft 365 合规性中心的**核心电子数据展示**页面上，单击要向其添加成员的事例的名称。
+1. 在 Microsoft 365 合规性中心的 **核心电子数据展示** 页面上，单击要向其添加成员的事例的名称。
 
-2. 在 "**管理此案例**" 弹出页面上的 "**管理成员**" 下，单击 "**添加**" 向事例添加成员。 
+2. 在 " **管理此案例** " 弹出页面上的 " **管理成员**" 下，单击 " **添加** " 向事例添加成员。 
 
-    您还可以选择将角色组添加为事例的成员。 在 "**管理角色组**" 下，单击 "**添加**"。 您只能将您所属的角色组分配给一个案例。 这是因为角色组控制谁可以将成员分配到电子数据展示事例。
+    您还可以选择将角色组添加为事例的成员。 在 " **管理角色组**" 下，单击 " **添加**"。 您只能将您所属的角色组分配给一个案例。 这是因为角色组控制谁可以将成员分配到电子数据展示事例。
 
-3. 在可以添加为案例成员的人员或角色组列表中，单击要添加的人员（或角色组）名称旁边的复选框。 如果您有一个很大的用户可以添加为成员的列表，请使用**搜索**框在列表中搜索特定人员。
+3. 在可以添加为案例成员的人员或角色组列表中，单击要添加的人员的名称 (或角色组) 旁边的复选框。 如果您有一个很大的用户可以添加为成员的列表，请使用 **搜索** 框在列表中搜索特定人员。
   
-4. 选择要添加为事例成员的人员或角色组后，单击 "**添加**"。
+4. 选择要添加为事例成员的人员或角色组后，单击 " **添加**"。
 
-5. 单击 "**保存**" 以保存新的事例成员列表。
+5. 单击 " **保存** " 以保存新的事例成员列表。
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>浏览核心电子数据展示工作流
 
@@ -132,9 +132,9 @@ Microsoft 365 中的核心电子数据展示提供了一个基本的电子数据
 
 ![核心电子数据展示工作流](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[创建电子数据展示保留](create-ediscovery-holds.md)**。 创建案例后的第一步是在调查中的人员的内容位置放置保留（也称为*电子数据展示保留*）。 内容位置包括 Exchange 邮箱、SharePoint 网站、OneDrive 帐户以及与 Microsoft 团队和 Office 365 组关联的邮箱和网站。 虽然此步骤是可选的，但创建电子数据展示保留会保留在调查过程中可能与事例相关的内容。 创建电子数据展示保留时，可以保留特定内容位置中的所有内容，也可以创建基于查询的保留以仅保留与保留查询匹配的内容。 除了保留内容之外，创建电子数据展示保留的另一个好的原因是，在下一步中创建和运行搜索时，快速搜索内容位置（而不是必须选择要搜索的位置）。 完成调查后，可以释放您创建的任何保留。
+1. **[创建电子数据展示保留](create-ediscovery-holds.md)**。 创建案例后的第一步是将保留 (也称为 *电子数据展示保留*) 在调查中的人员的内容位置。 内容位置包括 Exchange 邮箱、SharePoint 网站、OneDrive 帐户以及与 Microsoft 团队和 Office 365 组关联的邮箱和网站。 虽然此步骤是可选的，但创建电子数据展示保留会保留在调查过程中可能与事例相关的内容。 创建电子数据展示保留时，可以保留特定内容位置中的所有内容，也可以创建基于查询的保留以仅保留与保留查询匹配的内容。 除了保留内容之外，创建电子数据展示保留的另一个好理由是：快速搜索保留 (上的内容位置，而不是在下一步中创建和运行搜索时选择要搜索) 的每个位置。 完成调查后，可以释放您创建的任何保留。
 
-2. **[搜索内容](search-for-content-in-core-ediscovery.md)**。 创建电子数据展示保留后，使用内置搜索工具在保留时搜索内容位置。 您还可以在其他内容位置搜索可能与案例相关的数据。 您可以创建和运行与事例相关联的不同搜索。 使用关键字、属性和条件[构建搜索查询](keyword-queries-and-search-conditions.md)，以使用最可能与案例相关的数据返回搜索结果。 您还可以：
+2. **[搜索内容](search-for-content-in-core-ediscovery.md)**。 创建电子数据展示保留后，使用内置搜索工具在保留时搜索内容位置。 您还可以在其他内容位置搜索可能与案例相关的数据。 您可以创建和运行与事例相关联的不同搜索。 使用关键字、属性和条件 [构建搜索查询](keyword-queries-and-search-conditions.md) ，以使用最可能与案例相关的数据返回搜索结果。 还可以执行以下操作：
 
    - 查看可帮助您优化搜索查询以缩小结果范围的搜索统计信息。
 

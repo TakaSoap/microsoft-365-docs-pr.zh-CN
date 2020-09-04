@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在调查过程中，可以使用 "重试" 按钮来解析包含内容位置错误的内容搜索。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527630"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357552"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重试内容搜索以解决内容位置错误
 
@@ -38,7 +38,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-这些错误（错误代码为 CS001-002、CS003-002、CS008-009、CS012-002 以及窗体 CS0XX-0XX）的其他错误指示内容搜索无法搜索特定的内容位置;在此示例中，未搜索两个邮箱。 这些错误显示在内容搜索的 "状态详细信息" 飞出页面上。
+这些错误 (CS001-002、CS003-002、CS008-009、CS012-002 和的其他) 错误的错误代码，这表示内容搜索无法搜索特定的内容位置;在此示例中，未搜索两个邮箱。 这些错误显示在内容搜索的 "状态详细信息" 飞出页面上。
 
 ## <a name="cause-of-content-location-errors"></a>内容位置错误的原因
 
@@ -46,7 +46,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="resolving-content-location-errors"></a>解决内容位置错误
 
-重新启动搜索通常会在不同的服务器上产生类似的错误。 请单击 "搜索结果" 页顶部显示的 "**重试**" 按钮，而不是重新启动搜索。
+重新启动搜索通常会在不同的服务器上产生类似的错误。 请单击 "搜索结果" 页顶部显示的 " **重试** " 按钮，而不是重新启动搜索。
 
 ![单击 "重试" 按钮解决内容位置错误](../media/retrycontentsearch3.png)
 
@@ -60,7 +60,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 搜索查询可能会从邮箱中检索过多的内容。 如果可能，请尝试使用关键字、日期范围和搜索条件来缩小搜索范围。
 
-- 使用[关键字列表](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)创建搜索查询时，关键字或关键字短语过多。 当您运行使用关键字列表的搜索查询时，该服务实质上会对关键字列表中的每一行运行单独的搜索，以便可以生成统计信息。 如果要在搜索查询中使用关键字列表，请最大限度地减少关键字列表中的行数，或将数字关键字分成较小的列表，并为每个关键字列表创建不同的搜索。
+- 使用 [关键字列表](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)创建搜索查询时，关键字或关键字短语过多。 当您运行使用关键字列表的搜索查询时，该服务实质上会对关键字列表中的每一行运行单独的搜索，以便可以生成统计信息。 如果要在搜索查询中使用关键字列表，请最大限度地减少关键字列表中的行数，或将数字关键字分成较小的列表，并为每个关键字列表创建不同的搜索。
 
   > [!NOTE]
   > 为了帮助减少由大型关键字列表导致的问题，您现在限制为搜索查询的关键字列表中的最多20行。

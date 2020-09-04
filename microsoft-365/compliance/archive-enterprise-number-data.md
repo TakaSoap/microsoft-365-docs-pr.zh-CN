@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为从 TeleMessage 企业数字存档器中导入和存档 SMS 和 MMS 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 5e82d5a83b80987837cba323342e60c6d2b31b72
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282722"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47362031"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>设置连接器以存档企业数字数据 (预览) 
 
@@ -40,7 +40,7 @@ ms.locfileid: "47282722"
 
 ## <a name="before-you-begin"></a>准备工作
 
-存档企业编号存档器数据所需的许多实施步骤在 Microsoft 365 中是外部的，并且必须先完成，然后才能在合规性中心中创建连接器。
+存档企业数字存档器数据所需的某些实施步骤是 Microsoft 365 外部的，必须先完成这些步骤，然后才能在合规性中心中创建连接器。
 
 - [从 TeleMessage 中对企业编号存档服务](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)进行排序，并为您的组织获取有效的管理帐户。 在合规中心创建连接器时，需要登录此帐户。
 
@@ -48,7 +48,7 @@ ms.locfileid: "47282722"
 
 - 在员工的移动电话上安装和激活 TeleMessage Enterprise Number 存档应用程序。
 
-- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 您需要在创建连接器时提供此同意。 若要同意此请求，请转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Office 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能成功创建电铃网络连接器。
+- 您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 您需要在创建连接器时提供此同意。 若要同意此请求，请转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全局管理员的凭据登录，然后接受该请求。 您必须完成此步骤，然后才能成功创建电铃网络连接器。
 
 - 必须在 Exchange Online 中为创建企业数字存档器连接器的用户分配邮箱导入导出角色。 这是在 Microsoft 365 合规性中心的 " **数据连接器** " 页中添加连接器所必需的。 默认情况下，不会向 Exchange Online 中任何角色组分配此角色。 您可以将邮箱导入导出角色添加到 Exchange Online 中的 "组织管理" 角色组。 或者，您可以创建角色组，分配邮箱导入导出角色，然后将相应的用户添加为成员。 有关详细信息，请参阅文章 "管理 Exchange Online 中的角色组" 中的 " [创建角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) " 或 " [修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) " 部分。
 
@@ -74,7 +74,7 @@ ms.locfileid: "47282722"
 
 7. 提供管理员同意，然后单击 " **下一步**"。
 
-   若要提供管理员同意，必须使用 Office 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) 并使用全局管理员凭据登录以接受请求。
+   若要提供管理员同意，必须使用 Office 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 
 8. 查看您的设置，然后单击 " **完成** " 以创建连接器。
 
@@ -82,4 +82,4 @@ ms.locfileid: "47282722"
 
 ## <a name="known-issues"></a>已知问题
 
-- 连接器未导入任何大于 10 MB 的项目。
+- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。

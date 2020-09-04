@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ description: 在加载非 Office 365 数据以进行高级电子数据展示中�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 4bf8461cb02ca3601707f248a64d8a8a9741efab
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434275"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357702"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>解决高级电子数据展示中的 AzCopy
 
@@ -36,15 +36,15 @@ ms.locfileid: "45434275"
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>本地计算机上未安装支持的 AzCopy 版本
 
-目前，您必须使用 AzCopy？8.1 在高级电子数据展示中加载非 Microsoft 365 数据。 如果您不使用 AzCopy ue-v 8.1，则在前面的屏幕截图中显示的 "**上载文件**" 页上显示的 AzCopy 命令将返回错误。 若要安装此版本，请参阅[在 Windows 上使用 AzCopy ue-v 8.1 传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。
+目前，您必须使用 AzCopy？8.1 在高级电子数据展示中加载非 Microsoft 365 数据。 如果您不使用 AzCopy ue-v 8.1，则在前面的屏幕截图中显示的 " **上载文件** " 页上显示的 AzCopy 命令将返回错误。 若要安装此版本，请参阅 [在 Windows 上使用 AzCopy ue-v 8.1 传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>AzCopy 未安装在本地计算机上，或者未安装在默认位置
 
-如果未安装 AzCopy 或安装在默认安装位置之外的某个位置（即 " `%ProgramFiles(x86)%` ）"，则在运行 AzCopy 命令时，可能会收到以下错误消息：
+如果未安装 AzCopy 或安装在默认安装位置之外的某个位置 (这是 `%ProgramFiles(x86)%`) 的，则在运行 AzCopy 命令时，可能会收到以下错误消息：
 
 > 系统找不到指定的路径。
 
-如果本地计算机上未安装 AzCopy，则可以在[Windows 上查找使用 AzCopy 中的的传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)的安装信息。 请务必将其安装在默认位置。
+如果本地计算机上未安装 AzCopy，则可以在 [Windows 上查找使用 AzCopy 中的的传输数据](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)的安装信息。 请务必将其安装在默认位置。
 
 如果已安装 AzCopy，但其安装在与默认位置不同的位置，则可以复制命令，将其粘贴到文本文件，然后将路径更改为安装 AzCopy 的位置。 例如，如果 Azcopy 位于 `%ProgramFiles%` ，则可以将命令的第一部分从更改 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` 为 `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 。 在进行此更改后，从文本文件中复制该文件，然后运行命令提示符。
 

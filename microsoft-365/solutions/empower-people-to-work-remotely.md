@@ -69,7 +69,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 | Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer、Power Apps | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
 ||||
 
-有关安全和合规性条件，请参阅[为远程工作者部署安全与合规](empower-people-to-work-remotely-security-compliance.md)。
+有关安全和合规性条件，请参阅[针对远程工作者的部署安全性与合规性](empower-people-to-work-remotely-security-compliance.md)。
 
 <a name="poster"></a>有关此解决方案的两页摘要，请参阅[“为远程工作者助力”文章](../downloads/empower-remote-workers.pdf)。
 

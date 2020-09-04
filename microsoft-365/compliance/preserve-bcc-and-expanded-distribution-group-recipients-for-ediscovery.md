@@ -7,27 +7,27 @@ author: markjjo
 manager: laurawi
 ms.date: 6/19/2017
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: 就地保留、诉讼保留和 Microsoft 365 保留策略使您能够保留邮箱内容，以满足法规遵从性和电子数据展示要求。
-ms.openlocfilehash: 07959edc89aa9d3335b9af501743eae4a11a6aa1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 62029ff742f9fe4aec1fed23d74b01b145da6cfe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634860"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358480"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>为电子数据展示保存密件抄送和展开的通讯组收件人
   
-就地保留、诉讼保留和[Microsoft 365 保留策略](https://go.microsoft.com/fwlink/?LinkID=827811)（在安全 & 合规性中心中创建）使您能够保留邮箱内容，以满足法规遵从性和电子数据展示要求。 默认情况下，所有邮件中均包含直接在邮件"收件人"和"抄送"字段中输入的收件人信息，但您的组织可能需要能够搜索和重现邮件收件人的详细信息。 这包括： 
+就地保留、诉讼保留和 [Microsoft 365 保留策略](https://go.microsoft.com/fwlink/?LinkID=827811) (在安全 & 合规性中心中创建) 允许您保留邮箱内容以满足法规遵从性和电子数据展示要求。 默认情况下，所有邮件中均包含直接在邮件"收件人"和"抄送"字段中输入的收件人信息，但您的组织可能需要能够搜索和重现邮件收件人的详细信息。 这包括： 
   
 - **使用邮件的 "密件抄送" 字段寻址的收件人：** 密件抄送收件人存储在发件人邮箱中的邮件中，但不包括在传递给收件人的邮件的邮件头中。 
     
 - **展开的通讯组收件人：** 接收邮件的收件人，因为它们是邮件的通讯组的成员，在 "收件人"、"抄送" 或 "密件抄送" 字段中。 
     
-Exchange Online 和 Exchange Server 2013 （累积更新7及更高版本）保留密件抄送和展开的通讯组收件人的信息。 您可以使用 Exchange 管理中心（EAC）中的就地电子数据展示搜索或安全性 & 合规性中心中的内容搜索来搜索此信息。 
+Exchange Online 和 Exchange Server 2013 (累积更新7及更高版本，) 保留有关密件抄送和展开的通讯组收件人的信息。 您可以使用 Exchange 管理中心中的就地电子数据展示搜索来搜索此信息 (EAC) 或安全 & 合规性中心中的内容搜索。 
   
 ## <a name="how-bcc-recipients-and-expanded-distribution-group-recipients-are-preserved"></a>如何保留密件抄送收件人和展开的通讯组收件人
 
@@ -82,9 +82,9 @@ A. 在发送邮件时扩展组成员身份。 展开的通讯组成员列表存�
   
 答：此信息并不包含在邮件标头中，对收件人/抄送收件人不可见。发件人可以看到其邮箱中所存储原始邮件中的密件抄送字段。搜索发件人邮箱时，合规部主管可以看到此信息。
   
- **问：怎样才能确保展开的通讯组收件人始终保持不变？**
+ **增长率.如何确保始终保留展开的通讯组收件人？**
   
-A. 若要确保展开的通讯组成员始终使用邮件保留，请[将所有邮箱置于保留状态](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx)或创建组织范围的 Microsoft 365 保留策略。 
+A. 若要确保展开的通讯组成员始终使用邮件保留，请 [将所有邮箱置于保留状态](https://technet.microsoft.com/library/4c141604-3210-44cc-b98e-f3e0f15613b8.aspx) 或创建组织范围的 Microsoft 365 保留策略。 
   
  **问：支持哪些类型的组？**
   
