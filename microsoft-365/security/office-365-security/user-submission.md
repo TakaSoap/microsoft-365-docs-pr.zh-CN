@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: e482399adb6304840b8286a226800e6b9dcb6813
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294749"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394719"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
 
@@ -43,17 +43,10 @@ ms.locfileid: "47294749"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **用户提交** " 页，请使用 <https://protection.office.com/userSubmissionsReportMessage> 。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 若要修改用户提交的配置，您必须是下列角色组之一的成员：
 
-  - 若要修改用户提交的配置，您必须是下列角色组之一的成员：
-
-    - Azure AD 和**组织管理**或**安全管理员**中的**[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 和[安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
-
-  - 若要对用户提交进行只读访问，您需要是以下两个角色组的成员：
-
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
+  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**组织管理**。
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全 & 合规性中心配置用户提交邮箱
 

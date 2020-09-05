@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255741"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394677"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
@@ -39,7 +39,7 @@ ms.locfileid: "47255741"
 
 你可以使用相同的威胁搜寻查询来构建自定义检测规则。 这些规则会自动运行以检查和响应各种事件和系统状态，包括可疑的违规活动和配置错误的计算机。
 
-该功能与 [Microsoft DEFENDER atp 中的高级](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)搜索类似，不同之处在于，在 microsoft 365 安全中心中，高级搜索功能支持从各种工作区查看数据的查询，其中包括有关 MICROSOFT Defender ATP、OFFICE 365 ATP、Microsoft 云应用安全性和 Azure atp 中的设备、电子邮件、应用和标识的数据。 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
+此功能与 [Microsoft DEFENDER atp 中的高级](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)搜索类似，不同之处在于 microsoft security center 中365提供的 Microsoft 威胁防护中的高级搜索支持从各种工作区查看数据的查询，其中包括有关来自 MICROSOFT Defender ATP、OFFICE 365 Atp、Microsoft 云应用安全性和 Azure atp 的设备、电子邮件、应用程序和标识的数据。 若要使用高级搜寻，请[打开 Microsoft 威胁防护](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>高级搜寻入门
 

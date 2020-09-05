@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b26250c54c30b2da4dbda50a5909a168f09bbe73
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 40d0ffa779b0ab13a0bdd887b12d69c20892662d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866679"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399345"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -37,7 +37,7 @@ MITRE 的测试方法的核心是模拟实际攻击，以了解解决方案是�
 
 - ATT&基于 CK 的 Microsoft 威胁防护评估（可能为2020： [在实际检测中的领先范围](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 威胁防护提供了跨攻击链阶段的将近100% 的覆盖率。 It 向攻击者活动提供了一流的现成可见性。 可见性大大减少了依赖特定配置更改的安全操作中心和供应商解决方案的手动工作。 它还具有可见性中最少的缺口，从而降低了攻击者运行未发现的能力。
+    Microsoft 威胁防护提供了跨攻击链阶段的将近100% 的覆盖率。 It 向攻击者活动提供了一流的现成可见性。 可见性大大减少了依赖特定配置更改的安全操作中心和供应商解决方案的手动工作。 Microsoft 威胁防护也具有可见性最少的差距，从而降低了攻击者无法正常运行的能力。
 
 ## <a name="next-generation-protection"></a>下一代保护
 
@@ -45,15 +45,17 @@ MITRE 的测试方法的核心是模拟实际攻击，以了解解决方案是�
 
 Microsoft Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全堆栈](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)中的[下一代保护](https://www.youtube.com/watch?v=Xy3MOxkX_o4)功能，可解决当今最新和最复杂的威胁。 在某些情况下，客户可能甚至不知道它们受到保护，因为在 [市场活动启动之后](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)cyberattack 停止毫秒。 这是因为 Microsoft defender 防病毒和其他 [endpoint protection 平台 (](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) 在 MICROSOFT defender ATP 中的 EPP) 功能在首次看到时检测并阻止恶意软件。 他们使用 [机器学习](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering)、 [人工智能](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)、行为分析和其他高级技术。
 
-### <a name="av-test-protection-score-of-5560-in-the-latest-test"></a>AV-测试：最新测试中 5.5/6.0 的保护得分
+### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-测试：对最新测试中的 6.0/6.0 的保护得分
 
 AV 测试产品检查和认证报告测试有以下三个类别：保护、性能和可用性。 以下分数适用于包含两个分数的保护类别：实际测试和 AV 测试参考集 (称为 "普遍恶意软件" ) 。
 
 **下载最新的透明度报告： [检查 AV 测试结果-2020 年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 3月-2020 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**最新**</sup>
+- 可能-6 月 2020 AV-测试业务用户测试： [保护得分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**最新**</sup>
 
-    Microsoft Defender 防病毒实现了 5.5/6.0 的整体保护分数，并使用了20540恶意软件示例。
+    Microsoft Defender 防病毒实现了 6.0/6.0 的最佳保护分数，100% 在5月和6月。 22190使用了恶意软件示例。
+
+- 3月-2020 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
 - 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
@@ -65,13 +67,13 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 - 可能-6 月 2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
-### <a name="av-comparatives-protection-rating-of-995-in-the-latest-test"></a>AV-比较级：99.5% 在最新测试中的保护评级
+### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-比较级：99.7% 在最新测试中的保护评级
 
 业务安全测试由三个主要部分组成：模拟在线恶意软件攻击的实际保护测试、恶意软件保护在 internet 中进入系统的恶意软件保护测试 (例如，USB) ，以及查看系统性能影响的性能测试。
 
-- Business Security Test 2020 Factsheet (三月份-四月) ： [实际保护率 99.5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**最新**</sup>
+- Business Security Test 2020 (年3月（6月) ： [实际保护率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**最新**</sup>
 
-    在过去的一年中，Microsoft Defender 防病毒软件的实际保护率已经过高，在最新的测试中有99.5% 的分数。
+    在过去的一年中，Microsoft Defender 防病毒软件的实际保护率已经过高，在最新的测试中有99.7% 的分数。
 
 - Business Security Test 2019 (八月-) 年11月： [实际保护率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
@@ -85,9 +87,11 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 **下载最新透明度报告：[检查 SE 实验测试结果（1月-2020 年3月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)）**
 
-- 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- 企业版 Endpoint Protection —6月2020： [AAA 奖](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-    Microsoft 的下一代保护称为主要产品之一，停止所有目标攻击和除一个公开的所有威胁。
+    Microsoft 的下一代保护称为领先的产品之一，保护所有公共和目标攻击。 Microsoft Defender 防病毒通过其阻止恶意 Url、处理攻击和正确地对合法应用程序和网站进行分类的能力实现了此类有用的结果。
+
+- 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
 - 企业 Endpoint Protection 10 月-12 月2019： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
 
@@ -101,7 +105,7 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 Microsoft Defender ATP [终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) 功能提供了接近实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。
 
-Microsoft Defender ATP 的 EDR 和 endpoint protection 功能已从行业测试和出版物收到正面结果。 SC Labs 在6月2020日[评估了终结点安全工具](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)，并提供了 MICROSOFT Defender ATP [5/5 星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)。 他们将 Microsoft Defender ATP 称为使用整套安全功能保护组织免受新式威胁的能力。 他们还将终结点安全解决方案标识为整体和统一的。 他们还确认了 endpoint protection 与终结点检测和响应功能的融合，因为攻击链现在完全受解决方案的覆盖。
+Microsoft Defender ATP 的 EDR 和 endpoint protection 功能已从行业测试和出版物收到正面结果。 SC Labs 在6月2020日[评估了终结点安全工具](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)，并提供了 MICROSOFT Defender ATP [5/5 星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)。 他们将 Microsoft Defender ATP 称为使用整套安全功能保护组织免受新式威胁的能力。 SC Labs 也将终结点安全解决方案标识为整体和统一的。 他们还确认了 endpoint protection 与终结点检测和响应功能的融合，因为攻击链现在完全受解决方案的覆盖。
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE：业界领先的光学器件和检测功能
 
