@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将数据从 Globanet Zoom 会议导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361979"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399139"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>设置连接器以存档缩放会议数据 (预览) 
 
@@ -74,7 +74,7 @@ ms.locfileid: "47361979"
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>步骤2：配置缩放会议连接器
 
-第二步是在 Merge1 网站上配置缩放会议连接器。 有关如何在 Globanet Merge1 网站中配置缩放会议连接器的详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
+第二步是在 Merge1 网站上配置缩放会议连接器。 有关如何在 Globanet Merge1 网站上配置缩放会议连接器的详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
 
 单击 " **保存" & "完成**" 后，将转回到 Microsoft 365 合规性中心，转到 "连接器向导" 中的 " **用户映射** " 页。
 

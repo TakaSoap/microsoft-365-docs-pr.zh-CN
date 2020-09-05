@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为在 Microsoft 365 中的 Globanet 中导入和存档 Reuters Eikon 数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: ee28cd33e6c4531bf769a1e178d733eff453cb75
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a5cd6e6266c9e5d8b74f50a5712e436e6225c9df
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362011"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399335"
 ---
 # <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>设置连接器以存档 Reuters Eikon data (preview) 
 
@@ -28,7 +28,7 @@ ms.locfileid: "47362011"
 
 ## <a name="overview-of-archiving-reuters-eikon-data"></a>存档 Reuters Eikon 数据概述
 
-以下概述说明了使用连接器将 Microsoft 365 中的 Reuters Eikon 信息存档的过程。
+以下概述说明了使用连接器将 Microsoft 365 中的 Reuters Eikon 数据存档的过程。
 
 ![Reuters Eikon 数据的存档工作流](../media/ReutersEikonConnectorWorkflow.png)
 
@@ -62,13 +62,13 @@ ms.locfileid: "47362011"
 
 ## <a name="step-2-configure-the-reuters-eikon-connector-on-the-globanet-merge1-site"></a>步骤2：在 Globanet Merge1 网站上配置 Reuters Eikon 连接器
 
-第二步是在 Merge1 网站上配置 Reuters Eikon 连接器。 有关如何在 Globanet Merge1 网站中配置 Reuters Eikon 连接器的信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf)。
+第二步是在 Merge1 网站上配置 Reuters Eikon 连接器。 有关如何在 Globanet Merge1 网站上配置 Reuters Eikon 连接器的信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Reuters%20Eikon%20User%20Guide%20.pdf)。
 
 单击 " **保存" & "完成**" 后，将转回到 Microsoft 365 合规性中心，转到 "连接器向导" 中的 " **用户映射** " 页。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步骤3：映射用户并完成连接器设置
 
-若要映射用户并完成 Microsoft 365 合规性中心中设置的连接器，请按照以下步骤操作：
+若要映射用户并完成 Microsoft 365 合规性中心中的连接器设置，请按照以下步骤操作：
 
 1. 在 "将 **外部用户映射到 Microsoft 365 用户** " 页上，启用自动用户映射。 Reuters Eikon 项目包含一个名为 " *Email*" 的属性，其中包含组织中的用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户相关联，则会将这些项目导入该用户的邮箱中。
 

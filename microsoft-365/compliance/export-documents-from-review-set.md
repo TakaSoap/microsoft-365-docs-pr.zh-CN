@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 了解如何从审阅集中选择和导出或下载内容以进行演示文稿或外部审阅。
+description: 了解如何从审阅集中选择和导出内容以进行演示文稿或外部审阅。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034090"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399170"
 ---
 # <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
 
-您可以通过以下方法之一从审阅集导出演示文稿或外部审阅的内容：
+导出允许用户自定义下载包中包含的内容。 导出工具提供了具有以下设置的配置页：
 
-- [下载文档](#download-documents-from-a-review-set)
- 
-- [导出文档](#export-documents-from-a-review-set)
+![用于从审阅集中导出项目的选项](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a>从审阅集中下载文档
+## <a name="export-options"></a>导出选项
 
-下载提供了一种从以本机格式的审阅集下载内容的简单方法。 它利用浏览器的数据传输功能，以便在下载准备就绪后会出现浏览器提示。 使用此方法下载的文件将压缩到一个容器文件中，并将成为项目级文件。 这意味着，如果选择了附件，您将自动收到包含附件的电子邮件。 同样，如果您选择嵌入在 word 文档中的 excel 电子表格，您将收到嵌入 excel 电子表格的 word 文档。 已下载项目将保留上次修改日期，可将其视为文件属性。
+- 导出名称：导出作业的名称。
 
-若要从审阅集中下载内容，请先选择要下载的文件，然后选择 "操作" 菜单下的 "下载"。
+- 说明：用于添加说明的自由文本字段。
 
-![自动生成的计算机说明的屏幕截图](../media/eDiscoDownload.png)
+- 导出这些文档：
 
-## <a name="export-documents-from-a-review-set"></a>从审阅集中导出文档
+  - 仅选定文档-仅导出当前选定的文档。
+  
+  - 审阅集内的所有文档-导出审阅集中的所有文档
 
-导出允许用户自定义下载包中包含的内容。 它提供具有以下设置的配置页：
+- 元数据
+  
+  - 加载文件-此文件包含每个文件的元数据。 有关包含哪些字段的详细信息，请参阅 [高级电子数据展示中的文档元数据字段](document-metadata-fields-in-Advanced-eDiscovery.md) 。 此文件通常可由第三方电子数据展示工具引入。
+  
+  - 标记-如果选择此选项，则会将标记信息包含在加载文件中。
 
-### <a name="metadata-file"></a>元数据文件
-
-可以将其视为包含与导出文件相关联的元数据的 "加载文件"。 有关元数据文件中可用的导出域的列表，请参阅[高级电子数据展示中的文档元数据字段](document-metadata-fields-in-Advanced-eDiscovery.md)。 此文件通常可由第三方工具引入。
-
-### <a name="tag-data"></a>标记数据
-
-此内容将作为字段添加到元数据文件中。 它包含在审阅集中应用的所有标记信息。
-
-### <a name="text-files"></a>文本文件
-
-可以为从评审集导出的每个文件生成文本文件。 通常，服务合作伙伴将这些文件作为 ingesting 数据的一部分由第三方工具提供。
-
-### <a name="redacted-files"></a>编辑文件
-
-如果在审阅过程中生成编辑 PDF 文件，则这些文件在导出过程中可用。 您可以决定是仅导出本机文件，还是将需要密文的本机文件替换为包含实际密文的 PDF 文件。
-
-### <a name="export-location"></a>导出位置
-
-导出的内容将传递给 Microsoft 提供的 Azure blob，如果导出时提供了详细信息，则可以使用客户的 blob。
-
-### <a name="export-structure"></a>导出结构
-
-从审阅集导出内容时，将按以下结构组织内容。
-
-  - 根文件夹–下载 ID
+- 内容
+  
+  - 本机文件-选中此复选框可包含本机文件。
+  
+  - 对话选项
     
-      - Export\_load\_file .csv = metadata 文件
+    - 会话文件-导出会重建聊天消息。 此格式以类似于用户在本机应用程序中看到的内容的形式显示对话。
     
-      - 摘要 .txt = 带有导出统计信息的摘要文件
+    - 单个聊天邮件-在 Microsoft 365 中存储原始对话文件时将其导出。
+
+- 选项
+
+  - 文本文件-包括已提取的本机文件的文本版本。
+  
+  - 将编辑 natives 替换为转换后的 Pdf-如果在审阅过程中生成编辑 PDF 文件，则可使用这些文件进行导出。 您可以选择仅导出编辑 (的本机文件，而不选择此选项) 也可以选择此选项导出包含实际密文的 PDF 文件。
+
+-  (导出内容的输出选项可通过 web 浏览器直接下载，也可发送到 Azure 存储帐户。 前两个选项启用直接下载。 ) 
+  
+  - 如果可能) 文件以用户的本机应用程序中显示的原始目录结构的格式导出，则会将松散文件和 Pst (电子邮件添加到 Pst。  有关详细信息，请参阅 " [松散文件和 PST 导出结构](#loose-files-and-pst-export-structure) " 部分。
+  
+  - 紧缩目录结构-导出文件并将其包含在下载内容中。
+  
+  - 导出到 Azure 存储帐户的紧缩目录结构-文件将导出到您的组织的 Azure 存储 accouunt。
+
+## <a name="loose-files-and-pst-export-structure"></a>松散文件和 PST 导出结构
+
+如果选择此导出选项，则导出的内容将按以下结构进行组织：
+
+- 根文件夹–命名 ExportName.zip 中的此文件夹
+  
+  - Export_load_file.csv 元数据文件。
+  
+  - Summary.csv-也包含导出统计信息的摘要文件。
+  
+  - Exchange-此文件夹包含本机文件格式的 Exchange 中的所有内容。 如果选择 "将 **编辑 Natives 替换为转换的 pdf** " 选项，Natives 文件将被替换为编辑 pdf。
+  
+  - SharePoint = 此文件夹以本机文件格式包含来自 SharePoint 的所有本机内容。 如果选择 "将 **编辑 Natives 替换为转换的 pdf** " 选项，Natives 文件将被替换为编辑 pdf。
+
+## <a name="condensed-directory-structure"></a>紧缩目录结构
+
+- 根文件夹-此文件夹命名为 ExportName.zip
+  
+  - Export_load_file.csv 元数据文件。
+  
+  - Summary.txt-也包含导出统计信息的摘要文件。
+  
+  - Input_or_native_files-此文件夹包含导出的所有本机文件。 如果您导出编辑 PDF 文件，则它们不会放入 PST 文件中。 相反，它们将被添加到一个单独的文件夹中。
+  
+  - Error_files-此文件夹包含以下错误文件（如果导出中包含这些文件）：
     
-      - 输入\_或本机\_文件 = 包含所有本机文件
+    - ExtractionError. 一个 CSV 文件，其中包含未从父文件正确提取的任何可用的文件元数据。
     
-      - 错误\_文件 = 包含导出中包含的任何错误文件
-        
-          - ExtractionError –包含未从父文件正确提取的任何可用文件元数据的 csv
-        
-          - ProcessingError –包含处理错误的内容。 此内容是项目级别意味着，如果附件遇到处理错误，则包含附件的电子邮件将包含在此文件夹中。
-    
-      - 提取\_的\_文本文件 = 包含处理过程中生成的所有提取的文本文件。
+    - ProcessingError –此文件包含有处理错误的文档列表。 此内容是项目级的，这意味着如果附件导致处理错误，则包含附件的电子邮件将包含在此文件夹中。
+  
+  - Extracted_text_files-此文件夹包含在处理过程中生成的所有提取的文本文件。
+
+> [!NOTE]
+> 导出作业在案例的生命周期内保留，并且在不删除该事例的情况下可进行下载。

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将数据从 Globanet 时差电子数据展示导入 Microsoft 365。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 2d24f2784b07446f529057d9abfc05cf2688be4a
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 86a6595ae12201e5083b524661ef53dba54f8cf3
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361969"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399303"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>设置连接器以存档可宽延时间的电子数据展示数据 (预览) 
 
@@ -64,7 +64,7 @@ ms.locfileid: "47361969"
 
 ## <a name="step-2-configure-slack-ediscovery"></a>步骤2：配置宽延时间电子数据展示
 
-第二步是在 Merge1 网站上配置可宽延时间电子数据展示连接器。 有关如何在 Globanet Merge1 网站中配置可宽延电子数据展示连接器的详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)。
+第二步是在 Merge1 网站上配置可宽延时间电子数据展示连接器。 有关如何在 Globanet Merge1 网站上配置可宽延电子数据展示连接器的详细信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)。
 
 单击 " **保存" & "完成**" 后，将转回到 Microsoft 365 合规性中心，转到 "连接器向导" 中的 " **用户映射** " 页。
 
