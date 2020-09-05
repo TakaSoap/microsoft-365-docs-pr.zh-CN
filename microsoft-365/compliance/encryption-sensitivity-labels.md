@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229432"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334855"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -211,9 +211,9 @@ ms.locfileid: "45229432"
 ### <a name="double-key-encryption"></a>双密钥加密
 
 > [!NOTE]
-> 此功能目前在公共预览版中推出。 有关详细信息，请参阅[公布 Microsoft 365 双密钥加密的公共预览版](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
+> 此功能目前为公共预览版。 有关详细信息，请参阅[公布 Microsoft 365 双密钥加密的公共预览版](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
 
-只有配置了双密钥加密服务，并且需要为应用了此标签的文档和电子邮件使用此双密钥加密后，才可选择此选项。
+只有配置了双密钥加密服务，并且需要为应用了此标签的文件和电子邮件使用此双密钥加密后，才可选择此选项。
 
 了解更多信息、先决条件、以及配置说明，请参阅[双密钥加密 (DKE)](double-key-encryption.md)。
 
