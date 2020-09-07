@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307791"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357784"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -33,6 +33,9 @@ ms.locfileid: "47307791"
 - 与 Microsoft 365 组连接的团队网站的隐私（公共或专用）
 - 外部用户访问
 - 非托管设备的访问
+
+> [!IMPORTANT]
+> “**非托管设备的访问**”设置可与 SharePoint 功能配合使用，从而[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 必须为租户配置此从属 SharePoint 功能，才能使用配置了此设置的敏感度标签。 下面的说明中提供了其他信息。
 
 如果你将此敏感度标签应用于受支持的容器，此标签会自动向连接的网站或组应用分类和保护设置。
 
@@ -83,7 +86,13 @@ ms.locfileid: "47307791"
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未托管的设备**：对于[未托管的设备](/sharepoint/control-access-from-unmanaged-devices)，允许完全访问、仅限 Web 的访问或完全阻止访问。 如果你已在租户级别或针对特定网站配置了此设置，则只有当你在此处指定的设置限制性更强时才会应用。
+- **未管理的设备**：对于此选项，还必须配置使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关说明，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项相当于[阻止或限制对特定 SharePoint 网站或 OneDrive 的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)。
+    
+    如果未配置此从属 SharePoint 功能，则在此处指定的选项将不起作用。 此外，如果限制性低于在租户级别配置的设置，则也不会起作用。 请选择与租户级设置的限制性相同或更强的标签设置。
+    
+    例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
+    
+    由于可以独立于标签配置来配置该 SharePoint 功能，因此在敏感度标签向导中不会检查依赖项是否已就位。
 
 ![网站和组设置选项卡](../media/edit-sensitivity-label-site-group2.png)
 
@@ -272,7 +281,7 @@ ms.locfileid: "47307791"
   - Yammer
   - Planner
   - Project
-  - PowerBI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>经典 Azure AD 组分类
 

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898124"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357298"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -37,13 +37,33 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 ![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| 关键功能 | 描述 |
-|:-------|:-----|
-| 已连接 | 远程员工能够随时随地访问： <ul><li>Microsoft 365 订阅中基于云的服务和数据。 </li><li>组织资源，例如由本地应用程序数据中心提供的资源。</li></ul> |
-| 安全 | 使用 Microsoft 365 和 Windows 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。 |
-| 托管 | 可以使用安全设置、允许的应用以及需要与系统运行状况保持一致的方式，从云中管理远程员工的设备。 |
-| 协作高效 | 远程员工可采用与本地相媲美的高协作方式实现高效工作，方式如下： <ul><li>通过 Teams 进行的联机会议和聊天会话。 </li><li>基于云的文件存储的共享工作区，可通过 SharePoint 和 OneDrive 实现全球可访问性和实时协作。 </li><li>用于划分工作并完成任务的共享任务和工作流。 </li></ul> |
-|||
+观看此视频以简要了解部署流程。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+此解决方案提供了以下关键功能。
+
+- 已连接
+
+  远程员工能够随时随地访问： 
+
+  - Microsoft 365 订阅中基于云的服务和数据。 
+  - 组织资源，例如由本地应用程序数据中心提供的资源。
+
+- 安全
+
+  使用 Microsoft 365 和 Windows 10 的多重身份验证 (MFA) 和内置安全功能来保护登录，防止恶意软件、恶意攻击和数据丢失。
+
+- 托管
+
+  可以使用安全设置、允许的应用以及需要与系统运行状况保持一致的方式，从云中管理远程员工的设备。
+
+- 协作高效
+
+  远程员工可采用与本地相媲美的高协作方式实现高效工作，方式如下：
+  - 通过 Teams 进行的联机会议和聊天会话。 
+  - 基于云的文件存储的共享工作区，可通过 SharePoint 和 OneDrive 实现全球可访问性和实时协作。
+  - 用于划分工作并完成任务的共享任务和工作流。 
 
 为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
