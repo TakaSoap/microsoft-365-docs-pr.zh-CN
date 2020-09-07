@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 67bd00a83314590d1ca1ab71c32d5a325686dc46
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514775"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399219"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>终结点数据丢失防护（预览）入门
 
@@ -99,17 +99,17 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
 2. 打开合规中心设置页面，然后选择“**载入设备**”。 
 
-![启用设备管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+   ![启用设备管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-> [!NOTE]
-> 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
+   > [!NOTE]
+   > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
 
 3. 选择“**设备管理**”，以打开“**设备**”列表。 在载入设备之前，此列表将为空。
 4. 选择“**载入**”以开始载入流程。
 5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后**下载程序包**。
 
-![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-1. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 MDATP 程序：
+   ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 MDATP 程序：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -152,7 +152,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 ## <a name="next-steps"></a>后续步骤
 现在，你已载入设备，并且可以在“活动资源管理器”中查看活动数据，那么就可以继续下一步，在其中创建保护敏感项目的 DLP 策略。
 
-1) [使用终结点数据丢失防护（预览）](endpoint-dlp-using.md)
+- [使用终结点数据丢失防护（预览）](endpoint-dlp-using.md)
 
 ## <a name="see-also"></a>另请参阅
 

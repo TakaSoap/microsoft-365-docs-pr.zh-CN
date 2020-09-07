@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126875"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399209"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -108,11 +108,11 @@ ms.locfileid: "45126875"
 
 创建或编辑保留标签时的文件计划描述符示例：
 
-![文件计划描述符](../media/file-plan-descriptors.png)
+![创建或编辑保留标签时的文件计划描述符](../media/file-plan-descriptors.png)
 
 文件计划描述符列示例视图：
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![文件计划描述符列](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>导出所有保留标签以分析或启用脱机评审
 
