@@ -147,7 +147,7 @@
       items:
         - name: 了解加密
           href: encryption.md
-        - name: 双重密钥加密（预览）
+        - name: 双密钥加密（预览）
           href: double-key-encryption.md
         - name: Office 365 服务加密
           href: office-365-service-encryption.md
