@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334855"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399261"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
 
@@ -170,7 +170,7 @@ ms.locfileid: "47334855"
 
 最佳做法是使用组，而不是使用用户。此策略可使你的配置更为简单。
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>有关**添加任何经过身份验证的用户**的要求和限制
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>有关“添加任何经过身份验证的用户”的要求和限制
 
 此设置不会限制谁可访问标签加密的内容，但仍会加密内容并向你提供用来限制内容使用方式（权限）和访问方式（过期和脱机访问）的选项。 但是，打开加密内容的应用程序必须能够支持正在使用的身份验证。 由此，联合社交提供商（如 Google）和一次性密码身份验证仅适用于电子邮件，且仅在你使用 Exchange Online 时才适用。 Microsoft 帐户可与 Office 365 应用和 [Azure 信息保护查看器](https://portal.azurerms.com/#/download)一起使用。
 
@@ -213,7 +213,7 @@ ms.locfileid: "47334855"
 > [!NOTE]
 > 此功能目前为公共预览版。 有关详细信息，请参阅[公布 Microsoft 365 双密钥加密的公共预览版](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
 
-只有配置了双密钥加密服务，并且需要为应用了此标签的文件和电子邮件使用此双密钥加密后，才可选择此选项。
+只有配置了双密钥加密服务，并且需要为应用了此标签的文件使用此双密钥加密后，才可选择此选项。
 
 了解更多信息、先决条件、以及配置说明，请参阅[双密钥加密 (DKE)](double-key-encryption.md)。
 

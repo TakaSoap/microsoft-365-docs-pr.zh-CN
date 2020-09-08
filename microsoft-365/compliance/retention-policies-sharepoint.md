@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315785"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394699"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -98,4 +98,9 @@ ms.locfileid: "47315785"
 
 ## <a name="configuration-guidance"></a>配置指南
 
-如果你已准备好在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
+
+如果你已准备好配置 Exchange 的保留策略或保留标签，请参阅以下说明：
+- [创建和配置保留策略](create-retention-policies.md)
+- [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
+- [自动向内容应用保留标签](apply-retention-labels-automatically.md)
