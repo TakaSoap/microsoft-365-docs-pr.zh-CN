@@ -4,7 +4,7 @@
   items:
     - name: 实现合规性入门的快速任务
       href: compliance-quick-tasks.md
-    - name: 合规中心的新增功能
+    - name: Microsoft 365 合规中心更新信息
       href: whats-new.md
     - name: Microsoft 365 合规中心
       href: microsoft-365-compliance-center.md
@@ -548,10 +548,10 @@
         - name: 导出事例数据
           href: exporting-data-ediscover20.md
           items:
+            - name: 从审阅集中下载文档
+              href: download-documents-from-review-set.md
             - name: 从审阅集中导出文档
               href: export-documents-from-review-set.md
-            - name: 下载导出作业
-              href: download-export-jobs.md
         - name: 管理作业
           href: managing-jobs-ediscovery20.md
         - name: 配置事例设置
