@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文介绍如何开始在 Microsoft 365 中使用高级电子数据展示。 完成几个快速的步骤之后，高级电子数据展示工具即可供使用。 第一步是创建一个事例，然后开始使用高级电子数据展示功能和功能。
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357502"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405413"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>高级电子数据展示入门
 
@@ -141,11 +141,11 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
    - 如果保管人的 Exchange 邮箱、OneDrive 帐户以及保管人所属的任何 Microsoft 团队或 Yammer 组中的数据，都可以在案例中 "标记" 为 "custodial" 数据。
   
-   - 由名为 " *高级索引*) " 的进程对保管人数据进行重新编制索引 (。 这有助于在下一步中优化搜索。
+   - 保管人数据由名为 " *高级索引*) " 的过程 (编制索引。 这有助于在下一步中优化搜索。
   
    - 您可以对保管人数据设置保留。 这将保留在调查过程中可能与事例相关的数据。
   
-   - 可以将其他数据源与保管人 (相关联。例如，可以将 SharePoint 网站或 Microsoft 365 组与保管人) 相关联，以便可以对这些数据进行重新编制索引、置于保留和搜索，就像在保管人的邮箱或 OneDrive 帐户中的数据一样。
+   - 您可以将其他数据源与保管人 (相关联。例如，可以将 SharePoint 网站或 Microsoft 365 组与保管人) 相关联，以便可以编制索引、保留和搜索这些数据，就像保管人的邮箱或 OneDrive 帐户中的数据一样。
 
    - 您可以使用高级电子数据展示中的 [通信工作流](managing-custodian-communications.md) 向保管人发送合法保留通知。
 
@@ -157,7 +157,7 @@ Microsoft 365 中的高级电子数据展示提供了一种端到端工作流，
 
    - 修订查询并重新运行搜索。
 
-3. **[将数据添加到审阅集](add-data-to-review-set.md)**。 配置并验证搜索是否返回所需数据之后，下一步是将搜索结果添加到审阅集。 将数据添加到审阅集时，会将项目从其原始位置复制到安全的 Azure 存储位置。 再次对数据重新编制索引，以便在审阅和分析评审集中的项时对其进行全面和快速的搜索优化。 此外，还可以 [将非 Office 365 数据添加到审阅集中](load-non-office-365-data-into-a-review-set.md)。
+3. **[将数据添加到审阅集](add-data-to-review-set.md)**。 配置并验证搜索是否返回所需数据之后，下一步是将搜索结果添加到审阅集。 将数据添加到审阅集时，会将项目从其原始位置复制到安全的 Azure 存储位置。 在审阅和分析审阅集中的项目时，数据将再次编制索引，以对其进行全面和快速的搜索优化。 此外，还可以 [将非 Office 365 数据添加到审阅集中](load-non-office-365-data-into-a-review-set.md)。
 
    此外，还有一种特殊的审阅集，可向其添加数据，称为 *对话审阅集*。 这些类型的审查集提供了会话重建功能，用于重构、查看和导出像 Microsoft 团队中的对话对话。 有关详细信息，请参阅 [在高级电子数据展示中查看对话](conversation-review-sets.md)。
 

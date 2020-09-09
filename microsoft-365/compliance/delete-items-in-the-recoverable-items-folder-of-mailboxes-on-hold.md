@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 了解管理员如何删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于法定保留中也是如此。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321959"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405463"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>删除保留状态云邮箱的“可恢复的项目”文件夹中的项目
 
@@ -288,11 +288,11 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
    - **DiscoveryHolds**：包含已被电子数据展示保留或保留策略保留的硬删除项目。 此子文件夹对最终用户不可见。
 
-   - **SubstrateHolds**：包含来自团队和其他基于云的应用程序的硬删除项目，这些应用已被保留策略或其他类型的保留保留。此子文件夹对最终用户不可见。
+   - **SubstrateHolds**：包含来自团队和其他基于云的应用程序的硬删除项目，这些应用已被保留策略或其他类型的保留保留。 此子文件夹对最终用户不可见。
 
 3. 在安全 & 合规中心 PowerShell) 中使用 **new-compliancesearch** cmdlet (，或使用合规性中心中的内容搜索工具创建从目标用户的 "可恢复的项目" 文件夹中返回项目的内容搜索。 为此，您可以在搜索查询中包括要搜索的所有子文件夹的 FolderId。 例如，以下查询将返回 "清除" 和 "eDiscoveryHolds" 子文件夹中的所有邮件：
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > 运行上一个命令时，每个邮箱 (最多可以删除10个项目) 。 这意味着，您可能需要多次运行 `New-ComplianceSearchAction -Purge` 命令以删除要在 "可恢复的项目" 文件夹中删除的项目。
+5. 运行上一个命令时，每个邮箱最多可以删除10个项目。 这意味着，您可能需要多次运行 `New-ComplianceSearchAction -Purge` 命令以删除要在 "可恢复的项目" 文件夹中删除的所有项目。 若要删除其他项目，首先必须删除以前的合规性搜索清除操作。 可以通过运行 cmdlet 来执行此操作 `Remove-ComplianceSearchAction` 。 例如，若要删除在上一步中运行的清除操作，请运行以下命令：
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   执行此操作后，您可以创建新的合规性搜索清除操作以删除更多项目。 在创建新的清除操作之前，必须删除每个清除操作。
+
+   若要获取合规性搜索操作的列表，可以运行 `Get-ComplianceSearchAction` cmdlet。 清除操作通过 `_Purge` 追加到搜索名称来标识。
 
 ### <a name="verify-that-items-were-deleted"></a>验证项目是否已被删除
 

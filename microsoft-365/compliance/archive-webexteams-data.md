@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置连接器，以便在 Microsoft 365 中的 Globanet 的 Webex 团队连接器中导入和存档数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 65a0f6eb6e3b7d3e7147cc3eaf96212d75d687c0
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399396"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405441"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>设置连接器以存档 Webex 团队数据 (预览) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "47399396"
 
 在将 Webex 团队数据存储在用户邮箱中之后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签，以及通信合规性。 使用 Webex 团队连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
-## <a name="overview-of-archiving-webex-teams"></a>存档 Webex 团队概述
+## <a name="overview-of-archiving-webex-teams-data"></a>存档 Webex 团队数据概述
 
 以下概述介绍了使用连接器在 Microsoft 365 中存档 Webex 团队数据的过程。
 
@@ -42,7 +42,7 @@ ms.locfileid: "47399396"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 通过接受 Webex 团队连接器的条款和条件创建 Globanet Merge1 帐户。 若要执行此操作，请联系 [Globanet 客户支持](https://globanet.com/contact-us)。 当您在步骤1中创建连接器时，需要登录到此帐户。
+- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要执行此操作，请联系 [Globanet 客户支持](https://globanet.com/ms-connectors-contact)。 当您在步骤1中创建连接器时，需要登录到此帐户。
 
 - 在中创建一个应用程序 [https://developer.webex.com/](https://developer.webex.com) 以从 Webex 团队帐户中获取数据。 有关创建应用程序的分步说明，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置连接器以将来自 Facebook 的工作区中的数据导入和存档（存档在 Globanet 的 Merge1 网站上）到 Microsoft 365。 设置连接器时，需要使用 Globanet 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399129"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405483"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>设置连接器以存档来自 Facebook 数据的工作区 (预览) 
 
@@ -42,7 +42,7 @@ ms.locfileid: "47399129"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 通过接受来自 Facebook 连接器的工作区的条款和条件，创建 Merge1 帐户。 在这里，你将需要联系 [Globanet 客户支持](https://globanet.com/contact-us/)部门。 当您在步骤1中创建连接器时，需要登录到此帐户。
+- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要执行此操作，请联系 [Globanet 客户支持](https://globanet.com/ms-connectors-contact)。 当您在步骤1中创建连接器时，需要登录到此帐户。
 
 - 在中创建自定义集成， https://my.workplace.com/work/admin/apps/ 以通过 api 从工作区检索数据，以实现遵从性和 eDiscovery 目的。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将数据从 Globanet Zoom 会议导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6b2f5f0b61eb2d569ad49d8f58c7e03d11cdbca0
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399139"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405493"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>设置连接器以存档缩放会议数据 (预览) 
 
@@ -42,7 +42,7 @@ ms.locfileid: "47399139"
 
 ## <a name="before-you-begin"></a>准备工作
 
-- 通过接受可宽延电子数据展示连接器的条款和条件创建 Globanet Merge1 帐户。 若要执行此操作，请联系 [Globanet 客户支持](https://globanet.com/contact-us)。 当您在步骤1中创建连接器时，需要登录到此帐户。
+- 为 Microsoft 连接器创建 Globanet Merge1 帐户。 若要执行此操作，请联系 [Globanet 客户支持](https://globanet.com/ms-connectors-contact)。 当您在步骤1中创建连接器时，需要登录到此帐户。
 
 - 获取组织的缩放企业帐户或缩放企业帐户的用户名和密码。 配置缩放会议连接器时，您需要登录到步骤2中的此帐户。
 
