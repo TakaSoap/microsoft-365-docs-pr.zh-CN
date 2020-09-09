@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Office 365、Microsoft 365 和服务保证中的审核和报告功能的概述。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11dbf29faf028ec9ed0274c806fc8c8979a6f1fd
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 297eba449515eeadf462d4a6d09e585f1da6209d
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332576"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407946"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 云服务中的审核和报告
 
@@ -37,7 +37,7 @@ Microsoft 云服务包括几种审核和报告功能，可用于跟踪租户内�
 
 - **警报：** 使你能够使用 [云应用安全](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)管理警报、查看与安全相关的警报以及管理高级警报。
 - **权限：** 使您能够将合规性管理员、电子数据展示管理器等 [权限分配](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) 给组织中的人员，以便他们可以在这些中心执行任务。 您可以为每个中心的大多数功能分配权限，但必须使用 Exchange 管理中心和 SharePoint 管理中心配置其他权限。
-- **威胁管理：** 使您能够创建和应用使用 [Microsoft 365 移动设备管理](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)的设备管理策略，为您的组织设置 [数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) 策略，配置电子邮件筛选、反恶意软件、域密钥识别邮件 (DKIM) 、安全附件、安全链接和 OAuth 应用。
+- **威胁管理：** 使您能够使用 [Microsoft 365 的基本移动性和安全性](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)创建和应用设备管理策略，以设置组织的 [数据丢失防护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) 策略，配置电子邮件筛选、反恶意软件、域密钥识别邮件 (DKIM) 、安全附件、安全链接和 OAuth 应用。
 - **数据治理：** 使您能够将 [其他系统中的电子邮件或 SharePoint 数据导入 Microsoft 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84)， [配置存档邮箱](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)，并为电子邮件和组织中的其他内容设置 [保留策略](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) 。
 - **搜索 & 调查：** 提供 [内容搜索](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)、 [审核日志](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)、隔离和 [电子数据展示案例管理](https://support.office.com/article/Manage-eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-edea80d6-20a7-40fb-b8c4-5e8c8395f6da) 工具，以快速深入了解 Exchange online 邮箱、组和公用文件夹、SharePoint online 和 OneDrive for business 中的活动。
 - **报告：** 使您能够快速访问 SharePoint Online、OneDrive for Business、Exchange Online 和 Azure AD 的 [报告](https://support.office.com/article/Reports-in-the-Office-365-Security-Compliance-Center-7acd33ce-1ec8-49fb-b625-43bac7b58c5a) 。

@@ -26,18 +26,18 @@ ms.locfileid: "47300430"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](custom-sensitive-info-types.md) 用于帮助标识敏感项目，以便防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
+[自定义敏感信息类型](custom-sensitive-info-types.md) 用于帮助标识敏感项目，以防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
 
 - 模式
--  *员工*、 *徽章*或 *ID 之类的关键字证据*
-- 特定模式中与证据的字符相似度
+- 如 *员工*、 *徽章*或 *ID 等关键字证据*
+- 字符近似特定模式的证据
 - 可信度
 
  此类自定义敏感信息类型可满足许多组织的业务需求。
 
-但是，如果你需要自定义敏感信息类型（它使用精确数据值而不是与泛型模式匹配），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
+但是，如果你需要使用精确数据值的自定义敏感信息类型（而非基于泛型模式的匹配项），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
-- 动态并且可刷新
+- 动态并且可刷新的
 - 更具可伸缩性
 - 导致更少的误报
 - 处理结构化敏感数据
@@ -96,7 +96,7 @@ ms.locfileid: "47300430"
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：设置基于 EDM 的分类
 
-设置和配置基于 EDM 的分类涉及：
+设置和配置基于 EDM 的分类包括：
 
 1. [保存 .csv 格式的敏感数据](#save-sensitive-data-in-csv-format)
 2. [定义你的敏感信息数据库架构](#define-the-schema-for-your-database-of-sensitive-information)
@@ -110,7 +110,7 @@ ms.locfileid: "47300430"
       - 每个数据源最多 32 列（字段）
       - 最多 5 个列（字段）标记为可搜索
 
-2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、 *MRN*、 *LastName*、 *FirstName* *SSN*等列。
+2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、 *MRN*、 *LastName*、 *FirstName* 和  *SSN* 等列。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
@@ -304,7 +304,7 @@ ms.locfileid: "47300430"
 
 1. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的步骤连接到安全与合规中心。
 
-2. 运行下列 PowerShell cmdlet，将“patient records”的数据存储名称替换为要删除的名称：
+2. 运行下列 PowerShell cmdlet，用“patient records”的数据存储名称替换要删除的名称：
 
       ```powershell
       Remove-DlpEdmSchema -Identity patientrecords
@@ -385,23 +385,23 @@ just copy SALT over in a secure fashion
 
 ### <a name="part-2-hash-and-upload-the-sensitive-data"></a>第 2 部分：为敏感数据创建哈希并上传
 
-在此阶段，你将设置自定义安全组和用户帐户，并设置 EDM 上传代理工具。 然后，使用此工具为敏感数据创建带 salt 值的哈希并上传。
+在此阶段，你将设置自定义安全组和用户帐户，并设置 EDM 上传代理工具。 然后，使用此工具为敏感数据创建带随机混淆值的哈希并上传。
 
-可使用一台计算机完成哈希创建和上传，或者可将哈希创建步骤与上传步骤分离，以实现更高的安全性。
+可使用一台计算机完成哈希创建和上传，也可以将哈希创建步骤与上传步骤分离，以实现更高的安全性。
 
-如果想要在一台计算机上创建哈希并上传，则需从可直接连接到 Microsoft 365 租户的计算机中执行此操作。 这要求计算机上具备创建哈希所需的明文敏感数据文件。
+如果想要在一台计算机上创建哈希并上传，则需要在可直接连接到 Microsoft 365 租户的计算机上执行此操作。 这要求计算机上需要具备明文敏感数据文件以便创建哈希。
 
-如果不希望公开明文敏感数据文件，可在安全位置的计算机上为其创建哈希，然后将哈希文件和 salt 文件复制到可直接连接到 Microsoft 365 租户进行上传的计算机。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。 
+如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。 
 
 #### <a name="prerequisites"></a>先决条件
 
-- 在 **EDM\_DataUploaders** 安全组中添加一个 Microsoft 365 工作或学校帐户
+- 向 **EDM\_DataUploaders** 安全组中添加一个 Microsoft 365 工作或学校帐户
 - 准备一台使用.NET 版本 4.6.2 的 Windows 10 或 Windows Server 2016 计算机，用于运行 EDMUploadAgent
-- 用于上传的计算机上应含有针对以下内容的目录：
+- 用于上传的计算机上应含有以下内容的目录：
     -  EDMUploadAgent
     - 我们示例中使用的 csv 格式的敏感项目文件 **PatientRecords**
-    -  以及输出的哈希和 salt 文件
-    - 来自 **edm .xml** 文件的数据存储名称，在本示例中使用 `PatientRecords`
+    -  以及输出的哈希和随机混淆值文件
+    - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
@@ -424,12 +424,12 @@ just copy SALT over in a secure fashion
 
 1. 创建 EDMUploadAgent 要使用的工作目录。 例如，**C:\EDM\Data**。 将 **PatientRecords .csv** 文件放入该目录中。
 
-2. 将订阅的相应 [EDM 上传代理](#links-to-edm-upload-agent-by-subscription-type) 下载并安装到步骤 1 创建的目录中。
+2. 下载并将适合你的订阅的 [EDM 上传代理](#links-to-edm-upload-agent-by-subscription-type)安装到步骤 1 创建的目录中。
 
 > [!NOTE]
-> 上述链接中的 EDMUploadAgent 已更新，可自动将 salt 值添加到哈希数据。 或者，你可以提供自己的 salt 值。 使用此版本后，你将不能使用 EDMUploadAgent 的先前版本。
+> 上述链接中的 EDMUploadAgent 已更新，可自动将随机混淆值添加到哈希数据。 或者，你可以提供自己的随机混淆值。 使用此版本后，你将不能使用 EDMUploadAgent 的先前版本。
 >
-> 每天只能使用 EDMUploadAgent 将数据上传到任何给定的数据存储空间两次。
+> 每天只能使用 EDMUploadAgent 上传数据到任何给定的数据存储空间两次。
 
 > [!TIP]
 > 要获取受支持命令参数的列表，请运行无代理参数。 例如“EdmUploadAgent.exe”。
@@ -438,7 +438,7 @@ just copy SALT over in a secure fashion
 
    `EdmUploadAgent.exe /Authorize`
 
-3. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取租户信息以建立连接。
+3. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
 4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
@@ -446,7 +446,7 @@ just copy SALT over in a secure fashion
 
 示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
 
-这会自动将随机生成的 salt 值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的 salt 值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为64个字符，并且只能包含 a-z 和 0-9。
+这会自动将随机生成的随机混淆值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
 5. 运行以下命令，检查“上传”状态：
 
@@ -454,7 +454,7 @@ just copy SALT over in a secure fashion
 
 示例：**EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
-查找状态 **"ProcessingInProgress"**。 每隔几分钟再次检查，直到状态更改为 **“已完成”**。 该状态完成后，即可使用 EDM 数据。
+在 **ProcessingInProgress** 中查找状态。 每隔几分钟再次检查，直到状态更改为“**已完成**”。 在状态为已完成后，即可使用 EDM 数据。
 
 #### <a name="separate-hash-and-upload"></a>将哈希与上传分开操作
 
@@ -468,11 +468,11 @@ just copy SALT over in a secure fashion
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**
 
-如果没有指定 "**/Salt <saltvalue>**" 选项，则将用输出含这些扩展名的哈希文件和 salt 文件：
+如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
 - .EdmHash
 - .EdmSalt
 
-2. 通过安全方式将这些文件复制到用于向租户上传敏感项目 csv 文件 (PatientRecords) 的计算机。
+2. 通过安全方式将这些文件复制到计算机，该计算机用于向租户上传敏感项目 csv 文件 (PatientRecords)。
 
 若要上传哈希数据，请在 Windows 命令提示符中运行以下命令：
 
@@ -500,7 +500,7 @@ just copy SALT over in a secure fashion
 
 #### <a name="refreshing-your-sensitive-information-database"></a>刷新敏感信息数据库
 
-你可以每天刷新敏感信息数据库，EDM 上传工具可以重新为敏感数据创建索引，然后重新上传索引数据。
+可以每天刷新敏感信息数据库，EDM 上传工具会重新为敏感数据创建索引，然后重新上传索引数据。
 
 1. 确定刷新敏感信息数据库的流程和频率（每天或每周）。
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Office 365 高级威胁防护 (Office 365 ATP) 中提供的反网络钓鱼策略。
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308191"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407924"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -106,21 +106,23 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
     - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
     - [在 Microsoft 365 中查找并以用户的形式发布隔离邮件](find-and-release-quarantined-messages-as-a-user.md)
 
-- **未经身份验证的发件人**：请参阅下一节中的说明。
+- **未经身份验证的发件人**：请参阅下一节中的信息。
 
 ### <a name="unauthenticated-sender"></a>未经身份验证发件人
 
 未经身份验证的发件人标识是反网络钓鱼策略和 ATP 反网络钓鱼策略中提供的 [欺骗设置](#spoof-settings) 的一部分，如上一节中所述。
 
-**未经身份验证的发件人**设置启用或禁用 Outlook 中未识别的发件人标识。 具体来说：
+**未经身份验证的发件人**设置启用或禁用 Outlook 中未经验证的发件人标识。 具体来说：
 
-- 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或[复合身份验证](email-validation-and-authentication.md#composite-authentication) **，** 则会将 ) 添加到发件人的照片中的 ( 问号。
+- 如果邮件未通过 SPF 或 DKIM 检查且邮件未通过 DMARC 或[复合身份验证](email-validation-and-authentication.md#composite-authentication) **，** 则会将 ) 添加到发件人的照片中的 ( 问号。 禁用未经身份验证的发件人标识可防止将问号添加到发件人的照片中。
 
-- 如果 "发件人" 地址中的域 (电子邮件客户) 端中显示的邮件发件人不同于 DKIM 签名中的域或**邮件的 "发**件人" 地址中的域，则会添加 via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) 。 有关这些地址的详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- 如果 "发件人" 地址中的域 (电子邮件客户) 端中显示的邮件发件人不同于 DKIM 签名中的域或**邮件的 "发**件人" 地址中的域，则会添加 via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) 。 有关这些地址的详细信息，请参阅 [电子邮件标准的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
-若要防止将这些标识符添加到特定发件人的邮件中，可以使用以下选项：
+  如果 "发件人" 地址中的域不同于 DKIM 签名中的域或邮件的 "发件人" 地址中的域，禁用未经身份验证的发件人标识将不会阻止添加 via 标记。
 
-- 允许发件人在欺骗智能策略中进行欺骗。 有关说明，请参阅 [在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+若要防止将问号或 via 标记添加到特定发件人的邮件中，可以使用以下选项：
+
+- 允许发件人在欺骗智能策略中进行欺骗。 当禁用未经身份验证的发件人标识时，此操作将阻止来自发件人的邮件中显示的 via 标记。 有关说明，请参阅 [在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 - 为发件人域[配置电子邮件身份验证](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
   

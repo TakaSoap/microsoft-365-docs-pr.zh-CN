@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 获取最新的基于硬件的隔离。 阻止目前和新兴攻击（如入侵或恶意链接）中断员工工作效率和企业安全性。
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867352"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405537"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Office 的应用程序防护 (公共预览版) 的管理员
 
@@ -33,7 +33,7 @@ ms.locfileid: "46867352"
 
 适用于 Office 的 Microsoft Defender 应用程序防护 (Office) 的应用程序防护可帮助防止不受信任的文件访问受信任的资源，从而使您的企业免受新的和新兴的攻击。 本文将指导管理员为 Office 的应用程序防护的预览设置设备。 它提供了有关系统要求和安装步骤的信息，以在设备上启用 Office 的应用程序防护。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬件要求
 
@@ -45,7 +45,7 @@ ms.locfileid: "46867352"
 
 * **Windows 10**： Windows 10 企业版，客户端内部版本 2004 (20H1) 内部版本19041
 * **Office**： Office Beta 频道内部版本 2008 16.0.13212 或更高版本
-* **更新包**： Windows 10 累积的每月安全更新 [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **更新包**： Windows 10 累积的每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 有关系统要求的详细信息，请参阅 [Microsoft Defender 应用程序防护的系统要求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要了解有关 Office 预览体验成员预览版的详细信息，请参阅 [部署 Office 预览体验成员内部版本](https://insider.office.com/business/deploy)入门。
 
@@ -56,28 +56,9 @@ ms.locfileid: "46867352"
 
 ### <a name="enable-application-guard-for-office"></a>启用 Office 应用程序防护
 
-1.  下载并安装 **Windows 10 累积的每月安全更新 KB4566782**。 
+1.  下载并安装 **Windows 10 累积的每月安全更新 KB4571756**。 
 
-2. 下载并安装 [**适用于 Office 功能启用包的应用程序防护**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi)。 此包在 " **计算机配置 \ 管理模板**" 下安装了名为 "KB4559004 Issue 001 Preview" 的组策略。 将此组策略设置为 " **启用**"。
-     ![本地组策略编辑器](../../media/ag01-deploy.png)
-
-     ![KB4559004 问题001预览](../../media/ag02-deploy.png)
-
-    您还可以直接设置以下注册表项： 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    然后，运行此 PowerShell 命令： 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  在 Windows 功能下选择 " **Microsoft Defender 应用程序防护** "，然后选择 **"确定"**。 启用应用程序防护功能将提示系统重新启动。 可以选择立即重新启动，也可以选择在步骤4之后重新启动。
+2.  在 Windows 功能下选择 " **Microsoft Defender 应用程序防护** "，然后选择 **"确定"**。 启用应用程序防护功能将提示系统重新启动。 可以选择立即重新启动，也可以选择在步骤3之后重新启动。
 
     ![显示 AG 的 "Windows 功能" 对话框](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ ms.locfileid: "46867352"
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  在 " **计算机配置 \\ 管理模板" \\ Windows 组件 " \\ Microsoft defender 应用程序防护**" 中，查找位于托管模式组策略中的 Microsoft defender 应用程序防护。 通过将 "选项" 下的值设置为 **2** 或 **3** ，然后选择 **"确定" 或 "** **应用**"，打开此策略。
+3.  在 " **计算机配置 \\ 管理模板" \\ Windows 组件 " \\ Microsoft defender 应用程序防护**" 中，查找位于托管模式组策略中的 Microsoft defender 应用程序防护。 通过将 "选项" 下的值设置为 **2** 或 **3** ，然后选择 **"确定" 或 "** **应用**"，打开此策略。
 
     ![在托管模式下打开 AG](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ ms.locfileid: "46867352"
     <br>值： **2**
 
 
-5.  重新启动系统。
+4.  重新启动系统。
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>设置诊断 & 反馈以发送完整数据
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 了解 Microsoft 365 中的各种报告功能，包括 Azure Active Directory 和 Exchange Online。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332732"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407912"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365 报告功能
 
@@ -71,9 +71,9 @@ Exchange Online 审核报告包含有关邮箱访问和管理员对 Exchange Onl
 
 ## <a name="device-compliance-reports"></a>设备合规性报告
 
-您可以使用 Microsoft 365 移动设备管理 (MDM) 管理和安全连接到订阅的移动设备。 用于访问工作电子邮件、日历、联系人和文档的移动设备在确保员工随时能够随时随地工作的过程中起着重要的作用。 保护组织的信息非常关键。 您可以使用 Microsoft 365 MDM 设置设备安全策略和访问规则。 如果丢失或被盗，还可以使用 Microsoft 365 MDM 来擦除移动设备。
+您可以使用 Microsoft 365 的基本移动性和安全性管理和保护连接到订阅的移动设备。 用于访问工作电子邮件、日历、联系人和文档的移动设备在确保员工随时能够随时随地工作的过程中起着重要的作用。 保护组织的信息非常关键。 使用 Microsoft 365 的基本移动性和安全性来设置设备安全策略和访问规则。 如果丢失或被盗，还可以使用 Microsoft 365 的基本移动性和安全性来擦除移动设备。
 
-MDM 合规性报告提供组织设置的用于保护访问 Microsoft 365 数据的移动设备的策略的概述。 此报告允许按符合性状态、报告的冲突、阻止的设备以及由于安全策略而擦除的设备来筛选设备。 有关详细信息，请参阅 [适用于 Microsoft 365 的移动设备管理概述](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)。
+基本移动和安全合规性报告提供组织设置的策略的概述，以保护访问 Microsoft 365 数据的移动设备。 此报告允许按符合性状态、报告的冲突、阻止的设备以及由于安全策略而擦除的设备来筛选设备。 有关详细信息，请参阅 [Microsoft 365 的基本移动性和安全性概述](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)。
 
 ## <a name="data-loss-prevention"></a>数据丢失防护
 
