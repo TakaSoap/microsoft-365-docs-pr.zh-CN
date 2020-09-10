@@ -3,7 +3,7 @@ title: 2002 年萨班尼斯-奥克斯莱法案 (Sarbanes-Oxley Act of 2002, SOX)
 description: 金融服务公司可以使用 Microsoft 合规性报告来满足对 Sarbanes-oxley 法案的遵从性要求。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,36 +14,36 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ca91606910c38664e74d650f750769121ea11957
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066305"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415350"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年萨班尼斯-奥克斯莱法案 (Sarbanes-Oxley Act of 2002, SOX)
 
 ## <a name="sox-overview"></a>SOX 概述
 
-2002的 Sarbanes-oxley 法案是由证券和汇率委员会（SEC）管理的美国联邦法律。 在其他指令中，SOX 要求上市公司提供适当的内部控制结构，以验证其财务声明是否准确反映了其财务结果。
+2002的 Sarbanes-oxley 法案是由证券交易委员会和 Exchange 佣金在 (SEC) 管理的美国联邦法律。 在其他指令中，SOX 要求上市公司提供适当的内部控制结构，以验证其财务声明是否准确反映了其财务结果。
 
 SEC 不定义或强加 SOX 认证过程。 相反，它为 it 控制的公司提供了广泛的准则，以确定如何遵守 SOX 报告要求。
 
 ## <a name="microsoft-and-sox"></a>Microsoft 和 SOX
 
-Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满足其自己的 SOX 合规性义务时，可以使用 Microsoft 从独立的审核公司收到的 SOC 1 类型2证明。 此认证适用于报告财务报告中的内部控制。
+Microsoft 云服务客户遵守 Sarbanes-oxley 法案 (SOX) 可以使用 Microsoft 从独立审核公司收到的 SOC 1 类型2证明，以满足其自己的 SOX 合规性义务。 此认证适用于报告财务报告中的内部控制。
 
-即使没有适用于云服务提供商的 SOX 认证或验证，Microsoft 也可以帮助客户满足其 SOX 义务。 例如，SOX 需要内部控制才能准备和审查财务报表，尤其是影响与财务报告相关的材料更改的准确性、完整性、有效性和公开披露的控制措施。 为了帮助公司，Microsoft 维护了 SOC 1 类型2证明，适用于跨一系列服务进行报告，这些控制可用于构建各种应用程序。 它基于美国认证的公共会计会计（AICPA）声明（针对认证约定18（SSAE 18）和国际标准保证合约）。 3402（ISAE 3402）。 （此认证取代了 SAS 70。）
+即使没有适用于云服务提供商的 SOX 认证或验证，Microsoft 也可以帮助客户满足其 SOX 义务。 例如，SOX 需要内部控制才能准备和审查财务报表，尤其是影响与财务报告相关的材料更改的准确性、完整性、有效性和公开披露的控制措施。 为了帮助公司，Microsoft 维护了 SOC 1 类型2证明，适用于跨一系列服务进行报告，这些控制可用于构建各种应用程序。 它基于美国认证公共会计会计会计会计会计会计会计 (AICPA) 声明有关认证约定 18 (SSAE 18) 和国际标准保证合约的标准。 3402 (ISAE 3402) 。  (此认证取代了 SAS 70。 ) 
 
 由第三方审核公司生成的审核报告，证明 Microsoft 控件的设计正确，在指定日期运行，并在指定的时间段内有效地运行。 客户可以查看报告以了解 Microsoft 控制目标和其控制措施的有效性，并获取对互补控件的访问权限。
 
-若要进一步帮助 Azure 客户端解决其 SOX 义务，Microsoft 已发布[针对 sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)。 本白皮书提供了迁移最佳实践，包括遵守 SOX 的含义，并在将与 SOX 相关的应用程序（Microsoft 财政部和 Microsoft 财务）迁移到 Azure 时进行内部体验。
+若要进一步帮助 Azure 客户端解决其 SOX 义务，Microsoft 已发布 [针对 sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)。 本白皮书提供了迁移最佳实践，包括遵守 SOX 的含义，并在将与 SOX 相关的应用程序（Microsoft 财政部和 Microsoft 财务）迁移到 Azure 时进行内部体验。
 
 在 Microsoft，我们将共同承担对客户的遵守情况。 我们提供了有关我们的合规性计划的具体信息，可以通过请求来自认证第三方的详细审核结果来进行验证。 但是，最终需要确定我们的服务是否符合适用于你的业务的特定法律和法规。 例如，存在与 SOX 相关的安全控制（如用户对云资源的访问权限），这是您的责任：您的组织必须在您的 SOX 合规性中制定这些控制措施的适当审核。
 
-了解有关如何在满足您的 SOX 合规性义务时使用 Microsoft Azure 合规性报告的详细信息：[下载针对 Sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)
+了解有关如何在满足您的 SOX 合规性义务时使用 Microsoft Azure 合规性报告的详细信息： [下载针对 Sarbanes-oxley 法案的 Azure 指南](https://aka.ms/Azure-SOX-Guide)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -53,13 +53,13 @@ Microsoft 云服务客户遵守 Sarbanes-oxley 法案（SOX）的要求，在满
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
-[SOC 1 类型 2](offering-SOC.md)报告：
+[SOC 1 类型 2](offering-SOC.md) 报告：
 
 - Azure 和 Power BI
 - Dynamics 365
 - Office 365
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **如何使用 Microsoft SOX 合规性以促进组织的合规流程？**
 

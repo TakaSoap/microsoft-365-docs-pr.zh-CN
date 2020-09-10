@@ -3,7 +3,7 @@ title: ENISA 信息保障框架
 description: Microsoft 符合基于 CSA STAR 自我评估的 ENISA 信息保障框架的风险评估工具。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cab73521628a17704221ffa8e41fd2822cb9e97e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 513a6e3576c8d12f363780764df1f053821c2816
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601949"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416038"
 ---
 # <a name="enisa-information-assurance-framework"></a>ENISA 信息保障框架
 

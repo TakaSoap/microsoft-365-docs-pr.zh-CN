@@ -3,7 +3,7 @@ title: Web 内容辅助功能准则
 description: Microsoft 发布了 WCAG AA 报告，其中反映了整个产品/服务或者产品中可单独安装的部分。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 35f565eb9adb2283238a753fe5e46c208387afb0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 76ebe71f5ce4f3c33df1499171fab5ff9e36d29f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066275"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417466"
 ---
 # <a name="web-content-accessibility-guidelines"></a>Web 内容辅助功能准则
 

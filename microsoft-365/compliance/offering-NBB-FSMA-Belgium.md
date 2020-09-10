@@ -3,7 +3,7 @@ title: 比利时国家银行 (NBB) 及金融服务和市场管理局 (FSMA)
 description: 帮助比利时境内金融机构采用云服务的 Microsoft 指南。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43637bf16adb944ac708d1b0942bbdd7551c599b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066059"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415756"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>比利时国家银行 (NBB) 及金融服务和市场管理局 (FSMA)
 

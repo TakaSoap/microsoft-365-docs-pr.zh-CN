@@ -1,9 +1,9 @@
 ---
-title: 美国国防部（DoD）临时授权
-description: Microsoft 已收到影响级别为5、4和2的国防部（DoD）临时授权。
+title: 美国国防部 (DoD) 临时授权
+description: Microsoft 已收到受影响级别为5、4和2的美国国防部 (DoD) 临时授权。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,22 +14,22 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 333333ad274c569337c2cbab7fd00c7337e26160
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fee91c384850b5a1593cc17e6215985217ada033
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064763"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415470"
 ---
-# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部（DoD）在影响级别2、4和5的临时授权
+# <a name="us-department-of-defense-dod-provisional-authorization-at-impact-levels-2-4-and-5"></a>美国国防部 (DoD) 临时授权级别为2、4和5的受影响级别
 
 ## <a name="dod-and-disa-overview"></a>DoD 和 DISA 概述
 
-防护信息系统代理（DISA）是美国国防部（DoD）的打击支持代理。 它为 DoD、白名单和在美国国防部中扮演某种角色的任何其他组织提供了企业信息基础结构、通信支持和安全、弹性的企业云环境。
+国防信息系统代理商 (DISA) 是美国国防部 (DoD) 的打击支持代理。 它为 DoD、白名单和在美国国防部中扮演某种角色的任何其他组织提供了企业信息基础结构、通信支持和安全、弹性的企业云环境。
 
-为实现其要求，DISA 制定了 DoD 云计算安全要求指南（SRG）。 SRG 定义了承载 DoD 信息、系统和应用程序的云服务提供商（Csp）的基准安全要求，以及用于 DoD 的云服务的使用情况。 它取代了 DoD 云安全模型，并映射到 DoD 风险管理框架和 NIST 800-37/53。
+为实现其要求，DISA 制定了 DoD 云计算安全要求指南 (SRG) 。 SRG 定义了云服务提供程序 (用于承载 DoD 信息、系统和应用程序的 Csp) 的基准安全要求，以及用于 DoD 的云服务的使用。 它取代了 DoD 云安全模型，并映射到 DoD 风险管理框架和 NIST 800-37/53。
 
-DoD 云服务支持定义策略、安全控制和 SRG 中的其他要求，这些要求将发布和维护。 它指导在规划和授权使用云服务提供商时采用 DoD 机构和部门。 云服务支持还评估了用于符合 SRG 的 CSP 产品-这是一种授权过程，通过这种方式，Csp 可以提供符合 DoD 标准的 attestations。 在适当情况下，It 颁发 DoD 临时授权（PAs），因此 DoD 代理和支持组织可以使用云服务，而无需自行完成完全审批过程，从而节省时间和精力。
+DoD 云服务支持定义策略、安全控制和 SRG 中的其他要求，这些要求将发布和维护。 它指导在规划和授权使用云服务提供商时采用 DoD 机构和部门。 云服务支持还评估了用于符合 SRG 的 CSP 产品-这是一种授权过程，通过这种方式，Csp 可以提供符合 DoD 标准的 attestations。 在适当的情况下，It 颁发 DoD 临时授权 (PAs) ，因此 DoD 代理商和支持组织可以使用云服务，而无需自己完成完全审批过程，从而节省时间和精力。
 
 ## <a name="microsoft-and-us-dod-provisional-authorization"></a>Microsoft 和美国 DoD 临时授权
 
@@ -39,25 +39,25 @@ Microsoft 的政府云服务可满足美国国防部的苛刻要求，从影响�
 
 ## <a name="dod-impact-level-5-provisional-authorization"></a>DoD 影响级别5临时授权
 
-DISA 云服务支持已为适用于 DoD 的 Microsoft Azure 政府授予了 DoD 影响等级 5 PA。 DISA 还授予了 Office 365 美国政府防线 a DoD 影响级别 5 PA。 影响级别5涵盖受法律、其他政府法规或拥有信息的机构所认为的受保护的非分类信息（CUI），并且需要比级别4更高级别的保护。 它还介绍了未分类的国家安全系统。
+DISA 云服务支持已为适用于 DoD 的 Microsoft Azure 政府授予了 DoD 影响等级 5 PA。 DISA 还授予了 Office 365 美国政府防线 a DoD 影响级别 5 PA。 影响级别5涵盖受控的未分类信息 (CUI) 法律、其他政府法规或拥有信息的机构，并且需要更高级别的保护，而不是由级别4提供的。 它还介绍了未分类的国家安全系统。
 
 ## <a name="dod-impact-level-4-provisional-authorization"></a>DoD 影响级别4临时授权
 
-DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA。 这基于对其 FedRAMP 授权的审阅以及云计算 SRG 所需的其他安全控制。 （FedRAMP 是为政府启用安全云计算的美国程序。）
+DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA。 这基于对其 FedRAMP 授权的审阅以及云计算 SRG 所需的其他安全控制。  (FedRAMP 是一个美国程序，为政府 ) 启用了安全云计算。
 
-影响级别4涵盖受控制的未分类信息，即需要保护的数据，防止在执行官订单13556（11 2010 月）和其他关键数据的情况下受到未经授权的披露。 它可能包括指定为仅供官方使用的数据、法律强制性敏感的或敏感的安全信息。 此授权使美国联邦政府客户能够在范围内的 Microsoft 政府云服务上部署这些类型的高度敏感数据。
+影响级别4涵盖受控制的未分类信息，即需要保护的数据，防止在执行者订单上受到未经授权的披露 13556 (2010) 和其他任务关键型数据。 它可能包括指定为仅供官方使用的数据、法律强制性敏感的或敏感的安全信息。 此授权使美国联邦政府客户能够在范围内的 Microsoft 政府云服务上部署这些类型的高度敏感数据。
 
 ## <a name="covered-services-for-dod-impact-level-2-authorization"></a>涉及的针对 DoD 影响级别2授权的服务
 
 基于 FedRAMP 授权，DISA 云服务支持将 DoD 影响级别 2 PA 授予：
 
-- Azure 和 Azure 政府基础结构即服务（IaaS）和平台 as a Service （PaaS）根据临时权限授予了此授权，这是通过 FedRAMP 联合授权委员会进行的。
-- Dynamics 365 美国政府软件 as a 服务（SaaS）已根据代理商的 FedRAMP 机关（ATO）授予此授权，以在机架和市内开发（HUD）的部门中运行。
-- Office 365 美国政府已根据代理商 FedRAMP ATO （DHHS）部门授予此授权。
+- Azure 和 Azure 政府基础结构作为服务 (IaaS) 和平台作为服务 (PaaS) 根据临时权限授予 FedRAMP 联合授权板中的 (P-ATO) 授予此授权。
+- Dynamics 365 美国政府版软件作为一项服务 (SaaS) 已授予基于代理商 FedRAMP 机构 (ATO) 从机架部门和市内开发 (HUD) 中运行的的授权。
+- Office 365 美国政府将此授权授予基于代理商 FedRAMP ATO from the Health and 人事部门 (DHHS) 的授权。
 
 影响级别2涵盖非控制的未分类信息-已授权公开发布的数据。 此外，它还介绍了不被视为 "关键任务" 的未分类信息，但仍需要最低级别的访问控制。 此授权使美国联邦政府客户能够在范围内的 Microsoft 云服务上部署非敏感信息和基本防护应用程序和网站。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 ### <a name="covered-services-for-dod-impact-level-5"></a>涵盖的针对 DoD 影响的服务级别5
 
@@ -84,15 +84,15 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 开始使用在政府中利用云的优势与防御蓝图的 Azure 安全性和合规性部门的优势。 此蓝图提供的工具和指南可帮助你立即开始构建符合 DoD 的解决方案。 [开始使用 Azure DoD 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **能否在我组织的认证过程中使用 Microsoft 的合规性认证？**
 
-可以。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。 （这也适用于支持 DoD 并需要云服务的其他组织。）但是，您需要在这些服务之外为自己的组件实现自己的授权。
+正确。 所有 DoD 机构都可能依赖 Microsoft 云服务的认证，作为需要 DoD 授权的任何计划或计划的基础。  (这也适用于支持 DoD 并需要云服务的其他组织。 ) 不过，您需要在这些服务之外为自己的组件实现自己的授权。
 
 **Microsoft DoD 认证是否符合 NIST 800 –171要求？**
 
-在10月2016，美国国防部（DoD） promulgated 最终规则实施防御联邦获取法规补充（DFARS）条款，这些条款适用于处理、存储或传输 "受防护信息" 的信息系统中的所有 DoD 承包商。 该规则指出，此类系统必须满足 NIST SP 800 –171中规定的安全要求，[保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或由 DoD 合同专员批准的 "备用的、但同样有效的安全措施"。 此外，DoD 承包商使用外部云服务提供商来处理、存储或传输涵盖的防御信息，此类提供程序必须满足与 FedRAMP 中等比较基准等效的安全要求。
+2016年10月，美国国防部 (DoD) promulgated a 最终规则实施防御联邦获取法规补充 (DFARS) 条款，这些条款适用于处理、存储或传输 "涉及的防御信息" 的所有 DoD 承包商。 该规则指出，此类系统必须满足 NIST SP 800 –171中规定的安全要求， [保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)，或由 DoD 合同专员批准的 "备用的、但同样有效的安全措施"。 此外，DoD 承包商使用外部云服务提供商来处理、存储或传输涵盖的防御信息，此类提供程序必须满足与 FedRAMP 中等比较基准等效的安全要求。
 
 以下 Microsoft 云服务已收到 FedRAMP 中级授权： Azure、Azure 政府、Dynamics 365 美国政府版、Office 365 MT、Office 365 美国政府和 Office 365 美国政府防御。
 
@@ -100,7 +100,7 @@ DISA 云服务支持已为 Microsoft Azure 政府授予了 DoD 影响等级 4 PA
 
 ## <a name="resources"></a>资源
 
-- [DoD 云计算安全要求指南（SRG）和其他文档](https://public.cyber.mil/dccs/dccs-documents/)
+- [DoD 云计算安全要求指南 (SRG) 和其他文档](https://public.cyber.mil/dccs/dccs-documents/)
 - [DISA 云服务支持](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [保护 nonfederal 信息系统和组织中的受控制的未分类信息](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)

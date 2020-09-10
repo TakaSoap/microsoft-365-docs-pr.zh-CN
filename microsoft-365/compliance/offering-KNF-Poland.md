@@ -3,7 +3,7 @@ title: 波兰金融监管局 (KNF)
 description: Microsoft 发布了帮助波兰金融机构采用云服务的指南。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 947600ff2f5beb6e6857425456daf1b61b9a65b0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: d35aa993253b0610ea76e2bfbf60ea20765d6803
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065717"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417576"
 ---
 # <a name="financial-supervision-authority-knf-poland"></a>波兰金融监管局 (KNF)
 

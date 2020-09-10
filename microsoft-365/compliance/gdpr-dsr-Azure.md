@@ -3,7 +3,7 @@ title: 针对 GDPR 和 CCPA 的 Azure 数据主体请求
 description: 了解如何使用 Microsoft 产品、服务和管理工具来查找和处理个人数据以响应 DSR。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22baa48293e48567d801227996d080e8ee1cce2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035450"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416646"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>针对 GDPR 和 CCPA 的 Azure 数据主体请求
 
@@ -75,10 +75,10 @@ ms.locfileid: "44035450"
 
 ### <a name="executing-dsrs-against-customer-data"></a>针对客户数据执行 DSR
 
-Microsoft 让你能够通过 Azure 门户访问、删除和导出某些客户数据，也可直接通过特定服务的预先存在的应用程序编程接口 (API) 或用户界面 (UI)（也称为*产品内体验*）。 有关此类产品内体验的详细信息，在各个服务的参考文档中进行了介绍。
+Microsoft 让你能够通过 Azure 门户访问、删除和导出某些客户数据，也可直接通过特定服务的预先存在的应用程序编程接口 (API) 或用户界面 (UI)（也称为*产品内体验*）。有关此类产品内体验的详细信息，在各个服务的参考文档中进行了介绍。
 
 >[!IMPORTANT]  
-> 支持产品内 DSR 的服务要求直接使用服务的应用程序编程接口 (API) 或用户界面 (UI)，描述了适用的 CRUD（创建、读取、更新、删除）操作。 因此，除了在 Azure 门户内执行 DSR 之外，还必须在给定服务内执行 DSR，以便完成针对给定数据主体的完整请求。 请参考特定服务的参考文档以了解更多详细信息。
+> 支持产品内 DSR 的服务要求直接使用服务的应用程序编程接口 (API) 或用户界面 (UI)，描述适用的 CRUD（创建、读取、更新、删除）操作。因此，除了在 Azure 门户中内执行 DSR 之外，还必须在给定服务内执行 DSR，以便完成针对给定数据主体的完整请求。请参考特定服务的参考文档以了解更多详细信息。
 
 ### <a name="step-1-discover"></a>步骤 1：发现
 
@@ -114,7 +114,7 @@ Microsoft 让你能够直接通过特定服务的预先存在的应用程序编�
 
 ### <a name="step-2-access"></a>步骤 2：访问
 
-在找到包含潜在响应 DSR 的个人数据的客户数据后，应该由你和你的组织决定将哪些数据提供给数据主体。 可以通过实际文档副本、经过适当编校的版本或者你认为适合共享的部分的屏幕截图来提供。 对于访问请求的每个响应，需要检索包含响应数据的文档或其他项目的副本。
+在找到包含潜在响应 DSR 的个人数据的客户数据后，应该由你和你的组织决定将哪些数据提供给数据主体。可以通过实际文档副本、经过适当编校的版本或者你认为适合共享的部分的屏幕截图来提供。对于访问请求的每个响应，需要检索包含响应数据的文档或其他项目的副本。
 
 将副本提供给数据主体时，可能需要删除或修订有关其他数据主体和任何机密信息的个人信息。
 

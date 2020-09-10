@@ -1,9 +1,9 @@
 ---
-title: 美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
-description: Microsoft 云服务符合美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）。
+title: '美国国家标准和技术协会 (NIST) Cybersecurity Framework (CSF) '
+description: Microsoft 云服务符合美国国家标准和技术协会 (NIST) Cybersecurity Framework (CSF) 。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,26 +14,26 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799977"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417084"
 ---
-# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会（NIST） Cybersecurity Framework （CSF）
+# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>美国国家标准和技术协会 (NIST) Cybersecurity Framework (CSF) 
 
 ## <a name="nist-csf-overview"></a>NIST CSF 概述
 
-美国国家标准和技术协会（NIST）促进并维护度量标准和指导，以帮助组织评估风险。 在加强 cybersecurity 的联邦网络和关键基础结构的 Cybersecurity 13636 中，NIST 发布了在二月2014中改进关键基础结构（FICIC）的框架。
+美国国家标准和技术协会 (NIST) 促进和维护度量标准以及帮助组织评估风险的指导。 在加强 cybersecurity 的联邦网络和关键基础结构的 Cybersecurity 13636 中，NIST 发布了用于改进关键基础结构的框架。在2月 2014 (FICIC) 。
 
 FICIC 的主要优先级是建立一组标准和做法，以帮助组织管理 cybersecurity 风险，同时实现业务效率。 NIST 框架解决 cybersecurity 风险，而无需为政府和私营部门组织提供其他法规要求。
 
-FICIC 引用了全球公认的标准，包括 nist SP 800-53 在 NIST 框架的附录 A 中发现了[用于改善关键基础结构 Cybersecurity 的](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)附录 A。 FICIC 框架中的每个控件都映射到 FedRAMP 中等比较基准中的相应 NIST 800-53 控件。
+FICIC 引用了全球公认的标准，包括 nist SP 800-53 在 NIST 框架的附录 A 中发现了 [用于改善关键基础结构 Cybersecurity 的](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)附录 A。 FICIC 框架中的每个控件都映射到 FedRAMP 中等比较基准中的相应 NIST 800-53 控件。
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft 和 NIST CSF
 
-NIST Cybersecurity Framework （CSF）是一个自愿的框架，其中包含用于管理与 Cybersecurity 相关的风险的标准、指南和最佳做法。 Microsoft 云服务已经历独立的第三方 FedRAMP 中等和高基准审核，并根据 FedRAMP 标准进行了认证。 此外，通过由 HITRUST 执行的经过验证的评估（主要安全和隐私标准开发和资格鉴定组织），Office 365 经过了 NIST CSF 中指定的目标的认证。
+NIST Cybersecurity Framework (CSF) 是一个自愿框架，其中包含用于管理与 Cybersecurity 相关的风险的标准、指南和最佳做法。 Microsoft 云服务已经历独立的第三方 FedRAMP 中等和高基准审核，并根据 FedRAMP 标准进行了认证。 此外，通过由 HITRUST 执行的经过验证的评估（主要安全和隐私标准开发和资格鉴定组织），Office 365 经过了 NIST CSF 中指定的目标的认证。
 
 了解如何使用合规性分数和我们的 Azure 安全性和合规性蓝图加快您的 NIST Cybersecurity Framework 部署：
 
@@ -54,7 +54,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>在 Azure 上快速构建 NIST CSF 解决方案
 
-在云中，NIST Cybersecurity Framework （CSF）标准可能是一项挑战。 幸运的是，使用 Azure，你将拥有一个总部的入门 Azure Security and 合规性 NIST CSF 蓝图。 此蓝图提供的工具和指南可帮助您立即开始构建 NIST CSF 兼容的解决方案。
+NIST Cybersecurity Framework (CSF) 标准在云中可能会有挑战性。 幸运的是，使用 Azure，你将拥有一个总部的入门 Azure Security and 合规性 NIST CSF 蓝图。 此蓝图提供的工具和指南可帮助您立即开始构建 NIST CSF 兼容的解决方案。
 
 - [开始使用 Azure NIST CSF 蓝图](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
@@ -64,11 +64,11 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 - [开始使用合规性分数](compliance-score.md)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **是否有独立的评估员验证了 Azure 政府、Dynamics 365 和 Office 365 是否支持 NIST CSF 要求？**
 
-是的，第三方评估组织具有证明，Azure 政府云服务提供了符合 NIST Cybersecurity Framework （CSF）风险管理惯例（如在改进关键基础结构 Cybersecurity 1.0 年2月 12 2014 日发布的版本的框架中定义）。 NIST CSF 映射到 FedRAMP 中等控制框架，而独立评估员已针对 FedRAMP 中等比较基准评估了 Dynamics 365。 此外，Office 365 在6月2018的 HITRUST 中获得[了 NIST CSF 信函的认证](https://aka.ms/O365NISTCSFcertification)。
+是的，第三方评估组织具有 Azure 政府云服务产品与 NIST Cybersecurity Framework (CSF) 风险管理惯例（如在12月 2014 12 日发布的版本1.0 中定义）的证明。 NIST CSF 映射到 FedRAMP 中等控制框架，而独立评估员已针对 FedRAMP 中等比较基准评估了 Dynamics 365。 此外，Office 365 在6月2018的 HITRUST 中获得 [了 NIST CSF 信函的认证](https://aka.ms/O365NISTCSFcertification) 。
 
 **Microsoft 云服务如何证明符合框架？**
 
@@ -84,7 +84,7 @@ Office 365 的 NIST CSF 认证的有效期为两年。
 
 **美国政府认为哪些组织是关键基础结构？**
 
-根据[Homeland 安全部门](https://www.dhs.gov/critical-infrastructure-sectors)，其中包括以下部门中的组织：化学、商业设施、通信、关键制造业、Dams、国防工业基座、紧急服务、能源、金融服务、食物和农业、政府设施、医疗保健和公共卫生、信息技术、核（Reactors 材料和废物）、运输系统和水线（和 Wastewater）。
+根据 [Homeland 安全部门](https://www.dhs.gov/critical-infrastructure-sectors)，其中包括以下部门中的组织：化学、商业设施、通信、关键制造业、Dams、国防工业基座、紧急服务、能源、金融服务、食物和农业、政府设施、医疗保健和公共卫生、信息技术、核 (Reactors 材料和废物) 、运输系统和水源 (和 Wastewater) 。
 
 **Office 365 的范围内服务有哪些？**
 
@@ -104,9 +104,9 @@ NIST CSF 认证的范围内服务包括 Exchange Online 存档、Exchange Online
 ## <a name="resources"></a>资源
 
 - [Microsoft 云服务授权](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
-- [将 Microsoft 网络产品映射到： NIST Cybersecurity Framework （CSF）、CIS 控件、ISO27001：2013和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
+- [将 Microsoft 网络产品映射到： NIST Cybersecurity Framework (CSF) 、CIS 控件、ISO27001：2013和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
 - [改进关键基础结构的框架 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [总统执行官在加强 Cybersecurity 的联邦网络和关键基础结构方面的顺序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
-- [在线服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
+- [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

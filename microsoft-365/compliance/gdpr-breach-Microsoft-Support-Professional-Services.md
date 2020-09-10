@@ -3,7 +3,7 @@ title: Microsoft 支持和专业服务与 GDPR 泄露通知
 description: 介绍了 Microsoft 支持和专业服务如何避免个人数据泄露，以及 Microsoft 如何在出现数据泄露时响应和通知用户。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c6f32258f4997db4cb806141414cffc808e63517
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558102"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416835"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>Microsoft 支持和专业服务与 GDPR 泄露通知
 

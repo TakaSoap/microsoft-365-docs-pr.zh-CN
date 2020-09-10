@@ -3,7 +3,7 @@ title: 欧盟-美国及瑞士-美国隐私保护框架
 description: Microsoft 已通过欧盟-美国及瑞士-美国隐私保护框架认证，并承担相应的义务。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f58baecce1d1972c7aee1fdb7121375d5ddd111c
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6037712fb5ad60d8fb3dfe01a4a909d117456160
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066405"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416138"
 ---
 # <a name="eu-us-and-swiss-us-privacy-shield-frameworks"></a>欧盟-美国及瑞士-美国隐私保护框架
 

@@ -3,7 +3,7 @@ title: 阿根廷个人数据保护法 (PDPA)
 description: Microsoft 商业云服务符合关于保护个人信息隐私的 PDPA 标准。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d4d794c05498cd40d1a844d1cb402a52f23ad0c6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065777"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417054"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>阿根廷个人数据保护法 (PDPA)
 

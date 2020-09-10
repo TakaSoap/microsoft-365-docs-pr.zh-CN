@@ -3,7 +3,7 @@ title: '英国政府-云 (G-云) '
 description: Crown 商业服务已将 Microsoft 云服务分类续订为政府云。6。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560769"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416048"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英国政府-云 (G-云) 
 
@@ -37,7 +37,7 @@ Microsoft 每年都准备好文档并提交证据，证明它的范围内的企�
 
 Microsoft 服务到数字市场的约会意味着，英国政府机构和合作伙伴可以使用范围内的服务来存储和处理英国官方政府数据（大多数政府数据）。 此外，现已有450个 Microsoft 合作伙伴，其中包含 Microsoft 云服务的经销商。 他们可以直接断言范围内服务与自己的应用程序中的14个原则的合规性。 但是，客户和合作伙伴需要为 Microsoft 云服务的合规性和确定合规性中未包括的任何组件实现自己的符合性。
 
- [14 使用 Microsoft Azure 的英国云的云安全控制](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/)提供了客户策略以将其服务移动到 Azure，并帮助满足 CESG/NSCS 规定的英国义务。 该白皮书提供了如何使用 Azure 来帮助解决云安全主体中概述的14个控件的情况，并概述了在采用 Microsoft Azure 服务的同时，客户如何更快、更快地完成工作，同时节省资金。
+ [14 使用 Microsoft Azure 的英国云的云安全控制](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) 提供了客户策略以将其服务移动到 Azure，并帮助满足 CESG/NSCS 规定的英国义务。 该白皮书提供了如何使用 Azure 来帮助解决云安全主体中概述的14个控件的情况，并概述了在采用 Microsoft Azure 服务的同时，客户如何更快、更快地完成工作，同时节省资金。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -80,11 +80,11 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 [开始使用 Azure UK G-云蓝图](https://aka.ms/ukofficialblueprint)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **谁有资格使用数字市场？**
 
-所有英国政府部门、devolved 管理、本地颁发机构、更广泛的公共扇区正文和 arm 的长度正文都符合在市场中购买服务的条件。 如果您不确定自己的资格，请咨询[公共事业部门的完整列表](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)。
+所有英国政府部门、devolved 管理、本地颁发机构、更广泛的公共扇区正文和 arm 的长度正文都符合在市场中购买服务的条件。 如果您不确定自己的资格，请咨询 [公共事业部门的完整列表](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)。
 
 **Arm 的长度正文是什么？**
 
@@ -94,12 +94,12 @@ Microsoft 服务到数字市场的约会意味着，英国政府机构和合作�
 
 英国的 Microsoft 云提供了与英国数据驻留在一起的可靠性和性能。 这为客户提供了可帮助他们满足本地合规性和策略要求的受信任云服务。 此外，在英国多个数据中心内的数据复制在纯云和混合方案中为客户提供地域冗余数据保护以实现业务连续性。 我们在英国的多个位置都有数据中心。
 
-- 您可以在[全局 azure 地图](https://azuredatacentermap.azurewebsites.net/)上看到新的 Azure 区域、英国西部和英国南部。
-- 对于 Office 365，英国数据中心共同构成了新的英国 Office 365 区域。 您可以在[全局 Office 365 地图](https://o365datacentermap.azurewebsites.net/)上查看详细信息。
+- 您可以在 [全局 azure 地图](https://azuredatacentermap.azurewebsites.net/)上看到新的 Azure 区域、英国西部和英国南部。
+- 对于 Office 365，英国数据中心共同构成了新的英国 Office 365 区域。 您可以在 [全局 Office 365 地图](https://o365datacentermap.azurewebsites.net/)上查看详细信息。
 
 **其他 Microsoft EU 数据中心位于何处？**
 
-除了英国数据中心，Microsoft 云服务还将数据中心放在多个位置。 有关所有中心的最新列表，请访问我们的[数据位置页面](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)。
+除了英国数据中心，Microsoft 云服务还将数据中心放在多个位置。 有关所有中心的最新列表，请访问我们的 [数据位置页面](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)。
 
 **如何获取审计员的报告的副本？**
 

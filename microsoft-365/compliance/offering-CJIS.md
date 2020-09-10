@@ -1,9 +1,9 @@
 ---
-title: 刑事审判信息服务（CJIS）安全策略
+title: 刑事审判信息服务 (CJIS) 安全策略
 description: Microsoft 政府云服务遵守美国刑事审判信息服务安全策略。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,22 +14,22 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 02be641b93ffdb245ae6073358b66c1204e46093
-ms.sourcegitcommit: 4581afb3116ccd7d0144398e83cd6a6990e3683b
+ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43772513"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416414"
 ---
-# <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务（CJIS）安全策略
+# <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务 (CJIS) 安全策略
 
 ## <a name="cjis-overview"></a>CJIS 概述
 
-美国联邦调查局（FBI）的犯罪法案信息服务（CJIS）部门提供了州、本地和联邦法律强制实施和刑事审判机构访问刑事审判信息（CJI），例如，指纹记录和刑事历史记录。 美国的执法机构和其他政府机构必须确保其对 CJI 的传输、存储或处理的使用云服务符合[CJIS 安全策略](https://aka.ms/cjis-security-policy)，后者建立最低安全性要求和控制措施来保护 CJI。
+《刑事审判信息服务 (CJIS) 美国联邦调查局 (FBI) 为州、当地和联邦法律实施和刑事审判机关提供了有关刑事审判信息的访问权限 (CJI) —例如，指纹记录和刑事历史记录。 美国的执法机构和其他政府机构必须确保其对 CJI 的传输、存储或处理的使用云服务符合 [CJIS 安全策略](https://aka.ms/cjis-security-policy)，后者建立最低安全性要求和控制措施来保护 CJI。
 
-CJIS 安全策略集成了总统和 FBI 指令、联邦法律和刑事审判社区的咨询策略董事会决策，以及美国国家标准和技术协会（NIST）的指导。 定期更新策略以反映日益增长的安全要求。
+CJIS 安全策略集成了总统和 FBI 指令、联邦法律和犯罪审判社区的咨询策略董事会决策，以及美国国家标准和技术协会 (NIST) 的指导。 定期更新策略以反映日益增长的安全要求。
 
-CJIS 安全策略定义了专用承包商（如云服务提供商）必须评估的13个方面，以确定其云服务的使用是否符合 CJIS 要求。 这些领域与 NIST 800-53 密切对应，这也是联邦风险和授权管理计划（[FedRAMP](offering-FedRAMP.md)）的基础，它是 Microsoft 为其政府云产品认证的计划。
+CJIS 安全策略定义了专用承包商（如云服务提供商）必须评估的13个方面，以确定其云服务的使用是否符合 CJIS 要求。 这些领域与 NIST 800-53 密切对应，这也是联邦风险和授权管理计划的基础 ([FedRAMP](offering-FedRAMP.md)) （Microsoft 已针对其政府云产品认证的程序）。
 
 此外，处理 CJI 的所有私有承包商必须签署 CJIS 安全附录，这是由美国律师通用批准的统一协议，可帮助确保安全策略所需的安全性和机密性。 它还承诺承包商遵守联邦和州法律、法规和标准，使安全计划保持一致，并将 CJI 的使用限制为政府机构向其提供的目的。
 
@@ -39,11 +39,11 @@ Microsoft 使用 CJIS 信息协议签署 CJIS 安全附录。 这些指示州法
 
 Microsoft 已评估 Microsoft Azure 政府、Microsoft Office 365 美国政府和 Microsoft Dynamics 365 美国政府的操作策略和过程，并将证明其在适用的服务协议中的能力，以满足使用范围内服务的 FBI 要求。
 
-了解 CJIS 安全策略在 Microsoft 云上的优势：了解[Genetec 如何清除犯罪调查](https://customers.microsoft.com/story/genetec)
+了解 CJIS 安全策略在 Microsoft 云上的优势：了解 [Genetec 如何清除犯罪调查](https://customers.microsoft.com/story/genetec)
 
-了解如何使用 Azure 安全性和合规性蓝图加快 CJIS 安全策略：[下载 Microsoft 政府云服务的 CJIS 实施指南](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
+了解如何使用 Azure 安全性和合规性蓝图加快 CJIS 安全策略： [下载 Microsoft 政府云服务的 CJIS 实施指南](https://gallery.technet.microsoft.com/CJIS-Implementation-62af7c27)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [美国政府 Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -56,7 +56,7 @@ FBI 不提供 Microsoft 符合 CJIS 要求的认证。 相反，Microsoft 证明
 
 [Microsoft CJIS 云要求](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>美国的 CJIS 状态（当前状态为9/23/2019）
+## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>美国的 CJIS 状态 (电流为 9/23/2019) 
 
 37州和哥伦比亚带有管理协议的地区，以绿色的地图突出显示：
 
@@ -68,15 +68,15 @@ Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审�
 
 **在哪里可以请求符合性信息？**
 
-请联系你的 Microsoft 帐户代表以获取有关你感兴趣的司法辖区的信息。 有关<cjis@microsoft.com>当前可在哪些状态提供服务的信息，请联系。
+请联系你的 Microsoft 帐户代表以获取有关你感兴趣的司法辖区的信息。 <cjis@microsoft.com>有关当前可在哪些状态提供服务的信息，请联系。
 
 **Microsoft 如何证明其云服务能够符合我的状态要求？**
 
-Microsoft 使用州 CJIS Systems 机关（CSA）签署信息协议;你可以从你的状态的 CSA 请求副本。 此外，Microsoft 还为客户提供了详细的安全、隐私和合规性信息。 客户还可以查看独立审计员准备的安全性和合规性报告，以便他们能够验证 Microsoft 是否已实现适合相关审核作用域的安全控制（如 ISO 27001）。
+Microsoft 使用州 CJIS Systems 代理商 (CSA) 签署信息协议;你可以从你的状态的 CSA 请求副本。 此外，Microsoft 还为客户提供了详细的安全、隐私和合规性信息。 客户还可以检查独立审计员准备的安全性和合规性报告，以便他们能够验证 Microsoft 是否已实施安全控制 (如 ISO 27001) 适用于相关的审核作用域。
 
 **我应从哪里开始使用我的机构的合规性工作？**
 
-[CJIS 安全策略](https://aka.ms/cjis-security-policy)涵盖了您的机构必须采取的预防措施以保护 CJI。 此外，你的 Microsoft 帐户代表可以与熟悉你的司法辖区要求的人员联系。
+[CJIS 安全策略](https://aka.ms/cjis-security-policy) 涵盖了您的机构必须采取的预防措施以保护 CJI。 此外，你的 Microsoft 帐户代表可以与熟悉你的司法辖区要求的人员联系。
 
 ## <a name="resources"></a>资源
 

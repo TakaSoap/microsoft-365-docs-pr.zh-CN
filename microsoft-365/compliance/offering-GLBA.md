@@ -1,9 +1,9 @@
 ---
 title: 格雷姆-里奇-比利雷法案 (GLBA)
-description: Microsoft 可帮助金融服务客户端遵守格雷姆-里奇-比利雷法案（GLBA）的隐私和安全要求。
+description: Microsoft 帮助金融服务客户端遵守格雷姆-里奇-比利雷法案 (GLBA) 的隐私和安全要求。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,31 +14,31 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bbc5f9e74e67dc121b151684145bd41635af1ca0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066547"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417726"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>格雷姆-里奇-比利雷法案 (GLBA)
 
 ## <a name="glba-overview"></a>GLBA 概述
 
-格雷姆-里奇-比利雷法案（GLBA）是美国法律，可 reformed 金融服务行业，使商业和投资银行、证券公司和保险公司能够进行整合，并解决有关保护消费者隐私问题的问题。 需要联邦贸易委员会（FTC）和其他金融服务机构来实施管理法规，以解决金融隐私规则和安全措施规则等隐私规定。 保护敏感消费者数据的 GLBA 要求适用于向消费者提供金融产品和服务的金融机构，如贷款、投资建议和保险业。 FTC 负责强制遵从性。
+格雷姆-比利雷法案 (GLBA) 是美国法律，可 reformed 金融服务行业，使商业和投资银行、证券公司和保险公司能够进行整合，并解决有关保护消费者隐私问题的问题。 需要联邦交易委员会 (FTC) 和其他金融服务机构来实施管理法规，以满足金融隐私规则和安全措施规则等隐私规定。 保护敏感消费者数据的 GLBA 要求适用于向消费者提供金融产品和服务的金融机构，如贷款、投资建议和保险业。 FTC 负责强制遵从性。
 
 ## <a name="microsoft-and-glba"></a>Microsoft 和 GLBA
 
 Microsoft Azure、Microsoft Office 365、Dynamics 365 和 Microsoft Power BI 可帮助满足为金融服务机构提供云服务的严格要求。 作为我们支持的一部分，我们提供的指导可帮助您遵循 GLBA 的要求，方法是提供技术和组织保护，以帮助维护安全性并防止未经授权的使用。
 
-Microsoft 已为[azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)和[office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)开发了风险评估工具，以帮助您更高效地对 azure 和 office 365 服务进行风险评估。 该工具（Excel 电子表格）的功能是19个信息安全域（例如安全策略和风险管理），它们跟踪金融服务法规的要求和其他相关标准，包括 GLBA （在 Azure 电子表格中的列 R 和 Office 365 电子表格中的列 Q 中）。 这些工具将介绍 Azure 和 Office 365 如何符合适用于云服务提供程序的每个要求，并可帮助您满足 GLBA 的安全要求。
+Microsoft 已为 [azure](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 和 [office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 开发了风险评估工具，以帮助您更高效地对 azure 和 office 365 服务进行风险评估。 该工具 (Excel 电子表格) 功能19信息安全域 (如安全策略和风险管理) ，它们跟踪金融服务法规的要求以及其他相关标准，包括 GLBA (在 Office 365 电子表格) 中的 Azure 电子表格和列 Q 中的列 R 中。 这些工具将介绍 Azure 和 Office 365 如何符合适用于云服务提供程序的每个要求，并可帮助您满足 GLBA 的安全要求。
 
 ## <a name="promote-your-glba-compliance"></a>促进您的 GLBA 合规性
 
 - [下载 Azure 金融服务云风险评估工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=6b218946-c235-4234-9beb-d557e39a3f44&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [下载 Office 365 云风险评估工具](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=55702ffd-c35a-4619-8722-ab71c0c02002&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -50,7 +50,7 @@ Microsoft 已为[azure](https://servicetrust.microsoft.com/ViewPage/TrustDocumen
 
 **如何知道我的金融机构是否必须遵守 GLB 法案？**
 
-FTC 将在其 GLB 法案页面上详细回答此问题，该[隐私规则涵盖](https://www.ftc.gov/tips-advice/business-center/guidance/how-comply-privacy-consumer-financial-information-rule-gramm#whois)了该人？
+FTC 将在其 GLB 法案页面上详细回答此问题，该 [隐私规则涵盖](https://www.ftc.gov/tips-advice/business-center/guidance/how-comply-privacy-consumer-financial-information-rule-gramm#whois)了该人？
 
 ## <a name="resources"></a>资源
 

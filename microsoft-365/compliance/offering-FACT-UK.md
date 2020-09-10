@@ -1,9 +1,9 @@
 ---
-title: 针对版权窃取的联盟（事实）
+title: 针对版权窃取 (事实) 的联盟
 description: Microsoft Azure 在英国对联合身份验证进行了认证，以防止版权盗用。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,26 +14,26 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066395"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416108"
 ---
-# <a name="federation-against-copyright-theft-fact"></a>针对版权窃取的联盟（事实）
+# <a name="federation-against-copyright-theft-fact"></a>针对版权窃取 (事实) 的联盟
 
 ## <a name="fact-overview"></a>事实概述
 
 受版权保护的内容有多种形式—图片、视频、音乐、合同、脚本、工作流、艺术、体系结构等，并表示许多企业的核心资产。 盗版会威胁到在非法收益或市场中断的知识产权的非法分布中削弱这些公司的本质。 随着生产和生产后工作流越来越多地迁移到云，知识资产的黑色市场将从物理媒体转向在线机制。
 
-## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>针对版权窃取的 Microsoft 和联合身份验证（事实）
+## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>针对版权窃取 (事实) 的 Microsoft 和联盟
 
-若要在 Microsoft 将此类资产 entrust 到公共云时对其进行保护的 Microsoft 承诺，microsoft Azure 已在英国受到联合身份验证（事实）的认证。 事实证明基于 ISO 27001，重点关注物理和数字安全、员工屏蔽和培训以及访问控制。 事实内容保护和安全计划在法律实施、技术合作伙伴和行业协会之间提供专业技能，以抵御版权侵权和内容盗窃，如对等共享、非法光盘复制和信号失窃。
+若要在 Microsoft 将此类资产 entrust 到公共云时对其进行保护的 Microsoft 承诺，microsoft Azure 在英国的联合身份验证与版权窃取 (事实) 进行了认证。 事实证明基于 ISO 27001，重点关注物理和数字安全、员工屏蔽和培训以及访问控制。 事实内容保护和安全计划在法律实施、技术合作伙伴和行业协会之间提供专业技能，以抵御版权侵权和内容盗窃，如对等共享、非法光盘复制和信号失窃。
 
 根据 Microsoft 对事实审核的自愿提交，事实审核了已认证的 Azure。 Azure 是第一个实现事实证明的多租户公共云服务，它将添加到 Azure 的与媒体相关的认证组合中，包括 CDSA 认证和 MPAA 的正式评估。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 
@@ -41,7 +41,7 @@ ms.locfileid: "44066395"
 
 每年续订 Azure 认证： [AZURE 事实证书](https://aka.ms/azurefactcert)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么这一点很重要？**
 

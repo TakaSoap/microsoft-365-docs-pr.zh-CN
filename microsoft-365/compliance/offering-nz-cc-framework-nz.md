@@ -1,9 +1,9 @@
 ---
-title: 新西威政府云计算安全和隐私注意事项
-description: Microsoft NZ 解决了在新西方云计算框架中发布的问题。
+title: 新西兰政府云计算安全性和隐私注意事项
+description: Microsoft 新西兰解决在新西兰云计算框架中发布的问题。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,28 +14,28 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
-ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
+ms.openlocfilehash: 992f531a39fdb21a109099ed30f75591f010c476
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46852498"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417044"
 ---
-# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西威政府云计算安全和隐私注意事项
+# <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>新西兰政府云计算安全性和隐私注意事项
 
-## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>新西威政府云计算安全和隐私概述
+## <a name="new-zealand-government-cloud-computing-security-and-privacy-overview"></a>新西兰政府云计算安全性和隐私概述
 
-新西方政府于 2015 年 10 月，新西亚政府将由修订的全政府 ICT 策略进行了修订，以补充了其"云优先"策略，以便使用整个公共企业的信息技术。 修改后的策略保留着美国政府政府政府机构和 GCIO 管理人员的权限开发和实现的"云计算风险 (保证) 。
+在10月2015，新的新西兰政府认可了一个已修订的全政府 ICT 策略，该战略将 reaffirmed 其 "云优先" 策略，在整个公共部门中使用信息技术。 修订后的策略保留在 NZ 政府首席信息官的授权下开发和实施的 "云计算风险和保证框架" (GCIO) 。
 
-政府希望所有新的西班状态服务机构都能在此框架中使用，以评估和采用云服务。 "云计算要求"概述了在采用云服务时机构必须执行的操作，并概述政府云策略的历史记录。
+政府要求所有新西兰状态服务机构在评估和使用云服务时在此框架内工作。 "云计算要求" 概述了在采用云服务时必须执行的操作，以及政府的云策略的历史记录概述。
 
-为了帮助 NZ 政府机构对潜在云解决方案进行一致且可靠的截断分类，GCIO 发布了"云计算：信息安全和隐私注意事项" (上的"云计算 ISPC") 。 本文档包含侧重于数据重点高的 100 个以上的问题、隐私、安全性、治理、机密性、数据完整性、可用性和事件响应和管理。 请注意，"云计算 IPSC"并不针对云服务提供商必须证明正式合规性定义 NZ 政府标准。 不过，文档中设置了许多问题是，指向了解云服务提供商如何遵从大量相关标准的重要性。
+为了协助新西兰政府机构在实施一致和强健的关注潜在云解决方案方面的努力，GCIO 已发布 "云计算：信息安全和隐私注意事项" ("云计算 ISPC" ) 。 本文档包含100多个问题，重点关注数据主权、隐私、安全性、治理、机密性、数据完整性、可用性以及事件响应和管理。 请注意，"云计算 IPSC" 未定义云服务提供商必须向其演示正式合规性的新西兰政府标准。 但是，在文档中设置的许多问题都是指了解云服务提供商如何遵守各种相关标准的重要性。
 
-Microsoft 和新西政府云计算安全和隐私注意事项
+Microsoft 和新西兰政府云计算安全性和隐私注意事项
 
-为了帮助代理对 Microsoft 企业云服务进行分析和评估，Microsoft 新西向服务制定了一系列文档，说明其企业云服务如何通过将问题链接到针对其通过 Microsoft 云服务认证的标准来解决"云计算 ISPC"中设置的问题。 这些认证是 Microsoft 如何向公共和私有企业客户保证其云服务设计、构建和运营以有效缓解隐私和安全风险并解决数据主查问题的中心。
+为了帮助代理对 Microsoft 企业云服务的分析和评估进行评估，Microsoft 新西兰生成了一系列文档，说明其企业云服务如何解决 "云计算 ISPC" 中设置的问题，具体方法是将这些问题链接到 Microsoft 云服务已通过认证的标准。 这些认证是 Microsoft 如何确保公共和私有部门客户在设计、构建和运行云服务以有效缓解隐私和安全风险和解决数据主权问题方面的核心。
 
-了解如何在我们的 Azure 安全性和合规性蓝图上加快 NZ CC 框架部署：下载 [Azure 对 NZ CC 框架的响应](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
+了解如何通过我们的 Azure 安全性和合规性蓝图加快你的新西兰 CC 框架部署： [将 Azure 响应下载到 NZ CC framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -44,30 +44,30 @@ Microsoft 和新西政府云计算安全和隐私注意事项
 - Intune
 - Power BI 云服务，作为独立服务提供，后者随 Office 365 品牌计划或套件一并提供
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Exchange Online、SharePoint Online 和 Microsoft Teams。 Microsoft NZ 与 GCIO 团队协作，可开发用于集成 Exchange Online 和 SEEMail 的参考体系结构。
+- Exchange Online、SharePoint Online 和 Microsoft 团队。 Microsoft NZ 已与 GCIO 团队合作，以开发用于集成 Exchange Online 和 SEEMail 的参考体系结构。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
-**框架适用于哪些人员？**
+**框架适用于哪些人？**
 
-受 GCIO 要求的组织（公用和非公共服务部门、20 个分支健康板和七项 Crown 实体）在决定使用云服务时，必须遵守框架。
+GCIO 要求（公共和非公共服务部门、20地区健康委员会和七个 Crown 实体）下的组织必须在决定使用云服务时遵守框架。
 
-**我的机构能否在 ICT 系统的认证过程中使用 Microsoft 对此框架的响应？**
+**我的机构是否可以在我们的 ICT 系统的认证过程中使用 Microsoft 对此框架的响应？**
 
-如果机构要求在新西信息安全手动下对其 ICT 系统进行认证和 [资产](https://go.microsoft.com/fwlink/p/?linkid=2099496)，则在分析时可以使用这些响应。
+如果您的代理商需要在新西兰 [信息安全手册](https://go.microsoft.com/fwlink/p/?linkid=2099496)中实施其 ICT 系统的认证和资格鉴定，那么您可以在分析过程中使用这些响应。
 
 ## <a name="resources"></a>资源
 
-- [offshore hosted Office productivity services 的安全要求：Office 365 合规性指南](https://aka.ms/o365-gcio-conformance-guidance)
-- [Microsoft Azure 在新西年安全和隐私要求上下文中的合规性](https://aka.ms/azurecompliancenewzealand)
-- [NZ 政府版 ICT 战略 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
-- [云计算的 NZ 政府要求](https://aka.ms/NZ-Cloud-Requirements)
-- [云计算：ISPC 活动的信息安全和 (隐私注意事) ](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
-- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
-- [Office 365：有关云服务采用情况的其他](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) Microsoft NZ (Microsoft NZ 指南，请查看邮件集成和参考体系结构) 
+- [近海托管 Office 生产力服务的安全要求： Office 365 的符合性指南](https://aka.ms/o365-gcio-conformance-guidance)
+- [Microsoft Azure 在新西兰安全性和隐私要求的环境中合规性](https://aka.ms/azurecompliancenewzealand)
+- [新西兰政府 ICT 策略2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
+- [对云计算的新西兰政府要求](https://aka.ms/NZ-Cloud-Requirements)
+- [云计算：信息安全和隐私注意事项 (ISPC) ](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
+- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Office 365： SEEMail Integration And Reference 体系结构](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (云服务采用) 的其他 Microsoft NZ 指南
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft 对"云计算 IPSC"的响应
+## <a name="microsoft-responses-to-cloud-computing-ipsc"></a>Microsoft 对 "云计算 IPSC" 的响应
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)

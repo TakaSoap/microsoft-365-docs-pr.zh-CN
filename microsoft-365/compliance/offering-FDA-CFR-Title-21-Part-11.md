@@ -3,7 +3,7 @@ title: 食物和药品管理 CFR Title 21 第11部分
 description: Microsoft 可帮助客户遵守这些美国的食物和药品管理法规。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,20 +14,20 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b24460940d583eeb9ed431b61453e87a218a816
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066375"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417336"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
 ## <a name="fda-cfr-title-21-overview"></a>FDA CFR 标题21概述
 
-联邦法规（CFR）的代码包含美国联邦政府的执行部门和机构的规则和条例。 该 CFR 的50标题中的每一个都将针对不同的管控区域。
+联邦法规 (CFR) 的代码包含美国联邦政府的执行部门和机构的规则和条例。 该 CFR 的50标题中的每一个都将针对不同的管控区域。
 
-[FDA CFR Title 21](https://aka.ms/FDA-CFR)规定了美国的食品和毒品，在食物和药品管理（FDA）、药品实施管理和国家药品控制策略的管辖范围内。 CFR Title 中概述的法规21第11部分为管理受 FDA 监察的组织所使用的信息的技术系统设置基本规则。 任何控制此类 GxP 流程的技术系统（GLP）、出色的临床实践（GCP）和正常的生产实践（GMP）也需要验证其是否遵循 GxP。
+[FDA CFR Title 21](https://aka.ms/FDA-CFR) 规定了美国的食品和药品，在美国的食物和药品管理机构 (FDA) 、药物实施管理和国家药品控制策略的办公室。 CFR Title 中概述的法规21第11部分为管理受 FDA 监察的组织所使用的信息的技术系统设置基本规则。 任何控制此类 GxP 流程的技术系统 (GLP) 、出色的临床实践 (GCP) 和正常的生产实践 (GMP) 也需要验证其是否符合 GxP。
 
 CFR Title 21 Part 11 部分设置要求，以确保电子记录和签名在纸面记录和手写签名中具有可信赖、可靠和通常等效的替代项。 此外，它还提供了在 FDA 管控行业中提高计算机系统安全性的指南。 主题公司必须证明其流程和产品的工作方式符合设计目标，如果这些流程和产品发生变化，则必须重新验证该证明。 最佳实践指导方针包括：
 
@@ -39,13 +39,13 @@ CFR Title 21 Part 11 部分设置要求，以确保电子记录和签名在纸�
 
 Microsoft 企业云服务经历了常规独立的第三方 SOC 1 类型2和 SOC 2 类型2审核，并根据 ISO/IEC 27001 和 ISO/IEC 27018 标准进行了认证。
 
-尽管这些定期审核和认证并不专门侧重于 FDA 规章合规性，但其用途和目标与 CFR 标题21第11部分中的内容非常相似，并且有助于确保 Microsoft 云服务中存储的数据的机密性、完整性和可用性。 我们的资格认证方法也基于业界最佳实践，包括国际社会工程设计（ISPE） GAMP 系列的优秀做法指南和针对受管制 GxP 环境中的 Computerized 系统的药物检查合作方案（PIC/S）的优秀实践。
+尽管这些定期审核和认证并不专门侧重于 FDA 规章合规性，但其用途和目标与 CFR 标题21第11部分中的内容非常相似，并且有助于确保 Microsoft 云服务中存储的数据的机密性、完整性和可用性。 我们的鉴定方法也基于业界最佳实践，包括制药工程 (ISPE) GAMP 系列的优秀做法指南和制药检查合作方案 (PIC/S) 适用于管控 GxP 环境中的 Computerized 系统的最佳做法。
 
-客户可以请求对合规性报告的访问权限，并受保密协议条款和条件的信任，通过其 Microsoft 帐户代表或通过[服务信任门户](https://aka.ms/stphelp)。 此外，Microsoft Azure 和 Microsoft Office 365 的限定准则提供了有关 Microsoft 审核控制措施如何与 CFR Title 21 第11部分、实施 FDA 资格策略指南以及共享职责领域的相关要求的详细说明。
+客户可以请求对合规性报告的访问权限，并受保密协议条款和条件的信任，通过其 Microsoft 帐户代表或通过 [服务信任门户](https://aka.ms/stphelp)。 此外，Microsoft Azure 和 Microsoft Office 365 的限定准则提供了有关 Microsoft 审核控制措施如何与 CFR Title 21 第11部分、实施 FDA 资格策略指南以及共享职责领域的相关要求的详细说明。
 
-了解如何加速 FDA CFR Title 21 部署：[下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
+了解如何加速 FDA CFR Title 21 部署： [下载 AZURE FDA 21 资格指南](https://go.microsoft.com/fwlink/p/?linkid=2086604)
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 尽管没有用于遵守 CFR 标题21第11部分的认证，但以下 Microsoft 企业云服务已完成独立的第三方审核，这可能有助于客户实现法规遵从性工作。 这些服务包括：
 
@@ -61,7 +61,7 @@ SOC 1 和 SOC 2 类型2、ISO/IEC 27001 和 ISO/IEC 27018 标准的审核报告�
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**此标准适用于哪些对象？**
+**此标准适用于哪些人员？**
 
 FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组织涉及在研究、临床研究、维护、制造和生命科学产品分发等的 FDA 管控方面。
 
@@ -81,7 +81,7 @@ FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组�
 
 **Microsoft 与此标准保持合规性的责任是什么？**
 
-Microsoft 确保其企业云服务符合控制[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)和适用的服务级别协议（sla）中定义的条款。 它们定义了实现和维护控制机制以确保安全和监控系统的责任。
+Microsoft 确保其企业云服务符合控制 [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) 中定义的条款以及适用的服务级别协议 (sla) 。 它们定义了实现和维护控制机制以确保安全和监控系统的责任。
 
 ## <a name="resources"></a>资源
 

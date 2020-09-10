@@ -3,7 +3,7 @@ title: 丹麦金融监管局 (FSA)
 description: 帮助丹麦的金融机构采用云的 Microsoft 指导方针。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7b662c89056525762ad6f9f6e35262a24d098489
-ms.sourcegitcommit: 2913fd74ad5086c7cac6388447285be9aa5a8e44
+ms.openlocfilehash: 67b6996bf8f27ad431a180165a13a2998df1f360
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "41662028"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415836"
 ---
 # <a name="financial-supervisory-authority-fsa-denmark"></a>丹麦金融监管局 (FSA)
 

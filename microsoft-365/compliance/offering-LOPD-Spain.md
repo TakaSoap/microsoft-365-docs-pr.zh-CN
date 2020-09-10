@@ -3,7 +3,7 @@ title: 西班牙皇家法令 1720/2007，西班牙有机法 15/1999
 description: Microsoft 云客户获得西班牙数据保护机构 (AEPD) 授权，可跨境传输数据。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2582dcc9c865ad96390163ffef819811906cf0de
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 7dcf17874aeaf93c6f592313f27897f13bc91829
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066619"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417505"
 ---
 # <a name="spanish-royal-decree-17202007-spanish-organic-law-151999"></a>西班牙皇家法令 1720/2007，西班牙有机法 15/1999
 

@@ -3,7 +3,7 @@ title: 合规性产品/服务 - 云安全联盟 (CSA) STAR 自我评估
 description: Microsoft STAR 自我评估详细阐述了云服务如何满足云安全联盟的要求。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5abbfff81bd79e200eeaf0db680245ae8e449cb0
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 6d47b393993df3d9c105ff0912a6112cb10489eb
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254185"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416260"
 ---
 # <a name="cloud-security-alliance-csa-star-self-assessment"></a>云安全联盟 (CSA) STAR 自我评估
 

@@ -1,9 +1,9 @@
 ---
-title: Arm 规章中的国际流量（ITAR）
+title: " (ITAR) 的 Arm 规章中的国际流量"
 description: Azure 政府支持客户在支持 Arm 的 Regs 系统中构建国际流量。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c19b10b436d40364d15ce6bf8569d18b0a0e7b7b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6019e215e99af672f7e938b11abdac8732c152fa
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065727"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417636"
 ---
-# <a name="international-traffic-in-arms-regulations-itar"></a>Arm 规章中的国际流量（ITAR）
+# <a name="international-traffic-in-arms-regulations-itar"></a> (ITAR) 的 Arm 规章中的国际流量
 
 ## <a name="itar-overview"></a>ITAR 概述
 
-美国州的国家/地区负责管理防护文章的出口和临时导入（即，由 Arm 导出控制法案（Title 22 USC 2778）和国际流量（标题 22 CFR 120 –130）控制的美国 Munitions 列表中指定的任何项目或技术数据（如标题 22 CFR 121.1 中所述）。 适用于国防贸易控制（DDTC）的 Directorate 负责管理这些程序所管辖的实体。
+美国州的国家/地区负责管理防护文章的出口和临时导入 (意味着在美国 Munitions 列表下指定的任何项目或技术数据，如由 Arm 导出控制法案 (标题 22 USC 2778) 和 Arm 规章中的国际流量 (ITAR)  () 标题 22-130 中) 121.1 所述的任何项目或技术数据。  (DDTC) 的国防贸易控件的 Directorate 负责管理这些程序所管辖的实体。
 
 ## <a name="microsoft-and-itar"></a>Microsoft 和 ITAR
 
@@ -39,12 +39,12 @@ ITAR 有特定的义务来举报违规，从而可以提供特定风险缓解优
   
 寻求承载 ITAR 管控数据的客户应与他们的 Microsoft 帐户和许可团队合作，以了解详细信息，获取正确的协议，并访问相关的系统体系结构信息。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - [Office 365 美国政府防御版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **在哪里可以请求符合性信息？**
 

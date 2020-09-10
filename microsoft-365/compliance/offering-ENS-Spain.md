@@ -3,7 +3,7 @@ title: 西班牙 Esquema Nacional de Seguridad (ENS) 高级别安全措施
 description: Microsoft 已获得西班牙 Esquema Nacional de Seguridad（国家安全框架）认证。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: f80167a45379a143d7a96e568aedbc27484090a4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: f7a3106a2d40d8170127df2a68177f52d119f2d4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064711"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415480"
 ---
 # <a name="spain-esquema-nacional-de-seguridad-ens-high-level-security-measures"></a>西班牙 Esquema Nacional de Seguridad (ENS) 高级别安全措施
 

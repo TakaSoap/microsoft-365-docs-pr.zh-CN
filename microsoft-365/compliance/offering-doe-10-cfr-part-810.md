@@ -3,7 +3,7 @@ title: 美国 DoE 10 CFR Part 810
 description: 根据美国 DoE 10 CFR Part 810 的出口控制要求，客户可以使用 Azure 政府。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,27 +14,27 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b34babe60781858b85a3c76280c2126094442851
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a809ae91bbe1302ae4087b3a430dea87e2c913a1
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066435"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415692"
 ---
 # <a name="us-doe-10-cfr-part-810"></a>美国 DoE 10 CFR Part 810
 
 ## <a name="microsoft-and-doe-10-cfr-part-810"></a>Microsoft 和 DoE 10 CFR Part 810
 
-Microsoft Azure 政府可以通过两个授权来支持客户遵守美国能源部门（DoE） 10 CFR part 810 的出口控制要求：
+Microsoft Azure 政府可以通过两个授权帮助客户支持符合美国的美国能源部门 (DoE) 10 CFR Part 810 的出口控制要求：
 
-- 联合授权委员会（JAB）所颁发的运行的 FedRAMP 高临时授权（P-ATO）
-- 来自国防部（DoD）防御信息系统代理的第4级和第5级临时授权
+- FedRAMP 高的临时授权，以 (P-ATO) 颁发的联合授权板 (JAB) 
+- 来自国防部门 (DoD) 国防信息系统代理商的第4级和第5级临时授权
 
 FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结构和虚拟化技术以及使用严格 NIST 控件设计的计算、存储和网络等服务。 这些帮助可满足客户数据分离要求，并帮助实现与客户的本地环境的安全连接。
 
 此外，Azure 政府是一种物理上独立于 Azure 云的美国政府社区云。 它提供了有关美国政府特定的后台筛选要求的其他保证，包括限制对信息和系统的访问，以在 Azure 操作人员中对美国公民进行筛选的特定控件。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 政府](https://aka.ms/AzureCompliance)
 - Intune
@@ -45,13 +45,13 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 ## <a name="about-doe-10-cfr-part-810"></a>关于 DoE 10 CFR Part 810
 
-美国能源（DoE）出口控制规章[10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf)管理未经分类的核技术和协助的出口。 它有助于确保从美国出口的核技术将仅用于 peaceful 目的。 修订后的部件810（最终规则）在3月2015生效，并由[国家核安全管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)进行管理。 第810.6 节指出，对于 "通常授权" 的敏感核技术的支持和传输，以及那些需要特定授权（如扩充和重型生产等敏感的核技术）的情况，都需要特定的 DoE 授权。
+美国的美国能源 (DoE) 导出控制法规 [10 CFR part 810](https://www.govinfo.gov/content/pkg/FR-2015-02-23/pdf/2015-03479.pdf) 管理未经分类的核技术和协助的出口。 它有助于确保从美国出口的核技术将仅用于 peaceful 目的。 修订后的部件 810 (最终规则) 在3月2015生效，并由 [国家核安全管理](https://www.energy.gov/nnsa/national-nuclear-security-administration)进行管理。 第810.6 节说明必须提供特定的 DoE 授权，这两个方面的协助和转换均为 "通常授权" 的敏感核技术，以及那些需要特定授权 (的技术，如扩充和重型产品) 等敏感核技术的协助。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **美国核法规委员会的 10 CFR Part 110 规章是否适用于 Azure 政府？**
 
-否。 [美国核法规委员会](https://www.nrc.gov/)（NRC）规定了核设施的[出口和进口](https://www.nrc.gov/about-nrc/ip/export-import.html)以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)下的相关设备和材料。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
+不正确。 [美国核规章委员会](https://www.nrc.gov/) (NRC) 规定了核设施的导出和导入，以及[10 CFR part 110](https://www.nrc.gov/reading-rm/doc-collections/cfr/part110/)的相关设备和材料的[导出和导入](https://www.nrc.gov/about-nrc/ip/export-import.html)。 NRC 不会控制与属于 DoE 司法辖区的这些项目相关的核技术和协助。 因此，NRC 10 CFR Part 110 规章不适用于 Azure 政府。
 
 **如何提供我遵守 DoE 10 CFR Part 810 的证据？**
 
@@ -59,7 +59,7 @@ FedRAMP 提供了适当的基准，以确保 Azure 政府提供核心基础结�
 
 **对 Azure 政府部署的数据进行分类有哪些责任？**
 
-向 Azure 政府部署数据的客户负责自己的安全分类过程。 对于要成为 DoE export 控件的客户数据，分类系统将由[美国的原子能源法案](https://www.epa.gov/laws-regulations/summary-atomic-energy-act)中的148节所建立的未分类控制的核信息（UCNI）控制进行扩充。
+向 Azure 政府部署数据的客户负责自己的安全分类过程。 对于使用 DoE export 控件的客户数据，分类系统会被未分类控制的核信息 (UCNI) 由 [美国的原子能源法案](https://www.epa.gov/laws-regulations/summary-atomic-energy-act)中的148节建立的控件。
 
 ## <a name="resources"></a>资源
 

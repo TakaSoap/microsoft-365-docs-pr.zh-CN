@@ -3,7 +3,7 @@ title: 英国网络重点加上
 description: 网络重点加上一个英国政府定义的方案，可帮助组织抵御常见的网络安全威胁。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066425"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415572"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英国网络重点加上
 
@@ -38,7 +38,7 @@ ms.locfileid: "44066425"
 
 ## <a name="microsoft-and-uk-cyber-essentials-plus"></a>Microsoft 和英国网络重点加上
 
-Microsoft Azure 已获得网络 Essentials 加上徽章，符合[网络重点方案](https://go.microsoft.com/fwlink/p/?linkid=2099398)中概述的要求。 对 Azure 生产系统进行频繁的测试和审核，以提供全球领先的合规性阵容的证据。
+Microsoft Azure 已获得网络 Essentials 加上徽章，符合 [网络重点方案](https://go.microsoft.com/fwlink/p/?linkid=2099398)中概述的要求。 对 Azure 生产系统进行频繁的测试和审核，以提供全球领先的合规性阵容的证据。
 
 [Azure 网络 ESSENTIALS PLUS 认证](https://aka.ms/AzureCyberEPlusCert)适用于 azure 的全局操作，可供下载。
 
