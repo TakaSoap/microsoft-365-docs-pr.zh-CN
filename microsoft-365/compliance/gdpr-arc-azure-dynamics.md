@@ -3,7 +3,7 @@ title: 适用于 GDPR 的 Azure 和 Dynamics 365 责任就绪清单
 description: 使用 Microsoft Azure 时，提供访问支持 GDPR 需要的信息的便捷方式。
 keywords: ARC Azure, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd94ab9bfcc4ca1c9e8f6b99364fa99dde5ff644
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815254"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422460"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Azure 和 Dynamics 365 责任就绪清单
 
@@ -144,7 +144,7 @@ ms.locfileid: "46815254"
 | 11 <a name="11"> </a> | [Azure 适用的客户数据保护影响评估关键信息](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 类型 2 审核报告 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure（全部）ISO/IEC 27001:2013 ISMS 适用性声明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft 信任中心合规性产品/服务](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO 信息](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [客户数据保护影响适用的 Dynamics 365 关键信息](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Dynamics 365 中的审核与报告](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |

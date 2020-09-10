@@ -3,7 +3,7 @@ title: 一般数据保护条例
 description: 了解有关一般数据保护条例 (GDPR) 的 Microsoft 技术指南并查找有用的信息
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800017"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422450"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -209,7 +209,7 @@ Microsoft 长期以来一直使用标准合同条款（也称为“模式条款�
 
 **Microsoft 还提供哪些其他合规性产品/服务？**
 
-作为一家客户遍及全球几乎每个国家/地区的跨国公司，Microsoft 拥有强大的合规性产品组合来为我们的客户提供帮助。 若要查看我们的合规性产品/服务的完整列表，包括 FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、英国 G-Cloud 和许多其他内容，请访问我们的[合规性产品/服务主题](offering-home.md)。
+作为一家客户遍及全球几乎每个国家/地区的跨国公司，Microsoft 拥有强大的合规性产品组合来为我们的客户提供帮助。 若要查看我们的合规性产品/服务的完整列表，包括 FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、英国 G-Cloud 和许多其他内容，请访问我们的[合规性产品/服务主题](offering-home.yml)。
 
 **GDPR 将如何影响我的公司？**
 

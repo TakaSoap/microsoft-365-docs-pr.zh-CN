@@ -3,7 +3,7 @@ title: 美国电影协会 (MPAA)
 description: Azure 已成功完成美国电影协会的正式评估。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47aabfdff1973b3edff21c858d25c158ce39c6a7
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065633"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417916"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>美国电影协会 (MPAA)
 

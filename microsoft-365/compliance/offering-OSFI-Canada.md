@@ -3,7 +3,7 @@ title: 加拿大金融机构监理总署 (OSFI)
 description: 帮助加拿大金融机构采用云服务的 Microsoft 指南。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 16502ba54268e708d7c420a1329b1f2683726198
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 4250d2d79bb00c4179e39969ad992011d3fc2d4f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773733"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417866"
 ---
 # <a name="office-of-the-superintendent-of-financial-institutions-osfi-canada"></a>加拿大金融机构监理总署 (OSFI)
 
