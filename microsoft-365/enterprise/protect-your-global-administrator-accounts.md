@@ -3,7 +3,7 @@ title: 保护你的 Microsoft 365 全局管理员帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,16 +20,16 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供了有关保护对 Microsoft 365 订阅的全局管理员访问权限的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695473"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416382"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保护你的 Microsoft 365 全局管理员帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 Microsoft 365 订阅的安全违规（包括信息收集和网络钓鱼攻击）通常通过威胁 Microsoft 365 全局管理员帐户的凭据来实现。 云中的安全性是您和 Microsoft 之间的合作关系：
   
@@ -43,13 +43,14 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
     
 2. 为专用 Microsoft 365 全局管理员帐户配置多重身份验证，并使用最强的辅助身份验证形式。
     
-> [!注释] 尽管本文重点介绍了全局管理员帐户，但您应考虑是否需要以相同方式保护订阅中的数据（如电子数据展示管理员或安全或合规性管理员帐户）的其他帐户。 <br > 全局管理员帐户可在不添加任何许可证的情况下创建。
+> [!Note]
+> 虽然本文重点介绍了全局管理员帐户，但您应考虑是否需要以相同的方式保护订阅中的数据（如电子数据展示管理员或安全或合规性管理员帐户）的其他帐户。 <br > 全局管理员帐户可在不添加任何许可证的情况下创建。
   
 ## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步骤 1. 创建专用的 Microsoft 365 全局管理员帐户，并仅在必要时使用
 
 与需要全局管理员权限的用户帐户分配角色相比，管理任务相对较少。 因此，请执行以下步骤，而不是使用已分配有全局管理员角色的日常用户帐户。
   
-1. 确定已分配全局管理员角色的用户帐户集。 您可以使用 azure Active (Azure AD) Directory PowerShell for Graph 命令执行此操作：
+1. 确定已分配全局管理员角色的用户帐户集。 您可以使用以下 Azure Active (Azure AD) Directory PowerShell for Graph 命令执行此操作：
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
     
 如果所需的强验证方法的安全基础结构未就绪且无法在 Microsoft 365 MFA 中正常运行，强烈建议您使用 Microsoft 身份验证应用、电话呼叫或发送到智能手机的电子邮件验证代码，将专用全局管理员帐户配置为使用 MFA 作为临时安全措施。 请勿离开专用全局管理员帐户，而不会通过 MFA 提供额外的保护。
   
-有关详细信息，请参阅 [Plan for 多重身份验证 For Microsoft 365 部署](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)。
+有关详细信息，请参阅适用 [于 Microsoft 365 的 MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)。
   
 若要使用 MFA 和 PowerShell 连接到 Microsoft 365 服务，请参阅以下文章：
 
 - [适用于 Microsoft 365 的 PowerShell （针对用户帐户、组和许可证）](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [Skype for Business Online] 管理-skype for business online-与 microsoft-365-powershell # connect-a-a-a-a-a-a-a-a----多因素身份验证) 
+- [Skype for Business Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>针对企业组织的其他保护
 

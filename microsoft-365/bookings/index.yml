@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: 了解如何设置 Microsoft 预订以在约会基础上向客户提供服务。
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: 了解如何设置 Microsoft 预订以在约会基础上向客户提供服务。
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419291"
+additionalContent:
+  sections:
+  - items:
+    - title: 什么是 Microsoft 预订？
+      summary: 使用基于 web 的预定日历和应用程序安排和管理约会，包括员工的 Outlook 集成和自动通知电子邮件。
+      url: bookings-overview.md
+    - title: 输入你的业务信息
+      summary: 在 Microsoft 预订中，输入你的 "创建你的信息" 页面，包括业务名称、地址、电话号码、网站 URL、徽标和营业时间。
+      url: enter-business-information.md
+    - title: 获取预订应用程序
+      summary: 更改颜色主题并设置外部的 "面向客户的预订" 页面的外观。
+      url: customize-booking-page.md
+    - title: 将员工添加到预订
+      summary: 创建您的教职员工列表并管理教职员工成员的详细信息，如姓名、电话号码和电子邮件地址。
+      url: add-staff.md
+    - title: 安排节假日、休息时间和休假时间
+      summary: 从预订日历中计划 office 节假日和员工时间，以便在指定时间内将员工标记为不可预订。
+      url: schedule-closures-time-off-vacation.md
+    - title: Microsoft 预订中的员工工作时间
+      summary: 在 Microsoft 预订中设置员工的工作时间和可用性。
+      url: employee-hours.md

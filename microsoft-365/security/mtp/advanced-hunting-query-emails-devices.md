@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649339"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419140"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>在设备、电子邮件、应用和标识之间寻找威胁
 
@@ -42,9 +42,9 @@ Microsoft 威胁防护中的[高级求职](advanced-hunting-overview.md)使你�
 使用这些查询可了解如何快速获取有关用户帐户、设备和文件的信息。 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>从电子邮件地址获取用户帐户
-在[涵盖设备和电子邮件的表](advanced-hunting-schema-tables.md)之间构建查询时，您可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 通常，可以使用*本地主机*和电子邮件地址对收件人或发件人地址执行此操作。
+在 [涵盖设备和电子邮件的表](advanced-hunting-schema-tables.md)之间构建查询时，您可能需要从发件人或收件人电子邮件地址获取用户帐户名称。 通常，可以使用 *本地主机* 和电子邮件地址对收件人或发件人地址执行此操作。
 
-在下面的代码片段中，我们使用[tostring ( # B1](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数将本地主机直接提取 `@` 在列中的发件人电子邮件地址之前 `RecipientEmailAddress` 。
+在下面的代码片段中，我们使用 [tostring ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto 函数将本地主机直接提取 `@` 在列中的发件人电子邮件地址之前 `RecipientEmailAddress` 。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -60,10 +60,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>合并 IdentityInfo 表
 
-您可以通过合并或联接[IdentityInfo 表](advanced-hunting-identityinfo-table.md)来获取帐户名称和其他帐户信息。 下面的查询从[EmailEvents 表](advanced-hunting-emailevents-table.md)中获取网络钓鱼和恶意软件检测的列表，然后将该信息与表联接起来， `IdentityInfo` 以获取有关每个收件人的详细信息。 
-
->[!Tip]
-> 此查询用于 `kind=inner` 指定[内部联接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，这将阻止重复数据删除左侧的值或收件人电子邮件地址。
+您可以通过合并或联接 [IdentityInfo 表](advanced-hunting-identityinfo-table.md)来获取帐户名称和其他帐户信息。 下面的查询从 [EmailEvents 表](advanced-hunting-emailevents-table.md) 中获取网络钓鱼和恶意软件检测的列表，然后将该信息与表联接起来， `IdentityInfo` 以获取有关每个收件人的详细信息。 
 
 ```kusto
 EmailEvents
@@ -80,7 +77,10 @@ Department, City, Country
 ```
 
 ### <a name="get-device-information"></a>获取设备信息
-[高级搜寻架构](advanced-hunting-schema-tables.md)在各种表中提供了大量设备信息。 例如， [DeviceInfo 表](advanced-hunting-deviceinfo-table.md)根据定期聚合的事件数据提供了全面的设备信息。 此查询使用 `DeviceInfo` 表检查是否有可能已损坏的用户 (`<account-name>`) 是否登录到任何设备，然后列出在这些设备上触发的警报。
+[高级搜寻架构](advanced-hunting-schema-tables.md)在各种表中提供了大量设备信息。 例如， [DeviceInfo 表](advanced-hunting-deviceinfo-table.md) 根据定期聚合的事件数据提供了全面的设备信息。 此查询使用 `DeviceInfo` 表检查是否有可能已损坏的用户 (`<account-name>`) 是否登录到任何设备，然后列出在这些设备上触发的警报。
+
+>[!Tip]
+> 此查询用于 `kind=inner` 指定 [内部联接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，这将阻止对的左侧值进行重复删除 `DeviceId` 。
 
 ```kusto
 DeviceInfo
@@ -98,7 +98,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>搜寻方案
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>列出收到未成功 zapped 的电子邮件的用户登录活动
-[零小时自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md)在收到恶意电子邮件后对其进行寻址。 如果 ZAP 失败，恶意代码可能最终会在设备上运行并使帐户受到危害。 此查询将检查由 ZAP 未成功处理的电子邮件收件人发出的登录活动。
+[零小时自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 在收到恶意电子邮件后对其进行寻址。 如果 ZAP 失败，恶意代码可能最终会在设备上运行并使帐户受到危害。 此查询将检查由 ZAP 未成功处理的电子邮件收件人发出的登录活动。
 
 ```kusto
 EmailPostDeliveryEvents 

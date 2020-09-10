@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何将 Microsoft 365 许可证单独或基于组成员身份分配给用户帐户。
-ms.openlocfilehash: 60936e52bffa58d50419f771e670848ee76271fd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687633"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417094"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>将 Microsoft 365 许可证分配给用户帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 对于仅限云的标识模型，可以根据创建的方式将 Microsoft 365 许可证分配给用户帐户，具体取决于您的创建方式。
 
@@ -58,5 +58,5 @@ ms.locfileid: "46687633"
 
 - [实施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [部署客户端软件，例如 Microsoft 365 应用程序](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [在 Microsoft 365 中设置移动设备管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [在 Microsoft 365 中设置基本移动性和安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [配置服务和应用程序](configure-services-and-applications.md)
