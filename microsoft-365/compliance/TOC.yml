@@ -936,7 +936,7 @@
 - name: 合规性产品/服务
   items:
     - name: Microsoft 合规性产品/服务
-      href: offering-home.md
+      href: offering-home.yml
     - name: 全球
       items:
         - name: CIS 基准

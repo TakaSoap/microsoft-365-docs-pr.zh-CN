@@ -1,0 +1,45 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+    - name: 设置
+      items:
+        - name: 获取对预订的访问权限
+          href: get-access.md
+        - name: 输入你的业务信息
+          href: enter-business-information.md
+        - name: 定义服务选项
+          href: define-service-offerings.md
+        - name: 安排节假日和休息时间
+          href: schedule-closures-time-off-vacation.md
+        - name: 设置计划策略
+          href: set-scheduling-policies.md
+        - name: 自定义和发布预定页面
+          href: customize-booking-page.md
+        - name: 创建手动预订
+          href: create-a-manual-booking.md
+        - name: 安排节假日和休息时间
+          href: schedule-closures-time-off-vacation.md
+        - name: 员工工时
+          href: employee-hours.md
+        - name: 在预订页面中添加自定义和所需的问题
+          href: add-questions.md
+        - name: 设置缓冲时间
+          href: set-buffer-time.md
+        - name: 指标和活动跟踪
+          href: metrics-and-activity-tracking.md
+        - name: 设置语言和时区
+          href: set-language-time-zones.md
+    - name: 获取预订应用程序
+      href: get-bookings-app.md
+    - name: Microsoft 团队中的预订应用和虚拟访问
+      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+    - name: 比较图表-web 应用程序与团队应用程序
+      href: comparison-chart.md
+    - name: 删除预定日历
+      href: delete-calendar.md
+    - name: 打开或关闭 Microsoft 预订
+      href: turn-bookings-on-or-off.md
+    - name: Microsoft 记帐的报告信息
+      href: reporting-info.md
+    - name: Microsoft) 常见问题解答 (的 Microsoft 预订常见问题
+      href: bookings-faq.md

@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Microsoft Bookings
+summary: 使用 Microsoft 预订安排和管理约会。 包括与 Outlook 和自动通知的集成。
+metadata:
+  title: Microsoft Bookings
+  description: 使用 Microsoft 预订安排和管理约会。 包括与 Outlook 和自动通知的集成。
+  ms.service: bookings
+  ms.topic: landing-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020
+  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419332"
+landingContent:
+- title: 关于 Microsoft 预订
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什么是 Microsoft 预订？
+      url: bookings-overview.md
+  - linkListType: download
+    links:
+    - text: 获取预订应用程序
+      url: get-bookings-app.md
+- title: 设置 Microsoft 预订
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 输入你的业务信息
+      url: enter-business-information.md
+    - text: 设置计划策略
+      url: set-scheduling-policies.md
+    - text: 定义服务选项
+      url: define-service-offerings.md
+    - text: 设置员工工作时间
+      url: employee-hours.md
+    - text: 自定义和发布预定页面
+      url: customize-booking-page.md
+    - text: 创建和员工你的预订
+      url: create-a-manual-booking.md
+- title: 邀请人员预订约会
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 自定义预定页面
+      url: customize-booking-page.md
