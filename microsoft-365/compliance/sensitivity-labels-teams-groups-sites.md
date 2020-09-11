@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357784"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427011"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -201,13 +201,13 @@ ms.locfileid: "47357784"
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>使用 PowerShell 将敏感度标签应用于多个网站
 
-你可以将 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet 与当前 [SharePoint Online 命令行管理程序](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)中的 *SensitivityLabel* 参数一起使用，以将敏感度标签应用于多个网站。 网站可以是任何 SharePoint 网站集或 OneDrive 网站。
+你可以将 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet 与当前 [SharePoint Online 命令行管理程序](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)中的 *SensitivityLabel* 参数一起使用，以将敏感度标签应用于多个网站。 网站可以是任何 SharePoint 网站集或 OneDrive 网站。
 
 请确保你拥有 SharePoint Online 命令行管理程序的 16.0.19418.12000 或更高版本。
 
 1. 使用“**以管理员身份运行**”选项打开 PowerShell 会话。
 
-2. 如果你不知道标签 GUID：[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，获取敏感度标签及其 GUID 的列表。
+2. 如果你不知道标签 GUID：[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)，获取敏感度标签及其 GUID 的列表。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -317,7 +317,7 @@ ms.locfileid: "47357784"
 
    例如，在以管理员身份运行的 PowerShell 会话中，使用全局管理员帐户登录：
 
-2. 通过运行 [ Get-Label ](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet 获取敏感度标签及 GUID 列表：
+2. 通过运行 [ Get-Label ](https://docs.microsoft.com/powershell/module/exchange/get-label) cmdlet 获取敏感度标签及 GUID 列表：
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ ms.locfileid: "47357784"
 
 3. 记下你想要应用到 Microsoft 365 组的敏感度标签的 Guid。
 
-4. 现在，在单独的 Windows PowerShell 窗口中[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+4. 现在，在单独的 Windows PowerShell 窗口中[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 5. 以下列命令为例，获取当前具有“常规”分类的组列表：
 

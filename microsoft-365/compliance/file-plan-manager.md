@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 文件计划为保留标签提供了高级管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399209"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427021"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用文件计划管理保留标签
 
@@ -163,7 +163,7 @@ ms.locfileid: "47399209"
    |CitationUrl|字符串|该属性指定在**预配/引文**文件计划描述符中显示的 URL。|
    |CitationJurisdiction|字符串|该属性指定在**预配/引文**文件计划描述符中显示的司法管辖区或机构。 例如，“美国证券交易委员会 (SEC)”。|
    |Regulatory|字符串|保留为空白。 此属性目前不可用。|
-   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) cmdlet 来查看可用的保留规则。 请注意，因为 EventType 值是组织唯一的，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。|
+   |EventType|String|此属性指定与标签关联的保留规则。 可以使用唯一标识该规则的任何值。 例如：</br>**名称**</br>**可分辨名称 (DN)**</br>**GUID** </br>可使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) cmdlet 来查看可用的保留规则。 请注意，因为 EventType 值是组织唯一的，如果从某个组织导出标签，则将该标签导入其他组织时，不能使用该组织中的 EventType 属性值。|
    |||
 
    下面是包含有关保留标签的信息的模板示例。
