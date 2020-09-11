@@ -525,7 +525,7 @@
 - name: 使用 PowerShell 管理 Microsoft 365
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:
-    - name: 开始使用
+    - name: 入门
       href: getting-started-with-microsoft-365-powershell.md
       items:
         - name: 为什么需要使用 PowerShell
@@ -582,7 +582,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 组
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: 管理 SharePoint Online
+    - name: 管理 SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items:
         - name: 创建 SharePoint Online 网站并添加用户
