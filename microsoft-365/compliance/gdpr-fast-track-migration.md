@@ -4,7 +4,7 @@ description: Microsoft 技术指南 - 用于提交删除请求的 FASTTRACK 迁�
 keywords: FastTrack 迁移, Microsoft 365 教育版, Microsoft 365 文档, GDPR
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632483"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416908"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>用于提交删除请求的 FastTrack 迁移工具集
 
@@ -73,7 +73,7 @@ PowerShell 控制台应用程序上的 PowerShell 库中提供此工具集。若
 
 为了提交 DSR，必须首先使用你的 Office 365 凭据登录：输入正确的凭据将验证你的全局管理员状态并收集租户信息。 
 
-**Login-FastTrackAccount -ApiKey：\<由 FastTrack MVM 提供的 API 密钥\>**
+**登录-FastTrackAccount-ApiKey： \<API Key provided by FastTrack MVM\>**
 
 成功登录后，将存储凭据和密钥，以供 FastTrack 模块在当前 PowerShell 会话的其余部分使用。
 

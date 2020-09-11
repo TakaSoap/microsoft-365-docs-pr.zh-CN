@@ -3,7 +3,7 @@ title: 良好的临床、实验室和生产实践 (GxP)
 description: Azure 和 Office 365 可帮助生命科学组织满足 GxP 法规要求。
 keywords: Microsoft 365, 合规性, 产品/服务
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7a130275588b765514162cd08e37d9d5e512a409
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b96cb357a2e4debff19770a32af98a767afafa4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066157"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415998"
 ---
 # <a name="good-clinical-laboratory-and-manufacturing-practices-gxp"></a>良好的临床、实验室和生产实践 (GxP)
 
 ## <a name="about-gxp"></a>关于 GxP
 
-*GxP*一词是 “良好的实践” 准则和规章的总称。 “x” 表示一个特定的领域 — 临床 (GCP)、生产 (GMP)、分销 (GDP)、实验室 (GLP)、农业 (GAP) 等等。 尽管各国家/地区的要求类似，但没有单一的监管实体或管理机构，每个国家都有自己的指导方针和监管机构。 GxP 法规包括[美国 FDA CFR 标题 21 第 11 部分](https://aka.ms/FDA-CFR)和欧盟 [EudraLex 第 4 卷 — GMP 准则附录 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) 中列出的法规。
+*GxP*一词是 “良好的实践” 准则和规章的总称。 “x” 表示一个特定的领域：临床 (GCP)、生产 (GMP)、分销 (GDP)、实验室 (GLP)、农业 (GAP) 等等。 尽管各国家/地区的要求类似，但没有单一的监管实体或管理机构，每个国家都有自己的指导方针和监管机构。 GxP 法规包括[美国 FDA CFR 标题 21 第 11 部分](https://aka.ms/FDA-CFR)和欧盟 [EudraLex 第 4 卷 — GMP 准则附录 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) 中列出的法规。
 
 法规目标是确保受监管行业中的企业在生产过程中制造出可安全使用并符合严格质量标准的产品。 使用 GxP 流程的计算机化系统需要验证是否符合 GxP 要求，如果系统能够证明其满足这些要求的能力，则认为是合格的。
 
@@ -35,7 +35,7 @@ Microsoft 可帮助从事生命科学产品和服务研究、临床研究、维�
 
 没有适用于云服务提供商的 GxP 认证；但是：
 
-- Microsoft Azure 和 Microsoft Office 365 已针对质量管理和信息安全方面执行了大量独立审核，包括 ISO 9001 (QMS) 和 ISO/IEC 27001 (ISMS)。 这包括定期审核 Microsoft 程序和技术控制措施，并验证有效性。
+- Microsoft Azure 和 Microsoft Office 365 已针对质量管理和信息安全方面执行了大量独立审核，包括 ISO 9001 (QMS) 和 ISO/IEC 27001 (ISMS)。 此评价包括定期审核 Microsoft 程序和技术控制措施，并验证有效性。
 - 此外，Microsoft 认证方法同时还参照了业界最佳实践，包括“良好实践指南”中的*良好自动化生产实践* (GAMP) 系列（来自国际制药工程协会 (ISPE)），以及 *规范 GxP 环境中计算机化系统的良好实践*（来自药物检验合作计划 (PIC/S) PI 011-3）。
 
 尽管这些标准和最佳实践未特别关注 GxP 法规合规性，但其目的和目标是相似的，有助于确保在 Microsoft 云服务中所存储数据的机密性、完整性和可用性。
@@ -47,15 +47,18 @@ Microsoft 聘请 [Montrium](https://www.montrium.com/) 为其执行 GxP 资格�
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
-- [Office 365](https://aka.ms/o365-compliance-framework)
+- Microsoft 365
+- Microsoft Dynamics 365
 
 ## <a name="how-to-implement"></a>如何实现
 
+- [Microsoft 365 GxP 准则](../downloads/microsoft-365-gxp-guidelines-july-2020.pdf)：使用 Microsoft 365 且同时遵守 GxP 最佳做法和法规的白皮书。
+- [Microsoft Dynamics 365 GxP 准则](../downloads/microsoft-dynamics-365-gxp-guidelines-july-2020.pdf)：使用 Microsoft Dynamics 365 且同时遵守 GxP 最佳做法和法规的白皮书。
 - [Azure GxP 准则](https://aka.ms/gxpcompliance)：使用 Azure 且同时遵守 GxP 最佳做法和法规的综合性工具集。
 - [将 Azure 与 GxP 系统配合使用](https://aka.ms/GXP-Azure-Strategies)：帮助生命科学组织制定关于构建 GxP 应用的策略。
 - FDA CFR 标题 21 第 11 部分指南：获得有关建立符合 FDA 电子记录准则的 [Azure](https://aka.ms/Azure-FDA-Guidelines) 和 [Office 365](https://aka.ms/o365-qualification-guideline) 资格认证策略的帮助。
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 **能否在我组织的 GxP 合规性工作中使用 Microsoft 的 GxP 合规性？**
 
