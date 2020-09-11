@@ -16,30 +16,31 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: be497751-596f-431d-b256-0a89d36a47ce
-description: 摘要：联合和云解决方案提供商 (CSP) 合作伙伴可以使用 Windows PowerShell 管理 Microsoft 365 客户租户。
-ms.openlocfilehash: d4109c09a14fb5644d34daf24383053536440871
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 联合和云解决方案提供商 (CSP) 合作伙伴可以使用 Windows PowerShell 管理 Microsoft 365 客户租户。
+ms.openlocfilehash: a7b2fbb5423e3b923e17aa2d9c488e7dd085be35
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688048"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429874"
 ---
-# <a name="manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>使用 Windows PowerShell 管理 Microsoft 365，以获取委派访问权限 () 合作伙伴的权限
+# <a name="how-to-manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-partners"></a>如何使用 Windows PowerShell 为委派访问权限合作伙伴管理 Microsoft 365
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 他们通常是面向其他公司的网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其客户的服务产品中。 在销售 Microsoft 365 订阅时，会自动为他们代表 (AOBO) 权限授予对 customer 租赁的管理权限，以便他们可以管理和报告客户租赁。 最大程度上，这在 Microsoft 365 管理中心中非常困难且耗时。 执行管理任务（如列出所有客户 **TenantIds** 及其域，或通过使用 PowerShell for Microsoft 365 为其分配的许可证）要容易得多。 在某些情况下，可以仅在 PowerShell for Microsoft 365 中执行这些管理任务。 下面是联合和 CSP 合作伙伴最常用来管理其客户租赁的方案示例：
+委派访问权限 (DAP) 合作伙伴是联合和云解决方案提供商 (CSP) 合作伙伴。 很多是网络或电信提供商。 他们将 Microsoft 365 订阅捆绑到其服务产品中。 在销售 Microsoft 365 订阅时，会自动为其代表 (AOBO) 权限授予对客户的租赁的管理权限，以便他们可以管理和报告这些租赁。 这些任务在 Microsoft 365 管理中心中非常困难。 使用适用于 Microsoft 365 的 PowerShell 可以更轻松地执行管理任务，例如：
+- 列出所有客户 **TenantIds** 及其域 
+- 确定客户租赁中的所有用户及其分配的许可证
+> [!NOTE]
+> 某些管理任务只能在 PowerShell 中完成。
+
+下面的文章展示了联合和 CSP 合作伙伴如何使用 PowerShell 来管理其客户租赁：
   
-## 
-
 - [使用 Windows PowerShell 为 Microsoft 365 租户管理 () 合作伙伴的委派访问权限](manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md)
     
 - [使用 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴将域添加到客户端租赁](add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md)
     
-- [通过远程 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴连接到 Exchange Online 租户](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
+- [连接到 Exchange Online PowerShell](connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md)
     
 - [通过 Windows PowerShell 为委派访问权限 (DAP) 合作伙伴检索客户报告数据](retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md)
-    
-
-    
-
+   

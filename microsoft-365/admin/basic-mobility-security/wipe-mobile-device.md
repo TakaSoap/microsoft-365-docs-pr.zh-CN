@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用内置的基本移动性和安全性从已注册的设备中删除信息。
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336739"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429946"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本移动和安全性中擦除移动设备
 
@@ -39,7 +39,7 @@ ms.locfileid: "47336739"
 
 - **擦除设备 (出厂重置或删除公司数据) 时 **，设备将从受管理的设备列表中删除。
     
-- **自动重置设备**：您可以设置基本移动性和安全策略，以便在用户未成功输入设备密码一段特定次数后自动出厂时重置设备。 为此，请按照 " [基本移动性和安全性" 中的创建设备安全策略](create-device-security-policies-in-basic-mmobility-and-security.md)中的步骤操作。
+- **自动重置设备**：您可以设置基本移动性和安全策略，以便在用户未成功输入设备密码一段特定次数后自动出厂时重置设备。 为此，请按照 " [基本移动性和安全性" 中的创建设备安全策略](create-device-security-policies.md)中的步骤操作。
     
 - 如果想要在擦除设备时**知道用户体验**，请参阅  [用户和设备影响是什么？](#whats-the-user-and-device-impact)。   
 
@@ -91,4 +91,4 @@ ms.locfileid: "47336739"
 
 ## <a name="related-topics"></a>相关主题
 
-[设置基本移动性和安全性](set-up-basic-mobility-and-security.md)
+[设置基本移动性和安全性](set-up.md)
