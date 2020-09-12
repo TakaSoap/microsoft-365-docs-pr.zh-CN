@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 了解如何使用 PowerShell 管理 Microsoft 365 用户、许可证和365应用。
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429898"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547910"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>使用 PowerShell 管理 Microsoft 365
 
@@ -47,7 +47,7 @@ PowerShell for Microsoft 365 是一种功能强大的管理工具，可补充 Mi
 
     如果你已安装 Microsoft 365 模块，并且想要使用自动化命令来管理 SharePoint，请从这里开始。
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     若要使用自动化命令来管理 Exchange Online，请从本主题入手。
 
@@ -55,7 +55,7 @@ PowerShell for Microsoft 365 是一种功能强大的管理工具，可补充 Mi
 
     如果您已安装 PowerShell 365 模块，并希望从预先存在的系统中迁移您的电子邮件，请从这里开始。
 
-- [**安全与合规中心**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**安全与合规中心**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     如果您想要使用自动化命令来管理安全 & 合规性中心 PowerShell，请从这里开始。
 

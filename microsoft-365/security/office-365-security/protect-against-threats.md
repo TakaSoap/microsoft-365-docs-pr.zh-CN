@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Microsoft 365 中的威胁防护，并配置如何将其用于组织。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417118"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547358"
 ---
 # <a name="protect-against-threats"></a>保护免遭威胁侵害
 
@@ -230,17 +230,17 @@ SharePoint、OneDrive 和团队等工作负荷是为协作而构建的。 使用
 
 5. 查看 (，并根据需要编辑) 组织的 [安全附件策略](set-up-atp-safe-attachments-policies.md) 和 [安全链接策略](set-up-atp-safe-links-policies.md)。
 
-6.  (推荐) 为全局管理员或 SharePoint Online 管理员，请运行 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将 _DisallowInfectedFileDownload_ 参数设置为 *true*。
+6.  (推荐) 为全局管理员或 SharePoint Online 管理员，请运行 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将 _DisallowInfectedFileDownload_ 参数设置为 `$true` 。
 
-   - 如果将参数设置为 *true，则* 会阻止对检测到的文件 (删除) 除外的所有操作。 用户无法打开、移动、复制或共享检测到的文件。
+   - `$true` 阻止除 Delete) 检测到的文件之外的所有操作 (。 用户无法打开、移动、复制或共享检测到的文件。
+   - `$false` 阻止除 "删除" 和 "下载" 以外的所有操作。 用户可以选择接受风险并下载检测到的文件。
 
-   - 将参数设置为 *false* 将阻止除 "删除" 和 "下载" 以外的所有操作。 用户可以选择接受风险并下载检测到的文件。
-   > [!TIP] 若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用 [Powershell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
+   > [!TIP]
+   > 若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用 [Powershell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
 
 7. 允许最长30分钟，你的更改将传播到所有 Microsoft 365 数据中心。
 
-
-#### <a name="now-set-up-alerts-for-detected-files"></a>现在为检测到的文件设置通知
+### <a name="now-set-up-alerts-for-detected-files"></a>现在为检测到的文件设置通知
 
 若要在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时收到通知，可以设置警报。
 
@@ -266,9 +266,10 @@ SharePoint、OneDrive 和团队等工作负荷是为协作而构建的。 使用
 
 > [!NOTE]
 > 完成配置后，请使用以下链接启动工作负荷调查：
->- [查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息](malicious-files-detected-in-spo-odb-or-teams.md)
->- [在 SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时要执行的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md) 
+>
+> - [查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [在 SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时要执行的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [在 Microsoft 365 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>第6部分-要配置的其他设置
 

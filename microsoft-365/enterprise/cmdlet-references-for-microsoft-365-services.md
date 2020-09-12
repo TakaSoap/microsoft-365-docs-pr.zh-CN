@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: 查找适用于 Azure AD、Exchange Online、SharePoint Online、Skype for Business Online 和安全 & 合规性的 Microsoft 365 PowerShell cmdlet 参考主题。
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688004"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547114"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 服务的 cmdlet 参考
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 有关各种 Microsoft 365 服务的 Cmdlet 参考主题提供了有关如何使用每个 cmdlet 的详细信息和说明。 此外，每个具有 PowerShell 支持的 Microsoft 365 服务都需要不同的连接说明。
   
@@ -42,7 +42,7 @@ ms.locfileid: "46688004"
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online PowerShell cmdlet
 
-Exchange Online cmdlet 参考主题位于[Exchange Online PowerShell 文档](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)的 "**参考**" 部分。
+Exchange Online cmdlet 参考主题位于[Exchange Online PowerShell 文档](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)的 "**参考**" 部分。
   
 有关 Exchange Online PowerShell 的连接说明，请单击 " [连接到 Exchange Online powershell](https://go.microsoft.com/fwlink/p/?LinkId=396554)"。
   
@@ -61,17 +61,14 @@ Exchange Online cmdlet 参考主题位于[Exchange Online PowerShell 文档](htt
   
 有关 Skype for business Online PowerShell 的连接说明，请单击 " [使用 PowerShell 管理 Skype For Business online](manage-skype-for-business-online-with-microsoft-365-powershell.md)"。
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>安全与合规中心 PowerShell cmdlet
+## <a name="security--compliance-center-powershell-cmdlets"></a>安全 & 合规性中心 PowerShell cmdlet
 
-Microsoft 365 安全 &amp; 合规中心 cmdlet 参考主题位于[Exchange Online PowerShell 文档](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)的 "**参考**" 部分。
+Microsoft 365 Security & 合规性中心 cmdlet 参考主题位于[Security & 合规性 PowerShell 文档](https://docs.microsoft.com/powershell/exchange/scc-powershell)的 "**参考**" 部分。
   
-有关安全 &amp; 合规中心 powershell 的连接说明，请单击 ["连接到安全 &amp; 合规性中心 powershell"](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+有关安全性 & 合规性中心 PowerShell 的连接说明，请单击 ["连接到安全 & 合规性中心 powershell"](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-
-  
 ## <a name="see-also"></a>另请参阅
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
-

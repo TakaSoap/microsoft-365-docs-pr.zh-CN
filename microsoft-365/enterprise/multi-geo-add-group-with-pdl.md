@@ -13,12 +13,12 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 description: 了解如何在多地理位置环境中创建具有指定首选数据位置的 Microsoft 365 组。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0906d0b4881dd69bbf47cbb536c6c448a1a4f611
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 5af32827d11289f7a966311080d2c15197786799
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687905"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547730"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-pdl"></a>创建具有特定 PDL 的 Microsoft 365 组
 
@@ -57,4 +57,4 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ## <a name="related-topics"></a>相关主题
 
-[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)

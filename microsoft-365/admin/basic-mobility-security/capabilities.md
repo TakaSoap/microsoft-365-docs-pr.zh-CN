@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性可帮助您保护和管理移动设备。
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430097"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545892"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本移动性和安全性的功能
 
@@ -166,9 +166,9 @@ Windows 10 的访问控制需要一个包含 Azure AD Premium 的订阅，并且
 |阻止与可移动存储的连接 |是|是|否|
 |阻止蓝牙连接 |是|是|否|
 
-##  <a name="additional-settings"></a>其他设置 
+## <a name="additional-settings"></a>其他设置
 
-您可以使用 PowerShell cmdlet 设置以下附加策略设置。 有关详细信息，请参阅 [Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
+您可以通过使用安全 & 合规性中心 PowerShell cmdlet 来设置以下附加策略设置。 有关详细信息，请参阅 [Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)。
 
 |**设置名称**|**iOS 7.1 及更高版本**|**Android 5 及更高版本**|
 |:-----|:-----|:-----|

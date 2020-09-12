@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 设置基本移动性和安全性以保护和管理用户的移动设备。
-ms.openlocfilehash: cb010668d95e51edfbc913caa308ddd830d674e2
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430082"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545804"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>设置基本移动性和安全性
 
@@ -36,11 +36,10 @@ Microsoft 365 的内置基本移动性和安全性可帮助您保护和管理用
 ## <a name="activate-the-basic-mobility-and-security-service"></a>激活 "基本移动性和安全服务"
 
 1. 使用全局管理员帐户登录到 Microsoft 365。
-    
 
 2. 请转到 [激活基本移动性和安全性](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。
-    
-    可能需要一段时间来激活基本的移动性和安全性。 完成后，你将收到一封说明要执行的后续步骤的电子邮件。
+
+   可能需要一段时间来激活基本的移动性和安全性。 完成后，你将收到一封说明要执行的后续步骤的电子邮件。
 
 ## <a name="set-up-mobile-device-management"></a>设置移动设备管理
 
@@ -58,38 +57,36 @@ Microsoft 365 的内置基本移动性和安全性可帮助您保护和管理用
 
 若要管理 iPad 和 Iphone 等 iOS 设备，您需要创建 APNs 证书。
 
-1. 使用全局管理员帐户登录到 Microsoft 365。   
+1. 使用全局管理员帐户登录到 Microsoft 365。
 
-2. 在浏览器中键入：  [https://protection.office.com](https://protection.office.com/) 。  
+2. 在浏览器中键入：  [https://protection.office.com](https://protection.office.com/) 。
 
-3. 选择 " **数据丢失防护**   >  **设备管理**"，并**为 iOS 设备选择 APNs 证书**。   
+3. 选择 " **数据丢失防护**   >  **设备管理**"，并**为 iOS 设备选择 APNs 证书**。
 
-4. 在 "Apple 推送通知证书设置" 页上，选择 " **下一步**"。  
+4. 在 "Apple 推送通知证书设置" 页上，选择 " **下一步**"。
 
 5. 选择 " **下载你的 CSR 文件**   "，并将证书签名请求保存到你将记住的计算机上的某个位置。 选择 " **下一步**"。
-    
+
 6. 在 "创建 APNs 证书" 页上：
-    
-    - 选择 "Apple APNS 门户" 打开 "Apple 推送证书" 门户。
-    - Sign in with an Apple ID.
 
-    >[!IMPORTANT]
-    >Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
+   - 选择 "Apple APNS 门户" 打开 "Apple 推送证书" 门户。
+   - Sign in with an Apple ID.
 
-    - 选择 "创建证书" 并接受 "使用条款"。
-    
-    - Browseto 从 Microsoft 365 和 selectUpload 下载到您的计算机的证书签名请求。
-    
-    - 由 Apple 推送证书门户创建到你的计算机的 Downloadthe APN 证书。
+     > [!IMPORTANT]
+     > Use a company Apple ID associated with an email account that will remain with your organization even if the user who manages the account leaves. Save this ID because you'll need to use the same ID when it's time to renew the certificate.
 
-    >[!TIP]
-    >If you're having trouble downloading the certificate, refresh your browser.
+   - 选择 "创建证书" 并接受 "使用条款"。
+   - 浏览到您从 Microsoft 365 和 selectUpload 下载到您的计算机的证书签名请求。
+   - Download the APN certificate created by the Apple Push Certificate Portal to your computer.
 
-7. 返回到 Microsoft 365，然后选择 " **下一步**"。   
+     > [!TIP]
+     > If you're having trouble downloading the certificate, refresh your browser.
 
-8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.   
+7. 返回到 Microsoft 365，然后选择 " **下一步**"。
 
-9. 选择 "  **完成**"。  
+8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+
+9. 选择 "  **完成**"。
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>步骤3：建议 () 设置多重身份验证
 
@@ -103,25 +100,30 @@ Microsoft 365 的内置基本移动性和安全性可帮助您保护和管理用
 
 下一步是创建和部署设备安全策略，以帮助保护 Microsoft 365 组织数据。 例如，如果用户通过创建将策略锁定在5分钟无活动状态并在三次登录失败后擦除设备后锁定设备的策略，则可以帮助防止数据丢失。
 
-1. 使用全局管理员帐户登录到 Microsoft 365。 
+1. 使用全局管理员帐户登录到 Microsoft 365。
 
 2. 选择 " [激活移动设备管理](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)"。 如果服务处于激活状态，则激活步骤将会看到用于 [管理设备](https://admin.microsoft.com/adminportal/home#/MifoDevices)的链接   。
-    
+
 3. 转到 " **设备策略**"。
 
-     :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本安全性和移动性策略设置":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本安全性和移动性策略设置":::
 
 4. 按照在 [基本移动性和安全性中创建设备安全策略中](create-device-security-policies.md)的步骤创建和部署适用于您的组织的设备安全策略。
 
->[!TIP]
-    - 当您创建新策略时，您可能希望将策略设置为允许访问和报告策略违规，而用户设备不符合该策略。 这使您可以查看策略影响了多少个移动设备，而不会阻止对 Microsoft 365 的访问。<br/>-在将新策略部署到组织中的所有人之前，我们建议您在少量用户使用的设备上对其进行测试。<br/>-此外，在部署策略之前，让你的组织了解在基本移动性和安全性中注册设备的潜在影响。 根据您设置策略的方式，不符合策略的设备 (不符合的设备) 可能阻止访问 Microsoft 365。 如果擦除设备，则可能会删除已注册设备上的应用程序、照片和其他个人信息，不兼容的设备也可能会被删除。 有关详细信息，请参阅 [在基本移动和安全中擦除移动设备](wipe-mobile-device.md)。
-    
+> [!TIP]
+>
+> - 当您创建新策略时，您可能希望将策略设置为允许访问和报告策略违规，而用户设备不符合该策略。 这使您可以查看策略影响了多少个移动设备，而不会阻止对 Microsoft 365 的访问。
+>
+> - 在将新策略部署到组织中的所有人之前，我们建议您在少数用户使用的设备上对其进行测试。
+>
+> - 此外，在部署策略之前，让你的组织了解在基本移动性和安全性中注册设备的潜在影响。 根据您设置策略的方式，不符合策略的设备 (不符合的设备) 可能阻止访问 Microsoft 365。 如果擦除设备，则可能会删除已注册设备上的应用程序、照片和其他个人信息，不兼容的设备也可能会被删除。 有关详细信息，请参阅 [在基本移动和安全中擦除移动设备](wipe-mobile-device.md)。
+
 ## <a name="make-sure-users-enroll-their-devices"></a>确保用户注册其设备
 
 创建并部署移动设备管理策略后，组织中的每个许可的 Microsoft 365 用户在下一次从其移动设备登录到 Microsoft 365 时都将收到一个注册邮件。 他们必须先完成注册和激活步骤，然后才能访问 Microsoft 365 电子邮件和文档。 有关详细信息，请参阅 [使用基本移动性和安全性注册移动设备](enroll-your-mobile-device.md)。
 
->[!IMPORTANT]
->如果注册过程不支持用户的首选语言，则用户可能会在使用其他语言的移动设备上接收注册通知和步骤。 目前，移动设备上的注册过程不支持 Microsoft 365 中支持的所有语言。
+> [!IMPORTANT]
+> 如果注册过程不支持用户的首选语言，则用户可能会在使用其他语言的移动设备上接收注册通知和步骤。 目前，移动设备上的注册过程不支持 Microsoft 365 中支持的所有语言。
 
 具有 Android 或 iOS 设备的用户需要在注册过程中安装公司门户应用程序。
 

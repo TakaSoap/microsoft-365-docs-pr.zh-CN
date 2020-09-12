@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_TLGs
 description: 使用此测试实验室指南可为 Microsoft 365 企业版测试环境启用特权访问管理。
-ms.openlocfilehash: 28fd27c3059fe25da5da8aaf8700b84c5989b408
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d8d92aa86076e323e4b5bb5c8eb1385edcac420c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695142"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545938"
 ---
 # <a name="privileged-access-management-for-your-microsoft-365-for-enterprise-test-environment"></a>适用于企业测试环境的 Microsoft 365 的特权访问管理
 
@@ -62,7 +62,7 @@ ms.locfileid: "46695142"
 
 ### <a name="test-ability-to-execute-a-task-not-defined-in-a-privileged-access-policy"></a>测试执行未在特权访问策略中定义的任务的能力
 
-首先，使用在测试环境中配置为全局管理员的用户的凭据连接到 Exchange 管理 PowerShell，并尝试创建新的日记规则。 尚未在组织的特权访问策略中定义 [新的-new-journalrule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) 任务。
+首先，使用在测试环境中配置为全局管理员的用户的凭据连接到 Exchange 管理 PowerShell，并尝试创建新的日记规则。 尚未在组织的特权访问策略中定义 [新的-new-journalrule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule) 任务。
 
 1. 在本地计算机上， **Microsoft Corporation**  >  使用您的测试环境的全局管理员帐户在 microsoft Corporation**microsoft Exchange online 远程 powershell 模块**中打开并登录到 Exchange online 远程 powershell 模块。
 

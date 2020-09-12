@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解 Office 365 德国。
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307273"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545914"
 ---
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307273"
 
 Office 365 德国在欧洲可提供的 Office 365 服务是一种不同的选择。 它通过在由德国法律管理的唯一数据受信者模型中为数字工作提供业界一流的工作效率服务、从德国数据中心 EFTA 到德国的数据访问和控制措施，帮助您满足德国最受管控客户的需求、欧盟 (EU) 以及欧洲免费贸易协会 () 。
   
-数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。德国法律规定，未经数据被信任方的批准或监督，不能访问客户数据。
+数据被信任方 T-Systems International 是一家独立的德国公司，同时也是德国电信的子公司，负责控制对客户数据的物理和逻辑访问。 未经德国法律管辖的数据受信者的批准或监督，不能访问客户数据。
   
-客户需要进行移动，Office 365 德国的隔离限制了其解决客户所需的灵活性和一致性的能力。 自2018年8月起，我们不再接受新客户或从当前可用的 Microsoft 云德国部署任何新服务。 有关更多详细信息，请参阅以下博客文章： [Microsoft 从2019德国的新 datacentres 提供云服务，以满足不断发展的客户需求](https://go.microsoft.com/fwlink/p/?linkid=839016)。
+客户需要进行移动，Office 365 德国的隔离限制了其解决客户所需的灵活性和一致性的能力。 自2018年8月起，我们不再接受新客户或从当前可用的 Microsoft 云德国部署任何新服务。 有关详细信息，请参阅以下博客文章： [Microsoft 从2019德国的新 datacentres 提供云服务，以满足不断发展的客户需求](https://go.microsoft.com/fwlink/p/?linkid=839016)。
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 Germany 提供哪些 Microsoft 联机服务？
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 德国提供了哪些 Microsoft 在线服务？
 
 Office 365 德国计划产品在此独立环境中尽可能与全球服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5、SPE 和其他服务将在 Office 365 德国正式上市后提供。 
   
@@ -89,7 +89,7 @@ Office 365 德国计划产品在此独立环境中尽可能与全球服务保持
   
 ## <a name="general-information"></a>一般信息
 
-|||
+|Item|信息|
 |-----|-----|
 |登录门户  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |订阅、帐单和技术支持  <br/> |德语和英文版提供的基于德国的支持有关详细信息，请参阅 [联系支持人员以获取商业产品-管理员帮助](../contact-support-for-business-products.md)。  <br/> |

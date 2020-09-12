@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 管理员可以了解如何管理组织中的用户所做的自我服务购买。
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429994"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546670"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助购买（管理员）
 
@@ -38,7 +38,7 @@ ms.locfileid: "47429994"
 ## <a name="view-self-service-subscriptions"></a>查看自助服务订阅
 
 1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
-2. 在 " **优化结果**" 下，从 " **帐户类型** " 下拉选择 " **自助服务**"。
+2. 在 " **产品** " 选项卡上，选择 "筛选器" 图标，然后选择 " **自助服务**"。
 3. 若要查看订阅的更多详细信息，请从列表中选择一个订阅。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看拥有自助服务购买订阅许可证的所有者
@@ -67,13 +67,12 @@ ms.locfileid: "47429994"
 
 您可以分配现有许可证，或通过现有协议为分配到自助购买的用户购买其他订阅。 在分配了这些集中购买的许可证之后，可以请求该购买者取消其现有订阅。
 
-1. 使用全局管理员或帐单管理员帐户登录到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a> 。
-2. 转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a>" 页。
-3. 查找并选择要购买的产品，然后选择 " **购买**"。
-4. 完成其余步骤以完成购买。
-5. 按照查看在第6步中要引用的用户列表中 [查看拥有自助购买订阅的许可证](#view-who-has-licenses-for-a-self-service-purchase-subscription) 的步骤中的步骤操作。
-6. 将许可证分配给在其他订阅中具有许可证的每个人。 有关完整步骤，请参阅向 [用户分配许可证](../../admin/manage/assign-licenses-to-users.md)。
-7. 请与购买自助服务购买订阅的人员联系，让他们取消该订阅。
+1. 在 "管理中心" 中，转到 " **付费** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">购买服务</a> " 页。
+2. 查找并选择要购买的产品，然后选择 " **购买**"。
+3. 完成其余步骤以完成购买。
+4. 按照 [查看具有自助服务购买订阅的许可证的视图](#view-who-has-licenses-for-a-self-service-purchase-subscription) 中的步骤，在下一步中导出要引用的用户列表。
+5. 将许可证分配给在其他订阅中具有许可证的每个人。 有关完整步骤，请参阅向 [用户分配许可证](../../admin/manage/assign-licenses-to-users.md)。
+6. 请与购买自助服务购买订阅的人员联系，让他们 [取消该](manage-self-service-purchases-users.md#cancel-a-subscription)订阅。
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>接管自助服务购买订阅
 

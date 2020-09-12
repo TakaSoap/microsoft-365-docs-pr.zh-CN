@@ -18,29 +18,29 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本移动性和安全性来创建保护组织信息的设备策略。
-ms.openlocfilehash: eddd3454e8f00bab7a830e7710331cafd097d7de
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430094"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545880"
 ---
-# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略 
+# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本移动性和安全性中创建设备安全策略
 
 您可以使用基本移动性和安全性来创建设备策略，以帮助保护 Microsoft 365 上的组织信息免遭未经授权的访问。 您可以将策略应用于组织中的任何移动设备，其中设备的用户具有适用的 Microsoft 365 许可证，并已在基本移动和安全性中注册了该设备。
 
 ## <a name="before-you-begin"></a>准备工作
 
->[!IMPORTANT]
->在创建移动设备策略之前，必须激活并设置基本的移动性和安全性。 有关详细信息，请参阅基本移动性和安全性概述。
+> [!IMPORTANT]
+> 在创建移动设备策略之前，必须激活并设置基本的移动性和安全性。 有关详细信息，请参阅基本移动性和安全性概述。
 
 - 了解基本移动性和安全性所支持的设备、移动设备应用和安全设置。 请参阅 [基本移动性和安全性的功能](capabilities.md)。
 - 创建包含要向其部署策略的 Microsoft 365 用户的安全组，以及您可能想要排除其阻止访问 Microsoft 365 的用户的安全组。 我们建议您先向少量用户部署新策略，以此来测试策略，然后再为组织部署此策略。 您可以创建和使用仅包含自己的安全组或可为您测试该策略的少数 Microsoft 365 用户。 若要了解有关安全组的详细信息，请参阅 [创建、编辑或删除安全组](https://go.microsoft.com/fwlink/p/?LinkId=518555)。
 - 若要在 Microsoft 365 中创建和部署基本移动性和安全策略，您需要是 Microsoft 365 全局管理员。有关详细信息，请参阅 [安全性 & 合规性中心中的权限](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
 - 在部署策略之前，让你的组织了解在基本移动性和安全性中注册设备的潜在影响。 根据您设置策略的方式，可以阻止不兼容的设备访问 Microsoft 365 和数据，包括已注册设备上已安装的应用程序、照片和个人信息，以及可以删除的数据。
 
->[!NOTE]
->在 MDM for Microsoft 365 商业标准中创建的策略和访问规则替代 exchange ActiveSync 移动设备邮箱策略和在 Exchange 管理中心中创建的设备访问规则。 在 MDM for Microsoft 365 商业标准中注册设备后，应用于该设备的任何 Exchange ActiveSync 移动设备邮箱策略或设备访问规则都将被忽略。 若要了解有关 Exchange ActiveSync 的详细信息，请参阅 exchange [Online 中的 Exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+> [!NOTE]
+> 在 MDM for Microsoft 365 商业标准中创建的策略和访问规则替代 exchange ActiveSync 移动设备邮箱策略和在 Exchange 管理中心中创建的设备访问规则。 在 MDM for Microsoft 365 商业标准中注册设备后，应用于该设备的任何 Exchange ActiveSync 移动设备邮箱策略或设备访问规则都将被忽略。 若要了解有关 Exchange ActiveSync 的详细信息，请参阅 exchange [Online 中的 Exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步骤1：创建设备策略并部署到测试组
 
@@ -50,7 +50,7 @@ ms.locfileid: "47430094"
 
 2. 选择 " **创建策略**"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本移动性和安全策略设置":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本移动性和安全策略设置":::
 
 3. 在 " **策略设置** " 页上，指定要应用于组织中的移动设备的要求。
 
@@ -71,7 +71,7 @@ ms.locfileid: "47430094"
 3. 检查已应用此策略的用户设备的状态。 您希望管理设备的 **状态** **。**
 4. 您还可以在选择设备后，通过单击 "**恢复时恢复**" 或 "从**管理**中**删除公司数据**" 按钮，在设备上执行完全或选择性擦除。 有关说明，请参阅 [擦除 Microsoft 365 中的移动设备。
 
-步骤3：将策略部署到您的组织
+## <a name="step-3-deploy-a-policy-to-your-organization"></a>步骤3：将策略部署到您的组织
 
 在创建设备策略并验证它是否按预期方式工作后，将其部署到您的组织。
 
@@ -85,7 +85,7 @@ ms.locfileid: "47430094"
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>步骤4：阻止不受支持的设备的电子邮件访问
 
-为了帮助保护组织信息的安全，应阻止对基本移动性和安全性不受支持的移动设备的应用程序访问 Microsoft 365 电子邮件。 有关受支持设备的列表，请参阅 [支持的设备](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。 
+为了帮助保护组织信息的安全，应阻止对基本移动性和安全性不受支持的移动设备的应用程序访问 Microsoft 365 电子邮件。 有关受支持设备的列表，请参阅 [支持的设备](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。
 
 **阻止应用程序访问：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "47430094"
 2. 选择 " **管理组织范围的设备访问设置**"。
 3. 若要阻止不受支持的设备，请在 "**如果 MDM For Microsoft 365 不支持设备**" 下选择 "**阻止**"，然后选择 "**保存**"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本移动性和安全块访问选项":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本移动性和安全块访问选项":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>步骤 5：选择要从条件访问检查中排除的安全组
 
@@ -103,7 +103,7 @@ ms.locfileid: "47430094"
 
 2. 选择 " **管理组织范围的设备访问设置**"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本移动性和安全性创建策略选项":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本移动性和安全性创建策略选项":::
 
 3. 选择 " **添加** " 以添加安全组，其中包含要从阻止访问 Microsoft 365 的用户排除的用户。 当用户已添加到此列表时，他们可以在使用不受支持的设备时访问 Microsoft 365 电子邮件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "47430094"
 
 6. 在 " **组织范围的设备访问设置** " 面板中，选择 " **保存**"。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本移动和安全允许访问选项":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本移动和安全允许访问选项":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>安全策略对不同设备类型的影响是什么？
 
@@ -138,14 +138,15 @@ ms.locfileid: "47430094"
 当您删除策略或从已部署该策略的组中删除用户时，策略设置将从用户设备中删除 Microsoft 365 电子邮件配置文件和缓存的电子邮件。 请参阅下表以查看为不同设备类型删除的内容。
 
 |**删除的内容**|**iOS 6 及更高版本**|**Android 4 及更高版本 (包括 Samsung KNOX**|
-|:-----|:-----|:----------------------|
+|:-----|:-----|:-----|
 |托管电子邮件配置文件<sup>1</sup>|是|否|
 |阻止云备份|是|否|
-<sup>1</sup>如果在部署策略时选择了 " **电子邮件配置文件** "，则该配置文件中的托管电子邮件配置文件和缓存的电子邮件将从用户设备中删除。
+
+<sup>1</sup> 如果部署策略时选择了 " **电子邮件配置文件** "，则该配置文件中的托管电子邮件配置文件和缓存的电子邮件将从用户设备中删除。
 
 策略将从移动设备中删除。对于每个用户，该策略将应用于下次其设备签入基本移动性和安全性。 如果部署适用于这些用户设备的新策略，系统会提示他们重新注册基本移动性和安全性。
 
-您还可以完全擦除设备，也可以有选择性地擦除设备中的组织信息。 有关详细信息，请参阅 [在基本移动和安全中擦除移动设备](wipe-mobile-device.md)。 
+您还可以完全擦除设备，也可以有选择性地擦除设备中的组织信息。 有关详细信息，请参阅 [在基本移动和安全中擦除移动设备](wipe-mobile-device.md)。
 
 ## <a name="related-topics"></a>相关主题
 

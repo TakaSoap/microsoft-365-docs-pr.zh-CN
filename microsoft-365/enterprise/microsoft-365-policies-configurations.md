@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332745"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546638"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -73,10 +73,9 @@ ms.locfileid: "47332745"
 
 请务必在数据、标识和设备中使用一致的保护级别。 例如，如果您实施了本指南，请务必保护您的数据处于可比较的级别。 
 
-Office 365 体系结构模型的 **标识和设备保护** 显示了可比较的功能。
+Microsoft 365 体系结构模型的 **标识和设备保护** 显示可比较的功能。
 
-![海报 "适用于 Office 365 的标识和设备保护" 的缩略图](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
+[![用于 Microsoft 365 海报的标识和设备保护的缩略图](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| 形式查看[下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 此外，请参阅为 [数据隐私法规部署信息保护](../solutions/information-protection-deploy.md) 解决方案，以保护存储在 Microsoft 365 中的信息。
 
@@ -105,10 +104,11 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 |:-------|:-----|:-------|
 | [多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | MFA 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了失窃凭据可用于访问环境的风险。 Microsoft 365 对基于 MFA 的登录使用 Azure 多因素身份验证服务。 | Microsoft 365 E3 或 E5 |
 | [条件访问](/azure/active-directory/conditional-access/overview) | Azure AD 评估用户登录的条件，并使用条件访问策略确定允许的访问权限。 例如，在本指南中，我们将向您介绍如何创建条件访问策略，以要求访问敏感数据的设备合规性。 这极大地降低了具有自己的设备和被盗凭据的黑客可以访问您的敏感数据的风险。 它还保护了设备上的敏感数据，因为这些设备必须满足运行状况和安全性的特定要求。 | Microsoft 365 E3 或 E5 |
-| [Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups) | 条件访问规则、具有 Intune 的设备管理，甚至对组织中的文件和网站的权限依赖于用户帐户或 Azure AD 组的分配。 我们建议您创建与您实施的保护级别相对应的 Azure AD 组。 例如，您的执行人员可能更高的黑客的价值目标。 因此，将这些员工的用户帐户添加到 Azure AD 组并将该组分配给条件访问策略和其他强制实施更高级别的保护的策略是有意义的。 | Microsoft 365 E3 或 E5 |
-| [设备注册](/azure/active-directory/devices/overview) | 将设备注册到 Azure AD 以创建设备的标识。 此标识用于在用户登录时对设备进行身份验证，并应用需要加入域或合规的电脑的条件访问规则。 在本指南中，我们使用设备注册自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。 | Microsoft 365 E3 或 E5 |
+| [Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups) | 条件访问策略、具有 Intune 的设备管理，甚至对组织中的文件和网站的权限依赖于用户帐户或 Azure AD 组的分配。 我们建议您创建与您实施的保护级别相对应的 Azure AD 组。 例如，您的执行人员可能更高的黑客的价值目标。 因此，将这些员工的用户帐户添加到 Azure AD 组并将该组分配给条件访问策略和其他强制实施更高级别的保护的策略是有意义的。 | Microsoft 365 E3 或 E5 |
+| [设备注册](/azure/active-directory/devices/overview) | 将设备注册到 Azure AD 以创建设备的标识。 当用户登录并应用需要加入域或合规的 Pc 的条件访问策略时，此标识用于对设备进行身份验证。 在本指南中，我们使用设备注册自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。 | Microsoft 365 E3 或 E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 使您能够检测到影响组织标识的潜在漏洞，并将自动修正策略配置为低、中和高的登录风险和用户风险。 本指南依赖此风险评估来应用多因素身份验证的条件访问策略。 本指南还包括一个条件访问策略，该策略要求用户在为其帐户检测到高风险活动时更改其密码。 | Microsoft 365 E5，Microsoft 365 E3 with Identity & 威胁防护加载项、EMS E5 或 Azure 高级 P2 许可证 |
 | [自助服务密码重置 (SSPR) ](/azure/active-directory/authentication/concept-sspr-howitworks) | 通过提供管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术人员干预。 | Microsoft 365 E3 或 E5 |
+| [AZURE AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止密码列表将自动应用于 Azure AD 租户中的所有用户。 您可以在 "自定义禁止密码" 列表中定义其他条目。 当用户更改或重置其密码时，将检查这些禁止的密码列表，以强制使用强密码。 |  Microsoft 365 E3 或 E5 |
 ||||
 
 ![标识和设备访问的组件。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

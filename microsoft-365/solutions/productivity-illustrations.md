@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 043f5882dcaa15576317958523d6e57d4667ef45
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308081"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546177"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -57,13 +57,13 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 
 <a name="BKMK_O365IDP"></a>
-### <a name="identity-and-device-protection-for-office-365"></a>Office 365 的标识和设备保护
+### <a name="identity-and-device-protection-for-microsoft-365"></a>Microsoft 365 的标识和设备保护
 
-用于保护访问 Office 365 设备、其他 SaaS 服务以及使用 Azure AD 应用代理发布的本地应用的标识和设备的推荐功能。
+用于保护访问 Microsoft 365、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序的标识和设备的建议功能。
 
 |**Item**|**说明**|
 |:-----|:-----|
-|[![模型海报：Office 365 和其他 SaaS 应用的标识和设备保护](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 2018 年 11 月更新|请务必在数据、标识和设备中使用一致的保护级别。本文档介绍可与保护标识和设备功能相媲美的功能的详细信息。  <br/> |
+|[![模型海报： Microsoft 365 的标识和设备保护](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| 形式查看[下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可比较的功能，并提供了有关保护标识和设备的功能的详细信息。  <br/> |
    
 <!--
 

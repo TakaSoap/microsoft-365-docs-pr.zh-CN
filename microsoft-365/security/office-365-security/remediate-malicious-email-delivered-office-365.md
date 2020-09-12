@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威胁补救措施
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903879"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547236"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 
@@ -39,7 +39,6 @@ ms.locfileid: "46903879"
 |使用威胁资源管理器 (和实时检测) 分析威胁 |全局管理员 <br> 安全管理员 <br> 安全读取者|否|
 |使用威胁资源管理器 (和实时检测) 查看电子邮件的邮件头以及预览和下载隔离的电子邮件|全局管理员 <br> 安全管理员 <br>安全读取者|否|
 |使用威胁浏览器查看邮件头并下载传递给邮箱的电子邮件|全局管理员 <br>安全管理员 <br> 安全读取者 <br> 预览|是|
-
 
 > [!NOTE]
 > 预览是一个 *角色*，而不是 *角色组*。 必须将预览角色添加到 Office 365 的现有角色组中。 *全局管理员角色*是在[Microsoft 365 管理中心](https://admin.microsoft.com)中分配的。 安全管理员和安全读者角色是在 [安全与合规中心](https://protection.office.com)中分配的。 若要了解有关角色和权限的详细信息，请参阅 [安全性和合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -93,7 +92,7 @@ ms.locfileid: "46903879"
 
    - **不可行**：以下位置中的电子邮件不能在修正操作中进行操作或移动：
 
-     - 隔离
+     - Quarantine
      - 硬删除文件夹
      - 内部部署/外部
      - 失败/丢弃

@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: 了解如何使用 Region 参数配置电子数据展示，以便在 Microsoft 365 多地理位置的附属位置使用。
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687753"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547946"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置电子数据展示配置
 
@@ -35,7 +35,7 @@ Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以
 
 针对区域设置合规性安全筛选器：
 
-1. [连接到 Microsoft 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [连接到 Microsoft 365 安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 使用以下语法：
 
@@ -49,4 +49,4 @@ Microsoft 365 全局管理员必须分配电子数据展示管理者权限，以
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-请参阅 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) 一文了解其他参数和语法。
+请参阅 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) 一文了解其他参数和语法。

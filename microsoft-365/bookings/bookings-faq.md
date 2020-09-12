@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 预定常见问题。
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419351"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545712"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 预定常见问题
 
@@ -180,7 +180,7 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>电子邮件通知是否可以作为租户域名发送？
 
-电子邮件地址在 Microsoft 365 设置级别进行控制和管理，具体取决于域配置设置。 可在 [此处](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)找到详细信息。
+电子邮件地址在 Microsoft 365 设置级别进行控制和管理，具体取决于域配置设置。 可在 [此处](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)找到详细信息。
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>是否能够根据不同的服务或特定配置发送 SMS 消息？
 
@@ -366,7 +366,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
   - [自定义和发布预定页面](customize-booking-page.md)
 
-  - [租户邮箱配置](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [租户邮箱配置](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [组预订](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

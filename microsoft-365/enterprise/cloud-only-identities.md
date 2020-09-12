@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在 Microsoft 365 订阅使用仅云标识时创建用户和组。
-ms.openlocfilehash: 4c8e7d4a29f548fca2fef9696f488dc333743ef9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687729"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547754"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 仅限云身份标识
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 对于仅限云身份，你的所有用户、组和联系人都存储在 Microsoft 365 订阅 (Azure AD) 租户的 Azure Active Directory 中。 下面是仅限云身份的基本组件。
  
@@ -55,7 +55,7 @@ ms.locfileid: "46687729"
 
 - 使用基于组的许可将 Microsoft 365 的许可证立即分配给您的用户帐户，然后在将其添加为成员时自动。
 - 根据用户帐户属性（如部门名称）动态地向特定组添加用户帐户。
-- 自动将用户用作服务 (SaaS) 应用程序，并使用多重身份验证 (MFA) 和其他条件访问规则来保护对这些应用程序的访问。
+- 自动为用户预配软件 (SaaS) 应用程序，并使用多重身份验证 (MFA) 和其他条件访问策略来保护对这些应用程序的访问。
 - 为 SharePoint Online 团队网站设置权限和访问权限级别。
 
 创建新 ***用户*** 时使用的是：

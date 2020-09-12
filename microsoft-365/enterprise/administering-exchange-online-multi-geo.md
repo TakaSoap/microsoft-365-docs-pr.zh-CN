@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 了解如何使用 PowerShell 在 Microsoft 365 环境中管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: 645d48066ca02dbf3480e20ae30dc187f84293cf
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 996566d67aa8ba7ebca1406cd5d6265458637fee
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687583"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546242"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
-需要远程 PowerShell 才能在 Microsoft 365 环境中查看和配置多地理位置属性。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+需要 Exchange Online PowerShell 才能查看和配置 Microsoft 365 环境中的多地理属性。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 你需要 [Microsoft Azure Active Directory PowerShell 模块](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 或 v1.x 中的更高版本才能查看用户对象的 **PreferredDataLocation** 属性。 无法通过 AAD PowerShell 直接修改通过 AAD Connect 同步到 AAD 中的用户对象的 **PreferredDataLocation** 值。 可以通过 AAD PowerShell 修改仅限云的用户对象。 若要连接到 Azure AD PowerShell，请参阅[连接到 PowerShell](connect-to-microsoft-365-powershell.md)。
 
@@ -29,33 +29,49 @@ ms.locfileid: "46687583"
 
 通常，Exchange Online PowerShell 将连接到中心地理位置。 但你也可以直接连接到附属地理位置。 由于性能有所改进，因此，当你仅管理附属地理位置中的用户时，我们建议直接连接到该位置。
 
-用于连接到特定地理位置的 *ConnectionUri* 参数与常规连接指令不同。 命令和值的其余部分是相同的。 步骤如下：
+[安装和维护 EXO V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)中介绍了安装和使用 EXO V2 模块的要求。
 
-1. 在本地计算机上，打开 Windows PowerShell 并运行以下命令：
+若要将 Exchange Online PowerShell 连接到特定地理位置， *ConnectionUri* 参数与常规连接说明不同。 命令和值的其余部分是相同的。
+
+具体来说，您需要将 `?email=<emailaddress>` 值添加到 _ConnectionUri_ 值的末尾。 `<emailaddress>` 是目标地理位置中 **任何** 邮箱的电子邮件地址。 您对该邮箱的权限或与您的凭据的关系不是一个因素;电子邮件地址只是告诉 Exchange Online PowerShell 在哪里连接。
+
+Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 参数连接到 Exchange Online PowerShell。 但是，若要连接到特定地理位置，您需要使用 _ConnectionUri_ 参数，以便可以 `?email=<emailaddress>` 在值中使用。
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell 中的地理位置
+
+1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. 在以下示例中，admin@contoso.onmicrosoft.com 是管理员帐户，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
+
+  ```powershell
+  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
+  ```
+
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>在不使用 MFA 的情况下连接到 Exchange Online PowerShell 中的地理位置
+
+1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
+
+   ```powershell
+   Import-Module ExchangeOnlineManagement
+   ```
+
+2. 运行以下命令：
 
    ```powershell
    $UserCredential = Get-Credential
    ```
 
-   在“**Windows PowerShell 凭据请求**”对话框中，键入工作或学校帐户用户名和密码，再单击“**确定**”。
+   在出现的“**Windows PowerShell 凭据请求**”对话框中，键入工作或学校帐户用户名和密码，再单击“**确定**”。
 
-2. 将 `<emailaddress>` 替换为目标地理位置中的**任何**邮箱的电子邮件地址，并运行以下命令。 你对邮箱的权限和与步骤 1 中凭据的关系并不重要；电子邮件地址只是告知 Exchange Online 连接到何处。
-  
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=<emailaddress> -Credential $UserCredential -Authentication  Basic -AllowRedirection
-   ```
-
-   例如，如果 olga@contoso.onmicrosoft.com 是你想要连接的地理位置的有效邮箱地址，则运行以下命令：
+3. 在以下示例中，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
 
    ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com -Credential $UserCredential -Authentication  Basic -AllowRedirection
+   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
-
-3. 运行以下命令：
-
-    ```powershell
-    Import-PSSession $Session
-    ```
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>查看在 Exchange Online 组织中配置的可用地理位置
 
@@ -135,14 +151,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 ```
 
 > [!NOTE]
+>
 > - 如前所述，不能对本地 Active Directory 中的同步用户对象使用此过程。 你需要在 Active Directory 中更改 **PreferredDataLocation** 值，并使用 AAD Connect 进行同步。 有关详细信息，请参阅 [Azure Active Directory Connect 同步：为 Microsoft 365 资源配置首选数据位置](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation)。
-> 
+>
 > - 将邮箱重定位到新的地理位置所花费的时间取决于若干因素：
-> 
+>
 >   - 邮箱的大小和类型。
-> 
 >   - 正在移动的邮箱数量。
-> 
 >   - 移动资源的可用性。
 
 ### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>移动处于诉讼保留状态的已禁用邮箱
@@ -172,17 +187,11 @@ New-MsolUser -UserPrincipalName <UserPrincipalName> -DisplayName "<Display Name>
 此示例使用下面的值为 Elizabeth Brunner 创建新用户帐户：
 
 - 用户主体名称：ebrunner@contoso.onmicrosoft.com
-
 - 名字：Elizabeth
-
 - 姓氏：Brunner
-
 - 显示名称：Elizabeth Brunner
-
 - 密码： 随机生成，并显示在命令的结果中（因为我们未使用 *Password* 参数）
-
 - 许可证：`contoso:ENTERPRISEPREMIUM` (E5)
-
 - 位置：澳大利亚 (AUS)
 
 ```powershell

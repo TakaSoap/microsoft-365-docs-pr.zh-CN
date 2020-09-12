@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，了解哪些平台、客户端和 Powershell 模块支持 Microsoft 365 的单一登录。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332000"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546406"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 客户端应用支持—单一登录
 
@@ -59,7 +59,7 @@ ms.locfileid: "47332000"
 
 | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-| ![Azure 图标](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange 图标](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) | ![SharePoint 图标](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+| ![Azure 图标](../media/o365-azure-64x64.png) <br> [Azure AD <br> PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0) | ![Exchange 图标](../media/o365-exchange-64x64.png) <br> [Exchange Online <br> PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) | ![SharePoint 图标](../media/o365-sharepoint-64x64.png) <br> [SharePoint Online <br> PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 
 > [!NOTE]
 > <sup>1</sup> 对 iOS 上的边缘和 Kaizala 的支持即将推出。 <br>

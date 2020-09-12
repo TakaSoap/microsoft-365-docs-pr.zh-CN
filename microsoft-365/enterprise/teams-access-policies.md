@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685650"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546340"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 
-本文介绍如何实施建议的标识和设备访问策略来保护团队聊天、组和内容（如文件和日历）。 本指南基于 [通用标识和设备访问策略](identity-access-policies.md)构建，其中包含特定于团队的其他信息。 由于团队与我们的其他产品集成，因此请参阅 [保护 SharePoint 网站和文件](sharepoint-file-access-policies.md) 以及 [保护电子邮件的策略建议](secure-email-recommended-policies.md)的策略建议。
+本文介绍如何实现建议的标识和设备访问策略，以保护 Microsoft 团队聊天、组和内容（如文件和日历）。 本指南基于 [通用标识和设备访问策略](identity-access-policies.md)构建，其中包含特定于团队的其他信息。 由于团队与我们的其他产品集成，因此请参阅 [保护 SharePoint 网站和文件](sharepoint-file-access-policies.md) 以及 [保护电子邮件的策略建议](secure-email-recommended-policies.md)的策略建议。
 
 这些建议基于三种不同的安全层级保护和针对团队的保护，这些团队可根据您需求的粒度进行应用：比较基准、敏感和高度管控。 您可以在 [标识和设备访问配置](microsoft-365-policies-configurations.md)中了解有关这些安全层以及这些建议所引用的建议策略的详细信息。
 
@@ -38,25 +38,27 @@ ms.locfileid: "46685650"
 - Microsoft 365 组
 - SharePoint 团队网站
 - OneDrive for Business
-- 邮箱
+- Exchange 邮箱
 - 如果启用这些服务，则 Stream 视频和 Planner 计划 () 
 
 ## <a name="updating-common-policies-to-include-teams"></a>更新常见策略以包括团队
 
-下图说明了用于保护团队中的聊天、组和内容的建议策略集。 铅笔图标指示需要重设的策略，以确保在分配云应用程序中包含团队和相关服务。
+若要保护团队中的聊天、组和内容，下图说明了要从公共标识和设备访问策略中更新的策略。 对于要更新的每个策略，请确保在云应用的分配中包含团队和相关服务。
 
-![演示如何在各种设备上使用 Microsoft 团队的图表。](../media/identity-access-ruleset-teams.png)
+[![用于保护对团队及其依赖服务的访问权限的策略更新的摘要](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[查看此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 以下是要在团队的云应用程序分配中包括的相关服务：
 
 - Microsoft Teams
-- SharePoint Online 和 OneDrive for Business
+- Sharepoint 和 OneDrive for Business
 - Exchange Online
 - Skype for Business Online
 - Microsoft Stream (会议录制) 
 - Microsoft Planner (Planner 任务和规划数据) 
 
-此表列出了需要对其进行访问的策略，并链接到 [常见标识和设备访问策略](identity-access-policies.md)中的每个策略，这些策略为所有 Office 应用程序提供了更宽的规则集。
+此表列出了需要对其进行访问的策略，以及在 [常见标识和设备访问策略](identity-access-policies.md)中的每个策略的链接，这些策略为所有 Office 应用程序设置了更宽的策略。
 
 |保护级别|策略|有关团队实施的详细信息|
 |:---------------|:-------|:----------------|
@@ -76,13 +78,13 @@ ms.locfileid: "46685650"
 
 为了供参考，下图演示了服务团队所依赖的。 有关详细信息和其他说明，请参阅 microsoft [团队和 microsoft 365 中相关的工作效率服务（针对 IT 架构师](../solutions/productivity-illustrations.md)）。
 
-![该图显示了 SharePoint Online、OneDrive for Business 和 Exchange 上的团队相关性。](../media/identity-access-logical-architecture-teams.png)
+![显示 SharePoint、OneDrive for Business 和 Exchange 上的团队相关性的图表](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>为团队启用来宾和外部访问
 
 在 Azure AD 中，来宾和外部用户是相同的。 这两个用户的用户类型为 "来宾"。 来宾用户是 B2B 用户。 Microsoft 团队在应用程序中区分来宾用户和外部用户。 虽然了解每个用户在团队中的处理方式非常重要，但这两种类型的用户在 Azure AD 中都是 B2B 用户，而 B2B 用户的建议策略适用于这两种用户。 有关允许来宾访问的推荐策略，请参阅 [允许来宾和外部 B2B 访问的策略](identity-access-policies-guest-access.md)。
 
-### <a name="guest-access-in-teams"></a>团队中的来宾访问
+### <a name="guest-access-in-teams"></a>Teams 中的来宾访问
 
 除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。 您可以通过以下链接了解有关来宾访问的详细信息： [团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)
 
@@ -120,6 +122,10 @@ ms.locfileid: "46685650"
 
 ## <a name="next-steps"></a>后续步骤
 
-[了解如何为 Exchange Online 启用条件访问](secure-email-recommended-policies.md)
+![步骤4： Microsoft 365 云应用的策略](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+为以下项配置条件访问策略：
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

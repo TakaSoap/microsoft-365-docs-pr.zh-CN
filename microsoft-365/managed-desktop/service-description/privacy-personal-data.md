@@ -2,7 +2,7 @@
 title: 隐私和个人数据
 description: 详细介绍了服务所收集、存储和使用的数据
 keywords: GDPR、保留、删除、存储、保留、处理、安全性、审核
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e1b0c856a3bfb886521ee2c1a2115e4c29504862
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47363250"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547934"
 ---
 # <a name="privacy-and-personal-data"></a>隐私和个人数据
 
