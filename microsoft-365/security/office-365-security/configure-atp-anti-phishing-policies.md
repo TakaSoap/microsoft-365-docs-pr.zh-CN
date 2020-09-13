@@ -14,467 +14,467 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护 (Office 365 ATP) 中的组织中提供的高级防网络钓鱼策略。
-ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825733"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547648"
 ---
-# <a name="configure-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-103">配置 ATP 防钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-103">Configure ATP anti-phishing policies</span></span>
+# <a name="configure-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-103">配置 ATP 防钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-103">Configure ATP anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-104">ATP 反网络钓鱼策略是 [Office 365 高级威胁防护](office-365-atp.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="af5cf-104">ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="af5cf-105">ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="af5cf-105">ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks.</span></span> <span data-ttu-id="af5cf-106">有关 Exchange Online Protection 中的反网络钓鱼策略之间的差异 (EOP) 和 ATP 反网络钓鱼策略的详细信息，请参阅 [反钓鱼保护](anti-phishing-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-106">For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection](anti-phishing-protection.md).</span></span>
+<span data-ttu-id="2a790-104">ATP 反网络钓鱼策略是 [Office 365 高级威胁防护](office-365-atp.md)的一部分。</span><span class="sxs-lookup"><span data-stu-id="2a790-104">ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="2a790-105">ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。</span><span class="sxs-lookup"><span data-stu-id="2a790-105">ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks.</span></span> <span data-ttu-id="2a790-106">有关 Exchange Online Protection 中的反网络钓鱼策略之间的差异 (EOP) 和 ATP 反网络钓鱼策略的详细信息，请参阅 [反钓鱼保护](anti-phishing-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="2a790-106">For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection](anti-phishing-protection.md).</span></span>
 
-<span data-ttu-id="af5cf-107">管理员可以查看、编辑和配置 (，但不能删除默认的 ATP 反网络钓鱼策略) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-107">Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy.</span></span> <span data-ttu-id="af5cf-108">为了获得更多的粒度，您还可以创建适用于组织中的特定用户、组或域的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-108">For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="af5cf-109">自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-109">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
+<span data-ttu-id="2a790-107">管理员可以查看、编辑和配置 (，但不能删除默认的 ATP 反网络钓鱼策略) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-107">Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy.</span></span> <span data-ttu-id="2a790-108">为了获得更多的粒度，您还可以创建适用于组织中的特定用户、组或域的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-108">For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization.</span></span> <span data-ttu-id="2a790-109">自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。</span><span class="sxs-lookup"><span data-stu-id="2a790-109">Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.</span></span>
 
-<span data-ttu-id="af5cf-110">您可以在安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-110">You can configure ATP anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.</span></span>
+<span data-ttu-id="2a790-110">您可以在安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-110">You can configure ATP anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.</span></span>
 
-<span data-ttu-id="af5cf-111">有关在 Exchange Online Protection 组织中使用的防欺诈策略中配置更有限的信息 (也就是说，没有 Office 365 ATP) 的 Microsoft 365 组织，请参阅 [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-111">For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Microsoft 365 organizations without Office 365 ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).</span></span>
+<span data-ttu-id="2a790-111">有关在 Exchange Online Protection 组织中使用的防欺诈策略中配置更有限的信息 (也就是说，没有 Office 365 ATP) 的 Microsoft 365 组织，请参阅 [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。</span><span class="sxs-lookup"><span data-stu-id="2a790-111">For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Microsoft 365 organizations without Office 365 ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).</span></span>
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a><span data-ttu-id="af5cf-112">Security & 合规性中心 vs PowerShell 中的 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-112">ATP anti-phishing policies in the Security & Compliance Center vs PowerShell</span></span>
+## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a><span data-ttu-id="2a790-112">Security & 合规性中心 vs PowerShell 中的 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-112">ATP anti-phishing policies in the Security & Compliance Center vs PowerShell</span></span>
 
-<span data-ttu-id="af5cf-113">ATP 反网络钓鱼策略的基本要素为：</span><span class="sxs-lookup"><span data-stu-id="af5cf-113">The basic elements of an ATP anti-phishing policy are:</span></span>
+<span data-ttu-id="2a790-113">ATP 反网络钓鱼策略的基本要素为：</span><span class="sxs-lookup"><span data-stu-id="2a790-113">The basic elements of an ATP anti-phishing policy are:</span></span>
 
-- <span data-ttu-id="af5cf-114">**反网络钓鱼策略**：指定要启用或禁用的网络钓鱼防护，以及要应用选项的操作。</span><span class="sxs-lookup"><span data-stu-id="af5cf-114">**The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.</span></span>
-- <span data-ttu-id="af5cf-115">**反网络钓鱼规则**：指定策略应用于) 反网络钓鱼策略的 (的优先级和收件人筛选器。</span><span class="sxs-lookup"><span data-stu-id="af5cf-115">**The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.</span></span>
+- <span data-ttu-id="2a790-114">**反网络钓鱼策略**：指定要启用或禁用的网络钓鱼防护，以及要应用选项的操作。</span><span class="sxs-lookup"><span data-stu-id="2a790-114">**The anti-phish policy**: Specifies the phishing protections to enable or disable, and the actions to apply options.</span></span>
+- <span data-ttu-id="2a790-115">**反网络钓鱼规则**：指定策略应用于) 反网络钓鱼策略的 (的优先级和收件人筛选器。</span><span class="sxs-lookup"><span data-stu-id="2a790-115">**The anti-phish rule**: Specifies the priority and recipient filters (who the policy applies to) for an anti-phish policy.</span></span>
 
-<span data-ttu-id="af5cf-116">在安全 & 合规中心中管理 ATP 反网络钓鱼策略时，这两个元素之间的差异并不明显：</span><span class="sxs-lookup"><span data-stu-id="af5cf-116">The difference between these two elements isn't obvious when you manage ATP anti-phishing policies in the Security & Compliance Center:</span></span>
+<span data-ttu-id="2a790-116">在安全 & 合规中心中管理 ATP 反网络钓鱼策略时，这两个元素之间的差异并不明显：</span><span class="sxs-lookup"><span data-stu-id="2a790-116">The difference between these two elements isn't obvious when you manage ATP anti-phishing policies in the Security & Compliance Center:</span></span>
 
-- <span data-ttu-id="af5cf-117">创建策略时，实际上是同时创建反网络钓鱼规则和关联的反网络钓鱼策略，同时为两者使用相同的名称。</span><span class="sxs-lookup"><span data-stu-id="af5cf-117">When you create a policy, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
-- <span data-ttu-id="af5cf-118">修改策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-118">When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule.</span></span> <span data-ttu-id="af5cf-119">所有其他设置将修改关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-119">All other settings modify the associated anti-phish policy.</span></span>
-- <span data-ttu-id="af5cf-120">删除策略时，将删除反网络钓鱼规则和关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-120">When you remove a policy, the anti-phish rule and the associated anti-phish policy are removed.</span></span>
+- <span data-ttu-id="2a790-117">创建策略时，实际上是同时创建反网络钓鱼规则和关联的反网络钓鱼策略，同时为两者使用相同的名称。</span><span class="sxs-lookup"><span data-stu-id="2a790-117">When you create a policy, you're actually creating an anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
+- <span data-ttu-id="2a790-118">修改策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-118">When you modify a policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the anti-phish rule.</span></span> <span data-ttu-id="2a790-119">所有其他设置将修改关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-119">All other settings modify the associated anti-phish policy.</span></span>
+- <span data-ttu-id="2a790-120">删除策略时，将删除反网络钓鱼规则和关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-120">When you remove a policy, the anti-phish rule and the associated anti-phish policy are removed.</span></span>
 
-<span data-ttu-id="af5cf-121">在 Exchange Online PowerShell 中，可以单独管理策略和规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-121">In Exchange Online PowerShell, you manage the policy and the rule separately.</span></span> <span data-ttu-id="af5cf-122">有关详细信息，请参阅本主题后面的 [使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) 一节。</span><span class="sxs-lookup"><span data-stu-id="af5cf-122">For more information, see the [Use Exchange Online PowerShell to configure ATP anti-phishing policies](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) section later in this topic.</span></span>
+<span data-ttu-id="2a790-121">在 Exchange Online PowerShell 中，可以单独管理策略和规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-121">In Exchange Online PowerShell, you manage the policy and the rule separately.</span></span> <span data-ttu-id="2a790-122">有关详细信息，请参阅本主题后面的 [使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) 一节。</span><span class="sxs-lookup"><span data-stu-id="2a790-122">For more information, see the [Use Exchange Online PowerShell to configure ATP anti-phishing policies](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) section later in this topic.</span></span>
 
-<span data-ttu-id="af5cf-123">每个 Office 365 ATP 组织都具有一个名为 Office365 AntiPhish 的内置 ATP 反网络钓鱼策略，该策略具有以下属性：</span><span class="sxs-lookup"><span data-stu-id="af5cf-123">Every Office 365 ATP organization has a built-in ATP anti-phishing policy named Office365 AntiPhish Default that has these properties:</span></span>
+<span data-ttu-id="2a790-123">每个 Office 365 ATP 组织都具有一个名为 Office365 AntiPhish 的内置 ATP 反网络钓鱼策略，该策略具有以下属性：</span><span class="sxs-lookup"><span data-stu-id="2a790-123">Every Office 365 ATP organization has a built-in ATP anti-phishing policy named Office365 AntiPhish Default that has these properties:</span></span>
 
-- <span data-ttu-id="af5cf-124">该策略将应用于组织中的所有收件人，即使没有反网络钓鱼规则 (收件人筛选器与策略关联) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-124">The policy is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.</span></span>
-- <span data-ttu-id="af5cf-125">该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-125">The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="af5cf-126">你创建的任何自定义策略始终具有更高的优先级。</span><span class="sxs-lookup"><span data-stu-id="af5cf-126">Any custom policies that you create always have a higher priority.</span></span>
-- <span data-ttu-id="af5cf-127">该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-127">The policy is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
+- <span data-ttu-id="2a790-124">该策略将应用于组织中的所有收件人，即使没有反网络钓鱼规则 (收件人筛选器与策略关联) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-124">The policy is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.</span></span>
+- <span data-ttu-id="2a790-125">该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。</span><span class="sxs-lookup"><span data-stu-id="2a790-125">The policy has the custom priority value **Lowest** that you can't modify (the policy is always applied last).</span></span> <span data-ttu-id="2a790-126">你创建的任何自定义策略始终具有更高的优先级。</span><span class="sxs-lookup"><span data-stu-id="2a790-126">Any custom policies that you create always have a higher priority.</span></span>
+- <span data-ttu-id="2a790-127">该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-127">The policy is the default policy (the **IsDefault** property has the value `True`), and you can't delete the default policy.</span></span>
 
-<span data-ttu-id="af5cf-128">若要提高反钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-128">To increase the effectiveness of anti-phishing protection, you can create custom ATP anti-phishing policies with stricter settings that are applied to specific users or groups of users.</span></span>
+<span data-ttu-id="2a790-128">若要提高反钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-128">To increase the effectiveness of anti-phishing protection, you can create custom ATP anti-phishing policies with stricter settings that are applied to specific users or groups of users.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="af5cf-129">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="af5cf-129">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="2a790-129">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="2a790-129">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="af5cf-130">安全与合规中心的打开网址为 <https://protection.office.com/>。</span><span class="sxs-lookup"><span data-stu-id="af5cf-130">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="af5cf-131">若要直接转到 " **ATP 反钓鱼** " 页面，请使用 <https://protection.office.com/antiphishing> 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-131">To go directly to the **ATP anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
+- <span data-ttu-id="2a790-130">安全与合规中心的打开网址为 <https://protection.office.com/>。</span><span class="sxs-lookup"><span data-stu-id="2a790-130">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="2a790-131">若要直接转到 " **ATP 反钓鱼** " 页面，请使用 <https://protection.office.com/antiphishing> 。</span><span class="sxs-lookup"><span data-stu-id="2a790-131">To go directly to the **ATP anti-phishing** page, use <https://protection.office.com/antiphishing>.</span></span>
 
-- <span data-ttu-id="af5cf-132">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-132">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
+- <span data-ttu-id="2a790-132">若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="2a790-132">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span>
 
-- <span data-ttu-id="af5cf-133">你必须首先分配有权限，然后才能执行本主题中的步骤：</span><span class="sxs-lookup"><span data-stu-id="af5cf-133">You need to be assigned permissions before you can do the procedures in this topic:</span></span>
+- <span data-ttu-id="2a790-133">你必须首先分配有权限，然后才能执行本主题中的步骤：</span><span class="sxs-lookup"><span data-stu-id="2a790-133">You need to be assigned permissions before you can do the procedures in this topic:</span></span>
 
-  - <span data-ttu-id="af5cf-134">若要添加、修改和删除 ATP 反网络钓鱼策略，您必须是下列角色组之一的成员：</span><span class="sxs-lookup"><span data-stu-id="af5cf-134">To add, modify, and delete ATP anti-phishing policies, you need to be a member of one of the following role groups:</span></span>
+  - <span data-ttu-id="2a790-134">若要添加、修改和删除 ATP 反网络钓鱼策略，您必须是下列角色组之一的成员：</span><span class="sxs-lookup"><span data-stu-id="2a790-134">To add, modify, and delete ATP anti-phishing policies, you need to be a member of one of the following role groups:</span></span>
 
-    - <span data-ttu-id="af5cf-135">[安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。</span><span class="sxs-lookup"><span data-stu-id="af5cf-135">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-    - <span data-ttu-id="af5cf-136">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。</span><span class="sxs-lookup"><span data-stu-id="af5cf-136">**Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
+    - <span data-ttu-id="2a790-135">[安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。</span><span class="sxs-lookup"><span data-stu-id="2a790-135">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+    - <span data-ttu-id="2a790-136">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。</span><span class="sxs-lookup"><span data-stu-id="2a790-136">**Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-  - <span data-ttu-id="af5cf-137">若要对 ATP 反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：</span><span class="sxs-lookup"><span data-stu-id="af5cf-137">For read-only access to ATP anti-phishing policies, you need to be a member of one of the following role groups:</span></span>
+  - <span data-ttu-id="2a790-137">若要对 ATP 反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：</span><span class="sxs-lookup"><span data-stu-id="2a790-137">For read-only access to ATP anti-phishing policies, you need to be a member of one of the following role groups:</span></span>
 
-    - <span data-ttu-id="af5cf-138">[安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。</span><span class="sxs-lookup"><span data-stu-id="af5cf-138">**Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-    - <span data-ttu-id="af5cf-139">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。</span><span class="sxs-lookup"><span data-stu-id="af5cf-139">**View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
+    - <span data-ttu-id="2a790-138">[安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。</span><span class="sxs-lookup"><span data-stu-id="2a790-138">**Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+    - <span data-ttu-id="2a790-139">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。</span><span class="sxs-lookup"><span data-stu-id="2a790-139">**View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-- <span data-ttu-id="af5cf-140">有关 ATP 反网络钓鱼策略的建议设置，请参阅 [OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-140">For our recommended settings for ATP anti-phishing policies, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).</span></span>
+- <span data-ttu-id="2a790-140">有关 ATP 反网络钓鱼策略的建议设置，请参阅 [OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="2a790-140">For our recommended settings for ATP anti-phishing policies, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).</span></span>
 
-- <span data-ttu-id="af5cf-141">允许使用最长30分钟的时间来应用新的或更新的策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-141">Allow up to 30 minutes for a new or updated policy to be applied.</span></span>
+- <span data-ttu-id="2a790-141">允许使用最长30分钟的时间来应用新的或更新的策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-141">Allow up to 30 minutes for a new or updated policy to be applied.</span></span>
 
-- <span data-ttu-id="af5cf-142">有关在筛选管道中应用反网络钓鱼策略的位置的信息，请参阅 [电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-142">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
+- <span data-ttu-id="2a790-142">有关在筛选管道中应用反网络钓鱼策略的位置的信息，请参阅 [电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="2a790-142">For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
 
-## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-143">使用安全 & 合规性中心创建 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-143">Use the Security & Compliance Center to create ATP anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-143">使用安全 & 合规性中心创建 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-143">Use the Security & Compliance Center to create ATP anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-144">在安全 & 合规中心中创建自定义 ATP 反网络钓鱼策略，将同时为两者创建反钓鱼规则和关联的反网络钓鱼策略，同时为二者使用相同的名称。</span><span class="sxs-lookup"><span data-stu-id="af5cf-144">Creating a custom ATP anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
+<span data-ttu-id="2a790-144">在安全 & 合规中心中创建自定义 ATP 反网络钓鱼策略，将同时为两者创建反钓鱼规则和关联的反网络钓鱼策略，同时为二者使用相同的名称。</span><span class="sxs-lookup"><span data-stu-id="2a790-144">Creating a custom ATP anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.</span></span>
 
-<span data-ttu-id="af5cf-145">创建 ATP 反网络钓鱼策略时，您只能指定策略名称、说明以及标识该策略适用于的收件人筛选器。</span><span class="sxs-lookup"><span data-stu-id="af5cf-145">When you create an ATP anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to.</span></span> <span data-ttu-id="af5cf-146">创建策略后，您可以修改策略以更改或查看默认的反网络钓鱼设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-146">After you create the policy, you can modify the policy to change or review the default anti-phishing settings.</span></span>
+<span data-ttu-id="2a790-145">创建 ATP 反网络钓鱼策略时，您只能指定策略名称、说明以及标识该策略适用于的收件人筛选器。</span><span class="sxs-lookup"><span data-stu-id="2a790-145">When you create an ATP anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to.</span></span> <span data-ttu-id="2a790-146">创建策略后，您可以修改策略以更改或查看默认的反网络钓鱼设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-146">After you create the policy, you can modify the policy to change or review the default anti-phishing settings.</span></span>
 
-1. <span data-ttu-id="af5cf-147">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-147">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-147">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-147">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-148">在 " **反钓鱼网站** " 页上，单击 " **创建**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-148">On the **Anti-phishing** page, click **Create**.</span></span>
+2. <span data-ttu-id="2a790-148">在 " **反钓鱼网站** " 页上，单击 " **创建**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-148">On the **Anti-phishing** page, click **Create**.</span></span>
 
-3. <span data-ttu-id="af5cf-149">将打开 " **新建反网络钓鱼策略** " 向导。</span><span class="sxs-lookup"><span data-stu-id="af5cf-149">The **Create a new anti-phishing policy** wizard opens.</span></span> <span data-ttu-id="af5cf-150">在 " **命名策略** " 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-150">On the **Name your policy** page, configure the following settings:</span></span>
+3. <span data-ttu-id="2a790-149">将打开 " **新建反网络钓鱼策略** " 向导。</span><span class="sxs-lookup"><span data-stu-id="2a790-149">The **Create a new anti-phishing policy** wizard opens.</span></span> <span data-ttu-id="2a790-150">在 " **命名策略** " 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-150">On the **Name your policy** page, configure the following settings:</span></span>
 
-   - <span data-ttu-id="af5cf-151">**名称**：输入策略的唯一描述性名称。</span><span class="sxs-lookup"><span data-stu-id="af5cf-151">**Name**: Enter a unique, descriptive name for the policy.</span></span>
+   - <span data-ttu-id="2a790-151">**名称**：输入策略的唯一描述性名称。</span><span class="sxs-lookup"><span data-stu-id="2a790-151">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-   - <span data-ttu-id="af5cf-152">**说明**：输入策略的可选说明。</span><span class="sxs-lookup"><span data-stu-id="af5cf-152">**Description**: Enter an optional description for the policy.</span></span>
+   - <span data-ttu-id="2a790-152">**说明**：输入策略的可选说明。</span><span class="sxs-lookup"><span data-stu-id="2a790-152">**Description**: Enter an optional description for the policy.</span></span>
 
-   <span data-ttu-id="af5cf-153">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="af5cf-153">When you're finished, click **Next**.</span></span>
+   <span data-ttu-id="2a790-153">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="2a790-153">When you're finished, click **Next**.</span></span>
 
-4. <span data-ttu-id="af5cf-154">在显示的 " **应用于** " 页上，确定该策略应用于的内部收件人。</span><span class="sxs-lookup"><span data-stu-id="af5cf-154">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
+4. <span data-ttu-id="2a790-154">在显示的 " **应用于** " 页上，确定该策略应用于的内部收件人。</span><span class="sxs-lookup"><span data-stu-id="2a790-154">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
 
-   <span data-ttu-id="af5cf-155">只能使用一次条件或例外，但可以为条件或例外指定多个值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-155">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="af5cf-156">同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-156">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="af5cf-157">不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-157">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
+   <span data-ttu-id="2a790-155">只能使用一次条件或例外，但可以为条件或例外指定多个值。</span><span class="sxs-lookup"><span data-stu-id="2a790-155">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="2a790-156">同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。</span><span class="sxs-lookup"><span data-stu-id="2a790-156">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="2a790-157">不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。</span><span class="sxs-lookup"><span data-stu-id="2a790-157">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
 
-   <span data-ttu-id="af5cf-158">单击 " **添加条件**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-158">Click **Add a condition**.</span></span> <span data-ttu-id="af5cf-159">在出现的下拉列表中，选择 " **应用**条件：</span><span class="sxs-lookup"><span data-stu-id="af5cf-159">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+   <span data-ttu-id="2a790-158">单击 " **添加条件**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-158">Click **Add a condition**.</span></span> <span data-ttu-id="2a790-159">在出现的下拉列表中，选择 " **应用**条件：</span><span class="sxs-lookup"><span data-stu-id="2a790-159">In the dropdown that appears, select a condition under **Applied if**:</span></span>
 
-   - <span data-ttu-id="af5cf-160">**收件人为**：指定组织中的一个或多个邮箱、邮件用户或邮件联系人。</span><span class="sxs-lookup"><span data-stu-id="af5cf-160">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
-   - <span data-ttu-id="af5cf-161">**收件人是的成员**：指定组织中的一个或多个组。</span><span class="sxs-lookup"><span data-stu-id="af5cf-161">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
-   - <span data-ttu-id="af5cf-162">**收件人域为**：指定组织中已配置的一个或多个接受的域中的收件人。</span><span class="sxs-lookup"><span data-stu-id="af5cf-162">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in the organization.</span></span>
+   - <span data-ttu-id="2a790-160">**收件人为**：指定组织中的一个或多个邮箱、邮件用户或邮件联系人。</span><span class="sxs-lookup"><span data-stu-id="2a790-160">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="2a790-161">**收件人是的成员**：指定组织中的一个或多个组。</span><span class="sxs-lookup"><span data-stu-id="2a790-161">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="2a790-162">**收件人域为**：指定组织中已配置的一个或多个接受的域中的收件人。</span><span class="sxs-lookup"><span data-stu-id="2a790-162">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in the organization.</span></span>
 
-   <span data-ttu-id="af5cf-163">选择条件后，将显示相应的下拉框，其中包含 **其中的任何** 框。</span><span class="sxs-lookup"><span data-stu-id="af5cf-163">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+   <span data-ttu-id="2a790-163">选择条件后，将显示相应的下拉框，其中包含 **其中的任何** 框。</span><span class="sxs-lookup"><span data-stu-id="2a790-163">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
 
-   - <span data-ttu-id="af5cf-164">在框中单击并滚动到要选择的值列表。</span><span class="sxs-lookup"><span data-stu-id="af5cf-164">Click in the box and scroll through the list of values to select.</span></span>
-   - <span data-ttu-id="af5cf-165">在框中单击，然后开始键入以筛选列表并选择一个值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-165">Click in the box and start typing to filter the list and select a value.</span></span>
-   - <span data-ttu-id="af5cf-166">若要添加其他值，请单击框中的空白区域。</span><span class="sxs-lookup"><span data-stu-id="af5cf-166">To add additional values, click in an empty area in the box.</span></span>
-   - <span data-ttu-id="af5cf-167">若要删除单个条目， **Remove**请单击 ![ ](../../media/scc-remove-icon.png) 值上的 "删除删除" 图标。</span><span class="sxs-lookup"><span data-stu-id="af5cf-167">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
-   - <span data-ttu-id="af5cf-168">若要删除整个条件，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) 条件上的 "删除删除" 图标。</span><span class="sxs-lookup"><span data-stu-id="af5cf-168">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+   - <span data-ttu-id="2a790-164">在框中单击并滚动到要选择的值列表。</span><span class="sxs-lookup"><span data-stu-id="2a790-164">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="2a790-165">在框中单击，然后开始键入以筛选列表并选择一个值。</span><span class="sxs-lookup"><span data-stu-id="2a790-165">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="2a790-166">若要添加其他值，请单击框中的空白区域。</span><span class="sxs-lookup"><span data-stu-id="2a790-166">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="2a790-167">若要删除单个条目， **Remove**请单击 ![ ](../../media/scc-remove-icon.png) 值上的 "删除删除" 图标。</span><span class="sxs-lookup"><span data-stu-id="2a790-167">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="2a790-168">若要删除整个条件，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) 条件上的 "删除删除" 图标。</span><span class="sxs-lookup"><span data-stu-id="2a790-168">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
 
-   <span data-ttu-id="af5cf-169">若要添加其他条件，请单击 " **添加条件** "，然后选择 " **应用于**" 下的其他值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-169">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+   <span data-ttu-id="2a790-169">若要添加其他条件，请单击 " **添加条件** "，然后选择 " **应用于**" 下的其他值。</span><span class="sxs-lookup"><span data-stu-id="2a790-169">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
 
-   <span data-ttu-id="af5cf-170">若要添加例外，请单击 " **添加条件** "，并在 " **除非**" 下选择例外。</span><span class="sxs-lookup"><span data-stu-id="af5cf-170">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="af5cf-171">设置和行为与条件完全相同。</span><span class="sxs-lookup"><span data-stu-id="af5cf-171">The settings and behavior are exactly like the conditions.</span></span>
+   <span data-ttu-id="2a790-170">若要添加例外，请单击 " **添加条件** "，并在 " **除非**" 下选择例外。</span><span class="sxs-lookup"><span data-stu-id="2a790-170">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="2a790-171">设置和行为与条件完全相同。</span><span class="sxs-lookup"><span data-stu-id="2a790-171">The settings and behavior are exactly like the conditions.</span></span>
 
-   <span data-ttu-id="af5cf-172">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="af5cf-172">When you're finished, click **Next**.</span></span>
+   <span data-ttu-id="2a790-172">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="2a790-172">When you're finished, click **Next**.</span></span>
 
-5. <span data-ttu-id="af5cf-173">在显示的 " **查看您的设置** " 页上，查看您的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-173">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="af5cf-174">您可以在每个设置上单击 " **编辑** " 以修改它。</span><span class="sxs-lookup"><span data-stu-id="af5cf-174">You can click **Edit** on each setting to modify it.</span></span>
+5. <span data-ttu-id="2a790-173">在显示的 " **查看您的设置** " 页上，查看您的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-173">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="2a790-174">您可以在每个设置上单击 " **编辑** " 以修改它。</span><span class="sxs-lookup"><span data-stu-id="2a790-174">You can click **Edit** on each setting to modify it.</span></span>
 
-   <span data-ttu-id="af5cf-175">完成后，单击 " **创建此策略**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-175">When you're finished, click **Create this policy**.</span></span>
+   <span data-ttu-id="2a790-175">完成后，单击 " **创建此策略**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-175">When you're finished, click **Create this policy**.</span></span>
 
-6. <span data-ttu-id="af5cf-176">在出现的确认对话框中，单击 **"确定"** 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-176">Click **OK** in the confirmation dialog that appears.</span></span>
+6. <span data-ttu-id="2a790-176">在出现的确认对话框中，单击 **"确定"** 。</span><span class="sxs-lookup"><span data-stu-id="2a790-176">Click **OK** in the confirmation dialog that appears.</span></span>
 
-<span data-ttu-id="af5cf-177">在使用这些常规策略设置创建 ATP 反网络钓鱼策略后，请按照下一节中的说明操作，在策略中配置保护设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-177">After you create the ATP anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.</span></span>
+<span data-ttu-id="2a790-177">在使用这些常规策略设置创建 ATP 反网络钓鱼策略后，请按照下一节中的说明操作，在策略中配置保护设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-177">After you create the ATP anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.</span></span>
 
-## <a name="use-the-security--compliance-center-to-modify-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-178">使用安全 & 合规性中心修改 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-178">Use the Security & Compliance Center to modify ATP anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-modify-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-178">使用安全 & 合规性中心修改 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-178">Use the Security & Compliance Center to modify ATP anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-179">使用以下过程可修改 ATP 反网络钓鱼策略：创建的新策略或已自定义的现有策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-179">Use the following procedures to modify ATP anti-phishing policies: a new policy that you created, or existing policies that you've already customized.</span></span>
+<span data-ttu-id="2a790-179">使用以下过程可修改 ATP 反网络钓鱼策略：创建的新策略或已自定义的现有策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-179">Use the following procedures to modify ATP anti-phishing policies: a new policy that you created, or existing policies that you've already customized.</span></span>
 
-1. <span data-ttu-id="af5cf-180">如果尚不存在，请打开安全 & 合规中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-180">If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-180">如果尚不存在，请打开安全 & 合规中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼**。</span><span class="sxs-lookup"><span data-stu-id="2a790-180">If you're not already there, open the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-181">选择要修改的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-181">Select the custom ATP anti-phishing policy that you want to modify.</span></span> <span data-ttu-id="af5cf-182">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="af5cf-182">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="2a790-181">选择要修改的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-181">Select the custom ATP anti-phishing policy that you want to modify.</span></span> <span data-ttu-id="2a790-182">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="2a790-182">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="af5cf-183">将出现 "**编辑 \<name\> 您的策略**" 浮出控件。</span><span class="sxs-lookup"><span data-stu-id="af5cf-183">The **Edit your policy \<name\>** flyout appears.</span></span> <span data-ttu-id="af5cf-184">单击任意部分中的 " **编辑** " 可访问该部分中的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-184">Clicking **Edit** in any section gives you access to the settings in that section.</span></span>
+3. <span data-ttu-id="2a790-183">将出现 "**编辑 \<name\> 您的策略**" 浮出控件。</span><span class="sxs-lookup"><span data-stu-id="2a790-183">The **Edit your policy \<name\>** flyout appears.</span></span> <span data-ttu-id="2a790-184">单击任意部分中的 " **编辑** " 可访问该部分中的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-184">Clicking **Edit** in any section gives you access to the settings in that section.</span></span>
 
-   - <span data-ttu-id="af5cf-185">以下步骤按节的显示顺序显示，但它们不是连续的 (您可以按任意顺序) 选择和修改各节。</span><span class="sxs-lookup"><span data-stu-id="af5cf-185">The following steps are presented in the order that the sections appear, but they aren't sequential (you can select and modify the sections in any order).</span></span>
+   - <span data-ttu-id="2a790-185">以下步骤按节的显示顺序显示，但它们不是连续的 (您可以按任意顺序) 选择和修改各节。</span><span class="sxs-lookup"><span data-stu-id="2a790-185">The following steps are presented in the order that the sections appear, but they aren't sequential (you can select and modify the sections in any order).</span></span>
 
-   - <span data-ttu-id="af5cf-186">在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任何页面上的 "**保存**" (或 "**取消**" 或 "**关闭** ![ 关闭 ](../../media/scc-remove-icon.png) " 图标，以返回到 " \*\* \<name\> 编辑策略\*\*" 页面 (您无需访问向导的最后一页以保存或离开) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-186">After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).</span></span>
+   - <span data-ttu-id="2a790-186">在分区中单击 "**编辑**" 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任何页面上的 "**保存**" (或 "**取消**" 或 "**关闭** ![ 关闭 ](../../media/scc-remove-icon.png) " 图标，以返回到 " \*\* \<name\> 编辑策略\*\*" 页面 (您无需访问向导的最后一页以保存或离开) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-186">After you click **Edit** in a section, the available settings are presented in a wizard format, but you can jump within the pages in any order, and you can click **Save** on any page (or **Cancel** or **Close** ![Close icon](../../media/scc-remove-icon.png) to return to the **Edit your policy \<name\>** page (you aren't required to visit the last page of the wizard to save or leave).</span></span>
 
-4. <span data-ttu-id="af5cf-187">**策略设置**：单击 " **编辑** " 可修改在上一节中 [创建策略](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) 时可用的相同设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-187">**Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) in the previous section:</span></span>
+4. <span data-ttu-id="2a790-187">**策略设置**：单击 " **编辑** " 可修改在上一节中 [创建策略](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) 时可用的相同设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-187">**Policy setting**: Click **Edit** to modify the same settings that were available when you [created the policy](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) in the previous section:</span></span>
 
-   - <span data-ttu-id="af5cf-188">**名称**</span><span class="sxs-lookup"><span data-stu-id="af5cf-188">**Name**</span></span>
-   - <span data-ttu-id="af5cf-189">**说明**</span><span class="sxs-lookup"><span data-stu-id="af5cf-189">**Description**</span></span>
-   - <span data-ttu-id="af5cf-190">**应用于**</span><span class="sxs-lookup"><span data-stu-id="af5cf-190">**Applied to**</span></span>
-   - <span data-ttu-id="af5cf-191">**查看设置**</span><span class="sxs-lookup"><span data-stu-id="af5cf-191">**Review your settings**</span></span>
+   - <span data-ttu-id="2a790-188">**名称**</span><span class="sxs-lookup"><span data-stu-id="2a790-188">**Name**</span></span>
+   - <span data-ttu-id="2a790-189">**说明**</span><span class="sxs-lookup"><span data-stu-id="2a790-189">**Description**</span></span>
+   - <span data-ttu-id="2a790-190">**应用于**</span><span class="sxs-lookup"><span data-stu-id="2a790-190">**Applied to**</span></span>
+   - <span data-ttu-id="2a790-191">**查看设置**</span><span class="sxs-lookup"><span data-stu-id="2a790-191">**Review your settings**</span></span>
 
-   <span data-ttu-id="af5cf-192">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="af5cf-192">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="2a790-192">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="2a790-192">When you're finished, click **Save** on any page.</span></span>
 
-5. <span data-ttu-id="af5cf-193">**模拟**：单击 " **编辑** " 以修改策略中的受保护的发件人和受保护的域。</span><span class="sxs-lookup"><span data-stu-id="af5cf-193">**Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy.</span></span> <span data-ttu-id="af5cf-194">这些设置是策略的一个条件，用于标识欺骗性发件人，以在入站邮件的发件人地址中单独或按域) 查找 (。</span><span class="sxs-lookup"><span data-stu-id="af5cf-194">These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages.</span></span> <span data-ttu-id="af5cf-195">有关详细信息，请参阅 [ATP 反网络钓鱼策略中的模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-195">For more information, see [Impersonation settings in ATP anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies).</span></span>
+5. <span data-ttu-id="2a790-193">**模拟**：单击 " **编辑** " 以修改策略中的受保护的发件人和受保护的域。</span><span class="sxs-lookup"><span data-stu-id="2a790-193">**Impersonation**: Click **Edit** to modify the protected senders and protected domains in the policy.</span></span> <span data-ttu-id="2a790-194">这些设置是策略的一个条件，用于标识欺骗性发件人，以在入站邮件的发件人地址中单独或按域) 查找 (。</span><span class="sxs-lookup"><span data-stu-id="2a790-194">These settings are a condition for the policy that identifies spoofed senders to look for (individually or by domain) in the From address of inbound messages.</span></span> <span data-ttu-id="2a790-195">有关详细信息，请参阅 [ATP 反网络钓鱼策略中的模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。</span><span class="sxs-lookup"><span data-stu-id="2a790-195">For more information, see [Impersonation settings in ATP anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies).</span></span>
 
-   - <span data-ttu-id="af5cf-196">**添加要保护的用户**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-196">**Add users to protect**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-197">若要打开它，请将切换滑到 **"开**"，然后单击出现的 " **添加用户** " 按钮。</span><span class="sxs-lookup"><span data-stu-id="af5cf-197">To turn it on, slide the toggle to **On**, and then click the **Add user** button that appears.</span></span>
+   - <span data-ttu-id="2a790-196">**添加要保护的用户**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-196">**Add users to protect**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-197">若要打开它，请将切换滑到 **"开**"，然后单击出现的 " **添加用户** " 按钮。</span><span class="sxs-lookup"><span data-stu-id="2a790-197">To turn it on, slide the toggle to **On**, and then click the **Add user** button that appears.</span></span>
 
-     <span data-ttu-id="af5cf-198">在出现的 " **添加用户** 浮出控件" 中，配置以下值：</span><span class="sxs-lookup"><span data-stu-id="af5cf-198">In the **Add user** flyout that appears, configure the following values:</span></span>
+     <span data-ttu-id="2a790-198">在出现的 " **添加用户** 浮出控件" 中，配置以下值：</span><span class="sxs-lookup"><span data-stu-id="2a790-198">In the **Add user** flyout that appears, configure the following values:</span></span>
 
-     - <span data-ttu-id="af5cf-199">**电子邮件地址**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-199">**Email address**:</span></span>
+     - <span data-ttu-id="2a790-199">**电子邮件地址**：</span><span class="sxs-lookup"><span data-stu-id="2a790-199">**Email address**:</span></span>
 
-        - <span data-ttu-id="af5cf-200">在框中单击并滚动到要选择的用户列表。</span><span class="sxs-lookup"><span data-stu-id="af5cf-200">Click in the box and scroll through the list of users to select.</span></span>
-        - <span data-ttu-id="af5cf-201">在框中单击，然后开始键入以筛选列表并选择用户。</span><span class="sxs-lookup"><span data-stu-id="af5cf-201">Click in the box and start typing to filter the list and select a user.</span></span>
-        - <span data-ttu-id="af5cf-202">若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-202">To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.</span></span>
+        - <span data-ttu-id="2a790-200">在框中单击并滚动到要选择的用户列表。</span><span class="sxs-lookup"><span data-stu-id="2a790-200">Click in the box and scroll through the list of users to select.</span></span>
+        - <span data-ttu-id="2a790-201">在框中单击，然后开始键入以筛选列表并选择用户。</span><span class="sxs-lookup"><span data-stu-id="2a790-201">Click in the box and start typing to filter the list and select a user.</span></span>
+        - <span data-ttu-id="2a790-202">若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。</span><span class="sxs-lookup"><span data-stu-id="2a790-202">To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.</span></span>
 
-     - <span data-ttu-id="af5cf-203">**名称**：根据您选择的电子邮件地址填充此值，但您可以对其进行更改。</span><span class="sxs-lookup"><span data-stu-id="af5cf-203">**Name**: This value is populated based on the email address you selected, but you can change it.</span></span>
+     - <span data-ttu-id="2a790-203">**名称**：根据您选择的电子邮件地址填充此值，但您可以对其进行更改。</span><span class="sxs-lookup"><span data-stu-id="2a790-203">**Name**: This value is populated based on the email address you selected, but you can change it.</span></span>
 
-     <span data-ttu-id="af5cf-204">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="af5cf-204">When you're finished, click **Save** on any page.</span></span>
+     <span data-ttu-id="2a790-204">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="2a790-204">When you're finished, click **Save** on any page.</span></span>
 
-    <span data-ttu-id="af5cf-205">若要编辑现有条目，请在列表中选择受保护的用户。</span><span class="sxs-lookup"><span data-stu-id="af5cf-205">To edit an existing entry, select the protected user in the list.</span></span>
+    <span data-ttu-id="2a790-205">若要编辑现有条目，请在列表中选择受保护的用户。</span><span class="sxs-lookup"><span data-stu-id="2a790-205">To edit an existing entry, select the protected user in the list.</span></span>
 
-   - <span data-ttu-id="af5cf-206">**添加要保护的域**：配置以下一个或两个设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-206">**Add domains to protect**: Configure one or both of the following settings:</span></span>
+   - <span data-ttu-id="2a790-206">**添加要保护的域**：配置以下一个或两个设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-206">**Add domains to protect**: Configure one or both of the following settings:</span></span>
 
-     - <span data-ttu-id="af5cf-207">**自动包括我拥有的域**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-207">**Automatically include the domains I own**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-208">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-208">To turn it on, slide the toggle to **On**.</span></span>
-     - <span data-ttu-id="af5cf-209">**包含自定义域**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-209">**Include custom domains**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-210">若要打开它，请将开关滑到 **"打开**"，然后在 " **添加域** " 框中输入域名 (例如，CONTOSO.COM) ，按 enter，并在必要时重复此操作。</span><span class="sxs-lookup"><span data-stu-id="af5cf-210">To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.</span></span>
+     - <span data-ttu-id="2a790-207">**自动包括我拥有的域**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-207">**Automatically include the domains I own**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-208">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-208">To turn it on, slide the toggle to **On**.</span></span>
+     - <span data-ttu-id="2a790-209">**包含自定义域**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-209">**Include custom domains**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-210">若要打开它，请将开关滑到 **"打开**"，然后在 " **添加域** " 框中输入域名 (例如，CONTOSO.COM) ，按 enter，并在必要时重复此操作。</span><span class="sxs-lookup"><span data-stu-id="2a790-210">To turn it on, slide the toggle to **On**, and in the **Add domains** box, enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.</span></span>
 
-   - <span data-ttu-id="af5cf-211">**操作**：单击 "**编辑**"</span><span class="sxs-lookup"><span data-stu-id="af5cf-211">**Actions**: Click **Edit**</span></span>
+   - <span data-ttu-id="2a790-211">**操作**：单击 "**编辑**"</span><span class="sxs-lookup"><span data-stu-id="2a790-211">**Actions**: Click **Edit**</span></span>
 
-     - <span data-ttu-id="af5cf-212">**如果由模拟用户发送电子邮件**：为欺骗性发件人是在 " **添加用户以保护**" 中指定的受保护用户之一的邮件配置下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="af5cf-212">**If email is sent by an impersonated user**: Configure one of the following actions for messages where the spoofed sender is one of the protected users you specified in **Add users to protect**:</span></span>
+     - <span data-ttu-id="2a790-212">**如果由模拟用户发送电子邮件**：为欺骗性发件人是在 " **添加用户以保护**" 中指定的受保护用户之一的邮件配置下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="2a790-212">**If email is sent by an impersonated user**: Configure one of the following actions for messages where the spoofed sender is one of the protected users you specified in **Add users to protect**:</span></span>
 
-       - <span data-ttu-id="af5cf-213">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="af5cf-213">**Don't apply any action**</span></span>
-       - <span data-ttu-id="af5cf-214">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-214">**Redirect message to other email addresses**</span></span>
-       - <span data-ttu-id="af5cf-215">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="af5cf-215">**Move message to Junk Email folder**</span></span>
-       - <span data-ttu-id="af5cf-216">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-216">**Quarantine the message**</span></span>
-       - <span data-ttu-id="af5cf-217">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-217">**Deliver the message and add other addresses to the Bcc line**</span></span>
-       - <span data-ttu-id="af5cf-218">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-218">**Delete the message before it's delivered**</span></span>
+       - <span data-ttu-id="2a790-213">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="2a790-213">**Don't apply any action**</span></span>
+       - <span data-ttu-id="2a790-214">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-214">**Redirect message to other email addresses**</span></span>
+       - <span data-ttu-id="2a790-215">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="2a790-215">**Move message to Junk Email folder**</span></span>
+       - <span data-ttu-id="2a790-216">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-216">**Quarantine the message**</span></span>
+       - <span data-ttu-id="2a790-217">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-217">**Deliver the message and add other addresses to the Bcc line**</span></span>
+       - <span data-ttu-id="2a790-218">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-218">**Delete the message before it's delivered**</span></span>
 
-     - <span data-ttu-id="af5cf-219">**如果由模拟域发送电子邮件**：为欺骗性发件人位于在 " **添加域以保护**" 中指定的受保护域之一的邮件配置下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="af5cf-219">**If email is sent by an impersonated domain**: Configure one of the following actions for messages where the spoofed sender is in one of the protected domains you specified in **Add domains to protect**:</span></span>
+     - <span data-ttu-id="2a790-219">**如果由模拟域发送电子邮件**：为欺骗性发件人位于在 " **添加域以保护**" 中指定的受保护域之一的邮件配置下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="2a790-219">**If email is sent by an impersonated domain**: Configure one of the following actions for messages where the spoofed sender is in one of the protected domains you specified in **Add domains to protect**:</span></span>
 
-     - <span data-ttu-id="af5cf-220">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="af5cf-220">**Don't apply any action**</span></span>
-     - <span data-ttu-id="af5cf-221">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-221">**Redirect message to other email addresses**</span></span>
-     - <span data-ttu-id="af5cf-222">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="af5cf-222">**Move message to Junk Email folder**</span></span>
-     - <span data-ttu-id="af5cf-223">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-223">**Quarantine the message**</span></span>
-     - <span data-ttu-id="af5cf-224">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-224">**Deliver the message and add other addresses to the Bcc line**</span></span>
-     - <span data-ttu-id="af5cf-225">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-225">**Delete the message before it's delivered**</span></span>
+     - <span data-ttu-id="2a790-220">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="2a790-220">**Don't apply any action**</span></span>
+     - <span data-ttu-id="2a790-221">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-221">**Redirect message to other email addresses**</span></span>
+     - <span data-ttu-id="2a790-222">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="2a790-222">**Move message to Junk Email folder**</span></span>
+     - <span data-ttu-id="2a790-223">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-223">**Quarantine the message**</span></span>
+     - <span data-ttu-id="2a790-224">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-224">**Deliver the message and add other addresses to the Bcc line**</span></span>
+     - <span data-ttu-id="2a790-225">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-225">**Delete the message before it's delivered**</span></span>
 
-   - <span data-ttu-id="af5cf-226">单击 " **打开模拟安全提示** "，并配置以下任何设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-226">Click **turn on impersonation safety tips** and configure any of the following settings:</span></span>
+   - <span data-ttu-id="2a790-226">单击 " **打开模拟安全提示** "，并配置以下任何设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-226">Click **turn on impersonation safety tips** and configure any of the following settings:</span></span>
 
-     - <span data-ttu-id="af5cf-227">**为模拟用户显示提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-227">**Show tip for impersonated users**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-228">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-228">To turn it on, slide the toggle to **On**.</span></span>
-     - <span data-ttu-id="af5cf-229">**显示模拟域的提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-229">**Show tip for impersonated domains**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-230">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-230">To turn it on, slide the toggle to **On**.</span></span>
-     - <span data-ttu-id="af5cf-231">**显示不正常字符的提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-231">**Show tip for unusual characters**: The default value is **Off**.</span></span> <span data-ttu-id="af5cf-232">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-232">To turn it on, slide the toggle to **On**.</span></span>
+     - <span data-ttu-id="2a790-227">**为模拟用户显示提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-227">**Show tip for impersonated users**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-228">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-228">To turn it on, slide the toggle to **On**.</span></span>
+     - <span data-ttu-id="2a790-229">**显示模拟域的提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-229">**Show tip for impersonated domains**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-230">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-230">To turn it on, slide the toggle to **On**.</span></span>
+     - <span data-ttu-id="2a790-231">**显示不正常字符的提示**：默认值为 **Off**。</span><span class="sxs-lookup"><span data-stu-id="2a790-231">**Show tip for unusual characters**: The default value is **Off**.</span></span> <span data-ttu-id="2a790-232">若要打开它，请将开关滑到 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-232">To turn it on, slide the toggle to **On**.</span></span>
 
-     <span data-ttu-id="af5cf-233">完成后，单击“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="af5cf-233">When you're finished, click **Save**.</span></span>
+     <span data-ttu-id="2a790-233">完成时，请单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="2a790-233">When you're finished, click **Save**.</span></span>
 
-   - <span data-ttu-id="af5cf-234">**邮箱智能**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-234">**Mailbox intelligence**:</span></span>
+   - <span data-ttu-id="2a790-234">**邮箱智能**：</span><span class="sxs-lookup"><span data-stu-id="2a790-234">**Mailbox intelligence**:</span></span>
 
-     - <span data-ttu-id="af5cf-235">是否**启用邮箱智能？**：默认值为 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-235">**Enable mailbox intelligence?**: The default value is **On**.</span></span> <span data-ttu-id="af5cf-236">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-236">To turn it off, slide the toggle to **Off**.</span></span>
+     - <span data-ttu-id="2a790-235">是否**启用邮箱智能？**：默认值为 **"开**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-235">**Enable mailbox intelligence?**: The default value is **On**.</span></span> <span data-ttu-id="2a790-236">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-236">To turn it off, slide the toggle to **Off**.</span></span>
 
-     - <span data-ttu-id="af5cf-237">是否**启用基于邮箱智能的模拟保护？**：此设置仅**在**"**启用邮箱智能" 时可用？处于启用状态**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-237">**Enable mailbox intelligence based impersonation protection?**: This setting is only available if **Enable mailbox intelligence?** is **On**.</span></span>
+     - <span data-ttu-id="2a790-237">是否**启用基于邮箱智能的模拟保护？**：此设置仅**在**"**启用邮箱智能" 时可用？处于启用状态**。</span><span class="sxs-lookup"><span data-stu-id="2a790-237">**Enable mailbox intelligence based impersonation protection?**: This setting is only available if **Enable mailbox intelligence?** is **On**.</span></span>
 
-       <span data-ttu-id="af5cf-238">在 **模拟用户发送电子邮件时**，您可以指定下列操作之一对邮箱智能失败 (的邮件执行与受保护的用户和受保护的域) 的相同操作的访问：</span><span class="sxs-lookup"><span data-stu-id="af5cf-238">In **If email is sent by an impersonated user**, you can specify one of the following actions to take on messages that fail mailbox intelligence (the same actions that are available for protected users and protected domains):</span></span>
+       <span data-ttu-id="2a790-238">在 **模拟用户发送电子邮件时**，您可以指定下列操作之一对邮箱智能失败 (的邮件执行与受保护的用户和受保护的域) 的相同操作的访问：</span><span class="sxs-lookup"><span data-stu-id="2a790-238">In **If email is sent by an impersonated user**, you can specify one of the following actions to take on messages that fail mailbox intelligence (the same actions that are available for protected users and protected domains):</span></span>
 
-       - <span data-ttu-id="af5cf-239">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="af5cf-239">**Don't apply any action**</span></span>
-       - <span data-ttu-id="af5cf-240">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-240">**Redirect message to other email addresses**</span></span>
-       - <span data-ttu-id="af5cf-241">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="af5cf-241">**Move message to Junk Email folder**</span></span>
-       - <span data-ttu-id="af5cf-242">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-242">**Quarantine the message**</span></span>
-       - <span data-ttu-id="af5cf-243">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="af5cf-243">**Deliver the message and add other addresses to the Bcc line**</span></span>
-       - <span data-ttu-id="af5cf-244">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-244">**Delete the message before it's delivered**</span></span>
+       - <span data-ttu-id="2a790-239">**不应用任何操作**</span><span class="sxs-lookup"><span data-stu-id="2a790-239">**Don't apply any action**</span></span>
+       - <span data-ttu-id="2a790-240">**将邮件重定向到其他电子邮件地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-240">**Redirect message to other email addresses**</span></span>
+       - <span data-ttu-id="2a790-241">**将邮件移动到 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="2a790-241">**Move message to Junk Email folder**</span></span>
+       - <span data-ttu-id="2a790-242">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-242">**Quarantine the message**</span></span>
+       - <span data-ttu-id="2a790-243">**传递邮件并向 "密件抄送" 行添加其他地址**</span><span class="sxs-lookup"><span data-stu-id="2a790-243">**Deliver the message and add other addresses to the Bcc line**</span></span>
+       - <span data-ttu-id="2a790-244">**邮件传递前删除邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-244">**Delete the message before it's delivered**</span></span>
 
-   - <span data-ttu-id="af5cf-245">**添加受信任的发件人和域**：指定策略的例外项：</span><span class="sxs-lookup"><span data-stu-id="af5cf-245">**Add trusted senders and domains**: Specify exceptions for the policy:</span></span>
+   - <span data-ttu-id="2a790-245">**添加受信任的发件人和域**：指定策略的例外项：</span><span class="sxs-lookup"><span data-stu-id="2a790-245">**Add trusted senders and domains**: Specify exceptions for the policy:</span></span>
 
-     - <span data-ttu-id="af5cf-246">**受信任的发件人**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-246">**Trusted senders**:</span></span>
+     - <span data-ttu-id="2a790-246">**受信任的发件人**：</span><span class="sxs-lookup"><span data-stu-id="2a790-246">**Trusted senders**:</span></span>
 
-       - <span data-ttu-id="af5cf-247">在框中单击并滚动到要选择的用户列表。</span><span class="sxs-lookup"><span data-stu-id="af5cf-247">Click in the box and scroll through the list of users to select.</span></span>
-       - <span data-ttu-id="af5cf-248">在框中单击，然后开始键入以筛选列表并选择用户。</span><span class="sxs-lookup"><span data-stu-id="af5cf-248">Click in the box and start typing to filter the list and select a user.</span></span>
-       - <span data-ttu-id="af5cf-249">若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-249">To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.</span></span>
+       - <span data-ttu-id="2a790-247">在框中单击并滚动到要选择的用户列表。</span><span class="sxs-lookup"><span data-stu-id="2a790-247">Click in the box and scroll through the list of users to select.</span></span>
+       - <span data-ttu-id="2a790-248">在框中单击，然后开始键入以筛选列表并选择用户。</span><span class="sxs-lookup"><span data-stu-id="2a790-248">Click in the box and start typing to filter the list and select a user.</span></span>
+       - <span data-ttu-id="2a790-249">若要删除条目，请**Remove**单击 ![ ](../../media/scc-remove-icon.png) "用户" 上的 "删除删除图标"。</span><span class="sxs-lookup"><span data-stu-id="2a790-249">To remove an entry, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user.</span></span>
 
-     - <span data-ttu-id="af5cf-250">**受信任域**：输入域名 (例如，contoso.com) ，按 enter，并根据需要重复此步骤。</span><span class="sxs-lookup"><span data-stu-id="af5cf-250">**Trusted domains**: Enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.</span></span>
+     - <span data-ttu-id="2a790-250">**受信任域**：输入域名 (例如，contoso.com) ，按 enter，并根据需要重复此步骤。</span><span class="sxs-lookup"><span data-stu-id="2a790-250">**Trusted domains**: Enter the domain name (for example, contoso.com), press ENTER, and repeat as necessary.</span></span>
 
-   - <span data-ttu-id="af5cf-251">**查看设置**：不是单击每个单独的步骤，而是在摘要中显示设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-251">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
+   - <span data-ttu-id="2a790-251">**查看设置**：不是单击每个单独的步骤，而是在摘要中显示设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-251">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
 
-     - <span data-ttu-id="af5cf-252">您可以单击每个部分中的 " **编辑** " 以跳回到相关页面。</span><span class="sxs-lookup"><span data-stu-id="af5cf-252">You can click **Edit** in each section to jump back to the relevant page.</span></span>
-     - <span data-ttu-id="af5cf-253">您可以在此页面**上\*\*\*\*直接切换**以下设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-253">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
+     - <span data-ttu-id="2a790-252">您可以单击每个部分中的 " **编辑** " 以跳回到相关页面。</span><span class="sxs-lookup"><span data-stu-id="2a790-252">You can click **Edit** in each section to jump back to the relevant page.</span></span>
+     - <span data-ttu-id="2a790-253">您可以在此页面**上\*\*\*\*直接切换**以下设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-253">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
 
-       - <span data-ttu-id="af5cf-254">**受保护的用户**</span><span class="sxs-lookup"><span data-stu-id="af5cf-254">**Protected users**</span></span>
-       - <span data-ttu-id="af5cf-255">**受保护域** \>**包含我自己的域**</span><span class="sxs-lookup"><span data-stu-id="af5cf-255">**Protected domains** \> **Include domains I own**</span></span>
-       - <span data-ttu-id="af5cf-256">**受保护域** \>**受保护的域** (自定义域) </span><span class="sxs-lookup"><span data-stu-id="af5cf-256">**Protected domains** \> **Protected domains** (custom domains)</span></span>
-       - <span data-ttu-id="af5cf-257">**邮箱智能**</span><span class="sxs-lookup"><span data-stu-id="af5cf-257">**Mailbox intelligence**</span></span>
+       - <span data-ttu-id="2a790-254">**受保护的用户**</span><span class="sxs-lookup"><span data-stu-id="2a790-254">**Protected users**</span></span>
+       - <span data-ttu-id="2a790-255">**受保护域** \>**包含我自己的域**</span><span class="sxs-lookup"><span data-stu-id="2a790-255">**Protected domains** \> **Include domains I own**</span></span>
+       - <span data-ttu-id="2a790-256">**受保护域** \>**受保护的域** (自定义域) </span><span class="sxs-lookup"><span data-stu-id="2a790-256">**Protected domains** \> **Protected domains** (custom domains)</span></span>
+       - <span data-ttu-id="2a790-257">**邮箱智能**</span><span class="sxs-lookup"><span data-stu-id="2a790-257">**Mailbox intelligence**</span></span>
 
-   <span data-ttu-id="af5cf-258">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="af5cf-258">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="2a790-258">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="2a790-258">When you're finished, click **Save** on any page.</span></span>
 
-6. <span data-ttu-id="af5cf-259">**哄骗**：单击 " **编辑** " 以打开或关闭欺骗情报，在 Outlook 中打开或关闭未经身份验证的发件人标识，并将操作配置为应用于阻止的欺骗性发件人的邮件。</span><span class="sxs-lookup"><span data-stu-id="af5cf-259">**Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders.</span></span> <span data-ttu-id="af5cf-260">有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-260">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
+6. <span data-ttu-id="2a790-259">**哄骗**：单击 " **编辑** " 以打开或关闭欺骗情报，在 Outlook 中打开或关闭未经身份验证的发件人标识，并将操作配置为应用于阻止的欺骗性发件人的邮件。</span><span class="sxs-lookup"><span data-stu-id="2a790-259">**Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders.</span></span> <span data-ttu-id="2a790-260">有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。</span><span class="sxs-lookup"><span data-stu-id="2a790-260">For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).</span></span>
 
-   <span data-ttu-id="af5cf-261">请注意，EOP 中的反网络钓鱼策略中也提供了这些相同的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-261">Note that these same settings are also available in anti-phishing policies in EOP.</span></span>
+   <span data-ttu-id="2a790-261">请注意，EOP 中的反网络钓鱼策略中也提供了这些相同的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-261">Note that these same settings are also available in anti-phishing policies in EOP.</span></span>
 
-   - <span data-ttu-id="af5cf-262">**哄骗筛选器设置**：默认值为 **"开**"，我们建议您将其保留在中。</span><span class="sxs-lookup"><span data-stu-id="af5cf-262">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="af5cf-263">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-263">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="af5cf-264">有关详细信息，请参阅 [在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-264">For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).</span></span>
+   - <span data-ttu-id="2a790-262">**哄骗筛选器设置**：默认值为 **"开**"，我们建议您将其保留在中。</span><span class="sxs-lookup"><span data-stu-id="2a790-262">**Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on.</span></span> <span data-ttu-id="2a790-263">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-263">To turn it off, slide the toggle to **Off**.</span></span> <span data-ttu-id="2a790-264">有关详细信息，请参阅 [在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)。</span><span class="sxs-lookup"><span data-stu-id="2a790-264">For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).</span></span>
 
      > [!NOTE]
-     > <span data-ttu-id="af5cf-265">如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。</span><span class="sxs-lookup"><span data-stu-id="af5cf-265">You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="af5cf-266">有关说明，请参阅 [增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-266">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
+     > <span data-ttu-id="2a790-265">如果你的 MX 记录不指向 Microsoft 365，则无需禁用反欺骗保护;可以改为对连接器启用增强的筛选。</span><span class="sxs-lookup"><span data-stu-id="2a790-265">You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead.</span></span> <span data-ttu-id="2a790-266">有关说明，请参阅 [增强的对 Exchange Online 中的连接器的筛选](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。</span><span class="sxs-lookup"><span data-stu-id="2a790-266">For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).</span></span>
 
-   - <span data-ttu-id="af5cf-267">**启用未经身份验证的发件人功能**：默认值为 **打开**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-267">**Enable Unauthenticated Sender feature**: The default value is **On**.</span></span> <span data-ttu-id="af5cf-268">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-268">To turn it off, slide the toggle to **Off**.</span></span>
+   - <span data-ttu-id="2a790-267">**启用未经身份验证的发件人功能**：默认值为 **打开**。</span><span class="sxs-lookup"><span data-stu-id="2a790-267">**Enable Unauthenticated Sender feature**: The default value is **On**.</span></span> <span data-ttu-id="2a790-268">若要将其关闭，请将开关滑动到 " **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-268">To turn it off, slide the toggle to **Off**.</span></span>
 
-   - <span data-ttu-id="af5cf-269">**操作**：指定对欺骗性智能邮件失败的邮件执行的操作：</span><span class="sxs-lookup"><span data-stu-id="af5cf-269">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
+   - <span data-ttu-id="2a790-269">**操作**：指定对欺骗性智能邮件失败的邮件执行的操作：</span><span class="sxs-lookup"><span data-stu-id="2a790-269">**Actions**: Specify the action to take on messages that fail spoof intelligence:</span></span>
 
-     <span data-ttu-id="af5cf-270">**如果电子邮件由不允许欺骗您的域的人发送**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-270">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
+     <span data-ttu-id="2a790-270">**如果电子邮件由不允许欺骗您的域的人发送**：</span><span class="sxs-lookup"><span data-stu-id="2a790-270">**If email is sent by someone who's not allowed to spoof your domain**:</span></span>
 
-     - <span data-ttu-id="af5cf-271">**将邮件移到收件人的 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="af5cf-271">**Move message to the recipients' Junk Email folders**</span></span>
-     - <span data-ttu-id="af5cf-272">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="af5cf-272">**Quarantine the message**</span></span>
+     - <span data-ttu-id="2a790-271">**将邮件移到收件人的 "垃圾邮件" 文件夹**</span><span class="sxs-lookup"><span data-stu-id="2a790-271">**Move message to the recipients' Junk Email folders**</span></span>
+     - <span data-ttu-id="2a790-272">**隔离邮件**</span><span class="sxs-lookup"><span data-stu-id="2a790-272">**Quarantine the message**</span></span>
 
-   - <span data-ttu-id="af5cf-273">**查看设置**：不是单击每个单独的步骤，而是在摘要中显示设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-273">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
+   - <span data-ttu-id="2a790-273">**查看设置**：不是单击每个单独的步骤，而是在摘要中显示设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-273">**Review your settings**: Instead of clicking on each individual step, the settings are displayed in a summary.</span></span>
 
-     - <span data-ttu-id="af5cf-274">您可以单击每个部分中的 " **编辑** " 以跳回到相关页面。</span><span class="sxs-lookup"><span data-stu-id="af5cf-274">You can click **Edit** in each section to jump back to the relevant page.</span></span>
-     - <span data-ttu-id="af5cf-275">您可以在此页面**上\*\*\*\*直接切换**以下设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-275">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
+     - <span data-ttu-id="2a790-274">您可以单击每个部分中的 " **编辑** " 以跳回到相关页面。</span><span class="sxs-lookup"><span data-stu-id="2a790-274">You can click **Edit** in each section to jump back to the relevant page.</span></span>
+     - <span data-ttu-id="2a790-275">您可以在此页面**上\*\*\*\*直接切换**以下设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-275">You can toggle the following settings **On** or **Off** directly on this page:</span></span>
 
-       - <span data-ttu-id="af5cf-276">**启用 antispoofing 保护**</span><span class="sxs-lookup"><span data-stu-id="af5cf-276">**Enable antispoofing protection**</span></span>
-       - <span data-ttu-id="af5cf-277">**启用未经身份验证的发件人功能**</span><span class="sxs-lookup"><span data-stu-id="af5cf-277">**Enable Unauthenticated Sender feature**</span></span>
+       - <span data-ttu-id="2a790-276">**启用 antispoofing 保护**</span><span class="sxs-lookup"><span data-stu-id="2a790-276">**Enable antispoofing protection**</span></span>
+       - <span data-ttu-id="2a790-277">**启用未经身份验证的发件人功能**</span><span class="sxs-lookup"><span data-stu-id="2a790-277">**Enable Unauthenticated Sender feature**</span></span>
 
-   <span data-ttu-id="af5cf-278">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="af5cf-278">When you're finished, click **Save** on any page.</span></span>
+   <span data-ttu-id="2a790-278">完成后，请单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="2a790-278">When you're finished, click **Save** on any page.</span></span>
 
-7. <span data-ttu-id="af5cf-279">**高级设置**：单击 " **编辑** " 以配置高级网络钓鱼阈值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-279">**Advanced settings**: Click **Edit** to configure the advanced phishing thresholds.</span></span> <span data-ttu-id="af5cf-280">有关详细信息，请参阅 [ATP 反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-280">For more information, see [Advanced phishing thresholds in ATP anti-phishing policies](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies).</span></span>
+7. <span data-ttu-id="2a790-279">**高级设置**：单击 " **编辑** " 以配置高级网络钓鱼阈值。</span><span class="sxs-lookup"><span data-stu-id="2a790-279">**Advanced settings**: Click **Edit** to configure the advanced phishing thresholds.</span></span> <span data-ttu-id="2a790-280">有关详细信息，请参阅 [ATP 反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)。</span><span class="sxs-lookup"><span data-stu-id="2a790-280">For more information, see [Advanced phishing thresholds in ATP anti-phishing policies](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies).</span></span>
 
-   - <span data-ttu-id="af5cf-281">**高级网络钓鱼阈值**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="af5cf-281">**Advanced phishing thresholds**: Select one of the following values:</span></span>
+   - <span data-ttu-id="2a790-281">**高级网络钓鱼阈值**：选择下列值之一：</span><span class="sxs-lookup"><span data-stu-id="2a790-281">**Advanced phishing thresholds**: Select one of the following values:</span></span>
 
-   - <span data-ttu-id="af5cf-282">**1-标准** (这是默认值。 ) </span><span class="sxs-lookup"><span data-stu-id="af5cf-282">**1 - Standard** (This is the default value.)</span></span>
-   - <span data-ttu-id="af5cf-283">**2-主动**</span><span class="sxs-lookup"><span data-stu-id="af5cf-283">**2 - Aggressive**</span></span>
-   - <span data-ttu-id="af5cf-284">**3-更主动**</span><span class="sxs-lookup"><span data-stu-id="af5cf-284">**3 - More aggressive**</span></span>
-   - <span data-ttu-id="af5cf-285">**4-最主动**</span><span class="sxs-lookup"><span data-stu-id="af5cf-285">**4 - Most aggressive**</span></span>
+   - <span data-ttu-id="2a790-282">**1-标准** (这是默认值。 ) </span><span class="sxs-lookup"><span data-stu-id="2a790-282">**1 - Standard** (This is the default value.)</span></span>
+   - <span data-ttu-id="2a790-283">**2-主动**</span><span class="sxs-lookup"><span data-stu-id="2a790-283">**2 - Aggressive**</span></span>
+   - <span data-ttu-id="2a790-284">**3-更主动**</span><span class="sxs-lookup"><span data-stu-id="2a790-284">**3 - More aggressive**</span></span>
+   - <span data-ttu-id="2a790-285">**4-最主动**</span><span class="sxs-lookup"><span data-stu-id="2a790-285">**4 - Most aggressive**</span></span>
 
-   - <span data-ttu-id="af5cf-286">**查看设置**：单击 " **编辑** " 以跳回到 " **高级网络钓鱼阈值** " 页面。</span><span class="sxs-lookup"><span data-stu-id="af5cf-286">**Review your settings**: Click **Edit** to jump back to the **Advanced phishing thresholds** page.</span></span>
+   - <span data-ttu-id="2a790-286">**查看设置**：单击 " **编辑** " 以跳回到 " **高级网络钓鱼阈值** " 页面。</span><span class="sxs-lookup"><span data-stu-id="2a790-286">**Review your settings**: Click **Edit** to jump back to the **Advanced phishing thresholds** page.</span></span>
 
-   <span data-ttu-id="af5cf-287">完成后，单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="af5cf-287">When you're finished, click **Save** on either page.</span></span>
+   <span data-ttu-id="2a790-287">完成后，单击任意页面上的 " **保存** "。</span><span class="sxs-lookup"><span data-stu-id="2a790-287">When you're finished, click **Save** on either page.</span></span>
 
-8. <span data-ttu-id="af5cf-288">返回到 "**编辑你的 \<Name\> 策略**" 页，查看你的设置，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-288">Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.</span></span>
+8. <span data-ttu-id="2a790-288">返回到 "**编辑你的 \<Name\> 策略**" 页，查看你的设置，然后单击 "**关闭**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-288">Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.</span></span>
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a><span data-ttu-id="af5cf-289">使用安全 & 合规性中心修改默认的 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-289">Use the Security & Compliance Center to modify the default ATP anti-phishing policy</span></span>
+### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a><span data-ttu-id="2a790-289">使用安全 & 合规性中心修改默认的 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-289">Use the Security & Compliance Center to modify the default ATP anti-phishing policy</span></span>
 
-<span data-ttu-id="af5cf-290">默认的 ATP 反网络钓鱼策略名为 Office365 AntiPhish Default，且不会出现在策略列表中。</span><span class="sxs-lookup"><span data-stu-id="af5cf-290">The default ATP anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="af5cf-291">若要修改默认的 ATP 反网络钓鱼策略，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="af5cf-291">To modify the default ATP anti-phishing policy, do the following steps:</span></span>
+<span data-ttu-id="2a790-290">默认的 ATP 反网络钓鱼策略名为 Office365 AntiPhish Default，且不会出现在策略列表中。</span><span class="sxs-lookup"><span data-stu-id="2a790-290">The default ATP anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies.</span></span> <span data-ttu-id="2a790-291">若要修改默认的 ATP 反网络钓鱼策略，请执行以下步骤：</span><span class="sxs-lookup"><span data-stu-id="2a790-291">To modify the default ATP anti-phishing policy, do the following steps:</span></span>
 
-1. <span data-ttu-id="af5cf-292">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-292">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-292">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-292">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-293">在 " **反钓鱼网站** " 页上，单击 " **默认策略**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-293">On the **Anti-phishing** page, click **Default policy**.</span></span>
+2. <span data-ttu-id="2a790-293">在 " **反钓鱼网站** " 页上，单击 " **默认策略**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-293">On the **Anti-phishing** page, click **Default policy**.</span></span>
 
-3. <span data-ttu-id="af5cf-294">将显示 " **编辑您的策略 Office365 AntiPhish 默认** 页"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-294">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="af5cf-295">以下各节均可用，其中包含 [修改自定义策略](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies)时的相同设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-295">The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies):</span></span>
+3. <span data-ttu-id="2a790-294">将显示 " **编辑您的策略 Office365 AntiPhish 默认** 页"。</span><span class="sxs-lookup"><span data-stu-id="2a790-294">The **Edit your policy Office365 AntiPhish Default** page appears.</span></span> <span data-ttu-id="2a790-295">以下各节均可用，其中包含 [修改自定义策略](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies)时的相同设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-295">The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies):</span></span>
 
-   - <span data-ttu-id="af5cf-296">**模拟**</span><span class="sxs-lookup"><span data-stu-id="af5cf-296">**Impersonation**</span></span>
-   - <span data-ttu-id="af5cf-297">**哄骗**</span><span class="sxs-lookup"><span data-stu-id="af5cf-297">**Spoof**</span></span>
-   - <span data-ttu-id="af5cf-298">**高级设置**</span><span class="sxs-lookup"><span data-stu-id="af5cf-298">**Advanced settings**</span></span>
+   - <span data-ttu-id="2a790-296">**模拟**</span><span class="sxs-lookup"><span data-stu-id="2a790-296">**Impersonation**</span></span>
+   - <span data-ttu-id="2a790-297">**哄骗**</span><span class="sxs-lookup"><span data-stu-id="2a790-297">**Spoof**</span></span>
+   - <span data-ttu-id="2a790-298">**高级设置**</span><span class="sxs-lookup"><span data-stu-id="2a790-298">**Advanced settings**</span></span>
 
-   <span data-ttu-id="af5cf-299">修改默认策略时，以下设置不可用：</span><span class="sxs-lookup"><span data-stu-id="af5cf-299">The following settings aren't available when you modify the default policy:</span></span>
+   <span data-ttu-id="2a790-299">修改默认策略时，以下设置不可用：</span><span class="sxs-lookup"><span data-stu-id="2a790-299">The following settings aren't available when you modify the default policy:</span></span>
 
-   - <span data-ttu-id="af5cf-300">您可以看到 " **策略设置** " 部分和值，但没有 " **编辑** " 链接，因此不能修改 (策略名称、说明和策略应用于的用户 (它适用于所有收件人) # A3。</span><span class="sxs-lookup"><span data-stu-id="af5cf-300">You can see the **Policy setting** section and values, but there's no **Edit** link, so you can't modify the settings (policy name, description, and who the policy applies to (it applies to all recipients)).</span></span>
-   - <span data-ttu-id="af5cf-301">您不能删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-301">You can't delete the default policy.</span></span>
-   - <span data-ttu-id="af5cf-302">您不能更改默认策略的优先级 (它始终应用于最后) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-302">You can't change the priority of the default policy (it's always applied last).</span></span>
+   - <span data-ttu-id="2a790-300">您可以看到 " **策略设置** " 部分和值，但没有 " **编辑** " 链接，因此不能修改 (策略名称、说明和策略应用于的用户 (它适用于所有收件人) # A3。</span><span class="sxs-lookup"><span data-stu-id="2a790-300">You can see the **Policy setting** section and values, but there's no **Edit** link, so you can't modify the settings (policy name, description, and who the policy applies to (it applies to all recipients)).</span></span>
+   - <span data-ttu-id="2a790-301">您不能删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-301">You can't delete the default policy.</span></span>
+   - <span data-ttu-id="2a790-302">您不能更改默认策略的优先级 (它始终应用于最后) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-302">You can't change the priority of the default policy (it's always applied last).</span></span>
 
-4. <span data-ttu-id="af5cf-303">在 " **编辑策略 Office365 AntiPhish 默认** 页面上，查看您的设置，然后单击" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-303">On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
+4. <span data-ttu-id="2a790-303">在 " **编辑策略 Office365 AntiPhish 默认** 页面上，查看您的设置，然后单击" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-303">On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.</span></span>
 
-### <a name="enable-or-disable-custom-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-304">启用或禁用自定义 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-304">Enable or disable custom ATP anti-phishing policies</span></span>
+### <a name="enable-or-disable-custom-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-304">启用或禁用自定义 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-304">Enable or disable custom ATP anti-phishing policies</span></span>
 
-1. <span data-ttu-id="af5cf-305">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-305">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-305">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-305">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-306">请注意 " **状态** " 列中的值：</span><span class="sxs-lookup"><span data-stu-id="af5cf-306">Notice the value in the **Status** column:</span></span>
+2. <span data-ttu-id="2a790-306">请注意 " **状态** " 列中的值：</span><span class="sxs-lookup"><span data-stu-id="2a790-306">Notice the value in the **Status** column:</span></span>
 
-   - <span data-ttu-id="af5cf-307">将开关滑到 " **关闭** " 以禁用该策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-307">Slide the toggle to **Off** to disable the policy.</span></span>
+   - <span data-ttu-id="2a790-307">将开关滑到 " **关闭** " 以禁用该策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-307">Slide the toggle to **Off** to disable the policy.</span></span>
 
-   - <span data-ttu-id="af5cf-308">将切换滑到 **打开** 以启用该策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-308">Slide the toggle to **On** to enable the policy.</span></span>
+   - <span data-ttu-id="2a790-308">将切换滑到 **打开** 以启用该策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-308">Slide the toggle to **On** to enable the policy.</span></span>
 
-<span data-ttu-id="af5cf-309">您不能禁用默认的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-309">You can't disable the default anti-phishing policy.</span></span>
+<span data-ttu-id="2a790-309">您不能禁用默认的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-309">You can't disable the default anti-phishing policy.</span></span>
 
-### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-310">设置自定义 ATP 反网络钓鱼策略的优先级</span><span class="sxs-lookup"><span data-stu-id="af5cf-310">Set the priority of custom ATP anti-phishing policies</span></span>
+### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-310">设置自定义 ATP 反网络钓鱼策略的优先级</span><span class="sxs-lookup"><span data-stu-id="2a790-310">Set the priority of custom ATP anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-311">默认情况下，ATP 反网络钓鱼策略的优先级将取决于它们创建的顺序， (较旧的策略的优先级低于旧策略) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-311">By default, ATP anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies).</span></span> <span data-ttu-id="af5cf-312">低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-312">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="af5cf-313">没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。</span><span class="sxs-lookup"><span data-stu-id="af5cf-313">No two policies can have the same priority, and policy processing stops after the first policy is applied.</span></span>
+<span data-ttu-id="2a790-311">默认情况下，ATP 反网络钓鱼策略的优先级将取决于它们创建的顺序， (较旧的策略的优先级低于旧策略) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-311">By default, ATP anti-phishing policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies).</span></span> <span data-ttu-id="2a790-312">低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。</span><span class="sxs-lookup"><span data-stu-id="2a790-312">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="2a790-313">没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。</span><span class="sxs-lookup"><span data-stu-id="2a790-313">No two policies can have the same priority, and policy processing stops after the first policy is applied.</span></span>
 
-<span data-ttu-id="af5cf-314">有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-314">For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
+<span data-ttu-id="2a790-314">有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="2a790-314">For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
 
-<span data-ttu-id="af5cf-315">自定义 ATP 反网络钓鱼策略按其处理顺序显示， (第一个策略的 **优先级** 值为 0) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-315">Custom ATP anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="af5cf-316">名为 Office365 AntiPhish 的默认反网络钓鱼策略默认的自定义优先级值为 **最低**，无法更改。</span><span class="sxs-lookup"><span data-stu-id="af5cf-316">The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.</span></span>
+<span data-ttu-id="2a790-315">自定义 ATP 反网络钓鱼策略按其处理顺序显示， (第一个策略的 **优先级** 值为 0) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-315">Custom ATP anti-phishing policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span> <span data-ttu-id="2a790-316">名为 Office365 AntiPhish 的默认反网络钓鱼策略默认的自定义优先级值为 **最低**，无法更改。</span><span class="sxs-lookup"><span data-stu-id="2a790-316">The default anti-phishing policy named Office365 AntiPhish Default has the custom priority value **Lowest**, and you can't change it.</span></span>
 
- <span data-ttu-id="af5cf-317">**注意**：在安全 & 合规性中心中，您只能在创建 ATP 反网络钓鱼策略时更改其优先级。</span><span class="sxs-lookup"><span data-stu-id="af5cf-317">**Note**: In the Security & Compliance Center, you can only change the priority of the ATP anti-phishing policy after you create it.</span></span> <span data-ttu-id="af5cf-318">在 PowerShell 中，您可以在创建反网络钓鱼规则时替代默认优先级 (这可能会影响现有规则) 的优先级。</span><span class="sxs-lookup"><span data-stu-id="af5cf-318">In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).</span></span>
+ <span data-ttu-id="2a790-317">**注意**：在安全 & 合规性中心中，您只能在创建 ATP 反网络钓鱼策略时更改其优先级。</span><span class="sxs-lookup"><span data-stu-id="2a790-317">**Note**: In the Security & Compliance Center, you can only change the priority of the ATP anti-phishing policy after you create it.</span></span> <span data-ttu-id="2a790-318">在 PowerShell 中，您可以在创建反网络钓鱼规则时替代默认优先级 (这可能会影响现有规则) 的优先级。</span><span class="sxs-lookup"><span data-stu-id="2a790-318">In PowerShell, you can override the default priority when you create the anti-phish rule (which can affect the priority of existing rules).</span></span>
 
-<span data-ttu-id="af5cf-319">若要更改策略的优先级，请在策略的属性中单击 " **提高优先级** " 或 " **降低优先级** " (您不能直接修改安全 & 合规性中心) 中的 **优先级** 号码。</span><span class="sxs-lookup"><span data-stu-id="af5cf-319">To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span> <span data-ttu-id="af5cf-320">如果有多个策略，则更改策略的优先级仅是有意义的。</span><span class="sxs-lookup"><span data-stu-id="af5cf-320">Changing the priority of a policy only makes sense if you have multiple policies.</span></span>
+<span data-ttu-id="2a790-319">若要更改策略的优先级，请在策略的属性中单击 " **提高优先级** " 或 " **降低优先级** " (您不能直接修改安全 & 合规性中心) 中的 **优先级** 号码。</span><span class="sxs-lookup"><span data-stu-id="2a790-319">To change the priority of a policy, you click **Increase priority** or **Decrease priority** in the properties of the policy (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span> <span data-ttu-id="2a790-320">如果有多个策略，则更改策略的优先级仅是有意义的。</span><span class="sxs-lookup"><span data-stu-id="2a790-320">Changing the priority of a policy only makes sense if you have multiple policies.</span></span>
 
-1. <span data-ttu-id="af5cf-321">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-321">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-321">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-321">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-322">选择要修改的策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-322">Select the policy that you want to modify.</span></span> <span data-ttu-id="af5cf-323">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="af5cf-323">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="2a790-322">选择要修改的策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-322">Select the policy that you want to modify.</span></span> <span data-ttu-id="2a790-323">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="2a790-323">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="af5cf-324">将出现 "**编辑 \<name\> 您的策略**" 浮出控件。</span><span class="sxs-lookup"><span data-stu-id="af5cf-324">The **Edit your policy \<name\>** flyout appears.</span></span>
+3. <span data-ttu-id="2a790-324">将出现 "**编辑 \<name\> 您的策略**" 浮出控件。</span><span class="sxs-lookup"><span data-stu-id="2a790-324">The **Edit your policy \<name\>** flyout appears.</span></span>
 
-   - <span data-ttu-id="af5cf-325">**优先级**值为**0**的自定义 ATP 反网络钓鱼策略只有 "**降低优先级**" 按钮可用。</span><span class="sxs-lookup"><span data-stu-id="af5cf-325">The custom ATP anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+   - <span data-ttu-id="2a790-325">**优先级**值为**0**的自定义 ATP 反网络钓鱼策略只有 "**降低优先级**" 按钮可用。</span><span class="sxs-lookup"><span data-stu-id="2a790-325">The custom ATP anti-phishing policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
 
-   - <span data-ttu-id="af5cf-326">具有最低 **优先级** 值的自定义 ATP 反网络钓鱼策略 (例如， **3**) 仅有 " **提高优先级** " 按钮可用。</span><span class="sxs-lookup"><span data-stu-id="af5cf-326">The custom ATP anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+   - <span data-ttu-id="2a790-326">具有最低 **优先级** 值的自定义 ATP 反网络钓鱼策略 (例如， **3**) 仅有 " **提高优先级** " 按钮可用。</span><span class="sxs-lookup"><span data-stu-id="2a790-326">The custom ATP anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
 
-   - <span data-ttu-id="af5cf-327">如果您具有三个或更多自定义的反网络钓鱼策略，则在最高和最低优先级值之间的策略将具有 " **增加优先级** " 和 " **降低优先级** " 按钮。</span><span class="sxs-lookup"><span data-stu-id="af5cf-327">If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+   - <span data-ttu-id="2a790-327">如果您具有三个或更多自定义的反网络钓鱼策略，则在最高和最低优先级值之间的策略将具有 " **增加优先级** " 和 " **降低优先级** " 按钮。</span><span class="sxs-lookup"><span data-stu-id="2a790-327">If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
 
-4. <span data-ttu-id="af5cf-328">单击 " **提高优先级** " 或 " **降低优先级** " 以更改 **优先级** 值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-328">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+4. <span data-ttu-id="2a790-328">单击 " **提高优先级** " 或 " **降低优先级** " 以更改 **优先级** 值。</span><span class="sxs-lookup"><span data-stu-id="2a790-328">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
 
-5. <span data-ttu-id="af5cf-329">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="af5cf-329">When you're finished, click **Close**.</span></span>
+5. <span data-ttu-id="2a790-329">完成后，单击“关闭”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="2a790-329">When you're finished, click **Close**.</span></span>
 
-## <a name="use-the-security--compliance-center-to-view-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-330">使用安全 & 合规中心查看 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-330">Use the Security & Compliance Center to view ATP anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-view-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-330">使用安全 & 合规中心查看 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-330">Use the Security & Compliance Center to view ATP anti-phishing policies</span></span>
 
-1. <span data-ttu-id="af5cf-331">在安全 & 合规性中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼**。</span><span class="sxs-lookup"><span data-stu-id="af5cf-331">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-331">在安全 & 合规性中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼**。</span><span class="sxs-lookup"><span data-stu-id="2a790-331">In the Security & Compliance Center, and go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-332">采取以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="af5cf-332">Do one of the following steps:</span></span>
+2. <span data-ttu-id="2a790-332">采取以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="2a790-332">Do one of the following steps:</span></span>
 
-   - <span data-ttu-id="af5cf-333">选择要查看的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-333">Select a custom ATP anti-phishing policy that you want to view.</span></span> <span data-ttu-id="af5cf-334">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="af5cf-334">If it's already selected, deselect it and select it again.</span></span>
+   - <span data-ttu-id="2a790-333">选择要查看的自定义 ATP 反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-333">Select a custom ATP anti-phishing policy that you want to view.</span></span> <span data-ttu-id="2a790-334">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="2a790-334">If it's already selected, deselect it and select it again.</span></span>
 
-   - <span data-ttu-id="af5cf-335">单击 " **默认策略** " 以查看默认的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-335">Click **Default policy** to view the default anti-phishing policy.</span></span>
+   - <span data-ttu-id="2a790-335">单击 " **默认策略** " 以查看默认的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-335">Click **Default policy** to view the default anti-phishing policy.</span></span>
 
-3. <span data-ttu-id="af5cf-336">将出现 "**编辑 \<name\> 策略**" 浮出控件，您可以在其中查看设置和值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-336">The **Edit your policy \<name\>** flyout appears, where you can view the settings and values.</span></span>
+3. <span data-ttu-id="2a790-336">将出现 "**编辑 \<name\> 策略**" 浮出控件，您可以在其中查看设置和值。</span><span class="sxs-lookup"><span data-stu-id="2a790-336">The **Edit your policy \<name\>** flyout appears, where you can view the settings and values.</span></span>
 
-## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-337">使用安全 & 合规性中心删除 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-337">Use the Security & Compliance Center to remove ATP anti-phishing policies</span></span>
+## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-337">使用安全 & 合规性中心删除 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-337">Use the Security & Compliance Center to remove ATP anti-phishing policies</span></span>
 
-1. <span data-ttu-id="af5cf-338">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-338">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
+1. <span data-ttu-id="2a790-338">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-338">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span>
 
-2. <span data-ttu-id="af5cf-339">选择要删除的策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-339">Select the policy that you want to remove.</span></span> <span data-ttu-id="af5cf-340">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="af5cf-340">If it's already selected, deselect it and select it again.</span></span>
+2. <span data-ttu-id="2a790-339">选择要删除的策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-339">Select the policy that you want to remove.</span></span> <span data-ttu-id="2a790-340">如果已被选中，请取消选择并再次选择它。</span><span class="sxs-lookup"><span data-stu-id="2a790-340">If it's already selected, deselect it and select it again.</span></span>
 
-3. <span data-ttu-id="af5cf-341">在出现的 "**编辑 \<name\> 策略**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-341">In the **Edit your policy \<name\>** flyout that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+3. <span data-ttu-id="2a790-341">在出现的 "**编辑 \<name\> 策略**" 浮出控件中，单击 "**删除策略**"，然后在出现的警告对话框中单击 **"是"** 。</span><span class="sxs-lookup"><span data-stu-id="2a790-341">In the **Edit your policy \<name\>** flyout that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
 
-<span data-ttu-id="af5cf-342">无法删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-342">You can't remove the default policy.</span></span>
+<span data-ttu-id="2a790-342">无法删除默认策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-342">You can't remove the default policy.</span></span>
 
-## <a name="use-exchange-online-powershell-to-configure-atp-anti-phishing-policies"></a><span data-ttu-id="af5cf-343">使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-343">Use Exchange Online PowerShell to configure ATP anti-phishing policies</span></span>
+## <a name="use-exchange-online-powershell-to-configure-atp-anti-phishing-policies"></a><span data-ttu-id="2a790-343">使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-343">Use Exchange Online PowerShell to configure ATP anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-344">如前面所述，ATP 反垃圾邮件策略由反网络钓鱼策略和反网络钓鱼规则组成。</span><span class="sxs-lookup"><span data-stu-id="af5cf-344">As previously described, an ATP anti-spam policy consists of an anti-phish policy and an anti-phish rule.</span></span>
+<span data-ttu-id="2a790-344">如前面所述，ATP 反垃圾邮件策略由反网络钓鱼策略和反网络钓鱼规则组成。</span><span class="sxs-lookup"><span data-stu-id="2a790-344">As previously described, an ATP anti-spam policy consists of an anti-phish policy and an anti-phish rule.</span></span>
 
-<span data-ttu-id="af5cf-345">在 Exchange Online PowerShell 中，反网络钓鱼策略和反网络钓鱼规则之间的区别显而易见。</span><span class="sxs-lookup"><span data-stu-id="af5cf-345">In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent.</span></span> <span data-ttu-id="af5cf-346">您可以使用\*\* \* -AntiPhishPolicy\*\* cmdlet 管理反网络钓鱼策略，并使用\*\* \* -AntiPhishRule\*\* cmdlet 管理反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-346">You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.</span></span>
+<span data-ttu-id="2a790-345">在 Exchange Online PowerShell 中，反网络钓鱼策略和反网络钓鱼规则之间的区别显而易见。</span><span class="sxs-lookup"><span data-stu-id="2a790-345">In Exchange Online PowerShell, the difference between anti-phish policies and anti-phish rules is apparent.</span></span> <span data-ttu-id="2a790-346">您可以使用\*\* \* -AntiPhishPolicy\*\* cmdlet 管理反网络钓鱼策略，并使用\*\* \* -AntiPhishRule\*\* cmdlet 管理反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-346">You manage anti-phish policies by using the **\*-AntiPhishPolicy** cmdlets, and you manage anti-phish rules by using the **\*-AntiPhishRule** cmdlets.</span></span>
 
-- <span data-ttu-id="af5cf-347">在 PowerShell 中，首先创建反网络钓鱼策略，然后创建反网络钓鱼规则来标识应用该规则的策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-347">In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.</span></span>
-- <span data-ttu-id="af5cf-348">在 PowerShell 中，可以单独修改反网络钓鱼策略和反钓鱼诈骗规则中的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-348">In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.</span></span>
-- <span data-ttu-id="af5cf-349">从 PowerShell 中删除反网络钓鱼策略时，不会自动删除相应的反网络钓鱼规则，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="af5cf-349">When you remove an anti-phish policy from PowerShell, the corresponding anti-phish rule isn't automatically removed, and vice versa.</span></span>
+- <span data-ttu-id="2a790-347">在 PowerShell 中，首先创建反网络钓鱼策略，然后创建反网络钓鱼规则来标识应用该规则的策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-347">In PowerShell, you create the anti-phish policy first, then you create the anti-phish rule that identifies the policy that the rule applies to.</span></span>
+- <span data-ttu-id="2a790-348">在 PowerShell 中，可以单独修改反网络钓鱼策略和反钓鱼诈骗规则中的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-348">In PowerShell, you modify the settings in the anti-phish policy and the anti-phish rule separately.</span></span>
+- <span data-ttu-id="2a790-349">从 PowerShell 中删除反网络钓鱼策略时，不会自动删除相应的反网络钓鱼规则，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="2a790-349">When you remove an anti-phish policy from PowerShell, the corresponding anti-phish rule isn't automatically removed, and vice versa.</span></span>
 
-### <a name="use-powershell-to-create-anti-phishing-policies"></a><span data-ttu-id="af5cf-350">使用 PowerShell 创建反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-350">Use PowerShell to create anti-phishing policies</span></span>
+### <a name="use-powershell-to-create-anti-phishing-policies"></a><span data-ttu-id="2a790-350">使用 PowerShell 创建反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-350">Use PowerShell to create anti-phishing policies</span></span>
 
-<span data-ttu-id="af5cf-351">在 PowerShell 中创建反网络钓鱼策略的过程分为两个步骤：</span><span class="sxs-lookup"><span data-stu-id="af5cf-351">Creating an anti-phishing policy in PowerShell is a two-step process:</span></span>
+<span data-ttu-id="2a790-351">在 PowerShell 中创建反网络钓鱼策略的过程分为两个步骤：</span><span class="sxs-lookup"><span data-stu-id="2a790-351">Creating an anti-phishing policy in PowerShell is a two-step process:</span></span>
 
-1. <span data-ttu-id="af5cf-352">创建反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-352">Create the anti-phish policy.</span></span>
-2. <span data-ttu-id="af5cf-353">创建反网络钓鱼规则，该规则指定应用该规则的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-353">Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.</span></span>
+1. <span data-ttu-id="2a790-352">创建反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-352">Create the anti-phish policy.</span></span>
+2. <span data-ttu-id="2a790-353">创建反网络钓鱼规则，该规则指定应用该规则的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-353">Create the anti-phish rule that specifies the anti-phish policy that the rule applies to.</span></span>
 
- <span data-ttu-id="af5cf-354">**注意**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-354">**Notes**:</span></span>
+ <span data-ttu-id="2a790-354">**注意**：</span><span class="sxs-lookup"><span data-stu-id="2a790-354">**Notes**:</span></span>
 
-- <span data-ttu-id="af5cf-355">您可以创建新的反网络钓鱼规则并向其分配现有的未关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-355">You can create a new anti-phish rule and assign an existing, unassociated anti-phish policy to it.</span></span> <span data-ttu-id="af5cf-356">反网络钓鱼规则不能与多个反网络钓鱼策略相关联。</span><span class="sxs-lookup"><span data-stu-id="af5cf-356">An anti-phish rule can't be associated with more than one anti-phish policy.</span></span>
+- <span data-ttu-id="2a790-355">您可以创建新的反网络钓鱼规则并向其分配现有的未关联的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-355">You can create a new anti-phish rule and assign an existing, unassociated anti-phish policy to it.</span></span> <span data-ttu-id="2a790-356">反网络钓鱼规则不能与多个反网络钓鱼策略相关联。</span><span class="sxs-lookup"><span data-stu-id="2a790-356">An anti-phish rule can't be associated with more than one anti-phish policy.</span></span>
 
-- <span data-ttu-id="af5cf-357">您可以在 PowerShell 中的新反网络钓鱼策略中配置以下设置，这些设置在安全 & 合规性中心中不可用，直到您创建了策略：</span><span class="sxs-lookup"><span data-stu-id="af5cf-357">You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+- <span data-ttu-id="2a790-357">您可以在 PowerShell 中的新反网络钓鱼策略中配置以下设置，这些设置在安全 & 合规性中心中不可用，直到您创建了策略：</span><span class="sxs-lookup"><span data-stu-id="2a790-357">You can configure the following settings on new anti-phish policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
 
-  - <span data-ttu-id="af5cf-358">将新策略创建为_Enabled_ `$false` **AntiPhishRule** cmdlet) 上启用的禁用 (。</span><span class="sxs-lookup"><span data-stu-id="af5cf-358">Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).</span></span>
-  - <span data-ttu-id="af5cf-359">在_Priority_ _\<Number\>_ **AntiPhishRule** Cmdlet) 上创建 (优先级) 时设置策略的优先级。</span><span class="sxs-lookup"><span data-stu-id="af5cf-359">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).</span></span>
+  - <span data-ttu-id="2a790-358">将新策略创建为_Enabled_ `$false` **AntiPhishRule** cmdlet) 上启用的禁用 (。</span><span class="sxs-lookup"><span data-stu-id="2a790-358">Create the new policy as disabled (_Enabled_ `$false` on the **New-AntiPhishRule** cmdlet).</span></span>
+  - <span data-ttu-id="2a790-359">在_Priority_ _\<Number\>_ **AntiPhishRule** Cmdlet) 上创建 (优先级) 时设置策略的优先级。</span><span class="sxs-lookup"><span data-stu-id="2a790-359">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-AntiPhishRule** cmdlet).</span></span>
 
-- <span data-ttu-id="af5cf-360">在 PowerShell 中创建的新反网络钓鱼策略在安全 & 合规性中心中不可见，除非您将策略分配给反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-360">A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.</span></span>
+- <span data-ttu-id="2a790-360">在 PowerShell 中创建的新反网络钓鱼策略在安全 & 合规性中心中不可见，除非您将策略分配给反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-360">A new anti-phish policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to an anti-phish rule.</span></span>
 
-#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a><span data-ttu-id="af5cf-361">步骤1：使用 PowerShell 创建反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-361">Step 1: Use PowerShell to create an anti-phish policy</span></span>
+#### <a name="step-1-use-powershell-to-create-an-anti-phish-policy"></a><span data-ttu-id="2a790-361">步骤1：使用 PowerShell 创建反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-361">Step 1: Use PowerShell to create an anti-phish policy</span></span>
 
-<span data-ttu-id="af5cf-362">若要创建反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-362">To create an anti-phish policy, use this syntax:</span></span>
+<span data-ttu-id="2a790-362">若要创建反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-362">To create an anti-phish policy, use this syntax:</span></span>
 
 ```PowerShell
 New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] <Additional Settings>
 ```
 
-<span data-ttu-id="af5cf-363">本示例使用以下设置创建名为 "调研隔离" 的反网络钓鱼策略：</span><span class="sxs-lookup"><span data-stu-id="af5cf-363">This example creates anti-phish policy named Research Quarantine with the following settings:</span></span>
+<span data-ttu-id="2a790-363">本示例使用以下设置创建名为 "调研隔离" 的反网络钓鱼策略：</span><span class="sxs-lookup"><span data-stu-id="2a790-363">This example creates anti-phish policy named Research Quarantine with the following settings:</span></span>
 
-- <span data-ttu-id="af5cf-364">启用此策略 (我们不使用 _enabled_ 参数，默认值为 `$true`) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-364">The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
-- <span data-ttu-id="af5cf-365">说明是：研究部门策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-365">The description is: Research department policy.</span></span>
-- <span data-ttu-id="af5cf-366">为所有接受域启用组织域保护，并对 fabrikam.com 的目标域提供保护。</span><span class="sxs-lookup"><span data-stu-id="af5cf-366">Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.</span></span>
-- <span data-ttu-id="af5cf-367">指定 Mai Fujito (mfujito@fabrikam.com) 为要从模拟中进行保护的用户。</span><span class="sxs-lookup"><span data-stu-id="af5cf-367">Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.</span></span>
-- <span data-ttu-id="af5cf-368">启用邮箱智能。</span><span class="sxs-lookup"><span data-stu-id="af5cf-368">Enables mailbox intelligence.</span></span>
-- <span data-ttu-id="af5cf-369">启用邮箱智能保护，并指定隔离操作。</span><span class="sxs-lookup"><span data-stu-id="af5cf-369">Enables mailbox intelligence protection, and specifies the quarantine action.</span></span>
-- <span data-ttu-id="af5cf-370">启用安全提示。</span><span class="sxs-lookup"><span data-stu-id="af5cf-370">Enables safety tips.</span></span>
+- <span data-ttu-id="2a790-364">启用此策略 (我们不使用 _enabled_ 参数，默认值为 `$true`) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-364">The policy is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+- <span data-ttu-id="2a790-365">说明是：研究部门策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-365">The description is: Research department policy.</span></span>
+- <span data-ttu-id="2a790-366">为所有接受域启用组织域保护，并对 fabrikam.com 的目标域提供保护。</span><span class="sxs-lookup"><span data-stu-id="2a790-366">Enables organization domains protection for all accepted domains, and targeted domains protection for fabrikam.com.</span></span>
+- <span data-ttu-id="2a790-367">指定 Mai Fujito (mfujito@fabrikam.com) 为要从模拟中进行保护的用户。</span><span class="sxs-lookup"><span data-stu-id="2a790-367">Specifies Mai Fujito (mfujito@fabrikam.com) as the user to protect from impersonation.</span></span>
+- <span data-ttu-id="2a790-368">启用邮箱智能。</span><span class="sxs-lookup"><span data-stu-id="2a790-368">Enables mailbox intelligence.</span></span>
+- <span data-ttu-id="2a790-369">启用邮箱智能保护，并指定隔离操作。</span><span class="sxs-lookup"><span data-stu-id="2a790-369">Enables mailbox intelligence protection, and specifies the quarantine action.</span></span>
+- <span data-ttu-id="2a790-370">启用安全提示。</span><span class="sxs-lookup"><span data-stu-id="2a790-370">Enables safety tips.</span></span>
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
-<span data-ttu-id="af5cf-371">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-371">For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy).</span></span>
+<span data-ttu-id="2a790-371">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="2a790-371">For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishPolicy).</span></span>
 
-#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a><span data-ttu-id="af5cf-372">步骤2：使用 PowerShell 创建反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="af5cf-372">Step 2: Use PowerShell to create an anti-phish rule</span></span>
+#### <a name="step-2-use-powershell-to-create-an-anti-phish-rule"></a><span data-ttu-id="2a790-372">步骤2：使用 PowerShell 创建反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="2a790-372">Step 2: Use PowerShell to create an anti-phish rule</span></span>
 
-<span data-ttu-id="af5cf-373">若要创建反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-373">To create an anti-phish rule, use this syntax:</span></span>
+<span data-ttu-id="2a790-373">若要创建反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-373">To create an anti-phish rule, use this syntax:</span></span>
 
 ```PowerShell
 New-AntiPhishRule -Name "<RuleName>" -AntiPhishPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"]
 ```
 
-<span data-ttu-id="af5cf-374">本示例将创建一个名为 "研究部门" 的反网络钓鱼规则，条件如下：</span><span class="sxs-lookup"><span data-stu-id="af5cf-374">This example creates an anti-phish rule named Research Department with the following conditions:</span></span>
+<span data-ttu-id="2a790-374">本示例将创建一个名为 "研究部门" 的反网络钓鱼规则，条件如下：</span><span class="sxs-lookup"><span data-stu-id="2a790-374">This example creates an anti-phish rule named Research Department with the following conditions:</span></span>
 
-- <span data-ttu-id="af5cf-375">该规则与名为 "研究隔离" 的反网络钓鱼策略相关联。</span><span class="sxs-lookup"><span data-stu-id="af5cf-375">The rule is associated with the anti-phish policy named Research Quarantine.</span></span>
-- <span data-ttu-id="af5cf-376">此规则应用于“研究部门”组中的成员。</span><span class="sxs-lookup"><span data-stu-id="af5cf-376">The rule applies to members of the group named Research Department.</span></span>
-- <span data-ttu-id="af5cf-377">由于我们不使用 _Priority_ 参数，因此使用默认的优先级。</span><span class="sxs-lookup"><span data-stu-id="af5cf-377">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
+- <span data-ttu-id="2a790-375">该规则与名为 "研究隔离" 的反网络钓鱼策略相关联。</span><span class="sxs-lookup"><span data-stu-id="2a790-375">The rule is associated with the anti-phish policy named Research Quarantine.</span></span>
+- <span data-ttu-id="2a790-376">此规则应用于“研究部门”组中的成员。</span><span class="sxs-lookup"><span data-stu-id="2a790-376">The rule applies to members of the group named Research Department.</span></span>
+- <span data-ttu-id="2a790-377">由于我们不使用 _Priority_ 参数，因此使用默认的优先级。</span><span class="sxs-lookup"><span data-stu-id="2a790-377">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
 
 ```powershell
 New-AntiPhishRule -Name "Research Department" -AntiPhishPolicy "Research Quarantine" -SentToMemberOf "Research Department"
 ```
 
-<span data-ttu-id="af5cf-378">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-378">For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule).</span></span>
+<span data-ttu-id="2a790-378">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="2a790-378">For detailed syntax and parameter information, see [New-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/New-AntiPhishRule).</span></span>
 
-### <a name="use-powershell-to-view-anti-phish-policies"></a><span data-ttu-id="af5cf-379">使用 PowerShell 查看反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-379">Use PowerShell to view anti-phish policies</span></span>
+### <a name="use-powershell-to-view-anti-phish-policies"></a><span data-ttu-id="2a790-379">使用 PowerShell 查看反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-379">Use PowerShell to view anti-phish policies</span></span>
 
-<span data-ttu-id="af5cf-380">若要查看现有的反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-380">To view existing anti-phish policies, use the following syntax:</span></span>
+<span data-ttu-id="2a790-380">若要查看现有的反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-380">To view existing anti-phish policies, use the following syntax:</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-<span data-ttu-id="af5cf-381">本示例返回所有反网络钓鱼策略的摘要列表以及指定的属性。</span><span class="sxs-lookup"><span data-stu-id="af5cf-381">This example returns a summary list of all anti-phish policies along with the specified properties.</span></span>
+<span data-ttu-id="2a790-381">本示例返回所有反网络钓鱼策略的摘要列表以及指定的属性。</span><span class="sxs-lookup"><span data-stu-id="2a790-381">This example returns a summary list of all anti-phish policies along with the specified properties.</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy | Format-Table Name,IsDefault
 ```
 
-<span data-ttu-id="af5cf-382">本示例将返回名为 "主管" 的反网络钓鱼策略的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-382">This example returns all the property values for the anti-phish policy named Executives.</span></span>
+<span data-ttu-id="2a790-382">本示例将返回名为 "主管" 的反网络钓鱼策略的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="2a790-382">This example returns all the property values for the anti-phish policy named Executives.</span></span>
 
 ```PowerShell
 Get-AntiPhishPolicy -Identity "Executives"
 ```
 
-<span data-ttu-id="af5cf-383">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-383">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy).</span></span>
+<span data-ttu-id="2a790-383">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="2a790-383">For detailed syntax and parameter information, see [Get-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-view-anti-phish-rules"></a><span data-ttu-id="af5cf-384">使用 PowerShell 查看反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="af5cf-384">Use PowerShell to view anti-phish rules</span></span>
+### <a name="use-powershell-to-view-anti-phish-rules"></a><span data-ttu-id="2a790-384">使用 PowerShell 查看反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="2a790-384">Use PowerShell to view anti-phish rules</span></span>
 
-<span data-ttu-id="af5cf-385">若要查看现有的反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-385">To view existing anti-phish rules, use the following syntax:</span></span>
+<span data-ttu-id="2a790-385">若要查看现有的反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-385">To view existing anti-phish rules, use the following syntax:</span></span>
 
 ```PowerShell
 Get-AntiPhishRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
 ```
 
-<span data-ttu-id="af5cf-386">本示例返回所有反网络钓鱼规则的摘要列表以及指定的属性。</span><span class="sxs-lookup"><span data-stu-id="af5cf-386">This example returns a summary list of all anti-phish rules along with the specified properties.</span></span>
+<span data-ttu-id="2a790-386">本示例返回所有反网络钓鱼规则的摘要列表以及指定的属性。</span><span class="sxs-lookup"><span data-stu-id="2a790-386">This example returns a summary list of all anti-phish rules along with the specified properties.</span></span>
 
 ```PowerShell
 Get-AntiPhishRule | Format-Table Name,Priority,State
 ```
 
-<span data-ttu-id="af5cf-387">若要按已启用或已禁用规则筛选列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="af5cf-387">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+<span data-ttu-id="2a790-387">若要按已启用或已禁用规则筛选列表，请运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="2a790-387">To filter the list by enabled or disabled rules, run the following commands:</span></span>
 
 ```PowerShell
 Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
@@ -484,136 +484,136 @@ Get-AntiPhishRule -State Disabled | Format-Table Name,Priority
 Get-AntiPhishRule -State Enabled | Format-Table Name,Priority
 ```
 
-<span data-ttu-id="af5cf-388">本示例将返回名为 "Contoso 行政主管" 的反网络钓鱼规则的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-388">This example returns all the property values for the anti-phish rule named Contoso Executives.</span></span>
+<span data-ttu-id="2a790-388">本示例将返回名为 "Contoso 行政主管" 的反网络钓鱼规则的所有属性值。</span><span class="sxs-lookup"><span data-stu-id="2a790-388">This example returns all the property values for the anti-phish rule named Contoso Executives.</span></span>
 
 ```PowerShell
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-<span data-ttu-id="af5cf-389">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-389">For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule).</span></span>
+<span data-ttu-id="2a790-389">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="2a790-389">For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Get-AntiPhishrule).</span></span>
 
-### <a name="use-powershell-to-modify-anti-phish-policies"></a><span data-ttu-id="af5cf-390">使用 PowerShell 修改反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-390">Use PowerShell to modify anti-phish policies</span></span>
+### <a name="use-powershell-to-modify-anti-phish-policies"></a><span data-ttu-id="2a790-390">使用 PowerShell 修改反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-390">Use PowerShell to modify anti-phish policies</span></span>
 
-<span data-ttu-id="af5cf-391">除了以下项目之外，当您在 PowerShell 中按照 " [步骤1：使用 PowerShell 创建反网络钓鱼策略](#step-1-use-powershell-to-create-an-anti-phish-policy) " 一节中所述，在 PowerShell 中修改反网络钓鱼策略时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-391">Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.</span></span>
+<span data-ttu-id="2a790-391">除了以下项目之外，当您在 PowerShell 中按照 " [步骤1：使用 PowerShell 创建反网络钓鱼策略](#step-1-use-powershell-to-create-an-anti-phish-policy) " 一节中所述，在 PowerShell 中修改反网络钓鱼策略时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-391">Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.</span></span>
 
-- <span data-ttu-id="af5cf-392">将指定策略打开 (应用于每个人的 _MakeDefault_ 开关，始终为 **最低** 优先级，并且您无法删除它) 仅当您在 PowerShell 中修改反网络钓鱼策略时才可用。</span><span class="sxs-lookup"><span data-stu-id="af5cf-392">The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.</span></span>
+- <span data-ttu-id="2a790-392">将指定策略打开 (应用于每个人的 _MakeDefault_ 开关，始终为 **最低** 优先级，并且您无法删除它) 仅当您在 PowerShell 中修改反网络钓鱼策略时才可用。</span><span class="sxs-lookup"><span data-stu-id="2a790-392">The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.</span></span>
 
-- <span data-ttu-id="af5cf-393">无法重命名反网络钓鱼策略 (**AntiPhishPolicy** Cmdlet 没有 _名称_ 参数) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-393">You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="af5cf-394">重命名安全 & 合规中心中的反网络钓鱼策略时，只是重命名反网络钓鱼 _规则_。</span><span class="sxs-lookup"><span data-stu-id="af5cf-394">When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.</span></span>
+- <span data-ttu-id="2a790-393">无法重命名反网络钓鱼策略 (**AntiPhishPolicy** Cmdlet 没有 _名称_ 参数) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-393">You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="2a790-394">重命名安全 & 合规中心中的反网络钓鱼策略时，只是重命名反网络钓鱼 _规则_。</span><span class="sxs-lookup"><span data-stu-id="2a790-394">When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.</span></span>
 
-<span data-ttu-id="af5cf-395">若要修改反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-395">To modify an anti-phish policy, use this syntax:</span></span>
+<span data-ttu-id="2a790-395">若要修改反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-395">To modify an anti-phish policy, use this syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-<span data-ttu-id="af5cf-396">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-396">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy).</span></span>
+<span data-ttu-id="2a790-396">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="2a790-396">For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Set-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-modify-anti-phish-rules"></a><span data-ttu-id="af5cf-397">使用 PowerShell 修改反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="af5cf-397">Use PowerShell to modify anti-phish rules</span></span>
+### <a name="use-powershell-to-modify-anti-phish-rules"></a><span data-ttu-id="2a790-397">使用 PowerShell 修改反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="2a790-397">Use PowerShell to modify anti-phish rules</span></span>
 
-<span data-ttu-id="af5cf-398">在 PowerShell 中修改反网络钓鱼规则时，唯一不可用的设置是允许您创建禁用规则的 _启用_ 参数。</span><span class="sxs-lookup"><span data-stu-id="af5cf-398">The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="af5cf-399">若要启用或禁用现有的反网络钓鱼规则，请参阅下一节。</span><span class="sxs-lookup"><span data-stu-id="af5cf-399">To enable or disable existing anti-phish rules, see the next section.</span></span>
+<span data-ttu-id="2a790-398">在 PowerShell 中修改反网络钓鱼规则时，唯一不可用的设置是允许您创建禁用规则的 _启用_ 参数。</span><span class="sxs-lookup"><span data-stu-id="2a790-398">The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="2a790-399">若要启用或禁用现有的反网络钓鱼规则，请参阅下一节。</span><span class="sxs-lookup"><span data-stu-id="2a790-399">To enable or disable existing anti-phish rules, see the next section.</span></span>
 
-<span data-ttu-id="af5cf-400">否则，在 PowerShell 中修改反网络钓鱼规则时，不提供其他任何设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-400">Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell.</span></span> <span data-ttu-id="af5cf-401">按照本主题前面的 " [步骤2：使用 PowerShell 创建反钓鱼诈骗规则](#step-2-use-powershell-to-create-an-anti-phish-rule) " 一节中所述，创建规则时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="af5cf-401">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.</span></span>
+<span data-ttu-id="2a790-400">否则，在 PowerShell 中修改反网络钓鱼规则时，不提供其他任何设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-400">Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell.</span></span> <span data-ttu-id="2a790-401">按照本主题前面的 " [步骤2：使用 PowerShell 创建反钓鱼诈骗规则](#step-2-use-powershell-to-create-an-anti-phish-rule) " 一节中所述，创建规则时，可以使用相同的设置。</span><span class="sxs-lookup"><span data-stu-id="2a790-401">The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.</span></span>
 
-<span data-ttu-id="af5cf-402">若要修改反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-402">To modify an anti-phish rule, use this syntax:</span></span>
+<span data-ttu-id="2a790-402">若要修改反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-402">To modify an anti-phish rule, use this syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" <Settings>
 ```
 
-<span data-ttu-id="af5cf-403">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-403">For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule).</span></span>
+<span data-ttu-id="2a790-403">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule)。</span><span class="sxs-lookup"><span data-stu-id="2a790-403">For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/set-antiphishrule).</span></span>
 
-### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a><span data-ttu-id="af5cf-404">使用 PowerShell 启用或禁用反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="af5cf-404">Use PowerShell to enable or disable anti-phish rules</span></span>
+### <a name="use-powershell-to-enable-or-disable-anti-phish-rules"></a><span data-ttu-id="2a790-404">使用 PowerShell 启用或禁用反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="2a790-404">Use PowerShell to enable or disable anti-phish rules</span></span>
 
-<span data-ttu-id="af5cf-405">若要启用或禁用 PowerShell 中的反网络钓鱼规则，可以启用或禁用反钓鱼诈骗规则和分配的反网络钓鱼策略) 的整个反网络钓鱼策略 (。</span><span class="sxs-lookup"><span data-stu-id="af5cf-405">Enabling or disabling an anti-phish rule in PowerShell enables or disables the whole anti-phishing policy (the anti-phish rule and the assigned anti-phish policy).</span></span> <span data-ttu-id="af5cf-406">您不能启用或禁用默认的反网络钓鱼策略 (始终将其应用于所有收件人) 。</span><span class="sxs-lookup"><span data-stu-id="af5cf-406">You can't enable or disable the default anti-phishing policy (it's always applied to all recipients).</span></span>
+<span data-ttu-id="2a790-405">若要启用或禁用 PowerShell 中的反网络钓鱼规则，可以启用或禁用反钓鱼诈骗规则和分配的反网络钓鱼策略) 的整个反网络钓鱼策略 (。</span><span class="sxs-lookup"><span data-stu-id="2a790-405">Enabling or disabling an anti-phish rule in PowerShell enables or disables the whole anti-phishing policy (the anti-phish rule and the assigned anti-phish policy).</span></span> <span data-ttu-id="2a790-406">您不能启用或禁用默认的反网络钓鱼策略 (始终将其应用于所有收件人) 。</span><span class="sxs-lookup"><span data-stu-id="2a790-406">You can't enable or disable the default anti-phishing policy (it's always applied to all recipients).</span></span>
 
-<span data-ttu-id="af5cf-407">若要在 PowerShell 中启用或禁用反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-407">To enable or disable an anti-phish rule in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="2a790-407">若要在 PowerShell 中启用或禁用反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-407">To enable or disable an anti-phish rule in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 <Enable-AntiPhishRule | Disable-AntiPhishRule> -Identity "<RuleName>"
 ```
 
-<span data-ttu-id="af5cf-408">本示例禁用名为 "Marketing 部门" 的反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-408">This example disables the anti-phish rule named Marketing Department.</span></span>
+<span data-ttu-id="2a790-408">本示例禁用名为 "Marketing 部门" 的反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-408">This example disables the anti-phish rule named Marketing Department.</span></span>
 
 ```PowerShell
 Disable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="af5cf-409">下面的示例启用同一规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-409">This example enables same rule.</span></span>
+<span data-ttu-id="2a790-409">下面的示例启用同一规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-409">This example enables same rule.</span></span>
 
 ```PowerShell
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="af5cf-410">有关语法和参数的详细信息，请参阅 [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) 和 [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-410">For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule).</span></span>
+<span data-ttu-id="2a790-410">有关语法和参数的详细信息，请参阅 [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) 和 [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule)。</span><span class="sxs-lookup"><span data-stu-id="2a790-410">For detailed syntax and parameter information, see [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) and [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule).</span></span>
 
-### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a><span data-ttu-id="af5cf-411">使用 PowerShell 设置反网络钓鱼规则的优先级</span><span class="sxs-lookup"><span data-stu-id="af5cf-411">Use PowerShell to set the priority of anti-phish rules</span></span>
+### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a><span data-ttu-id="2a790-411">使用 PowerShell 设置反网络钓鱼规则的优先级</span><span class="sxs-lookup"><span data-stu-id="2a790-411">Use PowerShell to set the priority of anti-phish rules</span></span>
 
-<span data-ttu-id="af5cf-412">可以设置的规则最高优先级值是 0。</span><span class="sxs-lookup"><span data-stu-id="af5cf-412">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="af5cf-413">可以设置的最小优先级值取决于规则的数量。</span><span class="sxs-lookup"><span data-stu-id="af5cf-413">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="af5cf-414">例如，如果有五个规则，则可以使用的优先级值为 0 到 4。</span><span class="sxs-lookup"><span data-stu-id="af5cf-414">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="af5cf-415">更改现有规则的优先级可对其他规则产生级联效应。</span><span class="sxs-lookup"><span data-stu-id="af5cf-415">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="af5cf-416">例如，假设有五个自定义规则（优先级从 0 到 4）。如果你将某个规则的优先级更改为 2，那么优先级为 2 的现有规则会变成优先级 3，优先级为 3 的现有规则会变成优先级 4。</span><span class="sxs-lookup"><span data-stu-id="af5cf-416">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+<span data-ttu-id="2a790-412">可以设置的规则最高优先级值是 0。</span><span class="sxs-lookup"><span data-stu-id="2a790-412">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="2a790-413">可以设置的最小优先级值取决于规则的数量。</span><span class="sxs-lookup"><span data-stu-id="2a790-413">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="2a790-414">例如，如果有五个规则，则可以使用的优先级值为 0 到 4。</span><span class="sxs-lookup"><span data-stu-id="2a790-414">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="2a790-415">更改现有规则的优先级可对其他规则产生级联效应。</span><span class="sxs-lookup"><span data-stu-id="2a790-415">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="2a790-416">例如，假设有五个自定义规则（优先级从 0 到 4）。如果你将某个规则的优先级更改为 2，那么优先级为 2 的现有规则会变成优先级 3，优先级为 3 的现有规则会变成优先级 4。</span><span class="sxs-lookup"><span data-stu-id="2a790-416">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
 
-<span data-ttu-id="af5cf-417">若要在 PowerShell 中设置反网络钓鱼规则的优先级，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-417">To set the priority of an anti-phish rule in PowerShell, use the following syntax:</span></span>
+<span data-ttu-id="2a790-417">若要在 PowerShell 中设置反网络钓鱼规则的优先级，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-417">To set the priority of an anti-phish rule in PowerShell, use the following syntax:</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "<RuleName>" -Priority <Number>
 ```
 
-<span data-ttu-id="af5cf-418">下面的示例将名为“Marketing Department”的规则的优先级设置为 2。</span><span class="sxs-lookup"><span data-stu-id="af5cf-418">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="af5cf-419">优先级小于或等于 2 的所有现有规则的优先级都递减 1（即优先级数字都递增 1）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-419">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+<span data-ttu-id="2a790-418">下面的示例将名为“Marketing Department”的规则的优先级设置为 2。</span><span class="sxs-lookup"><span data-stu-id="2a790-418">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="2a790-419">优先级小于或等于 2 的所有现有规则的优先级都递减 1（即优先级数字都递增 1）。</span><span class="sxs-lookup"><span data-stu-id="2a790-419">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
 
 ```PowerShell
 Set-AntiPhishRule -Identity "Marketing Department" -Priority 2
 ```
 
-<span data-ttu-id="af5cf-420">**注意**：</span><span class="sxs-lookup"><span data-stu-id="af5cf-420">**Notes**:</span></span>
+<span data-ttu-id="2a790-420">**注意**：</span><span class="sxs-lookup"><span data-stu-id="2a790-420">**Notes**:</span></span>
 
-- <span data-ttu-id="af5cf-421">若要在创建时设置新规则的优先级，请改用**AntiPhishRule** cmdlet 上的_priority_参数。</span><span class="sxs-lookup"><span data-stu-id="af5cf-421">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.</span></span>
+- <span data-ttu-id="2a790-421">若要在创建时设置新规则的优先级，请改用**AntiPhishRule** cmdlet 上的_priority_参数。</span><span class="sxs-lookup"><span data-stu-id="2a790-421">To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-AntiPhishRule** cmdlet instead.</span></span>
 
-- <span data-ttu-id="af5cf-422">默认反网络钓鱼策略不具有相应的反网络钓鱼规则，并且它始终具有 "不可修改的优先级" 值（ **最低**）。</span><span class="sxs-lookup"><span data-stu-id="af5cf-422">The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
+- <span data-ttu-id="2a790-422">默认反网络钓鱼策略不具有相应的反网络钓鱼规则，并且它始终具有 "不可修改的优先级" 值（ **最低**）。</span><span class="sxs-lookup"><span data-stu-id="2a790-422">The default anti-phish policy doesn't have a corresponding anti-phish rule, and it always has the unmodifiable priority value **Lowest**.</span></span>
 
-### <a name="use-powershell-to-remove-anti-phish-policies"></a><span data-ttu-id="af5cf-423">使用 PowerShell 删除反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="af5cf-423">Use PowerShell to remove anti-phish policies</span></span>
+### <a name="use-powershell-to-remove-anti-phish-policies"></a><span data-ttu-id="2a790-423">使用 PowerShell 删除反网络钓鱼策略</span><span class="sxs-lookup"><span data-stu-id="2a790-423">Use PowerShell to remove anti-phish policies</span></span>
 
-<span data-ttu-id="af5cf-424">当您使用 PowerShell 删除反网络钓鱼策略时，不会删除相应的反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-424">When you use PowerShell to remove an anti-phish policy, the corresponding anti-phish rule isn't removed.</span></span>
+<span data-ttu-id="2a790-424">当您使用 PowerShell 删除反网络钓鱼策略时，不会删除相应的反网络钓鱼规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-424">When you use PowerShell to remove an anti-phish policy, the corresponding anti-phish rule isn't removed.</span></span>
 
-<span data-ttu-id="af5cf-425">若要删除 PowerShell 中的反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-425">To remove an anti-phish policy in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="2a790-425">若要删除 PowerShell 中的反网络钓鱼策略，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-425">To remove an anti-phish policy in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "<PolicyName>"
 ```
 
-<span data-ttu-id="af5cf-426">本示例将删除名为 "Marketing 部门" 的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-426">This example removes the anti-phish policy named Marketing Department.</span></span>
+<span data-ttu-id="2a790-426">本示例将删除名为 "Marketing 部门" 的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-426">This example removes the anti-phish policy named Marketing Department.</span></span>
 
 ```PowerShell
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="af5cf-427">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-427">For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy).</span></span>
+<span data-ttu-id="2a790-427">有关语法和参数的详细信息，请参阅 [AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy)。</span><span class="sxs-lookup"><span data-stu-id="2a790-427">For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishPolicy).</span></span>
 
-### <a name="use-powershell-to-remove-anti-phish-rules"></a><span data-ttu-id="af5cf-428">使用 PowerShell 删除反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="af5cf-428">Use PowerShell to remove anti-phish rules</span></span>
+### <a name="use-powershell-to-remove-anti-phish-rules"></a><span data-ttu-id="2a790-428">使用 PowerShell 删除反网络钓鱼规则</span><span class="sxs-lookup"><span data-stu-id="2a790-428">Use PowerShell to remove anti-phish rules</span></span>
 
-<span data-ttu-id="af5cf-429">当您使用 PowerShell 删除反网络钓鱼规则时，不会删除相应的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="af5cf-429">When you use PowerShell to remove an anti-phish rule, the corresponding anti-phish policy isn't removed.</span></span>
+<span data-ttu-id="2a790-429">当您使用 PowerShell 删除反网络钓鱼规则时，不会删除相应的反网络钓鱼策略。</span><span class="sxs-lookup"><span data-stu-id="2a790-429">When you use PowerShell to remove an anti-phish rule, the corresponding anti-phish policy isn't removed.</span></span>
 
-<span data-ttu-id="af5cf-430">若要删除 PowerShell 中的反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="af5cf-430">To remove an anti-phish rule in PowerShell, use this syntax:</span></span>
+<span data-ttu-id="2a790-430">若要删除 PowerShell 中的反网络钓鱼规则，请使用以下语法：</span><span class="sxs-lookup"><span data-stu-id="2a790-430">To remove an anti-phish rule in PowerShell, use this syntax:</span></span>
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "<PolicyName>"
 ```
 
-<span data-ttu-id="af5cf-431">本示例将删除名为 "Marketing 部门" 的反钓鱼诈骗规则。</span><span class="sxs-lookup"><span data-stu-id="af5cf-431">This example removes the anti-phish rule named Marketing Department.</span></span>
+<span data-ttu-id="2a790-431">本示例将删除名为 "Marketing 部门" 的反钓鱼诈骗规则。</span><span class="sxs-lookup"><span data-stu-id="2a790-431">This example removes the anti-phish rule named Marketing Department.</span></span>
 
 ```PowerShell
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-<span data-ttu-id="af5cf-432">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="af5cf-432">For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule).</span></span>
+<span data-ttu-id="2a790-432">有关语法和参数的详细信息，请参阅 [AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule)。</span><span class="sxs-lookup"><span data-stu-id="2a790-432">For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/Remove-AntiPhishRule).</span></span>
 
-## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="af5cf-433">如何判断这些过程生效了？</span><span class="sxs-lookup"><span data-stu-id="af5cf-433">How do you know these procedures worked?</span></span>
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="2a790-433">如何判断这些过程生效了？</span><span class="sxs-lookup"><span data-stu-id="2a790-433">How do you know these procedures worked?</span></span>
 
-<span data-ttu-id="af5cf-434">若要验证是否已成功配置 ATP 反网络钓鱼策略，请执行以下任一步骤：</span><span class="sxs-lookup"><span data-stu-id="af5cf-434">To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:</span></span>
+<span data-ttu-id="2a790-434">若要验证是否已成功配置 ATP 反网络钓鱼策略，请执行以下任一步骤：</span><span class="sxs-lookup"><span data-stu-id="2a790-434">To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:</span></span>
 
-- <span data-ttu-id="af5cf-435">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="af5cf-435">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span> <span data-ttu-id="af5cf-436">验证策略列表、策略的 **状态** 值及其 **优先级** 值。</span><span class="sxs-lookup"><span data-stu-id="af5cf-436">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="af5cf-437">若要查看更多详细信息，请执行以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="af5cf-437">To view more details do either of the following steps:</span></span>
+- <span data-ttu-id="2a790-435">在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼**"。</span><span class="sxs-lookup"><span data-stu-id="2a790-435">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.</span></span> <span data-ttu-id="2a790-436">验证策略列表、策略的 **状态** 值及其 **优先级** 值。</span><span class="sxs-lookup"><span data-stu-id="2a790-436">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="2a790-437">若要查看更多详细信息，请执行以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="2a790-437">To view more details do either of the following steps:</span></span>
 
-  - <span data-ttu-id="af5cf-438">从列表中选择策略，并在浮出控件中查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="af5cf-438">Select the policy from the list, and view the details in the flyout.</span></span>
-  - <span data-ttu-id="af5cf-439">单击 " **默认策略** " 并在浮出控件中查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="af5cf-439">Click **Default policy** and view the details in the flyout.</span></span>
+  - <span data-ttu-id="2a790-438">从列表中选择策略，并在浮出控件中查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="2a790-438">Select the policy from the list, and view the details in the flyout.</span></span>
+  - <span data-ttu-id="2a790-439">单击 " **默认策略** " 并在浮出控件中查看详细信息。</span><span class="sxs-lookup"><span data-stu-id="2a790-439">Click **Default policy** and view the details in the flyout.</span></span>
 
-- <span data-ttu-id="af5cf-440">在 Exchange Online PowerShell 中，将替换 \<Name\> 为策略或规则的名称，然后运行以下命令并验证设置：</span><span class="sxs-lookup"><span data-stu-id="af5cf-440">In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:</span></span>
+- <span data-ttu-id="2a790-440">在 Exchange Online PowerShell 中，将替换 \<Name\> 为策略或规则的名称，然后运行以下命令并验证设置：</span><span class="sxs-lookup"><span data-stu-id="2a790-440">In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:</span></span>
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"
