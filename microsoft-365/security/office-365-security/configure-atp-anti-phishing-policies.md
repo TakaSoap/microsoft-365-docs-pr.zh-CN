@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护 (Office 365 ATP) 中的组织中提供的高级防网络钓鱼策略。
-ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 83f100cab12c91af1405ffc5f386ff51028710a9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825733"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547648"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
@@ -200,7 +200,7 @@ ATP 反网络钓鱼策略的基本要素为：
      - **显示模拟域的提示**：默认值为 **Off**。 若要打开它，请将开关滑到 **"开**"。
      - **显示不正常字符的提示**：默认值为 **Off**。 若要打开它，请将开关滑到 **"开**"。
 
-     完成后，单击“**保存**”。
+     完成时，请单击“保存”****。
 
    - **邮箱智能**：
 
@@ -544,7 +544,7 @@ Disable-AntiPhishRule -Identity "Marketing Department"
 Enable-AntiPhishRule -Identity "Marketing Department"
 ```
 
-有关语法和参数的详细信息，请参阅 [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-AntiPhishrule) 和 [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-AntiPhishrule)。
+有关语法和参数的详细信息，请参阅 [Enable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/enable-antiphishrule) 和 [Disable-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/disable-antiphishrule)。
 
 ### <a name="use-powershell-to-set-the-priority-of-anti-phish-rules"></a>使用 PowerShell 设置反网络钓鱼规则的优先级
 

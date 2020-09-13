@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在设置客户密钥之后，请了解如何通过还原 AKV 密钥以及管理权限和数据加密策略来管理它。
-ms.openlocfilehash: 8f5f23fa1b8ce8baa8fafd3f29ca5fb8905887a1
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: de85edd5c53fc2b76be4361575e1a85655c0f297
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324254"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547082"
 ---
 # <a name="manage-customer-key"></a>管理客户密钥
 
@@ -80,7 +80,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 若要查看您使用 DataEncryptionPolicy PowerShell cmdlet 为 Exchange Online 和 Skype for business 创建的所有 DEPs 的列表，请完成以下步骤。
 
-1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 若要返回组织中的所有 DEPs，请运行不带任何参数的 DataEncryptionPolicy cmdlet。
 
@@ -88,7 +88,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Get-DataEncryptionPolicy
    ```
 
-   有关 DataEncryptionPolicy cmdlet 的详细信息，请参阅 [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy?view=exchange-ps)。
+   有关 DataEncryptionPolicy cmdlet 的详细信息，请参阅 [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-dataencryptionpolicy)。
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>在将邮箱迁移到云中之前分配一个 DEP
 
@@ -96,7 +96,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 若要在将 DEP 迁移到 Office 365 之前将其分配给邮箱，请在 Exchange Online PowerShell 中运行 MailUser cmdlet：
 
-1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行 MailUser cmdlet。
 
@@ -104,19 +104,19 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
    Set-MailUser -Identity <GeneralMailboxOrMailUserIdParameter> -DataEncryptionPolicy <DataEncryptionPolicyIdParameter>
    ```
 
-   其中 *GeneralMailboxOrMailUserIdParameter* 指定邮箱， *DataEncryptionPolicyIdParameter* 是 DEP 的 ID。 有关 MailUser cmdlet 的详细信息，请参阅 [MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser?view=exchange-ps)。
+   其中 *GeneralMailboxOrMailUserIdParameter* 指定邮箱， *DataEncryptionPolicyIdParameter* 是 DEP 的 ID。 有关 MailUser cmdlet 的详细信息，请参阅 [MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)。
 
 ### <a name="determine-the-dep-assigned-to-a-mailbox"></a>确定分配给邮箱的 DEP
 
 若要确定分配给邮箱的 DEP，请使用 Get-mailboxstatistics cmdlet。 Cmdlet 返回 (GUID) 的唯一标识符。
   
-1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
    ```powershell
    Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl DataEncryptionPolicyID
    ```
 
-   其中 *GeneralMailboxOrMailUserIdParameter* 指定邮箱和 DATAENCRYPTIONPOLICYID 返回 DEP 的 GUID。 有关 Get-mailboxstatistics cmdlet 的详细信息，请参阅 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps)。
+   其中 *GeneralMailboxOrMailUserIdParameter* 指定邮箱和 DATAENCRYPTIONPOLICYID 返回 DEP 的 GUID。 有关 Get-mailboxstatistics cmdlet 的详细信息，请参阅 [get-mailboxstatistics](https://docs.microsoft.com/powershell/module/exchange/get-mailboxstatistics)。
   
 2. 运行 DataEncryptionPolicy cmdlet 以查找邮箱分配到的 DEP 的友好名称。
   
@@ -174,7 +174,7 @@ Get-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl>
 
 若要使用设置邮箱 PowerShell cmdlet 从邮箱中取消分配 DEP，请完成以下步骤。
 
-1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. 使用组织中具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行 "设置邮箱" cmdlet。
 
@@ -207,7 +207,7 @@ Microsoft 365 审核并验证数据清除路径。 有关详细信息，请参�
 
 1. 从 Azure 密钥保管库中删除 "O365 Exchange Online" 的包装和解包权限。
 
-2. 在您的组织中使用具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+2. 在您的组织中使用具有全局管理员权限的工作或学校帐户， [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 3. 对于包含要删除的邮箱的每个 DEP，请运行 [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-dataencryptionpolicy) cmdlet，如下所示。
 

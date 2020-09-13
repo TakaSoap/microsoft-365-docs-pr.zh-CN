@@ -18,20 +18,20 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 了解如何使用 Office 365 邮件加密为您的组织创建敏感的信息类型策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 173ff06a6af674c0df6c0b03bd5b61f6c9b430fa
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bfc77fa88ff798f98d260682dfbdbdd57b17af69
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818665"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545982"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>使用邮件加密为您的组织创建敏感的信息类型策略
 
-您可以使用 Exchange 邮件流规则或数据丢失防护（DLP）创建使用 Office 365 邮件加密的敏感信息类型策略。 若要创建 Exchange 邮件流规则，可以使用 Exchange 管理中心（EAC）或 PowerShell。
+您可以使用 Exchange 邮件流规则或数据丢失防护 (DLP) 创建使用 Office 365 邮件加密的敏感信息类型策略。 若要创建 Exchange 邮件流规则，可以使用 Exchange 管理中心 (EAC) 或 PowerShell。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>使用 EAC 中的邮件流规则创建策略
 
-登录到 Exchange 管理中心（EAC），然后转到 "**邮件流**  >  **规则**"。 在 "规则" 页上，创建应用 Office 365 邮件加密的规则。 您可以基于条件（例如，邮件或附件中存在某些关键字或敏感信息类型）创建规则。
+登录 Exchange 管理中心 (EAC) 并转到 "**邮件流**"  >  **规则**。 在 "规则" 页上，创建应用 Office 365 邮件加密的规则。 您可以基于条件（例如，邮件或附件中存在某些关键字或敏感信息类型）创建规则。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>使用 PowerShell 中的邮件流规则创建策略
 
@@ -39,11 +39,11 @@ ms.locfileid: "44818665"
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>使用 PowerShell 创建的邮件流规则示例
 
-在 PowerShell 中运行以下命令，以创建一个 Exchange 邮件流规则，该规则可在电子邮件或其附件包含以下敏感信息类型时自动加密在组织外部发送的电子邮件（*仅限加密策略）* ：
+在 PowerShell 中运行以下命令，以创建一个 Exchange 邮件流规则，该规则可在电子邮件或其附件包含以下敏感信息类型时自动加密在组织外部发送的电子邮件（ *仅限加密策略）* ：
 
 - ABA 传送号码
 - 信用卡号
-- 药品实施代理（DEA）号码
+- 药品实施代理 (DEA) 号码
 - 美国/英国 passport number
 - 美国银行帐户编号
 - 美国单独的纳税人标识号 (ITIN)
@@ -54,7 +54,7 @@ Set-IRMConfiguration -DecryptAttachmentForEncryptOnly $true
 New-TransportRule -Name "Encrypt outbound sensitive emails (out of box rule)" -SentToScope  NotInOrganization  -ApplyRightsProtectionTemplate "Encrypt" -MessageContainsDataClassifications @(@{Name="ABA Routing Number"; minCount="1"},@{Name="Credit Card Number"; minCount="1"},@{Name="Drug Enforcement Agency (DEA) Number"; minCount="1"},@{Name="U.S. / U.K. Passport Number"; minCount="1"},@{Name="U.S. Bank Account Number"; minCount="1"},@{Name="U.S. Individual Taxpayer Identification Number (ITIN)"; minCount="1"},@{Name="U.S. Social Security Number (SSN)"; minCount="1"}) -SenderNotificationType "NotifyOnly"
 ```
 
-有关详细信息，请参阅[get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration?view=exchange-ps)和[new-transportrule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule?view=exchange-ps)。
+有关详细信息，请参阅 [get-irmconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-irmconfiguration) 和 [new-transportrule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule)。
 
 ## <a name="how-recipients-access-attachments"></a>收件人如何访问附件
 
@@ -77,4 +77,4 @@ Microsoft 365 审核此活动并使其可供管理员使用。 该操作是 "New
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>禁用或自定义敏感信息类型策略
 
-创建 exchange 邮件流规则后，您可以通过转到 exchange 管理中心（EAC）中的**邮件流**规则来[禁用或编辑规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >  **Rules** ，并禁用该规则 "*对出站敏感电子邮件（现成的规则）加密*"。
+创建 exchange 邮件流规则后，您可以通过转到 exchange 管理中心中的**邮件流**规则来[禁用或编辑规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)  >  **Rules** (EAC) 并禁用规则 "*对出站敏感电子邮件 (开箱规则) " 进行加密*。

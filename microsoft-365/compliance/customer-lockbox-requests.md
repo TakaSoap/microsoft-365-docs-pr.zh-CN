@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794251"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546498"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
@@ -101,7 +101,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
     ![批准或拒绝客户密码箱请求](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> 使用 AccessToCustomerDataRequest cmdlet 可以批准、拒绝或取消 microsoft 365 客户密码箱请求，这些请求可控制 Microsoft 支持工程师对数据的访问。 有关详细信息，请参阅 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps)。
+> 使用 AccessToCustomerDataRequest cmdlet 可以批准、拒绝或取消 microsoft 365 客户密码箱请求，这些请求可控制 Microsoft 支持工程师对数据的访问。 有关详细信息，请参阅 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)。
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>审核客户密码箱请求
@@ -177,7 +177,7 @@ Microsoft 工程师在客户密码箱请求批准后执行的操作 (并可能�
 | 活动   | Microsoft 工程师执行的活动的名称。|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>客户密码箱适用于哪些 Microsoft 365 服务？
 
@@ -261,7 +261,7 @@ Microsoft 工程师在客户密码箱请求批准后执行的操作 (并可能�
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客户密码箱是否防止来自法律强制机构或其他第三方的数据请求？
 
-不正确。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。  (阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们将定期发布有关 Microsoft 收到的法律强制请求的 [详细信息](https://www.microsoft.com/corporate-responsibility/lerr) 。
+否。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。  (阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们将定期发布有关 Microsoft 收到的法律强制请求的 [详细信息](https://www.microsoft.com/corporate-responsibility/lerr) 。
 
 有关详细信息，请参阅有关第三方数据请求的 [Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx) 和 [在线服务条款](https://www.microsoft.com/Licensing/product-licensing/products.aspx) 中的 "客户数据泄露" 部分。
 

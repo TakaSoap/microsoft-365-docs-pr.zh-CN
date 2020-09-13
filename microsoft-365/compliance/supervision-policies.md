@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 7ebb2673d1d275075cf32cd18996837ec4024622
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 27c4d4603396089cb58cfed192f09d0db70cac5a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282600"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547582"
 ---
 # <a name="supervision-policies"></a>监督策略
 
@@ -143,7 +143,7 @@ Microsoft 365 中的监督策略使您可以捕获指定审阅者进行检查的
 
 #### <a name="custom-keyword-dictionaries"></a>自定义关键字词典
 
-配置自定义关键字词典 (或词典) ，以提供特定于您的组织或行业的关键字的简单管理。 关键字词典支持在字典中)  (后期压缩并支持任何语言的100KB 的术语。 在压缩之后，租户限制也是100KB。 如果需要，您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配，可从文件 (如 .csv 或 .txt 列表) 中，或从您可以 [在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。
+配置自定义关键字词典 (或词典) ，以提供特定于您的组织或行业的关键字的简单管理。 关键字词典支持在字典中)  (后期压缩并支持任何语言的100KB 的术语。 租户限制同样为压缩后 100KB。 如果需要，您可以将多个自定义关键字词典应用于单个策略或每个策略包含一个关键字词典。 这些词典在监督策略中分配，可从文件 (如 .csv 或 .txt 列表) 中，或从您可以 [在合规中心中导入](create-a-keyword-dictionary.md)的列表中获得。
 
 #### <a name="offensive-language"></a>冒犯性语言
 
@@ -301,7 +301,7 @@ Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -Re
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-除了监督报告和日志中提供的信息之外，您还可以使用 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet 来返回所有监察策略活动的完整详细列表。
+除了监督报告和日志中提供的信息之外，您还可以使用 [SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity) PowerShell cmdlet 来返回所有监察策略活动的完整详细列表。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？
 

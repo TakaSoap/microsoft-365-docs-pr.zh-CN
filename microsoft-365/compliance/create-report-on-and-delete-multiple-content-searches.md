@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 了解如何在 Office 365 的安全 & 合规中心中通过 PowerShell 脚本自动执行内容搜索任务，如创建搜索和运行报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0412c0d217603acb4e200e3ccd62a7748610297e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: c467b8ebc5ad3171347b23cad47f563b3634ee29
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357582"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546858"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>创建、报告和删除多个内容搜索
 
@@ -77,7 +77,7 @@ ms.locfileid: "47357582"
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>步骤 2：连接到安全与合规中心 PowerShell
 
-下一步是连接到组织的安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+下一步是连接到组织的安全与合规中心 PowerShell。 有关分步说明，请参阅[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>步骤3：运行脚本以创建并启动搜索
 

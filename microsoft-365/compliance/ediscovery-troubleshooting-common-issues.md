@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解在 Office 365 电子数据展示中解决常见问题时可以采取的基本疑难解答步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357992"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545950"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、解决和解决常见的电子数据展示问题
 
@@ -38,7 +38,7 @@ ms.locfileid: "47357992"
 
 检查是否存在具有相同用户 ID 的重复用户或通讯组列表。
 
-1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 运行以下命令以检索用户名的所有实例：
 
@@ -52,7 +52,7 @@ ms.locfileid: "47357992"
    > |名称|RecipientType|
    > |---|---|
    > |别名、用户|MailUser|
-   > |别名、用户|User|
+   > |别名、用户|用户|
 
 3. 如果返回多个用户，请找到并修复冲突的对象。
 
@@ -67,7 +67,7 @@ ms.locfileid: "47357992"
 
 如果您收到此错误，我们建议您验证在搜索中失败的位置，然后仅在失败的位置上运行搜索。
 
-1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然后运行以下命令：
+1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -97,7 +97,7 @@ ms.locfileid: "47357992"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 运行以下命令以检查用户是否已同步到 Exchange Online Protection：
 
@@ -115,7 +115,7 @@ ms.locfileid: "47357992"
 
 1. 请尝试使用本文中确定的步骤 [提高下载速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)。
 
-2. 如果仍有问题，请连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然后运行以下命令：
+2. 如果仍有问题，请连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -143,7 +143,7 @@ ms.locfileid: "47357992"
 
 1. 将搜索拆分为较小的搜索，然后再次运行搜索。  请尝试使用较小的日期范围或限制搜索的位置数。
 
-2. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然后运行以下命令：
+2. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -163,7 +163,7 @@ ms.locfileid: "47357992"
 
 ### <a name="resolution"></a>解决方案
 
-1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) ，然后为电子数据展示事例保留运行以下命令：
+1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后为电子数据展示事例保留运行以下命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

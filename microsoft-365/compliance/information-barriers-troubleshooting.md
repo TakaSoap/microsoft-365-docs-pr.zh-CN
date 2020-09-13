@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 使用本文作为对信息障碍进行故障排除的指导。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307925"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545666"
 ---
 # <a name="troubleshooting-information-barriers"></a>信息屏障疑难解答
 
@@ -28,7 +28,7 @@ ms.locfileid: "47307925"
 如果用户在发生信息障碍后遇到意外问题，则可以采取一些步骤来解决这些问题。 将本文用作指南。
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色！ ) <p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅 [信息屏障策略的先决条件 () ](information-barriers-policies.md#prerequisites)。<p>请确保 [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色！ ) <p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅 [信息屏障策略的先决条件 () ](information-barriers-policies.md#prerequisites)。<p>请确保 [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>问题：意外阻止用户与 Microsoft 团队中的其他人通信 
 
@@ -161,9 +161,9 @@ ms.locfileid: "47307925"
 
 请确保您的组织没有适当的 [Exchange 通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 。 此类策略将阻止应用信息障碍策略。
 
-1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。 
+1. 连接到 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 
 
-2. 运行 [AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) cmdlet，并查看结果。
+2. 运行 [AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) cmdlet，并查看结果。
 
     |结果  |后续步骤  |
     |---------|---------|

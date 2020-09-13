@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以创建与核心电子数据展示事例相关联的保留，以保留可能与调查相关的内容。
-ms.openlocfilehash: d68ca8a15713e20184e39af447cb03ccb5c9e7d7
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798058"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546878"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -151,7 +151,7 @@ ms.locfileid: "46798058"
 
 - 如前所述，若要将位于团队和 Office 365 组中的内容置于保留状态，则必须指定与组或团队关联的邮箱和 SharePoint 网站。
 
-- 在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中运行**remove-unifiedgroup** Cmdlet，以查看团队和 Office 365 组的属性。 如果要获取与团队或 Office 365 组关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
+- 在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行**remove-unifiedgroup** Cmdlet，以查看团队和 Office 365 组的属性。 如果要获取与团队或 Office 365 组关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl

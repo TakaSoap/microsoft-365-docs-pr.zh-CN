@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 本文讨论经典 Azure Active Directory 分类和敏感度标签。
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308169"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545656"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 组的 Azure Active Directory 分类和敏感度标签
 
@@ -48,8 +48,10 @@ ms.locfileid: "47308169"
 
 > [!NOTE]
 > 在 Outlook 桌面客户端 (Win 32) 中，管理员在其租户上启用灵敏度标签，并且其用户位于较旧版本的 Outlook 桌面客户端中 (Win 32) ：
+>
 > - 用户看到敏感度标签显示在较旧版本的 Outlook 桌面客户端上。
 > - 但是，当用户编辑组，并使用敏感度标签保存组时，所选隐私设置将被应用灵敏度标签的隐私设置替代。
+>
 > 建议您在 Outlook 客户端的旧版本上的用户升级到较新版本。
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>方案2：租户已在使用经典 AAD [分类](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
@@ -76,8 +78,10 @@ ms.locfileid: "47308169"
 
 > [!NOTE]
 > 在 Outlook 桌面客户端 (Win 32) 中，管理员在其租户上启用灵敏度标签，并且其用户位于较旧版本的 Outlook 桌面客户端中 (Win 32) ：
+>
 > - 用户看到敏感度标签显示在较旧版本的 Outlook 桌面客户端上。
 > - 但是，当用户编辑组，并使用敏感度标签保存组时，所选隐私设置将被应用灵敏度标签的隐私设置替代。
+>
 > 建议您在 Outlook 客户端的旧版本上的用户升级到较新版本。
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>案例 B：针对文档和电子邮件的租户使用敏感度标签
@@ -90,4 +94,3 @@ ms.locfileid: "47308169"
 ## <a name="sample-script"></a>示例脚本
 
 有关将具有经典 AAD 标签的组迁移到敏感度标签的示例脚本，请参阅 [经典 AZURE AD 组分类](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)。
-

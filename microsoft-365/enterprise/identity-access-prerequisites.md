@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357970"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547200"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -40,7 +40,7 @@ ms.locfileid: "47357970"
 
 | 配置 | Exceptions |
 | :------------- | :-----------: |
-|  [配置密码哈希同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。 必须启用此功能，以检测泄露的凭据并对其执行基于风险的条件访问。 **注意：** 无论您的组织是否使用混合联合身份验证，都是必需的。 |  仅限云 |
+|  [配置 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  必须启用此功能，以检测泄露的凭据并对其执行基于风险的条件访问。 **注意：** 无论您的组织是否使用联合身份验证，都是必需的。 |  仅限云 |
 | [启用无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) ，以便在用户位于连接到组织网络的组织设备上时自动对用户进行签名。 | 仅限云和联合  |
 | [配置命名网络](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection 收集并分析所有可用的会话数据，以生成风险评分。 我们建议您在 Azure AD 的 "网络配置" 中为您的网络指定组织的公共 IP 范围。 来自这些范围的流量被授予降低风险分数，来自组织环境外部的流量将获得较高风险分数。 | |
 |[为所有用户注册自助服务密码重置 (SSPR) and 多重身份验证 (MFA) ](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我们建议您提前注册用户以进行 Azure 多重身份验证。 Azure AD Identity Protection 使用 Azure 多因素身份验证来执行其他安全验证。 此外，为了获得最佳登录体验，我们建议用户在其设备上安装 [Microsoft 身份验证器应用](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司门户应用。 可以从每个平台的应用商店中安装这些。 | |
@@ -49,7 +49,7 @@ ms.locfileid: "47357970"
 | [配置密码写回到本地 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密码写回允许 Azure AD 在检测到高风险帐户泄漏时要求用户更改其本地密码。 您可以通过以下两种方式之一在 Azure AD Connect 中启用此功能：在 Azure AD Connect 安装向导的 "可选功能" 屏幕中启用 **密码写回** ，或通过 Windows PowerShell 启用它。 | 仅限云 |
 | [配置 AZURE AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD 密码保护检测并阻止已知弱密码及其变体，还可以阻止特定于您的组织的其他弱术语。 默认全局禁止密码列表将自动应用于 Azure AD 租户中的所有用户。 您可以在 "自定义禁止密码" 列表中定义其他条目。 当用户更改或重置其密码时，将检查这些禁止的密码列表，以强制使用强密码。 | |
 | [启用 Azure Active Directory 标识保护](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD Identity Protection 使您能够检测到影响组织的身份的潜在漏洞，并将自动修正策略配置为低、中和高的登录风险和用户风险。  | |
-| 为[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[Skype For business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**启用新式验证**。 新式验证是使用多重身份验证 (MFA) 的先决条件。 默认情况下，将为 Office 2016 客户端、SharePoint Online 和 OneDrive for business 启用新式验证。 |  |
+| 为[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[Skype For business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**启用新式验证**。 新式验证是使用 MFA 的先决条件。 默认情况下，将为 Office 2016 客户端、SharePoint 和 OneDrive for business 启用新式验证。 |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>推荐的客户端配置

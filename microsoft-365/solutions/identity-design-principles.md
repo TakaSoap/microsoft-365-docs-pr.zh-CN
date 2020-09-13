@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7c83d3f202851008e93c3f3e9d0c7bc89c49bf20
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a1e85b2089663208e8b6004462211263a1b27242
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308363"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547789"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To identity and 超越-一个架构师的视点
 
@@ -117,7 +117,7 @@ XYZ SaaS 支持实时 (JIT) 设置，为什么需要同步？ 具体步骤请见
 
 
 
-### <a name="authorization"></a>授权
+### <a name="authorization"></a>Authorization
 
 根据 [维基百科](https://en.wikipedia.org/wiki/Authorization)，"授权" 是定义访问策略。 许多人将其视为定义对对象 (文件、服务等 ) 的访问控制的能力。 在当前的网络威胁世界中，此概念快速发展为动态策略，该策略可以对各种威胁向量做出反应并快速调整访问控制以响应这些威胁。 例如，如果我从异常位置访问我的银行帐户，我将获得其他确认步骤。 为实现这一点，我们不仅需要考虑策略本身，还需要考虑威胁检测和信号相关方法体系的生态系统。
 
@@ -272,7 +272,7 @@ Office 365 具有 [统一的审核日志](https://docs.microsoft.com/microsoft-3
 
 通过其他 API 访问的 Microsoft 365 日志示例包括以下内容：
 - 与 Office 365 不相关的[AZURE AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (活动) 
-- [Exchange 邮件跟踪](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
+- [Exchange 邮件跟踪](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace)
 - 上面讨论的威胁/UEBA 系统 (例如，Azure AD Identity Protection、Microsoft 云应用安全性、Microsoft Defender ATP 等 ) 
 - [Microsoft 信息保护](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

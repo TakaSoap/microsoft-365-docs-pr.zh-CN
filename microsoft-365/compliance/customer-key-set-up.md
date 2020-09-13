@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为适用于 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件的 Microsoft 365 设置客户密钥。
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324208"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546754"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -402,7 +402,7 @@ Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date
   
 若要创建 DEP，请按照以下步骤操作：
   
-1. 在您的本地计算机上，在您的组织中使用具有全局管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
+1. 在您的本地计算机上，在您的组织中使用具有全局管理员权限的工作或学校帐户，在 Windows PowerShell 窗口中 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
 
 2. 若要创建 DEP，请通过键入以下命令来使用 DataEncryptionPolicy cmdlet。
 
@@ -486,7 +486,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 ### <a name="validate-file-encryption"></a>验证文件加密
 
- 若要验证 SharePoint Online、OneDrive for Business 和团队文件的加密，请 [连接到 Sharepoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)，然后使用 SPODataEncryptionPolicy cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密，则 _State_ 属性将返回一个 **注册** 值。 如果仍在进行加密，则此 cmdlet 提供有关已完成的网站百分比的信息。
+ 若要验证 SharePoint Online、OneDrive for Business 和团队文件的加密，请 [连接到 Sharepoint Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)，然后使用 SPODataEncryptionPolicy cmdlet 检查租户的状态。 如果启用了客户密钥加密且所有站点中的所有文件均已加密，则 _State_ 属性将返回一个 **注册** 值。 如果仍在进行加密，则此 cmdlet 提供有关已完成的网站百分比的信息。
 
 ## <a name="related-articles"></a>相关文章
 
