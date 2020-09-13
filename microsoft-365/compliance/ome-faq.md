@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有关新邮件保护功能的工作原理，有什么问题？ 在此处查找答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798184"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546056"
 ---
 # <a name="message-encryption-faq"></a>邮件加密常见问题
 
@@ -62,7 +62,7 @@ OME 将电子邮件加密和权限管理功能结合在一起。 权限管理功
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>使用 Azure 信息保护执行 OME 和 BYOK 更改 Microsoft 对第三方数据请求（如 subpoenas）的方法？
 
-不正确。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。  (请阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对 [政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Microsoft 信任中心上的客户数据。 此外，请参阅 [在线服务条款 (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
+否。 OME 以及提供和控制您自己的加密密钥（称为 BYOK）的选项不是为了响应执法 subpoenas 而设计的。 OME，BYOK for Azure 信息保护是针对以法规为重点的客户而设计的。 Microsoft 会对客户数据进行非常严重的第三方请求。 作为云服务提供商，我们始终提倡客户数据的隐私。 在我们获取传唤时，我们总是会尝试将第三方重定向到客户来获取信息。  (请阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们会定期发布我们收到的请求的详细信息。 有关第三方数据请求的详细信息，请参阅对 [政府和执法版强制请求的响应，以访问](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) Microsoft 信任中心上的客户数据。 此外，请参阅 [在线服务条款 (OST) ](https://www.microsoft.com/Licensing/product-licensing/products.aspx)中的 "客户数据泄露"。
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>如何将此功能与旧版 Office 365 邮件加密有关 (OME) 和信息权限管理 (IRM) 功能？
 
@@ -88,7 +88,7 @@ Office 365 邮件加密的新功能是现有 IRM 和旧版 OME 解决方案的�
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>我的组织使用 Active Directory 权限管理，我是否可以使用此功能？
 
-不正确。 如果您使用的是 Active Directory 权限管理服务 (AD RMS) 的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将 [AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。
+否。 如果您使用的是 Active Directory 权限管理服务 (AD RMS) 的 Exchange Online，则不能立即启用这些新功能。 相反，您需要先将 [AD RMS 迁移到 Azure 信息保护](https://docs.microsoft.com/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms) 。
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>我的组织具有 Exchange 混合部署。 我是否可以使用此功能？
 
@@ -120,7 +120,7 @@ Microsoft 365 用户可以从 Outlook for Windows 和 Mac (2013 和 2016) 、Out
 
 Outlook 桌面本身不支持对 PDF 文件附件的加密。 相反，您需要设置 Exchange 邮件流规则或 DLP，以便先将加密应用于 PDF 附件。 当您使用 PDF 附件从 Outlook 桌面发送邮件时，客户端先将包含附件的邮件发送到服务。 当服务收到文件时，服务会在 Exchange Online 中对数据丢失防护 (DLP) 策略或邮件流规则应用 OME 保护。 接下来，Exchange Online 将发送带有受保护的 PDF 文件附件的邮件。
 
-若要对 PDF 附件启用加密，请在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中运行以下命令：
+若要对 PDF 附件启用加密，请在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令：
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true

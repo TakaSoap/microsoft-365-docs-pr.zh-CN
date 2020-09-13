@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您将了解如何根据您的组织需求来创建、测试和调整 DLP 策略。
-ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ef88da90d8e009d3ea634c9142d7d917fbfd288a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648779"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546932"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>创建、测试和优化 DLP 策略
 
@@ -46,7 +46,7 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
     
 2. 在安全 &amp; 合规中心的“**权限**”页面上创建一个角色组。 
 
-3. 创建角色组时，请使用 "**选择角色**" 部分，将以下角色添加到角色组： " **DLP 合规性管理**"。
+3. 创建角色组时，请使用 " **选择角色** " 部分，将以下角色添加到角色组： " **DLP 合规性管理**"。
     
 4. 使用“**选择成员**”部分，将先前创建的 Microsoft 365 组添加到角色组中。
 
@@ -69,15 +69,15 @@ DLP 使用内容分析引擎检查电子邮件和文件的内容，查找敏感�
 - "可以定购我一个新的便携式计算机。 使用我的签证号码1111-1111-1111-1111，到期日期为11/22，并在你拥有它时向我发送估计的交货日期。
 - "我的膝上型电脑序列号是2222-2222-2222-2222，它是在11/2010 购买的。 顺便说，我的出差签证是否已批准？ "
 
-对保持书签的一个很有用的参考是说明如何检测每种信息类型的[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
+对保持书签的一个很有用的参考是说明如何检测每种信息类型的 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md) 。
 
 ## <a name="where-to-start-with-data-loss-prevention"></a>从何处开始使用数据丢失防护
 
 如果数据泄露风险不是完全显而易见的，则很难确切地使用实现 DLP 时应开始的情况。 幸运的是，可以在 "测试模式" 下运行 DLP 策略，这样您就可以在将其转换为前评估其有效性和准确性。
 
-可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略，因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中，你将在**数据丢失防护**策略下找到 DLP 策略  >  **Policy**。 单击 "**创建要启动的策略**"。
+可以通过 Exchange 管理中心管理 Exchange Online 的 DLP 策略。 但您可以通过安全 & 合规性中心为所有工作负载配置 DLP 策略，因此这正是我将在本文中用到的演示。 在安全 & 合规性中心中，你将在**数据丢失防护**策略下找到 DLP 策略  >  **Policy**。 单击 " **创建要启动的策略** "。
 
-Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](what-the-dlp-policy-templates-include.md)。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员，这些模板属于财务、医疗和运行状况的一般类别和隐私。
+Microsoft 365 提供了一系列可用于创建 DLP 策略的 [dlp 策略模板](what-the-dlp-policy-templates-include.md) 。 假设你是澳大利亚的商业版。 您可以筛选策略模板以仅显示与澳大利亚相关的人员，这些模板属于财务、医疗和运行状况的一般类别和隐私。
 
 ![选择国家或地区的选项](../media/DLP-create-test-tune-choose-country.png)
 
@@ -93,11 +93,11 @@ Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](
 
 ![选择所有位置的选项](../media/DLP-create-test-tune-choose-locations.png)
 
-在第一个 "**策略设置**" 步骤中，只接受 "现在" 的默认值。 您可以在 DLP 策略中进行大量的自定义，但默认值是一个很好的启动位置。
+在第一个 " **策略设置** " 步骤中，只接受 "现在" 的默认值。 您可以在 DLP 策略中进行大量的自定义，但默认值是一个很好的启动位置。
 
 ![自定义要保护的内容类型的选项](../media/DLP-create-test-tune-default-customization-settings.png)
 
-单击 "**下一步**" 后，将显示其他具有更多自定义选项的**策略设置**页。 对于您刚测试的策略，可以从这里开始进行一些调整。
+单击 " **下一步** " 后，将显示其他具有更多自定义选项的 **策略设置** 页。 对于您刚测试的策略，可以从这里开始进行一些调整。
 
 - 我已经关闭了现在的策略提示，如果只是在测试并不想向用户显示任何内容，这是一项合理的步骤。 策略提示向用户显示即将违反 DLP 策略的警告。 例如，Outlook 用户将看到一条警告，指出他们所附加的文件包含信用卡号码，并将导致拒绝其电子邮件。 策略提示的目标是在发生不兼容的行为之前将其停止。
 - 我还将10的实例数从10减少到1，以便此策略将检测所有的澳大利亚 PII 数据共享，而不只是批量共享数据。
@@ -109,11 +109,11 @@ Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](
 
 ![先测试策略的选项](../media/DLP-create-test-tune-test-mode.png)
 
-在最终审阅屏幕上，单击 "**创建**" 以完成策略的创建。
+在最终审阅屏幕上，单击 " **创建** " 以完成策略的创建。
 
 ## <a name="test-a-dlp-policy"></a>测试 DLP 策略
 
-新的 DLP 策略将在大约1小时内开始生效。 可以坐下来等待，等待正常的用户活动触发，也可以尝试自己触发它。 早期我链接到[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)，提供了有关如何触发 DLP 匹配的信息。
+新的 DLP 策略将在大约1小时内开始生效。 可以坐下来等待，等待正常的用户活动触发，也可以尝试自己触发它。 早期我链接到 [敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)，提供了有关如何触发 DLP 匹配的信息。
 
 例如，我为本文创建的 DLP 策略将检测 (TFN) 的澳大利亚税文件编号。 根据文档，匹配项基于以下条件。
 
@@ -131,7 +131,7 @@ Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](
 
 ![显示了已检测到的税文件编号的事件报告](../media/DLP-create-test-tune-email-incident-report.png)
 
-如果您将 DLP 策略保留在测试模式中并分析事件报告电子邮件，则可以开始了解 DLP 策略的准确性以及强制实施它的效率。 除了事件报告之外，您还可以[使用 DLP 报告](view-the-dlp-reports.md)查看整个租户中策略匹配的聚合视图。
+如果您将 DLP 策略保留在测试模式中并分析事件报告电子邮件，则可以开始了解 DLP 策略的准确性以及强制实施它的效率。 除了事件报告之外，您还可以 [使用 DLP 报告](view-the-dlp-reports.md) 查看整个租户中策略匹配的聚合视图。
 
 ## <a name="tune-a-dlp-policy"></a>优化 DLP 策略
 
@@ -175,7 +175,7 @@ Microsoft 365 提供了一系列可用于创建 DLP 策略的[dlp 策略模板](
 
 ![在测试模式下显示策略提示的选项](../media/DLP-create-test-tune-show-policy-tips.png)
 
-在服务器端 (或云端（如果您更喜欢) ），更改可能不会立即生效，这取决于不同的处理间隔。 如果要进行 DLP 策略更改，以向用户显示新的策略提示，则用户可能看不到这些更改会立即在 Outlook 客户端中生效，这将检查每24小时进行的策略更改。 如果要加快测试速度，可以使用此注册表修补程序[从 PolicyNudges 项中清除上次下载时间戳](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)。 Outlook 将在您下次重新启动时下载最新的策略信息，并开始撰写一封电子邮件。
+在服务器端 (或云端（如果您更喜欢) ），更改可能不会立即生效，这取决于不同的处理间隔。 如果要进行 DLP 策略更改，以向用户显示新的策略提示，则用户可能看不到这些更改会立即在 Outlook 客户端中生效，这将检查每24小时进行的策略更改。 如果要加快测试速度，可以使用此注册表修补程序 [从 PolicyNudges 项中清除上次下载时间戳](https://support.microsoft.com/en-au/help/2823261/changes-to-a-data-loss-prevention-policy-don-t-take-effect-in-outlook?__hstc=18650278.46377037dc0a82baa8a30f0ef07a7b2f.1538687978676.1538693509953.1540315763430.3&__hssc=18650278.1.1540315763430&__hsfp=3446956451)。 Outlook 将在您下次重新启动时下载最新的策略信息，并开始撰写一封电子邮件。
 
 如果启用了策略提示，则用户将开始在 Outlook 中看到提示，并且可以在发生时向您报告误报。
 
@@ -208,9 +208,9 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![编辑实例计数的选项](../media/DLP-create-test-tune-edit-instance-count.png)
 
-除了更改实例计数之外，还可以调整匹配精度 (或置信度) 。 如果您的敏感信息类型有多种模式，则可以调整规则中的匹配精度，以便您的规则只匹配特定模式。 例如，若要帮助减少误报，可以设置规则的匹配精度，使其仅与具有最高可信度的模式相匹配。 若要了解如何计算可信度，在此文章) 的范围内 (有点棘手，但下面是[有关如何使用可信度调整规则](data-loss-prevention-policies.md#match-accuracy)的更佳说明。
+除了更改实例计数之外，还可以调整匹配精度 (或置信度) 。 如果您的敏感信息类型有多种模式，则可以调整规则中的匹配精度，以便您的规则只匹配特定模式。 例如，若要帮助减少误报，可以设置规则的匹配精度，使其仅与具有最高可信度的模式相匹配。 若要了解如何计算可信度，在此文章) 的范围内 (有点棘手，但下面是 [有关如何使用可信度调整规则](data-loss-prevention-policies.md#match-accuracy)的更佳说明。
 
-最后，如果您想要更多地获取更多的信息，可以自定义任何敏感信息类型-例如，可以从[澳大利亚驾照号码](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)的关键字列表中删除 "悉尼新南威尔士"，以消除上述误报。 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅本主题关于[自定义内置的敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
+最后，如果您想要更多地获取更多的信息，可以自定义任何敏感信息类型-例如，可以从 [澳大利亚驾照号码](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)的关键字列表中删除 "悉尼新南威尔士"，以消除上述误报。 若要了解如何使用 XML 和 PowerShell 执行此操作，请参阅本主题关于 [自定义内置的敏感信息类型](customize-a-built-in-sensitive-information-type.md)。
 
 ## <a name="turn-on-a-dlp-policy"></a>启用 DLP 策略
 
@@ -218,7 +218,7 @@ DLP 策略模板不能完全直接从盒中得到。 您可能会发现环境中
 
 ![启用策略的选项](../media/DLP-create-test-tune-turn-on-policy.png)
  
-如果你正在等待查看策略将生效的时间，请[连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) ，然后运行[DlpCompliancePolicy cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy?view=exchange-ps) ，以查看 DistributionStatus。
+如果你正在等待查看策略将生效的时间，请 [连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行 [DlpCompliancePolicy cmdlet](https://docs.microsoft.com/powershell/module/exchange/get-dlpcompliancepolicy) ，以查看 DistributionStatus。
 
 ![在 PowerShell 中运行 cmdlet](../media/DLP-create-test-tune-PowerShell.png)
 

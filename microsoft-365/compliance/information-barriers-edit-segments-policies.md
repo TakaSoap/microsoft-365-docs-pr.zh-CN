@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 了解如何编辑或删除信息障碍策略。
-ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 7e027d9026818eefacd1c84949e3211c19ae8cf9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307935"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547460"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>编辑 (或删除) 信息屏障策略
 
@@ -38,7 +38,7 @@ ms.locfileid: "47307935"
 |[信息屏障疑难解答](information-barriers-troubleshooting.md)     |遇到信息障碍遇到意外问题时，请参阅本文。         |
 
 > [!IMPORTANT]
-> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色！ ) <p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅 [信息屏障策略的先决条件 () ](information-barriers-policies.md#prerequisites)。<p>请确保 [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要执行本文中所述的任务，必须为您分配适当的角色，如以下某项：<br/>-Microsoft 365 企业全局管理员<br/>-全局管理员<br/>-合规性管理员<br/>-IB 合规性管理 (这是一个新角色！ ) <p>若要了解有关信息障碍的先决条件方面的详细信息，请参阅 [信息屏障策略的先决条件 () ](information-barriers-policies.md#prerequisites)。<p>请确保 [连接到安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>编辑用户帐户属性
 

@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 高级邮件加密通过自定义品牌化模板设置电子邮件的过期日期来扩展电子邮件的安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e929ce1d948a83a98cca6fa35a65b80a2fc9ef15
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818685"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546156"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
-Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 （非盈利员工定价）、Office 365 企业版 E5 （非盈利员工定价）和 Office 365 教育版 A5 中。 如果您的组织有一个不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加 Microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Microsoft 365 高级合规性 SKU 外接程序（microsoft 365 E3、Microsoft 365 E3 （非盈利员工定价）或 Office 365 Sku 购买它。
+Office 365 高级邮件加密包含在 [Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 (非盈利性员工定价) 、Office 365 企业版 E5 (非盈利性员工定价) 和 Office 365 教育版 A5。 如果您的组织具有不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加 Microsoft 365 E3、Microsoft 365 E3 (非盈利性的员工定价) 或 Office 365 高级合规性 SKU 附加 for Microsoft 365 E3、Microsoft 365 E3 (非盈利性员工定价) 或 Office 365 Sku 购买。
 
 您可以使用您的用户发送给使用 OME 门户访问加密电子邮件的外部收件人的电子邮件的邮件过期。 您可以通过使用在 Windows Powershell 中指定过期日期的自定义品牌模板，强制收件人使用 OME 门户查看并回复您的组织发送的加密电子邮件。
 
@@ -40,7 +40,7 @@ Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.m
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>使用 PowerShell 创建自定义品牌模板以强制邮件过期
 
-1. 使用组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
+1. 使用组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
 
 2. 运行 Set-omeconfiguration cmdlet。
 
@@ -50,9 +50,9 @@ Office 365 高级邮件加密包含在[Microsoft 365 企业版 e5](https://www.m
 
 其中：
 
-- `Identity`是自定义模板的名称。
+- `Identity` 是自定义模板的名称。
 
-- `ExternalMailExpiryInDays`标识收件人在过期前可保留邮件的天数。 可以使用1到730天之间的任意值。
+- `ExternalMailExpiryInDays` 标识收件人在过期前可保留邮件的天数。 可以使用1到730天之间的任意值。
 
 ## <a name="more-information-about-office-365-advanced-message-encryption"></a>有关 Office 365 高级邮件加密的详细信息
 

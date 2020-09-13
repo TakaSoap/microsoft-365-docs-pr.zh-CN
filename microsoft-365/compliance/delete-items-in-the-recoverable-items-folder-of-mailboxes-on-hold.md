@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 了解管理员如何删除 Exchange Online 邮箱的用户的 "可恢复的项目" 文件夹中的项目，即使该邮箱位于法定保留中也是如此。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 5f111a19e3baf57f2b6f2e2254df97d21689de2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405463"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546146"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>删除保留状态云邮箱的“可恢复的项目”文件夹中的项目
 
@@ -226,7 +226,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ### <a name="ediscovery-holds"></a>电子数据展示保留
   
-在 [Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 中运行以下命令，以确定与应用于邮箱的电子数据展示案例 (的电子数据展示 *保留*) 相关的保留。 使用 GUID (不包括  `UniH` 您在步骤1中确定的电子数据展示保留的前缀) 。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。
+在 [Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中运行以下命令，以确定与应用于邮箱的电子数据展示案例 (的电子数据展示 *保留*) 相关的保留。 使用 GUID (不包括  `UniH` 您在步骤1中确定的电子数据展示保留的前缀) 。 第二个命令显示与保留相关联的电子数据展示事例的名称;第三个命令显示保留的名称。
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>

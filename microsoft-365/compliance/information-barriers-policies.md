@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 了解如何在 Microsoft 团队中定义信息障碍策略。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308071"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547440"
 ---
 # <a name="define-information-barrier-policies"></a>定义信息屏障策略
 
@@ -71,7 +71,7 @@ ms.locfileid: "47308071"
 - 无通讯簿策略-在定义和应用信息屏障策略之前，请确保没有适当的 Exchange 通讯簿策略。 信息障碍基于通讯簿策略，但这两种类型的策略不兼容。 如果您具有此类策略，请务必先 [删除您的通讯簿策略](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 在信息屏障策略启用并启用了分层通讯簿后， ***不包含*** 在信息屏障段中的所有用户都将在 Exchange online 中看到 [分层通讯簿](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) 。
 
 - 目前使用 powershell cmdlet 在 Office 365 安全 & 合规中心中定义和管理信息屏障策略。 虽然本文中提供了几个示例，但您需要熟悉 PowerShell cmdlet 和参数。 你还需要 Azure PowerShell 模块。
-    - [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [安装 Azure PowerShell 模块](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Microsoft 团队中的信息障碍的管理员同意-当你的策略准备就绪后，信息障碍可以从聊天会话中删除他们不应参与的人员。 这有助于确保您的组织遵守策略和管理法规。 使用以下过程可使信息障碍策略在 Microsoft 团队中按预期方式工作。 
@@ -258,7 +258,7 @@ ms.locfileid: "47308071"
 |段     |使用 **OrganizationSegment** cmdlet。<p>语法 `Get-OrganizationSegment` <p>这将显示为您的组织定义的所有网段的列表。         |
 |信息屏障策略     |使用 **InformationBarrierPolicy** cmdlet。 <p> 语法 `Get-InformationBarrierPolicy` <p>这将显示已定义的信息障碍策略的列表及其状态。       |
 |最新的信息屏障策略应用程序     | 使用 **InformationBarrierPoliciesApplicationStatus** cmdlet。 <p>语法 `Get-InformationBarrierPoliciesApplicationStatus`<p>    这将显示有关策略应用程序是已完成、失败还是正在进行的信息。       |
-|所有信息屏障策略应用程序|改用 `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>这将显示有关策略应用程序是已完成、失败还是正在进行的信息。|
+|所有信息屏障策略应用程序|使用 `Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>这将显示有关策略应用程序是已完成、失败还是正在进行的信息。|
 
 <!-- IN the " The most recent information barrier policy application, add link to troubleshooting topic -->
 
