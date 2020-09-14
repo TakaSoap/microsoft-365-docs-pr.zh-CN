@@ -16,11 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 邮箱审核操作对被盗用的用户账户进行司法鉴定调查。
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327646"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546288"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用“高级审核”来调查被盗用的帐户
 
@@ -66,7 +67,7 @@ MailItemsAccessed 邮箱审核操作包含所有邮件协议：POP、IMAP、 MAP
 
 Mailbox 审核生成用于存取电子邮件的审核记录，因此可以自信保证电子邮件未被泄露。 因此，在无法确定某些数据已被访问的情况中，我们假设其记录了所有邮件存取活动。
 
-使用 MailItemsAccessed 审核记录进行司法鉴定目的，通常在解决了数据泄露且攻击者被逐出后进行。 若要开始调查，应确定被盗用的一组邮箱并确定攻击者存取组织中邮箱的时间范围。 然后可在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** cmdlet 搜索与数据泄漏对应的审核记录。 
+使用 MailItemsAccessed 审核记录进行司法鉴定目的，通常在解决了数据泄露且攻击者被逐出后进行。 若要开始调查，应确定被盗用的一组邮箱并确定攻击者存取组织中邮箱的时间范围。 然后可在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** cmdlet 搜索与数据泄漏对应的审核记录。 
 
 可运行下列之一命令来搜索 MailItemsAccessed 审核记录：
 

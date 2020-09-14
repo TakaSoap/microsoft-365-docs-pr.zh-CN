@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何创建自定义敏感信息类型，以允许使用满足组织需求的规则。
-ms.openlocfilehash: 6e9fb0295f8958584878921c1fac362dc511be8f
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086609"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546660"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自定义内置敏感信息类型
 
@@ -33,7 +33,7 @@ ms.locfileid: "45086609"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>导出当前规则的 XML 文件
 
-必须[通过远程 PowerShell 连接到安全与合规中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，才能导出 XML。
+必须[通过远程 PowerShell 连接到安全与合规中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)，才能导出 XML。
   
 1. 在 PowerShell 中，键入下面的代码，以在屏幕上显示组织的规则。如果还没有创建你自己的规则，就只会看到标记为“Microsoft 规则包”默认内置规则。
 

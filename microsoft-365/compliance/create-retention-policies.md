@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略，可主动决定是保留内容还是删除内容，亦或是先保留再删除内容；可将一个策略应用于整个组织，或应用于特定位置或用户；并能将策略应用于所有内容，或应用于满足特定条件的内容。
-ms.openlocfilehash: 01a5137c3ab098101ebfeab71be38ee3ca28088f
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: bf449c15378226ffb0dd28a55903cbef35d32944
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426959"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546913"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -297,7 +297,7 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 具有任何配置的所有保留策略均支持“保留锁定”。 但是，在使用以下 PowerShell 命令时，你会注意到 **Workload** 参数始终显示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup**，而不是策略中配置的实际工作负载。 这只是显示问题。
 
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 运行 [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy)，列出保留策略并查找要锁定的策略的名称。 例如：
     

@@ -12,28 +12,28 @@ ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5ee42a12f65ad5eff0a33ef2b61d328ebdc7af3e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036257"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547328"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>用于本地 Office 服务器的 GDPR
 
 一般数据保护条例 (GDPR) 为组织提供了保护个人数据和适当回应数据主体请求的要求。本系列文章为本地工作负载提供了推荐的方法：
 
--   [SharePoint Server](gdpr-for-sharepoint-server.md)
+- [SharePoint Server](gdpr-for-sharepoint-server.md)
 
--   [Exchange Server](gdpr-for-exchange-server.md)
+- [Exchange Server](gdpr-for-exchange-server.md)
 
--   [Skype for Business Server](gdpr-for-skype-for-business-server.md)
+- [Skype for Business Server](gdpr-for-skype-for-business-server.md)
 
--   [Project Server](gdpr-for-project-server.md)
+- [Project Server](gdpr-for-project-server.md)
 
--   [Office Web Apps Server 和 Office Online Server](gdpr-for-office-online-server.md)
+- [Office Web Apps Server 和 Office Online Server](gdpr-for-office-online-server.md)
 
--   [本地文件共享](gdpr-for-on-premises-file-shares.md)
+- [本地文件共享](gdpr-for-on-premises-file-shares.md)
 
 有关 GDPR 以及 Microsoft 如何为你提供帮助的详细信息，请参阅 [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )。
@@ -42,17 +42,20 @@ ms.locfileid: "44036257"
 
 下图列出了在各个工作负载中使用的推荐功能，用于发现、保护和监视个人数据并对其进行分类。有关更多信息，请参阅该部分中的文章。
 
-![](../media/gdpr-for-office-servers-image1.png)
+![描述跨工作负载发现、分类、保护和监视个人数据的功能图表](../media/gdpr-for-office-servers-image1.png)
 
 ## <a name="illustration-description"></a>图示说明
 
 为便于访问，下表提供了上图中的相同示例。
 
-|             |Windows Server 文件共享|SharePoint Server|Exchange Server|Skype for Business|Project Server|
-|:------------|:-------------------------|:----------------|:--------------|:-----------------|:-------------|
-|发现|Azure 信息保护扫描程序*|搜索中心或电子数据展示（数据分类后）；Azure 信息保护扫描程序*|Exchange 电子数据展示门户|Exchange 电子数据展示门户|用于发现和导出的 SQL 脚本|
-|分类|Azure 信息保护扫描程序*；Office 365 敏感信息类型|Azure 信息保护扫描程序*；Office 365 敏感信息类型|Exchange 保留标记和保留策略|Exchange 保留标记和保留策略||
-|保护||Exchange Server 数据丢失防护规则；权限，库的 IRM 保护|Exchange Server 数据丢失防护规则；与 Exchange Server 的 IRM 集成|||
-|监视|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|
+****
 
-*注意，保护功能会加密文件。因此，SharePoint Server 无法在受保护的文件中查找敏感信息类型。
+|操作|Windows Server 文件共享|SharePoint Server|Exchange Server|Skype for Business|Project Server|
+|---|---|---|---|---|---|
+|发现|Azure 信息保护扫描程序<sup>\*</sup>|搜索中心或电子数据展示（对数据进行分类后） <br/><br/> Azure 信息保护扫描程序<sup>\*</sup>|Exchange 电子数据展示门户|Exchange 电子数据展示门户|用于发现和导出的 SQL 脚本|
+|分类|Azure 信息保护扫描程序<sup>\*</sup> <br/><br/> Office 365 敏感信息类型|Azure 信息保护扫描程序<sup>\*</sup> <br/><br/> Office 365 敏感信息类型|Exchange 保留标记和保留策略|Exchange 保留标记和保留策略||
+|保护||Exchange Server 数据丢失防护规则 <br/><br/> 权限、库 IRM-保护|Exchange Server 数据丢失防护规则 <br/><br/> IRM 与 Exchange Server 的集成|||
+|监视|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|将日志与 SIEM 工具集成|
+|
+
+<sup>\*</sup>注意，保护功能会加密文件。 因此，SharePoint Server 无法在受保护的文件中查找敏感信息类型。

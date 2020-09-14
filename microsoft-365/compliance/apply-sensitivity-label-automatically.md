@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: efe09796b7c3048fd9c6026a5e6a2ca6fbc234a3
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 88ad35b2bc07f85a86a1900d9f551b92d4646ba1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427031"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546724"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -315,9 +315,9 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>使用 PowerShell 自动标记策略
 
-现在，你可以使用[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) 创建和配置自动标记策略。 这意味着你现在可以完全编写自动标记策略的创建和维护策略，这也提供了一种更为有效的方法，用于指定 OneDrive 和 SharePoint 位置的多个 URL。
+现在，你可以使用[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 创建和配置自动标记策略。 这意味着你现在可以完全编写自动标记策略的创建和维护策略，这也提供了一种更为有效的方法，用于指定 OneDrive 和 SharePoint 位置的多个 URL。
 
-在 PowerShell 中运行命令之前，必须先[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+在 PowerShell 中运行命令之前，必须先[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 若要创建新的自动标记策略： 
 

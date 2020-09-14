@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a5237f845239414a9b26a6da7028e323a11ea850
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 53411edcaa64508d7200a2ca1bf1903f809d9ae1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416596"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547430"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
@@ -42,7 +42,7 @@ ms.locfileid: "47416596"
 
 本指南中的每个部分概述了数据控制者组织为响应对 Microsoft 云中个人数据的 DSR 请求而采取的技术过程。
 
-### <a name="gdpr-terminology"></a>GDPR 术语
+## <a name="gdpr-terminology"></a>GDPR 术语
 
 下面提供了与本指南相关的术语定义：
 
@@ -52,14 +52,14 @@ ms.locfileid: "47416596"
 - **客户数据：** 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文字、声音、视频或图像文件以及软件。 客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。
 - **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 — 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含有关最终用户的身份信息，例如用户名。
 
-### <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南将如何帮助你履行控制者职责
+## <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南将如何帮助你履行控制者职责
 
 本指南分为两个部分，介绍了如何使用 Dynamics 365 产品、服务和管理工具来帮助你查找和处理 Microsoft 云中的数据以响应根据 GDPR 行使其权利的数据主体提出的请求。 第一部分处理客户数据中包括的个人数据，第二部分处理系统生成日志中捕获的其他化名个人数据。
 
 - **第 1 部分：响应对客户数据中包括的个人数据的数据主体权利 (DSR) 请求：** 本指南第 1 部分讨论如何访问、纠正、限制、删除个人数据以及将个人数据从 Dynamics 365 应用程序（软件即服务）导出，这些数据会作为提供给联机服务的客户数据的一部分进行处理。
 - **第 2 部分：响应对假名数据的数据主体权限请求：** 当你使用 Dynamics 365 企业服务时，Microsoft 会生成某些信息（在本文档中称为*系统生成日志*）来提供服务，它仅限于最终用户在系统中标识其操作时留下的使用足迹。 虽然在不使用其他信息的情况下，此数据无法归于特定数据主体，但根据 GDPR 规定，有些数据被视为个人数据。 本指南的第 2 部分讨论如何访问、删除和导出由 Dynamics 365 生成的系统生成日志。
 
-### <a name="preparing-for-data-subject-rights-investigations"></a>准备数据主体权限调查
+## <a name="preparing-for-data-subject-rights-investigations"></a>准备数据主体权限调查
 
 当数据主体行使其权利并提出请求时，请考虑以下几点：
 
@@ -94,7 +94,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 1. [构建 Power BI 报告](https://docs.microsoft.com/power-bi/service-connect-to-microsoft-dynamics-crm)，以筛选并识别客户数据。
 2. 对市场营销执行的联系人和对象使用 Insight Views，以识别可能包含客户数据的其他数据点。
 
-***Dynamics 365 Customer Service Insights*** 提供了一系列资源，可帮助你[查找客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery)，以响应客户的 GDPR 请求。 
+***Dynamics 365 Customer Service Insights*** 提供了一系列资源，可帮助你[查找客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-discovery)，以响应客户的 GDPR 请求。
 
 ***Dynamics 365 for Finance and Operations*** 提供了几种搜索客户数据的方法。 你作为租户管理员，可以执行以下操作来搜索客户数据：
 
@@ -154,7 +154,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 交易记录（如常规、客户和纳税分类账条目）对于企业资源规划系统的完整性至关重要。作为财务或其他事务一部分的个人数据将“按原样”保存，以符合财务法律（例如税法）、防范诈骗（例如安全审计跟踪）或遵从行业认证。因此，Dynamics 365 for Finance and Operations 和 Dynamics 365 Business Central 限制修改此类记录中的数据。
 
-如果你将个人数据存储在业务交易记录中，则更正、删除数据或限制个人数据处理以接受数据主体的请求的唯一方法是使用 Dynamics 365 Business Central[ 自定义功能](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index)。[](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)因此，由你负责决定接受和实施数据主体的修改请求。
+如果你将个人数据存储在业务交易记录中，则更正、删除数据或限制个人数据处理以接受数据主体的请求的唯一方法是使用 Dynamics 365 Business Central[ 自定义功能](https://docs.microsoft.com/dynamics365/business-central/dev-itpro/index)。因此，[由你负责决定接受和实施数据主体的修改请求](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/gdpr/gdpr-guide#reasons-why-certain-personal-data-may-not-be-modified-or-deleted)。
 
 ### <a name="restricting-the-processing-of-customer-data"></a>限制客户数据的处理
 
@@ -194,7 +194,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 ***Dynamics 365 for Finance and Operations*** 提供了[数据管理和集成实体](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，可用于启用提供的实体、新创建的实体或扩展的实体，以使用[数据导入和导出作业](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。  或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。 将客户数据以这种方式导出到 Excel 后，你可以编辑要包括在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。
 
-Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提供了人员搜索报告，可为数据主体提供已分类为个人数据的数据。 
+Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提供了人员搜索报告，可为数据主体提供已分类为个人数据的数据。
 
 ***Dynamics 365 Business Central*** 提供以下功能：
 
