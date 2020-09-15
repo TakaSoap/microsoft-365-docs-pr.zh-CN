@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 设置适用于 Microsoft 365 的租户的路线图。
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315749"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775143"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>适用于 Microsoft 365 的租户路线图
 
-你的 Microsoft 365 租户是分配给你的组织的一组服务。 此租户通常与一个或多个 DNS 域名相关联，并充当不同订阅的中央容器以及分配给用户帐户的这些名称中的许可证。 
+你的 Microsoft 365 租户是分配给你的组织的一组服务。 通常情况下，此租户与一个或多个 DNS 域名相关联，并充当不同订阅的中央容器以及分配给用户帐户的这些名称中的许可证。
 
 创建 Microsoft 365 租户时，可将其分配到特定的地理位置。 您还可以拥有多个地理位置的租户，并将您的租户从一个位置移动到另一个位置。
 
-良好规划和执行的租户配置对于为网络和标识的基础服务做好准备是至关重要的。
+若要让你的租户为网络和标识的基础服务做好准备，请务必仔细规划和执行你的租户配置。
 
 ## <a name="plan"></a>套餐
 
@@ -50,13 +50,13 @@ ms.locfileid: "47315749"
 
 利用 Microsoft 365 多地理位置，你的组织可将其 Microsoft 365 触及范围扩展到你的现有租户内的多个地理区域和/或国家或地区。
 
-[开始](microsoft-365-multi-geo.md) 了解、规划、配置和管理 Microsoft 365 多地理位置。
+若要了解有关 Microsoft 365 多地理位置的信息，包括如何规划、配置和管理，请 [从这里开始](microsoft-365-multi-geo.md)。
 
 ## <a name="move-a-tenants-geographic-locations"></a>移动租户的地理位置
 
 Microsoft 继续为 Microsoft 365 服务 (信息) 打开新的数据中心地理位置。 这些新数据中心信息添加容量和计算资源，以支持客户需求和使用情况增长。 此外，新的数据中心信息为核心客户数据提供了地理位置数据常驻。
 
-通过将 [核心数据移动到新的 Microsoft 365 datacenter geo](moving-data-to-new-datacenter-geos.md)，了解并请求地区数据移动的入门知识。
+有关 Microsoft 365 datacenter geo 的信息，包括如何请求地区数据移动，请 [从这里开始](moving-data-to-new-datacenter-geos.md)。
 
 ## <a name="next-step"></a>后续步骤
 

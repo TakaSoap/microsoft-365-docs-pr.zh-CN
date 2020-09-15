@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商业高级版, Microsoft 365, SMB, 常见问题解答, 常见问题, 解答, 商业版
 ms.date: 07/21/2020
-ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: e056f0c33aec180080a0d4e27e182d2d98877e6e
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560791"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775077"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商业高级版常见问题
 
@@ -49,7 +49,7 @@ Microsoft 365 是一个集成式解决方案，可为中小型企业集中提供
 * 使用 Windows AutoPilot 简化部署电脑。
 
 **其他权利** 
-- Microsoft 365 商业高级版客户还可以访问 Windows 虚拟桌面和 Office 共享计算机激活功能。 有关详细信息，请阅读 [Microsoft 365 商业高级版博客](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另请参阅[Microsoft 365 for business 服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+- Microsoft 365 商业高级版客户还可以访问 Windows 虚拟桌面和 Office 共享计算机激活功能。 有关详细信息，请阅读 [Microsoft 365 商业高级版博客](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另请参阅 [Microsoft 365 for business 服务说明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>谁应该考虑采用 Microsoft 365 商业高级版？ 
 Microsoft 365 商业高级版是一个基于云的综合安全解决方案，让你能够：  
@@ -98,9 +98,9 @@ Windows 10 商业版还附带了某些高级 Microsoft Defender 功能，如受�
 Microsoft 365 商业高级版会为客户提供一种简单但却有效的方法，使员工能够使用他们的个人设备工作，同时使企业能够防止这些设备访问、保留和/或共享业务信息。 更具体地说： 
 * **适用于 Office 移动应用的应用保护**可通过强力执行策略（如在未连接到服务的规定时长过后自动删除业务数据、要求将信息仅存储到 OneDrive for Business、要求进行 PIN/指纹验证来访问 Office 应用，以及防止将公司数据从 Office 应用复制到个人应用）来帮助应用保护 Office 数据，包括 iOS 和 Android 移动设备上的电子邮件、日历、联系人和文档。 Microsoft 365 商业高级版订阅者也能通过 Intune 实现其他移动应用的移动应用程序管理。 
   
-* **适用于 Windows 10 电脑的设备管理**允许企业选择设置和强制实施诸如 Microsoft Defender 防病毒保护、自动更新和在指定时间段后关闭屏幕等功能。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
+* **适用于 Windows 10 电脑的设备管理** 允许企业选择设置和强制实施诸如 Microsoft Defender 防病毒保护、自动更新和在指定时间段后关闭屏幕等功能。 此外，通过管理中心，可以彻底擦除丢失或被盗的 Windows 10 设备中的业务应用程序和数据。 
 
-* **适用于 ios 的设备管理、Android & macOS**功能可帮助企业安全管理包括 IOS、Android、Windows 和 macOS 设备的各种设备生态系统。 
+* **适用于 ios 的设备管理、Android & macOS** 功能可帮助企业安全管理包括 IOS、Android、Windows 和 macOS 设备的各种设备生态系统。 
 
 ### <a name="how-does-microsoft-365-business-premium-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商业高级版如何帮助保护组织中的电脑免受恶意攻击？ 
 使用 Microsoft 365 商业高级版管理的电脑受到 Microsoft Defender 防病毒的保护，即 "否"。 具备 Windows 10 中一流的防病毒功能，与任何其他解决方案相比，它可以保护更多计算机免受病毒、恶意软件、间谍软件和其他威胁。 使用 Microsoft 365 商业高级版，组织可以确保 Microsoft Defender 防病毒保护在其所有 Windows 10 设备上运行且始终保持最新。  
@@ -154,10 +154,10 @@ Windows AutoPilot 是一项简化新 Windows 10 电脑部署的服务。 当最�
 所有可以添加到 Microsoft 365 商业标准版的加载项都可以添加到 Microsoft 365 商业高级版中。 这意味着您可以购买 Office 365 云应用安全性、高级合规性、威胁情报、MyAnalytics、Power BI Pro 和音频会议。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>能否将“电话系统”和“呼叫计划”添加到 Microsoft 365 商业高级版中？ 
-是的，你可以购买业务语音订阅。 [业务语音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice)是一种电话解决方案，为最多为300个用户捆绑了捆绑电话系统、音频会议、国内通话套餐等的中小型企业而设计。 您将获得的电话系统功能包括语音邮件、呼叫者 ID、呼叫寄存、呼叫转接、自动助理和呼叫队列。 <br> 若要了解业务语音在你所在的国家/地区是否可用，请参阅[商业语音的国家/地区可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 有关定价信息，请参阅[商业语音定价](https://go.microsoft.com/fwlink/?linkid=2127221)。
+是的，你可以购买业务语音订阅。 [业务语音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) 是一种电话解决方案，为最多为300个用户捆绑了捆绑电话系统、音频会议、国内通话套餐等的中小型企业而设计。 您将获得的电话系统功能包括语音邮件、呼叫者 ID、呼叫寄存、呼叫转接、自动助理和呼叫队列。 <br> 若要了解业务语音在你所在的国家/地区是否可用，请参阅 [商业语音的国家/地区可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 有关定价信息，请参阅 [商业语音定价](https://go.microsoft.com/fwlink/?linkid=2127221)。
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 商业高级版客户是否可以使用 Microsoft Defender 高级威胁防护？ 
-是的，Microsoft Defender 高级威胁防护作为 Microsoft 365 商业高级客户的附加项提供。
+是的，从 [Microsoft 云解决方案提供商](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)处购买时，Microsoft Defender 高级威胁防护可作为 Microsoft 365 商业高级版的附加程序提供。
 
 ## <a name="partner-opportunity"></a>合作伙伴机会
 

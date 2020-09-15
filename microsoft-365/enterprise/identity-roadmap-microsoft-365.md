@@ -15,30 +15,30 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 的身份标识指南。
-ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315795"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775119"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身份路线图
 
-在 Microsoft 365 for enterprise 中，经过良好规划和执行的标识基础结构 paves，以实现更强的安全性和仅由经过身份验证的用户和设备访问生产力工作负荷及其数据的方式。
+在 Microsoft 365 for enterprise 中，良好规划和执行的身份基础结构 paves 更高的安全性，包括限制将工作效率工作负载和数据仅授予经过身份验证的用户和设备。
 
-观看此视频，了解适用于企业的 Microsoft 365 的标识模型和身份验证的概述。
+若要了解适用于企业的 Microsoft 365 的标识模型和身份验证的概述，请观看此视频：
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-对于每个 Microsoft 365 for enterprise plan 的标识功能，Azure Active Directory (Azure AD) 、内部部署和基于云的组件以及最常见的身份验证配置的角色，请参阅 [Identity 基础结构海报](../downloads/m365e-identity-infra.pdf)。
+有关每个 Microsoft 365 for 企业版计划的标识功能的信息，Azure Active Directory 的角色、内部部署组件和基于云的组件以及最常见的身份验证配置，请参阅 [标识基础结构海报](../downloads/m365e-identity-infra.pdf)。
 
 [![身份基础结构海报](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-此两页海报是快速向上提升 Microsoft 365 for enterprise 的身份概念和配置的快速方法。
+查看此两页海报以快速提升针对企业的 Microsoft 365 的标识概念和配置。
 
-还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
+您也可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)。 您可以在信件、法律或 tabloid (11 x 17) 格式打印它。
 
 ## <a name="plan"></a>套餐
 
@@ -59,7 +59,7 @@ ms.locfileid: "47315795"
 
 ### <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
-Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-configurations.md)的建议，以确保全体员工安全且高效地工作。 对于 "标识"，请使用以下文章中的建议和设置：
+为了帮助确保拥有安全且高效的劳动力，Microsoft 提供了一组 [标识和设备访问](microsoft-365-policies-configurations.md)建议。 对于 "标识"，请使用以下文章中的建议和设置：
 
 - [先决条件](identity-access-prerequisites.md)
 - [常见标识和设备访问策略](identity-access-policies.md)
@@ -76,12 +76,12 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 了解 Microsoft 的 IT 专家如何[管理标识和安全访问](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft)。
 
 >[!Note]
->此 IT 展示资源仅提供英文版。 
+>这种 IT 展示的资源仅提供英文版本。
 >
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Contoso 如何为 Microsoft 365 进行身份识别
 
-了解 Contoso Corporation（虚构但具代表性的跨国企业）如何为 Microsoft 365 云服务[部署混合身份基础结构](contoso-identity.md)。
+有关虚构但具有代表性的跨国组织如何为 Microsoft 365 云服务部署混合标识基础结构的示例，请参阅 [Contoso Corporation 的标识](contoso-identity.md)。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -15,35 +15,37 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 为 Microsoft 365 设置设备管理的路线图。
-ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: bb19c38d5cf92cfc04ac83bc29573ea24c93ef30
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315737"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775167"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的设备管理路线图
 
-
 适用于企业的 Microsoft 365 包括帮助管理组织内的设备及其应用程序的功能。 管理移动设备可帮助您保护组织的资源。
 
-设备管理有两个选项。
+设备管理有两个选项：
+
+- [Microsoft Intune](#microsoft-intune)
+- [基本移动性和安全性](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-Intune 为你提供了使用移动设备管理 (MDM) 或移动应用程序管理 (MAM) 管理对组织的访问权限的选项。 MDM 是用户在 Intune 中 "注册" 其设备。 注册后，它们就是受管理的设备，并且可以接收组织使用的任何策略、规则和设置。 例如，您可以安装特定应用程序，创建密码策略，安装 VPN 连接，等等。
+你可以使用 Microsoft Intune 管理对你的组织的使用移动设备管理或移动应用程序管理的访问。 移动设备管理是用户在 Intune 中 "注册" 其设备时。 设备注册后，就是管理设备;因此，它可以接收你的组织的策略、规则和设置。 例如，您可以安装特定应用程序，创建密码策略，安装 VPN 连接，等等。
 
-拥有自己的个人设备的用户可能不希望注册其设备，也不能由 Intune 和你的策略进行管理。 但您仍需要保护您组织的资源和数据。 在这种情况下，您可以使用 MAM 保护您的应用程序。 例如，您可以使用一个 MAM 策略，该策略要求用户在设备上访问 SharePoint 时输入 PIN。
+拥有自己的个人设备的用户可能不希望注册其设备，也不能由 Intune 和组织的策略进行管理。 但您仍需要保护您组织的资源和数据。 在这种情况下，您可以使用移动应用程序管理来保护您的应用程序。 例如，您可以使用移动应用程序管理策略，该策略要求用户在设备上访问 Microsoft SharePoint 时输入 PIN。
 
-您还将确定如何管理个人或组织拥有的设备。 您可能需要以不同的方式处理设备，具体取决于设备的用途。 
+您还将确定如何管理个人设备和组织拥有的设备。 您可能需要以不同的方式处理设备，具体取决于设备的用途。
 
-从 [这里](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)开始。
+若要使用 Intune 管理设备，请从 [这里](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)开始。
 
 ## <a name="basic-mobility-and-security"></a>基本移动性和安全性
- 
-此功能内置于 Microsoft 365 中，可帮助您保护和管理用户的移动设备，如 Iphone、Ipad、Androids 和 Windows phone。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。 
 
-从 [这里](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)开始。
+此功能内置于 Microsoft 365 中，可帮助您保护和管理用户的移动设备，如 Iphone、Ipad、Androids 和 Windows phone。 可以创建和管理设备安全策略，远程擦除设备，以及查看详细的设备报告。
+
+若要使用基本移动性和安全性管理设备，请从 [这里](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)开始。
  
 ## <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
@@ -54,4 +56,4 @@ Microsoft 提供了一组有关[身份和设备访问](microsoft-365-policies-co
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何为 Microsoft 365 进行设备管理
 
-了解 Contoso Corporation （一个虚构但具有代表性的多国企业）如何使用 Microsoft 365 云服务 [部署其移动设备管理基础结构](contoso-mdm.md) 。
+有关虚构但具有代表性的多国企业如何使用 Microsoft 365 云服务部署其移动设备管理基础结构的信息，请参阅 [mobile device management For Contoso](contoso-mdm.md)。

@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 设置适用于 Microsoft 365 的云服务的指南。
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315761"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775131"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>适用于 Microsoft 365 的云服务路线图
 
 若要获得 Microsoft 365 for enterprise 的创造力、团队合作和工作效率优势，请部署最适合您组织需求的云服务。
 
-如果您有现有的基于服务器的 Exchange、SharePoint 或 Skype for Business 部署，请参阅 [客户端和服务器软件路线图](client-server-software-roadmap-microsoft-365.md) ，将整个组织迁移到适用于企业的 Microsoft 365。 本指南包括 Microsoft Office 客户端产品、本地 Office Server 产品和基于 Microsoft Windows 的设备。
+如果你有基于服务器的 Exchange、SharePoint 或 Skype for business 部署，并且想要将整个组织迁移到适用于企业的 Microsoft 365，请参阅 [客户端和服务器软件路线图](client-server-software-roadmap-microsoft-365.md)。 本指南包括 Microsoft Office 客户端产品、本地 Office Server 产品和基于 Microsoft Windows 的 &ndash; 设备。
 
 ## <a name="deploy"></a>部署
 
@@ -56,12 +56,12 @@ ms.locfileid: "47315761"
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何为 Microsoft 365 提供云服务
 
-若要了解 Microsoft 的 IT 部门如何部署或正在管理 Microsoft 365 云服务，请执行以下操作：
+有关 Microsoft IT 如何部署或正在管理 Microsoft 365 云服务的信息，请执行以下操作：
 
-1. 转到 [MICROSOFT IT 展示](https://www.microsoft.com/itshowcase)。
+1. 转到 " [MICROSOFT IT" 展示](https://www.microsoft.com/itshowcase)。
 2. 选择 " **搜索内容**"。
-3. 在**精简结果**中，选择 "**访问群体**" 下的 " **IT 专业人员**"，并在 "**产品**" 下选择你感兴趣的云服务
+3. 在 "**优化结果**" 下，选择 "**访问群体**" 下的**IT 专业人员**，然后在 "**产品**" 下选择云服务。
 
 ## <a name="next-step"></a>后续步骤
 
-开始实施云服务， [准备就绪](configure-services-and-applications.md)。
+启动云服务实现。 有关指南，请参阅 [配置 Microsoft 365 企业服务和应用程序](configure-services-and-applications.md)。
