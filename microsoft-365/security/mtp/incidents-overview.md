@@ -1,5 +1,5 @@
 ---
-title: 调查 Microsoft 威胁防护中的事件
+title: Microsoft 威胁防护中的事件概述
 description: 调查在设备、用户和邮箱中看到的事件。
 keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -19,37 +19,37 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235111"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649933"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="f40f8-104">Microsoft 威胁防护中的事件概述</span><span class="sxs-lookup"><span data-stu-id="f40f8-104">Incidents overview in Microsoft Threat Protection</span></span>
+# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="bf1c4-104">Microsoft 威胁防护中的事件概述</span><span class="sxs-lookup"><span data-stu-id="bf1c4-104">Incidents overview in Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="f40f8-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="f40f8-105">**Applies to:**</span></span>
-- <span data-ttu-id="f40f8-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="f40f8-106">Microsoft Threat Protection</span></span>
-
-
-
-<span data-ttu-id="f40f8-107">所有事件的基础是警报。</span><span class="sxs-lookup"><span data-stu-id="f40f8-107">The basis of all incidents are alerts.</span></span> <span data-ttu-id="f40f8-108">当网络中出现恶意事件或活动时，将创建警报。</span><span class="sxs-lookup"><span data-stu-id="f40f8-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="f40f8-109">各个警报提供有关各个事件或实体的最新情况的有价值线索。</span><span class="sxs-lookup"><span data-stu-id="f40f8-109">Individual alerts provide valuable clues in what's happening on individual events or entities.</span></span> <span data-ttu-id="f40f8-110">但是，攻击通常使用各种攻击媒介来发动入侵。</span><span class="sxs-lookup"><span data-stu-id="f40f8-110">However, attacks typically employ various attack vectors to carry out a breach.</span></span> <span data-ttu-id="f40f8-111">将各个线索结合在一起可能是一项艰巨且耗时的任务。</span><span class="sxs-lookup"><span data-stu-id="f40f8-111">Piecing individual clues together can be a challenging and time-consuming task.</span></span> 
-
-<span data-ttu-id="f40f8-112">Microsoft 威胁防护连接各个警报上的信号点。</span><span class="sxs-lookup"><span data-stu-id="f40f8-112">Microsoft Threat Protection connects the dots on individual alerts.</span></span> <span data-ttu-id="f40f8-113">Microsoft 365 安全中心显示了有关以下实体的恶意事件：</span><span class="sxs-lookup"><span data-stu-id="f40f8-113">Malicious events on the following entities are surfaced in the Microsoft 365 security center:</span></span>
-- <span data-ttu-id="f40f8-114">设备</span><span class="sxs-lookup"><span data-stu-id="f40f8-114">Devices</span></span>
-- <span data-ttu-id="f40f8-115">用户</span><span class="sxs-lookup"><span data-stu-id="f40f8-115">Users</span></span>
-- <span data-ttu-id="f40f8-116">邮箱</span><span class="sxs-lookup"><span data-stu-id="f40f8-116">Mailboxes</span></span>
-
-<span data-ttu-id="f40f8-117">显示属于更大攻击的特征的可疑事件将聚合到事件中。</span><span class="sxs-lookup"><span data-stu-id="f40f8-117">Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident.</span></span> 
-
-<span data-ttu-id="f40f8-118">你将确切了解攻击的开始位置和其他详细信息，以帮助你确定攻击程度。</span><span class="sxs-lookup"><span data-stu-id="f40f8-118">You'll know exactly where an attack started and other details to help you see the extent of the attack.</span></span>
-
-<span data-ttu-id="f40f8-119">该平台为安全防护程序提供适当的视觉对象和数据表示形式，以了解并解决复杂的跨实体威胁。</span><span class="sxs-lookup"><span data-stu-id="f40f8-119">The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats.</span></span> 
-
-<span data-ttu-id="f40f8-120">你不仅可以查看攻击的范围，还可以访问允许你执行战术性步骤来包含事件服务。</span><span class="sxs-lookup"><span data-stu-id="f40f8-120">Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.</span></span>
+<span data-ttu-id="bf1c4-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="bf1c4-105">**Applies to:**</span></span>
+- <span data-ttu-id="bf1c4-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="bf1c4-106">Microsoft Threat Protection</span></span>
 
 
-## <a name="related-topics"></a><span data-ttu-id="f40f8-121">相关主题</span><span class="sxs-lookup"><span data-stu-id="f40f8-121">Related topics</span></span>
-- [<span data-ttu-id="f40f8-122">确定事件优先级</span><span class="sxs-lookup"><span data-stu-id="f40f8-122">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="f40f8-123">调查事件</span><span class="sxs-lookup"><span data-stu-id="f40f8-123">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="f40f8-124">管理事件</span><span class="sxs-lookup"><span data-stu-id="f40f8-124">Manage incidents</span></span>](manage-incidents.md)
+
+<span data-ttu-id="bf1c4-107">所有事件的基础是警报。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-107">The basis of all incidents are alerts.</span></span> <span data-ttu-id="bf1c4-108">当网络中出现恶意事件或活动时，将创建警报。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="bf1c4-109">各个警报提供有关各个事件或实体的最新情况的有价值线索。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-109">Individual alerts provide valuable clues in what's happening on individual events or entities.</span></span> <span data-ttu-id="bf1c4-110">但是，攻击通常使用各种攻击媒介来发动入侵。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-110">However, attacks typically employ various attack vectors to carry out a breach.</span></span> <span data-ttu-id="bf1c4-111">将各个线索结合在一起可能是一项艰巨且耗时的任务。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-111">Piecing individual clues together can be a challenging and time-consuming task.</span></span> 
+
+<span data-ttu-id="bf1c4-112">Microsoft 威胁防护连接各个警报上的信号点。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-112">Microsoft Threat Protection connects the dots on individual alerts.</span></span> <span data-ttu-id="bf1c4-113">Microsoft 365 安全中心显示了有关以下实体的恶意事件：</span><span class="sxs-lookup"><span data-stu-id="bf1c4-113">Malicious events on the following entities are surfaced in the Microsoft 365 security center:</span></span>
+- <span data-ttu-id="bf1c4-114">设备</span><span class="sxs-lookup"><span data-stu-id="bf1c4-114">Devices</span></span>
+- <span data-ttu-id="bf1c4-115">用户</span><span class="sxs-lookup"><span data-stu-id="bf1c4-115">Users</span></span>
+- <span data-ttu-id="bf1c4-116">邮箱</span><span class="sxs-lookup"><span data-stu-id="bf1c4-116">Mailboxes</span></span>
+
+<span data-ttu-id="bf1c4-117">显示属于更大攻击的特征的可疑事件将聚合到事件中。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-117">Suspicious events that show characteristics of being part of a larger attack are aggregated into an incident.</span></span> 
+
+<span data-ttu-id="bf1c4-118">你将确切了解攻击的开始位置和其他详细信息，以帮助你确定攻击程度。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-118">You'll know exactly where an attack started and other details to help you see the extent of the attack.</span></span>
+
+<span data-ttu-id="bf1c4-119">该平台为安全防护程序提供适当的视觉对象和数据表示形式，以了解并解决复杂的跨实体威胁。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-119">The platform provides security defenders with the right visuals and data representations to understand and address complex cross-entity threats.</span></span> 
+
+<span data-ttu-id="bf1c4-120">你不仅可以查看攻击的范围，还可以访问允许你执行战术性步骤来包含事件服务。</span><span class="sxs-lookup"><span data-stu-id="bf1c4-120">Not only will you have visibility on the scope of an attack, but you'll also have access to services that will allow you to take tactical steps to contain an incident.</span></span>
+
+
+## <a name="related-topics"></a><span data-ttu-id="bf1c4-121">相关主题</span><span class="sxs-lookup"><span data-stu-id="bf1c4-121">Related topics</span></span>
+- [<span data-ttu-id="bf1c4-122">确定事件优先级</span><span class="sxs-lookup"><span data-stu-id="bf1c4-122">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="bf1c4-123">调查事件</span><span class="sxs-lookup"><span data-stu-id="bf1c4-123">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="bf1c4-124">管理事件</span><span class="sxs-lookup"><span data-stu-id="bf1c4-124">Manage incidents</span></span>](manage-incidents.md)
