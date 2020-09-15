@@ -32,7 +32,7 @@
     - name: 获取预订应用程序
       href: get-bookings-app.md
     - name: Microsoft 团队中的预订应用和虚拟访问
-      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+      href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
     - name: 比较图表-web 应用程序与团队应用程序
       href: comparison-chart.md
     - name: 删除预定日历

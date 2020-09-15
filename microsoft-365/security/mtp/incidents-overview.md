@@ -1,5 +1,5 @@
 ---
-title: 调查 Microsoft 威胁防护中的事件
+title: Microsoft 威胁防护中的事件概述
 description: 调查在设备、用户和邮箱中看到的事件。
 keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235111"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649933"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的事件概述
 

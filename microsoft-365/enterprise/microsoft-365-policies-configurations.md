@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546638"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651140"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
-本系列文章介绍了如何通过实施建议的环境和配置（包括一组规定的条件访问策略和相关功能）来配置对云服务的安全访问（通过 Microsoft 365 企业版产品）。 您可以使用本指南来保护对与 azure ad 应用程序代理发布的 Microsoft 365 服务、其他 SaaS 服务和本地应用程序集成的所有服务的访问，这些服务与 azure Active Directory (Azure AD) （包括 Microsoft 服务、其他 SaaS 服务和本地应用程序）。
+贵组织的新式安全外围设备现已扩展到你的网络之外，以包括从各种设备从任意位置访问基于云的应用的用户。 您的安全基础结构需要确定是否应授予给定的访问请求，以及在何种情况下。 
 
-这些建议：
+此决定应基于用户帐户登录、正在使用的设备、用户尝试访问的应用程序、发出访问请求的位置，以及对请求风险的评估情况。 此功能有助于确保只有经批准的用户和设备才能访问你的关键资源。
 
-- 与 [Microsoft 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 和 [Azure AD 中的标识分数](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)一致，并将增加贵组织的这些分数
-- 将帮助您实施以下 [五个步骤来保护您的身份基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
+本系列文章介绍了一组标识和设备访问的先决条件配置，以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，以安全访问 Microsoft 365 for 企业云应用和服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序。
+
+在三层中，建议使用标识和设备访问设置和策略：对具有高度管控或保密数据的环境的基准保护、敏感保护和保护。 这些层及其相应的配置在数据、标识和设备中提供了一致的保护级别。
+
+这些功能及其建议：
+
+- 在 Microsoft 365 E3 和 Microsoft 365 E5 中受支持。
+- 与 [Microsoft 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 和 [Azure AD 中的标识分数](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)一致，并将增加贵组织的这些分数。
+- 将帮助您实施以下 [五个步骤来保护您的身份基础结构](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 如果您的组织具有独特的环境要求或复杂性，请使用这些建议作为起点。 但是，大多数组织都可以按规定实现这些建议。
 
 >[!Note]
->Microsoft 还为 Office 365 订阅销售企业移动性 + 安全性 (EMS) 许可证。 EMS E3 和 EMS E5 功能大致等同于 Microsoft 365 E3 和 Microsoft 365 E5 中的那些功能。 有关详细信息，请参阅 [EMS 计划](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
+>Microsoft 还为 Office 365 订阅销售企业移动性 + 安全性 (EMS) 许可证。 EMS E3 和 EMS E5 功能与 Microsoft 365 E3 和 Microsoft 365 E5 中的功能等效。 有关详细信息，请参阅 [EMS 计划](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
 >
 
 ## <a name="intended-audience"></a>目标受众

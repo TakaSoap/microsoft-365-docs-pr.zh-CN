@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798230"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649945"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
@@ -57,6 +57,7 @@ Microsoft 威胁防护服务不断更新，以提供新的功能增强功能和�
 ## <a name="preview-features"></a>预览功能
 目前，预览中提供了以下功能和增强功能：
 
+- **[Microsoft 威胁防护 api](api-overview.md)** -Lop-exo 级 Microsoft 威胁防护 api 使您能够自动化基于共享事件和高级搜寻表的工作流。 
 - **[高级搜索中的 IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md)** -查找涉及到内部部署域控制器的事件，该事件运行 Active DIRECTORY (AD) 。 此表涵盖了与标识相关的事件的范围以及域控制器上的系统事件。
 - **[AssignedIPAddresses ( # A1 函数](advanced-hunting-assignedipaddresses-function.md)** —在高级搜寻中使用此函数可快速获取从指定时间点分配给设备或最近的 ip 地址的最新 ip 地址。
 - **[在高级搜索中执行操作](advanced-hunting-take-action.md)** -快速包含威胁或在 [高级](advanced-hunting-overview.md)搜索中找到的已泄露资产的地址。

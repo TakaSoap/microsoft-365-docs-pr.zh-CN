@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: da0fd99aaa533c6e4f65b5b279adcd9a4b648c9c
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: ad2f34fbb94cafd22976c6ff7c75cdd254e913e3
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049623"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47650089"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-environment"></a>准备你的 Microsoft 威胁防护试用实验室环境
 
@@ -35,12 +35,12 @@ ms.locfileid: "44049623"
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
         <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="准备你的 Microsoft 威胁防护试用实验室环境" />
-      <br/>第1阶段：准备</a><br>
+      <br/>第1阶段：准备 </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="设置你的 Microsoft 威胁防护试用实验室环境" />
-      <br/>阶段2：安装程序</a><br>
+      <br/>阶段2：安装程序 </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
@@ -67,7 +67,7 @@ ms.locfileid: "44049623"
 准备工作是任何成功部署的关键。 本部分将指导您在准备为 Microsoft 威胁防护部署创建试用实验室环境时需要考虑的事项。
 
 ## <a name="prerequisites"></a>先决条件
-了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。 请参阅[Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide)、 [microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [OFFICE 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Azure atp](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft 云应用安全性](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)的最低要求。
+了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。 请参阅 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide)、 [microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [OFFICE 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Azure atp](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft 云应用安全性](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)的最低要求。
 
 ## <a name="stakeholders-and-sign-off"></a>利益干系人和签署
 以下部分用于确定项目中涉及的所有利益干系人，以及可能需要签署、审阅或及时通知的所有利益干系人，即使是对模拟的评估或概念证明，也是如此。
@@ -83,10 +83,10 @@ ms.locfileid: "44049623"
 
 -   I = 此项目的通知
 
-| 名称                 | 角色                                                                                                                                                                                                          | Action |
+| 名称                 | Role                                                                                                                                                                                                          | 操作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
-| 输入名称和电子邮件 | **首席信息安全监察官（CISO）** 在*新技术部署的组织中充当承办人的执行代表。*                                                  | 就     |
-| 输入名称和电子邮件 | **网络防护运营中心（CDOC）** 由*CDOC 团队负责定义如何将此更改与客户安全操作团队中的过程相一致。*       | 就     |
+| 输入名称和电子邮件 | **首席信息安全专员 (CISO) ** *作为新技术部署的组织中充当承办人的执行者。*                                                  | 就     |
+| 输入名称和电子邮件 | "**网络防护运营中心" (CDOC) ** *来自 CDOC 团队的代表，负责定义如何将此更改与客户安全操作团队中的过程相一致。*       | 就     |
 | 输入名称和电子邮件 | **安全***团队中的一名代表，负责定义如何将此更改与组织中的核心安全体系结构保持一致。*                         | R      |
 | 输入名称和电子邮件 | **工作场所架构师***由 IT 团队负责定义此更改与组织中的核心工作区体系结构的对齐方式。*                             | R      |
 | 输入名称和电子邮件 | **安全分析员***来自 CDOC 团队的代表，可以通过安全操作的角度提供对此更改的检测功能、用户体验和总体有用性的输入。* | I      |
@@ -94,10 +94,10 @@ ms.locfileid: "44049623"
 ## <a name="prepare-your-azure-active-directory"></a>准备 Azure Active Directory
 如果已启用本地 Active directory 和 Azure Active Directory 之间的同步，请跳过此步骤。 查看 Azure Active Directory 中现有的最佳实践文档。 以下步骤经过优化，可评估 Microsoft 威胁防护。
 
-1. 请转到[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade)门户 > **azure AD Connect**。 
+1. 请转到 [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) 门户 > **azure AD Connect**。 
 ![Azure Active Directory 门户页面的图像](../../media/mtp-eval-1.png) <br> 
 
-2. 单击 **"** 从**Microsoft Azure Active Directory 连接**"，并将其传输到域控制器。
+2. 单击 **"** 从 **Microsoft Azure Active Directory 连接** "，并将其传输到域控制器。
 ![Azure Active Directoru Connect 下载页面的图像](../../media/mtp-eval-2.png) <br>
 
 3. 在域控制器上，按照 Azure Active Directory 连接向导。 阅读许可条款和隐私声明，如果同意，请选中此复选框。 单击"继续"。
@@ -112,13 +112,13 @@ ms.locfileid: "44049623"
 6. 输入你的 Active Directory 域服务企业管理员凭据。 单击“**下一步**”。
 ![应在其中输入凭据的 "连接到 AD DS" 页的图像](../../media/mtp-eval-6.png) <br>
 
-7. 单击 "**安装**" 以确认配置。
+7. 单击 " **安装** " 以确认配置。
 ![配置确认页的图像](../../media/mtp-eval-7.png) <br>
 
 8. 恭喜，你已成功配置 Azure Active Directory Connect。
 ![成功配置的 Azure Active Directory Connect 页面的图像](../../media/mtp-eval-8.png) <br>
 
-您现在可以[向 Active Directory 中添加用户和组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate)，并[配置 SAM-R 策略](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc)。  
+您现在可以 [向 Active Directory 中添加用户和组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) ，并 [配置 SAM-R 策略](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc)。  
 
 
 ## <a name="configuration-order"></a>配置顺序
@@ -126,13 +126,11 @@ ms.locfileid: "44049623"
 
 | 组件                               | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 配置顺序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接（Url）和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                   |
-|Azure 高级威胁防护|Azure ATP 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。 <br> [了解详细信息](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 双面 |
-|Microsoft 云应用安全| Microsoft 云应用安全是在多个云上运行的云访问安全代理（CASB）。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |第三章                   |
+| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                    |
+|Azure 高级威胁防护|Azure ATP 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。 <br> [了解详细信息](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
+|Microsoft Cloud App Security| Microsoft 云应用安全是一个云访问安全代理 (CASB) ，可在多个云上运行。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |Microsoft Defender 高级威胁防护 | Microsoft Defender ATP 终结点检测和响应功能提供了准实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>后续步骤
-|||
-|:-------|:-----|
-|![阶段2：安装程序](../../media/setup.png) <br>[阶段2：安装程序](setup-mtpeval.md) | 设置你的 Microsoft 威胁防护试用实验室环境
+![阶段2：安装程序](../../media/setup.png) <br>[阶段2：安装程序](setup-mtpeval.md)<br> 设置你的 Microsoft 威胁防护试用实验室环境
 

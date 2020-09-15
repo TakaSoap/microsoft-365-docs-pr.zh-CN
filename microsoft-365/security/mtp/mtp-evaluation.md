@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049635"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649957"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>创建 Microsoft 威胁防护试用实验室环境 
 
@@ -31,7 +31,7 @@ ms.locfileid: "44049635"
 
 创建此试用版环境的目的是演示 Microsoft 威胁防护在您的组织中可使用的检测、预防、调查和响应的全面、集成和智能功能。 
 
-本指南将指导你完成基于建议的部署路径启动 Microsoft 威胁防护评估的步骤。 目标是帮助您在实验室环境中设置集成 Microsoft 威胁保护服务，或在向组织中的安全解决方案决策制定者提供时作为概念证明（POC）。 当您完成攻击模拟、自动调查和响应并对结果感到满意时，您可以在您的组织中 Microsoft 技术销售专业人员或专家的帮助下，将其部署到生产环境中。 
+本指南将指导你完成基于建议的部署路径启动 Microsoft 威胁防护评估的步骤。 目标是帮助您在实验室环境中设置集成 Microsoft 威胁防护服务，或在向组织中的安全解决方案决策制定者提供 (POC) 的概念证明。 当您完成攻击模拟、自动调查和响应并对结果感到满意时，您可以在您的组织中 Microsoft 技术销售专业人员或专家的帮助下，将其部署到生产环境中。 
 
 本指南将帮助您：
 - 设置实验室服务器和计算机
@@ -48,7 +48,7 @@ ms.locfileid: "44049635"
 
 创建 Microsoft 威胁防护试用实验室环境并部署它时有三个阶段：
 
-|阶段 | 说明 | 
+|阶段 | 描述 | 
 |:-------|:-----|
 | ![第1阶段：准备](../../media/prepare.png)<br>[第1阶段：准备](prepare-mtpeval.md)| 了解在试用实验室环境中部署 Microsoft 威胁防护时需要考虑的事项： <br><br>-利益干系人和签署 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序
 |  ![阶段2：安装程序](../../media/setup.png) <br>[阶段2：安装程序](setup-mtpeval.md)|  执行访问 Microsoft 365 安全中心的初始步骤，以设置 Microsoft 威胁防护试用实验室环境。 系统将指导您执行以下操作：<br><br>-注册 Microsoft 365 E5 试用版 <br>  -配置域<br>-分配 Microsoft 365 E5 许可证<br>-完成门户中的安装向导|
@@ -67,7 +67,7 @@ ms.locfileid: "44049635"
 -   根据最佳实践配置所有 Microsoft 威胁防护支柱
     -   Office 365 高级威胁防护
     -   Azure 高级威胁防护
-    -   Microsoft 云应用安全
+    -   Microsoft Cloud App Security
     -   Microsoft Defender 高级威胁防护
 
 ## <a name="out-of-scope"></a>超出范围
@@ -78,6 +78,5 @@ ms.locfileid: "44049635"
 -   生产环境中的渗透测试
 
 ## <a name="next-step"></a>后续步骤
-|||
-|:-------|:-----|
-|![第1阶段：准备](../../media/prepare.png) <br>[第1阶段：准备](prepare-mtpeval.md) | 准备 Microsoft 威胁防护评估实验室环境
+![第1阶段：准备](../../media/prepare.png) <br>[第1阶段：准备](prepare-mtpeval.md) 
+<br> 准备 Microsoft 威胁防护评估实验室环境
