@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美国政府云中的管理员可以设置数据连接器，以将员工数据从组织的人力资源 (HR) 系统导入 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289813"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817162"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>设置连接器以在美国政府版中导入 HR 数据 (preview) 
 
@@ -65,11 +65,11 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 |**列名称**|**说明**|
 |:-----|:-----|
 | **EmailAddress** <br/> |指定已终止的雇员的电子邮件地址。|
-| **TerminationDate** <br/> |指定在您的组织中正式终止此人的雇佣的日期。 例如，这可能是员工在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-|**LastWorkingDate**|指定终止的员工的最后一天的工作。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **TerminationDate** <br/> |指定在您的组织中正式终止此人的雇佣的日期。 例如，这可能是员工在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
+|**LastWorkingDate**|指定终止的员工的最后一天的工作。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
 |||
 
-创建具有所需 HR 数据的 CSV 文件后，将其存储在与步骤4中运行的脚本相同的系统上。 您还应实现更新策略，以确保 CSV 文件始终包含最新信息，以便您运行脚本的任何操作都将上传到 Microsoft 云中的最新员工终止数据。
+创建具有所需 HR 数据的 CSV 文件后，将其存储在与步骤4中运行的脚本相同的系统上。 请务必实施更新策略，以便 CSV 文件始终包含最新信息。 这样做可确保在运行脚本的情况下，将最新的员工终止数据上载到 Microsoft 云。
 
 ## <a name="step-3-create-the-hr-connector"></a>步骤3：创建 HR 连接器
 
@@ -101,7 +101,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
    
    b. **指向示例脚本的链接。** 单击 **此处** 链接转到 GitHub 站点以访问示例脚本 (链接将) 中打开新的窗口。 保持此窗口处于打开状态，以便您可以在第4步中复制脚本。 或者，您可以为目标添加书签或复制 URL，以便您可以在第4步中再次访问它。 此链接在 "连接线" 弹出页面上也可用。
 
-7. 单击“**完成**”。
+7. 单击“完成”****。
 
    新的连接器将显示在 " **连接器** " 选项卡上的列表中。 
 
@@ -139,11 +139,11 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    |**参数**|**说明**
    |:-----|:-----|:-----|
-   |`tenantId`|这是您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏中获取组织的租户 Id。 这用于标识你的组织。|
-   |`appId` |这是您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 |
-   |`appSecret`|这是您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序密码。 这也用于身份验证。|
-   |`jobId`|这是您在步骤3中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
-   |`csvFilePath`|这是 CSV 文件 (与您在步骤2中创建的脚本) 存储在同一系统上的文件路径。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
+   |`tenantId`|您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏中获取组织的租户 Id。 这用于标识你的组织。|
+   |`appId` |您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 |
+   |`appSecret`|您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序密码。 这也用于身份验证。|
+   |`jobId`|您在步骤3中创建的 HR 连接器的作业 ID。 这用于将上载到 Microsoft 云的 HR 数据与 HR 连接器相关联。|
+   |`csvFilePath`|CSV 文件的文件路径 (与您在步骤2中创建的脚本) 存储在同一系统上。 请尝试避免在文件路径中包含空格;否则，请使用单引号。|
    |||
    
    下面的示例展示了使用每个参数的实际值的 HR 连接器脚本的语法：

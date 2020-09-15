@@ -1,7 +1,7 @@
 ---
-title: 设置你的 Microsoft 威胁防护试用实验室环境
+title: 设置你的 Microsoft 威胁防护试用实验室或试点环境
 description: 访问 Microsoft 365 安全中心，然后设置你的 Microsoft 威胁防护试用实验室环境
-keywords: Microsoft 威胁防护试用版安装程序，请尝试 Microsoft 威胁防护，Microsoft 威胁防护评估实验室安装程序
+keywords: Microsoft 威胁防护试用版设置，Microsoft 威胁防护试点设置，尝试 Microsoft 威胁防护，Microsoft 威胁 Protection 评估实验室安装程序
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 69a883263952b7c20225659ae023399e0242606d
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650065"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817177"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>设置你的 Microsoft 威胁防护试用实验室环境 
 
@@ -28,26 +28,26 @@ ms.locfileid: "47650065"
 - Microsoft 威胁防护 
 
 
-创建 Microsoft 威胁 Protection 试用实验室环境并部署它的过程分为三个阶段：
+创建 Microsoft 威胁防护试用实验室或试点环境并对其进行部署的过程分为三个阶段：
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="准备 Microsoft 威胁防护评估实验室" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="准备 Microsoft 威胁防护评估实验室或试点环境" />
       <br/>第1阶段：准备 </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="设置你的 Microsoft 威胁防护评估实验室" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="设置你的 Microsoft 威胁防护试用实验室或试点环境" />
       <br/>阶段2：安装程序 </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
-为 Microsoft 威胁防护试用实验室环境配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起" />
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
+为 Microsoft 威胁防护试用实验室或试点环境配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起" />
       <br/>第3阶段： Configure & 板载 </a><br>
 </td>
 
@@ -55,12 +55,12 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
   </tr>
 </table>
 
-你当前处于 "设置" 阶段。 执行最初的步骤来访问 Microsoft 365 安全中心，然后设置你的试用实验室环境。
+你当前正在设置阶段。 执行最初的步骤来访问 Microsoft 365 安全中心，然后设置试用版实验室或试点环境。
 
 注册 Office 365 或 Azure Active Directory 订阅，以生成可用于注册 Microsoft 365 E5 许可证的 *onmicrosoft.com* 租户。 
 
 >[!NOTE]
->如果已有 Office 365 或 Azure Active Directory 订阅，则可以跳过 Office 365 E5 试用版租户创建步骤。
+>如果已有 Office 365 或 Azure Active Directory 订阅，则可以跳过 Office 365 E5 试用版或试点租户创建步骤。
 
 在此阶段中，将指导您执行以下操作：
 - 创建 Office 365 E5 试用租户
@@ -77,7 +77,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 2. 通过输入您的电子邮件地址 (个人或公司) 完成试用注册。 单击 " **设置帐户**"。
 ![Image of_Office 365 E5 试用注册设置页](../../media/mtp-eval-10.png) <br> 
 
-3. 填写你的名字、姓氏、商务电话号码、公司名称、公司规模和国家或地区。  
+3. 填写你的名字、姓氏、商务电话号码、公司名称、公司规模以及国家或地区。  
 <br>![Image of_Office 365 E5 试用注册设置页面，要求输入姓名、电话和公司详细信息](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >您在此处设置的国家或地区决定了您的 Office 365 将托管的数据中心区域。
@@ -88,7 +88,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 5. 为租户设置自定义域名称，然后单击 " **下一步**"。
 <br>![Image of_Office 365 E5 试用注册安装程序页，您可以在其中设置自定义域名](../../media/mtp-eval-13.png) <br>
  
-6. 设置将成为租户的全局管理员的第一个标识。 填写 " **名称** " 和 " **密码**"。 单击 " **注册**"。
+6. 设置第一个标识，这将成为租户的全局管理员。 填写 " **名称** " 和 " **密码**"。 单击 " **注册**"。
 ![Image of_Office 365 E5 试用注册设置页，可在其中设置你的业务标识](../../media/mtp-eval-14.png) <br>
 
 7. 单击 " **转到设置** " 以完成 Office 365 E5 试用租户设置。
@@ -97,7 +97,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 8. 将企业域连接到 Office 365 租户。 Optional选择 " **连接您已拥有的域** "，并键入您的域名。 单击“**下一步**”。
 <br>![Image of_Office 365 E5 设置页面，您应在其中对登录和电子邮件进行个性化设置](../../media/mtp-eval-16.png) <br>
  
-9. 您将需要添加 TXT 或 MX 记录以验证域所有权。 将 TXT 或 MX 记录添加到域后，选择 " **验证**"。
+9. 添加 TXT 或 MX 记录以验证域所有权。 将 TXT 或 MX 记录添加到域后，选择 " **验证**"。
 <br>![Image of_Office 365 E5 安装程序页，您应在其中添加 TXT 条 MX 记录以验证您的域](../../media/mtp-eval-17.png) <br>
  
 10. Optional为你的租户创建更多用户帐户。 您可以通过单击 " **下一步**" 跳过此步骤。
@@ -137,7 +137,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 5. 单击 " **立即试用** " 以确认你的 Microsoft 365 E5 试用版。
 <br>![Image of_Microsoft 365 E5 开始免费试用页面，应在此处时钟 "立即试用" 按钮开始](../../media/mtp-eval-27.png) <br>
  
-6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 " **管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为 **Microsoft 365 e5**。 单击“**保存**”。
+6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 " **管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为 **Microsoft 365 e5**。 单击“保存”****。
 ![Image of_Microsoft 365 管理中心 "页面，您可以在其中选择 Microsoft 365 E5 许可证](../../media/mtp-eval-28.png) <br>
  
 7. 再次选择全局管理员帐户，然后单击 " **管理用户名**"。
@@ -149,4 +149,4 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
 
 ## <a name="next-step"></a>后续步骤
-![第3阶段： Configure & 板载](../../media/config-onboard.png) <br>[第3阶段： Configure & 板载](config-mtpeval.md) <br>为 Microsoft 威胁防护评估实验室配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起。
+![第3阶段： Configure & 板载](../../media/config-onboard.png) <br>[第3阶段： Configure & 板载](config-mtpeval.md) <br>为 Microsoft 威胁防护试用实验室或试点环境配置每个 Microsoft 威胁防护支柱，并将终结点集成在一起。

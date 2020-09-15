@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: 9df6bd1918ec8f4c3b5f55d864468d17be31b119
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334845"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775097"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -33,18 +33,18 @@ ms.locfileid: "47334845"
 
 ### <a name="format"></a>Format
 
-9 个数字，可以是格式化模式，也可以是非格式化模式 
+9个数字，可以是格式化或无格式的模式
 
 ### <a name="pattern"></a>模式
 
 格式
-- 四个数字，以 0、 1、 2、 3、 6、 7 或 8 开头
-- 一个连字符
-- 四个数字
-- 一个连字符
+- 以0、1、2、3、6、7或8开头的四个数字
+- 连字符
+- 四位数
+- 连字符
 - 一个数字
 
-无格式：9个连续的数字，以0、1、2、3、6、7或8开头 
+未格式化：以0、1、2、3、6、7或8开头的九个连续数字 
 
 ### <a name="checksum"></a>校验和
 
@@ -69,7 +69,7 @@ ms.locfileid: "47334845"
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_aba_routing"></a>Keyword_ABA_Routing
+#### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
 - aba
 - aba #
@@ -98,10 +98,10 @@ ms.locfileid: "47334845"
 ### <a name="pattern"></a>模式
 
 八个数字：
-- 两个数字
-- 一个点 
-- 三个数字 
-- 一个点 
+- 两位数
+- 一个句点
+- 三个数字
+- 一个句点
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -142,15 +142,16 @@ ms.locfileid: "47334845"
 
 ### <a name="format"></a>Format
 
-6-10 个数字，带或不带 BSB 号码 
+具有或不具有银行状态分支号码的6到 twn 位数字
 
 ### <a name="pattern"></a>模式
 
-帐号为 6-10 个数字。
+帐号是6到10位数字。
+
 澳大利亚银行州级分部编号：
-- 三位数字 
+- 三个数字 
 - 连字符 
-- 三位数字
+- 三个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -200,7 +201,115 @@ ms.locfileid: "47334845"
 - full names
 - iaea
 
-   
+## <a name="australia-business-number"></a>澳大利亚商业电话号码
+
+### <a name="format"></a>Format
+
+11个带可选分隔符的数字
+
+### <a name="pattern"></a>模式
+
+11个带可选分隔符的数字：
+
+- 两位数
+- 一个选项连字符或空格
+- 三个数字
+- 一个选项连字符或空格
+- 三个数字
+- 一个选项连字符或空格
+- 三个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_australian_business_number 找到与该模式匹配的内容。
+- 找到 Keywords_australian_business_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_australian_business_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Australia Business Number -->
+      <Entity id="76e83b3b-01ee-4530-aced-e667a6609f49" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_australian_business_number" />
+          <Match idRef="Keywords_australian_business_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_australian_business_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
+
+- 澳大利亚公司编号
+- 业务号码
+- abn#
+- businessid#
+- 业务 id
+- abn
+- businessno#
+
+## <a name="australia-company-number"></a>澳大利亚公司编号
+
+### <a name="format"></a>Format
+
+9个带分隔符的数字
+
+### <a name="pattern"></a>模式
+
+九位数带分隔符：
+
+- 三个数字
+- 一个空格
+- 三个数字
+- 一个空格
+- 三个数字
+
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_Australian_Company_Number 找到与该模式匹配的内容。
+- 找到 Keyword_Australian_Company_Number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_Australian_Company_Number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Australia Company Number -->
+      <Entity id="b1fba4f7-7b3e-4bb9-8f9a-9366df604dbb" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+          <Match idRef="Keyword_Australian_Company_Number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_Australian_Company_Number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
+
+- 即可
+- 澳大利亚公司编号
+- 澳大利亚公司编号#
+- 澳大利亚公司编号
+- 澳大利亚公司编号
+- 澳大利亚公司编号#
+- 澳大利亚公司编号
+
 ## <a name="australia-drivers-license-number"></a>澳大利亚驾驶执照号码
 
 ### <a name="format"></a>Format
@@ -211,18 +320,18 @@ ms.locfileid: "47334845"
 
 九个字母和数字： 
 
-- 两位数字或字母（不区分大小写） 
-- 两位数字 
-- 五位数字或字母（不区分大小写）
+- 两个数字或字母 (不区分大小写)  
+- 两位数 
+- 五个数字或字母 (不区分大小写) 
 
 OR
 
-- 1-2 个可选字母（不区分大小写）  
-- 4-9 位数字
+- 一到两个可选字母 (不区分大小写)  
+- 4到9个数字
 
 OR
 
-- 九个数字或字母（不区分大小写）
+- 9个数字或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -361,10 +470,10 @@ OR
 ### <a name="pattern"></a>模式
 
 10-11 个数字：
-- 第一个数字范围为 2-6
+- 第一个数字在范围2-6
 - 第九个数字是校验位
-- 第十个数字是问题数字
-- 第十一个数字（可选）是个人号码
+- 第十位数字是问题位数
+- 第十位数字 (可选) 是单个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -478,16 +587,16 @@ OR
 
 ### <a name="format"></a>Format
 
-8-9 个数字
+8到9个数字
 
 ### <a name="pattern"></a>模式
 
-通常 8-9 位数字，显示中包含空格，如下所示：
-- 三位数字 
-- 可选空格 
-- 三位数字 
-- 可选空格 
-- 2-3 位数字，最后一位数字是校验位
+通常显示空格的八到九个数字，如下所示：
+- 三个数字 
+- 一个可选空格 
+- 三个数字 
+- 一个可选空格 
+- 两到三个数字，其中最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -512,7 +621,7 @@ OR
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_australia_tax_file_number"></a>Keyword_Australia_Tax_File_Number
+#### <a name="keyword_australia_tax_file_number"></a>Keyword_australia_tax_file_number
 
 - australian business number
 - marginal tax rate
@@ -533,7 +642,7 @@ OR
   
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -544,7 +653,6 @@ OR
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_austria_eu_driver's_license_number` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_austria_eu_driver's_license_number` 。 
     
 ```xml
@@ -559,7 +667,8 @@ OR
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_austria_eu_driver "s_license_number**
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver "s_license_number
+
 - 通讯#
 - driver license
 - 驱动程序许可证编号
@@ -599,7 +708,6 @@ OR
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_austria_eu_national_id_card` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_austria_eu_national_id_card` 。 
    
 ```xml
@@ -632,11 +740,9 @@ national id
 
 一个字母、七个数字和一个空格的组合：
   
-- 一个字母（不区分大小写）
-    
+- 一个字母 (不区分大小写) 
 - 一个空格 (可选) 
-    
-- 七个数字
+- 七位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -645,9 +751,7 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_austria_eu_passport_number` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_austria_eu_passport_number` 。 
     
 ```xml
@@ -662,7 +766,8 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_austria_eu_passport_number**
+#### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
+
 - passport number
 - 奥地利护照号码
 - 护照号
@@ -680,7 +785,7 @@ national id
 
 10 个数字：
   
--  与序列号对应的三个数字 
+- 与序列号对应的三个数字 
 - 一个校验位
 - 与出生日期 (DDMMYY) 的6个数字
     
@@ -691,15 +796,11 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数 "Func_austria_eu_
-
-_or_equivalent "找到与该模式匹配的内容。 
-    
+- _or_equivalent "找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_austria_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_austria_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
     
 ```xml
@@ -744,11 +845,11 @@ _or_equivalent "找到与该模式匹配的内容。
 
 9个带可选连字符和正斜线的数字：
   
-- 两位数字
-- 一个连字符（可选）
-- 三位数字
-- 正斜杠（可选）
-- 四位数字
+- 两位数
+- 连字符 (可选) 
+- 三个数字
+- 可选) 的正斜杠 (
+- 四位数
     
 ### <a name="checksum"></a>校验和
 
@@ -757,12 +858,10 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_austria_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_austria_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_austria_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -803,6 +902,73 @@ _or_equivalent "找到与该模式匹配的内容。
 - tin 编号
 - 锡#
 - 税号
+ 
+## <a name="austria-value-added-tax"></a>奥地利增值税
+
+### <a name="format"></a>Format
+
+11个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+11个字符的字母数字模式：
+
+- A 或 a
+- T 或 t
+- 可选空格
+- U 或 u
+- 可选空格
+- 两个或三个数字
+- 可选空格
+- 四位数
+- 可选空格
+- 一个或两个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_Austria_Value_Added_Tax 找到与该模式匹配的内容。
+- 找到 Keyword_Austria_Value_Added_Tax 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_Austria_Value_Added_Tax 找到与该模式匹配的内容。
+
+```xml
+      <!-- Austria Value Added Tax -->
+      <Entity id="b6a3eda2-c56c-4b69-a5f7-dca34db00f48" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+          <Match idRef="Keyword_Austria_Value_Added_Tax" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Austria_Value_Added_Tax" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
+
+- vat 号码
+- vat#
+- 奥地利 vat 号码
+- vat 编号
+- vatno#
+- 增值税号
+- 奥地利 vat
+- mwst
+- umsatzsteuernummer
+- mwstnummer
+- ust.-identifikationsnummer
+- umsatzsteuer-identifikationsnummer
+- vat 标识号
+- atu 编号
+- uid 号
+
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 身份验证密钥
 
@@ -865,16 +1031,16 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 - 字符串 "Server"、"server" 或 "data source"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "cloudapp"。<!--no-hyperlink-->com "，" cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->netmeeting
 - 介于1-300 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "Password"、"password" 或 "pwd"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 一个或多个不是分号的字符 (; ) 、引号 ( ") 或撇号 ( ' ) 
 - 分号 (; ) 、引号 ( ") 或撇号 ( ' ) 
 
@@ -902,7 +1068,7 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -925,16 +1091,16 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 - 字符串 "HostName"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "azure 设备。<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "SharedAccessKey"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 43小写或大写字母、数字、正斜线 (/) 或加号 (+) 的任意组合
 - 等号 (=) 
 
@@ -962,7 +1128,7 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -1013,7 +1179,7 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -1038,9 +1204,9 @@ _or_equivalent "找到与该模式匹配的内容。
 - 字符串 "redis"。<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "password" 或 "pwd"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 43个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
@@ -1068,7 +1234,7 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -1091,9 +1257,9 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 - 字符串 "sig"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 介于43-53 个字符和小写字母、数字或百分号 (% ) 之间的任意组合
 - 字符串 "% 3d"
 - 不是字母或数字的小写字母、数字或百分号 (% ) 的任意字符
@@ -1125,16 +1291,16 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 - 字符串 "EndPoint"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "<!--no-hyperlink-->netmeeting
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "SharedAccessKey"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 43个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
@@ -1162,7 +1328,7 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -1185,14 +1351,14 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 - 字符串 "DefaultEndpointsProtocol"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
 - 字符串 "AccountKey"
-- 0-2 空白字符
+- 零到两个空白字符
 - 等号 (=) 
-- 0-2 空白字符
+- 零到两个空白字符
 - 86个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
@@ -1222,13 +1388,13 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="cep_azureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+#### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
-#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
  (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
 
@@ -1250,10 +1416,9 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="pattern"></a>模式
 
-- 大于符号的 0-1 ( # A0) 、撇号 ( ' ) 、等号 (=) 、引号 ( ") 或数字标记 ( # ) 
+- 0到大于号之一 ( # A0) 、撇号 ( ' ) 、等号 (=) 、引号 ( ") 或数字标记 ( # ) 
 - 86个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
-
 
 ### <a name="checksum"></a>校验和
 
@@ -1277,11 +1442,11 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="format"></a>Format
 
-10个数字，不含空格和分隔符
+10个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10 个数字
+10位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -1290,7 +1455,6 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_belgium_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_belgium_eu_driver's_license_number` 。
     
@@ -1338,10 +1502,10 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 11 个数字加分隔符：
-- 六个数字加两个点，采用格式  YY.MM.DD，代表出生日期   
-- 一个连字符  
-- 三个连续的数字（男性用奇数，女性用偶数）  
-- 一个点  
+- 6个数字和两个句点（以 YY 为格式）。月.DD 出生日期 
+- 连字符 
+- 奇数的三个连续数字 (奇数，即使偶数)  
+- 一个句点 
 - 两个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -1447,7 +1611,6 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_belgium_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_belgium_eu_passport_number` 。
 
@@ -1463,7 +1626,8 @@ _or_equivalent "找到与该模式匹配的内容。
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_belgium_eu_passport_number**
+#### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
+
 - passport number
 - 比利时护照号码
 - 护照号
@@ -1495,7 +1659,6 @@ _or_equivalent "找到与该模式匹配的内容。
 - 找到了中的关键字  `Keywords_belgium_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_belgium_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
     
 ```xml
@@ -1544,11 +1707,11 @@ _or_equivalent "找到与该模式匹配的内容。
 
 11 个数字：
   
-- 两位数字
+- 两位数
 - "0" 或 "1"
-- 一位数字
+- 一位
 - "0" 或 "1" 或 "2" 或 "3" 
-- 六个数字
+- 6位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -1557,7 +1720,6 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_belgium_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_belgium_eu_tax_file_number` 。 
     
@@ -1636,6 +1798,68 @@ _or_equivalent "找到与该模式匹配的内容。
 - 锡#
 
 
+## <a name="belgium-value-added-tax-number"></a>比利时增值税号
+
+### <a name="format"></a>Format
+
+12个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+12个字符的字母数字模式：
+
+- 字母 B 或 b
+- 字母 E 或 E
+- 数字0
+- 一个从1到9的数字
+- 一个可选的点或连字符或空格
+- 四位数
+- 一个可选的点或连字符或空格
+- 四位数
+
+
+### <a name="checksum"></a>校验和
+
+是
+
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_belgium_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_belgium_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_belgium_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Belgium Value Added Tax Number -->
+      <Entity id="85b5b3c3-f2de-4ae8-ac46-fd3cb38bf9ed" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+          <Match idRef="Keywords_belgium_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
+
+- n º tva
+- vat 号码
+- vat 编号
+- numéro。
+- umsatzsteuer-identifikationsnummer
+- umsatzsteuernummer
+- btw
+- btw#
+- vat#
+
+
 ## <a name="brazil-cpf-number"></a>巴西 CPF 号码
 
 ### <a name="format"></a>Format
@@ -1645,12 +1869,12 @@ _or_equivalent "找到与该模式匹配的内容。
 ### <a name="pattern"></a>模式
 
 格式
-- 三个数字 
-- 一个点 
-- 三个数字 
-- 一个点 
-- 三个数字 
-- 一个连字符 
+- 三个数字
+- 一个句点
+- 三个数字
+- 一个句点
+- 三个数字
+- 连字符
 - 两个数字，是校验位
 
 纯
@@ -1697,6 +1921,7 @@ _or_equivalent "找到与该模式匹配的内容。
 - Identificação 
 - Inscrição 
 - Receita 
+
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>巴西法人编号 (CNPJ) 
 
@@ -1705,15 +1930,17 @@ _or_equivalent "找到与该模式匹配的内容。
 14 个数字（包括注册号、分行号码和校验位），再加上分隔符
 
 ### <a name="pattern"></a>模式
+
 14 个数字，再加上分隔符：
-- 两个数字  
-- 一个点  
-- 三个数字  
-- 一个点  
-- 三个数字（前 8 位数是注册号）  
-- 正斜杠  
-- 四位分行号码  
-- 一个连字符  
+
+- 两位数 
+- 一个句点 
+- 三个数字 
+- 一个句点 
+- 三个数字 (这些前八位数字是注册号码)  
+- 一个正斜杠 
+- 四位数的分支号码 
+- 连字符 
 - 两个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -1767,6 +1994,7 @@ _or_equivalent "找到与该模式匹配的内容。
 - Situação cadastral 
 - Inscrição 
 - Empresa 
+
    
 ## <a name="brazil-national-identification-card-rg"></a>巴西国家标识卡 (RG) 
 
@@ -1779,17 +2007,17 @@ Registro de Identidade (RIC)  (新格式) ：11个数字
 ### <a name="pattern"></a>模式
 
 Registro Geral（旧格式）：
-- 两个数字  
-- 一个点  
-- 三个数字  
-- 一个点  
-- 三个数字  
-- 一个连字符  
+- 两位数 
+- 一个句点 
+- 三个数字 
+- 一个句点 
+- 三个数字 
+- 连字符 
 - 一个数字，是校验位
 
 Registro de Identidade (RIC)  (新格式) ：
-- 10 个数字 
-- 一个连字符  
+- 10位数字 
+- 连字符 
 - 一个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -1843,7 +2071,7 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -1852,7 +2080,6 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_bulgaria_eu_driver's_license_number` 。 
     
@@ -1868,7 +2095,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_bulgaria_eu_driver "s_license_number**
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver "s_license_number
 - 通讯#
 - driver license
 - 驱动程序许可证编号
@@ -1885,6 +2112,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
+
 
 ## <a name="bulgaria-national-identification-number"></a>保加利亚国家身份证号
 此敏感信息类型实体仅适用于欧盟国家身份证号敏感信息类型。
@@ -1909,12 +2137,10 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_bulgaria_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_bulgaria_national_number` 。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_bulgaria_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -1979,6 +2205,7 @@ national id
 - униформгражданскиid#
 - униформгражданскине.#
 
+
 ## <a name="bulgaria-passport-number"></a>保加利亚护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
@@ -1988,7 +2215,7 @@ national id
   
 ### <a name="pattern"></a>模式
 
- 九个数字 
+九位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -1997,7 +2224,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_bulgaria_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_bulgaria_eu_passport_number` 。 
 
@@ -2012,11 +2238,13 @@ national id
 ```
 ### <a name="keywords"></a>Keywords
 
-**Keywords_bulgaria_eu_passport_number**
+#### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
+
 - passport number
 - 保加利亚语护照号码
 - 护照号
 - номер на паспорта
+
 
 ## <a name="bulgaria-tax-identification-number"></a>保加利亚纳税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -2027,7 +2255,7 @@ national id
   
 ### <a name="pattern"></a>模式
 
-10 个数字
+10位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -2036,12 +2264,10 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_bulgaria_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_bulgaria_eu_tax_file_number` 。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_bulgaria_eu_tax_file_number` 找到与该模式匹配的内容。 
 
 ```xml
@@ -2060,6 +2286,7 @@ national id
 ### <a name="keywords"></a>Keywords
 
 #### <a name="keywords_bulgaria_eu_tax_file_number"></a>Keywords_bulgaria_eu_tax_file_number
+
 - bnn#
 - bnn
 - bucn#
@@ -2118,10 +2345,10 @@ national id
 加拿大银行帐号是七个或十二个数字。
 
 加拿大银行帐户的银行代号是：
-- 五位数字 
+- 五个数字 
 - 连字符 
 - 三位数字或
-- 一个零“0”  
+- 零 "0" 
 - 八位数字
 
 ### <a name="checksum"></a>校验和
@@ -2179,6 +2406,7 @@ national id
 - deposit request
 - banking information
 - direct deposit
+
    
 ## <a name="canada-drivers-license-number"></a>加拿大驾照号码
 
@@ -2396,16 +2624,17 @@ national id
 - identification card# 
 - identification cards# 
 - id# 
+
    
 ## <a name="canada-health-service-number"></a>加拿大运行状况服务号码
 
 ### <a name="format"></a>Format
 
-10 个数字
+10位数字
 
 ### <a name="pattern"></a>模式
 
-10 个数字
+10位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2442,6 +2671,7 @@ national id
 - psychiatrist
 - workers compensation
 - 障碍
+
       
 ## <a name="canada-passport-number"></a>加拿大护照号码
 
@@ -2509,16 +2739,17 @@ national id
 - Passeport#
 - PasseportNon
 - Passeportn °
+
    
 ## <a name="canada-personal-health-identification-number-phin"></a>加拿大个人健康标识号 (PHIN) 
 
 ### <a name="format"></a>Format
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2526,8 +2757,9 @@ national id
 
 ### <a name="definition"></a>定义
 
-DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
-找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。。
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
+- 找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。
 
 ```xml
 <!-- Canada PHIN -->
@@ -2578,21 +2810,22 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - Nova Scotia
 - Prince Edward Island
 - 加拿大
+
    
 ## <a name="canada-social-insurance-number"></a>加拿大社会保险电话号码
 
 ### <a name="format"></a>Format
 
-九个数字，包含可选连字符或空格
+9个数字，带可选连字符或空格
 
 ### <a name="pattern"></a>模式
 
 格式
-- 三位数字 
+- 三个数字 
 - 连字符或空格 
-- 三位数字 
+- 三个数字 
 - 连字符或空格 
-- 三位数字
+- 三个数字
 
 未格式化：9个数字
 
@@ -2661,23 +2894,24 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 出生日期 
 - Birthday 
 - Date of Birth 
+
    
 ## <a name="chile-identity-card-number"></a>智利标识卡号
 
 ### <a name="format"></a>Format
 
-7-8 位数加上分隔符一个校验位或字母
+七到八个数字加上分隔符一个校验位或字母
 
 ### <a name="pattern"></a>模式
 
-7-8 个数字加分隔符：
-- 1-2 个数字  
-- 一个点  
-- 三个数字  
-- 一个点  
-- 三个数字  
-- 一个短划线  
-- 一个数字或字母（不区分大小写），是校验位
+七到八个数字加分隔符：
+- 一到两位数 
+- 一个句点 
+- 三个数字 
+- 一个句点 
+- 三个数字 
+- 短划线 
+- 一个数字或字母 (不区分大小写) 这是校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -2723,6 +2957,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - Número De Identificación Nacional 
 - Tarjeta de identificación 
 - Identificación 
+
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国居民身份卡片 (中国) 号码
 
@@ -2733,9 +2968,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="pattern"></a>模式
 
 18 个数字：
-- 其中六个数字是地址代码  
-- 八个数字，采用  YYYYMMDD 格式，代表出生日期  
-- 三个数字，是顺序代码  
+- 6个数字，这是一个地址代码 
+- 8位数，形式为 YYYYMMDD，表示出生日期 
+- 三个数字，这是一个订单代码 
 - 一个数字，是校验位
 
 ### <a name="checksum"></a>校验和
@@ -2780,6 +3015,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 身分證 
 - 居民身份證
 - 鑑定 
+
    
 ## <a name="credit-card-number"></a>信用卡号
 
@@ -2921,7 +3157,6 @@ data de expiração
 - セキュリティナンバー
 - セキュリティ ナンバー
 - セキュリティ番号
-
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
@@ -3151,6 +3386,7 @@ número do cartão
 - デビット カード
 - デビットカード
 
+
 ## <a name="croatia-drivers-license-number"></a>克罗地亚驾照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
@@ -3160,7 +3396,7 @@ número do cartão
   
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -3185,7 +3421,7 @@ número do cartão
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_croatia_eu_driver "s_license_number**
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -3201,17 +3437,17 @@ número do cartão
 - dlno#
 - vozačka dozvola
 
+
 ## <a name="croatia-identity-card-number"></a>克罗地亚 identity 卡片号
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
-
 ### <a name="format"></a>Format
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+九个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3267,6 +3503,7 @@ número do cartão
 - tin 编号
 - 锡#
 
+
 ## <a name="croatia-passport-number"></a>克罗地亚护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
@@ -3276,7 +3513,7 @@ número do cartão
   
 ### <a name="pattern"></a>模式
 
- 九个数字 
+九位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -3285,7 +3522,6 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_croatia_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_croatia_eu_passport_number` 。 
     
@@ -3300,7 +3536,7 @@ número do cartão
 ```
 ### <a name="keywords"></a>Keywords
 
-**Keywords_croatia_eu_passport_number**
+#### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
 - passport number
 - 克罗地亚护照号码
@@ -3317,7 +3553,7 @@ número do cartão
 ### <a name="pattern"></a>模式
 
 11 个数字：
-- 10 个数字 
+- 10位数字 
 - 最后一个数字是用于国际数据交换目的的校验位，字母 HR 将加上11位数字。
 
 ### <a name="checksum"></a>校验和
@@ -3356,6 +3592,7 @@ número do cartão
 - Osobni identifikacijski broj 
 - OIB 
 
+
 ## <a name="croatia-social-security-number-or-equivalent-identification"></a>克罗地亚社会安全号码或等效标识
 此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
 
@@ -3365,7 +3602,7 @@ número do cartão
   
 ### <a name="pattern"></a>模式
 
- 11 个数字：
+11 个数字：
   
 - 10位数字
 - 一个校验位
@@ -3416,6 +3653,7 @@ número do cartão
 - personalidnumber#
 - oib
 - osobni identifikacijski broj
+
    
 ## <a name="croatia-tax-identification-number"></a>克罗地亚税标识号
 此敏感信息类型实体仅适用于欧盟税 Identificaiton 号码敏感信息类型。
@@ -3438,14 +3676,12 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_croatia_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_croatia_eu_tax_file_number` 。 
-    
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_croatia_eu_tax_file_number` 找到与该模式匹配的内容。 
-    
+
 ```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
@@ -3493,6 +3729,7 @@ número do cartão
 - tin 编号
 - 锡#
 
+
 ## <a name="cyprus-drivers-license-number"></a>塞浦路斯驱动程序许可证编号
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
@@ -3511,7 +3748,6 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_cyprus_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_cyprus_eu_driver's_license_number` 。
 
@@ -3527,7 +3763,7 @@ número do cartão
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_cyprus_eu_driver "s_license_number**
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -3542,6 +3778,7 @@ número do cartão
 - dlno#
 - άδεια οδήγησης
 
+
 ## <a name="cyprus-national-identification-number"></a>塞浦路斯国家标识号码
 此敏感信息类型实体仅适用于欧盟国家身份证号敏感信息类型。
 
@@ -3551,7 +3788,7 @@ número do cartão
   
 ### <a name="pattern"></a>模式
 
- 10位数字 
+10位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -3560,7 +3797,6 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_cyprus_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_cyprus_eu_national_id_card` 。 
     
@@ -3584,6 +3820,7 @@ número do cartão
 - 个人 id 号
 - ταυτοτητασ
 
+
 ## <a name="cyprus-passport-number"></a>塞浦路斯护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
@@ -3602,7 +3839,6 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_cyprus_eu_passport_number` 找到与该模式匹配的内容。
 - 找到了中的关键字  `Keywords_cyprus_eu_passport_number` 。 
     
@@ -3618,12 +3854,13 @@ número do cartão
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_cyprus_eu_passport_number**
+#### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
 - passport number
 - 塞浦路斯护照号码
 - 护照号
 - αριθμό διαβατηρίου
+
 
 ## <a name="cyprus-tax-identification-number"></a>塞浦路斯税号标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -3636,8 +3873,8 @@ número do cartão
 
 八个数字和一个字母：
   
--  一个 "0" 
-- 七个数字 
+- 一个 "0" 
+- 七位数字
 - 一个字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -3647,12 +3884,10 @@ número do cartão
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_cyprus_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_cyprus_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_cyprus_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -3700,6 +3935,7 @@ Pattern confidenceLevel="75">
 - φορολογικού κωδικού
 - 税号
 
+
 ## <a name="czech-drivers-license-number"></a>捷克语驱动程序的许可证编号
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
@@ -3712,8 +3948,8 @@ Pattern confidenceLevel="75">
 八个字母和数字：
   
 - 两个字母 (不区分大小写) 
-- 一个空格（可选） 
-- 六个数字
+- 空格 (可选) 
+- 6位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3722,7 +3958,6 @@ Pattern confidenceLevel="75">
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_czech_republic_eu_driver's_license_number` 。 
 
@@ -3739,7 +3974,7 @@ Pattern confidenceLevel="75">
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_czech_republic_eu_driver "s_license_number**
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -3755,6 +3990,7 @@ Pattern confidenceLevel="75">
 - 驾驶执照号码
 - dlno#
 - řidičský prúkaz
+
 
 ## <a name="czech-passport-number"></a>捷克语护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
@@ -3774,7 +4010,6 @@ Pattern confidenceLevel="75">
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_czech_republic_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_czech_republic_eu_passport_number` 。 
     
@@ -3790,13 +4025,14 @@ Pattern confidenceLevel="75">
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_czech_republic_eu_passport_number**
+#### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
 - passport number
 - 捷克语护照号码
 - 护照号
 - cestovní pas
 - pas
+
 
 ## <a name="czech-personal-identity-number"></a>捷克个人识别码
 此敏感信息类型实体包含在欧盟国家/地区标识号捆绑包中，可用作独立的敏感信息类型实体。
@@ -3808,21 +4044,21 @@ Pattern confidenceLevel="75">
 ### <a name="pattern"></a>模式
 
  (旧格式) 的9个数字：
-- 九个数字
+- 九位数字
+
+OR
+
+- 代表出生日期的六个数字
+- 一个正斜杠
+- 三个数字
+
+10个数字 (新格式) ：
+- 10位数字
 
 OR
 
 - 代表出生日期的六个数字
 - 一个正斜杠 
-- 三位数字
-
- (新格式) 的10个数字：
-- 10 个数字
-
-OR
-
-- 代表出生日期的六个数字
-- 一个正斜杠  
 - 四个数字，其中最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -3831,9 +4067,11 @@ OR
 
 ### <a name="definition"></a>定义
 
-DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_czech_id_card 找到与该模式匹配的内容。
-找到 Keyword_czech_id_card 中的一个关键字。
-校验和通过。
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+
+- 函数 Func_czech_id_card 找到与该模式匹配的内容。
+- 找到 Keyword_czech_id_card 中的一个关键字。
+- 校验和通过。
 
 ```xml
 <!-- Czech Personal Identity Number -->
@@ -3850,8 +4088,8 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 - Rodné číslo
 
 
-
 ## <a name="czech-social-security-number-or-equivalent-identification"></a>捷克社会安全号码或等效标识
+
 此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -3863,11 +4101,8 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 10个数字和一个反斜杠：
   
 - 与出生日期对应的6个数字 (YYMMDD) ： 
-    
 - 反斜杠
-    
 - 与一个序列号相对应的三个数字，用于分隔出生于同一日期的人员
-    
 - 一个校验位
     
 ### <a name="checksum"></a>校验和
@@ -3877,12 +4112,10 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_czech_republic_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_czech_republic_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_czech_republic_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
 
 ```xml
@@ -3916,6 +4149,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 - rodné číslo
 - rodne cislo
 
+
 ## <a name="czech-tax-identification-number"></a>捷克语税号标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
@@ -3927,7 +4161,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 9个或10个数字，可选 backslashl：
   
-- 六位数字 
+- 6位数字 
 - 反斜杠 (可选) 
 - 三个或四个数字
     
@@ -3938,7 +4172,6 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_czech_republic_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_czech_republic_eu_tax_file_number` 。 
     
@@ -3994,6 +4227,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 唯一标识号
 - 税号
 
+
 ## <a name="denmark-drivers-license-number"></a>丹麦驾照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
@@ -4003,7 +4237,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
   
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -4012,7 +4246,6 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_denmark_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_denmark_eu_driver's_license_number` 。 
     
@@ -4028,7 +4261,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_denmark_eu_driver "s_license_number**
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver "s_license_number
 
 - | dl#
 - driver license
@@ -4055,7 +4288,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
   
 ### <a name="pattern"></a>模式
 
- 九个数字 
+九位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -4064,7 +4297,6 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_denmark_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_denmark_eu_passport_number` 。 
     
@@ -4080,7 +4312,7 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_denmark_eu_passport_number**
+#### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
 - passport number
 - 丹麦护照号码
@@ -4088,19 +4320,20 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 - pas
 - pasnummer
 
+
 ## <a name="denmark-personal-identification-number"></a>丹麦个人身份号码
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
 
-10 个数字，包含连字符
+10个数字，包含连字符
 
 ### <a name="pattern"></a>模式
 
-10 个数字：
-- 六个数字，采用  DDMMYY 格式，代表出生日期  
-- 一个连字符  
-- 四个数字，最后一位数字是校验位
+10位数字：
+- 6位数，格式为 DDMMYY，表示出生日期 
+- 连字符 
+- 四个数字，其中最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -4108,9 +4341,10 @@ DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="definition"></a>定义
 
-DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：正则表达式 Regex_denmark_id 找到与该模式匹配的内容。
-找到 Keyword_denmark_id 中的一个关键字。
-校验和通过。
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_denmark_id 找到与该模式匹配的内容。
+- 找到 Keyword_denmark_id 中的一个关键字。
+- 校验和通过。
 
 ```xml
 <!-- Denmark Personal Identification Number -->
@@ -4178,6 +4412,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 纳税人 id
 - tin 编号
 
+
 ## <a name="denmark-social-security-number-or-equivalent-identification"></a>丹麦社会安全号码或等效标识
 此敏感信息类型实体仅适用于欧盟社会保险号或等效 ID 敏感信息类型。
 
@@ -4190,9 +4425,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 10个数字和一个连字符：
   
 - 与出生日期 (DDMMYY) 的6个数字 
-- 一个连字符 
+- 连字符
 - 与序列号对应的四个数字
-    
+
 ### <a name="checksum"></a>校验和
 
 是
@@ -4200,12 +4435,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_denmark_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_denmark_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_denmark_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
     
 ```xml
@@ -4237,6 +4470,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - cpr-nummer
 - personnummer
 
+
 ## <a name="denmark-tax-identification-number"></a>丹麦税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
@@ -4248,8 +4482,8 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 包含 hyphenl 的10个数字：
   
--  与出生日期 (DDMMYY) 的6个数字
-- 一个连字符 
+- 与出生日期 (DDMMYY) 的6个数字
+- 连字符
 - 与序列号相对应的四个数字，其中第一个数字对应于出生世纪，而最后一个数字对应于个人的性别 (对于男为奇数，甚至对于女性) 
     
 ### <a name="checksum"></a>校验和
@@ -4259,12 +4493,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_denmark_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_denmark_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_denmark_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -4346,8 +4578,8 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 这一组可能的字母（不区分大小写）中的一个字母：abcdefghjklmnprstux，这是注册人代码 
-- 一个字母（不区分大小写），这是注册人姓氏的第一个字母 
+- 一个字母 (不区分大小写) 这组可能的字母： abcdefghjklmnprstux，这是注册人代码 
+- 一个字母 (不区分大小写) （注册人姓氏的第一个字母） 
 - 七位数字，最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -4373,6 +4605,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 无
 
+
 ## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
@@ -4384,8 +4617,8 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 两个字母和六个数字：
   
--  字母 "ET" (不区分大小写)  
-- 六个数字
+- 字母 "ET" (不区分大小写)  
+- 6位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -4394,7 +4627,6 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_estonia_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_estonia_eu_driver's_license_number` 。 
     
@@ -4410,7 +4642,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_estonia_eu_driver "s_license_number**
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -4425,6 +4657,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - 驾驶执照号码
 - dlno#
 - permis de conduire
+
 
 ## <a name="estonia-national-identification-number"></a>爱沙尼亚国家标识号码
 此敏感信息类型实体仅适用于欧盟国家身份证号敏感信息类型。
@@ -4450,12 +4683,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_estonia_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_estonia_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_estonia_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -4507,6 +4738,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - tin 编号
 - 锡#
 
+
 ## <a name="estonia-passport-number"></a>爱沙尼亚护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
@@ -4525,7 +4757,6 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_estonia_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_estonia_eu_passport_number` 。 
     
@@ -4541,12 +4772,13 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_estonia_eu_passport_number**
+#### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
 - passport number
 - 爱沙尼亚语护照号码
 - 护照号
 - eesti kodaniku pass
+
 
 ## <a name="estonia-tax-identification-number"></a>爱沙尼亚纳税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -4559,7 +4791,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 11 个数字：
   
--  一种与性别和世纪相对应的数字，其中奇数表示男，偶数表示女，如下所示：1，2代表19世纪;3，4表示20世纪;对于21世纪，为5，6 
+- 一种与性别和世纪相对应的数字，其中奇数表示男，偶数表示女，如下所示：1，2代表19世纪;3，4表示20世纪;对于21世纪，为5，6 
     
 - 与出生日期 (YYMMDD) 的6个数字
 - 三个数字，对应于将出生在同一日期的人员组成的序列号
@@ -4572,12 +4804,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_estonia_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_estonia_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_estonia_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -4978,7 +5208,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - vto 
 - válido hasta 
 
+
 ## <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
+
 这些是欧盟驾驶执照号码敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-drivers-license-number) 
@@ -5010,7 +5242,9 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - [瑞典](#sweden-drivers-license-number)
 - [U.K.](#uk-drivers-license-number)
 
+
 ## <a name="eu-national-identification-number"></a>欧盟国家身份证号
+
 这些是欧盟国家/地区标识号敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-national-identification-number)
@@ -5043,6 +5277,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 
 ## <a name="eu-passport-number"></a>EU 护照号码 
+
 以下是欧盟护照号码敏感信息 typeThese 中的实体。欧盟护照号码捆绑包中的实体。
 
 - [Austria（奥地利）](#austria-passport-number)
@@ -5076,6 +5311,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 
 ## <a name="eu-social-security-number-or-equivalent-identification"></a>EU 社会保险号或等效标识
+
 这些是欧盟社会保险号或等效的标识敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-social-security-number-or-equivalent-identification)
@@ -5092,9 +5328,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - [西班牙](#spain-social-security-number-ssn)
 - [瑞典](#sweden-social-security-number-or-equivalent-identification)
 
+
 ## <a name="eu-tax-identification-number"></a>EU 税标识号
 
-hese 实体采用欧盟税标识的敏感信息类型。
+这些实体采用欧盟税识别号敏感信息类型。
 
 - [Austria（奥地利）](#austria-tax-identification-number)
 - [Belgium（比利时）](#belgium-tax-identification-number)
@@ -5131,15 +5368,15 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 ### <a name="format"></a>Format
 
-10 个数字，包含连字符
+10个数字，包含连字符
   
 ### <a name="pattern"></a>模式
 
-10个数字，包含连字符：
+10位数，包含连字符：
   
--  六位数字 
-- 一个连字符
--  四个数字 
+- 6位数字 
+- 连字符
+- 四位数 
     
 ### <a name="checksum"></a>校验和
 
@@ -5148,9 +5385,7 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_finland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_finland_eu_driver's_license_number` 。 
     
 ```xml
@@ -5165,7 +5400,7 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_finland_eu_driver "s_license_number**
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -5181,20 +5416,75 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - dlno#
 - ajokortti
 
+
+## <a name="finland-european-health-insurance-number"></a>芬兰欧洲健康保险电话号码
+
+### <a name="format"></a>Format
+
+20位数字
+
+### <a name="pattern"></a>模式
+
+20位数字：
+
+- 10位数-8024680246
+- 可选空格或连字符
+- 10位数字
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_Finland_European_Health_Insurance_Number 找到与该模式匹配的内容。
+- 找到 Keyword_Finland_European_Health_Insurance_Number 中的关键字。
+
+```xml
+      <!-- Finland European Health Insurance Number -->
+      <Entity id="60f75aed-81bf-4625-89b0-0846b9248ee7" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Finland_European_Health_Insurance_Number"/>
+          <Match idRef="Keyword_Finland_European_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
+
+- ehic#
+- ehic
+- finlandehicnumber#
+- finska sjukförsäkringskort
+- 运行状况卡片
+- 健康保险卡
+- 健康保险号
+- hälsokort
+- sairaanhoitokortin
+- sairausvakuutuskortti
+- sairausvakuutusnumero
+- sjukförsäkring nummer
+- sjukförsäkringskort
+- suomen sairausvakuutuskortti
+- terveyskortti
+
+
 ## <a name="finland-national-identification-number"></a>芬兰国身份证号码
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
 
-六个数字加一个字符（表示一个世纪），加三个数字再加一个校验位
+6个数字加上一个字符，表示一个世纪加上三个数字加上校验位
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 采用 DDMMYY 格式的六位数字，表示出生日期 
-- 世纪标记（“-”、“+”或“a”） 
-- 三位个人标识号 
-- 一个数字或字母（区分大小写），是校验位
+- 6位数，格式格式为 DDMMYY，表示出生日期 
+- 世纪标记 (是 "-"、"+" 或 "a" )  
+- 三位数的个人标识号码 
+- 不区分大小写的数字或字母 () 是校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -5203,9 +5493,9 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_finnish_national_id 找到与该模式匹配的内容。
-- 找到 Keyword_finnish_national_id 中的一个关键字。
-- 校验和通过。
+- 函数 Func_finnish_national_id 找到与该模式匹配的内容
+- 找到 Keyword_finnish_national_id 中的关键字
+- 校验和传递
 
 ```xml
 <!-- Finnish National ID-->
@@ -5270,6 +5560,7 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - verotunniste
 - verotunnus
 
+
 ## <a name="finland-passport-number"></a>芬兰护照号码
 此敏感信息类型实体可用于欧盟护照号敏感信息类型，并可用作独立的敏感信息类型实体。
 
@@ -5277,12 +5568,16 @@ hese 实体采用欧盟税标识的敏感信息类型。
 九个字母和数字的组合
 
 ### <a name="pattern"></a>模式
-九个字母和数字的组合：两个字母 (不区分大小写) 七位数字
+九个字母和数字的组合：
+- 两个字母 (不区分大小写)  
+- 七位数字
 
 ### <a name="checksum"></a>校验和
+
 否
 
 ### <a name="definition"></a>定义
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
 - 找到 Keyword_finland_passport_number 中的一个关键字。
@@ -5297,9 +5592,11 @@ hese 实体采用欧盟税标识的敏感信息类型。
 </Entity>
 ```
 ### <a name="keywords"></a>Keywords
+
 - Keyword_finland_passport_number
 - 登记卡
 - Passi
+
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>芬兰社会保障号或等效标识
 此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
@@ -5312,12 +5609,12 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 指定格式的11个字符的组合：
   
--  六位数字 
+- 6位数字 
 - 以下任一实例：
   - 加号符号
   - 负号
   - 字母 "A" (不区分大小写) 
-- 三位数字
+- 三个数字
 - 一个字母或一个数字
     
 ### <a name="checksum"></a>校验和
@@ -5327,12 +5624,10 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_finland_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_finland_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_finland_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
     
 ```xml
@@ -5374,6 +5669,7 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - kansallinen tunnus numero
 - hetu
 
+
 ## <a name="finland-tax-identification-number"></a>芬兰纳税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
@@ -5384,10 +5680,9 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="pattern"></a>模式
 
 一个11个字符的数字、字母和加号和减号的组合：
-  
-- 六位数字
+- 6位数字
 - 以下之一：加号、减号或字母 "A" (不区分大小写) ，其中加号表示介于1800-1899 之间，负号意味着在1900-1999 之间出生，而 "A" 表示出生2000和之后
-- 三位数字
+- 三个数字
 - 一个字母或一个数字
     
 ### <a name="checksum"></a>校验和
@@ -5397,12 +5692,10 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_finland_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_finland_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_finland_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -5494,8 +5787,8 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_french_drivers_license 找到与该模式匹配的内容。
-- 下列至少其中一项为真：
-- 找到 Keyword_french_drivers_license 中的一个关键字。
+- 至少满足以下条件之一：
+- 找到 Keyword_french_drivers_license 中的关键字。
 - 函数 Func_eu_date 找到正确日期格式的日期。
 
 ```xml
@@ -5524,6 +5817,52 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - license number
 - licence numbers
 - license numbers
+
+
+## <a name="france-health-insurance-number"></a>法国健康保险号
+
+### <a name="format"></a>Format
+
+21位数字
+
+### <a name="pattern"></a>模式
+
+21位数字：
+
+- 10位数字
+- 一个可选空格
+- 10位数字
+- 一个可选空格
+- 一个数字
+
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_France_Health_Insurance_Number 找到与该模式匹配的内容。
+- 找到 Keyword_France_Health_Insurance_Number 中的关键字。
+
+```xml
+      <!-- France Health Insurance Number -->
+      <Entity id="9bc2069e-76df-4ff9-ac02-2f519469e236" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_France_Health_Insurance_Number"/>
+          <Match idRef="Keyword_France_Health_Insurance_Number"/>
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
+
+- 保险卡
+- vitale
+- d'assuré社交
+
 
 ## <a name="france-national-identification-card-cni"></a>法国国家标识卡片 (CNI) 
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
@@ -5575,14 +5914,14 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 ### <a name="format"></a>Format
 
-9 个数字和字母
+9个数字和字母
 
 ### <a name="pattern"></a>模式
 
-九位数字和字母：
-- 两位数字 
-- 两个字母（不区分大小写） 
-- 五位数字
+9个数字和字母：
+- 两位数 
+- 两个字母 (不区分大小写)  
+- 五个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5727,12 +6066,10 @@ hese 实体采用欧盟税标识的敏感信息类型。
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_france_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_france_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_france_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -5771,20 +6108,82 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - tin 编号
 - 锡#
 
+
+## <a name="france-value-added-tax-number"></a>法国增值税号
+
+### <a name="format"></a>Format
+
+13个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+13个字符的字母数字模式：
+
+- 两个字母-FR (不区分大小写) 
+- 可选空格或连字符
+- 两个字母或数字
+- 可选空格、点号、连字符或逗号
+- 三个数字
+- 可选空格、点号、连字符或逗号
+- 三个数字
+- 可选空格、点号、连字符或逗号
+- 三个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_france_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_france_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_france_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- France Value Added Tax Number -->
+      <Entity id="949121e6-ad9f-4379-8731-710342baea78" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+          <Match idRef="Keywords_france_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_france_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
+
+- vat 号码
+- vat 编号
+- vat#
+- 增值税
+- siren 标识无 numéro d'identification taxe sur valeur ajoutée
+- taxe valeur ajoutée
+- taxe sur la valeur ajoutée
+- n ° tva
+- numéro de tva
+- numéro d'identification siren
+
+
 ## <a name="germany-drivers-license-number"></a>德国驾驶执照号码
 此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
 
-11 个数字和字母组合
+11个数字和字母的组合
 
 ### <a name="pattern"></a>模式
 
 11 位数字和字母（不区分大小写）：
 - 一个数字或字母 
-- 两位数字 
-- 六位数字或字母 
-- 一位数字 
+- 两位数 
+- 六个数字或字母 
+- 一个数字 
 - 一个数字或字母
 
 ### <a name="checksum"></a>校验和
@@ -5914,6 +6313,7 @@ hese 实体采用欧盟税标识的敏感信息类型。
 - ausstellende behorde
 - ausstellende behoerde
 
+
 ## <a name="germany-identity-card-number"></a>德国身份卡片编号
 - 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 - 此敏感信息类型实体包含在欧盟社会保险号或等效 ID 敏感信息类型中。
@@ -5926,12 +6326,12 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 ### <a name="pattern"></a>模式
 
-自 2010 年 11 月 1 日起：
-- 一个字母（不区分大小写） 
-- 八个数字
+自2010年11月1日起：
+- 一个字母 (不区分大小写)  
+- 八位数字
 
 介于1年4月1987至 31 10 月2010：
-- 10 个数字
+- 10位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5977,15 +6377,15 @@ hese 实体采用欧盟税标识的敏感信息类型。
 
 ### <a name="format"></a>Format
 
-10 个数字或字母
+10个数字或字母
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 第一个字符是这一组（C、F、G、H、J、K）中的数字或字母 
-- 三位数字 
-- 五位数字或字母都来源于这一组（C、-H、J-N、P、R、T，V-Z） 
-- 一位数字
+- 第一个字符是数字或从该集合中的字母 (C、F、G、H、J、K)  
+- 三个数字 
+- 此集合中的五个数字或字母 (C、-H、J-N、P、R、T、V-Z)  
+- 一个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6057,6 +6457,7 @@ Reisepass-Nr
 
 bnationalit
 
+
 ## <a name="germany-tax-identification-number"></a>德国税号标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
@@ -6068,7 +6469,7 @@ bnationalit
 
 11位数字：
   
--  10位数字 
+- 10位数字 
 - 一个校验位
     
 ### <a name="checksum"></a>校验和
@@ -6078,12 +6479,10 @@ bnationalit
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_germany_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_germany_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_germany_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -6128,6 +6527,64 @@ bnationalit
 - zinn
 - zinnnummer
 
+
+## <a name="germany-value-added-tax-number"></a>德国增值税号
+
+### <a name="format"></a>Format
+
+11个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+11个字符的字母数字模式：
+
+- 字母 D 或 D
+- 字母 E 或 E
+- 一个可选空格
+- 三个数字
+- 可选空格或逗号
+- 三个数字
+- 可选空格或逗号
+- 三个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_germany_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_germany_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_germany_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Germany Value Added Tax Number -->
+      <Entity id="db177eb2-8811-4842-bffc-128c14aa219f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+          <Match idRef="Keywords_germany_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_germany_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
+
+- vat 号码
+- vat 编号
+- vat#
+- vat # mehrwertsteuer
+- mwst
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
+
+
 ## <a name="greece-drivers-license-number"></a>希腊驱动程序的许可证编号
 此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
 
@@ -6137,7 +6594,7 @@ bnationalit
   
 ### <a name="pattern"></a>模式
 
- 九个数字 
+九位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -6146,7 +6603,6 @@ bnationalit
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_greece_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_greece_eu_driver's_license_number` 。 
     
@@ -6162,7 +6618,7 @@ bnationalit
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_greece_eu_driver "s_license_number**
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver "s_license_number
 
 - dlL#
 - driver license
@@ -6180,7 +6636,7 @@ bnationalit
 - Adeia odigisis
 
 
-## <a name="greece-national-id-card"></a>希腊国民身份证
+## <a name="greece-national-id-card"></a>希腊国家 ID 卡
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
@@ -6232,7 +6688,9 @@ bnationalit
 - ταυτότητα
 - ταυτότητας
 
+
 ## <a name="greece-passport-number"></a>希腊护照号码
+
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6266,7 +6724,7 @@ bnationalit
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_greece_eu_passport_number**
+#### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
 - passport number
 - 希腊护照号码
@@ -6274,6 +6732,7 @@ bnationalit
 - διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>希腊税标识号
+
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6293,10 +6752,9 @@ bnationalit
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_greece_eu_tax_file_number` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_greece_eu_tax_file_number` 。 
     
-```
+```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -6421,8 +6879,10 @@ bnationalit
 - 香港特別行政區非永久性居民身份証
 - 香港特別行政區非永久性居民身分證
 - 香港特別行政區非永久性居民身分証
+
    
 ## <a name="hungary-drivers-license-number"></a>匈牙利驱动程序的许可证编号
+
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6459,7 +6919,8 @@ bnationalit
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_hungary_eu_driver "s_license_number**
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver "s_license_number
+
 - 通讯#
 - driver license
 - 驱动程序许可证编号
@@ -6474,7 +6935,9 @@ bnationalit
 - dlno#
 - vezetoi engedely
 
+
 ## <a name="hungary-national-identification-number"></a>匈牙利国家标识号码
+
 此敏感信息类型实体仅适用于欧盟国家身份证号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6530,7 +6993,9 @@ bnationalit
 - személyazonosító igazolvány
 - személyi igazolvány
 
+
 ## <a name="hungary-passport-number"></a>匈牙利护照号码
+
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6563,14 +7028,16 @@ bnationalit
 ```
 ### <a name="keywords"></a>Keywords
 
-**Keywords_hungary_eu_passport_number**
+#### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
 - passport number
 - 匈牙利语护照号码
 - 护照号
 - útlevél száma
 
+
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>匈牙利社会安全号码或等效标识
+
 此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6633,6 +7100,7 @@ bnationalit
 
 
 ## <a name="hungary-tax-identification-number"></a>匈牙利纳税标识号
+
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -6643,7 +7111,7 @@ bnationalit
 
 10位数字：
   
--  一个必须为 "8" 的数字 
+- 一个必须为 "8" 的数字 
 - 与日期01/01/1867 之间的天数对应的五个数字和个人的出生日期
 - 三个数字，对应于通过机会区分在同一天的人所生成的数字
 - 一个校验位
@@ -6704,6 +7172,66 @@ bnationalit
 - tin 编号
 - 锡#
 - vat 号码
+
+
+## <a name="hungary-value-added-tax-number"></a>匈牙利增值税号
+
+### <a name="format"></a>Format
+
+10个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+10个字符的字母数字模式：
+
+- 2个字母-HU 或 HU
+- 可选空格
+- 8位数
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+
+- 函数 Func_hungarian_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_hungarian_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+
+- 函数 Func_hungarian_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Hungarian Value Added Tax Number -->
+      <Entity id="976349a0-683b-477a-90f8-ff0a220d5592" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+          <Match idRef="Keywords_hungarian_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_hungarian_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
+
+- vat
+- 增值税号
+- vat#
+- vatno#
+- hungarianvatno#
+- 纳税编号
+- 增值税áfa
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
+
 
 ## <a name="india-permanent-account-number-pan"></a> (PAN) 的印度永久帐户号
 
@@ -6767,11 +7295,16 @@ bnationalit
 
 ### <a name="definition"></a>定义
 
-DLP 策略85% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
-找到 Keyword_india_aadhar 中的一个关键字。
-校验和通过。
-DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_india_aadhaar 找到与该模式匹配的内容。
-校验和通过。
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_india_aadhaar 找到与该模式匹配的内容。
+- 找到 Keyword_india_aadhar 中的一个关键字。
+- 校验和通过。
+- 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+
+- 函数 Func_india_aadhaar 找到与该模式匹配的内容。
+- 校验和通过。
+
 ```xml
 <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300">
@@ -6817,6 +7350,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+
 - 正则表达式 Regex_indonesia_id_card 找到与该模式匹配的内容。
 - 找到 Keyword_indonesia_id_card 中的一个关键字。
 
@@ -6863,6 +7397,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+
 - 函数 Func_iban 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -6877,8 +7412,6 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 ### <a name="keywords"></a>Keywords
 
 无
-
-   
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 diseases (ICD-10-CM) 
@@ -6917,7 +7450,7 @@ Dictionary
 
 ```
 
-Keywords
+### <a name="keywords"></a>Keywords
 
 Dictionary_icd_10_updated 关键字词典中的任何术语，基于 [国际分类 Diseases、第10次修订、临床修改 (icd-10-CM) ](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语，而不是保险代码。
 
@@ -7029,6 +7562,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - IP-כתובת ה 
 
 ## <a name="ireland-drivers-license-number"></a>爱尔兰驾照号码
+
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -7065,7 +7599,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_ireland_eu_driver "s_license_number**
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -7081,7 +7615,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - dlno#
 - ceadúnas tiomána
 
+
 ## <a name="ireland-national-identification-number"></a>爱尔兰国家标识号码
+
 此敏感信息类型实体仅包含在欧盟国家/地区标识号敏感信息类型中。
 
 ### <a name="format"></a>Format
@@ -7094,7 +7630,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
   
 从01年1月2013到现在：
   
--  七个数字  
+- 七个数字  
 - 一个校验位
 - 一个空格或大写的字母 "W" (区分大小写) 
     
@@ -7164,6 +7700,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - uimhir phearsanta seirbhíse poiblí
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
+
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
 ### <a name="format"></a>Format
@@ -7200,7 +7737,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_ireland_eu_passport_number**
+#### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passport number
 - 爱尔兰护照号码
@@ -7215,7 +7752,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="format"></a>Format
 
 旧格式 (到 31 Dec 2012) ：
-- 七位数字后跟 1-2  个字母  
+- 七位数字后跟1-2 个字母 
 
 新格式 (1 Jan 2013 和) 之后）：
 - 七位数字后跟两个字母
@@ -7223,13 +7760,13 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 旧格式 (到 31 Dec 2012) ：
-- 七个数字  
-- 1-2 个字母（不区分大小写）  
+- 七位数字 
+- 一到两个字母 (不区分大小写)  
 
 新格式 (1 Jan 2013 和) 之后）：
-- 七个数字  
-- 一个字母（不区分大小写），是字母校验位  
-- 字母“A”或“H”（不区分大小写）
+- 七位数字 
+- 字母 (区分大小写) 这是字母校验位 
+- 字母 "A" 或 "H" (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -7292,7 +7829,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 七位数字后跟一个字母：
   
-- 七个数字  
+- 七位数字 
 - 一个字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -7302,12 +7839,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_ireland_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_ireland_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_ireland_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -7364,10 +7899,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 格式
-- 两位数字 
-- 破折号 
-- 三位数字 
-- 破折号 
+- 两位数 
+- 短划线 
+- 三个数字 
+- 短划线 
 - 八位数字
 
 纯
@@ -7408,11 +7943,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+九个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -7449,15 +7984,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-10 个字母和数字的组合
+10个字母和数字的组合
 
 ### <a name="pattern"></a>模式
 
-- 10 个字母和数字的组合：
-- 一个字母（不区分大小写） 
-- 字母“A”或者“V”（不区分大小写） 
-- 七个字母（不区分大小写）、数字或下划线字符 
-- 一个字母（不区分大小写）
+- 10个字母和数字的组合：
+- 一个字母 (不区分大小写)  
+- 字母 "A" 或 "V" (不区分大小写)  
+- 七个字母 (不区分大小写) 、数字或下划线字符 
+- 一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -7498,7 +8033,6 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 字母和数字的16个字符的组合：
-  
 - 与系列名称中的前三个辅音对应的三个字母
 - 与名字中的第一个、第三个和第四个辅音对应的三个字母
 - 与出生年份的最后一个数字对应的两个数字
@@ -7514,12 +8048,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_italy_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_italy_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_italy_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -7573,6 +8105,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - tin 编号
 - 锡#
 
+
 ## <a name="italy-passport-number"></a>意大利护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
 
@@ -7584,8 +8117,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 两个字母或数字，后跟七个数字：
   
-- 两位数字或字母（不区分大小写）
-- 七个数字
+- 两个数字或字母 (不区分大小写) 
+- 七位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -7594,7 +8127,6 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_italy_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_italy_eu_passport_number` 。 
     
@@ -7610,7 +8142,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_italy_eu_passport_number**
+#### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
 - 意大利护照号码
 - repubblica italiana passaporto
@@ -7621,6 +8153,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - passaporto numero
 - numéro passeport italien
 - numéro passeport
+
 
 ## <a name="italy-tax-identification-number"></a>意大利纳税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -7633,7 +8166,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 16个字母和数字：
   
--  与系列名称中的前三个辅音对应的三个字母 
+- 与系列名称中的前三个辅音对应的三个字母 
 - 与名字中的第一个、第三个和第四个辅音对应的三个字母
 - 与出生年份的最后一个数字对应的两个数字
 - 一个与出生月份对应的数字（字母按字母顺序使用），但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此，在一月份为 A 和10月为 R) 
@@ -7648,12 +8181,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_italy_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_italy_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_italy_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -7708,20 +8239,72 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 锡#
 
 
+## <a name="italy-value-added-tax-number"></a>意大利增值税号
+
+### <a name="format"></a>Format
+
+带有可选分隔符的13个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+带有可选分隔符的13个字符的字母数字模式：
+
+- I 或 i
+- T 或 t
+- 可选空格、点号、连字符或逗号
+- 11 个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_italy_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_italy_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_italy_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Italy Value Added Tax -->
+      <Entity id="26a8cc07-2283-4a2a-ab1d-4ab643c4c67f" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+          <Match idRef="Keywords_italy_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_italy_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
+
+- vat 号码
+- vat 编号
+- vat#
+- iva
+- iva#
+
+
 ## <a name="japan-bank-account-number"></a>日本银行帐户号码
 
 ### <a name="format"></a>Format
 
-七个或八个数字
+7或8位数字
 
 ### <a name="pattern"></a>模式
 
-银行帐号：
-- 七个或八个数字
+银行帐户号码：
+- 7或8位数字
 - 银行帐户分支代码：
-- 四位数字 
-- 空格或破折号（可选） 
-- 三位数字
+- 四位数 
+- 可选) 的空格或短划线 ( 
+- 三个数字
 
 校验和
 
@@ -7882,6 +8465,120 @@ Otemachi
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
+
+
+## <a name="japan-my-number---corporate"></a>日本我的号码-公司
+
+### <a name="format"></a>Format
+
+13位数字
+
+### <a name="pattern"></a>模式
+
+13位数字：
+
+- 一位数从1到9
+- 12 个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_japanese_my_number_corporate 找到与该模式匹配的内容。
+- 找到 Keywords_japanese_my_number_corporate 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_japanese_my_number_corporate 找到与该模式匹配的内容。
+
+```xml
+      <!-- Japanese My Number – Corporate -->
+      <Entity id="9e0eaf79-ff20-4ffb-b3e4-e7368d5db6ff" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+          <Match idRef="Keywords_japanese_my_number_corporate" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_japanese_my_number_corporate" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
+
+- 公司编号
+- マイナンバー
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 法人番号
+- 指定通知書
+
+
+## <a name="japan-my-number---personal"></a>日本我的号码-个人
+
+### <a name="format"></a>Format
+
+12位数字
+
+### <a name="pattern"></a>模式
+
+12位数字：
+
+- 四位数
+- 可选空格、点号或连字符
+- 四位数
+- 可选空格、点号或连字符
+- 四位数
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_japanese_my_number_personal 找到与该模式匹配的内容。
+- 找到 Keywords_japanese_my_number_personal 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_japanese_my_number_personal 找到与该模式匹配的内容。
+
+```xml
+      <!-- Japanese My Number – Personal -->
+      <Entity id="98da8e66-7299-4ebd-9f82-c871ab37d3ef" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+          <Match idRef="Keywords_japanese_my_number_personal" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_japanese_my_number_personal" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
+
+- 我的号码
+- マイナンバー
+- 個人番号
+- 共通番号
+- マイナンバーカード
+- マイナンバーカード番号
+- 個人番号カード
+- 個人識別番号
+- 個人識別ナンバー
+- 通知カード
+
    
 ## <a name="japan-passport-number"></a>日本护照号码
 
@@ -7891,7 +8588,7 @@ Otemachi
 
 ### <a name="pattern"></a>模式
 
-两个字母（不区分大小写）后跟七个数字
+两个字母 (不区分大小写) 后跟七位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -7931,9 +8628,9 @@ Otemachi
 ### <a name="pattern"></a>模式
 
 12个字母和数字：
-- 两个字母（不区分大小写） 
-- 八个数字 
-- 两个字母（不区分大小写） 
+- 两个字母 (不区分大小写) 
+- 八位数字 
+- 两个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -8020,8 +8717,8 @@ Otemachi
 ### <a name="pattern"></a>模式
 
 7-12 位数字：
-- 四位数字 
-- 一个连字符（可选） 
+- 四位数 
+- 连字符 (可选)  
 - 六位数字或
 - 7-12 个连续的数字
 
@@ -8074,8 +8771,8 @@ Otemachi
 
 三个字母和六个数字：
   
--  三个字母 (不区分大小写)  
-- 六个数字
+- 三个字母 (不区分大小写)  
+- 6位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -8084,7 +8781,6 @@ Otemachi
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_latvia_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_latvia_eu_driver's_license_number` 。 
     
@@ -8100,7 +8796,7 @@ Otemachi
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_latvia_eu_driver "s_license_number**
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -8127,8 +8823,8 @@ Otemachi
 
 11个数字和一个连字符：
   
--  与出生日期 (DDMMYY) 的6个数字 
-- 一个连字符 
+- 与出生日期 (DDMMYY) 的6个数字 
+- 连字符
 - 一个数字，对应于19世纪的出生世纪 ( "0"，"1" 表示20世纪，"2" 表示21世纪) 
 - 四个数字，随机生成
     
@@ -8139,12 +8835,10 @@ Otemachi
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_latvia_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_latvia_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_latvia_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -8242,8 +8936,8 @@ registration number
 
 两个字母或数字，后跟七个数字：
   
-- 两位数字或字母（不区分大小写）
-- 七个数字
+- 两个数字或字母 (不区分大小写) 
+- 七位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -8252,7 +8946,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_latvia_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_latvia_eu_passport_number` 。 
     
@@ -8268,7 +8961,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_latvia_eu_passport_number**
+#### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
 - passport number
 - 拉脱维亚语护照号码
@@ -8288,7 +8981,7 @@ registration number
   
 - 6位数字，对应于出生日期 (DDMMYY)  
 - 一个与 "出生世纪" 相对应的数字，其中 "0" 对应于19世纪，"1" 对应于20世纪，"2" 对应于21世纪。
-- 四位数字
+- 四位数
     
 ### <a name="checksum"></a>校验和
 
@@ -8297,12 +8990,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_latvia_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_latvia_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_latvia_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -8398,7 +9089,7 @@ registration number
   
 ### <a name="pattern"></a>模式
 
- 八个数字 
+八位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -8407,7 +9098,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_lithuania_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_lithuania_eu_driver's_license_number` 。 
     
@@ -8423,7 +9113,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_lithuania_eu_driver "s_license_number**
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -8462,12 +9152,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_lithuania_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_lithuania_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_lithuania_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -8539,7 +9227,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_lithuania_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_lithuania_eu_passport_number` 。 
     
@@ -8555,9 +9242,12 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_lithuania_eu_passport_number**
+#### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-护照号码 lithunian 护照号码护照无 paso numeris
+- passport number
+- lithunian 护照号码
+- 护照号
+- paso numeris
 
 ## <a name="lithuania-tax-identification-number"></a>立陶宛税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -8577,12 +9267,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_lithuania_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_lithuania_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_lithuania_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -8636,7 +9324,7 @@ registration number
 - uniqueidentityno#
 
 ## <a name="luxemburg-drivers-license-number"></a>Luxemburg 驾驶执照号码
-他的敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
 
 ### <a name="format"></a>Format
 
@@ -8644,7 +9332,7 @@ registration number
   
 ### <a name="pattern"></a>模式
 
- 六个数字 
+6位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -8653,7 +9341,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_luxemburg_eu_driver's_license_number` 。 
     
@@ -8669,7 +9356,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_luxemburg_eu_driver "s_license_number**
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -8708,7 +9395,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_luxemburg_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_luxemburg_eu_national_id_card` 。 
     
@@ -8764,7 +9450,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_nation_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_nation_eu_passport_number` 。 
     
@@ -8780,9 +9465,12 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_nation_eu_passport_number**
+#### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
 
-护照号码拉脱维亚语护照号码 passport 无 passnummer
+- passport number
+- 拉脱维亚语护照号码
+- 护照号
+- passnummer
 
 ## <a name="luxemburg-tax-identification-number"></a>Luxemburg 税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -8805,12 +9493,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_luxemburg_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_luxemburg_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_luxemburg_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -8879,12 +9565,12 @@ registration number
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 六个数字，采用  YYMMDD 格式，代表出生日期  
-- 一个短划线（可选）  
-- 两个字母的出生地代码  
-- 一个短划线（可选）  
-- 三个随机数字  
-- 一位性别代码
+- 6位数，格式为 YYMMDD，表示出生日期 
+- 短划线 (可选)  
+- 两个字母的出生位置代码 
+- 短划线 (可选)  
+- 三个随机数字 
+- 一位数的性别代码
 
 ### <a name="checksum"></a>校验和
 
@@ -8948,9 +9634,9 @@ registration number
 两个字符和六个数字的组合：
   
 - 两个字符 (数字或字母，而不区分大小写) 
-- 一个空格（可选） 
-- 三个数字 
-- 一个空格（可选） 
+- 空格 (可选) 
+- 三个数字
+- 空格 (可选) 
 - 三个数字
     
 ### <a name="checksum"></a>校验和
@@ -8960,7 +9646,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_malta_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_malta_eu_driver's_license_number` 。 
     
@@ -8976,7 +9661,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_malta_eu_driver "s_license_number**
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -9003,7 +9688,7 @@ registration number
 
 七位数字后跟一个字母：
   
--  七个数字  
+- 七位数字 
 - 一个大写字母 (区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -9013,12 +9698,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_malta_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_malta_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_malta_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -9063,7 +9746,7 @@ registration number
   
 ### <a name="pattern"></a>模式
 
- 七个数字 
+七位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -9072,7 +9755,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_malta_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_malta_eu_passport_number` 。 
     
@@ -9088,7 +9770,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_malta_eu_passport_number**
+#### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
 - passport number
 - 马耳他护照号码
@@ -9100,20 +9782,22 @@ registration number
 
 ### <a name="format"></a>Format
 
-对于马耳他 nationals：7位数和指定模式中的一个字母
+对于马耳他 nationals：
+- 七个数字和指定模式中的一个字母
   
-非马耳他语 nationals 和马耳他语实体：9个数字
+非马耳他语 nationals 和马耳他语实体：
+- 九位数字
   
 ### <a name="pattern"></a>模式
 
-马耳他 nationals：7个数字和一个字母
+马耳他 nationals：七位数和一个字母
   
--  七个数字  
+- 七位数字 
 - 一个字母 (不区分大小写) 
     
 非马耳他语 nationals 和马耳他语实体：9个数字
   
--  九个数字 
+- 九位数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -9122,12 +9806,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_malta_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_malta_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_malta_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -9183,16 +9865,16 @@ registration number
 
 ### <a name="format"></a>Format
 
-8-9 个数字（包含可选空格）
+8-9 个数字，包含可选空格
 
 ### <a name="pattern"></a>模式
 
 8-9 个数字：
-- 三个数字  
-- 一个空格（可选）  
-- 三个数字  
-- 一个空格（可选）  
-- 2-3 个数字
+- 三个数字 
+- 空格 (可选)  
+- 三个数字 
+- 空格 (可选)  
+- 双三位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9248,11 +9930,11 @@ registration number
 
 ### <a name="format"></a>Format
 
-10个数字，不含空格和分隔符
+10个数字，无空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10 个数字
+10位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -9261,7 +9943,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_netherlands_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_netherlands_eu_driver's_license_number` 。 
     
@@ -9277,7 +9958,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_netherlands_eu_driver "s_license_number**
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -9304,7 +9985,7 @@ registration number
   
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -9313,12 +9994,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_netherlands_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字。
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_netherlands_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -9378,7 +10057,6 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_netherlands_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_netherlands_eu_passport_number` 。 
     
@@ -9394,7 +10072,7 @@ registration number
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_netherlands_eu_passport_number**
+#### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
 - 荷兰护照号码
 - passport number
@@ -9413,7 +10091,7 @@ registration number
   
 ### <a name="pattern"></a>模式
 
-九个数字 
+九位数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -9422,12 +10100,10 @@ registration number
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_netherlands_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_netherlands_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_netherlands_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -9484,11 +10160,288 @@ registration number
 - tin 编号
 - 锡#
 
+
+## <a name="netherlands-value-added-tax-number"></a>荷兰增值税号
+
+### <a name="format"></a>Format
+
+14个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+14个字符的字母数字模式：
+
+- N 或 n
+- L 或 l
+- 可选空格、点号或连字符
+- 九位数字
+- 可选空格、点号或连字符
+- B 或 b
+- 两位数
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_netherlands_value_added_tax_number 找到与该模式匹配的内容。
+- 找到 Keywords_netherlands_value_added_tax_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_netherlands_value_added_tax_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Netherlands Value Added Tax Number -->
+      <Entity id="4f320d9b-4972-41ae-b337-88d499bb1ade" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+          <Match idRef="Keywords_netherlands_value_added_tax_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_netherlands_value_added_tax_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
+
+- vat 号码
+- vat 编号
+- vat#
+- wearde tafoege 税 getal
+- btw nûmer
+- btw-nummer
+
+
+## <a name="new-zealand-bank-account-number"></a>新西兰银行帐号
+
+### <a name="format"></a>Format
+
+14到16个带可选分隔符的数字模式
+
+### <a name="pattern"></a>模式
+
+14到16个带可选分隔符的数字模式：
+
+- 两位数
+- 一个可选连字符或空格
+- 三到四位数字
+- 一个可选连字符或空格
+- 七位数字
+- 一个可选连字符或空格
+- 两到三个数字
+- 一个选项连字符或空格
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_new_zealand_bank_account_number 找到与该模式匹配的内容。
+- 找到 Keywords_new_zealand_bank_account_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_new_zealand_bank_account_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- New Zealand Bank Account Number -->
+      <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zealand_bank_account_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_bank_account_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
+
+- 帐户号
+- 银行帐户
+- bank_acct_id
+- bank_acct_branch
+- bank_acct_nbr
+
+
+## <a name="new-zealand-drivers-license-number"></a>新西兰驾照号码
+
+### <a name="format"></a>Format
+
+八个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+八个字符的字母数字模式
+
+- 两个字母 
+- 6位数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_newzealand_driver_license_number 找到与该模式匹配的内容。
+- 找到 Keywords_newzealand_driver_license_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_newzealand_driver_license_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- New Zealand Driver License Number -->
+      <Entity id="1924b377-d287-49c9-a737-cfe7a8a2615a" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+          <Match idRef="Keywords_newzealand_driver_license_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_driver_license_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_new_zealand_drivers_license_number"></a>Keyword_new_zealand_drivers_license_number
+
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslicence
+- driverslicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶许可证
+- 驾驶许可
+- driverlic#
+- driverlics#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶许可证#
+- 驾驶许可#
+- 
+international driving permit
+- international driving permits
+- 新西兰汽车协会
+- 新西兰汽车协会
+
+
+## <a name="new-zealand-inland-revenue-number"></a>新西兰 inland 收入编号
+
+### <a name="format"></a>Format
+
+八个或9个带可选分隔符的数字
+
+### <a name="pattern"></a>模式
+
+八个或9个带可选分隔符的数字
+
+- 两个或三个数字
+- 可选空格或连字符
+- 三个数字
+- 可选空格或连字符
+- 三个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_new_zealand_inland_revenue_number 找到与该模式匹配的内容。
+- 找到 Keywords_new_zealand_inland_revenue_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_new_zealand_inland_revenue_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- New Zealand Inland Revenue Number -->
+      <Entity id="dd0fe2bc-7bcf-455f-bac1-83b1e3eb25fd" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+          <Match idRef="Keywords_new_zealand_inland_revenue_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_inland_revenue_number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
+
+- ird。
+- ird no#
+- 新西兰 ird
+- 新西兰 ird
+- ird 编号
+- inland 收入编号
+
+
 ## <a name="new-zealand-ministry-of-health-number"></a>新新西兰的运行状况号码
 
 ### <a name="format"></a>Format
 
-三个字母、一个空格（可选）以及四个数字
+三个字母、一个空格 (可选) 和四位数字
 
 ### <a name="pattern"></a>模式
 
@@ -9517,14 +10470,69 @@ registration number
 </Entity>
 ```
 
-Keywords
+### <a name="keywords"></a>Keywords
 
-Keyword_nz_terms
+#### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
 - NHI 
 - New Zealand 
 - 健康 
 - 治疗 
+
+
+## <a name="new-zealand-social-wlefare-number"></a>新西兰社会 wlefare 号码
+
+### <a name="format"></a>Format
+
+九位数字
+
+### <a name="pattern"></a>模式
+
+九位数字
+
+- 三个数字
+- 可选连字符
+- 三个数字
+- 可选连字符
+- 三个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_newzealand_social_welfare_number 找到与该模式匹配的内容。
+- 找到 Keywords_newzealand_social_welfare_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_newzealand_social_welfare_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Newzealand Social Welfare Number -->
+      <Entity id="20f3c48d-4ac1-4cd2-86bd-34ecc1826e9d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+          <Match idRef="Keywords_newzealand_social_welfare_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_newzealand_social_welfare_number" />
+        </Pattern>
+      </Entity>
+    </Version>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
+
+- 社交 welfare#
+- 社交 welfare#
+- 社会 welfare 编号
+- 社会 welfare 号码
+- swn#
+
    
 ## <a name="norway-identification-number"></a>挪威身份证号码
 
@@ -9535,8 +10543,8 @@ Keyword_nz_terms
 ### <a name="pattern"></a>模式
 
 11 个数字：
-- 六个数字，采用  DDMMYY 格式，代表出生日期  
-- 三位个人号码  
+- 6位数，格式为 DDMMYY，表示出生日期 
+- 三位数的个人号码 
 - 两个校验位
 
 ### <a name="checksum"></a>校验和
@@ -9549,7 +10557,8 @@ Keyword_nz_terms
 - 函数 Func_norway_id_number 找到与该模式匹配的内容。
 - 找到 Keyword_norway_id_number 中的一个关键字。
 - 校验和通过。
-- 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_norway_id_numbe 找到与该模式匹配的内容。
 - 校验和通过。
 
@@ -9587,11 +10596,11 @@ Keyword_nz_terms
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字 
-- 一个连字符  
-- 七个数字  
-- 一个连字符  
-- 一个数字
+- 四位数 
+- 连字符 
+- 七位数字 
+- 连字符 
+- 一位
 
 ### <a name="checksum"></a>校验和
 
@@ -9633,11 +10642,11 @@ Keyword_nz_terms
 
 14位数和2正斜杠：
   
--  五位数字 
-- 一个正斜杠 
-- 两位数字
-- 一个正斜杠 
-- 七个数字
+- 五个数字 
+- 一个正斜杠
+- 两位数
+- 一个正斜杠
+- 七位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -9646,7 +10655,6 @@ Keyword_nz_terms
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_poland_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_poland_eu_driver's_license_number` 。 
     
@@ -9662,7 +10670,7 @@ Keyword_nz_terms
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_poland_eu_driver "s_license_number**
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -9686,7 +10694,7 @@ Keyword_nz_terms
 
 ### <a name="pattern"></a>模式
 
-三个字母（不区分大小写）后跟六个数字
+三个字母 (不区分大小写) 后跟六位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9694,9 +10702,10 @@ Keyword_nz_terms
 
 ### <a name="definition"></a>定义
 
-DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信息：函数 Func_polish_national_id 找到与该模式匹配的内容。
-找到 Keyword_polish_national_id_passport_number 中的一个关键字。
-校验和通过。
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_polish_national_id 找到与该模式匹配的内容。
+- 找到 Keyword_polish_national_id_passport_number 中的一个关键字。
+- 校验和通过。
 
 ```xml
 <!-- Poland Identity Card-->
@@ -9710,7 +10719,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
 - Dowód osobisty
 - 器 dowodu osobistego
@@ -9721,7 +10730,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 - dow. os.
 
    
-## <a name="poland-national-id-pesel"></a>波兰国家/地区 ID (PESEL)
+## <a name="poland-national-id-pesel"></a>波兰国 ID (PESEL) 
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
@@ -9803,22 +10812,82 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
 - 器 paszportu
 - Führerschein-nr. Paszportu
 - Paszport
+
+## <a name="poland-regon-number"></a>波兰 REGON 号码
+
+### <a name="format"></a>Format
+
+9个数字或14个数字
+
+### <a name="pattern"></a>模式
+
+9个数字或14位数字：
+
+- 九位数字或 
+- 九位数字
+- 号
+- 五个数字
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_polish_regon_number 找到与该模式匹配的内容。
+- 找到 Keywords_polish_regon_number 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_polish_regon_number 找到与该模式匹配的内容。
+
+```xml
+      <!-- Polish REGON Number  -->
+      <Entity id="fc87b421-f437-4f8b-b739-29a735ead0d9" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_polish_regon_number" />
+          <Match idRef="Keywords_polish_regon_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_polish_regon_number" />
+        </Pattern>
+      </Entity>
+```
+### <a name="keywords"></a>Keywords
+
+#### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
+
+- regon id
+- 统计数字
+- 统计 id
+- 统计否
+- regon 编号
+- regonid#
+- regonno#
+- 公司 id
+- companyid#
+- companyidno#
+- 器 statystyczny
+- numeru regon
+- numerstatystyczny#
+- numeruregon#
+
 
 ## <a name="poland-tax-identification-number"></a>波兰纳税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
 
 ### <a name="format"></a>Format
 
-不带空格或分隔符的11个数字
+11个不带空格或分隔符的数字
   
 ### <a name="pattern"></a>模式
 
-11位数字
+11 个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -9827,12 +10896,10 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_poland_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_poland_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_poland_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -9852,7 +10919,7 @@ DLP 策略75% 确信在300个字符的邻近度内检测到此类型的敏感信
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
-nip#
+- nip#
 - nip
 - 器 identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
@@ -9889,11 +10956,11 @@ nip#
 
 ### <a name="format"></a>Format
 
-八个数字
+八位数字
 
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9951,10 +11018,10 @@ nip#
 两个字母后跟七个包含特殊字符的数字：
   
 - 两个字母 (不区分大小写)  
-- 一个连字符 
-- 六位数字
+- 连字符
+- 6位数字
 - 一个空格
-- 一个数字
+- 一位
     
 ### <a name="checksum"></a>校验和
 
@@ -9963,7 +11030,6 @@ nip#
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_portugal_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_portugal_eu_driver's_license_number` 。 
     
@@ -9979,7 +11045,7 @@ nip#
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_portugal_eu_driver "s_license_number**
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -10006,8 +11072,8 @@ nip#
 
 一个字母后跟六个数字：
   
-- 一个字母（不区分大小写）
-- 六个数字
+- 一个字母 (不区分大小写) 
+- 6位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10016,7 +11082,6 @@ nip#
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_portugal_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_portugal_eu_passport_number` 。 
     
@@ -10032,9 +11097,12 @@ nip#
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_portugal_eu_passport_number**
+#### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-护照号码葡萄牙语护照号码护照无 número do passaporte
+- passport number
+- 葡萄牙语护照号码
+- 护照号
+- número do passaporte
 
 ## <a name="portugal-tax-identification-number"></a>葡萄牙税号标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -10045,7 +11113,7 @@ nip#
   
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -10054,12 +11122,10 @@ nip#
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_portugal_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_portugal_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_portugal_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -10116,7 +11182,7 @@ nip#
 一个字符后跟八个数字：
   
 - 一个字母 (不区分大小写) 或数字 
-- 八个数字
+- 八位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10125,7 +11191,6 @@ nip#
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_romania_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_romania_eu_driver's_license_number` 。 
     
@@ -10141,7 +11206,7 @@ nip#
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_romania_eu_driver "s_license_number**
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -10175,12 +11240,10 @@ nip#
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_romania_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_romania_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_romania_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -10269,7 +11332,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_romania_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_romania_eu_passport_number` 。 
     
@@ -10285,7 +11347,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_romania_eu_passport_number**
+#### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
 - passport number
 - 罗马尼亚护照号码
@@ -10310,7 +11372,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_romania_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_romania_eu_tax_file_number` 。 
     
@@ -10380,16 +11441,125 @@ national id
 - uniqueidentityno
 
 
+## <a name="russia-passport-number-domestic"></a>俄罗斯护照号码（国内）
+
+### <a name="format"></a>Format
+
+10位数字
+
+### <a name="pattern"></a>模式
+
+10位数字：
+
+- 两位数
+- 可选空格或连字符
+- 两位数
+- 一个可选空格
+- 6位数字
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_Russian_Passport_Number_Domestic 找到与该模式匹配的内容。
+- 找到 Keyword_Russian_Passport_Number 中的关键字。
+
+```xml
+      <!-- Russian Passport Number Domestic -->
+      <Entity id="76ec2f5d-cedb-48e1-8070-1998794af445" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_Domestic" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
+
+- 护照号码
+- 护照号
+- 登记卡#
+- 护照 id
+- passportno#
+- passportnumber#
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт#
+- паспортid#
+- номер паспорта
+- номерпаспорта#
+
+
+## <a name="russia-passport-number-international"></a>俄罗斯护照号码（国际）
+
+### <a name="format"></a>Format
+
+九位数字
+
+### <a name="pattern"></a>模式
+
+9位数字：
+
+- 两位数
+- 可选空格或连字符
+- 七位数字
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_Russian_Passport_Number_International 找到与该模式匹配的内容。
+- 找到 Keyword_Russian_Passport_Number 中的关键字。
+
+```xml
+      <!-- Russian Passport Number International -->
+      <Entity id="ac5f4878-75e4-4b82-af2d-02e13ea9f411" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Russian_Passport_Number_International" />
+          <Match idRef="Keyword_Russian_Passport_Number" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
+
+- 护照号码
+- 护照号
+- 登记卡#
+- 护照 id
+- passportno#
+- passportnumber#
+- паспорт нет
+- паспорт id
+- pоссийской паспорт
+- pусский номер паспорта
+- паспорт#
+- паспортid#
+- номер паспорта
+- номерпаспорта#
+
 
 ## <a name="saudi-arabia-national-id"></a>沙特阿拉伯国家 ID
 
 ### <a name="format"></a>Format
 
-10 个数字
+10位数字
 
 ### <a name="pattern"></a>模式
 
-10 个连续的数字
+10个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -10432,9 +11602,9 @@ national id
 ### <a name="pattern"></a>模式
 
 - 九个字母和数字：
-- 字母“F”、“G”、“S”或“T”（不区分大小写）  
-- 七个数字  
-- 一个字母校验位
+- 字母 "F"、"G"、"S" 或 "T" (不区分大小写)  
+- 七位数字 
+- 字母校验位
 
 ### <a name="checksum"></a>校验和
 
@@ -10489,7 +11659,7 @@ national id
 一个字符后跟七个数字
   
 - 一个字母 (不区分大小写) 或数字
--  七个数字 
+- 七位数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -10498,7 +11668,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_slovakia_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovakia_eu_driver's_license_number` 。 
     
@@ -10514,10 +11683,21 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_slovakia_eu_driver "s_license_number**
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver "s_license_number
 
-dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动程序许可证驱动程序许可证。
-驱动程序许可证驱动程序许可证驱动程序许可证驱动程序的许可证号码驱动程序的许可号驾驶执照号码 dlno # vodičský preukaz
+- 通讯#
+- driver license
+- 驱动程序许可证编号
+- 驱动程序许可证
+- 驱动程序许可证。
+- drivers license
+- drivers licence
+- driver's license
+- 驾驶执照号码
+- 驾驶许可证编号
+- 驾驶执照号码
+- dlno#
+- vodičský preukaz
 
 ## <a name="slovakia-national-identification-number"></a>斯洛伐克国家身份证号
 此敏感信息类型实体仅适用于欧盟国家身份证号敏感信息类型。
@@ -10537,12 +11717,10 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovakia_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovakia_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovakia_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -10628,7 +11806,6 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_slovakia_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovakia_eu_passport_number` 。 
     
@@ -10644,7 +11821,7 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_slovakia_eu_passport_number**
+#### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
 - passport number
 - 斯洛伐克护照号码
@@ -10660,7 +11837,7 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
   
 ### <a name="pattern"></a>模式
 
-10 个数字
+10位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -10669,7 +11846,6 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_slovakia_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovakia_eu_tax_file_number` 。 
     
@@ -10745,7 +11921,7 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
   
 ### <a name="pattern"></a>模式
 
-九个数字
+九位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -10754,7 +11930,6 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_slovenia_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovenia_eu_driver's_license_number` 。 
     
@@ -10770,7 +11945,7 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_slovenia_eu_driver "s_license_number**
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver "s_license_number
 
 - 通讯#
 - driver license
@@ -10797,7 +11972,7 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 
 指定模式中的13个数字：
   
--  与出生日期 (DDMMLLL) 的七位数，其中 "LLL" 对应于出生年份的后三个数字 
+- 与出生日期 (DDMMLLL) 的七位数，其中 "LLL" 对应于出生年份的后三个数字 
 - 与出生区域对应的两个数字
 - 三个数字，对应于出生在同一天的人的性别和序列号组合， (000-499 的男和500-999 的插孔) 
 - 一个校验位
@@ -10809,12 +11984,10 @@ dl # 驱动程序许可证驱动程序许可证号码驱动程序许可证驱动
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovenia_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovenia_eu_national_id_card` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovenia_eu_national_id_card` 找到与该模式匹配的内容。 
     
 ```xml
@@ -10875,7 +12048,7 @@ national id
   
 - 字母 "P"
 - 一个大写字母
-- 七个数字
+- 七位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10884,7 +12057,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_slovenia_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovenia_eu_passport_number` 。 
     
@@ -10900,9 +12072,12 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_slovenia_eu_passport_number**
+#### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-护照号码斯洛文尼亚语护照号码护照无številka potnega lista
+- passport number
+- 斯洛文尼亚护照号码
+- 护照号
+- številka potnega lista
 
 ## <a name="slovenia-tax-identification-number"></a>斯洛文尼亚税标识号
 此敏感信息类型实体仅适用于欧盟税识别号敏感信息类型。
@@ -10913,7 +12088,7 @@ national id
   
 ### <a name="pattern"></a>模式
 
-八个数字
+八位数字
   
 ### <a name="checksum"></a>校验和
 
@@ -10922,12 +12097,10 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovenia_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_slovenia_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_slovenia_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -10971,7 +12144,6 @@ national id
 - 锡#
 
 
-
 ## <a name="south-africa-identification-number"></a>南非身份证号码
 
 ### <a name="format"></a>Format
@@ -10981,11 +12153,11 @@ national id
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 六个数字，采用  YYMMDD 格式，代表出生日期  
-- 四个数字 
-- 一位公民指示码  
-- 数字“8”或“9”  
-- 一个数字，是校验位
+- 6位数，格式为 YYMMDD，表示出生日期 
+- 四位数 
+- 一位公民指示器 
+- 数字 "8" 或 "9" 
+- 一个数字，是校验和数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11025,12 +12197,12 @@ national id
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 六个数字，采用  YYMMDD 格式，代表出生日期  
-- 一个连字符  
-- 一个数字，由世纪和性别  
-- 四位数字的出生地区代码  
-- 一个数字，用于区分前面数字均相同的人  
-- 一个校验位。
+- 6位数，格式为 YYMMDD，表示出生日期 
+- 连字符 
+- 由世纪和性别确定的一位数字 
+- 四位数的出生区域代码 
+- 一种用于区分上述号码相同的人员的数字 
+- 校验位。
 
 ### <a name="checksum"></a>校验和
 
@@ -11081,7 +12253,7 @@ national id
 
 8位数，后跟一个字符：
   
-- 八个数字 
+- 八位数字 
 - 一个数字或字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -11091,7 +12263,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_spain_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_spain_eu_driver's_license_number` 。 
     
@@ -11107,7 +12278,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_spain_eu_driver "s_license_number**
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver "s_license_number
 
 - dlno#
 - 通讯#
@@ -11155,7 +12326,7 @@ national id
 
 七位数字后跟一个字符
   
-- 七个数字 
+- 七位数字
 - 一个数字或字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -11165,7 +12336,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_spain_eu_national_id_card` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_spain_eu_national_id_card"` 。 
     
@@ -11217,9 +12387,9 @@ national id
 
 字母和数字的八个或九个字符的组合：
   
--  两位数字或字母 
+- 两位数字或字母 
 - 一个数字或字母 (可选) 
-- 六个数字
+- 6位数字
     
 ### <a name="checksum"></a>校验和
 
@@ -11228,7 +12398,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_spain_eu_passport_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_spain_eu_passport_number` 。 
     
@@ -11244,7 +12413,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-**Keywords_spain_eu_passport_number**
+#### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
 - 登记卡
 - 西班牙护照
@@ -11267,11 +12436,11 @@ national id
 ### <a name="pattern"></a>模式
 
 11-12 位数：
-- 两位数字 
-- 正斜杠（可选） 
-- 7-8 位数字 
-- 正斜杠（可选） 
-- 两位数字
+- 两位数 
+- 可选) 的正斜杠 ( 
+- 七到八位数字 
+- 可选) 的正斜杠 ( 
+- 两位数
 
 ### <a name="checksum"></a>校验和
 
@@ -11307,31 +12476,31 @@ national id
 
 具有西班牙国家标识卡片的西班牙语自然人：
   
--  八个数字 
+- 八位数字 
 - 一个大写字母 (区分大小写)  
     
 不包含西班牙国家的非居民 Spaniards 国家标识卡片
   
 - 一个大写的字母 "L" (区分大小写) 
-- 七个数字 
+- 七位数字
 - 一个大写字母 (区分大小写)  
     
 在没有西班牙国内身份证的14年年龄下的居民 Spaniards：
   
 - 一个大写的字母 "K" (区分大小写) 
--  七个数字  
+- 七位数字 
 - 一个大写字母 (区分大小写) 
     
 带有 Foreigner 标识号的 Foreigners
   
 - 一个大写的字母，为 "X"、"Y" 或 "Z" (区分大小写)  
-- 七个数字 
+- 七位数字
 - 一个大写字母 (区分大小写)  
     
 没有 Foreigner 标识号的 Foreigners
   
 - 一个大写字母为 "M" (区分大小写)  
-- 七个数字 
+- 七位数字
 - 一个大写字母 (区分大小写)  
     
 ### <a name="checksum"></a>校验和
@@ -11341,12 +12510,10 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_spain_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_spain_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_spain_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -11484,9 +12651,9 @@ national id
 
 10位数，包含连字符：
   
--  六位数字 
-- 一个连字符
-- 四个数字
+- 6位数字 
+- 连字符
+- 四位数
     
 ### <a name="checksum"></a>校验和
 
@@ -11495,7 +12662,6 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 正则表达式  `Regex_sweden_eu_driver's_license_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_sweden_eu_driver's_license_number` 。 
     
@@ -11527,20 +12693,20 @@ national id
 - dlno#
 - körkort
 
-## <a name="sweden-national-id"></a>瑞典国家/地区身份证号码
+## <a name="sweden-national-id"></a>瑞典国家 ID
 此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
 
 ### <a name="format"></a>Format
 
-10 个或 12 个数字和一个可选分隔符
+10或12个数字和一个可选分隔符
 
 ### <a name="pattern"></a>模式
 
-10 或 12 位数字和可选的分隔符：
-- 2-4 位数字（可选） 
+10或12个数字和一个可选分隔符：
+- 2到4位 (可选)  
 - 采用日期格式 YYMMDD 的六位数字 
-- “-”或“+”（可选）的分隔符，加
-- 四个数字
+- 分隔符 "-" 或 "+" (可选) ，外加
+- 四位数
 
 ### <a name="checksum"></a>校验和
 
@@ -11570,11 +12736,11 @@ national id
 
 ### <a name="format"></a>Format
 
-八个数字
+八位数字
 
 ### <a name="pattern"></a>模式
 
-八个连续的数字
+八个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11584,9 +12750,9 @@ national id
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_sweden_passport_number 找到与该模式匹配的内容。
-- 下列其中一项为真：
-    - 找到 Keyword_passport 中的一个关键字。
-    - 找到 Keyword_sweden_passport 中的一个关键字。
+- 满足以下条件之一：
+    - 找到 Keyword_passport 中的关键字。
+    - 找到 Keyword_sweden_passport 中的关键字。
 
 ```xml
 <!-- Sweden Passport Number -->
@@ -11647,7 +12813,7 @@ national id
 
 12 个数字：
   
--  对应于出生日期 (YYYYMMDD) 的8位数字 
+- 对应于出生日期 (YYYYMMDD) 的8位数字 
 - 与序列号对应的三个数字，其中： 
   - 序列号中的最后一个数字指示在为 "男" 分配一个奇数号码时的性别，以及一个 "女" 的偶数号码。
   - 最多1990，将序列号 corresponded 分配给那些号码的持有者出生或 (的县。如果在 1947) 之前出生，则根据纳税记录在年1月1日的) 使用特殊代码 (通常为9的 immigrants 的1947第七位数字 
@@ -11660,12 +12826,10 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_sweden_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_sweden_eu_ssn_or_equivalent` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_sweden_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
     
 ```xml
@@ -11724,12 +12888,10 @@ national id
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_sweden_eu_tax_file_number` 找到与该模式匹配的内容。 
 - 找到了中的关键字  `Keywords_sweden_eu_tax_file_number` 。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_sweden_eu_tax_file_number` 找到与该模式匹配的内容。 
     
 ```xml
@@ -11775,21 +12937,20 @@ national id
 - 锡#
 
 
-
 ## <a name="swift-code"></a>SWIFT 代码
 
 ### <a name="format"></a>Format
 
-四个字母后跟 5-31 个字母或数字
+四个字母后跟5-31 个字母或数字
 
 ### <a name="pattern"></a>模式
 
-四个字母后跟 5-31 个字母或数字：
-- 四个字母的银行代码（不区分大小写） 
-- 可选空格 
+四个字母后跟5-31 个字母或数字：
+- 四个字母的银行代码 (不区分大小写)  
+- 一个可选空格 
 - 4-28 个字母或数字（基本银行账号 (BBAN)） 
-- 可选空格 
-- 1-3 个字母或数字（BBAN 的剩余内容）
+- 一个可选空格 
+- BBAN 的余数 (1 到3个字母或数字) 
 
 ### <a name="checksum"></a>校验和
 
@@ -11845,18 +13006,89 @@ national id
 - le numéro BIC 
 - \# NUMÉRO 
 - code identificateur de banque 
+
+
+## <a name="swiss-ssn-ahv-number"></a>瑞士 SSN AHV 号码
+
+### <a name="format"></a>Format
+
+13位数字
+
+### <a name="pattern"></a>模式
+
+13位数字：
+
+- 三位数-756
+- 一个可选的点
+- 四位数
+- 一个可选的点
+- 四位数
+- 一个可选的点
+- 两位数
+
+### <a name="checksum"></a>校验和
+
+是
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数 Func_swiss_social_security_number_ahv 找到与该模式匹配的内容。
+- 找到 Keywords_swiss_social_security_number_ahv 中的关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_swiss_social_security_number_ahv 找到与该模式匹配的内容。
+
+```xml
+      <!-- Swiss SSN AHV Number -->
+      <Entity id="277cfa4b-6eaa-4a1b-9492-099dec849971" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+          <Match idRef="Keywords_swiss_social_security_number_ahv" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_swiss_social_security_number_ahv" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
+
+- ahv
+- ssn
+- pid
+- 保险号
+- personalidno#
+- social security number
+
+- 个人 id 号
+- 个人识别码。
+- insuranceno#
+- uniqueidno#
+- 唯一标识 "否"。
+- avs 号码
+- 个人标识无 versicherungsnummer
+- identifikationsnummer
+- einzigartige identität nicht
+- sozialversicherungsnummer
+- 标识 personnelle id
+- 
+numéro de sécurité sociale
+
    
 ## <a name="taiwan-national-identification-number"></a>台湾国家标识号码
 
 ### <a name="format"></a>Format
 
-一个字母后跟九个数字
+一个英文)  (，后跟9个数字
 
 ### <a name="pattern"></a>模式
 
-一个字母后跟 9 位数字：
-- 一个字母（英文，不区分大小写） 
-- 数字“1”或“2” 
+一个英文字母 (，后跟9个数字) ：
+- 一个英文字母 (，不区分大小写)  
+- 数字 "1" 或 "2" 
 - 八位数字
 
 ### <a name="checksum"></a>校验和
@@ -11889,7 +13121,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_taiwanese_national_id"></a>Keyword_taiwanese_national_id
+#### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
 - 身份證字號 
 - 證 
@@ -11915,11 +13147,11 @@ national id
 
 ### <a name="pattern"></a>模式
 生物识别护照号码：
-- 数字“3”  
-- 八个数字
+- 字符 "3" 
+- 八位数字
 
 不带生物的护照号码：
-- 九个数字
+- 九位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11958,13 +13190,13 @@ national id
 
 ### <a name="format"></a>Format
 
-10 letters and digits
+10个字母和数字
 
 ### <a name="pattern"></a>模式
 
-10 个字母和数字
-- 两个字母（不区分大小写）  
-- 八个数字
+10个字母和数字：
+- 两个字母 (不区分大小写)  
+- 八位数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12011,7 +13243,7 @@ national id
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 第一个数字不是0或9 
+- 第一个数字不是零或九 
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -12042,7 +13274,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
+#### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
 - ID Number
 - 标识号码
@@ -12089,7 +13321,7 @@ national id
 
 ### <a name="keywords"></a>Keywords
 
-#### <a name="keyword_turkish_national_id"></a>Keyword_Turkish_National_Id
+#### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik No
 - TC Kimlik numarası
@@ -12106,11 +13338,11 @@ national id
 ### <a name="pattern"></a>模式
 
 18 个字母和数字：
-- 用五个字母（不区分大小写）或数字“9”来代替一个字母 
-- 一位数字 
+- 5个字母 (不区分大小写) 或数字 "9" 代替字母 
+- 一位 
 - 日期格式 MMDDY 中的五个数字。出生日期 (第七个字符将增加50如果驱动程序是女，即51到62而不是01到 12) 
-- 用两个字母（不区分大小写）或数字“9”来代替一个字母 
-- 五位数字
+- 两个字母 (不区分大小写) 或数字 "9" 代替一个字母 
+- 五个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12157,11 +13389,11 @@ national id
 
 ### <a name="format"></a>Format
 
-两个字母后跟 1-4 个数字
+两个字母后跟1-4 位数字
 
 ### <a name="pattern"></a>模式
 
-两个字母（不区分大小写）后跟 1-4 个数字
+两个字母 (不区分大小写) 后接1-4 个号码
 
 ### <a name="checksum"></a>校验和
 
@@ -12204,11 +13436,11 @@ national id
 ### <a name="pattern"></a>模式
 
 10-17 位数字：
-- 3 或 10 位数字 
+- 3个或10个数字 
 - 一个空格 
-- 三位数字 
+- 三个数字 
 - 一个空格 
-- 四位数字
+- 四位数
 
 ### <a name="checksum"></a>校验和
 
@@ -12267,26 +13499,26 @@ national id
 
 ### <a name="format"></a>Format
 
-由空格或短划线分隔的7个字符或9个字符
+由空格或短划线分隔的七个字符或九个字符
 
 ### <a name="pattern"></a>模式
 
 两种可能的模式：
 
 -  (有效 NINOs 的两个字母仅使用此前缀中的特定字符，此格式将对此进行验证;不区分大小写) 
-- 六位数字
+- 6位数字
 - "A"、"B"、"C" 或 "d" (类似于前缀，后缀中只允许有某些字符;不区分大小写) 
 
 OR
 
 - 两个字母
-- 一个空格或破折号
-- 两位数字
-- 一个空格或破折号
-- 两位数字
-- 一个空格或破折号
-- 两位数字
-- 一个空格或破折号
+- 空格或短划线
+- 两位数
+- 空格或短划线
+- 两位数
+- 空格或短划线
+- 两位数
+- 空格或短划线
 - 要么是 "A"、"B"、"C"，要么 ' d '
 
 ### <a name="checksum"></a>校验和
@@ -12375,12 +13607,10 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-  
 - 函数  `Func_uk_eu_tax_file_number` 找到与该模式匹配的内容。 
-    
 - 找到了中的关键字  `Keywords_uk_eu_tax_file_number` 。 
     
-```
+```xml
  <!-- EU Tax File Number -->
 <Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
@@ -12483,9 +13713,9 @@ OR
 
 ### <a name="pattern"></a>模式
 
-取决于州 — 例如，纽约：
+取决于状态-例如，纽约：
 - 与 ddd ddd ddd 相匹配的9个数字的格式将会匹配。
-- 诸如 dddddddd 的 9 个数字将不匹配。
+- 9个数字（如 ddddddddd）将不匹配。
 
 ### <a name="checksum"></a>校验和
 
@@ -12624,31 +13854,31 @@ OR
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
 
-- 州缩写（例如，“NY”） 
-- 州名称（例如，“New York”）
+- 状态缩写 (例如，"NY" )  
+- 状态名称 (例如，"纽约" ) 
 
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>美国单个纳税人标识号 (ITIN) 
 
 ### <a name="format"></a>Format
 
-九个数字，以“9”开头，“7”或“8”作为第四个数字，可以采用空格或短划线格式
+九个数字，以 "9" 开头，并包含 "7" 或 "8" 作为第四个数字，可以选择使用空格或短划线进行格式设置
 
 ### <a name="pattern"></a>模式
 
 格式
-- 数字“9” 
-- 两位数字 
-- 一个空格或破折号 
-- “7”或“8” 
-- 一位数字 
-- 一个空格或破折号 
-- 四位数字
+- 数字 "9" 
+- 两位数 
+- 空格或短划线 
+- "7" 或 "8" 
+- 一个数字 
+- 空格或短划线 
+- 四位数
 
 纯
-- 数字“9” 
-- 两位数字 
-- “7”或“8” 
-- 五位数字
+- 数字 "9" 
+- 两位数 
+- "7" 或 "8" 
+- 五个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12724,14 +13954,14 @@ OR
 
 ### <a name="format"></a>Format
 
-9 个数字，可以是格式化模式，也可以是非格式化模式
+9个数字，可以是格式化或无格式的模式
 
 > [!NOTE]
 > 如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。
 
 ### <a name="pattern"></a>模式
 
-四种不同模式中的 SSN 的四种函数外观：
+四个函数在四种不同的模式中查找 Ssn：
 - Func_ssn 查找具有 2011 年以前使用短划线或空格格式化的强格式的 SSN（ddd-dd-dddd 或 ddd dd dddd）
 - Func_unformatted_ssn 查找具有 2011 年以前未格式化为 9 个连续数字的强格式的 SSN (ddddddddd)
 - Func_randomized_formatted_ssn 查找 2011 年后使用短划线或空格（ddd-dd-dddd 或 ddd dd dddd）格式化的 SSN
@@ -12805,11 +14035,11 @@ OR
 
 ### <a name="format"></a>Format
 
-九个数字
+九位数字
 
 ### <a name="pattern"></a>模式
 
-九个连续的数字
+九个连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12852,3 +14082,87 @@ OR
 - Passeport# 
 - PasseportNon 
 - Passeportn ° 
+
+## <a name="ukraine-passport-domestic"></a>乌克兰护照国内
+
+### <a name="format"></a>Format
+
+九位数字
+
+### <a name="pattern"></a>模式
+
+九位数字
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_Ukraine_Passport_Domestic 找到与该模式匹配的内容。
+- 找到 Keyword_Ukraine_Passport_Domestic 中的关键字。
+
+```xml
+      <!-- Ukraine Passport Domestic -->
+      <Entity id="1817a540-221f-4459-9202-3bd78b81d803" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+        <IdMatch idRef="Regex_Ukraine_Passport_Domestic"/>
+          <Match idRef="Keyword_Ukraine_Passport_Domestic"/>
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
+
+- 乌克兰护照
+- 护照号码
+- 护照号
+- паспорт України
+- номер паспорта
+- персональний
+
+
+## <a name="ukraine-passport-international"></a>乌克兰护照（国际）
+
+### <a name="format"></a>Format
+
+八个字符的字母数字模式
+
+### <a name="pattern"></a>模式
+
+八个字符的字母数字模式：
+- 两个字母或数字
+- 6位数字
+
+### <a name="checksum"></a>校验和
+
+否
+
+### <a name="definition"></a>定义
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_Ukraine_Passport_International 找到与该模式匹配的内容。
+- 找到 Keyword_Ukraine_Passport_International 中的关键字。
+
+```xml
+      <!-- Ukraine Passport International -->
+      <Entity id="cfbe032d-22e0-4f28-ab68-d66e9641f1e2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_Ukraine_Passport_International"/>
+          <Match idRef="Keyword_Ukraine_Passport_International"/>
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Keywords
+
+#### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
+
+- 乌克兰护照
+- 护照号码
+- 护照号
+- паспорт України
+- номер паспорта

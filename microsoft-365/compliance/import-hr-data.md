@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，将员工数据从其组织的人力资源 (HR) 系统导入 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289247"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817157"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以将 HR 数据导入 (预览) 
 
-您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源 (HR) 与事件相关的数据，如用户的辞职或用户的工作级别中的更改。 此 HR 数据可由 [内幕风险管理解决方案](insider-risk-management.md) 使用，以生成风险指标，可帮助您标识组织内部用户可能存在的恶意活动或数据被窃。
+您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源 (HR) 与事件相关的数据，如用户的辞职或用户的工作级别中的更改。 然后， [内幕风险管理解决方案](insider-risk-management.md) 可以使用 HR 数据生成风险指标，这些指标可帮助您在组织内部的用户标识可能的恶意活动或数据被窃。
 
 为内幕风险管理策略可用于生成风险指标的 HR 数据设置连接器包括创建包含 HR 数据的 CSV 文件，在 Azure Active Directory 中创建一个用于身份验证的应用程序，在 Microsoft 365 合规性中心中创建一个 HR 数据连接器，然后以 ingests 的方式运行一个脚本 (，以将 CSV 文件中的 HR 数据到 Microsoft 云，从而使其可用于内部人员风险管理) 解决方案。
 
@@ -91,8 +91,8 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 | **列**  |  **说明**|
 |:------------|:----------------|
 |**EmailAddress**| 指定终止的用户 (UPN) 的电子邮件地址。|
-| **ResignationDate** | 指定在您的组织中正式终止用户雇用的日期。 例如，这可能是用户在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **LastWorkingDate** | 指定终止的用户的最后一天的工作。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **ResignationDate** | 指定在您的组织中正式终止用户雇用的日期。 例如，这可能是用户在离开你的组织时给出通知的日期。 此日期可能与人员的最后一天的工作日期不同。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
+| **LastWorkingDate** | 指定终止的用户的最后一天的工作。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>作业级更改数据的 CSV 文件
@@ -110,10 +110,10 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 | **列**|**说明**|
 |:--------- |:------------- |
 | **EmailAddress**  | 指定用户的电子邮件地址 (UPN) 。|
-| **EffectiveDate** | 指定用户的作业级别的正式更改日期。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **备注**| 指定评估程序已提供有关作业级别更改的备注。 这是一个长度限制为200个字符的文本参数。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
-| **OldLevel**| 指定用户在更改之前的作业级别。 这是一个自由文本参数，可以包含您的组织的层次分类。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
-| **NewLevel**| 指定用户的作业级别更改后的级别。 这是一个自由文本参数，可以包含您的组织的层次分类。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
+| **EffectiveDate** | 指定用户的作业级别的正式更改日期。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
+| **备注**| 指定评估程序已提供有关作业级别更改的备注。 您可以输入200个字符的限制。 此参数是可选的。 您无需将其包含在 CSV 文件中。|
+| **OldLevel**| 指定用户在更改之前的作业级别。 这是一个自由文本参数，可以包含您的组织的层次分类。 此参数是可选的。 您无需将其包含在 CSV 文件中。|
+| **NewLevel**| 指定用户的作业级别更改后的级别。 这是一个自由文本参数，可以包含您的组织的层次分类。 此参数是可选的。 您无需将其包含在 CSV 文件中。|
 |||
 
 ### <a name="csv-file-for-performance-review-data"></a>用于性能检查数据的 CSV 文件
@@ -131,9 +131,9 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 | **列**|**说明**|
 |:----------|:--------------|
 | **EmailAddress**  | 指定用户的电子邮件地址 (UPN) 。|
-| **EffectiveDate** | 指定用户在其性能评审的结果中获得官方通知的日期。 这可以是绩效考核周期结束的日期。 必须使用以下日期格式：，即 `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **备注**| 指定评估程序为用户提供的用于性能评审的任何备注。 这是一个长度限制为200个字符的文本参数。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
-| **Rating**| 指定为执行性能评审而提供的分级。 这是一个文本参数，可包含贵组织用于识别评估的任意自由格式文本。 例如，"3 达到预期" 或 "低于平均值 2"。 这是一个文本参数，最大限制为25个字符。 这是一个可选参数。 您无需将其包含在 CSV 文件中。|
+| **EffectiveDate** | 指定用户在其性能评审的结果中获得官方通知的日期。 这可以是绩效考核周期结束的日期。 使用以下日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` （ [ISO 8601 日期和时间格式](https://www.iso.org/iso-8601-date-and-time-format.html)）。|
+| **备注**| 指定评估程序为用户提供的用于性能评审的任何备注。 这是一个长度限制为200个字符的文本参数。 此参数是可选的。 您无需将其包含在 CSV 文件中。|
+| **Rating**| 指定为执行性能评审而提供的分级。 这是一个文本参数，可包含贵组织用于识别评估的任意自由格式文本。 例如，"3 达到预期" 或 "低于平均值 2"。 这是一个文本参数，最大限制为25个字符。 此参数是可选的。 您无需将其包含在 CSV 文件中。|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>用于性能改进计划数据的 CSV 文件
@@ -255,7 +255,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    b. **指向示例脚本的链接。** 单击 **此处** 链接转到 GitHub 站点以访问示例脚本 (链接将) 中打开新的窗口。 保持此窗口处于打开状态，以便您可以在第4步中复制脚本。 或者，也可以将目标做成书签或复制 URL，以便在运行脚本时可以再次访问它。 此链接在 "连接线" 弹出页面上也可用。
 
-9. 单击“**完成**”。
+9. 单击“完成”****。
 
    新的连接器将显示在 " **连接器** " 选项卡上的列表中。
 

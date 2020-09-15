@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何确定可在 Microsoft 365 中的 Exchange Online 邮箱上放置的不同保留类型。
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547450"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816821"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何识别为 Exchange Online 邮箱设置的保留类型
 
@@ -40,11 +40,9 @@ Microsoft 365 提供了多种方法，使您的组织可以阻止邮箱内容被
 
   有两种类型的 Microsoft 365 保留策略可分配给邮箱。
 
-    - **特定位置保留策略：** 这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange Online PowerShell 中的 **邮箱获取** cmdlet 获取有关分配给特定邮箱的保留策略的信息。
+    - **特定位置保留策略：** 这些是分配给特定用户的内容位置的策略。 您可以使用 Exchange Online PowerShell 中的 **邮箱获取** cmdlet 获取有关分配给特定邮箱的保留策略的信息。 有关此类型的保留策略的详细信息，请参阅保留策略文档中 [带有特定包含或排除的策略](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) 一节。
 
-    - **组织范围内的保留策略：** 这些是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的 **set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。
-    
-  有关详细信息，请参阅 [将保留策略应用于整个组织或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) 部分。
+    - **组织范围内的保留策略：** 这些是分配给组织中的所有内容位置的策略。 您可以使用 Exchange Online PowerShell 中的 **set-organizationconfig** cmdlet 来获取有关组织范围的保留策略的信息。 有关此类型的保留策略的详细信息，请参阅保留策略文档中 [适用于整个位置的策略](create-retention-policies.md#a-policy-that-applies-to-entire-locations) 部分。
 
 - **[Microsoft 365 保留标签](retention.md)：** 如果用户将 microsoft 365 保留标签 (配置为保留内容或保留，然后删除其邮箱中的 *任何* 文件夹或项目的内容) ，则邮箱上将放置在邮箱中，就像邮箱被置于诉讼保留或分配到 Microsoft 365 保留策略一样。 有关详细信息，请参阅 [保留邮箱处于保留状态，因为已将保留标签应用于本文中的文件夹或项目](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) 部分。
 

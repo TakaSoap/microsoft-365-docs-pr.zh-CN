@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在审阅集中创建和运行查询，以在高级电子数据展示事例中组织数据以实现更高效的审阅。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527432"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816715"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查询审阅集中的数据
 
@@ -30,13 +30,13 @@ ms.locfileid: "46527432"
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>在审阅集中创建和运行查询
 
-若要在审阅集中对文档创建和运行查询，请单击 "审阅集" 中的 "**新建查询**"。 命名查询并定义条件后，单击 "**保存**" 以保存并运行查询。 若要运行以前保存的查询，请单击已保存的查询。
+若要在审阅集中对文档创建和运行查询，请选择 "审阅集" 中的 " **新建查询** "。 命名查询并定义条件后，请选择 " **保存** " 以保存并运行查询。 若要运行以前保存的查询，请选择一个已保存的查询。
 
 ![查看集查询](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>生成审阅集查询
 
-可以在关键字条件卡中使用条件卡片和查询语言的组合来构建查询。 您还可以将条件卡组合成一个块（称为 "*条件组*"），以生成更复杂的查询。 有关可以搜索的元数据属性的列表和说明，请参阅[高级电子数据展示中的文档元数据字段](document-metadata-fields-in-Advanced-eDiscovery.md)。
+可以在关键字条件卡中使用条件卡片和查询语言的组合来构建查询。 您还可以将条件卡片组合在一起，将其作为称为 *条件组* 的块 () 生成更复杂的查询。 有关可以搜索的元数据属性的列表和说明，请参阅 [高级电子数据展示中的文档元数据字段](document-metadata-fields-in-Advanced-eDiscovery.md)。
 
 ### <a name="condition-cards"></a>条件卡片
 
@@ -54,11 +54,11 @@ ms.locfileid: "46527432"
 
 ### <a name="query-language"></a>查询语言
 
-除了条件卡片之外，还可以在关键字卡片中使用类似 KQL 的查询语言来生成查询。 评审 set 查询的查询语言支持标准布尔运算符，例如**AND**、 **OR**、 **NOT**和**NEAR**。 它还支持单字符通配符（？）和多字符通配符（*）。
+除了条件卡片之外，还可以在关键字卡片中使用类似 KQL 的查询语言来生成查询。 评审 set 查询的查询语言支持标准布尔运算符，例如 **AND**、 **OR**、 **NOT**和 **NEAR**。 它还支持单字符通配符 (？ ) 和多字符通配符 ( * ) 。
 
-## <a name="using-filters"></a>使用筛选器
+## <a name="filters"></a>筛选器
 
-除了可以保存的查询之外，还可以使用审阅设置筛选器将其他条件快速应用于审阅集查询。 这可帮助您进一步优化由审阅集查询显示的结果。
+除了可以保存的查询之外，还可以使用审阅设置筛选器将其他条件快速应用于审阅集查询。 使用筛选器可帮助您进一步优化由审阅集查询显示的结果。
 
 ![查看设置筛选器](../media/AeDReviewSetFilters.png)
 
