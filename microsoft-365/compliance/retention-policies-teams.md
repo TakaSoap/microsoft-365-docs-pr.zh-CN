@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394689"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816735"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -100,10 +100,6 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 ## <a name="limitations"></a>限制
 
 我们正在不断努力优化 Teams 中的保留功能。 在此期间，在对 Teams 频道消息和聊天使用保留时，需要注意以下几个限制：
-
-- **组织范围策略不包含 Teams**。 若要创建全组织范围策略，则不包括 Teams 频道消息和 Teams 聊天，因为它们需要单独的保留策略。
-
-- **Teams 不支持高级保留**。 创建保留策略时，如果选择“[标识满足特定条件的内容的高级设置](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)”，则 Teams 位置不可用。 当你选择这些位置时，Teams 中的保留适用于所有聊天和频道消息内容。
 
 - **配置 Teams 频道消息的保留策略时，不包括专用频道中的 Teams 消息**。 保留策略目前不支持专用频道。 
 
