@@ -3,7 +3,7 @@ title: Microsoft 365 多地理位置
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 在本文中，您将了解如何使用 Microsoft 365 多地理位置将 Microsoft 365 的状态扩展到多个地理区域。
-ms.openlocfilehash: a5843b98b5d64dfb3872c3d8a5d48c0e56949c02
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688014"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825347"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -26,9 +26,9 @@ ms.locfileid: "46688014"
   
 通过 Microsoft 365 多地理位置，你可以在选择的地理位置中预配和存储静态数据，以满足数据驻留要求，与此同时，开启面向员工的现代生产力体验的全球推广。
 
-#### <a name="video-introducing-microsoft-365-multi-geo"></a>视频：介绍 Microsoft 365 多地理位置
+有关 Microsoft 365 多地理位置的视频简介，请参阅 [SharePoint Online 和 OneDrive 多地理位置，以控制数据所在的位置](https://www.youtube.com/watch?v=Do9U3JuROhk)。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
+## <a name="multi-geo-architecture"></a>多地理位置体系结构
 
 在多地理位置环境中，Microsoft 365 租户由（最初在其中设置了 Microsoft 365 订阅）的中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在 Azure Active Directory (Azure AD) 中进行管控。 由于系统会集中管理你的租户信息并同步到每个地理位置中，因此共享操作以及涉及到公司中任何人的体验均包含全局意识。
 

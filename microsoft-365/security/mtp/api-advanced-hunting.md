@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 92d5d2840963ae00ae0f03e3359f287371f770ee
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650174"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825370"
 ---
 # <a name="advanced-hunting-apis"></a>高级搜寻 Api
 
@@ -37,8 +37,10 @@ ms.locfileid: "47650174"
 ## <a name="limitations"></a>限制
 1. 只能对最近30天的数据运行查询。
 2. 结果将包含最多100000行。
-3. 执行次数限制为每个租户：每分钟最多15个呼叫、每小时15分钟的运行时间和4小时的运行时间。
+3. 对每个租户执行的次数限制为：每分钟最多10个呼叫、每小时运行时间为10分钟，每小时运行一次，运行时间为4小时。
 4. 单个请求的最大执行时间为10分钟。
+5. 429响应将表示通过请求数或 CPU 达到配额限制。 429响应正文也会指示续订配额前的时间。 
+
 
 ## <a name="permissions"></a>权限
 若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限，请参阅 [访问 Microsoft 威胁防护 api](api-access.md)
@@ -68,7 +70,7 @@ Content-Type    | application/json
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | 描述
+参数 | 类型    | 说明
 :---|:---|:---
 查询 | 文本 |  要运行的查询。 **** 必需。
 
