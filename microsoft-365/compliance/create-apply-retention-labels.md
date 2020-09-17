@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容
-ms.openlocfilehash: a301568e80bdfe0681b052225852cde8bf8cdf50
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778310"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816911"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并在应用中应用它们
 
@@ -68,15 +68,17 @@ ms.locfileid: "46778310"
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 要使用保留标签将内容声明为记录，请启用“**使用标签将内容分类为“记录”**”复选框。
+    - 若要使用保留标签声明[记录](records-management.md#records)，请启用“**将项目标记为记录**”的选项。
 
-3. 重复这些步骤以创建更多标签。
+3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”启动同一向导，以便在步骤 2 中更改标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的“编辑”**** 选项，直接转到相关页面进行更新。
+4. 重复这些步骤以创建更多标签。
+
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 ### <a name="step-2-publish-retention-labels"></a>第 2 步：发布保留标签
 
-发布保留标签，以便管理员和用户可以应用它们。
+发布保留标签，以便用户可以在 SharePoint 和 Outlook 等应用中应用它们。
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
@@ -92,7 +94,7 @@ ms.locfileid: "46778310"
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。 
 
-若要编辑现有保留标签策略，请将其选中，然后选择“**编辑策略**”启动同一向导，以便在步骤 2 中更改策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
+若要编辑现有的保留标签策略（策略类型是“**发布**”）"，请选择它，然后选择“**编辑**”选项，以启动“编辑保留策略”。 此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
@@ -246,7 +248,8 @@ For example, you can create a rule that applies a specific retention label to al
 To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advanced Options** \> **Rules Wizard** \> **apply retention policy**.
   
 ![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
-  
+
+Although the UI refers to retention policies, it's your retention labels that display here and can be selected, not your retention policies.
 
 ## Updating retention labels and their policies
 
