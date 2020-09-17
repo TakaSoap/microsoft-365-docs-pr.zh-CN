@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 088a521089d34e74865c94b3cd147b02f8d812cb
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315809"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816958"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -80,9 +80,11 @@ ms.locfileid: "47315809"
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 要使用保留标签将内容声明为记录，请启用“**使用标签将内容分类为“记录”**”复选框。
+    - 若要使用保留标签声明[记录](records-management.md#records)，请启用“**将项目标记为记录**”的选项。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”启动同一向导，以便在步骤 2 中更改标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
+3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“**将此标签自动应用到特定的内容类型**”，然后选择“**完成**”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
+
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>步骤 2：创建自动应用策略
@@ -92,20 +94,21 @@ ms.locfileid: "47315809"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：“**信息治理**”：
-        - “**解决方案**” > “**记录管理**” > “**标签策略**”选项卡 >“**自动应用标签**”
+        - **“解决方案”** > **“记录管理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
     - 如果你没有使用记录管理：
-        - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**自动应用标签**”
+        - **“解决方案”** > **“信息治理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
     没有立即看到你的选项？ 首先选择“**全部显示**”。 
 
-2. 按照向导中的提示进行操作。
+2. 按照“创建自动标记向导”中的提示进行操作。
     
     有关配置自动应用保留标签的条件的信息，请参阅此页面上的[配置自动应用保留标签的条件](#configuring-conditions-for-auto-apply-retention-labels)部分。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。
 
-若要编辑现有自动应用标签策略，请将其选中，然后选择“**编辑策略**”启动同一向导，以便在步骤 2 中更改策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。 或者，选择任意可用的**编辑**选项，直接转到相关页面进行更新。
+若要编辑现有的自动应用策略，请将其选中以启动“编辑保留策略向导”，该向导可用于更改从第 2 步中选定的保留标签和的任何[符合条件的设置](#updating-retention-labels-and-their-policies) 。
+
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>配置自动应用保留标签的条件
 
@@ -119,17 +122,19 @@ ms.locfileid: "47315809"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
-为敏感信息创建自动应用保留标签时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 预配置每个策略模板以查找特定类型的敏感信息。 例如，此处显示的模板用于查找美国 ITIN、SSN 和护照号码。 若要深入了解 DLP，请参阅[数据丢失防护策略概述](data-loss-prevention-policies.md)。
-  
+为敏感信息创建自动应用保留标签时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自“**隐私**”类别的美国 ITIN、SSN 和护照号码，以及**美国个人身份信息（PII）数据模板**：
+
 ![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+
+若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。
+
+选择策略模板后，可添加或删除任意类型的敏感信息，且可更改实例计数和匹配准确度。 在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
   
-选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例中，保留标签仅在以下情况下自动应用：
-  
-- 内容包含的这三种类型敏感信息的实例数介于 1 和 9 个之间。可删除“最大”**** 值，这样就会变为“任意”****。
-    
-- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小**匹配准确度越低，内容越容易与条件匹配。 
-    
-要详细了解这些选项，请参阅[微调规则以增加或降低匹配的难度](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小**匹配准确度越低，内容越容易与条件匹配。
+
+- 内容包含 1 到 9 个这三种敏感信息类型的实例。 可删除“**至**”值，将其更改为“**任何**”。
+
+有关这些选项的详细信息，请参阅 DLP 文档中的以下指南“[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)”。
     
 ![用于确定敏感信息类型的选项](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
@@ -137,7 +142,7 @@ ms.locfileid: "47315809"
 
 可使用包含特定字词、短语或可搜索属性值的查询对内容自动应用标签。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
 
-![查询编辑器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![查询编辑器](../media/new-retention-query-editor.png)
 
 有关使用关键字查询语言 (KQL) 的详细信息，请参阅[关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
@@ -167,7 +172,7 @@ ms.locfileid: "47315809"
 > [!CAUTION]
 > 我们正在弃用**冒犯性语言**内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用**针对性的骚扰**、**侮辱**和**猥亵**内置分类器。
 
-要通过此选项自动应用标签，SharePoint Online 网站和邮箱必须至少有 10 MB 的数据。
+要通过此选项自动应用标签，SharePoint 网站和邮箱必须至少有 10 MB 的数据。
 
 有关可训练分类器的详细信息，请参阅[可训练分类器（预览版）入门](classifier-getting-started-with.md)。
 
@@ -185,7 +190,7 @@ ms.locfileid: "47315809"
 
 某些设置无法在创建并保存标签或策略后更改，包括：
 - 除保留期外的保留设置，除非已将标签配置为根据创建的时间保留或删除内容。
-- 用于分类为记录的选项。
+- 用于将项目标记为记录的选项。
 
 ## <a name="next-steps"></a>后续步骤
 
