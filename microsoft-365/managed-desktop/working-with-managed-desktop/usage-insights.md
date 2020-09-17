@@ -1,28 +1,29 @@
 ---
 title: 使用情况见解
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 43e1ec21719dd4dcab2d2e285197476d54734a13
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: ce23825bd847e610a1d933f4d50635aff4107db3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085642"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950350"
 ---
 # <a name="usage-insights"></a>使用情况见解
 此视图提供 Microsoft 托管桌面设备的使用指标。 出于这些目的，如果应用程序正在运行且处于焦点，则会被视为 "正在使用中"。
 
-若要查看使用率数据，请选择 "**使用率**" 选项卡。
+若要查看使用率数据，请选择 " **使用率** " 选项卡。
 
-![使用窗格。 左上角的设备使用情况图（使用情况与时间的百分比）。 右上角的应用程序使用情况表。 列在底部的设备列表表，其中列设备名称、模型、序列号、显示名称、用户名、当前状态（活动、低或非活动）、总设备使用情况（以小时为单位）以及活动天数的数量。](../../media/insights_usage.png)
+![使用窗格。 设备使用情况图 (左上角) 的百分比使用率与时间。 右上角的应用程序使用情况表。 列在底部的设备列表表，其列设备名称、模型、序列号、显示名称、用户名、当前状态 (活动、低或非活动) 、总设备使用情况（以小时为单位）和活动天数。](../../media/insights_usage.png)
 
 ## <a name="device-usage"></a>设备使用情况
 
-在 "**设备使用情况**" 区域中，我们会在一段时间内显示报告设备的使用率级别以及已注册的设备报告数据的数量。 对于此页面上显示的所有数据，您可以通过使用右上角的下拉菜单更改在最近14天或28天内查看报告的数据的间隔。
+在 " **设备使用情况** " 区域中，我们会在一段时间内显示报告设备的使用率级别以及已注册的设备报告数据的数量。 对于此页面上显示的所有数据，您可以通过使用右上角的下拉菜单更改在最近14天或28天内查看报告的数据的间隔。
 
 使用以下术语对使用级别进行分类：
 
@@ -35,7 +36,7 @@ ms.locfileid: "42085642"
 
 ## <a name="application-usage"></a>应用程序使用
 
-**应用程序使用**区域详细说明了应用程序的使用顺序，以及它们在受管理的设备上的各自使用时间。 它还显示使用给定应用程序的托管设备总数。 选择 "**搜索**" 以查找特定的应用程序（如果尚未列出）。
+**应用程序使用**区域详细说明了应用程序的使用顺序，以及它们在受管理的设备上的各自使用时间。 它还显示使用给定应用程序的托管设备总数。 选择 " **搜索** " 以查找特定的应用程序（如果尚未列出）。
 
 
 ## <a name="device-details"></a>设备详细信息

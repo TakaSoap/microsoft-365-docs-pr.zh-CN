@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 了解如何为适用于 Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business 和团队文件的 Microsoft 365 设置客户密钥。
-ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 32af637fca91c1aa3abc0853215476d55c0f18a3
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546754"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949558"
 ---
 # <a name="set-up-customer-key"></a>设置客户密钥
 
@@ -479,7 +479,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 2. 在 Microsoft SharePoint Online 命令行管理程序中，运行 SPODataEncryptionPolicy cmdlet，如下所示：
 
    ```powershell
-   Register-SPODataEncryptionPolicy -Identity <SPOAdminSiteUrl> -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
+   Register-SPODataEncryptionPolicy -PrimaryKeyVaultName <PrimaryKeyVaultName> -PrimaryKeyName <PrimaryKeyName> -PrimaryKeyVersion <PrimaryKeyVersion> -SecondaryKeyVaultName <SecondaryKeyVaultName> -SecondaryKeyName <SecondaryKeyName> -SecondaryKeyVersion <SecondaryKeyVersion>
    ```
 
    注册 DEP 时，会开始对 geo 中的数据进行加密。 这可能需要一些时间。

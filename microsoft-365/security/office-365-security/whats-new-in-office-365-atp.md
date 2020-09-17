@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308375"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949416"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -40,29 +40,29 @@ ms.locfileid: "47308375"
 
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
 - [使用租户允许/阻止列表手动重写筛选器 verdicts](tenant-allow-block-list.md)
-- [威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 计划 2) 
 - "在 [威胁资源管理器](threat-explorer.md) 中覆盖信息" (电子邮件被租户/用户策略允许/阻止) 
-- 在 [威胁资源管理器](threat-explorer.md) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无) 
+- 在 [威胁资源管理器](threat-explorer.md) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无)  
 
 ## <a name="julyaugust-2020"></a>7月/8 月2020 
 
-- [体验对求职体验的改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md)
+- 体验 (Office 365 ATP 计划1或计划 2) [的求职体验改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>3月/4 月2020
 
-- 现在，可以 [使用自动调查和响应来解决受危害的用户帐户](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) 的能力。
+- 现在，可以 [使用自动调查和响应来解决受危害的用户帐户](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) 的能力。  (Office 365 ATP 计划 2) 
 
 ## <a name="januaryfebruary-2020"></a>1月/2 月2020
 
-- [Office 365 ATP 中的市场活动视图的正式可用性](campaigns.md)
-- 对 [威胁浏览器](threat-explorer.md) 的增强功能，使安全操作团队能够在 [调查电子邮件](investigate-malicious-email-that-was-delivered.md)时搜索和筛选多个字段：
+- Office 365 ATP (Office 365 ATP 计划 2) [中的市场活动视图的常规可用性](campaigns.md)
+- 对 [威胁浏览器](threat-explorer.md) 的增强功能，使安全操作团队能够在 [调查电子邮件](investigate-malicious-email-that-was-delivered.md)时搜索和筛选多个字段： (Office 365 ATP 计划 2) 
     - 送达位置和特殊操作
     -  (入站、出站或组织内部) 的方向性
     - 高级不筛选 (这些是一些高级筛选选项，其中包括不包含、不包含等。 ) 
     - 精确的时间筛选器 (日、小时、半小时)  
 
-- **事件**小组件现在是**操作中心**小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  **检查**"。 ) 
+- **事件**小组件现在是**操作中心**小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  **检查**"。 )  (Office 365 ATP 计划 2) 
 
 - [Microsoft 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) ** (预览) **
 
@@ -70,7 +70,7 @@ ms.locfileid: "47308375"
 
 - [导出 URL 单击 "数据" 以进行脱机分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 计划1或 Plan 2) 
 
-- [在 Office 365 ATP (**preview** 中使用市场活动视图) ](campaigns.md)
+- [使用 office 365 atp (**preview**) ](campaigns.md) (office 365 atp 计划 2) 中的市场活动视图
 
 ## <a name="november-2019"></a>2019 年 11 月
 

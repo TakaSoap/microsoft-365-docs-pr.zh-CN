@@ -22,27 +22,27 @@ ms.collection:
 - M365-security-compliance
 - Ent_O365
 description: 本文可帮助您对 Office 365 性能问题进行故障排除，甚至修复一些最常见的问题。
-ms.openlocfilehash: 9287e2649a2eb126d723e7436a9178be93087bc0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4f66ed43df2da47c9ea1931b8508dfecf4546b1c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687866"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948384"
 ---
 # <a name="performance-troubleshooting-plan-for-office-365"></a>Office 365 的性能疑难解答计划
 
 您需要了解在 SharePoint Online、OneDrive for business、Exchange Online 或 Skype for business Online 和您的客户端计算机之间识别和修复滞后、挂起和降低性能的步骤吗？ 在致电支持之前，本文可帮助您解决 Office 365 性能问题，甚至修复一些最常见的问题。
-  
+
 本文实际上是一个示例操作计划，可用于在发生性能问题时捕获有价值的数据。 本文还包括一些主要问题。
 
 如果你不熟悉网络性能，并且想要制定长期计划来监视客户端计算机和 Office 365 之间的性能，请查看 [Office 365 性能调整和故障排除-管理员和 IT 专业人员](performance-tuning-using-baselines-and-history.md)。
-  
+
 ## <a name="sample-performance-troubleshooting-action-plan"></a>性能故障排除操作计划示例
 
 此操作计划包含两个部分;准备阶段和日志记录阶段。 如果现在遇到性能问题，并且需要进行数据收集，则可以立即开始使用此计划。
-  
+
 ### <a name="prepare-the-client-computer"></a>准备客户端计算机
-  
+
 - 查找可能会再现性能问题的客户端计算机。 此计算机将在故障排除过程中使用。
 - 记下导致性能问题发生的步骤，以便在测试时做好准备。
 - 安装用于收集和录制信息的工具：
@@ -51,7 +51,7 @@ ms.locfileid: "46687866"
   - 使用屏幕录制器或运行 Windows Vista 和更高版本附带 ( # A0) 的步骤记录器，以便保留测试过程中执行的步骤的记录。
 
 ### <a name="log-the-performance-issue"></a>记录性能问题
-  
+
 - 关闭所有多余的 Internet 浏览器。
 - 启动步骤记录器或另一个屏幕录制器。
 - 启动 Netmon 捕获 (或网络跟踪工具) 。
@@ -70,13 +70,13 @@ ms.locfileid: "46687866"
 - 保存跟踪文件。 此外，请务必包含捕获的日期和时间，以及它是正常还是坏的性能。
 
 如果您不熟悉本文中提到的工具的运行，请不要担心，因为我们在下一步提供这些步骤。 如果您习惯于执行此类网络捕获，则可以跳转到 [如何收集比较基准](performance-tuning-using-baselines-and-history.md#how-to-collect-baselines)（描述了筛选和读取日志）。
-  
+
 ### <a name="flush-the-dns-cache-first"></a>先刷新 DNS 缓存
 
 为什么？ 通过刷新 DNS 缓存，你将使用干净的盖板启动测试。 通过清除缓存，您要将 DNS 解析程序内容重置为最新的条目。 请注意，刷新不会删除主机文件条目。 如果频繁使用主机文件条目，则应将这些条目复制到另一个目录中的文件中，然后清空主机文件。
-  
+
 #### <a name="flush-your-dns-resolver-cache"></a>刷新 DNS 解析器缓存
-  
+
 1. 打开命令提示符， (" **开始** \> **运行** \> **cmd** 或 **Windows 键** \> **cmd** ") 。
 2. 键入下面的命令，并按 Enter：
 
@@ -87,13 +87,13 @@ ms.locfileid: "46687866"
 ## <a name="netmon"></a>Netmon
 
 Microsoft 的网络监控工具 ([Netmon](https://www.microsoft.com/download/details.aspx?id=4865)) 分析在网络上的计算机之间传递的数据包（即流量）。 通过使用 Netmon 来跟踪使用 Office 365 的流量，您可以捕获、查看和读取数据包标头、标识介入的设备、检查网络硬件上的重要设置、查找丢弃的数据包，并遵循公司网络和 Office 365 上的计算机之间的流量流。 由于流量的实际正文是经过加密的（即，它 (通过 SSL/TLS 在端口443上传输），因此无法读取正在发送的文件。 而是获取对数据包所采用的路径的未筛选跟踪，从而帮助您跟踪问题行为。
-  
+
 请务必现在不应用筛选器。 而是在停止跟踪和保存之前，先执行步骤并演示问题。
-  
+
 安装 Netmon 3.4 后，打开该工具并执行以下步骤：
-  
+
 ### <a name="take-a-netmon-trace-and-reproduce-the-issue"></a>获取 Netmon 跟踪并再现问题
-  
+
 1. 启动 Netmon 3.4。
 **起始**页上有三个窗格： "**最近捕获**"、"**选择网络**" 和 " **Microsoft 网络监视器3.4 入门"。通知**。 "选择网络" 面板还将提供可从中捕获的默认网络的列表。 确保在此处选择了网卡。
 
@@ -109,18 +109,18 @@ Microsoft 的网络监控工具 ([Netmon](https://www.microsoft.com/download/det
 ## <a name="httpwatch"></a>HTTPWatch
 
 [HTTPWatch](https://www.httpwatch.com/download/) 的费用和免费版本。 免费的基本版本涵盖了此测试所需的一切。 HTTPWatch 在浏览器窗口中直接监视网络流量和页面加载时间。 HTTPWatch 是以图形方式描述性能的 Internet Explorer 的插件。 可以在 HTTPWatch Studio 中保存和查看分析。
-  
+
 > [!NOTE]
 > 如果您使用其他浏览器（如 Firefox、Google Chrome 或无法在 Internet Explorer 中安装 HTTPWatch，则打开一个新的浏览器窗口并在键盘上按 F12。 您应该会看到浏览器底部的 "开发工具" 弹出窗口。 如果使用了 Opera，请按 CTRL + SHIFT + I for Web Inspector，然后单击 " **网络** " 选项卡并完成下面所述的测试。 信息会略有不同，但加载时间仍将以毫秒为单位显示。 > HTTPWatch 对 SharePoint Online 页面加载时间的问题也非常有用。
-  
+
 ### <a name="run-httpwatch-and-reproduce-the-issue"></a>运行 HTTPWatch 并再现问题
-  
+
 HTTPWatch 是一个浏览器插件，因此在浏览器中公开此工具会因 Internet Explorer 的每个版本而略有不同。 通常情况下，您可以在 Internet Explorer 浏览器中的命令栏下找到 HTTPWatch。 如果您在浏览器窗口中看不到 HTTPWatch 插件，请单击 " **帮助** \> **"**，或在 Internet explorer 的更高版本中查看浏览器的版本，然后单击齿轮符号和 " **关于 internet explorer**"。 若要启动 **命令** 栏，请在 Internet Explorer 中右键单击菜单栏，然后单击 " **命令栏**"。
 
 过去，HTTPWatch 已与命令和浏览器栏相关联，因此在安装后，即使在重新启动) "检查 **工具**" 和 "您的工具栏" 图标后也不会立即看到该 (图标。 请注意，可以自定义工具栏，并且可以向其添加选项。
 
 ![显示 HTTPWatch 图标的 Internet Explorer 的命令工具栏。](../media/198590b0-d7b1-4bff-a6ad-e4ec3a1e83df.png)
-  
+
 1. 在 Internet Explorer 浏览器窗口中启动 HTTPWatch。 它将停靠在该窗口底部的浏览器中。 单击 " **记录**"。
 
 2. 重现性能问题中涉及的确切步骤。 单击 HTTPWatch 中的 " **停止** " 按钮。
@@ -134,9 +134,9 @@ HTTPWatch 是一个浏览器插件，因此在浏览器中公开此工具会因 
 ## <a name="problem-steps-recorder"></a>问题步骤记录器
 
 通过步骤记录器或 PSR.exe，您可以在出现问题时记录这些问题。 它是一个非常有用的工具，并且运行起来非常简单。
-  
+
 ### <a name="run-problem-steps-recorder-psrexe-to-record-your-work"></a>运行问题步骤记录器 ( # A0) 记录你的工作
-  
+
 1. 使用 "**开始** \> **运行** \> 类型**PSR.exe** \> **"PSR.exe"确定"**，或者单击 " **Windows 键** \> 类型" **PSR.exe** \> 然后按 enter。
 
 2. 当 "小 PSR.exe" 窗口出现时，单击 " **开始记录** " 并重现再现性能问题的步骤。 您可以根据需要添加注释，方法是单击 " **添加注释**"。
@@ -146,25 +146,25 @@ HTTPWatch 是一个浏览器插件，因此在浏览器中公开此工具会因 
 4. 单击“保存”****。
 
 ![步骤记录器或 PSR.exe 的屏幕截图。](../media/8542b0aa-a3ff-4718-8dc4-43f5521c6c34.PNG)
-  
+
 为您记录日期和时间。 这会及时将您的 PSR 链接到 Netmon 跟踪和 HTTPWatch，并有助于精确的故障排除。 PSR 记录中的日期和时间可以显示在 URL 的登录和浏览和管理网站的部分呈现之间传递的分钟数，例如。
-  
+
 ## <a name="read-your-traces"></a>阅读跟踪
 
 无法通过一篇文章了解有关网络和性能疑难解答的所有内容。 在性能方面取得出色的体验，并了解网络的工作原理以及通常的执行情况。 但可以对首要问题列表进行舍入，并显示工具如何使您更轻松地消除最常见的问题。
-  
+
 如果您想要为您的 Office 365 网站挑选阅读网络跟踪的技能，则没有更好的教师定期创建页面加载的跟踪，并获得阅读体验。 例如，当你有机会时，请加载 Office 365 服务并跟踪进程。 筛选 DNS 通信的跟踪，或在 FrameData 中搜索您浏览的服务的名称。 扫描跟踪以了解服务加载时发生的步骤。 这将帮助您了解正常页面加载的外观，在进行故障排除的情况下，尤其是在性能方面，比较好的对坏跟踪可能会很多。
-  
+
 Netmon 在显示筛选器字段中使用 Microsoft Intellisense。 智能感知或智能代码完成是指在一段时间内键入句点和所有可用选项的技巧显示在下拉选项框中。 例如，如果您担心 TCP 窗口缩放，您可以通过这种方式 ( `.protocol.tcp.window < 100`) 的筛选器。
-  
+
 ![显示 "显示筛选器" 字段使用 intellisense 的 Netmon 屏幕截图。](../media/75a56c11-9a60-47ee-a100-aabdfb1ba10f.PNG)
-  
+
 Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些文件，可能会在首次打开跟踪时淹没过重。 要做的第一件事就是将来自跟踪的背景噪音的信号分开。 您针对 Office 365 进行了测试，这就是您想要查看的流量。 如果您用于浏览跟踪，则可能不需要此列表。
-  
+
 您的客户端和 Office 365 之间的流量通过 TLS 传播，这意味着在常规 Netmon 跟踪中，流量的正文将被加密且不可读。 您的性能分析不需要知道数据包中的信息的细节。 但是，它非常关注数据包标头及其包含的信息。
-  
+
 ### <a name="tips-to-get-a-good-trace"></a>获取正确跟踪的提示
-  
+
 - 了解客户端计算机的 IPv4 或 IPv6 地址的值。 您可以在命令提示符下，键入 **IPConfig** ，然后按 enter 获取。 了解此地址将使您能够一目了然地了解跟踪中的流量是否直接涉及客户端计算机。 如果有已知代理，请将其 ping 并获取其 IP 地址。
 
 - 刷新 DNS 解析器缓存，并在可能的情况下关闭运行测试的所有浏览器之外的其他所有浏览器。 如果您无法执行此操作，例如，如果支持使用一些基于浏览器的工具来查看您的客户端计算机的桌面，请准备筛选您的跟踪。
@@ -175,15 +175,15 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 > [!TIP]
 > Netmon 有许多有用的内置筛选器。 尝试_显示_筛选窗格顶部的 "**加载筛选器**" 按钮。
-  
+
 ![在客户端计算机上的命令行中使用 PSPing 查找您的 IP。](../media/4c43ac67-e28e-4536-842d-7add7aa28847.PNG)
-  
+
 ![来自客户端的 Netmon 跟踪通过筛选器 TCP 显示相同的 PSPing 命令。标记（Syn = = 1）。](../media/0ae7ef7d-e003-4d01-a006-dc49bd1fcef2.PNG)
-  
+
 熟悉您的流量，并了解如何查找所需的信息。 例如，了解如何确定跟踪中的哪个数据包具有对您正在使用的 Office 365 服务的第一个引用， (如 "Outlook" ) 。
 
 以 Office 365 Outlook Online 为例，流量的开始部分如下所示：
-  
+
 - 具有匹配 QueryIDs 的 outlook.office365.com 的 DNS 标准查询和 DNS 响应。 请务必注意此转换的时间偏移量，以及 Office 365 全局 DNS 发送请求进行名称解析的位置。 理想情况下，尽量在本地进行，而不是世界的一半。
 
 - 其状态报告永久移动的 HTTP GET 请求 (301) 
@@ -195,9 +195,9 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 - 然后，一系列 TLS： tls 流量，即 TLS 握手和 TLS 证书对话发生的位置。  (记住，数据是通过 SSL/TLS 进行加密的。 ) 
 
 流量的所有部分都很重要且已连接，但跟踪量的较小部分包含有关性能故障排除的信息。因此，我们将重点放在这些区域。 此外，由于我们在 Microsoft 完成了足够多的 Office 365 性能故障排除，因此，我们将重点介绍这些问题，以及如何使用我们必须将其排除在下一步下的各种工具。
-  
+
 如果尚未将其安装就绪，则下面的矩阵将使用多个工具。 如果可能。 向安装点提供了链接。 此列表包含常见的网络跟踪工具，如 [Netmon](https://www.microsoft.com/download/details.aspx?id=4865) 和 [Wireshark](https://www.wireshark.org/)，但使用您熟悉的任何跟踪工具，并且您习惯于筛选网络流量。 在测试时，请记住：
-  
+
 - *关闭浏览器并在仅运行一个浏览器的情况下进行测试*  -这将减少捕获的总体流量。 它可用于较差的跟踪。
 - *在客户端计算机上刷新您的 DNS 解析器缓存*  -这将在你开始获取捕获时为你提供干净的盖板，以获取更干净的跟踪。
 
@@ -216,19 +216,19 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 #### <a name="what-to-look-for"></a>要查找的内容
 
-在网络跟踪中查找 SYN-SYN/ACK 流量。  在 Netmon 中，使用类似的筛选器  `tcp.flags.syn == 1` 。 此筛选器在 Wireshark 中是相同的。  
+在网络跟踪中查找 SYN-SYN/ACK 流量。  在 Netmon 中，使用类似的筛选器  `tcp.flags.syn == 1` 。 此筛选器在 Wireshark 中是相同的。
 
 ![在 Netmon 或 Wireshark 中筛选两个工具的 Syn 数据包： TCP。标记（Syn = = 1）。](../media/4b9a12a1-c915-43c8-ac2f-a679d0435a29.PNG)
 
 请注意，对于每个 SYN，在目标端口 (Udp.dstport)  (SYN/ACK) 中匹配的源端口 (Udp.srcport) 号码。
 
-若要查看你的网络连接使用的 Windows 缩放值，请先展开 SYN，然后再展开相关的 SYN/ACK。  
+若要查看你的网络连接使用的 Windows 缩放值，请先展开 SYN，然后再展开相关的 SYN/ACK。
 
-![显示如何将 Udp.srcport 匹配到跟踪中的 Udp.dstport 的图形，以获取时间增量。](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)  
+![显示如何将 Udp.srcport 匹配到跟踪中的 Udp.dstport 的图形，以获取时间增量。](../media/6a4ca573-0253-4fbd-93e8-92821ee1c351.png)
 
 ### <a name="tcp-idle-time-settings"></a>TCP 空闲时间设置
 
-在过去，大多数外围网络都配置为暂时连接，这意味着空闲连接通常会终止。 在超过100到300秒的代理和防火墙可以终止空闲的 TCP 会话。 这对于 Outlook Online 来说是有问题的，因为它会创建和使用长期连接（无论它们是否处于空闲状态）。  
+在过去，大多数外围网络都配置为暂时连接，这意味着空闲连接通常会终止。 在超过100到300秒的代理和防火墙可以终止空闲的 TCP 会话。 这对于 Outlook Online 来说是有问题的，因为它会创建和使用长期连接（无论它们是否处于空闲状态）。
 
 当代理或防火墙设备终止连接时，将不会通知客户端，并且尝试使用 Outlook Online 意味着客户端计算机将在 revive 连接之前尝试进行新的连接，然后再创建一个新的连接。 在页面加载时，您可能会看到产品挂起、提示或降低性能。
 
@@ -241,7 +241,7 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 在 Netmon 中，查看往返行程的 "时间偏移量" 字段。 往返行程是客户端向服务器发送请求并接收响应的时间。 在客户端和出局点之间检查 (ex。 客户端-- \> 代理) 或客户端到 office 365 (客户端-- \> office 365) 。 您可以在多种类型的数据包中看到此情况。
 
-例如，Netmon 中的筛选器可能如下所示  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12` ，或在 Wireshark 中  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` 。  
+例如，Netmon 中的筛选器可能如下所示  `.Protocol.IPv4.Address == 10.102.14.112 AND .Protocol.IPv4.Address == 10.201.114.12` ，或在 Wireshark 中  `ip.addr == 10.102.14.112 &amp;&amp; ip.addr == 10.201.114.12` 。
 
 > [!TIP]
 > 不知道跟踪中的 IP 地址是否属于您的 DNS 服务器？ 请尝试在命令行上进行查找。 单击 " **开始** \> **运行** \> " 并键入 **cmd**，或按 **Windows 键** \> 并键入 **cmd**。 在提示符处，键入  `nslookup <the IP address from the network trace>` 。 若要进行测试，请对自己的计算机的 IP 地址使用 nslookup。 > 若要查看 Microsoft IP 范围的列表，请参阅 [Office 365 url 和 IP 地址范围](https://technet.microsoft.com/library/hh373144.aspx)。
@@ -252,7 +252,7 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 延迟是一种可根据许多变量（如升级老化设备、向网络中添加大量用户以及网络连接上的其他任务消耗的总体带宽百分比）来更改大量的度量。
 
-在此 [网络规划和 "office 365 的性能调整](network-planning-and-performance.md) " 页面中，有适用于 office 365 的带宽计算器。  
+在此 [网络规划和 "office 365 的性能调整](network-planning-and-performance.md) " 页面中，有适用于 office 365 的带宽计算器。
 
 需要衡量你的连接速度，还是你的 ISP 连接的带宽？ 请尝试此网站 (或网站) ： [Speedtest 官方网站](https://www.speedtest.net/)，或查询短语 **速度测试**的最喜爱的搜索引擎。
 
@@ -265,18 +265,18 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 #### <a name="what-to-look-for"></a>要查找的内容
 
-若要跟踪跟踪中的延迟，您将受益于在 Office 365 中记录了客户端计算机 IP 地址和 DNS 服务器的 IP 地址。 这旨在简化跟踪筛选的目的。 如果通过代理连接，将需要客户端计算机 IP 地址、代理/传出 IP 地址和 Office 365 DNS IP 地址，以使工作更容易。  
+若要跟踪跟踪中的延迟，您将受益于在 Office 365 中记录了客户端计算机 IP 地址和 DNS 服务器的 IP 地址。 这旨在简化跟踪筛选的目的。 如果通过代理连接，将需要客户端计算机 IP 地址、代理/传出 IP 地址和 Office 365 DNS IP 地址，以使工作更容易。
 
-发送到 outlook.office365.com 的 ping 请求将告知您接收请求的数据中心的名称，即使 ping  *可能*  无法连接以发送商标连续 ICMP 数据包。 如果使用 PsPing () 的免费工具，并特定端口 (443) 并可能使用 IPv4 (-4) 则会为发送的数据包获取平均往返时间。 这将对 Office 365 服务中的其他 Url （如）执行此操作 `psping -4 yourSite.sharepoint.com:443` 。 事实上，您可以指定多个 ping 以获取更大的采样示例，请尝试类似的操作 `psping -4 -n 20 yourSite-my.sharepoint.com:443` 。  
+发送到 outlook.office365.com 的 ping 请求将告知您接收请求的数据中心的名称，即使 ping  *可能*  无法连接以发送商标连续 ICMP 数据包。 如果使用 PsPing () 的免费工具，并特定端口 (443) 并可能使用 IPv4 (-4) 则会为发送的数据包获取平均往返时间。 这将对 Office 365 服务中的其他 Url （如）执行此操作 `psping -4 yourSite.sharepoint.com:443` 。 事实上，您可以指定多个 ping 以获取更大的采样示例，请尝试类似的操作 `psping -4 -n 20 yourSite-my.sharepoint.com:443` 。
 
 > [!NOTE]
 > PsPing 不发送 ICMP 数据包。 通过特定端口对 TCP 数据包执行 ping 操作，以便您可以使用任何已知的打开方式。 在使用 SSL/TLS 的 Office 365 中，尝试将端口：443附加到你的 PsPing。
 
 ![显示 ping 解析 outlook.office365.com 的屏幕截图和443的 PSPing 执行相同的操作，同时还报告6.5 毫秒平均 RTT。](../media/c64339f2-2c96-45b8-b168-c2a060430266.PNG)
 
-如果在执行网络跟踪时已加载 "执行速度较慢的 Office 365" 页面，则应筛选 Netmon 或 Wireshark 跟踪 `DNS` 。 这是我们要查找的 IPs 之一。  
+如果在执行网络跟踪时已加载 "执行速度较慢的 Office 365" 页面，则应筛选 Netmon 或 Wireshark 跟踪 `DNS` 。 这是我们要查找的 IPs 之一。
 
-下面是将 Netmon 筛选为获取 IP 地址 (并查看) 的 DNS 延迟的步骤。 此示例使用 outlook.office365.com，但也可以使用 SharePoint Online 租户 (hithere.sharepoint.com 的 URL，例如) 。  
+下面是将 Netmon 筛选为获取 IP 地址 (并查看) 的 DNS 延迟的步骤。 此示例使用 outlook.office365.com，但也可以使用 SharePoint Online 租户 (hithere.sharepoint.com 的 URL，例如) 。
 
 1. Ping URL， `ping outlook.office365.com` 并在结果中记录向其发送 ping 请求的 DNS 服务器的名称和 IP 地址。
 2. 网络跟踪打开页面，或执行性能问题的操作，或者，如果你在 ping 上看到过高的延迟，它本身就是网络跟踪。
@@ -286,15 +286,15 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 6. 打开命令提示符 (开始 \> 运行 \> 类型 Cmd 或 Windows 键 \> 类型 cmd) 并将目录更改为在其中安装 PsPing 的目录以运行 PsPing 命令。 在我的示例中，您可以看到我在 C 的根目录上建立了 ' Perf ' 文件夹。您可以进行相同的快速访问。
 7. 键入命令，以便您可以根据早期 Netmon 跟踪（包括端口号）对 Office 365 DNS 服务器的 IP 地址进行 PsPing `psping -n 20 132.245.24.82:445` 。 这将为您提供20个 ping 采样和平均延迟在 PsPing 停止时的采样。
 
-如果通过代理服务器转到 Office 365，则步骤略有不同。 您将首先 PsPing 代理服务器，以毫秒为单位获取代理/传出和回退的平均延迟值，然后在代理上运行 PsPing，或者在具有直接 Internet 连接的计算机上运行，并将其用于获取缺少的值 (从一到 Office 365 和后退) 。  
+如果通过代理服务器转到 Office 365，则步骤略有不同。 您将首先 PsPing 代理服务器，以毫秒为单位获取代理/传出和回退的平均延迟值，然后在代理上运行 PsPing，或者在具有直接 Internet 连接的计算机上运行，并将其用于获取缺少的值 (从一到 Office 365 和后退) 。
 
-如果您选择从代理运行 PsPing，则会有两个毫秒的值：客户端计算机到代理服务器或传出点，以及代理服务器到 Office 365。 你已经完成了！ 当然，仍应记录值。  
+如果您选择从代理运行 PsPing，则会有两个毫秒的值：客户端计算机到代理服务器或传出点，以及代理服务器到 Office 365。 你已经完成了！ 当然，仍应记录值。
 
 如果在连接到 Internet 的直接连接的另一台客户端计算机上运行 PsPing （即，没有代理），则会有两个毫秒的值：客户端计算机到代理服务器或传出点，以及客户端计算机到 Office 365。 在这种情况下，将客户端计算机的值从客户端365计算机的值中减去到代理服务器或传出点，并将从客户端计算机到代理服务器或传出点的 RTT 编号，以及从代理服务器或传出点到 Office 365。
 
 但是，如果您可以在受影响的直接连接位置找到客户端计算机，或者绕过代理，您可以选择是否在此处重现问题，以开始使用，并在此后进行测试。
 
-延迟（如 Netmon 跟踪中所示），如果任何给定会话中有足够的时间，则这些额外的毫秒数可能会增加。  
+延迟（如 Netmon 跟踪中所示），如果任何给定会话中有足够的时间，则这些额外的毫秒数可能会增加。
 
 ![Netmon 中的常规延迟，其中包括添加到“帧摘要”的 Netmon 默认“时间差”列。](../media/7ad17380-8527-4bc2-9b9b-6310cf19ba6b.PNG)
 
@@ -305,13 +305,13 @@ Netmon 跟踪可以在其中包含大量流量。 如果你不熟悉阅读这些
 
 ### <a name="proxy-authentication"></a>代理身份验证
 
-这仅适用于您正在通过代理服务器的情况。 如果不是，则可以跳过这些步骤。 正常工作时，代理身份验证应以毫秒为单位持续进行。 在高峰使用时段内，您不应看到不稳定的性能 (例如) 。  
+这仅适用于您正在通过代理服务器的情况。 如果不是，则可以跳过这些步骤。 正常工作时，代理身份验证应以毫秒为单位持续进行。 在高峰使用时段内，您不应看到不稳定的性能 (例如) 。
 
-如果启用了代理身份验证，则每次建立到 Office 365 的新 TCP 连接以获取信息时，您需要通过幕后的身份验证过程进行传递。 因此，例如，当从 Outlook Online 中的 "日历" 切换到 "邮件" 时，您将进行身份验证。 在 SharePoint Online 中，如果页面显示来自多个网站或位置的媒体或数据，则将针对呈现数据所需的每个不同 TCP 连接进行身份验证。  
+如果启用了代理身份验证，则每次建立到 Office 365 的新 TCP 连接以获取信息时，您需要通过幕后的身份验证过程进行传递。 因此，例如，当从 Outlook Online 中的 "日历" 切换到 "邮件" 时，您将进行身份验证。 在 SharePoint Online 中，如果页面显示来自多个网站或位置的媒体或数据，则将针对呈现数据所需的每个不同 TCP 连接进行身份验证。
 
 在 Outlook Online 中，只要您在 "日历" 和 "邮箱" 之间切换或在 SharePoint Online 中缓慢页面加载，就可能会遇到负载缓慢的情况。 但是，还有其他一些症状未在此处列出。
 
-代理身份验证是您的出口代理服务器上的一项设置。 如果它导致 Office 365 出现性能问题，则必须咨询网络团队。  
+代理身份验证是您的出口代理服务器上的一项设置。 如果它导致 Office 365 出现性能问题，则必须咨询网络团队。
 
 #### <a name="tools"></a>工具
 
@@ -385,15 +385,15 @@ DNS 流量基于 TCP，并且 UDP 请求和响应使用 ID 进行清楚标记，
 
 ### <a name="proxy-scalability"></a>代理可伸缩性
 
-Office 365 中的 Outlook Online 之类的服务向客户端授予多个长期连接。 因此，每个用户可能会使用需要较长寿命的更多连接。  
+Office 365 中的 Outlook Online 之类的服务向客户端授予多个长期连接。 因此，每个用户可能会使用需要较长寿命的更多连接。
 
 #### <a name="tools"></a>工具
 
-数学  
+数学
 
 #### <a name="what-to-look-for"></a>要查找的内容
 
-没有特定于此的网络跟踪或故障排除工具。 相反，它基于给定限制和其他变量的带宽计算。  
+没有特定于此的网络跟踪或故障排除工具。 相反，它基于给定限制和其他变量的带宽计算。
 
 ### <a name="tcp-max-segment-size"></a>TCP 最大段大小
 
@@ -422,7 +422,7 @@ TCP Max Segment 段大小 (MSS) 是网络跟踪中的三向握手的另一个参
 
 重要的是，如果在跟踪时没有收到任何 IP 地址信息，请在跟踪 (部分查找您的 URL `sphybridExample-my.sharepoint.com` ，例如) ，将为您提供用于筛选的 ip 地址。
 
-在跟踪中查找您想要查看的连接。 为此，可以扫描跟踪、按 IP 地址筛选，或通过 Netmon 中的 "网络对话" 窗口选择特定的对话 Id。 找到 SYN 数据包后，展开 "框架详细信息" 面板中 Wireshark) 中的 "TCP (在 Netmon) 或" 传输控制协议 (中。 展开 "TCP 选项" 和 "MaxSegmentSize"。 找到相关的 SYN ACK 帧，并展开 "TCP 选项" 和 "MaxSegmentSize"。 这两个值中较小的值将成为最大线段大小。 在此图中，我使用了名为 TCP 故障排除的 Netmon 中的内置列。  
+在跟踪中查找您想要查看的连接。 为此，可以扫描跟踪、按 IP 地址筛选，或通过 Netmon 中的 "网络对话" 窗口选择特定的对话 Id。 找到 SYN 数据包后，展开 "框架详细信息" 面板中 Wireshark) 中的 "TCP (在 Netmon) 或" 传输控制协议 (中。 展开 "TCP 选项" 和 "MaxSegmentSize"。 找到相关的 SYN ACK 帧，并展开 "TCP 选项" 和 "MaxSegmentSize"。 这两个值中较小的值将成为最大线段大小。 在此图中，我使用了名为 TCP 故障排除的 Netmon 中的内置列。
 
 ![使用内置列在 Netmon 中筛选网络跟踪。](../media/e073df13-71f8-497a-83b4-bb9f70bd9833.PNG)
 
@@ -482,7 +482,7 @@ Lync online 一次在多个 dC 中具有活动节点。 当为 Lync online 实�
 
 对 outlook.office365.com 运行 Ping 工具，以确定您的 DNS 请求在全球的路由。 如果你在欧洲，你应该会看到类似 outlook-emeawest.office365.com 的答复。 在美洲，期待的类似 outlook-namnorthwest.office365.com。
 
-通过 "开始 \> 运行 \> cmd" 或 "Windows 键类型" cmd) 打开客户 \> 端计算机上的命令提示符 (。 键入 ping outlook.office365.com，然后按 ENTER。 请记住，若要通过 IPv4 指定 ping，请指定-4。 您可能无法从 ICMP 数据包中获取答复，但应该会看到向其路由请求的 DNS 的名称。 如果要查看此连接的延迟号码，请尝试 PsPing 到 ping 返回的服务器的 IP 地址。  
+通过 "开始 \> 运行 \> cmd" 或 "Windows 键类型" cmd) 打开客户 \> 端计算机上的命令提示符 (。 键入 ping outlook.office365.com，然后按 ENTER。 请记住，若要通过 IPv4 指定 ping，请指定-4。 您可能无法从 ICMP 数据包中获取答复，但应该会看到向其路由请求的 DNS 的名称。 如果要查看此连接的延迟号码，请尝试 PsPing 到 ping 返回的服务器的 IP 地址。
 
 ![显示 Outlook-namnorthwest 中的解决方案的 outlook.office365.com 的 Ping。](../media/06c944d5-6159-43ec-aa31-757770695e8b.PNG)
 
@@ -501,5 +501,5 @@ Lync online 一次在多个 dC 中具有活动节点。 当为 Lync online 实�
 ## <a name="related-topics"></a>相关主题
 
 [管理 Office 365 终结点](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)
-  
+
 [Office 365 终结点 FAQ](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d)

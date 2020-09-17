@@ -1,17 +1,18 @@
 ---
 title: 服务更改和通信
 description: ''
-keywords: Microsoft 托管桌面，Microsoft 365，服务，文档
+keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 00d1cb409364c017585c6afcd10a236ecbcdc3a0
-ms.sourcegitcommit: 53148fc3663bdcfa9605684317785cb19f37e141
+ms.openlocfilehash: 753ad703a7949b7901ddd76d0d8c966b170461ea
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "37697881"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950314"
 ---
 # <a name="service-changes-and-communication"></a>服务更改和通信
 
@@ -23,7 +24,7 @@ ms.locfileid: "37697881"
 
 我们将为你提供至少30天的时间通知，以供任何需要采取措施的重大更改。 我们将通过使用 Microsoft 托管桌面管理门户邮件系统让你知道。
 
-**主要更改**是那些可能会影响以下任一方面的更改：
+**主要更改** 是那些可能会影响以下任一方面的更改：
 - 影响每日工作效率的更改
 - 对自定义功能和应用程序的更改
 - 可见容量的增加或减少
@@ -43,7 +44,7 @@ ms.locfileid: "37697881"
 - 对应用于设备的安全基准的更新
 - [支持的设备](device-list.md)
 
-我们将使用已建立的频道传达这些更改。 如果你对任何更改有任何疑问，请与 Microsoft 托管桌面[操作团队](../working-with-managed-desktop/admin-support.md)联系。 对该服务所做的更改也会在[更改历史记录](../change-history-managed-desktop.md)中根据需要进行记录。
+我们将使用已建立的频道传达这些更改。 如果你对任何更改有任何疑问，请与 Microsoft 托管桌面 [操作团队](../working-with-managed-desktop/admin-support.md)联系。 对该服务所做的更改也会在 [更改历史记录](../change-history-managed-desktop.md)中根据需要进行记录。
 
 Microsoft 托管桌面更改和通信由两个 Microsoft 策略控制：
 - [新式生命周期策略](https://support.microsoft.com/help/30881/modern-lifecycle-policy)
@@ -51,7 +52,7 @@ Microsoft 托管桌面更改和通信由两个 Microsoft 策略控制：
 
 ## <a name="changes-you-make"></a>所做的更改
 
-你可能会在你的环境中进行的一些更改可能会影响 Microsoft 托管桌面。 对于这些主要更改，我们要求你在 Microsoft 托管桌面管理门户中提交服务请求，至少为我们提供30天的通知。 有关说明，请参阅[Microsoft 托管桌面的管理员支持](../working-with-managed-desktop/admin-support.md)。 这样一来，我们就可以充分地规划和准备更改以避免中断。
+你可能会在你的环境中进行的一些更改可能会影响 Microsoft 托管桌面。 对于这些主要更改，我们要求你在 Microsoft 托管桌面管理门户中提交服务请求，至少为我们提供30天的通知。 有关说明，请参阅 [Microsoft 托管桌面的管理员支持](../working-with-managed-desktop/admin-support.md) 。 这样一来，我们就可以充分地规划和准备更改以避免中断。
 
 主要更改是那些可能会影响以下任一方面的更改：
 

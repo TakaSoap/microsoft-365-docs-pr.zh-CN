@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685494"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949876"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -32,7 +32,7 @@ ms.locfileid: "46685494"
 
 ## <a name="a-complete-lab-environment"></a>完整的实验室环境
 
-实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的配置管理器实例。 实验室包含以下产品的最新评估版：
+实验室为你提供了自动预配的虚拟实验室环境，其中包括域加入桌面客户端、域控制器、Internet 网关和完全配置的配置管理器实例。 实验室包含以下产品的最新评估版本：
 
   - 新增内容！ Windows 10 企业版，版本 2004
   - Windows 7 企业版
@@ -53,70 +53,36 @@ ms.locfileid: "46685494"
 
 详细的实验室指南会带你了解多个部署和管理方案。 实验室已针对 Intune 和 Configuration Manager 的最新版本进行了更新。 
 
-### <a name="device-and-app-readiness"></a>设备和应用就绪情况
+### <a name="plan-and-prepare-infrastructure"></a>规划和准备基础结构 
+桌面分析   
+云管理网关 & 云分发点租户附加、共同管理和切换工作负载    
+远程访问
 
-  - 桌面分析
-  - 部署和更新新版 Microsoft Edge 
-  - 安装和配置云管理网关 (CMG) 
-  - Internet Explorer 模式 
-  - 应用程序防护 
+### <a name="prepare-configuration"></a>准备配置   
+使用配置管理器为 windows 10 优化 Windows 10 更新传递服务 windows 10，并使用 configuration manager 为 microsoft Intune 服务 windows 10 365，使用 configuration manager 为 microsoft Intune 服务应用配置管理器使用 Intune 为企业的 microsoft 365 应用程序提供服务使用 Intune    
+安全性和合规性 
 
-### <a name="directory-and-network-readiness"></a>目录和网络就绪情况
+### <a name="prepare-applications"></a>准备应用程序    
+适用于 Office 的准备情况工具包    
+MSIX 打包和转换 Win32 应用程序 
 
-  - 优化 Windows 10 更新传递 
-  - 配置管理器和 Microsoft Intune 共同管理
-  - 远程访问 (VPN)
+### <a name="deploy-windows-10"></a>部署 Windows 10   
+MDT Windows Autopilot 中的 Configuration Manager OS 部署任务序列中的 OS 部署任务序列部署和管理新的 Microsoft Edge    
 
-### <a name="office-and-lob-app-delivery"></a>Office 和 LOB 应用交付
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 企业应用版    
+云托管部署    
+本地托管部署  
+Microsoft 365 在非 AD 加入设备上部署企业版的应用程序   
+使用 Microsoft Intune 的 Configuration Manager 企业托管部署的企业托管部署    
+具有 Microsoft Intune 的 LOB 部署和管理部署 Microsoft 团队
 
-  - Microsoft 365 企业应用版
-  - 使用配置管理器和 Microsoft Intune 进行企业托管部署
-  - 使用 Microsoft Intune 进行应用部署和管理
-  - 使用适用于企业的 Microsoft Store 进行应用部署和自助式安装
-  - 新增内容！ 安装 Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>用户文件和设置迁移
-
-  - 已知文件夹文件迁移 
-  - 用户状态迁移工具 
-  - 企业状态漫游
-  - 开始菜单自定义和 UWP 应用删除 
-  - 用户体验虚拟化（UE-V） 
-
-### <a name="security-and-compliance"></a>安全性和合规性
-
-  - BitLocker 设备加密
-  - Windows Defender 防病毒
-  - Windows Hello 企业版
-  - BIOS 到 UEFI 转换
-  - Windows Defender 应用程序防护
-  - Windows Defender 攻击防护
-  - Windows Defender 应用程序控制
-  - Windows Defender 高级威胁防护
-  - 新增内容！ 终结点安全性 
-
-### <a name="os-deployment-and-feature-updates"></a>OS 部署和功能更新
-
-  - OS 映像创建
-  - 配置管理器中的 OS 部署任务序列 
-  - MDT 中的 OS 部署任务序列
-  - Windows Autopilot
-  - 预配包 
-
-### <a name="windows-and-office-as-a-service"></a>Windows 和 Office 即服务
-  - 使用组策略管理 Windows 更新
-  - 使用配置管理器和 Intune 服务 Windows 10
-  - 使用 Configuration Manager 服务 Microsoft 365 企业应用版
-  - 新增内容！ 有关 Configuration Manager 和 Intune 的 Office 更新
-  
-### <a name="windows-virtual-desktop"></a>Windows 虚拟桌面
-  - Windows 虚拟桌面：准备、部署、优化 
-
+### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虚拟桌面  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下载 Windows 和 Office 部署实验室工具包
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*请使用高带宽下载此内容，以增强下载体验并允许进行 30-45 分钟的自动预配。实验室环境要求至少具有 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最优性能，建议使用 32 GB 的可用内存。实验室将于 2020 年 12 月 12 日过期。新版本将于该过期日期前发布。*
+*请使用广泛的带宽下载此内容以增强你的下载体验，并允许自动预配的30-45 分钟。实验室环境要求至少 16 GB 的可用内存和 150 GB 的可用磁盘空间。为获得最佳性能，建议使用 32 GB 的可用内存。实验室的有效期为2020年12月4日。在过期之前将发布新版本。*
 
 ## <a name="additional-guidance"></a>其他指南
 

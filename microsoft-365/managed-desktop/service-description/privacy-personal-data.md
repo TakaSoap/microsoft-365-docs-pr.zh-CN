@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547934"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950480"
 ---
 # <a name="privacy-and-personal-data"></a>隐私和个人数据
 
@@ -128,7 +128,7 @@ Microsoft 托管桌面不使用作为配置、广告或市场营销目的提供�
 
 ### <a name="it-admin-contact-information"></a>IT 管理员联系信息
 
-租户管理员可以直接在 Microsoft 托管桌面门户的 "管理员联系人" 部分中查看、更正和删除个人数据。
+租户管理员可以查看、更正和删除自己的个人数据 (例如，他们自己的联系信息) 直接在 Microsoft 托管桌面门户的 "管理员联系人" 部分中。
 
 ### <a name="user-related-personal-data"></a>与用户相关的个人数据
 

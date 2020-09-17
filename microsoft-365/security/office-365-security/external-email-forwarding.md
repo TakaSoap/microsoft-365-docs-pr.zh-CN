@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898048"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949678"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中配置外部电子邮件转发
 
@@ -31,7 +31,10 @@ ms.locfileid: "46898048"
 
 - **关** -自动外部转发已禁用，并将导致向最终用户 (NDR) 的未送达报告。
 
-有关如何配置这些设置的详细信息，请参阅 [配置 EOP 中的出站垃圾邮件筛选](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) 。
+有关如何配置这些设置的详细信息，请参阅 [配置 EOP 中的出站垃圾邮件筛选](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) 。
+
+> [!NOTE]
+> 禁用自动转发也将 dsable 将邮件重定向到外部地址的收件箱规则。
 
 ## <a name="controlling-external-email-forwarding"></a>控制外部电子邮件转发
 
@@ -42,7 +45,7 @@ Office 365 不允许通过 "收件箱" 规则或 "邮箱" 配置自动进行外�
 > [!NOTE]
 > 在 Office 365 中禁用自动转发外部地址的过程分阶段进行，详细信息通过 [消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) 发布进行通信。 若要帮助管理员准备这些更改，请提前修改策略以确保用户不会中断他们的用户。
 
-有关使用自动转发的用户的详细信息，可以在 [自动转发的邮件报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide)中找到组织中 (收件箱规则或 SMTP 转发) 。
+有关使用自动转发的用户的详细信息，可以在 [自动转发的邮件报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)中找到组织中 (收件箱规则或 SMTP 转发) 。
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>此策略如何与其他自动转发控件一起使用
 

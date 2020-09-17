@@ -17,17 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用配置分析器来查找和修复低于标准保护和严格保护预设安全策略的安全策略。
-ms.openlocfilehash: 39bec980ac95681ec2c2300914582d5e8786c884
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 022f11013ef49c65b1f94fea7a3872233ff1ab14
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867159"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949474"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的保护策略的配置分析器
 
 > [!NOTE]
-> 本主题中所述的功能在预览中，在所有组织中均不可用，可能会发生更改。
+> 本主题中所述的功能在预览中，在所有组织中均不可用，可能会发生更改。 有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer)。
 
 Security & 合规中心中的配置分析器提供了一个中心位置，用于查找和修复安全策略，其中的设置位于 [预设安全策略](preset-security-policies.md)中的标准保护和严格保护配置文件设置之下。
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 为 Microsoft 365 设置客户端和服务器软件的路线图。
-ms.openlocfilehash: 14169809deb363cac8ff3dd6ad35c12c20318674
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687739"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950564"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的客户端和服务器软件路线图
 
@@ -34,8 +34,7 @@ ms.locfileid: "46687739"
 >已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 有关详细信息，请单击[此处](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
-完成所有这些迁移一段时间后，您的组织越接近 [新式工作区](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，这是一种安全且集成的环境，可解锁组织中的团队合作和创造力，所有这些都是由 Microsoft 365 for 企业支持和实现的。 
-
+完成所有这些迁移一段时间后，您的组织越接近 [新式工作区](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，这是一种安全且集成的环境，可解锁组织中的团队合作和创造力，所有这些都是由 Microsoft 365 for 企业支持和实现的。
 
 ## <a name="migration-for-microsoft-office-client-products"></a>Microsoft Office 客户端产品迁移
 
@@ -44,7 +43,7 @@ ms.locfileid: "46687739"
 - 可以使用最新的安全更新和支持修补程序[更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)，但该过程有时是手动的，可能无法在整个组织内缩放。
 - 未能最佳利用 Microsoft 云技术并帮助你数字化转换业务。
 - 不包含新功能。
- 
+
 适用于企业的 microsoft 365 包括适用于企业的 Microsoft 365 应用程序、使用 Microsoft 365 for enterprise license 的 Office 客户端产品版本，以及从 Microsoft 云中安装和更新。 Microsoft 365 企业应用版包括安全更新和最新功能。 有关详细信息，请参阅[关于 Microsoft 365 企业应用版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 ### <a name="office-2007"></a>Office 2007
@@ -63,7 +62,7 @@ Microsoft 365 企业应用版会自动安装更新，并可利用基于云的服
 
 对于 Office 2010 版本中的 Office 版本，将于 **2020 年 10 月 13 日**停止提供支持。 有关详细信息，请参阅 [Office 2010 的停止提供支持路线图](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
 
-与其通过 Office 2013 或 Office 2016 升级运行 Office 2010 的计算机（两种方式均必须手动更新），不如考虑： 
+与其通过 Office 2013 或 Office 2016 升级运行 Office 2010 的计算机（两种方式均必须手动更新），不如考虑：
 
 1. 为用户获取并分配 Microsoft 365 许可证。
 2. 卸载其计算机中的 Office 2010。
@@ -92,7 +91,7 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 - 请勿包含新的生产应用程序，例如 Microsoft Teams。
 - 请勿包含最新的安全功能，例如 Exchange 高级威胁防护。
 
-适用于企业的 Microsoft 365 包括 Office server 服务的基于云的版本，这些版本使用一些工具作为本地版本的 Office server 软件，如 web 浏览器和 Outlook 客户端。 这些服务持续更新来保障安全性，但无需 IT 操作，从而节省维护和更新本地服务器所耗的时间。 这些服务还包含 Office 服务器软件中当前未提供的新功能增强版。 
+适用于企业的 Microsoft 365 包括 Office server 服务的基于云的版本，这些版本使用一些工具作为本地版本的 Office server 软件，如 web 浏览器和 Outlook 客户端。 这些服务持续更新来保障安全性，但无需 IT 操作，从而节省维护和更新本地服务器所耗的时间。 这些服务还包含 Office 服务器软件中当前未提供的新功能增强版。
 
 有关为特定 Microsoft 365 工作负荷迁移用户和数据的信息：
 
@@ -146,7 +145,7 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 迁移
 
-已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行就地升级。 
+已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行就地升级。
 
 有关其他方法，请参阅 [Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 也可以自行[计划 Windows 10 部署](https://aka.ms/planforwin10deployment)。
 
@@ -162,9 +161,9 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请参阅 [转换海报](../downloads/transition-org-to-m365.pdf)。
+要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[转换海报](../downloads/transition-org-to-m365.pdf)。
 
-[![转移到 Microsoft 365 海报图像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![转换到 Microsoft 365 海报图像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
 
@@ -172,11 +171,10 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Microsoft 如何为企业提供 Microsoft 365
 
-了解 Microsoft IT 专家如何使用以下资源将公司迁移到适用于企业的 Microsoft 365： 
+了解 Microsoft IT 专家如何使用以下资源将公司迁移到适用于企业的 Microsoft 365：
 
 - [部署和更新适用于企业的 Microsoft 365 应用程序](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft 将 150,000 个邮箱迁移到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [将 SharePoint 迁移到云：了解 Microsoft 如何运行自己的迁移](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 中将 Windows 10 部署为就地升级](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 部署：来自 Microsoft IT 部门的提示和技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT)（视频）
-

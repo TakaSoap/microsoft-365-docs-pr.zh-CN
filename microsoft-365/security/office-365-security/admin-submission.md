@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394731"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947968"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -78,7 +78,7 @@ ms.locfileid: "47394731"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>向 Microsoft 发送可疑 URL
 
-1. 在 " **对象类型** " 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL (例如， <https://www.fabrikam.com/marketing.html>) 。
+1. 在 " **对象类型** " 部分，选择 " **URL**"。 在出现的框中，输入完整的 URL (例如， `https://www.fabrikam.com/marketing.html`) 。
 
 2. 在 " **提交原因** " 部分，选择下列选项之一：
 

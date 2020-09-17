@@ -16,22 +16,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336675"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949694"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>开始使用 Office 365 中的自动调查和响应 (AIR) 
 
 [Office 365 高级威胁防护](office-365-atp.md) (OFFICE 365 ATP) Plan 2 包括功能强大的自动化调查和响应 (空气) 功能，可节省安全运营团队的时间和精力。 随着警报的触发，安全操作团队可以对这些警报进行检查、设置优先级和响应。 跟上传入警报的数量的持续很大。 自动执行其中一些可能会有所帮助。 借助 AIR，安全操作团队可以将精力集中在优先级较高的任务上，而不会失去触发警报的可见性。
 
-本文包含有关以下内容的信息：
-
-- 空气的[整体流动](#the-overall-flow-of-air)
-- [如何获取空中](#how-to-get-air)
-- 配置或使用 AIR 功能[所需的权限](#required-permissions-to-use-air-capabilities)
+本文包括以下内容：
+- 空气的 [整体流量](#the-overall-flow-of-air) ;
+- [如何获取空气](#how-to-get-air);并 
+- 配置或使用 AIR 功能 [所需的权限](#required-permissions-to-use-air-capabilities) 。 
 
 ## <a name="the-overall-flow-of-air"></a>空气的整体流动
 
