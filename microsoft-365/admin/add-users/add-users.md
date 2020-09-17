@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 了解如何同时添加用户并将许可证分配给 Microsoft 365。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307369"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948792"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同时添加用户和分配许可证
 
@@ -37,7 +37,7 @@ ms.locfileid: "47307369"
 
 ::: moniker-end
 
-团队中的人员每个人都需要用户帐户，才能登录并访问 [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)。 添加用户帐户最简单的方法是在 Microsoft 365 管理中心中一次添加一个用户帐户。 执行此步骤后，你的用户将拥有 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
+团队中的人员每个人都需要用户帐户，才能登录并访问 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)。 添加用户帐户最简单的方法是在 Microsoft 365 管理中心中一次添加一个用户帐户。 执行此步骤后，你的用户将拥有 Microsoft 365 许可证、登录凭据和 Microsoft 365 邮箱。
 
 ## <a name="before-you-begin"></a>准备工作
 
@@ -54,7 +54,7 @@ ms.locfileid: "47307369"
 
 ::: moniker range="o365-worldwide"
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的管理中心。
+1. 转到位于 <https://admin.microsoft.com> 的管理中心。
 2. 转到 " **用户** > **活动用户**"，然后选择 " **添加用户**"。
 3. 在 " **设置基础知识** " 窗格中，填写基本用户信息，然后选择 " **下一步**"。
     - **名称** 填写姓氏和名字、显示名称和用户名。
@@ -70,7 +70,7 @@ ms.locfileid: "47307369"
 
 ::: moniker range="o365-germany"
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的管理中心。
+1. 转到位于 <https://portal.office.de/adminportal> 的管理中心。
 2. 转到 " **用户** > **活动用户**"，然后选择 " **添加用户**"。
 3. 在 " **新建用户** " 窗格中，填写以下信息。 完成后，选择 " **添加**"。
     - **姓名** 填写名字、姓氏、显示名称和用户名。
@@ -84,7 +84,7 @@ ms.locfileid: "47307369"
 
 ::: moniker range="o365-21vianet"
 
-1. 转到位于 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的管理中心。
+1. 转到位于 <https://portal.partner.microsoftonline.cn> 的管理中心。
 2. 转到 " **用户** > **活动用户**"，然后选择 " **添加用户**"。
 3. 在 " **新建用户** " 窗格中，填写以下信息。 完成后，选择 " **添加**"。
     - **姓名** 填写名字、姓氏、显示名称和用户名。
@@ -99,7 +99,7 @@ ms.locfileid: "47307369"
 ## <a name="add-multiple-users-at-the-same-time"></a>同时添加多个用户
 
 您可以使用以下任何一种方法同时添加多个用户：
-  
+
 - **使用电子表格批量添加用户。** 请参阅 [同时添加多个用户](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)。
 - **自动添加帐户并分配许可证。** 请参阅 [Create user accounts With Microsoft 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)。 如果可以熟练使用 Windows PowerShell cmdlet，请选择此方法。
 - **使用 ActiveDirectory？** [为 Microsoft 365 设置目录同步](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)。 使用 Azure AD Connect 工具在 Microsoft 365 中复制 Active Directory 用户帐户 (和其他 Active Directory 对象) 。 同步只添加用户帐户。 您必须先将许可证分配给已同步的用户，然后才能使用电子邮件和其他 Office 应用。

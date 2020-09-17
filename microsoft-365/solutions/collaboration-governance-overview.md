@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何在 Microsoft 365 组、团队、SharePoint 和 Yammer 中管理相关功能。
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662485"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950708"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Microsoft 365 中的协作管理概述
 
@@ -108,16 +108,16 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 了解 Microsoft 365 组中的基础知识和新创新，包括在规模扩展方面的管理和治理、驱动使用和采用的最佳实践以及自助服务。
 
-- [接纳 Microsoft 365 组](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [接纳 Microsoft 365 组](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **管理**
 
 了解如何设置您的组过期生命周期、命名策略、分类标签、与外部来宾的协作以及管理组创建权限。
 
-- [使用 Office 365 组转换协作和抵抗影子 IT](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [使用 Office 365 组转换协作和抵抗影子 IT](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **客户示例**
 
 请参阅 Microsoft 365 组、SharePoint、团队和 Yammer 如何协同工作以提供全局协作平台的幕后示例。
 
-- [使用 Office 365 组、SharePoint、团队和 Yammer 查找你的协作最佳位置](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [使用 Office 365 组、SharePoint、团队和 Yammer 查找你的协作最佳位置](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546464"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950804"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允许来宾和外部 B2B 访问的策略
 
@@ -55,7 +55,9 @@ ms.locfileid: "47546464"
 ### <a name="guests-vs-external-users"></a>来宾和外部用户
 在 Azure AD 中，来宾和外部用户是相同的。 这两个用户的用户类型为 "来宾"。 来宾用户是 B2B 用户。
 
-Microsoft 团队在应用程序中区分来宾用户和外部用户，但在进行身份验证时，这两个用户都是 B2B 用户。 有关团队来宾和外部用户的详细信息，请参阅 [为团队启用来宾和外部访问](teams-access-policies.md#enabling-guest-and-external-access-for-teams)。
+Microsoft 团队在应用程序中区分来宾用户和外部用户。 来宾用户拥有 Azure AD B2B 帐户，并且可以添加到团队。 外部用户只能参与呼叫、聊天和会议。 有关详细信息，请参阅 [针对团队的来宾和外部用户之间的比较](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
+
+有关保护团队的身份和设备访问的详细信息，请参阅[保护团队聊天、组和文件的策略建议](teams-access-policies.md)
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>要求为来宾和外部用户始终进行 MFA
 此策略将提示来宾在你的租户中注册 MFA，而不考虑是否在其家乡租户中向 MFA 注册了这些。 在访问租户中的资源时，来宾和外部用户需要对每个请求使用 MFA。 

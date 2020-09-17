@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络见解 (预览) '
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687871"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948512"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 网络见解 (预览) 
 
-**网络洞察力** 是从 Microsoft 365 租户收集的实时性能指标，仅供租户中的管理用户查看。 Insights 显示在 Microsoft 365 管理中心的中 <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
+**网络见解** 是从 Microsoft 365 租户收集的性能指标，仅供租户中的管理用户查看。 Insights 显示在 Microsoft 365 管理中心的中 <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
 
 Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的实时详细信息。
 
-可以为每个办公室位置显示五个特定的网络见解：
+可以为每个办公室位置显示六个特定的网络见解：
 
 - [Backhauled 网络出口](#backhauled-network-egress)
 - [为附近的客户检测到更好的性能](#better-performance-detected-for-customers-near-you)
 - [使用非最佳 Exchange Online 服务前门](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [使用非最佳 SharePoint Online 服务前盖](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [SharePoint 前门的低下载速度](#low-download-speed-from-sharepoint-front-door)
+- [中国用户最佳网络出口](#china-user-optimal-network-egress)
+
+可以为租户显示两个租户级别的网络见解。 这些页面还会显示在 producvitivy 分数页面中：
+
+- [由连接问题影响的 Exchange 抽样连接数](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [由连接问题影响的 SharePoint 抽样连接](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
@@ -140,6 +146,30 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 ### <a name="what-should-i-do"></a>该怎么办？
 
 有关如何缓解与此洞察力相关的性能问题的详细信息，请参阅 [适用于中国用户的 Office 365 全局租户性能优化](microsoft-365-networking-china.md)。
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>由连接问题影响的 Exchange 抽样连接数
+
+此洞察力将显示何时有50% 或更多样本连接受到影响。 每个样本的 Exchange 评估为低于60% 的 Exchange 评估定义的影响。
+
+### <a name="what-does-this-mean"></a>应用场景
+
+这表明大多数用户可能会在连接到 Exchange Online 的 Outlook 中遇到用户体验问题。 样本的百分比可能表示显示在60点以下的用户的百分比。  
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支机构受较差的网络连接 impactred 影响 Exchange 的信息，以及如何在将用户连接到 Microsoft 网络的情况中查找网络外围设备的方法。
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>由连接问题影响的 SharePoint 抽样连接
+
+此洞察力将显示何时有50% 或更多样本连接受到影响。 此影响由 SharePoint 评估定义，每个样本的低于40%。
+
+### <a name="what-does-this-mean"></a>应用场景
+
+这表明大多数用户可能会遇到 SharePoint 和 OneDrive 的用户体验问题。 样本的百分比可能表示显示在40点以下的用户的百分比。  
+
+### <a name="what-should-i-do"></a>该怎么办？
+
+启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支机构受到影响 SharePoint 的网络连接的 impactred，并查找将用户连接到 Microsoft 网络的网络外围设备的方法。
 
 ## <a name="related-topics"></a>相关主题
 

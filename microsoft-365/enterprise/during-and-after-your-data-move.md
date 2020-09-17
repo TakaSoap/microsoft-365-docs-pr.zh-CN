@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是指 Microsoft 将租户的服务和关联数据移到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687795"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950268"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -45,8 +45,8 @@ ms.locfileid: "46687795"
 |阿拉伯联合酋长国  <br/> |2022年7月1日  <br/> |
 |南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
-|德国  <br/> |相同  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
+|德国  <br/> |相同  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 

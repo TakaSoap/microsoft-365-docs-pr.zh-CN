@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 查看有关从 Microsoft 365 管理中心进行集中部署的常见问题解答。
-ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 555496f15663b6607ebc785498bdc94b5e51b9c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102880"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948684"
 ---
 # <a name="centralized-deployment-faq"></a>集中部署常见问题解答
 
@@ -44,7 +44,7 @@ ms.locfileid: "45102880"
 
 最好使用组分配（而不是单个用户分配）来简化管理。
  
-有关更多详细信息，请参阅[User And Group 赋值](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)。  
+有关更多详细信息，请参阅 [User And Group 赋值](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#user-and-group-assignments)。  
    
 ## <a name="how-long-does-it-take-for-add-ins-to-show-up-for-all-users"></a>为所有用户显示外接程序需要多长时间？  
 
@@ -64,38 +64,40 @@ ms.locfileid: "45102880"
 
 **固定 (默认) **  将自动向分配的用户部署加载项，并且无法将其删除。  
  
-**可用**用户可以通过选择 "**家庭 > 获取更多加载项 > 管理员管理**" 来在 Outlook 中安装外接程序。
+**可用** 用户可以通过选择 " **家庭 > 获取更多加载项 > 管理员管理**" 来在 Outlook 中安装外接程序。
  
-**可选**加载项将自动部署到分配的用户，但可以选择将其删除。  
+**可选** 加载项将自动部署到分配的用户，但可以选择将其删除。  
     
 ## <a name="can-admins-update-line-of-business-lob-add-ins"></a>管理员是否可以更新业务线 (LOB) 外接程序？  
 
 是。 管理员可以上传新的清单文件，以支持管理员部署的 LOB 外接程序的元数据更改。下次 Office 应用程序启动时，外接程序会更新。 Web 应用程序可以随时更改。  
  
-有关详细信息，请参阅[业务线外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)。  
+有关详细信息，请参阅 [业务线外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>管理员是否可以关闭外接程序？  
 
 是。 管理员可以打开或关闭他们为 Microsoft 管理中心中的所有用户部署的外接程序。
 
-有关详细信息，请参阅[外接程序状态](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)。  
+有关详细信息，请参阅 [外接程序状态](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>是否可以管理员删除或删除加载项？
 
 是。 管理员可以从 Microsoft 管理中心删除为所有用户部署的外接程序。
 
-有关详细信息，请参阅[删除外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)。 
+有关详细信息，请参阅 [删除外接程序](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>管理员是否可以使用集中部署从 Office 应用商店部署付费的外接程序？ 
 
-不是。 此时无法使用集中部署从 Office 应用商店中部署付费的外接程序。  
+否。 此时无法使用集中部署从 Office 应用商店中部署付费的外接程序。  
  
 建议与付费外接程序的 ISV 开发人员联系，以请求清单文件或 URL。 然后，租户管理员可以使用集中部署将加载项部署为 LOB 加载项。
     
 ## <a name="which-admin-role-do-i-need-to-manage-add-ins-for-my-organization"></a>我需要哪些管理员角色来管理组织的外接程序？  
 
-您必须具有全局管理员角色才能管理外接程序。如果你是购买 Microsoft 365 for business 订阅的人员，则表示你是全局管理员。 
+全局管理员是具有对加载项管理生命周期的完全访问权限的推荐角色。 其他管理员角色对加载项部署生命周期具有有限的访问权限。 如果你是购买 Microsoft 365 for business 订阅的人员，则表示你是全局管理员。 
  
 您的订阅附带有一组管理员角色，您可以将其分配给组织中的其他用户。 每个管理员角色都映射到常用业务功能，并向组织中的人员授予在 Microsoft 365 管理中心中执行特定任务的权限。  
  
-有关详细信息，请参阅[分配管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)。  
+有关详细信息，请参阅 [分配管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide)。  
+
+

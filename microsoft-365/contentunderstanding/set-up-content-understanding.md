@@ -1,22 +1,22 @@
 ---
 title: '设置内容了解 (预览)  '
 description: 如何设置项目 Cortex。
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 05696f99e59cbd51ba004f6007311b4b6af4a839
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612698"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950032"
 ---
 # <a name="set-up-content-understanding-preview"></a>设置内容了解 (预览) 
 
@@ -38,20 +38,20 @@ ms.locfileid: "46612698"
 
 ## <a name="to-set-up-content-understanding"></a>设置内容了解
 
-1. 在 Microsoft 365 管理中心，选择 "**设置**"，然后查看 "**组织知识库**" 部分。
-2. 在 "**组织知识库**" 部分，选择 "**自动内容理解**"。<br/>
+1. 在 Microsoft 365 管理中心，选择 " **设置**"，然后查看 " **组织知识库** " 部分。
+2. 在 " **组织知识库** " 部分，选择 " **自动内容理解**"。<br/>
 
     ![组织知识设置页](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. 在 "**自动内容理解**" 页上，单击 "**入门**" 以引导您完成设置过程。<br/>
+3. 在 " **自动内容理解** " 页上，单击 " **入门** " 以引导您完成设置过程。<br/>
 
     ![开始安装](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 
-4. 在 "**配置表单处理**" 页上，您可以选择是否希望让用户能够使用 AI 生成器在特定的 SharePoint 文档库中创建表单处理模型。 "文档库" 功能区中将提供一个菜单选项，以便在启用了 SharePoint 文档库中**创建表单处理模型**。
+4. 在 " **配置表单处理** " 页上，您可以选择是否希望让用户能够使用 AI 生成器在特定的 SharePoint 文档库中创建表单处理模型。 "文档库" 功能区中将提供一个菜单选项，以便在启用了 SharePoint 文档库中 **创建表单处理模型** 。
  
-     对于**哪个 SharePoint 库应显示用于创建表单处理模型的选项**，您可以选择：</br>
-    - **所有 sharepoint 库**，使其可用于租户中的所有 sharepoint 库。</br>
+     对于 **哪个 SharePoint 库应显示用于创建表单处理模型的选项**，您可以选择：</br>
+    - **所有 sharepoint 库** ，使其可用于租户中的所有 sharepoint 库。</br>
     - **仅选定网站中的库**，然后选择要使其可用的网站。</br>
     - 如果您当前不希望将其用于任何网站，则**没有 SharePoint 库** (可以在安装程序) 后更改此库。
 </br>
@@ -63,8 +63,8 @@ ms.locfileid: "46612698"
    > 在 SharePoint 文档库上启用此设置不会影响应用于库的现有模型，也不会影响将文档理解模型应用于库的功能。 
 
     
-5. 在 "**创建内容中心**" 页上，您可以创建 SharePoint 内容中心网站，用户可以在该网站上创建和管理文档理解模型。 </br>
-    a. 在 "**网站名称**" 中，键入要为内容中心网站提供的名称。</br>
+5. 在 " **创建内容中心** " 页上，您可以创建 SharePoint 内容中心网站，用户可以在该网站上创建和管理文档理解模型。 </br>
+    a. 在 " **网站名称**" 中，键入要为内容中心网站提供的名称。</br>
     b. **网站地址**将根据您为网站名称选择的内容显示网站的 URL。</br>
 
     > [!Note] 
@@ -74,13 +74,13 @@ ms.locfileid: "46612698"
 
 
     选择“**下一步**”。
-6. 在 "**完成并检查**" 页上，您可以查看选定的设置并选择进行更改。 如果您对所做的选择感到满意，请选择 "**激活**"。
+6. 在 " **完成并检查** " 页上，您可以查看选定的设置并选择进行更改。 如果您对所做的选择感到满意，请选择 " **激活**"。
 
 
 
 7. **内容理解激活**的页面将会显示，确认系统已添加表单处理首选项并创建内容中心网站。 选择“完成”****。
 
-8. 您将返回到 "**自动内容理解**" 页面。 在此页面中，您可以选择 "**管理**" 以对配置设置进行任何更改。 
+8. 您将返回到 " **自动内容理解** " 页面。 在此页面中，您可以选择 " **管理** " 以对配置设置进行任何更改。 
 
 ## <a name="see-also"></a>另请参阅
 

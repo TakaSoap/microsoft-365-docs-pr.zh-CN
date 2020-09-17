@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780537"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948804"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
-您是否是一个通常在旅途中的管理员？ 然后，查看[Microsoft 365 管理应用程序](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用该应用从您的手机或平板电脑管理您的在线组织。 你可以从 Apple Store 和 Google Play 中获取应用。 <br> 
+您是否是一个通常在旅途中的管理员？ 然后，查看 [Microsoft 365 管理应用程序](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用该应用从您的手机或平板电脑管理您的在线组织。 你可以从 Apple Store 和 Google Play 中获取应用。 <br> 
 
 ![管理移动应用程序主页的屏幕捕获，显示搜索、邮件、运行状况和快速链接。](../../media/admin-mobile-app-darkbg.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "44780537"
 如果你是负责多个联机组织的人，则登录到多个 emc 并在其之间快速切换。 
   
 > [!IMPORTANT]
-> 如果在 iOS 或 Android 上使用管理移动应用程序遇到问题，请通过电子邮件发送[feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告知我们。 
+> 如果在 iOS 或 Android 上使用管理移动应用程序遇到问题，请通过电子邮件发送 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告知我们。 
   
 ## <a name="download-the-admin-mobile-app"></a>下载移动管理应用
 
@@ -58,7 +58,7 @@ ms.locfileid: "44780537"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
  
 ## <a name="frequently-asked-questions"></a>常见问题
@@ -89,6 +89,10 @@ ms.locfileid: "44780537"
 
 如果选择特定服务事件或邮件，则 "共享" 选项将位于右上角。 我们当前支持电子邮件共享。
   
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>我可以将此应用程序用于多个帐户或租户吗？
+
+是的，可以设置多个帐户或租户。
+  
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>我的应用有些异常。 我应该如何解决异常的应用行为？
 
 你可以尝试一些常见的移动应用疑难解答步骤：
@@ -97,11 +101,11 @@ ms.locfileid: "44780537"
     
 2. 卸载并重新安装应用。
 
-3. 如果这样做不起作用，您可以通过电子邮件发送[feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告诉我们我们。
+3. 如果这样做不起作用，您可以通过电子邮件发送 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告诉我们我们。
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果我的问题未获得答复怎么办？
 
-电子邮件[feedback365@microsoft.com](mailto:feedback365@microsoft.com)报告应用程序存在的问题。 你也可以在本文的底部提供反馈。 
+电子邮件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 报告应用程序存在的问题。 你也可以在本文的底部提供反馈。 
   
 ## <a name="see-also"></a>另请参阅
 

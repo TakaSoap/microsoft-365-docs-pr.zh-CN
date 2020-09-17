@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3ca475ef6dbdbd66af47216c4130d748788730c2
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 2259158c566223c39a6b533483551f95c2fa0824
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419128"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949296"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -31,7 +31,12 @@ ms.locfileid: "47419128"
 
 应用这些建议以更快地获得结果，并避免在运行复杂查询时超时。 有关提高查询性能的更多指导，请参阅 [Kusto 查询最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
 
-## <a name="general-guidance"></a>一般指导
+## <a name="understand-cpu-resource-limits"></a>了解 CPU 资源限制
+根据其大小，每个租户都有权访问为运行高级搜寻查询而分配的一组 CPU 资源。 有关各种服务限制的详细信息，请 [阅读有关高级搜寻限制](advanced-hunting-limits.md)的信息。
+
+定期运行多个查询的客户应跟踪消耗量并在本文中应用优化指南，以最大限度地减少因超出限制而导致的中断。
+
+## <a name="general-optimization-tips"></a>常规优化提示
 
 - **调整新查询的大小**—如果您怀疑查询将返回一个大型结果集，请先使用 [count 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)对其进行评估。 使用 [限制](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) 或其同义词 `take` 以避免出现大型结果集。
 - **早期应用筛选器**—应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [子字符串 ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、将 [ ( # B3 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ( # B5 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ( # B7 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ( # B9 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）时。 在下面的示例中，分析函数 [extractjson ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) 在筛选运算符减少了记录数量之后使用。
@@ -255,9 +260,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
+- [服务限制](advanced-hunting-limits.md)
+- [处理高级搜寻错误](advanced-hunting-errors.md)
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
-- [处理查询结果](advanced-hunting-query-results.md)
-- [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
-- [了解架构](advanced-hunting-schema-tables.md)

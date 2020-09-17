@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547214"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950782"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -35,6 +35,10 @@ ms.locfileid: "47547214"
 
 [ ![ 用于配置标识和设备访问的常见策略](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
  [请参阅此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+
+以下是包含各个策略链接的单页 PDF 摘要：
+
+[![用于 Microsoft 365 讲义的标识和设备保护的缩略图](../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [以 PDF](../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| 形式查看 [下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)  
 
 本文的其余部分介绍了如何配置这些策略。 
 
@@ -374,7 +378,6 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 ## <a name="next-step"></a>后续步骤
 
-![步骤3：针对来宾和外部用户的策略](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)
-
+[![步骤3：针对来宾和外部用户的策略](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
 [了解来宾和外部用户的策略建议](identity-access-policies-guest-access.md)

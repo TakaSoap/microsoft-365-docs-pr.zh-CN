@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何创建内容中心。
-ms.openlocfilehash: 5332ffa195519aebd5ae8dd2c26d7d62fd9b3267
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: ae10cdae2fe84abf72cf09141798b628d88a504a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612746"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950092"
 ---
 # <a name="create-a-content-center-preview"></a>创建内容中心 (预览) 
 
@@ -33,17 +33,17 @@ ms.locfileid: "46612746"
 
    ![选择文档库](../media/content-understanding/content-center-page.png)</br>
 
-初始内容中心是在[安装](set-up-content-understanding.md)过程中创建的，但 SharePoint 管理员可以根据需要选择创建其他内容中心。 虽然单个内容中心对于要查看所有模型活动的汇总的环境可能很好，但如果您的组织中有多个部门可能对其模型有不同的需求和要求，则您可能需要其他客户端。
+初始内容中心是在 [安装](set-up-content-understanding.md)过程中创建的，但 SharePoint 管理员可以根据需要选择创建其他内容中心。 虽然单个内容中心对于要查看所有模型活动的汇总的环境可能很好，但如果您的组织中有多个部门可能对其模型有不同的需求和要求，则您可能需要其他客户端。
 
-SharePoint 管理员可以创建内容中心网站，如他们通过网站模板[创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection)。
+SharePoint 管理员可以创建内容中心网站，如他们通过网站模板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 。
 
 若要创建新的内容中心，请执行以下操作：
 
 1. 在 Microsoft 365 管理中心，转到 "SharePoint 管理中心"。
-2. 在 SharePoint 管理中心的 "**网站**" 下，选择 "**活动网站**"。
-3. 在 "**活动网站**" 页上，单击 "**创建**"，然后选择 "**其他选项**"。
-4. 在 "**选择模板**" 菜单上，选择 "**内容中心**"。
-5. 对于新网站，提供**网站名称**、**主管理员**和一种**语言**。</br>
+2. 在 SharePoint 管理中心的 " **网站**" 下，选择 " **活动网站**"。
+3. 在 " **活动网站** " 页上，单击 " **创建**"，然后选择 " **其他选项**"。
+4. 在 " **选择模板** " 菜单上，选择 " **内容中心**"。
+5. 对于新网站，提供 **网站名称**、 **主管理员**和一种 **语言**。</br>
 
 > [!Note] 
 > 您可以选择以任何可用语言呈现的内容中心网站，但请注意，当前的模型只能为英语文件创建。</br>
@@ -52,7 +52,7 @@ SharePoint 管理员可以创建内容中心网站，如他们通过网站模板
 
 ### <a name="give-access-to-additional-users"></a>授予对其他用户的访问权限
  
-创建网站后，可以通过标准[SharePoint 网站权限模型](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)向其他用户授予对网站的访问权限。
+创建网站后，可以通过标准 [SharePoint 网站权限模型](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)向其他用户授予对网站的访问权限。
 
 
 

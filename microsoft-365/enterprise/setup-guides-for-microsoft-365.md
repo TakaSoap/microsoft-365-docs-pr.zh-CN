@@ -3,7 +3,7 @@ title: Microsoft 365 和 Office 365 服务的设置指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过安装指南加快规划和配置 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 2f2c398a3e807b3859cf8f53f63a0ac908ba2683
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 879942d75f37a7984dad8f4ac5dc99933b3988f4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687762"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949734"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
@@ -51,7 +51,7 @@ Microsoft 365 和 Office 365 安装指南为管理员提供了用于部署应用
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安装指南在 Microsoft 365 管理中心中的工作原理是什么？
 
-每个指南都为您提供了分步说明、资源、文章以及在需要时可用于进行配置更改的脚本。 这些指南为您提供了一些选项，可反映小型 emc 和大型的特定需求。 此外，提供的指南还包括针对新的和更有经验的管理员的协助。
+每个指南都为您提供了分步说明、资源、文章以及在需要时可用于进行配置更改的脚本。 这些指南为您提供了可反映小型组织和大型组织的特定需求的选项。 此外，提供的指南还包括针对新的和更有经验的管理员的协助。
 
 ![安装指南示例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
@@ -61,11 +61,11 @@ Microsoft 365 和 Office 365 安装指南为管理员提供了用于部署应用
 
 ### <a name="prepare-your-environment"></a>准备环境
 
-" [准备环境](https://aka.ms/prepareyourenvironment) " 指南可帮助您为您的 Microsoft 365 和 Office 365 服务准备您的组织的环境。 无论您的目标如何，都需要完成一些任务以确保成功部署。 若要在准备环境时避免出现任何错误，请按照分步说明操作，以连接域、添加用户、分配许可证、使用 Exchange Online 设置电子邮件以及安装或部署 Office 应用。 
+" [准备环境](https://aka.ms/prepareyourenvironment) " 指南可帮助您为组织的 Microsoft 365 和 Office 365 服务准备环境。 无论您的目标如何，都需要完成一些任务以确保成功部署。 若要在准备环境时避免出现任何错误，请按照分步说明操作，以连接域、添加用户、分配许可证、使用 Exchange Online 设置电子邮件以及安装或部署 Office 应用。 
 
 ### <a name="email-setup-advisor"></a>电子邮件设置顾问
 
-[电子邮件设置顾问](https://aka.ms/office365setup)为您提供了为组织配置 Exchange Online 所需的分步指南。 这包括设置新的电子邮件帐户、迁移电子邮件和配置电子邮件保护。 若要成功设置电子邮件，请使用此顾问，并将根据你的组织的当前邮件系统、要迁移的邮箱数以及你希望如何管理用户及其访问情况，收到建议的迁移方法。
+[电子邮件设置顾问](https://aka.ms/office365setup)为您提供了为组织配置 Exchange Online 所需的分步指南。 这包括设置新的电子邮件帐户、迁移电子邮件和配置电子邮件保护。 若要成功设置电子邮件，请使用此顾问，并根据组织的当前邮件系统、要迁移的邮箱数以及管理用户及其访问的方式来接收建议的迁移方法。
 
 ### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail 联系人和日历顾问
 
@@ -90,11 +90,11 @@ Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。
 
 [Windows 虚拟桌面安装指南](https://aka.ms/wvdsetupguide)为管理员提供了规划资源以及部署、安装指南和其他资源的先决条件。 
 
-## <a name="guides-for-security"></a>安全指南
+## <a name="guides-for-authentication-and-access"></a>身份验证和访问指南
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 安装指南
 
-[AZURE AD 安装指南](https://aka.ms/aadpguidance)提供的信息可确保你的组织具有强大的安全基础。 在本指南中，您将设置初始功能，如 Azure 基于角色的访问控制 (Azure RBAC) for admins、用于本地目录的 Azure AD Connect 和 Azure AD Connect Health，这样您就可以在自动同步过程中监视混合身份的运行状况。 
+[AZURE AD 安装指南](https://aka.ms/aadpguidance)提供的信息可确保您的组织具有强大的安全基础。 在本指南中，您将设置初始功能，如 Azure 基于角色的访问控制 (Azure RBAC) for admins、用于本地目录的 Azure AD Connect 和 Azure AD Connect Health，这样您就可以在自动同步过程中监视混合身份的运行状况。 
 
 此外，还提供有关启用自助密码重置、条件访问和集成的第三方登录（包括可选的高级 ID 保护和用户预配自动化）的基本信息。
 
@@ -104,9 +104,21 @@ Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。
 
 使用 " [规划您的 passwordless 部署" 向导](https://aka.ms/passwordlesssetup) 来发现最佳的 passwordless 身份验证方法，以使用和接收有关如何部署它们的指导。 
 
+### <a name="plan-your-self-service-password-reset-deployment"></a>规划自助密码重置部署
+
+使用户能够独立地更改或重置其密码，如果帐户被锁定或忘记了密码，则无需联系帮助台工程师。 
+
+使用 " [规划您的自助式密码重置部署" 向导](https://aka.ms/SSPRSetupGuide) ，以获取有关配置相应的 Azure 门户选项以帮助您在环境中部署 SSPR 的相关文章和说明。
+
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory 联合身份验证服务 (AD FS) 部署顾问
+
+[AD FS 部署顾问](https://aka.ms/adfsguidance)为您提供了有关部署对 Microsoft 365 和 Office 365 服务的用户进行身份验证的本地 AD FS 基础结构的分步指南。 在本指南中，您的组织可以查看 AD FS 组件和要求，获取并安装部署所需的 SSL 证书，并安装所需的 web 应用程序代理服务器。 
+
+## <a name="guides-for-security-and-compliance"></a>安全性和合规性指南
+
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender 高级威胁防护 (ATP) 顾问
 
-[Microsoft Defender 高级威胁防护顾问](https://aka.ms/mdatpsetup)提供的说明可帮助你的企业网络阻止、检测、调查和响应高级威胁。 对您的组织的安全漏洞做出明智的评估，并决定最佳的部署包和配置方法。 
+[Microsoft Defender 高级威胁防护顾问](https://aka.ms/mdatpsetup)提供的说明可帮助你的企业网络阻止、检测、调查和响应高级威胁。 对组织的安全漏洞做出有根据的评估，并决定最佳的部署包和配置方法。 
 
 >[!NOTE]
 >Microsoft Defender ATP 需要 Microsoft 批量许可证。
@@ -121,31 +133,39 @@ Microsoft Exchange Online Protection (EOP) 是一种基于云的电子邮件筛�
 
 [Office 365 高级威胁防护顾问](https://aka.ms/oatpsetup)针对您的环境可能会通过电子邮件、链接和第三方协作工具遇到的恶意威胁来保护您的组织。 本指南为您提供了资源和信息，可帮助您准备和确定高级威胁防护计划以满足组织的需求。 
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory 联合身份验证服务 (AD FS) 部署顾问
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 信息保护设置指南
 
-[AD FS 部署顾问](https://aka.ms/adfsguidance)为您提供了有关部署对 Microsoft 365 和 Office 365 服务的用户进行身份验证的本地 AD FS 基础结构的分步指南。 通过本指南，你的组织可以查看 AD FS 组件和要求，获取并安装部署所需的 SSL 证书，并安装所需的 web 应用程序代理服务器。 
+获取可应用于您的信息保护策略的功能的概述，这样您就可以确信敏感信息受到保护。 使用四个阶段的生命周期方法，您可以在其中发现、分类、保护和监控敏感信息。 《 [Microsoft 信息保护设置指南》](https://aka.ms/mipsetupguide) 提供了有关完成每个阶段的指南。
+
+### <a name="microsoft-information-governance-setup-guide"></a>Microsoft 信息治理设置指南
+
+[Microsoft 信息管理设置指南](https://aka.ms/migsetupguide)为您提供了设置和管理组织治理策略所需的信息，以确保根据您设置的特定生命周期准则对数据进行分类和管理。 在本指南中，您将了解如何创建、自动应用或发布应用于组织的可重用内容和合规性记录的标签、标签策略和保留策略。 您还将获得有关导入 CSV 文件的信息，以用于批量方案或手动将其应用到各个文档的文件计划。 
 
 ## <a name="guides-for-collaboration"></a>协作指南
 
-### <a name="microsoft-365-apps-for-enterprise-deployment-advisor"></a>适用于企业部署顾问的 Microsoft 365 应用程序
+### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 应用部署顾问
 
 [Microsoft 365 Apps 部署顾问](https://aka.ms/OPPquickstartguide)可帮助你获取运行最新版本的 Office 产品（如 Word、Excel、PowerPoint 和 OneNote）的用户设备。 您将获得各种部署方法的指南，其中包括简单的自安装选项，以使用管理工具进行企业部署。 这些说明将帮助您评估您的环境，确定具体的部署要求，并实现必要的支持工具以确保成功安装。 
 
-### <a name="mobile-apps-setup-assistant"></a>移动应用程序设置助理
+### <a name="office-mobile-apps-setup-assistant"></a>Office 移动应用安装助理
 
-[移动应用程序设置助理](https://aka.ms/officeappguidance)提供有关在 Windows、IOS 和 Android 移动设备上下载和安装 Office 应用程序的说明。 本指南为你提供了在手机和平板电脑设备上下载和安装 Microsoft 365 和 Office 365 应用的分步信息。
+[Office 移动应用安装助理](https://aka.ms/officeappguidance)提供了有关在 Windows、IOS 和 Android 移动设备上下载和安装 Office 应用程序的说明。 本指南为你提供了在手机和平板电脑设备上下载和安装 Microsoft 365 和 Office 365 应用的分步信息。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft 团队设置指南
 
 [Microsoft 团队设置指南](https://aka.ms/teamsguidance)为你的组织提供了有关设置团队工作区的指南，这些团队工作区通过消息传递、呼叫、音频或视频会议进行团队和私人通信。 你将通过使用网络规划器工具和团队管理员中心的团队顾问来了解有关确定组织的网络要求的说明。 部署完成后，指南中包含的资源可帮助您开始使用团队。
 
-### <a name="sharepoint-deployment-advisor"></a>SharePoint 部署顾问
+### <a name="sharepoint-setup-guide"></a>SharePoint 安装指南
 
-[Sharepoint 部署顾问](https://aka.ms/spoguidance)可帮助您设置 sharepoint 文档存储和内容管理、创建网站、配置外部共享、迁移数据和配置高级设置，以促进组织中的用户参与和通信。 您将按照以下步骤操作，以配置内容共享权限策略、选择迁移同步工具以及为您的 SharePoint 环境启用安全设置。 
+[SharePoint 安装指南](https://aka.ms/spoguidance)可帮助您设置 SharePoint 文档存储和内容管理、创建网站、配置外部共享、迁移数据和配置高级设置，并推动组织中的用户接洽和通信。 您将按照以下步骤操作，以配置内容共享权限策略、选择迁移同步工具以及为您的 SharePoint 环境启用安全设置。 
 
-### <a name="onedrive-quick-start-guide"></a>OneDrive 快速入门指南
+### <a name="onedrive-setup-guide"></a>OneDrive 设置指南
 
 使用 [onedrive 设置指南](https://aka.ms/ODfBquickstartguide) 开始使用 onedrive 文件存储、共享、协作和同步功能。 OneDrive 提供了一个中心位置，用户可在其中同步 Microsoft 365 应用程序文件、配置外部共享、迁移用户数据以及配置高级安全性和设备访问设置。 可以使用 OneDrive 订阅或独立 OneDrive 计划部署 OneDrive 安装指南。 
+
+### <a name="yammer-deployment-advisor"></a>Yammer 部署顾问
+
+在您的组织中使用 Yammer 进行连接和参与。 [Yammer 部署顾问](https://aka.ms/yammerdeploymentguide)通过添加域、定义管理员和组合 yammer 网络来准备 yammer 网络。 你将获得部署 Yammer 的指导，然后自定义外观，配置安全性和合规性，并优化设置。
 
 ## <a name="advanced-wizards"></a>高级向导
 
@@ -156,6 +176,12 @@ Microsoft Exchange Online Protection (EOP) 是一种基于云的电子邮件筛�
 ### <a name="deploy-office-to-your-users"></a>将 Office 部署到您的用户
 
 使用 Office 部署工具从云中部署 Office 应用，从而能够自定义安装。 " [向用户部署 office" 指南 ](https://aka.ms/proplusodt) 可帮助您使用高级设置创建自定义的 Office 配置，也可以使用预构建的建议配置。 无论您的用户正在进行自我安装还是要批量部署到用户，此高级向导都会提供分步说明，以向用户提供针对您的组织量身定制的 Office 安装。
+
+### <a name="deploy-office-to-remote-users"></a>将 Office 部署到远程用户
+
+现在，远程工作是标准的，用户需要在未连接到内部网络或使用自己的设备时接收组织的 Office 设置。 
+
+使用 " [向远程用户部署 office" 指南](https://aka.ms/officeremoteinstall) 创建自定义 Office 安装，然后向用户发送生成的 PowerShell 脚本，该脚本可无缝地将 Office 与您的配置一起安装。
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager 部署和更新 Microsoft 365 应用
 

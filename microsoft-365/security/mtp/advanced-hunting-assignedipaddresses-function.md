@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794227"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949308"
 ---
-# <a name="assignedipaddresses"></a>AssignedIPAddresses ( # A1
+# <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 **适用于：**
 - Microsoft 威胁防护
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+使用该 `AssignedIPAddresses()` 函数可以快速获取已分配给设备的最新 IP 地址。 如果指定时间戳参数，此函数将获取指定时间的最新 IP 地址。 
 
-使用该 `AssignedIPAddresses()` 函数可以快速获取从指定时间点分配给设备或最近的 ip 地址的最新 ip 地址。 此函数返回具有以下列的表：
+此函数返回具有以下列的表：
 
 | 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
-| Timestamp | datetime | 使用 IP 地址观察到设备的最晚时间 |
-| IPAddress | string | 设备使用的 IP 地址 |
-| IPType | string | 指示 IP 地址是否为公用地址或专用地址 |
-| NetworkAdapterType | int | 已为其分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | 与分配的 IP 地址的适配器连接的网络。 每个 JSON 数组包含网络名称、类别 (public、private 或 domain) 、说明以及指示是否已将其公开连接到 internet 的标志 |
-
+| `Timestamp` | datetime | 使用 IP 地址观察到设备的最晚时间 |
+| `IPAddress` | 字符串 | 设备使用的 IP 地址 |
+| `IPType` | 字符串 | 指示 IP 地址是否为公用地址或专用地址 |
+| `NetworkAdapterType` | int | 已为其分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | 与分配的 IP 地址的适配器连接的网络。 每个 JSON 数组包含网络名称、类别 (公用、专用或域) 、说明以及指示是否已将其公开连接到 internet 的标志 |
 
 ## <a name="syntax"></a>语法
 
@@ -50,12 +49,12 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>参数
 
-- **x** — `DeviceId` 或 `DeviceName` 标识设备的值
-- **y** — `Timestamp` (datetime) 值，该值指示获取最新 IP 地址的特定时间点。 如果未指定，则该函数将返回最新的 IP 地址。
+- **x**— `DeviceId` 或 `DeviceName` 标识设备的值
+- **y**— `Timestamp` (datetime) 值指示函数获取特定时间的最近分配的 IP 地址。 如果未指定，则该函数将返回最新的 IP 地址。
 
 ## <a name="examples"></a>示例
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>获取设备在24小时前使用的 IP 地址列表
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>获取设备24小时前使用的 IP 地址的列表
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

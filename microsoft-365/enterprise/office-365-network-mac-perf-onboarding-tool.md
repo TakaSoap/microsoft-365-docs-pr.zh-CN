@@ -3,7 +3,7 @@ title: 'Microsoft 365 网络连接测试 (预览) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试 (预览) '
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649976"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948537"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 网络连接测试 (预览) 
 
@@ -29,6 +29,8 @@ Microsoft 365 网络连接测试工具位于 <https://connectivity.office.com> �
 >网络连接测试工具支持 WW 商业和德国的租户，但不支持 GCC 中、GCC 高级、DoD 或中国的租户。
 
 Microsoft 365 管理中心中的网络见解基于每天进行聚合的 Microsoft 365 租户的定期产品度量。 相比之下，Microsoft 365 网络连接测试中的网络洞察力在本地运行，一次在该工具中运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 连接测试可帮助确定问题的根本原因，从而导致建议的网络性能改进操作。
+
+![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 我们建议将这些信息结合使用，以便在 Microsoft 365 管理中心中的每个办公室位置评估网络质量状态，并在部署基于 Microsoft 365 连接测试的测试之后找到更多的详细信息。
 
@@ -205,6 +207,28 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 本节显示了 ICMP traceroute 对 Exchange Online 服务前向门、SharePoint Online service 前门和 Microsoft 团队服务前盖的结果。 仅提供此信息，没有相关的网络洞察力。 提供了三个 traceroutes。 一个 traceroute 到 _outlook.office365.com_，一个 traceroute 到客户的 SharePoint 前端或 _microsoft.sharepoint.com_ ，如果未提供，则 traceroute 到 _world.tr.teams.microsoft.com_。
 
+## <a name="what-happens-at-each-test-step"></a>每个测试步骤中会发生的情况
+
+### <a name="office-location-identification"></a>办公室位置标识
+
+当您单击 "运行测试" 按钮时，将显示正在运行的测试页并标识办公室位置。 您可以按城市、省市自治区和国家/地区键入，也可以在 web 浏览器中检测到该位置。 如果检测到此情况，我们会从 web 浏览器请求纬度和经度，并在使用之前将精度限制为 300m 300m。 我们这样做的原因是，与构建网络性能相比，不需要更准确地确定位置。 
+
+### <a name="javascript-tests"></a>JavaScript 测试
+
+在 office 位置标识之后，我们会在 JavaScript 中运行 TCP 延迟测试，并向服务请求有关正在使用的 Office 365 服务前端服务器和建议的 Office 服务前端服务器的数据。 完成这些操作后，我们会将其显示在地图上和 "详细信息" 选项卡中，在下一步之前可以查看它们。
+
+### <a name="download-the-advanced-tests-client-application"></a>下载高级测试客户端应用程序
+
+接下来，我们将开始下载高级测试客户端应用程序。 我们依赖用户来启动客户端应用程序，并且还必须安装 .NET Core。
+
+### <a name="start-the-advanced-tests-client-application"></a>启动高级测试客户端应用程序
+
+在客户端应用程序启动后，网页将进行更新以显示此数据，并将开始将测试数据接收到网页。 每次接收新数据时，它都会更新，您可以在数据到达时查看数据。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>高级测试已完成并测试报表上载
+
+完成测试后，网页和高级测试客户端将同时指明这一点，如果测试报告中的用户已登录，则会将其上载到客户租户。
+
 ## <a name="connectivity-reports"></a>连接性报告
 
 登录后，您可以查看以前运行的报告。 您也可以将其共享或从列表中删除。
@@ -224,6 +248,10 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>此工具是否已发布并受 Microsoft 支持？
 
 目前它是一个预览，我们计划定期提供更新，直到我们能够从 Microsoft 获得支持的常规可用性发布状态。 请提供反馈以帮助我们改进。 我们打算将更详细的 Office 365 网络加入指南作为此工具的一部分进行发布，此工具可通过其测试结果自定义为组织。
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>运行高级测试客户端需要什么？
+
+高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，则会转到 [.Net Core 3.1 installer 页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时，而不是 SDK 或 ASP.NET Core Runtime 在页面上的位置。 计算机上的管理员权限是 reuqired，用于安装 .NET Core。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前门？
 

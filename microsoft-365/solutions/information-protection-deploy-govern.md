@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: 使用 Microsoft 365 保留标签和策略来管理 Microsoft 365 环境中的个人数据。
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522297"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949248"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理受数据隐私法规约束的信息
 
-可以在您的环境中使用信息控制控件，以帮助满足数据隐私合规性需求，其中包括特定于常规数据保护法规（GDPR）、HIPAA-高科技（美国卫生保健隐私法案）、加利福尼亚州消费者保护法（CCPA）和巴西数据保护法案（LGPD）的数字。 
+可以在您的环境中使用信息控制控件，以帮助满足数据隐私合规性需求，包括特定于常规 Data Protection 规章的数字 (GDPR) 、HIPAA-高科技 (美国卫生保健隐私法案) 、加利福尼亚消费者保护法 (CCPA) 和巴西 Data Protection 法案 (LGPD) 。 
 
 这些控件主要分为以下几个解决方案领域：
 
@@ -37,14 +37,14 @@ ms.locfileid: "46522297"
 
 下面的示例列出了可能与信息治理控制相关的数据隐私法规：
 
-- GDPR 文章（13）（2）（a）
-- GDPR 文章（5）（1）（f）
-- HIPAA-高科技（45 CFR 164.312 （c）（2））
-- HIPAA-高科技（45 CFR 164.316 （b）（1）（i））
-- HIPAA-高科技（45 CFR 164.316 （b）（1）（ii））
+- GDPR 文章 (13) # B2 2) # B4 a) 
+- GDPR 文章 (5) # B2 1) # B4 f) 
+- HIPAA-高科技 (45 CFR 164.312 (c) # B3 2) # A5
+- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 i) # A7
+- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 ii) # A7
 - LGPD 文章46
 
-有关这些管理法规的详细信息，请参阅[评估数据隐私风险和确定敏感信息文章](information-protection-deploy-assess.md)。
+有关这些管理法规的详细信息，请参阅 [评估数据隐私风险和确定敏感信息文章](information-protection-deploy-assess.md)。
 
 对于信息治理，数据隐私规章通常会调用以下内容：
 
@@ -67,11 +67,11 @@ ms.locfileid: "46522297"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>在 Microsoft 365 中管理信息治理
 
-若要开始，请参阅在 Microsoft 365 中[管理信息](../compliance/manage-information-governance.md)管理和[数据保留、删除和销毁](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
+若要开始，请参阅在 Microsoft 365 中 [管理信息](../compliance/manage-information-governance.md) 管理和 [数据保留、删除和销毁](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>为容器、电子邮件和内容开发数据保留计划
 
-请注意以下几点：
+请注意下列事项：
 
 - 若要为定义的信息类型建立数据保留计划，应考虑实施任何保留或删除方案的先决条件。
 
@@ -81,27 +81,13 @@ ms.locfileid: "46522297"
 
 - 一旦环境中的个人信息类型更清楚，请为此类型的内容建立保留和删除计划，并调整您的信息体系结构以使此类信息的管理更容易。 例如，使用受控制的访问隔离单独的网站、库或文件夹中的个人信息。
 
-### <a name="retention-policies"></a>保留策略
+### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
-为自动应用的网站中的内容创建和部署[保留策略](../compliance/retention-policies.md)。
-
-若要获取包含或预期包含个人数据的网站的数据隐私，请指定保留或删除规则以满足组织标准。
-
-### <a name="retention-labels"></a>保留标签
-
-创建和部署内容和电子邮件的[保留标签](../compliance/labels.md)。
-
-若要获取包含或预期包含个人数据的网站、库、文件夹和电子邮件的数据隐私，请指定自动保留或删除规则以满足组织标准。
+使用 [保留策略和保留标签](../compliance/retention.md) 在 Microsoft 365 中保留或删除包含或预期包含个人数据的内容。
 
 ### <a name="records-management"></a>记录管理
 
-创建和部署基于记录保留计划和文件计划的记录管理的保留标签。
+使用保留标签声明内容 a 记录，以在 Microsoft 365 中为数据实现 [记录管理解决方案](../compliance/records-management.md) 。
 
-对于数据隐私，法律部门收到的数据主体请求（Dsr）声明为记录并无限期存储，以遵守法规活动保留规范。
+对于数据隐私，法律部门收到 (Dsr) 的数据主体请求被声明为记录，可以无限期存储或处理证据，以符合法规活动的保留规范。
 
-有关详细信息，请参阅以下资源： 
-
-- [记录管理](../compliance/records-management.md)
-- [文件计划管理器](../compliance/file-plan-manager.md)
-- [基于事件的记录管理保留](../compliance/automate-event-driven-retention.md)
-- [内容的处置](../compliance/disposition-reviews.md)

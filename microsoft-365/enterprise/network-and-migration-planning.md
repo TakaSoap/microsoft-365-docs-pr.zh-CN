@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含有关网络规划、测试和迁移到 Office 365 的信息的链接。
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688143"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948444"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的网络和迁移规划
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 本文包含有关网络规划和测试以及迁移到 Office 365 的信息的链接。
   
@@ -51,7 +51,7 @@ ms.locfileid: "46688143"
     
 2. 确定哪些 Office 365 服务和功能将可供客户端使用。 您可能拥有不同的服务或使用情况配置文件的用户组。
     
-3. 测量客户端的引导组的网络使用情况。 确保试点客户端代表组织中的人员的不同配置文件以及不同的地理位置。 您可以针对 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Skype for business](https://go.microsoft.com/fwlink/p/?LinkId=321551) 的旧计算器或我们在自己的网络上执行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，对结果进行交叉检查。 
+3. 测量客户端的引导组的网络使用情况。 确保试点客户端代表组织中的人员的不同配置文件以及不同的地理位置。 您可以针对 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Microsoft 团队](https://docs.microsoft.com/microsoftteams/prepare-network) 的旧计算器或我们在自己的网络上执行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，对结果进行交叉检查。 
     
 4. 使用试点组中的度量来推断整个组织的需求，并在对网络进行任何更改之前，重新测试以验证评估。
     
