@@ -23,86 +23,90 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780537"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948804"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a><span data-ttu-id="7edc2-103">关于 Microsoft 365 管理移动应用</span><span class="sxs-lookup"><span data-stu-id="7edc2-103">About the Microsoft 365 admin mobile app</span></span>
+# <a name="about-the-microsoft-365-admin-mobile-app"></a><span data-ttu-id="45be0-103">关于 Microsoft 365 管理移动应用</span><span class="sxs-lookup"><span data-stu-id="45be0-103">About the Microsoft 365 admin mobile app</span></span>
 
-<span data-ttu-id="7edc2-104">您是否是一个通常在旅途中的管理员？</span><span class="sxs-lookup"><span data-stu-id="7edc2-104">Are you an admin who's usually on the go?</span></span> <span data-ttu-id="7edc2-105">然后，查看[Microsoft 365 管理应用程序](https://go.microsoft.com/fwlink/?LinkID=627216)。</span><span class="sxs-lookup"><span data-stu-id="7edc2-105">Then check out the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216).</span></span> <span data-ttu-id="7edc2-106">您可以使用该应用从您的手机或平板电脑管理您的在线组织。</span><span class="sxs-lookup"><span data-stu-id="7edc2-106">You can use the app to manage your online organization from your phone or tablet.</span></span> <span data-ttu-id="7edc2-107">你可以从 Apple Store 和 Google Play 中获取应用。</span><span class="sxs-lookup"><span data-stu-id="7edc2-107">You can get the app from the Apple Store, and from Google Play.</span></span> <br> 
+<span data-ttu-id="45be0-104">您是否是一个通常在旅途中的管理员？</span><span class="sxs-lookup"><span data-stu-id="45be0-104">Are you an admin who's usually on the go?</span></span> <span data-ttu-id="45be0-105">然后，查看 [Microsoft 365 管理应用程序](https://go.microsoft.com/fwlink/?LinkID=627216)。</span><span class="sxs-lookup"><span data-stu-id="45be0-105">Then check out the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216).</span></span> <span data-ttu-id="45be0-106">您可以使用该应用从您的手机或平板电脑管理您的在线组织。</span><span class="sxs-lookup"><span data-stu-id="45be0-106">You can use the app to manage your online organization from your phone or tablet.</span></span> <span data-ttu-id="45be0-107">你可以从 Apple Store 和 Google Play 中获取应用。</span><span class="sxs-lookup"><span data-stu-id="45be0-107">You can get the app from the Apple Store, and from Google Play.</span></span> <br> 
 
 ![管理移动应用程序主页的屏幕捕获，显示搜索、邮件、运行状况和快速链接。](../../media/admin-mobile-app-darkbg.png)
 
-<span data-ttu-id="7edc2-109">管理应用程序是一种功能丰富的应用程序，具有超过80的功能，可帮助您在无法访问计算机时管理您的组织。</span><span class="sxs-lookup"><span data-stu-id="7edc2-109">The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer.</span></span> <span data-ttu-id="7edc2-110">下面列出了可以从应用程序中执行的几个任务：</span><span class="sxs-lookup"><span data-stu-id="7edc2-110">Here's a list of just a few of the tasks you can do from the app:</span></span>
+<span data-ttu-id="45be0-109">管理应用程序是一种功能丰富的应用程序，具有超过80的功能，可帮助您在无法访问计算机时管理您的组织。</span><span class="sxs-lookup"><span data-stu-id="45be0-109">The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer.</span></span> <span data-ttu-id="45be0-110">下面列出了可以从应用程序中执行的几个任务：</span><span class="sxs-lookup"><span data-stu-id="45be0-110">Here's a list of just a few of the tasks you can do from the app:</span></span>
 
-- <span data-ttu-id="7edc2-111">获取服务运行状况和更改通知</span><span class="sxs-lookup"><span data-stu-id="7edc2-111">Get service health and change notifications</span></span>
-- <span data-ttu-id="7edc2-112">创建服务请求</span><span class="sxs-lookup"><span data-stu-id="7edc2-112">Create a service request</span></span>
-- <span data-ttu-id="7edc2-113">重置用户密码</span><span class="sxs-lookup"><span data-stu-id="7edc2-113">Reset a user's password</span></span>
-- <span data-ttu-id="7edc2-114">分配许可证</span><span class="sxs-lookup"><span data-stu-id="7edc2-114">Assign licenses</span></span>
-- <span data-ttu-id="7edc2-115">添加或删除组成员身份</span><span class="sxs-lookup"><span data-stu-id="7edc2-115">Add or remove group memberships</span></span>
-- <span data-ttu-id="7edc2-116">添加用户</span><span class="sxs-lookup"><span data-stu-id="7edc2-116">Add users</span></span> 
+- <span data-ttu-id="45be0-111">获取服务运行状况和更改通知</span><span class="sxs-lookup"><span data-stu-id="45be0-111">Get service health and change notifications</span></span>
+- <span data-ttu-id="45be0-112">创建服务请求</span><span class="sxs-lookup"><span data-stu-id="45be0-112">Create a service request</span></span>
+- <span data-ttu-id="45be0-113">重置用户密码</span><span class="sxs-lookup"><span data-stu-id="45be0-113">Reset a user's password</span></span>
+- <span data-ttu-id="45be0-114">分配许可证</span><span class="sxs-lookup"><span data-stu-id="45be0-114">Assign licenses</span></span>
+- <span data-ttu-id="45be0-115">添加或删除组成员身份</span><span class="sxs-lookup"><span data-stu-id="45be0-115">Add or remove group memberships</span></span>
+- <span data-ttu-id="45be0-116">添加用户</span><span class="sxs-lookup"><span data-stu-id="45be0-116">Add users</span></span> 
 
-<span data-ttu-id="7edc2-117">如果你是负责多个联机组织的人，则登录到多个 emc 并在其之间快速切换。</span><span class="sxs-lookup"><span data-stu-id="7edc2-117">And if you're someone who is responsible for more than one online organization, you sign in to multiple orgs and quickly switch between them.</span></span> 
+<span data-ttu-id="45be0-117">如果你是负责多个联机组织的人，则登录到多个 emc 并在其之间快速切换。</span><span class="sxs-lookup"><span data-stu-id="45be0-117">And if you're someone who is responsible for more than one online organization, you sign in to multiple orgs and quickly switch between them.</span></span> 
   
 > [!IMPORTANT]
-> <span data-ttu-id="7edc2-118">如果在 iOS 或 Android 上使用管理移动应用程序遇到问题，请通过电子邮件发送[feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告知我们。</span><span class="sxs-lookup"><span data-stu-id="7edc2-118">If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.</span></span> 
+> <span data-ttu-id="45be0-118">如果在 iOS 或 Android 上使用管理移动应用程序遇到问题，请通过电子邮件发送 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告知我们。</span><span class="sxs-lookup"><span data-stu-id="45be0-118">If you're having trouble using the Admin mobile app on iOS or Android, email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.</span></span> 
   
-## <a name="download-the-admin-mobile-app"></a><span data-ttu-id="7edc2-119">下载移动管理应用</span><span class="sxs-lookup"><span data-stu-id="7edc2-119">Download the admin mobile app</span></span>
+## <a name="download-the-admin-mobile-app"></a><span data-ttu-id="45be0-119">下载移动管理应用</span><span class="sxs-lookup"><span data-stu-id="45be0-119">Download the admin mobile app</span></span>
 
-<span data-ttu-id="7edc2-120">[Microsoft 365 管理移动应用](https://go.microsoft.com/fwlink/?LinkID=627216)。</span><span class="sxs-lookup"><span data-stu-id="7edc2-120">[Microsoft 365 Admin mobile app](https://go.microsoft.com/fwlink/?LinkID=627216).</span></span>
+<span data-ttu-id="45be0-120">[Microsoft 365 管理移动应用](https://go.microsoft.com/fwlink/?LinkID=627216)。</span><span class="sxs-lookup"><span data-stu-id="45be0-120">[Microsoft 365 Admin mobile app](https://go.microsoft.com/fwlink/?LinkID=627216).</span></span>
   
-<span data-ttu-id="7edc2-121">观看有关安装管理员移动应用程序的简短视频。</span><span class="sxs-lookup"><span data-stu-id="7edc2-121">Watch a short video about installing the admin mobile app.</span></span><br><br>
+<span data-ttu-id="45be0-121">观看有关安装管理员移动应用程序的简短视频。</span><span class="sxs-lookup"><span data-stu-id="45be0-121">Watch a short video about installing the admin mobile app.</span></span><br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-<span data-ttu-id="7edc2-122">如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。</span><span class="sxs-lookup"><span data-stu-id="7edc2-122">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
+<span data-ttu-id="45be0-122">如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。</span><span class="sxs-lookup"><span data-stu-id="45be0-122">If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).</span></span>
 
  
-## <a name="frequently-asked-questions"></a><span data-ttu-id="7edc2-123">常见问题</span><span class="sxs-lookup"><span data-stu-id="7edc2-123">Frequently asked questions</span></span>
+## <a name="frequently-asked-questions"></a><span data-ttu-id="45be0-123">常见问题</span><span class="sxs-lookup"><span data-stu-id="45be0-123">Frequently asked questions</span></span>
 
-<span data-ttu-id="7edc2-124">以下是一些有关应用的常见问题的解答。</span><span class="sxs-lookup"><span data-stu-id="7edc2-124">Below are answers to some frequently asked questions people ask about the app.</span></span>
+<span data-ttu-id="45be0-124">以下是一些有关应用的常见问题的解答。</span><span class="sxs-lookup"><span data-stu-id="45be0-124">Below are answers to some frequently asked questions people ask about the app.</span></span>
   
-### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a><span data-ttu-id="7edc2-125">要使用该应用，我需要做什么？</span><span class="sxs-lookup"><span data-stu-id="7edc2-125">What do I need to do to be able to use the app?</span></span>
+### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a><span data-ttu-id="45be0-125">要使用该应用，我需要做什么？</span><span class="sxs-lookup"><span data-stu-id="45be0-125">What do I need to do to be able to use the app?</span></span>
 
-<span data-ttu-id="7edc2-126">您需要具有有效的 Microsoft 365 Apps for business 或 Microsoft 365 商业高级订阅，才能登录并使用应用。</span><span class="sxs-lookup"><span data-stu-id="7edc2-126">You need to have a valid Microsoft 365 Apps for business or Microsoft 365 Business Premium subscription with admin privileges to sign in and use the app.</span></span> <span data-ttu-id="7edc2-127">管理员移动应用程序不是电子邮件客户端。</span><span class="sxs-lookup"><span data-stu-id="7edc2-127">The Admin mobile app isn't an email client.</span></span> <span data-ttu-id="7edc2-128">它是一个具有80多个功能的丰富管理应用程序，可帮助你在你的旅途中支持你的组织。</span><span class="sxs-lookup"><span data-stu-id="7edc2-128">It's a rich administrative app with over 80 features to help you support your org while your on the go.</span></span>
+<span data-ttu-id="45be0-126">您需要具有有效的 Microsoft 365 Apps for business 或 Microsoft 365 商业高级订阅，才能登录并使用应用。</span><span class="sxs-lookup"><span data-stu-id="45be0-126">You need to have a valid Microsoft 365 Apps for business or Microsoft 365 Business Premium subscription with admin privileges to sign in and use the app.</span></span> <span data-ttu-id="45be0-127">管理员移动应用程序不是电子邮件客户端。</span><span class="sxs-lookup"><span data-stu-id="45be0-127">The Admin mobile app isn't an email client.</span></span> <span data-ttu-id="45be0-128">它是一个具有80多个功能的丰富管理应用程序，可帮助你在你的旅途中支持你的组织。</span><span class="sxs-lookup"><span data-stu-id="45be0-128">It's a rich administrative app with over 80 features to help you support your org while your on the go.</span></span>
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a><span data-ttu-id="7edc2-129">我可以将应用程序用于我的 Microsoft 365 系列订阅吗？</span><span class="sxs-lookup"><span data-stu-id="7edc2-129">Can I use the app with my Microsoft 365 Family subscription?</span></span>
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a><span data-ttu-id="45be0-129">我可以将应用程序用于我的 Microsoft 365 系列订阅吗？</span><span class="sxs-lookup"><span data-stu-id="45be0-129">Can I use the app with my Microsoft 365 Family subscription?</span></span>
 
-<span data-ttu-id="7edc2-130">否，应用仅适用于 Microsoft 365 Apps for business 和 Microsoft 365 商业高级版订阅。</span><span class="sxs-lookup"><span data-stu-id="7edc2-130">No, the app only works with Microsoft 365 Apps for business and Microsoft 365 Business Premium subscriptions.</span></span> 
+<span data-ttu-id="45be0-130">否，应用仅适用于 Microsoft 365 Apps for business 和 Microsoft 365 商业高级版订阅。</span><span class="sxs-lookup"><span data-stu-id="45be0-130">No, the app only works with Microsoft 365 Apps for business and Microsoft 365 Business Premium subscriptions.</span></span> 
   
-### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a><span data-ttu-id="7edc2-131">如果我的组织启用了目录同步，是否可使用该应用？</span><span class="sxs-lookup"><span data-stu-id="7edc2-131">Will the app work if my organization has directory synchronization enabled?</span></span>
+### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a><span data-ttu-id="45be0-131">如果我的组织启用了目录同步，是否可使用该应用？</span><span class="sxs-lookup"><span data-stu-id="45be0-131">Will the app work if my organization has directory synchronization enabled?</span></span>
 
-<span data-ttu-id="7edc2-132">是，但功能降低。</span><span class="sxs-lookup"><span data-stu-id="7edc2-132">Yes, but with reduced functionality.</span></span> <span data-ttu-id="7edc2-133">你将能够登录并查看服务信息，但大多数用户管理功能将是只读的。</span><span class="sxs-lookup"><span data-stu-id="7edc2-133">You'll be able to sign in and view service information, but most of the user management functions will be read-only.</span></span> <span data-ttu-id="7edc2-134">您将无法添加、编辑或删除用户。</span><span class="sxs-lookup"><span data-stu-id="7edc2-134">You won't be able to add, edit, or delete users.</span></span> <span data-ttu-id="7edc2-135">不过，您将能够向组织中的用户分配许可证，并获取通知。</span><span class="sxs-lookup"><span data-stu-id="7edc2-135">However, you'll be able to assign licenses to users in your organization, and get notifications.</span></span>
+<span data-ttu-id="45be0-132">是，但功能降低。</span><span class="sxs-lookup"><span data-stu-id="45be0-132">Yes, but with reduced functionality.</span></span> <span data-ttu-id="45be0-133">你将能够登录并查看服务信息，但大多数用户管理功能将是只读的。</span><span class="sxs-lookup"><span data-stu-id="45be0-133">You'll be able to sign in and view service information, but most of the user management functions will be read-only.</span></span> <span data-ttu-id="45be0-134">您将无法添加、编辑或删除用户。</span><span class="sxs-lookup"><span data-stu-id="45be0-134">You won't be able to add, edit, or delete users.</span></span> <span data-ttu-id="45be0-135">不过，您将能够向组织中的用户分配许可证，并获取通知。</span><span class="sxs-lookup"><span data-stu-id="45be0-135">However, you'll be able to assign licenses to users in your organization, and get notifications.</span></span>
   
-### <a name="what-languages-are-supported-by-the-app"></a><span data-ttu-id="7edc2-136">该应用支持什么语言？</span><span class="sxs-lookup"><span data-stu-id="7edc2-136">What languages are supported by the app?</span></span>
+### <a name="what-languages-are-supported-by-the-app"></a><span data-ttu-id="45be0-136">该应用支持什么语言？</span><span class="sxs-lookup"><span data-stu-id="45be0-136">What languages are supported by the app?</span></span>
 
-<span data-ttu-id="7edc2-137">该应用支持基于 web 的 Microsoft 365 管理中心支持的所有39语言。</span><span class="sxs-lookup"><span data-stu-id="7edc2-137">The app supports all 39 languages that the web-based Microsoft 365 admin center supports.</span></span> 
+<span data-ttu-id="45be0-137">该应用支持基于 web 的 Microsoft 365 管理中心支持的所有39语言。</span><span class="sxs-lookup"><span data-stu-id="45be0-137">The app supports all 39 languages that the web-based Microsoft 365 admin center supports.</span></span> 
   
-### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a><span data-ttu-id="7edc2-138">为什么在我已读取了新邮件后，主屏幕上的邮件磁贴仍会显示数量？</span><span class="sxs-lookup"><span data-stu-id="7edc2-138">Why does the Messages tile on the Home screen show numbers even after I've read the new messages?</span></span>
+### <a name="why-does-the-messages-tile-on-the-home-screen-show-numbers-even-after-ive-read-the-new-messages"></a><span data-ttu-id="45be0-138">为什么在我已读取了新邮件后，主屏幕上的邮件磁贴仍会显示数量？</span><span class="sxs-lookup"><span data-stu-id="45be0-138">Why does the Messages tile on the Home screen show numbers even after I've read the new messages?</span></span>
 
-<span data-ttu-id="7edc2-139">该数量为上周收到的邮件总数，而不是未读邮件的数量。</span><span class="sxs-lookup"><span data-stu-id="7edc2-139">The numbers are the total messages from the last week, not unread messages.</span></span>
+<span data-ttu-id="45be0-139">该数量为上周收到的邮件总数，而不是未读邮件的数量。</span><span class="sxs-lookup"><span data-stu-id="45be0-139">The numbers are the total messages from the last week, not unread messages.</span></span>
   
-### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a><span data-ttu-id="7edc2-140">我如何与组织的其余用户共享服务事件和邮件？</span><span class="sxs-lookup"><span data-stu-id="7edc2-140">How can I share the Service Incidents and Messages with the rest of my organization?</span></span>
+### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a><span data-ttu-id="45be0-140">我如何与组织的其余用户共享服务事件和邮件？</span><span class="sxs-lookup"><span data-stu-id="45be0-140">How can I share the Service Incidents and Messages with the rest of my organization?</span></span>
 
-<span data-ttu-id="7edc2-141">如果选择特定服务事件或邮件，则 "共享" 选项将位于右上角。</span><span class="sxs-lookup"><span data-stu-id="7edc2-141">If you select a specific service incident or a message, the share option will be in the top right corner.</span></span> <span data-ttu-id="7edc2-142">我们当前支持电子邮件共享。</span><span class="sxs-lookup"><span data-stu-id="7edc2-142">We currently support email sharing.</span></span>
+<span data-ttu-id="45be0-141">如果选择特定服务事件或邮件，则 "共享" 选项将位于右上角。</span><span class="sxs-lookup"><span data-stu-id="45be0-141">If you select a specific service incident or a message, the share option will be in the top right corner.</span></span> <span data-ttu-id="45be0-142">我们当前支持电子邮件共享。</span><span class="sxs-lookup"><span data-stu-id="45be0-142">We currently support email sharing.</span></span>
   
-### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a><span data-ttu-id="7edc2-143">我的应用有些异常。</span><span class="sxs-lookup"><span data-stu-id="7edc2-143">My app is acting funny.</span></span> <span data-ttu-id="7edc2-144">我应该如何解决异常的应用行为？</span><span class="sxs-lookup"><span data-stu-id="7edc2-144">What can I do to troubleshoot weird app behavior?</span></span>
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a><span data-ttu-id="45be0-143">我可以将此应用程序用于多个帐户或租户吗？</span><span class="sxs-lookup"><span data-stu-id="45be0-143">Can I use this app with multiple accounts or tenants?</span></span>
 
-<span data-ttu-id="7edc2-145">你可以尝试一些常见的移动应用疑难解答步骤：</span><span class="sxs-lookup"><span data-stu-id="7edc2-145">You can try some common mobile app troubleshooting steps:</span></span>
+<span data-ttu-id="45be0-144">是的，可以设置多个帐户或租户。</span><span class="sxs-lookup"><span data-stu-id="45be0-144">Yes, you can setup multiple accounts or tenants.</span></span>
   
-1. <span data-ttu-id="7edc2-146">关闭并重新打开应用。</span><span class="sxs-lookup"><span data-stu-id="7edc2-146">Close and reopen the app.</span></span>
+### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a><span data-ttu-id="45be0-145">我的应用有些异常。</span><span class="sxs-lookup"><span data-stu-id="45be0-145">My app is acting funny.</span></span> <span data-ttu-id="45be0-146">我应该如何解决异常的应用行为？</span><span class="sxs-lookup"><span data-stu-id="45be0-146">What can I do to troubleshoot weird app behavior?</span></span>
+
+<span data-ttu-id="45be0-147">你可以尝试一些常见的移动应用疑难解答步骤：</span><span class="sxs-lookup"><span data-stu-id="45be0-147">You can try some common mobile app troubleshooting steps:</span></span>
+  
+1. <span data-ttu-id="45be0-148">关闭并重新打开应用。</span><span class="sxs-lookup"><span data-stu-id="45be0-148">Close and reopen the app.</span></span>
     
-2. <span data-ttu-id="7edc2-147">卸载并重新安装应用。</span><span class="sxs-lookup"><span data-stu-id="7edc2-147">Uninstall and reinstall the app.</span></span>
+2. <span data-ttu-id="45be0-149">卸载并重新安装应用。</span><span class="sxs-lookup"><span data-stu-id="45be0-149">Uninstall and reinstall the app.</span></span>
 
-3. <span data-ttu-id="7edc2-148">如果这样做不起作用，您可以通过电子邮件发送[feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告诉我们我们。</span><span class="sxs-lookup"><span data-stu-id="7edc2-148">If that doesn't work, you can email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.</span></span>
+3. <span data-ttu-id="45be0-150">如果这样做不起作用，您可以通过电子邮件发送 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，告诉我们我们。</span><span class="sxs-lookup"><span data-stu-id="45be0-150">If that doesn't work, you can email us at [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to let us know.</span></span>
     
-### <a name="what-do-i-do-if-my-question-isnt-answered"></a><span data-ttu-id="7edc2-149">如果我的问题未获得答复怎么办？</span><span class="sxs-lookup"><span data-stu-id="7edc2-149">What do I do if my question isn't answered?</span></span>
+### <a name="what-do-i-do-if-my-question-isnt-answered"></a><span data-ttu-id="45be0-151">如果我的问题未获得答复怎么办？</span><span class="sxs-lookup"><span data-stu-id="45be0-151">What do I do if my question isn't answered?</span></span>
 
-<span data-ttu-id="7edc2-150">电子邮件[feedback365@microsoft.com](mailto:feedback365@microsoft.com)报告应用程序存在的问题。</span><span class="sxs-lookup"><span data-stu-id="7edc2-150">Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app.</span></span> <span data-ttu-id="7edc2-151">你也可以在本文的底部提供反馈。</span><span class="sxs-lookup"><span data-stu-id="7edc2-151">Or you can give feedback at the bottom of this article.</span></span> 
+<span data-ttu-id="45be0-152">电子邮件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 报告应用程序存在的问题。</span><span class="sxs-lookup"><span data-stu-id="45be0-152">Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an issue with the app.</span></span> <span data-ttu-id="45be0-153">你也可以在本文的底部提供反馈。</span><span class="sxs-lookup"><span data-stu-id="45be0-153">Or you can give feedback at the bottom of this article.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="7edc2-152">另请参阅</span><span class="sxs-lookup"><span data-stu-id="7edc2-152">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="45be0-154">另请参阅</span><span class="sxs-lookup"><span data-stu-id="45be0-154">See also</span></span>
 
-[<span data-ttu-id="7edc2-153">Microsoft 365 商业版培训视频</span><span class="sxs-lookup"><span data-stu-id="7edc2-153">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[<span data-ttu-id="45be0-155">Microsoft 365 商业版培训视频</span><span class="sxs-lookup"><span data-stu-id="45be0-155">Microsoft 365 for business training videos</span></span>](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
