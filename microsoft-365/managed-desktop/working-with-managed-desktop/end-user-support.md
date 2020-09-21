@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289683"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104408"
 ---
-# <a name="getting-help-for-users"></a>获取用户帮助
+# <a name="getting-help-for-users"></a>获取针对用户的帮助
 
 您的组织中的用户可以通过两种方式获取 Microsoft 托管桌面设备的帮助： **获取帮助** 应用程序或电话支持。 这两个支持选项均可用于每周7天、每天24小时的用户。
  
@@ -71,4 +71,4 @@ ms.locfileid: "47289683"
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 
 - [支持 Microsoft 托管桌面](../service-description/support.md)。
-- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)的 "**联机资源**" 部分的 "Microsoft 托管桌面管理指南" 中找到详细的过程、流程、工作说明和 faq。
+- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 终结点管理器](https://endpoint.microsoft.com/)中 "**租户管理**" 菜单的 "microsoft 托管桌面" 部分下的**联机资源**中找到 "microsoft 托管桌面管理指南" 中的详细过程、流程、工作说明和 faq。

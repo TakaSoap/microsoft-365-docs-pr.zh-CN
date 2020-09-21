@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289135"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104566"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289135"
 
 合作伙伴的过程记录在 [合作伙伴注册设备的步骤](register-devices-partner.md)中。
 
-Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 您可以使用 Microsoft 托管桌面管理门户注册设备。
+Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 你可以在 Microsoft 终结点管理器门户中使用 Microsoft 托管桌面注册设备。
 
 ## <a name="prepare-to-register-existing-devices"></a>准备注册现有设备
 
@@ -56,7 +56,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 2. 在 "监控" 工作区中，展开 " **报告** " 节点，再展开 " **报告**"，然后选择 " **硬件"-"常规** " 节点。 
 3. 运行报告、 **Windows Autopilot 设备信息**并查看结果。
 4. 在报表查看器中，选择 " **导出** " 图标，然后选择 **CSV (逗号分隔的) ** 选项。
-5. 保存文件后，您需要筛选结果，使其仅包含计划注册 Microsoft 托管桌面的那些设备，并将数据上传到 Microsoft 托管桌面 [管理门户](https://aka.ms/mmdportal)，请在左侧导航窗格中选择 " **设备** "。 选择 **+ 注册设备**;将打开 "飞入"：
+5. 保存文件后，您需要筛选结果，使其仅包含计划注册 Microsoft 托管桌面的那些设备，并将数据上传到 Microsoft 托管桌面。 打开 Microsoft 终结点管理器并导航到 " **设备** " 菜单，然后查找 "Microsoft 托管桌面" 部分，然后选择 " **设备**"。 选择 " **+ 注册设备** "，打开飞入的设备以注册新设备。
 
 
 有关详细信息，请参阅 [注册设备（使用管理门户](#register-devices-by-using-the-admin-portal) ）。
@@ -134,9 +134,9 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 Microsoft 托管桌面 [管理门户](https://aka.ms/mmdportal)中，选择左侧导航窗格中的 " **设备** "。 选择 **+ 注册设备**;将打开 "飞入"：
+在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的 " **设备** "。 查找菜单中的 "Microsoft 托管桌面" 部分，然后选择 " **设备**"。 在 "Microsoft 托管桌面设备" 工作区中，选择 " **注册设备** "，打开一个飞入的新设备。
 
-[![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 1. 选择 " **注册设备**"。 系统会将设备添加到 **设备**上的设备列表中，并标记为 **AutopilotRegistrationRequested**。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
 
 
-你可以在主 **Microsoft 托管台式机-设备** 页面上监视设备注册的进度。 可能报告的状态包括：
+您可以在主页面上监视设备注册的进度。 可能报告的状态包括：
 
 | 状态 | 说明 |
 |---------------|-------------|

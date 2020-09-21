@@ -3,7 +3,7 @@ title: 'Microsoft 365 网络见解 (预览) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络见解 (预览) '
-ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948512"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962367"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 网络见解 (预览) 
 
@@ -86,7 +86,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 在某些摘要视图中，这种洞察力缩写为 "传送"。
 
-![非最佳前盖](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![非最佳 EXO 前门](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>应用场景
 
@@ -102,7 +102,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 在某些摘要视图中，这种洞察力缩写为 "Afd"。
 
-![非最佳前盖](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![非最佳 SPO 前门](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>应用场景
 
@@ -173,7 +173,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心中的网络性能建议 (preview) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理中心中的网络连接 (预览版) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 网络评估 (预览版) ](office-365-network-mac-perf-score.md)
 

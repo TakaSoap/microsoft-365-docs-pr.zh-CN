@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289317"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131534"
 ---
 # <a name="plan-for-communication-compliance"></a>通信合规性规划
 
@@ -66,7 +66,7 @@ ms.locfileid: "47289317"
 - 若要简化设置，请考虑为需要查看其通信的用户创建组。 如果使用的是组;您可能需要多个。 例如，如果要扫描两个不同的人员组之间的通信，或者要指定未受监督的组。
 - 配置要在100% 查看的通信百分比，以确保策略能够捕获组织中的所有问题的相关问题。
 - 您可以扫描 [第三方源](communication-compliance-feature-reference.md#supported-communication-types) 的通信，以获取导入到 Microsoft 365 组织中的邮箱的数据。 若要在这些平台中包括通信审查，需要先将连接器配置为这些服务，然后才能通过通信策略监视邮件会议策略条件。
-- 在自定义通信合规性策略中，策略可以支持非英语的监视语言。 使用您选择的语言构建冒犯性词的 [自定义关键字词典](communication-compliance-feature-reference.md#custom-keyword-dictionaries) ，或使用 Microsoft 365 中的 [trainable 分类](classifier-getting-started-with.md) 程序构建您自己的机器学习模型。
+- 在自定义通信合规性策略中，策略可以支持非英语的监视语言。 使用您选择的语言构建冒犯性词的 [自定义关键字词典](communication-compliance-feature-reference.md#custom-keyword-dictionaries) ，或使用 Microsoft 365 中的 [trainable 分类](classifier-get-started-with.md) 程序构建您自己的机器学习模型。
 - 所有组织都具有不同的通信标准和策略需求。 使用通信合规性 [策略条件](communication-compliance-feature-reference.md#conditional-settings) 监视特定关键字，或使用 [自定义敏感信息类型](create-a-custom-sensitive-information-type.md)监视特定类型的信息。
 
 ## <a name="ready-to-get-started"></a>准备好开始了吗？

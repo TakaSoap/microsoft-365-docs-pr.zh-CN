@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: 在 Microsoft 预订中更改语言和时区设置。 如果在错误的时间创建了预订，则可能会为错误的时区设置预订。
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419273"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962427"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>在 Microsoft 预订中设置语言和时区
 
 如果您使用的是 Microsoft 预订且在错误的时间创建了预订，则可能需要更改时区设置。 同样，如果某些预订采用错误的语言，则可能需要更改您的语言设置。
 
 有两种独立的语言和时区设置可用于预订。 第一个设置控制预订日历的语言和时区，并使用 Outlook 在登录用户的个人日历的 web 设置上进行设置。 第二个设置影响客户使用的自助式预订页面，并使用 "区域设置" 页面设置，该页面仅控制该页面的语言和时区。
-
-> [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>为预订日历设置语言和时区
 
@@ -39,7 +36,7 @@ ms.locfileid: "47419273"
 
 1. 通过在 " **语言" 或 "当前时区** " 框中选择下拉箭头，然后选择所需的设置来更改语言或时区。
 
-1. 单击“**保存**”。 "设置" 面板将关闭，Outlook 在 web 上重新启动，并应用新的语言和时区设置。
+1. 单击“保存”****。 "设置" 面板将关闭，Outlook 在 web 上重新启动，并应用新的语言和时区设置。
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>为预订页面设置语言和时区
 

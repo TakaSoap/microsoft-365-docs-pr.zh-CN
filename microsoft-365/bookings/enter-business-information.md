@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 请按照以下说明创建 "关于我们" 页面，包括 Microsoft 预订中的 "业务名称"、"地址"、"电话号码"、"网站 URL"、"徽标" 和 "营业时间"。
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419298"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962497"
 ---
 # <a name="enter-your-business-information"></a>输入你的业务信息
 
@@ -25,7 +25,7 @@ ms.locfileid: "47419298"
    ![Microsoft 预订中的业务信息页面的图像示例](../media/bookings-business-info.png)
 
 > [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
+> 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 ## <a name="provide-business-name-and-contact-information"></a>提供业务名称和联系人信息
 

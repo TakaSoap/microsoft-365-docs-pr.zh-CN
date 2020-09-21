@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何配置基于域的邮件身份验证、报告和一致性 (DMARC) 以验证从你的组织发送的邮件。
-ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: 1f014a221334925f5b9c90371d552eb64d026c1f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632113"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949428"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 验证电子邮件
 
@@ -206,7 +206,7 @@ _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@cont
 
 ## <a name="how-microsoft-365-handles-inbound-email-that-fails-dmarc"></a>Microsoft 365 如何处理未通过 DMARC 的入站电子邮件
 
-如果发送服务器的 DMARC 策略是 `p=reject`，则 EOP 会将该邮件标记为欺骗，而不是拒绝它。 换句话说，对于入站电子邮件，Microsoft 365 将 `p=reject` 和 `p=quarantine` 视为相同方式。 管理员可以定义对[反网络钓鱼策略](set-up-anti-phishing-policies.md)中分类为欺骗的邮件执行的操作。
+如果发送服务器的 DMARC 策略是`p=reject`, [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) 会将该邮件标记为欺骗，而不是拒绝它。 换句话说，对于入站电子邮件，Microsoft 365 将 `p=reject` 和 `p=quarantine` 视为相同方式。 管理员可以定义对[反网络钓鱼策略](set-up-anti-phishing-policies.md)中分类为欺骗的邮件执行的操作。
 
 之所以像这样配置 Microsoft 365，是因为某些合法的电子邮件可能会无法通过 DMARC。 例如，如果将邮件发送到一个邮件列表，然后将其中继到所有列表参与者，则该邮件可能无法通过 DMARC。 如果 Microsoft 365 拒绝这些邮件，人们可能会丢失合法的电子邮件，而且无法进行检索。 相反，这些邮件仍然无法通过 DMARC，但会将其标记为垃圾邮件而不是拒绝。 如果需要，用户仍可以在其收件箱中获得这些邮件，方法如下：
 

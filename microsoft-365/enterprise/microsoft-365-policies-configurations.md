@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949888"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131574"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
 贵组织的新式安全外围设备现已扩展到你的网络之外，以包括从各种设备从任意位置访问基于云的应用的用户。 您的安全基础结构需要确定是否应授予给定的访问请求，以及在何种情况下。 
 
-此决定应基于用户帐户登录、正在使用的设备、用户尝试访问的应用程序、发出访问请求的位置，以及对请求风险的评估情况。 此功能有助于确保只有经批准的用户和设备才能访问你的关键资源。
+此决定应基于登录的用户帐户、所使用的设备、用户正在使用的应用程序、用于访问请求的位置，以及对请求风险的评估的评估。 此功能有助于确保只有经批准的用户和设备才能访问你的关键资源。
 
 本系列文章介绍了一组标识和设备访问的先决条件配置，以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，以安全访问 Microsoft 365 for 企业云应用和服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序。
 

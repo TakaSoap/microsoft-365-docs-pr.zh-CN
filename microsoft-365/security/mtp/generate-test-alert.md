@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f971fb579624c31afb6225d444c326cde4621729
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c2a5c7a95a16b9a29e73b98310e64f403d4d342b
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817145"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104554"
 ---
 # <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a>在 Microsoft 威胁 Protection 评估实验室中生成测试警报  
 
@@ -36,4 +36,6 @@ ms.locfileid: "47817145"
 <br>![Microsoft 365 安全仪表板中模拟卡的图像](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>后续步骤
-浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) ，获取有关如何在您的独特环境中实施安全解决方案的指南。
+
+浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) 以了解如何设计适合您的组织的解决方案和体系结构。
+

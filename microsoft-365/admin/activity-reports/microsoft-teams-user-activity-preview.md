@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取 Microsoft 团队用户活动报告，并深入了解组织中的团队活动。
-ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949022"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104506"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 团队用户活动中的 microsoft 365 报告
 
@@ -44,7 +44,7 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 
 选择 " **选择列** " 可在报告中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
+您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间**、**视频时间**和**屏幕共享时间**的导出格式遵循 ISO8601 日期格式。
 
 |Item|说明|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |以即席方式组织的会议 <br/> |在指定时间段内，用户组织的日历上未计划的会议数。 <br/>|
 |安排的会议  <br/> |用户在指定时间段内组织的已安排会议数。  <br/> |
 |已许可 |如果用户已被授权使用团队，则选择此选项。|
-|其他活动|用户被视为处于活动状态，但其值为零：聊天消息、1:1 呼叫、频道消息、会议总数和组织的会议。 示例操作是在将 Microsoft 团队客户端激活到前台时，在撰写邮件区域中执行操作，toast 在 Microsoft 团队客户端中显示，横幅显示在 Microsoft 团队客户端等中。 |
+|其他活动|用户被视为处于活动状态，但其值为零：聊天消息、1:1 呼叫、频道消息、会议总数和会议组织的指标值。 示例操作是当用户打开频道消息 post 但不进行回复，或者当收到专用邮件且未响应时，将对其进行读取。 |
 |||

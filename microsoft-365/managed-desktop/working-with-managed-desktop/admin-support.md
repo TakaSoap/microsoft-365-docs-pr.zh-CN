@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289717"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104578"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的管理员支持
 
@@ -24,10 +24,11 @@ ms.locfileid: "47289717"
 >请确保为应用程序打包、设备、安全性和其他 [设置了管理员联系人](../get-started/add-admin-contacts.md) 。 如果未配置管理员联系人，则无法在上述任何区域中提交支持请求。
 
 **提交支持请求**
-1. 登录到 [Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)。 
-2. 在 " **支持请求**" 中，选择 " **+ 新支持票证**"。
-3. 选择与您需要的帮助相匹配的 **支持请求类型** 。 下表概述了这些选项。 
-4. 选择 **严重性级别**。 有关详细信息，请参阅 [支持请求严重性定义](#sev)。 
+1. 登录到 [Microsoft 终结点管理器](https://endpoint.microsoft.com/) ，导航到 " **故障排除" + "支持** " 菜单。
+2. 查找 "Microsoft 托管桌面" 部分，选择 "提供 **请求**"。
+3. 在 " **支持请求**" 中，选择 " **+ 新支持票证**"。
+4. 选择与您需要的帮助相匹配的 **支持请求类型** 。 下表概述了这些选项。 
+5. 选择 **严重性级别**。 有关详细信息，请参阅 [支持请求严重性定义](#sev)。 
 
 支持请求类型 | 何时使用
 --- | ---
@@ -58,7 +59,7 @@ ms.locfileid: "47289717"
 
 我们感谢你的反馈，并使用它来改进管理员支持体验。
 
-一旦票证处于 "已 **缓解** " 或 " **已解决** " 状态，就可以共享有关您对该特定问题的体验的反馈。 若要执行此操作，请转到管理门户中的 " **支持请求** " 页。 选择特定的票证。 在显示在右侧的 "飞入" 中，选择 " **反馈** " 选项卡，并提供所需的信息。 请注意不要在反馈表单中包含任何个人信息。 有关隐私的详细信息，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
+一旦票证处于 "已 **缓解** " 或 " **已解决** " 状态，就可以共享有关您对该特定问题的体验的反馈。 若要执行此操作，请转到 MEM 门户的**疑难解答 + 支持**菜单中的 "**服务请求**" 页。 选择特定的票证。 票证详细信息将显示在右侧飞入的位置，选择 " **反馈** " 选项卡，并提供所需信息。 请注意不要在反馈表单中包含任何个人信息。 有关隐私的详细信息，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ![反馈表单](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ ms.locfileid: "47289717"
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的用户支持](end-user-support.md)。 
 - [支持 Microsoft 托管桌面](../service-description/support.md)。 
-- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 托管桌面管理门户](https://aka.ms/mwaasportal)的 "**联机资源**" 部分的 "Microsoft 托管桌面管理指南" 中找到详细的过程、流程、工作说明和 faq。
+- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 终结点管理器](https://endpoint.microsoft.com/)中 "**租户管理**" 菜单的 " **microsoft 托管桌面**" 部分下的 "**联机资源**" 页中找到 "microsoft 托管桌面管理指南" 中的详细过程、过程流、工作指令和 faq。

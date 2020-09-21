@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289753"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104396"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
-Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 您可以使用 Microsoft 托管桌面管理门户注册设备。
+Microsoft 托管桌面可以与全新设备配合使用，也可以重新使用已有的设备 (这将需要您将其重新映像) 。 你可以在 Microsoft 终结点管理器门户中使用 Microsoft 托管桌面注册设备。
 
 > [!NOTE]
 > 与合作伙伴合作获取设备？ 如果是这样，则无需担心获取硬件哈希值。他们将为你负责。 请确保您的合作伙伴在 [合作伙伴中心](https://partner.microsoft.com/dashboard)建立与您的关系。 你的合作伙伴可以在 [合作伙伴中心帮助](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)中了解详细信息。 建立此关系后，你的合作伙伴将代表你直接注册设备–无需进一步操作。 如果您想要查看详细信息，或者您的合作伙伴有问题，请参阅 [合作伙伴注册设备的步骤](register-devices-partner.md)。 注册设备后，可以继续 [检查映像](#check-the-image) 并将 [设备传递](#deliver-the-device) 给用户。
@@ -73,9 +73,9 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 Microsoft 托管桌面 [管理门户](https://aka.ms/mmdportal)中，选择左侧导航窗格中的 " **设备** "。 选择 **+ 注册设备**;将打开 "飞入"：
+在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的 " **设备** "。 查找菜单中的 "Microsoft 托管桌面" 部分，然后选择 " **设备**"。 在 "Microsoft 托管桌面设备" 工作区中，选择 " **注册设备** "，打开一个飞入的新设备。
 
-[![选择注册设备后飞入，列出分配的用户的列设备、序列号、状态、上次查看日期和期限](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 3. 选择 " **注册设备**"。 系统会将设备添加到 **设备**上的设备列表中，并标记为 **AutopilotRegistrationRequested**。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
 
 
-你可以在主 **Microsoft 托管台式机-设备** 页面上监视设备注册的进度。 可能报告的状态包括：
+您可以在主页面上监视设备注册的进度。 可能报告的状态包括：
 
 | 状态 | 说明 |
 |---------------|-------------|

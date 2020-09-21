@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft 记帐应用中更改预定页面的颜色主题。
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419322"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962509"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>自定义和发布预定页面
 
 在 "预定" 页面中，您可以设置外部的 "面向客户的预订" 页面的外观。 自定义并发布预定页面后，客户将使用它来预订约会。
-
-> [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 若要自定义您的预订页面，请登录到 [Office.com](https://office.com)，然后转到 " **预定** \> **预定" 页面**。 您可以使用以下选项自定义预订页面。 设置预定页面后，可以发布它，以便客户可以开始预订约会。
 

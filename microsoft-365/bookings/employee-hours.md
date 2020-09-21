@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: 在 Microsoft 预订中设置员工的工作时间和可用性。
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419302"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962521"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft 预订中的员工工作时间
 
@@ -23,9 +23,6 @@ ms.locfileid: "47419302"
 在 " **人员** " 页面上，您可以自定义员工工作时间，以满足您的业务和员工的需求。
 
 如果您想要为教职员工成员预定时间，以便客户在他们不在办公室时无法预订它们，请参阅 [安排营业节假日、休息时间和休假时间](schedule-closures-time-off-vacation.md) ，了解相关说明。
-
-> [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 ## <a name="customize-employee-working-hours"></a>自定义员工工作时间
 

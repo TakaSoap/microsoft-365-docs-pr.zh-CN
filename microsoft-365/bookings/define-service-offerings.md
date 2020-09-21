@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: 有关输入服务产品信息（包括服务名称、说明、位置、持续时间和定价）的说明。 您还可以标记有资格提供该服务的员工。
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419314"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962533"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>在预订中定义您的服务产品
 
 在 Microsoft 预订中定义服务产品时，您可以设置服务名称、说明、位置 (，选择是要在人员中开会还是让联机会议) 、持续时间、客户和员工的默认提醒、有关服务的内部注意事项和定价。 您还可以标记有资格提供该服务的员工。 然后，当客户进入您的业务网站来预订约会时，他们可以确切地看到哪些类型的约会是可用的，并选择他们要提供服务的人员，以及他们的服务将花费多少成本。
 
 您还可以将自定义信息和 Url 添加到电子邮件确认和在某人通过预定页面预定服务时发送的提醒。
-
-> [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 ## <a name="create-the-service-details"></a>创建服务详细信息
 

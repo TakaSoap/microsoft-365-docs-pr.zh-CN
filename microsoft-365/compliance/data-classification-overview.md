@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588214"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948502"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
@@ -49,7 +49,7 @@ ms.locfileid: "46588214"
 
 访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - 高级合规性（E5）加载项
 - 高级威胁智能（E5）加载项

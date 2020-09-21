@@ -3,7 +3,7 @@ title: 'Microsoft 365 网络连接测试 (预览) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试 (预览) '
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948537"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962392"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 网络连接测试 (预览) 
 
 Microsoft 365 网络连接测试工具位于 <https://connectivity.office.com> 。 它是一种辅助工具，适用于 Microsoft 365 管理中心中的 "网络评估" 和 "网络洞察力" 信息，在 **运行状况 |连接** 菜单。
 
+![连接测试工具](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >网络连接测试工具支持 WW 商业和德国的租户，但不支持 GCC 中、GCC 高级、DoD 或中国的租户。
 
 Microsoft 365 管理中心中的网络见解基于每天进行聚合的 Microsoft 365 租户的定期产品度量。 相比之下，Microsoft 365 网络连接测试中的网络洞察力在本地运行，一次在该工具中运行。 可以在产品中完成的测试是有限的，并且可以通过在用户的本地运行测试来收集更多数据，从而获得更深入的见解。 请考虑，Microsoft 365 管理中心中的网络见解将显示在特定办公地点使用 Microsoft 365 的网络问题。 Microsoft 365 连接测试可帮助确定问题的根本原因，从而导致建议的网络性能改进操作。
-
-![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 我们建议将这些信息结合使用，以便在 Microsoft 365 管理中心中的每个办公室位置评估网络质量状态，并在部署基于 Microsoft 365 连接测试的测试之后找到更多的详细信息。
 

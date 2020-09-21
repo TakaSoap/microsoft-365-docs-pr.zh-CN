@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 03a9b19a5b8ba957419e23c2bb12748c9c57e80d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289491"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104614"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 托管桌面中处理更新
 
@@ -55,16 +55,15 @@ Microsoft 托管桌面使用四个 Azure AD 组管理更新：
 
 
 <table>
-<tr><th colspan="5">更新部署设置</th></tr>
-<tr><th>更新类型</th><th>测试</th><th>First</th><th>快速</th><th>宽泛</th></tr>
-<tr><td>操作系统的质量更新</td><td>0天</td><td>0天</td><td>0天</td><td>3 天</td></tr>
-<tr><td>操作系统的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
-<tr><td>驱动程序/固件</td><td colspan="4">遵循质量更新计划</td></tr>
-<tr><td>反病毒定义</td><td colspan="4">更新每个扫描</td></tr>
-<tr><td>Microsoft 365 企业应用版</td><td colspan="4">遵循 Office 的当前频道
+    <tr><th colspan="5">更新部署设置</th></tr>
+    <tr><th>更新类型</th><th>测试</th><th>First</th><th>快速</th><th>宽泛</th></tr>
+    <tr><td>操作系统的质量更新</td><td>0天</td><td>0天</td><td>0天</td><td>3 天</td></tr>
+    <tr><td>操作系统的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
+    <tr><td>驱动程序/固件</td><td colspan="4">遵循质量更新计划</td></tr>
+    <tr><td>反病毒定义</td><td colspan="4">更新每个扫描</td></tr>
+    <tr><td>Microsoft 365 企业应用版</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">了解更多</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">了解更多</a></td></tr>
 </table>
-
-有关适用于企业的 Microsoft 365 应用的当前频道的详细信息，请参阅 [microsoft 365 应用的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
 
 >[!NOTE]
 >这些延期时段特意旨在确保所有用户的高安全性和性能标准。 此外，根据在所有 Microsoft 托管桌面设备上收集的数据以及更新的不同范围和影响，Microsoft 托管桌面保留了灵活性，以针对任意和所有部署组（临时）修改上述延期时段的长度。

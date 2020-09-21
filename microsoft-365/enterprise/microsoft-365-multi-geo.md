@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 在本文中，您将了解如何使用 Microsoft 365 多地理位置将 Microsoft 365 的状态扩展到多个地理区域。
-ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
-ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
+ms.openlocfilehash: 2e58d8b5ba66762bcc742f711d13007efc71b679
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47825347"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104602"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -69,7 +69,7 @@ Microsoft 365 多地理位置当前在以下国家和地区提供：
 
 1. 与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。 他们将指导你添加需要的许可证数量。 Microsoft 365 订阅数至少为 250 个的 EA 客户可以使用多地理位置功能。
 
-   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 应用了多地理位置许可证之后，你将在 [Microsoft 365 消息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)中收到通知，你随后就可以开始配置和使用 Microsoft 365 多地理位置功能。
+   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 在租户完成每个工作负荷的配置过程之后，你将在 [microsoft 365 消息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) 收到工作负荷特定的通知，然后你便可以开始配置和使用 Microsoft 365 多地理位置功能。 为多地理位置配置租户所需的时间因租户而异，但大多数租户在收到功能许可证后的一个月内完成。 较大或更复杂的租户需要更多时间来完成配置过程。 有关你需要的具体租户的详细信息，请与你的帐户团队联系。
 
 2. 阅读[规划多地理位置环境](plan-for-multi-geo.md)。
 

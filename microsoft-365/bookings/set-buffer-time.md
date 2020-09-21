@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: 在 Microsoft 预订中的约会前后设置缓冲时间，以允许清理或重置设备。
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419275"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962343"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>在 Microsoft 预订中设置缓冲时间
 
 某些约会可能需要与客户进行设置、清理或重置会议室和设备之前或之后的时间。 或者，如果你正处于客户约会之间，你可能需要一些时间，以确保你和你的团队可以在两个约会之间旅行，而无需让客户等待。
 
 您可以设置约会开始前、约会结束后的缓冲时间，也可以同时设置这两个时间，以便让员工在下一次约会中做额外的准备。
-
-> [!NOTE]
-> 默认情况下，对于拥有 Microsoft 365 商业标准、Microsoft 365 A3 或 Microsoft 365 A5 订阅的客户，预订处于启用状态。 预订也适用于拥有 Office 365 企业版 E3 和 Office 365 企业版 E5 的客户，但默认情况下它处于关闭状态。 若要开始，请参阅 [获取 Microsoft 预订的访问权限](get-access.md)。 若要打开或关闭预订，请参阅 [开启或关闭组织的预订](turn-bookings-on-or-off.md)。
 
 ## <a name="set-buffer-time-defaults"></a>设置缓冲时间默认值
 

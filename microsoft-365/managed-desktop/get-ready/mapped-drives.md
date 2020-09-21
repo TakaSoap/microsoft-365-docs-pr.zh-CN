@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04c3901155ecd80fad472e07e7e46620c3ddee1f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289269"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104590"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>为 Microsoft 托管桌面准备映射的驱动器
 
@@ -48,8 +48,8 @@ ms.locfileid: "47289269"
  
 请确保无法避免映射的驱动器，并且在提交任何服务请求之前仔细查看了要求。 然后，按照以下步骤操作：
 
-1. 导航到 [Microsoft 托管桌面门户](https://aka.ms/mmdportal)。  
-2. 通过 " **支持 > 支持请求** " 部分提交标题为 "映射驱动器部署" 的支持请求，并提供所有必需的文件共享详细信息。  
+1. 导航到 [Microsoft 终结点管理器](https://endpoint.microsoft.com/) ，选择 "疑难解答 + 支持"，然后查找 Microsoft Managed Deskop 部分下的 "服务请求"。  
+2. 提交一个标题为 "映射驱动器部署" 的支持请求，并提供所有必需的文件共享详细信息。  
 3. Microsoft 托管桌面 IT 操作将在请求完成时使用支持请求更新通知。 最初，此配置将仅部署到测试部署组中的设备。  
-4. 您必须测试和确认由 Microsoft 托管桌面 IT 操作部署的配置是否按预期工作。 使用支持请求中的 "讨论" 选项卡进行答复，以在完成测试后通知 Microsoft 托管的桌面 IT 操作。  
+4. 您必须测试和确认由 Microsoft 托管桌面 IT 操作部署的配置是否按预期工作。 使用同一支持请求的详细信息中的 "讨论" 选项卡进行答复，以在完成测试后通知 Microsoft 托管的桌面 IT 操作。  
 5. Microsoft 托管桌面 IT 操作团队随后会将配置部署到其他部署组。 

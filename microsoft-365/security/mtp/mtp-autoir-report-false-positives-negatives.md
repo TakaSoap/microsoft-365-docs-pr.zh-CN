@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: ace9ab8e5b73e4a4310b476c8954b0be81faaa66
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637076"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962319"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>处理自动调查和响应功能中的误报/否定
 
 **适用于：**
 - Microsoft 威胁防护
 
-在 Microsoft 威胁防护中是否进行了[自动化调查和响应功能](mtp-autoir.md)丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可执行下列操作：
+在 Microsoft 威胁防护中是否进行了 [自动化调查和响应功能](mtp-autoir.md) 丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可执行下列操作：
 
 - [向 Microsoft 报告误报/负数，](#report-a-false-positivenegative-to-microsoft-for-analysis)或者
 
-- [调整通知](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如果需要）;并 
+- 根据需要[调整通知](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;并 
 
 - [撤消对设备所执行的修正操作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
 
@@ -50,7 +51,7 @@ ms.locfileid: "43637076"
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>调整警报以防止定期误报
 
-|应用场景 |服务 |需执行的操作 |
+|方案 |服务 |需执行的操作 |
 |--------|--------|--------|
 |-警报由合法使用触发 <br/>-警报不准确    |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)<br/> 或 <br/>[Azure 高级威胁检测](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)         |[在云应用安全门户中管理通知](https://docs.microsoft.com/cloud-app-security/managing-alerts)         |
 |即使是安全的，文件、IP 地址、URL 或域也会在设备上被视为恶意软件|[Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection) |[创建具有 "允许" 操作的自定义指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
@@ -58,31 +59,28 @@ ms.locfileid: "43637076"
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>撤消对设备执行的修正操作
 
-如果对设备（如 Windows 10 设备）执行了修正操作，而该项目实际上并不是威胁，则安全操作团队可以撤消[操作中心](mtp-action-center.md)中的修正操作。
+如果对设备执行了修正操作 (例如 Windows 10 设备) 并且该项目实际上不是威胁，则安全操作团队可以撤消 [操作中心](mtp-action-center.md)中的修正操作。
 
 > [!IMPORTANT]
-> 在尝试执行以下任务之前，请确保您具有[所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)。
+> 在尝试执行以下任务之前，请确保您具有 [所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks) 。
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
 2. 在“导航”窗格中，选择“操作中心”****。 
 
-3. 在 "**历史记录**" 选项卡上，选择要撤消的操作。 这将打开一个浮出控件。<br/>
+3. 在 " **历史记录** " 选项卡上，选择要撤消的操作。 这将打开一个浮出控件。<br/>
     > [!TIP]
     > 使用筛选器缩小结果列表。 
 
-4. 在选定项的浮出控件中，选择 "**打开调查页面**"。
+4. 在选定项的浮出控件中，选择 " **打开调查页面**"。
 
-5. 在调查详细信息视图中，选择 "**操作**" 选项卡。
+5. 在调查详细信息视图中，选择 " **操作** " 选项卡。
 
 6. 选择 "已**完成**" 状态的项目，并在 "**决策**" 列中查找链接（如 "**已批准**"）。 这将打开一个浮出控件，其中包含有关操作的更多详细信息。
 
-7. 若要撤消操作，请选择 "**删除修正**"。
+7. 若要撤消操作，请选择 " **删除修正**"。
 
-## <a name="related-articles"></a>相关文章
+## <a name="see-also"></a>另请参阅
 
-- [批准或拒绝与自动调查和响应相关的操作](mtp-autoir-actions.md)
-
-- [详细了解操作中心](mtp-action-center.md)
-
+- [查看自动调查的详细信息和结果](mtp-autoir-results.md)
 - [通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁](advanced-hunting-overview.md)

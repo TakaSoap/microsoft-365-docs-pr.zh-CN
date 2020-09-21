@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dc641d22432e245980b905051bddd3b7dd4ed07
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: 4d4aa8afc7a17d2f9f0ae2d48404d7a3da553d47
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547982"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962259"
 ---
 # <a name="the-action-center"></a>操作中心
 
@@ -94,9 +96,6 @@ ms.locfileid: "47547982"
 
 ## <a name="next-steps"></a>后续步骤 
 
-- [深入了解 Microsoft 威胁防护中的事件](incidents-overview.md)
-
+- [在自动调查后批准或拒绝待处理的操作](mtp-autoir-actions.md)
 - [查看自动调查的结果](mtp-autoir-results.md)
-
-- [了解 Microsoft 威胁防护中的搜寻](advanced-hunting-overview.md)
 
