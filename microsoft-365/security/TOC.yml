@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 生成警报测试
               href: mtp/generate-test-alert.md
+        - name: 在生产中运行试点
+          items:
+            - name: 试点概述
+              href: mtp/mtp-pilot.md
+            - name: 计划
+              href: mtp/mtp-pilot-plan.md
+            - name: 准备
+              href: mtp/prepare-mtpeval.md
+            - name: 模拟攻击
+              href: mtp/mtp-pilot-simulate.md
+            - name: 结束和汇总
+              href: mtp/mtp-pilot-close.md
         - name: 操作指南
           items:
             - name: 创建试用版实验室或试点环境
               href: mtp/mtp-evaluation.md
+            - name: 运行试点行动手册
+              href: mtp/mtp-pilot.md
             - name: 部署支持的服务
               href: mtp/deploy-supported-services.md
             - name: 打开 Microsoft 威胁防护
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: 自动调查和响应
               items:
-                - name: AIR 述
+                - name: 自动调查和响应概述
                   href: mtp/mtp-autoir.md
-                - name: 修正操作
+                - name: 配置自动调查和响应功能
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: 自动调查后的修正操作
                   href: mtp/mtp-remediation-actions.md
-                - name: 操作中心
+                - name: 访问操作中心
                   href: mtp/mtp-action-center.md
-                - name: 查看自动调查详细信息和结果
-                  href: mtp/mtp-autoir-results.md
-                - name: 批准或拒绝挂起的操作
+                - name: 批准或拒绝挂起的修正操作
                   href: mtp/mtp-autoir-actions.md
+                - name: 查看自动调查的详细信息和结果
+                  href: mtp/mtp-autoir-results.md
                 - name: 报告误报/漏报
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 高级搜寻
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: 应用监视和报告
                   href: mtp/monitor-apps.md
-            - name: API
-              items: null
         - name: 参考
           items:
             - name: 权限和设置
