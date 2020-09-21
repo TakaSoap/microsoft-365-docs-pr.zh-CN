@@ -110,22 +110,30 @@
               items:
                 - name: 高级搜寻概述
                   href: mtp/advanced-hunting-overview.md
-                - name: 了解查询语言
-                  href: mtp/advanced-hunting-query-language.md
-                - name: 获取专家培训
-                  href: mtp/advanced-hunting-expert-training.md
-                - name: 应用查询最佳做法
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: 学习、培训 & 获取示例
+                  items:
+                    - name: 了解查询语言
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: 获取专家培训
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: 使用共享查询
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: 跨设备、电子邮件、应用和标识进行查寻
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 处理查询结果
                   href: mtp/advanced-hunting-query-results.md
                 - name: 对查询结果执行操作
                   href: mtp/advanced-hunting-take-action.md
-                - name: 使用共享查询
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: 跨设备、电子邮件、应用和标识进行查寻
-                  href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 转到查寻
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: 优化 & 处理错误
+                  items:
+                    - name: 应用查询最佳做法
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: 处理错误
+                      href: mtp/advanced-hunting-errors.md
+                    - name: 服务限制
+                      href: mtp/advanced-hunting-limits.md
                 - name: 扩展数据覆盖范围
                   href: mtp/advanced-hunting-extend-data.md
                 - name: 数据架构
