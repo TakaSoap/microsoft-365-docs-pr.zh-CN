@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/12/2020
+ms.date: 09/18/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: fc2b83fc167a9385383d7085ed6d1e8db15abd42
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651128"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132108"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 
@@ -71,28 +71,49 @@ ms.locfileid: "47651128"
 |        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此策略中包括团队和相关服务。|
 |**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|团队还提供了来宾访问和外部访问规则，您将在本文后面的部分中了解有关这些规则的详细信息。 在此策略中包括团队和相关服务。|
 |         |[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此策略中包括团队和相关服务。|
-|**高度管控**|[*始终* 要求进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|无论用户标识如何，你的组织都将使用 MFA。 在此策略中包括团队和相关服务。
+|**高度管控**|[*始终* 要求进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|无论用户标识如何，你的组织都将使用 MFA。 在此策略中包括团队和相关服务。 |
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>团队相关服务体系结构
 
 为了供参考，下图演示了服务团队所依赖的。 有关详细信息和其他说明，请参阅 microsoft [团队和 microsoft 365 中相关的工作效率服务（针对 IT 架构师](../solutions/productivity-illustrations.md)）。
 
-![显示 SharePoint、OneDrive for Business 和 Exchange 上的团队相关性的图表](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![显示 SharePoint、OneDrive for Business 和 Exchange 上的团队相关性的图表](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## <a name="enabling-guest-and-external-access-for-teams"></a>为团队启用来宾和外部访问
+[查看此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-在 Azure AD 中，来宾和外部用户是相同的。 这两个用户的用户类型为 "来宾"。 来宾用户是 B2B 用户。 Microsoft 团队在应用程序中区分来宾用户和外部用户。 虽然了解每个用户在团队中的处理方式非常重要，但这两种类型的用户在 Azure AD 中都是 B2B 用户，而 B2B 用户的建议策略适用于这两种用户。 有关允许来宾访问的推荐策略，请参阅 [允许来宾和外部 B2B 访问的策略](identity-access-policies-guest-access.md)。
+## <a name="guest-and-external-access-for-teams"></a>团队的来宾访问和外部访问
+
+Microsoft 团队定义了以下内容：
+
+- **来宾访问** 使用可作为团队成员添加的来宾或外部用户的 AZURE AD B2B 帐户，并拥有对团队的通信和资源的所有具有独特权限访问权限。
+
+- **外部访问** 适用于没有 AZURE AD B2B 帐户的外部用户。 外部访问可以包括邀请和参与呼叫、聊天和会议，但不包括团队成员资格和对团队资源的访问权限。
+
+条件访问策略仅适用于团队中的来宾访问，因为存在相应的 Azure AD B2B 帐户。
+
+<!--
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+
+--> 
+
+有关使用 Azure AD B2B 帐户为来宾和外部用户授予访问权限的建议策略，请参阅 [允许来宾和外部 B2B 帐户访问的策略](identity-access-policies-guest-access.md)。
 
 ### <a name="guest-access-in-teams"></a>Teams 中的来宾访问
 
-除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。 您可以通过以下链接了解有关来宾访问的详细信息： [团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)
+除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。 
+
+有关来宾访问和如何实施来宾的详细信息，请参阅  [团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)。
 
 ### <a name="external-access-in-teams"></a>团队中的外部访问
 
-外部访问有时会与来宾访问相混淆，因此请务必清楚，这两种非内部访问机制的实际差别很大。 在每用户的基础上进行来宾访问时 (您一次添加一个用户) ，当管理员启用外部访问时，您可以同时将外部域的所有用户添加到团队中。 但是，这些外部用户的访问和功能比通过来宾访问添加的个人更少。 外部访问用户可以通过团队与您的内部用户聊天。
+外部访问有时会与来宾访问相混淆，因此请务必清楚，这两种非内部访问机制的实际差别很大。 
 
-有关外部访问的详细信息以及如何根据需要实现它，请参阅 [管理 Microsoft 团队中的外部访问](https://docs.microsoft.com/microsoftteams/manage-external-access)
+通过外部访问，团队用户可以从整个外部域中查找、呼叫、聊天和设置与团队用户的会议。 团队管理员在组织级别配置外部访问。 有关详细信息，请参阅 [在 Microsoft 团队中管理外部访问](https://docs.microsoft.com/microsoftteams/manage-external-access)。
+
+外部访问用户的访问权限和功能比通过来宾访问添加的个人更少。 例如，外部访问用户可以与具有团队的内部用户聊天，但无法访问团队频道、文件或其他资源。
+
+外部访问不使用 Azure AD B2B 用户帐户，因此不使用条件访问策略。 
 
 ## <a name="teams-policies"></a>团队策略
 

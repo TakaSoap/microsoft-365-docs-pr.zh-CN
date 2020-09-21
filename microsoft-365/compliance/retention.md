@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816747"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132132"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -83,7 +83,7 @@ ms.locfileid: "47816747"
  
 - 除了根据内容年限或上次修改时间计算保留期之外，还可以从内容被标记时或根据事件开始计算保留期。
 
-- 使用[可训练的分类器](classifier-getting-started-with.md)来标识要标记的内容。
+- 使用[可训练的分类器](classifier-learn-about.md)来标识要标记的内容。
 
 - 为 SharePoint 文档应用默认标签。
 

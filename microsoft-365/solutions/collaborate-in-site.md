@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解设置 SharePoint 网站以与来宾进行协作所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797812"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171264"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -39,18 +39,18 @@ ms.locfileid: "46797812"
 
 Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)的最高级别的管辖。 如果在 Azure AD 中禁用或限制来宾共享，这将替代您在 Microsoft 365 中配置的任何共享设置。
 
-检查组织关系设置以确保不会阻止与来宾共享。
+检查外部协作设置以确保不会阻止与来宾共享。
 
-![Azure Active Directory 组织关系设置页面的屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory 外部协作设置页面的屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
 
-设置组织关系设置
+要设置外部协作设置，请执行以下操作：
+
 
 1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左侧导航中，单击 " **Azure Active Directory**"。
-3. 在 " **概述** " 窗格中，单击 " **组织关系**"。
-4. 在 " **组织关系** " 窗格中，单击 " **设置**"。
-5. 确保 **来宾邀请者角色中的管理员和用户可以邀请** 和 **成员** 都可以邀请都设置为 **"是"**。
-6. 如果进行了任何更改，请单击 **“保存”**。
+3. 选择 " **外部标识** "，然后单击 " **外部协作设置**"。
+4. 在 " **来宾邀请设置** " 窗格中，确保 **来宾和来宾邀请者角色中的管理员和用户** 可以邀请和 **成员** 均设置为 **"是"**。
+5. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 " **协作限制** " 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
@@ -146,4 +146,3 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 [创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)
-

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络见解 (预览) '
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962367"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171334"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 网络见解 (预览) 
 
@@ -157,7 +157,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ### <a name="what-should-i-do"></a>该怎么办？
 
-启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支机构受较差的网络连接 impactred 影响 Exchange 的信息，以及如何在将用户连接到 Microsoft 网络的情况中查找网络外围设备的方法。
+启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支受较差的网络连接影响 Exchange 的影响，并查找将用户连接到 Microsoft 网络的网络外围设备的方法。
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>由连接问题影响的 SharePoint 抽样连接
 
@@ -169,7 +169,7 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 ### <a name="what-should-i-do"></a>该怎么办？
 
-启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支机构受到影响 SharePoint 的网络连接的 impactred，并查找将用户连接到 Microsoft 网络的网络外围设备的方法。
+启用 office location 网络连接可见性（如果尚未执行此操作）。 您想要确定哪些分支受影响 SharePoint 的网络连接较差影响的分支，并找到将用户连接到 Microsoft 网络的网络外围设备的改进方法。
 
 ## <a name="related-topics"></a>相关主题
 
@@ -177,6 +177,6 @@ Insights 旨在帮助为你的办公室位置设计网络外围。 每个真知�
 
 [Microsoft 365 网络评估 (预览版) ](office-365-network-mac-perf-score.md)
 
-[M365 管理中心中的 Microsoft 365 连接测试 (preview) ](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 网络连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 网络连接位置服务 (预览) ](office-365-network-mac-location-services.md)

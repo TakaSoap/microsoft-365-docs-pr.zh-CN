@@ -2,7 +2,7 @@
 title: 共享文件和视频
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 在 Microsoft 团队和 SharePoint 中共享市场活动中的文件和视频。
-ms.openlocfilehash: b3ca070152a19841ff2c934f04d0d147e3387db0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526896"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132008"
 ---
 # <a name="share-files-and-videos"></a>共享文件和视频
 
@@ -47,7 +47,7 @@ ms.locfileid: "46526896"
 使用以下方法安全地共享文件和视频：
 
 1. 在 Microsoft 团队或 SharePoint 中存储文件，并确保只有那些需要访问这些文件的人员才拥有这些文件。 
-2. 当您想要共享时，不要将文件附加到电子邮件。 相反，请选择 "从 Microsoft 团队或 SharePoint**获取链接**" 并在电子邮件中发送链接。
+2. 当您想要共享时，不要将文件附加到电子邮件。 相反，请选择 "从 Microsoft 团队或 SharePoint **获取链接** " 并在电子邮件中发送链接。
 3. 若要在外部共享文件，请将该用户添加为你的团队的来宾，或使用 SharePoint 获取安全链接以仅共享该文件。
 4. 使用 Microsoft Stream 承载希望您的市场活动看到的视频。 
 5. 使用 Microsoft 团队或 SharePoint 存储您需要工作组进行协作或共享的视频文件。
@@ -67,6 +67,6 @@ ms.locfileid: "46526896"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下载[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)中的信息图，以快速了解共享文件的方法。
+下载 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) 或 [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) 中的信息图，以快速了解共享文件的方法。
 
 [![与不同用户共享文件的说明](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

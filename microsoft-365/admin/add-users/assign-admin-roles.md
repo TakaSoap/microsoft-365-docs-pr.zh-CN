@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 了解如何向用户或业务中的多个用户分配管理员角色，以便他们可以在管理中心执行特定任务。
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307315"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131754"
 ---
 # <a name="assign-admin-roles"></a>分配管理员角色
 
@@ -42,11 +42,11 @@ ms.locfileid: "47307315"
 
 当您添加新用户时，如果您不向他们分配管理员角色，则他们处于 *用户角色* 中，并且对任何 Microsoft 管理中心都没有管理员权限。 但是，如果您需要帮助完成操作，则可以向用户分配管理员角色。 例如，如果您需要某人帮助重置密码，则不应为他们分配全局管理员角色，应为他们分配密码管理员角色。 拥有过多的全局管理员（对数据和联机业务的无限制访问权限）是一种安全风险。
 
-观看有关添加管理员的简短视频。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>手表：添加管理员。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="assign-admin-roles"></a>分配管理员角色 
 
@@ -100,7 +100,6 @@ ms.locfileid: "47307315"
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>向多个用户分配管理员角色
 
 如果你知道 PowerShell，请参阅 [使用 powershell 向用户帐户分配角色](https://go.microsoft.com/fwlink/?linkid=854257)。 它非常适合为数百个用户分配角色。
@@ -108,7 +107,6 @@ ms.locfileid: "47307315"
 请按照以下说明向数十个用户分配角色。
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>检查你的权限
 

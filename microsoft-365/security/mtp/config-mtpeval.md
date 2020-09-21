@@ -1,9 +1,29 @@
 ---
-标题：为试用版实验室或试点环境说明配置 Microsoft 威胁防护支柱：配置 Microsoft 威胁防护支柱： Office 365 ATP、Azure ATP、Microsoft 云应用安全性和 Microsoft Defender ATP，用于试用实验室或试点环境。
-关键字： configure Microsoft 威胁 Protection 试用版，Microsoft 威胁防护试用版配置，配置 Microsoft 威胁防护试点项目，配置 Microsoft 威胁防护支柱，Microsoft 威胁防护支柱搜索。产品： eADQiWindows 10XVcnh appverid： met150 毫秒： w10： mktglfcycl： deploy： sitesec： library： security ms. author： pagetype  
-作者： DulceMontemayor localizationpriority：中型 manager： dansimp 受众： It 专业 ms. collection： M365-security-合规性毫秒。主题：文章 
+title: 为试用版实验室或试点环境配置 Microsoft 威胁防护支柱
+description: 为你的试用实验室或试点环境配置 Microsoft 威胁防护支柱，如 Office 365 ATP、Azure ATP、Microsoft 云应用安全性和 Microsoft Defender ATP。
+keywords: 配置 Microsoft 威胁防护试用版，Microsoft 威胁防护试用版配置，配置 Microsoft 威胁 Protection 试点项目，配置 Microsoft 威胁防护支柱，Microsoft 威胁防护支柱
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956253"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用版实验室或试点环境配置 Microsoft 威胁防护支柱
 
 **适用于：**
@@ -43,7 +63,7 @@
 
 ## <a name="microsoft-threat-protection-pillars"></a>Microsoft 威胁防护支柱
 Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的网络组织的安全性提供价值，但启用四个 Microsoft 威胁防护支柱将为你的组织提供最大价值。
-
+<br>
 ![Image of_Microsoft 威胁防护解决方案，适用于用户、Azure 高级威胁防护、用于终结点的 Microsoft Defender 高级威胁防护、云应用、Microsoft 云应用安全性和数据（Office 365 高级威胁防护）  ](../../media/mtp-eval-31.png) <br>
 
 本部分将指导您配置：
@@ -121,7 +141,7 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 <br>![图像 of_Azure 高级威胁防护页，应在此页面上单击 "下一步" 以遵循 Azure ATP 传感器向导](../../media/mtp-eval-47.png) <br>
  
 7. 在传感器部署类型中，单击 " **下一步** "。
-<br>![图像 of_Azure 高级威胁防护页，应在此页面上单击 "下一步" 以遵循 Azure ATP 传感器向导](../../media/mtp-eval-48.png) <br>
+<br>![图像 of_Azure 高级威胁防护页，应在此页面上单击 "下一步" 转到 "下一页"](../../media/mtp-eval-48.png) <br>
  
 8. 复制访问键，因为在向导的下一步需要输入它。
 !["图像 of_the 传感器" 页，应在此页面中复制需要在下一个 Azure ATP 传感器安装向导中输入的访问密钥](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 
 接下来，您可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应对终结点的 fileless 攻击。
 
-## <a name="next-steps"></a>后续步骤
-[生成测试警报](generate-test-alert.md)。
+## <a name="next-step"></a>后续步骤
+|![攻击模拟阶段](../../media/mtp/run-sim.png) <br>[攻击模拟阶段](mtp-pilot-simulate.md) | 为你的 Microsoft 威胁防护试点环境运行攻击模拟。
+|:-------|:-----|

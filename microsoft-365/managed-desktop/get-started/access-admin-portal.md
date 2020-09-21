@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546570"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137031"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
 你的 Microsoft 托管桌面服务的网关是 Microsoft [Azure 门户](https://portal.azure.com)。 有关通常情况下使用和自定义 Azure 门户体验的详细信息，请参阅 [azure 门户文档](https://docs.microsoft.com/azure/azure-portal/)。 在预览中，您还可以在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中找到 Microsoft 托管桌面。 如果你不熟悉此门户的设备管理功能，请参阅 [Microsoft 终结点管理器文档](https://docs.microsoft.com/mem/)。
 
-您的管理帐户需要特定的权限才能访问 Azure 门户或 Microsoft 终结点管理器中的 Microsoft 托管桌面管理功能。 您可以通过使用基于角色的访问控制 (RBAC) 管理对组织内的这些功能的管理员访问。 有几个 Azure AD 管理员角色和内置自定义角色可用于向 Microsoft 托管桌面管理门户中的不同功能提供更精细的控制。 有关 Azure Active Directory 角色的详细信息，请参阅 [Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 与适用于各种 Microsoft 产品和服务的 AAD 管理员角色不同，自定义角色特定于 Microsoft 托管桌面，并将仅保证能够访问此服务的管理功能。 管理员可以将自定义角色单独或与 AAD 管理员角色结合使用，以向现有管理员帐户添加 Microsoft 托管桌面权限。
+> [!NOTE]
+> 不过，你可以选择在 microsoft [终结点管理器](https://endpoint.microsoft.com/) 或 [Azure 门户](https://portal.azure.com)中 accesss microsoft 托管桌面，以下浏览器受支持：
+> - Microsoft Edge (最新版本) 
+> - Microsoft Internet Explorer 11
+> - Safari (最新版本，仅 Mac) 
+> - Chrome (最新版本) 
+> - Firefox (最新版本) 
+
+您的管理帐户需要特定的权限才能访问 Azure 门户或 Microsoft 终结点管理器中的 Microsoft 托管桌面管理功能。 您可以通过使用基于角色的访问控制 (RBAC) 管理对组织内的这些功能的管理员访问。  (Azure AD) 管理员角色和内置自定义角色的多个 Azure Active Directory 可用于向 Microsoft 托管桌面管理门户中的不同功能提供更精细的控制。 有关 Azure Active Directory 角色的详细信息，请参阅 [Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 与适用于各种 Microsoft 产品和服务的 Azure AD 管理员角色不同，自定义角色特定于 Microsoft 托管桌面，并将仅保证能够访问此服务的管理功能。 管理员可以将自定义角色单独或与 Azure AD 管理员角色结合使用，以向现有管理员帐户添加 Microsoft 托管桌面权限。
 
 可以分配以下每个角色，以提供不同级别的访问权限：
 

@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全文档。
-ms.openlocfilehash: 8918c7da26a60c7cfd64b7148d0added82cc6642
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 5e91c226102d60368bf08b09ae5f0239f63599d5
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949450"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132211"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -28,40 +28,33 @@ ms.locfileid: "47949450"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全文档现在对 Office 版本 2004 () 或更高版本的用户通常可用！ 此功能在默认情况下处于禁用状态，将需要由安全管理员启用。
+- 安全文档仅适用于使用 *Microsoft 365 e5* 或 *Microsoft 365 e5 安全* 许可证的用户。 这些许可证不包含在 Office 365 高级威胁防护 (ATP) 计划中。
 
-- 此功能仅适用于使用 *microsoft 365 e5* 或 *Microsoft 365 e5 安全* 许可证的用户 (不包含在 Office 365 ATP 计划) 中。
+- 安全与合规中心的打开网址为 <https://protection.office.com>。 若要直接转到 " **ATP 安全附件** " 页面，请打开 <https://protection.office.com/safeattachmentv2> 。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
-
-- 有关详细信息，请参阅 
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 在执行本主题中的过程之前，您需要分配权限。 若要启用和配置安全文档，您必须是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。 若要详细了解安全与合规中心内的角色组，请参阅[安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何处理您的数据？
+- 为了使你受到保护，安全文档会将文件发送到 [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 云进行分析。 有关 Microsoft Defender ATP 如何处理你的数据的详细信息，请参阅此处： [Microsoft DEFENDER atp 数据存储和隐私](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
-为了使你受到保护，安全文档会将文件发送到 [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 云进行分析。
-
-- 可在 [此处](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)找到有关 Microsoft Defender 高级威胁防护如何处理数据的详细信息。
-- 除了上述准则之外，通过安全文档发送的文件不会在进行分析所需的时间（通常少于24小时）的情况下保留在 Defender 中。
+- 安全文档发送的文件不会在进行分析所需的时间段内保留，而不会在 (中保留（) 通常不到24小时）。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全 & 合规中心配置安全文档
 
-1. 在上打开安全 & 合规性中心 <https://protection.office.com> 。
+1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，然后单击 " **全局设置**"。
 
-2. 转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"。
+2. 在显示的 **全局设置** 飞出中，配置以下设置：
 
-3. 在 " **信任文件以在 Office 应用程序中打开外部受保护的视图** " 部分中，在 "帮助用户保持安全" 中，配置以下任一设置：
+   - **打开 Office 客户端的安全文档**：将切换移到右侧以打开功能： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-   - **打开 Office 客户端的安全文档**
+   - **允许用户在受保护的视图中单击，即使安全文档将该文件标识为恶意文件**也是如此：建议您将此选项保留为关闭状态 (保持左侧的开关： ![ ](../../media/scc-toggle-off.png)) 切换。
 
-   - **允许用户在受保护的视图中单击，即使安全文档将文件标识为恶意文件**也是如此：我们建议您不要启用此选项。
+   完成时，请单击“保存”****。
 
-4. 完成时，请单击“保存”****。
+   ![选择 "ATP 安全附件" 页面上的 "全局设置" 后的安全文档设置。](../../media/safe-docs.png)
 
-![ATP 安全附件页面](../../media/safe-docs.png)
-
-### <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置安全文档
+### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 配置安全文档
 
 使用以下语法：
 
@@ -70,7 +63,6 @@ Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true 
 ```
 
 - _EnableSafeDocs_参数为整个组织启用或禁用安全文档。
-
 - _AllowSafeDocsOpen_参数允许或禁止用户将受保护的视图 (即，如果文档已被标识为恶意文档，则打开文档) 。
 
 本示例为整个组织启用安全文档，并阻止用户打开已被 "受保护的视图" 识别为恶意的文档。
@@ -85,10 +77,16 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要验证是否已启用并配置安全文档，请执行以下任一步骤：
 
-- 在安全 & 合规性中心转到 **威胁管理** \> **策略** \> **ATP 安全附件**，并验证在 **信任文件以在 Office 应用程序中打开受保护视图外部时帮助** 中的选择是否保持安全。
+- 在 "安全性 & 合规性中心" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，单击 " **全局设置**"，然后验证是否 **打开 Office 客户端的安全文档** 并 **允许用户在受保护的视图中单击，即使安全文档将该文件标识为恶意** 设置也是如此。
 
 - 在 Exchange Online PowerShell 中运行以下命令，并验证属性值：
 
   ```powershell
   Get-AtpPolicyForO365 | Format-List *SafeDocs*
   ```
+
+- 以下文件可用于测试安全文档保护。 这些文档类似于测试反恶意软件和反病毒解决方案的 EICAR.TXT 文件。 这些文件不会造成危害，但会触发安全文档保护。
+
+  - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
+  - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)
+  - [SafeDocsDemo.xlsx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.xlsx)

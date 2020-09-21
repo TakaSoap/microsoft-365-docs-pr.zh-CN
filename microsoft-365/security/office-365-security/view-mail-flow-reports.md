@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949616"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171394"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
 
@@ -399,7 +399,7 @@ ms.locfileid: "47949616"
 
 ## <a name="sent-and-received-email-report"></a>发送和接收的电子邮件报告
 
-**已发送和已接收的电子邮件**报告是一个智能报告，显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为 "正常" 的电子邮件。 此报告和 [邮件流状态报告](#mailflow-status-report) 的区别在于：此报告不包含有关边缘保护阻止的邮件的数据。
+**已发送和已接收的电子邮件**报告是一个智能报告，显示有关传入和传出电子邮件的信息，包括垃圾邮件检测、恶意软件和标识为 "正常" 的电子邮件。 此报告和 [邮件流状态报告](#mailflow-status-report) 的区别在于：此报告不包含有关边缘保护阻止的邮件的数据。请务必了解，如果将邮件发送给五个收件人，我们会将其作为一封邮件进行计数。
 
 报告的聚合视图和详细信息视图允许90天的筛选。
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 威胁防护中的自动化调查和响应功能
-description: 简要了解 Microsoft 威胁防护中的自动调查和响应功能
-keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
+title: Microsoft 威胁防护中的自动调查和响应
+description: 了解 Microsoft 威胁防护中的自动化调查和响应功能（也称为自我修复）概述
+keywords: 自动化、调查、警报、触发、操作、修正、自我修复
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -18,25 +18,33 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 9fc4c99254f4f27b476930a555b237be093bff24
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.date: 09/16/2020
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: f2a0a439996f13cea3823815aceb9dd1c235e2f2
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950720"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962661"
 ---
-# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动化调查和响应功能
+# <a name="automated-investigation-and-response-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动调查和响应
 
 **适用于：**
 - Microsoft 威胁防护
 
-随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 自动化调查和响应功能 (也称为 *自愈* 功能，可在 Microsoft 威胁防护中) 帮助。 
+随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 Microsoft 威胁防护中的自动化调查和响应功能（通过自我修复）可能会有所帮助。
 
-观看以下视频，了解自动化自愈功能的工作原理：
+观看以下视频，了解自我修复的工作原理：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-自动调查和响应类似于安全运营中心中的虚拟分析员。
+在 Microsoft 威胁防护中，通过自愈功能进行的自动化调查和响应可在您的设备、电子邮件 & 内容和标识之间工作。 Microsoft 威胁防护将功能汇集在一起： 
+- [Microsoft Defender 高级威胁防护中的自动化调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Office 365 高级威胁防护中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
+- [Azure 高级威胁检测](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+ 
+本文介绍了自动化调查和响应的工作方式。 若要配置这些功能，请参阅 [在 Microsoft 威胁防护中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)。
 
 ## <a name="your-virtual-analyst"></a>你的虚拟分析师
 
@@ -62,25 +70,14 @@ ms.locfileid: "47950720"
 
 每个调查都会为调查) 的每个证据生成 verdicts (*恶意*、 *可疑*或不会 *发现的威胁* 。 根据威胁的类型和得到的结论，将自动执行更正操作，或在组织的安全操作团队批准时执行。 "[操作中心](mtp-action-center.md)中列出了待处理和已完成的操作。
 
-> [!TIP]
-> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅 [如何在 Microsoft 威胁防护的自动调查和响应功能中报告误报/负面错误](mtp-autoir-report-false-positives-negatives.md)。
-
 运行调查时，出现的所有其他相关警报将被添加到调查中，直到调查完成。 如果在其他位置看到受影响的实体，自动调查将扩大其范围，以包括该实体，并且将运行常规安全性 Playbook。 
 
 > [!NOTE]
-> 并不是每个警报都会触发自动调查，并且并非每个调查都会导致自动修正操作;这一切都取决于为您的组织配置自动调查和响应的方式。 
+> 并不是每个警报都会触发自动调查，并且并非每个调查都会导致自动修正操作;这一切都取决于为您的组织配置自动调查和响应的方式。 请参阅 [在 Microsoft 威胁防护中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)。
 
-## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>在 Microsoft 威胁防护中进行自动调查和响应的要求
-
-|要求 |详细信息 |
-|--|--|
-|订阅要求 |以下各项之一： <br/>-Microsoft 365 E5 <br/>-Microsoft 365 A5 <br/>-Microsoft 365 E5 安全<br/>-Microsoft 365 A5 安全性<br/>-Office 365 E5 plus 企业移动性 + 安全性 E5，外加 Windows E5<br/><br/>请参阅 [Microsoft 威胁防护许可要求](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements)。|
-|网络要求 |- 已启用 [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)<br/>- 已配置 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS)<br/>- [与 Azure ATP 集成的 MCAS](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Windows 计算机要求 |-Windows 10 版本1709或更高版本安装的 (请参阅 [Windows 10 发行版信息](https://docs.microsoft.com/windows/release-information/)) 并配置以下威胁 protection 服务：<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
-|对电子邮件内容和 Office 文件的保护 |配置了[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
-|权限 |-若要配置自动调查和响应，必须在任何 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中分配全局管理员或安全管理员角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。<br/><br/>-若要使用自动调查和响应功能，请参阅 [操作中心任务所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)。 |
 
 ## <a name="next-steps"></a>后续步骤
 
-- [批准或拒绝与自动调查和响应相关的操作](mtp-autoir-actions.md)
+- [请参阅 Microsoft 威胁防护中的自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-threat-protection)
+- [为你的组织配置自动调查和响应](mtp-configure-auto-investigation-response.md)
 - [详细了解操作中心](mtp-action-center.md)

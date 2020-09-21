@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962649"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>在自动调查后批准或拒绝待处理的操作
 
@@ -33,9 +35,9 @@ ms.locfileid: "42633920"
 运行自动调查后，可能会生成一个或多个[修正操作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)，需要批准这些操作才能继续。 例如，可能需要删除电子邮件的群集，或者可能需要删除已隔离的文件。 应尽快批准（或拒绝）挂起的操作，以便自动调查可以继续并及时完成。 
 
 > [!TIP]
-> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅[如何在 Microsoft 威胁防护中报告误报/负面的自动调查和响应（空中）功能](mtp-autoir-report-false-positives-negatives.md)。
+> 如果你认为在 Microsoft 威胁防护中，自动调查和响应功能已丢失或错误地检测到了某些内容，请告诉我们！ 请参阅 [如何在自动调查和响应中报告误报/负面 (AIR) 在 Microsoft 威胁防护中的功能](mtp-autoir-report-false-positives-negatives.md)。
 
-可以使用[操作中心](#review-a-pending-action-in-the-action-center)或[调查详细信息视图](#review-a-pending-action-in-the-investigation-details-view)来审阅和批准挂起的操作。
+可以使用 [操作中心](#review-a-pending-action-in-the-action-center) 或 [调查详细信息视图](#review-a-pending-action-in-the-investigation-details-view)来审阅和批准挂起的操作。
 
 > [!NOTE]
 > 必须具有[相应的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。
@@ -62,8 +64,5 @@ ms.locfileid: "42633920"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [详细了解操作中心](mtp-action-center.md)
-
-- [详细了解事件](incidents-overview.md)
-
-- [详细了解搜寻](advanced-hunting-overview.md)
+- [查看自动调查的详细信息和结果](mtp-autoir-results.md)
+- [处理自动调查和响应功能中的误报/否定](mtp-autoir-report-false-positives-negatives.md)

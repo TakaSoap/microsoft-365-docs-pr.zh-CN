@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试 (预览) '
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962392"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171346"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 网络连接测试 (预览) 
 
@@ -37,13 +37,33 @@ Microsoft 365 管理中心中的网络见解基于每天进行聚合的 Microsof
 >[!IMPORTANT]
 >网络洞察力、Microsoft 365 管理中心中的性能建议和评估当前处于预览状态，并且仅适用于已在功能预览计划中注册的 Microsoft 365 租户。
 
-## <a name="the-advanced-tests-client-application"></a>高级测试客户端应用程序
+## <a name="what-happens-at-each-test-step"></a>每个测试步骤中会发生的情况
+
+### <a name="office-location-identification"></a>办公室位置标识
+
+当您单击 "运行测试" 按钮时，将显示正在运行的测试页并标识办公室位置。 您可以按城市、省市自治区和国家/地区键入，也可以在 web 浏览器中检测到该位置。 如果检测到此情况，我们会从 web 浏览器请求纬度和经度，并在使用之前将精度限制为 300m 300m。 我们这样做的原因是，与构建网络性能相比，不需要更准确地确定位置。 
+
+### <a name="javascript-tests"></a>JavaScript 测试
+
+在 office 位置标识之后，我们会在 JavaScript 中运行 TCP 延迟测试，并向服务请求有关正在使用的 Office 365 服务前端服务器和建议的 Office 服务前端服务器的数据。 完成这些操作后，我们会将其显示在地图上和 "详细信息" 选项卡中，在下一步之前可以查看它们。
+
+### <a name="download-the-advanced-tests-client-application"></a>下载高级测试客户端应用程序
+
+接下来，我们将开始下载高级测试客户端应用程序。 我们依赖用户来启动客户端应用程序，并且还必须安装 .NET Core。
 
 Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office.com> 运行高级网络连接测试的网站和可下载的 Windows 客户端应用程序。 大多数测试都需要运行应用程序。 它将在运行时将结果重新填充到网页中。
 
 在 web 浏览器测试完成后，系统将提示您从网站下载高级客户端测试应用程序。 在出现提示时打开并运行该文件。
 
 ![高级测试客户端应用程序](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>启动高级测试客户端应用程序
+
+在客户端应用程序启动后，网页将进行更新以显示此数据，并将开始将测试数据接收到网页。 每次接收新数据时，它都会更新，您可以在数据到达时查看数据。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>高级测试已完成并测试报表上载
+
+完成测试后，网页和高级测试客户端将同时指明这一点，如果测试报告中的用户已登录，则会将其上载到客户租户。
 
 ## <a name="sharing-your-test-report"></a>共享测试报告
 
@@ -111,7 +131,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 #### <a name="vpn-split-tunnel"></a>VPN 拆分隧道
 
-对 Exchange Online、SharePoint Online 和 Microsoft 团队的每个优化类别路由进行测试，以查看是否在 VPN 上 tunnelled。 拆分工作负载可以完全避免 VPN。 Tunnelled 工作负荷是通过 VPN 发送的。 一个选择性的 tunnelled 工作负荷具有通过 VPN 发送的某些路由，而某些路由已被剥离。如果所有工作负荷被拆分或选择性 tunnelled，则将显示传递结果。
+对 Exchange Online、SharePoint Online 和 Microsoft 团队的每个优化类别路由进行测试，以查看是否在 VPN 上进行隧道传输。 拆分工作负载可以完全避免 VPN。 隧道工作负载是通过 VPN 发送的。 选择性隧道工作负载具有通过 VPN 发送的某些路由，并且某些路由已被剥离。如果所有工作负荷都已拆分或选择性隧道，则将显示传递结果。
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>具有更佳性能的大都市区域内的客户
 
@@ -207,28 +227,6 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 本节显示了 ICMP traceroute 对 Exchange Online 服务前向门、SharePoint Online service 前门和 Microsoft 团队服务前盖的结果。 仅提供此信息，没有相关的网络洞察力。 提供了三个 traceroutes。 一个 traceroute 到 _outlook.office365.com_，一个 traceroute 到客户的 SharePoint 前端或 _microsoft.sharepoint.com_ ，如果未提供，则 traceroute 到 _world.tr.teams.microsoft.com_。
 
-## <a name="what-happens-at-each-test-step"></a>每个测试步骤中会发生的情况
-
-### <a name="office-location-identification"></a>办公室位置标识
-
-当您单击 "运行测试" 按钮时，将显示正在运行的测试页并标识办公室位置。 您可以按城市、省市自治区和国家/地区键入，也可以在 web 浏览器中检测到该位置。 如果检测到此情况，我们会从 web 浏览器请求纬度和经度，并在使用之前将精度限制为 300m 300m。 我们这样做的原因是，与构建网络性能相比，不需要更准确地确定位置。 
-
-### <a name="javascript-tests"></a>JavaScript 测试
-
-在 office 位置标识之后，我们会在 JavaScript 中运行 TCP 延迟测试，并向服务请求有关正在使用的 Office 365 服务前端服务器和建议的 Office 服务前端服务器的数据。 完成这些操作后，我们会将其显示在地图上和 "详细信息" 选项卡中，在下一步之前可以查看它们。
-
-### <a name="download-the-advanced-tests-client-application"></a>下载高级测试客户端应用程序
-
-接下来，我们将开始下载高级测试客户端应用程序。 我们依赖用户来启动客户端应用程序，并且还必须安装 .NET Core。
-
-### <a name="start-the-advanced-tests-client-application"></a>启动高级测试客户端应用程序
-
-在客户端应用程序启动后，网页将进行更新以显示此数据，并将开始将测试数据接收到网页。 每次接收新数据时，它都会更新，您可以在数据到达时查看数据。
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>高级测试已完成并测试报表上载
-
-完成测试后，网页和高级测试客户端将同时指明这一点，如果测试报告中的用户已登录，则会将其上载到客户租户。
-
 ## <a name="connectivity-reports"></a>连接性报告
 
 登录后，您可以查看以前运行的报告。 您也可以将其共享或从列表中删除。
@@ -251,7 +249,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>运行高级测试客户端需要什么？
 
-高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，则会转到 [.Net Core 3.1 installer 页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时，而不是 SDK 或 ASP.NET Core Runtime 在页面上的位置。 计算机上的管理员权限是 reuqired，用于安装 .NET Core。 
+高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，则会转到 [.Net Core 3.1 installer 页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时，而不是 SDK 或 ASP.NET Core Runtime 在页面上的位置。 必须具有对计算机的管理员权限才能安装 .NET Core。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前门？
 

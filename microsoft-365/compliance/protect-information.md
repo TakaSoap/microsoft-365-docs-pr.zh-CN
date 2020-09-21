@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 通过使用 Microsoft 365 合规性，实现 Microsoft 信息保护 (MIP) 功能，以帮助您发现、分类和保护其生存或传播的敏感信息。
-ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308343"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131962"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息保护
 
@@ -41,7 +41,7 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 |功能|它会解决什么问题？|入门|
 |:------|:------------|:--------------------|:-----------------------------|
 |[敏感信息类型](sensitive-information-type-entity-definitions.md)| 使用内置或自定义正则表达式或函数标识敏感数据，以及包含关键字、可信度和邻近度的确定证据。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable 类元 (预览) ](classifier-getting-started-with.md)| 使用内置分类器之一为您分类数据，或使用自己的内容对分类器进行训练 | [创建 trainable 分类器 (预览) ](classifier-creating-a-trainable-classifier.md) |
+|[Trainable 类元 (预览) ](classifier-learn-about.md)| 使用内置分类器之一为您分类数据，或使用自己的内容对分类器进行训练 | [可训练分类器（预览版）入门](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 标识具有敏感度标签、保留标签或已在组织中将其分类为敏感信息类型的项目，以及用户对其执行的操作  | [内容资源管理器入门](data-classification-content-explorer.md)<br /><br /> [活动资源管理器入门](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>保护你的数据

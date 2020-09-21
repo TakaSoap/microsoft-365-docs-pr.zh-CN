@@ -2,8 +2,8 @@
 title: 获取适用于市场活动的 Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: supotter
-author: supotter
+ms.author: sirkkuw
+author: sirkkuw
 manager: scotv
 ms.audience: Admin
 ms.topic: article
@@ -24,30 +24,30 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取适用于市场活动的 Microsoft 365，以便您可以保护您的市场活动，从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527326"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131972"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取适用于市场活动的 Microsoft 365
 
 拥有 Microsoft 365 商业高级版的任何人都可以使用本指南为电子邮件和协作配置额外的安全性。 但是，美国的市场活动和政治方有资格享受 Microsoft 365 的特殊定价。 目前，此特惠价格可用于：
-- 美国联邦政治活动（例如，针对美国房屋、美国 Senate 或总统的市场活动）
+- 美国联邦政治活动 (例如，市场营销针对美国房子、美国 Senate 或总裁) 的办公室
 - 美国的国家级政治双方。
 
 如果你的市场活动或政治聚会合格，microsoft 365 的市场活动就是通过 Microsoft 提供的成本最低的计划。  
 
-如果你不符合特殊定价要求，Microsoft 365 商业高级版仍然是为协作环境获取全面安全性的最经济高效的方法。 请参阅[注册 Microsoft 365 以获取市场活动](m365-campaigns-sign-up.md)。 然后使用此库配置额外的安全性并帮助您的团队安全地进行协作。 
+如果你不符合特殊定价要求，Microsoft 365 商业高级版仍然是为协作环境获取全面安全性的最经济高效的方法。 请参阅 [注册 Microsoft 365 以获取市场活动](m365-campaigns-sign-up.md)。 然后使用此库配置额外的安全性并帮助您的团队安全地进行协作。 
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 的市场活动包括什么？
 Microsoft 365 商业高级版的这一配置包括可帮助您和您的员工安全地协同工作的简单控件： 
-- **保护用户标识**：确保用户是他们在登录发送电子邮件或访问文件（多重身份验证）时所说的。
-- **保护敏感信息**：保护敏感信息以监视在组织外部共享的信息（数据丢失防护）。
-- **保护移动设备**：保护移动设备上的数据（移动应用保护策略）。
-- 防止**恶意内容**：扫描电子邮件附件（高级威胁防护），阻止对恶意内容的访问。
-- **保护密码**：将密码设置为永不过期，这样更安全，并且有助于防止工作 stoppages （密码策略）。 
+- **保护用户标识**：确保用户是他们在登录发送电子邮件或访问文件 (多重身份验证) 时所说的。
+- **保护敏感信息**：保护敏感信息以监视在组织外部共享的信息 (数据丢失防护) 。
+- **保护移动设备**：保护移动设备 (移动应用保护策略) 中的数据。
+- 防止**恶意内容**：通过扫描电子邮件附件 (高级威胁防护) 来防止恶意内容的访问。
+- **保护密码**：将密码设置为永不过期，这样会更加安全，并有助于防止工作 stoppages (密码策略) 。 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>It 的成本、需要它的目标以及承诺是什么？
@@ -60,6 +60,6 @@ Microsoft 365 商业高级版的这一配置包括可帮助您和您的员工安
 2. 填写完表单后，我们需要花费几天时间查看你的信息。 
 3. 在我们确认你表示国家级政治活动或参与方之后，你将收到 Microsoft 发送的电子邮件邀请。 您的邀请包括特定于您的组织的注册链接。 
 
-收到邀请后，[注册 Microsoft 365 以获取市场活动](m365-campaigns-sign-up.md)。
+收到邀请后， [注册 Microsoft 365 以获取市场活动](m365-campaigns-sign-up.md)。
 
 

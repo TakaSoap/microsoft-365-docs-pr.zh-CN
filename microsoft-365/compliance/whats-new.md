@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 合规性中的新增功能
+title: Microsoft 365 合规中心更新信息
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336665"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132032"
 ---
-# <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规性中的新增功能
+# <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
 无论是将新的新解决方案添加到 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都能帮助您保持在不断变化的合规性水平的基础上。 查看下面的内容，了解今天在 Microsoft 365 合规性方面的新增内容。 
 
@@ -269,7 +269,7 @@ ms.locfileid: "47336665"
 | (预览的解决方案目录)  <br/>|解决方案目录是用于发现、了解和快速开始使用合规性和风险管理解决方案的一站式业务。 目录分为三个符合性类别，每个类别都包含有关组成该类别的解决方案的详细信息。 类别包括信息保护 & 治理、内幕风险管理和发现 & 响应 <br/>|[解决方案目录 (预览的概述) ](microsoft-365-solution-catalog.md)|
 | (预览的通信合规性)  <br/>|通信合规性是新的内幕风险管理类别的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，以帮助最大限度地减少通信风险。 该解决方案通过引入几项新的增强功能（如智能模板、灵活的修正工作流和可操作的见解）扩展了监督策略在 Office 365 中的功能。 <br/>|[Microsoft 365 (预览版中的通信合规性) ](communication-compliance.md)|
 |数据分类 (预览)  <br/>|我们新的数据分类页面包含强大的见解和工具，可帮助您发现和评估在您的组织中的内容中使用的敏感信息和标签 (保留和敏感度) 。 查看包含敏感信息或应用了标签的内容、跨 Microsoft 365 位置浏览标签活动、创建自定义敏感信息类型，以及更多。<br/>|[数据分类概述（预览）](data-classification-overview.md)|
-|Trainable 类元 (预览)  <br/>|此功能强大的新工具使用我们的机器学习引擎帮助确定您的组织中的内容类别，如法规文档或员工协议。 创建后，可以在几个合规性解决方案中使用分类器来检测相关内容并对其进行分类、保护、保留等。<br/>|[可训练分类器入门（预览）](classifier-getting-started-with.md)|
+|Trainable 类元 (预览)  <br/>|此功能强大的新工具使用我们的机器学习引擎帮助确定您的组织中的内容类别，如法规文档或员工协议。 创建后，可以在几个合规性解决方案中使用分类器来检测相关内容并对其进行分类、保护、保留等。<br/>|[了解 trainable 分类 (预览) ](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新了合规性解决方案
 
@@ -298,7 +298,7 @@ ms.locfileid: "47336665"
 |保留标签和标签策略 |分类 > 保留标签 > 标签和标签策略选项卡 <br/> https://protection.office.com/retentionlabels |信息治理 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留标签概述](retention.md)|
 |保留策略|信息治理 > 保留 <br/> https://protection.office.com/retention |信息治理 > 保留选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[了解保留策略和保留标签](retention.md)|
 |敏感信息类型|分类 > 敏感信息类型 <br/> https://protection.office.com/sensitivetypes |数据分类 > 敏感信息类型选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)|
-|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感性标签](sensitivity-labels.md) |
+|敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全与合规中心内的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 (预览版中的通信合规性) ](communication-compliance.md) |
 

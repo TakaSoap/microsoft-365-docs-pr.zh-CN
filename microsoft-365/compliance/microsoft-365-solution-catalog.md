@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547560"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132166"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -79,7 +79,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 若要访问 Microsoft 365 解决方案目录，请转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并以全局管理员、合规性管理员或合规性数据管理员身份登录。 在屏幕左侧的导航窗格中选择 " **目录** "，以打开 "目录主页"。
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 **为什么我看不到 Microsoft 365 解决方案目录？**
 
@@ -101,6 +101,6 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 - **Microsoft 信息保护**，了解 microsoft 365 解决方案如何帮助您在任何生活或旅行时发现、分类和保护敏感信息。
     - **了解并设置 Microsoft 云应用安全性**。 请参阅 [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
-    - **分类器入门**。 对内容进行分类，然后对其进行标记，以便可以对其进行保护和正确处理，这是信息保护训练科目的起始位置。 请参阅 [trainable 分类](classifier-getting-started-with.md)器入门。
+    - **分类器入门**。 对内容进行分类，然后对其进行标记，以便可以对其进行保护和正确处理，这是信息保护训练科目的起始位置。 [有关 trainable 分类 (预览) ](classifier-learn-about.md)，请参阅了解。
 
 - **请经常访问 Microsoft 365 解决方案目录**，并确保查看新的解决方案，以帮助满足合规性需求。 登录，然后 [https://compliance.microsoft.com](https://compliance.microsoft.com) 选择左侧导航窗格中的 " **目录** "。

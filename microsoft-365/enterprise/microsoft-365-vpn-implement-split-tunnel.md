@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/15/2020
+ms.date: 9/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: 1fa86501e9cf29ffd41ec5b25a86cc4f2b139d52
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695529"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171418"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -220,7 +220,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ### <a name="configuration"></a>配置
 
-对于通话和会议，只要所需的针对 Teams 媒体的优化 IP 子网在路由表中，那么当 Teams 调用 _GetBestRoute_ 方法来确定应将哪个接口用于特定目标时，将为上面列出的 Microsoft IP 块中的 Microsoft 目标返回本地接口。
+对于呼叫和会议，只要工作组介质的必需优化 IP 子网在路由表中正确地放置，当团队调用 [GetBestRoute](https://docs.microsoft.com/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) 函数来确定哪种本地接口对应于特定目标应使用的路由时，将为上面列出的 microsoft IP 块中的 microsoft 目标返回本地接口。
 
 某些 VPN 客户端软件允许基于 URL 进行路由操作。 但是，Teams 媒体流量没有与之关联的 URL，因此必须使用 IP 子网来控制此流量路由。
 
@@ -277,7 +277,7 @@ Skype for Business Online 生成用户名/密码，可用于通过_围绕 NAT �
 - **Pulse Secure**：[VPN 隧道：如何配置拆分隧道以排除 Office365 应用程序](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
 - **检查点 VPN**： [如何为 Office 365 和其他 SaaS 应用程序配置拆分隧道](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 Microsoft 安全团队已发布概括了安全专家的主要方式的 [文章](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) ，以及在当今独特的远程工作方案中，可以实现新式安全控制。 此外，下面是有关此主题的一些常见客户问题和解答。
 
@@ -293,7 +293,7 @@ Microsoft 安全团队已发布概括了安全专家的主要方式的 [文章](
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>如果流量不再流经本地解决方案，我该如何应用 DLP 并保护我的敏感数据？
 
-为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及到自己的设备 (BYOD) 策略，则可以使用 [基于应用的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 来防止将敏感数据下载到用户的个人设备
+为帮助防止意外泄露敏感信息，Office 365 提供了一组丰富的[内置工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。 可使用 Teams 和 SharePoint 的内置 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)来检测未恰当存储或共享的敏感信息。 如果远程工作策略的一部分涉及到自己的设备 (BYOD) 策略，则可以使用 [基于应用的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 来防止将敏感数据下载到用户的个人设备
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>如何在用户直接连接时评估和保留用户身份验证的控制权？
 
@@ -307,7 +307,7 @@ Microsoft 安全团队已发布概括了安全专家的主要方式的 [文章](
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>如何防范病毒和恶意软件？
 
-同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection)。 正如前面所述，在服务中提供这些安全元素的效率要高得多，而不是使用可能不完全理解协议/流量的设备来尝试并进行此操作。默认情况下，SharePoint Online 自动扫描已知恶意软件的[文件上载](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-worldwide)
+同样，Office 365 为服务自身各层中标记为“优化”的终结点提供了保护，[本文档对此进行了概述](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection)。 正如前面所述，在服务中提供这些安全元素的效率要高得多，而不是使用可能不完全理解协议/流量的设备来尝试并进行此操作。默认情况下，SharePoint Online 自动扫描已知恶意软件的[文件上载](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo)
 
 对于上面列出的 Exchange 终结点，[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 和 [Office 365 高级威胁防护](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)在为访问服务的流量提供安全方面做得很好。
 
@@ -323,7 +323,7 @@ Microsoft 安全团队已发布概括了安全专家的主要方式的 [文章](
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>为什么需要端口 80？ 流量是否明文发送？
 
-端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [此文](https://docs.microsoft.com/microsoft-365/compliance/encryption?view=o365-worldwide)概述了 Office 365 中传输和静止数据的加密，[这篇文章](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)则概述了如何使用 SRTP 来保护 Teams 媒体流量。
+端口 80 仅用于重定向到端口 443 会话之类的操作，不会通过端口 80 发送或访问任何客户数据。 [此文](https://docs.microsoft.com/microsoft-365/compliance/encryption)概述了 Office 365 中传输和静止数据的加密，[这篇文章](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)则概述了如何使用 SRTP 来保护 Teams 媒体流量。
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>此建议是否适用于使用 Office 365 全球实例的中国用户？
 
