@@ -19,19 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1e67d4a4af84da9651f091f45eddaa01f467e06c
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: 90e889928e9bb49c5325036b22d7caacc76f362f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339898"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199437"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威胁防护数据安全性和隐私
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
 
-Microsoft 在欧洲联合、英国和美国的 Microsoft Azure 数据中心运行威胁防护。 由服务收集的客户数据存储在 "设置" 中标识的租户的地理位置（a），如果 Microsoft 威胁防护使用另一个 Microsoft online 服务处理此类数据，则会将其存储在（a）中，如果 Microsoft 威胁防护使用其他 Microsoft online 服务来处理此类数据，则是由其他联机服务的数据存储规则定义的
+Microsoft 在欧洲联合、英国和美国的 Microsoft Azure 数据中心运行威胁防护。 服务收集的客户数据存储在 () 在预配期间确定租户的地理位置，如果 Microsoft 威胁防护使用另一个 Microsoft online 服务处理此类数据，则)  (b 如果 Microsoft 威胁防护使用另一种联机服务的数据存储规则定义的地理位置。
 
 假名表单中的客户数据也可能存储在美国中央存储和处理系统中。
 

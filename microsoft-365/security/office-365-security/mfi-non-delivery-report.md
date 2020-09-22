@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在安全 & 合规性中心中使用邮件流仪表板中的 "未送达详细信息" 报告来监视未送达报告中最常遇到的错误代码 (也称为 "Ndr" 或 "退回邮件") 来自组织中的发件人的邮件。
-ms.openlocfilehash: f9017a7f041037c5db2dc9b9f4f5155b038bf2c7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: bc530cce54b3d4fd9f414920a8fb58f4322f6b5c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195960"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>安全 & 合规中心中的未送达报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Security & 合规性中心](https://protection.office.com)的[邮件流仪表板](mail-flow-insights-v2.md)中的**未送达报告**显示在未送达报告中遇到的最大错误代码 (也称为 "ndr" 或 "退回邮件") 组织中的用户。 此报告显示 Ndr 的详细信息，以便您可以解决电子邮件传递问题。
 

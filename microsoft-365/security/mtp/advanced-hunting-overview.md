@@ -18,19 +18,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 9b7e20daa3a5d642a864f9b24e836d3c75bbd7b1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950732"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199849"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>通过 Microsoft 威胁防护中的高级搜寻主动搜寻威胁
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
+
 **适用于：**
 - Microsoft 威胁防护
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 您可以主动检查网络中的事件以查找威胁指示器和实体。 灵活的数据访问可实现已知和潜在威胁的无约束搜寻。
 <p></p>

@@ -18,14 +18,17 @@ search.appverid:
 description: 此解决方案告诉您在 Microsoft 365 中最常见的 cybersecurity 攻击可能如下所示，以及如何对其做出响应
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818791"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198699"
 ---
 # <a name="security-incident-response"></a>安全事件响应
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 此解决方案告诉您在 Office 365 中最常见的 cybersecurity 攻击的指标，如何正确确认任何给定的攻击以及如何对其做出响应。
 
@@ -37,7 +40,7 @@ ms.locfileid: "44818791"
 
 - 什么是攻击以及它的工作原理。
 
-- 应查找的标志（称为 "泄露" （IOC））以及如何查找它们。
+-  (IOC) 的标志（称为 "泄漏"），以查找和查找它们。
 
 - 如何正确地确认攻击。
 
@@ -59,7 +62,7 @@ ms.locfileid: "44818791"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像网络安全专家那样保护 Microsoft 365
 
-你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用[microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md)，以实现 microsoft 建议的最佳实践，以确保 microsoft 365 组织的安全。
+你的 Microsoft 365 订阅附带了一组强大的安全功能，可用于保护你的数据和用户。  使用 [microsoft 365 安全路线图-前30天、90天和更高版本的首要优先级](security-roadmap.md) ，以实现 microsoft 建议的最佳实践，以确保 microsoft 365 组织的安全。
 
 - 需要在前 30 天完成的任务。  这些任务会对你的用户产生直接影响并且影响很小。
 

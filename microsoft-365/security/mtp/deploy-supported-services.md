@@ -19,21 +19,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c29027bb641530ba2d3c7a22c578770c098f53ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633467"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198881"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 威胁防护](microsoft-threat-protection.md)集成了各种 Microsoft 安全服务，以提供针对复杂攻击的集中式检测、预防和调查功能。 本文介绍了受支持的服务、其许可要求、与部署一个或多个服务相关的优势和限制，以及如何单独完全部署它们的链接。
+[Microsoft 威胁防护](microsoft-threat-protection.md) 集成了各种 Microsoft 安全服务，以提供针对复杂攻击的集中式检测、预防和调查功能。 本文介绍了受支持的服务、其许可要求、与部署一个或多个服务相关的优势和限制，以及如何单独完全部署它们的链接。
 
 ## <a name="supported-services"></a>支持的服务
 Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证组合提供对以下受支持服务的访问权限，并允许您在 Microsoft 365 安全中心中使用 Microsoft 威胁防护。 [请参阅许可要求](prerequisites.md#licensing-requirements)
@@ -51,7 +54,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 ### <a name="benefits-of-full-deployment"></a>完整部署的好处
 若要获得 Microsoft 威胁防护的全部优点，建议部署所有受支持的服务。 以下是完整部署的一些主要优点：
 - 根据来自所有可用传感器和特定于服务的分析功能的警报和事件信号确定和关联事件
-- 自动化调查和修正（空气）行动手册适用于各种实体类型，包括设备、邮箱和用户帐户
+- 自动调查和修正 (空气) 行动手册适用于各种实体类型，包括设备、邮箱和用户帐户
 - 可以查询更全面的高级搜寻架构，以获取来自设备、邮箱和其他实体的事件和实体数据
 
 ### <a name="limited-deployment-scenarios"></a>有限的部署方案
@@ -59,12 +62,12 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 下表列出了每个受支持的服务如何提供其他数据、通过关联数据获取更多洞察力的机会以及更好的补救措施和响应功能。
 
-| 服务 | 数据（信号 & 相关信息） | 修正 & 响应作用域 |
+| 服务 | 数据 (信号 & 相关信息)  | 修正 & 响应作用域 |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 终结点 |
 | Office 365 ATP | -邮件和邮箱状态以及原始事件<br />-电子邮件、附件和链接检测 | -邮箱<br />-Microsoft 365 帐户 |
-| Azure ATP | -Active Directory 信号，包括身份验证事件<br />-与标识相关的行为检测 | 标识 |
-| Microsoft Cloud App Security | -Unsanctioned 云应用和服务的检测（隐藏它）<br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
+| Azure ATP | -Active Directory 信号，包括身份验证事件<br />-与标识相关的行为检测 | 身份 |
+| Microsoft Cloud App Security | -Unsanctioned 云应用和服务的检测 (隐藏它) <br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
 
 ## <a name="deploy-the-services"></a>部署服务
 部署每个服务通常需要预配到租户和一些初始配置。 请参阅下表了解每个服务的部署方式。
@@ -76,7 +79,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 | Azure ATP | [快速入门：创建 Azure ATP 实例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *请参阅预配说明* |
 | Microsoft Cloud App Security | *无* | [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
-部署受支持的服务后，[打开 Microsoft 威胁防护](mtp-enable.md)。
+部署受支持的服务后， [打开 Microsoft 威胁防护](mtp-enable.md)。
 
 ## <a name="related-topics"></a>相关主题
 

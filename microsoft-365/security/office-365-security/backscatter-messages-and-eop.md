@@ -17,21 +17,24 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: '本文将介绍如何使用 Windows SharePoint Microsoft Exchange Online Protection (信息) '
-ms.openlocfilehash: f1705fd7fc30c9a8cde5f6acfaf145861de3af08
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: '在本文中，您将了解退信和 Microsoft Exchange Online Protection (EOP) '
+ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827781"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203583"
 ---
 # <a name="backscatter-in-eop"></a>EOP 中的退信式垃圾邮件
 
-*退信式垃圾邮件* 是未送达 (也称为 NDR，或是) 您收到未发送的邮件的退回邮件。 垃圾邮件制程序 (伪) 发件人： 地址的发件人：地址，并且通常使用真实的电子邮件地址来将邮件置信。 因此，如果垃圾邮件发送者不可从性上发送邮件 (垃圾邮件是一个高容量操作) ，则目标电子邮件服务器实际上会被阻止，在 NDR 中将未送达的邮件返回到"发件人： 地址"中的"到外部： 到外部： "发件人：
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-在具有 Exchange Online 邮箱的 Microsoft 365 组织中或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，EOP 可借助 EOP 根据双重来源识别并自动删除邮件，而不会生成 NDR。 但是，根据通过服务传输的单单一批量电子邮件，EOP 始终会无意中发送退信式垃圾邮件。
 
-Backscatterer.org保留一个阻止列表 (也称为负责发送退信的) 电子邮件服务器的 DNS 阻止列表或 DNSBL 名称，EOP 服务器可能出现在此列表中。 但是，我们不会尝试将我们自己从 Backscatterer.org 阻止列表中删除，因为它不是垃圾邮件制造者列表， (他们自身) 。
+*退信* 是未送达报告 (也称为 "ndr" 或 "退回邮件") 您收到的邮件未发送。 垃圾邮件制造者伪造 (欺骗) 的发件人地址，它们通常使用真实的电子邮件地址对其邮件的可信度。 因此，垃圾邮件制造者不可避免地向不存在的收件人发送邮件时 (垃圾邮件是高容量操作) ，目标电子邮件服务器实质上欺骗将 NDR 中的未送达邮件返回到 "发件人：" 地址中的伪造发件人。
+
+在使用 Exchange Online 或独立 Exchange online Protection 中的邮箱的 Microsoft 365 组织中 (EOP) 不含 Exchange Online 邮箱的组织中，EOP 将尽力标识和无提示地从可疑源中删除邮件，而不生成 NDR。 但是，根据大量通过服务传输的电子邮件，总是 EOP 会无意间发送退信的可能性。
+
+Backscatterer.org 维护一个阻止列表 (也称为 "DNS 阻止列表" 或负责发送退信的电子邮件服务器的 DNSBL) ，并且 EOP 服务器可能显示在此列表中。 但是，我们不会尝试从 Backscatterer.org 阻止列表中删除自己，因为它不是由其自己的许可)  (的垃圾邮件制造者列表。
 
 > [!TIP]
-> 这Backscatter.org网站 () 建议使用其服务来检查安全模式下的传入电子邮件，而不是使用"拒绝 <http://www.backscatterer.org/?target=usage> "模式 (大的电子邮件服务几乎总是会发送一些退信) 。
+> Backscatter.org 网站 (<http://www.backscatterer.org/?target=usage>) 建议使用其服务以安全模式而不是拒绝模式检查传入电子邮件 (大型电子邮件服务几乎总是发送一些退信) 。

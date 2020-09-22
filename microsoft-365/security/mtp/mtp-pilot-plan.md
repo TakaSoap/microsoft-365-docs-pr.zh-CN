@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 601e81fc5265fe2ec5f41009b6c4fa43c0c8233d
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962605"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195647"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>规划你的试点 Microsoft 威胁防护项目 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -73,7 +76,7 @@ ms.locfileid: "47962605"
 
 将计划的所有元素组合在一起的一种方法就是创建记分卡。 请参阅下面的示例记分卡：
 
-|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**得分**|**备注**|
+|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**得分**|**Notes**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |事件管理|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft 云应用安全 (可选) |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) |[模拟攻击](mtp-pilot-simulate.md) <br></br>[调查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |调查人员可以了解事件的范围和影响并管理事件||||
 |AutoIR|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) <br>启用 AutoIR  |[模拟攻击](mtp-pilot-simulate.md) <br></br>[自动调查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威胁防护会自动修正警报和事件||||

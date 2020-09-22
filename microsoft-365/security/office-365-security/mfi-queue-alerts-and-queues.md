@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 管理员可以了解如何在安全 & 合规性中心中使用邮件流仪表板中的 "队列" 小部件，以通过出站连接器监视到其内部部署或合作伙伴组织的未成功邮件流。
-ms.openlocfilehash: bcd78a50f017aae65e82185bf167ea7a227656fa
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3291a21828215d0a2a99c2226147bb1b748b8469
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357384"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199285"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>队列在安全 & 合规中心中的洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 当无法使用连接器从组织向内部部署或合作伙伴电子邮件服务器发送邮件时，邮件将在 Microsoft 365 中排队。 导致出现此情况的常见示例为：
 

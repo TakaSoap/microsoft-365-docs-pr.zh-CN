@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中邮件流仪表板中的邮件流映射，直观地显示和跟踪邮件在其组织中的流动和发件人，而无需使用连接器。
-ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358586"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199367"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全 & 合规中心中的邮件流映射
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [安全 & 合规性中心](https://protection.office.com)的邮件[流仪表板](mail-flow-insights-v2.md)中的**邮件流映射**可提供邮件在组织中流动的见解。 您可以使用此信息来了解模式、确定异常并在出现问题时解决问题。
 

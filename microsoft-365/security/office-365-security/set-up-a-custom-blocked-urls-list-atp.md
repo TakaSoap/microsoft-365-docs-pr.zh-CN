@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 高级威胁防护为您的组织设置阻止的 Url 的列表。
-ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e153d5631c12d52564643477216b777cdbc49433
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948086"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200999"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全链接设置自定义已阻止 Url 列表
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -47,7 +50,7 @@ ms.locfileid: "47948086"
 
 ****
 
-|Role|分配的位置/方式|
+|角色|分配的位置/方式|
 |---|---|
 |全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。  (参阅 [关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ，了解详细信息。 ) |
 |安全管理员|Azure Active Directory 管理员中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) |

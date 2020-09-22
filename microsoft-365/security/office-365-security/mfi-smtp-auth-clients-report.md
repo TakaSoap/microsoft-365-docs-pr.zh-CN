@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的邮件流仪表板中的 SMTP 身份验证了解和报告来监视组织中的电子邮件发件人，这些发件人使用经过身份验证的 SMTP (SMTP AUTH) 发送电子邮件。
-ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357430"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199237"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP 身份验证客户端在安全 & 合规中心中了解和报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Smtp 身份验证客户端**在[邮件流仪表板](mail-flow-insights-v2.md)和关联的[SMTP auth 客户端](#smtp-auth-clients-report)之间的洞察力在[安全 & 合规性中心](https://protection.office.com)中突出显示了组织中的用户或系统帐户对 SMTP 身份验证客户端提交协议的使用。 此旧版协议 (使用终结点 smtp.office365.com) 仅提供基本身份验证，并且容易被受攻击帐户用来发送电子邮件。 通过真知灼见和报告，可以检查 SMTP 身份验证电子邮件提交是否有异常活动。 它还显示了使用 SMTP 身份验证的客户端或设备的 TLS 使用数据。
 

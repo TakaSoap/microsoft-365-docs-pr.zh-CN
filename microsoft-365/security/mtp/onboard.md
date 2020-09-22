@@ -16,17 +16,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 2435a934065a06c8105f8ac4e0f80dcfbaed8f7f
-ms.sourcegitcommit: b57d597edbff5ab6cff8c2b04d27c15b0024776f
+ms.openlocfilehash: 0bc7ada54c0ce67ccbe1fded5970853672e08c1b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997596"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201024"
 ---
 # <a name="configure-and-manage-microsoft-defender-atp-capabilities"></a>配置和管理 Microsoft Defender ATP 功能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 **适用于：**
 
-- [Microsoft Defender 高级威胁防护（Microsoft Defender ATP）](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- [Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
 配置和管理所有 Microsoft Defender ATP 功能，以获取组织的最佳安全保护。 
 

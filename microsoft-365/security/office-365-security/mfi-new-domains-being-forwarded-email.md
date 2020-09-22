@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解如何在新式 Exchange 管理中心中使用新域转发电子邮件，以调查其组织中的用户是否将邮件转发到从未转发到的外部域。
-ms.openlocfilehash: 0f0622fc686cb9c90790630e16c187bf9f69d918
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 62e254e324322aec55d692cfe3128e8e4dd60e4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358254"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200731"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全 & 合规中心中转发的新域的电子邮件洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 虽然您可能有有效的业务原因来将电子邮件转发到特定域中的外部收件人，但当组织中的用户突然开始向外部域转发邮件，并且在 (新域) 之前，组织中没有任何人向这些域转发邮件时，也是可疑的。 这种情况可能表示用户帐户受到威胁。 如果您怀疑帐户已损坏，请参阅 [响应已泄露的电子邮件帐户](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)。
 

@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 4d4aa8afc7a17d2f9f0ae2d48404d7a3da553d47
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 5dc752591faf1a89e63632bce290e03b2c00f777
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962259"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198651"
 ---
 # <a name="the-action-center"></a>操作中心
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护

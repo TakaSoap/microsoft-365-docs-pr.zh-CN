@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助金融服务迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 f1.keywords: NOCSH
-ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 19f8acc4a0d94c9fb4952a31a8e119a99a553bf0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597517"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197545"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -164,7 +164,7 @@ Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的
 * **Microsoft 信息保护 (MIP)**，用于基于用户的分类和对敏感数据进行自动化分类。
 * **Office 365 数据丢失防护 (DLP)**，用于通过敏感数据类型（即正则表达式）和关键字及策略实施来自动识别敏感数据。
 
-**[Microsoft 信息保护 (MIP)](https://docs.microsoft.com/information-protection/)** 使组织可以使用敏感度标签智能地对文档和电子邮件进行分类。 敏感度标签可由用户手动应用到 Microsoft Office 应用程序中的文档和 Outlook 中的电子邮件。 标签可自动应用文档标记、加密保护和权限管理实施。 还可以通过配置使用关键字和敏感数据类型（例如信用卡号、社会保险号码和标识号码）的策略来自动应用灵敏度标签，以便自动查找敏感数据并对其进行分类。
+**[Microsoft 信息保护 (MIP)](../compliance/protect-information.md)** 使组织可以使用敏感度标签智能地对文档和电子邮件进行分类。 敏感度标签可由用户手动应用到 Microsoft Office 应用程序中的文档和 Outlook 中的电子邮件。 标签可自动应用文档标记、加密保护和权限管理实施。 还可以通过配置使用关键字和敏感数据类型（例如信用卡号、社会保险号码和标识号码）的策略来自动应用灵敏度标签，以便自动查找敏感数据并对其进行分类。
 
 此外，Microsoft 还提供了“可训练的分类器”，它们使用机器学习模型根据内容识别敏感数据，而不是简单地通过模式匹配或内容中的元素进行识别。 分类器通过查看大量要分类的内容的示例，了解如何标识内容类型。 要训练分类器，首先为其提供特定类别中内容示例。 从这些示例中学习后，通过提供匹配和不匹配示例组合对该模型进行测试。 分类器预测给定示例是否属于该类别。 然后，用户可通过确认结果，对正、负、假正和假负进行分类，来帮助提高分类器预测的准确性。 发布训练后的分类器时，它将处理 Microsoft SharePoint Online、Exchange Online 和 OneDrive for Business 中的内容，并自动对内容进行分类。
 

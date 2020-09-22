@@ -13,14 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 (连接器（也称为 "邮件流智能) "）相关联的邮件传递相关的错误代码。
-ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307913"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198499"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的邮件流智能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 中的邮箱或独立 Exchange Online Protection 的 Microsoft 365 组织中 (EOP) 不含 Exchange Online 邮箱的组织中，通常使用连接器将电子邮件从 EOP 路由到本地电子邮件环境。 您还可以使用连接器将来自 Microsoft 365 的邮件路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们将在 Microsoft 365 中排队。 Microsoft 365 将继续为每封邮件重新尝试传递24小时。 24小时后，排队的邮件将会过期，并且邮件将在未送达报告中返回到原始发件人 (也称为 "NDR" 或 "退回邮件") 。
 

@@ -11,14 +11,17 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 管理员可以了解如何使用安全 & 合规中心中的新用户转发电子邮件，以调查组织中的用户何时将邮件转发到新域。
-ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 42f8c536f8a8a1421d97726c7af432c01d053b05
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357362"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200651"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新用户在安全 & 合规中心转发电子邮件洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 当组织中的新用户帐户突然开始将电子邮件转发到外部域时，这是可疑的。
 
@@ -75,7 +78,7 @@ ms.locfileid: "47357362"
   - **名称**：发件人的电子邮件地址。
   - **转发类型**
   - **收件人地址**
-  - **详细信息**
+  - **Details**
   - **Count**
   - **第一次转发日期**
 
@@ -84,7 +87,7 @@ ms.locfileid: "47357362"
   - **名称**：发件人的电子邮件域。
   - **转发类型**
   - **收件人地址**
-  - **详细信息**
+  - **Details**
   - **Count**
   - **第一次转发日期**
 
@@ -95,7 +98,7 @@ ms.locfileid: "47357362"
 - **名称**：这是发件人的电子邮件地址 (来自 **显示以下项的数据：新的转发用户** 查看) 或发件人的电子邮件域 (来自 **显示以下项的数据：新的转发域** 视图) 。
 - **转发类型**
 - **收件人**
-- **详细信息**
+- **Details**
 - **Count**
 - **开始日期**
 - **建议**：在此，可以单击 "Microsoft 365 管理中心" 中的 "管理用户" 的链接。

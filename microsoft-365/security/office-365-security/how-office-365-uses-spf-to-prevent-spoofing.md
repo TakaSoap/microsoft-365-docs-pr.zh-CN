@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 如何在 DNS 中使用发件人策略框架 (SPF) TXT 记录，以确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c437793a63f3869573b023cbcd9420e4d3c3b554
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307645"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196103"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用发件人策略框架 (SPF) 来防止欺骗
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 本文介绍了 Microsoft 365 如何使用 DNS 中的发件人策略框架 (SPF) TXT 记录来确保目标电子邮件系统信任从自定义域发送的邮件。 这适用于从 Microsoft 365 发送的出站邮件。 从 Microsoft 365 发送到 Microsoft 365 中的收件人的邮件将始终通过 SPF。
 

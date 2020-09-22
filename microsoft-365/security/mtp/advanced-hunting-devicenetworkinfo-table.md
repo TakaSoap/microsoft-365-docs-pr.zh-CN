@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 141d2589c5e3c5d8746ba58de01dd63ef0f0c576
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b874ef77dcf6efacd7adeff18553c0c8e6752bda
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649363"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197069"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -43,8 +46,8 @@ ms.locfileid: "46649363"
 | `ReportId` | long | 基于重复计数器的事件标识符。 若要标识唯一事件，此列必须与 DeviceName 和时间戳列结合使用 |
 | `NetworkAdapterName` | string | 网络适配器的名称 |
 | `MacAddress` | string | 网络适配器的 MAC 地址 |
-| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅[this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 网络适配器的操作状态。 有关可能的值，请参阅[this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | 网络适配器类型。 有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
+| `NetworkAdapterStatus` | string | 网络适配器的操作状态。 有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
 | `TunnelType` | string | 隧道协议，如果该接口用于实现此目的，例如6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH |
 | `ConnectedNetworks` | string | 适配器连接到的网络。 每个 JSON 数组包含网络名称、类别 (public、private 或 domain) 、说明以及指示是否已将其公开连接到 internet 的标志 |
 | `DnsAddresses` | string | JSON 数组格式的 DNS 服务器地址 |
@@ -57,6 +60,6 @@ ms.locfileid: "46649363"
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)

@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的出站和入站邮件流洞察力。
-ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 33bfe3882c274fa655d17c80aba007e8d246b250
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199297"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全 & 合规中心中的出站和入站邮件流洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Security & 合规中心](https://protection.office.com)的[邮件流仪表板](mail-flow-insights-v2.md)中的**出站和入站邮件流**洞察力将[连接器报告](view-mail-flow-reports.md#connector-report)中的信息和以前的**TLS 概述报告**合并到一个位置。
 

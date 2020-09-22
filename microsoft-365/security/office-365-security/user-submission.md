@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: e482399adb6304840b8286a226800e6b9dcb6813
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 6ae534278f4471f98f2d3bdd2318c687cea9f1d3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394719"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195803"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>为 Exchange Online 中的垃圾邮件和网络钓鱼邮件的用户提交指定邮箱
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 邮箱的 Microsoft 365 组织中，您可以指定接收用户报告为恶意或非恶意邮件的邮箱。 当用户使用各种报告选项提交邮件时，您可以使用此邮箱来拦截邮件， (仅将邮件发送给自定义邮箱) 或接收 (发送到自定义邮箱和 Microsoft) 的邮件的副本。 此功能适用于以下邮件报告选项：
 

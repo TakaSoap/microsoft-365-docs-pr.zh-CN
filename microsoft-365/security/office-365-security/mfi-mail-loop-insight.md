@@ -13,14 +13,17 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规中心中的 "邮件流" 仪表板中的 "修复可能的邮件循环真知灼见" 来识别和修复其组织中的邮件循环。
-ms.openlocfilehash: 063906195488aa7d65093c538d9045002448e181
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358266"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198441"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修复安全 & 合规中心中可能的邮件循环见解
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 邮件循环已损坏，因为它会浪费系统资源、使用组织的邮件卷配额，并发送令人费解的未送达报告 (也称为 Ndr 或退回邮件) 发送给原始发件人。
 

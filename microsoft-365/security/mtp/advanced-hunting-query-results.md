@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649375"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197699"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-虽然您可以构建[高级搜寻](advanced-hunting-overview.md)查询以返回精确的信息，但您也可以使用查询结果来进一步了解并调查特定活动和指标。 您可以对查询结果执行以下操作：
+虽然您可以构建 [高级搜寻](advanced-hunting-overview.md) 查询以返回精确的信息，但您也可以使用查询结果来进一步了解并调查特定活动和指标。 您可以对查询结果执行以下操作：
 
 - 以表或图表的形式查看结果
 - 导出表和图表
@@ -113,17 +116,17 @@ AppFileEvents
 
 
 ## <a name="export-tables-and-charts"></a>导出表和图表
-运行查询后，选择 "**导出**" 将结果保存到本地文件。 您选择的视图将确定导出结果的方式：
+运行查询后，选择 " **导出** " 将结果保存到本地文件。 您选择的视图将确定导出结果的方式：
 
-- **表视图**-以表格形式将查询结果导出为 Microsoft Excel 工作簿
-- **任何图表**—查询结果将导出为呈现的图表的 JPEG 图像
+- **表视图** -以表格形式将查询结果导出为 Microsoft Excel 工作簿
+- **任何图表** —查询结果将导出为呈现的图表的 JPEG 图像
 
 ## <a name="drill-down-from-query-results"></a>从查询结果中向下钻取
-若要快速检查查询结果中的记录，请选择相应的行以打开 "**检查记录**" 面板。 该面板提供了基于所选记录的以下信息：
+若要快速检查查询结果中的记录，请选择相应的行以打开 " **检查记录** " 面板。 该面板提供了基于所选记录的以下信息：
 
-- **资产**—主要资产的汇总视图 (邮箱、设备和用户在记录中发现) ，并提供可用信息（如风险和暴露程度）
-- **进程树**—为包含进程信息的记录生成，并使用可用的上下文信息进行丰富处理;通常情况下，返回更多列的查询可能会导致更丰富的过程树。
-- **所有详细信息**—记录中各列的所有值  
+- **资产** —主要资产的汇总视图 (邮箱、设备和用户在记录中发现) ，并提供可用信息（如风险和暴露程度）
+- **进程树** —为包含进程信息的记录生成，并使用可用的上下文信息进行丰富处理;通常情况下，返回更多列的查询可能会导致更丰富的过程树。
+- **所有详细信息** —记录中各列的所有值  
 
 ![包含用于检查记录的面板的选定记录的图像](../../media/mtp-ah/inspect-record.png)
 
@@ -141,7 +144,7 @@ AppFileEvents
 ## <a name="filter-the-query-results"></a>筛选查询结果
 右侧显示的筛选器提供结果集的摘要。 每列都有其自己的部分，其中列出了该列找到的非重复值和实例数。
 
-通过选择 `+` `-` 要包含或排除的值上的或按钮，然后选择 "**运行查询**" 来优化查询。
+通过选择 `+` `-` 要包含或排除的值上的或按钮，然后选择 " **运行查询**" 来优化查询。
 
 ![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
 
@@ -151,7 +154,7 @@ AppFileEvents
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)
 - [使用共享查询](advanced-hunting-shared-queries.md)
-- [跨设备、电子邮件、应用和标识的智能寻线](advanced-hunting-query-emails-devices.md)
+- [跨设备、电子邮件、应用和标识进行查寻](advanced-hunting-query-emails-devices.md)
 - [了解架构](advanced-hunting-schema-tables.md)
 - [应用查询最佳做法](advanced-hunting-best-practices.md)
 - [自定义检测概述](custom-detections-overview.md)

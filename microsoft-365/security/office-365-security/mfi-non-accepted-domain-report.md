@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在安全 & 合规性中心中的邮件流仪表板中使用未接受的域报告来监视来自内部部署组织的邮件，其中发件人的域不是在 Microsoft 365 中配置的。
-ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358574"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199321"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全 & 合规中心中的非接受域报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Security & 合规性中心](https://protection.office.com)的[邮件流仪表板](mail-flow-insights-v2.md)中的**非接受域**报告显示有关内部部署电子邮件组织中的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中的接受域。
 
