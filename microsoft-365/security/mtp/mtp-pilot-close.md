@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f2ba1b63b3c1a986b3e811b3495bb4de85f93223
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: d6e9dbc214cdbb7aaf6bf8922ca4eaf986f8a91c
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956304"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173280"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>关闭并汇总你的 Microsoft 威胁防护试点  
 
 **适用于：**
 - Microsoft 威胁防护
 
-您只是模拟了在域控制器上远程执行代码的仅有的高级内存攻击。 你已了解 Microsoft Defender ATP 和 Azure ATP 如何在 stealthy 恶意活动中检测和警报。 您还了解了不同源中的警报如何与其他上下文信息一起传递到 Microsoft 威胁防护门户中的单个事件中，从而使 SOC 分析师能够调查并采取必要的措施。 你还创建了一个高级的搜寻查询，该查询将标识入站电子邮件，用户在该查询中打开或保存了附件并根据该查询创建了检测。
+您只是模拟了在域控制器上远程执行代码的仅有的高级内存攻击。 你已了解 Microsoft Defender ATP 和 Azure ATP 如何在 stealthy 恶意活动中检测和警报。 您还了解如何将不同源中的警报与其他上下文信息一起传递到 Microsoft 365 安全中心门户中的单个事件中，从而使 SOC 分析师能够调查并采取必要的措施。 你还创建了一个高级的搜寻查询，该查询将标识入站电子邮件，用户在该查询中打开或保存了附件并根据该查询创建了检测。
 
 在所有测试结束后，你已到达进程的末尾。
 
