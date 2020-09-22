@@ -18,16 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
+ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104496"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177120"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
 合规性中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
+
+敏感信息类型需要以下订阅之一：
+- Microsoft 365 E3
+- Microsoft 365 E5
+
+敏感信息类型可在中使用：
+- 数据丢失防护策略
+- 通信合规性 polcies
+- 信息治理
+- 记录管理
+- Microsoft 云应用安全
+
   
 ## <a name="aba-routing-number"></a>ABA 传送号码
 
