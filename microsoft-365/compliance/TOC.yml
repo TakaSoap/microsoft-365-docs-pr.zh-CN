@@ -107,12 +107,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: 可训练的分类器
       items:
-        - name: 可训练分类器（预览版）入门
-          href: classifier-getting-started-with.md
-        - name: 使用内置分类器（预览版）
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: 创建和训练分类器（预览版）
-          href: classifier-creating-a-trainable-classifier.md
+        - name: 了解可训练的分类器（预览版）
+          href: classifier-learn-about.md
+        - name: 可训练的分类器入门（预览版）
+          href: classifier-get-started-with.md
+        - name: 如何重新培训沟通合规性中的分类器（预览版）
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: 如何重新培训内容资源管理器中的分类器（预览版）
+          href: classifier-how-to-retrain-content-explorer.md
     - name: 数据分类
       items:
         - name: 了解数据分类
