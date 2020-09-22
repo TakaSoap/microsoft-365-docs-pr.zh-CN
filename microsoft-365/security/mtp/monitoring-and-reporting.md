@@ -15,31 +15,34 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: eb765cf353569e9907352fb3146a12ffe7b34df4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866715"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199955"
 ---
-# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a><span data-ttu-id="5b3bd-104">在 Microsoft 365 安全中心中监视和查看报告</span><span class="sxs-lookup"><span data-stu-id="5b3bd-104">Monitor and view reports in the Microsoft 365 security center</span></span>
+# <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a><span data-ttu-id="b5a67-104">在 Microsoft 365 安全中心中监视和查看报告</span><span class="sxs-lookup"><span data-stu-id="b5a67-104">Monitor and view reports in the Microsoft 365 security center</span></span>
 
-<span data-ttu-id="5b3bd-105">Microsoft 365 安全中心在 Microsoft 365 环境中提供了保护和安全状态的摘要。</span><span class="sxs-lookup"><span data-stu-id="5b3bd-105">The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="5b3bd-106">安全中心包含一个 **报告** 部分，其中提供了一系列涵盖各种区域的卡的主机。</span><span class="sxs-lookup"><span data-stu-id="5b3bd-106">The security center includes a **Reports** section which features a host of cards covering a variety of areas.</span></span> <span data-ttu-id="5b3bd-107">安全分析员和管理员可以在日常操作中跟踪卡片。</span><span class="sxs-lookup"><span data-stu-id="5b3bd-107">Security analysts and administrators can track the cards as part of their day-to-day operations.</span></span> <span data-ttu-id="5b3bd-108">在向下钻取时，卡片提供了详细报告，在某些情况下，还提供了管理选项。</span><span class="sxs-lookup"><span data-stu-id="5b3bd-108">On drill-down, cards provide detailed reports and, in some cases, management options.</span></span>
 
-## <a name="customize-views"></a><span data-ttu-id="5b3bd-109">自定义视图</span><span class="sxs-lookup"><span data-stu-id="5b3bd-109">Customize views</span></span>
+<span data-ttu-id="b5a67-105">Microsoft 365 安全中心在 Microsoft 365 环境中提供了保护和安全状态的摘要。</span><span class="sxs-lookup"><span data-stu-id="b5a67-105">The Microsoft 365 security center provides a summary of protection and security statuses across your Microsoft 365 environment.</span></span>
 
-<span data-ttu-id="5b3bd-110">默认情况下，卡片分为以下几类：</span><span class="sxs-lookup"><span data-stu-id="5b3bd-110">By default, cards are grouped into these categories:</span></span>
+<span data-ttu-id="b5a67-106">安全中心包含一个 **报告** 部分，其中提供了一系列涵盖各种区域的卡的主机。</span><span class="sxs-lookup"><span data-stu-id="b5a67-106">The security center includes a **Reports** section which features a host of cards covering a variety of areas.</span></span> <span data-ttu-id="b5a67-107">安全分析员和管理员可以在日常操作中跟踪卡片。</span><span class="sxs-lookup"><span data-stu-id="b5a67-107">Security analysts and administrators can track the cards as part of their day-to-day operations.</span></span> <span data-ttu-id="b5a67-108">在向下钻取时，卡片提供了详细报告，在某些情况下，还提供了管理选项。</span><span class="sxs-lookup"><span data-stu-id="b5a67-108">On drill-down, cards provide detailed reports and, in some cases, management options.</span></span>
+
+## <a name="customize-views"></a><span data-ttu-id="b5a67-109">自定义视图</span><span class="sxs-lookup"><span data-stu-id="b5a67-109">Customize views</span></span>
+
+<span data-ttu-id="b5a67-110">默认情况下，卡片分为以下几类：</span><span class="sxs-lookup"><span data-stu-id="b5a67-110">By default, cards are grouped into these categories:</span></span>
   
-* <span data-ttu-id="5b3bd-111">[标识](monitor-and-report-identities.md) -用户帐户和凭据</span><span class="sxs-lookup"><span data-stu-id="5b3bd-111">[Identities](monitor-and-report-identities.md) - user accounts and credentials</span></span>
-* <span data-ttu-id="5b3bd-112">[Data](monitor-data.md) -电子邮件和文档内容</span><span class="sxs-lookup"><span data-stu-id="5b3bd-112">[Data](monitor-data.md) - email and document contents</span></span>
-* <span data-ttu-id="5b3bd-113">[设备](monitor-devices.md) -计算机、移动电话和其他设备</span><span class="sxs-lookup"><span data-stu-id="5b3bd-113">[Devices](monitor-devices.md) - computers, mobile phones, and other devices</span></span>
-* <span data-ttu-id="5b3bd-114">[应用](monitor-apps.md) 程序-程序和附加的联机服务</span><span class="sxs-lookup"><span data-stu-id="5b3bd-114">[Apps](monitor-apps.md) - programs and attached online services</span></span>
+* <span data-ttu-id="b5a67-111">[标识](monitor-and-report-identities.md) -用户帐户和凭据</span><span class="sxs-lookup"><span data-stu-id="b5a67-111">[Identities](monitor-and-report-identities.md) - user accounts and credentials</span></span>
+* <span data-ttu-id="b5a67-112">[Data](monitor-data.md) -电子邮件和文档内容</span><span class="sxs-lookup"><span data-stu-id="b5a67-112">[Data](monitor-data.md) - email and document contents</span></span>
+* <span data-ttu-id="b5a67-113">[设备](monitor-devices.md) -计算机、移动电话和其他设备</span><span class="sxs-lookup"><span data-stu-id="b5a67-113">[Devices](monitor-devices.md) - computers, mobile phones, and other devices</span></span>
+* <span data-ttu-id="b5a67-114">[应用](monitor-apps.md) 程序-程序和附加的联机服务</span><span class="sxs-lookup"><span data-stu-id="b5a67-114">[Apps](monitor-apps.md) - programs and attached online services</span></span>
 
-<span data-ttu-id="5b3bd-115">切换到 " **按主题分组**"，重新排列卡片并将其分组到以下主题中：</span><span class="sxs-lookup"><span data-stu-id="5b3bd-115">Switch to **Group by topic**, to rearrange the cards and group them into the following topics:</span></span>
+<span data-ttu-id="b5a67-115">切换到 " **按主题分组**"，重新排列卡片并将其分组到以下主题中：</span><span class="sxs-lookup"><span data-stu-id="b5a67-115">Switch to **Group by topic**, to rearrange the cards and group them into the following topics:</span></span>
 
-* <span data-ttu-id="5b3bd-116">**风险** 卡片，突出显示可能存在风险的实体（如帐户和设备）。</span><span class="sxs-lookup"><span data-stu-id="5b3bd-116">**Risk** - cards that highlight entities, such as accounts and devices, that might be at risk.</span></span> <span data-ttu-id="5b3bd-117">这些卡片还突出显示了可能的风险来源，如新的威胁活动和特权云应用</span><span class="sxs-lookup"><span data-stu-id="5b3bd-117">These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps</span></span>  
-* <span data-ttu-id="5b3bd-118">**检测趋势** -突出显示新的威胁检测、异常和策略违规的卡片</span><span class="sxs-lookup"><span data-stu-id="5b3bd-118">**Detection trends** - cards that highlight new threat detections, anomalies, and policy violations</span></span>
-* <span data-ttu-id="5b3bd-119">**配置和运行状况** ，包括安全控制的配置和部署，包括将设备加入状态到管理服务</span><span class="sxs-lookup"><span data-stu-id="5b3bd-119">**Configuration and health** - cards that cover the configuration and deployment of security controls, including device onboarding states to management services</span></span>
-* <span data-ttu-id="5b3bd-120">**其他-其他** 所有不按其他主题分类的卡片</span><span class="sxs-lookup"><span data-stu-id="5b3bd-120">**Other** - all other cards not categorized under other topics</span></span>
+* <span data-ttu-id="b5a67-116">**风险** 卡片，突出显示可能存在风险的实体（如帐户和设备）。</span><span class="sxs-lookup"><span data-stu-id="b5a67-116">**Risk** - cards that highlight entities, such as accounts and devices, that might be at risk.</span></span> <span data-ttu-id="b5a67-117">这些卡片还突出显示了可能的风险来源，如新的威胁活动和特权云应用</span><span class="sxs-lookup"><span data-stu-id="b5a67-117">These cards also highlight possible sources of risk, such as new threat campaigns and privileged cloud apps</span></span>  
+* <span data-ttu-id="b5a67-118">**检测趋势** -突出显示新的威胁检测、异常和策略违规的卡片</span><span class="sxs-lookup"><span data-stu-id="b5a67-118">**Detection trends** - cards that highlight new threat detections, anomalies, and policy violations</span></span>
+* <span data-ttu-id="b5a67-119">**配置和运行状况** ，包括安全控制的配置和部署，包括将设备加入状态到管理服务</span><span class="sxs-lookup"><span data-stu-id="b5a67-119">**Configuration and health** - cards that cover the configuration and deployment of security controls, including device onboarding states to management services</span></span>
+* <span data-ttu-id="b5a67-120">**其他-其他** 所有不按其他主题分类的卡片</span><span class="sxs-lookup"><span data-stu-id="b5a67-120">**Other** - all other cards not categorized under other topics</span></span>
