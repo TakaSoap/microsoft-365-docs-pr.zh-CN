@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e19e5758f4d42799c96ecec51fd6295e3da19f9b
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: bcf5b79fcd2fdf0a5af5648e6f6b7ea65d69594c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844914"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201283"
 ---
 # <a name="troubleshoot-microsoft-threat-protection-service-issues"></a>解决 Microsoft 威胁防护服务问题
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -45,6 +48,6 @@ ms.locfileid: "44844914"
 有关详细信息，请参阅[Azure ATP 集成](https://docs.microsoft.com/cloud-app-security/aatp-integration)。
 
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>打开服务的设置页面在什么位置？
-若要打开 Microsoft 威胁防护，请访问 Microsoft 365 安全中心中的导航窗格中的**设置**。 仅当您具有[必备权限和许可证](mtp-enable.md#check-license-eligibility-and-required-permissions)时，才会看到此导航项。
+若要打开 Microsoft 威胁防护，请访问 Microsoft 365 安全中心中的导航窗格中的 **设置** 。 仅当您具有 [必备权限和许可证](mtp-enable.md#check-license-eligibility-and-required-permissions)时，才会看到此导航项。
  
 

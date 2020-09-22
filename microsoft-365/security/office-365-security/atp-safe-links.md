@@ -25,14 +25,17 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您将了解如何使用安全链接保护组织免受网络钓鱼和其他攻击的攻击。
-ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 486c19fa0ba47baadf7b3418608a644407e6e1d0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307633"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200429"
 ---
 # <a name="atp-safe-links"></a>ATP 安全链接
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Office 365 ATP 安全链接概述
 
@@ -47,7 +50,7 @@ Office 365 ATP Safe Links (部分 [office 365 高级威胁防护](office-365-atp
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何获取 ATP 安全链接保护
 
-**首先，请确保你的订阅包括 [Office 365 高级威胁防护](office-365-atp.md)** 计划1或计划2。 Office 365 ATP 包含在订阅中，如 [microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)、Office 365 企业版 E5、Office 365 教育版 A5 等。如果你的组织具有不包含 Office 365 ATP 的 Microsoft 365 订阅，则可能会将 ATP 作为加载项进行购买。 有关详细信息，请参阅以下资源： 
+**首先，请确保你的订阅包括 [Office 365 高级威胁防护](office-365-atp.md)** 计划1或计划2。 Office 365 ATP 包含在订阅中，如 [microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)、Office 365 企业版 E5、Office 365 教育版 A5 等。如果你的组织具有不包含 Office 365 ATP 的 Microsoft 365 订阅，则可能会将 ATP 作为加载项进行购买。 有关更多信息，请参阅以下资源： 
 
 - [Office 365 高级威胁防护计划和定价](https://products.office.com/exchange/advance-threat-protection)
 
@@ -67,7 +70,7 @@ Office 365 ATP Safe Links (部分 [office 365 高级威胁防护](office-365-atp
 
 ****
 
-|Role|分配的位置/方式|
+|角色|分配的位置/方式|
 |---|---|
 |全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。  (参阅 [关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ，了解详细信息。 ) |
 |安全管理员|Azure Active Directory 管理员中心 (<https://aad.portal.azure.com>) |
@@ -88,7 +91,7 @@ Office 365 ATP Safe Links (部分 [office 365 高级威胁防护](office-365-atp
 
 |示例应用场景|在这种情况下 ATP 安全链接保护是否适用？|
 |---|---|
-|Jean 是具有 ATP 安全链接策略的组的成员，其中包含电子邮件和 Office 文档中的 Url。 Jean 打开某人发送的 PowerPoint 演示文稿，然后单击演示文稿中的 URL。|正确。 定义的 ATP 安全链接策略适用于 Jean 的 group、Jean 的电子邮件以及 Jean 打开的 Word、Excel、PowerPoint 或 Visio 文档，只要 Jean 已登录并在 Windows、iOS 或 Android 设备上使用适用于企业的 Microsoft 365 应用程序。|
+|Jean 是具有 ATP 安全链接策略的组的成员，其中包含电子邮件和 Office 文档中的 Url。 Jean 打开某人发送的 PowerPoint 演示文稿，然后单击演示文稿中的 URL。|是。 定义的 ATP 安全链接策略适用于 Jean 的 group、Jean 的电子邮件以及 Jean 打开的 Word、Excel、PowerPoint 或 Visio 文档，只要 Jean 已登录并在 Windows、iOS 或 Android 设备上使用适用于企业的 Microsoft 365 应用程序。|
 |在 Chris 的组织中，没有任何全局或安全管理员尚未定义任何 ATP 安全链接策略。 Chris 收到一个电子邮件，其中包含指向恶意网站的 URL。 丽丽不知道 URL 是恶意的并单击链接。|否。 包含组织中每个人的 Url 的默认策略必须进行定义，以便保护生效。|
 |在 Pat 的组织中，没有任何全局或安全管理员尚未定义或编辑任何 ATP 安全链接策略。 Pat 打开 Word 文档并单击文件中的 URL。|否。 必须定义包含 Office 文档的策略，才能就地保护。 请参阅 [在 Office 365 中设置 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。|
 |先生/她的组织具有一个列入 "已阻止" 网站的 ATP 安全链接策略 `https://tailspintoys.com` 。 先生/她收到一封包含的 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage` 。 先生单击 URL。|这取决于整个网站及其所有子页是否包含在阻止的 Url 列表中。 请参阅 [使用 ATP 安全链接设置自定义阻止的 url 列表](set-up-a-custom-blocked-urls-list-atp.md)。|

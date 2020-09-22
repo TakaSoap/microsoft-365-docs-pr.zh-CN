@@ -1,9 +1,9 @@
 ---
-title: 'Microsoft 365 网络连接测试 (预览) '
+title: 'Microsoft 365 网络连接测试工具 (预览) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: 'Microsoft 365 网络连接测试 (预览) '
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: 'Microsoft 365 网络连接测试工具 (预览) '
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171346"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200813"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 网络连接测试 (预览) 
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 网络连接测试工具 (预览) 
 
 Microsoft 365 网络连接测试工具位于 <https://connectivity.office.com> 。 它是一种辅助工具，适用于 Microsoft 365 管理中心中的 "网络评估" 和 "网络洞察力" 信息，在 **运行状况 |连接** 菜单。
 
@@ -249,7 +249,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>运行高级测试客户端需要什么？
 
-高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，则会转到 [.Net Core 3.1 installer 页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时，而不是 SDK 或 ASP.NET Core Runtime 在页面上的位置。 必须具有对计算机的管理员权限才能安装 .NET Core。 
+高级测试客户端需要 .NET Core 3.1 桌面运行时。 如果在未安装的情况下运行高级测试客户端，则会转到 [.Net Core 3.1 installer 页面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 请务必安装桌面运行时，而不是 SDK 或 ASP.NET Core Runtime 在页面上的位置。 必须具有对计算机的管理员权限才能安装 .NET Core。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前门？
 
@@ -267,7 +267,7 @@ Internet 出局位置是网络流量退出企业网络并连接到 Internet 的�
 
 ## <a name="related-topics"></a>相关主题
 
-[Microsoft 365 管理中心中的网络性能建议 (preview) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 管理中心中的网络连接 (预览版) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 网络性能见解 (预览版) ](office-365-network-mac-perf-insights.md)
 

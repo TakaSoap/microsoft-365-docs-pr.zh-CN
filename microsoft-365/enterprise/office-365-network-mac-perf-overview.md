@@ -3,7 +3,7 @@ title: 'Microsoft 365 管理中心中的网络连接 (预览版) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171358"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200790"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
@@ -63,7 +63,7 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. 使用 Microsoft 365 网络连接测试工具手动收集测试报告
 
-对于此选项，您需要在每个位置标识一个人。 要求他们浏览到在其上具有管理权限的 Windows 计算机上的 [Microsoft 365 网络连接测试](https://connectivity.office.com) 。 在网站上，他们需要登录到他们的 Office 365 帐户，才能查看您想要查看结果的同一组织。 然后单击 "运行测试"。 在测试过程中有一个已下载的连接测试 EXE。 他们还需要打开和执行。 测试完成后，测试结果将上传到 Office 365。
+对于此选项，您需要在每个位置标识一个人。 要求他们在具有管理权限的 Windows 计算机上浏览到 [Microsoft 365 网络连接测试](https://connectivity.office.com) 。 在网站上，他们需要登录到他们的 Office 365 帐户，才能查看您想要查看结果的同一组织。 然后，他们应单击 " **运行测试**"。 在测试过程中有一个已下载的连接测试 EXE。 他们还需要打开和执行。 测试完成后，测试结果将上传到 Office 365。
 
 如果将测试报告添加到 LAN 子网信息中，则会将这些报告链接到该位置，否则这些报告将仅显示在城市位置。
 
@@ -174,7 +174,7 @@ Microsoft 365 服务的前端是 Microsoft 全球网络的一个入口点，Offi
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>什么是最佳 Microsoft 365 服务前门？
 
-最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用 [microsoft 365 连接测试](office-365-network-mac-perf-onboarding-tool.md) 确定正在使用的 microsoft 365 服务前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
+最佳 Microsoft 365 服务前盖是最接近你的网络出口（通常在你所在的城市或大都市区域中）的一门。 使用 [microsoft 365 连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md) 确定使用中的 microsoft 365 服务前盖和最佳服务前盖的位置。 如果该工具确定你的使用中的前向门是最佳的，则表示你正在以最佳方式连接到 Microsoft 的全球网络。
 
 ### <a name="what-is-an-internet-egress-location"></a>Internet 出口的位置是什么？
 
@@ -186,8 +186,6 @@ Internet 出局位置是网络流量退出企业网络并连接到 Internet 的�
 
 [Microsoft 365 网络评估 (预览版) ](office-365-network-mac-perf-score.md)
 
-[M365 管理中心中的 Microsoft 365 连接测试 (preview) ](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 网络连接位置服务 (预览) ](office-365-network-mac-location-services.md)
-
-[Microsoft 365 网络连接测试工具 (预览) ](office-365-network-mac-perf-onboarding-tool.md)

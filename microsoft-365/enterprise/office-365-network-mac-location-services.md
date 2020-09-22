@@ -3,7 +3,7 @@ title: 'Microsoft 365 网络连接位置服务 (预览) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接位置服务 (预览) '
-ms.openlocfilehash: e614e719069a74ea087b07ca624ae0450790c763
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688009"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200777"
 ---
 # <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 网络连接位置服务 (预览) 
 
@@ -38,3 +38,13 @@ Microsoft 365 管理中心现在显示 **网络见解和性能建议**，它们�
 通过 Bing 地图提供的任何内容（包括 geocodes）只能在提供该内容的产品内使用。 客户使用 Microsoft 365 管理中心位置服务功能（按 Bing 地图提供支持）受 _必应 Bing 地图最终用户使用条款_ 的制约， <https://go.microsoft.com/?linkid=9710837> _Microsoft 隐私声明_ 中提供了可供使用的 <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 此功能（通过 Bing 地图提供）也受 **此处技术**支持。 必应 Bing 地图如何利用此处技术提供的位置服务由中提供的 _以下技术服务条款_ 进行管理 <https://legal.here.com/en-gb/terms> 。
+
+## <a name="related-topics"></a>相关主题
+
+[Microsoft 365 管理中心中的网络连接 (预览版) ](office-365-network-mac-perf-overview.md)
+
+[Microsoft 365 网络性能见解 (预览版) ](office-365-network-mac-perf-insights.md)
+
+[Microsoft 365 网络评估 (预览版) ](office-365-network-mac-perf-score.md)
+
+[M365 管理中心中的 Microsoft 365 连接测试 (preview) ](office-365-network-mac-perf-onboarding-tool.md)

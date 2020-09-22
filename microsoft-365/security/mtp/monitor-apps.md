@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f370a537b9355a99b90f21faab5eda75d7f84cdf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: e5f41eef243bbd5f475dc719071833c4c21111d2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866845"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199717"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 这些报告可更深入地了解在您的组织中使用云应用程序的方式。 包括不同类型的应用程序、风险级别和警报。
 

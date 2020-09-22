@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 了解 EOP 和 Office 365 如何通过将安全提示添加到电子邮件顶部来保护您的垃圾邮件、网络钓鱼和恶意软件阻止。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949628"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201979"
 ---
 # <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) 和 Microsoft 365 保护你的垃圾邮件、网络钓鱼和恶意软件防护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 或任何电子邮件客户端中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
 

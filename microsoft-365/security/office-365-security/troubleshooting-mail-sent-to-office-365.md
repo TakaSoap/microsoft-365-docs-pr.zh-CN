@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307575"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201722"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本文提供了在尝试向 Microsoft 365 中的收件箱发送电子邮件时遇到问题的发件人故障排除信息，以及向客户批量发送电子邮件的最佳实践。
 

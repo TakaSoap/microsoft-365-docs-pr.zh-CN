@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47322006"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201861"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 如果您的组织具有 [office 365 高级威胁防护](office-365-atp.md) (OFFICE 365 ATP) ，并且您拥有 [必要的权限](#required-licenses-and-permissions)，则您可以使用 **资源管理器** 或 **实时检测** (以前的 *实时报告* — [请参阅最近更新](#new-features-in-threat-explorer-and-real-time-detections)！ ) 。 在安全 & 合规性中心中，转到 " **威胁管理**"，然后选择 " **浏览器**" _或_" **实时检测**"。
 

@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963849"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199741"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>在 Microsoft 威胁防护中配置自动调查和响应功能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 威胁防护包括功能强大的 [自动化调查和响应功能](mtp-autoir.md) ，可将安全操作团队节省大量时间和精力。 通过自我修复功能，这些功能模仿安全分析员调查和响应威胁的步骤，且速度更快，并且能够更好地进行扩展。 本文介绍如何在 Microsoft 威胁防护中配置自动调查和响应。
 

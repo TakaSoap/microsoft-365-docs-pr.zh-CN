@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104518"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199213"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [安全 & 合规性中心](https://protection.office.com)中提供了多种报告，可帮助您了解电子邮件安全功能（如 Microsoft 365 中的反垃圾邮件、反恶意软件和加密功能如何保护您的组织）。 如果您具有 [必要的权限](#what-permissions-are-needed-to-view-these-reports)，则可以转到 " **报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。 若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。
 
@@ -58,7 +61,7 @@ ms.locfileid: "48104518"
 
 - **创建时间**
 - **用户 ID**
-- **操作**
+- **Action**
 
 若要返回到报告视图，请单击 " **查看报告**"。
 
@@ -119,7 +122,7 @@ ms.locfileid: "48104518"
   - **加密模板**
   - **加密方法**
   - **收件人地址**
-  - **主题**
+  - **Subject**
 
 - **数据查看依据：前5个收件人域**：
 
@@ -163,7 +166,7 @@ ms.locfileid: "48104518"
 - **发件人地址**
 - **收件人地址**
 - **邮件 id**：在邮件头的 **邮件 id** 标头字段中可用，并且应是唯一的。  (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。
-- **主题**
+- **Subject**
 - **Filename**
 - **恶意软件名称**
 
@@ -221,8 +224,8 @@ ms.locfileid: "48104518"
 - **发件人地址**
 - **收件人地址**
 - **事件类型**
-- **操作**
-- **主题**
+- **Action**
+- **Subject**
 
 如果单击 "详细信息" 表中的 " **筛选器** "，则可以使用以下筛选器修改结果：
 
@@ -260,7 +263,7 @@ ms.locfileid: "48104518"
 - **欺骗发件人**
 - **真正发件人**
 - **发件人 IP**
-- **操作**
+- **Action**
 - **邮件计数**
 
 若要返回到报告视图，请单击 " **查看报告**"。
@@ -371,7 +374,7 @@ ms.locfileid: "48104518"
 - **数据查看依据：内容 \> 恶意软件**：
 
   - **Date**
-  - **位置**
+  - **Location**
   - **指导者**
   - **恶意软件名称**
 
@@ -380,7 +383,7 @@ ms.locfileid: "48104518"
 - 所有其他图表：
 
   - **Date**
-  - **主题**
+  - **Subject**
   - **发件人**
   - **Recipients**
   - **检测人**

@@ -14,16 +14,19 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: 了解如何通过 Office 365 高级威胁防护计划2中的自动调查和响应功能，来加快检测和解决受攻击的用户帐户的过程。
-ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: fa648b33180cab7d70348dc4d1d6e64930ecff99
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656905"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201227"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>使用自动调查和响应解决已损坏的用户帐户
 
-[Office 365 高级威胁防护计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)包括功能强大的[自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (空中) 功能。 此类功能可以将安全操作团队保存大量时间和处理威胁的工作。 Microsoft 继续改进安全功能。 最近，空中功能已得到增强，可在当前预览) 中 (的用户安全行动手册。 阅读本文，了解有关已损坏用户安全行动手册的详细信息。 [使用 Office 365 ATP 查看和响应用户泄露和限制泄露作用域](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的详细信息，并查看博客文章加快了工作时间和限制
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+[Office 365 高级威胁防护计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2) 包括功能强大的 [自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (空中) 功能。 此类功能可以将安全操作团队保存大量时间和处理威胁的工作。 Microsoft 继续改进安全功能。 最近，空中功能已得到增强，可在当前预览) 中 (的用户安全行动手册。 阅读本文，了解有关已损坏用户安全行动手册的详细信息。 [使用 Office 365 ATP 查看和响应用户泄露和限制泄露作用域](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)的详细信息，并查看博客文章加快了工作时间和限制
 
 ![对受损用户的自动调查](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -56,37 +59,37 @@ ms.locfileid: "46656905"
 - [查看有关自动调查的详细信息](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> 您必须具有适当的权限才能执行以下任务。 查看[使用空中功能所需的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)。
+> 您必须具有适当的权限才能执行以下任务。 查看 [使用空中功能所需的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air?view=o365-worldwide#required-permissions-to-use-air-capabilities)。
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和调查受限制的用户
 
-有几个选项可用于导航到受限制的用户列表。 例如，在安全 & 合规性中心中，可以转到 "**威胁管理**"  >  **查看**  >  **受限制的用户**。 下面的过程介绍了如何使用 "**通知**" 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
+有几个选项可用于导航到受限制的用户列表。 例如，在安全 & 合规性中心中，可以转到 "**威胁管理**"  >  **查看**  >  **受限制的用户**。 下面的过程介绍了如何使用 " **通知** " 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
 
 1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。
 
 2. 在导航窗格中，选择 "**通知**  >  **仪表板**"。
 
-3. 在 "**其他通知**" 小组件中，选择 "**受限用户**"。
+3. 在 " **其他通知** " 小组件中，选择 " **受限用户**"。
 
    ![其他通知小组件](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
    这将打开受限制的用户的列表。<br/>![Office 365 中的受限用户](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
-4. 选择列表中的用户帐户以查看详细信息并执行操作，例如，[释放受限制的用户](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)。
+4. 选择列表中的用户帐户以查看详细信息并执行操作，例如， [释放受限制的用户](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)。
 
 ### <a name="view-details-about-automated-investigations"></a>查看有关自动调查的详细信息
 
 自动调查开始后，您可以在安全 & 合规性中心中看到其详细信息和结果。 转到 "**威胁管理**  >  **调查**"，然后选择调查以查看其详细信息。
 
-若要了解详细信息，请参阅[查看调查的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)。
+若要了解详细信息，请参阅 [查看调查的详细信息](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)。
 
 ## <a name="keep-the-following-points-in-mind"></a>请记住以下几点
 
 - **停留在通知的最前面**。 正如您所知，发现泄露的时间越长，组织、客户和合作伙伴可能会带来广泛的影响和成本。 早期检测和及时响应是缓解威胁的关键，尤其是在用户的帐户受到威胁时。
 
-- **自动化可协助您的安全操作团队，但不能取代**。 自动化调查和响应功能可以在早期检测到已损坏的用户，但您的安全操作团队可能需要参与并执行一些调查和修正。 需要有关这方面的一些帮助吗？ 请参阅[审阅和批准操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions)。
+- **自动化可协助您的安全操作团队，但不能取代**。 自动化调查和响应功能可以在早期检测到已损坏的用户，但您的安全操作团队可能需要参与并执行一些调查和修正。 需要有关这方面的一些帮助吗？ 请参阅 [审阅和批准操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions)。
 
-- **不要依赖可疑登录通知作为唯一的指示器**。 当用户帐户受到威胁时，它可能会（也可能不触发）可疑登录警报。 有时，它是在帐户泄露后发生的一系列活动，触发警报。 想要了解有关通知的详细信息吗？ 请参阅[警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。
+- **不要依赖可疑登录通知作为唯一的指示器**。 当用户帐户受到威胁时，它可能会（也可能不触发）可疑登录警报。 有时，它是在帐户泄露后发生的一系列活动，触发警报。 想要了解有关通知的详细信息吗？ 请参阅 [警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。
 
 ## <a name="next-steps"></a>后续步骤
 

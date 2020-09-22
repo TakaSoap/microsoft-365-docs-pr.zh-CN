@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 1778e8485e859d01e4eec40c7a0d404636e27e8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199645"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用版实验室或试点环境配置 Microsoft 威胁防护支柱
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -98,17 +101,17 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 5. 选择 " **ATP 安全附件** "，然后选择 " **启用 SharePoint、OneDrive 和 MICROSOFT 团队的 atp** " 选项。  
 ![Image of_Office 365 Security & 合规中心页，可在其中为 SharePoint、OneDrive 和 Microsoft 团队打开 ATP](../../media/mtp-eval-36.png) <br>
 
-6. 单击 "+" 图标创建新的 "安全附件策略"，将其作为 "收件人域" 应用到域。 单击“保存”****。
+6. 单击 "+" 图标创建新的 "安全附件策略"，将其作为 "收件人域" 应用到域。 单击“**保存**”。
 ![Image of_Office 365 Security & 合规中心页，可在其中创建新的 "新建安全附件" 策略](../../media/mtp-eval-37.png) <br>
  
 7. 接下来，选择 **ATP 安全链接** 策略，然后单击铅笔图标以编辑默认策略。
 
-8. 请确保未选中 " **如果用户单击安全链接时不进行跟踪** " 选项，而其余选项则处于选中状态。 有关详细信息，请参阅 [安全链接设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 单击“保存”****。 
+8. 请确保未选中 " **如果用户单击安全链接时不进行跟踪** " 选项，而其余选项则处于选中状态。 有关详细信息，请参阅 [安全链接设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 单击“**保存**”。 
 ![Image of_Office 365 Security & 合规中心页面，该页面显示当用户单击 "安全" 未选中时选项不会进行跟踪](../../media/mtp-eval-38.png) <br>
 
 9. 接下来，选择 **反恶意软件** 策略，选择默认设置，然后选择 "铅笔" 图标。
 
-10. 单击 " **设置** " 并选择 **"是"，并使用默认通知文本** 启用 **恶意软件检测响应**。 打开 **常用附件类型筛选器** 。 单击“保存”****。
+10. 单击 " **设置** " 并选择 **"是"，并使用默认通知文本** 启用 **恶意软件检测响应**。 打开 **常用附件类型筛选器** 。 单击“**保存**”。
 <br>![Image of_Office 365 Security & 合规中心页面，该页面显示在启用恶意软件检测响应时启用默认通知并启用常用附件类型筛选器](../../media/mtp-eval-39.png) <br>
   
 11. 导航到[Office 365 安全 & 合规性中心](https://protection.office.com/homepage)  >  **搜索**  >  **审核日志搜索**，然后启用审核。  
@@ -152,7 +155,7 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 10. 恭喜，你已在域控制器上成功配置 Azure 高级威胁防护。
 ![Image of_Azure 高级威胁防护 Azure ATP 传感器向导安装完成，您应在其中单击 "完成" 按钮](../../media/mtp-eval-51.png) <br>
  
-11. 在 " [Azure AZURE ATP](https://go.microsoft.com/fwlink/?linkid=2040449) 设置" 部分下，选择 " **Windows Defender atp**"，然后打开 "切换"。 单击“保存”****。 
+11. 在 " [Azure AZURE ATP](https://go.microsoft.com/fwlink/?linkid=2040449) 设置" 部分下，选择 " **Windows Defender atp**"，然后打开 "切换"。 单击“**保存**”。 
 ![您应在其中启用 Windows Defender ATP 切换的 "Azure Azure ATP 设置" 页面的图像 of_the](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
@@ -177,7 +180,7 @@ Microsoft 威胁防护由四个支柱组成。 尽管一个支柱可以为你的
 >[!NOTE]
 >对于新的 Azure ATP 实例，此集成切换将自动打开。 在继续下一步之前，请确认已启用 Azure ATP 集成。
  
-4. 在 "云发现设置" 下，选择 " **Microsoft DEFENDER ATP 集成**"，然后启用集成。 单击“保存”****。
+4. 在 "云发现设置" 下，选择 " **Microsoft DEFENDER ATP 集成**"，然后启用集成。 单击“**保存**”。
 ![Unsanctioned 中的 "阻止应用程序" 复选框的 "Microsoft Defender ATP" 页面的 of_the 图像已选中 "Microsoft Defender ATP 集成"。 单击 "保存"。](../../media/mtp-eval-56.png) <br>
 
 5. 在 "云发现设置" 下，选择 " **用户扩充**"，然后启用与 Azure Active Directory 的集成。

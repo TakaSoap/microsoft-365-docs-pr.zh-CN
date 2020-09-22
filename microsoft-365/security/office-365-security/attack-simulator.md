@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用攻击模拟器在其 Microsoft 365 E5 或 ATP 计划2组织中运行模拟的网络钓鱼和密码攻击。
-ms.openlocfilehash: 9fc28cdecc07f5325918e3d5176e52d1051a626c
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 86d365036daa4f24d2c2e3b8e64b5836e291889f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426989"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200385"
 ---
 # <a name="attack-simulator-in-atp"></a>ATP 中的攻击模拟器
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 如果您的组织具有 Office 365 高级威胁防护 (ATP) Plan 2，其中包括 [威胁调查和响应功能](office-365-ti.md)，则可以使用安全 & 合规性中心中的攻击模拟器在组织中运行实际的攻击方案。 这些模拟攻击可帮助您识别易受攻击的用户，并在真正的攻击影响你的底线之前找到这些用户。 阅读本文以了解详细信息。
 

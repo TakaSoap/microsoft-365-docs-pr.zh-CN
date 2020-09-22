@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 管理独立的 SharePoint Online 团队网站，添加新用户和组，删除用户和组，并创建具有自定义权限的 documents 子文件夹。
-ms.openlocfilehash: d66f9a349bd5834d07fbc13146127bde522923e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e63cd6d17bf30ce6d236e38673b33cf054940eac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308263"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200615"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理独立的 SharePoint Online 团队网站
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 使用这些过程管理独立的 SharePoint Online 团队网站。
   
@@ -156,13 +159,13 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 3. 浏览到 "documents" 文件夹中将包含具有自定义权限的子文件夹的文件夹，创建该文件夹，然后将其打开。
     
-4. 单击"共享"。
+4. 单击“**共享**”。
     
 5. 单击 " **共享并 > 高级**"。
     
 6. 单击 " **停止继承权限**"，然后单击 **"确定"**。
     
-7. 单击"共享"。
+7. 单击“**共享**”。
     
 8. 单击 " **共享并 > 高级**"。
     

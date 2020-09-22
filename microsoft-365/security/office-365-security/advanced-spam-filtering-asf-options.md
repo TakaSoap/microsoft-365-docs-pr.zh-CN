@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 的反垃圾邮件策略中提供的高级垃圾邮件筛选器 (ASF) 设置。
-ms.openlocfilehash: 6a670a9aba2204035646840d0f128ca9a90ece15
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: f2c58349bc1ffd2bb231eadf83bd4d70582925a2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867217"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199943"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的高级垃圾邮件筛选器 (ASF) 设置
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > 反垃圾邮件策略中当前可用的 ASF 设置处于弃用过程中。 我们建议您不要在反垃圾邮件策略中使用这些设置。 这些 ASF 设置的功能将并入筛选堆栈的其他部分。 有关详细信息，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。

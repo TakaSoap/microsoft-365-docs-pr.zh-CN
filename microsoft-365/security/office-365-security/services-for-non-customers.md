@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652653"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199573"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365 的非客户服务
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 电子邮件滥用、垃圾邮件和欺诈邮件（网络钓鱼）继续增加整个电子邮件系统的负担。 为了帮助维护对电子邮件使用的用户信任，Microsoft 已实施各种策略和技术来帮助保护我们的用户。 然而，Microsoft 知道合法的电子邮件不应受到负面影响。 因此，我们已经建立了一套服务，帮助发件人通过主动管理其发送信誉来提高将电子邮件传递给 Microsoft 365 用户的能力。
 
@@ -49,7 +52,7 @@ Microsoft 为在向 Microsoft 365 的收件人发送邮件时遇到问题的用�
 
 - 请查看[向 Office 365 发送故障排除邮件](troubleshooting-mail-sent-to-office-365.md)中非客户遇到的最常见的问题。
 
-- 使用[Microsoft 365 除名门户](https://sender.office.com)提交请求，以将您的 IP 从阻止的发件人列表中删除。
+- 使用 [Microsoft 365 除名门户](https://sender.office.com) 提交请求，以将您的 IP 从阻止的发件人列表中删除。
 
 - 参阅 [Microsoft 社区论坛](https://community.office365.com/f/)。
 
@@ -63,4 +66,4 @@ Microsoft 为在向 Microsoft 365 的收件人发送邮件时遇到问题的用�
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告
 
-有时，第三方使用 Microsoft365 来发送垃圾邮件，从而违反我们的使用条款和策略。 如果您收到来自 Office 365 的任何垃圾邮件，您可以将这些邮件报告给 Microsoft。 有关说明，请参阅[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
+有时，第三方使用 Microsoft365 来发送垃圾邮件，从而违反我们的使用条款和策略。 如果您收到来自 Office 365 的任何垃圾邮件，您可以将这些邮件报告给 Microsoft。 有关说明，请参阅 [向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。

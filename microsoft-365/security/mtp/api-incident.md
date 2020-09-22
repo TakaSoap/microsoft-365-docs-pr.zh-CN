@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 310e3105c973223ea79373d770eb10f7753b917e
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650162"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201299"
 ---
 # <a name="incident-resource-type"></a>事件资源类型
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -44,16 +47,16 @@ ms.locfileid: "47650162"
 
 ## <a name="properties"></a>属性
 
-属性 |    类型    |    描述
+属性 |    类型    |    说明
 :---|:---|:---
 incidentId | long | 事件唯一 ID。
 redirectIncidentId | nullable 长 | 当前事件合并到的事件 ID。
-incidentName | 字符串 | 事件的名称。
+incidentName | string | 事件的名称。
 createdTime | DateTimeOffset | 创建事件) 的日期和时间，以 UTC (。
 lastUpdateTime | DateTimeOffset | 上次更新事件) UTC (的日期和时间。
-assignedTo | 字符串 | 事件的所有者。
+assignedTo | string | 事件的所有者。
 severity | 枚举 | 事件的严重性。 可能的值是 ```UnSpecified``` ： ```Informational``` 、 ```Low``` 、 ```Medium``` 和 ```High``` 。
-状态 | 枚举 | 指定事件的当前状态。 可能的值为 ```Active``` ： ```Resolved``` 和 ```Redirected``` 。
+status | 枚举 | 指定事件的当前状态。 可能的值为 ```Active``` ： ```Resolved``` 和 ```Redirected``` 。
 classification | 枚举 | 事件的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 可用性 | 枚举 | 指定事件的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
 tags | 字符串列表 | 事件标记列表。

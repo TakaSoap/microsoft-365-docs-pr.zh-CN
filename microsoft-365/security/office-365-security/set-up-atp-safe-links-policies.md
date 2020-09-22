@@ -17,14 +17,17 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 121de6137e392ae0c66d9961fd2138f003a9d9fa
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307757"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201755"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
@@ -51,7 +54,7 @@ ms.locfileid: "47307757"
 
 - 请确保您具有必要的权限。 若要定义 (或编辑) ATP 策略，必须为您分配适当的角色。 下表介绍了一些示例：
 
-    |Role|分配的位置/方式|
+    |角色|分配的位置/方式|
     |---|---|
     |全局管理员|默认情况下，注册购买 Microsoft 365 的人是全局管理员。  (参阅 [关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ，了解详细信息。 ) |
     |安全管理员|Azure Active Directory 管理员中心 (<https://aad.portal.azure.com>) |
@@ -149,7 +152,7 @@ ms.locfileid: "47307757"
 
 |此选项|执行的操作|
 |---|---|
-|**关闭**|不扫描电子邮件中的 Url。  <br/> 使您能够定义例外规则，如不扫描电子邮件中的 Url 的特定收件人组的 Url 的规则。|
+|**停**|不扫描电子邮件中的 Url。  <br/> 使您能够定义例外规则，如不扫描电子邮件中的 Url 的特定收件人组的 Url 的规则。|
 |**On**|通过在用户单击电子邮件中的 Url 并启用 Outlook (C2R) 在 Windows 中的 ATP 安全链接，来重写 Url 以在 ATP 安全链接保护中路由用户。  <br/> 在对阻止或恶意 Url 列表单击时检查 URL，并在后台异步触发 URL 的沙箱，前提是该 URL 没有有效的信誉。|
 |**对指向文件的可疑链接和链接应用实时 URL 扫描**|如果选择此选项，则会扫描指向可下载内容的可疑 Url 和链接。|
 |**等待 URL 扫描完成后再传递邮件**|如果选择此选项，则将一直保留包含要扫描的 Url 的邮件，直到 Url 完成扫描并在传递邮件之前将其确认为安全。|

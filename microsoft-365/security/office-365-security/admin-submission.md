@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 85251e82166279c25f009728dd5e5f0ff3c3f2ea
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947968"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201251"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在 Exchange Online 中有邮箱的 Microsoft 365 组织中，管理员可以使用安全 & 合规性中心中的提交门户将电子邮件、Url 和附件提交给 Microsoft 进行扫描。
 
@@ -118,7 +121,7 @@ ms.locfileid: "47947968"
 - **主题/URL/文件名**
 - **提交者**
 - **提交类型**
-- **状态**
+- **Status**
 
 ![用于管理提交的筛选器选项](../../media/admin-submission-email-filter-options.png)
 
@@ -200,7 +203,7 @@ ms.locfileid: "47947968"
 若要更改筛选条件，请单击 " **发件人** " 按钮，然后选择下列值之一：
 
 - **发件人域**
-- **主题**
+- **Subject**
 - **提交者**
 - **提交类型**
 - **发件人 IP**

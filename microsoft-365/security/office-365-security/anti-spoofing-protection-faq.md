@@ -16,14 +16,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以查看有关 Exchange Online Protection (EOP) 中的 "反欺骗" 保护的常见问题和解答。
-ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 207fa9b12c2b39571c72397abfb6a64fe992b43e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867135"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199107"
 ---
 # <a name="anti-spoofing-protection-faq"></a>防欺骗保护常见问题
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本文提供了有关使用 Exchange Online 中的邮箱或独立 Exchange Online Protection (EOP) 组织（无需 Exchange Online 邮箱）的 Microsoft 365 组织的反欺诈保护的常见问题和解答。
 
@@ -71,7 +74,7 @@ Microsoft 本身在将新的电子邮件身份验证要求部署到客户之前�
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>我是否仍然需要启用高级垃圾邮件筛选器设置 "SPF record： hard fail" (_MarkAsSpamSpfRecordHardFail_) 如果我启用反欺骗？
 
-不正确。 此 ASF 设置不再是必需的。 反欺骗保护考虑两种 SPF 硬失败和一组更广泛的条件。 如果已启用防欺骗和“SPF 记录:硬故障”****(_MarkAsSpamSpfRecordHardFail_)，可能会收到更多误报。
+否。 此 ASF 设置不再是必需的。 反欺骗保护考虑两种 SPF 硬失败和一组更广泛的条件。 如果已启用防欺骗和“SPF 记录:硬故障”****(_MarkAsSpamSpfRecordHardFail_)，可能会收到更多误报。
 
 我们建议您禁用此功能，因为它几乎没有额外的优势来检测垃圾邮件或网络钓鱼邮件，而是生成大多数误报。 有关详细信息，请参阅 [EOP 中的高级垃圾邮件筛选器 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
 
