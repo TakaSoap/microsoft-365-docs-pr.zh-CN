@@ -14,14 +14,17 @@ search.appverid: MET150
 description: 威胁补救措施
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547236"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197437"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 修正是指针对威胁采取禁止操作。 发送到您的组织的恶意电子邮件可由系统清除)  (，也可通过 " *移动到收件箱*"、"移动到 *垃圾*邮件"、"移动到 *已删除邮件*"、"删除项目"、" *软删除*" 或 " *硬删除*" 等补救操作进行清除。 Office 高级威胁防护 (Office ATP) P2/E5 使安全团队能够通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
@@ -92,7 +95,7 @@ ms.locfileid: "47547236"
 
    - **不可行**：以下位置中的电子邮件不能在修正操作中进行操作或移动：
 
-     - Quarantine
+     - 隔离
      - 硬删除文件夹
      - 内部部署/外部
      - 失败/丢弃

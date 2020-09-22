@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: afeef8de09e0ee7a727372041791871712ca4e0d
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bcd607afa6c1de0edf8a668d26b920079419da84
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560891"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196163"
 ---
 # <a name="microsoft-threat-protection"></a>Microsoft 威胁防护
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -47,14 +50,14 @@ Microsoft 威胁防护是一种统一的前期和后入侵型企业防护套件�
 
 
 >[!TIP]
->查看此[Microsoft 威胁防护交互式指南](https://aka.ms/MTP-Interactive-Guide)。
+>查看此 [Microsoft 威胁防护交互式指南](https://aka.ms/MTP-Interactive-Guide)。
 
 
 Microsoft 威胁防护套件可在以下方面提供防护： 
-- **使用 Microsoft DEFENDER atp 的终结点**-MICROSOFT defender atp 是用于预防性保护、入侵后检测、自动调查和响应的统一终结点平台。 
+- **使用 Microsoft DEFENDER atp 的终结点** -MICROSOFT defender atp 是用于预防性保护、入侵后检测、自动调查和响应的统一终结点平台。 
 - **电子邮件和协作与 office 365 atp** -OFFICE 365 atp 将保护您的组织免受电子邮件、链接 (url) 和协作工具带来的恶意威胁的侵扰。 
-- **使用 AZURE atp 和 AZURE AD 标识保护的标识**-azure Atp 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露标识和恶意内幕活动。 
-- **Microsoft 云应用安全应用程序**安全-Microsoft 云应用安全是全面的跨 SaaS 解决方案，为你的云应用提供深入的可见性、强大的数据控制和增强的威胁防护。 
+- **使用 AZURE atp 和 AZURE AD 标识保护的标识** -azure Atp 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露标识和恶意内幕活动。 
+- **Microsoft 云应用安全应用程序** 安全-Microsoft 云应用安全是全面的跨 SaaS 解决方案，为你的云应用提供深入的可见性、强大的数据控制和增强的威胁防护。 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
@@ -75,14 +78,14 @@ Microsoft 威胁防护独特的跨产品层将各个套件组件扩充为：
 
 
 Microsoft 威胁防护跨产品功能包括： 
-- **跨产品单一**外观视图：用于检测、受影响的资产的所有信息、执行的自动操作以及在[security.microsoft.com](https://security.microsoft.com)中的单个队列和单个窗格中的相关证据。 
-- **组合的事件队列**-以帮助安全专业人员通过确保完整的攻击作用域、受影响的资产和自动修正操作以及时方式进行分组，以帮助安全专业人员重点了解关键因素。 
-- **对威胁的自动响应**-在 Microsoft 威胁防护产品之间实时共享关键威胁信息，以帮助停止攻击的进展。 例如，如果在受 Microsoft Defender ATP 保护的终结点上检测到恶意文件，它将指示 Office 365 ATP 扫描并删除所有电子邮件中的文件。 将阻止整个 Microsoft 365 安全套件看到该文件。
-- **对受损设备、用户标识和邮箱的自我修复**-Microsoft 威胁防护使用通过 AI 的自动操作和行动手册将受影响的资产恢复为安全状态。 Microsoft 威胁防护利用套件产品的自动修正功能，以确保与事件相关的所有受影响的资产在可能的情况下会自动修正。
-- **跨产品威胁搜寻**-安全团队可以通过使用各种保护产品收集的原始数据创建自己的自定义查询，从而利用其独特的组织知识来寻找危害的迹象。 Microsoft 威胁防护提供了对30天的历史原始信号的基于查询的访问，并在终结点和 Office 365 ATP 数据中通知数据。 
+- **跨产品单一** 外观视图：用于检测、受影响的资产的所有信息、执行的自动操作以及在 [security.microsoft.com](https://security.microsoft.com)中的单个队列和单个窗格中的相关证据。 
+- **组合的事件队列** -以帮助安全专业人员通过确保完整的攻击作用域、受影响的资产和自动修正操作以及时方式进行分组，以帮助安全专业人员重点了解关键因素。 
+- **对威胁的自动响应** -在 Microsoft 威胁防护产品之间实时共享关键威胁信息，以帮助停止攻击的进展。 例如，如果在受 Microsoft Defender ATP 保护的终结点上检测到恶意文件，它将指示 Office 365 ATP 扫描并删除所有电子邮件中的文件。 将阻止整个 Microsoft 365 安全套件看到该文件。
+- **对受损设备、用户标识和邮箱的自我修复** -Microsoft 威胁防护使用通过 AI 的自动操作和行动手册将受影响的资产恢复为安全状态。 Microsoft 威胁防护利用套件产品的自动修正功能，以确保与事件相关的所有受影响的资产在可能的情况下会自动修正。
+- **跨产品威胁搜寻** -安全团队可以通过使用各种保护产品收集的原始数据创建自己的自定义查询，从而利用其独特的组织知识来寻找危害的迹象。 Microsoft 威胁防护提供了对30天的历史原始信号的基于查询的访问，并在终结点和 Office 365 ATP 数据中通知数据。 
 
 
 ## <a name="get-started"></a>入门
-必须满足 microsoft 威胁防护许可要求，然后才能在[security.microsoft.com](https://security.microsoft.com)中启用 microsoft 365 安全中心中的服务。 有关详细信息，请参阅：
+必须满足 microsoft 威胁防护许可要求，然后才能在 [security.microsoft.com](https://security.microsoft.com)中启用 microsoft 365 安全中心中的服务。 有关详细信息，请参阅：
 - [授权要求](prerequisites.md#licensing-requirements)
 - [打开 Microsoft 威胁防护](mtp-enable.md)

@@ -22,22 +22,22 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3。
-ms.openlocfilehash: 6a795d96ccae7e054e7e52d4fd60a4e73b3c71dd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401986"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195511"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3
 
 Microsoft 365 商业高级版为小型企业提供了所需的一切，并将一流的基于云的工作效率应用与简单的设备管理和安全性结合起来，使员工能够完成其最佳工作。 但在某些情况下，您可能需要将 Microsoft 365 商业高级版订阅迁移到 Microsoft 365 E3。 
 
-例如，您的企业增长并需要300以上的许可证（顺便说一下）。
+例如，您的企业已增长并需要300个以上的许可证 (祝贺，) 。
 
-或者，您的业务需要企业版功能，例如 Microsoft 365 应用程序企业版、Windows 10 企业版 E3 或企业版客户端访问许可证（Cal）。
+或者，您的业务需要企业版功能，如适用于企业的 Microsoft 365 应用、Windows 10 企业版 E3 或企业客户端访问许可证 (Cal) 。
 
-升级非常简单：您可以[从管理中心](../commerce/subscriptions/upgrade-to-different-plan.md)启动升级。 保留当前订阅中的所有数据和配置。 除了利用新功能之外，无需为迁移做准备，也不做任何操作。
+升级非常简单：您可以 [从管理中心](../commerce/subscriptions/upgrade-to-different-plan.md)启动升级。 保留当前订阅中的所有数据和配置。 除了利用新功能之外，无需为迁移做准备，也不做任何操作。
 
 >[!Note]
 >您还可以使用 Microsoft 365 商业高级订阅进行最多300个座位，并获取 Microsoft 365 E3 订阅，以获得超过300的座位。 但是，Office 365 ATP 不包含在 Microsoft 365 E3 中。 若要持续进行威胁防护，应添加其他 Office 365 ATP 许可证，以便许可证365范围内的所有用户都可以获得许可。
@@ -60,32 +60,32 @@ Microsoft 365 商业高级版为小型企业提供了所需的一切，并将一
 | Outlook 客户管理器，MileIQ    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
 | **威胁防护**        | | | 
 | 攻击面减少功能    | [查看此列表](#threat-protection) | Microsoft Edge 基于硬件的隔离的企业管理 | 
-| Office 365 高级威胁防护（ATP）计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
+| Office 365 高级威胁防护 (ATP) 计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
-| 混合 Azure Active Directory （Azure AD）帐户、Azure 多重身份验证（MFA）、条件访问、本地标识的密码写回的自助密码重置|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | 云应用发现、Azure AD Connect Health    |     | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| Azure AD Office 365 应用单一登录（SSO）：每个用户10个应用程序（库 SaaS 应用程序，如 Salesforce） * | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| Azure AD Premium 1 SSO：无限制（通过使用自助式应用集成模板的 Azure AD 应用程序代理和非库应用的内部部署应用）    |     | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Azure AD Office 365 应用单一登录 (SSO) ：每个用户10个应用程序 (库 SaaS 应用程序（如 Salesforce) ） * | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| Azure AD Premium 1 SSO：通过使用自助服务应用集成模板的 Azure AD 应用程序代理和非库应用程序 (本地应用程序不受限制)     |     | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **设备和应用程序管理**        | | | 
 | Microsoft Intune、Windows Autopilot|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-|虚拟桌面访问（VDA）    |  |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-|Windows 虚拟桌面（WVD）    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-|共享计算机激活（SCA）    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+|虚拟桌面访问 (VDA)     |  |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+|Windows 虚拟桌面 (WVD)     | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| (SCA) 的共享计算机激活    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png) |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | Microsoft 桌面优化包    | |     ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | **信息保护**        | | | 
 | Office 365 数据丢失防护，Azure 信息保护计划1    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | Endpoint DLP 的窗口信息保护    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| **客户端访问许可证（CAL 权限）**    | | |     
-| 企业 CAL 套件（Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理）| |         ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| **Compliance**        | | | 
+| **客户端访问许可证 (CAL 权限) **    | | |     
+| 企业 CAL 套件 (Exchange、SharePoint、Skype、Windows、Microsoft 终结点配置管理器、Windows 权限管理) | |         ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| **合规性**        | | | 
 | 无限制的电子邮件存档    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| 合规性分数/合规性管理器    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 合规性管理器    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | 电子数据展示    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | 就地保留和诉讼保留    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
-| 邮件记录管理（MRM）保留标记和保留策略    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 邮件记录管理 (MRM) 保留标记和保留策略    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 ||||
 
-\*分配了对 SaaS 应用程序的访问权限的用户可以获取最大10个应用程序的 SSO 访问权限。 管理员可以配置 SSO 并更改用户对不同 SaaS 应用程序的访问权限，但每次仅允许对每个用户的10个应用程序进行 SSO 访问。 所有 Office 365 应用程序均计为一个应用程序。
+\* 分配了对 SaaS 应用程序的访问权限的用户可以获取最大10个应用程序的 SSO 访问权限。 管理员可以配置 SSO 并更改用户对不同 SaaS 应用程序的访问权限，但每次仅允许对每个用户的10个应用程序进行 SSO 访问。 所有 Office 365 应用程序均计为一个应用程序。
 
 ## <a name="migration"></a>迁移
 
@@ -122,7 +122,7 @@ Windows 10 商业版包括以下保护：
 - 勒索软件缓解
 - Microsoft Edge 的基于硬件的隔离
 - 由智能安全图形支持的应用程序控制
-- 设备控制（USB）
+-  (USB) 的设备控件
 - 基于 web 的威胁的网络保护
 - 主机入侵防护规则
 

@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1883f61f50dad9b601329369bf180ddecba70138
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 46d82220851c78525bd0b1ee00c4abae69c0304f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928958"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196307"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>调查 Microsoft 威胁防护中的事件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 
@@ -96,7 +99,7 @@ Microsoft 威胁防护将从所有设备、用户和邮箱聚合所有相关的�
 
 ## <a name="investigations"></a>调查
 
-选择 "**调查**" 以查看此事件中的通知触发的所有自动调查。 调查将执行补救操作或等待分析员批准操作，具体取决于如何配置自动化调查，以在 Microsoft Defender ATP 和 Office 365 高级威胁防护中运行。
+选择 " **调查** " 以查看此事件中的通知触发的所有自动调查。 调查将执行补救操作或等待分析员批准操作，具体取决于如何配置自动化调查，以在 Microsoft Defender ATP 和 Office 365 高级威胁防护中运行。
 
 ![事件“调查”选项卡图像](../../media/incident-investigations.png)
 

@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Office 365 高级威胁防护 (Office 365 ATP) 中提供的反网络钓鱼策略。
-ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950600"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195911"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 使用 Exchange Online 邮箱、独立 Exchange Online Protection (EOP) 组织（无 Exchange Online 邮箱）和 Office 365 高级威胁防护 (Office 365 ATP) 组织的 Microsoft 365 组织中提供了用于配置反钓鱼保护设置的策略。
 
@@ -142,10 +145,10 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 模拟是邮件中发件人或发件人的电子邮件域类似于真实的发件人或域：
 
-- 域 contoso.com 的模拟示例是ćóntoso.com。
+- 域 contoso.com 的模拟示例是 ćóntoso.com。
 - 用户 michelle@contoso.com 的模拟示例是 michele@contoso.com。
 
-否则，模拟域可能被视为合法 (注册域、配置的电子邮件身份验证记录等 ) ，但其目的是欺骗收件人。
+模拟的域可能被视为合法（注册的域、配置的电子邮件身份验证记录等），但其意图是欺骗收件人。
 
 以下模拟设置仅适用于 ATP 反网络钓鱼策略：
 

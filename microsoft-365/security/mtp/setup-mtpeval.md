@@ -15,14 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a0997c107e78104619e1e05b8d1073e8690a3667
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956239"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195555"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>设置你的 Microsoft 威胁防护试用实验室环境 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护 
@@ -137,7 +140,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 5. 单击 " **立即试用** " 以确认你的 Microsoft 365 E5 试用版。
 <br>![Image of_Microsoft 365 E5 开始免费试用页面，应在此处时钟 "立即试用" 按钮开始](../../media/mtp-eval-27.png) <br>
  
-6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 " **管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为 **Microsoft 365 e5**。 单击“保存”****。
+6. 转到**Microsoft 365 管理中心**  >  **用户**  >  **活动用户**。 选择您的用户帐户，选择 " **管理产品许可证**"，然后将来自 Office 365 e5 的许可证交换为 **Microsoft 365 e5**。 单击“**保存**”。
 ![Image of_Microsoft 365 管理中心 "页面，您可以在其中选择 Microsoft 365 E5 许可证](../../media/mtp-eval-28.png) <br>
  
 7. 再次选择全局管理员帐户，然后单击 " **管理用户名**"。

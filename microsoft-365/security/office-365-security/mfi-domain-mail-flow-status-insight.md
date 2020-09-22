@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规中心中的邮件流仪表板中的顶级域邮件流状态洞察力来解决与其电子邮件域中的 MX 记录相关的邮件流问题。
-ms.openlocfilehash: 34b80bee48bd91524fbd95961c473f50fbe394b7
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 24922d6ae7d2ec50e3d9383631991cf46a818c05
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197521"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全 & 合规中心中的主要域邮件流状态洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Security & 合规中心](https://protection.office.com)中的[邮件流仪表板](mail-flow-insights-v2.md)中的**顶级域邮件流状态**洞察力为您的组织的域提供了邮件流的当前状态。 此洞察力可帮助您识别和解决遇到 ***邮件流影响*** 问题的域 (例如，无法接收外部电子邮件) ，尤其是域过期或包含不正确的 MX 记录的域。
 

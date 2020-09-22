@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，以保护您的信息并遵守数据隐私法规。
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522285"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195635"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为 Microsoft 365 中的数据隐私法规部署信息保护
 
-您的组织可能受区域数据隐私法规的约束，这些法规要求您保护、管理和提供对存储在 IT 基础结构中的个人信息（包括内部部署和云中的个人信息）的权限和控制。 数据隐私法规的最佳示例是欧盟的一般数据保护法规（GDPR）。 如果不遵守数据隐私法规，可能会导致巨额罚款。
+您的组织可能受区域数据隐私法规的约束，这些法规要求您保护、管理和提供对存储在 IT 基础结构中的个人信息（包括内部部署和云中的个人信息）的权限和控制。 数据隐私法规的最佳示例是欧盟的一般数据保护法规 (GDPR) 。 如果不遵守数据隐私法规，可能会导致巨额罚款。
 
 Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive 中的文件。 此解决方案提供了有关如何识别、查找、保护、管理和响应 Microsoft 365 服务中存储的个人数据的数据隐私事件的指南，这些数据受数据隐私法规约束。
 
@@ -38,8 +38,7 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
-| 合规性管理器 | 使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。 | Microsoft 365 E3 和 E5 |
-| 合规性分数（预览版） | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 和 E5 |
+| 合规性管理器 | 管理法规遵从性活动，获取当前合规性配置的整体分数，并在 Microsoft 365 合规性中心中查找基于工作流的风险评估工具改进的建议。 | Microsoft 365 E3 和 E5 |
 | Office 高级威胁防护 (ATP) | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 | 
 | 敏感度标签 | 通过在电子邮件、文件或站点上放置具有不同保护级别的标签，可以在不影响用户工作效率和协作能力的情况下对组织的数据进行分类和保护。 | Microsoft 365 E3 和 E5 |
 | 数据丢失防护 (DLP) | 在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。 | Microsoft 365 E3 和 E5 | 
@@ -66,29 +65,29 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 
 评估您的组织所依赖的数据隐私法规和风险是开始实施改进（包括通过 Microsoft 365 配置实现的）之前需要执行的重要第一步。 这可能包括您的组织需要遵守的管理法规控制和在 Microsoft 365 环境中出现的特定敏感信息类型的总体准备情况评估或标识。
 
-有关详细信息，请参阅[评估数据隐私风险和标识敏感项目](information-protection-deploy-assess.md)。
+有关详细信息，请参阅 [评估数据隐私风险和标识敏感项目](information-protection-deploy-assess.md)。
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>跟踪：使用合规性分数和合规性管理器 
+## <a name="track-use-compliance-manager"></a>跟踪：使用合规性管理器
 
-合规性分数和合规性管理器提供了 Microsoft 365 合规性管理中心和服务信任门户中提供的一组集成工具。 此外，这些工具还提供了内置的功能，可以跟踪和管理整体以及与您所受到的多个数据隐私保护法规相关的整体改进措施。
+合规性管理器（可在 Microsoft 365 合规性中心中提供）为您提供了一个内置的功能，用于跟踪和管理整体改进操作以及与适用于您的多个数据隐私法规相关的问题。
 
-这些工具还允许您利用特定于每个法规的内置评估模板，您可以在其中跟踪选定的每个评估模板的操作项，并查看特定的规章控件，并将它们与特定操作相关联。
+利用特定于每个法规的内置评估模板，您可以在其中跟踪选定的每个评估模板的操作项，并查看特定的规章控件，并将它们与特定操作相关联。
 
-有关详细信息，请参阅[使用合规性分数和合规性管理器管理改进操作](information-protection-deploy-compliance.md)。
+有关详细信息，请参阅 [Use 合规性管理器管理改进操作](information-protection-deploy-compliance.md)。
 
 ## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>阻止：对数据隐私法规使用标识、设备和威胁防护
 
 Microsoft 365 提供了大量标识、设备和威胁防护功能，可用于帮助遵守数据隐私法规遵从性。 
 
-有关详细信息，请参阅[对数据隐私法规使用标识、设备和威胁防护](information-protection-deploy-identity-device-threat.md)。
+有关详细信息，请参阅 [对数据隐私法规使用标识、设备和威胁防护](information-protection-deploy-identity-device-threat.md)。
 
 本文简要介绍了在这些领域中通常要调用的数据隐私法规，并提供了相关 Microsoft 365 解决方案的列表，并提供了可帮助您满足任何实现要求的详细信息的链接。 
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私法规制约的信息
 
-数据隐私规章规定了许多可在您的环境中使用的个人信息保护控件，其中包括40个在 GDPR、加利福尼亚州消费者保护法（CCPA）、HIPAA-高科技（美国卫生保健隐私保护法案）和巴西数据保护法案（LGPD）中的四个数据隐私规章中保护信息控制。
+数据隐私规章规定了许多可在您的环境中使用的个人信息保护控件，其中包括40个在 GDPR 的示例集（加利福尼亚州消费者防护法案 (CCPA) 、HIPAA-高科技 (美国卫生保健隐私法案) 以及巴西数据保护法案 (LGPD) 中的四个数据隐私规章中保护信息控制。
 
-有关详细信息，请参阅[保护受组织中数据隐私法规制约的信息](information-protection-deploy-protect-information.md)。
+有关详细信息，请参阅 [保护受组织中数据隐私法规制约的信息](information-protection-deploy-protect-information.md)。
 
 本文介绍了可用于为组织中的数据隐私提供寻址信息保护需求的主要控件方案。
 
@@ -96,7 +95,7 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，可用于帮
 
 数据隐私管理法规要求在您的环境中可采用的个人信息治理控制措施，包括 GDPR、CCPA、HIPAA-高科技和 LGPD 的示例集中四个数据隐私法规的四个以上的控制措施。
 
-有关详细信息，请参阅[管理组织中的数据隐私法规所依据的信息](information-protection-deploy-govern.md)。
+有关详细信息，请参阅 [管理组织中的数据隐私法规所依据的信息](information-protection-deploy-govern.md)。
 
 尽管在故意保留、删除和存档等信息管理方面，数据保密法规可能不 &mdash; 明确，但 &mdash; 本文还介绍了主要控件方案，您可以对组织中的数据隐私使用地址信息治理需求。
 
@@ -106,4 +105,4 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，可用于帮
 
 对于每个以上的过程、过程和其他文档来说，向管理法规遵守合规性可能非常重要。
 
-有关详细信息，请参阅[监视和响应组织中的数据隐私事件](information-protection-deploy-monitor-respond.md)。
+有关详细信息，请参阅 [监视和响应组织中的数据隐私事件](information-protection-deploy-monitor-respond.md)。

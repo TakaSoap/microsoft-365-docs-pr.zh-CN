@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: 使用 Microsoft 365 的标识、设备和威胁防护服务防止个人数据泄露。
-ms.openlocfilehash: a309b5d0ba5f939cf89a31d7ac91ca3aac25ce0d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: a0efdcfe8e9d27e19b6cf1355a6d0943b7cdaa59
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46520977"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195659"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>对数据隐私法规使用标识、设备和威胁防护
 
@@ -29,35 +29,35 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>标识、设备和威胁防护与数据隐私法规的关系
 
-尽管数据隐私规章的具体程度各不相同，但它们调用的内容的本质都体现在 GDPR 的第5（1）（f）一文中，其中指出： 
+尽管数据隐私条例的具体程度各不相同，但它们调用的内容的本质是在 GDPR 的文章 5 (1) # B2 f) 中体现，这表明： 
 
-- 应以确保个人数据的适当安全性的方式处理个人数据，包括防止未经授权或非法处理的保护，以及使用适当的技术或组织措施（"完整性和机密性"）防止意外丢失、损坏或损坏。
+- 应以确保个人数据的适当安全性的方式处理个人数据，包括防止未经授权或非法处理的保护，以及防止意外丢失、损坏或损坏、使用适当的技术或组织措施 ( "完整性和机密性" ) 。
 
-由于个人数据泄露通常是由管理或最终用户帐户泄露和恶意系统访问导致的。 例如，管理员帐户黑客攻击可能会导致 exfiltration 的客户信用卡号码或其他个人信息。 可能应实施 Microsoft 365 提供的所有通常建议的标识、设备和威胁防护，这将在你的合规性分数中反映出来。
+由于个人数据泄露通常是由管理或最终用户帐户泄露和恶意系统访问导致的。 例如，管理员帐户黑客攻击可能会导致 exfiltration 的客户信用卡号码或其他个人信息。 可能应实施 Microsoft 365 提供的所有通常建议的标识、设备和威胁防护，这将反映在合规性管理器中找到的合规性分数中。
 
-## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a>使用评估工作和合规性分数的结果
+## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>使用评估工作和合规性管理器的结果
 
-合规性分数包括使用这些类别的标识、设备和威胁保护：
+合规性管理器包括使用以下类别的标识、设备和威胁防护：
 
-- 标识对应于**控件访问**类别
-- 设备对应于 "**管理设备**" 类别
-- 威胁防护对应于 "**针对威胁进行保护**" 类别
+- 标识对应于 **控件访问** 类别
+- 设备对应于 " **管理设备** " 类别
+- 威胁防护对应于 " **针对威胁进行保护** " 类别
  
-如果在我们的四个主要数据隐私规章的示例集中选择这些项，则合规性分数指定90改进操作，其中大多数被评分为 "27"。 由于这些类别的符合性分数称为此类较大的号码，此处列出了一些较常见的号码供参考。
+如果在我们的四个主要数据隐私法规的示例集中选择这些选项，合规性管理器将指定90改进操作，其中大多数被评分为 "27"。 由于这些类别的合规性管理器会调用此类较大的数字，因此在此处列出了一些较常见的数字，以供参考。
 
-使用[Azure Active Directory （AZURE AD）](https://azure.microsoft.com/services/active-directory/)获取标识和**控制访问**类别，以便可以：
+使用 [Azure Active Directory (AZURE AD) ](https://azure.microsoft.com/services/active-directory/) for Identity And **Control Access** 类别，您可以：
 
-- 实现重抵抗式身份验证（以防止 "中间人" 攻击）
+- 实施不能重放的身份验证 (以防止 "中间人" 攻击) 
 - 阻止旧式身份验证。
 - 配置用户风险和用户登录风险策略。
-- 为管理员和非管理员启用条件访问和多因素身份验证（MFA）。
+- 为管理员和非管理员启用条件访问和多重身份验证 (MFA) 。
 - 配置和强制实施密码策略。
 - 使用 Azure AD 特权标识管理限制对特权帐户的访问。
 - 终止时禁用访问。
 - 审核用户帐户和状态更改。
 - 审阅角色组和管理更改。
 
-使用适用于设备的[Microsoft 终结点管理器](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)和 "**管理设备**" 类别，您可以：
+使用适用于设备的 [Microsoft 终结点管理器](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) 和 " **管理设备** " 类别，您可以：
 
 - 阻止越狱断开的和根的移动设备。
 - 为移动设备管理配置 Intune。
@@ -69,10 +69,10 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
 - 要求移动设备在不活动时锁定。
 - 要求移动设备在出现多个登录失败时擦除。
 
-将[Exchange Online Protection 和 Office 365 高级威胁防护（ATP）](../security/office-365-security/office-365-atp.md)用于 "**防止威胁**" 类别，您可以：
+使用 [Exchange Online Protection 和 Office 365 高级威胁防护 (ATP) ](../security/office-365-security/office-365-atp.md) ，以获取针对 **威胁** 的防护类别，您可以：
 
-- 启用发件人身份验证（SPF、DMARC 和 DKIM）。
-- 设置 Office 365 高级威胁防护（ATP）反网络钓鱼策略。
+- 启用 (SPF、DMARC 和 DKIM) 的发件人身份验证。
+- 设置 Office 365 高级威胁防护 (ATP) 反网络钓鱼策略。
 - 实施 ATP 安全附件。
 - 实施 ATP 安全链接。
 - 实施恶意软件检测和响应策略。

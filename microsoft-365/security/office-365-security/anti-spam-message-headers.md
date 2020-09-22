@@ -16,14 +16,17 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解由 Exchange Online Protection (EOP) 添加到邮件的标头字段。 这些标头字段提供有关此邮件的信息，以及其处理方式的相关内容。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5423ccf658843ab22f30dcef99fe0a0c34d512f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 71cefb4a26751b92dd8b5e5a308bbc18b1a5c221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867183"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197497"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在所有 Microsoft 365 组织中，Exchange Online Protection (EOP) 会扫描所有传入邮件中的垃圾邮件、恶意软件和其他威胁。 这些扫描的结果将添加到消息中的以下标头字段中：
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198239"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -36,8 +39,8 @@ ms.locfileid: "47949308"
 | 列 | 数据类型 | 说明 |
 |------------|-------------|-------------|
 | `Timestamp` | datetime | 使用 IP 地址观察到设备的最晚时间 |
-| `IPAddress` | 字符串 | 设备使用的 IP 地址 |
-| `IPType` | 字符串 | 指示 IP 地址是否为公用地址或专用地址 |
+| `IPAddress` | string | 设备使用的 IP 地址 |
+| `IPType` | string | 指示 IP 地址是否为公用地址或专用地址 |
 | `NetworkAdapterType` | int | 已为其分配 IP 地址的设备使用的网络适配器类型。 有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
 | `ConnectedNetworks` | int | 与分配的 IP 地址的适配器连接的网络。 每个 JSON 数组包含网络名称、类别 (公用、专用或域) 、说明以及指示是否已将其公开连接到 internet 的标志 |
 

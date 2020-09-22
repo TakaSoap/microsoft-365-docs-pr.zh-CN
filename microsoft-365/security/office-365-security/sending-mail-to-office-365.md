@@ -1,5 +1,5 @@
 ---
-title: 向 Microsoft 365 发送邮件
+title: 将邮件发送到 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,26 +17,29 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 了解外部发件人，了解如何增强向 Microsoft 365 中的用户传送电子邮件的能力。 另外，了解如何以 &邮件的邮件报告电子邮件的哈希尝试。
-ms.openlocfilehash: f20d5d64bccb69db47c159a8166fa3532b51e3db
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 作为外部发件人学习，如何提高在 Microsoft 365 中向用户传递电子邮件的能力。 此外，还了解如何将垃圾邮件 & 网络钓鱼尝试作为外部用户进行报告。
+ms.openlocfilehash: 0c0a981d12fa5b8159789a69597f83eb15d9b194
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825181"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196793"
 ---
-# <a name="sending-mail-to-microsoft-365"></a>向 Microsoft 365 发送邮件
+# <a name="sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365
 
-这些文章有助于外部发件人改善其信誉，并提高他们向 Microsoft 365 的用户传送电子邮件的能力。 它们还提供了一些您如何报告垃圾邮件和网络钓鱼的信息（即使你不是 Microsoft 365 用户）。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-如果您不是客户，但正尝试向当前客户发送邮件，则您正在正位于正确的位置。 如果您是管理员，并且需要帮助来制助垃圾邮件，则这不是您要选择的部分。 请转为转到 [Microsoft 365 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
+
+这些文章可帮助外部发件人提高其信誉，并提高其在 Microsoft 365 中向用户发送电子邮件的能力。 它们还提供了有关如何报告垃圾邮件和网络钓鱼尝试的一些信息，即使你不是 Microsoft 365 用户自己的也是如此。
+
+如果你不是客户，但正尝试向中的某个人发送邮件，你就是正确的地方。 如果你是管理员，并且需要帮助抵制垃圾邮件，则这不是正确的部分。 相反，请转到 [Microsoft 365 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。
 
 ****
 
-|有关以下内容的信息：|请参阅...|
+|有关以下内容的信息：|请参阅 .。。|
 |---|---|
-|我们为电子邮件系统的管理员提供向客户发送单个和批量邮件的服务。|[非客户向 Office 365 发送邮件的服务](services-for-non-customers.md)|
-|如何解决通过电子邮件联系 Microsoft 365 客户的问题。 向 Microsoft 365 的收件人批量发送邮件的最佳做法。|[排除向 Office 365 发送邮件时的故障](troubleshooting-mail-sent-to-office-365.md)|
-|Microsoft 365 如何防止向我们的客户发送垃圾邮件，包括网络钓鱼和欺骗电子邮件。|[Microsoft 365 中的反垃圾邮件保护](anti-spam-protection.md)|
-|管理员如何向 Microsoft 365 客户发送电子邮件可在遵从我们的反垃圾邮件策略的前提下，避免电子邮件被阻止。 这是您需要了解的法律。|[参考：策略、实践和指南](reference-policies-practices-and-guidelines.md)|
+|我们为向客户发送个人和批量电子邮件的电子邮件系统的管理员提供的服务。|[非客户向 Office 365 发送邮件的服务](services-for-non-customers.md)|
+|如何解决通过电子邮件与 Microsoft 365 中的客户联系的问题。 将批量邮件发送到 Microsoft 365 收件人的最佳实践。|[排除向 Office 365 发送邮件时的故障](troubleshooting-mail-sent-to-office-365.md)|
+|Microsoft 365 如何阻止向我们的客户发送垃圾电子邮件，包括网络钓鱼和欺骗电子邮件。|[Microsoft 365 中的反垃圾邮件保护](anti-spam-protection.md)|
+|管理员如何向 Microsoft 365 客户发送电子邮件，可以避免通过遵守我们的反垃圾邮件策略阻止电子邮件。 这是您需要了解的法律。|[参考：策略、实践和指南](reference-policies-practices-and-guidelines.md)|
 |

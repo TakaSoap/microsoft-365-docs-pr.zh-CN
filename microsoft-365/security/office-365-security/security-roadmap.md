@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 团队提供的用于实施安全功能以保护您的 Microsoft 365 环境的主要建议。 '
-ms.openlocfilehash: 089e63ad9c83aac0bc5e88da8a24184eb8bdee6e
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 9bdddbbfbb20900a4645d2e17cf298ed018f4c6d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656953"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197425"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全路线图-前30天、90天及以上的首要优先级
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本文包含来自 Microsoft cybersecurity 团队的最佳建议，这些建议可实施安全功能来保护您的 Microsoft 365 环境。 本文适用于 Microsoft Ignite 会话— [安全 microsoft 365，如 cybersecurity pro：前30天、90天和之后的主要优先级](https://www.youtube.com/watch?v=luignzNyR-o)。 此会话是通过标记 Simos 和 Matt Kemelhar （企业 Cybersecurity 架构师）开发和展示的。
 
@@ -75,9 +78,9 @@ ms.locfileid: "46656953"
 
 ****
 
-|区域|Task|
+|区域|任务|
 |---|---|
-|安全管理|* 检查 () 的环境的推荐操作的安全得分 [https://securescore.office.com](https://securescore.office.com) 。  <br/>  * 继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。 <br/> * 查找并实施软件更新。 <br/> * 使用 ([Office 365 威胁情报](office-365-ti.md)) 附带的[攻击模拟器](attack-simulator.md)，对网络钓鱼、密码喷涂和强力密码攻击进行攻击模拟。  <br/> * 通过查看 "调查" 选项卡上的 "云应用安全" (中的内置报告来查找共享风险) 。 <br/> * 检查 [合规性分数](https://docs.microsoft.com/microsoft-365/compliance/compliance-score) 以查看适用于您的组织 (的法规的状态，如 GDPR、NIST 800-171) 。|
+|安全管理|* 检查 () 的环境的推荐操作的安全得分 [https://securescore.office.com](https://securescore.office.com) 。  <br/>  * 继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。 <br/> * 查找并实施软件更新。 <br/> * 使用 ([Office 365 威胁情报](office-365-ti.md)) 附带的[攻击模拟器](attack-simulator.md)，对网络钓鱼、密码喷涂和强力密码攻击进行攻击模拟。  <br/> * 通过查看 "调查" 选项卡上的 "云应用安全" (中的内置报告来查找共享风险) 。 <br/> * 检查 [合规性管理器](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) 以查看适用于您的组织 (的规章的状态，如 GDPR、NIST 800-171) 。|
 |威胁防护| 为管理员帐户实施增强的保护： <br/> * 为管理员活动配置 (PAWs) 的 [特权访问工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) 。 <br/> * 配置 [AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。 <br/> * Configure security information and event management (SIEM) 工具以收集 Office 365、云应用安全性和其他服务（包括 AD FS）中的日志记录数据。 审核日志仅存储90天的数据。 通过在 SIEM 工具中捕获此数据，可以将数据存储在更长的时间段中。|
 |标识和访问管理|* 为所有用户启用和强制执行 MFA。 <br/> * 实现一组 [条件访问和相关策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。 |
 |信息保护| 修改和实施信息保护策略。 这些资源包括示例： <br/> * [适用于 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr) <br/> * [配置具有三层保护的团队](../../solutions/configure-teams-three-tiers-protection.md) <br/> <br> 使用 Microsoft 365 中存储的数据丢失防护策略和监视工具来存储在 Microsoft (365 中的数据，而不是云应用安全) 。 <br><br>将云应用安全性与 Microsoft 365 结合使用，以获取高级警报 (功能，而不是数据丢失防护) 。|
@@ -90,7 +93,7 @@ ms.locfileid: "46656953"
 
 ****
 
-|区域|Task|
+|区域|任务|
 |---|---|
 |安全管理|* 使用安全分数 () 继续规划下一步操作 [https://securescore.office.com](https://securescore.office.com) 。 <br/> * 继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。 <br/> * 继续查找并实施软件更新。 <br/> * 将电子数据展示集成到您的法律和威胁响应流程中。|
 |威胁防护|* 在本地 (AD、AD FS) 上为标识组件 (SPA) 实施 [安全的权限访问](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) 。 <br/> * 使用云应用安全来监视内幕威胁。 <br/> * 通过使用云应用安全性发现影子 IT SaaS 使用。|

@@ -20,14 +20,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 304967a06c1fec2df6968f12be30ef3001fdb762
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b378288637baa5b51f74fb63d8c8da33ac5e148f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866867"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196187"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
 
@@ -109,7 +112,7 @@ Microsoft 安全评分已更新了 [在 Azure Active Directory 中支持安全�
 * 支持人员管理员
 * 用户管理员
 * 服务管理员
-* 安全读者
+* 安全读取者
 * 安全操作员
 * 全局读取者
 

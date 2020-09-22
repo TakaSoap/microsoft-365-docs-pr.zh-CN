@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何使用除名门户将自己从 Microsoft 365 阻止的发件人列表中删除。
-ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 2256cde6a3ca3a8ddd728cb2464adff702fa94c8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739243"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195827"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用除名门户将自己从阻止的发件人名单中删除
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 当您尝试向其电子邮件地址在 Microsoft 365 中的收件人发送电子邮件时，收到一条错误消息？ 如果您认为不应收到错误消息，可以使用除名门户将自己从阻止的发件人列表中删除。
 
@@ -35,7 +38,7 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
 
 在您收到包含类似于以下错误的邮件回复时，您就知道自己已被添加到该列表中：
 
-> 550 5.7.606-649 访问被拒绝，禁止发送 IP [_ip 地址_];若要请求从此列表中删除，请访问 https://sender.office.com/ 并按照说明操作。 有关详细信息，请参阅[Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
+> 550 5.7.606-649 访问被拒绝，禁止发送 IP [_ip 地址_];若要请求从此列表中删除，请访问 https://sender.office.com/ 并按照说明操作。 有关详细信息，请参阅 [Exchange Online 中的电子邮件未送达报告](https://docs.microsoft.com/Exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)。
 
 其中  _IP address_ 是邮件服务器在其上运行的计算机的 IP 地址。
 
@@ -60,4 +63,4 @@ Microsoft 使用阻止的发件人名单来防止其客户遭受垃圾邮件、�
     > [!NOTE]
     > 在删除限制之前，可能需要长达24小时或结果相差很大。
 
-请参阅[在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)和[EOP 中的出站垃圾邮件保护](outbound-spam-controls.md)以防止 IP 被阻止。
+请参阅 [在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md) 和 [EOP 中的出站垃圾邮件保护](outbound-spam-controls.md) 以防止 IP 被阻止。

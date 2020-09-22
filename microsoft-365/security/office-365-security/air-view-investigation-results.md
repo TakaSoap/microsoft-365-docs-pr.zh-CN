@@ -15,14 +15,17 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
-ms.openlocfilehash: 057dcf5e6f33c789ecfb47c7e3dfb49f0e2548fc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 6137edf741dc2ef21ec4e046b1985dd3f85b5720
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656833"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197687"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在[Office 365 高级威胁防护](office-365-atp.md)中进行[自动调查](office-365-air.md)时，有关该调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有所需的权限，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。
 
@@ -35,16 +38,16 @@ ms.locfileid: "46656833"
 |状态|含义|
 |---|---|
 |即将开始| 调查已触发并等待开始运行。|
-|正在运行| 调查过程已开始，正在进行中。 在审批[挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)时，也会发生此状态。|
-|找不到威胁| 调查已完成，且未标识 (用户帐户、电子邮件、URL 或文件) 的威胁。 <br/><br/>**提示**：如果你怀疑缺少某些内容 (例如误报) ，则可以使用[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)执行操作。|
-|发现威胁|自动调查发现了问题，但没有解决这些问题的具体补救措施。<br/><br/> 当确定了某些类型的用户活动但没有可用的清除操作时，可能会出现 "威胁已发现" 状态。 示例包括以下任何用户活动： <br/>- (DLP) 事件的[数据丢失防护](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) <br/>-发送异常的电子邮件 <br/>-发送的恶意软件 <br/>-发送的网络钓鱼<br/>调查发现没有要修正的恶意 Url、文件或电子邮件，并且没有要修复的邮箱活动，例如关闭转发规则或委派。 <br/><br/>**提示**：如果你怀疑缺少某些内容 (例如误报) ，则可以使用[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)进行调查并采取措施。|
-|已由系统终止| 调查已停止。 调查可能因以下几个原因而停止：<br/>-调查的待处理操作已过期。 等待为期一周的批准后，待处理的操作超时。 <br/>-操作过多。 例如，如果单击恶意 Url 的用户过多，则可能会超过调查运行所有分析器的能力，因此调查将暂停。 <br/><br/>**提示**：如果调查在执行操作之前停止，请尝试使用[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)查找和解决威胁。|
-|挂起的操作| 调查发现威胁，如恶意电子邮件、恶意 URL 或有风险的邮箱设置，以及用于补救威胁正在等待[批准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的操作。<br/><br/>如果发现任何具有相应操作的威胁，则会触发挂起操作状态。 但是，在调查运行时，挂起操作的列表可能会增加。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log)以查看其他项目是否仍处于待完成状态。|
-|已修正| 调查已完成，并批准了所有操作 (完全修正的) 。<br/><br/>**注意**：批准的修正操作可能会出现错误，从而导致无法执行操作。 无论纠正措施是否成功完成，调查状态不会更改。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。|
-|部分修正| 调查导致了补救措施，有些已批准并已完成。 其他操作仍[处于挂起状态](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。|
-|失败| 至少一个调查分析器遇到无法正确完成的问题。 <br/><br/>**注意**：如果在批准了修正操作后调查失败，则修正操作可能仍为 "成功"。 检查[调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)中的详细结果。|
-|按限制排队| 在队列中保留调查。 当其他调查完成时，将开始排队调查。 限制有助于避免较差的服务性能。 <br/><br/>**提示**：挂起的操作可能会限制可运行的新调查数。 请务必[批准 (或拒绝) 挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。|
-|已通过限制终止| 如果队列中保留的调查过长，它将停止。 <br/><br/>**提示**：您可以[从威胁资源管理器开始调查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
+|正在运行| 调查过程已开始，正在进行中。 在审批 [挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) 时，也会发生此状态。|
+|找不到威胁| 调查已完成，且未标识 (用户帐户、电子邮件、URL 或文件) 的威胁。 <br/><br/>**提示**：如果你怀疑缺少某些内容 (例如误报) ，则可以使用 [威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)执行操作。|
+|发现威胁|自动调查发现了问题，但没有解决这些问题的具体补救措施。<br/><br/> 当确定了某些类型的用户活动但没有可用的清除操作时，可能会出现 "威胁已发现" 状态。 示例包括以下任何用户活动： <br/>- (DLP) 事件的[数据丢失防护](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) <br/>-发送异常的电子邮件 <br/>-发送的恶意软件 <br/>-发送的网络钓鱼<br/>调查发现没有要修正的恶意 Url、文件或电子邮件，并且没有要修复的邮箱活动，例如关闭转发规则或委派。 <br/><br/>**提示**：如果你怀疑缺少某些内容 (例如误报) ，则可以使用 [威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)进行调查并采取措施。|
+|已由系统终止| 调查已停止。 调查可能因以下几个原因而停止：<br/>-调查的待处理操作已过期。 等待为期一周的批准后，待处理的操作超时。 <br/>-操作过多。 例如，如果单击恶意 Url 的用户过多，则可能会超过调查运行所有分析器的能力，因此调查将暂停。 <br/><br/>**提示**：如果调查在执行操作之前停止，请尝试使用 [威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) 查找和解决威胁。|
+|挂起的操作| 调查发现威胁，如恶意电子邮件、恶意 URL 或有风险的邮箱设置，以及用于补救威胁正在等待 [批准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的操作。<br/><br/>如果发现任何具有相应操作的威胁，则会触发挂起操作状态。 但是，在调查运行时，挂起操作的列表可能会增加。 检查 [调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) 以查看其他项目是否仍处于待完成状态。|
+|已修正| 调查已完成，并批准了所有操作 (完全修正的) 。<br/><br/>**注意**：批准的修正操作可能会出现错误，从而导致无法执行操作。 无论纠正措施是否成功完成，调查状态不会更改。 检查 [调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 中的详细结果。|
+|部分修正| 调查导致了补救措施，有些已批准并已完成。 其他操作仍 [处于挂起状态](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。|
+|已失败| 至少一个调查分析器遇到无法正确完成的问题。 <br/><br/>**注意**：如果在批准了修正操作后调查失败，则修正操作可能仍为 "成功"。 检查 [调查日志](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 中的详细结果。|
+|按限制排队| 在队列中保留调查。 当其他调查完成时，将开始排队调查。 限制有助于避免较差的服务性能。 <br/><br/>**提示**：挂起的操作可能会限制可运行的新调查数。 请务必 [批准 (或拒绝) 挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。|
+|已通过限制终止| 如果队列中保留的调查过长，它将停止。 <br/><br/>**提示**：您可以 [从威胁资源管理器开始调查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
 |
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
@@ -53,7 +56,7 @@ ms.locfileid: "46656833"
 
 2. 执行下列操作之一：
 
-    - 转到 "**威胁管理**  >  **仪表板**"。 这将转到[安全仪表板](security-dashboard.md)。 您的空中小组件显示在[安全仪表板](security-dashboard.md)的顶部。 选择一个小部件，如**调查摘要**。
+    - 转到 "**威胁管理**  >  **仪表板**"。 这将转到 [安全仪表板](security-dashboard.md)。 您的空中小组件显示在 [安全仪表板](security-dashboard.md)的顶部。 选择一个小部件，如 **调查摘要**。
 
     - 转到**威胁管理**  >  **调查**。
 
@@ -69,7 +72,7 @@ ms.locfileid: "46656833"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>查看与调查相关的警报的详细信息
 
-某些类型的警报会在 Microsoft 365 中触发自动调查。 若要了解详细信息，请参阅[警报](automated-investigation-response-office.md#alerts)。 使用以下过程可查看与自动调查相关联的警报的详细信息。
+某些类型的警报会在 Microsoft 365 中触发自动调查。 若要了解详细信息，请参阅 [警报](automated-investigation-response-office.md#alerts)。 使用以下过程可查看与自动调查相关联的警报的详细信息。
 
 1. 请转到 Security & 合规性中心 ([https://protection.office.com](https://protection.office.com)) 并登录。
 
@@ -77,17 +80,17 @@ ms.locfileid: "46656833"
 
 3. 在调查列表中，选择 " **ID** " 列中的项目。
 
-4. 通过打开调查的详细信息，选择 "**通知**" 选项卡。下面列出了所有触发调查的警报。
+4. 通过打开调查的详细信息，选择 " **通知** " 选项卡。下面列出了所有触发调查的警报。
 
 5. 选择列表项。 将打开一个浮出控件，其中包含有关该警报的详细信息以及指向其他信息和操作的链接。
 
-6. 查看浮出控件上的信息，根据特定的通知执行操作，如**Resolve**、**隐含**或**通知用户**。
+6. 查看浮出控件上的信息，根据特定的通知执行操作，如 **Resolve**、 **隐含**或 **通知用户**。
 
-    - **Resolve**等效于关闭通知
+    - **Resolve** 等效于关闭通知
 
-    - **禁止**使策略在指定时间段内触发警报
+    - **禁止** 使策略在指定时间段内触发警报
 
-    - **通知用户**启动电子邮件，其中包含已输入的用户电子邮件地址，并允许安全操作团队向这些用户键入邮件。  (这类似于使用[威胁资源管理器](threat-explorer.md)向收件人发送邮件。 ) 
+    - **通知用户** 启动电子邮件，其中包含已输入的用户电子邮件地址，并允许安全操作团队向这些用户键入邮件。  (这类似于使用 [威胁资源管理器](threat-explorer.md)向收件人发送邮件。 ) 
 
 ## <a name="how-to-use-the-various-tabs"></a>如何使用各种选项卡
 
@@ -101,8 +104,8 @@ ms.locfileid: "46656833"
 
 可执行下列操作：
 
-- 直接导航到调查 (选择**调查 ID**) 。
-- 应用筛选器。 从**调查类型**、**时间范围**、**状态**或这些情况的组合中进行选择。
+- 直接导航到调查 (选择 **调查 ID**) 。
+- 应用筛选器。 从 **调查类型**、 **时间范围**、 **状态**或这些情况的组合中进行选择。
 - 将数据导出到 .csv 文件。
 
 ### <a name="investigation-graph"></a>调查图形
@@ -120,7 +123,7 @@ ms.locfileid: "46656833"
 
 ### <a name="alert-investigation"></a>通知调查
 
-在调查的 "**通知**" 选项卡上，您可以查看与调查相关的警报。 详细信息包括触发调查的警报以及与调查相关的其他关联警报（如有风险的登录、 [DLP 策略](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies)冲突等）。 在此页面中，安全分析员还可以查看各个通知的其他详细信息。
+在调查的 " **通知** " 选项卡上，您可以查看与调查相关的警报。 详细信息包括触发调查的警报以及与调查相关的其他关联警报（如有风险的登录、 [DLP 策略](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) 冲突等）。 在此页面中，安全分析员还可以查看各个通知的其他详细信息。
 
 ![空气警报页面](../../media/air-investigationalertspage.png)
 
@@ -131,7 +134,7 @@ ms.locfileid: "46656833"
 
 ### <a name="email-investigation"></a>电子邮件调查
 
-在调查的 "**电子邮件**" 选项卡上，您可以查看原始电子邮件和在调查过程中标识的类似电子邮件的群集。
+在调查的 " **电子邮件** " 选项卡上，您可以查看原始电子邮件和在调查过程中标识的类似电子邮件的群集。
 
 由于组织中的用户发送和接收的电子邮件量巨大，以及电子邮件通信和攻击的多用户性质，因此
 
@@ -146,11 +149,11 @@ ms.locfileid: "46656833"
 - 相似性群集是通过搜寻具有类似发件人和内容属性的电子邮件来标识的电子邮件。 根据原始检测结果评估这些群集中的恶意内容。 包含足够恶意电子邮件检测的电子邮件群集被视为恶意电子邮件。
 - 指示器群集是通过搜寻来自原始电子邮件的同一指示器实体 (文件哈希或 URL) 来标识的电子邮件。 将原始文件/URL 实体标识为恶意时，AIR 会将指示器判定为包含该实体的电子邮件的整个群集。 被标识为恶意软件的文件意味着包含该文件的电子邮件群集将被视为恶意软件电子邮件。
 
-群集的目标是查找和查找与攻击或市场活动中的同一发件人发送的其他相关电子邮件。  在某些情况下，合法的电子邮件可能会触发调查 (例如，用户会报告营销电子邮件) 。  在这些方案中，电子邮件群集应确定电子邮件群集不是恶意的–如果它相应地执行此操作，则不会表示威胁，也**不**会建议删除电子邮件。
+群集的目标是查找和查找与攻击或市场活动中的同一发件人发送的其他相关电子邮件。  在某些情况下，合法的电子邮件可能会触发调查 (例如，用户会报告营销电子邮件) 。  在这些方案中，电子邮件群集应确定电子邮件群集不是恶意的–如果它相应地执行此操作，则不会表示威胁，也 **不** 会建议删除电子邮件。
 
-"**电子邮件**" 选项卡还显示与调查相关的电子邮件项目，例如用户报告的电子邮件详细信息、报告的原始电子邮件、电子邮件 (s) zapped 由于恶意软件/网络钓鱼诈骗等。
+" **电子邮件** " 选项卡还显示与调查相关的电子邮件项目，例如用户报告的电子邮件详细信息、报告的原始电子邮件、电子邮件 (s) zapped 由于恶意软件/网络钓鱼诈骗等。
 
-"电子邮件" 选项卡上标识的电子邮件计数当前代表 "**电子邮件**" 选项卡上显示的所有电子邮件的总数。由于电子邮件存在于多个群集中，因此 (的电子邮件的实际总数) 是在所有群集和原始收件人的电子邮件中显示的唯一电子邮件数。
+"电子邮件" 选项卡上标识的电子邮件计数当前代表 " **电子邮件** " 选项卡上显示的所有电子邮件的总数。由于电子邮件存在于多个群集中，因此 (的电子邮件的实际总数) 是在所有群集和原始收件人的电子邮件中显示的唯一电子邮件数。
 
 由于每个收件人的安全 verdicts、操作和传递位置各不相同，因此每个收件人的资源管理器和空中计数电子邮件都会有所不同。 因此，发送给三个用户的原始电子邮件总共计为三封电子邮件，而不是一封电子邮件。 注释可能会出现两次或多次计数电子邮件的情况，因为电子邮件可能会对其进行多个操作，并且在发生所有操作后，可能会有多个电子邮件副本。 例如，在传递时检测到的恶意软件电子邮件可能会导致阻止的 (隔离) 电子邮件和替换过的电子邮件 (威胁文件替换为警告文件，然后传递到用户的邮箱) 。 由于系统中的电子邮件有两个副本，这两个副本可能会在群集计数中进行计数。
 
@@ -172,9 +175,9 @@ ms.locfileid: "46656833"
 
 ### <a name="user-investigation"></a>用户调查
 
-在 "**用户**" 选项卡上，您可以看到标识为调查的一部分的所有用户。 当存在事件或指示这些用户帐户可能受到影响或受到威胁时，用户帐户将出现在调查中。
+在 " **用户** " 选项卡上，您可以看到标识为调查的一部分的所有用户。 当存在事件或指示这些用户帐户可能受到影响或受到威胁时，用户帐户将出现在调查中。
 
-例如，在下图中，空气根据创建的新收件箱规则确定了安全指标和异常情况。 可通过此选项卡中的详细视图获取调查 (证据) 的其他详细信息。危害和异常指示器也可能包含来自[Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)的异常检测。
+例如，在下图中，空气根据创建的新收件箱规则确定了安全指标和异常情况。 可通过此选项卡中的详细视图获取调查 (证据) 的其他详细信息。损坏的现象和异常也可能包含来自 [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)的异常检测。
 
 ![空中调查用户页](../../media/air-investigationuserspage.png)
 
@@ -184,21 +187,21 @@ ms.locfileid: "46656833"
 
 ### <a name="machine-investigation"></a>机器调查
 
-在 "**计算机**" 选项卡上，您可以看到标识为调查的一部分的所有计算机。
+在 " **计算机** " 选项卡上，您可以看到标识为调查的一部分的所有计算机。
 
 ![空中调查计算机页面](../../media/air-investigationmachinepage.png)
 
-作为一些行动手册的一部分，空中将电子邮件威胁与设备 (例如 Zapped 恶意软件) 相关联。 例如，调查会将恶意文件哈希传递到[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-)以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。
+作为一些行动手册的一部分，空中将电子邮件威胁与设备 (例如 Zapped 恶意软件) 相关联。 例如，调查会将恶意文件哈希传递到 [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) 以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。
 
 可执行下列操作：
 
 - 获取发现的当前计算机和威胁的直观概述。
-- 选择一台计算机以打开在 Microsoft Defender 安全中心的相关[Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)中的视图。
+- 选择一台计算机以打开在 Microsoft Defender 安全中心的相关 [Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 中的视图。
 
 ### <a name="entity-investigation"></a>实体调查
 
-在 "**实体**" 选项卡上，您可以看到在调查过程中标识和分析的实体。
+在 " **实体** " 选项卡上，您可以看到在调查过程中标识和分析的实体。
 
 在这里，您可以查看调查的实体和实体类型的详细信息，例如电子邮件、群集、IP 地址、用户等。 您还可以查看已分析的实体数以及与每个实体相关联的威胁。
 
@@ -212,7 +215,7 @@ ms.locfileid: "46656833"
 
 ### <a name="playbook-log"></a>行动手册日志
 
-在 "**日志**" 选项卡上，您可以查看调查过程中的所有操作手册步骤。 该日志将捕获由 Office 365 自动调查功能作为空气的一部分完成的所有分析器和操作的完整清单。 它提供了所执行的所有步骤的清晰视图，包括操作本身、说明以及实际 "开始到完成" 的持续时间。
+在 " **日志** " 选项卡上，您可以查看调查过程中的所有操作手册步骤。 该日志将捕获由 Office 365 自动调查功能作为空气的一部分完成的所有分析器和操作的完整清单。 它提供了所执行的所有步骤的清晰视图，包括操作本身、说明以及实际 "开始到完成" 的持续时间。
 
 ![航空调查日志页](../../media/air-investigationlogpage.png)
 
@@ -226,7 +229,7 @@ ms.locfileid: "46656833"
 
 |工具| 说明|
 |---|---|
-|DLP 违规调查|调查由[数据丢失防护](../../compliance/data-loss-prevention-policies.md) (DLP) 检测到的任何冲突|
+|DLP 违规调查|调查由 [数据丢失防护](../../compliance/data-loss-prevention-policies.md) (DLP) 检测到的任何冲突|
 |电子邮件指示器提取|从要调查的电子邮件的标题、正文和内容中提取指示器|
 |文件哈希信誉|根据组织中的用户和计算机的文件哈希值检测异常|
 |邮件群集标识|基于标头、正文、内容和 Url 的电子邮件群集分析|
@@ -237,19 +240,19 @@ ms.locfileid: "46656833"
 |按需沙箱|对电子邮件、附件和 Url 触发按需沙箱|
 |出站邮件异常情况调查|根据历史邮件流为组织中的用户发送模式来检测异常情况|
 |出站恶意软件和垃圾邮件异常调查|检测来自组织中用户的组织内部和出站恶意软件、网络钓鱼诈骗或垃圾邮件|
-|发件人域调查|根据需要检查[Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence)和外部威胁智能源中的域信誉|
-|发件人 IP 调查| 根据需要检查[Microsoft 智能安全图](https://www.microsoft.com/security/operations/intelligence)和外部威胁智能源的 IP 信誉|
-|URL 单击调查| 调查受[Office 365 ATP 安全链接](atp-safe-links.md)保护的用户对组织的点击率|
-|URL 信誉调查|对来自[Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence)和外部威胁智能源的 URL 信誉的按需检查|
+|发件人域调查|根据需要检查 [Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源中的域信誉|
+|发件人 IP 调查| 根据需要检查 [Microsoft 智能安全图](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源的 IP 信誉|
+|URL 单击调查| 调查受 [Office 365 ATP 安全链接](atp-safe-links.md) 保护的用户对组织的点击率|
+|URL 信誉调查|对来自 [Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源的 URL 信誉的按需检查|
 |用户活动调查|分析[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中的用户活动异常|
-|用户报告的电子邮件指示器提取|从标头、正文和[用户报告的电子邮件](enable-the-report-message-add-in.md)的内容中提取指示器以供调查|
+|用户报告的电子邮件指示器提取|从标头、正文和 [用户报告的电子邮件](enable-the-report-message-add-in.md) 的内容中提取指示器以供调查|
 |
 
 ### <a name="recommended-actions"></a>建议的操作
 
-在 "**操作**" 选项卡上，您可以查看在调查完成后建议用于修正的所有操作手册操作。
+在 " **操作** " 选项卡上，您可以查看在调查完成后建议用于修正的所有操作手册操作。
 
-操作会捕获 Microsoft 建议在调查结束时执行的步骤。 您可以通过选择一个或多个操作来采取补救措施。 单击 "**批准**" 可开始进行修正。  (需要适当的权限-从资源管理器和 AIR) 运行操作需要 "搜索和清除" 角色。 例如，安全读者可以查看操作但不能批准。 注意：无需批准每个操作。 如果您不同意建议的操作，或者您的组织未选择特定类型的操作，则可以选择**拒绝**这些操作，也可以仅忽略它们，不执行任何操作。 "批准和/或拒绝所有操作" 可让调查完全关闭 (状态变为 "已修正") ，而保留某些操作不完整将导致调查状态更改为 "部分修正" 状态。
+操作会捕获 Microsoft 建议在调查结束时执行的步骤。 您可以通过选择一个或多个操作来采取补救措施。 单击 " **批准** " 可开始进行修正。  (需要适当的权限-从资源管理器和 AIR) 运行操作需要 "搜索和清除" 角色。 例如，安全读者可以查看操作但不能批准。 注意：无需批准每个操作。 如果您不同意建议的操作，或者您的组织未选择特定类型的操作，则可以选择 **拒绝** 这些操作，也可以仅忽略它们，不执行任何操作。 "批准和/或拒绝所有操作" 可让调查完全关闭 (状态变为 "已修正") ，而保留某些操作不完整将导致调查状态更改为 "部分修正" 状态。
 
 ![航空调查操作页](../../media/air-investigationactionspage.png)
 

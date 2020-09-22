@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: d33bd62e9a06385bf3448b7744031ae030dbe3ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171394"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195839"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 除了安全性 & 合规性中心中的 [邮件流仪表板](mail-flow-insights-v2.md) 中提供的邮件流报告之外，"报告" 仪表板中还提供了多种其他邮件流报告，可帮助您监视 Microsoft 365 组织。
 
@@ -131,22 +134,22 @@ ms.locfileid: "48171394"
 
   - **Date**
   - **传输规则**
-  - **主题**
+  - **Subject**
   - **发件人地址**
   - **收件人地址**
   - **严重性**
-  - **方向**
+  - **Direction**
 
 - **数据查看依据： DLP Exchange 传输规则**：
 
   - **Date**
   - **DLP 策略**
   - **传输规则**
-  - **主题**
+  - **Subject**
   - **发件人地址**
   - **收件人地址**
   - **严重性**
-  - **方向**
+  - **Direction**
 
 如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以使用以下筛选器修改结果：
 
@@ -237,8 +240,8 @@ ms.locfileid: "48171394"
 
 数据表包含以下信息：
 
-- **方向**
-- **类型**
+- **Direction**
+- **Type**
 - **24 小时**
 - **3 天**
 - **7 天**
@@ -445,8 +448,8 @@ ms.locfileid: "48171394"
 如果在 "分解方式" 中单击 " **查看详细信息表** **：方向** " 或 " **分解方式"： "方向** " 视图，将显示以下信息：
 
 - **日期 (UTC) **
-- **类型**
-- **方向**
+- **Type**
+- **Direction**
 - **邮件计数**
 
 如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以使用以下筛选器修改结果：
