@@ -17,51 +17,54 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 685132e3f5c303f21fde3702725a84e24383e679
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949308"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198239"
 ---
-# <a name="assignedipaddresses"></a><span data-ttu-id="64270-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="64270-104">AssignedIPAddresses()</span></span>
+# <a name="assignedipaddresses"></a><span data-ttu-id="9ebfd-104">AssignedIPAddresses()</span><span class="sxs-lookup"><span data-stu-id="9ebfd-104">AssignedIPAddresses()</span></span>
 
-<span data-ttu-id="64270-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="64270-105">**Applies to:**</span></span>
-- <span data-ttu-id="64270-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="64270-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="64270-107">使用该 `AssignedIPAddresses()` 函数可以快速获取已分配给设备的最新 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="64270-107">Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="64270-108">如果指定时间戳参数，此函数将获取指定时间的最新 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="64270-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
 
-<span data-ttu-id="64270-109">此函数返回具有以下列的表：</span><span class="sxs-lookup"><span data-stu-id="64270-109">This function returns a table with the following columns:</span></span>
+<span data-ttu-id="9ebfd-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="9ebfd-105">**Applies to:**</span></span>
+- <span data-ttu-id="9ebfd-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="9ebfd-106">Microsoft Threat Protection</span></span>
 
-| <span data-ttu-id="64270-110">列</span><span class="sxs-lookup"><span data-stu-id="64270-110">Column</span></span> | <span data-ttu-id="64270-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="64270-111">Data type</span></span> | <span data-ttu-id="64270-112">说明</span><span class="sxs-lookup"><span data-stu-id="64270-112">Description</span></span> |
+<span data-ttu-id="9ebfd-107">使用该 `AssignedIPAddresses()` 函数可以快速获取已分配给设备的最新 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-107">Use the `AssignedIPAddresses()` function to quickly obtain the latest IP addresses that have been assigned to a device.</span></span> <span data-ttu-id="9ebfd-108">如果指定时间戳参数，此函数将获取指定时间的最新 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-108">If you specify a timestamp argument, this function obtains the most recent IP addresses at the specified time.</span></span> 
+
+<span data-ttu-id="9ebfd-109">此函数返回具有以下列的表：</span><span class="sxs-lookup"><span data-stu-id="9ebfd-109">This function returns a table with the following columns:</span></span>
+
+| <span data-ttu-id="9ebfd-110">列</span><span class="sxs-lookup"><span data-stu-id="9ebfd-110">Column</span></span> | <span data-ttu-id="9ebfd-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="9ebfd-111">Data type</span></span> | <span data-ttu-id="9ebfd-112">说明</span><span class="sxs-lookup"><span data-stu-id="9ebfd-112">Description</span></span> |
 |------------|-------------|-------------|
-| `Timestamp` | <span data-ttu-id="64270-113">datetime</span><span class="sxs-lookup"><span data-stu-id="64270-113">datetime</span></span> | <span data-ttu-id="64270-114">使用 IP 地址观察到设备的最晚时间</span><span class="sxs-lookup"><span data-stu-id="64270-114">Latest time when the device was observed using the IP address</span></span> |
-| `IPAddress` | <span data-ttu-id="64270-115">字符串</span><span class="sxs-lookup"><span data-stu-id="64270-115">string</span></span> | <span data-ttu-id="64270-116">设备使用的 IP 地址</span><span class="sxs-lookup"><span data-stu-id="64270-116">IP address used by the device</span></span> |
-| `IPType` | <span data-ttu-id="64270-117">字符串</span><span class="sxs-lookup"><span data-stu-id="64270-117">string</span></span> | <span data-ttu-id="64270-118">指示 IP 地址是否为公用地址或专用地址</span><span class="sxs-lookup"><span data-stu-id="64270-118">Indicates whether the IP address is a public or private address</span></span> |
-| `NetworkAdapterType` | <span data-ttu-id="64270-119">int</span><span class="sxs-lookup"><span data-stu-id="64270-119">int</span></span> | <span data-ttu-id="64270-120">已为其分配 IP 地址的设备使用的网络适配器类型。</span><span class="sxs-lookup"><span data-stu-id="64270-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="64270-121">有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span><span class="sxs-lookup"><span data-stu-id="64270-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
-| `ConnectedNetworks` | <span data-ttu-id="64270-122">int</span><span class="sxs-lookup"><span data-stu-id="64270-122">int</span></span> | <span data-ttu-id="64270-123">与分配的 IP 地址的适配器连接的网络。</span><span class="sxs-lookup"><span data-stu-id="64270-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="64270-124">每个 JSON 数组包含网络名称、类别 (公用、专用或域) 、说明以及指示是否已将其公开连接到 internet 的标志</span><span class="sxs-lookup"><span data-stu-id="64270-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
+| `Timestamp` | <span data-ttu-id="9ebfd-113">datetime</span><span class="sxs-lookup"><span data-stu-id="9ebfd-113">datetime</span></span> | <span data-ttu-id="9ebfd-114">使用 IP 地址观察到设备的最晚时间</span><span class="sxs-lookup"><span data-stu-id="9ebfd-114">Latest time when the device was observed using the IP address</span></span> |
+| `IPAddress` | <span data-ttu-id="9ebfd-115">string</span><span class="sxs-lookup"><span data-stu-id="9ebfd-115">string</span></span> | <span data-ttu-id="9ebfd-116">设备使用的 IP 地址</span><span class="sxs-lookup"><span data-stu-id="9ebfd-116">IP address used by the device</span></span> |
+| `IPType` | <span data-ttu-id="9ebfd-117">string</span><span class="sxs-lookup"><span data-stu-id="9ebfd-117">string</span></span> | <span data-ttu-id="9ebfd-118">指示 IP 地址是否为公用地址或专用地址</span><span class="sxs-lookup"><span data-stu-id="9ebfd-118">Indicates whether the IP address is a public or private address</span></span> |
+| `NetworkAdapterType` | <span data-ttu-id="9ebfd-119">int</span><span class="sxs-lookup"><span data-stu-id="9ebfd-119">int</span></span> | <span data-ttu-id="9ebfd-120">已为其分配 IP 地址的设备使用的网络适配器类型。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-120">Network adapter type used by the device that has been assigned the IP address.</span></span> <span data-ttu-id="9ebfd-121">有关可能的值，请参阅 [this 枚举](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span><span class="sxs-lookup"><span data-stu-id="9ebfd-121">For the possible values, refer to [this enumeration](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype)</span></span> |
+| `ConnectedNetworks` | <span data-ttu-id="9ebfd-122">int</span><span class="sxs-lookup"><span data-stu-id="9ebfd-122">int</span></span> | <span data-ttu-id="9ebfd-123">与分配的 IP 地址的适配器连接的网络。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-123">Networks that the adapter with the assigned IP address is connected to.</span></span> <span data-ttu-id="9ebfd-124">每个 JSON 数组包含网络名称、类别 (公用、专用或域) 、说明以及指示是否已将其公开连接到 internet 的标志</span><span class="sxs-lookup"><span data-stu-id="9ebfd-124">Each JSON array contains the network name, category (public, private, or domain), a description, and a flag indicating if it's connected publicly to the internet</span></span> |
 
-## <a name="syntax"></a><span data-ttu-id="64270-125">语法</span><span class="sxs-lookup"><span data-stu-id="64270-125">Syntax</span></span>
+## <a name="syntax"></a><span data-ttu-id="9ebfd-125">语法</span><span class="sxs-lookup"><span data-stu-id="9ebfd-125">Syntax</span></span>
 
 ```kusto
 AssignedIPAddresses(x, y)
 ```
 
-## <a name="arguments"></a><span data-ttu-id="64270-126">参数</span><span class="sxs-lookup"><span data-stu-id="64270-126">Arguments</span></span>
+## <a name="arguments"></a><span data-ttu-id="9ebfd-126">参数</span><span class="sxs-lookup"><span data-stu-id="9ebfd-126">Arguments</span></span>
 
-- <span data-ttu-id="64270-127">**x**— `DeviceId` 或 `DeviceName` 标识设备的值</span><span class="sxs-lookup"><span data-stu-id="64270-127">**x**—`DeviceId` or `DeviceName` value identifying the device</span></span>
-- <span data-ttu-id="64270-128">**y**— `Timestamp` (datetime) 值指示函数获取特定时间的最近分配的 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="64270-128">**y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="64270-129">如果未指定，则该函数将返回最新的 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="64270-129">If not specified, the function returns the latest IP addresses.</span></span>
+- <span data-ttu-id="9ebfd-127">**x**— `DeviceId` 或 `DeviceName` 标识设备的值</span><span class="sxs-lookup"><span data-stu-id="9ebfd-127">**x**—`DeviceId` or `DeviceName` value identifying the device</span></span>
+- <span data-ttu-id="9ebfd-128">**y**— `Timestamp` (datetime) 值指示函数获取特定时间的最近分配的 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-128">**y**—`Timestamp` (datetime) value instructing the function to obtain the most recent assigned IP addresses from a specific time.</span></span> <span data-ttu-id="9ebfd-129">如果未指定，则该函数将返回最新的 IP 地址。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-129">If not specified, the function returns the latest IP addresses.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="64270-130">示例</span><span class="sxs-lookup"><span data-stu-id="64270-130">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="9ebfd-130">示例</span><span class="sxs-lookup"><span data-stu-id="9ebfd-130">Examples</span></span>
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="64270-131">获取设备24小时前使用的 IP 地址的列表</span><span class="sxs-lookup"><span data-stu-id="64270-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a><span data-ttu-id="9ebfd-131">获取设备24小时前使用的 IP 地址的列表</span><span class="sxs-lookup"><span data-stu-id="9ebfd-131">Get the list of IP addresses used by a device 24 hours ago</span></span>
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="64270-132">获取设备使用的 IP 地址并查找与之通信的设备</span><span class="sxs-lookup"><span data-stu-id="64270-132">Get IP addresses used by a device and find devices communicating with it</span></span>
-<span data-ttu-id="64270-133">此查询使用 `AssignedIPAddresses()` 函数来获取设备 (`example-device-name`) 在特定日期 () 之前或之前的已分配 IP 地址 `example-date` 。</span><span class="sxs-lookup"><span data-stu-id="64270-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="64270-134">然后，它使用 IP 地址查找与其他设备启动的设备的连接。</span><span class="sxs-lookup"><span data-stu-id="64270-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a><span data-ttu-id="9ebfd-132">获取设备使用的 IP 地址并查找与之通信的设备</span><span class="sxs-lookup"><span data-stu-id="9ebfd-132">Get IP addresses used by a device and find devices communicating with it</span></span>
+<span data-ttu-id="9ebfd-133">此查询使用 `AssignedIPAddresses()` 函数来获取设备 (`example-device-name`) 在特定日期 () 之前或之前的已分配 IP 地址 `example-date` 。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-133">This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`).</span></span> <span data-ttu-id="9ebfd-134">然后，它使用 IP 地址查找与其他设备启动的设备的连接。</span><span class="sxs-lookup"><span data-stu-id="9ebfd-134">It then uses the IP addresses to find connections to the device initiated by other devices.</span></span> 
 
 ```kusto
 let Date = datetime(example-date);
@@ -75,7 +78,7 @@ AssignedIPAddresses(DeviceName, Date)
 | where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
-## <a name="related-topics"></a><span data-ttu-id="64270-135">相关主题</span><span class="sxs-lookup"><span data-stu-id="64270-135">Related topics</span></span>
-- [<span data-ttu-id="64270-136">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="64270-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="64270-137">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="64270-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="64270-138">了解架构</span><span class="sxs-lookup"><span data-stu-id="64270-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+## <a name="related-topics"></a><span data-ttu-id="9ebfd-135">相关主题</span><span class="sxs-lookup"><span data-stu-id="9ebfd-135">Related topics</span></span>
+- [<span data-ttu-id="9ebfd-136">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="9ebfd-136">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="9ebfd-137">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="9ebfd-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="9ebfd-138">了解架构</span><span class="sxs-lookup"><span data-stu-id="9ebfd-138">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
