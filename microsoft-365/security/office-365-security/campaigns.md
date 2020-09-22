@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的 Campaigns Views。
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173304"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203475"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的 Campaign Views
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 "市场活动视图" 是高级威胁防护 (ATP) Plan 2 (示例中的一项功能，例如 Microsoft 365 E5 或具有 ATP 计划2附加) 的组织。 安全 & 合规性中心中的市场活动视图用于识别和分类服务中的网络钓鱼攻击。 Campaign Views 可以帮助你：
 
@@ -126,7 +129,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
   - **发件人**
   - **Recipients**
   - **发件人域**
-  - **主题**
+  - **Subject**
   - **附件的文件名**
   - **恶意软件系列**
   - **传递操作**
@@ -218,7 +221,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
   ****
 
-  |值|垃圾邮件筛选器判定|描述|
+  |值|垃圾邮件筛选器判定|说明|
   |---|---|---|
   |**允许**|`SFV:SKN` <br/><br/> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为 "非垃圾邮件" 和/或 "跳过筛选"。 例如，邮件流规则已将邮件标记为 "非垃圾邮件" (也称为 "传输规则) "。<br/><br/>邮件由于其他原因而跳过垃圾邮件筛选。 例如，发件人和收件人显示在同一个组织中。|
   |**阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|

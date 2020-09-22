@@ -18,14 +18,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: ef6e1b2edecc8ee8318f1b1e6228e9931b8c66c5
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351881"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202695"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 有许多工具可用于监视个人数据的使用和传输。本主题介绍了三种十分有用的工具。
 

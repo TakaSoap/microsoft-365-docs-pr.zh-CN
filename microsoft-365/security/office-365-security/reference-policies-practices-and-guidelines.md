@@ -16,14 +16,17 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 制定了各种策略和过程，并采用了几个行业最佳实践来帮助我们的用户避免滥用、不受欢迎或恶意的电子邮件。
-ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b971823201fb805c9e17da8402250065d274668d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949652"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202371"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>参考：策略、实践和指南
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft 致力于在 Web 上提供最可信赖的用户体验。 因此，Microsoft 已开发了多种策略、过程并采用多个行业的最佳实践，以保护我们的用户免受滥用、不必要或恶意的电子邮件的侵扰。 尝试向用户发送电子邮件的发件人应确保他们完全了解并遵循本文中的指导操作，以帮助避免潜在的传递问题。
 

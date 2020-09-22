@@ -16,14 +16,17 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和高级威胁防护 (ATP) 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护 (ATP) ，还会获得什么额外内容？
-ms.openlocfilehash: 1022accb992fbc0aee92b8da97f9d8a48cbe35f2
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405379"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202707"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Exchange Online Protection (EOP) ** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护 (ATP) ** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
@@ -119,7 +122,7 @@ ms.locfileid: "47405379"
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|**是否要在邮件被隔离时通知收件人？** <br/><br/> _操作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
+|**是否要在邮件被隔离时通知收件人？** <br/><br/> _Action_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <br/><br/> _EnableFileFilter_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
 |**恶意软件零小时自动清除** <br/><br/> _ZapEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**通知内部发件人** 未送达邮件 <br/><br/> _EnableInternalSenderNotifications_|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`||
@@ -260,7 +263,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|**安全附件未知的恶意软件响应** <br/><br/> _操作_|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`||
+|**安全附件未知的恶意软件响应** <br/><br/> _Action_|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`||
 |**在检测时重定向附件** ： **启用重定向** <br/><br/> _重定向_ <br/><br/> _RedirectAddress_|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|
 |**如果恶意软件扫描附件超时或发生错误，则应用上面的选择。** <br/><br/> _ActionOnError_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |

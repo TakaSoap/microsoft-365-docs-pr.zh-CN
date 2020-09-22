@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
-ms.openlocfilehash: 21e04021267d64c48219cbffc46f36739b8035c0
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826609"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202839"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 无论是在有 Exchange Online 邮箱的 Microsoft 365 组织中，还是在没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，隔离功能都会隔离具有潜在危险或不需要的邮件。 有关详细信息，请参阅 [EOP 的隔离功能](quarantine-email-messages.md)。
 

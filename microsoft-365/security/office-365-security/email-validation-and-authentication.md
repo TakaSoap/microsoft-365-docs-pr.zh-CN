@@ -18,14 +18,17 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137043"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202971"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 在所有 Microsoft 365 组织中，EOP 使用以下标准验证入站电子邮件：
 

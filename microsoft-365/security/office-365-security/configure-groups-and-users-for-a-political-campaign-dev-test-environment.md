@@ -18,14 +18,17 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7282659399d2541b50c43dffc9fc8690baecd803
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308435"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203355"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>为政治宣传活动开发/测试环境配置组和用户
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要**：通过用户和组创建适用于政治宣传活动开发/测试环境的 Office 365 和 Microsoft 企业移动性 + 安全性 (EMS) 试用订阅。
 

@@ -19,14 +19,17 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Microsoft 365 安全 & 合规性中心中分配权限，才能管理其任何安全性或合规性功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202803"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 用户需要在安全 & 合规性中心中分配权限，然后才能管理其任何安全性或合规性功能。 作为 Security & 合规中心中的 OrganizationManagement 角色组的全局管理员或成员，您可以向用户授予这些权限。 用户将只能管理你授权他们访问的安全或合规性功能。
 
@@ -52,7 +55,7 @@ ms.locfileid: "46868917"
 
 4. 在选择了要添加到角色组的所有用户后，单击 "**添加 \> ** "，然后单击 **"确定"**。
 
-5. 完成后，单击“**保存**”。
+5. 完成时，请单击“保存”****。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全 & 合规性中心 PowerShell 向另一个用户授予对安全 & 合规性中心的访问权限
 

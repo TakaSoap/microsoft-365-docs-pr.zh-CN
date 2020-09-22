@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e790f4f415575323cfdd5fc15db41baa8b59c7f6
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650142"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203615"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **适用于：**
 - Microsoft 威胁防护
@@ -77,10 +80,10 @@ Content-Type | String | application/json. **** 必需。
 <br>请求正文中不包括的现有属性将保留其以前的值，或根据对其他属性值的更改重新计算。 
 <br>为了获得最佳性能，不应包括尚未更改的现有值。
 
-属性 | 类型 | 描述
+属性 | 类型 | 说明
 :---|:---|:---
 状态 | 枚举 | 指定警报的当前状态。 可能的值为 ```Active``` ： ```Resolved``` 和 ```Redirected``` 。
-assignedTo | 字符串 | 事件的所有者。
+assignedTo | string | 事件的所有者。
 classification | 枚举 | 通知的规范。 可取值为：```Unknown```、```FalsePositive```、```TruePositive```。
 可用性 | 枚举 | 指定通知的确定。 可取值为：```NotAvailable```、```Apt```、```Malware```、```SecurityPersonnel```、```SecurityTesting```、```UnwantedSoftware``` 或 ```Other```。
 tags | 字符串列表 | 事件标记列表。
@@ -113,5 +116,5 @@ tags | 字符串列表 | 事件标记列表。
 
 
 ## <a name="related-topic"></a>相关主题
-- [事件 Api](api-incident.md)
+- [事件 API](api-incident.md)
 - [列出事件](api-list-incidents.md)

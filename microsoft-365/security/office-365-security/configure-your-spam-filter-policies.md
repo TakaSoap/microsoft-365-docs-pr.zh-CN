@@ -16,14 +16,17 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: e27e32778f908e85fd4bf0b205e7b80fef798859
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: a2d0f5dcdf02eb3562f15e733f1d8ae25ae82a94
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255775"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203259"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在有 Exchange Online 的 Microsoft 365 组织，或没有 Exchange Online 邮箱的 Exchange Online Protection (EOP) 组织中，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 

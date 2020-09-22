@@ -19,14 +19,17 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Office 365 高级威胁防护 (Office 365 ATP) 中的反钓鱼保护功能。
-ms.openlocfilehash: f6d864a7f9995de64f3714dffcd1838b2480a627
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 5607a3bf566fabccf3ae55726aca9eefcff9c062
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867171"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202398"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼保护
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 *网络钓鱼* 是一种电子邮件攻击，试图窃取来自合法或受信任发件人的邮件中的敏感信息。 存在特定类别的网络钓鱼。 例如：
 

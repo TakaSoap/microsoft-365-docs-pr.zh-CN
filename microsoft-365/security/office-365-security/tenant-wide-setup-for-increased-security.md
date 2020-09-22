@@ -19,14 +19,17 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主题将引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。
-ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 72040469f802c2cb5a4fac132ff1c3cd8999e124
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308215"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202015"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本主题将引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。 您的安全需求可能需要更高或更低的安全性。 使用这些建议作为起点。
 

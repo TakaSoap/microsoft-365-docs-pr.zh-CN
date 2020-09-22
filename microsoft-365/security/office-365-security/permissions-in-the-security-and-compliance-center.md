@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: 管理员可以了解 Microsoft 365 的安全性 & 合规性中心中提供的权限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171310"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202683"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全与合规中心内的权限
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 安全 & 合规性中心允许你向执行合规性任务（如设备管理、数据丢失防护、电子数据展示、保留等）的人员授予权限。 这些人员只能执行你明确授予其访问权限的任务。 若要访问安全 & 合规性中心，用户必须是全局管理员或一个或多个安全 & 合规中心角色组的成员。
 
@@ -53,7 +56,7 @@ Security & 合规性中心包含为您向其分配人员所需的最常见任务
 
 ****
 
-|角色组|描述|分配的默认角色|
+|角色组|说明|分配的默认角色|
 |---|---|---|
 |**合规性管理员**<sup>1</sup>|成员可以管理设备管理、数据丢失防护、报告和保留的设置。|案例管理 <br/><br/> 通信合规性管理员 <br/><br/> 通信合规性分析 <br/><br/> 通信合规性案例管理 <br/><br/> 通信合规性调查 <br/><br/> 通信合规性查看器 <br/><br/> 数据分类反馈提供程序 <br/><br/> 数据分类反馈审阅者 <br/><br/> 数据调查管理 <br/><br/> 合规性管理员 <br/><br/> 合规性搜索 <br/><br/> 设备管理 <br/><br/> 处置管理 <br/><br/> DLP 合规性管理 <br/><br/> Hold <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理 <br/><br/> |
 |**合规性数据管理员**|成员可以管理设备管理、数据保护、数据丢失防护、报告和保留的设置。|合规性管理员 <br/><br/> 合规性搜索 <br/><br/> 设备管理 <br/><br/> DLP 合规性管理 <br/><br/> 处置管理 <br/><br/> IB 合规性管理 <br/><br/> 管理通知 <br/><br/> 组织配置 <br/><br/> RecordManagement <br/><br/> 保留管理 <br/><br/> 敏感度标签管理员 <br/><br/> 仅查看审核日志 <br/><br/> 仅查看设备管理 <br/><br/> 仅查看 DLP 合规性管理 <br/><br/> 仅查看 IB 合规性管理 <br/><br/> 仅查看管理通知 <br/><br/> 仅查看收件人 <br/><br/> 仅查看记录管理 <br/><br/> 仅查看保留管理|

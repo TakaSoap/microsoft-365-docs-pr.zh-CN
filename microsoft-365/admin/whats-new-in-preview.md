@@ -21,12 +21,12 @@ description: Microsoft 365 管理中心-了解本月添加的功能。
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300443"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208881"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心的新增功能
 
@@ -49,17 +49,121 @@ ms.locfileid: "47300443"
 - [SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="ignite-2020-august--september"></a>Ignite 2020 (年9月 &) 
+
+欢迎使用 Microsoft Ignite-我们的第一个仅联机 Ignite。 我们希望在我们的一个会话中看到你： [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions)。 以下是我们将在 Ignite 中讨论的几个内容。 
+> [!NOTE]
+> 并不是所有的功能都能立即供所有人使用。 如果你没有看到新功能，请 [加入目标版本](manage/release-options-in-office-365.md)。
+
+### <a name="multi-tenant-management"></a>多租户管理
+
+我们已为多租户管理员开发了一组功能，让你能够更快、更高效地完成工作。
+
+- **你的租户**：在你管理的租户之间快速切换。
+- **所有租户**：一个新页面，您可以在其中快速查看所有租户服务、任何打开的服务请求、您的产品和帐单、建议的设置任务以及该租户中的用户数的运行状况。
+- **安装程序**： "多租户安装" 页为您提供了 "设置" 页面的列表视图，但为多个租户进行了组织。 您可以查看哪些功能未打开，哪些任务已完成所有租户以及租户仍需要完成的任务。 此视图将帮助您跟踪功能采用情况，并确保始终完成建议的安全设置任务。
+- **服务运行状况**：如果任何事件或建议影响租户，则服务运行状况视图将向你显示。 它甚至会告诉你托管的租户中有多少受到影响。 只需选择一个事件即可在 "概述" 选项卡上获取详细信息，然后切换到 "租户受影响" 选项卡，以向下钻取并支持该租户。
+- **跨租户邮箱迁移** 是在公共预览版中的一项新服务，它允许您在租户之间移动邮箱，而无需分离，再使用板载邮箱。 
+- **跨租户域共享**：不久，您可以加入专用预览，以获取允许您跨多个租户共享域的功能。 例如，如果 Contoso 获取 Wingtip 玩具，Contoso 可以与 Wingtip 玩具共享域，以便两个租户中的人员可以将 "contoso.com" 用作其电子邮件地址。
+
+![具有选定事件的多租户的 "服务运行状况" 页面，且受租户影响的选项卡处于打开状态。 导航菜单将所有租户、安装程序和服务运行状况作为唯一选项。](../media/MAC-WN-MTinServiceHealth.png)
+
+### <a name="monitor-your-most-important-accounts"></a>监视最重要的帐户
+
+您可以监视和跟踪发送给用户的失败或延迟的电子邮件，这些邮件会对业务产生影响，如 CEO。 通过将用户添加到 Microsoft 365 管理中心中的 "优先级帐户" 列表来跟踪优先级帐户。 添加对敏感或高优先级信息具有访问权限的高级管理人员、领导层、经理或其他用户。
+
+优先级帐户仅适用于满足以下两个要求的组织：
+
+- Office 365 E3 或 Microsoft 365 E3，或 Office 365 E5 或 Microsoft 365 E5。
+- 至少10000许可证以及至少50个每月活动 Exchange Online 用户。
+
+![功能的设置页面：监视最重要的帐户](../media/MAC-WN-PriorityAccounts.png)
+
+可通过以下两种方法开始操作：
+
+- 转到 " **用户**"，然后在 "其他操作" 菜单中选择 " **管理优先级帐户** "，将用户添加到列表中。
+- 转到 " **设置**"，查找 "安装" 任务 " **监视最重要的帐户**"，然后选择 " **开始**"。
+
+有关优先级帐户的详细信息，请查看[针对优先级帐户的](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts)[监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)和电子邮件问题。
+
+### <a name="search-faster-and-get-better-results-from-any-page"></a>更快地搜索并从任何页面获得更好的结果
+
+我们已开始为管理中心推出新的搜索体验，我们无法等待你试用。 ![搜索框已移至横幅区域。 Alt + S 可从任意页面进行搜索。](../media/MAC-WN-GlobalSearch.png)
+
+- 搜索框移到显示 "Microsoft 365 管理中心" 的页眉区域，以便您现在从任何页面（而不只是主页）进行搜索。 我们甚至获得了一个快捷方式： **Alt + S**。
+- 搜索更加智能，可提供更好的结果，甚至更快。 尝试键入 "2fa" 以开始。
+- 搜索结果按您可以执行的项或操作的类型进行组织。
+  - **用户**：选择用户的姓名，可以在此处编辑该用户。 如果您选择其名称旁边的 "更多操作" 菜单，则可以重置其密码。 您可以按显示名称、姓氏、名字、用户名或主电子邮件地址以及电子邮件别名进行搜索。 但是，若要获取完全匹配项，请按主电子邮件地址或用户名进行搜索。
+  - **组**：编辑任意页面中的组、添加成员、分配所有者。
+  - **操作**：类似于搜索用户和重置其密码的方式，您还可以从任何页面中搜索 "重置密码"，然后为用户重置一个或多个密码。
+  - **导航**：导航中的结果可以快速帮助您快速访问 "管理中心" 中的页面。 例如，搜索 "角色" 将转到 Azure AD 角色的角色页面。
+  - **设置**：搜索与您的组织相关的任何设置、您订阅的服务以及安全和隐私设置。 
+  - **域**：您可以找到指向您的域的快速链接，然后链接将转到该域的 "概述" 和 "运行状况" 页面。
+  - **文档**：如果我们找不到你的结果，我们将尝试查找一些文档来寻求帮助。 Curated 列表中的文章若要查找匹配项需要一些时间，因此请等待一秒钟，让搜索查找结果。 
+  - **反馈**：未找到你要查找的内容？ 向我们发送来自搜索的反馈。 我们将在管理中心中添加更多页面和更多功能的搜索功能。
+
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 管理移动应用
+
+你的订阅中附带的 [microsoft 365 管理移动应用](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)可让你从移动设备管理 microsoft 365，这样你就可以离开办公桌去执行日常任务。 事实上，在应用程序中有超过90个功能，我们只添加了几个功能：
+
+- **支持 Microsoft Intune 的移动应用程序管理和条件访问策略**：现在，你可以使用你的个人设备来管理 Microsoft 365，即使你的组织已启用 Intune 的移动应用程序管理和条件访问策略也是如此。
+- **邮件中心通知**： **Settings**  >  如果希望收到有关新邮件中心帖子的警报，请在设置**通知**中打开邮件中心通知。 通过通知，我们希望确保你随时了解租户中的重要信息和事件。
+- **帐单通知**： **Settings**  >  如果要在订阅即将过期时在设备上获取计费通知，则还可以在设置**通知**中打开计费通知。
+- **深色模式**：欢迎使用移动应用程序的黑色侧边。 这是我们最常请求的功能之一。 转到 "**设置**  >  "**主题**将其打开。
+- **报告问题**：现在可以报告应用中的问题或查看其他管理员报告的问题。 请访问 **服务运行状况** 以将其签出。
+
+![Microsoft 365 admin 应用中的 "运行状况" 页，其中包含有关消息中心、服务运行状况和计费警报的通知。](../media/MAC-WN-AdminMobileApp.png)
+
+### <a name="usage-recommendations-for-small-and-medium-businesses"></a>中小型企业的使用建议
+
+如果组织中的某些人员不积极使用团队、OneDrive 或 Office 应用，则中小型企业可能会在 **主页** 上获得建议。 在查看建议时，可以快速将 Microsoft 培训的电子邮件发送给非活动用户，以帮助他们开始使用应用程序，并确保从你的订阅中获取全部价值。
+
+### <a name="remote-work-collection"></a>远程工作集合
+
+在10月，我们将添加一个远程工作集，以帮助小型企业所有者和员工在远程工作。  **远程工作重点** 安装程序是 Microsoft 建议安全启用远程工作和有效协作的所有功能的 curated 列表。 在几周内，你可以在**安装**  >  **远程工作概要**中试用它。
+
+![安装中有7个任务的远程工作重点页未启动。](../media/MAC-WN-RemoteWork.png)
+
+若要详细了解如何安全地允许远程工作和便于记忆和共享的方便的 web 地址，请转到 [aka.ms/remote-business](https://aka.ms/remote-business)。
+
+### <a name="need-help-moving-to-more-admin-centers"></a>需要帮助？移动到更多管理中心
+
+我们将连续查看并更新内容和工具，以及时掌握产品中的更改。 现在，我们提供了更多自助服务诊断工具，可帮助您快速高效地解决问题。 以下是最近添加的少数几项：
+
+- 更改 Exchange Web 服务限制策略
+- 检查团队预配和验证对特定用户的状态
+- 修复 DKIM 安装问题
+- 诊断 Intune 用户注册错误
+
+我们正在推出您在 Microsoft 365 管理中心中已看到的新的和改进的支持体验。 团队管理中心和安全性和合规性管理中心已具有此新体验。 此外， **Exchange 管理中心**、 **SharePoint 管理中心**和 **Office.com** 将随管理员的这一新帮助体验进行更新。
+
+### <a name="manage-changes-with-microsoft-planner"></a>使用 Microsoft Planner 管理更改
+
+在5月，我们宣布你将很快能够将邮件中心帖子同步到 Microsoft Planner，现在它可供所有人使用。  您现在可以从邮件中创建任务，对其进行分配，并将其跟踪到完成。 首次选择 " **Planner 同步** " 时，您需要连接到相应的计划。
+
+!["首选项" 按钮旁边的命令栏中突出显示了 "规划同步" 的 "邮件中心" 页。](../media/MAC-WN-MCPlannerSync.png)
+
+若要了解详细信息，请查看本文和视频以了解其工作方式： [在 Planner 中跟踪你的消息中心帖子](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### <a name="documentation-training-and-videos"></a>文档、培训和视频
+
+- Microsoft Ignite--[虚拟集线器](https://adoption.microsoft.com/virtual-hub/)的全新和实时全新品牌。 深入了解 IT 专业人员和开发人员的技术培训。 作为 #SIDETRACKED 的一部分，快速查找20个新视频，这一年的 Ignite 管理跟踪的名称。
+- [Microsoft 365 视频系列的新增](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) 功能：本月，我们介绍了在团队和 web 上的白板中提供的新功能、如何自动执行向 Azure AD 的用户预配、新的 Power 自动执行团队中的触发器和操作等。 并在下个月中保持关注，我们将在 Ignite 中获得所有极好的事情的回顾！
+- 我们已对 [Microsoft 365 文档](https://docs.microsoft.com/microsoft-365) 页面进行了重新设计，重点介绍了解决方案。 我们将重点介绍在此页面上可用的新解决方案，因此请立即注意。
+
+![适用于 Microsoft 365 解决方案文档的新登陆页，其中包含 "提供远程工作人员" 等解决方案。](../media/MAC-WN-M365Docspage.png)
+
 ## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>准备 Ignite 2020
 
-正如我们在 Microsoft 的 Ignite 赛季中所做的那样，我们没有发布许多功能，因此我们在会话过程中有很多讨论。 
+正如我们在 Microsoft 的 Ignite 赛季中所做的那样，我们没有发布许多功能，因此我们在会话过程中有很多讨论。
 
 本文的下一次更新将在最初仅联机 Ignite 的开始日期。 在今年，它可以自由参加！ 将其签出，请进行注册： [Microsoft Ignite 2020](https://www.microsoft.com/ignite)。
 
 ### <a name="your-products"></a>你的产品
 
-在订阅管理中完成了大量工作，以使页面的加载速度更快，更快地查找您要查找的内容，并满足 web acessibility 标准 ([WCAG 2.1 准则](http://www.w3.org/TR/WCAG21/)) 。
+在 "订阅管理" 中完成了大量工作，以使页面的加载速度更快，更快地查找要查找的内容，并满足 ([WCAG 2.1 准则](http://www.w3.org/TR/WCAG21/)) 的 web 辅助功能标准。
 
 - **表重新设计**：表已经过重新设计，以便您可以对相似的订阅进行分组。 转到 "**付费**  >  **产品**"。
 - **产品详细信息**：通过选择列表中的产品获取有关你的订阅的更多详细信息。
@@ -73,9 +177,9 @@ ms.locfileid: "47300443"
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Contoso.com 的域详细信息页面":::
 
-### <a name="docs-training-and-videos"></a>文档、培训和视频
+### <a name="docs-training-and-videos-july-2020"></a>2020年7月 (文档、培训和视频) 
 
-[Microsoft 365](https://youtu.be/m1Nu8WJgCDY) 视频系列的新增功能：本月，我们将介绍新的 yammer 体验，适用于 web 和移动、如何将 yammer 社区应用程序与 Microsoft 团队集成、支持 firstline 工作线程和经理的新策略包等。
+[Microsoft 365](https://youtu.be/m1Nu8WJgCDY) 视频系列的新增功能：本月，我们将介绍新的 yammer 体验，适用于 web 和移动、如何将 yammer 社区应用程序与 Microsoft 团队集成、支持 Firstline 工作线程和经理的新策略包等。
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -257,7 +361,7 @@ ms.locfileid: "47300443"
 ![屏幕捕获：主页的顶部，显示带有切换器图标的组织配置文件名称。](../media/MAC-Organization-switcher.png)
 
 2. 在 "组织切换器" 中，选择要管理的组织。
-![屏幕捕获：主页的顶部，显示带有切换器图标的组织配置文件名称。](../media/MAC-OrgSwitcherSelected.png)
+![屏幕捕获：我的组织使用整合的 Messenger 的租户切换器租户突出显示](../media/MAC-OrgSwitcherSelected.png)
 
 这就是它!!!
 
@@ -541,7 +645,7 @@ Howdy，合作伙伴！  (无法帮助我。 ) 我们也为你提供了本月更
 - **Intune 设备保护** -如果你的许可证包括 intune，并且我们检测到你尚未完成设置 intune 或注册设备，我们建议你创建 Intune 策略，以便在用户从其移动设备访问组织的文件时对其进行保护。
 - **获取每月 office 功能更新** -我们从非常小的客户那里获得了反馈，当他们获得每月 office 功能更新时，他们的用户会感到更开心。 因此，如果你是一位非常小的企业，并且你目前每六个月都可以获得 Office 功能更新，你将看到此建议。
 
-**设置** <br>
+**Settings** <br>
 对于设置，已进行了很多更改。 大多数情况下，只需将现有设置更新为新的管理中心样式即可。 当我们继续发展并添加以前从未见过的新设置时，我们将在此处开始提及它们。 同时，我们还准备了一个完整的设置来宣布： **新式验证**。 是的，有新的设置可启用 **新式验证**！ 若要将其签出，请转到**Settings**  >  **Services & 外接程序**  >  **新式身份验证**。
 
 ## <a name="april-2019"></a>2019 年 4 月

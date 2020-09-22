@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 本分步部署指南可用于在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站。
-ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308411"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203127"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 按照这些分步说明部署一个新的独立 SharePoint Online 团队网站。
   

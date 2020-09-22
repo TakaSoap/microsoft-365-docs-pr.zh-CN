@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 设计独立的 SharePoint Online 团队网站，包括确定权限级别、向具有访问组的用户分配权限以及嵌套的 Azure AD 组。
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653001"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203115"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>设计独立的 SharePoint Online 团队网站
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 逐步完成独立的 SharePoint Online 团队网站的设计过程。
 
@@ -35,11 +38,11 @@ ms.locfileid: "46653001"
 
 默认情况下，每个 SharePoint Online 团队网站都使用以下 SharePoint 组创建：
 
-- \<site name>员工
+- \<site name> 员工
 
-- \<site name>发表
+- \<site name> 发表
 
-- \<site name>所有者
+- \<site name> 所有者
 
 这些组与 Microsoft 365 和 Azure Active Directory (AD) 组不同，它们是分配网站资源的权限的基础。
 
@@ -49,9 +52,9 @@ ms.locfileid: "46653001"
 
 |SharePoint 组|权限级别|
 |---|---|
-|\<site name>员工|编辑|
-|\<site name>发表|阅读|
-|\<site name>所有者|完全控制|
+|\<site name> 员工|编辑|
+|\<site name> 发表|读取|
+|\<site name> 所有者|完全控制|
 |
 
  **最佳实践：** 您可以创建其他 SharePoint 组和权限级别。 但是，我们建议使用独立 SharePoint Online 网站的默认 SharePoint 组和权限级别。
@@ -74,15 +77,15 @@ ms.locfileid: "46653001"
 
  **最佳实践：** 虽然您可以通过单个用户帐户管理权限，但我们建议您改用一个 Azure AD 组（称为 "访问组"）。 这简化了通过访问组中的成员资格管理权限，而不是管理每个 SharePoint 组的用户帐户列表。
 
-适用于 Microsoft 365 的 Azure AD 组与 Microsoft 365 组不同。 Azure AD 组显示在 Microsoft 365 管理中心中，其**类型**设置为 "**安全性**"，并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组：
+适用于 Microsoft 365 的 Azure AD 组与 Microsoft 365 组不同。 Azure AD 组显示在 Microsoft 365 管理中心中，其 **类型** 设置为 " **安全性** "，并且没有电子邮件地址。 可以在以下范围内管理 Azure AD 组：
 
 - Active Directory 域服务 (AD DS)
 
-    这些组已在本地 AD DS 基础结构中创建，并已同步到 Microsoft 365 订阅。 在 Microsoft 365 管理中心，这些组的**状态**为 "已**与 active directory 同步**"。
+    这些组已在本地 AD DS 基础结构中创建，并已同步到 Microsoft 365 订阅。 在 Microsoft 365 管理中心，这些组的 **状态** 为 "已 **与 active directory 同步**"。
 
 - Office 365
 
-    这些组是使用 Microsoft 365 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。 在 Microsoft 365 管理中心，这些组的**状态**为**云**。
+    这些组是使用 Microsoft 365 管理中心、Azure 门户或 Microsoft PowerShell 创建的组。 在 Microsoft 365 管理中心，这些组的 **状态** 为 **云**。
 
  **最佳实践：** 如果使用的是本地 AD DS 并与 Microsoft 365 订阅同步，请使用 AD DS 执行用户和组管理。
 
@@ -92,9 +95,9 @@ ms.locfileid: "46653001"
 
 |SharePoint 组|基于 Azure AD 的访问组|权限级别|
 |---|---|---|
-|\<site name>员工|\<site name>员工|编辑|
-|\<site name>发表|\<site name>Viewer|阅读|
-|\<site name>所有者|\<site name>管理员|完全控制|
+|\<site name> 员工|\<site name> 员工|编辑|
+|\<site name> 发表|\<site name> Viewer|读取|
+|\<site name> 所有者|\<site name> 管理员|完全控制|
 |
 
  **最佳实践：** 虽然您可以使用 Microsoft 365 或 Azure AD 组作为 SharePoint 组的成员，但我们建议使用 Azure AD 组。 Azure AD 组通过 AD DS 或 Microsoft 365 进行管理，使您可以更灵活地使用嵌套组来分配权限。
@@ -140,7 +143,7 @@ ms.locfileid: "46653001"
 
 ## <a name="next-step"></a>后续步骤
 
-当您准备好在生产中创建和配置独立网站时，请参阅[部署独立的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)。
+当您准备好在生产中创建和配置独立网站时，请参阅 [部署独立的 SharePoint Online 团队网站](deploy-an-isolated-sharepoint-online-team-site.md)。
 
 ## <a name="see-also"></a>另请参阅
 

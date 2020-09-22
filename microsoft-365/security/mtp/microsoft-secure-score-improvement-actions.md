@@ -20,14 +20,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7049845b4c1b240c5ecc72b4f2ebac1acecfbaf6
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315827"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203674"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
 

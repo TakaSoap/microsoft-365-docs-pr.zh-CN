@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用配置分析器来查找和修复低于标准保护和严格保护预设安全策略的安全策略。
-ms.openlocfilehash: 022f11013ef49c65b1f94fea7a3872233ff1ab14
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949474"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203427"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的保护策略的配置分析器
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > 本主题中所述的功能在预览中，在所有组织中均不可用，可能会发生更改。 有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer)。
@@ -129,7 +132,7 @@ Security & 合规中心中的配置分析器提供了一个中心位置，用于
 - **修改者**
 - **设置名称**
 - **策略**
-- **类型**
+- **Type**
 
 若要筛选结果，请单击“筛选器”****。 在显示的 " **筛选器** " 浮出控件中，可以从以下筛选器中进行选择：
 

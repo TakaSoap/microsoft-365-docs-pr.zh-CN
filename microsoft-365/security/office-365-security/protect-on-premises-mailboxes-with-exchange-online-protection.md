@@ -21,14 +21,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用由世纪互联运营的 Office 365 的中国管理员可以了解如何使用独立 Exchange Online Protection (EOP) 来保护其本地邮箱。
-ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307745"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202479"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>在中国使用独立 EOP 保护本地邮箱
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > 本文仅适用于由中国世纪互联运营的 Office 365。

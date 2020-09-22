@@ -14,14 +14,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949678"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202875"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中配置外部电子邮件转发
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 外部转发由 *出站反垃圾邮件策略* 控制，并根据配置的设置范围限定给用户。 当前支持3个设置：
 
