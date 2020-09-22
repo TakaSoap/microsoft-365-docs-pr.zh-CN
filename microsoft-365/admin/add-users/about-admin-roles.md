@@ -21,19 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，服务管理员可打开 Microsoft 的支持票证。
-ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，”服务管理员”可通过管理中心打开支持票证。
+ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361769"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131778"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
 你的 Microsoft 365 或 Office 365 订阅附带了一组管理员角色，可使用 Microsoft 365 管理中心将这些角色分配给组织中的用户。 每个管理员角色都映射到常用的业务功能，并授予这些用户在管理中心执行特定任务的权限。
 
 Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune 角色。 然而，这些角色是 Azure 门户和 Intune 管理中心中可用角色的子集。
+
+## <a name="before-you-begin"></a>准备工作
 
 正在查找你可以在 Microsoft 365 管理中心中管理的详细 Azure AD 角色说明的完整列表？ 请参阅“Azure Active Directory 中的管理员角色权限”。 [Azure Active Directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)。
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517493"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131544"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>了解 Microsoft 365 终结点数据丢失防护（预览）
 
@@ -120,7 +120,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - 设备名称
 - 目标位置类型
 - 执行了副本的应用程序
-- DATP 设备 ID（如适用）
+- Microsoft Defender for Endpoint 设备 ID （如适用）
 - 可移动媒体设备制造商
 - 可移动媒体设备模型
 - 可移动媒体设备序列号

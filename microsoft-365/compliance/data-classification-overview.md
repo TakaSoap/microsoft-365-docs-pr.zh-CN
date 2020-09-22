@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948502"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131720"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
@@ -34,7 +34,7 @@ ms.locfileid: "47948502"
 - 敏感数据和已保留数据的位置
 
 此外，还可在数据分类页面上管理以下功能：
-- [可训练的分类器](classifier-getting-started-with.md)
+- [可训练的分类器](classifier-learn-about.md)
 - [敏感信息类型](what-the-sensitive-information-types-look-for.md)
 
 可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
@@ -137,4 +137,4 @@ Microsoft 365 附带了许多敏感信息类型的定义，例如包含社会安
 - [了解敏感度标签](sensitivity-labels.md)
 - [了解保留策略和保留标签](retention.md)
 - [敏感信息类型属性定义](sensitive-information-type-entity-definitions.md)
-- [可训练分类器入门（预览）](classifier-getting-started-with.md)
+- [了解可训练的分类器（预览版）](classifier-learn-about.md)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 08e2bd43b4337087b401244b7dc4cf80a26aaf06
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949842"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131666"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>终结点数据丢失防护（预览）入门
 
@@ -90,7 +90,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。 按照[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)进行操作。
 
-已载入到 [Microsoft Defender 高级威胁防护 (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 按照[设备已载入 MDATP 的程序](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp)进行操作
+已载入到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 请按照“[与设备载入到 Microsoft Defender for Endpoint 的过程](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)”进行操作。
 
 ### <a name="onboarding-devices"></a>载入设备
 
@@ -109,7 +109,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后**下载程序包**。
 
    ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 MDATP 程序：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机
@@ -121,16 +121,16 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 > [!NOTE]
 > 此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
 
-### <a name="with-devices-onboarded-into-mdatp"></a>设备已载入 MDATP
+### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>与设备载入到 Microsoft Defender for Endpoint
 
-在此方案中，已经部署了 MDATP，并且在其中报告了终结点。 所有这些终结点都将显示在托管设备列表中。 可通过使用[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)将新设备继续载入到终结点 DLP 中，以扩展覆盖范围。
+在此方案中，已经部署了 Microsoft Defender for Endpoint，并且在其中报告了终结点。 所有这些终结点都将显示在托管设备列表中。 可通过使用[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)将新设备继续载入到终结点 DLP 中，以扩展覆盖范围。
 
 1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
 2. 打开合规中心设置页面，然后选择“**启用设备监视**”。
-3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该看到已经向 MDATP 报告的设备列表。 ![设备管理](../media/endpoint-dlp-getting-started-2-device-management.png)
+3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。 ![设备管理](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. 如果需要载入附加设备，请选择“**载入**”。
 5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后**下载程序包**。
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 MDATP 程序：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
     - 使用移动设备管理工具载入 Windows 10 计算机

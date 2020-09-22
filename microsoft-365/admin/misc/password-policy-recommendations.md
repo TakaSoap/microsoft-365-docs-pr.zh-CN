@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015919"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131938"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
- 
+
 作为组织的管理员，你负责为组织内部用户设置密码策略。 设置密码策略可能很复杂且令人困惑，因而本文提供了加强组织对密码攻击的防护的建议。
   
 要决定 Microsoft 365 密码在你组织中过期的频率，请参阅[设置 Microsoft 365 的密码过期策略](../manage/set-password-expiration-policy.md)。
@@ -78,11 +78,11 @@ ms.locfileid: "45015919"
   
 ### <a name="password-expiration-requirements-for-users"></a>用户密码过期要求
 
-密码过期要求弊大于利，因为这些要求强制用户选择可预测的密码（即由彼此间紧密联系的有序单词和数字构成的密码）。 在这类情况下，可能会根据上一个密码预测出下一个密码。 密码过期要求没有提供任何控制优势，因为网络罪犯总是会在盗用凭据后立即使用这些凭据。
+密码过期要求弊大于利，因为这些要求强制用户选择可预测的密码（即由彼此间紧密联系的有序单词和数字构成的密码）。 在这类情况下，可能会根据上一个密码预测出下一个密码。 密码过期要求没有提供任何控制优势，因为网络罪犯总是会在盗用凭据后立即使用这些凭据。 有关详细信息，请查看“[是时候重新思考强制密码更改了”](https://go.microsoft.com/fwlink/p/?linkid=861018)。
   
 ### <a name="requiring-long-passwords"></a>要求使用长密码
 
-密码长度要求（大于约 10 个字符）可能会导致出现可预测且不必要的用户行为。 例如，必须具有 16 个字符密码的用户可能会选择 **fourfourfourfour** 或 **passwordpassword** 等满足字符长度但很容易被猜出的重复模式。 此外，长度要求使得用户更可能采取其他不安全的做法，例如记下其密码、重复使用密码或将密码不加密地存储在其文档中。 为鼓励用户考虑使用唯一密码，我们建议保持合理的 8 字符最低长度要求。 
+密码长度要求（大于约 10 个字符）可能会导致出现可预测且不必要的用户行为。 例如，必须具有 16 个字符密码的用户可能会选择 **fourfourfourfour** 或 **passwordpassword** 等满足字符长度但很容易被猜出的重复模式。 此外，长度要求使得用户更可能采取其他不安全的做法，例如记下其密码、重复使用密码或将密码不加密地存储在其文档中。 为鼓励用户考虑使用唯一密码，我们建议保持合理的 8 字符最低长度要求。
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>需要使用多字符集
 
@@ -131,8 +131,6 @@ ms.locfileid: "45015919"
 - [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018)（是时候重新思考强制密码更改了）
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)（2015 最差密码）
-
-- [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)（下载 Web 中的文件）
 
 ## <a name="related-articles"></a>相关文章
 

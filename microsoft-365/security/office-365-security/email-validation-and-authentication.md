@@ -18,20 +18,20 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: 0f4eb15df218050f7e582b1cc727522c04da594b
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 1e4ad82dd1c57e089b36e39afde346c47043c546
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949864"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137043"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
 电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 在所有 Microsoft 365 组织中，EOP 使用以下标准验证入站电子邮件：
 
-- [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
+- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
 
-- [DKIM](support-for-validation-of-dkim-signed-messages.md)
+- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -204,4 +204,12 @@ Microsoft 365 会将来自公司基础结构的入站电子邮件视为已经过
 
 即使你对来自平台的电子邮件进行身份验证，也无法保证向 Microsoft 的邮件传递，但至少可确保 Microsoft 不会因为未经过身份验证而将你的电子邮件标记为垃圾邮件。
 
+## <a name="related-links"></a>相关链接
+
 有关服务提供商最佳实践的更多信息，请参阅[服务提供商的 M3AAWG 移动消息传递最佳实践](https://www.m3aawg.org/sites/default/files/m3aawg-mobile-messaging-best-practices-service-providers-2015-08_0.pdf)。
+
+了解 Office 365 如何使用 SPF 和支持 DKIM 验证：
+
+- [有关 SPF 的更多详细信息](how-office-365-uses-spf-to-prevent-spoofing.md)
+
+- [有关 DKIM 的更多详细信息](support-for-validation-of-dkim-signed-messages.md)

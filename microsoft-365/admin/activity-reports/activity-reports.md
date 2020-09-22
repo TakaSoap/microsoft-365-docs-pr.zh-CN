@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948204"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104441"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -58,9 +58,8 @@ ms.locfileid: "47948204"
 
 ::: moniker-end
 
-   
-2. 在仪表板上方选择“**选择报表**”，从所有可用报表列表中进行选择。 或者，选择服务（如电子邮件或 OneDrive）的一览活动小部件，查看详细信息。 <br/>![使用情况仪表板](../../media/usage-report-dashboard.png)
-  
+2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
 具有以下权限的人员：
@@ -147,7 +146,7 @@ ms.locfileid: "47948204"
 
 ::: moniker range="o365-worldwide"
 
-- [国防部和政府社区云的 Microsoft Teams 用户活动](microsoft-teams-user-activity.md)
+- [美国政府的 Microsoft Teams 用户活动](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ ms.locfileid: "47948204"
 
 ::: moniker range="o365-worldwide"
 
-- [国防部和政府社区云的 Microsoft Teams 设备使用情况](microsoft-teams-device-usage.md)
+- [美国政府的 Microsoft Teams 设备使用情况](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
