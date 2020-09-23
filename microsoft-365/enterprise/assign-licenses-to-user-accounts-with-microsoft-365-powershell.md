@@ -3,7 +3,7 @@ title: 使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 在本文中，我们将了解如何使用 PowerShell 将 Microsoft 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: 7bd217dfeed762a11161c3f512fb55a8e6c4968e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687631"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235614"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
 
@@ -36,6 +36,10 @@ ms.locfileid: "46687631"
 
 >[!Note]
 >必须为用户帐户分配一个位置。 您可以从 Microsoft 365 管理中心或 PowerShell 中的用户帐户的属性中执行此操作。
+>
+
+>[!Note]
+>了解如何使用 Microsoft 365 管理中心向[用户帐户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell

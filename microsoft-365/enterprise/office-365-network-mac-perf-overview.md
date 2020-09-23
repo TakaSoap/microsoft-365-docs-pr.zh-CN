@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214911"
+ms.locfileid: "48235534"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
@@ -30,6 +30,11 @@ Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的聚合网
 **网络评估** 和 **网络洞察力** 显示在 Microsoft 365 管理中心的 **运行状况 |连接**。
 
 ![网络性能页面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+>[!NOTE]
+>网络连接测试工具支持 WW 商业和德国的租户，但不支持 GCC 中、GCC 高级、DoD 或中国的租户。
+
+当您第一次导航到 "网络性能" 页面时，将看到 "概述" 窗格，其中包含全局网络性能的地图、网络评估范围为整个租户以及当前问题的列表。 从概述中，您可以深入查看特定的网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络性能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 可能会要求代表您的组织加入此功能的公共预览版。 通常情况下，接受通常会立即发生，然后您将看到 "网络连接" 页面。 
 

@@ -3,7 +3,7 @@ title: 使用 PowerShell 维护 Microsoft 365 组成员身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何使用 PowerShell 维护 Microsoft 365 组中的成员身份。
-ms.openlocfilehash: 61bdcb96433f4f384033768debf416900a305624
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688080"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235626"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>使用 PowerShell 维护 Microsoft 365 组成员身份
 
@@ -34,6 +34,10 @@ ms.locfileid: "46688080"
 
 > [!TIP]
 > 若要通过指定用户帐户和组名称生成现成的 PowerShell 命令，请使用此 [组维护 Microsoft Excel 工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)。 
+
+>[!Note]
+>了解如何使用 Microsoft 365 管理中心[维护 microsoft 365 组成员身份](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。

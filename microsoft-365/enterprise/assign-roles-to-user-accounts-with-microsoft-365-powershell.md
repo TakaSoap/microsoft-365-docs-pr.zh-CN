@@ -3,7 +3,7 @@ title: 使用 PowerShell 为 Microsoft 365 用户帐户分配角色
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 在本文中，了解如何快速轻松地使用适用于 Microsoft 365 的 PowerShell 向用户帐户分配角色。
-ms.openlocfilehash: 4726dcea109490ff28299002bc5263aa15dca949
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687630"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235426"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 为 Microsoft 365 用户帐户分配角色
 
@@ -34,7 +34,7 @@ ms.locfileid: "46687630"
 您可以使用 PowerShell for Microsoft 365 快速而轻松地向用户帐户分配角色。
 
 >[!Note]
->若要使用 Microsoft 365 管理中心向用户帐户分配角色，请参阅 [这些说明](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
+>了解如何使用 Microsoft 365 管理中心向[用户帐户分配角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell

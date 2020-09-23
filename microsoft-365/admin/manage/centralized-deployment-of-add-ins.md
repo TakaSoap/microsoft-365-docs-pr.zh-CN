@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131730"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235414"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -45,7 +45,7 @@ ms.locfileid: "48131730"
   
 ## <a name="requirements"></a>Requirements
 
-集中部署加载项需要用户使用 Microsoft 365 应用程序的企业版 (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
+集中部署加载项需要用户使用 Microsoft 365 应用程序企业版或 Microsoft 365 商业高级 (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用[集中部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -61,11 +61,11 @@ ms.locfileid: "48131730"
 ### <a name="office-requirements"></a>Office 要求
 
 - 对于 Word、Excel 和 PowerPoint 外接程序，您的用户必须使用下列项之一：
-  - 在 Windows 设备上，适用于企业的 Microsoft 365 应用版本1704或更高版本。
+  - 在 Windows 设备上，Microsoft 365 应用程序的版本1704或更高版本或 Microsoft 365 商业高级版。
   - 在 Mac 上，版本15.34 或更高版本。
 
 - 对于 Outlook，您的用户必须使用以下各项之一： 
-  - 适用于企业的 Microsoft 365 应用版本1701或更高版本。
+  - Microsoft 365 应用程序的版本1701或更高版本，或 Microsoft 365 Business Premium。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更高版本。
   - 版本16.0.4494.1000 或更高版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
   - 版本15.0.4937.1000 或更高版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*

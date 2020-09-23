@@ -3,7 +3,7 @@ title: 使用 PowerShell 创建 Microsoft 365 用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 在本文中，我们将了解如何使用 PowerShell 创建用户帐户或多个 Microsoft 365 用户帐户。
-ms.openlocfilehash: 53077352862b6d0df6bb569300e2d8bc2475df91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687961"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235590"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 创建 Microsoft 365 用户帐户
 
@@ -42,7 +42,10 @@ ms.locfileid: "46687961"
 |**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为 "许可证计划" 或 "SKU) ，可将可用许可证分配给用户帐户。 许可证定义了可供帐户使用的 Microsoft 365 服务。 您不必在创建帐户时向用户分配许可证，但该帐户需要许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。 <br/> |
 |**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如，US 代表美国，FR 代表法国。 提供此值非常重要，因为某些 Microsoft 365 服务在某些国家/地区不可用，因此，除非帐户配置了此值，否则不能向用户帐户分配许可证。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
-   
+
+>[!Note]
+>了解如何使用 Microsoft 365 管理中心[创建用户帐户](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
