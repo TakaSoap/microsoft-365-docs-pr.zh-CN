@@ -3,7 +3,7 @@ title: 概述：Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 指导如何使用 Office 365 VPN 拆分隧道为远程用户优化 Office 365 连接。
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695523"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214749"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 拆分隧道为远程用户优化 Office 365 连接
 <!---
@@ -89,16 +89,13 @@ Office 365 将 Office 365 所需的终结点分为三类：**优化**、**允许
 
 可在服务内的不同层针对这些终结点更高效地传递 DLP、AV 保护、身份验证和访问控制等安全元素。 由于我们还将大部分流量从 VPN 解决方案中转移出去，这将为仍然依赖于它的业务关键流量释放 VPN 容量。 在许多情况下，它还应消除通过冗长而昂贵的升级程序来应对这种新操作方式的需要。
 
-![拆分隧道 VPN 配置](../media/vpn-split-tunneling/vpn-model-2.png)
+![拆分隧道 VPN 配置详细信息](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _图 3：将定义的 Office 365 异常直接发送到服务的 VPN 拆分隧道解决方案。所有其他流量都将强制流回公司网络（无论目标如何）。_
 
 从安全角度来看，Microsoft 提供了一系列安全功能，可用于提供类似甚至增强的安全性，而不是由本地安全堆栈通过内联检查提供的安全性。 Microsoft 安全团队的博客文章[安全专业人员和 IT 人员在当前独特的远程工作场景中实现新式安全控制的替代方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)对可用功能进行了清晰的总结，你将在本文找到更详细的指导。 有关 Microsoft 实现 VPN 拆分隧道的信息，还可以参阅[运行 VPN：Microsoft 如何让远程工作人员互联](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv)。
 
 在许多情况下，可在几个小时内完成此实现，以便快速解决在组织迅速转变到全面远程工作时面临的最紧迫的问题之一。 有关 VPN 拆分隧道的实现指南，请参阅[实现 Office 365 的 VPN 拆分隧道](microsoft-365-vpn-implement-split-tunnel.md)。
-
->[!NOTE]
->Microsoft 已经承诺至少在 **2020 年 6 月 30 日**前挂起对 Office 365“优化”**** 终结点的更改，以便客户专注于其他挑战，而不是在最初实施后维护终结点白名单。
 
 ## <a name="related-topics"></a>相关主题
 

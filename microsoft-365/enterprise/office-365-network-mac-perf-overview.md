@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200790"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214911"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
@@ -33,7 +33,7 @@ Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的聚合网
 
 可能会要求代表您的组织加入此功能的公共预览版。 通常情况下，接受通常会立即发生，然后您将看到 "网络连接" 页面。 
 
-在导航到 "网络连接" 页面时，您将看到一个 "概述" 窗格，其中包含全局网络性能的地图、范围限定为整个租户的网络评估以及当前问题的列表。 若要访问此页面，您必须是 Microsoft 365 中组织的管理员。 报告读取器管理角色将对此信息具有读取权限。 若要配置位置和网络连接的其他元素，管理员必须是服务器管理员角色（如服务支持管理员角色）的一部分。 从概述中，您可以深入查看特定的网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络性能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+在导航到 "网络连接" 页面时，您将看到一个 "概述" 窗格，其中包含全局网络性能的地图、范围限定为整个租户的网络评估以及当前问题的列表。 若要访问此页面，您必须是 Microsoft 365 中组织的管理员。 报告读取器管理角色将对此信息具有读取权限。 若要配置位置和网络连接的其他元素，管理员必须是服务器管理员角色（如服务支持管理员角色）的一部分。 从概述中，您可以深入查看特定的网络性能指标和按位置的问题。 有关详细信息，请参阅 [Microsoft 365 管理中心中的网络连接概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>将显示网络连接评估的必备组件
 

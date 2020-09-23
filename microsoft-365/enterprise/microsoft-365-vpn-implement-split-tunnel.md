@@ -3,7 +3,7 @@ title: 实现 Office 365 的 VPN 拆分隧道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何实现 Office 365 的 VPN 拆分隧道
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171418"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214846"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>实现 Office 365 的 VPN 拆分隧道
 
@@ -37,7 +37,7 @@ ms.locfileid: "48171418"
 
 将强制隧道 VPN 用于连接分布式和性能敏感云应用程序是非常不理想的，但是这种负面影响可能已经被一些企业所接受，从而从安全的角度维持现状。 下面是此场景的一个示例图：
 
-![拆分隧道 VPN 配置](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![拆分隧道 VPN 配置](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 这个问题多年来一直在加剧，许多客户报告了网络流量模式的重大转变。 用于保持内部部署的流量现在将连接到外部云终结点。 许多 Microsoft 客户报告，以前大约 80% 的网络流量都来自内部（上图中用虚线表示）。 到 2020 年，随着他们将主要的工作负载转移到云上，这一数字现在约为 20% 或更低，这些趋势在其他企业中并不罕见。 随着时间的推移和云历程的发展，上述模型变得愈加累赘且不可持续，这使得组织在迁移到以云为中心的世界时的敏捷度受到影响。
 
@@ -95,7 +95,7 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 
 下图显示了建议的 VPN 拆分隧道解决方案的工作原理：
 
-![拆分隧道 VPN 解决方案详细信息](../media/vpn-split-tunneling/vpn-split-detail.png)
+![拆分隧道 VPN 解决方案详细信息](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 标识要优化的终结点
 
@@ -109,9 +109,6 @@ Microsoft 建议的优化远程工作者连接策略主要是通过几个简单�
 - 带宽和/或延迟敏感
 - 可在服务中提供所需的安全元素，而不是在网络上内联
 - 约占 Office 365 服务流量的 70-80%
-
->[!NOTE]
->Microsoft 已经承诺至少在 **2020 年 6 月 30 日**前挂起对 Office 365“优化”**** 终结点的更改，以便客户专注于其他挑战，而不是在最初实施后维护终结点白名单。 本文将进行更新，以反映未来的任何更改。
 
 有关 Office 365 终结点及其分类和管理方式的详细信息，请参阅[管理 Office 365 终结点](managing-office-365-endpoints.md)一文。
 
