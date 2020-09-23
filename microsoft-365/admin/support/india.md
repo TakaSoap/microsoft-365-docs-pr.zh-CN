@@ -13,29 +13,31 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7026dcc09207ce1b6fa911bf20683e4e642eee5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397594"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235402"
 ---
-# <a name="contact-support-for-india"></a><span data-ttu-id="4a786-103">对印度的联系支持</span><span class="sxs-lookup"><span data-stu-id="4a786-103">Contact support for India</span></span>
+# <a name="contact-support-for-india"></a><span data-ttu-id="e2392-103">对印度的联系支持</span><span class="sxs-lookup"><span data-stu-id="e2392-103">Contact support for India</span></span>
 
-<span data-ttu-id="4a786-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="4a786-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="e2392-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e2392-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4a786-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="4a786-105">Phone number</span></span>
-<span data-ttu-id="4a786-106">000 800 440 2038</span><span class="sxs-lookup"><span data-stu-id="4a786-106">000 800 440 2038</span></span>
+## <a name="phone-number"></a><span data-ttu-id="e2392-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="e2392-105">Phone number</span></span>
+<span data-ttu-id="e2392-106">000 800 440 2038</span><span class="sxs-lookup"><span data-stu-id="e2392-106">000 800 440 2038</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4a786-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="4a786-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4a786-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="4a786-108">Billing Support:</span></span>
+<span data-ttu-id="e2392-107">本地免费电话</span><span class="sxs-lookup"><span data-stu-id="e2392-107">Local toll-free</span></span>
 
-<span data-ttu-id="4a786-109">英语：周一至周五上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="4a786-109">English: Mon-Fri 9 AM-6 PM</span></span>
+## <a name="hours"></a><span data-ttu-id="e2392-108">工作时间</span><span class="sxs-lookup"><span data-stu-id="e2392-108">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="e2392-109">计费支持：</span><span class="sxs-lookup"><span data-stu-id="e2392-109">Billing Support:</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4a786-110">技术支持：</span><span class="sxs-lookup"><span data-stu-id="4a786-110">Technical Support:</span></span>
+<span data-ttu-id="e2392-110">英语：周一至周五上午9点-下午6点</span><span class="sxs-lookup"><span data-stu-id="e2392-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="4a786-111">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="4a786-111">English: 24 hours a day, 7 days a week</span></span>
+### <a name="technical-support"></a><span data-ttu-id="e2392-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="e2392-111">Technical Support:</span></span>
 
-<span data-ttu-id="4a786-112">备选电话号码： 1800 200 2052</span><span class="sxs-lookup"><span data-stu-id="4a786-112">Alternative Phone Number: 1800 200 2052</span></span>
+<span data-ttu-id="e2392-112">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="e2392-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4a786-113">本地免费电话</span><span class="sxs-lookup"><span data-stu-id="4a786-113">Local toll-free</span></span>
+<span data-ttu-id="e2392-113">备选电话号码： 1800 200 2052</span><span class="sxs-lookup"><span data-stu-id="e2392-113">Alternative Phone Number: 1800 200 2052</span></span>
+
+<span data-ttu-id="e2392-114">本地免费电话</span><span class="sxs-lookup"><span data-stu-id="e2392-114">Local toll-free</span></span>
