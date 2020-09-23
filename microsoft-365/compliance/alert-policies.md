@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 5f4c715058c7fd9a98dc268b18cc487af4c1ae10
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962673"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200581"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -205,7 +205,7 @@ Microsoft 提供了内置的通知策略，可帮助确定 Exchange 管理员权
 
 若要查看向其分配默认通知策略的类别，请参阅 " [默认警报策略](#default-alert-policies) " 部分中的表。
 
-|&nbsp;|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
+|角色|信息治理|数据丢失防护|邮件流|权限|威胁管理|其他|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |审核日志|||||||
 |案例管理|||||||

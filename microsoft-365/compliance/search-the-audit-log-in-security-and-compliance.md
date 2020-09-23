@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: '使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 '
+description: 使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547248"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197345"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
 
@@ -298,19 +298,125 @@ ms.locfileid: "47547248"
 
 单击以下任一链接转到特定表格。
 
-||||
-|:-----|:-----|:-----|
-|[文件和页面活动](#file-and-page-activities)|[文件夹活动](#folder-activities)|[SharePoint 列表活动](#sharepoint-list-activities)|
-|[共享和访问请求活动](#sharing-and-access-request-activities)|[同步活动](#synchronization-activities)|[网站权限活动](#site-permissions-activities)|
-|[网站管理活动](#site-administration-activities)|[Exchange 邮箱活动](#exchange-mailbox-activities)|[用户管理活动](#user-administration-activities)|
-|[Azure AD 组管理活动](#azure-ad-group-administration-activities)|[应用程序管理活动](#application-administration-activities)|[角色管理活动](#role-administration-activities)|
-|[目录管理活动](#directory-administration-activities)|[电子数据展示活动](#ediscovery-activities)|[高级电子数据展示活动](#advanced-ediscovery-activities)|
-|[Power BI 活动](#power-bi-activities)|[Microsoft 工作区分析](#microsoft-workplace-analytics-activities)|[Microsoft Teams 活动](#microsoft-teams-activities)|
-|[Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活动](#microsoft-teams-shifts-activities)|[Yammer 活动](#yammer-activities)|
-|[Microsoft Power Automate 活动](#microsoft-power-automate-activities)|[Microsoft Power Apps 活动](#microsoft-power-apps-activities)|[Microsoft Stream 活动](#microsoft-stream-activities)|
-|[内容浏览器活动](#content-explorer-activities)|[隔离活动](#quarantine-activities)|[Microsoft Forms 活动](#microsoft-forms-activities)|
-|[敏感度标签活动](#sensitivity-label-activities)|[保留策略和保留标签活动](#retention-policy-and-retention-label-activities)|[Exchange 管理员活动](#exchange-admin-audit-log)
-|||
+:::row:::
+    :::column:::
+        [文件和页面活动](#file-and-page-activities)
+    :::column-end:::
+    :::column:::
+        [文件夹活动](#folder-activities)
+    :::column-end:::
+    :::column:::
+        [SharePoint 列表活动](#sharepoint-list-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [共享和访问请求活动](#sharing-and-access-request-activities)
+    :::column-end:::
+    :::column:::
+        [同步活动](#synchronization-activities)
+    :::column-end:::
+    :::column:::
+        [网站权限活动](#site-permissions-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [网站管理活动](#site-administration-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange 邮箱活动](#exchange-mailbox-activities)
+    :::column-end:::
+    :::column:::
+        [用户管理活动](#user-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Azure AD 组管理活动](#azure-ad-group-administration-activities)
+    :::column-end:::
+    :::column:::
+        [应用程序管理活动](#application-administration-activities)
+    :::column-end:::
+    :::column:::
+        [角色管理活动](#role-administration-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [目录管理活动](#directory-administration-activities)
+    :::column-end:::
+    :::column:::
+        [电子数据展示活动](#ediscovery-activities)
+    :::column-end:::
+    :::column:::
+        [高级电子数据展示活动](#advanced-ediscovery-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Power BI 活动](#power-bi-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft 工作区分析](#microsoft-workplace-analytics-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams 活动](#microsoft-teams-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Teams 医疗保健活动](#microsoft-teams-healthcare-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Teams 班次活动](#microsoft-teams-shifts-activities)
+    :::column-end:::
+    :::column:::
+        [Yammer 活动](#yammer-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Microsoft Power Automate 活动](#microsoft-power-automate-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Power Apps 活动](#microsoft-power-apps-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Stream 活动](#microsoft-stream-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [内容浏览器活动](#content-explorer-activities)
+    :::column-end:::
+    :::column:::
+        [隔离活动](#quarantine-activities)
+    :::column-end:::
+    :::column:::
+        [Microsoft Forms 活动](#microsoft-forms-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [敏感度标签活动](#sensitivity-label-activities)
+    :::column-end:::
+    :::column:::
+        [保留策略和保留标签活动](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Exchange 管理员活动](#exchange-admin-audit-log)
+    :::column-end:::
+:::row-end:::
 
 ### <a name="file-and-page-activities"></a>文件和页面活动
 

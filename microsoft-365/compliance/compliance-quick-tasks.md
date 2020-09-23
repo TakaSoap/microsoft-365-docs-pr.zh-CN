@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 了解可帮助您在 Microsoft 365 中快速开始遵守合规性的任务。
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816811"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200835"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -31,7 +31,7 @@ ms.locfileid: "47816811"
 
 管理组织中的哪些人能够访问 Microsoft 365 合规性中心以查看内容和执行管理任务，这一点非常重要。 Microsoft 365 提供特定于合规性的管理角色，并使用 Microsoft 365 合规性中心中包含的工具。
 
-首先向组织中的人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施 Microsoft 365 附带的合规性解决方案之前，您需要确保已将适当的人员分配给 **合规性数据管理员** 和 **合规性管理员** 管理员角色。 你还需要将用户分配到 Azure Active Directory 全局读取器角色，以按合规性分数查看数据。
+首先向组织中的人员分配合规性权限，以便他们可以执行这些任务，并防止未经授权的人员访问其职责之外的区域。 在开始配置和实施 Microsoft 365 附带的合规性解决方案之前，您需要确保已将适当的人员分配给 **合规性数据管理员** 和 **合规性管理员** 管理员角色。 你还需要将用户分配到 Azure Active Directory 全局读取器角色，以查看合规性管理器中的数据。
 
 有关配置权限以及将用户分配到管理员角色的分步指导，请参阅 [安全性 & 合规性中心中的权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
@@ -39,9 +39,9 @@ ms.locfileid: "47816811"
 
 如果你不知道你的位置，则很难知道要转到的位置。 满足合规性需求包括了解当前风险级别以及这些不断变化的时间可能需要哪些更新。 无论您的组织是对合规性要求的新，还是具有控制行业的标准和法规的经验丰富的经验，为提高合规性，最好的一个最佳做法是了解您的组织的地位。
 
-[Microsoft 合规性分数](compliance-score.md) 可帮助您了解组织的合规性状况，并突出显示可能需要改进的领域。 合规性分数使用集中式仪表板计算基于风险的分数，衡量您在完成操作方面的进展，以帮助降低数据保护和法规标准的风险。 您还可以使用合规性分数作为一种工具来跟踪您的所有风险评估。 它提供了工作流功能，可帮助您通过通用工具高效完成风险评估。
+[Microsoft 合规性管理器](compliance-manager.md) 可帮助您了解组织的合规性状况，并突出显示可能需要改进的区域。 合规性管理器使用集中式仪表板计算基于风险的分数，衡量您在完成操作方面的进展，以帮助降低数据保护和法规标准的风险。 您还可以使用合规性管理器作为一种工具来跟踪所有风险评估。 它提供了工作流功能，可帮助您通过通用工具高效完成风险评估。
 
-有关开始使用合规性分数的分步指南，请参阅 [设置合规性分数](compliance-score-setup.md)。
+有关开始使用合规性管理器的分步指南，请参阅 [合规性管理器](compliance-manager-setup.md)入门。
 
 >[!IMPORTANT]
 >大多数组织的安全性和合规性紧密集成。 您的组织必须解决基本安全、威胁防护和标识和访问管理方面的问题，以帮助提供纵深防御的安全性和合规性方法，这一点非常重要。

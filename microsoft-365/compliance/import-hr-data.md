@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以设置数据连接器，将员工数据从其组织的人力资源 (HR) 系统导入 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817157"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201541"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-preview"></a>设置连接器以将 HR 数据导入 (预览) 
+# <a name="set-up-a-connector-to-import-hr-data"></a>设置连接器以导入 HR 数据
 
 您可以在 Microsoft 365 合规性中心中设置数据连接器，以导入人力资源 (HR) 与事件相关的数据，如用户的辞职或用户的工作级别中的更改。 然后， [内幕风险管理解决方案](insider-risk-management.md) 可以使用 HR 数据生成风险指标，这些指标可帮助您在组织内部的用户标识可能的恶意活动或数据被窃。
 
@@ -219,7 +219,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击左侧导航中的 " **数据连接器** "。
 
-2. 在 " **数据连接器" (预览) ** 在 **HR**下的页面上，单击 " **查看**"。
+2. 在**HR**下的 "**数据连接器**" 页上，单击 "**查看**"。
 
 3. 在 **HR 自定义** 页面上，单击 " **添加连接器**"。
 
@@ -291,7 +291,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    下表介绍了要与此脚本一起使用的参数及其必需的值。 您在前面步骤中获取的信息用于这些参数的值。
 
-   |**参数**|**说明**
+   |**Parameter**|**说明**
    |:-----|:-----|:-----|
    |`tenantId`|这是您在步骤2中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏中获取组织的租户 Id。 这用于标识你的组织。|
    |`appId` |这是您在第2步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 | 
