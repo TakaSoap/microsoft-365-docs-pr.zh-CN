@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置 TeleMessage 连接器以在 Microsoft 365 中导入和存档 WhatsApp 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361867"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199155"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>设置连接器以存档 WhatsApp 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>设置连接器以存档 WhatsApp 数据
 
 使用 Microsoft 365 合规性中心中的 TeleMessage 连接器导入和存档 WhatsApp 呼叫、聊天、附件、文件和已删除的邮件。 设置和配置连接器后，它每天连接到组织的 TeleMessage 帐户，并使用 TeleMessage WhatsApp Phone 存档器或 TeleMessage WhatsApp 云存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 
@@ -86,4 +85,4 @@ ms.locfileid: "47361867"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

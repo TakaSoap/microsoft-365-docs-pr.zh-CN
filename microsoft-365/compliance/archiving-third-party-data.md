@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将第三方数据从社交媒体平台、即时消息平台和文档协作平台导入到 Microsoft 365 邮箱。
-ms.openlocfilehash: ebb5c78dc043afb0e1e35aa8b5c70cd2219a6349
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: a70747e9268b075f2c46072009b76f8071492fc7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282610"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200049"
 ---
 # <a name="archive-third-party-data"></a>存档第三方数据
 
@@ -40,16 +40,37 @@ Microsoft 365 允许管理员使用数据连接器将第三方数据从社交媒
 
 |第三方数据  |诉讼保留|电子数据展示  |保留设置  |记录管理  |通信合规性  |内部风险管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Bloomberg 消息](archive-bloomberg-message-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[Android <sup>1</sup>](archive-android-archiver-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[在&T 网络 <sup>1</sup>](archive-att-network-archiver-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[电铃网络 <sup>1</sup>](archive-bell-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[Bloomberg 消息](archive-bloomberg-message-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[.EML <sup>2</sup>](archive-eml-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[企业编号 <sup>1</sup>](archive-enterprise-number-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|[HR 数据](import-hr-data.md) ||||||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|[ICE 聊天](archive-icechat-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[FX 连接 <sup>2</sup>](archive-fxconnect-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[人力资源 (人力资源) ](import-hr-data.md) ||||||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|[ICE 聊天](archive-icechat-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[即时 Bloomberg](archive-instant-bloomberg-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[领英](archive-linkedin-data.md)   |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[O2 网络 <sup>1</sup>](archive-o2-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[物理徽章](import-physical-badging-data.md) ||||||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|[Reuters Eikon <sup>2</sup>](archive-reuterseikon-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[时差 <sup>2</sup>](archive-slack-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[Symphony <sup>2</sup>](archive-symphony-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[TELUS 网络 <sup>1</sup>](archive-telus-network-data.md)    |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[以文本分隔的 <sup>2</sup>](archive-text-delimited-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Verizon 网络 <sup>1</sup>](archive-verizon-network-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[Webex 团队 <sup>2</sup>](archive-webexteams-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[来自 Facebook <sup>2</sup>的工作区](archive-workplacefromfacebook-data.md)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[缩放会议 <sup>2</sup>](archive-zoommeetings-data.md)     |![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 ||||||||
 
-除了将 HR 数据) 导入到用户邮箱之外，上表中列出的第三方数据 (。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
+> [!NOTE]
+> <sup>1</sup> 此数据连接器由 TeleMessage 提供。 在 Microsoft 365 中存档数据之前，您必须使用 TeleMessage 为您的组织设置其存档服务。 有关详细信息，请参阅此数据类型的分步说明中的 "先决条件" 部分。<br/><br/><sup>2</sup> 连接器由 Globanet 提供。 在 Microsoft 365 中存档数据之前，您必须使用 Globanet 为您的组织设置其存档服务。 有关详细信息，请参阅此数据类型的分步说明中的 "先决条件" 部分。
+
+上表中列出的第三方数据 (除 HR 数据和物理徽章数据) 将导入到用户邮箱中。 支持第三方数据的相应合规性解决方案将应用于存储数据的用户邮箱。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支持第三方数据的合规性解决方案概述
 

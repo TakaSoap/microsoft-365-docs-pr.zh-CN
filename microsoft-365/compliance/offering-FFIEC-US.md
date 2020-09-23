@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: ccefeeb9b09ce35ed38587077d19be13d00b31b2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417316"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208464"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>联邦金融机构检查委员会 (FFIEC) 
 
@@ -47,7 +47,7 @@ Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是为满足为金
 - [Azure](https://aka.ms/AzureCompliance)
 - Intune
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
-- Power BI 云服务，无论是独立服务还是随 Office 365 品牌计划或套件提供的服务
+- Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -57,11 +57,11 @@ Azure 和 Office 365 SOC 认证报告。
 
 **我能否使用有关 SOC 标准的 Microsoft 合规性来满足针对我的机构的 FFIEC 合规性义务？**
 
-为了帮助您满足这些义务，Microsoft 按照上述说明，提供了有关 SOC 标准的符合性的具体说明。 但是，最终需要确定我们的服务是否符合适用于你的机构的特定法律和法规。 此外，FFIEC 还建议 "审核报告或评论的用户不应仅依赖报告中包含的信息来验证 TSP 的内部控制环境。 他们应使用其他验证和监视过程，如 FFIEC IT 测验手册中的 [外包技术手册](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 中更全面地讨论。
+为了帮助您满足这些义务，Microsoft 按照上述说明，提供了有关 SOC 标准的符合性的具体说明。 但是，最终需要确定我们的服务是否符合适用于你的机构的特定法律和法规。 此外，FFIEC 还建议 "审核报告或评论的用户" 不应仅依赖于报告中包含的信息来验证 TSP 的内部控制环境。 他们应使用其他验证和监控过程，在 FFIEC IT 测验手册的 [外包技术手册](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 中更全面地讨论。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[FFIEC Office 365 模板](https://go.microsoft.com/fwlink/?linkid=2117912)和 " [FFIEC Intune" 模板](https://go.microsoft.com/fwlink/?linkid=2118101)，以帮助您的组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将 .EML 数据从 Globanet 导入并存档到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405593"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200215"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>设置连接器以存档 .EML 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-eml-data"></a>设置连接器以存档 .EML 数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将 .EML 数据导入到 Microsoft 365 组织中的用户邮箱并将其存档。 .EML 是保存到文件的电子邮件的文件扩展名。 连接器将项的内容从源格式转换为电子邮件格式，然后将该项目导入到用户邮箱中。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405593"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

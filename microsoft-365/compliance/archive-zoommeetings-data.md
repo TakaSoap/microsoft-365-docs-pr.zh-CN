@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将数据从 Globanet Zoom 会议导入到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: a94d0a776af05b609816d3fdbfede869018fa30a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956229"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196355"
 ---
-# <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>设置连接器以存档缩放会议数据 (预览) 
+# <a name="set-up-a-connector-to-archive-zoom-meetings-data"></a>设置连接器以存档缩放会议数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将数据从缩放会议导入到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了一个 [缩放会议](https://globanet.com/zoom/) 连接器，该连接器配置为定期捕获第三方数据源中的项目 () 并将这些项目导入到 Microsoft 365。 连接器将会议的内容 (（包括聊天、录制的文件和元) 数据）从 "缩放会议" 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的 "用户邮箱" 中。
 
@@ -102,6 +101,6 @@ ms.locfileid: "47956229"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。
 
 - 若要使缩放会议连接器正常工作，必须在设置缩放会议时启用录制。

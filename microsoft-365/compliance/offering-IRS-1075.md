@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416342"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208374"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>美国内部收入服务出版物1075
 
@@ -74,7 +74,11 @@ Microsoft 会定期监视其安全、隐私和操作控件，以及 NIST 800-53 
 
 **我是否可以使用 Azure 或 Office 365 公共云环境，是否仍符合 IRS 1075？**
 
-不正确。 可以存储和处理 FTI 的唯一环境是 Azure 政府或 Office 365 美国政府版。 政府客户必须满足使用这些环境的资格要求。
+否。 可以存储和处理 FTI 的唯一环境是 Azure 政府或 Office 365 美国政府版。 政府客户必须满足使用这些环境的资格要求。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bd91e2439b501a20396763358f35a94aa31b4672
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c0abd8db3084630a6f848f740f5b1387dc58b704
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417230"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208184"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a> (SEC) 规则 17a-4 (f) 美国的有价证券和 Exchange 佣金
 
@@ -70,6 +70,10 @@ Microsoft Azure 永恒 Blob 存储 with with Policy Lock 和 Microsoft Office 36
 ### <a name="financial-use-cases"></a>财务用例
 
 使用事例概述、教程和其他资源构建用于金融服务的 Azure 解决方案。 [了解更多](https://docs.microsoft.com/azure/industry/financial/)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

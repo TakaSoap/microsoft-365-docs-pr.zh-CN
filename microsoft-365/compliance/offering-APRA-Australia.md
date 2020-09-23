@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417746"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208654"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>澳大利亚 Prudential 规章颁发机构 (APRA) 
 
@@ -80,13 +80,17 @@ CPS 234 密切反映了核心 Microsoft 安全框架：保护、检测和响应�
 
 **金融机构在外包商业活动前是否需要 APRA 批准？**
 
-不正确。 但是，大多数管控的金融组织必须在 APRA 中输入用于外包商业活动的协议后通知或咨询 APRA，然后再将这些活动外包到澳大利亚之外。
+否。 但是，大多数管控的金融组织必须在 APRA 中输入用于外包商业活动的协议后通知或咨询 APRA，然后再将这些活动外包到澳大利亚之外。
 
 此外，如果云服务被认为具有 "提升或极端的固有风险" （如 [云上的 APRA 信息文档](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf)中所述），则鼓励金融机构 (而不是必需的) 咨询 APRA，而不考虑是否在澳大利亚的内部或外部提供了该服务。
 
 **是否允许在澳大利亚之外传输数据？**
 
 是。 一般隐私法规 (适用于所有部门，而不仅仅是金融机构) 在特定条件下，不允许在澳大利亚外部转让。 Microsoft 同意以澳大利亚隐私原则签订合同条款，以便在使用 Microsoft 云服务时，允许在澳大利亚之外传输数据。 但是，我们的许多澳大利亚金融服务客户都利用了我们的澳大利亚数据中心提供的云服务，因此我们在澳大利亚地区进行了特定的合同承诺来存储这些数据的类别。 在 [合规性检查表](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)中进一步概述了这些承诺。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

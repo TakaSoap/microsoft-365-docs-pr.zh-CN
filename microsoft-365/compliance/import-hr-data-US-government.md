@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美国政府云中的管理员可以设置数据连接器，以将员工数据从组织的人力资源 (HR) 系统导入 Microsoft 365。 这使您可以使用内幕风险管理策略中的 HR 数据来帮助您检测可能对组织造成内部威胁的特定用户执行的活动。
-ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817162"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196385"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>设置连接器以在美国政府版中导入 HR 数据 (preview) 
+# <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>设置连接器以在美国政府版中导入 HR 数据
 
 您可以在 Microsoft 365 合规性中心中设置数据连接器，以将人力资源 (HR) 数据导入美国政府组织。 与 HR 相关的数据包括员工提交其辞职的日期和员工最后一天的日期。 这样，Microsoft 信息保护解决方案（如 [内幕风险管理解决方案](insider-risk-management.md)）可以使用这种 HR 数据来帮助您的组织防止在组织内遭受恶意活动或数据被盗。 设置 HR 连接器包含在 Azure Active Directory 中创建一个应用程序，该应用程序用于按连接器进行身份验证，创建包含 HR 数据的 CSV 映射文件，在合规性中心中创建一个数据连接器，然后以 ingests 的方式在 CSV 文件中将 HR 数据 (运行到 Microsoft 云中的计划基础) 。 然后，内幕风险管理工具使用数据连接器访问导入到 Microsoft 365 美国政府组织的 HR 数据。
 
@@ -77,7 +77,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击左侧导航中的 " **数据连接器** "。
 
-2. 在 " **数据连接器" (预览) ** 在 **HR**下的页面上，单击 " **查看**"。
+2. 在**HR**下的 "**数据连接器**" 页上，单击 "**查看**"。
 
 3. 在 **HR** 页上，单击 " **添加连接器**"。
 
@@ -137,7 +137,7 @@ CSV 文件的第一行（即标题行）列出了所需的列名称。 在每个
 
    下表介绍了要与此脚本一起使用的参数及其必需的值。 您在前面步骤中获取的信息用于这些参数的值。
 
-   |**参数**|**说明**
+   |**Parameter**|**说明**
    |:-----|:-----|:-----|
    |`tenantId`|您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏中获取组织的租户 Id。 这用于标识你的组织。|
    |`appId` |您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。 |

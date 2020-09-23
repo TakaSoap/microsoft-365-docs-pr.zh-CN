@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417346"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208454"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案 (FERPA) 
 
@@ -67,6 +67,10 @@ FERPA 不需要或识别审核或证书。
 
 - [联邦收银机： FERPA Final Rule](https://aka.ms/ferpa-reg) (2011 年12月) 
 - [FERPA 适用于家长的一般指导](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

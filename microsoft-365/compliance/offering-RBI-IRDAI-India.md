@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416068"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208194"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>将印度银行 (RBI) 和保险业法规与印度 (IRDAI 的开发机构) 
 
@@ -31,7 +31,7 @@ ms.locfileid: "47416068"
 
 - [有关管理有关银行 (RBI) 的财务服务外包的风险和行为准则的指南](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf) 。解决在外包金融服务时受管控银行将面临的风险，并帮助确保外包不会妨碍 RBI 的监管角色。 对于寻求外包金融服务的银行来说，RBI 不需要预先批准;但是，不应将核心银行功能（如内部审核和合规性功能）外包。
 - [有关信息安全、电子银行、技术风险管理和网络 Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI) 的指南。 金融机构必须报告外包安排，其中活动的规模和性质是重大的，或者需要与印度外部的服务提供程序进行大量的数据共享。 本指南尤其适用于在印度外部存储或处理操作数据的情况。
-- [由印度保险公司法规 (IRDAI) 的活动外包](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) 。 在金融部门结束的45天内的核心活动的某些支持功能中，需要每年的 IRDAI 保险公司报告外包。 Microsoft [清单](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 中的 (第7页介绍了 "核心活动的支持功能" 的组成。
+- [由印度保险公司法规 (IRDAI) 的活动外包](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) 。 在金融部门结束的45天内的核心活动的某些支持功能中，需要每年的 IRDAI 保险公司报告外包。 Microsoft [清单](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 中的 (第7页介绍了构成核心活动支持功能的内容。
 
 使用云服务的金融公司还必须遵守隐私规则，包括 [信息技术 (合理的安全实践和过程以及敏感的个人数据或信息) 规则 2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY) 。 为加强印度的数据保护法律而开发，这些规则可控制敏感个人数据的保护和处理。
 
@@ -60,9 +60,13 @@ Microsoft 清单可帮助印度中的财务公司进行 Microsoft 商业云服�
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**在与云服务提供商签订的合同中是否必须包含所有强制性条款？**
+**在与云服务提供商签订的合同中是否必须包含某些强制性条款？**
 
 是。 上面引用的准则自己金融机构必须纳入其云服务合同中的一些特定点。 本 [检查表](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 的第2部分 (第70页) 将这些内容与 Microsoft 合同文档中这些内容的地址部分对应起来。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

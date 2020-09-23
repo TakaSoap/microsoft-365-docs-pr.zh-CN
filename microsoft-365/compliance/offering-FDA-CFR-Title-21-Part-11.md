@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417336"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208444"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食物和药品管理 CFR Title 21 第11部分
 
@@ -61,7 +61,7 @@ SOC 1 和 SOC 2 类型2、ISO/IEC 27001 和 ISO/IEC 27018 标准的审核报告�
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
-**此标准适用于哪些人员？**
+**此标准适用于哪些对象？**
 
 FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组织涉及在研究、临床研究、维护、制造和生命科学产品分发等的 FDA 管控方面。
 
@@ -73,15 +73,19 @@ FDA CFR Title 21 第11部分适用于具有产品和服务的组织，这些组�
 
 **如何获取审计员的报告的副本？**
 
-该[服务信任门户](https://aka.ms/stphelp)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://aka.ms/stphelp)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **我可以在组织的认证过程中使用 Microsoft 合规性吗？**
 
 是。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 标准的独立第三方合规性报告证明了 Microsoft 控件的有效性。 Microsoft 企业版云客户可以使用这些相关报告中所述的审核控件作为其自己的 CFR Title 的一部分21第11部分风险分析和资格努力。 构建和部署遵循 FDA 法规的应用程序的客户负责确保其应用程序满足 FDA 要求。
 
-**Microsoft 与此标准保持合规性的责任是什么？**
+**Microsoft 对确保符合这一标准负有哪些责任？**
 
 Microsoft 确保其企业云服务符合控制 [联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) 中定义的条款以及适用的服务级别协议 (sla) 。 它们定义了实现和维护控制机制以确保安全和监控系统的责任。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

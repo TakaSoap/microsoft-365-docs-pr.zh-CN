@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1bdd6770c033abe7a2bf714029b2a4075fada249
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208122"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
@@ -68,7 +68,7 @@ CCPA 对 Californians 的许多权限都与 GDPR 提供的权限相似，包括�
 
 **GDPR 与 CCPA 之间有何区别？**
 
-两者存在诸多差异。 更容易着重关注相似之处，包括：
+两者存在诸多差异。 将重点放在与相似之处更简单，包括：
 
 - 透明度/泄露义务
 - 访问、删除和接收数据副本的使用者权限
@@ -93,9 +93,9 @@ CCPA 需要管控企业来收集、转移和销售个人信息，以及其他一
 - 针对未满 13 岁的儿童，CCPA 引入了与美国《儿童在线隐私保护法案》(COPPA) 相符的家长同意义务。
 - 对于13到16岁之间的儿童，CCPA 将强制实施新的义务，以从儿童获得自愿同意。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[CCPA 模板](https://go.microsoft.com/fwlink/?linkid=2118004)，以帮助组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

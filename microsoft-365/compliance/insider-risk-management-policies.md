@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fa38b81ff02729f1bd874c1ac286712b0a6bbb7a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416806"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208778"
 ---
 # <a name="insider-risk-management-policies"></a>内幕风险管理策略
 
@@ -71,7 +71,7 @@ ms.locfileid: "47416806"
 
 从 **数据泄露** 模板创建的每个内幕风险管理策略只能分配一个 DLP 策略。 请考虑创建一个专用的 DLP 策略，将您要检测的不同活动组合起来，并将其用作使用 **数据泄露** 模板的内幕风险策略的触发事件。
 
-有关为您的组织配置 DLP 策略的分步指南，请参阅 [创建、测试和调整 dlp 策略](create-test-tune-dlp-policy.md) 主题。
+有关为您的组织配置 DLP 策略的分步指南，请参阅 [创建、测试和调整 DLP 策略一](create-test-tune-dlp-policy.md) 文。
 
 ### <a name="data-leaks-by-priority-users-preview"></a>按优先级用户 (预览的数据泄露) 
 
@@ -115,6 +115,9 @@ ms.locfileid: "47416806"
 
 ### <a name="offensive-language-in-email"></a>电子邮件中的冒犯性语言
 
+>[!IMPORTANT]
+>从2020年10月16日起，你将无法再使用此模板创建策略。 使用此模板的任何活动策略都将起作用，直到它们在2021年1月永久删除。 我们正在弃用提供支持此模板的冒犯性语言的内置分类器，因为它生成了大量误报。 若要解决攻击性语言的风险问题，我们建议使用 Microsoft 365 [通信合规性](communication-compliance.md) 策略。 有关内置分类器的详细信息，请参阅 [trainable 分类](classifier-get-started-with.md)器入门。
+
 检测并采取措施来防止攻击性和滥用行为是防止风险的关键因素。 Microsoft 365 中的内置分类程序扫描从组织中的 Exchange Online 邮箱发送的电子邮件，了解不同类型的合规性问题。 这些分类器使用人工智能和关键字的组合来识别可能违反反骚扰策略的电子邮件中的语言。 使用此模板可以快速创建一个策略，该策略使用这些分类程序自动检测可能被视为滥用或攻击性的电子邮件内容。 内幕风险管理使用的分类器扫描发送的电子邮件中的英语术语和看法以查找攻击性语言。
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>策略模板先决条件和触发事件
@@ -139,7 +142,7 @@ ms.locfileid: "47416806"
 
 内幕风险管理策略支持为内容指定更高的优先级，具体取决于存储位置或对其进行分类的方式。 将内容指定为优先级可增加任何关联活动的风险分数，这反过来又会增加生成高严重性警报的可能性。 但是，除非相关内容包含内置或自定义敏感信息类型或在策略中指定为优先级，否则一些活动将不会生成警报。
 
-例如，您的组织具有用于高度机密项目的专用 SharePoint 网站。 此 SharePoint 网站中信息的数据泄漏可能会影响项目，并且会对其成功产生重大影响。 通过在数据泄露策略中设置此 SharePoint 网站的优先级，可自动增加符合条件的活动的风险分数。 这增加了这些活动生成内幕风险警报的可能性，并提升了警报的严重性级别。
+例如，您的组织具有用于高度机密项目的专用 SharePoint 网站。 此 SharePoint 网站中信息的数据泄漏可能会影响项目，并且会对其成功产生重大影响。 通过在数据泄露策略中设置此 SharePoint 网站的优先级，可自动增加符合条件的活动的风险分数。 此优先顺序增加了这些活动生成 "内幕风险警报" 的可能性，并提高了警报的严重性级别。
 
 当您在策略向导中创建内幕风险管理策略时，可以从以下优先级中进行选择：
 

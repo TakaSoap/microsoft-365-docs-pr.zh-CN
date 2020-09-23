@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以在 Microsoft 365 中设置连接器，以在 Globanet FX 连接中导入和存档数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: e56c0bc1ab16d9790e56bf0baf054057121ff94c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405583"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197243"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>设置连接器以将 FX 连接数据存档 (预览) 
+# <a name="set-up-a-connector-to-archive-fx-connect-data"></a>设置连接器以存档 FX 连接数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将数据从 FX Connect 协作平台导入并存档到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了一个 [FX 连接](https://globanet.com/fx-connect/) 连接器，该连接器配置为捕获 FX connect 项目并将这些项目导入到 Microsoft 365。 连接器将内容从 FX 连接（如贸易、邮件和其他详细信息）从组织的 FX 连接帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405583"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

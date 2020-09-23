@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417326"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208644"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳大利亚政府信息安全注册评估员计划 (IRAP) 
 
@@ -50,7 +50,7 @@ Microsoft 在澳大利亚的服务评估涵盖了四个可用的 Azure 区域。
 
 对于每个评估，Microsoft 与 ACSC 资格鉴定的 IRAP 评估员一起检查了 Microsoft 的 IT 运营团队、物理数据中心、入侵检测、加密、跨域和网络安全性、访问控制和信息安全风险管理（范围内的服务）所使用的安全控制和过程。 IRAP 评估发现，Microsoft 系统体系结构基于合理的安全原则，并且适用的澳大利亚政府信息安全手册 (ISM) 控件在我们评估的服务中已就绪且完全有效。
 
-ISM 使用的风险管理框架从 [国家标准和技术协会 (NIST) 特殊出版物 (SP) 800-37 第 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)版，"针对信息系统和组织的风险管理框架：安全和隐私的系统生命周期方法"。 在此风险管理框架中，可以使用各种风险管理标准（如 [国际标准化组织 (ISO) 31000:2018、风险管理–指南](https://www.iso.org/standard/65694.html)）来确定风险和安全控制选择。 ISM 广泛使用的风险管理框架包含六个步骤：
+ISM 使用的风险管理框架从 [国家标准和技术协会 (NIST) 特殊出版物 (SP) 800-37](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)的风险管理框架（用于信息系统和组织：系统生命周期方法用于安全和隐私）中进行绘制。 在此风险管理框架中，可以使用各种风险管理标准（如 [国际标准化组织 (ISO) 31000:2018、风险管理-准则](https://www.iso.org/standard/65694.html)）来确定风险和安全控制选择。 ISM 广泛使用的风险管理框架包含六个步骤：
 
 - 定义系统
 - 选择安全控件
@@ -86,9 +86,9 @@ IRAP 适用于所有使用云服务的澳大利亚联邦、州和本地政府机
 - [谁提供 IRAP 培训？](https://acsc.gov.au/infosec/irap/training.htm)
 - [合规性和不合规要求信息](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择预配置的[IRAP 模板](https://go.microsoft.com/fwlink/?linkid=2117913)，以帮助组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

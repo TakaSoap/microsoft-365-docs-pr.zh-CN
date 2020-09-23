@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将文本分隔的数据从 Globanet 导入并存档到 Microsoft 365 中。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 6a7c8a23fdf78ccac21e1cae68dbc6b971bd6486
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 854e678067a26fd5fa1f89eb4b2f4f0327eac7a0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405603"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196571"
 ---
-# <a name="set-up-a-connector-to-archive-text-delimited-data-preview"></a>设置连接器以存档以文本分隔的数据 (预览) 
+# <a name="set-up-a-connector-to-archive-text-delimited-data"></a>设置连接器以存档以文本分隔的数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将文本分隔的数据导入到 Microsoft 365 组织中的用户邮箱并进行存档。 [Globanet](https://globanet.com/merge1/) 提供了一个文本分隔的连接器，该连接器配置为定期捕获第三方数据源 (中的项目) 并将这些项目导入到 Microsoft 365。 连接器将文本分隔的数据源中的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -92,4 +91,4 @@ ms.locfileid: "47405603"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

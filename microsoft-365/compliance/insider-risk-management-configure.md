@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416466"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208798"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -89,6 +89,7 @@ ms.locfileid: "47416466"
 ### <a name="configure-microsoft-365-hr-connector"></a>配置 Microsoft 365 HR 连接器
 
 内幕风险管理支持导入从第三方风险管理和人力资源平台导入的用户和日志数据。 Microsoft 365 人力资源 (HR) 数据连接器允许您从 CSV 文件中提取人力资源数据，包括用户终止日期、最后的雇用日期、性能改进计划通知、性能审核操作和作业级更改状态。 此数据可帮助推动内幕风险管理策略中的警报指示器，这是在组织中配置完全风险管理覆盖范围的重要部分。 如果您为您的组织配置了多个 HR 连接器，内幕风险管理将自动从所有 HR 连接器中提取指示器。
+
 使用以下策略模板时，需要使用 Microsoft 365 HR 连接器：
 
 - 脱离用户数据失窃
@@ -123,10 +124,19 @@ DLP 策略有助于标识用户在内部人员风险管理中激活风险评分�
 
 使用以下策略模板时，优先级用户组是必需的：
 
-- 优先级用户违反安全策略 
+- 优先级用户违反安全策略
 - 按优先级用户的数据泄露
 
 有关创建优先级用户组的分步指南，请参阅 [开始使用内幕风险管理设置](insider-risk-management-settings.md#priority-user-groups-preview) 一文。 配置了优先级用户组之后，请返回这些配置步骤。
+
+### <a name="configure-physical-badging-connector-optional"></a>配置物理徽章连接器 (可选) 
+
+内幕风险管理支持导入从物理控制和访问平台导入的用户和日志数据。 通过物理徽章连接器，可以从 JSON 文件中提取 access 数据，其中包括用户 Id、访问点 Id、访问时间和日期以及访问状态。 此数据可帮助推动内幕风险管理策略中的警报指示器，这是在组织中配置完全风险管理覆盖范围的重要部分。 如果为组织配置了多个物理徽章连接器，内幕风险管理将自动从所有物理徽章连接器中提取指示器。 当使用所有内幕风险策略模板时，物理徽章连接器中的信息将补充其他内幕风险信号。
+
+>[!IMPORTANT]
+>若要使用内部风险管理策略并将与传出和终止用户相关的信号数据与您的物理控制和访问平台中的事件数据关联起来，您还必须配置 Microsoft 365 HR 连接器。 如果在不启用 Microsoft 365 HR 连接器的情况下启用物理徽章连接器，则内幕风险管理策略将仅处理组织中用户的未经授权物理访问的事件。
+
+有关为组织配置物理徽章连接器的分步指南，请参阅 [设置连接器以导入物理徽章 data](import-physical-badging-data.md) 一文。 配置连接器后，请返回到这些配置步骤。
 
 ## <a name="step-4-configure-insider-risk-settings"></a>步骤4：配置内幕风险设置
 
@@ -150,14 +160,17 @@ DLP 策略有助于标识用户在内部人员风险管理中激活风险评分�
     - [域设置](insider-risk-management-settings.md#domains-preview)
 6. 在 " **导出通知** " 页面上，启用 "使用 Office 365 管理 api 导出内幕风险警报信息（如果需要）"。
 7. 在 " **优先级用户组** " 页上，创建一个优先级用户组并添加用户（如果在 **步骤 3**中未创建）。
-8. 选择 " **保存** " 为您的内幕风险策略启用这些设置。
+8. 在 " **电源自动流** " 页上，配置来自内幕风险流模板的流或创建新流。 有关分步指导，请参阅 " [内幕风险管理设置](insider-risk-management-settings.md#power-automate-flows-preview) " 一文中的 "入门"。
+9. 在 " **优先级资产" 页面**上，配置优先级资产以使用物理控制和物理徽章连接器导入的访问平台中的数据。 有关分步指导，请参阅 " [内幕风险管理设置](insider-risk-management-settings.md#priority-physical-assets-preview) " 一文中的 "入门"。
+10. 在 " **Microsoft 团队** " 页面上，启用 microsoft 团队与内幕风险管理的集成，以自动为案例或用户协作创建团队。 有关分步指导，请参阅 " [内幕风险管理设置](insider-risk-management-settings.md#microsoft-teams-preview) " 一文中的 "入门"。
+11. 选择 " **保存** " 为您的内幕风险策略启用这些设置。
 
 ## <a name="step-5-create-an-insider-risk-management-policy"></a>步骤5：创建内幕风险管理策略
 
 内幕风险管理策略包括分配的用户并定义为通知配置的风险指示器类型。 在活动可以触发通知之前，必须配置策略。
 
 1. 在 [Microsoft 365 合规性中心](https://compliance.microsoft.com)中，转到 " **内幕风险管理** "，然后选择 " **策略** " 选项卡。
-2. 选择 " **创建策略** " 以打开策略向导
+2. 选择 " **创建策略** " 以打开策略向导。
 3. 在 " **新建内幕风险策略** " 页上，填写下列字段：
     - **Name (必需的) **：为策略输入一个友好名称。
     - **Description (可选) **：输入策略的说明。
@@ -165,6 +178,9 @@ DLP 策略有助于标识用户在内部人员风险管理中激活风险评分�
 
     >[!IMPORTANT]
     >大多数策略模板都具有必须为策略配置的先决条件，以生成相关警报。 如果尚未配置适用的策略先决条件，请参阅上面的 **步骤 3** 。
+
+    >[!CAUTION]
+    >从2020年10月16日开始，你将无法再使用电子邮件模板中的冒犯性语言创建策略。 使用此模板的任何活动策略将一直运行，直到在2021年1月永久删除。
 
 4. 选择 " **下一步** " 继续。
 5. 在 " **用户** " 页上，选择 " **添加用户或组** " 或 **选择 "优先级用户组** " 来定义哪些用户或优先级的用户组包括在策略中，具体取决于所选的策略模板。 如果还没有选择基于用户的模板) 的优先级，则选中 " **所有用户和已启用邮件的组** " 复选框（如果适用） (。 选择 " **下一步** " 继续。

@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为将数据从 Globanet 时差导入和存档到 Microsoft 365。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957028"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196753"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>设置连接器以存档可宽延时间数据 (预览) 
+# <a name="set-up-a-connector-to-archive-slack-data"></a>设置连接器以存档可宽延时间数据
 
-使用 Microsoft 365 合规性中心中的 Globanet 连接器将第三方数据从社交媒体、即时消息和文档协作平台导入并存档到 Microsoft 365 组织中的邮箱。 Globanet 在 Microsoft 365 合规性中心中提供了可配置为定期捕获第三方数据源 (中的项目的可 [宽延性数据连接器](https://globanet.com/slack/) 连接器) 然后将这些项目导入到 Microsoft 365。 可宽延时间从可宽延时间 API 中提取邮件和文件，并将其转换为电子邮件格式，然后将其导入到 Microsoft 365 中的用户邮箱。
+使用 Microsoft 365 合规性中心中的 Globanet 连接器将第三方数据从社交媒体、即时消息和文档协作平台导入并存档到 Microsoft 365 组织中的邮箱。 Globanet 提供了一个可宽延时间连接器，该连接器配置为定期捕获第三方数据源 (中的项目) 然后将这些项目导入到 Microsoft 365。 可宽延时间从可宽延时间 API 中提取邮件和文件，并将其转换为电子邮件格式，然后将项目导入到用户邮箱。
 
 在将可宽延时间数据存储在用户邮箱中之后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签，以及通信合规性。 使用可宽延时间连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
@@ -92,4 +91,4 @@ ms.locfileid: "47957028"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件和项目。 较大项目的支持将在以后提供。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

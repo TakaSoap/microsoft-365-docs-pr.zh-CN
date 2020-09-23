@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置连接器，以便在 Microsoft 365 中的 Globanet 的 Webex 团队连接器中导入和存档数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 3d9693fd1baf990ba3ca956c8a24d8d796e80995
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405441"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196561"
 ---
-# <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>设置连接器以存档 Webex 团队数据 (预览) 
+# <a name="set-up-a-connector-to-archive-webex-teams-data"></a>设置连接器以存档 Webex 团队数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将 Webex 团队中的数据导入和存档到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了一个 [Webex 团队](https://globanet.com/webex-teams/) 连接器，该连接器配置为捕获 Webex 团队通信项并将其导入到 Microsoft 365。 连接器将内容从 Webex 团队（如1:1 聊天、组对话、频道对话和组织的 Webex 团队帐户中的附件）转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -94,4 +93,4 @@ ms.locfileid: "47405441"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

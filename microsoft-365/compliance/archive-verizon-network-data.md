@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置 TeleMessage 连接器，以便在 Microsoft 365 中导入和存档来自 Verizon 网络的 SMS 和 MMS 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361827"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196551"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>设置连接器以存档 Verizon 网络数据 (预览) 
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>设置连接器以存档 Verizon 网络数据
 
 使用 Microsoft 365 合规性中心中的 TeleMessage 连接器导入和存档短信服务 (SMS) 和多媒体消息服务 (MMS) 来自 Verizon 网络的数据。 设置和配置连接器后，它每天连接到组织的 Verizon 网络，并将短信和 MMS 数据导入 Microsoft 365 中的邮箱。
 
@@ -88,4 +87,4 @@ ms.locfileid: "47361827"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

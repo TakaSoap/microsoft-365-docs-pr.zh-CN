@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416414"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208614"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务 (CJIS) 安全策略
 
@@ -77,6 +77,10 @@ Microsoft 使用州 CJIS Systems 代理商 (CSA) 签署信息协议;你可以从
 **我应从哪里开始使用我的机构的合规性工作？**
 
 [CJIS 安全策略](https://aka.ms/cjis-security-policy) 涵盖了您的机构必须采取的预防措施以保护 CJI。 此外，你的 Microsoft 帐户代表可以与熟悉你的司法辖区要求的人员联系。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

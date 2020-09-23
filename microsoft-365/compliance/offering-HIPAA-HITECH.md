@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416846"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208404"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任 (HIPAA) & 高科技行为
 
@@ -84,7 +84,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-不正确。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 
@@ -92,7 +92,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 **如何获取审计员的报告的副本？**
 
-该[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **如何了解有关遵守 HIPAA 和高科技法案的更多信息？**
 
@@ -102,9 +102,9 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 - [使用 Microsoft Azure 设计安全运行状况解决方案的实践指南](https://aka.ms/azureindustrysecurity) 可帮助您更好地了解以安全方式成功采用云服务所需的操作。
 - [解决 Microsoft 云中的 HIPAA 安全性和隐私要求](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) 提供了管理法规要求的简短概述。 此外，它还详细分析了 Microsoft 云服务是如何使用映射到这些要求的方法构建的，并提供了有关如何构建合规性解决方案的指南。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 [设置合规性分数](compliance-score-setup.md)后，从 "**模板**" 下拉菜单中选择 "预配置的[HIPAA Office 365" 模板](https://go.microsoft.com/fwlink/?linkid=2118005)和 " [HIPAA Intune" 模板](https://go.microsoft.com/fwlink/?linkid=2118006)，以帮助您的组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

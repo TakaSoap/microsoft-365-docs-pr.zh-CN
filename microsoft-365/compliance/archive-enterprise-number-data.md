@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为从 TeleMessage 企业数字存档器中导入和存档 SMS 和 MMS 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: d2e871f6d2515ac49018c6710689517a7bde0985
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362031"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200159"
 ---
-# <a name="set-up-a-connector-to-archive-enterprise-number-data-preview"></a>设置连接器以存档企业数字数据 (预览) 
+# <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>设置连接器以存档企业数字数据
 
 使用 Microsoft 365 合规性中心中的 TeleMessage 连接器导入和存档短信服务 (SMS) 和多媒体邮件服务 (MMS) 邮件、聊天消息、语音呼叫录制和来自企业编号存档器的语音呼叫日志。 设置和配置连接器后，它每天连接到组织的 TeleMessage 帐户，并在 Microsoft 365 中将使用 TeleMessage 企业数字存档器的员工的移动通信数据导入到邮箱中。
 
@@ -82,4 +81,4 @@ ms.locfileid: "47362031"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

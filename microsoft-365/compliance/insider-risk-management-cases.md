@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416556"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208848"
 ---
 # <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
@@ -127,6 +127,15 @@ ms.locfileid: "47416556"
 4. **风险活动 chronology**：列出了与事例关联的所有风险警报的完整 chronology，其中包括相应警报气泡图中提供的所有详细信息。
 5. **Case 操作**：用于解决事例的选项位于 "案例操作" 工具栏上。 您可以解析案例、向用户发送电子邮件通知或升级数据或用户调查的案例。
 
+### <a name="activity-explorer-preview"></a>活动资源管理器 (预览) 
+
+>[!IMPORTANT]
+>"活动资源管理器" 选项卡在您的组织中提供此功能后，具有触发事件的用户的 "事例管理" 区域中提供。
+
+通过 " **活动资源管理器** " 选项卡，风险分析师和调查人员可以查看与风险警报相关的活动详细信息。 例如，在案例管理操作过程中，调查人员和分析师可能需要查看与案例相关的所有风险活动，以了解更多详细信息。 通过 **活动资源管理器**，审阅者可以快速查看检测到风险的活动的时间线，并确定和筛选与警报关联的所有风险活动。
+
+有关活动资源管理器的详细信息，请参阅 [内幕风险管理通知](insider-risk-management-alerts.md#activity-explorer-preview) 一文。
+
 ### <a name="content-explorer"></a>内容浏览器
 
 " **内容资源管理器** " 选项卡允许风险分析师和调查人员查看与风险警报关联的所有单个文件和电子邮件的副本。 例如，如果在用户从 SharePoint Online 下载数百个文件时创建了一个警报，并且活动触发了一个策略通知，则会捕获警报的所有下载文件，并将其从原始存储源复制到内幕版风险管理事例中。
@@ -196,15 +205,42 @@ ms.locfileid: "47416556"
 1. 在 [Microsoft 365 合规性中心](https://compliance.microsoft.com)中，转到 " **内幕风险管理** "，然后选择 " **事例** " 选项卡。
 2. 选择一个事例，然后选择 "案例操作" 工具栏上的 " **升级以进行调查** " 按钮。
 3. 在 " **升级后进行调查** " 对话框中，输入新用户调查的名称。 如果需要，请输入有关事例的注释并选择 "已 **升级**"。
+4. 查看 "通知" 字段并根据需要进行更新。 此处输入的值将替代模板上的值。
 5. 选择 " **确认** " 以创建用户调查事例，或选择 " **取消** " 关闭对话框而不创建新的用户调查事例。
 
 在将内幕风险管理案例升级到新的用户调查案例之后，可以在 Microsoft 365 合规性中心的**电子数据展示**  >  **高级**区域中查看新事例。
 
-### <a name="share-a-case"></a>共享案例
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>在案例中运行具有 Power 自动化的自动任务流
 
-共享内幕风险管理案例使调查人员和评论能够与组织中的其他合规性利益干系人轻松协作。 您可以通过事例管理区域快速与外部利益干系人共享指向内幕风险管理案例的链接。 若要从链接访问内幕风险管理案例，风险承担者必须包含在任何内幕风险管理角色组中。
+通过使用建议的电源自动流，风险调查人员和分析师可以快速执行以下操作：
 
-可用的共享选项如下所示： 
+- 在内幕风险案例中，从 HR 或业务请求有关用户的信息
+- 当用户拥有 "内幕风险" 警报时通知管理器
+- 在内幕风险情况下添加日历提醒以跟进
+
+若要针对内幕风险管理案例运行、管理或创建电源自动化流程，请执行以下操作：
+
+1. 选择 "案例动作" 工具栏上的 " **自动** "。 
+2. 选择要运行的电源自动流，然后选择 " **运行流**"。 
+3. 流完成后，选择 " **完成**"。
+
+若要了解有关内幕风险管理的电源自动化流的详细信息，请参阅 [内幕风险管理设置入门](insider-risk-management-settings.md#power-automate-flows-preview)。
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>查看或创建案例的 Microsoft 团队团队
+
+在设置中启用了 Microsoft 团队集成 for 内幕风险管理时，每次确认通知并创建事例时，都会自动创建 Microsoft 团队团队。 风险调查人员和分析师可以通过选择 "案例操作" 工具栏上的 " **查看 Microsoft 团队团队** " 快速打开 Microsoft 团队，并直接转到团队。
+
+对于在启用 Microsoft 团队集成之前打开的案例，风险调查人员和分析师可以通过在 "案例" 操作工具栏上选择 " **创建 Microsoft 团队团队** " 来创建一个新的 microsoft 团队团队。
+
+解决案例后，关联的 Microsoft 团队将自动存档 (隐藏，并将其转换为只读) 。
+
+若要了解有关 Microsoft 团队内部人员风险管理的详细信息，请参阅 [内幕风险管理设置](insider-risk-management-settings.md#microsoft-teams-preview)入门。
+
+### <a name="share-the-case"></a>共享事例
+
+共享内幕风险管理案例使风险调查人员和分析师能够与组织中的其他合规性利益干系人轻松协作。 您可以通过事例管理区域快速与外部利益干系人共享指向内幕风险管理案例的链接。 若要从链接访问内幕风险管理案例，风险承担者必须包含在任何内幕风险管理角色组中。
+
+可用的共享选项如下所示：
 
 - **ServiceNow**：为 microsoft 365 组织配置 Microsoft 365 ServiceNow 连接器后，您可以轻松地共享指向该案例的链接，打开事件，或向你的 ServiceNow 组织请求更改。 若要与 ServiceNow 共享事例，请**Share**  >  从 "事例" 操作中选择 "共享**ServiceNow** "。 ServiceNow 与内幕风险管理的集成支持包括以下事例信息和操作：
     - **任务名称**：新 ServiceNow 任务的名称。

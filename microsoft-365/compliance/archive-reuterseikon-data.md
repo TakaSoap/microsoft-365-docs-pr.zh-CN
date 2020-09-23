@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以将连接器设置为在 Microsoft 365 中的 Globanet 中导入和存档 Reuters Eikon 数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: ec5df821bcfbb772879fea5e8568e7090ce54aae
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c9e63896d333d7f94d01b6ec3af565f476fac39e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405473"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196771"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-eikon-data-preview"></a>设置连接器以存档 Reuters Eikon data (preview) 
+# <a name="set-up-a-connector-to-archive-reuters-eikon-data"></a>设置连接器以存档 Reuters Eikon 数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将数据从 Reuters Eikon 平台导入并存档到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了 [Reuters Eikon](https://globanet.com/eikon/) 连接器，该连接器配置为定期捕获第三方数据源 (中的项目) 并将这些项目导入到 Microsoft 365。 连接器将用户的 Reuters Eikon 帐户中的内容（如人员到个人邮件、组聊天、附件和免责声明）转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405473"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。

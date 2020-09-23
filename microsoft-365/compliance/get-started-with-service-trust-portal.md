@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 了解如何访问和使用 Microsoft 服务信任门户，以帮助实现安全性、隐私和合规性实践。
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547470"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197759"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Microsoft 服务信任门户入门
 
@@ -68,11 +68,8 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 ### <a name="compliance-manager"></a>合规性管理器
 
-合规性管理器是一项基于工作流的风险评估工具，可帮助您跟踪、分配和验证与 Microsoft 云服务（如 Microsoft 365、Dynamics 365 和 Azure）相关的组织的法规遵从性活动。 使用合规性管理器在云的共享职责模型中管理法规遵从性。 根据要使用的合规性管理器的版本，请参阅以下文章以了解详细信息：
-
-- [Microsoft 合规性管理器 (经典) ](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft 合规性管理器 (预览) ](compliance-manager-overview.md)
+> [!IMPORTANT]
+> 合规性管理器已从服务信任门户移至其在 [Microsoft 365 合规性中心](https://compliance.microsoft.com/)中的新位置。 所有客户数据都已移到新位置，因此您可以继续使用合规性管理器而不会中断。 请参阅 [合规性管理器文档](compliance-manager.md) 以了解设置信息，并了解新功能。 尽管经典版合规性管理器仍保留在服务信任门户中，但鼓励所有用户使用 Microsoft 365 合规性中心中的合规性管理器。
 
 ### <a name="trust-documents"></a>信任文档
 
@@ -110,15 +107,9 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 转到 " **更多 > 管理员** " 以访问仅适用于全局管理员帐户的管理功能。 仅当以全局管理员身份登录时，此选项才可见。 " **管理** " 下拉菜单中有两个选项：
 
-- **设置：** 此页面允许您将基于角色的访问 (称为 " *用户角色* ") 到合规性管理器。  有关详细信息，请参阅：
+- **设置：** 此页面允许您为合规性管理器 (经典) 分配用户角色。
 
-  - [合规性管理器中的权限 (经典) ](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [合规性管理器中的权限 (预览) ](compliance-manager-overview.md#permissions)
-
-  您还可以配置合规性管理器中的操作是否根据安全分数中相同操作的状态进行更新。 仅当您使用的是最新版本的合规性管理器时，才支持此功能。 有关详细信息，请参阅 [控制自动安全得分更新](working-with-compliance-manager.md#controlling-automatic-secure-score-updates)。
-
-- **用户隐私设置：** 此页面允许您在符合性管理器中为特定用户导出包含措施项分配的报告。 您还可以将所有操作项重新分配给其他用户，并从指定的用户中删除任何已分配的操作项。 有关详细信息，请参阅 [用户隐私设置](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)。
+- **用户隐私设置：** 在此页面中，可以将包含措施项分配的报告导出到特定用户 (经典) 的合规性管理器中。 您还可以将所有操作项重新分配给其他用户，并从指定的用户中删除任何已分配的操作项。
 
 ### <a name="search"></a>搜索
 
@@ -126,9 +117,9 @@ Microsoft 服务信任门户提供了有关 Microsoft 安全、隐私和合规�
 
 ![服务信任门户 - 搜索文档（应用了筛选器）](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-默认情况下，第 i 个搜索将返回文档结果。 您可以使用下拉列表筛选结果，以优化显示的文档列表。 您可以使用多个筛选器缩小文档列表。 筛选器包括特定云服务、合规性类别或安全措施、地区和行业。 单击文档名称链接以下载该文档。
+默认情况下，搜索将返回文档结果。 您可以使用下拉列表筛选结果，以优化显示的文档列表。 您可以使用多个筛选器缩小文档列表。 筛选器包括特定云服务、合规性类别或安全措施、地区和行业。 单击文档名称链接以下载该文档。
 
-若要在与搜索词相关的合规性管理器中列出评估，请单击 " **合规性管理器**"。 搜索结果显示了评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及该控件是 Microsoft 还是客户托管。 单击控件的名称以查看合规性管理器中的评估中的控件。
+若要列出合规性管理器中评估的控件 (经典) 与搜索词相关，请单击 " **合规性管理器**"。 搜索结果显示了评估的创建日期、评估分组的名称、适用的 Microsoft 云服务，以及该控件是 Microsoft 还是客户托管。 单击控件的名称以查看合规性管理器 (经典) 中的评估中的控件。
 
 ![服务信任门户 - 搜索合规性管理器控制措施](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

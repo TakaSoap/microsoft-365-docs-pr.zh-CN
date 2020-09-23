@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29c56d525375162926d34bd298bbbd660964438d
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415988"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208154"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>俄语个人数据本地化要求
 
@@ -40,6 +40,10 @@ Microsoft 邀请客户考虑通过 Microsoft 云解决方案提供商 (CSP) 合�
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>管理 Microsoft Online Services 的用户标识和访问权限
 
 对于 microsoft Azure、Microsoft 365、Dynamics 365 和 Power Platform 等 Microsoft Online 服务，用户验证和访问管理是通过 [Azure Active Directory (AAD) ](https://azure.microsoft.com/services/active-directory/)执行的。 请注意，在 Microsoft 客户使用本地标识管理 (系统（如 Windows Server Active Directory (AD) 或任何其他 ID 管理系统) ）的情况下，客户有机会通过 Azure AD Connect 将此类系统与 Azure Active Directory (AAD) 进行快速集成。 有关详细信息，请参阅 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) 选项。 Microsoft 客户还可以考虑使用第三方供应商的应用程序和解决方案来管理其用户，并将其本地标识系统与 Azure AD 集成。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="questions-and-support"></a>问题和支持
 

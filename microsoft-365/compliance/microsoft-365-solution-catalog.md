@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132166"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198355"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -93,7 +93,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="next-steps"></a>后续步骤
 
-- **查看 Microsoft 合规性分数**，这是一种个性化的基于风险的分数，可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅 [合规性分数 (preview) ](compliance-score.md)。
+- **请访问 Microsoft 合规性管理器**，它可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅 [合规性管理器](compliance-manager.md)。
 
 - **配置内幕风险管理策略** 以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅 [内幕风险管理](insider-risk-management.md)。
 

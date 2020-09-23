@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54f1c4006450d47e974c4775720c91d8c6bea764
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415572"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208584"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英国网络重点加上
 
@@ -46,6 +46,10 @@ Microsoft Azure 已获得网络 Essentials 加上徽章，符合 [网络重点�
 
 - [Azure 网络 Essentials PLUS 合规性报告](https://aka.ms/AzureCyberEPlusReport)
 - [Azure 网络 Essentials PLUS 认证](https://aka.ms/AzureCyberEPlusCert)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

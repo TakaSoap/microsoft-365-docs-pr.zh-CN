@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417034"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208414"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>健康信息信任联盟 (HITRUST) 常见安全框架 (CSF) 
 
@@ -102,6 +102,10 @@ HITRUST CSF 认证的范围内的服务为 Exchange Online 存档、Exchange Onl
 **如何与 Microsoft 联系？**
 
 登录到 HITRUST MyCSF®工具，并使用 Azure 的完全继承或共享责任控制在 Microsoft Azure 上为托管的解决方案预填充评估。 然后，Microsoft HITRUST 管理员将使用其在 "MyCSF"®工具上的帐户完成评估的部分。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将数据从 Bloomberg 邮件电子邮件工具导入和存档到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358288"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200225"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>设置连接器以存档 Bloomberg 消息数据 (预览) 
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>设置连接器以存档 Bloomberg 消息数据
 
 使用 Microsoft 365 合规性中心中的数据连接器从 [Bloomberg 邮件](https://www.bloomberg.com/professional/product/collaboration/) 协作工具导入和存档金融服务电子邮件数据。 设置和配置连接器后，它会每天连接到组织的 Bloomberg 安全 FTP (SFTP) 网站，并将电子邮件项导入到 Microsoft 365 中的邮箱中。
 

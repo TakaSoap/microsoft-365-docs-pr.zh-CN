@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为将数据从 ICE 聊天工具导入和存档到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358224"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196365"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>设置连接器以存档 ICE 聊天数据 (预览) 
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>设置连接器以存档 ICE 聊天数据
 
 使用 Microsoft 365 合规性中心中的本机连接器导入并存档来自 ICE 聊天协作工具的金融服务聊天数据。 在设置和配置连接器后，它会每天连接到组织的 "ICE" 聊天安全 FTP (SFTP) 站点，将聊天消息的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱中。
 
@@ -59,7 +59,7 @@ ms.locfileid: "47358224"
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并单击左侧导航中的 " **数据连接器** "。
 
-2. 在 " **数据连接器 (预览 ** " 页面下的 " **ICE Chat**") 页面上，单击 " **查看**"。
+2. 在 " **ICE Chat**" 下的 "**数据连接器**" 页上，单击 "**查看**"。
 
 3. 在 " **ICE 聊天** " 页面上，单击 " **添加连接器**"。
 

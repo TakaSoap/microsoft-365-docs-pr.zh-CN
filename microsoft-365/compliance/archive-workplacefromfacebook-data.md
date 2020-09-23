@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 管理员可以设置连接器以将来自 Facebook 的工作区中的数据导入和存档（存档在 Globanet 的 Merge1 网站上）到 Microsoft 365。 设置连接器时，需要使用 Globanet 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: cea8f7549bbf1ed19bc3de6fe4d1e1c63f1be4cd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405483"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195579"
 ---
-# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>设置连接器以存档来自 Facebook 数据的工作区 (预览) 
+# <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>设置连接器以存档来自 Facebook 数据的工作区
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器在 Microsoft 365 组织中将来自 Facebook 的工作区中的数据导入和存档到用户邮箱。 Globanet 提供 [来自 Facebook 连接器的工作区](https://globanet.com/workplace/) ，该连接器配置为定期捕获第三方数据源 (中的项目) 并将这些项目导入到 Microsoft 365。 连接器将内容（如聊天、附件、帖子和视频）从工作区转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -94,4 +93,4 @@ ms.locfileid: "47405483"
 
 ## <a name="known-issues"></a>已知问题
 
-- 目前，我们不支持导入大于 10 MB 的附件，但稍后将提供对较大项目的支持。
+- 目前，我们不支持导入大于 10 MB 的附件或项目。 较大项目的支持将在以后提供。
