@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: "\"安全链接\" 功能可提供对 Office 文档中的超链接和电子邮件中的超链接的单击时间验证。 阅读本文，了解 ATP 安全链接的工作原理。"
-ms.openlocfilehash: 09357b20173e2609587137764737c8aba044190e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e19d3a1f93d11cd9873e6b5fad9952b018e0a481
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201461"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245877"
 ---
 # <a name="how-atp-safe-links-works"></a>ATP 安全链接的工作原理
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201461"
 > [!IMPORTANT] 
 > 为了使 Office 365 ATP 安全链接正常运行，所有服务都必须为同一版本。
          
-## <a name="how-atp-safe-links-works"></a>ATP 安全链接的工作原理
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>ATP 安全链接如何处理电子邮件中的 Url
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
  使用电子邮件中的 Url
@@ -57,10 +57,7 @@ ms.locfileid: "48201461"
     
    - 如果确定该 URL 是安全的，则会打开该网站。
     
-## <a name="how-atp-safe-links-works"></a>ATP 安全链接的工作原理
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
- Office 文档中的 Url 
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>ATP 安全链接如何处理 Office 文档中的 Url
 
 从较高的层次来看， [ATP 安全链接](atp-safe-links.md) 保护在 Microsoft 365 应用程序中适用于企业或商业高级应用程序的 url 的方式 (当前版本的 Word、Excel 和 PowerPoint 在 Windows、Mac 或浏览器、IOS 或 Android 设备上的 Office 应用、在浏览器) 中的 Visio （OneNote 中）：
   

@@ -2,7 +2,7 @@
 title: 创建协作团队
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: samanro
 author: samanro
 manager: scotv
 ms.audience: Admin
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 团队为你的团队创建协作空间。
-ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7a07b7b90f5c89f6b1c6a6dd17145ca11af5dfa6
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079781"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245841"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 团队中创建协作团队
 
@@ -48,8 +48,8 @@ Microsoft 团队是一种协作应用程序，可帮助你的员工在任何设�
 
 创建团队时，将创建其他内容：
 
-- 一个新的[Microsoft 365 组](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- 用于存储团队文件的[SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)网站和文档库
+- 一个新的 [Microsoft 365 组](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- 用于存储团队文件的 [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) 网站和文档库
 - [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)共享邮箱和日历
 - OneNote 笔记本
 - 与其他 Office 365 应用程序（如 Planner 和 Power BI）相关
@@ -85,5 +85,5 @@ Microsoft 团队是一种协作应用程序，可帮助你的员工在任何设�
 
 ## <a name="admin-settings"></a>管理设置
 
-您必须是管理员才能创建组织范围的团队。 有关详细信息，请参阅[什么是 Microsoft 365 中的管理员？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必须是管理员才能创建组织范围的团队。 有关详细信息，请参阅 [什么是 Microsoft 365 中的管理员？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   
