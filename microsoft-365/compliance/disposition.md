@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950386"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245933"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -118,11 +118,6 @@ ms.locfileid: "47950386"
 等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将成为符合 [保留设置如何与内容配合](retention.md#how-retention-settings-work-with-content-in-place)使用的标准清理过程。
 
 ## <a name="disposition-of-records"></a>处置记录
-
-> [!NOTE]
-> 为 SharePoint 和 OneDrive 中的记录提供处置证明的部署已完成。
->
-> 如果我们将删除此注释，则在 Exchange 中用于记录的处置证明的部署几乎已完成。
 
 使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识现在已在处置评审中自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 例如：
 
