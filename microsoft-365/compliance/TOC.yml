@@ -246,6 +246,8 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: DLP 在安全与合规中心和 Exchange 管理中心中之间的工作原理
           href: how-dlp-works-between-admin-centers.md
+        - name: 在 DLP 策略中使用灵敏度标签作为条件（预览版）
+          href: dlp-sensitivity-label-as-condition.md
 - name: 管理信息治理
   items:
     - name: 治理数据
