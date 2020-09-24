@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f2743e9f7d2f102231531e7a9146a0f26727e1d4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560459"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200939"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -68,7 +68,7 @@ ms.locfileid: "46560459"
 | 数据保留标签和策略 | 实施信息治理控制，例如将数据保留多长时间以及对客户个人数据存储的要求，以符合组织的政策或数据法规。 | Microsoft 365 E3 或 E5 |
 | Office 邮件加密 (OME) | 在组织内部和外部的人员之间发送和接收加密的电子邮件，其中包含受监管的数据，例如客户的个人数据。 | Microsoft 365 E3 或 E5 |
 | 合规性管理器 | 使用 Microsoft 服务信任门户中基于工作流的风险评估工具来管理与 Microsoft 云服务相关的法规合规性活动。 | Microsoft 365 E3 或 E5 |
-| 合规性分数（预览版） | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 或 E5 |
+| 合规性管理器 | 在 Microsoft 365 合规中心中查看当前合规配置和改进建议的总体分数。 | Microsoft 365 E3 或 E5 |
 | 通信合规性  | 对组织中的不当邮件进行检测、捕获和执行修正操作。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
 | 内部风险管理 |  对组织中的恶意和意外风险进行检测、调查并采取相关措施。 即使员工使用的是非托管设备，Microsoft 365 也可检测到这些类型的风险。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
 ||||
