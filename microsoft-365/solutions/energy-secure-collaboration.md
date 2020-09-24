@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性
 ms.custom: ''
-ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 4677c55c7c490c7ab95f9066236d14bb597389ac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199585"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟](../media/solution-arch-center/MSC17_global_016.png)
@@ -101,23 +101,19 @@ Microsoft Teams 可让能源行业受益的另一个示例是，当现场服务�
 ## <a name="provide-secure-and-compliant-collaboration-in-the-energy-industry"></a>在能源行业提供安全且合规的协作
 如前文所述，Microsoft Office 365 和 Office 365 美国政府版获得了中等影响级别的 FedRAMP ATO，而 Azure 和 Azure 政府版则获得了 FedRAMP 高 P-ATO，后者代表最高级别的 FedRAMP 授权。 此外，FedRAMP 中等控制措施集涵盖了所有 NERC CIP 要求，从而使能源行业组织（“注册实体”）能够将现有 FedRAMP 授权用作满足 NERC 审核要求的可扩展且高效的方法。 但是，请务必注意，FedRAMP 不是一种时间点认证，而是一种评估和授权计划，其中包括关于[持续监控](https://www.fedramp.gov/assets/resources/documents/CSP_Continuous_Monitoring_Strategy_Guide.pdf)的规定。 尽管此规定主要适用于 CSP，但运营大型电力系统的 Microsoft 客户有责任确保遵守 NERC CIP 标准，并且通常建议持续监控组织的合规状况以帮助确保持续合规性。
 
-Microsoft 提供了两个重要工具来帮助长期监控法规遵从性：
+Microsoft 提供了一个重要工具来帮助长期监控法规遵从性：
 
-- **Microsoft 合规性分数**可帮助组织了解其当前合规状况以及可采取哪些措施来改善这一状况。 合规性分数计算基于风险的分数，用于衡量有助于降低数据保护和法规标准风险的措施的完成进度。 合规性分数根据 Microsoft 365 数据保护基准提供初始分数。 此基准是一组包含常见行业法规和标准的控制措施。 虽然此分数是一个很好的起点，但是一旦组织增加了与其所处行业更为相关的评估，合规性分数就会变得更强大。 合规性分数支持许多与 NERC CIP 合规性义务相关的监管标准，包括 [FedRAMP 中等控制措施集](https://www.fedramp.gov/documents/)、[NIST 800-53 修订版 4](https://go.microsoft.com/fwlink/?linkid=2109075) 和 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)。 能源行业组织也可以根据需要创建或导入自定义控制措施集。
+- **Microsoft 合规性管理器**可帮助组织了解其当前合规状况以及可采取哪些措施来改善这一状况。 合规性管理器计算基于风险的分数，用于衡量有助于降低数据保护和法规标准风险的措施的完成进度。 合规性管理器根据 Microsoft 365 数据保护基准提供初始分数。 此基准是一组包含常见行业法规和标准的控制措施。 虽然此分数是一个很好的起点，但是一旦组织增加了与其所处行业更为相关的评估，合规性管理器就会变得更强大。 合规性管理器支持许多与 NERC CIP 合规性义务相关的监管标准，包括 [FedRAMP 中等控制措施集](https://www.fedramp.gov/documents/)、[NIST 800-53 修订版 4](https://go.microsoft.com/fwlink/?linkid=2109075) 和 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)。 能源行业组织也可以根据需要创建或导入自定义控制措施集。
 
-- **Microsoft 合规性管理器**是一种风险评估工具，可让组织跟踪、分配和验证与 Microsoft 云服务相关的合规性活动。 合规性管理器允许组织将 Microsoft 提供给审核员和监管机构的有关其云服务的详细合规信息与组织对适用标准和法规的合规性自我评估相结合。 合规性管理器是 Microsoft 365、Office 365 或 Azure Active Directory 订阅的一部分，它可帮助组织在 Microsoft 的[共同责任模型](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91)内管理法规遵从性。 它提供了一个集中式仪表板，可用于查看标准、法规、控制措施实施细节以及 Microsoft 服务评估的测试结果。 
-
-合规性分数和合规性管理器已集成在一起。 合规性管理器中已有的任何数据也将显示在合规性分数中。 合规性分数使监控组织的总体合规状况和实施改进措施变得容易。 而合规性管理器则提供了强大的功能，可自行评估组织对众多法规标准的遵从性。
-
-借助合规性分数和合规性管理器中基于工作流的内置功能，能源组织能够转变并数字化其合规性流程。 通常，能源行业合规性团队面临的挑战包括：
+借助合规性管理器中基于工作流的内置功能，能源组织能够转变并数字化其合规性流程。 通常，能源行业合规性团队面临的挑战包括：
 - 不一致地报告或跟踪补救措施的进度
 - 低效或无效流程
 - 资源不足或缺乏所有权
 - 缺少实时信息和人为错误
 
-通过使用合规性分数和合规性管理器自动化合规性流程的各个方面，组织可减轻法律和合规性部门的管理负担。 通过提供有关补救措施的最新信息、更一致的报告以及与行动实施相关的行动所有权证明，此工具可帮助解决这些挑战。 组织可以随着时间的推移自动跟踪补救措施并查看整体效率的提高情况。 反过来，这可使员工将更多的精力集中在获得见解和制定策略上，以帮助更有效地应对风险。 
+通过使用合规性管理器自动化合规性流程的各个方面，组织可减轻法律和合规性部门的管理负担。 通过提供有关补救措施的最新信息、更一致的报告以及与行动实施相关的行动所有权证明，此工具可帮助解决这些挑战。 组织可以随着时间的推移自动跟踪补救措施并查看整体效率的提高情况。 反过来，这可使员工将更多的精力集中在获得见解和制定策略上，以帮助更有效地应对风险。
 
-合规性分数并不是衡量组织是否遵守任何特定标准或法规的绝对指标。 它表示控制措施的采用力度，这些控制措施可降低个人数据和个人隐私风险。 合规性分数和合规性管理器中提供的建议不应解释为合规性保证。 合规性管理器中提供的客户操作只是建议；各组织应在实施前在各自的监管环境中评估这些建议的有效性。 合规性管理器中提供的建议不应解释为合规性保证。
+合规性管理器并不是衡量组织是否遵守任何特定标准或法规的绝对指标。 它表示控制措施的采用力度，这些控制措施可降低个人数据和个人隐私风险。 来自合规性管理器的建议不应解释为合规性保证。 合规性管理器中提供的客户操作只是建议；各组织应在实施前在各自的监管环境中评估这些建议的有效性。 合规性管理器中提供的建议不应解释为合规性保证。
 
 [FedRAMP 中等控制措施集](https://www.fedramp.gov/documents/)和 [NERC CIP 标准](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx)中包含许多与网络安全相关的控制措施。 但是，与 Microsoft 365 平台相关的关键控制措施包括安全管理控制措施 (CIP-003-6)、帐户和访问管理/访问撤销 (CIP-004-6)、电子安全外围 (CIP-005-5)、安全事件监控和事件响应 (CIP-008-5)。 以下基础 Microsoft 365 功能可帮助解决这些主题中包含的风险和要求。
 
