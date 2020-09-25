@@ -9,135 +9,137 @@ ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 监视和管理内容的处置，无论您使用的是处置评审，还是根据您配置的设置自动删除内容。
-ms.openlocfilehash: 3ef98e07df37d429567534e252c15abee69d0044
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
-ms.translationtype: MT
+description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
+ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245933"
+ms.locfileid: "48262228"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
->*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性与合规性的许可指南](https://aka.ms/ComplianceSD)。*
 
-使用 Microsoft 365 合规性中心中的**记录管理**中的 "**处置**" 选项卡来管理处置评审并查看保留期结束时自动删除的[记录](records-management.md#records)。 
+使用 Microsoft 365 合规中心中 **记录管理** 中的 **处置** 选项卡来管理处置评审，并查看在保留期结束时自动删除 [记录](records-management.md#records)。 
 
-## <a name="prerequisites-for-viewing-content-dispositions"></a>查看内容处置的先决条件
+## <a name="prerequisites-for-viewing-content-dispositions"></a>查看内容处置的前提条件
 
-若要管理处置评审并确认已删除记录，您必须具有足够的权限，并且必须启用审核。
+若要管理处置评审并确认已删除记录，必须具有足够的权限，并且必须启用审核。
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规性中心中的 " **处置** " 选项卡，用户必须具有 " **处置管理** " 管理员角色。 此角色包含在默认管理员角色组、 **合规性管理员** 和 **合规性数据管理员**中。
+若要成功访问 Microsoft 365 合规中心中的 **处置** 选项卡，用户必须拥有 **处置管理** 管理员角色。 该角色包含在默认管理员角色组中， **合规性管理员**和 **合规性数据管理员**。
 
-若要向用户授予此必需的处置管理角色，请将其添加到其中一个默认角色组，或创建自定义角色组 (例如，名为 "处置审阅者" ) 并向此组授予处置管理角色。  
+若要向用户授予所需的处置管理角色，可将其添加到这些默认角色组中，或创建自定义角色组（例如命名为 "处置审阅者"），并向此组授予处置管理角色。  
 
 > [!NOTE]
-> 即使是全局管理员也需要授予 **处置管理** 角色。 
+> 即使是全局管理员也需要被授予**处置管理**角色。 
 
 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>启用审核
 
-确保至少已在第一个处置操作之前的一天内启用审核。 有关详细信息，请参阅 [在 Office 365 安全 &amp; 合规中心中搜索审核日志](search-the-audit-log-in-security-and-compliance.md)。 
+确保至少在第一次处置操作之前一天已启用审核。 有关详细信息，请参阅[在 Office 365 安全&amp;合规中心](search-the-audit-log-in-security-and-compliance.md)内搜索审核日志。 
 
 ## <a name="disposition-reviews"></a>处置评审
 
-当内容到达其保留期的末尾时，您可能需要查看该内容以决定是否可以安全地将其删除 ( "已释放" ) ，这有几个原因。 例如，您可能需要执行以下操作：
+内容到达其保持期结束时，有几个原因可能会让你审查该内容来确定是否可以安全地删除（"已处置"）。 例如，你可能需要：
   
-- 在诉讼或审核事件中，挂起对相关内容的删除。
+- 在诉讼或审计的事件中，暂停对相关内容的删除。
     
-- 如果内容具有信息检索或历史值，则从处置列表中移除要存储在存档中的内容。
+- 如果内容有研究或历史价值，则从处置列表中删除该内容存储至档案中。
     
-- 为内容分配不同的保留期，可能是因为原始保留设置是临时或临时的解决方案。
+- 为内容指定不同的保留期，可能是因为原始保留设置是临时或暂时的解决方案。
     
-- 将内容返回给客户端或将其转移到其他组织。
+- 将内容返回至客户端，或将其转移到其他组织。
 
-在保留期结束时触发处置评审时：
+在保持期结束时触发处置评审时：
   
-- 您选择的人会收到一封电子邮件通知，告知他们有要审阅的内容。 这些审阅者可以是单个用户，也可以是启用邮件的安全组。 请注意，每周会发送通知。
+- 你选择的人员将收到一封电子邮件通知，告知他们有内容需要审查。 这些审阅者可以是单个用户或启用了邮件的安全组。 注意，通知是每周发送一次。
     
-- 审阅者转到 Microsoft 365 合规性中心中的 " **处置** " 选项卡，以查看内容并决定是永久删除它、延长保留期还是应用不同的保留标签。
+- 审阅者转到 Microsoft 365 合规中心的 **处置** 选项卡审查内容，并决定是否要将其永久删除、延长其保留期或应用不同的保留标签。
 
-处置评审可以包含 Exchange 邮箱、SharePoint 网站、OneDrive 帐户和 Microsoft 365 组中的内容。 在这些位置中等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。
+处置评审可以包括Exchange邮箱、SharePoint网站、OneDrive账户和Microsoft 365组中的内容。 仅在审阅者选择永久删除内容后，才会删除在这些位置等候处置审核的内容。
 
 > [!NOTE]
-> 邮箱必须至少有 10 MB 数据才能支持处置评审。
+> 一个邮箱必须有至少10MB的数据来支持处置评审。
 
-您可以在 " **概述** " 选项卡中看到所有待处理的处置的概述。例如：
+可在**概述**选项卡中查看所有待处置的概述。例如：
 
-![记录管理概述中的挂起的处置](../media/dispositions-overview.png)
+![记录管理概述中的待处置](../media/dispositions-overview.png)
 
-当您选择 " **查看所有待处理的处理**" 时，您将转到 " **处置** " 页面。 例如：
+选择**查看所有待处置**后，则转到**处置**页面。 例如：
 
-![Microsoft 365 合规性中心中的处置页](../media/disposition-tab.png)
+![Microsoft 365 合规中心内的策略页面](../media/disposition-tab.png)
 
 
-### <a name="workflow-for-a-disposition-review"></a>用于处置评审的工作流
+### <a name="workflow-for-a-disposition-review"></a>处置评审的工作流
 
-下图显示了在发布保留标签并随后由用户手动应用时进行处置评审的基本工作流。 此外，还可以将为处置评审配置的保留标签自动应用于内容。
+下图显示了发布保留标签后再由用户手动应用时处置评审的基本工作流。 此外，为处置评审配置的保留标签可自动运用于内容。
   
-![显示处置的工作流的图表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![显示处置工作流的图表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-在保留期结束时触发处置评审是一个仅可用于保留标签的配置选项。 此选项不适用于保留策略。 有关这两种保留解决方案的详细信息，请参阅 [了解保留策略和保留标签](retention.md)。
-  
-![标签的保留设置](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
+保持期结束时触发处置评审是一个配置选项，仅保留标签才能使用。 此选项在保留策略中不可用。 有关这两种保留解决方案的详细信息，请参阅[了解保留策略和保留标签](retention.md)。
+
+来自 **定义保留标签的保留设置** 页面：
+
+![标签的保留设置](../media/disposition-review-option.png)
  
-> [!NOTE]
-> 当您选择 " **当有准备好查看的项目时通知这些人**" 选项时，请指定一个用户或已启用邮件的安全组。 此选项不支持 [以前的 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601) (的 Microsoft 365 组) 。
+选择此 **触发处置审核** 选项后，可在向导的下一页上指定处置审阅者：
+
+![指定处置审阅者](../media/disposition-reviewers.png)
+
+对审阅者指定一个用户或邮件启用安全组。 此选项不支持 Microsoft 365 组（[原 Office 365 组](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。
 
 ### <a name="viewing-and-disposing-of-content"></a>查看和处置内容
 
-当通过电子邮件通知审阅者可以查看内容时，他们会从 Microsoft 365 合规性中心的**记录管理**转到 "**处置**" 选项卡。 审阅者可以查看每个保留标签的项目数正在等待处置，然后选择保留标签以查看具有该标签的所有内容。
+通过电子邮件通知审阅者已准备好所需评论的内容时，他们将转到 Microsoft 365 合规中心中 **记录管理** 中的 **处置** 选项卡。 审阅者可以查看每个保留标签中有多少项正在等待处置，然后选择一个保留标签即可查看带有该标签的所有内容。
 
-选择保留标签后，您将看到 " **挂起的处置** " 选项卡中该标签的所有待定的处置。选择一个或多个项目，您可以在其中选择操作并输入理由注释：
+选择保留标签后，可在 **待处置** 选项卡中查看带有该标签的所有待处置。选择一个或多个项目，然后可以在其中选择一个操作并输入评论理由：
 
 ![处置选项](../media/retention-disposition-options.png)
 
-正如您可以从图片中看到的，受支持的操作是： 
+从图中可以看出，支持的操作如下： 
   
 - 永久删除项目
 - 延长保留期
 - 应用不同的保留标签
 
-为您提供对位置和内容的权限，您可以使用 **位置** 列中的链接查看其原始位置中的文档。 在处置评审过程中，内容永远不会从其原始位置移动，并且在审阅者选择执行此操作之前永远不会删除。
+提供对位置和内容的权限，可使用 **位置** 列中的链接查看原始位置中的文档。 在处置评审过程中，内容永远不会从其原始位置移动，并且在审阅者选择执行此操作之前，永远不会删除该内容。
 
-电子邮件通知将在每周的基础上自动发送给审阅者。 此计划的过程意味着，当内容到达其保留期的末尾时，审阅者可能需要长达七天的时间，审阅者收到内容正在等待处置的电子邮件通知。
+每周都会自动向审核者发送电子邮件通知。 此计划流程表示当内容到达其保留期末尾时，审阅者可能需要长达7天的时间才能收到内容正在等待处置的电子邮件通知。
   
-可以审核所有处置操作，并将审阅者输入的调整文本保存并显示在 "已**释放项目**" 页上的 "**注释**" 列中。
+可对所有处置操作进行审核，审阅者输入的理由文本将保存并显示在 **已处置项目** 页面上的 **评论** 列中。
   
-### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>在永久删除已释放内容之前的时间
+### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久删除处置的内容需要多长时间
 
-等待处置评审的内容仅在审阅者选择永久删除内容后才会被删除。 当审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将成为符合 [保留设置如何与内容配合](retention.md#how-retention-settings-work-with-content-in-place)使用的标准清理过程。
+仅在审阅者选择永久删除内容后，才会删除等候处置审核的内容。 审阅者选择此选项时，SharePoint 网站或 OneDrive 帐户中的内容将符合[保留设置如何与内容配合到位](retention.md#how-retention-settings-work-with-content-in-place)中所描述的标准清理流程的条件。
 
 ## <a name="disposition-of-records"></a>处置记录
 
-使用 "**记录管理**" 页上的 "**处置**" 选项卡来标识现在已在处置评审中自动删除的记录。 这些项目在 "**类型**" 列中显示已**处置的记录**。 例如：
+使用 **记录管理** 页面中的 **处置** 选项卡来识别当前需删除的记录是自动删除，或是经过处置评审后删除。 这些项目在**类型**列中的**已处置记录**里显示。 例如：
 
-![在没有处置评审的情况下处置的项目](../media/records-disposed2.png)
+![未经处置评审即被处置的项目](../media/records-disposed2.png)
 
-记录标签的 "已 **释放的项目** " 选项卡中显示的项目在项目被释放前最长保留7年，在该时间段内每条记录的项目数限制为1000000。 如果您看到 " **计数** 数量" 接近此限制1000000，并且您需要对记录进行处置证明，请与 [Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)部门联系。
+在记录标签的 **已处置项目** 选项卡中显示的项目，在该项目被处置后最多保留7年，在此期间，每条记录的上限为一百万项。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 > [!NOTE]
-> 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要 [启用和可搜索](turn-audit-log-search-on-or-off.md) 审核，以便捕获相应的事件。
+> 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要[启动并可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。
     
 ## <a name="filter-and-export-the-views"></a>筛选和导出视图
 
-当您从 " **处置** " 页面中选择保留标签时，" **挂起的处置** " 选项卡 (如果适用) 和 "已 **释放的项目** " 选项卡允许您筛选视图以帮助更轻松地查找项目。 
+从 **处置** 页面选择保留标签时，**待处置** 选项卡（如果适用）和 **已处置项目** 选项卡可用于筛选视图，帮助更轻松地查找项目。 
 
-对于挂起的处置，时间范围基于到期日期。 对于已释放的项目，时间范围基于删除日期。
+对于待处置的，时间范围以终止日期为准。 对于已处置的项目，时间范围以删除日期为准。
   
-您可以将任一视图中项目的相关信息导出为 .csv 文件，然后可以使用 Excel 进行排序和管理：
+可将任意视图中的项目的信息导出为 .csv 文件，然后即可使用 Excel 对其进行排序和管理：
 
-![用于处置的导出选项](../media/retention-export-option.png)
-  
-![Excel 中的已导出处置数据](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
-
+![处置的导出选项](../media/retention-export-option.png)
 

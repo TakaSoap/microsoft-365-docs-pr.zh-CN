@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f7d00575a0a5757f0662c07e727d7166d571e2ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8d4eb6cedbfa9a74eccdbb94e71f9eb32189ccbb
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201191"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277548"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>运行 Microsoft 威胁防护攻击模拟  
 
@@ -48,7 +48,7 @@ ms.locfileid: "48201191"
 
 由于你已在准备阶段配置了试点环境，因此请确保在此方案中有两个设备：测试设备和域控制器。
 
-1.  验证你的租户是否有 [保护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
+1.  验证你的租户是否已启用 microsoft 威胁 [防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
 2.  验证测试域控制器配置：
     - 使用 Windows Server 2008 R2 或更高版本运行的设备。
     - 测试域控制器到 [Azure 高级威胁防护](https://docs.microsoft.com/azure/security-center/security-center-wdatp) 并启用 [远程管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。    

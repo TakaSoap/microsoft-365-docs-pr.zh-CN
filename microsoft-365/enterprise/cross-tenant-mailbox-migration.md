@@ -1,5 +1,5 @@
 ---
-title: 跨租户邮箱迁移
+title: 交叉租户邮箱迁移
 description: 如何在 Microsoft 365 或 Office 365 租户之间移动邮箱。
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177139"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277492"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -57,12 +57,12 @@ ms.locfileid: "48177139"
 
 下面展示了此过程的工作原理。
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="邮箱迁移的租户准备。":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="邮箱迁移的租户准备。":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>准备租户
@@ -162,11 +162,11 @@ ms.locfileid: "48177139"
 
 1.  在设置过程中，以由目标管理员指定的-ResourceTenantAdminEmail 的身份登录邮箱。 查找来自目标租户的电子邮件邀请，然后选择 " **开始入门** " 按钮。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text=""已 invided" 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text=""已邀请您" 对话框":::
 
 2. 选择 " **接受** " 接受邀请。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="用于接受 permissons 的对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受权限的对话框":::
 
    > [!NOTE]
    > 如果你未收到此电子邮件或找不到此电子邮件，则会向目标租户管理员提供一个直接 URL，以接受邀请。 URL 应在目标租户管理员的远程 PowerShell 会话的脚本中。
@@ -407,7 +407,7 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 
 邮箱从源移动到目标后，应确保使用新的 targetAddress 更新本地邮件用户（源和目标）。 在此示例中，移动中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com**。 使用此 targetAddress 更新邮件用户。
  
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
  
 **是否需要在移动后在源本地更新 RemoteMailboxes？**
  
