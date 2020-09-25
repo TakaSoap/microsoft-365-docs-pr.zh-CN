@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d57c725f471e5197f269270eca19c863a7f79555
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417306"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208624"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>内容交付和安全协会 (CDSA) 内容保护和安全性 (CPS) 标准
 
@@ -66,7 +66,11 @@ Microsoft 已成功完成六个月的 CDSA CPS 认证续订，并且 Azure 现�
 
 **能否在我自己组织的认证过程中使用 Microsoft 合规性认证？**
 
-能。 我们可以通过使用 Azure 中的安全性和加密功能在您自己的 CPS 认证工作中构建 Azure CPS 认证。
+正确。 我们可以通过使用 Azure 中的安全性和加密功能在您自己的 CPS 认证工作中构建 Azure CPS 认证。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

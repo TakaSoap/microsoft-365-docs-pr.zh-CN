@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b46a1996d1a86601efe21ec71b19adfc9fa02c61
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417210"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208134"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
@@ -77,7 +77,7 @@ ISO/IEC 27001 和 PIMS 的要点：
 - Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Power Automate（以前称为 Microsoft Flow） 
+- Power Automate（以前称为 Microsoft Flow）
 - PowerApps
 - Power BI
 - Power BI Embedded
@@ -86,15 +86,14 @@ ISO/IEC 27001 和 PIMS 的要点：
 - Microsoft 威胁专家
 - Windows Defender 高级威胁防护
 
-
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
 - [Azure、Dynamics 365 和联机服务：ISO27701 认证](https://aka.ms/azureiso27701cert)
 - [Azure、Dynamics 365 和联机服务：ISO27701 评估报告](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，从“**模板**”下拉菜单中选择预配置的“[ISO 27701 模板](https://go.microsoft.com/fwlink/?linkid=2117915)”帮助组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

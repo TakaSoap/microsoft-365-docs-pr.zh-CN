@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7001a17af7932a7aafa7cceac207b772b42b55d9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417160"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208174"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>北美电力可靠性协会 (NERC)
 
@@ -40,7 +40,7 @@ Azure 和 Azure 政府适用于根据 NERC CIP 标准部署特定工作负载（
 - [NERC CIP Standards and Cloud Computing](https://aka.ms/AzureNERC)（NERC CIP 标准和云计算）是一份白皮书，其中探讨了根据适合云服务提供商的既定第三方审计得出的 NERC CIP 要求合规性注意事项，例如 FedRAMP。 它介绍了云操作人员的背景筛查，并解答了注册实体感兴趣的关于逻辑隔离和多租户等的常见问题。 此外，它还阐释了本地部署和云部署的安全注意事项。
 - [Cloud Implementation Guide for NERC Audits](https://aka.ms/AzureNERCGuide)（关于 NERC 审计的云实施指南）是一份指导性文档，它在控制层面上将当前这组 NERC CIP 标准要求与构成 FedRAMP 基础的 [NIST SP 800-53 Rev 4](https://nvd.nist.gov/800-53/Rev4) 控制措施相互对应起来。 它被设计成技术操作指南，目的是帮助注册实体应对 NERC CIP 就云端部署的资产所作出的合规性要求。 该文档包含已预填内容的[可靠性标准审计工作表 (RSAW)](https://www.nerc.com/pa/comp/Pages/Reliability-Standard-Audit-Worksheets-\(RSAWs\).aspx) 文件，它们帮助阐释 Azure 控制措施如何应对 NERC CIP 要求，此外还有指南来引导注册实体如何使用 Azure 服务实施其自己的控制措施。
 
-NERC ERO Enterprise [颁发了](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合规性监控和实施计划 (CMEP) [实践指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)对 ERO Enterprise CMEP 人员在评估注册实体的流程以授予访问指定 BCSI 存储位置的权限以及评估注册实体实施的任何访问控制措施时的操作提供指导方针。 此外，NERC 还审查了与 BCSI 适用的 NERC CIP-004-6 和 CIP-011-2 标准相关的 Azure 控制措施实施详情和 FedRAMP 审计证据。 基于 ERO 为确保注册实体加密其数据而颁发的实践指南和审查的 FedRAMP 控制措施，注册实体无需其他任何指导方针或解释性文件即可在云端部署 BCSI 及相关工作负载。 但是，注册实体需根据自身实际情况和情形最终负责遵守 NERC CIP 标准。 注册实体应查看 [Cloud Implementation Guide for NERC Audits](https://aka.ms/AzureNERCGuide)（关于 NERC 审计的云实施指南），了解如何记录自己用来授予对 BCSI 存储位置的电子版访问权限的流程和证据，包括用于在 Azure 和 Azure 政府中进行 BCSI 加密的加密密钥管理。
+NERC ERO Enterprise [发布了](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合规性监控和实施计划 (CMEP) [实践指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，对 ERO Enterprise CMEP 人员在评估注册实体的流程以授予访问指定 BCSI 存储位置的权限以及评估注册实体实施的任何访问控制措施时的操作提供指导方针。 此外，NERC 还审查了与 BCSI 适用的 NERC CIP-004-6 和 CIP-011-2 标准相关的 Azure 控制措施实施详情和 FedRAMP 审计证据。 基于 ERO 为确保注册实体加密其数据而颁发的实践指南和审查的 FedRAMP 控制措施，注册实体无需其他任何指导方针或解释性文件即可在云端部署 BCSI 及相关工作负载。 但是，注册实体需根据自身实际情况和情形最终负责遵守 NERC CIP 标准。 注册实体应查看 [Cloud Implementation Guide for NERC Audits](https://aka.ms/AzureNERCGuide)（关于 NERC 审计的云实施指南），了解如何记录自己用来授予对 BCSI 存储位置的电子版访问权限的流程和证据，包括用于在 Azure 和 Azure 政府中进行 BCSI 加密的加密密钥管理。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
@@ -79,7 +79,11 @@ Microsoft 每年都必须重新证明其云服务，以维持其 P-ATO 和 ATO �
 
 NERC [CIP 标准](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf)和[术语表](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf)规定，BES 网络资产需实时监视或控制 BES，并在遭到损害后的 15 分钟内干涉 BES 的可靠运营。 要在云计算中适当纳入 BES 网络资产和受保护的网络资产，[需要修修订](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx) NERC CIP 标准中的现有定义。 但是，有很多工作负载要处理 CIP 敏感数据但却又不受 15 分钟规则限制，这包括 BES 网络系统信息 (BCSI) 的广义范畴。
 
-NERC ERO Enterprise [颁发了](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合规性监控和实施计划 (CMEP) [实践指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)对 ERO Enterprise CMEP 人员在评估注册实体的流程以授予访问指定 BCSI 存储位置的权限以及评估注册实体实施的任何访问控制措施时的操作提供指导方针。 此外，NERC 还审查了与 BCSI 适用的 NERC CIP-004-6 和 CIP-011-2 标准相关的 Azure 控制措施实施详情和 FedRAMP 审计证据。 基于 ERO 为确保注册实体加密其数据而颁发的实践指南和审查的 FedRAMP 控制措施，注册实体无需其他任何指导方针或解释性文件即可在云端部署 BCSI 及相关工作负载。 但是，注册实体需根据自身实际情况和情形最终负责遵守 NERC CIP 标准。
+NERC ERO Enterprise [发布了](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合规性监控和实施计划 (CMEP) [实践指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，对 ERO Enterprise CMEP 人员在评估注册实体的流程以授予访问指定 BCSI 存储位置的权限以及评估注册实体实施的任何访问控制措施时的操作提供指导方针。 此外，NERC 还审查了与 BCSI 适用的 NERC CIP-004-6 和 CIP-011-2 标准相关的 Azure 控制措施实施详情和 FedRAMP 审计证据。 基于 ERO 为确保注册实体加密其数据而颁发的实践指南和审查的 FedRAMP 控制措施，注册实体无需其他任何指导方针或解释性文件即可在云端部署 BCSI 及相关工作负载。 但是，注册实体需根据自身实际情况和情形最终负责遵守 NERC CIP 标准。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

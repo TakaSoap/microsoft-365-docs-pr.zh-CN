@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416158"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208634"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>云计算合规性控制目录 (C5)
 
@@ -59,6 +59,10 @@ IT-Grundschutz 提供了特定方法，帮助组织确定和实施 IT 系统的�
 **什么是 Microsoft Cloud Germany？**
 
 Microsoft Cloud Germany 实际位于德国，并遵守德国隐私法的要求，严格限制将个人数据传输到其他国家/地区，包括防止其他司法管辖区的机构访问可能违反国内法律的数据。 Azure Germany 从数据位于德国的德国数据中心交付 Azure 服务，它通过德国法律管辖的独特数据委托模型实施严格的数据访问和控制措施。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

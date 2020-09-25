@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47cc5cf10f048640ead85d239881fa9b2603e699
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 3757d400d16b324f512c60059c8d8b762916894c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417496"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208254"
 ---
 # <a name="multi-tier-cloud-security-mtcs-standard-for-singapore"></a>新加坡多层云安全 (MTCS) 标准
 
@@ -93,9 +93,13 @@ MTCS 总共有 535 种控制措施，涵盖三层安全级别：
 
 [MTCS 认证计划](https://go.microsoft.com/fwlink/p/?linkid=2099490)对审核控制和安全要求提供了指导。
 
-**能否在我自己组织的认证过程中使用 Microsoft 的合规性认证？**
+**能否在我组织的认证过程中使用 Microsoft 的合规性认证？**
 
-是。 如果你需要证明你的服务建立在这些 Microsoft 云服务之上，可使用 MTCS 认证来降低审核 IT 基础结构产生的影响（若这依赖于它们）。 但是，你要负责聘请评估方来评估你的合规策略的实施情况，以及你自己组织中的控制措施和流程。
+正确。 如果你需要证明你的服务建立在这些 Microsoft 云服务之上，可使用 MTCS 认证来降低审核 IT 基础结构产生的影响（若这依赖于它们）。 但是，你需要负责聘请评估方来评估合规性政策的实施情况，以及所在组织中的控制措施和流程。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
