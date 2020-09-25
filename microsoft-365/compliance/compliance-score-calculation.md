@@ -15,17 +15,19 @@ search.appverid:
 - MET150
 description: 了解 Microsoft 合规性管理器如何根据为解决风险而采取的措施计算个性化分数，并提高合规性状态。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204293"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262265"
 ---
 # <a name="compliance-score-calculation"></a>合规性分数计算
 
+**本文内容：** 了解合规性管理器如何为你的组织计算合规性分数。 本文介绍如何 **解释你的成绩**、 **数据保护基准评估** 包括的内容、 **连续监控**以及 **管理和评分的不同类型的操作**的说明。
+
 > [!IMPORTANT]
-> 不应将合规性管理器建议解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务受 [在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件的制约。 另请参阅 [适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+> 来自合规性管理器的建议不应解释为合规性保证。 根据您的法规环境评估和验证客户控制措施的有效性。 这些服务受 [在线服务条款](https://go.microsoft.com/fwlink/?linkid=2108910)中的条款和条件的制约。 另请参阅 [适用于安全性和合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="how-to-read-your-compliance-score"></a>如何阅读合规性分数
 

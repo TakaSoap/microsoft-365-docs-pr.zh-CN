@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器中的 "构建评估" 可帮助您满足组织中重要的法规和证书要求。
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204305"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262287"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合规性管理器中构建和管理评估
 
@@ -206,6 +206,9 @@ ms.locfileid: "48204305"
 3. 将显示一个窗口，要求您确认是否要永久删除该评估。 选择 " **删除评估** " 以关闭该窗口。 你将看到一个确认窗口，表明评估已从合规性管理器中删除。
 
 如果您删除组中的唯一评估，则该组也会从合规性管理器中删除。
+
+> [!NOTE]
+> 您不能删除所有评估。 组织需要至少一次评估合规性管理器才能正常工作。 如果您想要删除的评估是唯一的评估，请在删除其他评估之前添加另一个评估。
 
 ## <a name="monitor-assessment-progress-and-controls"></a>监视评估进度和控制
 

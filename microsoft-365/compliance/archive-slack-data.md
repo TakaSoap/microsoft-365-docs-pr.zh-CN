@@ -11,13 +11,13 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: 管理员可以将连接器设置为将数据从 Globanet 时差导入和存档到 Microsoft 365。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理员可以将连接器设置为将数据从 Globanet 时差导入和存档到 Microsoft 365。 此数据连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
+ms.openlocfilehash: 7c796c16b5a4b305c5d4b5259337ca28d9bfde9a
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196753"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269448"
 ---
 # <a name="set-up-a-connector-to-archive-slack-data"></a>设置连接器以存档可宽延时间数据
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界来创建逻辑边界，以控制电子数据展示管理器可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8aaa1128788ba8f2f4ece7fb54f886595770c01
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357764"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269391"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
@@ -55,7 +55,7 @@ ms.locfileid: "47357764"
 [步骤4：创建搜索权限筛选器以强制实施合规性边界](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
 [步骤5：为机构内调查创建电子数据展示事例](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
-  
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>步骤1：标识用于定义您的机构的用户属性
 
 第一步是选择要使用的 Azure Active Directory 属性，该属性将定义您的机构。 此属性用于创建搜索权限筛选器，该筛选器限制电子数据展示管理器仅搜索为该属性分配了特定值的用户的内容位置。 例如，假设 Contoso 决定使用 " **部门** " 属性。 对于第四个咖啡店中的用户，此属性的值为  `FourthCoffee`  ，Coho Winery 子公司中的用户的值为 `CohoWinery` 。 在步骤4中，使用此  `attribute:value`  对 (例如， *部门： FourthCoffee*) 限制电子数据展示管理者可以搜索的用户内容位置。 
