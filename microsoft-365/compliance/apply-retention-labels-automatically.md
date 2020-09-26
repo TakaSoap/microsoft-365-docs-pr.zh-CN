@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171300"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196375"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> [规章记录](records-management.md#records)不支持这种情况。
 
 [保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
   
@@ -39,6 +42,9 @@ ms.locfileid: "48171300"
 - 用户不再需要了解数据管理策略，反而可以专注于自己的工作。
     
 当内容包含敏感信息、关键字或可搜索属性，或者[可训练分类器](classifier-get-started-with.md)的匹配项时，可以自动将保留标签应用于内容。
+
+> [!TIP]
+> 现在在预览中，使用可搜索的属性标识 [Teams 会议记录](#microsoft-teams-meeting-recordings)。
 
 将基于以下条件自动应用保留标签的流程：
 
@@ -80,7 +86,7 @@ ms.locfileid: "48171300"
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签声明[记录](records-management.md#records)，请启用“**将项目标记为记录**”的选项。
+    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
 3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“**将此标签自动应用到特定的内容类型**”，然后选择“**完成**”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
 
@@ -162,6 +168,29 @@ ms.locfileid: "48171300"
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会议记录
+
+> [!NOTE]
+> 保留和删除 Teams 会议记录将在预览中进行，记录保存到 OneDrive 或 SharePoint 前，将无法正常工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
+
+若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为**关键字查询编辑器**指定以下内容：
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+对于此保留标签，还必须通过创建标签策略将其发布到相关用户的 OneDrive 帐户或 SharePoint 网站。 大多数情况下，会议记录将保存到 OneDrive，但对于渠道会议，它们将保存在 SharePoint 中。
+
+保存了自动应用策略时：
+
+1. 选择 **“标签策略”** 选项卡，> **“发布标签”**
+
+2. 系统提示选择标签时，选择用 KQL 查询创建的标签，标识 Teams 会议记录。
+
+3. 系统提示位置时，请选择 **“SharePoint 网站”** 和 **“OneDrive 帐户”**。 然后，可保留**所有**的默认值，或指定单独的位置，例如包含或排除特定 OneDrive 帐户。
+
+4. 完成向导并保存此标签策略。
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 

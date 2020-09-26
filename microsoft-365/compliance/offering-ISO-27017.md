@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417686"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208294"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>ISO/IEC 27017:2015 信息安全控制措施行为守则
 
@@ -79,11 +79,15 @@ ISO/IEC 27017 在为云服务提供商和云服务客户提供指南方面是独
 
 **能否在我所在组织的认证过程中使用 Microsoft 服务的 ISO/IEC 27017 合规性认证？**
 
-能。 如果你的企业正在寻求对任何 Microsoft 范围内企业云服务中部署的实施流程进行认证，则可以在你的合规性评估中利用 Microsoft 的相关认证。 但是，你需要负责聘请评估方来评估合规性政策的实施情况，以及所在组织中的控制措施和流程。
+正确。 如果你的企业正在寻求对任何 Microsoft 范围内企业云服务中部署的实施流程进行认证，则可以在你的合规性评估中利用 Microsoft 的相关认证。 但是，你需要负责聘请评估方来评估合规性政策的实施情况，以及所在组织中的控制措施和流程。
 
 **如何获得适用审核报告的副本？**
 
 [服务信任门户](https://aka.ms/stphelp)提供独立第三方审核报告和其他相关文档。 你可以使用门户下载和查看本文档以就自己的法规要求获得帮助。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

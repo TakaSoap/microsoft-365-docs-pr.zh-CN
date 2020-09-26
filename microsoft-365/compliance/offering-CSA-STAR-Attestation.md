@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415612"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208592"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>云安全联盟 (CSA) STAR 证明
 
@@ -68,6 +68,10 @@ CCM 与行业接受的安全标准、法规和控制措施框架相对应，例�
 - **第 1 个级别**：**CSA STAR 自我评估**：Azure、Microsoft Dynamics 365 和 Microsoft Office 365。 [自我评估](offering-csa-star-self-assessment.md)是云服务提供商免费提供的一项产品/服务，可用于记录其安全控制措施，帮助客户对服务的安全性进行评估。
 - **第 2 个级别**：**CSA STAR 认证**：Azure、Microsoft Cloud App Security、Intune 和 Microsoft Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
 - **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

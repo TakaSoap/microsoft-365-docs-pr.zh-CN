@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容
-ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 478a0d9952d8e8e33ef88926ba2415276338c193
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816911"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198511"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并在应用中应用它们
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 此方案受所有保留标签配置（包括 [规章记录](records-management.md#records)）的支持。
 
 请参阅以下信息来帮助你创建和发布[保留标签](retention.md)，然后向文档和电子邮件应用它们。
 
@@ -68,7 +71,7 @@ ms.locfileid: "47816911"
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签声明[记录](records-management.md#records)，请启用“**将项目标记为记录**”的选项。
+    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
 3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
 

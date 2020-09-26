@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132132"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197335"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132132"
 对于大多数组织，数据量和数据复杂性每天都在增加 — 包括电子邮件、文档、即时消息等。有效管理或管理此类信息非常重要，因为要：
   
 - **主动遵守规定至少必须在一段时间内保留内容的行业法规和内部策略**：例如，《萨班斯-奥克斯利法案》规定，必须保留特定类型的内容七年。 
+
 - **降低发生诉讼或出现安全漏洞的风险**：通过永久删除不再需要保留的旧内容。 
     
 - **帮助组织有效共享知识并提高敏捷性**：通过确保用户仅处理与自己相关的最新内容。 
@@ -58,7 +59,7 @@ ms.locfileid: "48132132"
 
 - 对于 Exchange 邮箱：副本保留在“可恢复项”**** 文件夹中。 
 
-- 对于 Teams 频道和聊天消息：副本保留在 Exchange“**可恢复项**”文件夹内名为“**SubstrateHolds**”的隐藏文件夹中。
+- 对于 Teams 和 Yammer 消息：副本保留在 Exchange“**可恢复项**”文件夹内名为“**SubstrateHolds**”的隐藏文件夹中。
 
 > [!NOTE]
 > 保留库占用的存储计入网站的存储配额。 在对 SharePoint 和 Microsoft 365 组使用保留设置时，可能需要增加存储空间。
@@ -69,6 +70,7 @@ ms.locfileid: "48132132"
 
 - [了解用于 SharePoint 和 OneDrive 的保留](retention-policies-sharepoint.md)
 - [了解用于 Microsoft Teams 的保留](retention-policies-teams.md)
+- [了解用于 Yammer 的保留](retention-policies-yammer.md)
 - [了解用于 Exchange 的保留](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
@@ -102,6 +104,8 @@ ms.locfileid: "48132132"
 - Exchange 公用文件夹
 - Teams 通道消息
 - Teams 聊天
+- yammer 社区消息
+- Yammer 私信
 
 可以非常高效地将一个策略应用于多个位置，也可以应用于特定的位置或用户。
     
@@ -214,7 +218,7 @@ SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 �
    
 在 Exchange 中，自动应用保留标签只会应用于新发送的邮件（传输中的数据），而不是应用于邮箱中当前的所有项（静态数据）。 此外，用于敏感信息类型和可训练的分类器的自动应用保留标签应用于所有邮箱；你无法选择特定的邮箱。
   
-Exchange 公用文件夹、Skype 和 Teams 频道消息和聊天不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
+Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签。 若要保留并从这些位置中删除内容，请改用保留策略。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一次只能分配一个保留标签
 
@@ -265,7 +269,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |功能|保留策略 |保留标签|
 |:-----|:-----|:-----|:-----|
 |保留设置可以是“保留后删除”、“仅保留”或“仅删除” |是 |是 |
-|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否  |
+|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自动应用保留 | 是 | 是 |
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询、可训练的分类器| 否 | 是 |
 |手动应用保留 | 否 | 是 |

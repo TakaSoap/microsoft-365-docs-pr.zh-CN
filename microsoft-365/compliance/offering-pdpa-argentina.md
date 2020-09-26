@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417054"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208104"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>阿根廷个人数据保护法 (PDPA)
 
@@ -39,7 +39,7 @@ Microsoft 按合同承诺遵守 [Microsoft 在线服务条款](https://www.micro
 
 Microsoft 数据传输协议是在线服务条款中的数据处理条款的修正案（修正案 ID M314）。 其中新增了重要承诺，包括 Microsoft 将向客户发送任何具有法律约束力的泄露个人数据请求的通知；将按客户请求提交数据处理设施以由客户或独立第三方进行审核；或者将事先获得使用分包商的书面同意。
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
 - [Azure 和 Azure DevOps](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Dynamics 365](https://download.microsoft.com/download/E/1/9/E1977163-7A86-4812-AC18-C03ADC958AAF/Microsoft_Dynamics_365_Cloud_Service_Compliance_Datasheet.pdf)
@@ -55,6 +55,10 @@ Microsoft 数据传输协议是在线服务条款中的数据处理条款的修�
 **GDPR 对个人数据保护法做了哪些变更？**
 
 2018 年下旬，阿根廷尚未颁布与 GDPR 相关的法规，但已起草新的数据保护法案（已由行政机关提交到国会并由众议院进行修订），将数据保护法律引入到 GDPR 中。 区别在于数据主体的定义以及个人信息的跨境传输方面的顾虑。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

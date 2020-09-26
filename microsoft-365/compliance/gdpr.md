@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422450"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208808"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -56,6 +56,10 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 - **[数据保护影响评估 (DPIA)](gdpr-data-protection-impact-assessments.md)**。 要求数据控制者按照 GDPR 为“可能对自然人的权限和自由造成高风险”的数据操作准备 DPIA。
 
 如上所述，GDPR 的建议操作计划和责任就绪清单提供了使用 Microsoft 产品和服务实施或评估 GDPR 一致性的指南。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器为企业版 E5 客户提供了此规则的预建评估。 在合规性管理器的“**评估模板**”页面中找到用于建立评估的模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="data-subject-request-dsr"></a>数据主体请求 (DSR)
 
@@ -177,7 +181,7 @@ Microsoft 已制定用于及时通知你的策略和过程。 为了让你能够
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>GDPR 的责任就绪清单
 
-这些[清单](gdpr-arc.md)提供了一种方便的方法来访问使用 Microsoft 产品支持 GDPR 所需的信息。 可以使用 [Microsoft 合规性分数](compliance-score.md)来管理清单项目，具体方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。
+这些[清单](gdpr-arc.md)提供了一种方便的方法来访问使用 Microsoft 产品支持 GDPR 所需的信息。 可以使用 [Microsoft 合规性管理器](compliance-manager.md)来管理清单项目，具体方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。
 
 ## <a name="gdpr-faqs"></a>GDPR 常见问题解答
 

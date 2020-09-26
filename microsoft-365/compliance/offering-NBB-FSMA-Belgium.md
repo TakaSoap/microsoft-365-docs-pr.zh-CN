@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad72be958e8d028ff40dcbd483accd0dbe5c0527
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: d35e9893c54367bc62de65300613853408070c33
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415756"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208264"
 ---
 # <a name="national-bank-of-belgium-nbb-and-the-financial-services-and-markets-authority-fsma"></a>比利时国家银行 (NBB) 及金融服务和市场管理局 (FSMA)
 
@@ -69,6 +69,10 @@ Microsoft 清单可对正在就 Microsoft 商业云服务进行尽职调查评�
 **在与云服务提供商签订的合同中是否必须包含某些强制性条款？**
 
 是。 金融机构必须确保在其云服务合同中包含特定要点。 [Microsoft 清单](https://aka.ms/FinServ-Guide-Belgium)的第 2 部分（第 49 页）将这些要点与 Microsoft 合同文档中应对这些要点的部分进行了对应。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

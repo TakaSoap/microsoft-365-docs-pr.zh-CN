@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Microsoft 365 数据位置
-ms.openlocfilehash: 17655e8cb35f3eaa78315fd2cdb3450f1552ad96
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324263"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269537"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -32,7 +32,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 下表显示了 Microsoft 365 服务的客户数据在所有 Microsoft 全球云位置的静态存储位置。 展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
 
-客户可在 Office 365 管理中心的“**设置 | 组织配置文件 | 数据位置卡**”中查看特定于租户的数据位置信息。
+客户可在 Microsoft 365 管理中心的“**设置 | 组织设置 | 组织配置文件 | 数据位置**”中查看特定于租户的数据位置信息。
 
 新 Microsoft 365 租户默认位于与该租户的首次订阅关联的交易所在国家/地区内的地理位置。
 

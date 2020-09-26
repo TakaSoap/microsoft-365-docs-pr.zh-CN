@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 了解如何使用 Microsoft 服务信任门户中的合规性管理器来满足数据保护和管理法规要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 1e530acb5ca22fd67d94fea47aa37973d62e767c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016253"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198533"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合规性管理器（经典）
 
-> [!NOTE]
-> 此文档介绍此产品的先前版本。 *强烈建议用户不要使用此版本的合规性管理器*。 **如果你使用的是合规性管理器的当前预览版本，请参阅[合规性管理器（预览）文档](working-with-compliance-manager.md)。**
+> [!IMPORTANT]
+> **合规性管理器现已在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中公开提供。强烈建议客户停止使用合规性管理器（经典），并移动到新的合规性管理器，从其丰富的用户体验和已更新的控件映射中受益。请参阅我们的[合规性管理器文档](compliance-manager.md) ，以在 Microsoft 365 合规中心中设置并开始使用新的合规性管理器。**
 
  *由世纪互联运营的 Office 365、Office 365 Germany、Office 365 U.S. Government Community High (GCC High) 或 Office 365 Department of Defense 不提供合规性管理器。*
   
@@ -43,9 +43,6 @@ ms.locfileid: "45016253"
 - 提供安全存储库，用于上传和管理与合规性活动相关的证据及其他项目。
     
 - 生成丰富详细的 Microsoft Excel 报告，记录 Microsoft 和组织执行的合规性活动，以提供给审计、监管人员和其他合规性利益干系人。
-
-有关合规性管理器的简短演示，请参阅此[合规性管理器](https://www.youtube.com/watch?v=r1vs8NdSXKQ)视频。
-
     
 > [!IMPORTANT]
 > 作为仪表板，合规性管理器汇总了数据保护和合规性状态，以及数据保护和合规性改进建议。合规性管理器中的“客户行动”就是建议；在实现前于各自监管环境中评估这些建议的有效性，完全取决于各个组织。不得将合规性管理器中的建议解读为合规性保证。
@@ -830,11 +827,3 @@ ms.locfileid: "45016253"
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## <a name="see-also"></a>另请参阅
-
-- [合规性管理器交互指南](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [宣布合规性管理器正式推出](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 提供有助于遵守 GDPR 的信息保护策略](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)
