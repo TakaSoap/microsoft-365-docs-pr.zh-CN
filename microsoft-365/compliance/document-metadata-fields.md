@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 查看一个表，其中列出了在数据调查 (预览) 中的证据集中的文档的元数据字段。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: f365ca6381fee2713f6e1c8e68eb9b1cd8e1fb88
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357622"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285388"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>数据调查中的文档元数据字段 (预览) 
 
@@ -40,7 +40,7 @@ ms.locfileid: "47357622"
 |会话索引         |                                                 |                         | 是         |
 |Custodian                  | 是 (保管人)                                  |   是 (保管人)        | 是         |
 |数据源                | 是 (源)                                     |   是 (工作负荷)           | 是         |
-|日期                       | 是 (日期)                                       |   是 (日期 UTC)         | 是         |
+|Date                       | 是 (日期)                                       |   是 (日期 UTC)         | 是         |
 |Deduped 复合路径      |                                                 |                         | 是         |
 |Deduped 保管人         |                                                 |                         | 是         |
 |Deduped 文件 Id           |                                                 |                         | 是         |

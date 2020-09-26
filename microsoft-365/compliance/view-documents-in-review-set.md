@@ -1,12 +1,12 @@
 ---
-title: 查看审阅集中的文档-电子数据展示
+title: 在高级电子数据展示中查看审阅集中的文档
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 description: 选择如何在高级电子数据展示中查看内容，如文本、批注、转换或本机视图。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034284"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286048"
 ---
-# <a name="view-documents-in-a-review-set"></a>查看审阅集中的文档
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在高级电子数据展示中查看审阅集中的文档
 
 高级电子数据展示通过多个查看器显示内容，每个查看器具有不同用途。 通过单击审阅集内的任何文档，可以使用各种查看器。 当前提供的查看者为：
 

@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 在数据调查过程中，通过查找常见观点或概念，使用主题组织文档。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e05210036ce2db0a06b6450a611908cf2de24f19
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 249d0739e7d83665f3d2a30d544886c43f89e07d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034506"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285518"
 ---
-# <a name="themes"></a>主题
+# <a name="themes-in-data-investigations-preview"></a>数据调查中的主题 (预览) 
 
 当有人撰写文档时，不会随机选择单词;他们试图传达一些观点或概念，并相应地选择单词。 主题模块可对讨论相似主题的文档进行分类，以便审阅者在浏览文档时效率更高。
 

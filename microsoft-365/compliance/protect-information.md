@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 通过使用 Microsoft 365 合规性，实现 Microsoft 信息保护 (MIP) 功能，以帮助您发现、分类和保护其生存或传播的敏感信息。
-ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131962"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277525"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息保护
 
@@ -41,7 +41,7 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 |功能|它会解决什么问题？|入门|
 |:------|:------------|:--------------------|:-----------------------------|
 |[敏感信息类型](sensitive-information-type-entity-definitions.md)| 使用内置或自定义正则表达式或函数标识敏感数据，以及包含关键字、可信度和邻近度的确定证据。| [自定义内置敏感信息类型](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable 类元 (预览) ](classifier-learn-about.md)| 使用内置分类器之一为您分类数据，或使用自己的内容对分类器进行训练 | [可训练分类器（预览版）入门](classifier-get-started-with.md) |
+|[Trainable 类元 (预览) ](classifier-learn-about.md)| 使用内置分类器之一为您分类数据，或使用自己的内容对分类器进行训练 | [可训练的分类器入门（预览版）](classifier-get-started-with.md) |
 |[数据分类](data-classification-overview.md) | 标识具有敏感度标签、保留标签或已在组织中将其分类为敏感信息类型的项目，以及用户对其执行的操作  | [内容资源管理器入门](data-classification-content-explorer.md)<br /><br /> [活动资源管理器入门](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>保护你的数据
@@ -52,7 +52,7 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 |:------|:------------|---------------------|:----------------------------|
 |[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案，以在您的组织内部和外部传输数据时对数据进行标记和保护 <br /><br />示例方案： [在 POWER BI 中应用和查看敏感度标签，并在导出数据时对数据进行保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 敏感度标签入门](get-started-with-sensitivity-labels.md) |
 |[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展敏感度标签以获取其他特性和功能，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型<br /><br /> 示例其他功能： [Azure 信息保护统一标签客户端的自定义配置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标签客户端管理员指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[双密钥加密](double-key-encryption.md)| 在所有情况下，只有您可以对受保护的内容进行解密，或者需要在地理边界内保留加密密钥 | [部署双密钥加密](double-key-encryption.md#deploy-double-key-encryption)|
+|[双密钥加密](double-key-encryption.md)| 在所有情况下，只有您可以对受保护的内容进行解密，或者需要在地理边界内保留加密密钥 | [部署双密钥加密](double-key-encryption.md)|
 |[Office 365 邮件加密](ome.md) (OME) | 对发送到任何设备上任何用户的电子邮件和附加文档进行加密，以便只有授权的收件人才能阅读电子邮件信息  <br /><br />示例方案： [撤消由高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md) | [开始使用 Office 365 邮件加密](set-up-new-message-encryption-capabilities.md)|
 |[使用客户密钥进行服务加密](customer-key-overview.md) | 防止未经授权的系统或人员查看数据，并补充 Microsoft 数据中心中的 BitLocker 磁盘加密 | [设置 Office 365 的客户密钥](customer-key-set-up.md)|
 |[SharePoint 信息权限管理 (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便在用户签出文档时，已下载的文件受到保护，以便只有授权的用户可以根据您指定的策略查看和使用该文件 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|

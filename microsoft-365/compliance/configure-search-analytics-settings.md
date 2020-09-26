@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 了解如何在管理数据调查时配置搜索和分析设置，如临近重复项、电子邮件线程和主题。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ebc04e68c4d8854c91ceae75b164cc061e77aad4
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527348"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277078"
 ---
-# <a name="configure-search-and-analytics-settings"></a>配置搜索和分析设置
+# <a name="configure-search-and-analytics-settings-in-data-investigations"></a>在数据调查中配置搜索和分析设置
 
 ## <a name="near-duplicates-and-email-threading"></a>临近重复项和电子邮件线程
 
@@ -38,7 +38,7 @@ ms.locfileid: "46527348"
 
 - 最小/最大单词数：临近重复项和电子邮件线程处理将仅在至少包含最少单词数和最大单词数的文档中运行。
 
-有关详细信息，请参阅[接近重复检测](near-duplicates.md)和[电子邮件线程](email-threading.md)。
+有关详细信息，请参阅 [接近重复检测](near-duplicates.md) 和 [电子邮件线程](email-threading.md)。
 
 ## <a name="themes"></a>主题
 
@@ -52,10 +52,10 @@ ms.locfileid: "46527348"
 
 - 主题中包含数字：如果启用此选项，它将在生成主题时包含数字。  
 
-## <a name="optical-character-recognition-ocr"></a>光学字符识别（OCR）
+## <a name="optical-character-recognition-ocr"></a>光学字符识别 (OCR) 
 
 启用此设置后，OCR 将在引入工作集的图像上运行，以便可以对其进行搜索。
 
 ## <a name="ignore-text"></a>忽略文本
 
-有些情况下，某些文本会降低分析质量，例如，如果不考虑电子邮件的内容，则添加到特定电子邮件的冗长免责声明。 如果您知道这种情况，可以通过指定文本（RegEx 受支持）以及应排除文本的模块来从分析中排除此文本。
+有些情况下，某些文本会降低分析质量，例如，如果不考虑电子邮件的内容，则添加到特定电子邮件的冗长免责声明。 如果您知道这种情况，可以通过指定 (RegEx) 支持的文本以及应为文本排除的模块来从分析中排除此文本。

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界来创建逻辑边界，以控制电子数据展示管理器可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269391"
+ms.locfileid: "48277106"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
@@ -70,7 +70,10 @@ ms.locfileid: "48269391"
 
 - 办公室
 
-- C (两个字母的国家/地区代码) 
+- C (两个字母的国家/地区代码) <sup>*</sup>
+
+  > [!NOTE]
+  > <sup>*</sup> 此属性映射到通过在 Exchange Online PowerShell 中运行 **Get User** cmdlet 返回的 CountryOrRegion 属性。 Cmdlet 返回本地化的国家/地区名称，该名称是从两个字母的国家/地区代码转换而来的。 有关详细信息，请参阅 [Set User](https://docs.microsoft.com/powershell/module/exchange/set-user) Cmdlet reference 一文中的 CountryOrRegion 参数说明。
 
 虽然更多的用户属性（尤其是对于 Exchange 邮箱），但上面列出的属性是 OneDrive 当前支持的那些属性。
   
@@ -243,7 +246,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>使用 SharePoint 中心网站的合规性边界
 
-[SharePoint 中心网站](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 通常与电子数据展示符合性边界遵循的地理或机构边界一致。 这意味着您可以使用中心网站的 site ID 属性来创建合规性边界。 为此，请使用 SharePoint Online PowerShell 中的 [get-spohubsite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite?view=sharepoint-ps#examples) cmdlet 获取中心网站的 SiteId，然后将此值用于部门 ID 属性以创建搜索权限筛选器。
+[SharePoint 中心网站](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 通常与电子数据展示符合性边界遵循的地理或机构边界一致。 这意味着您可以使用中心网站的 site ID 属性来创建合规性边界。 为此，请使用 SharePoint Online PowerShell 中的 [get-spohubsite](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) cmdlet 获取中心网站的 SiteId，然后将此值用于部门 ID 属性以创建搜索权限筛选器。
 
 使用以下语法为 SharePoint 中心网站创建搜索权限筛选器：
 

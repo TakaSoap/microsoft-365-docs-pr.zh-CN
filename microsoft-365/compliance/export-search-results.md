@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269587"
+ms.locfileid: "48277469"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -178,7 +178,7 @@ ms.locfileid: "48269587"
     
     **电子数据展示工具**显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，可以在文件的下载位置访问这些文件。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 以下是有关导出搜索结果的详细信息。
   
@@ -317,7 +317,7 @@ ms.locfileid: "48269587"
 
   ![电子数据展示导出工具](../media/eDiscoveryExportTool.png)
 
-  在 "导出密钥" 框中单击，然后按 " `CTRL + V` 粘贴导出密钥" (脚本将导出密钥复制到剪贴板，以便可以将其粘贴) 的框中。 单击 " **浏览** " 以指定要下载搜索结果文件的位置，然后开始下载。
+  在 "导出密钥" 框中单击，然后按 `CTRL + V` "粘贴导出密钥" (脚本将导出密钥复制到 "剪贴板") 。 单击 " **浏览** " 以指定要在其中下载文件的位置，然后开始下载。
 
   如前所述，我们建议您将搜索结果下载到本地磁盘驱动器，因为大量磁盘活动 (读写) 。 不将搜索结果下载到映射的网络驱动器或其他网络位置。
 

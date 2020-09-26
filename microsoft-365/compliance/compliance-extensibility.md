@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何通过使用第三方数据连接器和 Microsoft Graph Api 扩展 Microsoft 365 合规性解决方案。
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204291"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285738"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 合规性扩展性
 
@@ -77,7 +77,7 @@ MIP SDK 向第三方应用程序和服务公开了 Microsoft 365 安全与合规
 
 这两个 Api 构成了团队 DLP 的 Microsoft Graph API。 您可以通过试用 [示例应用程序](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)开始。 有关 Microsoft 团队邮件 webhook 的详细信息，请参阅 [文档](https://docs.microsoft.com/graph/api/subscription-post-subscriptions)。
 
-有关团队 DLP 的许可要求，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+有关团队 DLP 的许可要求，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)。
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>用于电子数据展示 (预览的 Microsoft Graph API) 
 

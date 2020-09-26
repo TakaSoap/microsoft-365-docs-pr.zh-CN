@@ -1,5 +1,5 @@
 ---
-title: 电子邮件线程-电子数据展示
+title: 高级电子数据展示中的电子邮件线程
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: 在执行高级电子数据展示分析时，电子邮件线程分析电子邮件对话，并将每个邮件分成不同的类别。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527670"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285558"
 ---
-# <a name="email-threading"></a>电子邮件会话
+# <a name="email-threading-in-advanced-ediscovery"></a>高级电子数据展示中的电子邮件线程
 
 考虑一段时间的电子邮件对话。 在大多数情况下，线程上的最后一个电子邮件将包含上述所有电子邮件的内容;查看最后一个电子邮件将提供在线程中发生的对话的完整上下文。 电子邮件线程识别此类电子邮件，以便审阅者可以在不丢失任何上下文的情况下查看所收集的文档的一部分。
 
