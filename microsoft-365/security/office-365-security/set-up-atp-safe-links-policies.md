@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 设置安全链接策略以保护您的组织免受 Word、Excel、PowerPoint 和 Visio 文件以及电子邮件中的恶意链接。
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201755"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279577"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>设置 Office 365 ATP 安全链接策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > 本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。 如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[Atp 安全链接](atp-safe-links.md)（ [Office 365 高级威胁防护](office-365-atp.md) 的一项功能 (ATP) ）可帮助保护您的组织免受在网络钓鱼和其他攻击中使用的恶意链接。 如果您具有 [安全 & 合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限，则可以设置 ATP 安全链接策略，以帮助确保当用户单击 "web 地址 (url) 时，您的组织受到保护。 您的 ATP 安全链接策略可以配置为扫描 Office 文档中的电子邮件和 Url 中的 Url。
+[Atp 安全链接](atp-safe-links.md) 是 [Office 365 高级威胁防护](office-365-atp.md) 中的一项功能，可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接的 (ATP) 。 如果您具有 [安全 & 合规中心](permissions-in-the-security-and-compliance-center.md)的必要权限，则可以设置 ATP 安全链接策略，以帮助确保当用户单击 "web 地址 (url) 时，您的组织受到保护。 您的 ATP 安全链接策略可以配置为扫描 Office 文档中的电子邮件和 Url 中的 Url。 ATP 安全链接扫描传入电子邮件的已知恶意超链接和包含恶意软件的附件。 此功能将扫描的 Url 重写为 Microsoft 的标准 URL 格式前缀 <https://nam01.safelinks.protection.outlook.com> 。 重写链接后，会对其进行分析以查找任何潜在的恶意内容。 启用 ATP 安全链接后，如果用户单击电子邮件中的链接，并且该 URL 已被组织的自定义 "阻止 URL" 列表阻止，或者如果该 URL 被确定为 "恶意"，则会打开 "警告" 页。
 
-启用 ATP 安全链接后，如果用户单击电子邮件中的链接，并且该 URL 已被组织的自定义 "阻止 URL" 列表阻止，或者如果该 URL 被确定为 "恶意"，则会打开 "警告" 页。
+如果 ATP 安全链接重写了 URL，则在转发或答复邮件时，该 URL 仍将被重写。 将不会重写添加到要答复或转发的邮件中的其他链接。
 
 [将新功能连续添加到 ATP](office-365-atp.md#new-features-in-office-365-atp)。 添加新功能时，您可能需要对现有的 ATP 安全链接策略进行调整。
 

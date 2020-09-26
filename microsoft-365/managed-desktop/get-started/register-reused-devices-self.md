@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104566"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279557"
 ---
 # <a name="register-existing-devices-yourself"></a>自行注册现有设备
 
@@ -146,14 +146,14 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 1. 在 " **文件上载**" 中，提供以前创建的 CSV 文件的路径。
 
-1. 选择 " **注册设备**"。 系统会将设备添加到 **设备**上的设备列表中，并标记为 **AutopilotRegistrationRequested**。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
+1. 选择 " **注册设备**"。 系统会将设备添加到 **设备边栏**上的设备列表中，并标记为 " **注册挂起**"。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
 
 
 您可以在主页面上监视设备注册的进度。 可能报告的状态包括：
 
 | 状态 | 说明 |
 |---------------|-------------|
-| AutopilotRegistrationRequested | 注册尚未完成。 稍后再次查看。 |
+| 注册挂起 | 注册尚未完成。 稍后再次查看。 |
 | 注册失败 | 无法完成注册。 有关详细信息，请参阅 [设备注册故障排除](#troubleshooting-device-registration) 。 |
 | 为用户准备就绪 | 注册成功，现在设备已准备好传递给用户。 Microsoft 托管桌面将在首次设置时引导他们，因此无需执行任何进一步的准备。 |
 | 活动 | 设备已传递给用户，并且已向你的租户注册。 这也表明它们是定期使用设备的。 |
