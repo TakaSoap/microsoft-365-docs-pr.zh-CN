@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868907"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200489"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -53,7 +53,7 @@ ms.locfileid: "46868907"
 
 ## <a name="records"></a>记录
 
-当内容被标记为记录时：
+将内容声明为记录时：
 
 - 会针对[允许或阻止对记录项进行的操作](#compare-restrictions-for-what-actions-are-allowed-or-blocked)施加限制。
 
@@ -61,31 +61,31 @@ ms.locfileid: "46868907"
 
 - 保留期结束时将其删除时，拥有处置证明。
 
-使用[保留标签](retention.md#retention-labels)将内容标记为记录。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录的内容。
+使用[保留标签](retention.md#retention-labels)将内容标记为**记录**或**合规性记录** （当前处于预览中）。 这两者之间的差异将在下一节中介绍。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录或合规性记录的内容。
 
-通过使用保留标签来将内容标记为记录，可在 Microsoft 365 环境中实现单一一致的记录管理策略。
+通过使用保留标签来声明记录，可在 Microsoft 365 环境中实现单一一致的记录管理策略。
 
 ### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>比较对允许或阻止的操作的限制
 
-使用以下表格识别应用标准保留标签和将内容标记为记录的保留标签后，对内容施加的限制。 
+使用以下表格识别应用标准保留标签和将内容标记为记录或合规性记录的保留标签后，对内容施加的限制。 
 
-标准保留标签具有保留设置和操作，但不会将内容标记为记录。
+标准保留标签具有保留设置和操作，但不会将内容标记为记录或合规性记录。
 
 >[!NOTE] 
 > 为确保完整性，表格包括已锁定和已解锁的记录列，适用于 SharePoint 和 OneDrive，但不适用于 Exchange。 锁定和解锁记录的功能使用 Exchange 项目不支持的[记录版本控制](record-versioning.md)功能。 因此，对于标记为记录的所有 Exchange 项目，该行为会映射到**记录 - 已锁定**列，而**记录 - 已解锁列**则不相关。
 
 
-|操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁|
-|:-----|:-----|:-----|:-----|:-----|
-|编辑内容|允许 | **阻止** | 允许|
-|编辑属性（包括重命名）|Allowed |允许 | Allowed|
-|删除|允许 <sup>1</sup> |**阻止** | **阻止**|
-|复制|Allowed |允许 | Allowed|
-|在容器 <sup>2</sup> 中移动|Allowed |允许 | Allowed|
-|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | 允许|
-|打开/读取|Allowed |允许 | Allowed|
-|更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员|
-|删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员|
+|操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |
+|:-----|:-----|:-----|:-----|:-----|:-----|
+|编辑内容|允许 | **阻止** | 允许 | **阻止**|
+|编辑属性（包括重命名）|Allowed |允许 | 允许| **阻止**|
+|删除|允许 <sup>1</sup> |**阻止** |**阻止**| **阻止**|
+|复制|Allowed |允许 | 允许| Allowed|
+|在容器 <sup>2</sup> 中移动|Allowed |允许 | 允许| Allowed|
+|围绕容器 <sup>2</sup> 移动|允许 |如果从未解锁，则允许 | 允许| **阻止**|
+|打开/读取|Allowed |允许 | 允许| Allowed|
+|更改标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
+|删除标签|允许 |允许 - 仅容器管理员 | 允许 - 仅容器管理员| **已阻止**
 
 页脚：
 
@@ -95,8 +95,17 @@ ms.locfileid: "46868907"
 
 ![指明项未从 SharePoint 中删除的消息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
 
-
 <sup>2</sup>容器包括 SharePoint 文档库和 Exchange 邮箱。
+
+>[!IMPORTANT] 
+> 合规性记录的最重要的差别是，在应用到内容后，任何人（哪怕是是全局管理员）都无法删除标签。 
+>
+> 此外，为合规性记录配置的保留标签具有以下管理员限制：
+> - 保存标签后，不能缩短保留期，只能对其进行扩展。
+> - 自动标记策略不支持这些标签，必须使用[保留标签策略](create-apply-retention-labels.md)应用这些标签。 
+> - 将这些标签添加并保存到保留标签策略后，不能从位置中删除这些标签，只能添加位置。
+> 
+> 由于这些操作不可逆，在针对保留标签选择此选项之前，请确定确实需要使用合规性记录。 为帮助防止意外配置，默认情况下该选项不可用，但必须先使用 PowerShell 启用。 有关说明，请参阅[使用保留标签 声明记录](declare-records.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

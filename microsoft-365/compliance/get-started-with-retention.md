@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778288"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198937"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -60,7 +60,7 @@ ms.locfileid: "46778288"
 
 |我想...|文档|
 |----------------|---------------|
-|高效地为组织或按 Microsoft 365 服务设置保留和删除操作： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 组 <br />- Skype for Business  <br />- Microsoft Teams  |[创建和配置保留策略](create-retention-policies.md)|
+|高效地为组织或按 Microsoft 365 服务设置保留和删除操作： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 组 <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer 网络 |[创建和配置保留策略](create-retention-policies.md)|
 |让管理员和用户手动为文档和电子邮件应用一组保留和删除操作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 网页版|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
 |让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
 |让用户使用 Outlook 规则向电子邮件自动应用保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|

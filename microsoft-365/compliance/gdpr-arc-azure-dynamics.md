@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422460"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201519"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>适用于 GDPR 的 Azure 和 Dynamics 365 责任就绪清单
 
@@ -33,7 +33,7 @@ ms.locfileid: "47422460"
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 安全技术要求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 隐私管理要求。
 
-可以使用合规性分数 [[16](gdpr-arc-Azure.md#16)] 来管理此清单中的项目，具体方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。 此控件结构还用于组织 Microsoft Azure 和 Dynamics 365 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任门户](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
+可以使用合规性管理器 [[16](gdpr-arc-Azure.md#16)]来管理此清单中的项目，方法是引用 GDPR 磁贴中的“客户托管控件”下的控件 ID 和控件标题。 此控件结构还用于组织 Microsoft Azure 和 Dynamics 365 为支持 GDPR 而实现的内部控件的演示文稿（可从[服务信任门户](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)下载）。
 
 此控件结构还将用于组织[Microsoft Dynamics 365 用于支持 GDPR 所实施的内部控件](https://aka.ms/gdprcontrols)的演示文稿。
 

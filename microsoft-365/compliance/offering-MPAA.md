@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417916"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208274"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>美国电影协会 (MPAA)
 
@@ -59,6 +59,10 @@ MPAA 准则为主流电影公司供应商和合作伙伴提供了一套关于创
 **我的组织是否仍需进行 MPAA 审核，我们是否可以使用 Azure 审核？**
 
 生产设备、视觉效果工作室及其他服务合作伙伴应与其执行制片人和导演进行合作，以了解最新安全要求，以及是否有必要进行正式的 MPAA 审核。 符合 MPAA 准则是自愿的，但 Microsoft 选择执行独立评估，这样可赢得媒体客户对 Azure 内容安全和保护功能的信任。 但是，Azure 不管理客户的各个云环境，因为这可能要遵守额外的 MPAA 规定，所以最好的处理方式是由你自己对自身环境进行审核。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
+
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdc8835989ada5ebe4089c4d7fed5fd8cf064673
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a648673d06300190695db52d14e85f114bfe0e87
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415419"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208142"
 ---
 # <a name="service-organization-controls-soc"></a>Service Organization Controls (SOC)
 
@@ -90,7 +90,7 @@ Microsoft 云服务会根据 SOC 1（SSAE18、ISAE 3402）、SOC 2（AT 条例 1
 - [Office 365 Core - SSAE 18 SOC 1 报告](https://aka.ms/o365SOC-1)
 - [Office 365 Core - SSAE 18 SOC 2 报告](https://aka.ms/o365SOC-2)
 - [Office 365 Core - SSAE 18 SOC 3 报告](https://aka.ms/o365SOC-3)
-- [Office 365 Microservices T1 – SSAE 18 SOC2 Type I 报告](https://aka.ms/o365-MS-SOC-2-type1)
+- [Office 365 Microservices T1-SSAE 18 SOC2 类型 I 报告](https://aka.ms/o365-MS-SOC-2-type1)
 - [客户密码箱 SOC 1 SSAE 16 审核报告](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101 Type I 审核报告](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2 Type II 报告](https://aka.ms/yammerSOC-2)
@@ -121,9 +121,9 @@ Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power B
 
 [面向服务组织的 SOC 工具套件](https://aka.ms/soc-toolkit)对了解 SOC 报告过程和推动组织利用这些报告是非常有用的资源。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合规性分数评估风险
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性分数](compliance-score.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 在[设置合规性分数](compliance-score-setup.md)之后，从“**模板**”下拉菜单中选择预配置的“[SOC 1 模板](https://go.microsoft.com/fwlink/?linkid=2117918)”和“[SOC 2 模板](https://go.microsoft.com/fwlink/?linkid=2117919)”帮助组织满足此法规的要求。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
