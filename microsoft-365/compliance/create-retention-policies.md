@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948170"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198489"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -50,11 +50,14 @@ ms.locfileid: "47948170"
 - Exchange 公用文件夹
 - Teams 通道消息
 - Teams 聊天
+- yammer 社区消息
+- Yammer 私人消息
 
-当您在创建保留策略时选择其中一个 Teams 位置时，其他位置将被自动排除。 因此，请依照你是否需要包含 Teams 地点来取决于要遵循的指示:
+如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，请依照你是否需要包含 Teams 或 Yammer 地点来确定要遵循的指示:
 
 - [有关 Teams 位置的保留策略的说明](#retention-policy-for-teams-locations)
-- [有关 Teams 以外位置的保留策略的说明](#retention-policy-for-locations-other-than-teams)
+- [有关 Yammer 位置的保留策略的说明](#retention-policy-for-yammer-locations)
+- [有关 Teams 和 Yammer 以外位置的保留策略的说明](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 如果你有多个保留策略，但同时你又有使用保留标签，请参阅[保留原则或优先原则？](retention.md#the-principles-of-retention-or-what-takes-precedence)了解多个保留设置应用于同一内容时的结果。
 
@@ -93,7 +96,56 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 应用于 Microsoft 365 组、SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Teams 聊天或频道消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Teams 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>团队以外位置的保留策略
+### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留策略
+
+> [!NOTE]
+> Yammer 的保留策略推出预览版。 如果你还没有看到 Yammer 的新位置，请几天后重试。
+>
+> 若要使用此功能，Yammer 网络必须为[“本机模式”](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
+
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+
+2. 选择**新保留策略**创建新的保留策略。
+
+3. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。 
+    
+    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
+    
+    请勿选择**使用高级保留设置** ，因为这并不支持 Yammer 位置。 
+
+4. 有关**选择位置**的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置： **Yammer 社区消息**和 **Yammer 私人消息**。
+    
+    默认情况下，将选中所有社区和用户，但你可以通过指定要包括或排除的社区和用户来优化此设置。
+    
+    关于 Yammer 私人消息： 
+    - 如果你保留 **“所有”** 默认值，则不包含 Azure B2B 来宾用户。 
+    - 如果使用 **“选择用户”** 并指定其帐户，则可以向外部用户应用保留策略。
+
+5. 完成向导以保存设置。
+
+有关 Yammer 的保留策略工作方式的详细信息，请参阅[了解 Yammer 的保留](retention-policies-yammer.md)。
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>支持 Yammer 所需的其他保留策略
+
+Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer 网络的电子邮件，请使用 **Office 365 组**位置来配置额外的保留策略，包括任何用于 Yammer 的 Microsoft 365 组。 
+
+如需保留和删除存储在 Yammer 中的文件，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略：
+
+- 私人消息中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
+
+- 上传到社区的文件存储在 Yammer 社区的 SharePoint 网站中。
+
+应用于 SharePoint 网站或 OneDrive 帐户的保留策略可能会先删除在 Yammer 消息中引用的文件，然后再删除这些消息。 在这种情况下，该文件仍显示在 Yammer 消息中，但当用户选择该文件时，将收到“找不到文件”错误。 此行为并非特定于保留策略，用户从 SharePoint 或 OneDrive 中手动删除文件时，也可能发生这种情况。
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Teams 和 Yammer 之外的位置保留策略
+
+对于适用于以下任何服务的保留策略，请按照以下说明进行操作：
+
+- Exchange：电子邮件和公共文件夹
+- SharePoint：网站
+- OneDrive：帐户
+- Microsoft 365 组
+- Skype for Business
 
 1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
 
