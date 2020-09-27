@@ -1,7 +1,7 @@
 ---
-title: 预览Microsoft 威胁防护的功能
-description: 了解Microsoft 365 安全中心的新功能。
-keywords: 预览、新的、m365 安全中心、 安全、 365、功能
+title: 预览 Microsoft 威胁防护的功能
+description: 了解 Microsoft 365 安全中心的新功能
+keywords: 预览, 新, m365 安全中心, 安全, 365, 功能
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -26,42 +26,42 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 09/22/2020
 ms.locfileid: "48195499"
 ---
-# <a name="microsoft-threat-protection-preview-features"></a><span data-ttu-id="c0bba-104">Microsoft 威胁防护预览功能</span><span class="sxs-lookup"><span data-stu-id="c0bba-104">Microsoft Threat Protection preview features</span></span>
+# <a name="microsoft-threat-protection-preview-features"></a><span data-ttu-id="9d559-104">Microsoft 威胁防护预览功能</span><span class="sxs-lookup"><span data-stu-id="9d559-104">Microsoft Threat Protection preview features</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="c0bba-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="c0bba-105">**Applies to:**</span></span>
-- <span data-ttu-id="c0bba-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="c0bba-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="9d559-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="9d559-105">**Applies to:**</span></span>
+- <span data-ttu-id="9d559-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="9d559-106">Microsoft Threat Protection</span></span>
 
 
-<span data-ttu-id="c0bba-107">Microsoft 威胁防护服务不断更新，以包含新的功能和功能的增强。</span><span class="sxs-lookup"><span data-stu-id="c0bba-107">The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.</span></span>
+<span data-ttu-id="9d559-107">Microsoft 威胁防护服务不断更新，以包含新的功能和功能增强。</span><span class="sxs-lookup"><span data-stu-id="9d559-107">The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.</span></span>
 
-<span data-ttu-id="c0bba-108">了解Microsoft 威胁防护预览版本中的新增功能，并通过启用预览版体验，首批试用即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="c0bba-108">Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
+<span data-ttu-id="9d559-108">了解 Microsoft 威胁防护预览版本中的新增功能，并通过启用预览体验，率先试用即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="9d559-108">Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
 
-<span data-ttu-id="c0bba-109">有关新增功能的详细信息，请参阅 [Microsoft 威胁防护中的新增功能](whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="c0bba-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](whats-new.md).</span></span>
+<span data-ttu-id="9d559-109">有关普遍可用的新增功能详细信息，请参阅 [Microsoft 威胁防护中的新增功能](whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="9d559-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](whats-new.md).</span></span>
 
-## <a name="turn-on-preview-features"></a><span data-ttu-id="c0bba-110">启用预览功能</span><span class="sxs-lookup"><span data-stu-id="c0bba-110">Turn on preview features</span></span>
-<span data-ttu-id="c0bba-111">你将有权访问即将推出的功能，并且可以在功能普遍可用之前提供反馈，以帮助改善整体体验。 </span><span class="sxs-lookup"><span data-stu-id="c0bba-111">You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
+## <a name="turn-on-preview-features"></a><span data-ttu-id="9d559-110">启用预览功能</span><span class="sxs-lookup"><span data-stu-id="9d559-110">Turn on preview features</span></span>
+<span data-ttu-id="9d559-111">你将有权访问即将推出的功能并提供反馈，从而可在功能普遍可用之前帮助改善整体体验。 </span><span class="sxs-lookup"><span data-stu-id="9d559-111">You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
 
-<span data-ttu-id="c0bba-112">启用预览体验设置，率先体验到即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="c0bba-112">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
+<span data-ttu-id="9d559-112">启用预览体验设置，以率先体验即将推出的功能。</span><span class="sxs-lookup"><span data-stu-id="9d559-112">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
 
-1. <span data-ttu-id="c0bba-113">在导航窗格中，选择**设置**。</span><span class="sxs-lookup"><span data-stu-id="c0bba-113">In the navigation pane, select **Settings**.</span></span>
+1. <span data-ttu-id="9d559-113">在导航窗格中，选择“**设置**”。</span><span class="sxs-lookup"><span data-stu-id="9d559-113">In the navigation pane, select **Settings**.</span></span>
 
-2. <span data-ttu-id="c0bba-114">选择**Microsoft 威胁防护**。</span><span class="sxs-lookup"><span data-stu-id="c0bba-114">Select **Microsoft Threat Protection**.</span></span>
+2. <span data-ttu-id="9d559-114">选择“**Microsoft 威胁防护**”。</span><span class="sxs-lookup"><span data-stu-id="9d559-114">Select **Microsoft Threat Protection**.</span></span>
 
 
-3. <span data-ttu-id="c0bba-115">选择**预览功能** > **启用预览功能**。</span><span class="sxs-lookup"><span data-stu-id="c0bba-115">Select **Preview features** > **Turn on preview features**.</span></span> 
+3. <span data-ttu-id="9d559-115">选择“**预览功能**” > “**启用预览功能**”。</span><span class="sxs-lookup"><span data-stu-id="9d559-115">Select **Preview features** > **Turn on preview features**.</span></span> 
 
-3. <span data-ttu-id="c0bba-116">选择**保存**。</span><span class="sxs-lookup"><span data-stu-id="c0bba-116">Select **Save**.</span></span>
+3. <span data-ttu-id="9d559-116">选择“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="9d559-116">Select **Save**.</span></span>
 
-<span data-ttu-id="c0bba-117">当看到**启用预览功能**Internet 数据库连接器处于选中状态时，你会知道你已开启了预览功能。</span><span class="sxs-lookup"><span data-stu-id="c0bba-117">You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected.</span></span> 
+<span data-ttu-id="9d559-117">当看到**启用预览功能**”复选框处于选中状态时，你会知道已开启了预览功能。</span><span class="sxs-lookup"><span data-stu-id="9d559-117">You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected.</span></span> 
 
-## <a name="preview-features"></a><span data-ttu-id="c0bba-118">预览功能</span><span class="sxs-lookup"><span data-stu-id="c0bba-118">Preview features</span></span>
-<span data-ttu-id="c0bba-119">预览版中当前提供以下功能和增强功能：</span><span class="sxs-lookup"><span data-stu-id="c0bba-119">The following features and enhancements are currently available on preview:</span></span>
+## <a name="preview-features"></a><span data-ttu-id="9d559-118">预览功能</span><span class="sxs-lookup"><span data-stu-id="9d559-118">Preview features</span></span>
+<span data-ttu-id="9d559-119">当前预览版中提供以下功能和增强功能：</span><span class="sxs-lookup"><span data-stu-id="9d559-119">The following features and enhancements are currently available on preview:</span></span>
 
-- <span data-ttu-id="c0bba-120">**[Microsoft 威胁防护API](api-overview.md)** - lop级别 Microsoft 威胁防护 API 可让你基于共享事件和高级搜寻表自动执行工作流。</span><span class="sxs-lookup"><span data-stu-id="c0bba-120">**[Microsoft Threat Protection APIs](api-overview.md)** - The lop-level Microsoft Threat Protection APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.</span></span> 
-- <span data-ttu-id="c0bba-121">**[高级搜寻中的IdentityDirectoryEvents表](advanced-hunting-identitydirectoryevents-table.md)** — 查找涉及运行 Active Directory（AD）的本地域控制器的事件。</span><span class="sxs-lookup"><span data-stu-id="c0bba-121">**[IdentityDirectoryEvents table in advanced hunting](advanced-hunting-identitydirectoryevents-table.md)** — Find events involving an on-premises domain controller running Active Directory (AD).</span></span> <span data-ttu-id="c0bba-122">该表介绍了一系列身份相关事件以及域控制器上的系统事件。</span><span class="sxs-lookup"><span data-stu-id="c0bba-122">This table covers a range of identity-related events as well as system events on the domain controller.</span></span>
-- <span data-ttu-id="c0bba-123">**[在高级搜寻](advanced-hunting-take-action.md)** 中进行操作 — 快速遏制威胁或处理在[高级搜寻](advanced-hunting-overview.md)中发现的外泄资产。</span><span class="sxs-lookup"><span data-stu-id="c0bba-123">**[Take action in advanced hunting](advanced-hunting-take-action.md)** — Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).</span></span>
-- <span data-ttu-id="c0bba-124">**[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — 直接在安全中心获取有关高级搜寻架构表的信息。 </span><span class="sxs-lookup"><span data-stu-id="c0bba-124">**[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — Get information about advanced hunting schema tables directly in the security center.</span></span> <span data-ttu-id="c0bba-125">除了表和列的描述之外，这个方便的参考提供了有关支持的事件类型（`ActionType` 值）和示例查询的信息。</span><span class="sxs-lookup"><span data-stu-id="c0bba-125">In addition to table and column descriptions, this convenient reference provides information about supported event types (`ActionType` values) and sample queries.</span></span>
+- <span data-ttu-id="9d559-120">**[Microsoft 威胁防护API](api-overview.md)** - 保护 (LOP) 级别 Microsoft 威胁防护 API 可基于共享事件和高级搜寻表自动执行工作流。</span><span class="sxs-lookup"><span data-stu-id="9d559-120">**[Microsoft Threat Protection APIs](api-overview.md)** - The lop-level Microsoft Threat Protection APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.</span></span> 
+- <span data-ttu-id="9d559-121">**[高级搜寻中的 IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md)** - 查找涉及运行 Active Directory (AD) 的本地域控制器的事件。</span><span class="sxs-lookup"><span data-stu-id="9d559-121">**[IdentityDirectoryEvents table in advanced hunting](advanced-hunting-identitydirectoryevents-table.md)** — Find events involving an on-premises domain controller running Active Directory (AD).</span></span> <span data-ttu-id="9d559-122">该表包含一系列身份相关的事件以及域控制器上的系统事件。</span><span class="sxs-lookup"><span data-stu-id="9d559-122">This table covers a range of identity-related events as well as system events on the domain controller.</span></span>
+- <span data-ttu-id="9d559-123">**[在高级搜寻中进行操作](advanced-hunting-take-action.md)** - 快速包含威胁或处理在[高级搜寻](advanced-hunting-overview.md)中发现的外泄资产。</span><span class="sxs-lookup"><span data-stu-id="9d559-123">**[Take action in advanced hunting](advanced-hunting-take-action.md)** — Quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md).</span></span>
+- <span data-ttu-id="9d559-124">**[门户内架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - 直接在安全中心获取有关高级搜寻架构表的信息。 </span><span class="sxs-lookup"><span data-stu-id="9d559-124">**[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — Get information about advanced hunting schema tables directly in the security center.</span></span> <span data-ttu-id="9d559-125">除了表和列的描述之外，此便捷参考提供了有关支持的事件类型（`ActionType` 值）和示例查询的信息。</span><span class="sxs-lookup"><span data-stu-id="9d559-125">In addition to table and column descriptions, this convenient reference provides information about supported event types (`ActionType` values) and sample queries.</span></span>
 
