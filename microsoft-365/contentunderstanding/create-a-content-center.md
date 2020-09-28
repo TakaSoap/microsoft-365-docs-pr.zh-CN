@@ -1,27 +1,26 @@
 ---
-title: '创建内容中心 (预览) '
+title: 在 Microsoft SharePoint Syntex 中创建内容中心
 ms.author: efrene
 author: efrene
 manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 了解如何创建内容中心。
-ms.openlocfilehash: ae10cdae2fe84abf72cf09141798b628d88a504a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 62977bc5a34b041e9e958ff46e0dbc010d6bd822
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950092"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295428"
 ---
-# <a name="create-a-content-center-preview"></a>创建内容中心 (预览) 
+# <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建内容中心
 
-> [!Note] 
-> 本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。</br>
+本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。</br>
 
 </br>
 
@@ -33,30 +32,27 @@ ms.locfileid: "47950092"
 
    ![选择文档库](../media/content-understanding/content-center-page.png)</br>
 
-初始内容中心是在 [安装](set-up-content-understanding.md)过程中创建的，但 SharePoint 管理员可以根据需要选择创建其他内容中心。 虽然单个内容中心对于要查看所有模型活动的汇总的环境可能很好，但如果您的组织中有多个部门可能对其模型有不同的需求和要求，则您可能需要其他客户端。
+在 [安装](set-up-content-understanding.md)过程中创建初始内容中心。 但 SharePoint 管理员也可以根据需要选择创建其他中心。 虽然单个内容中心对于您希望汇总所有模型活动的环境可能很好，但您可能希望为组织中的多个部门添加其他中心，这可能对其模型有不同的需求和要求。
 
-SharePoint 管理员可以创建内容中心网站，如他们通过网站模板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 。
+> [!NOTE]
+> SharePoint 管理员可以创建内容中心网站，如他们将使用网站模板 [创建任何其他 SharePoint 网站](https://docs.microsoft.com/sharepoint/create-site-collection) 。
 
 若要创建新的内容中心，请执行以下操作：
 
 1. 在 Microsoft 365 管理中心，转到 "SharePoint 管理中心"。
-2. 在 SharePoint 管理中心的 " **网站**" 下，选择 " **活动网站**"。
+2. 在 SharePoint 管理中心中的 " **网站**" 下，选择 " **活动网站**"。
 3. 在 " **活动网站** " 页上，单击 " **创建**"，然后选择 " **其他选项**"。
 4. 在 " **选择模板** " 菜单上，选择 " **内容中心**"。
 5. 对于新网站，提供 **网站名称**、 **主管理员**和一种 **语言**。</br>
 
-> [!Note] 
-> 您可以选择以任何可用语言呈现的内容中心网站，但请注意，当前的模型只能为英语文件创建。</br>
+> [!NOTE] 
+> 可以选择使用任意可用的语言呈现内容中心网站。 仅可为英语文件创建当前模型。</br>
 
-6. 单击“完成”****。
+6. 选择 " **完成**"。
 
 ### <a name="give-access-to-additional-users"></a>授予对其他用户的访问权限
  
 创建网站后，可以通过标准 [SharePoint 网站权限模型](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)向其他用户授予对网站的访问权限。
-
-
-
-
 
 ## <a name="see-also"></a>另请参阅
 [创建类元](create-a-classifier.md)</br>
@@ -65,7 +61,3 @@ SharePoint 管理员可以创建内容中心网站，如他们通过网站模板
 [文档理解概述](document-understanding-overview.md)</br>
 [创建表单处理模型](create-a-form-processing-model.md)</br>
 [应用模型](apply-a-model.md)    
-
-
-
-

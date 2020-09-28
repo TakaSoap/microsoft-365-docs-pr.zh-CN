@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
 description: 获取 Microsoft 365 组报告以了解有关组及其活动的信息。
-ms.openlocfilehash: 1d329efa4fe7cdf12b6c7452b6480d237fb3d5c1
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b45582388103e843e2893cfceb9aa1106cb9ce76
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948984"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295090"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>Microsoft 365 组-管理中心中的 microsoft 365 报告
 
@@ -37,8 +37,8 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
-    
-2. 从 " **选择报告** " 下拉项中，选择 " **Office 365** \> **组活动**"。
+2. 从 "选项" 中，选择 "活动用户" 下的 " **查看更多** **-Microsoft 365 服务**"。
+3. 从 " **选择报告** " 下拉项中，选择 " **Office 365** \> **组活动**"。
   
 ## <a name="interpret-the-groups-report"></a>解释组报告
 
@@ -61,4 +61,3 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |11x17  <br/> |您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。  <br/> |
 |||
    
-

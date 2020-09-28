@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 了解在设置自定义域时，通过确保正确设置了 DNS 记录来跟踪你遇到的任何问题。
-ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8d46d681e44a0bebd0a9571d18ffa95e1e554dc8
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560247"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295042"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>查找并修复添加域或 DNS 记录之后出现的问题
 
@@ -36,7 +36,7 @@ ms.locfileid: "46560247"
 将您的域设置为与 Microsoft 365 配合使用可能会非常困难。 DNS 系统要求严格，很难使用，并且，你的域的 DNS 设置会影响重要的业务活动，如电子邮件！
 
 > [!NOTE]
-> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置**  >  **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作 (三个点) "，然后选择 "**检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
+> 您可以通过检查域的状态检查是否存在问题。 转到 "**设置**  >  **域**" 并查看 "**状态**" 列中的通知。 如果出现问题，请选择 "更多操作 (三个点) "，然后选择 " **检查运行状况**"。 打开的窗格将描述您的域中出现的任何问题。
   
 ## <a name="whats-going-on"></a>What's going on?
 
@@ -73,14 +73,14 @@ ms.locfileid: "46560247"
 
 将域添加到 Microsoft 365 时，通常会更新您的域的 MX 记录 (您或 Microsoft 365) 指向 Microsoft 365，发送到该域的所有电子邮件都将开始进入 Microsoft 365。 请确保您已在 Microsoft 365 中为每个在您的域中有电子邮件的用户创建了邮箱，然后再更改 MX 记录。
   
-如果您不想将域中每个人的电子邮件移至 Microsoft 365，该怎么办？ 您可以采取步骤[仅使用几个电子邮件地址来试用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。
+如果您不想将域中每个人的电子邮件移至 Microsoft 365，该怎么办？ 您可以采取步骤 [仅使用几个电子邮件地址来试用 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>无法确认非盈利或学校帐户状态？
 <a name="BKMK_validateAcct"> </a>
 
 在以下几种情况下，只需验证组织的域，而不会设置任何服务。 例如，若要证明你的组织符合学校订阅的 Microsoft 365。
   
-请查看[验证 Microsoft 365 域中的指南，以证明所有权、非盈利或教育状态，或激活 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)以确保您已完成所有必需的步骤。 这在每种情况下稍有不同。 
+请查看 [验证 Microsoft 365 域中的指南，以证明所有权、非盈利或教育状态，或激活 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 以确保您已完成所有必需的步骤。 这在每种情况下稍有不同。 
   
 ## <a name="services-not-working-with-your-domain"></a>这些服务对你的域不起作用？
 <a name="BKMK_Test"> </a>
@@ -88,7 +88,7 @@ ms.locfileid: "46560247"
 我们可帮助你跟踪域的 DNS 设置问题。 Microsoft 365 中的 "域" 疑难解答程序将向您显示需要修复的任何记录，以及记录需要设置到的确切内容。 
 
 > [!TIP]
-> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看[您可以使用 Microsoft 365 的不同邮件流方案](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices)，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
+> 已正确设置你的 DNS，但桌面版 Outlook 的邮件仍然无法工作？ 请查看 [您可以使用 Microsoft 365 的不同邮件流方案](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) ，以确保您已为您的企业正确设置了项目。 或发送电子邮件到下面的地址以获取更多疑难解答帮助：[修复 Outlook 问题](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>无法正常访问你的网站？
 <a name="BKMK_Website"> </a>
@@ -97,5 +97,10 @@ ms.locfileid: "46560247"
   
 - 用户无法在 www.mydomain.com 上访问您的网站：[跟踪网站问题](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
-- 您不能更新 A 记录或 CNAME 记录以指向您的网站：[在 Microsoft 365 中更新自定义 DNS 记录](../dns/add-or-edit-custom-dns-records.md)
+- 您不能更新 A 记录或 CNAME 记录以指向您的网站： [在 Microsoft 365 中更新自定义 DNS 记录](../dns/add-or-edit-custom-dns-records.md)
+
+## <a name="related-content"></a>相关内容
+
+[疑难解答：验证的域更改时的审核数据](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+
     

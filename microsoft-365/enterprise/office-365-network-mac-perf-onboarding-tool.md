@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试工具 (预览) '
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200813"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295522"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 网络连接测试工具 (预览) 
 
@@ -205,7 +205,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 显示 UDP 数据包丢失量，以10秒测试音频呼叫从客户端到 Microsoft 团队服务前向门。 对于 pass，这应低于 **1.00%** 。
 
-### <a name="latency"></a>延迟
+#### <a name="latency"></a>延迟
 
 显示度量的 UDP 延迟，该延迟应低于 **100 毫秒**。
 
@@ -239,7 +239,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 ![网络运行状况状态](../media/m365-mac-perf/m365-mac-perf-status-page.png)
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 以下是一些常见问题的解答。
 

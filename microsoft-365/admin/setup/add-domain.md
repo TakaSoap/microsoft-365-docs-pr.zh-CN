@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 通过在 DNS 主机上添加 DNS 记录，将您的域添加到 Microsoft 365 管理中心中的 Microsoft 365。 安装向导将引导您完成该过程。
-ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 09a66b9ac4f97a076d71dd7f259678181378ae48
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775155"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295018"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>将域添加到 Microsoft 365
 
@@ -135,7 +135,7 @@ ms.locfileid: "47775155"
 - [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
-- [WordPress](https://wordpress.com/)
+- [WordPress.com](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - 使用 SecureServer DNS 托管) 的 SecureServer 或 WildWestDomains (GoDaddy 经销商

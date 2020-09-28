@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662228"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295054"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任何域注册机构设置 Microsoft 365
 
@@ -122,8 +122,8 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 |:-----|:-----|
 |首选名称服务器  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |次要名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|第三个名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|第四个名称服务器  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|第三个名称服务器  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|第四个名称服务器  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > 最好添加所有四条记录，但如果您的注册机构仅支持两个，请添加 **ns1.bdm.microsoftonline.com** 和 **ns2.bdm.microsoftonline.com**。 

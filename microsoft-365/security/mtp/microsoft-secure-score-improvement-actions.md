@@ -1,7 +1,7 @@
 ---
 title: 通过 Microsoft 安全分数评估安全状况
 description: 介绍如何执行操作以改进 Microsoft 365 安全中心中的 Microsoft 安全分数。
-keywords: 安全性、恶意软件、Microsoft 365、M365、安全分数、安全中心、改进操作
+keywords: microsoft 安全分数，安全分数，office 365 安全分数，microsoft 安全分数，microsoft 365 安全中心，改进操作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7049845b4c1b240c5ecc72b4f2ebac1acecfbaf6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203674"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295124"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 

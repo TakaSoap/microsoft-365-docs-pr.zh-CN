@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199213"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295534"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -364,8 +364,13 @@ ms.locfileid: "48199213"
 如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：
 
 - **开始日期** 和 **结束日期**
-- 检测值
-- **受** (OFFICE 365 ATP) ： **atp** 或 **EOP**。 请注意，"可筛选" 属性在 **View data by： Content \> 恶意软件**中不可用。
+- **检测**
+- **受以下保护**： **ATP** 或 **EOP**
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **域**
+
+> [!NOTE]
+> **受保护的**、 **标记** 和 **域** 仅为 Office 365 ATP。 视图数据中不提供以下可筛选属性 **：内容 \> 恶意软件**。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的详细信息表格视图
 
@@ -378,7 +383,12 @@ ms.locfileid: "48199213"
   - **指导者**
   - **恶意软件名称**
 
-- **数据查看方式：概述**：没有可用的 **视图详细信息表** 按钮。
+如果单击此视图中的 " **筛选器** "，则可以使用以下筛选器修改报表：
+
+- **开始日期** 和 **结束日期**
+- **检测**
+
+**数据查看方式：概述**：没有可用的 **视图详细信息表** 按钮。
 
 - 所有其他图表：
 
@@ -389,12 +399,16 @@ ms.locfileid: "48199213"
   - **检测人**
   - **传递状态**
   - **泄露来源**
+  - **Tags**
 
 如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：
 
 - **开始日期** 和 **结束日期**
-- 检测值
-- **受** (OFFICE 365 ATP) ： **atp** 或 **EOP**。 请注意，"可筛选" 属性在 **View data by： Content \> 恶意软件**中不可用。
+- **检测**
+- **受** (OFFICE 365 ATP) ： **atp** 或 **EOP**
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **域**
+- **收件人** (请注意，此可筛选属性仅在 "详细信息" 表格视图中可用) 
 
 ## <a name="top-malware-report"></a>主要恶意软件报告
 

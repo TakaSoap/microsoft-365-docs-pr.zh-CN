@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 了解如何从加入 Windows 10 设备的 Azure Active Directory 中获取本地资源（如业务线应用、文件共享和打印机）的访问权限。
-ms.openlocfilehash: 9b83781afee746b06bbdf90962de0f55ffbcb118
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2144268f5cbab67c39d5902622c61c0c35e6481c
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307485"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295302"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>从 Microsoft 365 商业高级版中的 Azure AD 加入设备访问本地资源
 
@@ -36,9 +36,6 @@ ms.locfileid: "47307485"
 
 若要了解详细信息，请参阅 [Azure Active Directory 中的设备管理简介](https://docs.microsoft.com/azure/active-directory/device-management-introduction)。
 以下各节也汇总了这些步骤。
-
-> [!IMPORTANT]
-> 此过程仅适用于 OAuth 和 NTLM。 Kerberos 不受支持。
  
 ## <a name="run-azure-ad-connect"></a>运行 Azure AD Connect
 
