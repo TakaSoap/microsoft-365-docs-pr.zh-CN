@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195647"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305362"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>规划你的试点 Microsoft 威胁防护项目 
 
@@ -76,9 +76,9 @@ ms.locfileid: "48195647"
 
 将计划的所有元素组合在一起的一种方法就是创建记分卡。 请参阅下面的示例记分卡：
 
-|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**得分**|**Notes**|
+|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**分**|**Notes**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|事件管理|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft 云应用安全 (可选) |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) |[模拟攻击](mtp-pilot-simulate.md) <br></br>[调查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |调查人员可以了解事件的范围和影响并管理事件||||
+|事件管理|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft 云应用安全 (可选) |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) |[模拟攻击](mtp-pilot-simulate.md) <br></br>[调查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |调查人员可以了解事件的范围和影响并管理事件||||
 |AutoIR|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) <br>启用 AutoIR  |[模拟攻击](mtp-pilot-simulate.md) <br></br>[自动调查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威胁防护会自动修正警报和事件||||
 |高级搜寻|-Microsoft 威胁防护 </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab)|[高级搜寻方案](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |调查人员可以通过高级搜索、旋转受影响的实体和创建自定义检测来查找数据||||
 

@@ -6,6 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,12 +14,12 @@ search.appverid:
 ms.collection:
 - microsoft-365-docs-pr
 description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格的安全配置等，以便您可以了解您拥有的内容，以及如何保护属性。
-ms.openlocfilehash: 66a83d99197b8af98ef191b348b1303a8233a990
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 680066f58850f59523ae6fb8a8168459dd813fc1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299291"
+ms.locfileid: "48304842"
 ---
 # <a name="office-365-security-outline"></a>Office 365 安全大纲
 
@@ -50,7 +51,7 @@ Office 365 安全构建在 EOP 提供的核心保护基础之上。 EOP 存在�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP 和 ATP 以及它们与服务重点之间的关系，包括电子邮件身份验证的注释。":::
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="Placeholder graphic":::
 
 虽然这些服务中的每一项都强调了保护、检测、调查和响应等具体目标，但 ***所有*** 服务都可以执行 ***任何*** 保护、检测、调查和响应的目标。
 
@@ -65,7 +66,7 @@ Office 365 安全性的核心是 EOP 保护。 ATP P1 包含 EOP 中的。 ATP P
 
 ## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>从 EOP 到 ATP 的 Office 365 安全阶梯
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP 和 ATP 及其特定优势，分别是 "保护" 和 "检测" 以进行调查和响应。此外，电子邮件身份验证配置会根据需要显示 EOP up。":::
+:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="Placeholder graphic":::
 
 > [!IMPORTANT]
 > 了解有关这些页面的详细信息： [Exchange Online protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)和 [高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)。
@@ -81,7 +82,7 @@ Office 365 安全性的核心是 EOP 保护。 ATP P1 包含 EOP 中的。 ATP P
 
 |阻止/检测  |调查  |响应  |
 |---------|---------|---------|
-| 技术包括：<ul><li>垃圾邮件 (spam)</li><li>诈骗</li><li>受到</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>假阳性和漏报的管理员和用户提交</li><li>允许/阻止 Url 和文件</li><li>报告</li></u1>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零小时自动清除 (ZAP) </li><li>"允许" 和 "阻止" 列表的优化和测试</li>|
+| 技术包括：<ul><li>垃圾邮件 (spam)</li><li>诈骗</li><li>受到</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>假阳性和漏报的管理员和用户提交</li><li>允许/阻止 Url 和文件</li><li>报表</li></u1>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零小时自动清除 (ZAP) </li><li>"允许" 和 "阻止" 列表的优化和测试</li>|
 
 如果您想要深入了解 EOP，请 **[跳转到本文](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**。
 

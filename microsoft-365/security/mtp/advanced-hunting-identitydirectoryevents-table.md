@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196841"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305278"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196841"
 
 **适用于：**
 - Microsoft 威胁防护
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `IdentityDirectoryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含与运行 ACTIVE Directory (AD) 的本地域控制器有关的事件。 此表捕获各种与标识相关的事件，如密码更改、密码过期和用户主体名称 (UPN) 更改。 它还捕获域控制器上的系统事件，如计划任务和 PowerShell 活动。 使用此参考来构建从此表返回信息的查询。
 
@@ -57,7 +55,7 @@ ms.locfileid: "48196841"
 | `AccountDomain` | string | 帐户的域 |
 | `AccountUpn` | string | 帐户的用户主体名称 (UPN)  |
 | `AccountSid` | string | 帐户的安全标识符 (SID)  |
-| `AccountObjectId` | string | Azure AD 中的帐户的唯一标识符 |
+| `AccountObjectId` | string | Azure Active Directory 中的帐户的唯一标识符 |
 | `AccountDisplayName` | string | 通讯簿中显示的帐户用户的名称。 通常是给定的或名的名称、中间初始名称和姓氏的组合。 |
 | `DeviceName` | string | 设备 (FQDN) 的完全限定的域名称 |
 | `IPAddress` | string | 通信期间分配给设备的 IP 地址 |

@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 设置项目 Cortex 中的内容理解
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294824"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304776"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -107,27 +107,7 @@ ms.locfileid: "48294824"
 
 您可以使用 [Ai 生成器计算器](https://powerapps.microsoft.com/ai-builder-calculator)估计适合您的 ai 生成器容量。
 
-1. 请转到 [Power Platform 管理中心](https://admin.powerplatform.microsoft.com/resources/capacity) 查看你的学分和使用情况。
-
-    > [!NOTE]
-    > 在 SharePoint 文档库上启用此设置不会影响应用于库的现有模型，也不会影响将文档理解模型应用于库的功能。 
-    
-2. 在 " **创建内容中心** " 页上，您可以创建一个 SharePoint 内容中心网站，用户可以在其中创建和管理文档理解模型。 </br>
-    a. 对于 " **网站名称**"，键入要用于内容中心网站的名称。</br>
-    b. **网站地址**显示网站的 URL （基于网站名称）。</br>
-
-    > [!NOTE] 
-    > 虽然您可以选择任何受支持的语言，但只能为英语创建内容理解模型。</br>
-
-      ![创建内容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. 选择“**下一步**”。
-
-4. 在 " **完成并检查** " 页上，查看您选择的设置并选择进行更改。 如果您对所做的选择感到满意，请选择 " **激活**"。
-
-5. **内容理解激活**的页面将显示，确认系统添加了表单处理首选项并创建了内容中心网站。 选择“完成”****。
-
-6. 您将返回到 " **自动内容理解** " 页面。 在此页面中，您可以选择 " **管理** " 以对配置设置进行任何更改。 
+请转到 [Power Platform 管理中心](https://admin.powerplatform.microsoft.com/resources/capacity) 查看你的学分和使用情况。
 
 ## <a name="see-also"></a>另请参阅
 

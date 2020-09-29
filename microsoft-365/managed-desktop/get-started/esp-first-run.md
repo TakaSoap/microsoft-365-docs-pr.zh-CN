@@ -1,6 +1,6 @@
 ---
-title: 首次运行体验 with Autopilot 和注册状态页面
-description: 如何部署 ESP 体验、使用的设置以及异常
+title: 使用 Autopilot 和注册状态页的首次运行体验
+description: 如何部署 ESP 体验、使用的设置以及配置更改
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -10,14 +10,14 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299235"
+ms.locfileid: "48305266"
 ---
-# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>首次运行体验 with Autopilot 和注册状态页面
+# <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和注册状态页的首次运行体验
 
 Microsoft 托管桌面使用 [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) 和 Microsoft Intune 的 [注册状态页 (ESP) ](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) 为您的用户提供最佳的首次运行体验。
 
@@ -49,7 +49,7 @@ Microsoft 托管桌面在用于您的用户设备的 Autopilot 配置文件中�
 |输入名称     | MMD-% RAND：11%        |
 
 > [!NOTE]
-> 仅对启用了 ESP 的客户启用 "白色 glove" rovisioning，Microsoft 托管桌面目前不支持此功能。
+> 仅对启用了 ESP 的客户启用 "白色 glove" 设置，Microsoft 托管桌面目前不支持此功能。
 
 ## <a name="enrollment-status-page-settings"></a>注册状态页面设置
 
@@ -89,15 +89,15 @@ Microsoft 托管桌面在注册状态页面体验中使用以下设置：
 
 Microsoft 托管桌面目前不支持 Windows Autopilot 的 "白色 glove" 功能。
 
-## <a name="exceptions"></a>Exceptions
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>更改为 Autopilot 和注册状态页面设置
 
-如果 Microsoft 托管桌面使用的安装程序不能完全满足您的需求，则可以为异常请求文件。 若要执行此操作，请参阅 [请求异常](../service-description/customizing.md#request-an-exception)中的详细信息。 下面是可能需要的异常类型的一些示例：
+如果 Microsoft 托管桌面使用的安装程序不能完全满足您的需求，则可以通过 [管理门户](https://portal.azure.com/)为其提供支持票证。 下面是可能需要的配置类型的一些示例：
 
-### <a name="autopilot-exception"></a>Autopilot 异常
+### <a name="autopilot-settings-change"></a>Autopilot 设置更改
 
 您可能需要请求一个不同的设备名称模板。 但是，您不能更改部署模式，将 "加入 Azure" 设置为 "隐私设置" 或 "用户帐户类型"。
 
-### <a name="enrollment-status-page-exception"></a>注册状态页例外
+### <a name="enrollment-status-page-settings-change"></a>注册状态页面设置更改
 
 - "当安装时间超过指定的分钟数时显示错误" 设置的较长分钟数。
 - 显示的错误消息
