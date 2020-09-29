@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d4083e48033787ca46ad2374ea461b4a77d21e0d
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
+ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295741"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48299235"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>首次运行体验 with Autopilot 和注册状态页面
 
@@ -46,9 +46,10 @@ Microsoft 托管桌面在用于您的用户设备的 Autopilot 配置文件中�
 |用户帐户类型     |  标准       |
 |允许将白色 Glove OOBE     |  是       |
 |应用设备名称模板     | 是        |
-|输入名称     | MMD-% RAND：7%        |
+|输入名称     | MMD-% RAND：11%        |
 
-
+> [!NOTE]
+> 仅对启用了 ESP 的客户启用 "白色 glove" rovisioning，Microsoft 托管桌面目前不支持此功能。
 
 ## <a name="enrollment-status-page-settings"></a>注册状态页面设置
 
