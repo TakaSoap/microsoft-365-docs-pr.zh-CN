@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器提供了用于建立与国家、地区和行业法规、标准和法律相适应的评估的模板。
-ms.openlocfilehash: 548844e3850757484f9ee1d455d6ecd18bcb939c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9bce625bd8733570a62e3b5f7685cace84005b69
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204299"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48294792"
 ---
 # <a name="compliance-manager-templates-list"></a>合规性管理器模板列表
 
@@ -134,13 +134,8 @@ ms.locfileid: "48204299"
 - 印度尼西亚-定律 11/2008 (Microsoft 365) 
 - 印度尼西亚 Peraturan Pemerintah 不为 82 Tahun 2012-政府法规-Data Protection 规章 (Microsoft 365) 
 - [IRS-P1075](offering-irs-1075.md) (Microsoft 365) 
-- ISO 15489 (Microsoft 365) 
-- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365) 
-- ISO 27005:2018 (Microsoft 365) 
 - [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365) 
-- ISO 31000:2018 (Microsoft 365) 
 - [ISO/IEC 27018:2014](offering-iso-27018.md)
-- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365) 
 - 以色列隐私保护 (将数据传输到国外的数据库) 法规 (Microsoft 365) 
 - ITU X. 1052 Information Security Management Framework (Microsoft 365) 
 - 日本-在禁止未授权的计算机访问 (Microsoft 365) 时执行操作

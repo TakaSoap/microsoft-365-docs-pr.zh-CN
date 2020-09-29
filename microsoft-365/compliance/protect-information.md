@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 通过使用 Microsoft 365 合规性，实现 Microsoft 信息保护 (MIP) 功能，以帮助您发现、分类和保护其生存或传播的敏感信息。
-ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 66938804a119022b6b44664ecd8f040e3c56123f
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277525"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295464"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息保护
 
@@ -50,10 +50,10 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 
 |功能|它会解决什么问题？|入门|
 |:------|:------------|---------------------|:----------------------------|
-|[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案，以在您的组织内部和外部传输数据时对数据进行标记和保护 <br /><br />示例方案： [在 POWER BI 中应用和查看敏感度标签，并在导出数据时对数据进行保护](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 敏感度标签入门](get-started-with-sensitivity-labels.md) |
+|[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案，以在您的组织内部和外部传输数据时对数据进行标记和保护 <br /><br />示例方案： [在 POWER BI 中应用和查看敏感度标签，并在导出数据时对数据进行保护](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ 敏感度标签入门](get-started-with-sensitivity-labels.md) |
 |[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展敏感度标签以获取其他特性和功能，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型<br /><br /> 示例其他功能： [Azure 信息保护统一标签客户端的自定义配置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标签客户端管理员指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[双密钥加密](double-key-encryption.md)| 在所有情况下，只有您可以对受保护的内容进行解密，或者需要在地理边界内保留加密密钥 | [部署双密钥加密](double-key-encryption.md)|
-|[Office 365 邮件加密](ome.md) (OME) | 对发送到任何设备上任何用户的电子邮件和附加文档进行加密，以便只有授权的收件人才能阅读电子邮件信息  <br /><br />示例方案： [撤消由高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md) | [开始使用 Office 365 邮件加密](set-up-new-message-encryption-capabilities.md)|
+|[双密钥加密](double-key-encryption.md)| 在所有情况下，只有您可以对受保护的内容进行解密，或者需要在地理边界内保留加密密钥 | [部署双密钥加密](double-key-encryption.md#deploy-dke)|
+|[Office 365 邮件加密](ome.md) (OME) | 对发送到任何设备上任何用户的电子邮件和附加文档进行加密，以便只有授权的收件人才能阅读电子邮件信息  <br /><br />示例方案： [撤消由高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
 |[使用客户密钥进行服务加密](customer-key-overview.md) | 防止未经授权的系统或人员查看数据，并补充 Microsoft 数据中心中的 BitLocker 磁盘加密 | [设置 Office 365 的客户密钥](customer-key-set-up.md)|
 |[SharePoint 信息权限管理 (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便在用户签出文档时，已下载的文件受到保护，以便只有授权的用户可以根据您指定的策略查看和使用该文件 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [权限管理连接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |仅对使用 Exchange 或 SharePoint Server 的现有本地部署或运行 Windows Server 和文件分类基础结构的文件服务器的保护， (FCI)  | [部署 RMS 连接器的步骤](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
