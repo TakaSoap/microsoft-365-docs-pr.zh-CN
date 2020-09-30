@@ -1,4 +1,4 @@
-- name: 内容了解入门
+- name: Microsoft SharePoint Syntex 入门
   items:
     - name: Microsoft SharePoint Syntex 简介
       href: microsoft-sharepoint-syntex-overview.md
@@ -16,7 +16,7 @@
       href: create-a-classifier.md
     - name: 创建提取程序
       href: create-an-extractor.md
-    - name: 解释类型概述
+    - name: 解释类型
       href: explanation-types-overview.md
     - name: 应用模型
       href: apply-a-model.md
@@ -26,9 +26,11 @@
       href: apply-a-retention-label-to-a-model.md
     - name: 模型使用情况分析
       href: model-usage-analytics.md
+    - name: 创建提取器时利用术语存储分类
+      href: leverage-term-store-taxonomy.md
 - name: 设置和管理
   items:
-    - name: 设置内容了解
+    - name: 设置内容理解
       href: set-up-content-understanding.md
     - name: 图像标记
       href: image-tagging.md
