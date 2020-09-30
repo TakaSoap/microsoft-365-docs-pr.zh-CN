@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235534"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322195"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
@@ -157,8 +157,8 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 3
    1. **Address** (必需的) ：办公室的物理地址
    1. **纬度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
    1. **经度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
-   1. **出局 IP 地址范围 1-5** (可选) ：对于每个区域，输入电路名称，后跟一个以空格分隔的有效 IPv4 或 IPv6 CIDR 地址列表。 这些值用于区分使用相同 LAN 子网 IP 地址的多个办公室位置。
-   1. **LanIps** (必需的) ：列出在此办公室位置使用的 LAN 子网区域。
+   1. **出局 IP 地址范围 1-5** (可选) ：对于每个区域，输入电路名称，后跟一个以空格分隔的有效 IPv4 或 IPv6 CIDR 地址列表。 这些值用于区分使用相同 LAN 子网 IP 地址的多个办公室位置。 传出 IP 地址范围全部必须为/24 个网络大小，输入中不包含/24。
+   1. **LanIps** (必需的) ：列出在此办公室位置使用的 LAN 子网区域。 LAN 子网 Id 需要包含 CIDR 网络大小，其中的网络大小可以介于/8 和/29 之间。 可以用逗号或分号分隔多个 LAN 子网范围。
 1. 添加办公室位置并保存文件后，单击 "**上载完成**时间" 字段旁边的 "**浏览**" 按钮，然后选择保存的 CSV 文件。
 1. 将自动验证文件。 如果存在验证错误，您将看到错误消息 _导入文件中存在一些错误。请查看错误，更正导入文件，然后重试。_ 有关特定字段验证错误的列表，请单击链接的 " **打开错误详细信息** "。
 
@@ -168,7 +168,7 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 3
 
    ![CSV 导入就绪消息](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>什么是 Microsoft 365 服务的前盖？
 
