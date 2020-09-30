@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
+description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197345"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286038"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全与合规中心搜索审核日志
+# <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
-需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Office 365 中搜索以下类型的[用户和管理员活动](#audited-activities)：
+需要了解用户是否查看了特定文档或从其邮箱中清除了某项？ 如果是，可以使用安全与合规中心搜索统一的审核日志，以查看组织中的用户和管理员活动。 为什么是统一的审核日志？ 因为你可以在 Microsoft 365 中搜索以下类型的[用户和管理员活动](#audited-activities)：
 
 - SharePoint Online 和 OneDrive for Business 中的用户活动
 
@@ -36,7 +36,7 @@ ms.locfileid: "48197345"
 
 - SharePoint Online 中的管理员活动
 
-- Azure Active Directory 中的管理员活动（Office 365 的目录服务）
+- Azure Active Directory 中的管理员活动（Microsoft 365 的目录服务）
 
 - Exchange Online 中的管理员活动（Exchange 管理员审核日志记录）
 

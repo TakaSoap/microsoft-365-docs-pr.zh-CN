@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208808"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304812"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -59,7 +59,7 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器为企业版 E5 客户提供了此规则的预建评估。 在合规性管理器的“**评估模板**”页面中找到用于建立评估的模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器为企业版 E5 客户提供了此规则的预建评估。 在合规性管理器的“**评估模板**”页面中找到用于建立评估的模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="data-subject-request-dsr"></a>数据主体请求 (DSR)
 
@@ -129,7 +129,7 @@ DPIA 包含的 GDPR 要求：
 根据 GDPR，如果数据处理可能会导致用户个人权利和自由面临高风险（尤其是当使用新技术处理数据时），控制者必须在处理数据前先执行 DPIA。 GDPR 列出了以下必须执行 DPIA 的情况（并非详尽）：
 
 - 为了执行分析和类似活动而自动处理数据，这些活动会造成法律影响或以类似方式显著影响数据主体；  
-- 处理大量特殊类别的个人数据（透露种族或族裔、政治观点等的数据），或与刑事犯罪和违法行为有关的数据；  
+- 处理大量特殊类别的个人数据（透露种族或族裔、政治观点等内容的数据），或与刑事犯罪和违法行为有关的数据；  
 - 大规模地系统监视公开区域。  
 
 GDPR 还规定，如果无法确定充足的流程来最大限度地降低数据主体面临的高风险，必须先咨询数据保护机构 (DPA)，再开始处理任何数据。
@@ -268,7 +268,7 @@ GDPR 通过一组“数据主体权利”为欧盟居民提供了对其个人数
 
 GDPR 规范了“个人数据”的收集、存储、使用和共享。 根据 GDPR，个人数据的定义很宽泛，即指与已识别或可识别的自然人相关的任何数据。
 
-个人数据包括但不限于联机标识符（例如，IP 地址）、员工信息、销售数据库、客户服务数据、客户反馈表、位置数据、生物识别数据、闭路电视录像、忠诚计划记录、健康和财务信息等。 它甚至包括看似不属于个人的信息（例如没有人物的风景照），其中该信息通过帐号或唯一代码链接到可识别的个人。 如果可将假名链接到特定个人，则经过假名处理的个人数据甚至也可以是个人数据。 
+个人数据包括但不限于联机标识符（例如，IP 地址）、员工信息、销售数据库、客户服务数据、客户反馈表、位置数据、生物识别数据、闭路电视录像、忠诚计划记录、健康和财务信息等。 它甚至包括看似不属于个人信息的信息（例如没有人物的风景照），其中该信息可通过帐号或唯一代码关联至可识别的个人。 如果可将假名链接到特定个人，则经过假名处理的个人数据甚至也可以是个人数据。 
 
 与处理“普通”个人数据相比，处理某些“特殊”类别的个人数据（例如，透露某人的种族或族裔或与其健康或性取向有关的个人数据）将受到更为严格的监管。 评估个人数据非常特殊，因此我们建议聘请专家来评估你的具体情况。
 

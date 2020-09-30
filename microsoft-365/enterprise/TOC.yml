@@ -334,12 +334,14 @@
           href: during-and-after-your-data-move.md
         - name: 数据移动常见问题解答
           href: data-move-faq.md
-        - name: 德国 Microsoft 云 - Office 365 迁移计划
-          href: ms-cloud-germany-transition.md
-        - name: 德国 Microsoft 云 - 选择加入迁移
-          href: ms-cloud-germany-migration-opt-in.md
         - name: 客户数据的存储位置
           href: o365-data-locations.md
+        - name: Microsoft Cloud Deutschland
+          items:
+            - name: 概述
+              href: ms-cloud-germany-transition.md
+            - name: 选择加入迁移
+              href: ms-cloud-germany-migration-opt-in.md
 - name: 标识
   items:
     - name: 路线图

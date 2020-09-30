@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 942097033fe5ed97449dbf3be93e8153f91a7961
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417896"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305022"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>数据保护影响评估：使用 Microsoft Office 365 的数据控制者指南 
 
@@ -29,7 +29,7 @@ ms.locfileid: "47417896"
 
 此文档的目的是为数据控制者提供 Office 365 的相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息（如果需要）。它适用于 Office 365 应用程序和服务，包括但不限于 Exchange Online、SharePoint Online、OneDrive for Business、Yammer、Skype for Business 和 Power BI（例如，请参见 Office 365 数据主体请求指南的表 1 和表 2）。 
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 — 确定是否需要 DPIA
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>第 1 部分：确定是否需要 DPIA
 
 GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估，“用于在考虑某种处理类型的本质、范围、环境和目的的情况下评估该处理类型（尤其是使用新技术的处理类型）是否会自然人的权力和自由产生高风险。”它进一步规定了指示此类高风险的特定因素（将在下表中讨论）。根据控制者具体实施和使用 Office 365 的情况，确定是否需要 DPIA 时，数据控制者应考虑以下因素，以及任何其他相关因素。
 
@@ -44,7 +44,7 @@ GDPR 第 35 条规定需要由数据控制者来创建数据保护影响评估�
 >[!Note]
 ><sup>1</sup> 关于处理“大量”数据的标准，GDPR 的第 91 篇声明陈述如下：“如果涉及由个体医生、其他医疗保健专业人员或律师来处理患者或客户的个人数据，则个人数据的处理不应视为处理大量数据。 在这种情况下，不得强制进行数据保护影响评估。”
 
-## <a name="part-2--contents-of-a-dpia"></a>第 2 部分 — DPIA 的内容
+## <a name="part-2-contents-of-a-dpia"></a>第 2 部分：DPIA 的内容
 
 第 35(7) 条规定，数据保护影响评估应指定处理的目的和预期处理的系统化说明。  在 Microsoft 的 DPIA 中，此类系统化说明包括所处理数据的类型、数据保留时间、数据存储位置和传输位置以及有权访问数据的第三方等因素。  此外，DPIA 还必须包括：
 

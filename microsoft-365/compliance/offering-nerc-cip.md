@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f4394a66242a981ab179b07f45e82132f68968d7
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208174"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305352"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>北美电力可靠性协会 (NERC)
 
@@ -83,11 +83,12 @@ NERC ERO Enterprise [发布了](https://www.nerc.com/pa/comp/guidance/Pages/defa
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
 - [NERC 合规性指南](https://www.nerc.com/pa/comp/guidance/)
+- [NERC 网络安全 - 供应链风险管理](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [NERC 合规性和实施](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [NERC 组织和认证](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft 与 FedRAMP](offering-fedramp.md)
