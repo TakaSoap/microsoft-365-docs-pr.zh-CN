@@ -1,6 +1,6 @@
 ---
-title: 如何在 Office 365 自动调查和响应中报告误报或漏报
-description: Office 365 高级威胁防护是否错过或错误地检测到了什么？ 了解如何向 Microsoft 提交误报或漏报以进行分析。
+title: 如何在 Microsoft Defender for Office 365 中进行自动调查后报告误报或漏报
+description: Microsoft Defender for Office 365 中的无线检测到缺少或错误地检测到了什么？ 了解如何向 Microsoft 提交误报或漏报以进行分析。
 keywords: 自动化、调查、警报、触发器、操作、修正、误报、假负
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196069"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308928"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何报告自动调查和响应功能中的误报/否定
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196069"
 
 
 **适用于：**
-- Office 365 高级威胁防护
+- Microsoft Defender for Office 365
 
 [Office 365 中的自动调查和响应 (空中) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可执行下列操作：
 - [向 Microsoft 报告误报/负数，](#report-a-false-positivenegative-to-microsoft-for-analysis)或者
@@ -43,7 +44,7 @@ ms.locfileid: "48196069"
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>将误报/负数报告给 Microsoft 进行分析
 
-如果 Office 365 AIR 错过了电子邮件、电子邮件附件、电子邮件中的 URL 或 Office 文件中的 URL，则可以 [将可疑的垃圾邮件、网络钓鱼、url 和文件提交到 Microsoft For office 365 扫描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)。
+如果 Microsoft Defender for Office 365 中的无线版错过了电子邮件、电子邮件附件、电子邮件中的 URL 或 Office 文件中的 URL，则可以 [将可疑的垃圾邮件、网络钓鱼、url 和文件提交到 Microsoft For office 365 扫描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)。
 
 您还可以 [将文件提交给 Microsoft 进行恶意软件分析](https://www.microsoft.com/wdsi/filesubmission)。
 
@@ -51,7 +52,7 @@ ms.locfileid: "48196069"
 
 如果某个警报由合法使用触发，或者该警报不准确，则可以 [在云应用安全门户中管理警报](https://docs.microsoft.com/cloud-app-security/managing-alerts)。
 
-如果您的组织使用的是除 Office 365 之外的 [Microsoft Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection) ，并且文件、IP 地址、URL 或域在设备上被视为恶意软件，尽管它是安全的，但您可以 [创建一个自定义指示器，为设备启用 "允许" 操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
+如果您的组织使用的是 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection) （除了 Office 365），并且文件、IP 地址、URL 或域在设备上被视为恶意软件，尽管它是安全的，但您可以 [使用设备的 "允许" 操作创建自定义指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
 
 ## <a name="undo-a-remediation-action"></a>撤消修正操作
 
@@ -66,7 +67,7 @@ ms.locfileid: "48196069"
 
 ****
 
-|方案|撤消选项|了解详细信息|
+|方案|撤消选项|了解更多|
 |---|---|---|
 |将电子邮件路由到用户的 "垃圾邮件" 文件夹|-将邮件移动到用户的 "已删除邮件" 文件夹<br/>-将邮件移动到用户的收件箱 <br/>-删除邮件|[查找并调查 Office 365 中提供的恶意电子邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
 |已隔离电子邮件或文件|-释放电子邮件或文件 <br/>-删除电子邮件或文件|[以 Office 365 中的管理员身份管理隔离的邮件和文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
@@ -90,6 +91,6 @@ ms.locfileid: "48196069"
 
 ## <a name="related-articles"></a>相关文章
 
-[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[开始使用 Office 365 中的自动调查和响应 (AIR) ](office-365-air.md)
+[Microsoft Defender for Office 365 中的空气](office-365-air.md)

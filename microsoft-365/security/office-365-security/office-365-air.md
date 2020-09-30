@@ -8,27 +8,29 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 09/29/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 开始使用 Office 365 中的自动调查和响应功能高级威胁防护计划2。
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 开始在 Microsoft Defender for Office 365 中使用自动调查和响应功能。
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202647"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308883"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>开始使用 Office 365 中的自动调查和响应 (AIR) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-[Office 365 高级威胁防护](office-365-atp.md) (OFFICE 365 ATP) Plan 2 包括功能强大的自动化调查和响应 (空气) 功能，可节省安全运营团队的时间和精力。 随着警报的触发，安全操作团队可以对这些警报进行检查、设置优先级和响应。 跟上传入警报的数量的持续很大。 自动执行其中一些可能会有所帮助。 借助 AIR，安全操作团队可以将精力集中在优先级较高的任务上，而不会失去触发警报的可见性。
+[Microsoft Defender For Office 365](office-365-atp.md) 包括功能强大的自动化调查和响应 (空中) 功能，可节省安全运营团队的时间和精力。 随着警报的触发，安全操作团队可以对这些警报进行检查、设置优先级和响应。 跟上传入警报的数量的持续很大。 自动执行其中一些可能会有所帮助。 借助 AIR，安全操作团队可以将精力集中在优先级较高的任务上，而不会失去触发警报的可见性。
 
 本文包括以下内容：
 - 空气的 [整体流量](#the-overall-flow-of-air) ;
@@ -73,7 +75,7 @@ ms.locfileid: "48202647"
 
 ## <a name="how-to-get-air"></a>如何获取空中
 
-Office [365 高级威胁防护计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)中包含 OFFICE 365 AIR 功能。 但是， [应配置 Office 365 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) ，以使空气按预期方式工作。 此外，请务必查看并可能配置组织的 [通知策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 
+在 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)中包含空中功能。 但是， [必须配置](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) 您的策略，以使空气按预期方式工作。 此外，请务必查看并可能配置组织的 [通知策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 
 
 Microsoft 365 提供了许多内置的警报策略，可帮助确定 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 有几个 [默认的警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) 可以触发自动调查。 其中包括以下项：
 
@@ -100,12 +102,12 @@ Microsoft 365 提供了许多内置的警报策略，可帮助确定 Exchange �
 |设置空中功能 |以下角色之一： <br/>-全局管理员<br/>-安全管理员 <br/>可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配这些角色。 |
 |批准或拒绝建议的操作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合规性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) 中分配的以下角色之一) ：<br/>-全局管理员 <br/>-安全管理员<br/>-安全读者 <br/>--- 和 ---<br/>-搜索和清除 (仅在 [安全 & 合规中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)中分配此角色。 您可能需要在其中创建新的角色组，并将搜索和清除角色添加到该新角色组。 ) 
 
-应将[Office 365 ATP 计划 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)许可证分配给：
+应将[Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)许可证分配给：
 - 安全管理员 (包括全局管理员) 
 - 您的组织的安全操作团队 (包括安全读者和那些具有搜索和清除角色的读者) 
 - 最终用户
 
-此外，还必须定义和应用 [Office 365 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) ，以便就地保护。
+此外，还必须定义和应用 [Microsoft Defender For Office 365 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) ，以便就地保护。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -115,6 +117,6 @@ Microsoft 365 提供了许多内置的警报策略，可帮助确定 Exchange �
 
 ## <a name="related-articles"></a>相关文章
 
-- [Microsoft Defender 高级威胁防护中的自动化调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Microsoft Defender for Endpoint 中的自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Microsoft 威胁防护中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender 中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

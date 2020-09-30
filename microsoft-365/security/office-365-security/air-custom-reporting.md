@@ -1,6 +1,6 @@
 ---
 title: 将自定义报告解决方案与自动调查和响应结合使用
-keywords: 空气、autoIR、ATP、自动化、调查、响应、修正、威胁、高级、威胁、保护
+keywords: SIEM、API、AIR、autoIR、ATP、自动调查、集成、自定义报告
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,19 +15,22 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 了解如何将自动调查和响应与自定义或第三方报告解决方案集成。
-ms.openlocfilehash: 2ff0ef995fc8418c3d57895f00ea96f05b0aaa97
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.custom:
+- air
+ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195601"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308916"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将管理活动 API 用于自定义或第三方报告解决方案
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-使用 [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，可以获取 [有关自动调查的详细信息](air-view-investigation-results.md)。 但是，一些组织也使用自定义或第三方报告解决方案。 如果您的组织想要使用此解决方案集成有关自动调查的信息，您可以使用 Office 365 管理活动 API。
+使用 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，可以获取 [有关自动调查的详细信息](air-view-investigation-results.md)。 但是，一些组织也使用自定义或第三方报告解决方案。 如果您的组织想要使用此解决方案集成有关自动调查的信息，您可以使用 Office 365 管理活动 API。
 
 使用以下资源对此进行设置：
 
@@ -41,8 +44,8 @@ ms.locfileid: "48195601"
 |[Office 365 管理活动 API 架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|获取 [常见架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) 和 [office 365 ATP 以及威胁调查和响应架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 的概述，以了解通过 OFFICE 365 管理活动 API 提供的特定类型的数据。|
 |
 
-## <a name="related-articles"></a>相关文章
+## <a name="see-also"></a>另请参阅
 
-- [Office 365 高级威胁防护](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
-- [了解 Microsoft 威胁防护中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender 中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
