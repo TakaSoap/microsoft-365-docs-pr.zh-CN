@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 22518473a8caf038a0f0f1ef89085c50f4483d5b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: fcb5f3b96ab62dec8926e2638866775beeb8206b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416676"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304766"
 ---
 # <a name="shared-assessments-program"></a>共享评估计划
 
@@ -52,6 +52,6 @@ CSA STAR 注册表中列出了 Azure 合规性，该注册表是一个免费的�
 
 ## <a name="resources"></a>资源
 
-- [针对信息请求的 Azure 标准答复](https://gallery.technet.microsoft.com/Azure-Standard-Response-to-5de19cb6)
+- [针对信息请求的 Azure 标准答复](https://azure.microsoft.com/resources/azure-standard-response-to-rfi-on-security-privacy-and-compliance/)
 - [Microsoft 与 CSA STAR 自我评估](offering-csa-star-self-assessment.md)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

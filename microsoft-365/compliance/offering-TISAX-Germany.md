@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1c12618b92a84cb7861d1df243a689cd1cf8a17c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208114"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304832"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>德国可信信息安全评估交换机制 (TISAX)
 
 ## <a name="about-tisax"></a>关于 TISAX
 
-为帮助确保汽车行业日益增长的连接安全，德国汽车行业协会 ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html), VDA) 制定了评估信息安全的标准目录。 VDA 信息安全评估（[德语](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)和[英语](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)）以国际 ISO/IEC 27001 和27002 标准为基础，适用于汽车行业。 在 2017 年，已对其内容进行了更新，以覆盖有关使用云服务的控制措施。
+为帮助确保汽车行业日益增长的连接安全，德国汽车行业协会 ([Verband der Automobilindustrie](https://www.vda.de), VDA) 制定了评估信息安全的标准目录。 VDA 信息安全评估（[德语](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)和[英语](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)）以国际 ISO/IEC 27001 和27002 标准为基础，适用于汽车行业。 在 2017 年，已对其内容进行了更新，以覆盖有关使用云服务的控制措施。
 
 VDA 成员公司将此工具用于内部安全评估，以及对代表他们处理敏感信息的供应商、服务提供商和其他合作伙伴的评估。 但是，由于这些评估是由每个公司单独进行的，因此，它给合作伙伴带来了负担，并且 VDA 成员也造成了重复劳动。
 
@@ -75,7 +75,7 @@ ENX 仅向已通过 ENX 门户注册的行业代表提供认证确认。 有关�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
