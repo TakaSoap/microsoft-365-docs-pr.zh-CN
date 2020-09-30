@@ -17,37 +17,37 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199705"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318198"
 ---
-# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="ef265-104">关闭并汇总你的 Microsoft 威胁防护试点</span><span class="sxs-lookup"><span data-stu-id="ef265-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
+# <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a><span data-ttu-id="73b95-104">关闭并汇总你的 Microsoft 威胁防护试点</span><span class="sxs-lookup"><span data-stu-id="73b95-104">Closing and summarizing your Microsoft Threat Protection pilot</span></span>  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ef265-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="ef265-105">**Applies to:**</span></span>
-- <span data-ttu-id="ef265-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="ef265-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="73b95-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="73b95-105">**Applies to:**</span></span>
+- <span data-ttu-id="73b95-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="73b95-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="ef265-107">您只是模拟了在域控制器上远程执行代码的仅有的高级内存攻击。</span><span class="sxs-lookup"><span data-stu-id="ef265-107">You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller.</span></span> <span data-ttu-id="ef265-108">你已了解 Microsoft Defender ATP 和 Azure ATP 如何在 stealthy 恶意活动中检测和警报。</span><span class="sxs-lookup"><span data-stu-id="ef265-108">You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity.</span></span> <span data-ttu-id="ef265-109">您还了解如何将不同源中的警报与其他上下文信息一起传递到 Microsoft 365 安全中心门户中的单个事件中，从而使 SOC 分析师能够调查并采取必要的措施。</span><span class="sxs-lookup"><span data-stu-id="ef265-109">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="ef265-110">你还创建了一个高级的搜寻查询，该查询将标识入站电子邮件，用户在该查询中打开或保存了附件并根据该查询创建了检测。</span><span class="sxs-lookup"><span data-stu-id="ef265-110">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
+<span data-ttu-id="73b95-107">您只是模拟了在域控制器上远程执行代码的仅有的高级内存攻击。</span><span class="sxs-lookup"><span data-stu-id="73b95-107">You’ve just simulated an advanced memory-only attack that executed code remotely on a domain controller.</span></span> <span data-ttu-id="73b95-108">你已了解 Microsoft Defender ATP 和 Azure ATP 如何在 stealthy 恶意活动中检测和警报。</span><span class="sxs-lookup"><span data-stu-id="73b95-108">You’ve seen how Microsoft Defender ATP and Azure ATP detects and alerts on stealthy malicious activity.</span></span> <span data-ttu-id="73b95-109">您还了解如何将不同源中的警报与其他上下文信息一起传递到 Microsoft 365 安全中心门户中的单个事件中，从而使 SOC 分析师能够调查并采取必要的措施。</span><span class="sxs-lookup"><span data-stu-id="73b95-109">You’ve also seen how alerts from different sources are delivered along with other contextual information into a single incident in the Microsoft 365 Security Center portal, enabling SOC analysts to investigate and take necessary action.</span></span> <span data-ttu-id="73b95-110">你还创建了一个高级的搜寻查询，该查询将标识入站电子邮件，用户在该查询中打开或保存了附件并根据该查询创建了检测。</span><span class="sxs-lookup"><span data-stu-id="73b95-110">You’ve also created an advanced hunting query that will identify inbound emails where the user opened or saved the attachment and created detection based on that query.</span></span>
 
-<span data-ttu-id="ef265-111">在所有测试结束后，你已到达进程的末尾。</span><span class="sxs-lookup"><span data-stu-id="ef265-111">You’ve reached the end of the process after all tests have concluded.</span></span>
+<span data-ttu-id="73b95-111">在所有测试结束后，你已到达进程的末尾。</span><span class="sxs-lookup"><span data-stu-id="73b95-111">You’ve reached the end of the process after all tests have concluded.</span></span>
 
-<span data-ttu-id="ef265-112">最终输出应为：</span><span class="sxs-lookup"><span data-stu-id="ef265-112">The final output should be:</span></span>
-- <span data-ttu-id="ef265-113">已完成的记分卡</span><span class="sxs-lookup"><span data-stu-id="ef265-113">A completed scorecard</span></span>
-- <span data-ttu-id="ef265-114">有关试点结果的详细报告</span><span class="sxs-lookup"><span data-stu-id="ef265-114">A detailed report of the findings of the pilot</span></span>
-- <span data-ttu-id="ef265-115">有关如何向前移动的决策</span><span class="sxs-lookup"><span data-stu-id="ef265-115">A decision on how to move forward</span></span>
+<span data-ttu-id="73b95-112">最终输出应为：</span><span class="sxs-lookup"><span data-stu-id="73b95-112">The final output should be:</span></span>
 
-<span data-ttu-id="ef265-116">应将此信息提供给内部利益干系人， (在 [准备](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 阶段) 和 Microsoft 联系人中确定。</span><span class="sxs-lookup"><span data-stu-id="ef265-116">This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase)  and Microsoft contacts.</span></span> <span data-ttu-id="ef265-117">这可确保任何反馈都可用于改进产品和文档。</span><span class="sxs-lookup"><span data-stu-id="ef265-117">This ensures that any feedback can be used to improve products and documentation.</span></span>
+- <span data-ttu-id="73b95-113">已完成的记分卡</span><span class="sxs-lookup"><span data-stu-id="73b95-113">A completed scorecard</span></span>
+- <span data-ttu-id="73b95-114">有关试点结果的详细报告</span><span class="sxs-lookup"><span data-stu-id="73b95-114">A detailed report of the findings of the pilot</span></span>
+- <span data-ttu-id="73b95-115">有关如何向前移动的决策</span><span class="sxs-lookup"><span data-stu-id="73b95-115">A decision on how to move forward</span></span>
 
-<span data-ttu-id="ef265-118">我们希望你喜欢此模拟，并鼓励我们开始实施你学习的内容。</span><span class="sxs-lookup"><span data-stu-id="ef265-118">We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.</span></span>
+<span data-ttu-id="73b95-116">应将此信息提供给内部利益干系人， (在 [准备](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 阶段) 和 Microsoft 联系人中确定。</span><span class="sxs-lookup"><span data-stu-id="73b95-116">This information should be presented to both internal stakeholders (which you’ve identified during the [preparation](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) phase) and Microsoft contacts.</span></span> <span data-ttu-id="73b95-117">这可确保任何反馈都可用于改进产品和文档。</span><span class="sxs-lookup"><span data-stu-id="73b95-117">This ensures that any feedback can be used to improve products and documentation.</span></span>
 
+<span data-ttu-id="73b95-118">我们希望你喜欢此模拟，并鼓励我们开始实施你学习的内容。</span><span class="sxs-lookup"><span data-stu-id="73b95-118">We hope you enjoyed this simulation and are encouraged to start implementing what you've learned.</span></span>
 
-## <a name="next-step"></a><span data-ttu-id="ef265-119">后续步骤</span><span class="sxs-lookup"><span data-stu-id="ef265-119">Next step</span></span>
-||
-|:-------|
-|<span data-ttu-id="ef265-120">浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) 以了解如何设计适合您的组织的解决方案和体系结构。</span><span class="sxs-lookup"><span data-stu-id="ef265-120">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.</span></span>
+## <a name="next-step"></a><span data-ttu-id="73b95-119">后续步骤</span><span class="sxs-lookup"><span data-stu-id="73b95-119">Next step</span></span>
 
+****
+
+<span data-ttu-id="73b95-120">浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) 以了解如何设计适合您的组织的解决方案和体系结构。</span><span class="sxs-lookup"><span data-stu-id="73b95-120">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to Understand how to design the solution and architecture that is right for your organization.</span></span>
