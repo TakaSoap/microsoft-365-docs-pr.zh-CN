@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208404"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305236"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任 (HIPAA) & 高科技行为
 
@@ -70,7 +70,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 首先利用云针对运行状况数据解决方案与 Azure 安全性和合规性蓝图（HIPAA/HITRUST 运行状况数据和 AI）的优势。 此蓝图提供的工具和指南可帮助您立即开始构建 HIPAA/HITRUST 解决方案。
 
-[开始使用 Azure HIPAA/HITRUST 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
+[开始使用 Azure HIPAA/HITRUST 蓝图](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust-9-2)
 
 ## <a name="frequently-asked-questions"></a>常见问题解答
 
@@ -92,7 +92,7 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 **如何获取审计员的报告的副本？**
 
-[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
+该[服务信任门户](https://www.microsoft.com/trustcenter/STP/default.aspx)提供独立审核的合规性报告。 您可以使用门户请求审核报告，以便您的审计员能够将 Microsoft 的云服务结果与您自己的法律和法规要求进行比较。
 
 **如何了解有关遵守 HIPAA 和高科技法案的更多信息？**
 
@@ -104,13 +104,13 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
 - [Hipaa Omnibus 规则](https://aka.ms/HIPAA-omnibus) (最终管理法规-修改 HIPAA 规则) 
 - [Microsoft 公共控制中心合规性框架](https://www.microsoft.com/trustcenter/common-controls-hub)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府云](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [了解 Azure (的 HIPAA 合规性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0) 5 月19日，2016) 
 - [Azure HIPAA HITRUST 蓝图示例](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)

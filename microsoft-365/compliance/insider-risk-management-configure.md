@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f944933be4ce4d3a755ba54dd68856362bba9a0b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208798"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304866"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -55,6 +55,9 @@ ms.locfileid: "48208798"
 | **内幕风险管理管理员** | 使用此角色组最初配置内幕风险管理和更高版本，以便将内幕风险管理员与定义的组分离。  此角色组中的用户可以创建、读取、更新和删除内幕风险管理策略、全局设置和角色组分配。 |
 | **内幕风险管理分析师** | 使用此组可将权限分配给将充当内幕风险案例分析人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例和通知模板。 他们无法访问内幕风险内容浏览器。 |
 | **内幕风险管理调查人员** | 使用此组可将权限分配给将充当内部人员风险数据调查人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例、通知模板和内容浏览器。 |
+
+> [!NOTE]
+> 这些角色组目前在特权身份管理 (PIM) 上不受支持。 若要了解有关 PIM 的详细信息，请参阅 [在特权标识管理中分配 AZURE AD 角色](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>将用户添加到 "内幕风险管理" 角色组
 
