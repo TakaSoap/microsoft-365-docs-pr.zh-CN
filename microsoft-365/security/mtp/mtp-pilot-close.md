@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199705"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318198"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>关闭并汇总你的 Microsoft 威胁防护试点  
 
@@ -37,6 +37,7 @@ ms.locfileid: "48199705"
 在所有测试结束后，你已到达进程的末尾。
 
 最终输出应为：
+
 - 已完成的记分卡
 - 有关试点结果的详细报告
 - 有关如何向前移动的决策
@@ -45,9 +46,8 @@ ms.locfileid: "48199705"
 
 我们希望你喜欢此模拟，并鼓励我们开始实施你学习的内容。
 
-
 ## <a name="next-step"></a>后续步骤
-||
-|:-------|
-|浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) 以了解如何设计适合您的组织的解决方案和体系结构。
 
+****
+
+浏览 [Microsoft 365 解决方案和体系结构中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) 以了解如何设计适合您的组织的解决方案和体系结构。

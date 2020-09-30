@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解适用于 Exchange Online Protection (EOP) 中邮件的垃圾邮件可信度级别 (SCL) 。
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202229"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318236"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP 中的垃圾邮件可信度级别 (SCL) 
 
@@ -50,6 +50,6 @@ ms.locfileid: "48202229"
 
 与 SCL 类似，批量投诉级别 (BCL) 标识错误的批量电子邮件 (也称为 _灰色邮件_) 。 BCL 越高，大量邮件产生投诉的可能性就越大（因此更有可能是垃圾邮件）。 在反垃圾邮件策略中配置 BCL 阈值。 有关详细信息，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)、 [批量投诉级别 (BCL) 在 EOP) ](bulk-complaint-level-values.md)中，以及 [垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
-|<!-- -->|
-|---|
-|![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365**的简短图标？ 探索通过 LinkedIn 学习获取的适用于 **Microsoft 365 管理员和 IT 专业人员**的免费视频课程。|
+****
+
+![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365**的简短图标？ 探索通过 LinkedIn 学习获取的适用于 **Microsoft 365 管理员和 IT 专业人员**的免费视频课程。

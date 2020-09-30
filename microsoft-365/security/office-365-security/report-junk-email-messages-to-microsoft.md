@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解将正常和错误邮件和文件报告给 Microsoft 进行分析的不同方法。
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203638"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318168"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>向 Microsoft 报告邮件和文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 在使用 Exchange Online 或独立 Exchange online 保护的邮箱的 Microsoft 365 组织中，用户和管理员都有几种不同的方法来向 Microsoft 报告电子邮件和文件 (EOP) 组织。
 
@@ -43,6 +42,5 @@ ms.locfileid: "48203638"
 |[使用邮件流规则来查看用户向 Microsoft 报告的内容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|了解如何创建邮件流规则 (也称为传输规则) ，当用户将邮件报告给 Microsoft 进行分析时，该规则会通知你。
 |||
 |[将恶意软件和非恶意软件提交给 Microsoft 进行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全智能网站提交附件和其他文件。|
-|
 
 如果已隔离垃圾邮件或网络钓鱼邮件，而不是进行传递，则用户可以在安全 & 合规性中心的隔离门户中将邮件报告给 Microsoft。 有关详细信息，请参阅 [在 Microsoft 365 中以用户的方式查找和释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。

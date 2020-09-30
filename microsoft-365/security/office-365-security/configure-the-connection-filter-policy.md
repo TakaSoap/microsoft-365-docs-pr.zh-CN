@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203367"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318248"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -203,7 +203,6 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 的新增功能？
 
-|<!-- a -->|
-|---|
-|![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365**的简短图标？ 探索通过 LinkedIn 学习为你提供的 **管理员和 IT 专业人员**的免费视频课程。|
-|
+****
+
+![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365**的简短图标？ 探索通过 LinkedIn 学习获取的适用于 **Microsoft 365 管理员和 IT 专业人员**的免费视频课程。

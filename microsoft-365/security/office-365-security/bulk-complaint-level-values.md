@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Exchange Online Protection (EOP) 中使用的批量合规性级别 (BCL) 值。
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203523"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318208"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP 中的批量投诉级别 (BCL) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 在使用 Exchange Online 或独立 Exchange online Protection 中的邮箱的 Microsoft 365 组织中 (EOP) 不含 Exchange Online 邮箱的组织中，EOP 将从批量邮件发件人向入站邮件分配批量合规性级别 (BCL) 。 将 BCL 添加到邮件的 X 标头中，类似于用于将邮件标识为垃圾邮件 [ (SCL) 的垃圾邮件可信度级别 ](spam-confidence-levels.md) 。 较高的 BCL 指示批量邮件更有可能生成投诉 (，因此更可能) 垃圾邮件。 Microsoft 使用内部和第三方源来标识批量邮件，并确定相应的 BCL。
 
@@ -42,6 +41,8 @@ ms.locfileid: "48203523"
 |:---:|---|
 |0|邮件不是由批量发件人发送。|
 |1, 2, 3|邮件来自于产生少量抱怨的批量发件人。|
-|4, 5, 6, 7|邮件来自于产生各种各样的抱怨的批量发件人。|
+|4、5、6、7<sup>\*</sup>|邮件来自于产生各种各样的抱怨的批量发件人。|
 |8, 9|邮件来自批量发件人，生成大量投诉。|
 |
+
+<sup>\*</sup> 这是在反垃圾邮件策略中使用的默认阈值。
