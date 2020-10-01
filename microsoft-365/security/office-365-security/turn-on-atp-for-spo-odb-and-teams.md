@@ -19,95 +19,149 @@ ms.collection:
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c8c8d0f3caa3e717f8193a3c0d6b7bb1d40dab6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cd345ae74b81c23f92b9e9b7d712efa8b875503
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201587"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326897"
 ---
-# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="d6cb3-103">启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP</span><span class="sxs-lookup"><span data-stu-id="d6cb3-103">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
+# <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="07f72-103">启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP</span><span class="sxs-lookup"><span data-stu-id="07f72-103">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="07f72-104">Office 365 高级威胁防护 (适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP) 保护您的组织不会在无意中共享恶意文件。</span><span class="sxs-lookup"><span data-stu-id="07f72-104">Office 365 Advanced Threat Protection (ATP) for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files.</span></span> <span data-ttu-id="07f72-105">有关详细信息，请参阅 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。</span><span class="sxs-lookup"><span data-stu-id="07f72-105">For more information, see [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md).</span></span>
 
-> [!IMPORTANT]
-> <span data-ttu-id="d6cb3-104">本文适用于拥有 [Office 365 高级威胁防护](office-365-atp.md)的企业客户。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="d6cb3-105">如果您是在 Outlook 中查找有关安全链接的信息的家庭用户，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-105">If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+<span data-ttu-id="07f72-106">本文包含为 SharePoint、OneDrive 和 Microsoft 团队启用和配置 ATP 的步骤。</span><span class="sxs-lookup"><span data-stu-id="07f72-106">This article contains the steps for enabling and configuring ATP for SharePoint, OneDrive, and Microsoft Teams.</span></span>
 
-<span data-ttu-id="d6cb3-106">[适用于 SharePoint、OneDrive 和 Microsoft 团队的 Office 365 ATP](atp-for-spo-odb-and-teams.md) 可防止您的组织无意中共享恶意文件。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-106">[Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from inadvertently sharing malicious files.</span></span> <span data-ttu-id="d6cb3-107">检测到恶意文件时，将阻止该文件，以便在组织的安全团队执行进一步操作之前，任何人都无法打开、复制、移动或共享该文件。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-107">When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team.</span></span> <span data-ttu-id="d6cb3-108">阅读本文以打开 SharePoint、OneDrive 和团队的 ATP，设置通知以获得检测到的文件的通知，并采取后续步骤。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-108">Read this article to turn on ATP for SharePoint, OneDrive, and Teams, set up alerts to be notified about detected files, and take your next steps.</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="07f72-107">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="07f72-107">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="d6cb3-109">若要定义 (或编辑) ATP 策略，必须为您分配适当的角色。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-109">To define (or edit) ATP policies, you must be assigned an appropriate role.</span></span> <span data-ttu-id="d6cb3-110">下表介绍了一些示例：</span><span class="sxs-lookup"><span data-stu-id="d6cb3-110">Some examples are described in the following table:</span></span>
+- <span data-ttu-id="07f72-108">安全与合规中心的打开网址为 <https://protection.office.com>。</span><span class="sxs-lookup"><span data-stu-id="07f72-108">You open the Security & Compliance Center at <https://protection.office.com>.</span></span> <span data-ttu-id="07f72-109">若要直接转到 " **ATP 安全附件** " 页面，请打开 <https://protection.office.com/safeattachmentv2> 。</span><span class="sxs-lookup"><span data-stu-id="07f72-109">To go directly to the **ATP Safe Attachments** page, open <https://protection.office.com/safeattachmentv2>.</span></span>
 
-****
+- <span data-ttu-id="07f72-110">若要打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP，您需要是安全 & 合规性中心中的 " **组织管理** " 或 " **安全管理员** " 角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="07f72-110">To turn on ATP for SharePoint, OneDrive, and Microsoft Teams, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center.</span></span> <span data-ttu-id="07f72-111">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="07f72-111">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-|<span data-ttu-id="d6cb3-111">角色</span><span class="sxs-lookup"><span data-stu-id="d6cb3-111">Role</span></span>|<span data-ttu-id="d6cb3-112">分配的位置/方式</span><span class="sxs-lookup"><span data-stu-id="d6cb3-112">Where/how assigned</span></span>|
-|---|---|
-|<span data-ttu-id="d6cb3-113">全局管理员</span><span class="sxs-lookup"><span data-stu-id="d6cb3-113">global administrator</span></span>|<span data-ttu-id="d6cb3-114">默认情况下，注册购买 Microsoft 365 的人是全局管理员。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-114">The person who signs up to buy Microsoft 365 is a global admin by default.</span></span> <span data-ttu-id="d6cb3-115"> (参阅 [关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) ，了解详细信息。 ) </span><span class="sxs-lookup"><span data-stu-id="d6cb3-115">(See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)</span></span>|
-|<span data-ttu-id="d6cb3-116">安全管理员</span><span class="sxs-lookup"><span data-stu-id="d6cb3-116">Security Administrator</span></span>|<span data-ttu-id="d6cb3-117">Azure Active Directory 管理员中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) </span><span class="sxs-lookup"><span data-stu-id="d6cb3-117">Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))</span></span>|
-|<span data-ttu-id="d6cb3-118">Exchange Online 组织管理</span><span class="sxs-lookup"><span data-stu-id="d6cb3-118">Exchange Online Organization Management</span></span>|<span data-ttu-id="d6cb3-119">Exchange 管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) </span><span class="sxs-lookup"><span data-stu-id="d6cb3-119">Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp))</span></span> <br><span data-ttu-id="d6cb3-120">或</span><span class="sxs-lookup"><span data-stu-id="d6cb3-120">or</span></span> <br>  <span data-ttu-id="d6cb3-121">PowerShell cmdlet (参阅 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) </span><span class="sxs-lookup"><span data-stu-id="d6cb3-121">PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span></span>|
-|
+- <span data-ttu-id="07f72-112">若要使用 SharePoint Online PowerShell 阻止用户下载恶意文件，您必须是 Azure AD 中 [全局管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [SharePoint 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) 角色的成员。</span><span class="sxs-lookup"><span data-stu-id="07f72-112">To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or [SharePoint Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#sharepoint-administrator) roles in Azure AD.</span></span>
 
-## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="d6cb3-122">启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP</span><span class="sxs-lookup"><span data-stu-id="d6cb3-122">Turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
+- <span data-ttu-id="07f72-113">验证是否已为您的组织启用审核日志记录。</span><span class="sxs-lookup"><span data-stu-id="07f72-113">Verify that audit logging is enabled for your organization.</span></span> <span data-ttu-id="07f72-114">有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。</span><span class="sxs-lookup"><span data-stu-id="07f72-114">For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+- <span data-ttu-id="07f72-115">允许最长30分钟的设置生效。</span><span class="sxs-lookup"><span data-stu-id="07f72-115">Allow up to 30 minutes for the settings to take effect.</span></span>
 
+## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="07f72-116">步骤1：使用安全 & 合规中心打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP</span><span class="sxs-lookup"><span data-stu-id="07f72-116">Step 1: Use the Security & Compliance Center to turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
-<span data-ttu-id="d6cb3-123">在**开始此过程之前，请确保已为您的 Microsoft 365 环境启用审核日志记录**。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-123">**Before you begin this procedure, make sure that audit logging is already turned on for your Microsoft 365 environment**.</span></span> <span data-ttu-id="d6cb3-124">这通常由在 Exchange Online 中分配了审核日志角色的人完成。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-124">This is typically done by someone who has the Audit Logs role assigned in Exchange Online.</span></span> <span data-ttu-id="d6cb3-125">有关详细信息，请参阅[打开或关闭审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-125">For more information, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).</span></span>
+1. <span data-ttu-id="07f72-117">在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，然后单击 " **全局设置**"。</span><span class="sxs-lookup"><span data-stu-id="07f72-117">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, and click **Global settings**.</span></span>
 
-1. <span data-ttu-id="d6cb3-126">转到 <https://protection.office.com> ，然后使用你的工作或学校帐户登录。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-126">Go to <https://protection.office.com>, and sign in with your work or school account.</span></span>
+2. <span data-ttu-id="07f72-118">在 " **全局设置** " 飞出时，转到 " **启用 SharePoint、OneDrive 和 MICROSOFT 团队的 ATP** " 设置。</span><span class="sxs-lookup"><span data-stu-id="07f72-118">In the **Global settings** fly out that appears, go to the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting.</span></span> <span data-ttu-id="07f72-119">将切换切换到右侧 ![ 切换，以 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP。</span><span class="sxs-lookup"><span data-stu-id="07f72-119">Move the toggle to the right ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to turn on ATP for SharePoint, OneDrive, and Microsoft Teams.</span></span>
 
-2. <span data-ttu-id="d6cb3-127">在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理**" 下，选择 " **策略** \> **安全附件**"。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-127">In the Security & Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.</span></span>
+   <span data-ttu-id="07f72-120">完成时，请单击“保存”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="07f72-120">When you're finished, click **Save**.</span></span>
 
-   ![在安全 & 合规性中心中，选择威胁管理 \> 策略](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+### <a name="use-exchange-online-powershell-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a><span data-ttu-id="07f72-121">使用 Exchange Online PowerShell 打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP</span><span class="sxs-lookup"><span data-stu-id="07f72-121">Use Exchange Online PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams</span></span>
 
-3. <span data-ttu-id="d6cb3-129">选择 " **为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-129">Select **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**.</span></span>
+<span data-ttu-id="07f72-122">如果你更愿意使用 PowerShell 打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP，请 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="07f72-122">If you'd rather use PowerShell to turn on ATP for SharePoint, OneDrive, and Microsoft Teams, [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) and run the following command:</span></span>
 
-   ![为 SharePoint Online、OneDrive for Business 和 Microsoft 团队启用高级威胁防护](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
+```powershell
+Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
+```
 
-4. <span data-ttu-id="d6cb3-131">单击“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-131">Click **Save**.</span></span>
+<span data-ttu-id="07f72-123">有关语法和参数的详细信息，请参阅 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)。</span><span class="sxs-lookup"><span data-stu-id="07f72-123">For detailed syntax and parameter information, see [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365).</span></span>
 
-5. <span data-ttu-id="d6cb3-132">查看 (，并根据需要编辑) 组织的 [安全附件策略](set-up-atp-safe-attachments-policies.md) 和 [安全链接策略](set-up-atp-safe-links-policies.md)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-132">Review (and, as appropriate, edit) your organization's [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) and [Safe Links policies](set-up-atp-safe-links-policies.md).</span></span>
+## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a><span data-ttu-id="07f72-124">步骤2：建议 () 使用 SharePoint Online PowerShell 以防止用户下载恶意文件</span><span class="sxs-lookup"><span data-stu-id="07f72-124">Step 2: (Recommended) Use SharePoint Online PowerShell to prevent users from downloading malicious files</span></span>
 
-6. <span data-ttu-id="d6cb3-133"> (推荐) 为全局管理员或 SharePoint Online 管理员，请运行 **[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet，并将 _DisallowInfectedFileDownload_ 参数设置为 *true*。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-133">(Recommended) As a global administrator or a SharePoint Online administrator, run the **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** cmdlet with the _DisallowInfectedFileDownload_ parameter set to *true*.</span></span>
+<span data-ttu-id="07f72-125">默认情况下，用户无法打开、移动、复制或共享由 ATP 检测到的恶意文件。</span><span class="sxs-lookup"><span data-stu-id="07f72-125">By default, users can't open, move, copy, or share malicious files that are detected by ATP.</span></span> <span data-ttu-id="07f72-126">但是，他们可以删除和下载恶意文件。</span><span class="sxs-lookup"><span data-stu-id="07f72-126">However, they can delete and download malicious files.</span></span>
 
-   - <span data-ttu-id="d6cb3-134">如果将参数设置为 *true，则* 会阻止对检测到的文件 (删除) 除外的所有操作。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-134">Setting the parameter to *true* blocks all actions (except Delete) for detected files.</span></span> <span data-ttu-id="d6cb3-135">用户无法打开、移动、复制或共享检测到的文件。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-135">People cannot open, move, copy, or share detected files.</span></span>
+<span data-ttu-id="07f72-127">若要阻止用户下载恶意文件，请 [连接到 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) 并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="07f72-127">To prevent users from downloading malicious files, [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and run the following command:</span></span>
 
-   - <span data-ttu-id="d6cb3-136">将参数设置为 *false* 将阻止除 "删除" 和 "下载" 以外的所有操作。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-136">Setting the parameter to *false* blocks all actions except Delete and Download.</span></span> <span data-ttu-id="d6cb3-137">用户可以选择接受风险并下载检测到的文件。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-137">People can choose to accept the risk and download a detected file.</span></span>
+```powershell
+Set-SPOTenant -DisallowInfectedFileDownload $true
+```
 
-7. <span data-ttu-id="d6cb3-138">允许最长30分钟，你的更改将传播到所有 Microsoft 365 数据中心。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-138">Allow up to 30 minutes for your changes to spread to all Microsoft 365 datacenters.</span></span>
+<span data-ttu-id="07f72-128">**注意**：</span><span class="sxs-lookup"><span data-stu-id="07f72-128">**Notes**:</span></span>
 
-8. <span data-ttu-id="d6cb3-139"> (建议的) 继续设置针对检测到的文件的通知。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-139">(Recommended) Proceed to set up alerts for detected files.</span></span>
+- <span data-ttu-id="07f72-129">此设置会影响用户和管理员。</span><span class="sxs-lookup"><span data-stu-id="07f72-129">This setting affects both users and admins.</span></span>
+- <span data-ttu-id="07f72-130">用户仍可以删除恶意文件。</span><span class="sxs-lookup"><span data-stu-id="07f72-130">People can still delete malicious files.</span></span>
 
-<span data-ttu-id="d6cb3-140">若要了解有关在 Microsoft 365 中使用 PowerShell 的详细信息，请参阅使用 [Powershell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-140">To learn more about using PowerShell with Microsoft 365, see [Manage Microsoft 365 with PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).</span></span>
+<span data-ttu-id="07f72-131">有关语法和参数的详细信息，请参阅 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)。</span><span class="sxs-lookup"><span data-stu-id="07f72-131">For detailed syntax and parameter information, see [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).</span></span>
 
-<span data-ttu-id="d6cb3-141">若要详细了解在将文件检测为恶意时的用户体验，请参阅在 [SharePoint Online、OneDrive 或 Microsoft 团队中找到恶意文件时应执行的操作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-141">To learn more about the user experience when a file has been detected as malicious, see [What to do when a malicious file is found in SharePoint Online, OneDrive, or Microsoft Teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).</span></span>
+## <a name="step-3-recommended-use-the-security--compliance-center-to-create-an-alert-policy-for-detected-files"></a><span data-ttu-id="07f72-132">建议的步骤 3 () 使用安全 & 合规中心为检测到的文件创建通知策略</span><span class="sxs-lookup"><span data-stu-id="07f72-132">Step 3 (Recommended) Use the Security & Compliance Center to create an alert policy for detected files</span></span>
 
-## <a name="set-up-alerts-for-detected-files"></a><span data-ttu-id="d6cb3-142">为检测到的文件设置通知</span><span class="sxs-lookup"><span data-stu-id="d6cb3-142">Set up alerts for detected files</span></span>
+<span data-ttu-id="07f72-133">当 SharePoint、OneDrive 和 Microsoft 团队的 ATP 检测到恶意文件时，可以创建通知您和其他管理员的通知策略。</span><span class="sxs-lookup"><span data-stu-id="07f72-133">You can create an alert policy that notifies you and other admins when ATP for SharePoint, OneDrive, and Microsoft Teams detects a malicious file.</span></span> <span data-ttu-id="07f72-134">若要了解有关通知的详细信息，请参阅 [在安全 & 合规性中心中创建活动通知](../../compliance/create-activity-alerts.md)。</span><span class="sxs-lookup"><span data-stu-id="07f72-134">To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).</span></span>
 
-<span data-ttu-id="d6cb3-143">若要在 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的文件被标识为恶意文件时收到通知，可以设置警报。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-143">To receive notification when a file in SharePoint Online, OneDrive for Business, or Microsoft Teams has been identified as malicious, you can set up an alert.</span></span>
+1. <span data-ttu-id="07f72-135">在 [安全 & 合规性中心](https://protection.office.com)中，转到 " **通知**" "通知 \> **策略** " 或 "打开" <https://protection.office.com/alertpolicies> 。</span><span class="sxs-lookup"><span data-stu-id="07f72-135">In the [Security & Compliance Center](https://protection.office.com), go to **Alerts** \> **Alert policies** or open <https://protection.office.com/alertpolicies>.</span></span>
 
-1. <span data-ttu-id="d6cb3-144">在 " [安全性 & 合规性中心](https://protection.office.com)中，选择" **通知**"" \> **管理通知**"。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-144">In the [Security & Compliance Center](https://protection.office.com), choose **Alerts** \> **Manage alerts**.</span></span>
+2. <span data-ttu-id="07f72-136">在 " **通知策略** " 页上，单击 " **新建通知策略**"。</span><span class="sxs-lookup"><span data-stu-id="07f72-136">On the **Alert policies** page, click **New alert policy**.</span></span>
 
-2. <span data-ttu-id="d6cb3-145">选择 " **新建警报策略**"。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-145">Choose **New alert policy**.</span></span>
+3. <span data-ttu-id="07f72-137">" **新建通知策略** " 向导将在飞出时打开。在 "将 **通知命名** 为" 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="07f72-137">The **New alert policy** wizard opens in a fly out. On the **Name your alert** page, configure the following settings:</span></span>
 
-3. <span data-ttu-id="d6cb3-146">指定警报的名称。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-146">Specify a name for the alert.</span></span> <span data-ttu-id="d6cb3-147">例如，可以在库中键入恶意文件。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-147">For example, you could type Malicious Files in Libraries.</span></span>
+   - <span data-ttu-id="07f72-138">**名称**：键入唯一的描述性名称。</span><span class="sxs-lookup"><span data-stu-id="07f72-138">**Name**: Type a unique and descriptive name.</span></span> <span data-ttu-id="07f72-139">例如，库中的恶意文件。</span><span class="sxs-lookup"><span data-stu-id="07f72-139">For example, Malicious Files in Libraries.</span></span>
+   - <span data-ttu-id="07f72-140">**说明**：键入可选的说明。</span><span class="sxs-lookup"><span data-stu-id="07f72-140">**Description**: Type an optional description.</span></span> <span data-ttu-id="07f72-141">例如，当在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时，会通知管理员。</span><span class="sxs-lookup"><span data-stu-id="07f72-141">For example, Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams.</span></span>
+   - <span data-ttu-id="07f72-142">**严重性**：保持选定的默认值为 " **低** "，或选择 " **中** " 或 " **高**"。</span><span class="sxs-lookup"><span data-stu-id="07f72-142">**Severity**: Leave the default value **Low** selected, or select **Medium** or **High**.</span></span>
+   - <span data-ttu-id="07f72-143">**选择一个类别**：选择 **威胁管理**。</span><span class="sxs-lookup"><span data-stu-id="07f72-143">**Select a category**: Select **Threat management**.</span></span>
 
-4. <span data-ttu-id="d6cb3-148">键入警报的说明。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-148">Type a description for the alert.</span></span> <span data-ttu-id="d6cb3-149">例如，可以键入在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时通知管理员。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-149">For example, you could type Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams.</span></span>
+   <span data-ttu-id="07f72-144">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="07f72-144">When you're finished, click **Next**.</span></span>
 
-5. <span data-ttu-id="d6cb3-150">在 " **发送此通知** 的条件 ..." 部分，执行下列操作：</span><span class="sxs-lookup"><span data-stu-id="d6cb3-150">In the **Send this alert when...** section, do the following:</span></span>
+4. <span data-ttu-id="07f72-145">在 " **创建通知设置** " 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="07f72-145">On the **Create alert settings** page, configure the following settings:</span></span>
 
-   <span data-ttu-id="d6cb3-151">a.</span><span class="sxs-lookup"><span data-stu-id="d6cb3-151">a.</span></span> <span data-ttu-id="d6cb3-152">在 " **活动** " 列表中，选择 " **文件中检测到的恶意软件**"。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-152">In the **Activities** list, choose **Detected malware in file**.</span></span>
+   - <span data-ttu-id="07f72-146">**你希望在什么情况上提醒？：活动为**：在 **文件中选择检测到的恶意软件**。</span><span class="sxs-lookup"><span data-stu-id="07f72-146">**What do you want to alert on?: Activity is**: Select **Detected malware in file**.</span></span>
+   - <span data-ttu-id="07f72-147">**您希望如何触发警报？**： **每次活动匹配选定的规则时** ，保留默认值。</span><span class="sxs-lookup"><span data-stu-id="07f72-147">**How do you want the alert to be triggered?**: Leave the default value **Every time an activity matches the rule** selected.</span></span>
 
-   <span data-ttu-id="d6cb3-153">b.</span><span class="sxs-lookup"><span data-stu-id="d6cb3-153">b.</span></span> <span data-ttu-id="d6cb3-154">将 " **用户** " 字段留空。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-154">Leave the **Users** field empty.</span></span>
+   <span data-ttu-id="07f72-148">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="07f72-148">When you're finished, click **Next**.</span></span>
 
-6. <span data-ttu-id="d6cb3-155">在 " **将此通知发送给 ...** " 部分，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-155">In the **Send this alert to...** section, select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.</span></span>
+5. <span data-ttu-id="07f72-149">在 " **设置收件人** " 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="07f72-149">On the **Set your recipients** page, configure the following settings:</span></span>
 
-7. <span data-ttu-id="d6cb3-156">单击“**保存**”。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-156">Click **Save**.</span></span>
+   - <span data-ttu-id="07f72-150">**发送电子邮件通知**：确认已选中此设置。</span><span class="sxs-lookup"><span data-stu-id="07f72-150">**Send email notifications**: Verify this setting is selected.</span></span> <span data-ttu-id="07f72-151">在 " **电子邮件收件人** " 框中，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。</span><span class="sxs-lookup"><span data-stu-id="07f72-151">In the **Email recipients** box, select one or more global administrators, security administrators, or security readers who should receive notification when a malicious file is detected.</span></span>
+   - <span data-ttu-id="07f72-152">**每日通知限制**：保留默认值 " **无限制** " 处于选中状态。</span><span class="sxs-lookup"><span data-stu-id="07f72-152">**Daily notification limit**: Leave the default value **No limit** selected.</span></span>
 
-<span data-ttu-id="d6cb3-157">若要了解有关通知的详细信息，请参阅 [在安全 & 合规性中心中创建活动通知](../../compliance/create-activity-alerts.md)。</span><span class="sxs-lookup"><span data-stu-id="d6cb3-157">To learn more about alerts, see [Create activity alerts in the Security & Compliance Center](../../compliance/create-activity-alerts.md).</span></span>
+   <span data-ttu-id="07f72-153">完成后，单击“下一步”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="07f72-153">When you're finished, click **Next**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="d6cb3-158">后续步骤</span><span class="sxs-lookup"><span data-stu-id="d6cb3-158">Next steps</span></span>
+6. <span data-ttu-id="07f72-154">在 " **查看您的设置** " 页上，查看设置，然后单击任何部分中的 " **编辑** " 以进行更改。</span><span class="sxs-lookup"><span data-stu-id="07f72-154">On the **Review your settings** page, review the settings, and click **Edit** in any of the sections to make changes.</span></span>
 
-1. [<span data-ttu-id="d6cb3-159">查看有关在 SharePoint、OneDrive 或 Microsoft 团队中检测到的恶意文件的信息</span><span class="sxs-lookup"><span data-stu-id="d6cb3-159">View information about malicious files detected in SharePoint, OneDrive, or Microsoft Teams</span></span>](malicious-files-detected-in-spo-odb-or-teams.md)
+   <span data-ttu-id="07f72-155">在 " **是否要立即启用策略？** " 部分，保留默认值 **"是"，然后将其立即打开** 。</span><span class="sxs-lookup"><span data-stu-id="07f72-155">In the **Do you want to turn the policy on right away?** section, leave the default value **Yes, turn it on right away** selected.</span></span>
 
-2. [<span data-ttu-id="d6cb3-160">在 Microsoft 365 中以管理员身份管理隔离的邮件和文件</span><span class="sxs-lookup"><span data-stu-id="d6cb3-160">Manage quarantined messages and files as an administrator in Microsoft 365</span></span>](manage-quarantined-messages-and-files.md)
+   <span data-ttu-id="07f72-156">完成后，单击 " **完成**"。</span><span class="sxs-lookup"><span data-stu-id="07f72-156">When you're finished, click **Finish**.</span></span>
+
+### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a><span data-ttu-id="07f72-157">使用 Security & 合规性 PowerShell 为检测到的文件创建通知策略</span><span class="sxs-lookup"><span data-stu-id="07f72-157">Use Security & Compliance PowerShell to create an alert policy for detected files</span></span>
+
+<span data-ttu-id="07f72-158">如果您希望使用 PowerShell 创建与上一节中所述相同的警报策略，请 [连接到 Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，并运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="07f72-158">If you'd rather use PowerShell to create the same alert policy as described in the previous section, [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) and run the following command:</span></span>
+
+```powershell
+New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
+```
+
+<span data-ttu-id="07f72-159">**注意**：默认 _严重性_ 值为 "低"。</span><span class="sxs-lookup"><span data-stu-id="07f72-159">**Note**: The default _Severity_ value is Low.</span></span> <span data-ttu-id="07f72-160">若要指定 "中" 或 "高"，请在命令中包含 _严重性_ 参数和值。</span><span class="sxs-lookup"><span data-stu-id="07f72-160">To specify Medium or High, include the _Severity_ parameter and value in the command.</span></span>
+
+<span data-ttu-id="07f72-161">有关语法和参数的详细信息，请参阅 [set-activityalert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert)。</span><span class="sxs-lookup"><span data-stu-id="07f72-161">For detailed syntax and parameter information, see [New-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert).</span></span>
+
+### <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="07f72-162">如何判断这些过程生效了？</span><span class="sxs-lookup"><span data-stu-id="07f72-162">How do you know these procedures worked?</span></span>
+
+- <span data-ttu-id="07f72-163">若要验证是否成功启用了 SharePoint、OneDrive 和 Microsoft 团队的 ATP，请使用以下步骤之一：</span><span class="sxs-lookup"><span data-stu-id="07f72-163">To verify that you've successfully turned on ATP for SharePoint, OneDrive, and Microsoft Teams, use either of the following steps:</span></span>
+
+  - <span data-ttu-id="07f72-164">在 " [安全性 & 合规性中心](https://protection.office.com)" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，选择 " **全局设置**"，然后验证 " **启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP** 的值" 设置的值。</span><span class="sxs-lookup"><span data-stu-id="07f72-164">In the [Security & Compliance Center](https://protection.office.com), go to **Threat management** \> **Policy** \> **ATP Safe Attachments**, select **Global settings**, and verify the value of the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** setting.</span></span>
+
+  - <span data-ttu-id="07f72-165">在 Exchange Online PowerShell 中，运行以下命令以验证属性设置：</span><span class="sxs-lookup"><span data-stu-id="07f72-165">In Exchange Online PowerShell, run the following command to verify the property setting:</span></span>
+
+    ```powershell
+    Get-AtpPolicyForO365 | Format-List EnableATPForSPOTeamsODB
+    ```
+
+    <span data-ttu-id="07f72-166">有关语法和参数的详细信息，请参阅 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)。</span><span class="sxs-lookup"><span data-stu-id="07f72-166">For detailed syntax and parameter information, see [Get-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365).</span></span>
+
+- <span data-ttu-id="07f72-167">若要验证是否已成功阻止用户下载恶意文件，请打开 SharePoint Online PowerShell，然后运行以下命令来验证属性值：</span><span class="sxs-lookup"><span data-stu-id="07f72-167">To verify that you've successfully blocked people from downloading malicious files, open SharePoint Online PowerShell, and run the following command to verify the property value:</span></span>
+
+  ```powershell
+  Get-SPOTenant | Format-List DisallowInfectedFileDownload
+  ```
+
+  <span data-ttu-id="07f72-168">有关语法和参数的详细信息，请参阅 [set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)。</span><span class="sxs-lookup"><span data-stu-id="07f72-168">For detailed syntax and parameter information, see [Get-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).</span></span>
+
+- <span data-ttu-id="07f72-169">若要验证是否已成功为检测到的文件配置了通知策略，请执行以下任一步骤：</span><span class="sxs-lookup"><span data-stu-id="07f72-169">To verify that you've successfully configured an alert policy for detected files, use any of the following steps:</span></span>
+
+  - <span data-ttu-id="07f72-170">在安全 & 合规性中心中，转到 " **通知** \> " "通知 **策略**"， \> 选择 "通知策略" 并验证设置。</span><span class="sxs-lookup"><span data-stu-id="07f72-170">In the Security & Compliance Center, go to **Alerts** \> **Alert policies** \> select the alert policy, and verify the settings.</span></span>
+
+  - <span data-ttu-id="07f72-171">在安全 & 合规性中心 PowerShell 中，将替换 \<AlertPolicyName\> 为警报策略的名称，运行以下命令，并验证属性值：</span><span class="sxs-lookup"><span data-stu-id="07f72-171">In Security & Compliance Center PowerShell, replace \<AlertPolicyName\> with the name of the alert policy, run the following command, and verify the property values:</span></span>
+
+    ```powershell
+    Get-ActivityAlert -Identity "<AlertPolicyName>"
+    ```
+
+    <span data-ttu-id="07f72-172">有关语法和参数的详细信息，请参阅 [set-activityalert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert)。</span><span class="sxs-lookup"><span data-stu-id="07f72-172">For detailed syntax and parameter information, see [Get-ActivityAlert](https://docs.microsoft.com/powershell/module/exchange/get-activityalert).</span></span>
+
+- <span data-ttu-id="07f72-173">使用 " [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report) " 查看 SharePoint、OneDrive 和 Microsoft 团队中检测到的文件的相关信息。</span><span class="sxs-lookup"><span data-stu-id="07f72-173">Use the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report) to view information about detected files in SharePoint, OneDrive, and Microsoft Teams.</span></span> <span data-ttu-id="07f72-174">具体来说，可以使用 " **查看数据的方式：内容 \> 恶意软件** " 视图。</span><span class="sxs-lookup"><span data-stu-id="07f72-174">Specifically, you can use the **View data by: Content \> Malware** view.</span></span>
