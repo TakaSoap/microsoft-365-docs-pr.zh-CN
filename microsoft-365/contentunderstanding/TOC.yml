@@ -1,18 +1,20 @@
-- name: Microsoft SharePoint Syntex 入门
+- name: 了解 Microsoft SharePoint Syntex
   items:
-    - name: Microsoft SharePoint Syntex 简介
-      href: microsoft-sharepoint-syntex-overview.md
+    - name: SharePoint Syntex 简介
+      href: index.md
     - name: 文档理解概述
       href: document-understanding-overview.md
     - name: 表单处理概述
       href: form-processing-overview.md
     - name: 文档理解和表单处理模型之间的区别
       href: difference-between-document-understanding-and-form-processing-model.md
+- name: 模型入门
+  items:
     - name: 通过示例模型了解模型
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: 创建内容中心
       href: create-a-content-center.md
-    - name: 创建类元
+    - name: 创建分类器
       href: create-a-classifier.md
     - name: 创建提取程序
       href: create-an-extractor.md

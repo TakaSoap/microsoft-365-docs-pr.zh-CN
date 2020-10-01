@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是指 Microsoft 将租户的服务和关联数据移到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950268"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333696"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -30,8 +30,7 @@ ms.locfileid: "47950268"
 > [!NOTE]
 > 每个服务的移动发生在不同的时间。 因此，你将在不同时间看到每个服务的已描述缩减功能。 
   
-观看 Microsoft 365 消息中心，以在每个 Exchange Online、SharePoint Online、团队和 Skype for Business 移动完毕时进行确认。 如下表所示，在注册期结束后，可能需要长达24个月，以完成针对特定地理位置的所有客户的所有请求的数据移动。 如果你在移动后发现你的租户存在任何问题，请联系 [支持人员](https://go.microsoft.com/fwlink/p/?LinkID=522459) 以获取帮助。 
-  
+观看 Microsoft 365 消息中心，以在每个 Exchange Online、SharePoint Online 和团队聊天服务完成移动时进行确认。 如下表所示，在注册期结束后，可能需要长达24个月才能在 rest 上完成核心客户数据移动到新的数据中心地理位置。   
 
 |**在中注册国家/地区的客户**|**所有移动完成者**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ ms.locfileid: "47950268"
 |南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
-|德国  <br/> |相同  <br/> |
+|德国  <br/> |2023年4月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -66,10 +65,6 @@ ms.locfileid: "47950268"
 移动 SharePoint Online 时，还会移动以下服务的数据：
   
 - OneDrive for Business
-    
-- Project Online
-    
-- Microsoft 365 的项目
     
 - Microsoft 365 视频服务
     
@@ -109,7 +104,7 @@ ms.locfileid: "47950268"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-除了 Exchange Online、SharePoint Online 和 OneDrive for Business，Microsoft 还会将团队数据迁移到本地数据中心。
+除了 Exchange Online、SharePoint Online 和 OneDrive for Business，Microsoft 还会将团队聊天服务数据迁移到本地数据中心。
 
 - 工作组聊天邮件，包括私人邮件和频道消息。
 - 在聊天中使用的团队图像。
@@ -118,20 +113,7 @@ ms.locfileid: "47950268"
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business 移动可用于澳大利亚、日本、印度、加拿大、英国和韩国。
-
-在剪切转移过程中，所有用户都将从 Skype for Business 客户端软件注销。 自动登录将在两分钟内重新连接用户。
-  
-|**在整个移动过程中工作的功能**|**移动过程中可能会受到限制的功能**|
-|:-----|:-----|
-| 即时消息和语音呼叫  <br/>  用户可以添加联系人、添加联系人组、添加会议、设置其位置并更改 "今天发生的情况"。  <br/>  音频会议提供商 (ACP) 设置将被复制到目标数据中心地理位置。 如果目标数据中心中存在 ACP 提供程序，则它将正常工作。 否则，它将不会。  <br/> | 租户管理员 TRPS (租户远程 PowerShell) 将不可供管理员创建会话。  <br/>  租户管理员 LAC 将不可供管理员登录并更改用户设置。  <br/> |
-   
-|**移动后**|
-|:-----|
-| 会议数据 (上传的演示文稿等，) 不会移动，需要重新上载。  <br/>  较旧的 Lync 客户端（如 Lync 2010 客户端和 Lync for Mac 2011 客户端）被识别为导致登录问题的服务缓存 DNS 信息。 如果用户不在最新的 Skype for Business Windows 客户端上，则可能需要清除 DNS 缓存。 请参阅 [Office 365 中的 Skype For Business ONLINE DNS 配置问题故障排除](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)。 适用于 Mac 客户端用户的 Lync 应按照 [这些说明](https://support.microsoft.com/kb/2629861)操作。  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及第三方音频会议提供商的 Skype for Business 移动
-适用于 Skype for business 的第三方音频会议提供商附加服务不适用于驻留在新地理位置的新数据中心中的用户。  使用第三方音频会议提供商服务的现有客户不应请求移动到新的特定地理位置的数据中心。  如果新客户部署到新的特定地理位置数据中心，则需要请求移动到区域数据中心以使用第三方音频会议提供商。
+Skype for Business 移动已不再可用。  [Skype For Business Online 将](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) 于2021年7月31日终止。 之后，该服务将无法再访问。 
   
 ## <a name="related-topics"></a>相关主题 
  

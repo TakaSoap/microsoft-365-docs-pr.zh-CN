@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305362"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333674"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>规划你的试点 Microsoft 威胁防护项目 
 
@@ -31,8 +31,49 @@ ms.locfileid: "48305362"
 
 **适用于：**
 - Microsoft 威胁防护
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="规划你的试点 Microsoft 威胁防护项目" />
+      <br/>套餐</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="准备你的 Microsoft 威胁防护试用实验室或试点环境" />
+      <br/>准备</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="运行 Microsoft 威胁防护攻击模拟" />
+     <br/>模拟攻击</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="关闭并汇总你的 Microsoft 威胁防护试点" />
+     <br/>结束和汇总</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
 
-为确保您的试点项目成功，必须在开始时全面规划和获取利益干系人的批准。 规划的元素包括标识范围、用例、要求和成功条件。。 
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+你当前正在计划阶段。
+
+为确保您的试点项目成功，必须在开始时全面规划和获取利益干系人的批准。 规划的元素包括标识范围、用例、要求和成功条件。
 
 本指南将指导你如何规划你的试点项目。 
 
@@ -76,7 +117,7 @@ ms.locfileid: "48305362"
 
 将计划的所有元素组合在一起的一种方法就是创建记分卡。 请参阅下面的示例记分卡：
 
-|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**分**|**Notes**|
+|**用例**|**要求**|**配置要求**|**测试计划**|**预期结果**|**测试状态**|**分**|**备注**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |事件管理|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft 云应用安全 (可选) |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) |[模拟攻击](mtp-pilot-simulate.md) <br></br>[调查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |调查人员可以了解事件的范围和影响并管理事件||||
 |AutoIR|-Microsoft 威胁防护 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) <br>启用 AutoIR  |[模拟攻击](mtp-pilot-simulate.md) <br></br>[自动调查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威胁防护会自动修正警报和事件||||
@@ -85,5 +126,5 @@ ms.locfileid: "48305362"
 
 
 ## <a name="next-step"></a>后续步骤
-|![准备阶段](../../media/prepare.png) <br>[准备阶段](prepare-mtpeval.md) | 准备你的 Microsoft 威胁防护试点环境
+|![准备阶段](../../media/mtp/prep.png) <br>[准备阶段](prepare-mtpeval.md) | 准备你的 Microsoft 威胁防护试点环境
 |:-------|:-----|

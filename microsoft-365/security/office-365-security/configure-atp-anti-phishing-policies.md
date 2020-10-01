@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护 (Office 365 ATP) 中的组织中提供的高级防网络钓鱼策略。
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328067"
+ms.locfileid: "48333542"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ATP 反网络钓鱼策略是 [Office 365 高级威胁防护](office-365-atp.md)的一部分。 ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection 中的反网络钓鱼策略之间的差异 (EOP) 和 ATP 反网络钓鱼策略的详细信息，请参阅 [反钓鱼保护](anti-phishing-protection.md)。
 
@@ -63,7 +62,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 您需要先分配权限，然后才能执行本文中的过程：
 
   - 若要添加、修改和删除 ATP 反网络钓鱼策略，您必须是下列角色组之一的成员：
 
@@ -176,6 +175,8 @@ ATP 反网络钓鱼策略的基本要素为：
 
      - **自动包括我拥有的域**：默认值为 **Off**。 若要打开它，请将开关滑到 **"开**"。
      - **包含自定义域**：默认值为 **Off**。 若要打开它，请将开关滑到 **"打开**"，然后在 " **添加域** " 框中输入域名 (例如，CONTOSO.COM) ，按 enter，并在必要时重复此操作。
+
+       **注意**：在安全 & 合规性中心中，最多可以输入20个域。 在 Exchange Online PowerShell 中，最多可以输入50个域。
 
    - **操作**：单击 "**编辑**"
 

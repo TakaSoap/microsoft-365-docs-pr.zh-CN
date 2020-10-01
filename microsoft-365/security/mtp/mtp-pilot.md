@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 88d92558d86e0aa2e90ef04d88a3cd4676386f15
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195623"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333720"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>运行你的试点 Microsoft 威胁防护项目 
 
@@ -56,7 +56,7 @@ ms.locfileid: "48195623"
 |阶段 | 说明 | 
 |:-------|:-----|
 | ![规划](../../media/mtp/plan.png)<br>[规划](mtp-pilot-plan.md)| 了解在运行 Microsoft 威胁防护试点项目之前需要考虑的事项： <br><br>-Scope <br> -用例 <br>- 要求： <br>-测试计划 <br> -成功条件 <br> 记分卡 
-| ![过程](../../media/prepare.png) <br>[过程](mtp-evaluation.md)|  访问 Microsoft 365 安全中心以设置你的 Microsoft 威胁防护试点环境。 系统将指导您执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
+| ![过程](../../media/mtp/prep.png) <br>[过程](mtp-evaluation.md)|  访问 Microsoft 365 安全中心以设置你的 Microsoft 威胁防护试点环境。 系统将指导您执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
 | ![攻击模拟](../../media/mtp/run-sim.png) <br>[攻击模拟](mtp-pilot-simulate.md) | 为模拟攻击，您将获得以下指导：<br><br>-验证测试环境要求 <br>-运行模拟 <br>-调查事件 <br>-解决事件 
 | ![结束和摘要](../../media/mtp/close.png) <br>[结束和摘要](mtp-pilot-close.md) | 当您到达进程的末尾时，您将被指引到：<br><br>-转到最终输出<br>-向你的利益干系人提供你的输出 <br>-提供反馈 <br>-执行后续步骤 
 
