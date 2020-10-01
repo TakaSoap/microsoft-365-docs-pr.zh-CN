@@ -298,7 +298,7 @@
             - name: 配置多地理位置功能
               href: multi-geo-tenant-configuration.md
             - name: 配置首选数据位置
-              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/microsoft-365/Enterprise/toc.json&bc=/microsoft-365/enterprise/breadcrumb/toc.json
             - name: 配置搜索
               href: configure-search-for-multi-geo.md
         - name: 管理
@@ -395,25 +395,31 @@
           href: microsoft-365-secure-sign-in.md
     - name: 管理
       items:
-        - name: 向用户帐户分配许可证
+        - name: 用户帐户
+          items:
+            - name: 用户帐户
+              href: manage-microsoft-365-accounts.md
+            - name: 同时添加多个用户
+              href: add-several-users-at-the-same-time.md
+        - name: 许可证
           href: assign-licenses-to-user-accounts.md
-        - name: Microsoft 365 帮助中心
-          href: 'https://docs.microsoft.com/office365/admin/admin-home'
-        - name: 用于管理用户帐户的工具
-          href: manage-microsoft-365-accounts.md
-        - name: 同时添加多个用户
-          href: add-several-users-at-the-same-time.md
+        - name: 密码
+          href: manage-microsoft-365-passwords.md
+        - name: 组
+          href: manage-microsoft-365-groups.md
+        - name: 管控
+          href: manage-microsoft-365-identity-governance.md
         - name: 恢复用户邮箱中的已删除项目
           href: recover-deleted-items-in-a-mailbox.md
         - name: 目录同步
           items:
-            - name: 查看目录同步状态
+            - name: 查看状态
               href: view-directory-synchronization-status.md
-            - name: 识别目录同步错误
+            - name: 识别错误
               href: identify-directory-synchronization-errors.md
-            - name: 修复目录同步问题
+            - name: 解决问题
               href: fix-problems-with-directory-synchronization.md
-            - name: 关闭目录同步
+            - name: 将其关闭
               href: turn-off-directory-synchronization.md
 - name: 客户端和服务器软件
   items:
