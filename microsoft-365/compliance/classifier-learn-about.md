@@ -1,5 +1,5 @@
 ---
-title: '了解 trainable 分类 (预览) '
+title: 了解可训练的分类器（预览版）
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分类器是一种工具，可通过提供要查看的正负样本来识别各种类型的内容。 在分类器经过培训之后，您确认其结果是准确的。 然后，使用它来搜索组织的内容，并对其进行分类以应用保留或敏感度标签，或将其包含在数据丢失防护 (DLP) 或保留策略中。
-ms.openlocfilehash: 9a628eec748681e0a22911bf7cf3774895b10ead
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132321"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322185"
 ---
 # <a name="learn-about-classifiers-preview"></a>了解 (预览的分类器) 
 
@@ -75,10 +75,8 @@ Microsoft 365 附带了五个预先培训的分类器：
     - C
     - Clojure
     - CoffeeScript
-    - CSS
     - 转到
     - Haskell
-    - HTML
     - Java
     - JavaScript
     - Lua

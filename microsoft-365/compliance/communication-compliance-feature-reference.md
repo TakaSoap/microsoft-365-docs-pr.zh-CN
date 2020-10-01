@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245899"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318171"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -113,7 +113,7 @@ ms.locfileid: "48245899"
     - **对于团队聊天与混合电子邮件环境**之间的通信：通信合规性可以为具有 Exchange 本地部署的组织或已启用 Microsoft 团队的外部电子邮件提供程序监视用户的聊天消息。 您必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 创建通信合规性策略时，将在策略向导中将此通讯组分配为受 **监督的用户和组** 选择。
 
     >[!IMPORTANT]
-    >您必须将请求与 Microsoft 支持文件一起使用，以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的团队聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+    >你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户基于云的邮箱中的 Teams 聊天数据。
 
@@ -194,7 +194,7 @@ ms.locfileid: "48245899"
 ### <a name="conditional-settings"></a>条件设置
 <a name="ConditionalSettings"> </a>
 
-您为策略选择的条件适用于来自组织中的电子邮件和第三方源的通信 (例如来自即时 Bloomberg 或 DropBox) 。
+您为策略选择的条件适用于来自组织中的电子邮件和第三方源的通信 (如 Bloomberg) 中所示。
 
 下表对每个条件进行了详细说明。
   
