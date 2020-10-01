@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 440d8756e68b022b3b5e7bb4513e2cb3c199f335
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417936"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305042"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 数据保护官员
 
@@ -33,7 +33,7 @@ DPO 角色要求候选人至少具有七年的专业数据保护经验，或 10 
 
 ## <a name="nature-of-the-role"></a>角色性质
 
-DPO 以适当而及时的方式参与个人数据保护相关的所有关键问题。这在一定程度上是由 DPO 在对由 Microsoft 生成的所有数据保护影响评估 (DPIA) 进行审阅和建议时所充当的角色来实现的。DPIA 计划旨在捕获 Microsoft 处理的所有个人数据，因此，DPO 在公司全局层面深入洞察，并有机会就 Microsoft 在个人数据处理方面对 GDPR 履行的义务知会 Microsoft 并提出建议。同一机制还允许 DPO 监视 Microsoft 对适用的数据保护法规（其中包括 GDPR 以及 Microsoft 内部策略和控制）的遵循情况。 
+DPO 以适当而及时的方式参与个人数据保护相关的所有关键问题。此举在一定程度上是由 DPO 在对由 Microsoft 生成的所有数据保护影响评估 (DPIA) 进行审阅和建议时所充当的角色来实现的。DPIA 计划旨在捕获 Microsoft 处理的所有个人数据，因此，DPO 在公司全局层面深入洞察，并有机会就 Microsoft 在个人数据处理方面对 GDPR 履行的义务知会 Microsoft 并提出建议。同一机制还允许 DPO 监视 Microsoft 对适用的数据保护法规（其中包括 GDPR 以及 Microsoft 内部策略和控制）的遵循情况。 
 
 ## <a name="position-of-the-data-protection-officer"></a>数据保护官员的职责
 
