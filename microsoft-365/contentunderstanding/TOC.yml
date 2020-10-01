@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: 创建提取器时利用术语存储分类
       href: leverage-term-store-taxonomy.md
+- name: 采用
+  items:
+    - name: 采用入门
+      href: adoption-getstarted.md
 - name: 设置和管理
   items:
     - name: 设置内容理解
