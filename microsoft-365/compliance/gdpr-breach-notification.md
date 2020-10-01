@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415876"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305176"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 泄露通知
 
@@ -30,7 +30,7 @@ ms.locfileid: "47415876"
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>根据 GDPR，什么构成了个人数据泄露行为？
 
-个人数据是指，所有与个人相关、可直接或间接表明身份的信息。 个人数据泄露是指，“导致传输、存储或以其他方式处理的个人数据遭到意外或非法破坏、丢失、更改、未经授权披露或访问的违反安全之事宜”。
+个人数据是指，所有与个人相关、可直接或间接表明身份的信息。 个人数据泄露是指，“导致传输、存储或以其他方式处理的个人数据遭到意外或非法破坏、丢失、更改、未经授权披露或访问的违反安全之事宜。”
 
 ## <a name="terminology"></a>术语
 

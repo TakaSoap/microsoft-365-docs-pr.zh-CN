@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949912"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327469"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -30,7 +30,7 @@ Microsoft 365 企业版是一个完整的智能解决方案，它让每个人都
 
 Microsoft 365 企业版包括：
 
-|服务|说明|
+|服务|Description|
 |---|---|
 |本地和基于云的应用和生产力服务|包括 Microsoft 365 企业应用版、适用于 PC 和 Mac 的最新 Office 应用（例如 Word、Excel、PowerPoint、Outlook 和其他应用），以及用于电子邮件、文件存储和协作、会议等的一整套在线服务。|
 |Windows 10 企业版|满足中大型组织的需求。 对于用户而言，这是最高效、最安全的 Windows 版本。 对于 IT 专业人员，它还提供全面的部署、设备和应用管理。|

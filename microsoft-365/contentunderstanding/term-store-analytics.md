@@ -8,36 +8,35 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07b472eac9eba55f7a0a972ec818e0fbcb300552
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+ms.openlocfilehash: 75bd60aab424bdf391038a95055a6660ef2ceecc
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295792"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322207"
 ---
 # <a name="term-store-reports"></a>术语库报告
 
-您可以在 SharePoint 管理中心访问术语库的报告。 展开 " **报表**"，然后单击 " **内容服务**"。
+可在 SharePoint 管理中心中访问术语库的报告。 展开“**报告**”，然后单击“**内容服务**”。
 
-可以使用以下报告：
+可使用以下报告：
 
 ### <a name="term-store-operations"></a>术语库操作
 
-查看在15天内已在术语库中执行的首要操作，并查看该周期中每日卷的趋势。 当您想要在高级别了解术语库中的更改的性质并确定操作卷中的任何意外趋势时，这将非常有用。 
+查看 15 天内发生在术语库中的首要操作，并查看该周期中每日卷的趋势。 当你想要了解术语库在高级别中的更改性质并确定操作中的任何意外趋势时，此功能非常有用。 
 
-### <a name="term-store-composition"></a>术语库组合
+### <a name="term-store-composition"></a>术语库的组成
 
-查看常规托管术语和企业关键字之间的术语类型的分布。 根据需要将多个关键字移动到托管术语。 如果要确定用户是否主动使用关键字，这将非常有用。 您可以查看它们以确定托管术语的潜在候选人。
+查看常规托管术语和企业关键字之间的术语类型分布。 如果需要，可将多个关键字移动到托管术语。 当你想确定用户是否正在活跃地使用关键字时，此功能非常有用。 你可以查看它们以确定托管术语的可能候选对象。
 
-### <a name="open-and-closed-term-sets"></a>开放和封闭术语集
+### <a name="open-and-closed-term-sets"></a>开放式和封闭式术语集
 
-查看打开和关闭的术语集的分布。 如果您想要了解允许用户添加术语的术语集的数目，这将非常有用。 如果需要，可以将其转换为 "已关闭"，例如，如果卷意外增长。 
+查看开放式和封闭式术语集的分布。 如果想了解允许用户添加术语的术语集数目，这将非常有用。 如果需要，你可以将其转换为封闭式（例如，当卷意外增长时）。 
 
-### <a name="terms-without-synonyms"></a>不含同义词的术语
+### <a name="terms-without-synonyms"></a>无同义词的术语
 
-查看每个添加的工作语言中未定义同义词的术语数。 这有助于确定要在其中定义同义词的语言。 同义词可帮助最终用户消除歧义并找到正确的术语以标记其内容。
+查看每个已添加的工作语言中没有定义同义词的术语数目。 这有助于识别想要定义同义词的语言。 同义词可帮助最终用户消除歧义并找到正确的术语以标记其内容。
 
 ## <a name="see-also"></a>另请参阅
 
