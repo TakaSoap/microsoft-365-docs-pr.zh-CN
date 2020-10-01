@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 了解有关威胁跟踪程序的信息，包括新的重要跟踪程序，以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: e4e157e64da92cf3c9178af1223fbc6c85e3fd95
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c631a6d9ad56c2bd155a9aa24b3758eb30d10cf7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201791"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327149"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -88,22 +88,20 @@ ms.locfileid: "48201791"
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>跟踪跟踪和 Office 365 高级威胁防护
 
-通过我们的 inaugural 值得注意的威胁，我们突出显示了 [Office 365 ATP 安全附件](atp-safe-attachments.md)检测到的高级恶意软件威胁。 如果你是 Office 365 企业版 E5 客户，并且未使用 [office 365 高级威胁防护](office-365-atp.md) (ATP) ，则应为-它包含在你的订阅中。 即使您有其他安全工具筛选与 Office 365 服务的电子邮件流，ATP 也能提供值。 但是，当您的主要电子邮件安全解决方案是 Office 365 时，反垃圾邮件和 [Office 365 ATP 安全链接](atp-safe-links.md) 功能将发挥最佳效果。 
+通过我们的 inaugural 值得注意的威胁，我们会突出显示 [安全附件](atp-safe-attachments.md)检测到的高级恶意软件威胁。 如果你是 Office 365 企业版 E5 客户，并且未使用 [office 365 高级威胁防护](office-365-atp.md) (ATP) ，则应为-它包含在你的订阅中。 即使您有其他安全工具筛选与 Office 365 服务的电子邮件流，ATP 也能提供值。 但是，当您的主要电子邮件安全解决方案是 Office 365 时，反垃圾邮件和 [安全链接](atp-safe-links.md) 功能将发挥最佳效果。
   
 ![安全 &amp; 合规性中心中的 ATP](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
-在当今的威胁-riddled world 中，仅运行传统的反恶意软件扫描意味着您不能充分抵御攻击。 如今，更复杂的攻击者使用常用工具来创建不受传统签名的反恶意软件引擎识别的新的、模糊的或延迟的攻击。 ATP 安全附件功能会获取电子邮件附件，并将其 detonates 在虚拟环境中，以确定它们是安全的还是恶意的。 此沙箱进程在虚拟计算机环境中打开每个文件，然后观察在打开文件后会发生什么情况。 无论是 PDF、压缩文件还是 Office 文档，恶意代码都可以隐藏在文件中，只有在受害者在其计算机上打开它后才激活。 通过 detonating 和分析电子邮件流中的文件，Office 365 ATP 功能将根据行为、文件信誉和许多试探规则找到这些威胁。
+在当今的威胁-riddled world 中，仅运行传统的反恶意软件扫描意味着您不能充分抵御攻击。 如今，更复杂的攻击者使用常用工具来创建不受传统签名的反恶意软件引擎识别的新的、模糊的或延迟的攻击。 安全附件功能将接收电子邮件附件，并将其 detonates 在虚拟环境中，以确定它们是安全的还是恶意的。 此沙箱进程在虚拟计算机环境中打开每个文件，然后观察在打开文件后会发生什么情况。 无论是 PDF、压缩文件还是 Office 文档，恶意代码都可以隐藏在文件中，只有在受害者在其计算机上打开它后才激活。 通过 detonating 和分析电子邮件流中的文件，Office 365 ATP 功能将根据行为、文件信誉和许多试探规则找到这些威胁。
   
-新的值得注意的威胁筛选器突出显示最近通过 ATP 安全附件检测到的项目。 这些检测项表示在电子邮件流或其他客户的电子邮件中，Microsoft 365 以前未发现的新恶意文件。 请注意 "值得注意的威胁跟踪程序" 中的项目，查看这些项目的目标，并查看 "高级分析" 选项卡上显示的沙箱详细信息 (通过在资源管理器) 中单击电子邮件的主题找到。 注释您只会在 ATP 安全附件功能检测到的电子邮件上找到此选项卡-此值得注意的跟踪器包含该筛选器，但您也可以在资源管理器中使用该筛选器进行其他搜索。
+新的值得注意的威胁筛选器突出显示最近通过安全附件检测到的项目。 这些检测项表示在电子邮件流或其他客户的电子邮件中，Microsoft 365 以前未发现的新恶意文件。 请注意 "值得注意的威胁跟踪程序" 中的项目，查看这些项目的目标，并查看 "高级分析" 选项卡上显示的沙箱详细信息 (通过在资源管理器) 中单击电子邮件的主题找到。 注释您只会在安全附件功能检测到的电子邮件上找到此选项卡-此值得注意的跟踪器包含该筛选器，但您也可以在资源管理器中使用该筛选器进行其他搜索。
   
 ## <a name="next-steps"></a>后续步骤
 
 - 如果您的组织尚不具备这些 Office 365 威胁调查和响应功能，请参阅 [如何获取 office 365 威胁调查和响应功能？](office-365-ti.md)。
-    
-- 确保安全团队具有分配的正确角色和权限。 您必须是全局管理员，或者具有安全管理员或在安全合规中心中分配的 "搜索和清除" 角色 &amp; 。 查看 [安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
-    
-- 监视新跟踪程序，使其显示在 Microsoft 365 环境中。 如果可用，你将在 [此处](https://protection.office.com/)找到你的跟踪程序。 转到 **威胁管理** \> **威胁跟踪**。
-    
-- 如果尚未执行此操作，请详细了解和为你的组织配置 [office 365 高级威胁防护](office-365-atp.md) ，包括 [office 365 ATP 安全链接](atp-safe-links.md) 和 [office 365 atp 安全附件](atp-safe-attachments.md)。
-  
 
+- 确保安全团队具有分配的正确角色和权限。 您必须是全局管理员，或者具有安全管理员或在安全合规中心中分配的 "搜索和清除" 角色 &amp; 。 查看 [安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+
+- 监视新跟踪程序，使其显示在 Microsoft 365 环境中。 如果可用，你将在 [此处](https://protection.office.com/)找到你的跟踪程序。 转到 **威胁管理** \> **威胁跟踪**。
+
+- 如果尚未执行此操作，请详细了解和为你的组织配置 [Office 365 高级威胁防护](office-365-atp.md) ，包括 [安全链接](atp-safe-links.md) 和 [安全附件](atp-safe-attachments.md)。

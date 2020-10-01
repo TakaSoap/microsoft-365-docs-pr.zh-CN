@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 介绍与 Microsoft 365、Active Directory 域服务清理和 Azure Active Directory Connect 工具的目录同步。
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687839"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327375"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 的混合标识和目录同步
 
@@ -143,9 +143,5 @@ PTA 也适用于具有安全要求的组织，以立即强制实施本地用户�
 
 ## <a name="next-step"></a>后续步骤
 
-准备好部署混合标识时，请参阅 [prepare to 预配用户](prepare-for-directory-synchronization.md)。
+当您准备好部署混合标识时，请参阅 [准备进行目录同步](prepare-for-directory-synchronization.md)。
   
-## <a name="see-also"></a>另请参阅
-
-[Microsoft 365 企业版概述](microsoft-365-overview.md)
-

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁资源管理器和实时检测报告来调查安全合规性中心中的威胁并对其做出响应 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200103"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326981"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -140,7 +140,7 @@ ms.locfileid: "48200103"
 
 ![筛选器已筛选为仅显示 ATP 沙箱结果](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-在此视图中，我们现在正在查看由 [Office 365 ATP 安全附件](atp-safe-attachments.md)触发的文件的数据。 在图表下方，我们可以查看包含由 ATP 安全附件检测到的附件的特定电子邮件的详细信息。
+在此视图中，我们现在正在查看由 [安全附件](atp-safe-attachments.md)触发的文件的数据。 在图表下方，我们可以看到有关具有安全附件检测到的附件的特定电子邮件的详细信息。
 
 ![包含检测到的附件的电子邮件的特定详细信息](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

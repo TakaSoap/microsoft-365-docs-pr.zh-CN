@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主题将引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。
-ms.openlocfilehash: 72040469f802c2cb5a4fac132ff1c3cd8999e124
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9e36c85b74a237a8b14904839aad55ac676dcaf4
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202015"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326921"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -47,8 +47,8 @@ Microsoft 365 安全中心包含可保护您的环境的功能。 它还包括�
 |---|---|---|
 |**反网络钓鱼**|是|如果您有自定义域，请配置默认反网络钓鱼策略以保护您最有价值的用户（如 CEO）的电子邮件帐户，并保护您的域。 查看 [office 365 中的反网络钓鱼策略](set-up-anti-phishing-policies.md) ，请参阅 [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md) 或在 [Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。|
 |**反恶意软件引擎**|是| 编辑默认策略： <br/> &ensp;&ensp;* 常见附件类型筛选器—选择 "开" <br/><br/> 您还可以创建自定义恶意软件筛选器策略，并将其应用到组织中的指定用户、组或域。 <br/><br/> 详细信息： <br/> &ensp;&ensp;* [反恶意软件保护](anti-malware-protection.md) <br/> &ensp;&ensp;* [配置反恶意软件策略](configure-anti-malware-policies.md)|
-|**ATP 安全附件**|否| 在安全附件的主页上，通过选中此框来保护 SharePoint、OneDrive 和 Microsoft 团队中的文件： <br/> &ensp;&ensp;* 打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP <br/><br/> 使用以下设置添加新的安全附件策略： <br/> &ensp;&ensp;* 阻止—使用检测到的恶意软件阻止当前和将来的电子邮件和附件 (选择此选项)  <br/> &ensp;&ensp;* 启用重定向— (选中此框并输入电子邮件地址，如管理员或隔离帐户)  <br/> &ensp;&ensp;* 如果恶意软件扫描附件超时或发生错误，则应用上述选择)  (选中此框 <br/> &ensp;&ensp;* 应用于-收件人域为 (选择您的域)  <br/><br/>详细信息： [设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)|
-|**ATP 安全链接**|是| 将此设置添加到整个组织的默认策略： <br/> &ensp;&ensp;* 使用中的安全链接： Microsoft 365 Apps for enterprise、Office for iOS 和 Android (选择此选项) 。 <br/><br/>针对特定收件人的推荐策略： <br/> &ensp;&ensp;* 当用户单击链接时，将重新编写 Url 并对已知恶意链接列表进行检查， (选择此选项) 。 <br/> &ensp;&ensp;* 使用安全附件扫描可下载的内容 (选中此框) 。 <br/> &ensp;&ensp;* 应用于—收件人域为 (选择您的域) 。 <br/><br/> 有关详细信息，请： [Office 365 ATP 安全链接](atp-safe-links.md)。|
+|**Office 365 ATP 中的安全附件**|否|在 "安全附件" 主页上，单击 " **全局设置** "，然后打开此设置： <br/> &ensp;&ensp;**打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP** <br/><br/> 使用以下设置创建安全附件策略： <br/> &ensp;&ensp;* **阻止**：选择 " **阻止** " 作为未知的恶意软件响应。 <br/> &ensp;&ensp;* **启用重定向**：选中此框并输入电子邮件地址，如管理员或隔离帐户。 <br/> &ensp;&ensp;* **如果恶意软件扫描附件超时或出现错误，则应用上述选择**：选中此框。 <br/> &ensp;&ensp;* **应用**于： **收件人域是** \> 选择您的域。 <br/><br/> 详细信息： [适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md) 和 [设置安全附件策略](set-up-atp-safe-attachments-policies.md)|
+|**Office 365 ATP 中的安全链接**|是|在 "安全链接" 主页上，单击 " **全局设置**"： <br/> &ensp;&ensp;* **使用中的安全链接： Office 365 应用程序**：验证此设置是否已打开。 <br/> &ensp;&ensp;* **在用户单击安全链接时不进行跟踪**：关闭此设置以跟踪用户单击。<br/><br/>使用以下设置创建安全链接策略： <br/> &ensp;&ensp;* **选择邮件中未知的潜在恶意 url 的操作**：验证此设置是否已 **启用**。 <br/> &ensp;&ensp;* **为 Microsoft 团队中的未知或可能存在的恶意 Url 选择操作**：确认此设置已 **打开**。 <br/> &ensp;&ensp;* **对指向文件的可疑链接和链接应用实时 URL 扫描**：选中此框。 <br/> &ensp;&ensp;&ensp;&ensp;* **等待 URL 扫描完成后再传递邮件**：选中此框。 <br/> &ensp;&ensp;* **对在组织内发送的电子邮件应用安全链接**：选中此框。 <br/> &ensp;&ensp;* **不允许用户单击到原始 URL**：选中此框。 <br/> &ensp;&ensp;* **应用**于： **收件人域是** \> 选择您的域。 <br/><br/> 详细信息： [设置安全链接策略](set-up-atp-safe-links-policies.md)。|
 |**反垃圾邮件 (邮件筛选) **|是| 要监视的内容： <br/> &ensp;&ensp;* 垃圾邮件太多—选择 "自定义设置" 并编辑默认垃圾邮件筛选器策略。 <br/> &ensp;&ensp;* 欺骗性智能—查看欺骗您的域的发件人。 阻止或允许这些发件人。 <br/><br/>有关详细信息，请执行以下操作： [Microsoft 365 电子邮件反垃圾邮件保护](anti-spam-protection.md)。|
 |***电子邮件身份验证***|是|电子邮件身份验证使用域名系统 (DNS) 向有关电子邮件发件人的电子邮件添加可验证信息。 Microsoft 365 为其默认域 (onmicrosoft.com) 设置电子邮件身份验证，但 Microsoft 365 管理员还可以对自定义域使用电子邮件身份验证。 使用三种身份验证方法： <br/><br/> &ensp;&ensp;* 发件人策略框架 (或 SPF) 。<br/>&ensp;&ensp;&ensp;&ensp;-有关设置，请参阅 [在 Microsoft 365 中设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;* 域密钥识别的邮件 (DKIM) 。 <br/> &ensp;&ensp;&ensp;&ensp;-请参阅 [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)。 <br/>&ensp;&ensp;&ensp;&ensp;-配置 DKIM 后，在安全中心启用它。<br/> &ensp;&ensp;* 基于域的邮件身份验证、报告和一致性 (DMARC) 。 <br/> &ensp;&ensp;&ensp;&ensp;-适用于 DMARC 安装程序 [使用 DMARC 验证 Microsoft 365 中的电子邮件](use-dmarc-to-validate-email.md)。|
 |

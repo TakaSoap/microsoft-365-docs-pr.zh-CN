@@ -3,7 +3,7 @@ title: 为实现到 Microsoft 365 的目录同步做好准备
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何通过使用此方法来准备将用户预配到 Microsoft 365 （使用目录同步）和长期优点。
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269413"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327281"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
@@ -43,9 +43,9 @@ ms.locfileid: "48269413"
 - （可选）启用单一登录方案
 - 在 Microsoft 365 中自动执行帐户更改
 
-有关使用目录同步的优势的详细信息，请参阅 Microsoft 365 的 [目录同步路线图]( https://go.microsoft.com/fwlink/p/?LinkId=525398) 和 [混合标识](plan-for-directory-synchronization.md)。
+有关使用目录同步的优势的详细信息，请参阅[Microsoft 365 的适用](plan-for-directory-synchronization.md)于[azure Active DIRECTORY (azure AD) ](https://go.microsoft.com/fwlink/p/?LinkId=525398)和混合标识的混合标识。
 
-但是，目录同步需要进行规划和准备，以确保 Active Directory 域服务 (AD DS) 同步到 Microsoft 365 订阅的 Azure Active Directory (Azure AD) 租户，并且至少出现了错误。
+但是，目录同步需要进行规划和准备，以确保 Active Directory 域服务 (AD DS) 同步到 Microsoft 365 订阅的 Azure AD 租户，并具有最少的错误。
 
 请按照以下步骤操作，以获得最佳效果。
 
@@ -54,7 +54,7 @@ ms.locfileid: "48269413"
 在将 AD DS 同步到 Azure AD 租户之前，需要清理 AD DS。
 
 > [!IMPORTANT]
-> 如果在同步之前不执行 AD DS 清理，则部署过程可能会产生严重的负面影响。 可能需要数天甚至数周才能完成目录同步的循环、识别错误和重新同步。
+> 如果在同步之前不执行 AD DS 清理，则可能会导致部署过程产生严重的负面影响。 可能需要数天甚至数周才能完成目录同步的循环、识别错误和重新同步。
 
 在 AD DS 中，为每个要分配了 Microsoft 365 许可证的用户帐户完成以下清理任务：
 
@@ -100,7 +100,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
   - 如果该属性存在于用户对象中，它将与 Microsoft 365 同步，但 Microsoft 365 不需要或使用它。
   - 最大字符数：64
 
-- **信箱**
+- **mail**
 
   - 属性值在目录中必须是唯一的。
 

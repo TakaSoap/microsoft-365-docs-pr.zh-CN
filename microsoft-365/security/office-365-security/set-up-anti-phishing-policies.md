@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Office 365 高级威胁防护 (Office 365 ATP) 中提供的反网络钓鱼策略。
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195911"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326933"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -220,4 +220,4 @@ ATP 反网络钓鱼策略仅在具有 Office 365 ATP 的组织中可用。 例�
 
 - **4-最严格**：被标识为低、中或高可信度的网络钓鱼的邮件被视为以非常高的置信度进行标识。
 
-误报 (正常的可能性可能会随着此设置的增加而被标记为坏) 。 有关推荐设置的信息，请参阅 [OFFICE ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
+误报 (正常的可能性可能会随着此设置的增加而被标记为坏) 。 有关推荐设置的信息，请参阅 [ATP 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings)。

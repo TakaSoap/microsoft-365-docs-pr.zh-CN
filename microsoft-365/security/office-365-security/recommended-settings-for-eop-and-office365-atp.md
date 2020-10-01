@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和高级威胁防护 (ATP) 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护 (ATP) ，还会获得什么额外内容？
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202707"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328007"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP) ** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护 (ATP) ** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
@@ -122,7 +121,7 @@ ms.locfileid: "48202707"
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|**是否要在邮件被隔离时通知收件人？** <br/><br/> _Action_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
+|**是否要在邮件被隔离时通知收件人？** <br/><br/> _操作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <br/><br/> _EnableFileFilter_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
 |**恶意软件零小时自动清除** <br/><br/> _ZapEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**通知内部发件人** 未送达邮件 <br/><br/> _EnableInternalSenderNotifications_|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`||
@@ -153,7 +152,7 @@ Office 365 ATP 包括安全附件和安全链接策略，以防止电子邮件�
 
 如果你已将 Office 365 ATP 订阅添加到你的 EOP，请设置以下配置。
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP 反网络钓鱼策略设置
+### <a name="atp-anti-phishing-policy-settings"></a>ATP 反网络钓鱼策略设置
 
 EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包含更多的功能和控制，可帮助预防、检测和补救攻击。 若要创建和配置这些策略，请参阅 [在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
@@ -203,27 +202,31 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |---|---|---|---|
 |**高级网络钓鱼阈值** <br/><br/> _PhishThresholdLevel_|**2-主动** <br/><br/> `2`|**3-更主动** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>ATP 安全链接策略设置
+### <a name="safe-links-settings"></a>安全链接设置
 
-若要配置这些设置，请参阅 [设置 Office 365 ATP 安全链接策略](set-up-atp-safe-links-policies.md)。
+Office 365 中的安全链接包含适用于活动安全链接策略中包含的所有用户的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [Office 365 ATP 中的安全链接](atp-safe-links.md)。
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>所有用户的默认策略中的安全链接策略设置
+#### <a name="global-settings-for-safe-links"></a>安全链接的全局设置
 
-**注意**：在 PowerShell 中，可对这些设置使用 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet。
+若要配置这些设置，请参阅 [在 Office 365 ATP 中配置安全链接的全局设置](configure-global-settings-for-safe-links.md)。
+
+在 PowerShell 中，可对这些设置使用 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet。
 
 ****
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|使用 Office 365 desktop 和 mobile (iOS 和 Android) 客户端中的 ATP 安全链接。|
-|**使用中的安全链接： Office Web Access 助理** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在 Office Web Apps 中使用 ATP 安全链接。 请注意，此设置是不可配置的。|
-|**用户单击安全链接时不进行跟踪** <br/><br/> _TrackClicks_|关闭 <br/><br/> `$true`|关闭 <br/><br/> `$true`||
-|**不要让用户通过指向原始 URL 的安全链接进行单击** <br/><br/> _AllowClickThrough_|打开 <br/><br/> `$false`|打开 <br/><br/> `$false`||
+|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在受支持的 Office 365 desktop 和 mobile (iOS 和 Android) 应用中使用 ATP 安全链接。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
+|**用户单击安全链接时不进行跟踪** <br/><br/> _TrackClicks_|关闭 <br/><br/> `$true`|关闭 <br/><br/> `$true`|此设置与跟踪用户在受支持的 Office 365 应用程序中单击的操作相关。|
+|**不要让用户通过指向原始 URL 的安全链接进行单击** <br/><br/> _AllowClickThrough_|打开 <br/><br/> `$false`|打开 <br/><br/> `$false`|此设置与在受支持的 Office 365 应用程序中单击 "通过" 相关。|
+|使用中的安全链接： Office Web Access 助理 <br/><br/> _EnableSafeLinksForWebAccessCompanion_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|使用 Office Web Apps 中的安全链接。 请注意，此设置是不可配置的。|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>针对特定用户的自定义策略中的安全链接策略设置
+#### <a name="safe-links-policy-settings"></a>安全链接策略设置
 
-**注意**：在 PowerShell 中，对这些设置使用 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
+若要配置这些设置，请参阅 [在 Office 365 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+
+在 PowerShell 中，可对这些设置使用 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
 ****
 
@@ -238,13 +241,15 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |**不要让用户通过指向原始 URL 的安全链接进行单击** <br/><br/> _DoNotAllowClickThrough_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>ATP 安全附件策略设置
+### <a name="safe-attachments-settings"></a>安全附件设置
 
-若要配置这些设置，请参阅 [设置 Office 365 ATP 安全附件策略](set-up-atp-safe-attachments-policies.md)。
+Office 365 中的安全附件包含适用于包含在活动安全附件策略中的所有用户的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [Office 365 ATP 中的安全附件](atp-safe-attachments.md)。
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>所有用户的默认策略中的安全附件策略设置
+#### <a name="global-settings-for-safe-attachments"></a>安全附件的全局设置
 
-**注意**：在 PowerShell 中，可对这些设置使用 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet。
+若要配置这些设置，请参阅在[microsoft 365 E5 中](safe-docs.md)[打开 SharePoint、OneDrive 和 Microsoft 团队](turn-on-atp-for-spo-odb-and-teams.md)和安全文档的 ATP。
+
+在 PowerShell 中，可对这些设置使用 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet。
 
 ****
 
@@ -252,18 +257,20 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |---|---|---|---|
 |**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP** <br/><br/> _EnableATPForSPOTeamsODB_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**打开 Office 客户端的安全文档**<bt/><br/> _EnableSafeDocs_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||此设置仅适用于 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证。 有关详细信息，请参阅 [Office 365 高级威胁防护中的安全文档](safe-docs.md)。|
-|**允许用户在受保护的视图中单击，即使安全文档识别为恶意文件也是如此**<bt/><br/> _AllowSafeDocsOpen_|关闭 <br/><br/> `$false`|关闭 <br/><br/> `$false`||
+|**允许用户在受保护的视图中单击，即使安全文档识别为恶意文件也是如此**<bt/><br/> _AllowSafeDocsOpen_|关闭 <br/><br/> `$false`|关闭 <br/><br/> `$false`|此设置与安全文档相关。|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>针对特定用户的自定义策略中的安全附件策略设置
+#### <a name="safe-attachments-policy-settings"></a>安全附件策略设置
 
-**注意**：在 PowerShell 中，对这些设置使用 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
+若要配置这些设置，请参阅 [在 Office 365 ATP 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)。
+
+在 PowerShell 中，可对这些设置使用 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
 ****
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|**安全附件未知的恶意软件响应** <br/><br/> _Action_|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`||
+|**安全附件未知的恶意软件响应** <br/><br/> _操作_|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`||
 |**在检测时重定向附件** ： **启用重定向** <br/><br/> _重定向_ <br/><br/> _RedirectAddress_|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|
 |**如果恶意软件扫描附件超时或发生错误，则应用上面的选择。** <br/><br/> _ActionOnError_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |

@@ -3,7 +3,7 @@ title: 混合解决方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 提供指向在 Microsoft Azure 中部署 Office Server 工作负荷的有用信息的链接列表。
-ms.openlocfilehash: bb43b2cc72a8f314b9f3ded007f126f41c5ebffc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba294b437d815c81c7747f60b2a82ca0bef05e7a
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688154"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327911"
 ---
 # <a name="hybrid-solutions"></a>混合解决方案
 
@@ -52,8 +52,6 @@ ms.locfileid: "46688154"
 
 [Microsoft 365 解决方案和体系结构中心](../solutions/solution-architecture-center.md)
   
-[适用于企业架构师的 Microsoft 云插图](../solutions/cloud-architecture-models.md)
-  
-[适用于企业测试实验室指南 (Tlg) 的 Microsoft 365 ](m365-enterprise-test-lab-guides.md)
+[面向企业架构师的 Microsoft 云图解](../solutions/cloud-architecture-models.md)
   
 [SharePoint、Exchange、Skype for Business 和 Lync 的体系结构模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

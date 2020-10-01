@@ -3,7 +3,7 @@ title: Microsoft 365 仅限云身份标识
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何在 Microsoft 365 订阅使用仅云标识时创建用户和组。
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547754"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327923"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>Microsoft 365 仅限云身份标识
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 对于仅限云身份，你的所有用户、组和联系人都存储在 Microsoft 365 订阅 (Azure AD) 租户的 Azure Active Directory 中。 下面是仅限云身份的基本组件。
  
@@ -58,17 +58,9 @@ ms.locfileid: "47547754"
 - 自动为用户预配软件 (SaaS) 应用程序，并使用多重身份验证 (MFA) 和其他条件访问策略来保护对这些应用程序的访问。
 - 为 SharePoint Online 团队网站设置权限和访问权限级别。
 
-创建新 ***用户*** 时使用的是：
+## <a name="next-steps-for-cloud-only-identity"></a>仅限云标识的后续步骤
 
-- [Microsoft 365 管理员中心](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [PowerShell for Microsoft 365](create-user-accounts-with-microsoft-365-powershell.md)
-
-您可以使用以下内容创建新 ***组*** ：
-
-- [Microsoft 365 管理员中心](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [PowerShell for Microsoft 365](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>仅限云标识的下一步
-
-[向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
+- [管理用户帐户](manage-microsoft-365-accounts.md)
+- [向用户帐户分配许可证](assign-licenses-to-user-accounts.md)
+- [管理组和组成员身份](manage-microsoft-365-groups.md)
+- [管理用户帐户密码](manage-microsoft-365-passwords.md)

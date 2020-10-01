@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,22 +17,22 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b6e961dc8e7de6bfaf16508fa6c70f8a90fa4080
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131574"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327434"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
 贵组织的新式安全外围设备现已扩展到你的网络之外，以包括从各种设备从任意位置访问基于云的应用的用户。 您的安全基础结构需要确定是否应授予给定的访问请求，以及在何种情况下。 
 
-此决定应基于登录的用户帐户、所使用的设备、用户正在使用的应用程序、用于访问请求的位置，以及对请求风险的评估的评估。 此功能有助于确保只有经批准的用户和设备才能访问你的关键资源。
+此决定应基于登录的用户帐户、所使用的设备、用户正在使用的应用程序、用于访问请求的位置，以及对请求风险的评估的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
 
 本系列文章介绍了一组标识和设备访问的先决条件配置，以及一组 Azure Active Directory (Azure AD) 条件访问、Microsoft Intune 和其他策略，以安全访问 Microsoft 365 for 企业云应用和服务、其他 SaaS 服务以及使用 Azure AD 应用程序代理发布的本地应用程序。
 
-在三层中，建议使用标识和设备访问设置和策略：对具有高度管控或保密数据的环境的基准保护、敏感保护和保护。 这些层及其相应的配置在数据、标识和设备中提供了一致的保护级别。
+在三层中，建议使用标识和设备访问设置和策略：对具有高度管控或保密数据的环境的基准保护、敏感保护和保护。 这些层及其相应的配置会跨数据、标识和设备，提供一致级别的保护。
 
 这些功能及其建议：
 
@@ -115,7 +115,7 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 | [设备注册](/azure/active-directory/devices/overview) | 将设备注册到 Azure AD 以创建设备的标识。 当用户登录并应用需要加入域或合规的 Pc 的条件访问策略时，此标识用于对设备进行身份验证。 在本指南中，我们使用设备注册自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。 | Microsoft 365 E3 或 E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 使您能够检测到影响组织标识的潜在漏洞，并将自动修正策略配置为低、中和高的登录风险和用户风险。 本指南依赖此风险评估来应用多因素身份验证的条件访问策略。 本指南还包括一个条件访问策略，该策略要求用户在为其帐户检测到高风险活动时更改其密码。 | Microsoft 365 E5，Microsoft 365 E3 with Identity & 威胁防护加载项、EMS E5 或 Azure 高级 P2 许可证 |
 | [自助服务密码重置 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | 通过提供管理员可以控制的多种身份验证方法的验证，允许用户安全地重置其密码，而无需技术人员干预。 | Microsoft 365 E3 或 E5 |
-| [Azure AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止密码列表将自动应用于 Azure AD 租户中的所有用户。 您可以在 "自定义禁止密码" 列表中定义其他条目。 当用户更改或重置其密码时，将检查这些禁止的密码列表，以强制使用强密码。 |  Microsoft 365 E3 或 E5 |
+| [Azure AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。 |  Microsoft 365 E3 或 E5 |
 ||||
 
 ![标识和设备访问的组件。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -162,6 +162,25 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 上表反映了许多组织支持组织拥有的设备的组合以及个人或 BYODs 的趋势，以实现整个工作的工作效率。 Intune 应用保护策略可确保电子邮件在组织拥有的设备和 BYODs 上的 exfiltrating 从 Outlook 移动应用和其他 Office 移动应用程序中受到保护。  
 
 我们建议由 Intune 或加入域来管理组织拥有的设备，以应用更多的保护和控制。 根据数据敏感度的不同，您的组织可能会选择不允许对特定用户群体或特定应用的 BYODs。
+
+## <a name="deployment-and-your-apps"></a>部署和应用
+
+在为 Azure AD 集成的应用程序配置和推出标识和设备访问配置之前，必须执行以下操作： 
+
+- 确定要保护的组织中使用的应用程序。 
+- 分析此应用列表以确定提供适当保护级别的策略集。 
+
+  不应为每个应用程序创建单独的策略集，因为对它们的管理可能会变得麻烦。 Microsoft 建议您对相同用户具有相同保护要求的应用进行分组。 
+
+  例如，您可以拥有一组策略，其中包含所有适用于所有用户的基准保护的 Microsoft 365 应用，以及对所有敏感应用程序（如人力资源或财务部门使用的应用程序）的第二组策略，并将它们应用于这些组。 
+
+一旦您为要保护的应用程序确定了策略集，就可以逐步将策略推广给用户，并解决问题。  
+
+例如，将用于 exchange Online 的所有 Microsoft 365 应用的策略配置为仅使用 Exchange 的其他更改。 将这些策略转出给用户，并解决任何问题。 然后，添加团队并将其作为其他更改并将其汇总到用户。 然后，添加 SharePoint 及其其他更改。 继续添加其他应用程序，直到可以放心地将这些基准策略配置为包含所有 Microsoft 365 应用。 
+
+同样，对于您的敏感应用程序，创建一组策略并一次添加一个应用程序，直到它们全部包含在敏感的应用程序策略集中时，才能继续处理任何问题。 
+
+Microsoft 建议您不要创建适用于所有应用程序的策略集，因为这可能会导致某些意外的配置。 例如，阻止所有应用程序的策略可能会使管理员无法锁定 Azure 门户，并且无法为 Microsoft Graph 等重要终结点配置排除项。 
 
 ## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>配置标识和设备访问的过程中的步骤
 

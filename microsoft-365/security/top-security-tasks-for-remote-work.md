@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 6643228a3f71ba3c0c993577ba60b8e365b3d3df
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318224"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327791"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -49,7 +49,7 @@ ms.locfileid: "48318224"
 |7 |[为来宾配置 MFA 和条件访问，包括 Intune 应用保护](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[将电脑注册到设备管理并要求符合合规性的电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[为云连接优化你的网络](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |11 |[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
@@ -100,14 +100,13 @@ Office 365 ATP：
 
 全局管理员可以配置这些保护：
 
-- [设置 ATP 安全链接](office-365-security/set-up-atp-safe-links-policies.md)
-- [设置 ATP 安全附件策略](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [设置自定义“不重写”URL 列表](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [设置自定义已阻止 URL 列表](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
+- [设置安全链接策略](office-365-security/set-up-atp-safe-links-policies.md)
+- [配置安全链接的全局设置](office-365-security/configure-global-settings-for-safe-links.md)
+- [设置安全附件策略](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 你需要与 Exchange Online 管理员和 SharePoint Online 管理员合作，为这些工作负载配置 ATP：
 
-- [启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
+- [适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](office-365-security/atp-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-azure-advanced-threat-protection"></a>4：配置 Azure 高级威胁防护
 

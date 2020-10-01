@@ -1,5 +1,5 @@
 ---
-title: SharePoint Online 中的病毒检测
+title: SharePoint Online、OneDrive 和 Microsoft 团队中的内置病毒防护
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,35 +19,31 @@ ms.collection:
 - M365-security-compliance
 description: 了解 SharePoint Online 如何检测用户上载的文件中的病毒并阻止用户下载或同步文件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c65db566f165939d72429bcd61b7d0a880814e0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 38d6111fe665e0af79cbd93f534b1058881ff76c
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196507"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327983"
 ---
-# <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 团队中的病毒检测
+# <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 团队中的内置病毒防护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-Microsoft 365 通过检测用户上传到 SharePoint Online、OneDrive 和 Microsoft 团队的文件中的病毒，帮助保护您的环境免受恶意软件的攻击。 上载文件后，可能会对其进行病毒扫描。 如果发现文件感染了病毒，则会设置一个属性，以便用户无法下载或同步该文件。
+Microsoft 365 使用通用的病毒检测引擎来扫描用户上载到 SharePoint Online、OneDrive 和 Microsoft 团队的文件。 此保护包括在所有订阅中，包括 SharePoint Online、OneDrive 和 Microsoft 团队。
 
 > [!IMPORTANT]
-> SharePoint Online 中的这些防病毒功能是包含病毒的一种方法。 它们不是为了抵御针对您的环境的恶意软件的单一防御点。 我们鼓励所有客户在各层评估和实施反恶意软件保护，并应用最佳做法来保护企业基础结构。 有关策略和最佳实践的详细信息，请参阅 [安全路线图](security-roadmap.md)。
+> 内置防病毒功能是一种帮助包含病毒的方法。 它们不是为了抵御针对您的环境的恶意软件的单一防御点。 我们鼓励所有客户在不同的层调查和实施反恶意软件保护，并应用最佳做法来保护其企业基础结构。 有关策略和最佳实践的详细信息，请参阅 [安全路线图](security-roadmap.md)。
 
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>将受感染的文件上载到 SharePoint Online 时，会发生什么情况？
 
-Microsoft 365 使用通用的病毒检测引擎。 引擎在 SharePoint Online 中以异步方式运行，并在上载文件后扫描这些文件。 试探法用于确定要扫描的文件。 当发现文件包含病毒时，会对其进行标记，以便无法再次下载。 在4月2018，我们删除了扫描文件的 25 MB 限制。
+Microsoft 365 病毒检测引擎在 SharePoint Online 中异步运行。 **上载时不会自动扫描所有文件**。 启发式确定要扫描的文件。 找到文件以包含病毒时，文件会被标记为无法再次下载。 在4月2018，我们删除了扫描文件的 25 MB 限制。
 
 以下是所发生的情况：
 
 1. 用户将文件上传到 SharePoint Online。
-
 2. SharePoint Online 决定文件是否符合扫描的条件。
-
 3. 病毒检测引擎将扫描文件。
-
 4. 如果发现了病毒，病毒引擎将对文件设置一个属性，表明它已被感染。
 
 ## <a name="what-happens-when-a-user-tries-to-download-an-infected-file-by-using-the-browser"></a>当用户尝试使用浏览器下载受感染的文件时，会发生什么情况？
@@ -57,25 +53,22 @@ Microsoft 365 使用通用的病毒检测引擎。 引擎在 SharePoint Online �
 以下是所发生的情况：
 
 1. 用户打开 web 浏览器并尝试从 SharePoint Online 下载感染病毒的文件。
-
-2. 向用户提供一条警告，指示已检测到病毒。 向用户提供下载文件的选项，并尝试使用自己的防病毒软件将其清除。
+2. 向用户提供一条警告，指示已检测到病毒。 默认情况下，会向用户提供下载文件的选项，并尝试使用防病毒软件在自己的设备上进行清理。
 
 > [!NOTE]
 >
-> 可以在 SharePoint Online PowerShell 中的[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 上使用*DisallowInfectedFileDownload*参数，以防止用户下载感染病毒的文件，即使在反病毒警告窗口中也是如此。
+> 管理员可以在 SharePoint Online PowerShell 中使用[set-spotenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet 上的*DisallowInfectedFileDownload*参数，以防止用户下载感染病毒的文件，即使在 "反病毒警告" 窗口中也是如此。 有关说明，请参阅 [使用 SharePoint Online PowerShell 防止用户下载恶意文件](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)。
 >
-> 此外，请注意，只要您启用了 *DisallowInfectedFileDownload* 参数，就会完全阻止用户和管理员对检测到的/被阻止的文件的访问。
+> 一旦启用 *DisallowInfectedFileDownload* 参数，就会为用户和管理员完全阻止对已检测/被阻止文件的访问。
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步客户端尝试同步受感染的文件时，会发生什么情况？
 
-无论用户是使用新 OneDrive 同步客户端同步文件 ( # A0) 还是以前的 OneDrive for Business 同步客户端 ( # A1) ，如果文件包含病毒，则同步客户端不会下载它。 同步客户端将显示一条通知，指出文件无法同步。
+OneDrive 同步客户端不会下载包含病毒的文件。 同步客户端将显示一条通知，指出文件无法同步。
 
-## <a name="extended-capabilities-with-office-365-atp"></a>Office 365 ATP 的扩展功能
+## <a name="extended-capabilities-with-office-365-advanced-threat-protection"></a>具有 Office 365 高级威胁防护的扩展功能
 
-启用了 Office 365 ATP for Sharepoint、OneDrive 和 Microsoft 团队的客户 [打开 sharepoint、onedrive 和 Microsoft 团队的 atp](turn-on-atp-for-spo-odb-and-teams.md) ，可以使用安全 & 合规性中心管理用于 AV 和 ATP 检测的隔离文件。 [仅 ATP：使用安全 & 合规性中心管理隔离的文件](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)。
+包含 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md) 包含在订阅中或作为加载项购买的 microsoft 365 组织可以为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP，以增强报告和保护功能。 有关详细信息，请参阅 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
-有关如何配置 SharePoint Online 防病毒的详细信息，请参阅 [针对威胁进行保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements) 和 [打开有关 sharepoint、OneDrive 和 MICROSOFT 团队的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) 。
-
-
+有关 SharePoint Online、OneDrive 和 Microsoft 团队中的防病毒的详细信息，请参阅 [防止威胁](protect-against-threats.md) 并 [打开 SharePoint、OneDrive 和 MICROSOFT 团队的 ATP](turn-on-atp-for-spo-odb-and-teams.md)。

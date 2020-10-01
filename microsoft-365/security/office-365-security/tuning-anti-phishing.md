@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 中确定仿冒邮件的原因以及在将来阻止更多网络钓鱼邮件的原因。
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201671"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328055"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -32,11 +32,11 @@ ms.locfileid: "48201671"
 
 如果你的订阅包括高级威胁防护 (ATP) ，则可以使用 [Office 365 威胁智能](office-365-ti.md) 来标识也收到网络钓鱼邮件的其他用户。 您还可以使用其他选项阻止网络钓鱼邮件：
 
-- [ATP 安全链接](set-up-atp-safe-links-policies.md)
+- [Office 365 ATP 中的安全链接](set-up-atp-safe-links-policies.md)
 
-- [ATP 安全附件](set-up-atp-safe-attachments-policies.md)
+- [Office 365 ATP 中的安全附件](set-up-atp-safe-attachments-policies.md)
 
-- [Microsoft 365 中的 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，可以暂时将策略中的 **高级网络钓鱼阈值** 从 **Standard** 提高到 **主动**、 **更主动**或 **最严格**的。
+- [Office 365 ATP 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，可以暂时将策略中的 **高级网络钓鱼阈值** 从 **Standard** 提高到 **主动**、 **更主动**或 **最严格**的。
 
 验证这些 ATP 功能是否已打开。
 

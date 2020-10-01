@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309102"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327695"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
 
@@ -247,7 +247,7 @@ ms.locfileid: "48309102"
 |出站恶意软件和垃圾邮件异常调查|检测来自组织中用户的组织内部和出站恶意软件、网络钓鱼诈骗或垃圾邮件|
 |发件人域调查|根据需要检查 [Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源中的域信誉|
 |发件人 IP 调查| 根据需要检查 [Microsoft 智能安全图](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源的 IP 信誉|
-|URL 单击调查| 调查受 [Office 365 ATP 安全链接](atp-safe-links.md) 保护的用户对组织的点击率|
+|URL 单击调查| 调查受组织 [中的 Office 365 ATP 安全链接](atp-safe-links.md) 保护的用户的单击|
 |URL 信誉调查|对来自 [Microsoft 智能安全图形](https://www.microsoft.com/security/operations/intelligence) 和外部威胁智能源的 URL 信誉的按需检查|
 |用户活动调查|分析[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中的用户活动异常|
 |用户报告的电子邮件指示器提取|从标头、正文和 [用户报告的电子邮件](enable-the-report-message-add-in.md) 的内容中提取指示器以供调查|
@@ -271,6 +271,6 @@ ms.locfileid: "48309102"
 
 ## <a name="next-steps"></a>后续步骤
 
-- [查看和批准挂起的操作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [查看和批准挂起的操作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [了解 Microsoft 威胁防护中的自动化调查和响应](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

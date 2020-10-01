@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 3afc818f9461ad0cc5ca65ea86d5e90f61f64d9b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132154"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327863"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允许来宾和外部 B2B 访问的策略
 
@@ -40,7 +40,7 @@ ms.locfileid: "48132154"
 
 下表列出了您需要创建和更新的策略。 常见策略链接到 [常见标识和设备访问策略](identity-access-policies.md) 文章中相关的配置说明。
 
-|保护级别|策略|更多信息|
+|保护级别|策略|详细信息|
 |:---------------|:-------|:----------------|
 |**Baseline**|[要求为来宾和外部用户始终进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|创建此新策略并配置： <ul><li> 对于 **> 包括的用户和组 > 的工作分配**，请选择 " **选择用户和组**"，然后选择 " **所有来宾和外部用户**"。 </li><li> 对于 **工作分配 > 条件 > 登录**，请将所有选项保留为选中状态，以始终强制实施多重身份验证 (MFA) 。</li>|
 |        |[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此策略以排除来宾和外部用户。|
@@ -50,7 +50,7 @@ ms.locfileid: "48132154"
 
 ![用于排除来宾和外部用户的控件的屏幕捕获](../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 ### <a name="guest-and-external-access-with-microsoft-teams"></a>Microsoft 团队的来宾和外部访问
 
@@ -60,21 +60,11 @@ Microsoft 团队定义了以下内容：
 
 - **外部访问** 适用于没有 B2B 帐户的外部用户。 外部访问可以包括邀请和参与呼叫、聊天和会议，但不包括团队成员资格和对团队资源的访问权限。
 
-有关详细信息，请参阅对 [团队的来宾和外部访问之间的比较](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
+有关详细信息，请参阅 [针对团队的来宾和外部访问之间的比较](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
 条件访问策略仅适用于团队中的来宾访问，因为存在相应的 Azure AD B2B 帐户。
 
 有关保护团队的标识和设备访问策略的详细信息，请参阅 [保护团队聊天、组和文件的策略建议](teams-access-policies.md) 。
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>要求为来宾和外部用户始终进行 MFA
 此策略将提示来宾在你的租户中注册 MFA，而不考虑是否在其家乡租户中向 MFA 注册了这些。 在访问租户中的资源时，来宾和外部用户需要对每个请求使用 MFA。 

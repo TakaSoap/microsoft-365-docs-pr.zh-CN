@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用配置分析器来查找和修复低于标准保护和严格保护预设安全策略的安全策略。
-ms.openlocfilehash: d2d37d937f42587ad99e4145d3a9f9fbc6a5a0f4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac70b7fa2b2d0ecc65cf81ea4e5e5f2e807f2467
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203427"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326575"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的保护策略的配置分析器
 
@@ -50,9 +50,9 @@ Security & 合规中心中的配置分析器提供了一个中心位置，用于
     - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - [安全链接策略](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)。
+  - [安全链接策略](set-up-atp-safe-links-policies.md)。
 
-  - [安全附件策略](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)。
+  - [安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
 [EOP 和 Office 365 ATP security 的建议设置](recommended-settings-for-eop-and-office365-atp.md)中介绍了用作基准的**标准**策略设置值和**严格**策略设置值。
 

@@ -1,11 +1,11 @@
 ---
-title: Microsoft 365 的身份路线图
+title: Microsoft 365 的识别指南
 f1.keywords:
 - NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 的身份标识指南。
-ms.openlocfilehash: e268422fcd6cfba36b1a971629036d29827806f6
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775119"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327767"
 ---
-# <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身份路线图
+# <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的识别指南
 
 在 Microsoft 365 for enterprise 中，良好规划和执行的身份基础结构 paves 更高的安全性，包括限制将工作效率工作负载和数据仅授予经过身份验证的用户和设备。
 
-若要了解适用于企业的 Microsoft 365 的标识模型和身份验证的概述，请观看此视频：
+若要了解适用于企业的 Microsoft 365 的标识模型和身份验证的概述，请观看此视频。
 
 <p> </p>
 
@@ -38,7 +38,7 @@ ms.locfileid: "47775119"
 
 查看此两页海报以快速提升针对企业的 Microsoft 365 的标识概念和配置。
 
-您也可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)。 您可以在信件、法律或 tabloid (11 x 17) 格式打印它。
+您还可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，并可在信件、法律或 tabloid (11 x 17) 格式打印。
 
 ## <a name="plan"></a>套餐
 
@@ -66,10 +66,14 @@ ms.locfileid: "47775119"
 
 ## <a name="manage"></a>管理
 
-若要管理您的身份实现：
+若要管理 Microsoft 365 身份部署，请参阅：
 
-- [分配许可证并管理用户帐户](assign-licenses-to-user-accounts.md)
-- [监视目录同步](view-directory-synchronization-status.md)
+- [用户帐户](manage-microsoft-365-accounts.md)
+- [许可证](assign-licenses-to-user-accounts.md)
+- [密码](manage-microsoft-365-passwords.md)
+- [组](manage-microsoft-365-groups.md)
+- [管理](manage-microsoft-365-identity-governance.md)
+- [目录同步](view-directory-synchronization-status.md)
 
 ## <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft 如何识别 Microsoft 365
 

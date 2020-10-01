@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 高级威胁防护中的 Campaigns Views。
-ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: df3b3c7a0e8d8f614e5f743b445af07916f1dfd5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203475"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326587"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的 Campaign Views
 
@@ -224,7 +224,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
   |值|垃圾邮件筛选器判定|说明|
   |---|---|---|
   |**允许**|`SFV:SKN` <br/><br/> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为 "非垃圾邮件" 和/或 "跳过筛选"。 例如，邮件流规则已将邮件标记为 "非垃圾邮件" (也称为 "传输规则) "。<br/><br/>邮件由于其他原因而跳过垃圾邮件筛选。 例如，发件人和收件人显示在同一个组织中。|
-  |**阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|
+  |**已阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|
   |**已检测**|`SFV:SPM`|邮件被垃圾邮件筛选标记为垃圾邮件。|
   |**未检测到**|`SFV:NSPM`|垃圾邮件筛选器将邮件标记为 "非垃圾邮件"。|
   |**以后**|`SFV:SKQ`|邮件跳过垃圾邮件筛选，因为它已从隔离区中释放。|
@@ -264,9 +264,9 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
 - **允许**
 
-- **BlockPage**：收件人单击了有效负载 URL，但组织中的 [ATP 安全链接](atp-safe-links.md) 策略阻止了其对恶意网站的访问。
+- **BlockPage**：收件人单击了有效负载 URL，但组织中的 [安全链接](atp-safe-links.md) 策略阻止了其对恶意网站的访问。
 
-- **BlockPageOverride**：收件人单击了邮件中的有效负载 URL 后，ATP 安全链接尝试停止它们，但允许它们替代该块。 检查 [安全链接策略](set-up-atp-safe-links-policies.md) ，了解为什么允许用户覆盖安全链接判定并继续进入恶意网站。
+- **BlockPageOverride**：收件人单击了邮件中的有效负载 URL，安全链接尝试将其停止，但允许它们替代该块。 检查 [安全链接策略](set-up-atp-safe-links-policies.md) ，了解为什么允许用户覆盖安全链接判定并继续进入恶意网站。
 
 - **PendingDetonationPage**： OFFICE 365 ATP 中的安全附件在虚拟计算机环境中打开和调查有效负载 URL 的过程中。
 

@@ -3,7 +3,7 @@ title: 为 Microsoft 365 设置目录同步
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 了解如何设置 Microsoft 365 与本地 Active Directory 之间的目录同步。
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687645"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327089"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>为 Microsoft 365 设置目录同步
 
@@ -35,7 +35,7 @@ ms.locfileid: "46687645"
 
 Microsoft 365 使用 Azure Active Directory (Azure AD) 租户存储和管理用于访问基于云的资源的身份验证和权限的标识。 
 
-如果您具有本地 Active Directory 域服务 (AD DS) ，则可以将 AD DS 用户帐户、组和联系人与 Microsoft 365 订阅的 Azure AD 租户同步。 这是 Microsoft 365 的混合标识。 以下是它的组件。
+如果您具有本地 Active Directory 域服务 (AD DS) 域或林，则可以将 AD DS 用户帐户、组和联系人与 Microsoft 365 订阅的 Azure AD 租户同步。 这是 Microsoft 365 的混合标识。 以下是它的组件。
 
 ![Microsoft 365 的目录同步组件](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect 在本地服务器上运行，并将 AD DS 与 Azure AD 租户�
 
 - 联合身份验证
 
-  Azure AD 重定向请求身份验证的客户端计算机，以联系另一个标识提供程序。
+  Azure AD 指的是请求向另一个标识提供程序进行身份验证的客户端计算机。
 
 有关详细信息，请参阅 [混合标识](plan-for-directory-synchronization.md) 。
   

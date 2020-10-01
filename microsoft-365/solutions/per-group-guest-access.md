@@ -14,16 +14,16 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 阻止特定组中的来宾用户
-ms.openlocfilehash: 923a9e5cd09d232f377f55fd6a9f499f8f536a84
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 2e9c9cae13932a33b8c486148f93901904e80006
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662499"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328013"
 ---
-# <a name="block-guest-users-from-a-specific-group"></a>阻止特定组中的来宾用户
+# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来自特定 Microsoft 365 组或 Microsoft 团队团队的来宾用户
 
-如果要允许来宾访问大多数组，但要阻止来宾访问，则可以阻止单个组的来宾访问。
+如果要允许来宾访问大多数组和团队，但要阻止来宾访问，则可以阻止对各个组和团队的来宾访问。  (阻止来宾对团队的访问权限是通过阻止对关联组的来宾访问来完成的。 ) 
 
 如果您在组织中使用敏感度标签，我们建议使用它们来控制每组的来宾访问。 有关如何执行此操作的信息，请 [使用敏感度标签来保护 Microsoft 团队、microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。 这是建议的方法。
 

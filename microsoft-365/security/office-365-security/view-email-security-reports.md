@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295534"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327005"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -61,7 +61,7 @@ ms.locfileid: "48295534"
 
 - **创建时间**
 - **用户 ID**
-- **Action**
+- **操作**
 
 若要返回到报告视图，请单击 " **查看报告**"。
 
@@ -224,7 +224,7 @@ ms.locfileid: "48295534"
 - **发件人地址**
 - **收件人地址**
 - **事件类型**
-- **Action**
+- **操作**
 - **Subject**
 
 如果单击 "详细信息" 表中的 " **筛选器** "，则可以使用以下筛选器修改结果：
@@ -263,16 +263,16 @@ ms.locfileid: "48295534"
 - **欺骗发件人**
 - **真正发件人**
 - **发件人 IP**
-- **Action**
+- **操作**
 - **邮件计数**
 
 若要返回到报告视图，请单击 " **查看报告**"。
 
 ## <a name="threat-protection-status-report"></a>威胁防护状态报告
 
-" **威胁防护状态** 报告" 在 EOP 和 OFFICE 365 ATP 中均可用。但是，报告包含不同的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不是关于 [SharePoint Online、OneDrive 或 Microsoft 团队中检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息。
+" **威胁防护状态** 报告" 在 EOP 和 OFFICE 365 ATP 中均可用。但是，报告包含不同的数据。 例如，EOP 客户可以查看有关在电子邮件中检测到的恶意软件的信息，但不 [是关于由 SharePoint、OneDrive 或 Microsoft 团队的 ATP 检测到的恶意文件](atp-for-spo-odb-and-teams.md)的信息。
 
-该报告提供了包含恶意内容的电子邮件（如文件或网站地址 (Url) 被反恶意软件引擎阻止、 [零小时自动清除 (ZAP) ](zero-hour-auto-purge.md)以及 atp 功能（如 [atp 安全链接](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和 [atp 反网络钓鱼](set-up-anti-phishing-policies.md)）的邮件数。 您可以使用此信息来确定趋势或确定组织策略是否需要调整。 请务必注意，如果将邮件发送给5个收件人，我们会将其计数为五个不同的邮件，而不是一封邮件。
+该报告提供了包含恶意内容的电子邮件（如文件或网站地址 (Url) 被反恶意软件引擎阻止、 [零小时自动清除 (ZAP) ](zero-hour-auto-purge.md)以及 atp 功能（如 [安全链接](atp-safe-links.md)、 [安全附件](atp-safe-attachments.md)和 [atp 反网络钓鱼](set-up-anti-phishing-policies.md)）的统计信息。 您可以使用此信息来确定趋势或确定组织策略是否需要调整。 请务必注意，如果将邮件发送给5个收件人，我们会将其计数为五个不同的邮件，而不是一封邮件。
 
 若要查看报告，请打开 [安全 & 合规中心](https://protection.office.com)，转到 " **报告**" \> **仪表板** ，然后选择 " **威胁保护状态**"。 若要直接转到报告，请打开以下 Url 之一：
 
@@ -366,7 +366,7 @@ ms.locfileid: "48295534"
 - **开始日期** 和 **结束日期**
 - **检测**
 - **受以下保护**： **ATP** 或 **EOP**
-- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
 - **域**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ ms.locfileid: "48295534"
 - **开始日期** 和 **结束日期**
 - **检测**
 - **受** (OFFICE 365 ATP) ： **atp** 或 **EOP**
-- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
 - **域**
 - **收件人** (请注意，此可筛选属性仅在 "详细信息" 表格视图中可用) 
 

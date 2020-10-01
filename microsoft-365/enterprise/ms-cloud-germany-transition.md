@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 9d74ec8dd942d022bf1b9d0301f415ef1f0c28e2
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308964"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327113"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务
 
@@ -192,7 +192,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>是否将对我使用的 Office 365 服务价格进行更改？
 
-是的。 Microsoft&#39;s 全局云区域中的定价 (包括新的数据中心区域) 通常较低。
+是。 Microsoft&#39;s 全局云区域中的定价 (包括新的数据中心区域) 通常较低。
 
 ### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>在订阅迁移过程中，哪些 Sku 和许可证将应用到我的组织和用户？
 
@@ -266,7 +266,9 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 - 对于 Office 365，您可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。
 - 如果您是 Dynamics 365 客户接洽和 Power BI 客户，也是 Office 365，则可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](https://docs.microsoft.com/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
+
+即将推出有关迁移到新的德国数据中心区域的其他信息。 将此页面做成书签，以便您可以签入并保持最新。
 
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
 - [如何选择加入迁移](https://aka.ms/office365germanymoveoptin)

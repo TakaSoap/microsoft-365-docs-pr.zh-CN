@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 将组织的 SIEM 服务器与 office 365 高级威胁防护以及 Office 365 活动管理 API 中相关的威胁事件集成。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203636"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327161"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 与高级威胁防护的集成
 
@@ -46,7 +46,6 @@ Office 365 活动管理 API 检索组织的 Microsoft 365 和 Azure Active Direc
 
 SIEM 服务器或其他类似的系统会轮询 **审核。常规** 工作负荷以访问检测事件。 若要了解详细信息，请参阅 [Office 365 管理 api 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>枚举：AuditLogRecordType - 类型：Edm.Int32
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ SIEM 服务器或其他类似的系统会轮询 **审核。常规** 工作负荷
 |值|成员名称|说明|
 |---|---|---|
 |28|ThreatIntelligence|来自 Exchange Online Protection 和 Office 365 ATP 的网络钓鱼和恶意软件事件。|
-|41|ThreatIntelligenceUrl|ATP 安全链接在 Office 365 ATP 中的阻止时间和阻止覆盖事件。|
+|41|ThreatIntelligenceUrl|来自 Office 365 ATP 的安全链接时间段和阻止覆盖事件。|
 |47|ThreatIntelligenceAtpContent|Office 365 ATP 中的 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件的网络钓鱼和恶意软件事件。|
 |64|AirInvestigation|来自 Office 365 ATP 计划2的自动化调查和响应事件，如调查详细信息和相关项目。|
 |

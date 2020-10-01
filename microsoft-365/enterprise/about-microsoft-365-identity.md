@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: 了解如何使用仅限云或混合标识模型在 Microsoft 365 中管理 Azure AD 用户标识服务。
-ms.openlocfilehash: d91e14f678e487365805b024e4025e9a39db0c2c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6b5b80584408671a1925e32df1fbf458b7c16139
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688168"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327947"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 标识模型和 Azure Active Directory
 
@@ -37,6 +37,8 @@ ms.locfileid: "46688168"
 Microsoft 365 使用 Azure Active Directory (Azure AD) （一种基于云的用户标识和身份验证服务）包含在 Microsoft 365 订阅中，用于管理 Microsoft 365 的身份和身份验证。 正确配置您的身份基础结构对于管理您的组织的 Microsoft 365 用户访问和权限至关重要。
 
 开始之前，请观看此视频，以获取 Microsoft 365 身份模型和身份验证的概述。
+
+<p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
@@ -58,7 +60,7 @@ Microsoft 365 使用 Azure Active Directory (Azure AD) （一种基于云的用�
 
 ## <a name="cloud-only-identity"></a>仅限云标识
 
-仅限云的标识使用仅存在于 Azure AD 中的用户帐户。 云标识通常由没有本地服务器或不使用 AD DS 来管理本地标识的小型组织使用。 
+仅限云的标识使用仅存在于 Azure AD 中的用户帐户。 仅限云标识通常由没有本地服务器或不使用 AD DS 来管理本地标识的小型组织使用。 
 
 下面是仅限云身份的基本组件。
  
@@ -67,7 +69,7 @@ Microsoft 365 使用 Azure Active Directory (Azure AD) （一种基于云的用�
 内部部署和远程 (联机) 用户使用其 Azure AD 用户帐户和密码来访问 Microsoft 365 云服务。 Azure AD 根据其存储用户帐户和密码对用户凭据进行身份验证。
 
 ### <a name="administration"></a>管理
-由于用户帐户仅存储在 Azure AD 中，因此可使用 [Microsoft 365 管理中心](https://admin.microsoft.com) 和 [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)等工具管理云标识。 
+由于用户帐户仅存储在 Azure AD 中，因此可使用 [Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/add-users/) 和 [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)等工具管理云标识。 
 
 ## <a name="hybrid-identity"></a>混合标识
 
@@ -89,7 +91,7 @@ Azure AD 租户具有 AD DS 帐户的副本。 在此配置中，本地用户和
 
 ### <a name="administration"></a>管理
 
-由于原始和权威用户帐户存储在内部部署 AD DS 中，因此，可以使用与 AD DS 相同的工具（如 Active Directory 用户和计算机工具）管理您的标识。 
+由于原始和权威用户帐户存储在内部部署 AD DS 中，因此您可以在管理 AD DS 时使用相同的工具管理您的标识。 
 
 您不使用 microsoft 365 管理中心或 PowerShell for Microsoft 365 管理 Azure AD 中的同步用户帐户。
 
