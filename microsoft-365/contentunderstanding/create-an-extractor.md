@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321805"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338645"
 ---
-# <a name="create-an-extractor-preview"></a>创建提取程序（预览版）
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
 
 </br>
@@ -122,9 +122,20 @@ ms.locfileid: "48321805"
 
 ## <a name="test-your-model"></a>测试模型
 
-如果你在标记的示例文件上收到匹配，则现在可以在其余未标记的示例文件中测试模型。 这是一个很有用的步骤，可在使用模型之前评估其的“适用性”和“准备度”，方法是在该模型之前未见过的文件上对其进行测试。
+如果你在标记的示例文件上收到匹配，则现在可以在其余未标记的示例文件中测试模型。 这是一个可选但很有用的步骤，可在使用模型之前评估其的“适用性”和“准备度”，方法是在该模型之前未见过的文件上对其进行测试。
 
 1. 在模型主页中，单击“**测试**”选项卡。 这将在未标记的示例文件上运行模型。
 2. 在“**测试文件**”列表中，如果模型能够提取所需的信息，将显示出陈列的示例文件。 使用此信息以帮助确定分类器在文档识别中的有效性。
 
     ![对文件进行测试](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>另请参阅
+[创建分类器](create-a-classifier.md)
+
+[说明类型](explanation-types-overview.md)
+
+[创建提取程序时利用术语库分类](leverage-term-store-taxonomy.md)
+
+[文档理解概述](document-understanding-overview.md)
+
+[应用模型](apply-a-model.md) 

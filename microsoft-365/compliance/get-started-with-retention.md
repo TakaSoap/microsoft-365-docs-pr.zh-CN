@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: cc504468611d4a2a2758ef7d52b965c177999217
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198937"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338381"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -60,16 +62,17 @@ ms.locfileid: "48198937"
 
 |我想...|文档|
 |----------------|---------------|
-|高效地为组织或按 Microsoft 365 服务设置保留和删除操作： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 组 <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer 网络 |[创建和配置保留策略](create-retention-policies.md)|
-|让管理员和用户手动为文档和电子邮件应用一组保留和删除操作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 网页版|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|让用户使用 Outlook 规则向电子邮件自动应用保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|向文档和电子邮件自动应用一组保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
+|高效地按 Microsoft 365 服务设置保留和删除操作： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 组 <br />- Skype for Business  <br />- Microsoft Teams <br />- Yammer 网络 |[创建和配置保留策略](create-retention-policies.md)|
+|让管理员和用户手动为文档和电子邮件应用保留和删除操作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 网页版|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留和删除操作|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让用户使用 Outlook 规则向电子邮件自动应用保留和删除操作|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让管理员向文档理解模型应用保留和删除操作，以便将这些操作自动应用于 SharePoint 库中已标识的文档|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|向文档和电子邮件自动应用保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
 |从事件发生时开始计算保留期，比如：  <br />- 员工离开组织 <br />- 合同到期 <br />- 产品生存期结束| [从事件发生时开始计算保留期](event-driven-retention.md)|
 |管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)|
 |符合 SEC 规则 17a-4|[使用 Exchange Online 和安全与合规中心来遵守 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
-| 监视如何和在哪里应用保留标签 | [监视保留标签](retention.md#monitoring-retention-labels) |
+|确保内容在内容保留期结束时被永久删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
+| 监视将保留和删除设置应用于项目的方式和位置 | [监视保留标签](retention.md#monitoring-retention-labels) |
 |将一个记录管理解决方案同时用于文档和电子邮件 |[了解记录管理](records-management.md) |
 
 如果将保留标签用于记录管理，则对于将内容标记为记录的保留标签，还有其他一些特有的方案。 请参阅[记录管理常见方案](get-started-with-records-management.md#common-scenarios-for-records-management)。

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何将已发布的模型应用于 SharePoint 文档库
-ms.openlocfilehash: 8b7d6cf21f422ba54933c2d3ac29b4b34171059e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322149"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338669"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -84,4 +84,4 @@ ms.locfileid: "48322149"
 
 [文档理解概述](document-understanding-overview.md)
 
-[创建表单处理模型](create-a-form-processing-model.md)  
+
