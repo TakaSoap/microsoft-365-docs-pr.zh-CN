@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307261"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337165"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -76,7 +76,7 @@ Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员
 |Groups a user can create|250|
 |管理员可以创建的组|最高为500,000 名的默认租户限制|
 |成员数目|1000以上，但只有1000可以同时访问组对话。 <br>用户可能会注意到在 Outlook 中访问大型组中的日历和对话时的延迟。|
-|用户可以是其成员的组的数目|1,000|
+|用户可以是其成员的组的数目|7000|
 |文件存储|每个订阅用户 1 tb + 10 GB + 购买的任何附加存储空间。 您可以购买无限量的额外存储空间。|
 |组邮箱大小|50 GB|
 

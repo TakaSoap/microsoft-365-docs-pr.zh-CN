@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104384"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337177"
 ---
 # <a name="work-with-insights"></a>使用见解
 
@@ -31,9 +31,9 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 - 设备上的安全更新的当前状态是什么？
 - 为95% 的设备获取最新安全更新需要多长时间？
 
-若要从[Microsoft Endopint Manager](https://endpoint.microsoft.com/)访问这些视图，请 nvaigate 到主页上的 "Microsoft 托管桌面" 选项卡，然后在 "**报告**" 区域中选择 "**查看详细信息**"：
+若要从[Microsoft 终结点管理器](https://endpoint.microsoft.com/)访问这些视图，请导航到主页上的 "Microsoft 托管桌面" 选项卡，然后在 "**报告**" 区域中选择 "**查看详细信息**"：
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>使用情况见解
@@ -54,7 +54,6 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 了解有关 [电池洞察力](battery-insights.md)的详细信息。
 
 ## <a name="windows-security-update-insights"></a>Windows 安全更新见解
-
-此视图显示有关 Microsoft 托管桌面设备的安全更新状态的信息。 若要查看此信息，请选择 " **Windows security udates** " 选项卡。
+此视图显示有关 Microsoft 托管桌面设备的安全更新状态的信息。 若要查看此信息，请选择 " **Windows 安全更新** " 选项卡。
 
 了解有关 [安全更新见解](security-update-insights.md)的详细信息。

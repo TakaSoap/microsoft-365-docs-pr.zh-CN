@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 管理员可以了解 Office 365 高级威胁防护 (ATP) 中的安全附件功能。
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326527"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337201"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP 中的安全附件
 
@@ -108,9 +108,7 @@ Office 365 中的安全附件 [高级威胁防护 (ATP) ](office-365-atp.md) 为
 
 - 如果转发的收件人不受安全附件策略保护，则会在不使用任何安全附件扫描或附件占位符的情况下传递邮件和附件。
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>安全附件不扫描邮件的情况
-
-在某些情况下，安全附件无法扫描邮件：
+在某些情况下，动态传递无法替换邮件中的附件。 这些情况包括：
 
 - 公用文件夹中的邮件。
 
@@ -126,7 +124,7 @@ Office 365 中的安全附件 [高级威胁防护 (ATP) ](office-365-atp.md) 为
 
 - [S/MIME) ](s-mime-for-message-signing-and-encryption.md) 加密邮件。
 
-- 您在安全附件策略中配置了动态传递操作，但收件人不支持动态传递 (例如，收件人是本地 Exchange 组织中的邮箱) 。 但是， [office 365 ATP 中的安全链接](set-up-atp-safe-links-policies.md) 可以扫描包含 Url 的 office 文件附件 (具体取决于如何) 配置安全链接。
+- 您在安全附件策略中配置了动态传递操作，但收件人不支持动态传递 (例如，收件人是本地 Exchange 组织中的邮箱) 。 但是， [office 365 ATP 中的安全链接](set-up-atp-safe-links-policies.md) 可以扫描包含 Url 的 office 文件附件 (具体取决于 [安全链接的全局设置](configure-global-settings-for-safe-links.md) 是如何) 配置的。
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交文件以进行恶意软件分析
 

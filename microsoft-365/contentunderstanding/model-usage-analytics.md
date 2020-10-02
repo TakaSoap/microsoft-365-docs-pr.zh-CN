@@ -1,32 +1,24 @@
 ---
-title: 文档理解模型使用率分析
+title: 文档理解模型使用情况分析
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
+localization_priority: Priority
 description: 了解如何将保留标签应用于文档理解模型
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295823"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321273"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>文档理解模型使用率分析
+# <a name="document-understanding-model-usage-analytics"></a>文档理解模型使用情况分析
 
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
-
-</br>
-
-你的 Microsoft SharePoint Syntex 内容中心提供了模型使用情况分析，以提供有关如何使用从内容中心发布的模型的详细信息。 这包括以下信息的汇总：
+Microsoft SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 其中包括以下信息汇总：
 
 - 应用模型的位置
 - 一段时间内处理的文件数
@@ -37,20 +29,23 @@ ms.locfileid: "48295823"
 
    ![总模型百分比](../media/content-understanding/total-model-percentage.png) </br>
 
-**总模型百分比**饼图将每个已发布的模型显示为内容中心中所有已发布模型处理的总文件数的百分比。
+**总模型百分比** 饼图将每个已发布模型显示为内容中心中所有已发布模型处理的总文件的百分比。
 
-每个模型还显示了 **完整性率**，即模型成功分析的已上载文件的百分比。 较低的完整性比率可能意味着要分析的模型或文件存在问题。
+每个模型还显示 **完整率**，即由模型成功分析的已上传文件的百分比。 完整率低可能意味着模型或正在分析的文件存在问题。
 
-## <a name="files-processed-over-time"></a>在一段时间内处理的文件
+## <a name="files-processed-over-time"></a>一段时间内处理的文件
 
    ![处理的文件](../media/content-understanding/files-processed-over-time.png) </br>
 
-**通过时间**栏图处理的文件不仅显示每个模型的一段时间内处理的文件数，而且还显示应用该模型的文档库。
+**一段时间内处理的文件** 条形图不仅显示每个模型一段时间内处理的文件数，还显示应用模型的文档库。
 
    ![条形图](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>另请参阅
-[创建类元](create-a-classifier.md)</br>
-[创建提取程序](create-an-extractor.md)</br>
-[文档理解概述](document-understanding-overview.md)</br>
+[创建分类器](create-a-classifier.md)
+
+[创建提取程序](create-an-extractor.md)
+
+[文档理解概述](document-understanding-overview.md)
+
 [创建表单处理模型](create-a-form-processing-model.md)  

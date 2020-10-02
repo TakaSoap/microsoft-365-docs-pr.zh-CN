@@ -1,5 +1,5 @@
 ---
-title: 用户标记
+title: Office 365 ATP 中的用户标记
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Oiffce 365 ATP 计划2中识别具有用户标记的特定用户组。 标记筛选在 Office 365 ATP 中的通知、报告和调查中可用，以快速识别已标记的用户。
-ms.openlocfilehash: d47c5c00e3cf0362c44aebc18d11db4bba68a149
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+description: 管理员可以了解如何使用 Office 365 ATP 计划2中的用户标记标识特定用户组。 标记筛选在 Office 365 ATP 中的通知、报告和调查中可用，以快速识别已标记的用户。
+ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210020"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337249"
 ---
-# <a name="user-tags-in-the-microsoft-security-center"></a>Microsoft 安全中心中的用户标记
+# <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的用户标记
 
 用户标记是 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md)中的特定用户组的标识符。 [优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是一类用户标记。 如果您的组织具有 Office 365 ATP 计划 2 (包含在订阅中或作为加载项) ，除了使用优先级帐户标记之外，还可以创建自定义用户标记。
 
@@ -33,11 +33,11 @@ ms.locfileid: "48210020"
 - [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)
 - [市场活动视图](campaigns.md)
 
-本文介绍如何在安全中心中配置用户标记。
+本文介绍如何在安全 & 合规中心中配置用户标记。 Security & 合规性中心中没有可用于管理用户标记的 cmdlet。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 你可以在上打开 "安全中心" <https://security.microsoft.com/> 。 若要直接转到 " **用户标记** " 页，请打开 <https://security.microsoft.com/securitysettings/userTags> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **用户标记** " 页，请打开 <https://protection.office.com/userTags> 。
 
 - 若要创建、修改或删除用户标记，您需要是安全 & 合规性中心中的 " **组织管理** " 或 " **安全管理员** " 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "48210020"
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心创建用户标记
 
-1. 在 "安全中心" 中，转到 " **设置** \> **电子邮件 & 协作** \> **用户标记**"。
+1. 在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。
 
 2. 在打开的 " **用户标记** " 页上，单击 " **创建标记**"。
 
@@ -79,7 +79,7 @@ ms.locfileid: "48210020"
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>使用安全中心查看用户标记
 
-1. 在 "安全中心" 中，转到 " **设置** \> **电子邮件 & 协作** \> **用户标记**"。
+1. 在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。
 
 2. 在打开的 " **用户标记** " 页上，选择要查看的用户标记 (不要单击复选框) 。
 
@@ -89,7 +89,7 @@ ms.locfileid: "48210020"
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>使用安全中心修改用户标记
 
-1. 在 "安全中心" 中，转到 " **设置** \> **电子邮件 & 协作** \> **用户标记**"。
+1. 在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。
 
 2. 在打开的 " **用户标记** " 页上，选择要查看的用户标记，然后单击 " **编辑标记**"。
 
@@ -101,6 +101,6 @@ ms.locfileid: "48210020"
 
 **注意**：不能删除内置的 " **优先级" 帐户** 标记。
 
-1. 在 "安全中心" 中，转到 " **设置** \> **电子邮件 & 协作** \> **用户标记**"。
+1. 在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。
 
 2. 在打开的 " **用户标记** " 页上，选择要删除的用户标记，单击 " **删除标记**"，然后选择 **"是，** 在出现的警告中删除"。

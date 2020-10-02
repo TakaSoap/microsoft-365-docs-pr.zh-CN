@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 83da50b3772b6adcb7977425bfcaa1b437bc6a68
-ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48324259"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337225"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 采纳：入门
 
-请考虑 Microsoft SharePoint Syntex 中提供的智能内容服务，其中包含三个部分：
+请考虑 SharePoint Syntex 中提供的智能内容服务，其中包含三个部分：
 
 - **内容理解：** 创建无代码的 AI 模型，以对内容进行分类和提取信息，以自动应用元数据以实现知识发现和重用。 了解有关 [内容理解](document-understanding-overview.md)的详细信息。
 - **内容处理：** 自动化了内容的捕获、摄取和分类，并使用 Power 自动化优化以内容为中心的流程。 了解有关 [内容处理](form-processing-overview.md)的详细信息。
 - **内容合规性：** 控制和管理内容，以改进与 Microsoft 信息保护集成的安全性和管理。
 
-使用新的 AI 服务和功能，您可以使用 Microsoft SharePoint Syntex 直接在内容管理流程中构建内容理解和分类应用程序：
+使用新的 AI 服务和功能，您可以使用 SharePoint Syntex 直接在内容管理流程中构建内容理解和分类应用程序：
 
 |手动输入| 表单处理 | 文档理解 |
 |:-------|:--------|:--------|
@@ -34,7 +34,7 @@ ms.locfileid: "48324259"
 | Interactive   | 预建的自动化   | 自定义、辅助   | 自定义、合规 |
 | 从事工作的人员 | 由你的主题专家 (Sme) 讲授。 从合同、简历、其他非结构化文档捕获内容类型和元数据。 | 不涉及 Sme。 来自采购订单、应用程序、其他半结构化和结构化文档 |
 
-下表说明了使用 Microsoft SharePoint Syntex 时获取的内容：
+下表说明了在使用 SharePoint Syntex 时获取的内容：
 
 | 表单处理 | 文档理解 |
 |:-------|:-------|
@@ -46,14 +46,14 @@ ms.locfileid: "48324259"
 
 | 表单处理 | 文档理解 |
 |:-------|:-------|
-| 从文档库创建 | 在内容中心中创建，Microsoft SharePoint Syntex 的一部分 |
+| 从文档库创建 | 在内容中心中创建，SharePoint Syntex 的一部分 |
 | 在 AI 生成器中创建的模型 | 在本机接口中创建的模型 |
 | 用于半结构化文件格式 | 用于非结构化文件格式 |
 | 可设置的分类器 | 带有可选提取程序的 Trainable 分类器 |
 | 限制为单个库 | 可应用于多个库 |
 | PDF、JPG、PNG 格式的培训，总 50 MB/500 pp | 5-10 PDF、Office 或电子邮件文件（包括负示例）的培训 |
 
-Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所示：
+SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所示：
 
 - 根据文档年龄或外部事件定义记录策略的保留标签。
 - 设置 DLP、加密、共享和条件访问策略的敏感度标签。
@@ -62,12 +62,12 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>确定要优化的试点业务方案
 
-若要准备在组织中使用 Microsoft SharePoint Syntex，首先需要了解它将有用的方案。 为什么要帮助确定所需的模型，以及如何根据模型的应用位置来构建您的组织。 在以下几种情况下，文档理解可帮助您的组织：
+若要准备在组织中使用 SharePoint Syntex，首先需要了解它将有用的方案。 为什么要帮助确定所需的模型，以及如何根据模型的应用位置来构建您的组织。 在以下几种情况下，文档理解可帮助您的组织：
 
 - 内容处理：处理合同、工作陈述和其他类似于表单的文档。 将窗体进入、培训模型以了解和映射字段，然后通过运行您的窗体来自动收集数据。 有关详细信息，请参阅 [表单处理概述](form-processing-overview.md)。
 - 发票分析：拉出发票中的相关详细信息，并确保它们符合策略或进行适当处理。
 
-考虑 Microsoft SharePoint Syntex 可帮助您的组织的方式：
+考虑 SharePoint Syntex 可帮助您的组织的方式：
 
 - 自动化业务流程
 - 提高搜索精确性
@@ -75,7 +75,7 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
 
 ### <a name="form-processing-scenario-example"></a>表单处理方案示例
 
-例如，您可以使用 Microsoft SharePoint Syntex 设置一个过程，并使用 "电源自动化" 功能来跟踪和监控发票。
+例如，您可以使用 SharePoint Syntex 设置一个过程，并使用 "电源自动化" 功能来跟踪和监控发票。
 
 1. 设置库以存储发票文档。
 1. 训练模型以识别文档中的字段。
@@ -85,7 +85,7 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
     - 发票已过其到期日期。
     - 发票的金额大于您的自动审批量。
 
-![使用 Microsoft SharePoint Syntex 和 Power 自动化跟踪和监控发票](../media/content-understanding/process-invoices-flow.png)
+![使用 SharePoint Syntex 跟踪和监控发票和电源自动化](../media/content-understanding/process-invoices-flow.png)
 
 当您自动执行此方案时，您可以：
 
@@ -102,7 +102,7 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
 1. 模型完成后，将模型应用于可在其中上载合同的库。
 1. 将保留标签应用于 "日期" 字段，以便在组织所需的合同时间长度的库中保留合同。
 
-![使用 Microsoft SharePoint Syntex 和保留标签跟踪和监控合同](../media/content-understanding/process-contracts-flow.png)
+![使用 SharePoint Syntex 和保留标签跟踪和监控合同](../media/content-understanding/process-contracts-flow.png)
 
 当您自动执行此方案时，您可以：
 
@@ -140,7 +140,7 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
 
 ## <a name="strategic-positioning"></a>战略定位
 
-与利益干系人合作，以确保它们已按照使用 Microsoft SharePoint Syntex 的策略进行了调整。 研究并提供以下资源以帮助进行此定位：
+与利益干系人合作，以确保它们与使用 SharePoint Syntex 的策略一致。 研究并提供以下资源以帮助进行此定位：
 
 - 业务成果：
   - 潜在的会计成果
@@ -170,7 +170,7 @@ Microsoft SharePoint Syntex 与 Microsoft 365 合规性功能集成，如下所�
 
 ## <a name="readiness-checklist"></a>准备情况清单
 
-若要准备好实现 Microsoft SharePoint Syntex (Preview) ，您需要执行以下操作：
+若要准备好实现 SharePoint Syntex，需要执行以下操作：
 
 ![内容理解准备就绪](../media/content-understanding/cu-adoption-readinesschecklist.png)
 
