@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321781"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333868"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -30,6 +30,8 @@ Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档�
 
 虽然这两种模型通常用于相同的用途，但下面列出的主要差异会影响你使用的区别。
 
+> [!NOTE]
+> 有关表单处理和文档理解方案示例的详细信息，请参阅 [SharePoint Syntex 采纳：入门指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example)。
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化内容与非结构化和半结构化内容的比较

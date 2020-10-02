@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Microsoft 365 数据位置
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269537"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337153"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 对于 Azure Active Directory 数据位置，请访问 [AAD 数据地图](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
 
 
-鉴于前所未有的新型冠状肺炎 (COVID-19) 危机和管理在线服务的需求，如果贵组织是欧洲的教育机构，我们可以预配你的 Office 365 租户、转移你的数据并将静态数据存储至欧盟。  如果贵组织是印度的教育机构，我们可以预配你的 Office 365 租户、转移你的数据并将静态数据存储至印度、欧洲或美国。  如果贵组织是南非的教育机构，我们可以预配你的 Office 365 租户、转移你的数据，并将静态数据存储至南非或欧洲。 在采取必要和谨慎的措施来维持服务可用性的同时，我们对合规性、隐私性和安全性的承诺保持不变。 我们将遵守有关数据传输的所有适用法律。
+如果客户的帐单邮寄地址在欧洲境外并且客户已订阅了Office 365 教育版，尽管是 OST 的“核心联机服务客户静态数据”的位置，Microsoft 可以在欧洲或北美内提供客户的 Office 365 租户，将客户数据传输到欧洲或北美以及将其存储在欧洲或北美的任何位置。  如果客户的帐单邮寄地址在欧洲境外并且客户已订阅了Office 365 教育版，尽管是 OST 的“核心联机服务客户静态数据”的位置，Microsoft 可以在欧盟内提供客户的 Office 365 租户，将客户数据传输到欧盟以及将其存储在欧盟的任何位置。
 
 
 
