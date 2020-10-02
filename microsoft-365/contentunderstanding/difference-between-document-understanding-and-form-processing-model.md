@@ -1,66 +1,75 @@
 ---
-title: 文档理解和表单处理模型之间的区别
+title: 文档理解与表单处理模型之间的差异
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: 介绍文档理解和表单处理模型之间的关键区别
-ms.openlocfilehash: 268a2fa4a0381e5822c17e5df22566c931d37f3c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 描述文档理解与表单处理模型之间的主要差异
+ms.openlocfilehash: 5fa9bd6b5873a11c00b19663226c4e3dd2b65825
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294744"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321781"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解和表单处理模型之间的区别 
+# <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
-本文中的内容适用于 Project Cortex 私人预览。 了解[有关 Project Cortex 的详细信息](https://aka.ms/projectcortex)。
 
-通过项目 Cortex 中的内容理解，可以识别和分类上载到 SharePoint 文档库的文档，以及提取每个文件中的相关信息。  例如，在将文件上载到 SharePoint 文档库时，标识为 *采购订单* 的所有文件都按此进行分类，然后显示在自定义文档库视图中。 此外，还可以从每个文件中提取特定信息 (例如， *PO 号* 和 *总计*) 并将其显示为文档库视图中的一列。 
+Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档库中的文档进行识别与分类，并从每个文件中提取相关信息。  例如，当文件上传到 SharePoint 文档库中时，所有被识别为*采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号*和*总数*），并将其显示为文档库视图中的一列。 
 
-内容理解使您能够创建 *模型* 以标识和提取所需的信息。 以下是您可以使用的两种模型类型：
+内容理解使你能够创建*模型*来识别和提取所需的信息。 模型在帮助解决搜索、业务流程、合规性等业务问题上具有价值。
 
-- [文档理解模型](document-understanding-overview.md)
+有两种模型类型可以使用：
+
+- [文档理解模型 ](document-understanding-overview.md)
 - [表单处理模型](form-processing-overview.md)
 
-虽然这两种模型通常用于相同目的，但下面列出的主要区别将影响您可以使用的主要区别。
+虽然这两种模型通常用于相同的用途，但下面列出的主要差异会影响你使用的区别。
 
-## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化与非结构化和半结构化内容
 
-使用文档理解模型标识并提取非结构化文档（如信函或合同）中的数据，其中要提取的文本实体位于文档的句子或特定区域中。 例如，非结构化文档可以是以不同方式编写的合同续订信函。 但是，信息在每个合同续订文档的正文中始终存在，如文本字符串 "服务开始日期"，后跟实际日期。   
 
-使用表单处理模型来标识文件，并从结构化或半结构化文档（例如表单或发票）中提取数据。 这些文档必须具有明文键值对 (例如， *Date： 10/1/2020*) * 或 table data。 例如，表单处理的一个好候选人是公司订单请求表单，客户端需要为位于文档布局相同区域（如 *姓名*、 *电话号码*、 *总成本*等）中的特定字段提供信息。 "税种" 表单是结构化文档的一个很有用的示例。 
+## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化内容与非结构化和半结构化内容的比较
 
-## <a name="where-they-are-created"></a>创建位置
+使用文档理解模型从非结构化文档（如信件或合同）中识别和提取数据，在这些文档中，所需提取的文本实体位于句子或文档的特定区域中。 例如，一个非结构化的文件可以是一份可以用不同的方式来写的续签合同书。 然而，每份合同续签文档的正文中都有一致的信息，例如*服务开始日期*的文本字符串，后是实际日期。   
 
-文档理解模型是在 SharePoint 内容中心网站中创建和管理的。 
+使用表单处理模型来识别文件，并从结构化或半结构化的文件（如表单或发票）中提取数据。 表单处理模型经过训练，可从示例文档中理解表单布局，并学会从类似的位置中寻找所需提取的数据，因为表单实体处于相同的位置而具有更多结构性的布局（例如，税务单中的社保号）。 
 
 > [!NOTE]
-> 您必须具有对内容中心网站的访问权限，才能创建文档理解模型或将其应用到 SharePoint 文档库。 
+> 必须有访问内容中心站点的权限，才能创建文档理解模型或将其应用于SharePoint文档库。 
 
-表单处理模型在 PowerApps [AI 生成器](https://docs.microsoft.com/ai-builder/overview)中创建，但创建是直接从 SharePoint 文档库启动的。 需要在文档库中启用表单处理模型创建，以便用户为其创建表单处理模型，并且管理员可以在内容理解管理设置中执行此操作。 表单处理模型使用 PowerAutomate 流在文件上传到文档库时处理文件。
 
-创建文档理解模型时，将创建一个新的 [sharepoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) ，该类型将保存到 Sharepoint 内容类型库中。 或者，如果需要，可以使用现有内容类型来定义模型。
+## <a name="where-they-are-created"></a>创建地点
 
-表单处理模型在 PowerApps [AI 生成器](https://docs.microsoft.com/ai-builder/overview)中创建，但创建是直接从 SharePoint 文档库启动的。 需要在文档库中启用表单处理模型创建，用户才能为其创建表单处理模型。 或者，管理员可以在内容理解管理设置中执行此操作。 表单处理模型使用 PowerAutomate 流在文件上传到文档库时处理文件。
+文档理解模型在 SharePoint 内容中心站点中创建和管理。 
 
-表单处理模型还创建新的 [sharepoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)，并且也存储在 Sharepoint 内容类型库中。
+> [!NOTE]
+> 有关输入文档的详细信息，请参阅 [表单处理模型的要求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。 
 
-## <a name="where-they-can-be-applied"></a>可以在何处应用它们
+表单处理模型是在 PowerApps [AI 生成器](https://docs.microsoft.com/ai-builder/overview)中创建，但创建是直接从SharePoint文档库中开始的。 表单处理模型的创建需要在文档库上启用，以便用户为其创建表单处理模型，管理员可以在内容理解管理员设置中进行。 当文件上传到文件库时，表格处理模型使用PowerAutomate流来处理文件。
 
-您可以将文档理解模型应用于您有权访问的 SharePoint 文档库。 使用内容中心创建文档理解模型，并将其应用于不同的文档库。 内容中心提供了对文档理解模型的使用及其应用位置的更多集中控制。 注释此信息还必须汇总到内容中心。
+创建文档理解模型时，将创建一个新的 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) 保存到 SharePoint 内容类型库中。 或者如果需要的话，可使用现有的内容类型来定义模型。
 
-表单处理模型目前只能应用于从中创建它们的 SharePoint 文档库。 这将允许具有网站访问权限的授权用户能够创建表单处理模型。
+表单处理模型在 PowerApps的[AI 生成器](https://docs.microsoft.com/ai-builder/overview)中创建，但创建是直接从 SharePoint 文档库中开始的。 表单处理模型的创建需要在文档库上启用，用户才能为其创建表单处理模型。 或者管理员可以在内容理解管理设置中进行。 当文件上传到文件库时，表格处理模型使用PowerAutomate流来处理文件。
+
+表单处理模型还可创建新 [SharePoint 内容类型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)，并且还存储在 SharePoint 内容类型库中。
+
+## <a name="where-they-can-be-applied"></a>可适用的地方
+
+可将文档理解模型应用于有权访问的 SharePoint 文档库中。 使用内容中心创建文档理解模型，并将其应用于不同的文档库。 内容中心可以让你更集中地控制文档理解模型的使用方式和应用位置。 注意，这些信息也必须滚动到内容中心。
+
+表单处理模型目前只能应用于创建它们的 SharePoint 文档库。 这使得拥有访问权限的用户能够创建表单处理模型。 请注意，管理员需要在 SharePoint 文档库中启用表单处理功能，以便供拥有许可的用户使用。
 
  ## <a name="see-also"></a>另请参阅
-[培训：使用 AI 生成器改进业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
-[创建类元](create-a-classifier.md)</br>
-[创建提取程序](create-an-extractor.md)</br>
-[应用文档理解模型](apply-a-model.md)</br>
-[创建表单处理模型](create-a-form-processing-model.md)</br>
+[培训：使用 AI 生成器提高业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+
+[创建分类器](create-a-classifier.md)
+
+[创建提取程序](create-an-extractor.md)
+
+[应用文档理解模型](apply-a-model.md)
+
+[创建表单处理模型](create-a-form-processing-model.md)

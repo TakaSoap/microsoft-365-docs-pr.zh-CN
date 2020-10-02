@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547684"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305374"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -35,7 +35,7 @@ ms.locfileid: "47547684"
 - 非托管设备的访问
 
 > [!IMPORTANT]
-> “**非托管设备的访问**”设置可与 SharePoint 功能配合使用，从而[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 必须为租户配置此从属 SharePoint 功能，才能使用配置了此设置的敏感度标签。 下面的说明中提供了其他信息。
+> “**非托管设备的访问**”设置可与 SharePoint 功能配合使用，从而[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 必须配置此从属 SharePoint 功能，才能使用配置了此设置的敏感度标签。 下面的说明中提供了其他信息。
 
 如果你将此敏感度标签应用于受支持的容器，此标签会自动向连接的网站或组应用分类和保护设置。
 
@@ -86,13 +86,13 @@ ms.locfileid: "47547684"
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未管理的设备**：对于此选项，还必须配置使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关说明，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项相当于[阻止或限制对特定 SharePoint 网站或 OneDrive 的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)。
+- **未管理的设备**：此选项使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如步骤 7 - 9 中所述，[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)的访问。
     
-    如果未配置此从属 SharePoint 功能，则在此处指定的选项将不起作用。 此外，如果限制性低于在租户级别配置的设置，则也不会起作用。 请选择与租户级设置的限制性相同或更强的标签设置。
+    如果未在 SharePoint 说明的步骤 1-6 中对相关条件访问策略进行配置，则在此处指定的选项将不起作用。 此外，如果其限制性低于在租户级别配置的设置，则也不会起作用。 如果你已为非托管设备配置了组织范围的设置，请选择相同或更严格的标签设置。
     
     例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
     
-    由于可以独立于标签配置来配置该 SharePoint 功能，因此在敏感度标签向导中不会检查依赖项是否已就位。
+    由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签向导中不会检查依赖项是否已就位。
 
 ![网站和组设置选项卡](../media/edit-sensitivity-label-site-group2.png)
 

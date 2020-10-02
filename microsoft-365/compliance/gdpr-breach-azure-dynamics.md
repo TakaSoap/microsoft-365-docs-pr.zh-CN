@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 838e2ee09ea80f07c637eeebd1229b63f01ad00b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415896"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305196"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>GDPR 下的 Azure 和 Dynamics 365 泄露通知
 
@@ -38,7 +38,7 @@ Microsoft 不会监控或响应属于客户责任范围的安全事件。仅限�
 
 Azure 根据安全事件响应流程响应潜在数据泄露，该流程属于 Microsoft Azure 事件管理计划的一部分。Azure 安全事件响应使用五阶段流程来实现：检测、评估、诊断、稳定和关闭。随着调查的进展，安全事故响应团队可能在诊断和稳定阶段之间切换。安全事件响应流程概述如下：
 
-|**阶段**|**说明**|
+|**Stage**|**说明**|
 | ------- | ------------- |
 | ***1 — 检测*** | 潜在事件的第一个指征。 |
 | ***2 — 评估*** | 时刻待命的事件响应团队成员评估事件的影响和严重性。根据证据，评估可能会也可能不会导致进一步向安全响应团队上报。 |

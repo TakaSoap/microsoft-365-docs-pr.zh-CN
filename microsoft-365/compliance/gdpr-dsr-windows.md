@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b113935ce31aa7992eab1d57f78b6cdec5919cc4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416898"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304896"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的适用于 Windows 企业数据主体请求的数据处理者服务 
 
@@ -28,28 +28,29 @@ ms.locfileid: "47416898"
 >本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。 若要了解有关计划的详细信息并同意使用条款，请参阅 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>数据主体请求 (DSR) 简介 
-一般数据保护条例 (GDPR) 赋予民众（在条例中称为_数据主体_）权利，即管理已由雇主或其他类型机构或组织（称为_数据控制者_或简称为_控制者_）收集的个人数据。 根据 GDPR，个人数据的定义非常宽泛，即指与已识别或可识别的自然人相关的任何数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。 数据主体向控制者发出的对其个人数据执行操作的正式请求，称为_数据主体请求_ (DSR)。 
+一般数据保护条例 (GDPR) 赋予民众（在条例中称为_数据主体_）权利，即管理已由雇主或其他类型机构或组织（称为_数据控制者_或简称为_控制者_）收集的个人数据。 根据 GDPR，个人数据的定义很宽泛，即指与已识别或可识别的自然人相关的任何数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。 数据主体向控制者发出的对其个人数据执行操作的正式请求，称为_数据主体请求_ (DSR)。 
 
 同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。 CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[加州消费者隐私法案常见问题解答](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
-本指南讨论了如何使用 Microsoft 产品、服务和管理工具以帮助我们的控制者客户查找和操作个人数据以响应 DSR。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述： 
+本指南讨论了如何使用 Microsoft 产品、服务和管理工具帮助我们的控制者客户查找和操作个人数据以响应 DSR。具体而言，这包括如何查找、访问和操作驻留在 Microsoft 云中的个人数据。下面是本指南中所列流程的快速概述： 
 
 1. **访问** - 检索驻留在 Microsoft 云中的个人数据，如果提出请求，还制作可供数据主体使用的个人数据副本。 
 2. **删除** - 永久删除驻留在 Microsoft 云中的个人数据。 
 3. **导出** - 向数据主体提供个人数据的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。
 
-根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”大致相同。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[加州消费者隐私法案常见问题解答](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
+根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”一致。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[加州消费者隐私法案常见问题解答](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
 本指南中的每个部分概述了数据控制者组织为响应对 Microsoft 云中个人数据的 DSR 而采取的技术过程。 
 
-## <a name="terminology"></a>术语 
-下面提供了与本指南相关的术语定义。 
+## <a name="terminology"></a>术语
+
+以下列表提供了与本指南相关的术语定义。 
 
 * _控制者_ - 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。 
 
 * _个人数据和数据主体_ - 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。 
 
-* _处理者_ - 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。 
+* _处理者_ — 指代表控制者处理个人数据的自然人或法人、公共机关、代理或其他团体。。 
 
 * _客户数据_ — 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文字、声音、视频或图像文件以及软件。 
 
@@ -72,7 +73,7 @@ Microsoft 让你能够通过 Azure 门户访问、删除和导出某些 Windows 
 
 ### <a name="step-1-access"></a>步骤 1：访问 
 
-租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为访问请求检索到的数据将通过导出方式，以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 
+租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为访问请求检索到的数据将通过导出方式，以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如前文所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 
 
 Microsoft 提供了门户体验，让企业客户的租户管理员能够管理 DSR 访问请求。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户以导出方式执行 DSR 访问请求。
 
@@ -91,7 +92,7 @@ Microsoft 提供通过预先存在的应用程序编程接口 (API) 直接删除
 
 ### <a name="step-3-export"></a>步骤 3：导出 
 
-租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为导出请求检索到的数据将以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如上所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户执行 DSR 导出请求。 
+租户管理员是组织中唯一可以访问特定 Windows 诊断数据（与特定用户对适用于 Windows 企业注册设备的数据处理者服务的使用有关）的人员。 为导出请求检索到的数据将以机器可读格式提供，并在允许用户知道数据与哪些设备和服务关联的文件中提供。 如前文所述，检索到的数据不包括可能会危及 Windows 设备安全性或稳定性的数据。 [Azure DSR，第 2 部分，步骤 3：导出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)介绍如何通过 Azure 门户执行 DSR 导出请求。 
 
 Microsoft 提供通过预先存在的应用程序编程接口 (API) 直接导出客户数据的功能。 有关详细信息，请参阅 [API 参考文档](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)。
 
