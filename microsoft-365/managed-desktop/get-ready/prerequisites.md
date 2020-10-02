@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1c03d9028205ea392bade15e6dec354bff0be96e
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: d5aaba3d1f8606ab69b360d5916a5c9a8a653a14
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235390"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343279"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的系统必备
 
@@ -26,7 +26,7 @@ ms.locfileid: "48235390"
 
 区域 | 先决条件详细信息
 --- | ---
-许可 |Microsoft 托管桌面要求以下 Microsoft 365 许可证之一 (或等效) ：<br>-Microsoft 365 E5<br>-Microsoft 365 E5 安全附加版的 microsoft 365 E3<br><br>有关 Microsoft 托管桌面中的特定服务计划及其角色的详细信息，请参阅本主题中 [有关许可证的详细](#more-about-licenses) 信息。<br>有关可用许可证的详细信息，请参阅 [Microsoft 365 许可](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+许可 |Microsoft 托管桌面需要 microsoft 365 E3 许可证和 Microsoft Defender for Endpoint 和 Azure Active Directory Premium 2 (或等效) 。<br>有关特定服务计划的详细信息，请参阅本主题中 [有关许可证的详细](#more-about-licenses) 信息。<br>有关可用许可证的详细信息，请参阅 [Microsoft 365 许可](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 连接 |  所有 Microsoft 托管桌面设备都需要连接到公司网络中的多个 Microsoft 服务终结点。<br><br>有关所需 Ip 和 Url 的完整列表，请参阅 [网络配置](../get-ready/network.md)。 
 Azure Active Directory |    Azure Active Directory (Azure AD) 必须是所有用户帐户的颁发机构的来源，或者必须使用 Azure AD Connect 的最新受支持版本从本地 Active Directory 同步用户帐户。<br><br>必须为 Microsoft 托管桌面用户启用[企业状态漫游](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)。<br><br>有关详细信息，请参阅 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>有关受支持的 Azure AD Connect 版本的详细信息，请参阅 [AZURE Ad connect： Version release history](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history)。
 身份验证 |    如果 Azure AD 不是用户帐户的主身份验证源，则必须在 Azure AD Connect 中配置以下各项之一：<br>-密码哈希同步<br>传递身份验证<br>-外部标识提供程序 (，其中包括 Windows Server ADFS 和非 Microsoft Idp) 配置为符合 Azure AD 集成要求。 有关详细信息，请参阅 [指南](https://www.microsoft.com/download/details.aspx?id=56843) 。 <br><br>使用 Azure AD Connect 设置身份验证选项时，还建议使用密码写回。 有关详细信息，请参阅 [密码写回](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果实施了外部标识提供程序，则必须验证解决方案：<br>-满足 Azure AD 集成要求<br>-支持 Azure AD 条件访问，这是为了能够配置 MMD 设备合规性策略<br>-为 microsoft 托管桌面的一部分启用设备注册和使用所需的 Microsoft 365 服务或功能 <br><br>有关 Azure AD 的身份验证选项的详细信息，请参阅 [AZURE Ad Connect user 登录选项](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
@@ -38,20 +38,20 @@ Microsoft 365 | 必须为 Microsoft 托管桌面用户启用 OneDrive for Busine
 
 ## <a name="more-about-licenses"></a>有关许可证的详细信息
 
-Microsoft 托管桌面需要特定的许可证选项才能正常运行。 这些选项在许多不同的许可证捆绑包中可用，其中一些可能已拥有。 此表显示在 Microsoft 托管桌面中哪些许可证可用以及在哪些许可证中汇总其角色的必要选项。
+Microsoft 托管桌面需要特定的许可证选项才能正常运行。 有关如何使用这些许可证的信息，请参阅 [Microsoft 托管桌面技术](../intro/technologies.md) 。
 
 > [!TIP]
 > 若要将这些许可证选项分配给特定用户，建议您利用 Azure Active Directory 的 [基于组的许可功能](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 。
 
+- Azure Active Directory Premium P2
+- Microsoft Intune 
+- Windows 10 企业版  
+- Microsoft Defender for Endpoint
+- Microsoft 365 企业应用版
+- Microsoft Teams
+- [SharePoint Online 计划 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
+- [Exchange Online 计划 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
 
-
-|许可证选项 |适用于这些许可证产品中的 *任何* 一种 |Microsoft 托管桌面如何使用它|
-|-------------|-------------|-------------|
-|Azure Active Directory Premium P2     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全加载项<br>-企业移动性 + 安全性 E5<br>-企业移动性 + 安全 E3<br>-Azure Active Directory 高级 P2|  提供对 Microsoft 云服务的访问权限;允许 AutoPilot 注册设备      |
-|Microsoft Intune | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全加载项<br>-企业移动性 + 安全性 E5<br>-企业移动性 + 安全 E3<br>-Microsoft Intune  |  注册设备、部署更新和管理设备的必要       |
-|Windows 10 企业版  |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全加载项<br>-Windows 10 企业版 E3<br>-Windows 10 企业版 E5 | 提供 Windows 10 的企业版功能       |
-|Microsoft Defender 高级威胁防护 | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全加载项<br>-Windows 10 企业版 E5<br>-Microsoft Defender 高级威胁防护   |  提供对威胁的检测、监控、警报和响应  |
-|Microsoft 365 企业应用版  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| 激活 Office 和工作效率和协作工具    |
 
 > [!TIP]
 > 你的 Microsoft 帐户管理员将帮助你查看你当前的许可证和服务计划，并查找最有效的路径，以获取你可能需要的任何其他许可证或服务计划，同时避免重复。

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理 Microsoft 365 组，包括添加删除组成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307297"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343267"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理组
 
@@ -122,7 +122,7 @@ ms.locfileid: "47307297"
 
 3. 如果想要成员在自己的收件箱中接收组邮件和日历项目的副本，请在 " **设置** " 选项卡上，选择 " **向组成员发送组对话和事件的副本** "。
 
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "47307297"
 
 3. **如果想**要成员在自己的收件箱中接收组邮件和日历项目的副本，请**将组对话和事件的 "发送" 副本转换为 "将组成员的收件箱"** 。
 
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ ms.locfileid: "47307297"
 
 3. **如果想**要成员在自己的收件箱中接收组邮件和日历项目的副本，请**将组对话和事件的 "发送" 副本转换为 "将组成员的收件箱"** 。
 
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ ms.locfileid: "47307297"
 
 3. 在 "管理中心组" 列表中，选择要更改的组的名称，然后在 " **设置** " 选项卡上，选择 " **允许外部发件人通过电子邮件发送此组**"。
     
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ ms.locfileid: "47307297"
     
 3. 将" **允许组织外部的人员向组发送电子邮件**"开关设置为" **开启**"。
     
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "47307297"
     
 3. 将" **允许组织外部的人员向组发送电子邮件**"开关设置为" **开启**"。
     
-4. 选择“保存”****。
+4. 选择“**保存**”。
 
 ::: moniker-end
 
@@ -196,10 +196,10 @@ ms.locfileid: "47307297"
 
 [管理对 Microsoft 365 组的来宾访问](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[选择创建 Microsoft 365 组时要使用的域](choose-domain-to-create-groups.md)
+[选择创建 Microsoft 365 组时要使用的域](../../solutions/choose-domain-to-create-groups.md)
 
-[允许成员代表 Microsoft 365 组发送或发送](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[允许成员代表 Microsoft 365 组发送或发送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [将通讯组列表升级到 Microsoft 365 组](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
