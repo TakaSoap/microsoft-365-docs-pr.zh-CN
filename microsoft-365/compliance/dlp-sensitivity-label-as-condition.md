@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235711"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321107"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>在 DLP 策略中使用敏感度标签作为条件（预览版）
 
@@ -53,7 +53,7 @@ ms.locfileid: "48235711"
 |SharePoint Online     |SharePoint Online 中的列表         |是         |是         |
 |OneDrive for Business     |项目         |是         |是         |
 |Teams     |Teams 聊天和通道消息         |不适用         |不适用         |
-|Teams     |附件         |是 **         |是 **         |
+|Teams     |attachments         |是 **         |是 **         |
 |Windows 10 设备（预览版）     |项目         |是         |是         |
 |MCAS（预览版） |项目         |是         |是         |
 

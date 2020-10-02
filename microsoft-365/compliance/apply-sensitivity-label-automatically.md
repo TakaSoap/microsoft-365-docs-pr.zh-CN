@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131800"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326743"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -75,7 +75,7 @@ ms.locfileid: "48131800"
 
 |功能或行为|标签设置：Office 应用的自动标记 |策略：自动标记|
 |:-----|:-----|:-----|
-|应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 |
+|应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 \* |
 |按位置限制|否 |是 |
 |条件：可训练分类器|是 |否 |
 |条件：电子邮件的共享选项和其他选项|否 |是 |
@@ -85,6 +85,8 @@ ms.locfileid: "48131800"
 |应用视觉标记 |是 |是（仅限电子邮件） |
 |覆盖在未带标签的情况下应用的 IRM 加密|如果用户具有“导出”的最低使用权限，则为“是” |是（仅限电子邮件） |
 |标记传入电子邮件|否 |是（未应用加密） |
+
+\*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则管理员标记中心中的“自动标记”选项卡将不可见。
 
 > [!NOTE]
 > 手动标记内容后，该标签将永远不会被自动标记替换。 但是，自动标记策略可以替换通过使用 Office 应用的自动标记而应用的[低优先级标签](sensitivity-labels.md#label-priority-order-matters)。
@@ -242,6 +244,8 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     
     ![“自动标记”选项卡](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > 如果看不到“**自动标记**”选项卡，则此功能当前在你的区域中不可用。
 
 3. 选择“**+ 创建自动标记策略**”。 这将启动“新建策略向导”：
     
