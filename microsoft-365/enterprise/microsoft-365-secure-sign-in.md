@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +15,29 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132235"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327422"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
 若要增强用户登录的安全性，请执行以下操作：
 
+- 使用 Windows Hello 企业版
 - 使用 Azure Active Directory (Azure AD) 密码保护
 - 使用多重身份验证 (MFA)
-- 部署标识和设备访问策略
+- 部署标识和设备访问配置
+- 通过 Azure AD 标识保护防止凭据泄露
+
+## <a name="windows-hello-for-business"></a>Windows Hello 企业版
+
+Windows 10 企业版中的 Windows Hello 企业版在 Windows 设备上签名时，会将密码替换为强双因素身份验证。 这两个因素是一种与设备和生物识别或 PIN 相关联的新型用户凭据。
+
+有关详细信息，请参阅 [Windows Hello 企业版概述](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+
 
 ## <a name="azure-ad-password-protection"></a>Azure AD 密码保护
 
@@ -44,7 +53,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 使用 MFA 的第一步是***对所有管理员帐户要求使用 MFA***，这些帐户也被称为特权帐户。
 
-比第一步更好的是，Microsoft 强烈建议对所有用户要求使用 MFA。
+比第一步更好的是，Microsoft 建议对所有用户要求使用 MFA。
 
 根据 Microsoft 365 套餐，可通过三种方式要求你的管理员或用户使用 MFA。
 
@@ -63,7 +72,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 安全性默认值可确保所有组织均对默认启用的用户登录具有基本的安全级别。 可使用条件访问策略或针对个别帐户禁用安全性默认值，以支持 MFA。
 
-有关详细信息，请参阅此[安全性默认值概述](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
+有关详细信息，请参阅[安全性默认值概述](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。
 
 ### <a name="conditional-access-policies"></a>条件访问策略
 
@@ -77,7 +86,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 条件访问需要 Microsoft 365 E3 和 E5 随附的 Azure AD Premium P1 许可证。
 
-有关详细信息，请参阅此[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
+有关详细信息，请参阅[条件访问概述](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
 ### <a name="using-these-methods-together"></a>结合使用这些方法
 
@@ -96,7 +105,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 | **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>标识和设备访问策略
+## <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
 标识和设备访问设置和策略是推荐的必备功能，而且它们的设置与用于确定是否应授予给定的访问请求，以及在何种情况下授予请求的“条件访问”、Intune 和 Azure AD 标识保护策略结合在了一起。 这种决定是基于登录的用户帐户、正在使用的设备、用户为获得访问权限而正在使用的应用程序、创建访问请求的位置，以及对请求风险的评估。 这个功能有助于确保只有经过批准的用户和设备才能访问关键的公司资源。
 
@@ -114,27 +123,22 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，包括 Microsoft Teams、Exchange Online 和 SharePoint 的特定设置。 有关详细信息，请参阅“[标识和设备访问配置](microsoft-365-policies-configurations.md)”。
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD 标识保护
 
-## Let your users reset their own passwords
+在此部分中，将了解如何配置策略，以防止凭据泄露（攻击者可以通过确定用户帐户名称和密码来获取访问组织的云服务和数据的权限）。 Azure AD Identity Protection 可提供多种方式来帮助阻止攻击者破坏用户帐户的凭据。
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+使用 Azure AD Identity Protection，可以：
 
-## Sign in to SaaS apps with Azure AD
+|功能|Description|
+|:---------|:---------|
+| 确定并解决组织身份中的潜在漏洞 | Azure AD 使用机器学习功能检测不正常和可疑活动，如登录和登录后活动。 通过使用此数据，Azure AD Identity Protection 会生成报告和警报，帮助你评估问题并执行操作。|
+|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，该策略可在达到指定风险级别时自动响应检测到的问题。 除了 Azure AD 与 Microsoft Intune 提供的其他条件性访问控制以外，这些策略也可以自动阻止访问或采取纠正措施，包括密码重置和要求后续登录的 Azure 多因素身份验证。 |
+| 调查可疑事件并使用管理操作加以解决 | 可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。 |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+请参阅[有关 Azure AD Identity Protection 的详细信息](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+请参阅[启用 Azure AD Identity Protection 的步骤](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>用于 MFA 和身份验证的管理员技术资源
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [配置多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [标识和设备访问配置](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>后续步骤
+
+[管理用户帐户](manage-microsoft-365-accounts.md)

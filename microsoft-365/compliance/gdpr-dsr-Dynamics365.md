@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 53411edcaa64508d7200a2ca1bf1903f809d9ae1
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e9b6dc32fc9c9a641504afd1589dd9666bd8e248
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547430"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305342"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的 Dynamics 365 数据主体请求
 
@@ -38,19 +38,19 @@ ms.locfileid: "47547430"
 - **纠正：** 进行更改或者对个人数据实施其他请求的操作（如果适用）。
 - **限制：** 通过移除各种在线服务的许可证，或者在可能的情况下关闭所需的服务，限制对个人数据的处理。 你可以
 - **删除：** 永久移除驻留在 Microsoft 云中的个人数据。
-- **导出/接收（可移植性）：** 向数据主体提供个人数据或个人信息的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”大致相同。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
+- **导出/接收（可移植性）：** 向数据主体提供个人数据或个人信息的电子副本（采用机器可读格式）。 根据 CCPA 的定义，个人信息是指与已识别或可识别人员相关的任何信息。 个人的私人、公共或工作角色之间没有任何区别。 所定义的“个人信息”术语与 GDPR 下的“个人信息”一致。 但是，CCPA 还包括家人和家庭数据。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](offering-ccpa.md)和[加州消费者隐私法案常见问题解答](ccpa-faq.md)。
 
 本指南中的每个部分概述了数据控制者组织为响应对 Microsoft 云中个人数据的 DSR 请求而采取的技术过程。
 
 ## <a name="gdpr-terminology"></a>GDPR 术语
 
-下面提供了与本指南相关的术语定义：
+以下列表提供了与本指南相关的术语定义：
 
 - **控制者：** 单独或与其他人一起确定个人数据处理的用途和途径的自然人或法人、公共机构、机关或其他实体；如果欧盟或成员国法律确定了此类处理的用途和途径，欧盟或成员国法律可能会规定控制者或具体提名条件。
 - **个人数据和数据主体：** 身份已识别或可识别的自然人（“数据主体”）的任何相关信息；身份可识别的自然人是指可被直接或间接识别的自然人，尤其是通过参考姓名、证件号码、位置数据、联机标识符等标识，或通过参考特定于该自然人的身体、生理、基因、精神、经济、文化或社会标识的一个或多个因素进行识别。
 - **处理者：** 代表控制者处理个人数据的自然人或法人、公共机构、机关或其他主体。
 - **客户数据：** 客户或代表客户通过使用企业服务提供给 Microsoft 的所有数据，包括所有文字、声音、视频或图像文件以及软件。 客户数据包括 (1) 最终用户的身份信息（例如，Azure Active Directory 中的用户名和联系人信息）和客户上传到特定服务或者在特定服务中创建的客户内容（例如，Azure 存储帐户中的客户内容，Azure SQL 数据库的客户内容，或 Azure 虚拟机中的客户虚拟机映像）。
-- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 — 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含有关最终用户的身份信息，例如用户名。
+- **系统生成日志：** Microsoft 生成的日志和相关数据，可帮助 Microsoft 向用户提供企业服务。 系统生成日志主要包括化名数据，例如唯一标识符 — 这通常是系统生成的无法单独识别个人但用于向用户提供企业服务的一个数字。 系统生成日志还可能包含最终用户的身份信息，例如用户名。
 
 ## <a name="how-this-guide-can-help-you-meet-your-controller-responsibilities"></a>本指南将如何帮助你履行控制者职责
 
@@ -63,7 +63,7 @@ ms.locfileid: "47547430"
 
 当数据主体行使其权利并提出请求时，请考虑以下几点：
 
-- 通过使用数据主体在请求中提供给你的信息，正确识别人员和角色 — 例如员工、客户、供应商。 此信息可能是姓名、员工 ID 或客户编码或其他标识符。
+- 通过使用数据主体在请求中提供给你的信息，正确识别人员和角色（例如员工、客户、供应商）。此信息可能是姓名、员工 ID 或客户编码或其他标识符。
 - 记录请求的日期和时间（必须在 30 天内完成请求）。
 - 确认请求符合组织有关接受或拒绝数据主体请求的要求。例如，必须确保执行请求与你的其他法律、财务或法规义务不冲突，也不侵犯他人的权利和自由。
 - 确认你有与该请求相关的信息。
@@ -138,7 +138,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 此外，在 Dynamics 365 for Marketing 中，还可以：
 
 - 通过直接编辑一行或多行“更新我的数据”登录页面
-- 准备一个具有许多可编辑的联系人字段的[订阅中心](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center)页面。这可以让最终用户尽可能多地更新自己的信息。
+- 准备一个具有许多可编辑的联系人字段的[订阅中心](https://docs.microsoft.com/dynamics365/customer-engagement/marketing/set-up-subscription-center)页面。本页可以让最终用户尽可能多地更新自己的信息。
 
 ***Dynamics 365 Customer Service Insights*** 还提供了一些功能，使组织能够[纠正或更改客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-summary)。
 
@@ -148,7 +148,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 若要快速地批量编辑多个 Business Central 记录，可使用 [Business Central Excel 加载项](https://docs.microsoft.com/dynamics365/business-central/finance-analyze-excel#the--excel-add-in)将列表导出为 Excel 以更正多个记录，然后在 Business Central 中从 Excel 发布修改过的数据。有关详细信息，请参阅[将业务数据导出到 Excel](https://docs.microsoft.com/dynamics365/business-central/about-export-data)。
 
-可以更改存储在任何字段中的客户数据 — 例如客户卡片中有关客户的信息 — 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
+可以更改存储在任何字段中的客户数据（例如客户卡片中有关客户的信息）— 通过手动编辑包含目标个人数据的数据元素。 有关详细信息，请参阅[输入数据](https://docs.microsoft.com/dynamics365/business-central/ui-enter-data)。
 
 #### <a name="brief-note-about-modifying-entries-in-business-transactions"></a>有关修改业务交易条目的简短说明
 
@@ -192,7 +192,7 @@ Microsoft 提供了一些功能，可帮助你响应数据主体权利请求，�
 
 对于 ***Dynamics 365 Customer Service Insights***，你可以通过 Azure 管理门户来[导出客户数据](https://docs.microsoft.com/dynamics365/ai/customer-service-insights/gdpr-export)。
 
-***Dynamics 365 for Finance and Operations*** 提供了[数据管理和集成实体](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity)，可用于启用提供的实体、新创建的实体或扩展的实体，以使用[数据导入和导出作业](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。  或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。 将客户数据以这种方式导出到 Excel 后，你可以编辑要包括在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。
+***Dynamics 365 for Finance and Operations*** 提供了数据管理和集成实体，可用于启用提供的实体、新创建的实体或扩展的实体，以使用[数据导入和导出作业](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/data-entities/data-import-export-job)将个人数据重复导出到 Excel 或各种其他常用格式。  或者，可以将许多列表导出到静态 Excel 文件以促进数据移植请求。 将客户数据以这种方式导出到 Excel 后，你可以编辑要包括在移植请求中的个人数据，然后将该文件另存为常用的机器可读格式，例如 .csv 或 .xml。
 
 Dynamics 365 for Finance and Operations 和 ***Dynamics 365 for Talent*** 都提供了人员搜索报告，可为数据主体提供已分类为个人数据的数据。
 
@@ -210,7 +210,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 - 用户搜索请求和查询数据
 - 作为系统功能一部分的产品和服务所生成的数据以及用户或其他系统的交互
 
-请注意，不支持限制或纠正系统生成日志中的数据。系统生成日志中的数据构成 Microsoft 云内执行的实际操作和诊断数据，对此类数据的修改将会损坏操作的历史记录，增加诈骗及安全风险。
+不支持限制或纠正系统生成日志中的数据。系统生成日志中的数据构成 Microsoft 云内执行的实际操作和诊断数据，对此类数据的修改将会损坏操作的历史记录，增加诈骗及安全风险。
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>访问和导出系统生成日志
 
@@ -225,7 +225,7 @@ Microsoft 还为你提供了访问、导出和删除根据 GDPR 中“个人数�
 
 在创建新的请求后，它将列在“**数据日志导出**”页面上，在这里你可以跟踪其状态。完成请求后，可以单击链接以访问系统生成日志，这些日志将在请求创建 30 内导出到你组织的 Azure 存储位置。数据将保存为常用的机器可读文件格式，如 JSON 和 XML。如果你还没有 Azure 帐户和 Azure 存储位置，将需要为你的组织创建 Azure 帐户和/或 Azure 存储位置，以便数据日志导出工具可以导出系统生成日志。
 
-Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此操作。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。 检索到的数据不包括可能会危及服务安全性和稳定性的数据。
+Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储容器来支持此请求。[Microsoft Azure 存储 — Blob 存储简介](https://docs.microsoft.com/azure/storage/common/storage-introduction#blob-storage)文章。 检索到的数据不包括可能会危及服务安全性和稳定性的数据。
 
 > [!IMPORTANT]
 > 你必须是租户管理员才能从租户中导出用户数据。
@@ -239,13 +239,13 @@ Azure 通过让组织以本机 JSON 格式将数据导出到指定 Azure 存储�
 |**输出内容采用什么格式？**| 输出内容是结构化的机器可读文件（如 XML、CSV 或 JSON）。 |
 |**“数据日志导出”工具会返回哪些数据？**| “数据日志导出”工具会返回 Microsoft 存储的系统生成日志。 导出的数据将跨越各种 Microsoft 服务，包括 Office 365、Azure 和 Dynamics。 |
 |***谁有权访问“数据日志导出”工具以提交对系统生成日志的访问请求？**| Dynamics 365 全局管理员将有权访问 GDPR 日志管理器实用工具。 |
-|**如何向用户返回数据？**| 数据将导出到你组织的 Azure 存储位置；由你组织的管理员来确定他们如何向用户显示/返回此数据。 |
+|**如何向用户返回数据？**| 数据将导出到你组织&#39;的 Azure 存储位置；由你组织的管理员来确定他们如何向用户显示/返回此数据。 |
 |**系统生成日志中的数据看上去是怎样的？**| JSON 格式的系统生成日志记录示例： <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
 ### <a name="deleting-system-generated-logs"></a>删除系统生成日志
 
 要删除通过访问请求检索的系统生成日志，必须从服务中删除该用户，然后永久删除其 Azure Active Directory 帐户。 有关如何永久删除用户的说明，请参阅“Azure 数据主体请求”主题中的[步骤 5：删除](gdpr-dsr-azure.md#step-5-delete)部分。 请务必注意，永久删除用户帐户的操作一旦启动便不可逆。 永久删除用户帐户将在 30 天内从几乎所有 Dynamics 365 服务的系统生成日志中删除用户数据（不包括可能会危及服务安全性和稳定性的数据）。
 
-## <a name="learn-more"></a>了解详细信息
+## <a name="learn-more"></a>了解更多
 
 - [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview)

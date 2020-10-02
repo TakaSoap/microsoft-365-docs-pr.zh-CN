@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200581"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338425"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -109,10 +109,11 @@ Microsoft 提供了内置的通知策略，可帮助确定 Exchange 管理员权
 
 该表还指明了每个 Office 365 企业版和 Office 365 美国政府部门需要的计划。 如果您的组织具有相应的附加订阅，除了 E1/F1/G1 或 E3/G3 订阅之外，还可以使用某些默认的通知策略。
 
-|**默认通知策略**|**说明**|**Category**|**Office 365 企业版订阅**|
+| 默认通知策略 | 说明 | 类别 | Office 365 企业版订阅 |
 |:-----|:-----|:-----|:-----|
 |**检测到潜在的恶意 URL 单击**|当组织中的用户受 [Office 365 ATP 安全链接](../security/office-365-security/atp-safe-links.md) 的保护时，将生成警报。单击恶意链接。 当通过 Office 365 ATP 标识 URL 判定更改时，或者用户替代 Office 365 ATP 安全链接页面 (基于组织的 Microsoft 365 for business ATP 安全链接策略) 时，将触发此事件。 此通知策略具有 **高** 严重性设置。 对于 Office 365 ATP P2，E5，G5 客户，此通知会自动触发 [Office 365 中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 有关触发此警报的事件的详细信息，请参阅 [设置 Office 365 ATP 安全链接策略](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**管理员提交结果已完成**|当 [管理员提交](../security/office-365-security/admin-submission.md) 完成已提交实体的重新扫描时生成警报。 每次从管理员提交中呈现重新扫描结果时，都会触发警报。 这些警报旨在提醒您 [查看以前提交的结果](https://protection.office.com/reportsubmission)、提交用户报告的邮件以获取最新的策略检查并重新扫描 verdicts，并帮助您确定组织中的筛选策略是否有预期的影响。 此策略的严重性设置 **较低** 。|威胁管理|E1/F1、E3 或 E5|
+|**管理员触发了电子邮件的手动调查**|当管理员触发手动调查来自威胁资源管理器的电子邮件时生成警报。 有关详细信息，请参阅 "示例：安全管理员触发从威胁 Explorer 中进行调查" (https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) 。 此警报会通知组织已启动调查。 警报提供了有关触发它的联系人的信息，并包含调查的链接。 此策略有一个 **信息性** 严重性设置。|威胁管理| E5/G5 或 Office 365 ATP P2 附加订阅| 
 |**创建转发/重定向规则**|当组织中的某个人为其邮箱创建了将邮件转发或重定向到其他电子邮件帐户的收件箱规则时，将生成警报。 此策略仅跟踪在以前称为 Outlook Web App) 或 Exchange Online PowerShell 的 (web 上使用 Outlook 创建的收件箱规则。 此策略的严重性设置 **较低** 。 有关在 Outlook 网页版中使用收件箱规则转发和重定向电子邮件的详细信息，请参阅 [使用 web 上的 outlook 中的规则将邮件自动转发到其他帐户](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**启动或导出的电子数据展示搜索**|当有人使用安全与合规中心中的内容搜索工具时，将生成警报。 执行以下内容搜索活动时，将触发警报： <br/><br/>* 已启动内容搜索<br/>* 导出内容搜索的结果<br/>* 导出内容搜索报告<br/><br/>在与电子数据展示事例相关联的前一内容搜索活动执行时，也会触发警报。 此策略的严重性设置为 **中等** 。 有关内容搜索活动的详细信息，请参阅 [在审核日志中搜索电子数据展示活动](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**Exchange 管理员权限提升**|在 Exchange Online 组织中向某人分配管理权限时生成警报。 例如，当用户添加到 Exchange Online 中的 "组织管理" 角色组时。 此策略的严重性设置 **较低** 。|权限|E1/F1/G1、E3/G3 或 E5/G5|
@@ -238,17 +239,18 @@ Microsoft 提供了内置的通知策略，可帮助确定 Exchange 管理员权
 |仅查看保留管理|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**提示：** 若要查看分配给每个默认角色组的角色，请在 Security & 合规性中心 PowerShell 中运行以下命令：
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-您还可以查看分配到安全 & 合规性中心中的角色组的角色。 转到 " **权限** " 页，并选择一个角色组。 在弹出页面上列出了所分配的角色。
+> [!TIP]
+> 若要查看分配给每个默认角色组的角色，请在 Security & 合规性中心 PowerShell 中运行以下命令：
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> 您还可以查看分配到安全 & 合规性中心中的角色组的角色。 转到 " **权限** " 页，并选择一个角色组。 在弹出页面上列出了所分配的角色。
 
 ## <a name="managing-alerts"></a>管理通知
 

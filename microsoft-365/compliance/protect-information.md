@@ -13,14 +13,16 @@ localization_priority: High
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 通过使用 Microsoft 365 合规性，实现 Microsoft 信息保护 (MIP) 功能，以帮助您发现、分类和保护其生存或传播的敏感信息。
-ms.openlocfilehash: 66938804a119022b6b44664ecd8f040e3c56123f
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b421cf0b81c5ad52282302626b93064f9cd83ce8
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295464"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338347"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息保护
 

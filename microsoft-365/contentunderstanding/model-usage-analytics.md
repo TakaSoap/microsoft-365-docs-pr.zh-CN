@@ -9,14 +9,21 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何将保留标签应用于文档理解模型
-ms.openlocfilehash: 26e8aea3ef52e9d850dea2f2268858d8367f7408
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321273"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337237"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>文档理解模型使用情况分析
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+
+</br>
+
 
 Microsoft SharePoint Syntex 内容中心可提供模型使用情况分析，即提供有关如何使用内容中心中已发布的模型的详细信息。 其中包括以下信息汇总：
 

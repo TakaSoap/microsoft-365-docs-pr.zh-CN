@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3fc563c762e7cd00888665b63e66159e4d3d9612
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6d627dcf3d6ec8ca1d2aa76eab484361c25b529e
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196973"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338413"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -61,8 +61,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>参数
 
-- **x** —要使用的文件 ID 列 `SHA1` ： `SHA256` 、 `InitiatingProcessSHA1` 或 `InitiatingProcessSHA256` ; `SHA1` 如果未指定，则使用函数
-- **y** -限制为要丰富的记录数，1-1000;函数使用100（如果未指定）
+- **x**—要使用的文件 ID 列： `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，则使用函数
+- **y**-限制为要丰富的记录数，1-1000;函数使用100（如果未指定）
 
 ## <a name="examples"></a>示例
 
