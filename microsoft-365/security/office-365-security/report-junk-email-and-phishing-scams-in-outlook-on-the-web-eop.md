@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 (Outlook Web App) 在 Exchange Online 中的内置垃圾邮件、非垃圾邮件和网络钓鱼电子邮件报告选项，以及如何为用户禁用这些报告选项。
-ms.openlocfilehash: 75be22d6ec38ca3c8d11836ea28c7af74b93f14c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201239"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48351073"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中的 Outlook 网页上报告垃圾邮件和仿冒电子邮件
 
@@ -36,7 +36,7 @@ ms.locfileid: "48201239"
 
 - 管理员可以在 Outlook 网页版中禁用或启用用户将邮件报告给 Microsoft 的功能。 有关详细信息，请参阅本主题后面的在 [Outlook 网页版中禁用或启用垃圾邮件报告](#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) 一节。
 
-- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [在 Exchange Online 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
+- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [用户提交策略](user-submission.md)。
 
 - 有关向 Microsoft 报告邮件的详细信息，请参阅 [将邮件和文件报告给 microsoft](report-junk-email-messages-to-microsoft.md)。
 

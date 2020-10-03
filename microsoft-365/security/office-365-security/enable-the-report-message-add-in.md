@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 2e9d6ae87d0f6da7721c5c86d904a836d4610a5e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196605"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350619"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -54,7 +54,7 @@ Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook
 
 - 报告消息外接程序对本地 Exchange 组织中的邮箱不可用。
 
-- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [在 Exchange Online 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
+- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [用户提交策略](user-submission.md)。
 
 - 您的现有 web 浏览器应与报告邮件外接程序一起使用。 但是，如果您注意到加载项不可用或无法按预期工作，请尝试使用不同的浏览器。
 

@@ -1,6 +1,6 @@
 ---
 title: 使用见解
-description: ''
+description: Microsoft 托管桌面中提供的见解概述
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337177"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350817"
 ---
 # <a name="work-with-insights"></a>使用见解
 
@@ -31,9 +31,11 @@ Microsoft 托管桌面提供了许多仪表板，在你的租户中，IT 管理�
 - 设备上的安全更新的当前状态是什么？
 - 为95% 的设备获取最新安全更新需要多长时间？
 
+
 若要从[Microsoft 终结点管理器](https://endpoint.microsoft.com/)访问这些视图，请导航到主页上的 "Microsoft 托管桌面" 选项卡，然后在 "**报告**" 区域中选择 "**查看详细信息**"：
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+
+![具有左下角报告区域和 "查看详细信息" 链接的管理中心主页主页](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>使用情况见解

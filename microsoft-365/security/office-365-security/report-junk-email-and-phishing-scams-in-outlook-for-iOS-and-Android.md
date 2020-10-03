@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,25 +16,25 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Outlook for iOS 和 Outlook for Android 中内置的 "垃圾邮件"、"非垃圾邮件" 和 "仿冒电子邮件报告" 选项。
-ms.openlocfilehash: fef519f3fdd5cf46d383c41ad227ab0cd3ed4390
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201529"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350851"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>在 Exchange Online 中的 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和网络钓鱼电子邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在使用 [混合新式身份验证](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview?view=o365-worldwide)的 Exchange Online 或本地邮箱中具有邮箱的 Microsoft 365 组织中，您可以使用 Outlook for IOS 和 Outlook for Android 中的内置报告选项来提交误报 (良好的电子邮件，并将其标记为垃圾邮件) 、漏报 (错误的电子邮件) 并将网络钓鱼邮件发送到 Exchange Online PROTECTION (EOP) 。
+在使用 [混合新式身份验证](https://docs.microsoft.com/microsoft-365/enterprise/hybrid-modern-auth-overview)的 Exchange Online 或本地邮箱中具有邮箱的 Microsoft 365 组织中，您可以使用 Outlook for IOS 和 Outlook for Android 中的内置报告选项来提交误报 (良好的电子邮件，并将其标记为垃圾邮件) 、漏报 (错误的电子邮件) 并将网络钓鱼邮件发送到 Exchange Online PROTECTION (EOP) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么
 
 - 如果您是具有 Exchange Online 邮箱的组织中的管理员，我们建议您在安全 & 合规性中心中使用提交门户。 有关详细信息，请参阅 [使用管理员提交将可疑的垃圾邮件、网络钓鱼、url 和文件提交给 Microsoft](admin-submission.md)。
 
-- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [在 Exchange Online 中指定用户提交垃圾邮件和网络钓鱼邮件的邮箱](user-submission.md)。
+- 您可以将报告的邮件配置为复制或重定向到您指定的邮箱。 有关详细信息，请参阅 [用户提交策略](user-submission.md)。
 
 - 有关向 Microsoft 报告邮件的详细信息，请参阅 [将邮件和文件报告给 microsoft](report-junk-email-messages-to-microsoft.md)。
 

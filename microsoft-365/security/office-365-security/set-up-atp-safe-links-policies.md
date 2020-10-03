@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 高级威胁防护 (ATP) 中查看、创建、修改和删除安全链接策略和全局安全链接设置。
-ms.openlocfilehash: 58088955a6909238c1fe5202688e0b8d1ab8e6c6
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327221"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350715"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>在 Office 365 ATP 中设置安全链接策略
 

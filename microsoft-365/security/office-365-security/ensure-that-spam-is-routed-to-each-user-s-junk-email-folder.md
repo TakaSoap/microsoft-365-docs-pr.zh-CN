@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: chrisda
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何将垃圾邮件路由到 Exchange Online Protection 混合环境中的用户垃圾邮件文件夹。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76003f18009ebf9159f01d916cdaf38b50a213d1
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196589"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350335"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>将独立 EOP 配置为将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹
 
@@ -51,7 +51,7 @@ ms.locfileid: "48196589"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 您需要在本地 Exchange 环境中分配权限，然后才能执行这些过程。 具体来说，您需要分配 " **传输规则** " 角色，默认情况下会将其分配给 " **组织管理**"、" **合规性管理**" 和 " **记录管理** " 角色。 有关详细信息，请参阅 [向角色组添加成员](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group)。
+- 您需要在本地 Exchange 环境中分配权限，然后才能执行这些过程。 具体来说，您需要分配 " **传输规则** " 角色，默认情况下会将其分配给 " **组织管理**"、" **合规性管理**" 和 " **记录管理** " 角色。 有关详细信息，请参阅 [向角色组添加成员](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
 
 - 如果将邮件传递到本地 Exchange 组织中的 "垃圾邮件" 文件夹，则将通过以下设置的组合来控制邮件：
 
