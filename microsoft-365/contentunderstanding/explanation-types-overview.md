@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的说明类型
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 4fe13a35757807e08638f68259ccd24a59a97460
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321793"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338657"
 ---
 # <a name="introduction-to-explanation-types"></a>说明类型简介
 
@@ -34,7 +34,7 @@ ms.locfileid: "48321793"
 
 短语列表说明类型通常用于通过模型识别和分类文档。 正如“*咨询医生*”标签示例中所述，它是所标识的文档中一致出现的单词、短语、数字或字符的字符串。
 
-虽然这并不是要求，但如果要捕获的短语位于文档中的一致位置，则可以在“说明”上取得更好的成功。 例如，“*咨询医生*”标签可能一直位于文档中的第一段。
+虽然这并不是强制要求，但如果要捕获的短语位于文档中的一致位置，则可以在“说明”上取得更好的成功。 例如，“*咨询医生*”标签可能一直位于文档中的第一段。
 
 如果标识标签时需要区分大小写，使用短语列表类型可以使你在说明中指定这种情况，只需通过选择“**仅完全匹配的大写**”复选框。
 
@@ -68,7 +68,7 @@ ms.locfileid: "48321793"
    ![仅完全匹配的大写](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> 请使用[说明库]()，以便从常见模式列表中使用预制模式列表，如*日期*、*电话号码*、*信用卡号码*等等，而不是手动创建模式列表说明。 
+> 请使用[说明库](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates)，以便从常见模式列表中使用预制模式列表，如*日期*、*电话号码*、*信用卡号码*等等，而不是手动创建模式列表说明。 
 
 ## <a name="proximity"></a>邻近度 
 

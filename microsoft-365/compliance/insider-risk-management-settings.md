@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214901"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341220"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内幕风险管理设置入门
 
@@ -175,11 +178,11 @@ ms.locfileid: "48214901"
 | AlertId | 警报的 GUID。 内幕风险管理警报是可变的。 当警报状态更改时，将生成一个具有相同 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报类别为 *InsiderRiskManagement*。 此类别可用于从其他安全 & 合规性警报中辨别这些警报。 |
 | 备注 | 通知的默认注释。 值是在创建警报时记录的 *新警报* (记录) 并在更新警报) 时记录 *更新* (记录。 使用 AlertID 可关联警报的更新。 |
-| Data | 警报的数据包括唯一的用户 ID、用户主体名称以及在将用户触发到策略中时 (UTC) 的日期和时间。 |
+| 数据 | 警报的数据包括唯一的用户 ID、用户主体名称以及在将用户触发到策略中时 (UTC) 的日期和时间。 |
 | 名称 | 生成警报的内幕风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内幕风险管理策略的 GUID。 |
 | Severity | 警报的严重性。 值为 " *高*"、" *中*" 或 " *低*"。 |
-| Source | 警报的来源。 值为 *Office 365 安全 & 合规性*。 |
+| 源 | 警报的来源。 值为 *Office 365 安全 & 合规性*。 |
 | 状态 | 通知的状态。 值*处于活动状态* (*需要查看*内幕风险) 中*的 "* 内幕风险" 中的 " () *确认*"、"*已解决* * ("。在*内部人员风险 *) 中消除**了 (*) 。 |
 | 版本 | 安全和合规性警报架构的版本。 |
 
@@ -189,7 +192,7 @@ ms.locfileid: "48214901"
 - Id
 - RecordType
 - CreationTime
-- Operation
+- 操作
 - OrganizationId
 - UserType
 - UserKey

@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 92b8802325ea6d80241d59bd506051ad048b8422
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208674"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341398"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -108,7 +111,7 @@ ms.locfileid: "48208674"
 
 ![内幕风险管理调查](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>Action
+### <a name="action"></a>操作
 
 在调查事例之后，审阅者可以快速处理案例或与组织中的其他风险承担者进行协作。 如果用户无意或无意中违反了策略条件，则可以向用户发送一个简单的提醒通知，以供您为组织自定义的通知模板。 这些通知可用作简单的提醒，也可指导用户进行复习培训或指导，以帮助防止将来出现风险的行为。 有关详细信息，请参阅 [内幕风险管理通知模板](insider-risk-management-notices.md)。
 

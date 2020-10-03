@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何创建分类器
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321853"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338633"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建分类器
 
@@ -131,7 +131,7 @@ ms.locfileid: "48321853"
 
 ## <a name="test-your-model"></a>测试模型
 
-如果你在已标记的示例文件上收到“匹配”，则现在可以在其余未标记且模型未见过的示例文件上测试模型。  此为可选步骤。
+如果你在已标记的示例文件上收到“匹配”，则现在可以在其余未标记且模型未见过的示例文件上测试模型。  这是一个可选但很有用的步骤，可在使用模型之前评估其“适用性”和“就绪度”，方法是在该模型之前未见过的文件上对其进行测试。
 
 1. 在模型主页中，选择“**测试**”选项卡。这将在未标记的示例文件上运行模型。
 2. 在“**测试文件**”列表中，将列出并显示示例文件（如果模型将其预测为正例或反例的话）。 使用此信息以帮助确定分类器在文档识别中的有效性。
@@ -141,8 +141,8 @@ ms.locfileid: "48321853"
 ## <a name="see-also"></a>另请参阅
 [创建提取程序](create-an-extractor.md)
 
-[“文档理解”概述](document-understanding-overview.md)
+[文档理解概述](document-understanding-overview.md)
 
-[创建表单处理模型](create-a-form-processing-model.md)
+[说明类型](explanation-types-overview.md)
 
 [应用模型](apply-a-model.md) 

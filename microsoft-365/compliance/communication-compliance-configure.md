@@ -14,16 +14,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289113"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341408"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -133,7 +135,7 @@ ms.locfileid: "47289113"
 如果您是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且您要为用户监视 Microsoft 团队聊天，则必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 在后面的这些步骤中，您将分配此通讯组作为策略向导中的受 **监督的用户和组** 选择。
 
 >[!IMPORTANT]
->您必须将请求与 Microsoft 支持文件一起使用，以使组织能够在安全 & 合规性中心中使用图形用户界面搜索本地用户的团队聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+>你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 有关设置组的详细信息，请参阅：
 
@@ -204,7 +206,7 @@ ms.locfileid: "47289113"
 
 4. 若要启用 anonymization，请选择 " **显示匿名版本的用户名**"。
 
-5. 选择“保存”****。
+5. 选择“**保存**”。
 
 6. 导航到 " **通知模板** " 选项卡，然后选择 " **创建通知模板**"。
 
