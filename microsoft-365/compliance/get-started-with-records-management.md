@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？ 请阅读一些实用指南来完成入门。
-ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868897"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333848"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -70,15 +70,16 @@ ms.locfileid: "46868897"
 |----------------|---------------|
 |声明记录 |[使用保留标签声明记录](declare-records.md)|
 |更新记录 |[使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录](record-versioning.md)|
-|让管理员和用户手动为文档和电子邮件应用一组保留和删除操作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 网页版|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|让用户使用 Outlook 规则向电子邮件自动应用保留标签|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
-|向文档和电子邮件自动应用一组保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
+|让管理员和用户手动为文档和电子邮件应用保留和删除操作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 网页版|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让网站管理员为 SharePoint 库、文件夹或文档集中的所有内容设置默认保留和删除操作|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让用户使用 Outlook 规则向电子邮件自动应用保留和删除操作|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|让管理员向文档理解模型应用保留和删除操作，以便将这些操作自动应用于 SharePoint 库中已标识的文档|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
+|向文档和电子邮件自动应用保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
 |从事件发生时开始计算保留期，比如：  <br />- 员工离开组织 <br />- 合同到期 <br />- 产品生存期结束| [从事件发生时开始计算保留期](event-driven-retention.md)|
 |管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)|
-|确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
-|对在保留期结束时删除的内容有处置证明|[处置记录](disposition.md#disposition-of-records) |
-| 监视如何和在哪里应用保留标签 | [监视保留标签](retention.md#monitoring-retention-labels) |
+|确保内容在内容保留期结束时被永久删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
+|对在保留期结束时永久删除的内容有处置证明|[处置记录](disposition.md#disposition-of-records) |
+|监视将保留和删除设置应用于项目的方式和位置 | [监视保留标签](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>有关记录的最终用户文档
 
