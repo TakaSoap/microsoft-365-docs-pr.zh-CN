@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 在本文中，您将了解如何与来宾在 SharePoint 和 OneDrive 中的文档中进行协作。
-ms.openlocfilehash: 98eea8fe9c613aef3e24f9e4bb6746ddc9a527ab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 1a7591915efa82f1995ce2789e181dc350cd3784
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798266"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357778"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文档中与来宾协作
 
@@ -117,3 +117,5 @@ SharePoint 的组织级设置决定了各个 SharePoint 网站可用的设置。
 [有关与未经认证用户共享文件和文件夹的最佳做法](best-practices-anonymous-sharing.md)
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
+
+[与 Azure AD B2B 的 SharePoint 和 OneDrive 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

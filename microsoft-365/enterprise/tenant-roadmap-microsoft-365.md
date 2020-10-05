@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: 设置适用于 Microsoft 365 的租户的路线图。
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775143"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357906"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>适用于 Microsoft 365 的租户路线图
 
@@ -28,13 +30,12 @@ ms.locfileid: "47775143"
 
 若要让你的租户为网络和标识的基础服务做好准备，请务必仔细规划和执行你的租户配置。
 
-## <a name="plan"></a>套餐
+## <a name="plan"></a>计划
 
 若要规划你的租户实现，请执行以下操作：
 
 - [了解订阅、许可证和 Azure Active Directory (Azure AD) 租户](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [了解如何使用第三方 SSL 证书](plan-for-third-party-ssl-certificates.md)
-- [Microsoft 365 管理中心中的访问安装指南](setup-guides-for-microsoft-365.md)
 - [了解 Microsoft 365 租户与 Azure AD 服务集成的方式](integrated-apps-and-azure-ads.md)
 - [规划客户端应用程序支持](microsoft-365-client-support-certificate-based-authentication.md)
 - [确定如何使用混合新式身份验证](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ ms.locfileid: "47775143"
 
 ## <a name="deploy"></a>部署
 
-若要部署你的租户，请为你的组织 [添加 DNS 域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 。
+若要部署你的租户，请为你的组织 [添加 DNS 域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) ，并使用 [Microsoft 365 管理中心中的安装指南](setup-guides-for-microsoft-365.md)。
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>具有多个地理位置的租户
 

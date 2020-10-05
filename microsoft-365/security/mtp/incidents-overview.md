@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200013"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357838"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的事件概述
 
@@ -36,23 +36,26 @@ ms.locfileid: "48200013"
 
 
 
-所有事件的基础是警报。 当网络中出现恶意事件或活动时，将创建警报。 各个警报提供有关各个事件或实体的最新情况的有价值线索。 但是，攻击通常使用各种攻击媒介来发动入侵。 将各个线索结合在一起可能是一项艰巨且耗时的任务。 
+事件基于相关警报。 当网络中出现恶意事件或活动时，将创建警报。 各个警报提供有关现有攻击的有价值的线索。 但是，攻击通常采用各种不同的矢量和技术来发动入侵。 将各个线索 Piecing 在一起可能会非常困难且耗时。
 
-Microsoft 威胁防护连接各个警报上的信号点。 Microsoft 365 安全中心显示了有关以下实体的恶意事件：
-- 设备
-- 用户
-- 邮箱
+此简短视频提供 Microsoft 威胁防护中的事件概述。
+<br>
 
-显示属于更大攻击的特征的可疑事件将聚合到事件中。 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-你将确切了解攻击的开始位置和其他详细信息，以帮助你确定攻击程度。
+事件是构成攻击情景的相关警报的集合。 在网络中的不同设备、用户和邮箱实体中找到的恶意事件和可疑事件会自动通过 Microsoft 威胁防护进行聚合。 将相关警报分组到事件中可使安全 defenders 全面的攻击视图。 
 
-该平台为安全防护程序提供适当的视觉对象和数据表示形式，以了解并解决复杂的跨实体威胁。 
+例如，安全 defenders 可以查看攻击的启动位置、使用的策略以及攻击已进入网络的程度。 他们还可以看到攻击的范围，如受影响的设备、用户和邮箱的数量、影响的严重性以及受影响的实体的其他详细信息。
 
-你不仅可以查看攻击的范围，还可以访问允许你执行战术性步骤来包含事件服务。
+如果启用，Microsoft 威胁防护可以通过自动化和人工智能来自动调查和解决各个警报。 安全 defenders 还可以执行其他补救步骤，以便从事件视图中直接解决攻击。 
+
+来自最近30天的事件显示在事件队列中。 在此，安全 defenders 可以根据风险级别和其他因素查看应优先考虑的事件。 
+
+安全 defenders 还可以将事件重命名、将其分配给各个分析人员、分类并将标记添加到事件中，以实现更好更好的自定义事件管理体验。
 
 
-## <a name="related-topics"></a>相关主题
+
+## <a name="see-also"></a>另请参阅
 - [确定事件优先级](incident-queue.md)
 - [调查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
