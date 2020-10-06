@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: c5d60753e84cb55dc088b79f90fe841b50da1836
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333868"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338587"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
@@ -68,10 +68,10 @@ Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档�
  ## <a name="see-also"></a>另请参阅
 [培训：使用 AI 生成器提高业务绩效](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[创建分类器](create-a-classifier.md)
 
-[创建提取程序](create-an-extractor.md)
 
-[应用文档理解模型](apply-a-model.md)
+[文档理解概述](document-understanding-overview.md)
 
-[创建表单处理模型](create-a-form-processing-model.md)
+[表单处理概述](form-processing-overview.md)
+
+[SharePoint Syntex 简介](index.md)
