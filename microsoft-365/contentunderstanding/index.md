@@ -3,18 +3,19 @@ title: Microsoft SharePoint Syntex 简介
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: ssquires, toresing
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何查找 Microsoft SharePoint Syntex 资源。
-ms.openlocfilehash: 988312d57c0fa6bb0a07e074114daf46d81d2166
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 5d375b27fe3cd58069851f12c459460ac605da83
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48334023"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350769"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 简介
 
@@ -28,9 +29,9 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 ## <a name="get-started"></a>入门
 
-本节中的资源有助于详细了解 SharePoint Syntex 所使用的两种方法：表单处理和文档理解。
+本节中的资源有助于详细了解 SharePoint Syntex 所使用的两种数据分类和提取方法：表单处理和文档理解。
 
-|**如果要查找此信息：**|**转到参考资源：**|
+| 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解有关文档理解的详细信息|[文档理解概述](https://docs.microsoft.com/microsoft-365/contentunderstanding/document-understanding-overview)|
 |了解有关表单处理的详细信息|[表单处理概述](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)|
@@ -43,7 +44,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 详细了解如何在组织中使用和实施 SharePoint Syntex 以帮助你解决业务问题： 
 
-|**如果要查找此信息：**|**转到参考资源：**|
+| 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解如何开始计划使用 SharePoint Syntex。 |[SharePoint Syntex 采纳：入门](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted)<br><br>|  
 
@@ -51,7 +52,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 本部分中的资源可帮助组织中的管理员在 Microsoft 365 环境中设置和配置Microsoft SharePoint Syntex。
 
-|**如果要查找此信息：**|**转到参考资源：**|
+| 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |设置和配置 SharePoint Syntex|[设置 Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/set-up-content-understanding)|
 |了解图像标记和如何禁用|[SharePoint Syntex 中的图像标记](https://docs.microsoft.com/microsoft-365/contentunderstanding/image-tagging)|
@@ -60,7 +61,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 本节中的资源可帮助你的用户了解如何创建和配置文档的理解和表单处理模型。
 
-|**如果要查找此信息：**|**转到参考资源：**|
+| 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解如何使用模型|[创建内容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[创建分类器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[创建提取程序](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[创建表单处理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[说明类型](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[应用文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[通过示例模型了解文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
 |将保留标签应用于模型|[文档理解与表单处理模型之间的差异](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
@@ -71,7 +72,7 @@ Microsoft SharePoint Syntex 是一项 Office 365 服务，有助于组织：
 
 SharePoint Syntex 许可证为用户提供了高级内容服务，这些服务在 Microsoft 365 环境中为你提供了附加功能。 本节中的资源提供了有关这些功能及其使用方式的详细信息。
 
-|**如果要查找此信息：**|**转到参考资源：**|
+| 如果要查找此信息： | 参考资源： |
 |:-----|:-----|
 |了解有关使用基于简单知识组织系统的格式导入数据集的信息|[使用基于 SKOS 的格式导入术语集](https://docs.microsoft.com/microsoft-365/contentunderstanding/import-term-set-skos)<br><br>[SharePoint 分类的 SKOS 格式参考](https://docs.microsoft.com/microsoft-365/contentunderstanding/skos-format-reference)<br><br>|
 |了解如何将内容类型更一致地用于 SharePoint 库和列表|[将内容类型推送到中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/push-content-type-to-hub)|
