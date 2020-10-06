@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333674"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367973"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>规划你的试点 Microsoft 威胁防护项目 
 
@@ -101,7 +103,7 @@ ms.locfileid: "48333674"
 
 请记住，应在定义的作用域的参数中创建这些用例。 例如，如果测试范围不包括 Microsoft 云应用安全性等工具的评估，则不应创建依赖此数据源的用例。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 在用例列表中，您可以开始创建要求。 要求包含工具必须具备的功能才能满足用例。 这些要求可以分解为多个类别，如配置和维护、支持集成以及特定于功能的要求（如搜寻能力和构建自定义警报的能力）。
 

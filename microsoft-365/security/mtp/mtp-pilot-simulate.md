@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: be6bf277926cffb77dfcde425ef08a688fb0cf34
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333974"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368089"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>运行 Microsoft 威胁防护攻击模拟  
 
@@ -458,7 +460,7 @@ EmailEvents
 
 对于此试点，您可能希望将此规则限制为生产环境中的一小部分测试设备。
 
-6.  选择“创建”****。 然后，从导航面板中选择 " **自定义检测规则** "。
+6.  选择 **“创建”**。 然后，从导航面板中选择 " **自定义检测规则** "。
  
     ![菜单中的 "自定义检测规则" 选项的屏幕截图](../../media/mtp/fig27a.png) 
 

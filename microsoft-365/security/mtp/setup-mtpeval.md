@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a0997c107e78104619e1e05b8d1073e8690a3667
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94045834f63569bc2910b1faa02f47ebfebead19
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195555"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368077"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>设置你的 Microsoft 威胁防护试用实验室环境 
 
@@ -146,7 +148,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 7. 再次选择全局管理员帐户，然后单击 " **管理用户名**"。
 <br>![Image of_Microsoft 365 管理中心 "页面，您可以在其中选择" 帐户 "，然后管理用户名](../../media/mtp-eval-29.png) <br>
 
-8. Optional将域从 *onmicrosoft.com* 更改为您自己的域，具体取决于您在前面步骤中选择的内容。 单击“**保存更改**”。
+8. Optional将域从 *onmicrosoft.com* 更改为您自己的域，具体取决于您在前面步骤中选择的内容。 单击**保存更改**。
 <br>![图像 of_Microsoft 365 管理中心 "页，您可以在其中更改您的域首选项](../../media/mtp-eval-30.png) <br>
 
 

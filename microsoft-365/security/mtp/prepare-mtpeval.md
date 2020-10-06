@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 97e75b07721c180fe6b4df56c2d9cc819b610802
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195543"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367997"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>准备你的 Microsoft 威胁防护试用实验室或试点环境
 
@@ -86,7 +88,7 @@ ms.locfileid: "48195543"
 
 -   I = 此项目的通知
 
-| 名称                 | 角色                                                                                                                                                                                                          | Action |
+| 名称                 | 角色                                                                                                                                                                                                          | 操作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **首席信息安全专员 (CISO) ** *作为新技术部署的组织中充当承办人的执行者。*                                                  | 就     |
 | 输入名称和电子邮件 | "**网络防护运营中心" (CDOC) ** *来自 CDOC 团队的代表，负责定义如何将此更改与客户安全操作团队中的过程相一致。*       | 就     |
@@ -129,9 +131,9 @@ ms.locfileid: "48195543"
 
 | 组件                               | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 配置顺序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                   |
+| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
 |Azure 高级威胁防护|Azure ATP 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。 <br> [了解详细信息](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
-|Microsoft Cloud App Security| Microsoft 云应用安全是一个云访问安全代理 (CASB) ，可在多个云上运行。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |第三章                   |
+|Microsoft Cloud App Security| Microsoft 云应用安全是一个云访问安全代理 (CASB) ，可在多个云上运行。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
 |Microsoft Defender 高级威胁防护 | Microsoft Defender ATP 终结点检测和响应功能提供了准实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>后续步骤
