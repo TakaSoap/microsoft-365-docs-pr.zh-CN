@@ -71,7 +71,7 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 生成警报测试
               href: mtp/generate-test-alert.md
-        - name: 在生产中运行试点
+        - name: 在生产中运行试点项目
           items:
             - name: 试点概述
               href: mtp/mtp-pilot.md
@@ -402,13 +402,13 @@
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Office 365 ATP 中的安全文档
               href: ./office-365-security/safe-docs.md
-            - name: 设置 ATP 安全链接策略
+            - name: 在 Office 365 ATP 中设置安全链接策略
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: 设置 ATP 安全附件策略
+            - name: 在 Office 365 ATP 中设置安全附件策略
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-            - name: 设置 SPF 以帮助防止欺骗
+            - name: 设置 SPF 以防欺骗
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: 为用户提交指定邮箱
+            - name: 用户提交策略
               href: ./office-365-security/user-submission.md
             - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
@@ -493,8 +493,10 @@
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: 独立 EOP 中的邮件流规则（传输规则）
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
-            - name: 在 Outlook 网页版中举报垃圾电子邮件和钓鱼行为
+            - name: 在 Outlook 网页版中举报垃圾电子邮件和网络钓鱼
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: 在 Outlook for iOS 和 Outlook for Android 中举报垃圾电子邮件和网络钓鱼
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: 在独立 EOP 中运行管理员角色组报告
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
         - name: 调查
