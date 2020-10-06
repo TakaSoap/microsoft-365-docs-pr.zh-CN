@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的说明类型
-ms.openlocfilehash: 4fe13a35757807e08638f68259ccd24a59a97460
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338657"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350299"
 ---
 # <a name="introduction-to-explanation-types"></a>说明类型简介
 
@@ -87,7 +87,7 @@ Redmond, WA 98034<br>
 
 #### <a name="what-are-tokens"></a>什么是令牌？
 
-为使用邻近度说明类型，请理解令牌的含义，因为令牌数目是邻近度说明测量某个说明与另一个说明距离的方法。  
+为使用邻近度说明类型，需理解令牌的含义，因为令牌数目是邻近度说明测量某个说明与另一个说明距离的方法。  
 
 令牌是字母和数字的连续跨度结构（不包含空格或标点）。 空格不是令牌。 每个标点字符都是一个令牌。 下表显示了一些如何确定短语中令牌数目的示例。
 
