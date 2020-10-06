@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 现有 Office 365 客户必须在其所在国家/地区的截止日期前提交请求，以将其 Microsoft 365 服务数据移动到其新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10c77fdde8583c9d791c9fed936f94aad8fc7264
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333880"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361935"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -31,7 +31,7 @@ ms.locfileid: "48333880"
   
 ## <a name="when-can-i-request-a-move"></a>何时可以请求移动？
 
-|**在中注册国家/地区的客户**|**请求时间段开始**|**请求截止日期**|
+| 在中注册国家/地区的客户 | 请求时间段开始 | 请求截止日期 |
 |:-----|:-----|:-----|
 |日本  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
 |澳大利亚、新西兰、斐济  <br/> |2020年1月1日  <br/> |2020 年 6 月 30 日  <br/> |
@@ -44,7 +44,7 @@ ms.locfileid: "48333880"
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020 年 6 月 30 日  <br/> |
 |瑞士，列支敦士登  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |挪威  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
-|德国  <br/> |2020年10月1日  <br/> |2021年3月31日  <br/> |
+|德国  <br/> |相同  <br/> |相同  <br/> |
 
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
