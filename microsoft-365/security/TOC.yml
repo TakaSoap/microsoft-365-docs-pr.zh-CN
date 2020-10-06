@@ -495,7 +495,7 @@
               href: ./office-365-security/mail-flow-rules-transport-rules-0.md
             - name: 在 Outlook 网页版中举报垃圾电子邮件和网络钓鱼
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-            - name: 在 Outlook for iOS 和 Outlook for Android 中举报垃圾电子邮件和网络钓鱼
+            - name: 在 Outlook for iOS和Android 中报告垃圾电子邮件和网络钓鱼
               href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
             - name: 在独立 EOP 中运行管理员角色组报告
               href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
