@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格的安全配置等，以便您可以了解您拥有的内容，以及如何保护属性。
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格安全配置等。 了解您拥有的功能，以及如何保护属性。
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338700"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359149"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全概述
 
@@ -53,9 +53,9 @@ Office 365 安全构建在 EOP 提供的核心保护基础之上。 EOP 存在�
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-虽然这些服务中的每一项都强调了保护、检测、调查和响应等具体目标，但 ***所有*** 服务都可以执行 ***任何*** 保护、检测、调查和响应的目标。
+虽然这些服务中的每一项都强调了保护、检测、调查和响应等目标，但 ***所有*** 服务都可以执行 ***任何*** 保护、检测、调查和响应的目标。
 
-Office 365 安全性的核心是 EOP 保护。 ATP P1 包含 EOP 中的。 ATP P2 包含 P1 和 EOP。 结构是累积的。 这就是为什么在配置 ATP 时，应从 EOP 开始，然后在层中工作。
+Office 365 安全性的核心是 EOP 保护。 ATP P1 包含 EOP 中的。 ATP P2 包含 P1 和 EOP。 结构是累积的。 这就是为什么在配置此产品时，应从 EOP 开始，并工作到 ATP。
 
 尽管电子邮件身份验证配置发生在公共 DNS 中，但务必要配置此功能以帮助防御欺骗。 *如果您有 EOP，* ***则应 [配置电子邮件身份验证](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***。
 
@@ -138,11 +138,11 @@ ATP P1 也会为调查添加 **实时检测** 。 此威胁搜寻工具的名称
 - 如果当前订阅不包含 Office 365 ATP，并且您需要它，请 [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，并了解 ATP 在您的组织中如何工作。
 
 > [!TIP]
-> ***内幕提示***。 您可以使用 docs.microsoft.com 目录了解 EOP 和 ATP。 导航到 [Office 365 安全](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) 文章，您会注意到，目录组织从评估和部署 (开始，包括迁移) ，然后继续进入预防、检测、调查和响应。 <p> 将划分此结构，以便 **安全管理** 主题遵循 **安全操作** 主题。 如果您是工作角色的一个新成员，请使用此提示中的链接和您对目录的了解，以帮助了解空间。 请记住使用 *反馈链接* 并在转到时对 *文章打分* 。 反馈可帮助我们改进我们为你提供的内容。
+> ***内幕提示***。 您可以使用 docs.microsoft.com 目录了解 EOP 和 ATP。 导航回此页面（ [Office 365 安全概述](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)），您会注意到侧面栏中的目录组织。 它从部署 (开始，包括迁移) ，然后继续进入预防、检测、调查和响应。 <p> 将划分此结构，以便 **安全管理** 主题遵循 **安全操作** 主题。 如果您是工作角色的一个新成员，请使用此提示中的链接和您对目录的了解，以帮助了解空间。 请记住使用 *反馈链接* 并在转到时对 *文章打分* 。 反馈可帮助我们改进我们为你提供的内容。
 
 ## <a name="where-to-go-next"></a>下一步转到何处
 
-如果你是安全管理员，你可能需要为你的邮件配置 DKIM 或 DMARC，为你的优先级用户推出 ' Strict ' 安全预设，或者你可能需要查找产品中的新增内容。 如果你使用安全操作，你可能需要利用实时检测或威胁资源管理器来调查和响应，或使用攻击模拟器对最终用户检测进行培训。 下面是一些有关下一步要了解的其他建议。
+如果你是安全管理员，你可能需要为你的邮件配置 DKIM 或 DMARC。 您可能希望为优先级用户实施 "严格" 安全预设，或查找产品中的新增功能。 如果你使用的是安全操作，你可能需要利用实时检测或威胁资源管理器来调查和响应，或使用攻击模拟器对最终用户检测进行培训。 无论哪种方式，下面都提供了有关下一步要查看的其他建议。
 
 [电子邮件身份验证，包括 SPF、DKIM 和 DMARC (，其中包含所有三个) 的设置的链接 ](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
