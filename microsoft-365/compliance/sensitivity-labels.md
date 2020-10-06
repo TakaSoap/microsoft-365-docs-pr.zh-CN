@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 349adfd181a86d04b8188d8bf76df8ae9dc5c3a6
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 9a02b5b6f0e78a71ab598b860248422d751c8400
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338553"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361959"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -44,9 +44,9 @@ ms.locfileid: "48338553"
 若要应用敏感度标签，用户必须使用其 Microsoft 365 工作或学校帐户登录。
 
 > [!NOTE]
-> 对于美国政府社区（GCC 和 GCC-HC）租户，目前仅支持将敏感度标签用于 Azure 信息保护统一标记客户端和扫描程序。 
+> 对于美国政府（GCC、GCC-H 和 GCC-HC）租户，目前仅支持其Azure信息保护统一标签客户端和扫描仪的敏感性标签。 
 > 
-> 有关详细信息，请参阅博客文章：[公布统一标记在 GCC 和 GCC-H 环境中的整体可用性](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-general-availability-of-unified-labeling-in-gcc-and/ba-p/1563215)。
+> 更多详细信息，请参阅[Azure 信息保护高级政府服务说明](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 借助敏感度标签，你可以：
   
