@@ -2,7 +2,7 @@
 title: 限制 Microsoft 365 中的共享
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 69a71d84f32316278353f8de392202f1a92dc22d
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528178"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361901"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -33,15 +33,18 @@ ms.locfileid: "46528178"
 
 |共享方法|说明|限制选项|
 |:-------------|:----------|:-------------|
-|[Microsoft 365 组或团队](#microsoft-365-group-or-team)|如果被授予对 Microsoft Teams 团队或 Microsoft 365 组的访问权限，可以有权编辑关联的 SharePoint 网站中的文件。|如果组或团队是专用的，则用于加入团队的共享邀请将会转到所有者那里以供其审批。 管理员可通过禁用来宾访问来阻止组织外部人员的访问。|
-|[SharePoint 网站](#sharepoint-site)|可向用户授予对 SharePoint 网站的“所有者”、“成员”或“访问者”访问权限，他们将拥有对网站中文件的相应访问权限级别。|可限制网站权限，以便只有网站所有者可以共享网站。|
+|[Microsoft 365 组或团队](#microsoft-365-group-or-team)|如果被授予对 Microsoft Teams 团队或 Microsoft 365 组的访问权限，可以有权编辑关联的 SharePoint 网站中的文件。|如果组或团队是专用的，则用于加入团队的共享邀请将会转到所有者那里以供其审批。 管理员可通过禁用来宾访问或使用敏感度标签来阻止组织外部人员的访问。|
+|[SharePoint 网站](#sharepoint-site)|可向用户授予对 SharePoint 网站的“所有者”、“成员”或“访问者”访问权限，他们将拥有对网站中文件的相应访问权限级别。|可限制网站权限，以便只有网站所有者可以共享网站。 管理员可以将网站设置为只读或完全阻止访问。|
 |[与特定人员共享](#sharing-with-specific-people)|网站成员和拥有编辑权限的人员可以提供对文件和文件夹的直接权限，或通过使用*特定人员*链接进行共享。|可限制网站权限，以便只有网站所有者可以共享文件和文件夹。 在这种情况下，网站成员提供的直接访问和*特定人员*链接共享将会转到网站所有者那里以供其审批。|
 |[SharePoint 来宾共享](#sharepoint-guest-sharing)|SharePoint 网站所有者和成员可与组织外部的人员共享文件和文件夹。|可针对整个组织或单个网站禁用来宾共享。|
 |[*你组织中的人员*共享链接](#people-in-your-organization-sharing-links)|SharePoint 网站所有者和成员可以使用*你组织中的人员*链接（可用于组织内的所有人）来共享文件。|可在网站级别禁用*你组织中的人员*链接。|
+|[创建网站、组和团队](#create-sites-groups-and-teams)|默认情况下，用户可以创建他们可以共享内容的新网站、组和团队。|管理员可限制可创建网站、组和团队的人员。|
 |[电子邮件](#email)|有权访问文件的人员可通过电子邮件将其发送给其他人。|管理员可以使用敏感度标签对文件进行加密，以防止有人与未经授权的人员共享这些文件。|
 |[下载或文件复制](#download-or-file-copy)|有权访问文件的人员可以下载或复制该文件，并与 Microsoft 365 范围之外的其他人共享。|管理员可以使用敏感度标签对文件进行加密，以防止有人与未经授权的人员共享这些文件。|
 
-虽然可使用本文中介绍的管理员控制措施来限制组织内的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全和合规性功能，以创建安全的共享环境。 有关信息，请参阅[使用 Microsoft 365 在 SharePoint 中进行文件协作](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)和[用于高度管控数据的 Teams](https://docs.microsoft.com/microsoft-365/enterprise/secure-teams-highly-regulated-data-scenario)。
+你还可以限制人员访问共享内容的条件。 有关详细信息，请参阅本文后面的[条件访问](#conditional-access)。
+
+虽然可使用本文中介绍的管理员控制措施来限制组织内的共享，但我们强烈建议考虑使用 Microsoft 365 中提供的安全和合规性功能，以创建安全的共享环境。 有关信息，请参阅[使用 Microsoft 365 在 SharePoint 中进行文件协作](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)和[使用安全隔离配置团队](secure-teams-security-isolation.md)。
 
 若要了解组织中如何使用共享，请[运行文件和文件夹共享报告](https://docs.microsoft.com/sharepoint/sharing-reports)。
 
@@ -69,7 +72,7 @@ ms.locfileid: "46528178"
     ![Microsoft 365 管理中心中内的 Microsoft 365 组共享设置的屏幕截图](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> 如果想要阻止特定组或团队的来宾共享，可使用 Microsoft PowerShell 来执行此操作。 有关详细信息，请参阅[阻止特定组中的来宾用户](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group)。
+> 如果想要阻止特定组或团队的来宾共享，可使用 [Microsoft PowerShell](per-group-guest-access.md) 或[敏感性标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)来执行此操作。
 
 可通过在 Azure Active Directory 中允许或阻止域，将来宾共享限制为指定域的用户。 如果已启用 [Azure AD B2B 的 SharePoint 和 OneDrive 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)，该操作还会影响 SharePoint 中的来宾共享。
 
@@ -112,6 +115,14 @@ ms.locfileid: "46528178"
 
     ![允许的域网站级别设置的屏幕截图](../media/limit-site-sharing-by-domain.png)
 
+### <a name="block-access-to-a-site"></a>阻止访问网站
+
+可通过更改网站的锁定状态，阻止访问网站或将网站设置为只读。 有关详细信息，请参阅[锁定和解除锁定网站](https://docs.microsoft.com/sharepoint/manage-lock-status)。
+
+### <a name="permissions-inheritance"></a>权限继承
+
+虽然不推荐，但你可以使用 [SharePoint 权限继承](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance)自定义网站和子网站的访问级别。
+
 ## <a name="sharing-with-specific-people"></a>与特定人员共享
 
 如果你想限制网站或其内容的共享，可以将网站配置为仅允许网站所有者共享文件、文件夹和该网站。 进行此配置后，当网站成员尝试使用*特定人员*链接共享文件或文件夹时，该尝试将会转到网站所有者那里以供其审批。
@@ -122,7 +133,7 @@ ms.locfileid: "46528178"
 3. 选择“**只有站点所有者可共享文件、文件夹和站点**”。
 4. 单击“**保存**”。
 
-    ![SharePoint 网站中共享权限设置的屏幕截图](../media/sharepoint-site-only-site-owners-can-share.png)
+    ![将 SharePoint 网站中共享权限设置设为仅限所有者的屏幕截图](../media/sharepoint-site-only-site-owners-can-share.png)
 
 ## <a name="sharepoint-guest-sharing"></a>SharePoint 来宾共享
 
@@ -133,7 +144,7 @@ ms.locfileid: "46528178"
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**仅限组织中的人员**”。
 3. 单击“**保存**”。
 
-    ![SharePoint 组织级别共享设置的屏幕截图](../media/sharepoint-tenant-sharing-off.png)
+    ![将 SharePoint 组织级别共享设置设为面向所有人的屏幕截图](../media/sharepoint-tenant-sharing-off.png)
 
 
 针对网站关闭来宾共享
@@ -142,7 +153,7 @@ ms.locfileid: "46528178"
 3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 4. 在“**外部共享**”下，选择“**仅限组织中的人员**”，然后单击“**保存**”。
 
-    ![SharePoint 网站级别共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings-off.png)
+    ![将 SharePoint 网站级别共享设置设为仅面向组织中的人员的屏幕截图](../media/sharepoint-site-external-sharing-settings-off.png)
 
 如果想要允许与组织外部的人员共享，但要确保每个人都进行身份验证，可以针对整个组织或单个网站禁用*任何人*（匿名共享）链接。
 
@@ -151,15 +162,15 @@ ms.locfileid: "46528178"
 2. 在“**外部共享**”下，将 SharePoint 滑块向下拖动到“**新来宾和现有来宾**”。
 3. 单击“**保存**”。
 
-    ![SharePoint 网站级别共享设置的屏幕截图](../media/sharepoint-guest-sharing-new-existing-guests.png)
+    ![将 SharePoint 组织级别共享设置设为面向新来宾和现有来宾的屏幕截图](../media/sharepoint-guest-sharing-new-existing-guests.png)
 
-针对某个网站关闭*任何人*链接
+关闭站点的 *“任何人”* 链接
 1. 在 SharePoint 管理中心中的“**网站**”下，单击“**活动站点**”。
 2. 单击要配置的网站。
 3. 在“**策略**”选项卡的“**外部共享**”下，单击“**编辑**”。
 4. 在“**外部共享**”下，选择“**新来宾和现有来宾**”，然后单击“**保存**”。
 
-    ![SharePoint 网站级别共享设置的屏幕截图](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
+    ![将 SharePoint 网站级别共享设置设为面向新设置和现有设置的屏幕截图](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
 
 ## <a name="people-in-your-organization-sharing-links"></a>*你组织中的人员*共享链接
 
@@ -171,6 +182,15 @@ ms.locfileid: "46528178"
 
 `Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
 
+## <a name="create-sites-groups-and-teams"></a>创建网站、组和团队
+
+默认情况下，用户可以创建他们可以共享内容的新网站、组和团队（具体取决于你的共享设置）。 你可限制可创建网站、组和团队的人员。 请参阅以下参考：
+
+- [管理 SharePoint 中的网站创建](https://docs.microsoft.com/sharepoint/manage-site-creation)
+- [管理可创建 Microsoft 365 组的人员](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+
+请注意，限制组创建将限制团队创建。
+
 ## <a name="email"></a>电子邮件
 
 可通过加密防止不必要的电子邮件共享。 这将防止电子邮件被转发或与未经授权的用户共享。 你可以使用敏感度标签来启用电子邮件加密。 有关详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)。
@@ -178,6 +198,15 @@ ms.locfileid: "46528178"
 ## <a name="download-or-file-copy"></a>下载或文件复制
 
 有权访问 Microsoft 365 中的文件和文件夹的用户可以下载文件并将其复制到外部媒体。 若要减少不必要的文件共享的风险，可使用敏感度标签对内容进行加密。
+
+## <a name="conditional-access"></a>条件访问
+
+Azure Active Directory 条件访问提供的选项可根据网络位置、设备运行状况、登录风险和其他因素限制或防止与人员共享。 查看[什么是条件访问？](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)
+
+SharePoint 提供与 Azure AD 条件访问的直接集成，适用于未托管的设备和网络位置。 有关详细信息，请参阅以下参考：
+
+- [控制来自非托管设备的访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
+- [根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>另请参阅
 
