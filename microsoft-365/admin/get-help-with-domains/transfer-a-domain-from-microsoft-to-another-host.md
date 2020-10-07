@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在此处查找将域从 Microsoft 转移到另一个注册器的步骤。 '
-ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d960b57a2c82b804d61ead1c672c00f0543b3ae8
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289167"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370320"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>将域从 Microsoft 传输到另一台主机
 
@@ -55,13 +55,16 @@ ms.locfileid: "47289167"
 
 7. 复制授权代码，并等待大约30分钟，让您的域传输状态更改为 "**注册**" 选项卡上的 "已**解锁以供转移**"，然后再继续执行下一步。
 
-8. 转到要对其进行管理的域名注册机构的网站，以继续进行。 按照传输域的说明 (搜索其网站) 的帮助。
+8. 转到要对其进行管理的域名注册机构的网站，以继续进行。 按照传输域的说明 (搜索其网站) 的帮助。 这通常意味着支付转帐费用并为新的注册机构提供 Authcode，以便他们可以启动传输。 Microsoft 会向你发送电子邮件以确认我们已收到传输请求，并且域将在5天内转移。
 
-您可以在 Microsoft 365 中的 " **域**" 页上找到 "授权代码**注册**" 选项卡。
+    您可以在 Microsoft 365 中的 " **域**" 页上找到 "授权代码**注册**" 选项卡。
+    
+    > [!TIP]
+    > 英国域需要不同的过程。 请与 Microsoft 支持部门联系并请求 **IPS 标记更改** ，以匹配您要管理的域的注册器。 标记发生更改后，域将立即转移到新的注册器。 然后，您需要使用新的注册器完成转移，很可能会支付转让费用，并使用新的注册机构将转移的域添加到您的帐户。
 
 9. 传输完成后，你将在新域注册机构中续订你的域。
 
-10. 若要完成此过程，请返回管理中心的 " **域** " 页，然后选择 "  **完成域传输**"。
+10. 若要完成此过程，请返回管理中心的 " **域** " 页，然后选择 "  **完成域传输**"。 这将把域标记为不再从 Microsoft 365 购买，并将禁用域订阅。 它不会从租户中删除域，也不会影响域中的现有用户和邮箱。
 
 > [!NOTE]
 > Microsoft 365 购买的域不符合 nameserver 更改或在 Microsoft 365 组织之间传输域的条件。 如果需要其中任一项，则必须将域注册转移到其他注册器。

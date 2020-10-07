@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
 description: 了解如何使用 Microsoft 365 身份管理功能。
-ms.openlocfilehash: d5bcafb5b452e693bf3ff706c436a9986eeeae76
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e4c537e7fa3ac099caf8b7dbc44327308751c8f5
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328485"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370342"
 ---
 # <a name="manage-microsoft-365-identity-governance"></a>管理 Microsoft 365 身份管理
 
@@ -46,8 +46,6 @@ Azure AD 访问审查允许您查看用户的访问权限，以确保只有合�
 如果组织需要接受安全审核以确定用户帐户是否拥有过多访问权限，这一点尤其重要，如果违反行业或地区法规，可能会导致罚款。
 
 有关详细信息，请参阅 [访问审核概述](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)。
-
-Azure AD Privileged Identity Management (PIM) 提供用于保护 Azure AD、Azure 和其他 Microsoft 云服务中的资源访问权限的其他定制控制措施。 Azure AD PIM 提供了一套全面的治理控件，以帮助保护公司的资源（如目录、Office 365 和 Azure 资源角色）的安全。 与处理其他形式的访问权限一样，组织可以使用访问评审来针对充当管理员角色的所有用户配置定期的访问权限重新认证。 Azure AD PIM 仅适用于 Microsoft 365 企业版的 E5 版本。
 
 请参阅以下文章，配置不同类型的访问评审：
 

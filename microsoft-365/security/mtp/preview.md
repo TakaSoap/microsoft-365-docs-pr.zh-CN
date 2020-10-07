@@ -19,21 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 8b3f8d6868d14b8791a676367d4fb9ad5c2e3307
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304958"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370376"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威胁防护预览功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!IMPORTANT]
+>不提供任何服务级别协议的预览版本，不建议在生产工作负载。 某些功能可能不受支持或可能具有受约束的功能。
 
 **适用于：**
 - Microsoft 威胁防护
-
 
 Microsoft 威胁防护服务不断更新，以包含新的功能和功能增强。
 

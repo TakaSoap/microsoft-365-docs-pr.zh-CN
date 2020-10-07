@@ -3,7 +3,6 @@ title: Microsoft 365 网络合作伙伴计划
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/07/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +16,12 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: Microsoft 365 网络合作伙伴计划允许你的设备在与 Microsoft 365 合作时获得认证。
 hideEdit: true
-ms.openlocfilehash: fb4a7c9543c6928eefbd62fc6b94e6bdab93e86d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4f47b4d58dacf9578952f18668f2a0a89752f30f
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688039"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370354"
 ---
 # <a name="microsoft-365-networking-partner-program"></a>Microsoft 365 网络合作伙伴计划
 
@@ -40,4 +39,4 @@ Microsoft 365 网络合作伙伴计划将合格的网络解决方案指定为 "�
 
 如果你是 Microsoft 365 客户，则可以通过此页面使网络解决方案提供商了解此程序 [https://aka.ms/Office365NPP](https://aka.ms/Office365NPP) 。
 
-对于想要咨询 Microsoft 365 网络合作伙伴计划的网络解决方案提供商，请填写 [此表格](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRyMNEapKtzJHu98R0YXYz1RUN0QxSUVEWTdRVTdIV1RTWjIzOVk0QkE4US4u)。 感谢你的关注，我们期待成为可爱的合作伙伴关系。
+对于想要咨询 Microsoft 365 网络合作伙伴计划的网络解决方案提供商，请填写中的表单 [https://aka.ms/NPPsignup](https://aka.ms/NPPsignup) 。 感谢你的关注，我们期待成为可爱的合作伙伴关系。

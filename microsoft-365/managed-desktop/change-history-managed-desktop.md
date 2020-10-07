@@ -13,16 +13,35 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: a483a03fc913a019f58e80fb2713bb0367a6db44
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9dec293a26cbc3d239a597e46815d60d79b9ac20
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546266"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370408"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 托管桌面文档更改历史记录
 
 本文列出了 [Microsoft 托管桌面文档](index.yml)中的新增和更新的文章。 "已更新" 的文章是指那些具有材料添加或更正的文章--不列出更正拼写、样式或格式问题等次要修补程序。 您始终可以查看特定提交 (的历史记录，其中包括通过访问 [GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的存储库) 任何更改的详细信息。
+
+
+## <a name="september-2020"></a>2020 年 9 月
+新增或已更改的文章 | 说明
+--- | ---
+[隐私和个人数据](service-description/privacy-personal-data.md) | 新增文章
+[为 Microsoft 托管桌面准备映射的驱动器](get-ready/mapped-drives.md) | 更新的文章
+[获取针对用户的帮助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[可配置的设置参考-Microsoft 托管桌面](working-with-managed-desktop/config-setting-ref.md) | 更新的文章
+[部署和跟踪可配置的设置-Microsoft 托管桌面](working-with-managed-desktop/config-setting-deploy.md) | 更新的文章
+[Microsoft 托管桌面的管理员支持](working-with-managed-desktop/admin-support.md) | 更新的文章
+[Microsoft Teams](get-started/teams.md) | 新增文章
+[访问管理门户](get-started/access-admin-portal.md) | 新增文章
+[为 Microsoft 托管桌面准备打印资源](get-ready/printing.md) | 更新的文章
+[使用 Autopilot 和注册状态页的首次运行体验](get-started/esp-first-run.md) | 更新的文章
+[自行注册新设备](get-started/register-devices-self.md) | 更新的文章
+[为 Microsoft 托管桌面准备证书和网络配置文件](get-ready/certs-wifi-lan.md) | 更新的文章
+[Microsoft 托管桌面的先决条件](get-ready/prerequisites.md) | 更新的文章
+[使用见解](working-with-managed-desktop/insights.md) | 更新的文章
 
 ## <a name="august-2020"></a>2020 年 8 月
 新增或已更改的文章 | 说明
