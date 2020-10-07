@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置自动执行的操作测试。 管理用户历史记录和筛选你的仪表板视图。
-ms.openlocfilehash: ead4fe60a11bcf78a318601c1de6d72f2490c567
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 043a52e2817e770671c2ef8876049f6bbe0285ee
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204300"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368135"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -70,7 +73,7 @@ ms.locfileid: "48204300"
 
 了解有关 [Office 365 安全 & 合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)的详细信息。
 
-如果您没有访问 Office 365 安全与合规中心的权限，或者您需要在 Microsoft 服务信任门户中访问经典版合规性管理器，则服务信任门户中的管理员设置将提供另一种方法来分配角色 ([查看说明](/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud?view=o365-worldwide.md#assigning-compliance-manager-roles-to-users)) 。 请注意，此类角色在功能方面更具限制。
+如果您没有访问 Office 365 安全与合规中心的权限，或者您需要在 Microsoft 服务信任门户中访问经典版合规性管理器，则服务信任门户中的管理员设置将提供另一种方法来分配角色 ([查看说明](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)) 。 请注意，此类角色在功能方面更具限制。
 
 ##### <a name="more-about-azure-ad"></a>有关 Azure AD 的详细信息
 

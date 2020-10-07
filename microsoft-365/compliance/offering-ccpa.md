@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208122"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370298"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消费者隐私法案 (CCPA)
 
@@ -39,7 +39,7 @@ CCPA 将于 2020 年 1 月 1 日生效。 但是，由加利福尼亚律师常�
 
 在 OST 中设置时，Microsoft 符合其提供的在线服务的所有法律和法规，其中包括 CCPA。  
 
-## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
+## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内的云服务
 
 - [Azure](https://aka.ms/AzureCompliance)
 - Azure Dev Ops
@@ -53,7 +53,7 @@ CCPA 将于 2020 年 1 月 1 日生效。 但是，由加利福尼亚律师常�
 
 若要为 CCPA 做好准备，请执行以下几个步骤：
 
-- 作为 CCPA 隐私计划的一部分，开始利用 [合规性分数](compliance-score.md) 中的 GDPR 评估。
+- 在 [合规性管理器](compliance-manager.md) 中开始利用 GDPR 评估作为你的 CCPA 隐私计划的一部分。
 - 使用数据主体请求工具建立一个过程，以有效响应 (DSARs) 的数据主体访问请求。
 - 设置标签和策略，使用 Microsoft 信息保护服务来发现、分类、标记和保护敏感数据。
 - 使用电子邮件加密功能进一步控制敏感信息。
@@ -95,7 +95,7 @@ CCPA 需要管控企业来收集、转移和销售个人信息，以及其他一
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

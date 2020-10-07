@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: dbe97b207e9683e719155f5dfd94d6f6a0427940
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338425"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370440"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -126,6 +126,7 @@ Microsoft 提供了内置的通知策略，可帮助确定 Exchange 管理员权
 |**检测到恶意软件市场活动并阻止**|当有人试图向组织中的用户发送包含特定类型的恶意软件的大量电子邮件时生成警报。 如果发生此事件，则受感染的邮件将被 Microsoft 阻止，并且不会传递到邮箱。 此策略的严重性设置 **较低** 。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**SharePoint 和 OneDrive 中检测到的恶意软件市场**|当组织中的 SharePoint 网站或 OneDrive 帐户中的文件中检测到异常数量的恶意软件或病毒时，将生成警报。 此策略具有 **高** 严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
 |**由于租户或用户替代**<sup>1</sup>而传递的网络钓鱼|当 Microsoft 检测到管理员或用户替代允许将仿冒邮件传递到邮箱时生成警报。 替代的示例包括允许来自特定发件人或域的邮件的收件箱或邮件流规则，或者允许来自特定发件人或域的邮件的反垃圾邮件策略。 此策略具有 **高** 严重性设置。|威胁管理|E5/G5 或 Office 365 ATP P2 附加订阅|
+|**可疑的电子邮件转发活动**|当组织中的某个人将自动转发的电子邮件发送到可疑外部帐户时，将生成警报。 这是一种针对可能指示帐户受到威胁但不够严重以限制用户的行为的早期警告。 此策略的严重性设置为 **中等** 。 尽管极少数情况下，此策略生成的警报也可能是异常情况。 最好 [检查用户帐户是否受到威胁](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**检测到可疑的电子邮件发送模式**|当组织中的某个人发送了可疑电子邮件，并且受到限制发送电子邮件的风险时，将生成警报。 这是一种针对可能表示帐户受到威胁但不够严重以限制用户的行为的早期警告。 此策略的严重性设置为 **中等** 。 尽管极少数情况下，此策略生成的警报也可能是异常情况。 但是，最好 [检查用户帐户是否受到威胁](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5  |
 |**受限制的租户发送电子邮件**|如果组织中的大多数电子邮件流量检测到可疑，并且 Microsoft 已将组织限制为发送电子邮件，则会生成警报。 调查任何可能受到威胁的用户和管理员帐户、新连接器或开放中继，然后与 Microsoft 支持部门联系以取消阻止您的组织。 此策略具有 **高** 严重性设置。 有关阻止组织的原因的详细信息，请参阅 [修复电子邮件传递问题，了解 Exchange Online 中的错误代码 5.7.7 xx](https://go.microsoft.com/fwlink/?linkid=2022138)。|威胁管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**异常外部用户文件活动**|当您的组织外部的用户对 SharePoint 或 OneDrive 中的文件执行异常数量的活动时，将生成警报。 这包括访问文件、下载文件和删除文件等活动。 此策略具有 **高** 严重性设置。|信息治理|E5/G5、Office 365 ATP P2 或 Microsoft 365 E5 附加订阅|

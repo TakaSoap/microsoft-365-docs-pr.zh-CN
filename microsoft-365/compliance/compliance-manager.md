@@ -9,17 +9,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-compliancemanager
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: b6ffd0156b295f03049d68ba99ad30c0ab8ae43b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204295"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368125"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -64,7 +67,7 @@ ms.locfileid: "48204295"
 
 合规性管理器为你提供了基于 Microsoft 365 数据保护基准的初始分数。 此基准是一组控件，包括用于数据保护和常规数据管理的关键法规和标准。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [了解如何计算合规性分数](compliance-score-calculation.md)。
 
@@ -84,7 +87,7 @@ ms.locfileid: "48204295"
 2. **您的控件**：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
 3. **共享控件**：这些控件是你的组织和 Microsoft 共同负责实施的控制
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [监视控件的进度](compliance-manager-assessments.md#monitor-assessment-progress-and-controls)。
 
@@ -104,7 +107,7 @@ ms.locfileid: "48204295"
 
 在创建评估时，您需要将其分配给一个组。 您可以按对组织的最逻辑的任何方式配置组。 例如，您可以按审核年、区域、解决方案、组织内的团队或其他某种方式对评估进行分组。 创建组后，您可以对 [合规性管理器仪表板进行筛选](compliance-manager-setup.md#filtering-your-dashboard-view) ，以查看一个或多个组的分数。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [在合规性管理器中构建和管理评估](compliance-manager-assessments.md)。
 
@@ -112,7 +115,7 @@ ms.locfileid: "48204295"
 
 合规性管理器提供可帮助您快速创建评估的模板。 您可以修改这些模板以创建针对您的需求而优化的评估。 您还可以通过创建包含自己的控件和操作的模板来构建自定义评估。 例如，您可能希望模板涵盖内部业务流程控制，或者是我们的150个预构建的评估模板中的一个不包含的区域数据保护标准。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [查看合规性管理器提供的评估模板的列表](compliance-manager-templates-list.md)。
 
@@ -122,7 +125,7 @@ ms.locfileid: "48204295"
 
 改进操作可帮助您集中执行合规性活动。 每个改进操作都提供了建议的指南，旨在帮助您与数据保护法规和标准保持一致。 可将改进操作分配给组织中的用户，以执行实施和测试工作。 您还可以在 "改进" 操作中存储文档、注释和记录状态更新。
 
-##### <a name="learn-more"></a>了解详细信息
+##### <a name="learn-more"></a>了解更多
 
 [使用提高操作来管理合规性工作流](compliance-manager-improvement-actions.md)。
 
