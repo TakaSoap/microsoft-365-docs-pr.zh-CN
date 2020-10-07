@@ -1,5 +1,5 @@
 ---
-title: 管理可以创建 Microsoft 365 组的用户
+title: 管理可创建 Microsoft 365 组的人员
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -12,19 +12,19 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: d6e6c6d9caff2ac7c13d03dad97b73906a509f46
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 44e858286377350f82050b8a1814f761dad9c2fd
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307855"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377308"
 ---
-# <a name="manage-who-can-create-microsoft-365-groups"></a>管理可以创建 Microsoft 365 组的用户
+# <a name="manage-who-can-create-microsoft-365-groups"></a>管理可创建 Microsoft 365 组的人员
 
 默认情况下，所有用户都可以创建 Microsoft 365 组。 这是建议的方法，因为它允许用户在不需要帮助的情况下开始协作。
 
@@ -103,7 +103,7 @@ ms.locfileid: "47307855"
 
 您必须使用预览版 of [Graph For Graph (AzureAD) ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模块名称 **AzureADPreview**) 以更改组级别的来宾访问设置：
 
-- 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module)并按照说明安装公共预览版。
+- 如果之前未安装任何 Azure AD PowerShell 模块版本，请参阅[安装 Azure AD 模块](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)并按照说明安装公共预览版。
 
 - 如果已安装 Azure AD PowerShell 模块 (AzureAD) 的 2.0 正式发布版本，则必须通过在 PowerShell 会话中运行 `Uninstall-Module AzureAD` 来卸载它，然后通过运行 `Install-Module AzureADPreview` 来安装预览版。
 

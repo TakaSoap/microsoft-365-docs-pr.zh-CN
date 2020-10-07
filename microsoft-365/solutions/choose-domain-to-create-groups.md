@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Microsoft 365 组时使用的域。
-ms.openlocfilehash: 5ce0068f1b4562c37b2ccf2b1fb9a928b392a7ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bb6137a3dfce17bc9c94648e5ea9e12ec2776195
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686726"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377433"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建 Microsoft 365 组时要使用的域
 

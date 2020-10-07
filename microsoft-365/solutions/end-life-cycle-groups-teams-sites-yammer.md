@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 组、团队和 Yammer 的生命周期选项的结束。
-ms.openlocfilehash: ab06f06cc65614ee313892a026c2f482d641791f
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662487"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377171"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>组、团队和 Yammer 的生命周期选项结束
 
@@ -52,7 +53,7 @@ Microsoft 365 组和 Microsoft 团队使用各种连接的服务。 删除组或
 
 在删除组或团队时，团队和组所有者和 IT 管理员需要考虑三个关键方面。
 
-**内容**
+**Content**
 
 在团队不再工作或存在时是否需要保留内容？ 它是否足以依赖 Microsoft 365 的保留功能，或者是否是不提供保留的应用程序和服务中的一些内容？ 出于记录管理目的，内容是否需要保留以供存档，或用于将来使用和参考目的？
 

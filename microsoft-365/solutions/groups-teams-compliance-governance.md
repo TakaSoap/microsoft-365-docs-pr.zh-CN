@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解 Microsoft 365 组、团队和 SharePoint 协作的合规性选项。
-ms.openlocfilehash: cc8f7391b03cc65ba66cca6cf010137e3843ab05
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662505"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377529"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 组、团队和 SharePoint 协作的合规性选项
 
@@ -83,7 +84,7 @@ Microsoft 365 提供了全套工具，以在用户协作的同时保持合规性
 
 其他资源：
 
-- [了解敏感性标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 
 ## <a name="information-protection"></a>信息保护

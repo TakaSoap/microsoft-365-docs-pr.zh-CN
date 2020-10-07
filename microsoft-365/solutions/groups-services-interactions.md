@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 组服务交互
-ms.openlocfilehash: 9632debf1bc6fdd2fce061a4c535906410700175
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 235a897314a784ba3bb1ac50fe8bdfe9986a70d3
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662515"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377625"
 ---
 # <a name="groups-services-interactions"></a>组服务交互
 
@@ -117,8 +118,8 @@ SharePoint 网站是使用所有者、成员和访问者安全组创建的，其
 |Planner|任务板|否|是|是|
 |Power Apps 应用|应用|是|否|否|
 |Power Automate|工作流|是|否|否|
-|Power BI (经典) |Workspace|否|是|是|
-|Power BI (新) |Workspace|是|否|是|
+|Power BI (经典) |工作区|否|是|是|
+|Power BI (新) |工作区|是|否|是|
 |Project 网页版|项目计划|是|是|否|
 |路线图|路线图|是|是|否|
 |SharePoint|Site|是|是|是|

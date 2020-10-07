@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285185"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376969"
 ---
 # <a name="microsoft-productivity-score-preview"></a> (预览的 Microsoft 工作效率分数) 
 
-生产效率分数可帮助组织转换工作方式，并了解有关用户如何使用 Microsoft 365 以及支持它们的技术体验方面的见解。 分数反映了组织在员工和技术经验方面的绩效，并将您的成绩与您的组织（如您的组织）进行比较。
+生产效率分数可帮助组织转换工作方式，并了解有关用户如何使用 Microsoft 365 以及支持它们的技术体验方面的见解。 分数反映了贵组织对人员和技术体验的业绩，并将您的成绩与您的组织（如您的组织）进行比较。
 
 分数包括：
 
@@ -39,7 +39,7 @@ ms.locfileid: "48285185"
 
 我们在两个方面提供数据、见解和建议： 
 
-- **员工体验：** 我们衡量人员如何对内容进行协作、如何使用 Microsoft 365 产品进行通信，以及它们是否在平台上使用 Microsoft 365。 
+- **人员体验：** 我们衡量人员如何对内容进行协作、如何使用 Microsoft 365 产品进行通信，以及它们是否在平台上使用 Microsoft 365。 
 
     我们提供了这些见解，因为当人们在线协作时，他们可以节省时间。 由于可以自由地在任何设备上运行，因此它们的工作效率更高且实现满意。 以灵活的方式进行通信可使用户更加高效、形成更好的关系，并且您的组织更加统一。 有关证据，请参阅 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "48285185"
 
 ## <a name="how-the-score-is-calculated"></a>如何计算分数
 
-您的工作效率分数基于员工和技术经验类别的组合得分。 每个类别平均加权，每个类别总共100点。 生产率分数的总可能分数为500。
+你的工作效率分数基于你的人员和技术体验类别的组合得分。 每个类别平均加权，每个类别总共100点。 生产率分数的总可能分数为500。
 
 ### <a name="score-categories"></a>分数类别 
 
@@ -72,7 +72,7 @@ ms.locfileid: "48285185"
 
 ## <a name="pre-requisites"></a>先决条件 
 
-您需要 Microsoft 365 for business 或 Office 365 for business 订阅才能获取员工体验数据，您需要使用多租户云服务。 若要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。       安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 Microsoft Intune 的详细信息。 
+你需要 Microsoft 365 for business 或 Office 365 for business 订阅才能获取人员体验数据，并且你需要使用多租户云服务。 若要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。       安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 Microsoft Intune 的详细信息。 
 
 若要查看组织的工作效率分数，您必须具有以下角色之一： 
 
@@ -94,17 +94,17 @@ ms.locfileid: "48285185"
 
 **您的分数** 显示为百分比值和磅值，以便您可以查看 (分子) 的要点以及 (分母) 的最大可能分数。
 
-**对等基准** 使您能够将您的成绩与像你的组织进行比较。 对于 "员工体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
+**对等基准** 使您能够将您的成绩与像你的组织进行比较。 对于 "人员体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
 
 终结点分析对等基准包括设备启动性能的目标以及基于所有租户中聚合的中间值的建议软件配置。
 
 对于网络连接，推荐的准则为80点。
 
-" **分数细分** " 部分提供了由员工和技术经验领域的基准的工作效率分数细分。
+" **分数细分** " 部分提供了按人员和技术经验领域的基准的工作效率分数细分。
 
 分数历史记录显示最近6个月内每个类别中的得分如何变化。
 
-**员工体验**和**技术经验**领域包含这些领域中类别的主要见解。 您可以单击每个类别以查看更深入的见解。
+**人员体验**和**技术体验**领域包含这些领域中类别的主要见解。 您可以单击每个类别以查看更深入的见解。
 
 ## <a name="category-details-pages"></a>类别详细信息页面
 

@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: 了解如何使用合规性分数和合规性管理器改进个人数据保护级别。
-ms.openlocfilehash: b5a112b7614de23af8540346e26dac3b7a4fa1c9
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333476"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377095"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合规性管理器管理改进操作
 

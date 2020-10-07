@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 7c928718a4d0f0d47fb601e6ab6e51f25c88a04a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52a338822c28f6ae044f13f60664d66816d6ce5c
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308387"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377243"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
 
@@ -60,7 +61,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 这允许 VPN 客户端直接通过 Internet 发送和接收重要的 Microsoft 365 云服务流量并发送到 Microsoft 网络最近的入口点。
 
-有关更多信息和指导，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)。
+有关更多信息和指导，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>在所有应用均为 Web 应用且你具有混合标识的情况下部署远程访问
 
@@ -116,7 +117,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 ## <a name="admin-technical-resources-for-remote-access"></a>用于远程访问的管理员技术资源
 
 - [如何快速优化远程办公人员的 Office 365 流量并降低你的基础结构上的负载](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
+- [使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
 
 ## <a name="results-of-step-2"></a>步骤 2 的结果
 
