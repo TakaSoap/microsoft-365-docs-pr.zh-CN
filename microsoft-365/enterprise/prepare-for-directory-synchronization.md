@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何通过使用此方法来准备将用户预配到 Microsoft 365 （使用目录同步）和长期优点。
-ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327281"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390169"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
@@ -158,6 +158,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
   - 在 at 符号前的用户名的最大字符数 ( @ ) ：64
   - At 符号后面的域名的最大字符数 ( @ ) ：48
   - 无效字符： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
+  - 允许的字符： A – Z、a-z、0–9、"。 - _ ! # ^ ~
   - 元音变音符也是一个无效字符。
   - 每个 **userPrincipalName** 值中都需要 @ 字符。
   - @ 符在每个 **userPrincipalName** 值中不能作为第一个字符。
