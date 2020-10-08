@@ -3,7 +3,6 @@ title: Microsoft 365 租户间协作
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 了解 Microsoft 365 协作如何跨租户和组织工作，从而使不同的组织能够安全地协同工作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214795"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384826"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 租户间协作
 
@@ -78,7 +77,7 @@ Microsoft 365-租户之间的协作选项包括使用文件和对话的中央位
 |共享目标|管理操作|操作方法信息|
 |:-----|:-----|:-----|
 |在团队中与组织外部的用户进行协作 | 邀请 Microsoft 365 租户的全局管理员需要在团队中启用外部协作。 全局管理员和团队所有者现在将能够使用电子邮件地址邀请任何人在团队中进行协作。  <br/> 管理员还可以管理和编辑其租户中已有的来宾。 |  <ul><li> [授权来宾访问](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [在团队中打开或关闭来宾访问](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [使用 PowerShell 控制来宾访问](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [来宾访问清单](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [查看来宾用户](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [编辑来宾用户信息](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|团队所有者可以邀请和管理来宾在其团队中进行协作的方式。  </li><li> |团队所有者对来宾在其团队中可以执行的操作具有其他控制。 |  <ul><li> [添加来宾](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [向团队添加来宾](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [管理团队中的来宾访问](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [查看团队或频道中的人员](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|团队所有者可以邀请和管理来宾在其团队中进行协作的方式。  |团队所有者对来宾在其团队中可以执行的操作具有其他控制。 |  <ul><li> [添加来宾](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [向团队添加来宾](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [管理团队中的来宾访问](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [查看团队或频道中的人员](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |其他租户的来宾可以查看团队中的内容，并与其他成员协作 | 无。 | [来宾访问体验](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Power BI 协作选项
@@ -93,18 +92,18 @@ Microsoft 365-租户之间的协作选项包括使用文件和对话的中央位
 
 每个组织都维护自己的用户帐户、标识、安全组、订阅、许可证和存储。 用户将 Microsoft 365 中的协作功能与共享策略和安全设置结合使用，以提供对所需信息的访问权限，同时控制公司资产。
   
-- **用户帐户：** 帐户无法共享，并且在内部部署 Active Directory 目录服务中的租户或分区之间无法复制帐户。 
+- **用户帐户：** 无法在本地 Active Directory 域服务中的租户或分区之间共享或复制帐户。 
     
 - **许可证 &amp; 订阅：** 在 Microsoft 365 中，许可计划中的许可证也称为 sku 或 Microsoft 365 计划) 授予用户对为这些计划定义的 Microsoft 365 服务的访问权限 (。 
     
-- **存储：** 在 Microsoft 365 计划中，SharePoint Online 的软件边界和限制与邮箱存储限制分开管理。 邮箱存储限制通过使用 Exchange Online 进行设置和管理。 在这两种情况下，存储不能跨租户共享。 
+- **存储：** 在 Microsoft 365 许可计划中，SharePoint Online 的软件边界和限制与邮箱存储限制分开管理。 邮箱存储限制通过使用 Exchange Online 进行设置和管理。 在这两种情况下，不能在租户之间共享存储。 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>我们可以跨 Microsoft 365 租户共享域命名空间吗？
 
-否。 虚域（例如 fabrikam.com 或 tailspintoys.com）一次只能与一个租户关联和使用。 每个租户都必须具有自己的命名空间;UPN、SMTP 和 SIP 命名空间无法在租户之间共享。
+否。 组织域名（例如 fabrikam.com 或 tailspintoys.com）只能与单个 Microsoft 365 租户关联和使用。 每个租户都必须有自己的命名空间。 无法在租户之间共享 UPN、SMTP 和 SIP 命名空间。
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>混合组件和 Microsoft 365 之间的组织之间的协作是什么？
 
 内部部署混合组件（如 Exchange 组织和 Azure AD Connect）无法跨多个租户拆分。
-  
+ 
 

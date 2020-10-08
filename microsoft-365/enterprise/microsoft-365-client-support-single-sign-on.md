@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: 在本文中，了解哪些平台、客户端和 Powershell 模块支持 Microsoft 365 的单一登录。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d0a45c30ffe736cf67e811bce6eb029d6fb50674
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546406"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384810"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 客户端应用支持—单一登录
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-单一登录 (SSO) 当用户登录到 Azure Active Directory (Azure AD) 中的应用程序时，会增加安全性和方便性。 通过单一登录，用户可使用一个帐户登录一次，以访问加入域的设备、公司资源、软件作为服务 (SaaS) 应用程序和 web 应用程序。
+单一登录 (SSO) 当用户登录到 Azure Active Directory (Azure AD) 中的应用程序时，会增加安全性和方便性。 通过单一登录，用户可以使用一个帐户登录一次，以访问本地 Active Directory 域服务 (AD DS) 加入域的设备、软件作为服务 (SaaS) 应用程序和 web 应用程序。
 
 了解有关 [单一登录](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)的详细信息。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47546406"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-有关 Microsoft 365 中平台支持的详细信息，请参阅 [microsoft 365 的系统要求](https://products.office.com/office-system-requirements)。
+有关 Microsoft 365 中平台支持的详细信息，请参阅 [microsoft 365 的系统要求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
 
 ## <a name="supported-clients"></a>支持的客户端
 

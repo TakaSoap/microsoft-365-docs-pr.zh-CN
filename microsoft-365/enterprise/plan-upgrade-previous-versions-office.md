@@ -3,7 +3,6 @@ title: 规划从 Office 2007 或2010服务器和客户端升级
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,25 +16,25 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的用户帮助他们规划升级的资源。
-ms.openlocfilehash: 0ad90235bf7ad862a1f0162f87dca7ee2df3d799
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687835"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384559"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>计划升级自 Office 2007 或 Office 2010 服务器和客户端
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其 [支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 
+如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其 [支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 对于 Office 2010 产品和服务：
 
 - Office 2010 和 Exchange 2010 将于 **2020 年 10 月13日**终止支持。 
 - SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日**终止支持。 
 
-若要开始，请使用本文中的资源。
+有关详细信息，请参阅 [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)。
 
-有关更多详细信息，请参阅 [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md) 。
+使用本文中的资源开始进行升级。
 
 ## <a name="what-is-microsoft-365"></a>什么是 Microsoft 365？
 
@@ -44,13 +43,14 @@ ms.locfileid: "46687835"
 Microsoft 365 包括的许可证和功能，可帮助确保您的组织使用最新的 Windows 操作系统，并确保您的设备（包括 Windows、iOS 和 Android）已使用需要身份验证和数据保护的策略进行了注册并保持安全。 此外，Windows 10 和 Microsoft 365 应用程序的企业版 (以前名为 Office 365 专业增强版) 客户端软件将继续更新，以包括最新的功能和安全更新。
   
 Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作效率体验，以数字方式为你的企业进行数字转换。
-  
-|**Resource**|**说明**|
+ 
+| 资源 | 说明 |
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |获取有关不同版本的 Microsoft 365 的信息。  <br/> |
-|[Microsoft 365 业务文档](https://docs.microsoft.com/microsoft-365/business/) <br/> |获取适用于中小型企业的 Microsoft 365 版本的详细信息。  <br/> |
-|[Microsoft 365 教育文档](https://docs.microsoft.com/microsoft-365/education/) <br/> |获取有关适用于教育组织的 Microsoft 365 版本的详细信息。  <br/> |
-|[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |获取有关适用于企业组织的 Microsoft 365 版本的详细信息。  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | 获取有关不同版本的 Microsoft 365 的信息。  <br/> |
+|[Microsoft 365 业务文档](https://docs.microsoft.com/microsoft-365/business/) <br/> | 获取适用于中小型企业的 Microsoft 365 版本的详细信息。  <br/> |
+|[Microsoft 365 教育文档](https://docs.microsoft.com/microsoft-365/education/) <br/> | 获取有关适用于教育组织的 Microsoft 365 版本的详细信息。  <br/> |
+|[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | 获取有关适用于企业组织的 Microsoft 365 版本的详细信息。  <br/> |
+|||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升级，会发生什么情况？
 
@@ -94,7 +94,7 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 
 - **试用 Microsoft 365 供家庭使用。** 使用适用于家庭的 [Microsoft 365 系列](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) 。 启动试用版，了解 Microsoft 365 系列适用于你的情况。 使用 Microsoft 365 系列，你将享受使用 OneDrive 的云存储。
 
-   在 [2020 年1月14日对 Windows 7 的支持结束](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)后，Office 365 家庭版或 Office 365 个人在 windows 7 设备上运行的 Word、Excel、PowerPoint、Outlook、Publisher 和 Access 版本将会收到安全更新，但不会收到任何功能更新。 若要继续接收这些应用程序的功能更新，请将 [Windows 7 设备升级到 Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)。
+   在 [2020 年1月14日对 windows 7 的支持结束](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)后，Office 365 家庭版或 Office 365 个人在 windows 7 设备上运行的 Word、Excel、PowerPoint、Outlook、Publisher 和 Access 版本将会收到安全更新，但不会收到任何功能更新。 若要继续接收这些应用程序的功能更新，请将 [Windows 7 设备升级到 Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)。
     
 - **购买 Office 家庭 &amp; 学生版。** 如果选择此选项，你将进行一次性购买，然后在你的 Windows 电脑或 Mac 上安装 Office。 这不是订阅;它是一台计算机的一次性、永久使用许可证。 查看 [要求](https://office.com/systemrequirements)，然后选择要使用的版本。
 
@@ -102,9 +102,9 @@ Microsoft 云可以通过 365 microsoft 云提供不断改进的设备和工作�
 
     - 如果你的 Windows 电脑运行的是 Windows 7、8或8.1，并且你现在不升级到 Windows 10，请考虑从授权的经销商处获取 Office 家庭版 & 学生版 2016 (或其他版本的 Microsoft Office) 。
      
-     - 对 Windows 7 的支持已 [在2020年1月14日结束](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)，之后 Microsoft 将不提供安全更新或支持。 将 Windows 7 设备升级到 Windows 10 以继续进行安全性和功能更新以及持续支持。
+     - 对 Windows 7 的支持已 [在2020年1月14日结束](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)，之后 Microsoft 将不提供安全更新或支持。 将 Windows 7 设备升级到 Windows 10 以继续进行安全性和功能更新以及持续支持。
 
-你也可以选择现在不升级。 你的 Office 应用将继续运行。 [此处](https://go.microsoft.com/fwlink/p/?linkid=2085724)提供了适用于 Office 支持日期的日程表。 但是，升级将为您提供安全更新或新的和改进的功能。
+你也可以选择现在不升级。 你的 Office 应用将继续运行。 [此处](https://support.microsoft.com/lifecycle/search/13615)提供了适用于 Office 支持日期的日程表。 但是，升级将为您提供安全更新或新的和改进的功能。
    
 ## <a name="next-step"></a>后续步骤
 

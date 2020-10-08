@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199741"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384791"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>在 Microsoft 威胁防护中配置自动调查和响应功能
 
@@ -52,8 +52,6 @@ Microsoft 威胁防护包括功能强大的 [自动化调查和响应功能](mtp
 
 自动调查是否运行，以及是否自动或仅在为设备批准时采取更正措施取决于特定设置，例如组织的设备组策略。 查看为设备组策略设置的自动化级别。
 
-### <a name="to-review-or-change-your-device-group-policies"></a>查看或更改设备组策略
-
 1. 请转到 Microsoft Defender 安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 并登录。
 
 2. 转到 "**设置**  >  **权限**"  >  **设备组**。 
@@ -69,8 +67,6 @@ Microsoft 威胁防护包括功能强大的 [自动化调查和响应功能](mtp
 Microsoft 提供了可帮助确定特定风险的内置 [通知策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) 。 这些风险包括 Exchange 管理员权限滥用、恶意软件活动、潜在的外部和内部威胁以及信息治理风险。 某些警报可以触发 [Office 365 中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 请确保正确配置了 [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 功能。
 
 尽管某些通知和安全策略可以触发自动调查，但不会为电子邮件和内容自动采取任何补救措施。 相反，电子邮件和电子邮件内容等待由 [操作中心](mtp-action-center.md)中的安全操作团队批准的所有修正操作。
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>查看或更改 Office 365 中的安全和通知策略
 
 Office 365 中的安全设置可帮助保护电子邮件和内容。 若要查看或更改这些设置，请遵循 [针对威胁的保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)指南。
 
@@ -88,13 +84,15 @@ Office 365 中的安全设置可帮助保护电子邮件和内容。 若要查�
 
 5. 确保 [电子邮件保护的零小时自动清除](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) 有效。 
 
-8.  (这是可选的) 在 Microsoft 365 合规性中心 () 中查看 [Office 365 警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 "威胁管理" 类别中有几个默认的通知策略。 其中一些警报可触发自动调查和响应。 若要了解详细信息，请参阅 [默认通知策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies)。
+8.  (这是可选的。 ) 在 Microsoft 365 合规性中心 () 中查看 [Office 365 警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 "威胁管理" 类别中有几个默认的通知策略。 其中一些警报可触发自动调查和响应。 若要了解详细信息，请参阅 [默认通知策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies)。
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>确保已打开 Microsoft 威胁防护
 
 1. 请转到 Microsoft 365 安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 并登录。
 
-2. 在导航窗格中，查找 " **事件**"、" **操作中心**" 和 " **搜寻**"，如下图所示：<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 打开":::
+2. 在导航窗格中，查找 " **事件**"、" **操作中心**" 和 " **搜寻**"，如下图所示：
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 打开":::
 
    - 如果你看到 **事件**、 **操作中心**和 **搜寻**，则会打开 Microsoft 威胁防护。 继续执行下一过程， [查看或更改设备组的自动化级别](#review-or-change-the-automation-level-for-device-groups)。
 
@@ -102,7 +100,7 @@ Office 365 中的安全设置可帮助保护电子邮件和内容。 若要查�
 
 3. 在导航窗格中，选择 "**设置**  >  **Microsoft 威胁防护**"。 确认已打开 Microsoft 威胁防护。 
 
-   需要帮助？ 请参阅 [打开 Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
+   需要帮助? 请参阅 [打开 Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>在操作中心中查看挂起和已完成的操作
 
