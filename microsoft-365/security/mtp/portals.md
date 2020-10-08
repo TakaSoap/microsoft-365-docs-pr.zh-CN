@@ -35,7 +35,7 @@ ms.locfileid: "48195589"
 安全操作员和管理员可以转到以下门户来管理特定于安全性的设置、调查可能存在的威胁活动、响应活动威胁，并与 IT 管理员协作以修正问题。
 <p></p>
 
-| 门户名称 | 说明 | 链接 |
+| 门户名称 | Description | 链接 |
 |---|---|---| 
 | Microsoft 365 安全中心 | 监视和响应威胁活动，并通过[Microsoft 威胁防护](microsoft-threat-protection.md)在你的标识、电子邮件、数据、终结点和应用中加强安全状况 | [security.microsoft.com](https://security.microsoft.com/) |
 | Microsoft Defender 安全中心 | 使用[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)提供的功能监视和响应终结点上的威胁活动 | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
@@ -50,7 +50,7 @@ ms.locfileid: "48195589"
 虽然这些门户并不专门用于管理安全性，但它们支持可能影响安全的各种工作负载和任务。 访问这些门户以管理标识、权限、设备设置和数据处理策略。
 <p></p>
 
-| 门户名称 | 说明 | 链接 | 
+| 门户名称 | Description | 链接 | 
 |---|---|---| 
 | Azure 门户 | 查看和管理 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 和所有 [azure 资源](https://docs.microsoft.com/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
 | Microsoft 365 合规中心 | 管理数据处理策略并确保 [遵守管理法规](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |

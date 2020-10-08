@@ -61,7 +61,7 @@ ms.locfileid: "48197651"
 
 ****
 
-|工具|说明|
+|工具|Description|
 |---|---|
 |[管理通知](../../compliance/create-activity-alerts.md)|当用户在 Office 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知与搜索事件的审核日志类似，不同之处在于，当您创建了通知的事件发生时，将会发送一封电子邮件。|
 |[管理高级通知 ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Office 365 云应用安全性的 " **管理高级警报** " 功能设置可在 Office 365 中提醒您可疑和异常活动的策略。 收到警报后，可以调查可能存在问题的情况，如果需要，可以采取措施解决安全问题。|

@@ -1,5 +1,5 @@
 ---
-title: 可训练分类器（预览版）入门
+title: 可训练的分类器入门（预览版）
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -10,19 +10,22 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本文介绍如何创建和培训自定义分类器，以及如何重新培训它们以提高准确性。
-ms.openlocfilehash: fd6bc68a8bc373d9d02e23b73971b28ce8761cd9
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 30f3c45945b4879be17eadfe04e8ccb8526df16a
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132312"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379258"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>可训练分类器（预览版）入门
+# <a name="get-started-with-trainable-classifiers-preview"></a>可训练的分类器入门（预览版）
 
 Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以进行培训以识别这些类型的内容。 经过培训后，您可以使用它来确定应用 Office 灵敏度标签、通信合规性策略和保留标签策略的项目。
 

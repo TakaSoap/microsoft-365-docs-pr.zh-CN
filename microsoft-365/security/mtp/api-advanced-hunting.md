@@ -73,7 +73,7 @@ Content-Type    | application/json
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | 说明
+参数 | 类型    | Description
 :---|:---|:---
 查询 | 文本 |  要运行的查询。 **** 必需。
 

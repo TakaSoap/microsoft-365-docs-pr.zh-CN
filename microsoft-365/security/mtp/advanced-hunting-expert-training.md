@@ -35,7 +35,7 @@ ms.locfileid: "48197961"
 通过 _跟踪入侵_者、新安全分析员和经验丰富的威胁 hunters 的网络广播系列，快速提高您对高级搜寻的掌握程度。 该系列将指导您完成创建自己的复杂查询的基本方法。 先从第一个视频开始，再跳转到符合你的体验级别的更高级视频。
 
 
-| 标题 | 说明 | Watch | Queries | 
+| 标题 | Description | Watch | Queries | 
 |--|--|--|--|
 | 剧集1： KQL 基础知识 | 这一部分涵盖了 Microsoft 威胁防护中的高级求职的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | 剧集2：联接 | 继续了解高级搜寻中的数据以及如何将表格联接在一起。 了解 `inner` 、 `outer` 、 `unique` 和 `semi` 联接，并了解默认 Kusto 联接的细微差别 `innerunique` 。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33)  | [CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

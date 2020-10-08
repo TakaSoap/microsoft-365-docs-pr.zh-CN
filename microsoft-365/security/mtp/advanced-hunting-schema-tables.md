@@ -75,7 +75,7 @@ ms.locfileid: "48197663"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 电子邮件事件，包括电子邮件传递和阻止事件 |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 在 Microsoft 365 将电子邮件传递给收件人邮箱之后，在送达后发生的安全事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件上的 Url 的信息 |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory (AD) 的本地域控制器的事件。 此表涵盖了与标识相关的事件的范围以及域控制器上的系统事件。 |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory (AD) 的本地域控制器的事件。 该表包含一系列身份相关的事件以及域控制器上的系统事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源（包括 Azure Active Directory）的帐户信息 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的身份验证事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）执行的查询活动 |

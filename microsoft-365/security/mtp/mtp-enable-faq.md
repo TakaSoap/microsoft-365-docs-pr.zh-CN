@@ -101,4 +101,4 @@ Microsoft 定期通过各种渠道提供信息，包括：
 - [启用 Microsoft 威胁防护](mtp-enable.md)。
 - [许可要求和其他先决条件](prerequisites.md)
 - [部署支持的服务](deploy-supported-services.md)
-- [打开预览功能](preview.md)
+- [启用预览功能](preview.md)

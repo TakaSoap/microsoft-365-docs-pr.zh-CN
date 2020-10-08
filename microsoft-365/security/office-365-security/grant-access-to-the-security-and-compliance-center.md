@@ -77,7 +77,7 @@ ms.locfileid: "48202803"
 
 有关语法和参数的详细信息，请参阅 [外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
+### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
 
 若要验证是否已成功授予对安全 & 合规中心的访问权限，请执行以下步骤之一：
 
