@@ -113,8 +113,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: 适用于 Office 2013 和 Office 2016 客户端应用的新式验证工作原理
-              href: modern-auth-for-office-2013-and-2016.md
         - name: 客户端应用支持
           items:
             - name: 基于证书的身份验证
@@ -137,6 +135,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: 删除或禁用 Skype for Business 和 Exchange
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: Office 2013、Office 2016 和 Office 2019 客户端应用
+              href: modern-auth-for-office-2013-and-2016.md
         - name: 升级计划
           href: plan-upgrade-previous-versions-office.md
           items:
