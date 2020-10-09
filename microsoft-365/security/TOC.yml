@@ -9,20 +9,20 @@
         - name: 适用于 BDM 的 Microsoft 365 安全中心
           href: Microsoft-365-security-for-bdm.md
     - name: 标识和设备访问配置
-      href: ../enterprise/microsoft-365-policies-configurations.md
+      href: ./office-365-security/microsoft-365-policies-configurations.md
       items:
         - name: 前提性工作
-          href: ../enterprise/identity-access-prerequisites.md
+          href: ./office-365-security/identity-access-prerequisites.md
         - name: 常见标识和设备访问策略
-          href: ../enterprise/identity-access-policies.md
+          href: ./office-365-security/identity-access-policies.md
         - name: 面向来宾和外部用户的策略
-          href: ../enterprise/identity-access-policies-guest-access.md
+          href: ./office-365-security/identity-access-policies-guest-access.md
         - name: 建议的 Teams 访问策略
-          href: ../enterprise/teams-access-policies.md
+          href: ./office-365-security/teams-access-policies.md
         - name: 建议的 Exchange Online 访问策略
-          href: ../enterprise/secure-email-recommended-policies.md
+          href: ./office-365-security/secure-email-recommended-policies.md
         - name: 建议的 SharePoint Online 访问策略
-          href: ../enterprise/sharepoint-file-access-policies.md
+          href: ./office-365-security/sharepoint-file-access-policies.md
     - name: Microsoft 安全功能分数
       items:
         - name: 安全功能分数概述
@@ -422,6 +422,8 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: 在政治宣传活动开发/测试环境中创建团队网站
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
+            - name: Office 365 ATP 中的用户标记
+              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items:

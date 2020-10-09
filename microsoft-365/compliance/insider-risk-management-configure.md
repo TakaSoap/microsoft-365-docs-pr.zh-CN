@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341430"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399167"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -47,6 +47,9 @@ ms.locfileid: "48341430"
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以 [将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Microsoft 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>步骤1：为内部人员风险管理启用权限
+
+>[!Important]
+>配置角色组后，最多可能需要30分钟的时间才能将角色组权限应用到组织中分配的用户。
 
 有四个角色组用于配置权限以管理内幕风险管理功能。 若要继续执行这些配置步骤，租户管理员必须首先将您分配给 " **内幕风险管理** " 或 " **内幕风险管理" 管理员** 角色组。 若要在初始配置后访问和管理内幕风险管理功能，用户必须是至少一个 "内幕风险管理" 角色组的成员。
 

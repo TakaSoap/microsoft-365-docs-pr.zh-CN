@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416796"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398481"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能履行 GDPR 信息保护
 
@@ -49,7 +49,7 @@ Office 365 提供了一组丰富的数据治理功能。若要获取查找、分
 
 Microsoft 提供了可入手的推荐配置：
 
-- [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)：实现三层保护（基线、敏感和高度受管制）的推荐策略配置。本指南介绍了适用于 Exchange Online 和 SharePoint Online（包括 OneDrive for Business）的推荐策略。
+- [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)：实现三层保护（基线、敏感和高度受管制）的推荐策略配置。本指南介绍了适用于 Exchange Online 和 SharePoint Online（包括 OneDrive for Business）的推荐策略。
 - [适用于政治活动、非营利组织和其他敏捷组织的安全指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：除了包括一组相同的策略外，还提供了适用于 BYOD 环境和 B2B 帐户的更多指南。
 
 ## <a name="threat-protection"></a>威胁防护

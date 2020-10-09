@@ -17,16 +17,16 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登录页为 Office 365 中的安全性和合规性提供了链接和规划信息。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086653"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399031"
 ---
 # <a name="plan-for-security-amp-compliance"></a>规划安全 &amp; 合规性
 
-管理安全性和合规性是一个合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 大力保护 Microsoft 365 服务。 你可以将 Microsoft 365 和企业移动性 + 安全性（EMS）结合使用，以帮助你为你的组织实现适当级别的保护。
+管理安全性和合规性是一个合作关系。 你负责保护你的数据、标识和设备，而 Microsoft 大力保护 Microsoft 365 服务。 您可以使用 Microsoft 365 和企业移动性 + 安全性 (EMS) 一起，帮助您为组织实现适当的保护级别。
   
 ## <a name="step-1-review-capabilities"></a>步骤1：查看功能
 
@@ -46,7 +46,7 @@ ms.locfileid: "45086653"
   
 - [保护对 Office 365 数据和服务的访问](protect-access-to-data-and-services.md)
     
-- [安全电子邮件策略和配置](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [安全电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多语言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,9 +70,9 @@ ms.locfileid: "45086653"
 
 使用这些建议的配置作为企业级扩展或完善的访问安全方案的起点。
   
-- [安全电子邮件策略和配置](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [安全电子邮件策略和配置](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Microsoft 云中的 Contoso](https://aka.ms/cloudarchcontoso)
+- [Microsoft 云中的 Contoso](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理中心和仪表板
 

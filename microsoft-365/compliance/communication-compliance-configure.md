@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341408"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399497"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -57,7 +57,7 @@ ms.locfileid: "48341408"
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1 (必需) ：启用通信合规性的权限
 
 >[!Important]
->默认情况下，全局管理员不具有对通信合规性功能的访问权限。 在此步骤中分配的角色在所有通信合规性功能都可访问之前是必需的。
+>默认情况下，全局管理员不具有对通信合规性功能的访问权限。 在此步骤中分配的角色在所有通信合规性功能都可访问之前是必需的。 配置角色组后，最多可能需要30分钟的时间才能将角色组权限应用到组织中分配的用户。
 
 有五个角色组用于配置管理通信合规性功能的权限。 为了使 **通信合规性** 在 Microsoft 365 合规性中心中可用作菜单选项，若要继续执行这些配置步骤，您必须分配给 *通信合规* 性管理员角色组或 *通信合规性管理员* 角色组。 若要在初始配置后访问和管理通信合规性功能，用户必须是至少一个通信合规性角色组的成员。
 
