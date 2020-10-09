@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身份标识指南。
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357826"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398767"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的识别指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "48357826"
 
 您还可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，并可在信件、法律或 tabloid (11 x 17) 格式打印。
 
-## <a name="plan"></a>计划
+## <a name="plan"></a>套餐
 
 规划您的身份实现：
 
@@ -60,10 +60,10 @@ ms.locfileid: "48357826"
 
 ### <a name="identity-and-device-access-recommendations"></a>标识和设备访问建议
 
-为了帮助确保拥有安全且高效的劳动力，Microsoft 提供了一组 [标识和设备访问](microsoft-365-policies-configurations.md)建议。 对于 "标识"，请使用以下文章中的建议和设置：
+为了帮助确保拥有安全且高效的劳动力，Microsoft 提供了一组 [标识和设备访问](../security/office-365-security/microsoft-365-policies-configurations.md)建议。 对于 "标识"，请使用以下文章中的建议和设置：
 
-- [先决条件](identity-access-prerequisites.md)
-- [常见标识和设备访问策略](identity-access-policies.md)
+- [先决条件](../security/office-365-security/identity-access-prerequisites.md)
+- [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 

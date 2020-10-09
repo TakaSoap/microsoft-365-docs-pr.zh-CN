@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Office 365 ATP 计划2中的用户标记标识特定用户组。 标记筛选在 Office 365 ATP 中的通知、报告和调查中可用，以快速识别已标记的用户。
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337249"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399381"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的用户标记
 
-用户标记是 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md)中的特定用户组的标识符。 [优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是一类用户标记。 如果您的组织具有 Office 365 ATP 计划 2 (包含在订阅中或作为加载项) ，除了使用优先级帐户标记之外，还可以创建自定义用户标记。
+用户标记是 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md)中的特定用户组的标识符。 有两种类型的用户标记：
 
-对特定用户应用标记后，可以将这些标记用作警报、报告和调查中的筛选器：
+- **系统标记**：当前， [优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一的系统标记类型。
+- **自定义标记**：您自己创建这些用户标记。
+
+如果您的组织具有 Office 365 ATP 计划 2 (包含在订阅中或作为加载项) ，除了使用优先级帐户标记之外，还可以创建自定义用户标记。
+
+向用户应用系统标签或自定义标记后，可以将这些标记用作警报、报告和调查中的筛选器：
 
 - [安全 & 合规中心中的警报](alerts.md)
 - [威胁资源管理器和实时检测](threat-explorer.md)
@@ -39,9 +44,11 @@ ms.locfileid: "48337249"
 
 - 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **用户标记** " 页，请打开 <https://protection.office.com/userTags> 。
 
-- 若要创建、修改或删除用户标记，您需要是安全 & 合规性中心中的 " **组织管理** " 或 " **安全管理员** " 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 若要创建、修改或删除 **自定义用户标记**，您需要是安全 & 合规性中心中的 " **组织管理** " 或 " **安全管理员** " 角色组的成员。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 您还可以在 Microsoft 365 管理中心中管理和监视优先级帐户。 有关说明，请参阅 [管理和监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+- 若要 (系统标记) 配置优先级帐户，您必须是 [全局管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)。
+
+  您还可以在 Microsoft 365 管理中心中管理和监视优先级帐户。 有关说明，请参阅 [管理和监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心创建用户标记
 

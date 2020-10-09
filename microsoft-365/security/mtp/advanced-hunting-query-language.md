@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8c66ee39d9c7f90142a564c61b13f68e6b4b481e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: de8a2c3d55d887a28500bb82a97e4453861aef46
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197769"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399213"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197769"
 **适用于：**
 - Microsoft 威胁防护
 
-高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)。 你可以使用 Kusto 语法和运算符来构建查询，该查询可以在专为高级搜寻构造的[架构](advanced-hunting-schema-tables.md)中查找信息。 若要更好地了解这些概念，请运行你的第一个查询。
+高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)。 您可以使用 Kusto 语法和运算符构造在专用 [架构](advanced-hunting-schema-tables.md)中查找信息的查询。 若要更好地了解这些概念，请运行你的第一个查询。
 
 ## <a name="try-your-first-query"></a>尝试你的第一个查询
 
@@ -58,24 +58,22 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-这是它在高级搜寻中的显示效果。
-
-![Microsoft 威胁防护高级搜寻查询的图像](../../media/advanced-hunting-query-example-2.png)
+**[在高级搜寻中运行此查询](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查询并指定要搜索的表
-已将简短注释添加到查询的开头，以描述它的用途。 如果你后来决定保存查询并与组织中的其他人共享它，这将会帮助。 
+已将简短注释添加到查询的开头，以描述它的用途。 如果你后来决定保存查询并将其与组织中的其他人共享，则此注释会有所帮助。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-查询本身通常以表名称开头，后跟一系列由管道 (`|`) 开头的元素。 在此示例中，我们首先创建两个表的联合，  `DeviceProcessEvents` 并 `DeviceNetworkEvents` 根据需要添加管道元素。
+查询本身通常以表名称开头，后跟多个以管道 () 开头的元素 `|` 。 在此示例中，我们首先创建两个表的联合，  `DeviceProcessEvents` 并 `DeviceNetworkEvents` 根据需要添加管道元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>设置时间范围
-第一个管道元素是范围为前七天的时间筛选器。 尽可能缩小时间范围可以确保查询运行良好、返回易于管理的结果并且不会超时。
+第一个管道元素是范围为前七天的时间筛选器。 限制时间范围有助于确保查询运行良好，返回可管理的结果并不超时。
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -105,7 +103,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自定义结果列和长度 
-现在，你的查询清楚地标识了要查找的数据，你可以添加定义结果外观的元素。 `project` 返回特定的列，并 `top` 限制结果数。 这些运算符有助于确保结果格式良好且相当大且易于处理。
+现在，您的查询清楚地标识了要查找的数据，您可以定义结果的外观。 `project` 返回特定的列，并 `top` 限制结果数。 这些运算符有助于确保结果格式良好且相当大且易于处理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,7 +111,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-单击“**运行查询**”以查看结果。 选择查询编辑器右上角的展开图标以重点关注您的搜索查询和结果。 
+选择 " **运行查询** " 以查看结果。 使用查询编辑器右上角的展开图标将重点放在您的搜索查询和结果上。 
 
 ![高级搜寻查询编辑器中的展开控件的图像](../../media/advanced-hunting-expand.png)
 
@@ -122,7 +120,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="learn-common-query-operators"></a>了解通用查询运算符
 
-你已运行第一个查询并对其组成部分有了大致了解，现在是时候回顾并学习一些基础知识了。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
+你刚刚运行了第一个查询，并大致了解其组件。 需要略微进行回溯并了解一些基础知识。 高级搜寻使用的 Kusto 查询语言支持多种运算符，包括以下常见的运算符。
 
 | 运算符 | 说明和用法 |
 |--|--|
@@ -141,26 +139,26 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="understand-data-types"></a>了解数据类型
 
-高级搜寻表中的数据通常分为以下数据类型。
+高级搜寻支持 Kusto 数据类型，包括以下通用类型：
 
 | 数据类型 | 说明和查询含义 |
 |--|--|
-| `datetime` | 通常表示事件时间戳的数据和时间信息 |
-| `string` | 字符串 |
-| `bool` | True 或 False |
-| `int` | 32 位数值  |
-| `long` | 64 位数值 |
+| `datetime` | 通常表示事件时间戳的数据和时间信息。 [查看支持的日期时间格式](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | UTF-8 中括在单引号中的字符字符串 (`'`) 或双引号 (`"`) 。 [阅读有关字符串的详细信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | 此数据类型支持 `true` 或 `false` 状态。 [请参阅支持的文字和运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | 32位整数  |
+| `long` | 64位整数 |
 
-若要了解有关这些数据类型及其含义的详细信息，请 [阅读有关 Kusto 标量数据类型的信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
+若要了解有关这些数据类型的详细信息，请 [阅读有关 Kusto 标量数据类型的信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
 
 ## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
 利用以下功能更快地编写查询：
-- **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
-- **架构树** —在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
-- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
+- **Autosuggest**—在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
+- **架构树**—在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
+- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在编辑器中使用多个查询
-查询编辑器可用作试用多个查询的待用介质垫。 若要使用多个查询：
+您可以使用查询编辑器试用多个查询。 若要使用多个查询：
 
 - 使用空行分隔每个查询。
 - 将光标放在查询的任何部分，以在运行查询之前选择该查询。 这将只运行选定的查询。 若要运行其他查询，请相应地移动游标，然后选择 " **运行查询**"。
@@ -174,7 +172,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![高级搜寻窗口的图像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或 GitHub 查询存储库中的共享查询。
+>除了基本查询示例之外，你还可以访问特定威胁搜寻方案的[共享查询](advanced-hunting-shared-queries.md)。 浏览页面左侧或 [GitHub 查询存储库](https://aka.ms/hunting-queries)的共享查询。
 
 ## <a name="access-query-language-documentation"></a>访问查询语言文档
 

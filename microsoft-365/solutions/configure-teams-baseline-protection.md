@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527856"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398861"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -31,7 +31,7 @@ ms.locfileid: "46527856"
 
 ## <a name="initial-protections"></a>初始保护
 
-第一步，我们建议配置基本身份和设备访问策略。 有关详细信息，请参阅[保护 Teams 聊天、组和文件的策略建议](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies)。
+第一步，我们建议配置基本身份和设备访问策略。 有关详细信息，请参阅[保护 Teams 聊天、组和文件的策略建议](../security/office-365-security/teams-access-policies.md)。
 
 建议启用基本的高级威胁防护功能，防范文档、附件和链接中的恶意软件。 我们建议启用下表中的每个选项。
 

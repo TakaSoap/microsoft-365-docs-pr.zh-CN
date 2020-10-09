@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主题将引导您完成对影响 Microsoft 365 环境的安全性的租户范围设置的建议配置。
-ms.openlocfilehash: 9e36c85b74a237a8b14904839aad55ac676dcaf4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 3ef4fb00ca1e4a3e61cf0176308024b54baa287d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326921"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399417"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>配置 Microsoft 365 租户以提高安全性
 
@@ -146,4 +146,4 @@ SharePoint 管理中心和 OneDrive for Business 管理中心包括相同的设�
 
 - [适用于政治活动、非营利组织和其他 agile 组织的 Microsoft 安全指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (您可以在任何环境（尤其是仅云环境）中使用这些建议) 
 
-- [推荐的标识和设备安全策略和配置](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (这些建议包括针对 AD FS 环境的帮助) 
+- [推荐的标识和设备安全策略和配置](microsoft-365-policies-configurations.md) (这些建议包括针对 AD FS 环境的帮助) 

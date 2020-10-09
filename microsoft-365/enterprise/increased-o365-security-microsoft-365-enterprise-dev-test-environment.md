@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此测试实验室指南可启用 Microsoft 365 企业版测试环境的其他 Microsoft 365 安全设置。
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686798"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398945"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>为你的 Microsoft 365 提高企业测试环境的 Microsoft 365 安全性
 
@@ -47,7 +47,7 @@ ms.locfileid: "46686798"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>配置 SharePoint Online 以阻止不支持新式身份验证的应用程序
 
-不支持新式身份验证的应用程序不能对其应用 [标识和设备访问配置](microsoft-365-policies-configurations.md) ，这是保护 Microsoft 365 订阅及其数字资产的重要因素。 
+不支持新式身份验证的应用程序不能对其应用 [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) ，这是保护 Microsoft 365 订阅及其数字资产的重要因素。 
 
 1. 请转到 Microsoft 365 管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)) 并使用全局管理员帐户登录到你的 microsoft 365 测试实验室订阅。
     
@@ -70,7 +70,7 @@ Office 365 高级威胁防护 (适用于 SharePoint、OneDrive 和 Microsoft 团
 
 3. 在 " **保护 SharePoint、OneDrive 和 Microsoft 团队中的文件**" 下。 选择 " **为 SharePoint、OneDrive 和 Microsoft 团队启用 ATP**"。
 
-4. 单击“保存”****。
+4. 单击“**保存**”。
 
 
 ### <a name="enable-anti-malware"></a>启用反恶意软件

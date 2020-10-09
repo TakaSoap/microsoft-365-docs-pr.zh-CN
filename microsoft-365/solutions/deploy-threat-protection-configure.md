@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377397"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399345"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中配置威胁防护功能
 
@@ -40,13 +40,13 @@ Microsoft 已测试并建议一组特定的条件访问和相关策略，用于�
 
 ![部署基准保护的过程](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [配置先决条件，包括 Azure 标识保护](../enterprise/identity-access-prerequisites.md)。
-2. 配置用于基准保护的[常用标识和设备访问策略](../enterprise/identity-access-policies.md)。
-3. 为 [来宾用户](../enterprise/identity-access-policies-guest-access.md)、 [Microsoft 团队](../enterprise/teams-access-policies.md)、 [Exchange Online](../enterprise/secure-email-recommended-policies.md)和 [SharePoint online 和 OneDrive](../enterprise/sharepoint-file-access-policies.md)配置策略。
+1. [配置先决条件，包括 Azure 标识保护](../security/office-365-security/identity-access-prerequisites.md)。
+2. 配置用于基准保护的[常用标识和设备访问策略](../security/office-365-security/identity-access-policies.md)。
+3. 为 [来宾用户](../security/office-365-security/identity-access-policies-guest-access.md)、 [Microsoft 团队](../security/office-365-security/teams-access-policies.md)、 [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)和 [SharePoint online 和 OneDrive](../security/office-365-security/sharepoint-file-access-policies.md)配置策略。
 
 ### <a name="more-information-about-protecting-identities"></a>有关保护标识的详细信息
 
-- [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)
+- [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA 的安全指南](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>步骤2：配置 Azure 高级威胁防护

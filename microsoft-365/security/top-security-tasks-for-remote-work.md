@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327791"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398643"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -50,7 +50,7 @@ ms.locfileid: "48327791"
 |8 |[将电脑注册到设备管理并要求符合合规性的电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[为云连接优化你的网络](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |10  |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11 |[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11x17|[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -72,7 +72,7 @@ ms.locfileid: "48327791"
 |---|---|
 |不包含 Azure AD P1 或 P2 的 Microsoft 365 计划 () |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。|
 |Microsoft 365 E3 (与 Azure AD P1) |使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br/>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (与 Azure AD P2) |利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../enterprise/identity-access-policies.md)：<br/> - [要求在登录风险为“中等”或“高”时执行 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [阻止不支持新式身份验证的客户端](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [高风险用户必须更改密码](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (与 Azure AD P2) |利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](./office-365-security/identity-access-policies.md)：<br/> - [要求在登录风险为“中等”或“高”时执行 MFA](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [阻止不支持新式身份验证的客户端](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [高风险用户必须更改密码](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2：防御威胁
@@ -139,10 +139,10 @@ Microsoft Intune 移动应用程序管理 (MAM) 允许您管理和保护您的�
 
 更好的是，Microsoft 将此应用保护框架与一组条件访问和相关策略协调，我们建议所有组织都将其用作起始点。 如果您已使用本文中的指导实施了 MFA，那么你就是这样！
 
-若要配置移动应用保护，请使用 [常见标识和设备访问策略](../enterprise/identity-access-policies.md)中的指导：
+若要配置移动应用保护，请使用 [常见标识和设备访问策略](./office-365-security/identity-access-policies.md)中的指导：
 
- 1. 使用 [应用程序数据保护策略](../enterprise/identity-access-policies.md#apply-app-data-protection-policies) 指南可为 IOS 和 Android 创建策略。 第2级 (增强型数据保护) 建议用于基准保护。
- 2. 创建条件访问规则以 [要求获得批准的应用程序和应用程序保护](../enterprise/identity-access-policies.md#require-approved-apps-and-app-protection)。
+ 1. 使用 [应用程序数据保护策略](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) 指南可为 IOS 和 Android 创建策略。 第2级 (增强型数据保护) 建议用于基准保护。
+ 2. 创建条件访问规则以 [要求获得批准的应用程序和应用程序保护](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)。
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7：为来宾配置 MFA 和条件访问，包括 Intune 移动应用保护
 
@@ -153,7 +153,7 @@ Microsoft Intune 移动应用程序管理 (MAM) 允许您管理和保护您的�
 - 创建一个新的条件访问规则，以对来宾和外部用户始终要求进行 MFA。
 - 更新基于风险的 MFA 条件访问规则以排除来宾和外部用户。
 
-使用 [更新常见策略的指南，以允许和保护来宾和外部访问](../enterprise/identity-access-policies-guest-access.md) ，以了解来宾访问如何与 Azure AD 配合工作以及如何更新受影响的策略。
+使用 [更新常见策略的指南，以允许和保护来宾和外部访问](./office-365-security/identity-access-policies-guest-access.md) ，以了解来宾访问如何与 Azure AD 配合工作以及如何更新受影响的策略。
 
 你创建的 Intune 移动应用保护策略与条件访问规则一起使用，以要求获得批准的应用和应用保护，应用于来宾帐户并将帮助保护组织数据。
 
@@ -171,12 +171,12 @@ Microsoft Intune 移动应用程序管理 (MAM) 允许您管理和保护您的�
 - [使用 Autopilot 在 Intune 中注册 Windows 设备](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [在 Apple Business Manager 中使用 Apple 的公司设备注册功能 (ABM) 在 Intune 中注册 iOS/iPadOS 设备](https://docs.microsoft.com/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-注册设备后，请使用 [常见标识和设备访问策略](../enterprise/identity-access-policies.md) 中的指导来创建以下策略：
+注册设备后，请使用 [常见标识和设备访问策略](./office-365-security/identity-access-policies.md) 中的指导来创建以下策略：
 
-- [定义设备合规性策略](../enterprise/identity-access-policies.md#define-device-compliance-policies) —推荐用于 Windows 10 的设置，包括需要进行病毒防护。 如果你有 Microsoft 365 E5，请使用 Microsoft Defender 高级威胁防护来监视员工设备的运行状况。 请确保其他操作系统的合规性策略包括防病毒保护和终结点保护软件。
-- [需要符合](../enterprise/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) 要求的电脑—这是 Azure AD 中强制实施设备合规性策略的条件访问规则。
+- [定义设备合规性策略](./office-365-security/identity-access-policies.md#define-device-compliance-policies) —推荐用于 Windows 10 的设置，包括需要进行病毒防护。 如果你有 Microsoft 365 E5，请使用 Microsoft Defender 高级威胁防护来监视员工设备的运行状况。 请确保其他操作系统的合规性策略包括防病毒保护和终结点保护软件。
+- [需要符合](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) 要求的电脑—这是 Azure AD 中强制实施设备合规性策略的条件访问规则。
 
-只有一个组织可以管理设备，因此请务必从 Azure AD 中的条件访问规则中排除来宾帐户。 如果不从需要设备符合性的策略中排除来宾和外部用户，则这些策略将阻止这些用户。 有关详细信息，请参阅 [更新通用策略以允许和保护来宾和外部访问](../enterprise/identity-access-policies-guest-access.md)。
+只有一个组织可以管理设备，因此请务必从 Azure AD 中的条件访问规则中排除来宾帐户。 如果不从需要设备符合性的策略中排除来宾和外部用户，则这些策略将阻止这些用户。 有关详细信息，请参阅 [更新通用策略以允许和保护来宾和外部访问](./office-365-security/identity-access-policies-guest-access.md)。
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9：为云连接优化你的网络
 

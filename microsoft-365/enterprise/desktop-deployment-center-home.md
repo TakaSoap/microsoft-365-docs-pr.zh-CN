@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 如何获取与弃用的桌面部署中心等效的资源。
-ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 1b930bae76c510108556947977aa1393ae9bd86b
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898012"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398827"
 ---
 # <a name="desktop-deployment-center-deprecated"></a> (弃用的桌面部署中心) 
 
@@ -27,9 +27,9 @@ ms.locfileid: "46898012"
 使用以下资源部署新式桌面：
 
 - [Windows 10 部署](https://docs.microsoft.com/windows/deployment/)
-- [部署 Microsoft 365 应用程序](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+- [部署 Microsoft 365 应用版](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
-- [标识和设备访问策略](microsoft-365-policies-configurations.md)
+- [标识和设备访问策略](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 您还可以 [从 Microsoft 结构中查看桌面部署系列视频](https://www.aka.ms/watchhowtoshift)。
 

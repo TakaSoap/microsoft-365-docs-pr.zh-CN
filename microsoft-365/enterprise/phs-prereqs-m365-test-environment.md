@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建 Microsoft 365 环境以测试标识和设备访问，含密码哈希同步身份验证的先决条件。
-ms.openlocfilehash: 6aa6b1cd1b8f9459b27e46fa67c62b35014b2d7e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63f433d5297139fcc7f6eb8bd5383a6593c29388
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686246"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399439"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中密码哈希同步的标识和设备访问先决条件
 
 *此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
-[标识和设备访问配置](microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
 
-本文介绍如何配置 Microsoft 365 测试环境，使其满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](identity-access-prerequisites.md#prerequisites)的要求。
+本文介绍如何配置 Microsoft 365 测试环境，使其满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求。
 
 此测试环境的设置分为以下八个阶段：
 
@@ -110,7 +110,7 @@ ms.locfileid: "46686246"
   Get-CsOAuthConfiguration
   ```
 
-结果是满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](identity-access-prerequisites.md#prerequisites)的要求的环境。 
+结果是满足 [Active Directory 和用于标识和设备访问的密码哈希同步先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)的要求的环境。 
 
 ## <a name="next-step"></a>后续步骤
 

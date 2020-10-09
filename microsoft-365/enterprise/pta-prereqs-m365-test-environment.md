@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 创建一个 Microsoft 365 环境来测试标识和设备访问情况，其中内附传递身份验证的先决条件。
-ms.openlocfilehash: eeb6c1d1313c95e920b20cce419118fe1e61ad6e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7741b38a947e58d81192326c412760487d803e36
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685638"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399177"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Microsoft 365 测试环境中传递身份验证的标识和设备访问先决条件
 
 *此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
-[标识和设备访问配置](microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
+[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md) 是一组配置和条件访问策略，用于保护与 Azure Active Directory (azure AD) 集成的适用于企业的 Microsoft 365 中所有服务的访问权限。
 
-本文介绍了可以如何配置 Microsoft 365 测试环境，以使其满足标识和设备访问的[传递身份验证先决条件配置](identity-access-prerequisites.md#prerequisites)要求。
+本文介绍了可以如何配置 Microsoft 365 测试环境，以使其满足标识和设备访问的[传递身份验证先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)要求。
 
 此测试环境的设置分为以下八个阶段：
 
@@ -111,7 +111,7 @@ ms.locfileid: "46685638"
   Get-CsOAuthConfiguration
   ```
 
-结果是得到一个符合以下条件的测试环境：满足标识和设备访问的[传递身份验证先决条件配置](identity-access-prerequisites.md#prerequisites)要求。 
+结果是得到一个符合以下条件的测试环境：满足标识和设备访问的[传递身份验证先决条件配置](../security/office-365-security/identity-access-prerequisites.md#prerequisites)要求。 
 
 ## <a name="next-step"></a>后续步骤
 

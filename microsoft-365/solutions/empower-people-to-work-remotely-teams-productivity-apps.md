@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: a001bb748a9b6e0431c75c0a23637fd47e460a6e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a873c003537b98d10db5fc8a660b9d15ac0bcc23
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377613"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399297"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
@@ -66,7 +66,7 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 借助 Outlook，远程工作者可以在同一位置通过电子邮件、日历、联系人、任务等保持联系，并且有条不紊。 Outlook 可帮助你根据与你相关的内容，随时跟踪日常工作并确定其优先级。 通过 Outlook，你能够直接从 OneDrive 共享附件、计划和加入 Teams 会议、查看和共享日历，以及向其他人提供委派权限。 了解工作和个人承诺方面的后续发展以及需要关注的内容可以帮助远程工作者专注于重要事项。 Outlook 为远程工作者提供了有用的方式来管理其时间和查找所需内容（包括文件、组织中的人员等）。 
 
-请参阅[本文](../enterprise/secure-email-recommended-policies.md)，了解用于保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端的建议身份验证和设备访问策略。
+请参阅[本文](../security/office-365-security/secure-email-recommended-policies.md)，了解用于保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端的建议身份验证和设备访问策略。
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>使用 SharePoint 和 OneDrive 存储和协作处理文件
 
@@ -79,7 +79,7 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 - [文件共享](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-请参阅[本文](../enterprise/sharepoint-file-access-policies.md)，了解用于保护 SharePoint 和 OneDrive 的建议身份验证和设备访问策略。
+请参阅[本文](../security/office-365-security/sharepoint-file-access-policies.md)，了解用于保护 SharePoint 和 OneDrive 的建议身份验证和设备访问策略。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 应用创建和协作处理内容
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: 2f7de328edbd0220e5627612430fca24641ace11
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 4181feeed97313ec1e8d916df994cc880cbffdf1
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547994"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399451"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于业务决策者 (Bdm) 的 Microsoft 365 安全性
 
@@ -68,7 +68,7 @@ Microsoft 向你提供租户中的安全分数工具，以根据你的常规活�
 
 |建议  |E3  |E5  |
 |---------|---------|---------|
-|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 建议并测试了一组协同工作的策略，以保护所有云应用，包括 Office 365 和 Microsoft 365 服务。 请参阅 [标识和设备访问配置](../enterprise/microsoft-365-policies-configurations.md)。 | |![绿色复选标记](../media/green-check-mark.png)|
+|**设置多重身份验证并使用建议的条件访问策略，包括登录风险策略**。 Microsoft 建议并测试了一组协同工作的策略，以保护所有云应用，包括 Office 365 和 Microsoft 365 服务。 请参阅 [标识和设备访问配置](./office-365-security/microsoft-365-policies-configurations.md)。 | |![绿色复选标记](../media/green-check-mark.png)|
 |**对所有用户要求多因素身份验证**。 如果您没有实现建议的条件访问策略所需的许可，则至少需要对所有用户进行多重身份验证。|![绿色复选标记](../media/green-check-mark.png)|![绿色复选标记](../media/green-check-mark.png)|
 |**提高针对邮件中的恶意软件的保护级别**。 你的 Office 365 或 Microsoft 365 环境包括针对恶意软件的防护，但你可以通过阻止常见恶意软件使用的文件类型的附件来提高此保护。|![绿色复选标记](../media/green-check-mark.png)|![绿色复选标记](../media/green-check-mark.png)|
 |**保护你的电子邮件免受目标钓鱼攻击**。 如果您为 Office 365 或 Microsoft 365 环境配置了一个或多个自定义域，则可以配置目标的反网络钓鱼保护。 ATP 反网络钓鱼保护是 Office 365 高级威胁防护的一部分，可帮助保护您的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需执行此操作。| |![绿色复选标记](../media/green-check-mark.png)|
@@ -114,7 +114,7 @@ Microsoft 365 信息保护功能可帮助您发现您拥有的信息、存储的
 
 |建议 |E3|E5 |
 |---------|---------|---------|
-|**查看并优化你的条件访问和相关策略，以适应零信任网络的目标**。 防范已知威胁包括实施一组建议的 [策略](../enterprise/microsoft-365-policies-configurations.md)。 检查这些策略的实现，以确保您正在保护您的应用程序和数据免受已访问您的网络的黑客的攻击。 请注意，推荐的适用于 Windows 10 的 Intune 应用保护策略启用 Windows 信息保护 (WIP) 。 WIP 可防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄漏组织数据。 |         |![绿色复选标记](../media/green-check-mark.png)|
+|**查看并优化你的条件访问和相关策略，以适应零信任网络的目标**。 防范已知威胁包括实施一组建议的 [策略](./office-365-security/microsoft-365-policies-configurations.md)。 检查这些策略的实现，以确保您正在保护您的应用程序和数据免受已访问您的网络的黑客的攻击。 请注意，推荐的适用于 Windows 10 的 Intune 应用保护策略启用 Windows 信息保护 (WIP) 。 WIP 可防止通过应用和服务（如电子邮件、社交媒体和公共云）意外泄漏组织数据。 |         |![绿色复选标记](../media/green-check-mark.png)|
 |**禁用外部电子邮件转发**。 通过将邮箱设置为自动转发电子邮件，获取对用户邮箱的访问权限的黑客可以盗取您的邮件。 即使没有用户的意识，也会发生这种情况。 您可以通过配置邮件流规则来防止这种情况发生。|![绿色复选标记](../media/green-check-mark.png) |![绿色复选标记](../media/green-check-mark.png)|
 |**禁用匿名外部日历共享**。 默认情况下，允许外部匿名日历共享。 [禁用日历共享](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy) ，以减少敏感信息的可能泄漏。|![绿色复选标记](../media/green-check-mark.png) |![绿色复选标记](../media/green-check-mark.png)|
 |**配置敏感数据的数据丢失防护策略**。 在安全合规中心中创建数据丢失防护策略 &amp; ，以发现和保护敏感数据，如信用卡号、社会保险号码和银行帐户号码。 Microsoft 365 包括许多可在数据丢失防护策略中使用的预定义敏感信息类型。 您还可以为您的环境自定义的敏感数据创建您自己的敏感信息类型。 |![绿色复选标记](../media/green-check-mark.png)|![绿色复选标记](../media/green-check-mark.png)|
