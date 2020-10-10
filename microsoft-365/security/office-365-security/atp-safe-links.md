@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，管理员可以了解 Office 365 高级威胁防护 (ATP) 中的安全链接保护，以保护其组织免受使用恶意 Url 的网络钓鱼和其他攻击。
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414114"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417263"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 中的安全链接
 
@@ -150,7 +150,7 @@ ms.locfileid: "48414114"
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft 团队的安全链接设置
 
 > [!IMPORTANT]
-> 从2020年3月起，此功能处于预览阶段，仅适用于 Microsoft 团队技术采用计划的成员 (点击) 。
+> 从2020年3月起，此功能处于预览阶段，仅适用于 Microsoft 团队技术采用计划的成员 (点击) 。 有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
 
 在安全链接策略中启用或禁用对 Microsoft 团队的安全链接保护。 具体来说，您可以使用 " **选择对 Microsoft 团队中的未知或可能有害的 url 执行操作** " 设置。 建议的值为 **"开**"。
 

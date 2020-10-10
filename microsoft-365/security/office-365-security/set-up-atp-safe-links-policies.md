@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 高级威胁防护 (ATP) 中查看、创建、修改和删除安全链接策略和全局安全链接设置。
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350715"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417252"
 ---
 # <a name="set-up-safe-links-policies-in-office-365-atp"></a>在 Office 365 ATP 中设置安全链接策略
 
@@ -88,9 +88,9 @@ ms.locfileid: "48350715"
 
 4. 在出现的 " **设置** " 页上，配置以下设置：
 
-   - **选择邮件中未知的潜在恶意 url 的操作**：选择 **"打开"**。
+   - **选择邮件中未知的潜在恶意 url 的操作**：选择 **"启用"** 以启用电子邮件中的链接的安全链接保护。
 
-   - **选择邮件中未知的潜在恶意 url 的操作**：选择 **"开启"** 或 "保留 **默认值"** "已选中"。
+   - **为 Microsoft 团队中的未知或可能存在的恶意 Url 选择操作**：选择 **"打开"** 以启用对团队中的链接的安全链接保护。
 
    - **对指向文件的可疑链接和链接应用实时 URL 扫描**：选择此设置可启用对电子邮件中的链接的实时扫描。
 

@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413254"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417291"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 的新增功能
 
@@ -47,7 +47,8 @@ ms.locfileid: "48413254"
 - [使用租户允许/阻止列表手动重写筛选器 verdicts](tenant-allow-block-list.md)
 - [威胁资源管理器中的扩展功能，包括主要目标用户、传输规则和连接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 计划 2) 
 - "在 [威胁资源管理器](threat-explorer.md) 中覆盖信息" (电子邮件被租户/用户策略允许/阻止) 
-- 在 [威胁资源管理器](threat-explorer.md) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无)  
+- 在 [威胁资源管理器](threat-explorer.md#threats-in-urls) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无)  
+- 改进了针对威胁的更新、其他操作、传递位置和更新的日程表视图的[搜寻体验威胁资源管理器](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming)
 
 ## <a name="julyaugust-2020"></a>7月/8 月2020 
 

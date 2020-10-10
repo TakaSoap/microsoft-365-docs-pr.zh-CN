@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412558"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417236"
 ---
 # <a name="user-submissions-policies"></a>用户提交策略
 
@@ -47,17 +47,17 @@ ms.locfileid: "48412558"
 
 使用以下文章配置需要的必备组件，以使用户报告的邮件转到您的自定义邮箱：
 
-- 通过创建 exchange 邮件流规则以设置垃圾邮件可信度来跳过垃圾邮件筛选。 请参阅 [使用 EAC 创建邮件流规则，将邮件的 scl](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 设置为将 scl 设置为 **-1**。
+- 通过创建用于设置垃圾邮件可信度级别的 exchange 邮件流规则，跳过自定义邮箱上的垃圾邮件筛选。 请参阅 [使用 EAC 创建邮件流规则，将邮件的 scl](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 设置为将 scl 设置为 **-1**。
 
-- 为恶意软件关闭扫描附件。 使用 [Set up (或 edit) ATP Safe 附件策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) 来创建安全附件策略，该策略 **将不会扫描设置为** "已启用恶意软件"。
+- 为自定义邮箱中的恶意软件关闭扫描附件。 使用 "[在 Office 365 ATP 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)" 创建安全附件策略，设置为 "**关闭****安全附件" 未知恶意软件响应**。
 
-- 对邮件禁用 URL 扫描。 使用 [Add (或 edit) ATP Safe Links 策略应用于所有或特定的电子邮件收件人](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) 。若要创建安全链接策略， **请选择将邮件中可能存在的未知恶意 url 的操作** 设置为 " **关闭**"。
+- 对自定义邮箱中的邮件禁用 URL 扫描。 使用 " [在 Office 365 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md) " 创建安全链接策略，设置为 " **关闭** "，以 **选择对邮件中未知的潜在恶意 url 的操作**。
 
-- 创建反恶意软件策略以关闭恶意软件零小时自动清除。 请参阅[使用安全 & 合规性中心创建反恶意软件策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies)，将**恶意软件设置为零小时自动清除** **。**
+- 创建反恶意软件策略以关闭恶意软件零小时自动清除。 请参阅[使用安全 & 合规性中心创建反恶意软件策略](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，将**恶意软件设置为零小时自动清除** **。**
 
-- 创建垃圾邮件筛选器策略，以禁用垃圾邮件 ZAP 和网络钓鱼 ZAP (ZAP) 的零小时自动清除。 请参阅 [使用安全 & 合规性中心创建反垃圾邮件策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) ，并清除用于垃圾邮件 Zap 和网络钓鱼 ZAP 的 " **打开** " 复选框。
+- 创建垃圾邮件筛选器策略以禁用自定义邮箱中的垃圾邮件和网络钓鱼的零小时自动清除 (ZAP) 。 请参阅[使用安全 & 合规性中心创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，并清除用于垃圾邮件**Zap**和**网络钓鱼 ZAP**的 "**打开**" 复选框。
 
-- 禁用垃圾邮件规则。 使用 [Exchange Online 邮箱上的 "配置垃圾邮件设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) " 禁用垃圾邮件规则。 禁用后，EOP 无法将邮件移动到 "垃圾邮件" 文件夹，具体取决于垃圾邮件筛选判定操作 **将邮件移动到 "垃圾邮件" 文件夹** 或邮箱中的 "安全列表" 集合。
+- 禁用自定义邮箱中的垃圾邮件规则。 使用 [Exchange Online 邮箱上的 "配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md) " 禁用垃圾邮件规则。 禁用后，EOP 无法将邮件移动到 "垃圾邮件" 文件夹，具体取决于垃圾邮件筛选判定操作 **将邮件移动到 "垃圾邮件" 文件夹** 或邮箱中的 "安全列表" 集合。
 
 确认您的邮箱符合所有适用的先决条件后，请 [使用安全 & 合规性中心在本文中配置用户提交邮箱](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) () 。
 
@@ -118,7 +118,7 @@ ms.locfileid: "48412558"
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-是 SafetyAPIAction 是以下整数值之一：
+其中，SafetyAPIAction 是以下整数值之一：
 
 - 1：垃圾邮件
 - 2： NotJunk

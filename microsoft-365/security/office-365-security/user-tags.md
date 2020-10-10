@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用 Office 365 ATP 计划2中的用户标记标识特定用户组。 标记筛选在 Office 365 ATP 中的通知、报告和调查中可用，以快速识别已标记的用户。
-ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399381"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417280"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的用户标记
+
+> [!NOTE]
+> "用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。 有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。
 
 用户标记是 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md)中的特定用户组的标识符。 有两种类型的用户标记：
 
