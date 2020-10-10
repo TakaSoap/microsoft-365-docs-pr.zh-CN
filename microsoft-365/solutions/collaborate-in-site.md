@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解设置 SharePoint 网站以与来宾进行协作所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357990"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409032"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在网站中与来宾协作
 
@@ -37,20 +37,20 @@ ms.locfileid: "48357990"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部协作设置
 
-Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)的最高级别的管辖。 如果在 Azure AD 中禁用或限制来宾共享，这将替代您在 Microsoft 365 中配置的任何共享设置。
+Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)的最高级别的管辖。 如果在 Azure AD 中禁用或限制来宾共享，此设置将覆盖您在 Microsoft 365 中配置的任何共享设置。
 
 检查外部协作设置以确保不会阻止与来宾共享。
 
 ![Azure Active Directory 外部协作设置页面的屏幕截图](../media/azure-ad-organizational-relationships-settings.png)
 
-要设置外部协作设置，请执行以下操作：
+设置外部协作设置
 
-
-1. 登录到 Microsoft Azure [https://portal.azure.com](https://portal.azure.com) 。
-2. 在左侧导航中，单击 " **Azure Active Directory**"。
-3. 选择 " **外部标识** "，然后单击 " **外部协作设置**"。
-4. 在 " **来宾邀请设置** " 窗格中，确保 **来宾和来宾邀请者角色中的管理员和用户** 可以邀请和 **成员** 均设置为 **"是"**。
-5. 如果进行了任何更改，请单击 **“保存”**。
+1. 在上登录到 Azure Active Directory [https://aad.portal.azure.com](https://aad.portal.azure.com) 。
+2. 在左侧导航窗格中，单击 " **Azure Active Directory**"。
+3. 单击 " **外部标识**"。
+4. 在 " **开始** " 屏幕的左侧导航窗格中，单击 " **外部协作设置**"。
+5. 确保 **来宾邀请者角色中的管理员和用户可以邀请** 和 **成员** 都可以邀请都设置为 **"是"**。
+6. 如果进行了任何更改，请单击 **“保存”**。
 
 请注意 " **协作限制** " 部分中的设置。 确保不会阻止您要与之进行协作的来宾域。
 
@@ -64,18 +64,17 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 
 设置 Microsoft 365 组来宾设置
 
-1. 在 Microsoft 365 管理中心的左侧导航栏中，展开 " **设置**"。
-2. 单击 " **服务" & 外接程序**。
+1. 在 Microsoft 365 管理中心的左侧导航窗格中，展开 " **设置**"。
+2. 单击 " **组织设置**"。
 3. 在列表中，单击 " **Microsoft 365 组**"。
-4. 确保将 **组织外部的成员访问组内容** 和 **允许组所有者将组织外部的人员添加到组** 复选框均选中。
+4. 确保选中 " **允许组所有者将组织外部的人员添加为 Microsoft 365 组** " 和 " **允许来宾组成员访问组内容** " 复选框。
 5. 如果进行了更改，请单击 " **保存更改**"。
-
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 组织级别的共享设置
 
 为使来宾能够访问 SharePoint 网站，SharePoint 组织级别的共享设置必须允许与来宾共享。
 
-组织级别设置确定了哪些设置可用于单个网站。 网站设置不能比组织级别设置更具有更好的许可。
+组织级别设置确定将对单个网站可用的设置。 网站设置不能比组织级别设置更具有更好的许可。
 
 如果要允许未经身份验证的文件和文件夹共享，请选择 " **任何人**"。 如果要确保组织外部的所有人员都必须进行身份验证，请选择 " **新建" 和 "现有来宾**"。 选择组织中的任何网站将需要的 "最高" 设置。
 
@@ -84,8 +83,8 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 
 设置 SharePoint 组织级别的共享设置
 
-1. 在 Microsoft 365 管理中心的左侧导航栏中，在 " **管理中心**" 下，单击 " **SharePoint**"。
-2. 在 SharePoint 管理中心的左侧导航栏中，单击“**共享**”。
+1. 在 Microsoft 365 管理中心的左侧导航窗格中，单击 " **管理中心**" 下的 " **SharePoint**"。
+2. 在 SharePoint 管理中心中，在左侧导航窗格中的 " **策略**" 下，单击 " **共享**"。
 3. 确保将 SharePoint 的 "外部共享" 设置为 " **任何人** " 或 " **新的和现有的来宾**"。
 4. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -98,13 +97,13 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 2. 单击“**创建**”。
 3. 单击 " **团队网站**"。
 4. 键入网站名称，并为组所有者 (网站所有者) 输入名称。
-5. 在 " **高级设置**" 下，选择是否希望它成为公用或专用网站。
+5. 在 " **高级设置**" 下，选择要将此网站设为公共网站还是专用网站。
 6. 单击"下一步"。
 7. 单击“完成”****。
 
 我们将稍后邀请用户。 接下来，请务必检查此网站的网站级共享设置。
 
-## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别共享设置
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 网站级别的共享设置
 
 检查网站级别的共享设置以确保它们允许您对此网站所需的访问类型。 例如，如果将组织级别设置设置为 " **任何人**"，但希望所有来宾都对此网站进行身份验证，请确保将网站级别的共享设置设置为 " **新建" 和 "现有来宾**"。
 
@@ -114,8 +113,8 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 
 设置网站级共享设置
 1. 在 SharePoint 管理中心的左侧导航栏中，展开 **“站点”**，然后单击 **“活动站点”**。
-2. 选择您刚刚创建的网站。
-3. 在功能区中，单击 **“共享”**。
+2. 选择要共享的网站。
+3. 单击 "..."，然后单击 " **共享**"。
 4. 确保将 "共享" 设置为 " **任何人** " 或 " **新的和现有的来宾**"。
 5. 如果进行了任何更改，请单击 **“保存”**。
 
@@ -125,17 +124,19 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 
 向组邀请内部用户
 1. 导航到要在其中添加用户的网站。
-2. 单击右上角的 " **成员** "。
+2. 单击右上角表示成员计数的 " **成员** " 链接。
 3. 单击“**添加成员**”。
 4. 键入要邀请到网站的用户的名称或电子邮件地址，然后单击 " **保存**"。
 
-无法从网站添加来宾用户。 您需要在 web 上使用 Outlook 添加它们。
+无法从网站添加来宾用户。 您需要在 web 上使用 Outlook 添加它们。 因此，作为向组添加和邀请来宾的先决条件，可在 " **URL**  " 列中单击网站的 url 以导航到特定于站点的页面。 在此页面中，单击 **应用启动器** 图标，然后选择 " **Outlook**"。 在此屏幕中，可以将来宾邀请到组中，具体步骤如下所述。
 
 将来宾邀请到组
-1. 在 web 上的 Outlook 中的 " **组**" 下，单击要在其中添加成员的组。
-2. 打开组联系人卡片，然后在 " **更多选项** ( ... ) 下，单击" **添加成员**"。
-3. 键入要邀请的来宾的电子邮件地址，然后单击 " **添加**"。
-4. 单击“关闭”****。
+1. 在 " **组**" 下，单击要邀请其来宾的组。
+2. 打开 "组联系人卡片"，单击右上方的 " **成员** " 链接 (表示成员计数) 的链接。
+3. 单击 " **添加成员**"。
+4. 键入要邀请的来宾的电子邮件地址，然后单击 " **添加**"。
+5. 单击“关闭”****。
+请注意，仅当您不是组的所有者时，才需要单击 " **关闭** "，因此，不允许将来宾添加到组中。 在这种情况下，将来宾添加到组中的请求将转移到组所有者以供审批。
 
 ## <a name="see-also"></a>另请参阅
 

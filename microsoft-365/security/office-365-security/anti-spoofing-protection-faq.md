@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: 管理员可以查看有关 Exchange Online Protection (EOP) 中的 "反欺骗" 保护的常见问题和解答。
-ms.openlocfilehash: 207fa9b12c2b39571c72397abfb6a64fe992b43e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 57ca258e2990719e50a84a402e0b4ff7db1c229e
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199107"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411718"
 ---
 # <a name="anti-spoofing-protection-faq"></a>防欺骗保护常见问题
 
@@ -46,7 +47,7 @@ Microsoft 本身在将新的电子邮件身份验证要求部署到客户之前�
 
 ## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>是否在没有 ATP 的情况下，Microsoft 365 客户可以使用欺骗版智能？
 
-是。 从10月2018起，欺骗智能可供具有邮箱的 Exchange Online 中的所有组织和独立 EOP 组织（无 Exchange Online 邮箱）。
+是的。 从10月2018起，欺骗智能可供具有邮箱的 Exchange Online 中的所有组织和独立 EOP 组织（无 Exchange Online 邮箱）。
 
 反欺骗技术最初仅在 Office 365 高级威胁防护中可用。 例如，Microsoft E5 订阅或 ATP 附加项。
 

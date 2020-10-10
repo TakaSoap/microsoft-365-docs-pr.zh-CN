@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: c362ffcbb83e8b0fb7ae89bbbf835165e23b8e83
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fd975c8708bcd6731c356ccc3307f5cdebd13bdb
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201955"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413396"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
@@ -81,7 +82,7 @@ ms.locfileid: "48201955"
 
 ## <a name="step-6-recover-deleted-email"></a>步骤6：恢复已删除的电子邮件
 
-在少数情况下，勒索软件删除了所有电子邮件，您可能可以恢复已删除的项目。 有关详细信息，请参阅：
+在少数情况下，勒索软件删除了所有电子邮件，您可能可以恢复已删除的项目。 有关更多信息，请参阅：
 
 - [恢复用户邮箱中的已删除邮件](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 

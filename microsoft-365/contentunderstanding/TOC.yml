@@ -6,7 +6,7 @@
       href: document-understanding-overview.md
     - name: 表单处理概述
       href: form-processing-overview.md
-    - name: 文档理解和表单处理模型之间的区别
+    - name: 文档理解与表单处理模型之间的差异
       href: difference-between-document-understanding-and-form-processing-model.md
 - name: 模型入门
   items:
@@ -18,7 +18,7 @@
       href: create-a-classifier.md
     - name: 创建提取程序
       href: create-an-extractor.md
-    - name: 解释类型
+    - name: 说明类型
       href: explanation-types-overview.md
     - name: 应用模型
       href: apply-a-model.md
@@ -28,7 +28,7 @@
       href: apply-a-retention-label-to-a-model.md
     - name: 模型使用情况分析
       href: model-usage-analytics.md
-    - name: 创建提取器时利用术语存储分类
+    - name: 创建提取器时利用术语库分类
       href: leverage-term-store-taxonomy.md
 - name: 采用
   items:
@@ -38,8 +38,6 @@
   items:
     - name: 设置内容理解
       href: set-up-content-understanding.md
-    - name: 图像标记
-      href: image-tagging.md
 - name: 内容服务
   items:
     - name: 使用 SKOS 导入

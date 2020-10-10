@@ -13,20 +13,21 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格安全配置等。 了解您拥有的功能，以及如何保护属性。
-ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
-ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
+ms.openlocfilehash: d650a02faa21ac6ade39506d2c423dd319951bef
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48359149"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413050"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全概述
 
 本文将向你介绍云中的新安全属性。 无论您是安全运营中心的一部分，您是安全管理员新的共享空间，还是您需要复习，让我们开始吧。
 
 > [!CAUTION]
-> 你好。 如果您使用的 **是 Outlook.com**、 **microsoft 365 系列**或 **microsoft 365 个人**版，并且需要 *安全链接* 或 *安全附件* 信息，请 ***单击此链接***： [Microsoft 365 订阅者的高级 Outlook.com 安全性](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。 归功!
+> 如果您使用的 **是 Outlook.com**、 **microsoft 365 系列**或 **microsoft 365 个人**版，并且需要 *安全链接* 或 *安全附件* 信息，请 ***单击此链接***： [Microsoft 365 订阅者的高级 Outlook.com 安全性](https://support.microsoft.com/office/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 ## <a name="office-365-security-spelled-out"></a>Office 365 安全拼写
 

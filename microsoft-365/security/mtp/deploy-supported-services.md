@@ -14,17 +14,19 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 73d807a37f1c85e9d79353334cac4208b86bbdc2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3a5db0b9709a9596ccd6560d7f2e546dd3753332
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198881"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413348"
 ---
 # <a name="deploy-supported-services"></a>部署支持的服务
 
@@ -43,7 +45,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 | 支持的服务 | 说明 |
 | ------ | ------ |
-| Microsoft Defender ATP | 围绕功能强大的行为传感器、云分析和威胁智能构建的 Endpoint protection 套件 |
+| 每个租户 | 围绕功能强大的行为传感器、云分析和威胁智能构建的 Endpoint protection 套件 |
 | Office 365 ATP | Office 365 中的应用和数据的高级保护，包括电子邮件和其他协作工具 |
 | Azure ATP | 使用关联的 Active Directory 信号防御高级威胁、已泄露身份和恶意预览体验 |
 | Microsoft Cloud App Security | 跨你的 Microsoft 和第三方云服务识别和打击威胁 |
@@ -64,7 +66,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 | 服务 | 数据 (信号 & 相关信息)  | 修正 & 响应作用域 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 终结点 |
+| 每个租户 | -终结点状态和原始事件<br />-终结点检测和警报，包括防病毒、EDR、攻击面减少<br />-有关在终结点上观测到的文件和其他实体的信息 | 终结点 |
 | Office 365 ATP | -邮件和邮箱状态以及原始事件<br />-电子邮件、附件和链接检测 | -邮箱<br />-Microsoft 365 帐户 |
 | Azure ATP | -Active Directory 信号，包括身份验证事件<br />-与标识相关的行为检测 | 身份 |
 | Microsoft Cloud App Security | -Unsanctioned 云应用和服务的检测 (隐藏它) <br />-将数据暴露给云应用<br />-与云应用程序关联的威胁活动 | 云应用 |
@@ -74,7 +76,7 @@ Microsoft 365 E5、E5 Security、A5 或 A5 安全许可证或有效的许可证�
 
 | 服务 | 预配说明 | 初始配置 |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [Microsoft Defender ATP 部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *请参阅预配说明* |
+| 每个租户 | [Microsoft Defender ATP 部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *请参阅预配说明* |
 | Office 365 ATP | *无，使用 Office 365 预配* | [配置 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
 | Azure ATP | [快速入门：创建 Azure ATP 实例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *请参阅预配说明* |
 | Microsoft Cloud App Security | *无* | [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
