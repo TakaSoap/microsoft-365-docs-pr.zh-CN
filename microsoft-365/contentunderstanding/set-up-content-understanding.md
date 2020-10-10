@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367927"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413706"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -51,11 +51,7 @@ ms.locfileid: "48367927"
 
     ![开始设置](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. 在开启图像标记页面上，选择是否要允许[图像标记](image-tagging.md)。
-
-    ![图像标记控件的截图](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
-
-5. 在**配置表单处理**页面上，可选择是否希望用户能够在特定的 SharePoint 文档库中创建表单处理模型。 在文档库功能区中存在一个菜单选项，以便在已启用该功能的SharePoint文档库中**创建表单处理模型**。
+4. 在**配置表单处理**页面上，可选择是否希望用户能够在特定的 SharePoint 文档库中创建表单处理模型。 在文档库功能区中存在一个菜单选项，以便在已启用该功能的SharePoint文档库中**创建表单处理模型**。
  
      对于**应显示用于创建表单处理模型的SharePoint库选项**，可选择：</br>
       - **所有SharePoint库** ，均使其可供组织中的所有 SharePoint 库使用。</br>
@@ -67,7 +63,7 @@ ms.locfileid: "48367927"
    > [!Note]
    > 在收录一个站点后，删除该站点不会影响应用于该站点中的库的现有模型，也不会影响将文档理解模型应用于库的能力。 
     
-6. 在**创建内容中心**页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。 </br>
+5. 在**创建内容中心**页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。 </br>
     a. 对于**站点名称**，键入要为内容中心站点提供的名称。</br>
     b. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。 若想改变它，请点击**编辑**。</br>
 
@@ -75,11 +71,11 @@ ms.locfileid: "48367927"
 
     选择**下一步**。
 
-7. 在**审查并完成**页面上，可查看所选设置并选择进行更改。 如果对你的选择感到满意，请选择**激活**。
+6. 在**审查并完成**页面上，可查看所选设置并选择进行更改。 如果对你的选择感到满意，请选择**激活**。
 
-8. 在确认页面上，点击**完成**。
+7. 在确认页面上，点击**完成**。
 
-9. 你将返回到**自动理解内容**页面。 在此页面中，可选择**管理**，对配置设置进行任何更改。 
+8. 你将返回到**自动理解内容**页面。 在此页面中，可选择**管理**，对配置设置进行任何更改。 
 
 ## <a name="assign-licenses"></a>分配许可证
 

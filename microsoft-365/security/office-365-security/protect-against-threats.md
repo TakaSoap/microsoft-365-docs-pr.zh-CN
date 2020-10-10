@@ -1,5 +1,5 @@
 ---
-title: 保护免遭威胁侵害
+title: 抵御威胁
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,16 +16,17 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: 管理员可以了解 Microsoft 365 中的威胁防护，并配置如何将其用于组织。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326551"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413586"
 ---
-# <a name="protect-against-threats"></a>保护免遭威胁侵害
+# <a name="protect-against-threats"></a>抵御威胁
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,7 +36,7 @@ ms.locfileid: "48326551"
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 ### <a name="subscriptions"></a>订阅
 
@@ -206,7 +207,7 @@ ms.locfileid: "48326551"
 
 5. 查看您的设置，然后单击 " **完成**"。
 
-若要了解详细信息，请参阅 [设置安全链接策略](set-up-atp-safe-links-policies.md)。
+若要了解详细信息，请参阅[设置“安全链接”策略](set-up-atp-safe-links-policies.md)。
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-验证 SharePoint、OneDrive 和 Microsoft 团队的 ATP 是否已启用
 

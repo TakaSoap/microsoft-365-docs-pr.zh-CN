@@ -6,17 +6,20 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: MET150
-localization_priority: Priority
+search.appverid: ''
+localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: 了解 SharePoint Syntex 中的图像标记
-ms.openlocfilehash: 7b41422633934593de881bdb0c04f0a845a3fe5f
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
-ms.translationtype: HT
+ms.openlocfilehash: c6d7513db2fd6aadabe5d813f3b49073a8f8c933
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321249"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413730"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex 中的图像标记
+
+（即将推出）
 
 借助 SharePoint Syntex 中的图像标记，用户可以通过搜索图像标记来查找图像，并基于图像标记创建工作流。 默认情况下，SharePoint 和 OneDrive 的基本图像标记处于启用状态。 将自动扫描已上载到任一位置的图像，并从 37 个基本标记的列表中应用标记（如果可用）。 用户可通过搜索图像标记查找图像。
 

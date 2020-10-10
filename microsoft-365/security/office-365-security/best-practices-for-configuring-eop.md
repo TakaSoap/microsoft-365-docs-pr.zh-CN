@@ -5,19 +5,18 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 请遵循这些有关独立 Exchange Online Protection (EOP) 的最佳实践建议，以便自己设置成功并避免常见配置错误。
-ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203559"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414030"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>配置独立 EOP 的最佳实践
 
@@ -46,24 +45,24 @@ ms.locfileid: "48203559"
 
 |安全功能名称|标准|全|评论|
 |---|---|---|---|
-|[设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
+|[设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 在 Office 365 中验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[使用 DMARC 验证 Office 365 中的电子邮件](use-dmarc-to-validate-email.md)|是|是|对 `action=quarantine` 标准和 `action=reject` 进行严格使用。|
 |部署 [报告邮件加载项](enable-the-report-message-add-in.md) 以改进对可疑电子邮件的最终用户报告|是|是||
 |安排恶意软件和垃圾邮件报告|是|是||
 |自动转发到外部域应为 "允许" 或 "受监视"|是|是||
 |应启用统一审核|是|是||
-|[IMAP 到邮箱的连接](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|禁用|禁用||
-|[到邮箱的 POP 连接](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|禁用|禁用||
-|已通过身份验证的 SMTP 提交|禁用|禁用|已通过身份验证的客户端 SMTP 提交 (POP3 和 IMAP4 客户端在发送电子邮件时，也称为客户端 SMTP 提交或 SMTP 身份验证) 。|
-|到邮箱的 EWS 连接|禁用|禁用||
-|[PowerShell 连接](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|禁用|禁用|适用于邮箱用户或邮件用户 (由) [用户](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet 返回的用户对象。|
+|[IMAP 到邮箱的连接](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|[到邮箱的 POP 连接](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabled|Disabled||
+|已通过身份验证的 SMTP 提交|Disabled|Disabled|已通过身份验证的客户端 SMTP 提交 (POP3 和 IMAP4 客户端在发送电子邮件时，也称为客户端 SMTP 提交或 SMTP 身份验证) 。|
+|到邮箱的 EWS 连接|Disabled|Disabled||
+|[PowerShell 连接](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabled|Disabled|适用于邮箱用户或邮件用户 (由) [用户](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet 返回的用户对象。|
 |使用 [欺骗智能](learn-about-spoof-intelligence.md) 将发件人添加到允许列表中|是|是||
 |[基于目录的边缘阻止 (DBEB) ](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已启用|已启用|域类型 = 权威|
 |[为所有管理员帐户设置多重身份验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已启用|已启用||
 |
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 使用管理中心中的报告解决一般问题和趋势。 使用消息跟踪工具来查找有关邮件的单点数据。 有关报告的详细信息，请参阅 [Exchange Online Protection 中的报告和邮件跟踪](reporting-and-message-trace-in-exchange-online-protection.md)。 有关详细信息，请参阅 [安全性 & 合规性中心中的邮件跟踪中](message-trace-scc.md)的邮件跟踪工具。
 

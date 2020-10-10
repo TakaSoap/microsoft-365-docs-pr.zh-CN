@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328079"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414258"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -47,9 +48,9 @@ ms.locfileid: "48328079"
 - [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (ATP 计划2仅) 
 - ... [调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>对威胁资源管理器和实时检测的改进体验
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>体验资源管理器和 Real-Time 检测的改进
 
-在改进搜寻过程的过程中，我们已经对威胁浏览器和实时检测进行了一些更新。 这些是 "体验" 改进，重点是让求职体验更一致。 下面概述了这些更改：
+在改进搜寻过程的过程中，我们已对威胁资源管理器和 Real-Time 检测进行了一些更新。 这些是 "体验" 改进，重点是让求职体验更一致。 下面概述了这些更改：
 
 - [时区改进](#timezone-improvements)
 - [刷新过程中的更新](#update-in-the-refresh-process)
@@ -103,7 +104,7 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 - AAD 或 EXO-安全管理员： All
 - AAD 或 EXO-安全读者： All
 - 仅限 EXO-传输规则： All
-- 仅限 EXO-仅查看配置：全部
+- 仅限 EXO-View-Only 配置： All
 
 在电子邮件网格、详细信息浮出控件和导出的 CSV 中，Etr 显示如下所示的名称/GUID。
 

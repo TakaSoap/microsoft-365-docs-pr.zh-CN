@@ -9,15 +9,18 @@ audience: ITPro
 ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid:
+search.appverid: ''
+ms.collection:
+- M365-security-compliance
+- m365-initiative-defender-office365
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 中确定仿冒邮件的原因以及在将来阻止更多网络钓鱼邮件的原因。
-ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: ca1030141dd18797c7672b95ccae60b86fe9b7f2
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328055"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414150"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
@@ -72,7 +75,7 @@ ms.locfileid: "48328055"
 
   有关配置说明，请参阅：
   
-  - [设置 SPF 以帮助防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
 
