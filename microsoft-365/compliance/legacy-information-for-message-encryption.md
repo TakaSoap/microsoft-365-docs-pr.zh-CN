@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何将旧版文件转换为 Office 365 邮件加密 (组织的 OME) 。
-ms.openlocfilehash: 06c0e41d6c3b7cbf7d06bf6aae82742211bd2542
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306501"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408990"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 邮件加密的旧信息
 
@@ -61,13 +61,108 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理 (Azure RMS) 构建
   
 ## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-the-new-ome-capabilities"></a>为不使用新 OME 功能的 Office 365 邮件加密定义邮件流规则
 
-若要在不使用新功能的情况下启用 Office 365 邮件加密，Exchange Online 和 Exchange Online Protection 管理员将定义 Exchange 邮件流规则。 这些规则确定应在哪些条件下加密电子邮件，以及删除邮件加密的条件。 为规则设置加密操作后，与规则条件匹配的任何邮件在发送之前都会被加密。
-  
+若要在不使用新功能的情况下启用 Office 365 邮件加密，Exchange Online 和 Exchange Online Protection 管理员将定义 Exchange 邮件流规则。 这些规则确定应在哪些条件下加密电子邮件，以及删除邮件加密的条件。 为规则设置加密操作后，该服务将对符合规则条件的任何邮件执行操作，然后再发送邮件。
+
 邮件流规则是灵活的，允许您将条件组合在一起，以便您可以在单个规则中满足特定的安全要求。 例如，您可以创建一个规则，对包含特定关键字且发送给外部收件人的所有邮件进行加密。 Office 365 邮件加密还对加密邮件的收件人的回复进行加密；您可以创建一个规则来对这些回复进行解密，为您的电子邮件用户提供方便。 这样，组织中的用户无需登录到加密门户即可查看答复。
   
 有关如何创建 Exchange 邮件流规则的详细信息，请参阅 [定义 Office 365 邮件加密的规则](define-mail-flow-rules-to-encrypt-email.md)。
   
-## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>发送、查看和回复加密电子邮件
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 EAC 创建邮件流规则，以在不使用新的 OME 功能的情况下加密电子邮件
+
+1. 在 web 浏览器中，使用已被授予全局管理员权限的工作或学校帐户， [登录到 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
+
+2. 选择 " **管理** " 磁贴。
+
+3. 在 Microsoft 365 管理中心，选择 " **管理中心**" " \> **Exchange**"。
+
+4. 在 EAC 中，转到 " **邮件流** \> **规则** "，然后选择 " **新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+
+5. 在 " **名称**" 中，键入规则的名称，例如 "为 DrToniRamos@hotmail.com 加密邮件"。
+
+6. 在“在以下情况应用此规则”**** 中，选择一个条件，并根据需要输入值。例如，若要加密发送到 DrToniRamos@hotmail.com 的邮件：
+
+   1. 在“在以下情况应用此规则”**** 中，选择“收件人为”****。
+
+   2. 从联系人列表中选择一个现有名称，或在“检查名称”**** 框中键入一个新的电子邮件地址。
+
+      - 若要选择一个现有名称，可以从列表中进行选择，然后单击“确定”****。
+
+      - 若要输入新名称，请在 " **检查名称** " 框中键入电子邮件地址，然后选择 " **检查名称** \> **" "确定"**。
+
+7. 若要添加更多条件，请选择 " **更多选项** "，然后选择 " **添加条件** "，然后从列表中选择。
+
+   例如，若要仅在收件人在组织外部时应用规则，请选择 "**添加条件**"，然后选择 "在组织外部 **/内部的收件人是外部/内部** \> **Outside the organization** \> **"**。
+
+8. 若要在不使用新的 OME 功能的情况下启用加密，请在 **执行以下操作**中，选择 **"修改邮件安全性** \> **应用以前版本的 OME**"，然后选择 " **保存**"。
+
+   如果您收到未启用 IRM 许可的错误，则表明您没有使用旧版 OME。
+
+9.  (可选) 选择 " **添加操作** " 以指定另一个操作。
+
+### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 创建邮件流规则，以在不提供新 OME 功能的情况下加密电子邮件
+
+1. 连接到 Exchange Online PowerShell。 有关详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+
+2. 使用 **new-transportrule** cmdlet 创建一个规则，并将 _ApplyOME_ 参数设置为 `$true` 。
+
+   此示例要求发送到 DrToniRamos@hotmail.com 的所有电子邮件都必须加密。
+
+   ```powershell
+   New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
+   ```
+
+   其中：
+
+   - 新规则的唯一名称是 "加密 Dr Toni Ramos" 的规则。
+   - _SentTo_参数指定由姓名、电子邮件地址、可分辨名称等 )  (标识的邮件收件人。 在此示例中，收件人由电子邮件地址 "DrToniRamos@hotmail.com" 标识。
+   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，收件人的邮箱在 hotmail 中，而不是组织的一部分，因此使用了该值 `NotInOrganization` 。
+
+   有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
+
+### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>从加密的电子邮件答复中删除加密，而不具有新的 OME 功能
+
+您的电子邮件用户发送加密邮件后，这些邮件的收件人可以使用加密答复回复。 您可以创建邮件流规则以自动删除答复的加密，以便组织中的电子邮件用户无需登录到加密门户即可查看加密门户。 您可以使用 EAC 或 Windows PowerShell cmdlet 来定义这些规则。 您可以解密从组织内部发送的邮件，或对从组织内部发送的邮件进行答复的邮件。 无法对源自组织外部的加密邮件进行解密。
+
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 EAC 创建一个规则，用于从加密的电子邮件答复中删除加密，而不使用新的 OME 功能
+
+1. 在 web 浏览器中，使用已被授予管理员权限的工作或学校帐户， [登录到 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
+
+2. 选择 " **管理** " 磁贴。
+
+3. 在 Microsoft 365 管理中心，选择 " **管理中心**" " \> **Exchange**"。
+
+4. 在 EAC 中，转到 " **邮件流** \> **规则** "，然后选择 " **新建**" ![ 图标 ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **创建新规则**。 有关使用 EAC 的详细信息，请参阅 exchange [Online 中的 exchange 管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+
+5. 在 " **名称**" 中，键入规则的名称，例如 "从传入邮件中删除加密"。
+
+6. 在 " **应用此规则** " 中，如果选择应从邮件中删除加密的条件，例如 **收件人位于** \> **组织内部**。
+
+7. 在 **"执行以下操作**" 中，选择 " **修改邮件安全性** \> **" 删除 OME 的早期版本**。
+
+8. 选择“**保存**”。
+
+#### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>使用 Exchange Online PowerShell 创建一个规则，以从加密的电子邮件答复中删除加密，而不使用新的 OME 功能
+
+1. 连接到 Exchange Online PowerShell。 有关详细信息，请参阅[使用远程 PowerShell 连接到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+
+2. 使用 **new-transportrule** cmdlet 创建一个规则，并将 _RemoveOME_ 参数设置为 `$true` 。
+
+   本示例将从发送给组织中的收件人的所有邮件中删除加密。
+
+   ```powershell
+   New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
+   ```
+
+   其中：
+
+   - 新规则的唯一名称是 "从传入邮件中删除加密"。
+   - _SentToScope_参数指定邮件收件人的位置。 在此示例中，使用了值 `InOrganization` 值，该值指示以下内容之一：
+     - 收件人是组织中的邮箱、邮件用户、组或已启用邮件的公用文件夹。
+     - 收件人的电子邮件地址位于您的组织中配置为权威域或内部中继域的接受域中， _并且_ 邮件是通过经过身份验证的连接发送或接收的。
+
+有关语法和参数的详细信息，请参阅 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
+
+## <a name="sending-viewing-and-replying-to-messages-encrypted-without-the-new-capabilities"></a>发送、查看和回复不带新功能加密的邮件
 
 使用 Office 365 邮件加密时，电子邮件将根据管理员定义的规则自动加密。 携带加密邮件的电子邮件到达收件人的收件箱，并附带一个 HTML 文件。
   
@@ -76,7 +171,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理 (Azure RMS) 构建
 ## <a name="customize-encrypted-messages-with-office-365-message-encryption"></a>使用 Office 365 邮件加密自定义加密邮件
 
 作为 Exchange Online 和 Exchange Online Protection 管理员，您可以自定义加密邮件。 例如，您可以添加公司的品牌和徽标，指定简介，并在加密邮件中以及在收件人查看加密邮件的门户中添加免责声明文本。 您可以使用 Windows PowerShell cmdlet 为加密的电子邮件的收件人自定义视觉体验的以下方面：
-  
+
 - 包含加密邮件的电子邮件介绍性文本
 
 - 包含加密邮件的电子邮件免责声明文本
@@ -91,26 +186,26 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理 (Azure RMS) 构建
   
 ![查看加密消息页面的示例](../media/TA-OME-3attachment2.jpg)
   
- **自定义加密电子邮件以及与组织品牌的加密门户**
+**自定义加密电子邮件以及与组织品牌的加密门户**
   
 1. 使用远程 PowerShell 连接到 Exchange Online，如 [connect To Exchange Online Using Remote powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中所述。
 
-2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 或使用下表进行指南。
+2. 按照如下所述使用 Set-OMEConfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b) 或使用下表获取指南。
 
    **加密自定义选项**
 
-|**自定义加密体验的这一功能**|**使用这些 Windows PowerShell 命令**|
+**自定义加密体验的这一功能**|**使用这些 Windows PowerShell 命令**|
 |:-----|:-----|
 |加密电子邮件随附的默认文本  <br/> 默认文本显示在说明的上方，以查看加密邮件  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **示例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
 |包含加密邮件的电子邮件中的免责声明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **示例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |显示在加密邮件查看门户顶部的文本  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **示例：** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |徽标  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **示例：** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支持的文件格式：.png、.jpg、.bmp 或 .tiff  <br/> 徽标文件的最佳大小：小于 40 KB  <br/> 徽标图像的最佳大小：170x70 像素  <br/> |
 
- **从加密电子邮件和加密门户中删除品牌自定义**
+**从加密电子邮件和加密门户中删除品牌自定义**
   
 1. 使用远程 PowerShell 连接到 Exchange Online，如 [connect To Exchange Online Using Remote powershell](https://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx)中所述。
 
-2. 按照如下所述使用 Set-omeconfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为一个空字符串  `""` 。 对于所有图像值（如 "徽标"），请将值设置为  `"$null"` 。
+2. 按照如下所述使用 Set-OMEConfiguration cmdlet： [set-omeconfiguration](https://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b)。 若要从 DisclaimerText、EmailText 和 PortalText 值中删除您的组织的标记自定义项，请将该值设置为一个空字符串  `""` 。 对于所有图像值（如 "徽标"），请将值设置为  `"$null"` 。
 
    **加密自定义选项**
 
@@ -155,7 +250,7 @@ Office 365 邮件加密是基于 Microsoft Azure 权限管理 (Azure RMS) 构建
   
  **问：能否使用我的品牌自定义加密电子邮件？**
   
-正确。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅 [将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
+是的。 您可以使用 Windows PowerShell cmdlet 自定义在加密的电子邮件顶部显示的默认文本、免责声明文本以及要用于电子邮件和加密门户的徽标。 有关详细信息，请参阅 [将品牌添加到加密邮件](add-your-organization-brand-to-encrypted-messages.md)。
   
  **问：该服务是否要求我的组织中的每个用户都有许可证？**
   
@@ -195,7 +290,7 @@ Office 365 邮件加密使用 Rights Management Services (RMS) 作为其加密�
 
 有关详细信息，请参阅 [AD RMS 加密模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
   
- **问：为什么有些加密邮件说它们** 来自 Office365@messaging.microsoft.com？
+**问：为什么有些加密邮件说它们** 来自 Office365@messaging.microsoft.com？
   
 当加密回复从加密门户或通过 OME 查看器应用发送时，发送电子邮件地址将设为 Office365@messaging.microsoft.com，因为该加密邮件是通过 Microsoft 终结点发送的。这有助于防止加密邮件被标记为垃圾邮件。电子邮件上显示的名称和加密门户内的地址不会因为这个标签而更改。此外，该标签仅适用于通过门户而不是通过任何其他电子邮件客户端发送的邮件。
   
@@ -205,7 +300,7 @@ Office 365 邮件加密使用 Rights Management Services (RMS) 作为其加密�
   
  **增长率.我是否需要在组织的防火墙中打开任何 Url、IP 地址或端口以支持 Office 365 邮件加密？**
   
-正确。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅 [Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
+是的。 您必须将 Exchange Online 的 Url 添加到组织的允许列表，以便为通过 Office 365 邮件加密加密的邮件启用身份验证。 有关 Exchange Online Url 的列表，请参阅 [Microsoft 365 url 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
   
  **增长率.有多少个收件人可以向其发送 Microsoft 365 加密邮件？**
   
@@ -223,7 +318,7 @@ Office 365 邮件加密使用 Rights Management Services (RMS) 作为其加密�
   
 [Office 365 邮件加密门户隐私声明](https://privacy.microsoft.com/privacystatement)提供了有关 Microsoft 在你的私人信息方面所做的操作和不会执行的操作的详细信息。
 
-## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>如果我在请求一次性处理后未收到此代码，我该怎么办？
+**增长率.如果我在请求一次性处理后未收到此代码，我该怎么办？**
 
 首先，检查电子邮件客户端中的 "垃圾邮件" 或 "垃圾邮件" 文件夹。 您的组织的 DKIM 和 DMARC 设置可能会导致这些电子邮件最终被筛选为垃圾邮件。
 

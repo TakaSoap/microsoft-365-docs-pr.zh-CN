@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为将数据从 Globanet Symphony 导入和存档到 Microsoft 365 中。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: fd44575aa34ea6f6180c5eabdbb286a3b8380d33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ec9b7051b06242372c9c0e04f41bf2da4a6e07d5
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196729"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408643"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data"></a>设置连接器以存档 Symphony 数据
 
@@ -71,7 +71,7 @@ ms.locfileid: "48196729"
 
 1. 在 "将 **外部用户映射到 Microsoft 365 用户** " 页上，启用自动用户映射。 Symphony 项目包含一个名为 *Email*的属性，其中包含组织中的用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户相关联，则会将这些项目导入该用户的邮箱中。
 
-2. 在 " **管理员同意** " 页面上，单击 " **提供同意** " 按钮。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
+2. 在 " **管理员同意** " 页上，单击 " **提供同意**"。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
 
    您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要提供管理员同意，必须使用 Microsoft 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 

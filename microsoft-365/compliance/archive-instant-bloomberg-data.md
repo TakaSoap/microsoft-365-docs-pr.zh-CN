@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用数据连接器以将来自即时 Bloomberg 聊天工具的数据导入和存档到 Microsoft 365。
-ms.openlocfilehash: 4df1a67ae9e372efe5c6e8c654f1a6821b5cb30d
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 3a00e74d138810c4f9bc2ca851696a8c39b9f082
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358234"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408752"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
 使用 Microsoft 365 合规性中心的本机连接器从 " [即时 Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) 协作" 工具导入和存档金融 services 聊天数据。 设置和配置连接器后，它会连接到组织的 Bloomberg 安全 FTP 站点 (SFTP) 每天一次，将聊天消息的内容转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的邮箱中。
 
-在将即时 Bloomberg 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用于即时 Bloomberg 数据。 例如，您可以使用内容搜索来搜索即时 Bloomberg 聊天邮件，或将包含即时 Bloomberg 数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用即时 Bloomberg 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
+将即时 Bloomberg 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核、通信合规性和 Microsoft 365 保留策略）应用于即时 Bloomberg 数据。 例如，您可以使用内容搜索来搜索即时 Bloomberg 聊天邮件，或将包含即时 Bloomberg 数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用即时 Bloomberg 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>存档即时 Bloomberg 数据概述
 

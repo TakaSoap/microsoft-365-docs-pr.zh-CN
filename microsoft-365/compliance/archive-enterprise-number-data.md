@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为从 TeleMessage 企业数字存档器中导入和存档 SMS 和 MMS 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 1152c5e1d658e33e3056873d2230f6f94e58adc1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7609d61f70a49da4015cfc68b185fb10be0266c8
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200159"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408792"
 ---
 # <a name="set-up-a-connector-to-archive-enterprise-number-data"></a>设置连接器以存档企业数字数据
 
 使用 Microsoft 365 合规性中心中的 TeleMessage 连接器导入和存档短信服务 (SMS) 和多媒体邮件服务 (MMS) 邮件、聊天消息、语音呼叫录制和来自企业编号存档器的语音呼叫日志。 设置和配置连接器后，它每天连接到组织的 TeleMessage 帐户，并在 Microsoft 365 中将使用 TeleMessage 企业数字存档器的员工的移动通信数据导入到邮箱中。
 
-在 TeleMessage 企业编号存档器连接器数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、就地存档、审核、通信合规性和 Microsoft 365 保留策略）应用到企业编号存档器数据。 例如，可以使用内容搜索来搜索 TeleMessage Enterprise Number 存档程序的 SMS、MMS 和语音呼叫，或将包含企业编号存档器连接器数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用企业编号存档器连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
+在 TeleMessage 企业编号存档器连接器数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索、In-Place 存档、审核、通信合规性和 Microsoft 365 保留策略）应用到企业编号存档器数据。 例如，可以使用内容搜索来搜索 TeleMessage Enterprise Number 存档程序的 SMS、MMS 和语音呼叫，或将包含企业编号存档器连接器数据的邮箱与高级电子数据展示事例中的管理员关联起来。 使用企业编号存档器连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="overview-of-archiving-enterprise-number-data"></a>存档企业数字数据概述
 
@@ -35,7 +35,7 @@ ms.locfileid: "48200159"
 
 2. 您在 Microsoft 365 合规性中心中创建的企业编号存档连接器将每天连接到 TeleMessage 网站，并将电子邮件从以前的24小时传输到 Microsoft 云中的安全 Azure 存储区域。
 
-3. 连接器将移动通信项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建名为 "Enterprise Number 存档器" 的新文件夹，并将这些项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值进行映射。 每封电子邮件都包含此属性，该属性填入电子邮件的每个参与者的电子邮件地址。 除了使用 *用户电子邮件地址* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码以及每个用户对应的 Microsoft 365 邮箱地址。 如果为每个电子邮件项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的移动电话号码相对应的有效 Microsoft 365 用户，连接器将使用电子邮件项目的用户电子邮件地址属性。 如果连接器在自定义映射文件或电子邮件项目的 *用户电子邮件地址* 属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
+3. 连接器将移动通信项目导入到特定用户的邮箱。 在特定用户的邮箱中创建名为 Enterprise Number 存档器的新文件夹，并将这些项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值进行映射。 每封电子邮件都包含此属性，该属性填入电子邮件的每个参与者的电子邮件地址。 除了使用 *用户电子邮件地址* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码以及每个用户对应的 Microsoft 365 邮箱地址。 如果为每个电子邮件项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的移动电话号码相对应的有效 Microsoft 365 用户，连接器将使用电子邮件项目的用户电子邮件地址属性。 如果连接器在自定义映射文件或电子邮件项目的 *用户电子邮件地址* 属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
 ## <a name="before-you-begin"></a>准备工作
 

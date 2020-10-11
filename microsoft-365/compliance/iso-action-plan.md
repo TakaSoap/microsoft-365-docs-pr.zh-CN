@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6990b93bba7456ecceea5bfa52be55dc29c2cddc
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 88986168a66a31eda49c3e22d12e1dae6a3446ed
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202253"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398655"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -59,7 +59,7 @@ ISO/IEC 27001 是实现信息安全管理系统 (ISMS) 的国际标准。ISMS �
 |||
 |:-----|:-----|
 |**区域**|**任务**|
-|使用 Microsoft 365 安全功能来控制对环境的访问，并根据定义的标准操作程序 (SOP) 保护组织信息和资产。|• 通过实现[标识和设备访问策略](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)（包括为所有用户帐户启用多重身份验证 (MFA)，以及为所有应用启用新式验证），保护管理员和最终用户帐户。<br>• 建立[强密码策略](https://www.microsoft.com/research/publication/password-guidance)来管理和保护用户帐户凭据。<br>• 设置 [Office 365 邮件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，以帮助最终用户在通过电子邮件发送敏感数据时遵守组织的 SOP。<br>•    将 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署到所有桌面，以防范恶意代码，并实施数据泄露防护和响应措施。<br>• 配置、测试和部署[数据丢失防护 (DLP) 策略](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>• 通过配置[策略提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，在电子邮件发件人发送违规邮件之前，自动通知他们可能违反了策略之一。 可将策略提示配置为，在 Outlook、Outlook 网页版和适用于设备的 OWA 中显示简要说明，以提供邮件创建期间可能的策略违反信息。<br>• 实现 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击途径，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
+|使用 Microsoft 365 安全功能来控制对环境的访问，并根据定义的标准操作程序 (SOP) 保护组织信息和资产。|• 通过实现[标识和设备访问策略](../security/office-365-security/microsoft-365-policies-configurations.md)（包括为所有用户帐户启用多重身份验证 (MFA)，以及为所有应用启用新式验证），保护管理员和最终用户帐户。<br>•    建立[强密码策略](https://www.microsoft.com/research/publication/password-guidance)来管理和保护用户帐户凭据。<br>• 设置 [Office 365 邮件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，以帮助最终用户在通过电子邮件发送敏感数据时遵守组织的 SOP。<br>•    将 [Windows Defender 高级威胁防护 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署到所有桌面，以防范恶意代码，并实施数据泄露防护和响应措施。<br>• 配置、测试和部署[数据丢失防护 (DLP) 策略](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>• 通过配置[策略提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，在电子邮件发件人发送违规邮件之前，自动通知他们可能违反了策略之一。 可将策略提示配置为，在 Outlook、Outlook 网页版和适用于设备的 OWA 中显示简要说明，以提供邮件创建期间可能的策略违反信息。<br>• 实现 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击途径，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
 
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 天后 — 持续安全、数据管理和报告

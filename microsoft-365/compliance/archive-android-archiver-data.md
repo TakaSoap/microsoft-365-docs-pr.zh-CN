@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器以导入和存档 Android 移动电话中的 SMS、MMS 和语音呼叫。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 35ff69ec3b8f0af5ed86350862bb7b0917a98909
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 920d4eb0636d867934c275e4a4d4549515bf32ce
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200257"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408930"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>设置连接器以存档 Android 移动数据
 
@@ -37,7 +37,7 @@ ms.locfileid: "48200257"
 
 3. 您在 Microsoft 365 合规性中心中创建的 Android 存档连接器每天连接到 TeleMessage 网站，并将以前的24小时内的 Android 数据传输到 Microsoft 云中的安全 Azure 存储位置。 连接器还将 Android 数据转换为电子邮件格式。
 
-4. 连接器将移动通信项目导入到特定用户的邮箱。 将在特定用户的邮箱中创建一个名为 "Android 存档" 的新文件夹，并将这些项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值进行映射。 每封电子邮件都包含此属性，该属性填入电子邮件的每个参与者的电子邮件地址。 除了使用 *用户电子邮件地址* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码以及每个用户对应的 Microsoft 365 邮箱地址。 如果为每个电子邮件项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的移动电话号码相对应的有效 Microsoft 365 用户，连接器将使用电子邮件项目的用户电子邮件地址属性。 如果连接器在自定义映射文件或电子邮件项目的 *用户电子邮件地址* 属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
+4. 连接器将移动通信项目导入到特定用户的邮箱。 在特定用户的邮箱中创建名为 Android 存档的新文件夹，并将项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值进行映射。 每封电子邮件都包含此属性，该属性填入电子邮件的每个参与者的电子邮件地址。 除了使用 *用户电子邮件地址* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件应包含用户的移动电话号码以及每个用户对应的 Microsoft 365 邮箱地址。 如果为每个电子邮件项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的移动电话号码相对应的有效 Microsoft 365 用户，连接器将使用电子邮件项目的用户电子邮件地址属性。 如果连接器在自定义映射文件或电子邮件项目的 *用户电子邮件地址* 属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
 ## <a name="before-you-begin"></a>准备工作
 

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为将 .EML 数据从 Globanet 导入并存档到 Microsoft 365。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3784f8b77949069a1e566a2427e978942c76d5fc
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200215"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408782"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data"></a>设置连接器以存档 .EML 数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将 .EML 数据导入到 Microsoft 365 组织中的用户邮箱并将其存档。 .EML 是保存到文件的电子邮件的文件扩展名。 连接器将项的内容从源格式转换为电子邮件格式，然后将该项目导入到用户邮箱中。
 
-在将 .EML 邮件存储在用户邮箱中之后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签，以及通信合规性。 使用您在 Microsoft 365 中导入和存档数据的 .EML 连接器可帮助您的组织遵守政府和法规策略。
+在将 .EML 邮件存储在用户邮箱中之后，可以应用 Microsoft 365 合规性功能，如诉讼保留、电子数据展示、保留策略和保留标签。 使用您在 Microsoft 365 中导入和存档数据的 .EML 连接器可帮助您的组织遵守政府和法规策略。
 
 ## <a name="overview-of-archiving-eml-data"></a>存档 .EML 数据概述
 
@@ -71,7 +71,7 @@ ms.locfileid: "48200215"
 
 1. 在 "将 **外部用户映射到 Microsoft 365 用户** " 页上，启用自动用户映射。 .EML 源项目包含一个名为 *Email*的属性，其中包含组织中的用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户相关联，则会将 .EML 项目导入该用户的邮箱。
 
-2. 在 " **管理员同意** " 页面上，单击 " **提供同意** " 按钮。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
+2. 在 " **管理员同意** " 页上，单击 " **提供同意**"。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
 
    您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要提供管理员同意，必须使用 Microsoft 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 

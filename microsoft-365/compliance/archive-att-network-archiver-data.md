@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器，以在&T 移动网络中导入和存档 SMS 和 MMS 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: 87974fd18f0e0a7c824e81231418ccf1c838b636
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200247"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408970"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>在&T SMS/MMS 数据上设置要存档的连接器
 
@@ -37,7 +37,7 @@ ms.locfileid: "48200247"
 
 3. 您在 Microsoft 365 合规性中心中创建的 AT&T 网络连接器每天连接到 TeleMessage 网站，并将短信和 MMS 邮件从以前的24小时传输到 Microsoft 云中的安全 Azure 存储位置。 连接器还将短信和 MMS 邮件的内容转换为电子邮件格式。
 
-4. 连接器将移动通信项目导入到特定用户的邮箱。 在用户的邮箱中创建一个名为 **&T SMS/MMS 网络存档** 器的新文件夹，然后将这些项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值执行此映射。 每个短信和 MMS 邮件都包含此属性，该属性由邮件的每个参与者的电子邮件地址填充。
+4. 连接器将移动通信项目导入到特定用户的邮箱。 在用户的邮箱中创建一个名为 **&T SMS/MMS 网络存档** 器的新文件夹，并将这些项目导入其中。 连接器通过使用 *用户的电子邮件地址* 属性的值执行此映射。 每个短信和 MMS 邮件都包含此属性，该属性由邮件的每个参与者的电子邮件地址填充。
  
    除了使用 *用户电子邮件地址* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 此映射文件包含组织中用户的移动电话号码和相应的 Microsoft 365 电子邮件地址。 如果为每个电子邮件项目启用自动用户映射和自定义映射，则连接器将首先查看自定义映射文件。 如果找不到与移动电话号码对应的有效 Microsoft 365 用户，连接器将使用其尝试导入的项目的电子邮件地址属性中的值。 如果连接器在自定义映射文件或电子邮件地址属性的电子邮件地址属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
