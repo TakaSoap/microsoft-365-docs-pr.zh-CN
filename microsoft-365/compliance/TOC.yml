@@ -324,22 +324,32 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet 数据连接器
           items:
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX 连接
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: 可宽延时间
+            - name: 可宽延时间电子数据展示
               href: archive-slack-data.md
             - name: Symphony
               href: archive-symphony-data.md
             - name: 文本分隔
               href: archive-text-delimited-data.md
+            - name: 网页
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Workplace from Facebook
               href: archive-workplacefromfacebook-data.md
+            - name: XSLT/XML
+              href: archive-xslt-xml-data.md
             - name: Zoom 会议
               href: archive-zoommeetings-data.md
         - name: TeleMessage 数据连接器
@@ -824,8 +834,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: 在审核日志中使用共享审核
           href: use-sharing-auditing.md
-        - name: 在审核日志中搜索电子数据展示活动
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 管理活动 API
+          items:
+            - name: Office 365 管理活动 API 参考
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
+            - name: Office 365 管理活动 API 架构
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
+            - name: Office 365 管理活动 API 常见问题和疑难解答
+              href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: 邮箱审核
       href: enable-mailbox-auditing.md
     - name: 高级审核
