@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196617"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408622"
 ---
-# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问 
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -68,7 +68,6 @@ ms.locfileid: "48196617"
 
 ![用于加密的敏感度标签选项](../media/encrytion-options-sensitivity-label.png)
 
-
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>应用标签后，现有加密会发生什么情况
 
 如果向未加密的内容应用敏感度标签，则你可选择的加密选项的结果一目了然。 例如，如果加密设置为“**无**”，则内容保持在未加密状态。
@@ -88,6 +87,7 @@ ms.locfileid: "48196617"
 |**具有管理员定义的权限的标签**|删除原有加密|应用新的标签加密|删除原有加密|
 
 请注意，如果应用了新的标签加密或删除了原有加密，则仅在应用标签的用户具有支持此操作的使用权限或角色时才会发生此情况：
+
 - “导出”或“完全控制”[使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)。
 - [权限管理颁发者/权限管理所有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)或[超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)角色。
 
@@ -99,7 +99,7 @@ ms.locfileid: "48196617"
 
 通过任何方式加密电子邮件时，附加到该电子邮件的所有未加密的 Office 文档都将自动继承相同的加密设置。
 
-已加密且随后添加为附件的文档始终保留其原有加密。 
+已加密且随后添加为附件的文档始终保留其原有加密。
 
 ## <a name="configure-encryption-settings"></a>配置加密设置
 
@@ -112,10 +112,9 @@ ms.locfileid: "48196617"
 
 或者，如果你有一个名为“**商业合同**”的敏感度标签，而你所在组织的工作流要员工临时与不同人员协作处理此内容，则你可能需要允许用户在分配此标签时决定由谁获得权限。 这种灵活性都能帮助你的用户保持高效，同时减少管理员要更新或新建敏感度标签来应对特定场景的请求。
 
-选择是要立即分配权限还是允许用户分配权限： 
+选择是要立即分配权限还是允许用户分配权限：
 
 ![用于添加用户或管理员定义的权限的选项](../media/sensitivity-label-user-or-admin-defined-permissions.png)
-
 
 ## <a name="assign-permissions-now"></a>立即分配权限
 
@@ -162,7 +161,7 @@ ms.locfileid: "48196617"
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
 - 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
-    
+
     > [!NOTE]
     > 如果从使用 Azure AD 的组织中指定一个域，则无法将访问权限局限于该特定域。 转而对于拥有你指定的域名的租户来说，会自动包含 Azure AD 中已经过验证的所有域。
 
@@ -175,6 +174,7 @@ ms.locfileid: "48196617"
 此设置不会限制谁可访问标签加密的内容，但仍会加密内容并向你提供用来限制内容使用方式（权限）和访问方式（过期和脱机访问）的选项。 但是，打开加密内容的应用程序必须能够支持正在使用的身份验证。 由此，联合社交提供商（如 Google）和一次性密码身份验证仅适用于电子邮件，且仅在你使用 Exchange Online 时才适用。 Microsoft 帐户可与 Office 365 应用和 [Azure 信息保护查看器](https://portal.azurerms.com/#/download)一起使用。
 
 “所有经过身份验证的用户”设置的一些典型场景：
+
 - 你不在乎谁会查看内容，但你想要限制内容使用方式。 例如，你不希望内容遭到编辑、复制或打印。
 - 你不需要限制谁有权访问内容，但你想要能够确定谁可打开内容。
 - 你要求内容必须在静态和传输中经过加密，但不要求访问权限控制。
@@ -223,10 +223,11 @@ ms.locfileid: "48196617"
 
 - 在 Outlook 中，用户可为其所选收件人选择与“[请勿转发](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)”选项等效的限制。
 
-- 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。 
+- 在 Word、PowerPoint 和 Excel 中，系统会提示用户为特定用户、组或组织选择他们自己的权限。
+
     > [!NOTE]
     > Azure 信息保护统一标记客户端支持对 Word、PowerPoint 和 Excel 使用此选项。 对于使用内置标记的应用，[检查哪些应用支持它](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
-    > 
+    >
     > 如果已选中此选项，但用户的应用不支持这一选项，则该标签不会向用户显示，或者会显示标签以确保一致性，但无法随说明消息一起应用到用户。
 
 在这些选择受到支持时，请使用以下标签确定用户何时回看到敏感度标签：
@@ -272,7 +273,6 @@ ms.locfileid: "48196617"
 
 - MacOS：“**查看**”选项卡 >“**保护**” > “**权限**” > “**受限访问**”
 
-
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
 
 对于后面的每个示例，请在[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)时通过“**加密**”页面进行配置。 首先，请确保“**加密**”设置为“**应用**”：
@@ -281,18 +281,17 @@ ms.locfileid: "48196617"
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>示例 1：应用“请勿转发”以将加密的电子邮件发送至 Gmail 帐户的标签
 
-此标签仅显示 Outlook 和 Outlook 网页版，且你必须使用 Exchange Online。 在用户需要向使用 Gmail 帐户（或你组织外部的任何其他电子邮件帐户）的人员发送加密电子邮件时，指示这些用户选择此标签。 
+此标签仅显示 Outlook 和 Outlook 网页版，且你必须使用 Exchange Online。 在用户需要向使用 Gmail 帐户（或你组织外部的任何其他电子邮件帐户）的人员发送加密电子邮件时，指示这些用户选择此标签。
 
-用户需在“**收件人**”框中键入 Gmail 电子邮件地址。  然后选中该标签，“请勿转发”选项会自动添加到电子邮件中。 这样的话，收件人就无法转发、打印或复制该电子邮件，也不能使用“**另存为**”选项在其邮箱之外保存该电子邮件。 
+用户需在“**收件人**”框中键入 Gmail 电子邮件地址。  然后选中该标签，“请勿转发”选项会自动添加到电子邮件中。 这样的话，收件人就无法转发、打印或复制该电子邮件，也不能使用“**另存为**”选项在其邮箱之外保存该电子邮件。
 
 1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，选择“**允许用户在应用标签时自行分配权限**”。
 
-3. 选择复选框：**在 Outlook 中，强制实施与“请勿转发”选项等效的限制**。
+2. 选择复选框：**在 Outlook 中，强制实施与“请勿转发”选项等效的限制**。
 
-4. 如果选中，请清除复选框：**在 Word、PowerPoint 和 Excel 中提示用户指定权限**。
+3. 如果选中，请清除复选框：**在 Word、PowerPoint 和 Excel 中提示用户指定权限**。
 
-5. 选择“**下一步**”并完成向导。
-
+4. 选择“**下一步**”并完成向导。
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>示例 2：将只读权限局限于另一组织中的所有用户的标签
 
@@ -302,22 +301,21 @@ ms.locfileid: "48196617"
 
 1. 在“**加密**”页面上：对于“**立即分配权限还是让用户决定?**”，选择“**立即分配权限**”。
 
-3. 对于“**允许脱机访问**”，选择“**从不**”。
+2. 对于“**允许脱机访问**”，选择“**从不**”。
 
-4. 选择“**分配权限**”。
+3. 选择“**分配权限**”。
 
-3. 在“**分配权限**”窗格上，选择“**添加特定电子邮件地址或域**”。
+4. 在“**分配权限**”窗格上，选择“**添加特定电子邮件地址或域**”。
 
-4. 在文本框中，输入另一组织中的域的名称，例如 **fabrikam.com**。 然后，选择“**添加**”。
+5. 在文本框中，输入另一组织中的域的名称，例如 **fabrikam.com**。 然后，选择“**添加**”。
 
-5. 选择“**选择权限**”。
+6. 选择“**选择权限**”。
 
-6. 在“**选择权限**”窗格中，选择下拉框，选择“**查看者**”，然后选择“**保存**”。
+7. 在“**选择权限**”窗格中，选择下拉框，选择“**查看者**”，然后选择“**保存**”。
 
-6. 返回到“**分配权限**”窗格中，选择“**保存**”。
+8. 返回到“**分配权限**”窗格中，选择“**保存**”。
 
-7. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
-
+9. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>示例 3：将外部用户添加到加密内容的现有标签
 
@@ -339,10 +337,9 @@ ms.locfileid: "48196617"
 
 8. 在“**加密**”窗格上，选择“**下一步**”并完成向导。
 
-
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>示例 4：对内容进行加密但不限制可访问的人员的标签
 
-此配置的优势在于，你无需指定用户、组或域即可加密电子邮件或文档。 内容仍将被加密，但你仍可指定使用权限、过期日期和脱机访问权限。 
+此配置的优势在于，你无需指定用户、组或域即可加密电子邮件或文档。 内容仍将被加密，但你仍可指定使用权限、过期日期和脱机访问权限。
 
 仅在无需限制谁可打开受保护的文档或电子邮件时才使用此配置。 [有关此设置的详细信息](#requirements-and-limitations-for-add-any-authenticated-users)
 
@@ -352,8 +349,8 @@ ms.locfileid: "48196617"
 
 3. 选择“**分配权限**”。
 
-4. 在“**分配权限**”窗格中，选择“**添加任何经过身份验证的用户**”。 
-    
+4. 在“**分配权限**”窗格中，选择“**添加任何经过身份验证的用户**”。
+
     对于“**用户和组**”，你将看到**认证用户**已自动添加。 无法更改此值，只能将其删除，但这会取消选择“**添加任何经过身份验证的用户**”。
 
 5. 选择“**选择权限**”。
@@ -369,26 +366,26 @@ ms.locfileid: "48196617"
 加密最敏感的文档和电子邮件有助于确保只有授权人员可访问此数据。 但是，需要考虑以下注意事项：
 
 - 如果你的组织未[启用 SharePoint 和 OneDrive 中 Office 文件的灵敏度标签](sensitivity-labels-sharepoint-onedrive-files.md)：
-    
-    - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。
-    - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。
-    - 用户无法使用 Office 网页版打开加密文件。 如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括已通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
+
+  - “搜索”、“电子数据展示”和 Delve 将无法用于加密文件。
+  - DLP 策略适用于这些加密文件的元数据（包括保留标签信息），但不适用于这些文件的内容（如文件内的信用卡号）。
+  - 用户无法使用 Office 网页版打开加密文件。 如果在 SharePoint 和 OneDrive 中为 Office 文件启用了敏感度标签，则用户可使用 Office 网页版打开加密文件，但存在一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，包括已通过本地密钥应用的加密（称为“保留自己的密钥”(HYOK)）、[双密钥加密](#double-key-encryption)以及在不使用敏感度标签的情况下应用的加密。
 
 - 要使多名用户同时编辑一个加密文件，这些用户必须全都在使用 Web 版 Office。 如果不是这种情况且文件已打开：
-    
-    - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
-    - 在 Web 版 Office 中，用户会看到一则错误消息，其中指出他们可与其他人一起编辑文档。 然后，他们可选择“**在阅读视图中打开**”。
+
+  - 在 Office 应用（Windows、Mac、Android 和 iOS）中，用户会看到一条“**文件正在使用中**”消息，其中包含签出该文件的用户的姓名。 然后，他们可查看只读副本或保存和编辑文件副本，并可在文件可用时收到通知。
+  - 在 Web 版 Office 中，用户会看到一则错误消息，其中指出他们可与其他人一起编辑文档。 然后，他们可选择“**在阅读视图中打开**”。
 
 - 已对加密文件禁用 Office 应用（Windows、Mac、Android 和 iOS）的[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能。 用户会看到一条消息，其中指出文件具有受限权限且必须删除此权限才能启用“自动保存”。
 
 - 在 Office 应用（Windows、Mac、Android 和 iOS）中打开加密文件可能需要更长时间。
 
 - Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。 但是，可将 SharePoint 功能用作替代项：
-    
-    - 查看、还原和保存之前版本的副本。 或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。 
-    - 更改文件的名称或位置。 或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/zh-CN/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
 
-为了在已用敏感度标签加密的文件上获得更佳的协作体验，建议使用 [SharePoint 和 OneDrive中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)并使用 Web 版 Office。 
+  - 查看、还原和保存之前版本的副本。 或者，在你[为列表或库启用和配置版本控制](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)后，用户可使用 Office 网页版执行这些操作。
+  - 更改文件的名称或位置。 或者，用户可在 SharePoint 中[对文档库中的文件、文件夹或链接重命名](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
+
+为了在已用敏感度标签加密的文件上获得更佳的协作体验，建议使用 [SharePoint 和 OneDrive中 Office 文件的敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)并使用 Web 版 Office。
 
 ## <a name="important-prerequisites"></a>重要先决条件
 
@@ -401,10 +398,10 @@ ms.locfileid: "48196617"
 ### <a name="configure-exchange-for-azure-information-protection"></a>配置用于 Azure 信息保护的 Exchange
 
 无需针对 Azure 信息保护进行配置，用户即可在 Outlook 中应用标签来加密其电子邮件。 但是，除非已针对 Azure 信息保护进行了配置，否则无法通过 Exchange 获得使用 Azure 权限管理保护的完整功能。
- 
-例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
+
+例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。
 
 为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
 
 - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
-- 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
+- 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。
