@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417236"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446923"
 ---
 # <a name="user-submissions-policies"></a>用户提交策略
 

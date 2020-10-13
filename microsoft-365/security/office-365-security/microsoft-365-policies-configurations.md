@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399628"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446179"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -118,7 +118,9 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 | [Azure AD 密码保护](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 检测并阻止已知的弱密码及其变体以及特定于您的组织的其他弱术语。 默认全局禁止使用的密码列表将自动应用于 Azure AD 租户中的所有用户。 可在自定义禁止密码列表中定义额外条目。 用户更改或重置其密码时，将检查这些禁止的密码列表，强制使用强密码。 |  Microsoft 365 E3 或 E5 |
 ||||
 
-![标识和设备访问的组件。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+以下是标识和设备访问的组件，包括 Intune 和 Azure AD 对象、设置和 subservices。
+
+![标识和设备访问的组件](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

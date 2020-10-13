@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413706"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446319"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
-管理员可使用 Microsoft 365 管理中心设置 [Microsoft SharePoint Syntex](document-understanding-overview.md)。 
+管理员可使用 Microsoft 365 管理中心设置 [Microsoft SharePoint Syntex](index.md)。 
 
 开始之前应考虑下列建议：
 
@@ -26,8 +26,6 @@ ms.locfileid: "48413706"
 - 你的默认内容中心会采用什么名字？
 
 可在 Microsoft 365 管理中心内的初始设置后更改你的设置。
-
-本文中的内容适用于 Project Cortex 私人预览版。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
 
 设置前，请确保计划在环境中设置和配置内容理解的最佳方式。 例如，需要对以下名称进行考虑：
 

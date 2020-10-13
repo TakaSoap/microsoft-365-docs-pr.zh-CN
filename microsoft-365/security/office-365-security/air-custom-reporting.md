@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: 了解如何将自动调查和响应与自定义或第三方报告解决方案集成。
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 429ceae87e3beeb9ec0a254b120289be4ab51d16
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 9bc5de44700b7f1b7207f8fae002adcb55d32841
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411969"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446679"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将管理活动 API 用于自定义或第三方报告解决方案
 

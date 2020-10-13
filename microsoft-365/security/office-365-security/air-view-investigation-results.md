@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
 ms.date: 09/29/2020
-ms.openlocfilehash: f3070cb0760cfa4405a7f6a7e20680c3e304275d
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412006"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447055"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
 
@@ -105,7 +105,7 @@ ms.locfileid: "48412006"
 
 ![空气的主要调查页面](../../media/air-maininvestigationpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 
 - 直接导航到调查 (选择 **调查 ID**) 。
 - 应用筛选器。 从 **调查类型**、 **时间范围**、 **状态**或这些情况的组合中进行选择。
@@ -117,7 +117,7 @@ ms.locfileid: "48412006"
 
 ![空中调查图形页面](../../media/air-investigationgraphpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 
 - 获取当前调查的直观概述。
 - 查看调查持续时间的摘要。
@@ -130,7 +130,7 @@ ms.locfileid: "48412006"
 
 ![空气警报页面](../../media/air-investigationalertspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 
 - 获取当前触发警报和任何关联警报的直观概述。
 - 在列表中选择一个警报，打开显示完整警报详细信息的飞出页面。
@@ -170,7 +170,7 @@ ms.locfileid: "48412006"
 
 ![空中电子邮件调查页面](../../media/air-investigationemailpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取当前群集结果和发现的威胁的直观概述。
 - 单击 "群集" 实体或威胁列表打开显示完整警报详细信息的弹出页面。
 - 单击 "电子邮件群集详细信息" 选项卡顶部的 "在资源管理器中打开" 链接进一步调查电子邮件群集
@@ -188,7 +188,7 @@ ms.locfileid: "48412006"
 
 ![空中调查用户页](../../media/air-investigationuserspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取已确定的用户结果和发现的风险的直观概述。
 - 选择用户以打开显示完整警报详细信息的飞出页面。
 
@@ -201,7 +201,7 @@ ms.locfileid: "48412006"
 作为一些行动手册的一部分，空中将电子邮件威胁与设备 (例如 Zapped 恶意软件) 相关联。 例如，调查会将恶意文件哈希传递到 [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) 以进行调查。 这样，就可以为您的用户自动调查相关的计算机，以帮助确保在云中和终结点上解决威胁。
 
-可执行下列操作：
+可以执行下列操作：
 
 - 获取发现的当前计算机和威胁的直观概述。
 - 选择一台计算机以打开在 Microsoft Defender 安全中心的相关 [Microsoft DEFENDER ATP 调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 中的视图。
@@ -214,7 +214,7 @@ ms.locfileid: "48412006"
 
 !["航空调查实体" 页](../../media/air-investigationentitiespage.png)
 
-可执行下列操作：
+可以执行下列操作：
 - 获取发现的调查实体和威胁的直观概述。
 - 选择一个实体以打开显示相关实体详细信息的飞出页面。
 
@@ -226,7 +226,7 @@ ms.locfileid: "48412006"
 
 ![航空调查日志页](../../media/air-investigationlogpage.png)
 
-可执行下列操作：
+可以执行下列操作：
 
 - 获取有关执行操作手册步骤的直观概述。
 - 将结果导出到 CSV 文件。
@@ -263,7 +263,7 @@ ms.locfileid: "48412006"
 
 ![航空调查操作页](../../media/air-investigationactionspage.png)
 
-可执行下列操作：
+可以执行下列操作：
 
 - 获取对操作手册建议的操作的直观概述。
 - 选择一个或多个操作。

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: af47f45ca4f3d14e835a39a334a9400002ac8560
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418069"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446863"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>运行你的试点 Microsoft 威胁防护项目 
 
@@ -35,7 +35,7 @@ ms.locfileid: "48418069"
 **适用于：**
 - Microsoft 威胁防护
 
-若要有效地确定 Microsoft 威胁防护 (MTP) 的优势和采用，可以运行试点项目。 在生产环境中启用 Microsoft 威胁防护并从定义的用例开始之前，最好先完成规划过程，以确定在此试点项目中必须完成的任务以及成功条件。 
+若要有效地确定 Microsoft 威胁防护 (MTP) 的优势和采用，可以运行试点项目。 在生产环境中启用 Microsoft 威胁防护并启动用例之前，最好先计划确定要为试点项目完成的任务并设置成功条件。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用此试点操作手册
@@ -59,7 +59,7 @@ ms.locfileid: "48418069"
 |阶段 | 说明 | 
 |:-------|:-----|
 | ![规划](../../media/mtp/plan.png)<br>[规划](mtp-pilot-plan.md)| 了解在运行 Microsoft 威胁防护试点项目之前需要考虑的事项： <br><br>-Scope <br> -用例 <br>- 要求： <br>-测试计划 <br> -成功条件 <br> 记分卡 
-| ![过程](../../media/mtp/prep.png) <br>[过程](mtp-evaluation.md)|  访问 Microsoft 365 安全中心以设置你的 Microsoft 威胁防护试点环境。 系统将指导您执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
+| ![过程](../../media/mtp/prep.png) <br>[过程](mtp-evaluation.md)|  访问 Microsoft 365 安全中心以设置你的 Microsoft 威胁防护试点环境。 你将指导你执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
 | ![攻击模拟](../../media/mtp/run-sim.png) <br>[攻击模拟](mtp-pilot-simulate.md) | 为模拟攻击，您将获得以下指导：<br><br>-验证测试环境要求 <br>-运行模拟 <br>-调查事件 <br>-解决事件 
 | ![结束和摘要](../../media/mtp/close.png) <br>[结束和摘要](mtp-pilot-close.md) | 当您到达进程的末尾时，您将被指引到：<br><br>-转到最终输出<br>-向你的利益干系人提供你的输出 <br>-提供反馈 <br>-执行后续步骤 
 

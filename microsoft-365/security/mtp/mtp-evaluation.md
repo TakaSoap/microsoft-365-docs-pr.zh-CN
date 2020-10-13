@@ -1,6 +1,6 @@
 ---
 title: 评估 Microsoft 威胁防护
-description: 设置您的 Microsoft 威胁防护试用实验室或试点环境，以试用旨在保护设备、标识、数据和应用程序的联合威胁防护解决方案如何帮助您的组织
+description: 设置你的 Microsoft 威胁防护试用实验室或试点环境，以试用并体验用于保护组织中的设备、标识、数据和应用程序的安全解决方案。
 keywords: Microsoft 威胁防护试用版，试用 Microsoft 威胁防护，评估 Microsoft 威胁防护，Microsoft 威胁防护评估实验室，Microsoft 威胁防护试验，网络安全，高级持久威胁，企业安全性，设备，设备，身份，用户，数据，应用程序，事件，自动调查和修正，高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418081"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447115"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>创建 Microsoft 威胁防护试用实验室或试点环境 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418081"
 **适用于：**
 - Microsoft 威胁防护
 
-创建此试用版实验室或试点环境的目的是说明 Microsoft 威胁防护在您的组织中可使用的检测、预防、调查和响应的全面、集成和智能功能。 
+创建此试用版实验室或试点环境的目的是演示全面和集成的 Microsoft 威胁防护功能。 体验此智能安全解决方案如何检测、阻止、自动调查和响应组织的高级威胁。 
 
-本指南将指导你完成基于建议的部署路径启动 Microsoft 威胁防护评估的步骤。 目标是帮助您在实验室环境中使用试用帐户或在使用完整许可证时在生产中的试点环境中设置集成 Microsoft 威胁防护服务。 在为组织中的安全解决方案决策者提供安全操作使用案例时，这些结果将非常有用。 当您完成攻击模拟并对结果感到满意时，您可以在组织中使用 Microsoft 技术销售专家或专家的帮助，在组织中完全部署和 operationalize 它。 
+本指南将指导你完成基于建议的部署路径启动 Microsoft 威胁防护评估的步骤。 目标是帮助您在实验室环境中使用试用帐户设置安全解决方案，或使用完整许可证在生产的试点环境中设置安全解决方案。 准备试用版实验室或试点环境可帮助您在组织中向决策者提供安全操作用例。 当您完成攻击模拟并对结果感到满意时，您可以在组织中使用 Microsoft 技术销售专业人员或专家的帮助，在组织中完全部署和 operationalize 它。 
 
 本指南将帮助您：
 - 设置实验室服务器和计算机

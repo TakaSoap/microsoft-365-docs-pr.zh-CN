@@ -2,9 +2,9 @@
 title: 关于共享邮箱
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，将使用共享邮箱。 了解在创建共享邮箱之前需要了解的内容。
-ms.openlocfilehash: f6feae1662093ffea2537a62c5e8fdf28c622166
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269345"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445695"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 

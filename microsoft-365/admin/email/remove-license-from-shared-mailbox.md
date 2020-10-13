@@ -2,8 +2,8 @@
 title: 从共享邮箱删除许可证
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '删除共享邮箱中的许可证以将其分配给其他用户。 '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432215"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445491"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>从共享邮箱中删除许可证
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true)。
 
 ::: moniker-end
 
@@ -51,58 +51,58 @@ ms.locfileid: "44432215"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
 
    > [!NOTE]
    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。 
   
 2. 选择共享邮箱。
 
-3. 一个 "**许可证和应用**" 选项卡，展开 "**许可证**" 并取消选中要删除的许可证对应的复选框。
+3. 一个 " **许可证和应用** " 选项卡，展开 " **许可证** " 并取消选中要删除的许可证对应的复选框。
 
 4. 选择“**保存更改**”。
 
-5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
+5. 当您返回到 " **活动用户** " 页面时，共享邮箱的状态将为 " **未经许可**"。
 
-6. 你仍在支付许可证费用。 若要停止付款，请[从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍在支付许可证费用。 若要停止付款，请 [从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">活动用户</a>”页面。
 
-   > [!NOTE]
-   > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
+    > [!NOTE]
+    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
 
 2. 选择共享邮箱，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
-3. 一个 "**产品许可证**" 页上，将您要删除的许可证的开关设置为 "**关闭**"。
+3. 一个 " **产品许可证** " 页上，将您要删除的许可证的开关设置为 " **关闭** "。
 
 4. 选择“**保存**”。
 
-5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
+5. 当您返回到 " **活动用户** " 页面时，共享邮箱的状态将为 " **未经许可**"。
 
-6. 你仍在支付许可证费用。 若要停止付款，请[从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍在支付许可证费用。 若要停止付款，请 [从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
+ 1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">活动用户</a>”页面。
 
-   > [!NOTE]
-   > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
+    > [!NOTE]
+    > 您需要从 "活动用户" 页面中删除许可证。 您不能从共享邮箱页面中删除许可证，因为许可证是用户设置。
 
 2. 选择共享邮箱，然后选择 "**产品许可证**" 旁边的 "**编辑**"。
 
-3. 一个 "**产品许可证**" 页上，将您要删除的许可证的开关设置为 "**关闭**"。
+3. 一个 " **产品许可证** " 页上，将您要删除的许可证的开关设置为 " **关闭** "。
 
 4. 选择“**保存**”。
 
-5. 当您返回到 "**活动用户**" 页面时，共享邮箱的状态将为 "**未经许可**"。
+5. 当您返回到 " **活动用户** " 页面时，共享邮箱的状态将为 " **未经许可**"。
 
-6. 你仍在支付许可证费用。 若要停止付款，请[从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 你仍在支付许可证费用。 若要停止付款，请 [从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end 
 

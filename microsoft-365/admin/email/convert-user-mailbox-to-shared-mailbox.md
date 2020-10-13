@@ -2,9 +2,9 @@
 title: 将用户邮箱转换为共享邮箱
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '了解如何将专用邮箱转换为可由多个用户访问的共享邮箱。 '
-ms.openlocfilehash: 027236afb5a77e950083f254a154c491d6abc6ac
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: bc867c9b43656e40149eb7cd7a7e5ce186c10798
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341188"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445683"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>将用户邮箱转换为共享邮箱
 

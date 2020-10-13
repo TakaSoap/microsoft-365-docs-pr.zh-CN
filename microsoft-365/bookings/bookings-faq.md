@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 预定常见问题。
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545712"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445447"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 预定常见问题
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545712"
 
 ### <a name="what-is-microsoft-bookings"></a>什么是 Microsoft 预订？
 
-Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理约会。 预订 incudes 基于 Web 的预订日历，并与 Outlook 集成以优化员工的日历，使客户能够灵活地预订最适合他们的时间。 自动化通知电子邮件减少了无显示，并且组织通过减少重复的日程排定任务节省了时间。 预订可帮助您通过 Skype 或 Microsoft 团队轻松执行虚拟约会，并帮助您通过团队中的预订应用程序管理日常计划。 通过内置的自定义功能，预订旨在满足任何组织的多个部件的需求。
+Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理约会。 预订包含一个基于 Web 的预订日历，并与 Outlook 集成以优化员工的日历，使您的客户能够灵活地预订最适合他们的时间。 自动化通知电子邮件减少了无显示，并且组织通过减少重复的日程排定任务节省了时间。 预订可帮助您通过 Skype 或 Microsoft 团队轻松执行虚拟约会，并帮助您通过团队中的预订应用程序管理日常计划。 通过内置的自定义功能，预订旨在满足任何组织的多个部件的需求。
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>如何使用 Microsoft 预订？
 
@@ -41,11 +41,11 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>我是否可以在我自己的网站中使用预订？
 
-是。 我们为你提供了一种通过 iFrame 在网站中嵌入你的预定日历的方法。 链接嵌入代码位于预订应用程序内的 " **预定页面** " 选项卡中。
+是的。 我们为你提供了一种通过 iFrame 在网站中嵌入你的预定日历的方法。 链接嵌入代码位于预订应用程序内的 " **预定页面** " 选项卡中。
 
 ### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>即使我没有业务网页，也可以使用预订吗？
 
-是。 我们在 Web 应用的 " **预定页面** " 选项卡中提供了一个指向你的预定页面的链接。 您只需向客户或客户端提供该链接，他们就会看到您的企业的最新可用性信息。 此外，还可以在社交媒体中共享预定页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并将访问限制为仅组织中的用户来控制谁可以访问此页面。
+是的。 我们在 Web 应用的 " **预定页面** " 选项卡中提供了一个指向你的预定页面的链接。 您只需向客户或客户端提供该链接，他们就会看到您的企业的最新可用性信息。 此外，还可以在社交媒体中共享预定页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并将访问限制为仅组织中的用户来控制谁可以访问此页面。
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>我们的 IT 部门是否可以控制最终用户是否可以访问预订？
 
@@ -124,11 +124,11 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>我的员工是否可以使用没有 Microsoft 365 帐户的预定？
 
-是。 你可以使用任何电子邮件添加你的员工，并且当某人与他们一起预订约会时，仍会收到电子邮件确认和日历邀请。
+是的。 你可以使用任何电子邮件添加你的员工，并且当某人与他们一起预订约会时，仍会收到电子邮件确认和日历邀请。
 
 ### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>是否可以在同一个 Microsoft 365 帐户下创建多个预订日历，并在它们之间切换？
 
-是。 您可以使用一个帐户创建和管理多个预订日历。 您可以使用预定 Web 应用中公司名称旁边的脱字号在它们之间进行切换。
+是的。 您可以使用一个帐户创建和管理多个预订日历。 您可以使用预定 Web 应用中公司名称旁边的脱字号在它们之间进行切换。
 
 ### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>如果我的组织具有带 F1/F3、E1 和 E3/E5 的混合许可证，该怎么办？
 
@@ -174,7 +174,7 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 默认情况下，所有时间都在业务时区 (本地时区) 。 这意味着，您为预订日历（如工作时间）配置的任何设置都将显示在此时区中。 自助服务页面能够在最终用户的时区中显示所有约会时间，如果需要，可以将其关闭。如果 "在预订页面" 选项卡上 **始终显示 "仍在营业时区中显示时间段** "，则访问该页面的人员将在其自己的本地时区中看到时间段。
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="预订区域和时区设置":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="在预订中安排":::
 
 没有规定为预订中的员工设置时区。 员工时区，因而营业时间将在业务时区中。
 
@@ -200,9 +200,9 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>日历是否可以保持未发布状态 (不面向公众的) ，但仍可供指定用户访问？
 
-是。 Web 应用中的 "预定页面" 选项卡上有一个复选框： **需要 Microsoft 365 或 Office 365 帐户从 "我的组织" 到 "书籍**"。 选中此复选框会将自助服务页面访问限制为仅限租户中的用户访问。 在用于创建和管理的 Web 应用程序中的预订日历只能由以管理员或查看者角色添加到页面的人员访问。
+是的。 Web 应用中的 "预定页面" 选项卡上有一个复选框： **需要 Microsoft 365 或 Office 365 帐户从 "我的组织" 到 "书籍**"。 选中此复选框会将自助服务页面访问限制为仅限租户中的用户访问。 在用于创建和管理的 Web 应用程序中的预订日历只能由以管理员或查看者角色添加到页面的人员访问。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="预订中的预订页面访问控制":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="在预订中安排":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>主页更新的频率是多少？
 
@@ -214,7 +214,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>预订日历是否可以进行克隆或复制，是否可以 templatized 以方便扩展？
 
-当前可通过 PowerShell 获取复制页面的功能。 该过程将使用 Graph API 获取邮箱详细信息，然后使用这些详细信息创建新邮箱。 API 文档在 [这里](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+该过程将使用 Graph API 获取邮箱详细信息，然后使用这些详细信息创建新邮箱。 API 文档在 [这里](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 
 ### <a name="what-reporting-is-available-in-bookings"></a>预订中提供了哪些报告？
 
@@ -250,7 +250,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 对预订 Web 应用的访问权限涉及通过常规 Azure Active Directory (AAD) 身份验证进行的身份验证。 "自助式预订" 页面可供具有网页链接的所有用户使用。 但是，当选择 " **从我的组织中选择 Microsoft 365 或 Office 365 帐户** " 设置时，将仅限制页面在 Microsoft 365 租户 (中使用 AAD 身份验证) 。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="预订中的预订页面访问控制":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="在预订中安排":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>客户数据是否因某种原因而留下生产系统？
 
@@ -286,7 +286,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 预订启用了短信短信的约会后，客户每次预订时都会收到选中 "自愿加入" 框的提示。 客户还可以直接答复 SMS 提供程序 (sms 消息，) 指出他们希望邮件停止，然后不会向该电话号码发送进一步的文本。 如果客户挑选出来自提供商的短信而不是从预订本身接收短信，则今后将不再接收短信，甚至在从 "记帐" 页面中选择时也不会收到这些邮件。
 
-## <a name="troubleshooting"></a>故障排除
+## <a name="troubleshooting"></a>疑难解答
 
 ### <a name="this-staff-members-calendar-cant-be-synced"></a>此员工成员的日历无法同步
 
@@ -316,7 +316,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
    ![可在启用忙状态时查看的日历共享屏幕的图像](../media/bookings-view-busy.png)
 
-1. 选择“完成”****。
+1. 选择 **“完成”**。
 
 ### <a name="we-cant-find-a-staff-member-in-our-organization"></a>找不到组织中的教职员工成员
 

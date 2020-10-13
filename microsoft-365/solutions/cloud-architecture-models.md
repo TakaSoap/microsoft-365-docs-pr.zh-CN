@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 08b899582e6401c0950a1c7349b73130ee62acb4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308203"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446507"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>面向企业架构师的 Microsoft 云图解
 
@@ -64,18 +64,25 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云安全性
 
-关于 Microsoft 云服务和平台的安全性，IT 架构师需要了解的信息。
+>[!Note]
+>正在修订此模型。 请在以后查看此文章，了解更新的版本。
+>
+
+<!--
+
+What IT architects need to know about security in Microsoft cloud services and platforms.
   
-|**项**|**说明**|
+|**Item**|**Description**|
 |:-----|:-----|
-|[![Microsoft 云安全模型的缩略图](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [更多语言](https://www.microsoft.com/download/details.aspx?id=48121) <br/>2018年12月更新 | 此模型包含： <ul><li>Microsoft 在提供安全服务和平台方面的作用</li><li>客户在降低安全风险上肩负的责任</li><li>顶级安全认证 </li><li>Microsoft 咨询服务提供的安全产品/服务 </ul><br/>|
+|[![Thumb image for Microsoft cloud security model](../media/solutions-architecture-center/msft-cloud-security-model-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=48121) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=842070)  \| [Visio](https://go.microsoft.com/fwlink/p/?LinkId=842071)  \| [More languages](https://www.microsoft.com/download/details.aspx?id=48121) <br/>Updated December 2018 | This model contains: <ul><li>Microsoft's role in providing secure services and platforms</li><li>Customer responsibilities to mitigate security risks</li><li>Top security certifications </li><li>Security offerings provided by Microsoft consulting services </ul><br/>|
+
+--> 
 
 
 <a name="attacks"></a>
-### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>常见攻击和保护组织的 Microsoft 功能
-了解最常见的网络攻击以及 Microsoft 在攻击的每个阶段如何帮助组织。 
+### 保护组织的常见攻击和 Microsoft 功能了解最常见的网络攻击以及 Microsoft 如何帮助您的组织在攻击的每个阶段进行。 
 
-|**项**|**说明**|
+|**Item**|**说明**|
 |:-----|:-----|
 |[![常见攻击海报缩略图。](../media/solutions-architecture-center/common-attacks-model-thumb.png)](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) <br/> [PDF](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.pdf) \| [Visio](https://download.microsoft.com/download/F/A/C/FACFC1E9-FA35-4DF1-943C-8D4237B4275B/MSFT_Cloud_architecture_security_commonattacks.vsdx) <br/> 2017年8月更新 | 该海报展示了常见攻击的路径，并说明了哪些功能有助于在攻击的每个阶段阻止攻击者。 <br/>|
 

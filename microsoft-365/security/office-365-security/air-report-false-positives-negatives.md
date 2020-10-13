@@ -17,16 +17,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: b9f037e3e6d798122b8d3c7ffd3476e34bd5a76b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 101747fa1121c675938610b9681f98c6e39b7d75
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411958"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446611"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何报告自动调查和响应功能中的误报/否定
 
@@ -36,7 +36,7 @@ ms.locfileid: "48411958"
 **适用于：**
 - Microsoft Defender for Office 365
 
-[Office 365 中的自动调查和响应 (空中) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可执行下列操作：
+[Office 365 中的自动调查和响应 (空中) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否丢失或错误地检测到了什么？ 您可以采取一些步骤来修复它。 可以执行下列操作：
 - [向 Microsoft 报告误报/负数，](#report-a-false-positivenegative-to-microsoft-for-analysis)或者
 - 根据需要[调整通知](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;并 
 - [撤消所执行的修正操作](#undo-a-remediation-action)。 

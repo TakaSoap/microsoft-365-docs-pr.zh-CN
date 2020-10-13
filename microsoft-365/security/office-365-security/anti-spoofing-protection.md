@@ -15,18 +15,18 @@ ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
-ms.openlocfilehash: 3e18ccb99656b048702643a7c324acc9fee2fc91
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411742"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446271"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 

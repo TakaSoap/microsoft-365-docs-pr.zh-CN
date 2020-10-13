@@ -13,15 +13,15 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 description: 了解如何使用威胁资源管理器和实时检测报告来调查安全合规性中心中的威胁并对其做出响应 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9440febde33a62529e2949d70d67eec4f9be02b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 75286b3fa8319afc9baadbc7ed349e8fe689d11c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414018"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447127"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 

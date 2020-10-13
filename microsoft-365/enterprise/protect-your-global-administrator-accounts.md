@@ -10,7 +10,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150
@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供了有关保护对 Microsoft 365 订阅的全局管理员访问权限的信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bcc1a09ca8e7c57d4d6c69400925df3531c53c4f
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357802"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445403"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保护你的 Microsoft 365 全局管理员帐户
 
@@ -48,7 +48,7 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
 > [!Note]
 > 虽然本文重点介绍了全局管理员帐户，但您应考虑是否需要以相同的方式保护订阅中的数据（如电子数据展示管理员或安全或合规性管理员帐户）的其他帐户。 <br > 全局管理员帐户可在不添加任何许可证的情况下创建。
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步骤 1. 创建专用的 Microsoft 365 全局管理员帐户，并仅在必要时使用
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>第 1 步： 创建专用的 Microsoft 365 全局管理员帐户，并仅在必要时使用
 
 与需要全局管理员权限的用户帐户分配角色相比，管理任务相对较少。 因此，请执行以下步骤，而不是使用已分配有全局管理员角色的日常用户帐户。
   
@@ -91,7 +91,7 @@ Microsoft 提供的功能可帮助保护你的组织，但只有在你使用它�
 > [!NOTE]
 > 这需要额外的步骤才能注销为您的日常用户帐户，并使用专用全局管理员帐户登录。 但这只需要偶尔执行全局管理员操作。 请考虑在全局管理员帐户泄露之后恢复 Microsoft 365 订阅需要执行更多步骤。
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>步骤 2. 为专用 Microsoft 365 全局管理员帐户配置多重身份验证
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>第 2 步： 为专用 Microsoft 365 全局管理员帐户配置多重身份验证
 
 多重身份验证 (MFA) 需要除帐户名称和密码之外的其他信息。 Microsoft 365 支持以下其他验证方法：
   

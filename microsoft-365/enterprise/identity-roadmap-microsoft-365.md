@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身份标识指南。
-ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398767"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446283"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的识别指南
 
@@ -41,7 +41,7 @@ ms.locfileid: "48398767"
 
 您还可以 [下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，并可在信件、法律或 tabloid (11 x 17) 格式打印。
 
-## <a name="plan"></a>套餐
+## <a name="plan"></a>计划
 
 规划您的身份实现：
 

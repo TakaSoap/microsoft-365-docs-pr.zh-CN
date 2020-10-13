@@ -1,6 +1,6 @@
 ---
 title: 运行 Microsoft 威胁防护攻击模拟
-description: 为 Microsoft 威胁防护试点项目运行攻击模拟，以了解如何随即展开和快速解决问题。
+description: 对 Microsoft 威胁防护试点项目运行攻击模拟，以查看其随即展开和快速修正的方式。
 keywords: Microsoft 威胁防护试点攻击模拟，运行 Microsoft 威胁防护试点攻击模拟，模拟 Microsoft 威胁防护、Microsoft 威胁防护试点项目、网络安全、高级持久威胁、企业安全性、设备、设备、标识、用户、数据、应用程序、事件、自动化调查和修正、高级搜寻
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418141"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447079"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>运行 Microsoft 威胁防护攻击模拟  
 
@@ -76,13 +76,13 @@ ms.locfileid: "48418141"
 
 你目前正在攻击模拟阶段。
 
-准备好试点环境后，可以测试 Microsoft 威胁防护事件管理和自动调查和修正功能。 我们将帮助您模拟一种复杂的攻击，利用从检测中隐藏的高级技术。 攻击在域控制器上枚举打开的服务器消息块 (SMB) 会话，并检索用户设备的最近 IP 地址。 这种类型的攻击通常不包括在受攻击者的设备上丢弃的文件，它们仅发生在内存中。 它们通过使用现有的系统和管理工具并将其代码注入系统进程以隐藏其执行，从而使其避开检测并在设备上持续存在，从而 "实时脱离土地"。
+准备好试点环境后，可以测试 Microsoft 威胁防护事件管理和自动调查和修正功能。 我们将帮助你模拟一种复杂的攻击，利用从检测中隐藏的高级技术。 攻击在域控制器上枚举打开的服务器消息块 (SMB) 会话，并检索用户设备的最近 IP 地址。 这种类型的攻击通常不包括在受攻击者的设备上丢弃的文件，它们仅发生在内存中。 它们通过使用现有的系统和管理工具并将其代码注入系统进程以隐藏其执行，从而使用户能够避开检测并在设备上持续的情况。
 
 在此模拟中，我们的示例方案从 PowerShell 脚本开始。 用户可能会欺骗运行脚本。 或者，该脚本可能从以前受感染的设备的远程连接到另一台计算机，攻击者试图在网络中移动横向。 由于管理员通常会远程运行脚本来执行各种管理活动，因此检测到这些脚本可能很困难。
 
 ![使用进程注入和 SMB reconnaisance 攻击图的 Fileless PowerShell 攻击](../../media/mtp/mtpdiydiagram.png)
 
-在模拟过程中，攻击会将外壳代码注入到看似合法的过程中。 在这种情况下，我们将使用 notepad.exe。 我们为模拟选择了此过程，但攻击者更有可能将系统视为长时间运行的系统进程，如 svchost.exe。 然后，代码管理代码会继续联系攻击者的命令和控件 (C2) server，以获取有关如何继续的说明。 此外，该脚本会尝试针对域控制器执行针对域控制器的侦测查询 (DC) 。 这使得攻击者能够获取有关最近用户登录信息的信息。 一旦攻击者拥有这些信息，就可以在网络中横向移动以获取特定的敏感帐户
+在模拟过程中，攻击会将外壳代码注入到看似合法的过程中。 方案需要使用 notepad.exe。 我们为模拟选择了此过程，但攻击者更有可能将某个长时间运行的系统进程作为目标，如 svchost.exe。 然后，代码管理代码会继续联系攻击者的命令和控件 (C2) server，以获取有关如何继续的说明。 该脚本会尝试针对域控制器执行针对域控制器的侦测查询 (DC) 。 侦测允许攻击者获取有关最近用户登录信息的信息。 一旦攻击者拥有这些信息，就可以在网络中横向移动以获取特定的敏感帐户
 
 >[!IMPORTANT]
 >为获得最佳结果，请尽可能严格遵循攻击模拟说明。
@@ -189,11 +189,11 @@ Microsoft 威胁防护关联分析，并将来自不同产品的所有相关的�
 
     ![在模拟期间聚合生成的警报的 "事件" 页面的屏幕截图](../../media/mtp/fig4.png)
 
-    可以根据服务资源筛选仪表板中显示的警报： Azure ATP、Microsoft 云应用安全性、Microsoft Defender ATP、Microsoft 威胁防护和 Office ATP。  
+    可以根据服务资源筛选显示在仪表板中的警报： Azure ATP、Microsoft 云应用安全性、Microsoft Defender ATP、Microsoft 威胁防护和 Office ATP。  
 
 3.  选择 " **打开事件" 页** ，以获取有关事件的详细信息。
 
-    在 " **事件** " 页中，您可以查看与事件相关的所有警报和信息。 这包括警报中涉及的实体和资产、警报的检测源 (Azure ATP、EDR) 以及它们链接在一起的原因。 查看事件警报列表将显示攻击的进展情况。 在此视图中，你可以查看和调查各个通知。
+    在 " **事件** " 页中，您可以查看与事件相关的所有警报和信息。 这些信息包括警报中涉及的实体和资产、警报的检测源 (Azure ATP、EDR) ，以及它们链接在一起的原因。 查看事件警报列表将显示攻击的进展情况。 在此视图中，你可以查看和调查各个通知。
 
     您还可以单击右侧菜单中的 " **管理事件** "、"将事件标记为"、"将其分配给自己" 和 "添加注释"。
 
@@ -221,11 +221,11 @@ Microsoft 威胁防护关联分析，并将来自不同产品的所有相关的�
 ![可能存在恶意代码的注入警报的屏幕截图](../../media/mtp/fig7.png) 
 
 
-**警报：进程在不使用任何命令行参数的情况运行时观察到的意外行为 (源： Microsoft Defender ATP EDR) **
+**警报：进程在不使用任何命令行参数的情况运行时观察到意外行为 (源： Microsoft Defender ATP EDR) **
 
-Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这样可确保持续性并提高攻击者切换到较新策略的这一栏。
+Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 此方法确保了持续性并提升了使攻击者能够切换到较新的策略的栏。
 
-我们采用大规模学习算法来建立组织和全球范围内的常见流程的正常行为，并在这些流程表现出异常行为时进行监视。 这些反常行为通常表示引入了无关的代码并在其他受信任的进程中运行。
+我们采用大规模学习算法来建立组织和全球范围内的常见流程的正常行为，并在这些流程显示反常行为时进行监视。 这些反常行为通常表示引入了无关的代码并在其他受信任的进程中运行。
 
 在这种情况下，进程 <i>notepad.exe</i> 表现为异常行为，涉及与外部位置的通信。 此结果与用于引入和执行恶意代码的特定方法无关。
 
@@ -234,7 +234,7 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 请注意，警报详细信息包括外部 IP 地址（一个指示器，可用作透视以展开调查）。
 
-单击警报进程树中的 IP 地址以查看 "IP 地址详细信息" 页。
+在警报进程树中选择 IP 地址以查看 "IP 地址详细信息" 页。
 
 ![未使用任何命令行参数运行的进程的意外行为警报的屏幕截图](../../media/mtp/fig8.png) 
 
@@ -252,25 +252,25 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 
 ### <a name="review-the-device-timeline-microsoft-defender-atp"></a>查看设备时间线 [Microsoft Defender ATP]
-在探索了此事件中的各种警报后，再导航回之前调查的 "事件" 页。 单击 "事件" 页中的 " **设备** " 选项卡，查看在 MICROSOFT Defender ATP 和 Azure atp 报告的此事件中涉及的设备。
+在探索了此事件中的各种警报后，再导航回之前调查的 "事件" 页。 在 "事件" 页中选择 " **设备** " 选项卡，以查看 MICROSOFT Defender ATP 和 Azure ATP 报告的此事件中涉及的设备。
 
-单击执行攻击的设备的名称，以打开该特定设备的实体页面。 在该页面中，可以看到已触发的警报和相关事件。
+选择实施攻击的设备的名称，以打开该特定设备的实体页面。 在该页面中，可以看到已触发的警报和相关事件。
 
-单击 " **时间线** " 选项卡以打开设备时间线，并按时间顺序查看设备上观测到的所有事件和行为，并与触发的警报交错。
+选择 " **时间线** " 选项卡以打开设备时间线，并按时间顺序查看设备上观测到的所有事件和行为，并与触发的警报交错。
 
 ![包含行为的设备日程表的屏幕截图](../../media/mtp/fig11.png) 
 
 扩展一些更有趣的行为可提供有用的详细信息，如进程树。
 
-例如，向下滚动，直到发现警报事件 **可疑进程注入被观测到**。 单击 " **powershell.exe 注入到** 它下面的 notepad.exe 处理事件"，以在侧窗格上的 " **事件实体** " 图中显示此行为的完整进程树。 如有必要，请使用搜索栏进行筛选。
+例如，向下滚动，直到发现警报事件 **可疑进程注入被观测到**。 选择 ** 插入到下面 notepad.exe 处理** 事件的powershell.exe，以在侧窗格上的 " **事件实体** " 图中显示此行为的完整进程树。 如有必要，请使用搜索栏进行筛选。
 
 ![选定 PowerShell 文件创建行为的进程树的屏幕截图](../../media/mtp/fig12.png)
 
 ### <a name="review-the-user-information-microsoft-cloud-app-security"></a>查看用户信息 [Microsoft Cloud App Security]
 
-在 "事件" 页上，单击 " **用户** " 选项卡以显示攻击涉及的用户列表。 该表包含有关每个用户的其他信息，包括每个用户的 **调查优先级** 分数。
+在 "事件" 页上，选择 " **用户** " 选项卡以显示攻击涉及的用户列表。 该表包含有关每个用户的其他信息，包括每个用户的 **调查优先级** 分数。
 
-单击用户名可打开用户的配置文件页面，可以在其中执行进一步调查。 [阅读有关调查有风险的用户的详细信息](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)。
+选择用户名以打开用户的配置文件页，可在其中执行进一步调查。 [阅读有关调查有风险的用户的详细信息](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)。
 <br>
 ![云应用安全用户页面的屏幕截图](../../media/mtp/fig13.png)
 
@@ -281,11 +281,11 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-导航回 Microsoft 365 安全中心门户中的事件。 "**事件**" 页面中的 "**调查**" 选项卡显示由 Azure ATP 和 Microsoft Defender ATP 触发的自动调查。 下面的屏幕截图仅显示由 Microsoft Defender ATP 触发的自动调查。 默认情况下，Microsoft Defender ATP 将自动 remediates 在队列中找到的、需要修正的项目。
+导航回 Microsoft 365 安全中心门户中的事件。 "**事件**" 页面中的 "**调查**" 选项卡显示由 Azure ATP 和 Microsoft Defender ATP 触发的自动调查。 下面的屏幕截图仅显示由 Microsoft Defender ATP 触发的自动调查。 默认情况下，Microsoft Defender ATP 将自动 remediates 在队列中找到的项目，这需要进行修正。
 
 ![与事件相关的自动调查的屏幕截图](../../media/mtp/fig14.png)
 
-单击触发调查的警报以打开 **调查详细信息** 页面。 你将看到以下内容：
+选择触发调查的警报以打开 **调查详细信息** 页面。 你将看到以下详细信息：
 - 触发自动调查的警报 (s) 。
 - 受影响的用户和设备。 如果在其他设备上发现指示器，则还会列出这些其他设备。
 - 证据列表。 找到并分析的实体，如文件、进程、服务、驱动程序和网络地址。 将对这些实体进行分析，以了解与警报的关系，并将其评级为良性或恶意。
@@ -304,9 +304,9 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 调查完成并确认为待修正后，请关闭事件。
 
-单击 " **管理事件**"。 将状态设置为 " **解决事件** "，并选择相关的分类。
+选择 " **管理事件**"。 将状态设置为 " **解决事件** "，并选择相关的分类。
 
-一旦事件得到解决，它将关闭 Microsoft 365 安全中心和相关门户中的所有关联警报。
+在解决事件时，它将关闭 Microsoft 365 安全中心和相关门户中的所有关联警报。
 
 !["事件" 页的屏幕截图，其中包含 "打开管理事件" 面板，可在其中单击交换机以解决事件](../../media/mtp/fig16.png) 
 
@@ -321,7 +321,7 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 ### <a name="hunting-environment-requirements"></a>求职环境要求
-此方案需要一个内部邮箱和一个设备。 您还需要一个外部电子邮件帐户来发送测试邮件。
+此方案需要一个内部邮箱和一个设备。 你还需要一个外部电子邮件帐户来发送测试邮件。
 
 1.  验证你的租户是否已 [启用 Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
 2.  确定要用于接收电子邮件的目标邮箱。
@@ -369,9 +369,9 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
     1.  查看结果，并查看是否可以识别您打开的电子邮件。  最长可能需要2小时的时间才能在高级搜寻中显示邮件。 如果电子邮件环境很大且结果很多，则可能需要使用 " **显示筛选器" 选项** 来查找邮件。 
 
-        在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  应使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
+   在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
    
-        ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快地找到要查找的内容。](../../media/mtp/fig20.png) 
+        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +394,7 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 5.  接下来，包括有关附件的信息 (例如：文件名、哈希) 到结果集。 若要执行此操作，请加入 **EmailAttachmentInfo** 表。 用于加入的公共字段，在此示例中为 **NetworkMessageId** 和 **RecipientObjectId**。
 
-    以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp**"，它将帮助识别与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
+以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可帮助确定与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
 
     ```console
     EmailEvents 
@@ -416,7 +416,7 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
     | where ActionType == "FileCreated"
     ```
 
-    现在，您已创建一个查询，该查询将标识用户在其中打开或保存了附件的所有入站电子邮件。 您还可以优化此查询以筛选特定的发件人域、文件大小、文件类型等。
+现在，您已创建一个查询，该查询将标识用户在其中打开或保存了附件的所有入站电子邮件。 您还可以优化此查询以筛选特定的发件人域、文件大小、文件类型等。
 
 7.  函数是一种特殊的联接，可让您获取有关文件的更多 TI 数据，如文件的流行、签名者信息等。 若要获取有关该文件的更多详细信息，请使用 **FileProfile ( # B1 ** function 扩充：
 
@@ -434,7 +434,7 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
 **创建检测**
 
-一旦创建了标识信息的查询，如果将来发生这些信息， **get alerted**就可以从查询中创建自定义检测。 
+一旦创建了标识信息的查询，如果将来发生这些信息， **get alerted**您就可以从查询中创建自定义检测。 
 
 自定义检测将根据您设置的频率运行查询，并且查询的结果将根据所选的受影响的资产创建安全警报。 这些警报将与事件相关联，并且可以作为其中一个产品所生成的任何其他安全警报进行会审。
 
@@ -473,9 +473,9 @@ Microsoft Defender ATP 检测通常针对攻击技术的最常见属性。 这�
 
     ![显示规则和执行详细信息的 "检测规则" 页的屏幕截图](../../media/mtp/fig27b.png) 
 
-    在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
+在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
 
-    !["电子邮件附件" 页面的屏幕截图，可在其中查看规则执行状态、触发通知和操作、编辑检测等情况](../../media/mtp/fig28.png) 
+    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他高级的搜寻指导-通过练习
 

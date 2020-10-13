@@ -2,9 +2,9 @@
 title: 创建共享邮箱
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,17 +22,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 创建共享邮箱，让企业中的多名人员分担查看和答复发送到同一地址的电子邮件的责任。
-ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2cef7c742407b291d392a73e72316e7feeba4197
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306931"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445635"
 ---
 # <a name="create-a-shared-mailbox"></a>创建共享邮箱 
 
 > [!NOTE]
-> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
+> 如果你的组织使用的是混合 Exchange 环境，则你应使用本地 Exchange 管理中心 (EAC) 创建和管理共享邮箱。 请参阅[在 Exchange 管理中心创建共享邮箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
 > 如果不确定是应为 Outlook 创建共享邮箱还是 Microsoft 365 组，可参阅[比较组](../create-groups/compare-groups.md)获取一些指导。 请注意，暂无法将共享邮箱迁移到 Microsoft 365 组中。 如果这不是你想要的结果，请通过[在此处投票](https://go.microsoft.com/fwlink/?linkid=871518)告诉我们。
 
 创建共享邮箱很容易，通过共享邮箱，多位人员可以从一个公用电子邮件地址（如 info@contoso.com）监控和发送电子邮件。当群组中的某个人员答复发送到共享邮箱的邮件时，系统显示电子邮件来自共享邮箱，而不是单个用户。

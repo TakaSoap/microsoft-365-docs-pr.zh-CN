@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367997"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446727"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>准备你的 Microsoft 威胁防护试用实验室或试点环境
 
@@ -75,7 +76,7 @@ ms.locfileid: "48367997"
 了解有关设置和使用 Microsoft 威胁防护的许可、硬件和软件要求以及其他配置设置。 请参阅 [Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)、 [microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [OFFICE 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Azure atp](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft 云应用安全性](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)的最低要求。
 
 ## <a name="stakeholders-and-sign-off"></a>利益干系人和签署
-以下部分用于确定项目中涉及的所有利益干系人以及可能需要签署、查看或随时通知的所有利益干系人，无论是评估还是运行试点。
+确定项目中涉及的所有利益干系人以及可能需要签署、查看或随时通知的所有利益干系人，无论是评估还是运行试点项目。
 
 >[!NOTE]
 >并非所有组织都可能具有此类角色的安全组织成熟度。 在这种情况下，请与您的领导团队联系，了解审阅和批准责任。
@@ -88,13 +89,13 @@ ms.locfileid: "48367997"
 
 -   I = 此项目的通知
 
-| 名称                 | 角色                                                                                                                                                                                                          | 操作 |
+| 名称                 | Role                                                                                                                                                                                                          | 操作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 输入名称和电子邮件 | **首席信息安全专员 (CISO) ** *作为新技术部署的组织中充当承办人的执行者。*                                                  | 就     |
 | 输入名称和电子邮件 | "**网络防护运营中心" (CDOC) ** *来自 CDOC 团队的代表，负责定义如何将此更改与客户安全操作团队中的过程相一致。*       | 就     |
 | 输入名称和电子邮件 | **安全***团队中的一名代表，负责定义如何将此更改与组织中的核心安全体系结构保持一致。*                         | R      |
 | 输入名称和电子邮件 | **工作场所架构师***由 IT 团队负责定义此更改与组织中的核心工作区体系结构的对齐方式。*                             | R      |
-| 输入名称和电子邮件 | **安全分析员***来自 CDOC 团队的代表，可以通过安全操作的角度提供对此更改的检测功能、用户体验和总体有用性的输入。* | I      |
+| 输入名称和电子邮件 | **安全分析员***来自 CDOC 团队的代表，可提供有关安全操作透视的检测功能、用户体验以及此更改的总体有用性的反馈。* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>准备 Azure Active Directory
 如果已启用本地 Active directory 和 Azure Active Directory 之间的同步，请跳过此步骤。 查看 Azure Active Directory 中现有的最佳实践文档。 以下步骤经过优化，可评估或运行试点 Microsoft 威胁防护项目。
@@ -127,13 +128,13 @@ ms.locfileid: "48367997"
 
 
 ## <a name="configuration-order"></a>配置顺序
-下表指出 Microsoft 建议为试用版实验室或试点环境部署配置 Microsoft 威胁防护组件的顺序。
+下表指示 Microsoft 建议为试用版实验室或试点环境部署配置 Microsoft 威胁防护组件的顺序。
 
 | 组件                               | 说明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 配置顺序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|Azure 高级威胁防护|Azure ATP 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。 <br> [了解详细信息](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
-|Microsoft Cloud App Security| Microsoft 云应用安全是一个云访问安全代理 (CASB) ，可在多个云上运行。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+| Office 365 高级威胁防护| Office 365 ATP 将保护您的组织免受电子邮件、链接 (Url) 和协作工具带来的恶意威胁的侵扰。 <br> [了解更多信息。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                   |
+|Azure 高级威胁防护|Azure ATP 使用 Active Directory 信号识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。 <br> [了解详细信息](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 双面 |
+|Microsoft Cloud App Security| Microsoft 云应用安全是一个云访问安全代理 (CASB) ，可在多个云上运行。 它提供丰富的可见性、控制数据旅行和完善的分析，以跨所有云服务识别和防御威胁。 <br> [了解详细信息](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |第三章                   |
 |Microsoft Defender 高级威胁防护 | Microsoft Defender ATP 终结点检测和响应功能提供了准实时且可操作的高级攻击检测。 安全分析员可以有效地确定警报的优先级，了解整个泄露范围，并采取响应措施来修正威胁。 <br> [了解更多信息。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>后续步骤
