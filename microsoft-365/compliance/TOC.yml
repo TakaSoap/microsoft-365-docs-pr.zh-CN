@@ -250,6 +250,8 @@
           href: how-dlp-works-between-admin-centers.md
         - name: 在 DLP 策略中使用灵敏度标签作为条件（预览版）
           href: dlp-sensitivity-label-as-condition.md
+        - name: 为非 Microsoft 云应用使用数据丢失防护策略
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
 - name: 管理信息治理
   items:
     - name: 治理数据
