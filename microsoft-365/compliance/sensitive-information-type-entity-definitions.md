@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235568"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430429"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -146,7 +146,7 @@ ms.locfileid: "48235568"
 
 ### <a name="format"></a>Format
 
-具有或不具有银行状态分支号码的6到 twn 位数字
+具有或不包含银行状态分支编号的6到10个数字
 
 ### <a name="pattern"></a>模式
 
@@ -808,7 +808,7 @@ national id
 
 - reisepassnummer
 - reisepasse
-- Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -1621,8 +1621,7 @@ national id
 - 注册
 - registrationsnumme
 - registrierung
-- social security number
-
+- 社会安全号码
 - ssn#
 - ssn
 - steuernummer
@@ -2162,8 +2161,7 @@ national id
 - 个人编号
 - 个人号码
 - personalidnumber#
-- social security number
-
+- 社会安全号码
 - ssn#
 - ssn
 - 统一的民事 id
@@ -3096,7 +3094,7 @@ master cards
 
 - carte blanche
 - carteblanche
-- credit card
+- 信用卡
 - 收件人#
 - cc #：
 - 过期日期
@@ -4037,8 +4035,7 @@ número do cartão
 - rodné číslo
 - ssn
 - ssn#
-- social security number
-
+- 社会安全号码
 - tax id
 
 - 税号标识编号
@@ -4305,8 +4302,7 @@ número do cartão
 - skat kode
 - skat nummer
 - skattenummer
-- social security number
-
+- 社会安全号码
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5321,8 +5317,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - personalidnumber#
 - personbeteckning
 - personnummer
-- social security number
-
+- 社会安全号码
 - sosiaaliturvatunnus
 - tax id
 
@@ -6026,21 +6021,21 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
 
-- Nr-Führerschein-nr 
+- Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- Führerschein-nr 
-- Fuhrerschein 
-- Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein-nr 
 - N-Fuhrerschein 
 - N-Fuehrerschein
-- Nr-Führerschein-nr 
+- Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- Führerschein-nr 
-- Fuhrerschein 
-- Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein-nr 
 - N-Fuhrerschein 
 - N-Fuehrerschein 
@@ -6161,7 +6156,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 - reisepasse
 - reisepassnummer
-- Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -7193,7 +7188,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 
 ### <a name="keywords"></a>关键字
 
-无
+None
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 diseases (ICD-10-CM) 
@@ -8550,8 +8545,7 @@ national id
 registration number
 - 收入编号
 - 社会保险号
-- social security number
-
+- 社会安全号码
 - 州税码
 - 税文件编号
 - tax id
@@ -11276,8 +11270,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - rč
 - rodne cislo
 - rodné číslo
-- social security number
-
+- 社会安全号码
 - ssn#
 - ssn
 - személyi igazolvány szám
@@ -11979,7 +11972,7 @@ national id
 
 ### <a name="keywords"></a>关键字
 
-无
+None
 
 ## <a name="spain-tax-identification-number"></a>西班牙纳税标识号
 此敏感信息类型仅可用于以下内容：
@@ -12631,8 +12624,7 @@ national id
 - pid
 - 保险号
 - personalidno#
-- social security number
-
+- 社会安全号码
 - 个人 id 号
 - 个人识别码。
 - insuranceno#
@@ -13133,8 +13125,7 @@ OR
 
 - protection act
 - 方面
-- social security number
-
+- 社会安全号码
 - insurance application
 
 - medical application
