@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 522f4900bb9d2746c16eaf2172d756e2517e75c3
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412246"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430135"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>分析字符串
 您可以使用多种函数来有效处理需要分析或转换的字符串。 
 
-| 字符串 | 函数 | 用法示例 |
+| String | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
 | Paths | [parse_path ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |

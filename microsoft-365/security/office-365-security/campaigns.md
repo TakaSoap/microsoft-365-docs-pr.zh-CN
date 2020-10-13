@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: 了解 Office 365 高级威胁防护中的 Campaigns Views。
-ms.openlocfilehash: 333e9c03cea9f16393169396ca016b09fd6a359d
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 00af3f241bc1d9fd2cae9ebae0cdec7817679ed2
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413970"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430569"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的 Campaign Views
 

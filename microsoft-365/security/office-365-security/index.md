@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格安全配置等。 了解您拥有的功能，以及如何保护属性。
-ms.openlocfilehash: d650a02faa21ac6ade39506d2c423dd319951bef
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413050"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430688"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全概述
 
