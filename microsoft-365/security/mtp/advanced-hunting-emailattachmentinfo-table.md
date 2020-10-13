@@ -17,46 +17,46 @@ manager: dansimp
 audience: ITPro
 mms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 47dee1cd86aa618f40572f050025913095efba66
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: dcacc31f8ea2546cbf90e45a4323a60670a98458
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412966"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48429835"
 ---
-# <a name="emailattachmentinfo"></a><span data-ttu-id="9e1cf-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="9e1cf-104">EmailAttachmentInfo</span></span>
+# <a name="emailattachmentinfo"></a><span data-ttu-id="74567-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="74567-104">EmailAttachmentInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="9e1cf-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="9e1cf-105">**Applies to:**</span></span>
-- <span data-ttu-id="9e1cf-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="9e1cf-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="74567-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="74567-105">**Applies to:**</span></span>
+- <span data-ttu-id="74567-106">Microsoft 威胁防护</span><span class="sxs-lookup"><span data-stu-id="74567-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="9e1cf-107">[高级搜寻](advanced-hunting-overview.md)架构中的 `EmailAttachmentInfo` 表包含有关由 Office 365 ATP 处理的电子邮件附件的信息。</span><span class="sxs-lookup"><span data-stu-id="9e1cf-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP.</span></span> <span data-ttu-id="9e1cf-108">使用此参考来构建从此表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="9e1cf-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="74567-107">[高级搜寻](advanced-hunting-overview.md)架构中的 `EmailAttachmentInfo` 表包含有关由 Office 365 ATP 处理的电子邮件附件的信息。</span><span class="sxs-lookup"><span data-stu-id="74567-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Office 365 ATP.</span></span> <span data-ttu-id="74567-108">使用此参考来构建从此表返回信息的查询。</span><span class="sxs-lookup"><span data-stu-id="74567-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="9e1cf-109">有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="9e1cf-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="74567-109">有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。</span><span class="sxs-lookup"><span data-stu-id="74567-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="9e1cf-110">列名称</span><span class="sxs-lookup"><span data-stu-id="9e1cf-110">Column name</span></span> | <span data-ttu-id="9e1cf-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="9e1cf-111">Data type</span></span> | <span data-ttu-id="9e1cf-112">说明</span><span class="sxs-lookup"><span data-stu-id="9e1cf-112">Description</span></span> |
+| <span data-ttu-id="74567-110">列名称</span><span class="sxs-lookup"><span data-stu-id="74567-110">Column name</span></span> | <span data-ttu-id="74567-111">数据类型</span><span class="sxs-lookup"><span data-stu-id="74567-111">Data type</span></span> | <span data-ttu-id="74567-112">说明</span><span class="sxs-lookup"><span data-stu-id="74567-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="9e1cf-113">datetime</span><span class="sxs-lookup"><span data-stu-id="9e1cf-113">datetime</span></span> | <span data-ttu-id="9e1cf-114">记录事件的日期和时间</span><span class="sxs-lookup"><span data-stu-id="9e1cf-114">Date and time when the event was recorded</span></span> |
-| `AttachmentId` | <span data-ttu-id="9e1cf-115">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-115">string</span></span> | <span data-ttu-id="9e1cf-116">唯一电子邮件附件标识符</span><span class="sxs-lookup"><span data-stu-id="9e1cf-116">Unique email attachment identifier</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="9e1cf-117">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-117">string</span></span> | <span data-ttu-id="9e1cf-118">由 Microsoft 365 生成的电子邮件的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="9e1cf-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `SenderFromAddress` | <span data-ttu-id="9e1cf-119">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-119">string</span></span> | <span data-ttu-id="9e1cf-120">发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到）</span><span class="sxs-lookup"><span data-stu-id="9e1cf-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
-| `RecipientEmailAddress` | <span data-ttu-id="9e1cf-121">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-121">string</span></span> | <span data-ttu-id="9e1cf-122">收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="9e1cf-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
-| `FileName` | <span data-ttu-id="9e1cf-123">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-123">string</span></span> | <span data-ttu-id="9e1cf-124">录制操作所应用到的文件的名称</span><span class="sxs-lookup"><span data-stu-id="9e1cf-124">Name of the file that the recorded action was applied to</span></span> |
-| `FileType` | <span data-ttu-id="9e1cf-125">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-125">string</span></span> | <span data-ttu-id="9e1cf-126">文件扩展名类型</span><span class="sxs-lookup"><span data-stu-id="9e1cf-126">File extension type</span></span> |
-| `SHA256` | <span data-ttu-id="9e1cf-127">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-127">string</span></span> | <span data-ttu-id="9e1cf-128">录制操作所应用到的文件的 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="9e1cf-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="9e1cf-129">通常不会填充此字段 — 可用时使用 SHA1 列。</span><span class="sxs-lookup"><span data-stu-id="9e1cf-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
-| `MalwareFilterVerdict` | <span data-ttu-id="9e1cf-130">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-130">string</span></span> | <span data-ttu-id="9e1cf-131">电子邮件筛选堆栈关于电子邮件是否包含恶意软件的裁定：恶意软件，非恶意软件</span><span class="sxs-lookup"><span data-stu-id="9e1cf-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
-| `MalwareDetectionMethod` | <span data-ttu-id="9e1cf-132">string</span><span class="sxs-lookup"><span data-stu-id="9e1cf-132">string</span></span> | <span data-ttu-id="9e1cf-133">用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、ATP 安全附件</span><span class="sxs-lookup"><span data-stu-id="9e1cf-133">Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments</span></span> |
+| `Timestamp` | <span data-ttu-id="74567-113">datetime</span><span class="sxs-lookup"><span data-stu-id="74567-113">datetime</span></span> | <span data-ttu-id="74567-114">记录事件的日期和时间</span><span class="sxs-lookup"><span data-stu-id="74567-114">Date and time when the event was recorded</span></span> |
+| `AttachmentId` | <span data-ttu-id="74567-115">string</span><span class="sxs-lookup"><span data-stu-id="74567-115">string</span></span> | <span data-ttu-id="74567-116">唯一电子邮件附件标识符</span><span class="sxs-lookup"><span data-stu-id="74567-116">Unique email attachment identifier</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="74567-117">string</span><span class="sxs-lookup"><span data-stu-id="74567-117">string</span></span> | <span data-ttu-id="74567-118">由 Microsoft 365 生成的电子邮件的唯一标识符</span><span class="sxs-lookup"><span data-stu-id="74567-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `SenderFromAddress` | <span data-ttu-id="74567-119">string</span><span class="sxs-lookup"><span data-stu-id="74567-119">string</span></span> | <span data-ttu-id="74567-120">发件人标题中的发件人电子邮件地址（电子邮件收件人在其电子邮件客户端上可以看到）</span><span class="sxs-lookup"><span data-stu-id="74567-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
+| `RecipientEmailAddress` | <span data-ttu-id="74567-121">string</span><span class="sxs-lookup"><span data-stu-id="74567-121">string</span></span> | <span data-ttu-id="74567-122">收件人的电子邮件地址，或通讯组列表扩展后收件人的电子邮件地址</span><span class="sxs-lookup"><span data-stu-id="74567-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
+| `FileName` | <span data-ttu-id="74567-123">string</span><span class="sxs-lookup"><span data-stu-id="74567-123">string</span></span> | <span data-ttu-id="74567-124">录制操作所应用到的文件的名称</span><span class="sxs-lookup"><span data-stu-id="74567-124">Name of the file that the recorded action was applied to</span></span> |
+| `FileType` | <span data-ttu-id="74567-125">string</span><span class="sxs-lookup"><span data-stu-id="74567-125">string</span></span> | <span data-ttu-id="74567-126">文件扩展名类型</span><span class="sxs-lookup"><span data-stu-id="74567-126">File extension type</span></span> |
+| `SHA256` | <span data-ttu-id="74567-127">string</span><span class="sxs-lookup"><span data-stu-id="74567-127">string</span></span> | <span data-ttu-id="74567-128">录制操作所应用到的文件的 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="74567-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="74567-129">通常不会填充此字段 — 可用时使用 SHA1 列。</span><span class="sxs-lookup"><span data-stu-id="74567-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
+| `MalwareFilterVerdict` | <span data-ttu-id="74567-130">string</span><span class="sxs-lookup"><span data-stu-id="74567-130">string</span></span> | <span data-ttu-id="74567-131">电子邮件筛选堆栈关于电子邮件是否包含恶意软件的裁定：恶意软件，非恶意软件</span><span class="sxs-lookup"><span data-stu-id="74567-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
+| `MalwareDetectionMethod` | <span data-ttu-id="74567-132">string</span><span class="sxs-lookup"><span data-stu-id="74567-132">string</span></span> | <span data-ttu-id="74567-133">用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、ATP 安全附件</span><span class="sxs-lookup"><span data-stu-id="74567-133">Method used to detect malware in the email: Antimalware engine, File reputation, ATP Safe Attachments</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="9e1cf-134">相关主题</span><span class="sxs-lookup"><span data-stu-id="9e1cf-134">Related topics</span></span>
-- [<span data-ttu-id="9e1cf-135">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="9e1cf-135">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="9e1cf-136">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="9e1cf-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="9e1cf-137">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="9e1cf-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="9e1cf-138">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="9e1cf-138">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="9e1cf-139">了解架构</span><span class="sxs-lookup"><span data-stu-id="9e1cf-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="9e1cf-140">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="9e1cf-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="74567-134">相关主题</span><span class="sxs-lookup"><span data-stu-id="74567-134">Related topics</span></span>
+- [<span data-ttu-id="74567-135">高级搜寻概述</span><span class="sxs-lookup"><span data-stu-id="74567-135">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="74567-136">了解查询语言</span><span class="sxs-lookup"><span data-stu-id="74567-136">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="74567-137">使用共享查询</span><span class="sxs-lookup"><span data-stu-id="74567-137">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="74567-138">跨设备、电子邮件、应用和标识进行查寻</span><span class="sxs-lookup"><span data-stu-id="74567-138">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="74567-139">了解架构</span><span class="sxs-lookup"><span data-stu-id="74567-139">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="74567-140">应用查询最佳做法</span><span class="sxs-lookup"><span data-stu-id="74567-140">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
