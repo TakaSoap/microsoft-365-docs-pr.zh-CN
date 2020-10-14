@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: d3ca55a4d8357d10b79bd8e87ddc3350efa2845e
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326873"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456419"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
@@ -53,13 +53,13 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 您无需使用此方法在管理中心中添加位置，因为它们会在城市分辨率中自动标识。 您不能使用 Windows 定位服务在城市中显示多个办公室位置。 在上传之前，位置信息还会四舍五入到最接近的300米 x 300 米，这样就不能访问更精确的位置信息。
 
-计算机应具有 Wi-fi 网络，而不是以太网电缆。 具有以太网电缆的计算机没有准确的位置信息。
+计算机应具有 Wi-Fi 网络，而不是以太网电缆。 具有以太网电缆的计算机没有准确的位置信息。
 
 满足这些先决条件后，度量样本和办公室位置应会在24小时后开始显示。
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 添加位置并提供 LAN 子网信息
 
-对于此选项，Windows 定位服务和 Wi-fi 都不是必需的。 您需要在每台计算机上安装了 OneDrive for Windows 版本 **20.161** 或更高版本。
+对于此选项，Windows 定位服务和 Wi-Fi 都不是必需的。 您需要在每台计算机上安装了 OneDrive for Windows 版本 **20.161** 或更高版本。
 
 此外，还需要在管理中心网络连接页面中添加位置，或从 CSV 文件中导入这些位置。 添加的位置必须包含 office LAN 子网信息。
 

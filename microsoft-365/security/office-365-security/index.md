@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Office 365 中的安全性（从 EOP 到 ATP 计划1和2）、标准和严格安全配置等。 了解您拥有的功能，以及如何保护属性。
-ms.openlocfilehash: 94fce99d029d21524bc60af4622fda7ee38980e7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 256a24a7816a40e1bd60c687a875f84e605f5208
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430688"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456467"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全概述
 
@@ -88,7 +88,7 @@ Office 365 安全性的核心是 EOP 保护。 ATP P1 包含 EOP 中的。 ATP P
 |---------|---------|---------|
 | 技术包括：<ul><li>垃圾邮件 (spam)</li><li>诈骗</li><li>受到</li><li>批量邮件</li><li>欺骗智能</li><li>模拟检测</li><li>管理员隔离</li><li>假阳性和漏报的管理员和用户提交</li><li>允许/阻止 Url 和文件</li><li>报告</li></u1>|<li>审核日志搜索</li><li>邮件跟踪</li>|<li>零小时自动清除 (ZAP) </li><li>"允许" 和 "阻止" 列表的优化和测试</li>|
 
-如果您想要深入了解 EOP，请 **[跳转到本文](https://review.docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-21vianet&branch=tp_EOPOverview)**。
+如果您想要深入了解 EOP，请 **[跳转到本文](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide#:~:text=Exchange%20Online%20Protection%20%28EOP%29%20is%20the%20cloud-based%20filtering,is%20also%20available%20in%20the%20following%20on-premises%20scenarios%3A)**。
 
 由于这些产品是累积的，因此，如果你评估 ATP P1 并决定订阅它，你将添加这些功能。
 

@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545724"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456313"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 到达支持终止
 
-Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 达到其支持的结束时间时，Microsoft 将不再提供以下内容：
+Office 2010 在2020年10月13日到达其支持的结束。 Microsoft 将不再提供以下内容：
 
 - 问题的技术支持
 
@@ -39,7 +39,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
 
 - 发现的漏洞的安全修补程序
 
-有关详细信息，请参阅 [Office 2010 终止支持路线图](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) 。
+有关详细信息，请参阅 [Office 2010 终止支持路线图](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) 。
 
  **这是正确的主题吗？**
   
@@ -57,7 +57,7 @@ Office 2010 将在2020年10月13日到达其支持的结束。 当 Office 2010 �
   
 ## <a name="step-1---check-system-requirements"></a>第1步-检查系统要求
 
-[检查 office 的系统要求](https://products.office.com/office-system-requirements) ，以确保您的设备与 office 的最新版本兼容。 例如，Office 的较新版本不能安装在运行 Windows XP 或 Windows Vista 的计算机上。
+[检查 office 的系统要求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) ，以确保您的设备与 office 的最新版本兼容。 例如，Office 的较新版本不能安装在运行 Windows XP 或 Windows Vista 的计算机上。
   
 > [!TIP]
 > 如果你的组织中有用户在其电脑或笔记本电脑上运行较旧版本的 Windows，我们建议升级到 Windows 10。 Windows 7 已到达支持终止。 有关详细信息，请参阅 [Windows 7 2020 年1月结束](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) 的阅读支持。

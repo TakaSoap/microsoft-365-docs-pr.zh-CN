@@ -23,18 +23,18 @@ f1.keywords:
 - NOCSH
 description: 开始规划从 Office 2010 服务器和客户端应用程序进行的升级，因为支持即将结束，且自定义支持协议不可用。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d45075431e23bf3aae0b6052b1db708e704134f
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 879aae71f703d8a26b3d6e640eff6d30a81febac
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384851"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456347"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>帮助从 Office 2010 服务器和客户端升级的相关资源
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-Office 2010 和 Exchange 2010 将于 **2020 年 10 月13日**终止支持。
+Office 2010 和 Exchange 2010 已达到其在 **10 月 13 2020 日**的支持终止。
 
 SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日**终止支持。
 
