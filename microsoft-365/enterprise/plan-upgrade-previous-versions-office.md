@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的用户帮助他们规划升级的资源。
-ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 257f66ab2f542f18c0a1eb2d503e0bf87e13d184
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384559"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464416"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>计划升级自 Office 2007 或 Office 2010 服务器和客户端
 
@@ -29,7 +29,7 @@ ms.locfileid: "48384559"
 
 如果您的组织使用的是较旧版本的 Office 产品和服务器，这是开始规划升级的良好时间。 Office 2007 产品和服务已达到其 [支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 对于 Office 2010 产品和服务：
 
-- Office 2010 和 Exchange 2010 将于 **2020 年 10 月13日**终止支持。 
+- Office 2010 和 Exchange 2010 已达到其在 **10 月 13 2020 日**的支持终止。 
 - SharePoint 2010 和 Project Server 2010 将于 **2021 年 4 月 13 日**终止支持。 
 
 有关详细信息，请参阅 [从 Office 2010 服务器和客户端升级](upgrade-from-office-2010-servers-and-products.md)。

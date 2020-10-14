@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9988a822880db43feebb6ef007c39bd59c5ce6c7
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446507"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464452"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>面向企业架构师的 Microsoft 云图解
 
@@ -59,7 +59,7 @@ IT 决策者和架构师可以使用这些资源来确定其工作负载的理�
 
 |**Item**|**说明**|
 |:-----|:-----|
-|[![Teams 逻辑体系结构海报缩略图](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2019年7月更新    |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单事件迁移流</li><li>分阶段迁移流</li><li>租户移动或拆分流</li></ul>|
+|[![Teams 逻辑体系结构海报缩略图](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>10月2020更新    |此模型包含： <ul><li>商业方案到体系结构方法的映射</li><li>设计注意事项</li><li>单个事件迁移流示例</li><li>分阶段迁移流程示例</li><li>租户移动或拆分流示例</li></ul>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>面向企业架构师的 Microsoft 云安全性

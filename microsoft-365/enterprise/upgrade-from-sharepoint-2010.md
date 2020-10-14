@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: 查找要从 SharePoint 2010 和 Sharepoint Server 2010 升级的信息和资源，以支持在10月13日的2020上提供。
+description: 查找要从 SharePoint 2010 和 Sharepoint Server 2010 升级的信息和资源，以支持在年4月 13 2021 日结束时实现。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88970c83f2497f029635cb987b6b613ea662dc07
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f406c30befbd1202fa6590352bd32f6d3102ae60
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948016"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464272"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>升级自 SharePoint 2010
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 Microsoft SharePoint 2010 和 SharePoint Server 2010 将在 **年4月 13 2021 日**到达支持的末尾。 本文详细介绍了可帮助您在 Microsoft 365 中将现有的 SharePoint Server 2010 数据迁移到 SharePoint Online 或升级本地 SharePoint Server 2010 环境的资源。
 

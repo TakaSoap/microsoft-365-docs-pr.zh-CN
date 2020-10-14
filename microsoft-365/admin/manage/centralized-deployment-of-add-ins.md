@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235414"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464046"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -43,10 +43,10 @@ ms.locfileid: "48235414"
 
 加载项最长可能需要24小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 集中部署加载项需要用户使用 Microsoft 365 应用程序企业版或 Microsoft 365 商业高级 (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
-您可以查看以下 Office 和 Exchange 的特定要求，或使用[集中部署兼容性检查器](#centralized-deployment-compatibility-checker)。
+您可以查看以下 Office 和 Exchange 的特定要求，或使用 [集中部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
   
@@ -134,7 +134,8 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
     
 - 支持的邮箱 - 如果使用已启用 OAuth 的邮箱
 
-
+> [!NOTE]
+> 使用中央部署 PowerShell 模块时，不支持多重身份验证。
   
 ## <a name="user-and-group-assignments"></a>用户和组分配
 
@@ -171,4 +172,3 @@ Microsoft Exchange 存储组织的租户中的加载项清单。 部署外接程
 |Office  <br/> | Charles/Fiddler 日志  <br/>  租户 ID（ [了解如何操作](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx)）  <br/>  CorrelationID. 查看其中一个 office 页面的来源，查找相关 ID 值并将其发送给支持人员：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |丰富的客户端（Windows、Mac）  <br/> | Charles/Fiddler 日志  <br/>  客户端应用程序的内部版本号 (最好是从 **文件/帐户**) 中的屏幕截图  <br/> |
    
-

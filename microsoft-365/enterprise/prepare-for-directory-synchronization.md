@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何通过使用此方法来准备将用户预配到 Microsoft 365 （使用目录同步）和长期优点。
-ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390169"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464236"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
@@ -100,7 +100,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
   - 如果该属性存在于用户对象中，它将与 Microsoft 365 同步，但 Microsoft 365 不需要或使用它。
   - 最大字符数：64
 
-- **mail**
+- **信箱**
 
   - 属性值在目录中必须是唯一的。
 
@@ -159,7 +159,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
   - At 符号后面的域名的最大字符数 ( @ ) ：48
   - 无效字符： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
   - 允许的字符： A – Z、a-z、0–9、"。 - _ ! # ^ ~
-  - 元音变音符也是一个无效字符。
+  - 带有变音标记的字母（如元音变音、重音符号和颚化符）是无效字符。
   - 每个 **userPrincipalName** 值中都需要 @ 字符。
   - @ 符在每个 **userPrincipalName** 值中不能作为第一个字符。
   - 用户名的结尾不能以句点 ( ) 、与号 (&amp;) 、空格或 at 符号 ( @ ) 。

@@ -20,24 +20,32 @@ description: '了解在不同区域中为 Microsoft 365 for business 订阅收�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434057"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464092"
 ---
 # <a name="tax-information"></a>税务信息
 
-你通过 Microsoft 进行的 Microsoft 365 管理中心购买的税费由你的企业地址决定，如果不同，则由你的送货地址决定。 如果你使用的是美国，则必须提供联邦雇主标识号（FEIN）。
+在购买 Microsoft 365 产品和服务时，可以通过以下两种方式之一来确定所支付的税：你的公司地址或你的送货地址（如果不同）。 如果您的组织在美国，则必须 (FEIN) 提供联邦雇主标识号。
 
-这些国家/地区的企业可以提供其 VAT 号码：
+以下国家/地区的企业可以提供其 VAT 号码或当地等价国家/地区：
 
 :::row:::
     :::column:::
+- 亚美尼亚
+- 澳大利亚
 - 奥地利
+- 巴哈马
+- 孟加拉
+- 白俄罗斯
 - 比利时
+- 巴西
 - 保加利亚
+- 智利
+- 哥伦比亚
 - 克罗地亚
 - 塞浦路斯
 - 捷克共和国
@@ -48,112 +56,90 @@ ms.locfileid: "45434057"
 - 德国
 - 希腊
 - 匈牙利
+- 印度
+- 印度尼西亚
 - 爱尔兰
+- 马恩岛
 - 意大利
-- 拉脱维亚
     :::column-end:::
     :::column:::
+- 韩国
+- 拉脱维亚
 - 列支敦士登
 - 立陶宛
 - 卢森堡
+- 马来西亚
 - 马耳他
+- 墨西哥
 - 摩纳哥
 - 荷兰
+- 新西兰
 - 挪威
 - 波兰
 - 葡萄牙
 - 罗马尼亚
+- 沙特阿拉伯
 - 斯洛伐克
+- 斯洛文尼亚
 - 南非
 - 西班牙
 - 瑞典
 - 瑞士
+- 中国台湾
+- 土耳其
+- 阿拉伯联合酋长国
 - 英国
     :::column-end:::
 :::row-end:::
 
-这些国家/地区可在其付费帐户信息中提供其 VAT 号码或当地等价号码。
-
-|宣传| 税标识符 |
-|------|----------------|
-| 澳大利亚 | ABN （可选） |
-| 巴西 | CNPJ （必需） |
-| 印度 | GSTIN （可选），PAN ID （必需） |
-| 马恩岛 | VAT ID （可选） |
-| 新西兰 | GST 注册号码（可选） |
-| 摩纳哥 | VAT ID （可选） |
-| 中国台湾 | VAT ID （可选） |
+* 对于列出的大部分国家/地区，提供 VAT 号码或当地等价的选项是可选的。 对于巴西和印度，税标识符编号是必需的。
 
 > [!Note]
 > 如果需要联系支持人员，请将您的 FEIN、VAT 号码或当地等效项准备就绪，以提供给支持代理。
 
-## <a name="what-tax-will-i-be-charged"></a>我应该支付哪种税款？
+## <a name="europe-the-middle-east-and-africa-emea"></a>欧洲、中东和非洲 (EMEA)
 
-请查明以下地区应交纳哪种税。你也可以通过向支持提供适当的文档[申请免税待遇](tax-information.md#apply-for-tax-exempt-status)。
+当你在欧盟购买 Microsoft 365 服务时，此采购受 Value-Added 增值税 (VAT) 。
   
-### <a name="europe-the-middle-east-and-africa-emea"></a>欧洲、中东和非洲 (EMEA)
-
-当你在欧盟购买 Microsoft 365 服务时，此购买将根据增值税（VAT）支付。
-  
-- 如果你在欧盟成员国内，并且未提供有效的当地 VAT ID，Microsoft Ireland Operations Ltd. 将基于你的帐户所设置的帐单邮寄国家/地区，适用当地当前的 VAT 税率。
+- 如果你处于欧盟成员状态，并且你不提供有效的本地 VAT ID，Microsoft 爱尔兰运营公司将根据你的帐户设置的计费国家/地区应用当前的本地 VAT 税率。
 
 - 如果你在瑞士或列支敦士登境内，无论你是否提供 VAT ID，都会应用当前瑞士 VAT 税率。
 
-- 通常情况下，如果你位于欧盟和瑞士/列支敦士登以外的 EMEA 国家/地区，不会通过 Microsoft Ireland Operations Ltd. 征收 VAT。
+- 通常情况下，如果您位于欧盟和瑞士/列支敦士登之外的 EMEA 国家/地区，则 VAT 不会由 Microsoft 爱尔兰运营公司付费。
 
-- 你的 VAT ID 必须在 VAT 信息交换系统 (VIES) 中可用于验证，我们才能对其进行验证。如果你的 VAT ID 不可验证，请联系当地税务机构。
+- 你的 VAT ID 必须在 VAT 信息交换系统 (VIES) 中可用于验证，我们才能对其进行验证。 如果无法验证您的 VAT ID，请联系当地税务主管机构。
 
-你可能有资格享受 VAT 零税率：
+如果满足以下条件，则可能会向其授予 VAT 级零等级：
   
-- **如果你处于爱尔兰之外的欧盟成员状态：** 您可以提供有效的本地 VAT ID。 这将 entitle Microsoft 爱尔兰的操作公司。若要对交易进行 VAT 零评级。 但是，您可能有当地的增值税会计义务，如果你有任何顾虑，请与你的税务 advisers 核实。 有关说明，请参阅下面的 "添加你的 VAT ID （仅欧盟国家/地区）"。
+- **你处于爱尔兰之外的欧盟成员状态：** 您可以提供有效的本地 VAT ID。 这样一来，Microsoft 爱尔兰运营公司就可以对交易进行评级零评级。 但是，您可能有本地 VAT 会计义务。 如果你有任何顾虑，请咨询你的税务 advisers。 有关说明，请参阅 [添加你的 VAT ID](#add-your-vat-id)。
 
-- **如果你在爱尔兰境内且持有相关有效的 VAT 免税证书：** Microsoft Ireland Operations Ltd. 可能有权从交易中免除 VAT。如果无证书，无论你是否提供 VAT ID，Microsoft Ireland Operations Ltd. 都会应用当前 VAT 税率。
+- **你在爱尔兰，并具有相关的有效 VAT 豁免认证：** Microsoft 爱尔兰运营部门公司可能有权从 VAT 中免除交易。 如果不这样做，Microsoft 爱尔兰操作公司将应用当前的爱尔兰 VAT 税率，无论您是否提供 VAT ID。
 
-::: moniker range="o365-worldwide"
+## <a name="asia-pacific-countries-apac"></a>亚太国家/地区 (APAC)
 
-#### <a name="add-your-vat-id-eu-countries-only"></a>添加 VAT ID（仅限欧盟国家/地区）
+如果你是由 Microsoft 区域销售办事处付费，则为 Microsoft 区域销售 Pte。 有限公司 "。 显示在发票上，您可能需要支付任何适用的增值、销售或类似的税。
+  
+如果您是从以下位置之一计费的，则应用当前当地税。 该位置包含 [在您的发票中](view-your-bill-or-invoice.md)：
+  
+- 印度
+- 日本
+- 韩国
+- 新加坡
+- 中国台湾
+
+## <a name="north-central-and-south-america"></a>北美、中美和南美
+
+在美国、加拿大、墨西哥、智利和哥伦比亚，根据产品性质和您的位置适用不同的税率。
+  
+如果你的帐单由 Microsoft Corporation 完成 ([请查看你的发票](view-your-bill-or-invoice.md)) ，并在美国、加拿大、波多黎各、智利和哥伦比亚的外部注册 Microsoft 365，然后税收通常不收费。
+
+## <a name="add-your-vat-id"></a>添加你的 VAT ID
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-
-2. 查找要更新的订阅的订阅卡。
-
-3. 在 "**设置" & "操作**" 部分，选择 "**编辑服务使用地址**"。
-
-4. 在 "**编辑服务使用地址**" 页上的 " **VAT 号码**" 框中，输入您的 VAT ID，包括前缀，且不包含任何空格。 选择“**保存**”。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### <a name="add-your-vat-id-eu-countries-only"></a>添加 VAT ID（仅限欧盟国家/地区）
-  
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
-
-2. 选择订阅名称，然后选择 "**更多操作**" \> **编辑 VAT 编号**。
-  
-3. 在 "**编辑服务使用地址**" 页上的 " **VAT 号码**" 框中，输入您的 VAT ID，包括前缀，且不包含任何空格。 选择“**保存**”。
-
-::: moniker-end
-
-### <a name="asia-pacific-countries-apac"></a>亚太国家/地区 (APAC)
-
-如果为你开单的是 Microsoft Regional Sales 办公室，发票上将显示"Microsoft Regional Sales"，除非是内销，通常不会向你收取消费税或增值税 (VAT) 税费。
-  
-如果你是从另一个地区开单，将征收当地当前税费。你将在[发票](view-your-bill-or-invoice.md)上看到以下内容：
-  
-- 新加坡到新加坡
-
-- 韩国到韩国
-
-- 日本到日本
-
-- 台湾到台湾
-
-### <a name="north-central-and-south-america"></a>北美、中美和南美
-
-美国和加拿大根据你所在的位置征收各种税率。 在波多黎各，将征收本地增值税 (VAT) 费。
-  
-如果你的帐单是由 Microsoft Corporation （[请参阅你的发票](view-your-bill-or-invoice.md)）完成的，并且你在美国、加拿大和波多黎各之外注册了 microsoft 365，则通常不收取税款。
+2. 在 " **产品** " 选项卡上，选择要更新的订阅。
+3. 在 "订阅详细信息" 页上的 " **服务使用地址** " 部分，选择 " **编辑服务使用地址**"。
+4. 在 " **编辑服务使用地址** " 窗格上的 " **VAT 号码** " 框中，输入您的 vat ID，包括前缀，并且不带任何空格。
+5. 选择“**保存**”。
 
 ## <a name="how-taxes-are-calculated"></a>如何计算税金
 
@@ -161,27 +147,27 @@ ms.locfileid: "45434057"
 
 例如：
 
->*（单价 X 税率）X 数量 = 总销售税*
+>* (单位价格 X 税率) X 数量 = 总销售税*
 
-- 或 -
+-或者-
 
->（$1.29 X 0.095）X 100 = $12.25
+> ($1.29 X 0.095) X 100 = $12.25
 
 ## <a name="apply-for-tax-exempt-status"></a>申请免税状态
 
-如果您在市场上有资格享受免税状态，请[启动服务请求](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)来为您的组织建立免税状态。
-
-准备好以下文档：
+如果您在市场上有资格享受免税状态，请 [启动服务请求](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) 来为您的组织建立免税状态。
 
 |国家或地区 | 文档 |
 |------------------|----------------|
-| 美国 | 销售税豁免证书 |
-| 加拿大 | 豁免证书（或等效的授权书） |
-| 爱尔兰 | 13B/56A 税务豁免证书|
+| 加拿大 | 豁免证书 (或等效的授权信)  |
+| 智利 | IVA status/墨守成规 (Registro Unico Tributario)  |
+| 哥伦比亚 | IVA status/墨守成规 (Registro Unico Tributario)  |
 | 持有免税的国际组织 | 来自当地税务主管机构的认证/信函确认 |
+| 爱尔兰 | 13B/56A 税务豁免证书|
+| 美国 | 销售税豁免证书 |
 | 波多黎各 | Certificado de Compras Exentas |
   
 ## <a name="related-content"></a>相关内容
   
-[查看帐单或发票](view-your-bill-or-invoice.md)（文章） \
-[了解帐单或发票](understand-your-invoice.md)（文章）
+[查看帐单或发票](view-your-bill-or-invoice.md) (文章) \
+[了解帐单或发票](understand-your-invoice.md) (文章) 

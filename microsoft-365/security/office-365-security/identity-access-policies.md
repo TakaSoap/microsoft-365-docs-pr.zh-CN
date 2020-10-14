@@ -16,12 +16,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1ad8f643741626c4cbb8534b4ed5ed7591010fe0
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399624"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464070"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -299,7 +301,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 |类型|属性|值|操作|
 |:---|:---------|:-----|:----|
-|密码|需要密码才能解锁移动设备|需要| Select |
+|Password|需要密码才能解锁移动设备|需要| Select |
 ||简单密码|阻止|Select|
 ||密码类型|设备默认值|Select|
 ||最短密码长度|6 |类型|

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446319"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464058"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -41,7 +41,7 @@ ms.locfileid: "48446319"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 
-1. 在 Microsoft 365 管理中心中，选择“**设置**”，然后查看“**文件和内容**”部分。
+1. 在 Microsoft 365 管理中心中，选择**设置**，然后查看**组织知识**部分。
 
 2. 在“**文件和内容**”部分中，选择“**自动内容理解**”。<br/>
 

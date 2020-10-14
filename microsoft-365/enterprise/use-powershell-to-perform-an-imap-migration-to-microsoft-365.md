@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 执行将 IMAP 迁移到 Microsoft 365
+title: 使用 PowerShell 将 IMAP 迁移到 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 了解如何使用 PowerShell 执行 Internet 邮件访问协议 (IMAP) 迁移到 Microsoft 365。
-ms.openlocfilehash: 6eb422455d0bdf31fa1859bd0231b68e5568748c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688006"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464440"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 执行将 IMAP 迁移到 Microsoft 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 将 IMAP 迁移到 Microsoft 365
 
 *此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
@@ -103,7 +103,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
  **Microsoft Exchange：**
   
-如果从 Microsoft Exchange 的 IMAP 实现迁移电子邮件，请将格式 **Domain/Admin_UserName/User_UserName** 用于 CSV 文件中的 **UserName** 属性。假设你从 Exchange 迁移 Terry Adams、Ann Beebe 和 Paul Cannon 的电子邮件，你有一个邮件管理员帐户，其中用户名是 **mailadmin**，密码是 **P@ssw0rd**。你的 CSV 文件应如下所示：
+如果你正在从 Microsoft Exchange 的 IMAP 实施迁移电子邮件，请在 CSV 文件中为 **UserName** 属性使用格式 **Domain/Admin_UserName/User_UserName** 。 假设你正在从 Exchange 迁移 Terry Adams、Ann Beebe 和 Paul Cannon 的电子邮件。 您有一个邮件管理员帐户，其中用户名是 **mailadmin** ，密码是 **P \@ ssw0rd**。 您的 CSV 文件应如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot：**
   
-对于支持简单身份验证和安全层 (SASL) 的 IMAP 服务器（如 Dovecot IMAP 服务器），使用格式 **User_UserName*Admin_UserName**，其中星号 (*) 为可配置的分隔符。假设你使用管理员凭据 **mailadmin** 和 **P@ssw0rd** 从 Dovecot IMAP 服务器迁移这些用户的电子邮件。你的 CSV 文件应如下所示：
+对于支持简单身份验证和安全层 (SASL) 的 IMAP 服务器（如 Dovecot IMAP 服务器），使用格式 **User_UserName*Admin_UserName** ，其中星号 ( * ) 为可配置的分隔符。 假设您要使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd**从 Dovecot IMAP 服务器迁移这些相同的用户电子邮件。 您的 CSV 文件应如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint：**
   
-如果从 Mirapoint Message Server 迁移电子邮件，请将格式 **#user@domain#Admin_UserName#** 用于管理员凭据。若要使用管理员凭据 **mailadmin** 和 **P@ssw0rd** 从 Mirapoint 迁移电子邮件，你的 CSV 文件应如下所示：
+如果要从 Mirapoint 邮件服务器迁移电子邮件，请使用 " **#user \@ 域 # Admin_UserName #** " 的格式，以获取管理员凭据。 若要使用管理员凭据 **mailadmin** 和 **P \@ ssw0rd**从 Mirapoint 迁移电子邮件，您的 CSV 文件将如下所示：
   
 ```powershell
 EmailAddress,UserName,Password

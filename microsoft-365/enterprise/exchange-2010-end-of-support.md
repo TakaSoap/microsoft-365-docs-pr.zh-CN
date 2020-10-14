@@ -3,7 +3,6 @@ title: Exchange 2010 支持终止路线图
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 即将停止支持。 将此规划路线图用作准备升级到 Exchange Online 或部署到本地 Exchange Server 的更新版本的指南。
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950816"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464248"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 支持终止路线图
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
-在 **2020 年10月 13**日，Exchange Server 2010 将达到支持的结尾。 如果尚未开始从 Exchange 2010 迁移到 Microsoft 365、Office 365 或 Exchange 2016，现在是开始规划的时间。
+Exchange Server 2010 在 **2020 年10月13日**到达其支持的结束。 如果尚未开始从 Exchange 2010 迁移到 Microsoft 365、Office 365 或 Exchange 2016，现在是开始规划的时间。
 
 ## <a name="what-does-end-of-support-mean"></a>支持终止的含义是什么？
 
-与几乎所有 Microsoft 产品一样，Exchange Server 都具有支持生命周期，在此期间我们提供了新的功能、缺陷修补程序、安全修补程序等。 此生命周期通常是从产品初始发布之日起10年的时间，而此生命周期的结束时间也称为产品的支持终止的期限。 当 Exchange 2010 在2020上到达其支持结束时，Microsoft 将不再提供：
+与几乎所有 Microsoft 产品一样，Exchange Server 都具有支持生命周期，在此期间我们提供了新的功能、缺陷修补程序、安全修补程序等。 此生命周期通常是从产品初始发布之日起10年的时间，而此生命周期的结束时间也称为产品的支持终止的期限。 由于 Exchange 2010 在2020年10月13日已达到其支持的结束时间，Microsoft 将不再提供：
 
 - 可能出现的问题的技术支持。
 - 针对所发现的问题的 Bug 修复，并且可能会影响服务器的稳定性和可用性。
@@ -41,7 +40,7 @@ ms.locfileid: "47950816"
 
 ## <a name="what-are-my-options"></a>我的选项是什么？
 
-随着 Exchange 2010 的支持终止，这是浏览选项并准备迁移计划的良好时间。 可执行下列操作：
+随着 Exchange 2010 的支持终止，这是浏览选项并准备迁移计划的良好时间。 可以执行下列操作：
 
 - 完全迁移到 Microsoft 365。 使用直接转换、最小混合或完全混合迁移迁移邮箱，然后删除本地 Exchange 服务器和 Active Directory。
 - 将 Exchange 2010 服务器迁移到本地服务器上的 Exchange 2016。
@@ -49,8 +48,8 @@ ms.locfileid: "47950816"
 > [!IMPORTANT]
 > 如果你的组织选择将邮箱迁移到 Microsoft 365，但打算就地保留 DirSync 或 Azure AD Connect，以继续从本地 Active Directory 中管理用户帐户，则需要在本地至少保留一台 Exchange server。 如果删除了最后一台 Exchange 服务器，将无法更改 Exchange Online 中的 Exchange 收件人。 这是因为颁发机构的来源仍保留在本地 Active Directory 中，需要进行更改。 在这种情况下，您有以下几种选择：
 
--  (**建议** 的) 如果您可以将邮箱迁移到 Microsoft 365 并在10月 13 2020 日升级服务器，请使用 Exchange 2010 连接到 Microsoft 365 并迁移邮箱。 接下来，将 Exchange 2010 迁移到 Exchange 2016 并取消所有剩余的 Exchange 2010 服务器。
-- 如果在10月 13 2020 日之前无法完成邮箱迁移和内部部署服务器升级，请先将本地 Exchange 2010 服务器升级到 Exchange 2016，然后使用 Exchange 2016 连接到 Microsoft 365 并迁移邮箱。
+-  (**建议** 的) 如果能够将邮箱迁移到 Microsoft 365 并在10月13日之前将服务器升级到2020，请使用 Exchange 2010 连接到 Microsoft 365 并迁移邮箱。 接下来，将 Exchange 2010 迁移到 Exchange 2016 并取消所有剩余的 Exchange 2010 服务器。
+- 如果无法在10月 13 2020 日之前完成邮箱迁移和本地服务器升级，请先将本地 Exchange 2010 服务器升级到 Exchange 2016，然后使用 Exchange 2016 连接到 Microsoft 365 并迁移邮箱。
 
 > [!NOTE]
 > 稍微复杂一些，你也可以将邮箱迁移到 Microsoft 365，同时将你的本地 Exchange 2010 服务器迁移到 Exchange 2016。
@@ -65,7 +64,7 @@ ms.locfileid: "47950816"
 
 将电子邮件迁移到 Microsoft 365 是帮助您停用 Exchange 2010 部署的最简单且最简单的选项。 通过迁移到 Microsoft 365，你可以从旧技术到一流功能的单一跃点，如下所示：
 
-- 合规性功能，如保留策略、就地和诉讼保留、就地电子数据展示等。
+- 合规性功能，如保留策略、In-Place 和诉讼保留、就地电子数据展示等。
 - Microsoft Teams
 - Power BI
 - 重点收件箱
