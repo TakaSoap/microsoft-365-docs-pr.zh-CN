@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 中适用于高级电子数据展示解决方案的案例限制、索引限制和搜索限制。
-ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7d676b568c7e4cddedeff02c62b4645619d53357
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358470"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446249"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>高级电子数据展示中的限制
 
@@ -38,6 +38,8 @@ ms.locfileid: "47358470"
 |每天在组织中的所有审阅集中加载的数据总量。<br/> |2 TB <br/> |
 |每个事例的最大加载集数。  <br/> |200 <br/> |
 |每个案例的最大审阅集数。  <br/> |20 <br/> |
+|每个事例的最大标记组数。  <br/> |1000 <br/> |
+|每个事例的最大标记数。  <br/> |1000 <br/> |
 |||
 
 ## <a name="indexing-limits"></a>索引限制

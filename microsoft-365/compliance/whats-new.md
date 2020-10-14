@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398523"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446555"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -43,7 +43,7 @@ ms.locfileid: "48398523"
 
 本月的几个新增和改进功能命中了公共预览：
 
-**内幕风险管理**
+**内部风险管理**
 
 - 查看我们的六个新 [策略模板](insider-risk-management-policies.md#policy-templates)：
     - 按优先级用户的数据泄露
@@ -80,7 +80,7 @@ ms.locfileid: "48398523"
 
 包括部署步骤、将内容标记为记录和记录版本控制的新文档：
 
-- [记录管理入门](get-started-with-records-management.md)
+- [开始进行记录管理](get-started-with-records-management.md)
 - [使用保留标签声明记录](declare-records.md)
 - [使用记录版本控制来更新存储在 SharePoint 或 OneDrive 中的记录](record-versioning.md)
 
@@ -170,7 +170,7 @@ ms.locfileid: "48398523"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度标签：新隐私选项
 
-为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户**"。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
+为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户**"。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -348,7 +348,7 @@ ms.locfileid: "48398523"
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
 |数据主体请求 |数据隐私 > 数据主体请求 <br/> https://protection.office.com/dsrcases |数据主体请求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR case 工具管理 GDPR 数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |电子数据展示|电子数据展示 > 电子数据展示 <br/> https://protection.office.com/ediscoveryv1 |电子数据展示 > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理电子数据展示事例](ediscovery-cases.md) |
-|活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[从事件发生时开始计算保留期](event-driven-retention.md)|
+|事件|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[从事件发生时开始计算保留期](event-driven-retention.md)|
 |文件计划|记录管理 > 文件计划 <br/> https://protection.office.com/fileplan |记录管理 > 文件计划选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用文件计划管理保留标签](file-plan-manager.md)|
 |导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[有关导入组织的 PST 文件的概述](importing-pst-files-to-office-365.md)|
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
