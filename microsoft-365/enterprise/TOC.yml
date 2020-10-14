@@ -277,6 +277,8 @@
           href: microsoft-365-inter-tenant-collaboration.md
         - name: 交叉租户邮箱迁移
           href: cross-tenant-mailbox-migration.md
+        - name: 租户到租户迁移
+          href: microsoft-365-tenant-to-tenant-migrations.md
     - name: 多地理位置
       items:
         - name: Microsoft 365 多地理位置
