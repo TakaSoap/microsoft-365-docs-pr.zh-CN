@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357876"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430311"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -86,9 +86,9 @@ ms.locfileid: "48357876"
 
 - **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未管理的设备**：此选项使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如步骤 7 - 9 中所述，[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)的访问。
+- **未管理的设备**：此选项使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如步骤 2-4 中所述，[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)的访问。
     
-    如果未在 SharePoint 说明的步骤 1-6 中对相关条件访问策略进行配置，则在此处指定的选项将不起作用。 此外，如果其限制性低于在租户级别配置的设置，则也不会起作用。 如果你已为非托管设备配置了组织范围的设置，请选择相同或更严格的标签设置。
+    如果未按照“[使用应用强制实施的限制](https://docs.microsoft.com/sharepoint/app-enforced-restrictions)”中的文档配置 SharePoint 的相关条件访问策略，则此处指定的选项将无效。 此外，如果其限制性低于在租户级别配置的设置，则也不会起作用。 如果你已为非托管设备配置了组织范围的设置，请选择相同或更严格的标签设置。
     
     例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
     
