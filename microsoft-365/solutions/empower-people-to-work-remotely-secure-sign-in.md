@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: a5977c1f4b5189f39623399f0b45a31e6edd4de7
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399309"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445911"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
 
@@ -39,7 +38,7 @@ ms.locfileid: "48399309"
 |---------|---------|
 |所有 Microsoft 365 套餐（无 Azure AD Premium P1 或 P2 许可证）     |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。   |
 |Microsoft 365 E3 （包括 Azure AD Premium P1 许可证）     | 使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组条件访问和相关策略](../security/office-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [阻止不支持新式身份验证的客户端](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高风险用户必须更改密码](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 （包括 Azure AD Premium P2 许可证）     | 利用 Azure AD 标识保护，通过创建以下两个策略开始实施 Microsoft [推荐的一组“条件访问”和相关策略](../security/office-365-security/identity-access-policies.md)：<br> - [要求在登录风险为“中等”或“高”时执行 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [阻止不支持新式身份验证的客户端](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高风险用户必须更改密码](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>安全性默认值
@@ -119,5 +118,7 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许�
 - 可以使用 SSPR 重置他们自己的密码。
 
 ## <a name="next-step"></a>后续步骤
+
+[![步骤 2：提供对本地应用和服务的远程访问权限](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 继续执行[步骤 2](empower-people-to-work-remotely-remote-access.md)，提供对本地应用和服务的远程访问权限。

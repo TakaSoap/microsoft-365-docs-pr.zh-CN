@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -19,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: c68e2e68ea6a5cc1204eda371cf67ca31f58d7cb
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 122df0f81200462f85d52985ccf3e42ce5d925f7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357862"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446819"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -107,6 +106,6 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 5. [部署远程工作者生产力应用和服务](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [培训远程工作者和处理使用情况反馈](empower-people-to-work-remotely-train-monitor-usage.md)
 
-![使用 Microsoft 365 为远程工作者提供帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
+[![使用 Microsoft 365 为远程工作者提供强大帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 有关 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[启用远程工作技术社区网站](https://resources.techcommunity.microsoft.com/enabling-remote-work/)。

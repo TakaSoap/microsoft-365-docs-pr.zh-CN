@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: a873c003537b98d10db5fc8a660b9d15ac0bcc23
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399297"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445817"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
@@ -102,5 +101,7 @@ Microsoft 365 应用是适用于企业的最高效、最安全的 Office 体验�
 - [使用 Office 网页版](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>后续步骤
+
+[![步骤 6：培训用户并监督他们是否成功](../media/empower-people-to-work-remotely/remote-workers-step-grid-6.png)](empower-people-to-work-remotely-train-monitor-usage.md)
 
 继续执行[步骤 6](empower-people-to-work-remotely-train-monitor-usage.md) 以培训用户并监视用户是否成功。

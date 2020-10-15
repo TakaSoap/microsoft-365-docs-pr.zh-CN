@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 管理员角色映射到业务功能，并授予在管理中心执行特定任务的权限。 例如，”服务管理员”可通过管理中心打开支持票证。
-ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 5ee8f5732d67ee3913ac7de5bcb7328065b0c8ba
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131778"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445459"
 ---
 # <a name="about-admin-roles"></a>关于管理员角色
 
@@ -77,7 +77,7 @@ Microsoft 365 管理中心可让你管理 Azure AD 角色和 Microsoft Intune �
 |组管理员     |   向需要跨管理中心（包括 Microsoft 365 管理中心和 Azure Active Directory 门户）管理所有组设置的用户分配组管理员角色。 <br><br> 组管理员可以：<br> - 创建、编辑、删除和还原 Microsoft 365 组 <br> - 创建和更新组的创建、过期和命名策略 <br> - 创建、编辑、删除和还原 Azure Active Directory 安全组| 
 |支持管理员     |   为需要执行以下操作的用户分配支持管理员角色：<br> - 重置密码 <br> - 强制用户注销 <br> - 管理服务请求 <br> - 监视服务运行状况 <br> <br> **注意**：支持管理员只能帮助非管理员用户和分配有以下角色的用户：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员。      |
 |Office 应用管理员    |   为需要执行以下操作的用户分配 Office 应用管理员角色： <br> - 使用 Office 云策略服务为 Office 创建和管理基于云的策略 <br> - 创建和管理服务请求 <br> - 管理用户在 Office 应用中看到的新增内容   <br> - 监视服务运行状况  |
-|服务管理员    |   将服务管理员角色作为附加角色分配给其角色不包括以下内容，但仍需要执行以下操作的管理员或用户： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子   |
+|服务支持管理员   |   将服务管理员角色作为附加角色分配给其角色不包括以下内容，但仍需要执行以下操作的管理员或用户： <br> - 打开和管理服务请求 <br> - 查看和共享消息中心帖子   |
 |SharePoint 管理员    |   为需要访问和管理 SharePoint Online 管理中心的用户分配 SharePoint 管理员角色。 <br><br>SharePoint 管理员还可以： <br> - 创建和删除网站 <br> - 管理网站集和全局 SharePoint 设置   |
 |Teams 服务管理员    |   为需要访问和管理 Teams 服务管理中心的用户分配 Teams 管理员角色。 <br><br>Teams 服务管理员还可以： <br> - 管理会议 <br> - 管理会议网桥 <br> - 管理所有组织范围内的设置，包括联合身份验证、Teams 升级和 Teams 客户端设置   |
 |用户管理员     |    为需要对所有用户执行以下操作的用户分配用户管理员角色： <br> - 添加用户和组 <br> - 分配许可证 <br> - 管理大多数用户属性 <br> - 创建和管理用户视图 <br> - 更新密码过期策略 <br> - 管理服务请求 <br> - 监视服务运行状况 <br><br>  用户管理员还可以对非管理员和分配有以下角色的用户执行以下操作：目录读取者、来宾邀请者、支持管理员、消息中心读取者和报表阅读人员： <br> - 管理用户名<br> - 删除和还原用户<br> - 重置密码 <br> - 强制用户注销 <br> - 更新 (FIDO) 设备密钥   |

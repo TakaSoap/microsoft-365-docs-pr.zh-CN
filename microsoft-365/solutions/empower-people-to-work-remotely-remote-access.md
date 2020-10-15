@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 52a338822c28f6ae044f13f60664d66816d6ce5c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377243"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445980"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
 
@@ -61,7 +60,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 这允许 VPN 客户端直接通过 Internet 发送和接收重要的 Microsoft 365 云服务流量并发送到 Microsoft 网络最近的入口点。
 
-有关更多信息和指导，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)。
+有关更多信息和指导，请参阅[使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>在所有应用均为 Web 应用且你具有混合标识的情况下部署远程访问
 
@@ -117,7 +116,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 ## <a name="admin-technical-resources-for-remote-access"></a>用于远程访问的管理员技术资源
 
 - [如何快速优化远程办公人员的 Office 365 流量并降低你的基础结构上的负载](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571)
-- [使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
+- [使用 VPN 拆分隧道为远程用户优化 Office 365 连接](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
 
 ## <a name="results-of-step-2"></a>步骤 2 的结果
 
@@ -134,4 +133,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 ## <a name="next-step"></a>后续步骤
 
+[![步骤 3：部署 Microsoft 365 安全和合规性服务](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+
 继续[步骤 3](empower-people-to-work-remotely-security-compliance.md)，部署 Microsoft 365 安全和合规性服务，以保护你的应用、数据和设备。
+

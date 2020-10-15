@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加强组织对密码攻击的防护，学习应如何禁用常见密码并实现基于风险的多重身份验证。
-ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131938"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456312"
 ---
 # <a name="password-policy-recommendations"></a>密码策略建议
 
