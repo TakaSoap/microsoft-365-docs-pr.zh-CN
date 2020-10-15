@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: f4cd713abdda0eba20e0b783ff89653ae02efb72
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399497"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464082"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -130,7 +130,7 @@ ms.locfileid: "48399497"
 |受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 |
 | Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
   
-当您在策略中分配通讯组时，该策略将监视通讯组中每个用户的所有电子邮件。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件，而不是每个组成员收到的单个电子邮件。
+当您在策略中分配通讯组时，该策略将监视来自通讯组中每个用户的所有电子邮件和团队聊天。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件和团队聊天，而不是每个组成员收到的单个电子邮件和聊天。
 
 如果您是具有 Exchange 本地部署或外部电子邮件提供商的组织，并且您要为用户监视 Microsoft 团队聊天，则必须为具有内部部署或外部邮箱的用户创建通讯组以进行监视。 在后面的这些步骤中，您将分配此通讯组作为策略向导中的受 **监督的用户和组** 选择。
 
