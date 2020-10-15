@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理 Microsoft 365 组，包括添加删除组成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
-ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
+ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48343267"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469705"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理组
 
-[创建 Microsoft 365 组](create-groups.md)并添加组成员后，可以对组进行配置。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以通过电子邮件发送组以及是否将组对话的副本发送到成员。 
+[创建 Microsoft 365 组](create-groups.md)并添加组成员后，可以对组进行配置。 您可以编辑组名称或说明、管理所有者或成员，并指定外部发件人是否可以通过电子邮件发送组以及是否将组对话的副本发送到成员。
+
+转到 Microsoft 365 管理中心 [https://admin.microsoft.com](https://admin.microsoft.com) 。
 
 ## <a name="edit-the-group-name-or-description"></a>编辑组名称或说明
 
