@@ -21,22 +21,26 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 在本文中，我们将了解如何使用 PowerShell 将 Microsoft 365 许可证分配给未经许可的用户。
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235614"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580936"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 将 Microsoft 365 许可证分配给用户帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 用户在向其帐户分配许可计划中的许可证之前，不能使用任何 Microsoft 365 服务。 您可以使用 PowerShell 将许可证快速分配给未经许可的帐户。 
 
->[!Note]
->必须为用户帐户分配一个位置。 您可以从 Microsoft 365 管理中心或 PowerShell 中的用户帐户的属性中执行此操作。
->
+必须首先向用户帐户分配一个位置。 指定位置是在 [Microsoft 365 管理中心](../admin/add-users/add-users.md)中创建新用户帐户的必需部分。 
+
+默认情况下，从本地 Active Directory 域服务同步的帐户不会指定位置。 您可以从以下位置配置这些帐户的位置：
+
+- Microsoft 365 管理员中心
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - [Azure 门户](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **用户**> 用户帐户 >**配置文件**  >  **联系人信息**  >  **国家或地区**) 。
 
 >[!Note]
 >了解如何使用 Microsoft 365 管理中心向[用户帐户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。

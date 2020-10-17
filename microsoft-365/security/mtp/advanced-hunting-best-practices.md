@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430135"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477001"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -56,7 +56,7 @@ ms.locfileid: "48430135"
 
 - **包含节拍**—若要避免在不必要的词中搜索子字符串，请使用 `has` 运算符而不是 `contains` 。 [了解字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **查找特定**列—查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
-- **对速度区分大小写**-区分大小写的搜索更具体且性能更高。 区分大小写的 [字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（如 `has_cs` 和）的名称 `contains_cs` 通常以结尾 `_cs` 。 您还可以使用区分大小写的 equals 运算符 `==` 而不是 `~=` 。
+- **对速度区分大小写**-区分大小写的搜索更具体且性能更高。 区分大小写的 [字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（如 `has_cs` 和）的名称 `contains_cs` 通常以结尾 `_cs` 。 您还可以使用区分大小写的 equals 运算符 `==` 而不是 `=~` 。
 - **分析、不提取**（如果可能，请使用 [Parse 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) 或分析函数，如 [parse_json ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [提取 ( # A1 函数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)，这两个函数都使用正则表达式。 为更复杂的方案保留使用正则表达式。 [阅读有关分析函数的详细信息](#parse-strings)
 - **筛选表不是表达式**—如果可以根据表格列进行筛选，则不能在计算列上进行筛选。
 - **无三字符术语**—避免使用包含三个或更少字符的术语进行比较或筛选。 不会对这些术语编制索引，并且匹配这些术语将需要更多资源。
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>分析字符串
 您可以使用多种函数来有效处理需要分析或转换的字符串。 
 
-| String | 函数 | 用法示例 |
+| 字符串 | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
 | Paths | [parse_path ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |

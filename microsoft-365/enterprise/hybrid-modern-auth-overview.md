@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您将了解混合新式身份验证以及与本地 Skype for Business 和 Exchange 服务器配合使用的先决条件。
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361923"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487716"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式验证概述以及将其与本地 Skype for Business和 Exchange 服务器一起使用的先决条件
 
@@ -161,6 +161,7 @@ Get-CSOAuthConfiguration
     未列出的客户端和/或协议 (例如，POP3) 不支持使用本地 Exchange 进行新式身份验证，并继续利用旧身份验证机制，即使在环境中启用新式验证之后也是如此。
 
 - **一般先决条件**
+  - 资源林方案需要与帐户林进行双向信任，以确保在混合新式身份验证请求过程中执行正确的 SID 查找。 
   - 如果使用 AD FS，则应使用 Windows 2012 R2 AD FS 3.0 及更高版本进行联合身份验证。
   - 身份配置是 Azure AD Connect 支持的任何类型，例如密码哈希同步、传递身份验证和 Office 365 支持的本地 STS。
   - 已配置 Azure AD Connect 并可正常进行用户复制和同步。

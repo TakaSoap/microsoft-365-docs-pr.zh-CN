@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过安装指南加快规划和配置 Microsoft 365 或 Office 365。
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446935"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493693"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
@@ -90,6 +90,17 @@ Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。
 
 [Windows 虚拟桌面安装指南](https://aka.ms/wvdsetupguide)为管理员提供了规划资源以及部署、安装指南和其他资源的先决条件。 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge 部署顾问
+
+Microsoft Edge 已从头开始重新构建，为你提供世界一流的兼容性和性能、您所需的安全性和隐私以及旨在为你提供最佳 web 的新功能。
+
+[Microsoft Edge 部署顾问](https://aka.ms/edgeadvisor)将帮助您配置企业网站发现，以查看哪些网站在您的组织中访问可能需要使用 IE 模式、查看和配置重要安全功能、配置隐私策略和其他策略以满足组织的要求，并管理设备上的 web 访问。 你可以将 Microsoft Edge 下载到各个设备，也可以向你展示如何使用 Configuration Manager 或 Microsoft Intune 将组织中的多个用户部署到多个用户。
+Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。 它是唯一一个 (VDI) 的虚拟桌面基础结构，它提供简化的管理、多会话 Windows 10、Microsoft 365 应用的优化以及对远程桌面服务 (RDS) 环境的支持。 在几分钟内部署 Windows 桌面和应用程序并将其扩展到 Azure，并获取内置安全性和合规性功能。 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 联合管理安装指南
+
+对现有 Configuration Manager 客户端设备以及你的组织希望与 Microsoft Intune 和 Configuration Manager 共同管理的基于 internet 的新设备使用 [Intune Configuration Manager 联合管理安装指南](https://aka.ms/comanagementsetup) 。 此联合管理部署指南允许您管理 Windows 10 设备并向组织的设备添加新功能，同时获得两个解决方案的优势。
+
 ## <a name="guides-for-authentication-and-access"></a>身份验证和访问指南
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 安装指南
@@ -97,6 +108,10 @@ Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。
 [AZURE AD 安装指南](https://aka.ms/aadpguidance)提供的信息可确保您的组织具有强大的安全基础。 在本指南中，您将设置初始功能，如 Azure 基于角色的访问控制 (Azure RBAC) for admins、用于本地目录的 Azure AD Connect 和 Azure AD Connect Health，这样您就可以在自动同步过程中监视混合身份的运行状况。 
 
 它还包括有关启用自助密码重置、条件访问和集成的第三方登录（包括可选的高级身份保护和用户预配自动化）的基本信息。
+
+### <a name="sync-users-from-your-orgs-directory"></a>从你的组织的目录同步用户
+
+[从你的组织的目录向导的同步用户](https://aka.ms/directorysyncsetup)将引导你完成目录同步的启用。 这将本地和云标识结合在一起，以便更轻松地进行访问和简化管理。 解锁新功能，如单一登录、自助服务选项、自动帐户预配、条件访问控制和合规性策略。 这样可确保您的用户可以从任何位置访问他们需要的资源。
 
 ### <a name="plan-your-passwordless-deployment"></a>规划 passwordless 部署
 

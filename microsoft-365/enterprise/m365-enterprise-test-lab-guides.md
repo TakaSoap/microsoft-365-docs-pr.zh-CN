@@ -18,36 +18,36 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用这些测试实验室指南为 Microsoft 365 企业版设置演示、概念验证或开发/测试环境。
-ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686762"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487466"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Microsoft 365 企业版测试实验室指南
 
 *这同时适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-测试实验室指南 (TLG) 可帮助你快速了解 Microsoft 产品。它们提供了用于配置已简化但具有代表性的测试环境的说明性指南。可以在试用版或付费订阅期间使用这些环境进行演示、自定义或创建概念的复杂论证。 
+测试实验室指南 (TLG) 可帮助你快速了解 Microsoft 产品。它们提供了用于配置已简化但具有代表性的测试环境的说明性指南。可以在试用版或付费订阅期间使用这些环境进行演示、自定义或创建概念的复杂论证。
 
-TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与你的知识背景或测试配置需求更为匹配的多个配置。“我自己构建模块，且模块能够正常工作”这一实际操作体验可帮助你了解新产品或方案的部署要求，使你能够更好地计划在生产中托管它。
+Tlg 设计为模块化。它们彼此之间建立，以创建与您的学习或测试配置需求更接近的多个配置。"我自己构建了它，并且工作正常" 体验可帮助您了解新产品或方案的部署要求，以便您可以更好地规划在生产环境中托管它。
 
-还可以使用 TLG 创建用于开发和测试应用程序的代表性环境，也称为开发/测试环境。
+您还可以使用 Tlg 创建用于开发和测试应用程序的代表性环境，也称为开发/测试环境。
   
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-转到[测试实验室指南集合](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+若要查看 Microsoft 365 for 企业测试实验室指南堆栈中的所有文章的可视化地图，请展开下图或转到 [microsoft 365 以获取企业测试实验室指南堆栈](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
-[![Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
+[![Microsoft 365 企业版测试实验室指南堆栈](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>基本配置
 
-首先，为适用于 [企业的 Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)创建一个测试环境。您可以创建两种不同类型的基本配置：
+首先，为适用于企业的 [Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)创建一个测试环境。您可以创建两种不同类型的基本配置：
 
-- 当你想要在仅限云环境（其中不包含任何本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[轻型基础配置](lightweight-base-configuration-microsoft-365-enterprise.md)。
+- [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md) -如果您想要在仅云环境中配置和365演示适用于企业的功能和功能（不包括任何本地组件），请使用此设置。
 
-- 当你想要在混合云环境（其中会使用 Active Directory 域服务 (AD DS) 域等本地组件）中配置并演示 Microsoft 365 企业版特性和功能时，请使用[模拟企业基础配置](simulated-ent-base-configuration-microsoft-365-enterprise.md)。
+- [模拟企业基本配置](simulated-ent-base-configuration-microsoft-365-enterprise.md) -如果要在混合云环境中配置和365演示适用于企业的功能的功能和功能，请使用此功能; 在混合云环境中使用本地组件（如 Active Directory 域服务 (AD DS) 域）。
 
 此外，还可通过不将 Microsoft 365 E5 许可证添加到试用版或产品测试环境中，来创建 Office 365 E5 的测试环境。
     
@@ -69,14 +69,14 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - [Azure AD 无缝单一登录](single-sign-on-m365-ent-test-environment.md)
   
-   使用 AD DS 域控制器启用和测试 Azure AD 无缝单一登录 (SSO)。
+   启用和测试 Azure AD 无缝单一登录 (与 AD DS 域控制器之间的无缝 SSO) 。
 
 - [多重身份验证](multi-factor-authentication-microsoft-365-test-environment.md)
   
    为特定用户帐户启用并测试基于智能手机的多重身份验证。
 
 - [保护全局管理员帐户](protect-global-administrator-accounts-microsoft-365-test-environment.md)
- 
+
    通过条件访问策略锁定全局管理员帐户。
 
 - [密码写回](password-writeback-m365-ent-test-environment.md)
@@ -85,7 +85,7 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
 - [密码重置](password-reset-m365-ent-test-environment.md)
 
-   使用自助服务密码重置 (SSPR) 重置你的密码。
+   使用自助密码重置重置密码。
 
 - [自动许可和组成员身份](automate-licenses-group-membership-microsoft-365-test-environment.md)
 
@@ -99,7 +99,6 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 
    创建用于测试推荐的标识和设备访问配置以及条件访问策略的环境。
 
-
 ## <a name="mobile-device-management"></a>移动设备管理
 
 若要演示与移动设备管理相关的特性和功能，请参阅：
@@ -111,7 +110,6 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 - [注册 iOS 和 Android 设备](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md)
    
    注册 iOS 或 Android 设备，并对其进行远程管理。
-
 
 ## <a name="information-protection"></a>信息保护
 
@@ -128,5 +126,3 @@ TLG 采用了模块化设计。它们基于彼此构建，以便创建能够与�
 - [Privileged Access Management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
    配置 Privileged Access Management，以便实时访问组织中提升的特权任务。
-
-

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: e56ba8933947c37db3e558ef36dd6d305915040f
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418093"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487620"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>关闭并汇总你的 Microsoft 威胁防护试点  
 
@@ -87,13 +87,13 @@ ms.locfileid: "48418093"
 - 有关试点结果的详细报告
 - 有关如何向前移动的决策
 
-显示最终输出中的报告内部利益干系人 (在 [准备](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 阶段) 和 Microsoft 联系人中确定。 这样的努力可确保任何反馈都可用于改进产品和文档。
+将最终输出中的报告呈现给内部利益干系人， (在 [准备](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 阶段) 和 Microsoft 联系人中确定。 这样的努力可确保任何反馈都可用于改进产品和文档。
 
 我们希望你喜欢此模拟。 开始实施您在组织中的更大范围内学习的内容，以充分利用集成安全解决方案。
 
 ## <a name="next-step"></a>后续步骤
 通过以下交互式指南详细了解 Microsoft 威胁防护支柱：
 - [使用 Microsoft Defender for Office 365 保护你的组织](https://aka.ms/O365ATP-Interactive-Guide)
-- [使用 Microsoft Defender for Identity 检测可疑活动和潜在攻击](https://aka.ms/AATP-Interactive-Guide)
+- [了解如何通过 Microsoft Defender for Identity 检测可疑活动和潜在攻击](https://aka.ms/AATP-Interactive-Guide)
 - [检测威胁并使用 Microsoft 云应用安全管理警报](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
 - [调查和修正与 Microsoft Defender for Endpoint 的威胁](https://aka.ms/MDATP-IR-Interactive-Guide)

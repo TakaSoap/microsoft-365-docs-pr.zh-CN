@@ -2,8 +2,8 @@
 title: 将个人用户密码设置为永不过期
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: mnirkhe
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 了解如何使用 Windows PowerShell 将某些个人用户密码设置为永不过期。
-ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e778ad8a020a6767934d51f8bc227bfc39b13a9b
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361745"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580912"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>将个人用户密码设置为永不过期
 
@@ -35,7 +35,7 @@ ms.locfileid: "47361745"
 
 ## <a name="before-you-begin"></a>准备工作
 
-本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../admin-overview/admin-overview.md)。 
+本文面向的是为企业、学校或非营利组织设置密码过期策略的人员。 若要完成这些步骤，你需要使用 Microsoft 365 管理员帐户登录。 [什么是管理员帐户？](../admin-overview/admin-overview.md) 
 
 您必须是 [全局管理员或密码管理员](about-admin-roles.md) 才能执行这些步骤。
 
@@ -48,7 +48,7 @@ Microsoft 云服务的全局管理员可以使用 [Azure Active Directory PowerS
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何检查密码的过期策略
 
-有关 AzureAD 模块中的 AzureADUser 命令的详细信息，请参阅参考文章 [Get AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+有关 AzureAD 模块中的 Get-AzureADUser 命令的详细信息，请参阅参考文章 [AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
 
 运行下列命令之一：
 

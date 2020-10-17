@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408622"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446116"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -43,34 +43,39 @@ ms.locfileid: "48408622"
 最后，作为管理员，你在配置敏感度标签来应用加密时可选择执行下述任一操作：
 
 - **立即分配权限**，以便准确确定哪些用户获得了带有该标签的内容的哪些权限。
-- 在用户将此标签应用到内容时**允许用户分配权限**。 这样，即可让组织内部人员在协作处理和完成任务时具有可能需要的一定程度的灵活性。
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心[创建敏感度标签](create-sensitivity-labels.md)时，可使用加密设置。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的工作方式
 
-加密使用了 Azure 信息保护中的 Azure 权限管理服务 (Azure RMS)。 该保护解决方案使用了加密、标识和身份验证策略。 要了解详细信息，请参阅 Azure 信息保护文档中的[什么是 Azure 权限管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-使用此加密解决方案时，**超级用户**功能确保了获得授权的用户和服务始终可读取和检测已针对你的组织进行加密的数据。 必要时，可删除或更改加密。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何配置加密标签
 
-[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，然后在向导的**加密**页面上选择下列选项之一：
+1. 请遵循一般说明[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择 **“文件和电子邮件”**： 
+    
+    ![文件和电子邮件的敏感度标签作用域选项](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **无**：新标签的默认设置。 不应用新加密。
-- **应用**：启用加密，然后指定加密设置。
-- **删除**：如果文档或电子邮件已加密，则删除加密。
+2. 然后，在**选择文件和电子邮件的保护设置**页面上，确保选择 **“加密文件和电子邮件”**
+    
+    ![文件和电子邮件的敏感度标签保护选项](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> 只有 Azure 信息保护统一标记客户端支持“**删除**”选项。 使用内置标签时，Office 应用和服务中显示了具有此选项的标签；如果选中，则加密行为与“**无**”选项的行为相同。
-
-配置加密选项：
-
-![用于加密的敏感度标签选项](../media/encrytion-options-sensitivity-label.png)
+4.  对于向导的**加密**页面，选择下列选项之一：
+    
+    - **如果文件已加密，则删除加密**：有关此方案的详细信息，请参阅[应用标签时，对现有加密的影响](#what-happens-to-existing-encryption-when-a-labels-applied)部分。 请务必注意，此设置可能会导致敏感度标签，用户没有足够的权限时，他们可能无法应用标签。
+    
+    - **配置加密设置**：启用加密，并使加密设置可见：
+        
+        ![用于加密的敏感度标签选项](../media/encrytion-options-sensitivity-label.png)
+        
+        有关这些设置的说明，请参阅以下[配置加密设置](#configure-encryption-settings) 部分。
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>应用标签后，现有加密会发生什么情况
 
-如果向未加密的内容应用敏感度标签，则你可选择的加密选项的结果一目了然。 例如，如果加密设置为“**无**”，则内容保持在未加密状态。
+如果向未加密的内容应用敏感度标签，则你可选择的加密选项的结果一目了然。 例如，如果未选择 **“加密文件和电子邮件”**，则内容仍然不加密。
 
 但是，内容可能已经加密。 例如，其他用户可能已应用以下内容：
 
@@ -80,7 +85,7 @@ ms.locfileid: "48408622"
 
 下表说明了在向该内容应用敏感度标签后现有加密发生的情况：
 
-| |**加密：无**|**加密：应用**|**加密：删除**|
+| |**加密：未选择**|**加密：已配置**|**加密：删除**|
 |:-----|:-----|:-----|:-----|
 |**用户指定的权限**|保留原有加密|应用新的标签加密|删除原有加密|
 |**保护模板**|保留原有加密|应用新的标签加密|删除原有加密|
@@ -103,7 +108,7 @@ ms.locfileid: "48408622"
 
 ## <a name="configure-encryption-settings"></a>配置加密设置
 
-在向导的“**加密**”页面上选择“**应用**”来创建或编辑敏感度标签时，选择是否要：
+在向导的**加密**页面选择 **“配置加密设置”** 来创建或编辑敏感度标签时，选择以下选项之一：
 
 - **立即分配权限**，以便可准确确定哪些用户对已应用标签的内容具有哪些权限。 有关详细信息，请参阅下一部分：[立即分配权限](#assign-permissions-now)。
 - 在用户向内容应用标签时**允许用户分配权限**。 通过此选项，可使组织内部人员在协作处理和完成任务时具有一定程度可能需要的灵活性。 有关详细信息，请参阅下述部分：[允许用户分配权限](#let-users-assign-permissions)。
@@ -275,7 +280,7 @@ ms.locfileid: "48408622"
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
 
-对于后面的每个示例，请在[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)时通过“**加密**”页面进行配置。 首先，请确保“**加密**”设置为“**应用**”：
+对于后面的每个示例，请在选择**配置加密设置**时通过向导的**加密**页面进行配置：
 
 ![应用敏感度标签向导中的加密选项](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ ms.locfileid: "48408622"
 
 可能需要执行一些配置任务，然后才可使用加密。
 
-### <a name="activate-protection-from-azure-information-protection"></a>激活 Azure 信息保护中的保护
+- 激活 Azure 信息保护中的保护
+    
+    要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](https://docs.microsoft.com/azure/information-protection/activate-service)。
 
-要使敏感度标签应用加密，必须为租户激活 Azure 信息保护中的保护服务（即 Azure 权限管理）。 在较新的租户中，这是默认设置，但你可能需要手动激活该服务。 有关详细信息，请参阅[激活 Azure 信息保护中的保护服务](https://docs.microsoft.com/azure/information-protection/activate-service)。
+- 配置用于 Azure 信息保护的 Exchange
+    
+    无需针对 Azure 信息保护进行配置，用户即可在 Outlook 中应用标签来加密其电子邮件。 但是，除非已针对 Azure 信息保护进行了配置，否则无法通过 Exchange 获得使用 Azure 权限管理保护的完整功能。
+    
+    例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。 
+    
+    为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
+    
+    - 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
+    - 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>配置用于 Azure 信息保护的 Exchange
-
-无需针对 Azure 信息保护进行配置，用户即可在 Outlook 中应用标签来加密其电子邮件。 但是，除非已针对 Azure 信息保护进行了配置，否则无法通过 Exchange 获得使用 Azure 权限管理保护的完整功能。
-
-例如，用户无法查看移动电话或 Outlook 网页版上机密的电子邮件，无法索引加密的电子邮件用于搜索，并且无法针对 Rights Management 保护配置 Exchange Online DLP。
-
-为确保 Exchange 可以支持这些其他应用场景，请参阅以下内容：
-
-- 对于 Exchange Online，请参阅 [Exchange Online：IRM 配置](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的说明。
-- 对于本地 Exchange，必须部署 [RMS 连接器并配置你的 Exchange 服务器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f49f1afe5461a4f2eff0a3049f1d14d1892f70ce
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446863"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477014"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>运行你的试点 Microsoft 威胁防护项目 
 
@@ -41,6 +41,16 @@ ms.locfileid: "48446863"
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用此试点操作手册
 
 本指南概述了 Microsoft 威胁防护以及有关如何设置试点项目的分步说明。 
+
+Microsoft 威胁防护是一种统一的前期和后入侵型企业防护套件，它通过终结点、标识、电子邮件和应用程序固有协调保护、检测、预防、调查和响应，以提供针对复杂攻击的集成保护。 它通过将以下功能组合并协调为一个安全解决方案来实现此操作：
+  - Microsoft defender for Endpoint，Microsoft Defender 高级威胁防护的新名称 (终结点) 
+  - Microsoft Defender for Office 365，Office 365 ATP 的新名称 (电子邮件)  
+  - Microsoft Defender for Identity，Azure ATP 的新名称 (标识)  
+  - Microsoft 云应用安全 (应用程序) 
+
+![Image of_Microsoft 威胁防护解决方案，适用于用户、Azure 高级威胁防护、用于终结点的 Microsoft Defender 高级威胁防护、云应用、Microsoft 云应用安全性和数据（Office 365 高级威胁防护）  ](../../media/mtp/m365pillars.png)
+
+借助集成的 Microsoft 威胁防护解决方案，安全专家可以结合使用 Microsoft Defender 高级威胁防护、Office 365 ATP、Azure ATP 和 Microsoft 云应用安全接收的威胁，并确定威胁的完整范围和影响、它如何进入环境、受影响的内容以及当前对组织的影响。 Microsoft 威胁防护采用自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户身份。 有关详细信息，请参阅 [Microsoft 威胁防护概述](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 。
 
 ![运行 Microsoft 威胁防护试点的各个阶段](../../media/pilotphases.png)
 

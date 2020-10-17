@@ -14,33 +14,37 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 49c7758a-1c01-4153-9b63-5eae3f6305ce
 description: 使用此测试实验室指南在 Microsoft 365 测试环境中注册设备，并远程管理这些设备。
-ms.openlocfilehash: b4a95b2c7e58239c0a8d0d3b5045e7337f43de6b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 3736934dbb62e84aad6a91fcd1d65b4a47ef8637
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686006"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487692"
 ---
 # <a name="enroll-ios-and-android-devices-in-your-microsoft-365-for-enterprise-test-environment"></a>在 Microsoft 365 for 企业版测试环境中注册 iOS 和 Android 设备
 
 *此测试实验室指南仅可用于企业测试环境的 Microsoft 365。*
 
-按照本文中提供的说明操作，您将能够在 Microsoft 365 企业版测试环境中注册和测试适用于 iOS 和 Android 设备的基本移动设备管理功能。
+本文介绍了如何为 Microsoft 365 企业版测试环境中的 iOS 和 Android 设备注册和测试基本移动设备管理功能。
+
+在测试环境中注册 iOS 和 Android 设备涉及三个阶段：
+- [第1阶段：构建您的 Microsoft 365 企业版测试环境](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+- [第2阶段：注册 iOS 和 Android 设备](#phase-2-enroll-your-ios-and-android-devices)
+- [第3阶段：远程管理 iOS 和 Android 设备](#phase-3-manage-your-ios-and-android-devices-remotely)
 
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> 单击[此处](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)可查看 Microsoft 365 企业版测试实验室指南集合中所有文章的直观图。
+> 若要了解到 Microsoft 365 for 企业测试实验室指南堆栈中的所有文章的可视化地图，请转到 [microsoft 365 for Enterprise Test Lab Guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>第1阶段：构建您的 Microsoft 365 企业版测试环境
 
-如果只想使用最低要求以轻型方式注册 iOS 和 Android 设备，请按照 [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
+如果要使用最低要求以轻型方式注册 iOS 和 Android 设备，请按照 [轻型基本配置](lightweight-base-configuration-microsoft-365-enterprise.md)中的说明进行操作。
   
 如果要在模拟企业版中注册 iOS 和 Android 设备，请按照 [传递身份验证](pass-through-auth-m365-ent-test-environment.md)中的说明进行操作。
   
 > [!NOTE]
-> 测试自动授权和组成员身份不需要模拟企业测试环境，其中包括连接到 Internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 此处提供了此选项，以便您可以测试自动授权和组成员身份，并在代表典型组织的环境中进行试验。 
->  
+> 测试自动授权和组成员身份不需要模拟企业测试环境，其中包括连接到 internet 的模拟 intranet 和 Active Directory 域服务 (AD DS) 林的目录同步。 它作为选项提供，以便您可以测试自动授权和组成员身份，并且可以在代表典型组织的环境中进行试验。
 
 ## <a name="phase-2-enroll-your-ios-and-android-devices"></a>第2阶段：注册 iOS 和 Android 设备
 
@@ -52,25 +56,23 @@ ms.locfileid: "46686006"
 
 ## <a name="phase-3-manage-your-ios-and-android-devices-remotely"></a>第3阶段：远程管理 iOS 和 Android 设备
 
-Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人丢失了自己的设备，则可以远程锁定设备。 如果有人忘记了密码，你可以远程重置它。
+Microsoft Intune 提供远程锁定和密码重置两种功能。 如果某人丢失了设备，则可以远程锁定设备。 如果有人忘记了密码，可以对其进行远程重置。
   
-远程锁定 iOS 或 Android 设备：
+若要远程锁定 iOS 或 Android 设备，请执行以下操作：
 
 1. [https://portal.azure.com](https://portal.azure.com)使用全局管理员帐户的凭据登录到 Azure 门户。
-2. 在浏览器的 "Azure 门户" 选项卡上，在搜索框中键入 **Intune** ，然后单击 " **intune**"。
+2. 在 Azure 门户中，在搜索框中输入 **intune** ，然后选择 **intune**。
 3. 单击 " **设备 > 所有设备**"。
-4. 在设备列表中，单击一个 iOS 或 Android 设备，然后单击 **远程锁定** 操作。
-
+4. 在设备列表中，选择一个 iOS 或 Android 设备，然后选择 **远程锁定** 操作。
     
-远程重置密码：
+若要远程重置密码，请执行以下操作：
 
 1. 如果需要，请 [https://portal.azure.com](https://portal.azure.com) 使用全局管理员帐户的凭据登录到 Azure 门户。
-2. 在浏览器的 "Azure 门户" 选项卡上，在搜索框中键入 **Intune** ，然后单击 " **intune**"。
-3. 单击 " **设备 > 所有设备**"。
-4. 从管理的设备列表中，单击 iOS 或 Android 设备，然后选择 **.。。更多**。 然后选择 " **删除密码** 设备远程操作"。
+2. 在 Azure 门户中，在搜索框中输入 **intune** ，然后选择 **intune**。
+3. 选择 "**设备**  >  **所有设备**"。
+4. 从所管理的设备列表中，选择 iOS 或 Android 设备，选择 " **..."详细信息**，然后选择 " **删除密码** 设备远程操作"。
 
 有关其他实验，请参阅 [可用设备操作](https://docs.microsoft.com/intune/device-management#available-device-actions)。
-
     
 ## <a name="next-step"></a>后续步骤
 
@@ -83,4 +85,3 @@ Microsoft Intune 提供远程锁定和密码重置两种功能。 如果有人�
 [适用于 Microsoft 365 企业版测试环境的设备合规性策略](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
 [Microsoft 365 企业版概述](microsoft-365-overview.md)
-

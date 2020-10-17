@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 89708efa6a34b5ca7a302ba0ad331a2dac99f5d9
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446565"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477132"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -48,6 +48,38 @@ ms.locfileid: "48446565"
 - [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (ATP 计划2仅) 
 - ... [调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
 
+## <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
+
+> [!NOTE] 
+> "用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。 有关发布计划的信息，请参阅 Microsoft 365 路线图。
+
+用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅以下内容： [Office 365 ATP 中的用户标记](user-tags.md)。
+
+在威胁资源管理器中，您将能够在以下体验中查看用户标记周围的信息：
+
+#### <a name="email-grid-view"></a>电子邮件网格视图
+
+电子邮件网格中显示的 "标记" 列将包含已应用于发件人或收件人邮箱的所有标记。 默认情况下，系统标记（如优先级帐户）首先显示。
+
+![筛选标记](../../media/tags-grid.png)
+
+#### <a name="filtering"></a>筛选
+我们现在将标记作为筛选器，以便您可以仅在优先级帐户或特定的用户标记方案中进行智能寻线 (甚至排除包含特定标记的结果) 的情况。 将这些筛选器与我们提供的多个其他筛选器组合在一起可帮助您缩小调查范围
+
+![筛选标记](../../media/tags-filter-normal.png)
+
+![不筛选标记](../../media/tags-filter-not.png)
+
+#### <a name="email-detail-flyout"></a>电子邮件详细信息飞出
+若要查看发件人和收件人的各个标记，请单击 "主题"。 它将打开 "消息详细信息" 浮出控件。 在 "摘要" 选项卡中，将单独显示发件人和收件人标记（如果它们存在于电子邮件中）。
+发件人和收件人的各个标记的信息也会扩展到导出的 CSV，在这种情况下，可以在两个单独的列中查看这些详细信息。 
+
+![电子邮件详细信息标记](../../media/tags-flyout.png)
+
+标签信息也显示在 URL 单击浮出控件中。 若要访问 URL，请单击 "浮出控件"，需要转到 "网络钓鱼" 或 "所有电子邮件视图"，然后转到 "Url" 或 "URL 单击" 选项卡。单击单个 URL 浮出控件将显示有关该 URL 的单击操作的更多详细信息，并将显示与该 URL 相关 
+
+![URL 标记](../../media/tags-urls.png)
+
 ## <a name="improvements-to-threat-hunting-experience-upcoming"></a> (即将到来的) 的威胁搜寻体验的改进
 
 ### <a name="updated-threat-information-for-emails"></a>更新了电子邮件的威胁信息
@@ -58,24 +90,27 @@ ms.locfileid: "48446565"
 
 除了显示恶意软件和网络钓鱼威胁之外，您现在还可以查看与电子邮件相关联的垃圾邮件结论。 在电子邮件中，你将能够查看与电子邮件相关的所有威胁以及相应的检测技术。 每封电子邮件可以有0个、1个或多个威胁。 您将在 "电子邮件" 浮出控件的 "详细信息" 部分看到当前威胁。 此外，对于多个威胁 (例如，同时包含恶意软件和网络钓鱼) 的电子邮件，检测技术字段将提供 Threat-Detection 的映射，这意味着哪些检测技术会导致威胁的识别。
 
-已对一系列检测技术进行了更新，以包括新的检测方法以及垃圾邮件检测技术，并 aross 所有不同的电子邮件视图 (恶意软件、网络钓鱼诈骗、所有电子邮件) 中，您将拥有相同的一致的检测技术集来筛选结果。 
+已对一系列检测技术进行了更新，以包括新的检测方法、垃圾邮件检测技术，以及跨所有不同的电子邮件视图 (恶意软件、网络钓鱼诈骗、所有电子邮件) ，您将拥有相同的一致的检测技术集来筛选结果。 
 
-**注意**：可能不一定要将 "可判定" 分析绑定到实体。 例如，电子邮件可能会归类为网络钓鱼或垃圾邮件，但没有任何 Url 在其上标记任何网络钓鱼/垃圾邮件。 这是因为，在分配一个判定之前，我们的筛选器还会评估电子邮件的内容和其他详细信息。 
+> [!NOTE]
+> 判定分析可能并不一定与实体相关联。 例如，电子邮件可能会归类为网络钓鱼或垃圾邮件，但没有任何 Url 在其上标记任何网络钓鱼/垃圾邮件。 这是因为，在分配一个判定之前，我们的筛选器还会评估电子邮件的内容和其他详细信息。 
  
 #### <a name="threats-in-urls"></a>Url 中的威胁
 
 在 "电子邮件飞出" > 详细信息 "选项卡中，您现在可以看到 url 的特定威胁 (URL 可以是恶意软件、网络钓鱼诈骗、垃圾邮件或无) 
 
-![URL 威胁](../../media/URL_Threats.png)
+> [!div class="mx-imgBorder"]
+> ![URL 威胁](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a> (即将开始的日程表视图更新) 
 
-![更新的日程表视图](../../media/Email_Timeline.png)
+> [!div class="mx-imgBorder"]
+> ![更新的日程表视图](../../media/Email_Timeline.png)
 
 除了标识所有传递和传递后事件之外，"日程表" 视图还提供有关在该时间点为这些事件的子集确定的威胁的信息。 此外，它还提供了有关其他操作的详细信息 (例如，ZAP、手动修正) 以及该操作的结果。 "日程表" 视图包含有关原始传递以及随后在电子邮件上执行的任何送达事件的信息。
 
 -   来源：这可以是管理员/系统/用户，具体取决于事件的来源。
--   事件：其中包括原始传递、手动修正、ZAP、报送和动态传递等顶级事件。
+-   事件：这包括原始传递、手动修正、ZAP、提交和动态传递等顶级事件。
 -   操作：这涵盖作为 ZAP 或 Admin 操作的一部分执行的特定操作 (例如软删除) 。
 -   威胁：涵盖该时间点 (恶意软件、网络钓鱼诈骗、垃圾邮件) 的威胁。
 -   Result/Details：涵盖有关操作结果的详细信息，即是否作为 ZAP/管理操作的一部分执行。
@@ -84,29 +119,33 @@ ms.locfileid: "48446565"
 
 目前，我们在电子邮件网格和电子邮件浮出控件中呈现了交付位置。 今后，"送达位置" 字段将被重命名为原始送达位置。 此外，还引入了另一个名为 "最新传递位置" 的字段。 
 
-原始送达位置将提供有关最初传递电子邮件的位置的详细信息。 最新的送达位置将包括在系统操作（如 " **移动到已删除邮件**"）的系统操作之后，电子邮件可能会进入到的位置。 最新送达位置旨在通知管理员邮件的最近已知位置投递或任何系统/管理员操作。 根据设计，它不包括任何与最终用户相关的电子邮件操作。 例如：如果用户删除邮件或将邮件移动到存档/pst，则不会更新邮件 "送达" 位置。 但是，如果系统操作更新了位置 (例如，通过将邮件移到隔离) ，则会看到最新的送达位置作为隔离。 
+原始送达位置将提供有关最初传递电子邮件的位置的详细信息。 最新的送达位置将包括在系统操作（如 " **移动到已删除邮件**"）的系统操作之后，电子邮件可能会进入到的位置。 最新送达位置旨在通知管理员邮件的最近已知位置投递或任何系统/管理员操作。 根据设计，它不包含对电子邮件的任何与最终用户相关的操作。 例如：如果用户删除邮件或将邮件移动到存档/pst，则不会更新邮件 "送达" 位置。 但是，如果系统操作更新了位置 (例如，通过将邮件移到隔离) ，则会看到最新的送达位置作为隔离。 
 
-![更新的送达位置](../../media/Updated_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![更新的送达位置](../../media/Updated_Delivery_Location.png)
 
-**注意**：在少数情况下，送达位置和传递操作可能会将 "Unknown" 显示为值：
+> [!NOTE]
+> 在少数情况下，送达位置和传递操作可能会将 "Unknown" 显示为值：
+> 
+> - 您可能会看到送达位置为 "已传递"，并且传递位置为 "未知"。 邮件传递过程中出现这种情况，但收件箱规则将邮件移动到默认文件夹 (草稿、存档等 ) 而不是 "收件箱" 或 "垃圾邮件" 文件夹。 
+> 
+> - 如果管理员/系统操作 (（例如，ZAP、管理操作) ，但找不到该邮件），则无法识别最新的传递位置。 通常情况下，操作在用户移动或删除邮件之后发生。 在这种情况下，请验证 "日程表" 视图中的 "结果/详细信息" 列。 查找邮件：用户移动或删除的邮件。
 
-- 您可能会看到送达位置为 "已传递"，并且传递位置为 "未知"。 邮件传递过程中出现这种情况，但收件箱规则将邮件移动到默认文件夹 (草稿、存档等 ) 而不是 "收件箱" 或 "垃圾邮件" 文件夹。 
-
-- 如果管理员/系统操作 (（例如，ZAP、管理操作) ，但找不到该邮件），则无法识别最新的传递位置。 通常情况下，操作在用户移动或删除邮件之后发生。 在这种情况下，请验证 "日程表" 视图中的 "结果/详细信息" 列。 查找邮件：用户移动或删除的邮件。
-
-![日程表的送达位置](../../media/Updated_Timeline_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![日程表的送达位置](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>其他操作 
 
-其他操作包括已应用的操作在发送电子邮件时发布的操作，并且可以包括由 Admi 执行的 ZAP、手动修正 (操作; 例如，软删除) 、动态传递和重新处理 (追溯电子邮件被检测为正确的) 。 
+其他操作包括已应用的操作在发送电子邮件时发布的操作，并且可以包括由管理员执行的 ZAP、手动修正 (操作，例如软删除) 、动态传递和重新处理 (电子邮件被检测为 "正常) " 的追溯。 
 
 > [!NOTE]
 >
 > - 作为此更改的一部分，当前在传递操作筛选器中的已删除的 ZAP 值将离开。 你可以通过其他操作搜索通过 ZAP 尝试的所有电子邮件的方法。
 >
-> -将提供检测技术和其他操作的新字段和值，尤其是) 的 ZAP 方案中 (。 评估现有的已保存的查询和跟踪的查询，以确保它们能够处理新值。 
+> - 将有新的字段和值用于检测技术和其他操作，尤其是) 的 ZAP 方案中 (。 评估现有的已保存的查询和跟踪的查询，以确保它们能够处理新值。 
 
-![Additional_Actions](../../media/Additional_Actions.png)
+> [!div class="mx-imgBorder"]
+> ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系统覆盖 
 
@@ -120,18 +159,23 @@ ms.locfileid: "48446565"
 
 ![System_Overrides](../../media/System_Overrides.png)
 
-![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> [!div class="mx-imgBorder"]
+> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>有关 URL 和点击体验的改进
 
-Focussed 对 URL 和 URL 的改进的集合单击数据包括：
+重点关注 URL 和 URL 的改进集单击 "数据" 包括：
 
--   显示已完全单击的 URL (包括 URL 浮出控件的单击部分中的 URL) 的一部分查询参数。 目前，我们在标题栏中显示 URL 域和路径。 我们正在扩展该信息以显示完整的 URL。
--   通过 URL 筛选器 (URL vs URL 域与 URL 域和路径) 的修正：我们已在搜索包含 URL/单击判定的邮件时进行了更新。 作为此过程的一部分，我们启用了对协议不可知搜索的支持 (意义上，您可以直接搜索不带 http) 的 URL。 默认情况下，除非显式指定，否则 URL 搜索将映射到 http。 例如：
+ - 显示已完全单击的 URL (包括 URL 浮出控件的单击部分中的 URL) 的一部分查询参数。 目前，我们在标题栏中显示 URL 域和路径。 我们正在扩展该信息以显示完整的 URL。
+ 
+ - 通过 URL 筛选器 (URL vs URL 域与 URL 域和路径) 的修正：我们已在搜索包含 URL/单击判定的邮件时进行了更新。 作为此过程的一部分，我们启用了对协议不可知搜索的支持 (意义上，您可以直接搜索不带 http) 的 URL。 默认情况下，除非显式指定，否则 URL 搜索将映射到 http。 例如：
 
-  a.    `http://`在 "url"、"Url 域" 和 "Url 域和路径" 筛选器字段中使用和不带前缀进行搜索。 此行为是一致的，并应显示相同的结果。
-  b.    `https://`在 "URL" 中搜索前缀。 如果不存在，则 `http://` 假定前缀。
-  c.     `/` "URL 路径"、"URL 域"、"URL 域和路径" 字段的开头和结尾将被忽略。 `/` 在 "URL" 字段的末尾忽略。 
+   1. `http://`在 "url"、"Url 域" 和 "Url 域和路径" 筛选器字段中使用和不带前缀进行搜索。 此行为是一致的，并应显示相同的结果。
+   
+   1. `https://`在 "URL" 中搜索前缀。 如果不存在，则 `http://` 假定前缀。
+   
+   1. `/` "URL 路径"、"URL 域"、"URL 域和路径" 字段的开头和结尾将被忽略。 `/` 在 "URL" 字段的末尾忽略。 
 
 ### <a name="phish-confidence-level"></a>网络钓鱼信任级别
 
@@ -141,7 +185,7 @@ Focussed 对 URL 和 URL 的改进的集合单击数据包括：
 
 ### <a name="zap-url-signal"></a>ZAP URL 信号 
 
-通常用于将电子邮件标识为网络钓鱼并在送达后删除的 ZAP 网络钓鱼警报方案。 此项用于在资源管理器中将通知与相应的结果连接。 它是警报的 IOCs 之一。 
+通常用于将电子邮件标识为网络钓鱼并在传递后删除的 ZAP 网络钓鱼警报场景。 此项用于在资源管理器中将通知与相应的结果连接。 它是警报的 IOCs 之一。 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>体验资源管理器和 Real-Time 检测的改进
 
@@ -156,7 +200,8 @@ Focussed 对 URL 和 URL 的改进的集合单击数据包括：
 
 你将看到门户中的电子邮件记录的时区以及导出的数据的时区。 在电子邮件网格、详细信息浮出控件、电子邮件日程表和类似的电子邮件等体验中，时区将可见，从而使用户可以清楚地了解结果集的时区。
 
-![在资源管理器中查看时区](../../media/TimezoneImprovements.png)
+> [!div class="mx-imgBorder"]
+> ![在资源管理器中查看时区](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>刷新过程中的更新
 
@@ -164,19 +209,22 @@ Focussed 对 URL 和 URL 的改进的集合单击数据包括：
 
 从经验的角度来看，用户可以应用和删除筛选器集 (的不同范围的筛选器，并在日期) ，然后按 "刷新" 按钮，在完成定义查询的情况下筛选结果。 "刷新" 按钮也已更新，可在屏幕上清楚地调用它。 我们还提供了有关此更改的更新工具提示和产品内文档。
 
-![单击 "刷新" 以筛选结果](../../media/ManualRefresh.png)
+> [!div class="mx-imgBorder"]
+> ![单击 "刷新" 以筛选结果](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>要添加到筛选器的图表深入分析
 
 现在，您可以单击 "图表图例" 值，将该值作为筛选器添加。 请注意，您仍必须单击 "刷新" 按钮，才能将结果作为上述更改的一部分进行筛选。
 
-![通过要筛选的图表深入分析](../../media/ChartDrilldown.png)
+> [!div class="mx-imgBorder"]
+> ![通过要筛选的图表深入分析](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>在产品信息更新中
 
 您还应查看产品中的其他详细信息。 例如，网格中的搜索结果总数) ，以及有关标签、错误消息和工具提示的改进，以提供有关筛选器、搜索体验和结果集的详细信息，请参阅下图所示的 (。
 
-![查看产品信息](../../media/ProductInfo.png)
+> [!div class="mx-imgBorder"]
+> ![查看产品信息](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>威胁资源管理器中的扩展功能
 
@@ -185,7 +233,8 @@ Focussed 对 URL 和 URL 的改进的集合单击数据包括：
 今天，我们在恶意软件的主要部分中公开主要目标用户的列表， (主要恶意软件系列中的电子邮件) 。 我们将在网络钓鱼和所有电子邮件视图中扩展此视图，在该视图中，您将能够查看前五个目标用户以及每个用户对相应 (视图的尝试次数。例如，对于 "网络钓鱼" 视图，您将能够查看) 的网络钓鱼尝试次数。
 您还可以将目标用户列表导出为3000，并将每个电子邮件视图的脱机分析尝试次数导出到最大值为。 此外，选择 "否"。  (例如，下面的13次) 将在威胁 Explorer 中打开筛选视图，以便您可以在电子邮件和威胁中查看该用户的更多详细信息。
 
-![主要目标用户](../../media/Top_Targeted_Users.png)
+> [!div class="mx-imgBorder"]
+> ![主要目标用户](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange 传输规则
@@ -204,7 +253,8 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 在电子邮件网格、详细信息浮出控件和导出的 CSV 中，Etr 显示如下所示的名称/GUID。
 
-![Exchange 传输规则](../../media/ETR_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Exchange 传输规则](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>入站连接器
 
@@ -212,7 +262,8 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 对连接器的搜索是 ' 包含 ' 性质的，这意味着分部关键字搜索也应正常工作。
 在主网格视图中，"详细信息" 浮出控件和导出的 CSV，连接器以如下所示的名称/GUID 格式显示：
 
-![连接器详细信息](../../media/Connector_Details.png)
+> [!div class="mx-imgBorder"]
+> ![连接器详细信息](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的新功能和实时检测
 
@@ -284,7 +335,8 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 > [!TIP]
 > 当您通过网络邮件 ID 搜索浏览器或关联的第三方工具时，网络邮件 ID 会将单击映射回特定邮件。 在网络邮件 ID 中搜索将为管理员提供与单击结果关联的特定电子邮件。 在有导出功能的情况下，网络邮件 ID 的关联标识将使分析速度更快、更强大。
 
-![在资源管理器中单击选项卡](../../media/tp_ExportClickResultAndNetworkID.png)
+> [!div class="mx-imgBorder"]
+> ![在资源管理器中单击选项卡](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看电子邮件中的技术检测到恶意软件
 
@@ -294,17 +346,20 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **恶意软件**"。
 
-   ![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. 单击 "**发件人**"，然后选择 "**基本**  >  **检测技术**"。
 
    您的检测技术现在可用作报告的筛选器。
 
-   ![恶意软件检测技术](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > [!div class="mx-imgBorder"]
+   > ![恶意软件检测技术](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. 选择一个选项，然后单击 " **刷新** " 按钮以应用该筛选器。
 
-   ![选定的检测技术](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > [!div class="mx-imgBorder"]
+   > ![选定的检测技术](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 报告将刷新，以显示使用您选择的技术选项在电子邮件中检测到恶意软件的结果。 在这里，你可以进行进一步分析。
 
@@ -318,15 +373,17 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **网络钓鱼**"。
 
-   ![浏览器的视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![浏览器的视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. 单击 "**发件人**"，然后选择 " **url**  >  **" 单击 "判定"**。
 
 4. 选择一个或多个选项（如 "已 **阻止** " 和 " **阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 " **刷新** " 按钮。  (不刷新浏览器窗口。 ) 
 
-   ![Url 并单击 "verdicts"](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > [!div class="mx-imgBorder"]
+   > ![Url 并单击 "verdicts"](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-    报告将刷新，以在报告下的 "URL" 选项卡上显示两个不同的 URL 表：
+   报告将刷新，以在报告下的 "URL" 选项卡上显示两个不同的 URL 表：
 
    - **上面的 url** 是您已筛选出的邮件中包含的 url，并且每个 URL 的电子邮件传递操作都会计数。 在网络钓鱼电子邮件视图中，此列表通常包含合法的 Url。 攻击者在其邮件中加入了好和坏的 Url，以尝试传递它们，但它们会使用户更有趣地单击恶意链接。 Url 表按总电子邮件计数进行排序 (但请注意，此列处于隐藏状态，以简化视图) 。
 
@@ -334,7 +391,8 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
    这两个 URL 表通过传递操作和位置显示网络钓鱼电子邮件中的前几个 url，并且它们显示的 URL 单击已被阻止 (或访问被阻止) 的情况，以便您可以了解用户收到的潜在坏链接和用户的交互情况。 在这里，你可以进行进一步分析。 例如，在图表下方，您可以看到在组织的环境中被阻止的电子邮件中的最高 Url。
 
-   ![阻止的资源管理器 Url](../../media/ExplorerPhishClickVerdictURLs.png)
+   > [!div class="mx-imgBorder"]
+   > ![阻止的资源管理器 Url](../../media/ExplorerPhishClickVerdictURLs.png)
 
    选择一个 URL 以查看更详细的信息。
 
@@ -362,13 +420,15 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **提交**"。
 
-   ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
+   > [!div class="mx-imgBorder"]
+   > ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 单击 "**发件人**"，然后选择 "**基本**  >  **报告类型**"。
 
 4. 选择一个选项，如 " **网络钓鱼**"，然后单击 " **刷新** " 按钮。
 
-   ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
+   > [!div class="mx-imgBorder"]
+   > ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
 报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，如有必要，调整您的 [ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 

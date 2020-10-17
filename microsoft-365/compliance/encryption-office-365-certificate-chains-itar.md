@@ -1,11 +1,11 @@
 ---
-title: Office 365 加密链 - DOD 和 GCC High
+title: Microsoft 365 加密链-DOD 和 GCC 高
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 3/24/2020
+ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,34 +16,36 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: 查看 Office 365 中的 DOD 和 GCC 高根证书和证书颁发机构 (CAs) 的完整列表。
-ms.openlocfilehash: 19f164669392372c99c562f55cfb05487d9f7ed2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: 查看 Microsoft 365 中的 DOD 和 GCC 高根证书和证书颁发机构 (CAs) 的完整列表。
+ms.openlocfilehash: a933acc14f0984e4935ff6e56ccccd3aed1f16cf
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308275"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493649"
 ---
-# <a name="office-365-encryption-chains---dod-and-gcc-high"></a>Office 365 加密链 - DOD 和 GCC High
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 加密链-DOD 和 GCC 高
 
-Office 365 利用了许多不同的证书提供程序。 下面介绍了在访问 Office 365 时， **DOD 和 GCC 高级客户** 可能会遇到的已知 Office 365 根证书的完整列表。 有关您可能需要在自己的基础结构中安装的证书的信息，请参阅 [Plan for 第三方 SSL 证书（适用于 Office 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)）。
+Microsoft 365 利用多种不同的证书提供程序。 下面介绍了在访问 Microsoft 365 时， **DOD 和 GCC 高级客户** 可能遇到的已知 Microsoft 365 根证书的完整列表。 有关可能需要在自己的基础结构中安装的证书的信息，请参阅 [Plan for 第三方 SSL 证书（针对 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)）。
 
 以下证书信息适用于 **所有 DOD 和 GCC 高级客户**。
 
+上次更新时间： **10/16/2020**
+
 >[!NOTE]
->有关适用于 **全球客户**的证书信息，请参阅 [Office 365 加密链](encryption-office-365-certificate-chains.md)。
+>有关适用于 **全球客户**的证书信息，请参阅 [Microsoft 365 加密链](encryption-office-365-certificate-chains.md)。
 
 | **证书类型** | **P7b 下载** | **CRL 终结点** | **OCSP 终结点** |
 | --- | --- | --- | --- | --- |
-| 公开信任的根证书和中间证书 | [Office 365 ITAR 证书捆绑 (P7B) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/O365_Chain_Certs_ITAR20200304.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
+| 公开信任的根证书和中间证书 | [Microsoft 365 ITAR 证书捆绑 (P7B) ](https://download.microsoft.com/download/b/3/a/b3ae08a2-516c-46a9-8723-6256e4fd6383/m365_chain_certs_itar20201012.p7b) | crl.entrust.net<br>crl3.digicert.com<br>crl4.digicert.com | ocsp.digicert.com<br>ocsp.entrust.net |
 
 展开下面的根和中间部分，查看有关证书提供程序的其他详细信息。
 
-## <a name="office-365-certificate-details"></a>**Office 365 证书详细信息**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 证书详细信息**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **主题** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
+| **Subject** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | --- | --- |
 | **序列号** | 02：00：00： B9 |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -57,7 +59,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
 
-| **主题** | CN = DigiCert 云服务 CA-1<br>O = DigiCert Inc。<br>C = 美国 |
+| **Subject** | CN = DigiCert 云服务 CA-1<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | **序列号** | 01：9E： C1： C6： BD：3F：59：7B： B2：0C：33：38： E5：51： D8：77：77 |
@@ -73,9 +75,26 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 | **CRL Url** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP Url** | http://ocsp.digicert.com |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 云服务 CA-1**
+
+| **Subject** | CN = DigiCert 云服务 CA-1<br>O = DigiCert Inc。<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 0F：17：1A：48： C6： F2：23：80：92：18： CD：2E： D6： DD： C0： E8 |
+| **公用密钥长度** | RSA 2048 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 2020年9月24日，星期四，5:00 PM |
+| **有效期截止到** | 9月24日（星期二），2030 4:59 PM |
+| **主题密钥标识符** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
+| **颁发机构密钥标识符** | KeyID：03：50：50：35：56： f0： d1：4c： bb：： a3：： e2：1b：1b：1b：？：： |
+| ** (SHA-1) 的指纹 ** | B3F6B64A07BB9611F47174407841F564FB991F29 |
+| **指纹 (SHA-256) ** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
 ### <a name="digicert-global-root-ca"></a>**DigiCert 全局根 CA**
 
-| **主题** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **Subject** | CN = DigiCert 全局根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **序列号** | 08：3B： E0：56：90：42：46： B1： A1：75：6A：59：59：91： C7：4A |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -88,9 +107,24 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 | **指纹 (SHA-256) ** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **固定 (SHA-256) ** | r/mIkG3eEpVdm + u/ko/cwxzOMo1bk4TyHIlByibiA5E = |
 
+### <a name="digicert-global-root-g2"></a>**DigiCert 全局根 G2**
+
+| **Subject** | CN = DigiCert 全局根 G2<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root G2，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 03：3A： F1： E6： A7：5：5：9：3： BB：28：64： B1：1D：09： FA： E5 |
+| **公用密钥长度** | RSA 2048 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 2013年8月1日，星期四，5:00 AM |
+| **有效期截止到** | 2038年1月15日（星期五）上午4:00 |
+| **主题密钥标识符** | 4E2254201895E6E36EE60FFAFAB912ED06178F39 |
+| **颁发机构密钥标识符** | KeyID：4e：22：54：20：20：20：6：95：95： e6： e3：6e： e6：0f：8f：：： fa：：： |
+| ** (SHA-1) 的指纹 ** | DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 |
+| **指纹 (SHA-256) ** | CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
+
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高确定性 EV 根 CA**
 
-| **主题** | CN = DigiCert 高确定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **Subject** | CN = DigiCert 高确定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **序列号** | 02： AC：5C：26：40：9B：40：40：40：：8F：0B： |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -105,7 +139,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 扩展验证服务器 CA**
 
-| **主题** | CN = DigiCert SHA2 扩展验证服务器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
+| **Subject** | CN = DigiCert SHA2 扩展验证服务器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C = 美国 |
 | --- | --- |
 | **序列号** | 0C：79： A9：44：44：8C：11：95：20：92：61：5F： E2：6B：1D：83 |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -117,9 +151,60 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 | ** (SHA-1) 的指纹 ** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
 | **指纹 (SHA-256) ** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
+
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 01： FD： A3： EB：6E： CA：1： C8：88：43：8B：72：4B：： BC：91 |
+| **公用密钥长度** | RSA 2048 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 2013年3月8日（星期五）上午4:00 上午 |
+| **有效期截止到** | 星期三，3月8日，2023 4:00 AM |
+| **主题密钥标识符** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **颁发机构密钥标识符** | KeyID：03：50：50：35：56： f0： d1：4c： bb：： a3：： e2：1b：1b：1b：？：： |
+| ** (SHA-1) 的指纹 ** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
+| **指纹 (SHA-256) ** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 安全服务器 CA**
+
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 02：74：2E： AA：17：8E：0C：21： C7：17： BB：1F：： FD：： A0 |
+| **公用密钥长度** | RSA 2048 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 星期二，22月22日，2020 5:00 PM |
+| **有效期截止到** | 2030 4:59 PM，星期日（9月22日） |
+| **主题密钥标识符** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **颁发机构密钥标识符** | KeyID：03：50：50：35：56： f0： d1：4c： bb：： a3：： e2：1b：1b：1b：？：： |
+| ** (SHA-1) 的指纹 ** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
+| **指纹 (SHA-256) ** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
+
+| **Subject** | CN = DigiCert TLS RSA SHA256 2020 CA1<br>O = DigiCert Inc。<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 0A：35：08：0F：5C：29：29：29：2B：01：7D： F8：：： F7： |
+| **公用密钥长度** | RSA 2048 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 星期三，9月23日，2020 5:00 PM |
+| **有效期截止到** | 星期一，9月23日，2030 4:59 PM |
+| **主题密钥标识符** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
+| **颁发机构密钥标识符** | KeyID：03：50：50：35：56： f0： d1：4c： bb：： a3：： e2：1b：1b：1b：？：： |
+| ** (SHA-1) 的指纹 ** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
+| **指纹 (SHA-256) ** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
 ### <a name="entrust-root-certification-authority"></a>**Entrust 根证书颁发机构**
 
-| **主题** | CN = Entrust 根证书颁发机构<br>OU = " (c) 2006 Entrust，Inc."<br>OU = entrust/CPS 是通过引用并入的<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 根证书颁发机构<br>OU = " (c) 2006 Entrust，Inc."<br>OU = entrust/CPS 是通过引用并入的<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **序列号** | 45：6B：50：54 |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -133,7 +218,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust 根证书颁发机构-G2**
 
-| **主题** | CN = Entrust 根证书颁发机构-G2<br>OU = &quot; (c) 2009 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 根证书颁发机构-G2<br>OU = &quot; (c) 2009 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **序列号** | 4A：53：8C：28 |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -147,7 +232,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **主题** | CN = Entrust 证书颁发机构 (2048) <br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust/CPS \_ 2048 合并。 按 ref (liab 限制 s。 ) <br>O = Entrust |
+| **Subject** | CN = Entrust 证书颁发机构 (2048) <br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust/CPS \_ 2048 合并。 按 ref (liab 限制 s。 ) <br>O = Entrust |
 | --- | --- |
 | **序列号** | 38：63： DE： F8 |
 | **公用密钥长度** | RSA 2048 bits (e 65537)  |
@@ -161,7 +246,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 证书颁发机构-L1C**
 
-| **主题** | CN = Entrust 证书颁发机构-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 证书颁发机构-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 证书颁发机构 (2048) <br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust/CPS \_ 2048 合并。 按 ref (限制 liab。 ) <br>O = Entrust |
 | **序列号** | 4C：0E：8C：39 |
@@ -179,7 +264,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrust-certification-authority---l1e"></a>**Entrust 证书颁发机构-L1E**
 
-| **主题** | CN = Entrust 证书颁发机构-L1E<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 证书颁发机构-L1E<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是通过引用并入的<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 证书颁发机构 (2048) <br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust/CPS \_ 2048 合并。 按 ref (限制 liab。 ) <br>O = Entrust |
 | **序列号** | 4C：0E：的 C9：18 |
@@ -196,7 +281,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 证书颁发机构-L1K**
 
-| **主题** | CN = Entrust 证书颁发机构-L1K<br>OU = &quot; (c) 2012 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 证书颁发机构-L1K<br>OU = &quot; (c) 2012 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 根证书颁发机构-G2<br>OU = &quot; (c) 2009 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | **序列号** | 0E： E9：4C： C3：：00：00：00：00：00：00：00：51： |
@@ -214,7 +299,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="entrust-certification-authority---l1m"></a>**Entrust 证书颁发机构-L1M**
 
-| **主题** | CN = Entrust 证书颁发机构-L1M，OU = &quot; (c) 2014 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
+| **Subject** | CN = Entrust 证书颁发机构-L1M，OU = &quot; (c) 2014 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = Entrust 根证书颁发机构-G2<br>OU = &quot; (c) 2009 Entrust，inc.-仅供授权使用&quot;<br>OU = 请参阅 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C = 美国 |
 | **序列号** | 61： A1： E7： D2： D2：00：00：00：00：00：00：51： D3：66： A6 |
@@ -229,9 +314,77 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 | **CRL Url** | http://crl.entrust.net/g2ca.crl |
 | **OCSP Url** | http://ocsp.entrust.net |
 
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS 颁发 CA 01**
+
+| **Subject** | CN = Microsoft Azure TLS 颁发 CA 01<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root G2，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 0A： AF： A6： C5：： CA：63： C4：？：41： EA： E1： F7： F7： C7： C7：17 |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha384RSA |
+| **不早的有效期** | 2020年7月29日，星期三，上午5:30 上午 |
+| **有效期截止到** | 6月27日，星期四，2024 4:59 PM |
+| **主题密钥标识符** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
+| **颁发机构密钥标识符** | KeyID：4e：22：54：20：20：20：6：95：95： e6： e3：6e： e6：0f：8f：：： fa：：： |
+| ** (SHA-1) 的指纹 ** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
+| **指纹 (SHA-256) ** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 颁发 CA 02**
+
+| **Subject** | CN = Microsoft Azure TLS 颁发 CA 02<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root G2，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 0C：6A： E9：7C：：：：： CE：14：99：99：86：90： A0：0A：： A5： |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha384RSA |
+| **不早的有效期** | 2020年7月29日，星期三，上午5:30 上午 |
+| **有效期截止到** | 6月27日，星期四，2024 4:59 PM |
+| **主题密钥标识符** | 00AB91FC216226979AA8791B61419060A96267FD |
+| **颁发机构密钥标识符** | KeyID：4e：22：54：20：20：20：6：95：95： e6： e3：6e： e6：0f：8f：：： fa：：： |
+| ** (SHA-1) 的指纹 ** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
+| **指纹 (SHA-256) ** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 颁发 CA 05**
+
+| **Subject** | CN = Microsoft Azure TLS 颁发 CA 05<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root G2，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 0D：7B： E9：7D：7D：82：09：96：7A：52：63：1B：8B： DD：18： BD |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha384RSA |
+| **不早的有效期** | 2020年7月29日，星期三，上午5:30 上午 |
+| **有效期截止到** | 6月27日，星期四，2024 4:59 PM |
+| **主题密钥标识符** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
+| **颁发机构密钥标识符** | KeyID：4e：22：54：20：20：20：6：95：95： e6： e3：6e： e6：0f：8f：：： fa：：： |
+| ** (SHA-1) 的指纹 ** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
+| **指纹 (SHA-256) ** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 颁发 CA 06**
+
+| **Subject** | CN = Microsoft Azure TLS 颁发 CA 06<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = DigiCert Global Root G2，OU = DigiCert，O = DigiCert Inc.，C = US |
+| **序列号** | 02： E7：91：71：02：80：21： E9：3F： E2： D9：83：83：4C：50： C0 |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha384RSA |
+| **不早的有效期** | 2020年7月29日，星期三，上午5:30 上午 |
+| **有效期截止到** | 6月27日，星期四，2024 4:59 PM |
+| **主题密钥标识符** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
+| **颁发机构密钥标识符** | KeyID：4e：22：54：20：20：20：6：95：95： e6： e3：6e： e6：0f：8f：：： fa：：： |
+| ** (SHA-1) 的指纹 ** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
+| **指纹 (SHA-256) ** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
+| **CRL Url** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **主题** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **Subject** | CN = Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 08： B8：7A：50：1B：1B：9C： DA：2D：16：4D：3E：39：51： BF：55 |
@@ -249,7 +402,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **主题** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **Subject** | CN = Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 0F：2C：10： B8：7F：：：49：49：3E：：85：69： |
@@ -267,7 +420,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **主题** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **Subject** | CN = Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 0B：6A： B3：3E： B1： B1： B1： F6： C4：60：92：6A： A8： CD： FE： B3 |
@@ -285,7 +438,7 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **主题** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
+| **Subject** | CN = Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O = Microsoft Corporation<br>L = Redmond<br>S = 华盛顿<br>C = 美国 |
 | --- | --- |
 | **颁发者** | CN = 巴尔的摩 CyberTrust 根<br>OU = CyberTrust<br>O = 巴尔的摩<br>C = IE |
 | **序列号** | 08：88： CD：52：5F：19：19：19：19：24：44：4D：78：82： |
@@ -298,5 +451,39 @@ Office 365 利用了许多不同的证书提供程序。 下面介绍了在访�
 | ** (SHA-1) 的指纹 ** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **指纹 (SHA-256) ** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
 | **固定 (SHA-256) ** | RCbqB + W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc = |
+| **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
+
+| **Subject** | CN = Microsoft RSA TLS CA 01<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = 巴尔的摩 CyberTrust Root，OU = CyberTrust，O = 巴尔的摩，C = IE |
+| **序列号** | 0F：14：96：5F：20：20：20：20：20：69：99：4F： D5： C7：-AC：78：89：41： E2 |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 7月21日，星期二，2020 4:00 PM |
+| **有效期截止到** | 10月8日（星期二），2024 12:00 AM |
+| **主题密钥标识符** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
+| **颁发机构密钥标识符** | KeyID：9d：59：59：30：59：59：30：82：47：58：% cc： ac： fa：08：54：36：54： f0 |
+| ** (SHA-1) 的指纹 ** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
+| **指纹 (SHA-256) ** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
+| **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP Url** | http://ocsp.digicert.com |
+
+### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
+
+| **Subject** | CN = Microsoft RSA TLS CA 02<br>O = Microsoft Corporation<br>C = 美国 |
+| --- | --- |
+| **颁发者** | CN = 巴尔的摩 CyberTrust Root，OU = CyberTrust，O = 巴尔的摩，C = IE |
+| **序列号** | 0F： A7：47：22： C5：3D：88： C8：0F：58：9E：1F：1F：9D：4A：3A |
+| **公用密钥长度** | RSA 4096 位 |
+| **签名算法** | sha256RSA |
+| **不早的有效期** | 7月21日，星期二，2020 4:00 PM |
+| **有效期截止到** | 10月8日（星期二），2024 12:00 AM |
+| **主题密钥标识符** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
+| **颁发机构密钥标识符** | KeyID：9d：59：59：30：59：59：30：82：47：58：% cc： ac： fa：08：54：36：54： f0 |
+| ** (SHA-1) 的指纹 ** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
+| **指纹 (SHA-256) ** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
 | **CRL Url** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP Url** | http://ocsp.digicert.com |

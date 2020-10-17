@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度标签保护 SharePoint 和 Microsoft Teams 网站以及 Microsoft 365 组中的内容。
-ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: ac6af4d82b3da507f1fe0081041b347b9f5e4a94
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430311"
+ms.locfileid: "48446844"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容
 
@@ -37,9 +37,9 @@ ms.locfileid: "48430311"
 > [!IMPORTANT]
 > “**非托管设备的访问**”设置可与 SharePoint 功能配合使用，从而[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 必须配置此从属 SharePoint 功能，才能使用配置了此设置的敏感度标签。 下面的说明中提供了其他信息。
 
-如果你将此敏感度标签应用于受支持的容器，此标签会自动向连接的网站或组应用分类和保护设置。
+如果你将此敏感度标签应用于受支持的容器，此标签会自动向网站或组应用分类和配置保护设置。
 
-但是，这些容器中的内容不会继承用于分类和设置的标签，例如标签名称、视觉标记或加密。 这样，用户可以标记 SharePoint 网站或团队网站中的文档，确保[为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+但是，这些容器中的内容不会继承用于文件和电子邮件分类或设置的标签，例如视觉标记和加密。 这样，用户可以标记 SharePoint 网站或团队网站中的文档，确保[为 SharePoint 和 OneDrive 中的 Office 文件启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 > [!NOTE]
 > Office 365 内容交付网络 (CDN) 不支持容器的敏感度标签。
@@ -68,42 +68,53 @@ ms.locfileid: "48430311"
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings"></a>如何配置网站和组设置
+## <a name="how-to-configure-groups-and-site-settings"></a>如何配置组和网站设置
 
-你现已可创建或编辑要提供给网站和组使用敏感度标签。 为容器启用敏感度标签后，敏感度标签向导中会显示一个新页面，即“**网站和组设置**”
+为容器启用敏感度标签意味着你现在可以在敏感度标签向导中为组和网站配置保护设置。 在启用此支持之前，这些设置在向导中可见，但无法对其进行配置。
 
-如果在创建或编辑敏感度标签方面需要帮助，请查看[创建和配置敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)中的说明。
-
-在这个新的“**网站和组设置**”页面中，配置以下设置：
-
-- **连接 Microsoft 365 组的团队网站的隐私**：如果你希望组织中的每个人都可访问应用此标签的团队网站或组，请保持 **公用 - 组织中的任何人都可访问该站点** 的默认设置。
-
-  如果要将访问权限限制为仅允许组织中的已批准成员，请选择“**专用**”。
-
-  如果希望使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请选择“**无 - 让用户选择谁可以访问该网站**”。
-
-  “**公用**”或“**专用**”的设置可在你将此标签应用到容器时设置和锁定隐私设置。 你选择的设置将替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 在你删除敏感度标签后，标签中的隐私设置仍保留，用户现在可以再次更改它。
-
-- **外部用户访问**：控制组所有者是否可[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
-
-- **未管理的设备**：此选项使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如步骤 2-4 中所述，[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)的访问。
+1. 请遵循一般说明来[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择“**组和网站**”： 
     
-    如果未按照“[使用应用强制实施的限制](https://docs.microsoft.com/sharepoint/app-enforced-restrictions)”中的文档配置 SharePoint 的相关条件访问策略，则此处指定的选项将无效。 此外，如果其限制性低于在租户级别配置的设置，则也不会起作用。 如果你已为非托管设备配置了组织范围的设置，请选择相同或更严格的标签设置。
+    ![文件和电子邮件的敏感度标签作用域选项](../media/groupsandsites-scope-options-sensitivity-label.png)
     
-    例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
+    如果仅为标签选择此范围，则该标签将不会在支持敏感度标签的 Office 应用中显示，也无法应用于文件和电子邮件。 分隔标签对于用户和管理员都将有所帮助，但也会增加标签部署的复杂性。
     
-    由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签向导中不会检查依赖项是否已就位。
+    例如，你需要仔细检查[标签顺序](sensitivity-labels.md#label-priority-order-matters)，因为 SharePoint 会检测何时将标签文档上载到标签网站。 在这种情况下，当文档具有比网站标签更高的优先级敏感度标签时，会自动生成审核事件和电子邮件。 有关更多信息，请参阅本页上的[审核敏感度标签活动](#auditing-sensitivity-label-activities)部分。 
 
-![网站和组设置选项卡](../media/edit-sensitivity-label-site-group2.png)
+2. 然后，在**定义组和网站的保护设置**页面上，选择一个或两个可用选项：
+    
+    - “**隐私和外部用户访问设置**”用于配置**隐私**和**外部用户访问**设置。 
+    - “**设备访问和外部共享设置**”用于配置“**非托管设备的访问**”设置。
+
+3. 如果你选择了“**隐私和外部用户访问设置**”，现在请配置以下设置：
+    
+    - **隐私**：如果要使组织中的每个人都可访问应用此标签的团队网站或组，请保留“**公用**”的默认设置。
+        
+        如果要将访问权限限制为仅允许组织中的已批准成员，请选择“**专用**”。
+        
+        如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，请选择“**无**”。
+        
+        “**公用**”或“**专用**”的设置可在你将此标签应用到容器时设置和锁定隐私设置。 你选择的设置将替换之前可能已为团队或组配置的任何隐私设置，并锁定隐私值，因此只有先从容器中删除敏感度标签才能更改它。 删除敏感度标签后，标签中的隐私设置仍将保留，用户现在可以再次更改它。
+    
+    - **外部用户访问**：控制组所有者是否可以[向组添加来宾](/office365/admin/create-groups/manage-guest-access-in-groups)。
+
+4. 如果你选择了“**设备访问和外部共享设置**”，现在请配置以下设置：
+    
+    - **非托管设备的访问**：此选项使用 Azure AD 条件访问来阻止或限制从非托管设备访问 SharePoint 和 OneDrive 内容的 SharePoint 功能。 有关详细信息，请参阅 SharePoint 文档中的[控制非托管设备的访问](/sharepoint/control-access-from-unmanaged-devices)。 为此标签设置指定的选项等效于运行针对网站的 PowerShell 命令，如 SharePoint 说明中[阻止或限制对特定 SharePoint 网站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 部分的步骤 2 - 4 所述。
+        
+        有关其他信息，请参阅本部分末尾的[有关非托管设备选项依赖项的详细信息](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
 
 > [!IMPORTANT]
-> 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。
->
-> 正在逐步向租户推出：当用户创建团队、组和网站时，只有带有网站和组设置的标签才可供选择。 如果当前可以向容器应用未启用网站和组设置的标签，只有标签名称会应用于容器。
+> 将标签应用于团队、组或网站时，只有这些网站和组设置会生效。 如果[标签作用域](sensitivity-labels.md#label-scopes)包括文件和电子邮件，则其他标签设置（例如加密和内容标记）不适用于团队、组或网站中的内容。
 
-如果尚未发布敏感度标签，现可通过[将其添加到敏感度标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。 分配有含有此标签的敏感度标签策略的用户，将能够为网站和组选择。
+如果尚未发布敏感度标签，现可通过[将其添加到敏感度标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)进行发布。 分配的敏感度标签策略包含此标签的用户将能够为网站和组选择该标签。
 
-根据标签策略，在向容器应用此标签时，只有策略设置“默认将此标签应用于文档和电子邮件”**** 适用。 其他策略设置都不会应用，包括强制标记、需要用户理由和自定义帮助页面链接。
+##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>有关非托管设备选项依赖项的详细信息
+
+如果未按照“[使用应用强制实施的限制](https://docs.microsoft.com/sharepoint/app-enforced-restrictions)”中的文档配置 SharePoint 的相关条件访问策略，则此处指定的选项将无效。 此外，如果其限制性低于在租户级别配置的设置，则也不会起作用。 如果你已为非托管设备配置了组织范围的设置，请选择相同或更严格的标签设置
+
+例如，如果你的租户被配置为“**允许仅限 Web 的受限访问**”，则允许完全访问权限的标签设置将不起作用，因为其限制性较弱。 对于此租户级设置，请选择可阻止访问的标签设置（限制性更强）或可实现受限访问的标签设置（与租户设置相同）。
+
+由于可以独立于标签配置来配置该 SharePoint 设置，因此在敏感度标签向导中不会检查依赖项是否已就位。 这些依赖项可在创建和发布标签，甚至应用标签后配置。 但是，如果已应用标签，则标签设置要在用户下次进行身份验证后才会生效。
 
 ## <a name="sensitivity-label-management"></a>敏感度标签管理
 
@@ -344,7 +355,10 @@ ms.locfileid: "48430311"
 
 ## <a name="auditing-sensitivity-label-activities"></a>审核敏感度标签活动
 
-如果有人将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，且不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
+> [!IMPORTANT]
+> 如果通过仅为保护容器的标签选择“**组和网站**”作用域来使用标签分离，则：由于本部分描述的**检测到文档敏感度不匹配**审核事件和电子邮件，请考虑在为标签设置“**文件和电子邮件**”作用域之前先[对这些标签进行排序](sensitivity-labels.md#label-priority-order-matters)。 
+
+如果有人将文档上传到受敏感度标签保护的网站上，且该文档的敏感度标签的[优先级](sensitivity-labels.md#label-priority-order-matters)比该网站应用的敏感度标签高，则不会阻止此操作。 例如，你向 SharePoint 网站应用了“**常规**”标签，并且有人向此网站上传了一个标记为“**机密**”的文档。 对于优先级更低的内容来说，具有更高优先级的敏感度标签会识别敏感度高于此内容的内容，因此该情况可能会带来安全隐患。
 
 虽然此操作未被阻止，但它经过审核，并会自动生成一封面向上传文档的人员和网站管理员的电子邮件。 因此，可识别存在这种标签优先级不一致情况的用户和管理员，并在必要时采取措施。 例如，从网站中删除或移动已上传的文档。
 
@@ -362,7 +376,7 @@ ms.locfileid: "48430311"
 
 你可按照[在 PowerShell 中启用敏感度标签支持](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同说明，为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站关闭敏感度标签。 但是，若要禁用此功能，请在步骤 5 中指定 `$setting["EnableMIPLabels"] = "False"`。
 
-创建或编辑敏感度标签时，除了隐藏“**网站和组设置**”页面以外，此操作还可恢复容器用于其配置的属性。 为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签会将使用的属性从**分类**（用于 [Azure AD 组分类](#classic-azure-ad-group-classification)）切换为**敏感度**。 当禁用容器的敏感度标签时，容器将忽略敏感度属性并再次使用“分类”属性。
+除了在创建或编辑敏感度标签时使所有设置对组和网站不可用以外，此操作还可恢复容器用于其配置的属性。 为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用敏感度标签会将使用的属性从“**分类**”（用于 [Azure AD 组分类](#classic-azure-ad-group-classification)）切换为“**敏感度**”。 当禁用容器的敏感度标签时，容器将忽略敏感度属性并再次使用“分类”属性。
 
 这意味着不会强制实施先前应用到容器的网站和组中的任何标签设置，并且容器不再显示标签。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286038"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446635"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -456,6 +456,24 @@ ms.locfileid: "48286038"
 |按客户端查看信号|ClientViewSignaled|用户的客户端（例如网站或移动应用）已发出信号，表明用户已查看指示的页面。 此活动通常在页面的 PagePrefetched 事件后记录。 <br/><br/>**注意**：由于 ClientViewSignaled 事件由客户端而非服务器发出信号，因此服务器可能不会记录该事件，从而导致该事件可能未显示在审核日志中。 审核记录中的信息也可能不可信。 但是，由于用户身份由用于创建信号的令牌验证，因此相应审核记录中列出的用户身份是准确的。 |
 |(无)|PagePrefetched|用户的客户端（例如网站或移动应用）已请求指示的页面，以帮助提高用户浏览时的性能。 记录此事件以指示页面内容已服务于用户的客户端。 此事件未明确指示用户导航到页面。 <br/><br/> 当客户端（根据用户请求）呈现页面内容时，应生成 ClientViewSignaled 事件。 并非所有客户端都支持指示预提取，因此一些预提取的活动可能会被记录为 PageViewed 事件。|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>有关 FileAccessed 和 FilePreviewed 事件的常见问题
+
+**任何非用户活动都可以触发 FilePreviewed 审核记录吗？其中包含 "OneDriveMpc-Transform_Thumbnail" 之类的用户代理。**
+
+我们不了解非用户操作生成类似事件的情况。 比如打开用户配置文件卡片（通过在 Outlook 网页版中的邮件中单击其名称或电子邮件地址）生成类似事件的用户操作。
+
+**对 OneDriveMpc Transform_Thumbnail 的调用是否始终由用户有意触发？**
+
+否。 但是类似的事件可以作为浏览器预取的结果被记录下来。
+
+**如果看到来自 Microsoft 注册的 IP 地址的 FilePreviewed 事件，是否表示预览显示在用户设备的屏幕上？**
+
+否。 该事件可能已经作为浏览器预取的结果被记录下来。
+
+**是否存在用户预览文档时生成文件访问事件的场景？**
+
+FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件的读取（或对文件的缩略图呈现的读取）。 虽然这些事件旨在与访问意向保持一致，但事件的区别并不能保证用户的意图。
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>审核记录中的 app\@sharepoint 用户
 

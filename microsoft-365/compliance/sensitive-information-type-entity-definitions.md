@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430429"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487490"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -670,36 +670,155 @@ OR
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_austria_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_austria_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` 。 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- driver's licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - fuhrerschein
-- fuhrerschein republik osterreich
+- führerschein-nr
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>奥地利身份卡片
 此敏感信息类型仅可用于以下内容：
@@ -1501,41 +1620,163 @@ national id
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_belgium_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_belgium_eu_driver's_license_number` 。
+- 找到或中的关键字 `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` 。
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-**Keywords__belgium_eu_driver "s_license_number**
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
 - dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver "s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein-nr
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein-nr-nr
-- fuehrerschein-Nr
-- fuehrerschein-nr
+- 
+permis de conduire
+- numéro permis conduire
+
 
 ## <a name="belgium-national-number"></a>比利时国家/地区号码
 
@@ -2055,38 +2296,155 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_bulgaria_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver "s_license_number
-- 通讯#
-- driver license
-- 驱动程序许可证编号
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
 - dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver "s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>保加利亚统一民事号码
 此敏感信息类型仅可用于以下内容：
@@ -3316,35 +3674,152 @@ número do cartão
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_croatia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_croatia_eu_driver's_license_number` 。 
+- 找到或中的关键字 `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` 。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>克罗地亚 identity 卡片号
@@ -3622,34 +4097,152 @@ número do cartão
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_cyprus_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_cyprus_eu_driver's_license_number` 。
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` 。
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
 #### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>塞浦路斯标识卡片
@@ -3852,7 +4445,8 @@ número do cartão
 
 八个字母和数字：
   
-- 两个字母 (不区分大小写) 
+- 字母 "E" (不区分大小写) 
+- 一个字母
 - 空格 (可选) 
 - 6位数字
 
@@ -3864,37 +4458,153 @@ número do cartão
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_czech_republic_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` 。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
 #### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>捷克语护照号码
@@ -4131,40 +4841,155 @@ número do cartão
   
 ### <a name="checksum"></a>校验和
 
-是
+否
   
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_denmark_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_denmark_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
 #### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver "s_license_number
 
-- | dl#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - kørekort
 - kørekortnummer
 
@@ -4461,35 +5286,153 @@ número do cartão
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_estonia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_estonia_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
 #### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶执照号码
-- dlno#
-- permis de conduire
+--permis de conduire
+- juhilubade numbrid
+- juhiloa 编号
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>爱沙尼亚个人标识代码
@@ -5142,15 +6085,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-10个数字，包含连字符
+10个数字和包含连字符的字母
   
 ### <a name="pattern"></a>模式
 
-10位数，包含连字符：
+10个数字和包含连字符的字母：
   
 - 6位数字 
 - 连字符
-- 四位数 
+- 三个数字 
+- 一个数字或字母
     
 ### <a name="checksum"></a>校验和
 
@@ -5160,35 +6104,159 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_finland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_finland_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- kuljettaja 许可证。
+- körkort
+- körkortnummer
+- förare 许可证。
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>芬兰欧洲健康保险电话号码
@@ -5496,36 +6564,155 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_french_drivers_license 找到与该模式匹配的内容。
-- 至少满足以下条件之一：
 - 找到 Keyword_french_drivers_license 中的关键字。
-- 函数 Func_eu_date 找到正确日期格式的日期。
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
-- drivers licence
-- drivers license
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
 - driving licence
-- driving license
-- permis de conduire
-- licence number
-- license number
-- licence numbers
-- license numbers
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+- 
+permis de conduire
+- 
+licence number
+- 
+license number
+- 
+licence numbers
+- 
+
+license numbers
+- numéros 解除许可
 
 
 ## <a name="france-health-insurance-number"></a>法国健康保险号
@@ -5929,124 +7116,177 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_german_drivers_license 找到与该模式匹配的内容。
-- 下列至少其中一项为真：
-    - 找到 Keyword_german_drivers_license_number 中的一个关键字。
-    - 找到 Keyword_german_drivers_license_collaborative 中的一个关键字。
-    - 找到 Keyword_german_drivers_license 中的一个关键字。
+- 找到 Keyword_german_drivers_license_number 中的一个关键字。
 - 校验和通过。
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein-nr
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein-nr 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein-Nr
-- Fuhrerschein- Nr
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein-Nr 
-- Fuhrerschein- Nr 
-- Fuehrerschein- Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- 通讯 
-- DLS
-- Driv Lic 
-- Driv Licen 
-- Driv License
-- Driv Licenses 
-- Driv Licence 
-- Driv Licences 
-- Driv Lic 
-- Driver Licen 
-- Driver License 
-- Driver Licenses 
-- Driver Licence 
-- Driver Licences 
-- Drivers Lic 
-- Drivers Licen 
-- Drivers License 
-- Drivers Licenses 
-- Drivers Licence 
-- Drivers Licences 
-- Driver's Lic 
-- Driver's Licen 
-- Driver's License 
-- Driver's Licenses 
-- Driver's Licence 
-- Driver's Licences 
-- Driving Lic 
-- Driving Licen 
-- Driving License 
-- Driving Licenses 
-- Driving Licence 
-- Driving Licences
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein-nr 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein-nr 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- 
+ausstellende behöde
+- 
+ausstellende behorde
+- 
+
+ausstellende behoerde
+- führerschein-nr
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein-nr 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- nr-führerschein-nr
+- nr-fuhrerschein
+- nr-fuehrerschein
+- führerschein-nr
+- fuhrerschein
+- fuehrerschein
+- n-führerschein-nr
+- n-fuhrerschein
+- n-fuehrerschein
+- 
+permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>德国身份卡片编号
@@ -6321,36 +7561,154 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_greece_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_greece_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver "s_license_number
 
-- dlL#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>希腊国家 ID 卡
@@ -6646,35 +8004,152 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_hungary_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_hungary_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>匈牙利个人标识号
@@ -7188,7 +8663,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 diseases (ICD-10-CM) 
@@ -7362,36 +8837,152 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
 - 正则表达式  `Regex_ireland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_ireland_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - ceadúnas tiomána
-
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
 
@@ -7654,10 +9245,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-- 10个字母和数字的组合：
+10个字母和数字的组合：
 - 一个字母 (不区分大小写)  
 - 字母 "A" 或 "V" (不区分大小写)  
-- 七个字母 (不区分大小写) 、数字或下划线字符 
+- 七位数字
 - 一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -7686,8 +9277,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di patente
 - patente di guida 
+- patente guida
+- patenti di guida
+- patenti guida
 
 ## <a name="italy-fiscal-code"></a>意大利会计代码
 此敏感信息类型仅可用于以下内容：
@@ -7981,36 +9575,24 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-- 口座番号を当座預金口座の確認 
-- #アカウントの確認、勘定番号の確認 
-- #勘定の確認 
-- 勘定番号の確認 
-- 口座番号の確認 
-- 銀行口座番号 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番号 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番号
+- 銀行口座
 - 銀行口座番号
-- 普通預金口座番号 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の数 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番号 
-- 普通預金口座番号 
-- 引き落とし口座番号 
-- 口座番号 
-- 口座番号＃ 
-- デビットのacct番号 
-- デビット勘定＃ 
-- デビットACCTの番号 
-- デビット口座番号 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 当座預金口座
+- 当座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番号
+- 支店コード
+- 店番号
 
 ## <a name="japan-drivers-license-number"></a>日本驾驶执照号码
 
@@ -8046,31 +9628,41 @@ Otemachi
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- 通讯# 
-- 通讯 
-- dls# 
-- DLS 
-- driver license 
-- driver licenses 
-- drivers license 
-- driver's license 
-- drivers licenses 
-- driver's licenses 
-- driving licence 
-- .lic# 
-- .LIC 
-- driver'lics# 
-- state id 
-- state identification 
-- state identification number 
-- 低所得国＃ 
-- 免許証 
-- 状態ID
-- 状態の識別 
-- 状態の識別番号 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番号 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- 通讯#
+- dls#
+- .lic#
+- driver'lics#
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番号
+- 運転免許番号
+- 免許証番号
+- 免許番号
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番号
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証#
+- 運転免許#
+- 免許証#
+- 免許#
 
 
 ## <a name="japan-my-number---corporate"></a>日本我的号码-公司
@@ -8232,10 +9824,22 @@ Otemachi
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- 登记卡
+- 护照号码
+- 护照号
+- Passport #
+
+- パスポート
+- パスポート番号
+- パスポートナンバー
+- パスポート＃
+- パスポート#
+- パスポートNo.
+- 旅券番号
+- 旅券番号＃
+- 旅券番号♯
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>日本住宅电话卡号
 
@@ -8278,6 +9882,8 @@ Otemachi
 - 住宅卡编号
 - 住宅卡片#
 - 在留カード番号
+- 在留カード
+- 在留番号
 
 ## <a name="japan-resident-registration-number"></a>日本居民注册号码
 
@@ -8314,16 +9920,15 @@ Otemachi
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number 
 - Residents Basic Registry Number 
 - Resident Registration No. 
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号、登録番号をレジデント 
-- 住民基本登録番号、登録番号 
-- 住民基本レジストリ番号を常駐 
-- 登録番号を常駐住民基本台帳登録番号 
+- 外国人登録証明書番号
+- 証明書番号
+- 登録番号
+- 外国人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>日本社会保险号 (SIN) 
@@ -8375,8 +9980,22 @@ Otemachi
 - Social Insurance No. 
 - Social Insurance Num 
 - Social Insurance Number 
-- 社会保険のテンキー 
-- 社会保険番号 
+- 健康保険被保険者番号
+- 健保番号
+- 基礎年金番号
+- 雇用保険被保険者番号
+- 雇用保険番号
+- 保険証番号
+- 社会保険番号
+- 社会保険No.
+- 社会保険
+- 介護保険
+- 介護保険被保険者番号
+- 健康保険被保険者整理番号
+- 雇用保険被保険者整理番号
+- 厚生年金
+- 厚生年金被保険者整理番号
+
 
 ## <a name="latvia-drivers-license-number"></a>拉脱维亚驾照号码
 此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
@@ -8400,35 +10019,153 @@ Otemachi
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_latvia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_latvia_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>拉脱维亚个人代码
 
@@ -8646,35 +10383,153 @@ registration number
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_lithuania_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_lithuania_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>立陶宛个人代码
 此敏感信息类型仅可用于以下内容：
@@ -8839,35 +10694,152 @@ registration number
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_luxemburg_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg (自然个人的国家标识号码) 
 此敏感信息类型仅可用于以下内容：
@@ -9168,35 +11140,153 @@ registration number
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_malta_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_malta_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` 。 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - liċenzja tas-sewqan
+- liċenzji tas-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>马耳他身份卡片号
 此敏感信息类型仅可用于以下内容：
@@ -9489,37 +11579,156 @@ registration number
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_netherlands_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_netherlands_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>荷兰护照号码
@@ -9754,7 +11963,7 @@ registration number
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10174,35 +12383,152 @@ international driving permit
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_poland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_poland_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>波兰恒等卡片
 
@@ -10540,17 +12866,24 @@ international driving permit
 
 ### <a name="format"></a>Format
 
-两个字母后跟指定模式中的七个数字
+两个模式-两个字母后跟5-8 个包含特殊字符的数字
   
 ### <a name="pattern"></a>模式
 
-两个字母后跟七个包含特殊字符的数字：
-  
-- 两个字母 (不区分大小写)  
-- 连字符
-- 6位数字
+模式1：带有特殊字符的两个字母后跟5/6：
+- 两个字母 (不区分大小写) 
+- 一个连字符 
+- 五个或六个数字
 - 一个空格
-- 一位
+- 一位数字
+
+模式2：一个字母后跟6/8 个数字，带有特殊字符：
+- 一个字母 (不区分大小写) 
+- 一个连字符 
+- 6或8位数字
+- 一个空格
+- 一个数字
+
     
 ### <a name="checksum"></a>校验和
 
@@ -10560,35 +12893,160 @@ international driving permit
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_portugal_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_portugal_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
+- número de licença
+- número licença
+- permissão de condução
+- permissão condução
+- Licença condução 葡萄牙
+- carta de condução
 
 ## <a name="portugal-passport-number"></a>葡萄牙护照号码
 此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
@@ -10734,7 +13192,6 @@ international driving permit
 ### <a name="pattern"></a>模式
 
 一个字符后跟八个数字：
-  
 - 一个字母 (不区分大小写) 或数字 
 - 八位数字
     
@@ -10746,35 +13203,156 @@ international driving permit
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_romania_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_romania_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>罗马尼亚个人数字代码 (CNP) 
 此敏感信息类型仅可用于以下内容：
@@ -11169,35 +13747,154 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_slovakia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_slovakia_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>斯洛伐克个人号码
 此敏感信息类型仅可用于以下内容：
@@ -11372,35 +14069,155 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_slovenia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_slovenia_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
-- 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license 
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- dlno#
 - vozniško dovoljenje
+- vozniška številka 许可证
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一主公民号码
 此敏感信息类型仅可用于以下内容：
@@ -11733,58 +14550,180 @@ national id
   
 ### <a name="definition"></a>定义
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` 。 
+
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_spain_eu_driver's_license_number` 。 
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
+- dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
 #### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver "s_license_number
 
-- dlno#
-- 通讯#
-- 驱动程序许可证。
-- 驱动程序许可证
-- driver license
-- drivers licence
-- drivers license
-- driver's licence
-- driver's license
-- driving licence
-- driving license
-- 驱动程序许可证编号
-- 驱动程序许可证编号
-- 驱动程序许可证编号
-- 驱动程序许可证编号
-- 驾驶许可证编号
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
-- 促进允许
-- 驾驶允许号码
 - permiso de conducción
 - permiso conducción
-- número licencia conducir
-- número de carnet de conducir
-- número carnet conducir
+- licencia de conducir
 - licencia conducir
-- número de permiso de conducir
-- número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- licencia de manejo
-- el carnet de conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- carnet de conducir
+- licencia de manejo
+- licencia manejo
 
 ## <a name="spain-dni"></a>西班牙 DNI
 此敏感信息类型仅可用于以下内容：
@@ -11972,7 +14911,7 @@ national id
 
 ### <a name="keywords"></a>关键字
 
-None
+无
 
 ## <a name="spain-tax-identification-number"></a>西班牙纳税标识号
 此敏感信息类型仅可用于以下内容：
@@ -12184,35 +15123,161 @@ None
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式  `Regex_sweden_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_sweden_eu_driver's_license_number` 。 
+- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-**Keywords_sweden_eu_driver "s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
 
-- 通讯#
-- driver license
-- 驱动程序许可证编号
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驱动程序许可证
-- 驱动程序许可证。
-- drivers license
-- drivers licence
-- driver's license
-- 驾驶执照号码
-- 驾驶许可证编号
-- 驾驶执照号码
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驱动程序许可证
+- 驱动程序 driver'lics
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可证
+- 驱动程序许可
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驱动程序 "许可证
+- 驱动程序 "driver'lics
+- 驱动程序 ' license
+- 驱动程序的许可证
+- 驱动程序 ' 许可证
+- 驱动程序 ' 许可证
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驱动程序的许可证
+- 驱动程序的 driver'lics
+- 驾驶执照
+- 驾驶许可证
+- 驾驶许可证
+- 驾驶许可
+- 通讯#
+- dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驱动程序许可证#
+- 驱动程序 driver'lics#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可证#
+- 驱动程序许可#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驱动程序 "许可证#
+- 驱动程序 "driver'lics#
+- 驱动程序 ' license#
+- 驱动程序的许可证#
+- 驱动程序 ' 许可证#
+- 驱动程序 ' 许可证#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驱动程序的许可证#
+- 驱动程序的 driver'lics#
+- 驾驶执照#
+- 驾驶许可证#
+- 驾驶许可证#
+- 驾驶许可#
+- driving licence
+ 
+- 驾驶执照
 - dlno#
+- driv 许可证
+- driv licen
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- driv 许可证
+- 驱动程序 licen
+- 驱动程序 licen
+- 驱动程序的 licen
+- 驾驶许可证
+- 驾驶 licen
+- 驾驶许可证
+- driving licence
+
+- driving licences
+
+- 促进允许
+- dl no
+- dlno
+- dl 编号
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver "s_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numero
+- kuljettajat 许可证。
+- drivere 许可证。
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare 许可证。
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>瑞典国家 ID
 
@@ -12532,38 +15597,54 @@ None
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- international organization for standardization 9362 
-- iso 9362 
-- iso9362 
-- 反应\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift code 
-- swift number # 
-- swift routing number 
-- bic number 
-- bic code 
-- numéro \# 
-- numéro\# 
-- bank identifier code 
-- 標準化9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番号 
-- 迅速なルーティング番号 
-- BIC番号 
-- BICコード 
-- 銀行識別コードのための国際組織 
-- Organisation internationale de normalisation 9362 
-- rapide \# 
-- code SWIFT 
-- le numéro de swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# NUMÉRO 
-- code identificateur de banque 
+- international organization for standardization 9362
 
+- iso 9362
+- iso9362
+- 反应#
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift code
+
+- swift number #
+
+- swift routing number
+
+- bic number
+
+- bic code
+
+- bic #
+- numéro#
+- bank identifier code
+
+- Organisation internationale de normalisation 9362
+
+- rapide #
+
+- code SWIFT
+
+- le numéro de swift
+
+- swift numéro d'acheminement
+
+- le numéro BIC
+
+- # <a name="bic"></a>NUMÉRO
+- code identificateur de banque
+
+- SWIFTコード
+- SWIFT番号
+- BIC番号
+- BICコード
+- SWIFT コード
+- SWIFT 番号
+- NUMÉRO 番号
+- NUMÉRO コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>瑞士 SSN AHV 号码
 此敏感信息类型仅可用于以下内容：
@@ -13095,24 +16176,18 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_uk_nino 找到与该模式匹配的内容。
-- 未找到 Keyword_uk_nino 中的关键字。
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字

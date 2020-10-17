@@ -3,7 +3,6 @@ title: 使用 PowerShell 配置 Microsoft 365 用户帐户属性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,22 +18,22 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 摘要：使用适用于 Microsoft 365 的 PowerShell 配置 Microsoft 365 租户中单个或多个用户帐户的属性。
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687550"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580924"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 PowerShell 配置 Microsoft 365 用户帐户属性
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 虽然您可以使用 Microsoft 365 管理中心配置 Microsoft 365 租户的用户帐户的属性，但您也可以使用 PowerShell 并执行 Microsoft 365 管理中心无法执行的某些操作。
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>使用用于图表模块的 Azure Active Directory PowerShell
 
-若要为使用 Azure Active Directory PowerShell for Graph 模块的用户帐户配置属性，请使用 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) cmdlet 并指定要设置或更改的属性。 
+若要为使用 Azure Active Directory PowerShell for Graph 模块的用户帐户配置属性，请使用 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) cmdlet 并指定要设置或更改的属性。 
 
 首先， [连接到 Microsoft 365 租户](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
@@ -74,8 +73,11 @@ ms.locfileid: "46687550"
     
     这是 ISO 3166-1 alpha-2 (A2) 双字母国家或地区代码。
     
-有关其他参数，请参阅 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) 。
+有关其他参数，请参阅 [AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) 。
 
+>[!Note]
+>在将许可证分配给用户帐户之前，必须分配使用位置。
+>
 
 若要显示用户帐户的用户主体名称，请运行以下命令。
   
@@ -264,7 +266,7 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 - 查找其 "部门" 属性设置为 "记帐" 的所有用户帐户 (**其中 {$ _。部门-eq "记帐"}**) 并将生成的信息发送到下一个命令 (**|**) 。
     
 - 将用户位置设置为 "法国 (**get-msoluser-UsageLocation" "FR"**) 。
-    
+
 
 ## <a name="see-also"></a>另请参阅
 

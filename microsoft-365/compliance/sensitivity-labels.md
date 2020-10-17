@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 80aad465442ce43d2fef993133c4e49da709a531
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398989"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446741"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -56,6 +56,8 @@ ms.locfileid: "48398989"
 
 - 利用 Microsoft 云应用安全性**保护第三方应用和服务中的内容**。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
 
+- **保护容器** ，包括 Teams、Microsoft 365 组和 SharePoint 网站。 例如，设置隐私设置、外部用户访问权限和来自非托管设备的访问。
+
 - **将灵敏度标签扩展到第三方应用程序和服务。** 借助 Microsoft 信息保护 SDK，第三方应用可读取敏感度标签和应用保护设置。
 
 - **对内容进行分类，无需使用任何保护设置。** 也可以只对内容进行分类（如不干胶标签），只要有人使用和共享内容，此分类就会随内容一起暂留和漫游。 使用此分类，可生成使用情况报告，并查看敏感内容的活动数据。 根据此类信息，稍后随时可以选择应用保护设置。
@@ -74,7 +76,7 @@ ms.locfileid: "48398989"
 
 在 Office 应用中，敏感度标签就像是电子邮件或文档上向用户显示的标记。
 
-每个内容项都可以应用有一个敏感度标签。一个内容项可以同时应用有一个敏感度标签和一个[保留标签](retention.md#retention-labels)。
+支持敏感度标签的每个项目都可以应用单一敏感度标签。 文档和电子邮件可同时具有敏感度标签和[保留标签](retention.md#retention-labels)应用。
 
 > [!div class="mx-imgBorder"]
 > ![应用于电子邮件的敏感度标签](../media/Sensitivity-label-on-email.png)
@@ -95,10 +97,9 @@ ms.locfileid: "48398989"
     
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
-
 - 启用相应功能以[将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时，**可保护网站和组等容器中的内容**。
     
-    在启用此功能前，不会显示“**网站和组设置**”的配置选项。 请注意，此标签配置不会导致自动标记文档，而是通过控制对存储文档的容器的访问来保护内容。 这些设置包括隐私级别、Microsoft 365 组所有者可否向组中添加来宾，以及授予非托管设备的访问权限级别。
+    如果启用此功能，则无法为组和网站配置保护设置。 此标签配置不会导致自动标记文档或电子邮件，而是通过控制对存储内容的容器的访问来保护内容。 这些设置包括隐私设置、外部用户访问权限和来自非托管设备的访问。
 
 - 在 Office 应用中自动应用标签，或推荐标签。**** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
@@ -106,11 +107,27 @@ ms.locfileid: "48398989"
     
     有关创建或编辑敏感度标签时的“**Office 应用的自动标签**”设置的详细信息，请参阅[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
 
+### <a name="label-scopes"></a>标记范围
+
+创建灵敏度标签时，系统会要求你配置标签的范围，该范围决定了两件事：
+- 可为该标签配置的标签设置
+- 用户将可以看到标签的位置
+
+此范围配置使你可以拥有仅适用于文档和电子邮件但不能选择用于容器的敏感度标签。 同样地，仅适用于容器的敏感度标签则不能选择用于文件和电子邮件。 默认情况下，两个范围都已选中：
+
+![敏感度标签的范围选项](../media/sensitivity-labels-scopes.png)
+
+更改此默认值并仅选择一个范围时，仍会看到另一个范围的配置设置的第一页，但不能选择这些设置。 例如，如果未选中“文件和电子邮件”的范围，则不能选择下一页上的选项：
+
+![敏感度标签的不可用选项](../media/sensitivity-labels-unavailable-settings.png)
+
+对于具有不可用选项的这些页面，选择 **“下一步”** 继续。 或者，选择 **“返回”** 更改标签的范围。
+
 ### <a name="label-priority-order-matters"></a>标签优先级（顺序非常重要）
 
 在管理中心创建敏感度标签时，这些标签会显示在“**标签**”页的“**敏感度**”选项卡的列表中。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的**底部**，限制性最低的敏感度标签（如“公开”）需显示在**顶部**。
 
-一个文档或电子邮件仅可应用一个敏感度标签。 如果设置的选项需要用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。 但是，此选项不适用于子标签。
+可仅将一个敏感度标签应用于文档、电子邮件或容器等项目。 如果设置的选项需要用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。 但是，此选项不适用于子标签。
 
 子标签的排序与[自动标签](apply-sensitivity-label-automatically.md)结合使用。 将标签配置为自动应用或推荐时，多个匹配项可能会导致出现多个标签。 要确定要应用或推荐的标签，请使用标签排序：选择最不敏感的标签，如果适用，选择最后一个子标签。
 
@@ -142,22 +159,26 @@ ms.locfileid: "48398989"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- **将默认标签**应用于标签策略中包含的用户和组创建的所有新文档和电子邮件。 如果已[为 Microsoft Teams、Microsoft 365 组和 SharePoint 网站启用了敏感度标签](sensitivity-labels-teams-groups-sites.md)，则此选项也适用于容器。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
+- 对标签策略中包含的用户和组所创建的所有新文档和电子邮件**应用默认标签**，并对容器应用相同或不同的默认标签（如果已 [启用 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签，则](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
-- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 目前，未将理由原因发送到[标签分析](label-analytics.md)供管理员查看。 但是，[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
+- **要求提供更改标签的理由。** 如果用户尝试删除标签，或将其替换为有较低订单号的标签，则你可以要求用户提供一个理由来执行此操作。 例如，用户打开一个标记为“机密”（订单号 3）的文档，并将该标签替换为一个名为“公共”（订单号 1）的文档。 目前，理由描述仅由 [Azure 信息保护的统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)使用，后者将此信息发送到 [Azure 信息保护分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 
-- **要求用户为其电子邮件和文档应用标签。** 也称为强制标记，你可以要求必须先应用标签，用户才能保存文档和发送电子邮件。 该标签可由用户手动分配，由于您配置的条件或默认分配的条件（如上所述的 "默认标签" 选项）而自动分配。 当用户需要分配一个标签时，Outlook 中显示的示例提示：
+- **要求用户应用标签**，其中一个选项用于电子邮件和文档，另一个选项用于容器。 也称为强制标记，这些选项确保必须先应用标签，用户才能保存文档、发送电子邮件、创建新的组或网站。
+    
+    对文档和电子邮件，标签可由用户手动分配，由你配置的条件或默认分配的条件（如上所述的默认标签选项）而自动分配。 当用户需要分配一个标签时，Outlook 中显示的示例提示：
 
     ![在 Outlook 中要求用户应用所需标签的提示](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > 强制标记目前需要 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。 此客户端仅在 Windows 上运行，因此 Mac、iOS 和 Android 上尚不支持此功能。
+    > 文档和电子邮件强制标记目前需要 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)。 此客户端仅在 Windows 上运行，因此 Mac、iOS 和 Android 上尚不支持此功能。
     
-    考虑使用此选项帮助增加标签的覆盖范围。 但是，如果没有用户培训，此设置也会导致标记不准确。 此外，除非你还设置了默认标签，否则强制标记可能会使你的用户因更频繁地收到提示而感到沮丧。 
+    对于容器，必须在创建组或网站时分配标签。
+    
+    考虑使用此选项帮助增加标签的覆盖范围。 但是，如果没有用户培训，此设置也会导致标记不准确。 此外，除非你还设置了相应的默认标签，否则强制标记可能会使你的用户因更频繁地收到提示而感到沮丧。 
 
 - **为自定义帮助页面提供帮助链接。** 如果用户不确定敏感度标签的含义或用法，你可以提供在 Office 应用中“**敏感度标签**”菜单底部显示的“了解更多” URL：
 
@@ -236,5 +257,5 @@ ms.locfileid: "48398989"
 
 ## <a name="deployment-guidance"></a>部署指南
 
-请参阅[开始使用敏感度标签](get-started-with-sensitivity-labels.md)。
+有关支持的方案和最终用户文档的部署规划和指南（包括许可信息、权限、部署策略和资源列表），请参阅[灵敏度标签入门](get-started-with-sensitivity-labels.md)。
 

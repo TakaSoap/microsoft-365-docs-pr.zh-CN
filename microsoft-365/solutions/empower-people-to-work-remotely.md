@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 122df0f81200462f85d52985ccf3e42ce5d925f7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446819"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487740"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -38,7 +38,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 ![使用 Microsoft 365 为远程员工提供强大帮助](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
 观看此视频以简要了解部署流程。
-
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
 此解决方案提供了以下关键功能。

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在Project Cortex中设置对内容的理解
-ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464058"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469717"
 ---
 # <a name="set-up-sharepoint-syntex"></a>设置 SharePoint Syntex
 
@@ -41,13 +41,14 @@ ms.locfileid: "48464058"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>对设置 SharePoint Syntex
 
-1. 在 Microsoft 365 管理中心中，选择**设置**，然后查看**组织知识**部分。
+1. 在 Microsoft 365 管理中心中，选择“**设置**”，然后查看“**文件和内容**”部分。
 
 2. 在“**文件和内容**”部分中，选择“**自动内容理解**”。<br/>
 
 3. 在**自动理解内容** 页面上，单击**开始**， 以逐步完成设置流程。<br/>
 
-    ![开始设置](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![开始设置](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. 在**配置表单处理**页面上，可选择是否希望用户能够在特定的 SharePoint 文档库中创建表单处理模型。 在文档库功能区中存在一个菜单选项，以便在已启用该功能的SharePoint文档库中**创建表单处理模型**。
  
@@ -56,18 +57,22 @@ ms.locfileid: "48464058"
       - **仅在选定站点中的库**，然后选择需要提供它的站点，或上传最多50个站点的列表。</br>
       - 如果不希望对任何网站提供**SharePoint 库**，则不需要SharePoint库（可在设置后更改）。
 
-   ![配置表单处理](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![配置表单处理](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 在收录一个站点后，删除该站点不会影响应用于该站点中的库的现有模型，也不会影响将文档理解模型应用于库的能力。 
     
-5. 在**创建内容中心**页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。 </br>
-    a. 对于**站点名称**，键入要为内容中心站点提供的名称。</br>
-    b. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。 若想改变它，请点击**编辑**。</br>
+5. 在**创建内容中心**页面上，可创建一个 SharePoint 内容中心站点，用户可在该网站上创建和管理文档理解模型。
 
-      ![创建内容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. 对于**站点名称**，键入要为内容中心站点提供的名称。
+    
+    1. **站点地址** 将显示站点的 URL，具体取决于所选择的站点名称。 若想改变它，请点击**编辑**。
 
-    选择**下一步**。
+       > [!div class="mx-imgBorder"]
+       > ![创建内容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       选择**下一步**。
 
 6. 在**审查并完成**页面上，可查看所选设置并选择进行更改。 如果对你的选择感到满意，请选择**激活**。
 
@@ -89,7 +94,8 @@ ms.locfileid: "48464058"
 
 4. 选择**智能内容服务**。 在**应用程序**下，确保 **智能内容服务的通用数据服务**以及**智能内容服务**都已选中。
 
-    ![Microsoft 365 管理中心的SharePoint Syntex许可证。](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 管理中心的SharePoint Syntex许可证](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. 单击**保存更改**。
 

@@ -3,7 +3,6 @@ title: 使用 PowerShell 维护 Microsoft 365 组成员身份
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +18,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 了解如何使用 PowerShell 维护 Microsoft 365 组中的成员身份。
-ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 7763f4275ff31f3dc26aa7fecba93e545f7c7644
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235626"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580970"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>使用 PowerShell 维护 Microsoft 365 组成员身份
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 您可以使用 PowerShell for Microsoft 365 作为 microsoft 365 管理中心的替代方法来维护 Microsoft 365 中的组成员身份。 
-
-> [!TIP]
-> 若要通过指定用户帐户和组名称生成现成的 PowerShell 命令，请使用此 [组维护 Microsoft Excel 工作簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)。 
 
 >[!Note]
 >了解如何使用 Microsoft 365 管理中心[维护 microsoft 365 组成员身份](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。

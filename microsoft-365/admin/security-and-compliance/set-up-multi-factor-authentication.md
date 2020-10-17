@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153673"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464010"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
   
@@ -76,7 +76,7 @@ ms.locfileid: "45153673"
 
 "条件访问" 适用于购买了 Azure AD 高级版 P1 的客户，或购买了包含此项许可证的客户，比如 Microsoft 365 商业高级版和 Microsoft 365 E3。 有关详细信息，请参阅 [创建条件访问策略](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
-可通过 Azure AD 高级 P2 许可证，或包含此项的许可证，例如 Microsoft 365 E5 来获取基于风险的条件访问。 有关详细信息，请参阅[基于风险的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
+可通过 Azure AD 高级 P2 许可证或包含此项的许可证（例如 Microsoft 365 E5）来获得基于风险的条件访问。 有关详细信息，请参阅[基于风险的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
 
 有关 Azure AD P1 和 P2 的详细信息，请参阅 [Azure Active Directory 定价](https://azure.microsoft.com/pricing/details/active-directory/)。
 
@@ -96,12 +96,11 @@ ms.locfileid: "45153673"
 1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“**禁用**”。
 
 ## <a name="next-steps"></a>后续步骤
-
 - [如何注册以获取更多验证方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [何为：多重身份验证](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [注册后如何登录](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [如何更改其他验证方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [如何处理新智能手机等情况](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [MFA 登录疑难解答](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

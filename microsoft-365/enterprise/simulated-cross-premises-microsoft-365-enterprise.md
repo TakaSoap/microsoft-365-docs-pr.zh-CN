@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中创建模拟跨界虚拟网络作为 Microsoft 365 测试环境。
-ms.openlocfilehash: afbf294d0637c3454cedadec3268e74411a3c399
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685720"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487644"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 测试环境中的模拟跨界虚拟网络
 
@@ -64,7 +64,7 @@ ms.locfileid: "46685720"
 ![Microsoft 云测试实验室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
+> 转到 [microsoft 365 for enterprise Test Lab Guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) For the microsoft 365 For 企业测试实验室指南堆栈中的所有文章。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>第 1 阶段：配置 TestLab 虚拟网络
 

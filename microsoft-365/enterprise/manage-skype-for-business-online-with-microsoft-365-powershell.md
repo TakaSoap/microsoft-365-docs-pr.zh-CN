@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用 PowerShell for Microsoft 365 管理 Skype for Business Online 策略、每用户策略和会议设置。
-ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430030"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477097"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理 Skype for Business Online
 
@@ -29,21 +29,24 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
 
 ## <a name="before-you-start"></a>准备工作
 
-下载并安装 [Skype for Business Online Windows PowerShell 模块](https://www.microsoft.com/download/details.aspx?id=39366)，然后重新启动计算机。
+  > [!Note]
+   > Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
+   
+安装 [Teams PowerShell 模块](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
 
 
-## <a name="connect-using-skype-for-business-online-admin-credentials"></a>使用 Skype for Business Online 管理员凭据进行连接
+## <a name="connect-using-admin-credentials"></a>使用管理员凭据连接
 
 1. 打开 Windows PowerShell 命令提示符窗口并运行以下命令：
     
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    $sfbSession = New-CsOnlineSession -Credential $userCredential
    Import-PSSession $sfbSession
    ```
 
-2. 在“**Windows PowerShell 凭据请求**”对话框中，键入你的 Skype for Business Online 管理员帐户名和密码，然后选择“**确定**”。
+2. 在 “**Windows PowerShell 凭据请求**”对话框中，键入你的 管理员帐户名和密码，然后选择“**确定**”。
 
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>使用具有多重身份验证的管理员帐户进行连接
@@ -51,7 +54,7 @@ Skype for Business Online 管理员负责管理策略。 虽然你可以在 Micr
 1. 打开 Windows PowerShell 命令提示符窗口并运行以下命令：
 
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfbSession = New-CsOnlineSession
    Import-PSSession $sfbSession
    ```

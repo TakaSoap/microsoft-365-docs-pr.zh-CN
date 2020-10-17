@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 6037d997f43abfaf1f2d6b7fd55143fb0332dbe3
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6d0f090f9931e88566e37b038cc30375657019c3
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464428"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487668"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -193,6 +193,10 @@ Microsoft 建议您不要创建适用于所有应用程序的策略集，因为�
 2. 配置通用标识和访问条件访问策略。
 3. 为来宾和外部用户配置条件访问策略。
 4. 为 microsoft 团队、Exchange Online 和 SharePoint 等 Microsoft 365 云应用配置条件访问策略。
+
+<!--
+After you have configured identity and device access, see the [Azure AD feature deployment guide](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) to protect, monitor, and audit access.  
+--> 
 
 ## <a name="next-step"></a>后续步骤
 

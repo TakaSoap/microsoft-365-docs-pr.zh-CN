@@ -3,7 +3,6 @@ title: 使用 PowerShell 创建 Microsoft 365 用户帐户
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 在本文中，我们将了解如何使用 PowerShell 创建用户帐户或多个 Microsoft 365 用户帐户。
-ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: aedcc4adba6171a63a5ddaeb87b20150e72b2a76
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235590"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580948"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 创建 Microsoft 365 用户帐户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 您可以使用适用于 Microsoft 365 的 PowerShell 高效地创建用户帐户，尤其是多个用户帐户。 当您在 PowerShell 中创建用户帐户时，某些帐户属性始终是必需的。 其他属性对于创建帐户则不是必需的，但也很重要。 下表介绍了这些属性：
   
@@ -41,7 +40,7 @@ ms.locfileid: "48235590"
 |**LastName** <br/> |否  <br/> ||
 |**LicenseAssignment** <br/> |否  <br/> |这是许可计划 (也称为 "许可证计划" 或 "SKU) ，可将可用许可证分配给用户帐户。 许可证定义了可供帐户使用的 Microsoft 365 服务。 您不必在创建帐户时向用户分配许可证，但该帐户需要许可证才能访问 Microsoft 365 服务。 创建用户帐户后，您有 30 天的时间可以对该用户帐户授权。 |
 |**密码** <br/> |否  <br/> | 如果你没有指定密码，将向用户帐户分配一个随机密码，且该密码将显示在命令结果中。如果你指定了密码，则需要是以下三种类型的 8 到 16 位 ASCII 文本字符：小写字母、大写字母、数字和符号。 <br/> |
-|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如，US 代表美国，FR 代表法国。 提供此值非常重要，因为某些 Microsoft 365 服务在某些国家/地区不可用，因此，除非帐户配置了此值，否则不能向用户帐户分配许可证。 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
+|**UsageLocation** <br/> |否  <br/> |这是一个由两位字母组成的有效 ISO 3166-1 国家/地区代码。 例如，US 代表美国，FR 代表法国。 **由于某些 Microsoft 365 服务在某些国家/地区不可用，因此您不能向用户帐户分配许可证，除非帐户配置了此值。** 有关详细信息，请参阅[关于许可证限制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
 
 >[!Note]
 >了解如何使用 Microsoft 365 管理中心[创建用户帐户](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。 有关其他资源的列表，请参阅 [管理用户和组](https://docs.microsoft.com/microsoft-365/admin/add-users/)。

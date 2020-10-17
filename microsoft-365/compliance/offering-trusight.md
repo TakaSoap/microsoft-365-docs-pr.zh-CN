@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1001b5b209204785221aef40631e91f904136b0b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2cb1c8071e72a8a60a8bac1dd13bb2ce038a8ac0
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417476"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48476979"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -33,9 +33,9 @@ TruSight 是一个由美国多家领先银行创立的第三方风险评估工�
 
 TruSight 方法体系的基础是由 TruSight 的创办银行创建的可靠且标准化的最佳做法调查表 (BPQ)，并与客户和行业专家合作进行了更新。 它的 27 项多元化的控制领域，旨在满足行业对信息和网络安全、隐私、业务复原和其他运营风险领域等各种类别的评估需求。
 
-对于 Microsoft，TruSight 对 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 执行了严格、全面的现场评估，以根据 BPQ 要求来验证控制措施的设计和实施。 综合验证过程包括结构化查询、策略和过程检验、含支持证据的评审和现场动态控制观察。
+对于 Microsoft，TruSight 对 Microsoft Azure、Microsoft Dynamics 365、Microsoft Power Platform 和 Microsoft 365 执行了严格、全面的现场评估，以根据 BPQ 要求来验证控制措施的设计和实施。 综合验证过程包括结构化查询、策略和过程检验、含支持证据的评审和现场动态控制观察。
 
-2018 年 9 月，TruSight 发布了对 Microsoft 云服务的第一次风险评估：*Microsoft 云全面评估*。 现在，Microsoft 将接受 TruSight 年度审核，确保评估保持最新，并反映 Microsoft 服务中的新法规要求和技术更新。 TruSight 有望在 2019 年秋季发布其首次扩展的报告更新。
+2018 年 9 月，TruSight 发布了对 Microsoft 云服务的第一次风险评估：*Microsoft 云全面评估*。 现在，Microsoft 接受了 TruSight 年度审核，确保评估保持最新，并反映 Microsoft 服务中的新法规要求和技术更新。 TruSight 已在 2020 年 10 月发布了它的最新报告。
 
 通过 TruSight 严格的评估，金融服务客户现在可以根据行业支持的标准化方法，按需访问 Microsoft 云服务的高质量评估，而不需要花费大量的资源来进行自我评估。
 

@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在单个 PowerShell 窗口中连接所有 Microsoft 365 服务。
-ms.openlocfilehash: e4cb3a10d14f6d4c16ef9323d6e5b3c500ebc0c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 36b16b491aa97e7329e440e2c1fb01b8a221a2b6
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545970"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477049"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在单个 PowerShell 窗口中连接所有 Microsoft 365 服务
 
@@ -65,7 +65,7 @@ ms.locfileid: "47545970"
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online 命令行管理程序](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online、PowerShell 模块](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+  - [Skype for Business Online、PowerShell 模块](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell 概览](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
@@ -117,8 +117,11 @@ ms.locfileid: "47545970"
 
 5. 运行以下命令以连接到 Skype for Business Online。 有关增加 `WSMan NetworkDelayms` 值的警告应在首次连接时出现，并应予以忽略。
      
+   > [!Note]
+   > Skype for Business Online 连接器目前是最新 Teams PowerShell 模块的一部分。 如果你使用的是最新 Teams PowerShell 公共版本，则无需安装 Skype for Business Online 连接器。
+   
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfboSession = New-CsOnlineSession -Credential $credential
    Import-PSSession $sfboSession
    ```
@@ -165,7 +168,7 @@ $credential = Get-Credential
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module SkypeOnlineConnector
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 Import-Module ExchangeOnlineManagement
@@ -183,7 +186,7 @@ $credential = Get-Credential -UserName $acctName
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module SkypeOnlineConnector
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 Import-Module ExchangeOnlineManagement
@@ -202,7 +205,7 @@ $credential = Get-Credential
 Connect-MsolService -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module SkypeOnlineConnector
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 Import-Module ExchangeOnlineManagement
@@ -220,7 +223,7 @@ $credential = Get-Credential -UserName $acctName
 Connect-AzureAD -Credential $credential
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com -credential $credential
-Import-Module SkypeOnlineConnector
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -Credential $credential
 Import-PSSession $sfboSession
 Import-Module ExchangeOnlineManagement
@@ -242,6 +245,7 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Exchange Online
@@ -261,6 +265,7 @@ Connect-AzureAD
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Security & Compliance Center
@@ -282,6 +287,7 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Exchange Online
@@ -301,6 +307,7 @@ Connect-MsolService
 #SharePoint Online
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
+Import-Module MicrosoftTeams
 $sfboSession = New-CsOnlineSession -UserName $acctName
 Import-PSSession $sfboSession
 #Security & Compliance Center
