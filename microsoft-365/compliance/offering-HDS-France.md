@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 84b7f5959d3bd8c13476059655113ea78495862a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 07309131e9be4ef8149ca71dfd4fc6bc5ecf845d
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417716"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487432"
 ---
 # <a name="health-data-hosting-hds-france"></a>法国健康数据托管 (HDS)
 
@@ -58,18 +58,18 @@ HDS 证书不适用于在预览或预发布阶段的 Microsoft 在线服务。
 
 HDS 认证的有效期为 3 年。
 
-- HDS：2018 年：[ASIP SANTÉ](https://esante.gouv.fr/) 和 [BSI Group](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
+- HDS: 2018: [ASIP SANTÉ](https://esante.gouv.fr/)
+- [BSI 组](https://www.bsigroup.com/fr-FR/Nos-services/Certification/Recherche-dans-le-repertoire-des-certificats-et-des-clients/Resultats-de-la-recherche-dans-le-repertoire-des-certificats-et-des-clients/?searchkey=licence%3dHDS%2b701569%26company%3dMicrosoft%2bCorp&licencenumber=HDS%20701569)
 
 ## <a name="how-to-implement"></a>如何实现
 
-**合同条款 —《法国公共卫生法》要求健康数据托管服务或云服务提供商与其客户之间执行的特定合同条款。 符合条件的客户必须联系他们的 Microsoft 授权许可联络点，在使用 Microsoft 在线服务托管个人健康数据之前，签订这些具体的合同条款。
-
-[医疗保健和生命科学 — 借助用例概述、解决方案指南、教程和其他资源，帮助生成 Azure 解决方案。
+- **合同条款**：《法国公共卫生法》要求健康数据托管服务或云服务提供商与其客户之间执行的特定合同条款。 符合条件的客户必须联系他们的 Microsoft 授权许可联络点，在使用 Microsoft 在线服务托管个人健康数据之前，签订这些具体的合同条款。
+- **医疗保健和生命科学**：借助用例概述、解决方案指南、教程和其他资源，帮助生成 Azure 解决方案。
 
 ## <a name="resources"></a>资源
 
 - [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
-- [Microsoft HDS 认证博客](https://news.microsoft.com/fr-fr/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
+- [Microsoft HDS 认证博客](https://news.microsoft.com/2018/11/06/microsoft-1er-acteur-majeur-du-cloud-public-a-etre-certifie-hebergeur-de-donnees-de-sante-en-france/)
 - [Azure 法国](https://azure.microsoft.com/global-infrastructure/france/)
 - [面向医疗的 Azure](https://azure.microsoft.com/industries/healthcare/)
 - [Microsoft 安全性](https://www.microsoft.com/security)
