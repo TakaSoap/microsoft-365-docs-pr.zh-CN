@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 PowerShell 创建新的 SharePoint Online 网站，然后将用户和组添加到这些网站。
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687741"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594914"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 创建 SharePoint Online 网站并添加用户
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 当您使用 PowerShell for Microsoft 365 创建 SharePoint Online 网站并添加用户时，您可以在 Microsoft 365 管理中心内快速和重复执行任务快得多。 您还可以执行不能在 Microsoft 365 管理中心中执行的任务。 
 
@@ -43,6 +43,9 @@ ms.locfileid: "46687741"
 PowerShell cmdlet 导入 .csv 文件，并将其管道传递到在大括号中将文件的第一行读取为列标题的循环。 然后，PowerShell cmdlet 将循环访问其余记录，为每个记录创建一个新的网站集，并根据列标题分配网站集的属性。
 
 ### <a name="create-a-csv-file"></a>创建 .csv 文件
+
+> [!NOTE]
+> 资源配额参数仅适用于经典网站。 如果在新式网站上使用此参数，则可能会收到一条警告消息，指出它已被弃用。 
 
 1. 打开记事本，然后向其中粘贴以下文本块：<br/>
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [PowerShell for Microsoft 365 入门](getting-started-with-microsoft-365-powershell.md)
-
