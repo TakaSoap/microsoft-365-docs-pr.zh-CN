@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: c8dec927442cc83752f7c3497f295008fae85377
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c4792958d1e59cefd8b56c05b5e159f50be80c8b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446923"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600477"
 ---
-# <a name="user-submissions-policies"></a>用户提交策略
+# <a name="user-submissions-policy"></a>用户提交策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -76,7 +76,7 @@ ms.locfileid: "48446923"
 
 2. 在出现的 " **用户提交** " 页面中，选择下列选项之一：
 
-   a. **启用 (建议的 outlook) 的 "报告邮件" 功能 **：如果您在 outlook 网页版中使用报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
+   1. **启用 (建议的 outlook) 的 "报告邮件" 功能 **：如果您在 outlook 网页版中使用报告邮件外接程序或内置报告，请选择此选项，然后配置以下设置：
 
       - **自定义最终用户确认消息**：单击此链接。 在出现的 " **自定义确认消息** " 浮出控件中，配置以下设置：
 

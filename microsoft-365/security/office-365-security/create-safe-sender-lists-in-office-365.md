@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解可用的首选选项以允许入站邮件在 Exchange Online Protection (EOP) 中。
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203163"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600317"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -71,7 +71,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
    > [!IMPORTANT]
    >
-   > - 永远不要将 *仅* 发送发件人域的邮件流规则配置为跳过垃圾邮件筛选的条件。 这样做会 *显著* 增加攻击者欺骗发送域的可能性 (或模拟完整的电子邮件地址) 、跳过所有垃圾邮件筛选和跳过发件人身份验证检查，以便邮件将到达收件人的收件箱中。
+   > - 永远不要将邮件流规则配置为 *只* 使用发件人域作为跳过垃圾邮件筛选的条件。 这样做会 *显著* 增加攻击者欺骗发送域的可能性 (或模拟完整的电子邮件地址) 、跳过所有垃圾邮件筛选和跳过发件人身份验证检查，以便邮件将到达收件人的收件箱中。
    >
    > - 请勿使用自己的域 (也称为接受域) 或受欢迎的域 (例如，microsoft.com) 邮件流规则中的条件。 这样做被认为是高风险，因为它会给攻击者发送电子邮件，以其他方式筛选的机会。
    >
@@ -97,7 +97,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 ## <a name="use-outlook-safe-senders"></a>使用 Outlook 安全发件人
 
-用户或管理员可以将发件人电子邮件地址添加到邮箱中的安全发件人列表中，而不是组织设置。 有关说明，请参阅在 [Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多数情况下，这不是必需的，因为发件人将绕过部分筛选堆栈。 尽管您信任发件人，但发件人的邮件也会受到威胁，并且可以发送恶意内容。 最好让我们的筛选器执行检查每个邮件所需的操作，然后将 [误报/负数报告给 Microsoft （](report-junk-email-messages-to-microsoft.md) 如果筛选器出现错误）。 绕过筛选堆栈也会妨碍 [ZAP](zero-hour-auto-purge.md)。
+用户或管理员可以将发件人电子邮件地址添加到邮箱中的安全发件人列表中，而不是组织设置。 有关说明，请参阅在 [Office 365 中的 Exchange Online 邮箱上配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多数情况下，这不是必需的，因为发件人将绕过部分筛选堆栈。 尽管您信任发件人，但发件人仍可能受到威胁，并会发送恶意内容。 最好让我们的筛选器执行检查每个邮件所需的操作，然后将 [误报/负数报告给 Microsoft （](report-junk-email-messages-to-microsoft.md) 如果筛选器出现错误）。 绕过筛选堆栈也会妨碍 [ZAP](zero-hour-auto-purge.md)。
 
 当邮件由于用户的安全发件人列表而跳过垃圾邮件筛选时， **X-Forefront-反垃圾邮件报告** 标头字段将包含值 `SFV:SFE` ，这表明已绕过垃圾邮件、欺骗和网络钓鱼筛选。
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以在 Exchange Online Protection (EOP) 中了解有关隔离邮件的最终用户垃圾邮件通知。
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195815"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600293"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用用户垃圾邮件通知释放和报告隔离的邮件
 
@@ -58,3 +58,6 @@ ms.locfileid: "48195815"
 - **查看**：单击此链接可转到 Security & 合规性中心中的隔离，在此 (可以根据邮件被隔离的原因) 查看、释放、删除或报告隔离邮件。 有关详细信息，请参阅 [在 EOP 中以用户的方式查找和释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。
 
 ![最终用户垃圾邮件通知示例](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> 被阻止的发件人仍可向你发送邮件。 从该发件人将其发送到邮箱的任何邮件都将立即移动到 "垃圾邮件" 文件夹。 今后来自此发件人的邮件将转到 "垃圾邮件" 文件夹或最终用户隔离。 如果要在到达时删除这些邮件而不是隔离这些邮件，请使用 [邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也称为传输规则) 以在到达时删除邮件。

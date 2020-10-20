@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的应用程序保护顺序，以及保护策略中的优先级值如何确定应用的策略。
-ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6b17a524fb9dfbf5e33604c2ec26a678befc8834
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196043"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600281"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -41,13 +41,13 @@ ms.locfileid: "48196043"
   |Priority|电子邮件保护|类别|管理位置|
   |---|---|---|---|
   |1|恶意软件|CAT： MALW|[在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)|
-  |2 |网络钓鱼|CAT： PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |双面|网络钓鱼|CAT： PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |第三章|高可信度垃圾邮件|CAT： HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |4 |网络钓鱼|分类程序：欺骗|[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)|
-  |5 |垃圾邮件|CAT： SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |6 |批量邮件|分类程序：批量|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
-  |步<sup>\*</sup>|域模拟 (受保护的用户) |DIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
-  |utf-8<sup>\*</sup>|用户模拟 (受保护的域) |UIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|用户模拟 (受保护的域) |UIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |型<sup>\*</sup>|域模拟 (受保护的用户) |DIMP|[配置 ATP 防钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |7 |垃圾邮件|CAT： SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+  |8 |批量邮件|分类程序：批量|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> 这些功能仅在 ATP 反网络钓鱼策略中可用。
@@ -63,7 +63,7 @@ ms.locfileid: "48196043"
   |ATP 反网络钓鱼策略|Priority|用户模拟|反欺骗|
   |---|---|---|---|
   |策略 A|1|开|关|
-  |Policy B|2 |关|开|
+  |Policy B|双面|关|开|
   |
 
 1. 邮件被标记为欺骗，因为哄骗的优先级高于用户模拟 (8)  (4) 。

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: 601e3850bf046f3a0c807976fd173a6e0ec7ce2a
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: b061d9db44b08a65b59481035c055a1b75eb6e3c
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350619"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600365"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 
@@ -41,7 +41,7 @@ Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook
 
 如果您是单个用户，则可以 [为自己启用报告邮件加载项](#get-the-report-message-add-in-for-yourself)。
 
-如果您是全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以 [为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在，可以通过 [集中部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)使用报告消息加载项。
+如果您是全局管理员或 Exchange Online 管理员，并且将 Exchange 配置为使用 OAuth 身份验证，则可以 [为您的组织启用报告消息外接程序](#get-and-enable-the-report-message-add-in-for-your-organization)。 现在，可以通过 [集中部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)使用报告消息 Add-In。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -91,7 +91,7 @@ Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook
 > [!NOTE]
 > 最长可能需要12个小时，外接程序才会显示在您的组织中。
 
-1. 在 Microsoft 365 管理中心，转到 "服务" **& "外接程序** " 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> ，然后单击 " **部署外接程序**"。
+1. 在 Microsoft 365 管理中心，转到 " **设置"、"集成应用 & 外接** 程序" 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> ，然后单击 " **部署外接程序**"。
 
    ![Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
@@ -151,7 +151,7 @@ Outlook 和 web 上的 outlook 的报告邮件外接程序 (以前称为 Outlook
 
 1. 在 Microsoft 365 管理中心，转到上的 " **服务" & "外接程序** " 页 <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns> 。
 
-   ![新 Microsoft 365 管理中心中的 "服务和外接程序" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
+   ![新 Microsoft 365 管理中心中的 "服务和 Add-Ins" 页](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
 2. 查找并选择 **报告邮件** 加载项。
 

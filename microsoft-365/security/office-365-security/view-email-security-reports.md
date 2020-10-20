@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594789"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600561"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -297,8 +297,8 @@ ms.locfileid: "48594789"
 
 - **数据查看依据：内容 \> 恶意软件**<sup>1</sup>：为 Office 365 ATP 组织显示以下信息：
 
-  - **反恶意软件引擎**
-  - **文件沙箱**
+  - **反恶意软件引擎**：通过反恶意软件在 Sharepoint Online、OneDrive 和团队中捕获恶意文件。
+  - **文件沙箱**：沙箱安全附件在 Sharepoint Online、OneDrive 和团队中的恶意文件。
 
   ![威胁 protection 状态报告中的内容恶意软件视图](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ ms.locfileid: "48594789"
 
 - **分解方式：检测技术** 和 **查看数据的方式：电子邮件 \> 网络钓鱼**：将显示以下信息：
 
-  - **ATP 生成的 URL 信誉**<sup>1</sup>
-  - **高级网络钓鱼筛选器**
-  - **反欺骗： DMARC 故障**
-  - **反欺骗：组织内**
-  - **反欺骗：外部域**
-  - **品牌模拟**
-  - **域模拟**<sup>1</sup>
-  - **EOP URL 信誉**
-  - **常规网络钓鱼筛选器**
+  - **ATP 生成的 url 信誉**<sup>1</sup>：从其他 ATP 客户中的 ATP DETONATIONS 生成的恶意 URL 信誉。
+  - **高级网络钓鱼筛选器**：基于机器学习的网络钓鱼信号。
+  - **反欺骗-DMARC 失败**：邮件上的 DMARC 身份验证失败。
+  - **反欺骗-组织内**：发件人试图欺骗收件人域。
+  - **反欺骗-外部域**：发件人试图欺骗某个其他域。
+  - **品牌模拟**：模拟基于发件人的知名品牌。
+  - **域模拟**<sup>1</sup>：模拟客户拥有或定义的域。
+  - **EOP url 信誉**：恶意 url 信誉。
+  - **常规网络钓鱼筛选器**：基于分析师规则的网络钓鱼信号。 
   - **其他**
-  - **网络钓鱼 ZAP**<sup>2</sup>
+  - **网络钓鱼 ZAP**<sup>2</sup>：零小时自动清除网络钓鱼邮件。
   - **URL 沙箱**<sup>1</sup>
-  - **用户模拟**<sup>1</sup>
+  - **用户模拟**<sup>1</sup>：模拟管理员定义的用户或通过邮箱智能学习的用户。
 
   ![威胁防护状态报告中的网络钓鱼电子邮件的检测技术视图](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分解方式：检测技术** 和 **查看数据的依据：电子邮件 \> 恶意软件**：显示以下信息：
 
-  - **ATP 生成的文件信誉**<sup>1</sup>
-  - **反恶意软件引擎**<sup>1</sup>
-  - **反恶意软件策略文件类型块**
-  - **File 沙箱**<sup>1</sup>
+  - **Atp 生成的文件信誉**<sup>1</sup>：由 ATP detonations 生成的所有恶意文件信誉。
+  - **反恶意软件引擎**<sup>1</sup>：来自反恶意软件引擎的检测。
+  - **反恶意软件策略文件类型阻止**：这些电子邮件是由于邮件中标识的恶意文件的类型而筛选出的。
+  - **文件沙箱**<sup>1</sup>： File 沙箱由安全附件捕获。  
   - **恶意文件信誉**
   - **恶意软件 ZAP**<sup>2</sup>
   - **其他**

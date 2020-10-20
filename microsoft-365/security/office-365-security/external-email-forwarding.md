@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417233"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600525"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中配置外部电子邮件转发
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417233"
 
 外部转发由 *出站反垃圾邮件策略* 控制，并根据配置的设置范围限定给用户。 当前支持3个设置：
 
-- **自动** –这是由系统控制的：它允许出站垃圾邮件筛选功能来控制自动外部电子邮件转发。 这是默认设置。
+- **自动** –阻止自动外部转发。 邮件的内部自动转发将继续有效。 这是默认设置。
 
 - **启用** –允许和不限制自动外部转发。
 

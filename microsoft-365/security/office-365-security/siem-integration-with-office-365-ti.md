@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: 将组织的 SIEM 服务器与 office 365 高级威胁防护以及 Office 365 活动管理 API 中相关的威胁事件集成。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327161"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600549"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 与高级威胁防护的集成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-如果您的组织使用安全事件和事件管理 (SIEM) server，则可以将 Office 365 高级威胁防护 (Office 365 ATP) 与 SIEM 服务器集成。 您可以使用 [Office 365 活动管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)设置这种集成。 
+如果您的组织使用安全信息和事件管理 (SIEM) server，则可以将 Office 365 高级威胁防护 (Office 365 ATP) 与 SIEM 服务器集成。 您可以使用 [Office 365 活动管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)设置这种集成。 
 
 通过 SIEM 集成，可以查看 SIEM 服务器报告中的 Office 365 ATP 检测到的信息，例如恶意软件或网络钓鱼。 
 
@@ -68,5 +68,4 @@ SIEM 服务器或其他类似的系统会轮询 **审核。常规** 工作负荷
 [Office 365 威胁调查和响应](office-365-ti.md)
 
 [Office 365 中的自动调查和响应 (空中) ](automated-investigation-response-office.md)
-
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离邮件。 具有 Office 365 高级威胁防护的组织中的管理员 (Office 365 ATP) 还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417222"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600537"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -95,6 +95,13 @@ ms.locfileid: "48417222"
      - **恶意软件**
      - **垃圾邮件**
      - **高可信度网络钓鱼**
+     
+   - **策略类型**：按策略类型筛选邮件：
+     - **反恶意软件策略**
+     - **安全附件策略**
+     - **反网络钓鱼策略**
+     - **托管的内容筛选器策略**
+     - **传输规则**
 
    - **电子邮件收件人**：所有用户或仅发送给你的邮件。 最终用户只能管理发送给他们的隔离邮件。
 
@@ -107,6 +114,8 @@ ms.locfileid: "48417222"
      例如，使用 [邮件跟踪](message-trace-scc.md) 查找发送到组织中的用户的邮件，并确定邮件已被隔离而不是传递。 确保包含完整的邮件 ID 值，其中可能包含尖括号 (\<\>) 。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
+
+   - **策略名称**：使用邮件的整个策略名称。 搜索不区分大小写。
 
    - **收件人电子邮件地址**：单个收件人的电子邮件地址。
 
@@ -152,7 +161,7 @@ ms.locfileid: "48417222"
 
 - **释放邮件**：在出现的弹出窗口中，选择以下选项：
 
-  - **将邮件报告给 Microsoft 进行分析**：默认情况下，此选项处于选中状态，并将错误隔离的邮件以误报的形式报告给 microsoft。 如果邮件被隔离为垃圾邮件、批量、网络钓鱼或包含恶意软件，则还会向 Microsoft 垃圾邮件分析团队报告该邮件。 根据分析的不同，可能会调整服务范围内的垃圾邮件筛选器规则，以允许邮件通过。
+  - **将邮件报告给 Microsoft 进行分析**：默认情况下，此选项处于选中状态，并将错误隔离的邮件以误报的形式报告给 microsoft。 如果邮件被隔离为垃圾邮件、批量、网络钓鱼或包含恶意软件，则还会向 Microsoft 垃圾邮件分析团队报告该邮件。 根据分析的不同，可能会调整服务范围的垃圾邮件筛选器规则，以允许邮件通过。
 
   - 选择下列选项之一：
     - **将邮件释放给所有收件人**
