@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327005"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594789"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -276,8 +276,8 @@ ms.locfileid: "48327005"
 
 若要查看报告，请打开 [安全 & 合规中心](https://protection.office.com)，转到 " **报告**" \> **仪表板** ，然后选择 " **威胁保护状态**"。 若要直接转到报告，请打开以下 Url 之一：
 
-- Office 365 ATP： <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP： <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 !["报告" 仪表板中的 "威胁防护状态" 小部件](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ ms.locfileid: "48327005"
   - **文件沙箱**
 
   ![威胁 protection 状态报告中的内容恶意软件视图](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **数据查看依据：邮件覆盖**：以下是显示的替代原因信息：
+
+  - **内部部署跳过**
+  - **IP 允许**
+  - **邮件流规则**
+  - **发件人允许**
+  - **域允许**
+  - **未启用 ZAP**
+  - **未启用 "垃圾邮件" 文件夹**
+  - **用户安全发件人**
+  - **用户安全域**
+
+  ![威胁 protection 状态报告中的邮件覆盖视图](../../media/threat-protection-status-report-message-override-view.png)
 
 - **分解方式：检测技术** 和 **查看数据的方式：电子邮件 \> 网络钓鱼**：将显示以下信息：
 
@@ -361,16 +375,24 @@ ms.locfileid: "48327005"
 
 <sup>2</sup> 个零小时自动清除 (ZAP) 在独立 EOP 中不可用 (它仅适用于 Exchange Online 邮箱) 。
 
-如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：
+如果您单击 " **筛选器**"，可用的筛选器将取决于所查看的图表：
+
+对于 **内容 \> 恶意软件**，可以按 " **开始日期** " 和 " **结束日期**" 以及 **检测** 值修改报告。
+
+对于 **邮件覆盖**，可以使用以下筛选器修改报告：
+
+- **开始日期** 和 **结束日期**
+- **重写原因**
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
+- **域**
+
+对于所有其他视图，您可以使用以下筛选器修改报告：
 
 - **开始日期** 和 **结束日期**
 - **检测**
 - **受以下保护**： **ATP** 或 **EOP**
 - **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
 - **域**
-
-> [!NOTE]
-> **受保护的**、 **标记** 和 **域** 仅为 Office 365 ATP。 视图数据中不提供以下可筛选属性 **：内容 \> 恶意软件**。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威胁防护状态报告的详细信息表格视图
 
@@ -379,14 +401,30 @@ ms.locfileid: "48327005"
 - **数据查看依据：内容 \> 恶意软件**：
 
   - **Date**
-  - **Location**
+  - **位置**
   - **指导者**
   - **恶意软件名称**
+
+如果单击此视图中的 " **筛选器** "，则可以按 **开始日期** 和 **结束日期**以及 **检测** 值修改报告。
+
+- **数据查看依据：邮件覆盖**：
+
+  - **Date**
+  - **Subject**
+  - **发件人**
+  - **Recipients**
+  - **检测人**
+  - **重写原因**
+  - **泄露来源**
+  - **Tags**
 
 如果单击此视图中的 " **筛选器** "，则可以使用以下筛选器修改报表：
 
 - **开始日期** 和 **结束日期**
-- **检测**
+- **重写原因**
+- **标记**：按标记进行筛选，以返回已应用特定标记的用户或组。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
+- **域**
+- **收件人** (请注意，此可筛选属性仅在 "详细信息" 表格视图中可用) 
 
 **数据查看方式：概述**：没有可用的 **视图详细信息表** 按钮。
 
@@ -439,7 +477,7 @@ ms.locfileid: "48327005"
 
 详细信息可用于每封邮件，包括传递原因、为您的组织配置的垃圾邮件策略例外或邮件流规则。 若要查看详细信息，请在 "用户报告" 列表中选择一个项目，然后查看 " **摘要** " 和 " **详细信息** " 选项卡上的信息。
 
-!["用户报告的邮件" 报告显示用户标记为垃圾邮件、非垃圾邮件或网络钓鱼尝试的邮件。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![User-Reported 邮件报告显示用户标记为垃圾邮件、非垃圾邮件或仿冒企图的邮件。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 若要查看此报告，请在 [安全 & 合规性中心](https://protection.office.com)中，执行下列操作之一：
 
