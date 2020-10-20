@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377267"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600377"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内幕风险管理设置入门
 
@@ -59,7 +59,7 @@ ms.locfileid: "48377267"
 策略指示器分成以下几个方面。 创建内幕风险策略时，可以选择标记以激活和自定义每个指示器级别的指标事件限制：
 
 - **Office 指标**：其中包括 SharePoint 网站、团队和电子邮件消息的策略指示器。
-- **设备指示器**：其中包括活动的策略指示器，例如通过网络或设备共享文件。 指标包括涉及 Microsoft Office 文件的活动。CSV 文件和。PDF 文件。 如果选择 " **设备指示器**"，则仅处理 Windows 10 内部版本1809或更高版本的设备的活动。 有关配置设备以与内幕风险集成的详细信息，请参阅 [ENDPOINT DLP 入门](endpoint-dlp-getting-started.md)。
+- **设备指示器**：其中包括活动的策略指示器，例如通过网络或设备共享文件。 指标包括涉及 Microsoft Office 文件的活动。CSV 文件和。PDF 文件。 如果选择 " **设备指示器**"，则仅处理 Windows 10 内部版本1809或更高版本的设备的活动。 有关配置设备以与内幕风险集成的详细信息，请参阅以下 " [启用设备指示器" 和 "板载设备](insider-risk-management-settings.md#OnboardDevices) " 部分。
 - **安全策略冲突指示器**：其中包括 MICROSOFT Defender ATP 与未批准或恶意软件安装相关的指标或绕过安全控制的指标。 若要在 "内幕风险管理" 中接收通知，必须启用活动的 Microsoft Defender ATP 许可证和内幕风险集成。 有关为内部人员风险管理集成配置 Microsoft Defender ATP 的详细信息，请参阅 [在 Microsoft DEFENDER atp 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **风险分数 boosters**：其中包括提高异常活动或过去策略违规的风险分数。 启用风险分数 boosters 会增加风险分数和这些类型活动的警报可能性。 只有在选择了上面的一个或多个指示器时，才能选择风险分数 boosters。
 
@@ -71,6 +71,73 @@ ms.locfileid: "48377267"
 
 >[!NOTE]
 >在 **用户仪表板**中显示新的手动添加的用户可能需要几个小时。 之前90天的活动显示这些用户可能需要长达24小时才能显示。 若要查看手动添加的用户的活动，请在 **用户仪表板** 上选择用户，然后在详细信息窗格中打开 " **用户活动** " 选项卡。
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>启用设备指示器和板载设备
+<a name="OnboardDevices"> </a>
+
+若要在设备上启用风险活动监视并包括这些活动的策略指示器，设备必须满足以下要求，并且必须完成以下启动步骤。
+
+#### <a name="step-1-prepare-your-endpoints"></a>步骤1：准备终结点
+
+确保您计划在 "内幕风险管理" 中报告的 Windows 10 设备符合这些要求。
+
+1. 必须运行 Windows 10 x64 内部版本 1809 或更高版本。
+2. 所有设备必须[已加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或已加入混合 Azure AD。
+3. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以监视云上载活动的操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+
+#### <a name="step-2-onboarding-devices"></a>步骤2：载入设备
+<a name="OnboardStep2"> </a>
+
+您必须启用设备监视和终结点的板载操作，然后才能监视设备上的内幕风险管理活动。 这两项操作都在 Microsoft 365 合规门户中完成。
+
+如果您想要在尚未载入的板载设备的情况下，下载相应的脚本并按以下步骤所述进行部署。
+
+已载入到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 按照下一节中的 " [将设备载入到 Microsoft Defender For Endpoint" 中的步骤3：](insider-risk-management-settings.md#OnboardStep3) 。
+
+在此部署方案中，你将有尚未载入的板载设备，并且只想在 Windows 10 设备上监视内幕风险活动。
+
+1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
+2. 打开合规中心设置页面，然后选择“**载入设备**”。
+
+   > [!NOTE]
+   > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
+
+3. 选择“**设备管理**”，以打开“**设备**”列表。 在载入设备之前，此列表将为空。
+4. 选择“**载入**”以开始载入流程。
+5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后**下载程序包**。
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+    - 使用组策略载入 Windows 10 计算机
+    - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
+    - 使用移动设备管理工具载入 Windows 10 计算机
+    - 使用本地脚本载入 Windows 10 计算机
+    - 载入非持久性虚拟桌面基础结构 (VDI) 计算机。
+
+完成后，终结点便应显示在 "设备" 列表中，终结点将开始向 "内幕风险管理" 报告 "审核活动日志" 载入。
+
+> [!NOTE]
+> 此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>步骤3：如果你有设备载入到 Microsoft Defender for Endpoint
+<a name="OnboardStep3"> </a>
+
+如果已部署 Microsoft Defender for Endpoint，并且在中有终结点报告，则所有这些终结点将显示在 "托管设备" 列表中。 您可以通过使用 " [步骤2：载入设备](insider-risk-management-settings.md#OnboardStep2) " 部分，继续将新设备集成到内幕风险管理中，以扩展覆盖范围。
+
+1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
+2. 打开合规中心设置页面，然后选择“**启用设备监视**”。
+3. 选择“**设备管理**”，以打开“**设备**”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
+4. 如果需要载入附加设备，请选择“**载入**”。
+5. 从“**部署方法**”列表中选择要部署到这些额外设备的方式，然后**下载程序包**。
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+    - 使用组策略载入 Windows 10 计算机
+    - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
+    - 使用移动设备管理工具载入 Windows 10 计算机
+    - 使用本地脚本载入 Windows 10 计算机
+    - 载入非持久性虚拟桌面基础结构 (VDI) 计算机。
+
+完成后，终结点将载入，在 " **设备** " 表下应可见，终结点将开始将审核活动日志报告给内幕风险管理。
+
+> [!NOTE]
+>此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
 
 ### <a name="indicator-level-settings-preview"></a> (预览的指示器级别设置) 
 
@@ -177,8 +244,8 @@ ms.locfileid: "48377267"
 | AlertType | 警报的类型为 " *自定义*"。  |
 | AlertId | 警报的 GUID。 内幕风险管理警报是可变的。 当警报状态更改时，将生成一个具有相同 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报类别为 *InsiderRiskManagement*。 此类别可用于从其他安全 & 合规性警报中辨别这些警报。 |
-| 备注 | 通知的默认注释。 值是在创建警报时记录的 *新警报* (记录) 并在更新警报) 时记录 *更新* (记录。 使用 AlertID 可关联警报的更新。 |
-| 数据 | 警报的数据包括唯一的用户 ID、用户主体名称以及在将用户触发到策略中时 (UTC) 的日期和时间。 |
+| Comments | 通知的默认注释。 值是在创建警报时记录的 *新警报* (记录) 并在更新警报) 时记录 *更新* (记录。 使用 AlertID 可关联警报的更新。 |
+| Data | 警报的数据包括唯一的用户 ID、用户主体名称以及在将用户触发到策略中时 (UTC) 的日期和时间。 |
 | 名称 | 生成警报的内幕风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内幕风险管理策略的 GUID。 |
 | Severity | 警报的严重性。 值为 " *高*"、" *中*" 或 " *低*"。 |
@@ -192,7 +259,7 @@ ms.locfileid: "48377267"
 - Id
 - RecordType
 - CreationTime
-- 操作
+- Operation
 - OrganizationId
 - UserType
 - UserKey

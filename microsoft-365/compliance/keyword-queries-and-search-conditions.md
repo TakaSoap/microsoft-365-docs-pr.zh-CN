@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: 了解可以在 Office 365 安全 & 合规中心中搜索的电子邮件和文件属性。
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 了解可以使用 Microsoft 365 中的搜索和电子数据展示工具搜索的电子邮件和文件属性。
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446191"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600445"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>内容搜索的关键字查询和搜索条件
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>内容搜索和电子数据展示的关键字查询和搜索条件
 
-本主题介绍了在 Exchange Online 中的电子邮件项目和存储在 SharePoint 和 OneDrive for business 网站上的电子邮件项目中，可以使用安全 & 合规中心中的内容搜索功能搜索的电子邮件和文档属性。 您还可以在 Security & 合规性中心 PowerShell 中使用** \* -new-compliancesearch** cmdlet 搜索这些属性。 本主题还介绍了以下内容：   
+本主题介绍您可以使用 Microsoft 365 合规性中心中的内容搜索功能在 Exchange Online 中的电子邮件项目和存储在 SharePoint 和 OneDrive for business 网站上的电子邮件项目中搜索的电子邮件和文档属性。 您还可以在 Security & 合规性中心 PowerShell 中使用** \* -new-compliancesearch** cmdlet 搜索这些属性。 本主题还介绍了以下内容：
   
 - 使用布尔搜索运算符、搜索条件和其他搜索查询技术来优化搜索结果。
-    
-- 在 SharePoint 和 OneDrive for Business 中搜索敏感数据类型和自定义敏感数据类型。
-    
-- 搜索与组织外部用户共享的网站内容
-    
-有关如何创建内容搜索的分步说明，请参阅 [Office 365 中的内容搜索](content-search.md)。
 
-  
+- 在 SharePoint 和 OneDrive for Business 中搜索敏感数据类型和自定义敏感数据类型。
+
+- 搜索与组织外部用户共享的网站内容
+
+有关如何创建内容搜索的分步说明，请参阅 [内容搜索](content-search.md)。
+
 > [!NOTE]
-> Security & 合规性中心中的内容搜索和安全 & 合规中心 PowerShell 中的相应** \* new-compliancesearch** Cmdlet 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅 [关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> Microsoft 365 合规性中心中的内容搜索和安全 & 合规性中心 PowerShell 中的相应** \* new-compliancesearch** Cmdlet 使用关键字查询语言 (KQL) 。 有关更多详细信息，请参阅 [关键字查询语言语法参考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
   
 ## <a name="searchable-email-properties"></a>可搜索的电子邮件属性
 
-下表列出了可使用安全性 & 合规性中心中的内容搜索功能或通过使用 **new-compliancesearch** 或 **new-compliancesearch** cmdlet 搜索的电子邮件属性。 该表包括属性的一个示例：每个属性的  _值_ 语法和示例返回的搜索结果的说明。 您可以  `property:value` 在 "关键字" 框中为内容搜索键入这些对。 
+下表列出了可使用 Microsoft 365 合规性中心中的内容搜索功能或通过使用 **new-compliancesearch** 或 **new-compliancesearch** cmdlet 搜索的电子邮件属性。 该表包括属性的一个示例：每个属性的  _值_ 语法和示例返回的搜索结果的说明。 您可以  `property:value` 在 "关键字" 框中为内容搜索键入这些对。 
 
 > [!NOTE]
 > 搜索电子邮件属性时，不能搜索指定属性为空或为空的项目。 例如，使用 " *属性：值* 对的值对" **主题： ""** 搜索具有空主题行的电子邮件将返回零个结果。 这也适用于搜索网站和联系人属性。
@@ -106,19 +105,19 @@ ms.locfileid: "48446191"
 |FileName|文件的名称。|`filename:"marketing plan"`  <br/> `filename:estimate`|第一个示例返回标题中具有完全匹配短语“marketing plan”的文件。第二个示例返回文件名中具有单词“estimate”的文件。|
 |LastModifiedTime|项目的上次更改日期。|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|第一个示例返回在2016年5月1日或之后更改的项。 第二个示例返回在5月1日、2016和6月1日之间更改的项目2016。|
 |ModifiedBy|上次更改项目的人员。 请务必对此属性使用用户的显示名称。|`modifiedby:"Garth Fort"`|由 Garth Fort 最后更改的所有项目。|
-|Path|SharePoint 或 OneDrive for business 网站中特定网站 (URL) 的路径。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须将/添加 \* 到指定网站的 URL; 例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该  `Path` 属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站中的文档 (和包含文件名中的 "机密" 一词的 "网站) 中的文件夹。|
+|路径|SharePoint 或 OneDrive for business 网站中特定网站 (URL) 的路径。  <br/> 若要返回在为 path 属性指定的网站中的文件夹中的项目，您必须将/添加 \* 到指定网站的 URL; 例如，  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **注意：** 使用该  `Path` 属性搜索 OneDrive 位置不会在搜索结果中返回媒体文件，如 .png、tiff 或 .wav 文件。 在搜索查询中使用不同的 site 属性搜索 OneDrive 文件夹中的媒体文件。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|第一个示例返回指定的 OneDrive for business 网站中的所有项目。 第二个示例返回指定网站中的文档 (和包含文件名中的 "机密" 一词的 "网站) 中的文件夹。|
 |SharedWithUsersOWSUser|与指定用户共享并显示在用户的 OneDrive for business 网站中的 " **与我共享** " 页上的文档。 这些文档已与组织中的其他人员明确与指定的用户共享。 当您导出与使用 SharedWithUsersOWSUser 属性的搜索查询匹配的文档时，文档将从与指定用户共享文档的人员的原始内容位置导出。 有关详细信息，请参阅 [搜索组织中共享的网站内容](#searching-for-site-content-shared-within-your-organization)。|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|这两个示例都将返回所有已与 Garth Fort 显式共享且显示在 Garth Fort 的 OneDrive for business 帐户中的 " **与我共享** " 页上的内部文档。|
 |Site|组织中站点或站点组的 URL。|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|第一个示例返回组织中所有用户的 OneDrive for Business 网站中的项目。 第二个示例返回所有团队网站中的项目。|
 |Size|邮件的大小（以字节为单位）。|`size>=1`  <br/> `size:1..10000`|第一个示例返回大于 1 字节的项目。第二个示例返回大小介于 1 到 10,000 字节之间的项目。|
 |标题|文档的标题。 Title 属性是在 Microsoft Office 文档中指定的元数据。 它不同于文档的文件名。|`title:"communication plan"`|Office 文档的 Title 元数据属性中包含短语“communication plan”的任何文档。|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>可搜索联系人属性
 
 下表列出了已编制索引且您可以搜索使用内容搜索的联系人属性。 这些属性是用户可为联系人配置的属性，这些属性也称为 "个人联系人") 位于用户邮箱的 "个人通讯簿" 中 (。 若要搜索联系人，可以选择要搜索的邮箱，然后在关键字查询中使用一个或多个联系人属性。
   
 > [!TIP]
-> 若要搜索包含空格或特殊字符的值，请使用双引号 ( "" ) 以包含短语;例如，  `businessaddress:"123 Main Street"` 。 
+> 若要搜索包含空格或特殊字符的值，请使用双引号 ( "" ) 以包含短语;例如， `businessaddress:"123 Main Street"` 。
   
 |**属性**|**属性描述**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ ms.locfileid: "48446191"
 
 ## <a name="searchable-sensitive-data-types"></a>可搜索敏感数据类型
 
-您可以使用 "安全和合规中心" 中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive for business 网站上的文档中的敏感数据（如信用卡号或社会保险号）。 可以通过  `SensitiveType` 在关键字查询中使用属性和敏感信息类型的名称来执行此操作。 例如，查询  `SensitiveType:"Credit Card Number"` 返回包含信用卡号的文档。 查询  `SensitiveType:"U.S. Social Security Number (SSN)"` 返回包含美国社会安全号码的文档。 若要查看可以搜索的敏感数据类型的列表，请转到**Classifications** \> Security & 合规性中心中的 "分类**敏感信息类型**"。 或者，您可以使用 Security & 合规性中心 PowerShell 中的 **DlpSensitiveInformationType** cmdlet 来显示敏感信息类型的列表。 
-  
-您还可以使用  `SensitiveType` 属性来搜索您 (的自定义敏感信息类型的名称，或为您的组织创建的其他管理员) 。 您可以使用 Security & 合规性中心中的 "**敏感信息类型**" 页上的 "**发布者**" 列 (或 PowerShell) 中的**Publisher**属性来区分内置和自定义的敏感信息类型。 有关详细信息，请参阅 [创建自定义敏感信息类型](create-a-custom-sensitive-information-type.md)。
+您可以使用合规中心中的内容搜索功能来搜索存储在 SharePoint 和 OneDrive for business 网站上的文档中的敏感数据（如信用卡号或社会保险号）。 可以通过 `SensitiveType` 在关键字查询中使用属性和敏感信息类型的名称来执行此操作。 例如，查询 `SensitiveType:"Credit Card Number"` 返回包含信用卡号的文档。 查询  `SensitiveType:"U.S. Social Security Number (SSN)"` 返回包含美国社会安全号码的文档。 若要查看您可以搜索的敏感数据类型的列表，请转到 Microsoft 365 合规性中心中的 " **数据分类** \> **敏感信息类型** "。 或者，您可以使用 Security & 合规性中心 PowerShell 中的 **DlpSensitiveInformationType** cmdlet 来显示敏感信息类型的列表。
   
 有关使用属性创建查询的详细信息  `SensitiveType` ，请参阅 [窗体 a 查询来查找存储在网站上的敏感数据](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
 
-> [!NOTE]
-> 您不能使用敏感数据类型和 `SensitiveType` search 属性在 Exchange Online 邮箱中搜索敏感数据。 但是，可以使用数据丢失防护 (DLP) 策略来保护传输中的敏感 emaill 数据。 有关详细信息，请参阅 [数据丢失防护策略概述](data-loss-prevention-policies.md) 和 [搜索和查找个人数据](search-for-and-find-personal-data.md)。
+### <a name="limitations-for-searching-sensitive-data-types"></a>搜索敏感数据类型的限制
+
+- 只能使用 `SensitiveType` 属性搜索内置的敏感信息数据类型。 您无法搜索您 (或其他管理员为您的组织创建) 的自定义敏感数据类型。 使用 "合规性中心" 中 "**敏感信息类型**" 选项卡上的 "**发布者**" 列 (或 PowerShell) 中的**Publisher**属性可区分内置和自定义敏感信息类型。 内置的敏感数据类型由 "**发布者**" 列中的**Microsoft Corporation**值标识。
+  
+- 您不能使用敏感信息数据类型和 `SensitiveType` search 属性在 Exchange Online 邮箱中搜索敏感数据。 但是，可以使用数据丢失防护 (DLP) 策略来保护传输中的敏感电子邮件数据。 有关详细信息，请参阅 [数据丢失防护策略概述](data-loss-prevention-policies.md) 和 [搜索和查找个人数据](search-for-and-find-personal-data.md)。
   
 ## <a name="search-operators"></a>搜索运算符
 
-布尔搜索运算符（如 **AND**、 **OR**和 **NOT**）可帮助您通过在搜索查询中包含或排除特定单词来定义更精确的搜索。 其他技术，如使用属性运算符 (如 \> = 或.。) 、引号、圆括号和通配符，可帮助您优化搜索查询。 下表列出了可用于缩小或拓宽搜索结果范围的运算符。 
+布尔搜索运算符（如 **AND**、 **OR**和 **NOT**）可帮助您通过在搜索查询中包含或排除特定单词来定义更精确的搜索。 其他技术（如使用属性运算符 (例如 `>=` 或 `..`) 、引号、括号和通配符）可帮助您优化搜索查询。 下表列出了可用于缩小或拓宽搜索结果范围的运算符。 
   
 |**运算符**|**用法**|**说明**|
 |:-----|:-----|:-----|

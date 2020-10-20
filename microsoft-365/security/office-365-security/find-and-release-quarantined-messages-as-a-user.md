@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202839"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600341"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -100,6 +100,11 @@ ms.locfileid: "48202839"
      - **垃圾邮件**
 
      - **网络钓鱼**
+     
+   - **策略类型**：按策略类型筛选邮件：
+     - **反网络钓鱼策略**
+     - **托管内容筛选器策略**
+     
 
    若要清除筛选器，请单击“清除”****。 若要隐藏筛选器浮出控件，请再次单击“筛选器”****。
 
@@ -108,6 +113,8 @@ ms.locfileid: "48202839"
    - **邮件 ID**：邮件的全局唯一标识符。 在你选择列表中的邮件后，“详细信息”**** 浮出控件窗格随即显示，其中包含“邮件 ID”**** 值。 管理员可以使用[邮件跟踪](message-trace-scc.md)来查找邮件及其相应“邮件 ID”值。
 
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
+   
+   - **策略名称**：使用邮件的完整策略名称。 搜索不区分大小写。
 
    - **收件人电子邮件地址**：单个收件人的电子邮件地址。
 

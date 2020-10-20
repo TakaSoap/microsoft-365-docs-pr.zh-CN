@@ -3,7 +3,7 @@ title: 配置具有三层保护的 Teams
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 保护 Microsoft Teams 中文件的配置建议。
-ms.openlocfilehash: 2e432c37642db7247f670dfd8d2d72da6df428bb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ec598bede2419abc19db2dbe3fd3ff63d8f583
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377385"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594926"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>配置具有三层保护的 Teams
 
@@ -61,7 +61,7 @@ ms.locfileid: "48377385"
 
 [具有安全隔离的团队](secure-teams-security-isolation.md)是高度敏感选项的变体，为一个团队使用唯一敏感度标签，从而提供更高的安全性。 可以使用此标签来加密文件，只有该团队成员才能读取它们。
 
-基线保护同时公共和私人团队。 组织中的任何人均可发现和访问公共团队。 只有团队成员可以发现和访问私人团队。 这两种配置都将共享 SharePoint 网站的共享限制为团队所有者，以帮助进行权限管理。
+基线保护包括公共和私人团队。 组织中的任何人均可发现和访问公共团队。 只有团队成员可以发现和访问私人团队。 这两种配置都将共享 SharePoint 网站的共享限制为团队所有者，以帮助进行权限管理。
 
 敏感和高度敏感保护团队是私有团队，在该团队中对关联站点的共享和访问请求受到限制，并且敏感度标签用于设置有关来宾共享、设备访问和内容加密策略。
 
