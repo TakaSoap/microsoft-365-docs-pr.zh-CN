@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,22 +13,22 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e8a420cde7d0e07b1f089786d854f658308af0ff
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 709a908af6020b6b9ce43097abef1bcfddb04e01
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403302"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648331"
 ---
-# <a name="payment-information-for-thailand"></a><span data-ttu-id="376f2-103">泰国付款信息</span><span class="sxs-lookup"><span data-stu-id="376f2-103">Payment information for Thailand</span></span>
+# <a name="payment-information-for-thailand"></a><span data-ttu-id="9b87b-103">泰国付款信息</span><span class="sxs-lookup"><span data-stu-id="9b87b-103">Payment information for Thailand</span></span>
 
-<span data-ttu-id="376f2-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="376f2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="9b87b-104">[查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9b87b-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="376f2-105">请仅以 USD 付款，并在发票汇款上参考你的发票编号。</span><span class="sxs-lookup"><span data-stu-id="376f2-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="9b87b-105">请仅以 USD 付款，并在发票汇款上 (s) 中引用你的发票编号。</span><span class="sxs-lookup"><span data-stu-id="9b87b-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="376f2-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="376f2-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="9b87b-106">电子资金转帐</span><span class="sxs-lookup"><span data-stu-id="9b87b-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="376f2-107">**银行：** Citibank，新加坡</span><span class="sxs-lookup"><span data-stu-id="376f2-107">**Bank:** Citibank, Singapore</span></span>  
-<span data-ttu-id="376f2-108">**SWIFT 代码：** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="376f2-108">**SWIFT CODE:** CITISGSG</span></span>  
-<span data-ttu-id="376f2-109">**帐号：** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="376f2-109">**Account Number:** 0-817543-138</span></span>  
-<span data-ttu-id="376f2-110">**帐户名称：** MICROSOFT 区域销售公司</span><span class="sxs-lookup"><span data-stu-id="376f2-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
+<span data-ttu-id="9b87b-107">**银行：** Citibank，新加坡</span><span class="sxs-lookup"><span data-stu-id="9b87b-107">**Bank:** Citibank, Singapore</span></span>  
+<span data-ttu-id="9b87b-108">**SWIFT 代码：** CITISGSG</span><span class="sxs-lookup"><span data-stu-id="9b87b-108">**SWIFT CODE:** CITISGSG</span></span>  
+<span data-ttu-id="9b87b-109">**帐号：** 0-817543-138</span><span class="sxs-lookup"><span data-stu-id="9b87b-109">**Account Number:** 0-817543-138</span></span>  
+<span data-ttu-id="9b87b-110">**帐户名称：** MICROSOFT 区域销售公司</span><span class="sxs-lookup"><span data-stu-id="9b87b-110">**Account Name:** MICROSOFT REGIONAL SALES CORP</span></span>  
