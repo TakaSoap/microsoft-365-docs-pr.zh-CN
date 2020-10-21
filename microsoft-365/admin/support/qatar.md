@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d0574167c03e95e4388dc4486ca502231cb7dc83
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8d4a76d3d2806e63e68ee7df13e7b4e2c31140a2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44391293"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640183"
 ---
 # <a name="contact-support-for-qatar"></a>联系卡塔尔支持
 
@@ -34,16 +34,16 @@ ms.locfileid: "44391293"
 输入代码7700
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-阿拉伯语： Sun-星期四上午10点-下午6点
+阿拉伯语： Sun-Thu 上午10点-下午6点
 
-英语：周一至周五上午10点-下午6点
+英语： Mon-Fri 上午10点-6 PM
 
 ### <a name="technical-support"></a>技术支持：
 
-阿拉伯语： Sun-星期四上午10点-下午6点
+阿拉伯语： Sun-Thu 上午10点-下午6点
 
-英语：每天24小时，每周7天
+英语：全天候
 
 本地呼叫费用适用

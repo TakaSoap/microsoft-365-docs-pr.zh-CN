@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f486f593a9fd6a2dd7fbcaca9908176561c7790
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5132300971929ea4d728d7b50d6cbbff8206be64
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386633"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639583"
 ---
 # <a name="contact-support-for-south-africa"></a>对南非的联系支持
 
@@ -28,13 +28,13 @@ ms.locfileid: "44386633"
 080 020 2883
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-英语：周一至周五上午9点-下午5点
+英语： Mon-Fri 上午9点-下午5点
 
 ### <a name="technical-support"></a>技术支持：
 
-英语：每天24小时，每周7天
+英语：全天候
 
 备选电话号码： 021 427 3315
 

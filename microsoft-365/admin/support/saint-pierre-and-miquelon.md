@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 16696e504a935773582ea39c482d6ac9b7bd2bc8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d91c656459133e21b4e2c6fd032d582f520d1254
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389753"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640039"
 ---
 # <a name="contact-support-for-saint-pierre-and-miquelon"></a>联系圣皮埃尔和密克隆部门的支持人员
 
@@ -28,16 +28,16 @@ ms.locfileid: "44389753"
 + 1 312 843 5147
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-法语：周一至周五上午6点-2 PM
+法语： Mon-Fri 上午6点-2 下午
 
-英语：周一至周五上午6点-2 PM
+英语： Mon-Fri 6 AM-2 PM
 
 ### <a name="technical-support"></a>技术支持：
 
-法语：周一至周五上午5点-下午6点
+法语： Mon-Fri 上午5点-下午6点
 
-英语：每天24小时，每周7天
+英语：全天候
 
 国际呼叫费用适用

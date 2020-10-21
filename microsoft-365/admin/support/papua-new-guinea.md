@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6e7cc7d205f48661c775bd5266a266746e13e078
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7bc28aa073283304383154cb252a54aca7c68ca
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44392277"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640363"
 ---
 # <a name="contact-support-for-papua-new-guinea"></a>对巴布亚新几内亚的联系支持
 
@@ -28,12 +28,12 @@ ms.locfileid: "44392277"
 + 1 312 843 5148
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-英语：周一至周五上午11点-下午7点
+英语： Mon-Fri 上午11点-下午7点
 
 ### <a name="technical-support"></a>技术支持：
 
-英语：每天24小时，每周7天
+英语：全天候
 
 国际呼叫费用适用

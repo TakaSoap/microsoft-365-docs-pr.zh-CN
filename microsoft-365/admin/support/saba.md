@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 43adc0d133b8c08faf865581fa697780d144cc5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eefc06c409b8015b815839141fcfd33aa32856a5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389801"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640087"
 ---
 # <a name="contact-support-for-saba"></a>联系 Saba 的支持人员
 
@@ -28,12 +28,12 @@ ms.locfileid: "44389801"
 + 1 312 843 5145
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-英语：周一至周五上午9点-下午5点
+英语： Mon-Fri 上午9点-下午5点
 
 ### <a name="technical-support"></a>技术支持：
 
-英语：每天24小时，每周7天
+英语：全天候
 
 国际呼叫费用适用

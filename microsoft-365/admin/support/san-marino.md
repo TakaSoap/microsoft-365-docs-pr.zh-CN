@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 57c9f31f6d25637c9325e7006de943c14e6d9113
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d6ea0c0f89d1d9a5cdaf48f6e7bcfad62495f886
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389249"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639883"
 ---
 # <a name="contact-support-for-san-marino"></a>联系圣马力诺支持
 
@@ -28,16 +28,16 @@ ms.locfileid: "44389249"
 + 1 312 843 5154
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-意大利语：周一至周五上午10点-下午6点
+意大利语： Mon-Fri 上午10点-下午6点
 
-英语：周一至周五上午10点-下午6点
+英语： Mon-Fri 上午10点-6 PM
 
 ### <a name="technical-support"></a>技术支持：
 
-意大利语：周一至周五上午9点-下午10点
+意大利语： Mon-Fri 上午9点-下午10点
 
-英语：每天24小时，每周7天
+英语：全天候
 
 国际呼叫费用适用
