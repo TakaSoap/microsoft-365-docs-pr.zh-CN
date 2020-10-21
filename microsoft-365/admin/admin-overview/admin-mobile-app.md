@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 获取 Microsoft 365 管理应用程序，并了解如何通过手机或平板电脑管理你的在线组织。
-ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 55aaf26d0da922c8d9bfb7c64f16278eb4a705a5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948804"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646639"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>关于 Microsoft 365 管理移动应用
 
@@ -61,7 +61,7 @@ ms.locfileid: "47948804"
 如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
  
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 以下是一些有关应用的常见问题的解答。
   

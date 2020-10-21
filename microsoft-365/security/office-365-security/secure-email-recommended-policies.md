@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 5e7156a884093ca12fff7020bb045da30882547d
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464332"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646807"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
@@ -33,7 +33,7 @@ ms.locfileid: "48464332"
 
 这些建议要求用户使用新式电子邮件客户端，包括移动设备上的 Outlook for iOS 和 Outlook for Android。 适用于 iOS 和 Android 的 Outlook 提供了对 Office 365 最佳功能的支持。 这些移动 Outlook 应用程序还使用支持移动使用的安全功能以及与其他 Microsoft 云安全功能配合使用的安全功能。 有关详细信息，请参阅 [Outlook For iOS 和 ANDROID FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)。
 
-## <a name="updating-common-policies-to-include-email"></a>更新常见策略以包含电子邮件
+## <a name="update-common-policies-to-include-email"></a>更新常见策略以包含电子邮件
 
 为了保护电子邮件，下图说明了要从通用标识和设备访问策略中更新的策略。
 
@@ -64,6 +64,41 @@ ms.locfileid: "48464332"
 - 按照 "第2步：为 Exchange Online 配置 Azure AD 条件访问策略" 中的 "应用 ActiveSync (EAS) " 中的 [方案1： Office 365 应用程序需要批准的应用程序使用应用保护策略](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，这会阻止 Exchange ActiveSync 客户端利用基本身份验证连接到 Exchange Online。
 
 您还可以使用身份验证策略 [禁用基本身份验证](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)，这将强制所有客户端访问请求使用新式验证。
+
+## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>限制从 web 上的 Outlook 访问 Exchange Online
+
+您可以限制用户在 umnanaged 设备上的 Outlook 网页版上下载附件的功能。 这些设备上的用户可以使用 Office Online 查看和编辑这些文件，而无需将文件泄露和存储在设备上。 您还可以阻止用户查看非托管设备上的附件。
+
+步骤如下：
+
+1. [连接到 Exchange Online 远程 PowerShell 会话](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+2. 如果尚不具有 OWA 邮箱策略，请使用 [set-owamailboxpolicy](https://docs.microsoft.com/powershell/module/exchange/new-owamailboxpolicy) cmdlet 创建一个。
+3. 如果要允许查看附件但不下载，请使用以下命令：
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnly
+   ```
+
+4. 如果要阻止附件，请使用以下命令：
+
+   ```powershell
+   Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
+   ```
+
+4. 在 Azure 门户中，使用以下设置创建新的条件访问策略：
+
+   **> 用户和组的工作分配**：选择合适的用户和组以包含和排除。
+
+   **> 云应用或操作 > 云应用的工作分配 > 包括 > 选择应用程序**：选择 **Office 365 Exchange Online**
+
+   **访问控制 > 会话**：选择 "**使用应用强制限制**"
+
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>要求 iOS 和 Android 设备必须使用 Outlook
+
+若要确保 iOS 和 Android 设备的用户只能使用 Outlook for iOS 和 Outlook for Android 来访问工作或学校内容，您需要针对这些潜在用户的条件访问策略。
+
+请参阅 [使用 Outlook For iOS 和 Outlook For Android 管理邮件协作访问]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)中的配置此策略的步骤。
+
 
 ## <a name="set-up-message-encryption"></a>设置邮件加密
 

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 了解如何使用自助密码重置工具来重置密码。
-ms.openlocfilehash: 1684afd1baf32acc6c4245938b2ac7ee024d7374
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361803"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646675"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>允许用户重置自己的密码
 

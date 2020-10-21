@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,16 +24,16 @@ search.appverid:
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
 description: 了解如何将促销代码应用于 Microsoft 365 订阅以降低价格，以及如何在发生错误时解决促销代码问题。
-ms.openlocfilehash: 791565e29d8456e6c3c2c90b88cb2c6612e2d2cc
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403110"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646735"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用促销代码降低价格
 
-在购买订阅时，可以使用促销代码来降低价格。 阅读本文，了解如何将促销代码应用到订阅、了解[促销代码条款](#promo-code-terms)以及如何[解决促销代码问题](#troubleshooting-promo-codes)。
+在购买订阅时，可以使用促销代码来降低价格。 阅读本文，了解如何将促销代码应用到订阅、了解 [促销代码条款](#promo-code-terms)以及如何 [解决促销代码问题](#troubleshooting-promo-codes)。
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>将促销代码应用到订阅
 
@@ -41,11 +41,11 @@ ms.locfileid: "44403110"
     
 2. 在签出时，请选择 "* * 有促销或折扣代码？"，然后在框中输入您的代码。 
   
-3. 选择 "**应用促销代码**"。 您应该会看到已成功应用的确认信息。 如果看到其他消息，请参阅[促销代码疑难解答](#troubleshooting-promo-codes)以查明原因。 
+3. 选择 " **应用促销代码**"。 您应该会看到已成功应用的确认信息。 如果看到其他消息，请参阅[促销代码疑难解答](#troubleshooting-promo-codes)以查明原因。 
     
 4. 继续签出。在 "订单确认" 页上，您将看到包含金额的折扣代码。 
     
-完成购买后，可随时在帐单上查看促销代码产生的折扣。 若要了解详细信息，请参阅[查看](billing-and-payments/view-your-bill-or-invoice.md)。
+完成购买后，可随时在帐单上查看促销代码产生的折扣。 若要了解详细信息，请参阅 [查看](billing-and-payments/view-your-bill-or-invoice.md)。
   
 ## <a name="promo-code-terms"></a>促销代码期限
 

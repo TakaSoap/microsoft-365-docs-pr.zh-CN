@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '了解在完成 Office 365 注册过程之前需要了解的内容。 '
-ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0e5e4d89811807bfdb1bb71fb213973bdba075e2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780513"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646627"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何注册管理员帮助
 
@@ -70,9 +70,9 @@ ms.locfileid: "44780513"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-需要我们帮助你进行选择？ 销售顾问可以解答你的疑问。 只需转到 "[比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2)" 并选择页面左侧列出的联系人支持选项之一即可。
+需要我们帮助你进行选择？ 销售顾问可以解答你的疑问。 只需转到 " [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) " 并选择页面左侧列出的联系人支持选项之一即可。
   
 ::: moniker-end
 
@@ -81,16 +81,16 @@ ms.locfileid: "44780513"
 
 在购买之前，请将一些想法放入您注册的计划中。 这将有助于避免今后因增长而带来的不便。
   
-需要我们帮助你进行选择？ 销售顾问可以解答你的疑问。 只需转到 "[比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2)" 并选择页面左侧列出的联系人支持选项之一即可。 
+需要我们帮助你进行选择？ 销售顾问可以解答你的疑问。 只需转到 " [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) " 并选择页面左侧列出的联系人支持选项之一即可。 
   
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>准备注册免费试用版或购买订阅吗？
 
-转到 "[比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2)" 以选择要购买的计划并启动注册向导。 
+转到 " [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) " 以选择要购买的计划并启动注册向导。 
   
-如果你从免费试用版开始，你可以[稍后购买](../../commerce/buy-a-subscription-from-your-free-trial.md)。 试用版中所有的用户和数据仍存在。
+如果你从免费试用版开始，你可以 [稍后购买](../../commerce/buy-a-subscription-from-your-free-trial.md)。 试用版中所有的用户和数据仍存在。
   
 您无需取消试用。 如果您没有购买试用订阅，它会在试用期结束时自动过期，并且所有信息将永久删除。
 
@@ -103,9 +103,9 @@ ms.locfileid: "44780513"
 ::: moniker range="o365-germany"
 ## <a name="ready-to-sign-up-for-a-free-trial-or-buy-a-subscription"></a>准备注册免费试用版或购买订阅吗？
 
-转到 "[比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2)" 以选择要购买的计划并启动注册向导。 
+转到 " [比较所有产品](https://products.office.com/compare-all-microsoft-office-products?tab=2) " 以选择要购买的计划并启动注册向导。 
   
-如果你从免费试用版开始，你可以[稍后购买](../../commerce/buy-a-subscription-from-your-free-trial.md)。 试用版中所有的用户和数据仍存在。
+如果你从免费试用版开始，你可以 [稍后购买](../../commerce/buy-a-subscription-from-your-free-trial.md)。 试用版中所有的用户和数据仍存在。
   
 您无需取消试用。 如果您没有购买试用订阅，它会在试用期结束时自动过期，并且所有信息将永久删除。
   
@@ -120,9 +120,9 @@ ms.locfileid: "44780513"
   - **电子邮件** 和 **电话号码** ，以便我们在需要时就您的订阅联系您。例如，如果您忘记了密码，我们将使用此信息向您发送一个临时密码。我们还会向您指定的电子邮件地址发送您的计帐信息。
 
     > [!NOTE]
-    > 您在此处输入的电子邮件地址与 Microsoft 365 电子邮件地址（您的登录名，如下所示）不同。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
+    > 您在此处输入的电子邮件地址与您的 Microsoft 365 电子邮件地址 (您在) 下的登录名称不同。 因为我们也会向此地址发送您的帐单信息，因此建议您使用适用于接收业务电子邮件的电子邮件地址。
   
-- **登录名（用户 ID）：** 这将成为最初的 Microsoft 365 电子邮件地址，只是让你快速入门。
+- ** (用户 ID) 的登录名：** 这将成为最初的 Microsoft 365 电子邮件地址，只是让你快速入门。
 
     这是您用来登录的电子邮件地址。 例如，如果您的企业名称是 Fourth Coffee，则您可能会选择使用 rob@fourthcoffee.onmicrosoft.com 作为用户 ID。
 

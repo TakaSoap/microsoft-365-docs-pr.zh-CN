@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解可帮助您购买 Microsoft 产品和服务的建议。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419108"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646795"
 ---
 # <a name="understand-the-proposal-workflow"></a>了解建议工作流
 
@@ -43,17 +43,17 @@ Microsoft 代表将包含你和你的代表所讨论的项目的建议草案。 
 计费帐户的权限由帐单所有者管理。
 全局管理员可以将自己分配给帐单帐户所有者角色，然后将其他人计费帐户所有者。
 
-有关计费帐户的详细信息，请参阅[管理帐单帐户](manage-billing-accounts.md)。
+有关计费帐户的详细信息，请参阅 [管理帐单帐户](manage-billing-accounts.md)。
 
 ### <a name="microsoft-customer-agreement"></a>Microsoft 客户协议
 
-Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 有关详细信息，请参阅[Microsoft 客户协议](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
+Microsoft 客户协议 (MCA) 允许组织购买 Microsoft 产品和服务。 有关详细信息，请参阅 [Microsoft 客户协议](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>签署协议或支付项目所需的权限
 
 如果您在付费帐户中没有分配的角色，则当您查看建议时，将为您分配 "基本读者" 角色。 此角色允许你查看（但不执行）建议的任何操作。 在签署协议或购买产品和服务之前，您必须分配有帐单帐户所有者或帐单帐户参与者角色。 您的帐单帐户所有者可以将此角色分配给您。
 
-有关计费帐户角色的详细信息，请参阅[了解对计费帐户的访问权限](manage-billing-accounts.md#understand-access-to-billing-accounts)。
+有关计费帐户角色的详细信息，请参阅 [了解对计费帐户的访问权限](manage-billing-accounts.md#understand-access-to-billing-accounts)。
 
 如果这是一个新的帐单帐户，并且没有人接受协议，您将自动成为付费帐户所有者，前提是：
 
@@ -87,7 +87,7 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 | 帐单帐户 | 用于管理帐户设置、发票、付款方式和产品的帐户。 |
 | 计费配置文件 | 有关您的组织的信息，可让您自定义发票中包含的项目以及您为发票付款的方式。 记帐配置文件包括帐单帐户名称、用于特定记帐配置文件的付款方式、联系人信息、发票设置以及允许您更改计费配置文件、支付帐单和购买产品和服务的权限。 |
 | 现有协议 | 您的组织已与 Microsoft 进行的任何协议。 这可能包括但不限于企业协议、Microsoft 产品 & 服务协议或 Microsoft 客户协议。 |
-| Microsoft 客户协议（MCA） | 概述你的组织在 Microsoft 中持有的帐户的条款和条件的协议。 |
+| Microsoft 客户协议 (MCA)  | 概述你的组织在 Microsoft 中持有的帐户的条款和条件的协议。 |
 | Microsoft 代表 | 为您和您的组织准备建议的授权 Microsoft 代表。 |
 | 组织 | 使用 Microsoft 产品、技术或服务的法人。 |
 | 准备人 | 准备建议的 Microsoft 代表的电子邮件地址。 |
@@ -99,15 +99,15 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 
 ### <a name="your-organization"></a>您的组织
 
-"**你的组织**" 部分显示与之关联的帐单帐户。 帐单帐户信息从现有记帐帐户中提取，或由 Microsoft 代表为你创建。 如果您的组织是另一个组织的关联，则还会看到 "**潜在客户组织**" 部分，其中包含该组织的名称和地址。
+" **你的组织** " 部分显示与之关联的帐单帐户。 帐单帐户信息从现有记帐帐户中提取，或由 Microsoft 代表为你创建。 如果您的组织是另一个组织的关联，则还会看到 " **潜在客户组织** " 部分，其中包含该组织的名称和地址。
 
-如果这是你的组织第一次与 Microsoft 建立商业关系，并且您尚未对 MCA 进行签名，如果**组织**或**潜在客户组织**下的信息不正确，请与代表联系以为你进行更改。 接受 MCA 之后，可以查看和更改 Microsoft 365 管理中心中 "[记帐帐户](https://go.microsoft.com/fwlink/p/?linkid=2084771)" 页上的组织地址和联系人信息。 如果您的组织名称发生更改，请打开服务请求以更新它。 [了解如何打开服务请求](../admin/contact-support-for-business-products.md)
+如果这是你的组织第一次与 Microsoft 建立商业关系，并且您尚未对 MCA 进行签名，如果 **组织** 或 **潜在客户组织** 下的信息不正确，请与代表联系以为你进行更改。 接受 MCA 之后，可以查看和更改 Microsoft 365 管理中心中 " [记帐帐户](https://go.microsoft.com/fwlink/p/?linkid=2084771) " 页上的组织地址和联系人信息。 如果您的组织名称发生更改，请打开服务请求以更新它。 [了解如何打开服务请求](../admin/contact-support-for-business-products.md)
 
 ### <a name="your-information"></a>您的信息
 
-如果你是新客户，请在**你的信息**下方输入你的姓名、电子邮件地址和电话号码，然后选择 "**保存**"。 如果你是现有客户，请验证你的信息是否正确。 若要进行更正，请选择 "**编辑**"，进行必要的更改，然后选择 "**保存**"。
+如果你是新客户，请在 **你的信息**下方输入你的姓名、电子邮件地址和电话号码，然后选择 " **保存**"。 如果你是现有客户，请验证你的信息是否正确。 若要进行更正，请选择 " **编辑**"，进行必要的更改，然后选择 " **保存**"。
 
-准备就绪后，选择 "**继续**" 移动到下一步。
+准备就绪后，选择 " **继续** " 移动到下一步。
 
 ## <a name="step-2-review-proposal"></a>步骤2：审阅建议
 
@@ -119,20 +119,20 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 
 建议包含以下信息：
 
-| 分区 | 说明 |
+| 分区 | Description |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 组织名称 | 为其准备建议的组织的名称。 |
 | 有效期截止日期 | 建议提供的到期日期。 如果你错过了此到期日期，请联系你的 Microsoft 代表，让他们知道你仍然对此建议感兴趣。 |
 | 货币 | 用于计算方案中的项的成本的货币。 |
 | 准备就绪 | 付款帐户名称、地址、联系人电子邮件地址和请求建议的人员的电话号码。 |
 | 准备人 | 准备建议的 Microsoft 代表的电子邮件地址。 |
-| 摘要 | 显示与建议相关联的分类汇总。 如有必要，它还将显示用于计算成本的外汇（FX）率。 |
+| 摘要 | 显示与建议相关联的分类汇总。 如有必要，它还会显示用于计算成本的外地 exchange (FX) 速率。 |
 | 建议行项 | 此部分包含了方案中包括的所有项目的数量、单价和小计。 |
 | 后续步骤 | 本部分指明必须执行的必要操作。 |
 
-若要对 MCA 进行签名，请选择 "**下一步**" 下的按钮。 如果您必须签署补充术语，则链接将转到 DocuSign 网站，您可以按照步骤对文档进行签名。
+若要对 MCA 进行签名，请选择 " **下一步**" 下的按钮。 如果您必须签署补充术语，则链接将转到 DocuSign 网站，您可以按照步骤对文档进行签名。
 
-签署任何必需的协议或补充条款后，选择 "**转到签出**"。
+签署任何必需的协议或补充条款后，选择 " **转到签出**"。
 
 ## <a name="step-3-checkout"></a>步骤3：签出
 
@@ -140,44 +140,44 @@ Microsoft 客户协议（MCA）允许组织购买 Microsoft 产品和服务。 �
 
 ### <a name="sold-to"></a>售出
 
-此部分显示了用于建议的帐单帐户。 如果需要更改任何信息，请选择 "**编辑**" 链接。 您还可以使用 "**编辑**" 链接添加您的组织的税号。 税号必须与 "**销售**人员" 部分中列出的国家/地区相关。 如果你有免税，则必须打开支持票证以请求免税状态。
+此部分显示了用于建议的帐单帐户。 如果需要更改任何信息，请选择 " **编辑** " 链接。 您还可以使用 " **编辑** " 链接添加您的组织的税号。 税号必须与 " **销售** 人员" 部分中列出的国家/地区相关。 如果你有免税，则必须打开支持票证以请求免税状态。
 
-若要了解有关纳税 Id 以及如何申请免税状态的详细信息，请参阅[税务信息](billing-and-payments/tax-information.md)。
+若要了解有关纳税 Id 以及如何申请免税状态的详细信息，请参阅 [税务信息](billing-and-payments/tax-information.md)。
 
 ### <a name="billed-to"></a>付费
 
 此部分显示用于确定发票中包含哪些项目以及如何支付发票的计费配置文件。 每个计费周期都为每个记帐配置文件接收单独的发票。 通过使用支票或电汇转移或 Azure 预付款支付发票费用。 如果你还没有付费配置文件，Microsoft 代表会为你创建一个。 在签出过程中，可以选择不同的记帐配置文件（如果有），更改记帐配置文件的名称，或添加邮政 多种. 您还可以创建新的记帐配置文件。
 
-有关计费配置文件的信息，请参阅[管理计费配置文件](billing-and-payments/manage-billing-profiles.md)。
+有关计费配置文件的信息，请参阅 [管理计费配置文件](billing-and-payments/manage-billing-profiles.md)。
 
 ### <a name="proposal-items-in-this-order"></a>按此顺序的建议项目
 
 此部分显示了建议中包含的所有项目的列表。 此列表可以包含以下一个或多个类别：
 
-- **补充术语**包含贵组织的术语的 MCA 的任何修正列表。 例如，此列表可能包含 HIPAA 或 GDPR 条款。
+- **补充术语** 包含贵组织的术语的 MCA 的任何修正列表。 例如，此列表可能包含 HIPAA 或 GDPR 条款。
 
-- **立即购买**在建议接受工作流结束时您在结帐过程中支付的项目列表。
+- **立即购买** 在建议接受工作流结束时您在结帐过程中支付的项目列表。
 
-- **折扣（适用于未来的费用）** 您作为建议的一部分收到的折扣列表。
+- **折扣 (适用于未来的费用) ** 您作为建议的一部分收到的折扣列表。
 
-- **包含**作为建议程序包的一部分包括的项目列表，无其他费用。 这些项目中的某些项在将来可能会有相关的成本。
+- **包含** 作为建议程序包的一部分包括的项目列表，无其他费用。 这些项目中的某些项在将来可能会有相关的成本。
 
 ### <a name="summary"></a>摘要
 
 此部分显示了支付的项目数、小计、估计的税以及订单的总金额。
 
-若要下订单，请选择 "**下订单**" 或 "**接受协议 & 下订单**"。
+若要下订单，请选择 " **下订单** " 或 " **接受协议 & 下订单**"。
 
 在下订单后，您将收到一条确认消息，并提供后续步骤进行确认。 如果你购买了 Azure 计划，下一步是在 Azure 门户中设置你的帐单帐户。
 
-## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步骤4：设置新的帐单帐户（仅限 Azure 客户）
+## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步骤4：仅 (Azure 客户设置你的新帐单帐户) 
 
-如果你是新客户，并且已购买 Azure 产品作为建议的一部分，则下一步是设置新的帐单帐户。 若要了解如何操作，请参阅[设置 Microsoft 客户协议的帐单帐户](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account)。
+如果你是新客户，并且已购买 Azure 产品作为建议的一部分，则下一步是设置新的帐单帐户。 若要了解如何操作，请参阅 [设置 Microsoft 客户协议的帐单帐户](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果您是具有企业协议的现有 Azure 客户，并且您是第一次对 MCA 进行签名，则下一步是了解协议之间的变化，以及如何使用新的帐单帐户完成任务。 若要了解详细信息，请参阅[在 Microsoft 客户协议的付费帐户中完成企业协议任务](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果您是具有企业协议的现有 Azure 客户，并且您是第一次对 MCA 进行签名，则下一步是了解协议之间的变化，以及如何使用新的帐单帐户完成任务。 若要了解详细信息，请参阅 [在 Microsoft 客户协议的付费帐户中完成企业协议任务](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>了解开票
 
 在您签出并完成订单后，将在24-48 小时内发送一份初始发票。 之后，你每月的第五个会收到大约发票。 月度发票包含上个月的费用。 如果你的帐户有任何信用，则会从你的帐单个人资料的货币点数中扣减，并将其应用到你的发票余额。 应用贷方后剩余余额是余额到期。 从记帐日期起30天内可以支付发票。
 
-发票的 PDF 副本中包含发送支票或电汇传输的的付款说明。 若要查看或下载发票，请参阅[查看帐单或发票](billing-and-payments/view-your-bill-or-invoice.md)。
+发票的 PDF 副本中包含发送支票或电汇传输的的付款说明。 若要查看或下载发票，请参阅 [查看帐单或发票](billing-and-payments/view-your-bill-or-invoice.md)。
