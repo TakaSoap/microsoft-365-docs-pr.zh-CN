@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: 了解如何将 Microsoft 设置为在 Google 域管理自定义域的 DNS 记录。
-ms.openlocfilehash: 65649632b5e28e97909d91ca3e04355375afe3ac
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400649"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646423"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>更改名称服务器以使用 Google 域设置 Microsoft
 
  如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
   
-如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。 （如果你愿意，可以[在 Google 域管理所有 DNS 记录](create-dns-records-at-google-domains.md)。）
+如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。  (如果你愿意，可以 [在 Google 域管理所有 DNS 记录](create-dns-records-at-google-domains.md)。 ) 
   
     
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
@@ -42,23 +42,23 @@ ms.locfileid: "44400649"
 > [!NOTE]
 >  此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-1. 若要开始，请通过[此链接](https://domains.google.com/registrar)转到 Google 域中的 "域" 页面。 You'll be prompted to sign in. To do so:
+1. 若要开始，请通过 [此链接](https://domains.google.com/registrar)转到 Google 域中的 "域" 页面。 You'll be prompted to sign in. To do so:
     
-1. 选择 **"登录"**。
+1. 选择“**登录**”。
     
 2. 输入登录凭据，然后再次选择 **"登录"**。
     
-2. 在 "**域**" 页上的 "**域**" 部分，为要编辑的域选择 "**配置 DNS** "。 
+2. 在“**域**”页面上的“**域**”部分中，为要编辑的域选择“**配置 DNS**”。 
     
-3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. 在“**自定义资源记录**”部分中新记录的框内，键入或复制并粘贴下表中的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**名称** <br/> |**Type** <br/> |**TTL** <br/> |**数据** <br/> |
+|**名称** <br/> |**类型** <br/> |**TTL** <br/> |**数据** <br/> |
 |@  <br/> |TXT  <br/> |1H  <br/> |MS=ms *XXXXXXXX* <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)       <br/>  |
    
 4. 选择“**添加**”。
@@ -86,18 +86,18 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。 这将设置 Microsoft 为您更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，发送到您的域的所有电子邮件（如 rob@ *your_domain。*  com）将在你进行此更改后启动到 Microsoft。 
+> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，发送到您的域的所有电子邮件 (如 rob@ *your_domain。*  在进行此更改后，com) 将会启动到 Microsoft。 
   
 > [!IMPORTANT]
 > The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > 完成本节中的步骤后，应列出的唯一名称服务器为以下四个： 
   
 1. 要开始，请使用[此链接](https://domains.google.com/registrar)转到你在 Google Domains 上的域页面。 系统将会提示您登录。 为此，请执行以下操作：
     
-1. 选择 **"登录"**。
+1. 选择“**登录**”。
     
-2. 输入登录凭据，然后再次选择 **"登录**"。
+2. 输入登录凭据，然后再次选择“**登录**”。
     
-2. 在 "**域**" 页上的 "**域**" 部分，为要编辑的域选择 "**配置 DNS** "。 
+2. 在“**域**”页面上的“**域**”部分中，为要编辑的域选择“**配置 DNS**”。 
     
 3. 在" **域**"页面的" **名称服务器**"部分中，选择" **使用自定义名称服务器**"。
     
@@ -124,17 +124,17 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
    ![Google-域-BP-委派-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. 选择 " **+" （添加）** 控件以创建一个空行。 
+2. 选择 " **+ (添加) ** " 控件以创建一个空行。 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. 添加其他三个名称服务器记录。
     
-    在 "**使用自定义名称服务器**" 部分，使用表中下一行的值创建记录，然后选择 " **+" （添加）** 控件以添加另一行。 
+    在 " **使用自定义名称服务器** " 部分，使用表中下一行的值创建记录，然后选择 " **+ (添加) ** " 控件以添加另一行。 
     
     重复该过程，直到创建完全部 4 条名称服务器记录。
     
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
@@ -143,10 +143,10 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果已列出名称服务器
 
-1. 如果列出了任何其他名称服务器，请选择 "**编辑**"。
+1. 如果列出了任何其他名称服务器，请选择 " **编辑**"。
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是说，仅删除任何*未*命名为**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的当前名称服务器。） 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是说，仅删除任何  *未*  命名的 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的当前名称服务器。 )  
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -165,17 +165,17 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
    ![Google-域-BP-委派-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. 选择 " **+" （添加）** 控件以创建一个空行。 
+4. 选择 " **+ (添加) ** " 控件以创建一个空行。 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. 添加其他两个名称服务器记录。
     
-    在 "**使用自定义名称服务器**" 部分，使用表中下一行的值创建记录，然后选择 " **+" （添加）** 控件以添加另一行。 
+    在 " **使用自定义名称服务器** " 部分，使用表中下一行的值创建记录，然后选择 " **+ (添加) ** " 控件以添加另一行。 
     
     重复该过程，直到创建完全部 4 条名称服务器记录。
     
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   

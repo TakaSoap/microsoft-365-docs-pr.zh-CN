@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: 了解如何验证您的域，并在 easyDNS for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400228"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645547"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>在 easyDNS 处为 Microsoft 创建 DNS 记录
 
@@ -39,19 +39,19 @@ ms.locfileid: "44400228"
 
 1. 转到 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 并使用你的凭据登录。 
     
-2. 在 "**所有域**" 标题下，选择 " **dns"。**
+2. 在 " **所有域** " 标题下，选择 " **dns"。**
     
-3. 在 " **TXT 记录**" 标题下，选择 "编辑" 按钮（扳手图标）。 
+3. 在 " **TXT 记录** " 标题下，选择 "编辑" 按钮 (扳手图标) 。 
     
 4. 在 "文本" 字段中输入以下记录：
     
     |**Host**|**Text**|
     |:-----|:-----|
-    |@  <br/> |MS = msXXXXXXXX （在管理中心域页面上使用提供给你的值）  <br/> |
+    |@  <br/> |MS = msXXXXXXXX (在 "管理中心" 的 "域" 页面上使用提供给您的值)   <br/> |
    
-5. 选择 "**下一步**"。 
+5. 选择 " **下一步**"。 
     
-6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
+6. 请进行检查以确保记录正确，然后选择 " **确认**"。 
     
 7. 在继续之前，请等待几分钟，以便您刚刚创建的记录可以通过 Internet 传播并由 Microsoft 检测到。
     
@@ -61,7 +61,7 @@ ms.locfileid: "44400228"
     
 10. 在“**域**”页面上，选择要验证的域。 
     
-11. 在 "**设置**" 页上，选择 "**启动安装程序"。**
+11. 在 " **设置** " 页上，选择 " **启动安装程序"。**
     
 12. 在“**验证域**”页面上，选择“**验证**”。 
     
@@ -69,52 +69,52 @@ ms.locfileid: "44400228"
 
 1. 转到 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 并使用你的凭据登录。 
     
-2. 在 "**所有域**" 标题下，选择 " **dns"。**
+2. 在 " **所有域** " 标题下，选择 " **dns"。**
     
-3. 在 " **MX 记录**" 标题下，选择 "编辑" 按钮（扳手图标）。 
+3. 在 " **MX 记录** " 标题下，选择 "编辑" 按钮 (扳手图标) 。 
     
 4. 在 "文本" 字段中输入以下记录：
     
     |**区域邮件**|**邮件服务器**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<domain-key\>. mail.protection.outlook.com （ \<domain-key\> 从管理中心域页面获取你的值）  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>. mail.protection.outlook.com (\<domain-key\> 从管理中心域页面获取你的值)   <br/> |0  <br/> |
    
 2. 如果要保存其他 MX 记录以进行备份，请将它们复制到某处。 在继续之前，请在此处删除所有其他 MX 记录。
     
-5. 选择 "**下一步**"。 
+5. 选择 " **下一步**"。 
     
-6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
+6. 请进行检查以确保记录正确，然后选择 " **确认**"。 
     
 ## <a name="add-the-required-cname-records"></a>添加所需的 CNAME 记录
 
 1. 转到 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 并使用你的凭据登录。 
     
-2. 在 "**所有域**" 标题下，选择 " **dns"。**
+2. 在 " **所有域** " 标题下，选择 " **dns"。**
     
-3. 在 " **CNAME/别名记录**" 标题下，选择 "编辑" 按钮（扳手图标）。 
+3. 在 " **CNAME/别名记录** " 标题下，选择 "编辑" 按钮 (扳手图标) 。 
     
 4. 在 "文本" 字段中输入以下记录：
 
 
-    |**HOST**|**Address （必须以 "." 结尾）**|
+    |**HOST**|**Address (必须以 "." 结尾。) **|
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |
-    |sip  <br/> |sipdir.online.lync.com。  <br/> |
-    |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> |
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> |
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> |
+    |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |
+    |sip  <br/> |sipdir.online.lync.com.  <br/> |
+    |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> |
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |
    
-5. 选择 "**下一步**"。 
+5. 选择 " **下一步**"。 
     
-6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
+6. 请进行检查以确保记录正确，然后选择 " **确认**"。 
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 
 1. 转到 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 并使用你的凭据登录。 
     
-2. 在 "**所有域**" 标题下，选择 " **dns"。**
+2. 在 " **所有域** " 标题下，选择 " **dns"。**
     
-3. 在 " **TXT 记录**" 标题下，选择 "编辑" 按钮（扳手图标）。 
+3. 在 " **TXT 记录** " 标题下，选择 "编辑" 按钮 (扳手图标) 。 
     
 4. 在 "文本" 字段中输入以下记录：
     
@@ -122,9 +122,9 @@ ms.locfileid: "44400228"
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
-5. 选择 "**下一步**"。 
+5. 选择 " **下一步**"。 
     
-6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
+6. 请进行检查以确保记录正确，然后选择 " **确认**"。 
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 
@@ -132,19 +132,19 @@ ms.locfileid: "44400228"
   
 1. 转到 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 并使用你的凭据登录。 
     
-2. 在 "**所有域**" 标题下，选择 " **dns"。**
+2. 在 " **所有域** " 标题下，选择 " **dns"。**
     
-3. 在 " **SRV 记录**" 标题下，选择 "编辑" 按钮（扳手图标）。 
+3. 在 " **SRV 记录** " 标题下，选择 "编辑" 按钮 (扳手图标) 。 
     
 4. 在 "文本" 字段中输入以下记录：
     
-    |**服务台**|**协议**|**HOST**|**PRI**|**WGT**|**端口**|**目标（必须以 "." 结尾）**|**TTL**|
+    |**服务台**|**协议**|**HOST**|**PRI**|**WGT**|**端口**|**目标 (必须以 "." 结尾。) **|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> |1800  <br/> |
-    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
+    |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
    
-5. 选择 "**下一步**"。 
+5. 选择 " **下一步**"。 
     
-6. 请进行检查以确保记录正确，然后选择 "**确认**"。 
+6. 请进行检查以确保记录正确，然后选择 " **确认**"。 
     
 

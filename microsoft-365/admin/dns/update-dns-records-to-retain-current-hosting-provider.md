@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,26 +20,26 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
-description: 了解如何将流量路由到 Microsoft 外部托管的现有公共网站（如果将 Microsoft 设置为管理自定义域的 DNS 记录）。
-ms.openlocfilehash: 9a7090eef3ce7d1c67839e7320f31d7bd32aa6a7
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+description: 如果你已将 Microsoft 设置为管理自定义域的 DNS 记录，则了解如何将流量路由到 Microsoft 外部的现有公共网站。
+ms.openlocfilehash: 5d2bf23d4052815fae210d0fdf6635288ff46b57
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814394"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645559"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>更新 DNS 记录以便利用当前的托管提供商继续托管网站
 
- **如果在 DNS 托管提供商处管理域的 Microsoft 记录，** 您不必担心本主题中的步骤。 您的网站将保留在原处，供用户继续正常访问。 
+ **如果您在 DNS 托管提供程序中管理您的域的 Microsoft 记录**，则无需担心本主题中的步骤。 您的网站将保留在原处，供用户继续正常访问。 
   
- **如果 Microsoft 管理 DNS 记录，则**将流量路由到 Microsoft 外部托管的现有公共网站，则将域添加到 Microsoft 后，执行以下操作： 
+ **如果 microsoft 管理您的 DNS 记录**，若要将流量路由到 microsoft 外部的现有公共网站，在将您的域添加到 microsoft 之后，请执行以下操作： 
   
-## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中更新 DNS 记录
+## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>更新 Microsoft 365 管理中心中的 DNS 记录
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
-2. 在'**域**'页面上，选择域，然后选择 **'DNS 记录'。**
+2. 在 " **域** " 页上，选择域，然后选择 " **DNS 记录**"。
 
-3. 在 **"DNS 设置"** 下，选择 **"自定义记录"。**
+3. 在 " **DNS 设置**" 下，选择 " **自定义记录**"。
 
 4. 选择" **+ 新增自定义记录** "，然后输入以下信息： 
     
@@ -67,7 +67,7 @@ ms.locfileid: "46814394"
     
 最后，请执行下列操作：
   
-[将你的域的 NS 记录更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) 为指向 Microsoft。 
+将[您的域的 NS 记录更新](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)为指向 Microsoft。 
   
-当这些 NS 记录更新为指向 Microsoft 时，您的域即已设置成功。 电子邮件将路由至 Microsoft，到您的网站地址的流量将继续转到您的当前网站主机。
+当已将 NS 记录更新为指向 Microsoft 时，您的域将全部设置。 电子邮件将路由到 Microsoft，并且指向你的网站地址的流量将继续转到你的当前网站主机。
  

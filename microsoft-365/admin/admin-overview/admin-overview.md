@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 了解 Microsoft 365 管理中心：如何登录，你的管理员是谁，以及观看有关它的视频介绍。
-ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6db1ea88d9a9aeb003f16c746a8fe0a5b4d87a42
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386933"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646591"
 ---
 # <a name="admin-center-overview"></a>管理中心概述 
 
   
-当你购买[microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/?linkid=856886)或[microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)时，我们为你提供具有管理员权限的特殊帐户。 此帐户称为管理员帐户。
+当你购买 [microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/?linkid=856886) 或 [microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)时，我们为你提供具有管理员权限的特殊帐户。 此帐户称为管理员帐户。
   
 使用此帐户，您可以访问 Microsoft 365 管理中心，以管理您的业务：添加用户、管理订阅、重置密码等。 试一试！
   

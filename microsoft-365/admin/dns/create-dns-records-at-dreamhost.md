@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: 了解如何验证您的域，并在 Dreamhost for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 4b321138892cb4a7b5f67c37ed66f3baf0f6c45a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400505"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646195"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>在 Dreamhost 处为 Microsoft 创建 DNS 记录
 
@@ -48,15 +48,15 @@ ms.locfileid: "44400505"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-1. 若要开始，请使用[此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
+1. 若要开始，请使用 [此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
     
     ![Dreamhost-配置-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. 在**仪表板**页面上，选择 "**域**"，然后**管理域**。
+2. 在 **仪表板** 页面上，选择 " **域**"，然后 **管理域**。
     
     ![Dreamhost-配置-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. 在 "**管理域**" 页上的 "**域**" 部分，为要编辑的域选择 " **DNS** "。 
+3. 在 " **管理域** " 页上的 " **域** " 部分，为要编辑的域选择 " **DNS** "。 
     
     ![Dreamhost-配置-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
@@ -64,15 +64,15 @@ ms.locfileid: "44400505"
     
     (You may have to scroll down.)
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**名称**|**Type**|**值**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |（此字段是可选的。）  <br/> |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          | (此字段是可选的。 )   <br/> |
    
    ![Dreamhost-验证-1-1](../../media/ed4a7d43-eeeb-4ec8-849c-37f81315dc69.png)
   
-5. 立即选择 "**添加记录"！**
+5. 立即选择 " **添加记录"！**
     
     ![Dreamhost-验证-1-2](../../media/5b89c89b-3a8e-4624-895a-86f3cc4638f6.png)
   
@@ -107,27 +107,27 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
+1. 若要开始，请使用 [此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
     
     ![Dreamhost-配置-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. 在**仪表板**页面上，依次选择 "**邮件**" 和 "**自定义 MX**"。
+2. 在 **仪表板** 页面上，依次选择 " **邮件**" 和 " **自定义 MX**"。
     
     ![Dreamhost-配置-2-1](../../media/58478679-4018-49cc-9d83-371dc5fa4a22.png)
   
-3. 在 "**管理邮件传递**" 部分的 "**操作**" 列中，为要编辑的域选择 "**编辑**"。 
+3. 在 " **管理邮件传递** " 部分的 " **操作** " 列中，为要编辑的域选择 " **编辑** "。 
     
     ![Dreamhost-配置-2-2](../../media/6eed0be2-6477-4f49-9f90-39e190499a53.png)
   
-4. 在 "**自定义 MX 记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的以下值。 
+4. 在 " **自定义 MX 记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的以下值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    （如果存在任何其他现有 MX 记录，则将这些记录标记为 "删除"。）
+     (如果存在任何其他现有 MX 记录，请标记要删除的那些记录。 ) 
     
-    |**MX 记录（必需）**|
+    |**MX 记录 (必需的) **|
     |:-----|
-    |0 *\<domain-key\>* . mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> 0 是 MX 优先级值。 将其添加到 MX 值的开头，使用一个空格将其与其余部分隔开。  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Dreamhost-配置-2-3](../../media/90da1816-e186-4016-ab22-7962f8b86add.png)
   
@@ -135,7 +135,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Dreamhost-配置-2-4](../../media/3221c767-83d3-4f30-9d08-dc998772d2a3.png)
   
-6. 如果存在任何其他现有 MX 记录，请通过选择相应的条目，然后按键盘上的**delete**键来删除每个记录。 
+6. 如果存在任何其他现有 MX 记录，请通过选择相应的条目，然后按键盘上的 **delete** 键来删除每个记录。 
     
     ![Dreamhost-配置-2-5](../../media/1827733c-3609-4b0f-bba1-531ab090da91.png)
   
@@ -149,35 +149,35 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
+1. 若要开始，请使用 [此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
     
     ![Dreamhost-配置-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. 在**仪表板**页面上，选择 "**域**"，然后**管理域**。
+2. 在 **仪表板** 页面上，选择 " **域**"，然后 **管理域**。
     
     ![Dreamhost-配置-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. 在 "**管理域**" 页上的 "**域**" 部分，为要编辑的域选择 " **DNS** "。 
+3. 在 " **管理域** " 页上的 " **域** " 部分，为要编辑的域选择 " **DNS** "。 
     
     ![Dreamhost-配置-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
-4. 在 "**添加自定义 DNS 记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
+4. 在 " **添加自定义 DNS 记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**名称**|**Type**|**值**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |（此字段是可选的。）  <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此字段是可选的。）  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此字段是可选的。）  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |（此字段是可选的。）  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |（此字段是可选的。）  <br/> |
+    |自动发现  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
    
     ![Dreamhost-配置-3-1](../../media/0c4cc587-ea24-47f2-8dc6-a35735b250e6.png)
   
-5. 立即选择 "**添加记录"！**
+5. 立即选择 " **添加记录"！**
     
     ![Dreamhost-配置-3-2](../../media/b5d4f939-de6d-4d1f-a20a-4eb5fe715281.png)
   
@@ -188,35 +188,35 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。
   
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
+1. 若要开始，请使用 [此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
     
     ![Dreamhost-配置-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. 在**仪表板**页面上，选择 "**域**"，然后**管理域**。
+2. 在 **仪表板** 页面上，选择 " **域**"，然后 **管理域**。
     
     ![Dreamhost-配置-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. 在 "**管理域**" 页上的 "**域**" 部分，为要编辑的域选择 " **DNS** "。 
+3. 在 " **管理域** " 页上的 " **域** " 部分，为要编辑的域选择 " **DNS** "。 
     
     ![Dreamhost-配置-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
-4. 在 "**添加自定义 DNS 记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
+4. 在 " **添加自定义 DNS 记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**名称**|**Type**|**值**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |（此字段是可选的。）  <br/> |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           | (此字段是可选的。 )   <br/> |
    
    ![Dreamhost-配置-4-1](../../media/cbc4bbca-bdbc-4dc9-b1b7-b55491eb1e53.png)
   
-5. 立即选择 "**添加记录"！**
+5. 立即选择 " **添加记录"！**
     
     ![Dreamhost-配置-4-2](../../media/2bd7cae8-1fbc-4407-8dfa-06ce37c586c0.png)
   
@@ -228,32 +228,32 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
+1. 若要开始，请使用 [此链接](https://panel.dreamhost.com/)转到 DreamHost 上的 "域" 页面。 系统将提示您登录。
     
     ![Dreamhost-配置-1-1](../../media/1919b810-b6ba-4e29-a774-de1e7c67d078.png)
   
-2. 在**仪表板**页面上，选择 "**域**"，然后**管理域**。
+2. 在 **仪表板** 页面上，选择 " **域**"，然后 **管理域**。
     
     ![Dreamhost-配置-1-2](../../media/ab05c16a-79f6-491f-ad07-9a2e6674671d.png)
   
-3. 在 "**管理域**" 页上的 "**域**" 部分，为要编辑的域选择 " **DNS** "。 
+3. 在 " **管理域** " 页上的 " **域** " 部分，为要编辑的域选择 " **DNS** "。 
     
     ![Dreamhost-配置-1-3](../../media/1a8723a0-54bc-40ff-bc30-5fc3e8cd219b.png)
   
-4. 在 "**添加自定义 DNS 记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
+4. 在 " **添加自定义 DNS 记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**名称**|**Type**|**值**|**Comment**|
     |:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |（此字段是可选的。）  <br/> |
-    |_sipfederationtls _tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |（此字段是可选的。）  <br/> |
+    |_sip._tls  <br/> |SRV  <br/> |100 1 443  <br/> sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
+    |_sipfederationtls._tcp  <br/> |SRV  <br/> |100 1 5061  <br/> sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> | (此字段是可选的。 )   <br/> |
    
     ![Dreamhost-配置-5-1](../../media/934eb79f-3617-4b72-802c-c42c7d165283.png)
   
-5. 选择 "**立即添加记录"！**。
+5. 选择 " **立即添加记录"！**。
     
     ![Dreamhost-配置-5-2](../../media/015bc73c-8f88-49ce-87f9-e5a6ea3e10a8.png)
   

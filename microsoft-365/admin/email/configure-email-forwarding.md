@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置向一个或多个电子邮件帐户转发电子邮件。
-ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780249"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645523"
 ---
 # <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -47,9 +47,9 @@ ms.locfileid: "44780249"
 
 - 一旦设置了电子邮件转发，只有发送到*发件人*邮箱的**新**电子邮件才会 fowarded。 
     
-- 电子邮件转发要求 "*发件人*" 帐户具有许可证。 如果你正在设置电子邮件转发，因为用户已离开你的组织，另一种方法是[将其邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 通过这种方式，多个人可以对其进行访问。 但是，共享邮箱不能超过50GB。 
+- 电子邮件转发要求 "  *发件人*  " 帐户具有许可证。 如果你正在设置电子邮件转发，因为用户已离开你的组织，另一种方法是 [将其邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 通过这种方式，多个人可以对其进行访问。 但是，共享邮箱不能超过50GB。 
     
-您必须是 Microsoft 365 中的 Exchange 管理员或全局管理员才能执行这些步骤。 有关详细信息，请参阅[有关管理员角色](../add-users/about-admin-roles.md)的主题。
+您必须是 Microsoft 365 中的 Exchange 管理员或全局管理员才能执行这些步骤。 有关详细信息，请参阅 [有关管理员角色](../add-users/about-admin-roles.md)的主题。
 
 ::: moniker range="o365-worldwide"
 
@@ -57,13 +57,13 @@ ms.locfileid: "44780249"
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
  
-3. 在 "**邮件**" 选项卡上，选择 "**管理电子邮件转发**"。 
+3. 在 " **邮件** " 选项卡上，选择 " **管理电子邮件转发**"。 
   
-4. 在 "电子邮件转发" 页面上，选择 "**转发所有发送到此邮箱的电子邮件**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存更改**”。
+4. 在 "电子邮件转发" 页面上，选择 " **转发所有发送到此邮箱的电子邮件**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存更改**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅 [使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
-     或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
+     或者，在 "管理中心" 中， [创建一个通讯组](../setup/create-distribution-lists.md)， [向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
 5. 请勿删除要转发的电子邮件的用户帐户或删除其许可证！  如果这样做，电子邮件转发将停止。 
 
@@ -75,13 +75,13 @@ ms.locfileid: "44780249"
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
 
-3. 展开 "**邮件设置**"，然后在 "**电子邮件转发**" 部分，选择 "**编辑**"。
+3. 展开 " **邮件设置**"，然后在 " **电子邮件转发** " 部分，选择 " **编辑**"。
 
 4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅 [使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
-     或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
+     或者，在 "管理中心" 中， [创建一个通讯组](../setup/create-distribution-lists.md)， [向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
 5. 请勿删除要转发的电子邮件的用户帐户或删除其许可证！  如果这样做，电子邮件转发将停止。    
 
@@ -93,13 +93,13 @@ ms.locfileid: "44780249"
     
 2. 选择要将其电子邮件转发到的用户的名称，以打开 "属性" 页。 
 
-3. 展开 "**邮件设置**"，然后在 "**电子邮件转发**" 部分，选择 "**编辑**"。
+3. 展开 " **邮件设置**"，然后在 " **电子邮件转发** " 部分，选择 " **编辑**"。
 
 4. 在 "电子邮件转发" 页面上，将 "切换到" 设置为 **"开**"，输入转发地址，然后选择是否要保留转发的电子邮件的副本。 如果看不到此选项，请确保将许可证分配给用户帐户。 选择“**保存**”。
     
-    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅[使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要转发到多个电子邮件地址**，您可以要求用户在 Outlook 中设置一条规则，以转发到地址。 若要了解详细信息，请参阅 [使用规则自动转发邮件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
-     或者，在 "管理中心" 中，[创建一个通讯组](../setup/create-distribution-lists.md)，[向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
+     或者，在 "管理中心" 中， [创建一个通讯组](../setup/create-distribution-lists.md)， [向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
 5. 请勿删除要转发的电子邮件的用户帐户或删除其许可证！  如果这样做，电子邮件转发将停止。 
 

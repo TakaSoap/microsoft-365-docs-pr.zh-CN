@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: '了解如何查找为 Microsoft 365 创建 DNS 记录所需的值/信息。 '
-ms.openlocfilehash: fddd1180f2dd80ffeec2aeec49ed821055dd5f15
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399904"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645307"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集创建 DNS 记录所需的信息
 
@@ -39,51 +39,51 @@ ms.locfileid: "44399904"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在 Microsoft 365 管理中心，转到 " **安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a> " 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 " **安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a> " 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 " **安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a> " 页。
 
 ::: moniker-end
     
-2. 在 "**域**" 页上，选择您的域，然后选择 "**启动安装程序**"。 你将返回域设置向导，查看需要添加的特定值。
+2. 在 " **域** " 页上，选择您的域，然后选择 " **启动安装程序**"。 你将返回域设置向导，查看需要添加的特定值。
     
-3. 在 "**验证域**" 页上，选择 "**添加 TXT 记录**"，然后选择 "**下一步**"。
+3. 在 " **验证域** " 页上，选择 " **添加 TXT 记录**"，然后选择 " **下一步**"。
     
-4. 复制所示的**TXT 值**。 其外观如下所示： **MS = msXXXXXXXX**。 
+4. 复制所示的 **TXT 值** 。 其外观如下所示： **MS = msXXXXXXXX**。 
     
-5. 转到 "[在任何 DNS 托管提供程序中创建 dns 记录](create-dns-records-at-any-dns-hosting-provider.md)"，然后从注册机构列表中选择您的 dns 主机，以查看分步说明。
+5. 转到 " [在任何 DNS 托管提供程序中创建 dns 记录](create-dns-records-at-any-dns-hosting-provider.md)"，然后从注册机构列表中选择您的 dns 主机，以查看分步说明。
     
-6. 按照在 DNS 主机上创建 TXT 记录（或 MX 记录）的步骤操作，然后验证 Microsoft 365 中的域是否返回。
+6. 按照在 DNS 主机上创建 TXT 记录 (或 MX 记录) 的步骤操作，然后在 Microsoft 365 中重新验证该域。
 
-7. 在 Microsoft 365 中验证域后，从 DNS 主机中删除 TXT 记录（或 MX 记录）。
+7. 在 Microsoft 365 中验证域后，从 DNS 主机中删除 TXT 记录 (或 MX 记录) 。
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>步骤2：查找电子邮件和其他的 MX 记录值
 
 ::: moniker range="o365-worldwide"
 
-1. 在 Microsoft 365 管理中心，转到 "**安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>" 页。
+1. 在 Microsoft 365 管理中心，转到 " **安装** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a> " 页。
 
 ::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 " **安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a> " 页。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心中，转到 "**安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>" 页。
+1. 在管理中心中，转到 " **安装** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a> " 页。
 
 ::: moniker-end
     
@@ -95,6 +95,6 @@ ms.locfileid: "44399904"
     
     页面上列出的 DNS 记录组取决于" **域用途**"下列出的选项。
     
-4. 转到 "[在任何 DNS 托管提供程序中创建 dns 记录](create-dns-records-at-any-dns-hosting-provider.md)"，然后从注册机构列表中选择您的 dns 主机，以查看有关在该 DNS 主机的网站上添加记录的分步说明。
+4. 转到 " [在任何 DNS 托管提供程序中创建 dns 记录](create-dns-records-at-any-dns-hosting-provider.md)"，然后从注册机构列表中选择您的 dns 主机，以查看有关在该 DNS 主机的网站上添加记录的分步说明。
     
 5. 按照在您的 DNS 主机上创建记录的步骤执行操作。

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 了解如何将数据移动到新的业务标识。
-ms.openlocfilehash: ebbb680baf36386d7f2dafae61fb262bf0220e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779997"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645031"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>将电子邮件和数据移动到 Microsoft 365 商业标准
 
-当您升级到 Microsoft 365 商业标准版时，我们将为你提供一种全新的*业务标识*。 为业务数据提供新的电子邮件帐户和单独的 OneDrive 帐户。 
+当您升级到 Microsoft 365 商业标准版时，我们将为你提供一种全新的  *业务标识*。 为业务数据提供新的电子邮件帐户和单独的 OneDrive 帐户。 
   
 若要将一些个人数据移到新的企业标识，请按照下面的说明进行操作。
   
@@ -45,16 +45,16 @@ ms.locfileid: "44779997"
 3. 将您想要用于 Microsoft 365 for business 的文件复制到您在步骤1中创建的本地文件夹中。
     
  **将 OneDrive 文件导入到 Microsoft 365 for business**
-1. 转到[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，并使用 Microsoft 365 应用程序登录商业用户名和密码。 
+1. 转到 [admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，并使用 Microsoft 365 应用程序登录商业用户名和密码。 
     
 2. 在左上角选择" **应用启动器**"图标，然后选择" **OneDrive**"。
   
     > [!TIP]
-    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果出现这种情况，请在 "**欢迎使用 OneDrive for** business" 页上选择 "**下一步**"。 设置 OneDrive 后，选择你的**onedrive 已准备就绪**。 
+    > 第一次打开 OneDrive for Business 时，需要设置 OneDrive。 如果出现这种情况，请在 " **欢迎使用 OneDrive for** business" 页上选择 " **下一步**"。 设置 OneDrive 后，选择你的 **onedrive 已准备就绪**。 
   
-3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择 "**新建** \> **文件夹**"。
+3. 你将转到一个空的 OneDrive 文件夹。 如果要创建子文件夹，请选择 " **新建** \> **文件夹**"。
 
-4. 选择 "**上传**"，从你复制 OneDrive 文件的硬盘驱动器复制文件。 
+4. 选择 " **上传** "，从你复制 OneDrive 文件的硬盘驱动器复制文件。 
   
     > [!NOTE]
     >  可以一次上传一个文件，也可以同时上传多个文件（如特定文件夹中的所有文件），但不能将文件夹复制到 OneDrive for Business。而需要在 OneDrive for Business 上创建所需的文件夹结构。 >  如果想将文件复制到步骤 4 中创建的文件夹，请先打开该文件夹，然后再上传文件。否则会将文件上传到根文件夹。上传文件之后，你也可以在 OneDrive for Business 中的各文件夹之间移动文件。 
@@ -74,7 +74,7 @@ ms.locfileid: "44779997"
  **从 Outlook 数据文件导入信息**
 1. 这会将存储在 PST 文件中的电子邮件、日历、任务和联系人合并到 Microsoft 365 商业版电子邮件帐户中。
     
-2. 若要将存储在 PST 文件中的信息导入到 Microsoft 365 商业电子邮件帐户，请让每个用户在[Outlook .pst 文件中完成导入电子邮件、联系人和日历](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)中的步骤。
+2. 若要将存储在 PST 文件中的信息导入到 Microsoft 365 商业电子邮件帐户，请让每个用户在 [Outlook .pst 文件中完成导入电子邮件、联系人和日历](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)中的步骤。
     
 ---
 

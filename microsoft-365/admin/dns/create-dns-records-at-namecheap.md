@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 了解如何验证您的域，并在 Namecheap for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 25b40dad0eb47c190df9496d5df4f061d8fdba6d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400384"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645919"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>在 Namecheap 处为 Microsoft 创建 DNS 记录
 
@@ -49,27 +49,27 @@ ms.locfileid: "44400384"
   
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
+1. 若要开始，请使用 [此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
     
     ![Namecheap-配置-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 "**登录**" 页面上的 "**帐户**" 下，从下拉列表中选择 "**域列表**"。 
+2. 在 " **登录** " 页面上的 " **帐户**" 下，从下拉列表中选择 " **域列表** "。 
     
     ![Namecheap-配置-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 "**域列表**" 页上，找到要编辑的域的名称，然后选择 "**管理**"。
+3. 在 " **域列表** " 页上，找到要编辑的域的名称，然后选择 " **管理**"。
     
     ![Namecheap-配置-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 选择 "**高级 DNS**"。
+4. 选择 " **高级 DNS**"。
     
     ![Namecheap-配置-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 "**主机记录**" 部分，选择 "**添加新记录**"。
+5. 在 " **主机记录** " 部分，选择 " **添加新记录**"。
     
     ![Namecheap-配置-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 "**类型**" 下拉中，选择 " **TXT 记录**"。
+6. 在 " **类型** " 下拉中，选择 " **TXT 记录**"。
     
     > [!NOTE]
     > 当您选择 "**添加新记录**" 时，"类型" 下拉**类型**将自动显示。 
@@ -78,7 +78,7 @@ ms.locfileid: "44400384"
   
 7. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    （从下拉列表中选择 " **TTL** " 值。） 
+     (从下拉列表中选择 **TTL** 值。 )  
     
     |**类型**|**主机**|**值**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ ms.locfileid: "44400384"
        
     ![Namecheap-验证-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. 选择 "**保存更改**" （复选标记）控件。 
+8. 选中 " **保存更改** (复选标记) 控件。 
     
     ![Namecheap-验证-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -119,49 +119,49 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
+1. 若要开始，请使用 [此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
     
     ![Namecheap-配置-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 "**登录**" 页面上的 "**帐户**" 下，从下拉列表中选择 "**域列表**"。 
+2. 在 " **登录** " 页面上的 " **帐户**" 下，从下拉列表中选择 " **域列表** "。 
     
     ![Namecheap-配置-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 "**域列表**" 页上，找到要编辑的域的名称，然后选择 "**管理**"。
+3. 在 " **域列表** " 页上，找到要编辑的域的名称，然后选择 " **管理**"。
     
     ![Namecheap-配置-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 选择 "**高级 DNS**"。
+4. 选择 " **高级 DNS**"。
     
     ![Namecheap-配置-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
 5. 在 "**邮件设置**" 部分，从 "**电子邮件转发**" 下拉列表中选择 "**自定义 MX** "。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     ![Namecheap-配置-2-1](../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png)
   
-6. 选择 "**添加新记录**"。
+6. 选择 " **添加新记录**"。
     
     ![Namecheap-配置-2-2-1](../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
   
 7. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    （"**优先级**" 框是 "**值**" 框右侧的未命名框。 从下拉列表中选择 " **TTL** " 值。 
+     (" **优先级** " 框是 " **值** " 框右侧的未命名框。 从下拉列表中选择 " **TTL** " 值。 )  
     
     |**类型**|**主机**|**值**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分钟  <br/> |
+    |MX 记录  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分钟  <br/> |
        
     ![Namecheap-配置-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
-8. 选择 "**保存更改**" （复选标记）控件。 
+8. 选中 " **保存更改** (复选标记) 控件。 
     
     ![Namecheap-配置-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. 如果有任何其他 MX 记录，请使用以下两步过程删除每个：
     
-    首先，选择要删除的记录的 "**删除" 图标**（垃圾桶）。 
+    首先，选择 " **删除" 图标** (垃圾桶对要删除的记录) 。 
     
     ![Namecheap-配置-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
@@ -177,27 +177,27 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
+1. 若要开始，请使用 [此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
     
     ![Namecheap-配置-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 "**登录**" 页面上的 "**帐户**" 下，从下拉列表中选择 "**域列表**"。 
+2. 在 " **登录** " 页面上的 " **帐户**" 下，从下拉列表中选择 " **域列表** "。 
     
     ![Namecheap-配置-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 "**域列表**" 页上，找到要编辑的域的名称，然后选择 "**管理**"。
+3. 在 " **域列表** " 页上，找到要编辑的域的名称，然后选择 " **管理**"。
     
     ![Namecheap-配置-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 选择 "**高级 DNS**"。
+4. 选择 " **高级 DNS**"。
     
     ![Namecheap-配置-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 "**主机记录**" 部分，选择 "**添加新记录**"。
+5. 在 " **主机记录** " 部分，选择 " **添加新记录**"。
     
     ![Namecheap-配置-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 "**类型**" 下拉菜单中，选择 " **CNAME 记录**"。
+6. 在 " **类型** " 下拉菜单中，选择 " **CNAME 记录**"。
     
     > [!NOTE]
     > 当您选择 "**添加新记录**" 时，"类型" 下拉**类型**将自动显示。 
@@ -208,15 +208,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**主机**|**值**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |
        
     ![Namecheap-配置-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
-8. 选择 "**保存更改**" （复选标记）控件。 
+8. 选中 " **保存更改** (复选标记) 控件。 
     
     ![Namecheap-配置-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
@@ -227,29 +227,29 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 
 
 按照下面的步骤操作。
   
-1. 若要开始，请使用[此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
+1. 若要开始，请使用 [此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 系统将提示您登录并继续。
     
-2. 在 "**登录**" 页面上的 "**帐户**" 下，从下拉列表中选择 "**域列表**"。 
+2. 在 " **登录** " 页面上的 " **帐户**" 下，从下拉列表中选择 " **域列表** "。 
     
     ![Namecheap-配置-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 "**域列表**" 页上，找到要编辑的域的名称，然后选择 "**管理**"。
+3. 在 " **域列表** " 页上，找到要编辑的域的名称，然后选择 " **管理**"。
     
     ![Namecheap-配置-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 选择 "**高级 DNS**"。
+4. 选择 " **高级 DNS**"。
     
     ![Namecheap-配置-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 "**主机记录**" 部分，选择 "**添加新记录**"。
+5. 在 " **主机记录** " 部分，选择 " **添加新记录**"。
     
     ![Namecheap-配置-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 "**类型**" 下拉中，选择 " **TXT 记录**"。
+6. 在 " **类型** " 下拉中，选择 " **TXT 记录**"。
     
     > [!NOTE]
     > 当您选择 "**添加新记录**" 时，"类型" 下拉**类型**将自动显示。 
@@ -258,42 +258,42 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 在新记录的框中，键入或复制并粘贴下表中的以下值。
     
-    （从下拉列表中选择 " **TTL** " 值。） 
+     (从下拉列表中选择 **TTL** 值。 )  
     
     |**类型**|**主机**|**值**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |30分钟  <br/> |
+    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |30分钟  <br/> |
        
     ![Namecheap-配置-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
-8. 选择 "**保存更改**" （复选标记）控件。 
+8. 选中 " **保存更改** (复选标记) 控件。 
     
     ![Namecheap-配置-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
 
-1. 若要开始，请使用[此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 You'll be prompted to sign in.
+1. 若要开始，请使用 [此链接](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)转到 Namecheap 上的 "域" 页面。 You'll be prompted to sign in.
     
     ![Namecheap-配置-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 "**登录**" 页面上的 "**帐户**" 下，从下拉列表中选择 "**域列表**"。 
+2. 在 " **登录** " 页面上的 " **帐户**" 下，从下拉列表中选择 " **域列表** "。 
     
     ![Namecheap-配置-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 "**域列表**" 页上，找到要编辑的域的名称，然后选择 "**管理**"。
+3. 在 " **域列表** " 页上，找到要编辑的域的名称，然后选择 " **管理**"。
     
     ![Namecheap-配置-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 选择 "**高级 DNS**"。
+4. 选择 " **高级 DNS**"。
     
     ![Namecheap-配置-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 "**主机记录**" 部分，选择 "**添加新记录**"。
+5. 在 " **主机记录** " 部分，选择 " **添加新记录**"。
     
     ![Namecheap-配置-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 "**类型**" 下拉菜单中，选择 " **SRV 记录**"。
+6. 在 " **类型** " 下拉菜单中，选择 " **SRV 记录**"。
     
     > [!NOTE]
     > 当您选择 "**添加新记录**" 时，"类型" 下拉**类型**将自动显示。 
@@ -304,12 +304,12 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**服务**|**协议**|**优先级**|**权重**|**端口**|**目标**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |30分钟  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30分钟  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必须以句点 (.) 结尾。** <br/> |30分钟  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> |30分钟  <br/> |
        
     ![Namecheap-配置-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
-8. 选择 "**保存更改**" （复选标记）控件。 
+8. 选中 " **保存更改** (复选标记) 控件。 
     
     ![Namecheap-配置-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   

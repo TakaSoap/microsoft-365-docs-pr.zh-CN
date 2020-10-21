@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 了解如何验证您的域，并在 Bluehost for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307039"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646231"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>在 Bluehost 处为 Microsoft 创建 DNS 记录
 
@@ -53,7 +53,7 @@ ms.locfileid: "47307039"
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. 在 " ** _domain_name_*_" 区域的 "_* dns 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. 在 " ** _domain_name_*_" 区域的 "_* dns 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -130,7 +130,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. 在 " ** _domain_name_*_" 区域的 "_* dns 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
     
 4. 在 " ** (主机) ** 记录" 部分，找到 **自动发现** 记录的行，然后选择该行的 " **删除** "。 
     
@@ -139,7 +139,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
     ![选择“删除”](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. 选择“确定”****。
+5. 选择“**确定**”。
     
     ![选择 "确定"](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
@@ -181,7 +181,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. 在 " ** _domain_name_*_" 区域的 "_* dns 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     （您可能需要向下滚动。）
     
-3. 在 " ***domain_name*** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. 在 " ** _domain_name_*_" 区域的 "_* dns 区域编辑器**" 行中，选择 "**管理 DNS 记录**"。
     
 4. 创建两条 SRV 记录中的第一条记录。
     
@@ -216,8 +216,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**服务**|**协议**|**主机**|**TTL**|**类型**|**优先级**|**权重**|**端口**|**指向**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![复制新记录的值](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   

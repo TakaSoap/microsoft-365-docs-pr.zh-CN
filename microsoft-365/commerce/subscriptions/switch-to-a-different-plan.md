@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 了解如何切换到新的 Microsoft 365 for business 订阅。
-ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818631"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647743"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切换到其他 Microsoft 365 商业版计划
 
 当您的业务发生变化，或者您需要更多功能时，您可以切换计划。  
 
-切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是，在所有情况下都不支持使用 "**切换计划**" 按钮。 在某些情况下，您可能能够手动切换计划。
+切换计划最简单的方法是使用管理中心的“**切换计划**”按钮。 但是，在所有情况下都不支持使用 " **切换计划** " 按钮。 在某些情况下，您可能能够手动切换计划。
 
 
 **需要其他内容吗？**
@@ -46,7 +46,7 @@ ms.locfileid: "44818631"
 
 ## <a name="use-the-switch-plans-button"></a>使用 "切换计划" 按钮
 
-使用 "**切换计划**" 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。
+使用 " **切换计划** " 按钮时，可以通过购买新计划（您可以将当前计划切换到该计划）的过程，在新计划中自动为所有用户分配许可证，并为您取消旧计划。
 
 ::: moniker range="o365-worldwide"
 
@@ -66,11 +66,11 @@ ms.locfileid: "44818631"
 
 ::: moniker-end
 
-2. 选择 "**切换计划**" 以查看可用的新计划的列表。
+2. 选择 " **切换计划** " 以查看可用的新计划的列表。
 
     未提供 "[切换计划" 按钮](#the-switch-plans-button-isnt-there)  | [我看不到所需的计划](#i-dont-see-the-plan-i-want)
 
-3. 选择一个计划以查看每月的新总成本。 请务必阅读**密钥信息**，然后选择 "**下一步**" 以签出。
+3. 选择一个计划以查看每月的新总成本。 请务必阅读 **密钥信息**，然后选择 " **下一步** " 以签出。
 
     [帮助我选择新计划](https://go.microsoft.com/fwlink/p/?linkid=842056)。
 
@@ -80,21 +80,21 @@ ms.locfileid: "44818631"
 
 ## <a name="the-switch-plans-button-isnt-there"></a>未提供 "切换计划" 按钮
 
-如果 "**切换计划**" 按钮不可用，则可以尝试[手动切换计划](switch-plans-manually.md)或[致电支持部门](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅[为什么我无法切换计划？](why-can-t-i-switch-plans.md)
+如果 " **切换计划** " 按钮不可用，则可以尝试 [手动切换计划](switch-plans-manually.md) 或 [致电支持部门](../../admin/contact-support-for-business-products.md)。 有关详细信息，请参阅 [为什么我无法切换计划？](why-can-t-i-switch-plans.md)
   
 以下是可能会发生这种情况的原因：
   
-- 你正在使用多个 Microsoft 365 计划。 仅当所有用户订阅同一计划时，才能使用 "**切换计划**" 按钮。
+- 你正在使用多个 Microsoft 365 计划。 仅当所有用户订阅同一计划时，才能使用 " **切换计划** " 按钮。
 
 - 你已在使用 Office 365 企业版 E5，因此你已拥有 Office 365 中提供的所有功能。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到所需的计划
 
-使用 "**切换计划**" 按钮时，您可以切换到的计划将根据当前计划中的服务显示。 您只能使用 "**切换计划**" 按钮切换到具有相同数据相关服务的计划，或切换到更高版本。 这可确保在切换期间，用户不会丢失与这些服务相关的数据。
+使用 " **切换计划** " 按钮时，您可以切换到的计划将根据当前计划中的服务显示。 您只能使用 " **切换计划** " 按钮切换到具有相同数据相关服务的计划，或切换到更高版本。 这可确保在切换期间，用户不会丢失与这些服务相关的数据。
   
-若要在切换前比较计划，请参阅[Microsoft 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056)页。 有关技术规范的详细说明，请参阅[Microsoft 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=842275)。
+若要在切换前比较计划，请参阅 [Microsoft 365 for business 产品比较](https://go.microsoft.com/fwlink/p/?linkid=842056) 页。 有关技术规范的详细说明，请参阅 [Microsoft 365 服务说明](https://go.microsoft.com/fwlink/p/?linkid=842275)。
   
-如果要使用较少的服务切换到计划，则可以[手动切换计划](switch-plans-manually.md)，也可以[致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md)寻求帮助。
+如果要使用较少的服务切换到计划，则可以 [手动切换计划](switch-plans-manually.md)，也可以 [致电 Microsoft 支持部门](../../admin/contact-support-for-business-products.md) 寻求帮助。
   
 ## <a name="why-some-switches-take-longer"></a>为什么某些开关需要更长时间
 

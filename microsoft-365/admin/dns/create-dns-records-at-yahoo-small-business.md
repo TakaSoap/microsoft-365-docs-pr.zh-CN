@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: 了解如何验证你的域并为电子邮件、Skype for Business Online 和 Yahoo！中的其他服务设置 DNS 记录 适用于 Microsoft 的小型企业版。
-ms.openlocfilehash: c44ad1cde79fdc401f1cd7411a4019d31ade6d02
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400276"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645595"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>在 Yahoo! 适用于 Microsoft 的小型企业版
 
@@ -36,20 +36,20 @@ ms.locfileid: "44400276"
   
 按照本文中的步骤操作，在 Aabaco 处创建一个帐户，可在 Aabaco 更改 DNS 并续订一个或多个域。
   
-您必须先创建 Aabaco 帐户，然后才能[创建 DNS 记录](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+您必须先创建 Aabaco 帐户，然后才能 [创建 DNS 记录](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
 
   
 ## <a name="create-an-aabaco-small-business-account"></a>创建 Aabaco Small Business 帐户
 
-1. 若要开始，请使用[此链接](https://www.luminate.com/services/)转到 Aabaco 上的 "域" 页面，然后选择 "**设置 Aabaco 小型企业帐户**"。
+1. 若要开始，请使用 [此链接](https://www.luminate.com/services/)转到 Aabaco 上的 "域" 页面，然后选择 " **设置 Aabaco 小型企业帐户**"。
     
     ![选择 "设置你的 Aabaco 小型企业帐户"](../../media/d708f272-d42f-40a1-9aaf-d05d8cfd55cf.png)
   
-2. 提供 Yahoo！ 小型企业**电子邮件/YAHOO ID**，然后选择 "**我不是机器人**"。
+2. 提供 Yahoo！ 小型企业 **电子邮件/YAHOO ID**，然后选择 " **我不是机器人**"。
     
     ![Select I am not a robot](../../media/ded4b5dd-4e04-4baa-ae31-8426b5799151.png)
   
-3. 选择 "**开始**"。
+3. 选择 " **开始**"。
     
     ![选择 "开始"](../../media/6674707d-c222-4f0d-bec4-229d39ab2499.png)
   
@@ -60,7 +60,7 @@ ms.locfileid: "44400276"
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. 在 "Aabaco**确认您的电子邮件地址以继续安装**电子邮件" 中，选择 "**确认电子**邮件"。
+5. 在 "Aabaco **确认您的电子邮件地址以继续安装** 电子邮件" 中，选择 " **确认电子**邮件"。
     
     ![选择确认电子邮件](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
@@ -71,7 +71,7 @@ ms.locfileid: "44400276"
   
     ![The Choose your password page](../../media/cc592345-72d1-4a41-9410-a1f3345cfd1d.png)
   
-7. 选择 **"我同意条款和条件**"，然后选择 "**创建密码**"。
+7. 选择 **"我同意条款和条件**"，然后选择 " **创建密码**"。
     
     ![选择 "创建密码"](../../media/434aa6a3-076e-4abf-a9cf-31145786e819.png)
   
@@ -82,7 +82,7 @@ ms.locfileid: "44400276"
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   
-9. 在 Aabaco 中，**您几乎已有**电子邮件消息，请选择 **"激活我的帐户**"。
+9. 在 Aabaco 中， **您几乎已有** 电子邮件消息，请选择 **"激活我的帐户**"。
     
     ![选择 "激活我的帐户"](../../media/e76d5edc-d8ba-4d8d-872d-d916716c3618.png)
   
@@ -90,5 +90,5 @@ ms.locfileid: "44400276"
     
     ![The sign-in page for Aabaco Small Business](../../media/4ef3cfc3-26da-4e03-932b-9346ef217848.png)
   
-现在您已创建 Aabaco 帐户，您可以[在 Aabaco 小型企业版 Microsoft 中创建 DNS 记录](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
+现在您已创建 Aabaco 帐户，您可以 [在 Aabaco 小型企业版 Microsoft 中创建 DNS 记录](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。
   

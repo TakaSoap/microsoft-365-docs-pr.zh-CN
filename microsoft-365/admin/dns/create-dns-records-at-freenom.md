@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 了解如何验证您的域，并在 Freenom for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: f139c21915d6922c2f77281990dd09949d9db928
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400469"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646183"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 处为 Microsoft 创建 DNS 记录
 
@@ -49,35 +49,35 @@ ms.locfileid: "44400469"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
+1. 若要开始，请使用 [此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
     ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 选择 "**服务**"，然后选择 **"我的域**"。
+2. 选择 " **服务**"，然后选择 **"我的域**"。
     
     ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 对于要编辑的域，选择 "**管理域**"。
+3. 对于要编辑的域，选择 " **管理域**"。
     
     ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 选择 "**管理 FREENOM DNS**"。
+4. 选择 " **管理 FREENOM DNS**"。
     
     ![Freenom 管理 Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
-5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **TXT** "。 
+5. 在 " **添加记录**" 下的 " **类型** " 列中，从菜单中选择 " **TXT** "。 
     
     ![Freenom 添加记录类型 TXT](../../media/7f0e85e7-844f-4962-815e-5d80d9e6efa0.png)
   
 6. 在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    |**名称**|**Type**|**TTL**|**Target**|
+    |**名称**|**类型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |MS = msXXXXXXXX  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（保留为空白）  <br/> |TXT  <br/> |3600 (秒)   <br/> |MS = msXXXXXXXX  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![用于验证的 Freenom TXT 值](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. 选择 "**保存更改**"。
+7. 选择 " **保存更改**"。
     
     ![Freenom TXT 记录保存更改](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
@@ -108,68 +108,68 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft
 <a name="bkmk_mx"> </a>
 
-1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
+1. 若要开始，请使用 [此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
     ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 选择 "**服务**"，然后选择 **"我的域**"。
+2. 选择 " **服务**"，然后选择 **"我的域**"。
     
     ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 对于要编辑的域，选择 "**管理域**"。
+3. 对于要编辑的域，选择 " **管理域**"。
     
     ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 将您的域的名称设置为默认的 Freenom 名称服务器。 选择 "**管理工具**"，然后选择 "**名称服务器**"。
+4. 将您的域的名称设置为默认的 Freenom 名称服务器。 选择 " **管理工具**"，然后选择 " **名称服务器**"。
     
     ![Freenom 名称服务器设置](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. 请确保已选择 "**使用默认名称服务器**"，然后选择 "**更改名称服务器**"。
+5. 请确保已选择 " **使用默认名称服务器** "，然后选择 " **更改名称服务器**"。
     
     ![Freenom 更改名称服务器](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. 选择 "**管理 FREENOM DNS**"。
+6. 选择 " **管理 FREENOM DNS**"。
     
     ![Freenom select Manage Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
-7. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **MX** "。 
+7. 在 " **添加记录**" 下的 " **类型** " 列中，从菜单中选择 " **MX** "。 
     
     ![Freenom 添加记录类型 MX](../../media/c728c6ee-786c-4f6a-8ad5-1d9914a5bfcf.png)
   
 8. 在新记录的框中，键入或复制并粘贴下表中第一行的值。 
     
-    |**名称**|**Type**|**TTL**|**Target**|**Priority**|
+    |**名称**|**类型**|**TTL**|**Target**|**Priority**|
     |:-----|:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |MX （邮件交换器）  <br/> |3600（秒）  <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |（保留为空白）  <br/> |MX (邮件交换器)   <br/> |3600 (秒)   <br/> |\<domain-key\>。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。   如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Freenom MX 记录](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. 选择 "**保存更改**"。
+9. 选择 " **保存更改**"。
     
     ![Freenom MX 记录保存更改](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. 如果有任何其他 MX 记录，请将它们全部删除。 对于每个记录，选择 "**删除**"。 当**您确实要删除此条目时？** 出现时，选择 **"确定"**。
+10. 如果有任何其他 MX 记录，请将它们全部删除。 对于每个记录，选择 " **删除**"。 当 **您确实要删除此条目时？** 出现时，选择 **"确定"**。
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的 CNAME 记录
 <a name="bkmk_cname"> </a>
 
-1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
+1. 若要开始，请使用 [此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
     ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 选择 "**服务**"，然后选择 **"我的域**"。
+2. 选择 " **服务**"，然后选择 **"我的域**"。
     
     ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 对于要编辑的域，选择 "**管理域**"。
+3. 对于要编辑的域，选择 " **管理域**"。
     
     ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 选择 "**管理 FREENOM DNS**"。
+4. 选择 " **管理 FREENOM DNS**"。
     
     ![Freenom select Manage Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
-5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **CNAME** "。 
+5. 在 " **添加记录**" 下的 " **类型** " 列中，从菜单中选择 " **CNAME** "。 
     
     ![Freenom 添加记录类型 CNAME](../../media/9b204755-ca2a-46d2-bce2-030d82fd1f9e.png)
   
@@ -177,15 +177,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**记录类型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |自动发现  <br/> |CNAME  <br/> |3600 (秒)   <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |3600 (秒)   <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |3600 (秒)   <br/> |webdir.online.lync.com  <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |3600 (秒)   <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |3600 (秒)   <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
     ![Freenom CNAME 值](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. 选择 "**保存更改**"。
+7. 选择 " **保存更改**"。
     
     ![Freenom CNAME 保存更改](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
@@ -197,25 +197,25 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 
 
-1. 若要开始，请使用[此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
+1. 若要开始，请使用 [此链接](https://my.freenom.com/)转到 Freenom 中的 "域" 页面。 You'll be prompted to log in.
     
     ![Freenom 登录名](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. 选择 "**服务**"，然后选择 **"我的域**"。
+2. 选择 " **服务**"，然后选择 **"我的域**"。
     
     ![Freenom 选择服务和我的域](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. 对于要编辑的域，选择 "**管理域**"。
+3. 对于要编辑的域，选择 " **管理域**"。
     
     ![Freenom 选择管理域](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. 选择 "**管理 FREENOM DNS**"。
+4. 选择 " **管理 FREENOM DNS**"。
     
     ![Freenom select Manage Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
-5. 在 "**添加记录**" 下的 "**类型**" 列中，从菜单中选择 " **TXT** "。 
+5. 在 " **添加记录**" 下的 " **类型** " 列中，从菜单中选择 " **TXT** "。 
     
     ![Freenom 添加记录类型 TXT](../../media/d8854285-c4ae-416c-a072-72a11ba1cd9a.png)
   
@@ -223,11 +223,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**记录类型**|**TTL**|**Target**|
     |:-----|:-----|:-----|:-----|
-    |（保留为空白）  <br/> |TXT  <br/> |3600（秒）  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |（保留为空白）  <br/> |TXT  <br/> |3600 (秒)   <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
     ![SPF 的 Freenom TXT 值](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. 选择 "**保存更改**"。
+7. 选择 " **保存更改**"。
     
     ![SPF 保存更改的 Freenom TXT 记录](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
   

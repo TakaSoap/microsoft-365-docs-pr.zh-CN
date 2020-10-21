@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 了解如何验证您的域，并在 Hostgator for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 103da87956beae868cda84b727a3401dfd9991d9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f8cfc417a7ff9821fd40b33c8dfe9932dd454d18
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306967"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645991"
 ---
 # <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 处为 Microsoft 创建 DNS 记录
 
@@ -92,7 +92,7 @@ ms.locfileid: "47306967"
     |||||
     |:-----|:-----|:-----|:-----|
     |**名称** <br/> |**TTL** <br/> |**类型** <br/> |**TXT 数据** <br/> |
-    |使用您的  *domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |使用您的  *domain_name*。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
 4. 选择 " **添加记录**"。
     
@@ -235,8 +235,8 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**名称**|**TTL**|**类型**|**优先级**|**权重**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls。 *domain_name*。  (例如，_sip. ) _tls。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp。 *domain_name*。  (例如，_sipfederationtls. ) _tcp。  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip _sip._tls。 *domain_name*。  (例如，) 的 _sip  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls _sipfederationtls._tcp。 *domain_name*。  (例如，) 的 _sipfederationtls  <br/> **此值必须以句点 (.) 结尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
 4. 选择 " **添加记录**"。

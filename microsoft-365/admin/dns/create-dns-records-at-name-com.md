@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 了解如何验证您的域，并在 name.com for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400396"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645883"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 处为 Microsoft 创建 DNS 记录
 
@@ -56,22 +56,22 @@ ms.locfileid: "44400396"
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 "**详细信息**" 列中，选择 " **DNS 记录**"。 
+3. 在 " **详细信息** " 列中，选择 " **DNS 记录**"。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**类型** <br/> |**主机** <br/> |**应答** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |使用默认值 (300)。  <br/> |
    
     ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![Name-BP-Verify-1-2](../../media/816fc60b-17ab-4982-8849-6c3fcf3ca3d6.png)
   
@@ -109,21 +109,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 "**详细信息**" 列中，选择 " **DNS 记录**"。 
+3. 在 " **详细信息** " 列中，选择 " **DNS 记录**"。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**类型**|**主机**|**应答**|**TTL**|**优先级**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |（将此字段留空。）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |（将此字段留空。）  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           [如何查找此内容？](../get-help-with-domains/information-for-dns-records.md)          |使用默认值 (300)。  <br/> |0  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![Name-BP-Configure-2-2](../../media/fd09f161-7cc4-4723-aec2-5fa801bd19e9.png)
   
@@ -150,7 +150,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 "**详细信息**" 列中，选择 " **DNS 记录**"。 
+3. 在 " **详细信息** " 列中，选择 " **DNS 记录**"。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -165,18 +165,18 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |CNAME  <br/> |自动发现  <br/> |autodiscover.outlook.com  <br/> |使用默认值 (300)。  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |使用默认值 (300)。  <br/> |
     |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |使用默认值 (300)。  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |EnterpriseRegistration.windows.net  <br/> |使用默认值 (300)。  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |使用默认值 (300)。  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |使用默认值 (300)。  <br/> |
    
    ![Name-BP-Configure-3-1](../../media/4e34caaf-b418-40ec-abfa-fe62175a87c2.png)
   
-5. 选择 "**添加记录**" 以添加第一条记录。 
+5. 选择 " **添加记录** " 以添加第一条记录。 
     
     ![Name-BP-Configure-3-2](../../media/1053c2a7-07c3-4c1b-b54a-1c02881fb0ec.png)
   
 6. 添加第二条 CNAME 记录。
     
-    使用上表中第二行的值，然后选择 "**添加记录**" 以添加第二条记录。 
+    使用上表中第二行的值，然后选择 " **添加记录** " 以添加第二条记录。 
     
     按同样的方法，使用表中第 3 到 6 行的值添加其余记录。
     
@@ -184,7 +184,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 
   
 1. 若要开始，请使用[此链接](https://www.name.com/account/domain)转到 name.com 上你的域页面。系统将会提示你首先登录。
     
@@ -194,21 +194,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 "**详细信息**" 列中，选择 " **DNS 记录**"。 
+3. 在 " **详细信息** " 列中，选择 " **DNS 记录**"。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在新记录的框中，键入或复制并粘贴下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
     |**类型**|**主机**|**应答**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |Use the default value (300).  <br/> |
    
    ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
     
     ![Name-BP-Configure-4-2](../../media/db1e0e09-2b95-4fc1-88bd-e86da536921f.png)
   
@@ -223,7 +223,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 "**详细信息**" 列中，选择 " **DNS 记录 +**"。 
+3. 在 " **详细信息** " 列中，选择 " **DNS 记录 +**"。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -235,18 +235,18 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**类型**|**服务**|**权重**|**TTL**|**优先级**|**协议**|**端口**|**目标**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
-    |SRV|sipfederationtls|1 |使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sip|1|使用默认值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
+    |SRV|sipfederationtls|1|使用默认值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
-5. 选择 "**添加记录**"。
+5. 选择 " **添加记录**"。
 
     ![Name-BP-Configure-5-2](../../media/a804d51d-8f57-4b0b-8bd6-a52eb1c87a97.png)
   
 6. 添加第二条 SRV 记录：
 
-使用上表中下一行的值，然后选择 "**添加记录**" 以添加第二条记录。
+使用上表中下一行的值，然后选择 " **添加记录** " 以添加第二条记录。
 
 >[!NOTE]
 >DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。

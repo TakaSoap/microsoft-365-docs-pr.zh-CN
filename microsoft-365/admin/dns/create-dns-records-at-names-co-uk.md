@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: 了解如何验证您的域，并在 Names.co.uk for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3a3e68558efc3857d343b3298c3c01f0e8d8802
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400372"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645859"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Names.co.uk 处为 Microsoft 创建 DNS 记录
 
@@ -61,9 +61,9 @@ ms.locfileid: "44400372"
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
     （可能需要向下滚动。）
         
@@ -73,7 +73,7 @@ ms.locfileid: "44400372"
        
     ![NamesUK-验证-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
     （您可能需要向下滚动。）
     
@@ -115,29 +115,29 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-配置-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 "**添加/修改 DNS 区域**" 页上的 "**邮件交换记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
+3. 在 " **添加/修改 DNS 区域** " 页上的 " **邮件交换记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
     
     （可能需要向下滚动。）
     
     |**主机名**|**Priority**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> > [!NOTE]> *\<domain-key\>* 从你的 Microsoft 帐户获取。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>  *\<domain-key\>*  从你的 Microsoft 帐户获取。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-配置-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     ![NamesUK-配置-2-2](../../media/01e6c801-daa2-40ca-84f9-dcac6422257c.png)
   
-5. 如果 "**邮件交换记录**" 部分中列出了任何其他 MX 记录，请通过选择它，然后按键盘上的**delete**键将其删除。 
+5. 如果 " **邮件交换记录** " 部分中列出了任何其他 MX 记录，请通过选择它，然后按键盘上的 **delete** 键将其删除。 
     
     ![NamesUK-配置-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     ![NamesUK-配置-2-4](../../media/cd705919-d0bd-408f-82be-b54e732cb05c.png)
   
@@ -156,15 +156,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     |**主机名**|**类型**|**结果**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
+    |自动发现  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
@@ -172,7 +172,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
        
     ![NamesUK-配置-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
     ![NamesUK-配置-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -180,7 +180,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。
   
 1. 若要开始使用，请使用[此链接](https://account.names.co.uk/dashboard#/)转到 Names.co.uk 上的域页面。系统将提示你先登录。
     
@@ -192,27 +192,27 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-配置-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 "**帐户上的 DNS 区域**" 页上的 "**域名**" 列中，选择要更新的域的名称。 
+3. 在 " **帐户上的 DNS 区域** " 页上的 " **域名** " 列中，选择要更新的域的名称。 
     
     ![NamesUK-配置-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
 4. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
     （可能需要向下滚动。）
     
     |**主机名**|**类型**|**结果**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
        
     ![NamesUK-配置-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. 选择“保存”****。
+5. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     ![NamesUK-配置-4-2](../../media/b4d445a1-09c0-46c3-8141-672cc2831a9b.png)
   
@@ -229,20 +229,20 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![NamesUK-配置-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 "**添加/修改 DNS 区域**" 页上的 "**服务记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
+3. 在 " **添加/修改 DNS 区域** " 页上的 " **服务记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     |**名称**|**优先级**|**权重**|**端口**|**结果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-配置-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     ![NamesUK-配置-5-2](../../media/bb617a5f-14f9-44b7-9256-bdef34d22d6b.png)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: 了解如何验证您的域，并在 Register365 for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: e580779ce674375564c1b3ab6123ef1b19f50be0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400312"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645763"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>在 Register365 处为 Microsoft 创建 DNS 记录
 
@@ -71,9 +71,9 @@ ms.locfileid: "44400312"
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
     （可能需要向下滚动。）
     
@@ -83,11 +83,11 @@ ms.locfileid: "44400312"
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/22326005-de95-464d-8e33-08ea31a89b2d.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    ![选择 "保存"](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
+    ![选择“保存”](../../media/157cfb98-d5d0-48a3-8dd1-c4e759c2f8a8.png)
   
 5. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
@@ -125,31 +125,31 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择列表中的 DNS 设置](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 "**添加/修改 DNS 区域**" 页上的 "**邮件交换记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
+3. 在 " **添加/修改 DNS 区域** " 页上的 " **邮件交换记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
     
     （可能需要向下滚动。）
     
     |**主机名**|**Priority**|**结果**|
     |:-----|:-----|:-----|
-    |（将此字段留空。）  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     |
+    |（将此字段留空。）  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。  [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     |
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/2d3645a8-9cb8-435e-b895-5535b6b1fffd.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    ![选择 "保存"](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
+    ![选择“保存”](../../media/0e565fb0-a126-4a48-8ff7-2c2d79d4af32.png)
   
-5. 如果 "**邮件交换记录**" 部分中有任何其他 MX 记录，请选择该记录，然后按键盘上的**delete**键将其删除。 
+5. 如果 " **邮件交换记录** " 部分中有任何其他 MX 记录，请选择该记录，然后按键盘上的 **delete** 键将其删除。 
     
     ![删除 "邮件交换记录" 部分中的记录](../../media/8cc37e4f-2e85-4242-af0e-78149434167f.png)
   
-6. 选择“保存”****。
+6. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    ![选择 "保存"](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
+    ![选择“保存”](../../media/1fb69bb5-b5df-4060-adf1-eb26cfaa6c4f.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的六条 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
@@ -164,17 +164,17 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择列表中的 DNS 设置](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 "**添加/修改 DNS 区域**" 页上的 " **A，CNAME，AAAA，TXT，NS 记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
+3. 在 " **添加/修改 DNS 区域** " 页上的 " **A，CNAME，AAAA，TXT，NS 记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     |主机名 * * * * *|键入 * * * *|结果 * * * *|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
+    |自动发现  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
     |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
@@ -182,15 +182,15 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/3b79f0de-9cab-4c98-8fa8-c92b35241e8b.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    ![选择 "保存"](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
+    ![选择“保存”](../../media/8ded6428-af97-4fd8-9104-477fa22a5586.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 
   
 1. 要开始，请使用[此链接](https://admin.register365.com/dns/)转到您在 Register365 上的域页面。 系统将会提示您先登录。
     
@@ -204,23 +204,23 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    （从下拉列表中选择“**类型**”值。） 
     
-    （如果需要添加行，请选择 "**添加/CNAME 记录（+）**"。
+     (如果需要添加行，请选择 " **添加 a/CNAME 记录" (+) **。 ) 
     
     （可能需要向下滚动。）
     
     |**主机名**|**类型**|**结果**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
     ![在 "添加/修改 DNS 区域" 页上输入值](../../media/33976398-da8a-439b-8e3d-534503b20ee0.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    ![选择 "保存"](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
+    ![选择“保存”](../../media/1d8da122-4861-4ca3-bc9b-d01f18557d4c.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的两条 SRV 记录
 <a name="BKMK_add_SRV"> </a>
@@ -235,22 +235,22 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     ![选择列表中的 DNS 设置](../../media/57944802-3f6b-49bb-971a-b1d20936cba3.png)
   
-3. 在 "**添加/修改 DNS 区域**" 页上的 "**服务记录**" 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
+3. 在 " **添加/修改 DNS 区域** " 页上的 " **服务记录** " 部分中，在新记录的框中，键入或复制并粘贴下表中的值。 
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
     |**名称**|**优先级**|**权重**|**端口**|**结果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![在 "服务记录" 部分中输入值](../../media/56bb1813-90e2-40c8-98bf-750e2dc3f8b6.png)
   
-4. 选择“保存”****。
+4. 选择“**保存**”。
     
-    (You may have to scroll down.)
+    （您可能需要向下滚动。）
     
-    ![选择 "保存"](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
+    ![选择“保存”](../../media/3b80757c-01e1-492d-b2ce-f721d71f7235.png)
   
 > [!NOTE]
 >  DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。 
