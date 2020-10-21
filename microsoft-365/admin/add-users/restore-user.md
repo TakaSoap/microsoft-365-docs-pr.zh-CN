@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,136 +23,136 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 了解如何还原已删除的用户帐户和所有关联的数据。
-ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 905113c40f49f433a3d84810e04abc5f26724ecb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386994"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646663"
 ---
-# <a name="restore-a-user"></a><span data-ttu-id="e4ff3-103">还原用户</span><span class="sxs-lookup"><span data-stu-id="e4ff3-103">Restore a user</span></span>
+# <a name="restore-a-user"></a><span data-ttu-id="5f7ca-103">还原用户</span><span class="sxs-lookup"><span data-stu-id="5f7ca-103">Restore a user</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="e4ff3-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-104">The admin center is changing.</span></span> <span data-ttu-id="e4ff3-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="5f7ca-104">管理中心正在发生改变。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-104">The admin center is changing.</span></span> <span data-ttu-id="5f7ca-105">如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
    
-<span data-ttu-id="e4ff3-p102">如果在删除用户帐户后 30 天内还原用户帐户，则该用户帐户及其关联的所有数据都将还原。用户可使用相同的 工作或学校帐户 进行登录。其邮箱将完全还原。如果需要了解某个特定用户帐户还有多长时间便无法再还原，请[联系我们](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p102">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="5f7ca-p102">如果在删除用户帐户后 30 天内还原用户帐户，则该用户帐户及其关联的所有数据都将还原。用户可使用相同的 工作或学校帐户 进行登录。其邮箱将完全还原。如果需要了解某个特定用户帐户还有多长时间便无法再还原，请[联系我们](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p102">When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).</span></span>
   
-<span data-ttu-id="e4ff3-110">下面是一些提示︰</span><span class="sxs-lookup"><span data-stu-id="e4ff3-110">Here are a couple of tips:</span></span>
+<span data-ttu-id="5f7ca-110">下面是一些提示︰</span><span class="sxs-lookup"><span data-stu-id="5f7ca-110">Here are a couple of tips:</span></span>
   
-- <span data-ttu-id="e4ff3-111">请确保许可证可分配给帐户。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-111">Make sure licenses are available to assign to the account.</span></span>
+- <span data-ttu-id="5f7ca-111">请确保许可证可分配给帐户。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-111">Make sure licenses are available to assign to the account.</span></span>
     
-- <span data-ttu-id="e4ff3-112">如果你的公司使用 Active Directory，请参阅[如何解决 Office 365 中已删除的用户帐户问题](https://support.microsoft.com/kb/2619308)以获取有关还原用户帐户的说明。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-112">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
+- <span data-ttu-id="5f7ca-112">如果你的公司使用 Active Directory，请参阅[如何解决 Office 365 中已删除的用户帐户问题](https://support.microsoft.com/kb/2619308)以获取有关还原用户帐户的说明。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-112">If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account.</span></span> 
     
-## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="e4ff3-113">还原一个或多个用户帐户</span><span class="sxs-lookup"><span data-stu-id="e4ff3-113">Restore one or more user accounts</span></span>
+## <a name="restore-one-or-more-user-accounts"></a><span data-ttu-id="5f7ca-113">还原一个或多个用户帐户</span><span class="sxs-lookup"><span data-stu-id="5f7ca-113">Restore one or more user accounts</span></span>
 
-<span data-ttu-id="e4ff3-114">您必须是 Microsoft 365 全局管理员或用户管理管理员才能执行这些步骤。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-114">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
+<span data-ttu-id="5f7ca-114">您必须是 Microsoft 365 全局管理员或用户管理管理员才能执行这些步骤。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-114">You must be a Microsoft 365 global admin or user management admin to do these steps.</span></span> 
   
  
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e4ff3-115">在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a>" 页。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="5f7ca-115">在管理中心中，转到 " **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a> " 页。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-115">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e4ff3-116">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-116">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="5f7ca-116">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-116">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e4ff3-117">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-117">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="5f7ca-117">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-117">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="e4ff3-118">在 "**已删除的用户**" 页上，选择要还原的用户的名称，然后选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-118">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="5f7ca-118">在 " **已删除的用户** " 页上，选择要还原的用户的名称，然后选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-118">On the **Deleted users** page, select the names of the users who you want to restore, and then select **Restore**.</span></span>
     
  
-3. <span data-ttu-id="e4ff3-119">按照提示设置其密码，然后选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-119">Follow the prompts to set their password, and then select **Restore**.</span></span>
+3. <span data-ttu-id="5f7ca-119">按照提示设置其密码，然后选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-119">Follow the prompts to set their password, and then select **Restore**.</span></span>
     
-4. <span data-ttu-id="e4ff3-120">如果用户已成功还原，请选择 "**发送电子邮件并关闭**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-120">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="e4ff3-121">如果遇到名称冲突或代理地址冲突，请参阅下述说明获取还原这些帐户的方法。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-121">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
+4. <span data-ttu-id="5f7ca-120">如果用户已成功还原，请选择 " **发送电子邮件并关闭**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-120">If the user is successfully restored, select **Send email and close**.</span></span> <span data-ttu-id="5f7ca-121">如果遇到名称冲突或代理地址冲突，请参阅下述说明获取还原这些帐户的方法。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-121">If you encounter a name conflict or proxy address conflict, see the instructions below for how to restore those accounts.</span></span>
     
-<span data-ttu-id="e4ff3-122">还原用户后，请确保通知他们密码已更改，并跟踪它们。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-122">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
+<span data-ttu-id="5f7ca-122">还原用户后，请确保通知他们密码已更改，并跟踪它们。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-122">After you've restored a user, make sure you notify them that their password changed and you follow up with them.</span></span>
   
-## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="e4ff3-123">还原用户名有冲突的用户</span><span class="sxs-lookup"><span data-stu-id="e4ff3-123">Restore a user that has a user name conflict</span></span>
-<span data-ttu-id="e4ff3-124"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="e4ff3-124"><a name="RestoreUserNameConflict"> </a></span></span>
+## <a name="restore-a-user-that-has-a-user-name-conflict"></a><span data-ttu-id="5f7ca-123">还原用户名有冲突的用户</span><span class="sxs-lookup"><span data-stu-id="5f7ca-123">Restore a user that has a user name conflict</span></span>
+<span data-ttu-id="5f7ca-124"><a name="RestoreUserNameConflict"> </a></span><span class="sxs-lookup"><span data-stu-id="5f7ca-124"><a name="RestoreUserNameConflict"> </a></span></span>
 
-<span data-ttu-id="e4ff3-125">当删除用户帐户后，又创建了与该用户名相同的新用户帐户（为同一用户或具有相似名称的另一个用户），那么当稍后尝试还原已删除的帐户时会出现用户名冲突。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-125">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
+<span data-ttu-id="5f7ca-125">当删除用户帐户后，又创建了与该用户名相同的新用户帐户（为同一用户或具有相似名称的另一个用户），那么当稍后尝试还原已删除的帐户时会出现用户名冲突。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-125">A user name conflict occurs when you delete a user account, create a new user account with the same user name (either for the same user or another user with a similar name), and later try to restore the deleted account.</span></span>
   
-<span data-ttu-id="e4ff3-p104">若要解决此问题，可以将活动的用户帐户替换为要还原的用户帐户，或者为要还原的帐户分配不同的用户名，这样就不会有两个用户名相同的帐户。步骤如下。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p104">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
+<span data-ttu-id="5f7ca-p104">若要解决此问题，可以将活动的用户帐户替换为要还原的用户帐户，或者为要还原的帐户分配不同的用户名，这样就不会有两个用户名相同的帐户。步骤如下。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p104">To fix this, replace the active user account with the one that you are restoring. Or, assign a different user name to the account that you are restoring so that there aren't two accounts with the same user name. Here are the steps.</span></span>
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e4ff3-129">在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a>" 页。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-129">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="5f7ca-129">在管理中心中，转到 " **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a> " 页。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-129">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="e4ff3-130">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-130">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="5f7ca-130">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-130">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e4ff3-131">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-131">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="5f7ca-131">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-131">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
   
-2. <span data-ttu-id="e4ff3-132">在 "**已删除的用户**" 页上，选择要还原的用户的名称，然后选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-132">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
+2. <span data-ttu-id="5f7ca-132">在 " **已删除的用户** " 页上，选择要还原的用户的名称，然后选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-132">On the **Deleted users** page, select the names of the users that you want to restore, and then select **Restore**.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="e4ff3-p105">如果两个或更多个用户还原失败，则会有错误消息告诉您一些用户的还原操作失败。查看日志以看看哪些用户未还原，然后逐个还原失败的帐户。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p105">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
+    > <span data-ttu-id="5f7ca-p105">如果两个或更多个用户还原失败，则会有错误消息告诉您一些用户的还原操作失败。查看日志以看看哪些用户未还原，然后逐个还原失败的帐户。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p105">If two or more users fail to be restored, an error message advises you that the restore operation failed for some users. View the log to see which users were not restored, and then restore the failed accounts one at a time.</span></span> 
   
-3. <span data-ttu-id="e4ff3-135">按照提示设置密码，然后选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-135">Follow the prompts to set the password and select **Restore**.</span></span>
+3. <span data-ttu-id="5f7ca-135">按照提示设置密码，然后选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-135">Follow the prompts to set the password and select **Restore**.</span></span>
     
-4. <span data-ttu-id="e4ff3-p106">会弹出一条消息告诉你还原帐户时遇到问题。执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p106">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
+4. <span data-ttu-id="5f7ca-p106">会弹出一条消息告诉你还原帐户时遇到问题。执行下列操作之一：</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p106">A message pops up that says there was a problem restoring the account. Do one of the following:</span></span>
     
-  - <span data-ttu-id="e4ff3-p107">取消还原并重命名当前活动用户。然后再次尝试还原。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p107">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
+  - <span data-ttu-id="5f7ca-p107">取消还原并重命名当前活动用户。然后再次尝试还原。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p107">Cancel the restore and rename the current active user. Then attempt the restore again.</span></span>
     
-  - <span data-ttu-id="e4ff3-140">或者，为用户键入一个新的主电子邮件地址，然后选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-140">OR, type a new primary email address for the user and select **Restore**.</span></span>
+  - <span data-ttu-id="5f7ca-140">或者，为用户键入一个新的主电子邮件地址，然后选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-140">OR, type a new primary email address for the user and select **Restore**.</span></span>
     
-5. <span data-ttu-id="e4ff3-141">查看结果，然后选择" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-141">Review the results, and then select **Close**.</span></span>
+5. <span data-ttu-id="5f7ca-141">查看结果，然后选择" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-141">Review the results, and then select **Close**.</span></span>
     
-## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="e4ff3-142">恢复具有代理地址冲突的用户</span><span class="sxs-lookup"><span data-stu-id="e4ff3-142">Restore a user that has a proxy address conflict</span></span>
+## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a><span data-ttu-id="5f7ca-142">恢复具有代理地址冲突的用户</span><span class="sxs-lookup"><span data-stu-id="5f7ca-142">Restore a user that has a proxy address conflict</span></span>
 
-<span data-ttu-id="e4ff3-p108">删除包含代理地址的用户帐户后，又将相同的代理地址分配给另一个帐户，那么当你尝试还原已删除的帐户时会出现代理地址冲突。请按照以下步骤操作以修复此问题。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-p108">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
+<span data-ttu-id="5f7ca-p108">删除包含代理地址的用户帐户后，又将相同的代理地址分配给另一个帐户，那么当你尝试还原已删除的帐户时会出现代理地址冲突。请按照以下步骤操作以修复此问题。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-p108">A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.</span></span>
   
-<span data-ttu-id="e4ff3-145">您必须具有 Microsoft 365 中的[管理员权限](about-admin-roles.md)才能执行此操作。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-145">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
+<span data-ttu-id="5f7ca-145">您必须具有 Microsoft 365 中的 [管理员权限](about-admin-roles.md) 才能执行此操作。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-145">You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this.</span></span> 
   
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="e4ff3-146">在管理中心中，转到 "**用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a>" 页。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-146">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
+1. <span data-ttu-id="5f7ca-146">在管理中心中，转到 " **用户** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">已删除用户</a> " 页。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-146">In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">Deleted users</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-<span data-ttu-id="e4ff3-147">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-147">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
+<span data-ttu-id="5f7ca-147">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-147">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="e4ff3-148">转到 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 "**用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-148">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
+1. <span data-ttu-id="5f7ca-148">转到 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)"，然后选择 " **用户** \> **已删除的用户**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-148">Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), and then select **Users** \> **Deleted users**.</span></span>
 
 ::: moniker-end
 
-2. <span data-ttu-id="e4ff3-149">在" **已删除的用户**"页上，选择要还原的用户，然后选择" **还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-149">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
+2. <span data-ttu-id="5f7ca-149">在" **已删除的用户**"页上，选择要还原的用户，然后选择" **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-149">On the **Deleted users** page, select the user that you want to restore, and then select **Restore**.</span></span> 
     
-3. <span data-ttu-id="e4ff3-150">在 "**还原**" 页上，按照说明设置密码并选择 "**还原**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-150">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="e4ff3-151">将从要还原的用户自动删除任何冲突的代理地址。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-151">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
+3. <span data-ttu-id="5f7ca-150">在 " **还原** " 页上，按照说明设置密码并选择 " **还原**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-150">On the **Restore** page, follow the instructions to set the password and select **Restore**.</span></span> <span data-ttu-id="5f7ca-151">将从要还原的用户自动删除任何冲突的代理地址。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-151">Any conflicting proxy addresses are automatically removed from the user you are restoring.</span></span>
     
-4. <span data-ttu-id="e4ff3-152">查看结果，然后选择" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="e4ff3-152">Review the results, and then select **Close**.</span></span>
+4. <span data-ttu-id="5f7ca-152">查看结果，然后选择" **关闭**"。</span><span class="sxs-lookup"><span data-stu-id="5f7ca-152">Review the results, and then select **Close**.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="e4ff3-153">相关文章</span><span class="sxs-lookup"><span data-stu-id="e4ff3-153">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="5f7ca-153">相关文章</span><span class="sxs-lookup"><span data-stu-id="5f7ca-153">Related articles</span></span>
 
-[<span data-ttu-id="e4ff3-154">删除用户</span><span class="sxs-lookup"><span data-stu-id="e4ff3-154">Delete a user</span></span>](delete-a-user.md)
+[<span data-ttu-id="5f7ca-154">删除用户</span><span class="sxs-lookup"><span data-stu-id="5f7ca-154">Delete a user</span></span>](delete-a-user.md)
   
