@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 监视发送到或来自具有高业务影响的帐户的电子邮件失败和延迟。
-ms.openlocfilehash: 053246da7f57c46045bfc777bc4de981ce51c6e5
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794183"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644580"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理和监视优先级帐户
 
@@ -69,7 +69,7 @@ ms.locfileid: "46794183"
 
 ## <a name="email-issues-for-priority-accounts"></a>优先级帐户的电子邮件问题
 
-您可以通过转到 Exchange 管理中心内的优先级帐户报告的 **电子邮件问题** ，来跟踪优先级帐户的电子邮件问题。 有关详细信息，请查看 [优先级帐户的电子邮件问题](https://review.docs.microsoft.com/en-us/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts?branch=Priority-chrisda)。
+您可以通过转到 Exchange 管理中心内的优先级帐户报告的 **电子邮件问题** ，来跟踪优先级帐户的电子邮件问题。 有关详细信息，请查看 [优先级帐户的电子邮件问题](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>从 "优先级帐户" 列表中删除用户
 

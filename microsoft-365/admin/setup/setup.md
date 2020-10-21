@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 商业高级版、Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业应用版或 Office 365 教育版订阅。
-ms.openlocfilehash: 6aef028745aa9b2e2e20529dbea1193ea7cbf3aa
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778909"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644443"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 

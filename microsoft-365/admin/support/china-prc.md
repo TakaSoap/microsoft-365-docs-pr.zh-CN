@@ -1,10 +1,10 @@
 ---
-title: 中国的支持信息（中国）
+title: 中国 (中国) 的支持信息
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4cf6e4db2a4609583b73804378f9d964269358b1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 26b8a044f2a8b537a95372c8733adbf2b05f506b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398254"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643411"
 ---
-# <a name="contact-support-for-china-prc"></a>联系中国的支持人员（中国）
+# <a name="contact-support-for-china-prc"></a>联系中国 (中国的支持) 
 
 [查找其他国家或地区](../contact-support-for-business-products.md)。
 
@@ -28,19 +28,19 @@ ms.locfileid: "44398254"
 800 988 0365
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-中文（普通话）：周一至周五上午9点-下午6点
+中文 (普通话) ： Mon-Fri 上午9点-下午6点
 
-英语：周一至周五上午9点-下午6点
+英语： Mon-Fri 上午9点-下午6点
 
 ### <a name="technical-support"></a>技术支持：
 
-中文（普通话）：周一至周五上午9点-下午6点
+中文 (普通话) ： Mon-Fri 上午9点-下午6点
 
-英语：每天24小时，每周7天
+英语：全天候
 
-备选电话号码： 400 920 0365 （移动电话）
+备选电话号码： 400 920 0365 (移动) 
 
 ## <a name="follow-us-on-wechat"></a>在微信上关注我们
 ![WeChat QR 代码](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
@@ -50,12 +50,12 @@ ms.locfileid: "44398254"
 + 86 4000 890 365
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-中文和英语：周一至周五上午9点-下午6点
+中文和英语： Mon-Fri 上午9点-下午6点
 
 ### <a name="technical-support"></a>技术支持：
 
-中文和英语电话支持：周一至周五上午9点-晚上9点
+中文和英语电话支持： Mon-Fri 上午9点-9 PM
 
-中文和英语 online 支持（通过管理中心）：每周7天，每天24小时
+通过管理中心) 的中文和英语 online 支持 (：每天24小时，每周7天

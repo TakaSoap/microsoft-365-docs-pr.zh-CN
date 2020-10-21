@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1680c330510eb465408b055d952a7674a7cd5881
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 066a0833eb82ca3561014461c239b98df6ab4ac7
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398458"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643831"
 ---
 # <a name="contact-support-for-bosnia-and-herzegovnia"></a>对波斯尼亚和 Herzegovnia 的联系支持
 
@@ -32,13 +32,13 @@ ms.locfileid: "44398458"
 输入代码7700
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-英语：周一至周五上午9点-下午5点
+英语： Mon-Fri 上午9点-下午5点
 
 ### <a name="technical-support"></a>技术支持：
 
-英语：每天24小时，每周7天
+英语：全天候
 
 备选电话号码： + 387 33 606 100
 

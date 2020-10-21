@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: f9877a28-1434-4108-9e92-f29ef8ee5591
 description: 了解如何在中国使用由世纪互联运营的现有 Office 365 帐户，试用 Office 365 订阅或立即将其购买、添加订阅或获取加载项。
 monikerRange: o365-21vianet
-ms.openlocfilehash: d1ad668a5eb22ab38ac458fa7b1867941e1d6612
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b20233190b117b4b2562bc2e47774541e6e2d3f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399082"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644827"
 ---
 # <a name="buy-or-try-subscriptions-for-office-365-operated-by-21vianet"></a>购买或尝试由世纪互联运营的 Office 365 订阅
 
@@ -37,9 +37,9 @@ ms.locfileid: "44399082"
 
 您可以立即购买订阅，也可以在最长30天内试用 Office 365。 如果喜欢，可以购买试用版订阅，并保留您在试用版中设置的域、数据和配置。
 
-1. 转到[比较 Office 365 for business](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) plan 和选择要购买的计划的名称。 然后，选择 "**立即购买**"。
+1. 转到 [比较 Office 365 for business](https://go.microsoft.com/fwlink/p/?linkid=393691&amp;clcid=0x409) plan 和选择要购买的计划的名称。 然后，选择 " **立即购买**"。
 
-2. 通过填写 "**仅有几个详细信息**" 页来创建帐户。
+2. 通过填写 " **仅有几个详细信息** " 页来创建帐户。
 
 3. 按照说明设置30天试用或完成购买。
 
@@ -58,7 +58,7 @@ ms.locfileid: "44399082"
 4. 在" **购买订阅**"页面中，你将看到可以购买的不同计划。 你已经在试用的计划带有" **试用中**"横幅标记。
 
     > [!IMPORTANT]
-    > 如果从试用计划中购买了不同的计划，则必须将许可证从试用计划重新分配给新计划（在90天的宽限期结束后，才能保留您的数据、帐户和配置）。 否则，您将丢失数据、帐户和配置。
+    > 如果从试用计划中购买了不同的计划，则必须将许可证从试用计划重新分配给新 (计划，在90天的宽限期结束后) ，以便保留您的数据、帐户和配置。 否则，您将丢失数据、帐户和配置。
 
 5. 选择要购买的订阅，然后选择" **立即购买**"。
 
@@ -66,9 +66,9 @@ ms.locfileid: "44399082"
 
 ## <a name="add-subscriptions-or-add-ons-to-an-existing-office-365-account"></a>将订阅或加载项添加到现有的 Office 365 帐户
 
-1. 在 "[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)" 中，转到 "**付费** \> **购买服务**" 页。
+1. 在 " [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)" 中，转到 " **付费** \> **购买服务** " 页。
 
-2. 选择您想要购买的服务，选择 "**购买**"，然后选择 "**立即签出**"。
+2. 选择您想要购买的服务 () ，选择 " **购买**"，然后选择 " **立即签出**"。
 
 3. 按照说明完成购买。
 
@@ -80,7 +80,7 @@ ms.locfileid: "44399082"
 
 - 使用支付宝或中国银联在线支付的在线付款
 
-付款证明将以 Fapiaos 形式提供。 您可以向我们的[发票系统](https://go.microsoft.com/fwlink/p/?LinkId=395314)提交您的发票请求，大约在你支付后三（3）天。 有关详细信息，请参阅[Apply for a 发票 for 由世纪互联运营的 Office 365](apply-for-a-fapiao.md)。
+付款证明将以 Fapiaos 形式提供。 您可以向我们的 [发票系统](https://go.microsoft.com/fwlink/p/?LinkId=395314) 提交发票请求，大约在您支付三个 (3 个) 天之后。 有关详细信息，请参阅 [Apply for a 发票 for 由世纪互联运营的 Office 365](apply-for-a-fapiao.md)。
 
 > [!NOTE]
 >  不接受国际信用卡。

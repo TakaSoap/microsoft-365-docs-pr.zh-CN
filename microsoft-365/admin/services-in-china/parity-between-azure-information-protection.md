@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 了解有关由世纪互联运营的 Office 365 的 Azure 信息保护以及如何为中国的客户配置它的详细信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: ca30811e77f686b92b8cdd13d624182eb0d3039e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445575"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644659"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世纪互联运营的 Office 365 的 Azure 信息保护与商业产品之间的奇偶校验
 
@@ -55,12 +55,12 @@ ms.locfileid: "48445575"
 
 - 检查是否已启用 RMS：
   1. 以管理员身份启动 PowerShell。
-  2. 如果未安装 AIPService 模块，请运行  `Install-Module AipService` 。
+  2. 如果未安装 AIPService 模块，请运行 `Install-Module AipService` 。
   3. 使用导入模块 `Import-Module AipService` 。
-  4. 使用连接到服务  `Connect-AipService -environmentname azurechinacloud` 。
-  5. 运行  `(Get-AipServiceConfiguration).FunctionalState`   并检查状态是否为  `Enabled` 。
+  4. 使用连接到服务 `Connect-AipService -environmentname azurechinacloud` 。
+  5. 运行 `(Get-AipServiceConfiguration).FunctionalState` 并检查状态是否为 `Enabled` 。
 
-- 如果功能状态为  `Disabled` ，则运行  `Enable-AipService` 。
+- 如果功能状态为 `Disabled` ，则运行 `Enable-AipService` 。
 
 ### <a name="dns-configuration-for-encryption-windows"></a> (Windows) 加密的 DNS 配置
 
@@ -70,27 +70,27 @@ ms.locfileid: "48445575"
 
 - 获取 RMS ID：
   1. 以管理员身份启动 PowerShell。
-  2. 如果未安装 AIPService 模块，请运行  `Install-Module AipService` 。
-  3. 使用连接到服务  `Connect-AipService -environmentname azurechinacloud` 。
-  4. 运行  `(Get-AipServiceConfiguration).RightsManagementServiceId`   以获取 RMS ID。
+  2. 如果未安装 AIPService 模块，请运行 `Install-Module AipService` 。
+  3. 使用连接到服务 `Connect-AipService -environmentname azurechinacloud` 。
+  4. 运行 `(Get-AipServiceConfiguration).RightsManagementServiceId` 以获取 RMS ID。
 
 - 登录到您的 DNS 提供商，导航到域的 DNS 设置，然后添加新的 SRV 记录。
-  - 服务 = `_rmsredir`
-  - 协议 = `_http`
-  - 名称 = `_tcp`
-  - Target =  `[GUID].rms.aadrm.cn`   (其中 GUID 是 RMS ID) 
+  - 服务 = `_rmsredir`
+  - 协议 = `_http`
+  - 名称 = `_tcp`
+  - Target = `[GUID].rms.aadrm.cn` (其中 GUID 是 RMS ID) 
   - 优先级、权重、秒、TTL = 默认值
 
-- 将自定义域与 [Azure 门户](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)中的租户相关联。 这将在 DNS 中添加一个条目，在将值添加到 DNS 设置后，可能需要几分钟的时间来进行验证。
+- 将自定义域与 [Azure 门户](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains)中的租户相关联。 这将在 DNS 中添加一个条目，在将值添加到 DNS 设置后，可能需要几分钟的时间来进行验证。
 
 - 使用相应的全局管理员凭据登录到 Microsoft 365 管理中心并添加域 (例如， `contoso.cn`) 用于用户创建。 在验证过程中，可能需要进行其他 DNS 更改。 验证完成后，可以创建用户。
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a> (Mac、iOS、Android) 的加密的 DNS 配置
 
 - 登录到您的 DNS 提供商，导航到域的 DNS 设置，然后添加新的 SRV 记录。
-  - 服务 = `_rmsdisco`
-  - 协议 = `_http`
-  - 名称 = `_tcp`
-  - 目标 = `api.aadrm.cn`
-  - 端口 = `80`
+  - 服务 = `_rmsdisco`
+  - 协议 = `_http`
+  - 名称 = `_tcp`
+  - 目标 = `api.aadrm.cn`
+  - 端口 = `80`
   - 优先级、权重、秒、TTL = 默认值

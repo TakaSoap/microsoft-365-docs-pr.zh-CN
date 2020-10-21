@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 了解有关由世纪互联运营的 Office 365 的适用于 iOS 的 Microsoft Office 应用的详细信息，以及如何为中国的客户下载它。
 monikerRange: o365-21vianet
-ms.openlocfilehash: a29d645f5f3d5624159cfb0e8416e2223834f3f3
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f1179b21b8db9b6ba7ff9016d575e687d802fbda
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545816"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644791"
 ---
 # <a name="office-app-for-ios-for-office-365-operated-by-21vianet"></a>适用于由世纪互联运营的 Office 365 的适用于 iOS 的 office 应用程序
 
