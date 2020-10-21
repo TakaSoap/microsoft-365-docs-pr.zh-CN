@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,31 +13,31 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e0c4cebd1119ef9d5389940a6cfbeb49f40bfa32
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4c24aafe01beb17bc8368453d32b4ec4b8e9611
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44390921"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640147"
 ---
-# <a name="contact-support-for-reunion"></a><span data-ttu-id="60816-103">联系留尼汪岛支持</span><span class="sxs-lookup"><span data-stu-id="60816-103">Contact support for Reunion</span></span>
+# <a name="contact-support-for-reunion"></a><span data-ttu-id="1c94a-103">联系留尼汪岛支持</span><span class="sxs-lookup"><span data-stu-id="1c94a-103">Contact support for Reunion</span></span>
 
-<span data-ttu-id="60816-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="60816-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1c94a-104">[查找其他国家或地区](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1c94a-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="60816-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="60816-105">Phone number</span></span>
-<span data-ttu-id="60816-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="60816-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1c94a-105">电话号码</span><span class="sxs-lookup"><span data-stu-id="1c94a-105">Phone number</span></span>
+<span data-ttu-id="1c94a-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="1c94a-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="60816-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="60816-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="60816-108">帐单支持：</span><span class="sxs-lookup"><span data-stu-id="60816-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1c94a-107">工作时间</span><span class="sxs-lookup"><span data-stu-id="1c94a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1c94a-108">计费支持：</span><span class="sxs-lookup"><span data-stu-id="1c94a-108">Billing Support:</span></span>
 
-<span data-ttu-id="60816-109">法语：周一至周五下午周五</span><span class="sxs-lookup"><span data-stu-id="60816-109">French: Mon-Fri noon-8 PM</span></span>
+<span data-ttu-id="1c94a-109">法语： Mon-Fri noon-8：00 PM</span><span class="sxs-lookup"><span data-stu-id="1c94a-109">French: Mon-Fri noon-8 PM</span></span>
 
-<span data-ttu-id="60816-110">英语：周一至周五下午周五下午8：00点</span><span class="sxs-lookup"><span data-stu-id="60816-110">English: Mon-Fri noon-8 PM</span></span>
+<span data-ttu-id="1c94a-110">英语： Mon-Fri noon-8：00 PM</span><span class="sxs-lookup"><span data-stu-id="1c94a-110">English: Mon-Fri noon-8 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="60816-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="60816-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1c94a-111">技术支持：</span><span class="sxs-lookup"><span data-stu-id="1c94a-111">Technical Support:</span></span>
 
-<span data-ttu-id="60816-112">法语：周一至周五上午11点-11 PM</span><span class="sxs-lookup"><span data-stu-id="60816-112">French: Mon-Fri 11 AM-11 PM</span></span>
+<span data-ttu-id="1c94a-112">法语： Mon-Fri 11 AM-11 PM</span><span class="sxs-lookup"><span data-stu-id="1c94a-112">French: Mon-Fri 11 AM-11 PM</span></span>
 
-<span data-ttu-id="60816-113">英语：每天24小时，每周7天</span><span class="sxs-lookup"><span data-stu-id="60816-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1c94a-113">英语：全天候</span><span class="sxs-lookup"><span data-stu-id="1c94a-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="60816-114">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="60816-114">Local call charges apply</span></span>
+<span data-ttu-id="1c94a-114">本地呼叫费用适用</span><span class="sxs-lookup"><span data-stu-id="1c94a-114">Local call charges apply</span></span>
