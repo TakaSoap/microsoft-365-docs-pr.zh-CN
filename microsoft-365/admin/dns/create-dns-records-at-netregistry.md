@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,246 +22,246 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: 了解如何验证您的域，并在 Netregistry for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400360"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645967"
 ---
-# <a name="create-dns-records-at-netregistry-for-microsoft"></a><span data-ttu-id="10cae-103">在 Netregistry 处为 Microsoft 创建 DNS 记录</span><span class="sxs-lookup"><span data-stu-id="10cae-103">Create DNS records at Netregistry for Microsoft</span></span>
+# <a name="create-dns-records-at-netregistry-for-microsoft"></a><span data-ttu-id="4d545-103">在 Netregistry 处为 Microsoft 创建 DNS 记录</span><span class="sxs-lookup"><span data-stu-id="4d545-103">Create DNS records at Netregistry for Microsoft</span></span>
 
-<span data-ttu-id="10cae-104">如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="10cae-104">[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for.</span></span> 
+<span data-ttu-id="4d545-104">如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="4d545-104">[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for.</span></span> 
   
-<span data-ttu-id="10cae-105">如果 Netregistry 是您的 DNS 托管提供商，请按照本文中的步骤验证您的域并为电子邮件、Skype for Business Online 等设置 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-105">If Netregistry is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
+<span data-ttu-id="4d545-105">如果 Netregistry 是您的 DNS 托管提供商，请按照本文中的步骤验证您的域并为电子邮件、Skype for Business Online 等设置 DNS 记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-105">If Netregistry is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
   
-<span data-ttu-id="10cae-106">下面是要添加的主要记录：</span><span class="sxs-lookup"><span data-stu-id="10cae-106">These are the main records to add.</span></span>
+<span data-ttu-id="4d545-106">下面是要添加的主要记录：</span><span class="sxs-lookup"><span data-stu-id="4d545-106">These are the main records to add.</span></span>
   
-- [<span data-ttu-id="10cae-107">添加 TXT 记录进行验证</span><span class="sxs-lookup"><span data-stu-id="10cae-107">Add a TXT record for verification</span></span>](#add-a-txt-record-for-verification)
+- [<span data-ttu-id="4d545-107">添加 TXT 记录进行验证</span><span class="sxs-lookup"><span data-stu-id="4d545-107">Add a TXT record for verification</span></span>](#add-a-txt-record-for-verification)
     
-- [<span data-ttu-id="10cae-108">添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft</span><span class="sxs-lookup"><span data-stu-id="10cae-108">Add an MX record so email for your domain will come to Microsoft</span></span>](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
+- [<span data-ttu-id="4d545-108">添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft</span><span class="sxs-lookup"><span data-stu-id="4d545-108">Add an MX record so email for your domain will come to Microsoft</span></span>](#add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft)
 
-- [<span data-ttu-id="10cae-109">添加 Microsoft 所需的 CNAME 记录</span><span class="sxs-lookup"><span data-stu-id="10cae-109">Add the CNAME records that are required for Microsoft</span></span>](#add-the-cname-records-that-are-required-for-microsoft)
+- [<span data-ttu-id="4d545-109">添加 Microsoft 所需的 CNAME 记录</span><span class="sxs-lookup"><span data-stu-id="4d545-109">Add the CNAME records that are required for Microsoft</span></span>](#add-the-cname-records-that-are-required-for-microsoft)
     
-- [<span data-ttu-id="10cae-110">为 SPF 添加 TXT 记录以帮助防止垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="10cae-110">Add a TXT record for SPF to help prevent email spam</span></span>](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
+- [<span data-ttu-id="4d545-110">为 SPF 添加 TXT 记录以帮助防止垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="4d545-110">Add a TXT record for SPF to help prevent email spam</span></span>](#add-a-txt-record-for-spf-to-help-prevent-email-spam)
     
-- [<span data-ttu-id="10cae-111">添加 Microsoft 所需的两条 SRV 记录</span><span class="sxs-lookup"><span data-stu-id="10cae-111">Add the two SRV records that are required for Microsoft</span></span>](#add-the-two-srv-records-that-are-required-for-microsoft)
+- [<span data-ttu-id="4d545-111">添加 Microsoft 所需的两条 SRV 记录</span><span class="sxs-lookup"><span data-stu-id="4d545-111">Add the two SRV records that are required for Microsoft</span></span>](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-<span data-ttu-id="10cae-112">在 Netregistry 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。</span><span class="sxs-lookup"><span data-stu-id="10cae-112">After you add these records at Netregistry, your domain will be set up to work with Microsoft services.</span></span>
+<span data-ttu-id="4d545-112">在 Netregistry 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。</span><span class="sxs-lookup"><span data-stu-id="4d545-112">After you add these records at Netregistry, your domain will be set up to work with Microsoft services.</span></span>
   
   
 > [!NOTE]
-> <span data-ttu-id="10cae-p101">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="10cae-p101">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+> <span data-ttu-id="4d545-p101">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="4d545-p101">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="10cae-116">添加 TXT 记录进行验证</span><span class="sxs-lookup"><span data-stu-id="10cae-116">Add a TXT record for verification</span></span>
-<span data-ttu-id="10cae-117"><a name="bkmk_txt"> </a></span><span class="sxs-lookup"><span data-stu-id="10cae-117"><a name="bkmk_txt"> </a></span></span>
+## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="4d545-116">添加 TXT 记录进行验证</span><span class="sxs-lookup"><span data-stu-id="4d545-116">Add a TXT record for verification</span></span>
+<span data-ttu-id="4d545-117"><a name="bkmk_txt"> </a></span><span class="sxs-lookup"><span data-stu-id="4d545-117"><a name="bkmk_txt"> </a></span></span>
 
-<span data-ttu-id="10cae-p102">在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。</span><span class="sxs-lookup"><span data-stu-id="10cae-p102">Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
+<span data-ttu-id="4d545-p102">在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。</span><span class="sxs-lookup"><span data-stu-id="4d545-p102">Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
   
 > [!NOTE]
-> <span data-ttu-id="10cae-p103">此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。</span><span class="sxs-lookup"><span data-stu-id="10cae-p103">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span> 
+> <span data-ttu-id="4d545-p103">此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。</span><span class="sxs-lookup"><span data-stu-id="4d545-p103">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span> 
   
-1. <span data-ttu-id="10cae-122">若要开始，请使用[此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-122">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="10cae-123">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="10cae-123">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="4d545-122">若要开始，请使用 [此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-122">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="4d545-123">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="4d545-123">You'll be prompted to log in.</span></span>
     
     ![Netregistry_login](../../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
   
-2. <span data-ttu-id="10cae-125">在要管理的域旁边，选择 "**管理**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-125">Next to the domain you want to manage, select **Manage**.</span></span>
+2. <span data-ttu-id="4d545-125">在要管理的域旁边，选择 " **管理**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-125">Next to the domain you want to manage, select **Manage**.</span></span>
     
     ![Netregistry_Manage](../../media/64ad542a-5ec4-4148-96f8-d6e163449352.png)
   
-3. <span data-ttu-id="10cae-127">选择 "**区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-127">Select **Zone Manager**.</span></span>
+3. <span data-ttu-id="4d545-127">选择 " **区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-127">Select **Zone Manager**.</span></span>
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. <span data-ttu-id="10cae-129">在 "**添加区域记录**" 下，从列表中选择 " **TXT 记录**"，然后选择 "**创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-129">Under **Add a zone record**, choose **TXT Record** from the list, and then select **Create new record**.</span></span>
+4. <span data-ttu-id="4d545-129">在 " **添加区域记录**" 下，从列表中选择 " **TXT 记录** "，然后选择 " **创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-129">Under **Add a zone record**, choose **TXT Record** from the list, and then select **Create new record**.</span></span>
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
     > [!NOTE]
-    > <span data-ttu-id="10cae-131">必须在 TXT 框中的条目前后使用引号。</span><span class="sxs-lookup"><span data-stu-id="10cae-131">You must use quotation marks before and after the entry in the TXT box.</span></span> 
+    > <span data-ttu-id="4d545-131">必须在 TXT 框中的条目前后使用引号。</span><span class="sxs-lookup"><span data-stu-id="4d545-131">You must use quotation marks before and after the entry in the TXT box.</span></span> 
   
-    <span data-ttu-id="10cae-132">在 "**新建 TXT 记录**" 表单中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="10cae-132">In the **New TXT Record** form, type or copy and paste the values from the following table.</span></span> 
+    <span data-ttu-id="4d545-132">在 " **新建 TXT 记录** " 表单中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="4d545-132">In the **New TXT Record** form, type or copy and paste the values from the following table.</span></span> 
     
-    |<span data-ttu-id="10cae-133">**名称**</span><span class="sxs-lookup"><span data-stu-id="10cae-133">**Name**</span></span>|<span data-ttu-id="10cae-134">**TTL （秒）**</span><span class="sxs-lookup"><span data-stu-id="10cae-134">**TTL (SEC)**</span></span>|<span data-ttu-id="10cae-135">**TXT （指向 "地址" 或 "值"）**</span><span class="sxs-lookup"><span data-stu-id="10cae-135">**TXT (Points to address or value)**</span></span>|
+    |<span data-ttu-id="4d545-133">**名称**</span><span class="sxs-lookup"><span data-stu-id="4d545-133">**Name**</span></span>|<span data-ttu-id="4d545-134">\*\*TTL (秒) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-134">**TTL (SEC)**</span></span>|<span data-ttu-id="4d545-135">\*\*TXT (指向地址或值) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-135">**TXT (Points to address or value)**</span></span>|
     |:-----|:-----|:-----|
-    |<span data-ttu-id="10cae-136">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="10cae-136">(leave blank)</span></span>  <br/> |<span data-ttu-id="10cae-137">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-137">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-138">"MS = msXXXXXXXX"</span><span class="sxs-lookup"><span data-stu-id="10cae-138">"MS=msXXXXXXXX"</span></span>  <br/> <span data-ttu-id="10cae-139">**注意：** 这是一个示例。</span><span class="sxs-lookup"><span data-stu-id="10cae-139">**Note:** This is an example.</span></span> <span data-ttu-id="10cae-140">在这里使用表中的特定“**目标地址或指向的地址**”值。</span><span class="sxs-lookup"><span data-stu-id="10cae-140">Use your specific **Destination or Points to Address** value here, from the table.</span></span> [<span data-ttu-id="10cae-141">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="10cae-141">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)  |
+    |<span data-ttu-id="4d545-136">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="4d545-136">(leave blank)</span></span>  <br/> |<span data-ttu-id="4d545-137">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-137">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-138">"MS = msXXXXXXXX"</span><span class="sxs-lookup"><span data-stu-id="4d545-138">"MS=msXXXXXXXX"</span></span>  <br/> <span data-ttu-id="4d545-139">**注意：** 这是一个示例。</span><span class="sxs-lookup"><span data-stu-id="4d545-139">**Note:** This is an example.</span></span> <span data-ttu-id="4d545-140">在这里使用表中的特定“**目标地址或指向的地址**”值。</span><span class="sxs-lookup"><span data-stu-id="4d545-140">Use your specific **Destination or Points to Address** value here, from the table.</span></span> [<span data-ttu-id="4d545-141">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="4d545-141">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
-6. <span data-ttu-id="10cae-143">选择 "**添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-143">Select **Add record**.</span></span>
+6. <span data-ttu-id="4d545-143">选择 " **添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-143">Select **Add record**.</span></span>
     
-<span data-ttu-id="10cae-144">在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-144">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.</span></span>
+<span data-ttu-id="4d545-144">在在域注册机构网站添加了记录后，你将返回到 Microsoft 并请求记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-144">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.</span></span>
   
-<span data-ttu-id="10cae-145">Microsof 找到正确的 TXT 记录表明域已通过验证。</span><span class="sxs-lookup"><span data-stu-id="10cae-145">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
+<span data-ttu-id="4d545-145">Microsof 找到正确的 TXT 记录表明域已通过验证。</span><span class="sxs-lookup"><span data-stu-id="4d545-145">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
   
-1. <span data-ttu-id="10cae-146">在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-146">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="4d545-146">在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-146">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
     
-2. <span data-ttu-id="10cae-147">在“**域**”页面上，选择要验证的域。</span><span class="sxs-lookup"><span data-stu-id="10cae-147">On the **Domains** page, select the domain that you are verifying.</span></span> 
-    
-    
-  
-3. <span data-ttu-id="10cae-148">在“**设置**”页面上，选择“**开始设置**”。</span><span class="sxs-lookup"><span data-stu-id="10cae-148">On the **Setup** page, select **Start setup**.</span></span>
+2. <span data-ttu-id="4d545-147">在“**域**”页面上，选择要验证的域。</span><span class="sxs-lookup"><span data-stu-id="4d545-147">On the **Domains** page, select the domain that you are verifying.</span></span> 
     
     
   
-4. <span data-ttu-id="10cae-149">在“**验证域**”页面上，选择“**验证**”。</span><span class="sxs-lookup"><span data-stu-id="10cae-149">On the **Verify domain** page, select **Verify**.</span></span>
+3. <span data-ttu-id="4d545-148">在“**设置**”页面上，选择“**开始设置**”。</span><span class="sxs-lookup"><span data-stu-id="4d545-148">On the **Setup** page, select **Start setup**.</span></span>
+    
+    
+  
+4. <span data-ttu-id="4d545-149">在“**验证域**”页面上，选择“**验证**”。</span><span class="sxs-lookup"><span data-stu-id="4d545-149">On the **Verify domain** page, select **Verify**.</span></span>
     
     
   
 > [!NOTE]
->  <span data-ttu-id="10cae-p106">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="10cae-p106">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+>  <span data-ttu-id="4d545-p106">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="4d545-p106">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a><span data-ttu-id="10cae-153">添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft</span><span class="sxs-lookup"><span data-stu-id="10cae-153">Add an MX record so email for your domain will come to Microsoft</span></span>
-<span data-ttu-id="10cae-154"><a name="bkmk_mx"> </a></span><span class="sxs-lookup"><span data-stu-id="10cae-154"><a name="bkmk_mx"> </a></span></span>
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a><span data-ttu-id="4d545-153">添加一条 MX 记录，确保发往你的域的电子邮件将会发送到 Microsoft</span><span class="sxs-lookup"><span data-stu-id="4d545-153">Add an MX record so email for your domain will come to Microsoft</span></span>
+<span data-ttu-id="4d545-154"><a name="bkmk_mx"> </a></span><span class="sxs-lookup"><span data-stu-id="4d545-154"><a name="bkmk_mx"> </a></span></span>
 
-1. <span data-ttu-id="10cae-155">若要开始，请使用[此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-155">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="10cae-156">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="10cae-156">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="4d545-155">若要开始，请使用 [此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-155">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="4d545-156">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="4d545-156">You'll be prompted to log in.</span></span>
     
     ![Netregistry_login](../../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
   
-2. <span data-ttu-id="10cae-158">在要管理的域旁边，选择 "**管理**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-158">Next to the domain you want to manage, select **Manage**.</span></span>
+2. <span data-ttu-id="4d545-158">在要管理的域旁边，选择 " **管理**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-158">Next to the domain you want to manage, select **Manage**.</span></span>
     
     ![Netregistry_Manage](../../media/96e2c6e4-21fd-4405-a4fe-b1188400b985.png)
   
-3. <span data-ttu-id="10cae-160">选择 "**区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-160">Select **Zone Manager**.</span></span>
+3. <span data-ttu-id="4d545-160">选择 " **区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-160">Select **Zone Manager**.</span></span>
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. <span data-ttu-id="10cae-162">在 "**当前区域记录**" 下，选择列表中每条 MX 记录旁边的 "**删除**"，删除默认的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-162">Under **Current zone records**, remove the default MX records by selecting **Remove** next to each MX record in the list.</span></span> 
+4. <span data-ttu-id="4d545-162">在 " **当前区域记录**" 下，选择列表中每条 MX 记录旁边的 " **删除** "，删除默认的 MX 记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-162">Under **Current zone records**, remove the default MX records by selecting **Remove** next to each MX record in the list.</span></span> 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. <span data-ttu-id="10cae-164">在 "**添加区域记录**" 下，从列表中选择 " **MX 记录**"，然后选择 "**创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-164">Under **Add a zone record**, choose **MX Record** from the list, and then select **Create new record**.</span></span>
+5. <span data-ttu-id="4d545-164">在 " **添加区域记录**" 下，从列表中选择 " **MX 记录** "，然后选择 " **创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-164">Under **Add a zone record**, choose **MX Record** from the list, and then select **Create new record**.</span></span>
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
-6. <span data-ttu-id="10cae-166">在 "**新建 MX 记录**" 表单中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="10cae-166">In the **New MX Record** form, type or copy and paste the values from the following table.</span></span> 
+6. <span data-ttu-id="4d545-166">在 " **新建 MX 记录** " 表单中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="4d545-166">In the **New MX Record** form, type or copy and paste the values from the following table.</span></span> 
     
-    |<span data-ttu-id="10cae-167">**名称**</span><span class="sxs-lookup"><span data-stu-id="10cae-167">**Name**</span></span>|<span data-ttu-id="10cae-168">**TTL （秒）**</span><span class="sxs-lookup"><span data-stu-id="10cae-168">**TTL (SEC)**</span></span>|<span data-ttu-id="10cae-169">**Exchange （指向 "地址" 或 "值"）**</span><span class="sxs-lookup"><span data-stu-id="10cae-169">**Exchange (Points to address or value)**</span></span>|<span data-ttu-id="10cae-170">**主机是否处于完全限定状态？**</span><span class="sxs-lookup"><span data-stu-id="10cae-170">**Is host fully qualified?**</span></span>|<span data-ttu-id="10cae-171">**首选项（优先级）**</span><span class="sxs-lookup"><span data-stu-id="10cae-171">**Preference (Priority)**</span></span>|
+    |<span data-ttu-id="4d545-167">**名称**</span><span class="sxs-lookup"><span data-stu-id="4d545-167">**Name**</span></span>|<span data-ttu-id="4d545-168">\*\*TTL (秒) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-168">**TTL (SEC)**</span></span>|<span data-ttu-id="4d545-169">\*\*Exchange (指向地址或值) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-169">**Exchange (Points to address or value)**</span></span>|<span data-ttu-id="4d545-170">**主机是否处于完全限定状态？**</span><span class="sxs-lookup"><span data-stu-id="4d545-170">**Is host fully qualified?**</span></span>|<span data-ttu-id="4d545-171">\*\*首选项 (优先级) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-171">**Preference (Priority)**</span></span>|
     |:-----|:-----|:-----|:-----|:-----|
-    |<span data-ttu-id="10cae-172">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="10cae-172">(leave blank)</span></span>  <br/> |<span data-ttu-id="10cae-173">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-173">3600 (seconds)</span></span>  <br/> | <span data-ttu-id="10cae-174">*\<domain-key\>*。 mail.protection.outlook.com</span><span class="sxs-lookup"><span data-stu-id="10cae-174">*\<domain-key\>*  .mail.protection.outlook.com</span></span>  <br/> <span data-ttu-id="10cae-175">\**注意：\*\*\*\<domain-key\>* 从你的 Microsoft 帐户获取你的。</span><span class="sxs-lookup"><span data-stu-id="10cae-175">**Note:** Get your  *\<domain-key\>*  from your Microsoft account.</span></span>  [<span data-ttu-id="10cae-176">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="10cae-176">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)      |<span data-ttu-id="10cae-177">（选中 "" 复选框）</span><span class="sxs-lookup"><span data-stu-id="10cae-177">(select the checkbox)</span></span>  <br/> |<span data-ttu-id="10cae-178">10  </span><span class="sxs-lookup"><span data-stu-id="10cae-178">10</span></span>  <br/> <span data-ttu-id="10cae-179">For more information about priority, see What is MX priority?</span><span class="sxs-lookup"><span data-stu-id="10cae-179">For more information about priority, see What is MX priority?</span></span>  <br/> |
+    |<span data-ttu-id="4d545-172">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="4d545-172">(leave blank)</span></span>  <br/> |<span data-ttu-id="4d545-173">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-173">3600 (seconds)</span></span>  <br/> | <span data-ttu-id="4d545-174">*\<domain-key\>*  .mail.protection.outlook.com</span><span class="sxs-lookup"><span data-stu-id="4d545-174">*\<domain-key\>*  .mail.protection.outlook.com</span></span>  <br/> <span data-ttu-id="4d545-175">\**注意：\*\*\*\<domain-key\>* 从你的 Microsoft 帐户获取你的。</span><span class="sxs-lookup"><span data-stu-id="4d545-175">**Note:** Get your  *\<domain-key\>*  from your Microsoft account.</span></span>  [<span data-ttu-id="4d545-176">如何查找此项？</span><span class="sxs-lookup"><span data-stu-id="4d545-176">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)      |<span data-ttu-id="4d545-177"> (选中 "" 复选框) </span><span class="sxs-lookup"><span data-stu-id="4d545-177">(select the checkbox)</span></span>  <br/> |<span data-ttu-id="4d545-178">10  </span><span class="sxs-lookup"><span data-stu-id="4d545-178">10</span></span>  <br/> <span data-ttu-id="4d545-179">For more information about priority, see What is MX priority?</span><span class="sxs-lookup"><span data-stu-id="4d545-179">For more information about priority, see What is MX priority?</span></span>  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
-7. <span data-ttu-id="10cae-181">选择 "**添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-181">Select **Add Record**.</span></span>
+7. <span data-ttu-id="4d545-181">选择 " **添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-181">Select **Add Record**.</span></span>
     
     ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
-## <a name="add-the-cname-records-that-are-required-for-microsoft"></a><span data-ttu-id="10cae-183">添加 Microsoft 所需的 CNAME 记录</span><span class="sxs-lookup"><span data-stu-id="10cae-183">Add the CNAME records that are required for Microsoft</span></span>
-<span data-ttu-id="10cae-184"><a name="bkmk_cname"> </a></span><span class="sxs-lookup"><span data-stu-id="10cae-184"><a name="bkmk_cname"> </a></span></span>
+## <a name="add-the-cname-records-that-are-required-for-microsoft"></a><span data-ttu-id="4d545-183">添加 Microsoft 所需的 CNAME 记录</span><span class="sxs-lookup"><span data-stu-id="4d545-183">Add the CNAME records that are required for Microsoft</span></span>
+<span data-ttu-id="4d545-184"><a name="bkmk_cname"> </a></span><span class="sxs-lookup"><span data-stu-id="4d545-184"><a name="bkmk_cname"> </a></span></span>
 
-1. <span data-ttu-id="10cae-185">若要开始，请使用[此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-185">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="10cae-186">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="10cae-186">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="4d545-185">若要开始，请使用 [此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-185">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="4d545-186">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="4d545-186">You'll be prompted to log in.</span></span>
     
     ![Netregistry_login](../../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
   
-2. <span data-ttu-id="10cae-188">在要管理的域旁边，选择 "**管理**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-188">Next to the domain you want to manage, select **Manage**.</span></span>
+2. <span data-ttu-id="4d545-188">在要管理的域旁边，选择 " **管理**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-188">Next to the domain you want to manage, select **Manage**.</span></span>
     
     ![Netregistry_Manage](../../media/7bee4b0f-2c1d-43ca-b1bb-9b889ca0c5e4.png)
   
-3. <span data-ttu-id="10cae-190">选择 "**区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-190">Select **Zone Manager**.</span></span>
+3. <span data-ttu-id="4d545-190">选择 " **区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-190">Select **Zone Manager**.</span></span>
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. <span data-ttu-id="10cae-192">在 "**添加区域记录**" 下，从列表中选择 " **CNAME 记录**"，然后选择 "**创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-192">Under  **Add a zone record**, choose **CNAME Record** from the list, and then select **Create new record**.</span></span>
+4. <span data-ttu-id="4d545-192">在 "  **添加区域记录**" 下，从列表中选择 " **CNAME 记录** "，然后选择 " **创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-192">Under  **Add a zone record**, choose **CNAME Record** from the list, and then select **Create new record**.</span></span>
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
-5. <span data-ttu-id="10cae-194">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="10cae-194">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
+5. <span data-ttu-id="4d545-194">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="4d545-194">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
     
-    |<span data-ttu-id="10cae-195">**名称**</span><span class="sxs-lookup"><span data-stu-id="10cae-195">**Name**</span></span>|<span data-ttu-id="10cae-196">**Type**</span><span class="sxs-lookup"><span data-stu-id="10cae-196">**Type**</span></span>|<span data-ttu-id="10cae-197">**TTL**</span><span class="sxs-lookup"><span data-stu-id="10cae-197">**TTL**</span></span>|<span data-ttu-id="10cae-198">**主机（指向或地址值）**</span><span class="sxs-lookup"><span data-stu-id="10cae-198">**HOST (Points to or address value)**</span></span>|
+    |<span data-ttu-id="4d545-195">**名称**</span><span class="sxs-lookup"><span data-stu-id="4d545-195">**Name**</span></span>|<span data-ttu-id="4d545-196">**类型**</span><span class="sxs-lookup"><span data-stu-id="4d545-196">**Type**</span></span>|<span data-ttu-id="4d545-197">**TTL**</span><span class="sxs-lookup"><span data-stu-id="4d545-197">**TTL**</span></span>|<span data-ttu-id="4d545-198">\*\*主机 (指向或地址值) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-198">**HOST (Points to or address value)**</span></span>|
     |:-----|:-----|:-----|:-----|
-    |<span data-ttu-id="10cae-199">autodiscover</span><span class="sxs-lookup"><span data-stu-id="10cae-199">autodiscover</span></span>  <br/> |<span data-ttu-id="10cae-200">CNAME</span><span class="sxs-lookup"><span data-stu-id="10cae-200">CNAME</span></span>  <br/> |<span data-ttu-id="10cae-201">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-201">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-202">autodiscover.outlook.com</span><span class="sxs-lookup"><span data-stu-id="10cae-202">autodiscover.outlook.com</span></span>  <br/> |
-    |<span data-ttu-id="10cae-203">sip</span><span class="sxs-lookup"><span data-stu-id="10cae-203">sip</span></span>  <br/> |<span data-ttu-id="10cae-204">CNAME</span><span class="sxs-lookup"><span data-stu-id="10cae-204">CNAME</span></span>  <br/> |<span data-ttu-id="10cae-205">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-205">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-206">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="10cae-206">sipdir.online.lync.com</span></span>  <br/> |
-    |<span data-ttu-id="10cae-207">lyncdiscover</span><span class="sxs-lookup"><span data-stu-id="10cae-207">lyncdiscover</span></span>  <br/> |<span data-ttu-id="10cae-208">CNAME</span><span class="sxs-lookup"><span data-stu-id="10cae-208">CNAME</span></span>  <br/> |<span data-ttu-id="10cae-209">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-209">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-210">webdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="10cae-210">webdir.online.lync.com</span></span>  <br/> |
-    |<span data-ttu-id="10cae-211">enterpriseregistration</span><span class="sxs-lookup"><span data-stu-id="10cae-211">enterpriseregistration</span></span>  <br/> |<span data-ttu-id="10cae-212">CNAME</span><span class="sxs-lookup"><span data-stu-id="10cae-212">CNAME</span></span>  <br/> |<span data-ttu-id="10cae-213">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-213">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-214">enterpriseregistration.windows.net</span><span class="sxs-lookup"><span data-stu-id="10cae-214">enterpriseregistration.windows.net</span></span>  <br/> |
-    |<span data-ttu-id="10cae-215">enterpriseenrollment</span><span class="sxs-lookup"><span data-stu-id="10cae-215">enterpriseenrollment</span></span>  <br/> |<span data-ttu-id="10cae-216">CNAME</span><span class="sxs-lookup"><span data-stu-id="10cae-216">CNAME</span></span>  <br/> |<span data-ttu-id="10cae-217">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-217">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-218">enterpriseenrollment-s.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="10cae-218">enterpriseenrollment-s.manage.microsoft.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-199">自动发现</span><span class="sxs-lookup"><span data-stu-id="4d545-199">autodiscover</span></span>  <br/> |<span data-ttu-id="4d545-200">CNAME</span><span class="sxs-lookup"><span data-stu-id="4d545-200">CNAME</span></span>  <br/> |<span data-ttu-id="4d545-201">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-201">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-202">autodiscover.outlook.com</span><span class="sxs-lookup"><span data-stu-id="4d545-202">autodiscover.outlook.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-203">sip</span><span class="sxs-lookup"><span data-stu-id="4d545-203">sip</span></span>  <br/> |<span data-ttu-id="4d545-204">CNAME</span><span class="sxs-lookup"><span data-stu-id="4d545-204">CNAME</span></span>  <br/> |<span data-ttu-id="4d545-205">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-205">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-206">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="4d545-206">sipdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-207">lyncdiscover</span><span class="sxs-lookup"><span data-stu-id="4d545-207">lyncdiscover</span></span>  <br/> |<span data-ttu-id="4d545-208">CNAME</span><span class="sxs-lookup"><span data-stu-id="4d545-208">CNAME</span></span>  <br/> |<span data-ttu-id="4d545-209">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-209">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-210">webdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="4d545-210">webdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-211">enterpriseregistration</span><span class="sxs-lookup"><span data-stu-id="4d545-211">enterpriseregistration</span></span>  <br/> |<span data-ttu-id="4d545-212">CNAME</span><span class="sxs-lookup"><span data-stu-id="4d545-212">CNAME</span></span>  <br/> |<span data-ttu-id="4d545-213">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-213">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-214">enterpriseregistration.windows.net</span><span class="sxs-lookup"><span data-stu-id="4d545-214">enterpriseregistration.windows.net</span></span>  <br/> |
+    |<span data-ttu-id="4d545-215">enterpriseenrollment</span><span class="sxs-lookup"><span data-stu-id="4d545-215">enterpriseenrollment</span></span>  <br/> |<span data-ttu-id="4d545-216">CNAME</span><span class="sxs-lookup"><span data-stu-id="4d545-216">CNAME</span></span>  <br/> |<span data-ttu-id="4d545-217">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-217">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-218">enterpriseenrollment-s.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="4d545-218">enterpriseenrollment-s.manage.microsoft.com</span></span>  <br/> |
        
     ![Netregistry_CNAME_values](../../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
       
-6. <span data-ttu-id="10cae-220">选择 "**添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-220">Select **Add record**.</span></span>
+6. <span data-ttu-id="4d545-220">选择 " **添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-220">Select **Add record**.</span></span>
     
     ![Netregistry_CNAME_values_AddRecord](../../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
   
-7. <span data-ttu-id="10cae-222">重复前面的步骤以创建其他五个 CNAME 记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-222">Repeat the previous steps to create the other five CNAME records.</span></span>
+7. <span data-ttu-id="4d545-222">重复前面的步骤以创建其他五个 CNAME 记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-222">Repeat the previous steps to create the other five CNAME records.</span></span>
     
-    <span data-ttu-id="10cae-223">对于每个记录，键入或复制并将上表中下一行的值粘贴到该记录的框中。</span><span class="sxs-lookup"><span data-stu-id="10cae-223">For each record, type or copy and paste the values from the next row of the table above into the boxes for that record.</span></span>
+    <span data-ttu-id="4d545-223">对于每个记录，键入或复制并将上表中下一行的值粘贴到该记录的框中。</span><span class="sxs-lookup"><span data-stu-id="4d545-223">For each record, type or copy and paste the values from the next row of the table above into the boxes for that record.</span></span>
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="10cae-224">为 SPF 添加 TXT 记录以帮助防止垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="10cae-224">Add a TXT record for SPF to help prevent email spam</span></span>
-<span data-ttu-id="10cae-225"><a name="bkmk_spf"> </a></span><span class="sxs-lookup"><span data-stu-id="10cae-225"><a name="bkmk_spf"> </a></span></span>
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="4d545-224">为 SPF 添加 TXT 记录以帮助防止垃圾邮件</span><span class="sxs-lookup"><span data-stu-id="4d545-224">Add a TXT record for SPF to help prevent email spam</span></span>
+<span data-ttu-id="4d545-225"><a name="bkmk_spf"> </a></span><span class="sxs-lookup"><span data-stu-id="4d545-225"><a name="bkmk_spf"> </a></span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="10cae-226">一个域所拥有的 SPF 的 TXT 记录不能超过一个。</span><span class="sxs-lookup"><span data-stu-id="10cae-226">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="10cae-227">如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。</span><span class="sxs-lookup"><span data-stu-id="10cae-227">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="10cae-228">如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-228">If you already have an SPF record for your domain, don't create a new one for Microsoft.</span></span> <span data-ttu-id="10cae-229">改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的*单个*SPF 记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-229">Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span></span>
+> <span data-ttu-id="4d545-226">一个域所拥有的 SPF 的 TXT 记录不能超过一个。</span><span class="sxs-lookup"><span data-stu-id="4d545-226">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="4d545-227">如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。</span><span class="sxs-lookup"><span data-stu-id="4d545-227">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="4d545-228">如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-228">If you already have an SPF record for your domain, don't create a new one for Microsoft.</span></span> <span data-ttu-id="4d545-229">改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-229">Instead, add the required Microsoft values to the current record so that you have a  *single*  SPF record that includes both sets of values.</span></span>
   
-1. <span data-ttu-id="10cae-230">若要开始，请使用[此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-230">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="10cae-231">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="10cae-231">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="4d545-230">若要开始，请使用 [此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-230">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="4d545-231">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="4d545-231">You'll be prompted to log in.</span></span>
     
     ![Netregistry_login](../../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
   
-2. <span data-ttu-id="10cae-233">在要管理的域旁边，选择 "**管理**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-233">Next to the domain you want to manage, select **Manage**.</span></span>
+2. <span data-ttu-id="4d545-233">在要管理的域旁边，选择 " **管理**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-233">Next to the domain you want to manage, select **Manage**.</span></span>
     
     ![Netregistry_Manage](../../media/4245bbbb-4e2d-49e7-a89c-679949aa3d18.png)
   
-3. <span data-ttu-id="10cae-235">选择 "**区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-235">Select **Zone Manager**.</span></span>
+3. <span data-ttu-id="4d545-235">选择 " **区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-235">Select **Zone Manager**.</span></span>
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. <span data-ttu-id="10cae-237">在 "**添加区域记录**" 下，从列表中选择 " **TXT 记录**"，然后选择 "**创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-237">Under **Add a zone record**, choose **TXT Record** from the list, and then select **Create new record**.</span></span>
+4. <span data-ttu-id="4d545-237">在 " **添加区域记录**" 下，从列表中选择 " **TXT 记录** "，然后选择 " **创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-237">Under **Add a zone record**, choose **TXT Record** from the list, and then select **Create new record**.</span></span>
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
-5. <span data-ttu-id="10cae-239">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="10cae-239">In the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
+5. <span data-ttu-id="4d545-239">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="4d545-239">In the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
     
     > [!NOTE]
-    > <span data-ttu-id="10cae-240">必须在 TXT 框中的条目前后使用引号。</span><span class="sxs-lookup"><span data-stu-id="10cae-240">You must use quotation marks before and after the entry in the TXT box.</span></span> 
+    > <span data-ttu-id="4d545-240">必须在 TXT 框中的条目前后使用引号。</span><span class="sxs-lookup"><span data-stu-id="4d545-240">You must use quotation marks before and after the entry in the TXT box.</span></span> 
   
-    |<span data-ttu-id="10cae-241">**名称**</span><span class="sxs-lookup"><span data-stu-id="10cae-241">**Name**</span></span>|<span data-ttu-id="10cae-242">**Type**</span><span class="sxs-lookup"><span data-stu-id="10cae-242">**Type**</span></span>|<span data-ttu-id="10cae-243">**TTL**</span><span class="sxs-lookup"><span data-stu-id="10cae-243">**TTL**</span></span>|<span data-ttu-id="10cae-244">**TXT 数据（目标）**</span><span class="sxs-lookup"><span data-stu-id="10cae-244">**TXT Data (Target)**</span></span>|
+    |<span data-ttu-id="4d545-241">**名称**</span><span class="sxs-lookup"><span data-stu-id="4d545-241">**Name**</span></span>|<span data-ttu-id="4d545-242">**类型**</span><span class="sxs-lookup"><span data-stu-id="4d545-242">**Type**</span></span>|<span data-ttu-id="4d545-243">**TTL**</span><span class="sxs-lookup"><span data-stu-id="4d545-243">**TTL**</span></span>|<span data-ttu-id="4d545-244">\*\*TXT 数据 (目标) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-244">**TXT Data (Target)**</span></span>|
     |:-----|:-----|:-----|:-----|
-    |<span data-ttu-id="10cae-245">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="10cae-245">(leave blank)</span></span>  <br/> |<span data-ttu-id="10cae-246">TXT</span><span class="sxs-lookup"><span data-stu-id="10cae-246">TXT</span></span>  <br/> |<span data-ttu-id="10cae-247">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-247">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-248">"v = spf1 包括 include spf.protection.outlook.com-all"</span><span class="sxs-lookup"><span data-stu-id="10cae-248">"v=spf1 include:spf.protection.outlook.com -all"</span></span>  <br/> <span data-ttu-id="10cae-249">**注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。</span><span class="sxs-lookup"><span data-stu-id="10cae-249">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
+    |<span data-ttu-id="4d545-245">（保留为空白）</span><span class="sxs-lookup"><span data-stu-id="4d545-245">(leave blank)</span></span>  <br/> |<span data-ttu-id="4d545-246">TXT</span><span class="sxs-lookup"><span data-stu-id="4d545-246">TXT</span></span>  <br/> |<span data-ttu-id="4d545-247">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-247">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-248">"v = spf1 包括 include spf.protection.outlook.com-all"</span><span class="sxs-lookup"><span data-stu-id="4d545-248">"v=spf1 include:spf.protection.outlook.com -all"</span></span>  <br/> <span data-ttu-id="4d545-249">**注意：** 建议复制粘贴此条目，以保证正确保留所有空格。</span><span class="sxs-lookup"><span data-stu-id="4d545-249">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
    
-    ![Netregistry_SPF TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
+    ![Netregistry_SPF-TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
   
-6. <span data-ttu-id="10cae-251">选择 "**添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-251">Select **Add Record**.</span></span>
+6. <span data-ttu-id="4d545-251">选择 " **添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-251">Select **Add Record**.</span></span>
     
-    ![Netregistry_SPF TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
+    ![Netregistry_SPF-TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
   
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a><span data-ttu-id="10cae-253">添加 Microsoft 所需的两条 SRV 记录</span><span class="sxs-lookup"><span data-stu-id="10cae-253">Add the two SRV records that are required for Microsoft</span></span>
-<span data-ttu-id="10cae-254"><a name="bkmk_srv"> </a></span><span class="sxs-lookup"><span data-stu-id="10cae-254"><a name="bkmk_srv"> </a></span></span>
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a><span data-ttu-id="4d545-253">添加 Microsoft 所需的两条 SRV 记录</span><span class="sxs-lookup"><span data-stu-id="4d545-253">Add the two SRV records that are required for Microsoft</span></span>
+<span data-ttu-id="4d545-254"><a name="bkmk_srv"> </a></span><span class="sxs-lookup"><span data-stu-id="4d545-254"><a name="bkmk_srv"> </a></span></span>
 
-1. <span data-ttu-id="10cae-255">若要开始，请使用[此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="10cae-255">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="10cae-256">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="10cae-256">You'll be prompted to log in.</span></span>
+1. <span data-ttu-id="4d545-255">若要开始，请使用 [此链接](https://theconsole.netregistry.com.au/)转到 Netregistry 中的 "域" 页面。</span><span class="sxs-lookup"><span data-stu-id="4d545-255">To get started, go to your domains page in Netregistry by using [this link](https://theconsole.netregistry.com.au/).</span></span> <span data-ttu-id="4d545-256">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="4d545-256">You'll be prompted to log in.</span></span>
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. <span data-ttu-id="10cae-258">在要管理的域旁边，选择 "**管理**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-258">Next to the domain you want to manage, select  **Manage**.</span></span>
+2. <span data-ttu-id="4d545-258">在要管理的域旁边，选择 "  **管理**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-258">Next to the domain you want to manage, select  **Manage**.</span></span>
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
-3. <span data-ttu-id="10cae-260">选择 "**区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-260">Select **Zone Manager**.</span></span>
+3. <span data-ttu-id="4d545-260">选择 " **区域管理器**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-260">Select **Zone Manager**.</span></span>
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. <span data-ttu-id="10cae-262">在 "**添加区域记录**" 下，从列表中选择 " **SRV 记录**"，然后选择 "**创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-262">Under  **Add a zone record**, choose **SRV Record** from the list, and then select **Create new record**.</span></span>
+4. <span data-ttu-id="4d545-262">在 "  **添加区域记录**" 下，从列表中选择 " **SRV 记录** "，然后选择 " **创建新记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-262">Under  **Add a zone record**, choose **SRV Record** from the list, and then select **Create new record**.</span></span>
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
-5. <span data-ttu-id="10cae-264">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="10cae-264">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
+5. <span data-ttu-id="4d545-264">在新记录的框中，键入或复制并粘贴下表中的值。</span><span class="sxs-lookup"><span data-stu-id="4d545-264">In the boxes for the new record, type or copy and paste the values from the following table.</span></span>
     
     > [!NOTE]
-    > <span data-ttu-id="10cae-265">"名称" 字段是服务（例如，_sip）和协议（例如，_tls）的组合。</span><span class="sxs-lookup"><span data-stu-id="10cae-265">The Name field is a combination of the service (for example, _sip) and protocol (for example, _tls).</span></span> 
+    > <span data-ttu-id="4d545-265">"名称" 字段是服务 (的组合，例如 _sip) 和协议 (例如 _tls) 。</span><span class="sxs-lookup"><span data-stu-id="4d545-265">The Name field is a combination of the service (for example, _sip) and protocol (for example, _tls).</span></span> 
   
-    |<span data-ttu-id="10cae-266">**类型**</span><span class="sxs-lookup"><span data-stu-id="10cae-266">**Type**</span></span>|<span data-ttu-id="10cae-267">**名称**</span><span class="sxs-lookup"><span data-stu-id="10cae-267">**Name**</span></span>|<span data-ttu-id="10cae-268">**TTL （秒）**</span><span class="sxs-lookup"><span data-stu-id="10cae-268">**TTL (SEC)**</span></span>|<span data-ttu-id="10cae-269">**优先级**</span><span class="sxs-lookup"><span data-stu-id="10cae-269">**Priority**</span></span>|<span data-ttu-id="10cae-270">**权重**</span><span class="sxs-lookup"><span data-stu-id="10cae-270">**Weight**</span></span>|<span data-ttu-id="10cae-271">**端口**</span><span class="sxs-lookup"><span data-stu-id="10cae-271">**Port**</span></span>|<span data-ttu-id="10cae-272">**目标**</span><span class="sxs-lookup"><span data-stu-id="10cae-272">**Target**</span></span>|
+    |<span data-ttu-id="4d545-266">**类型**</span><span class="sxs-lookup"><span data-stu-id="4d545-266">**Type**</span></span>|<span data-ttu-id="4d545-267">**名称**</span><span class="sxs-lookup"><span data-stu-id="4d545-267">**Name**</span></span>|<span data-ttu-id="4d545-268">\*\*TTL (秒) \*\*</span><span class="sxs-lookup"><span data-stu-id="4d545-268">**TTL (SEC)**</span></span>|<span data-ttu-id="4d545-269">**优先级**</span><span class="sxs-lookup"><span data-stu-id="4d545-269">**Priority**</span></span>|<span data-ttu-id="4d545-270">**权重**</span><span class="sxs-lookup"><span data-stu-id="4d545-270">**Weight**</span></span>|<span data-ttu-id="4d545-271">**端口**</span><span class="sxs-lookup"><span data-stu-id="4d545-271">**Port**</span></span>|<span data-ttu-id="4d545-272">**目标**</span><span class="sxs-lookup"><span data-stu-id="4d545-272">**Target**</span></span>|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |<span data-ttu-id="10cae-273">SRV （服务）</span><span class="sxs-lookup"><span data-stu-id="10cae-273">SRV (service)</span></span>  <br/> |<span data-ttu-id="10cae-274">_sip _tls</span><span class="sxs-lookup"><span data-stu-id="10cae-274">_sip._tls</span></span>  <br/> |<span data-ttu-id="10cae-275">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-275">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-276">100</span><span class="sxs-lookup"><span data-stu-id="10cae-276">100</span></span>  <br/> |<span data-ttu-id="10cae-277">1 </span><span class="sxs-lookup"><span data-stu-id="10cae-277">1</span></span>  <br/> |<span data-ttu-id="10cae-278">443</span><span class="sxs-lookup"><span data-stu-id="10cae-278">443</span></span>  <br/> |<span data-ttu-id="10cae-279">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="10cae-279">sipdir.online.lync.com</span></span>  <br/> |
-    |<span data-ttu-id="10cae-280">SRV （服务）</span><span class="sxs-lookup"><span data-stu-id="10cae-280">SRV (service)</span></span>  <br/> |<span data-ttu-id="10cae-281">_sipfederationtls _tcp</span><span class="sxs-lookup"><span data-stu-id="10cae-281">_sipfederationtls._tcp</span></span>  <br/> |<span data-ttu-id="10cae-282">3600（秒）</span><span class="sxs-lookup"><span data-stu-id="10cae-282">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="10cae-283">100</span><span class="sxs-lookup"><span data-stu-id="10cae-283">100</span></span>  <br/> |<span data-ttu-id="10cae-284">1 </span><span class="sxs-lookup"><span data-stu-id="10cae-284">1</span></span>  <br/> |<span data-ttu-id="10cae-285">5061</span><span class="sxs-lookup"><span data-stu-id="10cae-285">5061</span></span>  <br/> |<span data-ttu-id="10cae-286">sipfed.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="10cae-286">sipfed.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-273">SRV (服务) </span><span class="sxs-lookup"><span data-stu-id="4d545-273">SRV (service)</span></span>  <br/> |<span data-ttu-id="4d545-274">_sip._tls</span><span class="sxs-lookup"><span data-stu-id="4d545-274">_sip._tls</span></span>  <br/> |<span data-ttu-id="4d545-275">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-275">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-276">100</span><span class="sxs-lookup"><span data-stu-id="4d545-276">100</span></span>  <br/> |<span data-ttu-id="4d545-277">1</span><span class="sxs-lookup"><span data-stu-id="4d545-277">1</span></span>  <br/> |<span data-ttu-id="4d545-278">443</span><span class="sxs-lookup"><span data-stu-id="4d545-278">443</span></span>  <br/> |<span data-ttu-id="4d545-279">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="4d545-279">sipdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="4d545-280">SRV (服务) </span><span class="sxs-lookup"><span data-stu-id="4d545-280">SRV (service)</span></span>  <br/> |<span data-ttu-id="4d545-281">_sipfederationtls._tcp</span><span class="sxs-lookup"><span data-stu-id="4d545-281">_sipfederationtls._tcp</span></span>  <br/> |<span data-ttu-id="4d545-282">3600 (秒) </span><span class="sxs-lookup"><span data-stu-id="4d545-282">3600 (seconds)</span></span>  <br/> |<span data-ttu-id="4d545-283">100</span><span class="sxs-lookup"><span data-stu-id="4d545-283">100</span></span>  <br/> |<span data-ttu-id="4d545-284">1</span><span class="sxs-lookup"><span data-stu-id="4d545-284">1</span></span>  <br/> |<span data-ttu-id="4d545-285">5061</span><span class="sxs-lookup"><span data-stu-id="4d545-285">5061</span></span>  <br/> |<span data-ttu-id="4d545-286">sipfed.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="4d545-286">sipfed.online.lync.com</span></span>  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   
-6. <span data-ttu-id="10cae-288">选择 "**添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="10cae-288">Select **Add Record**.</span></span>
+6. <span data-ttu-id="4d545-288">选择 " **添加记录**"。</span><span class="sxs-lookup"><span data-stu-id="4d545-288">Select **Add Record**.</span></span>
     
     ![Netregistry_SRV_values_AddRecord](../../media/abc82061-939f-4757-87e4-0e8f9e43ebcb.png)
   
-7. <span data-ttu-id="10cae-290">重复前面的步骤以创建其他 SRV 记录。</span><span class="sxs-lookup"><span data-stu-id="10cae-290">Repeat the previous steps to create the other SRV record.</span></span>
+7. <span data-ttu-id="4d545-290">重复前面的步骤以创建其他 SRV 记录。</span><span class="sxs-lookup"><span data-stu-id="4d545-290">Repeat the previous steps to create the other SRV record.</span></span>
     
-    <span data-ttu-id="10cae-291">将上表中第二行的值键入或复制并粘贴到第二条记录的框中。</span><span class="sxs-lookup"><span data-stu-id="10cae-291">Type or copy and paste the values from the second row of the table above into the boxes for the second record.</span></span>
+    <span data-ttu-id="4d545-291">将上表中第二行的值键入或复制并粘贴到第二条记录的框中。</span><span class="sxs-lookup"><span data-stu-id="4d545-291">Type or copy and paste the values from the second row of the table above into the boxes for the second record.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="10cae-p113">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="10cae-p113">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
+> <span data-ttu-id="4d545-p113">DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="4d545-p113">Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
 
