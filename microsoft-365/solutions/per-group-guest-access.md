@@ -1,5 +1,5 @@
 ---
-title: 阻止特定组中的来宾用户
+title: 阻止将来宾用户添加到特定组
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 阻止特定组中的来宾用户
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: 了解如何阻止将来宾用户添加到特定组
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377301"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651346"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止来自特定 Microsoft 365 组或 Microsoft 团队团队的来宾用户
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止将来宾用户添加到特定 Microsoft 365 组或 Microsoft 团队团队
 
-如果要允许来宾访问大多数组和团队，但要阻止来宾访问，则可以阻止对各个组和团队的来宾访问。  (阻止来宾对团队的访问权限是通过阻止对关联组的来宾访问来完成的。 ) 
+如果要允许来宾访问大多数组和团队，但要阻止来宾访问，则可以阻止对各个组和团队的来宾访问。  (阻止来宾对团队的访问权限是通过阻止对关联组的来宾访问来完成的。 ) 这将阻止添加新的来宾，但不会删除组或团队中已有的来宾。
 
 如果您在组织中使用敏感度标签，我们建议使用它们来控制每组的来宾访问。 有关如何执行此操作的信息，请 [使用敏感度标签来保护 Microsoft 团队、microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。 这是建议的方法。
 
-您还可以使用 Microsoft PowerShell 阻止对各个组的来宾访问。
+## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 更改组设置
+
+您还可以通过使用 PowerShell 阻止向单个组添加新的来宾。
 
 必须使用预览版本的 [Azure Active Directory PowerShell For Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (Module name **AzureADPreview**) 更改组级别的来宾访问设置：
 

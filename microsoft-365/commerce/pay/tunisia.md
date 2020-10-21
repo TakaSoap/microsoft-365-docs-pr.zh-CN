@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2fa9dcc415eed6c9e9dd84689706567f2052123d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 31e54bedc74d315925e5e03749a5ae9a44a96dc8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400794"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48648295"
 ---
 # <a name="payment-information-for-tunisia"></a>突尼斯的付款信息
 
 [查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。 <!--This should go to the parent "Pay for your Microsoft 365 for business subscription" topic-->
 
-请仅以 USD 为单位付款，并在付款汇款中引用发票编号。
+请仅以 USD 为单位付款，并在您的付款汇款中引用发票编号 (s) 。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

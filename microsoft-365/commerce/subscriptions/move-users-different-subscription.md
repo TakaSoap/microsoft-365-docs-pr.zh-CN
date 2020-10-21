@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: 了解如何在订阅之间移动用户。
 ms.date: 07/01/2020
-ms.openlocfilehash: d110ee7c49befa34f5a2cd3bb44dc114aec25b62
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 79f3e4636ff047c4d6f27d83e3644913a8fbb0b5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016538"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647791"
 ---
 # <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
@@ -40,7 +40,7 @@ ms.locfileid: "45016538"
 
 ## <a name="before-you-begin"></a>准备工作
 
-您必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。
+你必须是全局、许可证或用户管理员才能分配许可证。 有关详细信息，请参阅[关于 Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。
 
 ## <a name="move-users-to-a-different-subscription"></a>将用户移动到其他订阅
 
@@ -50,7 +50,7 @@ ms.locfileid: "45016538"
 2. 选择要替换其现有许可证的用户的名称旁边的圆圈。
 3. 在顶部选择“**更多选项(...)**”，然后选择“**管理产品许可证**”。
 4. 在“**管理产品许可证**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-5. 将您要分配给这些用户的许可证的开关切换到 "**开**" 位置。
+5. 将您要分配给这些用户的许可证的开关切换到 " **开** " 位置。
     可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。 这将删除所选用户之前的所有许可证分配。
 6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”。
 
@@ -62,7 +62,7 @@ ms.locfileid: "45016538"
 2. 选中要为其替换现有许可证的用户的姓名旁边的框。
 3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
 4. 在“**分配产品**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-5. 将您要分配给这些用户的许可证的开关切换到 "**开**" 位置。
+5. 将您要分配给这些用户的许可证的开关切换到 " **开** " 位置。
     可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。 这将删除所选用户之前的所有许可证分配。
 6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”\>“**关闭**”。
 
@@ -74,7 +74,7 @@ ms.locfileid: "45016538"
 2. 选中要为其替换现有许可证的用户的姓名旁边的框。
 3. 在“**批量操作**”窗格中，选择“**编辑产品许可证**”。
 4. 在“**分配产品**”窗格中，选择“**替换现有产品许可证分配**”\>“**下一步**”。
-5. 将您要分配给这些用户的许可证的开关切换到 "**开**" 位置。
+5. 将您要分配给这些用户的许可证的开关切换到 " **开** " 位置。
     可限制能提供给用户的具体服务。 将不希望所选用户具备的服务的开关切换到“**关**”。 这将删除所选用户之前的所有许可证分配。
 6. 在“**替换现有产品**”窗格底部，选择“**替换**”\>“**关闭**”\>“**关闭**”。
 
@@ -82,12 +82,12 @@ ms.locfileid: "45016538"
 
 ## <a name="next-steps"></a>后续步骤
 
-如果您不打算将[未使用的许可证重新分配给其他用户](../../managed-desktop/get-started/assign-licenses.md)，请考虑[从订阅中删除许可证](../../commerce/licenses/buy-licenses.md)，以便不会支付超过所需数量的许可证。
+如果您不打算将 [未使用的许可证重新分配给其他用户](../../managed-desktop/get-started/assign-licenses.md)，请考虑 [从订阅中删除许可证](../../commerce/licenses/buy-licenses.md) ，以便不会支付超过所需数量的许可证。
 
 ## <a name="related-content"></a>相关内容
 
-[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[从订阅中删除许可证](../../commerce/licenses/remove-licenses-from-subscription.md)（文章） \
-[手动更改计划](change-plans-manually.md)（文章） \
-[了解 Microsoft 365 for business 中的订阅和许可证](../licenses/subscriptions-and-licenses.md)（文章） \
-[购买另一个 Microsoft 365 for business 订阅](../buy-another-subscription.md)（文章）
+[向用户分配许可证](../../admin/manage/assign-licenses-to-users.md) (文章) \
+ (文章) \[中删除订阅中的许可证](../../commerce/licenses/remove-licenses-from-subscription.md)
+ (文章) \[手动更改计划](change-plans-manually.md)
+[了解 Microsoft 365 for business (文章中的订阅和许可证](../licenses/subscriptions-and-licenses.md)) \
+[购买另一个 Microsoft 365 for business 订阅](../buy-another-subscription.md) (文章) 
