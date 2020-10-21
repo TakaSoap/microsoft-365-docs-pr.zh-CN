@@ -143,7 +143,7 @@ ms.locfileid: "48277492"
 
 8. 使用全局管理员凭据登录。 出现以下屏幕时，选择 " **接受**"。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text=""接受权限" 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="邮箱迁移的租户准备。":::
     
 9. 切换回远程 PowerShell 会话并按 Enter 继续。
 
@@ -162,37 +162,9 @@ ms.locfileid: "48277492"
 
 1.  在设置过程中，以由目标管理员指定的-ResourceTenantAdminEmail 的身份登录邮箱。 查找来自目标租户的电子邮件邀请，然后选择 " **开始入门** " 按钮。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text=""已邀请您" 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="邮箱迁移的租户准备。" 接受邀请。
 
-2. 选择 " **接受** " 接受邀请。
-
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受权限的对话框":::
-
-   > [!NOTE]
-   > 如果你未收到此电子邮件或找不到此电子邮件，则会向目标租户管理员提供一个直接 URL，以接受邀请。 URL 应在目标租户管理员的远程 PowerShell 会话的脚本中。
-
-3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个已启用邮件的安全组以控制目标租户允许的邮箱列表，以将源租户中的 (移动) 从源租户推送到目标租户。 您无需提前填充此组，但必须至少提供一个组，才能运行 "安装步骤" (脚本) 。 不支持嵌套组。 
-
-4. 在 [此处](https://github.com/microsoft/cross-tenant/releases/tag/Preview)从 GitHub 存储库中下载源租户安装程序的 SetupCrossTenantRelationshipForTargetResource.ps1 脚本。 
-
-5. 使用 Exchange 管理员权限创建与源租户的远程 PowerShell 连接。 由于 Azure 应用程序创建过程，不需要全局管理员权限来配置源租户（仅限目标租户）。
-
-6. 将目录更改为脚本位置，或验证脚本当前是否已保存到远程 PowerShell 会话中的当前位置。
-
-7. 运行带有以下必需参数和值的脚本。
-
-    | 参数 | 值 |
-    |-----|------|
-    | -SourceMailboxMovePublishedScopes | 由源租户为在迁移范围内的标识/邮箱创建的已启用邮件的安全组。 |
-    | -ResourceTenantDomain | 源租户域名，如 fabrikam \. onmicrosoft.com。 |
-    | -TargetTenantDomain | 目标租户域名，如 contoso \. onmicrosoft.com。 |
-    | -ApplicationId | 用于迁移的应用程序的 Azure 应用程序 ID (GUID) 。 通过 Azure 门户提供的应用程序 ID (Azure AD、企业应用程序、应用名称、应用程序 ID) 或包含在邀请电子邮件中。  |
-    | -TargetTenantId | 目标租户的租户 ID。 例如，contoso onmicrosoft.com 租户的 Azure AD 租户 ID \. 。 |
-    |||
-    
-    下面是一个示例。
-    ```powershell
-    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="邮箱迁移的租户准备。" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
     Exchange setup complete.
 
     ```

@@ -39,7 +39,7 @@ ms.locfileid: "46868932"
 
 管理员和邮件发件人可以使用从 web 上的 Outlook 直接应用的加密来吊销加密邮件。 例如，使用 "仅加密" 选项加密的邮件。
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="显示 web 上的 Outlook 中的 "仅加密" 选项的屏幕截图。":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a>已撤销加密电子邮件的收件人体验
 
@@ -55,13 +55,11 @@ ms.locfileid: "46868932"
 
    如果邮件是可吊销的，您将在邮件顶部看到 "删除外部访问" 链接。
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="显示要在 Outlook 网页版中吊销的加密邮件的屏幕截图。":::
-
-2. 单击 " **删除外部访问权限** " 以撤消邮件。
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。" 以撤消邮件。
 
    该消息显示其状态为 "已吊销"。
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="在 Outlook 网页版中显示已撤销加密邮件的屏幕截图。":::
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。":::
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a>如何以管理员身份撤消加密邮件
 

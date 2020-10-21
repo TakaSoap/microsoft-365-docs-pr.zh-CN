@@ -28,7 +28,7 @@ ms.locfileid: "47419294"
 
 1. 选择 " **立即获取** "，然后选择 " **添加预订日历**"。 如果这不是您首次在此页上，则可以选择另一个预订日历或对另一个预订日历执行搜索。
 
-:::image type="content" source="media/bookings - get it now.png" alt-text="屏幕截图：立即获取 "记帐" 页面。选择 "立即获取" 以开始使用预订":::
+:::image type="content" source="media/bookings - get it now.png" alt-text="屏幕截图：立即获取 &quot;记帐&quot; 页面。选择 &quot;立即获取&quot; 以开始使用预订&quot;:::
 
 2. 输入你的业务名称和业务类型，然后选择 " **继续**"。
 

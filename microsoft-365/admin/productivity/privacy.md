@@ -55,7 +55,7 @@ ms.locfileid: "48287222"
 
 在员工体验中，我们为每个用户级别的活动详细信息提供每个类别详细信息页面的网格格式。 由于此级别的详细信息不适合于工作效率分数的所有潜在访问者，我们已在 Azure AD 中创建了一个自定义角色–使用率摘要报告读者角色–使您能够访问您的组织内的更广泛的访问群体，使其仅包含聚合指标，并且在体验中不会对每一级别的详细信息进行访问。
 
-:::image type="content" source="../../media/communicationspage.jpg" alt-text="生产率报告中的 "通信" 页面。":::
+:::image type="content" source="../../media/communicationspage.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
 
 ## <a name="anonymization-of-user-level-metrics"></a>Anonymization 的用户级指标
 
@@ -65,7 +65,7 @@ ms.locfileid: "48287222"
 2. 选择 "  **报告** "，然后选择  **显示用户、组和网站名称的匿名标识符，以提高工作效率的分数和使用情况报告**。 此设置既可应用于使用情况报告，也可应用于模板应用。
 3. 选择 "  **保存更改**"。
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="将用户信息设为匿名的报告。":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
 
 ## <a name="capability-to-opt-out-of-employee-experience"></a>能够选择退出员工体验
 
@@ -75,4 +75,4 @@ ms.locfileid: "48287222"
 2. 选择 "  **报告** "，然后取消选中 "  **共享你的组织&#39;的数据，其中包含生产率评分的员工体验见解**" 框。 若要了解如何在 Intune 配置管理器中修改终结点分析的数据共享设置，请单击 " **了解更多**"。
 3. 选择 "  **保存更改**"。
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="您可以选择退出员工体验的 "组织设置" 页。":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
