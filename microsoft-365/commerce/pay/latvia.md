@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70adbced817dbbdeddd011f14385393f04231b06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: abd4156c463fc30b24d2d3e0a2bbe4fc539d85e3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402374"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649483"
 ---
 # <a name="payment-information-for-latvia"></a>拉脱维亚的付款信息
 
 [查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请只付款 EUR 并在付款汇款中引用发票编号。
+请仅在 EUR 中付款，并在付款汇款中 (s) 引用发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

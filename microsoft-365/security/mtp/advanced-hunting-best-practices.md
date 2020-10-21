@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477001"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649663"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477001"
 
 应用这些建议以更快地获得结果，并避免在运行复杂查询时超时。 有关提高查询性能的更多指导，请参阅 [Kusto 查询最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
 
-## <a name="understand-cpu-resource-limits"></a>了解 CPU 资源限制
-根据其大小，每个租户都有权访问为运行高级搜寻查询而分配的一组 CPU 资源。 有关各种服务限制的详细信息，请 [阅读有关高级搜寻限制](advanced-hunting-limits.md)的信息。
+## <a name="understand-cpu-resource-quotas"></a>了解 CPU 资源配额
+根据其大小，每个租户都有权访问为运行高级搜寻查询而分配的一组 CPU 资源。 有关各种服务限制的详细信息，请 [阅读有关高级搜寻配额和使用情况参数](advanced-hunting-limits.md)的信息。
 
-定期运行多个查询的客户应跟踪消耗量并在本文中应用优化指南，以最大限度地减少因超出限制而导致的中断。
+定期运行多个查询的客户应跟踪消耗量并在本文中应用优化指南，以最大限度地减少因超出配额或使用参数而导致的中断。
 
 ## <a name="general-optimization-tips"></a>常规优化提示
 
@@ -253,7 +253,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ### <a name="parse-strings"></a>分析字符串
 您可以使用多种函数来有效处理需要分析或转换的字符串。 
 
-| 字符串 | 函数 | 用法示例 |
+| String | 函数 | 用法示例 |
 |--|--|--|
 | 命令行 | [parse_command_line ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | 提取命令和所有参数。 | 
 | Paths | [parse_path ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | 提取文件或文件夹路径的各个部分。 |
@@ -265,7 +265,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 ## <a name="related-topics"></a>相关主题
 - [Kusto 查询语言文档](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [服务限制](advanced-hunting-limits.md)
+- [配额和使用参数](advanced-hunting-limits.md)
 - [处理高级搜寻错误](advanced-hunting-errors.md)
 - [高级搜寻概述](advanced-hunting-overview.md)
 - [了解查询语言](advanced-hunting-query-language.md)

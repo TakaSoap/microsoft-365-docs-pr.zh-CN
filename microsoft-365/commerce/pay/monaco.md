@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b0a76fce48e1a9f168dd4cf92a4bcd5503f076f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b511892e93861d8a925cfacbdae858f0f57a1d69
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404042"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649171"
 ---
 # <a name="payment-information-for-monaco"></a>摩纳哥的付款信息
 
 [查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请只付款 EUR 并在付款汇款中引用发票编号。
+请仅在 EUR 中付款，并在付款汇款中 (s) 引用发票编号。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 

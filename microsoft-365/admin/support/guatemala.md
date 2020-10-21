@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解如何联系你所在国家或地区的支持人员。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d56e09dc37e0dbca9517e21aa386baac86d1e293
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: abe95a39cfea8443a1f27288500ec9dbc8396610
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397726"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642235"
 ---
 # <a name="contact-support-for-guatemala"></a>对危地马拉的联系支持
 
@@ -32,9 +32,9 @@ ms.locfileid: "44397726"
 输入代码5002
 
 ## <a name="hours"></a>工作时间
-### <a name="billing-support"></a>帐单支持：
+### <a name="billing-support"></a>计费支持：
 
-西班牙语：周一至周五上午9点-下午5点
+西班牙语： Mon-Fri 上午9点-下午5点
 
 ### <a name="technical-support"></a>技术支持：
 
