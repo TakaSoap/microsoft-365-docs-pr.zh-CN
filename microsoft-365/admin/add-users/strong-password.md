@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Windows PowerShell 为用户设置强密码要求。
-ms.openlocfilehash: 1230ff4b4235ac5acbc28aa823506dfa5af26c2d
-ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
+ms.openlocfilehash: 1634e2f0de2cdd2cac5e1928adbef54457e50716
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "48581014"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626139"
 ---
 # <a name="set-strong-password-requirement-for-users"></a>为用户设置强密码要求
 
@@ -42,10 +42,15 @@ ms.locfileid: "48581014"
 
 1. [使用 PowerShell 连接到 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)。
 
-2. 使用 PowerShell 时，您可以使用此命令为特定用户禁用强密码：
+2. 使用 PowerShell，可以通过以下命令为所有用户启用强密码要求：
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $true
+
+3. You can turn on strong password requirements for specific users with this command:
+
+    ```powershell
+    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $true
     ```
 
 > [!NOTE]

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离邮件。 具有 Office 365 高级威胁防护的组织中的管理员 (Office 365 ATP) 还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600537"
+ms.locfileid: "48626163"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -70,6 +70,7 @@ ms.locfileid: "48600537"
    - **隔离原因**<sup>\*</sup>
    - **释放?**<sup>\*</sup>
    - **策略类型**<sup>\*</sup>
+   - **Expires**
    - **收件人**
    - **邮件 ID**
    - **策略名称**
@@ -90,17 +91,17 @@ ms.locfileid: "48600537"
 
    - **隔离原因**：
      - **策略**：邮件与邮件流规则的条件相匹配 (也称为传输规则) 。
-     - **群发**
+     - **大量邮件**
      - **网络钓鱼**：垃圾邮件筛选器判定为 **网络钓鱼电子邮件** 或反钓鱼防护隔离了邮件 ([欺骗设置](set-up-anti-phishing-policies.md#spoof-settings) 或 [模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)) 。
      - **恶意软件**
      - **垃圾邮件**
      - **高可信度网络钓鱼**
-     
+
    - **策略类型**：按策略类型筛选邮件：
      - **反恶意软件策略**
      - **安全附件策略**
      - **反网络钓鱼策略**
-     - **托管的内容筛选器策略**
+     -  (反垃圾邮件策略) 的**托管内容筛选器策略**
      - **传输规则**
 
    - **电子邮件收件人**：所有用户或仅发送给你的邮件。 最终用户只能管理发送给他们的隔离邮件。
@@ -115,11 +116,13 @@ ms.locfileid: "48600537"
 
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
 
-   - **策略名称**：使用邮件的整个策略名称。 搜索不区分大小写。
+   - **策略名称**：使用邮件的完整策略名称。 搜索不区分大小写。
 
    - **收件人电子邮件地址**：单个收件人的电子邮件地址。
 
    - **主题**：使用邮件的整个主题。 搜索不区分大小写。
+  
+   - **策略名称**：负责隔离邮件的策略的名称。
 
    输入搜索条件后，单击“刷新”**** ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。
 
@@ -147,6 +150,8 @@ ms.locfileid: "48600537"
 
 - **隔离原因**：显示邮件是否已被标识为 **垃圾**邮件、 **批量**、 **网络钓鱼**、与邮件流规则匹配 (**传输规则**) 或被标识为包含 **恶意软件**。
 
+- **收件人计数**
+
 - **收件人**：如果邮件有多个收件人，需要单击“预览邮件”**** 或“查看邮件头”****，以查看完整的收件人列表。
 
 - **到期时间**：邮件自动从隔离中永久删除的日期/时间。
@@ -173,7 +178,6 @@ ms.locfileid: "48600537"
   有关释放邮件的说明：
 
   - 不能多次将邮件释放到同一收件人。
-
   - 只有未收到邮件的收件人才会显示在潜在收件人列表中。
 
 - **查看邮件头**：选择此链接可查看邮件头文本。 若要深入分析邮件头字段和值，请将邮件头文本复制到剪贴板，然后选择“Microsoft 邮件头分析器”****，即可转到远程连接分析器（如果希望在不离开 Microsoft 365 的情况下完成这项任务，请右键单击并选择“在新标签页中打开”****）。 将邮件头粘贴到页面上的“邮件头分析器”部分中，然后选择“分析邮件头”****：
@@ -219,13 +223,13 @@ ms.locfileid: "48600537"
 > [!NOTE]
 > 本节中隔离文件的过程仅适用于 ATP 计划1和计划2订阅者。
 
-在具有 ATP 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中管理隔离的文件。
+在具有 ATP 的组织中，管理员可以在 SharePoint Online、OneDrive for Business 和 Microsoft 团队中管理隔离的文件。 若要对这些文件启用保护，请参阅 [打开适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
 ### <a name="view-quarantined-files"></a>查看隔离的文件
 
 1. 在安全与合规中心内，依次转到“威胁管理”****\>“审阅”****\>“隔离”****。
 
-2. 将已 **隔离的视图** 更改为默认值 **文件**。 您可以通过单击可用的列标题对字段进行排序。
+2. 将已 **隔离的视图** 更改为值 **文件**。 您可以通过单击可用的列标题对字段进行排序。
 
 3. 若要对结果进行排序，可以单击可用列标题。 单击“修改列”**** 最多可显示七列。 默认列以星号 (<sup>\*</sup>) 标记：
 
@@ -248,6 +252,7 @@ ms.locfileid: "48600537"
      - 自定义日期/时间范围。
    - **接收时间**
    - **隔离原因**：唯一的可用值是 **恶意软件**。
+   - **策略类型**
 
 找到特定的隔离文件后，选择该文件查看其详细信息，并对其执行操作 (例如，查看、释放、下载或删除邮件) 。
 
@@ -293,8 +298,6 @@ ms.locfileid: "48600537"
 
 - **释放文件**
 - **删除文件**：在显示的警告中单击 **"是"** 后，会立即删除文件。
-
-1. 使用具有全局管理员权限的工作或学校帐户 (或适当的安全 & 合规中心角色在组织中) ，登录并 [转到安全 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>使用 Exchange Online PowerShell 或独立 EOP PowerShell 查看和管理隔离的邮件和文件
 

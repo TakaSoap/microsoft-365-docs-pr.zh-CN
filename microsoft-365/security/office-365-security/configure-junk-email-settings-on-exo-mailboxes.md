@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203343"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626151"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
@@ -42,7 +42,7 @@ ms.locfileid: "48203343"
 
  在邮箱上禁用垃圾邮件规则时，EOP 无法根据垃圾邮件筛选判定操作将邮件移动到 "垃圾邮件" 文件夹。 **将邮件移动到 "垃圾邮件" 文件夹** 或邮箱中的 "安全列表" 集合。
 
-管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可以使用 Exchange Online PowerShell 在邮箱 (安全发件人列表、安全收件人列表和阻止发件人列表) 的 "安全发件人" 列表中配置安全列表集合中的条目。
+管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可以使用 Exchange Online PowerShell 在邮箱 (安全发件人列表、安全收件人列表和阻止发件人列表) 中的 "安全发件人" 列表中配置安全列表集合中的条目。
 
 > [!NOTE]
 > 来自用户添加到其自己的安全发件人列表中的发件人发来的邮件将跳过连接筛选作为 EOP 的一部分 (SCL 为-1) 。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请按照本主题后面的  [关于 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook) 一节中所述的那样使用组策略。 策略筛选、内容筛选和高级威胁防护 (ATP) 检查仍将应用于邮件。
@@ -104,7 +104,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ****
 
-|Set-mailboxjunkemailconfiguration 上的参数|Outlook 网页设置|
+|Set-MailboxJunkEmailConfiguration 上的参数|Outlook 网页设置|
 |---|---|
 |_BlockedSendersAndDomains_|**将来自这些发件人或域的邮件移到我的"垃圾邮件"文件夹**|
 |_ContactsTrusted_|**信任来自我的联系人的邮件**|
