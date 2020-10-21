@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318171"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626185"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -125,13 +125,9 @@ ms.locfileid: "48318171"
 
     - **对于 Skype For Business Online 聊天通信**：分配个人用户或将 [通讯组](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) 分配给通信合规性策略。 此设置适用于一对一或一对多的用户/聊天关系。
 
-- **第三方来源**：可以扫描第三方源的通信，以获取导入到 Microsoft 365 组织中的邮箱的数据。 连接器支持以下第三方资源：
+- **第三方来源**：您可以从第三方源（如 [即时 Bloomberg](archive-instant-bloomberg-data.md)、可 [宽延时间](archive-slack-data.md)、 [缩放](archive-zoommeetings-data.md)、SMS 和许多其他资源）中扫描从 Microsoft 365 组织中导入的数据的通信。 有关通信合规性支持的连接器的完整列表，请参阅 [存档第三方数据](archiving-third-party-data.md)。
 
-    - [即时 Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg 消息](archive-bloomberg-message-data.md)
-    - [ICE 聊天](archive-icechat-data.md)
-
-您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略向导" 的 " **第三方源** " 部分仅显示当前配置的第三方连接器。
+    您必须先为 Microsoft 365 组织配置第三方连接器，然后才能将连接器分配给通信合规性策略。 "通信合规性策略向导" 的 " **第三方源** " 部分仅显示当前配置的第三方连接器。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>从 Office 365 中的监察转换
 
@@ -256,7 +252,7 @@ ms.locfileid: "48318171"
 |**模板名称** | 是 | "通知" 模板的友好名称，您将在修正期间的 "通知" 工作流中选择，支持文本字符。 |
 | **发件人地址** | 是 | 将邮件发送给具有策略匹配的一个或多个用户或组的地址，该用户或组将从 Active Directory 中为订阅选择的一个或多个用户或组。 |
 | **抄送和密件抄送地址** | 否 | 从 Active Directory 为你的订阅选择的策略匹配通知的可选用户或组。 |
-| **Subject** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
+| **主题** | 是 | 显示在邮件主题行中的信息支持文本字符。 |
 | **邮件正文** | 是 | 显示在邮件正文中的信息支持文本或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用于通知的 HTML
@@ -283,7 +279,7 @@ ms.locfileid: "48318171"
 
 通过通信合规性筛选器，可以对警报消息进行筛选和排序，以便更快地进行调查和修正操作。 筛选在每个策略的 " **挂起** " 和 " **已解决** " 选项卡上可用。 若要将筛选器或筛选器集保存为已保存的筛选器查询，必须将一个或多个值配置为筛选器选择。 下表概述了筛选器详细信息：
 
-|**Filter**|**Details**|
+|**筛选器**|**Details**|
 |:-----|:-----|
 | **Date** | 组织中的用户发送或接收邮件的日期。 若要筛选一天，请选择以您想要的结果所在的日期开始，并在下一天结束的日期范围。 例如，如果您希望筛选9/20/2020 的结果，则应选择筛选器日期范围为9/20/2020-9/21/2020。|
 | **File 类** | 基于邮件类型（ *邮件* 或 *附件*）的邮件类。 |
@@ -293,7 +289,7 @@ ms.locfileid: "48318171"
 | **收件人** | 向其发送邮件的用户。 |
 | **Sender** | 发送邮件的人员。 |
 | **发件人域** | 发送邮件的域。 |
-| **Size** | 邮件的大小，以 KB 为单位。 |
+| **大小** | 邮件的大小，以 KB 为单位。 |
 | **主题/职务** | 邮件主题或聊天标题。 |
 | **Tags** | 分配给邮件的标记，无论是*可疑*的*还是**不兼容*的。 |
 | **升级到** | 作为邮件升级操作的一部分包含的人员的用户名。 |
