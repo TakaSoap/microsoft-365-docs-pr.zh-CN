@@ -62,7 +62,7 @@ ms.locfileid: "47962533"
         - <span data-ttu-id="5220f-139">**取消预定** 这将取消预订并将其从员工的日历中删除。</span><span class="sxs-lookup"><span data-stu-id="5220f-139">**Cancel booking** This cancels the booking and removes it from the staff's calendar.</span></span>
         - <span data-ttu-id="5220f-140">**新预定** 此选项将用户带列出的所有服务和人员的自助服务页面，以安排新的预订。</span><span class="sxs-lookup"><span data-stu-id="5220f-140">**New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.</span></span>
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="预订中的 "管理预订" 按钮":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
         <span data-ttu-id="5220f-142">仅当你熟悉访问自助服务页面的客户时，我们才建议启用此设置。</span><span class="sxs-lookup"><span data-stu-id="5220f-142">We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.</span></span>
 
@@ -74,7 +74,7 @@ ms.locfileid: "47962533"
 
 9. <span data-ttu-id="5220f-148">**每个事件的最大与会者数** 通过此设置，您可以创建要求多人预订相同约会时间和相同员工的服务 (如健身类) 。</span><span class="sxs-lookup"><span data-stu-id="5220f-148">**Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class).</span></span> <span data-ttu-id="5220f-149">所选服务、员工和时间的约会时间段将可用于预订，直到达到您指定的与会者的最大数量。</span><span class="sxs-lookup"><span data-stu-id="5220f-149">The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached.</span></span> <span data-ttu-id="5220f-150">可以在 "预定 Web 应用" 的 "日历" 选项卡中查看当前约会容量和与会者。</span><span class="sxs-lookup"><span data-stu-id="5220f-150">Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.</span></span>
 
-    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="在预订中设置最大与会者的示例":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
 10. <span data-ttu-id="5220f-152">**默认价格**  这是将在自助服务页面上显示的价格。</span><span class="sxs-lookup"><span data-stu-id="5220f-152">**Default price**  This is the price that will display on the Self-Service page.</span></span> <span data-ttu-id="5220f-153">如果选择 " **价格未设置** "，则不会显示价格或对成本或定价的引用。</span><span class="sxs-lookup"><span data-stu-id="5220f-153">If **Price not set** is selected, then no price or reference to cost or pricing will appear.</span></span>
 
@@ -92,21 +92,21 @@ ms.locfileid: "47962533"
 
     - <span data-ttu-id="5220f-162">默认的确认和提醒电子邮件包括有关约会的基本信息，例如客户/客户名称、教职员工成员姓名、所预订的服务或约会以及约会的时间。</span><span class="sxs-lookup"><span data-stu-id="5220f-162">The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment.</span></span> <span data-ttu-id="5220f-163">对于联机会议，还会包含指向加入的链接。</span><span class="sxs-lookup"><span data-stu-id="5220f-163">For online meetings, a link to join will also be included.</span></span> <span data-ttu-id="5220f-164">如果启用此设置，则还可以管理预订， (如步骤 8) 中所述。</span><span class="sxs-lookup"><span data-stu-id="5220f-164">The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).</span></span>
 
-        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="来自预定的确认电子邮件":::
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
     - <span data-ttu-id="5220f-166">（可选）您可以在此处包含任何其他文本，例如有关重新计划或客户应为约会选择的信息。</span><span class="sxs-lookup"><span data-stu-id="5220f-166">Optionally, you can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment.</span></span> <span data-ttu-id="5220f-167">以下是添加到原始确认电子邮件中的自定义文本的示例，可在 **电子邮件确认字段的其他信息** 中看到：</span><span class="sxs-lookup"><span data-stu-id="5220f-167">The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:</span></span>
 
-        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="预订电子邮件中的其他信息":::
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
 14. <span data-ttu-id="5220f-169">**为客户启用短信通知** 如果选择此选项，则会将 SMS 消息发送给客户，但前提是他们选择加入。</span><span class="sxs-lookup"><span data-stu-id="5220f-169">**Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.</span></span>
 
     - <span data-ttu-id="5220f-170">"手动预订和自助服务" 页面上的 "选择加入" 框：</span><span class="sxs-lookup"><span data-stu-id="5220f-170">Opt-in box on the manual booking and Self-Service Page:</span></span>
 
-        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="预订中的自愿加入框":::
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
     - <span data-ttu-id="5220f-172">短信通知的外观如下所示 (请注意，SMS 通知目前仅适用于北美) ：</span><span class="sxs-lookup"><span data-stu-id="5220f-172">Text message notifications will look like the following (note that SMS notifications are currently only available in North America):</span></span>
 
-        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="来自预定的文本通知":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="在预订中加入团队会议的链接示例":::
 
 15. <span data-ttu-id="5220f-174">**发布选项** 选择是否让此服务在自助服务页面上显示为 bookable，或仅在预订 Web 应用程序中的 "日历" 选项卡上创建服务 bookable。</span><span class="sxs-lookup"><span data-stu-id="5220f-174">**Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.</span></span>
 

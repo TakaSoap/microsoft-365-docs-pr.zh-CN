@@ -28,7 +28,7 @@ ms.locfileid: "47419294"
 
 1. <span data-ttu-id="439d5-110">选择 " **立即获取** "，然后选择 " **添加预订日历**"。</span><span class="sxs-lookup"><span data-stu-id="439d5-110">Select **Get it now** and choose, **Add a booking calendar**.</span></span> <span data-ttu-id="439d5-111">如果这不是您首次在此页上，则可以选择另一个预订日历或对另一个预订日历执行搜索。</span><span class="sxs-lookup"><span data-stu-id="439d5-111">If this isn't your first time on this page, you can select another booking calendar or do a search for another booking calendar.</span></span>
 
-:::image type="content" source="media/bookings - get it now.png" alt-text="屏幕截图：立即获取 "记帐" 页面。选择 "立即获取" 以开始使用预订":::
+:::image type="content" source="media/bookings - get it now.png" alt-text="屏幕截图：立即获取 &quot;记帐&quot; 页面。选择 &quot;立即获取&quot; 以开始使用预订":::
 
 2. <span data-ttu-id="439d5-113">输入你的业务名称和业务类型，然后选择 " **继续**"。</span><span class="sxs-lookup"><span data-stu-id="439d5-113">Enter your business name and business type and select **Continue**.</span></span>
 

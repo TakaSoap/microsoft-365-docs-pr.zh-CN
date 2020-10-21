@@ -39,7 +39,7 @@ ms.locfileid: "46868932"
 
 <span data-ttu-id="dfcce-117">管理员和邮件发件人可以使用从 web 上的 Outlook 直接应用的加密来吊销加密邮件。</span><span class="sxs-lookup"><span data-stu-id="dfcce-117">Admins and message senders can revoke messages that are encrypted using encryption applied directly from Outlook on the web.</span></span> <span data-ttu-id="dfcce-118">例如，使用 "仅加密" 选项加密的邮件。</span><span class="sxs-lookup"><span data-stu-id="dfcce-118">For example, messages encrypted with the Encrypt Only option.</span></span>
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="显示 web 上的 Outlook 中的 "仅加密" 选项的屏幕截图。":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。":::
 
 ## <a name="recipient-experience-for-revoked-encrypted-emails"></a><span data-ttu-id="dfcce-120">已撤销加密电子邮件的收件人体验</span><span class="sxs-lookup"><span data-stu-id="dfcce-120">Recipient experience for revoked encrypted emails</span></span>
 
@@ -55,13 +55,13 @@ ms.locfileid: "46868932"
 
    <span data-ttu-id="dfcce-126">如果邮件是可吊销的，您将在邮件顶部看到 "删除外部访问" 链接。</span><span class="sxs-lookup"><span data-stu-id="dfcce-126">If the mail is revocable, you'll see the "Remove external access" link at the top of the message.</span></span>
 
-    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="显示要在 Outlook 网页版中吊销的加密邮件的屏幕截图。":::
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。":::
 
 2. <span data-ttu-id="dfcce-128">单击 " **删除外部访问权限** " 以撤消邮件。</span><span class="sxs-lookup"><span data-stu-id="dfcce-128">Click **Remove external access** to revoke the message.</span></span>
 
    <span data-ttu-id="dfcce-129">该消息显示其状态为 "已吊销"。</span><span class="sxs-lookup"><span data-stu-id="dfcce-129">The message shows that its status is revoked.</span></span>
 
-   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="在 Outlook 网页版中显示已撤销加密邮件的屏幕截图。":::
+   :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="显示 web 上的 Outlook 中的 &quot;仅加密&quot; 选项的屏幕截图。":::
 
 ## <a name="how-to-revoke-an-encrypted-message-as-an-administrator"></a><span data-ttu-id="dfcce-131">如何以管理员身份撤消加密邮件</span><span class="sxs-lookup"><span data-stu-id="dfcce-131">How to revoke an encrypted message as an administrator</span></span>
 

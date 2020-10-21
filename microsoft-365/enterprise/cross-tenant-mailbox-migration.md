@@ -143,7 +143,7 @@ ms.locfileid: "48277492"
 
 8. <span data-ttu-id="c1655-215">使用全局管理员凭据登录。</span><span class="sxs-lookup"><span data-stu-id="c1655-215">Sign in with your Global Admin credentials.</span></span> <span data-ttu-id="c1655-216">出现以下屏幕时，选择 " **接受**"。</span><span class="sxs-lookup"><span data-stu-id="c1655-216">When the following screen is presented, select **Accept**.</span></span>
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text=""接受权限" 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="邮箱迁移的租户准备。":::
     
 9. <span data-ttu-id="c1655-218">切换回远程 PowerShell 会话并按 Enter 继续。</span><span class="sxs-lookup"><span data-stu-id="c1655-218">Switch back to the Remote PowerShell session and hit Enter to proceed.</span></span>
 
@@ -162,11 +162,11 @@ ms.locfileid: "48277492"
 
 1.  <span data-ttu-id="c1655-223">在设置过程中，以由目标管理员指定的-ResourceTenantAdminEmail 的身份登录邮箱。</span><span class="sxs-lookup"><span data-stu-id="c1655-223">Sign in to your mailbox as the -ResourceTenantAdminEmail specified by the target admin during their setup.</span></span> <span data-ttu-id="c1655-224">查找来自目标租户的电子邮件邀请，然后选择 " **开始入门** " 按钮。</span><span class="sxs-lookup"><span data-stu-id="c1655-224">Find the email invitation from the target tenant, and then select the **Get Started** button.</span></span>
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text=""已邀请您" 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="邮箱迁移的租户准备。":::
 
 2. <span data-ttu-id="c1655-226">选择 " **接受** " 接受邀请。</span><span class="sxs-lookup"><span data-stu-id="c1655-226">Select **Accept** to accept the invitation.</span></span>
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受权限的对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="邮箱迁移的租户准备。":::
 
    > [!NOTE]
    > <span data-ttu-id="c1655-228">如果你未收到此电子邮件或找不到此电子邮件，则会向目标租户管理员提供一个直接 URL，以接受邀请。</span><span class="sxs-lookup"><span data-stu-id="c1655-228">If you do not get this email or cannot find it, the target tenant admin was provided a direct URL that can be given to you to accept the invitation.</span></span> <span data-ttu-id="c1655-229">URL 应在目标租户管理员的远程 PowerShell 会话的脚本中。</span><span class="sxs-lookup"><span data-stu-id="c1655-229">The URL should in the in the transcript of the target tenant admin's Remote PowerShell session.</span></span>

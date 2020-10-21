@@ -55,7 +55,7 @@ ms.locfileid: "48287222"
 
 <span data-ttu-id="5a286-124">在员工体验中，我们为每个用户级别的活动详细信息提供每个类别详细信息页面的网格格式。</span><span class="sxs-lookup"><span data-stu-id="5a286-124">Within Employee experience, we provide per-user level activity details in grid format for each category detail page.</span></span> <span data-ttu-id="5a286-125">由于此级别的详细信息不适合于工作效率分数的所有潜在访问者，我们已在 Azure AD 中创建了一个自定义角色–使用率摘要报告读者角色–使您能够访问您的组织内的更广泛的访问群体，使其仅包含聚合指标，并且在体验中不会对每一级别的详细信息进行访问。</span><span class="sxs-lookup"><span data-stu-id="5a286-125">As this level of detail is not suitable for all potential visitors of Productivity Score, we have created a custom role within Azure AD – Usage Summary Reports Reader role – to enable access to a wider set of visitors within your org to only the aggregate metrics and no per-level details within the experience.</span></span>
 
-:::image type="content" source="../../media/communicationspage.jpg" alt-text="生产率报告中的 "通信" 页面。":::
+:::image type="content" source="../../media/communicationspage.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
 
 ## <a name="anonymization-of-user-level-metrics"></a><span data-ttu-id="5a286-127">Anonymization 的用户级指标</span><span class="sxs-lookup"><span data-stu-id="5a286-127">Anonymization of user level metrics</span></span>
 
@@ -65,7 +65,7 @@ ms.locfileid: "48287222"
 2. <span data-ttu-id="5a286-131">选择 "  **报告** "，然后选择  **显示用户、组和网站名称的匿名标识符，以提高工作效率的分数和使用情况报告**。</span><span class="sxs-lookup"><span data-stu-id="5a286-131">Select  **Reports** , and then choose to  **Display anonymous identifiers for user, group and site names in Productivity Score and Usage Reports**.</span></span> <span data-ttu-id="5a286-132">此设置既可应用于使用情况报告，也可应用于模板应用。</span><span class="sxs-lookup"><span data-stu-id="5a286-132">This setting gets applied both to the usage reports as well as to the template app.</span></span>
 3. <span data-ttu-id="5a286-133">选择 "  **保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="5a286-133">Select  **Save changes**.</span></span>
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="将用户信息设为匿名的报告。":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
 
 ## <a name="capability-to-opt-out-of-employee-experience"></a><span data-ttu-id="5a286-135">能够选择退出员工体验</span><span class="sxs-lookup"><span data-stu-id="5a286-135">Capability to opt out of Employee experience</span></span>
 
@@ -75,4 +75,4 @@ ms.locfileid: "48287222"
 2. <span data-ttu-id="5a286-139">选择 "  **报告** "，然后取消选中 "  **共享你的组织&#39;的数据，其中包含生产率评分的员工体验见解**" 框。</span><span class="sxs-lookup"><span data-stu-id="5a286-139">Select  **Reports** , and then un-check the box that says  **Share your org&#39;s data with Productivity Score Employee Experience insights**.</span></span> <span data-ttu-id="5a286-140">若要了解如何在 Intune 配置管理器中修改终结点分析的数据共享设置，请单击 " **了解更多**"。</span><span class="sxs-lookup"><span data-stu-id="5a286-140">To understand how to modify data-sharing settings for Endpoint Analytics in the Intune configuration manager, click on **Learn More**.</span></span>
 3. <span data-ttu-id="5a286-141">选择 "  **保存更改**"。</span><span class="sxs-lookup"><span data-stu-id="5a286-141">Select  **Save changes**.</span></span>
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="您可以选择退出员工体验的 "组织设置" 页。":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
