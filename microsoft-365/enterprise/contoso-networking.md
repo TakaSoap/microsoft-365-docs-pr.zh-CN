@@ -14,106 +14,106 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 网络基础结构及其如何使用 SD WAN 技术实现最佳网络性能到 Microsoft 365 for enterprise 云服务。
-ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 了解 Contoso 网络基础结构，以及公司如何使用其 SD WAN 技术实现最佳网络性能到 Microsoft 365 for enterprise 云服务。
+ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685814"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637183"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
-为了采用云包容性基础结构，Contoso 的网络工程师从根本上改变了网络流量流向云服务的方式。他们没有采用内部中心和辐射模型（专注于下一级 Contoso 办事处层次结构的网络连接和流量），而是尽力将用户位置映射到本地 Internet 出口，并将本地连接映射到 Internet 上的最近 Microsoft 365 网络位置。
+为了采用云包容的基础结构，Contoso 为云服务的网络通信的传播方式设计了一个根本性的转变。除了将网络连接和通信集中在 office 层次结构的下一级的内部中心辐射型模型中，它们还将用户位置映射到 internet 上最近的 Microsoft 365 网络位置的本地 internet 出口和本地连接。
 
-## <a name="contosos-networking-infrastructure"></a>Contoso 网络基础结构
+## <a name="networking-infrastructure"></a>网络基础结构
 
-关联自己在世界各地办事处的 Contoso 网络包括以下要素：
+以下是链接到全球各地的 Contoso 办事处的网络元素：
 
 - 多协议标签交换 (MPLS) WAN 网络
 
-  在中心辐射型配置中，MPLS WAN 网络将巴黎总部连接到地区办事处，并将地区办事处连接到附属办事处。这样便于用户访问构成巴黎办事处业务线应用程序的本地服务器。它还会将任何通用 Internet 流量路由到网络安全设备会擦除请求的巴黎办事处。在每个办事处内，路由器将流量路由到子网上的有线主机或无线接入点（使用专用 IP 地址空间）。
+  MPLS WAN 网络将巴黎总部和区域办事处连接到分支和集线器配置中的卫星办公室。网络使用户能够访问在巴黎总部中组成业务线应用程序的本地服务器。它还会将任何常规 internet 流量路由到巴黎办事处，网络安全设备将擦除请求。在每个办公室中，路由器会将流量传递给有线主机或子网上的无线访问点，这将使用专用 IP 地址空间。
 
-- Microsoft 365 流量的本地直接 Internet 访问
+- Microsoft 365 流量的本地直接 internet 访问
 
-  每个办事处都有内含一条或多条本地 Internet ISP 网络线路的软件定义 WAN (SD-WAN) 设备，可通过代理服务器自行连接 Internet。这通常实现为与本地 ISP 的 WAN 链接，本地 ISP 提供公共 IP 地址和本地 DNS 服务器。
+  每个 office 都有一个软件定义的 WAN (SD WAN) 设备，该设备具有一个或多个本地 internet ISP 网络电路，通过代理服务器拥有自己的 internet 连接。这通常作为指向本地 ISP 的 WAN 链接实现，同时也提供公用 IP 地址和本地 DNS 服务器。
 
 - Internet 网站
 
-  Contoso 拥有 contoso.com 公共域名。用于订购产品的 Contoso 公共网站是一组服务器，位于巴黎园区中连接到 Internet 的数据中心内。Contoso 在 Internet 上使用 /24 公用 IP 地址范围。
+  Contoso 拥有 contoso \. com 公共域名称。Contoso 公共网站订购产品是在巴黎校园中连接到 internet 的数据中心中的一组服务器。Contoso 在 internet 上使用 a/24 公用 IP 地址范围。
 
-图 1 显示 Contoso 的网络基础结构及其 Internet 连接。
+图1显示 Contoso 网络基础结构及其与 internet 的连接。
 
 ![Contoso 网络](../media/contoso-networking/contoso-networking-fig1.png)
  
-**图 1：Contoso 网络**
+**图1： Contoso 网络**
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>使用 SD-WAN 与 Microsoft 建立最佳网络连接
 
 Contoso 遵循了 [Microsoft 365 网络连接原则](microsoft-365-network-connectivity-principles.md)：
 
-1. 标识并区分 Microsoft 365 网络流量
-2. 实现本地连接出口
-3. 避免网络发卡
-4. 绕过重复的网络安全设备
+- 标识并区分 Microsoft 365 网络流量
+- 实现本地连接出口
+- 避免网络发卡
+- 绕过重复的网络安全设备
 
-Microsoft 365 的网络流量分为三个类别：优化、允许和默认。 “优化”流量和“允许”流量是受信任的网络流量，其在终结点上加密并得到保护，并发送到 Microsoft 365 网络。
+Microsoft 365 的网络流量有三种类别： " *优化*"、" *允许*" 和 " *默认*"。 优化和允许流量是在终结点进行加密和保护的受信任网络流量，它是面向 Microsoft 365 网络的。
 
 Contoso 决定：
 
-- 对“优化”和“允许”类别流量使用直接 Internet 出口，并将所有“默认”类别流量转发到巴黎总部的中央 Internet 连接。
+- 使用直接 internet 出口以优化和允许类别流量，并将所有默认类别流量转发到基于巴黎的中央 internet 连接。
 
-- 在每个办事处位置都部署 SD-WAN 设备，以轻松遵循这些原则，并实现 Microsoft 365 基于云的服务的最佳网络性能。
+- 在每个办公室上部署 SD WAN 设备，以一种简单的方式来遵循这些原则，并实现 Microsoft 365 基于云的服务的最佳网络性能。
 
-  SD-WAN 设备具有一个用于本地办事处网络的 LAN 端口和多个 WAN 端口。 一个 WAN 端口连接到其 MPLS 网络，另一个 WAN 端口连接到本地 ISP 线路。 SD-WAN 设备通过 ISP 链接路由“优化”和“允许”类别的网络流量。
+  SD-WAN 设备具有一个用于本地办事处网络的 LAN 端口和多个 WAN 端口。 一个 WAN 端口连接到其 MPLS 网络。 另一个连接到本地 ISP 电路。 SD-WAN 设备通过 ISP 链接路由“优化”和“允许”类别的网络流量。
 
-## <a name="contosos-line-of-business-app-infrastructure"></a>Contoso 业务线应用程序基础结构
+## <a name="the-contoso-line-of-business-app-infrastructure"></a>Contoso 业务线应用程序基础结构
 
-Contoso 针对以下方案构建了业务线应用程序和服务器 Intranet 基础结构：
+Contoso 为以下各项构建业务线应用程序和服务器 intranet 基础结构：
 
 - 附属办事处使用本地缓存服务器来存储经常访问的文档和内部网站。
 - 地区中心对地区办事处和附属办事处使用地区应用程序服务器。这些服务器与巴黎总部的服务器同步。
-- 巴黎园区的数据中心包含为整个组织提供服务的集中式应用程序服务器。
+- 巴黎校园数据中心包含为整个组织提供服务的集中式应用程序服务器。
 
-图 2 展示了跨 Contoso Intranet 访问服务器时的网络流量百分比。
+图2显示了跨 Contoso intranet 访问服务器时使用的网络流量容量百分比。
 
-![Contoso 内部应用程序的基础结构](../media/contoso-networking/contoso-networking-fig2.png)
+![适用于内部应用程序的 Contoso 基础结构](../media/contoso-networking/contoso-networking-fig2.png)
  
-**图 2：Contoso 内部应用程序的基础结构**
+**图2：适用于内部应用程序的 Contoso 基础结构**
 
-对于分支办事处或区域中心办事处的用户，员工所需资源的 60% 可由分支办事处和区域中心办事处服务器提供。其他 40% 的资源请求则必须通过 WAN 链接到巴黎园区。
+对于附属或区域中心办公室，可以通过卫星和区域中心办公室服务器来处理员工所需的60% 的资源。 额外的40% 的资源请求必须通过 WAN 链接进入巴黎校园。
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Contoso 对适用于企业的 Microsoft 365 的网络分析和网络的准备工作
+## <a name="network-analysis-and-preparation-for-microsoft-365-for-enterprise"></a>适用于企业的 Microsoft 365 的网络分析和准备工作
 
-Contoso 用户成功采用 Microsoft 365 for enterprise services，具体取决于与 Internet 的高可用性和高性能连接，或直接与 Microsoft 云服务的连接。Contoso 采取以下步骤来规划和实施针对企业云服务的 Microsoft 365 的优化连接：
+Contoso 用户成功采用了适用于企业服务的 Microsoft 365，这取决于与 internet 的高可用性和高性能连接，或直接连接到 Microsoft 云服务。 Contoso 采取以下步骤来规划和实施针对企业云服务的 Microsoft 365 的优化连接：
 
-1. 绘制了公司 WAN 网络图来协助计划
+1. 创建公司 WAN 网络图以协助规划
 
-   Contoso 首先执行了网络计划，具体是绘制了显示办事处位置、现有网络连接、现有网络外围设备和网络上托管的各类服务的网络图。他们在计划和实现网络连接过程中的每个后续步骤都参考了此图。
+   为了启动其网络规划，Contoso 创建了一个显示其办公室位置、现有网络连接、现有网络外围设备以及在网络上进行管理的服务类别的图表。 他们在规划和实现网络连接的每个后续步骤中使用此图。
 
 2. 为适用于企业网络连接的 Microsoft 365 创建计划
 
-   Contoso 根据 [Microsoft 365 网络连接原则](microsoft-365-network-connectivity-principles.md)，提供了参考网络体系结构，将 SD-WAN 确定为 Microsoft 365 连接的首选拓扑。
+   Contoso 使用 [Microsoft 365 网络连接原则](microsoft-365-network-connectivity-principles.md) 和示例参考网络体系结构，将 SD WAN 标识为 Microsoft 365 连接的首选拓扑。
 
-3. 分析了每个办事处的 Internet 连接利用率和 MPLS WAN 带宽，并根据需要增加了带宽
+3. 在每个办公室分析 internet 连接利用率和 MPLS-WAN 带宽，并根据需要增加带宽
 
-   Contoso 分析了每个办事处的当前使用情况，并增加了线路，以便预测 Microsoft 365 基于云的流量平均有 20% 未用容量。
+   分析了每个 office 的当前使用情况，并增加了电路，以便预测的 Microsoft 365 基于云的流量将使用平均20% 的未使用容量。
 
-4. 优化了 Microsoft 网络服务性能
+4. 优化 Microsoft 网络服务的性能
 
-   Contoso 确定了 Office 365、Intune 和 Azure 终结点的集合，并在 Internet 路径中配置了防火墙、安全设备和其他系统，以实现最佳性能。 Office 365“优化”和“允许”类别流量的终结点已配置到 SD-WAN 设备，以便通过 ISP 线路进行路由。
+   Contoso 确定了 Office 365、Intune 和 Azure 终结点集以及 internet 路径中配置的防火墙、安全设备和其他系统，以实现最佳性能。 Office 365 的终结点优化并允许类别流量配置为 SD-WAN 设备，以通过 ISP 电路进行路由。
 
-5. 配置了内部 DNS
+5. 配置内部 DNS
 
    DNS 必须能正常运行，才能查找本地 Microsoft 365 流量。
 
-6. 验证了网络终结点和端口连接
+6. 验证网络终结点和端口连接性
 
-   Contoso 运行了 Microsoft 提供的网络连接测试工具，以验证适用于企业云服务的 Microsoft 365 的连接。
+   Contoso 已运行 Microsoft 网络连接测试工具，以验证适用于企业云服务的 Microsoft 365 的连接。
 
-7. 优化了员工计算机的网络连接
+7. 优化员工计算机以实现网络连接
 
-   Contoso 检查了个人计算机，以确保最新操作系统更新已安装，且终结点安全监视在所有客户端上都有效。
+   检查了单个计算机以确保安装了最新的操作系统更新，并且所有客户端上的终结点安全监视处于活动状态。
 
 ## <a name="next-step"></a>后续步骤
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams 设备使用情况
+title: Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过从 Microsoft 365 报告中获取 Microsoft 团队应用使用情况报告，深入了解你的组织中使用的 Microsoft 团队应用。
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949070"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636969"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况
 
@@ -51,7 +51,7 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |Item|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
-|用户名  <br/> |用户的显示名称。 您可以单击 "显示名称" 以转到 Microsoft 团队管理中心中的 "用户设置" 页。  <br/> |
+|用户名  <br/> |用户的显示名称。  <br/> |
 |Windows  <br/> |如果用户在基于 Windows 的计算机上的工作组桌面客户端中处于活动状态，则选择此选项。  <br/> |
 |Mac  <br/> |如果用户在 macOS 计算机上的团队桌面客户端中处于活动状态，则选择此选项。  <br/> |
 |iOS  <br/> |如果用户在 iOS 的工作组移动客户端处于活动状态，则选择此选项。  <br/> |
@@ -61,4 +61,5 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |Web  <br/> |如果用户在设备上的工作组 web 客户端中处于活动状态，则选择此选项。|
 | (UTC) 的上次活动日期  <br/> |上次 (UTC) 用户参与团队活动的日期。  <br/> |
 |已许可|如果用户已被授权使用团队，则选择此选项。|
+|团队活动总数|选定时间段内的团队活动总数。 |
 |||

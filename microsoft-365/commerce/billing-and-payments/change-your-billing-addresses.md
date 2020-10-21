@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 了解如何为 Microsoft 365 for business 更新帐单邮寄地址。 您还可以更新用于接收帐单通知的电子邮件地址。
-ms.openlocfilehash: 5e6fc2bad63c445f516ba3cd473bd40c7bfcb2e3
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: d6083a170adddc6bd389e5f33a1050a7e048ad31
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324348"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638479"
 ---
 # <a name="change-your-billing-addresses"></a>更改帐单邮寄地址
 
@@ -130,7 +130,7 @@ ms.locfileid: "47324348"
 ::: moniker range="o365-worldwide"
 
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 " **产品** " 选项卡上，选择要更改的订阅。
+2. 在“**产品**”选项卡上，选择要更改的订阅。
 3. 在 "订阅详细信息" 页上的 " **服务使用地址** " 部分，选择 " **编辑服务使用地址**"。
 4. 在 " **编辑服务使用地址** " 窗格中，更新您的地址，然后选择 " **保存**"。
 

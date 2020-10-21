@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取 Microsoft 团队用户活动报告，并深入了解组织中的团队活动。
-ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104506"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637063"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 团队用户活动中的 microsoft 365 报告
 
@@ -37,14 +37,14 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 2. 在仪表板主页中，单击 Microsoft 团队活动卡片上的 " **查看更多** " 按钮。
-  
+
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解读 Microsoft Teams 用户活动报表
 
 您可以通过选择 " **用户活动** " 选项卡来查看团队报告中的用户活动。 <br/>![Microsoft 365 报表-Microsoft 团队用户活动。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 选择 " **选择列** " 可在报告中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间**、**视频时间**和**屏幕共享时间**的导出格式遵循 ISO8601 日期格式。
+您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间**、**视频时间**和**屏幕共享时间**的导出格式遵循 ISO8601 持续时间格式。
 
 |Item|说明|
 |:-----|:-----|

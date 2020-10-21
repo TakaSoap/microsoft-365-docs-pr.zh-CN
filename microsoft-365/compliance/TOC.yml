@@ -634,6 +634,8 @@
               href: attorney-privilege-detection.md
             - name: 对话审阅集
               href: conversation-review-sets.md
+            - name: CJK 语言支持
+              href: ediscovery-cjk-support.md
             - name: 分配电子数据展示权限
               href: assign-ediscovery-permissions.md
             - name: 关键字查询和搜索条件

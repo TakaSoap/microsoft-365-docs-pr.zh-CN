@@ -1,10 +1,10 @@
 ---
-title: 了解 Microsoft 365 for business （中国台湾）的电子发票
+title: '了解适用于 Microsoft 365 的电子发票 (台湾) '
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 ms.assetid: 66315e5b-883a-432b-8650-d896f95af228
 ROBOTS: NOINDEX
 description: 了解适用于中国台湾的 Microsoft 365 for business 电子发票。
-ms.openlocfilehash: 1ea9ff21e25229924cd6815999b9c0868173026f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2cdc3f6fe4b87f92b16355f10416fa99712c6fcb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401782"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638467"
 ---
-# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>了解 Microsoft 365 for business （中国台湾）的电子发票
+# <a name="understand-your-e-invoice-for-microsoft-365-for-business-taiwan"></a>了解适用于 Microsoft 365 的电子发票 (台湾) 
 
-电子发票是买方购买后由卖方签发的电子发票（根据台湾税务主管机构的电子发票要求）。 将信息传输到台湾税务机构的电子发票云以进行记录保留。 有关中国台湾电子发票的相关信息，请参阅此处：<a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
+电子发票是买方购买后由卖方签发的电子发票（根据台湾税务主管机构的电子发票要求）。 将信息传输到台湾税务机构的电子发票云以进行记录保留。 有关中国台湾电子发票的相关信息，请参阅此处： <a href="https://www.einvoice.nat.gov.tw/" target="_blank">財政部電子發票整合服務平台</a>
   
 电子发票的示例副本包括：
   
@@ -42,7 +42,7 @@ ms.locfileid: "44401782"
   
 ## <a name="when-will-e-invoice-start-for-my-microsoft-365-services"></a>何时将为我的 Microsoft 365 服务启动 e 发票？
 
-Microsoft 将在**9 月15日**将当前 computerized 发票替换为电子发票。 对于在9月15日之前的记帐，将直接向客户发送纸面副本税务发票。 在9月15日之后，电子发票将在 Microsoft 365 管理中心提供，以供你查看、下载和打印，并且不再向你直接邮寄。 
+Microsoft 将在 **9 月15日**将当前 computerized 发票替换为电子发票。 对于在9月15日之前的记帐，将直接向客户发送纸面副本税务发票。 在9月15日之后，电子发票将在 Microsoft 365 管理中心提供，以供你查看、下载和打印，并且不再向你直接邮寄。 
   
 ## <a name="where-can-i-find-my-e-invoice"></a>我可以在哪里找到我的电子发票？
 
@@ -52,21 +52,21 @@ Microsoft 将在**9 月15日**将当前 computerized 发票替换为电子发票
 
 你可以在载入时更新 VAT ID，或在你板载后通过管理中心更新。
   
-在帐户创建过程中，在**步骤 1**中，欢迎，让我们知道你，**第2页**，在什么地方使用？，在**服务收件人地址**信息的下方，可以添加你的8位**VAT ID**。 如果您没有 VAT ID，请输入 "00000000"。
+在帐户创建过程中，在 **步骤 1**中，欢迎，让我们知道你， **第2页**，在什么地方使用？，在 **服务收件人地址** 信息的下方，可以添加你的8位 **VAT ID**。 如果您没有 VAT ID，请输入 "00000000"。
   
 创建帐户后，您可以通过执行以下步骤，通过管理中心更新 VAT ID：
   
 1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
     
-2. 选择一个订阅，然后选择 "**更多操作**"。
+2. 选择一个订阅，然后选择 " **更多操作**"。
     
-3. 选择 "**更新服务收件人地址**" 和 "更新**税号**信息"。 
+3. 选择 " **更新服务收件人地址**" 和 "更新 **税号** 信息"。 
     
 ## <a name="how-do-i-request-an-e-invoice-paper-copy"></a>如何请求电子发票纸张副本？
 
-如果你的收据在幸运时签发（仅对没有 VAT ID 的客户可用），我们将通过注册的邮件直接向文件中的地址发送硬副本。
+如果你的收据在幸运时签发 (仅对没有增值税 ID) 的客户可用，我们将通过已注册的邮件直接向文件中的地址发送硬副本。
   
-否则，如果需要电子发票的官方纸张副本，请[联系支持人员](../../admin/contact-support-for-business-products.md)。 收到你的请求后，我们将把电子发票的纸张副本邮寄到文件上的地址。
+否则，如果需要电子发票的官方纸张副本，请 [联系支持人员](../../admin/contact-support-for-business-products.md)。 收到你的请求后，我们将把电子发票的纸张副本邮寄到文件上的地址。
   
 ## <a name="more-questions"></a>更多问题？
 

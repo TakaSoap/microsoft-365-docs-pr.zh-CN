@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 description: 了解新的服务配额功能。
-ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402410"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638227"
 ---
 # <a name="allotment-basics"></a>服务配额基础
 
@@ -29,9 +29,9 @@ ms.locfileid: "44402410"
 
 您还可以委派对您的服务配额的管理。 委派的配额分配所有者可以访问管理中心，但只能查看和管理他们拥有的服务配额中的许可证。 这提供了组织中的更精细的许可证管理委派。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-您必须满足[基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的许可要求。
+您必须满足 [基于组的许可](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的许可要求。
 
 您可以将服务配额用于用户可使用的任何产品：
 

@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 了解在何处发送订阅的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 31ca14a2252b293ed35976a7f57710bec606d76c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 860332d541dd98705d32a8356ac8b81db4c01178
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404330"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637471"
 ---
 # <a name="payment-information-for-chile"></a>智利的付款信息
 
 [查找其他国家或地区](../billing-and-payments/pay-for-your-subscription.md)。
 
-请仅以 USD 付款。 若要处理付款，您的公司名称和发票号码必须在您的汇款通知中提供。
+请仅以 USD 付款。 若要处理付款，您的公司名称和发票编号 (s) 必须在您的汇款通知中提供。
 
 ## <a name="electronic-funds-transfer"></a>电子资金转帐
 
