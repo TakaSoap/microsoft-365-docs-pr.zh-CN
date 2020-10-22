@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 为 Microsoft 365 设置客户端和服务器软件的路线图。
-ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464404"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655955"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的客户端和服务器软件路线图
 
@@ -161,13 +161,11 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[转换海报](../downloads/transition-org-to-m365.pdf)。
+若要更好地了解如何将整个组织移动到 Microsoft 365 for enterprise 中的产品和服务，请下载并查看 [转换海报](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)。
 
-[![转换到 Microsoft 365 海报图像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![转换到 Microsoft 365 海报的图像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 此海报包含两页内容，可借助它快速盘点现有基础结构并获取有关转移到 Microsoft 365 企业版中相应产品或服务的指南。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
-
-可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Microsoft 如何为企业提供 Microsoft 365
 

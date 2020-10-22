@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487148"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655965"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -75,13 +75,11 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ## <a name="transition-your-entire-organization"></a>转换整个组织
 
-若要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[转换海报](../downloads/transition-org-to-m365.pdf)。
+若要更好地了解如何将整个组织转移到 Microsoft 365 企业版中的产品和服务，请参阅[转换海报](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)。
 
-[![转换到 Microsoft 365 海报的图像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![转换到 Microsoft 365 海报的图像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 通过这份两页的海报可以快速清点现有基础结构。 它可以帮助你查找指南，并转到 Microsoft 365 企业版中的相应产品或服务。 它包含 Windows 和 Office 产品，还涵盖了设备管理、标识及信息和威胁防护等其他基础结构和安全元素。
-
-还可以[下载此海报](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf)并按 letter、legal 或 tabloid (11 x 17) 格式打印。
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Office 2010 客户端和服务器及 Windows 7 的支持终止
 

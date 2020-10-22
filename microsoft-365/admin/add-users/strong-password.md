@@ -1,5 +1,5 @@
 ---
-title: 为用户设置强密码要求
+title: 对用户关闭强密码要求
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何使用 Windows PowerShell 为用户设置强密码要求。
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646615"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655731"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>为用户设置强密码要求
+# <a name="turn-off-strong-password-requirements-for-users"></a>对用户关闭强密码要求
 
 本文介绍如何为用户关闭强密码要求。 默认情况下，在 Microsoft 365 for business 组织中启用强密码要求。 您的组织可能需要禁用强密码。 按照下面的步骤关闭强密码要求。 您必须使用 PowerShell 完成这些步骤。
 

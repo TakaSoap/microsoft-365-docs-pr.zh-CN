@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何使用安全隔离的团队对主要项目进行安全隔离，以开发一套新的产品和服务。
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399485"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656061"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的主要机密项目的独立团队
 
@@ -77,7 +77,7 @@ Contoso admins 创建了一个名为 " **Project 2** " 的新敏感度标签，�
 
 下面是具有安全隔离的 Project 2X 团队的结果配置。
 
-![项目2组的结果配置](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![项目2组的结果配置](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>步骤4：训练有素的项目2组成员
 
@@ -92,7 +92,7 @@ Contoso 安全员工在强制性课程中培训了 Project 2X 团队成员，其
 
 下面的示例展示了存储在基础项目2X 网站中的文件，并分配了 Project 2/2 敏感度标签。
 
-![存储在基础项目2X 网站中的文件的示例](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![存储在基础项目2X 网站中的文件的示例](../media/contoso-team-for-top-secret-project-example.png)
 
 在几个实例中，Project 2X 工作组成员将受 Project 2X 标签保护的文件下载到本地驱动器以供脱机工作。 
 

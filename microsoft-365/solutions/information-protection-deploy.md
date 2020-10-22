@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，以保护您的信息并遵守数据隐私法规。
-ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4296e2f08d9dada62cc45226885d9519a33e6532
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195635"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655793"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为 Microsoft 365 中的数据隐私法规部署信息保护
 
 您的组织可能受区域数据隐私法规的约束，这些法规要求您保护、管理和提供对存储在 IT 基础结构中的个人信息（包括内部部署和云中的个人信息）的权限和控制。 数据隐私法规的最佳示例是欧盟的一般数据保护法规 (GDPR) 。 如果不遵守数据隐私法规，可能会导致巨额罚款。
 
-Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive 中的文件。 此解决方案提供了有关如何识别、查找、保护、管理和响应 Microsoft 365 服务中存储的个人数据的数据隐私事件的指南，这些数据受数据隐私法规约束。
+Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话、Exchange 中的电子邮件以及 SharePoint 和 OneDrive 中的文件。 此解决方案提供了有关如何评估风险和标识信息、保护、管理和响应 Microsoft 365 服务中存储的适用于数据隐私法规的个人数据的数据隐私事件的指南。
 
-![为数据隐私法规部署信息保护](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+![什么是针对数据隐私法规的信息保护](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
 
 此外，还提供了针对你的数据隐私需求使用 Microsoft 365 标识、设备和威胁防护控制的其他信息。 
 
@@ -50,7 +50,7 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 
 为了帮助您了解可用于识别、管理、控制和监视个人数据受一种或多种与隐私相关的法规约束的 Microsoft 365 工具，本指南分为几节。
  
-![为数据隐私法规部署信息保护](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![对数据隐私法规实施信息保护的步骤](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 这两个部分分别对应于本解决方案中的一篇文章。
 
@@ -61,13 +61,13 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 >遵循本指南并不一定会使您符合任何数据隐私法规，尤其要考虑功能上下文之外所需的步骤数。 您有责任确保您的合规性并咨询您的法律和合规性团队，或者从第三方（具体符合合规性）中寻求指导和建议。
 >
 
-## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan：评估数据隐私风险并确定敏感项目 
+## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan：评估数据隐私风险并确定敏感项目
 
 评估您的组织所依赖的数据隐私法规和风险是开始实施改进（包括通过 Microsoft 365 配置实现的）之前需要执行的重要第一步。 这可能包括您的组织需要遵守的管理法规控制和在 Microsoft 365 环境中出现的特定敏感信息类型的总体准备情况评估或标识。
 
 有关详细信息，请参阅 [评估数据隐私风险和标识敏感项目](information-protection-deploy-assess.md)。
 
-## <a name="track-use-compliance-manager"></a>跟踪：使用合规性管理器
+## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>跟踪：运行风险评估并检查合规性分数
 
 合规性管理器（可在 Microsoft 365 合规性中心中提供）为您提供了一个内置的功能，用于跟踪和管理整体改进操作以及与适用于您的多个数据隐私法规相关的问题。
 
@@ -75,7 +75,7 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 
 有关详细信息，请参阅 [Use 合规性管理器管理改进操作](information-protection-deploy-compliance.md)。
 
-## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>阻止：对数据隐私法规使用标识、设备和威胁防护
+## <a name="prevent-protect-personal-data"></a>阻止：保护个人数据
 
 Microsoft 365 提供了大量标识、设备和威胁防护功能，可用于帮助遵守数据隐私法规遵从性。 
 
@@ -99,7 +99,7 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，可用于帮
 
 尽管在故意保留、删除和存档等信息管理方面，数据保密法规可能不 &mdash; 明确，但 &mdash; 本文还介绍了主要控件方案，您可以对组织中的数据隐私使用地址信息治理需求。
 
-## <a name="investigate-monitor-and-respond-subject-to-data-privacy-regulation"></a>调查：监视和响应数据隐私法规的主题
+## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>调查：监控、调查和响应数据隐私事件
 
 有 Microsoft 365 功能可帮助您在您的组织中监视、调查数据隐私事件并在 operationalize 相关功能时对其做出响应。 
 

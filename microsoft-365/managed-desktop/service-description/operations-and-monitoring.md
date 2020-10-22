@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529441"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655719"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -62,7 +62,7 @@ Responsibility | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 
 
 将定期对服务进行多种类型的更改。 这些更改的通信通道和客户负责的操作会有所不同。
 
-并不是所有的更改都会对您的用户产生相同的影响，或需要采取操作。 有些人按照自己的性质规划和一些计划外（非安全更新和安全更新通常不规划）。 根据更改的类型，通信通道可能会有所不同。 下表列出了 Microsoft 托管桌面服务可预期的更改类型。
+并不是所有的更改都会对您的用户产生相同的影响，或需要采取操作。 有些人根据性质规划和一些计划外 (非安全更新和安全更新通常不会) 规划。 根据更改的类型，通信通道可能会有所不同。 下表列出了 Microsoft 托管桌面服务可预期的更改类型。
 
 |   | 功能 |   非安全更新 |  安全性
 --- | --- | --- | ---
@@ -72,7 +72,7 @@ Responsibility | Microsoft 托管桌面服务 | Microsoft 365 客户端软件 | 
 **需要全局管理员操作** | 有时 |  很少 |    很少 
 **操作类型** | 更改设置 | 将更改传达给用户 | 更改管理员设置     
 **需要测试** | 检查业务应用程序，包括远程访问服务 |  有时 - 针对流程或自定义项测试修补程序 |   很少 
-**更改示例** | -功能更新： IT 管理员门户简化了支持票证提交和审核<br>-新功能或应用程序： Windows 10 功能更新的半年发布 | 基于客户报告的 bug 的修补程序 |  
+**更改示例** | -功能更新： IT 管理员门户简化了支持票证提交和审核<br>-新功能或应用程序： Semi-Annual 版本的 Windows 10 功能更新 | 基于客户报告的 bug 的修补程序 |  
 
 
 ## <a name="standard-operating-procedures"></a>标准操作过程
@@ -83,13 +83,13 @@ Microsoft 托管桌面服务由 Microsoft 在你可以执行其他管理活动�
 
 类别 |    Microsoft 将 | 客户将
 --- | --- | ---
-网络（代理、数据包检查、VPN）  | 建议并与客户进行规划，以最大限度地降低企业用户的风险。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。
+网络 (代理、数据包检查、VPN)   | 建议并与客户进行规划，以最大限度地降低企业用户的风险。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。
 服务帐户 |-实施、安全地存储和管理凭据。<br> -对安全操作团队进行未经授权的访问或使用这些凭据。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不向 Microsoft 托管桌面服务帐户分配策略、多重身份验证、条件访问或应用程序部署。<br>-不重置密码或使用凭据。<br>-如果在 Intune 或 Azure 审核日志中观察到与这些服务帐户相关的可疑活动，请打开严重级别 C 支持对 Microsoft 托管桌面操作的请求。
-设备组 | -在 Microsoft 托管桌面组中实施和管理设备的成员身份。<br>-使用 Microsoft 托管桌面组来管理对设备的配置和更新的分配和发布。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改任何 Microsoft 托管桌面组的成员身份。<br>-仅使用组为服务（如 VPN、Windows Hello 企业版或电子邮件加密）或公司 Wi-fi 配置文件配置分配企业证书。<br>-存在共同管理，请在部署 Configuration Manager 客户端时显式排除所有 Microsoft 托管桌面组。
+设备组 | -在 Microsoft 托管桌面组中实施和管理设备的成员身份。<br>-使用 Microsoft 托管桌面组来管理对设备的配置和更新的分配和发布。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改任何 Microsoft 托管桌面组的成员身份。<br>-仅使用组为服务（如 VPN、Windows Hello 企业版或电子邮件加密）或公司 Wi-Fi 配置文件配置分配企业证书。<br>-存在共同管理，请在部署 Configuration Manager 客户端时显式排除所有 Microsoft 托管桌面组。
 策略 |  -实施和管理 Microsoft 托管桌面策略，以控制服务中设备的配置状态。<br>-将更新部署到策略或 Windows，以增量方式使用设备组。<br> -显式排除针对非 Microsoft 托管桌面组的目标。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不编辑 microsoft 托管桌面服务不管理的设备或用户的 Microsoft 托管桌面策略或将其分配给这些策略。
 Microsoft Defender 高级威胁防护   | 监视和调查 Microsoft 托管桌面服务范围内的设备。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改
 适用于企业的 Microsoft Store |  为 Microsoft 托管桌面服务配置和维护 Windows Autopilot 配置文件。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改 Microsoft 托管桌面 Windows Autopilot 配置文件或添加/删除分配的设备的配置。
-证书 | | -在证书即将过期之前的60天内创建支持请求，并请求有关计划配置更改的信息，包括有关 Microsoft 审查的配置详细信息、范围、时间线和其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-更新配置证书配置文件、VPN 配置文件和 Wlan 配置文件所需的所有证书。
+证书 | | -在证书即将过期之前的60天内创建支持请求，并请求有关计划配置更改的信息，包括有关 Microsoft 审查的配置详细信息、范围、时间线和其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-更新配置证书配置文件、VPN 配置文件和 Wi-Fi 配置文件所需的所有证书。
 
 
 
@@ -116,6 +116,6 @@ Microsoft 托管桌面操作团队可在需要时执行在服务中注册的设�
 
 重置设备后，可以将其提供给组织中的其他人。 以前的用户数据或企业数据将不在设备上。 下一个用户将完成与上一个用户使用新的 Microsoft 托管桌面设备所做的相同的过程。
 
-BitLocker 是此过程中数据安全的关键组成部分。 在 Microsoft 托管桌面设备上使用 BitLocker 加密时，即使在设备出厂重置后，驱动器上的数据仍然是安全的。 驱动器上的所有数据将对该设备的下一个用户不可用。 有关详细信息，请参阅[BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
+BitLocker 是此过程中数据安全的关键组成部分。 在 Microsoft 托管桌面设备上使用 BitLocker 加密时，即使在设备出厂重置后，驱动器上的数据仍然是安全的。 驱动器上的所有数据将对该设备的下一个用户不可用。 有关详细信息，请参阅 [BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
-有关详细信息，请参阅[Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 
+有关详细信息，请参阅 [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 
