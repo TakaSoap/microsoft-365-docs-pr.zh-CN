@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/08/2019
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b223de8eba68d49a8cc0c90239305eb05bb1090
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379193"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636959"
 ---
 # <a name="information-barriers"></a>信息屏障
 
@@ -35,7 +35,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 - 研究团队应仅与产品开发团队进行在线通话或聊天
 
 > [!IMPORTANT]
-> 信息障碍 ***仅支持*** 双向限制。 一种方法限制（如 "营销"）可以与日贸易贸易通信，但 ***不支持将***day 商贸与营销进行通信。
+> 信息障碍 ***仅支持**_ 双向限制。 一种方法限制（如 "营销"）可以与日交易进行通信，但不_支持将_day 商贸与 marketing 进行通信 * *。
 
 对于所有这些示例方案 (更) ，可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天，或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时，只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信，就会执行检查以阻止 (或允许) 通信 (如信息屏障策略) 所定义。 若要了解有关信息障碍的用户体验方面的详细信息，请参阅 [Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 

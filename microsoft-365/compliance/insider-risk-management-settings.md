@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600377"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651436"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>内幕风险管理设置入门
 
@@ -81,7 +81,7 @@ ms.locfileid: "48600377"
 
 确保您计划在 "内幕风险管理" 中报告的 Windows 10 设备符合这些要求。
 
-1. 必须运行 Windows 10 x64 内部版本 1809 或更高版本。
+1. 必须运行 Windows 10 x64 build 1809 或更高版本，并且必须已安装了 [windows 10 更新 (OS 内部版本 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) 从2020年2月20日。
 2. 所有设备必须[已加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或已加入混合 Azure AD。
 3. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以监视云上载活动的操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
@@ -244,7 +244,7 @@ ms.locfileid: "48600377"
 | AlertType | 警报的类型为 " *自定义*"。  |
 | AlertId | 警报的 GUID。 内幕风险管理警报是可变的。 当警报状态更改时，将生成一个具有相同 AlertID 的新日志。 此 AlertID 可用于关联警报的更新。 |
 | 类别 | 警报类别为 *InsiderRiskManagement*。 此类别可用于从其他安全 & 合规性警报中辨别这些警报。 |
-| Comments | 通知的默认注释。 值是在创建警报时记录的 *新警报* (记录) 并在更新警报) 时记录 *更新* (记录。 使用 AlertID 可关联警报的更新。 |
+| 备注 | 通知的默认注释。 值是在创建警报时记录的 *新警报* (记录) 并在更新警报) 时记录 *更新* (记录。 使用 AlertID 可关联警报的更新。 |
 | Data | 警报的数据包括唯一的用户 ID、用户主体名称以及在将用户触发到策略中时 (UTC) 的日期和时间。 |
 | 名称 | 生成警报的内幕风险管理策略的策略名称。 |
 | PolicyId | 触发警报的内幕风险管理策略的 GUID。 |
@@ -364,6 +364,9 @@ ms.locfileid: "48600377"
 [Microsoft Power 自动化](https://docs.microsoft.com/power-automate/getting-started) 是一种工作流服务，可跨应用程序和服务自动执行操作。 通过使用来自模板或手动创建的流，可以自动执行与这些应用程序和服务相关联的常见任务。 为内幕风险管理启用 Power 自动执行流时，可以自动执行案例和用户的重要任务。 您可以配置电源自动化流，以检索用户、警报和事例信息，并与风险承担者和其他应用程序共享此信息，以及自动化内幕风险管理中的操作，如发布到案例记录。 电力自动化流适用于事例和策略范围内的任何用户。
 
 包含内幕风险管理的 Microsoft 365 订阅的客户无需额外的电力自动许可证即可使用建议的内幕风险管理电源自动完成模板。 可以自定义这些模板以支持您的组织，并涵盖核心内幕风险管理方案。 如果选择使用这些模板中的 "高级 Power premium 功能"，请使用 Microsoft 365 合规性连接器创建自定义模板，或在 Microsoft 365 中对其他合规性区域使用 Power premium 模板，则可能需要额外的电源自动许可证。
+
+>[!IMPORTANT]
+>测试电源自动化流时是否收到有关其他许可证验证的提示？ 您的组织可能尚未收到此预览功能的服务更新。 正在部署更新，并且包含内幕风险管理的 Microsoft 365 订阅的所有组织应具有在 2020 30 年10月30日通过推荐的电源自动化模板创建的流的许可证支持。
 
 以下电源自动化模板为客户提供，以支持内幕风险管理用户和案例的流程自动化：
 

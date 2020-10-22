@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
 description: 默认情况下，邮箱审核日志记录在 Microsoft 365 (中已启用，默认情况下也称为默认邮箱审核或邮箱审核) 。 这意味着邮箱所有者、代理人和管理员执行的某些操作将自动记录在邮箱审核日志中，在此日志中可以搜索在邮箱上执行的活动。
-ms.openlocfilehash: 7c0a4417496bcf18362dbcfe53b751c549ef98b9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 8d91936f82070848dc65d1b160d4df0165875213
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545838"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649621"
 ---
 # <a name="manage-mailbox-auditing"></a>管理邮箱审核
 
@@ -35,7 +35,7 @@ ms.locfileid: "47545838"
 
 - 您无需管理已审核的邮箱操作。 默认情况下，会为每个登录类型审核一组预定义的邮箱操作 (Admin、Delegate 和 Owner) 。
 
-- 当 Microsoft 发布新的邮箱操作时 (尤其有助于保护组织和帮助您进行法庭) 调查的操作。该操作将自动添加到默认情况下被审核的邮箱操作的列表中。 这意味着您无需监视对邮箱添加的新操作。
+- 当 Microsoft 发布新邮箱操作时，该操作可能会自动添加到默认情况下被审核的邮箱操作列表中 (受具有相应许可证) 的用户。 这意味着您无需监视对邮箱添加的新操作。
 
 - 您的组织中有一致的邮箱审核策略 (，因为您正在审核对所有邮箱) 的相同操作。
 
@@ -90,7 +90,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
     - 合规中心中的电子数据展示或高级电子数据展示。
 
-    - Exchange Online 中的就地电子数据展示。
+    - 在 Exchange Online 中 In-Place 电子数据展示。
 
   - 可以使用 Microsoft Exchange Server MAPI 编辑器访问邮箱。
 

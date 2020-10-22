@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626185"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651404"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -335,6 +335,9 @@ ms.locfileid: "48626185"
 [Microsoft Power 自动化](https://docs.microsoft.com/power-automate/getting-started) 是一种工作流服务，可跨应用程序和服务自动执行操作。 通过使用来自模板或手动创建的流，可以自动执行与这些应用程序和服务相关联的常见任务。 启用用于通信合规性的功耗自动流时，可以自动执行通知和用户的重要任务。 您可以配置电源自动化流，以便在用户具有通信合规性警报和其他应用程序时通知经理。
 
 包含通信合规性的 Microsoft 365 订阅的客户无需额外的电源自动许可证即可使用建议的默认通信合规性电源自动完成模板。 可以自定义默认模板以支持您的组织并涵盖核心通信合规性方案。 如果选择使用这些模板中的 "高级 Power premium 功能"，请使用 Microsoft 365 合规性连接器创建自定义模板，或在 Microsoft 365 中对其他合规性区域使用 Power premium 模板，则可能需要额外的电源自动许可证。
+
+>[!IMPORTANT]
+>测试电源自动化流时是否收到有关其他许可证验证的提示？ 您的组织可能尚未收到此预览功能的服务更新。 正在部署更新，并且包含通信合规性的 Microsoft 365 订阅的所有组织应具有在 2020 30 年10月30日通过推荐的电源自动化模板创建的流的许可证支持。
 
 ![通信合规性电源自动化](../media/communication-compliance-power-automate.png)
 

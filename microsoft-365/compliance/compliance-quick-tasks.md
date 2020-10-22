@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 了解可帮助您在 Microsoft 365 中快速开始遵守合规性的任务。
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341178"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651358"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 合规性入门快速任务
 
@@ -68,13 +68,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 有关创建自定义警报策略的分步指南，请参阅 [安全与合规中心中的警报策略](alert-policies.md)。
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>任务5：为管理员配置实时访问
-
-某些用户对敏感信息或关键网络配置设置的持续访问是受到危害的帐户或内部威胁活动的潜在路径。 [特权访问管理](privileged-access-management-overview.md) 通过限制对敏感数据的访问或对关键配置设置的访问，帮助保护组织不受破坏并帮助满足合规性最佳做法。 为需要提升权限的任务实现实时访问规则，而不是具有持续访问权限的管理员。 在 Microsoft 365 中启用 "特权访问管理" 使组织能够以零为依据的权限运行，并提供了抵御受影响的管理访问漏洞的防御层。
-
-有关配置特权访问管理的分步指南，请参阅 [特权访问管理入门](privileged-access-management-configuration.md)。 有关权限访问管理许可的信息，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365)。
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>任务6：对敏感数据进行分类和保护
+## <a name="task-5-classify-and-protect-sensitive-data"></a>任务5：对敏感数据进行分类和保护
 
 组织内人员需要与组织内外的其他人员协作，才能完成工作。也就是说，内容不再一直停留在防火墙后面，而是可跨设备、应用和服务到处漫游。你希望内容的漫游方式不仅安全、受保护，还符合组织的业务和合规性策略。
 
@@ -82,7 +76,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 有关配置和使用敏感度标签的分步指南，请参阅 [敏感度标签入门](get-started-with-sensitivity-labels.md)。 有关区分大小的标签许可信息，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
-## <a name="task-7-configure-a-retention-policy"></a>任务7：配置保留策略
+## <a name="task-6-configure-a-retention-policy"></a>任务6：配置保留策略
 
 [保留策略](retention.md)使您能够主动决定是保留内容、删除内容还是两者都保留，然后在指定的保留期结束时删除内容。 您可能需要执行这些操作以遵守行业法规和内部策略，以及在发生诉讼或违反安全漏洞时降低风险。
 
@@ -92,7 +86,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 有关配置保留策略的分步指南，请参阅 [创建和配置保留策略](create-retention-policies.md)。 如果你刚开始在 Microsoft 365 中配置保留，请参阅[开始使用保留策略和保留标签](get-started-with-retention.md)。
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>任务8：配置敏感信息和冒犯性语言策略
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>任务7：配置敏感信息和冒犯性语言策略
 
 保护敏感信息并检测和操作工作区骚扰事件是遵守内部策略和标准的重要部分。 Microsoft 365 中的[通信合规性](communication-compliance-feature-reference.md)帮助你快速检测、捕获和采取补救措施进行电子邮件和 Microsoft 团队通信，从而帮助最大限度地降低这些风险。 其中包括不恰当的通信，其中包含与组织内部和外部的敏感信息共享的猥亵、威胁以及骚扰和通信。
 
@@ -102,7 +96,7 @@ Microsoft 提供了几种内置的警报策略，可帮助确定管理权限滥�
 
 有关规划和配置通信合规性的分步指南，请参阅 [plan for communication 合规性](communication-compliance-plan.md) 并 [开始进行通信合规性](communication-compliance-configure.md)。 有关通信合规性许可的信息，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>任务9：查看敏感项目发生的情况
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>任务8：查看敏感项目发生的情况
 
 敏感度标签、敏感信息类型、保留标签和策略和 trainable 分类器可用于在 Exchange、SharePoint 和 OneDrive 中对敏感项目进行分类和标记，就像您在以前的任务中看到的那样。 您的快速任务旅程中的最后一步是查看哪些项目已标记，以及用户对这些敏感项目所执行的操作。 [内容浏览](data-classification-content-explorer.md) 器和 [活动资源管理器](data-classification-activity-explorer.md) 提供此可见性。
 

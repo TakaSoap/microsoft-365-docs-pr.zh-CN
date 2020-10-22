@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487490"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656049"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -60,14 +60,20 @@ ms.locfileid: "48487490"
 - 函数 Func_aba_routing 找到与该模式匹配的内容。
 - 找到 Keyword_ABA_Routing 中的一个关键字。
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_aba_routing 找到与该模式匹配的内容。
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ ms.locfileid: "48487490"
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- aba
-- aba #
-- aba routing #
-- aba routing number
-- aba#
-- abarouting#
 - aba number
+- aba#
+- aba
+- abarouting#
 - abaroutingnumber
-- american bank association routing #
-- american bank association routing number
 - americanbankassociationrouting#
 - americanbankassociationroutingnumber
-- bank routing number
 - bankrouting#
 - bankroutingnumber
+- 路径#
+- 路由编号
+- 银行代号
 - routing transit number
-- RTN 
-   
+- 路径#
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>阿根廷国家标识 (DNI) 号码
 
 ### <a name="format"></a>Format
 
-八个数字，用点分隔
+包含或不带句点的8个数字
 
 ### <a name="pattern"></a>模式
 
 八个数字：
 - 两位数
-- 一个句点
+- 可选期间
 - 三个数字
-- 一个句点
+- 可选期间
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -133,14 +138,14 @@ ms.locfileid: "48487490"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Argentina National Identity number 
-- 标识 
-- 标识国家/地区身份卡片 
-- DNI 
-- 个人的网络国家注册表 
-- Documento Nacional de Identidad 
-- Registro Nacional de las Personas 
-- Identidad 
-- Identificación 
+- cedula 
+- cédula 
+- dni 
+- documento nacional de identidad 
+- documento número 
+- documento numero 
+- registro nacional de 内华达角色 
+- rnp 
    
 ## <a name="australia-bank-account-number"></a>澳大利亚银行帐户编号
 
@@ -697,8 +702,8 @@ OR
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -709,9 +714,9 @@ OR
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -733,9 +738,9 @@ OR
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -786,12 +791,11 @@ OR
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -803,9 +807,7 @@ OR
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -866,9 +868,8 @@ OR
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 - 标识号码
-- 
-national id
-- personalausweis republik österreich
+- national id
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>奥地利护照号码
 此敏感信息类型实体仅适用于欧盟护照号码 sensitiveinformation 类型。
@@ -919,7 +920,7 @@ national id
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -1043,7 +1044,6 @@ national id
 - st.nr。
 - steuernummer
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -1648,8 +1648,8 @@ national id
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -1660,9 +1660,9 @@ national id
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -1684,9 +1684,9 @@ national id
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -1737,12 +1737,11 @@ national id
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -1754,9 +1753,7 @@ national id
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -1773,8 +1770,7 @@ national id
 - fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- 
-permis de conduire
+- permis de conduire
 - numéro permis conduire
 
 
@@ -1825,7 +1821,7 @@ permis de conduire
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
-- belasting aantal
+- belasting aantal
 - bnn#
 - bnn
 - d'identité
@@ -1850,7 +1846,6 @@ permis de conduire
 - numéro d'assuré
 - numéro de registre 国
 - numéro de sécurité
-
 - numéro d'identification
 - numéro d'immatriculation
 - numéro 国家
@@ -1862,12 +1857,11 @@ permis de conduire
 - 注册
 - registrationsnumme
 - registrierung
-- 社会安全号码
+- social security number
 - ssn#
 - ssn
 - steuernummer
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -1929,7 +1923,7 @@ permis de conduire
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -2323,8 +2317,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -2335,9 +2329,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -2359,9 +2353,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -2412,12 +2406,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -2429,9 +2422,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -2505,13 +2496,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - bnn
 - bucn#
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhdanski nomer
 - egn#
 - egn
 - identification number
-
-- 
-national id
+- national id
 - 国家/地区号码
 - nationalnumber#
 - nationalnumber
@@ -2519,7 +2508,7 @@ national id
 - 个人编号
 - 个人号码
 - personalidnumber#
-- 社会安全号码
+- social security number
 - ssn#
 - ssn
 - 统一的民事 id
@@ -2532,17 +2521,17 @@ national id
 - 独特公民编号
 - егн#
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
 - униформ id
 - униформграждански id
-- униформ граждански не
-- униформ граждански номер
+- униформ граждански не
+- униформ граждански номер
 - униформгражданскиid#
 - униформгражданскине.#
 
@@ -2591,7 +2580,7 @@ national id
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -3333,28 +3322,20 @@ national id
 
 #### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
-- 
-card verification
-
+- card verification
 - card identification number
 - cvn
 - cid
 - cvc2
 - cvv2
-- 
-pin block
+- pin block
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
 - cryptogramme
-- 
-numéro de sécurité
+- numéro de sécurité
 - numero de securite
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
@@ -3365,32 +3346,26 @@ numéro de sécurité
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- 货.sicurezza
-- 
-cod sicurezza
+- 货. sicurezza
+- cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- 货.seg
-- 
-cod seg
+- 货. seg
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-- cód.segurança
-- 货.seguranca
-- 货.segurança
-- cód.seguranca
-- cód segurança
-- 货到付款 seguranca
-- 货到付款 segurança
-- cód seguranca
+- cód. segurança
+- 货. seguranca
+- 货. segurança
+- cód. seguranca
+- cód segurança
+- cod seguranca
+- cod segurança
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
 - ablauf
 - gültig bis
@@ -3398,20 +3373,15 @@ cod seg
 - gultig bis
 - gultigkeitsdatum
 - scadenza
-- 
-data scad
+- data scad
 - fecha de expiracion
-
 - fecha de venc
 - vencimiento
-- 
-válido hasta
+- válido hasta
 - valido hasta
 - vto
-- 
-data de expiração
+- data de expiração
 - data de expiracao
-
 - data em que expira
 - validade
 - valor
@@ -3420,9 +3390,9 @@ data de expiração
 - 交易记录编号
 - 参考编号
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番号
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3431,15 +3401,13 @@ data de expiração
 - american express
 - americanexpress
 - americano espresso
-
 - 反之
 - mastercard
 - Master Card
 - emc
 - mastercards
-- 
-master cards
-- 用餐俱乐部
+- master cards
+- diner's Club
 - diners club
 - dinersclub
 - 确定
@@ -3449,27 +3417,20 @@ master cards
 - JCB
 - BrandSmart
 - japanese card bureau
-
 - carte blanche
 - carteblanche
-- 信用卡
+- credit card
 - 收件人#
 - cc #：
-- 过期日期
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
 - bankcard
-- 
-card number
+- card number
 - card num
 - cardnumber
 - cardnumbers
@@ -3495,10 +3456,8 @@ card number
 - atm cards
 - atmcards
 - enroute
-- 
-en route
+- en route
 - card type
-
 - Cardmember 帐户
 - cardmember 帐户
 - Cardno
@@ -3509,22 +3468,14 @@ en route
 - 卡片成员帐户
 - Cardmember 帐户。
 - card no.
-
 - 卡片编号
 - card number
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
 - kreditkarte
 - karte
@@ -3538,91 +3489,57 @@ en route
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
-- 
-carta di credito
+- carta di credito
 - carta credito
-- \n\n\-.carta
+- \n\n\-. carta
 - n carta
-- führerschein-nr.carta
-- 
-nr carta
+- führerschein-nr. carta
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-- 不。de tarjeta
-- 无 de tarjeta
+- 不。 de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
 - tarjetahabiente
-- 
-cartão de crédito
+- cartão de crédito
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
+- número do cartão
 - numero do cartão
-
 - número do cartao
-
 - numero do cartao
-
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-- n º。do cartão
-- 不执行任何操作 cartão
-- 不执行任何操作 cartao
-- 不。do cartão
-- 不。do cartao
+- n º。 do cartão
+- no do cartão
+- no do cartao
+- 不。 do cartão
+- 不。 do cartao
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3634,23 +3551,23 @@ número do cartão
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - 签证カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3701,8 +3618,8 @@ número do cartão
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -3713,9 +3630,9 @@ número do cartão
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -3737,9 +3654,9 @@ número do cartão
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -3790,12 +3707,11 @@ número do cartão
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -3807,9 +3723,7 @@ número do cartão
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -3857,20 +3771,19 @@ número do cartão
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj građana
+- majstorski broj građana
 - 主公民号码
-- nacionalni identifikacijski broj
-- 国家/地区标识号
+- nacionalni identifikacijski broj
+- national identification number
 - oib#
 - oib
-- osobna iskaznica
+- osobna iskaznica
 - osobni id
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - 个人标识号
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -3932,7 +3845,7 @@ número do cartão
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -3986,20 +3899,19 @@ número do cartão
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj građana
+- majstorski broj građana
 - 主公民号码
-- nacionalni identifikacijski broj
-- 国家/地区标识号
+- nacionalni identifikacijski broj
+- national identification number
 - oib#
 - oib
-- osobna iskaznica
+- osobna iskaznica
 - osobni id
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - 个人标识号
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -4124,8 +4036,8 @@ número do cartão
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -4136,9 +4048,9 @@ número do cartão
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -4160,9 +4072,9 @@ número do cartão
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -4213,12 +4125,11 @@ número do cartão
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -4230,9 +4141,7 @@ número do cartão
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -4287,8 +4196,8 @@ número do cartão
 
 - id 卡号
 - 标识卡号
-- kimlik karti
-- 国家/地区标识号
+- kimlik karti
+- national identification number
 - 个人 id 号
 - ταυτοτητασ
 
@@ -4338,7 +4247,7 @@ número do cartão
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -4407,7 +4316,6 @@ número do cartão
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-
 - 税标识代码
 - 税号标识编号
 - 税标识号
@@ -4426,12 +4334,12 @@ número do cartão
 - 纳税人 id
 - tin 编号
 - 锡#
-- vergi kimlik kodu
-- vergi kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- vergi kimlik kodu
+- vergi kimlik numarası
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>捷克语驱动程序的许可证编号
@@ -4485,8 +4393,8 @@ número do cartão
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -4497,9 +4405,9 @@ número do cartão
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -4521,9 +4429,9 @@ número do cartão
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -4574,12 +4482,11 @@ número do cartão
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -4591,9 +4498,7 @@ número do cartão
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -4652,7 +4557,7 @@ número do cartão
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -4722,32 +4627,31 @@ número do cartão
 - 出生号码
 - 捷克共和国 id
 - czechidno#
-- daňové číslo
-- identifikační číslo
+- daňové číslo
+- identifikační číslo
 - identity no
 - 标识号码
 - identityno#
 - identityno
 - 保险号
-- 国家/地区标识号
+- national identification number
 - nationalnumber#
 - 国家/地区号码
-- osobní číslo
+- osobní číslo
 - personalidnumber#
 - 个人 id 号
 - 个人标识号
 - 个人号码
 - pid#
 - pid
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - ssn
 - ssn#
-- 社会安全号码
+- social security number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -4874,8 +4778,8 @@ número do cartão
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -4886,9 +4790,9 @@ número do cartão
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -4910,9 +4814,9 @@ número do cartão
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -4963,12 +4867,11 @@ número do cartão
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -4980,9 +4883,7 @@ número do cartão
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -5039,7 +4940,7 @@ número do cartão
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -5096,17 +4997,16 @@ número do cartão
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
-- centrale personregister
-- civilt registreringssystem
+- centrale personregister
+- civilt registreringssystem
 - cpr
 - cpr#
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
 - 运行状况卡片
 - 健康保险卡号
 - 健康保险号
 - identification number
-
 - identifikationsnummer
 - identifikationsnummer#
 - 标识号码
@@ -5124,10 +5024,10 @@ número do cartão
 - ssn
 - ssn#
 - skat id
-- skat kode
-- skat nummer
+- skat kode
+- skat nummer
 - skattenummer
-- 社会安全号码
+- social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
 - sundhedskort
@@ -5140,7 +5040,6 @@ número do cartão
 - 税号
 - 税务登记编号
 - tax id
-
 - 税标识号
 - taxid#
 - taxnumber#
@@ -5237,7 +5136,7 @@ número do cartão
 
 模式必须包括以下各项：
 - 一个字母 (不区分大小写) 这组可能的字母： abcdefghjklmnprstux，这是注册人代码 
-- 一个字母 (不区分大小写) （注册人姓氏的第一个字母） 
+- 一个字母 (不区分大小写) （注册人姓氏或数字 "9" 的第一个字母）
 - 七位数字，最后一个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -5248,20 +5147,41 @@ número do cartão
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
+- 找到了 from 关键字 `Keyword_dea_number`
+- 校验和通过。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_dea_number 找到与该模式匹配的内容。
 - 校验和通过。
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
-无
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- dea
+- dea#
+- 药物实施管理
+- 药品实施代理
 
 
 ## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾照号码
@@ -5313,8 +5233,8 @@ número do cartão
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -5325,9 +5245,9 @@ número do cartão
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -5349,9 +5269,9 @@ número do cartão
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -5402,12 +5322,11 @@ número do cartão
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -5419,9 +5338,7 @@ número do cartão
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -5495,9 +5412,9 @@ número do cartão
 - isikukood#
 - isikukood
 - maksu id
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
-- 国家/地区标识号
+- national identification number
 - 国家/地区号码
 - 个人代码
 - 个人 id 号
@@ -5505,7 +5422,6 @@ número do cartão
 - 个人标识号
 - personalidnumber#
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -5568,7 +5484,7 @@ número do cartão
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -6131,8 +6047,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -6143,9 +6059,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -6167,9 +6083,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -6220,12 +6136,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -6237,9 +6152,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -6305,7 +6218,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - ehic#
 - ehic
 - finlandehicnumber#
-- finska sjukförsäkringskort
+- finska sjukförsäkringskort
 - 运行状况卡片
 - 健康保险卡
 - 健康保险号
@@ -6313,9 +6226,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
@@ -6363,8 +6276,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="keywords"></a>关键字
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero#
 - henkilötunnusnumero
@@ -6372,12 +6285,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - id 号
 - id 号
 - identification number
-
-- identiteetti numero
+- identiteetti numero
 - 标识号码
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
 - 国家/地区 id 卡片
 - 国家/地区 id 编号。
 - 个人 id
@@ -6385,10 +6297,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - personalidnumber#
 - personbeteckning
 - personnummer
-- 社会安全号码
+- social security number
 - sosiaaliturvatunnus
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -6405,7 +6316,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - tin 编号
 - 锡#
 - tunnistenumero
-- tunnus numero
+- tunnus numero
 - tunnusluku
 - tunnusnumero
 - verokortti
@@ -6458,7 +6369,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -6588,8 +6499,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -6600,9 +6511,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -6624,9 +6535,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -6677,12 +6588,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -6694,24 +6604,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
 - dl 编号
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 - numéros 解除许可
 
 
@@ -6801,13 +6703,12 @@ license numbers
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-
 - nationale d'identité的购买
 - nationale d'idenite
 - cni#
 - cni
-- compte bancaire
-- 国家/地区标识号
+- compte bancaire
+- national identification number
 - 国家标识
 - nationalidno#
 - numéro d'assurance maladie
@@ -7007,7 +6908,6 @@ license numbers
 
 - numéro d'identification fiscale
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -7085,7 +6985,7 @@ license numbers
 - vat#
 - 增值税
 - siren 标识无 numéro d'identification taxe sur valeur ajoutée
-- taxe valeur ajoutée
+- taxe valeur ajoutée
 - taxe sur la valeur ajoutée
 - n ° tva
 - numéro de tva
@@ -7135,22 +7035,18 @@ license numbers
 
 - ausstellungsdatum
 - ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - führerschein-nr
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein-nr 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein-nr 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7166,8 +7062,7 @@ ausstellende behoerde
 - n-führerschein-nr
 - n-fuhrerschein
 - n-fuehrerschein
-- 
-permis de conduire
+- permis de conduire
 - driverlic
 - driverlics
 - driverlicense
@@ -7176,8 +7071,8 @@ permis de conduire
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -7188,9 +7083,9 @@ permis de conduire
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -7212,9 +7107,9 @@ permis de conduire
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -7265,12 +7160,11 @@ permis de conduire
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -7282,9 +7176,7 @@ permis de conduire
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dlno
 
@@ -7335,13 +7227,13 @@ permis de conduire
 - id
 - identifikation
 - identifizierungsnummer
-- identity 卡片
+- identity card
 - 标识号码
 - id-nummer
 - 个人 id
 - personalausweis
 - persönliche id nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-id-nummer
 
 
@@ -7458,7 +7350,6 @@ permis de conduire
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -7538,8 +7429,8 @@ permis de conduire
 - vat#
 - vat # mehrwertsteuer
 - mwst
-- mehrwertsteuer identifikationsnummer
-- mehrwertsteuer nummer
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>希腊驱动程序的许可证编号
@@ -7588,8 +7479,8 @@ permis de conduire
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -7600,9 +7491,9 @@ permis de conduire
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -7624,9 +7515,9 @@ permis de conduire
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -7677,12 +7568,11 @@ permis de conduire
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -7694,9 +7584,7 @@ permis de conduire
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -7763,7 +7651,7 @@ permis de conduire
 - 希腊国家 id
 - 希腊语个人 id 卡
 - 希腊警察 id
-- identity 卡片
+- identity card
 - tautotita
 - ταυτότητα
 - ταυτότητας
@@ -7816,7 +7704,7 @@ permis de conduire
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -7872,7 +7760,6 @@ permis de conduire
 - aφμ | aφμαριθμός
 - aφμ
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -7891,9 +7778,9 @@ permis de conduire
 - 纳税人 id
 - tin 编号
 - 锡#
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港 HKID) 号码的香港身份卡片 (
@@ -8030,8 +7917,8 @@ permis de conduire
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -8042,9 +7929,9 @@ permis de conduire
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -8066,9 +7953,9 @@ permis de conduire
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -8119,12 +8006,11 @@ permis de conduire
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -8136,9 +8022,7 @@ permis de conduire
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -8211,12 +8095,11 @@ permis de conduire
 
 - id 号
 - identification number
-
 - sz ig
-- sz.ig.
+- sz. ig.
 - ig。
-- személyazonosító igazolvány
-- személyi igazolvány
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>匈牙利护照号码
@@ -8265,7 +8148,7 @@ permis de conduire
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -8394,14 +8277,13 @@ permis de conduire
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - 匈牙利纳税人标识号
 - hungatiantin#
 - 税务主管机构编号
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -8479,10 +8361,10 @@ permis de conduire
 - hungarianvatno#
 - 纳税编号
 - 增值税áfa
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 
 ## <a name="india-permanent-account-number-pan"></a> (PAN) 的印度永久帐户号
@@ -8494,29 +8376,39 @@ permis de conduire
 ### <a name="pattern"></a>模式
 
 10 个字母或数字：
-- 五个字母（不区分大小写）  
-- 四个数字 
-- 一个字母，是字母校验位
+- 三个字母 (不区分大小写)  
+- C、P、H、F、A、T、B、L、J 和 G (中的字母不区分大小写) 
+- 一个字母
+- 四位数字 
+- 字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
-是
+否
 
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
 - 找到 Keyword_india_permanent_account_number 中的一个关键字。
-- 校验和通过。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 正则表达式 Regex_india_permanent_account_number 找到与该模式匹配的内容。
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -8535,7 +8427,8 @@ permis de conduire
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四个数字 
+- 一个不为0或1的数字
+- 三位数字 
 - 一个可选空格或短划线  
 - 四个数字 
 - 一个可选空格或短划线  
@@ -8572,10 +8465,12 @@ permis de conduire
 ### <a name="keywords"></a>关键字
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
-- Aadhaar
-- UID
+- aadhaar
+- aadhar
+- aadhar#
+- uid
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份卡片 (KTP) 号码
 
@@ -8864,8 +8759,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -8876,9 +8771,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -8900,9 +8795,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -8953,12 +8848,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -8970,9 +8864,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -9034,7 +8926,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -9103,11 +8995,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - 客户端标识服务
 - identification number
-
 - 个人 id 号
 - 个人公开服务号码
 - 个人服务编号
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - pps no
 - pps 号码
 - pps num
@@ -9125,11 +9016,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - rsin
 - seirbhís aitheantais 客户端
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -9233,8 +9123,23 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- National ID Number
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber#
+-   id 号
+-   identity no        
+-   identitynumber#
+-   标识号码
+-   israeliidentitynumber       
+-   个人 id
+-   唯一 id  
+
    
 ## <a name="italy-drivers-license-number"></a>意大利驾驶执照号码
 此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
@@ -9337,14 +9242,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 - codice 会计
-- codice fiscale
+- codice fiscale
 - codice id personale
-- codice personale
+- codice personale
 - 会计代码
-- numero certificato personale
+- numero certificato personale
 - numero di identificazione fiscale
 - numero id personale
-- numero personale
+- numero personale
 - 个人证书号码
 - 个人代码
 - 个人 id 代码
@@ -9352,7 +9257,6 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - personalcodeno#
 - 税码
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 纳税标识编号
@@ -9419,7 +9323,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -9825,10 +9729,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - 登记卡
-- 护照号码
+- Passport Number
 - 护照号
 - Passport #
-
 - パスポート
 - パスポート番号
 - パスポートナンバー
@@ -10046,8 +9949,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -10058,9 +9961,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -10082,9 +9985,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -10135,12 +10038,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -10152,9 +10054,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -10238,7 +10138,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - 管理号码
-- alvas nē
+- alvas nē
 - 出生号码
 - 公民编号
 - 民事号码
@@ -10249,22 +10149,19 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 号#
 - id-代码
 - identification number
-
-- identifikācijas numurs
+- identifikācijas numurs
 - id-号码
 - 单个号码
 - 拉脱维亚 alva
 - nacionālais id
-- 
-national id
+- national id
 - 国家识别号
 - 国家/地区身份证号码
 - national insurance number
-
 - 国家/地区寄存器号
-- nodokļa numurs
+- nodokļa numurs
 - nodokļu id
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - 个人证书号码
 - 个人代码
 - 个人 id 代码
@@ -10278,15 +10175,13 @@ national id
 - 角色 kods
 - 填充标识代码
 - 公用服务号码
-- 
-registration number
+- registration number
 - 收入编号
-- 社会保险号
-- 社会安全号码
+- social insurance number
+- social security number
 - 州税码
-- 税文件编号
+- tax file number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -10351,7 +10246,7 @@ registration number
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -10410,8 +10305,8 @@ registration number
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -10422,9 +10317,9 @@ registration number
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -10446,9 +10341,9 @@ registration number
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -10499,12 +10394,11 @@ registration number
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -10516,9 +10410,7 @@ registration number
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -10586,19 +10478,18 @@ registration number
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - 公民服务号码
 - mokesčių id
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- mokesčių numeris
-- 国家/地区标识号
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
+- mokesčių numeris
+- national identification number
 - 个人代码
 - 个人数字代码
-- piliečio paslaugos numeris
+- piliečio paslaugos numeris
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -10614,8 +10505,8 @@ registration number
 - 纳税人 id
 - tin 编号
 - 锡#
-- unikalus identifikavimo kodas
-- unikalus identifikavimo numeris
+- unikalus identifikavimo kodas
+- unikalus identifikavimo numeris
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
@@ -10665,7 +10556,7 @@ registration number
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -10721,8 +10612,8 @@ registration number
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -10733,9 +10624,9 @@ registration number
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -10757,9 +10648,9 @@ registration number
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -10810,12 +10701,11 @@ registration number
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -10827,9 +10717,7 @@ registration number
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -10911,7 +10799,7 @@ registration number
 - 个人标识
 - personalidno#
 - personalidnumber#
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - 唯一 id
 - 唯一标识
 - uniqueidkey#
@@ -11012,23 +10900,22 @@ registration number
 - 反 sécurité sociale
 - étain 非
 - étain#
-- identifiant d'impôt
+- identifiant d'impôt
 - 卢森堡税 identifikatiounsnummer
 - numéro d'étain
 - numéro d'identification 会计 luxembourgeois
 - numéro d'identification fiscale
-- 社会保障
+- social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
 - steier id
-- steier identifikatiounsnummer
-- steier nummer
+- steier identifikatiounsnummer
+- steier nummer
 - steuer id
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -11167,8 +11054,8 @@ registration number
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -11179,9 +11066,9 @@ registration number
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -11203,9 +11090,9 @@ registration number
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -11256,12 +11143,11 @@ registration number
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -11273,9 +11159,7 @@ registration number
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -11339,14 +11223,14 @@ registration number
 
 - 公民服务号码
 - id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta "identifikazzjoni personali
 - numru ta "identifikazzjoni tat-taxxa
 - numru ta "identifikazzjoni uniku
 - numru ta "identità uniku
 - numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - 个人数字代码
 - 唯一标识号
 - 唯一标识号
@@ -11398,7 +11282,7 @@ registration number
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -11468,17 +11352,16 @@ registration number
 
 - 公民服务号码
 - id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta "identifikazzjoni personali
 - numru ta "identifikazzjoni tat-taxxa
 - numru ta "identifikazzjoni uniku
 - numru ta "identità uniku
 - numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - 个人数字代码
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -11546,16 +11429,16 @@ registration number
 - 个人号码
 - 个人数字代码
 - 人员相关号码
-- persoonlijk nummer
+- persoonlijk nummer
 - persoonlijke numerieke 代码
 - persoonsgebonden
 - persoonsnummer
-- sociaal-fiscaal nummer
+- sociaal-fiscaal nummer
 - 社会-会计号码
 - sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
+- uniek identificatienummer
+- uniek identiteitsnummer
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
@@ -11606,8 +11489,8 @@ registration number
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -11618,9 +11501,9 @@ registration number
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -11642,9 +11525,9 @@ registration number
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -11695,12 +11578,11 @@ registration number
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -11712,9 +11594,7 @@ registration number
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -11820,25 +11700,24 @@ registration number
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
-- btw nummer
+- btw nummer
 - hollânske 税标识
 - hulandes impuesto id 号
 - hulandes impuesto 标识
-- identificatienummer belasting
-- identificatienummer van belasting
+- identificatienummer belasting
+- identificatienummer van belasting
 - impuesto 标识号
 - impuesto 编号
 - 荷兰语 belasting id nummer
 - 荷兰语 belasting identificatie
 - 荷兰语 belasting identificatienummer
 - 荷兰语 belastingnummer
-- nederlandse belasting identificatie
+- nederlandse belasting identificatie
 - 荷兰税务标识
 - netherland 的税标识
 - 荷属安的纳税人标识号
 - netherland 的纳税人标识号
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 税标识 tal
@@ -11916,7 +11795,7 @@ registration number
 - vat 编号
 - vat#
 - wearde tafoege 税 getal
-- btw nûmer
+- btw nûmer
 - btw-nummer
 
 
@@ -11975,7 +11854,7 @@ registration number
 
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
-- 帐户号
+- account number
 - 银行帐户
 - bank_acct_id
 - bank_acct_branch
@@ -12041,7 +11920,7 @@ registration number
 - driverslicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -12057,7 +11936,7 @@ registration number
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶许可证
+- driver's licence
 - 驾驶许可
 - driverlic#
 - driverlics#
@@ -12091,8 +11970,7 @@ registration number
 - 驱动程序的 driver'lics#
 - 驾驶许可证#
 - 驾驶许可#
-- 
-international driving permit
+- international driving permit
 - international driving permits
 - 新西兰汽车协会
 - 新西兰汽车协会
@@ -12410,8 +12288,8 @@ international driving permit
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -12422,9 +12300,9 @@ international driving permit
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -12446,9 +12324,9 @@ international driving permit
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -12499,12 +12377,11 @@ international driving permit
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -12516,9 +12393,7 @@ international driving permit
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -12731,7 +12606,7 @@ international driving permit
 - companyid#
 - companyidno#
 - 器 statystyczny
-- numeru regon
+- numeru regon
 - numerstatystyczny#
 - numeruregon#
 
@@ -12782,7 +12657,6 @@ international driving permit
 - 器 identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -12849,7 +12723,6 @@ international driving permit
 - id 号
 - 标识否
 - identification number
-
 - identity 卡片编号
 - 标识卡号
 - 国家/地区 id 卡片
@@ -12920,8 +12793,8 @@ international driving permit
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -12932,9 +12805,9 @@ international driving permit
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -12956,9 +12829,9 @@ international driving permit
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -13009,12 +12882,11 @@ international driving permit
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -13026,9 +12898,7 @@ international driving permit
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -13096,7 +12966,7 @@ international driving permit
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -13164,7 +13034,6 @@ international driving permit
 - número de identificação fisca
 - numero 会计
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -13230,8 +13099,8 @@ international driving permit
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -13242,9 +13111,9 @@ international driving permit
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -13266,9 +13135,9 @@ international driving permit
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -13319,12 +13188,11 @@ international driving permit
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -13336,9 +13204,7 @@ international driving permit
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -13415,11 +13281,10 @@ international driving permit
 - 保险号
 - insurancenumber#
 - 国家/地区 id#
-- 
-national id
-- 国家/地区标识号
+- national id
+- national identification number
 - număr identificare 个人
-- număr identitate
+- număr identitate
 - număr 个人 unic
 - număridentitate#
 - număridentitate
@@ -13431,9 +13296,8 @@ national id
 - 针#
 - 针
 - 税文件编号
-- 税文件编号
+- tax file number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -13499,7 +13363,7 @@ national id
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -13553,19 +13417,19 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
-- 护照号码
+- passport number
 - 护照号
 - 登记卡#
 - 护照 id
 - passportno#
 - passportnumber#
-- паспорт нет
+- паспорт нет
 - паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
 
 
@@ -13613,19 +13477,19 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
-- 护照号码
+- passport number
 - 护照号
 - 登记卡#
 - 护照 id
 - passportno#
 - passportnumber#
-- паспорт нет
+- паспорт нет
 - паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
 
 
@@ -13774,8 +13638,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -13786,9 +13650,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -13810,9 +13674,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -13863,12 +13727,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -13880,9 +13743,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -13946,37 +13807,35 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - 出生号码
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
 - id 号
 - 标识否
 - identification number
-
-- identifikačná karta č
-- identifikačné číslo
+- identifikačná karta č
+- identifikačné číslo
 - identity 卡片编号
 - 标识卡号
-- národná identifikačná značka č
+- národná identifikačná značka č
 - 国家/地区号码
 - nationalnumber#
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber#
 - rč
-- rodne cislo
-- rodné číslo
-- 社会安全号码
+- rodne cislo
+- rodné číslo
+- social security number
 - ssn#
 - ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - 税文件编号
-- 税文件编号
+- tax file number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -14038,7 +13897,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -14096,8 +13955,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -14108,9 +13967,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -14132,9 +13991,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -14185,12 +14044,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -14202,9 +14060,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -14270,26 +14126,24 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
-- id 卡片
+- enotna maticna številka obcana
+- id card
 - identification number
-
-- identifikacijska številka
-- identity 卡片
+- identifikacijska številka
+- identity card
 - nacionalna id
 - nacionalni potni 列表
-- 
-national id
-- osebna izkaznica
-- osebni koda
+- national id
+- osebna izkaznica
+- osebni koda
 - osebni ne
-- osebni številka
+- osebni številka
 - 个人代码
 - 个人号码
 - 个人数字代码
-- številka državljana
+- številka državljana
 - 唯一公民编号
 - 唯一 id 号
 - 唯一标识号
@@ -14347,7 +14201,7 @@ national id
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -14408,13 +14262,12 @@ national id
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - 税文件编号
-- 税文件编号
+- tax file number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -14595,8 +14448,8 @@ national id
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -14607,9 +14460,9 @@ national id
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -14631,9 +14484,9 @@ national id
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -14684,12 +14537,11 @@ national id
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -14701,9 +14553,7 @@ national id
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -14788,10 +14638,10 @@ national id
 - dni
 - dninúmero#
 - documento nacional de identidad
-- identidad único
+- identidad único
 - identidadúnico#
 - 保险号
-- 国家/地区标识号
+- national identification number
 - 国家标识
 - nationalid#
 - nationalidno#
@@ -14799,7 +14649,7 @@ national id
 - nie
 - nienúmero#
 - número de identificación
-- número nacional identidad
+- número nacional identidad
 - 个人标识号
 - 个人标识编号
 - 唯一标识号
@@ -14854,7 +14704,7 @@ national id
 - passportno
 - 护照号
 - passportnumber
-- 护照号码
+- passport number
 - passportnumbers
 - 护照号码
 
@@ -15004,9 +14854,8 @@ national id
 - spanishcifno#
 - spanishcifno
 - 税文件编号
-- 税文件编号
+- tax file number
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -15150,8 +14999,8 @@ national id
 - driverlicences
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
+- driver license
+- driver licenses
 - 驱动程序许可证
 - 驱动程序许可证
 - driverslic
@@ -15162,9 +15011,9 @@ national id
 - driverslicenses
 - 驱动程序许可证
 - 驱动程序 driver'lics
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- drivers license
+- drivers licenses
+- drivers licence
 - 驱动程序许可
 - driver'lic
 - driver'lics
@@ -15186,9 +15035,9 @@ national id
 - driver'slicences
 - 驱动程序的许可证
 - 驱动程序的 driver'lics
-- 驾驶执照
-- 驾驶许可证
-- 驾驶许可证
+- driver's license
+- driver's licenses
+- driver's licence
 - 驾驶许可
 - 通讯#
 - dls#
@@ -15239,12 +15088,11 @@ national id
 - 驾驶许可证#
 - 驾驶许可证#
 - 驾驶许可#
-- driving licence
- 
-- 驾驶执照
+- driving licence 
+- driving license
 - dlno#
 - driv 许可证
-- driv licen
+- driv licen
 - driv 许可证
 - driv 许可证
 - driv 许可证
@@ -15256,9 +15104,7 @@ national id
 - 驾驶 licen
 - 驾驶许可证
 - driving licence
-
 - driving licences
-
 - 促进允许
 - dl no
 - dlno
@@ -15331,7 +15177,6 @@ national id
 - 号#
 - 标识否
 - identification number
-
 - identifikationsnumret#
 - identifikationsnumret
 - identitetshandling
@@ -15536,12 +15381,11 @@ national id
 - 个人 id 号
 - personnummer
 - skatt id nummer
-- skatt identifikation
-- skattebetalarens identifikationsnummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
 - 瑞典纳税人标识号
 - 税文件
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -15598,7 +15442,6 @@ national id
 #### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362
-
 - iso 9362
 - iso9362
 - 反应#
@@ -15606,34 +15449,21 @@ national id
 - swiftnumber
 - swiftroutingnumber
 - swift code
-
 - swift number #
-
 - swift routing number
-
 - bic number
-
 - bic code
-
 - bic #
 - numéro#
 - bank identifier code
-
 - Organisation internationale de normalisation 9362
-
 - rapide #
-
 - code SWIFT
-
 - le numéro de swift
-
 - swift numéro d'acheminement
-
 - le numéro BIC
-
-- # <a name="bic"></a>NUMÉRO
+- # <a name="bic"></a>NUMÉRO
 - code identificateur de banque
-
 - SWIFTコード
 - SWIFT番号
 - BIC番号
@@ -15705,7 +15535,7 @@ national id
 - pid
 - 保险号
 - personalidno#
-- 社会安全号码
+- social security number
 - 个人 id 号
 - 个人识别码。
 - insuranceno#
@@ -15714,11 +15544,10 @@ national id
 - avs 号码
 - 个人标识无 versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
 - 标识 personnelle id
-- 
-numéro de sécurité sociale
+- numéro de sécurité sociale
 
    
 ## <a name="taiwan-national-identification-number"></a>台湾国家标识号码
@@ -16195,23 +16024,16 @@ OR
 #### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number
-
 - national insurance contributions
-
 - protection act
 - 方面
-- 社会安全号码
+- social security number
 - insurance application
-
 - medical application
-
 - social insurance
-
 - medical attention
-
-- 社会保障
+- social security
 - great britain
-
 - NI 号码
 - NI 否。
 - NI#
@@ -16266,7 +16088,6 @@ OR
 - 税号
 - 税文件
 - tax id
-
 - 税号标识编号
 - 税标识号
 - 免税#
@@ -16286,11 +16107,11 @@ OR
 
 ### <a name="format"></a>Format
 
-8-17 个数字
+6-17 位数
 
 ### <a name="pattern"></a>模式
 
-8-17 个连续的数字
+6-17 连续数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16527,41 +16348,33 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_formatted_itin 找到与该模式匹配的内容。
-- 下列至少其中一项为真：
-    - 找到 Keyword_itin 中的一个关键字。
-    - 函数 Func_us_address 找到正确日期格式的地址。
-    - 函数 Func_us_date 找到正确日期格式的日期。
-    - 找到 Keyword_itin_collaborative 中的一个关键字。
+- 找到 Keyword_itin 中的一个关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_unformatted_itin 找到与该模式匹配的内容。
-- 下列至少其中一项为真：
-    - 找到 Keyword_itin_collaborative 中的一个关键字。
-    - 函数 Func_us_address 找到正确日期格式的地址。
-    - 函数 Func_us_date 找到正确日期格式的日期。
+- 找到 Keyword_itin 中的一个关键字。
+
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
+- 函数 Func_formatted_itin 或 Func_unformatted_itin 找到与该模式匹配的内容。
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
@@ -16572,6 +16385,7 @@ OR
 - tax id 
 - tax identification 
 - itin 
+- i.t.i.n.
 - ssn 
 - 锡 
 - social security 
@@ -16580,14 +16394,6 @@ OR
 - taxid 
 - individual taxpayer 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- 许可证 
-- 通讯 
-- DOB 
-- 出生日期 
-- Birthday 
-- Date of Birth 
 
 ## <a name="us-social-security-number-ssn"></a> (SSN) 的美国社会安全号码
 
@@ -16763,10 +16569,10 @@ OR
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
 - 乌克兰护照
-- 护照号码
+- passport number
 - 护照号
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16813,7 +16619,7 @@ OR
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
 - 乌克兰护照
-- 护照号码
+- passport number
 - 护照号
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
