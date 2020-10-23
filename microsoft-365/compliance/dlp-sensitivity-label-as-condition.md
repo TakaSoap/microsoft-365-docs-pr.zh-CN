@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解可在 DLP 策略中使用敏感度标签作为条件的服务和项目类型
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321107"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649631"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>在 DLP 策略中使用敏感度标签作为条件（预览版）
 
@@ -38,7 +38,12 @@ ms.locfileid: "48321107"
 
 敏感度标签作为一个选项出现在**内容包含**列表中。
 
-![使用敏感度标签作为条件](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![使用敏感度标签作为条件](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> 如果选择 **Teams 聊天和频道消息**作为应用 DLP 策略的位置，则作为条件的**灵敏度标签**将不可用。
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>支持的项目、方案和策略提示
 
@@ -64,9 +69,13 @@ ms.locfileid: "48321107"
 ### <a name="supported-scenarios"></a>支持的方案
 
 - 当 DLP 管理员选择将一个或多个敏感度标签作为条件时，将能够看到租户中所有敏感度标签的列表。
-- 按上述支持矩阵所示，支持在所有工作负载中使用敏感度标签作为条件
+
+- 按上述支持矩阵所示，支持在所有工作负载中使用敏感度标签作为条件。
+
 - 对于包含敏感度标签作为条件的 DLP 策略，将继续跨工作负载（Outlook Win32 除外）显示 DLP 策略提示。
+
 - 如果与包含敏感度标签的 DLP 策略匹配，则敏感度标签也将显示为事件报告电子邮件的一部分。
+
 - 敏感度标签的详细信息也将显示在 DLP 规则匹配审核日志中，该策略包含敏感度标签作为条件。
 
 

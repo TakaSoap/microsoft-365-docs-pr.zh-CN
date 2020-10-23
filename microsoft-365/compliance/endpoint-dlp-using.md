@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 0f1fc3159de6545007ddd62da2fca17ce87ad1dc
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430240"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636813"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>使用终结点数据丢失防护（预览）
 
@@ -40,7 +40,8 @@ ms.locfileid: "45430240"
 
 - 如果要从监视中排除杂乱的文件路径
 
-![DLP 设置](../media/endpoint-dlp-1-using-dlp-settings.png)
+  > [!div class="mx-imgBorder"]
+  > ![DLP 设置](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### <a name="file-path-exclusions"></a>文件路径排除
 
@@ -48,13 +49,19 @@ ms.locfileid: "45430240"
 
 可使用此逻辑构建排除路径：
 
-- 以“\”结尾的有效文件路径，仅表示直接位于文件夹下的文件。 例如：C:\Temp\
-- 以“\*”结尾的有效文件路径，仅表示位于子文件夹下的文件，以及直接位于文件夹下方的文件。 例如：C:\Temp\*
-- 以“\”或“\*”结尾的有效文件路径，表示直接位于文件夹和所有子文件夹下的所有文件。 例如：C:\Temp
-- 两端“\”之间带有通配符的路径。 例如：C:\Users\*\Desktop\
-- 两端“\”之间带有通配符，并通过 ‘(number)’ 给出确切的子文件夹数量的路径。 例如：C:\Users\*(1)\Downloads\
-- 带有 SYSTEM 环境变量的路径。 例如：%SystemDrive%\Test\*
-- 综合了上述所有情况。 例如：%SystemDrive%\Users\*\Documents\*(2)\Sub\
+- 以“\”结尾的有效文件路径，仅表示直接位于文件夹下的文件。 <br/>例如：C:\Temp\
+
+- 以“\*”结尾的有效文件路径，仅表示位于子文件夹下的文件，以及直接位于文件夹下方的文件。 <br/>例如：C:\Temp\*
+
+- 以“\”或“\*”结尾的有效文件路径，表示直接位于文件夹和所有子文件夹下的所有文件。 <br/>例如：C:\Temp
+
+- 两端“\”之间带有通配符的路径。 <br/>例如：C:\Users\*\Desktop\
+
+- 两端“\”之间带有通配符，并通过 ‘(number)’ 给出确切的子文件夹数量的路径。 <br/>例如：C:\Users\*(1)\Downloads\
+
+- 带有 SYSTEM 环境变量的路径。 <br/>例如：%SystemDrive%\Test\*
+
+- 综合了上述所有情况。 <br/>例如：%SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### <a name="service-domains"></a>服务域
 
@@ -62,15 +69,18 @@ ms.locfileid: "45430240"
 
 如果列表模式设置为“**阻止**”，用户将无法向这些域上载敏感项目。 如果由于某项目符合 DLP 策略而阻止了上载操作，则 DLP 会生成警告或阻止敏感项目的上载。
 
-如果列表模式设置为“**允许**”，则用户将***只能***将敏感项目上载到那些域，并且不允许对所有其他域的上载访问。
+如果列表模式设置为“**允许**”，则用户将**_只能_*_将敏感项目上载到那些域，并且不允许对所有其他域的上载访问。
 
 ### <a name="unallowed-apps"></a>不允许的应用
 
-启用策略的“**通过不允许的应用程序和浏览器访问**”设置，并且用户尝试使用这些应用程序访问受保护的文件时，活动将被允许、阻止或者阻止，但用户可以覆盖该限制。 所有活动均经过审核，可在活动资源管理器中查看。
+启用策略的_“*通过不允许的应用程序和浏览器访问*”*设置，并且用户尝试使用这些应用程序访问受保护的文件时，活动将被允许、阻止或者阻止，但用户可以覆盖该限制。 所有活动均经过审核，可在活动资源管理器中查看。
 
 ### <a name="unallowed-browsers"></a>不允许的浏览器
 
-你将添加由进程名称标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
+你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
+
+[!IMPORTANT]
+不包括可执行文件的路径，而仅包括可执行文件的名称（即browser.exe）。
 
 ## <a name="tying-dlp-settings-together"></a>将 DLP 设置捆绑在一起
 
@@ -80,8 +90,10 @@ ms.locfileid: "45430240"
 
 若要使用此限制，需要配置三个重要的部分：
 
-1. 指定要防止敏感项目共享到的位置（服务、域、IP 地址）
-2. 添加出现 DLP 策略匹配时不允许访问某些敏感项目的浏览器
+1. 指定要防止敏感项目共享到的位置（服务、域、IP 地址）。
+
+2. 添加出现 DLP 策略匹配时不允许访问某些敏感项目的浏览器。
+
 3. 通过启用“**上载到云服务**”和“**从不允许的浏览器访问**”，配置 DLP 策略以定义应限制在这些位置的敏感项目的种类。
 
 你可以继续添加新的服务、应用和策略，以扩展和扩大你的限制，从而满足业务需求并保护敏感数据。 
@@ -104,49 +116,83 @@ ms.locfileid: "45430240"
 这些方案要求你已经装载设备并向活动资源管理器浏览器报告。 如果尚未装载设备，请参阅[终结点数据丢失防护（预览）入门](endpoint-dlp-getting-started.md)。
 
 1. 打开[数据丢失防护页](https://compliance.microsoft.com/datalossprevention?viewid=policies)。
+
 2. 选择“**创建策略(预览)**”。
+
 3. 在此方案中，依次选择“**隐私**”和“**美国个人身份信息 (PII) 数据**”，然后选择“**下一步**”。
+
 4. 将“**设备**”以外所有位置的“**状态**”字段切换为“关”。 选择“**下一步**”。
+
 5. 接受默认的“**从模板中查看和自定义设置**”选择，然后选择“**下一步**”。
+
 6. 接受默认的“**保护操作**”值，然后选择“**下一步**”。
+
 7. 选择“**审核或限制 Windows 设备上的活动**”，然后将“操作”设置为“**仅审核**”。 选择“**下一步**”。
+
 8. 接受默认的“**我想要先测试**”值，然后选择“**在测试模式下显示策略提示**”。 选择“**下一步**”。
+
 9. 查看设置，然后选择“**提交**”。
+
 10. 新的 DLP 策略将显示在策略列表中。
+
 11. 检查活动资源管理器中是否有来自受监视终结点的数据。 设置设备的位置筛选器并添加策略，然后按策略名称筛选以查看此策略的影响。 如有需要，请参见[活动资源管理器（预览）入门](data-classification-activity-explorer.md)。
+
 12. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
+
 13. 检查活动资源管理器中的事件。
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>方案 2：修改现有策略，设置警报
 
 1. 打开[数据丢失防护页](https://compliance.microsoft.com/datalossprevention?viewid=policies)。
+
 2. 选择在方案 1 中创建的“**美国个人身份信息 (PII) 数据**”策略。
+
 3. 选择“**编辑策略(预览)**”。
-4. 转到“**高级 DLP 规则**”页面，然后编辑“**检测到少量内容的美国个人身份信息**”
+
+4. 转到“**高级 DLP 规则**”页面，然后编辑“**检测到少量内容的美国个人身份信息**”。
+
 5. 向下滚动到“**事件报告**”部分，然后将“**在规则匹配出现时向管理员发送警报**”设置为“**开**”。 系统会将电子邮件警报自动发送给管理员，以及你添加到收件人列表的任何其他人员。 
-![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+   
 6. 出于本方案的目的，请选择“**每次活动与规则匹配时选择发送警报**”。
+
 7. 选择“**保存**”。
+
 8. 通过选择“**下一步**”，然后“**提交**”策略更改来保留所有先前的设置。
+
 9. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
+
 10. 检查活动资源管理器中的事件。
 
 ### <a name="scenario-3-modify-the-existing-policy-block-the-action-with-allow-override"></a>方案 3：修改现有策略，阻止操作但允许覆盖
 
 1. 打开[数据丢失防护页](https://compliance.microsoft.com/datalossprevention?viewid=policies)。
+
 2. 选择在方案 1 中创建的“**美国个人身份信息 (PII) 数据**”策略。
+
 3. 选择“**编辑策略(预览)**”。
-4. 转到“**高级 DLP 规则**”页面，然后编辑“**检测到少量内容的美国个人身份信息**”
+
+4. 转到“**高级 DLP 规则**”页面，然后编辑“**检测到少量内容的美国个人身份信息**”。
+
 5. 向下滚动到“**审核或限制 Windows 设备上的活动**”部分，并对每个活动将相应的操作设置为“**阻止但允许覆盖**”。
-![设置阻止但允许覆盖操作](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+
+   > [!div class="mx-imgBorder"]
+   > ![设置阻止但允许覆盖操作](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+   
 6. 选择“**保存**”。
+
 7. 对**检测到大量内容的美国个人身份信息**重复步骤 4-7。
+
 8. 通过选择“**下一步**”，然后“**提交**”策略更改来保留所有先前的设置。
+
 9. 尝试与组织外的人员共享包含将触发美国个人身份信息 (PII) 数据条件的内容的测试。 这应该会触发策略。
 
-客户端设备上将显示如下所示的弹出窗口：
+   客户端设备上将显示如下所示的弹出窗口：
 
-![终结点 DLP 客户端阻止覆盖通知](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+   > [!div class="mx-imgBorder"]
+   > ![终结点 DLP 客户端阻止覆盖通知](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
 
 10. 检查活动资源管理器中的事件。
 

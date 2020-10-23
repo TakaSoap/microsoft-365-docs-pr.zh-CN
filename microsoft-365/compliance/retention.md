@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398979"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651426"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -276,7 +276,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询、可训练的分类器| 否 | 是 |
 |手动应用保留 | 否 | 是 |
 |对最终用户显示 UI | 否 | 是 |
-|在内容移动时仍继续应用在内容上 | 否 | 是，在 Microsoft 365 中 |
+|在内容移动时仍继续应用在内容上 | 否 | 是，在您的 Microsoft 365 租户中 |
 |将项声明为记录| 否 | 是 |
 |从内容被标记或事件发生时开始计算保留期 | 否 | 是 |
 |处置评审 | 否| 是 |
@@ -353,27 +353,50 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>何时使用保留策略和保留标签或电子数据展示保留
+
+虽然保留设置和[电子文件展示案列创建的保留](create-ediscovery-holds.md)都可以防止数据被永久删除，它们是针对不同情况设计的。 为了帮助你了解差异并决定使用哪个，请使用以下指南：
+
+- 在保留策略和保留标签中指定的保留设置旨在用于长期信息管理策略，以保留或删除符合法规要求的数据。 通常范围很广，主要重点是位置和内容，而不是单个用户。 保留期的开始和结束是可配置的，可以选择自动删除内容，无需其他管理员干预。
+
+- 电子数据展示保留（核心电子数据展示或高级电子数据展示案例）的设计期限有限，可以保存数据以进行法律调查。 范围是特定的，重点是已识别用户拥有的内容。 保留期的开始和结束是不可配置的，但取决于单个管理员的操作，如果保留被释放，则无法选择自动删除内容。
+
+比较保留与电子数据展示保留的摘要：
+
+|注意事项|保留 |电子数据展示保留|
+|:-----|:-----|:-----|:-----|
+|业务需求： |合规性 |法律 |
+|时间范围： |长期 |短期 |
+|焦点： |广泛、基于内容 |特定、基于用户 |
+|开始和结束日期可配置： |是 |否 |
+|内容删除： |是（可选） |否 |
+|管理开销： |低 |高 |
+
+如果内容遵循保留设置和电子数据展示保留，则保存电子数据展示保留的内容始终具有优先权。 这样，[保留原则](#the-principles-of-retention-or-what-takes-precedence)扩展到电子数据展示保留，因为它们保留数据，直到管理员手动释放保留为止。 但是，尽管有此优先顺序，但不要将电子数据展示保留用于长期信息治理。 如果担心自动删除数据，则可以将保留设置配置为永久保留项目，或将[处置审查](disposition.md#disposition-reviews)与保留标签一起使用。
+
+如果你使用的是旧的电子数据展示工具来保留数据，请参阅以下资源：
+
+- Exchange: 
+    - [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [如何识别为 Exchange Online 邮箱设置的保留类型](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+
+- SharePoint 和 OneDrive： 
+    - [在电子数据展示中心将内容添加到事例并将源就地保留](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+
+- [旧版电子数据展示工具的停用](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>使用保留策略和保留标签，而不是旧功能
 
-如果需要在 Microsoft 365 中主动保留或删除内容来实现信息管理，建议使用保留策略和保留标签，而不是以下旧功能。 
-  
+如果需要在 Microsoft 365 中主动保留或删除内容来实现信息管理，建议使用保留策略和保留标签，而不是以下旧功能。
+
 如果当前使用这些旧功能，可以继续将它们与保留策略和保留标签并行使用。 但我们建议今后使用保留策略和保留标签。 它们为你提供了在 Microsoft 365 中集中管理内容保留和删除的单一机制。
 
 **Exchange Online 中的早期功能：**
 
-- [就地保留和诉讼保留](https://go.microsoft.com/fwlink/?linkid=846124)（电子数据展示保留） 
-
-- [如何识别为 Exchange Online 邮箱设置的保留类型](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [保留标记和保留策略](https://go.microsoft.com/fwlink/?linkid=846125)，亦称为[邮件传递记录管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126)（仅限删除）
-    
-另请参阅[旧版电子数据展示工具的停用](legacy-ediscovery-retirement.md)。
-
 
 **SharePoint 和 OneDrive 中的早期功能：**
 
-- [在电子数据展示中心内将内容添加到案件集并保留源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)（电子数据展示保留） 
-    
 - [文档删除策略](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff)（仅删除）
     
 - [配置就地记录管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a)（仅限保留） 
@@ -382,10 +405,6 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
     
 - [信息管理策略](intro-to-info-mgmt-policies.md)（仅限删除）
      
-如果之前使用了任何电子数据展示保留进行信息管理，为实现主动合规，请改为使用保留策略。 仅对保留策略使用电子数据展示。
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>保留策略和 SharePoint 内容类型策略或信息管理策略
-
 如果已将 SharePoint 网站配置为应用保留列表或库的内容的内容类型策略或信息管理策略，则这些策略会在保留策略生效时被忽略。 
 
 ## <a name="related-information"></a>相关信息
