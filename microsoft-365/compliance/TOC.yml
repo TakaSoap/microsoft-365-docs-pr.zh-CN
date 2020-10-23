@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: 使用 DLP 策略中的通知和策略提示
           href: use-notifications-and-policy-tips.md
+        - name: 配置和查看 DLP 策略的警报（预览）
+          href: dlp-configure-view-alerts-policies.md
         - name: DLP 策略模板包含的内容
           href: what-the-dlp-policy-templates-include.md
         - name: 创建 DLP 策略来保护具有 FCI 或其他属性的文档
