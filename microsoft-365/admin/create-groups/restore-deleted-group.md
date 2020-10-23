@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: 8fb2cb3afdf390efae7854a040bb56df731cceaf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307183"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681642"
 ---
 # <a name="restore-a-deleted-group"></a>还原已删除的组
 
@@ -35,6 +35,9 @@ ms.locfileid: "47307183"
 > 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
 
 ::: moniker-end
+
+> [!NOTE]
+> 本文介绍仅还原 Microsoft 365 组。 删除后，所有其他组都不能还原。
 
 如果已删除某个组，默认情况下它将保留30天。 这30天的期限被视为 "软删除"，因为您仍可以还原组。 30天后，该组及其关联的内容将被永久删除且无法还原。
 

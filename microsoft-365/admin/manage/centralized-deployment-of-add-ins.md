@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464046"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681620"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -43,9 +43,9 @@ ms.locfileid: "48464046"
 
 加载项最长可能需要24小时才能为所有用户显示客户端。
   
-## <a name="requirements"></a>要求
+## <a name="requirements"></a>Requirements
 
-集中部署加载项需要用户使用 Microsoft 365 应用程序企业版或 Microsoft 365 商业高级 (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
+集中部署加载项需要用户将 Microsoft 365 应用用于企业版的 Microsoft 365 或 Microsoft 365 for business (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用 [集中部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -61,11 +61,11 @@ ms.locfileid: "48464046"
 ### <a name="office-requirements"></a>Office 要求
 
 - 对于 Word、Excel 和 PowerPoint 外接程序，您的用户必须使用下列项之一：
-  - 在 Windows 设备上，Microsoft 365 应用程序的版本1704或更高版本或 Microsoft 365 商业高级版。
+  - 在 Windows 设备上，microsoft 365 Apps for Microsoft 365 for enterprise 或 Microsoft 365 for business 中的 Microsoft 应用版本1704或更高版本。
   - 在 Mac 上，版本15.34 或更高版本。
 
 - 对于 Outlook，您的用户必须使用以下各项之一： 
-  - Microsoft 365 应用程序的版本1701或更高版本，或 Microsoft 365 Business Premium。
+  - Microsoft 365 Apps for Microsoft 365 for enterprise 或 Microsoft 365 for business 中的 Microsoft 应用版本1701或更高版本。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更高版本。
   - 版本16.0.4494.1000 或更高版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
   - 版本15.0.4937.1000 或更高版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*
