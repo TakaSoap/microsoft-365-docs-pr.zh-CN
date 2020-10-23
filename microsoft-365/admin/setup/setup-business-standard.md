@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业标准版订阅。
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324442"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644551"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 
@@ -40,7 +40,7 @@ ms.locfileid: "47324442"
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
- *这些步骤适用于具有 **[Microsoft 365 商业标准版计划](https://go.microsoft.com/fwlink/p/?LinkId=627220)*** 的企业和[非营利组织](https://go.microsoft.com/fwlink/p/?LinkId=627221)。
+ *这些步骤适用于具有 **[Microsoft 365 商业标准版计划](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的企业和[非营利组织](https://go.microsoft.com/fwlink/p/?LinkId=627221)_
 
 观看有关设置 Microsoft 365 商业标准版（以前称为 Microsoft 365 商业高级版）的简短视频。<br><br>
 
@@ -56,7 +56,7 @@ ms.locfileid: "47324442"
 
 1. 使用全局管理员凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 
 
-2. 选择“**转到设置**”以启动向导。
+2. 选择“*转到设置*”来启动向导。
 
 3. 在“**安装 Office 应用**”页面上，可选择在自己的计算机上安装应用。
     

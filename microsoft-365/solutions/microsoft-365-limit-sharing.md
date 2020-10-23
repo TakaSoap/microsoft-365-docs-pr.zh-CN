@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中用于限制或禁用共享的选项。
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361901"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651414"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>限制 Microsoft 365 中的共享
 
@@ -64,7 +64,7 @@ ms.locfileid: "48361901"
 若要阻止 Microsoft 365 组中的来宾访问，可以在 Microsoft 365 管理中心内禁用组来宾访问设置。
 
 禁用 Microsoft 365 组中的来宾共享的具体步骤
-1. 在 Microsoft 365 管理中心中，单击“**设置**”，然后单击“**设置**”。
+1. 在 Microsoft 365 管理中心，单击“**设置**”，然后单击“**组织设置**”。
 2. 在“服务”**** 选项卡上，单击“Microsoft 365 组”****。
 3. 取消选中“**允许组织外部的组成员访问组内容**”和“**允许组所有者将组织外部的人员添加到组**”复选框。
 4. 单击“**保存更改**”。
