@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用户可通过 Teams、Exchange、SharePoint 和其他 Microsoft 365 服务高效工作。
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445817"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681404"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步骤 5. 部署远程工作者生产力应用和服务
 
@@ -30,7 +30,7 @@ ms.locfileid: "48445817"
 
 - 要使用户在远程工作的同时保持连接，请使用 Microsoft Teams，它为组织、部门、小型团队和个人提供用于会议、聊天和文件存储的通用通信中心。 
 - 要进行电子邮件往来和管理日历、联系人和任务，请使用 Exchange Online 和 Outlook 客户端。
-- 要存储和协作处理文件，请使用 SharePoint 和 OneDrive。 可通过 Web 浏览器或在 Teams 内部使用它们。
+- 要存储和协作处理文件，请使用 SharePoint 和 OneDrive。 可在 Web 浏览器或 Teams 中使用它们。
 - 要创建新内容或协作处理现有内容，请使用 Microsoft 365 应用，它是安装在本地计算机上的 Word、PowerPoint、Excel 和 Outlook 的版本，并能持续接收功能和安全更新。
 
 ![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 应用保持高效工作](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
@@ -39,9 +39,9 @@ ms.locfileid: "48445817"
 
 Teams 让你可以在一个位置聊天、开会、呼叫和协作。 数百万人每天在 Teams 中完成自己的工作，因为它能将远程工作所需的所有内容整合到一个中心，以进行团队合作。 
 
-在[本文](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)中获取通过 Teams 为远程工作者提供支持的指南。 
+有关详细指南，请参阅[使用 Microsoft Teams 支持远程工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)。 
 
-观看[第 1 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)，了解有关使用 Teams 进行远程工作的指南和演示。
+观看[“使用 Microsoft Teams 网站实现混合型工作”网络直播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)，获取有关使用 Teams 实现远程工作的指南和演示。
 
 ### <a name="chat-and-conversations"></a>聊天和对话
 
@@ -82,14 +82,14 @@ Teams 提供了一个可从桌面版、Web 版和移动版 Teams 访问应用和
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 应用创建和协作处理内容
 
-Microsoft 365 应用是适用于企业的最高效、最安全的 Office 体验，可让用户随时随地无缝协同工作。 远程工作者可与多人同时协作处理文档、实时查看编辑和更改，以及在任何便携式电脑、电脑或移动设备上与其他人共同创作。
+Microsoft 365 应用版是适用于企业的最高效、最安全的 Office 体验，可让用户随时随地无缝协作。 远程工作者可与多人同时协作处理文档、实时查看编辑和更改，以及在任何便携式电脑、电脑或移动设备上与其他人共同创作。
 
-请参阅[本文](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)，在自己的企业环境中计划、部署和管理 Microsoft 365 应用版。
+有关详细信息，请参阅 [Microsoft 365 应用版部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>面向生产力应用和服务的管理员技术资源
 
 - [使用 Microsoft Teams 支持远程工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [有关适用于远程工作者的 Teams 的第 1 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [“使用 Microsoft Teams 网站实现混合型工作”网络直播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams 客户成功工具包下载](https://www.microsoft.com/download/details.aspx?id=54244)
 - [用于促进 Teams 采用的工具](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [为 Microsoft Teams 创建变更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

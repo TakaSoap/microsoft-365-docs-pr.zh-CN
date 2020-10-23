@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 双字节字符集支持的发行说明。
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695233"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681498"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>双字节字符集支持发行说明（预览版）
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695233"
 - 繁体中文
 - 韩语
 - 日语
-
-此功能预览仅在商业云中提供，并且仅在以下地区推出：
-
-- 日本
-- 韩国
-- 中国大陆
-- 香港特别行政区
-- 澳门特别行政区
-- 中国台湾
 
 此支持适用于敏感信息类型和关键字字典，并且将在数据丢失防护、通信合规性、Exchange Online、SharePoint Online、OneDrive for Business 和 Teams 解决方案中有所体现。
 

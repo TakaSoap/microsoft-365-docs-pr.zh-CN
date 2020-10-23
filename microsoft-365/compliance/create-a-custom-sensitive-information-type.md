@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全与合规中心的图形用户界面中为 DLP 创建、修改、删除和测试自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686656"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681718"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全与合规中心内创建自定义敏感信息类型
@@ -39,14 +39,6 @@ ms.locfileid: "46686656"
 > - 繁体中文
 > - 韩语
 > - 日语
-> 
->此功能预览仅在商业云中提供，并且仅在以下地区推出：
-> - 日本
-> - 韩国
-> - 中国大陆
-> - 香港特别行政区
-> - 澳门特别行政区
-> - 中国台湾
 >
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 

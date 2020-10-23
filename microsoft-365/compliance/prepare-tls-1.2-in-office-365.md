@@ -13,12 +13,12 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: b76854442fd74dddddcef778ae03a9d76ceb3cc6
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: 4cc1fc739ee7fbcc4b976ae6e3f220713a53a007
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372495"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681654"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>在 Office 365 和 Office 365 GCC 中准备 TLS 1.2
 
@@ -32,7 +32,7 @@ ms.locfileid: "45372495"
 
 ## <a name="more-information"></a>更多信息
 
-自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于我们的 Office 365 商业客户，TLS 1.0 和1.1 的弃用将于10月15日的2020开始。
+自 2020 年 1 月起，我们已经开始弃用 TLS 1.0 和 1.1。 不支持通过 TLS 1.0 或 1.1 在我们的 DoD 或 GCC High 实例中连接到 Office 365 的任何客户端、设备或服务。 对于我们的 Office 365 商业客户，TLS 1.0 和1.1 的弃用将于10月15日开始，2020和推出将在以下几周和几个月后继续进行。 
 
 我们建议所有客户端-服务器和浏览器-服务器组合使用 TLS1.2（或更高版本）以保持与 Office 365 服务的连接。 你可能必须更新某些客户端-服务器和浏览器-服务器组合。
 
@@ -70,7 +70,7 @@ ms.locfileid: "45372495"
 - 对于连接到 Office 365 的 Windows 7 客户端，请确保 TLS 1.2 是 Windows WinHTTP 中的默认安全协议。 有关更多信息，请参阅 [KB 3140245 - 更新以在 Windows 的 WinHTTP 中启用 TLS 1.1 和 TLS 1.2 作为默认安全协议](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)。
 - 要通过删除 TLS 1.0 和 1.1 依赖项解决 TLS 使用弱点问题，请参阅 [Microsoft TLS 1.2 支持](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)。
 - [新的 IIS 功能](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/)可更加方便地在 [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) 和 [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334) 上查找通过使用弱安全协议连接服务的客户端。
-- 获取有关如何 [解决 TLS 1.0 问题](https://www.microsoft.com/download/details.aspx?id=55266)的更多信息。
+- 获取有关如何 [解决 TLS 1.0 问题的](https://www.microsoft.com/download/details.aspx?id=55266)详细信息。
 - 有关安全性方法的一般信息，请转到[Office 365 信任中心](https://www.microsoft.com/trustcenter/cloudservices/office365)。
 - [准备 TLS 1.0/1.1 弃用 - Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
 - [Exchange Server TLS 指南，第 1 部分：为 TLS 1.2 做好准备](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)

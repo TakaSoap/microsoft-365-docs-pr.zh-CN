@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 确保远程工作者可以访问本地资源，同时优化对 Microsoft 365 云服务的访问权限。
-ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445980"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681416"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步骤 2. 提供对本地应用和服务的远程访问权限。
 
@@ -30,11 +30,12 @@ ms.locfileid: "48445980"
 
 如果你的用户未使用 VPN 解决方案，你可以使用 Azure Active Directory (Azure AD) 应用程序代理和 Azure 点到站点 (P2S) VPN 来提供访问权限，具体取决于你的所有应用是否均基于 Web。
 
-有三种主要配置：
+下面是用于远程访问的主要配置：
 
-1. 你已在使用远程访问 VPN 解决方案。
-2. 你使用的不是远程访问 VPN 解决方案，你有混合标识，只需远程访问基于 Web 的本地应用。
-3. 你使用的不是远程访问 VPN 解决方案，并且你需要访问本地应用，其中一些应用并非基于 Web。
+- 你已在使用远程访问 VPN 解决方案。
+- 你没有使用远程访问 VPN 解决方案，而是希望远程工作者使用其自己的个人计算机。
+- 你使用的不是远程访问 VPN 解决方案，你有混合标识，只需远程访问基于 Web 的本地应用。
+- 你使用的不是远程访问 VPN 解决方案，并且你需要访问本地应用，其中一些应用并非基于 Web。
 
 请参阅此流程图，了解本文中讨论的远程访问配置选项。
 
@@ -54,7 +55,9 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 借助拆分隧道，你可以将 VPN 客户端配置为排除通过 VPN 连接发送到组织网络的特定类型的通信。
 
-要优化 Microsoft 365 云资源的访问权限，请将拆分隧道 VPN 客户端配置为排除通过 VPN 连接的流向**优化**类别 Microsoft 365 终结点的流量。 有关详细信息，请参阅 [Office 365 终结点类别](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)。 请在[此处](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)查看优化类别终结点的列表。
+要优化 Microsoft 365 云资源的访问权限，请将拆分隧道 VPN 客户端配置为排除通过 VPN 连接的流向**优化**类别 Microsoft 365 终结点的流量。 有关详细信息，请参阅 [Office 365 终结点类别](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories)。 请查看[此列表](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)，了解如何优化类别终结点。
+
+下面是生成的流量流，其中流入 Microsoft 365 云应用的大多数流量都绕过 VPN 连接。
 
 ![来自有隧道的 VPN 客户端的网络流量](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-after-tunneling.png)
 
@@ -64,13 +67,13 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>在所有应用均为 Web 应用且你具有混合标识的情况下部署远程访问
 
-如果远程工作者使用的不是传统的 VPN 客户端，并且你的本地用户帐户和组与 Azure AD 同步，则可以使用 Azure AD 应用程序代理为 Intranet 服务器上托管的基于 Web 的应用程序实现安全的远程访问。 基于 Web 的应用程序包括 SharePoint 网站、Outlook Web Access 服务器或任何其他基于 Web 的业务线应用程序。 
+如果远程工作者没有使用传统的 VPN 客户端，而且你的本地用户帐户和组与 Azure AD 同步，那么你可使用 Azure AD 应用程序代理为本地服务器上托管的基于 Web 的应用程序实现安全的远程访问。 基于 Web 的应用程序包括 SharePoint Server 网站、Outlook Web Access 服务器或其他任何基于 Web 的业务线应用程序。 
 
 下面是 Azure AD 应用程序代理的组件。
 
 ![Azure AD 应用程序代理的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-有关详细信息，请参阅此 [Azure AD 应用程序代理概述](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)和[有关使用 Azure AD 应用程序代理的第 3 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)。
+有关详细信息，请参阅此 [Azure AD 应用程序代理概述](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。
 
 >[!Note]
 >Microsoft 365 订阅中不包含 Azure AD 应用程序代理。 你必须使用单独的 Azure 订阅来进行付费。
@@ -78,7 +81,7 @@ Microsoft 365 通信必须通过你的组织获取间接路由，它可能是面
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>在并非所有应用均为 Web 应用的情况下部署远程访问
 
-如果远程工作者使用的不是传统的 VPN 客户端，并且你的任何应用不是基于 Web，则可以使用 Azure 点到站点 (P2S) VPN。
+如果远程工作者没有使用传统的 VPN 客户端，而且你有应用未基于 Web，那么你可使用 Azure 点到站点 (P2S) VPN。
 
 P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组织网络的安全连接。 
 
@@ -96,10 +99,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 ![Azure Windows 虚拟桌面的组件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-有关详细信息，请参阅： 
-
-- [Windows 虚拟桌面概述](https://docs.microsoft.com/azure/virtual-desktop/overview)。
-- [有关使用 Windows 虚拟桌面支持远程工作者的第 2 部分视频](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)。
+有关详细信息，请参阅此 [Windows 虚拟桌面概述](https://docs.microsoft.com/azure/virtual-desktop/overview)。 
 
 >[!Note]
 >Microsoft 365 订阅中不包含 Windows 虚拟桌面。 你必须使用单独的 Azure 订阅来进行付费。
@@ -107,7 +107,7 @@ P2S VPN 连接通过 Azure 虚拟网络创建从远程工作者的设备到组�
 
 ## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用远程桌面服务网关保护你的远程桌面服务连接
 
-如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 该网关使用安全套接字层 (SSL) 对通信进行加密，并防止托管 RDS 的系统直接暴露在 Internet 上。
+如果使用远程桌面服务 (RDS) 来允许员工连接到本地网络上基于 Windows 的计算机，则应在边缘网络中使用 Microsoft 远程桌面服务网关。 该网关使用安全套接字层 (SSL) 对通信进行加密，并防止托管 RDS 的本地计算机直接暴露在 Internet 上。
 
 ![带远程桌面服务网关的远程桌面服务连接](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 

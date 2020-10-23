@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全与合规中心中创建关键字字典的基本步骤。
-ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547006"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681632"
 ---
 # <a name="create-a-keyword-dictionary"></a>创建关键字字典
 
@@ -35,14 +35,6 @@ ms.locfileid: "47547006"
 > - 繁体中文
 > - 韩语
 > - 日语
-> 
->此功能预览仅在商业云中提供，并且仅在以下地区推出：
-> - 日本
-> - 韩国
-> - 中国大陆
-> - 香港特别行政区
-> - 澳门特别行政区
-> - 中国台湾
 >
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 

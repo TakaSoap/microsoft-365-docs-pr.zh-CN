@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: ca5774c027eebaedd42bcca23292b89d92f1e102
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487740"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681392"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -48,6 +48,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
   远程员工能够随时随地访问： 
 
   - Microsoft 365 订阅中基于云的服务和数据。 
+
   - 组织资源，例如由本地应用程序数据中心提供的资源。
 
 - 安全
@@ -61,15 +62,18 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 - 协作高效
 
   远程员工可采用与本地相媲美的高协作方式实现高效工作，方式如下：
+
   - 通过 Teams 进行的联机会议和聊天会话。 
+
   - 基于云的文件存储的共享工作区，可通过 SharePoint 和 OneDrive 实现全球可访问性和实时协作。
+
   - 用于划分工作并完成任务的共享任务和工作流。 
 
 为获得无缝登录体验，应将本地 Active Directory 域服务 (AD DS) 用户帐户与 Azure Active Directory (Azure AD) 同步。 若要保护 Windows 10 设备，应在 Intune 中对其进行注册。 下面是基础结构的高级视图。
 
 ![面向使用 Microsoft 365 的远程工作者的基本基础结构](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-若要满足针对远程员工的条件，请使用以下 Microsoft 365 功能和特性。
+若要为远程工作者启用 Microsoft 365 的功能，请使用以下 Microsoft 365 功能。
 
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
@@ -86,7 +90,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 | 内容和功能， | 管理设备上的软件安装、更新和设置 | 需要单独的 Configuration Manager 许可证 |
 | 桌面分析 | 确定你的 Windows 客户端的更新准备情况。   | 需要单独的 Configuration Manager 许可证 |
 | Windows Autopilot | 设置和预配置新的 Windows 10 设备，以便高效使用。   | Microsoft 365 E3 或 E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer、Power Apps | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
+| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 应用版、Microsoft Power Platform、Yammer | 创建、沟通和协作。 | Microsoft 365 E3 或 E5 |
 ||||
 
 有关安全和合规性条件，请参阅[针对远程工作者的部署安全性与合规性](empower-people-to-work-remotely-security-compliance.md)。
@@ -97,7 +101,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
 
-使用以下步骤来保护和优化对组织的服务器、数据和云服务的访问，并实现最大的工作效率。
+按照以下步骤保护和优化对组织的服务器和云服务的访问，并尽量提高远程工作者的工作效率。
 
 1. [借助 MFA 提升登录安全性](empower-people-to-work-remotely-secure-sign-in.md)
 2. [提供对本地应用和服务的远程访问权限](empower-people-to-work-remotely-remote-access.md)
@@ -108,4 +112,4 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 [![使用 Microsoft 365 为远程工作者提供强大帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-有关 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[启用远程工作技术社区网站](https://resources.techcommunity.microsoft.com/enabling-remote-work/)。
+若要了解 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[使用 Microsoft Teams 网站实现混合型工作](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。

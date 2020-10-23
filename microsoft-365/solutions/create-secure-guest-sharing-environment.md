@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，你将了解在 Microsoft 365 中安全的客户共享环境的可用选项。
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527926"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681554"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -165,7 +165,7 @@ ms.locfileid: "46527926"
 9. 在“**云应用或操作**”边栏选项卡上，单击“**完成**”。
 10. 在“**分配**”下，单击“**条件**”。
 11. 在“**条件**”边栏选项卡上，单击“**客户端应用**”。
-12. 在“**客户端应用**”边栏选项卡上，为“**配置**”单击“**是**”，然后选择“**移动应用和桌面客户端**”和“**新式身份验证客户端**”设置。</br>
+12. 在“**客户端应用**”边栏选项卡上，为“**配置**”单击“**是**”，然后选择“**移动应用和桌面客户端**”设置。</br>
     ![Azure AD 条件访问客户端应用设置的屏幕截图](../media/azure-ad-conditional-access-client-mobile.png)
 13. 单击“**完成**”，然后在“**条件**”边栏选项卡上，再次单击“**完成**”。
 14. 在“**访问控制**”下，单击“**授予**”。

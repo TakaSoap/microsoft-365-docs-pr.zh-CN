@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: c1ef7a765f61ee2231fd99c47f076855225de3fb
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651404"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740256"
 ---
 # <a name="communication-compliance-feature-reference"></a>通信合规性功能参考
 
@@ -183,7 +183,7 @@ ms.locfileid: "48651404"
 
 *成人*、 *Racy*和*Gory*图像分类器扫描中的文件。JPEG、。PNG、。GIF 和。BMP 格式。 图像文件的大小必须小于 4 mb (MB) ，并且图像的尺寸必须大于50x50 像素，并且要符合评估条件的图像必须大于 50 kb (KB) 。 Exchange Online 电子邮件和 Microsoft 团队频道和聊天支持图像标识。
 
-内置的 trainable 和全局分类器不会在这些区域中提供完整的术语或图像列表。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时随时更新分类器的权利。 虽然分类器可以帮助组织监控这些方面，但分类程序并不旨在提供组织的唯一方法来监视或解决此类语言或图像。 您的组织（而非 Microsoft）仍负责在这些领域中与扫描和阻止语言和图像相关的所有决策。
+内置的 trainable 和全局分类器不会在这些区域中提供完整的术语或图像列表。 此外，语言和文化标准不断变化，而在这些现实中，Microsoft 保留在决定时随时更新分类器的权利。 虽然分类器可以帮助组织监控这些方面，但分类程序并不旨在提供组织的唯一方法来监视或解决此类语言或图像。 您的组织（而非 Microsoft）仍负责在这些领域中与监控、扫描和阻止语言和图像相关的所有决策，包括与当地隐私和其他适用法律的兼容性。 Microsoft 鼓励在部署和使用前咨询法律顾问。
 
 有关 Microsoft 365 中的 trainable 分类程序的信息，请参阅 [trainable 分类](classifier-get-started-with.md)器入门。
 

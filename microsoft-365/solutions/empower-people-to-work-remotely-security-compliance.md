@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: 36abe8b8dbd84a883d829308fc970258e7551f2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445876"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681464"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -39,6 +39,8 @@ ms.locfileid: "48445876"
 - 防止信息泄漏
 - 遵守区域数据法规
 
+下面是 Microsoft 365 的功能，它们为远程工作者提供安全性和合规性服务。
+
 ![使用这些 Microsoft 365 服务保持安全和合规](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
 
 ## <a name="security"></a>安全性
@@ -54,7 +56,7 @@ ms.locfileid: "48445876"
 | Azure AD 标识保护  | 自动检测和修复基于标识的风险。 <br><br>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
 ||||
 
-有关详细信息，请参阅 [Microsoft 365 合规性入门快速任务](../compliance/compliance-quick-tasks.md)。
+有关详细信息，请参阅[安全团队为支持在家办公需完成的 12 大任务](../security/top-security-tasks-for-remote-work.md)。
 
 ## <a name="compliance"></a>合规性
 
@@ -73,16 +75,16 @@ ms.locfileid: "48445876"
 | 内部风险管理 |  对组织中的恶意和意外风险进行检测、调查并采取相关措施。 即使员工使用的是非托管设备，Microsoft 365 也可检测到这些类型的风险。 | 具有合规性或内部风险管理加载项的 Microsoft 365 E5 或 Microsoft 365 E3 |
 ||||
 
-有关详细信息，请参阅[安全团队为支持在家办公需完成的 12 大任务](../security/top-security-tasks-for-remote-work.md)。
+有关详细信息，请参阅 [Microsoft 365 合规中心入门快速任务](../compliance/compliance-quick-tasks.md)。
 
 ## <a name="results-of-step-3"></a>步骤 3 的结果
 
 对于你的远程工作者，你已实施：
 
-- 安全性：
+- 安全性
   - 对远程工作者用于通信和协作的应用和数据的受控访问
   - 针对云服务数据、电子邮件和 Windows 10 设备的恶意软件保护 
-- 合规性：
+- 合规性
   - 一致的敏感度和保护级别标签
   - 防止信息泄露的策略
   - 遵守区域数据法规

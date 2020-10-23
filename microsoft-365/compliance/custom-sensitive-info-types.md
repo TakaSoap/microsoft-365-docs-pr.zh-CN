@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 获取有关数据丢失防护 (DLP) 的自定义敏感信息类型的概述，如主要模式、字符接近度和可信度级别。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: e414d9a31869e9b1382f0713d6d70df745c41471
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379174"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681760"
 ---
 # <a name="custom-sensitive-information-types"></a>自定义敏感信息类型
 
@@ -64,14 +64,6 @@ Microsoft 365 包括许多你可直接在组织中使用的内置敏感信息类
 > - 繁体中文
 > - 韩语
 > - 日语
-> 
->此功能预览仅在商业云中提供，并且仅在以下地区推出：
-> - 日本
-> - 韩国
-> - 中国大陆
-> - 香港特别行政区
-> - 澳门特别行政区
-> - 中国台湾
->
+
 >此支持适用于敏感信息类型。 有关详细信息，请参阅[双字节字符集的信息保护支持发行说明（预览版）](mip-dbcs-relnotes.md)。
 
