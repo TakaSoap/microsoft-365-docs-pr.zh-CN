@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/01/2020
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,49 +14,57 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600525"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681728"
 ---
-# <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中配置外部电子邮件转发
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自动外部电子邮件转发
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+作为管理员，您可能有公司要求限制或控制自动转发的邮件给外部收件人 (组织外部的收件人) 。 电子邮件转发可能非常有用，但是可能会因信息泄露而带来安全风险。 攻击者可使用此信息来攻击您的组织或合作伙伴。
 
-外部转发由 *出站反垃圾邮件策略* 控制，并根据配置的设置范围限定给用户。 当前支持3个设置：
+Microsoft 365 中提供了以下类型的自动转发：
 
-- **自动** –阻止自动外部转发。 邮件的内部自动转发将继续有效。 这是默认设置。
+- 用户可以配置 [收件箱规则](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) ，以便将邮件有意转发给外部发件人 (或作为受到威胁的帐户) 的结果。
 
-- **启用** –允许和不限制自动外部转发。
+- 管理员可以配置 [邮箱转发](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (也称为 SMTP 转发) ，以自动将邮件转发给外部收件人。
 
-- **关** -自动外部转发已禁用，并将导致向最终用户 (NDR) 的未送达报告。
+您可以使用出站垃圾邮件筛选器策略来控制自动转发到外部收件人。 有三个可用的设置：
 
-有关如何配置这些设置的详细信息，请参阅 [配置 EOP 中的出站垃圾邮件筛选](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) 。
+- **自动**：阻止自动外部转发。 邮件的内部自动转发将继续有效。 这是默认设置。
+- **启用**：允许和不限制自动外部转发。
+- **Off**：禁用自动外部转发，并将导致未送达报告 (也称为 "NDR" 或 "退回邮件") 发件人。
 
-> [!NOTE]
-> 禁用自动转发也将禁用将邮件重定向到外部地址的收件箱规则。
+有关如何配置这些设置的说明，请参阅 [在 EOP 中配置出站垃圾邮件筛选](configure-the-outbound-spam-policy.md)。
 
-## <a name="controlling-external-email-forwarding"></a>控制外部电子邮件转发
+**注意**：
 
-作为组织的管理员，你可能需要对公司要求进行限制或控制能够在组织外部使用收件箱规则或 SMTP 转发自动转发电子邮件的用户。 电子邮件转发可能是一项非常有用的功能，但也可以通过可能泄露的信息带来风险，即使是向攻击者提供的信息可以被利用来攻击组织或其合作伙伴也是如此。
+- 禁用自动转发也将禁用将邮件重定向到外部地址的收件箱规则。
 
-Office 365 不允许通过 "收件箱" 规则或 "邮箱" 配置自动进行外部转发，这将提供安全的默认策略。 但是，管理员可以为组织中的所有用户或部分用户修改这些设置。 内部用户之间的转发邮件不受此类修改的影响。
+- 内部用户之间的邮件自动转发不受出站垃圾邮件筛选器策略中的设置的影响。
 
-> [!NOTE]
-> 在 Office 365 中禁用自动转发外部地址的过程分阶段进行，详细信息通过 [消息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) 发布进行通信。 若要帮助管理员准备这些更改，请提前修改策略以确保用户不会中断他们的用户。
+- 您可以查看在 [自动转发的邮件报告](mfi-auto-forwarded-messages-report.md)中自动将邮件转发给外部收件人的用户的相关信息。
 
-有关使用自动转发的用户的详细信息，可以在 [自动转发的邮件报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)中找到组织中 (收件箱规则或 SMTP 转发) 。
+## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>出站垃圾邮件筛选器策略设置如何与其他自动电子邮件转发控件一起使用
 
-## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>此策略如何与其他自动转发控件一起使用
+作为管理员，您可能已将其他控件配置为允许或阻止自动电子邮件转发。 例如：
 
-作为管理员，您可能已有其他类型的控件，例如阻止在 [远程域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) 中进行自动转发和使用 Exchange 传输规则 (ETR) 。 这两个控件都独立于此特定功能，例如，如果您允许对远程域进行自动转发，但通过出站垃圾邮件策略阻止自动转发，则会导致自动转发的邮件被阻止。 同样，如果您在出站垃圾邮件策略中允许自动转发，但在 ETR 或远程域中将其阻止，则这两个控件中的任何一个都将阻止该邮件。 例如，这使您可以在出站垃圾邮件策略中允许自动转发，并利用远程域来控制用户可以自动转发邮件的域。
+- 允许或阻止自动将电子邮件转发到部分或全部外部域的[远程域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
+- Exchange [邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的条件和操作 (也称为传输规则) ，用于检测并阻止将自动转发的邮件发送给外部收件人。
 
+远程域设置和邮件流规则与出站垃圾邮件筛选器策略中的设置无关。 例如：
+
+- 您允许远程域的自动转发，但在出站垃圾邮件筛选器策略中阻止自动转发。 在此示例中，将阻止自动转发的邮件。
+- 您可以在出站垃圾邮件筛选器策略中允许自动转发，但使用邮件流规则或远程域设置阻止自动转发的电子邮件。 在此示例中，邮件流规则或远程域设置将阻止自动转发的邮件。
+
+通过此功能，您可以 (例如，) 允许在出站垃圾邮件筛选器策略中自动转发，但使用远程域控制用户可以将邮件转发到的外部域。
 
 ## <a name="the-blocked-email-forwarding-message"></a>阻止的电子邮件转发邮件
 
-当检测到邮件自动转发且组织策略 *阻止* 活动的 **未送达报告 (NDR) ** 将生成回最终用户。 报告将指示邮件未送达。 NDR 将具有以下格式： 
+当检测到邮件自动转发且组织策略 *阻止* 该活动时，会将该邮件以 NDR 的形式返回给发件人，其中包含以下信息：
 
-`5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`
