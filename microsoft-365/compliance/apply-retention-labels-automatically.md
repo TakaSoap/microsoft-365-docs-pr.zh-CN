@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196375"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740266"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -213,7 +213,19 @@ ProgID:Media AND ProgID:Meeting
 自动应用保留标签时，可能需要等待长达 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
   
 ![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
-  
+
+如果 7 天后未显示期望的标签，请从合规中心的**标签策略**页面中检查自动应用策略的**状态**。 如果看到**关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
+
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+2. 运行以下命令：
+    
+    ``` PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+   ```
+
+
+
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留标签及其策略
 
 在编辑保留标签或自动应用策略，并且该保留标签已应用到内容时，更新后的设置将自动应用于此内容以及新标识的内容。

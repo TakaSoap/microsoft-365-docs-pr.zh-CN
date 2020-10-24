@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解 Microsoft 365 组。
-ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: f3114fdd6eefae0fe226e25907716101dcb6a51f
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337165"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753261"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>面向管理员的 Microsoft 365 组概述
 
@@ -108,7 +108,7 @@ Microsoft 365 组是促进跨 Microsoft 365 的所有团队合作的基础成员
 
 如果您具有仅 Exchange 计划，您仍可以在 Outlook 中获取组的共享收件箱和共享日历功能，但不会获取文档库、计划程序或任何其他功能。
 
-Microsoft 365 组使用 Azure Active Directory (AAD) 。 你获取的组功能取决于你拥有的 Azure Active Directory 订阅，以及分配给组组织者的 (的许可证) 。
+Microsoft 365 组适用于 Azure Active Directory。 你获取的组功能取决于你拥有的 Azure Active Directory 订阅，以及分配给组组织者的 (的许可证) 。
 
 > [!IMPORTANT]
 > 对于所有组功能，如果你有 Azure AD Premium 订阅，则用户可以加入组，无论是否为其分配了 AAD P1 许可证。 不强制实施许可。

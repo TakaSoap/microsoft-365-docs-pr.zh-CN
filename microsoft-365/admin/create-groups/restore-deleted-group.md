@@ -1,10 +1,10 @@
 ---
-title: 还原已删除的组
+title: 还原已删除的 Microsoft 365 组
 ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,24 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 了解如何还原已删除的 Microsoft 365 组。
-ms.openlocfilehash: 30e267a149bc18c2425d4ea38423b887116794c6
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 091697be54b1127a5cb336179733d51519947e14
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681642"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753239"
 ---
-# <a name="restore-a-deleted-group"></a>还原已删除的组
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
-
-::: moniker-end
-
-> [!NOTE]
-> 本文介绍仅还原 Microsoft 365 组。 删除后，所有其他组都不能还原。
+# <a name="restore-a-deleted-microsoft-365-group"></a>还原已删除的 Microsoft 365 组
 
 如果已删除某个组，默认情况下它将保留30天。 这30天的期限被视为 "软删除"，因为您仍可以还原组。 30天后，该组及其关联的内容将被永久删除且无法还原。
 
@@ -59,7 +49,12 @@ ms.locfileid: "48681642"
 
 - Yammer group and group content (如果 Microsoft 365 组是从 Yammer 创建的) 
 
-## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>使用 web 上的 Outlook 还原您拥有的组
+> [!NOTE]
+> 本文介绍仅还原 Microsoft 365 组。 删除后，所有其他组都不能还原。
+
+## <a name="restore-a-group"></a>还原组
+
+# <a name="outlook"></a>[Outlook](#tab/outlook)
 
 如果你是 Microsoft 365 组的所有者，则可以通过执行以下步骤，在 web 上的 Outlook 中自行还原组：
 
@@ -69,7 +64,7 @@ ms.locfileid: "48681642"
 
 如果此处未显示已删除的组，请与管理员联系。
 
-## <a name="restore-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中还原组
+# <a name="admin-center"></a>[管理中心](#tab/admin-center)
 
 如果您是全局管理员或组管理员，则可以在 Microsoft 365 管理中心中还原已删除的组：
 
@@ -79,28 +74,9 @@ ms.locfileid: "48681642"
 
 > [!NOTE]
 > 在某些情况下，可能需要长达24小时才能还原组及其所有数据。 
-  
-## <a name="permanently-delete-a-microsoft-365-group"></a>永久删除 Microsoft 365 组
 
-有时，您可能希望永久清除组，而无需等待30天软删除期过期。 若要执行此操作，启动 PowerShell 并运行此命令，获取组的对象 ID：
-  
-```
-Get-AzureADMSDeletedGroup
-```
+---
 
-记下要永久删除的一个或几个组的对象 ID。
-  
-> [!CAUTION]
-> 清除组后可永久删除该组及其数据。 
-  
-若要清除组，请在 PowerShell 中运行此命令：
-  
-```
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
-```
-
-若要确认是否成功清除该组，请再次运行  *Get-AzureADMSDeletedGroup*  cmdlet 以确认该组不再出现在软删除的组列表中。某些情况下，要永久删除该组及其所有数据可能需要长达 24 小时。 
-  
 ## <a name="got-questions-about-microsoft-365-groups"></a>遇到有关 Microsoft 365 组的问题？
 
 访问 [Microsoft 技术社区](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) 以发布问题，并参与有关 Microsoft 365 组的对话。 

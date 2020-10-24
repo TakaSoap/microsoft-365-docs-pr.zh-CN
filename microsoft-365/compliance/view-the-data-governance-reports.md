@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 使用安全与合规中心内的数据管理报告，可快速查看标签是否按预期应用于内容。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: acd042f73500004014a9c229c2a5f34552888c97
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819002"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681750"
 ---
 # <a name="view-the-data-governance-reports"></a>查看数据管理报告
 
@@ -37,7 +37,7 @@ ms.locfileid: "44819002"
     
 所有这些报告显示的都是 Exchange、SharePoint 和 OneDrive for Business 中的已标记内容。
   
-这些报告可在安全 &amp; 合规中心 \> **信息治理** \> **仪表板**中找到。
+这些报告可在安全 &amp;合规中心\> **信息治理**\> [**仪表板**](https://protection.office.com/datamanagement/dashboard)中找到。
   
 ![显示过去 90 天内标签趋势的图表](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   

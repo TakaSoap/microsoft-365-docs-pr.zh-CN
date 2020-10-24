@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 了解如何管理 Microsoft 365 组，包括添加删除组成员、编辑电子邮件地址、组名称或说明，以及自定义组的工作方式。
-ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8216b80ba6cd6bffe470f4fe4ace43307afba5f2
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469705"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753297"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中管理组
 
@@ -34,40 +34,14 @@ ms.locfileid: "48469705"
 
 ## <a name="edit-the-group-name-or-description"></a>编辑组名称或说明
 
-::: moniker range="o365-worldwide"
-
 1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
 
 2. 选择要编辑的组，然后单击 " **编辑名称和说明**"。
 
 3. 更新 "名称" 和 "说明"，然后选择 " **保存**"。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
-
-2. 选择要编辑的组，然后单击 " **编辑名称和说明**"。
-
-3. 更新 "名称" 和 "说明"，然后选择 " **保存**"。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
-
-2. 选择要编辑的组，然后单击 " **编辑名称和说明**"。
-
-3. 更新 "名称" 和 "说明"，然后选择 " **保存**"。
-
-::: moniker-end
 
 ## <a name="manage-group-owners-and-members"></a>管理组所有者和成员
 
-::: moniker range="o365-worldwide"
-
 1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
 
 2. 单击要管理的组的名称以打开 "设置" 窗格。
@@ -77,36 +51,6 @@ ms.locfileid: "48469705"
 4. 选择 " **添加** " 以添加某人，或单击 **X** 以删除某人。
 
 5. 单击“关闭”****。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
-
-2. 单击要管理的组的名称以打开 "设置" 窗格。
-
-3. 在 " **成员** " 选项卡上，选择是否要管理所有者或成员。
-
-4. 选择 " **添加** " 以添加某人，或单击 **X** 以删除某人。
-
-5. 单击“关闭”****。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
-
-2. 单击要管理的组的名称以打开 "设置" 窗格。
-
-3. 在 " **成员** " 选项卡上，选择是否要管理所有者或成员。
-
-4. 选择 " **添加** " 以添加某人，或单击 **X** 以删除某人。
-
-5. 单击“关闭”****。
-
-::: moniker-end
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>将对话副本发送到组成员的收件箱
   
@@ -116,8 +60,6 @@ ms.locfileid: "48469705"
 
 组成员可以选择停止关注 Outlook 中的组，从而退出接收这些电子邮件。
 
-::: moniker range="o365-worldwide"
-
 1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
 
 2. 单击要管理的组的名称以打开 "设置" 窗格。
@@ -126,38 +68,10 @@ ms.locfileid: "48469705"
 
 4. 选择“**保存**”。
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在 "管理中心" 中，转到 " **组** \> **组** " 页面，然后选择要更改的组。
-
-2. 在 " **名称**" 旁边，选择 " **编辑**"。
-
-3. **如果想**要成员在自己的收件箱中接收组邮件和日历项目的副本，请**将组对话和事件的 "发送" 副本转换为 "将组成员的收件箱"** 。
-
-4. 选择“**保存**”。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在 "管理中心" 中，转到 " **组** \> **组** " 页面，然后选择要更改的组。
-
-2. 在 " **名称**" 旁边，选择 " **编辑**"。
-
-3. **如果想**要成员在自己的收件箱中接收组邮件和日历项目的副本，请**将组对话和事件的 "发送" 副本转换为 "将组成员的收件箱"** 。
-
-4. 选择“**保存**”。
-
-::: moniker-end
-
 ## <a name="let-people-outside-the-organization-email-the-group"></a>允许组织外部的人员向组发送电子邮件
 
 如果您想要拥有公司电子邮件地址（如 info@contoso.com），则此选项非常有用。
  
-::: moniker range="o365-worldwide"
-
 1. 在管理中心中，展开 " **组**"，然后单击 " **组**"。
 
 2. 单击要管理的组的名称以打开 "设置" 窗格。
@@ -166,32 +80,27 @@ ms.locfileid: "48469705"
     
 4. 选择“**保存**”。
 
-::: moniker-end
+## <a name="permanently-delete-a-microsoft-365-group"></a>永久删除 Microsoft 365 组
 
-::: moniker range="o365-germany"
+有时，您可能希望永久清除组，而无需等待30天软删除期过期。 若要执行此操作，启动 PowerShell 并运行此命令，获取组的对象 ID：
+ 
+ ```powershell
+`Get-AzureADMSDeletedGroup`
+```
 
-1. 刷新 "管理中心" 页，使新组显示出来。
-    
-2. 在 "管理中心组" 列表中，选择要更改的组，然后在 " **名称**" 旁边，选择 " **编辑**"。 
-    
-3. 将" **允许组织外部的人员向组发送电子邮件**"开关设置为" **开启**"。
-    
-4. 选择“**保存**”。
+记下要永久删除的一个或几个组的对象 ID。
+  
+> [!CAUTION]
+> 清除组后可永久删除该组及其数据。 
+  
+若要清除组，请在 PowerShell 中运行此命令：
 
-::: moniker-end
+```powershell
+`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+```
 
-::: moniker range="o365-21vianet"
-
-1. 刷新 "管理中心" 页，使新组显示出来。
-    
-2. 在 "管理中心组" 列表中，选择要更改的组，然后在 " **名称**" 旁边，选择 " **编辑**"。 
-    
-3. 将" **允许组织外部的人员向组发送电子邮件**"开关设置为" **开启**"。
-    
-4. 选择“**保存**”。
-
-::: moniker-end
-
+若要确认是否成功清除该组，请再次运行  *Get-AzureADMSDeletedGroup*  cmdlet 以确认该组不再出现在软删除的组列表中。某些情况下，要永久删除该组及其所有数据可能需要长达 24 小时。 
+  
 ## <a name="related-articles"></a>相关文章
 
 [创建 Microsoft 365 组](create-groups.md)
