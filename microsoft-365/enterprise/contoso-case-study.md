@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虚构但具有代表性的全球组织如何采用 Microsoft 365 for enterprise。
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637219"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754664"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>适用于 Contoso Corporation 的 Microsoft 365 for 企业版
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>适用于 Contoso Corporation 的 Microsoft 365 for 企业版
 
 适用于企业的 microsoft 365 是 Microsoft premier 云产品，它将本地和基于云的生产力应用程序和服务与 Windows 10 企业版和高级安全功能结合在一起。 它是一个完整的智能解决方案，使每个人都能以创造性和安全的方式协同工作。
 
@@ -36,7 +35,9 @@ Contoso Corporation 是一个虚构但具有代表性的全球生产家集，其
 
   Contoso 是一个全球制造、销售和支持组织，其产品多于100000个。
 
-- [CONTOSO IT 基础结构和需求](contoso-infra-needs.md) Contoso 正在从本地集中式 IT 基础结构转换到包含基于云的个人工作负载、应用程序和混合方案的包含云的个人工作负载的安装程序
+- [Contoso IT 基础结构和需求](contoso-infra-needs.md)
+
+  Contoso 正在从本地集中式 IT 基础结构转换到包含基于云的个人工作负载、应用程序和混合方案的包含云的个人工作负载的安装程序。
 
 - [网络](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Contoso Corporation 是一个虚构但具有代表性的全球生产家集，其
 
 - [Windows 10 企业版](contoso-win10.md)
 
-  Contoso Windows 10 企业版基础结构部署并自动安装运行公司的主要电脑和设备操作系统的设备的更新。
+  适用于 Windows 10 企业版的 Contoso 基础结构为运行公司的主要电脑和设备操作系统的设备部署并自动安装更新。
 
 - [Microsoft 365 企业应用版](contoso-o365pp.md)
 
-  适用于企业的 Contoso Microsoft 365 应用程序的基础结构部署并自动安装适用于 Microsoft Office 的工作效率软件的更新。
+  Contoso 基础结构 for Microsoft 365 应用程序的企业版部署并自动安装 Microsoft Office 生产率软件的更新。
 
 - [移动设备管理](contoso-mdm.md)
 
@@ -76,7 +77,7 @@ Contoso Corporation 是一个虚构但具有代表性的全球生产家集，其
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-overview.md) Contoso Corporation 以及在部署适用于企业的 Microsoft 365 时所解决的设计注意事项。
+了解 [Contoso Corporation](contoso-overview.md) 以及在部署适用于企业的 Microsoft 365 时所解决的设计注意事项。
 
 
 ## <a name="see-also"></a>另请参阅

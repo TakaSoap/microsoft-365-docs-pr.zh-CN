@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Windows 10 企业版的就地升级。
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686414"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754241"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso Windows 10 企业版部署
 
@@ -55,15 +54,7 @@ Contoso 具有一个现有的 Configuration Manager (Current Branch) 基础结�
 
 ## <a name="planning-process"></a>规划过程
 
-在部署之前，Contoso 定义以下环：
-
-- 进行验证和部署暂存的三个环 
-  - 一个用于预览版本 
-  - 一个用于新发布版本
-  - 一个用于以前的版本 
-- 一个环基于验证环中的数据，用于广泛部署 Windows 10 企业版
-
-此外，Contoso 还使用 Windows Analytics 的升级就绪情况解决方案来确定安装的应用集及其与 Windows 10 企业版的兼容性。
+Contoso 使用 Windows Analytics 中的升级准备情况来确定已安装的应用程序集及其与 Windows 10 企业版的兼容性。
 
 ## <a name="deployment-process"></a>部署过程
 
@@ -71,11 +62,11 @@ Contoso 具有一个现有的 Configuration Manager (Current Branch) 基础结�
 
 1. 为 Configuration Manager 启用对等缓存。
 2. 基于来自批量许可服务中心的图像创建自定义 Windows 程序包。
-3. Configuration Manager 用于跨网络向分发点部署 Windows 包，并向三个验证和部署暂存环部署内部版本。
+3. 使用 Configuration Manager 将 Windows 程序包部署到其网络中的分发点，并将生成部署到三个验证和部署暂存组。
 4. 使用 Windows Analytics 的设备运行状况和更新合规性解决方案，为三个验证和部署暂存环中的电脑和设备执行成功评估。
-5. 基于 Windows Analytics 信息，Contoso 已确定 Windows 10 企业版将部署到广泛部署环的版本。
-6. 运行 Configuration Manager 部署任务序列，将选定的 Windows 包部署到广泛部署环中。
-7. 使用可解决问题的设备运行状况和更新合规性解决方案来监视广泛部署环中的电脑和设备。
+5. 根据 Windows Analytics 信息，Contoso 已确定要部署到广泛部署组的 Windows 10 企业版的版本。
+6. 运行 Configuration Manager 部署任务序列以将选定的 Windows 包部署到广泛的部署组。
+7. 使用设备运行状况和更新合规性解决方案，在广泛的部署组中监控电脑和设备，以解决问题。
 
 下面是 Contoso 的就地升级和持续更新部署体系结构。
 
@@ -87,11 +78,11 @@ Contoso 具有一个现有的 Configuration Manager (Current Branch) 基础结�
   - 从 Microsoft 网络的 Microsoft 批量许可中心获取 Windows 10 企业版包的图像。
   - 是用于部署包的集中管理点。
 - 通常位于 Contoso 区域中心办事处的区域分发点。
-- 不同位置的 Windows 电脑和设备接收和安装部署包，用于就地升级或基于环成员的持续更新。
+- 在不同位置的 Windows 电脑和设备，用于根据组成员身份，接收并安装部署包以进行就地升级或正在进行的更新。
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-o365pp.md) Contoso 如何利用其 Configuration Manager 基础结构在组织中部署 Microsoft 365 企业应用版并使之保持最新。 
+了解 Contoso 如何利用其 Configuration Manager 基础结构在其组织中 [部署和保持当前的 Microsoft 365 应用程序的企业](contoso-o365pp.md) 。 
 
 ## <a name="see-also"></a>另请参阅
 

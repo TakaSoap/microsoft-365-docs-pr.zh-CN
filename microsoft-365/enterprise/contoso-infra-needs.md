@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础结构的基本结构，以及 Microsoft 365 for 企业如何满足公司的业务需求。
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637171"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754582"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -30,12 +29,10 @@ Contoso 正在从本地集中式 IT 基础结构转换到包含基于云的个�
 
 Contoso 通过将应用程序数据中心置于巴黎总部，来使用最集中的本地 IT 基础结构。
 
-图1显示了具有应用程序数据中心、DMZ 和 internet 的总部办公室。
+下面是具有应用程序数据中心、DMZ 和 internet 的总部办公室。
 
 ![现有 Contoso IT 基础结构](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**图1：现有 Contoso IT 基础结构**
- 
 本地应用程序数据中心主机： 
 
 - 使用 SQL Server 和其他 Linux 数据库的自定义业务线应用程序。
@@ -135,12 +132,12 @@ Contoso IT 部门在部署前确定了以下业务需求映射到 Microsoft 365 
 | 合规性 |  |  |
 |  | 遵守区域法规要求 | Microsoft 365 中的 GDPR 功能 |
 | 管理 |  |  |
-|  | 降低安装客户端更新的 IT 开销 | 部署圈 <BR> Windows 10 企业版更新 <BR> Microsoft 365 企业应用版更新 |
+|  | 降低安装客户端更新的 IT 开销 | Windows 10 企业版更新 <BR> Microsoft 365 企业应用版更新 |
 ||||
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-networking.md) Contoso Corporation 本地网络，以及它是如何针对 Microsoft 365 基于云的资源的访问和延迟进行优化的。
+了解 Contoso Corporation [本地网络](contoso-networking.md) ，以及它是如何针对 Microsoft 365 基于云的资源的访问和延迟进行优化的。
 
 ## <a name="see-also"></a>另请参阅
 

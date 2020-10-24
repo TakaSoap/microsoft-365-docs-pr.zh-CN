@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 来部署 Microsoft 365 企业应用版。
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637159"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754340"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>Contoso 的 Microsoft 365 企业应用版部署
 
@@ -40,7 +39,7 @@ Contoso 将他们的电脑升级到 Windows 10 企业版和 Microsoft 365 应用
 - 智能语言包部署，包括自动部署与操作系统相同的语言。
 - 在部署过程中从客户端删除 Office 的现有版本的完全受支持且易于使用的方法。
 
-除了配置管理器之外，Contoso 还使用 [office 外接程序和 VBA 的准备工具包](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)（Microsoft 的免费工具）来评估其 Office 宏和外接程序的兼容性问题。
+除了配置管理器，Contoso 还使用 [office 外接程序和 VBA 的准备工具包](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)，从 Microsoft 获取免费工具，以评估 Office 宏和外接程序的兼容性问题。
 
 ## <a name="managing-deployment-and-updates"></a>管理部署和更新
 
@@ -79,7 +78,7 @@ Contoso 对功能更新的使用相同的两阶段方法，因为它们用于部
  
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-mdm.md) Contoso 如何在 microsoft 365 for 企业版中使用 microsoft Intune 来管理其设备以及他们在组织中运行的应用程序。
+了解 Contoso 如何在 Microsoft 365 for 企业版中 [使用 Microsoft Intune](contoso-mdm.md) 来管理其设备以及他们在组织中运行的应用程序。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用适用于企业的 Microsoft 365 的安全功能。
-ms.openlocfilehash: 635336b70318acdd4ed013a2705691d160926e84
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649697"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754228"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Microsoft 365 for Contoso Corporation 的企业安全摘要
 
@@ -40,7 +40,7 @@ Contoso 按照这些步骤为 Microsoft 365 for 企业版的部署准备好其�
 
 1. 限制云的管理员帐户
 
-   Contoso 对其现有的 Active Directory 域服务进行了广泛审阅 (AD DS) 管理员帐户，并设置专用的云管理员帐户和组的系列。
+   Contoso 对其现有的 Active Directory 域服务进行了广泛的审阅 (AD DS) 管理员帐户，并设置专用的云管理员帐户和组的系列。
 
 2. 将数据分类为三个安全级别
 

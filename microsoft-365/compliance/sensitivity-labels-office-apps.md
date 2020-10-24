@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户如何在 Office 应用程序中使用桌面、移动和 web Office 应用程序中的敏感度标签，以及哪些应用程序支持灵敏度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309204"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754560"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -59,6 +59,7 @@ ms.locfileid: "48309204"
 |[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[带有变量的动态标记](#dynamic-markings-with-variables)                                              | 预览： [Beta 通道和当前频道 (预览) ](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | 正在审阅 |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [当前频道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +)  | 16.35 +   | 正在审阅   | 正在审阅         | 正在审阅                                                        |
 |[查看标签使用情况标签分析](label-analytics.md) 并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 正在审阅                                                        |
@@ -76,6 +77,7 @@ ms.locfileid: "48309204"
 |[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[标记内容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
+|[带有变量的动态标记](#dynamic-markings-with-variables)                                              | 正在审阅                     | 正在审阅                 | 正在审阅         | 正在审阅           | 正在审阅               |
 |[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[查看标签使用情况标签分析](label-analytics.md) 并为管理员发送数据                      | 正在审阅                       | 正在审阅                    | 正在审阅           | 正在审阅               | 正在审阅               |
@@ -235,6 +237,27 @@ Office 应用程序使用敏感度标签以不同方式应用内容标记和加�
 - Microsoft Cloud App Security
 
 对于这些方案，使用内置标签的用户可以通过临时删除或替换当前标签，然后重新应用原始标签来应用标签的内容标记。
+
+### <a name="dynamic-markings-with-variables"></a>带有变量的动态标记
+
+> [!IMPORTANT]
+> 目前，并非所有平台上的所有应用程序都支持动态内容标记，您可以为页眉、页脚和水印指定这些标记。 对于不支持此功能的应用程序，这些应用程序会将标记应用为标签配置中指定的原始文本，而不是解析这些变量。
+> 
+> Azure 信息保护统一标签客户端支持动态标记。 有关内置于 Office 的标记，请参阅此页上 " [功能](#support-for-sensitivity-label-capabilities-in-apps) " 部分中的表。
+
+为内容标记配置敏感度标签时，可以在页眉、页脚或水印的文本字符串中使用以下变量：
+
+| 变量 | 说明 | 应用标签的示例 |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | 当前标签显示名称 | **常规**|
+| `${Item.Name}` | 当前文件名或电子邮件主题 | **Sales.docx** |
+| `${Item.Location}` | 文档的当前路径和文件名，或电子邮件的电子邮件主题 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 当前用户显示名称  | **Richard Simone** |
+| `${User.PrincipalName}` | 当前用户的 Azure AD 用户主体名称 (UPN)  | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | 本地时区的当前日期和时间 | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> 这些变量的语法区分大小写。
 
 ## <a name="end-user-documentation"></a>最终用户文档
 

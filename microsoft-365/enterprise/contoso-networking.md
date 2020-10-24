@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 网络基础结构，以及公司如何使用其 SD WAN 技术实现最佳网络性能到 Microsoft 365 for enterprise 云服务。
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637183"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754010"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 网络
 
@@ -117,7 +116,7 @@ Contoso 用户成功采用了适用于企业服务的 Microsoft 365，这取决�
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-identity.md) Contoso 如何利用云中面向员工的本地 Active Directory 域服务 (AD DS)，以及如何利用面向客户和业务合作伙伴的联合身份验证。
+了解 Contoso 如何 [利用云中的本地 Active Directory 域服务](contoso-identity.md) 为员工和联合身份验证针对客户和业务合作伙伴。
 
 ## <a name="see-also"></a>另请参阅
 

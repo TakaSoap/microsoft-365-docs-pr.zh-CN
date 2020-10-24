@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用标识即服务 (IDaaS)，并为其员工提供基于云的身份验证以及为其合作伙伴和客户提供联合身份验证。
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637243"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754629"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的标识
 
@@ -43,7 +42,7 @@ Contoso 允许：
 - 客户使用其 Microsoft、Facebook 或 Google 邮件帐户登录到公司的公共网站。
 - 供应商和合作伙伴使用其 LinkedIn、Salesforce 或 Google Mail 帐户登录到公司的合作伙伴 extranet。
 
-以下是包含公共网站、合作伙伴 extranet 和一组 AD FS 服务器的 Contoso DMZ。 DMZ 连接到包含客户、合作伙伴和 internet 服务的 internet。
+以下是包含公共网站、合作伙伴 extranet 以及一组 Active Directory 联合身份验证服务 (AD FS) 服务器的 Contoso DMZ。 DMZ 连接到包含客户、合作伙伴和 internet 服务的 internet。
 
 ![Contoso 支持客户和合作伙伴的联合身份验证](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Contoso 为以下三种保护级别创建了一组 Azure AD 和 Intune [条件�
  
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-win10.md) Contoso 如何使用其 Microsoft 终结点配置管理器基础结构在其整个组织中部署和保留当前的 Windows 10 企业版。
+了解 Contoso 如何使用其 Microsoft 终结点配置管理器基础结构在其整个组织中 [部署和保留当前的 Windows 10 企业版](contoso-win10.md) 。
 
 ## <a name="see-also"></a>另请参阅
 

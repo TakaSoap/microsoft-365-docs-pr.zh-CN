@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 for enterprise 中的 Microsoft Intune 来管理其设备以及在其上运行的应用程序。
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649641"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753987"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 移动设备管理
 
@@ -28,7 +27,7 @@ ms.locfileid: "48649641"
 
 Contoso 拥有许多启用了移动的员工。有些办公室在 Contoso 位置，有些则没有办事处。Contoso 需要一种方法来实现员工工作效率，但保留设备、存储在这些设备上的 Contoso 数据以及应用程序行为的安全性。
 
-## <a name="plan"></a>计划
+## <a name="plan"></a>套餐
 
 Contoso 确定了适用于企业的 Microsoft 365 移动设备管理的以下 Intune 使用案例：
 
@@ -71,7 +70,7 @@ Contoso 通过将 Pc 和公司拥有的智能手机和平板电脑添加到相�
 
 ## <a name="next-step"></a>后续步骤
 
-[了解](contoso-info-protect.md) Contoso 如何使用 Microsoft 365 for enterprise 的信息保护功能来分类、识别和保护整个组织中的重要数字资产。
+了解 Contoso 如何使用 Microsoft 365 for enterprise 的 [信息保护功能](contoso-info-protect.md) 来分类、识别和保护整个组织中的重要数字资产。
 
 ## <a name="see-also"></a>另请参阅
 

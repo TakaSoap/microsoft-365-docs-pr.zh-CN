@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d2973bd3cc2da909d7129192f2b9f9a29226de34
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196091"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754488"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -50,13 +50,15 @@ Microsoft Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全堆栈](
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-测试：对最新测试中的 6.0/6.0 的保护得分
 
-AV 测试产品检查和认证报告测试有以下三个类别：保护、性能和可用性。 以下分数适用于包含两个分数的保护类别：实际测试和 AV 测试参考集 (称为 "普遍恶意软件" ) 。
+AV 测试产品检查和认证报告测试有以下三个类别：保护、性能和可用性。 以下分数适用于包含两个分数的保护类别： Real-World 测试和 AV 测试参考集 (称为 "流行恶意软件" ) 。
 
-**下载最新的透明度报告： [检查 AV 测试结果-2020 年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+**下载最新透明度报告： [检查 AV 测试结果、January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 可能-6 月 2020 AV-测试业务用户测试： [保护得分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**最新**</sup>
+- 2020年8月 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**最新**</sup>
 
-    Microsoft Defender 防病毒实现了 6.0/6.0 的最佳保护分数，100% 在5月和6月。 22190使用了恶意软件示例。
+    Microsoft Defender 防病毒实现了 6.0/6.0 的最佳保护分数，100% 在7月8日。 13941使用了恶意软件示例。
+
+- 可能-6 月 2020 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
 - 3月-2020 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
@@ -68,19 +70,15 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 - 7月-2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- 可能-6 月 2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-比较级：99.7% 在最新测试中的保护评级
 
-业务安全测试由三个主要部分组成：模拟在线恶意软件攻击的实际保护测试、恶意软件保护在 internet 中进入系统的恶意软件保护测试 (例如，USB) ，以及查看系统性能影响的性能测试。
+业务安全测试由三个主要部分组成：模拟在线恶意软件攻击的 Real-World 保护测试、恶意软件从 internet 外部进入系统的恶意软件保护测试 (例如，USB) ，以及检查系统性能影响的性能测试。
 
 - Business Security Test 2020 (年3月（6月) ： [实际保护率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**最新**</sup>
 
-    在过去的一年中，Microsoft Defender 防病毒软件的实际保护率已经过高，在最新的测试中有99.7% 的分数。
+    Microsoft Defender 防病毒已在过去一年的 Real-World 保护率上进行了连续较高的评分，在最新的测试中有99.7%。
 
 - Business Security Test 2019 (八月-) 年11月： [实际保护率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
-
-- Business Security Test 2019 Factsheet (八月-九月) ：[实际保护率 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - Business Security Test 2019 (年3月-6 月) ：[实际保护率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -88,11 +86,13 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 SE 实验室测试产品和服务使用的一系列解决方案，以检测和/或防御攻击。 其中包括终结点软件、网络设备和云服务。
 
-**下载最新透明度报告：[检查 SE 实验测试结果（1月-2020 年3月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)）**
+**下载最新透明度报告： [检查 SE 实验测试结果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- 企业版 Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+
+    Microsoft 的下一代保护产品停止了所有目标攻击，但错过了少数公共威胁。
 
 - 企业版 Endpoint Protection —6月2020： [AAA 奖](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
-
-    Microsoft 的下一代保护称为领先的产品之一，保护所有公共和目标攻击。 Microsoft Defender 防病毒通过其阻止恶意 Url、处理攻击和正确地对合法应用程序和网站进行分类的能力实现了此类有用的结果。
 
 - 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
@@ -100,9 +100,6 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 - 企业版 Endpoint Protection （2019年9月）： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- 企业版 Endpoint Protection —6月2019： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/apr-jun-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- 企业终结点保护（2019年3月）： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ## <a name="endpoint-detection--response"></a>终结点检测 & 响应
 

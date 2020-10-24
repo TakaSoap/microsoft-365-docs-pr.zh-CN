@@ -1,5 +1,5 @@
 ---
-title: 开始使用适用于 Microsoft 365 的 PowerShell
+title: PowerShell for Microsoft 365 入门
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,19 +16,19 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 4712d6fd-d9c7-4ec2-88c1-3ad9201cbb7f
-description: 摘要：了解适用于 Microsoft 365 的 PowerShell 的值，连接到你的 Microsoft 365 租户，并获取帮助。
-ms.openlocfilehash: 3a57e5188dd4161442ee722a14c2546ef28ccb01
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+description: 摘要：了解适用于 Microsoft 365 的 PowerShell 的值、如何连接到 Microsoft 365 租户以及获取帮助的位置。
+ms.openlocfilehash: 850d3eea1aa23937bf30795784405119ef6c167c
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429970"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754452"
 ---
-# <a name="get-started-with-powershell-for-microsoft-365"></a>开始使用适用于 Microsoft 365 的 PowerShell
+# <a name="get-started-with-powershell-for-microsoft-365"></a>PowerShell for Microsoft 365 入门
 
 *本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
-您可以使用 PowerShell for Microsoft 365 中的命令和脚本来管理 Microsoft 365 并简化日常工作。 了解为什么说 Microsoft 365 的 PowerShell 对于管理 Microsoft 365 至关重要，如何连接到 Microsoft 365 订阅和创建报告，以及从 Microsoft 365 社区获取详细信息和帮助。
+您可以使用 PowerShell for Microsoft 365 中的命令和脚本来管理 Microsoft 365 并简化日常工作。 使用以下信息了解为什么 Microsoft 365 的 PowerShell 对管理 Microsoft 365 至关重要，如何连接到 Microsoft 365 订阅和创建报告，以及从 Microsoft 365 社区获取详细信息。
   
 从以下主题中进行选择：
   
@@ -54,7 +54,7 @@ ms.locfileid: "47429970"
     
 - [**PowerShell 的 Microsoft 365 社区资源**](microsoft-365-powershell-community-resources.md)
     
-    从此处开始连接到 PowerShell 社区，获取有关使用 PowerShell for Microsoft 365 的帮助或详细信息。
+    从此处开始连接到 PowerShell 社区，并获取有关使用适用于 Microsoft 365 的 PowerShell 的详细信息。
     
 ## <a name="related-topics"></a>相关主题
 
