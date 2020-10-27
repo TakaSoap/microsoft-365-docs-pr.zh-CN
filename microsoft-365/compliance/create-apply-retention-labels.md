@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容
-ms.openlocfilehash: 0587e868d8e9d54d0e5025d02fdbd5a5dfc0f430
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: a9105b404dbeef0ff6ef247ce613f4257c3d3b2a
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740276"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755551"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并在应用中应用它们
 
@@ -37,9 +37,9 @@ ms.locfileid: "48740276"
 
 使保留标签对组织中的人员可用以便对内容进行分类的过程分为两个步骤： 
 
-1. 创建保留标签
+1. 创建保留标签。
 
-2. 使用保留标签策略发布保留标签
+2. 使用保留标签策略发布保留标签。
   
 ![标签角色和任务的关系图](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
@@ -60,24 +60,24 @@ ms.locfileid: "48740276"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
+        - “ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”
         
     - 如果你没有使用记录管理：
-       - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
+       - “ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
 
 2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
+    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
+3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“ **现在仅保存标签** ”，然后选择“ **完成** ”。
 
 4. 重复这些步骤以创建更多标签。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 ### <a name="step-2-publish-retention-labels"></a>第 2 步：发布保留标签
 
@@ -86,18 +86,18 @@ ms.locfileid: "48740276"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “**解决方案**” > “**记录管理**”> >“**标签策略**”选项卡 >“**发布标签**”
+        - “ **解决方案** ” > “ **记录管理** ”> >“ **标签策略** ”选项卡 >“ **发布标签** ”
     
     - 如果你没有使用记录管理：
-        - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**发布标签**”
+        - “ **解决方案** ” > “ **信息治理** ” > “ **标签策略** ”选项卡 >“ **发布标签** ”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
 
 2. 按照向导中的提示进行操作。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。 
 
-若要编辑现有的保留标签策略（策略类型是“**发布**”）"，请选择它，然后选择“**编辑**”选项，以启动“编辑保留策略”。 此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有的保留标签策略（策略类型是“ **发布** ”）"，请选择它，然后选择“ **编辑** ”选项，以启动“编辑保留策略”。 此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
@@ -111,7 +111,7 @@ ms.locfileid: "48740276"
 ![手动标签生效时间关系图](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-如果 7 天后未显示标签，请从合规中心的**标签策略**页面中检查标签策略的**状态**。 如果看到**关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
+如果 7 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态** 。 如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -234,19 +234,19 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label.
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label. Although the same label is applied, each document will be retained and deleted separately, according to the start of the retention period setting in the label. 
   
-For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
+For a document library, the default label configuration is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   
-For example, if you have a tag for marketing materials, and you know a specific document library contains only that type of content, you can make the Marketing Materials tag the default for all documents in that library.
+For example, if you have a retention label for marketing materials, and you know a specific document library contains only that type of content, you can make the **Marketing Materials** retention label the default label for all documents in that library.
   
 ![Apply label option on library Settings page](../media/0787d651-63dc-43b4-8768-716a5ecc64ec.png)
   
 If you apply a default retention label to existing items in the library, folder, or document set:
   
-- All items in the library, folder, or document set automatically get the same retention label, **except** for items that have had a retention label applied explicitly to them (such as records). Explicitly labeled items keep their existing label. For more information, see the below section on [The principles of retention, or what takes precedence](retention.md#the-principles-of-retention-or-what-takes-precedence).
+- All items in the library, folder, or document set automatically get the same retention label, **except** for items that already have a retention label applied to them.
     
-- If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items with explicit retention labels (such as records).
+- If you change or remove the default retention label for a library, folder, or document set, the retention label is also changed or removed for all items in the library, folder, or document set, **except** items that were manually labeled.
     
 - If you move an item with a default retention label from one site collection, library, folder, or document set to another site collection, library, folder, or document set that has a different label, the item keeps its existing default retention label, even if the new location has a different default retention label. If the item does not have a label before moving, it will take on the default retention label of the new location.
 

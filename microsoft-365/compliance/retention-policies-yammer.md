@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 2918efe63947ee17cd7f55f19876ae4b98de7a8a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204289"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754700"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -30,11 +30,23 @@ ms.locfileid: "48204289"
 
 本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Yammer 的信息。
 
+有关其他工作负载，请参阅：
+
+- [了解用于 SharePoint 和 OneDrive 的保留](retention-policies-sharepoint.md)
+- [了解用于 Microsoft Teams 的保留](retention-policies-teams.md)
+- [了解用于 Exchange 的保留](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
+
+可使用 Yammer 的保留策略来保留和删除以下 Yammer 项目：社区消息和私人消息。
+
+这些消息中不包括其他人以表情符号的形式所做的回复。
+
 ## <a name="how-retention-works-with-yammer"></a>用于 Yammer 的保留的工作原理
 
 可使用保留策略在 Yammer 中保留和删除社区消息和私人消息。 私人消息存储在消息中的每个用户邮箱中的隐藏文件夹内，社区消息存储在社区组邮箱中类似的隐藏文件夹中。
 
-Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在针对 **Yammer 社区消息**和 **Yammer 私人消息**位置配置的保留策略中。
+Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使 Yammer 消息存储在 Exchange 中，此 Yammer 数据仍将仅包含在针对 **Yammer 社区消息** 和 **Yammer 私人消息** 位置配置的保留策略中。
 
 > [!NOTE]
 > 如果用户包含在保留 Yammer 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Yammer 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Yammer 数据，请在删除用户的邮箱之前，将用户帐户从保留策略中排除。
@@ -49,9 +61,9 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 对于图中的两条路径：
 
-1. **如果用户在保留期内编辑或删除了 Yammer 消息**，则该原始消息将被立即复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后立即将其永久删除。
+1. **如果用户在保留期内编辑或删除了 Yammer 消息** ，则该原始消息将被立即复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后立即将其永久删除。
 
-2. **如果未删除 Yammer 消息**，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 如果消息位于 SubstrateHolds 文件夹中时，它将立即被永久删除。 
+2. **如果未删除 Yammer 消息** ，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 如果消息位于 SubstrateHolds 文件夹中时，它将立即被永久删除。 
 
 > [!NOTE]
 > 可通过电子数据展示工具搜索 SubstrateHolds 文件夹中的消息。 消息被永久删除（位于 SubstrateHolds 文件夹中）前，仍可由 eDiscovery 工具搜索。
@@ -60,20 +72,20 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
-1. **如果编辑或删除了 Yammer 消息**：立即在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
+1. **如果编辑或删除了 Yammer 消息** ：立即在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果 Yammer 消息在保持期内未遭修改或删除**以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
+2. **如果 Yammer 消息在保持期内未遭修改或删除** 以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>“仅删除”保留策略的内容路径
 
-1. **如果 Yammer 消息在保持期内未遭删除**：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
+1. **如果 Yammer 消息在保持期内未遭删除** ：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果用户在保留期内删除 Yammer 消息**，该项目将立即移至 SubstrateHolds 文件夹，并立即将其永久删除。
+2. **如果用户在保留期内删除 Yammer 消息** ，该项目将立即移至 SubstrateHolds 文件夹，并立即将其永久删除。
 
 
 ## <a name="messages-and-external-users"></a>消息和外部用户
 
-默认情况下，Yammer 私人消息的保留策略应用于组织中的所有用户，但不应用于外部用户。 如果使用**选择用户** 并指定其帐户，则可以向外部用户应用保留策略。 
+默认情况下，Yammer 私人消息的保留策略应用于组织中的所有用户，但不应用于外部用户。 如果使用 **选择用户** 并指定其帐户，则可以向外部用户应用保留策略。 
 
 目前，不支持 Azure B2B 来宾用户。
 
@@ -87,9 +99,7 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 Yammer 保留策略目前处于预览阶段，我们正在不断努力优化保留功能。 在此期间，在对 Yammer 社区消息和私人消息使用保留时，需要注意以下几个限制：
 
-- **Yammer 消息不会保留赞和其他反应**。 保留策略不支持其他人以表情符形式所做的反应。
-
-- 为“**Yammer 私人消息**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
+- 为“ **Yammer 私人消息** ”位置选择“ **选择用户** ”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
 ## <a name="configuration-guidance"></a>配置指南
 

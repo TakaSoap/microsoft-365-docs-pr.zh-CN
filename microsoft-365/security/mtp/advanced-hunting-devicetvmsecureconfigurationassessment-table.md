@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻架构中的 DeviceTvmSecureConfigurationAssessment 表
-description: 在高级搜寻架构的 DeviceTvmSecureConfigurationAssessment 表中了解有关威胁和漏洞管理安全评估事件的信息。 这些事件提供计算机信息以及安全配置详细信息、影响和合规性信息。
+description: 了解高级搜寻架构的 DeviceTvmSecureConfigurationAssessment 表中的安全评估事件。 这些威胁 & 漏洞管理事件提供了设备信息，以及安全配置详细信息、影响和合规性信息。
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、威胁 & 漏洞管理、TVM、设备管理、安全配置、DeviceTvmSecureConfigurationAssessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8c9e886f205a3d1b402b8c39718b6ee49b86a11d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 356548c3115aacce8c76d7fbc552811c168750ed
+ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429883"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48770069"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -42,15 +42,18 @@ ms.locfileid: "48429883"
 
 | 列名称 | 数据类型 | 说明 |
 |-------------|-----------|-------------|
-| `DeviceId` | string | 服务中的计算机的唯一标识符 |
-| `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
-| `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。|
+| `DeviceId` | string | 服务中设备的唯一标识符 |
+| `DeviceName` | string | 设备 (FQDN) 的完全限定的域名称 |
+| `OSPlatform` | string | 设备上运行的操作系统的平台。 这表示特定操作系统，包括同一系列中的变体，如 Windows 10 和 Windows 7。|
 | `Timestamp` | datetime | 生成记录的日期和时间 |
 | `ConfigurationId` | string | 特定配置的唯一标识符 |
 | `ConfigurationCategory` | string | 配置所属的类别或分组：应用程序、OS、网络、帐户、安全控件 |
 | `ConfigurationSubcategory` | string | 配置所属的子类别或子组。 在许多情况下，它用于描述特定的功能。 |
 | `ConfigurationImpact` | string | 配置对总体配置评分的影响程度 (1-10) |
 | `IsCompliant` | boolean | 指示是否正确配置了配置或策略 |
+| `IsApplicable` | boolean | 指示配置或策略是否适用于设备 |
+| `Context` | string | 有关配置或策略的其他上下文信息 |
+| `IsExpectedUserImpactCompliant` | boolean | 指示在应用配置或策略时是否会对用户产生影响 |
 
 ## <a name="related-topics"></a>相关主题
 

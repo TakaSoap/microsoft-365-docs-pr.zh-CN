@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 848ed959b1ed728a5a193641d7df42a477604d30
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681780"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755571"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -53,7 +53,7 @@ ms.locfileid: "48681780"
 - yammer 社区消息
 - Yammer 私人消息
 
-如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，请依照你是否需要包含 Teams 或 Yammer 地点来确定要遵循的指示:
+如果你在创建保留策略时选择 Teams 或 Yammer 位置，其他位置将被自动排除。 因此，需遵循的说明取决于你是需要包含 Teams 还是 Yammer 位置：
 
 - [有关 Teams 位置的保留策略的说明](#retention-policy-for-teams-locations)
 - [有关 Yammer 位置的保留策略的说明](#retention-policy-for-yammer-locations)
@@ -63,17 +63,17 @@ ms.locfileid: "48681780"
 
 ### <a name="retention-policy-for-teams-locations"></a>Teams 位置的保留策略
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留** 。
 
-2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
+2. 选择“ **新保留策略** ”来开始“创建保留策略向导”，并命名新的保留策略。
 
-3. 在“**选择要应用策略的位置**” 页面上，选择 Teams 的一个或两个位置：“**Teams 频道消息**”和“**Teams 聊天**”。
+3. 在“ **选择要应用策略的位置** ” 页面上，选择 Teams 的一个或两个位置：“ **Teams 频道消息** ”和“ **Teams 聊天** ”。
 
-   请注意，对于**Teams 频道消息**，将包括来自标准频道的消息，但不包括来自[专用频道](https://docs.microsoft.com/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
+   请注意，对于 **Teams 频道消息** ，将包括来自标准频道的消息，但不包括来自 [专用频道](https://docs.microsoft.com/microsoftteams/private-channels)的消息。 保留策略目前不支持专用频道。
 
-   默认情况下，[所有团队和所有用户](#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择[“**选择**”和“**排除**” 选项](#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。
+   默认情况下， [所有团队和所有用户](#a-policy-that-applies-to-entire-locations)会被选择，但你但是你可以通过选择 [“ **选择** ”和“ **排除** ” 选项](#a-policy-with-specific-inclusions-or-exclusions)”来进行优化。
 
-4. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。
+4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。
 
    你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
@@ -83,9 +83,9 @@ ms.locfileid: "48681780"
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支持团队所需的其他保留策略
 
-Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以前称为 Office 365 组）创建的团队，则应另外使用 **Office 365 组**位置来配置包括该 Microsoft 365 组的保留策略。 此保留策略适用于组的邮箱、网站和文件中的内容。
+Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以前称为 Office 365 组）创建的团队，则应另外使用 **Office 365 组** 位置来配置包括该 Microsoft 365 组的保留策略。 此保留策略适用于组的邮箱、网站和文件中的内容。
 
-如果你有团队网站未连接到 Microsoft 365 组，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略来保留和删除 Teams 中的文件：
+如果你有团队网站未连接到 Microsoft 365 组，则需要一个包括 **SharePoint 网站** 或 **OneDrive 帐户** 位置的保留策略来保留和删除 Teams 中的文件：
 
 - 聊天中共享的文件存储在共享文件的用户的 OneDrive 帐户中。
 
@@ -103,17 +103,17 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 >
 > 若要使用此功能，Yammer 网络必须为[“本机模式”](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留** 。
 
-2. 选择**新保留策略**创建新的保留策略。
+2. 选择 **新保留策略** 创建新的保留策略。
 
-3. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。 
+3. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。 
     
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
     
-    请勿选择**使用高级保留设置** ，因为这并不支持 Yammer 位置。 
+    请勿选择 **使用高级保留设置** ，因为这并不支持 Yammer 位置。 
 
-4. 有关**选择位置**的页面，请选择 **“让我选择特定位置”**。 然后切换到 Yammer 的一个或两个位置： **Yammer 社区消息**和 **Yammer 私人消息**。
+4. 有关 **选择位置** 的页面，请选择 **“让我选择特定位置”** 。 然后切换到 Yammer 的一个或两个位置： **Yammer 社区消息** 和 **Yammer 私人消息** 。
     
     默认情况下，将选中所有社区和用户，但你可以通过指定要包括或排除的社区和用户来优化此设置。
     
@@ -127,9 +127,9 @@ Teams 不只是聊天和频道消息。 如果你有从 Microsoft 365 组（以�
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>支持 Yammer 所需的其他保留策略
 
-Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer 网络的电子邮件，请使用 **Office 365 组**位置来配置额外的保留策略，包括任何用于 Yammer 的 Microsoft 365 组。 
+Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer 网络的电子邮件，请使用 **Office 365 组** 位置来配置额外的保留策略，包括任何用于 Yammer 的 Microsoft 365 组。 
 
-如需保留和删除存储在 Yammer 中的文件，则需要一个包括 **SharePoint 网站**或 **OneDrive 帐户**位置的保留策略：
+如需保留和删除存储在 Yammer 中的文件，则需要一个包括 **SharePoint 网站** 或 **OneDrive 帐户** 位置的保留策略：
 
 - 私人消息中共享的文件存储在共享文件的用户的 OneDrive 帐户中。 
 
@@ -147,11 +147,11 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 - Microsoft 365 组
 - Skype for Business
 
-1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择**策略** > **保留**。
+1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留** 。
 
-2. 选择“**新保留策略**”来开始“创建保留策略向导”，并命名新的保留策略。
+2. 选择“ **新保留策略** ”来开始“创建保留策略向导”，并命名新的保留策略。
 
-3. 在“**选择位置**”页面，切换打开或关闭除 Teams 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](#a-policy-with-specific-inclusions-or-exclusions)”。
+3. 在“ **选择位置** ”页面，切换打开或关闭除 Teams 位置之外的任何位置。 对于每个位置，可将其保持为默认的“[将策略应用到整个位置](#a-policy-that-applies-to-entire-locations)”，或者“[指定所包含的和所排除的](#a-policy-with-specific-inclusions-or-exclusions)”。
 
     特定于位置的信息：
     - [交换电子邮件和交换公共文件夹](#configuration-information-for-exchange-email-and-exchange-public-folders)
@@ -159,7 +159,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
     - [Office 365 组](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
 
-4. 有关**保留内容、删除内容，还是同时删除**向导的页面，请指定保留和删除内容的配置选项。
+4. 有关 **保留内容、删除内容，还是同时删除** 向导的页面，请指定保留和删除内容的配置选项。
 
     你可以创建一个保留策略，指明仅保留而不删除内容、将内容保留指定的时间段后删除，或者仅在指定的时间段后删除内容。 有关详细信息，请参阅本页上的[保留和删除内容的设置](#settings-for-retaining-and-deleting-content)。
 
@@ -167,21 +167,21 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 电子邮件和 Exchange 公用文件夹的配置信息
 
-通过在邮箱级别应用保留设置，**Exchange 电子邮件**位置支持用户的电子邮件、日历和其他邮箱项的保留。
+通过在邮箱级别应用保留设置， **Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。
 
 以下邮件项目包含在内：包含任何附件的邮件（包括草稿）、任务和日历项目（如果有结束日期）以及便签。 其中不包括不具备结束日期的任何联系人、任务和日历项目。 存储在邮箱中的其他项目（如 Skype 和 Teams 保存的消息）并不包含在其位置中。 这些项目有自己的保留位置。
 
-即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Office 365 组**的位置。
+即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Office 365 组** 的位置。
 
 **Exchange 公用文件夹** 位置将保留设置应用于所有公共文件夹，并且不能在文件夹或邮箱级别应用。
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint 网站的配置信息和 OneDrive 帐户
 
-选择 **SharePoint 网站**位置时，保留策略可以保留和删除在 SharePoint 通信网站的文件、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“**Office 365 组**”位置，该位置适用于该组的邮箱、站点和文件中的内容。
+选择 **SharePoint 网站** 位置时，保留策略可以保留和删除在 SharePoint 通信网站的文件、未通过 Office 365 组连接的团队网站以及经典网站中的内容。 因为此选项不支持通过 Office 365 组连接的团队网站，所以请改用“ **Office 365 组** ”位置，该位置适用于该组的邮箱、站点和文件中的内容。
 
 尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 保留设置不适用于站点内包括库、列表和文件夹的组织结构。
 
-如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在**编辑位置**页上指定 URL 时不会进行任何验证。 不过，系统会检查你指定的 SharePoint 网站是否在向导结束时存在。 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
+如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 不过，系统会检查你指定的 SharePoint 网站是否在向导结束时存在。 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
 
 > [!NOTE]
 > 必须为要应用的保留设置建立索引 SharePoint 网站。 但是，如果 SharePoint 文档库中的项目配置为不显示在搜索结果中，则此配置不会排除保留设置中的项目。
@@ -194,7 +194,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 组的配置信息
 
-若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Office 365 组**位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件**位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件**位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
+若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Office 365 组** 位置。 即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 此外，尽管 **Exchange 电子邮件** 位置最初允许你指定包括或排除组邮箱，但在尝试保存保留策略时，你将收到一条错误消息，表明“RemoteGroupMailbox”不是有效的 Exchange 位置选项。
 
 如果在创建组时选择了某个团队网站或之后向该组添加了一个团队网站，则 Microsoft 365 组应用的保留策略将包括组邮箱和团队网站。 存储在团队网站中的文件与此位置有关，但 Teams 聊天或 Teams 频道与此位置无关，它们拥有自己的保留策略位置。
 
@@ -204,9 +204,9 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ![选择用于保留策略的 Skype 位置](../media/skype-location-retention-policies.png)
 
-当你选择“**选择用户**”时，可通过选择“**全选**”框来快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，如果通过选择“**全选**”框来包含 1000 名用户，则与手动选择要包含的 1000 名用户相同，这是 Skype for Business 所支持的最大上限。
+当你选择“ **选择用户** ”时，可通过选择“ **全选** ”框来快速包含所有用户。 但是，请务必了解每个用户在策略中都被算作一个特定的包含内容。 因此，如果通过选择“ **全选** ”框来包含 1000 名用户，则与手动选择要包含的 1000 名用户相同，这是 Skype for Business 所支持的最大上限。
 
-请注意，Outlook 中的“**对话历史记录**”文件夹是一个与 Skype 存档没有任何关系的功能。 最终用户可以关闭“**对话历史记录**”，但是 Skype 的存档功能是将 Skype 对话的副本存储到隐藏的文件夹。电子数据展示可以访问该文件夹，但用户不可以。
+请注意，Outlook 中的“ **对话历史记录** ”文件夹是一个与 Skype 存档没有任何关系的功能。 最终用户可以关闭“ **对话历史记录** ”，但是 Skype 的存档功能是将 Skype 对话的副本存储到隐藏的文件夹。电子数据展示可以访问该文件夹，但用户不可以。
 
 ## <a name="settings-for-retaining-and-deleting-content"></a>保留和删除内容的设置
 
@@ -214,15 +214,15 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 - 仅保留
 
-    对于此配置，请选择“**将项目保留至特定时间段**”和“**保留期结束：不执行任何操作**”。 或者，选择“**永久保留项目**”。
+    对于此配置，请选择“ **将项目保留至特定时间段** ”和“ **保留期结束：不执行任何操作** ”。 或者，选择“ **永久保留项目** ”。
 
 - 保留后删除
 
-    对于此配置，请选择“**将项目保留至特定时间段**”和“**保留期结束：自动删除项目**”。
+    对于此配置，请选择“ **将项目保留至特定时间段** ”和“ **保留期结束：自动删除项目** ”。
 
 - 仅删除
 
-    对于此配置，请选择“**仅在达到特定年龄时删除项目”**。
+    对于此配置，请选择“ **仅在达到特定年龄时删除项目”** 。
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>将内容保留一段特定时间
 
@@ -252,7 +252,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>应用于位置整体的策略
 
-选择位置时（Skype for Business 除外），当位置的状态是“**开启**”时，默认设置是“**全部**”。
+选择位置时（Skype for Business 除外），当位置的状态是“ **开启** ”时，默认设置是“ **全部** ”。
 
 如果将保留策略应用于整个位置的任意组合，则不会限制该策略可以包含的收件人、网站、帐户和组等数量。
 
@@ -272,26 +272,26 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 如果你的保留策略可能受到这些限制的限制，请使用适用于整个位置的默认配置，因为这些策略没有任何限制。
 
-若要使用可选配置限定保留设置的范围，请确保该位置的“**状态**”为“**开启**”，然后使用链接来包含或排除特定用户、Microsoft 365 组或者网站。
+若要使用可选配置限定保留设置的范围，请确保该位置的“ **状态** ”为“ **开启** ”，然后使用链接来包含或排除特定用户、Microsoft 365 组或者网站。
 
 > [!WARNING]
-> 如果你配置了包含项，然后删除了最后一项，则配置会将位置的设置还原为“**所有**”。  保存策略之前，请确保这是你期望的配置。
+> 如果你配置了包含项，然后删除了最后一项，则配置会将位置的设置还原为“ **所有** ”。  保存策略之前，请确保这是你期望的配置。
 >
 > 例如，如果你指定了一个 要在根据配置删除数据的保留策略中包含的 SharePoint 网站，然后删除了这个网站，那么默认情况下，所有 SharePoint 网站都将受到永久删除数据的保留策略的约束。 这同样适用于针对 Exchange 收件人、OneDrive 帐户和 Teams 聊天用户等进行包含设置。
 >
-> 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。 或者，指定将不受该策略约束的排除项。
+> 在这种情况下，如果不希望“ **所有** ”这一位置设置受制于保留策略，请关闭位置。 或者，指定将不受该策略约束的排除项。
 
 ## <a name="updating-retention-policies"></a>更新保留策略
 
 如果你编辑保留策略，并且项目已遵循保留策略中的原始设置，则除了新识别的项目之外，更新后的设置将自动应用于此项目。
 
-此更新通常非常快，但可能需要数天。 完成跨 Microsoft 365 位置的策略复制后，你将看到 Microsoft 365 合规中心中的保留策略状态从“**打开（挂起）**”变为“**打开（成功）**”。
+此更新通常非常快，但可能需要数天。 完成跨 Microsoft 365 位置的策略复制后，你将看到 Microsoft 365 合规中心中的保留策略状态从“ **打开（挂起）** ”变为“ **打开（成功）** ”。
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 锁定保留策略
 
 如果需要使用“[保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)”来满足法规要求，则必须使用 PowerShell。 由于管理员无法在应用保留锁定后禁用或删除保留策略，因此 UI 中不提供启用此功能，以防意外配置。
 
-具有任何配置的所有保留策略均支持“保留锁定”。 但是，在使用以下 PowerShell 命令时，你会注意到 **Workload** 参数始终显示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup**，而不是策略中配置的实际工作负载。 这只是显示问题。
+具有任何配置的所有保留策略均支持“保留锁定”。 但是，在使用以下 PowerShell 命令时，你会注意到 **Workload** 参数始终显示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup** ，而不是策略中配置的实际工作负载。 这只是显示问题。
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -299,7 +299,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
    ![PowerShell 中的保留策略列表](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. 若要对保留策略应用保留锁定，请运行带有保留策略名称的 [Set-RetentionCompliancePolicy]( ) cmdlet，并将 *RestrictiveRetention* 参数设置为 true：
+3. 若要对保留策略应用保留锁定，请运行带有保留策略名称的 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) cmdlet，并将 *RestrictiveRetention* 参数设置为 true：
 
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
@@ -309,7 +309,7 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
     ![PowerShell 中的 RestrictiveRetention 参数](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
 
-     出现提示时，请阅读并通过输入**Y**确认这个配置随附的限制：
+     出现提示时，请阅读并通过输入 **Y** 确认这个配置随附的限制：
 
    ![用于确认你要在 PowerShell 中锁定保留策略的提示](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
@@ -319,6 +319,6 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-应看到 **RestrictiveRetention** 设置为 **True**。 例如：
+应看到 **RestrictiveRetention** 设置为 **True** 。 例如：
 
 ![已在 PowerShell 中显示所有参数的锁定策略](../media/retention-policy-preservation-lock-locked-policy.PNG)

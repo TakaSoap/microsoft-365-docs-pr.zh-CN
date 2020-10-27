@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446741"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754092"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -54,7 +54,7 @@ ms.locfileid: "48446741"
 
 - **跨不同平台和设备保护 Office 应用中的内容。** 有关受支持的应用的列表，请参阅[在 Office 应用中使用敏感度标签](sensitivity-labels-office-apps.md)。
 
-- 利用 Microsoft 云应用安全性**保护第三方应用和服务中的内容**。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
+- 利用 Microsoft 云应用安全性 **保护第三方应用和服务中的内容** 。 借助 Cloud App Security，可检测、分类、标记和保护第三方服务和应用（如 SalesForce、Box 或 Dropbox）中的内容，即使第三方应用或服务无法读取或不支持敏感度标签也不例外。
 
 - **保护容器** ，包括 Teams、Microsoft 365 组和 SharePoint 网站。 例如，设置隐私设置、外部用户访问权限和来自非托管设备的访问。
 
@@ -68,7 +68,7 @@ ms.locfileid: "48446741"
 
 为文档或电子邮件分配敏感度标签时，它就像是应用于以下内容的标记：
 
-- **可自定义**：可以为组织中不同级别的敏感内容创建类别，如“个人”、“公开”、“常规”、“机密”和“高度机密”。
+- **可自定义** ：可以为组织中不同级别的敏感内容创建类别，如“个人”、“公开”、“常规”、“机密”和“高度机密”。
 
 - **明文。** 由于该标签以明文的方式存储在内容的元数据中，因此第三方应用和服务可以读取它，然后根据需要应用其自己的保护操作。
 
@@ -85,27 +85,29 @@ ms.locfileid: "48446741"
 
 当电子邮件或文档应用敏感度标签后，系统便会对内容强制执行相应标签的任何已配置保护设置。 敏感度标签可用于：
 
-- 仅**加密**加密电子邮件，或者同时加密电子邮件和文档。 可选择哪些用户或组有权执行哪些操作多长时间。 例如，可选择允许组织外特定组中的用户在标记内容后的 7 天内查看这些内容。 或者，可允许用户在应用标签时分配对内容的权限，而不是管理员分配权限。 
+- 仅 **加密** 加密电子邮件，或者同时加密电子邮件和文档。 可选择哪些用户或组有权执行哪些操作多长时间。 例如，可选择允许组织外特定组中的用户在标记内容后的 7 天内查看这些内容。 或者，可允许用户在应用标签时分配对内容的权限，而不是管理员分配权限。 
     
-    有关创建或编辑敏感度标签时的“**加密**”设置的详细信息，请参阅[使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)。
+    有关创建或编辑敏感度标签时的“ **加密** ”设置的详细信息，请参阅 [使用敏感度标签中的加密限制对内容的访问](encryption-sensitivity-labels.md)。
 
-- 使用 Office 应用时**对内容进行标记**：方法是向已应用标签的电子邮件或文档添加水印、页眉或页脚。 水印可应用于文档，但不能用于电子邮件。 页眉和水印示例：
+- 使用 Office 应用时 **对内容进行标记** ：方法是向已应用标签的电子邮件或文档添加水印、页眉或页脚。 水印可应用于文档，但不能用于电子邮件。 页眉和水印示例：
     
     ![应用于文档的水印和页眉](../media/Sensitivity-label-watermark-header.png)
     
     需要检查何时应用内容标记？ 请参阅 [Office 应用何时应用内容标记和加密](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)。
     
+    某些应用程序（而非所有应用）通过使用变量来支持动态标记。 例如，在页眉、页脚或水印中插入标签名称或文档名称。 有关详细信息，请参阅[带变量的动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。
+    
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
-- 启用相应功能以[将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时，**可保护网站和组等容器中的内容**。
+- 启用相应功能以 [将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时， **可保护网站和组等容器中的内容** 。
     
     如果启用此功能，则无法为组和网站配置保护设置。 此标签配置不会导致自动标记文档或电子邮件，而是通过控制对存储内容的容器的访问来保护内容。 这些设置包括隐私设置、外部用户访问权限和来自非托管设备的访问。
 
-- 在 Office 应用中自动应用标签，或推荐标签。**** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
+- 在 Office 应用中自动应用标签，或推荐标签。  你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
     ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    有关创建或编辑敏感度标签时的“**Office 应用的自动标签**”设置的详细信息，请参阅[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
+    有关创建或编辑敏感度标签时的“ **Office 应用的自动标签** ”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
 
 ### <a name="label-scopes"></a>标记范围
 
@@ -125,7 +127,7 @@ ms.locfileid: "48446741"
 
 ### <a name="label-priority-order-matters"></a>标签优先级（顺序非常重要）
 
-在管理中心创建敏感度标签时，这些标签会显示在“**标签**”页的“**敏感度**”选项卡的列表中。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的**底部**，限制性最低的敏感度标签（如“公开”）需显示在**顶部**。
+在管理中心创建敏感度标签时，这些标签会显示在“ **标签** ”页的“ **敏感度** ”选项卡的列表中。 此列表中的标签顺序至关重要，因为它反映了标签的优先级。 限制性最高的敏感度标签（如“高度机密”）需显示在此列表的 **底部** ，限制性最低的敏感度标签（如“公开”）需显示在 **顶部** 。
 
 可仅将一个敏感度标签应用于文档、电子邮件或容器等项目。 如果设置的选项需要用户提供将标签更改为较低分类的理由，理由可以是此列表的排序，因为它会标识较低分类。 但是，此选项不适用于子标签。
 
@@ -159,7 +161,7 @@ ms.locfileid: "48446741"
 
 - **选择可查看标签的用户和组。** 可以将标签发布到任何特定用户或启用电子邮件的安全组、通讯组或 Microsoft 365 组（它们可以在 Azure AD 中具有[动态成员身份](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)）。
 
-- 对标签策略中包含的用户和组所创建的所有新文档和电子邮件**应用默认标签**，并对容器应用相同或不同的默认标签（如果已 [启用 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签，则](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
+- 对标签策略中包含的用户和组所创建的所有新文档和电子邮件 **应用默认标签** ，并对容器应用相同或不同的默认标签（如果已 [启用 Microsoft Teams、Microsoft 365 组和 SharePoint 网站的敏感度标签，则](sensitivity-labels-teams-groups-sites.md)）。 如果默认标签不是用户文档或电子邮件的正确标签，则用户始终可以进行更改。 
     
     考虑使用默认标签来设置你想要应用于所有内容的基本级别的保护设置。 但是，如果没有用户培训和其他控件，此设置也会导致标签不准确。 最好不要选择应用加密的标签作为文档的默认标签。 例如，许多组织需要向外部用户发送并与其共享文档，这些用户可能不具有支持加密的应用，或者他们可能未使用可以获得授权的帐户。 有关此方案的详细信息，请参阅[与外部用户共享加密的文档](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
@@ -167,7 +169,7 @@ ms.locfileid: "48446741"
 
     ![提示用户输入理由的页面](../media/Sensitivity-label-justification-required.png)
 
-- **要求用户应用标签**，其中一个选项用于电子邮件和文档，另一个选项用于容器。 也称为强制标记，这些选项确保必须先应用标签，用户才能保存文档、发送电子邮件、创建新的组或网站。
+- **要求用户应用标签** ，其中一个选项用于电子邮件和文档，另一个选项用于容器。 也称为强制标记，这些选项确保必须先应用标签，用户才能保存文档、发送电子邮件、创建新的组或网站。
     
     对文档和电子邮件，标签可由用户手动分配，由你配置的条件或默认分配的条件（如上所述的默认标签选项）而自动分配。 当用户需要分配一个标签时，Outlook 中显示的示例提示：
 
@@ -180,7 +182,7 @@ ms.locfileid: "48446741"
     
     考虑使用此选项帮助增加标签的覆盖范围。 但是，如果没有用户培训，此设置也会导致标记不准确。 此外，除非你还设置了相应的默认标签，否则强制标记可能会使你的用户因更频繁地收到提示而感到沮丧。 
 
-- **为自定义帮助页面提供帮助链接。** 如果用户不确定敏感度标签的含义或用法，你可以提供在 Office 应用中“**敏感度标签**”菜单底部显示的“了解更多” URL：
+- **为自定义帮助页面提供帮助链接。** 如果用户不确定敏感度标签的含义或用法，你可以提供在 Office 应用中“ **敏感度标签** ”菜单底部显示的“了解更多” URL：
 
     ![功能区上“敏感度”按钮中的“了解更多”链接](../media/Sensitivity-label-learn-more.png)
 
@@ -190,7 +192,7 @@ ms.locfileid: "48446741"
 
 ### <a name="label-policy-priority-order-matters"></a>标签策略优先级（顺序非常重要）
 
-你可以通过在敏感度标签策略中发布敏感度标签来向用户提供敏感度标签，该策略显示在“**标签策略**”页的“**敏感度策略**”选项卡的列表中。 正如敏感度标签（参见[标签优先级（顺序非常重要）](#label-priority-order-matters)）一样，敏感度标签策略的顺序很重要，因为它反映了它们的优先级。 优先级最低的标签策略显示在**顶部**，优先级最高的标签策略显示在**底部**。
+你可以通过在敏感度标签策略中发布敏感度标签来向用户提供敏感度标签，该策略显示在“ **标签策略** ”页的“ **敏感度策略** ”选项卡的列表中。 正如敏感度标签（参见[标签优先级（顺序非常重要）](#label-priority-order-matters)）一样，敏感度标签策略的顺序很重要，因为它反映了它们的优先级。 优先级最低的标签策略显示在 **顶部** ，优先级最高的标签策略显示在 **底部** 。
 
 标签策略包括：
 
@@ -200,7 +202,7 @@ ms.locfileid: "48446741"
 
 可以在多个标签策略中包含某个用户，该用户将看到这些策略中的所有敏感度标签。 但是，用户只能从具有最高优先级的标签策略中看到策略设置。
 
-如果看不到你希望用于用户或组的标签或标签策略设置，并且已等待了 30 分钟，请检查灵敏度标签策略的顺序。 若要重新排序标签策略，请选择某个敏感度标签策略 > 选择右侧的省略号 >“**下移**”或“**上移**”。
+如果看不到你希望用于用户或组的标签或标签策略设置，并且已等待了 30 分钟，请检查灵敏度标签策略的顺序。 若要重新排序标签策略，请选择某个敏感度标签策略 > 选择右侧的省略号 >“ **下移** ”或“ **上移** ”。
 
 ![敏感度标签策略页上的移动选项](../media/sensitivity-label-policy-priority.png)
 
@@ -213,7 +215,7 @@ ms.locfileid: "48446741"
 ### <a name="azure-information-protection-labels"></a>Azure 信息保护标签
 
 > [!NOTE]
-> Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日**弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
+> Azure 门户中的 Azure 信息保护标签的标签管理将于 **2021 年 3 月 31 日** 弃用。 有关详细信息，请参阅官方[弃用通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)。
 
 如果由于租户尚未使用[统一标签平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)而使用 Azure 信息保护标签，则建议你避免创建敏感度标签，直到激活统一标签。 在此方案中，Azure 门户中看到的标签是 Azure 信息保护标签，而不是敏感度标签。 这些标签可由 Windows 计算机上的 Azure 信息保护客户端（经典）使用，但无法由运行 macOS、iOS 或 Android 的设备使用。 若要解决此问题，请 [将这些标签迁移](/azure/information-protection/configure-policy-migrate-labels) 到灵敏度标签。 
 

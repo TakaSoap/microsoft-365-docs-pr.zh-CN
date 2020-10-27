@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196115"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769649"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>将 ServiceNow 票证集成到 Microsoft 365 安全中心和合规性中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**ServiceNow 连接器的预览周期即将结束**<br>
+>此功能将在11月2020结束后不再可用。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
 
 ServiceNow 是一款受欢迎的云计算平台，可帮助公司管理企业运营的数字工作流。 他们的 Now 平台具有 IT 工作流、员工工作流和客户工作流。 [了解有关 ServiceNow 的详细信息](https://www.servicenow.com/)
 
@@ -77,7 +78,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>您将在安装清单 (OAuth 创建的第一步中收到错误) 
 
-**错误消息**：由于表的跨范围访问策略，对作用域 "x_mioms_m365ticket" 中的 "oauth_entity" 执行的读取操作已被拒绝
+**错误消息** ：由于表的跨范围访问策略，对作用域 "x_mioms_m365ticket" 中的 "oauth_entity" 执行的读取操作已被拒绝
 
 应用程序假定 ServiceNow 实例上的任何管理员都可以创建和读取 OAuth 实体。 此错误可能是由您的 ServiceNow 实例中的自定义项导致的，用于限制可创建或读取 OAuth 实体的用户。
 
@@ -92,7 +93,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>如何验证为 Microsoft 365 安全 & 合规性连接器创建的 OAuth 实体
 
-转到 "应用程序注册表" 表 (**Menu > 系统 OAuth > 应用程序注册表**) 在 ServiceNow 中。 使用您为其分配的名称查找您创建的 OAuth 实体。
+转到 "应用程序注册表" 表 ( **Menu > 系统 OAuth > 应用程序注册表** ) 在 ServiceNow 中。 使用您为其分配的名称查找您创建的 OAuth 实体。
 
 ### <a name="signing-in-as-the-integration-user"></a>以集成用户的登录
 
@@ -106,7 +107,7 @@ ServiceNow 建议用户在你的 ServiceNow 实例中保留默认设置。 在�
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何验证在安装清单中创建的集成用户是否符合 Microsoft 365 安全 & 合规性连接器
 
-转到 "用户" 表 ** (菜单中 > 用户管理 > 用户**) 在 ServiceNow 中，并使用您为其分配的名称查找您创建的集成用户。
+转到 "用户" 表 **(菜单中 > 用户管理 > 用户** ) 在 ServiceNow 中，并使用您为其分配的名称查找您创建的集成用户。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>你的公司启用了单一登录，这将阻止你通过 Microsoft 365 安全中心连接到 ServiceNow
 

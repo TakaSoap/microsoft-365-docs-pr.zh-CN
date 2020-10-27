@@ -17,18 +17,32 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 40e68116c24622fd21bd35531ef7821d8c4b7c62
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370366"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754058"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Microsoft Teams 的信息。
+本文中的信息是对[了解保留](retention.md)的补充，因为它包含特定于 Microsoft Teams 消息的信息。
+
+有关其他工作负载，请参阅：
+
+- [了解用于 SharePoint 和 OneDrive 的保留](retention-policies-sharepoint.md)
+- [了解用于 Yammer 的保留](retention-policies-yammer.md)
+- [了解用于 Exchange 的保留](retention-policies-exchange.md)
+
+## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
+
+可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息。
+
+不包括专用频道中的 Teams 消息，也不包括来自其他人的表情符号回复。
+
+通过 Teams 使用的电子邮件和文件不包括在 Teams 的保留策略内。 这些项目有自己的保留策略。
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>用于 Microsoft Teams 的保留的工作原理
 
@@ -36,7 +50,7 @@ ms.locfileid: "48370366"
 
 务必了解，Teams 使用由 Azure 支持的聊天服务，该服务也会存储此数据，并且默认永久存储。 因此，建议创建保留策略来使用 Teams 位置保留和删除此 Teams 数据。 此保留策略可以从 Exchange 邮箱和由 Azure 提供技术支持的基础聊天服务中永久删除数据。 有关详细信息，请参阅 [Microsoft Teams 中的安全性和合规性](https://go.microsoft.com/fwlink/?linkid=871258)，特别是[信息保护体系结构](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)部分。
 
-Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，此 Teams 数据仍将仅包含在针对 **Teams 频道消息**和 ** Teams 聊天**位置配置的保留策略中。
+Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略影响。 即使 Teams 聊天和频道消息存储在 Exchange 中，此 Teams 数据仍将仅包含在针对 **Teams 频道消息** 和 **Teams 聊天** 位置配置的保留策略中。
 
 > [!NOTE]
 > 如果用户包含在保留 Teams 数据的活动保留策略中，并且删除了包含在此策略中的用户邮箱，为了保留 Teams 数据，邮箱会转换为[非活动邮箱](inactive-mailboxes-in-office-365.md)。 如果不需要为用户保留此 Teams 数据，请在删除用户的邮箱之前，将用户帐户从保留策略中排除。
@@ -51,9 +65,9 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 对于图中的两条路径：
 
-1. **如果用户在保留期内编辑或删除了聊天或频道消息**，则该原始消息将在 21 天内复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后在 24 小时之内将其永久删除。
+1. **如果用户在保留期内编辑或删除了聊天或频道消息** ，则该原始消息将在 21 天内复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后在 24 小时之内将其永久删除。
 
-2. **如果未删除聊天或频道消息**，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 消息位于 SubstrateHolds 文件夹中时，它将在 24 小时内被永久删除。 
+2. **如果未删除聊天或频道消息** ，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 消息位于 SubstrateHolds 文件夹中时，它将在 24 小时内被永久删除。 
 
 > [!NOTE]
 > 可通过电子数据展示工具搜索 SubstrateHolds 文件夹中的消息。 从此 SubstrateHolds 文件夹中删除消息之前，仍可以由电子数据展示工具搜索。
@@ -62,15 +76,15 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
-1. **如果编辑或删除了聊天消息或频道消息**：21 天内在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
+1. **如果编辑或删除了聊天消息或频道消息** ：21 天内在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果项目在保持期内未遭修改或删除**以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
+2. **如果项目在保持期内未遭修改或删除** 以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>“仅删除”保留策略的内容路径
 
-1. **如果消息在保持期内未遭删除**：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
+1. **如果消息在保持期内未遭删除** ：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果用户在保留期内删除项目**，该项目将在 21 天内移至 SubstrateHolds 文件夹，然后在 24 小时内被永久删除。
+2. **如果用户在保留期内删除项目** ，该项目将在 21 天内移至 SubstrateHolds 文件夹，然后在 24 小时内被永久删除。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天
@@ -81,9 +95,9 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 ## <a name="meetings-and-external-users"></a>会议和外部用户
 
-频道会议邮件的存储方式与频道消息相同，因此对于此数据，在配置保留策略时，请选择 **Teams 频道消息**位置。
+频道会议邮件的存储方式与频道消息相同，因此对于此数据，在配置保留策略时，请选择 **Teams 频道消息** 位置。
 
-临时会议邮件的存储方式与群组聊天消息相同，因此对于此数据，在配置保留策略时，请选择 **Teams 聊天**位置。
+临时会议邮件的存储方式与群组聊天消息相同，因此对于此数据，在配置保留策略时，请选择 **Teams 聊天** 位置。
 
 当外部用户加入你的组织主持的会议时：
 
@@ -101,16 +115,12 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 我们正在不断努力优化 Teams 中的保留功能。 在此期间，在对 Teams 频道消息和聊天使用保留时，需要注意以下几个限制：
 
-- **配置 Teams 频道消息的保留策略时，不包括专用频道中的 Teams 消息**。 保留策略目前不支持专用频道。 
+- **Outlook 错误显示的问题** 。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
 
-- **Teams 聊天和频道消息不会保留赞和其他反应**。 保留策略不支持其他人以表情符形式所做的反应。
-
-- **Outlook 错误显示的问题**。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
-
-- **配置问题**： 
-    - 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
+- **配置问题** ： 
+    - 为“ **Teams 频道消息** ”位置选择“ **选择团队** ”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
     
-    - 为“**Teams 聊天**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
+    - 为“ **Teams 聊天** ”位置选择“ **选择用户** ”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
 ## <a name="configuration-guidance"></a>配置指南
 
