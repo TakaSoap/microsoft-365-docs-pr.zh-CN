@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546177"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774103"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -64,7 +64,16 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 |**Item**|**说明**|
 |:-----|:-----|
 |[![模型海报： Microsoft 365 的标识和设备保护](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| 形式查看[下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|请务必在数据、标识和设备中使用一致的保护级别。 此模型显示了可比较的功能，并提供了有关保护标识和设备的功能的详细信息。  <br/> |
-   
+ 
+<a name="BKMK_ediscovery"></a>
+### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示体系结构
+
+高级电子数据展示端到端工作流和数据流，包括在 Microsoft 365 多地理位置环境中。 
+
+|**项**|**说明**|
+|:-----|:-----|
+|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 10月2020更新|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
+  
 <!--
 
 <a name="BKMK_O365fileprotect"></a>
