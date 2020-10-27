@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中提供的见解和报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198477"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769014"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -60,13 +60,13 @@ ms.locfileid: "48198477"
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>查看邮件流仪表板所需的权限
 
-邮件流仪表板可用于以下路由组的成员：
+邮件流仪表板可用于以下角色组的成员：
 
-- 安全 & 合规中心 (全局管理员) 中的 "**组织管理**"。
+- 安全 & 合规中心 (全局管理员) 中的 " **组织管理** "。
 
-- Azure AD 中的**[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
+- Azure Active Directory 中的 **[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
 
-- Security & 合规性中心中的**邮件流管理员**：如果此角色组的成员不是全局管理员或 Exchange 管理员角色组的成员，则请注意以下问题和要求：
+- Security & 合规性中心中的 **邮件流管理员** ：如果此角色组的成员不是全局管理员或 Exchange 管理员角色组的成员，则请注意以下问题和要求：
 
   - 用户必须直接在中直接登录到安全 & 合规性中心 <https://protection.office.com> 。
   - 用户将只具有对邮件流仪表板的只读权限。
@@ -76,6 +76,6 @@ ms.locfileid: "48198477"
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
 
-在中打开 "安全 & 合规中心" <https://protection.office.com> ，展开 " **邮件流**"，然后选择 " **仪表板**"。
+在中打开 "安全 & 合规中心" <https://protection.office.com> ，展开 " **邮件流** "，然后选择 " **仪表板** "。
 
 若要直接转到 "邮件流" 仪表板，请打开 <https://protection.office.com/mailflow/dashboard> 。

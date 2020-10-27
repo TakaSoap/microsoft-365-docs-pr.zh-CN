@@ -20,58 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 964724ad92c1ae29095b7368167b771b1632b003
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295066"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769026"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅 [Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。
 
 ## <a name="august-2020"></a>2020 年 8 月
 
-### <a name="update-improvement-action-for-azure-active-directory"></a>Azure Active Directory 更新改进操作
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改进操作
 
 - 启用策略以阻止旧版身份验证
-
-## <a name="july-2020"></a>2020 年 7 月
-
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>为 Azure 高级威胁防护添加改进操作
-
-- 有风险的横向移动路径
-- 不安全帐户属性
-- 在 Active Directory 信任上启用安全功能
-- 从实体中删除不安全的 SID 历史记录属性
-
-## <a name="june-2020"></a>2020 年 6 月
-
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>Microsoft Defender 高级威胁防护的已删除改进操作
-
-* 打开攻击面降低规则
-
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>新增了 Microsoft Defender 高级威胁防护的改进措施
-
-* 阻止 Adobe Reader 创建子流程
-* 对勒索软件使用高级防护
-* 阻止所有 Office 应用程序创建子进程
-* 阻止 Office 应用程序创建可执行内容
-* 阻止 JavaScript 或 VBScript 启动下载的可执行内容
-* 阻止执行可能模糊的脚本
-* 阻止来自电子邮件客户端和 web 邮件的可执行内容
-* 阻止 Office 通信应用程序创建子进程
-* 阻止从 USB 运行的不受信任和未签名的进程
-* 通过 WMI 事件订阅阻止持久化
-* 阻止 Office 应用程序将代码注入其他进程
-* 阻止可执行文件运行，除非它们满足流行、年龄或受信任的列表条件
-* 阻止进程创建源自 PSExec 和 WMI 命令
-* 阻止从 Windows 本地安全颁发机构子系统中盗取凭据 ( # A0) 
-* 阻止来自 Office 宏的 Win32 API 调用
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>标识安全分数和图形 API 不兼容
 

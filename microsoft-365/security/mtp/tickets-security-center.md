@@ -19,24 +19,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: f57fc83f9102e5eeea61deaaadc17203bad030ac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8992efdd79295b6b56b8f033bd97b10f59a7a4d5
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195531"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769671"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中创建和跟踪 ServiceNow 票证
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+>[!CAUTION]
+>**ServiceNow 连接器的预览周期即将结束**<br>
+>此功能将在11月2020结束后不再可用。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
 
 [Microsoft 365 安全中心](overview-security-center.md)已得到增强，能够在 ServiceNow 中以本机方式创建和跟踪票证。 [了解有关 ServiceNow 的详细信息](https://www.servicenow.com/)
 
 在安全中心中，安全管理员可以直接向 ServiceNow 发送 [Microsoft Secure 得分](microsoft-secure-score.md) 改进操作，并创建一个票证。 可以创建事件管理和变更管理票证。 跟踪安全中心主页和 ServiceNow 中的票证。
 
 - [**了解先决条件、数据交换和疑难解答**](tickets.md)
-- **在合规中心中管理 ServiceNow 票证** (即将推出) 
+- **在合规中心中管理 ServiceNow 票证** (不可用) 
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>将 Microsoft 365 安全中心连接到 ServiceNow
 
@@ -57,7 +60,7 @@ ms.locfileid: "48195531"
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>创建一个任务并将其共享到 ServiceNow
 
-建立集成后，基于特定 [Microsoft 安全得分](microsoft-secure-score.md) 改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心中的任何安全得分改进操作，并选择 " **共享**"。 其中一个下拉选项是 ServiceNow。
+建立集成后，基于特定 [Microsoft 安全得分](microsoft-secure-score.md) 改进操作创建 ServiceNow 任务。 转到 Microsoft 365 安全中心中的任何安全得分改进操作，并选择 " **共享** "。 其中一个下拉选项是 ServiceNow。
 
 将生成一个任务，您可以在其中设置优先级并编辑名称、说明或截止日期。 填写所有必填字段后，将该任务发送到 ServiceNow。
 

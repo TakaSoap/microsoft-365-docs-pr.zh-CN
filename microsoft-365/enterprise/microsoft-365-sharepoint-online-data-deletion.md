@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: 了解数据删除在 SharePoint Online 中的工作方式，如存储已删除内容的位置和持续时间。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e914e84f3679483e5030b7f2a06913cb052e5411
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 888ee807e6cd4ddc435c1df86a63502a617d6cb8
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332720"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769038"
 ---
 # <a name="sharepoint-online-data-deletion-in-microsoft-365"></a>Microsoft 365 中的 SharePoint Online 数据删除
 
-SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 当用户将文件上传到 SharePoint Online 时，会反汇编该文件并将其转换为应用程序代码，并将其存储在多个数据库的多个表中。 在 SharePoint Online 中，客户上传的所有内容都分成多个区块，加密 (可能会有多个 AES 256 位密钥) ，并分布在整个数据中心中。 有关分块和加密过程的具体详细信息，请参阅 [Microsoft 云中的加密](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)。 
+SharePoint Online 将对象存储为应用程序数据库中的抽象代码。 当用户将文件上传到 SharePoint Online 时，会反汇编该文件并将其转换为应用程序代码，并将其存储在多个数据库的多个表中。 在 SharePoint Online 中，客户上传的所有内容都分成多个区块，加密 (一个或多个 AES 256 位密钥) ，并分布在整个数据中心。 
 
 在 SharePoint Online 中，项目会从从其原始位置删除时起的93天保留一段时间。 它们将在整个时间内保持在网站回收站中，除非有人将其从那里删除或清空回收站。 在这种情况下，这些项将转到网站集的回收站，这些项将在剩余的93天内保留。 有关还原已删除项目的信息，请参阅 [在 SharePoint 网站的回收站中还原项目](https://support.office.com/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
 ) 和 [从网站集回收站还原已删除的项目](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b)。 无法在 SharePoint Online 中配置回收站保留时间。

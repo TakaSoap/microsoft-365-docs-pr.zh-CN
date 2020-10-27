@@ -17,25 +17,31 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e4a9e5f1606b91e4cd41f29b37db2707f4c7df17
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 5465d1a6dc806cb4f76a34801dee2feb87146ad3
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295078"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769264"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>即将推出的 Microsoft 安全分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 我们在不久的将来进行一些更改，让 [Microsoft 安全](microsoft-secure-score.md) 成为你的安全状态的更好代表并提高可用性。 你的分数和可能的最大分数可能会发生变化。
 
 ## <a name="proposed-changes"></a>建议的更改
 
-### <a name="october-2020"></a>10月2020
+### <a name="november-2020"></a>2020年11月
 
-#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>删除 Microsoft Defender 高级威胁防护的提高操作
+通过转到共享 > ServiceNow，删除通过安全分数创建 ServiceNow 票证的能力。
+
+- ServiceNow 连接器的预览周期即将结束。 2020的结尾将不再提供此功能。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
+
+### <a name="october-2020"></a>2020 年 10 月
+
+删除与 Microsoft Defender 高级威胁防护相关的改进操作：
+
 - 设置 Microsoft Defender SmartScreen Windows 应用商店应用程序 web 内容检查以警告
 
 ## <a name="related-resources"></a>相关资源
