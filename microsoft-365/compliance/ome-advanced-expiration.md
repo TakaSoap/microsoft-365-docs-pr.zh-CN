@@ -17,20 +17,20 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 高级邮件加密通过自定义品牌化模板设置电子邮件的过期日期来扩展电子邮件的安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546156"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769162"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>为使用 Office 365 高级邮件加密进行加密的电子邮件设置到期日期
 
 Office 365 高级邮件加密包含在 [Microsoft 365 企业版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 e5 (非盈利性员工定价) 、Office 365 企业版 E5 (非盈利性员工定价) 和 Office 365 教育版 A5。 如果您的组织具有不包含 Office 365 高级邮件加密的订阅，则可以使用 microsoft 365 E5 兼容性 SKU 附加 Microsoft 365 E3、Microsoft 365 E3 (非盈利性的员工定价) 或 Office 365 高级合规性 SKU 附加 for Microsoft 365 E3、Microsoft 365 E3 (非盈利性员工定价) 或 Office 365 Sku 购买。
 
-您可以使用您的用户发送给使用 OME 门户访问加密电子邮件的外部收件人的电子邮件的邮件过期。 您可以通过使用在 Windows Powershell 中指定过期日期的自定义品牌模板，强制收件人使用 OME 门户查看并回复您的组织发送的加密电子邮件。
+您可以使用您的用户发送给使用 OME 门户访问加密电子邮件的外部收件人的电子邮件的邮件过期。 您可以通过使用在 Windows PowerShell 中指定过期日期的自定义品牌模板，强制收件人使用 OME 门户查看并回复您的组织发送的加密电子邮件。
 
-作为 O365 全局管理员，当您应用公司品牌以自定义组织的电子邮件的外观时，您还可以为这些电子邮件指定过期时间。 使用 Office 365 高级邮件加密，可以为来自您的组织的加密电子邮件创建多个模板。 使用模板，可以控制收件人访问您的用户发送的邮件的时间长短。
+作为 Office 365 全局管理员，当您应用公司品牌以自定义组织的电子邮件的外观时，您还可以为这些电子邮件指定过期时间。 使用 Office 365 高级邮件加密，可以为来自您的组织的加密电子邮件创建多个模板。 使用模板，可以控制收件人访问您的用户发送的邮件的时间长短。
 
 当最终用户收到设置了过期日期的邮件时，用户会看到包装电子邮件中的到期日期。 如果用户尝试打开已过期的邮件，则会在 OME 门户中显示一个错误。
 
@@ -42,11 +42,11 @@ Office 365 高级邮件加密包含在 [Microsoft 365 企业版 e5](https://www.
 
 1. 使用组织中具有全局管理员权限的帐户[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
 
-2. 运行 Set-omeconfiguration cmdlet。
+2. 运行 New-OMEConfiguration cmdlet。
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 其中：
 

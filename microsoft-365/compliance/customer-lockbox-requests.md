@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解客户密码箱请求，使您可以控制 Microsoft 支持工程师在遇到问题时如何访问数据。
-ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b475c9af80d0e28961360825788d9e19a426dc69
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546498"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768860"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客户密码箱
 
 本文提供了客户密码箱的部署和配置指南。 客户密码箱支持访问 Exchange Online、SharePoint Online 和 OneDrive for Business 中的数据的请求。 若要推荐对其他服务的支持，请提交 [Office 365 UserVoice](https://office365.uservoice.com/)的请求。
 
-若要查看授权你的用户从 Microsoft 365 合规性产品（包括此服务）中获益的选项（包括2020此服务），请参阅 [microsoft 365 许可指南以了解安全 & 合规性](https://aka.ms/ComplianceSD)。
+若要查看授权你的用户从 Microsoft 365 合规性产品（包括此服务）中获益的选项（包括2020此服务），请参阅 [microsoft 365 许可指南以了解安全 & 合规性](https://aka.ms/ComplianceSD)。
 
 客户密码箱可确保 Microsoft 无法访问你的内容以执行服务操作，而无需你的明确批准。 客户密码箱将你带到审批工作流，以获取访问内容的请求。
 
@@ -74,9 +74,9 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 
 1. 使用已分配全局管理员或 **客户密码箱访问审批者** 角色的工作或学校帐户，转到 [https://admin.microsoft.com](https://admin.microsoft.com) 并登录。
 
-2. 选择 " **设置" > "组织设置**"。
+2. 选择 " **设置" > "组织设置** "。
 
-3. 选择 "**服务**  >  **客户密码箱**  >  **编辑**"，然后将开关移动到 "打开" 或 **"** **关闭**" 以打开或关闭该功能。
+3. 选择 " **安全 & 隐私**  >  **客户密码箱**  >  **编辑** "，然后将开关移动到 "打开" 或 **"** **关闭** " 以打开或关闭该功能。
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
@@ -84,7 +84,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 
 1. 使用已分配全局管理员或 **客户密码箱访问审批者** 角色的工作或学校帐户，转到 [https://admin.microsoft.com](https://admin.microsoft.com) 并登录。
 
-2. 选择 " **支持 > 客户密码箱请求**"。
+2. 选择 " **支持 > 客户密码箱请求** "。
 
     ![单击 "支持"，然后单击 "客户密码箱请求"](../media/CustomerLockbox5.png)
 
@@ -92,7 +92,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 
     ![客户密码箱请求列表](../media/CustomerLockbox6.png)
 
-3. 选择 "客户密码箱请求"，然后选择 " **批准** " 或 " **拒绝**"。
+3. 选择 "客户密码箱请求"，然后选择 " **批准** " 或 " **拒绝** "。
 
     ![批准或拒绝客户密码箱请求](../media/CustomerLockbox7.png)
 
@@ -101,7 +101,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
     ![批准或拒绝客户密码箱请求](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> 使用 AccessToCustomerDataRequest cmdlet 可以批准、拒绝或取消 microsoft 365 客户密码箱请求，这些请求可控制 Microsoft 支持工程师对数据的访问。 有关详细信息，请参阅 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)。
+> 使用 Set-AccessToCustomerDataRequest cmdlet 批准、拒绝或取消 Microsoft 365 客户密码箱请求，以控制 Microsoft 支持工程师对你数据的访问权限。 有关详细信息，请参阅 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)。
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>审核客户密码箱请求
@@ -116,7 +116,7 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
   
 2. 使用工作或学校帐户进行登录。
 
-3. 在安全性 & 合规性中心的左侧窗格中，选择 "**搜索 & 调查**  >  **审核日志搜索**"。
+3. 在安全性 & 合规性中心的左侧窗格中，选择 " **搜索 & 调查**  >  **审核日志搜索** "。
 
     将显示 " **审核日志搜索** " 页。
 
@@ -124,23 +124,23 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
   
 4. 配置以下搜索条件：
 
-    a. **活动** -将此字段保留为空，以便搜索将返回所有活动的审核记录。 若要返回与客户密码箱请求和 Microsoft 工程师所执行的相应活动相关的任何审核记录，这是必需的。
+    1. **活动** -将此字段保留为空，以便搜索将返回所有活动的审核记录。 若要返回与客户密码箱请求和 Microsoft 工程师所执行的相应活动相关的任何审核记录，这是必需的。
 
-    b. "**开始日期**" 和 "**结束日期**"-选择要显示在该时间段内发生的事件的日期和时间范围。
+    1. " **开始日期** " 和 " **结束日期** "-选择要显示在该时间段内发生的事件的日期和时间范围。
 
-    c. **用户** -将此字段留空。
+    1. **用户** -将此字段留空。
 
-    d. **文件、文件夹或网站** -将此字段留空。
+    1. **文件、文件夹或网站** -将此字段留空。
 
-5. 单击“**搜索**”以使用搜索条件运行搜索。
+5. 单击“ **搜索** ”以使用搜索条件运行搜索。
 
-    搜索结果已加载，并在几分钟后显示在 "**审核日志搜索**" 页上的 "**结果**" 下。
+    搜索结果已加载，并在几分钟后显示在 " **审核日志搜索** " 页上的 " **结果** " 下。
 
 6. 单击 "搜索结果" 页上的 " **筛选结果** "，然后执行下列操作之一：
 
-   - 若要显示与组织中的审批者批准或拒绝客户密码箱请求的审核记录，请执行以下操作：在 " **活动** " 列下的框中，键入 **AccessToCustomerDataRequest**。
+   - 若要显示与组织中的审批者批准或拒绝客户密码箱请求的审核记录，请执行以下操作：在 " **活动** " 列下的框中，键入 **AccessToCustomerDataRequest** 。
 
-   - 显示与 Microsoft 工程师相关的审核记录，以响应批准的客户密码箱请求：在 " **用户** " 列下的框中，键入 " **Microsoft 接线员**"。 " **活动** " 列将显示工程师执行的操作。
+   - 显示与 Microsoft 工程师相关的审核记录，以响应批准的客户密码箱请求：在 " **用户** " 列下的框中，键入 " **Microsoft 接线员** "。 " **活动** " 列将显示工程师执行的操作。
 
       ![在 "Microsoft 接线员" 上筛选以显示审核记录](../media/CustomerLockbox10.png)
 
@@ -158,12 +158,12 @@ Microsoft 工程师启动客户密码箱请求时，以下步骤概述了典型�
 | 活动   | AccessToCustomerDataRequest;这是您批准或拒绝客户密码箱请求时记录的审核活动。                                |
 | Item       | 客户密码箱请求的 Guid                             |
 
-下面的屏幕截图显示了与批准的客户密码箱请求对应的审核日志记录的示例。 如果客户密码箱请求被拒绝，则 **ApprovalDecision** 参数的值将为 **Deny**。
+下面的屏幕截图显示了与批准的客户密码箱请求对应的审核日志记录的示例。 如果客户密码箱请求被拒绝，则 **ApprovalDecision** 参数的值将为 **Deny** 。
 
 ![批准的客户密码箱请求的审核记录](../media/CustomerLockbox9.png)
 
 > [!TIP]
-> 若要在审核记录中显示更详细的信息，请单击 " **详细信息**"。
+> 若要在审核记录中显示更详细的信息，请单击 " **详细信息** "。
 
 ### <a name="audit-record-for-an-action-performed-by-a-microsoft-engineer"></a>由 Microsoft 工程师执行的操作的审核记录
 
@@ -177,7 +177,7 @@ Microsoft 工程师在客户密码箱请求批准后执行的操作 (并可能�
 | 活动   | Microsoft 工程师执行的活动的名称。|
 | Item       | \<empty\>                                             |
 
-## <a name="frequently-asked-questions"></a>常见问题
+## <a name="frequently-asked-questions"></a>常见问题解答
 
 #### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>客户密码箱适用于哪些 Microsoft 365 服务？
 
@@ -185,7 +185,7 @@ Microsoft 工程师在客户密码箱请求批准后执行的操作 (并可能�
 
 #### <a name="is-customer-lockbox-available-to-all-customers"></a>客户密码箱是否适用于所有客户？
 
-客户密码箱包含在 Microsoft 365 或 Office 365 E5 订阅中，并且可以添加到具有信息保护和合规性或高级合规性附加订阅的其他计划中。 有关详细信息，请参阅 [计划和定价](https://products.office.com/business/office-365-enterprise-e5-business-software)   。
+客户密码箱包含在 Microsoft 365 或 Office 365 E5 订阅中，并且可以添加到具有信息保护和合规性或高级合规性附加订阅的其他计划中。 有关详细信息，请参阅 [计划和定价](https://products.office.com/business/office-365-enterprise-e5-business-software) 。
 
 #### <a name="what-is-customer-content"></a>什么是客户内容？
 
@@ -261,7 +261,7 @@ Microsoft 工程师在客户密码箱请求批准后执行的操作 (并可能�
 
 #### <a name="does-customer-lockbox-protect-against-data-requests-from-law-enforcement-agencies-or-other-third-parties"></a>客户密码箱是否防止来自法律强制机构或其他第三方的数据请求？
 
-否。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。  (阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们将定期发布有关 Microsoft 收到的法律强制请求的 [详细信息](https://www.microsoft.com/corporate-responsibility/lerr) 。
+不正确。 Microsoft 会认真为客户数据提供第三方请求。 作为云服务提供商，Microsoft 始终支持客户数据的隐私。 在我们收到传唤的情况下，Microsoft 将始终尝试将第三方重定向到客户以获取信息。  (阅读 Brad Smith 的博客： [保护客户数据免受政府窥探](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)) 。 我们将定期发布有关 Microsoft 收到的法律强制请求的 [详细信息](https://www.microsoft.com/corporate-responsibility/lerr) 。
 
 有关详细信息，请参阅有关第三方数据请求的 [Microsoft 信任中心](https://www.microsoft.com/trustcenter/default.aspx) 和 [在线服务条款](https://www.microsoft.com/Licensing/product-licensing/products.aspx) 中的 "客户数据泄露" 部分。
 
