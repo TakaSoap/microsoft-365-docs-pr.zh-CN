@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104408"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787530"
 ---
 # <a name="getting-help-for-users"></a>获取针对用户的帮助
 
@@ -25,7 +25,7 @@ ms.locfileid: "48104408"
 
 ## <a name="get-help-app"></a>获取帮助应用程序
 
-为你的用户提供支持的首选方法是 **获取**用户设备中内置的易于使用的界面的帮助。  
+为你的用户提供支持的首选方法是 **获取** 用户设备中内置的易于使用的界面的帮助。  
 
 ![获取帮助应用程序图标](../../media/get-help.png)
 
@@ -33,6 +33,9 @@ ms.locfileid: "48104408"
 
 - 用户可以请求回叫提供的电话号码，或与服务代表在线聊天。
 - 位于 Microsoft 托管桌面支持范围之外的请求将通过电话呼叫重定向到本地 IT 支持人员。
+
+> [!NOTE]
+> "获取帮助" 应用的显示语言仅为英语，即使用户在设置其设备或在 "设备设置" 中选择了其他语言也是如此。 
 
 ### <a name="prerequisites"></a>先决条件
 为了让你的用户能够通过应用获取帮助，请确保满足以下先决条件：
@@ -71,4 +74,4 @@ ms.locfileid: "48104408"
 ## <a name="additional-resources"></a>其他资源
 - [Microsoft 托管桌面的管理员支持](admin-support.md)。 
 - [支持 Microsoft 托管桌面](../service-description/support.md)。
-- 如果您已订阅 Microsoft 托管桌面，则可以在[Microsoft 终结点管理器](https://endpoint.microsoft.com/)中 "**租户管理**" 菜单的 "microsoft 托管桌面" 部分下的**联机资源**中找到 "microsoft 托管桌面管理指南" 中的详细过程、流程、工作说明和 faq。
+- 如果您已订阅 Microsoft 托管桌面，则可以在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中 " **租户管理** " 菜单的 "microsoft 托管桌面" 部分下的 **联机资源** 中找到 "microsoft 托管桌面管理指南" 中的详细过程、流程、工作说明和 faq。

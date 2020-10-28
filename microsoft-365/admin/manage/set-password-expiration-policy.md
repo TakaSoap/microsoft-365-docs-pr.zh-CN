@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 管理中心为组织设置密码过期策略。
-ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362105"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787518"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>为组织设置密码过期策略
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)。
 
 ::: moniker-end
 
@@ -56,28 +56,24 @@ ms.locfileid: "47362105"
 > [!IMPORTANT]
 > 只有[全局管理员](../add-users/about-admin-roles.md)可执行这些步骤。
   
-1. 在管理中心，转到“**设置**”\>“**组织设置**”。
+1. 在管理中心，转到“ **设置** ”\>“ **组织设置** ”。
 
 2. 转到<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全和隐私</a>页面。
  只有全局管理员能看到“安全和隐私”选项。
   
-3. 选择“**密码过期策略**”。
+3. 选择“ **密码过期策略** ”。
   
-4. 如果不希望强制用户更改密码，请选择“**将用户密码设置为以下天数后过期**”旁边的复选框。
+4. 如果不希望强制用户更改密码，请选择“ **将用户密码设置为以下天数后过期** ”旁边的复选框。
   
 5. 输入密码过期频率。 请在 14 到 730 之间选择一个天数。
   
-6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“**保存**”。 选择从 1 到 30 的天数。
+6. 在第二个框中键入通知用户其密码将过期的时间，然后选择“ **保存** ”。 选择从 1 到 30 的天数。
 
 7. 用户的密码到期后会收到通知，通知会出现在其屏幕右下角。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>密码到期功能重要事项须知
-
-下面是自 2018 年 1 月起有关此功能运行原理的一些注意事项须知：
   
 - 对于仅使用 Outlook 应用的用户，在其密码在缓存中过期之前，不会强制其重置 Microsoft 365 密码。这一到期时间有可能在实际到期日期数天后抵达。这一情况在管理级别尚无解决方法。
-
-- 用户不会收到提示其密码将在 X 天后过期的电子邮件通知。是否需要此功能？ **[在此处投票！](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
 
 ## <a name="prevent-last-password-from-being-used-again"></a>防止再次使用上一次使用过的密码
 
