@@ -20,18 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769026"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779224"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅 [Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。
+
+## <a name="october-2020"></a>2020 年 10 月
+
+### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>删除与 Microsoft Defender 高级威胁防护相关的改进操作
+
+- 设置 Microsoft Defender SmartScreen Windows 应用商店应用程序 web 内容检查以警告
 
 ## <a name="august-2020"></a>2020 年 8 月
 

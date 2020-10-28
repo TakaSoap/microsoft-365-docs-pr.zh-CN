@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7709bf9a3063863d802e8c36a09ea10d287d0e34
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774103"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779268"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -72,7 +72,7 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 |**项**|**说明**|
 |:-----|:-----|
-|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 10月2020更新|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
+|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 10月2020更新|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
   
 <!--
 
