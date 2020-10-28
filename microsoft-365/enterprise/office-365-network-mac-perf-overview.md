@@ -15,22 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: 'Microsoft 365 管理中心中的网络连接概述 (预览) '
-ms.openlocfilehash: fcc70f7c76b92ecf113158cdac8eecdfb9852351
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: d7ccbad83bbe0b6c3b88001c285db370afcb8510
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456419"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774077"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 管理中心中的网络连接 (预览版) 
 
 Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的聚合网络连接指标，仅可供租户中的管理用户查看。
 
-![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+> [!div class="mx-imgBorder"]
+> ![网络连接测试工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
-**网络评估** 和 **网络洞察力** 显示在 Microsoft 365 管理中心的 **运行状况 |连接**。
+**网络评估** 和 **网络洞察力** 显示在 Microsoft 365 管理中心的 **运行状况 |连接** 。
 
-![网络性能页面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+> [!div class="mx-imgBorder"]
+> ![网络性能页面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 >[!NOTE]
 >网络连接测试工具支持 WW 商业和德国的租户，但不支持 GCC 中、GCC 高级、DoD 或中国的租户。
@@ -49,7 +51,7 @@ Microsoft 365 管理中心现在包含从 Microsoft 365 租户收集的聚合网
 
 对于此选项，必须在每个支持必备组件的办公室位置至少有两台计算机运行。 必须在每台计算机上安装 OneDrive for Windows 版本 **19.232** 或更高版本。 有关 OneDrive 版本的详细信息，请参阅 [onedrive 发行说明](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)。 在不久的将来，会计划在其他 Office 365 客户端应用程序中添加网络度量。
 
-Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地图** " 应用并找到自己来对此进行测试。 可以在具有设置的单台计算机上启用此功能 **|隐私 |** 必须启用设置 _允许应用访问你的位置_ 的位置。 可以将 Windows 位置服务同意部署到使用 MDM 或组策略的电脑中，设置 _LetAppsAccessLocation_。
+Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地图** " 应用并找到自己来对此进行测试。 可以在具有设置的单台计算机上启用此功能 **|隐私 |** 必须启用设置 _允许应用访问你的位置_ 的位置。 可以将 Windows 位置服务同意部署到使用 MDM 或组策略的电脑中，设置 _LetAppsAccessLocation_ 。
 
 您无需使用此方法在管理中心中添加位置，因为它们会在城市分辨率中自动标识。 您不能使用 Windows 定位服务在城市中显示多个办公室位置。 在上传之前，位置信息还会四舍五入到最接近的300米 x 300 米，这样就不能访问更精确的位置信息。
 
@@ -65,11 +67,11 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 由于要添加位置，因此可以在城市内定义多个办事处。
 
-满足这些先决条件后，度量样本和办公室位置应会在24小时后开始显示。
+客户端计算机中的所有测试度量都包括 LAN 子网信息，这与您输入的 office 位置详细信息相关联。 满足这些先决条件后，度量样本和办公室位置应会在24小时后开始显示。
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. 使用 Microsoft 365 网络连接测试工具手动收集测试报告
 
-对于此选项，您需要在每个位置标识一个人。 要求他们在具有管理权限的 Windows 计算机上浏览到 [Microsoft 365 网络连接测试](https://connectivity.office.com) 。 在网站上，他们需要登录到他们的 Office 365 帐户，才能查看您想要查看结果的同一组织。 然后，他们应单击 " **运行测试**"。 在测试过程中有一个已下载的连接测试 EXE。 他们还需要打开和执行。 测试完成后，测试结果将上传到 Office 365。
+对于此选项，您需要在每个位置标识一个人。 要求他们在具有管理权限的 Windows 计算机上浏览到 [Microsoft 365 网络连接测试](https://connectivity.office.com) 。 在网站上，他们需要登录到他们的 Office 365 帐户，才能查看您想要查看结果的同一组织。 然后，他们应单击 " **运行测试** "。 在测试过程中有一个已下载的连接测试 EXE。 他们还需要打开和执行。 测试完成后，测试结果将上传到 Office 365。
 
 如果将测试报告添加到 LAN 子网信息中，则会将这些报告链接到该位置，否则这些报告将仅显示在城市位置。
 
@@ -77,7 +79,7 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 ## <a name="how-do-i-use-this-information"></a>如何使用此信息？
 
-**网络洞察力**、其相关的性能建议和网络评估旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的详细信息。 每个网络洞察力的**性能建议**提供了您可以进行的特定网络体系结构设计更改，以改进与 Microsoft 365 网络连接相关的用户体验。 网络评估显示网络连接对用户体验的影响，从而允许比较不同的用户位置网络连接。
+**网络洞察力** 、其相关的性能建议和网络评估旨在帮助为你的办公室位置设计网络外围。 每个真知灼见都提供有关用户访问你的租户的每个地理位置的特定常见问题的性能特征的详细信息。 每个网络洞察力的 **性能建议** 提供了您可以进行的特定网络体系结构设计更改，以改进与 Microsoft 365 网络连接相关的用户体验。 网络评估显示网络连接对用户体验的影响，从而允许比较不同的用户位置网络连接。
 
 **网络评估** 将许多网络性能指标的聚合提取到企业网络运行状况的快照中，由 0-100 中的点值表示。 网络评估的作用范围为整个租户和每个地理位置，用户将从该位置连接到你的租户，从而为 Microsoft 365 管理员提供一种简单的方法来即时了解企业网络运行状况的 gestalt，并快速深入到任何全球办公地点的详细报告。
 
@@ -88,7 +90,8 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 ## <a name="enterprise-network-connectivity-challenges"></a>企业网络连接难题
 
-![客户网络到云](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
+> [!div class="mx-imgBorder"]
+> ![客户网络到云](../media/m365-mac-perf/m365-mac-perf-first-last-mile.png)
 
 许多企业都具有网络外围配置，这些配置随着时间的推移而逐渐发展，主要旨在适应员工 Internet 网站访问，其中大多数网站都不是预先知道的，不受信任。 这些未知网站的受攻击和必要的重点是避免恶意软件和钓鱼攻击。 此网络配置策略虽然有助于安全目的，但会导致 Microsoft 365 用户性能和用户体验下降。
 
@@ -98,7 +101,7 @@ Windows 位置服务必须在计算机上同意。 您可以通过运行 " **地
 
 有时，microsoft 需要调查大型企业客户的 Microsoft 365 的网络性能问题，并且这些问题通常有与客户网络外围基础结构相关的根本原因。 当发现客户网络外围问题的常见根源时，我们会设法确定确定它的简单测试指标。 具有确定特定问题的度量阈值的测试非常有用，因为我们可以在任何位置测试相同的指标，告知是否存在此根本原因，并将其共享为与管理员的网络洞察力。
 
-一些网络见解只表示需要进一步调查的问题。 一种网络洞察力，其中我们有足够的测试来显示解决根本原因的特定修正操作，作为 **建议的操作**列出。 这些建议基于实时指标，其中显示超出预先确定的阈值之外的值，比一般的最佳实践建议更有价值，因为它们是特定于您的环境的，并且会在进行建议的更改后显示实际的改进。
+一些网络见解只表示需要进一步调查的问题。 一种网络洞察力，其中我们有足够的测试来显示解决根本原因的特定修正操作，作为 **建议的操作** 列出。 这些建议基于实时指标，其中显示超出预先确定的阈值之外的值，比一般的最佳实践建议更有价值，因为它们是特定于您的环境的，并且会在进行建议的更改后显示实际的改进。
 
 ## <a name="network-connectivity-overview-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理中心中的网络连接概述
 
@@ -106,21 +109,25 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 3
 
 默认情况下，与网络度量相关联的近似位置信息标识客户端设备所在的城市。 每个位置的网络评估均以颜色显示，并且每个位置的用户相对数量由圆的大小表示。
 
-![网络洞察力概述映射](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
+> [!div class="mx-imgBorder"]
+> ![网络洞察力概述映射](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
 
 概述页面还显示了客户的网络评估，作为所有办公地点的加权平均。
 
-![网络评估](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
+> [!div class="mx-imgBorder"]
+> ![网络评估](../media/m365-mac-perf/m365-mac-perf-overview-score.png)
 
 可以在 "位置" 选项卡中查看可筛选、排序和编辑它们的位置的表格视图。具有特定建议的位置也可能包括估计的潜在延迟改进。 这是通过在该位置获取组织用户的中间延迟，并减去同一个城市中所有组织的中间滞后时间来计算的。
 
-![网络见解位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
+> [!div class="mx-imgBorder"]
+> ![网络见解位置](../media/m365-mac-perf/m365-mac-perf-locations.png)
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>特定的办公室位置网络性能摘要和见解
 
 选择 "办公室位置" 将打开一个特定位置的摘要页面，其中显示了已从该办公室位置测量指标中标识的网络出口的详细信息。
 
-![按位置的网络洞察力详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
+> [!div class="mx-imgBorder"]
+> ![按位置的网络洞察力详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
 
 此位置的组织用户的外围网络的地图与以下部分或全部元素一起显示：
 
@@ -139,7 +146,8 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 3
 
 "Office 位置" 页上的 "详细信息" 选项卡显示了用于提供任何见解、建议和网络评估的具体测量结果。 提供此信息是为了让网络工程师能够验证其环境中的任何约束或细节方面的建议和因素。
 
-![位置特定的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+> [!div class="mx-imgBorder"]
+> ![位置特定的详细信息](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子网办公地点的 CSV 导入
 
@@ -148,26 +156,34 @@ Microsoft 从多个 Office 桌面和 web 客户端中获得了支持 Microsoft 3
 在 CSV 文件中，发现的城市位置在 userEntered 列中显示为空白，手动添加的 "office 位置" 显示为1。
 
 1. 在 " _Microsoft 365_ 的主要连接" 窗口中，单击 " **位置** " 选项卡。
+
 1. 单击 "位置" 列表正上方的 " **导入** " 按钮。 将显示 " **导入 office 位置** " 浮出控件。
 
-   ![CSV 导入邮件](../media/m365-mac-perf/m365-mac-perf-import.png)
+   > [!div class="mx-imgBorder"]
+   > ![CSV 导入邮件](../media/m365-mac-perf/m365-mac-perf-import.png)
 
-1. 单击 " **下载当前的 office 位置 ( .csv) ** 链接以将" 当前位置 "列表导出到 csv 文件，并将其保存到本地硬盘。 这将为您提供一个格式正确的 CSV 以及您可以向其添加位置的列标题。 您可以将现有导出的位置保留原样;当您导入更新的 CSV 时，将不会复制它们。 如果要更改现有位置的地址，则会在您导入 CSV 时对其进行更新。 您无法更改发现的城市的地址。
+1. 单击 " **下载当前的 office 位置 ( .csv)** 链接以将" 当前位置 "列表导出到 csv 文件，并将其保存到本地硬盘。 这将为您提供一个格式正确的 CSV 以及您可以向其添加位置的列标题。 您可以将现有导出的位置保留原样;当您导入更新的 CSV 时，将不会复制它们。 如果要更改现有位置的地址，则会在您导入 CSV 时对其进行更新。 您无法更改发现的城市的地址。
+
 1. 打开 CSV 并添加您的位置，方法是在要添加的每个位置的新行上填写以下字段。 将所有其他字段保留为空;您在其他字段中输入的值将被忽略。
+
    1. **userEntered** (必需的) ：对于新的 LAN 子网办公室位置，必须为1个
    1. **Address** (必需的) ：办公室的物理地址
    1. **纬度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
    1. **经度** (可选) ：从 Bing 地图中填充如果为空，则为查找地址
    1. **出局 IP 地址范围 1-5** (可选) ：对于每个区域，输入电路名称，后跟一个以空格分隔的有效 IPv4 或 IPv6 CIDR 地址列表。 这些值用于区分使用相同 LAN 子网 IP 地址的多个办公室位置。 传出 IP 地址范围全部必须为/24 个网络大小，输入中不包含/24。
    1. **LanIps** (必需的) ：列出在此办公室位置使用的 LAN 子网区域。 LAN 子网 Id 需要包含 CIDR 网络大小，其中的网络大小可以介于/8 和/29 之间。 可以用逗号或分号分隔多个 LAN 子网范围。
-1. 添加办公室位置并保存文件后，单击 "**上载完成**时间" 字段旁边的 "**浏览**" 按钮，然后选择保存的 CSV 文件。
+   
+1. 添加办公室位置并保存文件后，单击 " **上载完成** 时间" 字段旁边的 " **浏览** " 按钮，然后选择保存的 CSV 文件。
+
 1. 将自动验证文件。 如果存在验证错误，您将看到错误消息 _导入文件中存在一些错误。请查看错误，更正导入文件，然后重试。_ 有关特定字段验证错误的列表，请单击链接的 " **打开错误详细信息** "。
 
-   ![CSV 导入错误消息](../media/m365-mac-perf/m365-mac-perf-import-error.png)
+   > [!div class="mx-imgBorder"]
+   > ![CSV 导入错误消息](../media/m365-mac-perf/m365-mac-perf-import-error.png)
 
 1. 如果文件中没有任何错误，您将看到 _报告已准备好的消息。找到要添加的 x 位置和要更新的 x 位置。_ 单击 " **导入** " 按钮上传 CSV。
 
-   ![CSV 导入就绪消息](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
+   > [!div class="mx-imgBorder"]
+   > ![CSV 导入就绪消息](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
 ## <a name="faq"></a>常见问题
 

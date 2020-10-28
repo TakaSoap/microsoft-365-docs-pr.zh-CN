@@ -26,16 +26,16 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何通过使用此方法来准备将用户预配到 Microsoft 365 （使用目录同步）和长期优点。
-ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464236"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773981"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 您的组织的混合标识和目录同步的好处包括：
 
@@ -62,7 +62,7 @@ ms.locfileid: "48464236"
 
 2. 删除 **proxyAddresses** 属性中的任何重复值。
 
-3. 如果可能，请确保用户的**用户**对象中的**userPrincipalName**属性具有有效且唯一的值。 为了获得最佳同步体验，请确保 AD DS UPN 与 Azure AD UPN 相匹配。 如果用户不具有 **userPrincipalName** 属性的值，则 **user** 对象必须包含 **sAMAccountName** 属性的有效且唯一的值。 删除 **userPrincipalName** 属性中的任何重复值。
+3. 如果可能，请确保用户的 **用户** 对象中的 **userPrincipalName** 属性具有有效且唯一的值。 为了获得最佳同步体验，请确保 AD DS UPN 与 Azure AD UPN 相匹配。 如果用户不具有 **userPrincipalName** 属性的值，则 **user** 对象必须包含 **sAMAccountName** 属性的有效且唯一的值。 删除 **userPrincipalName** 属性中的任何重复值。
 
 4. 若要最佳地使用全局地址列表 (GAL) ，请确保 AD DS 用户帐户的以下属性中的信息正确：
 
@@ -153,11 +153,11 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
 
 - **userPrincipalName**
 
-  - **UserPrincipalName**属性必须采用 Internet 样式登录格式，其中用户名后面跟有 at 符号 ( @ ) 和域名：例如，user@contoso.com。 所有简单邮件传输协议 (SMTP) 地址应符合电子邮件邮件传递标准。
-  - **UserPrincipalName**属性的最大字符数为113。 在 at 符号 ( @ ) 之前和之后允许使用特定数量的字符，如下所示：
+  - **UserPrincipalName** 属性必须采用 Internet 样式登录格式，其中用户名后面跟有 at 符号 ( @ ) 和域名：例如，user@contoso.com。 所有简单邮件传输协议 (SMTP) 地址应符合电子邮件邮件传递标准。
+  - **UserPrincipalName** 属性的最大字符数为113。 在 at 符号 ( @ ) 之前和之后允许使用特定数量的字符，如下所示：
   - 在 at 符号前的用户名的最大字符数 ( @ ) ：64
   - At 符号后面的域名的最大字符数 ( @ ) ：48
-  - 无效字符： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
+  - 无效字符： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] "
   - 允许的字符： A – Z、a-z、0–9、"。 - _ ! # ^ ~
   - 带有变音标记的字母（如元音变音、重音符号和颚化符）是无效字符。
   - 每个 **userPrincipalName** 值中都需要 @ 字符。
@@ -170,7 +170,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. 准备 userPrincipalName 属性
 
-Active Directory 旨在允许组织中的最终用户使用 **sAMAccountName** 或 **userPrincipalName**登录到您的目录。 同样，最终用户可以使用用户主体名称 (UPN) 的工作或学校帐户登录到 Microsoft 365。 目录同步尝试使用 AD DS 中的同一个 UPN 在 Azure Active Directory 中创建新用户。 UPN 的格式类似于电子邮件地址。
+Active Directory 旨在允许组织中的最终用户使用 **sAMAccountName** 或 **userPrincipalName** 登录到您的目录。 同样，最终用户可以使用用户主体名称 (UPN) 的工作或学校帐户登录到 Microsoft 365。 目录同步尝试使用 AD DS 中的同一个 UPN 在 Azure Active Directory 中创建新用户。 UPN 的格式类似于电子邮件地址。
 
 在 Microsoft 365 中，UPN 是用于生成电子邮件地址的默认属性。 在 AD DS 和 Azure AD 中获取 **userPrincipalName** (很容易，) 并将 **proxyAddresses** 中的主电子邮件地址设置为不同的值。 当它们设置为不同的值时，管理员和最终用户可能会感到困惑。
 

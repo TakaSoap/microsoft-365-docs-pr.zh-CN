@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681728"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774089"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自动外部电子邮件转发
 
@@ -35,30 +35,34 @@ Microsoft 365 中提供了以下类型的自动转发：
 
 您可以使用出站垃圾邮件筛选器策略来控制自动转发到外部收件人。 有三个可用的设置：
 
-- **自动**：阻止自动外部转发。 邮件的内部自动转发将继续有效。 这是默认设置。
-- **启用**：允许和不限制自动外部转发。
-- **Off**：禁用自动外部转发，并将导致未送达报告 (也称为 "NDR" 或 "退回邮件") 发件人。
+- **自动** ：阻止自动外部转发。 邮件的内部自动转发将继续有效。 这是默认设置。
+
+- **启用** ：允许和不限制自动外部转发。
+
+- **Off** ：禁用自动外部转发，并将导致未送达报告 (也称为 "NDR" 或 "退回邮件") 发件人。
 
 有关如何配置这些设置的说明，请参阅 [在 EOP 中配置出站垃圾邮件筛选](configure-the-outbound-spam-policy.md)。
 
-**注意**：
-
-- 禁用自动转发也将禁用将邮件重定向到外部地址的收件箱规则。
-
-- 内部用户之间的邮件自动转发不受出站垃圾邮件筛选器策略中的设置的影响。
-
-- 您可以查看在 [自动转发的邮件报告](mfi-auto-forwarded-messages-report.md)中自动将邮件转发给外部收件人的用户的相关信息。
+> [!NOTE]
+> 
+> - 禁用自动转发也将禁用将邮件重定向到外部地址的收件箱规则。
+> 
+>   Office 365 不允许通过收件箱规则或邮箱配置自动进行外部转发，这将提供安全的默认策略。 但是，管理员可以为组织中的所有用户或部分用户修改这些设置。 创建 [出站垃圾邮件策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) 并修改自动转发部分，以控制用户自动将电子邮件转发给外部发件人。 稍后可将其应用于该策略应用于的内部发件人。 内部用户之间的转发邮件不受此类修改的影响。
+> 
+> - 您可以查看在 [自动转发的邮件报告](mfi-auto-forwarded-messages-report.md)中自动将邮件转发给外部收件人的用户的相关信息。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>出站垃圾邮件筛选器策略设置如何与其他自动电子邮件转发控件一起使用
 
 作为管理员，您可能已将其他控件配置为允许或阻止自动电子邮件转发。 例如：
 
 - 允许或阻止自动将电子邮件转发到部分或全部外部域的[远程域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
+
 - Exchange [邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的条件和操作 (也称为传输规则) ，用于检测并阻止将自动转发的邮件发送给外部收件人。
 
 远程域设置和邮件流规则与出站垃圾邮件筛选器策略中的设置无关。 例如：
 
 - 您允许远程域的自动转发，但在出站垃圾邮件筛选器策略中阻止自动转发。 在此示例中，将阻止自动转发的邮件。
+
 - 您可以在出站垃圾邮件筛选器策略中允许自动转发，但使用邮件流规则或远程域设置阻止自动转发的电子邮件。 在此示例中，邮件流规则或远程域设置将阻止自动转发的邮件。
 
 通过此功能，您可以 (例如，) 允许在出站垃圾邮件筛选器策略中自动转发，但使用远程域控制用户可以将邮件转发到的外部域。
