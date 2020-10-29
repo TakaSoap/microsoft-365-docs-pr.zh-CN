@@ -15,26 +15,28 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 向用户提供有关你的行业的最新新闻标题和你的组织的信息，请使用新闻服务为你的组织启用自定义的新闻源。
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779174"
+ms.locfileid: "48791818"
 ---
 # <a name="manage-industry-news"></a>管理行业新闻
 
 若要向用户提供有关您的行业的最新新闻标题和您的组织的信息，请使用 [新闻](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 服务为您的组织启用自定义的新闻源。您还可以管理 Bing 主页和 Microsoft Edge "新建选项卡" 页的设置， (从) 的边缘87的版本开始。
 
 ## <a name="what-your-users-will-see"></a>您的用户将看到的内容
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Microsoft 搜索业内更新汇总":::
  
 进入 Bing 主页的登录用户将看到您的新闻源位于组织中的个性化信息下。
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Microsoft 搜索业内更新汇总" 选项卡页上查看公司、行业和内部新闻或个性化的工作信息。 
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="来自 web 的行业新闻的图像轮播屏幕截图&quot;:::
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft 搜索业内更新汇总":::
+他们还可以在其 Microsoft Edge &quot;新建" 选项卡页上查看公司、行业和内部新闻或个性化的工作信息。 
+
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="来自 web 的行业新闻的图像轮播屏幕截图&quot;:::
+
+他们还可以在其 Microsoft Edge &quot;新建":::
 
 ## <a name="news-settings"></a>新闻设置
 

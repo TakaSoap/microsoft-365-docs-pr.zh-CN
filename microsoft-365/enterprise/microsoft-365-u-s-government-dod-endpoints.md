@@ -3,7 +3,7 @@ title: Office 365 美国政府 DOD 终结点
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 10/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 要求连接到 Internet。 下面的终结点应仅供使用 Office 365 美国政府 DoD 计划的客户访问。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e1c16b8b7283d81a15170a189d091941a42a09a5
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: ebf93708849a06348edd5433c56c486595da55a4
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269573"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791926"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 美国政府 DoD 终结点
 
@@ -39,7 +39,7 @@ ms.locfileid: "48269573"
   
 |||
 |:-----|:-----|
-|**上次更新时间：** 09/01/2020- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
+|**上次更新时间：** 10/28/2020- ![ RSS ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [更改日志订阅](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**下载：** [JSON 格式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)的完整列表 <br/> |
 
  从 [管理 Office 365 终结点](managing-office-365-endpoints.md) 开始，了解我们关于使用此数据管理网络连接的建议。 终结点数据在每月开始时更新，并在30天内发布新的 IP 地址和 Url，并在处于活动状态之前发布。 这样一来，在需要新的连接之前，尚不具有自动更新的客户即可完成其过程。 如果需要，还可以更新终结点，以解决支持升级、安全事件或其他立即运行的要求。 以下页面上显示的数据都是从基于 REST 的 web 服务生成的。 如果使用脚本或网络设备访问此数据，则应直接转到 [Web 服务](microsoft-365-ip-web-service.md) 。
 
@@ -49,15 +49,15 @@ ms.locfileid: "48269573"
 
 显示的数据列是：
 
-- **ID**：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
+- **ID** ：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
 
-- **类别**：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](https://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
+- **类别** ：显示终结点集是分类为“优化”、“允许”还是“默认”。可以在 [https://aka.ms/pnc](https://aka.ms/pnc) 上了解管理它们的这些类别和指南。此列还列出了哪些终结点集需要具有网络连接。对于不需要具有网络连接的终结点集，我们在此字段中提供备注，以指示在终结点集被阻止时将丢失哪些功能。如果要排除整个服务区域，则根据需要列出的终结点集不需要连接。
 
-- **ER**：如果终结点设置通过 Azure ExpressRoute （使用 Office 365 路由前缀）支持，则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 " **否**" 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定在 ER 为 **no**时没有为终结点集播发任何路由。 如果您计划使用 Azure AD Connect，请阅读 [特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) ，以确保您具有适当的 Azure ad connect 配置。
+- **ER** ：如果终结点设置通过 Azure ExpressRoute （使用 Office 365 路由前缀）支持，则为 **"是"** 。 包含路由前缀的 BGP 社区与所列的服务区域对齐。 当 ER 为 " **否** " 时，这意味着此终结点集不支持 ExpressRoute。 但是，不应假定在 ER 为 **no** 时没有为终结点集播发任何路由。 如果您计划使用 Azure AD Connect，请阅读 [特殊注意事项部分](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government) ，以确保您具有适当的 Azure ad connect 配置。
 
-- **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
+- **地址** ：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
  
-- **端口**：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
+- **端口** ：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
  
 [!INCLUDE [Office 365 U.S. Government DoD endpoints](../includes/office-365-u.s.-government-dod-endpoints.md)]
   
