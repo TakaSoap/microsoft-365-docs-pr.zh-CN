@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用效率分数保护隐私的方式。
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770022"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794973"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>用于提高工作效率的隐私控制分数
 
@@ -55,7 +55,21 @@ ms.locfileid: "48770022"
 
 将报告读者角色分配给负责更改管理和采用的任何人。 通过此角色，他们可以访问完整的体验，包括租户级指标和每用户级别的详细信息。
 
-"人员体验报表" 包含每个用户的活动详细信息，每个类别的详细信息页面。 分配名为使用率摘要报告读取器的自定义角色。 (可从) 2020 年10月29日开始，仅支持人员体验的聚合指标的访问。
+"人员体验报表" 包含每个用户的活动详细信息，每个类别的详细信息页面。 分配名为使用率摘要报告读取器的自定义角色。 (可从) 2020 年10月29日开始，仅支持人员体验的聚合指标的访问。 必须通过 PowerShell cmdlet 分配此角色，才能将其分配给11/15/2020 上的 Microsoft 管理中心。
+
+若要将使用率摘要报告读者角色分配给 PowerShell，请执行以下操作：
+
+- 运行以下 PowerShell：
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
 

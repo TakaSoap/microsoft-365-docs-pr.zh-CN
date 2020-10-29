@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656126"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795113"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>解决准备情况评估工具发现的问题
 
-对于每个检查，该工具将报告三个可能的结果之一：
+对于每个检查，该工具将报告以下四个可能的结果之一：
 
 
 |结果  |含义  |
@@ -26,6 +26,7 @@ ms.locfileid: "48656126"
 |Ready     | 完成注册前不需要执行任何操作。        |
 |欲    | 按照工具或本文中的步骤操作，以获取注册和用户的最佳体验。 你 *可以* 完成注册，但必须先解决这些问题，然后再部署你的第一个设备。        |
 |未就绪 | *如果不解决这些问题，注册将失败。* 按照工具或本文中的步骤进行操作，以解决这些问题。        |
+|错误 | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 设置
 
@@ -70,7 +71,17 @@ Azure AD 组织中的条件访问策略不得以任何 Microsoft 管理桌面用
 
 **欲**
 
-请确保您已排除了所有条件访问 **策略 "AZURE** AD 组"。 有关步骤，请参阅 [调整条件访问](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 **新式 Workplace Service 帐户**Azure AD 组是我们在注册时为服务创建的动态组。 注册后，必须返回以排除此组。 有关这些服务帐户的详细信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+请确保您已排除了所有条件访问 **策略 "AZURE** AD 组"。 有关步骤，请参阅 [调整条件访问](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 **新式 Workplace Service 帐户** Azure AD 组是我们在注册时为服务创建的动态组。 注册后，必须返回以排除此组。 有关这些服务帐户的详细信息，请参阅 [标准操作过程](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+
+**Error**
+
+Intune 管理员角色对此检查没有足够的权限。 您还需要分配给运行此检查的任何 Azure AD 角色：
+
+- 安全读取者
+- 安全管理员
+- 条件访问管理员
+- 全局读取者
+- 设备管理员
 
 
 ### <a name="device-compliance-policies"></a>设备合规性策略
@@ -107,7 +118,7 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 **未就绪**
 
-按照 " [设置注册限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) " 中的步骤将设置更改为 " **允许**"。
+按照 " [设置注册限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) " 中的步骤将设置更改为 " **允许** "。
 
 
 ### <a name="enrollment-status-page"></a>"注册状态" 页
@@ -116,7 +127,7 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 **未就绪**
 
-您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度**。 按照 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤禁用此设置。
+您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度** 。 按照 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤禁用此设置。
 
 **欲**
 
@@ -128,7 +139,7 @@ Azure AD 组织中的 Windows 10 设备必须在 Intune 中自动注册。
 
 **未就绪**
 
-Azure AD 组织中的用户不会在 Microsoft Intune 中自动注册。 将 MDM 用户作用域更改为 **部分** 或 **全部**。 如果选择 ""。 某些 * * 会在注册后返回，并选择 **新式的工作场所-** **组**的所有 Azure AD 组。
+Azure AD 组织中的用户不会在 Microsoft Intune 中自动注册。 将 MDM 用户作用域更改为 **部分** 或 **全部** 。 如果选择 " **某些** "，请在注册后返回，并选择 **新式工作区-** **组** 的所有 Azure AD 组。
 
 
 ### <a name="microsoft-store-for-business"></a>适用于企业的 Microsoft Store
@@ -150,8 +161,17 @@ Azure AD 组织中的用户不会在 Microsoft Intune 中自动注册。 将 MDM
 
 **欲**
 
-请确保任何需要 MFA 的条件访问策略排除 **新式工作区-所有** Azure AD 组。 有关详细信息，请参阅 [条件访问策略](#conditional-access-policies) 和 [条件访问：要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **新式工作区-所有**Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
+请确保任何需要 MFA 的条件访问策略排除 **新式工作区-所有** Azure AD 组。 有关详细信息，请参阅 [条件访问策略](#conditional-access-policies) 和 [条件访问：要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **新式工作区-所有** Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
 
+**Error**
+
+Intune 管理员角色对此检查没有足够的权限。 您还需要分配给运行此检查的任何 Azure AD 角色：
+
+- 安全读取者
+- 安全管理员
+- 条件访问管理员
+- 全局读取者
+- 设备管理员
 
 
 ### <a name="powershell-scripts"></a>PowerShell 脚本
@@ -185,7 +205,7 @@ Microsoft 托管桌面不支持 Azure AD 组织所在的一个或多个国家/�
 
 **欲**
 
-请确保任何安全基准策略都已排除 Microsoft 托管桌面设备。 有关步骤，请参阅 [使用安全基准在 Intune 中配置 Windows 10 设备](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 **新式工作区设备-所有**Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
+请确保任何安全基准策略都已排除 Microsoft 托管桌面设备。 有关步骤，请参阅 [使用安全基准在 Intune 中配置 Windows 10 设备](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 **新式工作区设备-所有** Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
 
 
 ### <a name="windows-apps"></a>Windows 应用
@@ -222,7 +242,7 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 **欲**
 
-确保任何更新环策略均已排除 **新式工作区-所有** Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式工作区设备-所有**Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
+确保任何更新环策略均已排除 **新式工作区-所有** Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式工作区设备-所有** Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置
@@ -234,7 +254,7 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 **欲**
 
-确保将 **AllowAdHocSubscriptions** 设置为 **True**。 否则，企业状态漫游可能无法工作。 有关详细信息，请参阅 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+确保将 **AllowAdHocSubscriptions** 设置为 **True** 。 否则，企业状态漫游可能无法工作。 有关详细信息，请参阅 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>企业状态漫游
@@ -297,6 +317,11 @@ Azure Active Directory 中的安全性默认值将阻止 Microsoft 托管桌面�
 **欲**
 
 请确保 SSPR **选择** 的设置包括 Microsoft 托管桌面设备。
+
+**Error**
+
+Intune 管理员角色对此检查没有足够的权限。 您还需要为运行此检查而分配的报告阅读器 Azure AD 角色。
+
 
 ### <a name="standard-user-role"></a>标准用户角色
 
