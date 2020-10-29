@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合规性管理器的快速入门指南可帮助您了解了解、设置和使用合规性管理器。
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204301"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791788"
 ---
 # <a name="compliance-manager-quickstart"></a>合规性管理器快速入门
 
@@ -39,7 +39,7 @@ ms.locfileid: "48204301"
 
 - [了解合规性分数](compliance-manager.md#understanding-your-compliance-score)
 - [关键元素概述：控件、评估、模板和改进操作](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [了解合规性管理器仪表板](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [了解合规性管理器仪表板](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [筛选你的仪表板视图](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [了解改进操作](compliance-manager-setup.md#improvement-actions-page)
 - [了解评估](compliance-manager.md#assessments)

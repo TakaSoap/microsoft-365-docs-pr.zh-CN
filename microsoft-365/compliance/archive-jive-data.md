@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器，以便从 Microsoft 365 中的 Globanet 导入和存档 Jive 数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据，因此您可以使用合规性功能（如合法保留、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: d04a211e97ddce18165fe62e46f76303b4590524
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0838273baa86da043b57554a1f0e63bc3cb92917
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48409095"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785514"
 ---
-# <a name="set-up-a-connector-to-archive-jive-data-preview"></a>设置连接器以存档 Jive 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-jive-data"></a>设置连接器以存档 Jive 数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将数据从协作平台导入并存档到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了一个 [Jive](https://globanet.com/jive/) 连接器，该连接器配置为定期捕获第三方数据源 (中的项目) 然后将这些项目导入到 Microsoft 365。 连接器将内容（如电子邮件、聊天和附件）从用户的 Jive 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -49,13 +49,13 @@ ms.locfileid: "48409095"
 
 第一步是访问 Microsoft 365 合规性中心中的 " **数据连接器** " 页，并为 Jive 数据创建连接器。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 "**数据连接器**  >  **Jive**"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 " **数据连接器**  >  **Jive** "。
 
-2. 在 " **Jive** 产品说明" 页上，单击 " **添加连接器**"。
+2. 在 " **Jive** 产品说明" 页上，单击 " **添加连接器** "。
 
-3. 在 " **服务条款** " 页上，单击 " **接受**"。
+3. 在 " **服务条款** " 页上，单击 " **接受** "。
 
-4. 输入标识连接器的唯一名称，然后单击 " **下一步**"。
+4. 输入标识连接器的唯一名称，然后单击 " **下一步** "。
 
 5. 登录到您的 Merge1 帐户以配置连接器。
 
@@ -63,19 +63,19 @@ ms.locfileid: "48409095"
 
 第二步是在 Merge1 站点上配置 Jive 连接器。 有关如何配置 Jive 连接器的信息，请参阅 [Merge1 第三方连接器用户指南](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf)。
 
-单击 " **保存" & "完成**" 后，将转回到 Microsoft 365 合规性中心，转到 "连接器向导" 中的 " **用户映射** " 页。
+单击 " **保存" & "完成** " 后，将转回到 Microsoft 365 合规性中心，转到 "连接器向导" 中的 " **用户映射** " 页。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步骤3：映射用户并完成连接器设置
 
 若要映射用户并完成 Microsoft 365 合规性中心中的连接器设置，请执行以下步骤：
 
-1. 在 "将 **Jive 用户映射到 Microsoft 365 用户** " 页上，启用 "自动用户映射"。 Jive 项包含一个名为 *Email*的属性，其中包含组织中的用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户相关联，则会将这些项目导入该用户的邮箱中。
+1. 在 "将 **Jive 用户映射到 Microsoft 365 用户** " 页上，启用 "自动用户映射"。 Jive 项包含一个名为 *Email* 的属性，其中包含组织中的用户的电子邮件地址。 如果连接器可以将此地址与 Microsoft 365 用户相关联，则会将这些项目导入该用户的邮箱中。
 
-2. 在 " **管理员同意** " 页上，单击 " **提供同意**"。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
+2. 在 " **管理员同意** " 页上，单击 " **提供同意** "。 你将被重定向到 Microsoft 网站。 单击 " **接受** " 以提供许可。
 
    您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要提供管理员同意，必须使用 Microsoft 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 
-3. 单击 " **下一步**"，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
+3. 单击 " **下一步** "，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
 
 ## <a name="step-4-monitor-the-jive-connector"></a>步骤4：监视 Jive 连接器
 
@@ -85,7 +85,7 @@ ms.locfileid: "48409095"
 
 2. 单击 " **连接器** " 选项卡，然后选择 " **Jive** 连接器" 以显示弹出页面，其中包含有关连接器的属性和信息。
 
-3. 在 " **连接器状态与源**" 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含有关已导入到 Microsoft 云的数据的信息。
+3. 在 " **连接器状态与源** " 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含有关已导入到 Microsoft 云的数据的信息。
 
 ## <a name="known-issues"></a>已知问题
 

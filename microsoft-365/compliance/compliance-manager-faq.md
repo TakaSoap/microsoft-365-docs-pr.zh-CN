@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查找有关 Microsoft 合规性管理器的常见问题解答，这些问题可帮助组织简化和自动化风险评估。
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204303"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791778"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合规性管理器常见问题
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204303"
 
 现在只有一个解决方案：合规性管理器。 本部分将引导您完成转换，从下面的基本概述开始。 您还可能会发现，直接跳转到以下部分之一非常有用：
 
-- [组织主要使用合规性管理器 (经典版或公共预览版) ，位于 Microsoft 服务信任门户中](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [组织主要使用合规性管理器 (经典版或公共预览版) ，位于 Microsoft 服务信任门户中](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [您的组织主要使用合规性分数 (公共预览版) ，位于 Microsoft 365 合规性中心](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 阅读此 [博客文章](https://aka.ms/compliancemanager/GAblog) ，了解有关合规性管理器的 GA 版本的新增功能的详细信息。
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>您的组织在服务信任门户中定期使用合规性管理器
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>您的组织在服务信任门户中定期使用合规性管理器
 
 如果您在服务信任门户中使用合规性管理器，则组织中的所有数据现在都存在于 Microsoft 365 合规性中心的合规性管理器中 https://compliance.microsoft.com/compliancemanager 。 若要恢复合规性管理器在其新位置工作，除了更新对其先前位置的任何书签外，无需执行任何操作。 你的所有评估和其他数据均已为你而恢复。
 
@@ -51,7 +51,7 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 以下是一些有用的资源：
 
-- [熟悉您的新的合规性管理器体验](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [了解你的新合规性管理器体验](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [在其新家中查找合规性管理器的权限和其他设置信息](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [了解有关 Microsoft 365 合规性中心的详细信息](microsoft-365-compliance-center.md)
 
@@ -77,7 +77,7 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果得分较高，这是否意味着我完全合规？
 
-否。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它不表示对特定标准或法规的组织合规性的绝对度量。 合规性管理器和合规性分数不应以任何方式解释为保证。
+不正确。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它不表示对特定标准或法规的组织合规性的绝对度量。 合规性管理器和合规性分数不应以任何方式解释为保证。
 
 ## <a name="can-i-use-compliance-manager-for-non-microsoft-products"></a>我是否可以对非 Microsoft 产品使用合规性管理器？
 
