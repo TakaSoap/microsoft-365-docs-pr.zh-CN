@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 团队合作的详细信息-人员体验效率分数。
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795235"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804789"
 ---
 # <a name="teamwork--people-experiences"></a>团队合作–人员体验
 
@@ -186,3 +185,12 @@ ms.locfileid: "48795235"
 - 团队合作衡量组织中的人员的参与情况。 它不&#39;捕获外部成员的活动。
 - 团队合作中的渠道邮件不包括通过 Microsoft 团队移动客户端发送的邮件。
 - 在我们正在解决的通信和团队合作类别之间，电子邮件指标和通道邮件之间可能存在细微的差异。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) \
+[通信–人员](communication.md) (文章) \
+[内容协作–人员](content-collaboration.md) (文章) \
+[会议–人员体验](meetings.md) (文章) \
+[移动性–人员体验](mobility.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) 

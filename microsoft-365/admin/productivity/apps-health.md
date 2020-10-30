@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 应用健康状况技术体验工作效率分数的详细信息。
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795232"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804765"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用程序运行状况–技术经验
 
@@ -112,3 +111,12 @@ Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和
 - **状态：**   Microsoft 365 应用支持基于当前通道和版本的设备的状态。
 - **版本：**  设备上的当前 Microsoft 365 应用版本。
 - **设备数量：**  设备数。
+
+## <a name="related-content"></a>相关内容
+
+[通信–人员](communication.md) (文章) \
+[内容协作–人员](content-collaboration.md) (文章) \
+[会议–人员体验](meetings.md) (文章) \
+[移动性–人员体验](mobility.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) \
+[团队合作–人员体验](teamwork.md) (文章) 

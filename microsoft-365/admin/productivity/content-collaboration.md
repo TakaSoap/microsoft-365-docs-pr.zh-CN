@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 内容协作的详细信息-人员体验效率分数。
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795246"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804593"
 ---
 # <a name="content-collaboration--people-experiences"></a>内容协作–人员体验
 
@@ -191,4 +190,13 @@ Microsoft OneDrive for Business 和 SharePoint 使用户能够通过设备和应
 - **外部共享的文件：** 最近28天内与组织外部的其他人共享的 OneDrive 或 SharePoint 上的联机文件数。
 - **通过电子邮件发送的文件附件：** Boolean 值，指示用户是否使用文件发送的电子邮件在最近28天的附件中 (不在 OneDrive 或 SharePoint) 为附件。
 - **电子邮件的联机文件附件：** 一个布尔值，指示用户是否发送电子邮件，其中包含指向联机文件的链接，这些链接指向 OneDrive 或 SharePoint 上的联机文件 () 为最近28天的附件。
-- **嵌入指向联机文件的链接：** 一个布尔值，指示用户是否已发送电子邮件，其中包含指向联机文件的链接，这些链接指向 OneDrive 或) SharePoint 上的电子邮件正文中 (嵌入在最近28天
+- **嵌入指向联机文件的链接：** 一个布尔值，指示用户是否已发送电子邮件，其中包含指向联机文件的链接，这些链接指向 OneDrive 或) SharePoint 上的电子邮件正文中 (嵌入的电子邮件正文中。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) \
+[通信–人员](communication.md) (文章) \
+[会议–人员体验](meetings.md) (文章) \
+[移动性–人员体验](mobility.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) \
+[团队合作–人员体验](teamwork.md) (文章) 

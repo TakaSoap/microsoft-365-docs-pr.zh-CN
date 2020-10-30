@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 沟通的详细信息-人员体验效率分数。
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795012"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804651"
 ---
 # <a name="communication--people-experiences"></a>通信–人员体验
 
@@ -158,3 +157,12 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 - **在电子邮件中 @mention 使用的天数：** 用户在最近28天内向其发送包含 @mention 的电子邮件的天数。
 
 您还可以通过选择 "导出" "导出" **按钮** 链接将报告数据导出到 Excel .csv 文件中。 请注意，您可以通过在单击 " **选择列** " 后选择所需的列来自定义视图中的列集。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) \
+[内容协作–人员](content-collaboration.md) (文章) \
+[会议–人员体验](meetings.md) (文章) \
+[移动性–人员体验](mobility.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) \
+[团队合作–人员体验](teamwork.md) (文章) 

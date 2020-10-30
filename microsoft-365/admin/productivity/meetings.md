@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 会议的详细信息-人员体验生产力分数。
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795247"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804581"
 ---
 # <a name="meetings--people-experiences"></a>会议–人员体验
 
@@ -142,3 +141,12 @@ Microsoft 团队将与 Outlook 日历集成，并提供了使会议更具吸引�
 - 对于任何评估，只有有权访问 Microsoft 团队的用户才会被考虑。
 - 我们排除广播事件和某些未标记为会议或呼叫的事件。
 - 在参与者之间以屏幕共享方式启动的事件被分类为1:1 呼叫 (与2个参与者) 或分组呼叫 (3 个或更多参与者) 。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) \
+[通信–人员](communication.md) (文章) \
+[内容协作–人员](content-collaboration.md) (文章) \
+[移动性–人员体验](mobility.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) \
+[团队合作–人员体验](teamwork.md) (文章) 

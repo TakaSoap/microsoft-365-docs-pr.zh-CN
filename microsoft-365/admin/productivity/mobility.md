@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 移动性人员体验工作效率分数的详细信息。
-ms.openlocfilehash: 0d67cae7421b7b27e39420f691d72abd57a63a32
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795250"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804777"
 ---
 # <a name="mobility--people-experiences"></a>移动性–人员体验
 
@@ -168,3 +167,12 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 - **Skype (桌面) 中的天数：** 此人在桌面平台上的 Skype 活动状态的天数。
 - **Skype (web) 中的天数：** 用户在 Skype 中的 web 平台上处于活动状态的天数。
 - **Skype (移动) 中的天数：** 此人在移动平台上的 Skype 活动状态的天数。
+
+## <a name="related-content"></a>相关内容
+
+[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) \
+[通信–人员](communication.md) (文章) \
+[内容协作–人员](content-collaboration.md) (文章) \
+[会议–人员体验](meetings.md) (文章) \
+[工作效率的隐私控制分数](privacy.md) (文章) \
+[团队合作–人员体验](teamwork.md) (文章) 

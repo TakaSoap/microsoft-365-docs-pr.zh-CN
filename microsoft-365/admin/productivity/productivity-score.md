@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 3d014cd0eb3a3ceed3b3f3b48f126453e4ced193
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794961"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804720"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 工作效率分数 
 
@@ -43,25 +42,28 @@ ms.locfileid: "48794961"
 
     我们提供了这些见解，因为当用户在线协作、节省时间和在任何设备上进行工作时，可以更高效、更满意。 以灵活的方式进行通信的功能使用户更高效，能够形成更好的关系，从而使组织更加统一。 有关证据，请参阅 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
-- **技术体验：** 工作效率取决于可靠、性能良好的技术以及 Microsoft 365 的有效使用。 我们提供了 [终结点分析](https://aka.ms/endpointanalytics)，可帮助你了解你的终结点硬件和软件的性能和运行状况问题对你的用户的生产率有何影响。 我们还为你的组织提供了建议的操作，以便对其进行补救以及 Microsoft 365 网络连接见解。
+- **技术体验：** 您的团队的工作效率取决于可靠、性能良好的技术以及 Microsoft 365 的有效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助您了解您的用户的工作效率如何受硬件和软件的性能和运行状况问题的影响。建议的操作可帮助您修正这些问题。 Microsoft 365 网络连接见解将帮助您对组织的 connectivity 问题进行故障排除。
 
 有关概述和先决条件的详细信息，请参阅 [什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview) 。 若要了解有关 Microsoft 365 网络 connectivity insights 的详细信息，请阅读 [网络连接概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>如何计算分数
 
-你的工作效率分数基于你的人员和技术体验类别的组合得分。 每个类别的加权都相等，总计为100点。 可能的最高生产效率分数为500。
+你的工作效率分数基于你的人员和技术体验类别的组合得分。 每个类别的加权都相等，总计为100点。 可能的最高生产效率分数为800。
 
 ### <a name="score-categories"></a>分数类别 
 
-- 内容协作 (100 点) 
 -  (100 磅的通信) 
+- 会议 (100 磅) 
+- 内容协作 (100 点) 
+- 团队合作 (100 点) 
 - 移动 (100 点) 
 - 终结点分析 (100 点) 
 - 网络连接 (100 磅) 
-- **总可能值 = 500 磅**
+- Microsoft 365 应用程序运行状况 (100 点) 
+- **总可能值 = 800 磅**
  
- 在每个类别中，我们都确定主要活动的模式，这些是有关用户如何使用 Microsoft 365 产品在平台之间进行协作、通信和工作的指标。 我们为关键活动提供了28天和180天的视图。 我们还提供不属于分数计算的支持指标，但对于帮助您确定可对其执行操作的基础行为和设置非常重要。
+ 在每个分数类别中，我们都确定主要活动的模式，这些是有关用户如何使用 Microsoft 365 产品在平台之间进行协作、通信和工作的指标。 我们为关键活动提供了28天和180天的视图。 我们还提供不属于分数计算的支持指标，但对于帮助您确定可解决的基础行为和设置，这一点非常重要。
 
 ### <a name="products-included-in-productivity-score"></a>包含在工作效率分数中的产品 
 
@@ -72,7 +74,9 @@ ms.locfileid: "48794961"
 
 ## <a name="pre-requisites"></a>先决条件 
 
-若要获取用户体验数据，需要使用 Microsoft 365 for business 或 Office 365 for business 订阅，并且需要使用多租户云服务。 若要获取租户的终结点分析数据，需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。       安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 Microsoft Intune 的详细信息。 
+对于遇到数据的人员，你需要使用 Microsoft 365 for business 或 Office 365 for business 订阅。 对于你的租户的终结点分析数据，你需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。 安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 Microsoft Intune 的详细信息。 
+> [!NOTE]
+> 若要获取工作效率评分功能，不需要使用工作区分析的许可证。
 
 若要查看组织的工作效率分数，您必须具有以下角色之一： 
 
@@ -90,17 +94,17 @@ ms.locfileid: "48794961"
 
 "生产力分数" 主页显示了每个类别的总分和分数历史记录以及主要洞察力。
 
-![工作效率分数主页](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="报告中的 &quot;生产效率分数&quot; 页。&quot;:::
 
 **您的分数** 显示为百分比值，以磅为单位。 您可以在分子中查看您的要点以及分母中的最大可能分数。
 
-**对等基准** 使您能够将您的成绩与像你的组织进行比较。 对于 "人员体验" 类别，对等基准度量值计算为一组相似组织中的度量值的平均值。 该集由您所在区域中的组织组成，其中包含数量相似的许可用户、许可证类型、行业和 tenure 与 Microsoft 365。 
+**对等基准** 使您能够将您的成绩与像你的组织进行比较。 人员体验类别的对等基准计算是一组相似组织中的度量值的平均值。 组织集由您所在区域中的组织组成，其中包含与 Microsoft 365 的许可用户数量、许可证类型、行业和 tenure 的数量相似的组织。 
 
 终结点分析对等基准包括设备启动性能的目标以及基于所有租户中聚合的中间值的建议软件配置。
 
 对于网络连接，推荐的准则为80点。
 
-" **分数细分** " 部分提供了按人员和技术经验领域的基准的工作效率分数细分。
+&quot; **分数细分** " 部分提供了按人员和技术经验领域的基准的工作效率分数细分。
 
 分数历史记录显示最近6个月内每个类别中的得分如何变化。
 

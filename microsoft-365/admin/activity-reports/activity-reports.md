@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637003"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779116"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -41,24 +41,24 @@ ms.locfileid: "48637003"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
+1. 在管理中心，转到“ **报表** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**报表**”\>“**使用情况**”页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“ **报表** ”\>“ **使用情况** ”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**报表**”\>“**使用情况**”页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“ **报表** ”\>“ **使用情况** ”页面。
 
 ::: moniker-end
 
-2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“ **查看更多** ”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -130,19 +130,37 @@ ms.locfileid: "48637003"
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer 活动](yammer-activity-report.md)
+- [Yammer 活动](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer 设备使用情况](yammer-device-usage-report.md)
+- [适用于美国政府的 Yammer 的活动](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer 组活动报告](yammer-groups-activity-report.md)
+- [Yammer 设备使用情况](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [适用于美国政府的 Yammer 设备使用情况](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer 组活动报告](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [适用于美国政府的 Yammer 组活动报表](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -172,9 +190,9 @@ ms.locfileid: "48637003"
 
 ## <a name="how-to-view-licensing-information"></a>如何查看许可信息
 
-- 若要查看已分配和未分配的许可证数量，请在管理中心转到“**账单**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>页面。
+- 若要查看已分配和未分配的许可证数量，请在管理中心转到“ **账单** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>页面。
     
-- 若要查看已授权人员、未经授权人员或来宾，请在管理中心转到“**用户**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>页面。 
+- 若要查看已授权人员、未经授权人员或来宾，请在管理中心转到“ **用户** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>页面。 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>如何查看特定用户的使用情况信息
 
@@ -186,11 +204,11 @@ ms.locfileid: "48637003"
 
 如果在生成报表时，想要隐藏用户级的信息，可以在管理中心中快速进行此更改。
   
-1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和加载项</a>页面。
+1. 在管理中心，转到“ **设置** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和加载项</a>页面。
 
-2. 选择“**报表**”。 
+2. 选择“ **报表** ”。 
   
-3. 在“**报表**”窗格中，选择所需的选项，然后保存所做更改。
+3. 在“ **报表** ”窗格中，选择所需的选项，然后保存所做更改。
   
 你的用户列表将如下所示：
   
