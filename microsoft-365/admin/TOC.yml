@@ -210,6 +210,8 @@
       items:
         - name: 使用报告监视用户活动
           href: activity-reports/activity-reports.md
+        - name: 使用生产力分数监视用户生产力
+          href: productivity/productivity-score.md
         - name: 更改组织联系人信息
           href: manage/change-address-contact-and-more.md
         - name: 更新管理员联系人信息
