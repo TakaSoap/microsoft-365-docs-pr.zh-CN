@@ -17,24 +17,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和高级威胁防护 (ATP) 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护 (ATP) ，还会获得什么额外内容？
-ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430653"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806768"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Exchange Online Protection (EOP) ** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护 (ATP) ** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
+**Exchange Online Protection (EOP)** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护 (ATP)** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
-尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别： **标准** 和 **严格**。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
+尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别： **标准** 和 **严格** 。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
 
 若要自动将标准或严格设置应用于用户，请参阅 [EOP And Office 365 ATP 中的预设安全策略](preset-security-policies.md)。
 
-**注意**：需要在邮箱上启用垃圾邮件规则，才能使筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+> [!NOTE]
+> 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 本文介绍了默认设置，以及建议的标准和严格设置，以帮助保护您的用户。
 
@@ -53,20 +54,20 @@ ms.locfileid: "48430653"
 
 |安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
-|**垃圾邮件** 检测操作 <br/><br/> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**高可信度垃圾邮件** 检测操作 <br/><br/> _HighConfidenceSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**网络钓鱼电子邮件** 检测操作 <br/><br/> _PhishSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**高可信度网络钓鱼电子邮件** 检测操作 <br/><br/> _HighConfidencePhishAction_|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**批量电子邮件** 检测操作 <br/><br/> _BulkSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”****    发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**垃圾邮件** 检测操作 <br/><br/> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**高可信度垃圾邮件** 检测操作 <br/><br/> _HighConfidenceSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**网络钓鱼电子邮件** 检测操作 <br/><br/> _PhishSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**高可信度网络钓鱼电子邮件** 检测操作 <br/><br/> _HighConfidencePhishAction_|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**批量电子邮件** 检测操作 <br/><br/> _BulkSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
 |批量电子邮件阈值 <br/><br/> _BulkThreshold_|7 |6 |4 |有关详细信息，请参阅 [Office 365 中的批量投诉级别 (BCL) ](bulk-complaint-level-values.md)。|
 |隔离保留期 <br/><br/> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
 |**安全提示** <br/><br/> _InlineSafetyTipsEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |允许的发件人 <br/><br/> _AllowedSenders_|无|无|无||
-|允许的发件人域 <br/><br/> _AllowedSenderDomains_|无|无|无|将拥有的 (_接受域_) 的域添加到 "允许的发件人" 列表是一个非常糟糕的想法。 攻击者能够向您发送电子邮件，否则将被筛选掉。 <br/><br/> 在 "**反垃圾邮件设置**" 页上的安全性 & 合规性中心中使用[欺骗智能](learn-about-spoof-intelligence.md)，以查看在组织的电子邮件域或外部域中的欺骗发件人电子邮件地址中的所有人都是哄骗发件人的电子邮件地址。|
+|允许的发件人域 <br/><br/> _AllowedSenderDomains_|无|无|无|将域添加到允许的发件人列表是一个非常糟糕的想法。 攻击者能够向您发送电子邮件，否则将被筛选掉。 <br/><br/> 在 " **反垃圾邮件设置** " 页上的安全性 & 合规性中心中使用 [欺骗智能](learn-about-spoof-intelligence.md)，以查看在组织的电子邮件域或外部域中的欺骗发件人电子邮件地址中的所有人都是哄骗发件人的电子邮件地址。|
 |阻止的发件人 <br/><br/> _BlockedSenders_|无|无|无||
 |阻止的发件人域 <br/><br/> _BlockedSenderDomains_|无|无|无||
-|**启用最终用户垃圾邮件通知**   选中此复选框以启用此策略的最终用户垃圾邮件通知。 <br/><br/> _EnableEndUserSpamNotifications_|已禁用 <br/><br/> `$false`|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`||
-|**每 (天发送最终用户垃圾邮件通知) ** <br/><br/> _EndUserSpamNotificationFrequency_|3 天|3 天|3 天||
+|**启用最终用户垃圾邮件通知**    选中此复选框以启用此策略的最终用户垃圾邮件通知。 <br/><br/> _EnableEndUserSpamNotifications_|已禁用 <br/><br/> `$false`|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`||
+|**每 (天发送最终用户垃圾邮件通知)** <br/><br/> _EndUserSpamNotificationFrequency_|3 天|3 天|3 天||
 |**垃圾邮件 ZAP** <br/><br/> _SpamZapEnabled_|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`||
 |**网络钓鱼 ZAP** <br/><br/> _PhishZapEnabled_|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`|已启用 <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|打开|打开|打开|此设置仅在 PowerShell 中可用。|
@@ -74,27 +75,27 @@ ms.locfileid: "48430653"
 
 在反垃圾邮件策略中，有几个其他高级垃圾邮件筛选器 (ASF) 设置处于弃用的过程中。 有关这些功能的折旧时限的详细信息，请在本文之外进行交流。
 
-我们建议您为**标准**和**严格**级别**关闭这些**ASF 设置。 有关 ASF 设置的详细信息，请参阅 [Office 365 中的高级垃圾邮件筛选器 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
+我们建议您为 **标准** 和 **严格** 级别 **关闭这些** ASF 设置。 有关 ASF 设置的详细信息，请参阅 [Office 365 中的高级垃圾邮件筛选器 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
 
 ****
 
 |安全功能名称|评论|
 |---|---|
-|**指向远程网站** (_IncreaseScoreWithImageLinks_) 的图像链接||
-|URL (_IncreaseScoreWithNumericIps_ **中的数字 IP 地址**) ||
-|**UL 重定向到其他端口** (_IncreaseScoreWithRedirectToOtherPort_) ||
-|**.Biz 或. info 网站的 URL** (_IncreaseScoreWithBizOrInfoUrls_) ||
-| (_MarkAsSpamEmptyMessages_) 中的**空邮件**||
-|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript**) _MarkAsSpamJavaScriptInHtml_||
-|HTML (_MarkAsSpamFramesInHtml_ **中的 Frame 或 IFrame 标记**) ||
-|HTML (_MarkAsSpamObjectTagsInHtml_) **中的对象标记**||
-|在 HTML (_MarkAsSpamEmbedTagsInHtml_) **中嵌入标记**||
-|HTML (_MarkAsSpamFormTagsInHtml_) **中的表单标记**||
-|HTML (_MarkAsSpamWebBugsInHtml_) **中的 Web 错误**||
-|**将敏感单词列表应用** (_MarkAsSpamSensitiveWordList_) ||
-|**SPF 记录： hard fail** (_MarkAsSpamSpfRecordHardFail_) ||
-|**条件发件人 ID 筛选：硬失败** (_MarkAsSpamFromAddressAuthFail_) ||
-|**NDR 退信** (_MarkAsSpamNdrBackscatter_) ||
+|**指向远程网站** ( _IncreaseScoreWithImageLinks_ ) 的图像链接||
+|URL ( _IncreaseScoreWithNumericIps_ **中的数字 IP 地址** ) ||
+|**UL 重定向到其他端口** ( _IncreaseScoreWithRedirectToOtherPort_ ) ||
+|**.Biz 或. info 网站的 URL** ( _IncreaseScoreWithBizOrInfoUrls_ ) ||
+| ( _MarkAsSpamEmptyMessages_ ) 中的 **空邮件**||
+|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript** ) _MarkAsSpamJavaScriptInHtml_||
+|HTML ( _MarkAsSpamFramesInHtml_ **中的 Frame 或 IFrame 标记** ) ||
+|HTML ( _MarkAsSpamObjectTagsInHtml_ ) **中的对象标记**||
+|在 HTML ( _MarkAsSpamEmbedTagsInHtml_ ) **中嵌入标记**||
+|HTML ( _MarkAsSpamFormTagsInHtml_ ) **中的表单标记**||
+|HTML ( _MarkAsSpamWebBugsInHtml_ ) **中的 Web 错误**||
+|**将敏感单词列表应用** ( _MarkAsSpamSensitiveWordList_ ) ||
+|**SPF 记录： hard fail** ( _MarkAsSpamSpfRecordHardFail_ ) ||
+|**条件发件人 ID 筛选：硬失败** ( _MarkAsSpamFromAddressAuthFail_ ) ||
+|**NDR 退信** ( _MarkAsSpamNdrBackscatter_ ) ||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 出站垃圾邮件策略设置
@@ -124,8 +125,8 @@ ms.locfileid: "48430653"
 |**是否要在邮件被隔离时通知收件人？** <br/><br/> _操作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <br/><br/> _EnableFileFilter_|关 <br/><br/> `$false`|开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
 |**恶意软件零小时自动清除** <br/><br/> _ZapEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
-|**通知内部发件人** 未送达邮件 <br/><br/> _EnableInternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
-|**通知外部发件人** 未送达的邮件 <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
+|**通知内部发件人** 未送达邮件 <br/><br/> _EnableInternalSenderNotifications_|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`||
+|**通知外部发件人** 未送达的邮件 <br/><br/> _EnableExternalSenderNotifications_|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`|禁用 <br/><br/> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 默认的反网络钓鱼策略设置
@@ -231,7 +232,8 @@ Office 365 中的安全链接包含适用于活动安全链接策略中包含的
 
 在 PowerShell 中，可对这些设置使用 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
-**注意**：如前文所述，没有默认的安全链接策略。 "默认" 列中的值是您创建的新安全链接策略中的默认值。
+> [!NOTE]
+> 如前文所述，没有默认的安全链接策略。 "默认" 列中的值是您创建的新安全链接策略中的默认值。
 
 ****
 
@@ -271,7 +273,8 @@ Office 365 中的安全附件包括与安全附件策略无关系的全局设置
 
 在 PowerShell 中，可对这些设置使用 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
-**注意**：如前文所述，没有默认的安全附件策略。 "默认" 列中的值是您创建的新安全附件策略中的默认值。
+> [!NOTE]
+> 如前文所述，没有默认的安全附件策略。 "默认" 列中的值是您创建的新安全附件策略中的默认值。
 
 ****
 
@@ -284,10 +287,10 @@ Office 365 中的安全附件包括与安全附件策略无关系的全局设置
 
 ## <a name="related-articles"></a>相关文章
 
-- 您是否正在寻找 **Exchange 邮件流规则的最佳实践 (也称为传输规则**) ？ [有关在 Exchange Online 中配置邮件流规则的最佳实践，](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)请参阅。
+- 您是否正在寻找 **Exchange 邮件流规则的最佳实践 (也称为传输规则** ) ？ [有关在 Exchange Online 中配置邮件流规则的最佳实践，](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)请参阅。
 
 - 管理员和用户可以提交误报 (正常的电子邮件，并将其标记为错误) 和漏报 (错误的电子邮件) Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 - 使用这些链接可获取有关如何 **设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及 **配置** [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 不要忘记 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中的有用说明。
 
-- **Windows 安全基准** 可在 [此处](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) 查找 GPO/内部部署选项， [此处](https://docs.microsoft.com/intune/protect/security-baselines) 适用于基于 Intune 的安全性。 最后， [此处](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)提供了 Microsoft Defender 高级威胁防护 (ATP) 和 microsoft Intune 安全基准之间的比较。
+- 可以在以下位置找到 **适用于 Windows 的安全基准** ： [在哪里可以获取安全基准？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)对于 GPO/内部部署选项，并 [使用安全基准在 intune 中](https://docs.microsoft.com/intune/protect/security-baselines)为基于 Intune 的安全性配置 Windows 10 设备。 最后，在 Microsoft defender 的高级威胁防护 (ATP) 和 Microsoft Intune 安全基准之间进行比较，以 [比较 Microsoft DEFENDER ATP 和 Windows intune 安全基准](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)。

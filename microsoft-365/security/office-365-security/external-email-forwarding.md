@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 59e2c938c70dd8e3060fd85d084acbe8f79856ad
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774089"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806622"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自动外部电子邮件转发
 
@@ -31,7 +31,7 @@ Microsoft 365 中提供了以下类型的自动转发：
 
 - 用户可以配置 [收件箱规则](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) ，以便将邮件有意转发给外部发件人 (或作为受到威胁的帐户) 的结果。
 
-- 管理员可以配置 [邮箱转发](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (也称为 SMTP 转发) ，以自动将邮件转发给外部收件人。
+- 管理员可以配置 [邮箱转发](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (也称为 _SMTP 转发_ ) ，以自动将邮件转发给外部收件人。
 
 您可以使用出站垃圾邮件筛选器策略来控制自动转发到外部收件人。 有三个可用的设置：
 
@@ -45,9 +45,9 @@ Microsoft 365 中提供了以下类型的自动转发：
 
 > [!NOTE]
 > 
-> - 禁用自动转发也将禁用将邮件重定向到外部地址的收件箱规则。
+> - 禁用自动转发将禁用用户) 或邮箱转发 (admins) 将邮件重定向到外部地址 (的任何收件箱规则。
 > 
->   Office 365 不允许通过收件箱规则或邮箱配置自动进行外部转发，这将提供安全的默认策略。 但是，管理员可以为组织中的所有用户或部分用户修改这些设置。 创建 [出站垃圾邮件策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) 并修改自动转发部分，以控制用户自动将电子邮件转发给外部发件人。 稍后可将其应用于该策略应用于的内部发件人。 内部用户之间的转发邮件不受此类修改的影响。
+> - 内部用户之间的邮件自动转发不受出站垃圾邮件筛选器策略中的设置的影响。
 > 
 > - 您可以查看在 [自动转发的邮件报告](mfi-auto-forwarded-messages-report.md)中自动将邮件转发给外部收件人的用户的相关信息。
 

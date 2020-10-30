@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，管理员可以了解 Office 365 高级威胁防护 (ATP) 中的安全链接保护，以保护其组织免受使用恶意 Url 的网络钓鱼和其他攻击。
-ms.openlocfilehash: d4c939d45818ba14c4407eee063aca46e4ee5b03
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447091"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806722"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 中的安全链接
 
@@ -44,15 +44,15 @@ ms.locfileid: "48447091"
 
 安全链接保护在以下位置可用：
 
-- **电子邮件**：对电子邮件中的链接的安全链接保护由安全链接策略控制。 没有默认安全链接策略，因此， **若要获取电子邮件中安全链接的保护，您需要创建一个或多个安全链接策略**。 有关说明，请参阅 [在 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+- **电子邮件** ：对电子邮件中的链接的安全链接保护由安全链接策略控制。 没有默认安全链接策略，因此， **若要获取电子邮件中安全链接的保护，您需要创建一个或多个安全链接策略** 。 有关说明，请参阅 [在 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
 
   有关电子邮件的安全链接保护的详细信息，请参阅本文后面的 "电子邮件的 [安全链接设置](#safe-links-settings-for-email-messages) " 一节。
 
-- **Microsoft 团队** (当前位于点击预览) ：对团队对话、组聊天或频道中的链接的安全链接保护也受安全链接策略控制。 没有默认安全链接策略，因此， **若要在团队中获取安全链接的保护，您需要创建一个或多个安全链接策略**。
+- **Microsoft 团队** (当前位于点击预览) ：对团队对话、组聊天或频道中的链接的安全链接保护也受安全链接策略控制。 没有默认安全链接策略，因此， **若要在团队中获取安全链接的保护，您需要创建一个或多个安全链接策略** 。
 
   有关团队中的安全链接保护的详细信息，请参阅本主题后面的 " [Microsoft 团队的安全链接设置](#safe-links-settings-for-microsoft-teams) " 一节。
 
-- **Office 365 应用程序**： office 365 应用程序的安全链接保护在受支持的桌面、移动设备和 web 接入点中可用。 在不安全链接策略**之外**的全局设置中为 Office 365 应用程序**配置**安全链接保护。 有关说明，请参阅 [在 Office 365 ATP 中配置安全链接设置的全局设置](configure-global-settings-for-safe-links.md)。
+- **Office 365 应用程序** ： office 365 应用程序的安全链接保护在受支持的桌面、移动设备和 web 接入点中可用。 在不安全链接策略 **之外** 的全局设置中为 Office 365 应用程序 **配置** 安全链接保护。 有关说明，请参阅 [在 Office 365 ATP 中配置安全链接设置的全局设置](configure-global-settings-for-safe-links.md)。
 
   但是，对 Office 365 应用程序的安全链接保护仅 **适用** 于包含在活动安全链接策略中的用户。 如果用户不包含在活动的安全链接策略中，则用户不会在受支持的 Office 365 应用程序中获取安全链接保护。
 
@@ -60,13 +60,13 @@ ms.locfileid: "48447091"
 
 本文包括以下类型的安全链接设置的详细说明：
 
-- **安全链接策略中的设置**：这些设置仅适用于特定策略中包含的用户，并且这些设置在策略之间可能有所不同。 这些设置包括：
+- **安全链接策略中的设置** ：这些设置仅适用于特定策略中包含的用户，并且这些设置在策略之间可能有所不同。 这些设置包括：
 
   - [电子邮件的安全链接设置](#safe-links-settings-for-email-messages)
   - [Microsoft 团队的安全链接设置](#safe-links-settings-for-microsoft-teams)
   - ["安全链接策略" 中的 "不重写以下 Url" 列表](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **全局安全链接设置**：这些设置在全局范围内配置，而不是在安全链接策略中进行配置。 但是，这些设置仅适用于包含在活动安全链接策略中的用户。 这些设置包括：
+- **全局安全链接设置** ：这些设置在全局范围内配置，而不是在安全链接策略中进行配置。 但是，这些设置仅适用于包含在活动安全链接策略中的用户。 这些设置包括：
 
   - [Office 365 应用程序的安全链接设置](#safe-links-settings-for-office-365-apps)
   - [安全链接的 "阻止以下 Url" 列表](#block-the-following-urls-list-for-safe-links)
@@ -81,7 +81,7 @@ ms.locfileid: "48447091"
 |丽丽的 Microsoft 365 E5 组织没有配置安全链接策略。 Chris 收到来自外部发件人的电子邮件，其中包含最终单击的恶意网站的 URL。|丽丽不受安全链接的保护。 <br/><br/> 管理员必须至少为任何人创建一个安全链接策略，以在入站电子邮件中获取安全链接保护。 若要获取安全链接保护，必须在策略条件中包含 Chris。|
 |在 Pat 的组织中，没有管理员创建任何安全链接策略，但启用了针对 Office 365 应用的安全链接保护。 Pat 打开 Word 文档并单击文件中的 URL。|Pat 不受安全链接的保护。 <br/><br/> 尽管 Office 365 应用程序的安全链接保护是全局打开的，但 Pat 不包含在任何活动的安全链接策略中，因此无法应用保护。|
 |在工作先生的组织中，在 `https://tailspintoys.com` 安全链接的全局设置中的 " **阻止以下 url** " 列表中配置。 包含 "已加入" 的安全链接策略已存在。 先生接收包含 URL 的电子邮件 `https://tailspintoys.com/aboutus/trythispage` 。 先生单击 URL。|可能会自动阻止该 URL。这取决于列表中的 URL 条目和已使用的电子邮件客户端。 有关详细信息，请参阅本主题后面的 ["阻止以下 url" 安全链接的列表](#block-the-following-urls-list-for-safe-links) "一节。|
-|晓明和 Julia 都适用于 contoso.com。 很长时间之前，管理员配置了适用于晓明和 Julia 的安全链接策略。 晓明将向 Julia 发送一封电子邮件，而不知道该电子邮件包含恶意 URL。|**如果**应用于她的安全链接策略被配置为应用于内部收件人之间的邮件，则 Julia 受安全链接保护。 有关详细信息，请参阅本主题后面的 "电子邮件的 [安全链接设置](#safe-links-settings-for-email-messages) " 一节。|
+|晓明和 Julia 都适用于 contoso.com。 很长时间之前，管理员配置了适用于晓明和 Julia 的安全链接策略。 晓明将向 Julia 发送一封电子邮件，而不知道该电子邮件包含恶意 URL。|**如果** 应用于她的安全链接策略被配置为应用于内部收件人之间的邮件，则 Julia 受安全链接保护。 有关详细信息，请参阅本主题后面的 "电子邮件的 [安全链接设置](#safe-links-settings-for-email-messages) " 一节。|
 
 ## <a name="safe-links-settings-for-email-messages"></a>电子邮件的安全链接设置
 
@@ -91,41 +91,41 @@ ms.locfileid: "48447091"
 
 以下列表介绍了适用于电子邮件的安全链接策略中的设置：
 
-- **选择邮件中未知的潜在恶意 url 的操作**：启用或禁用电子邮件中的安全链接扫描。 建议的值为 **"开**"。 启用此设置将导致以下操作。
+- **选择邮件中未知的潜在恶意 url 的操作** ：启用或禁用电子邮件中的安全链接扫描。 建议的值为 **"开** "。 启用此设置将导致以下操作。
 
   - Outlook (C2R) 在 Windows 上启用安全链接扫描。
   - 重写 Url，并在用户单击邮件中的 Url 时通过安全链接保护来路由用户。
   - 单击时，将对照已知恶意 Url 的列表和 ["阻止以下 url" 列表](#block-the-following-urls-list-for-safe-links)检查 url。
   - 没有有效信誉的 Url 将在后台以异步方式触发。
 
-- **对指向文件的可疑链接和链接应用实时 URL 扫描**：启用对链接的实时扫描，包括指向可下载内容的电子邮件中的链接。 已启用建议的值。
+- **对指向文件的可疑链接和链接应用实时 URL 扫描** ：启用对链接的实时扫描，包括指向可下载内容的电子邮件中的链接。 已启用建议的值。
 
-  - **等待 URL 扫描完成后再传递邮件**：
+  - **等待 URL 扫描完成后再传递邮件** ：
 
     - 已启用：包含 Url 的邮件将一直保留到扫描完成为止。 仅在将 Url 确认为安全之后，才会传递邮件。 这是建议的值。
     - 已禁用：如果无法完成 URL 扫描，则发送邮件。
 
-- **将安全链接应用于在组织内发送的电子邮件**：启用或禁用安全链接扫描在同一 Exchange Online 组织中的内部发件人和内部收件人之间发送的邮件。 已启用建议的值。
+- **将安全链接应用于在组织内发送的电子邮件** ：启用或禁用安全链接扫描在同一 Exchange Online 组织中的内部发件人和内部收件人之间发送的邮件。 已启用建议的值。
 
-- **不跟踪用户单击**：启用或禁用存储安全链接单击电子邮件中单击的 url 的数据。 建议的值是将此设置保留为未选中状态 (跟踪用户单击) 。
+- **不跟踪用户单击** ：启用或禁用存储安全链接单击电子邮件中单击的 url 的数据。 建议的值是将此设置保留为未选中状态 (跟踪用户单击) 。
 
   URL 单击 "跟踪" 以查找内部发件人和内部收件人之间发送的电子邮件中的链接当前不受支持。
 
-- **不允许用户单击到原始 url**：允许或阻止用户通过单击 [警告页](#warning-pages-from-safe-links) 到原始 url。 建议值为已启用。
+- **不允许用户单击到原始 url** ：允许或阻止用户通过单击 [警告页](#warning-pages-from-safe-links) 到原始 url。 建议值为已启用。
 
-- **请勿重写以下 url**：保留 url。 保留一个不需要扫描的安全 Url 的自定义列表。 此列表对于每个安全链接策略都是唯一的。 有关 "不 **重写以下 url** " 列表的详细信息，请参阅本文后面的 ["不重写以下 Url" 安全链接策略中的列表](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) "一节。
+- **请勿重写以下 url** ：保留 url。 保留一个不需要扫描的安全 Url 的自定义列表。 此列表对于每个安全链接策略都是唯一的。 有关 "不 **重写以下 url** " 列表的详细信息，请参阅本文后面的 ["不重写以下 Url" 安全链接策略中的列表](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) "一节。
 
 有关安全链接策略的标准策略设置和严格策略设置的建议值的详细信息，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
-- **收件人筛选器**：需要指定用于确定策略适用于的收件人条件和例外。 您可以将这些属性用于条件和例外：
+- **收件人筛选器** ：需要指定用于确定策略适用于的收件人条件和例外。 您可以将这些属性用于条件和例外：
 
   - **收件人为**
   - **收件人域为**
   - **收件人为以下组的成员**
 
-  只能使用条件或例外一次，但条件或例外可以包含多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
+  只能使用条件或例外一次，但条件或例外可以包含多个值。 同一个条件或例外的多个值使用“或”逻辑（例如， _\<recipient1\>_ 或 _\<recipient2\>_ ）。 不同的条件或例外使用“和”逻辑（例如， _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
 
-- **优先级**：如果创建多个策略，则可以指定它们的应用顺序。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+- **优先级** ：如果创建多个策略，则可以指定它们的应用顺序。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
   有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
@@ -152,7 +152,7 @@ ms.locfileid: "48447091"
 > [!IMPORTANT]
 > 从2020年3月起，此功能处于预览阶段，仅适用于 Microsoft 团队技术采用计划的成员 (点击) 。 有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
 
-在安全链接策略中启用或禁用对 Microsoft 团队的安全链接保护。 具体来说，您可以使用 " **选择对 Microsoft 团队中的未知或可能有害的 url 执行操作** " 设置。 建议的值为 **"开**"。
+在安全链接策略中启用或禁用对 Microsoft 团队的安全链接保护。 具体来说，您可以使用 " **选择对 Microsoft 团队中的未知或可能有害的 url 执行操作** " 设置。 建议的值为 **"开** "。
 
 适用于电子邮件中的链接的安全链接策略中的以下设置也适用于团队中的链接：
 
@@ -166,13 +166,13 @@ ms.locfileid: "48447091"
 
 - 如果在团队对话、分组聊天或频道中单击了链接，下面的屏幕截图中所示的警告页将显示在默认 web 浏览器中。
 - 如果从固定的选项卡单击了链接，则警告页将出现在该选项卡中的 "团队" 界面中。由于安全原因，在 web 浏览器中打开链接的选项被禁用。
-- 根据配置策略中的 " **不允许用户单击到原始 url** " 设置的方式，将不允许用户在原始 url 中单击，否则将不允许 (**继续 (不建议 ** 在屏幕截图) 中) 。 建议您启用 " **不允许用户单击到原始 url** 设置"，以便用户无法单击原始 url。
+- 根据配置策略中的 " **不允许用户单击到原始 url** " 设置的方式，将不允许用户在原始 url 中单击，否则将不允许 ( **继续 (不建议** 在屏幕截图) 中) 。 建议您启用 " **不允许用户单击到原始 url** 设置"，以便用户无法单击原始 url。
 
 如果发送链接的用户未包含在启用团队保护的安全链接策略中，则用户可以在其计算机或设备上的原始 URL 中随意单击。
 
 ![报告恶意链接的工作组页面的安全链接。](../../media/tp-safe-links-for-teams-malicious.png)
 
-单击 "警告" 页上的 **"返回" 按钮将** 关闭该页面 (，否则可能会导致用户可以关闭) 的空白页。 但是，再次单击原始链接将导致重新扫描 URL 的安全链接，因此警告页将重新出现。
+单击 "警告" 页上的 "返回" 按钮 **将把用户** 返回到其原始的上下文或 URL 位置。 但是，再次单击原始链接将导致重新扫描 URL 的安全链接，因此警告页将重新出现。
 
 ### <a name="how-safe-links-works-in-teams"></a>安全链接在团队中的工作方式
 
@@ -204,11 +204,11 @@ ms.locfileid: "48447091"
 
 以下安全链接设置适用于 Office 365 应用：
 
-- **Office 365 应用程序**：启用或禁用在受支持的 Office 365 应用程序中进行安全链接扫描。 默认值和建议值为 **"开**"。
+- **Office 365 应用程序** ：启用或禁用在受支持的 Office 365 应用程序中进行安全链接扫描。 默认值和建议值为 **"开** "。
 
-- **在用户单击安全链接时不进行跟踪**：启用或禁用存储安全链接单击在桌面版本 Word、Excel、PowerPoint 和 Visio 中单击的 url 的数据。 建议的值为 **Off**，这表示跟踪用户单击。
+- **在用户单击安全链接时不进行跟踪** ：启用或禁用存储安全链接单击在桌面版本 Word、Excel、PowerPoint 和 Visio 中单击的 url 的数据。 建议的值为 **Off** ，这表示跟踪用户单击。
 
-- **不允许用户单击 "通过指向原始 url 的安全链接"**：允许或阻止用户在桌面版本 Word、Excel、PowerPoint 和 Visio 中的原始 url 中单击，以在 [网页](#warning-pages-from-safe-links) 中单击。 默认值和建议值为 **"开**"。
+- **不允许用户单击 "通过指向原始 url 的安全链接"** ：允许或阻止用户在桌面版本 Word、Excel、PowerPoint 和 Visio 中的原始 url 中单击，以在 [网页](#warning-pages-from-safe-links) 中单击。 默认值和建议值为 **"开** "。
 
 若要为 Office 365 应用程序配置安全链接设置，请参阅 [Configure Safe links protection For office 365 apps](configure-global-settings-for-safe-links.md#configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center)。
 
@@ -224,7 +224,7 @@ ms.locfileid: "48447091"
 
 3. 安全链接在打开目标网站之前立即检查 URL：
 
-   - 如果 URL 包含在跳过安全链接扫描的列表中 (**阻止以下 url** 列表) 将打开 " [阻止的 url 警告](#blocked-url-warning) " 页。
+   - 如果 URL 包含在跳过安全链接扫描的列表中 ( **阻止以下 url** 列表) 将打开 " [阻止的 url 警告](#blocked-url-warning) " 页。
 
    - 如果 URL 指向已确定为 "恶意" 的网站，则会出现 " [恶意网站警告](#malicious-website-warning) " 页 (或) 打开 "其他警告" 页面。
 
@@ -239,7 +239,7 @@ ms.locfileid: "48447091"
 
 ## <a name="block-the-following-urls-list-for-safe-links"></a>安全链接的 "阻止以下 Url" 列表
 
-**Block 以下 url**列表定义了以下位置中的安全链接扫描始终阻止的链接：
+**Block 以下 url** 列表定义了以下位置中的安全链接扫描始终阻止的链接：
 
 - 电子邮件。
 - Windows 和 Mac 中的 Office 365 应用中的文档。
@@ -249,7 +249,7 @@ ms.locfileid: "48447091"
 
 可以在安全链接的全局设置中配置 Url 的列表。 有关说明，请参阅 [Configure the "Block 以下 url" 列表](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)。
 
-**注意**：
+**注意** ：
 
 - 有关在任何位置阻止的真正通用的 Url 列表，请参阅 [在租户允许/阻止列表中管理 url](tenant-allow-block-list.md)。
 
@@ -289,7 +289,7 @@ ms.locfileid: "48447091"
 
 若要将条目添加到新的或现有安全链接策略的列表中，请参阅 [创建安全链接策略](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) 或 [修改安全链接策略](set-up-atp-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)。
 
-**注意**：
+**注意** ：
 
 - 以下客户端无法识别 "在安全链接策略中不 **重写以下 url"** 列表。 可以阻止策略中包含的用户基于在这些客户端中的安全链接扫描结果来访问 Url：
 

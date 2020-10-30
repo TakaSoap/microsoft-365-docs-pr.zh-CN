@@ -20,12 +20,12 @@ description: '了解在不同区域中为 Microsoft 365 for business 订阅收�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464092"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806596"
 ---
 # <a name="tax-information"></a>税务信息
 
@@ -99,21 +99,21 @@ ms.locfileid: "48464092"
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>欧洲、中东和非洲 (EMEA)
 
-当你在欧盟购买 Microsoft 365 服务时，此采购受 Value-Added 增值税 (VAT) 。
+当您在 EMEA 地区购买 Microsoft 365 服务时，此采购可能会受 Value-Added 增值税 (VAT) 。
   
-- 如果你处于欧盟成员状态，并且你不提供有效的本地 VAT ID，Microsoft 爱尔兰运营公司将根据你的帐户设置的计费国家/地区应用当前的本地 VAT 税率。
+- 如果你位于欧盟成员状态、亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国，并且你不提供有效的本地 VAT ID，Microsoft 爱尔兰运营公司将根据你的帐户设置的计费国家/地区应用当前的本地 VAT 税率。
 
-- 如果你在瑞士或列支敦士登境内，无论你是否提供 VAT ID，都会应用当前瑞士 VAT 税率。
+- 如果您位于列支敦士登、俄罗斯、塞尔维亚、南非或瑞士，则应用增值税，无论您是否提供 VAT ID。
 
-- 通常情况下，如果您位于欧盟和瑞士/列支敦士登之外的 EMEA 国家/地区，则 VAT 不会由 Microsoft 爱尔兰运营公司付费。
-
-- 你的 VAT ID 必须在 VAT 信息交换系统 (VIES) 中可用于验证，我们才能对其进行验证。 如果无法验证您的 VAT ID，请联系当地税务主管机构。
+- 对于欧盟客户，在我们可以验证您的 VAT ID 之前，必须在 VAT 信息 Exchange System (VIES) 中进行验证。 如果无法验证您的 VAT ID，请联系当地税务主管机构。
 
 如果满足以下条件，则可能会向其授予 VAT 级零等级：
   
 - **你处于爱尔兰之外的欧盟成员状态：** 您可以提供有效的本地 VAT ID。 这样一来，Microsoft 爱尔兰运营公司就可以对交易进行评级零评级。 但是，您可能有本地 VAT 会计义务。 如果你有任何顾虑，请咨询你的税务 advisers。 有关说明，请参阅 [添加你的 VAT ID](#add-your-vat-id)。
 
 - **你在爱尔兰，并具有相关的有效 VAT 豁免认证：** Microsoft 爱尔兰运营部门公司可能有权从 VAT 中免除交易。 如果不这样做，Microsoft 爱尔兰操作公司将应用当前的爱尔兰 VAT 税率，无论您是否提供 VAT ID。
+
+- **你正在采用亚美尼亚、白俄罗斯、挪威、土耳其或阿拉伯联合酋长国：** 您可以提供当地 VAT ID。 这是 Microsoft 爱尔兰运营部门的证明。若要对交易进行 VAT 零评级。 但是，您可能有当地的增值税会计义务，如果你有任何顾虑，请与你的税务 advisers 核实。 有关说明，请参阅 [添加你的 VAT ID](#add-your-vat-id)。
 
 ## <a name="asia-pacific-countries-apac"></a>亚太国家/地区 (APAC)
 
@@ -135,11 +135,11 @@ ms.locfileid: "48464092"
 
 ## <a name="add-your-vat-id"></a>添加你的 VAT ID
 
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 " **产品** " 选项卡上，选择要更新的订阅。
-3. 在 "订阅详细信息" 页上的 " **服务使用地址** " 部分，选择 " **编辑服务使用地址**"。
-4. 在 " **编辑服务使用地址** " 窗格上的 " **VAT 号码** " 框中，输入您的 vat ID，包括前缀，并且不带任何空格。
-5. 选择“**保存**”。
+1. 在管理中心中，转到“ **计费** ”\>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+2. 在“ **产品** ”选项卡上，选择要更新的订阅。
+3. 在 "订阅详细信息" 页上的 " **服务使用地址** " 部分，选择 " **编辑服务使用地址** "。
+4. 在 " **编辑服务使用地址** " 窗格的 " **VAT 号码** " 框中，输入您的 vat ID，包括前缀，并且不带任何空格。
+5. 选择“ **保存** ”。
 
 ## <a name="how-taxes-are-calculated"></a>如何计算税金
 
@@ -147,7 +147,7 @@ ms.locfileid: "48464092"
 
 例如：
 
->* (单位价格 X 税率) X 数量 = 总销售税*
+>*(单位价格 X 税率) X 数量 = 总销售税*
 
 -或者-
 
