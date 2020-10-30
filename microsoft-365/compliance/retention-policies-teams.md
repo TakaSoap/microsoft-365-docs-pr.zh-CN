@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 32656dc91350e5082171eb4fadd91d3a6287b9b7
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 85f272c5c663a95c749f7971b6e23c178dab2b94
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754058"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795091"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -38,7 +38,7 @@ ms.locfileid: "48754058"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息。
+可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息，包括嵌入的图像。
 
 不包括专用频道中的 Teams 消息，也不包括来自其他人的表情符号回复。
 

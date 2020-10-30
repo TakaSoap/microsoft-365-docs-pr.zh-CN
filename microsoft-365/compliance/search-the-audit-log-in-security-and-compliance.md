@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e427cb2eaa282ebac46b47c6dd97718039c12cb8
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753341"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787578"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -672,6 +672,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已从邮箱清除邮件|HardDelete|已从“可恢复邮件”文件夹中清除邮件（已从邮箱中永久删除）。|
 |已删除代理邮箱权限|Remove-MailboxPermission|管理员已从用户邮箱删除分配给代理的 FullAccess 权限。 删除 FullAccess 权限后，代理无法打开他人邮箱，也无法访问该邮箱中的任何内容。|
 |已从文件夹中删除权限|RemoveFolderPermissions|已删除文件夹权限。 文件夹权限用于控制组织中的哪些用户可以访问邮箱中的文件夹以及位于这些文件夹中的邮件。|
+|已发送邮件|发送|邮件已发送、答复或转发。 仅对具有 Office 365 或 Microsoft 365 E5 许可证的用户记录此活动。 有关详细信息，请参阅[高级审核](advanced-audit.md#access-to-crucial-events-for-investigations)中的“访问关键事件进行调查”部分。|
 |已使用“发送方式”权限发送邮件|SendAs|已使用“发送方式”权限发送邮件。 这表示另一个用户发送了邮件，而该邮件就好像来自于邮箱所有者。|
 |已使用“代表发送”权限发送邮件|SendOnBehalf|已使用“代表发送”权限发送邮件。 这表示另一个用户代表邮箱所有者发送了邮件。 邮件将向收件人说明发送此邮件时使用的身份及实际发送者。|
 |已从 Outlook 客户端更新收件箱规则|UpdateInboxRules|有权访问邮箱的邮箱所有者或其他用户在 Outlook 客户端中修改了收件箱规则。|

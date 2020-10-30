@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Yammer 的保留策略。
-ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754700"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794997"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解用于 Yammer 的保留
 
@@ -61,7 +61,7 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 对于图中的两条路径：
 
-1. **如果用户在保留期内编辑或删除了 Yammer 消息** ，则该原始消息将被立即复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后立即将其永久删除。
+1. **如果用户在保留期内编辑或删除了 Yammer 消息** ，则该原始消息将被复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后立即将其永久删除。
 
 2. **如果未删除 Yammer 消息** ，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 如果消息位于 SubstrateHolds 文件夹中时，它将立即被永久删除。 
 
@@ -72,7 +72,7 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
-1. **如果编辑或删除了 Yammer 消息** ：立即在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
+1. **如果编辑或删除了 Yammer 消息** ：在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
 
 2. **如果 Yammer 消息在保持期内未遭修改或删除** 以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
 
@@ -80,7 +80,7 @@ Yammer 消息不受针对用户或组邮箱配置的保留策略影响。 即使
 
 1. **如果 Yammer 消息在保持期内未遭删除** ：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会立即从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果用户在保留期内删除 Yammer 消息** ，该项目将立即移至 SubstrateHolds 文件夹，并立即将其永久删除。
+2. **如果用户在保留期内删除 Yammer 消息** ，该项目将移至 SubstrateHolds 文件夹，并立即将其永久删除。
 
 
 ## <a name="messages-and-external-users"></a>消息和外部用户
