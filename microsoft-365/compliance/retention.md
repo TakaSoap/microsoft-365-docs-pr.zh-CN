@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755581"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804755"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -240,6 +240,8 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 - 通过自动应用策略自动应用的保留标签是隐式分配的
 
 显式分配的保留标签优先于隐式分配的保留标签。 有关详细信息，请参阅本页上的[保留原则或优先性是什么？](retention.md#the-principles-of-retention-or-what-takes-precedence)部分。
+
+对于 SharePoint，当您为 SharePoint 库、文件夹或文档集中的所有内容配置默认标签时，也可以隐式分配保留标签。 在这种情况下，自动应用标签优先于默认标签，但若要完全了解使用默认标签时的所有结果，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)部分中的信息。 
 
 #### <a name="monitoring-retention-labels"></a>监视保留标签
 

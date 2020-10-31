@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理员可以了解如何使用隔离标记来控制用户能够对其隔离邮件执行的操作。
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819147"
+ms.locfileid: "48819736"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
@@ -477,7 +477,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 有关安全发件人列表的详细信息，请参阅 [阻止受信任发件人被阻止](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) 并 [使用 Exchange Online PowerShell 在邮箱上配置安全列表集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
-### <a name="block-sender-permission"></a>阻止发件人权限
+#### <a name="block-sender-permission"></a>阻止发件人权限
 
  ( _PermissionToBlockSender_ ) 的 **阻止发件人** 权限控制对按钮的访问，从而使用户可以方便地将隔离邮件发件人添加到其阻止的发件人列表。
 
@@ -491,7 +491,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 有关阻止发件人列表的详细信息，请参阅 [阻止来自某人的邮件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，并 [使用 Exchange Online PowerShell 在邮箱上配置安全列表集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
-### <a name="delete-permission"></a>删除权限
+#### <a name="delete-permission"></a>删除权限
 
 **Delete** 权限 ( _PermissionToDelete_ ) 控制用户能否删除其邮件 (邮件，而用户是从隔离) 的收件人。
 
@@ -501,7 +501,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **最终用户垃圾邮件通知** ：不起作用。
 
-### <a name="preview-permission"></a>预览权限
+#### <a name="preview-permission"></a>预览权限
 
  ( _PermissionToPreview_ ) 的 **预览** 权限控制用户在隔离中预览其邮件的能力。
 
