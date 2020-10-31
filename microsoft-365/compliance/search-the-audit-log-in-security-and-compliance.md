@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: how-to
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c2ffc926114b8ffc2ebf2005b98e549ac03cf26
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787578"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816755"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -459,7 +459,7 @@ ms.locfileid: "48787578"
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>有关 FileAccessed 和 FilePreviewed 事件的常见问题
 
-**任何非用户活动都可以触发 FilePreviewed 审核记录吗？其中包含 "OneDriveMpc-Transform_Thumbnail" 之类的用户代理。**
+**任何非用户活动都可以触发包含 "OneDriveMpc-Transform_Thumbnail" 等之类用户代理的 FilePreviewed 审核记录吗？**
 
 我们不了解非用户操作生成类似事件的情况。 比如打开用户配置文件卡片（通过在 Outlook 网页版中的邮件中单击其名称或电子邮件地址）生成类似事件的用户操作。
 
@@ -893,7 +893,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |:-----|:-----|:-----|
 |已创建批注|CreateComment|表单所有者向测验添加批注或分数。|
 |已创建表单|CreateForm|表单所有者创建一个新表单。|
-|已编辑表单|EditForm|表单所有者编辑表单，如创建、删除或编辑问题。 <br><br>属性 EditOperation:string 表示编辑操作名称。 可能的操作有：CreateQuestion、CreateQuestionChoice、DeleteQuestion、DeleteQuestionChoice、DeleteFormImage、DeleteQuestionImage、UpdateQuestion、UpdateQuestionChoice、UploadFormImage/Bing/Onedrive、UploadQuestionImage 和 ChangeTheme。  <br><br>大多数操作名称都一目了然。 <br><br>FormImage 包含表单中用户可上传图像的任何位置，例如在查询中或作为背景主题。|
+|已编辑表单|EditForm|表单所有者编辑表单，如创建、删除或编辑问题。 *EditOperation:string* 属性表示编辑操作名称。 可能的操作如下：<br/>- CreateQuestion<br/>- CreateQuestionChoice <br/>- DeleteQuestion <br/>- DeleteQuestionChoice <br/>- DeleteFormImage <br/>- DeleteQuestionImage <br/>- UpdateQuestion <br/>- UpdateQuestionChoice <br/>- UploadFormImage/Bing/Onedrive <br/>- UploadQuestionImage <br/>- ChangeTheme <br><br>FormImage 包含表单中用户可上传图像的任何位置，例如在查询中或作为背景主题。|
 |已移动表单|MoveForm|表单所有者移动表单。 <br><br>属性 DestinationUserId:string 表示移动表单的人员的用户 ID。 属性 NewFormId:string 是新复制的表单的新 ID。|
 |已删除表单|DeleteForm|表单所有者删除表单。 这包括 SoftDelete（使用删除选项并将表单移动到回收站）和 HardDelete（清空回收站）。|
 |已查看表单（设计时）|ViewForm|表单所有者打开现有表单进行编辑。|
@@ -912,7 +912,8 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 |已查看单个响应|ViewResponse|表单所有者查看特定响应。 <br><br>属性 ResponseId:string 和属性 ResponderId:string 表示正在查看的结果。 <br><br>对于匿名响应者，ResponderId 属性将为 NULL。|
 |已创建摘要链接|GetSummaryLink|表单所有者创建摘要结果链接以共享结果。|
 |已删除摘要链接|DeleteSummaryLink|表单所有者删除摘要结果链接。|
-|已更新表单钓鱼状态|UpdatePhishingStatus|无论是否更改了最终安全状态（例如，表单现为“已关闭”或“已打开”状态），只要内部安全状态的详细信息值发生更改，就会记录此事件。 这意味着可能会在最终安全状态未更改的情况下看到重复的事件。|
+|已更新表单钓鱼状态|UpdatePhishingStatus|无论是否更改了最终安全状态（例如，表单现为“已关闭”或“已打开”状态），只要内部安全状态的详细信息值发生更改，就会记录此事件。 这意味着可能会在最终安全状态未更改的情况下看到重复的事件。 此事件的可能状态值如下：<br/>- Take Down <br/>- Take Down by Admin <br/>- Admin Unblocked <br/>- Auto Blocked <br/>- Auto Unblocked <br/>- Customer Reported <br/>- Reset Customer Reported|
+|已更新用户钓鱼状态|UpdateUserPhishingStatus|每当用户安全状态值更改时，都会记录此事件。 用户创建由 Microsoft Online 安全团队删除的网络钓鱼表单时，审核记录中的用户状态值为“ **确认为钓鱼者** ”。 如果管理员取消阻止该用户，则该用户状态的值将设置为“ **重置为普通用户** ”。|
 |已发送 Forms Pro 邀请|ProInvitation|用户通过单击激活 Pro 试用版。|
 |已更新表单设置|UpdateFormSetting|表单所有者更新表单设置。 <br><br>属性 FormSettingName:string 表示设置的名称和新值。|
 |已更新用户设置|UpdateUserSetting|表单所有者更新用户设置。 <br><br>属性 UserSettingName:string 表示设置的名称和新值|
@@ -922,7 +923,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>合著者和匿名响应者执行的 Forms 活动
 
-Forms 支持在设计表单时和分析响应时进行协作。 表单协作者被称为 *合著者* 。 合著者可执行表单所有者可执行的所有操作，但删除或移动表单除外。 Forms 还允许你创建可以匿名响应的表单。 这意味着响应者无需登录到组织即可响应表单。 
+Forms 支持在设计表单时和分析响应时进行协作。 表单协作者被称为 *合著者* 。 合著者可执行表单所有者可执行的所有操作，但删除或移动表单除外。 Forms 还允许你创建可以匿名响应的表单。 这意味着响应者无需登录到组织即可响应表单。
 
 下表介绍了合著者和匿名响应者执行的活动的审核记录中的审核活动和信息。
 
