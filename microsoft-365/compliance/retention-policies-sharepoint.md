@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 31ffce3f02e273e771ca1753474bec48b66148bb
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754136"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804537"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -51,19 +51,19 @@ ms.locfileid: "48754136"
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>用于 SharePoint 和 OneDrive 的保留的工作原理
 
-为了支持保留，SharePoint 和 OneDrive 创建了保留库（如果还没有的话）。 你可在网站集的最顶级网站中的“ **网站内容** ”上查看此库。 大多数用户都无法查看保留库，因为此库仅对网站集管理员可见。
+为了支持保留，SharePoint 和 OneDrive 会在没有保留库的情况下创建一个保留库。 你可在网站集的最顶级网站中的“ **网站内容** ”上查看此库。 大多数用户都无法查看保留库，因为此库仅对网站集管理员可见。
   
 如果有人尝试更改或删除遵循保留设置的文档，则会检查自应用保留设置以来是否更改了内容。 如果这是自应用保留设置以来的首次更改，则会将内容复制到保留库中，用户可以在其中更改或删除原始内容。 可以将网站集中的任何内容复制到保留库中，而不管保留设置如何。
   
 计时器作业会定期清理保留库。 此作业将保留库中的所有内容与保留设置对此内容使用的所有查询进行比较。 早于其配置的保留期的内容将从保存保留库和原始位置（如果仍在该位置）中删除。 此计时器作业每 7 天运行一次，这意味着删除内容可能需要长达 7 天的时间。
   
-此行为适用于在应用保留设置时就存在的内容。 另外，对于保留策略，在策略中添加网站集后在网站集中创建或添加的所有新内容都会在删除后保留。 然而，新内容不会在第一次编辑时就复制到保留库，只有在删除时才会这样做。 若要保留文件的所有版本，必须启用[版本控制](#how-retention-works-with-document-versions-in-a-site-collection)。
+此行为适用于在应用保留设置时就存在的内容。 另外，对于保留策略，在策略中添加网站集后在网站集中创建或添加的所有新内容都会在删除后保留。 然而，新内容不会在第一次编辑时就复制到保留库，只有在删除时才会这样做。 若要保留文件的所有版本，必须启用[版本控制](#how-retention-works-with-document-versions)。
   
 如果用户尝试删除受保留策略约束的库、列表、文件夹或网站，将收到错误提示。 如果用户首次移动或删除文件夹中受该策略约束的任何文件，可删除一个文件夹。 另外，保留库是在此阶段创建的，而不是在创建保留策略或应用保留标签时创建的。 也就是说，若要测试保留，必须先编辑或删除网站中遵循保留策略或已应用保留标签的文档，然后转到保留库来查看保留的副本。
   
 在向 OneDrive 帐户或 SharePoint 网站中的内容分配保留设置后，内容路径取决于保留设置是“保留后删除”、“仅保留”还是“仅删除”。
 
-如果保留设置是“保留后删除”：
+如果保留设置为“保留后删除”：
 
 ![SharePoint 和 OneDrive 中的内容生命周期关系图](../media/Retention_Diagram_of_retention_flow_in_sites.png)
   
@@ -90,24 +90,26 @@ ms.locfileid: "48754136"
 
 ## <a name="how-retention-works-for-onenote-content"></a>用于 OneNote 内容的保留的工作原理
 
-将保留策略应用于包含 OneNote 内容的位置时，不同的 OneNote 分区实际上是不同的文件。 这意味着将根据指定的保留设置分别保留和删除每个分区。
+当你将保留策略应用于包含 OneNote 内容的位置时，在幕后，不同的 OneNote 部分是单独的文件。 这意味着将根据指定的保留设置分别保留和删除每个分区。
 
-## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>用于网站集中文档版本的保留的工作原理
+## <a name="how-retention-works-with-document-versions"></a>如何保留文件版本
 
-版本控制是 SharePoint 和 OneDrive 中所有文档库的一项功能。 默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。 有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)和[版本控制在列表和库中的工作方式](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)。
+版本控制是 SharePoint 和 OneDrive 中所有文档列表和库的一项功能。 默认情况下，版本控制至少保留 500 个主要版本，但可以提高此限制。 有关详细信息，请参阅[为列表或库启用和配置版本控制](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)和[版本控制在列表和库中的工作方式](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)。
   
-“仅保留”设置保留 SharePoint 网站集或 OneDrive 帐户中文档的所有版本。 当遵循保留或“仅保留”保留设置的文档被首次编辑时，原始文档的一个版本就会复制到保留库中。 当遵循保留或“仅保留”保留设置的文档被删除时，如果版本控制已启用，所有版本都会复制到保留库中。 在保留库中，文档的每个版本都以单独项的形式存在，并且有自己的保留期：
-  
+当带有版本的文档受制于保留设置以保留该内容时，复制到保留库的版本将作为一个单独的项目存在。 如果保留设置在保留期结束时设置为删除：
+
 - 如果保留期是以内容创建时间为依据，那么文档的每个版本的到期日期都与原始文档相同。 原始文档及其各版本全都在同一时间到期。
 
 - 如果保留期是以内容的上次修改时间为依据，那么文档的每个版本都有自己的到期日期，具体视修改原始文档来创建相应版本的时间而定。 原始文档及其各版本的到期互不影响。
 
 > [!NOTE]
-> 电子数据展示工具无法用于搜索 SharePoint 和 OneDrive 文档的保留版本。
+> 电子数据展示工具无法搜寻这些 SharePoint 和 OneDrive 文件的保留版本。 
 
-对于受保留策略（或法定保留）约束的项目，将忽略文档库的版本控制限制，直到达到文档的保留期限。 在这种情况下，不会自动清除旧版本，并且会阻止用户删除版本。
+当保留操作为删除文档时，根据当前版本，将同时删除不在保留库中的所有版本。
 
-如果未对网站应用保留策略，保留标签的情况就不是这样。 相反，它将遵循版本控制限制，以便自动删除旧版本以容纳新版本，但仍阻止用户删除版本。
+对于受制于保留策略（或保留电子数据展示）的项目，将忽略文档库的版本限制，直到达到文档的保留期限（或释放电子数据展示保留）。 在这种情况下，不会自动清除旧版本，并且会阻止用户删除版本。
+
+当内容不受制于保留策略（或保留电子数据展示）时，保留标签的情况就不是如此了。 相反，它将遵循版本控制限制，以便自动删除旧版本以容纳新版本，但仍阻止用户删除版本。
 
 ## <a name="when-a-user-leaves-the-organization"></a>如果某用户离开组织
 
