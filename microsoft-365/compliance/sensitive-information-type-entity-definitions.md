@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
+ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656049"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "48819112"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
@@ -3162,9 +3162,9 @@ Registro de Identidade (RIC)  (新格式) ：
 
 七到八个数字加分隔符：
 - 一到两位数 
-- 一个句点 
+- 可选期间 
 - 三个数字 
-- 一个句点 
+- 可选期间 
 - 三个数字 
 - 短划线 
 - 一个数字或字母 (不区分大小写) 这是校验位
@@ -3201,18 +3201,40 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- National Identification Number 
-- Identity card 
-- ID 
-- Id 
-- Rol Único Nacional 
-- 以 
-- Rol Único Tributario 
-- 墨守成规 
-- Cédula de Identidad 
-- Número De Identificación Nacional 
-- Tarjeta de identificación 
-- Identificación 
+- cédula de identidad
+- identificación
+- national identification
+- national identification number
+- national id
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
+- 以
+- 墨守成规
+- tarjeta de identificación
+- Rol Unico Nacional
+- Rol Unico Tributario
+- 以#
+- 墨守成规#
+- nationaluniqueroleID#
+- nacional identidad
+- número identificación
+- identidad número
+- numero identificacion
+- identidad numero
+- 智利 identity no。
+- 智利标识号码
+- 智利标识#
+- 唯一的税务注册表
+- 唯一 Tributary 角色
+- 唯一的税角色
+- 唯一的 Tributary 编号
+- 唯一的国家/地区号码
+- 独特的国家/地区角色
+- 国家/地区独有角色
+- 智利标识编号。
+- 智利身份证号码
+- 智利标识#
 
    
 ## <a name="china-resident-identity-card-prc-number"></a>中国居民身份卡片 (中国) 号码
@@ -12044,7 +12066,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-三个字母 (不区分大小写)  (可选的空格) 四个数字
+- 三个字母 (不区分大小写) 除 "I" 和 "O"
+- 空格 (可选)  
+- 四位数
 
 ### <a name="checksum"></a>校验和
 
@@ -12057,27 +12081,38 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 找到 Keyword_nz_terms 中的一个关键字。
 - 校验和通过。
 
+在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
+- 函数 Func_new_zealand_ministry_of_health_number 找到与该模式匹配的内容。
+- 校验和通过。
+
 ```xml
-<!-- New Zealand Health Number -->
-<Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- New Zealand Health Number -->
+    <Entity id="2b71c1c8-d14e-4430-82dc-fd1ed6bf05c7" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
-        <Any minMatches="1">
           <Match idRef="Keyword_nz_terms" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_new_zealand_ministry_of_health_number" />
+       </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>关键字
 
 #### <a name="keyword_nz_terms"></a>Keyword_nz_terms
 
-- NHI 
-- New Zealand 
-- 健康 
-- 治疗 
-
+- NHI
+- New Zealand
+- 健康
+- 治疗
+- 国家/地区运行状况索引号
+- nhi 编号
+- nhi。
+- NHI#
+- 国家/地区运行状况指数
+- 国家/地区运行状况索引 Id
+- 国家运行状况索引#
 
 ## <a name="new-zealand-social-wlefare-number"></a>新西兰社会 wlefare 号码
 此敏感信息类型仅可用于以下内容：

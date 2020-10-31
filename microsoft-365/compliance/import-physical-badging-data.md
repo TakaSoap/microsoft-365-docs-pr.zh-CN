@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理员可以将数据连接器设置为将数据从其组织的物理徽章系统导入到 Microsoft 365。 这使您可以在内部风险管理策略中使用此数据，以帮助您检测特定用户对您的物理建筑物的访问，这些建筑物可能表明您的组织可能存在内部威胁。
-ms.openlocfilehash: 6d52879031c8801191b1a419f38a1167c1bb0688
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204317"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816645"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>设置连接器以导入物理徽章数据 (预览) 
 
@@ -53,9 +53,9 @@ ms.locfileid: "48204317"
 
 - Azure AD 应用程序 ID (也称为 " *应用程序 id* " 或 " *客户端 id* ") 
 
-- Azure AD 应用程序机密 (也称为 *客户端密码*) 
+- Azure AD 应用程序机密 (也称为 *客户端密码* ) 
 
-- 租户 Id (也称为 *目录 Id*) 
+- 租户 Id (也称为 *目录 Id* ) 
 
 有关在 Azure AD 中创建应用程序的分步说明，请参阅 [使用 Microsoft identity Platform 注册应用程序](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
@@ -65,7 +65,7 @@ ms.locfileid: "48204317"
 
 JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件所需的架构属性的说明：
 
-|**属性**|**说明**|**数据类型**|
+| 属性 | 说明 | 数据类型 |
 |:-----------|:--------------|:------------|
 |UserID|一个员工可以在系统中具有多个数字标识。 输入需要有源系统已解析的 Azure AD ID。 |UPN 或电子邮件地址|
 |AssetId|物理资产或物理访问点的参考 ID。| 字母数字字符串|
@@ -76,7 +76,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 下面的示例展示了符合所需架构的 JSON 文件：
 
-```text
+```json
 [
     {
         "UserId":"sarad@contoso.com"
@@ -137,11 +137,11 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击左侧导航中的 " **数据连接器** "。
 
-2. 在 "**物理徽章**" 下的 "**数据连接器**" 页上，单击 "**查看**"。
+2. 在 " **物理徽章** " 下的 " **数据连接器** " 页上，单击 " **查看** "。
 
-3. 在 " **物理徽章** " 页上，单击 " **添加连接器**"。
+3. 在 " **物理徽章** " 页上，单击 " **添加连接器** "。
 
-4. 在 " **身份验证凭据** " 页上，执行以下操作，然后单击 " **下一步**"：
+4. 在 " **身份验证凭据** " 页上，执行以下操作，然后单击 " **下一步** "：
   
    1. 键入或粘贴您在步骤1中创建的 Azure 应用程序的 Azure AD 应用程序 ID。
   
@@ -155,7 +155,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    "状态" 页还包含指向脚本的链接。 请参阅此脚本，了解如何将 JSON 文件发布到 API 终结点。
 
-7. 单击“完成”****。
+7. 单击“ **完成** ”。
 
    新的连接器将显示在 " **连接器** " 选项卡上的列表中。
 
@@ -190,7 +190,7 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
    下表介绍了要与此脚本一起使用的参数及其必需的值。 您在前面步骤中获取的信息用于这些参数的值。
 
-   | **Parameter**|**说明**|
+   | 参数 | 说明 |
    |:-------------|:--------------|
    |tenantId | 这是您在步骤1中获取的 Microsoft 365 组织的 Id。 您还可以在 Azure AD 管理中心的 **概述** 边栏上获取您的组织的 tenantId。 这用于标识你的组织。 |
    |appId | 这是您在第1步中的 Azure AD 中创建的应用程序的 Azure AD 应用程序 Id。 当脚本尝试访问 Microsoft 365 组织时，Azure AD 使用此方法进行身份验证。                    |
@@ -218,17 +218,17 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) 并单击左侧导航中的 " **数据连接器** "。
 
-2. 单击 " **连接器** " 选项卡，然后选择物理徽章连接器以显示弹出页面，其中包含有关连接器的属性和信息。
+2. 单击 " **连接器** " 选项卡，然后选择物理徽章连接器以显示弹出页面。 此页面包含有关连接器的属性和信息。
 
    ![物理徽章连接器的状态弹出页面](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. 在 " **上次导入**" 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含有关每次脚本运行的信息，并将数据从 CSV 文件上载到 Microsoft 云。
+3. 在 " **上次导入** " 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含有关每次脚本运行的信息，并将数据从 CSV 文件上载到 Microsoft 云。
 
    ![物理徽章连接器日志文件显示上载的 JSON 文件中的编号行](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **RecordsSaved**字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含四行，则 **RecordsSaved** 字段的值为4，如果脚本成功上传了 CSV 文件中的所有行。
+   **RecordsSaved** 字段指示上传的 CSV 文件中的行数。 例如，如果 CSV 文件包含四行，则 **RecordsSaved** 字段的值为4，如果脚本成功上传了 CSV 文件中的所有行。
 
-如果您没有在步骤4中运行该脚本，则在 " **上次导入**" 下将显示下载该脚本的链接。 您可以下载该脚本，然后按照步骤4中的步骤运行它。
+如果您没有在步骤4中运行该脚本，则在 " **上次导入** " 下将显示下载该脚本的链接。 您可以下载该脚本，然后按照步骤4中的步骤运行它。
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (可选) 步骤6：安排脚本自动运行
 
@@ -236,39 +236,39 @@ JSON 文件必须符合连接器所需的架构定义。 以下是 JSON 文件�
 
 您可以在 Windows 中将 "任务计划程序" 应用程序用户每天自动运行该脚本。
 
-1. 在本地计算机上，单击 Windows " **开始** " 按钮，然后键入 " **任务计划程序**"。
+1. 在本地计算机上，单击 Windows " **开始** " 按钮，然后键入 " **任务计划程序** "。
 
 2. 单击 " **任务计划** 程序" 应用将其打开。
 
-3. 在 " **操作** " 部分，单击 " **创建任务**"。
+3. 在 " **操作** " 部分，单击 " **创建任务** "。
 
-4. 在 " **常规** " 选项卡上，为计划的任务键入一个描述性名称;例如， **物理徽章连接器脚本**。 您还可以添加可选的说明。
+4. 在 " **常规** " 选项卡上，为计划的任务键入一个描述性名称;例如， **物理徽章连接器脚本** 。 您还可以添加可选的说明。
 
-5. 在 " **安全选项**" 下，执行下列操作：
+5. 在 " **安全选项** " 下，执行下列操作：
 
    1. 确定是仅在登录到计算机时运行脚本，还是在登录时运行脚本。
 
    2. 确保选中 " **以最高特权运行** " 复选框。
 
-6. 选择 " **触发器** " 选项卡，单击 " **新建**"，然后执行以下操作：
+6. 选择 " **触发器** " 选项卡，单击 " **新建** "，然后执行以下操作：
 
-   1. 在 " **设置**" 下，选择 " **每日** " 选项，然后选择第一次运行脚本的日期和时间。 脚本每天都在指定的时间。
+   1. 在 " **设置** " 下，选择 " **每日** " 选项，然后选择第一次运行脚本的日期和时间。 脚本每天都在指定的时间。
 
-   2. 在 " **高级设置**" 下，确保选中 " **启用** " 复选框。
+   2. 在 " **高级设置** " 下，确保选中 " **启用** " 复选框。
 
-   3. 单击“确定”****。
+   3. 单击“确定”  。
 
-7. 选择 " **操作** " 选项卡，单击 " **新建**"，然后执行以下操作：
+7. 选择 " **操作** " 选项卡，单击 " **新建** "，然后执行以下操作：
 
    ![为物理徽章连接器脚本创建新的计划任务的操作设置](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. 在 " **操作** " 下拉列表中，确保选择 " **启动程序** "。
 
-   2. 在 " **程序/脚本** " 框中，单击 " **浏览**"，然后转到以下位置并将其选中，以便在框中显示路径： C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
+   2. 在 " **程序/脚本** " 框中，单击 " **浏览** "，然后转到以下位置并将其选中，以便在框中显示路径： C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
 
-   3. 在 " **添加参数" (可选) ** 框中，粘贴您在步骤4中运行的相同脚本命令。 例如，.\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9"-appId "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
+   3. 在 " **添加参数" (可选)** 框中，粘贴您在步骤4中运行的相同脚本命令。 例如，.\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9"-appId "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458"-jsonFilePath "C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv"
 
-   4. 在 " **开始 (可选) ** " 框中，粘贴您在步骤4中运行的脚本的文件夹位置。 例如，C:\Users\contosoadmin\Desktop\Scripts。
+   4. 在 " **开始 (可选)** " 框中，粘贴您在步骤4中运行的脚本的文件夹位置。 例如，C:\Users\contosoadmin\Desktop\Scripts。
 
    5. 单击 **"确定"** 保存新操作的设置。
 

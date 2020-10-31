@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774015"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816847"
 ---
 # <a name="insider-risk-management-cases"></a>内幕风险管理案例
 
@@ -241,7 +241,7 @@ ms.locfileid: "48774015"
 共享内幕风险管理案例使风险调查人员和分析师能够与组织中的其他合规性利益干系人轻松协作。 您可以通过事例管理区域快速与外部利益干系人共享指向内幕风险管理案例的链接。 若要从链接访问内幕风险管理案例，风险承担者必须包含在任何内幕风险管理角色组中。
 
 >[!NOTE]
->ServiceNow preview 将于 30 2020 年11月结束，并且不会继续。 感谢你的反馈和支持，同时确定后续步骤。
+>感谢你在 ServiceNow 连接器预览过程中提供反馈和支持。 我们已决定结束 ServiceNow 连接器的预览，并在2020年11月30日的内幕风险管理中中止支持。 我们正在积极评估替代方法，以向客户提供内幕风险管理中的 ServiceNow 集成。
 
 可用的共享选项如下所示：
 

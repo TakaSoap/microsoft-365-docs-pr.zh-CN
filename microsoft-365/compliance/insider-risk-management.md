@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774045"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816857"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -111,7 +111,7 @@ ms.locfileid: "48774045"
 
 ![内幕风险管理调查](../media/insider-risk-investigate.png)
 
-### <a name="action"></a>操作
+### <a name="action"></a>Action
 
 在调查事例之后，审阅者可以快速处理案例或与组织中的其他风险承担者进行协作。 如果用户无意或无意中违反了策略条件，则可以向用户发送一个简单的提醒通知，以供您为组织自定义的通知模板。 这些通知可用作简单的提醒，也可指导用户进行复习培训或指导，以帮助防止将来出现风险的行为。 有关详细信息，请参阅 [内幕风险管理通知模板](insider-risk-management-notices.md)。
 
@@ -122,7 +122,7 @@ ms.locfileid: "48774045"
 - **Office 365 管理 api 集成 (预览)** ：内幕风险管理支持通过 Office 365 管理 api 将警报信息导出到安全信息和事件管理 (SIEM) 服务。 在最适合组织风险流程的平台中访问警报信息，可以在操作风险活动方面提供更大的灵活性。 若要了解有关使用 Office 365 管理 Api 导出通知信息的详细信息，请参阅 [导出警报](insider-risk-management-settings.md#export-alerts-preview)。
 
 >[!NOTE]
->ServiceNow preview 将于 30 2020 年11月结束，并且不会继续。 感谢你的反馈和支持，同时确定后续步骤。
+>感谢你在 ServiceNow 连接器预览过程中提供反馈和支持。 我们已决定结束 ServiceNow 连接器的预览，并在2020年11月30日的内幕风险管理中中止支持。 我们正在积极评估替代方法，以向客户提供内幕风险管理中的 ServiceNow 集成。
 
 ## <a name="scenarios"></a>方案
 
