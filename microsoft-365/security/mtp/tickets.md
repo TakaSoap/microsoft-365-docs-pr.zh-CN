@@ -41,7 +41,7 @@ Microsoft 已与 ServiceNow 合作，使 IT 管理员可以更轻松地管理两
 - [**在安全中心中管理 ServiceNow 票证**](tickets-security-center.md)
 - **在合规中心中管理 ServiceNow 票证** (即将推出) 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 有权访问 Microsoft 365 安全中心或合规性中心和包含以下内容的 ServiceNow 实例：  
 
