@@ -1,5 +1,5 @@
 ---
-title: 查看高级威胁防护报告
+title: 查看适用于 Office 365 的 Defender 报告
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,300 +17,300 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在安全合规中心中查找和使用适用于 Office 365 高级威胁防护的报告 &amp; 。
+description: 在安全合规中心中查找和使用 Microsoft Defender for Office 365 的报告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e2bb4b0248294589b3e6e7a1a095e4f63d47d8e2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b24249bcbba60bc5340d973567369f534a0178fb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446295"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842912"
 ---
-# <a name="view-reports-for-office-365-advanced-threat-protection"></a><span data-ttu-id="8fa70-103">查看 Office 365 高级威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-103">View reports for Office 365 Advanced Threat Protection</span></span>
+# <a name="view-reports-for-microsoft-defender-for-office-365"></a><span data-ttu-id="69c56-103">查看 Microsoft Defender for Office 365 的报告</span><span class="sxs-lookup"><span data-stu-id="69c56-103">View reports for Microsoft Defender for Office 365</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="8fa70-104">Office 365 高级威胁防护 (ATP) 组织 (例如，Microsoft 365 E5 订阅或 ATP Plan 1 或 ATP Plan 2 加载项) 包含各种与安全相关的报告。</span><span class="sxs-lookup"><span data-stu-id="8fa70-104">Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsoft 365 E5 subscriptions or ATP Plan 1 or ATP Plan 2 add-ons) contain a variety of security-related reports.</span></span> <span data-ttu-id="8fa70-105">如果您具有 [必要的权限](#what-permissions-are-needed-to-view-the-atp-reports)，则可以转到 " **报告**" \> **仪表板**，在安全 & 合规中心中查看这些报告。</span><span class="sxs-lookup"><span data-stu-id="8fa70-105">If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-atp-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**.</span></span> <span data-ttu-id="8fa70-106">若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-106">To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.</span></span>
+<span data-ttu-id="69c56-104">Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Microsoft Defender for office 365 Plan 1 或 Microsoft defender for Office 365 Plan 2 加载项) 包含各种与安全相关的报告。</span><span class="sxs-lookup"><span data-stu-id="69c56-104">Microsoft Defender for Office 365 organizations (for example, Microsoft 365 E5 subscriptions or Microsoft Defender for Office 365 Plan 1 or Microsoft Defender for Office 365 Plan 2 add-ons) contain a variety of security-related reports.</span></span> <span data-ttu-id="69c56-105">如果您具有 [必要的权限](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)，则可以转到 " **报告** " \> **仪表板** ，在安全 & 合规中心中查看这些报告。</span><span class="sxs-lookup"><span data-stu-id="69c56-105">If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**.</span></span> <span data-ttu-id="69c56-106">若要直接转到 "报表" 仪表板，请打开 <https://protection.office.com/insightdashboard> 。</span><span class="sxs-lookup"><span data-stu-id="69c56-106">To go directly to the Reports dashboard, open <https://protection.office.com/insightdashboard>.</span></span>
 
 ![安全 & 合规中心中的 "报告" 仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="advanced-threat-protection-file-types-report"></a><span data-ttu-id="8fa70-108">高级威胁防护文件类型报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-108">Advanced Threat Protection file types report</span></span>
+## <a name="defender-for-office-365-file-types-report"></a><span data-ttu-id="69c56-108">适用于 Office 365 的 Defender 文件类型报告</span><span class="sxs-lookup"><span data-stu-id="69c56-108">Defender for Office 365 file types report</span></span>
 
-<span data-ttu-id="8fa70-109">**高级威胁防护文件类型报告**报告显示了通过[安全附件](atp-safe-attachments.md)检测为恶意的文件类型。</span><span class="sxs-lookup"><span data-stu-id="8fa70-109">The **Advanced Threat Protection file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).</span></span>
+<span data-ttu-id="69c56-109">" **适用于 Office 的 Defender 365 文件类型报告** " 报告显示了通过 [安全附件](atp-safe-attachments.md)检测为恶意的文件类型。</span><span class="sxs-lookup"><span data-stu-id="69c56-109">The **Defender for Office 365 file types report** report shows you the type of files detected as malicious by [Safe Attachments](atp-safe-attachments.md).</span></span>
 
- <span data-ttu-id="8fa70-110">报告的聚合视图允许在筛选过程中90天，而详细信息视图仅允许10天的筛选。</span><span class="sxs-lookup"><span data-stu-id="8fa70-110">The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.</span></span>
+ <span data-ttu-id="69c56-110">报告的聚合视图允许在筛选过程中90天，而详细信息视图仅允许10天的筛选。</span><span class="sxs-lookup"><span data-stu-id="69c56-110">The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.</span></span>
 
-<span data-ttu-id="8fa70-111">若要查看报告，请打开 " [安全 & 合规中心](https://protection.office.com)"，转到 " **报告**" \> **仪表板** ，然后选择 " **Office ATP 文件类型**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-111">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP file types**.</span></span> <span data-ttu-id="8fa70-112">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPFileReport> 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-112">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.</span></span>
+<span data-ttu-id="69c56-111">若要查看报告，请打开 " [安全 & 合规中心](https://protection.office.com)"，转到 " **报告** " \> **仪表板** ，然后选择 " **适用于 Office 365 的 Defender" 文件类型** 。</span><span class="sxs-lookup"><span data-stu-id="69c56-111">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 file types**.</span></span> <span data-ttu-id="69c56-112">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPFileReport> 。</span><span class="sxs-lookup"><span data-stu-id="69c56-112">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.</span></span>
 
-!["报表" 仪表板中的 Office ATP 文件类型小组件](../../media/atp-file-types-report-widget.png)
-
-> [!NOTE]
-> <span data-ttu-id="8fa70-114">[高级威胁防护邮件处置报告](#advanced-threat-protection-message-disposition-report)中也提供了此报告中的信息。</span><span class="sxs-lookup"><span data-stu-id="8fa70-114">The information in this report is also available in the [Advanced Threat Protection message disposition report](#advanced-threat-protection-message-disposition-report).</span></span>
-
-### <a name="report-view-for-the-advanced-threat-protection-file-types-report"></a><span data-ttu-id="8fa70-115">高级威胁防护文件类型报告的报告视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-115">Report view for the Advanced Threat Protection file types report</span></span>
-
-<span data-ttu-id="8fa70-116">可以使用以下视图：</span><span class="sxs-lookup"><span data-stu-id="8fa70-116">The following views are available:</span></span>
-
-- <span data-ttu-id="8fa70-117">**数据查看依据：文件**：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="8fa70-117">**View data by: File**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="8fa70-118">**恶意 Excel 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-118">**Malicious Excel attachments**</span></span>
-  - <span data-ttu-id="8fa70-119">**恶意 Flash 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-119">**Malicious Flash attachments**</span></span>
-  - <span data-ttu-id="8fa70-120">**恶意 PDF 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-120">**Malicious PDF attachments**</span></span>
-  - <span data-ttu-id="8fa70-121">**恶意 PowerPoint 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-121">**Malicious PowerPoint attachments**</span></span>
-  - <span data-ttu-id="8fa70-122">**恶意 Url**</span><span class="sxs-lookup"><span data-stu-id="8fa70-122">**Malicious URLs**</span></span>
-  - <span data-ttu-id="8fa70-123">**恶意 Word 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-123">**Malicious Word attachments**</span></span>
-  - <span data-ttu-id="8fa70-124">**恶意可执行附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-124">**Malicious executable attachments**</span></span>
-  - <span data-ttu-id="8fa70-125">**其他**</span><span class="sxs-lookup"><span data-stu-id="8fa70-125">**Others**</span></span>
-
-  <span data-ttu-id="8fa70-126">将鼠标悬停在特定日期 (数据点) 上时，可以查看 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。</span><span class="sxs-lookup"><span data-stu-id="8fa70-126">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
-
-  ![ATP 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
-
-  <span data-ttu-id="8fa70-128">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-128">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="8fa70-129">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-129">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-130">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-130">The same file type values that are visible in the chart.</span></span>
-
-- <span data-ttu-id="8fa70-131">**数据查看依据：消息**：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="8fa70-131">**View data by: Message**: The chart contains the following information:</span></span>
-
-  - <span data-ttu-id="8fa70-132">**阻止访问**</span><span class="sxs-lookup"><span data-stu-id="8fa70-132">**Block access**</span></span>
-  - <span data-ttu-id="8fa70-133">**邮件已替换**</span><span class="sxs-lookup"><span data-stu-id="8fa70-133">**Messages replaced**</span></span>
-  - <span data-ttu-id="8fa70-134">**监视的邮件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-134">**Messages monitored**</span></span>
-  - <span data-ttu-id="8fa70-135">**替换为动态电子邮件传递**：有关详细信息，请参阅 [在安全附件策略中动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。</span><span class="sxs-lookup"><span data-stu-id="8fa70-135">**Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
-
-  ![ATP 文件类型报告中的邮件视图](../../media/atp-file-types-report-message-view.png)
-
-  <span data-ttu-id="8fa70-137">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-137">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="8fa70-138">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-138">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-139">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-139">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-### <a name="details-table-view-for-the-advanced-threat-protection-file-types-report"></a><span data-ttu-id="8fa70-140">高级威胁防护文件类型报告的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-140">Details table view for the Advanced Threat Protection file types report</span></span>
-
-<span data-ttu-id="8fa70-141">如果单击 " **查看详细信息表**"，则报告将提供最近10天内组织内发生的所有点击的近实时视图。</span><span class="sxs-lookup"><span data-stu-id="8fa70-141">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="8fa70-142">显示的信息取决于您所查看的图表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-142">The information that's shown depends on the chart you were looking at:</span></span>
-
-- <span data-ttu-id="8fa70-143">**数据查看依据：文件**：</span><span class="sxs-lookup"><span data-stu-id="8fa70-143">**View data by: File**:</span></span>
-
-  - <span data-ttu-id="8fa70-144">**Date**</span><span class="sxs-lookup"><span data-stu-id="8fa70-144">**Date**</span></span>
-  - <span data-ttu-id="8fa70-145">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-145">**Recipient address**</span></span>
-  - <span data-ttu-id="8fa70-146">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-146">**Sender address**</span></span>
-  - <span data-ttu-id="8fa70-147">**邮件 id**：在邮件头的 **邮件 id** 标头字段中可用，并且应是唯一的。</span><span class="sxs-lookup"><span data-stu-id="8fa70-147">**Message ID**: Available in the **Message-ID** header field in the message header and should be unique.</span></span> <span data-ttu-id="8fa70-148"> (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-148">An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).</span></span>
-  - <span data-ttu-id="8fa70-149">**File**</span><span class="sxs-lookup"><span data-stu-id="8fa70-149">**File**</span></span>
-
-  <span data-ttu-id="8fa70-150">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-150">If you click **Filters**, you can modify the report with the following filters:</span></span>
-
-  - <span data-ttu-id="8fa70-151">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-151">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-152">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-152">The same file type values that are visible in the chart.</span></span>
-
-- <span data-ttu-id="8fa70-153">**数据查看依据：消息**：</span><span class="sxs-lookup"><span data-stu-id="8fa70-153">**View data by: Message**:</span></span>
-
-  - <span data-ttu-id="8fa70-154">**Date**</span><span class="sxs-lookup"><span data-stu-id="8fa70-154">**Date**</span></span>
-  - <span data-ttu-id="8fa70-155">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-155">**Recipient address**</span></span>
-  - <span data-ttu-id="8fa70-156">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-156">**Sender address**</span></span>
-  - <span data-ttu-id="8fa70-157">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="8fa70-157">**Message ID**</span></span>
-  - <span data-ttu-id="8fa70-158">**File**</span><span class="sxs-lookup"><span data-stu-id="8fa70-158">**File**</span></span>
-  - <span data-ttu-id="8fa70-159">**Subject**</span><span class="sxs-lookup"><span data-stu-id="8fa70-159">**Subject**</span></span>
-
-  <span data-ttu-id="8fa70-160">如果单击 " **筛选器**"，则可以使用以下筛选器修改结果：</span><span class="sxs-lookup"><span data-stu-id="8fa70-160">If you click **Filters**, you can modify the results with the following filters:</span></span>
-
-  - <span data-ttu-id="8fa70-161">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-161">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-162">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-162">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
-
-<span data-ttu-id="8fa70-163">若要返回到 "报告" 视图，请单击 " **查看报告**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-163">To get back to the reports view, click **View report**.</span></span>
-
-## <a name="advanced-threat-protection-message-disposition-report"></a><span data-ttu-id="8fa70-164">高级威胁防护邮件处置报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-164">Advanced Threat Protection message disposition report</span></span>
-
-<span data-ttu-id="8fa70-165">**ATP 邮件处置**报告将向您显示检测为包含恶意内容的电子邮件所采取的操作。</span><span class="sxs-lookup"><span data-stu-id="8fa70-165">The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.</span></span>
-
-<span data-ttu-id="8fa70-166">若要查看报告，请打开 " [安全 & 合规中心](https://protection.office.com)"，转到 " **报告**" \> **仪表板** ，然后选择 " **Office ATP 邮件处置**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-166">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP message disposition**.</span></span> <span data-ttu-id="8fa70-167">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPMessageReport> 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-167">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.</span></span>
-
-!["报告" 仪表板中的 Office 365 ATP 邮件处置小部件](../../media/atp-message-disposition-report-widget.png)
+!["报告" 仪表板中的 "Office 365 的 Defender" 文件类型小组件](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> <span data-ttu-id="8fa70-169">[高级威胁防护文件类型报告](#advanced-threat-protection-file-types-report)中也提供了此报告中的信息。</span><span class="sxs-lookup"><span data-stu-id="8fa70-169">The information in this report is also available in the [Advanced Threat Protection file types report](#advanced-threat-protection-file-types-report).</span></span>
+> <span data-ttu-id="69c56-114">此报告中的信息也适用于 Office 365 中的 " [Defender For Office 邮件处置" 报告](#defender-for-office-365-message-disposition-report)。</span><span class="sxs-lookup"><span data-stu-id="69c56-114">The information in this report is also available in the [Defender for Office 365 message disposition report](#defender-for-office-365-message-disposition-report).</span></span>
 
-### <a name="report-view-for-the-advanced-threat-protection-message-disposition-report"></a><span data-ttu-id="8fa70-170">高级威胁防护邮件处置报告的报告视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-170">Report view for the Advanced Threat Protection message disposition report</span></span>
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a><span data-ttu-id="69c56-115">适用于 Office 365 的 "Defender for Office" 文件类型的报告视图</span><span class="sxs-lookup"><span data-stu-id="69c56-115">Report view for the Defender for Office 365 file types report</span></span>
 
-<span data-ttu-id="8fa70-171">可以使用以下视图：</span><span class="sxs-lookup"><span data-stu-id="8fa70-171">The following views are available:</span></span>
+<span data-ttu-id="69c56-116">可以使用以下视图：</span><span class="sxs-lookup"><span data-stu-id="69c56-116">The following views are available:</span></span>
 
-- <span data-ttu-id="8fa70-172">**数据查看依据：消息**：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="8fa70-172">**View data by: Message**: The chart contains the following information:</span></span>
+- <span data-ttu-id="69c56-117">**数据查看依据：文件** ：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="69c56-117">**View data by: File** : The chart contains the following information:</span></span>
 
-  - <span data-ttu-id="8fa70-173">**阻止访问**</span><span class="sxs-lookup"><span data-stu-id="8fa70-173">**Block access**</span></span>
-  - <span data-ttu-id="8fa70-174">**邮件已替换**</span><span class="sxs-lookup"><span data-stu-id="8fa70-174">**Messages replaced**</span></span>
-  - <span data-ttu-id="8fa70-175">**监视的邮件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-175">**Messages monitored**</span></span>
-  - <span data-ttu-id="8fa70-176">**替换为动态电子邮件传递**：有关详细信息，请参阅 [在安全附件策略中动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。</span><span class="sxs-lookup"><span data-stu-id="8fa70-176">**Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
+  - <span data-ttu-id="69c56-118">**恶意 Excel 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-118">**Malicious Excel attachments**</span></span>
+  - <span data-ttu-id="69c56-119">**恶意 Flash 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-119">**Malicious Flash attachments**</span></span>
+  - <span data-ttu-id="69c56-120">**恶意 PDF 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-120">**Malicious PDF attachments**</span></span>
+  - <span data-ttu-id="69c56-121">**恶意 PowerPoint 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-121">**Malicious PowerPoint attachments**</span></span>
+  - <span data-ttu-id="69c56-122">**恶意 Url**</span><span class="sxs-lookup"><span data-stu-id="69c56-122">**Malicious URLs**</span></span>
+  - <span data-ttu-id="69c56-123">**恶意 Word 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-123">**Malicious Word attachments**</span></span>
+  - <span data-ttu-id="69c56-124">**恶意可执行附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-124">**Malicious executable attachments**</span></span>
+  - <span data-ttu-id="69c56-125">**其他**</span><span class="sxs-lookup"><span data-stu-id="69c56-125">**Others**</span></span>
 
-  ![ATP 文件类型报告中的邮件视图](../../media/atp-file-types-report-message-view.png)
+  <span data-ttu-id="69c56-126">将鼠标悬停在特定日期 (数据点) 上时，可以查看 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。</span><span class="sxs-lookup"><span data-stu-id="69c56-126">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
 
-  <span data-ttu-id="8fa70-178">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-178">If you click **Filters**, you can modify the report with the following filters:</span></span>
+  ![Defender for Office 365 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
 
-  - <span data-ttu-id="8fa70-179">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-179">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-180">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-180">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
+  <span data-ttu-id="69c56-128">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-128">If you click **Filters** , you can modify the report with the following filters:</span></span>
 
-- <span data-ttu-id="8fa70-181">**数据查看依据：文件**：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="8fa70-181">**View data by: File**: The chart contains the following information:</span></span>
+  - <span data-ttu-id="69c56-129">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-129">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-130">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="69c56-130">The same file type values that are visible in the chart.</span></span>
 
-  - <span data-ttu-id="8fa70-182">**恶意 Excel 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-182">**Malicious Excel attachments**</span></span>
-  - <span data-ttu-id="8fa70-183">**恶意 Flash 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-183">**Malicious Flash attachments**</span></span>
-  - <span data-ttu-id="8fa70-184">**恶意 PDF 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-184">**Malicious PDF attachments**</span></span>
-  - <span data-ttu-id="8fa70-185">**恶意 PowerPoint 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-185">**Malicious PowerPoint attachments**</span></span>
-  - <span data-ttu-id="8fa70-186">**恶意 Url**</span><span class="sxs-lookup"><span data-stu-id="8fa70-186">**Malicious URLs**</span></span>
-  - <span data-ttu-id="8fa70-187">**恶意 Word 附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-187">**Malicious Word attachments**</span></span>
-  - <span data-ttu-id="8fa70-188">**恶意可执行附件**</span><span class="sxs-lookup"><span data-stu-id="8fa70-188">**Malicious executable attachments**</span></span>
-  - <span data-ttu-id="8fa70-189">**其他**</span><span class="sxs-lookup"><span data-stu-id="8fa70-189">**Others**</span></span>
+- <span data-ttu-id="69c56-131">**数据查看依据：消息** ：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="69c56-131">**View data by: Message** : The chart contains the following information:</span></span>
 
-  <span data-ttu-id="8fa70-190">将鼠标悬停在特定日期 (数据点) 上时，可以查看 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。</span><span class="sxs-lookup"><span data-stu-id="8fa70-190">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
+  - <span data-ttu-id="69c56-132">**阻止访问**</span><span class="sxs-lookup"><span data-stu-id="69c56-132">**Block access**</span></span>
+  - <span data-ttu-id="69c56-133">**邮件已替换**</span><span class="sxs-lookup"><span data-stu-id="69c56-133">**Messages replaced**</span></span>
+  - <span data-ttu-id="69c56-134">**监视的邮件**</span><span class="sxs-lookup"><span data-stu-id="69c56-134">**Messages monitored**</span></span>
+  - <span data-ttu-id="69c56-135">**替换为动态电子邮件传递** ：有关详细信息，请参阅 [在安全附件策略中动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。</span><span class="sxs-lookup"><span data-stu-id="69c56-135">**Replaced by Dynamic Email Delivery** : For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
 
-  ![ATP 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
+  ![Defender for Office 365 文件类型报告中的邮件视图](../../media/atp-file-types-report-message-view.png)
 
-  <span data-ttu-id="8fa70-192">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-192">If you click **Filters**, you can modify the report with the following filters:</span></span>
+  <span data-ttu-id="69c56-137">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-137">If you click **Filters** , you can modify the report with the following filters:</span></span>
 
-  - <span data-ttu-id="8fa70-193">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-193">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-194">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-194">The same file type values that are visible in the chart.</span></span>
+  - <span data-ttu-id="69c56-138">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-138">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-139">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="69c56-139">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
 
-### <a name="details-table-view-for-the-advanced-threat-protection-message-disposition-report"></a><span data-ttu-id="8fa70-195">高级威胁防护邮件处置报告的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-195">Details table view for the Advanced Threat Protection message disposition report</span></span>
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a><span data-ttu-id="69c56-140">适用于 Office 365 的 Defender 文件类型报告的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="69c56-140">Details table view for the Defender for Office 365 file types report</span></span>
 
-<span data-ttu-id="8fa70-196">如果单击 " **查看详细信息表**"，则报告将提供最近10天内组织内发生的所有点击的近实时视图。</span><span class="sxs-lookup"><span data-stu-id="8fa70-196">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="8fa70-197">显示的信息取决于您所查看的图表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-197">The information that's shown depends on the chart you were looking at:</span></span>
+<span data-ttu-id="69c56-141">如果单击 " **查看详细信息表** "，则报告将提供最近10天内组织内发生的所有点击的近实时视图。</span><span class="sxs-lookup"><span data-stu-id="69c56-141">If you click **View details table** , the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="69c56-142">显示的信息取决于您所查看的图表：</span><span class="sxs-lookup"><span data-stu-id="69c56-142">The information that's shown depends on the chart you were looking at:</span></span>
 
-- <span data-ttu-id="8fa70-198">**数据查看依据：消息**：</span><span class="sxs-lookup"><span data-stu-id="8fa70-198">**View data by: Message**:</span></span>
+- <span data-ttu-id="69c56-143">**数据查看依据：文件** ：</span><span class="sxs-lookup"><span data-stu-id="69c56-143">**View data by: File** :</span></span>
 
-  - <span data-ttu-id="8fa70-199">**Date**</span><span class="sxs-lookup"><span data-stu-id="8fa70-199">**Date**</span></span>
-  - <span data-ttu-id="8fa70-200">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-200">**Recipient address**</span></span>
-  - <span data-ttu-id="8fa70-201">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-201">**Sender address**</span></span>
-  - <span data-ttu-id="8fa70-202">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="8fa70-202">**Message ID**</span></span>
-  - <span data-ttu-id="8fa70-203">**File**</span><span class="sxs-lookup"><span data-stu-id="8fa70-203">**File**</span></span>
-  - <span data-ttu-id="8fa70-204">**Subject**</span><span class="sxs-lookup"><span data-stu-id="8fa70-204">**Subject**</span></span>
+  - <span data-ttu-id="69c56-144">**Date**</span><span class="sxs-lookup"><span data-stu-id="69c56-144">**Date**</span></span>
+  - <span data-ttu-id="69c56-145">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-145">**Recipient address**</span></span>
+  - <span data-ttu-id="69c56-146">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-146">**Sender address**</span></span>
+  - <span data-ttu-id="69c56-147">**邮件 id** ：在邮件头的 **邮件 id** 标头字段中可用，并且应是唯一的。</span><span class="sxs-lookup"><span data-stu-id="69c56-147">**Message ID** : Available in the **Message-ID** header field in the message header and should be unique.</span></span> <span data-ttu-id="69c56-148"> (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。</span><span class="sxs-lookup"><span data-stu-id="69c56-148">An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).</span></span>
+  - <span data-ttu-id="69c56-149">**File**</span><span class="sxs-lookup"><span data-stu-id="69c56-149">**File**</span></span>
 
-  <span data-ttu-id="8fa70-205">如果单击 " **筛选器**"，则可以使用以下筛选器修改结果：</span><span class="sxs-lookup"><span data-stu-id="8fa70-205">If you click **Filters**, you can modify the results with the following filters:</span></span>
+  <span data-ttu-id="69c56-150">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-150">If you click **Filters** , you can modify the report with the following filters:</span></span>
 
-  - <span data-ttu-id="8fa70-206">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-206">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-207">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-207">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
+  - <span data-ttu-id="69c56-151">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-151">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-152">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="69c56-152">The same file type values that are visible in the chart.</span></span>
 
-- <span data-ttu-id="8fa70-208">**数据查看依据：文件**：</span><span class="sxs-lookup"><span data-stu-id="8fa70-208">**View data by: File**:</span></span>
+- <span data-ttu-id="69c56-153">**数据查看依据：消息** ：</span><span class="sxs-lookup"><span data-stu-id="69c56-153">**View data by: Message** :</span></span>
 
-  - <span data-ttu-id="8fa70-209">**Date**</span><span class="sxs-lookup"><span data-stu-id="8fa70-209">**Date**</span></span>
-  - <span data-ttu-id="8fa70-210">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-210">**Recipient address**</span></span>
-  - <span data-ttu-id="8fa70-211">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="8fa70-211">**Sender address**</span></span>
-  - <span data-ttu-id="8fa70-212">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="8fa70-212">**Message ID**</span></span>
-  - <span data-ttu-id="8fa70-213">**File**</span><span class="sxs-lookup"><span data-stu-id="8fa70-213">**File**</span></span>
+  - <span data-ttu-id="69c56-154">**Date**</span><span class="sxs-lookup"><span data-stu-id="69c56-154">**Date**</span></span>
+  - <span data-ttu-id="69c56-155">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-155">**Recipient address**</span></span>
+  - <span data-ttu-id="69c56-156">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-156">**Sender address**</span></span>
+  - <span data-ttu-id="69c56-157">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="69c56-157">**Message ID**</span></span>
+  - <span data-ttu-id="69c56-158">**File**</span><span class="sxs-lookup"><span data-stu-id="69c56-158">**File**</span></span>
+  - <span data-ttu-id="69c56-159">**主题**</span><span class="sxs-lookup"><span data-stu-id="69c56-159">**Subject**</span></span>
 
-  <span data-ttu-id="8fa70-214">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-214">If you click **Filters**, you can modify the report with the following filters:</span></span>
+  <span data-ttu-id="69c56-160">如果单击 " **筛选器** "，则可以使用以下筛选器修改结果：</span><span class="sxs-lookup"><span data-stu-id="69c56-160">If you click **Filters** , you can modify the results with the following filters:</span></span>
 
-  - <span data-ttu-id="8fa70-215">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-215">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-216">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-216">The same file type values that are visible in the chart.</span></span>
+  - <span data-ttu-id="69c56-161">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-161">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-162">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="69c56-162">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
 
-<span data-ttu-id="8fa70-217">若要返回到 "报告" 视图，请单击 " **查看报告**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-217">To get back to the reports view, click **View report**.</span></span>
+<span data-ttu-id="69c56-163">若要返回到 "报告" 视图，请单击 " **查看报告** "。</span><span class="sxs-lookup"><span data-stu-id="69c56-163">To get back to the reports view, click **View report**.</span></span>
 
-## <a name="threat-protection-status-report"></a><span data-ttu-id="8fa70-218">威胁防护状态报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-218">Threat protection status report</span></span>
+## <a name="defender-for-office-365-message-disposition-report"></a><span data-ttu-id="69c56-164">适用于 Office 365 的 Defender 邮件处置报告</span><span class="sxs-lookup"><span data-stu-id="69c56-164">Defender for Office 365 message disposition report</span></span>
 
-<span data-ttu-id="8fa70-219">**威胁防护状态**报告是一个单一视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及[Exchange ONLINE protection](exchange-online-protection-overview.md) (EOP) 和 Office 365 ATP 进行了阻止。</span><span class="sxs-lookup"><span data-stu-id="8fa70-219">The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Office 365 ATP.</span></span> <span data-ttu-id="8fa70-220">有关详细信息，请参阅 [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)。</span><span class="sxs-lookup"><span data-stu-id="8fa70-220">For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
+<span data-ttu-id="69c56-165">**ATP 邮件处置** 报告将向您显示检测为包含恶意内容的电子邮件所采取的操作。</span><span class="sxs-lookup"><span data-stu-id="69c56-165">The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.</span></span>
 
-## <a name="url-threat-protection-report"></a><span data-ttu-id="8fa70-221">URL 威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-221">URL threat protection report</span></span>
+<span data-ttu-id="69c56-166">若要查看报告，请打开 [安全 & 合规中心](https://protection.office.com)，转到 " **报告** " \> **仪表板** ，然后选择 " **用于 Office 365 的 Defender for Office 邮件处置** "。</span><span class="sxs-lookup"><span data-stu-id="69c56-166">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Defender for Office 365 message disposition**.</span></span> <span data-ttu-id="69c56-167">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=ATPMessageReport> 。</span><span class="sxs-lookup"><span data-stu-id="69c56-167">To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.</span></span>
 
-<span data-ttu-id="8fa70-222">**Url 威胁防护报告**提供了检测到的威胁的摘要和趋势视图，以及[安全链接](atp-safe-links.md)的一部分对 URL 单击执行的操作。</span><span class="sxs-lookup"><span data-stu-id="8fa70-222">The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](atp-safe-links.md).</span></span> <span data-ttu-id="8fa70-223">此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不 **跟踪用户点击** " 选项。</span><span class="sxs-lookup"><span data-stu-id="8fa70-223">This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.</span></span>
+!["报告" 仪表板中的 "用于 Office 365 的 Defender" 邮件处置小组件](../../media/atp-message-disposition-report-widget.png)
 
-<span data-ttu-id="8fa70-224">若要查看报告，请打开 [安全性 & 合规性中心](https://protection.office.com)，转到 " **报告**" \> **仪表板** ，然后选择 " **URL 保护报告**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-224">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**.</span></span> <span data-ttu-id="8fa70-225">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-225">To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.</span></span>
+> [!NOTE]
+> <span data-ttu-id="69c56-169">此报告中的信息也适用于 " [Defender For Office 365 文件类型" 报告](#defender-for-office-365-file-types-report)。</span><span class="sxs-lookup"><span data-stu-id="69c56-169">The information in this report is also available in the [Defender for Office 365 file types report](#defender-for-office-365-file-types-report).</span></span>
+
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a><span data-ttu-id="69c56-170">用于 Office 365 的 "Defender for Office" 邮件处置报告的报告视图</span><span class="sxs-lookup"><span data-stu-id="69c56-170">Report view for the Defender for Office 365 message disposition report</span></span>
+
+<span data-ttu-id="69c56-171">可以使用以下视图：</span><span class="sxs-lookup"><span data-stu-id="69c56-171">The following views are available:</span></span>
+
+- <span data-ttu-id="69c56-172">**数据查看依据：消息** ：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="69c56-172">**View data by: Message** : The chart contains the following information:</span></span>
+
+  - <span data-ttu-id="69c56-173">**阻止访问**</span><span class="sxs-lookup"><span data-stu-id="69c56-173">**Block access**</span></span>
+  - <span data-ttu-id="69c56-174">**邮件已替换**</span><span class="sxs-lookup"><span data-stu-id="69c56-174">**Messages replaced**</span></span>
+  - <span data-ttu-id="69c56-175">**监视的邮件**</span><span class="sxs-lookup"><span data-stu-id="69c56-175">**Messages monitored**</span></span>
+  - <span data-ttu-id="69c56-176">**替换为动态电子邮件传递** ：有关详细信息，请参阅 [在安全附件策略中动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。</span><span class="sxs-lookup"><span data-stu-id="69c56-176">**Replaced by Dynamic Email Delivery** : For more information, see [Dynamic Delivery in Safe Attachments policies](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).</span></span>
+
+  ![Defender for Office 365 文件类型报告中的邮件视图](../../media/atp-file-types-report-message-view.png)
+
+  <span data-ttu-id="69c56-178">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-178">If you click **Filters** , you can modify the report with the following filters:</span></span>
+
+  - <span data-ttu-id="69c56-179">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-179">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-180">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="69c56-180">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
+
+- <span data-ttu-id="69c56-181">**数据查看依据：文件** ：图表包含以下信息：</span><span class="sxs-lookup"><span data-stu-id="69c56-181">**View data by: File** : The chart contains the following information:</span></span>
+
+  - <span data-ttu-id="69c56-182">**恶意 Excel 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-182">**Malicious Excel attachments**</span></span>
+  - <span data-ttu-id="69c56-183">**恶意 Flash 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-183">**Malicious Flash attachments**</span></span>
+  - <span data-ttu-id="69c56-184">**恶意 PDF 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-184">**Malicious PDF attachments**</span></span>
+  - <span data-ttu-id="69c56-185">**恶意 PowerPoint 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-185">**Malicious PowerPoint attachments**</span></span>
+  - <span data-ttu-id="69c56-186">**恶意 Url**</span><span class="sxs-lookup"><span data-stu-id="69c56-186">**Malicious URLs**</span></span>
+  - <span data-ttu-id="69c56-187">**恶意 Word 附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-187">**Malicious Word attachments**</span></span>
+  - <span data-ttu-id="69c56-188">**恶意可执行附件**</span><span class="sxs-lookup"><span data-stu-id="69c56-188">**Malicious executable attachments**</span></span>
+  - <span data-ttu-id="69c56-189">**其他**</span><span class="sxs-lookup"><span data-stu-id="69c56-189">**Others**</span></span>
+
+  <span data-ttu-id="69c56-190">将鼠标悬停在特定日期 (数据点) 上时，可以查看 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反恶意软件保护](anti-malware-protection.md)检测到的恶意文件的类型细目。</span><span class="sxs-lookup"><span data-stu-id="69c56-190">When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).</span></span>
+
+  ![Defender for Office 365 文件类型报告中的文件视图](../../media/atp-file-types-report-file-view.png)
+
+  <span data-ttu-id="69c56-192">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-192">If you click **Filters** , you can modify the report with the following filters:</span></span>
+
+  - <span data-ttu-id="69c56-193">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-193">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-194">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="69c56-194">The same file type values that are visible in the chart.</span></span>
+
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a><span data-ttu-id="69c56-195">适用于 Office 365 的 "Defender for Office" 邮件处置报告的详细信息表视图</span><span class="sxs-lookup"><span data-stu-id="69c56-195">Details table view for the Defender for Office 365 message disposition report</span></span>
+
+<span data-ttu-id="69c56-196">如果单击 " **查看详细信息表** "，则报告将提供最近10天内组织内发生的所有点击的近实时视图。</span><span class="sxs-lookup"><span data-stu-id="69c56-196">If you click **View details table** , the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days.</span></span> <span data-ttu-id="69c56-197">显示的信息取决于您所查看的图表：</span><span class="sxs-lookup"><span data-stu-id="69c56-197">The information that's shown depends on the chart you were looking at:</span></span>
+
+- <span data-ttu-id="69c56-198">**数据查看依据：消息** ：</span><span class="sxs-lookup"><span data-stu-id="69c56-198">**View data by: Message** :</span></span>
+
+  - <span data-ttu-id="69c56-199">**Date**</span><span class="sxs-lookup"><span data-stu-id="69c56-199">**Date**</span></span>
+  - <span data-ttu-id="69c56-200">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-200">**Recipient address**</span></span>
+  - <span data-ttu-id="69c56-201">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-201">**Sender address**</span></span>
+  - <span data-ttu-id="69c56-202">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="69c56-202">**Message ID**</span></span>
+  - <span data-ttu-id="69c56-203">**File**</span><span class="sxs-lookup"><span data-stu-id="69c56-203">**File**</span></span>
+  - <span data-ttu-id="69c56-204">**主题**</span><span class="sxs-lookup"><span data-stu-id="69c56-204">**Subject**</span></span>
+
+  <span data-ttu-id="69c56-205">如果单击 " **筛选器** "，则可以使用以下筛选器修改结果：</span><span class="sxs-lookup"><span data-stu-id="69c56-205">If you click **Filters** , you can modify the results with the following filters:</span></span>
+
+  - <span data-ttu-id="69c56-206">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-206">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-207">图表中可用的相同邮件处置值，以及传递的其他 **邮件** 值。</span><span class="sxs-lookup"><span data-stu-id="69c56-207">The same message disposition values that are available in the chart, and the additional **Messages passed** value.</span></span>
+
+- <span data-ttu-id="69c56-208">**数据查看依据：文件** ：</span><span class="sxs-lookup"><span data-stu-id="69c56-208">**View data by: File** :</span></span>
+
+  - <span data-ttu-id="69c56-209">**Date**</span><span class="sxs-lookup"><span data-stu-id="69c56-209">**Date**</span></span>
+  - <span data-ttu-id="69c56-210">**收件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-210">**Recipient address**</span></span>
+  - <span data-ttu-id="69c56-211">**发件人地址**</span><span class="sxs-lookup"><span data-stu-id="69c56-211">**Sender address**</span></span>
+  - <span data-ttu-id="69c56-212">**邮件 ID**</span><span class="sxs-lookup"><span data-stu-id="69c56-212">**Message ID**</span></span>
+  - <span data-ttu-id="69c56-213">**File**</span><span class="sxs-lookup"><span data-stu-id="69c56-213">**File**</span></span>
+
+  <span data-ttu-id="69c56-214">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-214">If you click **Filters** , you can modify the report with the following filters:</span></span>
+
+  - <span data-ttu-id="69c56-215">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-215">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-216">图表中显示的相同文件类型值。</span><span class="sxs-lookup"><span data-stu-id="69c56-216">The same file type values that are visible in the chart.</span></span>
+
+<span data-ttu-id="69c56-217">若要返回到 "报告" 视图，请单击 " **查看报告** "。</span><span class="sxs-lookup"><span data-stu-id="69c56-217">To get back to the reports view, click **View report**.</span></span>
+
+## <a name="threat-protection-status-report"></a><span data-ttu-id="69c56-218">威胁防护状态报告</span><span class="sxs-lookup"><span data-stu-id="69c56-218">Threat protection status report</span></span>
+
+<span data-ttu-id="69c56-219">**威胁防护状态** 报告是一个视图，它将有关检测到的恶意内容和恶意电子邮件的信息，以及通过 [Exchange ONLINE protection](exchange-online-protection-overview.md) (EOP) 和 Microsoft Defender for Office 365 进行了检测和阻止。</span><span class="sxs-lookup"><span data-stu-id="69c56-219">The **Threat protection status** report is a single view that brings together information about malicious content and malicious email detected and blocked by [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) and Microsoft Defender for Office 365.</span></span> <span data-ttu-id="69c56-220">有关详细信息，请参阅 [威胁防护状态报告](view-email-security-reports.md#threat-protection-status-report)。</span><span class="sxs-lookup"><span data-stu-id="69c56-220">For more information, see [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).</span></span>
+
+## <a name="url-threat-protection-report"></a><span data-ttu-id="69c56-221">URL 威胁防护报告</span><span class="sxs-lookup"><span data-stu-id="69c56-221">URL threat protection report</span></span>
+
+<span data-ttu-id="69c56-222">**Url 威胁防护报告** 提供了检测到的威胁的摘要和趋势视图，以及 [安全链接](atp-safe-links.md)的一部分对 URL 单击执行的操作。</span><span class="sxs-lookup"><span data-stu-id="69c56-222">The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [Safe Links](atp-safe-links.md).</span></span> <span data-ttu-id="69c56-223">此报告将不会从用户处单击 "数据"，即应用了 "安全链接策略" 的用户已选中 "不 **跟踪用户点击** " 选项。</span><span class="sxs-lookup"><span data-stu-id="69c56-223">This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.</span></span>
+
+<span data-ttu-id="69c56-224">若要查看报告，请打开 [安全性 & 合规性中心](https://protection.office.com)，转到 " **报告** " \> **仪表板** ，然后选择 " **URL 保护报告** "。</span><span class="sxs-lookup"><span data-stu-id="69c56-224">To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**.</span></span> <span data-ttu-id="69c56-225">若要直接转到报表，请打开 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。</span><span class="sxs-lookup"><span data-stu-id="69c56-225">To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.</span></span>
 
 !["报告" 仪表板中的 URL 保护报告小部件](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
-> <span data-ttu-id="8fa70-227">这是一个 " *保护趋势" 报告*，即数据表示较大数据集中的趋势。</span><span class="sxs-lookup"><span data-stu-id="8fa70-227">This is a *protection trend report*, meaning data represents trends in a larger dataset.</span></span> <span data-ttu-id="8fa70-228">因此，在这里，聚合视图中的数据不是实时提供的，但详细信息表视图中的数据是，因此在这两种视图之间可能会出现细微差异。</span><span class="sxs-lookup"><span data-stu-id="8fa70-228">As a result, the data in the aggregate view is not available in real time here, but the data in the details table view is, so you may see a slight discrepancy between the two views.</span></span>
+> <span data-ttu-id="69c56-227">这是一个 " *保护趋势" 报告* ，即数据表示较大数据集中的趋势。</span><span class="sxs-lookup"><span data-stu-id="69c56-227">This is a *protection trend report* , meaning data represents trends in a larger dataset.</span></span> <span data-ttu-id="69c56-228">因此，在这里，聚合视图中的数据不是实时提供的，但详细信息表视图中的数据是，因此在这两种视图之间可能会出现细微差异。</span><span class="sxs-lookup"><span data-stu-id="69c56-228">As a result, the data in the aggregate view is not available in real time here, but the data in the details table view is, so you may see a slight discrepancy between the two views.</span></span>
 
-### <a name="report-view-for-the-url-threat-protection-report"></a><span data-ttu-id="8fa70-229">URL 威胁防护报告的报告视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-229">Report view for the URL threat protection report</span></span>
+### <a name="report-view-for-the-url-threat-protection-report"></a><span data-ttu-id="69c56-229">URL 威胁防护报告的报告视图</span><span class="sxs-lookup"><span data-stu-id="69c56-229">Report view for the URL threat protection report</span></span>
 
-<span data-ttu-id="8fa70-230">**URL 威胁防护**报告包含两个聚合视图，每四个小时刷新一次，显示最近90天的数据：</span><span class="sxs-lookup"><span data-stu-id="8fa70-230">The **URL threat protection** report has two aggregated views that are refreshed once every four hours that shows data for the last 90 days:</span></span>
+<span data-ttu-id="69c56-230">**URL 威胁防护** 报告包含两个聚合视图，每四个小时刷新一次，显示最近90天的数据：</span><span class="sxs-lookup"><span data-stu-id="69c56-230">The **URL threat protection** report has two aggregated views that are refreshed once every four hours that shows data for the last 90 days:</span></span>
 
-- <span data-ttu-id="8fa70-231">**URL 单击 "保护操作**"：显示组织中的用户单击的 url 的数量以及单击的结果：</span><span class="sxs-lookup"><span data-stu-id="8fa70-231">**URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:</span></span>
+- <span data-ttu-id="69c56-231">**URL 单击 "保护操作** "：显示组织中的用户单击的 url 的数量以及单击的结果：</span><span class="sxs-lookup"><span data-stu-id="69c56-231">**URL click protection action** : Shows the number of URL clicks by users in the organization and the results of the click:</span></span>
 
-  - <span data-ttu-id="8fa70-232">**阻止 (阻止** 用户导航到 URL) </span><span class="sxs-lookup"><span data-stu-id="8fa70-232">**Blocked** (the user was blocked from navigating to the URL)</span></span>
-  - <span data-ttu-id="8fa70-233">**阻止并单击**</span><span class="sxs-lookup"><span data-stu-id="8fa70-233">**Blocked and clicked through**</span></span>
-  - <span data-ttu-id="8fa70-234">**在扫描过程中单击**</span><span class="sxs-lookup"><span data-stu-id="8fa70-234">**Clicked through during scan**</span></span>
+  - <span data-ttu-id="69c56-232">**阻止 (阻止** 用户导航到 URL) </span><span class="sxs-lookup"><span data-stu-id="69c56-232">**Blocked** (the user was blocked from navigating to the URL)</span></span>
+  - <span data-ttu-id="69c56-233">**阻止并单击**</span><span class="sxs-lookup"><span data-stu-id="69c56-233">**Blocked and clicked through**</span></span>
+  - <span data-ttu-id="69c56-234">**在扫描过程中单击**</span><span class="sxs-lookup"><span data-stu-id="69c56-234">**Clicked through during scan**</span></span>
 
-  <span data-ttu-id="8fa70-235">单击指示用户已通过阻止页面单击了恶意网站， (管理员可以禁用 "安全链接策略") 中的 "单击"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-235">A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).</span></span>
+  <span data-ttu-id="69c56-235">单击指示用户已通过阻止页面单击了恶意网站， (管理员可以禁用 "安全链接策略") 中的 "单击"。</span><span class="sxs-lookup"><span data-stu-id="69c56-235">A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).</span></span>
 
-  <span data-ttu-id="8fa70-236">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-236">If you click **Filters**, you can modify the report with the following filters:</span></span>
+  <span data-ttu-id="69c56-236">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-236">If you click **Filters** , you can modify the report with the following filters:</span></span>
 
-  - <span data-ttu-id="8fa70-237">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-237">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-238">可用的单击保护操作加上 (**允许** 用户导航到 URL) 的值。</span><span class="sxs-lookup"><span data-stu-id="8fa70-238">The available click protection actions, plus the value **Allowed** (the user was allowed to navigate to the URL).</span></span>
+  - <span data-ttu-id="69c56-237">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-237">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-238">可用的单击保护操作加上 ( **允许** 用户导航到 URL) 的值。</span><span class="sxs-lookup"><span data-stu-id="69c56-238">The available click protection actions, plus the value **Allowed** (the user was allowed to navigate to the URL).</span></span>
 
   ![URL 单击 URL 威胁防护报告中的 "保护操作" 视图](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- <span data-ttu-id="8fa70-240">**URL 单击应用程序**：显示支持安全链接的应用程序的 url 单击次数：</span><span class="sxs-lookup"><span data-stu-id="8fa70-240">**URL click by application**: Shows the number of URL clicks by applications that support Safe Links:</span></span>
+- <span data-ttu-id="69c56-240">**URL 单击应用程序** ：显示支持安全链接的应用程序的 url 单击次数：</span><span class="sxs-lookup"><span data-stu-id="69c56-240">**URL click by application** : Shows the number of URL clicks by applications that support Safe Links:</span></span>
 
-  - <span data-ttu-id="8fa70-241">**电子邮件客户端**</span><span class="sxs-lookup"><span data-stu-id="8fa70-241">**Email client**</span></span>
-  - <span data-ttu-id="8fa70-242">**PowerPoint**</span><span class="sxs-lookup"><span data-stu-id="8fa70-242">**PowerPoint**</span></span>
-  - <span data-ttu-id="8fa70-243">**Word**</span><span class="sxs-lookup"><span data-stu-id="8fa70-243">**Word**</span></span>
-  - <span data-ttu-id="8fa70-244">**Excel**</span><span class="sxs-lookup"><span data-stu-id="8fa70-244">**Excel**</span></span>
-  - <span data-ttu-id="8fa70-245">**OneNote**</span><span class="sxs-lookup"><span data-stu-id="8fa70-245">**OneNote**</span></span>
-  - <span data-ttu-id="8fa70-246">**Visio**</span><span class="sxs-lookup"><span data-stu-id="8fa70-246">**Visio**</span></span>
-  - <span data-ttu-id="8fa70-247">**Teams**</span><span class="sxs-lookup"><span data-stu-id="8fa70-247">**Teams**</span></span>
-  - <span data-ttu-id="8fa70-248">**其他**</span><span class="sxs-lookup"><span data-stu-id="8fa70-248">**Other**</span></span>
+  - <span data-ttu-id="69c56-241">**电子邮件客户端**</span><span class="sxs-lookup"><span data-stu-id="69c56-241">**Email client**</span></span>
+  - <span data-ttu-id="69c56-242">**PowerPoint**</span><span class="sxs-lookup"><span data-stu-id="69c56-242">**PowerPoint**</span></span>
+  - <span data-ttu-id="69c56-243">**Word**</span><span class="sxs-lookup"><span data-stu-id="69c56-243">**Word**</span></span>
+  - <span data-ttu-id="69c56-244">**Excel**</span><span class="sxs-lookup"><span data-stu-id="69c56-244">**Excel**</span></span>
+  - <span data-ttu-id="69c56-245">**OneNote**</span><span class="sxs-lookup"><span data-stu-id="69c56-245">**OneNote**</span></span>
+  - <span data-ttu-id="69c56-246">**Visio**</span><span class="sxs-lookup"><span data-stu-id="69c56-246">**Visio**</span></span>
+  - <span data-ttu-id="69c56-247">**Teams**</span><span class="sxs-lookup"><span data-stu-id="69c56-247">**Teams**</span></span>
+  - <span data-ttu-id="69c56-248">**其他**</span><span class="sxs-lookup"><span data-stu-id="69c56-248">**Other**</span></span>
 
-  <span data-ttu-id="8fa70-249">如果单击 " **筛选器**"，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="8fa70-249">If you click **Filters**, you can modify the report with the following filters:</span></span>
+  <span data-ttu-id="69c56-249">如果单击 " **筛选器** "，则可以使用以下筛选器修改报表：</span><span class="sxs-lookup"><span data-stu-id="69c56-249">If you click **Filters** , you can modify the report with the following filters:</span></span>
 
-  - <span data-ttu-id="8fa70-250">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="8fa70-250">**Start date** and **End date**</span></span>
-  - <span data-ttu-id="8fa70-251">可用的应用程序。</span><span class="sxs-lookup"><span data-stu-id="8fa70-251">The available applications.</span></span>
+  - <span data-ttu-id="69c56-250">**开始日期** 和 **结束日期**</span><span class="sxs-lookup"><span data-stu-id="69c56-250">**Start date** and **End date**</span></span>
+  - <span data-ttu-id="69c56-251">可用的应用程序。</span><span class="sxs-lookup"><span data-stu-id="69c56-251">The available applications.</span></span>
 
-### <a name="details-table-view-for-the-url-threat-protection-report"></a><span data-ttu-id="8fa70-252">URL 威胁防护报告的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="8fa70-252">Details table view for the URL threat protection report</span></span>
+### <a name="details-table-view-for-the-url-threat-protection-report"></a><span data-ttu-id="69c56-252">URL 威胁防护报告的详细信息表格视图</span><span class="sxs-lookup"><span data-stu-id="69c56-252">Details table view for the URL threat protection report</span></span>
 
-<span data-ttu-id="8fa70-253">如果单击 " **查看详细信息表**"，则报告将提供最近7天内在组织内发生的所有点击的近实时视图，并提供以下详细信息：</span><span class="sxs-lookup"><span data-stu-id="8fa70-253">If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 7 days with the following details:</span></span>
+<span data-ttu-id="69c56-253">如果单击 " **查看详细信息表** "，则报告将提供最近7天内在组织内发生的所有点击的近实时视图，并提供以下详细信息：</span><span class="sxs-lookup"><span data-stu-id="69c56-253">If you click **View details table** , the report provides a near-real-time view of all clicks that happen within the organization for the last 7 days with the following details:</span></span>
 
-- <span data-ttu-id="8fa70-254">**单击 "时间"**</span><span class="sxs-lookup"><span data-stu-id="8fa70-254">**Click time**</span></span>
-- <span data-ttu-id="8fa70-255">**用户**</span><span class="sxs-lookup"><span data-stu-id="8fa70-255">**User**</span></span>
-- <span data-ttu-id="8fa70-256">**URL**</span><span class="sxs-lookup"><span data-stu-id="8fa70-256">**URL**</span></span>
-- <span data-ttu-id="8fa70-257">**操作**</span><span class="sxs-lookup"><span data-stu-id="8fa70-257">**Action**</span></span>
-- <span data-ttu-id="8fa70-258">**App**</span><span class="sxs-lookup"><span data-stu-id="8fa70-258">**App**</span></span>
+- <span data-ttu-id="69c56-254">**单击 "时间"**</span><span class="sxs-lookup"><span data-stu-id="69c56-254">**Click time**</span></span>
+- <span data-ttu-id="69c56-255">**用户**</span><span class="sxs-lookup"><span data-stu-id="69c56-255">**User**</span></span>
+- <span data-ttu-id="69c56-256">**URL**</span><span class="sxs-lookup"><span data-stu-id="69c56-256">**URL**</span></span>
+- <span data-ttu-id="69c56-257">**操作**</span><span class="sxs-lookup"><span data-stu-id="69c56-257">**Action**</span></span>
+- <span data-ttu-id="69c56-258">**App**</span><span class="sxs-lookup"><span data-stu-id="69c56-258">**App**</span></span>
 
-<span data-ttu-id="8fa70-259">如果单击 "详细信息表" 视图中的 " **筛选器** "，则可以按与报表视图中相同的条件进行筛选，也可以按逗号分隔的 **域** 或 **收件人** 进行筛选。</span><span class="sxs-lookup"><span data-stu-id="8fa70-259">If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.</span></span>
+<span data-ttu-id="69c56-259">如果单击 "详细信息表" 视图中的 " **筛选器** "，则可以按与报表视图中相同的条件进行筛选，也可以按逗号分隔的 **域** 或 **收件人** 进行筛选。</span><span class="sxs-lookup"><span data-stu-id="69c56-259">If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.</span></span>
 
-<span data-ttu-id="8fa70-260">若要返回到 "报告" 视图，请单击 " **查看报告**"。</span><span class="sxs-lookup"><span data-stu-id="8fa70-260">To get back to the reports view, click **View report**.</span></span>
+<span data-ttu-id="69c56-260">若要返回到 "报告" 视图，请单击 " **查看报告** "。</span><span class="sxs-lookup"><span data-stu-id="69c56-260">To get back to the reports view, click **View report**.</span></span>
 
-## <a name="additional-reports-to-view"></a><span data-ttu-id="8fa70-261">要查看的其他报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-261">Additional reports to view</span></span>
+## <a name="additional-reports-to-view"></a><span data-ttu-id="69c56-261">要查看的其他报告</span><span class="sxs-lookup"><span data-stu-id="69c56-261">Additional reports to view</span></span>
 
-<span data-ttu-id="8fa70-262">除了本主题中所述的 ATP 报告之外，还有几个其他报告可供使用，如下表所述：</span><span class="sxs-lookup"><span data-stu-id="8fa70-262">In addition to the ATP reports described in this topic, several other reports are available, as described in the following table:</span></span>
+<span data-ttu-id="69c56-262">除了本主题中所述的报告之外，还有几个其他报告可供使用，如下表所述：</span><span class="sxs-lookup"><span data-stu-id="69c56-262">In addition to the reports described in this topic, several other reports are available, as described in the following table:</span></span>
 
 ****
 
-|<span data-ttu-id="8fa70-263">报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-263">Report</span></span>|<span data-ttu-id="8fa70-264">主题</span><span class="sxs-lookup"><span data-stu-id="8fa70-264">Topic</span></span>|
+|<span data-ttu-id="69c56-263">报告</span><span class="sxs-lookup"><span data-stu-id="69c56-263">Report</span></span>|<span data-ttu-id="69c56-264">主题</span><span class="sxs-lookup"><span data-stu-id="69c56-264">Topic</span></span>|
 |---|---|
-|<span data-ttu-id="8fa70-265">**资源管理器** (atp plan 2) 或 (ATP plan 1) 的**实时检测**</span><span class="sxs-lookup"><span data-stu-id="8fa70-265">**Explorer** (ATP Plan 2) or **real-time detections** (ATP Plan 1)</span></span>|[<span data-ttu-id="8fa70-266">威胁资源管理器（和实时检测）</span><span class="sxs-lookup"><span data-stu-id="8fa70-266">Threat Explorer (and real-time detections)</span></span>](threat-explorer.md)|
-|<span data-ttu-id="8fa70-267">**电子邮件安全报告**，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。</span><span class="sxs-lookup"><span data-stu-id="8fa70-267">**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.</span></span>|[<span data-ttu-id="8fa70-268">查看安全与合规中心内的电子邮件安全报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-268">View email security reports in the Security & Compliance Center</span></span>](view-email-security-reports.md)|
-|<span data-ttu-id="8fa70-269">**邮件流报告**，例如转发报告、邮件流状态报告和主要发件人和收件人报告。</span><span class="sxs-lookup"><span data-stu-id="8fa70-269">**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.</span></span>|[<span data-ttu-id="8fa70-270">查看安全 & 合规性中心中的邮件流报告</span><span class="sxs-lookup"><span data-stu-id="8fa70-270">View mail flow reports in the Security & Compliance Center</span></span>](view-mail-flow-reports.md)|
-|<span data-ttu-id="8fa70-271">**安全链接的 URL 跟踪** 仅 (PowerShell) 。</span><span class="sxs-lookup"><span data-stu-id="8fa70-271">**URL trace for Safe Links** (PowerShell only).</span></span> <span data-ttu-id="8fa70-272">此 cmdlet 的输出显示在过去七天内安全链接操作的结果。</span><span class="sxs-lookup"><span data-stu-id="8fa70-272">The output of this cmdlet shows you the results of Safe Links actions over the past seven days.</span></span>|[<span data-ttu-id="8fa70-273">UrlTrace</span><span class="sxs-lookup"><span data-stu-id="8fa70-273">Get-UrlTrace</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|<span data-ttu-id="8fa70-274">仅) **的 EOP 和 ATP (PowerShell 的邮件流量结果**。</span><span class="sxs-lookup"><span data-stu-id="8fa70-274">**Mail traffic results for EOP and ATP** (PowerShell only).</span></span> <span data-ttu-id="8fa70-275">此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。</span><span class="sxs-lookup"><span data-stu-id="8fa70-275">The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.</span></span>|[<span data-ttu-id="8fa70-276">MailTrafficATPReport</span><span class="sxs-lookup"><span data-stu-id="8fa70-276">Get-MailTrafficATPReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|<span data-ttu-id="8fa70-277">仅 (PowerShell) 中**的 EOP 和 ATP 检测的邮件详细信息报告**。</span><span class="sxs-lookup"><span data-stu-id="8fa70-277">**Mail detail reports for EOP and ATP detections** (PowerShell only).</span></span> <span data-ttu-id="8fa70-278">此 cmdlet 的输出包含有关恶意文件或 Url、网络钓鱼企图、模拟以及电子邮件或文件中的其他潜在威胁的详细信息。</span><span class="sxs-lookup"><span data-stu-id="8fa70-278">The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.</span></span>|[<span data-ttu-id="8fa70-279">MailDetailATPReport</span><span class="sxs-lookup"><span data-stu-id="8fa70-279">Get-MailDetailATPReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
+|<span data-ttu-id="69c56-265">**Explorer** (microsoft Defender for Office 365 plan 2) 或 **实时检测** (microsoft Defender for office 365 计划 1) </span><span class="sxs-lookup"><span data-stu-id="69c56-265">**Explorer** (Microsoft Defender for Office 365 Plan 2) or **real-time detections** (Microsoft Defender for Office 365 Plan 1)</span></span>|[<span data-ttu-id="69c56-266">威胁资源管理器（和实时检测）</span><span class="sxs-lookup"><span data-stu-id="69c56-266">Threat Explorer (and real-time detections)</span></span>](threat-explorer.md)|
+|<span data-ttu-id="69c56-267">**电子邮件安全报告** ，如主要发件人和收件人报告、欺骗邮件报告和垃圾邮件检测报告。</span><span class="sxs-lookup"><span data-stu-id="69c56-267">**Email security reports** , such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.</span></span>|[<span data-ttu-id="69c56-268">查看安全与合规中心内的电子邮件安全报告</span><span class="sxs-lookup"><span data-stu-id="69c56-268">View email security reports in the Security & Compliance Center</span></span>](view-email-security-reports.md)|
+|<span data-ttu-id="69c56-269">**邮件流报告** ，例如转发报告、邮件流状态报告和主要发件人和收件人报告。</span><span class="sxs-lookup"><span data-stu-id="69c56-269">**Mail flow reports** , such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.</span></span>|[<span data-ttu-id="69c56-270">查看安全 & 合规性中心中的邮件流报告</span><span class="sxs-lookup"><span data-stu-id="69c56-270">View mail flow reports in the Security & Compliance Center</span></span>](view-mail-flow-reports.md)|
+|<span data-ttu-id="69c56-271">**安全链接的 URL 跟踪** 仅 (PowerShell) 。</span><span class="sxs-lookup"><span data-stu-id="69c56-271">**URL trace for Safe Links** (PowerShell only).</span></span> <span data-ttu-id="69c56-272">此 cmdlet 的输出显示在过去七天内安全链接操作的结果。</span><span class="sxs-lookup"><span data-stu-id="69c56-272">The output of this cmdlet shows you the results of Safe Links actions over the past seven days.</span></span>|[<span data-ttu-id="69c56-273">UrlTrace</span><span class="sxs-lookup"><span data-stu-id="69c56-273">Get-UrlTrace</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|<span data-ttu-id="69c56-274">**EOP 和 Microsoft Defender For Office 365 的邮件流量结果** 仅)  (PowerShell。</span><span class="sxs-lookup"><span data-stu-id="69c56-274">**Mail traffic results for EOP and Microsoft Defender for Office 365** (PowerShell only).</span></span> <span data-ttu-id="69c56-275">此 cmdlet 的输出包含有关域、日期、事件类型、方向、操作和邮件计数的信息。</span><span class="sxs-lookup"><span data-stu-id="69c56-275">The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.</span></span>|[<span data-ttu-id="69c56-276">MailTrafficATPReport</span><span class="sxs-lookup"><span data-stu-id="69c56-276">Get-MailTrafficATPReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
+|<span data-ttu-id="69c56-277">**EOP 和 Defender For Office 365 检测的邮件详细信息报告** 仅 (PowerShell) 。</span><span class="sxs-lookup"><span data-stu-id="69c56-277">**Mail detail reports for EOP and Defender for Office 365 detections** (PowerShell only).</span></span> <span data-ttu-id="69c56-278">此 cmdlet 的输出包含有关恶意文件或 Url、网络钓鱼企图、模拟以及电子邮件或文件中的其他潜在威胁的详细信息。</span><span class="sxs-lookup"><span data-stu-id="69c56-278">The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.</span></span>|[<span data-ttu-id="69c56-279">MailDetailATPReport</span><span class="sxs-lookup"><span data-stu-id="69c56-279">Get-MailDetailATPReport</span></span>](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a><span data-ttu-id="8fa70-280">查看 ATP 报告所需的权限是什么？</span><span class="sxs-lookup"><span data-stu-id="8fa70-280">What permissions are needed to view the ATP reports?</span></span>
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a><span data-ttu-id="69c56-280">查看适用于 Office 的 Defender 365 报告所需的权限是什么？</span><span class="sxs-lookup"><span data-stu-id="69c56-280">What permissions are needed to view the Defender for Office 365 reports?</span></span>
 
-<span data-ttu-id="8fa70-281">为了查看和使用本主题中所述的报告， **必须为安全 &amp; 合规中心和 Exchange 管理中心分配适当的角色**。</span><span class="sxs-lookup"><span data-stu-id="8fa70-281">In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.</span></span>
+<span data-ttu-id="69c56-281">为了查看和使用本主题中所述的报告， **必须为安全 &amp; 合规中心和 Exchange 管理中心分配适当的角色** 。</span><span class="sxs-lookup"><span data-stu-id="69c56-281">In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.</span></span>
 
-- <span data-ttu-id="8fa70-282">对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：</span><span class="sxs-lookup"><span data-stu-id="8fa70-282">For the Security & Compliance Center, you must have one of the following roles assigned:</span></span>
+- <span data-ttu-id="69c56-282">对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：</span><span class="sxs-lookup"><span data-stu-id="69c56-282">For the Security & Compliance Center, you must have one of the following roles assigned:</span></span>
 
-  - <span data-ttu-id="8fa70-283">组织管理</span><span class="sxs-lookup"><span data-stu-id="8fa70-283">Organization Management</span></span>
-  - <span data-ttu-id="8fa70-284">安全管理员 (可以在 Azure Active Directory 管理中心 (中分配此项 [https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3</span><span class="sxs-lookup"><span data-stu-id="8fa70-284">Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span></span>
-  - <span data-ttu-id="8fa70-285"> (可以在 Azure Active Directory 管理中心中分配安全操作员 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3</span><span class="sxs-lookup"><span data-stu-id="8fa70-285">Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span></span>
-  - <span data-ttu-id="8fa70-286">安全读取者</span><span class="sxs-lookup"><span data-stu-id="8fa70-286">Security Reader</span></span>
+  - <span data-ttu-id="69c56-283">组织管理</span><span class="sxs-lookup"><span data-stu-id="69c56-283">Organization Management</span></span>
+  - <span data-ttu-id="69c56-284">安全管理员 (可以在 Azure Active Directory 管理中心 (中分配此项 [https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3</span><span class="sxs-lookup"><span data-stu-id="69c56-284">Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span></span>
+  - <span data-ttu-id="69c56-285"> (可以在 Azure Active Directory 管理中心中分配安全操作员 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3</span><span class="sxs-lookup"><span data-stu-id="69c56-285">Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))</span></span>
+  - <span data-ttu-id="69c56-286">安全读取者</span><span class="sxs-lookup"><span data-stu-id="69c56-286">Security Reader</span></span>
 
-- <span data-ttu-id="8fa70-287">对于 Exchange Online，必须在 Exchange 管理中心 () 或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) (请参阅 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) ：</span><span class="sxs-lookup"><span data-stu-id="8fa70-287">For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):</span></span>
+- <span data-ttu-id="69c56-287">对于 Exchange Online，必须在 Exchange 管理中心 () 或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) (请参阅 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) ：</span><span class="sxs-lookup"><span data-stu-id="69c56-287">For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):</span></span>
 
-  - <span data-ttu-id="8fa70-288">组织管理</span><span class="sxs-lookup"><span data-stu-id="8fa70-288">Organization Management</span></span>
-  - <span data-ttu-id="8fa70-289">仅限查看组织管理</span><span class="sxs-lookup"><span data-stu-id="8fa70-289">View-only Organization Management</span></span>
-  - <span data-ttu-id="8fa70-290">“仅供查看收件人”角色</span><span class="sxs-lookup"><span data-stu-id="8fa70-290">View-Only Recipients role</span></span>
-  - <span data-ttu-id="8fa70-291">合规性管理</span><span class="sxs-lookup"><span data-stu-id="8fa70-291">Compliance Management</span></span>
+  - <span data-ttu-id="69c56-288">组织管理</span><span class="sxs-lookup"><span data-stu-id="69c56-288">Organization Management</span></span>
+  - <span data-ttu-id="69c56-289">仅限查看组织管理</span><span class="sxs-lookup"><span data-stu-id="69c56-289">View-only Organization Management</span></span>
+  - <span data-ttu-id="69c56-290">“仅供查看收件人”角色</span><span class="sxs-lookup"><span data-stu-id="69c56-290">View-Only Recipients role</span></span>
+  - <span data-ttu-id="69c56-291">合规性管理</span><span class="sxs-lookup"><span data-stu-id="69c56-291">Compliance Management</span></span>
 
-<span data-ttu-id="8fa70-292">若要了解详细信息，请参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="8fa70-292">To learn more, see the following resources:</span></span>
+<span data-ttu-id="69c56-292">若要了解详细信息，请参阅以下资源：</span><span class="sxs-lookup"><span data-stu-id="69c56-292">To learn more, see the following resources:</span></span>
 
-- [<span data-ttu-id="8fa70-293">安全与合规中心内的权限</span><span class="sxs-lookup"><span data-stu-id="8fa70-293">Permissions in the Security & Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
+- [<span data-ttu-id="69c56-293">安全与合规中心内的权限</span><span class="sxs-lookup"><span data-stu-id="69c56-293">Permissions in the Security & Compliance Center</span></span>](permissions-in-the-security-and-compliance-center.md)
 
-- [<span data-ttu-id="8fa70-294">Exchange Online 中的功能权限</span><span class="sxs-lookup"><span data-stu-id="8fa70-294">Feature permissions in Exchange Online</span></span>](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+- [<span data-ttu-id="69c56-294">Exchange Online 中的功能权限</span><span class="sxs-lookup"><span data-stu-id="69c56-294">Feature permissions in Exchange Online</span></span>](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
-## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="8fa70-295">如果报告不显示数据，该怎么办？</span><span class="sxs-lookup"><span data-stu-id="8fa70-295">What if the reports aren't showing data?</span></span>
+## <a name="what-if-the-reports-arent-showing-data"></a><span data-ttu-id="69c56-295">如果报告不显示数据，该怎么办？</span><span class="sxs-lookup"><span data-stu-id="69c56-295">What if the reports aren't showing data?</span></span>
 
-<span data-ttu-id="8fa70-296">如果您未在 ATP 报告中看到数据，请仔细检查您的策略设置是否正确。</span><span class="sxs-lookup"><span data-stu-id="8fa70-296">If you are not seeing data in your ATP reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="8fa70-297">您的组织必须定义 [安全链接策略](set-up-atp-safe-links-policies.md) 和 [安全附件策略](set-up-atp-safe-attachments-policies.md) ，以便将 ATP 保护设置到位。</span><span class="sxs-lookup"><span data-stu-id="8fa70-297">Your organization must have [Safe Links policies](set-up-atp-safe-links-policies.md) and [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for ATP protection to be in place.</span></span> <span data-ttu-id="8fa70-298">另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="8fa70-298">Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).</span></span>
+<span data-ttu-id="69c56-296">如果您在您的 Defender for Office 365 报告中看不到数据，请仔细检查您的策略设置是否正确。</span><span class="sxs-lookup"><span data-stu-id="69c56-296">If you are not seeing data in your Defender for Office 365 reports, double-check that your policies are set up correctly.</span></span> <span data-ttu-id="69c56-297">您的组织必须已定义 [安全链接策略](set-up-atp-safe-links-policies.md) 和 [安全附件策略](set-up-atp-safe-attachments-policies.md) ，以便将 Office 365 防护功能设置为就地使用。</span><span class="sxs-lookup"><span data-stu-id="69c56-297">Your organization must have [Safe Links policies](set-up-atp-safe-links-policies.md) and [Safe Attachments policies](set-up-atp-safe-attachments-policies.md) defined in order for Defender for Office 365 protection to be in place.</span></span> <span data-ttu-id="69c56-298">另请参阅 [反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md)。</span><span class="sxs-lookup"><span data-stu-id="69c56-298">Also see [Anti-spam and anti-malware protection](anti-spam-and-anti-malware-protection.md).</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="8fa70-299">相关主题</span><span class="sxs-lookup"><span data-stu-id="8fa70-299">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="69c56-299">相关主题</span><span class="sxs-lookup"><span data-stu-id="69c56-299">Related topics</span></span>
 
-[<span data-ttu-id="8fa70-300">安全与合规中心内的智能报告和见解</span><span class="sxs-lookup"><span data-stu-id="8fa70-300">Smart reports and insights in the Security & Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
+[<span data-ttu-id="69c56-300">安全与合规中心内的智能报告和见解</span><span class="sxs-lookup"><span data-stu-id="69c56-300">Smart reports and insights in the Security & Compliance Center</span></span>](reports-and-insights-in-security-and-compliance.md)
   
-[<span data-ttu-id="8fa70-301">Azure Active Directory (角色权限</span><span class="sxs-lookup"><span data-stu-id="8fa70-301">Role permissions (Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
+[<span data-ttu-id="69c56-301">Azure Active Directory (角色权限</span><span class="sxs-lookup"><span data-stu-id="69c56-301">Role permissions (Azure Active Directory</span></span>](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
