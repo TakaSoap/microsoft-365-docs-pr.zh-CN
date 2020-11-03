@@ -410,6 +410,8 @@
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: 用户提交策略
               href: ./office-365-security/user-submission.md
+            - name: Office 365 ATP 中的用户标记
+              href: ./office-365-security/user-tags.md
             - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 使用 DKIM 验证出站电子邮件
@@ -487,6 +489,8 @@
           items:
             - name: 使用威胁跟踪器
               href: ./office-365-security/threat-trackers.md
+            - name: 查看警报
+              href: ../compliance/alert-policies.md
             - name: 安全与合规中心内的智能报告和见解
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: 启用报表消息加载项
