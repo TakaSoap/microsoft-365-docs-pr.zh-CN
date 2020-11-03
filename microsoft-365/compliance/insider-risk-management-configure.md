@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787508"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846260"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -57,7 +57,7 @@ ms.locfileid: "48787508"
 
 | **角色组** | **角色权限** |
 | :---- | :---------------- |
-| **内部风险管理** | 使用此角色组可在单个组中管理组织的内幕风险管理。 通过添加指定管理员、分析师和调查人员的所有用户帐户，您可以在单个组中配置内幕风险管理权限。 此角色组包含所有内幕风险管理权限角色。 此配置是快速开始使用 "内幕风险管理" 的最简单方法，非常适合于不需要为单独的用户组定义单独权限的组织。|
+| **内幕风险管理** | 使用此角色组可在单个组中管理组织的内幕风险管理。 通过添加指定管理员、分析师和调查人员的所有用户帐户，您可以在单个组中配置内幕风险管理权限。 此角色组包含所有内幕风险管理权限角色。 此配置是快速开始使用 "内幕风险管理" 的最简单方法，非常适合于不需要为单独的用户组定义单独权限的组织。|
 | **内幕风险管理管理员** | 使用此角色组最初配置内幕风险管理和更高版本，以便将内幕风险管理员与定义的组分离。  此角色组中的用户可以创建、读取、更新和删除内幕风险管理策略、全局设置和角色组分配。 |
 | **内幕风险管理分析师** | 使用此组可将权限分配给将充当内幕风险案例分析人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例和通知模板。 他们无法访问内幕风险内容浏览器。 |
 | **内幕风险管理调查人员** | 使用此组可将权限分配给将充当内部人员风险数据调查人员的用户。 此角色组中的用户可以访问所有内幕风险管理警报、案例、通知模板和内容浏览器。 |
@@ -165,7 +165,7 @@ DLP 策略有助于标识用户在内部人员风险管理中激活风险评分�
     - [异常检测](insider-risk-management-settings.md#anomaly-detections)
     - [攻击性语言检测](insider-risk-management-settings.md#offensive-language-detections)
     - [警报音量级别](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender 高级威胁防护警报状态](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender for Endpoint 警报状态](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [域设置](insider-risk-management-settings.md#domains-preview)
 6. 在 " **导出通知** " 页面上，启用 "使用 Office 365 管理 api 导出内幕风险警报信息（如果需要）"。
 7. 在 " **优先级用户组** " 页上，创建一个优先级用户组并添加用户（如果在 **步骤 3** 中未创建）。

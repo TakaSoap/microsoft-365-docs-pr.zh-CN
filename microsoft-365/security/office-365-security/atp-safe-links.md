@@ -25,26 +25,26 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 在本文中，管理员可以了解 Office 365 高级威胁防护 (ATP) 中的安全链接保护，以保护其组织免受使用恶意 Url 的网络钓鱼和其他攻击。
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: 在本文中，管理员可以了解 Office 365 的 Defender 中的安全链接保护，以保护其组织免受使用恶意 Url 的网络钓鱼和其他攻击的攻击。
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806722"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846052"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 中的安全链接
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全链接
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文适用于具有 [Office 365 高级威胁防护 (ATP) ](office-365-atp.md)的商业客户。 如果使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 个人，并且要在 Outlook 中查找有关 Safelinks 的信息，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender For Office 365](office-365-atp.md)的商业客户。 如果使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 个人，并且要在 Outlook 中查找有关 Safelinks 的信息，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全链接是 [Office 365 高级威胁防护](office-365-atp.md) 中的一项功能，提供了对邮件流中的入站电子邮件进行 URL 扫描和重写，以及在电子邮件和其他位置中的 url 和链接的单击时验证。 除了 Exchange Online Protection (EOP) 中的入站电子邮件 [和反恶意软件保护](anti-spam-and-anti-malware-protection.md) 之外，还会对安全链接进行扫描。 安全链接扫描可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接的攻击。
+安全链接是在 [Office 365 的 Defender](office-365-atp.md) 中的一项功能，可提供邮件流中的入站电子邮件的 URL 扫描和重写，以及电子邮件和其他位置中的 url 和链接的单击时验证时间。 除了 Exchange Online Protection (EOP) 中的入站电子邮件 [和反恶意软件保护](anti-spam-and-anti-malware-protection.md) 之外，还会对安全链接进行扫描。 安全链接扫描可帮助保护您的组织免受网络钓鱼和其他攻击中使用的恶意链接的攻击。
 
 安全链接保护在以下位置可用：
 
-- **电子邮件** ：对电子邮件中的链接的安全链接保护由安全链接策略控制。 没有默认安全链接策略，因此， **若要获取电子邮件中安全链接的保护，您需要创建一个或多个安全链接策略** 。 有关说明，请参阅 [在 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+- **电子邮件** ：对电子邮件中的链接的安全链接保护由安全链接策略控制。 没有默认安全链接策略，因此， **若要获取电子邮件中安全链接的保护，您需要创建一个或多个安全链接策略** 。 有关说明，请参阅 [在 Microsoft Defender For Office 365 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
 
   有关电子邮件的安全链接保护的详细信息，请参阅本文后面的 "电子邮件的 [安全链接设置](#safe-links-settings-for-email-messages) " 一节。
 
@@ -52,7 +52,7 @@ ms.locfileid: "48806722"
 
   有关团队中的安全链接保护的详细信息，请参阅本主题后面的 " [Microsoft 团队的安全链接设置](#safe-links-settings-for-microsoft-teams) " 一节。
 
-- **Office 365 应用程序** ： office 365 应用程序的安全链接保护在受支持的桌面、移动设备和 web 接入点中可用。 在不安全链接策略 **之外** 的全局设置中为 Office 365 应用程序 **配置** 安全链接保护。 有关说明，请参阅 [在 Office 365 ATP 中配置安全链接设置的全局设置](configure-global-settings-for-safe-links.md)。
+- **Office 365 应用程序** ： office 365 应用程序的安全链接保护在受支持的桌面、移动设备和 web 接入点中可用。 在不安全链接策略 **之外** 的全局设置中为 Office 365 应用程序 **配置** 安全链接保护。 有关说明，请参阅 [在 Microsoft Defender For Office 365 中配置安全链接设置的全局设置](configure-global-settings-for-safe-links.md)。
 
   但是，对 Office 365 应用程序的安全链接保护仅 **适用** 于包含在活动安全链接策略中的用户。 如果用户不包含在活动的安全链接策略中，则用户不会在受支持的 Office 365 应用程序中获取安全链接保护。
 
@@ -71,11 +71,11 @@ ms.locfileid: "48806722"
   - [Office 365 应用程序的安全链接设置](#safe-links-settings-for-office-365-apps)
   - [安全链接的 "阻止以下 Url" 列表](#block-the-following-urls-list-for-safe-links)
 
-下表介绍了 Microsoft 365 和 Office 365 组织中的安全链接的应用场景，其中包括 ATP (换言之，缺少许可不是示例) 中的一个问题。
+下表介绍了 Microsoft 365 和 Office 365 组织中的安全链接的应用场景，其中包括适用于 Office 的 Defender 365 (换句话说，缺少许可不是示例) 中的一个问题。
 
 ****
 
-|方案|结果|
+|应用场景|结果|
 |---|---|
 |Jean 是市场营销部门的成员。 针对 Office 365 应用程序的安全链接保护在安全链接的全局设置中处于打开状态，并且存在适用于市场营销部门成员的安全链接策略。 Jean 在电子邮件中打开 PowerPoint 演示文稿，然后单击演示文稿中的 URL。|Jean 受安全链接保护。 <br/><br/> Jean 包含在安全链接策略中，并且启用了对 Office 365 应用的安全链接保护。 <br/><br/> 有关 Office 365 应用程序中的安全链接保护要求的详细信息，请参阅本文后面的 " [office 365 应用程序的安全链接设置](#safe-links-settings-for-office-365-apps) " 一节。|
 |丽丽的 Microsoft 365 E5 组织没有配置安全链接策略。 Chris 收到来自外部发件人的电子邮件，其中包含最终单击的恶意网站的 URL。|丽丽不受安全链接的保护。 <br/><br/> 管理员必须至少为任何人创建一个安全链接策略，以在入站电子邮件中获取安全链接保护。 若要获取安全链接保护，必须在策略条件中包含 Chris。|
@@ -180,7 +180,7 @@ ms.locfileid: "48806722"
 
 1. 用户启动 "团队" 应用。
 
-2. Microsoft 365 验证用户的组织是否包括 Office 365 ATP，以及是否将用户包括在启用了保护的 Microsoft 团队的活动安全链接策略中。
+2. Microsoft 365 验证用户的组织是否包含 Microsoft Defender for Office 365，以及该用户是否包含在启用 Microsoft 团队保护的活动安全链接策略中。
 
 3. 在聊天、群研讨、频道和选项卡中单击用户时，将对 Url 进行验证。
 

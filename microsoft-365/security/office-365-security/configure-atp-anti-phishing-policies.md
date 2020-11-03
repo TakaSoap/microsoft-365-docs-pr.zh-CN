@@ -1,5 +1,5 @@
 ---
-title: 配置 ATP 防钓鱼策略
+title: 在 Microsoft Defender for Office 365 中配置反网络钓鱼策略
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,48 +13,46 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何创建、修改和删除 Office 365 高级威胁防护 (Office 365 ATP) 中的组织中提供的高级防网络钓鱼策略。
-ms.openlocfilehash: d6655089556f7268222dc47e2196f8aa1fc3da4e
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+description: 管理员可以了解如何创建、修改和删除使用 Microsoft Defender for Office 365 的组织中提供的高级反网络钓鱼策略。
+ms.openlocfilehash: 9e07107c302f83b71a97517b11e71eac81f84f6b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769216"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845920"
 ---
-# <a name="configure-atp-anti-phishing-policies"></a>配置 ATP 防钓鱼策略
+# <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置反网络钓鱼策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-ATP 反网络钓鱼策略是 [Office 365 高级威胁防护](office-365-atp.md)的一部分。 ATP 反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection 中的反网络钓鱼策略之间的差异 (EOP) 和 ATP 反网络钓鱼策略的详细信息，请参阅 [反钓鱼保护](anti-phishing-protection.md)。
+[Microsoft Defender For Office 365](office-365-atp.md)中的反网络钓鱼策略可帮助保护您的组织免受恶意的基于模拟的网络钓鱼攻击和其他类型的网络钓鱼攻击。 有关 Exchange Online Protection 中的反网络钓鱼策略之间的差异的详细信息 (EOP) 和 Microsoft Defender for Office 365 中的反网络钓鱼策略，请参阅 [反钓鱼防护](anti-phishing-protection.md)。
 
-管理员可以查看、编辑和配置 (，但不能删除默认的 ATP 反网络钓鱼策略) 。 为了获得更多的粒度，您还可以创建适用于组织中的特定用户、组或域的自定义 ATP 反网络钓鱼策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
+管理员可以查看、编辑和配置 (，但不能删除默认的反网络钓鱼策略) 。 为了更细致，您还可以创建适用于组织中的特定用户、组或域的自定义反网络钓鱼策略。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-您可以在安全 & 合规性中心或 Exchange Online PowerShell 中配置 ATP 反网络钓鱼策略。
+您可以在安全 & 合规中心 "或 Exchange Online PowerShell 中配置反网络钓鱼策略。
 
-有关在 Exchange Online Protection 组织中使用的防欺诈策略中配置更有限的信息 (也就是说，没有 Office 365 ATP) 的 Microsoft 365 组织，请参阅 [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
+有关在 Exchange Online Protection 组织中提供的更有限的防仿冒策略中的信息 (也就是说，没有 Microsoft Defender for Office 365) 的组织，请参阅 [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)。
 
-## <a name="atp-anti-phishing-policies-in-the-security--compliance-center-vs-powershell"></a>Security & 合规性中心 vs PowerShell 中的 ATP 反网络钓鱼策略
-
-ATP 反网络钓鱼策略的基本要素为：
+反网络钓鱼策略的基本元素为：
 
 - **反网络钓鱼策略** ：指定要启用或禁用的网络钓鱼防护，以及要应用选项的操作。
 - **反网络钓鱼规则** ：指定策略应用于) 反网络钓鱼策略的 (的优先级和收件人筛选器。
 
-在安全 & 合规中心中管理 ATP 反网络钓鱼策略时，这两个元素之间的差异并不明显：
+在安全 & 合规中心中管理反网络钓鱼策略时，这两个元素之间的差异并不明显：
 
 - 创建策略时，实际上是同时创建反网络钓鱼规则和关联的反网络钓鱼策略，同时为两者使用相同的名称。
 - 修改策略时，与名称、优先级、启用或禁用以及收件人筛选器相关的设置将修改反网络钓鱼规则。 所有其他设置将修改关联的反网络钓鱼策略。
 - 删除策略时，将删除反网络钓鱼规则和关联的反网络钓鱼策略。
 
-在 Exchange Online PowerShell 中，可以单独管理策略和规则。 有关详细信息，请参阅本主题后面的 [使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略](#use-exchange-online-powershell-to-configure-atp-anti-phishing-policies) 一节。
+在 Exchange Online PowerShell 中，可以单独管理策略和规则。 有关详细信息，请参阅本主题后面的 [使用 Exchange Online PowerShell 配置 Microsoft Defender For Office 365 中的反网络钓鱼策略](#use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365) 一节。
 
-每个 Office 365 ATP 组织都具有一个名为 Office365 AntiPhish 的内置 ATP 反网络钓鱼策略，该策略具有以下属性：
+每个 Microsoft Defender for Office 365 组织都具有一个名为 Office365 AntiPhish 的内置反网络钓鱼策略，该策略具有以下属性：
 
 - 该策略将应用于组织中的所有收件人，即使没有反网络钓鱼规则 (收件人筛选器与策略关联) 。
 - 该策略具有无法修改的自定义优先级值“ **最低** ”（表示此策略始终最后应用）。 你创建的任何自定义策略始终具有更高的优先级。
 - 该策略是默认策略（ **IsDefault** 属性的值为 `True`），你无法删除默认策略。
 
-若要提高反钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义 ATP 反网络钓鱼策略。
+若要提高 Microsoft Defender for Office 365 中防钓鱼保护的有效性，可以使用应用于特定用户或用户组的更严格的设置来创建自定义反网络钓鱼策略。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -64,27 +62,27 @@ ATP 反网络钓鱼策略的基本要素为：
 
 - 您需要先分配权限，然后才能执行本文中的过程：
 
-  - 若要添加、修改和删除 ATP 反网络钓鱼策略，您必须是下列角色组之一的成员：
+  - 若要添加、修改和删除反网络钓鱼策略，您必须是下列角色组之一的成员：
 
     - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“ **组织管理** ”或“ **安全管理员** ”。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **组织管理** ”或“ **清洁管理** ”。
 
-  - 若要对 ATP 反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：
+  - 若要对反网络钓鱼策略进行只读访问，您必须是下列角色组之一的成员：
 
     - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“ **安全读取者** ”。
     - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **仅查看组织管理** ”。
 
-- 有关 ATP 反网络钓鱼策略的建议设置，请参阅 [atp 反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings)。
+- 有关 Microsoft Defender for Office 365 中的反网络钓鱼策略的建议设置，请参阅 [Defender For office 365 设置中的反网络钓鱼策略](recommended-settings-for-eop-and-office365-atp.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)。
 
 - 允许使用最长30分钟的时间来应用新的或更新的策略。
 
 - 有关在筛选管道中应用反网络钓鱼策略的位置的信息，请参阅 [电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-## <a name="use-the-security--compliance-center-to-create-atp-anti-phishing-policies"></a>使用安全 & 合规性中心创建 ATP 反网络钓鱼策略
+## <a name="use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全 & 合规性中心在 Microsoft Defender for Office 365 中创建反网络钓鱼策略
 
-在安全 & 合规中心中创建自定义 ATP 反网络钓鱼策略，将同时为两者创建反钓鱼规则和关联的反网络钓鱼策略，同时为二者使用相同的名称。
+在安全 & 合规性中心中创建自定义反网络钓鱼策略将同时使用相同的名称创建反钓鱼诈骗规则和关联的反网络钓鱼策略。
 
-创建 ATP 反网络钓鱼策略时，您只能指定策略名称、说明以及标识该策略适用于的收件人筛选器。 创建策略后，您可以修改策略以更改或查看默认的反网络钓鱼设置。
+创建反网络钓鱼策略时，只能指定策略名称、说明和标识应用策略的收件人筛选器。 创建策略后，您可以修改策略以更改或查看默认的反网络钓鱼设置。
 
 1. 在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼** "。
 
@@ -96,7 +94,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    - **说明** ：输入策略的可选说明。
 
-   完成后，单击“下一步”  。
+   完成后，单击“下一步”。
 
 4. 在显示的 " **应用于** " 页上，确定该策略应用于的内部收件人。
 
@@ -120,7 +118,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    若要添加例外，请单击 " **添加条件** "，并在 " **除非** " 下选择例外。 设置和行为与条件完全相同。
 
-   完成后，单击“下一步”  。
+   完成后，单击“下一步”。
 
 5. 在显示的 " **查看您的设置** " 页上，查看您的设置。 您可以在每个设置上单击 " **编辑** " 以修改它。
 
@@ -128,15 +126,15 @@ ATP 反网络钓鱼策略的基本要素为：
 
 6. 在出现的确认对话框中，单击 **"确定"** 。
 
-在使用这些常规策略设置创建 ATP 反网络钓鱼策略后，请按照下一节中的说明操作，在策略中配置保护设置。
+在使用这些常规设置创建反网络钓鱼策略后，请按照下一节中的说明操作，在策略中配置保护设置。
 
-## <a name="use-the-security--compliance-center-to-modify-atp-anti-phishing-policies"></a>使用安全 & 合规性中心修改 ATP 反网络钓鱼策略
+## <a name="use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全 & 合规性中心修改 Microsoft Defender for Office 365 中的反网络钓鱼策略
 
-使用以下过程可修改 ATP 反网络钓鱼策略：创建的新策略或已自定义的现有策略。
+使用以下过程可修改反网络钓鱼策略：创建的新策略或已自定义的现有策略。
 
 1. 如果尚不存在，请打开安全 & 合规中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼** 。
 
-2. 选择要修改的自定义 ATP 反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
+2. 选择要修改的自定义反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
 
 3. 将出现 " **编辑 \<name\> 您的策略** " 浮出控件。 单击任意部分中的 " **编辑** " 可访问该部分中的设置。
 
@@ -144,7 +142,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    - 在分区中单击 " **编辑** " 后，可用的设置将以向导格式显示，但您可以按任意顺序在页面中进行跳转，也可以单击任何页面上的 " **保存** " (或 " **取消** " 或 " **关闭** ![ 关闭 ](../../media/scc-remove-icon.png) " 图标，以返回到 " **\<name\> 编辑策略** " 页面 (您无需访问向导的最后一页以保存或离开) 。
 
-4. **策略设置** ：单击 " **编辑** " 可修改在上一节中 [创建策略](#use-the-security--compliance-center-to-create-atp-anti-phishing-policies) 时可用的相同设置：
+4. **策略设置** ：单击 " **编辑** " 可修改在上一节中 [创建策略](#use-the-security--compliance-center-to-create-anti-phishing-policies-in-microsoft-defender-for-office-365) 时可用的相同设置：
 
    - **名称**
    - **说明**
@@ -153,7 +151,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    完成后，请单击任意页面上的 " **保存** "。
 
-5. **模拟** ：单击 " **编辑** " 以修改策略中的受保护的发件人和受保护的域。 这些设置是策略的一个条件，用于标识欺骗性发件人，以在入站邮件的发件人地址中单独或按域) 查找 (。 有关详细信息，请参阅 [ATP 反网络钓鱼策略中的模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。
+5. **模拟** ：单击 " **编辑** " 以修改策略中的受保护的发件人和受保护的域。 这些设置是策略的一个条件，用于标识欺骗性发件人，以在入站邮件的发件人地址中单独或按域) 查找 (。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的模拟设置中的反网络钓鱼策略](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
    - **添加要保护的用户** ：默认值为 **Off** 。 若要打开它，请将切换滑到 **"开** "，然后单击出现的 " **添加用户** " 按钮。
 
@@ -208,7 +206,7 @@ ATP 反网络钓鱼策略的基本要素为：
      - **显示模拟域的提示** ：默认值为 **Off** 。 若要打开它，请将开关滑到 **"开** "。
      - **显示不正常字符的提示** ：默认值为 **Off** 。 若要打开它，请将开关滑到 **"开** "。
 
-     完成时，请单击“保存”  。
+     完成时，请单击“保存”。
 
    - **邮箱智能** ：
 
@@ -275,7 +273,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
    完成后，请单击任意页面上的 " **保存** "。
 
-7. **高级设置** ：单击 " **编辑** " 以配置高级网络钓鱼阈值。 有关详细信息，请参阅 [ATP 反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)。
+7. **高级设置** ：单击 " **编辑** " 以配置高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。
 
    - **高级网络钓鱼阈值** ：选择下列值之一：
 
@@ -290,15 +288,15 @@ ATP 反网络钓鱼策略的基本要素为：
 
 8. 返回到 " **编辑你的 \<Name\> 策略** " 页，查看你的设置，然后单击 " **关闭** "。
 
-### <a name="use-the-security--compliance-center-to-modify-the-default-atp-anti-phishing-policy"></a>使用安全 & 合规性中心修改默认的 ATP 反网络钓鱼策略
+### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy-in-microsoft-defender-for-office-365"></a>使用安全 & 合规性中心修改 Microsoft Defender for Office 365 中的默认反网络钓鱼策略
 
-默认的 ATP 反网络钓鱼策略名为 Office365 AntiPhish Default，且不会出现在策略列表中。 若要修改默认的 ATP 反网络钓鱼策略，请执行以下步骤：
+Microsoft Defender for Office 365 中的默认反网络钓鱼策略名为 Office365 AntiPhish Default，并且不会出现在策略列表中。 若要修改默认的反网络钓鱼策略，请执行以下步骤：
 
 1. 在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼** "。
 
 2. 在 " **反钓鱼网站** " 页上，单击 " **默认策略** "。
 
-3. 将显示 " **编辑您的策略 Office365 AntiPhish 默认** 页"。 以下各节均可用，其中包含 [修改自定义策略](#use-the-security--compliance-center-to-modify-atp-anti-phishing-policies)时的相同设置：
+3. 将显示 " **编辑您的策略 Office365 AntiPhish 默认** 页"。 以下各节均可用，其中包含 [修改自定义策略](#use-the-security--compliance-center-to-modify-anti-phishing-policies-in-microsoft-defender-for-office-365)时的相同设置：
 
    - **模拟**
    - **哄骗**
@@ -312,7 +310,7 @@ ATP 反网络钓鱼策略的基本要素为：
 
 4. 在 " **编辑策略 Office365 AntiPhish 默认** 页面上，查看您的设置，然后单击" **关闭** "。
 
-### <a name="enable-or-disable-custom-atp-anti-phishing-policies"></a>启用或禁用自定义 ATP 反网络钓鱼策略
+### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中启用或禁用自定义反网络钓鱼策略
 
 1. 在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼** "。
 
@@ -324,15 +322,15 @@ ATP 反网络钓鱼策略的基本要素为：
 
 您不能禁用默认的反网络钓鱼策略。
 
-### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>设置自定义 ATP 反网络钓鱼策略的优先级
+### <a name="set-the-priority-of-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中设置自定义反网络钓鱼策略的优先级
 
-默认情况下，ATP 反网络钓鱼策略的优先级将取决于它们创建的顺序， (较旧的策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+默认情况下，会为反网络钓鱼策略指定一个优先级，这取决于它们的创建顺序 (较旧策略的优先级低于旧策略) 。 低优先级数字表示高策略优先级（0 是最高优先级），且策略按照优先级顺序进行处理（高优先级策略先处理，低优先级策略后处理）。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-自定义 ATP 反网络钓鱼策略按其处理顺序显示， (第一个策略的 **优先级** 值为 0) 。 名为 Office365 AntiPhish 的默认反网络钓鱼策略默认的自定义优先级值为 **最低** ，无法更改。
+自定义反网络钓鱼策略按其处理顺序显示， (第一个策略的 **优先级** 值为 0) 。 名为 Office365 AntiPhish 的默认反网络钓鱼策略默认的自定义优先级值为 **最低** ，无法更改。
 
- **注意** ：在安全 & 合规性中心中，您只能在创建 ATP 反网络钓鱼策略时更改其优先级。 在 PowerShell 中，您可以在创建反网络钓鱼规则时替代默认优先级 (这可能会影响现有规则) 的优先级。
+ **注意** ：在安全 & 合规性中心中，您只能在创建后更改反网络钓鱼策略的优先级。 在 PowerShell 中，您可以在创建反网络钓鱼规则时替代默认优先级 (这可能会影响现有规则) 的优先级。
 
 若要更改策略的优先级，请在策略的属性中单击 " **提高优先级** " 或 " **降低优先级** " (您不能直接修改安全 & 合规性中心) 中的 **优先级** 号码。 如果有多个策略，则更改策略的优先级仅是有意义的。
 
@@ -342,29 +340,29 @@ ATP 反网络钓鱼策略的基本要素为：
 
 3. 将出现 " **编辑 \<name\> 您的策略** " 浮出控件。
 
-   - **优先级** 值为 **0** 的自定义 ATP 反网络钓鱼策略只有 " **降低优先级** " 按钮可用。
+   - **优先级** 值为 **0** 的自定义反网络钓鱼策略只有 " **降低优先级** " 按钮可用。
 
-   - 具有最低 **优先级** 值的自定义 ATP 反网络钓鱼策略 (例如， **3** ) 仅有 " **提高优先级** " 按钮可用。
+   - 具有最低 **优先级** 值的自定义反网络钓鱼策略 (例如， **3** ) 仅有 " **提高优先级** " 按钮可用。
 
    - 如果您具有三个或更多自定义的反网络钓鱼策略，则在最高和最低优先级值之间的策略将具有 " **增加优先级** " 和 " **降低优先级** " 按钮。
 
 4. 单击 " **提高优先级** " 或 " **降低优先级** " 以更改 **优先级** 值。
 
-5. 完成后，单击“关闭”  。
+5. 完成后，单击“关闭”。
 
-## <a name="use-the-security--compliance-center-to-view-atp-anti-phishing-policies"></a>使用安全 & 合规中心查看 ATP 反网络钓鱼策略
+## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全 & 合规中心在 Microsoft Defender for Office 365 中查看反网络钓鱼策略
 
 1. 在安全 & 合规性中心，并转到 **威胁管理** \> **策略** \> **ATP 反网络钓鱼** 。
 
 2. 采取以下步骤之一：
 
-   - 选择要查看的自定义 ATP 反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
+   - 选择要查看的自定义反网络钓鱼策略。 如果已被选中，请取消选择并再次选择它。
 
    - 单击 " **默认策略** " 以查看默认的反网络钓鱼策略。
 
 3. 将出现 " **编辑 \<name\> 策略** " 浮出控件，您可以在其中查看设置和值。
 
-## <a name="use-the-security--compliance-center-to-remove-atp-anti-phishing-policies"></a>使用安全 & 合规性中心删除 ATP 反网络钓鱼策略
+## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用安全 & 合规性中心删除 Microsoft Defender for Office 365 中的反网络钓鱼策略
 
 1. 在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼** "。
 
@@ -374,9 +372,9 @@ ATP 反网络钓鱼策略的基本要素为：
 
 无法删除默认策略。
 
-## <a name="use-exchange-online-powershell-to-configure-atp-anti-phishing-policies"></a>使用 Exchange Online PowerShell 配置 ATP 反网络钓鱼策略
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>使用 Exchange Online PowerShell 在 Microsoft Defender for Office 365 中配置反网络钓鱼策略
 
-如前面所述，ATP 反垃圾邮件策略由反网络钓鱼策略和反网络钓鱼规则组成。
+如前面所述，反垃圾邮件策略由反网络钓鱼策略和反网络钓鱼规则组成。
 
 在 Exchange Online PowerShell 中，反网络钓鱼策略和反网络钓鱼规则之间的区别显而易见。 您可以使用 **\* -AntiPhishPolicy** cmdlet 管理反网络钓鱼策略，并使用 **\* -AntiPhishRule** cmdlet 管理反网络钓鱼规则。
 
@@ -614,7 +612,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
-若要验证是否已成功配置 ATP 反网络钓鱼策略，请执行以下任一步骤：
+若要验证是否已在 Microsoft Defender for Office 365 中成功配置了反网络钓鱼策略，请执行以下任一步骤：
 
 - 在 "安全性 & 合规性中心中，转到" **威胁管理** \> **策略** \> **ATP 反网络钓鱼** "。 验证策略列表、策略的 **状态** 值及其 **优先级** 值。 若要查看更多详细信息，请执行以下步骤之一：
 

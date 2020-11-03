@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430795"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846504"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自动调查的详细信息和结果
 
@@ -34,9 +34,9 @@ ms.locfileid: "48430795"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
-在 Microsoft 威胁防护中进行自动调查时，有关该调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有 [所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。 
+在 Microsoft 365 Defender 中进行自动调查时，有关调查的详细信息在自动调查过程的过程中和之后都是可用的。 如果您具有 [所需的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)，则可以在调查详细信息视图中查看这些详细信息。 调查详细信息视图为您提供了最新状态，并能够批准任何挂起的操作。 
 
 ![调查详细信息](../../media/mtp-air-investdetails.png)
 
@@ -52,7 +52,7 @@ ms.locfileid: "48430795"
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
-2. 在“导航”窗格中，选择“操作中心”****。 
+2. 在“导航”窗格中，选择“操作中心”。 
 
 3. 在 " **挂起** " 或 " **历史记录** " 选项卡上，选择一个项目。 如果您具有 [必要的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)，则可以批准 (或拒绝) 挂起的操作。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48430795"
 
 1. 转到 [https://security.microsoft.com](https://security.microsoft.com) 并登录。 
 
-2. 在导航窗格中，选择 " **事件**"。 
+2. 在导航窗格中，选择 " **事件** "。 
 
 3. 在列表中选择一个项目以打开 "事件详细信息" 视图。<br/>![事件详细信息](../../media/mtp-incidentdetails-tabs.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "48430795"
 
 ![调查详细信息](../../media/mtp-air-investdetails.png)
 
-在调查详细信息视图中，您可以查看下表中所述的有关 **调查图**、 **警报**、 **设备**、 **标识**、 **关键发现**、 **实体**、 **日志**和 **待定操作** 选项卡的信息。
+在调查详细信息视图中，您可以查看下表中所述的有关 **调查图** 、 **警报** 、 **设备** 、 **标识** 、 **关键发现** 、 **实体** 、 **日志** 和 **待定操作** 选项卡的信息。
 
 |Tab    |说明 |
 |--------|--------|

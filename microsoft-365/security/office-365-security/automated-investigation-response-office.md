@@ -21,12 +21,12 @@ description: 在 Microsoft Defender for Office 365 中获取自动调查和响�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447103"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845968"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动调查和响应 (空中) 的概述
 
@@ -62,7 +62,7 @@ ms.locfileid: "48447103"
 > [!NOTE]
 > 标有星号 () 的警报在 `*` Microsoft 365 安全中心中的相应警报策略中被分配了一个 *信息性* 严重性，电子邮件通知处于关闭状态。 可以通过 [报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 
 
-若要查看警报，请在安全 & 合规性中心中，选择 "**通知**" "  >  **查看警报**"。 选择一个警报以查看其详细信息，然后在那里使用 " **查看调查** " 链接转到相应的 [调查](air-view-investigation-results.md#investigation-graph)。  
+若要查看警报，请在安全 & 合规性中心中，选择 " **通知** " "  >  **查看警报** "。 选择一个警报以查看其详细信息，然后在那里使用 " **查看调查** " 链接转到相应的 [调查](air-view-investigation-results.md#investigation-graph)。  
 
 > [!NOTE]
 > 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
@@ -73,7 +73,7 @@ ms.locfileid: "48447103"
 
 ## <a name="security-playbooks"></a>安全行动手册
 
-安全行动手册是后端策略，是 Microsoft Defender for Office 365 和 Microsoft 威胁防护中的自动化的核心。 空中提供的安全行动手册基于常见的实际安全方案，并根据安全操作团队的反馈进行开发。 当您的组织中触发特定警报时，将自动启动安全行动手册。 通知触发后，相关的行动手册将由自动调查和响应系统运行。 调查根据特定警报的操作手册分析预警的步骤，查看所有关联的元数据 (包括电子邮件、用户、主题、发件人等 ) 。 根据调查行动手册的发现，AIR 推荐了组织的安全团队可采取的一组操作来控制和缓解威胁。 
+安全行动手册是后端策略，是 Microsoft Defender for Office 365 和 Microsoft 365 Defender 中的自动化的核心。 空中提供的安全行动手册基于常见的实际安全方案，并根据安全操作团队的反馈进行开发。 当您的组织中触发特定警报时，将自动启动安全行动手册。 通知触发后，相关的行动手册将由自动调查和响应系统运行。 调查根据特定警报的操作手册分析预警的步骤，查看所有关联的元数据 (包括电子邮件、用户、主题、发件人等 ) 。 根据调查行动手册的发现，AIR 推荐了组织的安全团队可采取的一组操作来控制和缓解威胁。 
 
 你将使用空中获取的安全行动手册旨在解决组织在当今的电子邮件中遇到的最常见威胁。 它们基于安全操作和事件响应团队的输入，包括帮助保护 Microsoft 和客户资产的人员。
 
@@ -118,7 +118,7 @@ ms.locfileid: "48447103"
 - 类似的电子邮件通过电子邮件群集搜索进行标识。
 - 该信号与其他平台（如 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共享。
 - 确定是否有用户通过可疑电子邮件中的任何恶意链接单击过。
-- 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 Office 365 高级威胁防护 ([ATP](office-365-atp.md)) 中进行检查，以查看用户是否报告了任何其他类似的消息。
+- 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 ([Microsoft Defender for Office 365](office-365-atp.md)) 中进行检查，以查看用户是否报告了其他类似的邮件。
 - 将执行检查以查看是否已泄露用户。 此检查跨 Office 365、 [Microsoft 云应用安全性](https://docs.microsoft.com/cloud-app-security)和 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)之间的信号，关联任何相关的用户活动异常。
 
 在搜寻阶段，会为各种搜寻步骤分配风险和威胁。 
@@ -133,7 +133,7 @@ ms.locfileid: "48447103"
 
 ![包含所选邮件的资源管理器](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-使用 " **操作** " 菜单，可以选择 **触发调查**。
+使用 " **操作** " 菜单，可以选择 **触发调查** 。
 
 ![选定邮件的 "操作" 菜单](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
@@ -143,7 +143,7 @@ ms.locfileid: "48447103"
 
 Microsoft Defender for Office 365 中的空中功能包括 [报告 & 详细信息](air-view-investigation-results.md) ，安全操作团队可以使用这些信息来监视和解决威胁。 但您也可以将空中功能与其他解决方案集成。 示例包括安全信息和事件管理 (SIEM) 系统、案例管理系统或自定义报告解决方案。 这些类型的集成可以通过使用 [Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)来实现。 
 
-例如，最近，一个组织为其安全操作团队设置了一种方法，以查看用户报告的已由 AIR 处理的网络钓鱼警报。 其解决方案将相关警报与组织的 SIEM 服务器及其事例管理系统集成在一起。 该解决方案大大减少了误报的数量，使其安全操作团队能够将他们的时间和精力集中在真正的威胁上。 若要了解有关此自定义解决方案的详细信息，请参阅 [技术社区博客：使用 Office 365 ATP 和 O365 管理 API 提高 SOC 的有效性](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
+例如，最近，一个组织为其安全操作团队设置了一种方法，以查看用户报告的已由 AIR 处理的网络钓鱼警报。 其解决方案将相关警报与组织的 SIEM 服务器及其事例管理系统集成在一起。 该解决方案大大减少了误报的数量，使其安全操作团队能够将他们的时间和精力集中在真正的威胁上。 若要了解有关此自定义解决方案的详细信息，请参阅 [技术社区博客：使用 Microsoft Defender For Office 365 和 O365 管理 API 提高 SOC 的有效性](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
 ## <a name="next-steps"></a>后续步骤
 

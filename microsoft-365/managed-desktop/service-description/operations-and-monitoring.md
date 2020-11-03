@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 8355b1609746abee12e4ca02942a567fec940623
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655719"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846212"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 托管桌面操作和监视
 
@@ -87,7 +87,7 @@ Microsoft 托管桌面服务由 Microsoft 在你可以执行其他管理活动�
 服务帐户 |-实施、安全地存储和管理凭据。<br> -对安全操作团队进行未经授权的访问或使用这些凭据。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不向 Microsoft 托管桌面服务帐户分配策略、多重身份验证、条件访问或应用程序部署。<br>-不重置密码或使用凭据。<br>-如果在 Intune 或 Azure 审核日志中观察到与这些服务帐户相关的可疑活动，请打开严重级别 C 支持对 Microsoft 托管桌面操作的请求。
 设备组 | -在 Microsoft 托管桌面组中实施和管理设备的成员身份。<br>-使用 Microsoft 托管桌面组来管理对设备的配置和更新的分配和发布。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改任何 Microsoft 托管桌面组的成员身份。<br>-仅使用组为服务（如 VPN、Windows Hello 企业版或电子邮件加密）或公司 Wi-Fi 配置文件配置分配企业证书。<br>-存在共同管理，请在部署 Configuration Manager 客户端时显式排除所有 Microsoft 托管桌面组。
 策略 |  -实施和管理 Microsoft 托管桌面策略，以控制服务中设备的配置状态。<br>-将更新部署到策略或 Windows，以增量方式使用设备组。<br> -显式排除针对非 Microsoft 托管桌面组的目标。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不编辑 microsoft 托管桌面服务不管理的设备或用户的 Microsoft 托管桌面策略或将其分配给这些策略。
-Microsoft Defender 高级威胁防护   | 监视和调查 Microsoft 托管桌面服务范围内的设备。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改
+Microsoft Defender for Endpoint | 监视和调查 Microsoft 托管桌面服务范围内的设备。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改
 适用于企业的 Microsoft Store |  为 Microsoft 托管桌面服务配置和维护 Windows Autopilot 配置文件。 | -创建针对计划配置更改请求信息的支持请求，包括配置详细信息、范围、时间线以及 Microsoft 评审的其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-不修改 Microsoft 托管桌面 Windows Autopilot 配置文件或添加/删除分配的设备的配置。
 证书 | | -在证书即将过期之前的60天内创建支持请求，并请求有关计划配置更改的信息，包括有关 Microsoft 审查的配置详细信息、范围、时间线和其他相关详细信息。<br>-仅在 Microsoft 托管桌面操作经过评估和建议后才应用更改。<br>-更新配置证书配置文件、VPN 配置文件和 Wi-Fi 配置文件所需的所有证书。
 

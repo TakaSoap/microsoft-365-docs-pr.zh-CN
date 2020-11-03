@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289479"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846200"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全技术
 
@@ -39,7 +39,7 @@ Microsoft 托管桌面可确保所有托管设备都受到保护和保护，并�
 --- | ---
 防病毒 | 已安装并配置 Microsoft Defender AV<br>Microsoft Defender AV 定义为最新
 全卷加密 |    Windows BitLocker 是 Microsoft 托管桌面设备的卷加密解决方案。<br><br>一旦将组织载入到服务中，将使用具有内置信任平台模块 (TPM) 的 Windows BitLocker 对设备进行加密，以防止在设备处于睡眠模式或关闭时对本地数据进行未经授权的访问。 
-监控 |    Microsoft Defender 高级威胁防护 (Microsoft Defender ATP) 用于跨所有 Microsoft 托管桌面设备的安全威胁监视。 Microsoft Defender ATP 允许企业客户检测、调查和响应公司网络中的高级威胁。 有关详细信息，请参阅 [Microsoft Defender 高级威胁防护。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+监控 |    Microsoft Defender for Endpoint 用于跨所有 Microsoft 托管桌面设备的安全威胁监视。 用于终结点的 Defender 允许企业客户检测、调查和响应公司网络中的高级威胁。 有关详细信息，请参阅 [Microsoft Defender For Endpoint。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 操作系统更新 |  Microsoft 托管桌面设备始终使用最新的安全更新进行保护。
 安全设备配置 |   Microsoft 托管桌面实现 Microsoft 安全基准。 有关详细信息，请参阅 [Windows 安全基准。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 

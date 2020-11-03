@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289101"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846236"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -42,12 +42,12 @@ Web 应用程序 |  Yammer、Office 在浏览器、Delve、流、StaffHub、Powe
  |
  --- | ---
 Application Virtualization (App-v)  |    客户可以使用 Intune Win32 应用管理客户端部署 App-v 程序包。
-Microsoft Defender 高级威胁防护 |  Microsoft 托管桌面使用此来监视设备安全性。 
+Microsoft Defender for Endpoint |    Microsoft 托管桌面使用此来监视设备安全性。 
 
 ## <a name="enterprise-mobility--security-e5"></a>企业移动性 + 安全性 E5
 
  |
  --- | ---
 企业移动性 + 安全 E3<br>Azure Active Directory Premium P2 |    您可以使用企业移动性 + 安全 E3 和 Azure Active Directory 高级 P2 的所有功能来管理 MDM 设备。
-Microsoft 云应用安全 |  可以将此可选功能与 Microsoft 托管桌面结合使用。
+Microsoft Cloud App Security |  可以将此可选功能与 Microsoft 托管桌面结合使用。
 Azure 信息保护 P2  | 可以将此可选功能与 Microsoft 托管桌面结合使用。

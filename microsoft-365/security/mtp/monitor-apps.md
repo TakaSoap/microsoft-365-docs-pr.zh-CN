@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429403"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846624"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
@@ -53,7 +53,7 @@ ms.locfileid: "48429403"
 
 ## <a name="understand-which-cloud-apps-are-used"></a>了解使用的是哪些云应用程序
 
-**发现的云应用 (类别) ** 显示您的组织中使用的应用程序类型。 它链接到 Cloud App Security 中的云发现仪表板。 有关详细信息，请参阅 [快速入门：使用已发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
+**发现的云应用 (类别)** 显示您的组织中使用的应用程序类型。 它链接到 Cloud App Security 中的云发现仪表板。 有关详细信息，请参阅 [快速入门：使用已发现的应用](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
 
 ![发现的云应用类别卡片](../../media/discovered-cloud-apps-categories.png)
 
@@ -65,10 +65,10 @@ ms.locfileid: "48429403"
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>监视基础架构工作负载的运行状况
 
-**基础结构运行状况** 在 Azure 安全中心中显示基础结构工作负荷的运行状况状态警报。
+**基础结构运行状况** 显示 Azure Defender 中的基础结构工作负荷的运行状况状态警报。
 
-Azure 安全中心在内部部署和云工作负载中提供统一的安全管理和高级威胁保护。 您可以从不同的源中收集、搜索和分析安全数据，包括防火墙和其他合作伙伴解决方案。
+Azure Defender * 在本地和云工作负载中提供了统一的 Office 365 安全管理和 Defender。 您可以从不同的源中收集、搜索和分析安全数据，包括防火墙和其他合作伙伴解决方案。
 
-有关详细信息，请参阅 [Azure 安全中心文档](https://docs.microsoft.com/azure/security-center/)。
+有关详细信息，请参阅 [Azure Defender * 文档](https://docs.microsoft.com/azure/security-center/)。
 
 ![基础结构运行状况卡片](../../media/infrastructure-health.png)

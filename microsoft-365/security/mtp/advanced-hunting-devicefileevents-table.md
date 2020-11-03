@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 21b8832010cab30f1834c4c6a94b4542c3b2b6a7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430087"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846144"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430087"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 `DeviceFileEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关文件创建、修改和其他文件系统事件的信息。 使用此参考来构建从此表返回信息的查询。
 

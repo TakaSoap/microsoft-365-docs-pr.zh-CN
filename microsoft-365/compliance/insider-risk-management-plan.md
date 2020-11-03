@@ -12,20 +12,20 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199768"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846270"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
-在您的组织中开始使用[内幕风险管理](insider-risk-management.md)之前，您的信息技术和合规性管理团队应检查重要的规划活动和注意事项。 在以下方面全面了解和规划部署可帮助确保您的内部风险管理功能的实施和使用与解决方案的最佳实践保持一致。
+在您的组织中开始使用 [内幕风险管理](insider-risk-management.md) 之前，您的信息技术和合规性管理团队应检查重要的规划活动和注意事项。 在以下方面全面了解和规划部署可帮助确保您的内部风险管理功能的实施和使用与解决方案的最佳实践保持一致。
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>与组织中的利益干系人合作
 
-确定组织中的相应利益干系人进行协作，以对内幕风险管理警报和案例采取措施。 一些建议的利益干系人（包括在初始规划中）和端到端的[内幕风险管理工作流](insider-risk-management.md#workflow)是组织中以下几个方面的人员：
+确定组织中的相应利益干系人进行协作，以对内幕风险管理警报和案例采取措施。 一些建议的利益干系人（包括在初始规划中）和端到端的 [内幕风险管理工作流](insider-risk-management.md#workflow) 是组织中以下几个方面的人员：
 
 - 信息技术
 - 合规性
@@ -38,11 +38,11 @@ ms.locfileid: "45199768"
 
 不同的地理位置和组织区域可能具有与您的组织的其他区域不同的合规性和隐私要求。 与这些领域的利益干系人合作，以确保他们了解内幕风险管理中的合规性和隐私控制，以及如何在组织的不同区域中使用它们。 在某些情况下，合规性和隐私要求可能需要策略来根据用户或管理部门的案例或策略要求来指定或限制某些利益干系人的调查和案例。
 
-如果您有特定利益干系人需要涉及特定区域、角色或部门中的用户的案例调查，您可能需要实现针对不同区域和人口的独立（即使相同）[内幕人士风险管理策略](insider-risk-management-policies.md)。 此配置将使右侧的利益干系人更轻松地会审和管理与其角色和区域相关的案例。 此外，您可能还需要考虑为一些区域创建流程和策略，在这些区域中，调查人员和审阅者与用户说出的语言相同，有助于简化内幕风险管理警报和案例的升级过程。
+如果您有特定利益干系人需要涉及特定区域、角色或部门中的用户的案例调查，您可能希望实施单独的 (，即使) [内幕风险管理策略](insider-risk-management-policies.md) 针对不同的地区和人口，也是如此。 此配置将使右侧的利益干系人更轻松地会审和管理与其角色和区域相关的案例。 此外，您可能还需要考虑为一些区域创建流程和策略，在这些区域中，调查人员和审阅者与用户说出的语言相同，有助于简化内幕风险管理警报和案例的升级过程。
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>规划评审和调查工作流
 
-选择 "专用利益干系人" 以在[Microsoft 365 合规性中心](https://compliance.microsoft.com/)中的定期节奏上监视和查看警报和事例。 请确保了解如何将不同的利益干系人分配给内幕风险管理中可用的不同角色组。
+选择 "专用利益干系人" 以在 [Microsoft 365 合规性中心](https://compliance.microsoft.com/)中的定期节奏上监视和查看警报和事例。 请确保了解如何将不同的利益干系人分配给内幕风险管理中可用的不同角色组。
 
 根据合规性管理团队的结构，您可以选择将用户分配给特定角色组，以管理不同的内幕风险管理功能集。 配置内幕风险管理时从这些角色组选项中进行选择：
 
@@ -57,16 +57,16 @@ ms.locfileid: "45199768"
 
 根据您计划实施内幕风险管理策略的方式，您需要拥有适当的 Microsoft 365 许可订阅，并了解并规划一些解决方案先决条件。
 
-**许可：** 内幕风险管理可作为 Microsoft 365 许可订阅的广泛选择的一部分提供。 有关详细信息，请参阅[内幕风险管理](insider-risk-management-configure.md#before-you-begin)文章入门。
+**许可：** 内幕风险管理可作为 Microsoft 365 许可订阅的广泛选择的一部分提供。 有关详细信息，请参阅 [内幕风险管理](insider-risk-management-configure.md#before-you-begin) 文章入门。
 
-如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以[将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)到现有订阅或注册 Microsoft 365 企业版 e5 的[试用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以 [将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Microsoft 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 **策略模板要求：** 根据您选择的策略模板，在组织中配置内幕风险管理之前，需要了解和规划这些要求：
 
-- 在使用 "**通过盗窃用户的数据失窃**" 模板时，您必须配置 MICROSOFT 365 HR 连接器以定期为组织中的用户导入让步和终止日期信息。 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[Import data WITH HR connector](import-hr-data.md)一文。
-- 使用**数据泄漏**模板时，必须配置至少一个数据丢失防护（DLP）策略以定义组织中的敏感信息，并为高严重性的 DLP 策略警报接收内幕风险警报。 有关为您的组织配置 DLP 策略的分步指南，请参阅[创建、测试和调整 DLP 策略一](create-test-tune-dlp-policy.md)文。
-- 在使用**安全策略冲突**模板时，您必须在 "Defender 安全中心" 中为内部人员风险管理集成启用 Microsoft Defender 高级威胁防护（ATP），以导入安全冲突警报。 有关启用 Microsoft Defender ATP 与内幕风险管理的分步指南，请参阅[配置 Microsoft defender 中的高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features)一文。
-- 使用**不满的用户**模板时，您必须配置 MICROSOFT 365 HR 连接器以定期为组织中的用户导入性能或降级状态信息。 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅[Import data WITH HR connector](import-hr-data.md)一文。
+- 在使用 " **通过盗窃用户的数据失窃** " 模板时，您必须配置 MICROSOFT 365 HR 连接器以定期为组织中的用户导入让步和终止日期信息。 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅 [Import data WITH HR connector](import-hr-data.md) 一文。
+- 使用 **数据泄漏** 模板时，必须配置至少一个数据丢失防护 (DLP) 策略以定义组织中的敏感信息，并接收高严重性的 DLP 策略警报的内幕风险警报。 有关为您的组织配置 DLP 策略的分步指南，请参阅 [创建、测试和调整 DLP 策略一](create-test-tune-dlp-policy.md) 文。
+- 在使用 **安全策略冲突** 模板时，您必须在 "Defender 安全中心" 中为内部人员风险管理集成启用 Microsoft Defender for Endpoint，以导入安全冲突警报。 请参阅 [在 Microsoft Defender 文章中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) ，以获取启用用于与内幕风险管理终结点集成的 Defender 的分步指南。
+- 使用 **不满的用户** 模板时，您必须配置 MICROSOFT 365 HR 连接器以定期为组织中的用户导入性能或降级状态信息。 有关为您的组织配置 Microsoft 365 HR 连接器的分步指南，请参阅 [Import data WITH HR connector](import-hr-data.md) 一文。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>在生产环境中与一小组用户进行测试
 
@@ -74,7 +74,7 @@ ms.locfileid: "45199768"
 
 在此测试过程中，将 anonymization 功能保留在策略设置中，以便在 "内幕风险管理" 控制台中匿名用户显示名称，以维护工具中的隐私。 此设置可帮助保护具有策略匹配项的用户的隐私，并有助于促进 objectivity 在数据调查和分析审查中的内幕风险警报。
 
-如果配置 "内幕风险管理策略" 后未立即看到任何警报，这可能意味着尚未满足最低风险阈值。 检查策略是否已被触发并按预期工作的良好方法是查看用户是否在 "**用户**" 页上的策略范围。
+如果配置 "内幕风险管理策略" 后未立即看到任何警报，这可能意味着尚未满足最低风险阈值。 检查策略是否已被触发并按预期工作的良好方法是查看用户是否在 " **用户** " 页上的策略范围。
 
 ## <a name="resources-for-stakeholders"></a>利益干系人的资源
 
@@ -90,5 +90,5 @@ ms.locfileid: "45199768"
 
 准备好为你的组织配置内幕风险管理吗？ 查看以下文章：
 
-- [开始使用 "内幕风险管理" 设置](insider-risk-management-settings.md)配置全局策略设置。
-- [开始使用 "内幕风险管理](insider-risk-management-configure.md)" 配置先决条件、创建策略并开始接收通知。
+- [开始使用 "内幕风险管理" 设置](insider-risk-management-settings.md) 配置全局策略设置。
+- [开始使用 "内幕风险管理](insider-risk-management-configure.md) " 配置先决条件、创建策略并开始接收通知。

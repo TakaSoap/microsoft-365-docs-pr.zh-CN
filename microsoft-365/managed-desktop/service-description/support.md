@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39209e81c380887d8a65e28f12ea00c6050e28fa
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950326"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846188"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 托管桌面支持
 
@@ -33,7 +33,7 @@ Microsoft 托管桌面支持包括：
 
 支持的产品：
 
-- 使用 Microsoft Defender 高级威胁防护的 Windows 10 
+- 使用 Microsoft Defender for Endpoint 的 Windows 10
 - 适用于企业应用程序的 Microsoft 365 应用程序： Outlook、Word、PowerPoint、Excel、Skype for Business 客户端、Microsoft 团队 
 - 适用于企业的 Microsoft Store 
 - OneDrive for Business 客户端 
