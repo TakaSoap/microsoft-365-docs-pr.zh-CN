@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196853"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843848"
 ---
 # <a name="device-profile-page"></a>设备配置文件页
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196853"
 Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以快速评估网络上设备的运行状况和状态。
 
 > [!IMPORTANT]
-> 设备配置文件页看上去可能略有不同，具体取决于设备是在 Microsoft Defender ATP、Azure ATP 中注册还是同时在两者中注册。
+> 设备配置文件页的外观可能略有不同，具体取决于设备是否已在 Microsoft Defender for Endpoint、Microsoft Defender Identity 或两者中注册。
 
-如果设备已在 Microsoft Defender ATP 中注册，则还可以使用设备配置文件页面执行一些常见的安全任务。
+如果设备已在 Microsoft Defender for Endpoint 中注册，则还可以使用设备配置文件页面执行一些常见的安全任务。
 
 ## <a name="navigating-the-device-profile-page"></a>浏览设备配置文件页
 
@@ -41,7 +41,7 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 
 主内容区域 (2) 包含选项卡，您可以切换这些选项卡以查看有关设备的不同类型的信息。
 
-如果设备已在 Microsoft Defender ATP 中注册，则还会看到 (3) 响应操作的列表。 响应操作允许您执行常见的与安全相关的任务。
+如果设备已在 Microsoft Defender for Endpoint 中注册，您还将看到 (3) 响应操作的列表。 响应操作允许您执行常见的与安全相关的任务。
 
 ## <a name="sidebar"></a>边栏
 
@@ -51,15 +51,15 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 
 侧栏列出设备的完整名称和曝光级别。 它还提供了一些小子部分中的一些重要基本信息，这些信息可以切换为打开或关闭，例如：
 
-* **标记** -与设备关联的任何 MICROSOFT Defender ATP、Azure atp 或自定义标记。 来自 Azure ATP 的标记不可编辑。
-* **安全信息** -打开事件和活动警报。 在 Microsoft Defender ATP 中注册的设备也将显示暴露级别和风险级别。
+* **标记** -任何 microsoft Defender for Endpoint、microsoft Defender for Identity 或与设备关联的自定义标记。 来自 Microsoft Defender for Identity 的标记是不可编辑的。
+* **安全信息** -打开事件和活动警报。 在 Microsoft Defender for Endpoint 中注册的设备也会显示暴露级别和风险级别。
 
 > [!TIP]
 > 暴露程度取决于设备符合安全建议的程度，而风险级别则根据许多因素计算，包括活动警报的类型和严重性。
 
-* **设备详细信息** -域、OS、设备首次看到时的时间戳、IP 地址、资源。 在 Microsoft Defender ATP 中注册的设备也会显示运行状况状态。 在 Azure ATP 中注册的设备将显示 SAM 名称和在第一次创建设备时的时间戳。
+* **设备详细信息** -域、OS、设备首次看到时的时间戳、IP 地址、资源。 在 Microsoft Defender for Endpoint 中注册的设备也会显示运行状况状态。 在 Microsoft Defender for Identity 中注册的设备将显示 SAM 名称和在第一次创建设备时的时间戳。
 * **网络活动** -首次在网络上显示设备时的时间戳。
-* **目录数据** (*仅适用于在 Azure ATP) 中注册的设备* - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和组成员身份。
+* **目录数据** ( *仅适用于在 Microsoft Defender 中注册标识* ) 的设备- [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 标志、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和组成员身份。
 
 ## <a name="response-actions"></a>响应操作
 
@@ -68,17 +68,17 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 ![设备配置文件的操作栏图像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * 仅当设备已在 Microsoft Defender ATP 中注册时，[响应操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)才可用。
-> * 在 Microsoft Defender ATP 中注册的设备可以显示不同数量的响应操作，具体取决于设备的 OS 和版本号。
+> * 仅当设备已在 Microsoft Defender for Endpoint 中注册时，[响应操作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)才可用。
+> * 在 Microsoft Defender for Endpoint 中注册的设备可能会根据设备的操作系统和版本号显示不同数量的响应操作。
 
 在设备配置文件页上可用的操作包括：
 
 * **管理标记** -更新已应用于此设备的自定义标记。
-* **隔离设备** -将设备与组织的网络隔离，同时保持它连接到 Microsoft Defender 高级威胁防护。 你可以选择允许 Outlook、团队和 Skype for Business 在设备被隔离时运行，以便进行通信。
+* **隔离设备** -将设备与组织的网络隔离，同时保持它连接到 Microsoft Defender for Endpoint。 你可以选择允许 Outlook、团队和 Skype for Business 在设备被隔离时运行，以便进行通信。
 * **操作中心** -查看已提交操作的状态。 仅在已选择另一操作时可用。
 * **限制应用程序执行** -阻止未由 Microsoft 签名的应用程序运行。
 * **运行防病毒扫描** -更新 Windows Defender 防病毒定义，并立即运行防病毒扫描。 在快速扫描或完全扫描之间进行选择。
-* 收集有关设备的**调查包**收集信息。 调查完成后，你可以下载它。
+* 收集有关设备的 **调查包** 收集信息。 调查完成后，你可以下载它。
 * **启动 Live Response Session** -在设备上加载远程命令行管理程序以进行 [深入的安全调查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)。
 * **启动自动调查** -自动 [调查和 remediates 威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 尽管您可以手动触发自动调查以从此页面运行，但 [某些警报策略](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) 会触发自己的自动调查。
 * **操作中心** -显示有关当前正在运行的所有响应操作的信息。
@@ -87,21 +87,21 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 
 通过设备配置文件选项卡，可以切换有关设备的安全详细信息以及包含警报列表的表的概述。
 
-在 Microsoft Defender ATP 中注册的设备也将显示功能上有时间线的选项卡、安全建议列表、软件清单、发现漏洞的列表，以及缺少的 Kb (安全更新) 。
+在 Microsoft Defender for Endpoint 中注册的设备也将显示功能时间线的选项卡、安全建议列表、软件清单、发现漏洞的列表以及缺少的 Kb (安全更新) 。
 
 ### <a name="overview-tab"></a>概述选项卡
 
-默认选项卡为 **概述**。 它提供了有关设备最重要的安全事实的快速讨论。
+默认选项卡为 **概述** 。 它提供了有关设备最重要的安全事实的快速讨论。
 
 ![设备配置文件的 "概述" 选项卡图像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 你可以在此处快速查看设备的活动警报以及任何当前登录的用户。
 
-如果设备已在 Microsoft Defender ATP 中注册，你还将看到设备的风险级别和任何在安全评估上可用的数据。 安全评估描述设备的暴露级别、提供安全建议，并列出受影响的软件和发现的漏洞。
+如果设备已在 Microsoft Defender for Endpoint 中注册，你还将看到设备的风险级别和安全评估上的任何可用数据。 安全评估描述设备的暴露级别、提供安全建议，并列出受影响的软件和发现的漏洞。
 
 ### <a name="alerts-tab"></a>"通知" 选项卡
 
-" **警报** " 选项卡包含来自 Azure Atp 和 MICROSOFT Defender atp 的设备上已产生的警报的列表。
+" **警报** " 选项卡包含来自 Microsoft Defender for Identity 和 microsoft Defender for Endpoint 中已在设备上引发的警报的列表。
 
 ![设备配置文件的 "警报" 选项卡图像](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -109,7 +109,7 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 
 此选项卡中的列包含有关触发警报的威胁的严重性的信息，以及状态、调查状态和向其分配警报的发件者。
 
-*受影响的实体*列指的是当前正在查看其配置文件的设备 (实体) ，以及受影响的网络中的任何其他设备。
+*受影响的实体* 列指的是当前正在查看其配置文件的设备 (实体) ，以及受影响的网络中的任何其他设备。
 
 从该列表中选择一项将打开一个浮出控件，其中包含有关选定警报的详细信息。
 
@@ -179,7 +179,7 @@ Microsoft 365 安全门户为您提供了设备配置文件页，因此您可以
 
 ## <a name="related-topics"></a>相关主题
 
-* [Microsoft 威胁防护概述](microsoft-threat-protection.md)
-* [打开 Microsoft 威胁防护](mtp-enable.md)
+* [Microsoft 365 Defender 概述](microsoft-threat-protection.md)
+* [启用 Microsoft 365 Defender](mtp-enable.md)
 * [使用实时响应调查设备上的实体](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Office 365 中的自动调查和响应 (空中) ](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

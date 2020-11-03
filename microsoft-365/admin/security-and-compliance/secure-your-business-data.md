@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。 '
-ms.openlocfilehash: c78e65e9a466fe8b95e83fa1791dd8f09fa0c541
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c74b8a096afe1dbdd0e0d0cdc7ca5ce3fe8f9ea8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948732"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843314"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保护 Microsoft 365 商业版计划的十大方法
 
@@ -43,16 +43,16 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
 
 ||任务|Microsoft 365 商业标准版|Microsoft 365 商业高级版|
 |---|---|---|---|
-|1 |[设置多重身份验证](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[培训用户](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[使用专用管理员帐户](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[设置多重身份验证](secure-your-business-data.md#setup)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|双面|[培训用户](secure-your-business-data.md#train)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|第三章|[使用专用管理员帐户](secure-your-business-data.md#admin)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[提高针对邮件中的恶意软件的保护级别](secure-your-business-data.md#malware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[防范勒索软件](secure-your-business-data.md#ransomware)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[停止电子邮件的自动转发](secure-your-business-data.md#forwarding)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[使用 Office 邮件加密](secure-your-business-data.md#encryption)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[保护你的电子邮件免受网络钓鱼攻击](secure-your-business-data.md#phishing)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|9 |[使用 ATP 安全附件防止恶意附件和文件](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[使用 ATP 安全链接防御网络钓鱼攻击](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|9 |[使用安全附件防止恶意附件和文件](secure-your-business-data.md#atp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[使用安全链接防御网络钓鱼攻击](secure-your-business-data.md#phishingatp)||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 在开始之前，请在 Microsoft 365 安全中心检查 [microsoft 365 安全分数](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 。 通过集中式仪表板，可以监视和提高 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。 您可以配置推荐的安全功能、执行与安全相关的任务 (如查看报告) 或使用第三方应用程序或软件解决建议。 通过其他见解并更好地了解更广泛的一组 Microsoft 产品和服务，您可以放心地报告您的组织的安全运行状况。
 
@@ -72,13 +72,13 @@ Microsoft 建议您完成下表中列出的适用于您的服务计划的任务�
 
 如果你的订阅是新的，则可能已自动为你启用安全性默认值。
 
-可通过 Microsoft Azure 门户中 Azure Active Directory (Azure AD) 的“**属性**”窗格启用或禁用安全性默认值。
+可通过 Microsoft Azure 门户中 Azure Active Directory (Azure AD) 的“ **属性** ”窗格启用或禁用安全性默认值。
 
 1. 使用全局管理员凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
-2. 在左侧导航栏中，选择“**显示所有**”，然后在 **管理中心**下，选择 “**Azure Active Directory**”。
-3. 在 **Azure Active Directory 管理中心**里选择 “**Azure Active Directory** > **属性**”。
-4. 在页面底部，选择“**管理安全性默认值**”。
-5. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值，然后选择“**保存**”。
+2. 在左侧导航栏中，选择“ **显示所有** ”，然后在 **管理中心** 下，选择 “ **Azure Active Directory** ”。
+3. 在 **Azure Active Directory 管理中心** 里选择 “ **Azure Active Directory** > **属性** ”。
+4. 在页面底部，选择“ **管理安全性默认值** ”。
+5. 选择“ **是** ”启用安全性默认值，或选择“ **否** ”禁用安全性默认值，然后选择“ **保存** ”。
 
 为你的组织设置多重身份验证后，你的用户将需要在其设备上设置双重验证。 有关详细信息，请参阅 [为 Microsoft 365 设置2步验证](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
 
@@ -121,13 +121,13 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 1. 转到 <https://protection.office.com> 并使用你的管理员帐户凭据登录。
 
-2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理**" 下，选择 " **策略** \> **反恶意软件**"。
+2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理** " 下，选择 " **策略** \> **反恶意软件** "。
 
 3. 双击默认策略以编辑此公司范围的策略。
 
-4. 选择“**设置**”。
+4. 选择“ **设置** ”。
 
-5. 在 " **常用附件类型筛选器**" 下，选择 **"启用"**。 被阻止的文件类型在此控件正下方的窗口中列出。 如果需要，您可以稍后添加或删除文件类型。
+5. 在 " **常用附件类型筛选器** " 下，选择 **"启用"** 。 被阻止的文件类型在此控件正下方的窗口中列出。 如果需要，您可以稍后添加或删除文件类型。
 
 6. 选择 " **保存"。**
 
@@ -148,15 +148,15 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 1. 转到 [Exchange 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2059104)。
 
-2. 在 " **邮件流** " 类别中，选择 " **规则**"。
+2. 在 " **邮件流** " 类别中，选择 " **规则** "。
 
-3. 选择 **+** ""，然后 **创建一个新规则**。
+3. 选择 **+** ""，然后 **创建一个新规则** 。
 
 4. 在对话框底部选择 "* * * *" 以查看完整的选项集。
 
 5. 对每个规则应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
 
-6. 选择“**保存**”。
+6. 选择“ **保存** ”。
     
 | 设置 | 在打开 Office 文件附件之前警告用户 | 阻止可能包含勒索软件或其他恶意代码的文件类型 |
 |:-----|:-----|:-----|
@@ -184,15 +184,15 @@ Microsoft 还建议用户采取以下文章中建议的操作来保护其个人�
 
 1. 转到 [Exchange 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2059104)。
 
-2. 在 " **邮件流** " 类别中，选择 " **规则**"。
+2. 在 " **邮件流** " 类别中，选择 " **规则** "。
 
-3. 选择 **+** ""，然后 **创建一个新规则**。
+3. 选择 **+** ""，然后 **创建一个新规则** 。
 
 4. 选择对话框底部的 " **更多选项** " 可查看完整的选项集。
 
 5. 应用下表中的设置。 将其余设置保留为默认值，除非您要对其进行更改。
 
-6. 选择“**保存**”。
+6. 选择“ **保存** ”。
 
 |设置|拒绝将自动转发电子邮件发送到外部域|
 |---|---|
@@ -218,11 +218,11 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 
 ### <a name="to-send-protected-email"></a>发送受保护的电子邮件
 
-在 "Outlook for PC" 中，选择 "电子邮件中的 **选项** "，然后选择 " **权限**"。
+在 "Outlook for PC" 中，选择 "电子邮件中的 **选项** "，然后选择 " **权限** "。
 
 ![Outlook 中的电子邮件加密](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
-在 Outlook.com 中，选择 "在电子邮件中 **保护** "。 默认保护不是 **转发**。 若要将此更改为 "加密"，请选择 " **更改权限** \> **加密**"。
+在 Outlook.com 中，选择 "在电子邮件中 **保护** "。 默认保护不是 **转发** 。 若要将此更改为 "加密"，请选择 " **更改权限** \> **加密** "。
 
 ![Outlook.com 中的电子邮件加密](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
 
@@ -237,52 +237,52 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. 保护你的电子邮件免受网络钓鱼攻击
 <a name="phishing"> </a>
 
-如果已为 Microsoft 365 环境配置了一个或多个自定义域，则可以配置目标反网络钓鱼保护。 ATP 反网络钓鱼保护是 Office 365 高级威胁防护的一部分，可帮助保护您的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需执行此操作。
+如果已为 Microsoft 365 环境配置了一个或多个自定义域，则可以配置目标反网络钓鱼保护。 Microsoft Defender for Office 365 中的反网络钓鱼保护可帮助保护您的组织免受基于恶意模拟的网络钓鱼攻击和其他网络钓鱼攻击。 如果尚未配置自定义域，则无需执行此操作。
 
 我们建议您通过创建策略来保护最重要的用户和您的自定义域，以此来开始保护。
 
-![创建 ATP 反网络钓鱼策略](../../media/security-and-compliance-center.png)
+![在 Microsoft Defender for Office 365 中创建反网络钓鱼策略](../../media/security-and-compliance-center.png)
 
-若要创建 ATP 反网络钓鱼策略，请查看 [简短的培训视频](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
+若要在适用于 Office 365 的 Defender 中创建反网络钓鱼策略，请查看 [简短的培训视频](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成以下步骤：
 
 1. 转到 <https://protection.office.com>。
 
-2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理**" 下，选择 " **策略**"。
+2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理** " 下，选择 " **策略** "。
 
-3. 在 "策略" 页上，选择 " **ATP 反网络钓鱼**"。
+3. 在 "策略" 页上，选择 " **反网络钓鱼** "。
 
-4. 在 "反钓鱼网站" 页上，选择 " **+ 创建**"。 向导将启动，引导您完成定义您的反网络钓鱼策略。
+4. 在 "反钓鱼网站" 页上，选择 " **+ 创建** "。 向导将启动，引导您完成定义您的反网络钓鱼策略。
 
-5. 按照下表中的建议，指定策略的名称、说明和设置。 有关详细信息，请参阅 [了解 ATP 反网络钓鱼策略选项](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 。
+5. 按照下表中的建议，指定策略的名称、说明和设置。 有关更多详细信息，请参阅 [Microsoft Defender For Office 365 选项中的 "了解反网络钓鱼策略"](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) 。
 
-6. 查看设置后，根据需要选择 " **创建此策略** " 或 " **保存**"。
+6. 查看设置后，根据需要选择 " **创建此策略** " 或 " **保存** "。
 
 |设置或选项|推荐设置|
 |---|---|
 |名称|域和最有价值的市场活动员工|
 |说明|确保不会模拟大多数重要的人员和我们的域。|
-|添加要保护的用户|选择 **+ 添加条件，收件人为**。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。|
-|添加要保护的域|选择 **"+ 添加条件，收件人域为"**。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。|
-|选择操作|如果模拟用户发送电子邮件：选择 " **将邮件重定向到另一个电子邮件地址**"，然后键入安全管理员的电子邮件地址;例如，securityadmin@contoso.com。 <br/> 如果由模拟域发送电子邮件：选择 " **隔离邮件**"。|
-|邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”****。|
+|添加要保护的用户|选择 **+ 添加条件，收件人为** 。 键入用户名称或输入候选人、活动经理和其他重要教职员工成员的电子邮件地址。 您最大可以添加20个要从模拟中保护的内部和外部地址。|
+|添加要保护的域|选择 **"+ 添加条件，收件人域为"** 。 输入与 Microsoft 365 订阅关联的自定义域（如果已定义一个）。 您可以输入一个以上的域。|
+|选择操作|如果模拟用户发送电子邮件：选择 " **将邮件重定向到另一个电子邮件地址** "，然后键入安全管理员的电子邮件地址;例如，securityadmin@contoso.com。 <br/> 如果由模拟域发送电子邮件：选择 " **隔离邮件** "。|
+|邮箱智能|默认情况下，创建新的反钓鱼策略时，将选择邮箱智能。 最好将此设置保留为“打开”。|
 |添加受信任的发件人和域|在此示例中，不要定义任何替代项。|
-|应用于|选择“收件人域为”****。 在“以下任何项”**** 中，选择“选择”****。 选择“+ 添加”****。 选中域的名称旁边的复选框，例如，contoso.com，在列表中，然后选择 " **添加**"。 选择“完成”****。|
+|应用于|选择“收件人域为”。 在“以下任何项”中，选择“选择”。 选择“+ 添加”。 选中域的名称旁边的复选框，例如，contoso.com，在列表中，然后选择 " **添加** "。 选择“ **完成** ”。|
 |
 
-有关详细信息，请参阅 [设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
+有关详细信息，请参阅 [在 Defender For Office 365 中设置反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
 
-## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9：使用 ATP 安全附件防止恶意附件和文件
+## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9：针对带安全附件的恶意附件和文件提供保护
 <a name="atp"> </a>
 
-用户定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 只需查看一封电子邮件，就能判断附件是安全还是恶意的，并不总是容易。 Office 365 高级威胁防护包括 ATP 安全附件保护，但默认情况下不启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护功能扩展到 SharePoint、OneDrive 和 Microsoft 团队中的文件。
+用户定期发送、接收和共享附件，如文档、演示文稿、电子表格等。 只需查看一封电子邮件，就能判断附件是安全还是恶意的，并不总是容易。 Microsoft Defender for Office 365 包括安全附件保护，但默认情况下不启用此保护。 我们建议您创建一个新规则以开始使用此保护。 此保护功能扩展到 SharePoint、OneDrive 和 Microsoft 团队中的文件。
 
-若要创建 ATP 安全附件策略，请查看 [简短的培训视频](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
+若要创建安全附件策略，请查看 [简短的培训视频](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成以下步骤：
 
 1. 转到 <https://protection.office.com> 并使用管理员帐户登录。
 
-2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理**" 下，选择 " **策略**"。
+2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理** " 下，选择 " **策略** "。
 
-3. 在 "策略" 页上，选择 " **ATP 安全附件**"。
+3. 在 "策略" 页上，选择 " **安全附件** "。
 
 4. 在 "安全附件" 页面上，选中 " **启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP** " 复选框，以应用广泛的保护。
 
@@ -290,23 +290,23 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 
 6. 应用下表中的设置。
 
-7. 查看设置后，根据需要选择 " **创建此策略** " 或 " **保存**"。
+7. 查看设置后，根据需要选择 " **创建此策略** " 或 " **保存** "。
 
 |设置或选项|推荐设置|
 |---|---|
 |名称|使用检测到的恶意软件阻止当前和将来的电子邮件。|
 |说明|使用检测到的恶意软件阻止当前和将来的电子邮件和附件。|
-|保存附件未知的恶意软件响应|Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件**。|
+|保存附件未知的恶意软件响应|Select **block-阻止当前和将来的包含检测到的恶意软件的电子邮件和附件** 。|
 |在检测时重定向附件|启用重定向 (选中此框)  <br/> 输入用于隔离的管理员帐户或邮箱设置。 <br/> 如果恶意软件扫描附件超时或发生错误，则应用上述选择) 。 (选中该框。|
 |应用于|收件人域为。 . . 选择您的域。|
 |
 
-有关详细信息，请参阅 [设置 Office 365 ATP 反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
+有关详细信息，请参阅 [在 Defender For Office 365 中设置反网络钓鱼策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
 
-## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10：使用 ATP 安全链接防御网络钓鱼攻击
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10：抵御安全链接的网络钓鱼攻击
 <a name="phishingatp"> </a>
 
-黑客有时会在电子邮件或其他文件的链接中隐藏恶意网站。 Office 365 ATP 安全链接 (ATP 安全链接) （Office 365 高级威胁防护的一部分）可以通过提供电子邮件和 Office 文档中) 的 web (地址的单击验证，从而帮助保护您的组织。 通过 ATP 安全链接策略定义保护。
+黑客有时会在电子邮件或其他文件的链接中隐藏恶意网站。 Microsoft Defender for Office 365 中的 "安全链接" 可通过在电子邮件和 Office 文档中对 web 地址 (Url) 进行验证，从而帮助保护您的组织。 通过安全链接策略定义保护。
 
 我们建议您执行以下操作：
 
@@ -314,38 +314,38 @@ Office 邮件加密包含在 Microsoft 365 中。 已对其进行设置。 使�
 
 - 添加目标为域中所有收件人的新策略。
 
-若要获取 ATP 安全链接，请查看 [简短的培训视频](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
+若要获取安全链接，请查看 [简短的培训视频](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成以下步骤：
 
 1. 转到 <https://protection.office.com> 并使用管理员帐户登录。
 
-2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理**" 下，选择 " **策略**"。
+2. 在安全 & 合规性中心的左侧导航窗格中的 " **威胁管理** " 下，选择 " **策略** "。
 
-3. 在 "策略" 页上，选择 " **ATP 安全链接**"。
+3. 在 "策略" 页上，选择 " **安全链接** "。
 
 若要修改默认策略，请执行以下操作：
 
-1. 在 "安全链接" 页面上，在 " **适用于整个组织的策略**" 下，双击 " **默认** 策略"。
+1. 在 "安全链接" 页面上，在 " **适用于整个组织的策略** " 下，双击 " **默认** 策略"。
 
-2. 在 " **适用于 Office 365 中的内容**" 下，输入要阻止的 URL （如 _example.com_），然后选择 "" **+** 。
+2. 在 " **适用于 Office 365 中的内容** " 下，输入要阻止的 URL （如 _example.com_ ），然后选择 "" **+** 。
 
-3. 在 " **适用于除电子邮件以外的内容的设置**" 下，选择 " **Office 365 应用程序**"， **不要在用户单击 "安全链接" 时进行跟踪**， **不要让用户单击 "通过指向原始 URL 的安全链接"**。
+3. 在 " **适用于除电子邮件以外的内容的设置** " 下，选择 " **Office 365 应用程序** "， **不要在用户单击 "安全链接" 时进行跟踪** ， **不要让用户单击 "通过指向原始 URL 的安全链接"** 。
 
-4. 选择“**保存**”。
+4. 选择“ **保存** ”。
 
 创建一个面向域中所有收件人的新策略：
 
-1. 在 "安全链接" 页面上，在 " **适用于特定收件人的策略**" 下，选择 " **+** 创建新策略"。
+1. 在 "安全链接" 页面上，在 " **适用于特定收件人的策略** " 下，选择 " **+** 创建新策略"。
 
 2. 应用下表中列出的设置。
 
-3. 选择“**保存**”。
+3. 选择“ **保存** ”。
 
 |设置或选项|推荐设置|
 |---|---|
 |名称|域中所有收件人的安全链接策略|
-|选择邮件中未知的潜在恶意 Url 的操作|**当用户单击链接时，将会重写并检查在已知恶意链接列表中的 "按 Url"，并对其进行检查**。|
+|选择邮件中未知的潜在恶意 Url 的操作|**当用户单击链接时，将会重写并检查在已知恶意链接列表中的 "按 Url"，并对其进行检查** 。|
 |对指向文件的可疑链接和链接应用实时 URL 扫描|选中此框。|
 |应用于|收件人域为。 . . 选择您的域。|
 |
 
-有关详细信息，请参阅 [Office 365 ATP 中的安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。
+有关详细信息，请参阅 [Microsoft Defender For Office 365 中的安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)。

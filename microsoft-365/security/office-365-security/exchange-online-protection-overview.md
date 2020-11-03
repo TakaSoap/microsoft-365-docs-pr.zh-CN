@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Exchange Online Protection (EOP) 如何帮助保护您的内部部署电子邮件组织在独立的和混合环境中。
-ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202899"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842400"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概述
 
@@ -28,9 +28,9 @@ ms.locfileid: "48202899"
 
 Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助组织抵御垃圾邮件和恶意软件。 EOP 包含在具有 Exchange Online 邮箱的所有 Microsoft 365 组织中。 但是，在以下本地方案中也可以使用 EOP：
 
-- **在独立方案中**： EOP 为您的内部部署 Exchange 组织或任何其他内部部署 SMTP 电子邮件解决方案提供基于云的电子邮件保护。
+- **在独立方案中** ： EOP 为您的内部部署 Exchange 组织或任何其他内部部署 SMTP 电子邮件解决方案提供基于云的电子邮件保护。
 
-- **在混合部署中**：在混合使用内部部署和云邮箱时，可以将 EOP 配置为保护您的电子邮件环境并控制邮件路由。
+- **在混合部署中** ：在混合使用内部部署和云邮箱时，可以将 EOP 配置为保护您的电子邮件环境并控制邮件路由。
 
 在这些方案中，EOP 可简化电子邮件环境的管理，并缓解维护内部部署硬件和软件带来的许多负担。
 
@@ -58,11 +58,11 @@ Exchange Online Protection (EOP) 是基于云的筛选服务，可帮助组织�
 
 可用的 EOP 订阅计划包括：
 
-- **EOP 独立**：在 EOP 中注册以保护您的内部部署电子邮件组织。
+- **EOP 独立** ：在 EOP 中注册以保护您的内部部署电子邮件组织。
 
-- **Exchange online 中的 EOP 功能**：包括 exchange online 的任何订阅 (独立的或作为 Microsoft 365 的一部分) 使用 EOP 来保护 Exchange Online 邮箱。
+- **Exchange online 中的 EOP 功能** ：包括 exchange online 的任何订阅 (独立的或作为 Microsoft 365 的一部分) 使用 EOP 来保护 Exchange Online 邮箱。
 
-- **Exchange ENTERPRISE cal With services**：如果您有一个内部部署 exchange 组织，并且您已使用这些服务许可证购买了其他 Exchange 企业版 cal，则 EOP 是所包含服务的一部分。
+- **Exchange ENTERPRISE cal With services** ：如果您有一个内部部署 exchange 组织，并且您已使用这些服务许可证购买了其他 Exchange 企业版 cal，则 EOP 是所包含服务的一部分。
 
 有关跨所有 EOP 订阅计划的要求、重要限制和功能可用性的信息，请参阅 [Exchange Online Protection 服务说明](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
@@ -80,7 +80,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 - 在欧洲、中东和非洲 (EMEA)，所有 Exchange Online 邮箱均位于 EMEA 数据中心，所有邮件均通过 EMEA 数据中心路由以进行 EOP 筛选。
 
-- 在亚太地区 (APAC) 中，所有 Exchange Online 邮箱均位于 APAC 数据中心中，并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
+- 在 Asia-Pacific (APAC) 中，所有 Exchange Online 邮箱均位于 APAC 数据中心中，并且邮件当前通过 APAC 数据中心路由以进行 EOP 筛选。
 
 - 在美洲，服务分布在以下位置：
 
@@ -96,7 +96,7 @@ EOP 在数据中心之间执行负载平衡，但仅限在一个区域内。如�
 
 针对 EOP 管理员的帮助内容包括以下顶级类别：
 
-- [配置 EOP，第1天，针对 office 365 ATP 管理员](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)：在 Office 365 高级威胁防护的核心中配置 EOP 保护和检测工具。
+- [为 Microsoft defender For office 365 管理员配置 EOP，第1天](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)：在 microsoft Defender for office 365 中配置 EOP 保护和检测工具。
 
 - [EOP 功能](eop-features.md)：提供 EOP 中可用的功能列表。
 

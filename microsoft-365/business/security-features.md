@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 了解 Microsoft 365 商业高级版附带的安全功能，以帮助保护电脑、电话和平板电脑上的数据。
-ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357310"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843480"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商业高级安全性和合规性功能
 
@@ -63,9 +63,9 @@ Microsoft 365 商业高级版提供了简化的安全功能，以帮助保护电
 
 Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御网络威胁并保护敏感信息。
   
-- **[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-     (ATP) 的高级威胁防护可帮助保护您的业务不受复杂的网络钓鱼和勒索软件攻击，旨在危害员工或客户信息。 这些功能包括： 
+    Microsoft Defender for Office 365 可帮助保护你的业务不受复杂的网络钓鱼和勒索软件攻击，旨在危害员工或客户信息。 这些功能包括： 
     
   - 完善的附件扫描和 AI 分析，以检测并丢弃危险邮件。
     
@@ -74,7 +74,7 @@ Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御
 - **[Azure 门户中的 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     通过在 Azure 门户中访问 Intune 管理中心，可以设置其他安全功能，如 MacOS 设备、iPhone 和 Android 设备的管理，以及 Windows 的高级设备管理，这些功能无法通过 Microsoft 365 管理中心提供。
-- **与 Azure AD Premium P1 计划相同的[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
+- **与 Azure AD Premium P1 计划相同的 [条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
 
     条件访问可帮助保护您的组织不受登录风险、访问来自意外网络或区域设置的尝试、访问来自有风险的设备类型的尝试，等等。 在第一次身份验证完成后，将强制执行条件访问策略，并使用来自第一种身份验证事件的信号来确定是否应批准、拒绝或更多证明 (例如标识) 的第二种形式。
@@ -96,7 +96,7 @@ Microsoft 365 商业高级版中的高级功能可帮助您保护业务，抵御
 
 Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标准的功能。
 
--  (DLP) **[的数据丢失防护策略概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)**。 
+-  (DLP) **[的数据丢失防护策略概述](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)** 。 
     
     您可以设置 DLP 以自动检测敏感信息，如信用卡号、社会保险号码等，以防止无意中与公司外部共享。
     
@@ -106,12 +106,12 @@ Microsoft 365 商业高级版订阅包括可帮助您维护合规性和法规标
     
 - **[敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商业高级版包括 [Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建 **敏感度标签** ，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装 **AzInfoProtection_UL.exe**。
+   Microsoft 365 商业高级版包括 [Azure 信息保护计划 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 使用此计划，可以创建 **敏感度标签** ，以允许您控制对电子邮件和文档中敏感信息的访问，其中包含 "请勿转发" 和 "不复制" 等控件。 您还可以将敏感信息分类为 "机密"，并指定如何在企业外部和内部共享保密信息。 企业级加密易于应用于电子邮件和文档，以确保信息保密。 您还可以安装适用于 Office 应用的 Azure 信息保护客户端外接程序。 有关详细信息，请参阅 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若要区分灵敏度标签，请安装 **AzInfoProtection_UL.exe** 。
 
 您可以在安全 &amp; 合规性中心和 Intune 管理中心中管理这些功能。 随着时间的推移，简化的控件将添加到 Microsoft 365 管理中心。
   
     
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
  ### <a name="are-these-security-features-available-in-all-markets"></a>这些安全功能在所有市场中是否可用？
   

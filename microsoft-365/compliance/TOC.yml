@@ -266,6 +266,8 @@
           href: dlp-sensitivity-label-as-condition.md
         - name: 为非 Microsoft 云应用使用数据丢失防护策略
           href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP 策略条件和异常（预览版）
+          href: dlp-conditions-and-exceptions.md
 - name: 管理信息治理
   items:
     - name: 治理数据

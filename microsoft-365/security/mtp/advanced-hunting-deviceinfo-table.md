@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430075"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842710"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430075"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 
@@ -46,7 +46,7 @@ ms.locfileid: "48430075"
 | `DeviceId` | string | 服务中的计算机的唯一标识符 |
 | `DeviceName` | string | 计算机的完全限定域名 (FQDN) |
 | `ClientVersion` | string | 在计算机上运行的终结点代理或传感器的版本 |
-| `PublicIP` | string | 载入计算机用于连接到 Microsoft Defender ATP 服务的公用 IP 地址。 这可以是计算机本身、NAT 设备或代理的 IP 地址 |
+| `PublicIP` | string | 载入计算机用于连接到 Microsoft Defender for Endpoint service 的公共 IP 地址。 这可以是计算机本身、NAT 设备或代理的 IP 地址 |
 | `OSArchitecture` | string | 计算机上运行的操作系统的体系结构 |
 | `OSPlatform` | string | 计算机上运行的操作系统平台。 这表示特定操作系统，包括同一系列内的变体，如 Windows 10 和 Windows 7 |
 | `OSBuild` | string | 计算机上运行的操作系统的内部版本版本 |

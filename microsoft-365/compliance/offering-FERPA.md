@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 668a92bf57e61d68d07a2d40e4405cc7bd111580
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208454"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843114"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育权利和隐私法案 (FERPA) 
 
@@ -51,7 +51,7 @@ Microsoft 同意为其指定为 "学校官方" 的服务，客户数据中包含
 - [Office 365、Office 365 U.S. Government 和 Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - Power BI、PowerApps 和 Power 自动 (以前的 Microsoft Flow) 为独立服务或包含在 Office 365 标记计划或套件中
 - Azure DevOps Services
-- Windows Defender ATP
+- Microsoft Defender for Endpoint 
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -70,7 +70,7 @@ FERPA 不需要或识别审核或证书。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
@@ -79,5 +79,5 @@ FERPA 不需要或识别审核或证书。
 - [联邦收银机： FERPA Final 规则](https://aka.ms/ferpa-reg)
 - [Microsoft Azure 的 FERPA 实施指南](https://aka.ms/azureferpa)
 - [Azure FERPA 合规性框架映射](https://aka.ms/AzureFERPAMapping)
-- [Microsoft 联机服务条款](https://aka.ms/Online-Services-Terms)
+- [Microsoft 在线服务条款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心内的合规性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295282"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842152"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
@@ -51,7 +51,7 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 | StaffHub    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png) | 
 | Outlook 客户管理器，MileIQ    | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | | 
 | **威胁防护**        | | | 
-| Office 365 高级威胁防护 (ATP) 计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
+| 适用于 Office 的 Defender 365 计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
 | 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  | 
 | **设备和应用程序管理**        | | |
@@ -62,7 +62,7 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 |Office 365 数据丢失防护|    ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)|![包含在 Office 365 E3 中](../media/check-mark.png)|
 |Azure 信息保护计划1，Bitlocker 强制|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
 |Azure 信息保护计划1，敏感度标签|![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)||
-|**客户端访问许可证 (CAL 权限) **|||
+|**客户端访问许可证 (CAL 权限)**|||
 |企业 CAL 套件 (Exchange、SharePoint、Skype) ||![包含在 Office 365 E3 中](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 Business Premium 版本的 Office 应用程序不包括通过组策略、应用遥测、更新控件、电子表格比较和查询或商业智能等批量激活。
@@ -95,9 +95,9 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 
 您还可以在 "设备" 页上完成以下步骤：
   
-1. 在管理中心的左侧导航中，转到 " **设备** \> **策略**"。
+1. 在管理中心的左侧导航中，转到 " **设备** \> **策略** "。
     
-2. 在 " **设备策略** " 页上，选择 " **添加**"。
+2. 在 " **设备策略** " 页上，选择 " **添加** "。
     
 3. 在 " **添加策略** " 窗格中，为策略指定一个名称，然后从下拉类型中选择一个 **策略类型** 。 
     
@@ -122,7 +122,7 @@ Microsoft 365 商业高级版具有 50 GB 的存储限制，因为它使用 Exch
 
 ### <a name="threat-protection"></a>威胁防护
 
-迁移到 Microsoft 365 商业高级版后，你将拥有 Office 365 ATP。 有关概述，请参阅 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅 [设置 atp 安全链接](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)、 [设置 atp 安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及 [设置 atp 反网络钓鱼](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
+迁移到 Microsoft 365 商业高级版后，您可以使用适用于 Office 365 的 Defender。 有关概述，请参阅 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要设置，请参阅 [设置安全链接](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)、 [设置安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)以及 [在适用于 Office 365 的 Defender 中设置反网络钓鱼](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 

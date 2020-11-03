@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 了解如何设置团队以根据其敏感度保护你的数据
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527704"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843536"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>与 Microsoft 365 建立安全协作
 
@@ -41,7 +41,7 @@ ms.locfileid: "46527704"
 
 如果信息不恰当地共享，大多数组织都有各种信息，并且敏感程度各不相同，并且业务影响也各不相同。 根据给定信息的敏感度，您可能希望允许与以下内容共享：
 
-- 任何人（未经身份验证）
+-  (未经身份验证的任何人) 
 - 组织内部的人员
 - 组织内的特定人员
 - 组织内部和外部的特定人员
@@ -54,7 +54,7 @@ ms.locfileid: "46527704"
 
 对组织成功或具有严格的安全性或合规性要求至关重要的信息可能需要更高级别的保护。
 
-![从低（已发布小册子）到高（敏感业务数据）的风险范围](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
+![从低 (发布的小册子) 到高 (敏感业务数据的风险范围) ](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
 对于以上所述的所有情况，可以使用 Microsoft 团队中的团队来存储、共享和协作处理信息。 
 
@@ -62,19 +62,19 @@ ms.locfileid: "46527704"
 
 | 产品或组件 | 功能或特性 | 许可 |
 |:-------|:-----|:-------|
-| Office 365 高级威胁防护 | SPO、OneDrive 和团队的 ATP 安全附件;ATP 安全文档;团队的 ATP 安全链接    | Microsoft 365 E1、E3 和 E5 |
+| Microsoft Defender for Office 365 | SPO、OneDrive 和团队的安全附件;安全文档;团队的安全链接    | Microsoft 365 E1、E3 和 E5 |
 | SharePoint    | 网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置 | Microsoft 365 E1、E3 和 E5 |
 | Microsoft Teams   | 来宾访问、专用团队、专用频道 | Microsoft 365 E1、E3 和 E5 |
 | Microsoft 365 合规中心  | 敏感度标签    | Microsoft 365 E3 和 E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>对所有类型的数据使用团队
 
-若要使用不同的 sensitivities 管理对信息的访问，我们[为团队开发了三个不同的保护层](configure-teams-three-tiers-protection.md)。 您可以自定义这些层中的任何一个，以更好地满足需求或业务。 
+若要使用不同的 sensitivities 管理对信息的访问，我们 [为团队开发了三个不同的保护层](configure-teams-three-tiers-protection.md)。 您可以自定义这些层中的任何一个，以更好地满足需求或业务。 
 
 ![Teams 逻辑体系结构海报缩略图](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-这些分层-*比较基准*、*敏感*和*高度敏感*信息-逐渐提高有助于防止 oversharing 和潜在信息泄露的保护，如下表所示。
+这些分层- *比较基准* 、 *敏感* 和 *高度敏感* 信息-逐渐提高有助于防止 oversharing 和潜在信息泄露的保护，如下表所示。
 
 ||**基线层**|**敏感层**|**高度敏感的层**|
 |:--|:-----------|:------------|:-------------------|
@@ -90,26 +90,26 @@ ms.locfileid: "46527704"
 
 - 为来宾访问和专用频道配置团队中的设置
 - 在团队关联的 SharePoint 网站中配置用于内部和来宾共享、访问请求和共享链接的设置
-- 对于*敏感*和*高度敏感*的层，配置敏感度标签以对团队进行分类，并控制非托管设备的来宾共享和访问
-- 对于*高度敏感*的层，配置敏感度标签以加密应用它的文档
+- 对于 *敏感* 和 *高度敏感* 的层，配置敏感度标签以对团队进行分类，并控制非托管设备的来宾共享和访问
+- 对于 *高度敏感* 的层，配置敏感度标签以加密应用它的文档
 
-从基线层开始，然后根据需要添加使用*敏感*和*高度敏感*的团队，以帮助保护组织中的信息。 若要开始，请参阅以下资源：
+从基线层开始，然后根据需要添加使用 *敏感* 和 *高度敏感* 的团队，以帮助保护组织中的信息。 若要开始，请参阅以下资源：
 
 - [配置具有基线保护的团队](configure-teams-baseline-protection.md)
 - [配置具有敏感数据保护的团队](configure-teams-sensitive-protection.md)
 - [配置具有高度敏感数据保护的团队](configure-teams-highly-sensitive-protection.md)
 
-如果您有一个高度敏感的项目，该项目需要在组织内进行额外的共享保护，则可以将使用其自己的敏感度标签的团队配置为加密文件，以便只有工作组成员可以读取这些文件。 有关详细信息，请参阅[Configure a team with security 隔离](secure-teams-security-isolation.md)。
+如果您有一个高度敏感的项目，该项目需要在组织内进行额外的共享保护，则可以将使用其自己的敏感度标签的团队配置为加密文件，以便只有工作组成员可以读取这些文件。 有关详细信息，请参阅 [Configure a team with security 隔离](secure-teams-security-isolation.md) 。
 
 ### <a name="sharing-with-people-outside-your-organization"></a>与组织外部的人员共享
 
-您可能需要[与组织外部的人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这可能包括与单个用户共享单个文档，以便在大型合作伙伴组织或来自世界各地的兼职翻译的主要项目上进行协作。 在 Microsoft 365 中，可以轻松地完成这一范围的外部共享，并提供适当的保护措施来帮助保护您的敏感信息。
+您可能需要 [与组织外部的人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)。 这可能包括与单个用户共享单个文档，以便在大型合作伙伴组织或来自世界各地的兼职翻译的主要项目上进行协作。 在 Microsoft 365 中，可以轻松地完成这一范围的外部共享，并提供适当的保护措施来帮助保护您的敏感信息。
 
 这些资源将帮助您开始设置您的环境，以便与组织外部的人员进行协作：
 
-- [对文档进行协作](collaborate-on-documents.md)，以共享文件夹的各个文件。
-- [在网站](collaborate-in-site.md)中进行协作，以便与 SharePoint 网站中的来宾进行协作。
-- [作为团队协作](collaborate-as-team.md)处理团队中的来宾。
+- [对文档进行协作](collaborate-on-documents.md) ，以共享文件夹的各个文件。
+- [在网站](collaborate-in-site.md) 中进行协作，以便与 SharePoint 网站中的来宾进行协作。
+- [作为团队协作](collaborate-as-team.md) 处理团队中的来宾。
 
 根据所共享的信息的敏感度，您可以添加安全措施来帮助防止 oversharing。 这些资源将帮助您设置您的组织所需的保护：
 
@@ -117,13 +117,13 @@ ms.locfileid: "46527704"
 - [在与组织外人员共享文件时限制意外公开信息](share-limit-accidental-exposure.md)
 - [创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
 
-如果您有一个包含合作伙伴组织的主要项目，您可以使用 Azure 权利管理在您为项目设置的团队中管理来自该组织的来宾。 有关详细信息，请参阅[Create a B2B extranet with 托管来宾](b2b-extranet.md)。
+如果您有一个包含合作伙伴组织的主要项目，您可以使用 Azure 权利管理在您为项目设置的团队中管理来自该组织的来宾。 有关详细信息，请参阅 [Create a B2B extranet with 托管来宾](b2b-extranet.md) 。
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>部署安全协作解决方案
 
 当您准备好部署此解决方案时，请继续执行以下步骤：
 1. [为团队配置三个不同的保护层](configure-teams-three-tiers-protection.md)。
-2. 配置[与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)的设置。
+2. 配置 [与组织外部人员共享任何敏感度的信息](collaborate-with-people-outside-your-organization.md)的设置。
 
 ## <a name="see-also"></a>另请参阅
 

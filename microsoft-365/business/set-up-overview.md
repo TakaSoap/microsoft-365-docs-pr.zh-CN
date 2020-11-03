@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解 Microsoft 365 商业高级版的安装步骤、订阅、添加域和用户、设置安全策略等。
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841123"
+ms.locfileid: "48842122"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -61,7 +61,7 @@ ms.locfileid: "48841123"
   除了安装向导中的安全设置之外，还可以通过添加以下设置来提高安全性：
 
 - **电子邮件恶意软件保护**
-- **ATP 反网络钓鱼**
+- **适用于 Office 365 的 Defender 中的反网络钓鱼**
 - **Exchange Online Archiving**
 - **Azure 信息保护 (Plan1** ) 
 

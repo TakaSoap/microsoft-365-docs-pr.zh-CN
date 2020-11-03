@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294780"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843836"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
@@ -76,7 +76,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
 
-目前有关于 Microsoft 365 (的建议，其中包括 Exchange Online) 、Azure Active Directory、Microsoft Defender ATP、Azure ATP 和云应用安全性。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但它们是一个很棒的基准。 您还可以将改进操作标记为由第三方或备用缓解措施覆盖。
+目前有关于 Microsoft 365 (的建议，其中包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender for Identity 和云应用安全性。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但它们是一个很棒的基准。 您还可以将改进操作标记为由第三方或备用缓解措施覆盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
@@ -112,7 +112,7 @@ Microsoft 安全评分已更新了 [在 Azure Active Directory 中支持安全�
 * 支持人员管理员
 * 用户管理员
 * 服务管理员
-* 安全读取者
+* 安全读者
 * 安全操作员
 * 全局读取者
 

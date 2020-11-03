@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ea54f6b312c473240dba07eae95733d2ea610fe5
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 59e5d0d51997812689c7382d6a27af6f66a27d25
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430545"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842604"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430545"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 `EmailPostDeliveryEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关在 Microsoft 365 处理的电子邮件上执行投递后操作的信息。 使用此参考来构建从此表返回信息的查询。
 
@@ -58,7 +58,7 @@ ms.locfileid: "48430545"
 此表捕获具有以下值的事件 `ActionType` ：
 
 - **手动修正** –管理员在将电子邮件传递到用户邮箱后手动对其采取操作。 这包括通过 [威胁资源管理器](../office-365-security/threat-explorer.md) 手动执行的操作或对 [自动调查和响应 (AIR) 操作](mtp-autoir-actions.md)的审批。
-- **网络钓鱼 ZAP** – [零小时自动清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 在传递后对网络钓鱼电子邮件采取操作。
+- **网络钓鱼 ZAP** – [零小时自动清除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) 在传递后对网络钓鱼电子邮件采取操作。
 - **恶意软件 ZAP** –零小时自动清除 (ZAP) 对在传递后包含恶意软件的电子邮件采取操作。
 
 ## <a name="related-topics"></a>相关主题

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护高级搜寻架构中的数据表
+title: Microsoft 365 Defender 高级搜寻架构中的数据表
 description: 了解高级搜寻架构中的表，以了解可运行威胁搜寻查询的数据
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、数据
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: c23637f2a26f62e3fa1ca50e9f8c75edb7c2b50a
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429644"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842484"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429644"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -57,7 +57,7 @@ ms.locfileid: "48429644"
 | 表名 | 说明 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | 与警报关联的文件、IP 地址、Url、用户或设备 |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 来自 Microsoft Defender ATP、Office 365 ATP、Microsoft 云应用安全性和 Azure ATP 的警报，包括严重信息和威胁分类  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 云应用安全性和 Microsoft Defender for Identity 的警报，包括严重信息和威胁分类  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | 云应用和服务中与文件相关的活动 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括安全控件（如 Windows Defender 防病毒和 Exploit Protection）触发的事件 |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | 从终结点上的证书验证事件获取的签名文件的证书信息 |

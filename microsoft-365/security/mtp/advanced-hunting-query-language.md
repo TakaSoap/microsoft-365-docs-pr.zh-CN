@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 威胁防护中的高级搜寻查询语言
+title: 了解 Microsoft 365 Defender 中的高级搜寻查询语言
 description: 创建你的第一个威胁搜寻查询，并了解高级搜寻查询语言的常见运算符和其他方面
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、语言、学习、第一个查询、遥测、事件、遥测、自定义检测、架构、kusto、运算符、数据类型、powershell 下载、查询示例
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431047"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841972"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解高级搜寻查询语言
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431047"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 高级搜寻基于 [Kusto 查询语言](https://docs.microsoft.com/azure/kusto/query/)。 您可以使用 Kusto 运算符和语句来构建在专用 [架构](advanced-hunting-schema-tables.md)中查找信息的查询。 若要更好地了解这些概念，请运行你的第一个查询。
 
@@ -137,7 +137,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `makeset` |  返回 Expr 在组中采用的一组不同值的动态 (JSON) 数组。 |
 | `find` | 查找与一组表中的谓词匹配的行。 |
 
-若要查看这些操作符的实时示例，请在高级搜寻的**入门**部分中运行它们。
+若要查看这些操作符的实时示例，请在高级搜寻的 **入门** 部分中运行它们。
 
 ## <a name="understand-data-types"></a>了解数据类型
 
@@ -155,21 +155,21 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="get-help-as-you-write-queries"></a>编写查询时获取帮助
 利用以下功能更快地编写查询：
-- **Autosuggest**—在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
-- **架构树**—在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
-- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**—门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
+- **Autosuggest** —在编写查询时，高级搜寻将提供 IntelliSense 的建议。 
+- **架构树** —在工作区旁边提供一个架构表示形式，其中包含表及其列的列表。 有关详细信息，请将鼠标悬停在某个项上。 双击某个项，将其插入到查询编辑器中。
+- **[架构参考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** —门户中的包含表和列说明的引用，以及支持的事件类型 (`ActionType` 值) 和示例查询
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在编辑器中使用多个查询
 您可以使用查询编辑器试用多个查询。 若要使用多个查询：
 
 - 使用空行分隔每个查询。
-- 将光标放在查询的任何部分，以在运行查询之前选择该查询。 这将只运行选定的查询。 若要运行其他查询，请相应地移动游标，然后选择 " **运行查询**"。
+- 将光标放在查询的任何部分，以在运行查询之前选择该查询。 这将只运行选定的查询。 若要运行其他查询，请相应地移动游标，然后选择 " **运行查询** "。
 
 ![包含多个查询的查询编辑器的图像](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>使用示例查询
 
-**入门**部分提供了使用常用运算符的几个简单查询。 请尝试运行这些查询，并对其进行细微修改。
+**入门** 部分提供了使用常用运算符的几个简单查询。 请尝试运行这些查询，并对其进行细微修改。
 
 ![高级搜寻窗口的图像](../../media/advanced-hunting-get-started.png)
 

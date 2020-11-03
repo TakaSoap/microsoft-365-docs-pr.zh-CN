@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399393"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842794"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>您可以 sail 的安全障碍—一个架构师的视点
 
@@ -55,7 +55,7 @@ Sail 通过这些障碍的客户在运营和治理以及安全与风险管理团
 
 许多安全团队仍在使用针对所有内部部署环境构建的传统安全最佳做法，包括维护 "网络外围安全" 并尝试 "强制" 本地安全工具和控件到云解决方案。 此类控件不是为云设计的，不能实现，也不会妨碍采用新式云功能。 在网络外围安全方法工作的过程和工具已证明效率低、obstructive 到云功能，并且不允许利用新式和自动安全功能。
 
-您可以通过将防护策略转移到云管理的保护、自动调查和修正、自动化的笔测试、高级威胁防护和事件分析，来 sail 此障碍。 使用新式设备管理解决方案的客户已实现所有设备的自动化管理、标准化的修补、防病毒、策略实施和应用程序保护 (无论是智能手机、个人计算机、便携式计算机还是平板电脑) 。 这样便无需使用 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 组策略。 这与条件访问策略结合使用，可提供强大的控制和可见性，并可简化对资源的访问，无论用户在哪里运行。
+您可以通过将防护策略转移到云托管保护、自动调查和修正、自动笔测试、适用于 Office 365 的 Defender 和事件分析，来 sail 此障碍。 使用新式设备管理解决方案的客户已实现所有设备的自动化管理、标准化的修补、防病毒、策略实施和应用程序保护 (无论是智能手机、个人计算机、便携式计算机还是平板电脑) 。 这样便无需使用 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 组策略。 这与条件访问策略结合使用，可提供强大的控制和可见性，并可简化对资源的访问，无论用户在哪里运行。
 
 ## <a name="strive-for-best-together-security-tools"></a>努力实现最佳安全工具
 

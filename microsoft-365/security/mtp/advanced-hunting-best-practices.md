@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护中的高级搜寻查询最佳实践
+title: Microsoft 365 Defender 中的高级搜寻查询最佳实践
 description: 了解如何使用高级搜寻构建快速、高效和无错误的威胁搜寻查询
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构、kusto、避免超时、命令行、进程 id、优化、最佳实践、分析、联接、汇总
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2b2ac519e63e5a7cba648dba67d2780bb7600e14
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649663"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843068"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高级搜寻查询最佳做法
 
@@ -32,7 +32,7 @@ ms.locfileid: "48649663"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 应用这些建议以更快地获得结果，并避免在运行复杂查询时超时。 有关提高查询性能的更多指导，请参阅 [Kusto 查询最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
 
@@ -43,8 +43,8 @@ ms.locfileid: "48649663"
 
 ## <a name="general-optimization-tips"></a>常规优化提示
 
-- **调整新查询的大小**—如果您怀疑查询将返回一个大型结果集，请先使用 [count 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)对其进行评估。 使用 [限制](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) 或其同义词 `take` 以避免出现大型结果集。
-- **早期应用筛选器**—应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [子字符串 ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、将 [ ( # B3 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ( # B5 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ( # B7 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ( # B9 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）时。 在下面的示例中，分析函数 [extractjson ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) 在筛选运算符减少了记录数量之后使用。
+- **调整新查询的大小** —如果您怀疑查询将返回一个大型结果集，请先使用 [count 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)对其进行评估。 使用 [限制](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) 或其同义词 `take` 以避免出现大型结果集。
+- **早期应用筛选器** —应用时间筛选器和其他筛选器以减少数据集，尤其是在使用转换和分析函数（如 [子字符串 ( # B1](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、将 [ ( # B3](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ( # B5](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ( # B7](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ( # B9](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）时。 在下面的示例中，分析函数 [extractjson ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) 在筛选运算符减少了记录数量之后使用。
 
     ```kusto
     DeviceEvents
@@ -54,18 +54,18 @@ ms.locfileid: "48649663"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **包含节拍**—若要避免在不必要的词中搜索子字符串，请使用 `has` 运算符而不是 `contains` 。 [了解字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **查找特定**列—查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
-- **对速度区分大小写**-区分大小写的搜索更具体且性能更高。 区分大小写的 [字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（如 `has_cs` 和）的名称 `contains_cs` 通常以结尾 `_cs` 。 您还可以使用区分大小写的 equals 运算符 `==` 而不是 `=~` 。
-- **分析、不提取**（如果可能，请使用 [Parse 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) 或分析函数，如 [parse_json ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [提取 ( # A1 函数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)，这两个函数都使用正则表达式。 为更复杂的方案保留使用正则表达式。 [阅读有关分析函数的详细信息](#parse-strings)
-- **筛选表不是表达式**—如果可以根据表格列进行筛选，则不能在计算列上进行筛选。
-- **无三字符术语**—避免使用包含三个或更少字符的术语进行比较或筛选。 不会对这些术语编制索引，并且匹配这些术语将需要更多资源。
-- **项目**：通过只投影所需的列使您的结果更易于理解。 在运行 [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) 或类似操作之前投射特定列也有助于提高性能。
+- **包含节拍** —若要避免在不必要的词中搜索子字符串，请使用 `has` 运算符而不是 `contains` 。 [了解字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **查找特定** 列—查看特定列，而不是在所有列中运行全文搜索。 请勿使用 `*` 检查所有列。
+- **对速度区分大小写** -区分大小写的搜索更具体且性能更高。 区分大小写的 [字符串运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（如 `has_cs` 和）的名称 `contains_cs` 通常以结尾 `_cs` 。 您还可以使用区分大小写的 equals 运算符 `==` 而不是 `=~` 。
+- **分析、不提取** （如果可能，请使用 [Parse 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) 或分析函数，如 [parse_json ( # B1](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）。 避免 `matches regex` 使用字符串运算符或 [提取 ( # A1 函数](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)，这两个函数都使用正则表达式。 为更复杂的方案保留使用正则表达式。 [阅读有关分析函数的详细信息](#parse-strings)
+- **筛选表不是表达式** —如果可以根据表格列进行筛选，则不能在计算列上进行筛选。
+- **无三字符术语** —避免使用包含三个或更少字符的术语进行比较或筛选。 不会对这些术语编制索引，并且匹配这些术语将需要更多资源。
+- **项目** ：通过只投影所需的列使您的结果更易于理解。 在运行 [join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) 或类似操作之前投射特定列也有助于提高性能。
 
 ## <a name="optimize-the-join-operator"></a>优化 `join` 运算符
 [Join 运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator)通过匹配指定列中的值来合并两个表中的行。 应用这些提示以优化使用此运算符的查询。
 
-- **向左较小的表**- `join` 运算符将联接语句左侧表中的记录与右侧的记录进行匹配。 通过在左侧使用较小的表，将需要匹配较少的记录，从而加快查询的运行。 
+- **向左较小的表** - `join` 运算符将联接语句左侧表中的记录与右侧的记录进行匹配。 通过在左侧使用较小的表，将需要匹配较少的记录，从而加快查询的运行。 
 
     在下表中，我们将左表缩小 `DeviceLogonEvents` 为仅包含三个特定设备，然后再 `IdentityLogonEvents` 通过帐户 sid 加入。
  
@@ -80,7 +80,7 @@ ms.locfileid: "48649663"
     on AccountSid
     ```
 
-- 在将每个匹配项返回到右表中之前，**使用内部联接风格**（默认的[连接风格](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors)或[innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicates 中的行），然后再将左侧表中的行联接起来。 如果左表中有多个行具有相同的键值 `join` ，则这些行将被消除重复，以便为每个唯一值留出单个随机行。
+- 在将每个匹配项返回到右表中之前， **使用内部联接风格** （默认的 [连接风格](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors)或 [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicates 中的行），然后再将左侧表中的行联接起来。 如果左表中有多个行具有相同的键值 `join` ，则这些行将被消除重复，以便为每个唯一值留出单个随机行。
 
     此默认行为可能会从左侧表中退出可提供有用见解的重要信息。 例如，下面的查询仅显示一个包含特定附件的电子邮件，即使使用多封电子邮件发送相同的附件也是如此：
 
@@ -99,7 +99,7 @@ ms.locfileid: "48649663"
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
-- **从时间窗口加入记录**—在调查安全事件时，分析师将查找在同一时间段内发生的相关事件。 在使用时应用相同的方法 `join` 也可减少要检查的记录数，从而提高了优势。
+- **从时间窗口加入记录** —在调查安全事件时，分析师将查找在同一时间段内发生的相关事件。 在使用时应用相同的方法 `join` 也可减少要检查的记录数，从而提高了优势。
     
     下面的查询检查在接收到恶意文件的30分钟内是否发生登录事件：
 
@@ -115,7 +115,7 @@ ms.locfileid: "48649663"
     ) on AccountName 
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
-- **在两面上应用时间筛选器**—即使您没有调查特定的时间窗口，同时对左侧表和右侧表应用时间筛选器可以减少要检查的记录数并提高 `join` 性能。 下面的查询适用于 `Timestamp > ago(1h)` 这两个表，使其仅联接过去一小时内的记录：
+- **在两面上应用时间筛选器** —即使您没有调查特定的时间窗口，同时对左侧表和右侧表应用时间筛选器可以减少要检查的记录数并提高 `join` 性能。 下面的查询适用于 `Timestamp > ago(1h)` 这两个表，使其仅联接过去一小时内的记录：
 
     ```kusto
     EmailAttachmentInfo
@@ -124,7 +124,7 @@ ms.locfileid: "48649663"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **使用提示提高性能**-将提示用于 `join` 运算符，以指示后端在运行占用大量资源的操作时分布负载。 [了解有关联接提示的详细信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **使用提示提高性能** -将提示用于 `join` 运算符，以指示后端在运行占用大量资源的操作时分布负载。 [了解有关联接提示的详细信息](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
     例如， **[无序提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** 可帮助提高查询性能。使用基数较高的键联接表时，具有很多唯一值的键，如 `AccountObjectId` 下面的查询中所示：
 
@@ -149,7 +149,7 @@ ms.locfileid: "48649663"
 ## <a name="optimize-the-summarize-operator"></a>优化 `summarize` 运算符
 [汇总运算符](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator)聚合表的内容。 应用这些提示以优化使用此运算符的查询。
 
-- **查找非重复值**通常，用于 `summarize` 查找可能重复的不同值。 将其用于聚合没有重复值的列可能是不必要的。
+- **查找非重复值** 通常，用于 `summarize` 查找可能重复的不同值。 将其用于聚合没有重复值的列可能是不必要的。
 
     虽然单个电子邮件可以成为多个事件的一部分，但下面的示例并 _不_ 是有效使用， `summarize` 因为单个电子邮件的网络邮件 ID 始终附带唯一的发件人地址。
  
@@ -173,7 +173,7 @@ ms.locfileid: "48649663"
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **无序查询查询**—虽然 `summarize` 最适用于具有重复值的列，相同的列也可以具有 _较高的基数_ 或大量的唯一值。 与 `join` 运算符一样，也可以在对具有高基数的列进行操作时，将 [无序提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) 应用于 `summarize` 以分发处理负载，并可能提高性能。
+- **无序查询查询** —虽然 `summarize` 最适用于具有重复值的列，相同的列也可以具有 _较高的基数_ 或大量的唯一值。 与 `join` 运算符一样，也可以在对具有高基数的列进行操作时，将 [无序提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) 应用于 `summarize` 以分发处理负载，并可能提高性能。
 
     下面的查询用于 `summarize` 计算不同的收件人电子邮件地址，该地址可以在大型组织的成百上千个组织中运行。 为了提高性能，它采用了 `hint.shufflekey` 以下内容：
 
@@ -208,7 +208,7 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 
 若要在命令行周围创建更持久的查询，请应用以下做法：
 
-- 通过在 "文件名" 字段上进行匹配（而不是在命令行本身上进行筛选），确定已知的过程 (例如 *net.exe* 或 *psexec.exe*) 。
+- 通过在 "文件名" 字段上进行匹配（而不是在命令行本身上进行筛选），确定已知的过程 (例如 *net.exe* 或 *psexec.exe* ) 。
 - 使用[parse_command_line ( # A1 函数](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line)分析命令行部分 
 - 查询命令行参数时，请勿按特定顺序查找多个不相关参数的完全匹配。 而是使用正则表达式或使用多个单独的 Contains 运算符。
 - 使用不区分大小写的匹配项。 例如，使用 `=~` 、 `in~` 和 `contains` 代替 `==` 、 `in` 和 `contains_cs` 。

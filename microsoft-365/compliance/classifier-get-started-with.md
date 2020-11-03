@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本文介绍如何创建和培训自定义分类器，以及如何重新培训它们以提高准确性。
-ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636981"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841229"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>可训练的分类器入门（预览版）
 
@@ -33,7 +33,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 
 若要了解有关不同类型的分类器的详细信息，请参阅 [了解 trainable 类元 (preview) ](classifier-learn-about.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="licensing-requirements"></a>许可要求
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 若要访问 UI 中的分类器： 
 
 - 全局管理员需要选择加入租户以创建自定义分类器。
-- 合规性管理员角色或合规性数据管理员是培训分类器所必需的。
+- 合规性管理员角色、数据调查角色或合规性数据管理员是培训分类器所必需的。
 
 在这些情况下，您需要具有这些权限的帐户才能使用分类器：
 
@@ -74,7 +74,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 
 ### <a name="seed-content"></a>种子内容
 
-当您希望 trainable 分类程序独立且准确地将项目标识为特定的内容类别时，您首先必须向其提供类别中的内容类型的多个示例。 此示例向 trainable 分类符进行的馈送称为 *种子设定*。 种子内容由人选择，并被判定为表示内容的类别。
+当您希望 trainable 分类程序独立且准确地将项目标识为特定的内容类别时，您首先必须向其提供类别中的内容类型的多个示例。 此示例向 trainable 分类符进行的馈送称为 *种子设定* 。 种子内容由人选择，并被判定为表示内容的类别。
 
 > [!TIP]
 > 您需要至少有50个肯定样本以及多达500个。 Trainable 分类器将最多处理500个最近创建的示例， (由文件创建的日期/时间戳) 。 提供的示例越多，分类器将产生的预测越精确。
@@ -96,16 +96,16 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
    > [!IMPORTANT]
    > 请确保种子集中的项是类别的 **强** 示例。 Trainable 分类器最初根据您对其进行种子设定的内容生成模型。 分类器假定所有种子示例都是强的，并且无法知道样本是否为类别的弱匹配或负匹配。
 
-2. 将种子内容放在专门用于保存 *种子内容*的 SharePoint Online 文件夹中。 请记下网站、库和文件夹 URL。
+2. 将种子内容放在专门用于保存 *种子内容* 的 SharePoint Online 文件夹中。 请记下网站、库和文件夹 URL。
 
    > [!TIP]
    > 如果为种子数据创建新的网站和文件夹，则在创建将使用该种子数据的 trainable 分类器之前，至少要为该位置编制索引一个小时。
 
-3. 使用合规性管理或安全管理员角色访问和开放**microsoft 365 合规性中心**或**microsoft 365 security center**  >  **Data 分类**登录 microsoft 365 合规性中心。
+3. 使用合规性管理或安全管理员角色访问和开放 **microsoft 365 合规性中心** 或 **microsoft 365 security center**  >  **Data 分类** 登录 microsoft 365 合规性中心。
 
 4. 选择 " **Trainable 类元** " 选项卡。
 
-5. 选择 " **创建 trainable 分类器**"。
+5. 选择 " **创建 trainable 分类器** "。
 
 6. 为 `Name` `Description` 您希望此 trainable 分类器标识的项目类别的 "和" 字段填写相应的值。
 
@@ -125,7 +125,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
     > [!IMPORTANT]
     > 示例项目不能加密且必须为英语。
 
-12. 将测试内容放置在专门用于保存 *测试内容*的 SharePoint Online 文件夹中。 请记下 SharePoint Online 网站、库和文件夹 URL。
+12. 将测试内容放置在专门用于保存 *测试内容* 的 SharePoint Online 文件夹中。 请记下 SharePoint Online 网站、库和文件夹 URL。
 
     > [!TIP]
     > 如果为测试数据创建新的网站和文件夹，则在创建将使用该种子数据的 trainable 分类程序之前，至少要为该位置编制索引一个小时。

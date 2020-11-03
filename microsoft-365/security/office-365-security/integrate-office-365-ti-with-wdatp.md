@@ -16,16 +16,16 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: 将 Microsoft Defender for Office 365 与 Microsoft Defender 高级威胁防护结合使用，以获取有关针对你的设备和电子邮件内容的威胁的更多详细信息。
+description: 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 结合使用，以获取有关针对你的设备和电子邮件内容的威胁的更多详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c95e15c3cf16547843f9d2976dbf9df0d5747c0
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309233"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842352"
 ---
-# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-advanced-threat-protection"></a>将 Microsoft Defender for Office 365 与 Microsoft Defender 高级威胁防护结合使用
+# <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 一起使用
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "48309233"
 在此示例中，可以看到检测到的电子邮件的收件人有四台设备，并且有一个警报。 单击设备的链接将在 Microsoft Defender 安全中心 () 中打开其页面 [https://securitycenter.windows.com](https://securitycenter.windows.com) 。
 
 > [!TIP]
-> **[了解有关 Microsoft Defender 安全中心的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (也称为 MICROSOFT defender ATP 门户。 ) 
+> **[了解有关 Microsoft Defender 安全中心](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (也称为 microsoft Defender for Endpoint portal 的详细信息。 ) 
   
 ## <a name="requirements"></a>Requirements
 
@@ -57,17 +57,17 @@ ms.locfileid: "48309233"
   
 1. 作为全局管理员或安全管理员，请转到 [https://protection.office.com](https://protection.office.com) 并登录。  (此操作将转到 Office 365 安全 & 合规中心。 ) 
     
-2. 在导航窗格中，选择 "**威胁管理**  >  **资源管理器**"。<br>![威胁管理菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. 在导航窗格中，选择 " **威胁管理**  >  **资源管理器** "。<br>![威胁管理菜单中的资源管理器](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
-3. 在屏幕的右上角，选择 " **WDATP 设置**"。
+3. 在屏幕的右上角，选择 " **Defender For Endpoint Settings** "。
     
-4. 在 "Microsoft Defender for Endpoint connection" 对话框中，启用 " **连接到 WINDOWS ATP**"。<br>![Microsoft Defender for Endpoint 连接](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. 在 "Microsoft Defender for Endpoint connection" 对话框中，启用 " **连接到 Microsoft defender For endpoint** "。<br>![Microsoft Defender for Endpoint 连接](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. 请转到 Microsoft Defender 安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 。
 
-6. 在导航栏中，选择 " **设置**"。 然后，在 " **常规**" 下，选择 " **高级功能**"。
+6. 在导航栏中，选择 " **设置** "。 然后，在 " **常规** " 下，选择 " **高级功能** "。
 
-7. 向下滚动到 " **Office 365 威胁智能连接**"，然后打开连接。<br/>![Office 365 威胁智能连接](../../media/mdatp-oatptoggle.png)<br>
+7. 向下滚动到 " **Office 365 威胁智能连接** "，然后打开连接。<br/>![Office 365 威胁智能连接](../../media/mdatp-oatptoggle.png)<br>
 
 ## <a name="related-articles"></a>相关文章
 

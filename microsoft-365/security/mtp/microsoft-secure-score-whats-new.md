@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779224"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843812"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "48779224"
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>删除与 Microsoft Defender 高级威胁防护相关的改进操作
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>删除与 Microsoft Defender for Endpoint 相关的改进操作
 
 - 设置 Microsoft Defender SmartScreen Windows 应用商店应用程序 web 内容检查以警告
 
@@ -54,8 +54,8 @@ ms.locfileid: "48779224"
 ## <a name="updated-improvement-actions"></a>更新的提高操作
 
 - 添加了 Azure Active Directory 改善操作
-- 添加了 Azure 高级威胁防护改进操作
-- 对 Microsoft Defender ATP 威胁的支持 [& 漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议
+- 添加了 Microsoft Defender for Identity 改进操作
+- 对 Microsoft Defender for Endpoint 威胁的支持 [& 漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议
     - TVM 提供的所有已发布的安全建议现已推出
 
 ## <a name="updated-interface-and-functionality"></a>更新的界面和功能

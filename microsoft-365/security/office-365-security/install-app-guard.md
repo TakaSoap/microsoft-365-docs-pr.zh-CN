@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 获取最新的基于硬件的隔离。 阻止目前和新兴攻击（如入侵或恶意链接）中断员工工作效率和企业安全性。
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197569"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843002"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Office 的应用程序防护 (公共预览版) 的管理员
 
@@ -36,19 +36,19 @@ ms.locfileid: "48197569"
 
 适用于 Office 的 Microsoft Defender 应用程序防护 (Office) 的应用程序防护可帮助防止不受信任的文件访问受信任的资源，从而使您的企业免受新的和新兴的攻击。 本文将指导管理员为 Office 的应用程序防护的预览设置设备。 它提供了有关系统要求和安装步骤的信息，以在设备上启用 Office 的应用程序防护。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 ### <a name="minimum-hardware-requirements"></a>最低硬件要求
 
-* **CPU**： 64-位、4核 (物理或虚拟) 、虚拟化扩展 (Intel VT-x 或 AMD-V) 、Core i5 等效项或更高版本建议
-* **物理内存**： 8 GB RAM
-* **硬盘**：系统驱动器上有 10 GB 的可用空间 (SSD 建议) 
+* **CPU** ： 64-位、4核 (物理或虚拟) 、虚拟化扩展 (Intel VT-x 或 AMD-V) 、Core i5 等效项或更高版本建议
+* **物理内存** ： 8 GB RAM
+* **硬盘** ：系统驱动器上有 10 GB 的可用空间 (SSD 建议) 
 
 ### <a name="minimum-software-requirements"></a>最低软件要求
 
-* **Windows 10**： Windows 10 企业版，客户端内部版本 2004 (20H1) 内部版本19041
-* **Office**： Office Beta 频道内部版本 2008 16.0.13212 或更高版本
-* **更新包**： Windows 10 累积的每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
+* **Windows 10** ： Windows 10 企业版，客户端内部版本 2004 (20H1) 内部版本19041
+* **Office** ： Office Beta 频道内部版本 2008 16.0.13212 或更高版本
+* **更新包** ： Windows 10 累积的每月安全更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 有关系统要求的详细信息，请参阅 [Microsoft Defender 应用程序防护的系统要求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要了解有关 Office 预览体验成员预览版的详细信息，请参阅 [部署 Office 预览体验成员内部版本](https://insider.office.com/business/deploy)入门。
 
@@ -59,9 +59,9 @@ ms.locfileid: "48197569"
 
 ### <a name="enable-application-guard-for-office"></a>启用 Office 应用程序防护
 
-1.  下载并安装 **Windows 10 累积的每月安全更新 KB4571756**。 
+1.  下载并安装 **Windows 10 累积的每月安全更新 KB4571756** 。 
 
-2.  在 Windows 功能下选择 " **Microsoft Defender 应用程序防护** "，然后选择 **"确定"**。 启用应用程序防护功能将提示系统重新启动。 可以选择立即重新启动，也可以选择在步骤3之后重新启动。
+2.  在 Windows 功能下选择 " **Microsoft Defender 应用程序防护** "，然后选择 **"确定"** 。 启用应用程序防护功能将提示系统重新启动。 可以选择立即重新启动，也可以选择在步骤3之后重新启动。
 
     ![显示 AG 的 "Windows 功能" 对话框](../../media/ag03-deploy.png)
     
@@ -71,7 +71,7 @@ ms.locfileid: "48197569"
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-3.  在 " **计算机配置 \\ 管理模板" \\ Windows 组件 " \\ Microsoft defender 应用程序防护**" 中，查找位于托管模式组策略中的 Microsoft defender 应用程序防护。 通过将 "选项" 下的值设置为 **2** 或 **3** ，然后选择 **"确定" 或 "** **应用**"，打开此策略。
+3.  在 " **计算机配置 \\ 管理模板" \\ Windows 组件 " \\ Microsoft defender 应用程序防护** " 中，查找位于托管模式组策略中的 Microsoft defender 应用程序防护。 通过将 "选项" 下的值设置为 **2** 或 **3** ，然后选择 **"确定" 或 "** **应用** "，打开此策略。
 
     ![在托管模式下打开 AG](../../media/ag04-deploy.png)
   
@@ -92,11 +92,11 @@ ms.locfileid: "48197569"
 
     ![“开始”菜单](../../media/ag05-diagnostic.png)
 
-2.  在 " **Windows 设置**" 中，选择 " **隐私**"。
+2.  在 " **Windows 设置** " 中，选择 " **隐私** "。
 
     ![Windows 设置菜单](../../media/ag06-diagnostic.png)
 
-3.  在 "隐私" 下，选择 " **诊断 & 反馈** " 并选择 " **可选诊断数据**"。
+3.  在 "隐私" 下，选择 " **诊断 & 反馈** " 并选择 " **可选诊断数据** "。
 
     ![诊断和反馈菜单](../../media/ag07a-diagnostic.png)
 
@@ -158,11 +158,11 @@ Office 支持以下策略，以使您能够配置适用于 Office 的应用程�
 
 3.  如果尚未填写您的反馈框，请填写 " **汇总您的反馈** " 框。
 
-4.  在 " **详细** 说明" 框中填写你遇到的问题的详细说明和所需的步骤，然后选择 " **下一步**"。
+4.  在 " **详细** 说明" 框中填写你遇到的问题的详细说明和所需的步骤，然后选择 " **下一步** "。
 
-5.  选择 "问题" 旁边的气泡。 确保选择的类别是 **安全和隐私 \> Microsoft Defender 应用程序防护– Office**，然后选择 " **下一步**"。
+5.  选择 "问题" 旁边的气泡。 确保选择的类别是 **安全和隐私 \> Microsoft Defender 应用程序防护– Office** ，然后选择 " **下一步** "。
 
-6.  依次选择 " **新反馈**" 和 " **下一步**"。
+6.  依次选择 " **新反馈** " 和 " **下一步** "。
 
 7.  收集有关此问题的跟踪：
 
@@ -170,7 +170,7 @@ Office 支持以下策略，以使您能够配置适用于 Office 的应用程�
 
     2.  如果在运行应用程序防护时遇到问题，请打开应用程序防护实例。 执行此操作后，将从应用程序防护容器中收集其他跟踪。
 
-    3.  选择 " **开始录制** " 并等待磁贴停止旋转并说出 " *停止录制*"。
+    3.  选择 " **开始录制** " 并等待磁贴停止旋转并说出 " *停止录制* "。
 
     4.  使用应用程序防护完全重现问题。 这可能包括尝试启动应用程序防护实例并等待它失败，或在正在运行的应用程序防护实例中再现问题。
 
@@ -180,7 +180,7 @@ Office 支持以下策略，以使您能够配置适用于 Office 的应用程�
 
 8.  附加与问题相关的任何相关的屏幕截图或文件。
 
-9.  选择“**提交**”。
+9.  选择“ **提交** ”。
 
 
 
@@ -188,13 +188,13 @@ Office 支持以下策略，以使您能够配置适用于 Office 的应用程�
 
 如果在应用程序防护中打开 Office 文档时出现问题，则还可以从 Office 中提交反馈。 有关提交反馈的信息，请参阅 [Office 预览体验手册](https://insider.office.com/handbook) 。
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>与 Microsoft Defender ATP 和 Office ATP 集成
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>与 Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 的集成
 
-适用于 Office 的应用程序防护将与 Microsoft Defender 高级威胁防护 (ATP) 集成，以提供有关在独立环境中发生的恶意活动的监控和警报。
+适用于 Office 的应用程序防护将与 Microsoft Defender for Endpoint 集成，以提供有关隔离环境中发生的恶意活动的监视和警报。
 
-Microsoft Defender ATP 是一种安全平台，旨在帮助企业网络阻止、检测、调查和响应高级威胁。 有关此平台的更多详细信息，请访问 [Microsoft Defender 高级威胁防护](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) 页面。 有关将设备加入到此平台的详细信息，请参阅 [Microsoft DEFENDER ATP 服务的板载设备](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
+Microsoft Defender for Endpoint 是一种安全平台，旨在帮助企业网络阻止、检测、调查和响应高级威胁。 有关此平台的更多详细信息，请访问 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) 页。 有关将设备加入到此平台的详细信息，请参阅 [Microsoft Defender For Endpoint service 的板载设备](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
-您还可以将 Office 365 ATP 配置为与 Microsoft Defender ATP 配合使用。 请参阅将 [Office 365 atp 与 Microsoft DEFENDER ATP 集成](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)。
+您还可以配置 Microsoft Defender for Office 365 以使用适用于终结点的 Defender。 请参阅将 [适用于 Office 365 的 defender 与 Microsoft Defender For Endpoint 集成](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)。
 
 ## <a name="limitations-and-considerations"></a>限制和注意事项
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 获取适用于市场活动的 Microsoft 365，以便您可以保护您的市场活动，从 cybersecurity 威胁到电子邮件、数据和通信。
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131972"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843230"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>获取适用于市场活动的 Microsoft 365
 
@@ -43,11 +43,11 @@ ms.locfileid: "48131972"
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 的市场活动包括什么？
 Microsoft 365 商业高级版的这一配置包括可帮助您和您的员工安全地协同工作的简单控件： 
-- **保护用户标识**：确保用户是他们在登录发送电子邮件或访问文件 (多重身份验证) 时所说的。
-- **保护敏感信息**：保护敏感信息以监视在组织外部共享的信息 (数据丢失防护) 。
-- **保护移动设备**：保护移动设备 (移动应用保护策略) 中的数据。
-- 防止**恶意内容**：通过扫描电子邮件附件 (高级威胁防护) 来防止恶意内容的访问。
-- **保护密码**：将密码设置为永不过期，这样会更加安全，并有助于防止工作 stoppages (密码策略) 。 
+- **保护用户标识** ：确保用户是他们在登录发送电子邮件或访问文件 (多重身份验证) 时所说的。
+- **保护敏感信息** ：保护敏感信息以监视在组织外部共享的信息 (数据丢失防护) 。
+- **保护移动设备** ：保护移动设备 (移动应用保护策略) 中的数据。
+- **防御恶意内容** ：通过扫描电子邮件附件 (Defender for Office 365) 阻止对恶意内容的访问。
+- **保护密码** ：将密码设置为永不过期，这样会更加安全，并有助于防止工作 stoppages (密码策略) 。 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>It 的成本、需要它的目标以及承诺是什么？

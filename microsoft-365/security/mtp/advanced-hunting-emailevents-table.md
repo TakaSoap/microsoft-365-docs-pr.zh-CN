@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429451"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842628"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429451"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 
-[高级搜寻](advanced-hunting-overview.md)架构中的 `EmailEvents` 表包含涉及 Office 365 ATP 处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
+`EmailEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关涉及 Microsoft Defender for Office 365 电子邮件处理的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
@@ -62,9 +62,9 @@ ms.locfileid: "48429451"
 | `DeliveryAction` | string | 电子邮件发送操作：已发送、已标记为垃圾邮件、已阻止或已替换 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
 | `PhishFilterVerdict` | string | 关于电子邮件是否是钓鱼邮件的电子邮件筛选堆栈裁定：钓鱼邮件或非钓鱼邮件 |
-| `PhishDetectionMethod` | string | 用于检测电子邮件是否是钓鱼邮件的方法：恶意 URL 信誉、ATP 安全链接 URL 引爆、高级钓鱼筛选器、常规钓鱼筛选器、反欺骗（组织内）、反欺骗（外部域）、域模拟、用户模拟、品牌模拟 |
+| `PhishDetectionMethod` | string | 用于将电子邮件检测为网络钓鱼的方法：恶意 URL 信誉、安全链接 URL 沙箱、高级网络钓鱼筛选器、常规网络钓鱼筛选器、反欺骗：组织内、反欺骗：外部域、域模拟、用户模拟、品牌模拟 |
 | `MalwareFilterVerdict` | string | 关于电子邮件是否包含恶意软件的电子邮件筛选堆栈裁定：恶意软件，非恶意软件 |
-| `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、ATP 安全附件 |
+| `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、安全附件 |
 | `FinalEmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
 | `FinalEmailActionPolicy` | string | 生效的操作策略：反垃圾邮件高可信度、反垃圾邮件、反垃圾邮件批量邮件、反垃圾邮件、反垃圾邮件钓鱼、防钓鱼域模拟、防钓鱼用户模拟、防钓鱼欺骗、防钓鱼图形模拟、反恶意软件、安全附件、企业传输规则 (ETR) |
 | `FinalEmailActionPolicyGuid` | string | 确定最后邮件操作的策略的唯一标识符 |

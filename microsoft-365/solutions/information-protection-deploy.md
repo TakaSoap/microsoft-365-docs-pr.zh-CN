@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 配置安全和服务基础结构，以保护您的信息并遵守数据隐私法规。
-ms.openlocfilehash: 4296e2f08d9dada62cc45226885d9519a33e6532
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 9af0a113d9b0eb2cbca07fdf457cd8bb7db3e094
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655793"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842292"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>为 Microsoft 365 中的数据隐私法规部署信息保护
 
@@ -39,7 +39,7 @@ Microsoft 365 中的数据类型示例包括 Microsoft 团队中的聊天会话�
 | 功能或特性 | 说明 | 许可 |
 |:-------|:-----|:-------|
 | 合规性管理器 | 管理法规遵从性活动，获取当前合规性配置的整体分数，并在 Microsoft 365 合规性中心中查找基于工作流的风险评估工具改进的建议。 | Microsoft 365 E3 和 E5 |
-| Office 高级威胁防护 (ATP) | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 | 
+| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 | Microsoft 365 E3 和 E5 | 
 | 敏感度标签 | 通过在电子邮件、文件或站点上放置具有不同保护级别的标签，可以在不影响用户工作效率和协作能力的情况下对组织的数据进行分类和保护。 | Microsoft 365 E3 和 E5 |
 | 数据丢失防护 (DLP) | 在内部和外部检测、警告和阻止有风险的、无意或不适当的共享，例如包含个人信息的数据共享。 | Microsoft 365 E3 和 E5 | 
 | 数据保留标签和策略 | 实施信息治理控制，例如将数据保留多长时间以及对客户个人数据存储的要求，以符合组织的政策或数据法规。 | Microsoft 365 E3 和 E5 |

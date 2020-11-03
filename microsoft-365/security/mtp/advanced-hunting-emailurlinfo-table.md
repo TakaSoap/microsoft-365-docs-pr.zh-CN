@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2d37868af5c582512b543c1e2ca859e63b190425
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 6684f2d56cb30c909cae57e7b3e6593377449f6b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430831"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842556"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -32,9 +32,9 @@ ms.locfileid: "48430831"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
-[高级搜寻](advanced-hunting-overview.md)架构中的 `EmailUrlInfo` 表包含有关由 Office 365 ATP 处理的电子邮件和附件中的 URL 的信息。 使用此参考来构建从此表返回信息的查询。
+`EmailUrlInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关电子邮件和附件（由 Microsoft Defender for Office 365 处理）上的 url 的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
