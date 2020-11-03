@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431059"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847340"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>在设备、电子邮件、应用和标识之间寻找威胁
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431059"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
-Microsoft 威胁防护中的[高级求职](advanced-hunting-overview.md)使你能够主动在以下范围内寻找威胁：
-- 由 Microsoft Defender ATP 管理的设备
+Microsoft 365 Defender 中的[高级求职](advanced-hunting-overview.md)允许你主动在以下范围内寻找威胁：
+- 由 Microsoft Defender for Endpoint 管理的设备
 - Microsoft 365 处理的电子邮件
-- Microsoft 云应用安全和 Azure ATP 跟踪的云应用活动、身份验证事件和域控制器活动
+- Microsoft 云应用安全和 Microsoft Defender for Identity 所跟踪的云应用程序活动、身份验证事件和域控制器活动
 
 使用此可见性级别，可以快速查找遍历网络各部分的威胁，包括收到电子邮件或 web 的复杂入侵、提升本地权限、获取特权域凭据以及跨设备横向移动。 
 

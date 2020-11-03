@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48fd80aca01ab3bf5665a53e5538cc450320cf6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8590f73b32e452c9d34d179db12c4db978df8e4d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197913"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846696"
 ---
 # <a name="understand-the-latest-attack-campaigns-and-techniques-with-threat-analytics"></a>通过威胁分析了解最新的攻击活动和技术 
 
@@ -31,4 +31,4 @@ ms.locfileid: "48197913"
 
 **威胁分析** 是一组已发布的交互式报告，一旦出现新的威胁，就会发现新技术、攻击活动和恶意软件发作。 这些报告可帮助您评估威胁对您的环境的影响，并提供建议的操作以包含、提高组织恢复能力并防止特定威胁。
 
-[了解有关 Microsoft DEFENDER ATP 中的威胁分析的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。  
+[了解有关 Microsoft Defender For Endpoint 中的威胁分析的详细信息](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)。  

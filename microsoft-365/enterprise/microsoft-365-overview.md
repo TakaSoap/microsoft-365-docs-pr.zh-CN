@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 介绍 Microsoft 365 企业版的组件、计划和部署路径。
-ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655965"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846960"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企业版概述
 
@@ -44,7 +44,7 @@ Microsoft 365 企业版可通过三种计划获取。
 |计划名称|功能|
 |---|---|
 |E3|访问 Microsoft 365 核心产品和功能，安全地提高工作场所工作效率并促进创新。|
-|E5|访问 Microsoft 365 最新产品和功能。 这包括高级威胁防护、安全性和协作工具。 此计划包括 E3 的所有功能以及高级安全、语音和数据分析工具。|
+|E5|访问 Microsoft 365 最新产品和功能。 其中包括适用于 Office 365 的 Defender、安全工具和协作工具。 此计划包括 E3 的所有功能以及高级安全、语音和数据分析工具。|
 |F3|通过专门构建的工具和资源与一线员工联系，帮助他们发挥出最大潜能。|
 |||
 
@@ -83,14 +83,14 @@ Microsoft 365 E3 用户可以使用这些加载项来利用 Microsoft 365 E5 包
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Office 2010 客户端和服务器及 Windows 7 的支持终止
 
-对 [Windows 7](https://aka.ms/win7upgrade) 的支持已于 **2020 年 1 月 14 日**终止。
+对 [Windows 7](https://aka.ms/win7upgrade) 的支持已于 **2020 年 1 月 14 日** 终止。
 
-我们于 **2020 年 10 月 13 日**终止对以下产品的支持：
+我们于 **2020 年 10 月 13 日** 终止对以下产品的支持：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 **2021 年 4 月 13 日**终止。
+对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 **2021 年 4 月 13 日** 终止。
 
 有关这些产品的升级、迁移和移动到云选项的直观摘要，请参阅[停止提供支持海报](../downloads/Office2010Windows7EndOfSupport.pdf)。
 

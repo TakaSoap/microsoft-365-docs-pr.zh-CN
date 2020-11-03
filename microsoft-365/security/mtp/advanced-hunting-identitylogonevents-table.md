@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 212189c89f354b186072bb109f119cf048680d08
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 176f131ad020d001b72b97332d54be71feef5548
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431083"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847412"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -32,9 +32,9 @@ ms.locfileid: "48431083"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
-`IdentityLogonEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含通过 Azure ATP 和与 Microsoft 云应用安全捕获的 microsoft online 服务捕获的身份验证活动捕获的身份验证活动的相关信息。 使用此参考来构建从此表返回信息的查询。
+`IdentityLogonEvents`[高级](advanced-hunting-overview.md)搜索架构中的表包含有关通过 microsoft Defender 捕获的本地 Active Directory 进行的身份验证活动的信息，这些活动与 Microsoft 云应用安全捕获的 microsoft online Services 相关的标识和身份验证活动有关。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
 > 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
@@ -48,7 +48,7 @@ ms.locfileid: "48431083"
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 记录事件的日期和时间 |
 | `ActionType` | string | 触发事件的活动类型。 有关详细信息，请参阅[在门户架构参考中](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
-| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录** -用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络** -在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的**批处理**会话<br><br> - **服务** -服务会话启动时启动 |
+| `LogonType` | string | 登录会话的类型，特别是：<br><br> - **交互式** 用户使用本地键盘和屏幕与计算机进行物理交互<br><br> - **远程交互 (RDP) 登录** -用户使用远程桌面、终端服务、远程协助或其他 RDP 客户端远程与计算机交互<br><br> - **网络** -在使用 PsExec 访问计算机时或在访问计算机上的共享资源（如打印机和共享文件夹）时启动的会话<br><br> - 由计划任务启动的 **批处理** 会话<br><br> - **服务** -服务会话启动时启动 |
 | `Application` | string | 执行录制操作的应用程序 |
 | `Protocol` | string | 使用的网络协议 |
 | `FailureReason` | string | 解释录制的操作失败原因的信息 |

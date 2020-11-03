@@ -1,6 +1,6 @@
 ---
-title: 在 Microsoft 威胁防护中确定事件的优先级
-description: 了解如何在 Microsoft 威胁防护中确定事件队列中事件的优先级
+title: 优先考虑 Microsoft 365 Defender 中的事件
+description: 了解如何在 Microsoft 365 Defender 中优先处理事件队列中的事件
 keywords: 事件, 队列, 概述, 设备, 标识, 用户, 邮箱, 电子邮件, 事件
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430819"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846708"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>在 Microsoft 威胁防护中确定事件的优先级
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>优先考虑 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 
-Microsoft 威胁防护应用相关性分析，将来自不同产品的所有相关警报和调查汇总到一个事件中。 鉴于 Microsoft 威胁防护在整个产品和产品套件中具有的端到端可见性，Microsoft 威胁防护还会针对仅识别为“恶意”的活动触发唯一警报。 通过执行此操作，Microsoft 威胁防护可以描述更详尽的攻击事件，使安全操作分析人员能够理解和处理整个组织中的复杂威胁。
+Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相关警报和调查聚合到一个事件中。 Microsoft 365 Defender 还会触发针对活动的唯一警报，这些活动仅在 Microsoft 365 Defender 跨整个房地产和产品套件提供的端到端可见性时，才会被标识为恶意活动。 通过执行此操作，Microsoft 365 Defender narrates 了更广泛的攻击情景，使安全操作分析员能够了解并处理整个组织中的复杂威胁。
 
 
-“事件队列”**** 显示在设备、用户和邮箱中标记的事件的集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。
+“事件队列”显示在设备、用户和邮箱中标记的事件的集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。
 
 
 ![事件队列的图像](../../media/incidents-queue.png) 
@@ -75,7 +75,7 @@ Microsoft 威胁防护应用相关性分析，将来自不同产品的所有相�
 
 
 ### <a name="multiple-service-sources"></a>多个服务源 
-筛选以仅显示包含来自不同来源（Microsoft Defender ATP、Microsoft Cloud App Security、Azure ATP、Office 365 ATP）的警报的事件
+筛选器仅查看包含来自不同源的警报的事件 (Microsoft Defender for Endpoint、Microsoft 云应用安全性、Microsoft Defender for Identity、Microsoft Defender for Office 365) 
 ### <a name="service-sources"></a>服务源
 通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。 
 

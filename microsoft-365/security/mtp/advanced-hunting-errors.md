@@ -1,5 +1,5 @@
 ---
-title: 处理高级搜寻 for Microsoft 威胁防护中的错误
+title: 处理 Microsoft 365 Defender 的高级搜寻中的错误
 description: 了解使用高级搜寻时显示的错误
 keywords: 高级搜索、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构、kusto、超时、资源、错误、未知错误、限制、配额、参数、分配
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636889"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846888"
 ---
 # <a name="handle-advanced-hunting-errors"></a>处理高级搜寻错误
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: cb2aad70b8ba6ccd9075513b5f383ede42ebd6c0
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295124"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846636"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 
@@ -38,7 +38,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 *  (Azure Active Directory 帐户 & 角色的标识) 
 * Microsoft 信息保护) 的数据 (
-* 设备 (Microsoft Defender ATP，称为 [设备的 Microsoft 安全分数](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
+* Microsoft Defender for Endpoint （称为 " [适用于设备的 Microsoft 安全分数](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) "） (设备) 
 * 应用 (电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全) 
 * 基础结构 (现在没有任何改进操作) 
 
@@ -51,15 +51,15 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 ## <a name="check-your-current-score"></a>检查当前分数
 
-若要查看你当前的分数，请转到 Microsoft 安全分数概述页面，并查找表明你的 **安全分数**的磁贴。 你的分数将显示为百分比，以及你已实现的总积分数。
+若要查看你当前的分数，请转到 Microsoft 安全分数概述页面，并查找表明你的 **安全分数** 的磁贴。 你的分数将显示为百分比，以及你已实现的总积分数。
 
 此外，如果您在得分旁选择 " **包括** " 按钮，则可以选择分数的不同视图。 这些不同的分数视图将显示在 "分数" 图块和 "点" 细目图表的图中。
 
 以下是你可以向你的总体成绩视图中添加的分数，以便更完整地了解总体成绩：
 
-- **计划分数**：在计划的操作完成时显示计划的分数
-- **当前许可证分数**：显示可通过当前 Microsoft 许可证实现的分数
-- 可**实现分数**：显示可通过你的 Microsoft 许可证和当前风险接受能力实现的分数
+- **计划分数** ：在计划的操作完成时显示计划的分数
+- **当前许可证分数** ：显示可通过当前 Microsoft 许可证实现的分数
+- 可 **实现分数** ：显示可通过你的 Microsoft 许可证和当前风险接受能力实现的分数
 
 如果您已包括所有可能的分数视图，则此视图如下所示：
 
@@ -107,7 +107,7 @@ Microsoft 安全分数是组织的安全状态的度量，数字越大，表明�
 
 一 **眼** 中的 "" 一节将向您告知类别、它可以保护的攻击和产品。
 
-**用户影响**显示了在制定改进操作后用户将会遇到的情况，并且**受影响的用户**将会看到他们会遇到的情况。
+**用户影响** 显示了在制定改进操作后用户将会遇到的情况，并且 **受影响的用户** 将会看到他们会遇到的情况。
 
 ### <a name="implement-the-improvement-action"></a>实施改进操作
 

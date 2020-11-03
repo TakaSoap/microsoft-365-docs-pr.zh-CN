@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 为 Microsoft 365 设置客户端和服务器软件的路线图。
-ms.openlocfilehash: 94412ca4a7665807368ae33a0e50dc928445c8b7
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: d51aead9a50df3acace94526824cfa08fc083a01
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655955"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847150"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的客户端和服务器软件路线图
 
@@ -31,7 +31,7 @@ ms.locfileid: "48655955"
 - 设备上 Windows 7 和 Windows 8.1 迁移到 Windows 10 企业版
 
 >[!Note]
->已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 有关详细信息，请单击[此处](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
+>已于 **2020 年 1 月 14 日** 结束了对 Windows 7 的支持。 有关详细信息，请单击[此处](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
 完成所有这些迁移一段时间后，您的组织越接近 [新式工作区](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，这是一种安全且集成的环境，可解锁组织中的团队合作和创造力，所有这些都是由 Microsoft 365 for 企业支持和实现的。
@@ -89,7 +89,7 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 - 应该更新最新的安全更新并支持修补程序。在某些情况下，这些更新每月发布一次。
 - 未能最佳利用 Microsoft 云技术并帮助你数字化转换业务。
 - 请勿包含新的生产应用程序，例如 Microsoft Teams。
-- 请勿包含最新的安全功能，例如 Exchange 高级威胁防护。
+- 请勿包括最新的安全功能，例如 Office 365 的 Exchange 和 Defender。
 
 适用于企业的 Microsoft 365 包括 Office server 服务的基于云的版本，这些版本使用一些工具作为本地版本的 Office server 软件，如 web 浏览器和 Outlook 客户端。 这些服务持续更新来保障安全性，但无需 IT 操作，从而节省维护和更新本地服务器所耗的时间。 这些服务还包含 Office 服务器软件中当前未提供的新功能增强版。
 
@@ -117,9 +117,9 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-对 [Exchange Server 2010](exchange-2010-end-of-support.md) 的支持于 **2020 年10月13日**结束。
+对 [Exchange Server 2010](exchange-2010-end-of-support.md) 的支持于 **2020 年10月13日** 结束。
 
-对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 **2021 年 4 月 13 日**结束。
+对 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支持将于 **2021 年 4 月 13 日** 结束。
 
 与其通过 Office 2013 或 Office 2016 版本中的服务器产品升级 Office 2010 版本中的服务器产品，不如考虑：
 
@@ -145,7 +145,7 @@ Microsoft 365 企业应用版会自动安装安全更新和新功能更新，并
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 迁移
 
-已于 **2020 年 1 月 14 日**结束了对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行就地升级。
+已于 **2020 年 1 月 14 日** 结束了对 Windows 7 的支持。 要迁移运行 Windows 7 或 Windows 8.1 的设备，可以执行就地升级。
 
 有关其他方法，请参阅 [Windows 10 部署方案](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 也可以自行[计划 Windows 10 部署](https://aka.ms/planforwin10deployment)。
 

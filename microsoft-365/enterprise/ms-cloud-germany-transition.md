@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327113"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846936"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务
 
@@ -133,7 +133,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 3. 组（新式组）
 4. Delve 配置文件
 5. Exchange Online Protection
-6. 高级威胁防护 (ATP)
+6. Defender for Office 365
 7. 高级电子数据展示
 8. 高级数据管理
 9. SharePoint Online
@@ -153,7 +153,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 5. MyAnalytics
 6. 工作区分析
 7. Exchange Online Protection
-8. 高级威胁防护 (ATP)
+8. Defender for Office 365
 9. 高级电子数据展示
 10. 高级安全管理
 11. 信息权限管理
@@ -221,7 +221,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 | Office 365 A1 for 教职员 \_ (STANDARDWOFFPACK \_ 教职员 \_ de)  | Office 365 A1 for 教职员工 (STANDARDWOFFPACK \_ 教职员)  |
 | Office 365 A1 学生版 \_ de (STANDARDWOFFPACK \_ 学生版 \_)  | Office 365 A1 学生版 (STANDARDWOFFPACK \_ 学生)  |
 | Office 365 高级合规性 \_ de (EQUIVIO \_ ANALYTICS \_ de)  | Microsoft 365 E5 合规性 (信息 \_ 保护 \_ 合规性)  |
-| Office 365 高级威胁防护 (计划 1) \_ DE (ATP \_ 企业版 \_ de)  | Office 365 高级威胁防护 (计划 1)  (ATP \_ ENTERPRISE)  |
+|Microsoft Defender for Office 365 (Plan 1) \_ DE (ATP \_ 企业版 \_ de)  |Microsoft Defender for Office 365 (Plan 1)  (ATP \_ 企业版)  |
 | Office 365 商业协作版 \_ (O365 \_ 商业版 \_ essentials \_ de)  | Microsoft 365 Business Basic (O365 \_ 商业 \_ ESSENTIALS)  |
 | Office 365 商业高级版 \_ de (O365 \_ 商业 \_ 高级版 \_ de)  | Microsoft 365 Business Standard (O365 \_ 商业 \_ 高级版)  |
 | Office 365 商业版 \_ de (O365 \_ 商业版 \_ de)  | 适用于 business (O365 商业版的 Microsoft 365 应用程序 \_)  |
@@ -266,7 +266,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 - 对于 Office 365，您可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。
 - 如果您是 Dynamics 365 客户接洽和 Power BI 客户，也是 Office 365，则可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](https://docs.microsoft.com/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 即将推出有关迁移到新的德国数据中心区域的其他信息。 将此页面做成书签，以便您可以签入并保持最新。
 

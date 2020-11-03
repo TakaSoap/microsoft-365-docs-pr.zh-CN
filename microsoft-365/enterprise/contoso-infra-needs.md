@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础结构的基本结构，以及 Microsoft 365 for 企业如何满足公司的业务需求。
-ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754582"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847126"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -121,10 +121,10 @@ Contoso IT 部门在部署前确定了以下业务需求映射到 Microsoft 365 
 |  | 提高远程和移动工作者的工作效率 | Microsoft 365 工作负载和基于云的数据 |
 |  | 提高创造力和革新能力 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 标识和访问管理 | 专用全局管理员帐户，使用 Azure 多重身份验证 (MFA) 和 Azure Active Directory 特权标识管理 (PIM)  <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> 高级威胁防护 <BR> Office 365 高级威胁防护 <BR> Microsoft 365 威胁调查和响应 <BR> |
+|  | 标识和访问管理 | 专用全局管理员帐户使用 Azure 多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 威胁调查和响应 <BR> |
 |  | 信息保护 | Azure 信息保护 <BR> 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
-|  | 安全管理 | Azure 安全中心  <BR> Windows Defender 安全中心 |
+|  | 安全管理 | Azure Defender *  <BR> Windows Defender 安全中心 |
 | 远程和移动访问及业务合作伙伴 |  |  |
 |  | 提高远程和移动工作者的安全性 | Microsoft Intune |
 |  | 减少员工远程访问基础结构 | Microsoft 365 工作负载和基于云的数据 |

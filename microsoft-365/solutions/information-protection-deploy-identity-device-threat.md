@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 的标识、设备和威胁防护服务防止个人数据泄露。
-ms.openlocfilehash: e084036860f5d15a14ca6c75305583b86a5fc53f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 321b60efbdabe62b14502df4a16dd2dcec4b9cef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398687"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847174"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>对数据隐私法规使用标识、设备和威胁防护
 
@@ -46,7 +46,7 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
  
 如果在我们的四个主要数据隐私法规的示例集中选择这些选项，合规性管理器将指定90改进操作，其中大多数被评分为 "27"。 由于这些类别的合规性管理器会调用此类较大的数字，因此在此处列出了一些较常见的数字，以供参考。
 
-使用 [Azure Active Directory (AZURE AD) ](https://azure.microsoft.com/services/active-directory/) for Identity And **Control Access** 类别，您可以：
+使用 [Azure Active Directory (AZURE AD)](https://azure.microsoft.com/services/active-directory/) for Identity And **Control Access** 类别，您可以：
 
 - 实施不能重放的身份验证 (以防止 "中间人" 攻击) 
 - 阻止旧式身份验证。
@@ -70,12 +70,12 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
 - 要求移动设备在不活动时锁定。
 - 要求移动设备在出现多个登录失败时擦除。
 
-使用 [Exchange Online Protection 和 Office 365 高级威胁防护 (ATP) ](../security/office-365-security/office-365-atp.md) ，以获取针对 **威胁** 的防护类别，您可以：
+使用 [Exchange Online Protection 和 Microsoft Defender For Office 365](../security/office-365-security/office-365-atp.md) For The **防御威胁** 类别，您可以：
 
 - 启用 (SPF、DMARC 和 DKIM) 的发件人身份验证。
-- 设置 Office 365 高级威胁防护 (ATP) 反网络钓鱼策略。
-- 实施 ATP 安全附件。
-- 实施 ATP 安全链接。
+- 设置 Microsoft Defender for Office 365 反网络钓鱼策略。
+- 实施安全附件。
+- 实现安全链接。
 - 实施恶意软件检测和响应策略。
 - 实施出站和入站垃圾邮件策略。
 
@@ -83,6 +83,6 @@ Microsoft 365 提供了大量标识、设备和威胁防护功能，组织可以
 
 - [常见标识和设备访问策略](../security/office-365-security/identity-access-policies.md)
 - [防御 Office 365 中的威胁](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
-- [ATP 安全附件](../security/office-365-security/atp-safe-attachments.md)
-- [ATP 安全链接](../security/office-365-security/atp-safe-links.md)
-- [ATP 安全文档](../security/office-365-security/safe-docs.md)
+- [安全附件](../security/office-365-security/atp-safe-attachments.md)
+- [安全链接](../security/office-365-security/atp-safe-links.md)
+- [安全文档](../security/office-365-security/safe-docs.md)

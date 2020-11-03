@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8ced46ea30c7225fd3e5c8f1309ef482542e51b2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445779"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847776"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 托管桌面角色和责任
 
@@ -33,7 +33,7 @@ Microsoft 提供以下关键角色和职责：
 MDM 策略管理 | Microsoft 将根据最佳实践应用 MDM 策略，并考虑策略更改请求。 我们还将根据 [设备策略](../service-description/device-policies.md)中的规定对你的租户进行更改。
 用户支持 | 通过预安装在所有 Microsoft 托管桌面设备上的 Get 帮助应用，我们为所有注册用户提供针对设备、Windows 和 Microsoft 365 应用程序的用户支持。 
 Microsoft 托管桌面服务支持 | Microsoft 将通过 Microsoft 托管桌面操作团队为你的 IT 部门提供支持。 此团队将支持客户的 Microsoft 托管桌面环境的技术故障排除、更改请求和事件管理。 有关详细信息，请参阅 [Microsoft 托管桌面的管理员支持](../working-with-managed-desktop/admin-support.md)。
-安全监视 | Microsoft 将使用 Microsoft Defender ATP 监视你的 Microsoft 托管桌面设备。 如果 Microsoft 托管桌面安全操作中心 (SOC) 检测到威胁，我们会通知你，隔离设备，并远程修正问题。 有关详细信息，请参阅 [安全性](../service-description/security.md)。
+安全监视 | Microsoft 将使用 Microsoft Defender for Endpoint 监视 Microsoft 托管桌面设备。 如果 Microsoft 托管桌面安全操作中心 (SOC) 检测到威胁，我们会通知你，隔离设备，并远程修正问题。 有关详细信息，请参阅 [安全性](../service-description/security.md)。
 更新监控和管理 | 我们积极监视你的 Microsoft 托管桌面设备，以确保为 Microsoft Windows 和 Microsoft Office 安装了最新的质量和功能更新。 有关详细信息，请参阅 [如何处理更新](../service-description/updates.md)。
 用户和设备分组 | Microsoft 托管桌面操作团队将创建和管理所需的设备和用户组作为 IT 操作的一部分。 不允许对这些组进行成员资格或配置更改。 更改这些组可能会导致设备的意外配置和功能丢失。 有关这些组的任何问题或问题，请在建立后，IT 管理员可以联系 Microsoft 托管桌面操作。 有关详细信息，请参阅 [Microsoft 托管桌面的管理员支持](../working-with-managed-desktop/admin-support.md)。
 

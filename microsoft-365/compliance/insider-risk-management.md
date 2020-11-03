@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 82a7d1c9eec13d87fa45b12b072e9712ccd267c2
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816857"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847808"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的内幕风险管理
 
@@ -146,7 +146,7 @@ ms.locfileid: "48816857"
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a> (预览) 的有意或无意的安全策略冲突
 
-在新式的工作区中管理其设备时，用户通常会有很大程度的控制。 这可能包括安装或卸载应用程序所需的应用程序的权限，或者临时禁用设备安全功能的功能。 无论此活动是意外的、意外的还是恶意的，此行为可能会给组织带来风险，并且很重要的是确定和采取最大限度地进行最小化。 为了帮助标识这些危险安全活动，以下内幕风险管理安全策略冲突模板会对安全风险指标进行评分，并使用 Microsoft Defender 高级威胁防护 (ATP) 警报来提供与安全相关的活动的见解：
+在新式的工作区中管理其设备时，用户通常会有很大程度的控制。 这可能包括安装或卸载应用程序所需的应用程序的权限，或者临时禁用设备安全功能的功能。 无论此活动是意外的、意外的还是恶意的，此行为可能会给组织带来风险，并且很重要的是确定和采取最大限度地进行最小化。 为了帮助标识这些危险安全活动，以下内幕风险管理安全策略冲突模板会对安全风险指标进行评分，并使用 Microsoft Defender for Endpoint 警报来提供与安全相关的活动的见解：
 
 - [ (预览的常规安全策略冲突) ](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [通过 (preview 中的去声用户进行安全策略违反) ](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

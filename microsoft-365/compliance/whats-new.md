@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446555"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847798"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -34,7 +34,7 @@ ms.locfileid: "48446555"
 
 
 > [!TIP]
-> 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 威胁防护的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 并访问 [microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动的 microsoft 365 功能、正在开发、已被取消或之前已发布的功能。
 
 ## <a name="august-2020"></a>2020 年 8 月
@@ -43,7 +43,7 @@ ms.locfileid: "48446555"
 
 本月的几个新增和改进功能命中了公共预览：
 
-**内部风险管理**
+**内幕风险管理**
 
 - 查看我们的六个新 [策略模板](insider-risk-management-policies.md#policy-templates)：
     - 按优先级用户的数据泄露
@@ -53,10 +53,10 @@ ms.locfileid: "48446555"
     - 优先级用户违反安全策略
     - 因不满用户而违反安全策略
 
-- 与 [Microsoft DEFENDER atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 的集成允许您导入和筛选 MICROSOFT defender atp 警报，以查找通过新的安全冲突策略模板所创建的策略检测到的活动。 此外，还有相关的 [内幕风险设置](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) ，您可以选择根据 MICROSOFT Defender ATP 警报会审状态将安全警报导入到内幕风险管理中。
+- 通过与 [Microsoft defender For endpoint 的](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 集成，您可以导入和筛选 microsoft Defender，以获取从新的安全冲突策略模板中创建的策略检测到的活动的终结点警报。 此外，还有相关的 [内幕风险设置](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) ，您可以选择根据 Microsoft Defender for Endpoint alert 会审状态将安全警报导入到内幕风险管理中。
 
     > [!NOTE]
-    > 若要充分利用 Microsoft Defender ATP 集成 (包括新的安全策略冲突模板) ，您需要在组织中配置 Microsoft Defender ATP。 你还需要通过 [在 Microsoft DEFENDER atp 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)来启用内幕风险管理集成的 MICROSOFT Defender atp。
+    > 若要利用 Microsoft Defender for Endpoint integration (包括新的安全策略冲突模板) ，您需要在您的组织中配置 Microsoft Defender for 终结点。 你还需要通过 [在 Microsoft defender For endpoint 中配置高级功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)，为内部人员风险管理集成启用 Microsoft Defender for endpoint。
  
 - 在 [创建策略](insider-risk-management-policies.md#create-a-new-policy)时自定义指示器阈值。
 - 设置 [优先级用户组](insider-risk-management-settings.md#priority-user-groups-preview) 以定义组织中的用户，其活动需要根据因素（如职位、敏感信息的访问级别或风险历史记录）进行更深入的检查。
@@ -170,7 +170,7 @@ ms.locfileid: "48446555"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度标签：新隐私选项
 
-为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户**"。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
+为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户** "。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -255,7 +255,7 @@ ms.locfileid: "48446555"
 
 ### <a name="now-in-preview"></a>现在预览
 
-**内幕风险管理 (预览) **
+**内幕风险管理 (预览)**
 
 我们很高兴宣布，我们的内幕风险管理解决方案现已处于公共预览版中。 简言之，内幕风险管理可帮助您的组织智能化地识别和采取对内幕风险的操作，方法是提供：
 
@@ -289,7 +289,7 @@ ms.locfileid: "48446555"
 
 ### <a name="noteworthy-updates"></a>值得注意的更新
 
-**适用于合规性分数的新评估模板 (预览版) **
+**适用于合规性分数的新评估模板 (预览版)**
 
 始终致力于帮助您提前掌握日益发展的合规性，我们的合规性分数团队提供了一组新的模板，以帮助您评估组织对最新法规的合规性情况，并获取有关如何实施更有效的控制措施的指导。 你将看到以下内容的新模板：
 
@@ -348,7 +348,7 @@ ms.locfileid: "48446555"
 |数据丢失防护|数据丢失防护 <br/> https://protection.office.com/datalossprevention |数据丢失防护 <br/> https://compliance.microsoft.com/datalossprevention |[数据丢失防护概述](data-loss-prevention-policies.md)|
 |数据主体请求 |数据隐私 > 数据主体请求 <br/> https://protection.office.com/dsrcases |数据主体请求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR case 工具管理 GDPR 数据主体请求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |电子数据展示|电子数据展示 > 电子数据展示 <br/> https://protection.office.com/ediscoveryv1 |电子数据展示 > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理电子数据展示事例](ediscovery-cases.md) |
-|事件|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[从事件发生时开始计算保留期](event-driven-retention.md)|
+|活动|记录管理 > 事件 <br/> https://protection.office.com/events |记录管理 > 事件选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[从事件发生时开始计算保留期](event-driven-retention.md)|
 |文件计划|记录管理 > 文件计划 <br/> https://protection.office.com/fileplan |记录管理 > 文件计划选项卡 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用文件计划管理保留标签](file-plan-manager.md)|
 |导入 PST 文件|信息治理 > 导入 PST 文件 <br/> https://protection.office.com/importV2 |信息管理 > 导入选项卡 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[有关导入组织的 PST 文件的概述](importing-pst-files-to-office-365.md)|
 |标签活动资源管理器|信息治理 > 标签活动资源管理器 <br/> https://protection.office.com/labelexplorer |"数据分类 > 活动资源管理器" 选项卡 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[查看关于标记的内容的活动（预览版）](data-classification-activity-explorer.md)|
@@ -366,7 +366,7 @@ ms.locfileid: "48446555"
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>用于敏感度标签的新加密选项 
 
 为敏感度标签配置加密时，您现在有两个选项，可让用户在手动将标签应用于电子邮件和文档时分配权限：<br>
-- 将标签应用于 **Outlook 电子邮件**时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
-- 将标签应用于 **Word、PowerPoint 和 Excel 文件**时，系统将提示用户为特定用户和组分配访问权限。
+- 将标签应用于 **Outlook 电子邮件** 时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
+- 将标签应用于 **Word、PowerPoint 和 Excel 文件** 时，系统将提示用户为特定用户和组分配访问权限。
 
 转到 " [使用敏感度标签限制对内容的访问" 以应用加密](encryption-sensitivity-labels.md#let-users-assign-permissions) 以了解详细信息。

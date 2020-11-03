@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护中的事件概述
+title: Microsoft 365 Defender 中的事件概述
 description: 调查在设备、用户和邮箱中看到的事件。
 keywords: 事件, 警报, 调查, 关联, 攻击, 计算机, 设备, 用户, 标识, 标识, 邮箱, 电子邮件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -21,35 +21,35 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3c50bbfbfdad85283f6e366a32c126958467f4a0
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431107"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846684"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的事件概述
+# <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 
 事件基于相关警报。 当网络中出现恶意事件或活动时，将创建警报。 各个警报提供有关现有攻击的有价值的线索。 但是，攻击通常采用各种不同的矢量和技术来发动入侵。 将各个线索 Piecing 在一起可能会非常困难且耗时。
 
-此简短视频提供 Microsoft 威胁防护中的事件概述。
+此简短视频提供了 Microsoft 365 Defender 中的事件概述。
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-事件是构成攻击情景的相关警报的集合。 在网络中的不同设备、用户和邮箱实体中找到的恶意事件和可疑事件会自动通过 Microsoft 威胁防护进行聚合。 将相关警报分组到事件中可使安全 defenders 全面的攻击视图。 
+事件是构成攻击情景的相关警报的集合。 在网络中的不同设备、用户和邮箱实体中找到的恶意事件和可疑事件会自动由 Microsoft 365 Defender 进行聚合。 将相关警报分组到事件中可使安全 defenders 全面的攻击视图。 
 
 例如，安全 defenders 可以查看攻击的启动位置、使用的策略以及攻击已进入网络的程度。 他们还可以看到攻击的范围，如受影响的设备、用户和邮箱的数量、影响的严重性以及受影响的实体的其他详细信息。
 
-如果启用，Microsoft 威胁防护可以通过自动化和人工智能来自动调查和解决各个警报。 安全 defenders 还可以执行其他补救步骤，以便从事件视图中直接解决攻击。 
+如果启用此功能，则 Microsoft 365 Defender 可以通过自动化和人工智能自动调查和解决各个警报。 安全 defenders 还可以执行其他补救步骤，以便从事件视图中直接解决攻击。 
 
 来自最近30天的事件显示在事件队列中。 在此，安全 defenders 可以根据风险级别和其他因素查看应优先考虑的事件。 
 

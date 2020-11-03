@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778609"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847712"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft 托管桌面中的安全操作
 
@@ -41,4 +41,4 @@ SOC 提供以下服务：
     - 恢复流程
     - 事件后活动
 - Microsoft 托管桌面客户有资格注册 Microsoft 威胁专家服务。 使用此服务的 SOC 与可以更好地了解影响组织的复杂威胁，包括警报查询、潜在的受损设备、可疑网络连接的根本原因以及有关持续的高级威胁市场活动的其他威胁智能。 有关详细信息，请参阅 [Microsoft 威胁专家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
-- SOC 的威胁和漏洞管理过程使用 Microsoft 的一些服务来帮助通知组织的建议，以防范威胁。 SOC 使用 Microsoft Defender 高级威胁防护安全中心中的数据以及 Microsoft 内部和外部的相关漏洞数据源，以发现漏洞和错误配置并提供可操作的报告。
+- SOC 的威胁和漏洞管理过程使用 Microsoft 的一些服务来帮助通知组织的建议，以防范威胁。 SOC 使用 Microsoft Defender for Endpoint Security Center 中的数据以及来自 Microsoft 内部和外部的相关漏洞数据源，以发现漏洞和错误配置并提供可操作的报告。

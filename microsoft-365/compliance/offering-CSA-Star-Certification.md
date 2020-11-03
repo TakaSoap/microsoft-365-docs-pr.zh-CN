@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a5da8e0168b58011a696f1f602d21e410e2a1eb6
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 504135d30cbb859f419307ba0641c721d171d747
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415601"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847788"
 ---
 # <a name="cloud-security-alliance-csa-star-certification"></a>云安全联盟 (CSA) STAR 认证
 
@@ -47,7 +47,7 @@ Microsoft Azure、Microsoft Intune 和 Microsoft Power BI 已获得 STAR 认证�
 - Microsoft 医疗保健机器人
 - Intune
 - Microsoft 托管桌面
-- Microsoft Defender 高级威胁防护
+- Microsoft Defender for Endpoint
 - OMS Service Map
 - Power Automate (以前称为 Microsoft Flow)： 云服务作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
 - PowerApps 云服务：作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供
@@ -75,9 +75,9 @@ Azure、Microsoft Cloud App Security、Intune 和 Power BI 在成熟度能力评
 
 **Microsoft 商业云服务的 CSA STAR 保障达到了什么级别？**
 
-- **第 1 个级别** - **CSA STAR 自我评估**：Azure、Dynamics 365 和 Office 365。 [自我评估](offering-csa-star-self-assessment.md)是云服务提供商免费提供的一项产品/服务，可用于记录其安全控制措施，帮助客户对服务的安全性进行评估。
-- **第 2 个级别**：**CSA STAR 认证**：Azure、Microsoft Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
-- **第 2 个级别** - **CSA STAR 证明**：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
+- **第 1 个级别** - **CSA STAR 自我评估** ：Azure、Dynamics 365 和 Office 365。 [自我评估](offering-csa-star-self-assessment.md)是云服务提供商免费提供的一项产品/服务，可用于记录其安全控制措施，帮助客户对服务的安全性进行评估。
+- **第 2 个级别** ： **CSA STAR 认证** ：Azure、Microsoft Cloud App Security、Intune 和 Power BI。 如果获得 ISO/IEC 27001 认证并符合 CCM 中指定的条件，则授予 STAR 认证。 第三方需对云服务提供商的安全控制措施和实践操作进行严格评估，然后才会授予该认证。
+- **第 2 个级别** - **CSA STAR 证明** ：Azure 和 Intune。 CSA 和 AICPA 协作，根据 AICPA（信任服务原则，AT 101）中的标准和 CSA CCM 提供了指导原则，供 CPA 在参与 SOC 2 认证过程中采用。 [STAR 证明](offering-CSA-STAR-Attestation.md)是基于这些指导原则并在对云提供商进行严格独立评估后授予的。
 
 ## <a name="resources"></a>资源
 

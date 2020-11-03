@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 威胁防护中的 AssignedIPAddresses ( # A1 函数在高级搜寻中'
+title: 'Microsoft 365 Defender 的高级搜寻中的 AssignedIPAddresses ( # A1 函数'
 description: '了解如何使用 AssignedIPAddresses ( # A1 函数来获取分配给设备的最新 IP 地址'
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、FileProfile、文件配置文件、函数、扩充
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430123"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847640"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430123"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 使用 `AssignedIPAddresses()` [高级搜寻](advanced-hunting-overview.md) 查询中的功能快速获取已分配给设备的最新 IP 地址。 如果指定时间戳参数，此函数将获取指定时间的最新 IP 地址。 
 
@@ -54,8 +54,8 @@ AssignedIPAddresses(x, y)
 
 ## <a name="arguments"></a>参数
 
-- **x**— `DeviceId` 或 `DeviceName` 标识设备的值
-- **y**— `Timestamp` (datetime) 值指示函数获取特定时间的最近分配的 IP 地址。 如果未指定，则该函数将返回最新的 IP 地址。
+- **x** — `DeviceId` 或 `DeviceName` 标识设备的值
+- **y** — `Timestamp` (datetime) 值指示函数获取特定时间的最近分配的 IP 地址。 如果未指定，则该函数将返回最新的 IP 地址。
 
 ## <a name="examples"></a>示例
 

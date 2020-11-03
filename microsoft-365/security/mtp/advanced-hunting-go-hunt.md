@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 4abbedc34b6d77e785c2096d9f334000f9ffb02f
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430463"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846876"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go 智能寻线快速查找实体或事件信息
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430463"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 通过 " *转智能* " 操作，您可以使用基于查询的强大 [高级搜寻](advanced-hunting-overview.md) 功能快速调查事件和各种实体类型。 此操作将自动运行高级的搜索查询，以查找有关所选事件或实体的相关信息。
 
@@ -51,7 +51,7 @@ ms.locfileid: "48430463"
 
     ![显示使用 "转智能" 选项显示事件详细信息的图像](../../media/mtp-ah/go-hunt-event.png)
 
-选择 "**对相关事件的****查找**或查寻" 将传递不同的查询，具体取决于您是否选择了实体或事件。
+选择 " **对相关事件的****查找** 或查寻" 将传递不同的查询，具体取决于您是否选择了实体或事件。
 
 ## <a name="query-for-entity-information"></a>查询实体信息
 使用 " *查寻* " 查询有关用户、设备或任何其他类型的实体的信息时，查询将检查涉及该实体的任何事件的所有相关架构表。 若要使结果保持可管理性，查询的范围为与过去30天中涉及实体并与事件相关联的最早活动的时间段相同。

@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 威胁防护中的 FileProfile ( # A1 函数在高级搜寻中'
+title: 'Microsoft 365 Defender 的高级搜寻中的 FileProfile ( # A1 函数'
 description: '了解如何使用 FileProfile ( # A1 丰富有关高级搜索查询结果中的文件的信息'
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、FileProfile、文件配置文件、函数、扩充
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430581"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847448"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -32,7 +32,7 @@ ms.locfileid: "48430581"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 `FileProfile()`函数是[高级](advanced-hunting-overview.md)搜索中的一个扩充函数，可将以下数据添加到查询找到的文件中。
 
@@ -63,8 +63,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>参数
 
-- **x**—要使用的文件 ID 列： `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，则使用函数
-- **y**-限制为要丰富的记录数，1-1000;函数使用100（如果未指定）
+- **x** —要使用的文件 ID 列： `SHA1` 、 `SHA256` 、 `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，则使用函数
+- **y** -限制为要丰富的记录数，1-1000;函数使用100（如果未指定）
 
 ## <a name="examples"></a>示例
 

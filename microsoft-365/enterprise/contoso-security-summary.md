@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用适用于企业的 Microsoft 365 的安全功能。
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754228"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847102"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Microsoft 365 for Contoso Corporation 的企业安全摘要
 
@@ -89,9 +89,9 @@ Contoso 按照这些步骤为 Microsoft 365 for 企业版的部署准备好其�
 
   Contoso 使用 [Windows Defender 防病毒](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)对运行 Windows 10 企业版的电脑和设备进行恶意软件保护和反恶意软件管理。
 
-- 使用 Office 365 高级威胁防护保护电子邮件流和邮箱审核日志记录 
+- Microsoft Defender for Office 365 的安全电子邮件流和邮箱审核日志记录 
 
-  Contoso 使用 Exchange Online Protection 和 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 来抵御通过电子邮件传输的未知恶意软件、病毒和恶意 URL。
+  Contoso 使用 Exchange Online Protection 和 [适用于 Office 365 的 Defender](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) 来防止通过电子邮件传输的未知恶意软件、病毒和恶意 url。
 
   Contoso 还启用了邮箱审核日志记录，以标识登录用户邮箱、发送邮件的用户以及邮箱所有者、委派用户或管理员执行的其他活动。
 
@@ -127,9 +127,9 @@ Contoso 按照这些步骤为 Microsoft 365 for 企业版的部署准备好其�
 
 ## <a name="security-management"></a>安全管理
 
-- Azure 安全中心适用于 IT 人员的安全中心仪表板
+- 使用 Azure Defender 的中央安全仪表板 *
 
-  Contoso 使用 [Azure 安全中心](https://azure.microsoft.com/services/security-center/) 来提供安全和威胁防护的统一视图，以跨工作负载管理安全策略并响应 cyberattacks。
+  Contoso 使用 [Azure Defender *](https://azure.microsoft.com/services/security-center/) 提供统一的安全和威胁防护视图，以跨其工作负载管理安全策略并响应 cyberattacks。
 
 - Windows Defender 安全中心适用于用户的安全中心仪表板
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威胁防护中的自动调查遵循的补救措施
-description: 获取遵循 Microsoft 威胁防护中的自动调查的修正操作概述
+title: Microsoft 365 Defender 中的自动调查遵循的补救措施
+description: 获取遵循 Microsoft 365 Defender 中的自动调查的修正操作概述
 keywords: 自动化, 调查, 警报, 触发器, 操作, 修正
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 5106ef34f11cb43d74fa993fcdb820d6a5dce86f
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 71cdf2d1b9a40e9cfbf487ca8596a0c2b09475d1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429464"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847208"
 ---
-# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威胁防护中的自动调查遵循的补救措施
+# <a name="remediation-actions-following-automated-investigations-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查遵循的补救措施
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 ## <a name="remediation-actions"></a>修正操作
 
-在 Microsoft 威胁防护的自动调查过程中和之后，会为恶意项目或可疑项目标识修正操作。 对设备（也称为终结点）执行某些类型的修正操作。 对电子邮件内容执行其他补救措施。 在执行、批准或拒绝补救措施之后，自动调查完成。
+在 Microsoft 365 Defender 中进行自动调查的过程中和之后，会为恶意项目或可疑项目标识修正操作。 对设备（也称为终结点）执行某些类型的修正操作。 对电子邮件内容执行其他补救措施。 在执行、批准或拒绝补救措施之后，自动调查完成。
 
-下表汇总了 Microsoft 威胁防护当前支持的补救措施： 
+下表汇总了 Microsoft 365 Defender 当前支持的补救措施： 
 
 |设备 (终结点) 修正操作  |电子邮件修正操作  |
 |---------|---------|
@@ -64,7 +64,7 @@ ms.locfileid: "48429464"
 
 > [!IMPORTANT]
 > 是否自动执行更正操作，或仅在批准操作时才会依赖某些设置，如组织的设备组策略。 若要了解详细信息，请参阅以下文章：
-> - [在 Microsoft 威胁防护中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)
+> - [在 Microsoft 365 Defender 中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)
 > - [如何修正设备上的威胁](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 ## <a name="next-steps"></a>后续步骤

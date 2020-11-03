@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277492"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847114"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "48277492"
 
 本节不包括在目标目录中准备 MailUser 用户对象所需的特定步骤，也不包括用于提交迁移批处理的示例命令。 有关此信息，请参阅 [准备目标用户对象以供迁移](#prepare-target-user-objects-for-migration) 。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 跨租户邮箱移动功能要求 [Azure 密钥保管库](https://docs.microsoft.com/azure/key-vault/basic-concepts) 建立租户对特定的 azure 应用程序，以安全地存储和访问用于对从一个租户到另一个租户的邮箱迁移进行身份验证和授权的证书/机密，从而消除了在租户之间共享证书/密码的任何要求。 
 
@@ -141,9 +141,9 @@ ms.locfileid: "48277492"
 
 7. 将在远程 PowerShell 会话中显示一个 URL。 复制为您的租户同意提供的链接，并将其粘贴到 Web 浏览器中。
 
-8. 使用全局管理员凭据登录。 出现以下屏幕时，选择 " **接受**"。
+8. 使用全局管理员凭据登录。 出现以下屏幕时，选择 " **接受** "。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="邮箱迁移的租户准备。":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="&quot;接受权限&quot; 对话框":::
     
 9. 切换回远程 PowerShell 会话并按 Enter 继续。
 
@@ -162,9 +162,37 @@ ms.locfileid: "48277492"
 
 1.  在设置过程中，以由目标管理员指定的-ResourceTenantAdminEmail 的身份登录邮箱。 查找来自目标租户的电子邮件邀请，然后选择 " **开始入门** " 按钮。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="邮箱迁移的租户准备。" 接受邀请。
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="&quot;已邀请您&quot; 对话框":::
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="邮箱迁移的租户准备。" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
+2. 选择 " **接受** " 接受邀请。
+
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受权限的对话框":::
+
+   > [!NOTE]
+   > 如果你未收到此电子邮件或找不到此电子邮件，则会向目标租户管理员提供一个直接 URL，以接受邀请。 URL 应在目标租户管理员的远程 PowerShell 会话的脚本中。
+
+3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个已启用邮件的安全组以控制目标租户允许的邮箱列表，以将源租户中的 (移动) 从源租户推送到目标租户。 您无需提前填充此组，但必须至少提供一个组，才能运行 "安装步骤" (脚本) 。 不支持嵌套组。 
+
+4. 在 [此处](https://github.com/microsoft/cross-tenant/releases/tag/Preview)从 GitHub 存储库中下载源租户安装程序的 SetupCrossTenantRelationshipForTargetResource.ps1 脚本。 
+
+5. 使用 Exchange 管理员权限创建与源租户的远程 PowerShell 连接。 由于 Azure 应用程序创建过程，不需要全局管理员权限来配置源租户（仅限目标租户）。
+
+6. 将目录更改为脚本位置，或验证脚本当前是否已保存到远程 PowerShell 会话中的当前位置。
+
+7. 运行带有以下必需参数和值的脚本。
+
+    | 参数 | 值 |
+    |-----|------|
+    | -SourceMailboxMovePublishedScopes | 由源租户为在迁移范围内的标识/邮箱创建的已启用邮件的安全组。 |
+    | -ResourceTenantDomain | 源租户域名，如 fabrikam \. onmicrosoft.com。 |
+    | -TargetTenantDomain | 目标租户域名，如 contoso \. onmicrosoft.com。 |
+    | -ApplicationId | 用于迁移的应用程序的 Azure 应用程序 ID (GUID) 。 通过 Azure 门户提供的应用程序 ID (Azure AD、企业应用程序、应用名称、应用程序 ID) 或包含在邀请电子邮件中。  |
+    | -TargetTenantId | 目标租户的租户 ID。 例如，contoso onmicrosoft.com 租户的 Azure AD 租户 ID \. 。 |
+    |||
+    
+    下面是一个示例。
+    ```powershell
+    SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
     Exchange setup complete.
 
     ```
@@ -247,7 +275,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 迁移的用户必须在目标租户和 Exchange Online 系统中存在 (作为 MailUsers) 标有特定属性以启用跨租户移动。 对于在目标租户中未正确设置的用户，系统将发生故障移动。 以下部分详细介绍了目标租户的 MailUser 对象要求。
 
-### <a name="prerequisites"></a>先决条件
+### <a name="prerequisites"></a>必备条件
   
 您必须确保在目标组织中设置以下对象和属性。  
 
@@ -261,7 +289,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
       - TargetAddress/ExternalEmailAddress – MailUser 将引用在源租户 (中托管的用户的当前邮箱，例如 user@contoso.onmicrosoft.com) 。 在分配此值时，请验证您是否具有/也分配了 PrimarySMTPAddress，否则此值将设置将导致移动失败的 PrimarySMTPAddress。 
       - 您不能将旧 smtp 代理地址从源邮箱添加到目标 MailUser。 例如，您无法在 fabrikam.onmicrosoft.com 租户对象) 中的 MEU 上维护 contoso.com。 域仅与一个 Azure AD 或 Exchange Online 租户相关联。
  
-    **目标**MailUser 对象示例：
+    **目标** MailUser 对象示例：
  
     | 属性             | 值                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -377,7 +405,7 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
  
 #### <a name="update-on-premises-mailusers"></a>更新本地 MailUsers
 
-邮箱从源移动到目标后，应确保使用新的 targetAddress 更新本地邮件用户（源和目标）。 在此示例中，移动中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com**。 使用此 targetAddress 更新邮件用户。
+邮箱从源移动到目标后，应确保使用新的 targetAddress 更新本地邮件用户（源和目标）。 在此示例中，移动中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com** 。 使用此 targetAddress 更新邮件用户。
  
 ## <a name="frequently-asked-questions"></a>常见问题解答
  
@@ -505,7 +533,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
 - **问题：具有非拥有的 smtp proxyAddress 的云 MailUsers 阻止 MRS 移动背景。** 创建目标租户 MailUser 对象时，必须确保所有 SMTP 代理地址都属于目标租户组织。 如果 SMTP proxyAddress 在不属于本地租户的目标邮件用户上存在，则会阻止 MailUser 转换为邮箱。 这是因为我们的保证，邮箱对象只能从受租户) 授权的域发送邮件 (域： 
 - 
-   - 在使用 Azure AD Connect 从本地同步用户时，将本地 MailUser 对象设置为 ExternalEmailAddress 指向 laran@contoso) onmicrosoft.com 中 (存在邮箱的源租户， \. 并将 PrimarySMTPAddress 标记为驻留在目标租户 (Lara Newton@northwind 中的域。) \. com。 这些值将同步到租户，并设置适当的邮件用户并准备好迁移。 此处显示了一个示例对象。
+   - 在使用 Azure AD Connect 从本地同步用户时，将本地 MailUser 对象设置为 ExternalEmailAddress 指向 laran@contoso onmicrosoft.com 中 (存在邮箱的源租户 \.) 并将 PrimarySMTPAddress 标记为驻留在目标租户 (Lara.Newton@northwind com) 中的域 \. 。 这些值将同步到租户，并设置适当的邮件用户并准备好迁移。 此处显示了一个示例对象。
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -514,7 +542,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
      ```
 
    > [!Note]
-   > EmailAddresses/proxyAddresses 数组中*不*存在*contoso. .onmicrosoft \. com*地址。
+   > EmailAddresses/proxyAddresses 数组中 *不* 存在 *contoso. .onmicrosoft \. com* 地址。
 
 - **问题：将 "外部" 主 SMTP 地址的 MailUser 对象修改/重置为 "内部" 公司声明域**
 
@@ -616,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Business Center                         |
    | Microsoft MyAnalytics（完整版）                      |
    | Office 365 高级电子数据展示                    |
-   | Office 365 高级威胁防护（计划 1）    |
-   | Office 365 高级威胁防护（计划 2）    |
+   | Microsoft Defender for Office 365 (计划 1)     |
+   | Microsoft Defender for Office 365 (计划 2)     |
    | Office 365 特权访问管理           |
    | Outlook Customer Manager                          |
    | Office 365 中的高级加密                  |
