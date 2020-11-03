@@ -19,29 +19,28 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 概述贵组织如何采用 Microsoft 365 服务进行通信和协作。
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948624"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841383"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情况分析概述
 
-使用 Power BI 中的 Microsoft 365 使用情况分析，了解组织如何采用 Microsoft 365 中的各种服务进行通信和协作。 您可以可视化和分析 Microsoft 365 使用情况数据，创建自定义报告并共享组织中的见解，并深入了解如何使用 Microsoft 365 的特定区域或部门。
+使用 Power BI 中的 Microsoft 365 使用情况分析，了解贵组织如何采用 Microsoft 365 中的各种服务的见解。 您可以可视化和分析 Microsoft 365 使用情况数据，创建自定义报告并在您的组织中共享见解。 你还可以深入了解特定区域或部门使用 Microsoft 365 的方式。
   
-Microsoft 365 使用情况分析是一个模板应用程序，可让你访问预构建的仪表板，该仪表板提供最近12个月的交叉产品视图，并包含大量预建的报告。 每种报表为你提供特定的使用情况见解。 你可以查看上一个完整日历月的用户特定信息。
+Microsoft 365 使用情况分析使您能够访问预构建的仪表板，该仪表板提供最近12个月的交叉产品视图，并包含大量预建的报告。 每种报表为你提供特定的使用情况见解。 用户特定的信息可用于最后一个完整日历月份。
   
-为模板应用程序提供的 [数据模型](usage-analytics-data-model.md) 包括 Active Directory 中的用户属性，从而能够在某些报告中进行透视。 包含的 Active Directory 属性如下：位置、部门和组织。 
+为模板应用程序提供的 [数据模型](usage-analytics-data-model.md) 包括 Active Directory 中的用户属性，从而能够在某些报告中进行透视。 包含以下 Active Directory 属性：位置、部门和组织。 
   
 请参阅[启用 Microsoft 365 使用情况分析](enable-usage-analytics.md)来开始收集数据。 
   
 Microsoft 365 使用情况分析包含以下各节中详细介绍的一些报告。 
 
-您可以通过选择数据表来访问每个区域的详细报告。 您可以查看所有预先建的报告，方法是在查看报告后，通过选择网站底部的选项卡。 有关更多详细说明，请阅读 [microsoft 365 使用情况分析中的报告导航和使用](navigate-and-utilize-reports.md) ，并 [在 microsoft 365 使用情况分析中自定义报告](customize-reports.md)。
+您可以通过选择数据表来访问每个区域的详细报告。 您可以通过选择网站底部的选项卡来查看所有预建的报告。 有关详细说明，请阅读 [导航并使用报告](navigate-and-utilize-reports.md) 并 [自定义报告](customize-reports.md)。
 
 ## <a name="executive-summary"></a>执行摘要
 
@@ -83,7 +82,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 用户活动报告可用于某些单独的服务。 这些报告提供了与 Active Directory 属性联接的用户级详细使用率数据。 此外，"部门采用情况" 报告允许您通过 Active Directory 属性进行切片，以便您可以在所有单个服务中查看活动用户。 所有指标都聚合为最新的完整月份。
 
-## <a name="faq"></a>常见问题解答
+## <a name="faq"></a>常见问题
 
 ### <a name="is-this-template-app-going-to-be-available-through-purchase-or-will-it-be-free"></a>此模板应用是否可通过购买或免费使用？
 
@@ -93,7 +92,7 @@ Microsoft 365 概述报告包含以下报告。 您可以通过选择报告页�
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>谁可以连接到 Microsoft 365 使用情况分析？
 
-您必须是 **全局管理员**、 **Exchange 管理员**、 **Skype for business 管理员**、 **SharePoint 管理员**、 **全局读者** 或 **报告读取器** ，才能与模板应用程序建立连接。 有关详细信息，请参阅 [关于管理员角色](../add-users/about-admin-roles.md) 。
+您必须是 **全局管理员** 、 **Exchange 管理员** 、 **Skype for business 管理员** 、 **SharePoint 管理员** 、 **全局读者** 或 **报告读取器** ，才能与模板应用程序建立连接。 有关详细信息，请参阅 [关于管理员角色](../add-users/about-admin-roles.md) 。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>谁可以自定义使用情况分析报告？
 

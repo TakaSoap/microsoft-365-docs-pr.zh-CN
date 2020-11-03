@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 了解 Microsoft 365 商业高级版的安装步骤、订阅、添加域和用户、设置安全策略等。
-ms.openlocfilehash: fa9c02fa9546437c83b9cc6c1f1e6e0d723ec868
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306461"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841123"
 ---
 # <a name="overview-of-setup"></a>设置概述
 
@@ -40,21 +40,21 @@ ms.locfileid: "47306461"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-大部分安装步骤可以在安装向导中完成，但也会列出其他选项。
+大部分安装步骤可以在引导式安装中完成，但也会列出其他选项。
 
 ## <a name="step-1-add-your-domain-and-users"></a>步骤1：添加您的域和用户
 
    - **[添加你的域](set-up.md#add-your-domain-to-personalize-sign-in)** (如果你在 [注册](sign-up.md)过程中购买了你的域，则此步骤已完成。 ) 
 
-   - **添加用户**。 可以通过以下三种方式之一添加用户：
-        - 在 [向导](set-up.md#add-users-in-the-wizard)中。
+   - **添加用户** 。 可以通过以下三种方式之一添加用户：
+        - 在 [引导安装程序](set-up.md#add-users-in-the-wizard)中。
         - 如果你有本地 Active directory，请使用目录同步来 [使用 AZURE AD Connect 添加用户](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization) 。
         - 您还可以在随后的管理中心 [添加用户](add-users-m365b.md) 。
 ## <a name="step-2-set-up-security-policies-and-configure-devices"></a>步骤2：设置安全策略和配置设备 
 
-  - 使用 [安装向导](set-up.md#protect-your-organization) 配置设备策略。 
+  - 使用 [引导式安装程序](set-up.md#protect-your-organization) 配置设备策略。 
   - 您还可以在 [管理员中心](view-policies-and-devices.md) 和 [Intune 门户](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal)中添加更多或编辑它们。
   - 安装向导还会设置基本威胁防护和数据丢失防护设置。
   
@@ -63,15 +63,15 @@ ms.locfileid: "47306461"
 - **电子邮件恶意软件保护**
 - **ATP 反网络钓鱼**
 - **Exchange Online Archiving**
-- **Azure 信息保护 (Plan1**) 
+- **Azure 信息保护 (Plan1** ) 
 
 若要开始，请参阅 [增加威胁防护](increase-threat-protection.md) 和 [设置合规性功能](set-up-compliance.md)。
 
-请参阅 [保护 Microsoft 365 商业高级版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) 的十大方法，了解最佳安全实践的路线图。
+请参阅 [保护 Microsoft 365 商业高级版](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) 以获得最佳安全实践路线图的十大方法。
 
 ## <a name="step-3-set-up-and-manage-windows-10-devices"></a>步骤3：设置和管理 Windows 10 设备
 
-运行设置向导后，您需要 proctect 组织中的所有 Windwos 10 台计算机。
+完成 "引导式安装" 后，您将需要保护组织中的所有 Windows 10 计算机。
   
 - Windows 10 专业版是 Microsoft 365 商业高级版的 [先决条件](pre-requisites-for-data-protection.md) ，但如果你有 Windows 7 Pro、Windows 8 专业版或 Windows 8.1 pro，你的订阅让你能够 [升级到 Windows 10 专业](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update)版。
 - 按照 [安全 windows 10 电脑](secure-win-10-pcs.md) 中的步骤设置 windows 10 设备的策略。
