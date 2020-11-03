@@ -1,5 +1,5 @@
 ---
-title: Microsoft 威胁防护中的自定义检测概述
+title: Microsoft 365 Defender 中的自定义检测概述
 description: 了解如何使用高级搜寻来创建自定义检测并生成警报
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、microsoft 365、Microsoft 威胁防护
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fe2b9f1b52fa2c8d9031bb58597992f3dda91520
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199461"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843908"
 ---
 # <a name="custom-detections-overview"></a>自定义检测概述
 
@@ -30,7 +30,7 @@ ms.locfileid: "48199461"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 使用自定义检测，可以主动监视和响应各种事件和系统状态，包括可疑的入侵活动和错误配置的终结点。 这可通过可自定义的检测规则（自动触发警报和响应操作）实现。
 

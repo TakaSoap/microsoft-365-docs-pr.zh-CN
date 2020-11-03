@@ -1,6 +1,6 @@
 ---
 title: 高级搜寻 Api
-description: 了解如何使用 Microsoft 威胁防护 API 运行高级搜寻查询
+description: 了解如何使用 Microsoft 365 Defender API 运行高级搜寻查询
 keywords: 高级搜寻、Api、api、MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197805"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844028"
 ---
 # <a name="advanced-hunting-apis"></a>高级搜寻 Api
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197805"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -46,7 +46,7 @@ ms.locfileid: "48197805"
 
 
 ## <a name="permissions"></a>权限
-若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限，请参阅 [访问 Microsoft 威胁防护 api](api-access.md)
+若要调用此 API，必须有以下权限之一。 若要了解详细信息，包括如何选择权限，请参阅 [Access The Microsoft 365 Defender api](api-access.md)
 
 权限类型 |   权限  |   权限显示名称
 :---|:---|:---
@@ -67,22 +67,22 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 标头 | 值 
 :---|:---
-Authorization | 持有者 {令牌}。 **** 必需。
+Authorization | 持有者 {令牌}。 必需。
 Content-Type    | application/json
 
 ## <a name="request-body"></a>请求正文
 在请求正文中，提供具有以下参数的 JSON 对象：
 
-参数 | 类型    | Description
+参数 | 类型    | 说明
 :---|:---|:---
-查询 | 文本 |  要运行的查询。 **** 必需。
+查询 | 文本 |  要运行的查询。 必需。
 
 ## <a name="response"></a>响应
 如果成功，此方法在响应正文中返回 200 OK 和 _类_ 对象。 <br><br>
 
 Response 对象分为3个部分 (属性) ：<br>
 1) ```Stats``` -查询性能统计信息。<br>
-2) ```Schema``` -响应的架构，每个列的名称类型对的列表。 <br>
+2) ```Schema``` -响应的架构，即每个列的 Name-Type 对的列表。 <br>
 3) ```Results``` -高级搜寻事件的列表。
 
 ## <a name="example"></a>示例
@@ -168,4 +168,4 @@ Response 对象分为3个部分 (属性) ：<br>
 ```
 
 ## <a name="related-topic"></a>相关主题
-- [访问 Microsoft 威胁防护 Api](api-access.md)
+- [访问 Microsoft 365 Defender Api](api-access.md)

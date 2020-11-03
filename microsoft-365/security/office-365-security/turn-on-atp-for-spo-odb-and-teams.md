@@ -1,5 +1,5 @@
 ---
-title: 启用 Office 365 ATP-SharePoint、OneDrive、& 团队
+title: 启用 Microsoft Defender for Office 365-SharePoint、OneDrive、& 团队
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,18 +19,18 @@ ms.collection:
 - SPO_Content
 description: 了解如何为 SharePoint、OneDrive 和团队打开 ATP，包括如何为检测到的文件设置通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c717a89492ea1160f26f26f13be6c36f348c79c
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 69cb7ffcfb06d5ccda915004a512e7eefc6eb56e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350651"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844268"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Office 365 高级威胁防护 (适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP) 保护您的组织不会在无意中共享恶意文件。 有关详细信息，请参阅 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。
+适用于 SharePoint、OneDrive 和 Microsoft 团队的 microsoft Defender for Office 365 可防止您的组织无意中共享恶意文件。 有关详细信息，请参阅 [适用于 SharePoint、OneDrive 和 Microsoft 团队的 ATP](atp-for-spo-odb-and-teams.md)。
 
 本文包含为 SharePoint、OneDrive 和 Microsoft 团队启用和配置 ATP 的步骤。
 
@@ -48,11 +48,11 @@ Office 365 高级威胁防护 (适用于 SharePoint、OneDrive 和 Microsoft 团
 
 ## <a name="step-1-use-the-security--compliance-center-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>步骤1：使用安全 & 合规中心打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，然后单击 " **全局设置**"。
+1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件** "，然后单击 " **全局设置** "。
 
 2. 在 " **全局设置** " 飞出时，转到 " **启用 SharePoint、OneDrive 和 MICROSOFT 团队的 ATP** " 设置。 将切换切换到右侧 ![ 切换，以 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP。
 
-   完成时，请单击“保存”****。
+   完成时，请单击“保存”。
 
 ### <a name="use-exchange-online-powershell-to-turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>使用 Exchange Online PowerShell 打开 SharePoint、OneDrive 和 Microsoft 团队的 ATP
 
@@ -74,7 +74,7 @@ Set-AtpPolicyForO365 -EnableATPForSPOTeamsODB $true
 Set-SPOTenant -DisallowInfectedFileDownload $true
 ```
 
-**注意**：
+**注意** ：
 
 - 此设置会影响用户和管理员。
 - 用户仍可以删除恶意文件。
@@ -85,38 +85,38 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 
 当 SharePoint、OneDrive 和 Microsoft 团队的 ATP 检测到恶意文件时，可以创建通知您和其他管理员的通知策略。 若要了解有关通知的详细信息，请参阅 [在安全 & 合规性中心中创建活动通知](../../compliance/create-activity-alerts.md)。
 
-1. 在 [安全 & 合规性中心](https://protection.office.com)中，转到 " **通知**" "通知 \> **策略** " 或 "打开" <https://protection.office.com/alertpolicies> 。
+1. 在 [安全 & 合规性中心](https://protection.office.com)中，转到 " **通知** " "通知 \> **策略** " 或 "打开" <https://protection.office.com/alertpolicies> 。
 
-2. 在 " **通知策略** " 页上，单击 " **新建通知策略**"。
+2. 在 " **通知策略** " 页上，单击 " **新建通知策略** "。
 
 3. " **新建通知策略** " 向导将在飞出时打开。在 "将 **通知命名** 为" 页上，配置以下设置：
 
-   - **名称**：键入唯一的描述性名称。 例如，库中的恶意文件。
-   - **说明**：键入可选的说明。 例如，当在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时，会通知管理员。
-   - **严重性**：保持选定的默认值为 " **低** "，或选择 " **中** " 或 " **高**"。
-   - **选择一个类别**：选择 **威胁管理**。
+   - **名称** ：键入唯一的描述性名称。 例如，库中的恶意文件。
+   - **说明** ：键入可选的说明。 例如，当在 SharePoint Online、OneDrive 或 Microsoft 团队中检测到恶意文件时，会通知管理员。
+   - **严重性** ：保持选定的默认值为 " **低** "，或选择 " **中** " 或 " **高** "。
+   - **选择一个类别** ：选择 **威胁管理** 。
 
-   完成后，单击“下一步”****。
+   完成后，单击“下一步”。
 
 4. 在 " **创建通知设置** " 页上，配置以下设置：
 
-   - **你希望在什么情况上提醒？：活动为**：在 **文件中选择检测到的恶意软件**。
-   - **您希望如何触发警报？**： **每次活动匹配选定的规则时** ，保留默认值。
+   - **你希望在什么情况上提醒？：活动为** ：在 **文件中选择检测到的恶意软件** 。
+   - **您希望如何触发警报？** ： **每次活动匹配选定的规则时** ，保留默认值。
 
-   完成后，单击“下一步”****。
+   完成后，单击“下一步”。
 
 5. 在 " **设置收件人** " 页上，配置以下设置：
 
-   - **发送电子邮件通知**：确认已选中此设置。 在 " **电子邮件收件人** " 框中，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。
-   - **每日通知限制**：保留默认值 " **无限制** " 处于选中状态。
+   - **发送电子邮件通知** ：确认已选中此设置。 在 " **电子邮件收件人** " 框中，选择一个或多个全局管理员、安全管理员或在检测到恶意文件时应收到通知的安全阅读者。
+   - **每日通知限制** ：保留默认值 " **无限制** " 处于选中状态。
 
-   完成后，单击“下一步”****。
+   完成后，单击“下一步”。
 
 6. 在 " **查看您的设置** " 页上，查看设置，然后单击任何部分中的 " **编辑** " 以进行更改。
 
    在 " **是否要立即启用策略？** " 部分，保留默认值 **"是"，然后将其立即打开** 。
 
-   完成后，单击 " **完成**"。
+   完成后，单击 " **完成** "。
 
 ### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>使用 Security & 合规性 PowerShell 为检测到的文件创建通知策略
 
@@ -126,7 +126,7 @@ Set-SPOTenant -DisallowInfectedFileDownload $true
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"
 ```
 
-**注意**：默认 _严重性_ 值为 "低"。 若要指定 "中" 或 "高"，请在命令中包含 _严重性_ 参数和值。
+**注意** ：默认 _严重性_ 值为 "低"。 若要指定 "中" 或 "高"，请在命令中包含 _严重性_ 参数和值。
 
 有关语法和参数的详细信息，请参阅 [set-activityalert](https://docs.microsoft.com/powershell/module/exchange/new-activityalert)。
 
@@ -134,7 +134,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - 若要验证是否成功启用了 SharePoint、OneDrive 和 Microsoft 团队的 ATP，请使用以下步骤之一：
 
-  - 在 " [安全性 & 合规性中心](https://protection.office.com)" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件**"，选择 " **全局设置**"，然后验证 " **启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP** 的值" 设置的值。
+  - 在 " [安全性 & 合规性中心](https://protection.office.com)" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全附件** "，选择 " **全局设置** "，然后验证 " **启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP** 的值" 设置的值。
 
   - 在 Exchange Online PowerShell 中，运行以下命令以验证属性设置：
 
@@ -154,7 +154,7 @@ New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies ad
 
 - 若要验证是否已成功为检测到的文件配置了通知策略，请执行以下任一步骤：
 
-  - 在安全 & 合规性中心中，转到 " **通知** \> " "通知 **策略**"， \> 选择 "通知策略" 并验证设置。
+  - 在安全 & 合规性中心中，转到 " **通知** \> " "通知 **策略** "， \> 选择 "通知策略" 并验证设置。
 
   - 在安全 & 合规性中心 PowerShell 中，将替换 \<AlertPolicyName\> 为警报策略的名称，运行以下命令，并验证属性值：
 

@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769372"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845670"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
-如果您的组织具有 [office 365 高级威胁防护](office-365-atp.md) (OFFICE 365 ATP) ，并且您拥有 [必要的权限](#required-licenses-and-permissions)，则您可以使用 **资源管理器** 或 **实时检测** (以前的 *实时报告* — [请参阅最近更新](#new-features-in-threat-explorer-and-real-time-detections)！ ) 。 在安全 & 合规性中心中，转到 " **威胁管理** "，然后选择 " **浏览器** " _或_ " **实时检测** "。
+如果您的组织具有 [Microsoft Defender For Office 365](office-365-atp.md)，并且您拥有 [必要的权限](#required-licenses-and-permissions)，则可以 **使用资源管理器** 或 **实时检测** (以前的 *实时报告* — [请参阅最近更新](#new-features-in-threat-explorer-and-real-time-detections)！ ) 。 在安全 & 合规性中心中，转到 " **威胁管理** "，然后选择 " **浏览器** " _或_ " **实时检测** "。
 
-|在 ATP 计划2中，您将看到：|在 ATP 计划1中，您将看到：|
+|使用 Microsoft Defender for Office 365 计划2，你将看到：|使用 Microsoft Defender for Office 365 计划1时，您会看到：|
 |---|---|
 |![威胁资源管理器](../../media/threatmgmt-explorer.png)|![实时检测](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,27 +42,27 @@ ms.locfileid: "48769372"
 
 - [查看 Microsoft 365 安全功能检测到的恶意软件](#see-malware-detected-in-email-by-technology)
 - [查看有关仿冒 Url 的数据，然后单击 "判定"](#view-data-about-phishing-urls-and-click-verdict)
-- [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (ATP 计划2仅) 
+- [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (仅限 Office 365 计划2的 Defender) 
 - ... [调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>对威胁资源管理器和实时检测的改进体验
 
-## <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
+### <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
 
 > [!NOTE]
 > "用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。 有关发布计划的信息，请参阅 Microsoft 365 路线图。
 
-用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅以下内容： [Office 365 ATP 中的用户标记](user-tags.md)。
+用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅 [Defender For Office 365 中的用户标记](user-tags.md)。
 
-在威胁资源管理器中，您将能够在以下体验中查看用户标记周围的信息：
+在威胁资源管理器中，您可以在以下体验中查看用户标记周围的信息：
 
 #### <a name="email-grid-view"></a>电子邮件网格视图
 
 电子邮件网格中显示的 "标记" 列将包含已应用于发件人或收件人邮箱的所有标记。 默认情况下，系统标记（如优先级帐户）首先显示。
 
 > [!div class="mx-imgBorder"]
-> ![筛选标记](../../media/tags-grid.png)
+> ![电子邮件网格视图中的筛选标记](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>筛选
 我们现在将标记作为筛选器，以便您可以仅在优先级帐户或特定的用户标记方案中进行智能寻线 (甚至排除包含特定标记的结果) 的情况。 将这些筛选器与我们提供的多个其他筛选器组合在一起可帮助您缩小调查范围
@@ -196,6 +196,16 @@ ms.locfileid: "48769372"
 - [刷新过程中的更新](#update-in-the-refresh-process)
 - [要添加到筛选器的图表深入分析](#chart-drilldown-to-add-to-filters)
 - [在产品信息更新中](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>按用户标记筛选
+
+现在，您可以按系统或自定义用户标记对其进行排序和筛选，以快速抓住威胁的范围。 若要了解详细信息，请参阅 [Office 365 ATP 中的用户标记](user-tags.md) 。
+
+> [!IMPORTANT]
+> 按用户标记进行筛选和排序当前处于公共预览版中。
+> 在正式发布之前，可能会对其进行充分修改。 对于提供的信息，Microsoft 不做任何明示或暗示的担保。
+
+![浏览器中的标记列](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>时区改进
 
@@ -375,7 +385,7 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 2. 在 " **视图** " 菜单中，选择 " **电子邮件**  >  **网络钓鱼** "。
 
    > [!div class="mx-imgBorder"]
-   > ![浏览器的视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![网络仿冒上下文中的浏览器视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. 单击 " **发件人** "，然后选择 " **url**  >  **" 单击 "判定"** 。
 
@@ -422,7 +432,7 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 2. 在 " **视图** " 菜单中，选择 " **电子邮件**  >  **提交** "。
 
    > [!div class="mx-imgBorder"]
-   > ![浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
+   > ![用于电子邮件的浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 单击 " **发件人** "，然后选择 " **基本**  >  **报告类型** "。
 
@@ -431,12 +441,12 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
    > [!div class="mx-imgBorder"]
    > ![用户报告的网络钓鱼](../../media/EmailUserReportedReportType.png)
 
-报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，如有必要，调整您的 [ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+报告将刷新，以显示组织中的人员已报告为网络钓鱼尝试的电子邮件的相关数据。 您可以使用此信息进行进一步分析，并在必要时调整 [Microsoft Defender For Office 365 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="start-automated-investigation-and-response"></a>启动自动调查和响应
 
 > [!NOTE]
-> **Office 365 ATP 计划 2** 和 **Office 365 E5** 中提供了自动调查和响应功能。
+> **Microsoft Defender For office 365 计划 2** 和 **Office 365 E5** 中提供了自动调查和响应功能。
 
  (NEW！ ) [自动调查和响应](automated-investigation-response-office.md) 可在调查和缓解 cyberattacks 的过程中节省您的安全操作团队时间和精力。 除了配置可触发安全行动手册的警报外，还可以从资源管理器中的视图启动自动调查和响应过程。
 
@@ -454,11 +464,11 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 ## <a name="required-licenses-and-permissions"></a>所需的许可证和权限
 
-您必须具有 [Office 365 ATP](office-365-atp.md) 才能获取资源管理器或实时检测。
+您必须拥有 [Microsoft Defender For Office 365](office-365-atp.md) 才能获取资源管理器或实时检测。
 
-- 资源管理器包含在 Office 365 ATP 计划2中。
-- 实时检测报告包含在 Office 365 ATP 计划1中。
-- 计划为应受 Office 365 ATP 保护的所有用户分配许可证。  (资源管理器或实时检测显示许可用户的检测数据。 ) 
+- 资源管理器包含在 Office 365 计划2的 Defender 中。
+- "实时检测" 报告包含在 Office 365 计划1的 Defender 中。
+- 计划为应由 Defender for Office 365 保护的所有用户分配许可证。  (资源管理器或实时检测显示许可用户的检测数据。 ) 
 
 若要查看和使用资源管理器或实时检测，您必须具有适当的权限，例如，授予安全管理员或安全阅读者的权限。
 
@@ -482,9 +492,9 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测的区别
 
-- Office 365 ATP 计划1中提供了 **实时检测** 报告，而 **威胁浏览器** 在 office 365 atp 计划2中可用。
+- **实时检测** 报告可在 Office 365 计划1的 defender 中使用，而 **威胁浏览器** 在 office 365 计划2的 defender 中可用。
 - **实时检测** 报告允许你实时查看检测。 **威胁资源管理器** 也会执行此功能，但也允许您查看给定攻击的其他详细信息。
 - " **所有电子邮件** " 视图在 **威胁资源管理器** 中可用 (并且不在 **实时检测** 报告) 中。
 - **威胁资源管理器** 中包含更多筛选功能和可用操作。
 
-有关更多详细信息，请参阅 [Office 365 ATP 服务说明：功能在高级威胁防护中的功能可用性 (ATP) 计划](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+有关更多详细信息，请参阅 [Microsoft defender For office 365 服务说明：功能跨 Defender For office 365 计划的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。

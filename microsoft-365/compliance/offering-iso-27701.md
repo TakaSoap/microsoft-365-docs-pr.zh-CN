@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208134"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845040"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隐私信息管理系统 (PIMS)
 
@@ -33,9 +33,9 @@ ms.locfileid: "48208134"
 
 无论贵组织的规模如何，要求供应商通过 PIMS 认证，都将有助于供应商和合作伙伴建立负责任的隐私实践。 ISO/IEC 27701 解决了以下三个关键合规性挑战：
 
-- **要满足的法规要求过多**：通过使用一套通用的运营控制措施来协调多项法规要求，可以实现一致和高效的实施。
-- **按法规进行审核的成本太高**：内部和第三方审核员都可在单个审核周期内使用通用的运营控制措施来评估合规性。
-- **无证据的合规性承诺可能会带来风险**：涉及个人信息迁移的商业协议可保证合规性认证。
+- **要满足的法规要求过多** ：通过使用一套通用的运营控制措施来协调多项法规要求，可以实现一致和高效的实施。
+- **按法规进行审核的成本太高** ：内部和第三方审核员都可在单个审核周期内使用通用的运营控制措施来评估合规性。
+- **无证据的合规性承诺可能会带来风险** ：涉及个人信息迁移的商业协议可保证合规性认证。
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>要满足的法规要求过多
 
@@ -84,7 +84,7 @@ ISO/IEC 27001 和 PIMS 的要点：
 - Power Virtual Agents
 - Microsoft Stream
 - Microsoft 威胁专家
-- Windows Defender 高级威胁防护
+- Microsoft Defender for Endpoint
 
 ## <a name="audits-reports-and-certificates"></a>审核、报告和证书
 
@@ -93,7 +93,7 @@ ISO/IEC 27001 和 PIMS 的要点：
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

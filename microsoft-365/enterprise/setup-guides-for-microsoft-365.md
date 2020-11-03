@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 通过安装指南加快规划和配置 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493693"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844088"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服务的设置指南
 
@@ -42,7 +42,7 @@ Microsoft 365 和 Office 365 安装指南为您提供了有关规划和部署租
 
    ![在 Microsoft 365 管理中心中培训 & 指南卡片](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. 选择 " **自定义安装指南**"。
+3. 选择 " **自定义安装指南** "。
 
    ![Microsoft 365 管理中心中安装指导页面的屏幕截图](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -135,12 +135,12 @@ Windows 虚拟桌面是在云中运行的全面桌面和应用虚拟化服务。
 
 ## <a name="guides-for-security-and-compliance"></a>安全性和合规性指南
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender 高级威胁防护 (ATP) 顾问
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender for Endpoint advisor
 
-[Microsoft Defender 高级威胁防护顾问](https://aka.ms/mdatpsetup)提供的说明可帮助你的企业网络阻止、检测、调查和响应高级威胁。 对组织的安全漏洞做出有根据的评估，并决定最佳的部署包和配置方法。 
+[Microsoft Defender For Endpoint advisor](https://aka.ms/mdatpsetup)提供的说明可帮助你的企业网络阻止、检测、调查和响应高级威胁。 对组织的安全漏洞做出有根据的评估，并决定最佳的部署包和配置方法。 
 
 >[!NOTE]
->Microsoft Defender ATP 需要 Microsoft 批量许可证。
+>Microsoft Defender for Endpoint 需要 Microsoft 批量许可证。
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection 安装指南
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) 是一种基于云的电子邮件筛�
 
 使用 [Exchange Online Protection 设置指南](https://aka.ms/EOPguidance) 来设置 EOP，方法是选择以下三个部署方案中的哪一个： &mdash; 本地邮箱、混合 (本地邮箱和云) 邮箱的混合，或所有云邮箱 &mdash; 适合您的组织。 指南提供了用于设置和查看用户的许可的信息和资源，在 Microsoft 365 管理中心中分配权限，以及在安全 & 合规性中心中配置组织的反恶意软件和垃圾邮件策略。 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 高级威胁防护顾问
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 advisor
 
-[Office 365 高级威胁防护顾问](https://aka.ms/oatpsetup)针对您的环境可能会通过电子邮件、链接和第三方协作工具遇到的恶意威胁来保护您的组织。 本指南为您提供了资源和信息，可帮助您准备和确定高级威胁防护计划以满足组织的需求。 
+[Microsoft Defender For Office 365 advisor](https://aka.ms/oatpsetup)保护您的组织免受您的环境可能通过电子邮件、链接和第三方协作工具遇到的恶意威胁。 本指南为您提供了资源和信息，可帮助您准备和确定适用于 Office 的 Defender 365 计划以满足组织的需求。 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 信息保护设置指南
 

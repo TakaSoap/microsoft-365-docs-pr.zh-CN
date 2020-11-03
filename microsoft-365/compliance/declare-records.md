@@ -17,21 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留标签声明记录。
-ms.openlocfilehash: 490f81ba9c1d2d291539107650ec3c3f5938eba8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 34b5272a8bed9be01c3965dae258c88facec0145
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198918"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830601"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用保留标签声明记录
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-如需将文档和电子邮件声明为[记录](records-management.md#records)，请使用[保留标签](retention.md#retention-labels) 将内容标记为 **记录**或**合规性记录**。
-
-> [!NOTE]
-> 合规性记录当前处于预览中。
+如需将文档和电子邮件声明为 [记录](records-management.md#records)，请使用 [保留标签](retention.md#retention-labels) 将内容标记为 **记录** 或 **合规性记录** 。
 
 如果不确定要使用记录还是合规性记录，请参阅[允许或禁止行为的对比限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 如果需要使用合规性记录，必须首先运行 PowerShell 命令，如下一节中所述。
 
@@ -40,7 +37,7 @@ ms.locfileid: "48198918"
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>如何显示将内容标记为合规性记录的选项
 
 >[!NOTE] 
-> 以下过程是可审核的操作，在审核日志的[保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)部分中，记录**为保留标签启用的合规性记录选项**。
+> 以下过程是可审核的操作，在审核日志的 [保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)部分中，记录 **为保留标签启用的合规性记录选项** 。
 
 默认情况下，保留标签向导中不显示用于将内容标记为合规性记录的保留标签选项。 如需显示此选项，须首先运行 PowerShell 命令：
 
@@ -57,7 +54,7 @@ ms.locfileid: "48198918"
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>配置保留标签以声明记录
 
-从 Microsoft 365 合规中心的**记录管理** 解决方案中创建或编辑保留标签时，可选择将项目标记为记录。 如果按照上一节运行 PowerShell 命令，可将项目标记为合规性记录。
+从 Microsoft 365 合规中心的 **记录管理** 解决方案中创建或编辑保留标签时，可选择将项目标记为记录。 如果按照上一节运行 PowerShell 命令，可将项目标记为合规性记录。
 
 例如：
 

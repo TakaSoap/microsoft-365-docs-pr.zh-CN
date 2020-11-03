@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft 威胁防护中的高级搜寻查询结果
-description: 在 Microsoft 威胁防护中充分利用高级搜寻返回的最多查询结果
+title: 在 Microsoft 365 Defender 中处理高级搜索查询结果
+description: 在 Microsoft 365 Defender 中充分利用高级搜索返回的查询结果
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、microsoft 365、Microsoft 威胁防护、可视化、图表、筛选器、深化
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431071"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844124"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高级搜寻查询结果
 
@@ -32,7 +32,7 @@ ms.locfileid: "48431071"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -70,7 +70,7 @@ AlertInfo
 呈现结果时，柱形图将每个严重性值显示为单独的列：
 
 ![高级搜索查询结果的图像显示为 ](../../media/advanced-hunting-column-chart.jpg)
- *按严重性显示为柱形图的警报*的柱形图查询结果
+ *按严重性显示为柱形图的警报* 的柱形图查询结果
 
 #### <a name="alert-severity-by-operating-system"></a>警报严重性（按操作系统）
 您还可以使用 `summarize` 运算符为来自多个字段的图表值准备结果。 例如，您可能想要了解如何在操作系统 (OS) 之间分布警报严重性。 
@@ -146,7 +146,7 @@ AppFileEvents
 ## <a name="filter-the-query-results"></a>筛选查询结果
 右侧显示的筛选器提供结果集的摘要。 每列都有其自己的部分，其中列出了该列找到的非重复值和实例数。
 
-通过选择 `+` `-` 要包含或排除的值上的或按钮，然后选择 " **运行查询**" 来优化查询。
+通过选择 `+` `-` 要包含或排除的值上的或按钮，然后选择 " **运行查询** " 来优化查询。
 
 ![高级搜寻筛选器的图像](../../media/advanced-hunting-filter.png)
 

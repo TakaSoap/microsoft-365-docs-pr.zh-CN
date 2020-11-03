@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: 了解有关 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件的 Office 365 高级威胁防护。
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 了解适用于 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的文件的 Microsoft Defender for Office 365。
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446259"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844328"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-SharePoint、OneDrive 和 Microsoft team in [Office 365 高级威胁防护 (atp) ](office-365-atp.md) 为在 [Microsoft 365 中的常见病毒检测引擎](virus-detection-in-spo.md)在上载时已扫描的文件提供了额外的保护层。 SharePoint、OneDrive 和 Microsoft 团队的 ATP 可帮助检测和阻止在工作组网站和文档库中标识为恶意的现有文件。
+[Microsoft Defender For Office 365](office-365-atp.md)中的 SharePoint、OneDrive 和 microsoft 团队的 ATP 为[microsoft 365 中的常见病毒检测引擎](virus-detection-in-spo.md)在上载时已扫描的文件提供了额外的保护层。 SharePoint、OneDrive 和 Microsoft 团队的 ATP 可帮助检测和阻止在工作组网站和文档库中标识为恶意的现有文件。
 
 默认情况下不启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP。 若要打开它，请参阅 [启用 SharePoint、OneDrive 和 Microsoft 团队的 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
@@ -59,14 +59,14 @@ SharePoint Online 管理员可以阻止用户下载恶意文件。 有关说明�
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>查看有关由 SharePoint、OneDrive 和 Microsoft 团队的 ATP 检测到的恶意文件的信息
 
-由 ATP 标识为恶意的文件将显示在 [Office 365 高级威胁防护](view-reports-for-atp.md) 和资源管理器中的报告中， [ (和实时检测) ](threat-explorer.md)。
+Microsoft Defender for Office 365 中被标识为恶意的文件将显示在 [Microsoft defender For office 365](view-reports-for-atp.md) 和资源管理器中的报告中， [ (和实时检测) ](threat-explorer.md)。
 
-从5月2018，如果某个文件被 ATP 标识为恶意文件，则该文件也可在隔离区中使用。 有关详细信息，请参阅 [使用安全 & 合规性中心管理隔离的文件](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)。
+到5月2018日，当 Microsoft Defender for Office 365 将某个文件标识为恶意文件时，该文件也在隔离区中可用。 有关详细信息，请参阅 [使用安全 & 合规性中心管理隔离的文件](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)。
 
 ## <a name="keep-these-points-in-mind"></a>记住这些要点
 
-- ATP 将不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每个单个文件。 这是设计使然的。 异步扫描文件。 此过程使用共享和来宾活动事件以及智能试探法和威胁信号来识别恶意文件。
+- 适用于 Office 的 Defender 365 不会扫描 SharePoint Online、OneDrive for Business 或 Microsoft 团队中的每一个文件。 这是设计使然的。 异步扫描文件。 此过程使用共享和来宾活动事件以及智能试探法和威胁信号来识别恶意文件。
 
-- 确保您的 SharePoint 网站已配置为使用 [新式体验](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 ATP protection 适用于是否使用新式体验或经典视图;但是，阻止文件被阻止的视觉指示器仅适用于新式体验。
+- 确保您的 SharePoint 网站已配置为使用 [新式体验](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 适用于 Office 365 的 Defender 防护应用是否使用新式体验或经典视图;但是，阻止文件被阻止的视觉指示器仅适用于新式体验。
 
-- SharePoint、OneDrive 和 Microsoft 团队的 ATP 是组织的整体威胁防护策略的一部分，其中包括在 Exchange Online Protection 中的反垃圾邮件和反恶意软件保护 (EOP) ，以及 Office 365 ATP 中的安全链接和安全附件。 若要了解详细信息，请参阅 [在 Office 365 中防御威胁](protect-against-threats.md)。
+- SharePoint、OneDrive 和 Microsoft 团队的 ATP 是组织的整体威胁防护策略的一部分，其中包括 Exchange Online Protection 中的反垃圾邮件和反恶意软件保护 (EOP) ，以及 Microsoft Defender for Office 365 中的安全链接和安全附件。 若要了解详细信息，请参阅 [在 Office 365 中防御威胁](protect-against-threats.md)。

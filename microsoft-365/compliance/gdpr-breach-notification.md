@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305176"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843146"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 泄露通知
 
@@ -36,10 +36,10 @@ ms.locfileid: "48305176"
 
 本文档中使用的 GDPR 术语的有用定义：
 
-- *数据控制者（控制者）*：单独或与他人共同确定个人数据处理目的和方法的法人、公共机关、机构或其他团体。  
-- *个人数据*和*数据主体*：与已识别或可识别的自然人（数据主体）相关的任何信息；可识别的自然人是可以直接或间接识别的自然人。  
-- *处理者*：代表控制者处理个人数据的自然人或法人、公共机关、机构或其他团队。  
-- *客户数据*：在经营业务的日常运营中生成和存储的数据。
+- *数据控制者（控制者）* ：单独或与他人共同确定个人数据处理目的和方法的法人、公共机关、机构或其他团体。  
+- *个人数据* 和 *数据主体* ：与已识别或可识别的自然人（数据主体）相关的任何信息；可识别的自然人是可以直接或间接识别的自然人。  
+- *处理者* ：代表控制者处理个人数据的自然人或法人、公共机关、机构或其他团队。  
+- *客户数据* ：在经营业务的日常运营中生成和存储的数据。
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft 和泄露通知
 
@@ -61,14 +61,14 @@ Microsoft 严格履行一般数据保护条例 (GDPR) 规定的义务。 安全�
 2. **[Azure 和 Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft 拥有全球性的全天候事件响应服务，可用于减轻针对 Microsoft Azure 和 Dynamics 365 的攻击所造成的影响。
 
-    - *检测泄露*：由于 Microsoft 和客户都负有安全义务，因此 Azure 服务采用共同责任模型来定义安全和运营责任。 Microsoft 不会监控或响应客户责任范围内的安全事件。 如果存在相应服务合同，客户事件响应可能涉及与 Azure [客户支持人员](https://azure.microsoft.com/support/options/)进行协作。 Microsoft Azure 还提供各种服务（例如，[ Azure 安全中心](https://azure.microsoft.com/services/security-center/)），客户可以利用这些服务来开发和管理安全事件响应。
+    - *检测泄露* ：由于 Microsoft 和客户都负有安全义务，因此 Azure 服务采用共同责任模型来定义安全和运营责任。 Microsoft 不会监控或响应客户责任范围内的安全事件。 如果存在相应服务合同，客户事件响应可能涉及与 Azure [客户支持人员](https://azure.microsoft.com/support/options/)进行协作。 Microsoft Azure 同样还提供各种服务（例如，[Azure Defender*](https://azure.microsoft.com/services/security-center/)），客户可以利用这些服务来开发和管理安全事件响应。
 
         有关在 Microsoft Azure 中触发泄露调查的事件列表，请参阅[检测潜在泄露](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches)。 [Azure 与 GDPR 泄露通知](gdpr-breach-azure-dynamics.md)进一步详细介绍了 Microsoft 如何在 Azure 内调查、管理和响应安全事件。
 
-    - *数据泄露响应*：Microsoft 通过调查事件的功能影响、可恢复性和信息影响来确定泄露的相应优先级和严重性级别。 随着调查的进行，优先级和严重性可能会基于新发现和结论而发生改变。
+    - *数据泄露响应* ：Microsoft 通过调查事件的功能影响、可恢复性和信息影响来确定泄露的相应优先级和严重性级别。 随着调查的进行，优先级和严重性可能会基于新发现和结论而发生改变。
     Microsoft 安全响应团队与全球法律顾问密切合作，帮助确保根据法律义务和对客户的承诺进行取证。 这些流程在 [Azure 的数据泄露响应](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response)中有详细说明。
 
-    - *客户通知*：Microsoft Azure 会根据需要将数据泄露通知给客户和监管机构。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况除外：
+    - *客户通知* ：Microsoft Azure 会根据需要将数据泄露通知给客户和监管机构。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况除外：
 
         - Microsoft 认为通知操作将增加其他客户面临的风险。
         - 72 小时时间线可能会留下一些可用的事件详细信息。 这些详细信息将在调查过程中提供给你。
@@ -80,7 +80,7 @@ Microsoft 严格履行一般数据保护条例 (GDPR) 规定的义务。 安全�
 
 ## <a name="breach-notification-admin-tools"></a>泄露通知管理工具
 
-- **设置组织的隐私联系人**：租户管理员可以使用 [Azure Active Directory 管理门户](https://go.microsoft.com/fwlink/p/?linkid=2052736)来定义组织的隐私联系人，以供 Microsoft 在必要时联系。
+- **设置组织的隐私联系人** ：租户管理员可以使用 [Azure Active Directory 管理门户](https://go.microsoft.com/fwlink/p/?linkid=2052736)来定义组织的隐私联系人，以供 Microsoft 在必要时联系。
 
 ## <a name="learn-more"></a>了解更多
 

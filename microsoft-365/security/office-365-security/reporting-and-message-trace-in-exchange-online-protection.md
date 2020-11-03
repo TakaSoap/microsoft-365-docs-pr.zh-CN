@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解 Microsoft Exchange Online Protection (EOP) 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196395"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845548"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -30,13 +30,13 @@ ms.locfileid: "48196395"
 
 ## <a name="usage-reports"></a>使用率报告
 
-**Microsoft 365 组活动**：查看有关创建和使用的 microsoft 365 组数量的信息。
+**Microsoft 365 组活动** ：查看有关创建和使用的 microsoft 365 组数量的信息。
 
-**电子邮件活动**：查看有关整个组织中发送、接收和读取的邮件数的信息以及特定用户的信息。
+**电子邮件活动** ：查看有关整个组织中发送、接收和读取的邮件数的信息以及特定用户的信息。
 
-**电子邮件应用程序用法**：查看有关使用的电子邮件应用程序的信息。 这包括每个应用的连接总数以及正在连接的 Outlook 的版本。
+**电子邮件应用程序用法** ：查看有关使用的电子邮件应用程序的信息。 这包括每个应用的连接总数以及正在连接的 Outlook 的版本。
 
-**邮箱使用情况**：查看有关邮箱的已用存储、配额消耗、项目计数和上一活动 (发送或读取活动) 的信息。
+**邮箱使用情况** ：查看有关邮箱的已用存储、配额消耗、项目计数和上一活动 (发送或读取活动) 的信息。
 
 有关详细信息，请参阅下列资源：
 
@@ -52,11 +52,11 @@ ms.locfileid: "48196395"
 
 这些增强的报告为 EOP 管理员提供了交互式报告体验，其中包括摘要信息，以及深入了解更多详细信息的功能。
 
-**高级威胁防护 (ATP) **：查看有关安全链接的信息以及作为 ATP 一部分的安全附件。
+**适用于 office 的 Defender 365** ：查看有关作为 Microsoft Defender for office 365 一部分的安全链接和安全附件的信息。
 
-**EOP**：查看组织中的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的相关信息。
+**EOP** ：查看组织中的恶意软件检测、欺骗邮件、垃圾邮件检测和邮件流的相关信息。
 
-[查看 Office 365 高级威胁防护报告](view-reports-for-atp.md)
+[查看适用于 Office 365 的 Defender 报告](view-reports-for-atp.md)
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自定义报告
 

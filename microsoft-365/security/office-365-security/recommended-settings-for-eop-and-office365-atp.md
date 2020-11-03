@@ -1,5 +1,5 @@
 ---
-title: Microsoft for EOP and Office 365 的相关建议、建议、发件人策略框架、基于域的邮件报告和符合性、域密钥识别的邮件、步骤、工作原理、安全性基线、EOP 的基线、ATP、设置 ATP、设置 EOP、配置 ATP、配置 EOP、安全配置
+title: Microsoft for EOP and Defender for Office 365 安全设置、建议、发件人策略框架、基于域的邮件报告和合规性、域密钥识别的邮件、步骤、工作原理、安全性基线、EOP 的基线、Office 365 365 的 defender for office 365、configure EOP、security configuration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,23 +16,23 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: Exchange Online Protection (EOP) 和高级威胁防护 (ATP) 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 此外，如果您还使用高级威胁防护 (ATP) ，还会获得什么额外内容？
-ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 如果你还使用适用于 Office 365 的 Defender，你还会获得什么额外内容？
+ms.openlocfilehash: ab8640574d15cc1950ac0873ef90c4d984553510
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806768"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845644"
 ---
-# <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建议设置
+# <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建议设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Exchange Online Protection (EOP)** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Office 365 高级威胁防护 (ATP)** ATP Plan 1 或 ATP 计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
+**Exchange Online Protection (EOP)** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Microsoft Defender For Office 365** 计划1或计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
-尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Office 365 ATP 中有两个安全级别： **标准** 和 **严格** 。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
+尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Microsoft Defender for Office 365 中有两个安全级别： **标准** 和 **严格** 。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
 
-若要自动将标准或严格设置应用于用户，请参阅 [EOP And Office 365 ATP 中的预设安全策略](preset-security-policies.md)。
+若要自动将标准或严格设置应用于用户，请参阅 [EOP And Microsoft Defender For Office 365 中的预设安全策略](preset-security-policies.md)。
 
 > [!NOTE]
 > 需要在邮箱上启用垃圾邮件规则，以便筛选正常工作。 默认情况下已启用，但如果筛选似乎不起作用，则应进行检查。 有关详细信息，请参阅[在 Office 365 中配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
@@ -52,13 +52,13 @@ ms.locfileid: "48806768"
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
-|**垃圾邮件** 检测操作 <br/><br/> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**高可信度垃圾邮件** 检测操作 <br/><br/> _HighConfidenceSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**网络钓鱼电子邮件** 检测操作 <br/><br/> _PhishSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**高可信度网络钓鱼电子邮件** 检测操作 <br/><br/> _HighConfidencePhishAction_|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
-|**批量电子邮件** 检测操作 <br/><br/> _BulkSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”     发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**垃圾邮件** 检测操作 <br/><br/> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**高可信度垃圾邮件** 检测操作 <br/><br/> _HighConfidenceSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**网络钓鱼电子邮件** 检测操作 <br/><br/> _PhishSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**高可信度网络钓鱼电子邮件** 检测操作 <br/><br/> _HighConfidencePhishAction_|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
+|**批量电子邮件** 检测操作 <br/><br/> _BulkSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <br/><br/> `Quarantine`||
 |批量电子邮件阈值 <br/><br/> _BulkThreshold_|7 |6 |4 |有关详细信息，请参阅 [Office 365 中的批量投诉级别 (BCL) ](bulk-complaint-level-values.md)。|
 |隔离保留期 <br/><br/> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
 |**安全提示** <br/><br/> _InlineSafetyTipsEnabled_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
@@ -106,7 +106,7 @@ ms.locfileid: "48806768"
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**每个用户的最大收件人数：外部每小时限制** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|默认值0表示使用服务默认设置。|
 |**每个用户的最大收件人数：每小时的内部限制** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|默认值0表示使用服务默认设置。|
@@ -120,7 +120,7 @@ ms.locfileid: "48806768"
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**是否要在邮件被隔离时通知收件人？** <br/><br/> _操作_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <br/><br/> _EnableFileFilter_|关 <br/><br/> `$false`|开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
@@ -135,38 +135,38 @@ ms.locfileid: "48806768"
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**启用反欺骗保护** <br/><br/> _EnableAntispoofEnforcement_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**启用未经验证的发件人** <br/><br/> _EnableUnauthenticatedSender_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在 Outlook 中向发件人的照片添加问号 ( ) ，以查找未识别的欺骗性发件人。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
 |**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|此设置适用于 [欺骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
 |
 
-## <a name="office-365-advanced-threat-protection-security"></a>Office 365 高级威胁防护安全
+## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender for Office 365 安全
 
-其他安全优势附带了 Office 365 高级威胁防护 (ATP) 订阅。 有关最新的新闻和信息，可以查看 [Office 365 ATP 中的新增功能](whats-new-in-office-365-atp.md)。
+Microsoft Defender for Office 365 订阅提供了其他安全优势。 有关最新的新闻和信息，可以查看 [在 Office 365 中的新增功能](whats-new-in-office-365-atp.md)。
 
 > [!IMPORTANT]
 >
-> - 默认的 ATP 反网络钓鱼策略为所有收件人提供 [欺骗保护](set-up-anti-phishing-policies.md#spoof-settings) 。 但是，不会在默认策略中配置或启用特定发件人域或发件人域的可用 [模拟保护](#impersonation-settings-in-atp-anti-phishing-policies) 设置。 若要启用模拟保护，请配置默认策略或创建其他 ATP 反网络钓鱼策略。
+> - Microsoft Defender for Office 365 中的默认反网络钓鱼策略为所有收件人提供 [欺骗保护](set-up-anti-phishing-policies.md#spoof-settings) 。 但是，不会在默认策略中配置或启用特定发件人域或发件人域的可用 [模拟保护](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 设置。 若要启用模拟保护，请在适用于 Office 365 的 Defender 中配置默认策略或创建其他反网络钓鱼策略。
 >
 > - 没有可自动保护组织中所有收件人的默认安全链接策略或安全附件策略。 若要获取保护，您需要至少创建一个安全链接策略和安全附件策略。
 >
 > - [SharePoint、OneDrive 和 Microsoft 团队](atp-for-spo-odb-and-teams.md) 保护和 [安全文档](safe-docs.md) 保护的 ATP 对安全链接策略没有任何依赖关系。
 
-如果你的订阅包括 Office 365 ATP，或者如果你已购买 Office 365 ATP 作为加载项，请设置以下标准或严格配置。
+如果你的订阅包括 Microsoft Defender for Office 365，或者你已购买适用于 Office 365 的 Defender 作为加载项，请设置以下标准或严格配置。
 
-### <a name="atp-anti-phishing-policy-settings"></a>ATP 反网络钓鱼策略设置
+### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略设置
 
-EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包含更多的功能和控制，可帮助预防、检测和补救攻击。 若要创建和配置这些策略，请参阅 [在 Office 365 中配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+EOP 客户将获取前面所述的基本反网络钓鱼，但 Microsoft Defender for Office 365 包含更多的功能和控制，可帮助预防、检测和补救攻击。 若要创建和配置这些策略，请参阅 [在 Office 365 的 Defender 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
-#### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的模拟设置
+#### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的模拟设置
 
-有关这些设置的详细信息，请参阅 [ATP 反网络钓鱼策略中的模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。 若要配置这些设置，请参阅 [配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+有关这些设置的详细信息，请参阅 [Microsoft Defender For Office 365 中的模拟设置中的反网络钓鱼策略](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要配置这些设置，请参阅 [在 Office 365 的 Defender 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |受保护的用户： **添加要保护的用户** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|关闭 <br/><br/> `$false` <br/><br/> 无|打开 <br/><br/> `$true` <br/><br/> \<list of users\>|打开 <br/><br/> `$true` <br/><br/> \<list of users\>|根据你的组织，我们建议在关键角色中向用户添加 (邮件发件人) 。 在内部，受保护的发件人可能是 CEO、CFO 和其他高级领导者。 外部，受保护的发件人可以包括理事会成员或董事会。|
 |受保护的域： **自动包括我拥有的域** <br/><br/> _EnableOrganizationDomainsProtection_|关 <br/><br/> `$false`|开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
@@ -183,7 +183,7 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |**受信任域** <br/><br/> _ExcludedDomains_|无|无|无|根据您的组织，我们建议添加由于仅模拟而不是其他筛选器而被错误地标记为网络钓鱼的域。|
 |
 
-#### <a name="spoof-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的欺骗设置
+#### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的欺骗设置
 
 请注意，这些设置与 [EOP 中的反垃圾邮件策略设置](#eop-anti-spam-policy-settings)中提供的设置相同。
 
@@ -196,39 +196,39 @@ EOP 客户将获得上文所述的基本反网络钓鱼，但 Office 365 ATP 包
 |**如果电子邮件由不允许欺骗您的域的人发送** <br/><br/> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <br/><br/> `MoveToJmf`|**隔离邮件** <br/><br/> `Quarantine`|此设置适用于 [欺骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
 |
 
-#### <a name="advanced-settings-in-atp-anti-phishing-policies"></a>ATP 反网络钓鱼策略中的高级设置
+#### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级设置
 
-有关此设置的详细信息，请参阅 [ATP 反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)。 若要配置此设置，请参阅 [配置 ATP 反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+有关此设置的详细信息，请参阅 [Microsoft Defender For Office 365 中的反网络钓鱼策略中的高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 若要配置此设置，请参阅 [在 Office 365 的 Defender 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**高级网络钓鱼阈值** <br/><br/> _PhishThresholdLevel_|**1-标准** <br/><br/> `1`|**2-主动** <br/><br/> `2`|**3-更主动** <br/><br/> `3`||
 |
 
 ### <a name="safe-links-settings"></a>安全链接设置
 
-Office 365 中的安全链接包含适用于活动安全链接策略中包含的所有用户的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [Office 365 ATP 中的安全链接](atp-safe-links.md)。
+Defender for Office 365 中的安全链接包括适用于活动安全链接策略中包含的所有用户的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [适用于 Office 365 的 Defender 中的安全链接](atp-safe-links.md)。
 
 #### <a name="global-settings-for-safe-links"></a>安全链接的全局设置
 
-若要配置这些设置，请参阅 [在 Office 365 ATP 中配置安全链接的全局设置](configure-global-settings-for-safe-links.md)。
+若要配置这些设置，请参阅为 [Office 365 中的安全链接配置全局设置](configure-global-settings-for-safe-links.md)。
 
 在 PowerShell 中，可对这些设置使用 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet。
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
-|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|在受支持的 Office 365 desktop 和 mobile (iOS 和 Android) 应用中使用 ATP 安全链接。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
+|**使用中的安全链接： Office 365 应用程序** <br/><br/> _EnableSafeLinksForO365Clients_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|使用受支持的 Office 365 desktop 和 mobile (iOS 和 Android) 应用中的安全链接。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**用户单击安全链接时不进行跟踪** <br/><br/> _TrackClicks_|开 <br/><br/> `$false`|关 <br/><br/> `$true`|关闭 <br/><br/> `$true`|关闭此设置 (将 _TrackClicks_ 设置为 `$true`) 在受支持的 Office 365 应用程序中跟踪用户单击。|
 |**不要让用户通过指向原始 URL 的安全链接进行单击** <br/><br/> _AllowClickThrough_|打开 <br/><br/> `$false`|打开 <br/><br/> `$false`|打开 <br/><br/> `$false`|打开此设置 (将 _AllowClickThrough_ 设置为 `$false`) 会阻止在受支持的 Office 365 应用程序中单击 "转至原始 URL"。|
 |
 
 #### <a name="safe-links-policy-settings"></a>安全链接策略设置
 
-若要配置这些设置，请参阅 [在 Office 365 ATP 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+若要配置这些设置，请参阅 [在 Microsoft Defender For Office 365 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
 
 在 PowerShell 中，可对这些设置使用 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
@@ -237,7 +237,7 @@ Office 365 中的安全链接包含适用于活动安全链接策略中包含的
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**选择邮件中未知的潜在恶意 Url 的操作** <br/><br/> _IsEnabled_|关 <br/><br/> `$false`|开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
 |**为 Microsoft 团队中的未知或可能存在的恶意 Url 选择操作** <br/><br/> _EnableSafeLinksForTeams_|关 <br/><br/> `$false`|开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
@@ -250,7 +250,7 @@ Office 365 中的安全链接包含适用于活动安全链接策略中包含的
 
 ### <a name="safe-attachments-settings"></a>安全附件设置
 
-Office 365 中的安全附件包括与安全附件策略无关系的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [Office 365 ATP 中的安全附件](atp-safe-attachments.md)。
+Microsoft Defender for Office 365 中的安全附件包括与安全附件策略无关系的全局设置，以及特定于每个安全链接策略的设置。 有关详细信息，请参阅 [适用于 Office 365 的 Defender 中的安全附件](atp-safe-attachments.md)。
 
 #### <a name="global-settings-for-safe-attachments"></a>安全附件的全局设置
 
@@ -260,16 +260,16 @@ Office 365 中的安全附件包括与安全附件策略无关系的全局设置
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP** <br/><br/> _EnableATPForSPOTeamsODB_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`||
-|**打开 Office 客户端的安全文档**<bt/><br/> _EnableSafeDocs_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置仅适用于 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证。 有关详细信息，请参阅 [Office 365 高级威胁防护中的安全文档](safe-docs.md)。|
+|**打开 Office 客户端的安全文档**<bt/><br/> _EnableSafeDocs_|打开 <br/><br/> `$true`|打开 <br/><br/> `$true`|此设置仅适用于 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的安全文档](safe-docs.md)。|
 |**允许用户在受保护的视图中单击，即使安全文档识别为恶意文件也是如此**<bt/><br/> _AllowSafeDocsOpen_|关闭 <br/><br/> `$false`|关闭 <br/><br/> `$false`|此设置与安全文档相关。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>安全附件策略设置
 
-若要配置这些设置，请参阅 [在 Office 365 ATP 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)。
+若要配置这些设置，请参阅 [在 Defender For Office 365 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
 在 PowerShell 中，可对这些设置使用 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlet。
 
@@ -278,7 +278,7 @@ Office 365 中的安全附件包括与安全附件策略无关系的全局设置
 
 ****
 
-|安全功能名称|默认值|标准|全|评论|
+|安全功能名称|默认|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**安全附件未知的恶意软件响应** <br/><br/> _操作_|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`|阻止 <br/><br/> `Block`||
 |**在检测时重定向附件** ： **启用重定向** <br/><br/> _重定向_ <br/><br/> _RedirectAddress_|关闭，且未指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 无|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|，并指定电子邮件地址。 <br/><br/> `$true` <br/><br/> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|
@@ -291,6 +291,6 @@ Office 365 中的安全附件包括与安全附件策略无关系的全局设置
 
 - 管理员和用户可以提交误报 (正常的电子邮件，并将其标记为错误) 和漏报 (错误的电子邮件) Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
-- 使用这些链接可获取有关如何 **设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及 **配置** [Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 不要忘记 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中的有用说明。
+- 使用以下链接可了解有关如何 **设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及如何 **配置** [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 不要忘记 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中的有用说明。
 
-- 可以在以下位置找到 **适用于 Windows 的安全基准** ： [在哪里可以获取安全基准？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)对于 GPO/内部部署选项，并 [使用安全基准在 intune 中](https://docs.microsoft.com/intune/protect/security-baselines)为基于 Intune 的安全性配置 Windows 10 设备。 最后，在 Microsoft defender 的高级威胁防护 (ATP) 和 Microsoft Intune 安全基准之间进行比较，以 [比较 Microsoft DEFENDER ATP 和 Windows intune 安全基准](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)。
+- 可以在以下位置找到 **适用于 Windows 的安全基准** ： [在哪里可以获取安全基准？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)对于 GPO/内部部署选项，并 [使用安全基准在 intune 中](https://docs.microsoft.com/intune/protect/security-baselines)为基于 Intune 的安全性配置 Windows 10 设备。 最后，比较 microsoft defender [For endpoint 和 Windows intune 安全基准](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)可在 microsoft Intune for Endpoint 和 microsoft intune 安全基准之间进行比较。

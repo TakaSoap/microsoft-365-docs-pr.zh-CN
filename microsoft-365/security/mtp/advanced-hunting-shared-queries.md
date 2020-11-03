@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 威胁防护高级搜寻的共享查询
+title: 在 Microsoft 365 Defender 高级搜寻中使用共享查询
 description: 使用预定义的以及共享的查询快速启动威胁搜寻。 与公众或组织共享查询。
 keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、自定义检测、架构、kusto、github 存储库、我的查询、共享查询
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429679"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844076"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>使用高级搜寻的共享查询
 
@@ -32,7 +32,7 @@ ms.locfileid: "48429679"
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 
 
@@ -45,7 +45,7 @@ ms.locfileid: "48429679"
 
 1. 创建或修改查询。 
 
-2. 单击“保存查询”下拉按钮，并选择“另存为”。********
+2. 单击“保存查询”下拉按钮，并选择“另存为”。
     
 3. 输入查询的名称。 
 
@@ -55,17 +55,17 @@ ms.locfileid: "48429679"
     - **共享查询** — 与组织内的所有用户共享
     - **我的查询** — 只有你可以访问
     
-5. 选择“保存”****。 
+5. 选择“保存”。 
 
 ## <a name="delete-or-rename-a-query"></a>删除或重命名查询
 1. 右键单击要重命名或删除的查询。
 
     ![删除查询的图像](../../media/advanced_hunting_delete_rename.png)
 
-2. 选择“删除”，并确认删除。**** 或者选择“重命名”，并为查询提供新名称。****
+2. 选择“删除”，并确认删除。 或者选择“重命名”，并为查询提供新名称。
 
 ## <a name="create-a-direct-link-to-a-query"></a>创建指向查询的直接链接
-若要生成直接在高级搜寻查询编辑器中打开您的查询的链接，请先完成查询，然后选择 " **共享链接**"。
+若要生成直接在高级搜寻查询编辑器中打开您的查询的链接，请先完成查询，然后选择 " **共享链接** "。
 
 ## <a name="access-queries-in-the-github-repository"></a>访问 GitHub 存储库中的查询  
 Microsoft 安全研究人员定期在[指定的 GitHub 公共存储库](https://aka.ms/hunting-queries)中共享高级搜寻查询。 此存储库可自行参与。 [免费加入 GitHub](https://github.com/)，即可参与。

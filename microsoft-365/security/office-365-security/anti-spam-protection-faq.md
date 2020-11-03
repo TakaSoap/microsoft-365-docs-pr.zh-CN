@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以在 Exchange Online Protection (EOP) 中查看有关反垃圾邮件保护的常见问题和解答。
-ms.openlocfilehash: 2bf2808cc0da6124a0377b52dc46f88b2c8a69e0
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445731"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844460"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾邮件保护常见问题解答
 
@@ -59,7 +59,7 @@ ms.locfileid: "48445731"
 
 有关详细信息，请参阅下列主题：
 
-[EOP 和 Office 365 ATP 安全性的建议设置](recommended-settings-for-eop-and-office365-atp.md)
+[EOP 和 Microsoft Defender for Office 365 安全性的建议设置](recommended-settings-for-eop-and-office365-atp.md)
 
 [在 EOP 中配置连接筛选](configure-the-connection-filter-policy.md)
 
@@ -73,7 +73,7 @@ ms.locfileid: "48445731"
 
 ## <a name="is-bulk-email-filtering-automatically-enabled"></a>批量电子邮件筛选是否自动启用？
 
-是的。 有关批量电子邮件的详细信息，请参阅 [垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+是。 有关批量电子邮件的详细信息，请参阅 [垃圾邮件和批量电子邮件之间有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
 ## <a name="does-the-service-provide-url-filtering"></a>该服务是否提供 URL 筛选？
 
@@ -103,15 +103,15 @@ Exchange Online 客户： [Exchange online 中的监视、报告和邮件跟踪]
 
 ## <a name="can-i-use-a-third-party-anti-spam-and-anti-malware-provider-in-conjunction-with-exchange-online"></a>是否可以将第三方反垃圾邮件和反恶意软件提供程序与 Exchange Online 结合使用？
 
-是的。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意识到有合法的商业原因将电子邮件路由到 Microsoft 之前的某个位置。
+是。 尽管我们建议您将 MX 记录指向 Microsoft，但我们意识到有合法的商业原因将电子邮件路由到 Microsoft 之前的某个位置。
 
-- **入站**：更改您的 MX 记录以指向第三方提供程序，然后将邮件重定向到 EOP 以进行其他处理。 有关详细信息，请参阅 [针对 Exchange Online 中的连接器增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- **入站** ：更改您的 MX 记录以指向第三方提供程序，然后将邮件重定向到 EOP 以进行其他处理。 有关详细信息，请参阅 [针对 Exchange Online 中的连接器增强筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- **出站**：配置从 Microsoft 365 到目标第三方提供程序的智能主机路由。
+- **出站** ：配置从 Microsoft 365 到目标第三方提供程序的智能主机路由。
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Microsoft 是否拥有任何有关如何保护自己免受网络钓鱼诈骗之害的文档？
 
-是的。 有关详细信息，请参阅 [在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
+是。 有关详细信息，请参阅 [在 internet 上保护你的隐私](https://support.microsoft.com/help/4091455)
 
 ## <a name="are-spam-and-malware-messages-being-investigated-as-to-who-sent-them-or-being-transferred-to-law-enforcement-entities"></a>垃圾邮件和恶意软件邮件是由谁发送或转移到执法部门进行调查的？
 

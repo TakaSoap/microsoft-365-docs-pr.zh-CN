@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威胁防护 REST API 的 Hello World 版
-description: 了解如何创建应用程序并使用令牌访问 Microsoft 威胁防护 Api
+title: Microsoft 365 Defender REST API 的 Hello World 版
+description: 了解如何创建应用程序并使用令牌访问 Microsoft 365 Defender Api
 keywords: 应用程序、令牌、访问、aad、应用程序、应用程序注册、powershell、脚本、全局管理员、权限
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cdf3f6a0c007763d2772233b1a299d59c931b2e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201323"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844040"
 ---
-# <a name="hello-world-for-microsoft-threat-protection-rest-api"></a>Microsoft 威胁防护 REST API 的 Hello World 版 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World 版 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -50,24 +50,24 @@ ms.locfileid: "48201323"
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步骤 1-在 Azure Active Directory 中创建应用
 
-1. 使用**全局管理员**用户登录到[Azure](https://portal.azure.com) 。
+1. 使用 **全局管理员** 用户登录到 [Azure](https://portal.azure.com) 。
 
-2. 导航到**Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册** 。 
 
    ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
 
-3. 在 "注册" 表单中，选择应用程序的名称，然后选择 " **注册**"。
+3. 在 "注册" 表单中，选择应用程序的名称，然后选择 " **注册** "。
 
-4. 允许您的应用程序访问 Microsoft Defender ATP 并将其分配为 " **读取所有事件** " 权限：
+4. 允许应用程序访问 Microsoft Defender for Endpoint 并将其分配为 " **读取所有事件** " 权限：
 
-   - 在应用程序页上，选择 " **API 权限**  >  **Add permission**  >  **" "添加我的组织使用的权限 api"** > 键入**microsoft 威胁防护**并选择 " **microsoft 威胁防护**"。
+   - 在应用程序页上，选择 " **API 权限**  >  **Add permission**  >  **" "添加我的组织使用的权限 api"** > 键入 **microsoft 365 defender** 并在 **microsoft 365 defender** 上选择。
 
    >[!NOTE]
-   >Microsoft 威胁防护不会出现在原始列表中。 您需要先在文本框中写入其名称，才能看到它的显示。
+   >Microsoft 365 Defender 不会显示在原始列表中。 您需要先在文本框中写入其名称，才能看到它的显示。
 
    ![API 访问和 API 选择的图像](../../media/apis-in-my-org-tab.PNG)
 
-   - 选择 "**应用程序权限**  >  **事件"。读取。所有**> 选择 "**添加权限**"
+   - 选择 " **应用程序权限**  >  **事件"。读取。所有** > 选择 " **添加权限** "
 
    ![API 访问和 API 选择的图像](../../media/request-api-permissions.PNG)
 
@@ -78,7 +78,7 @@ ms.locfileid: "48201323"
 
      - 若要确定所需的权限，请查看您想要调用的 API 中的 " **权限** " 部分。
 
-5. 选择 "**授予管理员同意**"
+5. 选择 " **授予管理员同意** "
 
     - >[!NOTE]
       > 每次添加权限时，您都必须选择 " **授予许可** " 以使新权限生效。
@@ -87,10 +87,10 @@ ms.locfileid: "48201323"
 
 6. 向应用程序添加密码。
 
-    - 选择 " **证书" & 密码**，将 "说明" 添加到密码，然后选择 " **添加**"。
+    - 选择 " **证书" & 密码** ，将 "说明" 添加到密码，然后选择 " **添加** "。
 
     >[!IMPORTANT]
-    > 选择 " **添加**" 后， **复制生成的机密值**。 你不能在离开后检索！
+    > 选择 " **添加** " 后， **复制生成的机密值** 。 你不能在离开后检索！
 
     ![创建应用程序密钥的图像](../../media/webapp-create-key2.png)
 
@@ -105,8 +105,8 @@ ms.locfileid: "48201323"
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>步骤 2-使用应用程序获取令牌，并使用此令牌访问 API。
 
--   将下面的脚本复制到 PowerShell ISE 或文本编辑器，并将其另存为 "**Get-Token.ps1**"
--   运行此脚本将生成一个令牌，并将其保存到名称为 "**Latest-token.txt**" 下的工作文件夹中。
+-   将下面的脚本复制到 PowerShell ISE 或文本编辑器，并将其另存为 " **Get-Token.ps1** "
+-   运行此脚本将生成一个令牌，并将其保存到名称为 " **Latest-token.txt** " 下的工作文件夹中。
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -143,7 +143,7 @@ return $token
 ### <a name="lets-get-the-incidents"></a>允许你获取事件！
 
 -   下面的脚本将使用 **Get-Token.ps1** 访问 API，并将在过去的48小时内获得最后更新的事件。
--   将此脚本保存在保存以前的脚本 **Get-Token.ps1**的同一文件夹中。 
+-   将此脚本保存在保存以前的脚本 **Get-Token.ps1** 的同一文件夹中。 
 -   脚本中包含数据的 json 文件与脚本位于同一文件夹中。
 
 ```
@@ -188,6 +188,6 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 
 ## <a name="related-topic"></a>相关主题
-- [访问 Microsoft 威胁防护 Api](api-access.md)
-- [使用应用程序上下文访问 Microsoft 威胁防护](api-create-app-web.md)
-- [使用用户上下文访问 Microsoft 威胁防护](api-create-app-user-context.md)
+- [访问 Microsoft 365 Defender Api](api-access.md)
+- [使用应用程序上下文访问 Microsoft 365 Defender](api-create-app-web.md)
+- [使用用户上下文访问 Microsoft 365 Defender](api-create-app-user-context.md)

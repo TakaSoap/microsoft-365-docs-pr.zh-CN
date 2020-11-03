@@ -16,13 +16,13 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解 Office 365 高级威胁防护计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 1df963a77054e1adc9a290e976be5998d6298436
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 了解 Microsoft Defender for Office 365 计划2中的自动调查和响应功能中的补救措施。
+ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446623"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844556"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>查看 Office 365 中的自动调查后的挂起或已完成的修正操作
 
@@ -41,7 +41,7 @@ ms.locfileid: "48446623"
 
 1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规性中心。
 
-2. 转到**威胁管理**  >  **调查**。
+2. 转到 **威胁管理**  >  **调查** 。
 
 3. 在调查列表中，选择 " **ID** " 列中的项目。 
 

@@ -13,20 +13,20 @@ MS.collection: ''
 search.appverid: MET150
 description: 威胁补救措施
 appliesto:
-- Microsoft Threat Protection
-ms.openlocfilehash: a7c1f6f89f5414f5fc6ef8dd59d2894195e75f7f
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+- Microsoft 365 Defender
+ms.openlocfilehash: af34b171cb213836d47edb2fb2905fb75341b02f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774055"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845596"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-修正是指对威胁采取规定的操作。 发送到您的组织的恶意电子邮件可由系统清除)  (，也可通过 " *移动到收件箱* "、"移动到 *垃圾* 邮件"、"移动到 *已删除邮件* "、"删除项目"、" *软删除* " 或 " *硬删除* " 等补救操作进行清除。 Office 高级威胁防护 (Office ATP) P2/E5 使安全团队能够通过手动和自动调查来修正电子邮件和协作功能中的威胁。
+修正是指对威胁采取规定的操作。 发送到您的组织的恶意电子邮件可由系统清除)  (，也可通过 " *移动到收件箱* "、"移动到 *垃圾* 邮件"、"移动到 *已删除邮件* "、"删除项目"、" *软删除* " 或 " *硬删除* " 等补救操作进行清除。 Microsoft Defender for Office 365 P2/E5 使安全团队能够通过手动和自动调查来修正电子邮件和协作功能中的威胁。
 
 > [!NOTE]
 > 若要修正恶意电子邮件，安全团队需要分配给他们的 *搜索和清除* 角色。 角色分配通过安全与合规中心中的权限完成。

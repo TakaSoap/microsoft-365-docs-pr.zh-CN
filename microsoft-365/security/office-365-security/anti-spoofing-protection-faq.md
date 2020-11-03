@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以查看有关 Exchange Online Protection (EOP) 中的 "反欺骗" 保护的常见问题和解答。
-ms.openlocfilehash: 3b1a30541c46383284203eee61d8b6679ac3b493
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a5b0484e41e3df7a7b6ad16e69a4f7062b19b554
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445707"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844388"
 ---
 # <a name="anti-spoofing-protection-faq"></a>防欺骗保护常见问题
 
@@ -45,11 +45,9 @@ Microsoft 认为，继续允许未经身份验证的入站电子邮件的风险�
 
 Microsoft 本身在将新的电子邮件身份验证要求部署到客户之前，先将其在几周内采纳。 虽然最初出现了中断，但此现象逐渐减少了。
 
-## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-atp"></a>是否在没有 ATP 的情况下，Microsoft 365 客户可以使用欺骗版智能？
+## <a name="is-spoof-intelligence-available-to-microsoft-365-customers-without-defender-for-office-365"></a>在没有 Defender for Office 365 的情况下，Microsoft 365 客户是否可以使用欺骗版智能？
 
-是的。 从10月2018起，欺骗智能可供具有邮箱的 Exchange Online 中的所有组织和独立 EOP 组织（无 Exchange Online 邮箱）。
-
-反欺骗技术最初仅在 Office 365 高级威胁防护中可用。 例如，Microsoft E5 订阅或 ATP 附加项。
+是。 从10月2018起，欺骗智能可供具有邮箱的 Exchange Online 中的所有组织和独立 EOP 组织（无 Exchange Online 邮箱）。
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 报告垃圾邮件或非垃圾邮件？
 
@@ -73,12 +71,12 @@ Microsoft 本身在将新的电子邮件身份验证要求部署到客户之前�
 
 几乎所有大型电子邮件服务都实现传统 SPF、DKIM 和 DMARC 检查。 有些服务有其他更严格的检查，但并不像 EOP 那样阻止未经过身份验证的电子邮件，并将其视为欺骗性的邮件。 但是，该行业越来越多地意识到有关未经身份验证的电子邮件的问题，尤其是由于网络钓鱼问题而引起的。
 
-## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>我是否仍然需要启用高级垃圾邮件筛选器设置 "SPF record： hard fail" (_MarkAsSpamSpfRecordHardFail_) 如果我启用反欺骗？
+## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>我是否仍然需要启用高级垃圾邮件筛选器设置 "SPF record： hard fail" ( _MarkAsSpamSpfRecordHardFail_ ) 如果我启用反欺骗？
 
-否。 此 ASF 设置不再是必需的。 反欺骗保护考虑两种 SPF 硬失败和一组更广泛的条件。 如果已启用防欺骗和“SPF 记录:硬故障”****(_MarkAsSpamSpfRecordHardFail_)，可能会收到更多误报。
+不正确。 此 ASF 设置不再是必需的。 反欺骗保护考虑两种 SPF 硬失败和一组更广泛的条件。 如果已启用防欺骗和“SPF 记录:硬故障”( _MarkAsSpamSpfRecordHardFail_ )，可能会收到更多误报。
 
 我们建议您禁用此功能，因为它几乎没有额外的优势来检测垃圾邮件或网络钓鱼邮件，而是生成大多数误报。 有关详细信息，请参阅 [EOP 中的高级垃圾邮件筛选器 (ASF) 设置](advanced-spam-filtering-asf-options.md)。
 
 ## <a name="does-sender-rewriting-scheme-help-fix-forwarded-email"></a>发件人重写方案是否有助于修复转发的电子邮件？
 
-SRS 仅部分修复了转发电子邮件的问题。 通过重写 SMTP **邮件**，SRS 可以确保转发的邮件在下一个目的地传递 SPF。 但是，由于反欺骗是基于 "发件人**地址" 或 "DKIM** " 签名域 (中的 "**发件**人地址" 或其他信号) ，因此不能阻止将 SRS 转发的电子邮件标记为欺骗。
+SRS 仅部分修复了转发电子邮件的问题。 通过重写 SMTP **邮件** ，SRS 可以确保转发的邮件在下一个目的地传递 SPF。 但是，由于反欺骗是基于 "发件人 **地址" 或 "DKIM** " 签名域 (中的 " **发件** 人地址" 或其他信号) ，因此不能阻止将 SRS 转发的电子邮件标记为欺骗。

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理员可以了解如何使用隔离标记来控制用户能够对其隔离邮件执行的操作。
-ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
-ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
+ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819736"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845692"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
@@ -72,7 +72,7 @@ EOP 传统上允许或阻止了 [隔离](find-and-release-quarantined-messages-a
 
 2. 在 " **隔离标记** " 页上，选择 " **添加自定义标记** "。
 
-3. 将打开 " **新建标记** " 向导。 在 " **标记名称** " 页上，在 " **标记名称** " 字段中输入一个简短但唯一的名称。 在后面的步骤中，您需要确定并按名称选择标记。 完成后，单击“下一步”  。
+3. 将打开 " **新建标记** " 向导。 在 " **标记名称** " 页上，在 " **标记名称** " 字段中输入一个简短但唯一的名称。 在后面的步骤中，您需要确定并按名称选择标记。 完成后，单击“下一步”。
 
 4. 在 " **收件人邮件访问** " 页上，选择下列值之一：
    - **禁止访问**
@@ -96,7 +96,7 @@ EOP 传统上允许或阻止了 [隔离](find-and-release-quarantined-messages-a
 
    这些权限以及它们对隔离邮件和最终用户垃圾邮件通知中的影响将在本文后面的 [隔离标记权限详细信息](#quarantine-tag-permission-details) 部分中进行介绍。
 
-   完成后，单击“下一步”  。
+   完成后，单击“下一步”。
 
 5. 在出现的 **摘要** 页上，查看您的设置。 您可以在每个设置上单击 " **编辑** " 以修改它。
 
@@ -229,7 +229,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 |功能|是否支持隔离标记？|使用的默认隔离标记|
 |---|:---:|---|
 |[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**垃圾邮件** ( _SpamAction_ ) </li><li>**高可信度垃圾邮件** ( _HighConfidenceSpamAction_ ) </li><li>**网络钓鱼电子邮件** ( _PhishSpamAction_ ) </li><li>**高可信度网络钓鱼电子邮件** ( _HighConfidencePhishAction_ ) </li><li>**批量电子邮件** ( _BulkSpamAction_ ) </li></ul>|是|<ul><li>DefaultSpamTag (完全访问) </li><li>DefaultHighConfSpamTag (完全访问) </li><li>DefaultPhishTag (完全访问) </li><li>DefaultHighConfPhishTag (无访问权限) </li><li>DefaultBulkTag (完全访问) </li></ul>
-|反网络钓鱼策略： <ul><li> ( _AuthenticationFailAction_ ) 的 [欺骗性智能保护](set-up-anti-phishing-policies.md#spoof-settings)</li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)：<sup>\*</sup> <ul><li>**如果模拟用户发送电子邮件** ( _TargetedUserProtectionAction_ ) </li><li>**如果由模拟域发送的电子邮件** ( _TargetedDomainProtectionAction_ ) </li><li>**邮箱智能** \>**如果模拟用户发送电子邮件** ( _MailboxIntelligenceProtectionAction_ ) </li></ul></li></ul></ul>|否|不适用|
+|反网络钓鱼策略： <ul><li> ( _AuthenticationFailAction_ ) 的 [欺骗性智能保护](set-up-anti-phishing-policies.md#spoof-settings)</li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果模拟用户发送电子邮件** ( _TargetedUserProtectionAction_ ) </li><li>**如果由模拟域发送的电子邮件** ( _TargetedDomainProtectionAction_ ) </li><li>**邮箱智能** \>**如果模拟用户发送电子邮件** ( _MailboxIntelligenceProtectionAction_ ) </li></ul></li></ul></ul>|否|不适用|
 |[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|否|不适用|
 |[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)|否|不适用|
 |[邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也称为传输规则) 与操作：将 **邮件传递到托管隔离** ( _隔离_ ) 。|否|不适用|
@@ -255,7 +255,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
   
    ![反垃圾邮件策略中的隔离标记选择](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成时，请单击“保存”  。
+5. 完成时，请单击“保存”。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾邮件策略中分配隔离标记
 

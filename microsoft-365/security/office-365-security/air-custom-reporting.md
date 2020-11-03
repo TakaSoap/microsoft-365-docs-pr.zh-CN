@@ -20,12 +20,12 @@ description: 了解如何将自动调查和响应与自定义或第三方报告�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 9bc5de44700b7f1b7207f8fae002adcb55d32841
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8b08b441ca468b5efa1c4c003c636de2a43b3e7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446679"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844542"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将管理活动 API 用于自定义或第三方报告解决方案
 
@@ -43,7 +43,7 @@ ms.locfileid: "48446679"
 |[Office 365 管理 API 概述](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview)|Office 365 管理活动 API 提供了有关来自 Microsoft 365 和 Azure Active Directory 活动日志的各种用户、管理员、系统和策略操作以及事件的信息。|
 |[Office 365 管理 API 入门](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)|Office 365 管理 API 使用 Azure AD 为应用程序提供身份验证服务，以访问 Microsoft 365 数据。 请按照本文中的步骤进行设置。|
 |[Office 365 管理活动 API 参考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)|您可以使用 Office 365 管理活动 API，从 Microsoft 365 和 Azure AD 活动日志中检索有关用户、管理员、系统和策略操作以及事件的信息。 阅读本文以了解有关如何工作的详细信息。|
-|[Office 365 管理活动 API 架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|获取 [常见架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) 和 [office 365 ATP 以及威胁调查和响应架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) 的概述，以了解通过 OFFICE 365 管理活动 API 提供的特定类型的数据。|
+|[Office 365 管理活动 API 架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema)|获取 [常见架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) 和适用于 office 365 的 Defender 的概述以及 [威胁调查和响应架构](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) ，以了解通过 OFFICE 365 管理活动 API 提供的特定类型的数据。|
 |
 
 ## <a name="see-also"></a>另请参阅

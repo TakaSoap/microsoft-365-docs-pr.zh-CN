@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 通过 Microsoft 365 中的记录管理，你可以将保留计划应用到文件计划中，以管理保留、记录声明和处置。
-ms.openlocfilehash: e6e72a14d0d3e22823c8341145f64721831586f9
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755561"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830523"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>了解 Microsoft 365 中的记录管理
 
@@ -36,19 +36,19 @@ ms.locfileid: "48755561"
 
 请使用以下功能支持 Microsoft 365 中的记录管理解决方案：
 
-- **将内容标记为记录**。 创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
+- **将内容标记为记录** 。 创建并配置将内容标记为[记录](#records)的保留标签，该类标签随后可由用户应用，或通过标识敏感信息、关键字或内容类型自动应用。
 
-- **使用文件计划迁移和管理保留要求**。 通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
+- **使用文件计划迁移和管理保留要求** 。 通过使用[文件计划](file-plan-manager.md)，可将现有保留计划引入 Microsoft 365，或者构建一个新的保留计划来增强管理功能。
 
-- **使用保留标签配置保留和删除设置**。 根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的[保留标签](retention.md#retention-labels)。
+- **使用保留标签配置保留和删除设置** 。 根据各种因素（包括上次修改日期或上次创建日期）配置有关保留期和操作的[保留标签](retention.md#retention-labels)。
 
-- 使用[基于事件的保留](event-driven-retention.md)，**在事件发生时启动不同的保留期**。
+- 使用 [基于事件的保留](event-driven-retention.md)， **在事件发生时启动不同的保留期** 。
 
-- 使用[处置评审](disposition.md#disposition-reviews)和[记录删除](disposition.md#disposition-of-records)证明**审核并验证处置**。
+- 使用 [处置评审](disposition.md#disposition-reviews)和 [记录删除](disposition.md#disposition-of-records)证明 **审核并验证处置** 。
 
-- 使用[导出选项](disposition.md#filter-and-export-the-views)**导出有关所有已处置项的信息**。
+- 使用 [导出选项](disposition.md#filter-and-export-the-views)**导出有关所有已处置项的信息** 。
 
-- 为组织中的记录管理器功能**设置特定权限**，以便[具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
+- 为组织中的记录管理器功能 **设置特定权限** ，以便 [具有正确的访问权限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 借助这些功能，你可以将组织的保留计划和要求合并到用以管理保留、记录声明和处置的记录管理解决方案中，从而支持完整的内容生命周期。
 
@@ -64,7 +64,7 @@ ms.locfileid: "48755561"
 
 - 保留期结束时将其删除时，拥有处置证明。
 
-使用[保留标签](retention.md#retention-labels)将内容标记为**记录**或**合规性记录** （当前处于预览中）。 这两者之间的差异将在下一节中介绍。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录或合规性记录的内容。
+使用 [保留标签](retention.md#retention-labels)将内容标记为 **记录** 或 **管理记录** 。 这两者之间的差异将在下一节中介绍。 你可以发布这些标签，以便用户和管理员可以将其应用于内容，或自动应用这些标签到你想标记为记录或合规性记录的内容。
 
 通过使用保留标签来声明记录，可在 Microsoft 365 环境中实现单一一致的记录管理策略。
 
@@ -75,7 +75,7 @@ ms.locfileid: "48755561"
 标准保留标签具有保留设置和操作，但不会将内容标记为记录或合规性记录。
 
 >[!NOTE] 
-> 为确保完整性，表格包括已锁定和已解锁的记录列，适用于 SharePoint 和 OneDrive，但不适用于 Exchange。 锁定和解锁记录的功能使用 Exchange 项目不支持的[记录版本控制](record-versioning.md)功能。 因此，对于标记为记录的所有 Exchange 项目，该行为会映射到**记录 - 已锁定**列，而**记录 - 已解锁列**则不相关。
+> 为确保完整性，表格包括已锁定和已解锁的记录列，适用于 SharePoint 和 OneDrive，但不适用于 Exchange。 锁定和解锁记录的功能使用 Exchange 项目不支持的[记录版本控制](record-versioning.md)功能。 因此，对于标记为记录的所有 Exchange 项目，该行为会映射到 **记录 - 已锁定** 列，而 **记录 - 已解锁列** 则不相关。
 
 
 |操作| 保留标签 |记录 - 已锁定| 记录 - 已解锁| 合规性记录 |

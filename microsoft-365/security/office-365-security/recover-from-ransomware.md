@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: c9a8e1035e00509f5c57b8699966544b60b7f9c1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430605"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845536"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
@@ -70,7 +70,7 @@ ms.locfileid: "48430605"
 
 在完成上一步以从环境中删除勒索软件负载时 (这将阻止勒索软件加密或删除文件) ，可以使用 windows 10 中的 Windows 10 和 Windows 8.1 中的 [文件历史记录](https://support.microsoft.com/help/17128) 或 windows 7 中的系统保护尝试恢复您的本地文件和文件夹。
 
-**注意**：
+**注意** ：
 
 - 有些勒索软件还将加密或删除备份版本，因此不能使用文件历史记录或系统保护来还原文件。 如果发生这种情况，您需要在不受勒索软件或 OneDrive 影响的外部驱动器或设备上使用备份，如下一节中所述。
 
@@ -82,7 +82,7 @@ ms.locfileid: "48430605"
 
 ## <a name="step-6-recover-deleted-email"></a>步骤6：恢复已删除的电子邮件
 
-在少数情况下，勒索软件删除了所有电子邮件，您可能可以恢复已删除的项目。 有关更多信息，请参阅：
+在少数情况下，勒索软件删除了所有电子邮件，您可能可以恢复已删除的项目。 有关详细信息，请参阅：
 
 - [恢复用户邮箱中的已删除邮件](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -142,7 +142,7 @@ ms.locfileid: "48430605"
 
 - [启用或禁用 Office 文件中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [EOP 和 Office 365 ATP 安全性的建议设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [EOP 和 Microsoft Defender for Office 365 安全性的建议设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 
 - [值得升级： Windows 10 上的下一代安全性证明可在2017中对勒索软件发作进行恢复](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

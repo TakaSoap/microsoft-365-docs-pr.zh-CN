@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 5d4123acaf3c9891f9aeb8028173f3071c260935
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+ms.openlocfilehash: 1ca1dc5e740aa5aa03a4c8b0c138eadb55c08a20
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806756"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844640"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -74,7 +74,7 @@ ms.locfileid: "48806756"
 
 4. 如果由于提交策略而绕过筛选器，你将看到有关该策略的信息。
 
-   如果筛选器由于一个或多个策略而被绕过，扫描将在几分钟内完成。 您将通过单击状态链接来查看有关提交的其他信息。 这包括策略检查结果和重新扫描判定结果。 注意这不会再次通过 Office 365 ATP 完全筛选堆栈运行电子邮件，但会根据邮件、URL 或文件的某些属性运行部分重新扫描。
+   如果筛选器由于一个或多个策略而被绕过，扫描将在几分钟内完成。 您将通过单击状态链接来查看有关提交的其他信息。 这包括策略检查结果和重新扫描判定结果。 注意这不会再次通过 Microsoft Defender for Office 365 完全筛选堆栈运行电子邮件，但会根据邮件、URL 或文件的某些属性运行部分重新扫描。
 
 5. 完成后，单击 " **提交** " 按钮。
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威胁防护 Api 许可证和使用条款
-description: Microsoft 威胁防护中的 Api 的许可证和使用条款的说明
+title: Microsoft 365 Defender Api 许可证和使用条款
+description: Microsoft 365 Defender 中用于 Api 的许可证和使用条款的说明
 keywords: api、api、许可证、术语、api、法律、通知、行为准则
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d76992108fb3cda82bd9ad9886a2886f70695788
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203667"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844892"
 ---
-#  <a name="microsoft-threat-protection-apis-license-and-terms-of-use"></a>Microsoft 威胁防护 Api 许可证和使用条款
+#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender Api 许可证和使用条款
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -39,7 +39,7 @@ ms.locfileid: "48203667"
 
 ## <a name="apis"></a>API
 
- Microsoft 的威胁防护 Api 受 [MICROSOFT API 许可证和使用条款的](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)制约。
+ Microsoft 365 Defender Api 由 [MICROSOFT API 许可证和使用条款](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)进行管理。
 
 ### <a name="throttling-limits"></a>节流限制
 

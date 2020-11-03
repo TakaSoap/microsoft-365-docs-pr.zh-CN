@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c3786a6a9bf93b3aaf2970d97fd57cc225e2ee8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 65721f6ae43819a36adf664ba0268b791059a965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398677"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843178"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行动计划 - 前 30 天、前 90 天以及之后的首要行动
 
@@ -55,7 +55,7 @@ GDPR 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或
 |**区域**|**Tasks**|
 |:-----|:-----|
 | **使用 Microsoft 365 数据管理和合规性功能开始推行合规性要求。** |* 使用 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的 [Microsoft 合规性管理器](compliance-manager.md)来管理 GDPR 合规性。<br>* 通过适用于 Exchange 电子邮件、SharePoint 网站、OneDrive for Business 网站和 Microsoft 365 组的分类架构和相关 Office 365 标签，帮助用户根据 GDPR 规定来标识和分类个人数据。 请参阅[符合 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)。|
-| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)。<br>* 将 [Windows Defender 高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (ATP) 部署到所有桌面，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)和[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Office 365 高级威胁防护 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和包含恶意链接和附件的 Office 文档。|
+| **使用 Microsoft 365 安全功能来防范数据泄露并保护个人数据。** |* 通过为所有用户帐户启用[多重身份验证](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)，以及为所有应用启用[新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)，改进 Microsoft 云中管理员和最终用户的身份验证。 有关建议的策略配置，请参阅[标识和设备访问配置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)。<br>* 在所有台式机上部署 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)，以防范恶意代码、防止数据泄露并作出响应。<br>* 为所有 Exchange 邮箱启用[审核日志](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)和[邮箱审核](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing)，以监视潜在恶意活动，并启用数据泄露取证分析。<br>* 配置、测试和部署 [Office 365 数据丢失防护 (DLP) 策略](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)，以标识、监视和[自动保护](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)文档和电子邮件中的超过 80 种常见敏感数据类型，包括财务、医疗和个人身份信息。<br>* 实施 [Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，以帮助防范最常见的攻击媒介，包括钓鱼电子邮件和含有恶意链接和附件的 Office 文档。|
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>90 天后 — 持续安全、数据管理和报告
 

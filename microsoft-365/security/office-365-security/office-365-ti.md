@@ -1,5 +1,5 @@
 ---
-title: 威胁调查 & 响应功能-Office 365 ATP 计划2
+title: 威胁调查 & 响应功能-Microsoft Defender for Office 365 计划2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: 了解 Office 365 高级威胁防护计划中的威胁调查和响应功能。
-ms.openlocfilehash: 4d51a172c3b6fb8641648ecd7a33e320b0a42b24
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+description: 了解 Microsoft Defender for Office 365 计划中的威胁调查和响应功能。
+ms.openlocfilehash: 6dba883a910306b548f1880be00ad45207da27dd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431131"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845788"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Office 365 中的威胁调查和响应功能 [高级威胁防护](office-365-atp.md) 帮助安全分析员和管理员通过以下方式保护组织的 Microsoft 365 商业用户：
+[Microsoft Defender For Office 365](office-365-atp.md)中的威胁调查和响应功能帮助安全分析员和管理员通过以下方式保护组织的 microsoft 365 商业用户：
 - 轻松识别、监控和理解 cyberattacks
 - 帮助快速解决 Exchange Online、SharePoint Online、OneDrive for Business 和 Microsoft 团队中的威胁
 - 提供有关帮助安全操作的见解和知识，以防止针对组织的 cyberattacks
@@ -56,7 +56,7 @@ Office 365 中的威胁调查和响应功能 [高级威胁防护](office-365-atp
   
 ![威胁仪表板](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-若要查看和使用此仪表板，请在安全 &amp; 合规性中心中，转到 " **威胁管理**" \> **仪表板**。
+若要查看和使用此仪表板，请在安全 &amp; 合规性中心中，转到 " **威胁管理** " \> **仪表板** 。
   
 ### <a name="threat-explorer"></a>威胁资源管理器
 
@@ -64,7 +64,7 @@ Office 365 中的威胁调查和响应功能 [高级威胁防护](office-365-atp
 
 ![威胁资源管理器](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-若要查看和使用此报告，请在安全 &amp; 合规性中心中，转到 " **威胁管理** \> **资源管理器**"。
+若要查看和使用此报告，请在安全 &amp; 合规性中心中，转到 " **威胁管理** \> **资源管理器** "。
   
 ### <a name="incidents"></a>事件
 
@@ -72,7 +72,7 @@ Office 365 中的威胁调查和响应功能 [高级威胁防护](office-365-atp
 
 ![Office 365 中的当前威胁事件列表](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-若要查看您的组织的当前事件列表，请在安全 & 合规性中心中，转到 " **威胁管理** \> **审核** \> **事件**"。
+若要查看您的组织的当前事件列表，请在安全 & 合规性中心中，转到 " **威胁管理** \> **审核** \> **事件** "。
 
 ![在安全 & 合规性中心中，选择 "威胁管理 \> 检查"](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
@@ -86,17 +86,17 @@ Office 365 中的威胁调查和响应功能 [高级威胁防护](office-365-atp
 
 ## <a name="threat-intelligence-widgets"></a>威胁智能小部件
 
-作为 Office 365 高级威胁防护计划2产品的一部分，安全分析员可以查看已知威胁的详细信息。 这有助于确定是否存在可采取的更多预防措施/步骤，以确保用户安全。
+作为 Microsoft Defender for Office 365 计划2产品的一部分，安全分析员可以查看已知威胁的详细信息。 这有助于确定是否存在可采取的更多预防措施/步骤，以确保用户安全。
 
 ![显示有关最近威胁的信息的安全趋势](../../media/11e7d40d-139b-4c56-8d52-c091c8654151.png)
 
 ## <a name="how-do-we-get-these-capabilities"></a>如何获取这些功能？
 
-Microsoft 365 在 Office 365 高级威胁防护计划2中包含，它包含在企业版 E5 中或作为特定订阅的加载项。 若要了解详细信息，请参阅 [Office 365 ATP 计划1和计划 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+Microsoft Defender for Office 365 计划2中包含 microsoft 365 威胁调查和响应功能，它包含在企业版 E5 中或作为特定订阅的加载项。 若要了解详细信息，请参阅 [适用于 Office 365 的 Defender 计划1和计划 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
 ## <a name="required-roles-and-permissions"></a>所需角色和权限
 
-Office 365 高级威胁防护使用基于角色的访问控制。 可以通过 Azure Active Directory、Microsoft 365 管理中心或 Security & 合规性中心中的某些角色分配权限。
+Microsoft Defender for Office 365 使用基于角色的访问控制。 可以通过 Azure Active Directory、Microsoft 365 管理中心或 Security & 合规性中心中的某些角色分配权限。
 
 > [!TIP]
 > 虽然某些角色（如安全管理员）可以在安全 & 合规性中心中分配，但请考虑改用 Microsoft 365 管理中心或 Azure Active Directory。 有关角色、角色组和权限的信息，请参阅以下资源：
@@ -112,8 +112,8 @@ Office 365 高级威胁防护使用基于角色的访问控制。 可以通过 A
 |使用威胁仪表板 (或新的 [安全仪表板](security-dashboard.md)) <br/> <br/>查看有关最近或当前威胁的信息|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
 |使用 [威胁资源管理器 (和实时检测) ](threat-explorer.md) 分析威胁|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
 |查看事件 (也称为调查)  <br/> 将电子邮件添加到事件|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|触发事件中的电子邮件操作 <br/> <br/> 查找和删除可疑电子邮件|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** 和 **搜索和清除** 角色<br/><br/>**全局管理员**和**安全管理员**角色可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中分配 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>必须在安全 & 合规性中心 () 中分配 **搜索和清除** 角色 [https://protection.office.com](https://protection.office.com) 。|
-|将 Office 365 高级威胁防护计划2与 Microsoft Defender 高级威胁防护集成  <br/><br/> 将 Office 365 高级威胁防护计划2与 SIEM 服务器集成|**全局管理员**或在任何 Azure Active Directory 中分配的**安全管理员**角色都 ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **外** ---<br/>在其他应用程序中分配的适当角色 (如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or SIEM server) |
+|触发事件中的电子邮件操作 <br/> <br/> 查找和删除可疑电子邮件|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** 和 **搜索和清除** 角色<br/><br/>**全局管理员** 和 **安全管理员** 角色可以在 Azure Active Directory ( [https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中分配 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>必须在安全 & 合规性中心 () 中分配 **搜索和清除** 角色 [https://protection.office.com](https://protection.office.com) 。|
+|将 Microsoft Defender for Office 365 Plan 2 与 Microsoft Defender for Endpoint 集成  <br/><br/> 将 Microsoft Defender for Office 365 Plan 2 与 SIEM 服务器集成|**全局管理员** 或在任何 Azure Active Directory 中分配的 **安全管理员** 角色都 ( [https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ( [https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **外** ---<br/>在其他应用程序中分配的适当角色 (如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or SIEM server) |
 |
 
 ## <a name="next-steps"></a>后续步骤
@@ -122,6 +122,6 @@ Office 365 高级威胁防护使用基于角色的访问控制。 可以通过 A
 
 - [查找并调查 (Office 365 威胁调查和响应提供的恶意电子邮件) ](investigate-malicious-email-that-was-delivered.md)
 
-- [集成 Office 365 威胁调查和响应与 Microsoft Defender 高级威胁防护](integrate-office-365-ti-with-wdatp.md)
+- [将 Office 365 威胁调查和响应与 Microsoft Defender for Endpoint 集成在一起](integrate-office-365-ti-with-wdatp.md)
 
 - [了解攻击模拟器](attack-simulator.md)

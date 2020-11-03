@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 43d912718ef0bcbc1162fa7a25a708f84b90e569
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 26cba70070fdb08c715ea38ca35a8ed8cd26096a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429439"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844784"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全门户和管理中心
 
@@ -39,13 +39,13 @@ ms.locfileid: "48429439"
 
 | 门户名称 | 说明 | 链接 |
 |---|---|---| 
-| Microsoft 365 安全中心 | 监视和响应威胁活动，并通过[Microsoft 威胁防护](microsoft-threat-protection.md)在你的标识、电子邮件、数据、终结点和应用中加强安全状况 | [security.microsoft.com](https://security.microsoft.com/) |
-| Microsoft Defender 安全中心 | 使用[Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)提供的功能监视和响应终结点上的威胁活动 | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
-| 安全与合规中心 | 管理 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide) 和 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 以保护您的电子邮件和协作服务，并确保符合各种数据处理法规 | [protection.office.com](https://protection.office.com) |
-| Azure 安全中心门户 | 使用 [Azure 安全中心](https://docs.microsoft.com/azure/security-center/security-center-intro) 来加强你的数据中心和云中的混合工作负载的安全状况 | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
-| Azure ATP 门户 | 使用 Active Directory 信号和[AZURE ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)识别、检测和调查高级威胁、已损坏的身份和恶意内幕活动 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
+| Microsoft 365 安全中心 | 监视和响应威胁活动，并通过[Microsoft 365 Defender](microsoft-threat-protection.md)在你的标识、电子邮件、数据、终结点和应用中加强安全状况 | [security.microsoft.com](https://security.microsoft.com/) |
+| Microsoft Defender 安全中心 | 使用[Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)提供的功能监视和响应终结点上的威胁活动 | [securitycenter.windows.com](https://securitycenter.microsoft.com/) |
+| 安全与合规中心 | 管理 [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide) 和 [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 以保护你的电子邮件和协作服务，并确保符合各种数据处理法规 | [protection.office.com](https://protection.office.com) |
+| Azure Defender * 门户 | 使用 [Azure Defender *](https://docs.microsoft.com/azure/security-center/security-center-intro) 增强你的数据中心和云中的混合工作负载的安全状况 | [portal.azure.com/#blade/Microsoft_Azure_Security](https://portal.azure.com/#blade/Microsoft_Azure_Security/SecurityMenuBlade/0) |
+| Microsoft Defender for Identity 门户 | 使用 Active Directory 信号和[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)识别、检测和调查高级威胁、已损坏的身份和恶意内幕行为 | [portal.atp.azure.com](https://portal.atp.azure.com/) |
 | 云应用安全门户 | 使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 获取丰富的可见性、控制数据旅行和完善的分析，以在云服务上识别和防御威胁 | [portal.cloudappsecurity.com](https://portal.cloudappsecurity.com/) |
-| Microsoft Defender 安全智能门户 | 获取 Microsoft Defender ATP、提交示例和探索威胁百科全书的安全智能更新 | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
+| Microsoft Defender 安全智能门户 | 获取 Microsoft Defender for Endpoint、提交示例和探索威胁百科全书的安全智能更新 | [microsoft.com/wdsi](https://microsoft.com/wdsi) |
 
 ## <a name="portals-for-other-workloads"></a>其他工作负载的门户
 

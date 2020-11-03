@@ -1,6 +1,6 @@
 ---
-title: 通过 Microsoft 威胁防护 Api 的合作伙伴访问
-description: 了解如何创建 AAD 应用程序以获取对客户的 Microsoft 威胁防护的编程访问权限
+title: 通过 Microsoft 365 Defender Api 的合作伙伴访问
+description: 了解如何创建 AAD 应用程序以获取客户对 Microsoft 365 Defender 的编程访问权限
 keywords: 合作伙伴、访问、api、多租户、同意、访问令牌、应用程序
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,42 +19,42 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ae9e5ae158c95ae52112f7bc16559559230a20e8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: eb40d5d2d82f57be225515ad0aa566038397bbbd
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203703"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844980"
 ---
-# <a name="partner-access-through-microsoft-threat-protection-apis"></a>通过 Microsoft 威胁防护 Api 的合作伙伴访问
+# <a name="partner-access-through-microsoft-365-defender-apis"></a>通过 Microsoft 365 Defender Api 的合作伙伴访问
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **适用于：**
-- Microsoft 威胁防护
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些信息与 prereleased 产品相关，在正式发布之前可能会对其进行重大修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-本页面介绍如何创建 AAD 应用程序，以获取代表客户对 Microsoft 威胁保护的编程访问权限。
+本页介绍如何创建 AAD 应用程序，以获取对客户的编程访问 Microsoft 365 Defender。
 
-Microsoft 威胁防护通过一组编程 Api 公开其大部分数据和操作。 这些 Api 将帮助您基于 Microsoft 威胁防护功能自动执行工作流和创新。 API 访问需要 OAuth 2.0 身份验证。 有关详细信息，请参阅 [OAuth 2.0 授权代码流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
+Microsoft 365 Defender 通过一组编程 Api 公开其大部分数据和操作。 这些 Api 将帮助您基于 Microsoft 365 Defender 功能自动执行工作流和创新。 API 访问需要 OAuth 2.0 身份验证。 有关详细信息，请参阅 [OAuth 2.0 授权代码流](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)。
 
 一般情况下，您需要执行以下步骤来使用 Api：
 - 创建 **多租户** AAD 应用程序。
-- 向你的应用程序授予授权 (同意) 你的应用程序访问 Microsoft 所需的威胁保护资源。
+- 为你的应用程序获取授权 (同意) 你的应用程序访问所需的 Microsoft 365 Defender 资源。
 - 使用此应用程序获取访问令牌。
-- 使用令牌访问 Microsoft 威胁防护 API。
+- 使用令牌访问 Microsoft 365 Defender API。
 
-以下步骤介绍了如何创建 AAD 应用程序，获取对 Microsoft 威胁防护的访问令牌，并验证令牌。
+以下步骤介绍了如何创建 AAD 应用程序，获取 Microsoft 365 Defender 的访问令牌并验证令牌。
 
 ## <a name="create-the-multi-tenant-app"></a>创建多租户应用程序
 
-1. 使用具有**全局管理员**角色的用户登录到你的[Azure 租户](https://portal.azure.com)。
+1. 使用具有 **全局管理员** 角色的用户登录到你的 [Azure 租户](https://portal.azure.com)。
 
-2. 导航到**Azure Active Directory**  >  **应用注册**  >  **新注册**。 
+2. 导航到 **Azure Active Directory**  >  **应用注册**  >  **新注册** 。 
 
    ![Microsoft Azure 的图像和到应用程序注册的导航](../../media/atp-azure-new-app2.png)
 
@@ -69,12 +69,12 @@ Microsoft 威胁防护通过一组编程 Api 公开其大部分数据和操作�
     ![Microsoft Azure 合作伙伴应用程序注册的映像](../../media/atp-api-new-app-partner.png)
 
 
-4. 允许应用程序访问 Microsoft 威胁防护，并为其分配完成集成所需的最少权限集。
+4. 允许应用程序访问 Microsoft 365 Defender，并为其分配完成集成所需的最少权限集。
 
-   - 在应用程序页上，单击 " **API 权限**  >  **Add permission**  >  **" "添加我的组织使用的权限 api" > "** 键入**microsoft 威胁防护**"，然后单击 " **microsoft 威胁防护**"。
+   - 在应用程序页上，单击 " **API 权限**  >  **Add permission**  >  **" "添加我的组织使用的权限 api"** > 键入 **microsoft 365 defender** ，然后单击 " **microsoft 365 defender** "。
 
    >[!NOTE]
-   >Microsoft 威胁防护不会出现在原始列表中。 您需要先在文本框中写入其名称，才能看到它的显示。
+   >Microsoft 365 Defender 不会显示在原始列表中。 您需要先在文本框中写入其名称，才能看到它的显示。
 
    ![API 访问和 API 选择的图像](../../media/apis-in-my-org-tab.PNG)
    
@@ -84,12 +84,12 @@ Microsoft 威胁防护通过一组编程 Api 公开其大部分数据和操作�
 
    在下面的示例中，我们将使用 **"读取所有事件"** 权限：
 
-   选择 "**应用程序权限**  >  **事件"。读取。所有**> 单击 "**添加权限**"
+   选择 " **应用程序权限**  >  **事件"。读取。所有** > 单击 " **添加权限** "
 
    ![API 访问和 API 选择的图像](../../media/request-api-permissions.PNG)
 
 
-5. 单击 "**授予同意**"
+5. 单击 " **授予同意** "
 
     >[!NOTE]
     >每次添加权限时，都必须单击 " **授予许可** " 以使新权限生效。
@@ -98,10 +98,10 @@ Microsoft 威胁防护通过一组编程 Api 公开其大部分数据和操作�
 
 6. 向应用程序添加密码。
 
-    - 单击 " **证书 & 密码**"，将 "说明" 添加到密码，然后单击 " **添加**"。
+    - 单击 " **证书 & 密码** "，将 "说明" 添加到密码，然后单击 " **添加** "。
 
     >[!IMPORTANT]
-    > 选择 " **添加**" 后， **复制生成的机密值**。 你不能在离开后检索！
+    > 选择 " **添加** " 后， **复制生成的机密值** 。 你不能在离开后检索！
 
     ![创建应用程序密钥的图像](../../media/webapp-create-key2.png)
 
@@ -113,7 +113,7 @@ Microsoft 威胁防护通过一组编程 Api 公开其大部分数据和操作�
 
 8. 将应用程序添加到客户的租户。
 
-    您需要在要使用的每个客户租户中批准您的应用程序。 这是因为您的应用代表客户与 Microsoft 威胁防护应用程序进行交互。
+    您需要在要使用的每个客户租户中批准您的应用程序。 这是因为您的应用程序代表客户与 Microsoft 365 Defender 应用程序进行交互。
 
     具有客户租户的 **全局管理员** 的用户需要单击许可链接并批准您的应用程序。
 
@@ -203,7 +203,7 @@ return $token
 - 打开命令窗口
 - 将 CLIENT_ID 设置为你的 Azure 应用程序 ID
 - 将 CLIENT_SECRET 设置为你的 Azure 应用程序密码
-- 将 TENANT_ID 设置为希望使用您的应用程序访问 Microsoft 威胁防护应用程序的客户的 Azure 租户 ID
+- 将 TENANT_ID 设置为希望使用应用程序访问 Microsoft 365 Defender 应用程序的客户的 Azure 租户 ID
 - 运行以下命令：
 
 ```
@@ -222,14 +222,14 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 - 将上一步中获取的令牌复制/粘贴到 [JWT](https://jwt.ms) ，以便对其进行解码
 - 验证是否获取了具有所需权限的 "roles" 声明
-- 在下面的屏幕截图中，你可以看到从应用程序获取的解码令牌，其中包含多个对 Microsoft 威胁防护的权限：
+- 在下面的屏幕截图中，你可以看到从具有多个权限的应用程序获取的已解码令牌： Microsoft 365 Defender：
 - "Tid" 声明是令牌所属的租户 ID。
 
 ![令牌验证的图像](../../media/webapp-decoded-token.png)
 
-## <a name="use-the-token-to-access-microsoft-threat-protection-api"></a>使用令牌访问 Microsoft 威胁防护 API
+## <a name="use-the-token-to-access-microsoft-365-defender-api"></a>使用令牌访问 Microsoft 365 Defender API
 
-- 选择要使用的 API。有关详细信息，请参阅 [支持的 Microsoft 威胁防护 api](api-supported.md)
+- 选择要使用的 API。有关详细信息，请参阅 [支持的 Microsoft 365 Defender api](api-supported.md)
 - 在发送到 "持有者 {令牌}" 的 Http 请求中设置授权标头 (持有者是授权方案) 
 - 令牌的过期时间为1小时 (您可以使用同一令牌发送多个请求) 
 
@@ -248,6 +248,6 @@ curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_ty
 
 ## <a name="related-topics"></a>相关主题 
 
-- [访问 Microsoft 威胁防护 Api](api-access.md)
-- [使用应用程序上下文访问 Microsoft 威胁防护](api-create-app-web.md)
-- [使用用户上下文访问 Microsoft 威胁防护](api-create-app-user-context.md)
+- [访问 Microsoft 365 Defender Api](api-access.md)
+- [使用应用程序上下文访问 Microsoft 365 Defender](api-create-app-web.md)
+- [使用用户上下文访问 Microsoft 365 Defender](api-create-app-user-context.md)

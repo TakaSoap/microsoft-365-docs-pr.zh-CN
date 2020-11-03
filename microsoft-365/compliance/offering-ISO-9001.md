@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e2caa6dd9a2e6838877edb2000e020ddb682ffd5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 7d026a91cca3b077e1aeb0d01701b9b496fe8a45
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417656"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843338"
 ---
 # <a name="iso-90012015-quality-management-systems-standards"></a>ISO 9001:2015 质量管理体系标准
 
@@ -38,7 +38,7 @@ ISO 9001:2015 是建立质量管理体系标准的国际标准。 它是 ISO 900
 - Dynamics 365、Dynamics 365 政府和 Dynamics 365 德国
 - Microsoft Graph
 - Intune
-- Microsoft Defender 高级威胁防护
+- Microsoft Defender for Endpoint
 - Microsoft 医疗保健机器人
 - Microsoft 托管桌面
 - Power Automate (以前称为 Microsoft Flow) 云服务，作为独立服务提供，或者随 Office 365 或 Dynamics 365 品牌计划或套件一并提供

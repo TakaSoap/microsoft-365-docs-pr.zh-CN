@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Exchange Online Protection (EOP) 的保护功能和 Office 365 高级威胁防护 (ATP) 中应用标准和严格的策略设置
-ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+description: 管理员可以了解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 的保护功能中应用标准和严格的策略设置
+ms.openlocfilehash: 38a03727f91878f356d8bc0dc618c711bfc500bb
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830533"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845728"
 ---
-# <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的预设安全策略
+# <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的预设安全策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -59,7 +59,7 @@ ms.locfileid: "48830533"
 
 ### <a name="policies-in-preset-security-policies"></a>预设安全策略中的策略
 
-预设安全策略使用 EOP 和 Office 365 ATP 中各种保护功能的相应策略。 将 **标准保护** 或 **严格保护** 预设安全策略分配给用户 _后_ ，将创建这些策略。 您不能修改这些策略。
+预设安全策略使用 EOP 和 Microsoft Defender for Office 365 中的各种保护功能中对应的策略。 将 **标准保护** 或 **严格保护** 预设安全策略分配给用户 _后_ ，将创建这些策略。 您不能修改这些策略。
 
 - **Exchange Online Protection (EOP) 策略** ：这包括具有 exchange online 邮箱和独立 EOP 组织的 Microsoft 365 组织，而无需使用 exchange online 邮箱：
   
@@ -67,23 +67,23 @@ ms.locfileid: "48830533"
   - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 [反恶意软件策略](configure-anti-malware-policies.md)。
   - EOP 欺骗设置 (的名为 **标准预设安全策略** 和 **严格预设安全策略**[的反网络钓鱼策略](set-up-anti-phishing-policies.md#spoof-settings)) 。
 
-- **Office 365 高级威胁防护 (ATP) 策略** ：这包括具有 Microsoft 365 E5 或 OFFICE 365 ATP 附加产品订阅的组织：
+- **Microsoft Defender For office 365 策略** ：这包括具有 Microsoft 365 E5 或 Defender for office 365 附加订阅的组织：
 
-  - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 ATP 反网络钓鱼策略，其中包括：
+  - Microsoft Defender for Office 365 中名为 **标准预设安全策略** 和 **严格预设安全策略** 的反网络钓鱼策略，其中包括：
 
     - EOP 反网络钓鱼策略中提供的相同 [欺骗设置](set-up-anti-phishing-policies.md#spoof-settings) 。
-    - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
-    - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
+    - [模拟设置](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+    - [高级网络钓鱼阈值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
   - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 [安全链接策略](set-up-atp-safe-links-policies.md)。
 
   - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 [安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
-请注意，您可以将 EOP 保护应用于不同的用户，而不是 ATP 保护。
+请注意，您可以将 EOP 保护应用于与 Microsoft Defender for Office 365 保护不同的用户。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>预设安全策略中的策略设置
 
-不能在保护配置文件中修改策略设置。 " **标准** " 和 " **严格** " 策略设置值在 [EOP 和 Office 365 ATP security 的推荐设置](recommended-settings-for-eop-and-office365-atp.md)中进行了说明。
+不能在保护配置文件中修改策略设置。 [EOP 和 Microsoft Defender For Office 365 security 中的建议设置](recommended-settings-for-eop-and-office365-atp.md)中介绍了 **标准** 和 **严格** 的策略设置值。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>预设安全策略和其他策略的优先级顺序
 
@@ -141,13 +141,13 @@ ms.locfileid: "48830533"
 
    4. 若要添加例外，请单击 " **添加条件** "。 在出现的下拉列表中，选择 " **如果条件除外** " 下的条件。 设置和行为与条件完全相同。
 
-   完成后，单击“下一步”  。
+   完成后，单击“下一步”。
 
-4. 如果你的组织具有 Office 365 ATP，则将转到 **ATP 防护适用** 于步骤，以确定 [Office 365 ATP 防护](#policies-in-preset-security-policies) 适用的内部收件人。
+4. 如果你的组织具有 Microsoft Defender for Office 365，则将转到 **ATP 防护适用** 于步骤，以确定 [Microsoft defender for Office 365 防护](#policies-in-preset-security-policies) 适用的内部收件人。
 
    设置和行为与 **EOP 保护应用** 于步骤完全一样。
 
-   完成后，单击“下一步”  。
+   完成后，单击“下一步”。
 
 5. 在 " **确认** 步骤" 中，验证您的选择，然后单击 " **确认** "。
 

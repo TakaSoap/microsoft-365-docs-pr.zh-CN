@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: f3fa5c82efad0a51adf5e798bd89860e78256e15
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681586"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845308"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中配置威胁防护功能
 
@@ -49,91 +49,91 @@ Microsoft 已测试并建议一组特定的条件访问和相关策略，用于�
 - [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA 的安全指南](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
-## <a name="step-2-configure-azure-advanced-threat-protection"></a>步骤2：配置 Azure 高级威胁防护
+## <a name="step-2-configure-microsoft-defender-for-identity"></a>步骤2：配置 Microsoft Defender for Identity
 
-[Azure 高级威胁防护](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (azure ATP) 是一种基于云的安全解决方案，可与您的内部部署 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 信号配合使用，以识别、检测和调查组织中的高级威胁、已泄露身份和恶意内幕活动。
+[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可与您的内部部署 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) 信号配合使用，以识别、检测和调查组织中的高级威胁、已泄露标识和恶意内幕活动。
 
-Azure ATP 启用安全操作 (SecOps) 分析师和安全专业人员努力检测混合环境中的高级攻击：
+Microsoft Defender for Identity 支持安全操作 (SecOps) 分析师和安全专业人员努力检测混合环境中的高级攻击：
 - 使用基于学习的分析监视用户、实体行为和活动。
 - 保护存储在 Active Directory 中的用户标识和凭据。
 - 发现并调查整个击杀链中的可疑用户活动和高级攻击。
 - 在简单的时间线上提供明确的事件信息，以实现快速会审。
 
-### <a name="to-set-up-azure-atp"></a>设置 Azure ATP
+### <a name="to-set-up-microsoft-defender-for-identity"></a>设置 Microsoft Defender for Identity
 
-![部署 Azure ATP 的过程](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
+![部署 Microsoft Defender for Identity 的过程](../media/solutions-architecture-center/deploy-azure-atp-steps.png) 
 
-1. [设置 AZURE ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以保护你的主要环境。
+1. [设置 Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以保护你的主要环境。
 2. 保护所有 [域控制器](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring) 和 [林](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)。
-3. 将 [AZURE ATP 警报](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) 集成到安全操作 (SecOps) 工作流中。
+3. 将 [Microsoft Defender For Identity 警报](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external) 集成到安全操作中 (SecOps) 工作流。
 
-### <a name="more-information-about-azure-atp"></a>有关 Azure ATP 的详细信息
+### <a name="more-information-about-microsoft-defender-for-identity"></a>有关 Microsoft Defender for Identity 的详细信息
 
-- [什么是 Azure ATP？](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [视频： Azure ATP 简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- [Azure ATP 部署](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- [Microsoft Defender for Identity 是什么？](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [视频： Microsoft Defender for Identity 简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- [Microsoft Defender for Identity 部署](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="step-3-turn-on-microsoft-threat-protection"></a>步骤3：打开 Microsoft 威胁防护
+## <a name="step-3-turn-on-microsoft-365-defender"></a>步骤3：打开 Microsoft 365 Defender
 
-[Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 将信号和协调功能合并到单个解决方案中。 使用集成的 Microsoft 威胁防护解决方案，安全专业人员可以将威胁信号与这些产品中的每个产品一起接收并确定威胁的完整作用域和影响，并将它们结合起来。如何进入环境、受影响的内容以及当前对组织的影响。 Microsoft 威胁防护采用自动操作来阻止或停止攻击和自我修复受影响的邮箱、终结点和用户身份。
+[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 将信号和协调功能组合到单个解决方案中。 使用集成的 Microsoft 365 Defender 解决方案，安全专业人员可以将威胁信号与这些产品中的每个产品一起接收并确定威胁的完整作用域和影响，并将它们结合起来。如何进入环境、受影响的内容以及当前对组织的影响。 Microsoft 365 Defender 执行自动操作以阻止或停止攻击和自我修复受影响的邮箱、终结点和用户身份。
 
-Microsoft 威胁防护统一了警报、事件、自动调查和响应，以及跨工作负载 (Azure ATP、Office 365 ATP、Microsoft Defender ATP 和 Microsoft 云应用安全) 的高级调查，并将其转换为单一的玻璃体验。 配置了一个或多个高级威胁防护服务后，请打开 Microsoft 威胁防护。 新功能将不断添加到 Microsoft 威胁防护中;考虑选择接收预览功能。
+Microsoft 365 Defender 统一了警报、事件、自动调查和响应，以及跨工作负载的高级调查 (Microsoft Defender for Identity、Microsoft Defender for Office 365、Microsoft Defender for Endpoint 以及 Microsoft Cloud App Security) 到单一的玻璃体验中。 配置了一个或多个适用于 Office 365 的 Defender for Office 服务后，请打开 Microsoft 365 Defender。 将新功能连续添加到 Microsoft 365 Defender;考虑选择接收预览功能。
 
-### <a name="to-set-up-microsoft-threat-protection"></a>设置 Microsoft 威胁防护
+### <a name="to-set-up-microsoft-365-defender"></a>设置 Microsoft 365 Defender
 
-![部署 Microsoft 威胁防护的过程](../media/solutions-architecture-center/deploy-mtp-steps.png) 
+![部署 Microsoft 365 Defender 的过程](../media/solutions-architecture-center/deploy-mtp-steps.png) 
 
 1. [查看先决条件](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)。
-2. [启用 Microsoft 威胁防护](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
+2. [打开 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
 3. [选择加入预览功能](https://docs.microsoft.com/microsoft-365/security/mtp/preview)。
 
-### <a name="more-information-about-microsoft-threat-protection"></a>有关 Microsoft 威胁防护的详细信息
+### <a name="more-information-about-microsoft-365-defender"></a>有关 Microsoft 365 Defender 的详细信息
 
-- [什么是 Microsoft 威胁防护？](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
-- [Microsoft 威胁防护的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [什么是 Microsoft 365 Defender？](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft 365 Defender 的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 
-## <a name="step-4-configure-office-365-advanced-threat-protection"></a>步骤4：配置 Office 365 高级威胁防护
+## <a name="step-4-configure-microsoft-defender-for-office-365"></a>步骤4：配置 Microsoft Defender for Office 365
 
-[Office 365 高级威胁防护](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (OFFICE 365 ATP) 保护您的组织免受电子邮件中的恶意威胁 (附件和 url) 、Office 文档和协作工具。 下表列出了 Microsoft 365 E5 中包含的 Office 365 ATP 特性和功能：
+[Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 保护您的组织免受电子邮件中的恶意威胁 (附件和 url) 、Office 文档和协作工具。 下表列出了 Microsoft 365 E5 中包含的适用于 Office 365 的 Microsoft Defender 的特性和功能：
 
 |配置、保护和检测功能|自动化、调查、修正和教育功能|
 |---|---|
-|[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP 防钓鱼保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[威胁跟踪器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻击模拟器](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
+|[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[安全链接](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[适用于 Office 365 保护的 Defender 中的反网络钓鱼](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[威胁跟踪器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[威胁资源管理器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻击模拟器](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
-使用 Office 365 ATP，组织中的人员可以更安全地进行通信和协作，并为其电子邮件内容和 Office 文档提供威胁保护。
+使用 Microsoft Defender for Office 365，组织中的人员可以更安全地进行通信和协作，并为其电子邮件内容和 Office 文档提供威胁保护。
 
-### <a name="to-set-up-office-365-atp"></a>设置 Office 365 ATP
+### <a name="to-set-up-microsoft-defender-for-office-365"></a>设置 Microsoft Defender for Office 365
 
-![部署 Office 365 ATP 的过程](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
+![部署 Microsoft Defender for Office 365 的过程](../media/solutions-architecture-center/deploy-office365-atp-steps.png) 
 
-1. [设置和配置 Office 365 ATP 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
-2. [查看和使用您的 Office 365 ATP 报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。
+1. [设置和配置 Microsoft Defender For Office 365 策略](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
+2. [查看和使用 Microsoft Defender For Office 365 报告](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp)。
 3. [使用威胁调查和响应功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti)。
 
-### <a name="more-information-about-office-365-atp"></a>有关 Office 365 ATP 的详细信息
+### <a name="more-information-about-microsoft-defender-for-office-365"></a>有关 Microsoft Defender for Office 365 的详细信息
 
-- [Office 365 ATP 概述](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
-- [Office 365 ATP 的新增功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
+- [Microsoft Defender for Office 365 概述](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+- [Microsoft Defender for Office 365 中的新增功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/whats-new-in-office-365-atp)
 
-## <a name="step-5-configure-microsoft-defender-advanced-threat-protection"></a>步骤5：配置 Microsoft Defender 高级威胁防护
+## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>步骤5：为终结点配置 Microsoft Defender
 
-Microsoft defender[高级威胁防护](https://docs.microsoft.com/windows/security/threat-protection) (MICROSOFT defender ATP) 保护组织设备 (也称为) 来自威胁、高级攻击和数据泄露的终结点。 安全团队在管理其终结点的安全性时可提高效率。 稳健的工具可帮助组织随时使用带有 [威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞检测功能，从而及时修补系统。 自动检测和修复功能（如 [攻击面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、 [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、 [终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)）以及 [自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 有助于保护设备免受恶意软件的危害。 在这些功能之上，客户可以根据需要获取主动通知并与 Microsoft 威胁专家进行协商，作为自愿加入托管的搜寻服务的一部分。 
+[Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection) 保护组织设备 (也称为终结点) 来自威胁、高级攻击和数据泄露。 安全团队在管理其终结点的安全性时可提高效率。 稳健的工具可帮助组织随时使用带有 [威胁和漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞检测功能，从而及时修补系统。 自动检测和修复功能（如 [攻击面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、 [下一代保护](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、 [终结点检测和响应](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)）以及 [自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 有助于保护设备免受恶意软件的危害。 在这些功能之上，客户可以根据需要获取主动通知并与 Microsoft 威胁专家进行协商，作为自愿加入托管的搜寻服务的一部分。 
 
 
-### <a name="set-up-microsoft-defender-atp"></a>设置 Microsoft Defender ATP
+### <a name="set-up-microsoft-defender-for-endpoint"></a>设置 Microsoft Defender for Endpoint
 
-![部署 Microsoft Defender ATP 的过程](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
+![为终结点部署 Microsoft Defender 的过程](../media/solutions-architecture-center/deploy-mdatp-steps.png) 
 
-1. [准备 Microsoft DEFENDER ATP 部署](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)。
-2. [设置你的 Microsoft Defender ATP 部署](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
-3. [在 Microsoft DEFENDER ATP 服务的板载](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding)。
+1. [准备 Microsoft Defender For Endpoint 部署](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases)。
+2. [设置 Microsoft Defender for Endpoint 部署](https://docs.microsoft.com/windows/security/threat-protection/micros.oft-defender-atp/production-deployment)
+3. [板载到 Microsoft Defender For Endpoint service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding)。
 4. [完成您的首要安全管理任务](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)。
 
-### <a name="more-information-about-microsoft-defender-atp"></a>有关 Microsoft Defender ATP 的详细信息
+### <a name="more-information-about-microsoft-defender-for-endpoint"></a>有关 Microsoft Defender for Endpoint 的详细信息
 
-- [了解有关 Microsoft DEFENDER ATP 的详细信息](https://docs.microsoft.com/windows/security/threat-protection)。
-- [尝试 Microsoft DEFENDER ATP 评估实验室](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)。
+- [了解有关 Microsoft Defender For Endpoint 的详细信息](https://docs.microsoft.com/windows/security/threat-protection)。
+- [试用 Microsoft Defender For Endpoint 评估实验室](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/evaluation-lab)。
 
 ## <a name="step-6-configure-microsoft-cloud-app-security"></a>步骤6：配置 Microsoft 云应用安全
 

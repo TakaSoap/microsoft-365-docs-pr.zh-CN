@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 94e83110ef9761f551fd1401884dbba58a8df107
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 43a5c0f2e207274574c3c08eadd2804b9c241bb7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208434"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845062"
 ---
 # <a name="federal-risk-and-authorization-management-program-fedramp"></a>联邦风险和授权管理项目 (FedRAMP)
 
@@ -71,7 +71,7 @@ Dynamics 365 美国政府已向美国的 FedRAMP 机构 ATO 授予美国) 的美
 - [Office 365 和 Office 365 美国 Governmen](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 美国政府防御版
 - Power BI 云服务，作为独立服务提供，或者随 Office 365 品牌计划或套件一并提供
-- Microsoft Defender ATP
+- Microsoft Defender for Endpoint
 
 > [!NOTE]
 > 在 Azure 政府中使用 Azure Active Directory 要求使用在 azure 公有云之外部署到 Azure 政府之外的组件。
@@ -111,7 +111,7 @@ FISMA 是一种联邦法律，要求我们的联邦机构及其合作伙伴仅�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
