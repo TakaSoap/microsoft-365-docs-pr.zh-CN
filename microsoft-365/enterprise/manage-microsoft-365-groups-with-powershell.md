@@ -21,16 +21,16 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 在本文中，您将了解如何在 PowerShell 中为 Microsoft 365 组执行常见的管理任务。
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277482"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830611"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell 管理 Microsoft 365 组
 
-*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
+*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
 
 本文提供在 Microsoft PowerShell 中对组执行常见管理任务的步骤。 此外，它还列出了组的 PowerShell cmdlet。 有关管理 SharePoint 网站的信息，请参阅 [使用 PowerShell 管理 Sharepoint Online 网站](https://docs.microsoft.com/sharepoint/manage-team-and-communication-sites-in-powershell)。
 
@@ -114,7 +114,7 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>从全局地址列表中隐藏 Microsoft 365 组。
 <a name="BKMK_CreateClassification"> </a>
 
-您可以指定 Microsoft 365 组是否出现在全局地址列表中 (GAL) 和组织中的其他列表。 例如，如果您有一个您不想在地址列表中显示的法律部门组，则可以阻止该组显示在 GAL 中。 运行 "设置统一组" cmdlet 以将组从地址列表中隐藏，如下所示：
+您可以指定 Microsoft 365 组是否出现在全局地址列表中 (GAL) 和组织中的其他列表。 例如，如果您有一个您不想在地址列表中显示的法律部门组，则可以阻止该组显示在 GAL 中。 运行 Set-Unified Group cmdlet 可将组从地址列表中隐藏，如下所示：
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -125,7 +125,7 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 
 如果您不希望其他组织的用户向 Microsoft 365 组发送电子邮件，您可以更改该组的设置。 仅允许内部用户向你的组发送电子邮件。 如果外部用户尝试向该组发送邮件，该邮件将被拒绝。
 
-运行 Remove-unifiedgroup cmdlet 以更新此设置，如下所示：
+运行 Set-UnifiedGroup cmdlet 以更新此设置，如下所示：
 
 ```powershell
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
@@ -136,7 +136,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 
 当发件人尝试向 Microsoft 365 组发送电子邮件时，会向其显示邮件提示。
 
-运行 "设置统一组" cmdlet 以将邮件提示添加到组中：
+运行 Set-Unified Group cmdlet 以将邮件提示添加到组中：
 
 ```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
@@ -150,7 +150,7 @@ Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" 
 
 ## <a name="change-the-display-name-of-the-microsoft-365-group"></a>更改 Microsoft 365 组的显示名称
 
-显示名称指定 Microsoft 365 组的名称。 您可以在 exchange 管理中心或 Microsoft 365 管理中心中看到此名称。 您可以编辑组的显示名称，或通过运行 Remove-unifiedgroup 命令为现有的 Microsoft 365 组分配显示名称：
+显示名称指定 Microsoft 365 组的名称。 您可以在 exchange 管理中心或 Microsoft 365 管理中心中看到此名称。 您可以编辑组的显示名称，或通过运行 Set-UnifiedGroup 命令将显示名称分配给现有的 Microsoft 365 组：
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
@@ -181,10 +181,10 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 |:-----|:-----|
 |[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |使用此 cmdlet 查找现有的 Microsoft 365 组，并查看组对象的属性  <br/> |
 |[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |更新特定 Microsoft 365 组的属性  <br/> |
-|[新 Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |创建新的 Microsoft 365 组。 此 cmdlet 提供一组最少的参数。 若要设置扩展属性的值，请在创建新组后使用 Remove-unifiedgroup  <br/> |
+|[新 Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |创建新的 Microsoft 365 组。 此 cmdlet 提供一组最少的参数。 若要设置扩展属性的值，请在创建新组后使用 Set-UnifiedGroup  <br/> |
 |[Remove-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |删除现有的 Microsoft 365 组  <br/> |
 |[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |检索 Microsoft 365 组的成员资格和所有者信息  <br/> |
-|[外接 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |将成百上千用户或新所有者添加到现有 Microsoft 365 组  <br/> |
+|[外接 UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |将成员、所有者和订阅者添加到现有的 Microsoft 365 组 <br/> |
 |[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |从现有 Microsoft 365 组中删除所有者和成员  <br/> |
 |[Set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |用于查看有关与帐户关联的用户照片的信息。 用户照片存储在 Active Directory 中  <br/> |
 |[Set-userphoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |用于将用户照片与帐户关联。 用户照片存储在 Active Directory 中  <br/> |
@@ -194,7 +194,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 [将通讯组列表升级到 Microsoft 365 组](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[管理可以创建 Microsoft 365 组的用户](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[管理可创建 Microsoft 365 组的人员](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [管理对 Microsoft 365 组的来宾访问](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
