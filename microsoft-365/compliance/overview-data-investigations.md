@@ -18,14 +18,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: 在本文中，您将了解在 Microsoft 365 中的 "数据调查" (预览) 工具。 数据调查工具可帮助您评估和修正数据外泄。
-ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f3e08ca602d9d131cd25d234c96c660f0b9639aa
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285988"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906927"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的数据调查 (预览) 概述
+
+> [!IMPORTANT]
+> 在与客户进行大量 deliberation 和讨论之后，我们决定不将数据调查工具发布到常规可用性。 因此，我们将删除此工具以及与2020年12月31日的现有数据调查事例相关联的任何数据。  若要在组织中管理数据调查，我们建议使用核心电子数据展示事例。 如果你需要搜索并清除 Microsoft 365 中的内容，请参阅以下文章： 
+> - [电子数据展示解决方案系列： Data 外泄方案-搜索和清除](data-spillage-scenariosearch-and-purge.md)
+> - [搜索和删除电子邮件](search-for-and-delete-messages-in-your-organization.md)
 
 当包含机密、敏感或恶意内容的文档发布到不受信任的环境中时，将发生数据溢出。 检测到数据溢出时，很重要的一点是，快速包含环境、评估外泄的大小和位置、检查周围的用户活动，然后从服务中删除溢出的数据。 通过使用新的数据调查 (preview) 工具，您可以在 Office 365 中搜索敏感、恶意或误放的数据，调查所发生的情况，并采取适当的措施修正外泄。  
 
@@ -37,7 +42,7 @@ ms.locfileid: "48285988"
 
 ## <a name="data-investigations-preview-workflow"></a> (预览) 工作流的数据调查 
 
-以下各节介绍了在 "数据调查" 中的内置工作流 (预览) 的每个步骤。 下面的屏幕截图显示了名为 "*高风险：财务文档泄露*" 的调查的 "**主页**" 选项卡。 
+以下各节介绍了在 "数据调查" 中的内置工作流 (预览) 的每个步骤。 下面的屏幕截图显示了名为 " *高风险：财务文档泄露* " 的调查的 " **主页** " 选项卡。 
 
 ![数据调查工具中的工作流](../media/DataInvestigationsWorkflow.png)
 
@@ -62,7 +67,7 @@ ms.locfileid: "48285988"
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>为感兴趣的人员的数据编制索引
 
-如果向调查中添加感兴趣的人，则会重新对用户数据源中的任何部分已编制索引的项目进行索引。 此过程称为 " *高级索引*"。 高级索引 reprocesses 数据（如图像和不受支持的文件类型），以便在运行搜索以收集用于调查的数据时能够完全发现这些数据。 使用 " **处理** " 选项卡监视高级索引的状态，并修复使用称为 " *错误修正*" 的过程可能发生的任何处理错误。 有关详细信息，请参阅 [处理调查数据时的错误修正](error-remediation.md)。
+如果向调查中添加感兴趣的人，则会重新对用户数据源中的任何部分已编制索引的项目进行索引。 此过程称为 " *高级索引* "。 高级索引 reprocesses 数据（如图像和不受支持的文件类型），以便在运行搜索以收集用于调查的数据时能够完全发现这些数据。 使用 " **处理** " 选项卡监视高级索引的状态，并修复使用称为 " *错误修正* " 的过程可能发生的任何处理错误。 有关详细信息，请参阅 [处理调查数据时的错误修正](error-remediation.md)。
 
 ## <a name="exporting-data"></a>导出数据
 

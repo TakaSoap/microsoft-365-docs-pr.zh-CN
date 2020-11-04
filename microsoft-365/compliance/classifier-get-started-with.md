@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本文介绍如何创建和培训自定义分类器，以及如何重新培训它们以提高准确性。
-ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841229"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906343"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>可训练的分类器入门（预览版）
 
@@ -33,7 +33,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 
 若要了解有关不同类型的分类器的详细信息，请参阅 [了解 trainable 类元 (preview) ](classifier-learn-about.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 ### <a name="licensing-requirements"></a>许可要求
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 若要访问 UI 中的分类器： 
 
 - 全局管理员需要选择加入租户以创建自定义分类器。
-- 合规性管理员角色、数据调查角色或合规性数据管理员是培训分类器所必需的。
+- 训练分类器需要合规性管理员或数据调查角色。
 
 在这些情况下，您需要具有这些权限的帐户才能使用分类器：
 
