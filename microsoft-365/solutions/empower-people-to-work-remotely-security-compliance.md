@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全和合规性服务为远程工作者保护你的应用、数据和设备。
-ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681464"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845224"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步骤 3：为远程工作者部署安全与合规
 
@@ -47,11 +47,11 @@ ms.locfileid: "48681464"
 
 使用 Microsoft 365 的这些安全功能来保护应用程序和数据。
 
-| 功能或特性 | 说明 | 许可 |
+| 功能或特性 | 说明 | 授权 |
 |:-------|:-----|:-------|
-| Office 365 高级威胁防护 (ATP) | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Office ATP 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 | Microsoft 365 E3 或 E5 | 
+| Microsoft Defender for Office 365 | 保护你的 Microsoft 365 应用和数据（例如电子邮件、Office 文档和协作工具）免受攻击。 <br><br> Microsoft Defender for Office 365 会从你的应用收集和分析信号，以检测、调查和补救安全风险，并保护你的组织免受电子邮件、链接 (URL) 和协作工具带来的恶意威胁。 | Microsoft 365 E3 或 E5 | 
 | 恶意软件防护 | ‎Microsoft Defender 防病毒和 Device Guard 提供基于设备的恶意软件防护。 <br><br> SharePoint‎ Online 会自动扫描上传文件中已知的恶意软件。 ‎<br><br> Exchange Online Protection‎ (‎EOP‎) 可保护云邮箱。 | Microsoft 365 E3 或 E5 |
-| 每个租户 | 保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。 | Microsoft 365 E5 |
+| Microsoft Defender for Endpoint | 保护你的组织的设备免受网络威胁和数据泄露，并检测、调查和响应高级威胁。 | Microsoft 365 E5 |
 | 云应用安全 | 保护基于云的服务（Microsoft 365 和其他 SaaS 应用）免受攻击。 | Microsoft 365 E5 或单独的云应用安全许可证 |
 | Azure AD 标识保护  | 自动检测和修复基于标识的风险。 <br><br>创建基于风险的条件访问策略，以对有风险的登录要求多重身份验证 (MFA)。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） |
 ||||

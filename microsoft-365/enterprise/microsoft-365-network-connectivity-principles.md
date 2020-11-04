@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: 本文提供了有关安全优化 Microsoft 365 网络连接的最新指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7602ee5ac7001b4d4d88232c9528f0bdc731e90b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8036a4759f959a075ad0398e823116491e128c0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687684"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847008"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 网络连接原则
 
@@ -67,7 +67,7 @@ Microsoft 建议按照以下原则获取最佳的 Microsoft 365 连接和性能�
   
 若要从普通的 Internet 绑定网络流量中区分 Microsoft 365 网络流量，第一步需要先识别。 可通过采用网络路由优化、防火墙规则、浏览器代理设置，以及免验证特定终结点的网络检测设备，来优化 Microsoft 365 连接。
   
-以前的 Microsoft 365 优化指南将 Microsoft 365 终结点分为两个类别，分别为“**必需**”和“**可选**”。 为支持新的 Microsoft 365 服务和功能，已添加相应终结点。目前，我们将 Microsoft 365 终结点分为三个类别：“**优化**”、“**允许**”和“**默认**”。 每个类别的准则适用于相应类别中的所有终结点，让理解和实施优化变得更加简单。
+以前的 Microsoft 365 优化指南将 Microsoft 365 终结点分为两个类别，分别为“ **必需** ”和“ **可选** ”。 为支持新的 Microsoft 365 服务和功能，已添加相应终结点。目前，我们将 Microsoft 365 终结点分为三个类别：“ **优化** ”、“ **允许** ”和“ **默认** ”。 每个类别的准则适用于相应类别中的所有终结点，让理解和实施优化变得更加简单。
   
 有关 Microsoft 365 终结点类别和优化方法的详细信息，请参阅[新的 Office 365 终结点类别](microsoft-365-network-connectivity-principles.md#BKMK_Categories)章节。
   
@@ -143,31 +143,31 @@ Microsoft 365 管理员可以创建 PAC（代理自动配置）脚本，该脚�
 #### <a name="microsoft-365-security-features"></a>Microsoft 365 安全功能
 <a name="BKMK_WebSvc"> </a>
 
-Microsoft 对数据中心安全、运营安全、Microsoft 365 服务器附近的风险降低及其代表的网络终结点保持透明。 Microsoft 365 内置安全功能可用于减少网络安全风险，如数据丢失防护、反病毒、多重身份验证、客户锁箱、高级威胁防护、Microsoft 365 威胁情报、Microsoft 365 安全分数、Exchange Online Protection 和网络 DDOS 安全。
+Microsoft 对数据中心安全、运营安全、Microsoft 365 服务器附近的风险降低及其代表的网络终结点保持透明。 Microsoft 365 内置安全功能可用于减少网络安全风险，如数据丢失防护、防病毒、多重身份验证、客户锁箱、Defender for Office 365、Microsoft 365 威胁情报、Microsoft 365 安全分数、Exchange Online Protection 和网络 DDOS 安全。
   
 有关 Microsoft 数据中心和全球网络安全性的详细信息，请参阅 [Microsoft 信任中心](https://www.microsoft.com/trustcenter/security)。
   
 ## <a name="new-office-365-endpoint-categories"></a>新的 Office 365 终结点类别
 <a name="BKMK_Categories"> </a>
 
-Office 365 终结点代表一组不同的网络地址和子网。 终结点可能是 URL、IP 地址或 IP 范围，且某些终结点会与特定的 TCP/UDP 端口一起列出。 URL可以是 FQDN，如 *account.office.net* 或通配符 URL，如 *\*office365.com*。
+Office 365 终结点代表一组不同的网络地址和子网。 终结点可能是 URL、IP 地址或 IP 范围，且某些终结点会与特定的 TCP/UDP 端口一起列出。 URL可以是 FQDN，如 *account.office.net* 或通配符 URL，如 *\*office365.com* 。
   
 > [!NOTE]
 > 网络中的 Office 365 终结点的位置与 Microsoft 365 租户数据的位置不直接相关。 因此，客户应将 Microsoft 365 视为分布式全球服务，并且不应尝试根据地理条件阻止到 Office 365 终结点的网络连接。
   
-在以前关于如何管理 Microsoft 365 流量的指南中，我们将终结点分为两个类别：“**必需**”和“**可选**”。 过去，每个类别中的终结点需要不同的优化，具体取决于服务的关键程度，并且很多客户很难将采用相同网络优化的应用调整为适用于所有 Office 365 URL 和 IP 地址。
+在以前关于如何管理 Microsoft 365 流量的指南中，我们将终结点分为两个类别：“ **必需** ”和“ **可选** ”。 过去，每个类别中的终结点需要不同的优化，具体取决于服务的关键程度，并且很多客户很难将采用相同网络优化的应用调整为适用于所有 Office 365 URL 和 IP 地址。
   
-在新模型中，终结点分为三种类别，“**优化**”、“**允许**”和“**默认**”，能够基于优先级帮助客户专注于网络优化工作，从而实现最佳性能改进和投资回报。 根据对网络质量、容量、场景的性能信封以及实现易用程度等方面的有效用户体验，将终结点在上述类别中进行了整合。 可采用相同方式，将推荐优化应用于给定类别中的所有终结点。
+在新模型中，终结点分为三种类别，“ **优化** ”、“ **允许** ”和“ **默认** ”，能够基于优先级帮助客户专注于网络优化工作，从而实现最佳性能改进和投资回报。 根据对网络质量、容量、场景的性能信封以及实现易用程度等方面的有效用户体验，将终结点在上述类别中进行了整合。 可采用相同方式，将推荐优化应用于给定类别中的所有终结点。
   
-- “**优化**”终结点，连接到每项 Office 365 服务时需要使用这一类别的终结点，并占用超过 75% 的 Office 365 带宽、连接和数据量。 这些终结点代表对网络性能、延迟和可用性最敏感的 Office 365 方案。 所在终结点都托管于 Microsoft 数据中心中。 此类别中的终结点的更改速率应小于其他两个类别中终结点的更改速率。 此类别包含一小组密钥 URL（按 ~10 排序）和已定义的 IP 子网集合，专用于核心 Office 365 工作负载，例如 Exchange Online、SharePoint Online、Skype for Business Online 和 Microsoft Teams。
+- “ **优化** ”终结点，连接到每项 Office 365 服务时需要使用这一类别的终结点，并占用超过 75% 的 Office 365 带宽、连接和数据量。 这些终结点代表对网络性能、延迟和可用性最敏感的 Office 365 方案。 所在终结点都托管于 Microsoft 数据中心中。 此类别中的终结点的更改速率应小于其他两个类别中终结点的更改速率。 此类别包含一小组密钥 URL（按 ~10 排序）和已定义的 IP 子网集合，专用于核心 Office 365 工作负载，例如 Exchange Online、SharePoint Online、Skype for Business Online 和 Microsoft Teams。
 
     清晰定义的关键终结点的简明列表应有助于更快、更轻松地规划和实现这些目标的高价值网络优化。
 
-    “*优化*”终结点示例包括*https://outlook.office365.com*，*https://\<tenant\>.sharepoint.com* 和 *https://\<tenant\>-my.sharepoint.com*。
+    “ *优化* ”终结点示例包括 *https://outlook.office365.com* ， *https://\<tenant\>.sharepoint.com* 和 *https://\<tenant\>-my.sharepoint.com* 。
 
     优化方法包括：
 
-  - 跳过优化网络设备上的“*优化*”终结点，以及执行通信拦截、SSL 解密、深层包检查和内容筛选的服务。
+  - 跳过优化网络设备上的“ *优化* ”终结点，以及执行通信拦截、SSL 解密、深层包检查和内容筛选的服务。
   - 跳过通常用于普通 Internet 浏览的本地代理设备和基于云的代理服务。
   - 当这些终结点被网络基础结构和外围系统完全信任后，优先对其进行评估。
   - 设置广域网回程减少或消除的优先级，并让这些终结点基于 Internet 的直接分布式出口尽可能接近用户/分支的所在位置。
@@ -175,21 +175,21 @@ Office 365 终结点代表一组不同的网络地址和子网。 终结点可�
   - 确保 DNS 名称解析返回的 IP 地址与这些终结点的路由出口路径匹配。
   - 将 SD 广域网集成的这些终结点的优先级设置为直接的最小延迟路由到最近的 Microsoft 全球网络 Internet 对等连接点。
 
-- **允许** - 连接到特定 Office365 服务和功能时需要使用“允许”终结点，但不像“*优化*”类别终结点那样对网络性能和延迟敏感。 从带宽和连接数的角度而言，“允许”终结点的总体网络占用情况也更低。 这些终结点为 Office 365 专用并托管在 Microsoft 数据中心中。 它们代表一整套 Office 365 微服务及其依赖项（按照 ~ 100 URL 的顺序），且预期更改速度会高于“*优化*”类别的更改速度。 此类别中并非所有终结点都与已定义的专用 IP 子网相关联。
+- **允许** - 连接到特定 Office365 服务和功能时需要使用“允许”终结点，但不像“ *优化* ”类别终结点那样对网络性能和延迟敏感。 从带宽和连接数的角度而言，“允许”终结点的总体网络占用情况也更低。 这些终结点为 Office 365 专用并托管在 Microsoft 数据中心中。 它们代表一整套 Office 365 微服务及其依赖项（按照 ~ 100 URL 的顺序），且预期更改速度会高于“ *优化* ”类别的更改速度。 此类别中并非所有终结点都与已定义的专用 IP 子网相关联。
 
-    对于“*允许*”终结点的网络优化，可以提升 Office 365 的用户体验，但是某些用户可能选择缩小优化范围，从而在最大程度上减少对其网络的更改。
+    对于“ *允许* ”终结点的网络优化，可以提升 Office 365 的用户体验，但是某些用户可能选择缩小优化范围，从而在最大程度上减少对其网络的更改。
 
-    “*允许*”终结点示例包括 *https://\*.protection.outlook.com* 和*https://accounts.accesscontrol.windows.net*。
+    “ *允许* ”终结点示例包括 *https://\*.protection.outlook.com* 和 *https://accounts.accesscontrol.windows.net* 。
 
     优化方法包括：
 
-  - 跳过执行通信拦截、SSL 解密、深层包检查和内容筛选的“*允许*”终结点。
+  - 跳过执行通信拦截、SSL 解密、深层包检查和内容筛选的“ *允许* ”终结点。
   - 当这些终结点被网络基础结构和外围系统完全信任后，优先对其进行评估。
   - 设置广域网回程减少或消除的优先级，并让这些终结点基于 Internet 的直接分布式出口尽可能接近用户/分支的所在位置。
   - 确保 DNS 名称解析返回的 IP 地址与这些终结点的路由出口路径匹配。
   - 将 SD 广域网集成的这些终结点的优先级设置为直接的最小延迟路由到最近的 Microsoft 全球网络 Internet 对等连接点。
 
-- “**默认**”终结点代表不需要任何优化的 Office 365 服务和依赖项，可被客户网络视为正常的 Internet 绑定流量。 此类别中的某些终结点可能不托管在 Microsoft 数据中心中。 示例包括*https://odc.officeapps.live.com*和*https://appexsin.stb.s-msn.com*。
+- “ **默认** ”终结点代表不需要任何优化的 Office 365 服务和依赖项，可被客户网络视为正常的 Internet 绑定流量。 此类别中的某些终结点可能不托管在 Microsoft 数据中心中。 示例包括 *https://odc.officeapps.live.com* 和 *https://appexsin.stb.s-msn.com* 。
 
 有关 Office 365 网络优化技术的详细信息，请参阅文章[管理 Office 365 终结点](managing-office-365-endpoints.md)。
   

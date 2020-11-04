@@ -12,21 +12,20 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0ea88fc46f5e83dcce6ce0883b05c41a4f293c62
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 0d50b553094b5b57554c72a83b20231b7d90e660
+ms.sourcegitcommit: 371249d3dde12092b820cd11ed3e02b31e88636a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521585"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48897185"
 ---
 # <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 企业体系结构设计原则
 
-![布局/导航符号 ](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **设计原则**了解了解网络、标识、安全性和多国体系结构所需的关键原则。
+了解在了解网络、标识、安全性和跨国体系结构时所需遵循的关键原则。
 
-
-|  |  | |
+| 处理器 | 主题 | 关于专家 |
 |---------|---------|---------|
 |![Alex Shteynberg 照片](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [标识](identity-design-principles.md)     | Alex Shteynberg，首席技术设计师（位于 Microsoft 纽约的 microsoft 技术中心）将逐步介绍针对采用 Microsoft 365 和 Azure [to identity and a to](identity-design-principles.md)a enterprise 组织的身份的指导原则和基准主题。 |
-| ![Kozetta Garrett 照片](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [安全性](security-design-principles.md)    |  Kozeta Garrett，Cybersecurity 架构师在 Microsoft，介绍了她在企业组织中遇到的最大安全难题，并建议您可以[sail 的安全障碍](security-design-principles.md)中采取的方法。  |
-| ![Ed Fisher 照片](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [网络](networking-design-principles.md)  |   Ed Fisher，Microsoft 的安全性 & 合规架构师介绍了如何通过避免网络上的最常见缺陷[（到云）](networking-design-principles.md)来优化网络的云连接性。       |
+| ![Kozetta Garrett 照片](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [安全性](security-design-principles.md)    |  Kozeta Garrett，Cybersecurity 架构师在 Microsoft，介绍了她在企业组织中遇到的最大安全难题，并建议您可以 [sail 的安全障碍](security-design-principles.md)中采取的方法。  |
+| ![Ed Fisher 照片](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [网络](networking-design-principles.md)  |   Ed Fisher，Microsoft 的安全性 & 合规架构师介绍如何通过避免在 [云) 中 (网络 ](networking-design-principles.md)的最常见缺陷来优化网络的云连接性。       |
 |    |         |         |

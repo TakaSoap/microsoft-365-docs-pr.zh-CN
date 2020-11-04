@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf5481584031469b459d5662f75e32fd9a793a94
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: d7deb2068db9f15f31a04c45564b966af90d2e2b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816755"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846292"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -74,7 +74,7 @@ ms.locfileid: "48816755"
 - 必须分配有 Exchange Online 中的“仅供查看审核日志”或“审核日志”角色才能搜索审核日志。 默认情况下，在 Exchange 管理中心中的“ **权限** ”页上将这些角色分配给“合规性管理”和“组织管理”角色组。 请注意，Office 365 和 Microsoft 365 中的全局管理员将自动添加为 Exchange Online 的组织管理角色组成员。 若要让用户能够使用最低权限级别搜索审核日志，可以在 Exchange Online 中创建自定义角色组，添加“仅供查看审核日志”或“审核日志”角色，然后将用户添加为新角色组的成员。 有关详细信息，请参阅[在 Exchange Online 中管理角色组](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
   > [!IMPORTANT]
-  > 如果在安全与合规中心中的“权限”  页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
+  > 如果在安全与合规中心中的“权限”页上向用户分配“仅供查看审核日志”或“审核日志”角色，则他们将无法搜索审核日志。 必须在 Exchange Online 中分配权限。 这是因为用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet。
 
 - 当用户或管理员执行审核活动时，将生成审核记录并将其存储在组织的审核日志中。 保留审核记录（并且可在审核日志中搜索）的时间长度取决于你的 Office 365 或 Microsoft 365 企业版订阅，具体而言是分配给特定用户的许可证类型。
 
@@ -102,7 +102,7 @@ ms.locfileid: "48816755"
 
   有关详细信息，请参阅[关闭审核日志搜索](turn-audit-log-search-on-or-off.md)。
 
-- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog** 。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“审核日志搜索”  页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
+- 如前所述，用于搜索审核日志的基础 cmdlet 是 Exchange Online cmdlet，即 **Search-UnifiedAuditLog** 。 这意味着可使用此 cmdlet 搜索审核日志，而不是使用安全与合规中心中的“审核日志搜索”页面。 必须在连接到 Exchange Online 组织的远程 PowerShell 中运行此 cmdlet。 有关详细信息，请参阅 [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776)。
 
   有关将 **Search-UnifiedAuditLog** cmdlet 所返回的搜索结果导出到 CSV 文件的信息，请参阅 [导出、配置和查看审核日志记录](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log)中的“有关导出和查看审核日志的提示”部分。
 
@@ -112,7 +112,7 @@ ms.locfileid: "48816755"
 
   |Microsoft 365 服务或功能|30 分钟|24 小时|
   |:-----|:-----:|:-----:|
-  |高级威胁防护和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Defender for Office 365 和威胁智能|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory（用户登录事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Azure Active Directory（管理员事件）||![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |数据丢失防护|![复选标记](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
@@ -139,6 +139,9 @@ ms.locfileid: "48816755"
 
 ## <a name="search-the-audit-log"></a>搜索审核日志
 
+> [!NOTE]
+> 我们当前正在调查 Azure AD 活动在审核日志搜索工具中不可用的问题。 该问题在 2020 年 10 月 26 日左右开始出现。 这些活动包括 Azure AD 用户管理活动、组管理活动、应用程序管理活动、角色管理活动和目录管理活动。 我们将在问题得到解决时提供更新。
+    
 下面介绍在 Office 365 中搜索审核日志的流程。
 
 [步骤 1：运行审核日志搜索](#step-1-run-an-audit-log-search)
@@ -171,7 +174,7 @@ ms.locfileid: "48816755"
 
    1. “ **活动** ”：单击下拉列表以显示你可以搜索的活动。 已将用户和管理员活动整理到相关活动组中。 你可以选择特定活动，或单击活动组名称以选择该组中的所有活动。 你也可以单击已选活动以取消选择。 运行搜索后，仅将显示所选活动的审核日志项目。 选择“ **显示所有活动的结果** ”将显示由所选用户或用户组执行的所有活动的结果。
 
-      审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”  选项卡可查看每个不同服务中每个活动的描述。
+      审核日志中记录了超过 100 个用户和管理员活动。 单击本文主题处的“已审核的活动”选项卡可查看每个不同服务中每个活动的描述。
 
    1. “ **开始日期** ”和“ **结束日期** ”：默认选择了过去七天。 选择日期和时间范围，以显示在这段时间内发生的事件。 日期和时间将以协调世界时 (UTC) 格式显示。 可指定的最大日期范围为 90 天。 如果所选日期范围超过 90 天，将显示错误。
 
@@ -271,7 +274,7 @@ ms.locfileid: "48816755"
 
    - “ **保存加载的结果** ”：选择此选项可仅导出“ **审核日志搜索** ”页上“ **结果** ”之下显示的条目。 下载的 CSV 文件包含（“日期”、“用户”、“活动”、“项目”和“详细信息”）页面上显示的相同列（和数据）。 包含审核日志项目中更多信息的 CSV 文件包括一额外列（名为“ **更多** ”）。 由于你将导出“ **审核日志搜索** ”页上已加载（且可查看）的相同结果，因此最多可导出 5,000 个条目。
 
-   - “下载所有结果”  ：选择此选项可以导出符合搜索条件的审核日志中的所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“ **审核日志搜索** ”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“ **AuditData** ”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
+   - “下载所有结果”：选择此选项可以导出符合搜索条件的审核日志中的所有条目。 对于较大的搜索结果集，选择此选项可下载审核日志的所有条目以及可在“ **审核日志搜索** ”页上显示的 5,000 条审核记录。 此选项会将原始数据从审核日志下载到 CSV 文件，并在名为“ **AuditData** ”的列中包含审核日志项目中的其他信息。 如果选择此导出选项，下载该文件可能需要更长时间，因为文件可能比选择其他选项下载的文件大得多。
 
      > [!IMPORTANT]
      > 你可以将最多 50,000 个条目从单个审核日志搜索中下载到 CSV 文件。 如果下载了 50,000 个条目到 CSV 文件，则可以假定可能存在超过 50,000 个符合搜索条件的事件。 若要导出的条目超出此限制，请尝试使用日期范围以减少审核日志项目。 你可能需要使用更小日期范围运行多个搜索来导出超过 50,000 个条目。
@@ -284,9 +287,9 @@ ms.locfileid: "48816755"
 
   拆分“ **AuditData** ”列后，你可以对“ **操作** ”列进行筛选以显示特定类型活动的详细属性。
 
-- “下载所有结果”  选项可将原始数据从审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“ **保存已加载结果** ”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“ **操作** ”列中的活动值可能与显示在“ **审核日志搜索** ”页上的“ **活动** ”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
+- “下载所有结果”选项可将原始数据从审核日志下载到 CSV 文件。 此文件包含的列名（“CreationDate”、“UserIds”、“操作”、“AuditData”）与选择“ **保存已加载结果** ”选项时下载的文件列名不同。 对于同一活动，两个不同 CSV 文件中的值可能也有所不同。 例如，CSV 文件的“ **操作** ”列中的活动值可能与显示在“ **审核日志搜索** ”页上的“ **活动** ”列中的“用户友好”名称不同。 例如，分别为“MailboxLogin”与“用户已登录到邮箱”。
 
-- 下载（包含来自不同服务的事件的）搜索查询的所有结果时，CSV 文件中的“AuditData”  列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
+- 下载（包含来自不同服务的事件的）搜索查询的所有结果时，CSV 文件中的“AuditData”列将含有不同属性，具体取决于在哪种服务中执行操作。 例如，来自 Exchange 和 Azure AD 审核日志的条目包含一个名为 **ResultStatus** 的属性，它指示操作是否成功。 来自 SharePoint 的事件不包含此属性。 类似地，SharePoint 事件具有用于标识文件和文件夹相关活动的网站 URL 的属性。 若要缓和此行为，建议使用多个搜索导出单个服务中活动的结果。
 
   有关下载所有结果时 CSV 文件的“ **AuditData** ”列中所列各个属性的说明以及每个属性适用的服务，请参阅 [审核日志中的属性详细信息](detailed-properties-in-the-office-365-audit-log.md)。
 
@@ -685,7 +688,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 下表列出了管理员使用 Microsoft 365 管理中心或 Azure 管理门户添加或更改用户帐户时记录的用户管理活动。
 
-|活动|操作|说明|
+|活动|操作|Description|
 |:-----|:-----|:-----|
 |已添加用户|添加用户|已创建用户帐户。|
 |已更改用户许可证|更改用户许可证|分配给用户的许可证有所更改。 若要查看已更改的许可证，请参阅相应的“ **已更新用户** ”活动。|
@@ -809,7 +812,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 医疗保健活动
 
-如果你的组织正在使用 Microsoft Teams 中的[患者应用程序](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，你可以在审核日志中搜索与使用患者应用相关的活动。 如果你的环境配置为支持患者应用，则可在“活动”  选择器列表中找到这些活动的附加活动组。
+如果你的组织正在使用 Microsoft Teams 中的[患者应用程序](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-app-overview)，你可以在审核日志中搜索与使用患者应用相关的活动。 如果你的环境配置为支持患者应用，则可在“活动”选择器列表中找到这些活动的附加活动组。
 
 ![“活动”选取器列表中的 Microsoft Teams 医疗保健活动](../media/TeamsHealthcareAuditActivities.png)
 
@@ -823,7 +826,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 ### <a name="yammer-activities"></a>Yammer 活动
 
-下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“活动”  列表中的“显示所有活动的结果”  。 使用日期范围框和“ **用户** ”列表，缩小搜索结果的范围。
+下表列出了 Yammer 中记录在审核日志中的用户和管理员活动。 若要从审核日志返回到与 Yammer 相关的活动，必须选择“活动”列表中的“显示所有活动的结果”。 使用日期范围框和“ **用户** ”列表，缩小搜索结果的范围。
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
@@ -996,7 +999,7 @@ Forms 支持在设计表单时和分析响应时进行协作。 表单协作者�
 
 **目前审核的各种 Microsoft 365 服务有哪些？**
 
-已审核最常用的服务，例如 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、高级威胁防护和 Power BI。 有关已审核的服务列表，请参阅[本文开头部分](search-the-audit-log-in-security-and-compliance.md)。
+已审核最常用的服务，例如 Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Directory、Microsoft Teams、Dynamics 365、Defender for Office 365 和 Power BI。 有关已审核的服务列表，请参阅[本文开头部分](search-the-audit-log-in-security-and-compliance.md)。
 
 **哪些活动由 Office 365 中的审核服务进行审核？**
 

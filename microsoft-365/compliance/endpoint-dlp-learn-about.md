@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 365 终结点数据丢失防护
+title: 了解 Microsoft 365 终结点数据丢失防护（预览）
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: d9260da3e007885821441c8217e01650823eb8b4
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768960"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841858"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>了解 Microsoft 365 终结点数据丢失防护（预览）
 
 可以使用 Microsoft 365 数据丢失防护 (DLP) 来监视对确定为敏感的项目执行的操作，并帮助防止意外共享这些项目。 有关 DLP 的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。
 
@@ -69,7 +69,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
  使用 [Microsoft 365 终结点 DLP入门](endpoint-dlp-getting-started.md)中的程序载入设备。
 
-如果你通过 [Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)载入设备，则这些设备将自动显示在设备列表中。
+如果你通过 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 载入设备，则这些设备将自动显示在设备列表中。
 
 ![托管设备列表](../media/endpoint-dlp-learn-about-2-device-list.png)
 
@@ -142,5 +142,5 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - [数据丢失防护概述](data-loss-prevention-policies.md)
 - [创建、测试和优化 DLP 策略](create-test-tune-dlp-policy.md)
 - [活动资源管理器入门](data-classification-activity-explorer.md)
-- [Microsoft Defender 高级威胁防护 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)
 - [内部风险管理](insider-risk-management.md)

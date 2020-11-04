@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446271"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844412"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -35,17 +35,17 @@ ms.locfileid: "48446271"
 
 无论是针对拥有 Exchange Online 邮箱的 Microsoft 365 组织，还是没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织，EOP 都将提供帮助保护你的组织免受虚假（伪造）发件人威胁的功能。
 
-在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 欺骗是黑客使用的一种常见技术。 **欺骗邮件看似来自某人或某处，其实并非其真实来源**。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 EOP 中的反欺骗技术专门检查邮件正文中的“发件人”标头（用于显示电子邮件客户端中的邮件发件人）。 如果 EOP 高度确信“发件人”标头是伪造的，该邮件将被识别为欺骗邮件。
+在为用户提供保护方面，Microsoft 非常重视网络钓鱼的威胁。 欺骗是黑客使用的一种常见技术。 **欺骗邮件看似来自某人或某处，其实并非其真实来源** 。 此技术通常在专门获取用户凭据的网络钓鱼活动中使用。 EOP 中的反欺骗技术专门检查邮件正文中的“发件人”标头（用于显示电子邮件客户端中的邮件发件人）。 如果 EOP 高度确信“发件人”标头是伪造的，该邮件将被识别为欺骗邮件。
 
 EOP 中提供了以下反欺骗技术：
 
-- **欺骗智能**：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- **欺骗智能** ：审查来自内外部域发件人的欺骗邮件，并允许或阻止这些发件人。 有关详细信息，请参阅[在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
-- **反网络钓鱼策略**：在 EOP 中，反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的虚假发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Office 365 高级威胁防护 (Office 365 ATP) 中提供的高级反网络钓鱼策略还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
+- **反网络钓鱼策略** ：在 EOP 中，反网络钓鱼策略使你能够打开或关闭欺骗智能，在 Outlook 中打开或关闭未经身份验证的发件人标识，以及指定针对被阻止的虚假发件人执行的操作（移动到“垃圾邮件”文件夹或隔离）。 Microsoft Defender for Office 365 中提供的高级防钓鱼策略还包含反模拟设置（受保护的发件人和域）、邮箱智能设置和可调整的高级网络钓鱼阈值。 有关详细信息，请参阅 [Microsoft 365 中的防钓鱼策略](set-up-anti-phishing-policies.md)。
 
-- **电子邮件身份验证**：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Microsoft 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
+- **电子邮件身份验证** ：DNS 中的 SPF、DKIM 和 DMARC 记录使用的电子邮件身份验证（也称为电子邮件验证）是任何反欺骗工作必不可少的一部分。 可以为你的域配置这些记录，以便目标电子邮件系统能够检查声称来自域中发件人的邮件的有效性。 对于入站邮件，Microsoft 365 需要针对发件人域的电子邮件身份验证。 有关详细信息，请参阅 [Microsoft 365 中的电子邮件身份验证](email-validation-and-authentication.md)。
 
-从 2018 年 10 月起，在 EOP 中提供防欺骗保护。 在此以前，仅向使用 Office 365 ATP 的组织提供防欺骗保护。
+从 2018 年 10 月起，在 EOP 中提供防欺骗保护。
 
 EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技术组合无法验证的邮件。
 
@@ -55,13 +55,13 @@ EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技�
 
 欺骗邮件会对用户造成以下负面影响：
 
-- **欺骗邮件设备用户**：欺骗邮件可能会欺骗收件人点击链接并放弃使用其凭据、下载恶意软件或向邮件回复敏感内容（称为商务电子邮件入侵或 BEC）。
+- **欺骗邮件设备用户** ：欺骗邮件可能会欺骗收件人点击链接并放弃使用其凭据、下载恶意软件或向邮件回复敏感内容（称为商务电子邮件入侵或 BEC）。
 
   以下是一封具有伪造发件人 msoutlook94@service.outlook.com 的网络钓鱼邮件示例：
 
   ![冒充 service.outlook.com 的网络钓鱼邮件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-  此邮件并非来自 service.outlook.com，而是攻击者伪造“**发件人**”标头字段，使它看起来像是这样。 这种做法试图欺骗收件人单击“**更改密码**”链接并放弃使用其凭据。
+  此邮件并非来自 service.outlook.com，而是攻击者伪造“ **发件人** ”标头字段，使它看起来像是这样。 这种做法试图欺骗收件人单击“ **更改密码** ”链接并放弃使用其凭据。
 
   以下邮件是使用欺骗电子邮件域 contoso.com 的 BEC 示例：
 
@@ -69,7 +69,7 @@ EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技�
 
   该邮件看似合法，但发件人其实是伪造的。
 
-- **用户混淆了真实邮件和虚假邮件**：即使是知道网络钓鱼的用户也可能很难看出真实邮件与欺骗邮件之间的差异。
+- **用户混淆了真实邮件和虚假邮件** ：即使是知道网络钓鱼的用户也可能很难看出真实邮件与欺骗邮件之间的差异。
 
   例如，以下是来自 Microsoft 安全帐户部门的真实密码重置邮件的示例：
 
@@ -81,7 +81,7 @@ EOP 可分析并阻止标准电子邮件身份验证方法和发件人信誉技�
 
 Microsoft 区分两种不同类型的欺骗邮件：
 
-- **组织内欺骗**：也称为 _自我欺骗_。 例如：
+- **组织内欺骗** ：也称为 _自我欺骗_ 。 例如：
 
   - 发件人和收件人位于同一域：
     > 发件人：chris@contoso.com <br/> 收件人：michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，11 表示组织内欺骗。
 
-- **跨域欺骗**：发件人和收件人域不同，相互之间没有任何关系（也称为外部域）。 例如：
+- **跨域欺骗** ：发件人和收件人域不同，相互之间没有任何关系（也称为外部域）。 例如：
     > 发件人：chris@contoso.com <br/> 收件人：michelle@tailspintoys.com
 
   由于跨域欺骗而导致未通过[复合身份验证](email-validation-and-authentication.md#composite-authentication)的邮件包含以下标头值：
@@ -123,9 +123,9 @@ Microsoft 区分两种不同类型的欺骗邮件：
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>关于被标记为欺骗邮件的邮件数的报告
 
-EOP 组织可在安全与合规性中心的“报告”仪表板中使用**欺骗检测**报告。 有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
+EOP 组织可在安全与合规性中心的“报告”仪表板中使用 **欺骗检测** 报告。 有关详细信息，请参阅[欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
-Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
+Microsoft Defender for Office 365 组织可使用安全与合规中心中的威胁资源管理器查看有关钓鱼网站尝试的信息。 有关详细信息，请参阅 [Microsoft 365 威胁调查和响应](office-365-ti.md)。
 
 ## <a name="problems-with-anti-spoofing-protection"></a>反欺骗防护方面的问题
 
@@ -137,7 +137,7 @@ Office 365 ATP 组织可使用安全与合规性中心中的威胁资源管理�
 
 邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <br/><br/> 有人想本周一起去瑞尼尔山 赏鸟吗？ <br/><br/> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> **主题：** [赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <br/><br/> 有人想本周一起去瑞尼尔山 赏鸟吗？ <br/><br/> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
 
 要帮助邮件列表邮件通过反欺骗检查，请根据是否控制邮件列表执行以下操作：
 

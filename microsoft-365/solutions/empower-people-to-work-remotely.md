@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: 配置安全和服务基础结构，使你的员工能够随时随地进行远程工作。
-ms.openlocfilehash: 60467f0ed3cf7aa75481cb3bb49f954c32bf2e7d
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681392"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845236"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -79,7 +79,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 |:-------|:-----|:-------|
 | 通过安全性默认设置强制执行 MFA   | 通过请求第二种形式的登录身份验证，抵御遭到入侵的身份和设备的威胁。安全性默认设置要求对所有用户帐户进行 MFA。   | Microsoft 365 E3 或 E5 |
 | 通过条件访问强制执行 MFA| 要求基于使用条件访问策略的登录的属性进行 MFA。    | Microsoft 365 E3 或 E5 | 
-| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Azure 高级威胁防护的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） | 
+| 通过基于风险的条件访问强制执行 MFA   | 需要基于使用 Microsoft Defender for Identity 的用户登录的风险进行 MFA。 | Microsoft 365 E5 或 E3（含 Azure AD Premium P2 许可） | 
 | 自助服务密码重置 (SSPR)    | 允许用户重置或解锁其密码或帐户。  | Microsoft 365 E3 或 E5 |
 | Azure AD 应用程序代理    | 为 Intranet 服务器上托管的基于 Web 的应用程序提供安全的远程访问权限。   | 需要单独的付费 Azure 订阅 |
 | 配置点到站点 VPN   | 通过 Azure 虚拟网络创建从远程工作者的设备到 intranet 的安全连接。   | 需要单独的付费 Azure 订阅 |
