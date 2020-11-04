@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: 了解如何设置团队以根据其敏感度保护你的数据
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 了解如何在团队中设置安全内容协作，以根据数据敏感度保护您的数据。
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843536"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906795"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>与 Microsoft 365 建立安全协作
 
 能够在阻止 oversharing 的情况下轻松地与适当的人共享信息是组织成功的关键。 这包括能够安全地与仅有权访问的人共享敏感数据。 这可能包括与组织外部的人员共享敏感数据，具体取决于项目。
 
-本解决方案指南包括两个组件，可帮助您：
+此协作解决方案指南包括两个组件，可帮助您执行以下操作：
 - 部署具有针对每个项目的适当级别保护的 Microsoft 团队
 - 为每个项目配置具有适当安全设置的外部共享
 
 ![使用适当的安全设置来部署具有适当保护的团队并配置外部共享](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-如果功能丰富且易于使用的协作工具不可用，则用户通常会通过电子邮件进行协作。 这是一种单调乏味且容易出错的协作方法，并且可能会增加不适当共享信息的风险。 如果人员发现共享信息过于困难，他们可以使用不受 IT 管理的消费者产品回复。 这可能会带来更大的风险。
+如果功能丰富且易于使用的内容协作工具不可用，则用户通常会通过电子邮件进行协作。 这是一种单调乏味且容易出错的协作方法，并且可能会增加不适当共享信息的风险。 如果人员发现共享信息过于困难，他们可以使用不受 IT 管理的消费者产品回复。 这可能会带来更大的风险。
 
 使用 Microsoft 365，可以部署具有多种配置的团队，以帮助：
 
@@ -60,7 +62,7 @@ ms.locfileid: "48843536"
 
 若要配置安全 collabration，请使用以下 Microsoft 365 功能和功能。
 
-| 产品或组件 | 功能或特性 | 许可 |
+| 产品或组件 | 功能或特性 | 授权 |
 |:-------|:-----|:-------|
 | Microsoft Defender for Office 365 | SPO、OneDrive 和团队的安全附件;安全文档;团队的安全链接    | Microsoft 365 E1、E3 和 E5 |
 | SharePoint    | 网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置 | Microsoft 365 E1、E3 和 E5 |

@@ -1,5 +1,5 @@
 ---
-title: 自定义文件存储和共享的团队网站-SharePoint Online
+title: 自定义用于文件存储和共享的 SharePoint 团队网站
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: 在本文中，您将了解如何自定义、组织和管理团队网站以实现文件存储和共享。
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何使用文档库、列表和中心来自定义、组织和管理 SharePoint 团队网站。
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644563"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906485"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
@@ -39,7 +40,7 @@ ms.locfileid: "48644563"
   
 [在 SharePoint 中创建团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-下面是一些说明和链接，可帮助您自定义、组织和管理您的团队网站。 
+下面是一些说明和链接，可帮助您自定义、组织和管理您的团队网站。
   
  
 ## <a name="customize-your-team-site"></a>自定义您的工作组网站
@@ -60,7 +61,7 @@ ms.locfileid: "48644563"
   
 ## <a name="work-with-document-libraries"></a>使用文档库
 
-工作组网站包含可立即开始使用的文档库。 
+工作组网站包含一个文档库，您可以立即开始使用它来进行文件存储和文档管理。
 
 若要开始上载，请参阅将 [文件夹或文件上传到文档库](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
@@ -70,7 +71,7 @@ ms.locfileid: "48644563"
   
 ## <a name="work-with-lists-to-organize-data"></a>使用列表来组织数据
 
-SharePoint 包含许多可添加到网站的列表模板，如链接列表、日历、联系人或任务。 
+SharePoint 包含许多可添加到网站的列表模板，如链接列表、日历、联系人或任务。
   
 了解如何 [在 SharePoint 中创建列表](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online)。
   
@@ -82,7 +83,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
 
 ## <a name="organize-sites-into-hubs"></a>将网站组织到集线器中
 
-您的团队网站与网站相关联的组的所有成员几乎共享所有内容。 如果要为特定客户提供单独的网站，可以创建其他团队网站，并使用 SharePoint 中心网站对其进行管理。 以下是详细信息。 
+您的团队网站与网站相关联的组的所有成员几乎共享所有内容。 如果要为特定客户提供单独的网站，可以创建其他团队网站，并使用 SharePoint 中心网站对其进行管理。 以下是详细信息。
   
 中心网站允许您添加和关联网站。 有关详细信息，请参阅 [什么是 SharePoint 中心网站？](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)。
   
@@ -92,7 +93,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 ## <a name="sharing-files-with-the-team"></a>与团队共享文件
 
-在存储和组织开始时，与团队和外部客户端共享也很重要。 下面是一些主题的链接，这些主题将帮助您管理用户并共享数据。 
+当文件存储和文档管理开始时，与团队和外部客户端共享也很重要。 下面是一些主题的链接，这些主题将帮助您管理用户并共享数据。
   
 若要与你的团队共享文件，请参阅 [在 Microsoft 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
   
@@ -100,7 +101,7 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 ## <a name="managing-users-and-groups"></a>管理用户和组
 
-在管理团队网站时，您可能必须添加或删除用户。 下面的信息可帮助您了解、添加和管理团队网站上的用户。 
+在管理团队网站时，您可能必须添加或删除用户。 下面的信息可帮助您了解、添加和管理团队网站上的用户。
   
 查看带有 [了解和管理组](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)的组的视频。 
   
@@ -119,6 +120,3 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   - [使用 Microsoft 365 在 Windows Phone 上设置 Office](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [了解有关使用 OneDrive 的详细信息](https://go.microsoft.com/fwlink/?LinkID=511458)。
-    
-
-

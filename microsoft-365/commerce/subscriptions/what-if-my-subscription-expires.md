@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646867"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906819"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
-如果你的订阅结束（因为它已过期或你决定取消），则在订阅完全关闭之前，你对 Microsoft 365 服务、应用程序和客户数据的访问会经历多个状态，或 *deprovisioned*。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Microsoft 365，请先备份你的数据，然后再将其最终删除。
+如果你的订阅结束（因为它已过期或你决定取消），则在订阅完全关闭之前，你对 Microsoft 365 服务、应用程序和客户数据的访问会经历多个状态，或 *deprovisioned* 。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Microsoft 365，请先备份你的数据，然后再将其最终删除。
 
 请阅读此重要信息，然后再联系 [Microsoft 365 支持部门](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
   
@@ -44,7 +44,7 @@ ms.locfileid: "48646867"
 
 下表介绍了付费 Microsoft 365 for business 订阅过期时的预期效果。
 
-| **Active**                                                             | **过期 <br/> (30 天 \*) **                                                | **已禁用 <br/> (90 天 \*) **                                               | **已取消设置**                                                                         |
+| **Active**                                                             | **过期 <br/> (30 天 \*)**                                                | **已禁用 <br/> (90 天 \*)**                                               | **已取消设置**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了数据删除的 <br/> Azure Active Directory （如果未被其他服务使用）** |
 | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限   | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限              | 用户无法访问 Microsoft 365、文件或应用程序                        | 用户无法访问 Microsoft 365、文件或应用程序                                     |
@@ -203,6 +203,10 @@ ms.locfileid: "48646867"
 > [!NOTE]
 > 添加已 deprovisioned 的相同类型的新订阅不会还原与 deprovisioned 订阅关联的数据。
 
+
+> [!NOTE]
+> 如果 CSP 许可证已挂起，则没有30天的宽限期，并且服务会立即禁用。 如果未通过添加新许可证重新激活租户，则将在90天后删除数据。
+
 ### <a name="what-happens-when-my-trial-ends"></a>我的试用版结束时会发生什么？
 
 试用版结束后，将无法继续使用 Microsoft 365 免费版。 您有几个选项：
@@ -237,3 +241,4 @@ ms.locfileid: "48646867"
 [取消订阅](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (文章) \
 [续订 Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (文章) \
 [重新激活订阅](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (文章) 
+

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 安全中心概述
-description: 介绍在 Microsoft 标识、数据、设备和应用程序中监视和管理安全性的新的主页。
+title: 概述-Microsoft 365 安全中心
+description: 介绍如何通过 microsoft 365 安全性在 Microsoft 标识、数据、设备和应用程序之间监视和管理安全性。
 keywords: security、恶意软件、Microsoft 365、M365、security center、monitor、report、身份、数据、设备、应用程序
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -16,12 +16,13 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844796"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906833"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 

@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
-description: 了解如何在你的订阅过期后重新激活它，或者如果 Microsoft 禁用它，或者在中间将其取消。
-ms.openlocfilehash: cbd5fbc5bd6423f6583701682e63ed93206b562e
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: 了解如何在订阅过期、已禁用或已取消时重新激活订阅。
+ms.openlocfilehash: 36d82699f6eb0c1cd4a1c404d7b030a865111d03
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324288"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906771"
 ---
 # <a name="reactivate-your-subscription"></a>重新激活订阅
 
@@ -38,7 +38,7 @@ ms.locfileid: "47324288"
 
 ::: moniker-end
 
-如果你的订阅过期，或已被 Microsoft 禁用，或者你在订阅期限中间取消了订阅，你可以在管理中心重新激活它。
+在以下情况下，您可以在管理中心中重新激活订阅：订阅过期、被 Microsoft 禁用或在订阅期限中间取消。
   
 ## <a name="before-you-begin"></a>准备工作
 
@@ -50,19 +50,19 @@ ms.locfileid: "47324288"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心中，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
-2. 在 " **产品** " 选项卡上，找到要重新激活的订阅。 选择 " **更多操作** (三个点) ，然后选择" **重新激活此订阅**"。
-    如果看不到 " **重新激活此订阅**"，请 [与支持人员联系](../../admin/contact-support-for-business-products.md)。
-3. 在 " **重新激活此订阅** " 窗格中，从下拉列表中选择一种付款方式，或选择 " **添加付款方式**"。
-4. 选择 **“保存”**。
+1. 在管理中心中，转到“ **计费** ”\>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+2. 在“ **产品** ”选项卡上，找到要重新激活的订阅。 选择 " **更多操作** (三个点) ，然后选择" **重新激活此订阅** "。
+    如果看不到 " **重新激活此订阅** "，请 [与支持人员联系](../../admin/contact-support-for-business-products.md)。
+3. 在“ **重新激活此订阅** ”窗格中，从下拉列表中选择支付方式，或选择“ **添加付款方式** ”。
+4. 选择“ **保存** ”。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
   
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“ **计费** ”\>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">订阅</a>”页面。
 
-2. 找到要重新激活的订阅，然后选择 " **重新激活**"。
+2. 找到要重新激活的订阅，然后选择 " **重新激活** "。
 
     ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
@@ -81,9 +81,9 @@ ms.locfileid: "47324288"
 
 ::: moniker range="o365-21vianet"
   
-1. 在管理中心，转到“**计费**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
+1. 在管理中心，转到“ **计费** ”\>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">订阅</a>”页面。
 
-2. 找到要重新激活的订阅，然后选择 " **重新激活**"。
+2. 找到要重新激活的订阅，然后选择 " **重新激活** "。
 
     ![使用 "重新激活" 按钮显示禁用和缩减功能的订阅卡的特写。](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   

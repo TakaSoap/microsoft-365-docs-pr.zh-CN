@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845272"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906747"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>在 Microsoft 365 中部署威胁防护功能
 
@@ -77,5 +77,3 @@ Microsoft 安全解决方案内置在我们的产品和服务中。 自动化和
 您的威胁防护功能可以并行配置，因此，如果您有多个负责不同服务的网络安全团队，则可以同时配置组织的保护功能。 下图说明了部署威胁防护功能的高级别过程。 
 
 ![部署威胁防护功能的过程](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

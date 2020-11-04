@@ -1,5 +1,5 @@
 ---
-title: 关于域的常见问题解答
+title: 常见的域常见问题
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 通过查找您的常见问题的答案，了解有关域的详细信息。
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 通过在 FAQ 中查找问题的答案，了解有关域 (.onmicrosoft 域和传输域) 的详细信息。
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644575"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906473"
 ---
 # <a name="domains-faq"></a>关于域的常见问题解答
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 管理中心正在发生改变。 如果你的体验与此处提供的详细信息不匹配，请参阅[有关新版 Microsoft 365 管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview)。
 
 ::: moniker-end
 
@@ -73,7 +74,7 @@ ms.locfileid: "48644575"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何验证我的域的 SPF 记录？
 
-必须具有或  **仅为 SPF 创建一个 TXT 记录**，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Microsoft 365 值，而不是创建一个新的。 在添加或更新了 Microsoft 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
+必须具有或  **仅为 SPF 创建一个 TXT 记录** ，这一点非常重要。 如果已有 SPF 记录，则应向其追加新的 Microsoft 365 值，而不是创建一个新的。 在添加或更新了 Microsoft 电子邮件的 SPF 记录后，应进行检查以确保使用以下工具之一时的语法正确： 
   
 - [SPF 记录测试工具](http://www.kitterman.com/spf/validate.html)
     
@@ -85,7 +86,7 @@ ms.locfileid: "48644575"
 
 域是 **@** 注册电子邮件地址后和 Web 地址中 **www.** 后显示的唯一名称。 它通常采用您组织的名称和标准 Internet 后缀的形式，如  *yourbusiness.com*  或  *stateuniversity.edu。* 
   
-将自定义域（如 "** \@ contoso.com**"）与 Microsoft 365 结合使用，可以帮助为你的品牌建立可信度和认可。 
+将自定义域（如 " **\@ contoso.com** "）与 Microsoft 365 结合使用，可以帮助为你的品牌建立可信度和认可。 
   
 你可以 [在 Microsoft 365 中购买域，我们将自动对其进行设置](../get-help-with-domains/buy-a-domain-name.md)，也可以从域注册机构购买或将已有的域引入。
     
@@ -125,25 +126,25 @@ ms.locfileid: "48644575"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
+1. 在管理中心，转到“ **设置** ”\>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
+1. 在管理中心，转到“ **设置** ”>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">域</a>”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在管理中心，转到“**设置**”>“<a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
+1. 在管理中心，转到“ **设置** ”>“ <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">域</a>”页面。
 
 ::: moniker-end
     
 2. 在 " **域** " 页上，选择要将其设置为新电子邮件地址的默认域的域。 
     
-3. 选择“**设为默认值**”。
+3. 选择“ **设为默认值** ”。
     
 ::: moniker range="o365-worldwide"
 
@@ -206,9 +207,9 @@ ms.locfileid: "48644575"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>为什么我有 "onmicrosoft.com" 域？
 
-当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.com*。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.com*。 
+当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.com* 。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.com* 。 
   
- **如果您想让您的电子邮件看起来像 *alan \@ contoso.com*：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) " 中的步骤（如果已将其拥有）。 
+ **如果您想让您的电子邮件看起来像 *alan \@ contoso.com* ：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) " 中的步骤（如果已将其拥有）。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.com"，则不能将其更改为 "fabrikam.onmicrosoft.com"。 若要使用不同的 onmicrosoft.com 域，您必须启动一个使用 Microsoft 365 的新订阅。 
     
@@ -223,9 +224,9 @@ ms.locfileid: "48644575"
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>为什么我有 "onmicrosoft.de" 域？
 
-当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.de*。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.de*。 
+当您注册服务时，Microsoft 365 将为您创建一个域，如 *contoso.onmicrosoft.de* 。 注册时创建的用户 ID 包括域，如 *alan@contoso.onmicrosoft.de* 。 
   
- **如果您想让您的电子邮件看起来像 *alan@contoso.de*：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) 中的步骤" 中的步骤。如果你已拥有它。 
+ **如果您想让您的电子邮件看起来像 *alan@contoso.de* ：** [购买域](../get-help-with-domains/buy-a-domain-name.md) ，或者只需按照 " [将用户和域添加到 Microsoft 365](add-domain.md) 中的步骤" 中的步骤。如果你已拥有它。 
   
 - **注册后，不能重命名 .onmicrosoft 域。** 例如，如果您选择的初始域是 "fourthcoffee.onmicrosoft.de"，则不能将其更改为 "fabrikam.onmicrosoft.de"。 若要使用不同的 onmicrosoft.de 域，您必须启动一个使用 Microsoft 365 的新订阅。 
     
@@ -239,7 +240,7 @@ ms.locfileid: "48644575"
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何验证我的非盈利或教育状态？
 
-1. 在[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)中选择 "**设置**" 以启动向导。  (务必先登录到 Microsoft 365。 )  
+1. 在 [管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)中选择 " **设置** " 以启动向导。  (务必先登录到 Microsoft 365。 )  
     
 2. 若要成为你的学校的管理员，请选择 "在 Microsoft 365 中  **成为管理员** " 选项。 
     

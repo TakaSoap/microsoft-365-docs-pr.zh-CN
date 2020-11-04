@@ -13,15 +13,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: 将 Microsoft 365 配置为在邀请外部用户在团队中进行协作和共享 Sharepoint 网站时启用共享和其他安全性。
-ms.openlocfilehash: 11359e2de358d5673da6c39ca2d419c94349a829
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: 了解如何配置 Microsoft 365 应用程序（如团队、OneDrive 和 SharePoint）与组织外部的人员进行协作。
+ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377409"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906985"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 

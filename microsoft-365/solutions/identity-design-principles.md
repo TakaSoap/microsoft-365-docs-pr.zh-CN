@@ -1,6 +1,6 @@
 ---
-title: To identity and 超越-一个架构师的视点
-description: 说明。
+title: Microsoft 365 企业资源规划-安全体系结构
+description: 了解 Microsoft 企业体系结构的顶级设计策略，从 Alex Shteynberg，技术主体架构师到 Microsoft。
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845248"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906891"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>To identity and 超越-一个架构师的视点
 
@@ -284,7 +285,7 @@ Office 365 具有 [统一的审核日志](https://docs.microsoft.com/microsoft-3
 
 高级别图表：
 
-![日志流的高级别关系图](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![安全与合规性计划的日志源关系图](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 上图表示将日志发送到事件中心和/或 azure 存储和/或 Azure 日志分析的内置功能。 并非所有系统都包含此现成的。 但也可以通过其他方法将这些日志发送到同一个存储库。 例如，请参阅 [使用 Azure Sentinel 保护你的团队](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 

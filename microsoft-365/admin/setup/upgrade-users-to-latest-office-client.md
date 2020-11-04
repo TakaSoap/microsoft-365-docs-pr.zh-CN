@@ -1,5 +1,5 @@
 ---
-title: 将 Microsoft 365 for business 用户升级到最新的 Office 客户端
+title: 将 Office 2010 升级到 Microsoft 365-Microsoft 365 管理
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -16,16 +16,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.custom:
+- fwlink 824861; CampaignID
+- O365_Comm_SR_UpgradeOffice
+- seo-marvel-may2020
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
-description: 了解如何将用户升级到最新的 Office 客户端。
-ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+description: 了解如何为组织中的用户将 Microsoft Office 升级到最新的 Office 客户端。
+ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456313"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906437"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>将 Microsoft 365 for business 用户升级到最新的 Office 客户端
 
@@ -47,7 +50,7 @@ Office 2010 在2020年10月13日到达其支持的结束。 Microsoft 将不再�
 
  如果你不是管理员，并且拥有 [Microsoft 365 系列](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) 产品，请参阅 [如何升级 office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) 以获取有关升级旧版 office 的信息。
 
-## <a name="get-ready-to-upgrade"></a>准备升级
+## <a name="get-ready-to-upgrade-to-microsoft-365"></a>准备升级到 Microsoft 365
 
 作为管理员，您可以控制组织中的 Office 用户可以安装的版本。 强烈建议您在组织中运行较早版本的 Office 的用户（如 Office 2010、Office 2013 或 Office 2016 升级到最新版本，以充分利用其安全性和生产率改进。
 

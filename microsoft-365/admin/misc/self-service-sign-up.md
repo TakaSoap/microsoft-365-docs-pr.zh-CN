@@ -1,5 +1,5 @@
 ---
-title: 在组织中使用自助式注册
+title: 在组织中使用自助服务注册
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,17 +19,17 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: 了解 Microsoft 365 自助注册和可用自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 for 金融。
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+description: 了解 Microsoft 365 自助注册和可使用的自助服务程序，如 Microsoft Power Apps、Microsoft Flow 和 Dynamics 365 for 金融。
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324476"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906569"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>在组织中使用自助式注册
+# <a name="using-self-service-sign-up-in-your-organization"></a>在组织中使用自助服务注册
 
-自助注册使组织中的用户能够更轻松地注册来自 Microsoft 的联机服务。 我们将此注册过程称为 "自助注册"，因为用户可以注册以使用订阅付费的服务，也可以使用免费服务，而无需让您代表自己执行操作。
+自助服务注册使组织中的用户可以更轻松地注册来自 Microsoft 的联机服务。 我们称之为 "自助服务注册" 这一注册过程，因为用户可以注册以使用订阅付费的服务，或使用免费服务，而无需让您代表自己执行操作。
   
 ## <a name="how-self-service-sign-up-works"></a>自助服务注册的工作原理
 
@@ -44,9 +44,8 @@ ms.locfileid: "47324476"
 
 以下是当前可用的自助服务程序。 在添加新程序时，将更新此列表。
   
-|||||
+| 程序 <br/> | 说明 <br/> | 其他信息 <br/> | 自助服务注册的网站 <br/> |
 |:-----|:-----|:-----|:-----|
-|**程序** <br/> |**说明** <br/> |**其他信息** <br/> |自助注册的网站 * * * * <br/> |
 |Office 365 A1 * * * * <br/> |任何学生或教师都可以使用学校电子邮件地址注册免费的 Office 365，并获取适用于 web 的 Office 应用、1 TB 的 OneDrive 云存储空间、团队和项目网站的 SharePoint Online。  <br/> |[Office 365 教育版技术常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |符合条件的学生和教师可以注册 Office 365 A1 Plus，其中包括上文提到的所有内容以及适用于企业的 Microsoft 365 应用程序。 适用于企业的 Microsoft 365 应用程序是生产力软件，包括 Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access 和 Skype for Business 等安装在台式计算机或便携式计算机上的软件。  <br/> |[Office 365 教育版技术常见问题解答](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI 使用户能够以直观的新方式可视化数据、共享发现和进行协作。 <br/> 如果你的组织已订阅，你可能还会看到 "Power BI Pro 个人用户试用" 的许可证，它为用户提供了对高级功能的有限、免费访问权限。  <br/> |[组织中的 Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
@@ -54,7 +53,7 @@ ms.locfileid: "47324476"
 |**Microsoft Power Apps** <br/> |在 PowerApps 中，可以通过运行您创建的应用程序或其他人创建并与您共享的应用程序来管理组织数据。 在手机等移动设备上运行的应用程序，也可以通过打开 Dynamics 365 在浏览器中运行这些应用程序。 您可以创建无限多个应用程序-所有这些都不学习 c # 等编程语言。  <br/> |[为 PowerApps 注册自助服务](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**适用于财务的 Dynamics 365** <br/> |为中小型企业获取完整的业务和财务管理解决方案。 Dynamics 365 for 金融使排序、销售、开票和报告变得更加轻松—从第一天开始。  <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[适用于财务的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**适用于操作的 Microsoft Dynamics 365** <br/> |提高开展业务的速度。 Dynamics 365 for Operations 中的完整 ERP 工具提供了全球可扩展性和数字智能，可帮助你在你的步调中发展。  <br/> |[适用于操作的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[适用于操作的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
-|**Microsoft AppSource** <br/> |Microsoft AppSource 是基于 Microsoft 云平台构建的软件即服务业务应用程序的目标。 AppSource 功能可扩展 Microsoft 产品（如 Azure、Dynamics 365、Office 365 和 Power BI）功能的数百个应用、加载项和内容包。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
+|**Microsoft AppSource** <br/> |Microsoft AppSource 是基于 Microsoft 云平台构建的软件即服务业务应用程序的目标。 AppSource 功能数百个应用、加载项和内容包可扩展 Microsoft 产品（如 Azure、Dynamics 365、Office 365 和 Power BI）的功能。  <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |[Microsoft AppSource](https://go.microsoft.com/fwlink/p/?linkid=841474) <br/> |
 |**Microsoft 合作伙伴激励** <br/> |Microsoft 合作伙伴网络提供了三种类型的成员身份。 每种类型都提供了一系列优势来帮助您的业务增长。 在实现目标时，请在适合您的独特需求的级别加入该计划，以了解更多好处，并在网络中与我们和其他合作伙伴建立关系。  <br/> |[Microsoft 合作伙伴激励](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |[Microsoft 合作伙伴激励](https://go.microsoft.com/fwlink/p/?linkid=841469) <br/> |
 |**Microsoft Business Center** <br/> |Microsoft Business Center 是通过 Microsoft 产品和服务协议 (MPSA) 进行购买的客户的门户。 <br/> |[快速入门：注册 Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841479) <br/> |[Microsoft Business Center](https://go.microsoft.com/fwlink/p/?linkid=841470) <br/> |
 |**Microsoft 批量许可证服务中心** <br/> |Microsoft 批量许可证服务中心显示在企业、选择、教育 (校园或学校) 、开放价值、开放许可证和 ISV 版税协议中购买的许可证。  <br/> |[VLSC 培训和资源](https://www.microsoft.com/en-us/Licensing/existing-customer/vlsc-training-and-resources.aspx) <br/> |[批量许可服务中心](https://www.microsoft.com/Licensing/servicecenter/default.aspx) <br/> |
