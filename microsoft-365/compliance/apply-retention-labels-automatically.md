@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
-ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
+ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "48740266"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877299"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -75,22 +75,22 @@ ms.locfileid: "48740266"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
+        - “ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”
         
     - 如果你没有使用记录管理：
-       - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
+       - “ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
 
 2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
+    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“**将此标签自动应用到特定的内容类型**”，然后选择“**完成**”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
+3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“ **将此标签自动应用到特定的内容类型** ”，然后选择“ **完成** ”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>步骤 2：创建自动应用策略
@@ -99,13 +99,13 @@ ms.locfileid: "48740266"
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
-    - 如果你正在使用记录管理：“**信息治理**”：
+    - 如果你正在使用记录管理：“ **信息治理** ”：
         - **“解决方案”** > **“记录管理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
     - 如果你没有使用记录管理：
         - **“解决方案”** > **“信息治理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
-    没有立即看到你的选项？ 首先选择“**全部显示**”。 
+    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
 
 2. 按照“创建自动标记向导”中的提示进行操作。
     
@@ -128,7 +128,7 @@ ms.locfileid: "48740266"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
-为敏感信息创建自动应用保留标签时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自“**隐私**”类别的美国 ITIN、SSN 和护照号码，以及**美国个人身份信息（PII）数据模板**：
+为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自“ **隐私** ”类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息（PII）数据模板** ：
 
 ![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
@@ -136,9 +136,9 @@ ms.locfileid: "48740266"
 
 选择策略模板后，可添加或删除任意类型的敏感信息，且可更改实例计数和匹配准确度。 在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
   
-- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小**匹配准确度越低，内容越容易与条件匹配。
+- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小** 匹配准确度越低，内容越容易与条件匹配。
 
-- 内容包含 1 到 9 个这三种敏感信息类型的实例。 可删除“**至**”值，将其更改为“**任何**”。
+- 内容包含 1 到 9 个这三种敏感信息类型的实例。 可删除“ **至** ”值，将其更改为“ **任何** ”。
 
 有关这些选项的详细信息，请参阅 DLP 文档中的以下指南“[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)”。
     
@@ -174,7 +174,7 @@ ms.locfileid: "48740266"
 > [!NOTE]
 > 保留和删除 Teams 会议记录将在预览中进行，记录保存到 OneDrive 或 SharePoint 前，将无法正常工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
 
-若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为**关键字查询编辑器**指定以下内容：
+若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为 **关键字查询编辑器** 指定以下内容：
 
 ``` 
 ProgID:Media AND ProgID:Meeting
@@ -182,24 +182,24 @@ ProgID:Media AND ProgID:Meeting
 
 对于此保留标签，还必须通过创建标签策略将其发布到相关用户的 OneDrive 帐户或 SharePoint 网站。 大多数情况下，会议记录将保存到 OneDrive，但对于渠道会议，它们将保存在 SharePoint 中。
 
-保存了自动应用策略时：
+保存了自动应用保留标签策略时：
 
 1. 选择 **“标签策略”** 选项卡，> **“发布标签”**
 
-2. 系统提示选择标签时，选择用 KQL 查询创建的标签，标识 Teams 会议记录。
+2. 当系统提示你选择标签时，请选择与自动应用策略所选标签相同的标签，该策略用于标识 Teams 会议记录。
 
-3. 系统提示位置时，请选择 **“SharePoint 网站”** 和 **“OneDrive 帐户”**。 然后，可保留**所有**的默认值，或指定单独的位置，例如包含或排除特定 OneDrive 帐户。
+3. 系统提示位置时，请选择 **“SharePoint 网站”** 和 **“OneDrive 帐户”** 。 然后，可保留 **所有** 的默认值，或指定单独的位置，例如包含或排除特定 OneDrive 帐户。
 
 4. 完成向导并保存此标签策略。
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
-选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含**简历**、**源代码**、**有针对性的骚扰**、**侮辱**和**威胁**：
+选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含 **简历** 、 **源代码** 、 **有针对性的骚扰** 、 **侮辱** 和 **威胁** ：
 
 ![选择可训练分类器](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> 我们正在弃用**冒犯性语言**内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用**针对性的骚扰**、**侮辱**和**猥亵**内置分类器。
+> 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用 **针对性的骚扰** 、 **侮辱** 和 **猥亵** 内置分类器。
 
 要通过此选项自动应用标签，SharePoint 网站和邮箱必须至少有 10 MB 的数据。
 
@@ -214,7 +214,7 @@ ProgID:Media AND ProgID:Meeting
   
 ![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-如果 7 天后未显示期望的标签，请从合规中心的**标签策略**页面中检查自动应用策略的**状态**。 如果看到**关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
+如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态** 。 如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -236,4 +236,4 @@ ProgID:Media AND ProgID:Meeting
 
 ## <a name="next-steps"></a>后续步骤
 
-有关使用事件驱动的保留和 SharePoint 中带有托管属性的自动应用策略来开启保留期的示例方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。
+有关使用事件驱动的保留和 SharePoint 中带有托管属性的自动应用保留标签策略来开启保留期的示例方案，请参阅[使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)。
