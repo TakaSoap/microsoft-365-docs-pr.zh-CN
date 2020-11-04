@@ -2,7 +2,7 @@
 title: 启用报表消息加载项
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: Admin
@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何为单个用户或您的整个组织启用 Outlook 和 web 上的 outlook 和 Outlook 网页版报告消息外接程序。
-ms.openlocfilehash: d760aa5d58e628872682131efae9d9c3b3c46734
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842448"
+ms.locfileid: "48877749"
 ---
 # <a name="enable-the-report-message-add-in"></a>启用报表消息加载项
 

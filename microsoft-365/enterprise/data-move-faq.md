@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 查找有关将核心数据移动到新的 Office 365 datacenter geo 的常见问题 (Faq) 的解答。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 043c5ee5206b30cbbc656c8886c806c2b7c2361c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 3eb3b7ec99da2cdca357f45eb4e71500a235fc61
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333566"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877821"
 ---
 # <a name="data-move-general-faq"></a>数据移动常见问题解答
 
@@ -28,10 +28,10 @@ ms.locfileid: "48333566"
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>哪些客户有资格请求移动？
   
-选择符合新数据中心地理位置的国家/地区的现有 Microsoft 365 商业客户将能够请求移动。  此程序仅适用于分配有符合条件的国家/地区代码的租户，以将核心客户数据迁移到 Microsoft 365 租户，以将适用的工作负载迁移到相应的 Microsoft 365 数据中心地理位置。  请参阅 how [to request the data move](request-your-data-move.md) page，确认国家/地区的资格。   
+选择符合新数据中心地理位置的国家/地区的现有 Microsoft 365 商业客户将能够请求移动。  此程序仅适用于分配有符合条件的国家/地区代码的租户，以将核心客户数据迁移到 Microsoft 365 租户，以将适用的工作负载迁移到相应的 Microsoft 365 数据中心地理位置。  请参阅 how [to request the data move](request-your-data-move.md) page，确认国家/地区的资格。   
 
 ## <a name="how-do-we-define-core-customer-data"></a>如何定义核心客户数据？
- 
+ 
 Core customer data 是一个术语，指的是在 [Microsoft Online Services 术语](https://aka.ms/ost)中定义的客户数据子集： 
 - Exchange Online 邮箱内容 (电子邮件正文、日历条目和电子邮件附件的内容) 
 - SharePoint Online 网站内容和该网站中存储的文件
@@ -43,7 +43,7 @@ Core customer data 是一个术语，指的是在 [Microsoft Online Services 术
 - 工作组聊天邮件，包括私人邮件和频道消息。 
 - 在聊天中使用的团队图像。 
 
-团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。  语音邮件、日历、聊天历史记录和联系人存储在 Exchange Online 中。  在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Microsoft 365 迁移计划的一部分。
+团队文件存储在 SharePoint Online 中，团队聊天文件存储在 OneDrive for Business 中。  语音邮件、日历和联系人存储在 Exchange Online 中。  在许多情况下，Exchange Online、SharePoint Online 和 OneDrive for business 已由本地数据中心地理位置的客户使用，并且也是适用于符合条件的客户国家/地区的 Microsoft 365 迁移计划的一部分。
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>在什么时候完成了我的迁移，以便我的租户的核心客户数据存储在我的新 geo 中的地方？
 
@@ -57,11 +57,11 @@ Core customer data 是一个术语，指的是在 [Microsoft Online Services 术
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>在不同的信息中具有不同的服务会有什么影响？
 
-某些 Microsoft 365 服务可能位于不同的信息中，用于某些现有客户和移动过程中间的客户。 我们的服务独立运行，在这种情况下，不会对用户体验产生任何影响。但是，出于数据驻留目的，在 Exchange Online 和 SharePoint Online/OneDrive for business 都迁移到同一数据中心地理位置之前，不能认为租户迁移已完成。
+某些 Microsoft 365 服务可能位于不同的信息中，用于某些现有客户和移动过程中间的客户。 我们的服务独立运行，在这种情况下，不会对用户体验产生任何影响。 但是，出于数据驻留目的，在 Exchange Online 和 SharePoint Online/OneDrive for business 都迁移到同一数据中心地理位置之前，不能认为租户迁移已完成。
 
  ## <a name="where-is-my-core-customer-data-located"></a>我的核心客户数据位于何处？
 
-客户租户管理员可以随时查看管理中心内的数据位置卡，以确认每个服务的 rest 位置的核心客户数据，尤其针对其租户。我们还发布了 [Microsoft 365 交互式数据中心 ](https://office.com/datamaps) 的数据中心信息、数据中心和365位置的位置，作为对新租户的当前默认核心客户数据的参考。  您可以通过 Microsoft 365 管理中心内组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
+客户租户管理员可以随时查看管理中心内的数据位置卡，以确认每个服务的 rest 位置的核心客户数据，尤其针对其租户。  我们还发布了 [Microsoft 365 交互式数据中心 ](https://office.com/datamaps) 的数据中心信息、数据中心和365位置的位置，作为对新租户的当前默认核心客户数据的参考。  您可以通过 Microsoft 365 管理中心内组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>何时我将能够请求移动？
   
@@ -101,7 +101,7 @@ Core customer data 是一个术语，指的是在 [Microsoft Online Services 术
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>如何知道移动已完成？
   
-观看 Microsoft 365 消息中心，确认是否已完成每个服务的数据移动。 移动每个服务的数据后，我们将发布一个完成通知，以便您将获得三个完成通知：每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Microsoft 365 管理中心中组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
+观看 Microsoft 365 消息中心，确认是否已完成每个服务的数据移动。 移动每个服务的数据后，我们将发布一个完成通知，以便您将获得三个完成通知：每个完成通知分别对应于 Exchange Online、SharePoint Online 和 Skype for Business Online。  您还可以通过 Microsoft 365 管理中心中组织配置文件下的 "数据位置" 部分，验证 rest 上的客户数据的位置。  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>我是一个新的数据中心信息中的 Microsoft 365 客户，但当我注册时，我选择了其他国家/地区。 如何将移动到新的数据中心地理位置？
 
@@ -109,7 +109,7 @@ Core customer data 是一个术语，指的是在 [Microsoft Online Services 术
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>如果我们在 Exchange Online 移动过程中将电子邮件数据迁移到 Microsoft 365，会发生什么情况？
 
-这是一种非常常见的方案，完全受支持。  Datacenter 信息之间的云迁移不会干扰任何 on premisis to 云邮箱迁移。
+这是一种非常常见的方案，完全受支持。  Datacenter 信息之间的云迁移不会干扰任何本地到云邮箱迁移。
   
  ## <a name="can-i-pilot-some-users"></a>我可以试运行某些用户吗？
   
@@ -127,7 +127,7 @@ Core customer data 是一个术语，指的是在 [Microsoft Online Services 术
   
 ## <a name="will-microsoft-365-tenants-hosted-in-the-new-datacenters-be-available-to-users-outside-of-the-country"></a>在新数据中心托管的 Microsoft 365 租户是否适用于该国家/地区之外的用户？
   
-是。 Microsoft 在全球范围内的35国家/地区内的国家/地区内有超过130个位置的大型全球网络，其使用情况协议的 Internet 服务提供商数超过2700个， (Isp) 。 用户将能够从 Internet 上的任何位置访问数据中心。
+正确。 Microsoft 在全球范围内的35国家/地区内的国家/地区内有超过130个位置的大型全球网络，其使用情况协议的 Internet 服务提供商数超过2700个， (Isp) 。 用户将能够从 Internet 上的任何位置访问数据中心。
 
 ## <a name="my-tenant-has-configured-the-multi-geo-add-on-can-i-still-enroll-in-my-tenant-in-the-microsoft-365-move-program-to-change-my-default-geo-and-move-any-user-not-in-a-satellite-region-to-the-new-default-geo"></a>我的租户配置了 [多地理加载](https://aka.ms/multi-geo)项。 我是否可以在 Microsoft 365 移动程序中注册我的租户以更改我的默认地理位置并将任何用户不在附属区域中移动到新的默认地理位置？
 

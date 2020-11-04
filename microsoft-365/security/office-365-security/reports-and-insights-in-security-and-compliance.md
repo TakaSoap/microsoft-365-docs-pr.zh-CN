@@ -2,7 +2,7 @@
 title: 智能报告、见解-Microsoft 365 安全 & 合规性中心
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解安全 & 合规性中心中提供的智能报告和见解，以及如何使用它们查看和浏览数据并快速执行操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d6a73e93de79f346fb1bce8da23e25194d202191
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845512"
+ms.locfileid: "48877345"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 

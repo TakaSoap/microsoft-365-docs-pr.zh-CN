@@ -2,7 +2,7 @@
 title: 安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 了解如何安装和使用 Microsoft 垃圾电子邮件报告加载项将垃圾邮件、非垃圾邮件和网络钓鱼邮件报告给 Microsoft。
-ms.openlocfilehash: 096bd83c53149360e6cdd3ba8e73aacce5b1106f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199681"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877545"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安装和使用 Microsoft Outlook 的垃圾邮件报告外接程序
 
@@ -48,19 +48,19 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 1. 对于收件箱中的邮件或除垃圾邮件以外的任何其他电子邮件文件夹中的邮件，请使用以下任何一种方法来报告垃圾邮件和网络钓鱼邮件：
 
-   - 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **垃圾邮件**"，然后选择 " **报告为垃圾邮件** 或 **报告为网络钓鱼**"。
+   - 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **垃圾邮件** "，然后选择 " **报告为垃圾邮件** 或 **报告为网络钓鱼** "。
 
      ![从功能区报告垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-ribbon.png)
 
-   - 右键单击该邮件，选择 " **垃圾**邮件"，然后选择 " **报告为垃圾** 邮件" 或 " **报告为网络钓鱼**"。
+   - 右键单击该邮件，选择 " **垃圾** 邮件"，然后选择 " **报告为垃圾** 邮件" 或 " **报告为网络钓鱼** "。
 
      ![通过右键单击报告垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-right-click.png)
 
-   - 选择多个邮件，单击鼠标右键，然后选择 " **报告为垃圾** 邮件" 或 " **报告为网络钓鱼**"。
+   - 选择多个邮件，单击鼠标右键，然后选择 " **报告为垃圾** 邮件" 或 " **报告为网络钓鱼** "。
 
      ![通过右键单击报告多个垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. 在出现的对话框中，阅读信息，然后单击 " **报告**"。 如果你改变主意，请单击 " **不报告**"。
+2. 在出现的对话框中，阅读信息，然后单击 " **报告** "。 如果你改变主意，请单击 " **不报告** "。
 
    !["报告为垃圾邮件" 对话框](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
@@ -71,25 +71,25 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
    - 移动到 "垃圾邮件" 文件夹（如果它被报告为垃圾邮件）。
    - 如果报告为网络钓鱼，则删除。
    
-   若要确认已提交的邮件，请打开您的“已发送邮件”**** 文件夹查看已提交的邮件。
+   若要确认已提交的邮件，请打开您的“已发送邮件”文件夹查看已提交的邮件。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>使用垃圾电子邮件报告加载项报告垃圾邮件文件夹中的非垃圾邮件和网络钓鱼邮件
 
 1. 在 "垃圾邮件" 文件夹中，使用以下任何一种方法报告垃圾邮件误报或网络钓鱼邮件：
 
-   - 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **非垃圾邮件**"，然后选择 " **报告为非垃圾邮件** " 或 " **报告为仿冒**"
+   - 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **非垃圾邮件** "，然后选择 " **报告为非垃圾邮件** " 或 " **报告为仿冒** "
 
      ![从 "垃圾邮件" 文件夹的功能区报告非垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - 右键单击该邮件，单击 " **垃圾**邮件"，然后选择 " **报告为非垃圾邮件** " 或 " **报告为网络钓鱼**"。
+   - 右键单击该邮件，单击 " **垃圾** 邮件"，然后选择 " **报告为非垃圾邮件** " 或 " **报告为网络钓鱼** "。
 
      ![不通过在 "垃圾邮件" 文件夹中单击鼠标右键来报告垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - 选择多个邮件，单击鼠标右键，然后选择 " **报告为非垃圾邮件** " 或 " **报告为网络钓鱼**"。
+   - 选择多个邮件，单击鼠标右键，然后选择 " **报告为非垃圾邮件** " 或 " **报告为网络钓鱼** "。
 
      ![在 "垃圾邮件" 文件夹中单击鼠标右键，不报告垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-2. 在出现的对话框中，阅读信息，然后单击 " **报告**"。 如果你改变主意，请单击 " **不报告**"。
+2. 在出现的对话框中，阅读信息，然后单击 " **报告** "。 如果你改变主意，请单击 " **不报告** "。
 
    !["报告为非垃圾邮件" 对话框](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
@@ -100,7 +100,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
    - 移动到 "垃圾邮件" 文件夹（如果它被报告为垃圾邮件）。
    - 如果报告为网络钓鱼，则删除。
 
-   若要确认已提交的邮件，请打开您的“已发送邮件”**** 文件夹查看已提交的邮件。
+   若要确认已提交的邮件，请打开您的“已发送邮件”文件夹查看已提交的邮件。
 
 ## <a name="install-the-junk-email-reporting-add-in"></a>安装垃圾电子邮件报告外接
 
@@ -108,8 +108,8 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 - 转到 <https://www.microsoft.com/download/details.aspx?id=18275> 并将适用于你的 Office 版本的 .msi 文件下载到易于查找的位置：
 
-  - **32 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
-  - **64 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **32 位** ： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **64 位** ： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
 - 对于 Outlook 2013 或更高版本，唯一的先决条件是 Microsoft .NET Framework 2.0。 在 Windows 10 中，不会从下载安装 .NET Framework 2.0。
 
@@ -121,17 +121,17 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 3. 找到已下载的 .msi 文件，然后双击该文件。
 
-4. 在“欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序”**** 页面上，单击“下一步”****。
+4. 在“欢迎使用 Microsoft 垃圾电子邮件报告外接程序安装程序”页面上，单击“下一步”。
 
-5. 查看许可协议，如果同意条款，请单击 " **我接受许可协议中的条款** "，然后单击 " **下一步**"。
+5. 查看许可协议，如果同意条款，请单击 " **我接受许可协议中的条款** "，然后单击 " **下一步** "。
 
-6. 向导完成后，单击“完成”****。 
+6. 向导完成后，单击“完成”。 
 
 启动 Outlook。
 
-查找 Outlook 功能区上的 " **垃圾邮件** " 按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”**** 按钮，向 Microsoft 报告垃圾电子邮件。
+查找 Outlook 功能区上的 " **垃圾邮件** " 按钮。 现在，可以通过在收件箱中选择垃圾电子邮件并单击“报告垃圾邮件”按钮，向 Microsoft 报告垃圾电子邮件。
 
-如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择****“垃圾邮件”旁边的向下箭头查看更多选项，如****“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”****。
+如果想要向 Microsoft 报告仿冒垃圾电子邮件，请选择“垃圾邮件”旁边的向下箭头查看更多选项，如“报告为仿冒邮件”。如果一封电子邮件被错误识别为垃圾邮件，则在垃圾邮件文件夹中，您还可以选择“报告不是垃圾邮件”。
 
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>使用静默模式安装垃圾电子邮件报告外接程序
 
@@ -172,7 +172,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 若要验证是否已成功安装垃圾电子邮件报告外接程序，请在 Outlook 中执行以下任一步骤：
 
-- 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **垃圾邮件**"，并验证以下选项是否可用：
+- 选择邮件或打开邮件。 在功能区的 " **主页** " 或 " **邮件** " 选项卡中，单击 " **垃圾邮件** "，并验证以下选项是否可用：
 
   - **报告为垃圾邮件**
   - **报告为网络钓鱼**
@@ -181,7 +181,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
   ![从功能区报告垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-ribbon.png)
 
-- 右键单击该邮件，选择 " **垃圾**邮件"，并验证以下选项是否可用：
+- 右键单击该邮件，选择 " **垃圾** 邮件"，并验证以下选项是否可用：
 
   - **报告为垃圾邮件**
   - **报告为网络钓鱼**
@@ -197,7 +197,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
   ![通过右键单击报告多个垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-right-click-multiple.png)
 
-- 在 " **垃圾邮件** " 文件夹中执行以前的操作，并验证以前的 **垃圾** 报告选项目前 **不是垃圾**邮件。
+- 在 " **垃圾邮件** " 文件夹中执行以前的操作，并验证以前的 **垃圾** 报告选项目前 **不是垃圾** 邮件。
 
   ![从 "垃圾邮件" 文件夹的功能区报告非垃圾邮件或仿冒电子邮件](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
@@ -209,27 +209,27 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 关闭 Outlook 后，请使用以下任一过程卸载垃圾电子邮件报告外接程序：
 
-- **"控制面板"**：按 Windows 键 + R。在打开的 " **运行** " 对话框中，输入， `control appwiz.cpl` 然后单击 **"确定"**。
+- **"控制面板"** ：按 Windows 键 + R。在打开的 " **运行** " 对话框中，输入， `control appwiz.cpl` 然后单击 **"确定"** 。
 
-  在列表中查找并选择 **Microsoft 垃圾电子邮件报告加载项** ，然后单击 " **卸载**"。
+  在列表中查找并选择 **Microsoft 垃圾电子邮件报告加载项** ，然后单击 " **卸载** "。
 
-- **Windows Installer 程序包**：查找或下载相应的 .msi 文件，然后双击该文件。
+- **Windows Installer 程序包** ：查找或下载相应的 .msi 文件，然后双击该文件。
 
-  - **32 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
+  - **32 位** ： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
-  - **64 位**： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
+  - **64 位** ： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  在出现的对话框中，选择 " **删除适用于 Outlook 的 Microsoft 垃圾电子邮件报告外接程序** "，然后单击 " **下一步**"。
+  在出现的对话框中，选择 " **删除适用于 Outlook 的 Microsoft 垃圾电子邮件报告外接程序** "，然后单击 " **下一步** "。
 
-- **静默模式**：查找或下载相应的 .msi 文件。 在命令提示符窗口中，将替换 \<PathToFile\> 为 .msi 文件的位置，然后运行下列命令之一：
+- **静默模式** ：查找或下载相应的 .msi 文件。 在命令提示符窗口中，将替换 \<PathToFile\> 为 .msi 文件的位置，然后运行下列命令之一：
 
-  - **32 位**：
+  - **32 位** ：
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-  - **64 位**：
+  - **64 位** ：
 
     ```dos
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
@@ -263,7 +263,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
 
 1. 验证或将 `LoggingLevel` 注册表项设置为值 "Verbose"：
 
-   - **32 位 Windows 上的32位 Outlook**：
+   - **32 位 Windows 上的32位 Outlook** ：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 位 Windows 上的32位 Outlook**：
+   - **64 位 Windows 上的32位 Outlook** ：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Microsoft Outlook 的垃圾电子邮件报告外接程序允许用户提交误�
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 位 Outlook**：
+   - **64 位 Outlook** ：
 
      ```text
      Windows Registry Editor Version 5.00

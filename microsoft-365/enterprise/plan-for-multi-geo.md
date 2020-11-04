@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置、多地理位置的工作原理，以及什么地理位置可用于数据存储。
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687838"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877227"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Microsoft 365 多地理位置计划
 
@@ -30,7 +30,7 @@ ms.locfileid: "46687838"
 
 下面是一些关键的多地理位置术语，有助于了解此配置的基本概念：
 
--   **租户** - 组织在 Microsoft 365 中的表示形式，通常有一个或多个关联域（例如，https://contoso.sharepoint.com)）。 
+-   **租户** - 组织在 Microsoft 365 中的表示形式，通常有一个或多个关联域（例如，https://contoso.sharepoint.com)）。 
 
 -   **地理位置** - Microsoft 365 租户中可用于托管数据的地理位置。
 
@@ -40,7 +40,7 @@ ms.locfileid: "46687838"
 
 启用多地理位置需要四个关键步骤：
 
-1.  与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。
+1.  与你的帐户团队协作， _在 Microsoft 365 服务计划中添加多地理位置功能_ 。
 
 2.  选择需要的附属位置并将其添加到租户。
 
@@ -65,7 +65,7 @@ ms.locfileid: "46687838"
 
 使用测试用户完成测试后，选择一个试点组（可能来自 IT 部门），作为首个在新地理位置使用 OneDrive 和 Exchange 的组。 对于此第一个组，选择尚未拥有 OneDrive 的用户。 建议此初始组的用户数不超过五人，然后遵循批量推出方法逐渐扩大。
 
-每个用户都应设置“*首选数据位置*”(PDL)，以便 Microsoft 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选附属位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置进行预配。
+每个用户都应设置“ *首选数据位置* ”(PDL)，以便 Microsoft 365 可以确定在哪个地理位置预配 OneDrive。用户的首选数据位置必须与所选附属位置或中心位置相匹配。虽然 PDL 字段不是强制性的，但我们建议为所有用户设置一个 PDL。没有 PDL 的用户的工作负载将在中央位置进行预配。
 
 创建一个用户列表，并包含他们的用户主体名称 (UPN) 和相应首选数据位置的位置代码。首先包含你的测试用户和初始试点组。在配置过程中你将需要使用这个列表。
 
@@ -73,7 +73,7 @@ ms.locfileid: "46687838"
 
 多地理位置租户的管理可能与非多地理位置租户不同，因为许多 SharePoint 和 OneDrive 设置和服务都具有多地理位置意识。我们建议你在继续配置之前先查看[管理多地理位置环境](administering-a-multi-geo-environment.md)。
 
-请阅读[多地理位置环境中的用户体验](multi-geo-user-experience.md)，详细了解最终用户在多地理位置环境中的体验。
+阅读 [多地理位置环境中的用户体验](multi-geo-user-experience.md) ，以了解有关在多地理位置环境中的最终用户体验的详细信息。
 
 要详细了解 Microsoft 365 多地理位置租户中的 Teams 体验，请参阅 [Microsoft 365 OneDrive 和 SharePoint Online 支持多地理位置的租户中的 Teams 体验](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)。
 

@@ -2,7 +2,7 @@
 title: 邮件流仪表板中的非接受域报告
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,19 +13,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在安全 & 合规性中心中的邮件流仪表板中使用未接受的域报告来监视来自内部部署组织的邮件，其中发件人的域不是在 Microsoft 365 中配置的。
-ms.openlocfilehash: d05489ec4a6d670fc89b5d943b3e7061506b6fe8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 06acacb79c826cb465b3fd28086a7df9d64eabdc
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199321"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877713"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全 & 合规中心中的非接受域报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Security & 合规性中心](https://protection.office.com)的[邮件流仪表板](mail-flow-insights-v2.md)中的**非接受域**报告显示有关内部部署电子邮件组织中的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中的接受域。
+[Security & 合规性中心](https://protection.office.com)的 [邮件流仪表板](mail-flow-insights-v2.md)中的 **非接受域** 报告显示有关内部部署电子邮件组织中的邮件的信息，其中发件人的域未配置为 Microsoft 365 组织中的接受域。
 
 如果我们有数据来证明这些邮件的意图是恶意的，Microsoft 365 可能会对这些邮件进行限制。 因此，重要的是要了解所发生的情况并解决问题。
 
@@ -35,7 +35,7 @@ ms.locfileid: "48199321"
 
 单击 **不接受的域** 小组件上的图表将转到 **不接受的域** 报告。
 
-默认情况下，将显示所有受影响的连接器的活动。 如果单击 " **显示数据**"，则可以从下拉列表中选择特定的连接器。
+默认情况下，将显示所有受影响的连接器的活动。 如果单击 " **显示数据** "，则可以从下拉列表中选择特定的连接器。
 
 如果将鼠标悬停在图表中 (日) 上，您将看到连接器的邮件总数。
 
@@ -49,11 +49,11 @@ ms.locfileid: "48199321"
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
-- **示例邮件**：受影响邮件的示例的邮件 id。
+- **示例邮件** ：受影响邮件的示例的邮件 id。
 
-如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以指定具有 " **开始日期** " 和 " **结束日期**" 的日期范围。
+如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以指定具有 " **开始日期** " 和 " **结束日期** " 的日期范围。
 
-若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 " **请求下载**"。
+若要通过电子邮件将特定日期范围的报告发送给一个或多个收件人，请单击 " **请求下载** "。
 
 当您在表中选择一行时，将显示一个包含以下信息的浮出控件：
 
@@ -61,11 +61,11 @@ ms.locfileid: "48199321"
 - **入站连接器名称**
 - **发件人域**
 - **邮件计数**
-- **示例邮件**：您可以单击 " **查看示例邮件** "，查看有关受影响邮件的示例的 [邮件跟踪](message-trace-scc.md) 结果。
+- **示例邮件** ：您可以单击 " **查看示例邮件** "，查看有关受影响邮件的示例的 [邮件跟踪](message-trace-scc.md) 结果。
 
 ![在 "不接受的域" 报表的 "详细信息表" 视图中选择行后的详细信息浮出控件](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
-若要返回到 "报告" 视图，请单击 " **查看报告**"。
+若要返回到 "报告" 视图，请单击 " **查看报告** "。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -2,7 +2,7 @@
 title: 手动将邮件提交给 Microsoft 进行分析
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员和最终用户可以了解如何通过电子邮件 (正常的邮件标记为损坏或坏邮件，以便) Microsoft 进行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6673dc7e7ac263ea9f734c002d0ffac410fadc07
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202193"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877701"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手动将邮件提交给 Microsoft 进行分析
 
@@ -48,9 +48,9 @@ ms.locfileid: "48202193"
 
 1. 使用以下收件人之一创建一个新的空白电子邮件：
 
-   - **垃圾邮件**： `junk@office365.microsoft.com`
+   - **垃圾邮件** ： `junk@office365.microsoft.com`
 
-   - **网络钓鱼**： `phish@office365.microsoft.com`
+   - **网络钓鱼** ： `phish@office365.microsoft.com`
 
 2. 将垃圾邮件或仿冒邮件拖放到新邮件中。 这会将垃圾邮件或仿冒邮件保存为新邮件中的附件。 请勿复制和粘贴邮件的内容或转发邮件 (我们需要原始邮件，以便我们可以检查邮件头) 。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48202193"
    >
    > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认的 Outlook Web 格式) 附加邮件的格式。
 
-3. 完成后，请单击 " **发送**"。
+3. 完成后，请单击 " **发送** "。
 
 > [!TIP]
 > 管理员有几种不同的方法来阻止被 misidentified 为垃圾邮件的特定邮件。 有关详细信息，请参阅 [在 EOP 中创建阻止的发件人列表](create-block-sender-lists-in-office-365.md)。
@@ -86,7 +86,7 @@ ms.locfileid: "48202193"
    >
    > - 使用 .msg (默认 Outlook 格式) 或 .eml (默认的 Outlook Web 格式) 附加邮件的格式。
 
-3. 完成后，请单击 " **发送**"。
+3. 完成后，请单击 " **发送** "。
 
 > [!TIP]
 > 管理员有几种不同的方法允许特定邮件跳过垃圾邮件筛选。 有关详细信息，请参阅 [在 EOP 中创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。

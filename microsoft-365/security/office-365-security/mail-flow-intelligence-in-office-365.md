@@ -2,7 +2,7 @@
 title: 邮件流智能
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 管理员可以了解与使用 (连接器（也称为 "邮件流智能) "）相关联的邮件传递相关的错误代码。
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198499"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877797"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的邮件流智能
 
@@ -27,7 +27,7 @@ ms.locfileid: "48198499"
 
 在使用 Exchange Online 中的邮箱或独立 Exchange Online Protection 的 Microsoft 365 组织中 (EOP) 不含 Exchange Online 邮箱的组织中，通常使用连接器将电子邮件从 EOP 路由到本地电子邮件环境。 您还可以使用连接器将来自 Microsoft 365 的邮件路由到合作伙伴组织。 当 Microsoft 365 无法通过连接器传递这些邮件时，它们将在 Microsoft 365 中排队。 Microsoft 365 将继续为每封邮件重新尝试传递24小时。 24小时后，排队的邮件将会过期，并且邮件将在未送达报告中返回到原始发件人 (也称为 "NDR" 或 "退回邮件") 。
 
-当无法使用连接器传递邮件时，Microsoft 365 将生成错误。 本主题中介绍了最常见的错误及其解决方案。 通过连接器发送的未送达邮件的排队和通知错误称为 " _邮件流智能_"。
+当无法使用连接器传递邮件时，Microsoft 365 将生成错误。 本主题中介绍了最常见的错误及其解决方案。 通过连接器发送的未送达邮件的排队和通知错误称为 " _邮件流智能_ "。
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>错误代码： 450 4.4.312 DNS 查询失败
 
@@ -71,17 +71,17 @@ ms.locfileid: "48198499"
 
   - 在 [Exchange 管理中心 (EAC) ](https://docs.microsoft.com/Exchange/exchange-admin-center)中，禁用或删除将来自 Microsoft 365 的电子邮件传递到本地电子邮件环境的连接器：
 
-    1. 在 EAC 中，转到 " **邮件流** \> **连接器**"。
+    1. 在 EAC 中，转到 " **邮件流** \> **连接器** "。
 
     2. 选择 " **发件人** " 值为 " **Office 365** " 的连接器，然后选择 " **到** " 值 **您组织的电子邮件服务器** ，然后执行以下步骤之一：
 
        - 通过单击 " **删除** ![ 删除" 图标删除连接器](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 通过单击 " **编辑**" "编辑" ![ 图标 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 并清除 " **启用**" 来禁用连接器。
+       - 通过单击 " **编辑** " "编辑" ![ 图标 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 并清除 " **启用** " 来禁用连接器。
 
-  - 将与您的本地电子邮件环境关联的 Microsoft 365 中的接受域从 **内部中继** 更改为 **权威**。 有关说明，请参阅 [在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+  - 将与您的本地电子邮件环境关联的 Microsoft 365 中的接受域从 **内部中继** 更改为 **权威** 。 有关说明，请参阅 [在 Exchange Online 中管理接受的域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-  **注意**：通常情况下，这些更改需要30分钟到1小时才能生效。 一小时后，验证您是否不再收到该错误。
+  **注意** ：通常情况下，这些更改需要30分钟到1小时才能生效。 一小时后，验证您是否不再收到该错误。
 
 - 如果错误来自你的合作伙伴组织 (例如，第三方云服务提供商) ，则需要联系合作伙伴以解决问题。
 

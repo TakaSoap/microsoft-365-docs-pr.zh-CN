@@ -2,7 +2,7 @@
 title: 在 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和网络钓鱼电子邮件
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解 Outlook for iOS 和 Outlook for Android 中内置的 "垃圾邮件"、"非垃圾邮件" 和 "仿冒电子邮件报告" 选项。
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350851"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877287"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>在 Exchange Online 中的 Outlook for iOS 和 Outlook for Android 中报告垃圾邮件和网络钓鱼电子邮件
 
@@ -50,11 +50,11 @@ ms.locfileid: "48350851"
 
    ![从 "操作" 菜单报告垃圾邮件或仿冒电子邮件](../../media/Android-report-as-junk-dialog.png)
 
-3. 点击 " **报告垃圾邮件** "，然后选择 " **垃圾邮件** 或 **网络钓鱼**"。
+3. 点击 " **报告垃圾邮件** "，然后选择 " **垃圾邮件** 或 **网络钓鱼** "。
 
    ![报告垃圾邮件或网络钓鱼电子邮件](../../media/Android-report-junk-or-phishing.png)
 
-4. 在出现的对话框中，可以选择 " **报告** " 或 " **无感谢**"。 如果选择 " **否**"，则如果你攻出了 **垃圾** 邮件，如果你点击了 "垃圾 **邮件" 文件夹** ，则会将邮件移动到 "已删除邮件" 文件夹。 选择 " **报告** "，同时将邮件的副本发送给 Microsoft。
+4. 在出现的对话框中，可以选择 " **报告** " 或 " **无感谢** "。 如果选择 " **否** "，则如果你攻出了 **垃圾** 邮件，如果你点击了 "垃圾 **邮件" 文件夹** ，则会将邮件移动到 "已删除邮件" 文件夹。 选择 " **报告** "，同时将邮件的副本发送给 Microsoft。
 
    ![报告垃圾邮件或网络钓鱼电子邮件报告选项](../../media/Android-junk-email-reporting-options.png)
 
@@ -69,6 +69,6 @@ ms.locfileid: "48350851"
 
    ![从 "操作" 菜单报告非垃圾邮件](../../media/Android-not-junk-email.png)
 
-3. 点击 " **非垃圾邮件**"。
+3. 点击 " **非垃圾邮件** "。
 
 出现 toast 通知，表明电子邮件已移动到您的收件箱。 如果你改变主意，请在 toast 通知上选择 " **撤消** "。 电子邮件仍保留在 "垃圾邮件" 文件夹中。

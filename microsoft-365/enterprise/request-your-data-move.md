@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 现有 Office 365 客户必须在其所在国家/地区的截止日期前提交请求，以将其 Microsoft 365 服务数据移动到其新地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361935"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877251"
 ---
 # <a name="how-to-request-your-data-move"></a>如何请求数据移动
 
@@ -44,20 +44,20 @@ ms.locfileid: "48361935"
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020 年 6 月 30 日  <br/> |
 |瑞士，列支敦士登  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |挪威  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
-|德国  <br/> |相同  <br/> |相同  <br/> |
+|德国  <br/> |2020年11月1日  <br/> |2021年4月30日  <br/> |
 
 ## <a name="how-to-request-a-move"></a>如何请求移动
 
-符合条件的客户将在 [Microsoft 365 管理中心](https://aka.ms/365admin)中看到一个页面，这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
+符合条件的客户将在 Microsoft 365 管理中心中看到一个页面，这将允许他们请求将其核心客户数据移动到其新的数据中心区域。  
   
-若要访问 Microsoft 365 管理中心中的页面，请在左侧的导航窗格中，展开 " **设置**"，然后单击 " **组织设置**"。
-选择 "选项卡 **组织配置文件**"，然后选择 " **数据派驻服务**" 选项。
+若要访问 Microsoft 365 管理中心中的页面，请在左侧的导航窗格中，展开 " **设置** "，然后单击 " **组织设置** "。
+选择 "选项卡 **组织配置文件** "，然后选择 " **数据派驻服务** " 选项。
   
-如果你的租户不符合 Microsoft 365 移动计划，你将不会看到此部分。  如果您的组织具有数据驻留要求，并且您需要请求迁移，请标记该复选框，然后再 **保存**。
+如果你的租户不符合 Microsoft 365 移动计划，你将不会看到此部分。  如果您的组织具有数据驻留要求，并且您需要请求迁移，请标记该复选框，然后再 **保存** 。
   
 ![数据中心选择操作屏幕](../media/dataresidencyflyoutae.jpg)
   
-**数据派驻服务**中的文本将发生更改，以指示**您的组织已请求将其数据移动**到相应的国家/地区和日期。 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
+**数据派驻服务** 中的文本将发生更改，以指示 **您的组织已请求将其数据移动** 到相应的国家/地区和日期。 您的邮件中心中也会有一条确认消息。 这将确认您是否已成功请求移动。 
   
 ## <a name="what-happens-after-requesting-a-move"></a>请求移动后会发生什么？
 
