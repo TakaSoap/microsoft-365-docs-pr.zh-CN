@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 73d52a91620bc0bd50a310c4085fa821fab80da2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416352"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920394"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期备货交易委员会 (CFTC) 规则 1.31 (c-d) 美国
 
@@ -41,7 +41,7 @@ ms.locfileid: "47416352"
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-若要评估 Office 365 合规性与 CFTC Rule 1.31 (c-d) ，Microsoft 接洽了专门从事法规问题、Covington & Burling、LLP 的主要独立法律事务所。 在生成的报告中， [Microsoft Office 365 中的存档、数据保留和规则17A-4 合规性](https://go.microsoft.com/fwlink/?linkid=830440)中，Covington 验证了 [Office 365 的保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) 功能是否包括存档功能，这些功能使受管制的客户能够以一种有助于满足 CFTC 的记录保留要求的方式存储数据。
+若要评估 Office 365 合规性与 CFTC Rule 1.31 (c-d) ，Microsoft 接洽了专门从事法规问题、Covington & Burling、LLP 的主要独立法律事务所。 在生成的报告中， [Microsoft Office 365 中的存档、数据保留和规则17A-4 合规性](https://go.microsoft.com/fwlink/?linkid=830440)中，Covington 验证了 [Office 365 的保留锁定](retention-preservation-lock.md) 功能是否包括存档功能，这些功能使受管制的客户能够以一种有助于满足 CFTC 的记录保留要求的方式存储数据。
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 

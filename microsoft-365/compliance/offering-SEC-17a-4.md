@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c0abd8db3084630a6f848f740f5b1387dc58b704
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208184"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919696"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a> (SEC) 规则 17a-4 (f) 美国的有价证券和 Exchange 佣金
 
@@ -39,8 +39,8 @@ Microsoft Azure 永恒 Blob 存储 with with Policy Lock 和 Microsoft Office 36
 
 若要评估 Azure 和 Office 365 符合 SEC Rule 17a-4 (f) ，Microsoft 保留了一个独立的评估事务所，专门从事记录管理和信息管理 Cohasset 相关。 在生成的报告中：
 
-- **Azure**： [SEC 17a-4 (f) 合规性评估： Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用策略锁定选项验证了 [Azure 不可变 blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) ，用于保留不可擦除和不可改写 (WORM) 格式的基于时间的 blob，从而满足 SEC 规则的不可变存储要求。 每个 Blob (记录) 在所需的保留期过期且已释放任何关联的合法保留期之前，将受到保护，不会被修改、覆盖或删除。 具有敏感工作负载的软件提供商和合作伙伴现在可以依赖 Azure 不可变 Blob 存储作为 onestop 云解决方案，以实现记录保留和不可变存储。 金融机构现在可以构建自己的应用程序，利用这些功能，同时保持兼容性。
-- **Office 365**： [使用 EXCHANGE Online 符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 验证了 [具有保留锁定的 Office 365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) 包括存档功能，这些功能可让受管制的客户（包括经纪人代理商）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Office 365 中的保留策略帮助保留一系列数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
+- **Azure** ： [SEC 17a-4 (f) 合规性评估： Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用策略锁定选项验证了 [Azure 不可变 blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) ，用于保留不可擦除和不可改写 (WORM) 格式的基于时间的 blob，从而满足 SEC 规则的不可变存储要求。 每个 Blob (记录) 在所需的保留期过期且已释放任何关联的合法保留期之前，将受到保护，不会被修改、覆盖或删除。 具有敏感工作负载的软件提供商和合作伙伴现在可以依赖 Azure 不可变 Blob 存储作为 onestop 云解决方案，以实现记录保留和不可变存储。 金融机构现在可以构建自己的应用程序，利用这些功能，同时保持兼容性。
+- **Microsoft 365** ： [SEC 17a-4 (f) ，FINRA 4511 (c) 和 CFTC 1.31 (c)  (d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)，Cohasset 验证 Microsoft 365 是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Microsoft 365 中的保留功能帮助保留大量数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Microsoft 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
@@ -73,7 +73,7 @@ Microsoft Azure 永恒 Blob 存储 with with Policy Lock 和 Microsoft Office 36
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b70393bfff32d855e49c74bab340379cdaf488f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415866"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919686"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融行业法规颁发机构 (FINRA) 规则 4511 (c) 美国国家/地区
 
@@ -47,7 +47,7 @@ Cohasset 使用策略锁定选项验证了 [Azure 不可变 Blob 存储](https:/
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-为了评估符合 FINRA Rule 4511 (c) 的 Office 365 合规性，Microsoft 保留了专门从事法规问题、Covington & Burling、LLP 的主要独立法律事务所。 在生成的报告中，Microsoft Office 365 中的存档、数据保留和规则17a-4 合规性中，Covington 验证 [了 Office 365 的保留锁定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) 功能是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 FINRA 记录保留要求的方式存储数据。
+为了评估符合 FINRA Rule 4511 (c) 的 Office 365 合规性，Microsoft 保留了专门从事法规问题、Covington & Burling、LLP 的主要独立法律事务所。 在生成的报告中，Microsoft Office 365 中的存档、数据保留和规则17a-4 合规性中，Covington 验证 [了 Office 365 的保留锁定](retention-preservation-lock.md) 功能是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 FINRA 记录保留要求的方式存储数据。
 
 Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Office 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
@@ -68,9 +68,9 @@ Office 365 中的存档有助于保留广泛的数据，包括电子邮件、语
 
 ## <a name="how-to-implement"></a>如何实现
 
-- **金融服务法规**：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **风险评估和合规性指南**：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **金融用例**：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。 [了解更多](https://docs.microsoft.com/azure/industry/financial/)
+- **金融服务法规** ：符合云计算和 Microsoft online services 的关键美国规章原则的合规性地图。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- **风险评估和合规性指南** ：针对 Microsoft 云服务风险评估和监管机构通知创建一个管理模型。 [了解更多](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **金融用例** ：在案例概述、教程和其他资源的帮助下构建适合金融服务的 Azure 解决方案。 [了解更多](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>资源
 

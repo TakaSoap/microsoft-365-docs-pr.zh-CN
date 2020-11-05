@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 了解如何在 Office 365 中恢复非活动邮箱的内容，方法是将其转换为包含非活动邮箱内容的新邮箱。
-ms.openlocfilehash: 41096df9fe4c2ae78b07e06ebf8bd8384a83f4fa
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: ab5b3265cd9d3b1bab539d45e5daf0e6b4110f9a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655743"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920048"
 ---
 # <a name="recover-an-inactive-mailbox"></a>恢复非活动邮箱
 
@@ -85,15 +85,15 @@ ms.locfileid: "48655743"
 
     - **诉讼保留。** 如果启用了非活动邮箱的诉讼保留，则会将其从恢复的邮箱中删除。
 
-    - 将删除已恢复邮箱**中的就地保留**In-Place 保留。 这意味着恢复的邮箱将从任何 In-Place 保留或 In-Place 电子数据展示搜索中删除为源邮箱。
+    - 将删除已恢复邮箱 **中的就地保留** In-Place 保留。 这意味着恢复的邮箱将从任何 In-Place 保留或 In-Place 电子数据展示搜索中删除为源邮箱。
 
-    - **使用保留锁定的 Microsoft 365 保留策略。** 如果将非活动邮箱分配给具有保留锁定)  (的保留策略，则会将恢复的邮箱分配给同一个 *锁定的保留* 策略。 有关锁定的保留策略的详细信息，请参阅 [使用保留锁定来符合法规要求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+    - **使用保留锁定的 Microsoft 365 保留策略。** 如果将非活动邮箱分配给具有保留锁定)  (的保留策略，则会将恢复的邮箱分配给同一个 *锁定的保留* 策略。 有关锁定的保留策略的详细信息，请参阅 [[使用保留锁定来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
 
     - **Microsoft 365 保留策略，无保留锁定。** 非活动邮箱将从应用于它的任何未锁定的 Microsoft 365 保留策略中删除。 但是，在恢复的邮箱上启用了诉讼保留，以防止根据删除超过特定年龄的内容的任何组织范围的保留策略来删除邮箱内容。 您可以保留诉讼保留或将其删除。 有关详细信息，请参阅 [创建诉讼保留](create-a-litigation-hold.md)。
 
   - 单个项目恢复期间（由 **RetainDeletedItemsFor** 邮箱属性定义）设置为 30 天。通常情况下，在 Exchange Online 中创建新邮箱时，此保留期设置为 14 天。将此值设置为最大值 30 天，可留出更多时间从非活动邮箱中恢复任何已永久删除（或清除）的数据。您也可以禁用单个项目恢复，或将单个项目恢复期设置为默认的 14 天。有关详细信息，请参阅 [Enable or disable single item recovery for a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-single-item-recovery)。
 
-  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 365 范围的保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目 (或将项目移至存档邮箱（如果已根据为 Exchange 或 Microsoft 365 保留策略配置的设置而已过期) 已启用）。 30天后，保留挂起会过期， **RetentionHoldEnabled** 邮箱属性设置为 **False**，并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
+  - 保留挂起已启用，保留挂起持续时间设置为 30 天。 这意味着，分配给新邮箱的默认 Exchange 保留策略和任何组织范围或 Exchange 365 范围的保留策略将不会被处理30天。 这使复职员工或恢复的非活动邮箱的新所有者有时间来管理旧邮件。 否则，Exchange 或 Microsoft 365 保留策略可能会删除旧邮箱项目 (或将项目移至存档邮箱（如果已根据为 Exchange 或 Microsoft 365 保留策略配置的设置而已过期) 已启用）。 30天后，保留挂起会过期， **RetentionHoldEnabled** 邮箱属性设置为 **False** ，并且托管文件夹助理将开始处理分配给邮箱的策略。 如果您不需要此额外的时间，则可以删除保留挂起。 您也可以使用 **Set-Mailbox -EndDateForRetentionHold** 命令，增加保留挂起的持续时间。 有关详细信息，请参阅 [Place a mailbox on retention hold](https://docs.microsoft.com/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold)。
 
 - **如果您需要保留非活动邮箱的原始状态，请将恢复的邮箱置于保留状态。** 若要防止新邮箱所有者或保留策略从已恢复的非活动邮箱中永久删除任何邮件，您可以将邮箱置于诉讼保留状态。 有关详细信息，请参阅 [创建诉讼保留](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold)。
 

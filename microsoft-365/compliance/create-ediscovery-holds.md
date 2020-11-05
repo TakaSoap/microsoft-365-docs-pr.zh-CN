@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以创建与核心电子数据展示事例相关联的保留，以保留可能与调查相关的内容。
-ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546878"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920326"
 ---
 # <a name="create-an-ediscovery-hold"></a>创建电子数据展示保留
 
@@ -42,44 +42,44 @@ ms.locfileid: "47546878"
   
 1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) 并使用已为其分配了相应电子数据展示权限的用户帐户的凭据登录。
 
-2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 " **全部显示**"，然后单击 " **电子数据展示 > 核心**"。
+2. 在 Microsoft 365 合规性中心的左侧导航窗格中，单击 " **全部显示** "，然后单击 " **电子数据展示 > 核心** "。
 
-3. 在 " **核心电子数据展示** " 页上，选择要在其中创建保留的大小写，然后单击 " **打开事例**"。
+3. 在 " **核心电子数据展示** " 页上，选择要在其中创建保留的大小写，然后单击 " **打开事例** "。
 
 4. 在该案例的 **主页** 上，单击 " **保留** " 选项卡。
   
-5. 在 " **保留** " 页上，单击 " **创建**"。
+5. 在 " **保留** " 页上，单击 " **创建** "。
 
-6. 在 " **命名保留** 向导" 页上，为保留名称并添加可选说明，然后单击 " **下一步**"。 保留名称在你的组织中必须保持唯一。
+6. 在 " **命名保留** 向导" 页上，为保留名称并添加可选说明，然后单击 " **下一步** "。 保留名称在你的组织中必须保持唯一。
 
 7. 在 " **内容位置** " 页上，选择要置于保留状态的内容位置。 您可以将邮箱、网站和公用文件夹置于保留状态。
 
     ![选择将其置于保留状态的内容位置](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **邮箱位置** -单击 " **选择用户、组或团队** "，然后再次单击 " **选择用户、组或团队** " 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组 (将保留组成员的邮箱) 置于保留状态。 您还可以在 Microsoft 团队、Office 365 组或 Yammer 组的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 " **选择**"，然后单击 " **完成**"。
+   1. **邮箱位置** -单击 " **选择用户、组或团队** "，然后再次单击 " **选择用户、组或团队** " 以指定要置于保留状态的邮箱。 使用搜索框查找用户邮箱和通讯组 (将保留组成员的邮箱) 置于保留状态。 您还可以在 Microsoft 团队、Office 365 组或 Yammer 组的关联邮箱上放置保留。 选中 "用户、组、团队" 复选框，单击 " **选择** "，然后单击 " **完成** "。
 
-   b. **网站位置** -单击 " **选择网站** "，然后单击 "再次 **选择网站** " 以指定要置于保留状态的 SharePoint 和 OneDrive 帐户。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 团队、Office 365 组或 Yammer 组添加 SharePoint 网站的 URL。 单击 " **选择**"，然后单击 " **完成**"。
+   1. **网站位置** -单击 " **选择网站** "，然后单击 "再次 **选择网站** " 以指定要置于保留状态的 SharePoint 和 OneDrive 帐户。 键入要置于保留状态的每个网站的 URL。 您还可以为 Microsoft 团队、Office 365 组或 Yammer 组添加 SharePoint 网站的 URL。 单击 " **选择** "，然后单击 " **完成** "。
   
-   c. **Exchange 公用文件夹。** 将切换开关切换 ![ 控件移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 到 " **所有** 位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 您不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 " **无** "。
+   1. **Exchange 公用文件夹。** 将切换开关切换 ![ 控件移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 到 " **所有** 位置"，将 Exchange Online 组织中的所有公用文件夹置于保留状态。 您不能选择将特定的公用文件夹置于保留状态。 如果您不希望对公用文件夹进行保留，则将切换开关设置为 " **无** "。
 
    > [!NOTE]
    > 必须至少向保留添加一个内容位置。 否则，电子数据展示保留静态变量将显示没有处于保留状态的项目。
 
-8. 将内容位置添加到保留后，请单击 " **下一步**"。
+8. 将内容位置添加到保留后，请单击 " **下一步** "。
 
-9. 若要创建基于查询的保留条件，请完成以下。 否则，若要保留指定内容位置中的所有内容，请单击 " **下一步**"。
+9. 若要创建基于查询的保留条件，请完成以下。 否则，若要保留指定内容位置中的所有内容，请单击 " **下一步** "。
 
     ![创建基于查询的保留条件](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    a. 在 " **关键字**" 下的框中，键入搜索查询，以便仅保留满足搜索条件的内容。 您可以指定关键字、电子邮件属性或文档属性，如文件名。 您还可以使用更复杂的查询，这些查询使用布尔运算符，例如 **AND**、 **or**或 **NOT**。
+    1. 在 " **关键字** " 下的框中，键入搜索查询，以便仅保留满足搜索条件的内容。 您可以指定关键字、电子邮件属性或文档属性，如文件名。 您还可以使用更复杂的查询，这些查询使用布尔运算符，例如 **AND** 、 **or** 或 **NOT** 。
 
-    b. 单击 " **添加条件** " 以添加一个或多个条件以缩小保留的搜索查询。 每个条件都会向在创建保留时创建并运行的 KQL 搜索查询中添加一个子句。 例如，可以指定日期范围，以使在日期范围内创建的电子邮件或网站文档置于保留状态。 条件在逻辑上连接到关键字查询 (由**AND**运算符) 的**关键字**框中指定。 这意味着项目必须同时满足关键字查询和要保留的条件。
+    1. 单击 " **添加条件** " 以添加一个或多个条件以缩小保留的搜索查询。 每个条件都会向在创建保留时创建并运行的 KQL 搜索查询中添加一个子句。 例如，可以指定日期范围，以使在日期范围内创建的电子邮件或网站文档置于保留状态。 条件在逻辑上连接到关键字查询 (由 **AND** 运算符) 的 **关键字** 框中指定。 这意味着项目必须同时满足关键字查询和要保留的条件。
 
     有关创建搜索查询和使用条件的详细信息，请参阅 [用于内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
 
-10. 配置基于查询的保留后，单击 " **下一步**"。
+10. 配置基于查询的保留后，单击 " **下一步** "。
 
-11. 查看您的设置 (并在必要时对其进行编辑) ，然后单击 " **创建此保留**"。
+11. 查看您的设置 (并在必要时对其进行编辑) ，然后单击 " **创建此保留** "。
 
 ## <a name="query-based-holds-placed-on-site-documents"></a>放置在网站文档上的基于查询的保留
 
@@ -123,13 +123,13 @@ ms.locfileid: "47546878"
 
 - 如果将多个电子数据展示保留放在电子数据展示事例中的单个位置上，并选择搜索保留的位置，则该搜索查询的最大关键字数为500。 这是因为搜索将使用 **OR** 运算符组合所有基于查询的保留。 如果在组合保留查询和搜索查询中有500个以上的关键字，则会搜索邮箱中的所有内容，而不仅仅是与基于查询的事例匹配的内容。
 
-- 如果电子数据展示保留状态为 " **开启**"，则您仍可以在保留处于打开状态时在保留位置搜索。
+- 如果电子数据展示保留状态为 " **开启** "，则您仍可以在保留处于打开状态时在保留位置搜索。
 
 ## <a name="preserve-content-in-microsoft-teams"></a>保留 Microsoft 团队中的内容
 
 属于 Microsoft 团队渠道的对话存储在与 Microsoft 团队相关联的邮箱中。 同样，团队成员在渠道中共享的文件将存储在团队的 SharePoint 网站上。 因此，您必须在电子数据展示保留中放置工作组邮箱和 SharePoint 网站，以保留频道中的对话和文件。
 
-或者，在名为 *1:1 聊天* 或 *1： N 组聊天*) 的团队中属于聊天列表的对话 (存储在参与聊天的用户的邮箱中。 在聊天对话中，用户共享的文件存储在共享该文件的用户的 OneDrive 帐户中。 因此，您必须将单个用户邮箱和 OneDrive 帐户添加到电子数据展示保留，以便在聊天列表中保留对话和文件。 除了将工作组邮箱和网站置于保留状态之外，最好还是将 Microsoft 团队成员的邮箱置于保留状态。
+或者，在名为 *1:1 聊天* 或 *1： N 组聊天* ) 的团队中属于聊天列表的对话 (存储在参与聊天的用户的邮箱中。 在聊天对话中，用户共享的文件存储在共享该文件的用户的 OneDrive 帐户中。 因此，您必须将单个用户邮箱和 OneDrive 帐户添加到电子数据展示保留，以便在聊天列表中保留对话和文件。 除了将工作组邮箱和网站置于保留状态之外，最好还是将 Microsoft 团队成员的邮箱置于保留状态。
 
 从2020年2月起，我们启用了在专用频道中保留内容的功能。 由于专用通道聊天存储在聊天参与者的邮箱中，因此将用户邮箱放在电子数据展示保留中将保留专用通道聊天。 此外，如果用户邮箱位于2020年2月之前的电子数据展示保留中，则该保留现在将自动应用于存储在该邮箱中的专用通道邮件。 此外，还支持保留在专用通道中共享的文件。
 
@@ -151,7 +151,7 @@ ms.locfileid: "47546878"
 
 - 如前所述，若要将位于团队和 Office 365 组中的内容置于保留状态，则必须指定与组或团队关联的邮箱和 SharePoint 网站。
 
-- 在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行**remove-unifiedgroup** Cmdlet，以查看团队和 Office 365 组的属性。 如果要获取与团队或 Office 365 组关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
+- 在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行 **remove-unifiedgroup** Cmdlet，以查看团队和 Office 365 组的属性。 如果要获取与团队或 Office 365 组关联的网站的 URL，这是一种很好的方法。 例如，以下命令显示名为高层领导团队的 Office 365 组的选定属性：
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -187,19 +187,19 @@ ms.locfileid: "47546878"
 
 从电子数据展示保留中删除邮箱、SharePoint 网站或 OneDrive 帐户之后，将应用 *延迟保留* 。 这意味着保留的实际删除延迟30天，以防止数据被永久删除 (从内容位置清除) 。 这使管理员有机会搜索或恢复在删除电子数据展示保留后将清除的内容。 邮箱和网站的延迟保留的工作原理的详细信息是不同的。
 
-- **邮箱：** 下次托管文件夹助理处理邮箱并检测到删除电子数据展示保留已被删除时，会在邮箱上放置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为 **True**时，将对邮箱应用延迟保留：
+- **邮箱：** 下次托管文件夹助理处理邮箱并检测到删除电子数据展示保留已被删除时，会在邮箱上放置延迟保留。 具体来说，当托管文件夹助理将下列邮箱属性之一设置为 **True** 时，将对邮箱应用延迟保留：
 
    - **DelayHoldApplied：** 此属性适用于与电子邮件相关的内容 (由使用 Outlook 和 web 上的 Outlook 的用户生成的) 存储在用户的邮箱中。
 
    - **DelayReleaseHoldApplied：** 此属性适用于基于云的内容 (由非 Outlook 应用程序生成，例如 Microsoft 团队、Microsoft Forms 和 Microsoft Yammer) ，存储在用户邮箱中。 Microsoft 应用生成的云数据通常存储在用户邮箱的隐藏文件夹中。
 
-   将 "延迟保留" 放在邮箱上 (当上述任一属性设置为 **True**) 时，邮箱仍被视为无限制保留持续时间的保留状态，就像邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Microsoft 365 将自动尝试删除延迟保留 (通过将 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为 **False**) 以便删除保留。 在这两个属性都设置为 **False**后，在下一次由托管文件夹助理处理邮箱时，将清除标记为要删除的相应项。
+   将 "延迟保留" 放在邮箱上 (当上述任一属性设置为 **True** ) 时，邮箱仍被视为无限制保留持续时间的保留状态，就像邮箱处于诉讼保留状态一样。 30天后，延迟保留过期，Microsoft 365 将自动尝试删除延迟保留 (通过将 DelayHoldApplied 或 DelayReleaseHoldApplied 属性设置为 **False** ) 以便删除保留。 在这两个属性都设置为 **False** 后，在下一次由托管文件夹助理处理邮箱时，将清除标记为要删除的相应项。
 
    有关详细信息，请参阅[管理延迟保留的邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
 
 - **SharePoint 和 OneDrive 网站：** 从电子数据展示保留中删除网站后，保留在保留保留库中的任何 SharePoint 或 OneDrive 内容不会在30天延迟保留期内删除。 这类似于从保留策略中发布网站时发生的情况。 此外，在30天的延迟保留期内，您无法手动删除保留保留库中的此内容。 
 
-   有关详细信息，请参阅 [发布保留策略](retention.md#releasing-a-retention-policy)。
+   有关详细信息，请参阅 [释放策略以进行保留](retention.md#releasing-a-policy-for-retention)。
 
 关闭核心电子数据展示事例时，延迟保留也会应用于保留状态，因为在关闭事例时保留处于关闭状态。 有关关闭事例的详细信息，请参阅 [关闭、重新打开和删除核心电子数据展示事例](close-reopen-delete-core-ediscovery-cases.md)。
 
@@ -207,7 +207,7 @@ ms.locfileid: "47546878"
 
 下表列出了电子数据展示事例和事例保留的限制。
 
-  |**限制说明**|**限制**|
+  | 限制说明 | 限制 |
   |:-----|:-----|
   |组织的最大事例数  <br/> |无限制  <br/> |
   |组织的电子数据展示保留的最大数量  <br/> |10,000  <br/> |
@@ -217,4 +217,9 @@ ms.locfileid: "47546878"
   |||
 
    > [!NOTE]
-   > <sup>1</sup> 若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：<br/> [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> 若要查看超过1000个事例、保留、搜索或导出的列表，您可以使用相应的 Office 365 安全性 & 合规性 PowerShell cmdlet：
+   >
+   > - [Get-compliancecase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [New-compliancesearchaction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
