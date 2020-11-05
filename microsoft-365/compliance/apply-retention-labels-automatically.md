@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877299"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920016"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -224,8 +224,6 @@ ProgID:Media AND ProgID:Meeting
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留标签及其策略
 
 在编辑保留标签或自动应用策略，并且该保留标签已应用到内容时，更新后的设置将自动应用于此内容以及新标识的内容。
@@ -233,6 +231,10 @@ ProgID:Media AND ProgID:Meeting
 某些设置无法在创建并保存标签或策略后更改，包括：
 - 除保留期外的保留设置，除非已将标签配置为根据创建的时间保留或删除内容。
 - 用于将项目标记为记录的选项。
+
+## <a name="locking-the-policy-to-prevent-changes"></a>锁定策略以防止更改
+
+如果需要确保任何人都无法关闭该策略、删除该策略或降低其限制性，请参阅 [使用保留锁限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
 
 ## <a name="next-steps"></a>后续步骤
 

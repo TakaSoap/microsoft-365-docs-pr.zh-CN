@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要用于管理高价值内容的 Microsoft 365 记录管理解决方案以满足法律、业务或法规方面的义务，但不确定从哪里入手？ 请阅读一些实用指南来完成入门。
-ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
-ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
+ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48390159"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919850"
 ---
 # <a name="get-started-with-records-management"></a>记录管理入门
 
@@ -30,13 +30,13 @@ ms.locfileid: "48390159"
 
 准备好开始使用 Microsoft 365 中的记录管理解决方案来管理组织的高价值内容以满足法律、业务或法规方面的义务了吗？ 请遵循下面的简要指南来完成入门：
 
-1. **了解记录管理解决方案**以及在将文档和电子邮件声明为记录时允许或阻止的操作：[了解记录管理](records-management.md)。 
+1. **了解记录管理解决方案** 以及在将文档和电子邮件声明为记录时允许或阻止的操作： [了解记录管理](records-management.md)。 
 
-2. **了解保留标签和保留机制的工作原理**（针对 SharePoint 和 Exchange），因为保留标签将用于声明记录：[了解保留策略和保留标签](retention.md)
+2. **了解保留标签和保留机制的工作原理** （针对 SharePoint 和 Exchange），因为保留标签将用于声明记录： [了解保留策略和保留标签](retention.md)
 
-3. 通过[导入现有计划](file-plan-manager.md#import-retention-labels-into-your-file-plan )（如果有）或[创建用于声明记录的新保留标签](declare-records.md)来**创建有关保留设置和操作的文件计划**。
+3. 通过 [导入现有计划](file-plan-manager.md#import-retention-labels-into-your-file-plan )（如果有）或 [创建用于声明记录的新保留标签](declare-records.md)来 **创建有关保留设置和操作的文件计划** 。
 
-4. **发布并应用保留标签**。 保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中： 
+4. **发布并应用保留标签** 。 保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中： 
     
     - [创建保留标签并在应用中应用它们](create-apply-retention-labels.md)
     - [自动向内容应用保留标签](apply-retention-labels-automatically.md)
@@ -49,9 +49,9 @@ ms.locfileid: "48390159"
 
 ## <a name="permissions-required-for-records-management"></a>记录管理所需的权限
 
-负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到**记录管理**管理员角色组，这将为其授予 **RecordManagement** 角色。
+负责记录管理的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **记录管理** 管理员角色组，这将为其授予 **RecordManagement** 角色。
 
-此角色组中包含的权限不包括[处置评审和验证](disposition.md)所需的权限，并且即使是全局管理员，默认情况下也没有此权限。 若要管理处置，可通过创建自定义角色组或使用包含此角色的默认角色组（例如**合规性管理员**）来使用**处置管理** 角色。
+此角色组中包含的权限不包括[处置评审和验证](disposition.md)所需的权限，并且即使是全局管理员，默认情况下也没有此权限。 若要管理处置，可通过创建自定义角色组或使用包含此角色的默认角色组（例如 **合规性管理员** ）来使用 **处置管理** 角色。
 
 有关这些角色组和角色的详细信息，请参阅[安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
 
@@ -76,10 +76,11 @@ ms.locfileid: "48390159"
 |让管理员向文档理解模型应用保留和删除操作，以便将这些操作自动应用于 SharePoint 库中已标识的文档|[创建保留标签并在应用中应用它们](create-apply-retention-labels.md)|
 |向文档和电子邮件自动应用保留和删除操作 |[自动向内容应用保留标签](apply-retention-labels-automatically.md)|
 |从事件发生时开始计算保留期，比如：  <br />- 员工离开组织 <br />- 合同到期 <br />- 产品生存期结束| [从事件发生时开始计算保留期](event-driven-retention.md)|
+|限制对策略的更改，以帮助满足管理法规要求或防止恶意管理员| [使用保留锁定来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)
 |管理 SharePoint 中不同文档类型的生命周期| [使用保留标签管理 SharePoint 中存储的文档的生命周期](auto-apply-retention-labels-scenario.md)|
-|确保内容在内容保留期结束时被永久删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
+|确保内容在内容保留期结束时被删除之前，有人进行评审和批准|[处置评审](disposition.md#disposition-reviews) |
 |对在保留期结束时永久删除的内容有处置证明|[处置记录](disposition.md#disposition-of-records) |
-|监视将保留和删除设置应用于项目的方式和位置 | [监视保留标签](retention.md#monitoring-retention-labels) |
+| 监视将保留和删除设置应用于项目的方式和位置 | [监视保留标签](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>有关记录的最终用户文档
 

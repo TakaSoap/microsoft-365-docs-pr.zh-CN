@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: c420e5a8fd94a9fb549cb6683f46c4bc5457632a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0cdd3a2d8e158800cef534a1488df0f25e3d232f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843168"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920255"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>GDPR 下的 Azure 和 Dynamics 365 泄露通知
 
@@ -32,9 +32,9 @@ Microsoft 拥有全球性的全天候事件响应服务，努力减轻针对 Mic
 
 ## <a name="detection-of-potential-breaches"></a>检测潜在泄露
 
-由于现代云计算的特性，客户云环境中发生的所有数据泄露并非都涉及 Microsoft Azure 服务。 Microsoft 采用了 Azure 服务的共享责任模型来定义安全和操作责任。 共享责任在讨论云服务的安全性时非常重要，因为云服务提供商和客户都对云安全性有部分负责。
+Due to the nature of modern cloud computing, not all data breaches occurring in a customer cloud environment involve Microsoft Azure services. Microsoft employs a shared responsibility model for Azure services to define security and operational accountabilities. Shared responsibility is important when discussing security of a cloud service, because both the cloud services provider and the customer are accountable for portions of cloud security.
 
-Microsoft 不会监控或响应属于客户责任范围的安全事件。仅限客户的漏洞不会作为 Azure 安全事件进行处理，将需要客户租户来管理响应工作。如果指定了适当的服务联系人，客户事件响应部门也可能会与 Microsoft Azure [客户支持](https://azure.microsoft.com/support/options/)部门进行协作。Microsoft Azure 还提供各种服务（例如 [Azure Defender](https://azure.microsoft.com/services/security-center/)），客户可以用来开发和管理安全事件响应。
+Microsoft does not monitor for or respond to security incidents within the customer's realm of responsibility. A customer-only security compromise would not be processed as an Azure security incident and would require the customer tenant to manage the response effort. Customer incident response may involve collaboration with Microsoft Azure [customer support](https://azure.microsoft.com/support/options/), given appropriate service contracts. Microsoft Azure also offers various services (e.g., [Azure Defender](https://azure.microsoft.com/services/security-center/)) that customers can utilize for developing and managing security incident response.
 
 Azure 根据安全事件响应流程响应潜在数据泄露，该流程属于 Microsoft Azure 事件管理计划的一部分。Azure 安全事件响应使用五阶段流程来实现：检测、评估、诊断、稳定和关闭。随着调查的进展，安全事故响应团队可能在诊断和稳定阶段之间切换。安全事件响应流程概述如下：
 
@@ -42,7 +42,7 @@ Azure 根据安全事件响应流程响应潜在数据泄露，该流程属于 M
 | ------- | ------------- |
 | **_1 — 检测_* _ | 潜在事件的第一个指征。 |
 | _*_2 — 评估_*_ | 时刻待命的事件响应团队成员评估事件的影响和严重性。根据证据，评估可能会也可能不会导致进一步向安全响应团队上报。 |
-| _*_3 — 诊断_*_ | 安全响应专家开展技术或鉴证调查，确定遏制、缓解和解决方法策略。 如果安全团队认为非法或未经授权的个人可能接触到了客户数据，将开始并行执行客户事件通知流程。 |
+| _*_3 — 诊断_*_ | Security response experts conduct the technical or forensic investigation, identify containment, mitigation, and workaround strategies. If the security team believes that customer data may have become exposed to an unlawful or unauthorized individual, execution of the Customer Incident Notification process begins in parallel. |
 | _*_4 — 稳定和恢复_*_ | 事件响应团队创建恢复计划以缓解问题。将立即执行危机遏制步骤。例如隔离受影响的系统，同时进行诊断。在即时风险过去之后，还会规划更长期的缓解措施。 |
 | _*_5 — 关闭和事后分析_*_ | 事件响应团队创建事后分析，其中会列出事件详情，目的是修改策略、过程和流程，以防事件再次发生。 |
 
@@ -50,16 +50,16 @@ Azure 根据安全事件响应流程响应潜在数据泄露，该流程属于 M
 
 Microsoft Azure 使用的检测流程旨在发现威胁 Azure 服务机密性、完整性和可用性的事件。多个事件可能会触发调查：
 
-- 通过内部监控和警报框架自动发出系统警报。 这些警报采用反恶意软件和入侵检测等基于签名的警报的形式提供，或者通过专为分析发生异常时的预期活动和警报而设计的算法来提供。
+- Automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as anti-malware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
 - 来自 Microsoft Azure 和 Azure 政府版上运行的 Microsoft 服务的第一方报告。
-- 通过[secure@microsoft.com](mailto:secure@microsoft.com)将安全漏洞报告给 [Microsoft 安全响应中心 (MSRC)](https://technet.microsoft.com/security/dn440717)。 MSRC 与全球的合作伙伴和安全研究机构合作，帮助预防安全事件和提高 Microsoft 产品安全性。
+- Security vulnerabilities are reported to the [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) via [secure@microsoft.com](mailto:secure@microsoft.com). MSRC works with partners and security researchers around the world to help prevent security incidents and to advance Microsoft product security.
 - 通过[客户支持门户](https://www.windowsazure.com/support/contact/)或 Microsoft Azure 和 Azure 政府版管理门户提供的客户报告，其中描述了归因于 Azure 基础结构的可疑活动（与客户的责任范围内发生的活动相对）。
-- 安全[红队和蓝队](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/)活动。 此策略使用训练有素的红队攻击性 Microsoft 安全专家来发现和攻击 Azure 服务中的潜在弱点。 安全响应蓝队必须检测并防御红队的活动。 红队和蓝队操作都用于验证 Azure 安全响应工作是否有效地管理安全事件。 安全红队和蓝队根据参与规则开展活动，以有助于确保对客户数据的保护。
-- 由 Azure 服务操作人员进行升级。 Microsoft 员工经过培训，可识别和上报潜在安全问题。
+- Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly skilled Red Team of offensive Microsoft security experts to uncover and attack potential weaknesses in Azure. The security response Blue Team must detect and defend against the Red Team's activity. Both Red and Blue Team actions are used to verify that Azure security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under rules of engagement to help ensure the protection of customer data.
+- Azure 服务操作员的上报。Microsoft 员工经过培训，可识别和上报潜在安全问题。
 
 ## <a name="azures-data-breach-response"></a>Azure 的数据泄露响应
 
-Microsoft 通过确定事件的功能影响、可恢复性和信息影响，为调查分配相应的优先级和严重性级别。 随着调查的进行，优先级和严重性都可能会基于新发现和结论而发生改变。 即将发生或已确认的客户数据风险安全事件被视为高严重性，需要全天候解决。 
+Microsoft assigns the investigation appropriate priority and severity levels by determining the functional impact, recoverability, and information impact of the incident. Both the priority and severity may change over the course of the investigation, based on new findings and conclusions. Security events involving imminent or confirmed risk to customer data are treated as high severity and worked around the clock to resolution. 
 
 Microsoft Azure 将事件的信息影响归类为以下泄露类别：
 
@@ -72,32 +72,32 @@ Microsoft Azure 将事件的信息影响归类为以下泄露类别：
 
 安全响应团队与 Microsoft Azure 安全工程师和 SME 一起，基于从证据得出的事实性数据对事件进行分类。安全事件可分类为：
 
-- _*误报**：符合检测条件的事件被发现属于正常业务惯例，可能需要进行筛选。 服务团队将确定误报的根本原因，并将根据需要通过系统化方式使用检测源并对其进行微调，以解决这些问题。
+- _*False Positive**: An event that meets detection criteria but is found to be part of a normal business practice and may need to be filtered. The service team identifies the root cause for false positives and will address them in a systematic way using detection sources and fine-tuning them as needed.
 - **安全事件** ：非法访问存储在 Microsoft 设备或 Microsoft 设施上的任何客户数据或支持数据，或者未经授权访问此类设备或设施从而导致客户数据或支持数据丢失、泄露或改动的事件。
 - **客户可报告的安全/隐私事件 (CRSPI)** ：非法或未经授权访问或使用 Microsoft 的系统、设备或设施从而导致客户数据泄露、修改或丢失。
-- **隐私泄露** ：涉及个人数据的安全事件的子类型。 处理过程与安全事件没有区别。
+- **Privacy Breach** : A subtype of Security Incident involving personal data. Handling procedures are no different than a security incident.
 
-对于要声明的 CRSPI，Microsoft 必须确定已经或可能已经发生对客户数据的未经授权访问，和/或存在必须发出通知的法律或合同承诺。 需要知道特定的客户影响、资源访问和修复步骤，但这不是必需的。 事件通常在安全事件的诊断阶段结束后声明为 CRSPI。 但是，声明可能会在所有相关信息可用的任何时候发生。 安全事件经理必须无可置疑地证明发生了可报告事件，以开始执行客户事件通知流程。
+For a CRSPI to be declared, Microsoft must determine that unauthorized access to customer data has or has likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared a CRSPI after the conclusion of the Diagnose stage of a security incident. However, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process.
 
 在整个调查过程中，安全响应团队与全球法律顾问密切合作，帮助确保取证是根据法律义务和对客户的承诺来执行的。对于各种操作环境中系统和客户数据的查看和处理，还存在重大限制。敏感或机密数据以及客户数据不会转移出生产环境，除非有事件经理的明确书面批准，且记录在对应的事件票证中。
 
 Microsoft 验证是否成功遏制了客户和业务风险并实施了纠正措施。如有必要，会采取紧急缓解步骤来解决与事件直接关联的安全风险。
 
-Microsoft 还会完成数据泄露的内部事后分析。 作为此练习的一部分，会评估响应和操作过程的充分性，并识别和实施安全事件响应 SOP 或相关流程所必需的任何更新。 数据泄露的内部事后分析是高度机密的记录，不会提供给客户。 但是，会汇总事后分析并将其包括在其他客户事件通知中。 作为 Azure 例行审核周期的一部分，会将这些报告提供给外部审计机构进行审阅。
+Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the Security Incident Response SOP or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of Azure's routine audit cycle.
 
 ## <a name="customer-notification"></a>客户通知
 
 Microsoft Azure 会根据需要将数据泄露通知客户和监管机构。Microsoft 在 Azure 服务的操作中依赖于大量的内部分隔。数据流日志也很可靠。此设计的一个优点是，大多数事件可以仅限于特定客户。目的是在数据遭到泄漏时向受影响的客户提供准确、可操作和及时的通知。
 
-声明 CRSPI 后，通知过程将尽快进行，同时仍然考虑快速移动的安全风险。 通常，在进行事件调查时，会就发生起草通知的过程。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况 *除外* ：
+After the declaration of a CRSPI, the notification process takes place as expeditiously as possible while still considering the security risks of moving quickly. Generally, the process of drafting notifications occurs as the incident investigation is ongoing. Customer notices are delivered in no more than 72 hours from the time we declared a breach *except* in the following circumstances:
 
-- Microsoft 认为通知操作会增加其他客户面临的风险。 例如，发送通知可能向对手预警，导致无法进行补救。
+- Microsoft believes that the act of performing a notification increases the risk to other customers. For example, the act of notifying may tip off an adversary causing an inability to remediate.
 - 经 Microsoft 的法律部门公司外部和法律事务部 (CELA) 和行政事件经理审查的其他异常或极端情况。
-- 72 小时时间线可能会留下一些可用的事件详细信息。 调查过程中，这些将提供给客户和管理机构。
+- The 72-hour timeline may leave some incident details available. These are provided to customers and regulatory authorities as the investigation proceeds.
 
 Microsoft Azure 向客户提供详细信息，使他们能够执行内部调查，并协助其履行最终用户承诺，而不是过度地延迟通知流程。
 
-个人数据泄露通知将通过 Microsoft 选择的任何途径送达客户，包括通过电子邮件。 数据泄露的通知将交付给 Azure Defender *中提供的安全联系人列表，其可以按照[实施指南](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)进行配置。如果 Azure Defender* 中没有提供联系信息，则会将通知发送到 Azure 订阅中的一个或多个管理员。 为确保通知成功送达，客户有责任确保每个适用订阅和在线服务门户上管理员联系信息的正确性。
+个人数据泄露通知将通过 Microsoft 选择的任何途径送达客户，包括通过电子邮件。数据泄露通知会送达 Azure Defender 提供的安全联系人列表，该列表可根据[实施指导原则](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)进行配置。如果 Azure Defender 未提供联系人信息，通知会发送给 Azure 订阅中的一个或多个管理员。为确保通知成功送达，客户有责任确保每个适用订阅和在线服务门户上管理员联系信息的正确性。
 
 Microsoft Azure 或 Azure 政府版团队还可能选择通知其他 Microsoft 人员，例如客户服务 (CSS) 和客户的客户经理 (AM) 或技术客户经理 (TAM)。 这些人员通常与客户关系密切，因此可加速补救过程
 

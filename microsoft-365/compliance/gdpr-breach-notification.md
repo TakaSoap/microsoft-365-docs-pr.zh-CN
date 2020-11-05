@@ -17,20 +17,20 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: e94cd9e615ee53827517dd7de02d9c0002532688
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a671fc9234f76c63ff7336369c87e680a4432cc3
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843146"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920286"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 泄露通知
 
-一般数据保护条例 (GDPR) 引入了新规定，适用于向欧盟 (EU) 民众提供商品和服务或收集并分析欧盟居民相关数据的组织。无论你或你的企业位于何处，都要遵守该规定。 有关其他详细信息，请参阅 [GDPR 摘要主题](gdpr.md)。 本文档将提供相关信息，以帮助你完成使用 Microsoft 产品和服务的 GDPR 泄露通知。
+The General Data Protection Regulation (GDPR) introduces new rules for organizations that offer goods and services to people in the European Union (EU), or that collect and analyze data for EU residents no matter where you or your enterprise are located. Additional details can be found in the [GDPR Summary topic](gdpr.md). This document leads you to information on the completion of Breach Notifications under the GDPR using Microsoft products and services.
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>根据 GDPR，什么构成了个人数据泄露行为？
 
-个人数据是指，所有与个人相关、可直接或间接表明身份的信息。 个人数据泄露是指，“导致传输、存储或以其他方式处理的个人数据遭到意外或非法破坏、丢失、更改、未经授权披露或访问的违反安全之事宜。”
+Personal data means any information related to an individual that can be used to identify them directly or indirectly. A personal data breach is 'a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored, or otherwise processed'.
 
 ## <a name="terminology"></a>术语
 
@@ -43,40 +43,39 @@ ms.locfileid: "48843146"
 
 ## <a name="microsoft-and-breach-notification"></a>Microsoft 和泄露通知
 
-Microsoft 严格履行一般数据保护条例 (GDPR) 规定的义务。 安全事件/数据泄露是指，存储在 Microsoft 设备或 Microsoft 设施上的客户数据遭到非法访问或可能导致客户数据丢失、泄露或改动的未经授权的访问等事件。
+Microsoft takes its obligations under the General Data Protection Regulation (GDPR) seriously. A security incident/data breach refers to events such as unlawful access to customer's data stored on Microsoft equipment or in Microsoft facilities, or unauthorized access to such that has the potential to result in the loss, disclosure, or alteration of customer data.
 
-作为数据处理者，Microsoft 将确保服务客户作为数据控制者能够满足 GDPR 的泄露通知要求。 我们的通知提供了进行此评估所需的信息。 Microsoft 会向客户告知任何个人数据泄露，除非确认个人数据难以被人理解（例如，已确认密钥完整性情况下的加密数据）。
+As a data processor, Microsoft ensures that service customers are able to meet the GDPR's breach notification requirements as data controllers. Our notification provides the information needed to make that assessment. Microsoft notifies customers of any personal data breach, except for those cases where personal data is confirmed to be unintelligible (for example, encrypted data where integrity of the keys is confirmed).
 
-数据控制者负责评估数据隐私风险并确定违反是否需要通知客户的 DPA。 Microsoft 提供进行此评估所需的信息以及 GDPR 合规性策略。
+Data controllers are responsible for assessing risks to data privacy and determining whether a breach requires notification of a customer's DPA. Microsoft provides the information needed, along with your GDPR compliance policy, to make that assessment.
 
-初始通知包括对泄露性质、大致的用户影响和缓解步骤（如果适用）的说明。 如果我们的调查在初始通知时还未完成，我们将说明后续的沟通步骤和时间表。 若要详细了解 Microsoft 如何检测和响应个人数据泄露，请参阅服务信任门户中的 [GDPR 数据泄露通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)。
+Initial notification includes a description of the nature of the breach, approximate user impact, and mitigation steps (if applicable). If our investigation is not complete at the time of initial notification, we will indicate next steps and timelines for subsequent communication. For more information about how Microsoft detects and responds to a breach of personal data, see [Data Breach Notification Under the GDPR](https://servicetrust.microsoft.com/ViewPage/GDPRBreach) in the Service Trust Portal.
 
 下面是有关特定 Microsoft 产品和服务的泄露通知的详细信息。
   
 1. **[Office 365](gdpr-breach-Office365.md)**  
-    Microsoft 在系统、流程和人员方面进行了广泛的投资，以减少个人数据泄露的可能性，并快速检测泄露，如果确实发生，则减轻泄露造成的后果。 有关其他详细信息，请参阅 [Office 365 在数据安全性方面的投资](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security)。
+    Microsoft invests extensively in systems, processes, and personnel to reduce the likelihood of personal data breach and to quickly detect and mitigate consequence of breach if it does occur. Additional details can be read at [Office 365 Investments in Data Security](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-office365#office-365-investments-in-data-security).
 
-    客户可能知道了泄露并希望联系 Microsoft。 在此情况下，请通知 Microsoft 支持团队，该团队随后将与工程团队对接以了解更多信息。
+    A customer may become aware of a breach and wish to contact Microsoft. In this case, notify Microsoft Support, which will then interface with engineering teams for more information.
 
 2. **[Azure 和 Dynamics 365](gdpr-breach-azure-dynamics.md)**  
     Microsoft 拥有全球性的全天候事件响应服务，可用于减轻针对 Microsoft Azure 和 Dynamics 365 的攻击所造成的影响。
 
-    - *检测泄露* ：由于 Microsoft 和客户都负有安全义务，因此 Azure 服务采用共同责任模型来定义安全和运营责任。 Microsoft 不会监控或响应客户责任范围内的安全事件。 如果存在相应服务合同，客户事件响应可能涉及与 Azure [客户支持人员](https://azure.microsoft.com/support/options/)进行协作。 Microsoft Azure 同样还提供各种服务（例如，[Azure Defender*](https://azure.microsoft.com/services/security-center/)），客户可以利用这些服务来开发和管理安全事件响应。
+    - *检测泄露* ：由于 Microsoft 和客户都负有安全义务，因此 Azure 服务采用共同责任模型来定义安全和运营责任。Microsoft 不监视或响应客户的责任范围内的安全事件。鉴于适当的服务合同，客户事件响应可能涉及到与 Azure [客户支持](https://azure.microsoft.com/support/options/)的合作。Microsoft Azure 还提供了各种服务（例如 [Azure Defender](https://azure.microsoft.com/services/security-center/)），客户可以利用这些服务来开发和管理安全事件响应。
 
-        有关在 Microsoft Azure 中触发泄露调查的事件列表，请参阅[检测潜在泄露](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches)。 [Azure 与 GDPR 泄露通知](gdpr-breach-azure-dynamics.md)进一步详细介绍了 Microsoft 如何在 Azure 内调查、管理和响应安全事件。
+        For a list of events that trigger a breach investigation in Microsoft Azure, see [Detection of Potential Breaches](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#detection-of-potential-breaches). [Azure and Breach Notification under the GDPR](gdpr-breach-azure-dynamics.md) further details how Microsoft investigates, manages, and responds to security incidents within Azure.
 
-    - *数据泄露响应* ：Microsoft 通过调查事件的功能影响、可恢复性和信息影响来确定泄露的相应优先级和严重性级别。 随着调查的进行，优先级和严重性可能会基于新发现和结论而发生改变。
-    Microsoft 安全响应团队与全球法律顾问密切合作，帮助确保根据法律义务和对客户的承诺进行取证。 这些流程在 [Azure 的数据泄露响应](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response)中有详细说明。
+    - *Data Breach Response* : Microsoft determines appropriate priority and severity levels of a breach by investigating the functional impact, recoverability, and information impact of the incident. Priority and severity may change over the course of the investigation, based on new findings and conclusions. Microsoft's security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. These processes are detailed in [Azure's Data Breach Response](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#azures-data-breach-response).
 
-    - *客户通知* ：Microsoft Azure 会根据需要将数据泄露通知给客户和监管机构。 我们会在声明泄露之时起的 72 小时内送达客户通知，但以下情况除外：
+    - *Customer Notification* : Microsoft Azure notifies customers and regulatory authorities of data breaches as required. Customer notices are delivered in no more than 72 hours from the time we declared a breach except for the following circumstances:
 
         - Microsoft 认为通知操作将增加其他客户面临的风险。
-        - 72 小时时间线可能会留下一些可用的事件详细信息。 这些详细信息将在调查过程中提供给你。
+        - The 72-hour timeline may leave some incident details available. These details will be provided to you as the investigation proceeds.
 
         有关更多详细信息，请参阅[客户通知](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics#customer-notification)。
 
 3. **[Microsoft 支持和专业服务](gdpr-breach-Microsoft-Support-Professional-Services.md)**  
-    专业服务的性质意味着某些数据保护事件可能属于客户的责任范围。 当 Microsoft 专业服务识别出数据保护事件时，它会遵循[数据保护事件响应流程的范围和限制](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process)中所述的成文的行业标准响应计划。
+    The nature of professional services means that some data protection incidents may fall within the customer's realm of responsibility. When Microsoft Professional Services identifies a data protection incident, it follows documented industry standard response plan as outlined in [Scope & Limits of Data Protection Incident Response Process](https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-microsoft-support-professional-services#scope--limits-of-data-protection-incident-response-process).
 
 ## <a name="breach-notification-admin-tools"></a>泄露通知管理工具
 
