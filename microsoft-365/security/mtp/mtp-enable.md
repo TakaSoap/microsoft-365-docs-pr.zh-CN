@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843632"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920498"
 ---
-# <a name="turn-on-microsoft-365-defender"></a>启用 Microsoft 365 Defender
+# <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender 将存储和处理 [Microsoft Defender For Endpoint 使�
 在 Microsoft 365 安全中心中选择 **"需要帮助？** "，以联系 microsoft 支持部门，了解如何在其他数据中心位置设置 Microsoft 365 Defender。 
 
 >[!NOTE]
->Microsoft Defender for Endpoint 在欧洲联合 (EU 通过 Azure Defender * 打开时自动设置) 数据中心。 对于以这种方式为终结点预配了 Defender 的客户，Microsoft 365 Defender 将自动在相同的欧盟数据中心中进行预配。 
+>Microsoft Defender for Endpoint 在欧洲联合 (EU 通过 Azure Defender 打开时自动设置) 数据中心。 对于以这种方式为终结点预配了 Defender 的客户，Microsoft 365 Defender 将自动在相同的欧盟数据中心中进行预配。 
 
 ### <a name="confirm-that-the-service-is-on"></a>确认服务已开启
 设置服务后，它将添加：

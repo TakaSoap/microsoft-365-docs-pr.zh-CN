@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中的自动转发的邮件报告。
-ms.openlocfilehash: 01a094b8531672708fc024e8ed0c5833786dbb0c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 28cb593d56d0b0054c8c8cbe4596d4f7df6442ab
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877785"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920592"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>自动转发的邮件在安全 & 合规中心中的洞察力
 
@@ -35,7 +35,7 @@ ms.locfileid: "48877785"
 
   - **按邮件流规则**
   - **按收件箱规则**
-  - **通过 SMTP 转发** ：这是管理员可以在邮箱上配置的自动转发，如 [配置邮箱的电子邮件转发](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)中所述。
+  - **通过 SMTP 转发** ：此方法指示管理员可以在邮箱上配置的自动转发，如 [配置邮箱的电子邮件转发](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)中所述。
   - 有关更多详细信息，请 [转到转发报告](view-mail-flow-reports.md#forwarding-report) 的链接。
 
 - **按域和用户自动转发的邮件** ：

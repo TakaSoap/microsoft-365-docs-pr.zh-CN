@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202719"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920426"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202719"
 
 ## <a name="self-support-options"></a>自助支持选项
 
-登录后，Microsoft 365 管理中心将提供有关您的组织的服务状态的信息。 此外，"服务运行状况" 部分会显示服务的当前状态、中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供有关已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域的详细信息，请参阅 [服务运行状况和连续性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 通过本文列出的工具、论坛和社区站点，还可以自行获得更多帮助。
+登录后，Microsoft 365 管理中心将提供有关您的组织的服务状态的信息。 此外，"服务运行状况" 部分会显示服务的当前状态、中断和中断的详细信息，并列出计划的维护时间。 Microsoft 365 管理中心还提供有关已知问题和预期解决方案的信息。 如果受服务级事件影响，应查看通信警报（通常标有钟形图标）。 我们建议你阅读所有项的信息，然后酌情进行处理。 有关服务运行状况区域的详细信息，请参阅 [服务运行状况和连续性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以通过使用此处列出的工具、论坛和社区网站来自己查找更多帮助。
 
 [Exchange Online Protection 产品概述](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ ms.locfileid: "48202719"
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 协助支持
 
-你可以通过在 Microsoft 365 管理中心或通过电话呼叫来启动新的服务请求，获取 Microsoft 的帮助。 Premier Support 订阅者具有额外支持选项。
+你可以通过在 Microsoft 365 管理中心或通过电话呼叫来启动新的服务请求，获取 Microsoft 的帮助。 Premier Support 订阅者具有额外的支持选项。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>对 Microsoft Premier Support 订阅者的支持
 
@@ -62,7 +62,7 @@ ms.locfileid: "48202719"
 
 1. 登录到 Microsoft 365 管理中心。
 
-2. For general product issues go to **Support** \> **Ask for Customer Support** \> **Call technical support**.
+2. 有关一般产品问题，请转到 **支持** \> **客户支持** \> **电话技术支持** 。
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 

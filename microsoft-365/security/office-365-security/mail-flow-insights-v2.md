@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 管理员可以了解安全 & 合规性中心的邮件流仪表板中提供的见解和报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877773"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920004"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全与合规中心内的邮件流见解
 
@@ -66,13 +66,12 @@ ms.locfileid: "48877773"
 
 - Azure Active Directory 中的 **[Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
 
-- Security & 合规性中心中的 **邮件流管理员** ：如果此角色组的成员不是全局管理员或 Exchange 管理员角色组的成员，则请注意以下问题和要求：
-
-  - 用户必须直接在中直接登录到安全 & 合规性中心 <https://protection.office.com> 。
+- Security & 合规性中心中的 **邮件流管理员** 。 如果该帐户不是 "组织管理" 或 "Exchange 管理员" 角色组的成员，请考虑以下问题：
+  - 用户必须直接在上登录到安全 & 合规性中心 <https://protection.office.com> 。
   - 用户将只具有对邮件流仪表板的只读权限。
   - 用户将无法访问 Microsoft 365 管理中心。
 
-有关安全性 & 合规性中心中的权限的详细信息，请参阅 [security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md) 和 [授予用户对安全 & 合规性中心的访问](grant-access-to-the-security-and-compliance-center.md)权限。
+有关权限的详细信息，请参阅 [security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md) ，并 [向用户授予对安全 & 合规性中心的访问](grant-access-to-the-security-and-compliance-center.md)权限。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>在何处查找邮件流仪表板
 

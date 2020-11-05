@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846636"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920532"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分数评估安全状况
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
 
 为了帮助您更快地了解所需的信息，Microsoft 改善操作将组织成组：
 
 *  (Azure Active Directory 帐户 & 角色的标识) 
-* Microsoft 信息保护) 的数据 (
+* 数据 (现在没有改进的操作) 
 * Microsoft Defender for Endpoint （称为 " [适用于设备的 Microsoft 安全分数](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) "） (设备) 
 * 应用 (电子邮件和云应用，包括 Office 365 和 Microsoft 云应用安全) 
 * 基础结构 (现在没有任何改进操作) 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842412"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920486"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>启用 Microsoft 365 Defender 时的常见问题
 
@@ -59,7 +59,7 @@ ms.locfileid: "48842412"
 Microsoft 365 Defender 自动为数据中心选择一个用于处理和存储统一数据的最佳位置。 如果你有 Microsoft Defender for Endpoint，则会选择用于终结点的 Defender 的相同位置。
 
 >[!NOTE]
->Microsoft Defender for Endpoint 在欧洲联合 (EU 通过 Azure Defender * 打开时自动设置) 数据中心。 对于已通过这种方式为 Microsoft Defender for Endpoint 设置的客户，microsoft 365 Defender 将自动在相同的欧盟数据中心中预配。 
+>Microsoft Defender for Endpoint 在欧洲联合 (EU 通过 Azure Defender 打开时自动设置) 数据中心。 对于已通过这种方式为 Microsoft Defender for Endpoint 设置的客户，microsoft 365 Defender 将自动在相同的欧盟数据中心中预配。 
 
 在 microsoft 365 Defender ( **设置 > microsoft 365 defender** ) 中设置服务之前和之后，将显示数据中心位置。 如果您更愿意使用其他数据中心位置，请在 Microsoft 365 安全中心中选择 **"需要帮助？** " 以联系 microsoft 支持部门。
 

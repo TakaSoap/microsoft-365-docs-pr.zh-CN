@@ -33,15 +33,15 @@
           href: mtp/microsoft-secure-score-history-metrics-trends.md
         - name: 即将推出的功能
           href: mtp/microsoft-secure-score-whats-coming.md
-        - name: 最近更新
+        - name: 新增功能
           href: mtp/microsoft-secure-score-whats-new.md
-    - name: Microsoft 威胁防护
+    - name: Microsoft 365 Defender
       items:
         - name: 概述
           items:
-            - name: 什么是 Microsoft 威胁防护？
+            - name: 什么是 Microsoft 365 Defender？
               href: mtp/microsoft-threat-protection.md
-            - name: Microsoft 威胁防护的新增功能
+            - name: Microsoft 365 Defender 的新增功能
               href: mtp/whats-new.md
             - name: 预览功能
               href: mtp/preview.md
@@ -67,7 +67,7 @@
               href: mtp/setup-mtpeval.md
             - name: 配置和载入
               href: mtp/config-mtpeval.md
-            - name: 启动 Microsoft 威胁防护服务
+            - name: 启动 Microsoft 365 Defender 服务
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 生成警报测试
               href: mtp/generate-test-alert.md
@@ -91,7 +91,7 @@
               href: mtp/mtp-pilot.md
             - name: 部署支持的服务
               href: mtp/deploy-supported-services.md
-            - name: 打开 Microsoft 威胁防护
+            - name: 打开 Microsoft 365 Defender
               href: mtp/mtp-enable.md
             - name: 打开常见问题
               href: mtp/mtp-enable-faq.md
@@ -137,7 +137,7 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 跨设备、电子邮件、应用和标识进行查寻
                       href: mtp/advanced-hunting-query-emails-devices.md
-                    - name: 从 Microsoft Defender ATP 切换
+                    - name: 从 Defender for Endpoint 的过渡
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: 处理查询结果
                   href: mtp/advanced-hunting-query-results.md
@@ -251,15 +251,15 @@
                       href: ./mtp/tickets.md
                     - name: 安全中心中的 ServiceNow 票证
                       href: ./mtp/tickets-security-center.md
-            - name: Microsoft 威胁防护 API （预览版）
+            - name: Microsoft 365 Defender API（预览版）
               items:
-                - name: Microsoft 威胁防护 API 概述（预览版）
+                - name: Microsoft 365 Defender API 概述（预览版）
                   href: mtp/api-overview.md
-                - name: Microsoft 威胁防护 API 入门（预览版）
+                - name: Microsoft 365 Defender API 入门（预览版）
                   items:
-                    - name: Microsoft 威胁防护 API 许可证和使用条款
+                    - name: Microsoft 365 Defender API 许可证和使用条款
                       href: mtp/api-terms.md
-                    - name: 访问 Microsoft 威胁防护 API
+                    - name: 访问 Microsoft 365 Defender API
                       href: mtp/api-access.md
                     - name: Hello World 示例
                       href: mtp/api-hello-world.md
@@ -271,9 +271,9 @@
                       href: mtp/api-partner-access.md
                     - name: 其他 API 资源
                       href: mtp/api-articles.md
-                - name: Microsoft 威胁防护 API 与架构（预览版）
+                - name: Microsoft 365 Defender API 和架构（预览版）
                   items:
-                    - name: 受支持的 Microsoft 威胁防护 API
+                    - name: 支持的 Microsoft 365 Defender API
                       href: mtp/api-supported.md
                     - name: 常见的 REST API 错误代码
                       href: mtp/api-error-codes.md
@@ -310,11 +310,11 @@
                   href: ./office-365-security/quarantine-email-messages.md
                 - name: 独立 EOP 中的审核报告
                   href: ./office-365-security/auditing-reports-in-eop.md
-            - name: Office 365 高级威胁防护
+            - name: Defender for Office 365
               href: ./office-365-security/office-365-atp.md
-            - name: Office 365 ATP 的新增功能
+            - name: Defender for Office 365 的新增功能
               href: office-365-security/whats-new-in-office-365-atp.md
-            - name: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+            - name: 适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: 新版 Microsoft 365 安全中心
               href: ./mtp/overview-security-center.md
@@ -336,9 +336,9 @@
               href: ./office-365-security/anti-phishing-protection.md
             - name: 防欺骗保护
               href: ./office-365-security/anti-spoofing-protection.md
-            - name: Office 365 ATP 中的安全附件
+            - name: Defender for Office 365 中的安全文档
               href: ./office-365-security/atp-safe-attachments.md
-            - name: Office 365 ATP 中的安全链接
+            - name: Defender for Office 365 中的安全链接
               href: ./office-365-security/atp-safe-links.md
             - name: 出站垃圾邮件保护
               href: ./office-365-security/outbound-spam-controls.md
@@ -368,15 +368,15 @@
                   href: ./office-365-security/set-up-your-eop-service.md
             - name: 抵御威胁
               href: ./office-365-security/protect-against-threats.md
-            - name: 将 Office 365 ATP 与 Microsoft Defender ATP 集成
+            - name: 将 Defender for Office 365 与 Defender for Endpoint 集成
               href: ./office-365-security/integrate-office-365-ti-with-wdatp.md
             - name: 安全与合规中心内的权限
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
             - name: SIEM 服务器集成
               href: ./office-365-security/siem-server-integration.md
-            - name: SIEM 与 Office 365 ATP 集成
+            - name: SIEM 与 Defender for Office 365 集成
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: 配置 ATP 防钓鱼策略
+            - name: 配置防钓鱼策略
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: 配置反恶意软件策略
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -384,7 +384,7 @@
               href: ./office-365-security/configure-your-spam-filter-policies.md
             - name: 配置连接筛选
               href: ./office-365-security/configure-the-connection-filter-policy.md
-            - name: 在 Office 365 ATP 中配置安全链接的全局设置
+            - name: 在 Defender for Office 365 中配置安全链接的全局设置
               href: ./office-365-security/configure-global-settings-for-safe-links.md
             - name: 配置 Exchange Online 邮箱上的垃圾邮件设置
               href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
@@ -400,19 +400,19 @@
               href: ./office-365-security/email-validation-and-authentication.md
             - name: 向用户授予对安全中心的访问权限
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Office 365 ATP 中的安全文档
+            - name: Defender for Office 365 中的安全文档
               href: ./office-365-security/safe-docs.md
-            - name: 在 Office 365 ATP 中设置安全链接策略
+            - name: 在 Defender for Office 365 中设置安全链接策略
               href: ./office-365-security/set-up-atp-safe-links-policies.md
-            - name: 在 Office 365 ATP 中设置安全附件策略
+            - name: 在 Defender for Office 365 中设置安全附件策略
               href: ./office-365-security/set-up-atp-safe-attachments-policies.md
             - name: 设置 SPF 以防欺骗
               href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
             - name: 用户提交策略
               href: ./office-365-security/user-submission.md
-            - name: Office 365 ATP 中的用户标记
+            - name: Defender for Office 365 中的用户标记
               href: ./office-365-security/user-tags.md
-            - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP
+            - name: 启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 Defender for Office 365
               href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
             - name: 使用 DKIM 验证出站电子邮件
               href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -424,7 +424,7 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: 在政治宣传活动开发/测试环境中创建团队网站
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Office 365 ATP 中的用户标记
+            - name: Defender for Office 365 中的用户标记
               href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
@@ -459,9 +459,9 @@
               href: ./office-365-security/preset-security-policies.md
             - name: 用于预置安全策略的配置分析器
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
-            - name: Office 365 ATP 中的攻击模拟器
+            - name: Defender for Office 365 中的攻击模拟器
               href: ./office-365-security/attack-simulator.md
-            - name: 用于配置 EOP 和 Office 365 ATP 安全性的建议设置
+            - name: 用于配置 EOP 和 Defender for Office 365 安全性的建议设置
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: 配置 EOP 的最佳做法
               href: ./office-365-security/best-practices-for-configuring-eop.md
@@ -513,7 +513,7 @@
               href: ./office-365-security/campaigns.md
             - name: 调查恶意电子邮件问题
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: 查看安全与合规中心中的 ATP 报告
+            - name: 查看安全与合规中心中的报告
               href: ./office-365-security/view-reports-for-atp.md
             - name: 查看自动调查的详细信息和结果
               href: ./office-365-security/air-view-investigation-results.md
@@ -553,7 +553,7 @@
               href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
             - name: 队列见解
               href: ./office-365-security/mfi-queue-alerts-and-queues.md
-            - name: 演练 - ATP 欺骗智能见解
+            - name: 演练 - 欺骗智能见解
               href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
         - name: 响应
           items:

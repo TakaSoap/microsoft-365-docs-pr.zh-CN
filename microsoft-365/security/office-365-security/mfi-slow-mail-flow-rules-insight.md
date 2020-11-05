@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的 "修复缓慢的邮件流规则" 来识别和修复低效或损坏的邮件流规则 (也称为传输规则在其组织中) 。
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877533"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920544"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修复了安全 & 合规中心中的邮件流规则的更慢理解
 
@@ -32,7 +32,9 @@ ms.locfileid: "48877533"
 - 使用复杂正则表达式 (regex) 模式匹配的条件。
 - 使用附件中的内容检查的条件。
 
-在 [安全 & 合规中心](https://protection.office.com)中的 [邮件流仪表板](mail-flow-insights-v2.md)的 " **建议** " 中，" **修复速度较慢的邮件流规则** " 了解如何在邮件流规则的完成时间过长时通知您。 此洞察力仅在检测到条件后出现 (如果您没有任何邮件循环，则不会看到) 的洞察力。
+在 [安全 & 合规中心](https://protection.office.com)中的 [邮件流仪表板](mail-flow-insights-v2.md)的 " **建议** " 中，" **修复速度较慢的邮件流规则** " 了解如何在邮件流规则的完成时间过长时通知您。
+
+此洞察力仅在检测到条件后出现 (如果您没有任何邮件循环，则不会看到) 的洞察力。
 
 您可以使用此通知来帮助您识别和微调邮件流规则，以帮助减少邮件流延迟。
 
@@ -47,8 +49,8 @@ ms.locfileid: "48877533"
 
 ![单击 "修复慢速邮件流规则" 中的 "查看详细信息" 后出现的详细信息浮出控件](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-有关 Exchange Online 中的邮件流规则的条件和例外的详细信息，请参阅 [mail flow rule 条件和例外 (谓词) 在 Exchange online 中](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+有关邮件流规则中的条件和例外的详细信息，请参阅 [mail flow rule 条件和例外 (谓词) 在 Exchange Online 中](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
-## <a name="related-topics"></a>相关主题
+## <a name="see-also"></a>另请参阅
 
 有关邮件流仪表板中的其他见解的信息，请参阅 [Security & 合规性中心中的邮件流见解](mail-flow-insights-v2.md)。

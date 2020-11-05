@@ -13,13 +13,13 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理员可以了解如何在独立 Exchange Online Protection (EOP) 中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录该报告，EOP 记录每个事件。
-ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 管理员可以了解如何在独立 Exchange Online Protection (EOP) 中运行管理员角色组报告。 当管理员向管理员角色组添加成员或从中删除成员时，此报告将记录日志。
+ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200477"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920616"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在独立 EOP 中运行管理员角色组报告
 
@@ -34,26 +34,26 @@ ms.locfileid: "48200477"
 
 - 若要打开 Exchange 管理中心，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 必须先分配有权限，然后才能执行这些过程。 具体来说，您需要默认情况下，您需要审核日志或仅查看审核日志角色，这些角色分配给 ComplianceManagement、OrganizationManagement (全局管理员) 和 SecurityAdministrator 角色组。 有关详细信息，请参阅 [独立 EOP 中的权限](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 必须先分配有权限，然后才能执行这些过程。 具体来说，您需要 "审核日志" 或 "View-Only 审核日志" 角色，默认情况下这些角色分配给 ComplianceManagement、OrganizationManagement (global admins) 和 SecurityAdministrator 角色组。 有关详细信息，请参阅 [独立 EOP 中的权限](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 有关可能适用于本主题中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 有关可能适用于本文中的过程的键盘快捷方式的信息，请参阅 exchange [Online 中 exchange 管理中心的键盘快捷方式](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 是否有任何疑问？ 请在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 论坛中寻求帮助。
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>使用 EAC 运行管理员角色组报告
 
-运行管理员角色组报告，在特定时间范围内查找对组织中的管理角色组的更改。
+运行管理员角色组报告，以查找在特定时间段内对管理角色组所做的更改。
 
-1. 在 EAC 中，转到 " **合规性管理** \> **审核**"，然后选择 " **运行管理员角色组报告**"。
+1. 在 EAC 中，转到 " **合规性管理** \> **审核** "，然后选择 " **运行管理员角色组报告** "。
 
 2. 在打开的 " **搜索对管理员角色组的更改** " 页上，配置以下设置：
 
-   - "**开始日期**" 和 "**结束日期**"：输入日期范围。 默认情况下，报告将搜索在过去两周内对管理员角色组所做的更改。
+   - " **开始日期** " 和 " **结束日期** "：输入日期范围。 默认情况下，报告将搜索在过去两周内对管理员角色组所做的更改。
 
-   - **选择角色组**：默认情况下，搜索所有角色组。 若要按特定角色组筛选结果，请单击 " **选择角色组**"。 在出现的对话框中，选择一个角色组，然后单击 " **加载项 >**"。 根据需要重复此步骤多次，然后在完成后单击 **"确定"** 。
+   - **选择角色组** ：默认情况下，搜索所有角色组。 若要按特定角色组筛选结果，请单击 " **选择角色组** "。 在出现的对话框中，选择一个角色组，然后单击 " **加载项 >** "。 根据需要重复此步骤多次，然后在完成后单击 **"确定"** 。
 
-3. 完成后，请单击 " **搜索**"。
+3. 完成后，请单击 " **搜索** "。
 
 如果使用指定的条件找到了所有更改，则这些更改会显示在结果窗格中。单击搜索结果中的角色组可在详细信息窗格中查看更改。
 
@@ -72,7 +72,6 @@ ms.locfileid: "48200477"
 在本示例中，Administrator 用户帐户做出了以下更改：
 
 - 在2/06/2018 上，他们添加了用户 tonip。
-
 - 在2/19/2018 上，他们删除了用户 pilarp。
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用独立 Exchange Online PowerShell 搜索审核日志条目
@@ -90,15 +89,11 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 
 本示例将使用以下条件执行对所有审核日志条目的搜索：
 
-- **开始日期**：08/04/2018
-
-- **结束日期**：10/03/2018
-
-- **用户 id**： davids、chrisd、kima
-
-- **Cmdlet**： **Set-邮箱**
-
-- **参数**： _ProhibitSendQuota_、 _ProhibitSendReceiveQuota_、 _IssueWarningQuota_、 _MaxSendSize_、 _MaxReceiveSize_
+- **开始日期** ：08/04/2018
+- **结束日期** ：10/03/2018
+- **用户 id** ： `davids` 、 `chrisd` 、 `kima`
+- **Cmdlet** ： **Set-邮箱**
+- **参数** ： _ProhibitSendQuota_ 、 _ProhibitSendReceiveQuota_ 、 _IssueWarningQuota_ 、 _MaxSendSize_ 、 _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -106,25 +101,23 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 本示例将搜索对特定邮箱所做的更改。此操作在进行故障排除或需要为调查提供信息时很有用。使用以下条件：
 
-- **开始日期**：05/01/2018
-
-- **结束日期**：10/03/2018
-
-- **对象 ID**： contoso.com/Users/DavidS
+- **开始日期** ：05/01/2018
+- **结束日期** ：10/03/2018
+- **对象 ID** ： contoso.com/Users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-如果您的搜索返回了多个日志条目，我们建议使用 Exchange Online PowerShell 中提供的过程 **来搜索审核日志条目，并** 在本主题后面的内容中将结果发送给收件人。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
+如果您的搜索返回了多个日志条目，我们建议使用 Exchange Online PowerShell 中提供的过程 **来搜索审核日志条目，并** 在本文后面的内容中将结果发送给收件人。 该部分提供的过程将 XML 文件以电子邮件附件的形式发送给指定的收件人，从而使您更易于提取您感兴趣的数据。
 
 有关详细的语法和参数信息，请参阅 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
 ### <a name="view-details-of-audit-log-entries"></a>查看审核日志条目的详细信息
 
-**Search-adminauditlog** Cmdlet 返回[审核日志内容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的字段。 在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
+**Search-adminauditlog** Cmdlet 返回 [审核日志内容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的字段。 在此 cmdlet 返回的字段中， **CmdletParameters** 和 **ModifiedProperties** 两个字段包含默认情况下不可见的附加信息。
 
-若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用 Exchange Online PowerShell 中的过程来 **搜索审核日志条目，并** 在本主题后面的内容中将结果发送到收件人，以创建一个 XML 文件。
+若要查看 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请执行以下步骤。 或者，您可以使用 Exchange Online PowerShell 中的过程来 **搜索审核日志条目，并在下文中将结果发送到收件人** ，以创建 XML 文件。
 
 此过程将使用以下概念：
 
@@ -134,21 +127,21 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 1. 确定搜索时要使用的条件，然后运行 **Search-AdminAuditLog** cmdlet，并使用以下命令将结果存储在一个变量中。
 
-    ```PowerShell
-    $Results = Search-AdminAuditLog <search criteria>
-    ```
+   ```PowerShell
+   $Results = Search-AdminAuditLog <search criteria>
+   ```
 
 2. 每个审核日志条目都作为数组元素存储在变量中 `$Results` 。 可以通过指定其数组元素索引来选择数组元素。 数组元素索引以零 (0) 开始，即第一个数组元素的索引为 0。 例如，如果要检索第 5 个数组元素，其索引为 4，则应使用以下命令进行检索。
 
-    ```PowerShell
-    $Results[4]
-    ```
+   ```PowerShell
+   $Results[4]
+   ```
 
 3. 上述命令将返回数组元素 4 中存储的日志条目。若要查看此日志条目的 **CmdletParameters** 和 **ModifiedProperties** 字段的内容，请使用以下命令。
 
-    ```PowerShell
-    $Results[4].CmdletParameters
-    $Results[4].ModifiedProperties
-    ```
+   ```PowerShell
+   $Results[4].CmdletParameters
+   $Results[4].ModifiedProperties
+   ```
 
 4. 若要查看其他日志条目的 **CmdletParameters** 或 **ModifiedParameters** 字段的内容，请更改数组元素索引。

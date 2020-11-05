@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 本地 IT 基础结构的基本结构，以及 Microsoft 365 for 企业如何满足公司的业务需求。
-ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b3b67429faccc5d22d49a2921fff4c8b3c3c062e
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847126"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920450"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基础结构和业务需求
 
@@ -124,7 +124,7 @@ Contoso IT 部门在部署前确定了以下业务需求映射到 Microsoft 365 
 |  | 标识和访问管理 | 专用全局管理员帐户使用 Azure 多重身份验证 (MFA) 和 Azure AD Privileged Identity Management (PIM) <BR> 用于所有用户帐户的 MFA <BR> 条件访问 <BR> Windows Hello <BR> Windows Credential Guard |
 |  | 威胁防护 | 高级威胁分析 <BR> Windows Defender <BR> Defender for Office 365 <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 威胁调查和响应 <BR> |
 |  | 信息保护 | Azure 信息保护 <BR> 数据丢失防护 (DLP) <BR> Windows 信息保护 (WIP) <BR> Microsoft 云应用安全 <BR> Microsoft Intune |
-|  | 安全管理 | Azure Defender *  <BR> Windows Defender 安全中心 |
+|  | 安全管理 | Azure Defender  <BR> Windows Defender 安全中心 |
 | 远程和移动访问及业务合作伙伴 |  |  |
 |  | 提高远程和移动工作者的安全性 | Microsoft Intune |
 |  | 减少员工远程访问基础结构 | Microsoft 365 工作负载和基于云的数据 |

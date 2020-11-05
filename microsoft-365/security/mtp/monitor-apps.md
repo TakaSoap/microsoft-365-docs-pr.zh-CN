@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846624"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920510"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心中的应用程序监控和报告
 
@@ -67,8 +67,8 @@ ms.locfileid: "48846624"
 
 **基础结构运行状况** 显示 Azure Defender 中的基础结构工作负荷的运行状况状态警报。
 
-Azure Defender * 在本地和云工作负载中提供了统一的 Office 365 安全管理和 Defender。 您可以从不同的源中收集、搜索和分析安全数据，包括防火墙和其他合作伙伴解决方案。
+Azure Defender 在本地和云工作负载中提供了统一的 Office 365 安全管理和 Defender。 您可以从不同的源中收集、搜索和分析安全数据，包括防火墙和其他合作伙伴解决方案。
 
-有关详细信息，请参阅 [Azure Defender * 文档](https://docs.microsoft.com/azure/security-center/)。
+有关详细信息，请参阅 [Azure Defender 文档](https://docs.microsoft.com/azure/security-center/)。
 
 ![基础结构运行状况卡片](../../media/infrastructure-health.png)

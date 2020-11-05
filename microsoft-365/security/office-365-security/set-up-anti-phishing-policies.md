@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的反网络钓鱼策略。
-ms.openlocfilehash: 5c3b79dcf462dbab4fc67b75952ca0ef39b80e75
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844292"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919772"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -57,7 +57,7 @@ Microsoft Defender for Office 365 中的反网络钓鱼策略仅在拥有 Office
 
 - [在 EOP 中配置反网络钓鱼策略](configure-anti-phishing-policies-eop.md)
 
-- [在 microsoft 365 中配置 Microsoft Defender for Office 365 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
+- [在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)
 
 本文的其余部分介绍了 EOP 和 Defender for Office 365 中的反网络钓鱼策略中提供的设置。
 

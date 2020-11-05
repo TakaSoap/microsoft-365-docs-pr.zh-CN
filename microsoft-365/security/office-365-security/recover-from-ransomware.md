@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,23 +14,27 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 管理员可以了解如何从勒索软件攻击中恢复。
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845536"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920604"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>在 Microsoft 365 中从勒索软件攻击中恢复
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-即使您在保护组织时采取了任何预防措施，仍可成为 [勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻击的牺牲品。 勒索软件是大型企业，攻击的验证非常复杂。
+即使您在保护组织时采取了任何预防措施，仍可成为 [勒索软件](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻击的牺牲品。 勒索软件是大型企业，攻击非常复杂。
 
-本主题中的步骤将为您提供恢复由勒索软件加密的数据的最佳机会，并帮助停止组织中的感染的传播。 在开始之前，请考虑以下事项：
+本文中的步骤将为您提供恢复数据和停止感染的内部传播的最佳机会。 在开始之前，请考虑以下事项：
 
-- 不能保证付款勒索将返回对您的文件的访问权限。 实际上，支付勒索可以使您成为更多勒索软件的目标。 如果你已支付，但你可以成功恢复文件，而无需使用攻击者的解决方案，则应致电你的银行以了解它们是否可以阻止事务。 此外，我们还建议您将勒索软件攻击报告给执法部门、诈骗报告网站和 Microsoft，如本主题后面所述。
+- 不能保证付款勒索将返回对您的文件的访问权限。 实际上，支付勒索可以使您成为更多勒索软件的目标。
+
+  如果你已支付，但在未使用攻击者的解决方案的情况下进行了恢复，请联系你的银行以了解它们是否可以阻止事务。
+
+  此外，我们还建议您将勒索软件攻击报告给执法部门、诈骗报告网站和 Microsoft，如本文后面所述。
 
 - 快速响应攻击及其后果非常重要。 等待时间越长，可以恢复受影响数据的可能性就越小。
 
@@ -40,13 +44,13 @@ ms.locfileid: "48845536"
 
 如果你没有备份，或者你的备份也受到勒索软件的影响，则可以跳过此步骤。
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>步骤2：禁用 ActiveSync 和 OneDrive 同步
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步骤2：禁用 Exchange ActiveSync 和 OneDrive 同步
 
 此处的关键点是停止勒索软件的数据加密传播。
 
-如果您怀疑电子邮件是目标，应暂时禁用用户对邮箱的访问。 移动设备使用 Exchange ActiveSync 在设备与 Exchange Online 邮箱之间同步数据。
+如果您怀疑电子邮件为勒索软件加密的目标，请暂时禁用用户对邮箱的访问。 Exchange ActiveSync 在设备和 Exchange Online 邮箱之间同步数据。
 
-若要禁用邮箱的 ActiveSync，请参阅 [如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303)。
+若要禁用邮箱的 Exchange ActiveSync，请参阅 [如何在 Exchange Online 中禁用用户的 Exchange activesync](https://support.microsoft.com/help/2795303)。
 
 若要禁用对邮箱的其他类型的访问，请参阅：
 
@@ -58,7 +62,9 @@ ms.locfileid: "48845536"
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步骤3：从受影响的设备中删除恶意软件
 
-在所有可疑计算机和设备上运行完整的防病毒扫描，以检测和删除与勒索软件相关联的有效负载。 不要忘记正在同步数据的设备，或者在需要扫描的已映射网络驱动器的目标 (这些计算机和设备也) 。
+在所有可疑计算机和设备上运行完全的当前防病毒扫描，以检测和删除与勒索软件相关联的有效负载。
+
+请勿忘记扫描正在同步数据的设备，或映射的网络驱动器的目标。
 
 您可以将 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) 或 (用于旧客户端) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
 
@@ -90,7 +96,7 @@ ms.locfileid: "48845536"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步骤7：重新启用 Exchange ActiveSync 和 OneDrive 同步
 
-在清理了计算机和设备并恢复了数据之后，可以重新启用您之前在 [步骤 2](#step-2-disable-activesync-and-onedrive-sync)中禁用的 ActiveSync 和 OneDrive 同步。
+在清理了计算机和设备并恢复了数据之后，可以重新启用之前在 [步骤 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中禁用的 Exchange ActiveSync 和 OneDrive 同步。
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>第8步 (可选) ：阻止特定文件扩展名的 OneDrive 同步
 
