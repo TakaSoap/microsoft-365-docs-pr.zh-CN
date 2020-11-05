@@ -17,117 +17,117 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容
-ms.openlocfilehash: e1504bf4dda8ee2e9f78f84c147bb4f3ebc22887
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773993"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920336"
 ---
-# <a name="create-retention-labels-and-apply-them-in-apps"></a><span data-ttu-id="3f6e3-103">创建保留标签并在应用中应用它们</span><span class="sxs-lookup"><span data-stu-id="3f6e3-103">Create retention labels and apply them in apps</span></span>
+# <a name="create-retention-labels-and-apply-them-in-apps"></a><span data-ttu-id="65196-103">创建保留标签并在应用中应用它们</span><span class="sxs-lookup"><span data-stu-id="65196-103">Create retention labels and apply them in apps</span></span>
 
-><span data-ttu-id="3f6e3-104">*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*</span><span class="sxs-lookup"><span data-stu-id="3f6e3-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
+><span data-ttu-id="65196-104">*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*</span><span class="sxs-lookup"><span data-stu-id="65196-104">*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="3f6e3-105">此方案受所有保留标签配置（包括 [规章记录](records-management.md#records)）的支持。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-105">This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).</span></span>
+> <span data-ttu-id="65196-105">此方案受所有保留标签配置（包括 [规章记录](records-management.md#records)）的支持。</span><span class="sxs-lookup"><span data-stu-id="65196-105">This scenario is supported for all retention label configurations, including [regulatory records](records-management.md#records).</span></span>
 
-<span data-ttu-id="3f6e3-106">请参阅以下信息来帮助你创建和发布[保留标签](retention.md)，然后向文档和电子邮件应用它们。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-106">Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.</span></span>
+<span data-ttu-id="65196-106">请参阅以下信息来帮助你创建和发布[保留标签](retention.md)，然后向文档和电子邮件应用它们。</span><span class="sxs-lookup"><span data-stu-id="65196-106">Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.</span></span>
 
-<span data-ttu-id="3f6e3-107">保留标签有助于在项（文档或电子邮件）级别保留所需内容，并删除不需要内容。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-107">Retention labels help you retain what you need and delete what you don't at the item level (document or email).</span></span> <span data-ttu-id="3f6e3-108">它们还用于将项声明为记录，作为 Microsoft 365 数据的[记录管理](records-management.md)解决方案的一部分。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-108">They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.</span></span>
+<span data-ttu-id="65196-107">保留标签有助于在项（文档或电子邮件）级别保留所需内容，并删除不需要内容。</span><span class="sxs-lookup"><span data-stu-id="65196-107">Retention labels help you retain what you need and delete what you don't at the item level (document or email).</span></span> <span data-ttu-id="65196-108">它们还用于将项声明为记录，作为 Microsoft 365 数据的[记录管理](records-management.md)解决方案的一部分。</span><span class="sxs-lookup"><span data-stu-id="65196-108">They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.</span></span>
 
-<span data-ttu-id="3f6e3-109">使保留标签对组织中的人员可用以便对内容进行分类的过程分为两个步骤：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-109">Making retention labels available to people in your organization so that they can classify content is a two-step process:</span></span> 
+<span data-ttu-id="65196-109">使保留标签对组织中的人员可用以便对内容进行分类的过程分为两个步骤：</span><span class="sxs-lookup"><span data-stu-id="65196-109">Making retention labels available to people in your organization so that they can classify content is a two-step process:</span></span> 
 
-1. <span data-ttu-id="3f6e3-110">创建保留标签。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-110">Create the retention labels.</span></span>
+1. <span data-ttu-id="65196-110">创建保留标签。</span><span class="sxs-lookup"><span data-stu-id="65196-110">Create the retention labels.</span></span>
 
-2. <span data-ttu-id="3f6e3-111">使用保留标签策略发布保留标签。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-111">Publish the retention labels by using a retention label policy.</span></span>
+2. <span data-ttu-id="65196-111">使用保留标签策略发布保留标签。</span><span class="sxs-lookup"><span data-stu-id="65196-111">Publish the retention labels by using a retention label policy.</span></span>
   
 ![标签角色和任务的关系图](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
 
-<span data-ttu-id="3f6e3-113">请按照以下说明来执行两个管理步骤。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-113">Use the following instructions for the two admin steps.</span></span>
+<span data-ttu-id="65196-113">请按照以下说明来执行两个管理步骤。</span><span class="sxs-lookup"><span data-stu-id="65196-113">Use the following instructions for the two admin steps.</span></span>
 
-## <a name="before-you-begin"></a><span data-ttu-id="3f6e3-114">准备工作</span><span class="sxs-lookup"><span data-stu-id="3f6e3-114">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="65196-114">准备工作</span><span class="sxs-lookup"><span data-stu-id="65196-114">Before you begin</span></span>
 
-<span data-ttu-id="3f6e3-115">组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-115">The global admin for your organization has full permissions to create and edit retention labels and their policies.</span></span> <span data-ttu-id="3f6e3-116">如果你没有以全局管理员身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-116">If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).</span></span>
+<span data-ttu-id="65196-115">组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。</span><span class="sxs-lookup"><span data-stu-id="65196-115">The global admin for your organization has full permissions to create and edit retention labels and their policies.</span></span> <span data-ttu-id="65196-116">如果你没有以全局管理员身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。</span><span class="sxs-lookup"><span data-stu-id="65196-116">If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).</span></span>
 
-## <a name="how-to-create-and-publish-retention-labels"></a><span data-ttu-id="3f6e3-117">如何创建和发布保留标签</span><span class="sxs-lookup"><span data-stu-id="3f6e3-117">How to create and publish retention labels</span></span>
+## <a name="how-to-create-and-publish-retention-labels"></a><span data-ttu-id="65196-117">如何创建和发布保留标签</span><span class="sxs-lookup"><span data-stu-id="65196-117">How to create and publish retention labels</span></span>
 
-<span data-ttu-id="3f6e3-118">首先，创建保留标签。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-118">First, create your retention labels.</span></span> <span data-ttu-id="3f6e3-119">然后，创建标签策略，让标签可以在应用中应用。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-119">Then create a label policy to make the labels available to apply in apps.</span></span>
+<span data-ttu-id="65196-118">首先，创建保留标签。</span><span class="sxs-lookup"><span data-stu-id="65196-118">First, create your retention labels.</span></span> <span data-ttu-id="65196-119">然后，创建标签策略，让标签可以在应用中应用。</span><span class="sxs-lookup"><span data-stu-id="65196-119">Then create a label policy to make the labels available to apply in apps.</span></span>
 
-<span data-ttu-id="3f6e3-120">创建和配置保留标签的位置取决于你是否使用记录管理。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-120">Where you create and configure your retention labels depend on whether you're using records management or not.</span></span> <span data-ttu-id="3f6e3-121">针对这两种情况提供了说明。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-121">Instructions are provided for both scenarios.</span></span>
+<span data-ttu-id="65196-120">创建和配置保留标签的位置取决于你是否使用记录管理。</span><span class="sxs-lookup"><span data-stu-id="65196-120">Where you create and configure your retention labels depend on whether you're using records management or not.</span></span> <span data-ttu-id="65196-121">针对这两种情况提供了说明。</span><span class="sxs-lookup"><span data-stu-id="65196-121">Instructions are provided for both scenarios.</span></span>
 
-### <a name="step-1-create-retention-labels"></a><span data-ttu-id="3f6e3-122">第 1 步：创建保留标签</span><span class="sxs-lookup"><span data-stu-id="3f6e3-122">Step 1: Create retention labels</span></span>
+### <a name="step-1-create-retention-labels"></a><span data-ttu-id="65196-122">第 1 步：创建保留标签</span><span class="sxs-lookup"><span data-stu-id="65196-122">Step 1: Create retention labels</span></span>
 
-1. <span data-ttu-id="3f6e3-123">在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-123">In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:</span></span>
+1. <span data-ttu-id="65196-123">在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：</span><span class="sxs-lookup"><span data-stu-id="65196-123">In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:</span></span>
     
-    - <span data-ttu-id="3f6e3-124">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-124">If you are using records management:</span></span>
-        - <span data-ttu-id="3f6e3-125">“ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”</span><span class="sxs-lookup"><span data-stu-id="3f6e3-125">**Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**</span></span>
+    - <span data-ttu-id="65196-124">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="65196-124">If you are using records management:</span></span>
+        - <span data-ttu-id="65196-125">“ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”</span><span class="sxs-lookup"><span data-stu-id="65196-125">**Solutions** > **Records management** > **File plan** tab > **+ Create a label** > **Retention label**</span></span>
         
-    - <span data-ttu-id="3f6e3-126">如果你没有使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-126">If you are not using records management:</span></span>
-       - <span data-ttu-id="3f6e3-127">“ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”</span><span class="sxs-lookup"><span data-stu-id="3f6e3-127">**Solutions** > **Information governance** > **Labels** tab > + **Create a label**</span></span>
+    - <span data-ttu-id="65196-126">如果你没有使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="65196-126">If you are not using records management:</span></span>
+       - <span data-ttu-id="65196-127">“ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”</span><span class="sxs-lookup"><span data-stu-id="65196-127">**Solutions** > **Information governance** > **Labels** tab > + **Create a label**</span></span>
     
-    <span data-ttu-id="3f6e3-128">没有立即看到你的选项？</span><span class="sxs-lookup"><span data-stu-id="3f6e3-128">Don't immediately see your option?</span></span> <span data-ttu-id="3f6e3-129">首先选择“ **全部显示** ”。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-129">First select **Show all** .</span></span> 
+    <span data-ttu-id="65196-128">没有立即看到你的选项？</span><span class="sxs-lookup"><span data-stu-id="65196-128">Don't immediately see your option?</span></span> <span data-ttu-id="65196-129">首先选择“ **全部显示** ”。</span><span class="sxs-lookup"><span data-stu-id="65196-129">First select **Show all**.</span></span> 
 
-2. <span data-ttu-id="3f6e3-130">按照向导中的提示进行操作。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-130">Follow the prompts in the wizard.</span></span> <span data-ttu-id="3f6e3-131">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-131">If you are using records management:</span></span>
+2. <span data-ttu-id="65196-130">按照向导中的提示进行操作。</span><span class="sxs-lookup"><span data-stu-id="65196-130">Follow the prompts in the wizard.</span></span> <span data-ttu-id="65196-131">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="65196-131">If you are using records management:</span></span>
     
-    - <span data-ttu-id="3f6e3-132">有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)</span><span class="sxs-lookup"><span data-stu-id="3f6e3-132">For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)</span></span>
+    - <span data-ttu-id="65196-132">有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)</span><span class="sxs-lookup"><span data-stu-id="65196-132">For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)</span></span>
     
-    - <span data-ttu-id="3f6e3-133">若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-133">To use the retention label to declare records, select **Mark items as records** , or **Mark items as regulatory records** .</span></span> <span data-ttu-id="3f6e3-134">有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-134">For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).</span></span>
+    - <span data-ttu-id="65196-133">若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。</span><span class="sxs-lookup"><span data-stu-id="65196-133">To use the retention label to declare records, select **Mark items as records** , or **Mark items as regulatory records**.</span></span> <span data-ttu-id="65196-134">有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。</span><span class="sxs-lookup"><span data-stu-id="65196-134">For more information, see [Configuring retention labels to declare records](declare-records.md#configuring-retention-labels-to-declare-records).</span></span>
 
-3. <span data-ttu-id="3f6e3-135">创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“ **现在仅保存标签** ”，然后选择“ **完成** ”。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-135">After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now** , and then select **Done** .</span></span>
+3. <span data-ttu-id="65196-135">创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“ **现在仅保存标签** ”，然后选择“ **完成** ”。</span><span class="sxs-lookup"><span data-stu-id="65196-135">After you have created the label and you see the options to publish the label, auto-apply the label, or just save the label: Select **Just save the label for now** , and then select **Done**.</span></span>
 
-4. <span data-ttu-id="3f6e3-136">重复这些步骤以创建更多标签。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-136">Repeat these steps to create more labels.</span></span>
+4. <span data-ttu-id="65196-136">重复这些步骤以创建更多标签。</span><span class="sxs-lookup"><span data-stu-id="65196-136">Repeat these steps to create more labels.</span></span>
 
-<span data-ttu-id="3f6e3-137">若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-137">To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.</span></span>
+<span data-ttu-id="65196-137">若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。</span><span class="sxs-lookup"><span data-stu-id="65196-137">To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.</span></span>
 
-### <a name="step-2-publish-retention-labels"></a><span data-ttu-id="3f6e3-138">第 2 步：发布保留标签</span><span class="sxs-lookup"><span data-stu-id="3f6e3-138">Step 2: Publish retention labels</span></span>
+### <a name="step-2-publish-retention-labels"></a><span data-ttu-id="65196-138">第 2 步：发布保留标签</span><span class="sxs-lookup"><span data-stu-id="65196-138">Step 2: Publish retention labels</span></span>
 
-<span data-ttu-id="3f6e3-139">发布保留标签，以便用户可以在 SharePoint 和 Outlook 等应用中应用它们。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-139">Publish retention labels so that they can be applied by users in apps, such as SharePoint and Outlook.</span></span>
+<span data-ttu-id="65196-139">发布保留标签，以便用户可以在 SharePoint 和 Outlook 等应用中应用它们。</span><span class="sxs-lookup"><span data-stu-id="65196-139">Publish retention labels so that they can be applied by users in apps, such as SharePoint and Outlook.</span></span>
 
-1. <span data-ttu-id="3f6e3-140">在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-140">In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:</span></span>
+1. <span data-ttu-id="65196-140">在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：</span><span class="sxs-lookup"><span data-stu-id="65196-140">In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:</span></span>
     
-    - <span data-ttu-id="3f6e3-141">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-141">If you are using records management:</span></span>
-        - <span data-ttu-id="3f6e3-142">“ **解决方案** ” > “ **记录管理** ”> >“ **标签策略** ”选项卡 >“ **发布标签** ”</span><span class="sxs-lookup"><span data-stu-id="3f6e3-142">**Solutions** > **Records management** > > **Label policies** tab > **Publish labels**</span></span>
+    - <span data-ttu-id="65196-141">如果你正在使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="65196-141">If you are using records management:</span></span>
+        - <span data-ttu-id="65196-142">“ **解决方案** ” > “ **记录管理** ”> >“ **标签策略** ”选项卡 >“ **发布标签** ”</span><span class="sxs-lookup"><span data-stu-id="65196-142">**Solutions** > **Records management** > > **Label policies** tab > **Publish labels**</span></span>
     
-    - <span data-ttu-id="3f6e3-143">如果你没有使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-143">If you are not using records management:</span></span>
-        - <span data-ttu-id="3f6e3-144">“ **解决方案** ” > “ **信息治理** ” > “ **标签策略** ”选项卡 >“ **发布标签** ”</span><span class="sxs-lookup"><span data-stu-id="3f6e3-144">**Solutions** > **Information governance** > **Label policies** tab > **Publish labels**</span></span>
+    - <span data-ttu-id="65196-143">如果你没有使用记录管理：</span><span class="sxs-lookup"><span data-stu-id="65196-143">If you are not using records management:</span></span>
+        - <span data-ttu-id="65196-144">“ **解决方案** ” > “ **信息治理** ” > “ **标签策略** ”选项卡 >“ **发布标签** ”</span><span class="sxs-lookup"><span data-stu-id="65196-144">**Solutions** > **Information governance** > **Label policies** tab > **Publish labels**</span></span>
     
-    <span data-ttu-id="3f6e3-145">没有立即看到你的选项？</span><span class="sxs-lookup"><span data-stu-id="3f6e3-145">Don't immediately see your option?</span></span> <span data-ttu-id="3f6e3-146">首先选择“ **全部显示** ”。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-146">First select **Show all** .</span></span> 
+    <span data-ttu-id="65196-145">没有立即看到你的选项？</span><span class="sxs-lookup"><span data-stu-id="65196-145">Don't immediately see your option?</span></span> <span data-ttu-id="65196-146">首先选择“ **全部显示** ”。</span><span class="sxs-lookup"><span data-stu-id="65196-146">First select **Show all**.</span></span> 
 
-2. <span data-ttu-id="3f6e3-147">按照向导中的提示进行操作。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-147">Follow the prompts in the wizard.</span></span>
+2. <span data-ttu-id="65196-147">按照向导中的提示进行操作。</span><span class="sxs-lookup"><span data-stu-id="65196-147">Follow the prompts in the wizard.</span></span>
     
-    <span data-ttu-id="3f6e3-148">有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-148">For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.</span></span> 
+    <span data-ttu-id="65196-148">有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。</span><span class="sxs-lookup"><span data-stu-id="65196-148">For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.</span></span> 
 
-<span data-ttu-id="3f6e3-149">若要编辑现有的保留标签策略（策略类型是“ **发布** ”）"，请选择它，然后选择“ **编辑** ”选项，以启动“编辑保留策略”。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-149">To edit an existing retention label policy (the policy type is **Publish** ), select it, and then select the **Edit** option to start the Edit retention policy.</span></span> <span data-ttu-id="3f6e3-150">此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-150">This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.</span></span>
+<span data-ttu-id="65196-149">若要编辑现有的保留标签策略（策略类型是“ **发布** ”）"，请选择它，然后选择“ **编辑** ”选项，以启动“编辑保留策略”。</span><span class="sxs-lookup"><span data-stu-id="65196-149">To edit an existing retention label policy (the policy type is **Publish** ), select it, and then select the **Edit** option to start the Edit retention policy.</span></span> <span data-ttu-id="65196-150">此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。</span><span class="sxs-lookup"><span data-stu-id="65196-150">This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.</span></span>
 
 
-## <a name="when-retention-labels-become-available-to-apply"></a><span data-ttu-id="3f6e3-151">当保留标签可应用时</span><span class="sxs-lookup"><span data-stu-id="3f6e3-151">When retention labels become available to apply</span></span>
+## <a name="when-retention-labels-become-available-to-apply"></a><span data-ttu-id="65196-151">当保留标签可应用时</span><span class="sxs-lookup"><span data-stu-id="65196-151">When retention labels become available to apply</span></span>
 
-<span data-ttu-id="3f6e3-152">如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-152">If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day.</span></span> <span data-ttu-id="3f6e3-153">不过，最长可能需要 7 天才能显示。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-153">However, allow up to seven days.</span></span> 
+<span data-ttu-id="65196-152">如果你将保留标签发布到 SharePoint 或 OneDrive，这些标签通常会在 1 天内出现，以供最终用户选择。</span><span class="sxs-lookup"><span data-stu-id="65196-152">If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day.</span></span> <span data-ttu-id="65196-153">不过，最长可能需要 7 天才能显示。</span><span class="sxs-lookup"><span data-stu-id="65196-153">However, allow up to seven days.</span></span> 
 
-<span data-ttu-id="3f6e3-154">如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-154">If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.</span></span>
+<span data-ttu-id="65196-154">如果你将保留标签发布到 Exchange，这些保留标签最长可能需要 7 天才能向最终用户显示，并且邮箱至少必须包含 10MB 数据。</span><span class="sxs-lookup"><span data-stu-id="65196-154">If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.</span></span>
 
-<span data-ttu-id="3f6e3-155">例如：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-155">For example:</span></span>
+<span data-ttu-id="65196-155">例如：</span><span class="sxs-lookup"><span data-stu-id="65196-155">For example:</span></span>
   
 ![手动标签生效时间关系图](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-<span data-ttu-id="3f6e3-157">如果 7 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态** 。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-157">If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center.</span></span> <span data-ttu-id="3f6e3-158">如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-158">If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:</span></span>
+<span data-ttu-id="65196-157">如果 7 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态** 。</span><span class="sxs-lookup"><span data-stu-id="65196-157">If the labels don't appear after seven days, check the **Status** of the label policy by selecting it from the **Label policies** page in the compliance center.</span></span> <span data-ttu-id="65196-158">如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：</span><span class="sxs-lookup"><span data-stu-id="65196-158">If you see the status of **Off (Error)** and in the details for the locations see a message that it's taking longer than expected to deploy the policy (for SharePoint) or to try redeploying the policy (for OneDrive), try running the [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell command to retry the policy distribution:</span></span>
 
-1. [<span data-ttu-id="3f6e3-159">连接到安全与合规中心 PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f6e3-159">Connect to Security & Compliance Center PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [<span data-ttu-id="65196-159">连接到安全与合规中心 PowerShell</span><span class="sxs-lookup"><span data-stu-id="65196-159">Connect to Security & Compliance Center PowerShell</span></span>](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
-2. <span data-ttu-id="3f6e3-160">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="3f6e3-160">Run the following command:</span></span>
+2. <span data-ttu-id="65196-160">运行以下命令：</span><span class="sxs-lookup"><span data-stu-id="65196-160">Run the following command:</span></span>
     
     ``` PowerShell
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a><span data-ttu-id="3f6e3-161">如何检查发布到 Exchange 的保留标签的状态</span><span class="sxs-lookup"><span data-stu-id="3f6e3-161">How to check on the status of retention labels published to Exchange</span></span>
+### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a><span data-ttu-id="65196-161">如何检查发布到 Exchange 的保留标签的状态</span><span class="sxs-lookup"><span data-stu-id="65196-161">How to check on the status of retention labels published to Exchange</span></span>
 
-<span data-ttu-id="3f6e3-162">在 Exchange Online 中，保留标签通过每 7 天运行一次的进程向最终用户提供。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-162">In Exchange Online, retention labels are made available to end users by a process that runs every seven days.</span></span> <span data-ttu-id="3f6e3-163">通过 Powershell，可看到此进程上次运行的时间，并进而确定其再次运行的时间。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-163">By using PowerShell, you can see when this process last ran and therefore identify when it will run again.</span></span>
+<span data-ttu-id="65196-162">在 Exchange Online 中，保留标签通过每 7 天运行一次的进程向最终用户提供。</span><span class="sxs-lookup"><span data-stu-id="65196-162">In Exchange Online, retention labels are made available to end users by a process that runs every seven days.</span></span> <span data-ttu-id="65196-163">通过 Powershell，可看到此进程上次运行的时间，并进而确定其再次运行的时间。</span><span class="sxs-lookup"><span data-stu-id="65196-163">By using PowerShell, you can see when this process last ran and therefore identify when it will run again.</span></span>
   
-1. <span data-ttu-id="3f6e3-164">[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-164">[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).</span></span>
+1. <span data-ttu-id="65196-164">[连接到 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。</span><span class="sxs-lookup"><span data-stu-id="65196-164">[Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).</span></span>
     
-2. <span data-ttu-id="3f6e3-165">运行下面这些命令。</span><span class="sxs-lookup"><span data-stu-id="3f6e3-165">Run these commands.</span></span>
+2. <span data-ttu-id="65196-165">运行下面这些命令。</span><span class="sxs-lookup"><span data-stu-id="65196-165">Run these commands.</span></span>
     
    ```powershell
    $logProps = Export-MailboxDiagnosticLogs <user> -ExtendedProperties
@@ -272,7 +272,11 @@ When you edit a retention label or retention label policy, and the retention lab
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
