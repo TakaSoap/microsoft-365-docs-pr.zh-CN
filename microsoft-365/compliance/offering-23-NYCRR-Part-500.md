@@ -14,40 +14,40 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 623b78946eae36849da8e1b139e2df4a9dff7742
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fa76fefbeea2c8fc0226a85d5b12599839eba8ca
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845144"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920404"
 ---
 # <a name="title-23-nycrr-part-500"></a>Title 23 NYCRR 500 部分
 
 ## <a name="title-23-nycrr-part-500-overview"></a>Title 23 NYCRR 500 部分概述
 
-为了响应 2017 年对信息和财务系统的网络安全造成的大量不断增加的威胁，纽约州金融服务局对许可或授权在纽约州开展业务的金融机构施加一组新的网络安全要求。 此法规（Title 23 纽约法典、规则和法规 500 部分：金融服务公司的网络安全要求）旨在保护金融机构的客户数据和信息技术系统（如州立、私营和国际银行、抵押经纪人和保险公司）。
+In response to the significant and ever-increasing threats to the cybersecurity of information and financial systems, in 2017, the State of New York Department of Financial Services imposed a new set of cybersecurity requirements on financial institutions that are licensed or authorized to do business in the state. This regulation — Title 23 New York Codes, Rules, and Regulation Part 500: Cybersecurity Requirements for Financial Services Companies — is designed to protect customer data and the information technology systems of financial institutions such as state-chartered, private, and international banks, mortgage brokers, and insurance companies.
 
 ## <a name="microsoft-and-title-23-nycrr-part-500"></a>Microsoft 和 Title 23 NYCRR 500 部分
 
-Microsoft 为受到 Title 23 NYCRR 500 部分监管的金融服务提供了综合指南，[Microsoft 云服务：支持通过 NYDFS 网络安全要求实现合规性](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)。 该指南详细介绍了 Azure、Office 365 和 Power BI 云服务如何支持通过要求实现合规性。 试图在纽约的全球金融中心经营业务的金融机构必须满足这些要求，因此合规性对于许多机构非常重要。
+Microsoft provides a comprehensive guide, [Microsoft Cloud Services: Supporting Compliance with NYDFS Cybersecurity Requirements](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=f7e56dc6-4e52-4e9a-af06-aa41d5851d36&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides), for financial services regulated under Title 23 NYCRR Part 500. It explains in depth how Azure, Office 365, and Power BI cloud services support compliance with the requirements. Financial institutions that seek to operate in the global financial center of New York must meet them, so compliance is critical for many institutions.
 
 遵循此指南以通过 Title 23 NYCRR 500 部分： Microsoft 云服务：[支持通过 NYDFS 网络安全要求实现合规性](https://go.microsoft.com/fwlink/p/?linkid=2098969)来加快实现合规性
 
 纽约法规要求每个金融机构：
 
-- **开发并维护强大的网络安全计划** ，先对机构的特定风险状况进行评估，然后设计用来解决这些问题的计划。 [Microsoft 云金融服务合规性计划](https://www.microsoft.com/download/confirmation.aspx?id=55332)用来帮助金融服务评估使用 Microsoft 云服务的风险。 其中包括与我们的工程师和企业风险官直接接触，以及与我们的合规性和安全专家接触。
-- **实施全面的网络安全策略** ，该策略可以解决信息安全、数据管理和分类、访问控制、业务连续性等问题。 Microsoft 提供了有关如何开发此策略的指南，其中详细介绍认证和风险评估；业务连续性和灾难恢复指标；以及日志记录和审核的诊断。
-- **指定首席信息安全官** (CISO) 管理网络安全计划并强制实施策略。 为了帮助你的 CISO，Microsoft 通过 [Azure Defender*](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 高级威胁分析](https://docs.microsoft.com/advanced-threat-analytics/)和 [Power BI 安全性](https://go.microsoft.com/fwlink/?LinkId=829185)提供了有关进行 Microsoft 云部署的详细网络安全信息。
-- **监视和测试其网络安全计划的有效性** ：Microsoft 提供了有关其网络安全做法的审核信息，其中包括持续监视、定期渗透测试和漏洞评估。 客户可以执行自己的测试，而无需事先获得 Microsoft 批准。
-- **维护审核跟踪。** Azure、Office 365 和 Power BI 客户的内置审核功能生成用于重建财务交易和开发审核跟踪信息的信息。
+- **Develop and maintain a robust cybersecurity program** starting with an assessment of the institution’s specific risk profile and then designing a program that addresses them. The [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332) was created to help financial services assess the risks of using Microsoft cloud services. It includes direct engagement with our engineers and corporate risk officers and access to our compliance and security experts.
+- **Implement a comprehensive cybersecurity policy** that addresses information security, data governance and classification, access controls, business continuity, and the like. Microsoft offers guidance for developing this policy with in-depth information about our certifications and risk assessments; business continuity and disaster recovery metrics; and diagnostics for logging and auditing.
+- **指定一名首席信息安全官** (CISO) 来管理网络安全计划和执行政策。为了帮助你的 CISO，Microsoft 通过 [Azure Defender](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 高级威胁分析](https://docs.microsoft.com/advanced-threat-analytics/)和[Power BI 安全性](https://go.microsoft.com/fwlink/?LinkId=829185)提供有关 Microsoft 云部署的深入网络安全信息。
+- **Monitor and test the effectiveness of its cybersecurity program** : Microsoft provides information from audits of its cybersecurity practices that include continuous monitoring, periodic penetration testing, and vulnerability assessments. Customers can conduct their own tests without advance permission from Microsoft.
+- **Maintain an audit trail.** Built-in audit functionalities of Azure, Office 365, and Power BI customers generate information that can be used to reconstruct financial transactions and develop audit trail information.
 - **对包含非公开信息的信息系统的限制访问** ：Azure、Office 365 和 Power BI 提供本机到每个服务的基于角色的访问控制 (RBAC) 流程，针对每个 Microsoft 管理员的严格安全和访问要求，以及对提升的访问权限的每个请求的审核。
 - **制定用于评估和测试外部开发的应用程序的安全性的过程** ：对于使用 Visual Studio 的开发人员，托管代码的 [安全规则](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code)可帮助确保在部署代码前检测并缓解应用程序网络安全威胁。
-- **使用定期风险评估设计和增强网络安全计划** ：对于客户，Microsoft 聚合有关安全威胁的信息，提供变更管理的指南，并定期更新有关分包商的信息。 Microsoft 还会定期对自己的服务（即提供给客户的结果）进行风险评估。
-- **使用符合资格的人员管理网络安全风险并监督网络安全功能** ：Microsoft 使用严格的过程供员工访问客户数据。 如果我们聘用了分包商，我们仍负责传递服务，并确保分包商完全遵守 Microsoft 隐私和安全承诺，包括处理敏感数据、背景检查和保密协议的要求。
+- **Use periodic risk assessments to design and enhance cybersecurity programs** : For customers, Microsoft aggregates information about security threats, provides roadmaps of change management, and regularly updates information about subcontractors. Microsoft also regularly conducts risk assessments of its own services, the results of which are available to customers.
+- **Use qualified personnel to manage cybersecurity risks and oversee cybersecurity functions** : Microsoft employs stringent procedures for our employee access to your customer data. If we hire subcontractors, we remain responsible for service delivery, and ensure that subcontractors fully comply with Microsoft privacy and security commitments, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
 - **实施策略和过程来确保第三方服务提供商所拥有的信息的安全性** ：Azure、Office 365 和 Power BI 使多重身份验证可用于公司网络的所有入站连接；实施控制（包括加密）来保护通过外部网络传输及静态的非公开信息；并提供 [Microsoft Online Services 条款](https://aka.ms/Online-Services-Terms)，这些条款提供客户通知、事件调查和针对安全事件的风险缓解。
 - **实施数据保留以及删除策略和过程** ：你始终可以访问和提取存储在 Azure、Office 365 和 Power BI 中的客户数据。
-- **监视授权用户的活动，检测未经授权的访问，并向员工提供定期的网络安全意识培训** ：Azure、Office 365 和 Power BI 包含由外向内监视，以引发有关事件的警报以及日志记录和审核的大量诊断。 [Microsoft Virtual Academy](https://mva.microsoft.com/) 提供了包含 Microsoft 云服务的网络安全的在线培训。
-- **制定计划来响应网络安全事件并从中恢复** ：Microsoft 可帮助你使用防御策略准备网络安全事件，以在出现安全漏洞之前对其进行检测、预测和防范。 开发自己的计划时，可以制定事件管理计划以响应网络安全漏洞。
+- **Monitor the activity of authorized users, detect unauthorized access, and offer regular cybersecurity awareness training to employees** : Azure, Office 365, and Power BI include outside-in monitoring to raise alerts about incidents, and extensive diagnostics for logging and auditing. [Microsoft Virtual Academy](https://mva.microsoft.com/) offers online training that covers the cybersecurity of Microsoft cloud services.
+- **Develop plans to respond to and recover from cybersecurity incidents** : Microsoft helps you prepare for cybersecurity incidents using a defensive strategy to detect, predict, and prevent security breaches before they occur. When developing your own plans, you can draw on our incident management plan for responding to cybersecurity breaches.
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 

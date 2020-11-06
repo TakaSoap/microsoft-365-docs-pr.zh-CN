@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804755"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920522"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -55,11 +55,11 @@ ms.locfileid: "48804755"
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留设置如何应用于在适当位置上的内容
 
-分配有保留设置的内容保留在它的原始位置上。 用户可以继续处理自己的文档或邮件，就像什么都没有改变一样。 不过，如果用户编辑或删除包含在保留策略中的内容，则会自动保留内容的副本，与在应用保留设置时存在的内容一样。
+分配有保留设置的内容保留在它的原始位置上。 用户可以继续处理自己的文档或邮件，就像什么都没有改变一样。 但如果他们编辑或删除了包含在保留策略中的内容，则会自动保留一份内容的副本。
   
 - 对于 SharePoint 和 OneDrive 网站：副本保留在 **保留** 库中。
 
-- 对于 Exchange 邮箱：副本保留在“可恢复项”  文件夹中。 
+- 对于 Exchange 邮箱：副本保留在“可恢复项”文件夹中。 
 
 - 对于 Teams 和 Yammer 消息：副本保留在 Exchange“ **可恢复项** ”文件夹内名为“ **SubstrateHolds** ”的隐藏文件夹中。
 
@@ -77,13 +77,13 @@ ms.locfileid: "48804755"
 
 ## <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
 
-可以同时使用保留策略和保留标签来向内容分配保留设置。 
+可以使用保留策略和带有标签策略的保留标签来为内容分配保留设置。 
 
 使用保留策略可以在网站或邮箱级别为内容分配相同的保留设置，使用保留标签可以在项（文件夹、文档、电子邮件）级别分配保留设置。
 
 例如，如果某 SharePoint 网站中的所有文档都应保留 5 年，那么使用保留策略比将相同的保留标签应用于此网站中的所有文档更高效。 不过，如果此网站中的一些文档应保留 5 年，另一些文档应保留 10 年，那么保留策略就无法实现这一点。 如果需要在项级别指定保留设置，请使用保留标签。 
 
-与保留策略不同，如果内容被复制或移动到不同的 Microsoft 365 位置，保留标签的保留设置仍继续应用在内容上。 另外，保留标签具有保留策略不支持的以下功能： 
+与保留策略不同，如果内容移动到 Microsoft 365 租户内的不同位置，保留标签的保留设置会随着内容移动而移动。 另外，保留标签具有保留策略不支持的以下功能： 
  
 - 除了根据内容年限或上次修改时间计算保留期之外，还可以从内容被标记时或根据事件开始计算保留期。
 
@@ -110,38 +110,8 @@ ms.locfileid: "48804755"
 - Yammer 私信
 
 可以非常高效地将一个策略应用于多个位置，也可以应用于特定的位置或用户。
-    
-还可以将策略应用于所有内容，或应用于满足特定条件（如包含关键字或[敏感信息类型](sensitive-information-type-entity-definitions.md)）的内容。
 
-#### <a name="use-preservation-lock-to-comply-with-regulatory-requirements"></a>使用保留锁定遵从合规性要求
-
-某些组织可能需要遵从由监管机构定义的规则，如美国证券交易委员会 (SEC) 规则 17a-4，这要求在某个保留策略启用后，不得关闭该策略或减少其限制。 
-
-保留锁定可确保组织符合此类法规要求，因为它可以锁定保留策略，这样包括管理员在内的任何人都无法禁用策略、删除策略或减少对策略的限制。
-  
-锁定某个保留策略后：
-
-- 任何人都无法关闭它
-- 可以添加位置，但不能删除位置
-- 无法在保留期内修改或删除受策略制约的内容
-- 可以延长保留期，但不能缩短保留期
-
-总而言之，锁定的保留策略可以增加或扩展锁定的策略，但不能减少或关闭策略。
-  
-> [!IMPORTANT]
-> 在锁定保留策略之前，请务必了解这样做的影响，并确认组织是否需要这样做来遵守法规要求。 在应用保留锁定后，管理员便无法禁用或删除保留策略。
-
-通过使用 PowerShell，在创建保留策略后应用保留锁定。 说明已经包含在[创建和配置保留策略](create-retention-policies.md)中。
-
-#### <a name="releasing-a-retention-policy"></a>解除保留策略
-
-若保留策略没有保留锁定，则可随时关闭或删除它。 
-
-当你这样做时，任何被保留在保留库中的 SharePoint 或 OneDrive 内容都不会立即遭永久删除。 相反，为了防止意外的数据丢失，我们设置了 30 天的宽限期。在此期间，相应策略的内容不会在保留库中到期，所以你可以根据需要从其中还原任何内容。 此外，在宽限期内无法手动删除此内容。
-
-可在宽限期内重新启用保留策略，相应策略的任何内容都不会遭删除。
-
-SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 天延迟保留。 有关详细信息，请参阅[管理延迟保留的邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
+项目从保留策略所指定的容器中继承保留设置。 如果当策略配置为保留内容之后将它们移动到该容器之外，则该项目的副本将保留在工作负载的安全位置。 然而，保留设置不会随着内容在新的位置而一起移动。 如果需要，请使用保留标签而不是保留策略。
 
 ### <a name="retention-labels"></a>保留标签
 
@@ -273,7 +243,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |功能|保留策略 |保留标签|
 |:-----|:-----|:-----|:-----|
 |保留设置可以是“保留后删除”、“仅保留”或“仅删除” |是 |是 |
-|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
+|支持的工作负载： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 组 <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，但公用文件夹除外 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自动应用保留 | 是 | 是 |
 |基于条件应用保留 <br /> - 敏感信息类型、KQL 查询、可训练的分类器| 否 | 是 |
 |手动应用保留 | 否 | 是 |
@@ -311,13 +281,31 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
     
 3. **显式包含优先于隐式包含。** 这意味着： 
     
-    1. 如果具有保留设置的保留标签是由用户手动分配给项（如 Exchange 电子邮件或 OneDrive 文档），此保留标签优先于在站点或邮箱级别分配的保留策略，同时也优先于向文档库分配的默认保留标签。 例如，如果显式保留标签配置为将内容保留 10 年，但分配给此站点的保留策略配置为只将内容保留 5 年，则保留标签优先。 自动应用保留标签被视为隐式标签，而不是显式标签，因为它们由 Microsoft 365 自动应用。
+    1. 如果具有保留设置的保留标签是由用户手动分配给项（如 Exchange 电子邮件或 OneDrive 文档），此保留标签优先于在站点或邮箱级别分配的保留策略，同时也优先于向文档库分配的默认保留标签。 例如，如果显式保留标签配置为将内容保留 10 年，但分配给此站点的保留策略配置为只将内容保留 5 年，则保留标签优先。
     
     2. 如果保留策略包含特定位置（如特定用户的邮箱或 OneDrive 帐户），此保留策略优先于应用于所有用户邮箱或 OneDrive 帐户（而不是包含具体用户邮箱）的其他保留策略。
     
 4. **最短删除期优先。** 同样，如果内容遵循多个删除内容而无保留期的保留设置，内容会在最短保留期结束时删除。 
 
 最后，保留策略或保留标签无法永久删除任何保留用于电子数据展示的内容。 当保留解除时，此内容重新符合工作负载的安全位置中的清除过程的条件。
+
+## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>使用保存锁来限制对策略的更改
+
+某些组织可能需要遵从由监管机构定义的规则，如美国证券交易委员会 (SEC) 规则 17a-4，该规则要求在启用保留策略之后，不得关闭该策略或降低其限制。 
+
+保存锁可确保组织符合此类监管要求，因为它可以锁定保留策略或保留标签策略，因此任何人（包括管理员）都无法关闭该策略、删除该策略或降低其限制性。
+  
+在创建保留策略或保留标签策略后应用保存锁。 有关更多信息和说明，请参阅 [使用保存锁来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
+
+## <a name="releasing-a-policy-for-retention"></a>发布保留策略
+
+如果你的保留策略没有保留锁，你可以随时删除你的策略，这将有效地关闭之前应用的保留设置。 你也可以保留该策略，但将位置状态更改为关闭。
+ 
+当你执行上述任一操作时，保留在保存库中的任何 SharePoint 或 OneDrive 内容都不会立即永久删除。 相反，为了防止意外的数据丢失，我们设置了 30 天的宽限期。在此期间，相应策略的内容不会在保留库中到期，所以你可以根据需要从其中还原任何内容。 此外，在宽限期内无法手动删除此内容。
+
+你可以在宽限期内将位置状态更改为启用，并且不会删除该策略的内容。
+
+SharePoint 和 OneDrive 中的此 30 天宽限期对应于 Exchange 中的 30 天延迟保留。 有关详细信息，请参阅[管理延迟保留的邮箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
 
 ## <a name="auditing-retention-configuration"></a>审核保留配置
 
@@ -413,7 +401,7 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Microsoft Teams 的限制和规范](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [符合 SEC 规则 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [有助于你满足信息治理和记录管理监管要求的资源](retention-regulatory-requirements.md)
 
 ## <a name="next-steps"></a>后续步骤
 

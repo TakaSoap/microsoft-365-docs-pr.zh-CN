@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398553"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925612"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
@@ -36,7 +36,7 @@ Microsoft 365 中的[统一审核](search-the-audit-log-in-security-and-complian
 
 ## <a name="long-term-retention-of-audit-logs"></a>长期保留审核日志
 
-高级审核将所有 Exchange、SharePoint 和 Azure Active Directory 审核记录保留一年。 这是通过默认审核日志保留策略来实现的，此策略保留包含“**工作量**”属性（表示发生活动的服务）的“**Exchange**”、“**SharePoint**” 或“**AzureActiveDirectory**”的所有审核记录。 长期保留审计记录，可以帮助进行取证或合规性调查。 有关详细信息，请参阅“[管理审核日志保留策略](audit-log-retention-policies.md#default-audit-log-retention-policy)”中的“默认审核日志保留策略”。
+高级审核将所有 Exchange、SharePoint 和 Azure Active Directory 审核记录保留一年。 这是通过默认审核日志保留策略来实现的，此策略保留包含“ **工作量** ”属性（表示发生活动的服务）的“ **Exchange** ”、“ **SharePoint** ” 或“ **AzureActiveDirectory** ”的所有审核记录。 长期保留审计记录，可以帮助进行取证或合规性调查。 有关详细信息，请参阅“[管理审核日志保留策略](audit-log-retention-policies.md#default-audit-log-retention-policy)”中的“默认审核日志保留策略”。
 
 我们还发布了保留审核日志 10 年的功能。 “保留审核日志 10 年”有助于支持长期的调查，并对监管、法律和内部义务作出响应。
 
@@ -81,7 +81,7 @@ MailItemsAccessed 邮箱操作替代 Exchange Online 邮箱审核日志中的 Me
 
 有关 MailItemsAccessed 活动的审核记录的详细信息，请参阅[使用高级审核来调查被泄漏的帐户](mailitemsaccessed-forensics-investigations.md)。
 
-若要搜索 MailItemsAccessed 审核记录，可以在 Microsoft 365 合规中心，在[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“访问的邮箱项目”** 活动。
+若要搜索 MailItemsAccessed 审核记录，可以在 Microsoft 365 合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“访问的邮箱项目”** 活动。
 
 ![在审核日志搜索工具中搜索 MailItemsAccessed 操作](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -99,7 +99,7 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 调查人员可使用发送事件识别从被泄露的帐户发送的电子邮件。 发送事件的审核记录中包含有关该邮件的信息，例如发送邮件的时间、InternetMessage ID、主题行以及邮件是否包含附件。 此审核信息可帮助调查人员识别从已泄露帐户发送的电子邮件或由攻击者发送的电子邮件的相关信息。 此外，调查人员可使用 Microsoft 365 电子数据展示工具搜索该邮件（通过使用主题行或邮件 ID）来标识该邮件的收件人和已发送邮件的实际内容。
 
-若要搜索 Send 审核记录，可到 Microsoft 365 合规中心，在[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“已发送邮件”** 活动。
+若要搜索 Send 审核记录，可到 Microsoft 365 合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“Exchange 邮箱活动”** 下拉列表中，搜索 **“已发送邮件”** 活动。
 
 ![在审核日志搜索工具中搜索“已发送邮件”操作](../media/AdvAudit_SentMessage.png)
 
@@ -107,9 +107,9 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-当用户在 Outlook 或 Outlook 网页版中使用搜索栏搜索邮箱中的项目时，会触发 SearchQueryInitiatedExchange 事件。 调查人员可使用 SearchQueryInitiatedExchange 事件来确定可能已泄露帐户的攻击者是否已查找或尝试访问邮箱中的敏感信息。 SearchQueryInitiatedExchange 事件的审核记录包含实际搜索查询文本，以及是否在 Outlook 桌面客户端或 Outlook 网页版中执行搜索等信息。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的电子邮件数据的意图。
+当用户在 Outlook 网页版 (OWA) 中使用搜索栏搜索邮箱中的项目时，会触发 SearchQueryInitiatedExchange 事件。 调查人员可使用 SearchQueryInitiatedExchange 事件来确定可能已盗用帐户的攻击者是否已查找或尝试访问邮箱中的敏感信息。 SearchQueryInitiatedExchange 事件的审核记录包含实际搜索查询文本等信息。 通过查看攻击者可能已执行的搜索查询，调查员可更清晰地了解遭到搜索的电子邮件数据的意图。
 
-若要搜索 SearchQueryInitiatedExchange 审核记录，可到合规中心，在[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的电子邮件搜索”** 活动。
+若要搜索 SearchQueryInitiatedExchange 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的电子邮件搜索”** 活动。
 
 ![在审核日志搜索工具中搜索“已执行的电子邮件搜索”操作](../media/AdvAudit_SearchExchange.png)
 
@@ -120,9 +120,9 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-类似于搜索邮箱项目，当某人在组织中的 SharePoint 主页网站、Teams 网站、协作网站和中心网站中搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 调查人员可使用 SearchQueryInitiatedSharePoint 事件来确定攻击者是否试图在 SharePoint 中查找（并有可能访问）敏感信息。 SearchQueryInitiatedSharePoint 事件的审核记录中还包含实际搜索查询文本。 通过查看攻击者可能已执行的搜索查询，调查员可以更清晰地了解所搜索的文件数据的意图和范围。
+与搜索邮箱项目类似，当有人在组织中的 SharePoint 主页网站搜索项目时，会触发 SearchQueryInitiatedSharePoint 事件。 调查人员可使用 SearchQueryInitiatedSharePoint 事件来确定攻击者是否试图在 SharePoint 中查找（并有可能访问）敏感信息。 SearchQueryInitiatedSharePoint 事件的审核记录中还包含实际搜索查询文本。 通过查看攻击者可能已执行的搜索查询，调查员可更清晰地了解遭到搜索的文件数据的意图和范围。
 
-若要搜索 SearchQueryInitiatedSharePoint 审核记录，可到合规中心，在[审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的 SharePoint 搜索”** 活动。
+若要搜索 SearchQueryInitiatedSharePoint 审核记录，可到合规中心，在 [审核日志搜索工具](search-the-audit-log-in-security-and-compliance.md)中的 **“搜索活动”** 下拉列表中，搜索 **“已执行的 SharePoint 搜索”** 活动。
 
 ![在审核日志搜索工具中搜索“已执行的 SharePoint 搜索”操作](../media/AdvAudit_SearchSharePoint.png)
 

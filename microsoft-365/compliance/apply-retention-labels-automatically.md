@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920016"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931976"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -180,17 +180,8 @@ ms.locfileid: "48920016"
 ProgID:Media AND ProgID:Meeting
 ```
 
-对于此保留标签，还必须通过创建标签策略将其发布到相关用户的 OneDrive 帐户或 SharePoint 网站。 大多数情况下，会议记录将保存到 OneDrive，但对于渠道会议，它们将保存在 SharePoint 中。
+大多数情况下，会议记录将保存到 OneDrive 中。 但对于渠道会议，它们将保存在 SharePoint 中。
 
-保存了自动应用保留标签策略时：
-
-1. 选择 **“标签策略”** 选项卡，> **“发布标签”**
-
-2. 当系统提示你选择标签时，请选择与自动应用策略所选标签相同的标签，该策略用于标识 Teams 会议记录。
-
-3. 系统提示位置时，请选择 **“SharePoint 网站”** 和 **“OneDrive 帐户”** 。 然后，可保留 **所有** 的默认值，或指定单独的位置，例如包含或排除特定 OneDrive 帐户。
-
-4. 完成向导并保存此标签策略。
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
@@ -214,9 +205,9 @@ ProgID:Media AND ProgID:Meeting
   
 ![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态** 。 如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
+如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态** 。 如果看到“ **关闭(错误)** ”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 
-1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 运行以下命令：
     
@@ -234,7 +225,7 @@ ProgID:Media AND ProgID:Meeting
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>锁定策略以防止更改
 
-如果需要确保任何人都无法关闭该策略、删除该策略或降低其限制性，请参阅 [使用保留锁限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
+如果需要确保任何人都无法关闭策略、删除策略或降低其限制性，请参阅[使用保留锁定来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
