@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208614"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925586"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a>刑事审判信息服务 (CJIS) 安全策略
 
@@ -56,11 +56,11 @@ FBI 不提供 Microsoft 符合 CJIS 要求的认证。 相反，Microsoft 证明
 
 [Microsoft CJIS 云要求](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>美国的 CJIS 状态 (电流为 9/23/2019) 
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>美国的 CJIS 状态 (电流为 11/5/2020) 
 
-37州和哥伦比亚带有管理协议的地区，以绿色的地图突出显示：
+44州和哥伦比亚带有管理协议的地区，以绿色的地图突出显示：
 
-Alabama、阿拉斯加、Arkansas、亚利桑那、加利福尼亚州、科罗拉多、佛罗里达、格鲁吉亚、夏威夷、伊利诺斯州、印地安州、艾奥瓦、堪萨斯州、Kentucky、Maine、马萨诸塞州、密歇根州、Minnesota、Missouri、Montana、New Jersey、纽约、内华达、北卡罗莱纳州、俄克拉荷马、犹他、、Rhode、弗吉尼亚州、田纳西州、德克萨斯州、加利福尼亚州、西弗吉尼亚州 Vermont。
+Alabama、阿拉斯加、亚利桑那、Arkansas、加利福尼亚州、科罗拉多、Connecticut、佛罗里达、格鲁吉亚、夏威夷、爱达荷州、伊利诺斯州、印地安那州、艾奥瓦、堪萨斯州、Kentucky、Maine、马萨诸塞州、密歇根州、Minnesota、Mississippi、Missouri、Montana、Nebraska、内华达、New 新罕布什尔、New Jersey、纽约、北卡罗莱纳州、北部州、俄克拉荷马、德克萨斯州、犹他州、弗吉尼亚州、华盛顿、Rhode、德克萨斯、犹他、田纳西州、弗吉尼亚州、华盛顿、West、Vermont 和哥伦比亚地区
 
 Microsoft 承诺满足适用的 CJIS 管理法规控制措施，允许刑事审判组织实施基于云的解决方案，并符合 CJIS 安全策略 V 5.8。
 
@@ -80,7 +80,7 @@ Microsoft 使用州 CJIS Systems 代理商 (CSA) 签署信息协议;你可以从
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md) 是 [microsoft 365 合规性中心](microsoft-365-compliance-center.md) 中的一项功能，可帮助您了解组织的合规性状况并采取措施帮助降低风险。 合规性管理器提供了一个用于为此法规建立评估的高级模板。 在合规性管理器的 " **评估模板** " 页中查找模板。 了解如何 [在合规性管理器中构建评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 
