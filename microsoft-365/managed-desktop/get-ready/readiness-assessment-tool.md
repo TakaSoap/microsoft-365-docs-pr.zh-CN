@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795101"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931920"
 ---
 # <a name="readiness-assessment-tool"></a>准备情况评估工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "48795101"
 
 该工具检查 Microsoft 终结点管理器中的设置 (具体来说，Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365，以确保它们可与 Microsoft 托管桌面配合使用。 Microsoft 托管桌面在上次运行 Azure AD 组织 (租户) 中的检查后，会保留与这些检查相关的数据。 12个月后，我们会将其保留在取消识别的表单中。  您可以选择删除我们收集的数据。
 
-至少具有 Intune 管理员角色的任何人都可以运行此工具，但其中三个检查 ([证书连接器](readiness-assessment-fix.md#certificate-connectors)、 [多重身份验证](readiness-assessment-fix.md#multi-factor-authentication)和 [自助密码重置](readiness-assessment-fix.md#self-service-password-reset)) 需要其他权限。
+至少具有 Intune 管理员角色的任何人都可以运行此工具，但两个检查 ([证书连接器](readiness-assessment-fix.md#certificate-connectors) 和 [多重身份验证](readiness-assessment-fix.md#multi-factor-authentication) 都需要额外的权限。
  
 评估工具将检查以下项：
 

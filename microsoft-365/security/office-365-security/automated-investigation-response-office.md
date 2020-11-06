@@ -1,5 +1,5 @@
 ---
-title: 自动调查和响应 (空中) 概述
+title: 'Microsoft Defender for Office 365 中的自动化调查和响应 (气流) '
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,86 +16,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: 自动事件响应、调查、修正和威胁防护
-ms.date: 09/29/2020
-description: 在 Microsoft Defender for Office 365 中获取自动调查和响应功能的概述
+ms.date: 11/05/2020
+description: 请参阅 Microsoft Defender for Office 365 中的自动化调查和响应功能的工作原理
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845968"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931954"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动调查和响应 (空中) 的概述
+# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动化调查和响应 (气流) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 有时，安全操作团队可能会受到触发的警报量的感觉的不知所措。 Microsoft Defender for Office 365 中的自动调查和响应 (空中) 功能可提供帮助。
 
-随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 有时，安全操作团队可能会受到触发的警报量的感觉的不知所措。 Microsoft Defender for Office 365 中的自动调查和响应 (空中) 功能可提供帮助。 
+通过 AIR，您的安全操作团队可以更高效地运行。 空中功能包括自动调查过程，以响应目前存在的已知威胁。 适当的补救措施等待批准，使安全操作团队能够响应检测到的威胁。
 
-通过 AIR，您的安全操作团队可以更高效地运行。 空中功能包括自动调查过程，以响应目前存在的已知威胁。 适当的补救措施等待批准，使安全操作团队能够响应检测到的威胁。 
+本文介绍了 AIR 如何通过几个示例运行。 当您准备好开始使用 AIR 时，请参阅 [自动调查和响应威胁](office-365-air.md)。
 
-本文提供了空中的概述。 当您准备好开始使用 AIR 时，请参阅 [自动调查和响应威胁](office-365-air.md)。
+- [示例1：用户报告的网络钓鱼邮件启动调查行动手册](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [示例2：安全管理员触发来自威胁资源管理器的调查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [示例3：安全操作团队使用 Office 365 管理活动 API 将空中与其 SIEM 集成](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="at-a-high-level"></a>高级别
-
-随着警报的触发，安全行动手册将生效。 根据具体情况，可以开始执行 [自动调查过程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) 。 在进行自动调查的过程中和之后，建议采取 [补救措施](air-remediation-actions.md) 。 在 Microsoft Defender for Office 365 中不会自动执行任何操作。 您的安全操作团队将进行审核，然后 [批准或拒绝每个修正操作](air-review-approve-pending-completed-actions.md)。 当调查中的所有操作都被批准或拒绝时，调查完成。 所有这些活动都会在 Microsoft 365 安全中心 () 中进行跟踪和查看 [https://security.microsoft.com](https://security.microsoft.com) 。  (若要了解详细信息，请参阅 [查看调查) 的详细信息](air-view-investigation-results.md#view-details-of-an-investigation) 。
-
-以下各节提供了有关警报、安全行动手册和操作中的示例的更多详细信息。
-
-## <a name="alerts"></a>警报
-
-[警报](../../compliance/alert-policies.md#viewing-alerts) 表示用于事件响应的安全操作团队工作流的触发器。 确定要调查的正确通知集的优先级，同时确保没有威胁是 unaddressed 的挑战。 在手动对通知进行调查时，安全操作团队必须对实体（如内容、设备和用户）进行 (（如内容、设备和用户）进行寻找和关联，) 威胁的风险。 此类任务和工作流可能非常耗时，并涉及多个工具和系统。 通过让关键安全和威胁管理警报自动触发安全响应行动手册，可以通过空气、调查和响应安全事件进行自动化。 
-
-目前，对于气流，从下列类型的警报策略生成的警报将自动调查：  
-
-- 检测到潜在的恶意 URL 单击
-- 用户报告为网络钓鱼的电子邮件`*`
-- 包含在传递后删除的恶意软件的电子邮件`*`
-- 包含投递后删除的网络钓鱼 Url 的电子邮件`*`
-- 检测到可疑的电子邮件发送模式
-- 限制用户发送电子邮件
-- 管理员触发了电子邮件的手动调查`*`
-
-> [!NOTE]
-> 标有星号 () 的警报在 `*` Microsoft 365 安全中心中的相应警报策略中被分配了一个 *信息性* 严重性，电子邮件通知处于关闭状态。 可以通过 [报警策略配置](../../compliance/alert-policies.md#alert-policy-settings)启用电子邮件通知。 
-
-若要查看警报，请在安全 & 合规性中心中，选择 " **通知** " "  >  **查看警报** "。 选择一个警报以查看其详细信息，然后在那里使用 " **查看调查** " 链接转到相应的 [调查](air-view-investigation-results.md#investigation-graph)。  
-
-> [!NOTE]
-> 默认情况下，通知视图中隐藏信息警报。 若要查看它们，请更改警报筛选以包含信息警报。
-
-如果您的组织通过警报管理系统、服务管理系统或安全信息和事件管理 (SIEM) 系统管理安全警报，则可以通过电子邮件通知或通过 [Office 365 管理活动 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)向该系统发送通知。 通过电子邮件或 API 的调查通知通知包含访问 Microsoft 365 安全中心中的警报的链接，使分配的安全管理员能够快速导航到调查。
-
-![链接到调查的警报](../../media/air-alerts-page-details.png) 
-
-## <a name="security-playbooks"></a>安全行动手册
-
-安全行动手册是后端策略，是 Microsoft Defender for Office 365 和 Microsoft 365 Defender 中的自动化的核心。 空中提供的安全行动手册基于常见的实际安全方案，并根据安全操作团队的反馈进行开发。 当您的组织中触发特定警报时，将自动启动安全行动手册。 通知触发后，相关的行动手册将由自动调查和响应系统运行。 调查根据特定警报的操作手册分析预警的步骤，查看所有关联的元数据 (包括电子邮件、用户、主题、发件人等 ) 。 根据调查行动手册的发现，AIR 推荐了组织的安全团队可采取的一组操作来控制和缓解威胁。 
-
-你将使用空中获取的安全行动手册旨在解决组织在当今的电子邮件中遇到的最常见威胁。 它们基于安全操作和事件响应团队的输入，包括帮助保护 Microsoft 和客户资产的人员。
-
-- 用户报告的网络钓鱼邮件
-- URL-单击 "判定更改"
-- 检测到投递后 (恶意软件 ZAP) 
-- 网络钓鱼的检测到传送后的 ZAP (网络钓鱼 ZAP) 
-- 用户报告为已损坏 
-- 管理员从资源管理器恶意软件、网络钓鱼或所有电子邮件视图触发的手动电子邮件调查 () 
-
-在完成后，将发布更多行动手册和行动手册更新。 访问 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap) 以查看计划和即将推出的其他内容。
-
-### <a name="playbooks-include-investigation-and-recommendations"></a>行动手册包括调查和建议
-
-在空中，每个安全行动手册包括： 
-
-- 对电子邮件的实体进行根调查 (如文件、Url、收件人、IP 地址等) 
-- 对组织收到的类似电子邮件的进一步搜寻 
-- 确定并关联其他潜在威胁所需的步骤，以及 
-- 建议的威胁补救措施。
-
-每个高级步骤都包含多个执行的子步骤，以提供对威胁的深入、详细和详尽的响应。
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>示例：用户报告的网络钓鱼邮件启动调查行动手册
 
@@ -151,4 +97,4 @@ Microsoft Defender for Office 365 中的空中功能包括 [报告 & 详细信�
 
 - [访问 Microsoft 365 路线图以查看已计划和即将发布的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [了解 Microsoft 365 Defender 中的其他自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [了解 Microsoft 365 Defender 中的自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)

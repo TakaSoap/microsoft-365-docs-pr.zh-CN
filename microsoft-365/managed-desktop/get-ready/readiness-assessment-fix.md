@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795113"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931908"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>解决准备情况评估工具发现的问题
 
@@ -127,7 +127,7 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 **未就绪**
 
-您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度** 。 按照 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤禁用此设置。
+您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度** 。 通过执行 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤，禁用此设置或确保对任何 Azure AD 组的分配不包括 Microsoft 托管桌面设备。
 
 **欲**
 
@@ -137,9 +137,9 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 Azure AD 组织中的 Windows 10 设备必须在 Intune 中自动注册。
 
-**未就绪**
+**欲**
 
-Azure AD 组织中的用户不会在 Microsoft Intune 中自动注册。 将 MDM 用户作用域更改为 **部分** 或 **全部** 。 如果选择 " **某些** "，请在注册后返回，并选择 **新式工作区-** **组** 的所有 Azure AD 组。
+确保将 MDM 用户作用域设置为 " **部分** 或 **全部** "，而不是 " **无** "。 如果选择 " **某些** "，请在注册后返回，并选择 **新式工作区-** **组** 的所有 Azure AD 组。
 
 
 ### <a name="microsoft-store-for-business"></a>适用于企业的 Microsoft Store
@@ -180,7 +180,7 @@ Intune 管理员角色对此检查没有足够的权限。 您还需要分配给
 
 **欲**
 
-请确保 Azure AD 组织中的 Windows PowerShell 脚本不会针对任何 Microsoft 管理桌面设备或用户。 有关详细信息，请参阅在 [Intune 中使用 Windows 10 设备上的 PowerShell 脚本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
+请确保 Azure AD 组织中的 Windows PowerShell 脚本不会针对任何 Microsoft 管理桌面设备或用户。 不要将 PowerShell 脚本分配给所有用户、所有设备，或同时针对两者。 将策略更改为使用面向不包含任何 Microsoft 托管桌面设备的特定 Azure AD 组的工作分配。 有关详细信息，请参阅在 [Intune 中使用 Windows 10 设备上的 PowerShell 脚本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
 
 ### <a name="region"></a>区域
 
@@ -308,19 +308,11 @@ Azure Active Directory 中的安全性默认值将阻止 Microsoft 托管桌面�
 
 ### <a name="self-service-password-reset"></a>自助服务密码重置
 
-必须启用自助密码重置 (SSPR) 。
-
-**未就绪**
-
-必须为所有用户启用 SSPR。 如果不是，Microsoft 托管桌面服务帐户将无法工作。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+必须为所有用户启用自助密码重置 (SSPR) 。 如果不是，Microsoft 托管桌面服务帐户将无法工作。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **欲**
 
 请确保 SSPR **选择** 的设置包括 Microsoft 托管桌面设备。
-
-**Error**
-
-Intune 管理员角色对此检查没有足够的权限。 您还需要为运行此检查而分配的报告阅读器 Azure AD 角色。
 
 
 ### <a name="standard-user-role"></a>标准用户角色
