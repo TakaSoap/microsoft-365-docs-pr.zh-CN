@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841868"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941471"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -336,7 +336,7 @@ ms.locfileid: "48841868"
 
 - **分解方式：检测技术** 和 **查看数据的依据：电子邮件 \> 恶意软件** ：显示以下信息：
 
-  - **Atp 生成的文件信誉**<sup>1</sup>：由 ATP detonations 生成的所有恶意文件信誉。
+  - **ATP 生成的文件信誉**<sup>1</sup>：由 Defender for Office 365 detonations 生成的所有恶意文件信誉。
   - **反恶意软件引擎**<sup>1</sup>：来自反恶意软件引擎的检测。
   - **反恶意软件策略文件类型阻止** ：这些电子邮件是由于邮件中标识的恶意文件的类型而筛选出的。
   - **文件沙箱**<sup>1</sup>： File 沙箱由安全附件捕获。  

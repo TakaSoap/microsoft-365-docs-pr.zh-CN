@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950363"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941437"
 ---
 # <a name="windows-security-update-insights"></a>Windows 安全更新见解
 此视图概述了 Microsoft 托管桌面设备的安全更新状态。 
@@ -23,11 +23,11 @@ ms.locfileid: "47950363"
 
 ## <a name="device-status"></a>设备状态
 
-对于要通过 Windows 更新进行更新的设备，必须将其连接到 Internet，且不能至少在6小时内休眠，其中两个必须是连续的。 只要设备已连接且不处于休眠状态，就认为 "正在使用"。 尽管可能会更新不符合这些要求的设备，但满足它们的设备的更新可能性最高。 
+对于要通过 Windows 更新进行更新的设备，必须将其连接到 Internet，且不能至少在6小时内休眠，其中两个必须是连续的。 尽管可能会更新不符合这些要求的设备，但满足它们的设备的更新可能性最高。 
 
 我们使用以下术语在 Windows Update 的上下文中对设备活动进行分类：
 
-- <strong>Active：</strong> 满足最小使用标准的设备 (6 小时，两个连续) 用于最新的安全更新版本，并在 Microsoft Intune 中至少每五天签入一次
+- <strong>Active：</strong> 满足最小活动条件的设备 (6 个小时，两个连续) 用于最新的安全更新版本，并在 Microsoft Intune 中至少每五天签入一次
 - 已<strong>同步：</strong>在最近28天内使用 Intune 签入的设备
 - 不<strong>同步：</strong>最近28天内<i>未</i>使用 Intune 签入的设备
 

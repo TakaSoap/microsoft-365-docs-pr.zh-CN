@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931908"
+ms.locfileid: "48941405"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>解决准备情况评估工具发现的问题
 
@@ -308,20 +308,20 @@ Azure Active Directory 中的安全性默认值将阻止 Microsoft 托管桌面�
 
 ### <a name="self-service-password-reset"></a>自助服务密码重置
 
-必须为所有用户启用自助密码重置 (SSPR) 。 如果不是，Microsoft 托管桌面服务帐户将无法工作。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+自助服务密码重置 (应为所有不包括 Microsoft 托管桌面服务帐户的用户启用 SSPR) 。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **欲**
 
-请确保 SSPR **选择** 的设置包括 Microsoft 托管桌面设备。
+请确保 SSPR **选择** 的设置包括 Microsoft 托管桌面设备，但不包括 Microsoft 托管桌面服务帐户。 启用 SSPR 后，Microsoft 托管桌面服务帐户无法按预期工作。  
 
 
 ### <a name="standard-user-role"></a>标准用户角色
 
-Microsoft 托管桌面用户应是没有本地管理员权限的标准用户。 他们将在启动 Microsoft 托管桌面设备时为其分配一个标准用户角色。
+除了分配有全局管理员和设备管理员的 Azure AD 角色的用户之外，Microsoft 托管桌面用户将是没有本地管理员权限的标准用户。 在启动 Microsoft 托管桌面设备时，将为所有其他用户分配一个标准用户角色。
 
 **欲**
 
-Microsoft 托管桌面用户在注册前不应具有本地管理员权限。
+Microsoft 托管桌面用户在注册后将不具有对其 Microsoft 托管桌面设备的本地管理员权限。
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 

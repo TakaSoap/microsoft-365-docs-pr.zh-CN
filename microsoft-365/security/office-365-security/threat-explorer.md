@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845670"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941483"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -53,7 +53,7 @@ ms.locfileid: "48845670"
 > [!NOTE]
 > "用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。 有关发布计划的信息，请参阅 Microsoft 365 路线图。
 
-用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅 [Defender For Office 365 中的用户标记](user-tags.md)。
+用户标记是 Microsoft Defender for Office 365 中特定用户组的标识符。 有关标记、许可和配置标记的详细信息，请参阅 [用户标记](user-tags.md)。
 
 在威胁资源管理器中，您可以在以下体验中查看用户标记周围的信息：
 
@@ -199,7 +199,7 @@ ms.locfileid: "48845670"
 
 ### <a name="filter-by-user-tags"></a>按用户标记筛选
 
-现在，您可以按系统或自定义用户标记对其进行排序和筛选，以快速抓住威胁的范围。 若要了解详细信息，请参阅 [Office 365 ATP 中的用户标记](user-tags.md) 。
+现在，您可以按系统或自定义用户标记对其进行排序和筛选，以快速抓住威胁的范围。 若要了解详细信息，请参阅 [用户标记](user-tags.md) 。
 
 > [!IMPORTANT]
 > 按用户标记进行筛选和排序当前处于公共预览版中。

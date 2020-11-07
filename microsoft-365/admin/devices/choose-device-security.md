@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在不同的 MDM 和 MAM 方法之间进行选择。
-ms.openlocfilehash: 6231b7c82f280a60ae9d30bcf27697dc131b2471
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 2866aa8cf172361b2b5f5055932717154cd6ddd1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930252"
+ms.locfileid: "48941293"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>用于保护设备和应用程序数据的选项
 
@@ -37,8 +37,6 @@ ms.locfileid: "48930252"
 - 包含高级安全和威胁防护的 Microsoft 365 企业版计划。
 
 ## <a name="device-management-options"></a>设备管理选项
-
-![说明哪些订阅应使用哪些 MDM 和 MAM 方法的图。](../../m365-mam-mdm.png)
 
 - **基本的移动性和安全性** 由大多数 microsoft 365 计划提供，并且是仅提供给 Microsoft 365 商业标准和 Microsoft 365 业务基本的内置选项。 有关详细信息，请参阅 [基本移动性和安全性的可用性](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)。 
 
