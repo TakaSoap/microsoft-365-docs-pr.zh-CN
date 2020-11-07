@@ -288,40 +288,61 @@
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR 合规性指南
           href: security-and-compliance/gdpr-compliance.md
-    - name: 管理设备
+    - name: 管理设备和应用数据
+      href: devices/index.yml
       items:
-        - name: 查看和编辑策略和设备
-          href: ../business/view-policies-and-devices.md
-        - name: 删除公司数据
-          href: ../business/remove-company-data.md
-        - name: 将设备重置为出厂设置
-          href: ../business/reset-devices-to-factory-settings.md
-        - name: 将保护功能映射到 Intune 设置
-          href: ../business/map-protection-features-to-intune-settings.md
-        - name: 设备状态
-          href: ../business/device-states.md
-        - name: Windows 10 电脑的应用保护设置
-          href: ../business/protection-settings-for-windows-10-devices.md
-        - name: 设置 Android 和 iOS 的应用保护设置
-          href: ../business/app-protection-settings-for-android-and-ios.md
+        - name: 设备和应用数据保护方法
+          href: devices/choose-device-security.md
+        - name: Microsoft Intune 文档
+          href: 'https://docs.microsoft.com/mem/intune/'
+        - name: Microsoft 365 商业高级版
           items:
-            - name: 验证 Android 或 iOS 上的设置
-              href: ../business/validate-settings-on-android-or-ios.md
-        - name: 编辑或创建 Windows 10 电脑的设备保护设置
-          href: ../business/protection-settings-for-windows-10-pcs.md
+            - name: 查看和编辑策略和设备
+              href: ../business/view-policies-and-devices.md
+            - name: 删除公司数据
+              href: ../business/remove-company-data.md
+            - name: 将设备重置为出厂设置
+              href: ../business/reset-devices-to-factory-settings.md
+            - name: 将保护功能映射到 Intune 设置
+              href: ../business/map-protection-features-to-intune-settings.md
+            - name: 设备状态
+              href: ../business/device-states.md
+            - name: Windows 10 电脑的应用保护设置
+              href: ../business/protection-settings-for-windows-10-devices.md
+            - name: 设置 Android 和 iOS 的应用保护设置
+              href: ../business/app-protection-settings-for-android-and-ios.md
+              items:
+                - name: 验证 Android 或 iOS 上的设置
+                  href: ../business/validate-settings-on-android-or-ios.md
+            - name: 编辑或创建 Windows 10 电脑的设备保护设置
+              href: ../business/protection-settings-for-windows-10-pcs.md
+              items:
+                - name: 验证 Windows 10 PC 上的设置
+                  href: ../business/validate-settings-on-windows-10-pcs.md
+            - name: Autopilot
+              items:
+                - name: 添加 Autopilot 设备和配置文件
+                  href: ../business/add-autopilot-devices-and-profile.md
+                - name: 创建和编辑 AutoPilot 配置文件
+                  href: ../business/create-and-edit-autopilot-profiles.md
+                - name: 创建和编辑 AutoPilot 设备
+                  href: ../business/create-and-edit-autopilot-devices.md
+                - name: AutoPilot 配置文件设置
+                  href: ../business/autopilot-profile-settings.md
+        - name: 适用于企业的 Microsoft 365 文档
+          href: ../enterprise/index.yml
+        - name: 基本移动性和安全性
           items:
-            - name: 验证 Windows 10 PC 上的设置
-              href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: Autopilot
-          items:
-            - name: 添加 Autopilot 设备和配置文件
-              href: ../business/add-autopilot-devices-and-profile.md
-            - name: 创建和编辑 AutoPilot 配置文件
-              href: ../business/create-and-edit-autopilot-profiles.md
-            - name: 创建和编辑 AutoPilot 设备
-              href: ../business/create-and-edit-autopilot-devices.md
-            - name: AutoPilot 配置文件设置
-              href: ../business/autopilot-profile-settings.md
+            - name: 基本移动性和安全性概览
+              href: basic-mobility-security/overview.md
+            - name: 比较基本移动性和安全性及 Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: 基本移动性和安全性常见问题解答
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: 基本移动性和安全性的功能
+              href: basic-mobility-security/capabilities.md
+            - name: 比较基本移动性和安全性及 Intune
+              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
     - name: 与客户合作
       href: work-with-customers/index.yml
       items:
