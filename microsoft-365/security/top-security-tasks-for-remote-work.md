@@ -15,16 +15,18 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845416"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944364"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
 如果你喜欢 [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) 并突然发现你支持主要的基于家庭的劳动力，我们希望帮助你确保你的组织尽可能安全地工作。 本文对任务进行了划分，以帮助安全团队尽快实现最重要的安全功能。
+
+![执行这些首要任务以支持在家中工作。](../media/security/security-support-remote-work.png)
 
 如果您是使用 Microsoft 商业版计划的小型组织或中型组织，请参阅以下资源：
 
@@ -44,7 +46,7 @@ ms.locfileid: "48845416"
 |双面|[威胁防护](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |第三章|[配置 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[配置 Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[启用 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[打开 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[为电话和平板电脑配置 Intune 移动应用保护](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[为来宾配置 MFA 和条件访问，包括 Intune 应用保护](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[将电脑注册到设备管理并要求符合合规性的电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -68,7 +70,7 @@ ms.locfileid: "48845416"
 
 ****
 
-|套餐|建议|
+|计划|建议|
 |---|---|
 |不包含 Azure AD P1 或 P2 的 Microsoft 365 计划 () |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。|
 |Microsoft 365 E3 (与 Azure AD P1) |使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br/>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -110,7 +112,7 @@ Microsoft Defender for Office 365：
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：为 Microsoft Defender 配置标识
 
-[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，它利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已损坏的身份和恶意内幕行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。
+[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可利用本地 Active Directory 信号来识别、检测和调查针对组织的高级威胁、已遭入侵标识和恶意内部行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。
 
 - 请参阅 [Microsoft Defender For Identity 快速入门](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以快速获取安装
 - 观看 [视频： Microsoft Defender For Identity 简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)

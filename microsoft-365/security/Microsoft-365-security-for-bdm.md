@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 组织在其 Microsoft 365 环境中目前面临的最常见的威胁和攻击方案，以及缓解这些风险的建议操作。
-ms.openlocfilehash: b359b16042d419a06096a48ddcbc50affbcc4cd6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 64f4491db3dc4ef18411b166fb23c4388383dae2
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843124"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944295"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>适用于业务决策者 (Bdm) 的 Microsoft 365 安全性
 
@@ -30,6 +30,8 @@ ms.locfileid: "48843124"
 [![缩略图 Microsoft 365 BDM 安全建议电子表格](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
 Microsoft 向你提供租户中的安全分数工具，以根据你的常规活动自动分析安全状态、分配分数并提供安全改进建议。 在执行本文中建议的操作之前，请注意你当前的分数和建议。 本文中建议的操作将增加你的成绩。 目标不能达到最大分数，但要了解以不会对用户的工作效率产生负面影响的方式来保护您的环境的机会。 请参阅 [Microsoft 安全分数](mtp/microsoft-secure-score.md)。
+
+![按照以下步骤缓解业务风险。](../media/security/security-for-bdms-overview.png)
 
 在开始之前，还需要做一点准备。 . . [请务必打开审核日志](../compliance/search-the-audit-log-in-security-and-compliance.md)。 稍后你将需要此数据，如果你需要调查事件或泄露。 
 
