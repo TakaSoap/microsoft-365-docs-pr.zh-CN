@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: ''
 description: 本文概述了 Microsoft 365 中的高级电子数据展示，这是用于内部和外部调查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8a43d8a7f0b1803b374839d8ed0d7d82c6adace
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399051"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944340"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
-Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中现有的电子数据展示和分析功能之上。 这一新的解决方案称为 *高级电子数据展示*，它提供了一个端到端工作流，用于保留、收集、查看、分析和导出对组织的内部和外部调查做出响应的内容。 它还允许法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 
+Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中现有的电子数据展示和分析功能之上。 这一新的解决方案称为 *高级电子数据展示* ，它提供了一个端到端工作流，用于保留、收集、查看、分析和导出对组织的内部和外部调查做出响应的内容。 它还允许法律团队管理整个法律封存通知工作流，以便与案例中所涉及的保管人进行通信。 
 
 > [!NOTE]
 > 高级电子数据展示需要 Office 365 或 Microsoft 365 E5 企业版订阅。 有关高级电子数据展示许可的详细信息，请参阅 [适用于安全 & 合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
@@ -44,27 +44,35 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 在较高的层次上，以下是高级电子数据展示支持 EDRM 工作流的方式：
 
-- **Id.** 在调查中找出潜在的感兴趣的人员之后，您可以将他们添加为保管人 (也称为 *数据保管人*，因为它们可能会拥有与调查) 相关的信息，以向高级电子数据展示事例。 将用户添加为保管人后，可以轻松地保留、收集和查看保管人文档。
+- **Id.** 在调查中找出潜在的感兴趣的人员之后，您可以将他们添加为保管人 (也称为 *数据保管人* ，因为它们可能会拥有与调查) 相关的信息，以向高级电子数据展示事例。 将用户添加为保管人后，可以轻松地保留、收集和查看保管人文档。
 
 - **保持.** 为了保留和保护与调查相关的数据，高级电子数据展示使您能够对与保管人相关联的数据源施加合法保留。 您还可以将非 custodial 数据置于保留状态。 高级电子数据展示还具有内置通信工作流，以便您可以向保管人发送法律保留通知并跟踪其确认。
 
 - **组.** 确定 (并保留) 与调查相关的数据源后，您可以使用内置搜索工具在高级电子数据源中搜索，并从 custodial 数据源中收集实时数据 (和非 custodial 数据源（如果适用的) 可能与事例相关）。
 
-- **处理.** 收集了与该事例相关的所有数据后，下一步是处理它以供进一步查看和分析。 在高级电子数据展示中，在集合阶段中标识的就地数据被复制到名为 " *审阅集*) " 的 Azure 存储位置 (，它为您提供事例数据的静态视图。 
- 
+- **处理.** 收集了与该事例相关的所有数据后，下一步是处理它以供进一步查看和分析。 在高级电子数据展示中，在集合阶段中标识的就地数据被复制到名为 " *审阅集* ) " 的 Azure 存储位置 (，它为您提供事例数据的静态视图。 
+
 - **概述.** 将数据添加到审阅集后，您可以查看特定文档并运行其他查询，以将数据缩减为与事例最相关的内容。 此外，还可以为特定文档添加批注和标记。
- 
+
 - **结果.** 高级电子数据展示提供集成分析工具，可帮助您从确定的审查集中进一步挑选数据，从而不与调查相关。 除了减少相关数据量之外，高级电子数据展示还可以通过让您组织内容以使审查过程更加轻松和高效，从而帮助您节省法律考评成本。
 
 - **生产** 和 **演示。** 准备就绪后，您可以从审阅集导出文档以进行法律审查。 您可以按其本机格式或 EDRM 格式导出文档，以便可以将其导入第三方审阅应用程序中。
 
-## <a name="advanced-ediscovery-workflow"></a>高级电子数据展示工作流
+## <a name="advanced-ediscovery-architecture"></a>高级电子数据展示体系结构
 
-以下各节介绍高级电子数据展示中的内置工作流中的每个步骤。 以下屏幕截图显示了名为 "*产品责任 2019002*" 的事例的 "**主页**" 选项卡。 注释将对页面顶部的工作流选项卡进行排序，使其与 EDRM 进程一致。 
+下面是一个高级电子数据展示体系结构图表，它在单个地理位置环境中和多地理位置环境中显示端到端工作流，以及与 EDRM 对齐的端到端数据流。
+
+[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[以图像形式查看](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[下载为 PDF 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[下载为 Visio 文件](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
 有关高级电子数据展示中的端到端工作流的详细信息，请参阅此 [Microsoft 机械视频](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
-![高级电子数据展示中的选项卡遵循 EDRM 工作流](../media/aedisco-homepage-1.png)
+以下各节介绍高级电子数据展示中的内置工作流中的每个步骤。
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 数据源
 
@@ -80,7 +88,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 ## <a name="indexing-custodian-data"></a>索引保管人数据
 
-将保管人和相应的 custodial 数据源添加到某个情况时，来自保管人数据源的任何部分索引项都会由名为 " *高级索引*" 的进程重新编制索引。 这样，在运行搜索以收集数据时，可以完全搜索 custodial 内容（如图像、不受支持的文件类型和其他可能未编制索引的内容）。 使用 " **处理** " 选项卡监视高级索引的状态，并使用称为 " *错误修正*" 的过程修复处理错误。 有关详细信息，请参阅 [修复高级电子数据展示中的处理错误](processing-data-for-case.md)。
+将保管人和相应的 custodial 数据源添加到事例中时，来自保管人数据源的任何部分索引项都将由名为 " *高级索引* " 的过程进行编制索引。 这样，在运行搜索以收集数据时，可以完全搜索 custodial 内容（如图像、不受支持的文件类型和其他可能未编制索引的内容）。 使用 " **处理** " 选项卡监视高级索引的状态，并使用称为 " *错误修正* " 的过程修复处理错误。 有关详细信息，请参阅 [修复高级电子数据展示中的处理错误](processing-data-for-case.md)。
 
 ## <a name="collecting-case-data"></a>收集事例数据
 
@@ -88,7 +96,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 ## <a name="reviewing-and-analyzing-case-data"></a>查看和分析事例数据
 
-使用 " **查看设置** " 选项卡可查看和分析从 live 系统中收集的内容并将其添加到审阅集。 *审阅集*是该 (数据的静态集合，custodial 数据的脱机副本 (以及在您在电子数据展示工作流的前一阶段收集的、非 custodial 数据) （如果适用）的数据) 。 将搜索结果添加到审阅集时，将触发一个过程，该过程会从容器中提取文件、提取元数据并提取文本。 完成此过程后，系统将为从保管人中收集的所有数据生成新索引，并将其添加到审阅集。 将数据添加到评审集后，可以运行更多查询来缩小事例数据、以文本形式或以本机文件格式查看数据，以及在审阅集中对文档添加批注、标记密文和标记文档。 您还可以执行高级分析，例如确定文档复制、电子邮件线程和主题。 将数据 culled 到与事例相关的内容后，可以直接下载文档，也可以将它们连同文件元数据、批注和任何标记一起导出。 有关更多信息，请参阅：
+使用 " **查看设置** " 选项卡可查看和分析从 live 系统中收集的内容并将其添加到审阅集。 *审阅集* 是该 (数据的静态集合，custodial 数据的脱机副本 (以及在您在电子数据展示工作流的前一阶段收集的、非 custodial 数据) （如果适用）的数据) 。 将搜索结果添加到审阅集时，将触发一个过程，该过程会从容器中提取文件、提取元数据并提取文本。 完成此过程后，系统将为从保管人中收集的所有数据生成新索引，并将其添加到审阅集。 将数据添加到评审集后，可以运行更多查询来缩小事例数据、以文本形式或以本机文件格式查看数据，以及在审阅集中对文档添加批注、标记密文和标记文档。 您还可以执行高级分析，例如确定文档复制、电子邮件线程和主题。 将数据 culled 到与事例相关的内容后，可以直接下载文档，也可以将它们连同文件元数据、批注和任何标记一起导出。 有关详细信息，请参阅：
 
 - [查看审阅集中的文档](view-documents-in-review-set.md)
 
