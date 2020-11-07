@@ -16,19 +16,19 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解可用的首选选项以允许入站邮件在 Exchange Online Protection (EOP) 中。
-ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 0ab0a636cb70d98aa7c17ffe6aaec66ae1f4ecc7
+ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600317"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48945338"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-如果您是在 Exchange Online 中使用邮箱的 Microsoft 365 客户或独立 Exchange Online Protection (EOP) 不含 Exchange Online 邮箱的客户，EOP 将提供多种方法来确保用户收到来自受信任的发件人的电子邮件。 这些选项包括 Exchange 邮件流规则 (也称为传输规则) 、Outlook 安全发件人、IP 允许列表 (连接筛选) ，以及反垃圾邮件策略中允许的发件人列表或允许的域列表。 可以将这些选项统称为 _安全发件人列表_。
+如果您是在 Exchange Online 中使用邮箱的 Microsoft 365 客户或独立 Exchange Online Protection (EOP) 不含 Exchange Online 邮箱的客户，EOP 将提供多种方法来确保用户收到来自受信任的发件人的电子邮件。 这些选项包括 Exchange 邮件流规则 (也称为传输规则) 、Outlook 安全发件人、IP 允许列表 (连接筛选) ，以及反垃圾邮件策略中允许的发件人列表或允许的域列表。 可以将这些选项统称为 _安全发件人列表_ 。
 
 以下列表中介绍了可用的安全发件人列表，从最建议的到最小建议的顺序如下：
 
@@ -49,7 +49,7 @@ ms.locfileid: "48600317"
 >
 > - EOP 和 Outlook 检查不同的邮件属性以确定邮件的发件人。 有关详细信息，请参阅本主题后面的 " [批量电子邮件的注意事项](#considerations-for-bulk-email) " 一节。
 
-相比之下，您还可以使用 _阻止发件人列表_的多个选项阻止来自特定来源的电子邮件。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
+相比之下，您还可以使用 _阻止发件人列表_ 的多个选项阻止来自特定来源的电子邮件。 有关详细信息，请参阅[在 EOP 中创建阻止发件人列表](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="recommended-use-mail-flow-rules"></a> (建议的) 使用邮件流规则
 
@@ -57,17 +57,17 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 下面的示例假定您需要来自 contoso.com 的电子邮件以跳过垃圾邮件筛选。 为此，请配置以下设置：
 
-1. **条件**： **发件人** \> **域为** \> contoso.com。
+1. **条件** ： **发件人** \> **域为** \> contoso.com。
 
 2. 配置以下任一设置：
 
-   - **邮件流规则条件**： **邮件头** \> **包含以下任何词语** \> **头名称**： `Authentication-Results` \> **头值**： `dmarc=pass` 或 `dmarc=bestguesspass` 。
+   - **邮件流规则条件** ： **邮件头** \> **包含以下任何词语** \> **头名称** ： `Authentication-Results` \> **头值** ： `dmarc=pass` 或 `dmarc=bestguesspass` 。
 
-     此条件检查发送电子邮件域的发件人身份验证状态，以确保发送域不是欺骗的。 有关电子邮件身份验证的详细信息，请参阅 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)。
+     此条件检查发送电子邮件域的电子邮件身份验证状态，以确保不会欺骗发送域。 有关电子邮件身份验证的详细信息，请参阅 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)。
 
-   - **IP 允许列表**：在连接筛选器策略中指定源 IP 地址或地址范围。
+   - **IP 允许列表** ：在连接筛选器策略中指定源 IP 地址或地址范围。
   
-     如果发送域没有身份验证，则使用此设置。 当到达 IP 允许列表中的源 IP 地址时，应尽可能地限制其限制性。 建议使用的 IP 地址范围为/24 或更低 (更) 。 请勿使用属于消费服务 (的 IP 地址范围，例如 outlook.com) 或共享基础结构。
+     如果发送域不使用电子邮件身份验证，则使用此设置。 当到达 IP 允许列表中的源 IP 地址时，应尽可能地限制其限制性。 建议使用的 IP 地址范围为/24 或更低 (更) 。 请勿使用属于消费服务 (的 IP 地址范围，例如 outlook.com) 或共享基础结构。
 
    > [!IMPORTANT]
    >
@@ -77,17 +77,17 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
    >
    > - 如果您允许网络地址转换后面的 IP 地址 (NAT) 网关，则需要知道 NAT 池中涉及的服务器，才能知道您的 IP 允许列表的作用域。 IP 地址和 NAT 参与者可以更改。 你需要定期检查你的 IP 允许列表条目，作为你的标准维护过程的一部分。
 
-3. **可选条件**：
+3. **可选条件** ：
 
-   - **发件人** \>**内部/外部** \>在**组织外部**：此条件是隐式的，但可使用它来考虑可能未正确配置的本地电子邮件服务器。
+   - **发件人** \>**内部/外部** \>在 **组织外部** ：此条件是隐式的，但可使用它来考虑可能未正确配置的本地电子邮件服务器。
 
    - **主题或正文** \>**主题或正文包含以下任何词语** \>\<keywords\>：如果可以通过主题行或邮件正文中的关键字或短语进一步限制邮件，则可以使用这些词作为条件。
 
-4. **操作**：在规则中配置这两个操作：
+4. **操作** ：在规则中配置这两个操作：
 
-   a. **修改邮件属性** \>** (SCL) ** \> 设置垃圾邮件可信度级别**绕过垃圾邮件筛选**。
+   a. **修改邮件属性** \>**(SCL)** \> 设置垃圾邮件可信度级别 **绕过垃圾邮件筛选** 。
 
-   b. **邮件头** \>**包括以下任何词语** \>**标头名称**： \<CustomHeaderName\> **头值**： \<CustomHeaderValue\> 。
+   b. **修改邮件属性** \>**设置邮件头** ： **将邮件标头设置** \<CustomHeaderName\> **为值** \<CustomHeaderValue\> 。
 
       例如，`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`。 如果规则中有多个域，则可以根据需要自定义标题文本。
 
@@ -105,7 +105,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 如果您在前面所述的情况下无法使用邮件流规则，则下一个最佳选择是将源电子邮件服务器或服务器添加到连接筛选器策略中的 IP 允许列表中。 有关详细信息，请参阅 [在 EOP 中配置连接筛选](configure-the-connection-filter-policy.md)。
 
-**注意**：
+**注意** ：
 
 - 一定要将允许的 IP 地址数保持为最小值，以便尽可能避免使用整个 IP 地址范围。
 
@@ -118,7 +118,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>使用允许的发件人列表或允许的域列表
 
-最不理想的选择是在反垃圾邮件策略中使用允许的发件人列表或允许的域列表。 *如果可能*，应尽可能避免此选项，因为发件人绕过所有垃圾邮件、欺骗和网络钓鱼防护以及发件人身份验证 (SPF、DKIM、DMARC) 。 此方法最好仅用于临时测试。 详细步骤可在 EOP 主题中的 " [配置反垃圾邮件策略](configure-your-spam-filter-policies.md) " 中找到。
+最不理想的选择是在反垃圾邮件策略中使用允许的发件人列表或允许的域列表。 *如果可能* ，应尽可能避免此选项，因为发件人绕过所有垃圾邮件、欺骗和网络钓鱼防护以及发件人身份验证 (SPF、DKIM、DMARC) 。 此方法最好仅用于临时测试。 详细步骤可在 EOP 主题中的 " [配置反垃圾邮件策略](configure-your-spam-filter-policies.md) " 中找到。
 
 这些列表的最大限制约为1000个条目;尽管只能将30个条目输入到门户中。 必须使用 PowerShell 添加30个以上的条目。
 
@@ -130,11 +130,11 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 ## <a name="considerations-for-bulk-email"></a>批量电子邮件的注意事项
 
-标准 SMTP 电子邮件由*邮件信封*和邮件内容组成。 邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。 邮件内容包含邮件头字段（统称为*邮件头*）和邮件正文。 RFC 5321 中介绍了邮件信封，并且 RFC 5322 中介绍了邮件头。 收件人从不会看到实际邮件信封，因为它是由邮件传输进程生成的，并且实际上并不是邮件的一部分。
+标准 SMTP 电子邮件由 *邮件信封* 和邮件内容组成。 邮件信封包含在 SMTP 服务器之间传输和传递邮件所需的信息。 邮件内容包含邮件头字段（统称为 *邮件头* ）和邮件正文。 RFC 5321 中介绍了邮件信封，并且 RFC 5322 中介绍了邮件头。 收件人从不会看到实际邮件信封，因为它是由邮件传输进程生成的，并且实际上并不是邮件的一部分。
 
 - 该 `5321.MailFrom` 地址 (也称为 " **发** 件人地址"、"P1 发件人" 或 "信封发件人") 是在邮件的 SMTP 传输中使用的电子邮件地址。 此电子邮件地址通常记录在邮件标头的 " **返回路径** 标头" 字段中 (尽管可以将不同的 **返回路径** 电子邮件地址指定) 。 如果无法传递邮件，则表示未送达报告 (的收件人也称为 "NDR" 或 "退回邮件") 。
 
-- "发件人 `5322.From` 地址" **From**或 "P2 发件人") 的 (也称为 **"发**件人" 头字段中的电子邮件地址，它是电子邮件客户端中显示的发件人的电子邮件地址。
+- "发件人 `5322.From` 地址" **From** 或 "P2 发件人") 的 (也称为 **"发** 件人" 头字段中的电子邮件地址，它是电子邮件客户端中显示的发件人的电子邮件地址。
 
 通常， `5321.MailFrom` 和 `5322.From` 地址 (个人到人员通信) 相同。 但是，如果代表其他人发送电子邮件，则地址可能会不同。 对于批量电子邮件，这通常会发生。
 
