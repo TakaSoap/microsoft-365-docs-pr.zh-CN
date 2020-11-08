@@ -68,6 +68,11 @@
           items:
             - name: 使用 Microsoft 咨询服务
               href: get-ready/apps-MCS.md
+        - name: 使用就绪情况评估工具
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: 修复准备情况评估工具发现的问题
+              href: get-ready/readiness-assessment-fix.md
     - name: Microsoft 托管桌面入门
       href: get-started/index.md
       items:

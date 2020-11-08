@@ -292,6 +292,8 @@
       items:
         - name: 概述
           items:
+            - name: 安全性路线图
+              href: ./office-365-security/security-roadmap.md
             - name: Exchange Online Protection
               items:
                 - name: Exchange Online Protection 概述
@@ -318,8 +320,6 @@
               href: ./office-365-security/atp-for-spo-odb-and-teams.md
             - name: 新版 Microsoft 365 安全中心
               href: ./mtp/overview-security-center.md
-            - name: 安全性路线图
-              href: ./office-365-security/security-roadmap.md
             - name: 威胁资源管理器（和实时检测）
               href: ./office-365-security/threat-explorer.md
             - name: AIR 述
@@ -376,7 +376,9 @@
               href: ./office-365-security/siem-server-integration.md
             - name: SIEM 与 Defender for Office 365 集成
               href: ./office-365-security/siem-integration-with-office-365-ti.md
-            - name: 配置防钓鱼策略
+            - name: 默认处于保护状态
+              href: ./office-365-security/secure-by-default.md
+            - name: 配置 ATP 防钓鱼策略
               href: ./office-365-security/configure-atp-anti-phishing-policies.md
             - name: 配置反恶意软件策略
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -461,6 +463,12 @@
               href: ./office-365-security/configuration-analyzer-for-security-policies.md
             - name: Defender for Office 365 中的攻击模拟器
               href: ./office-365-security/attack-simulator.md
+            - name: 通过攻击模拟培训模拟网络钓鱼攻击
+              href: ./office-365-security/attack-simulation-training.md
+            - name: 创建用于攻击模拟培训的自定义负载
+              href: ./office-365-security/attack-simulation-training-payloads.md
+            - name: 通过攻击模拟培训获得见解
+              href: ./office-365-security/attack-simulation-training-insights.md
             - name: 用于配置 EOP 和 Defender for Office 365 安全性的建议设置
               href: ./office-365-security/recommended-settings-for-eop-and-office365-atp.md
             - name: 配置 EOP 的最佳做法
