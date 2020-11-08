@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: a0fd71aa1eb7c0a7eff97e783f4b0dfb8a50a915
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262228"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941363"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -35,12 +35,12 @@ ms.locfileid: "48262228"
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规中心中的 **处置** 选项卡，用户必须拥有 **处置管理** 管理员角色。 该角色包含在默认管理员角色组中， **合规性管理员**和 **合规性数据管理员**。
+若要成功访问 Microsoft 365 合规中心中的 **处置** 选项卡，用户必须拥有 **处置管理** 管理员角色。 该角色包含在默认管理员角色组中， **合规性管理员** 和 **合规性数据管理员** 。
 
 若要向用户授予所需的处置管理角色，可将其添加到这些默认角色组中，或创建自定义角色组（例如命名为 "处置审阅者"），并向此组授予处置管理角色。  
 
 > [!NOTE]
-> 即使是全局管理员也需要被授予**处置管理**角色。 
+> 即使是全局管理员也需要被授予 **处置管理** 角色。 
 
 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
@@ -71,11 +71,11 @@ ms.locfileid: "48262228"
 > [!NOTE]
 > 一个邮箱必须有至少10MB的数据来支持处置评审。
 
-可在**概述**选项卡中查看所有待处置的概述。例如：
+可在 **概述** 选项卡中查看所有待处置的概述。例如：
 
 ![记录管理概述中的待处置](../media/dispositions-overview.png)
 
-选择**查看所有待处置**后，则转到**处置**页面。 例如：
+选择 **查看所有待处置** 后，则转到 **处置** 页面。 例如：
 
 ![Microsoft 365 合规中心内的策略页面](../media/disposition-tab.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "48262228"
 
 ## <a name="disposition-of-records"></a>处置记录
 
-使用 **记录管理** 页面中的 **处置** 选项卡来识别当前需删除的记录是自动删除，或是经过处置评审后删除。 这些项目在**类型**列中的**已处置记录**里显示。 例如：
+使用 **记录管理** 页面中的 **处置** 选项卡来识别当前需删除的记录是自动删除，或是经过处置评审后删除。 这些项目在 **类型** 列中的 **已处置记录** 里显示。 例如：
 
 ![未经处置评审即被处置的项目](../media/records-disposed2.png)
 
@@ -132,10 +132,12 @@ ms.locfileid: "48262228"
 
 > [!NOTE]
 > 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要[启动并可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。
-    
+
+对于审核，请搜索 **标记为记录的已删除文件** 。
+
 ## <a name="filter-and-export-the-views"></a>筛选和导出视图
 
-从 **处置** 页面选择保留标签时，**待处置** 选项卡（如果适用）和 **已处置项目** 选项卡可用于筛选视图，帮助更轻松地查找项目。 
+从 **处置** 页面选择保留标签时， **待处置** 选项卡（如果适用）和 **已处置项目** 选项卡可用于筛选视图，帮助更轻松地查找项目。 
 
 对于待处置的，时间范围以终止日期为准。 对于已处置的项目，时间范围以删除日期为准。
   
