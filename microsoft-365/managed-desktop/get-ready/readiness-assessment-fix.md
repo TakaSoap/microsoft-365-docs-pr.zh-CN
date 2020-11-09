@@ -1,5 +1,5 @@
 ---
-title: 解决准备情况评估工具发现的问题
+title: 修复准备情况评估工具发现的问题
 description: 对工具找到的每个问题执行的详细操作
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941405"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948405"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>解决准备情况评估工具发现的问题
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
 对于每个检查，该工具将报告以下四个可能的结果之一：
 
@@ -242,7 +242,7 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 **欲**
 
-确保任何更新环策略均已排除 **新式工作区-所有** Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式工作区设备-所有** Azure AD 组是在注册 Microsoft 托管桌面时创建的动态组，因此你必须在注册后返回以排除此组。
+确保任何更新环策略都排除了 **新式工作区设备-所有** Azure AD 组。 如果已将 Azure AD 用户组分配给这些策略，请确保所有更新环策略也都已排除 **新式工作区-所有** 包含 Microsoft 托管桌面用户的 Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 新式的 **工作区设备-all** 和 **新式工作区-所有** Azure AD 组都分配了我们在注册 Microsoft 托管桌面时创建的组，因此在注册后必须返回以排除此组。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置

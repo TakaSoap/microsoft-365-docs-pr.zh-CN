@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解 EOP 和 Office 365 如何通过将安全提示添加到电子邮件顶部来保护您的垃圾邮件、网络钓鱼和恶意软件阻止。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201979"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948441"
 ---
 # <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
 
@@ -47,14 +47,6 @@ Outlook 中的安全提示不依赖于所使用的 Outlook 版本，因为安全
     ![显示绿色安全提示的屏幕截图。](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     除了不安全的邮件之外，我们还将通过绿色安全提示告诉你我们信任的发件人发来的有效邮件。 电子邮件中的绿色安全提示意味着我们检查邮件的发件人并验证其安全。 Microsoft 维护此受信任发件人列表，其中包括金融组织和经常被欺骗或模拟的人。
-
-- 未筛选的邮件 (灰色安全提示) 。
-
-    ![显示灰色安全提示的屏幕截图。](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    我们还将告诉你当我们跳过对某个邮件的检查时，因为它来自安全发件人列表中信任的发件人，或者如果有邮件流规则，可以绕过筛选。
-
-    当外部图像被阻止（即邮件在收件箱中而不是垃圾邮件）时，还会显示灰色安全提示，其中包含尚未选择下载的外部图像。
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 

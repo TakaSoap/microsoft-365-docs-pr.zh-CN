@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 设置适用于 Microsoft 365 的租户的路线图。
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753962"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948393"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>适用于 Microsoft 365 的租户路线图
 
@@ -33,7 +33,7 @@ ms.locfileid: "48753962"
 
 在确保网络已针对本地和远程工作人员访问 Microsoft 365 的优化之后，下一个大型任务将进行规划，然后为 Microsoft 365 租户配置 DNS 域名、常见服务以及支持安全用户登录的身份基础结构。
 
-### <a name="plan"></a>套餐
+### <a name="plan"></a>计划
 
 若要规划你的租户实现，请执行以下操作：
 
@@ -66,7 +66,7 @@ Microsoft 继续为 Microsoft 365 服务 (信息) 打开新的数据中心地理
 
 有关详细信息，请参阅 [Microsoft 365 多地理](microsoft-365-multi-geo.md)位置。
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>管理多个 Microsoft 365 租户 
+## <a name="manage-multiple-microsoft-365-tenants"></a>管理多个 Microsoft 365 租户 
 
 尽管为您的组织使用一个租户是理想的，但您可以是具有多个租户的多个组织之一。 原因可能包括合并和收购、需要管理隔离或分散 IT。
 

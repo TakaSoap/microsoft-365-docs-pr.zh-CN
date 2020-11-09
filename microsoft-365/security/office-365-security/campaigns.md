@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 了解 Microsoft Defender for Office 365 中的市场活动视图。
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941351"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948477"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的市场活动视图
 
@@ -115,9 +115,9 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
 若要进一步筛选视图，可以通过单击 " **市场活动类型** " 按钮，进行选择，然后单击 " **刷新** " 来执行 "多值筛选" 的 "单个" 属性。
 
-以下列表介绍了可用的市场活动属性：
+以下列表介绍了 " **市场活动类型** " 按钮中可用的可筛选的市场活动属性：
 
-- 基本
+- **基本** ：
   - **市场活动类型** ：选择 **恶意软件** 或 **网络钓鱼** 。 清除所选内容与同时选择这两个选项的结果相同。
   - **市场活动名称**
   - **市场活动子类型**
@@ -127,23 +127,26 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
   - **主题**
   - **附件的文件名**
   - **恶意软件系列**
+  - **标记** ：已应用指定用户标记 (的用户或组，其中包括优先级帐户) 。 有关用户标记的详细信息，请参阅 [用户标记](user-tags.md)。
+  - **系统覆盖**
   - **传递操作**
+  - **其他操作**
+  - **方向性**
   - **检测技术**
-  - **Tags**
+  - **原始送达位置**
+  - **最新送达位置**
   - **系统覆盖**
 
-- 高级
+- **高级** ：
   - **Internet 邮件 id** ：邮件标头中的 **邮件 id** 标头字段中可用。  (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。
   - **网络邮件 ID** ：邮件头中的 X------------ **邮件 id** 标头字段中可用的 GUID 值。
   - **发件人 IP**
   - **附件 SHA256** ：若要在 Windows 中查找文件的 SHA256 哈希值，请在命令提示符下运行以下命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
-
   - **群集 ID**
-
   - **通知策略 ID**
+  - **ZAP URL 信号**
 
-- URL
-
+- **Url** ：
   - **URL 域**
   - **URL 域和路径**
   - **URL**
@@ -209,7 +212,7 @@ Microsoft 利用整个服务中大量的防网络钓鱼、反垃圾邮件和反�
 
   ****
 
-  |值|垃圾邮件筛选器判定|Description|
+  |值|垃圾邮件筛选器判定|说明|
   |---|---|---|
   |**允许**|`SFV:SKN` <br/><br/> `SFV:SKI`|在垃圾邮件筛选评估之前，邮件被标记为 "非垃圾邮件" 和/或 "跳过筛选"。 例如，邮件流规则已将邮件标记为 "非垃圾邮件" (也称为 "传输规则) "。<br/><br/>邮件由于其他原因而跳过垃圾邮件筛选。 例如，发件人和收件人显示在同一个组织中。|
   |**已阻止**|`SFV:SKS`|在垃圾邮件筛选评估之前，邮件被标记为垃圾邮件。 例如，通过邮件流规则。|

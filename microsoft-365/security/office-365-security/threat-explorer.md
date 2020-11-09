@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何在安全合规中心中使用 Explorer 和实时检测， &amp; 以有效且高效地对威胁进行调查和响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941483"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948489"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -45,7 +45,6 @@ ms.locfileid: "48941483"
 - [从资源管理器中的视图启动自动调查和响应过程](#start-automated-investigation-and-response) (仅限 Office 365 计划2的 Defender) 
 - ... [调查恶意电子邮件，](#more-ways-to-use-explorer-or-real-time-detections)等等！
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>对威胁资源管理器和实时检测的改进体验
 
 ### <a name="tags-in-threat-explorer"></a>威胁资源管理器中的标记
@@ -65,6 +64,7 @@ ms.locfileid: "48941483"
 > ![电子邮件网格视图中的筛选标记](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>筛选
+
 我们现在将标记作为筛选器，以便您可以仅在优先级帐户或特定的用户标记方案中进行智能寻线 (甚至排除包含特定标记的结果) 的情况。 将这些筛选器与我们提供的多个其他筛选器组合在一起可帮助您缩小调查范围
 
 [![筛选标记 ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ ms.locfileid: "48941483"
 
 除了标识所有传递和传递后事件之外，"日程表" 视图还提供有关在该时间点为这些事件的子集确定的威胁的信息。 此外，它还提供了有关其他操作的详细信息 (例如，ZAP、手动修正) 以及该操作的结果。 "日程表" 视图包含有关原始传递以及随后在电子邮件上执行的任何送达事件的信息。
 
--   来源：这可以是管理员/系统/用户，具体取决于事件的来源。
--   事件：这包括原始传递、手动修正、ZAP、提交和动态传递等顶级事件。
--   操作：这涵盖作为 ZAP 或 Admin 操作的一部分执行的特定操作 (例如软删除) 。
--   威胁：涵盖该时间点 (恶意软件、网络钓鱼诈骗、垃圾邮件) 的威胁。
--   Result/Details：涵盖有关操作结果的详细信息，即是否作为 ZAP/管理操作的一部分执行。
+- 来源：这可以是管理员/系统/用户，具体取决于事件的来源。
+- 事件：这包括原始传递、手动修正、ZAP、提交和动态传递等顶级事件。
+- 操作：这涵盖作为 ZAP 或 Admin 操作的一部分执行的特定操作 (例如软删除) 。
+- 威胁：涵盖该时间点 (恶意软件、网络钓鱼诈骗、垃圾邮件) 的威胁。
+- Result/Details：涵盖有关操作结果的详细信息，即是否作为 ZAP/管理操作的一部分执行。
 
 ### <a name="original-and-latest-delivery-location"></a>原始和最新送达位置
 
@@ -170,15 +170,15 @@ ms.locfileid: "48941483"
 
 重点关注 URL 和 URL 的改进集单击 "数据" 包括：
 
- - 显示已完全单击的 URL (包括 URL 浮出控件的单击部分中的 URL) 的一部分查询参数。 目前，我们在标题栏中显示 URL 域和路径。 我们正在扩展该信息以显示完整的 URL。
+- 显示已完全单击的 URL (包括 URL 浮出控件的单击部分中的 URL) 的一部分查询参数。 目前，我们在标题栏中显示 URL 域和路径。 我们正在扩展该信息以显示完整的 URL。
 
- - 通过 URL 筛选器 (URL vs URL 域与 URL 域和路径) 的修正：我们已在搜索包含 URL/单击判定的邮件时进行了更新。 作为此过程的一部分，我们启用了对协议不可知搜索的支持 (意义上，您可以直接搜索不带 http) 的 URL。 默认情况下，除非显式指定，否则 URL 搜索将映射到 http。 例如：
+- 通过 URL 筛选器 (URL vs URL 域与 URL 域和路径) 的修正：我们已在搜索包含 URL/单击判定的邮件时进行了更新。 作为此过程的一部分，我们启用了对协议不可知搜索的支持 (意义上，您可以直接搜索不带 http) 的 URL。 默认情况下，除非显式指定，否则 URL 搜索将映射到 http。 例如：
 
-   1. `http://`在 "url"、"Url 域" 和 "Url 域和路径" 筛选器字段中使用和不带前缀进行搜索。 此行为是一致的，并应显示相同的结果。
+  1. `http://`在 "url"、"Url 域" 和 "Url 域和路径" 筛选器字段中使用和不带前缀进行搜索。 此行为是一致的，并应显示相同的结果。
 
-   1. `https://`在 "URL" 中搜索前缀。 如果不存在，则 `http://` 假定前缀。
+  1. `https://`在 "URL" 中搜索前缀。 如果不存在，则 `http://` 假定前缀。
 
-   1. `/` "URL 路径"、"URL 域"、"URL 域和路径" 字段的开头和结尾将被忽略。 `/` 在 "URL" 字段的末尾忽略。
+  1. `/` "URL 路径"、"URL 域"、"URL 域和路径" 字段的开头和结尾将被忽略。 `/` 在 "URL" 字段的末尾忽略。
 
 ### <a name="phish-confidence-level"></a>网络钓鱼信任级别
 
@@ -247,12 +247,13 @@ ms.locfileid: "48941483"
 > [!div class="mx-imgBorder"]
 > ![主要目标用户](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Exchange 传输规则
+
 作为数据扩充的一部分，您还应该能够查看应用于邮件的所有不同传输规则。 此信息将显示在电子邮件网格视图中 (查看此内容，请在网格中选择 "列选项"，并在 "网格中的列选项" 中添加 Exchange 传输规则) 以及电子邮件中的 "详细信息" 浮出控件。
 你将能够同时查看 GUID 以及应用于邮件的传输规则的名称。 此外，您还可以使用传输规则的名称搜索邮件。 这是一个 "包含" 搜索，这意味着您也可以使用部分搜索进行搜索。
 
 #### <a name="important-note"></a>重要说明：
+
 ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要具有以下角色/权限之一才能查看 ETR 名称和搜索。  如果没有为您分配以下任何角色，您将无法看到传输规则的名称，并使用 ETR 名称搜索邮件的名称。 不过，你将能够在电子邮件详细信息中看到 ETR 标签和 GUID 信息。 有关在电子邮件网格、电子邮件 flyouts、筛选器和导出中查看记录的其他体验不受影响。
 
 - 仅限 EXO-数据丢失防护：全部
