@@ -475,7 +475,7 @@
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: 导出搜索结果时禁用报告
               href: disable-reports-when-you-export-content-search-results.md
-        - name: 了解内容搜索
+        - name: 内容搜索参考
           items:
             - name: 内容搜索限制
               href: limits-for-content-search.md
@@ -535,6 +535,8 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
             - name: 解密电子数据展示工具
               href: ediscovery-decryption.md
+            - name: 收集电子数据展示诊断信息
+              href: ediscovery-diagnostic-info.md
             - name: 常见电子数据展示问题疑难解答
               href: ediscovery-troubleshooting-common-issues.md
             - name: 重试失败的搜索
@@ -666,6 +668,8 @@
               href: set-up-compliance-boundaries.md
             - name: 解密电子数据展示工具
               href: ediscovery-decryption.md
+            - name: 收集电子数据展示诊断信息
+              href: ediscovery-diagnostic-info.md
             - name: 在审核日志中搜索电子数据展示活动
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: AzCopy 疑难解答
