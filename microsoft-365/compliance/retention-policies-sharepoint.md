@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解用于 SharePoint 和 OneDrive 的保留的工作原理。
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804537"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951105"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>了解用于 SharePoint 和 OneDrive 的保留
 
@@ -38,7 +38,7 @@ ms.locfileid: "48804537"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-通过应用保留策略或保留标签，可以保留 SharePoint 或 OneDrive 站点中存储的所有文件。
+通过应用保留策略或保留标签，可以保留 SharePoint 或 OneDrive 站点中存储的所有文件。 
 
 可删除以下文件：
 
@@ -46,8 +46,12 @@ ms.locfileid: "48804537"
     
 - 使用保留标签时：所有文档库中的所有文件，以及根级别不在文件夹中的所有文件。
     
-    当您将[带有自动应用策略的 KQL 查询用于保留标签](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)时，可以使用以下条目排除文档库：`NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> 当你将[带有自动应用策略的查询用于保留标签](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)时，可以使用以下条目排除特定文档库：`NOT(DocumentLink:"<URL to document library>")`
 
+保留设置不适用于包括库、列表和文件夹的组织结构。 或系统列表中的项目，系统列表是 SharePoint 用于管理系统的隐藏列表，并且包括母版页目录、解决方案目录和数据源。
+
+对于保留策略和自动应用标签策略：必须为要应用的保留设置编制 SharePoint 网站索引。 但是，如果 SharePoint 文档库中的项目配置为不显示在搜索结果中，则此配置不会排除保留设置中的文件。
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>用于 SharePoint 和 OneDrive 的保留的工作原理
 
