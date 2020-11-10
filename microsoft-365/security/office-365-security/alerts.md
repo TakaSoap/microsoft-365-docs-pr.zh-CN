@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何使用 Office 365 安全 & 合规中心中的警报功能查看和管理警报，包括管理高级通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447043"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984884"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全 & 合规中心中的警报
 
@@ -40,7 +40,7 @@ ms.locfileid: "48447043"
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>直接转到安全 & 合规中心
 
-1. 转到 [https://protection.office.com](https://protection.office.com)。
+1. 转到 <https://protection.office.com>。
 
 2. 使用工作或学校帐户进行登录。
 
@@ -50,9 +50,9 @@ ms.locfileid: "48447043"
 
 1. 使用工作或学校帐户进行登录。
 
-2. 单击左上角的应用启动器，然后单击 " **安全 & 合规性**"。
+2. 单击左上角的应用启动器，然后单击 " **安全 & 合规性** "。
 
-    找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
+   找不到需要的应用？从应用启动器中，选择“ **所有应用** ”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
 
 3. 在左窗格中，单击 " **警报** " 以查看警报功能。
 
@@ -64,6 +64,6 @@ ms.locfileid: "48447043"
 
 |工具|说明|
 |---|---|
-|[管理通知](../../compliance/create-activity-alerts.md)|当用户在 Office 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知与搜索事件的审核日志类似，不同之处在于，当您创建了通知的事件发生时，将会发送一封电子邮件。|
-|[管理高级通知 ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Office 365 云应用安全性的 " **管理高级警报** " 功能设置可在 Office 365 中提醒您可疑和异常活动的策略。 收到警报后，可以调查可能存在问题的情况，如果需要，可以采取措施解决安全问题。|
+|[管理通知](../../compliance/create-activity-alerts.md)|当用户在 Microsoft 365 中执行特定活动时，可使用活动警报向自己或其他管理员发送电子邮件通知。 活动通知与搜索事件的审核日志类似，不同之处在于，当您创建了通知的事件发生时，将会发送一封电子邮件。|
+|[管理高级通知](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Microsoft 365 云应用安全性的 " **管理高级警报** " 功能设置可在 Microsoft 365 中提醒您可疑和异常活动的策略。 收到警报后，可以调查可能存在问题的情况，如果需要，可以采取措施解决安全问题。|
 |

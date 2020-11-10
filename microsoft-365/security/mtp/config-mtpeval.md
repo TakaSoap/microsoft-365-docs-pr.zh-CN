@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844100"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984946"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用版实验室或试点环境配置 Microsoft 365 Defender 支柱
 
@@ -68,7 +68,7 @@ ms.locfileid: "48844100"
 ## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender 支柱
 Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你的网络组织的安全性提供价值，但启用四个 Microsoft 365 Defender 个支柱将为你的组织提供最大价值。
 
-![Image of_Microsoft 365 Defender 解决方案，适用于用户、Microsoft Defender for a Endpoint for Microsoft Defender for Endpoint、云应用、Microsoft 云应用安全性和数据、Microsoft Defender for Office 365](../../media/mtp-eval-31.png)
+![Image of_Microsoft 365 Defender 解决方案，适用于用户、Microsoft Defender for a Endpoint for Microsoft Defender for Endpoint、云应用、Microsoft 云应用安全性和数据、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 本部分将指导您配置：
 -   Microsoft Defender for Office 365
