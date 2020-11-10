@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。 保留所需内容并删除不需要的内容。
-ms.openlocfilehash: 4e4ced42424abe024a1230c24814c420a59ed3dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3b68de3594e4a31040a6ee0698c3c600490bd5d9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919984"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950947"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -169,9 +169,9 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 通过在邮箱级别应用保留设置， **Exchange 电子邮件** 位置支持用户的电子邮件、日历和其他邮箱项的保留。
 
-以下邮件项目包含在内：包含任何附件的邮件（包括草稿）、任务和日历项目（如果有结束日期）以及便签。 其中不包括不具备结束日期的任何联系人、任务和日历项目。 存储在邮箱中的其他项目（如 Skype 和 Teams 保存的消息）并不包含在其位置中。 这些项目有自己的保留位置。
+有关在配置 Exchange 的保留设置时应包含和排除哪些项目的详细信息，请参阅[保留和删除哪些内容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
-即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Microsoft 365 组** 位置。
+请注意，即使 Microsoft 365 组有 Exchange 邮箱，涵盖整个 **Exchange 电子邮件** 位置的保留策略也不会包含 Microsoft 365 组邮箱中的内容。 若要保留这些邮箱中的内容，请选择 **Microsoft 365 组** 位置。
 
 **Exchange 公用文件夹** 位置将保留设置应用于所有公共文件夹，并且不能在文件夹或邮箱级别应用。
 
@@ -179,12 +179,9 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 选择 **SharePoint 网站** 位置时，保留策略可以保留和删除 SharePoint 通信网站、未通过 Microsoft 365 组连接的团队网站以及经典网站中的文档。 因为此选项不支持通过 Microsoft 365 组连接的团队网站，所以请改用 **Microsoft 365 组** 位置，该位置适用于该组的邮箱、网站和文件中的内容。
 
-尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 保留设置不适用于站点内包括库、列表和文件夹的组织结构。
+尽管保留策略应用于站点级别，但只有文档具有应用于其的保留设置。 有关在配置 SharePoint 和 OneDrive 的保留设置时应包含和排除哪些内容的详细信息，请参阅[保留和删除哪些内容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。 
 
-如果为 SharePoint 网站或 OneDrive 账户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 不过，系统会检查你指定的 SharePoint 网站是否在向导结束时存在。 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
-
-> [!NOTE]
-> 必须为要应用的保留设置建立索引 SharePoint 网站。 但是，如果 SharePoint 文档库中的项目配置为不显示在搜索结果中，则此配置不会排除保留设置中的项目。
+如果为 SharePoint 网站或 OneDrive 帐户指定位置，无需网站访问权限，且在 **编辑位置** 页上指定 URL 时不会进行任何验证。 不过，系统会检查你指定的 SharePoint 网站是否在向导结束时存在。 如果此检查失败，你会看到一条消息，指明无法验证你所输入的 URL，且只有在验证检查通过后，向导才会创建保留策略。 如果你看到此消息，请返回到向导，以更改 URL 或删除保留策略中的网站。
 
 若要指定单个 OneDrive 帐户包含或排除的，URL 具有以下格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -289,4 +286,4 @@ Yammer 不仅仅是社区消息和私人消息。 若要保留和删除 Yammer �
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>锁定策略以防止更改
 
-如果需要确保任何人都无法关闭该策略、删除该策略或降低其限制性，请参阅 [使用保留锁限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
+如果需要确保任何人都无法关闭策略、删除策略或降低其限制性，请参阅[使用保留锁定来限制对保留策略和保留标签策略的更改](retention-preservation-lock.md)。
