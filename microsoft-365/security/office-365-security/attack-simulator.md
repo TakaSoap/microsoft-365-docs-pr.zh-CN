@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用攻击模拟器在其 Microsoft 365 E5 或 Microsoft Defender for Office 365 Plan 2 组织中运行模拟的网络钓鱼和密码攻击。
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845992"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988560"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻击模拟器
 
@@ -35,6 +35,9 @@ ms.locfileid: "48845992"
 
 > [!NOTE]
 > 与 Microsoft 365 服务的其他客户数据一起存储的攻击模拟和培训相关数据。 有关详细信息，请参阅 [Microsoft 365 数据位置](/microsoft-365/enterprise/o365-data-locations)。
+
+> [!TIP]
+> Microsoft 365 安全中心中的公共预览版提供了攻击模拟培训。 请查看 [使用 Microsoft Defender For Office 365 模拟网络钓鱼攻击](attack-simulation-training.md) ，了解详细信息。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 

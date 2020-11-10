@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合规性功能，并保护你的个人信息。
-ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f17568c5a19446644cfb7ee64aac3e0f9eae5793
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377147"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988478"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保护受数据隐私法规制约的信息
 
@@ -65,7 +65,7 @@ ms.locfileid: "48377147"
 
 ## <a name="managing-information-protection-in-microsoft-365"></a>在 Microsoft 365 中管理信息保护
 
-Microsoft [信息保护解决方案](../compliance/protect-information.md) 在 microsoft 365、microsoft Azure 和 microsoft Windows 中提供了许多集成功能。 在 Microsoft 365 中，信息保护解决方案包括：
+Microsoft [信息保护解决方案](../compliance/information-protection.md) 在 microsoft 365、microsoft Azure 和 microsoft Windows 中提供了许多集成功能。 在 Microsoft 365 中，信息保护解决方案包括：
 
 - [使用客户密钥进行服务加密](../compliance/customer-key-overview.md)
 - [敏感信息类型](../compliance/what-the-sensitive-information-types-look-for.md) (" [评估数据隐私风险" 和 "确定敏感项目" 文章](information-protection-deploy-assess.md) 中所述) 
@@ -291,7 +291,7 @@ DLP 策略在 Microsoft 合规性管理中心中配置，并指定保护级别�
 
 下面是使用 DLP 和敏感度标签的一些数据保护方案，如图所示。
 
-| 方案 | 流程 |
+| 应用场景 | 流程 |
 |:-------|:-----|
 | A | <ol><li>内容的敏感度标签由管理员发布到用户和组，以供手动或自动应用到内容和电子邮件。 </li><li>用户 A 在与内容交互时（已应用加密或其他设置）手动或自动应用标签。 </li><li>用户 A 将受保护的电子邮件或文件发送给用户 B，即来宾用户。 </li></ol> |
 | B | 管理员向用户 A 发布的 DLP 策略阻止用户 A 向用户 B 发送电子邮件和/或文件。 |
@@ -317,7 +317,7 @@ DLP 策略在 Microsoft 合规性管理中心中配置，并指定保护级别�
 
 应用于加密电子邮件的 OME 和敏感度标签有一些重叠，因此，了解可能适用于哪些方案，这一点很重要，如下表所示。
 
-| 方案 | 敏感度标签 | OME |
+| 应用场景 | 敏感度标签 | OME |
 |:-------|:-----|:-------|
 | 内部 + 合作伙伴 <br> 内部用户与受信任合作伙伴之间的安全通信和协作 | 推荐–使用完全自定义的分类和保护的标签 | 是–仅加密或不转发保护（无分类） |
 | 外部方 <br> 与任何外部/消费者用户安全地通信和协作 | 是–预定义标签中的收件人 | 建议–基于收件人的实时保护 |

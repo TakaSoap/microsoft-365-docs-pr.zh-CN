@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906915"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988734"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>使用主题 center (Preview 中的主题) 
 
@@ -28,7 +28,7 @@ ms.locfileid: "48906915"
 
 ## <a name="requirements"></a>Requirements
 
-若要在主题中心中工作，您需要具有所需的权限。 你的管理员可以在 [知识管理安装](set-up-knowledge-network.md)过程中添加你，也可以在 [以后添加](give-user-permissions-to-the-topic-center.md)新用户。
+若要在主题中心中工作，您需要具有所需的权限。 你的管理员可以在 [知识管理安装](set-up-topic-experiences.md)过程中添加你，也可以在 [以后添加](give-user-permissions-to-the-topic-center.md)新用户。
 
 可以向主题中心用户授予两组权限：
 
@@ -72,7 +72,7 @@ ms.locfileid: "48906915"
 3. 你也可以拒绝它
 
 ## <a name="review-published-topics"></a>查看已发布的主题
-已发布的主题已进行了编辑，以便 speific 信息将始终显示在页面的 encountrs。 手动创建的主题显示在此处。
+已发布的主题已进行了编辑，以便特定信息将始终显示在页面遇到的任何其他信息中。 手动创建的主题显示在此处。
 
    
 ## <a name="create-a-new-topic"></a>新建主题
@@ -101,7 +101,7 @@ ms.locfileid: "48906915"
 
     ![新主题页面](../media/content-understanding/k-new-topic-page.png)
     
-3. 如果需要将其他组件添加到页面中，如 text、images、webpart、links 等，请选择页面中间的画布图标以查找和添加它们。
+3. 如果需要将其他组件添加到页面中，如文本、图像、web 部件、链接等，请选择页面中间的画布图标以查找和添加它们。
 
     ![将项目添加到页面](../media/content-understanding/static-icon.png)
 

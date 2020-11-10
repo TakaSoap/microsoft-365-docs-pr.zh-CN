@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通过从 Microsoft 365 报告中获取 Microsoft 团队应用使用情况报告，深入了解你的组织中使用的 Microsoft 团队应用。
-ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636969"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988524"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Microsoft 团队中的 microsoft 365 报表-Microsoft 团队设备使用情况
 
@@ -37,7 +37,7 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
  
 ## <a name="how-to-get-to-the-microsoft-teams-app-usage-report"></a>如何获取 Microsoft Teams 应用使用情况报表
 
-1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
+1. 在管理中心，转到“ **报表** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。 
 2. 在仪表板主页中，单击 Microsoft 团队活动卡片上的 " **查看更多** " 按钮。
   
 ## <a name="interpret-the-microsoft-teams-app-usage-report"></a>解读 Microsoft Teams 应用使用情况报表
@@ -48,7 +48,7 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 
 您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 
   
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的显示名称。  <br/> |
@@ -61,5 +61,4 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |Web  <br/> |如果用户在设备上的工作组 web 客户端中处于活动状态，则选择此选项。|
 | (UTC) 的上次活动日期  <br/> |上次 (UTC) 用户参与团队活动的日期。  <br/> |
 |已许可|如果用户已被授权使用团队，则选择此选项。|
-|团队活动总数|选定时间段内的团队活动总数。 |
 |||

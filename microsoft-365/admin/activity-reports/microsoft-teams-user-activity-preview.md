@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何获取 Microsoft 团队用户活动报告，并深入了解组织中的团队活动。
-ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b85f073a2916b646a5a03e62913de44b410ca058
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637063"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988466"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 团队用户活动中的 microsoft 365 报告
 
@@ -35,7 +35,7 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>如何获取 Microsoft Teams 用户活动报表
 
-1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
+1. 在管理中心，转到“ **报表** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 2. 在仪表板主页中，单击 Microsoft 团队活动卡片上的 " **查看更多** " 按钮。
 
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解读 Microsoft Teams 用户活动报表
@@ -44,9 +44,9 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 
 选择 " **选择列** " 可在报告中添加或删除列。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间**、**视频时间**和**屏幕共享时间**的导出格式遵循 ISO8601 持续时间格式。
+您还可以通过选择 " **导出** " 链接将报告数据导出到 Excel .csv 文件中。 此操作可导出所有用户的数据，使你能够对数据进行简单的排序和筛选，以进一步分析数据。 如果用户数量不足 2000，则可在报表中的表格内进行排序和筛选。 如果用户数超过 2000，则需要导出数据才能进行排序和筛选。 **音频时间** 、 **视频时间** 和 **屏幕共享时间** 的导出格式遵循 ISO8601 持续时间格式。
 
-|Item|说明|
+|项目|说明|
 |:-----|:-----|
 |**跃点数**|**定义**|
 |用户名  <br/> |用户的电子邮件地址。 可以显示实际的电子邮件地址或采用匿名字段。   <br/> |
@@ -59,5 +59,5 @@ Microsoft 365 " **报告** " 仪表板显示组织中各产品的活动概述。
 |以即席方式组织的会议 <br/> |在指定时间段内，用户组织的日历上未计划的会议数。 <br/>|
 |安排的会议  <br/> |用户在指定时间段内组织的已安排会议数。  <br/> |
 |已许可 |如果用户已被授权使用团队，则选择此选项。|
-|其他活动|用户被视为处于活动状态，但其值为零：聊天消息、1:1 呼叫、频道消息、会议总数和会议组织的指标值。 示例操作是当用户打开频道消息 post 但不进行回复，或者当收到专用邮件且未响应时，将对其进行读取。 |
+|其他活动|用户处于活动状态，但执行了与报告中提供的操作类型的其他活动 (发送或回复频道消息和聊天消息、安排或参与1:1 呼叫和会议) 。 示例操作是在用户更改团队状态或团队状态邮件时或者打开频道消息 post 但不回复的情况。 |
 |||

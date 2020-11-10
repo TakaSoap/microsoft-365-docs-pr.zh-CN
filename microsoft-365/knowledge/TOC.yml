@@ -11,6 +11,6 @@
 - name: 开始使用安装程序
   items:
     - name: 设置知识管理
-      href: set-up-knowledge-network.md
+      href: set-up-topic-experiences.md
     - name: 管理您的知识管理网络
-      href: manage-knowledge-network.md
+      href: topic-experiences-discovery.md

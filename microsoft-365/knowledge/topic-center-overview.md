@@ -11,19 +11,19 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d87a52bc6aca2f033a6e0d26a8c9c0e167908759
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906961"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988826"
 ---
 # <a name="topic-center-overview-preview"></a>主题中心概述 (预览) 
 
 > [!Note] 
 > 本文中的内容适用于 Project Cortex 私人预览。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
 
-主题 center 是一个新式 SharePoint 网站，用作组织的知识中心。 它是在 Microsoft 365 管理中心内的 [知识管理安装](set-up-knowledge-network.md) 过程中创建的。
+主题 center 是一个新式 SharePoint 网站，用作组织的知识中心。 它是在 Microsoft 365 管理中心内的 [知识管理安装](set-up-topic-experiences.md) 过程中创建的。
 
 主题中心具有一个默认主页，您可以在其中查看已连接或建议连接的主题。 具有适当权限的用户还可以：
 
@@ -36,7 +36,7 @@ ms.locfileid: "48906961"
 
 ## <a name="where-is-the-topic-center"></a>主题中心在哪里
 
-您的主题中心是在知识管理安装过程中创建的。 安装程序完成后，管理员可以在 " [知识中心管理" 页](manage-knowledge-network.md)上找到该 URL。
+您的主题中心是在知识管理安装过程中创建的。 安装程序完成后，管理员可以在 " [知识中心管理" 页](topic-experiences-discovery.md)上找到该 URL。
 
 1. 在 Microsoft 365 管理中心中，在导航窗格中选择 " **安装程序** "，然后在 " **组织知识** " 部分选择 " **将人员连接到知识** "。
 
@@ -46,7 +46,7 @@ ms.locfileid: "48906961"
 
 ## <a name="home-page"></a>主页
 
-若要查看主题中心，您需要具有查看主题和主题体验的权限。 在 [知识管理安装](set-up-knowledge-network.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
+若要查看主题中心，您需要具有查看主题和主题体验的权限。 在 [知识管理安装](set-up-topic-experiences.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
 
 在主页上 
 - **查看主题** ：查看主题体验。 因此，您可以查看组织中的主题，并提供有关已连接的主题的反馈：
@@ -59,7 +59,7 @@ ms.locfileid: "48906961"
 
 ## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>使用 "管理主题功能" 主题中心的权限
 
-若要在主题中心的 "管理主题" 部分中工作，您需要具有所需的权限。 在 [知识管理安装](set-up-knowledge-network.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
+若要在主题中心的 "管理主题" 部分中工作，您需要具有所需的权限。 在 [知识管理安装](set-up-topic-experiences.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
 
 可以向主题中心用户授予两组权限：
 

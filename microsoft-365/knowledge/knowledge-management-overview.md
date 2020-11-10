@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 项目 Cortex 中的知识管理概述。
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906937"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988838"
 ---
 # <a name="knowledge-management-overview-preview"></a>知识管理概述 (预览) 
 
@@ -75,7 +75,7 @@ Microsoft 365 管理中心中的管理员控件允许您管理您的知识网络
 - 控制哪些用户可以确认或拒绝主题中心中的主题。
 - 控制哪些用户可以在主题中心创建和编辑主题。
 
-有关详细信息，请参阅 [管理您的知识网络](manage-knowledge-network.md) 。 
+有关详细信息，请参阅 [管理您的知识网络](topic-experiences-discovery.md) 。 
 
 ## <a name="topic-curation--feedback"></a>主题 curation & 反馈
 
@@ -87,5 +87,5 @@ Microsoft 365 管理中心中的管理员控件允许您管理您的知识网络
 
 
 ## <a name="see-also"></a>另请参阅
-[设置知识管理](set-up-knowledge-network.md)</br>
+[设置知识管理](set-up-topic-experiences.md)</br>
 [主题中心概述](topic-center-overview.md)
