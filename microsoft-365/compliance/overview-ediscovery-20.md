@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 本文概述了 Microsoft 365 中的高级电子数据展示，这是用于内部和外部调查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944340"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951148"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高级电子数据展示解决方案概述
 
@@ -72,11 +72,13 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 有关高级电子数据展示中的端到端工作流的详细信息，请参阅此 [Microsoft 机械视频](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
-以下各节介绍高级电子数据展示中的内置工作流中的每个步骤。
+以下各节介绍了高级电子数据展示中的内置工作流中的每个步骤。 以下屏幕截图显示了名为 *2020.11.03-Contoso v.* 的事例的 " **概述** " 选项卡。
+
+![内置高级电子数据展示工作流中的选项卡](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 数据源
 
-使用 " **源** " 选项卡可以在案例中添加和管理已标识为 "感兴趣" 的人员，以及可能不与保管人关联的其他数据源。 在添加保管人或非 custodial 数据源时，可以快速执行操作，例如，在保管人和非 custodial 数据源上放置合法保留、与保管人进行通信以及搜索保管人和非 custodial 数据源，以收集与事例相关的内容。 在这种情况下，可以轻松地添加新的保管人或非 custodial 的日期源，也可以从案例中释放它们。 有关详细信息，请参阅 [高级电子数据展示中的与保管人合作](managing-custodians.md)。
+使用 " **数据源** " 选项卡可以在案例中添加和管理已标识为 "感兴趣" 的人员，以及可能不与保管人关联的其他数据源。 在添加保管人或非 custodial 数据源时，可以快速执行操作，例如，在保管人和非 custodial 数据源上放置合法保留、与保管人进行通信以及搜索保管人和非 custodial 数据源，以收集与事例相关的内容。 在这种情况下，可以轻松地添加新的保管人或非 custodial 的日期源，也可以从案例中释放它们。 有关详细信息，请参阅 [高级电子数据展示中的与保管人合作](managing-custodians.md)。
 
 ## <a name="managing-legal-hold-notifications"></a>管理法律保留通知
 
@@ -84,7 +86,7 @@ Microsoft 365 中的高级电子数据展示解决方案构建在 Office 365 中
 
 ## <a name="managing-content-preservation"></a>管理内容保留
 
-向事例添加保管人时，可以对 custodial 数据进行保留。 使用 **保留** 选项卡可管理在添加保管人时创建的保留，并管理与此案例相关的其他法律封存;例如，您可以识别并在非 custodial 数据源上放置保留。 您还可以编辑该案例中的任何保留，并将其设置为基于查询的保留，以便仅保留与查询匹配的内容。 例如，可以将日期范围添加到保留，以便保留在特定日期范围内创建的内容。 您还可以获取处于保留状态的内容的统计信息，删除不再与案例相关的保留，或将其删除。 有关详细信息，请参阅 [在高级电子数据展示中管理保留](managing-holds.md)。
+向事例添加保管人时，可以对 custodial 数据进行保留。 使用 " **保留** " 选项卡管理在添加保管人时创建的保留，并管理与此案例相关的其他法律封存;例如，您可以识别并在非 custodial 数据源上放置保留。 您还可以编辑该案例中的任何保留，并将其设置为基于查询的保留，以便仅保留与查询匹配的内容。 例如，可以将日期范围添加到保留，以便保留在特定日期范围内创建的内容。 您还可以获取处于保留状态的内容的统计信息，删除不再与案例相关的保留，或将其删除。 有关详细信息，请参阅 [在高级电子数据展示中管理保留](managing-holds.md)。
 
 ## <a name="indexing-custodian-data"></a>索引保管人数据
 

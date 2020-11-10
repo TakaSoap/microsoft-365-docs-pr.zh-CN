@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305236"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948383"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保险便携性和责任 (HIPAA) & 高科技行为
 
@@ -55,6 +55,7 @@ Microsoft 企业云服务也受 FedRAMP 评估的覆盖。 Microsoft Azure 和 M
 
 - [Azure 与 Azure 政府](https://aka.ms/AzureCompliance)
 - Microsoft 云应用安全
+- [Microsoft Cloud for Healthcare](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
 - Microsoft Microsoft 医疗保健机器人服务
 - Microsoft Stream
 - Microsoft 专业服务：针对 Azure、Dynamics 365、Intune 及 Microsoft 365 商业版中型企业客户的高级和本地支持。
@@ -84,7 +85,7 @@ Microsoft 为合格的公司或其供应商提供了涵盖在范围内的 Micros
 
 **与 Microsoft 进行 BAA 是否会确保我的组织符合 HIPAA 和高科技法案？**
 
-否。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
+不正确。 通过提供 BAA，Microsoft 可帮助支持您的 HIPAA 合规性，但使用 Microsoft 服务并不是自己实现的。 您的组织负责确保您有足够的合规性计划和内部过程，并且您对 Microsoft 服务的特定使用与 HIPAA 和高科技法案保持一致。
 
 **Microsoft 是否可以修改我的组织的 BAA？**
 
@@ -98,13 +99,13 @@ Microsoft 无法修改 HIPAA BAA，因为 Microsoft 服务对所有客户都是�
 
 为帮助客户执行此任务，Microsoft 已发布以下指南：
 
-- 适用于[Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)和[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案实现指南*。 为隐私、安全性和合规性监察官以及其他负责 HIPAA 和高科技法案实施的人员，它们描述了组织为保持合规性应采取的具体步骤。
+- 适用于 [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)和 [Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的 *HIPAA/高科技法案实现指南* 。 为隐私、安全性和合规性监察官以及其他负责 HIPAA 和高科技法案实施的人员，它们描述了组织为保持合规性应采取的具体步骤。
 - [使用 Microsoft Azure 设计安全运行状况解决方案的实践指南](https://aka.ms/azureindustrysecurity) 可帮助您更好地了解以安全方式成功采用云服务所需的操作。
 - [解决 Microsoft 云中的 HIPAA 安全性和隐私要求](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) 提供了管理法规要求的简短概述。 此外，它还详细分析了 Microsoft 云服务是如何使用映射到这些要求的方法构建的，并提供了有关如何构建合规性解决方案的指南。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“**评估模板**”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器提供了一个高级模板，用于对此法规建立评估。 在合规性管理器的“ **评估模板** ”页面中找到模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>资源
 

@@ -17,23 +17,23 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 通过使用 Microsoft 365 合规性，实现 Microsoft 信息保护 (MIP) 功能，以帮助您发现、分类和保护其生存或传播的敏感信息。
-ms.openlocfilehash: 78aadbba5442d7ec3cdc1beeac6d290a11325861
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+description: 实施 Microsoft 信息保护 (MIP) ，可帮助您在任何生存或传播的地方保护敏感信息。
+ms.openlocfilehash: 639f41f5d06e78e39071c60d6de0386a87536672
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399041"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951125"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息保护
 
 >*[Microsoft 365 安全 & 合规性许可](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-使用 Microsoft 信息保护 (MIP) 可帮助您发现、分类和保护任何位置的敏感信息或传播。
+实施 Microsoft 信息保护 (MIP) ，以帮助您发现、分类和保护任何位置的敏感信息或传播。
 
 MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数据](#know-your-data)、 [保护数据](#protect-your-data)和 [防止数据丢失](#prevent-data-loss)的工具。
 
-![了解你的数据、保护你的数据、防止数据丢失、管理数据](../media/powered-by-intelligent-platform.png)
+![MIP 如何帮助您发现、分类和保护敏感数据的图像](../media/powered-by-intelligent-platform.png)
 
 有关管理数据的信息，请参阅 microsoft [365 中的 Microsoft 信息管理](manage-Information-governance.md)。
 
@@ -56,7 +56,7 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 |[敏感度标签](sensitivity-labels.md)| 跨应用、服务和设备的单一解决方案，以在您的组织内部和外部传输数据时对数据进行标记和保护 <br /><br />示例方案： [在 POWER BI 中应用和查看敏感度标签，并在导出数据时对数据进行保护](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[ 敏感度标签入门](get-started-with-sensitivity-labels.md) |
 |[Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展敏感度标签以获取其他特性和功能，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型<br /><br /> 示例其他功能： [Azure 信息保护统一标签客户端的自定义配置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标签客户端管理员指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[双密钥加密](double-key-encryption.md)| 在所有情况下，只有您可以对受保护的内容进行解密，或者需要在地理边界内保留加密密钥 | [部署双密钥加密](double-key-encryption.md#deploy-dke)|
-|[Office 365 邮件加密](ome.md) (OME) | 对发送到任何设备上任何用户的电子邮件和附加文档进行加密，以便只有授权的收件人才能阅读电子邮件信息  <br /><br />示例方案： [撤消由高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 邮件加密 (OEM) ](ome.md)| 对发送到任何设备上任何用户的电子邮件和附加文档进行加密，以便只有授权的收件人才能阅读电子邮件信息  <br /><br />示例方案： [撤消由高级邮件加密加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
 |[使用客户密钥进行服务加密](customer-key-overview.md) | 防止未经授权的系统或人员查看数据，并补充 Microsoft 数据中心中的 BitLocker 磁盘加密 | [设置 Office 365 的客户密钥](customer-key-set-up.md)|
 |[SharePoint 信息权限管理 (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便在用户签出文档时，已下载的文件受到保护，以便只有授权的用户可以根据您指定的策略查看和使用该文件 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [权限管理连接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |仅对使用 Exchange 或 SharePoint Server 的现有本地部署或运行 Windows Server 和文件分类基础结构的文件服务器的保护， (FCI)  | [部署 RMS 连接器的步骤](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
@@ -71,5 +71,5 @@ MIP 功能包含在 Microsoft 365 合规性中，并提供了用于 [了解数�
 
 |功能|它会解决什么问题？|入门|
 |:------|:------------|:---------------------|:-----------------------------|
-|DLP) 的[数据丢失防护](data-loss-prevention-policies.md) (| 帮助防止意外共享敏感项目 <br /><br />示例方案： [保护 Microsoft 团队聊天和频道消息中的敏感信息](dlp-microsoft-teams.md) | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
+|[Data loss prevention (DLP)](data-loss-prevention-policies.md)| 帮助防止意外共享敏感项目 <br /><br />示例方案： [保护 Microsoft 团队聊天和频道消息中的敏感信息](dlp-microsoft-teams.md) | [开始使用默认 DLP 策略](get-started-with-the-default-dlp-policy.md)|
 |[终结点数据丢失防护 (预览) ](endpoint-dlp-learn-about.md)| 将 DLP 功能扩展到在 Windows 10 计算机上使用和共享的项目 | [终结点数据丢失防护（预览）入门](endpoint-dlp-getting-started.md)|
