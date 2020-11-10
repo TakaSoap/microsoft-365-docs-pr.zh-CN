@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 了解 Microsoft 365 安全中心中的攻击模拟培训如何影响员工以及如何从模拟和培训结果中获得见解。
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944419"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950979"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>通过攻击模拟培训获得见解
 
@@ -38,14 +38,20 @@ ms.locfileid: "48944419"
 
 此外，还反映了受 `<number> less susceptible to phishing` 攻击影响的实际员工数与预测的威胁率之间的差异。 这一数量的员工将来会受到类似攻击的可能性降低，同时 `<percent%> better than predicted rate` 指出了员工如何与预测的安全评级进行总体对比。
 
-![攻击模拟培训中的行为影响卡片概述](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![攻击模拟培训中的行为影响卡片概述](../../media/attack-sim-preview-behavior-impact-card.png)
 
 若要查看更详细的报告，请单击 **查看模拟和培训 efficacy 报告** ，该报告提供的信息与模拟本身的其他上下文相同，如模拟技术和目标用户总数。
 
 ## <a name="recommended-actions"></a>建议的操作
 
-在 " [**模拟** " 选项卡](https://security.microsoft.com/attacksimulator?viewid=simulations) 上，选择任意模拟将转到模拟详细信息。 在这里，你将看到 " **建议的操作** " 部分。
+在 " [**模拟** " 选项卡](https://security.microsoft.com/attacksimulator?viewid=simulations)上，选择任意模拟将转到模拟详细信息。 在这里，你将看到 " **建议的操作** " 部分。
 
 "建议的操作" 部分详细介绍了 [Microsoft 安全分数](../mtp/microsoft-secure-score.md)中提供的建议。 这些建议基于模拟中使用的有效负载，并将帮助您保护员工和环境。 单击每个改进操作将转到其详细信息。
 
-![攻击模拟培训的 "建议操作" 部分](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![攻击模拟培训的 "建议操作" 部分](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>相关链接
+
+**攻击模拟器**[创建网络钓鱼攻击模拟](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide)和 [创建有效负载，以培训您的人员](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离邮件。 具有 Microsoft Defender for Office 365 的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: b6f6f47dc227d3bada425d02784a8aff5da8b3d3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9d58f8c08d994e5e9736c8223239b54e52c4edab
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842924"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951043"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -127,14 +127,6 @@ ms.locfileid: "48842924"
    输入搜索条件后，单击“刷新” ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。
 
 找到特定的已隔离邮件后，选择此邮件即可查看它的详细信息，并对它执行操作（例如，查看、释放、下载或删除邮件）。
-
-#### <a name="export-message-results"></a>导出邮件结果
-
-1. 选择你有意访问的邮件，然后单击“导出结果”。
-
-2. 在警告你不要关闭浏览器窗口的确认消息中，单击“是”。
-
-3. 在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。
 
 #### <a name="view-quarantined-message-details"></a>查看已隔离邮件的详细信息
 
@@ -255,14 +247,6 @@ ms.locfileid: "48842924"
    - **策略类型**
 
 找到特定的隔离文件后，选择该文件查看其详细信息，并对其执行操作 (例如，查看、释放、下载或删除邮件) 。
-
-#### <a name="export-file-results"></a>导出文件结果
-
-1. 选择您感兴趣的文件，然后单击 " **导出结果** "。
-
-2. 在警告你不要关闭浏览器窗口的确认消息中，单击“是”。
-
-3. 在导出结果准备就绪后，可以为 .csv 文件命令并选择下载位置。
 
 #### <a name="view-quarantined-file-details"></a>查看隔离的文件详细信息
 

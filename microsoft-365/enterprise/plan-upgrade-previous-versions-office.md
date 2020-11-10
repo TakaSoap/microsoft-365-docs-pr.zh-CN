@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的用户帮助他们规划升级的资源。
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920257"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951135"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>计划升级自 Office 2007 或 Office 2010 服务器和客户端
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*本文适用于适用于企业的 Microsoft 365 和企业版的 Office 365。*
 
 如果您的组织使用旧版本的 Office 产品和服务器，现在是开始规划升级的良好时间。 Office 2007 产品和服务已达到其 [支持的最终](upgrade-from-office-2007-servers-and-products.md)期限。 对于 Office 2010 产品和服务：
 
@@ -47,9 +47,9 @@ Microsoft 365 是对你的企业进行数字转换的一种方法，它不断改
 |资源|说明|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|获取有关 Microsoft 365 版本的信息。|
-|[Microsoft 365 业务文档](https://docs.microsoft.com/microsoft-365/business/)|获取有关中小型企业版本的 Microsoft 365 的详细信息。|
-|[Microsoft 365 教育文档](https://docs.microsoft.com/microsoft-365/education/)|获取有关适用于教育组织的 Microsoft 365 版本的详细信息。|
-|[Microsoft 365 企业版文档](https://docs.microsoft.com/microsoft-365/enterprise/)|获取有关适用于企业组织的 Microsoft 365 版本的详细信息。|
+|[适用于商业版的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/business/)|获取有关中小型企业版本的 Microsoft 365 的详细信息。|
+|[适用于教育文档的 Microsoft 365](https://docs.microsoft.com/microsoft-365/education/)|获取有关适用于教育组织的 Microsoft 365 版本的详细信息。|
+|[适用于企业的 Microsoft 365 文档](https://docs.microsoft.com/microsoft-365/enterprise/)|获取有关适用于企业组织的 Microsoft 365 版本的详细信息。|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升级，会发生什么情况？
