@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 了解 Office 365 德国。
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843326"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995853"
 ---
 # <a name="learn-about-office-365-germany"></a>了解 Office 365 Germany
 
@@ -43,7 +43,7 @@ Office 365 德国在欧洲可提供的 Office 365 服务是一种不同的选择
 
 Office 365 德国计划产品在此独立环境中尽可能与全球服务保持一致。 例外包括：与 Yammer 相关的计划、即将到期的计划，以及通过非营利规划提供的计划。 Office 365 E5、SPE 和其他服务将在 Office 365 德国正式上市后提供。 
   
-某些 [Office 365 Germany 订阅计划](https://go.microsoft.com/fwlink/p/?linkid=839016)中提供以下服务和功能。 此外，请参阅[联机服务条款](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
+某些 [Office 365 Germany 订阅计划](https://go.microsoft.com/fwlink/p/?linkid=839016)中提供以下服务和功能。 此外，请参阅[联机服务条款](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
 - 适用于企业、Office 2016 和 Office 2013<sup>1</sup>的 Microsoft 365 应用程序。 请注意，Office 2013 需要 [对 office 客户端使用 office 365 新式验证](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。
     
@@ -85,11 +85,11 @@ Office 365 德国计划产品在此独立环境中尽可能与全球服务保持
     
 - Delve
     
-<sup>1</sup>Office 365 德国计划包括在最终用户的设备上安装和运行的客户端软件应用程序 ( "客户端软件应用程序" ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 德国计划包括在最终用户的设备上安装和运行的客户端软件应用程序 ( "客户端软件应用程序" ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 客户端软件应用程序不会只在德国数据中心内专门运营，并且可以使最终用户访问不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的联机服务。 考虑到你与 Microsoft 之间的协议，客户端软件应用程序不是[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德国数据被信任方提供的德语数据驻留承诺和访问控制仅适用于[德语联机服务](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般信息
 
-|Item|信息|
+|项目|信息|
 |-----|-----|
 |登录门户  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |订阅、帐单和技术支持  <br/> |德语和英文版提供的基于德国的支持有关详细信息，请参阅 [联系支持人员以获取商业产品-管理员帮助](../contact-support-for-business-products.md)。  <br/> |
