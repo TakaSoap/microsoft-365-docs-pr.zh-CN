@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 365 终结点数据丢失防护（预览版）
+title: 了解 Microsoft 365 终结点数据丢失防护
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 3dedf8f3134dbdd00c45e6b0aed741a3b3173984
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+description: 'Microsoft 365 终结点数据丢失阻止将对文件活动的监视和对这些文件的保护性操作扩展到终结点。可在 Microsoft 365 合规性解决方案中看到文件 '
+ms.openlocfilehash: 966e201acb8038d85f0d06c0800c9845fd79097e
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931966"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984926"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>了解 Microsoft 365 终结点数据丢失防护（预览）
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
-可以使用 Microsoft 365 数据丢失防护 (DLP) 来监视对确定为敏感的项目执行的操作，并帮助防止意外共享这些项目。 有关 DLP 的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。
+可使用 Microsoft 365 数据丢失防护（DLP）监视对已确定为敏感的项目执行的操作，并帮助防止无意间共享这些项目。有关 DLP 的详细信息，请参阅 [数据丢失防护](data-loss-prevention-policies.md)概述。
 
-**终结点数据丢失防护** （终结点 DLP）可将 DLP 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。 将设备加入 Microsoft 365 合规性解决方案中后，即可在[活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
+**终结点数据丢失防护** （终结点 DLP）可将 DLP 的活动监视和保护功能扩展到 Windows 10 设备上的敏感项目。将设备加入 Microsoft 365 合规性解决方案中后，即可在 [活动资源管理器](data-classification-activity-explorer.md)中看到有关用户对敏感项目执行的操作的信息，你可以通过 [DLP 策略](create-test-tune-dlp-policy.md)对这些项目执行保护性操作。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 
-Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。 这包括：
+Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。这包括：
 
 
 |项目活动 |可审核/可限制  |
@@ -53,12 +53,12 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 ### <a name="enabling-device-management"></a>启用设备管理
 
-设备管理是一项功能，可从设备收集遥测并将其纳入 Microsoft 365 合规解决方案，如终结点 DLP 和[内部风险管理](insider-risk-management.md)。 你需要加入所有要在 DLP 策略中用作位置的设备。
+设备管理是一项功能，可从设备收集遥测并将其纳入 Microsoft 365 合规解决方案，如终结点 DLP 和[内部风险管理](insider-risk-management.md)。你需要载入所有要用作 DLP 策略中位置的设备。
 
 > [!div class="mx-imgBorder"]
 > ![启用设备管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-加入和载出通过你从设备管理中心下载的脚本来处理。 中心为每种部署方法提供了自定义脚本：
+加入和载出通过你从设备管理中心下载的脚本来处理。中心为每种部署方法提供了自定义脚本：
 
 - 本地脚本（最多 10 台机器）
 - 组策略
@@ -78,7 +78,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 
 ### <a name="viewing-endpoint-dlp-data"></a>查看终结点 DLP 数据
 
- 终结点 DLP 会监视基于活动的 om MIME 类型，因此即使文件扩展名已更改也会捕获活动。 在公共预览版中，它会监视所有：
+ 终结点 DLP 会监视基于活动的 om MIME 类型，因此即使文件扩展名已更改也会捕获活动。在公共预览版中，它会监视所有：
 
 - Word 文件
 - PowerPoint 文件
@@ -96,7 +96,7 @@ Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 �
 - .java 文件
 
 > [!NOTE]
-> Endpoint DLP 对照 DLP 策略评估上述所有类型的文件，并相应地应用保护操作。 所有符合 DLP 策略的文件都将经过审核，查看所有受支持的操作，即使这些文件未被阻止也是如此。 此外在默认情况下，在任何 PowerPoint、Excel、PDF 和 .csv 文件上执行的文件活动都将经过审核，而不论 DLP 策略是否存在或是否匹配这些文件。
+> Endpoint DLP 对照 DLP 策略评估上述所有类型的文件，并相应地应用保护操作。所有符合 DLP 策略的文件都将经过审核，查看所有受支持的操作，即使这些文件未被阻止也是如此。此外在默认情况下，在任何 PowerPoint、Excel、PDF 和 .csv 文件上执行的文件活动都将经过审核，而不论 DLP 策略是否存在或是否匹配这些文件。
 
 设备一旦加入，已经过审核的活动的相关信息就会流入活动资源管理器，即使在还未配置和部署将设备作为位置的任何 DLP 策略时也是如此。
 

@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护框架中的敏感度标签，通过�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f29ba461cb3ae8cc79ff90b7b129e82f7401e187
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754092"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988860"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -97,13 +97,15 @@ ms.locfileid: "48754092"
     
     某些应用程序（而非所有应用）通过使用变量来支持动态标记。 例如，在页眉、页脚或水印中插入标签名称或文档名称。 有关详细信息，请参阅[带变量的动态标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。
     
+    尽管可以为这些内容标记配置自定义字体名称，并配置包括 RGB 代码自定义的多种字体颜色，但是 [Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)仅支持这些设置。 使用内置标签时，字体名称设置将被忽略，并且仅支持以下颜色：黑色、黄色、蓝色、绿色、红色。 如果选择不支持的颜色，则默认使用黑色。
+
     字符串长度：水印的长度限制为 255 个字符。 页眉和页脚限制为 1024 个字符，但 Excel 中除外。 对于页眉和页脚，Excel 总限制为 255 个字符，但此限制包括不可见的字符，例如格式代码。 如果超出该限制，则你输入的字符串将不会在 Excel 中显示。
 
 - 启用相应功能以 [将敏感度标签用于 Microsoft Teams、Microsoft 365 组和 SharePoint 网站](sensitivity-labels-teams-groups-sites.md)时， **可保护网站和组等容器中的内容** 。
     
     如果启用此功能，则无法为组和网站配置保护设置。 此标签配置不会导致自动标记文档或电子邮件，而是通过控制对存储内容的容器的访问来保护内容。 这些设置包括隐私设置、外部用户访问权限和来自非托管设备的访问。
 
-- 在 Office 应用中自动应用标签，或推荐标签。  你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
+- 在 Office 应用中自动应用标签，或推荐标签。 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
     ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
     

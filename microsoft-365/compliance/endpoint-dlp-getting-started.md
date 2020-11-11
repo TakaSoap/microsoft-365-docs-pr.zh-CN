@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 终结点数据丢失防护（预览）入门
+title: Microsoft 365 终结点数据丢失防护入门
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842036"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990547"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>终结点数据丢失防护（预览）入门
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
 Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护（预览）](endpoint-dlp-learn-about.md)
 
@@ -44,6 +44,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 - Microsoft 365 A5 合规
 - Microsoft 365 E5 信息保护和治理
 - Microsoft 365 A5 信息保护和治理
+
 
 ### <a name="permissions"></a>权限
 
@@ -95,6 +96,8 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 4. 所有设备必须[已建立 Azure Active Directory (Azure AD) 联接](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或已建立混合 Azure AD 联接。
 
 5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+
+6. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)。
 
 ## <a name="onboarding-devices-into-device-management"></a>将设备载入设备管理
 

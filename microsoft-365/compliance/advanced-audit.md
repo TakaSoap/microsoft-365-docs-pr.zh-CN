@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 高级审核提供了新的审核功能，可帮助组织进行法庭与合规调查。
-ms.openlocfilehash: 51ec75cc8d8ae554ea9cbef3a9ea2aa18171e70a
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48950991"
+ms.locfileid: "48988664"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 高级审核
 
 Microsoft 365 中的[统一审核功能](search-the-audit-log-in-security-and-compliance.md)可让组织深入了解 Microsoft 365 众多服务中的不同类型审核活动。高级审核可通过增强执行调查所需的审核日志保留期来帮助组织执行取证和合规性调查，提供对有助于确定泄露范围和快速访问 Office 365 管理活动 API 的重要事件的访问。
 
 > [!NOTE]
-> 高级审核适用于具有 Office 365 E5 或 Microsoft 365 企业版 E5 订阅的组织。另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规或 E5 电子数据展示和审核附加产品许可证分配至用户。有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
+> 高级审核适用于具有 Office 365 E5/G5 或 Microsoft 365 企业版 E5/G5 订阅的组织。另外，当对于高级审核功能需要每用户授权时（长期保留审核日志和访问关键事件进行调查就是这种情况），可将 Microsoft 365 E5 合规或 E5 电子数据展示和审核附加产品许可证分配至用户。有关许可的详细信息，请参阅[适用于安全与合规性的 Microsoft 365 许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
 本文提供了高级审核功能的概览信息。
 
@@ -157,12 +157,12 @@ Send 事件也是邮箱审核操作，当用户执行以下操作之一时将被
 
 **如果此功能发布了常规可用性，但在 2021 年初推出所需的附加许可证前，我创建了 10 年审核日志保留策略，组织的审核日志数据会发生什么情况？**
 
-常规可用性后创建的 10 年审核日志保留策略覆盖的任何审核日志数据都将保留 10 年。 在 2021 年初推出 10 年审核日志保留附加产品许可证时，你需要为审核数据由现有的 10 年审核保留策略所保留的用户购买附加产品许可证。 此外，在 2021 年初推出附加许产品可证后，创建新的 10 年审核日志保留策略时，将强制实施相应的许可证。
+常规可用性后创建的 10 年审核日志保留策略覆盖的任何审核日志数据都将保留 10 年。在 2021 年初推出 10 年审核日志保留附加产品许可证时，你需要为审核数据由现有的 10 年审核保留策略所保留的用户购买附加产品许可证。此外，在 2021 年初推出附加许产品可证后，创建新的 10 年审核日志保留策略时，将强制实施相应的许可证。
 
 **高级审核中的新事件在 Office 365 管理活动 API 中是否可用？**
 
-是的。 只要为具有相应许可证的用户生成了审核记录，你就可以通过 Office 365 管理活动 API 访问这些记录。
+是。只要为具有相应许可证的用户生成了审核记录，你就可以通过 Office 365 管理活动 API 访问这些记录。
 
 **是否带宽越高意味着延迟改善和 SLA 提高？**
 
-目前，高带宽可提供更好的管道，尤其是对于具有大量审核信号和明显消耗模式的组织。 带宽增加将改善延迟状况。 但是不存在与高带宽相关的 SLA。 文档中已记录标准延迟，这些延迟不会随着高级审核的发布而改变。
+目前，高带宽可提供更好的管道，尤其是对于具有大量审核信号和明显消耗模式的组织。带宽增加将改善延迟状况。但是不存在与高带宽相关的 SLA。文档中已记录标准延迟，这些延迟不会随着高级审核的发布而改变。
