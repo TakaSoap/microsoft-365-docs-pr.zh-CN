@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft 365 电子数据展示工具如何处理附加到电子邮件的加密文档。
-ms.openlocfilehash: 3a4a094f1da28c9a017836c099507f5af739b0b9
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 91d5689bfb64d272c896c0e92422ce1f45fd5f72
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951115"
+ms.locfileid: "48984896"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 电子数据展示工具中的解密
 
@@ -32,11 +32,11 @@ ms.locfileid: "48951115"
 为了便于在电子数据展示工作流中管理加密内容，Microsoft 365 电子数据展示工具现在合并了附加到电子邮件和在 Exchange Online 中发送的加密文件的解密。 在此新功能之前，只有受权限管理保护的电子邮件的内容 (，未对附加的文件) 解密。 现在，如果将使用 Microsoft 加密技术加密的文件附加到与搜索条件匹配的电子邮件，则在准备审阅搜索结果时将对加密的文件进行解密。 这使电子数据展示管理者可以在预览搜索结果时查看加密的电子邮件附件的内容，并在将其添加到高级电子数据展示中的审阅集后查看这些文件的内容。
 
 > [!NOTE]
-> 即将启动 Microsoft 365 电子数据展示工具将支持存储在 SharePoint Online 和 OneDrive for Business 中的加密文档。
+> 即将开始，Microsoft 365 电子数据展示工具将支持存储在 SharePoint Online 和 OneDrive for Business 中的加密文档。 这将包括在应用了敏感度标签时加密的文档。
 
 ## <a name="supported-encryption-technologies"></a>支持的加密技术
 
-Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项。 这些技术包括 Office 邮件加密、Microsoft 信息保护 (即将推出) 和 Azure 权限管理。 有关 Microsoft 加密技术的详细信息，请参阅 [加密](encryption.md)。 不支持由第三方加密技术加密的内容。 这在预览或导出使用非 Microsoft 技术加密的内容时不提供支持。
+Microsoft 电子数据展示工具支持使用 Microsoft 加密技术加密的项。 这些技术包括 Office 邮件加密和 Azure 权限管理。 有关 Microsoft 加密技术的详细信息，请参阅 [加密](encryption.md)。 不支持由第三方加密技术加密的内容。 这在预览或导出使用非 Microsoft 技术加密的内容时不提供支持。
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支持加密项目的电子数据展示活动
 

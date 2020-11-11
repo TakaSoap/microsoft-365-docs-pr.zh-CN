@@ -487,7 +487,9 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: 估计和实际搜索结果的差异
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: 运行内容搜索 PowerShell 脚本
+            - name: 解密电子数据展示工具
+              href: ediscovery-decryption.md
+        - name: 内容搜索 PowerShell 脚本
           items:
             - name: 使用内容搜索进行目标收集
               href: use-content-search-for-targeted-collections.md

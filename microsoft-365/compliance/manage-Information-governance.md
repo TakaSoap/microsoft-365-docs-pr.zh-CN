@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 365 中实施 Microsoft 信息治理功能，以针对合规性或法规要求控制数据。
-ms.openlocfilehash: b02c724ee812e622a45939d11b78f87245e2f194
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 7e516c42071272e9d38381dbf9d84e774271566c
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866940"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988422"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 microsoft 信息管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "46866940"
 
 ![管理数据信息管理和记录管理](../media/information-governance-records-management.png)
 
-想要保护你的数据？ 请参阅 microsoft [365 中的 Microsoft 信息保护](protect-information.md)。
+想要保护你的数据？ 请参阅 microsoft [365 中的 Microsoft 信息保护](information-protection.md)。
 
 ## <a name="information-governance"></a>信息治理
 

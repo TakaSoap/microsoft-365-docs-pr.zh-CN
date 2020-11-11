@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847798"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988850"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -43,7 +43,7 @@ ms.locfileid: "48847798"
 
 本月的几个新增和改进功能命中了公共预览：
 
-**内幕风险管理**
+**内部风险管理**
 
 - 查看我们的六个新 [策略模板](insider-risk-management-policies.md#policy-templates)：
     - 按优先级用户的数据泄露
@@ -100,7 +100,7 @@ ms.locfileid: "48847798"
 
 为了帮助您了解使用哪些合规性解决方案来保护和管理组织的敏感数据，我们创建了两个新登录页，并概述了这些解决方案如何协同工作以实现这些目标，包括指向相关文档的链接，以便您可以进一步深入研究。
 
-[Microsoft 365 中的 microsoft 信息保护](protect-information.md)<br>
+[Microsoft 365 中的 microsoft 信息保护](information-protection.md)<br>
 [Microsoft 365 中的 microsoft 信息管理](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高级电子数据展示：将非 custodial 数据源添加到你的案例

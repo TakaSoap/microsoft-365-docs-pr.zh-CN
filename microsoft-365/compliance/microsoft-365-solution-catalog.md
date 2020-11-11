@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 了解 Microsoft 365 解决方案目录，包括它包含的内容、如何获取它以及后续步骤。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198355"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988572"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解决方案目录
 
@@ -38,7 +38,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="information-protection--governance-section"></a>信息保护 & 治理部分
 
-**信息保护 & 调控**部分介绍了如何使用 Microsoft 365 合规性解决方案来保护和控制组织中的数据。
+**信息保护 & 调控** 部分介绍了如何使用 Microsoft 365 合规性解决方案来保护和控制组织中的数据。
 
 ![Microsoft 365 解决方案目录信息保护和调控部分](../media/m365-solution-catalog-information-protection-governance.png)
 
@@ -46,7 +46,7 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 - [数据丢失防护](data-loss-prevention-policies.md)：检测敏感内容，在整个组织、云中和设备中使用和共享这些内容，并帮助防止意外的数据丢失。
 - [信息治理](manage-information-governance.md)：使用解决方案管理内容生命周期，以导入、存储和分类业务关键型数据，以便您可以保留所需的内容并删除不需要的内容。
-- [信息保护](protect-information.md)：跨组织的整个生命周期发现、分类和保护敏感和业务关键型内容。
+- [信息保护](information-protection.md)：跨组织的整个生命周期发现、分类和保护敏感和业务关键型内容。
 - [记录管理](records-management.md)：使用智能分类自动执行和简化组织中的法规、法律和业务关键型记录的保留计划。
 
 ## <a name="insider-risk-management-section"></a>内幕风险管理部分
@@ -93,14 +93,14 @@ Microsoft 365 中的合规性解决方案是集成功能的集合，可用于帮
 
 ## <a name="next-steps"></a>后续步骤
 
-- **请访问 Microsoft 合规性管理器**，它可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅 [合规性管理器](compliance-manager.md)。
+- **请访问 Microsoft 合规性管理器** ，它可帮助您了解组织对主要标准和法规的遵从性状态。 它提供了可采取的建议措施，以增强您的总体合规性状况，并提供工作流功能以帮助您有效地执行这些操作。 若要了解详细信息，请参阅 [合规性管理器](compliance-manager.md)。
 
 - **配置内幕风险管理策略** 以帮助最大限度地减少内部风险，并使您能够检测、调查并对组织中的风险活动采取措施。 请参阅 [内幕风险管理](insider-risk-management.md)。
 
 - **了解并创建通信合规性策略** ，以快速确定和修正公司的行为准则策略违规。 请参阅 [通信合规性](communication-compliance.md)。
 
-- **Microsoft 信息保护**，了解 microsoft 365 解决方案如何帮助您在任何生活或旅行时发现、分类和保护敏感信息。
-    - **了解并设置 Microsoft 云应用安全性**。 请参阅 [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
-    - **分类器入门**。 对内容进行分类，然后对其进行标记，以便可以对其进行保护和正确处理，这是信息保护训练科目的起始位置。 [有关 trainable 分类 (预览) ](classifier-learn-about.md)，请参阅了解。
+- **Microsoft 信息保护** ，了解 microsoft 365 解决方案如何帮助您在任何生活或旅行时发现、分类和保护敏感信息。
+    - **了解并设置 Microsoft 云应用安全性** 。 请参阅 [快速入门： Microsoft 云应用安全入门](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
+    - **分类器入门** 。 对内容进行分类，然后对其进行标记，以便可以对其进行保护和正确处理，这是信息保护训练科目的起始位置。 [有关 trainable 分类 (预览) ](classifier-learn-about.md)，请参阅了解。
 
-- **请经常访问 Microsoft 365 解决方案目录**，并确保查看新的解决方案，以帮助满足合规性需求。 登录，然后 [https://compliance.microsoft.com](https://compliance.microsoft.com) 选择左侧导航窗格中的 " **目录** "。
+- **请经常访问 Microsoft 365 解决方案目录** ，并确保查看新的解决方案，以帮助满足合规性需求。 登录，然后 [https://compliance.microsoft.com](https://compliance.microsoft.com) 选择左侧导航窗格中的 " **目录** "。

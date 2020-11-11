@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 ms.custom: seo-marvel-apr2020
 description: 了解如何在 Microsoft 365 中创建可自动将项目移动到用户的存档邮箱的存档和删除策略。
-ms.openlocfilehash: 093363b3c7c59f655a627d5f50e436c8f9f3c0dd
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 7bbd4a2f4a5b9c35695b5e0630020a0f39224324
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804801"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993362"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>为组织中的邮箱设置存档和删除策略
 
@@ -82,13 +82,11 @@ ms.locfileid: "48804801"
 
 6. 单击 **"是"** 关闭警告消息，并启动启用每个所选邮箱的存档邮箱的过程。
 
-7. 完成该过程后，单击 " **刷新** ![ 刷新 ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) " 以更新 " **存档** " 页上的列表。 
+7. 完成该过程后，单击 " **刷新** ![ 刷新 ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) " 以更新 " **存档** " 页上的列表。
 
     为组织中的所有用户启用存档邮箱。
 
     ![已启用存档邮箱的邮箱的列表](../media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
-  
-8. 保持安全性 & 合规性中心处于打开状态。 会在下一步中用到它。
 
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>步骤2：为存档和删除策略创建新的保留标记
 
@@ -100,15 +98,11 @@ ms.locfileid: "48804801"
 
 - Alpine 房子删除的项目5年删除并允许恢复 ("已删除邮件" 文件夹的自定义标记) 
 
-若要创建新的保留标记，您将使用 exchange Online 组织中 (EAC) 的 Exchange 管理中心。
+若要创建新的保留标记，您将使用 exchange Online 组织中 (EAC) 的 Exchange 管理中心。 确保使用的是 "经典" 版本的 EAC。
   
-1. 在 "安全性 & 合规性中心" 中，单击左上角的应用启动器，然后单击 " **管理** " 磁贴。
-
-2. 在 Microsoft 365 管理中心的左侧导航窗格中，单击 " **管理中心** "，然后单击 " **Exchange** "。
-
-    ![屏幕截图显示了使用 "管理中心" 选项展开并选择 "Exchange" 的 Microsoft 365 管理中心。](../media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+1. 转到 [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) 并使用你的凭据登录。
   
-3. 在 EAC 中，转到 " **合规性管理** " " \> **保留标记** "
+2. 在 EAC 中，转到 " **合规性管理** " "  >  **保留标记** "
 
     将显示您的组织的保留标记列表。
 
@@ -184,7 +178,7 @@ ms.locfileid: "48804801"
 
 创建自定义保留标记后，下一步是创建新的保留策略并添加保留标记。 您将添加您在步骤2中创建的三个自定义保留标记，以及在第一节中提到的内置标记。 在步骤4中，将此新的保留策略分配给用户邮箱。
   
-1. 在 EAC 中，转到 " **合规性管理** " \> **保留策略** 。
+1. 在 EAC 中，转到 " **合规性管理** "  >  **保留策略** 。
 
 2. 在 " **保留策略** " 页上，单击 " **新建** ![ 新图标" ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) 。
 
@@ -213,7 +207,7 @@ ms.locfileid: "48804801"
 
 创建新邮箱时，默认情况下会为其分配一个名为 "默认 MRM 策略" 的保留策略。 在此步骤中，您将替换此保留策略 (，因为邮箱只能向其分配一个保留策略，) 方法是将您在步骤3中创建的新保留策略分配给组织中的用户邮箱。 此步骤假定您将新策略分配给组织中的所有邮箱。
   
-1. 在 EAC 中，转到 " **收件人** " " \> **邮箱** "。
+1. 在 EAC 中，转到 " **收件人** " "  >  **邮箱** "。
 
     将显示组织中所有用户邮箱的列表。
 
@@ -221,7 +215,7 @@ ms.locfileid: "48804801"
 
 3. 在 EAC 右侧的 "详细信息" 窗格中的 " **批量编辑** " 下，单击 " **更多选项** "。
 
-4. 在“保留策略”  下，单击“更新”  。
+4. 在“保留策略”下，单击“更新”。
 
 5. 在 " **批量分配保留策略** " 页上的 " **选择保留策略"** 下拉列表中，选择您在步骤3中创建的保留策略;例如， **Alpine 房子存档和保留策略** 。
 

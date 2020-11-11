@@ -1,5 +1,5 @@
 ---
-title: 'DLP 策略条件和例外 (预览) '
+title: 'DLP 策略条件、例外和操作 (预览) '
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,18 +14,25 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 dlp 策略条件和例外
-ms.openlocfilehash: 2ce49b15bdb13035a37f6895b4b8865b55a62f78
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: a371c564cc314c457e1d9afe667115c244e0185d
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841466"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993340"
 ---
-# <a name="dlp-policy-conditions-and-exceptions-preview"></a>DLP 策略条件和例外 (预览) 
+# <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>DLP 策略条件、例外和操作 (预览) 
 
-DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件定义要包括的内容和例外定义要排除的内容。 对于每个条件，都存在一个对应的例外，并且它们使用完全相同的语法。
+DLP 策略中的条件和例外标识策略所应用于的敏感项目。 操作定义因遇到异常情况而导致的结果。
 
- 大多数条件和异常都有一个支持一个或多个值的属性。 例如，如果将 DLP 策略应用于 Exchange 电子邮件，则 **"发件人是"** 条件需要邮件的发件人。 一些条件有两个属性。 例如，“ **邮件头包含以下任何词语** ”条件需要一个属性来指定邮件头字段，需要第二个属性来指定要在头字段中查找的文本。 有些条件或例外项没有任何属性。 例如， **附件是受密码保护的** 条件只是在受密码保护的邮件中查找附件。
+- 条件定义要包含的内容
+- 例外定义要排除的内容。
+- 操作定义因满足条件或异常而发生的情况
+ 
+大多数条件和异常都有一个支持一个或多个值的属性。 例如，如果将 DLP 策略应用于 Exchange 电子邮件，则 **"发件人是"** 条件需要邮件的发件人。 一些条件有两个属性。 例如，“ **邮件头包含以下任何词语** ”条件需要一个属性来指定邮件头字段，需要第二个属性来指定要在头字段中查找的文本。 有些条件或例外项没有任何属性。 例如， **附件是受密码保护的** 条件只是在受密码保护的邮件中查找附件。
+
+操作通常需要其他属性。 例如，当 DLP 策略规则重定向邮件时，您需要指定将邮件重定向到的位置。 
+<!-- Some actions have multiple properties that are available or required. For example, when the rule adds a header field to the message header, you need to specify both the name and value of the header. When the rule adds a disclaimer to messages, you need to specify the disclaimer text, but you can also specify where to insert the text, or what to do if the disclaimer can't be added to the message. Typically, you can configure multiple actions in a rule, but some actions are exclusive. For example, one rule can't reject and redirect the same message.-->
 
 ## <a name="conditions-and-exceptions-for-dlp-policies"></a>DLP 策略的条件和例外
 
@@ -38,7 +45,7 @@ DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件
 - [邮件头](#message-headers)
 - [邮件属性](#message-properties)
 
-## <a name="senders"></a>Senders
+### <a name="senders"></a>Senders
 
 
 |**DLP 中的条件或例外**  |**Microsoft 365 PowerShell 中的条件/异常参数** |**属性类型**  |**说明**|
@@ -49,7 +56,7 @@ DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件
 | 发件人地址匹配模式    | 条件： *FromAddressMatchesPatterns* <br/> 异常： *ExceptFromAddressMatchesPatterns*       |      模式   |  发件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。  |
 |发件人域为  |  条件： *SenderDomainIs* <br/> 异常： *ExceptIfSenderDomainIs*       |称         |     发件人的电子邮件地址域与指定值匹配的邮件。 如果您需要查找 *包含* 指定域的发件人域 (例如，域) 的任何子域，请使用 **发件人地址匹配** ( *FromAddressMatchesPatterns* ) 条件，并使用语法： ' \. domain \. com $ ' 指定域。    |
 
-## <a name="recipients"></a>收件人
+### <a name="recipients"></a>收件人
 
 |**DLP 中的条件或例外**| **Microsoft 365 PowerShell 中的条件/异常参数** |    **属性类型** | **说明**|
 |---------|---------|---------|---------|
@@ -59,7 +66,7 @@ DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件
 |收件人地址匹配模式| 条件： *RecipientAddressMatchesPatterns* <br/> 异常： *ExceptIfRecipientAddressMatchesPatterns*|   模式    |收件人的电子邮件地址包含匹配指定正则表达式的文本模式的邮件。 <br/> **注意** ：此条件不考虑发送到收件人代理地址的邮件。它只匹配发送到收件人主电子邮件地址的邮件。|
 |发送给的成员| 条件： *SentToMemberOf* <br/> 异常： *ExceptIfSentToMemberOf*|  Addresses|  包含指定通讯组成员、已启用邮件的安全组或 Microsoft 365 组的收件人的邮件。 该组可以位于邮件的 " **收件人** "、 **"抄送** " 或 **"密件抄送** " 字段中。|
 
-## <a name="message-subject-or-body"></a>邮件主题或正文
+### <a name="message-subject-or-body"></a>邮件主题或正文
 
 |**DLP 中的条件或例外** | **Microsoft 365 PowerShell 中的条件/异常参数** |**属性类型**| **说明**|
 |---------|---------|---------|---------|
@@ -68,7 +75,7 @@ DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件
 |内容包含|  条件： *ContentContainsSensitiveInformation* <br/> 异常 *ExceptIfContentContainsSensitiveInformation*| SensitiveInformationTypes|  包含由数据丢失防护 (DLP) 策略定义的敏感信息的邮件或文档。|
 
 
-## <a name="attachments"></a>Attachments
+### <a name="attachments"></a>Attachments
 
 |**DLP 中的条件或例外**| **Microsoft 365 PowerShell 中的条件/异常参数**| **属性类型**   |**说明**|
 |---------|---------|---------|---------|
@@ -81,16 +88,31 @@ DLP 策略中的条件和例外标识策略所应用于的敏感项目。 条件
 |文档属性为|条件： *ContentPropertyContainsWords* <br/> 异常： *ExceptIfContentPropertyContainsWords* |Words| 附件的文件扩展名与任何指定词语相匹配的邮件或文档。|
 |文档大小等于或大于| 条件： *DocumentSizeOver* <br/> 异常： *ExceptIfDocumentSizeOver*|    Size    |任何附件大于或等于指定值的邮件。|
 
-## <a name="message-headers"></a>邮件头
+### <a name="message-headers"></a>邮件头
 
 |**DLP 中的条件或例外**| **Microsoft 365 PowerShell 中的条件/异常参数**| **属性类型**|  **说明**|
 |---------|---------|---------|---------|
 |标头包含字词或短语|条件： *HeaderContainsWords* <br/> 异常： *ExceptIfHeaderContainsWords*|  哈希表  |包含指定的标头字段的消息和该标头字段的值包含指定的单词。|
 |标头匹配模式|   条件： *HeaderMatchesPatterns* <br/> 异常： *ExceptIfHeaderMatchesPatterns*|    哈希表  |包含指定的标头字段的消息，并且该标头字段的值包含指定的正则表达式。|
 
-## <a name="message-properties"></a>邮件属性
+### <a name="message-properties"></a>邮件属性
 
 |**DLP 中的条件或例外**| **Microsoft 365 PowerShell 中的条件/异常参数**| **属性类型**   |**说明**|
 |---------|---------|---------|---------|
 |邮件大小超过|条件： *MessageSizeOver* <br/> 异常： *ExceptIfMessageSizeOver*| Size    |总大小（邮件和附件）大于或等于指定值的邮件。 <br/>**注意** ：在确定邮件流规则之前将对邮箱的邮件大小限制进行评估。对于邮箱而言过大的邮件将被拒绝，然后此条件的规则才能对该邮件采取措施。|
+
+## <a name="actions-for-dlp-policies"></a>针对 DLP 策略的操作
+
+此表介绍了 DLP 中提供的 Exchange Online 邮件流规则操作。
+
+
+|**DLP 中的操作**|**Microsoft 365 PowerShell 中的操作参数**|**属性类型**|**说明**|
+|---------|---------|---------|---------|
+|设置标头|SetHeader|第一个属性： *头名称* </br> 第二个属性： *Header 值*|SetHeader 参数指定用于在邮件头中添加或修改标头字段和值的 DLP 规则的操作。 此参数使用语法 "HeaderName： HeaderValue"。 可以指定用逗号分隔的多个标头名称和值对|
+|删除页眉| RemoveHeader| 首要属性： *MessageHeaderField*</br> 次要属性： *String*|  RemoveHeader 参数指定用于从邮件头中删除标头字段的 DLP 规则的操作。 此参数使用语法 "HeaderName" 或 "HeaderName： HeaderValue"。可以指定用逗号分隔的多个头名称或标头名称和值对|
+|将邮件重定向到特定用户|*RedirectMessageTo*|Addresses| 将电子邮件重定向到指定的收件人。邮件不会传递给原始收件人，也不会向发件人或原始收件人发送通知。|
+|将邮件转发给发件人的经理进行审批| 中等|第一个属性： *ModerateMessageByManager*</br> 第二个属性： *Boolean*|适中参数指定将电子邮件发送给仲裁人的 DLP 规则的操作。 此参数使用语法： @ {ModerateMessageByManager = <$true \| $false>;|
+|将邮件转发给特定审批者的审批| 中等|第一个属性： *ModerateMessageByUser*</br>次要属性： *Addresses*|适中参数指定将电子邮件发送给仲裁人的 DLP 规则的操作。 此参数使用语法： @ {ModerateMessageByUser = @ ( "emailaddress1"，"emailaddress2",... "emailaddressN" ) }|
+|添加收件人|AddRecipients|第一个属性： *Field*</br>次要属性： *Addresses*| 将一个或多个收件人添加到邮件的 "收件人/抄送/密件抄送" 字段中。 此参数使用语法： @ {<AddToRecipients \| CopyTo \| BlindCopyTo> = "emailaddress"}|
+|将发件人的经理添加为收件人|AddRecipients | 第一个属性： *AddedManagerAction*</br>第二个属性： *Field* | 将发件人的经理添加到邮件中作为指定收件人类型 ( To 、 Cc 、 Bcc )，或在不通知发件人或收件人的情况下将邮件重定向到发件人的经理。 此操作仅在发件人的 Manager 属性于 Active Directory 中定义时适用。 此参数使用以下语法： @ {AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|
 
