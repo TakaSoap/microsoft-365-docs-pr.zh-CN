@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 了解如何使用 PowerShell 在 Microsoft 365 环境中管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: ea7090cd65634138f9677960beab7770825a6e86
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950672"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993372"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
@@ -65,7 +65,7 @@ Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 
    $UserCredential = Get-Credential
    ```
 
-   在出现的“**Windows PowerShell 凭据请求**”对话框中，键入工作或学校帐户用户名和密码，再单击“**确定**”。
+   在出现的“ **Windows PowerShell 凭据请求** ”对话框中，键入工作或学校帐户用户名和密码，再单击“ **确定** ”。
 
 3. 在以下示例中，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
 
@@ -93,11 +93,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Exchange Online PowerShell 中的 **Get-Mailbox** cmdlet 显示邮箱的以下多地理位置相关属性：
 
-- **Database**：对地理位置代码对应的数据库名称的前 3 个字母，告知你邮箱当前位于何处。 对于在线存档邮箱，应使用 **ArchiveDatabase** 属性。
+- **Database** ：对地理位置代码对应的数据库名称的前 3 个字母，告知你邮箱当前位于何处。 对于在线存档邮箱，应使用 **ArchiveDatabase** 属性。
 
-- **MailboxRegion**：指定管理员设置的地理位置代码（从 Azure AD 中的 **PreferredDataLocation** 同步）。
+- **MailboxRegion** ：指定管理员设置的地理位置代码（从 Azure AD 中的 **PreferredDataLocation** 同步）。
 
-- **MailboxRegionLastUpdateTime**：指明 MailboxRegion 的最后（自动或手动）更新时间。
+- **MailboxRegionLastUpdateTime** ：指明 MailboxRegion 的最后（自动或手动）更新时间。
 
 若要查看邮箱的这些属性，请使用以下语法：
 
@@ -160,21 +160,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - 正在移动的邮箱数量。
 >   - 移动资源的可用性。
 
-### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>移动处于诉讼保留状态的已禁用邮箱
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>将非活动邮箱移动到特定地理位置
 
-对于处于诉讼保留状态的已禁用邮箱，无法通过在已禁用状态下通过更改其 **PreferredDataLocation** 值来移动这些邮箱。 若要移动处于诉讼保留状态的已禁用邮箱，请执行以下操作：
+您无法移动出于合规性目的而保留的非活动邮箱 (例如，诉讼保留) 上的邮箱通过更改其 **PreferredDataLocation** 值来实现。 若要将非活动邮箱移动到不同地理位置，请执行以下步骤：
 
-1. 暂时为邮箱分配一个许可证。
+1. 恢复非活动邮箱。 有关说明，请参阅 [恢复非活动邮箱](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)。
 
-2. 更改 **PreferredDataLocation**。
+2. 通过将 \<MailboxIdentity\> 邮箱的名称、别名、帐户或电子邮件地址替换并在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令，阻止托管文件夹助理处理恢复的邮箱：
 
-3. 在将邮箱移到所选地理位置之后从邮箱中删除许可证，将其重新置于禁用状态。
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
+
+3. 向恢复的邮箱分配 **Exchange Online 计划 2** 许可证。 这一步是将邮箱置于诉讼保留状态的必要条件。 有关说明，请参阅 [向用户分配许可证](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+
+4. 按照上一节中所述，在邮箱上配置 **PreferredDataLocation** 值。
+
+5. 确认邮箱已移动到新的地理位置之后，将恢复的邮箱重新置于诉讼保留状态。 有关说明，请参阅 [将邮箱置于诉讼保留状态](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)。
+
+6. 验证诉讼保留是否就绪后，允许托管文件夹助理通过将 \<MailboxIdentity\> 邮箱的名称、别名、帐户或电子邮件地址替换并在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中运行以下命令来再次处理邮箱：
+
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
+
+7. 通过删除与邮箱关联的用户帐户，使邮箱再次处于非活动状态。 有关说明，请参阅 [从组织中删除用户](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步骤还将释放 Exchange Online 计划2许可证，以供其他用途。
+
+**注意** ：将非活动邮箱移到其他地理位置时，可能会影响内容搜索结果或从以前的地理位置搜索邮箱的功能。 有关详细信息，请参阅 [在多地理位置环境中搜索和导出内容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置中创建新的云邮箱
 
 若要在特定地理位置中创建新邮箱，你需要执行以下任一步骤：
 
-- 在 Exchange Online 中创建邮箱*之前*，按上一节中所述配置 **PreferredDataLocation** 值。 例如，在分配许可证之前为用户配置 **PreferredDataLocation** 值。
+- 按照上一步 [将现有仅云邮箱移动到特定地理位置](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)部分中所述配置 **PreferredDataLocation** 值， *然后再* 在 Exchange Online 中创建邮箱。 例如，在分配许可证前配置用户的 **PreferredDataLocation** 值。
 
 - 在设置 **PreferredDataLocation** 值的同时分配许可证。
 
@@ -221,7 +239,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
    $RC = Get-Credential
    ```
 
-4. 在 Exchange Online PowerShell 中，创建一个类似于以下示例的新 **New-MoveRequest**：
+4. 在 Exchange Online PowerShell 中，创建一个类似于以下示例的新 **New-MoveRequest** ：
 
    ```powershell
    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
@@ -233,7 +251,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 ## <a name="multi-geo-reporting"></a>多地理位置报告
 
-Microsoft 365 管理中心中的“**多地理位置使用情况报告**”按地理位置显示用户计数。 该报告显示当前月份的用户分布，并提供过去 6 个月的历史数据。
+Microsoft 365 管理中心中的“ **多地理位置使用情况报告** ”按地理位置显示用户计数。 该报告显示当前月份的用户分布，并提供过去 6 个月的历史数据。
 
 ## <a name="see-also"></a>另请参阅
 

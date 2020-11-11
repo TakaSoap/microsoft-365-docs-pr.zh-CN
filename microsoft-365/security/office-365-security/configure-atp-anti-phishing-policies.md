@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何创建、修改和删除使用 Microsoft Defender for Office 365 的组织中提供的高级反网络钓鱼策略。
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920652"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993384"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置反网络钓鱼策略
 
@@ -170,7 +170,10 @@ ms.locfileid: "48920652"
      若要编辑现有条目，请在列表中选择受保护的用户。
 
      > [!NOTE]
-     > 在所有反网络钓鱼策略中，最多可以有60个用户。 换句话说，一项策略中可以有60个受保护的用户，5个策略中有12个受保护的用户，等等。
+     >
+     > - 在每个反网络钓鱼策略中，您最多可以指定60个受保护的用户 (发件人的电子邮件地址) 。 您不能在多个策略中指定同一个受保护的用户。
+     >
+     > - 如果发件人和收件人之前通过电子邮件进行了通信，则用户模拟保护将不起作用。 如果发件人和收件人从未通过电子邮件进行通信，则会将该邮件标识为模拟尝试。
 
    - **添加要保护的域** ：配置以下一个或两个设置：
 
@@ -178,7 +181,7 @@ ms.locfileid: "48920652"
      - **包含自定义域** ：默认值为 **Off** 。 若要打开它，请将开关滑到 **"打开** "，然后在 " **添加域** " 框中输入域名 (例如，CONTOSO.COM) ，按 enter，并在必要时重复此操作。
 
      > [!NOTE]
-     > 在所有反网络钓鱼策略中，最多可以有50个域。 换句话说，一项策略中可以有50个受保护的用户，5个策略中有10个受保护的用户，等等。
+     > 在所有反网络钓鱼策略中，最多可以有50个域。
 
    - **操作** ：单击 " **编辑** "
 
