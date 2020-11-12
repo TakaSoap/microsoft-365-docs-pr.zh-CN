@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948405"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002413"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -214,7 +214,7 @@ Microsoft 托管桌面不支持 Azure AD 组织所在的一个或多个国家/�
 
 **欲**
 
-应准备您希望 Microsoft 托管桌面用户拥有的应用程序的清单。 请确保这些应用程序可由 Intune 部署。 有关详细信息，请参阅 [Microsoft 托管桌面中的应用程序](apps.md)。
+应准备您希望 Microsoft 托管桌面用户拥有的应用程序的清单。 由于这些应用程序必须由 Intune 部署，因此请评估 "重新使用现有 Intune 应用"。 请考虑使用公司门户 (请参阅在设备和注册状态页 [上安装 Intune 公司门户](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) 将应用程序分发给用户。 有关详细信息，请参阅 [Microsoft 托管桌面中的应用程序](apps.md) 和 [首次运行体验中的 Autopilot 和注册状态页](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
 
 可以在 Microsoft 终结点配置管理器中向 Microsoft 帐户代表查询，以确定那些准备迁移到 Intune 或需要调整的应用程序。
 
@@ -289,9 +289,8 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 **欲**
 
-如果你在 Azure AD 组织中分配了这些角色中的任何角色，请确保他们还在 Microsoft Defender for Endpoint 中分配了这些角色。 否则，拥有这些角色的管理员将无法访问管理门户。
+如果你已将用户分配到 Azure AD 组织中的任何角色，请确保他们还在 Microsoft Defender for Endpoint 中分配了这些角色。 否则，拥有这些角色的管理员将无法访问管理门户。
 
-- 安全读取者
 - 安全操作员
 - 全局读取者
 
@@ -308,7 +307,7 @@ Azure Active Directory 中的安全性默认值将阻止 Microsoft 托管桌面�
 
 ### <a name="self-service-password-reset"></a>自助服务密码重置
 
-自助服务密码重置 (应为所有不包括 Microsoft 托管桌面服务帐户的用户启用 SSPR) 。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+自助服务密码重置 (应为所有不包括 Microsoft 托管桌面服务帐户的 Microsoft 托管桌面用户启用 SSPR) 。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **欲**
 
@@ -325,11 +324,11 @@ Microsoft 托管桌面用户在注册后将不具有对其 Microsoft 托管桌�
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 企业应用版
 
-### <a name="onedrive-for-business"></a>OneDrive for Business
+### <a name="onedrive"></a>OneDrive
 
 " **仅允许在加入特定域的电脑上进行同步** " 设置将与 Microsoft 托管桌面发生冲突。
 
 **欲**
 
-您正在使用 " **仅允许在加入特定域的 pc 上同步** " 设置。 此设置不适用于 Microsoft 托管桌面。 禁用此设置，而将 OneDrive for business 设置为使用条件访问策略。 请参阅 [规划条件访问部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 以获取帮助。
+您正在使用 " **仅允许在加入特定域的 pc 上同步** " 设置。 此设置不适用于 Microsoft 托管桌面。 禁用此设置，而将 OneDrive 设置为使用条件访问策略。 请参阅 [规划条件访问部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 以获取帮助。
 
