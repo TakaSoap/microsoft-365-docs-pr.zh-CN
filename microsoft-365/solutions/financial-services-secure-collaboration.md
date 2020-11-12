@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988710"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993396"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
@@ -46,6 +46,15 @@ ms.locfileid: "48988710"
 * 防止数据泄露和内部风险
 
 作为 Microsoft 合作伙伴，Protiviti 参与了本文的撰写并提供了实质性反馈。
+
+以下可下载的插图是对本文的补充。 Woodgrove Bank 和 Contoso 用于演示如何应用本文中描述的功能来满足金融服务的常见监管要求。 可随时根据自己的使用情况来修改这些插图。 
+
+**Microsoft 365 信息保护和合规性插图**
+
+| 项目 | 说明 |
+|:-----|:-----|
+|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 更新时间：2020年 10 月|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
+
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>使用 Microsoft 365 和 Teams 来提高组织和员工的工作效率
 
