@@ -13,23 +13,23 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: e2f29cdb3604dd05e665cf326b7d9d014a94f3bf
-  ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+  ms.openlocfilehash: 0bce37e2ad20ddde556608a72d7df3a1879ae427
+  ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "48308998"
+  ms.lasthandoff: 11/11/2020
+  ms.locfileid: "48993328"
 landingContent:
 - title: 管理信息保护和治理
   linkLists:
   - linkListType: overview
     links:
     - text: 了解你的数据
-      url: protect-information.md#know-your-data
+      url: information-protection.md#know-your-data
     - text: 保护你的数据
-      url: protect-information.md#protect-your-data
+      url: information-protection.md#protect-your-data
     - text: 防止数据丢失
-      url: protect-information.md#prevent-data-loss
+      url: information-protection.md#prevent-data-loss
     - text: 管理数据
       url: manage-information-governance.md
     - text: 学习路径：管理信息保护和治理
@@ -80,5 +80,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 为数据隐私法规部署信息保护
+    - text: 针对数据隐私法规部署信息保护
       url: ../solutions/information-protection-deploy.md
+    - text: 信息保护与合规性插图
+      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
