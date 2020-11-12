@@ -224,18 +224,20 @@
           href: manage/pin-apps-to-app-launcher.md
         - name: 将用户升级到最新应用
           href: setup/upgrade-users-to-latest-office-client.md
-        - name: 加载项集中部署要求
-          href: manage/centralized-deployment-of-add-ins.md
+        - name: 外接程序的集中式部署
+          items:
+            - name: 加载项集中部署要求
+              href: manage/centralized-deployment-of-add-ins.md
+            - name: 在管理中心部署加载项
+              href: manage/manage-deployment-of-add-ins.md
+            - name: 在管理中心管理加载项
+              href: manage/manage-addins-in-the-admin-center.md
+            - name: 集中部署常见问题解答
+              href: manage/centralized-deployment-faq.md
         - name: 管理行业新闻
           href: manage/manage-industry-news.md
-        - name: 在管理中心部署加载项
-          href: manage/manage-deployment-of-add-ins.md
-        - name: 在管理中心管理加载项
-          href: manage/manage-addins-in-the-admin-center.md
         - name: 管理 Office 脚本设置
           href: manage/manage-office-scripts-settings.md
-        - name: 集中部署常见问题解答
-          href: manage/centralized-deployment-faq.md
         - name: 寻找合作伙伴或经销商
           href: manage/find-your-partner-or-reseller.md
         - name: 管理消息中心消息
