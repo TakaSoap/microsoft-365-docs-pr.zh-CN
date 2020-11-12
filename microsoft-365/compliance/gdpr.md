@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304812"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995895"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般数据保护条例摘要
 
@@ -31,10 +31,10 @@ ms.locfileid: "48304812"
 
 本文档中使用的 GDPR 术语的有用定义：
 
-- **数据控制者（控制者）**：单独或与他人共同确定个人数据处理目的和方法的法人、公共机关、机构或其他团体。  
-- **个人数据和数据主体**：与已识别或可识别的自然人（数据主体）相关的任何信息；可识别的自然人是可以直接或间接识别的自然人。  
-- **处理者**：代表控制者处理个人数据的自然人或法人、公共机关、机构或其他团队。  
-- **客户数据**：在运营业务的日常运营中生成和存储的数据。
+- **数据控制者（控制者）** ：单独或与他人共同确定个人数据处理目的和方法的法人、公共机关、机构或其他团体。  
+- **个人数据和数据主体** ：与已识别或可识别的自然人（数据主体）相关的任何信息；可识别的自然人是可以直接或间接识别的自然人。  
+- **处理者** ：代表控制者处理个人数据的自然人或法人、公共机关、机构或其他团队。  
+- **客户数据** ：在运营业务的日常运营中生成和存储的数据。
 
 ## <a name="what-is-the-gdpr"></a>什么是 GDPR？
 
@@ -51,15 +51,15 @@ GDPR 授予人们管理组织收集的个人数据的权限。 可通过数据�
 
 为满足 GDPR 标准，需要完成以下任务。 请按照列表中的链接获取有关实施的详细信息。  
 
-- **[数据主体请求 (DSR)](gdpr-data-subject-requests.md)**。 数据主体正式要求控制者对其个人数据采取行动（更改、限制、访问）。
-- **[违反通知](gdpr-breach-notification.md)**。 根据 GDPR，个人数据泄露是“违反安全规定，导致已传输、存储或以其他方式处理的个人数据意外或非法损毁、丢失、更改，或者未经授权披露或访问。”
-- **[数据保护影响评估 (DPIA)](gdpr-data-protection-impact-assessments.md)**。 要求数据控制者按照 GDPR 为“可能对自然人的权限和自由造成高风险”的数据操作准备 DPIA。
+- **[数据主体请求 (DSR)](gdpr-data-subject-requests.md)** 。 数据主体正式要求控制者对其个人数据采取行动（更改、限制、访问）。
+- **[违反通知](gdpr-breach-notification.md)** 。 根据 GDPR，个人数据泄露是“违反安全规定，导致已传输、存储或以其他方式处理的个人数据意外或非法损毁、丢失、更改，或者未经授权披露或访问。”
+- **[数据保护影响评估 (DPIA)](gdpr-data-protection-impact-assessments.md)** 。 要求数据控制者按照 GDPR 为“可能对自然人的权限和自由造成高风险”的数据操作准备 DPIA。
 
 如上所述，GDPR 的建议操作计划和责任就绪清单提供了使用 Microsoft 产品和服务实施或评估 GDPR 一致性的指南。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
-[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器为企业版 E5 客户提供了此规则的预建评估。 在合规性管理器的“**评估模板**”页面中找到用于建立评估的模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
+[Microsoft 合规性管理器](compliance-manager.md)是 [Microsoft 365 合规中心](microsoft-365-compliance-center.md)中的一项预览功能，旨在帮助你了解组织的合规情况并采取措施帮助降低风险。 合规性管理器为企业版 E5 客户提供了此规则的预建评估。 在合规性管理器的“ **评估模板** ”页面中找到用于建立评估的模板。 了解如何[在合规性管理器中建立评估](compliance-manager-assessments.md)。
 
 ## <a name="data-subject-request-dsr"></a>数据主体请求 (DSR)
 
@@ -209,7 +209,7 @@ Microsoft 的 GDPR 条款反映了第 28 条要求处理者作出的承诺。 �
 
 **Microsoft 在什么基础上促进欧盟以外的个人数据传输？**
 
-Microsoft 长期以来一直使用标准合同条款（也称为“模式条款”）作为其企业联机服务数据传输的基础。 标准合同条款是欧盟委员会提供的标准条款，可用于以合规的方式在欧洲经济区之外传输数据。 Microsoft 已通过[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)将标准合同条款包含在我们的所有批量许可协议中。 第 29 条工作组证明 Microsoft 实施的标准合同条款符合法规要求。 当欧盟-美国隐私盾出台后，Microsoft 是首家通过认证的公司。 请参阅 [Microsoft 欧盟-美国隐私盾认证](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)，并阅读[联机服务条款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)。 欧盟-美国隐私盾旨在帮助客户按照与其数据保护义务一致的方式将数据传输到美国。
+Microsoft 长期以来一直使用标准合同条款（也称为“模式条款”）作为其企业联机服务数据传输的基础。 标准合同条款是欧盟委员会提供的标准条款，可用于以合规的方式在欧洲经济区之外传输数据。 Microsoft 已通过[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)将标准合同条款包含在我们的所有批量许可协议中。 第 29 条工作组证明 Microsoft 实施的标准合同条款符合法规要求。 当欧盟-美国隐私盾出台后，Microsoft 是首家通过认证的公司。 请参阅 [Microsoft 欧盟-美国隐私盾认证](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)，并阅读[联机服务条款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)。 欧盟-美国隐私盾旨在帮助客户按照与其数据保护义务一致的方式将数据传输到美国。
 
 **Microsoft 还提供哪些其他合规性产品/服务？**
 
@@ -219,12 +219,12 @@ Microsoft 长期以来一直使用标准合同条款（也称为“模式条款�
 
 GDPR 对收集或处理个人数据的组织提出了广泛的要求，包括对遵守六项主要原则的要求：
 
-- 处理和使用个人数据时的*透明度*、*公平性*和*合法性*。 你需要向个人明确说明你将如何使用个人数据，还需要提供处理该数据的“合法依据”。
-- 将个人数据的处理限制为*特定*、*明确*和*合法用途*。 你不得出于与原始数据收集目的“不一致”的目的重复使用或披露个人数据。
-- *尽可能减少个人数据的收集和储存*，使其与预期用途充分相关。
-- 确保*个人数据的准确性*，并允许*擦除或更正*该数据。 需要采取措施来确保你持有的个人数据准确无误，并且可在发生错误时予以更正。
-- *限制个人数据的存储*。 需要确保仅在实现数据收集目的所需的期限内保留个人数据。
-- 确保个人数据的*安全性*、*完整性*和*机密性*。 你的组织必须采取措施，通过技术和组织安全举措来确保个人数据的安全。
+- 处理和使用个人数据时的 *透明度* 、 *公平性* 和 *合法性* 。 你需要向个人明确说明你将如何使用个人数据，还需要提供处理该数据的“合法依据”。
+- 将个人数据的处理限制为 *特定* 、 *明确* 和 *合法用途* 。 你不得出于与原始数据收集目的“不一致”的目的重复使用或披露个人数据。
+- *尽可能减少个人数据的收集和储存* ，使其与预期用途充分相关。
+- 确保 *个人数据的准确性* ，并允许 *擦除或更正* 该数据。 需要采取措施来确保你持有的个人数据准确无误，并且可在发生错误时予以更正。
+- *限制个人数据的存储* 。 需要确保仅在实现数据收集目的所需的期限内保留个人数据。
+- 确保个人数据的 *安全性* 、 *完整性* 和 *机密性* 。 你的组织必须采取措施，通过技术和组织安全举措来确保个人数据的安全。
 
 你需要了解贵组织在 CCPA 下的特定义务以及如何履行这些义务，而 Microsoft 随时乐于在你的 GDPR 旅程中向你提供帮助。
 

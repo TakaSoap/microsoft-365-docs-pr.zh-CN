@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b575573753ef270b5936c315c8bbf3acf9e4a7f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6e8291f4fc21b0a1d3aaee74b47760fca3a4b220
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919696"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995875"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a> (SEC) 规则 17a-4 (f) 美国的有价证券和 Exchange 佣金
 
@@ -40,7 +40,7 @@ Microsoft Azure 永恒 Blob 存储 with with Policy Lock 和 Microsoft Office 36
 若要评估 Azure 和 Office 365 符合 SEC Rule 17a-4 (f) ，Microsoft 保留了一个独立的评估事务所，专门从事记录管理和信息管理 Cohasset 相关。 在生成的报告中：
 
 - **Azure** ： [SEC 17a-4 (f) 合规性评估： Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用策略锁定选项验证了 [Azure 不可变 blob 存储](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) ，用于保留不可擦除和不可改写 (WORM) 格式的基于时间的 blob，从而满足 SEC 规则的不可变存储要求。 每个 Blob (记录) 在所需的保留期过期且已释放任何关联的合法保留期之前，将受到保护，不会被修改、覆盖或删除。 具有敏感工作负载的软件提供商和合作伙伴现在可以依赖 Azure 不可变 Blob 存储作为 onestop 云解决方案，以实现记录保留和不可变存储。 金融机构现在可以构建自己的应用程序，利用这些功能，同时保持兼容性。
-- **Microsoft 365** ： [SEC 17a-4 (f) ，FINRA 4511 (c) 和 CFTC 1.31 (c)  (d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)，Cohasset 验证 Microsoft 365 是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Microsoft 365 中的保留功能帮助保留大量数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Microsoft 365 中的存档使客户能够设置全局或精确的邮件保留策略，以将数据存储在定义的时间段内，并在不可重写的 nonerasable 格式的后面。
+- **Microsoft 365** ： [SEC 17a-4 (f)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)，Cohasset 验证 Microsoft 365 是否包括存档功能，这些功能可让受管制的客户（包括经纪人代理）以帮助其符合 SEC 对记录保留的要求的方式存储数据。 Microsoft 365 中的保留功能帮助保留大量数据，包括电子邮件、语音邮件、共享文档、即时消息和第三方数据。 特别是，Microsoft 365 中的存档使客户能够设置全局或精确的邮件保留策略，以便将数据存储在定义的时间段内，而不是以不可改写、不可擦除的格式存储。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 范围内云服务
 
