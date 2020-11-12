@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: 在本文中，查找有关基于证书的身份验证的 Microsoft 365 客户端应用程序支持的详细信息。。
+description: 在本文中，查找有关基于证书的身份验证的 Microsoft 365 客户端应用程序支持的详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f2f5acb88e49cf7a81bd5e89c0c9c85feea6672
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: 57ced47c268f4d0515acb26aa8f705fa6e9ae0f9
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997799"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999380"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 客户端应用程序支持：基于证书的身份验证
 
@@ -29,11 +29,10 @@ ms.locfileid: "48997799"
 
 新式验证是用于组合身份验证和授权方法的伞条款。 具体包括：
 
-- 身份验证方法：多因素身份验证;基于客户端证书的身份验证。
+- **身份验证方法** ：多因素身份验证;基于客户端证书的身份验证。
+- **授权方法** ： Microsoft 的开放授权 (OAuth) 实施。
 
-- 授权方法： Microsoft 的开放授权 (OAuth) 实施。
-
-通过使用身份验证库（如 ADAL 或 MSAL）启用新式验证。 新式验证是客户端用来对 Microsoft 365 资源进行身份验证和授权访问的客户端。 新式验证利用 OAuth，并为客户端提供一种安全机制来访问 Microsoft 365 服务，而无需访问用户凭据。 登录时，用户直接使用 Azure Active Directory 进行身份验证，并在 return 中接收访问/刷新令牌对。 访问令牌授予客户端对 Microsoft 365 租户中相应资源的访问权限。 在当前访问令牌过期时，将使用刷新令牌获取新的访问权限或刷新令牌对。
+通过使用身份验证库（如 Active Directory 身份验证库 (ADAL) 或 Microsoft Authentication Library (MSAL) ）启用新式验证。 新式验证是客户端用来对 Microsoft 365 资源进行身份验证和授权访问的客户端。 新式验证利用 OAuth，并为客户端提供一种安全机制来访问 Microsoft 365 服务，而无需访问用户凭据。 登录时，用户直接使用 Azure Active Directory 进行身份验证，并在 return 中接收访问/刷新令牌对。 访问令牌授予客户端对 Microsoft 365 租户中相应资源的访问权限。 在当前访问令牌过期时，将使用刷新令牌获取新的访问权限或刷新令牌对。
 
 新式验证支持不同的身份验证机制，如基于证书的身份验证。 Windows、Android 或 iOS 设备上的客户端可以使用基于证书的身份验证 (CBA) 使用设备上的客户端证书对 Azure Active Directory 进行身份验证。 证书用于从 Azure Active Directory 中获取访问/刷新令牌对，而不是典型的用户名/密码。
 
@@ -53,7 +52,7 @@ ms.locfileid: "48997799"
 | 公司门户 | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 |
 | Cortana | 相同 | 相同 | 不适用 | ![支持](../media/check-mark.png) | 不适用 |
 | Delve | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | 不适用 |
-| Microsoft Edge | ![支持](../media/check-mark.png)* | ![支持](../media/check-mark.png)* | 不适用 | 不适用 | ![支持](../media/check-mark.png) |
+| Edge<sup>1</sup> | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 不适用 | 不适用 | ![支持](../media/check-mark.png) |
 | Excel | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) |
 | Exchange Online 管理员 | 不适用 | 不适用 | 不适用 | 不适用 | ![支持](../media/check-mark.png) |
 | Forms | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
@@ -87,12 +86,8 @@ ms.locfileid: "48997799"
 | 工作区分析 | 不适用 | 不适用 | 不适用 | 不适用 | 不适用 |
 | Yammer | ![支持](../media/check-mark.png) | ![支持](../media/check-mark.png) | 相同 | 不适用 | 相同 |
 
-> [!IMPORTANT]
-> 在帐户添加流期间，iOS 和 Android 的边缘支持基于证书的身份验证。 在对网站（通常是 intranet 网站）执行身份验证时，iOS 和 Android 的边缘不支持基于证书的身份验证。 在此方案中，用户导航到某个网站 (通常位于 intranet) 上，web 站点要求用户通过证书进行身份验证。 这并不涉及新式身份验证，也不会利用 Microsoft 身份验证库。 这是由于 iOS 的限制导致： iOS 阻止第三方应用访问系统密钥链，其中证书存储在仅 (Apple 应用程序，并且 [Safari web 视图控制器](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 可以访问系统密钥链) 。
-
- 
-
-由于边缘依赖于 webkit，边缘无法访问系统密钥链，并向用户提供 cert 选择。 遗憾的是，由于 Apple 的体系结构而设计。
+>[!NOTE]
+><sup>1</sup> Edge IOS 和 Android 支持在帐户添加流期间基于证书的身份验证。 在对网站（通常是 intranet 网站）执行身份验证时，iOS 和 Android 的边缘不支持基于证书的身份验证。 <br><br>  在此方案中，用户导航到某个网站 (通常位于 intranet) 上，web 站点要求用户通过证书进行身份验证。 这并不涉及新式身份验证，也不会利用 Microsoft 身份验证库。 这是由于 iOS 的限制导致： iOS 阻止第三方应用访问系统密钥链，其中证书存储在仅 (Apple 应用程序，并且 [Safari web 视图控制器](https://developer.apple.com/documentation/safariservices/sfsafariviewcontroller) 可以访问系统密钥链) 。 <br><br> 由于边缘依赖于 webkit，边缘无法访问系统密钥链，并向用户提供 cert 选择。 遗憾的是，由于 Apple 的体系结构而设计。
 
 ## <a name="supported-powershell-modules"></a>支持的 PowerShell 模块
 

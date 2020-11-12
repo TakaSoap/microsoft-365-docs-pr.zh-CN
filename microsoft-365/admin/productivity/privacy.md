@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用效率分数保护隐私的方式。
-ms.openlocfilehash: 4978039d99704c0658fe22f3725167ac31276dcd
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804743"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999402"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>用于提高工作效率的隐私控制分数
 
-工作效率分数可帮助组织使用有助于衡量和改进人员和技术体验的指标来转换工作的完成情况。 它可帮助您了解您的组织的工作方式，并提供了可帮助您专注于启用改进体验的指标。  您还可以将指标连接到操作，以帮助您更新技能和系统，以便每个人都可以完成其最佳工作。 分数将反映您的组织的绩效，还使您能够安全地将您的成绩与其他组织（如你的公司）进行比较。  有关更多详细信息，请查看 [工作效率分数概述](productivity-score.md)。
+工作效率分数可帮助组织使用可帮助你评估和改进人员和技术体验的指标来转换工作的完成情况。 它可帮助您了解您的组织的工作方式，并提供可帮助您专注于启用改进体验的指标。  您还可以将指标连接到操作，以帮助您更新技能和系统，以便每个人都可以完成其最佳工作。 分数将反映您的组织的绩效，还使您能够安全地将您的成绩与其他组织（如你的公司）进行比较。  有关更多详细信息，请查看 [工作效率分数概述](productivity-score.md)。
 
 你的隐私对我们非常重要。 若要了解我们如何保护你的隐私，请参阅 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。 工作效率分数提供了有关组织中的人员如何与控件合作以确保信息在不会影响您在 Microsoft 中放置的信任的过程中的关键信息。
 
@@ -80,7 +80,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 2. 选择 "  **报告** "，然后选择  **显示用户、组和网站名称的匿名标识符，以提高工作效率的分数和使用情况报告** 。 此设置既适用于使用情况报告，也适用于模板应用。
 3. 选择 "  **保存更改** "。
 
-:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
+:::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="将用户信息设为匿名的报告。":::
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>能够退出人员体验
 
@@ -90,4 +90,4 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 2. 选择 "  **报告** "，然后取消选中 "  **允许将 Microsoft 365 使用率数据用于人们体验见解** " 的复选框。 若要了解如何在 Intune 配置管理器中修改终结点分析的数据共享设置，请单击 " **了解更多** "。
 3. 选择 "  **保存更改** "。
 
-:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="生产率报告中的 &quot;通信&quot; 页面。":::
+:::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="&quot;组织设置&quot; 页，您可以在其中选择 &quot;人员&quot; 体验。":::
