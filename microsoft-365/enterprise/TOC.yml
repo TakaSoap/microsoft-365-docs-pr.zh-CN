@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: 管控
           href: manage-microsoft-365-identity-governance.md
-        - name: 恢复用户邮箱中的已删除项目
-          href: recover-deleted-items-in-a-mailbox.md
         - name: 目录同步
           items:
             - name: 查看状态
@@ -604,7 +602,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: 组
           items:
-            - name: 维护组成员身份
+            - name: 维护安全组成员身份
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 组
               href: manage-microsoft-365-groups-with-powershell.md
