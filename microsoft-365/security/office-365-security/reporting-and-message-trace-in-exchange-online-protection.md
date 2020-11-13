@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解 Microsoft Exchange Online Protection (EOP) 管理员可用的报告和故障排除工具。
-ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845548"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020887"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的报告和邮件跟踪
 
@@ -83,8 +83,8 @@ ms.locfileid: "48845548"
 |报告类型|数据可用时间（回溯期）|延迟|
 |---|---|---|
 |邮件保护摘要报告|90 天|邮件数据聚合将在 24-48 小时内基本完成。一些小的增量聚合更改可能最多需要 5 天。|
-|邮件保护详细信息报告|90 天|对于未超过 7 天的详细数据，数据应该会在 24 小时内出现，但可能需要在 48 小时后才会完整。一些小的增量更改可能最多需要 5 天才能出现。 <br/><br/> 若要查看关于超过 7 天的邮件的详细报告，获取结果可能需要几个小时。|
-|邮件跟踪数据|90 天|对未超过 7 天的邮件运行邮件跟踪时，邮件应该会在 5-30 分钟内显示。<br/><br/> 对超过 7 天的邮件运行邮件跟踪时，获取结果可能需要几个小时。|
+|邮件保护详细信息报告|90 天|对于未超过 7 天的详细数据，数据应该会在 24 小时内出现，但可能需要在 48 小时后才会完整。一些小的增量更改可能最多需要 5 天才能出现。 <p> 若要查看关于超过 7 天的邮件的详细报告，获取结果可能需要几个小时。|
+|邮件跟踪数据|90 天|对未超过 7 天的邮件运行邮件跟踪时，邮件应该会在 5-30 分钟内显示。<p> 对超过 7 天的邮件运行邮件跟踪时，获取结果可能需要几个小时。|
 |
 
 > [!NOTE]

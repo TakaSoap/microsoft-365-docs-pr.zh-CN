@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: 下表提供了 Exchange Online Protection (EOP) 托管的电子邮件筛选服务中可用的功能列表。
-ms.openlocfilehash: 58893cd4a4d6c90c8d19de5a6b2f0d108ee797e0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dcbb7d2e31e230633d0401eee0ef0874eb6af615
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202923"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021033"
 ---
 # <a name="eop-features"></a>EOP 功能
 
@@ -34,10 +34,10 @@ ms.locfileid: "48202923"
 |功能|说明|
 |---|---|
 |**反垃圾邮件保护**||
-|入站垃圾邮件检测|有关详细信息，请参阅 [Microsoft 365 中的反垃圾邮件保护](anti-spam-protection.md)。 <br/><br/> 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅 [Configure 独立 EOP 以将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
+|入站垃圾邮件检测|有关详细信息，请参阅 [Microsoft 365 中的反垃圾邮件保护](anti-spam-protection.md)。 <p> 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅 [Configure 独立 EOP 以将垃圾邮件传递到混合环境中的 "垃圾邮件" 文件夹](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)|
 |出站垃圾邮件检测|如果您使用该服务发送出站邮件，则会始终启用出站反垃圾邮件保护。 有关详细信息，请参阅 [出站垃圾邮件保护](outbound-spam-controls.md)。|
 |退信保护|有关详细信息，请参阅 [退信和 EOP](backscatter-messages-and-eop.md)。|
-|批量邮件筛选|EOP 使用 (BCL) 的批量投诉阈值将批量电子邮件标记为垃圾邮件。 有关详细信息，请参阅下列主题： <br/><br/> [垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md) <br/> [EOP 中的批量投诉级别 (BCL) ](bulk-complaint-level-values.md) <br/> [配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
+|批量邮件筛选|EOP 使用 (BCL) 的批量投诉阈值将批量电子邮件标记为垃圾邮件。 有关详细信息，请参阅下列主题： <p> [垃圾邮件和批量邮件之间有什么差异？](what-s-the-difference-between-junk-email-and-bulk-email.md) <p> [EOP 中的批量投诉级别 (BCL) ](bulk-complaint-level-values.md) <p> [配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
 |恶意 URL 阻止列表|EOP 使用多个 URL 阻止列表，帮助检测邮件中的已知恶意链接。|
 |防钓鱼保护|EOP 包括 750,000 个已知垃圾邮件制造者的域。|
 |防欺骗保护|有关详细信息，请参阅 [反欺骗保护](anti-spoofing-protection.md)。|
@@ -46,7 +46,7 @@ ms.locfileid: "48202923"
 |创建自定义反垃圾邮件策略|为了更细致，可以创建自定义反垃圾邮件策略，并将其应用到组织中指定的用户、组或域。 虽然自定义策略的优先级始终高于默认策略，但可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |配置垃圾邮件筛选的邮件上的操作|例如，您可以删除内容筛选的邮件或将其发送到"垃圾邮件"文件夹或隔离区。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |国际垃圾邮件筛选|您可以配置反垃圾邮件筛选以筛选以特定语言编写或从特定国家或地区发送的邮件。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
-|通过 Outlook 或 web 上的 Outlook 管理垃圾邮件 (以前称为 Outlook Web App) |管理员和最终用户可以创建安全发件人列表和阻止发件人列表。 有关详细信息，请参阅 [关于 Outlook 中的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。 <br/><br/> 如果您使用 EOP 帮助保护本地邮箱，请务必使用目录同步来帮助确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。|
+|通过 Outlook 或 web 上的 Outlook 管理垃圾邮件 (以前称为 Outlook Web App) |管理员和最终用户可以创建安全发件人列表和阻止发件人列表。 有关详细信息，请参阅 [关于 Outlook 中的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)。 <p> 如果您使用 EOP 帮助保护本地邮箱，请务必使用目录同步来帮助确保这些设置已同步到服务。 有关如何设置目录同步的详细信息，请参阅[在 EOP 中管理邮件用户](manage-mail-users-in-eop.md)中的"使用目录同步管理邮件用户"。|
 |向 Microsoft 报告误报和漏报。|有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。|
 |最终用户垃圾邮件隔离通知|有关详细信息，请参阅 [最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md) 和 [配置最终用户垃圾邮件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)。|
 |查看、查找和管理隔离门户中的邮件。|有关详细信息，请参阅 [在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md) ，或 [查找并以用户身份释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。|
@@ -61,7 +61,7 @@ ms.locfileid: "48202923"
 |反间谍软件保护|反恶意软件保护包括反病毒保护和反间谍软件保护。|
 |创建自定义恶意软件筛选器策略|更精确地讲，您可以创建自定义恶意软件筛选策略，并将其应用到组织中的特定用户、组或域。 自定义策略的优先级总是高于默认策略，但您可以更改自定义策略的优先级（即运行顺序）。 有关详细信息，请参阅 [配置反恶意软件策略](configure-anti-malware-policies.md)。|
 |**邮件路由与连接器**||
-|有条件的邮件路由|有关详细信息，请参阅 [方案：条件邮件路由在 Exchange Online 中](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。|
+|有条件的邮件路由|有关详细信息，请参阅[方案： Exchange Online 中的条件邮件路由](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。|
 |机会型或强制 TLS|机会型或强制 TLS 在连接器中可用。 机会型 TLS 尝试建立 TLS 连接，当 TLS 连接失败时，则使用 SMTP 连接。 强制 TLS 强制建立 TLS 连接，这意味着当 TLS 连接失败时，邮件将被拒绝。 有关 TLS、安全性以及连接器的详细信息，请参阅[Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。|
 |区域路由（将邮件流限制到指定区域）|有关详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)中的"EOP 数据中心"部分。|
 |SMTP 连接检查程序工具|有关使用此工具测试邮件流的详细信息，请参阅 [test mail flow by 通过验证 Microsoft 365 连接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/test-mail-flow)。|
@@ -72,7 +72,7 @@ ms.locfileid: "48202923"
 |自定义词典|邮件流规则可以包括长文本和关键字列表，并提供与自定义词典相同的功能。|
 |每个域策略规则|可以自定义邮件流规则的作用域，以匹配发件人或收件人域名、IP 地址范围、地址关键字或模式、组成员身份以及其他条件。|
 |附件扫描|可以创建规则，以扫描附件的文件名、扩展名和内容。|
-|向发件人发送策略规则通知|您可以拒绝邮件并发送未送达报告 (也称为 "NDR" 或 "退回邮件") 发送给发件人。通过使用 "**增强状态代码**" 操作说明或拒绝邮件的 "**拒绝"** 或 "退回邮件"。 有关详细信息，请参阅 [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
+|向发件人发送策略规则通知|您可以拒绝邮件并发送未送达报告 (也称为 "NDR" 或 "退回邮件") 发送给发件人。通过使用 " **增强状态代码** " 操作说明或拒绝邮件的 " **拒绝"** 或 "退回邮件"。 有关详细信息，请参阅 [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |重定向或复制邮件|邮件流规则可以通过 "抄送" 或 "密件抄送" （只添加收件人和其他选项）进行重定向、添加收件人。 有关详细信息，请参阅 [Exchange Online 中的邮件流规则操作](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |跨多个规则调整规则优先级|使用 Exchange 管理中心更改规则的处理顺序。|
 |筛选邮件，然后更改邮件的路由或属性|您可以根据多种条件筛选邮件，然后对每个邮件应用一系列操作。 有关详细信息，请参阅 [Mail flow rules (transport rules) In Exchange Online Protection](mail-flow-rules-transport-rules-0.md)。|

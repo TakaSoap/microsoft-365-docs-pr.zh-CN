@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 为了维护用户对使用电子邮件的信任，Microsoft 已出台多项帮助保护我们的用户的策略和技术。
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199573"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021021"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>将邮件发送到 Microsoft 365 的非客户服务
 
@@ -38,7 +38,7 @@ ms.locfileid: "48199573"
 
 |服务|优点|
 |---|---|
-|此联机帮助内容|提供： <br/> 有关向 EOP 用户提供通信的任何问题的起始点。 <br/><br/> 包含一个包含我们的策略和要求的简单联机指南。 <br/><br/> Microsoft 所采用的垃圾邮件筛选器和身份验证技术的概述。|
+|此联机帮助内容|提供： <ul><li>有关向 EOP 用户提供通信的任何问题的起始点。</li><li>包含一个包含我们的策略和要求的简单联机指南。</li><li>Microsoft 所采用的垃圾邮件筛选器和身份验证技术的概述。</li><ul>|
 |[Microsoft 支持](#microsoft-support)|提供有关传送问题的自助和升级支持。|
 |[反垃圾邮件 IP 除名门户](#anti-spam-ip-delist-portal)|一种提交 IP 除名请求的工具。在提交此请求前，发件人有责任确保任何源自可疑 IP 的后续邮件不是滥用的或恶意的。|
 |[源自 Exchange Online 的垃圾邮件的滥用和垃圾邮件报告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|阻止从 Exchange Online 发送垃圾邮件和其他不需要的邮件，并将 internet 和邮件系统打乱。|

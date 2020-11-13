@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002413"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021081"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
 
@@ -29,6 +29,8 @@ ms.locfileid: "49002413"
 |错误 | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 设置
+
+你可以在 Microsoft 终结点管理器 [管理中心](https://endpoint.microsoft.com)访问 Intune 设置。
 
 ### <a name="autopilot-deployment-profile"></a>Autopilot 部署配置文件
 
@@ -247,6 +249,7 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置
 
+你可以在 [azure 门户](https://portal.azure.com)中访问 Azure Active Directory 设置。
 
 ### <a name="ad-hoc-subscriptions"></a>临时订阅
 
@@ -326,7 +329,7 @@ Microsoft 托管桌面用户在注册后将不具有对其 Microsoft 托管桌�
 
 ### <a name="onedrive"></a>OneDrive
 
-" **仅允许在加入特定域的电脑上进行同步** " 设置将与 Microsoft 托管桌面发生冲突。
+" **仅允许在加入特定域的电脑上进行同步** " 设置将与 Microsoft 托管桌面发生冲突。 您可以在 OneDrive [管理中心](https://admin.onedrive.com)访问 onedrive 设置。
 
 **欲**
 

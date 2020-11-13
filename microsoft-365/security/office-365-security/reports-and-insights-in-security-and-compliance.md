@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解安全 & 合规性中心中提供的智能报告和见解，以及如何使用它们查看和浏览数据并快速执行操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 384ae51a514c31c659ce80f30e0b8c09976ec44b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 860457962e2a269829d9b3bcdb94ac29eeaeaa11
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877345"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020875"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全与合规中心内的智能报告和见解
 
@@ -53,8 +53,8 @@ ms.locfileid: "48877345"
 |**数据治理** <br/> 有关如何应用标签、分类为记录的标签、标签趋势等方面的信息|在安全 & 合规性中心中，转到 " **信息管理** " \> **仪表板**|[查看数据管理报告](../../compliance/view-the-data-governance-reports.md)|
 |**威胁管理仪表板** (这也称为 "安全" 仪表板)   <br/> 威胁检测、恶意软件趋势、主要目标用户、有关发送和接收的电子邮件的详细信息等|在安全 & 合规性中心中，转到 " **威胁管理** " \> **仪表板**|[查看适用于 Office 365 的 Defender 报告](view-reports-for-atp.md)|
 |**威胁资源管理器** (也称为资源管理器) 或 **实时检测** <br/> 在 Microsoft 365 中的电子邮件和文件中检测到可疑的恶意软件|在安全 & 合规性中心中，转到 " **威胁管理** \> **资源管理器** " 或 " **实时检测** "<br/> |[威胁资源管理器（或实时检测）](threat-explorer.md)|
-|**适用于 Office 365 的 Defender 和电子邮件安全报告** <br/> 电子邮件安全和威胁防护报告 (包括恶意软件、垃圾邮件、网络钓鱼和欺骗报告) |在安全 & 合规性中心中，转到 " **报告** " \> **仪表板**|[查看适用于 Office 365 的 Defender 报告](view-reports-for-atp.md) <br/><br/> [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)|
-|**邮件流** <br/> 已发送和已接收的电子邮件、最近的警报、主要发件人和收件人、电子邮件转发报告等相关信息|在安全 & 合规性中心中，转到 " **邮件流** " \> **仪表板** 和 " **报告** " \> **仪表板**|[安全与合规中心内的邮件流见解](mail-flow-insights-v2.md) <br/><br/> [查看安全 & 合规性中心中的邮件流报告](view-mail-flow-reports.md)|
+|**适用于 Office 365 的 Defender 和电子邮件安全报告** <br/> 电子邮件安全和威胁防护报告 (包括恶意软件、垃圾邮件、网络钓鱼和欺骗报告) |在安全 & 合规性中心中，转到 " **报告** " \> **仪表板**|[查看适用于 Office 365 的 Defender 报告](view-reports-for-atp.md) <p> [查看安全与合规中心内的电子邮件安全报告](view-email-security-reports.md)|
+|**邮件流** <br/> 已发送和已接收的电子邮件、最近的警报、主要发件人和收件人、电子邮件转发报告等相关信息|在安全 & 合规性中心中，转到 " **邮件流** " \> **仪表板** 和 " **报告** " \> **仪表板**|[安全与合规中心内的邮件流见解](mail-flow-insights-v2.md) <p> [查看安全 & 合规性中心中的邮件流报告](view-mail-flow-reports.md)|
 |**GDPR 合规性** <br/> 有关 GDPR 合规性的信息，包括指向数据主体的链接、标签趋势和活动 & 已结束案例|在安全 & 合规性中心中，转到 **Data 隐私声明** \> **GDPR 仪表板**|[针对 GDPR 的 Office 365 信息保护](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**审核日志** <br/> 有关 Microsoft 365 活动、用户、文件或文件夹等的信息|在安全 & 合规性中心中，转到 **搜索 & 调查** \> **审核日志搜索**|[在安全 & 合规性中心中搜索审核日志](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**合规性报告** <br/> FedRAMP 报告、管理、风险和合规性报告、ISO 信息安全管理报告以及 Service Organization Controls 审核和评估报告|在安全 & 合规性中心中，转到 **服务保证** \> **合规性报告**|[在 Office 365 中规划安全 & 合规性](../../compliance/plan-for-security-and-compliance.md)|
