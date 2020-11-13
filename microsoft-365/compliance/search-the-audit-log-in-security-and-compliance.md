@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941449"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999506"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -140,7 +140,7 @@ ms.locfileid: "48941449"
 ## <a name="search-the-audit-log"></a>搜索审核日志
 
 > [!NOTE]
-> 我们当前正在调查 Azure AD 活动在审核日志搜索工具中不可用的问题。 该问题在 2020 年 10 月 26 日左右开始出现。 这些活动包括 Azure AD 用户管理活动、组管理活动、应用程序管理活动、角色管理活动和目录管理活动。 我们将在问题得到解决时提供更新。
+> 从 2020 年 10 月 22 日到 2020 年 11 月 6 日，审核日志搜索工具中存在 Azure AD 活动不可用的问题。 这些活动包括 Azure AD 用户管理活动、组管理活动、应用程序管理活动、角色管理活动和目录管理活动。 将在未来几天内提供影响期限的缺失事件，预计将于 2020 年 11 月 20 日前完成。 在某些情况下，客户可能会发现在 2020 年 10 月 26 日至 11 月 5 日之间生成的事件的重复事件数据。
     
 下面介绍在 Office 365 中搜索审核日志的流程。
 

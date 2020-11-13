@@ -11,16 +11,17 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解如何在与组织外人员共享文件时限制意外公开信息。
-ms.openlocfilehash: 6250103e36900da76a4529a73b78f14862ab86ef
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769002"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029965"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>在与组织外人员共享文件时限制意外公开信息
 

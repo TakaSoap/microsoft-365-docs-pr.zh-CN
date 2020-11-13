@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 了解管理员如何设置和使用数据连接器以将来自即时 Bloomberg 聊天工具的数据导入和存档到 Microsoft 365。
-ms.openlocfilehash: 3a00e74d138810c4f9bc2ca851696a8c39b9f082
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 18635e6f197d954ae90c32bf5e3ae1ea8193f06d
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408752"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002357"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>设置连接器以存档 Instant Bloomberg 数据
 
@@ -52,7 +52,7 @@ ms.locfileid: "48408752"
 
 - 设置 Bloomberg SFTP (安全文件传输协议) 网站。 使用 Bloomberg 设置 SFTP 站点后，即时 Bloomberg 中的数据每天都将上传到 SFTP 站点。 您在步骤2中创建的连接器将连接到此 SFTP 站点，并将聊天数据传输到 Microsoft 365 邮箱。 SFTP 还对在传输过程中发送给邮箱的即时 Bloomberg 聊天数据进行加密。
 
-  有关 Bloomberg SFTP (也称为 *BB-SFTP*) 的信息：
+  有关 Bloomberg SFTP (也称为 *BB-SFTP* ) 的信息：
 
   - 请参阅 [Bloomberg 支持](https://www.bloomberg.com/professional/support/documentation/)中的 "SFTP 连接标准" 文档。
 
@@ -74,13 +74,13 @@ ms.locfileid: "48408752"
 
 第一步是获取用于安全命令行管理程序 (SSH) 的公钥副本，并获取相当出色的隐私 (PGP) 。 您可以在步骤2中使用这些键来配置 Bloomberg SFTP 站点，以允许您在步骤) 3 中创建的连接器 (以连接到 SFTP 站点，并将 "即时 Bloomberg" 聊天数据传输到 Microsoft 365 邮箱。 您还可以在此步骤中获取 IP 地址，在配置 Bloomberg SFTP 站点时使用此地址。
 
-1. 转到 <https://compliance.microsoft.com> ，然后单击 "**数据连接器**  >  **即时 Bloomberg**"。
+1. 转到 <https://compliance.microsoft.com> ，然后单击 " **数据连接器**  >  **即时 Bloomberg** "。
 
-2. 在 "**即时 Bloomberg**产品说明" 页上，单击 "**添加连接器**"
+2. 在 " **即时 Bloomberg** 产品说明" 页上，单击 " **添加连接器** "
 
-3. 在 " **服务条款** " 页上，单击 " **接受**"。
+3. 在 " **服务条款** " 页上，单击 " **接受** "。
 
-4. 在步骤1下的 **BLOOMBERG SFTP 网站的 "添加凭据** " 中，单击 " **下载 SSH 密钥**"、" **下载 PGP 密钥**" 和 " **下载 IP 地址** " 链接以将每个文件的副本保存到本地计算机。 这些文件包含以下用于在步骤2中配置 Bloomberg SFTP 网站的项：
+4. 在步骤1下的 **BLOOMBERG SFTP 网站的 "添加凭据** " 中，单击 " **下载 SSH 密钥** "、" **下载 PGP 密钥** " 和 " **下载 IP 地址** " 链接以将每个文件的副本保存到本地计算机。 这些文件包含以下用于在步骤2中配置 Bloomberg SFTP 网站的项：
 
    - SSH 公钥：此注册表项用于配置 (SSH) 的安全命令行管理程序，以便在连接器连接到 Bloomberg SFTP 站点时启用安全的远程登录。
 
@@ -101,13 +101,13 @@ ms.locfileid: "48408752"
 
 最后一步是在 Microsoft 365 合规性中心中创建一个即时 Bloomberg 连接器。 连接器使用您提供的信息连接到 Bloomberg SFTP 站点，并将聊天邮件传输到 Microsoft 365 中对应的用户邮箱框中。
 
-1. 转到 <https://compliance.microsoft.com> ，然后单击 "**数据连接器**  >  **即时 Bloomberg**"。
+1. 转到 <https://compliance.microsoft.com> ，然后单击 " **数据连接器**  >  **即时 Bloomberg** "。
 
-2. 在 "**即时 Bloomberg**产品说明" 页上，单击 "**添加连接器**"
+2. 在 " **即时 Bloomberg** 产品说明" 页上，单击 " **添加连接器** "
 
-3. 在 " **服务条款** " 页上，单击 " **接受**"。
+3. 在 " **服务条款** " 页上，单击 " **接受** "。
 
-4. 在 " **添加 BLOOMBERG SFTP 网站的凭据** " 页上的 "步骤 3" 中的以下框中，输入所需信息，然后单击 " **下一步**"。
+4. 在 " **添加 BLOOMBERG SFTP 网站的凭据** " 页上的 "步骤 3" 中的以下框中，输入所需信息，然后单击 " **下一步** "。
 
     - **确认代码：** 您的组织的 ID，用作 Bloomberg SFTP 站点的用户名。
 
@@ -117,11 +117,13 @@ ms.locfileid: "48408752"
 
     - **SFTP 端口：** Bloomberg SFTP 站点的端口号。 连接器使用此端口连接到 SFTP 站点。
 
-5. 在 " **用户映射** " 页上，启用自动用户映射并根据需要提供自定义用户映射
+5. 在 " **选择要导入的数据类型** " 页上，选择与 **邮件** 分开导入所需的数据类型
+
+6. 在 " **用户映射** " 页上，启用自动用户映射并根据需要提供自定义用户映射
 
    > [!NOTE]
    > 连接器将聊天邮件项目导入到特定用户的邮箱中。 将在特定用户的邮箱中创建一个名为 **InstantBloomberg** 的新文件夹，然后将这些项目导入该文件夹中。 连接器通过使用 *CorporateEmailAddress* 属性的值来执行。 每个聊天邮件都包含此属性，并使用聊天消息的每个参与者的电子邮件地址填充该属性。 除了使用 *CorporateEmailAddress* 属性的值进行自动用户映射之外，还可以通过上载 CSV 映射文件来定义自定义映射。 映射文件应包含每个用户的 Bloomberg UUID 和相应的 Microsoft 365 邮箱地址。 如果为每个聊天项目启用自动用户映射并提供自定义映射，连接器将首先查看自定义映射文件。 如果找不到与用户的 Bloomberg UUID 对应的有效 Microsoft 365 用户，连接器将使用聊天项目的 *CorporateEmailAddress* 属性。 如果连接器在自定义映射文件或聊天项目的 *CorporateEmailAddress* 属性中找不到有效的 Microsoft 365 用户，则不会导入该项目。
 
-6. 单击 " **下一步**"，查看设置，然后单击 " **准备** " 以创建连接器。
+7. 单击 " **下一步** "，查看设置，然后单击 " **准备** " 以创建连接器。
 
-7. 转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
+8. 转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。

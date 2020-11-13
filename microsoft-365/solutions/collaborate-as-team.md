@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解与团队中的来宾设置任务、对话和文档协作的团队所需的 Microsoft 365 配置步骤。
-ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906855"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030025"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在团队中与来宾协作
 
@@ -181,7 +182,7 @@ Microsoft 365 中的共享受 [Azure Active Directory 中的组织关系设置](
 
 [与来宾共享时限制文件意外曝光](share-limit-accidental-exposure.md)
 
-[创建安全的来宾共享环境](create-secure-guest-sharing-environment.md)
+[Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)（创建安全的来宾共享环境）
 
 [创建托管有来宾的 B2B 外联网](b2b-extranet.md)
 
