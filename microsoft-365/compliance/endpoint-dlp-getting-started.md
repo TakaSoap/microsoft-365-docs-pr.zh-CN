@@ -19,24 +19,24 @@ ms.collection:
 search.appverid:
 - MET150
 description: 设置 Microsoft 365 终结点数据丢失防护，以监视文件活动并将针对这些文件的保护措施实施到终结点。
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990547"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999414"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>终结点数据丢失防护入门
 
-Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。 有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。 若要了解有关终结点 DLP 的详细信息，请参阅[了解终结点数据丢失防护（预览）](endpoint-dlp-learn-about.md)
+Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据丢失防护 (DLP) 功能套件的一部分，可用于发现和保护 Microsoft 365 服务中的敏感项目。有关 Microsoft 所有 DLP 产品/服务的更多信息，请参阅[数据丢失防护概述](data-loss-prevention-policies.md)。若要了解“终点 DLP” 的详细信息，请参阅[了解终结点数据丢失防护（预览）](endpoint-dlp-learn-about.md)
 
-通过 Microsoft 终结点 DLP，你可以监视 Windows 10 设备并检测何时使用和共享敏感项目。 这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
+通过 Microsoft 终结点 DLP，你可以监视 Windows 10 设备并检测何时使用和共享敏感项目。这为你提供了所需的可见性和控制力，以确保正确使用和保护它们，并帮助防止可能危害它们的危险行为。
 
 ## <a name="before-you-begin"></a>准备工作
 
 ### <a name="skusubscriptions-licensing"></a>SKU/订阅许可
 
-在开始使用终结点 DLP 之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何加载项。 若要访问和使用终结点 DLP 功能，必须具有这些订阅或加载项中的一个。
+在开始使用终结点 DLP 之前，应该先确认 [Microsoft 365 订阅](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何加载项。若要访问和使用终结点 DLP 功能，必须具有这些订阅或加载项中的一个。
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (EDU)
@@ -71,7 +71,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 - 全局管理员
 - 合规性管理员
 
-可在[活动资源管理器](data-classification-activity-explorer.md)中查看终结点 DLP 中的数据。 有四个角色可向活动资源管理器授予权限，用于访问数据的帐户必须是其中任何一个的成员。
+可在[活动资源管理器](data-classification-activity-explorer.md)中查看终结点 DLP 中的数据。有四个角色可向活动资源管理器授予权限，用于访问数据的帐户必须是其中任何一个的成员。
 
 - 全局管理员
 - 合规性管理员
@@ -84,9 +84,9 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 1. 必须运行 Windows 10 x64 内部版本 1809 或更高版本。
 
-2. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。 若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。 “反恶意软件客户端版本”下列出了版本号。 通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。 注意：任何 Windows 安全中心组件都无需处于活动状态，你可以独立于 Windows 安全中心状态运行终结点 DLP。
+2. 反恶意软件客户端的版本为 4.18.2009.7 或更高版本。若要查看当前版本，请打开“Windows 安全中心”应用，选择“设置”图标，然后选择“关于”。“反恶意软件客户端版本”下列出了版本号。通过安装 Windows 更新 KB4052623，更新到最新的反恶意软件客户端版本。注意：任何 Windows 安全中心组件都无需处于活动状态，你可以独立于 Windows 安全中心状态运行终结点 DLP。
 
-3. 已安装以下 Windows 更新。 注意：这些更新不是将设备加入终结点 DLP 的先决条件，但它们包含对重要问题的修复，因此必须在使用该产品之前完成安装。
+3. 已安装以下 Windows 更新。注意：这些更新不是将设备加入终结点 DLP 的先决条件，但它们包含对重要问题的修复，因此必须在使用该产品之前完成安装。
 
     - 对于 Windows 10 1809 - KB4559003、KB4577069、KB4580390
     - 对于 Windows 10 1903 或 1909 - KB4559004、KB4577062、KB4580386
@@ -95,17 +95,17 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 4. 所有设备必须[已建立 Azure Active Directory (Azure AD) 联接](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或已建立混合 Azure AD 联接。
 
-5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。 请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+5. 在终结点设备上安装 Microsoft Chromium Edge 浏览器，以对上传到云活动执行策略操作。请参见[下载基于 Chromium 的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
-6. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。 参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 要了解有关此问题的更多信息，请参阅[有关 2020 年当前频道发行的发行说明](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)。
+6. 如果使用的是 Microsoft 365 应用版的月度企业版 2004-2008，则终结点 DLP 的已知问题会分类 Office 内容，需要更新到版本 2009 或更高版本。参见 [Microsoft 365 应用版的更新历史记录（按日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。如需了解有关此问题的更多信息，请参见[有关 2020 年当前频道发行的发行说明](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)的 Office 套件部分。
 
 ## <a name="onboarding-devices-into-device-management"></a>将设备载入设备管理
 
-必须先启用设备监视功能并载入终结点，然后才能监视和保护设备上的敏感项目。 这两项操作都在 Microsoft 365 合规门户中完成。
+必须先启用设备监视功能并载入终结点，然后才能监视和保护设备上的敏感项目。这两项操作都在 Microsoft 365 合规门户中完成。
 
-当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。 按照[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)进行操作。
+当你想载入尚未载入的设备时，你需要下载适当的脚本并将其部署到那些设备上。按照[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)进行操作。
 
-已载入到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。 请按照“[与设备载入到 Microsoft Defender for Endpoint 的过程](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)”进行操作。
+已载入到 [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/) 的设备将显示在“托管设备”列表中。按照[与设备载入到 Microsoft Defender for Endpoint 相关过程](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)进行操作。
 
 ### <a name="onboarding-devices"></a>载入设备
 
@@ -121,7 +121,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
    > [!NOTE]
    > 设备载入通常需要大约 60 秒才能启用，请先等待 30 分钟，然后再与 Microsoft 支持人员接洽。
 
-3. 选择“ **设备管理** ”，以打开“ **设备** ”列表。 在载入设备之前，此列表将为空。
+3. 选择“ **设备管理** ”，以打开“ **设备** ”列表。在载入设备之前，此列表将为空。
 
 4. 选择“ **载入** ”以开始载入流程。
 
@@ -130,7 +130,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
    > [!div class="mx-imgBorder"]
    > ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
 
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
@@ -141,17 +141,17 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 完成操作并启用终结点后，它应该在设备列表中可见，并且还应开始向活动资源管理器报告审核活动日志。
 
 > [!NOTE]
-> 此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
+> 此体验根据许可证强制实施。如果没有所需的许可证，数据将不可见或不可访问。
 
 ### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>与设备载入到 Microsoft Defender for Endpoint
 
-在此方案中，已经部署了 Microsoft Defender for Endpoint，并且在其中报告了终结点。 所有这些终结点都将显示在托管设备列表中。 可通过使用[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)将新设备继续载入到终结点 DLP 中，以扩展覆盖范围。
+在此方案中，已经部署了 Microsoft Defender for Endpoint，并且在其中报告了终结点。所有这些终结点都将显示在托管设备列表中。可通过使用[载入设备程序](endpoint-dlp-getting-started.md#onboarding-devices)将新设备继续载入到终结点 DLP 中，以扩展覆盖范围。
 
 1. 打开“[Microsoft 合规中心](https://compliance.microsoft.com)”。
 
 2. 打开合规中心设置页面，然后选择“ **启用设备监视** ”。
 
-3. 选择“ **设备管理** ”，以打开“ **设备** ”列表。 你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
+3. 选择“ **设备管理** ”，以打开“ **设备** ”列表。你应该会看到已经向 Microsoft Defender for Endpoint 报告的设备列表。
 
    > [!div class="mx-imgBorder"]
    > ![设备管理](../media/endpoint-dlp-getting-started-2-device-management.png)
@@ -160,7 +160,7 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 
 5. 从“ **部署方法** ”列表中选择要部署到这些额外设备的方式，然后 **下载程序包** 。
 
-6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。 此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
+6. 按照[适用于 Windows 10 计算机的载入工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的相应程序进行操作。此链接会将你定位到登录页面，你可以在其中访问与在步骤 5 中选择的部署程序包相匹配的 Microsoft Defender for Endpoint 过程：
 
     - 使用组策略载入 Windows 10 计算机
     - 使用 Microsoft Endpoint Configuration Manager 载入 Windows 10 计算机
@@ -171,7 +171,14 @@ Microsoft 终结点数据丢失防护（终结点 DLP）是 Microsoft 365 数据
 完成操作并载入终结点后，它应该在“ **设备** ”表下可见，并且还应开始向 **活动资源管理器** 报告审核日志。
 
 > [!NOTE]
->此体验根据许可证强制实施。 如果没有所需的许可证，数据将不可见或不可访问。
+>此体验根据许可证强制实施。如果没有所需的许可证，数据将不可见或不可访问。
+
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>在 DLP 警报管理仪表板中查看“终点 DLP 警报”
+
+1. 打开 Microsoft 365 安全合规中心的“数据丢失防护”页，然后选择“警报”。
+
+2. 请参阅 [如何配置和查看 DLP 策略的警报](dlp-configure-view-alerts-policies.md) 中的过程，以查看你的终结点 DLP 策略警报。
+
 
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>在活动资源管理器中查看终结点 DLP 数据
 
