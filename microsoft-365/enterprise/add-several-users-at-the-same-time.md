@@ -25,45 +25,45 @@ search.appverid:
 - BCS160
 ms.assetid: 1f5767ed-e717-4f24-969c-6ea9d412ca88
 description: '了解如何从电子表格或其他 CSV 格式的文件中的列表向 Microsoft 365 for business 中添加多个用户。 观看 YouTube 上的视频，说明如何将帐户添加到 Microsoft 365。 在此过程结束时，拥有帐户的每位用户都将拥有一个 Microsoft 365 邮箱。 '
-ms.openlocfilehash: c75f16233a85f48be44082ba3ec9ffb82ef18ff9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a970fbfa28214543e34011f1310742c6fb811d09
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688206"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071509"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>同时将多个用户添加到 Microsoft 365-管理员帮助
 
 团队中的每个人都需要用户帐户，才能登录并访问 Microsoft 365 服务，例如电子邮件和 Office。 如果有很多人，则可以从 Excel 电子表格或以 CSV 格式保存的其他文件中一次添加所有帐户。 [不确定哪种 CSV 格式？](add-several-users-at-the-same-time.md#__toc316652088)
   
 > [!NOTE] 
-> 如果未使用新的 Microsoft 365 管理中心，可通过选择“**试用新的管理中心**”切换按钮（位于主页顶部）将其打开。
+> 如果未使用新的 Microsoft 365 管理中心，可通过选择“ **试用新的管理中心** ”切换按钮（位于主页顶部）将其打开。
 
 ## <a name="add-multiple-users-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 管理中心中添加多个用户
 
 1. 使用工作或学校帐户登录 Microsoft 365。 
     
-2. 在 "管理中心" 中，选择 " **用户** \> **活动用户**"。
+2. 在 "管理中心" 中，选择 " **用户** \> **活动用户** "。
 
-3. 选择 " **添加多个用户**"。
+3. 选择 " **添加多个用户** "。
 
 4. 在 " **导入多个用户** " 面板上，您可以选择下载带有或不带填充样本数据的示例 CSV 文件。 
     
-    电子表格需要包含与示例 (用户名、名字等 **完全相同的列标题** 。) 。如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，并且仅在第2行和更低的行中输入数据。 
+    您的电子表格需要包含与示例 (用户名、名字等) 中的 **完全相同的列标题** 。 如果使用模板，请在文本编辑工具（如记事本）中打开它，并考虑仅保留第1行中的所有数据，并且仅在第2行和更低的行中输入数据。 
     
     您的电子表格还需要包含用户名的值 (如 bob@contoso.com) ，以及与每个用户的 Bob 凯利)  (类似的显示名称。 
     
   ```
-  User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Fax,Address,City,State or Province,ZIP or Postal Code,Country or Region
-  chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,123-555-9821,1 Microsoft way,Redmond,Wa,98052,United States
-  ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,123-555-9822,1 Microsoft way,Redmond,Wa,98052,United States
-  david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,123-555-9823,1 Microsoft way,Redmond,Wa,98052,United States
-  cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,123-555-9824,1 Microsoft way,Redmond,Wa,98052,United States
-  melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,123-555-9825,1 Microsoft way,Redmond,Wa,98052,United States
+  User Name,First Name,Last Name,Display Name,Job Title,Department,Office Number,Office Phone,Mobile Phone,Address,City,State or Province,ZIP or Postal Code,Country or Region
+  chris@contoso.com,Chris,Green,Chris Green,IT Manager,Information Technology,123451,123-555-1211,123-555-6641,1 Microsoft way,Redmond,Wa,98052,United States
+  ben@contoso.com,Ben,Andrews,Ben Andrews,IT Manager,Information Technology,123452,123-555-1212,123-555-6642,1 Microsoft way,Redmond,Wa,98052,United States
+  david@contoso.com,David,Longmuir,David Longmuir,IT Manager,Information Technology,123453,123-555-1213,123-555-6643,1 Microsoft way,Redmond,Wa,98052,United States
+  cynthia@contoso.com,Cynthia,Carey,Cynthia Carey,IT Manager,Information Technology,123454,123-555-1214,123-555-6644,1 Microsoft way,Redmond,Wa,98052,United States
+  melissa@contoso.com,Melissa,MacBeth,Melissa MacBeth,IT Manager,Information Technology,123455,123-555-1215,123-555-6645,1 Microsoft way,Redmond,Wa,98052,United States
   
   ```
 
-5. 在框中输入文件路径，或选择 " **浏览** " 浏览 CSV 文件位置，然后选择 " **验证**"。
+5. 在框中输入文件路径，或选择 " **浏览** " 浏览 CSV 文件位置，然后选择 " **验证** "。
   
     如果文件有问题，则会在面板中显示该问题。 您还可以下载日志文件。
     
@@ -94,7 +94,7 @@ CSV 文件是一个包含以逗号分隔的值的文件。 您可以使用任何
   
 ![如何将 Excel 中的文件保存为 CSV 格式的图像](../media/35a86ebe-63ab-4b4d-9a92-e177de33ebae.png)
   
-保存文件时，您可能会收到提示，如果您以 CSV 格式保存文件，则工作簿中的某些功能将丢失。 这没关系。 单击" **是**"即可继续。 
+保存文件时，您可能会收到提示，如果您以 CSV 格式保存文件，则工作簿中的某些功能将丢失。 这没关系。 单击" **是** "即可继续。 
   
 ![您可能会收到的提示的图片，询问您是否确实要将文件保存为 CSV 格式](../media/51032a81-690c-45ef-bfc5-09ea7f790e98.png)
   

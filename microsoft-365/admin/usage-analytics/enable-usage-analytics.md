@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 了解如何使用 Power BI 中的 Microsoft 365 使用情况分析模板应用来开始收集租户的数据。
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941327"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071451"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>启用 Microsoft 365 使用情况分析
 
@@ -92,7 +92,7 @@ Microsoft 365 的使用情况分析尚不可用于 Microsoft 365 美国政府社
   
 8. 模板应用程序实例化后，Microsoft 365 使用情况分析仪表板将在 Power BI 网页版中提供。 仪表板的初始加载将需要2到30分钟时间。
   
-租户级别聚合将在所有报告中可用。 **用户级别的详细信息仅在选择 "日历" 月的第一天或第15天后才会变为可用** 。 这将影响 "用户活动" 下的所有报告。 有关如何查看和使用这些报告的提示，请参阅 [在 Microsoft 365 使用情况分析中导航和利用报告](navigate-and-utilize-reports.md) 。
+在选择后，所有报告中都将提供租户级别聚合。 **用户级详细信息将仅在选择退出后的下一个日历月的第五个月可用** 。 这将影响 "用户活动" 下的所有报告 (请参阅 [在 Microsoft 365 使用情况分析中导航和利用报告](navigate-and-utilize-reports.md) ，以了解有关如何查看和使用这些报告的提示) 。
     
 ## <a name="make-the-collected-data-anonymous"></a>使收集的数据匿名
 

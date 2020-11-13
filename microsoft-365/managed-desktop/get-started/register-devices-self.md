@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279573"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071485"
 ---
 # <a name="register-new-devices-yourself"></a>自行注册新设备
 
@@ -47,13 +47,15 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 1.  打开具有管理权限的 PowerShell 提示。
 2.  以 `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  以 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  运行 `powershell -ExecutionPolicy restricted` 以阻止后续不受限制的脚本运行。
+
 
 #### <a name="flash-drive-method"></a>闪存驱动器方法
 
 1. 在要注册的设备以外的其他设备上，插入 u 盘。
 2. 打开具有管理权限的 PowerShell 提示。
 3. 以 `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. 打开要注册的设备，但 *不要启动安装程序体验*。 如果您意外启动了设置体验，则必须重置或重新映像设备。
+4. 打开要注册的设备，但 *不要启动安装程序体验* 。 如果您意外启动了设置体验，则必须重置或重新映像设备。
 5. 插入 u 盘，然后按 SHIFT + F10。
 6. 打开具有管理权限的 PowerShell 提示符，然后运行 `cd <pathToUsb>` 。
 7. 以 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -73,7 +75,7 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理门户注册设备
 
-在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的 " **设备** "。 查找菜单中的 "Microsoft 托管桌面" 部分，然后选择 " **设备**"。 在 "Microsoft 托管桌面设备" 工作区中，选择 " **注册设备** "，打开一个飞入的新设备。
+在 [Microsoft 终结点管理器](https://endpoint.microsoft.com/)中，选择左侧导航窗格中的 " **设备** "。 查找菜单中的 "Microsoft 托管桌面" 部分，然后选择 " **设备** "。 在 "Microsoft 托管桌面设备" 工作区中，选择 " **注册设备** "，打开一个飞入的新设备。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -83,8 +85,8 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 
 请按以下步骤操作：
 
-1. 在 " **文件上载**" 中，提供以前创建的 CSV 文件的路径。
-3. 选择 " **注册设备**"。 系统会将设备添加到 **设备边栏**上的设备列表中，并标记为 " **注册挂起**"。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
+1. 在 " **文件上载** " 中，提供以前创建的 CSV 文件的路径。
+3. 选择 " **注册设备** "。 系统会将设备添加到 **设备边栏** 上的设备列表中，并标记为 " **注册挂起** "。 注册通常需要不到10分钟的时间，如果成功，设备将显示为 "就绪"，使其可供 **用户** 使用，并等待用户开始使用。
 
 
 您可以在主页面上监视设备注册的进度。 可能报告的状态包括：
@@ -119,7 +121,6 @@ Microsoft 托管桌面通过引用其硬件哈希来唯一标识每个设备。 
 > 在将设备交给用户之前，请确保已为该用户获取并应用了 [相应的许可证](../get-ready/prerequisites.md) 。
 
 如果应用了所有许可证，则可以 [让用户准备好使用设备](get-started-devices.md)，然后你的用户可以启动设备并继续执行 Windows 安装体验。
-
 
 
 
