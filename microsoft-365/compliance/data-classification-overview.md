@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 借助数据分类仪表板，你可以了解组织中已发现和分类了多少敏感数据。
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379222"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999392"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解你的数据 - 数据分类概述
 
@@ -39,22 +39,17 @@ ms.locfileid: "48379222"
 - [可训练的分类器](classifier-learn-about.md)
 - [敏感信息类型](what-the-sensitive-information-types-look-for.md)
 
-可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
+可以在“ **Microsoft 365 合规中心** ”或“ **Microsoft 365 安全中心** ” > “ **分类** ” > “ **数据分类** ”中找到数据分类。
 
 获取介绍我们的数据分类功能的视频教程。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
-创建任何策略前，数据分类将先扫描敏感内容和标记内容。 这称为 ** 零变更管理 **。 这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。
+创建任何策略前，数据分类将先扫描敏感内容和标记内容。 这称为 **零变更管理** 。 这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。
 
 ## <a name="prerequisites"></a>先决条件
 
-访问和使用数据分类的每个帐户，都必须拥有从以下其中一个订阅向其分配的许可证：
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- 高级合规性（E5）加载项
-- 高级威胁智能（E5）加载项
+许多不同的订阅都支持终结点 DLP。 若要查看终结点 DLP 的许可选项，请参阅[信息保护许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
 
 ### <a name="permissions"></a>权限
 
