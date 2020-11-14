@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分类器是一种工具，通过使其示例能够查看各种类型的内容，您可以对其进行训练以识别各种类型的内容。 本文介绍如何创建和培训自定义分类器，以及如何重新培训它们以提高准确性。
-ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906343"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072961"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>可训练的分类器入门（预览版）
 
@@ -53,7 +53,7 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 - 通信合规性策略方案：内部人员风险管理管理员、监管审核管理员 
 
 > [!IMPORTANT]
-> 默认情况下，只有创建自定义分类器的用户才可以训练和查看该分类器所做的预测。 如果您希望其他人能够培训和查看分类器预测，请参阅 [为他人定型和审阅权限](#give-others-train-and-review-rights)。
+> 默认情况下，只有创建自定义分类器的用户才可以训练和查看该分类器所做的预测。
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>准备自定义 trainable 分类器 
 
@@ -156,21 +156,3 @@ Microsoft 365 trainable 分类器是一种工具，通过使其示例能够查�
 20. 发布分类器。
 
 21. 一旦发布了分类符，就可以[使用敏感度标签作为 Office 自动标记](apply-sensitivity-label-automatically.md)中的条件，根据条件和[通信合规性](communication-compliance.md)[自动应用保留标签策略](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。
-
-## <a name="give-others-train-and-review-rights"></a>向其他人授予培训和审核权限
-
-使用此过程可向他人授予培训、审阅和调整自定义 trainable 分类器的权限。  
- 
-1. 作为分类器的创建者，全局管理员或电子数据展示管理员使用 [连接到安全 & 合规性中心 powershell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)中的过程连接到合规中心（使用 PowerShell）。
-
-2. 运行此命令：
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   例如：
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   您可以多次运行此命令以添加多个用户。 请注意，您只能将 Exchange Online Protection (EOP) 角色组和 Azure 角色组。

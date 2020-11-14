@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 设置 Microsoft 合规性管理器用户权限和角色，并配置自动执行的操作测试。 管理用户历史记录和筛选你的仪表板视图。
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791890"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072887"
 ---
 # <a name="get-started-with-compliance-manager"></a>合规性管理器入门
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791890"
 
 ## <a name="who-can-access-compliance-manager"></a>谁可以访问合规性管理器
 
-合规性管理器可供具有 Office 365 和 Microsoft 365 许可证的组织使用。 评估可用性和管理功能取决于许可协议。  [查看服务说明详细信息](https://go.microsoft.com/fwlink/?linkid=2132371)。
+合规性管理器可供具有 Office 365 和 Microsoft 365 许可证的组织使用，并向美国政府社区云 (GCC) 中型客户提供。 评估可用性和管理功能取决于许可协议。  [查看服务说明详细信息](https://go.microsoft.com/fwlink/?linkid=2132371)。
 
 ## <a name="before-you-begin"></a>准备工作
 

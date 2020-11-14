@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791799"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072931"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -30,7 +30,7 @@ ms.locfileid: "48791799"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的正式发行版
 
-合规性管理器现已推出 (GA) 作为 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)内的端到端合规性管理解决方案。 在此版本中，合规性管理器将从 Microsoft 服务信任门户中先前的位置完成转换。
+合规性管理器现已推出 (GA) 作为 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)内的端到端合规性管理解决方案。 在此版本中，合规性管理器将从 Microsoft 服务信任门户中先前的位置完成转换。 合规性管理器现在也适用于美国政府社区 (GCC) 中型客户。
 
 由于合规性分数的公开预览发展成为集中式工具，具有增强的合规性管理功能和更易于使用的功能。  GA 发行版中引入了一个更大的预建评估集合，可帮助您扩展合规性活动。
 
