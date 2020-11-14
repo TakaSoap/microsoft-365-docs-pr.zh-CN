@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用 PowerShell for Microsoft 365 连接到 Microsoft 365 租户，从命令行执行管理中心任务。
-ms.openlocfilehash: d8263fd14d5eae58d3686f18056945a60158b421
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754300"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002401"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
@@ -32,10 +32,10 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 
 可以使用两种版本的 PowerShell 模块连接至 Microsoft 365 和管理员用户帐户、组和许可证：
 
-- Azure Active Directory PowerShell Graph（其 cmdlet 在其名称中包含 *AzureAD* ）
-- 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（其 cmdlet 在其名称中包含 *Sol* ）
+- Azure Active Directory PowerShell for Graph（其 cmdlet 在其名称中包含 *AzureAD* ）
+- 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（其 cmdlet 在其名称中包含 *Msol* ）
 
-目前，对于用户、组和许可证管理，Azure Active Directory PowerShell Graph 模块不能完全替代用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块的功能。 在某些情况下，需要同时使用两种版本。 可以在同一计算机上安全地安装两种版本。
+目前，对于用户、组和许可证管理，Azure Active Directory PowerShell for Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的功能。 在某些情况下，需要同时使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
@@ -165,7 +165,7 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    如果返回的版本号低于 *1.0.8070.2* ，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述[第 1 步](#step-1-install-the-required-software)进行安装。
+    如果返回的版本号低于 *1.0.8070.2* ，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述 [第 1 步](#step-1-install-the-required-software)进行安装。
 
 - **如果收到连接错误，请参阅**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     

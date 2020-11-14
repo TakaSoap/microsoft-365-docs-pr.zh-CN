@@ -15,38 +15,34 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: 了解如何兑换在零售商店购买的 Microsoft 365 业务标准产品密钥。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638359"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072743"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>输入 Microsoft 365 商业标准的产品密钥
 
-如果从零售商店购买了 Microsoft 365 商业标准，本文将帮助您激活订阅。 
+如果从零售商店购买了 Microsoft 365 商业标准，本文将帮助您激活订阅。
   
  **需要其他内容吗？**
- **有关 microsoft 365 系列或 microsoft 365 个人版的帮助**，请参阅将 [产品密钥与 Office 结合使用](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **有关 microsoft 365 系列或 microsoft 365 个人版的帮助** ，请参阅将 [产品密钥与 Office 结合使用](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
  **批量许可客户？** 如果你通过 [Microsoft 开放式许可证计划](https://go.microsoft.com/fwlink/p/?LinkID=613298)购买了 microsoft 365 for business，请参阅文章， [输入从 Microsoft open 购买的产品密钥](purchases-from-microsoft-open.md)。
   
 ## <a name="activate-a-new-subscription"></a>激活新订阅
 
-1. 转到 <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">office.com/setupkey</a>。
+1. 转到 <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>。
 
-2. 输入你的产品密钥，然后选择 " **下一步**"。
+2. 输入你的产品密钥，然后选择 " **下一步** "。
 
-3. 输入您的姓名、工作电子邮件地址、商务电话号码、公司名称以及国家或地区，然后选择 " **下一步**"。
+3. 输入您的姓名、工作电子邮件地址、商务电话号码、公司名称以及国家或地区，然后选择 " **下一步** "。
 
 4. 输入一个电话号码，以接收文本或呼叫以验证你的身份。
 
@@ -59,7 +55,7 @@ ms.locfileid: "48638359"
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>扩展过期日期或向现有订阅添加许可证
 
-若要使用产品密钥来扩展过期日期或将许可证添加到现有 Microsoft 365 业务标准订阅，您需要为同一 Microsoft 365 计划提供一个新的和未使用的密钥。 输入你的原始 Microsoft 365 产品密钥不起作用，因为无法再次使用已兑换的密钥。 请参阅 [将许可证添加到或扩展使用产品密钥支付的订阅](licenses/add-licenses-using-product-key.md)。
+若要延长过期日期或向现有 Microsoft 365 业务标准订阅添加许可证，请为相同的 Microsoft 365 计划使用新的未使用密钥。 输入你的原始 Microsoft 365 产品密钥不起作用，因为无法再次使用已兑换的密钥。 请参阅 [将许可证添加到或扩展使用产品密钥支付的订阅](licenses/add-licenses-using-product-key.md)。
 
 ## <a name="whats-next"></a>下一步做什么？
 

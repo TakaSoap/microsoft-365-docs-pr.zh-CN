@@ -26,20 +26,21 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 在呼叫支持之前查看 Microsoft 365 服务的运行状况状态，以查看是否有活动的服务中断。
-ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
-ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
+ms.openlocfilehash: b1819e455732d142c563f598433c410b0ae60882
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48134071"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072755"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何检查 Microsoft 365 服务运行状况
 
 [![显示管理中心正在更改且你可在 aka.ms/aboutM365preview 找到更多详细信息的标签。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
-您可以在[microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 "**服务运行状况**" 页上查看 microsoft 服务的运行状况，包括 web 上的 Office、YAMMER、Microsoft Dynamics CRM 和移动设备管理云服务。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
+您可以在 [microsoft 365 管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 " **服务运行状况** " 页上查看 microsoft 服务的运行状况，包括 web 上的 Office、YAMMER、Microsoft Dynamics CRM 和移动设备管理云服务。 If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-如果无法登录到服务门户，则可以使用 " [服务状态" 页](https://status.office365.com) 来检查阻止你登录租户的已知问题。
+如果无法登录管理中心，则可以使用 " [服务状态" 页](https://status.office365.com) 检查阻止您登录租户的已知问题。  此外，请在 Twitter 上注册以关注我们的 [@MSFT365status](https://twitter.com/MSFT365Status) ，以查看有关特定事件的信息。
+
   
 ### <a name="how-to-check-service-health"></a>如何查看服务运行状况
 
@@ -50,7 +51,7 @@ ms.locfileid: "48134071"
   
 2. 如果您没有使用新管理中心，请在 **主页** 上，选择右上角的 " **尝试新管理中心** " 切换。
 
-3. 若要查看服务运行状况，请在 "管理中心" 中，转到 "**运行状况**  >  **服务运行状况**"，或选择 "**主页" 仪表板**上的**服务运行状况**卡片。 仪表板卡片指示是否存在活动的服务问题，以及指向详细 **服务运行状况** 页面的链接。
+3. 若要查看服务运行状况，请在 "管理中心" 中，转到 " **运行状况**  >  **服务运行状况** "，或选择 " **主页" 仪表板** 上的 **服务运行状况** 卡片。 仪表板卡片指示是否存在活动的服务问题，以及指向详细 **服务运行状况** 页面的链接。
   
 4. 在 " **服务运行状况** " 页上，将以表格格式显示每个云服务的运行状况状态。
 
@@ -62,11 +63,11 @@ ms.locfileid: "48134071"
 
 " **历史记录** " 选项卡显示已解决的事件和建议的历史记录。
 
-如果 Microsoft 365 服务遇到问题，并且未在 " **服务运行状况** " 页上看到它，请选择 " **报告问题**" 并填写 "短格式" 来告诉我们它。 我们将介绍其他组织提供的相关数据和报告，以查看问题的广泛程度，以及是否与我们的服务有关。 如果是，我们会将其作为新事件或 " **服务运行状况** " 页上的公告添加，您可以在其中跟踪其解决方案。 如果您在30分钟内未看到它显示在列表中，请考虑联系支持人员以解决此问题。
+如果 Microsoft 365 服务遇到问题，并且未在 " **服务运行状况** " 页上看到它，请选择 " **报告问题** " 并填写 "短格式" 来告诉我们它。 我们将介绍其他组织提供的相关数据和报告，以查看问题的广泛程度，以及是否与我们的服务有关。 如果是，我们会将其作为新事件或 " **服务运行状况** " 页上的公告添加，您可以在其中跟踪其解决方案。 如果您在30分钟内未看到它显示在列表中，请考虑联系支持人员以解决此问题。
 
-若要自定义显示在仪表板上的服务的视图，请选择 "**首选项**  >  **自定义视图**"，并清除要从服务运行状况仪表板视图中筛选出的服务所对应的复选框。 确保为要监视的每个服务选中 "" 复选框。    
+若要自定义显示在仪表板上的服务的视图，请选择 " **首选项**  >  **自定义视图** "，并清除要从服务运行状况仪表板视图中筛选出的服务所对应的复选框。 确保为要监视的每个服务选中 "" 复选框。    
 
-若要注册影响你的租户的新事件的电子邮件通知以及活动事件的状态更改，请选择 "**首选项**  >  **电子邮件**"，单击 "**在电子邮件中向我发送服务 heath 通知**"，然后指定：
+若要注册影响你的租户的新事件的电子邮件通知以及活动事件的状态更改，请选择 " **首选项**  >  **电子邮件** "，单击 " **在电子邮件中向我发送服务 heath 通知** "，然后指定：
 
 - 最大为两个电子邮件地址。
 - 您是否需要针对事件或建议的通知
@@ -103,16 +104,16 @@ ms.locfileid: "48134071"
   
 1. 转到[翻译工具](https://www.bing.com/translator/)。
 
-2. 在" **服务运行状况**"页上，选择一个事件或公告。在" **显示详细信息**"下，复制关于该问题的文本。
+2. 在" **服务运行状况** "页上，选择一个事件或公告。在" **显示详细信息** "下，复制关于该问题的文本。
 
-3. 在"翻译工具"中，粘贴文本，然后选择" **翻译**"。
+3. 在"翻译工具"中，粘贴文本，然后选择" **翻译** "。
 
 ### <a name="definitions"></a>定义
 
 大多数情况下，服务将显示为正常，没有进一步的信息。 服务出现问题时，该问题会标识为公告或事件，并显示当前状态。
   
 > [!TIP]
-> 服务运行状况中不会显示计划内维护事件。 可以通过" **消息中心**"随时了解最新消息，从而跟踪计划内维护事件。 筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。 有关详细信息，请参阅 [Microsoft 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) 。
+> 服务运行状况中不会显示计划内维护事件。 可以通过" **消息中心** "随时了解最新消息，从而跟踪计划内维护事件。 筛选出分类为"更改计划"的消息，了解发生更改的时间、其影响以及如何做好相应准备。 有关详细信息，请参阅 [Microsoft 365 中的消息中心](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093) 。
   
 ### <a name="incidents-and-advisories"></a>事件和公告
 
