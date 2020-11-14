@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: 安全性
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: 合规性
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: 安全性
+  href: ../security/index.yml
 - name: 云服务
   items:
     - name: 路线图
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: 阻止
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: 密码
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: 许可证和服务
           items:
             - name: 查看许可证和服务
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: 组
           items:
+            - name: 管理安全组
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: 维护安全组成员身份
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 组
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: 安全摘要
       href: contoso-security-summary.md
-- name: Microsoft 365 合规中心
-  href: ../compliance/index.yml
-- name: Microsoft 365 安全中心
-  href: ../security/index.yml
 - name: Microsoft 365 体系结构和解决方案
   href: ../solutions/index.yml
 - name: 企业业务连续性管理 (EBCM) 和云服务

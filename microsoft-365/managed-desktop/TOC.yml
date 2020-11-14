@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: 准备证书和网络配置文件
           href: get-ready/certs-wifi-lan.md
+        - name: 来宾帐户的先决条件
+          href: get-ready/guest-accounts.md
         - name: 准备打印资源
           href: get-ready/printing.md
         - name: 准备应用
