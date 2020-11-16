@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 信息保护解决方案的相关要求：创建、配置和发布敏感度标签以对组织的文档和电子邮件进行分类和保护。
-ms.openlocfilehash: 2476c1f7e73c4da5699dcd8b297e251ab13b0798
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9fc130a15229f7d464ed8336c3ae37d1af367ed3
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445416"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073111"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>创建和配置敏感度标签及其策略
 
@@ -45,7 +45,7 @@ ms.locfileid: "48445416"
     - Microsoft 365 合规中心： 
         - **解决方案** > **信息保护**
         
-        如果看不到此选项，请先选择“**全部显示**”。 
+        如果看不到此选项，请先选择“ **全部显示** ”。 
     
     - Microsoft 365 安全中心： 
         - **分类** > **灵敏度标签**
@@ -53,7 +53,7 @@ ms.locfileid: "48445416"
     - 安全与合规中心：
         - **分类** > **灵敏度标签**
 
-2. 在“**标签**”页面，选择“**+ 创建标签**”，以启动“新建灵敏度标签”向导。 
+2. 在“ **标签** ”页面，选择“ **+ 创建标签** ”，以启动“新建灵敏度标签”向导。 
     
     例如，从 Microsoft 365 合规中心：
     
@@ -61,11 +61,11 @@ ms.locfileid: "48445416"
     
     注意：默认情况下，租户没有任何标签，你必须创建它们。 示例图片中的标签显示 [从 Azure 信息保护迁移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)的默认标签。
 
-3. 在**定义此标签的范围**页面上，选择的选项将确定可以配置的设置的标签范围以及它们发布后的可见位置：
+3. 在 **定义此标签的范围** 页面上，选择的选项将确定可以配置的设置的标签范围以及它们发布后的可见位置：
     
     ![敏感度标签的范围](../media/sensitivity-labels-scopes.png)
     
-    - 如果已选中 **“文件和 电子邮件”**，则可以在此向导中配置适用于支持敏感度标签的应用（如 Office Word 和 Outlook）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在这些应用中选择标签。
+    - 如果已选中 **“文件和 电子邮件”** ，则可以在此向导中配置适用于支持敏感度标签的应用（如 Office Word 和 Outlook）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在这些应用中选择标签。
     
     - 如果已选中 **“组合网站”** ，则可以在此向导中配置适用于 Microsoft 365 组和网站（Teams 和 SharePoint）的设置。 如果未选择此选项，向导将显示这些设置的第一页，但无法进行配置，用户无法在组合网站中选择标签。
 
@@ -73,25 +73,25 @@ ms.locfileid: "48445416"
     
     有关标签设置的详细信息，请参阅概述信息中的“[敏感度标签有何用途](sensitivity-labels.md#what-sensitivity-labels-can-do)”并使用向导中针对单个设置的帮助。
 
-5. 重复这些步骤以创建更多标签。 但是，如果想要创建子标签，请先选择父标签，然后点击“**...**”并选择“**更多操作**”，然后选择“**添加子标签**”。
+5. 重复这些步骤以创建更多标签。 但是，如果想要创建子标签，请先选择父标签，然后点击“ **...** ”并选择“ **更多操作** ”，然后选择“ **添加子标签** ”。
 
-6. 创建所需的所有标签后，请查看其顺序，如有必要，请向上或向下移动它们。 若要更改标签的顺序，请选择“**...**”进行**更多操作**”，然后选择 “**上移 **”或 “**下移**”。 有关详细信息，请参阅概述信息中的“[标签优先级（顺序非常重要）](sensitivity-labels.md#label-priority-order-matters)”。
+6. 创建所需的所有标签后，请查看其顺序，如有必要，请向上或向下移动它们。 若要更改标签的顺序，请选择“ **...** ”进行 **更多操作** ”，然后选择 “ **上移** ”或 “ **下移** ”。 有关详细信息，请参阅概述信息中的“[标签优先级（顺序非常重要）](sensitivity-labels.md#label-priority-order-matters)”。
 
-若要编辑现有标签，请将其选中，然后选择“**编辑标签**”按钮：
+若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”按钮：
 
 ![编辑标签按钮以便编辑敏感度标签](../media/edit-sensitivity-label-full.png)
 
-此按钮将启动“**编辑敏感度标签**”向导，可用于更改步骤 4 中的所有标签设置。
+此按钮将启动“ **编辑敏感度标签** ”向导，可用于更改步骤 4 中的所有标签设置。
 
 除非你了解对用户的影响，否则不要删除标签。 有关更多信息，请参阅[移除和删除标签](#removing-and-deleting-labels)部分。 
 
 > [!NOTE]
-> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，即可对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
+> 如果要编辑已使用标签策略发布的标签，则在完成该向导时不需要执行额外步骤。 例如，不需要将其添加到新的标签策略，以便对相同用户提供所做的更改。 但是，可允许在 24 小时内将所做的更改复制到用户和服务。
 
 发布标签之前，无法在应用程序或服务中使用。 若要发布标签，必须将其[添加到标签策略](#publish-sensitivity-labels-by-creating-a-label-policy)。
 
 > [!IMPORTANT]
-> 在此“**标签**”选项卡上，不要选择“**发布标签**”选项卡（或在编辑标签时的“**发布标签**”按钮），除非你需要创建新的标签策略。 仅当用户需要不同的标签或不同的策略设置时，才需要多个标签策略。 旨在创建尽可能少的标签策略 - 组织只有一个标签策略的情况并不少见。
+> 在此“ **标签** ”选项卡上，不要选择“ **发布标签** ”选项卡（或在编辑标签时的“ **发布标签** ”按钮），除非你需要创建新的标签策略。 仅当用户需要不同的标签或不同的策略设置时，才需要多个标签策略。 旨在创建尽可能少的标签策略 - 组织只有一个标签策略的情况并不少见。
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>附加标签设置在安全与合规中心 PowerShell 中可用
 
@@ -101,11 +101,7 @@ ms.locfileid: "48445416"
 
 - 使用 *LocaleSettings* 参数来进行跨国部署，以便用户可查看使用本地语言的标签名称和工具提示。 [下列部分](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) 有一个示例配置，用于为法语、意大利语和德语指定标签名称和工具提示文本。
 
-- 使用 *ApplyContentMarkingFooterFontName* 参数来指定你选择的指定页脚字体。 Calibri 是页眉、页脚和水印文本的默认字体。 如果你的备选字体名称对显示标签的服务或设备不可用，则该字体将回退到 Calibri。
-
-- 使用 *ApplyContentMarkingHeaderFontColor* 参数来指定特定标头的自定义颜色，这些颜色使用的是红色、绿色和蓝色（RGB）组件的十六进制三原色代码。 例如，#40e0d0 是青绿色的 RGB 十六进制值。 你可以在许多用于编辑图片的应用程序中找到这些代码。 例如，Microsoft 画图可以让你从调色板中选择自定义颜色，并将自动显示 RGB 值，因此你可以复制该颜色。
-
-对于 Azure 信息保护 "仅限统一标记客户端"，你还可以指定包括设置标签颜色，以及在应用标签时应用自定义属性的 [高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 有关完整列表，请参阅该客户端管理员指南的 “[标签 的可用高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)”。
+- 仅限 Azure 信息保护统一标记客户端，你可以指定包括设置标签颜色，以及在应用标签时应用自定义属性的 [高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 有关完整列表，请参阅该客户端管理员指南的“[标签 可用高级设置](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)”。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>配置不同语言的灵敏度标签的配置示例
 
@@ -143,7 +139,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Microsoft 365 合规中心： 
         - **解决方案** > **信息保护**
         
-        如果看不到此选项，请先选择“**全部显示**”。 
+        如果看不到此选项，请先选择“ **全部显示** ”。 
     
     - Microsoft 365 安全中心： 
         - **分类** > **灵敏度标签**
@@ -151,7 +147,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - 安全与合规中心：
         - **分类** > **灵敏度标签**
 
-2. 依次选择“**标签策略**”选项卡和“**发布标签**”，以启动“创建策略”向导：
+2. 依次选择“ **标签策略** ”选项卡和“ **发布标签** ”，以启动“创建策略”向导：
     
     例如，从 Microsoft 365 合规中心：
         
@@ -159,30 +155,30 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     注意：默认情况下，租户没有任何策略，你必须创建它们。 
 
-3. 在想到中，选择“**选择要发布的敏感度标签**”。 选择可在应用和服务中可以使用的标签，随后选择“**添加**”。
+3. 在想到中，选择“ **选择要发布的敏感度标签** ”。 选择可在应用和服务中可以使用的标签，随后选择“ **添加** ”。
     
     > [!IMPORTANT]
     > 如果选择子标签，请确保也选择其父标签。
     
-4. 查看所选标签，若要进行任何更改，请选择“**编辑 **”。 否则选择“**下一步**”。
+4. 查看所选标签，若要进行任何更改，请选择“ **编辑** ”。 否则选择“ **下一步** ”。
 
 5. 按照提示配置策略设置。
     
-    所看到的策略设置会匹配你选择的标签的范围。 例如，如果选择了仅用于**文件和电子邮件** 范围，则默认情况下看不到策略设置 **“”将此标签应用到组和网站”** 和 **“要求用户将标签应用到他们的组和网站”**。
+    所看到的策略设置会匹配你选择的标签的范围。 例如，如果选择了仅用于 **文件和电子邮件** 范围，则默认情况下看不到策略设置 **“”将此标签应用到组和网站”** 和 **“要求用户将标签应用到他们的组和网站”** 。
     
     有关这些设置的详细信息，请参阅概述信息中的“[标签策略有何用途](sensitivity-labels.md#what-label-policies-can-do)”并使用向导中针对单个设置的帮助。
 
 7. 如果不同的用户或范围需要不同的策略设置，请重复这些步骤。 例如，希望为一组用户创建附加标签，或用户为子集创建不同的默认标签。 或者，如果你配置的标签具有不同的范围。
 
-8. 如果创建多个可能导致用户发生冲突的标签策略，请查看策略顺序，并根据需要向上或向下移动。 若要更改标签策略的顺序，请选择“**...**”进行**更多操作**”，然后选择 “**上移 **”或 “**下移**”。 有关详细信息，请参阅概述信息中的“[标签策略优先级（顺序非常重要）](sensitivity-labels.md#label-policy-priority-order-matters)”。
+8. 如果创建多个可能导致用户发生冲突的标签策略，请查看策略顺序，并根据需要向上或向下移动。 若要更改标签策略的顺序，请选择“ **...** ”进行 **更多操作** ”，然后选择 “ **上移** ”或 “ **下移** ”。 有关详细信息，请参阅概述信息中的“[标签策略优先级（顺序非常重要）](sensitivity-labels.md#label-policy-priority-order-matters)”。
 
 完成向导会自动发布标签策略。 若要更改已发布的策略，只需对其进行编辑。 没有特定发布或重新发布操作可供选择。
 
-若要编辑现有标签策略，请将其选中，然后选择“**编辑策略**”按钮： 
+若要编辑现有标签策略，请将其选中，然后选择“ **编辑策略** ”按钮： 
 
 ![编辑敏感度标签](../media/edit-sensitivity-label-policy-full.png)
 
-此按钮将启动“**创建策略**”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
+此按钮将启动“ **创建策略** ”向导，可用于编辑所包含的标签和标签设置。 完成向导后，所有更改都将自动复制到所选用户和服务。
 
 用户在一小时内即可在其 Office 应用程序中看到新标签。 但是，最多需要 24 小时以将所做的更改复制到用户和服务。
 
@@ -213,7 +209,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - 如果从标签策略中移除标签，让标签不再发布给最初指定的用户，那么当标签策略下次刷新时，标签就不再可供这些用户在 Office 应用程序中选择。 不过，如果已将标签应用于文档或电子邮件，那么标签不会从此类内容中移除。 由标签应用的任何加密都会保留，且基础保护模板也会保持已发布状态不变。 
 
-- 对于已移除但以前应用于内容的标签，在 Word、Excel 和 PowerPoint 中使用内置标签的用户仍会在状态栏中看到已应用标签名称。 同样，已移除但以前应用于 SharePoint 网站的标签仍会在“敏感度”**** 列中显示标签名称。
+- 对于已移除但以前应用于内容的标签，在 Word、Excel 和 PowerPoint 中使用内置标签的用户仍会在状态栏中看到已应用标签名称。 同样，已移除但以前应用于 SharePoint 网站的标签仍会在“敏感度”列中显示标签名称。
 
 相比之下，如果删除标签：
 
@@ -221,7 +217,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - 对于桌面应用程序：元数据中的标签信息会保留，但由于无法再进行标签 ID 到名称的映射，导致用户看不到显示的已应用标签名称（例如，在状态栏中），因此用户会假定内容未标记。 如果标签应用了加密，则会保留加密，且用户仍会在内容打开时看到当前已存档保护模板的名称和说明。
 
-- 对于 Office 网页版：用户在状态栏或“敏感度”**** 列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 OneDrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
+- 对于 Office 网页版：用户在状态栏或“敏感度”列中看不到标签名称。 元数据中的标签信息仅在标签未应用加密的情况下保留。 如果标签应用了加密，且你已[为 SharePoint 和 OneDrive 启用敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，那么元数据中的标签信息就会遭移除，且加密也会遭撤消。 
 
 从标签策略中移除敏感度标签或删除敏感度标签时，这些更改最多可能需要一个小时才能复制到所有用户和服务。
 

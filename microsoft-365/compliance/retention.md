@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920522"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073133"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -204,14 +204,7 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
     
 - 若有多个规则要分配自动应用标签，且内容满足多个规则的条件，那么分配的是最早的（按创建日期）规则的保留标签。
     
-若要了解如何以及为何应用一个保留标签（而非另一个），则了解显式分配标签和隐式分配标签之间的差异非常有用：
-
-- 通过标签策略应用的保留标签是显式分配的
-- 通过自动应用策略自动应用的保留标签是隐式分配的
-
-显式分配的保留标签优先于隐式分配的保留标签。 有关详细信息，请参阅本页上的[保留原则或优先性是什么？](retention.md#the-principles-of-retention-or-what-takes-precedence)部分。
-
-对于 SharePoint，当您为 SharePoint 库、文件夹或文档集中的所有内容配置默认标签时，也可以隐式分配保留标签。 在这种情况下，自动应用标签优先于默认标签，但若要完全了解使用默认标签时的所有结果，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)部分中的信息。 
+要了解使用默认标签时的所有结果，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)部分中的信息。
 
 #### <a name="monitoring-retention-labels"></a>监视保留标签
 
@@ -250,11 +243,11 @@ Office 365 安全与合规中心的保留标签概述信息与 **“信息管理
 |对最终用户显示 UI | 否 | 是 |
 |在内容移动时仍继续应用在内容上 | 否 | 是，在您的 Microsoft 365 租户中 |
 |将项声明为记录| 否 | 是 |
-|保留期的开始时间： <br /> - 创建或最后修改项目时<br /> - 标记或基于事件时 | <br />是 <br />否 | <br />是 <br /> 是 |
+|保留期的开始时间： <br /> - 创建或最后修改项目时<br /> - 标记或基于事件时 | <br />是 <br />否 | <br />必需 <br /> 是 |
 |处置评审 | 否| 是 |
 |最长 7 年的处置证明 | 否 |是，当项被声明为记录时|
 |审核管理员活动| 是 | 是|
-|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
+|识别遵循保留设置的项： <br /> - 内容搜索 <br /> - 数据分类页、内容资源管理器、活动资源管理器 | <br /> 否 <br /> 否 | <br /> 必需 <br /> 是|
 
 请注意，可以同时将保留策略和保留标签用作互补的保留方法。 例如：
 

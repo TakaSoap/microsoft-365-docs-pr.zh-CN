@@ -8,27 +8,27 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: e4065fc992305976a1309b05a473e15e1f03f09c
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304896"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070876"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>符合 GDPR 和 CCPA 的适用于 Windows 企业数据主体请求的数据处理者服务 
 
 >[!NOTE]
->本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。 若要了解有关计划的详细信息并同意使用条款，请参阅 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
+>本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。若要了解有关程序的详细信息并同意使用条款，请参阅[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>数据主体请求 (DSR) 简介 
-一般数据保护条例 (GDPR) 赋予民众（在条例中称为_数据主体_）权利，即管理已由雇主或其他类型机构或组织（称为_数据控制者_或简称为_控制者_）收集的个人数据。 根据 GDPR，个人数据的定义很宽泛，即指与已识别或可识别的自然人相关的任何数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。 数据主体向控制者发出的对其个人数据执行操作的正式请求，称为_数据主体请求_ (DSR)。 
+一般数据保护条例 (GDPR) 赋予民众（在条例中称为 _数据主体_ ）权利，即管理已由雇主或其他类型机构或组织（称为 _数据控制者_ 或简称为 _控制者_ ）收集的个人数据。 根据 GDPR，个人数据的定义很宽泛，即指与已识别或可识别的自然人相关的任何数据。 GDPR 赋予数据主体对其个人数据的特定权利；这些权利包括，获取个人数据副本、请求更正个人数据、限制个人数据处理、删除个人数据，或接收能转移给另一个控制者的电子格式个人数据。 数据主体向控制者发出的对其个人数据执行操作的正式请求，称为 _数据主体请求_ (DSR)。 
 
 同样，加州消费者隐私法案 (CCPA) 规定了加州消费者的隐私权和义务，其中包括与 GDPR 的数据主体权利类似的权利，例如删除、访问和接收（可移植性）其个人信息的权利。 CCPA 还就某些披露规定了在选择行使权限时防止歧视的保障措施，并就分类为“销售”的特定数据传输提出了“选择退出/选择加入”要求。 “出售”广义定义为包含共享数据来换取有值对价的行为。 有关 CCPA 的详细信息，请参阅[加州消费者隐私法案](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[加州消费者隐私法案常见问题解答](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
@@ -98,4 +98,4 @@ Microsoft 提供通过预先存在的应用程序编程接口 (API) 直接导出
 
 ## <a name="notify-about-exporting-or-deleting-issues"></a>通知导出或删除问题 
 
-如果在从 Azure 门户导出或删除数据时遇到问题，请转到 Azure 门户“帮助 + 支持”**** 边栏选项卡，并在“订阅管理 > 其他安全与合规请求 > 隐私”边栏选项卡和“GDPR 请求”**** 下提交新票证。 
+如果在从 Azure 门户导出或删除数据时遇到问题，请转到 Azure 门户“帮助 + 支持”边栏选项卡，并在“订阅管理 > 其他安全与合规请求 > 隐私”边栏选项卡和“GDPR 请求”下提交新票证。 

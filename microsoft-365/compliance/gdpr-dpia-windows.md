@@ -8,26 +8,26 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 5d30440d0051f4ec678effac657808853c7a6515
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: a31ccc8cab6995e0647e397be4b869e48da599b4
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305002"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070886"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>数据保护影响评估：使用 Microsoft Windows 企业数据处理者服务的数据控制者指南
 
 >[!NOTE]
->本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。 若要了解有关计划的详细信息并同意使用条款，请参阅 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
+>本主题面向 Windows 企业预览程序的数据处理者服务的参与者，并且需要接受特定的使用条款。若要了解有关程序的详细信息并同意使用条款，请参阅[https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
-根据 一般数据保护条例 (GDPR)，数据控制者需要为“可能对自然人的权限和自由造成高风险”的处理操作准备数据保护影响评估(DPIA)。 Windows 企业本身的数据处理者服务中没有固有的内容，这必然要求使用它的数据控制者创建 DPIA。 无论是否需要 DPIA，都将依赖于数据控制者部署、配置和使用 Windows 企业数据处理者服务的详细信息和上下文。 
+根据一般数据保护条例 (GDPR)，数据控制者需要为“可能对自然人的权限和自由造成高风险”的处理操作准备数据保护影响评估 (DPIA)。 Windows 企业本身的数据处理者服务中没有固有的内容，这必然要求使用它的数据控制者创建 DPIA。 无论是否需要 DPIA，都将依赖于数据控制者部署、配置和使用 Windows 企业数据处理者服务的详细信息和上下文。 
 
 此文档的目的是为数据控制者提供 Windows 企业数据处理者服务的相关信息，帮助他们确定是否需要 DPIA 以及要包含的详细信息（如果需要）。
 
