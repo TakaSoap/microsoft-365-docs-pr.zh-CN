@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解如何创建内容中心。
-ms.openlocfilehash: f65b542dfe9cbb945f347323053cee582deef25b
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 878319dd938f565f00a250f0b08de15641644e1c
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321829"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087435"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建内容中心
 
@@ -40,7 +41,7 @@ ms.locfileid: "48321829"
 2. 在 SharePoint 管理中心的“**网站**”下，选择“**活动网站**”。
 3. 在“**活动网站**”页面上，单击“**创建**”，然后选择“**其他选项**”。
 4. 在“**选择模板**”菜单上，选择“**内容中心**”。
-5. 对于新网站，提供 **网站名称**、**主管理员**和 **语言**。</br>
+5. 对于新网站，提供 **网站名称**、**主管理员** 和 **语言**。</br>
 
 > [!NOTE] 
 > 可选择一个内容中心网站呈现任意可用语言，但请注意，当前模型仅可为英语文件创建。 另请注意，与其他网站模板一样，网站创建后，默认网站语言不可编辑。</br>

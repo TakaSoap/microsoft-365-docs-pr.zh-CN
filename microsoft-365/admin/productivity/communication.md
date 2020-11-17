@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 沟通的详细信息-人员体验效率分数。
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804651"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123438"
 ---
 # <a name="communication--people-experiences"></a>通信–人员体验
 
@@ -57,8 +57,8 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 3. **当前状态的可视化效果：**
     - 水平条，其中蓝色部分表示在标头中表示的百分比。
     - 突出显示用于计算标头中所表示百分比的 (分子/分母) ：
-      - **分子** ：过去28天内使用多种通信模式的人员数
-      - **分母** ：最近28天内为多个通信产品标记为启用的人员数
+      - **分子**：过去28天内使用多种通信模式的人员数
+      - **分母**：最近28天内为多个通信产品标记为启用的人员数
     - 关键指标的 **对等基准** 值也显示为百分比
 
 1. **查看通信资源：** 单击此处将以与通信相关的视频/文章的形式征用所有支持内容。 从这些列表中，您可以导航到用于通信的自定义播放列表，以及随后针对所有生产效率评分类别。
@@ -67,7 +67,7 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 
  此图提供了主要洞察力中关键指标的分子的趋势，即，在过去的180天中使用多个通信模式的用户数。 在这里，每日值是在过去28天内使用多种类型的通信的用户数的合计。
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="主要对通信模式的见解。":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="显示使用多种模式进行通信的用户数与时间的图表。":::
 
 ### <a name="scoring-model"></a>记分模型
 
@@ -79,17 +79,17 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 
 ### <a name="breakdown-of-communication-by-modes"></a>按模式的通信细目
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="主要对通信模式的见解。":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![通信模式细目。]":::
 
 1. **标头：** 突出理解的目标，以便在通信中考虑的不同通信模式提供详细细目分类
 2. **正文：** 提供有关使用不同模式共享知识的值的信息
 3. **可视化：** 细目分类表示每个模式的 ues。 彩色部分和每条线上的分数代表以该模式启用的人员数百分比发送电子邮件、邮件或社区帖子的人数：
       - **发送电子邮件的人员：** 彩色部分和分数表示为发送电子邮件的 Exchange 启用的用户所占的百分比。 此分数的构造依据：
-          - **分子** ：在最近28天内发送电子邮件的用户
-          - **分母** ：在最近28天内为 Exchange 启用的人员
+          - **分子**：在最近28天内发送电子邮件的用户
+          - **分母**：在最近28天内为 Exchange 启用的人员
       - **在 Microsoft 团队中发送邮件的人：** 彩色部分和分数表示为正在发送邮件的 Microsoft 团队启用的用户百分比。 此分数的构造依据：
-          - **分子** ：最近28天内在 Microsoft 团队上发送邮件的用户
-          - **分母** ：在最近28天内为 Microsoft 团队启用的人员
+          - **分子**：最近28天内在 Microsoft 团队上发送邮件的用户
+          - **分母**：在最近28天内为 Microsoft 团队启用的人员
       - **社区中的人员发布：** 彩色部分和分数表示启用了在社区中发布的 Yammer 的用户所占的百分比。 此分数的构造依据：
           - **分子：** 最近28天内的 Yammer 社区中的人员发布
           - **分母：** 最近28天内启用了 Yammer 的人员
@@ -97,15 +97,15 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 
 ### <a name="mentions-in-emails"></a>在电子邮件中 @mentions
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="主要对通信模式的见解。":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="![带提及的电子邮件。]":::
 
 1. **标头：** 突出显示在最近28天内启动的新电子邮件线程在包含 @mentions 时的响应率增加
 2. **正文：** 提供有关在电子邮件中使用 @mentions 的值的信息。 此外，使用 @mentions 的人员表示为在最近28天内发送过电子邮件的所有用户的百分比。
 3. **可视化：** 根据新电子邮件线程是否已 @mentions，断开其响应率：
-      - **对具有 @mentions 的电子邮件的响应：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。 此分数的构造依据：
+      - **对带提及的电子邮件的响应 \@ ：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。 此分数的构造依据：
           - **分子：** 包含已启动的 @mentions 的新电子邮件线程，也是在最近28天内收到响应。
           - **分母：** 包含最近28天内启动的 @mentions 的新电子邮件线程
-      - **对不带 @mentions 的电子邮件的响应：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。 此分数的构造依据：
+      - **对不提及的电子邮件的响应 \@ ：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。 此分数的构造依据：
           - **分子：** 不包含 @mentions 的新电子邮件线程（已启动）也会在最近28天内收到响应。
           - **分母：** 新的电子邮件线程不包含最近28天内启动的 @mentions。
 4. **查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。
@@ -113,7 +113,7 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>通过 Microsoft 团队中的类型细分邮件
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="主要对通信模式的见解。":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="![团队邮件类型。]":::
 
 1. **标头：** 突出显示以发送任何类型的邮件 (的人员的百分比发送的邮件，其中包括在最近28天) 的聊天和频道消息
 2. **正文：** 提供有关在 Microsoft 团队中使用频道消息的值的信息
@@ -128,7 +128,9 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 
 ### <a name="questions-and-answers-in-yammer"></a>Yammer 中的问题和答案
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="主要对通信模式的见解。" 的问题的所有帖子的百分比的答案。
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Yammer 中的问题和答案]":::
+
+1. **标头：** 突出显示在 Yammer 上标记为 "问题" 的帖子，这些帖子已接收到在 &quot; &quot; 最近28天内被标记为 "关于 Yammer" 的问题的所有帖子的百分比的答案。
 2. **正文：** 提供有关在 Yammer 中使用问题和答案的值的信息，以共享知识。
 3. **可视化：** 分解组织中的问题和解答功能的使用：
       - **问题：** 条形图和关联数字的彩色部分代表最近28天中标记为问题的帖子总数。
@@ -140,7 +142,7 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 此部分提供了与页面上的所有见解相关的活动的用户级别详细信息。 表中的列说明如下：
 
 - **Username**  是用户的电子邮件地址。
-- 如果用户为 " **显示名称** "，则为完整名称。
+- 如果用户为 "**显示名称**"，则为完整名称。
 - **上次活动日期**  用户上次执行与最近28天内的通信中的任何见解相关的活动的时间。
 - **部门：** 在 Azure Active Directory 中为用户定义的部门 (Azure AD) 。
 - **公司：** 在 Azure AD 中为用户定义的公司。
@@ -156,7 +158,7 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 - **发布到 Yammer 的天数：** 用户在最近28天内的 Yammer 上发布的天数。
 - **在电子邮件中 @mention 使用的天数：** 用户在最近28天内向其发送包含 @mention 的电子邮件的天数。
 
-您还可以通过选择 "导出" "导出" **按钮** 链接将报告数据导出到 Excel .csv 文件中。 请注意，您可以通过在单击 " **选择列** " 后选择所需的列来自定义视图中的列集。
+您还可以通过选择 "导出" "导出" **按钮** 链接将报告数据导出到 Excel .csv 文件中。 请注意，您可以通过在单击 " **选择列**" 后选择所需的列来自定义视图中的列集。
 
 ## <a name="related-content"></a>相关内容
 

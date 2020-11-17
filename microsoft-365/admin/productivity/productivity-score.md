@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804720"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123485"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 工作效率分数 
 
@@ -32,8 +32,8 @@ ms.locfileid: "48804720"
 
 分数包括：
 
-- 帮助您了解用户如何使用 Microsoft 365 产品在平台之间进行协作、沟通和工作的 **指标** 。
-- 有关数据的 **见解** ，可帮助您确定提高员工工作效率和满意度的机会。
+- 帮助您了解用户如何使用 Microsoft 365 产品在平台之间进行协作、沟通和工作的 **指标**。
+- 有关数据的 **见解**，可帮助您确定提高员工工作效率和满意度的机会。
 - 您可以采取一些 **建议的措施** 来帮助组织中的人员有效地使用 Microsoft 365 产品，以便每个人都可以完成其最佳工作。
 
 我们在两个方面提供数据、见解和建议： 
@@ -88,13 +88,13 @@ ms.locfileid: "48804720"
 - 全局读取者 
 - 报告读取者 
 
-您可以在 " **报告**  >  **效率分数** " 下访问 Microsoft 365 管理主页的体验。
+您可以在 "**报告**  >  **效率分数**" 下访问 Microsoft 365 管理主页的体验。
 
 ## <a name="interpreting-productivity-score"></a>解释工作效率分数 
 
 "生产力分数" 主页显示了每个类别的总分和分数历史记录以及主要洞察力。
 
-:::image type="content" source="../../media/prodscore-landing.png" alt-text="报告中的 &quot;生产效率分数&quot; 页。&quot;:::
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="报告中的 &quot;生产效率分数&quot; 页。":::
 
 **您的分数** 显示为百分比值，以磅为单位。 您可以在分子中查看您的要点以及分母中的最大可能分数。
 
@@ -104,7 +104,7 @@ ms.locfileid: "48804720"
 
 对于网络连接，推荐的准则为80点。
 
-&quot; **分数细分** " 部分提供了按人员和技术经验领域的基准的工作效率分数细分。
+" **分数细分** " 部分提供了按人员和技术经验领域的基准的工作效率分数细分。
 
 分数历史记录显示最近6个月内每个类别中的得分如何变化。
 

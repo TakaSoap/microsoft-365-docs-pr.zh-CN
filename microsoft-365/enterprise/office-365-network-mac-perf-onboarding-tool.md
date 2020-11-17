@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试工具 (预览) '
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295522"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087075"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 网络连接测试工具 (预览) 
 
@@ -183,7 +183,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 #### <a name="download-speed"></a>下载速度
 
-我们通过 SharePoint 服务的前端衡量15Mb 文件的下载速度。 结果以每秒 mb 为单位显示，以指示可以从 SharePoint 或 OneDrive 中 **一秒**下载的大小文件（以 mb 为单位）。 该号码应类似于每秒最小电路带宽的十分之一。 例如，如果 internet 连接为100mbps，则可能需要每秒 10 mb (10MBps) 。
+我们通过 SharePoint 服务的前端衡量15Mb 文件的下载速度。 结果以每秒 mb 为单位显示，以指示可以从 SharePoint 或 OneDrive 中 **一秒** 下载的大小文件（以 mb 为单位）。 该号码应类似于每秒最小电路带宽的十分之一。 例如，如果 internet 连接为100mbps，则可能需要每秒 10 mb (10MBps) 。
 
 #### <a name="buffer-bloat"></a>缓冲区膨胀
 
@@ -217,7 +217,7 @@ Microsoft 365 网络连接测试分为两个部分; <https://connectivity.office
 
 我们测试从用户办公室位置到所有必需的 Microsoft 365 网络终结点的 HTTP 连接。 这些内容是在中发布的 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 对于任何不能连接到的必需网络终结点，都会显示网络洞察力。
 
-连接 ay 由企业网络外围上的代理服务器、防火墙或其他网络安全设备阻止，或作为云代理使用。
+在企业网络外围上，代理服务器、防火墙或其他网络安全设备可能会阻止连接。 使用 HTTP 请求测试与 TCP 端口80的连接，并使用 HTTPS 请求测试与 TCP 端口443的连接。 如果没有响应，FQDN 将被标记为失败。 如果存在 HTTP 响应代码407，则表示 FQDN 被标记为失败。 如果存在 HTTP 响应代码403，则检查响应的服务器属性，如果它似乎是代理服务器，我们会将其标记为 "失败"。 您可以 curl.exe 中模拟我们使用 Windows 命令行工具执行的测试。
 
 我们会在所需的每个 Microsoft 365 网络终结点（在上定义了）中测试 SSL 证书 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 如果有任何测试未找到 Microsoft SSL 证书，则已连接的加密网络必须已被中间网络设备截取。 网络洞察力显示在任何截获的加密网络终结点上。
 

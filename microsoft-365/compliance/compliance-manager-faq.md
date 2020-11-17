@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 查找有关 Microsoft 合规性管理器的常见问题解答，这些问题可帮助组织简化和自动化风险评估。
-ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791778"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087065"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合规性管理器常见问题
 
@@ -73,11 +73,11 @@ Microsoft 合规性管理器作为 Microsoft 服务信任门户内的合规性�
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>是否有使用合规性管理器的许可要求？
 
-是。 公开发布的合规性管理器包含新的许可条款。 所有具有 Office 365 和 Microsoft 365 许可证的组织 (除美国政府和 DoD) 都有权访问合规性管理器。 但是，组织可使用的评估和管理评估模板的方式取决于许可协议。 有关详细信息，请访问 [Microsoft 365 许可指南，以获取安全性和合规性](https://go.microsoft.com/fwlink/?linkid=2132371) 。
+是。 公开发布的合规性管理器包含新的许可条款。 拥有 Office 365 和 Microsoft 365 许可证的所有组织以及美国政府社区 (GCC) 中型客户可以访问合规性管理器。 但是，组织可使用的评估和管理评估模板的方式取决于许可协议。 有关详细信息，请访问 [Microsoft 365 许可指南，以获取安全性和合规性](https://go.microsoft.com/fwlink/?linkid=2132371) 。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果得分较高，这是否意味着我完全合规？
 
-不正确。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它不表示对特定标准或法规的组织合规性的绝对度量。 合规性管理器和合规性分数不应以任何方式解释为保证。
+否。 您的合规性分数可衡量您在完成建议的操作以帮助降低数据保护和法规标准方面的风险的过程。 它不表示对特定标准或法规的组织合规性的绝对度量。 合规性管理器和合规性分数不应以任何方式解释为保证。
 
 ## <a name="can-i-use-compliance-manager-for-non-microsoft-products"></a>我是否可以对非 Microsoft 产品使用合规性管理器？
 

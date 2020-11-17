@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d267219cfa36987c7372a42572d00f4441ccd0cd
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ed5c7084e899c99237074a46af21454a4c21dfe8
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842484"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087011"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解高级搜寻架构
 
@@ -41,10 +41,10 @@ ms.locfileid: "48842484"
 ## <a name="get-schema-information-in-the-security-center"></a>获取安全中心中的架构信息
 构建查询时，请使用内置架构参考快速获取有关架构中每个表的以下信息：
 
-- **表说明** —表中包含的数据类型和数据源。
-- **列** —表中的所有列。
-- **操作类型** ： `ActionType` 表示表支持的事件类型的列中的可能值。 仅为包含事件信息的表提供此信息。
-- **示例查询** —示例查询，可介绍如何使用表。
+- **表说明**—表中包含的数据类型和数据源。
+- **列**—表中的所有列。
+- **操作类型**： `ActionType` 表示表支持的事件类型的列中的可能值。 仅为包含事件信息的表提供此信息。
+- **示例查询**—示例查询，可介绍如何使用表。
 
 ### <a name="access-the-schema-reference"></a>访问架构参考
 若要快速访问架构引用，请在 "架构表示" 中选择表名称旁边的 " **查看引用** 操作"。 您还可以选择 " **架构引用** " 以搜索表。   
@@ -52,13 +52,14 @@ ms.locfileid: "48842484"
 ![显示如何访问门户架构引用的图像 ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="learn-the-schema-tables"></a>了解架构表
-以下引用列出了架构中的所有表。 每个表名称链接到描述该表的列名称的页面。 表和列名称作为架构表示的一部分列在安全中心的“高级搜寻”屏幕上。
+以下引用列出了架构中的所有表。 每个表名称链接到描述该表的列名称的页面。 在高级搜寻屏幕上，表名称和列名也作为架构表示形式的一部分列在 "安全中心" 中。
 
 | 表名 | 说明 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | 与警报关联的文件、IP 地址、Url、用户或设备 |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | 来自 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft 云应用安全性和 Microsoft Defender for Identity 的警报，包括严重信息和威胁分类  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | 云应用和服务中与文件相关的活动 |
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | 涉及 Office 365 和其他云应用程序和服务中的帐户和对象的事件 |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | 多个事件类型，包括安全控件（如 Windows Defender 防病毒和 Exploit Protection）触发的事件 |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | 从终结点上的证书验证事件获取的签名文件的证书信息 |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 文件创建、修改和其他文件系统事件 |
@@ -66,21 +67,21 @@ ms.locfileid: "48842484"
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 计算机信息，包括操作系统信息 |
 | **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 设备上的登录和其他身份验证事件 |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | 网络连接和相关事件 |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 计算机的网络属性，包括适配器、IP 和 MAC 地址，以及已连接的网络和域 |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 设备的网络属性，包括物理适配器、IP 和 MAC 地址以及连接的网络和域 |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 过程创建和相关事件 |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | 创建和修改注册表项 |
 | **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | 威胁和漏洞管理评估事件，指示设备上的各种安全配置的状态 |
 | **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 威胁和漏洞管理用于评估设备的各种安全配置的知识库；包括各种标准和基准的映射  |
-| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)** | 设备上的软件清单以及这些软件产品中的任何已知漏洞 |
+| **[DeviceTvmSoftwareInventoryVulnerabilities](advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md)** | 设备上的软件清单和这些软件产品中的任何已知漏洞 |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 公开披露的漏洞的知识库，包括攻击代码是否已公开 |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | 有关附加到电子邮件的文件的信息 |
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 电子邮件事件，包括电子邮件传递和阻止事件 |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | 在 Microsoft 365 将电子邮件传递给收件人邮箱之后，在送达后发生的安全事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有关电子邮件上的 Url 的信息 |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory (AD) 的本地域控制器的事件。 该表包含一系列身份相关的事件以及域控制器上的系统事件。 |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 涉及运行 Active Directory (AD) 的本地域控制器的事件。 此表涵盖了域控制器上与标识相关的事件和系统事件的范围。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 来自各种源（包括 Azure Active Directory）的帐户信息 |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的身份验证事件 |
-| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）执行的查询活动 |
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 对 Active Directory 对象（如用户、组、设备和域）的查询 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

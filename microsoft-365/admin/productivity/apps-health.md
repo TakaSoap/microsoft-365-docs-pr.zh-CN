@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 应用健康状况技术体验工作效率分数的详细信息。
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841185"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123507"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用程序运行状况–技术经验
 
-工作效率分数可帮助组织转换工作的完成情况，以了解有关用户如何使用 Microsoft 365 应用和支持技术体验的指标。 分数反映了组织&#39;的人员和技术体验类别的绩效，并将您的成绩与您的组织（如您的组织）进行比较。 应用运行状况类别是 "人员体验" 下的度量的一部分。 若要了解详细信息，请参阅 [生产力分数概述](productivity-score.md) 。
+工作效率分数可帮助组织转换工作的完成情况，以了解有关用户如何使用 Microsoft 365 应用和支持技术体验的指标。 分数反映了组织&#39;的人员和技术体验类别的绩效，并将您的成绩与您的组织（如您的组织）进行比较。 应用运行状况类别是技术体验中的度量的一部分。 若要了解详细信息，请参阅 [生产力分数概述](productivity-score.md) 。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>为什么您的组织&#39;s Microsoft 365 应用程序运行状况分数问题
 
@@ -59,7 +59,7 @@ ms.locfileid: "48841185"
 
 下图显示了最近180天内的推荐更新频道中的设备数量。 折线图上的数据点是最近28天的活动聚合。
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Microsoft 365 应用的可见可视化项的主要可视化项。":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="显示运行建议更新通道的设备的趋势的图表。":::
 
 ### <a name="scoring-framework"></a>记分框架
 
@@ -71,7 +71,7 @@ Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>当前频道上的设备和运行支持的版本
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Microsoft 365 应用的可见可视化项的主要可视化项。":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="显示当前支持的通道中的设备数量的图表。":::
 
 1. **标头：**  突出显示当前通道上的设备所占的百分比运行受支持的 Microsoft 365 应用版本
 1. **正文：**  提供有关在建议频道上运行 Microsoft 365 应用程序的设备的值的信息。
@@ -82,7 +82,7 @@ Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和
 
 ### <a name="devices-running-latest-and-supported-versions"></a>运行最新和受支持版本的设备
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Microsoft 365 应用的可见可视化项的主要可视化项。":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="显示运行最新和受支持的应用程序版本的设备数量的图表。":::
 
 1. **标头：**  突出显示运行最新版本的受支持的版本和设备的设备所占的百分比。
 1. **正文：**  提供有关在推荐通道和受支持的/最新版本上运行设备的值的信息。
@@ -99,7 +99,7 @@ Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和
 
 此图显示了在过去180天内运行支持的版本的设备的趋势线以及 Microsoft 365 应用程序的最新版本。
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Microsoft 365 应用的可见可视化项的主要可视化项。":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Showa 多个设备运行的支持和一段时间内最新版本的应用程序的图表。":::
 
 ## <a name="people-in-your-organization"></a>组织中的人员
 

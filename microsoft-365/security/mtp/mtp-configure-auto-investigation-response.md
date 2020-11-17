@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846492"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123603"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中配置自动调查和响应功能
 
@@ -55,9 +55,9 @@ Microsoft 365 Defender 包括功能强大的 [自动化调查和响应功能](mt
 
 1. 请转到 Microsoft Defender 安全中心 ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 并登录。
 
-2. 转到 " **设置**  >  **权限** "  >  **设备组** 。 
+2. 转到 "**设置**  >  **权限**"  >  **设备组**。 
 
-3. 查看设备组策略。 尤其要注意的是，请查看 " **修正级别** " 列。 我们建议 **自动使用完全修正的威胁** 。  您可能需要创建或编辑设备组，以获取所需的自动化级别。 若要获取有关此任务的帮助，请参阅以下文章：
+3. 查看设备组策略。 尤其要注意的是，请查看 " **修正级别** " 列。 我们建议 **自动使用完全修正的威胁**。  您可能需要创建或编辑设备组，以获取所需的自动化级别。 若要获取有关此任务的帮助，请参阅以下文章：
 
    - [威胁的修正方式](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    
@@ -71,7 +71,7 @@ Microsoft 提供了可帮助确定特定风险的内置 [通知策略](https://d
 
 Office 365 中的安全设置可帮助保护电子邮件和内容。 若要查看或更改这些设置，请遵循 [针对威胁的保护](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)指南。
 
-1. 在 Microsoft 365 安全中心 ( [https://security.microsoft.com/](https://security.microsoft.com/)) 中，转到 "策略" " **策略**  >  **威胁防护** "。
+1. 在 Microsoft 365 安全中心 ([https://security.microsoft.com/](https://security.microsoft.com/)) 中，转到 "策略" "**策略**  >  **威胁防护**"。
 
 2. 请确保配置了以下所有策略。 若要获取帮助和建议，请参阅 [防止威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
 
@@ -91,17 +91,17 @@ Office 365 中的安全设置可帮助保护电子邮件和内容。 若要查�
 
 1. 请转到 Microsoft 365 安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 并登录。
 
-2. 在导航窗格中，查找 " **事件** "、" **操作中心** " 和 " **搜寻** "，如下图所示：
+2. 在导航窗格中，查找 " **事件**"、" **操作中心**" 和 " **搜寻**"，如下图所示：
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 打开":::
 
-   - 如果你看到 **事件** 、 **操作中心** 和 **搜寻** ，则会打开 Microsoft 365 Defender。 继续执行下一过程， [查看或更改设备组的自动化级别](#review-or-change-the-automation-level-for-device-groups)。
+   - 如果你看到 **事件**、 **操作中心** 和 **搜寻**，则会打开 Microsoft 365 Defender。 请参阅本文中的 " [查看或更改设备组的自动化级别](#review-or-change-the-automation-level-for-device-groups) () 。
 
-   - 如果你 *没有* 看到 **事件** 、 **操作中心** 或 **搜寻** ，则可能无法打开 Microsoft 365 Defender。 在这种情况下，请继续执行下一步。
+   - 如果你 *没有* 看到 **事件**、 **操作中心** 或 **搜寻**，则可能无法打开 Microsoft 365 Defender。 在这种情况下，请继续执行下一步 (查看本文) 中的 [挂起和已完成的操作](#review-pending-and-completed-actions-in-the-action-center)。
 
-3. 在导航窗格中，选择 " **设置**  >  **Microsoft 365 Defender** "。 确认已打开 Microsoft 365 Defender。 
+3. 在导航窗格中，选择 "**设置**  >  **Microsoft 365 Defender**"。 确认已打开 Microsoft 365 Defender。 
 
-   需要帮助? 请参阅 [打开 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
+   需要帮助？ 请参阅 [打开 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>在操作中心中查看挂起和已完成的操作
 

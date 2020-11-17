@@ -7,21 +7,22 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 描述文档理解与表单处理模型之间的主要差异
-ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: e847ed9b7a00e0ff0542ad3b9ba35c314070837d
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464224"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087627"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文档理解与表单处理模型之间的差异 
 
 
-Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档库中的文档进行识别与分类，并从每个文件中提取相关信息。  例如，当文件上传到 SharePoint 文档库中时，所有被识别为*采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号*和*总数*），并将其显示为文档库视图中的一列。 
+Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档库中的文档进行识别与分类，并从每个文件中提取相关信息。  例如，当文件上传到 SharePoint 文档库中时，所有被识别为 *采购订单* 的文件都被归类为采购订单，然后在自定义文档库视图中显示。 此外，可从每个文件中提取特定信息（例如， *PO 编号* 和 *总数*），并将其显示为文档库视图中的一列。 
 
-内容理解使你能够创建*模型*来识别和提取所需的信息。 模型在帮助解决搜索、业务流程、合规性等业务问题上具有价值。
+内容理解使你能够创建 *模型* 来识别和提取所需的信息。 模型在帮助解决搜索、业务流程、合规性等业务问题上具有价值。
 
 有两种模型类型可以使用：
 
@@ -36,7 +37,7 @@ Microsoft SharePoint Syntex中的内容理解允许对上传到SharePoint文档�
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>结构化内容与非结构化和半结构化内容的比较
 
-使用文档理解模型从非结构化文档（如信件或合同）中识别和提取数据，在这些文档中，所需提取的文本实体位于句子或文档的特定区域中。 例如，一个非结构化的文件可以是一份可以用不同的方式来写的续签合同书。 然而，每份合同续签文档的正文中都有一致的信息，例如*服务开始日期*的文本字符串，后是实际日期。   
+使用文档理解模型从非结构化文档（如信件或合同）中识别和提取数据，在这些文档中，所需提取的文本实体位于句子或文档的特定区域中。 例如，一个非结构化的文件可以是一份可以用不同的方式来写的续签合同书。 然而，每份合同续签文档的正文中都有一致的信息，例如 *服务开始日期* 的文本字符串，后是实际日期。   
 
 使用表单处理模型来识别文件，并从结构化或半结构化的文件（如表单或发票）中提取数据。 表单处理模型经过训练，可从示例文档中理解表单布局，并学会从类似的位置中寻找所需提取的数据，因为表单实体处于相同的位置而具有更多结构性的布局（例如，税务单中的社保号）。 
 

@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置 TeleMessage 连接器以在 Microsoft 365 中导入和存档 WhatsApp 数据。 这使您可以在 Microsoft 365 中存档第三方数据源中的数据，以便您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理组织的第三方数据。
-ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2600356fc2628d5832f93f7dbe4fc247d8812410
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199155"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087179"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>设置连接器以存档 WhatsApp 数据
 
 使用 Microsoft 365 合规性中心中的 TeleMessage 连接器导入和存档 WhatsApp 呼叫、聊天、附件、文件和已删除的邮件。 设置和配置连接器后，它每天连接到组织的 TeleMessage 帐户，并使用 TeleMessage WhatsApp Phone 存档器或 TeleMessage WhatsApp 云存档器将员工的移动通信导入 Microsoft 365 中的邮箱。
 
-将 WhatsApp 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和 Microsoft 365 保留策略）应用于 Verizon 数据。 例如，您可以使用内容搜索来搜索 WhatsApp 邮件，或将包含 WhatsApp 邮件的邮箱与高级电子数据展示事例中的保管人程序关联。 使用 WhatsApp 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
+将 WhatsApp 数据存储在用户邮箱中之后，您可以将 Microsoft 365 合规性功能（如诉讼保留、内容搜索和 Microsoft 365 保留策略）应用于 WhatsApp 数据。 例如，您可以使用内容搜索来搜索 WhatsApp 邮件，或将包含 WhatsApp 邮件的邮箱与高级电子数据展示事例中的保管人程序关联。 使用 WhatsApp 连接器在 Microsoft 365 中导入和存档数据可帮助您的组织遵守政府和法规策略。
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>存档 WhatsApp 数据概述
 
@@ -59,9 +59,9 @@ ms.locfileid: "48199155"
 
 完成上一节中所述的先决条件后，可以在 Microsoft 365 合规性中心内创建 WhatsApp 连接器。 连接器使用您提供的信息来连接到 TeleMessage 网站，并将 WhatsApp 数据传输到 Microsoft 365 中对应的用户邮箱框中。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 "**数据连接器**  >  **WhatsApp 存档**器"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 "**数据连接器**  >  **WhatsApp 存档** 器"。
 
-2. 在 " **WhatsApp 存档**产品说明" 页上，单击 "**添加连接器**"
+2. 在 " **WhatsApp 存档** 产品说明" 页上，单击 "**添加连接器**"
 
 3. 在 " **服务条款** " 页上，单击 " **接受**"。
 

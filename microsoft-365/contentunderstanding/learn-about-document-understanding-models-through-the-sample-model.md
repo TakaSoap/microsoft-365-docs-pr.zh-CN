@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 通过示例模型了解文档理解模型
-ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 664b0ad7cb00a4570fbe8a4bd8a2c6f319cf8800
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321261"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087375"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>通过示例模型了解文档理解模型
 
@@ -35,7 +36,7 @@ Microsoft SharePoint Syntex 为你提供了可用于检查的示例模型，让�
 
 你不仅可以浏览分析示例模型，从而更好地理解模型的构建方式，你还可以随着工作模型的发展，进一步执行以下操作：
 
-- 添加其他提取程序。 例如，添加一个提取*折扣费用*的提取程序。
+- 添加其他提取程序。 例如，添加一个提取 *折扣费用* 的提取程序。
 - 将该模型应用于文档库，并上传某些培训文件，以了解该模型如何分类文件并从中提取数据。
 
 

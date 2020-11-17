@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理
-ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493669"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087399"
 ---
 # <a name="form-processing-overview"></a>表单处理概述
 
@@ -29,7 +30,7 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](https://do
 > [!NOTE]
 > 有关表单处理方案示例的详细信息，请参阅 [SharePoint Syntex 采用：入门指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example)。
 
-例如，可以创建一个表单处理模型来标识上传到文档库的所有采购订单文档。 可从每个采购订单提取并显示对你非常重要的特定数据，如 *PO 编号*、 *日期*或*总成本*。
+例如，可以创建一个表单处理模型来标识上传到文档库的所有采购订单文档。 可从每个采购订单提取并显示对你非常重要的特定数据，如 *PO 编号*、 *日期* 或 *总成本*。
 
 ![文档库视图](../media/content-understanding/doc-lib-done.png)</br>  
 

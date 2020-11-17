@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 如果你还使用适用于 Office 365 的 Defender，你还会获得什么额外内容？
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001521"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123462"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建议设置
 
@@ -30,7 +30,7 @@ ms.locfileid: "49001521"
 
 **Exchange Online Protection (EOP)** 是 Microsoft 365 订阅的安全性的核心，可帮助防止恶意电子邮件到达你的员工的收件箱。 但对于每天都会涌现的新的更复杂的攻击，通常需要改进的保护。 **Microsoft Defender For Office 365** 计划1或计划2包含额外的功能，可为管理员提供更多的安全、控制和调查层次。
 
-尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Microsoft Defender for Office 365 中有两个安全级别： **标准** 和 **严格** 。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
+尽管我们为安全管理员提供了自定义安全设置，但我们建议的 EOP 和 Microsoft Defender for Office 365 中有两个安全级别： **标准** 和 **严格**。 每个客户的环境和需求各不相同，但我们认为这些级别的筛选将有助于防止不需要的邮件在大多数情况下到达员工的收件箱。
 
 若要自动将标准或严格设置应用于用户，请参阅 [EOP And Microsoft Defender For Office 365 中的预设安全策略](preset-security-policies.md)。
 
@@ -63,10 +63,10 @@ ms.locfileid: "49001521"
 |隔离保留期 <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
 |**安全提示** <p> _InlineSafetyTipsEnabled_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
 |允许的发件人 <p> _AllowedSenders_|无|无|无||
-|允许的发件人域 <p> _AllowedSenderDomains_|无|无|无|将域添加到允许的发件人列表是一个非常糟糕的想法。 攻击者能够向您发送电子邮件，否则将被筛选掉。 <p> 在 " **反垃圾邮件设置** " 页上的安全性 & 合规性中心中使用 [欺骗智能](learn-about-spoof-intelligence.md)，以查看在组织的电子邮件域或外部域中的欺骗发件人电子邮件地址中的所有人都是哄骗发件人的电子邮件地址。|
+|允许的发件人域 <p> _AllowedSenderDomains_|无|无|无|将域添加到允许的发件人列表是一个非常糟糕的想法。 攻击者能够向您发送电子邮件，否则将被筛选掉。 <p> 在 "**反垃圾邮件设置**" 页上的安全性 & 合规性中心中使用 [欺骗智能](learn-about-spoof-intelligence.md)，以查看在组织的电子邮件域或外部域中的欺骗发件人电子邮件地址中的所有人都是哄骗发件人的电子邮件地址。|
 |阻止的发件人 <p> _BlockedSenders_|无|无|无||
 |阻止的发件人域 <p> _BlockedSenderDomains_|无|无|无||
-|**启用最终用户垃圾邮件通知**    选中此复选框以启用此策略的最终用户垃圾邮件通知。 <p> _EnableEndUserSpamNotifications_|已禁用 <p> `$false`|已启用 <p> `$true`|已启用 <p> `$true`||
+|**启用最终用户垃圾邮件通知**   选中此复选框以启用此策略的最终用户垃圾邮件通知。 <p> _EnableEndUserSpamNotifications_|已禁用 <p> `$false`|已启用 <p> `$true`|已启用 <p> `$true`||
 |**每 (天发送最终用户垃圾邮件通知)** <p> _EndUserSpamNotificationFrequency_|3 天|3 天|3 天||
 |**垃圾邮件 ZAP** <p> _SpamZapEnabled_|已启用 <p> `$true`|已启用 <p> `$true`|已启用 <p> `$true`||
 |**网络钓鱼 ZAP** <p> _PhishZapEnabled_|已启用 <p> `$true`|已启用 <p> `$true`|已启用 <p> `$true`||
@@ -81,21 +81,21 @@ ms.locfileid: "49001521"
 
 |安全功能名称|评论|
 |---|---|
-|**指向远程网站** ( _IncreaseScoreWithImageLinks_ ) 的图像链接||
-|URL ( _IncreaseScoreWithNumericIps_ **中的数字 IP 地址** ) ||
-|**UL 重定向到其他端口** ( _IncreaseScoreWithRedirectToOtherPort_ ) ||
-|**.Biz 或. info 网站的 URL** ( _IncreaseScoreWithBizOrInfoUrls_ ) ||
-| ( _MarkAsSpamEmptyMessages_ ) 中的 **空邮件**||
-|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript** ) _MarkAsSpamJavaScriptInHtml_||
-|HTML ( _MarkAsSpamFramesInHtml_ **中的 Frame 或 IFrame 标记** ) ||
-|HTML ( _MarkAsSpamObjectTagsInHtml_ ) **中的对象标记**||
-|在 HTML ( _MarkAsSpamEmbedTagsInHtml_ ) **中嵌入标记**||
-|HTML ( _MarkAsSpamFormTagsInHtml_ ) **中的表单标记**||
-|HTML ( _MarkAsSpamWebBugsInHtml_ ) **中的 Web 错误**||
-|**将敏感单词列表应用** ( _MarkAsSpamSensitiveWordList_ ) ||
-|**SPF 记录： hard fail** ( _MarkAsSpamSpfRecordHardFail_ ) ||
-|**条件发件人 ID 筛选：硬失败** ( _MarkAsSpamFromAddressAuthFail_ ) ||
-|**NDR 退信** ( _MarkAsSpamNdrBackscatter_ ) ||
+|**指向远程网站** (_IncreaseScoreWithImageLinks_) 的图像链接||
+|URL (_IncreaseScoreWithNumericIps_ **中的数字 IP 地址**) ||
+|**UL 重定向到其他端口** (_IncreaseScoreWithRedirectToOtherPort_) ||
+|**.Biz 或. info 网站的 URL** (_IncreaseScoreWithBizOrInfoUrls_) ||
+| (_MarkAsSpamEmptyMessages_) 中的 **空邮件**||
+|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript**) _MarkAsSpamJavaScriptInHtml_||
+|HTML (_MarkAsSpamFramesInHtml_ **中的 Frame 或 IFrame 标记**) ||
+|HTML (_MarkAsSpamObjectTagsInHtml_) **中的对象标记**||
+|在 HTML (_MarkAsSpamEmbedTagsInHtml_) **中嵌入标记**||
+|HTML (_MarkAsSpamFormTagsInHtml_) **中的表单标记**||
+|HTML (_MarkAsSpamWebBugsInHtml_) **中的 Web 错误**||
+|**将敏感单词列表应用** (_MarkAsSpamSensitiveWordList_) ||
+|**SPF 记录： hard fail** (_MarkAsSpamSpfRecordHardFail_) ||
+|**条件发件人 ID 筛选：硬失败** (_MarkAsSpamFromAddressAuthFail_) ||
+|**NDR 退信** (_MarkAsSpamNdrBackscatter_) ||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 出站垃圾邮件策略设置
@@ -148,7 +148,7 @@ Microsoft Defender for Office 365 订阅提供了其他安全优势。 有关最
 
 > [!IMPORTANT]
 >
-> - Microsoft Defender for Office 365 中的默认反网络钓鱼策略为所有收件人提供 [欺骗保护](set-up-anti-phishing-policies.md#spoof-settings) 。 但是，不会在默认策略中配置或启用特定发件人域或发件人域的可用 [模拟保护](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 设置。 若要启用模拟保护，请在适用于 Office 365 的 Defender 中配置默认策略或创建其他反网络钓鱼策略。
+> - Microsoft Defender for Office 365 中的默认反网络钓鱼策略为所有收件人提供 [欺骗保护](set-up-anti-phishing-policies.md#spoof-settings) 和邮箱智能。 但是，未在默认策略中配置或启用其他可用的 [模拟保护](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能和 [高级设置](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 若要启用所有保护功能，请修改默认的反网络钓鱼策略或创建其他反网络钓鱼策略。
 >
 > - 没有可自动保护组织中所有收件人的默认安全链接策略或安全附件策略。 若要获取保护，您需要至少创建一个安全链接策略和安全附件策略。
 >
@@ -287,10 +287,10 @@ Microsoft Defender for Office 365 中的安全附件包括与安全附件策略�
 
 ## <a name="related-articles"></a>相关文章
 
-- 您是否正在寻找 **Exchange 邮件流规则的最佳实践 (也称为传输规则** ) ？ [有关在 Exchange Online 中配置邮件流规则的最佳实践，](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)请参阅。
+- 您是否正在寻找 **Exchange 邮件流规则的最佳实践 (也称为传输规则**) ？ [有关在 Exchange Online 中配置邮件流规则的最佳实践，](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)请参阅。
 
 - 管理员和用户可以提交误报 (正常的电子邮件，并将其标记为错误) 和漏报 (错误的电子邮件) Microsoft 进行分析。 有关详细信息，请参见[向 Microsoft 报告邮件和文件](report-junk-email-messages-to-microsoft.md)。
 
 - 使用以下链接可了解有关如何 **设置** [EOP 服务](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的信息，以及如何 **配置** [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 不要忘记 "防御[Office 365 中的威胁](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)" 中的有用说明。
 
-- 可以在以下位置找到 **适用于 Windows 的安全基准** ： [在哪里可以获取安全基准？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)对于 GPO/内部部署选项，并 [使用安全基准在 intune 中](https://docs.microsoft.com/intune/protect/security-baselines)为基于 Intune 的安全性配置 Windows 10 设备。 最后，比较 microsoft defender [For endpoint 和 Windows intune 安全基准](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)可在 microsoft Intune for Endpoint 和 microsoft intune 安全基准之间进行比较。
+- 可以在以下位置找到 **适用于 Windows 的安全基准**：[在哪里可以获取安全基准？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)对于 GPO/内部部署选项，并 [使用安全基准在 intune 中](https://docs.microsoft.com/intune/protect/security-baselines)为基于 Intune 的安全性配置 Windows 10 设备。 最后，比较 microsoft defender [For endpoint 和 Windows intune 安全基准](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)可在 microsoft Intune for Endpoint 和 microsoft intune 安全基准之间进行比较。

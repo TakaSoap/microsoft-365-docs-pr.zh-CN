@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解如何将已发布的模型应用于 SharePoint 文档库
-ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338669"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087483"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -34,7 +35,7 @@ ms.locfileid: "48338669"
 
 要将模型应用到 SharePoint 文档库，请执行以下操作：
 
-1. 在模型主页上，在 **“将模型应用于库”** 平铺中，选择 **“发布模型”**。 或者，你可以在**应用了模型的库**部分选择 **“+ 添加库”**。 </br>
+1. 在模型主页上，在 **“将模型应用于库”** 平铺中，选择 **“发布模型”**。 或者，你可以在 **应用了模型的库** 部分选择 **“+ 添加库”**。 </br>
 
     ![向库添加模型](../media/content-understanding/apply-to-library.png)</br>
 
@@ -43,9 +44,9 @@ ms.locfileid: "48338669"
     ![选择站点](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
-    > 你必须拥有*管理列表 * 权限，或者*编辑 * 对应用模型的文档库的权限。</br>
+    > 你必须拥有 *管理列表* 权限，或者 *编辑* 对应用模型的文档库的权限。</br>
 
-3. 选择网站后，选择要向其应用模型的文档库。 在此示例中，从 *Contoso Case 跟踪*网站中，选择 “*文档"* 文档库。</br>
+3. 选择网站后，选择要向其应用模型的文档库。 在此示例中，从 *Contoso Case 跟踪* 网站中，选择 “*文档"* 文档库。</br>
 
     ![选择文档库](../media/content-understanding/select-doc-library.png)</br>
 
@@ -54,7 +55,7 @@ ms.locfileid: "48338669"
     ![库视图](../media/content-understanding/library-view.png)</br>
 
 5. 选择 **“添加”** 将模型应用到库中。 
-6. 在模型主页上，在**应用了此模型库**部分，你会看到列出的 SharePoint 网站的 URL。</br>
+6. 在模型主页上，在 **应用了此模型库** 部分，你会看到列出的 SharePoint 网站的 URL。</br>
 
     ![已选择 的库](../media/content-understanding/selected-library.png)</br>
 
