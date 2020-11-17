@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '有关详细信息，请参阅 Exchange Online Protection (EOP 中的默认安全设置) '
-ms.openlocfilehash: 50d1c64e4d8343fdb9b25bfcbeee5d988ddc6b8a
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945326"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126657"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下在 Office 365 中安全
 
@@ -49,16 +49,13 @@ ms.locfileid: "48945326"
 
 有关这些覆盖的详细信息，可参阅 [创建安全发件人列表](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)。
 
-默认情况下安全保护此处的设置不是可以打开或关闭的设置，但我们的筛选功能在框中的工作方式将可能有害或不需要的邮件保留在邮箱之外。 应将恶意软件和高可信度网络钓鱼发送到隔离区。 只有管理员可以管理被隔离为恶意软件或高可信度的网络钓鱼的邮件，也可以在那里向 Microsoft 报告误报。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
+默认情况下安全保护此处的设置不是可以打开或关闭的设置，但我们的筛选功能在框中的工作方式将可能有害或不需要的邮件保留在邮箱之外。 应将恶意软件和高可信度的网络钓鱼网站发送到隔离区。 只有管理员可以管理被隔离为恶意软件或高可信度的网络钓鱼的邮件，也可以在那里向 Microsoft 报告误报。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
 
 ## <a name="exceptions"></a>Exceptions
 
-将绕过所有筛选器的唯一替代包括：
+允许高可信度仿冒邮件绕过筛选的唯一替代是 Exchange 邮件流规则 (也称为传输规则) 。 若要使用邮件流规则绕过筛选，请参阅 [使用邮件流规则在邮件中设置 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
-- Exchange 传输规则 (ETR) /mail 流规则。 使用邮件流规则在 EOP 中的邮件中设置垃圾邮件可信度级别 (SCL) 。
-- 租户允许/阻止列表：管理租户允许/阻止列表中的 Url 和文件。
-
-这些替代类型适用于：
+替代只应用于：
 
 - 网络钓鱼模拟：模拟攻击可帮助您在真正的攻击影响组织之前识别易受攻击的用户。
 - Security/SecOps 邮箱：安全团队使用的专用邮箱)  (好的和坏的中获取未筛选的邮件。 然后，团队可以查看它们是否包含恶意内容。

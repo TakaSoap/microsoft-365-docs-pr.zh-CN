@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 了解如何在 Microsoft 365 中获取 Microsoft 预订的访问权限。
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419268"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126587"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>打开或关闭 Microsoft 预订
 
@@ -27,7 +27,7 @@ ms.locfileid: "47419268"
 
 1. 以全局管理员身份登录到 Microsoft 365 管理中心。
 
-2. 在管理中心中，转到 " **设置**" "设置"   \> **Settings** ，然后选择 "**预订**"。
+2. 在管理中心中，转到 " **设置**   \> **组织设置**"，然后选择 "**预订**"。
 
 3. 选中 " **允许您的组织使用预订** 为您的组织启用或禁用预订" 的复选框。
 
@@ -38,7 +38,7 @@ ms.locfileid: "47419268"
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>使用 PowerShell 为你的组织启用或禁用预订
 
-若要使用 PowerShell cmdlet [set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)为您的组织打开或关闭预订，请 [连接到 Exchange Online PowerShell]() 并运行以下命令：
+若要使用 PowerShell cmdlet [set-organizationconfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)为您的组织打开或关闭预订，请 [连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 并运行以下命令：
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false

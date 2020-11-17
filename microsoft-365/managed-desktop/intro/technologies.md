@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 9ec6f73996b2626ef62d33435ed88fb08dfc1a16
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002217"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126575"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 托管桌面技术
 
@@ -37,7 +37,7 @@ Win32 应用程序 |    团队不随设备一起提供，但会打包并由 Micr
 Web 应用程序 |  Yammer、Office 在浏览器、Delve、流、StaffHub、PowerApps 和计划器中不随设备一起附带。 用户可以通过浏览器访问这些应用程序的 web 版本。
 
 
-## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 企业版 E3 或 E5
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint 的 Windows 10 企业版 E5 或 E3
 
  |
  --- | ---
@@ -49,5 +49,5 @@ Microsoft Defender for Endpoint |    Microsoft 托管桌面使用此来监视设
  |
  --- | ---
 企业移动性 + 安全 E3<br>Azure Active Directory Premium P2 |    您可以使用企业移动性 + 安全 E3 和 Azure Active Directory 高级 P2 的所有功能来管理 MDM 设备。
-Microsoft Cloud App Security |  可以将此可选功能与 Microsoft 托管桌面结合使用。
+Microsoft 云应用安全 |  可以将此可选功能与 Microsoft 托管桌面结合使用。
 Azure 信息保护 P2  | 可以将此可选功能与 Microsoft 托管桌面结合使用。

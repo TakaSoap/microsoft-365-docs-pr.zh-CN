@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 如果你还使用适用于 Office 365 的 Defender，你还会获得什么额外内容？
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123462"
+ms.locfileid: "49126633"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建议设置
 
@@ -189,11 +189,11 @@ EOP 客户将获取前面所述的基本反网络钓鱼，但 Microsoft Defender
 
 ****
 
-|安全功能名称|标准|全|评论|
-|---|---|---|---|
-|**启用反欺骗保护** <p> _EnableAntispoofEnforcement_|打开 <p> `$true`|打开 <p> `$true`||
-|**启用未经验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|在 Outlook 中向发件人的照片添加问号 ( ) ，以查找未识别的欺骗性发件人。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
-|**如果电子邮件由不允许欺骗您的域的人发送** <p> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于 [欺骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
+|安全功能名称|默认|标准|全|评论|
+|---|---|---|---|---|
+|**启用反欺骗保护** <p> _EnableAntispoofEnforcement_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
+|**启用未经验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|在 Outlook 中向发件人的照片添加问号 ( ) ，以查找未识别的欺骗性发件人。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
+|**如果电子邮件由不允许欺骗您的域的人发送** <p> _AuthenticationFailAction_|**将邮件移到收件人的 "垃圾邮件" 文件夹** <p> `MoveToJmf`|**将邮件移到收件人的 "垃圾邮件" 文件夹** <p> `MoveToJmf`|**隔离邮件** <p> `Quarantine`|此设置适用于 [欺骗智能](learn-about-spoof-intelligence.md)中阻止的发件人。|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反网络钓鱼策略中的高级设置

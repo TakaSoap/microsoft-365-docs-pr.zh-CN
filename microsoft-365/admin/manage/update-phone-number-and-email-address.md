@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在管理中心更新管理员电话号码和电子邮件地址。 如果要重置自己的管理员密码，将需要此信息。
-ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456319"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126607"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新管理员电话号码和电子邮件地址
 
@@ -39,20 +39,20 @@ ms.locfileid: "48456319"
   
 如果想了解如何更改公司的资料信息（如公司名称和地址、公司电话号码和技术联系人信息），请参阅[更改公司地址、技术联系人电子邮件及其他信息](change-address-contact-and-more.md)。
   
-## <a name="to-update-your-name-phone-number-and-email-address"></a>更新名称、电话号码和电子邮件地址
+## <a name="to-update-your-phone-number-and-email-address"></a>更新你的电话号码和电子邮件地址
 
-使用 " **设置和隐私** " 页更改您的姓名、移动电话号码和备用电子邮件地址。 备用电子邮件地址用于重要通知，如重置管理员密码 (不是计算机管理员密码) 。 
+使用 " **安全信息** " 页面更改你的移动电话号码和备用电子邮件地址。 备用电子邮件地址用于重要通知，如重置管理员密码 (不是计算机管理员密码) 。 
   
 1. 浏览到 Microsoft 365 管理中心。
 
-2. 在页眉中，选择您的配置文件图标 \> **My account** \> **Settings 和私密**。
+2. 在标头中，选择您的配置文件图标 \> **My account** \> **Security Info**。
 
-3. 在 "**联系人首选项**" 下的 "**隐私**" 选项卡中，**仅为管理员选择联系人首选项**。 更新你的移动电话、电话和备用电子邮件地址。 请确保您使用的电子邮件地址与备选电子邮件地址的其他内容不同。
+3. 在 " **安全信息** " 选项卡中，选择 " **添加方法** \> **电话** \> **备用电话** 或 **电子邮件** " 以添加详细信息。 若要更新移动电话、电话和备用电子邮件地址详细信息，请选择 " **更改**"。 请务必使用 Microsoft 电子邮件地址之外的其他电子邮件地址。
 
     > [!IMPORTANT]
     > 备用电子邮件地址和移动电话号码是重置管理员密码所必需的， (不) 您的计算机管理员密码。
 
-4. 完成后，选择“保存”****。
+4. 完成后，选择“保存”。
   
 有关账单问题的解答，请参阅：
   
