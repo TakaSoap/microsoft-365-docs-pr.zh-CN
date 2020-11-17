@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍如何使用门户启动计划程序启动门户
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087663"
+ms.locfileid: "49123579"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用门户启动计划程序启动门户
 
 门户是 Intranet 上的一个 SharePoint 网站，其中包含大量使用网站内容的网站查看者。 以波形的顺序启动门户是确保用户具有访问新 SharePoint Online 门户的流畅且能力丰富的体验的重要部分。 
 
-以波形方式启动是一种用于滚动门户的关键方式，在 [SharePoint Online 中规划门户启动回滚计划中](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)有详细介绍。 门户启动计划程序旨在帮助您通过管理新门户的重定向来帮助您遵循波形/分阶段的滚动方法。 在每个波形过程中，可以在每次部署浪潮期间收集用户反馈并监视性能。 这样做的优势在于门户的速度缓慢，让您可以选择在继续下一次浪潮之前暂停和解决问题，并最终确保用户获得良好的体验。 
+以波形方式启动是一种用于滚动门户的关键方式，在 [SharePoint Online 中规划门户启动回滚计划中](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)有详细介绍。 门户启动计划程序旨在帮助您通过管理新门户的重定向来帮助您遵循波形/分阶段的滚动方法。 在每个波形过程中，可以在每次部署浪潮期间收集用户反馈并监视性能。 这样做的优势在于门户的速度缓慢，让您可以选择在继续下一次浪潮之前暂停和解决问题，并最终确保用户获得良好的体验。 
 
 有两种类型的重定向： 
 - 双向：启动新的新式 SharePoint Online 门户以替换现有 SharePoint 经典或新式门户 
