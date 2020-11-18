@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 240ffd7ec8d46da33c43ec2f9cb50cf59c89f11b
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984946"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131293"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>为试用版实验室或试点环境配置 Microsoft 365 Defender 支柱
 
@@ -38,29 +38,11 @@ ms.locfileid: "48984946"
 
 创建 Microsoft 365 Defender 试用版实验室或试点环境并对其进行部署的过程分为三个阶段：
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="准备 Microsoft 365 Defender 试用版实验室或试点环境" />
-      <br/>第1阶段：准备 </a><br>
-    </td>
-     <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="设置你的 Microsoft 365 Defender 试用版实验室或试点环境" />
-      <br/>阶段2：安装程序 </a><br>
-    </td>
-    <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config-onboard.png" alt="Configure & Onboard" title="为 Microsoft 365 Defender 试用版实验室或试点环境以及板载终结点配置每个 Microsoft 365 Defender 支柱" />
-      <br/>第3阶段： Configure & 板载 </a><br>
-</td>
-  </tr>
-</table>
+|[![第1阶段：准备](../../media/phase-diagrams/prepare.png)](prepare-mtpeval.md)<br/>[第1阶段：准备](prepare-mtpeval.md) |[![阶段2：设置](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[阶段2：设置](setup-mtpeval.md) |![第3阶段：板载](../../media/phase-diagrams/onboard.png)<br/>第3阶段：板载 | [![返回试点](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[返回试点行动手册](mtp-pilot.md) |
+|--|--|--|--|
+|| |*你在这里！* | |
 
 你当前正在配置阶段。
-
 
 准备工作是任何成功部署的关键。 在本文中，你将指导你在准备部署 Microsoft Defender for Endpoint 时需要考虑的事项。
 
@@ -84,18 +66,18 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
 有一个 PowerShell 模块称为 *Office 365 高级威胁防护建议的配置分析器 (ORCA)* ，可帮助确定其中一些设置。 在租户中以管理员身份运行时，ORCAReport 将帮助生成反垃圾邮件、反网络钓鱼和其他邮件清洁设置的评估。 您可以从下载此模块 https://www.powershellgallery.com/packages/ORCA/ 。 
 
-1. 导航到 [Office 365 Security & 合规性中心](https://protection.office.com/homepage)  >  **威胁管理**  >  **策略** 。
+1. 导航到 [Office 365 Security & 合规性中心](https://protection.office.com/homepage)  >  **威胁管理**  >  **策略**。
 
    ![Image of_Office 365 Security & 合规性中心威胁管理策略页](../../media/mtp-eval-32.png)
  
-2. 单击 " **反网络钓鱼** "，选择 " **创建** 并填写策略名称和说明"。 单击“ **下一步** ”。
+2. 单击 " **反网络钓鱼**"，选择 " **创建** 并填写策略名称和说明"。 单击“**下一步**”。
 
    ![Image of_Office 365 Security & 合规中心 "反网络钓鱼策略" 页，可在其中命名策略](../../media/mtp-eval-33.png)
 
    > [!NOTE]
-   > 在 Microsoft Defender for Office 365 中编辑高级反网络钓鱼策略。 将 **高级网络钓鱼阈值** 更改为 **2-主动** 。
+   > 在 Microsoft Defender for Office 365 中编辑高级反网络钓鱼策略。 将 **高级网络钓鱼阈值** 更改为 **2-主动**。
 
-3. 单击 " **添加条件** " 下拉菜单，并选择您的域 (s) 作为 "收件人域"。 单击“ **下一步** ”。
+3. 单击 " **添加条件** " 下拉菜单，并选择您的域 (s) 作为 "收件人域"。 单击“**下一步**”。
 
    ![Image of_Office 365 Security & 合规中心 "反网络钓鱼策略" 页，可在其中为其应用程序添加条件](../../media/mtp-eval-34.png)
  
@@ -107,27 +89,27 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
    ![Image of_Office 365 Security & 合规中心页，可在其中为 SharePoint、OneDrive 和 Microsoft 团队打开 ATP](../../media/mtp-eval-36.png)
 
-6. 单击 "+" 图标创建新的 "安全附件策略"，将其作为 "收件人域" 应用到域。 单击“ **保存** ”。
+6. 单击 "+" 图标创建新的 "安全附件策略"，将其作为 "收件人域" 应用到域。 单击“**保存**”。
 
    ![Image of_Office 365 Security & 合规中心页，可在其中创建新的 "新建安全附件" 策略](../../media/mtp-eval-37.png)
  
 7. 接下来，选择 " **安全链接** " 策略，然后单击铅笔图标以编辑默认策略。
 
-8. 请确保未选中 " **如果用户单击安全链接时不进行跟踪** " 选项，而其余选项则处于选中状态。 有关详细信息，请参阅 [安全链接设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 单击“ **保存** ”。 
+8. 请确保未选中 " **如果用户单击安全链接时不进行跟踪** " 选项，而其余选项则处于选中状态。 有关详细信息，请参阅 [安全链接设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 单击“**保存**”。 
 
    ![Image of_Office 365 Security & 合规中心页面，该页面显示当用户单击 "安全" 未选中时选项不会进行跟踪](../../media/mtp-eval-38.png)
 
 9. 接下来，选择 **反恶意软件** 策略，选择默认设置，然后选择 "铅笔" 图标。
 
-10. 单击 " **设置** " 并选择 **"是"，并使用默认通知文本** 启用 **恶意软件检测响应** 。 打开 **常用附件类型筛选器** 。 单击“ **保存** ”。
+10. 单击 " **设置** " 并选择 **"是"，并使用默认通知文本** 启用 **恶意软件检测响应**。 打开 **常用附件类型筛选器** 。 单击“**保存**”。
 
     ![Image of_Office 365 Security & 合规中心页面，该页面显示在启用恶意软件检测响应时启用默认通知并启用常用附件类型筛选器](../../media/mtp-eval-39.png)
   
-11. 导航到 [Office 365 安全 & 合规性中心](https://protection.office.com/homepage)  >  **搜索**  >  **审核日志搜索** ，然后启用审核。
+11. 导航到 [Office 365 安全 & 合规性中心](https://protection.office.com/homepage)  >  **搜索**  >  **审核日志搜索**，然后启用审核。
 
     ![Image of_Office 365 Security & 合规中心页，可在其中打开审核日志搜索](../../media/mtp-eval-40.png)
 
-12. 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成。 导航到 [Office 365 Security & 合规性中心](https://protection.office.com/homepage)"  >  **威胁管理**  >  **资源管理器** ，然后选择屏幕右上角的" **Microsoft Defender for Endpoint Settings 设置** "。 在 "用于终结点连接的 Defender" 对话框中，启用 " **连接到 Microsoft Defender For endpoint** "。
+12. 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 集成。 导航到 [Office 365 Security & 合规性中心](https://protection.office.com/homepage)"  >  **威胁管理**  >  **资源管理器**，然后选择屏幕右上角的" **Microsoft Defender for Endpoint Settings 设置**"。 在 "用于终结点连接的 Defender" 对话框中，启用 " **连接到 Microsoft Defender For endpoint**"。
 
     ![Image of_Office 365 Security & 合规中心页面，可在此页面上打开 Microsoft Defender for Endpoint connection](../../media/mtp-eval-41.png)
 
@@ -136,7 +118,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 >[!NOTE]
 >如果已启用 Microsoft Defender for Identity，请跳过此步骤
 
-1. 导航到 [microsoft 365 安全中心](https://security.microsoft.com/info)> 选择 **更多资源**  >  **microsoft Defender for Identity** 。
+1. 导航到 [microsoft 365 安全中心](https://security.microsoft.com/info)> 选择 **更多资源**  >  **microsoft Defender for Identity**。
 
    ![Image of_Microsoft 365 Security Center 页面，其中有一个用于打开 Microsoft Defender for Identity 的选项](../../media/mtp-eval-42.png)
 
@@ -144,7 +126,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
    !["Of_Microsoft 用于标识向导的 Defender" 页面（应在其中单击 "创建" 按钮）的图像](../../media/mtp-eval-43.png)
 
-3. 选择 " **提供用户名和密码" 以连接到你的 Active Directory 林** 。  
+3. 选择 " **提供用户名和密码" 以连接到你的 Active Directory 林**。  
 
    ![适用于标识欢迎页面的 of_Microsoft Defender 的图像](../../media/mtp-eval-44.png)
 
@@ -168,7 +150,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
    !["图像 of_the 传感器" 页，应在此页面上复制您需要在下一个 Microsoft Defender for Identity 传感器安装向导页中输入的访问密钥](../../media/mtp-eval-49.png)
  
-9. 将访问键复制到向导中，然后单击 " **安装** "。 
+9. 将访问键复制到向导中，然后单击 " **安装**"。 
 
    ![Image of_Microsoft 用于 Identity 传感器的 Defender 向导 "页面，您应在其中提供访问密钥，然后单击" 安装 "按钮](../../media/mtp-eval-50.png)
 
@@ -176,7 +158,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
     ![Image of_Microsoft Defender for Identity 传感器向导安装完成，您应在其中单击 "完成" 按钮](../../media/mtp-eval-51.png)
  
-11. 在 " [Microsoft defender For Identity](https://go.microsoft.com/fwlink/?linkid=2040449) 设置" 部分中，选择 "* * microsoft Defender for Endpoint * *"，然后打开 "切换"。 单击“ **保存** ”。 
+11. 在 " [Microsoft defender For Identity](https://go.microsoft.com/fwlink/?linkid=2040449) 设置" 部分中，选择 "* * microsoft Defender for Endpoint * *"，然后打开 "切换"。 单击“**保存**”。 
 
     !["Microsoft Defender for Identity settings" 页的图像 of_the 应在其中打开 Microsoft Defender for Endpoint 切换](../../media/mtp-eval-52.png)
 
@@ -193,25 +175,25 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
    ![Image of_Microsoft 365 Security Center 页面，可在其中查看 Microsoft 云应用程序卡，并应单击 "打开" 按钮](../../media/mtp-eval-53.png)
 
-2. 在信息提示符下，集成 Microsoft Defender for Identity 时，选择 " **启用 Microsoft defender 以实现标识数据集成** "。
+2. 在信息提示符下，集成 Microsoft Defender for Identity 时，选择 " **启用 Microsoft defender 以实现标识数据集成**"。
   
    ![Image of_the 信息提示将 Microsoft Defender 集成到您应在其中选择 "启用 Microsoft Defender for Identity data integration" 链接的标识。](../../media/mtp-eval-54.png)
 
    > [!NOTE]
    > 如果看不到此提示，可能意味着已为 Microsoft Defender 提供了标识数据集成。 但是，如果你不确定，请联系你的 IT 管理员进行确认。 
 
-3. 转到 " **设置** "，打开 **Microsoft Defender for Identity integration** 切换，然后单击 " **保存** "。 
+3. 转到 " **设置**"，打开 **Microsoft Defender for Identity integration** 切换，然后单击 " **保存**"。 
 
    !["图像 of_the 设置" 页面，您应在此页面上打开 Microsoft Defender for Identity integration 切换，然后单击 "保存"](../../media/mtp-eval-55.png)
    
    > [!NOTE]
    > 对于新的 Microsoft Defender for Identity 实例，此集成切换将自动打开。 在继续下一步之前，请确认已启用 Microsoft Defender 身份集成。
  
-4. 在 "云发现设置" 下，选择 " **Microsoft Defender For Endpoint integration** "，然后启用集成。 单击“ **保存** ”。
+4. 在 "云发现设置" 下，选择 " **Microsoft Defender For Endpoint integration**"，然后启用集成。 单击“**保存**”。
 
    !["Unsanctioned Microsoft defender for endpoint integration" 下的 "阻止应用程序" 复选框中的 "Microsoft Defender for Endpoint integration" 的 of_the 图像已选中。 单击"保存"。](../../media/mtp-eval-56.png)
 
-5. 在 "云发现设置" 下，选择 " **用户扩充** "，然后启用与 Azure Active Directory 的集成。
+5. 在 "云发现设置" 下，选择 " **用户扩充**"，然后启用与 Azure Active Directory 的集成。
 
    !["用户扩充的图像" 部分，其中的 "浓缩已发现用户标识符与 Azure Active Directory 用户名" 复选框处于选中状态](../../media/mtp-eval-57.png)
 
@@ -221,11 +203,11 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 >[!NOTE]
 >如果已启用 Microsoft Defender for Endpoint，请跳过此步骤。
 
-1. 导航到 microsoft Defender 安全中心的 [microsoft 365 安全中心](https://security.microsoft.com/info)  >  **更多资源**  >  **Microsoft Defender Security Center** 。 单击“打开”。
+1. 导航到 microsoft Defender 安全中心的 [microsoft 365 安全中心](https://security.microsoft.com/info)  >  **更多资源**  >  **Microsoft Defender Security Center**。 单击“打开”。
 
    ![Microsoft 365 安全中心页面中的 "of_Microsoft Defender 安全中心" 选项的图像](../../media/mtp-eval-58.png)
  
-2. 遵循 Microsoft Defender for Endpoint 向导。 单击“ **下一步** ”。 
+2. 遵循 Microsoft Defender for Endpoint 向导。 单击“**下一步**”。 
 
    ![Microsoft Defender 安全中心欢迎向导页面 of_the 的图像](../../media/mtp-eval-59.png)
 
@@ -236,7 +218,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
    > [!NOTE]
    > 之后，您无法更改某些设置，如数据存储位置。 
 
-   单击“ **下一步** ”。 
+   单击“**下一步**”。 
 
 4. 单击 " **继续** "，它将预配你的 Microsoft Defender for Endpoint 租户。
 
@@ -268,7 +250,7 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 
     ![图像 of_the 来自向导的确认提示，应单击该向导中的 "开始使用 Microsoft Defender for Endpoint"](../../media/mtp-eval-67.png)
  
-12. 访问 [Microsoft Defender 安全中心](https://securitycenter.windows.com/)。 转到 " **设置** "，然后选择 " **高级功能** "。 
+12. 访问 [Microsoft Defender 安全中心](https://securitycenter.windows.com/)。 转到 " **设置** "，然后选择 " **高级功能**"。 
 
     ![应在其中选择 "高级功能" of_Microsoft "Defender 安全中心设置" 菜单的图像](../../media/mtp-eval-68.png)
 
@@ -294,13 +276,13 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 >从2020年6月1日开始，Microsoft 自动为所有符合条件的租户启用 Microsoft 365 Defender 功能。 有关详细信息，请参阅本 [Microsoft 技术社区文章关于许可证资格](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 。 
 
 
-转到 [Microsoft 365 安全中心](https://security.microsoft.com/homepage)。 导航到 " **设置** "，然后选择 " **Microsoft 365 Defender** "。
+转到 [Microsoft 365 安全中心](https://security.microsoft.com/homepage)。 导航到 " **设置** "，然后选择 " **Microsoft 365 Defender**"。
 
 ![来自 Microsoft 365 安全中心设置页面的图像 of_Microsoft 365 Defender 选项屏幕截图 ](../../media/mtp-eval-72b.png) <br>
 
 有关更全面的指导，请参阅 [打开 Microsoft 365 Defender](mtp-enable.md)。 
 
-祝贺你！ 你刚刚创建了 Microsoft 365 Defender 试用版实验室或试点环境！ 现在，你可以熟悉 Microsoft 365 Defender 用户界面！ 查看您可以从以下 Microsoft 365 Defender 互动版指南中了解的内容，并了解如何使用每个仪表板执行日常安全操作任务。
+恭喜！ 你刚刚创建了 Microsoft 365 Defender 试用版实验室或试点环境！ 现在，你可以熟悉 Microsoft 365 Defender 用户界面！ 查看您可以从以下 Microsoft 365 Defender 互动版指南中了解的内容，并了解如何使用每个仪表板执行日常安全操作任务。
 
 
 >[!VIDEO https://aka.ms/MTP-Interactive-Guide]
@@ -308,5 +290,5 @@ Microsoft 365 Defender 由四个支柱组成。 尽管一个支柱可以为你�
 接下来，您可以模拟攻击，并查看跨产品功能如何检测、创建警报以及自动响应对终结点的 fileless 攻击。
 
 ## <a name="next-step"></a>后续步骤
-|![攻击模拟阶段](../../media/mtp/run-sim.png) <br>[攻击模拟阶段](mtp-pilot-simulate.md) | 为您的 Microsoft 365 Defender 试点环境运行攻击模拟。
+|[攻击模拟阶段](mtp-pilot-simulate.md) | 为您的 Microsoft 365 Defender 试点环境运行攻击模拟。
 |:-------|:-----|

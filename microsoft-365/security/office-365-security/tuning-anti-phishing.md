@@ -15,19 +15,19 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: 管理员可以了解如何在 Microsoft 365 中确定仿冒邮件的原因以及在将来阻止更多网络钓鱼邮件的原因。
-ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845464"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131317"
 ---
 # <a name="tune-anti-phishing-protection"></a>优化防钓鱼保护
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-尽管 Microsoft 365 提供了在默认情况下启用的各种反网络钓鱼功能，但有些网络钓鱼邮件仍可能会到达您的邮箱。 本主题介绍您可以执行哪些操作来发现仿冒邮件的访问原因，以及您可以采取什么措施来调整 Microsoft 365 组织中的反网络钓鱼设置， _而不会意外地使事情更糟_ 。
+尽管 Microsoft 365 提供了在默认情况下启用的各种反网络钓鱼功能，但有些网络钓鱼邮件仍可能会到达您的邮箱。 本主题介绍您可以执行哪些操作来发现仿冒邮件的访问原因，以及您可以采取什么措施来调整 Microsoft 365 组织中的反网络钓鱼设置， _而不会意外地使事情更糟_。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>首先要做的第一件事：处理任何受损帐户，并确保阻止任何更多的网络钓鱼邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "48845464"
 
 - [Microsoft Defender for Office 365 中的安全附件](set-up-atp-safe-attachments-policies.md)
 
-- [Microsoft Defender For Office 365 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，可以暂时将策略中的 **高级网络钓鱼阈值** 从 **Standard** 提高到 **主动** 、 **更主动** 或 **最严格** 的。
+- [Microsoft Defender For Office 365 中的反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。 请注意，可以暂时将策略中的 **高级网络钓鱼阈值** 从 **Standard** 提高到 **主动**、 **更主动** 或 **最严格** 的。
 
 验证这些适用于 Office 365 的 Defender 功能是否已打开。
 
@@ -51,13 +51,13 @@ ms.locfileid: "48845464"
 
 您可以检查网络钓鱼邮件的标头，以查看是否有任何可以执行的操作，以防止更多的网络钓鱼邮件进入。 换句话说，检查邮件头可以帮助您确定组织中负责允许网络钓鱼邮件的任何设置。
 
-具体来说，应检查邮件头中的 **X-Forefront-反垃圾邮件报告** 标头字段，以了解垃圾邮件筛选判定中跳过的垃圾邮件或网络钓鱼筛选是否 (SFV) 值。 跳过筛选的邮件将具有一个条目 `SCL:-1` ，这意味着您的设置允许此邮件通过覆盖由该服务确定的垃圾邮件或网络钓鱼 verdicts。 有关如何获取邮件头以及所有可用反垃圾邮件和反网络钓鱼邮件头的完整列表的详细信息，请参阅 [Microsoft 365 中的反垃圾邮件邮件头](anti-spam-message-headers.md)。
+具体来说，应检查邮件头中的 **X-Forefront-反垃圾邮件报告** 标头字段，以查找对垃圾邮件筛选判定中的垃圾邮件或网络钓鱼的跳过筛选指示 (SFV) 值。 跳过筛选的邮件将具有一个条目 `SCL:-1` ，这意味着您的设置允许此邮件通过覆盖由该服务确定的垃圾邮件或仿冒 verdicts。 有关如何获取邮件头和所有可用反垃圾邮件和反钓鱼邮件头的完整列表的详细信息，请参阅 [Microsoft 365 中的反垃圾邮件邮件头](anti-spam-message-headers.md)。
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保护状态的最佳做法
 
 - 在每月的基础上，运行 [安全分数](../mtp/microsoft-secure-score.md) 以评估组织的安全设置。
 
-- 对于因错误而在隔离的邮件中或允许通过的邮件，我们建议您在 [威胁资源管理器和实时检测](threat-explorer.md)中搜索这些邮件。 您可以按发件人、收件人或邮件 ID 进行搜索。 找到该邮件后，单击 "主题" 以转到 "详细信息"。 对于隔离的邮件，请查看 "检测技术" 是什么，以便您可以使用相应的方法进行替代。 对于允许的邮件，请查看允许邮件使用的策略。 
+- 对于因错误而在隔离的邮件中或允许通过的邮件，我们建议您在 [威胁资源管理器和实时检测](threat-explorer.md)中搜索这些邮件。 您可以按发件人、收件人或邮件 ID 进行搜索。 找到该邮件后，单击 "主题" 以转到 "详细信息"。 对于隔离的邮件，请查看 "检测技术" 是什么，以便您可以使用相应的方法进行替代。 对于允许的邮件，请查看允许邮件使用的策略。
 
 - 伪造的邮件在 Office 365 的 Defender 中被标记为网络钓鱼。 有时欺骗是良性的，有时用户不希望隔离。 若要最大限度地减少对用户的影响，请定期查看 [欺骗智能报告](learn-about-spoof-intelligence.md)。 一旦您查看并进行了任何必需的替代，您就可以放心地 [将欺骗智能配置](set-up-anti-phishing-policies.md#spoof-settings) 为 **隔离** 可疑邮件，而不是将其传递到用户的 "垃圾邮件" 文件夹。
 
@@ -65,7 +65,7 @@ ms.locfileid: "48845464"
 
 - 定期查看 [威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)。
 
-- 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中，在无意中允许网络钓鱼邮件。 虽然此配置允许某些合法邮件通过，但它还会允许垃圾邮件和/或网络钓鱼筛选器通常会阻止的恶意邮件。 应更正基本问题，而不是允许域。
+- 某些客户通过将自己的域放在反垃圾邮件策略中的 "允许发件人" 或 "允许域" 列表中，在无意中允许网络钓鱼邮件。 虽然此配置允许某些合法邮件通过，但它还会允许垃圾邮件和/或仿冒筛选器通常会阻止的恶意邮件。 应更正基本问题，而不是允许域。
 
   若要处理由 Microsoft 365 阻止的合法邮件 (误报) （涉及域中的发件人）的最佳方式是为 _所有_ 电子邮件域在 DNS 中完全且完整地配置 SPF、DKIM 和 DMARC 记录：
 
@@ -74,8 +74,8 @@ ms.locfileid: "48845464"
   - 使用 "硬失败" (\- 所有) ，以确保配置为这样的电子邮件系统拒绝未经授权的发件人。 您可以使用 [欺骗智能](learn-about-spoof-intelligence.md) 来帮助标识使用您的域的发件人，以便您可以在 SPF 记录中包括授权的第三方发件人。
 
   有关配置说明，请参阅：
-  
-  - [设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+
+  - [设置 SPF 以防止欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [使用 DKIM 验证从自定义域发送的出站电子邮件](use-dkim-to-validate-outbound-email.md)
 
@@ -87,4 +87,4 @@ ms.locfileid: "48845464"
 
 - 多重因素身份验证 (MFA) 是一种防止受到攻击的帐户的有效方式。 强烈考虑为所有用户启用 MFA。 对于分阶段的方法，首先在为每个人启用 MFA 之前，先为最敏感的用户启用 MFA (管理员、主管等 ) 。 有关说明，请参阅 [设置多因素身份验证](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
-- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅 [Microsoft 安全分数](../mtp/microsoft-secure-score.md)中的 **邮箱转发规则** " 信息查找甚至阻止外部收件人的转发规则。 有关详细信息，请参阅 [通过安全分数缓解客户端外部转发规则](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。
+- 将规则转发给外部收件人通常由攻击者用来提取数据。 使用 "审阅 [Microsoft 安全分数](../mtp/microsoft-secure-score.md)中的 **邮箱转发规则**" 信息查找甚至阻止外部收件人的转发规则。 有关详细信息，请参阅 [通过安全分数缓解客户端外部转发规则](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score)。

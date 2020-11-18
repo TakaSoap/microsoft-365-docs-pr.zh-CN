@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842058"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131341"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>运行 Microsoft 365 Defender 攻击模拟  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-**适用于：**
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="规划你的试点 Microsoft 365 Defender 项目" />
-      <br/>制定 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="准备 Microsoft 365 Defender 试用版实验室或试点环境" />
-      <br/>份 </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="运行 Microsoft 365 Defender 攻击模拟" />
-      <br/>模拟攻击 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="关闭并汇总你的 Microsoft 365 Defender 试点" />
-      <br/>结束和汇总 </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![规划](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[规划](mtp-pilot-plan.md) |[![准备](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[过程](prepare-mtpeval.md) | ![模拟攻击](../../media/phase-diagrams/3-simluate.png)<br/>模拟攻击| [![结束和汇总](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[结束和汇总](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*你在这里！* | |
 
 你目前正在攻击模拟阶段。
 
@@ -262,7 +224,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
 扩展一些更有趣的行为可提供有用的详细信息，如进程树。
 
-例如，向下滚动，直到发现警报事件 **可疑进程注入被观测到** 。 选择 **插入到下面 notepad.exe 处理** 事件的powershell.exe，以在侧窗格上的 " **事件实体** " 图中显示此行为的完整进程树。 如有必要，请使用搜索栏进行筛选。
+例如，向下滚动，直到发现警报事件 **可疑进程注入被观测到**。 选择 **插入到下面 notepad.exe 处理** 事件的powershell.exe，以在侧窗格上的 " **事件实体** " 图中显示此行为的完整进程树。 如有必要，请使用搜索栏进行筛选。
 
 ![选定 PowerShell 文件创建行为的进程树的屏幕截图](../../media/mtp/fig12.png)
 
@@ -281,7 +243,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-导航回 Microsoft 365 安全中心门户中的事件。 " **事件** " 页面中的 " **调查** " 选项卡显示由 microsoft Defender For Identity 和 microsoft defender for Endpoint 触发的自动调查。 下面的屏幕截图仅显示由 Defender for Endpoint 触发的自动调查。 默认情况下，Defender for Endpoint 会自动 remediates 在队列中找到的项目，这需要进行修正。
+导航回 Microsoft 365 安全中心门户中的事件。 "**事件**" 页面中的 "**调查**" 选项卡显示由 microsoft Defender For Identity 和 microsoft defender for Endpoint 触发的自动调查。 下面的屏幕截图仅显示由 Defender for Endpoint 触发的自动调查。 默认情况下，Defender for Endpoint 会自动 remediates 在队列中找到的项目，这需要进行修正。
 
 ![与事件相关的自动调查的屏幕截图](../../media/mtp/fig14.png)
 
@@ -304,7 +266,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
 调查完成并确认为待修正后，请关闭事件。
 
-选择 " **管理事件** "。 将状态设置为 " **解决事件** "，并选择相关的分类。
+选择 " **管理事件**"。 将状态设置为 " **解决事件** "，并选择相关的分类。
 
 在解决事件时，它将关闭 Microsoft 365 安全中心和相关门户中的所有关联警报。
 
@@ -339,7 +301,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 **"转到"**
 1.  打开 security.microsoft.com 门户。
 
-2.  导航到 " **> 高级搜寻** " 中的 "搜寻"。
+2.  导航到 " **> 高级搜寻**" 中的 "搜寻"。
 
     ![M365 安全中心门户导航栏中高级搜寻的屏幕截图](../../media/mtp/fig17.png) 
 
@@ -369,9 +331,9 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
     1.  查看结果，并查看是否可以识别您打开的电子邮件。  最长可能需要2小时的时间才能在高级搜寻中显示邮件。 如果电子邮件环境很大且结果很多，则可能需要使用 " **显示筛选器" 选项** 来查找邮件。 
 
-   在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
+           在示例中，电子邮件是从 Yahoo 帐户发送的。 单击 **+** "SenderFromDomain" 部分下 " **yahoo.com** " 旁边的图标，然后单击 " **应用** " 将所选的域添加到查询中。  使用在运行模拟以筛选结果的步骤1中用于发送测试邮件的域或电子邮件帐户。  再次运行查询以获取一个较小的结果集，以验证您是否可以从模拟中看到该消息。
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![筛选器的屏幕截图。 使用筛选器缩小搜索范围，并更快地找到要查找的内容。](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -392,9 +354,9 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
     ```
 
-5.  接下来，包括有关附件的信息 (例如：文件名、哈希) 到结果集。 若要执行此操作，请加入 **EmailAttachmentInfo** 表。 用于加入的公共字段，在此示例中为 **NetworkMessageId** 和 **RecipientObjectId** 。
+5.  接下来，包括有关附件的信息 (例如：文件名、哈希) 到结果集。 若要执行此操作，请加入 **EmailAttachmentInfo** 表。 用于加入的公共字段，在此示例中为 **NetworkMessageId** 和 **RecipientObjectId**。
 
-以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp** "，可帮助确定与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
+    以下查询还包括其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可帮助确定与您将在下一步中添加的文件操作相关的电子邮件和时间戳相关的时间戳。
 
     ```console
     EmailEvents 
@@ -438,7 +400,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
 自定义检测将根据您设置的频率运行查询，并且查询的结果将根据所选的受影响的资产创建安全警报。 这些警报将与事件相关联，并且可以作为其中一个产品所生成的任何其他安全警报进行会审。
 
-1.  在 "查询" 页上，删除 "转出说明" 的步骤7中添加的第7行和第8行，然后单击 " **创建检测规则** "。 
+1.  在 "查询" 页上，删除 "转出说明" 的步骤7中添加的第7行和第8行，然后单击 " **创建检测规则**"。 
     
     ![可在 "高级搜寻" 页面中单击 "创建检测规则" 的位置的屏幕截图](../../media/mtp/fig22.png) 
 
@@ -452,7 +414,7 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
     确保明确填写字段，以帮助下一用户获得有关此检测规则警报的明智决策 
 
-3.  选择此通知中受影响的实体。 在这种情况下，选择 " **设备** 和 **邮箱** "。
+3.  选择此通知中受影响的实体。 在这种情况下，选择 " **设备** 和 **邮箱**"。
 
     !["创建检测规则" 页的屏幕截图，可在其中选择受影响实体的参数](../../media/mtp/fig24.png)
  
@@ -473,9 +435,9 @@ Microsoft Defender for Endpoint 检测通常针对攻击技术的最常见属性
 
     ![显示规则和执行详细信息的 "检测规则" 页的屏幕截图](../../media/mtp/fig27b.png) 
 
-在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
+    在此页面中，您可以选择将打开 "详细信息" 页的检测规则。 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    !["电子邮件附件" 页面的屏幕截图，可在其中查看规则执行状态、触发通知和操作、编辑检测等情况](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他高级的搜寻指导-通过练习
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '有关详细信息，请参阅 Exchange Online Protection (EOP 中的默认安全设置) '
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126657"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131093"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下在 Office 365 中安全
 
@@ -41,7 +41,7 @@ ms.locfileid: "49126657"
 1. 带有可疑恶意软件的电子邮件将自动被隔离，收件人将收到通知。 请参阅 [在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 1. 被标识为 "高可信度" 的网络钓鱼电子邮件将根据反垃圾邮件策略操作进行处理。 请参阅 [在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
-由于 Microsoft 想让我们的客户在默认情况下是安全的，因此某些租户替代不会应用于恶意软件或高可信度网络钓鱼。 这些替代包括：
+由于 Microsoft 想让我们的客户在默认情况下是安全的，因此某些租户替代不会应用于恶意软件或高可信度的网络钓鱼。 这些替代包括：
 
 -  (反垃圾邮件策略的允许的发件人列表或允许的域列表) 
 - Outlook 安全发件人

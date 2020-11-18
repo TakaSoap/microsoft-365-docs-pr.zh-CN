@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846480"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130873"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>创建 Microsoft 365 Defender 试用版实验室或试点环境 
 
@@ -54,11 +54,13 @@ ms.locfileid: "48846480"
 
 创建 Microsoft 365 Defender 试用版环境并部署它时有三个阶段：
 
+![部署阶段：准备、设置、板载](../../media/phase-diagrams/deployment-phases.png)
+
 |阶段 | 说明 | 
 |:-------|:-----|
-| ![第1阶段：准备](../../media/prepare.png)<br>[第1阶段：准备](prepare-mtpeval.md)| 了解在试用实验室或试点环境中部署 Microsoft 365 Defender 时需要考虑的事项： <br><br>-利益干系人和签署 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序
-|  ![阶段2：安装程序](../../media/setup.png) <br>[阶段2：安装程序](setup-mtpeval.md)|  执行访问 Microsoft 365 安全中心的初始步骤，以设置你的 Microsoft 365 Defender 试用版实验室或试点环境。 你将指导你执行以下操作：<br><br>-注册 Microsoft 365 E5 试用版 <br>  -配置域<br>-分配 Microsoft 365 E5 许可证<br>-完成门户中的安装向导|
-|  ![第3阶段： Configure & 板载](../../media/config-onboard.png) <br>[第3阶段： Configure & 板载](config-mtpeval.md) | 配置每个 Microsoft 365 Defender 支柱和板载终结点。 你将指导你执行以下操作：<br><br>-配置 Microsoft Defender for Office 365<br>-配置 Microsoft 云应用安全<br>-将 Microsoft Defender 配置为标识<br>-为终结点配置 Microsoft Defender
+|[第1阶段：准备](prepare-mtpeval.md)| 了解在试用实验室或试点环境中部署 Microsoft 365 Defender 时需要考虑的事项： <br><br>-利益干系人和签署 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序
+|[阶段2：安装程序](setup-mtpeval.md)|  执行访问 Microsoft 365 安全中心的初始步骤，以设置你的 Microsoft 365 Defender 试用版实验室或试点环境。 你将指导你执行以下操作：<br><br>-注册 Microsoft 365 E5 试用版 <br>  -配置域<br>-分配 Microsoft 365 E5 许可证<br>-完成门户中的安装向导|
+|[第3阶段： Configure & 板载](config-mtpeval.md) | 配置每个 Microsoft 365 Defender 支柱和板载终结点。 你将指导你执行以下操作：<br><br>-配置 Microsoft Defender for Office 365<br>-配置 Microsoft 云应用安全<br>-将 Microsoft Defender 配置为标识<br>-为终结点配置 Microsoft Defender
 
 
 ## <a name="in-scope"></a>在范围内
@@ -84,5 +86,5 @@ ms.locfileid: "48846480"
 -   生产环境中的渗透测试
 
 ## <a name="next-step"></a>后续步骤
-![第1阶段：准备](../../media/prepare.png) <br>[第1阶段：准备](prepare-mtpeval.md) 
+[第1阶段：准备](prepare-mtpeval.md) 
 <br> 准备 Microsoft 365 Defender 试用版实验室或试点环境

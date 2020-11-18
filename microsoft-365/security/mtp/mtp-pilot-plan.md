@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec2bfe52308231577e4f2749e1f4cdf24a36f604
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846016"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130977"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>规划你的试点 Microsoft 365 Defender 项目 
 
@@ -34,45 +34,10 @@ ms.locfileid: "48846016"
 
 **适用于：**
 - Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="规划你的试点 Microsoft 365 Defender 项目" />
-      <br/>制定</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="准备 Microsoft 365 Defender 试用版实验室或试点环境" />
-      <br/>准备</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="运行 Microsoft 365 Defender 攻击模拟" />
-     <br/>模拟攻击</a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="关闭并汇总你的 Microsoft 365 Defender 试点" />
-     <br/>结束和汇总</a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|![规划](../../media/phase-diagrams/1-planning.png)<br/>规划|[![准备](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[过程](prepare-mtpeval.md) | [![模拟攻击](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[模拟攻击](mtp-pilot-simulate.md) | [![结束和汇总](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[结束和汇总](mtp-pilot-close.md)|
+|--|--|--|--|
+|*你在这里！*| | | |
 
 你当前正在计划阶段。
 

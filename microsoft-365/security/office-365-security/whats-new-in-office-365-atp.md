@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842840"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131140"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的新增功能
 
@@ -40,6 +40,10 @@ ms.locfileid: "48842840"
 
 > [!TIP]
 > 尚不具有 Microsoft Defender for Office 365 吗？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+
+## <a name="november-2020"></a>2020 年 11 月 
+
+- 更新了审核中的导出限制 > 操作中心 > 的邮件提交和操作日志中的更正 (Defender for Office 365 计划 2) 
 
 ## <a name="septemberoctober-2020"></a>9月/10 月2020 
 
@@ -67,7 +71,7 @@ ms.locfileid: "48842840"
     - 高级不筛选 (这些是一些高级筛选选项，其中包括不包含、不包含等。 ) 
     - 精确的时间筛选器 (日、小时、半小时)  
 
-- **事件** 小组件现在是 **操作中心** 小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 " **威胁管理**  >  **检查** "。 )  (Microsoft Defender for Office 365 Plan 2) 
+- **事件** 小组件现在是 **操作中心** 小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  **检查**"。 )  (Microsoft Defender for Office 365 Plan 2) 
 
 - [Microsoft 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(预览)**
 
@@ -75,11 +79,11 @@ ms.locfileid: "48842840"
 
 - [导出 URL 单击 "数据" 以进行脱机分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or plan 2) 
 
-- [在 Microsoft defender For office 365 中使用市场活动视图 ( **预览** )](campaigns.md) (Microsoft Defender for office 365 计划 2) 
+- [在 Microsoft defender For office 365 中使用市场活动视图 (**预览**)](campaigns.md) (Microsoft Defender for office 365 计划 2) 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [查看新的已损坏用户检测和响应功能](address-compromised-users-quickly.md) ( **预览** )  (Microsoft Defender for Office 365 计划 2) 
+- [查看新的已损坏用户检测和响应功能](address-compromised-users-quickly.md) (**预览**)  (Microsoft Defender for Office 365 计划 2) 
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -101,7 +105,7 @@ ms.locfileid: "48842840"
 
 - [查看有关仿冒 url 的数据，然后单击 "判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or plan 2) 
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 计划1和计划2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 计划 1 和计划 2
 
 您是否知道 Microsoft Defender for Office 365 在两个计划中可用？ [了解有关每个计划包含的内容的详细信息](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 (ZAP) 如何在 Exchange Online 邮箱中追溯将传递的邮件移动到追溯被发现为垃圾邮件或网络钓鱼的 "垃圾邮件" 文件夹或隔离中的零小时自动清除。
-ms.openlocfilehash: e59d93285dd75a749739b8247c156c19533ce2b1
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845440"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131137"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online 中的零小时自动清除 (ZAP) 
 
@@ -55,15 +55,15 @@ ZAP 在独立的 Exchange Online Protection (EOP) 保护本地 Exchange 邮箱�
 
 ### <a name="phish-zap"></a>网络钓鱼 ZAP
 
-对于在传递后被标识为网络钓鱼的已 **读或未读邮件** ，ZAP 结果取决于为适用的反垃圾邮件策略中的 **网络钓鱼电子邮件** 筛选判定的操作。 以下列表介绍了针对网络钓鱼的可用筛选判定操作及其可能的 ZAP 结果：
+对于在传递后被标识为 "仿冒" 的已 **读或未读邮件** ，ZAP 结果取决于为适用的反垃圾邮件策略中的 **网络钓鱼电子邮件** 筛选判定的操作。 以下列表介绍了针对网络钓鱼及其可能的 ZAP 结果的可用筛选判定操作：
 
-- **添加 X 标头，将****带有文本的主题行预置** ： ZAP 对邮件不执行任何操作。
+- **添加 X 标头，将****带有文本的主题行预置**： ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到垃圾邮件** ： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **将邮件重定向到电子邮件地址** ， **删除邮件** ， **隔离邮件** ： ZAP 隔离邮件。
+- **将邮件重定向到电子邮件地址**， **删除邮件**， **隔离邮件**： ZAP 隔离邮件。
 
-默认情况下，在反垃圾邮件策略中启用网络钓鱼 ZAP，而 **仿冒电子邮件** 筛选判定的默认操作是 **隔离邮件** ，这意味着网络钓鱼 ZAP 默认隔离邮件。
+默认情况下，在反垃圾邮件策略中启用网络钓鱼 ZAP，而 **仿冒电子邮件** 筛选判定的默认操作是 **隔离邮件**，这意味着网络钓鱼 ZAP 默认隔离邮件。
 
 有关配置垃圾邮件筛选 verdicts 的详细信息，请参阅 [在 Microsoft 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
@@ -71,19 +71,19 @@ ZAP 在独立的 Exchange Online Protection (EOP) 保护本地 Exchange 邮箱�
 
 对于在传递后被标识为垃圾邮件的 **未读邮件** ，ZAP 结果取决于为适用的反垃圾邮件策略中的 **垃圾邮件** 筛选判定所配置的操作。 以下列表介绍了针对垃圾邮件的可用筛选判定操作及其可能的 ZAP 结果：
 
-- **添加 X 标头，将****带有文本的主题行预置** ： ZAP 对邮件不执行任何操作。
+- **添加 X 标头，将****带有文本的主题行预置**： ZAP 对邮件不执行任何操作。
 
-- **将邮件移动到垃圾邮件** ： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **将邮件移动到垃圾邮件**： ZAP 将邮件移动到 "垃圾邮件" 文件夹，只要邮箱中启用了垃圾邮件规则 (默认情况下，将启用该规则) 。 有关详细信息，请参阅 [Microsoft 365 中的 Exchange Online 邮箱上的配置垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **将邮件重定向到电子邮件地址** ， **删除邮件** ， **隔离邮件** ： ZAP 隔离邮件。 最终用户可以查看和管理自己的垃圾邮件隔离邮件。
+- **将邮件重定向到电子邮件地址**， **删除邮件**， **隔离邮件**： ZAP 隔离邮件。 最终用户可以查看和管理自己的垃圾邮件隔离邮件。
 
-默认情况下，在反垃圾邮件策略中启用垃圾邮件 ZAP， **垃圾** 邮件筛选判定的默认操作是 **将邮件移动到垃圾邮件文件夹** ，这意味着垃圾邮件 ZAP 在默认情况下将 **未读** 邮件移动到 "垃圾邮件" 文件夹。
+默认情况下，在反垃圾邮件策略中启用垃圾邮件 ZAP， **垃圾** 邮件筛选判定的默认操作是 **将邮件移动到垃圾邮件文件夹**，这意味着垃圾邮件 ZAP 在默认情况下将 **未读** 邮件移动到 "垃圾邮件" 文件夹。
 
 有关配置垃圾邮件筛选 verdicts 的详细信息，请参阅 [在 Microsoft 365 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
 
 ### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的 ZAP 注意事项
 
-ZAP 不会隔离在安全附件扫描中的 [动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) 过程中的任何邮件，或者 EOP 恶意软件筛选已将附件替换为 **恶意软件警报 Text.txt** 文件。 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并将反垃圾邮件策略中的筛选判定项设置为对邮件执行某些操作 (移至 "垃圾邮件"、"重定向"、"删除" 或 "隔离) "，则 ZAP 将默认为 "移动到垃圾邮件" 操作。
+ZAP 不会隔离在安全附件扫描中的 [动态传递](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) 过程中的任何邮件，或者 EOP 恶意软件筛选已将附件替换为 **恶意软件警报 Text.txt** 文件。 如果收到这些类型的邮件的网络钓鱼或垃圾邮件信号，并且反垃圾邮件策略中的筛选判定项设置为对邮件执行某些操作 (移到 "垃圾邮件"、"重定向"、"删除" 或 "隔离) "，则 ZAP 将默认为 "移动到垃圾邮件" 操作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否移动了邮件
 
@@ -105,7 +105,7 @@ ZAP 不会隔离在安全附件扫描中的 [动态传递](atp-safe-attachments.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>如果邮件移动到另一个文件夹 (例如收件箱规则) ，该怎么办？
 
-只要邮件尚未删除，或者只要相同或更强的操作尚未应用，ZAP 仍可正常工作。 例如，如果网络钓鱼策略设置为 "隔离"，并且用户或管理员已经 junked 了该电子邮件，则隔离将执行操作以隔离该文件。
+只要邮件尚未删除，或者只要相同或更强的操作尚未应用，ZAP 仍可正常工作。 例如，如果将反网络钓鱼策略设置为隔离，邮件已在垃圾邮件中，则 ZAP 将执行操作以隔离邮件。
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 对邮箱的保留有何影响？
 

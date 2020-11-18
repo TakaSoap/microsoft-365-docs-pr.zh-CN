@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 350904022ec86acdbebf109dd5946598643aea83
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843656"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131219"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>运行你的试点 Microsoft 365 Defender 项目 
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一个统一的前期和后入侵后企业防护套件
 
 下面的示例时间线因您的环境中的资源是否正确而异。 某些检测和工作流可能需要比其他更多的学习时间。
 
-![运行 Microsoft 365 Defender 试点的示例时间线](../../media/pilotimeline.png)
+![运行 Microsoft 365 Defender 试点的示例时间线](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >为获得最佳结果，请尽可能仔细地执行试点说明。
@@ -68,11 +68,11 @@ Microsoft 365 Defender 是一个统一的前期和后入侵后企业防护套件
 
 |阶段 | 说明 | 
 |:-------|:-----|
-| ![规划](../../media/mtp/plan.png)<br>[规划](mtp-pilot-plan.md)| 了解在运行 Microsoft 365 Defender 试点项目之前需要考虑的事项： <br><br>-Scope <br> -用例 <br>- 要求： <br>-测试计划 <br> -成功条件 <br> 记分卡 
-| ![过程](../../media/mtp/prep.png) <br>[过程](mtp-evaluation.md)|  访问 Microsoft 365 安全中心以设置你的 Microsoft 365 Defender 试点环境。 你将指导你执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
-| ![攻击模拟](../../media/mtp/run-sim.png) <br>[攻击模拟](mtp-pilot-simulate.md) | 为模拟攻击，您将获得以下指导：<br><br>-验证测试环境要求 <br>-运行模拟 <br>-调查事件 <br>-解决事件 
-| ![结束和摘要](../../media/mtp/close.png) <br>[结束和摘要](mtp-pilot-close.md) | 当您到达进程的末尾时，您将被指引到：<br><br>-转到最终输出<br>-向你的利益干系人提供你的输出 <br>-提供反馈 <br>-执行后续步骤 
+| [规划](mtp-pilot-plan.md)<br> 约1天| 了解在运行 Microsoft 365 Defender 试点项目之前需要考虑的事项： <br><br>-Scope <br> -用例 <br>- 要求： <br>-测试计划 <br> -成功条件 <br> 记分卡 
+| [过程](mtp-evaluation.md) <br>约2天|  访问 Microsoft 365 安全中心以设置你的 Microsoft 365 Defender 试点环境。 你将指导你执行以下操作：<br><br>-确定利益干系人并寻求你的试点的注销 <br> -环境注意事项 <br>-Access <br>-Azure Active Directory 安装程序 <br> -配置顺序 <br> -注册 Microsoft 365 E5 试用版 <br> -配置域 <br>-分配 Microsoft 365 E5 许可证 <br> -完成门户中的安装向导|
+| [攻击模拟](mtp-pilot-simulate.md) <br>约2天| 为模拟攻击，您将获得以下指导：<br><br>-验证测试环境要求 <br>-运行模拟 <br>-调查事件 <br>-解决事件 
+| [结束和摘要](mtp-pilot-close.md) <br>约1天| 当您到达进程的末尾时，您将被指引到：<br><br>-转到最终输出<br>-向你的利益干系人提供你的输出 <br>-提供反馈 <br>-执行后续步骤 
 
 ## <a name="next-step"></a>后续步骤
-|![规划阶段](../../media/mtp/plan.png) <br>[规划阶段](mtp-pilot-plan.md) | 规划 Microsoft 365 Defender 试点项目 
+|[规划阶段](mtp-pilot-plan.md) | 规划 Microsoft 365 Defender 试点项目 
 |:-------|:-----|

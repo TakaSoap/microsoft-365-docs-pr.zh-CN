@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 了解如何使用合规性边界来创建逻辑边界，以控制电子数据展示管理器可在 Microsoft 365 中搜索的用户内容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370398"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131127"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>为电子数据展示调查设置合规性边界
 
@@ -142,7 +142,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
     - `Site`：指定参数中定义的角色组可以搜索的 OneDrive 帐户 `Users` 。 对于 OneDrive 筛选器，请使用实际字符串  `ComplianceAttribute` 。 这将映射到您在步骤1中标识的相同属性，并且由于您在步骤2中提交的支持请求而将其同步到 OneDrive 帐户。 *AttributeValue*  指定代理。 此筛选器允许角色组的成员仅搜索特定代理中的 OneDrive 帐户;例如，  `"Site_ComplianceAttribute -eq 'FourthCoffee'"` 。
 
-    - `Site_Path`：指定参数中定义的角色组可以搜索的 SharePoint 网站  `Users` 。 *SharePointURL*指定角色组成员可以搜索的代理中的网站。 例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 请注意 `Site` ， `Site_Path` 筛选器由 **-或** 运算符连接。
+    - `Site_Path`：指定参数中定义的角色组可以搜索的 SharePoint 网站  `Users` 。 *SharePointURL* 指定角色组成员可以搜索的代理中的网站。 例如，`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 请注意 `Site` ， `Site_Path` 筛选器由 **-或** 运算符连接。
 
      > [!NOTE]
      > 参数的语法 `Filters` 包含 *筛选器列表*。 筛选器列表是包含邮箱筛选器和使用逗号分隔的网站筛选器的筛选器列表。 在上面的示例中，请注意，逗号分隔 **Mailbox_ComplianceAttribute** 和 **Site_ComplianceAttribute**： `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` 。 在运行内容搜索期间处理此筛选器时，将从 "筛选器" 列表中创建两个搜索权限筛选器：一个邮箱筛选器和一个网站筛选器。 使用筛选器列表的另一种方法是为每个代理创建两个单独的搜索权限筛选器：针对邮箱属性的一个搜索权限筛选器和一个网站属性筛选器。 在这两种情况下，结果都是相同的。 使用筛选器列表或创建单独的搜索权限筛选器是一个优先考虑事项。
@@ -219,6 +219,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |JPN  <br/> |亚太地区  <br/> |
     |IND  <br/> |亚太地区  <br/> |
     |LAM  <br/> |美国  <br/> |
+    |还是  <br/> |欧洲 |
+    |BRA  <br/> |北美数据中心 |
     |||
 
    如果没有为搜索权限筛选器指定 **区域** 参数，则将搜索组织的主 SharePoint 区域。 将搜索结果导出到最接近的数据中心。
@@ -282,7 +284,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜索权限筛选器不适用于 Exchange 公用文件夹。
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 - 如果邮箱已被取消许可或软删除，Azure AD 属性将不再同步到邮箱。 如果邮箱被删除时在邮箱上进行了保留，则在邮箱中保留的内容仍受合规性边界或搜索权限筛选器的约束，具体取决于上次在删除邮箱之前同步 Azure AD 属性的时间。 
 
@@ -298,9 +300,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 建议不要使用排除筛选器 (例如， `-not()` 在搜索权限筛选器) 中使用基于内容的符合性边界。 如果尚未为具有最近更新的属性的内容编制索引，则使用排除筛选器可能会产生意外的结果。 
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
-**谁可以使用 New-compliancesecurityfilter 和 New-compliancesecurityfilter cmdlet) 创建和管理搜索权限筛选器 (？**
+**谁可以使用 New-ComplianceSecurityFilter 和 Set-ComplianceSecurityFilter cmdlet) 来创建和管理搜索权限筛选器 (？**
   
 若要创建、查看和修改搜索权限筛选器，您必须是 Security & 合规性中心中的 "组织管理" 角色组的成员。
   
