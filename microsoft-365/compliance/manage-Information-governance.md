@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的 Microsoft 信息管控
+title: Microsoft 365 中的 Microsoft 信息治理
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,15 +13,15 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 在 Microsoft 365 中实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
-ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: 实施 Microsoft 信息治理功能，以管理数据，满足合规性或监管要求。
+ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071463"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087111"
 ---
-# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息管控
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息治理
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
@@ -29,9 +29,9 @@ ms.locfileid: "49071463"
 
 ![管理数据 - 信息治理和记录管理](../media/information-governance-records-management.png)
 
-需要保护数据？ 请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
+想要保护数据？请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
 
-## <a name="information-governance"></a>信息管理政策
+## <a name="information-governance"></a>信息治理
 
 保留所需要的东西，删除不需要的东西：
  

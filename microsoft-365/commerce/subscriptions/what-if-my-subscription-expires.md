@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 了解当 Microsoft 365 for business 订阅过期、被禁用或取消时数据会发生什么情况。
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906819"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135975"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Microsoft 365 for business 订阅结束时我的数据和访问会发生什么情况？
 
-如果你的订阅结束（因为它已过期或你决定取消），则在订阅完全关闭之前，你对 Microsoft 365 服务、应用程序和客户数据的访问会经历多个状态，或 *deprovisioned* 。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Microsoft 365，请先备份你的数据，然后再将其最终删除。
+如果你的订阅结束（因为它已过期或你决定取消），则在订阅完全关闭或 *删除* 之前，你对 Microsoft 365 服务、应用程序和客户数据的访问将经历多个状态。 如果你知道这一进展，你将能够更好地将你的订阅恢复到处于活动状态过晚的状态，或者，如果你离开 Microsoft 365，请先备份你的数据，然后再将其最终删除。
 
 请阅读此重要信息，然后再联系 [Microsoft 365 支持部门](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>订阅过期时数据会发生什么情况？
 
-- 如果你的订阅已过期，则会经历以下阶段：已过期/已禁用/Deprovisioned。 过期的阶段在订阅到达其结束日期后立即开始。
+- 如果你的订阅过期，它将经历以下阶段：已过期/已禁用/已删除。 过期的阶段在订阅到达其结束日期后立即开始。
 - 如果您关闭年度订阅的定期帐单，它会经历与过期订阅相同的阶段。 第一阶段的开始是每年订阅的周年纪念，而不是在关闭订阅的定期记帐设置的日期上启动的。
 - 如果取消每月订阅，则会在取消) 时立即禁用 (。 这意味着您的用户将立即失去对 Microsoft 365 资产的访问权限，并且只有管理员才能在接下来的90天访问数据。
 
 下表介绍了付费 Microsoft 365 for business 订阅过期时的预期效果。
 
-| **Active**                                                             | **过期 <br/> (30 天 \*)**                                                | **已禁用 <br/> (90 天 \*)**                                               | **已取消设置**                                                                         |
+| 活动 | 已过期 <br/> (30 天 \*)  | 禁用 <br/> (90 天 \*)  | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可访问的数据*                                               | *所有可访问的数据*                                                     | *仅供管理员访问的数据*                                             | **删除了数据删除的 <br/> Azure Active Directory （如果未被其他服务使用）** |
 | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限   | 用户具有对 Microsoft 365、文件和应用程序的常规访问权限              | 用户无法访问 Microsoft 365、文件或应用程序                        | 用户无法访问 Microsoft 365、文件或应用程序                                     |
@@ -192,16 +192,16 @@ ms.locfileid: "48906819"
 
 作为全局管理员或帐单管理员，你可以 [重新激活订阅](reactivate-your-subscription.md) ，并继续使用 Microsoft 365，让你的所有客户数据保持不变。 如果你选择不重新激活，请 [备份你的数据](back-up-data-before-switching-plans.md)。
 
-### <a name="state-deprovisioned"></a>状态： Deprovisioned
+### <a name="state-deleted"></a>状态：已删除
   
- **预期内容：** 如果您在您的订阅处于宽限期或已禁用状态时不重新激活它，则该订阅是 deprovisioned。
+ **预期内容：** 如果您不重新激活处于宽限期或已禁用状态的订阅，则会删除该订阅。
   
 管理员和用户不再有权访问订阅附带的服务或 Office 应用程序。 所有客户数据（从用户数据到文档和电子邮件）都将被永久删除且不可恢复。
   
 此时，无法重新激活订阅。 但是，作为全局或帐单管理员，你仍可以访问管理中心来管理其他订阅，或购买新订阅以满足你的业务需求。
   
 > [!NOTE]
-> 添加已 deprovisioned 的相同类型的新订阅不会还原与 deprovisioned 订阅关联的数据。
+> 添加已删除的相同类型的新订阅不会还原与已删除订阅关联的数据。
 
 
 > [!NOTE]
