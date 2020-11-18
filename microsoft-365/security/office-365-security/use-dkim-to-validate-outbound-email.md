@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: a2cf47d12d00eb2f4b4d58921ea09ddfaa91cece
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446425"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126669"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -35,7 +35,7 @@ ms.locfileid: "48446425"
 
 除了使用 SPF 和 DMARC 之外，还应使用 DKIM 来帮助防止欺骗程序发送看上去发送自您的域的邮件。 可以使用 DKIM 将数字签名添加到出站电子邮件的邮件头中。 这听起来这很复杂，其实不然。 配置 DKIM 时，您将使用加密身份验证授权您的域关联到电子邮件或对电子邮件进行签名。 接收来自域的电子邮件的电子邮件系统可以使用此数字签名来帮助确定他们收到的传入电子邮件是否合法。
 
-基本上，您可以使用私钥来加密域的传出电子邮件中的邮件头。 向域 DNS 记录发布公钥，然后接收服务器可用来解码签名。 它们使用公钥来确认邮件确实是你发送的，而不是其他人*假冒*你的域发送的。
+基本上，您可以使用私钥来加密域的传出电子邮件中的邮件头。 向域 DNS 记录发布公钥，然后接收服务器可用来解码签名。 它们使用公钥来确认邮件确实是你发送的，而不是其他人 *假冒* 你的域发送的。
 
 Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意味着无需执行任何操作，即可为任意初始域名（例如 litware.onmicrosoft.com）。 有关域的详细信息，请参阅[关于域的常见问题](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
@@ -85,7 +85,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
 
 由于 DKIM 密钥同时支持 1024 和 2048 位，因此这些说明将告诉你如何将 1024 位密钥升级到 2048 位。 以下步骤针对的是两种用例，请选择最适合你的配置的步骤。
 
-1. 如果你**已经配置了 DKIM**，请按如下所示轮换位数：
+1. 如果你 **已经配置了 DKIM**，请按如下所示轮换位数：
 
    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 （cmdlet 来自 Exchange Online。）
    1. 运行以下命令：
@@ -94,7 +94,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
-1. 或者，对于**新实现的 DKIM**：
+1. 或者，对于 **新实现的 DKIM**：
 
    1. [通过 PowerShell 连接到 Office 365 工作负载](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 （这是 Exchange Online cmdlet。）
    1. 运行以下命令：
@@ -103,7 +103,7 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
       New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
       ```
 
-与 Microsoft 365 保持连接，以*验证*配置。
+与 Microsoft 365 保持连接，以 *验证* 配置。
 
 1. 运行以下命令：
 
@@ -311,7 +311,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>设置 DKIM 以便第三方服务可以代表自定义域发送或假冒电子邮件
 <a name="SetUp3rdPartyspoof"> </a>
 
-一些批量电子邮件服务提供商或服务型软件提供商允许你为来自其服务的电子邮件设置 DKIM 密钥。这需要你自己和第三方之间进行协调，从而设置必要的 DNS 记录。任何两个组织的操作过程都不会完全相同。相反，此过程完全因组织而异。
+一些批量电子邮件服务提供商或服务型软件提供商允许你为来自其服务的电子邮件设置 DKIM 密钥。这需要你自己和第三方之间进行协调，从而设置必要的 DNS 记录。某些第三方服务器可能使用不同的选择器来获取自身的 CNAME 记录。任何两个组织的操作过程都不会完全相同。相反，此过程完全因组织而异。
 
 显示为 contoso.com 和 bulkemailprovider.com 正确配置了 DKIM 的示例邮件如下所示：
 
