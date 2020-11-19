@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 管理员可了解 EOP 如何使用电子邮件身份验证（SPF、DKIM 和 DMARC）来帮助防止欺骗、网络钓鱼和垃圾邮件。
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202971"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131069"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的电子邮件身份验证
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202971"
 
 电子邮件身份验证（也称为电子邮件验证）是一组尝试阻止欺骗（来自伪造发件人的电子邮件）的标准。 在所有 Microsoft 365 组织中，EOP 使用以下标准验证入站电子邮件：
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "48202971"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用电子邮件身份验证帮助防止欺骗
 
-DMARC 通过检查邮件中的**发件人**地址来防止欺骗。 **发件人**地址是用户在其电子邮件客户端中看到的发件人的电子邮件地址。 目标电子邮件组织还可以验证电子邮件域是否已通过 SPF 或 DKIM。 换言之，已对域进行身份验证，因此发件人的电子邮件地址不是欺骗电子邮件地址。
+DMARC 通过检查邮件中的 **发件人** 地址来防止欺骗。 **发件人** 地址是用户在其电子邮件客户端中看到的发件人的电子邮件地址。 目标电子邮件组织还可以验证电子邮件域是否已通过 SPF 或 DKIM。 换言之，已对域进行身份验证，因此发件人的电子邮件地址不是欺骗电子邮件地址。
 
 但是，SPF、DKIM 和 DMARC 的 DNS 记录（统称为电子邮件身份验证策略）是可选的。 具有强电子邮件身份验证策略的域（例如 microsoft.com 和 skype.com）可防止欺骗。 但是，如果域中的电子邮件身份验证策略较弱，或者根本没有策略，则会成为欺骗的主要目标。
 
@@ -54,7 +54,7 @@ DMARC 通过检查邮件中的**发件人**地址来防止欺骗。 **发件人*
 
 发布强电子邮件身份验证策略的中小型公司的比例更小。 对于北美和西欧以外的电子邮件域，该数字甚至更小。
 
-缺乏强大的电子邮件身份验证策略非同小可。 组织可能不了解电子邮件身份验证的工作原理，但攻击者完全了解，这就使他们占据了优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用*隐式电子邮件身份验证*来检查入站电子邮件。
+缺乏强大的电子邮件身份验证策略非同小可。 组织可能不了解电子邮件身份验证的工作原理，但攻击者完全了解，这就使他们占据了优势。 由于网络钓鱼问题，而且强电子邮件身份验证策略的采用范围有限，因此 Microsoft 将使用 *隐式电子邮件身份验证* 来检查入站电子邮件。
 
 隐式电子邮件身份验证是对常规电子邮件身份验证策略的扩展。 这些扩展包括发件人信誉、发件人历史记录、收件人历史记录、行为分析和其他高级技巧。 如果没有这些扩展的其他信号，从不使用电子邮件身份验证策略的域发送的邮件将被标记为欺骗。
 
@@ -62,7 +62,7 @@ DMARC 通过检查邮件中的**发件人**地址来防止欺骗。 **发件人*
 
 ## <a name="composite-authentication"></a>复合身份验证
 
-如果域没有传统的 SPF、DKIM 和 DMARC 记录，则这些记录检查将无法传达足够的身份验证状态信息。 为此，Microsoft 开发了一种用于隐式电子邮件身份验证的算法。 该算法可将多个信号组合成一个称为_复合身份验证_（或简称为 `compauth`）的单一值。 可以在邮件头的“`compauth`Authentication-Results **”标头中标记 ** 值。
+如果域没有传统的 SPF、DKIM 和 DMARC 记录，则这些记录检查将无法传达足够的身份验证状态信息。 为此，Microsoft 开发了一种用于隐式电子邮件身份验证的算法。 该算法可将多个信号组合成一个称为 _复合身份验证_（或简称为 `compauth`）的单一值。 可以在邮件头的“`compauth`Authentication-Results **”标头中标记** 值。
 
 ```text
 Authentication-Results:
@@ -188,7 +188,7 @@ Microsoft 365 会将来自公司基础结构的入站电子邮件视为已经过
 - 如果他们使用批量发件人代表他们发送电子邮件，请验证“发件人”地址（如果该地址属于他们）中的域是否与通过 SPF 或 DMARC 检查的域一致。
 
 - 验证 SPF 记录中是否包括以下位置（如果他们使用了这些地址）：
-  
+
   - 本地电子邮件服务器。
   - 通过软件即服务 (SaaS) 提供程序发送的电子邮件。
   - 通过云托管服务（Microsoft Azure、GoDaddy、Rackspace、Amazon Web Services 等）发送的电子邮件。
