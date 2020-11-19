@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的应用程序保护顺序，以及保护策略中的优先级值如何确定应用的策略。
-ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843601"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349264"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>电子邮件保护的顺序和优先级
 
@@ -34,7 +34,7 @@ ms.locfileid: "48843601"
 
 有两个主要因素可用于确定将哪个策略应用于邮件：
 
-- **电子邮件保护类型的优先级** ：此顺序不可配置，如下表所述：
+- **电子邮件保护类型的优先级**：此顺序不可配置，如下表所述：
 
   ****
 
@@ -44,15 +44,15 @@ ms.locfileid: "48843601"
   |双面|网络钓鱼|CAT： PHSH|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |第三章|高可信度垃圾邮件|CAT： HSPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |4 |网络钓鱼|分类程序：欺骗|[在 EOP 中配置欺骗智能](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|用户模拟 (受保护的域) |UIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
-  |型<sup>\*</sup>|域模拟 (受保护的用户) |DIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|用户模拟 (受保护的用户) |UIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
+  |型<sup>\*</sup>|域模拟 (受保护的域) |DIMP|[在 Microsoft Defender for Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)|
   |7 |垃圾邮件|CAT： SPM|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |8 |批量邮件|分类程序：批量|[在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> 这些功能仅在 Microsoft Defender for Office 365 中提供了反网络钓鱼策略中。
 
-- **策略的优先级** ：对于每种保护类型 (反垃圾邮件、反恶意软件、反网络钓鱼等 ) ，有一个适用于每个人的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
+- **策略的优先级**：对于每种保护类型 (反垃圾邮件、反恶意软件、反网络钓鱼等 ) ，有一个适用于每个人的默认策略，但您可以创建适用于特定用户的自定义策略。 每个自定义策略都有一个优先级值，用于确定策略在中的应用顺序。 默认策略总是最后应用。
 
   如果用户是在同一类型的多个策略中定义的，则仅对其应用具有最高优先级的策略。 该类型的任何剩余策略不会评估给用户 (包括默认策略) 。
 

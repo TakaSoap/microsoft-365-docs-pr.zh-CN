@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377219"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350708"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -34,7 +34,7 @@ ms.locfileid: "48377219"
 管理员可以指定过期时间和任何非活动组，达到该时间段结束时间后，不会被更新。  (这包括存档的团队。 ) 过期期在创建组时或在上次续订日期时开始。 在过期之前，将自动向组所有者发送一封电子邮件，以允许他们为其他过期间隔续订组。 团队用户将在团队中看到永久通知。
 
 正在使用的组将自动续订。 以下任一操作将自动续订组：
-- SharePoint-查看、编辑、下载、移动、共享或上传文件。
+- SharePoint-查看、编辑、下载、移动、共享或上传文件。  (查看 SharePoint 页面不计为自动续订的操作。 ) 
 - Outlook-加入组，从组中读取或写入组邮件，与 (Outlook 网页) 上的邮件类似。
 - 团队-访问团队频道。
 
@@ -48,14 +48,14 @@ ms.locfileid: "48377219"
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>哪些用户可以配置和使用 Microsoft 365 组过期策略？
 
-|角色|可以执行的操作|
+|Role|可以执行的操作|
 |---------|---------|
 |Office 365 全局管理员 (在 Azure 中，公司管理员) ，用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
-|用户|续订或 [还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) 自己拥有的 Microsoft 365 组|
+|User|续订或 [还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) 自己拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
-如上所述，默认情况下过期功能处于关闭状态。 管理员必须启用过期策略并将其属性设置为生效。 若要启用它，请转到**Azure Active Directory**  >  **组**  >  **过期**。 你可以在此处设置默认组生存期，并指定你希望第一个和第二个过期通知转到组所有者的提前程度。
+如上所述，默认情况下过期功能处于关闭状态。 管理员必须启用过期策略并将其属性设置为生效。 若要启用它，请转到 **Azure Active Directory**  >  **组**  >  **过期**。 你可以在此处设置默认组生存期，并指定你希望第一个和第二个过期通知转到组所有者的提前程度。
 
 组生存期以天为单位指定，可设置为180、365或指定的自定义值。 自定义值必须至少为30天。
 

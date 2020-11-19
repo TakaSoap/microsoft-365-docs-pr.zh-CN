@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 数据移动是指 Microsoft 将租户的服务和关联数据移到新的数据中心地理位置时发生的后端操作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997787"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349252"
 ---
 # <a name="during-and-after-your-data-move"></a>数据移动期间和数据移动之后
 
@@ -46,6 +46,7 @@ ms.locfileid: "48997787"
 |瑞士，列支敦士登  <br/> |2022年7月1日  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
 |德国  <br/> |5月1日，2023  <br/> |
+|巴西  <br/> |2023年6月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -57,7 +58,7 @@ ms.locfileid: "48997787"
   
 |**配置**|**说明**|
 |:-----|:-----|
-|用户拥有对另一个邮箱的邮箱文件夹权限  <br/> |可能受到限制。  <br/> 如果在租户移动过程中，用户 A 和邮箱 B 不在同一地理位置，如果用户 A 对邮箱 B 中的特定文件夹有权限，则用户 A 无法在 Outlook Web Access 中打开邮箱 B 的文件夹。  <br/> 若要添加共享文件夹，请右键单击左侧导航面板中的用户名，然后选择 " **添加共享文件夹** "。  <br/> |
+|用户拥有对另一个邮箱的邮箱文件夹权限  <br/> |可能受到限制。  <br/> 如果在租户移动过程中，用户 A 和邮箱 B 不在同一地理位置，如果用户 A 对邮箱 B 中的特定文件夹有权限，则用户 A 无法在 Outlook Web Access 中打开邮箱 B 的文件夹。  <br/> 若要添加共享文件夹，请右键单击左侧导航面板中的用户名，然后选择 " **添加共享文件夹**"。  <br/> |
 |具有对另一个邮箱的 "完全邮箱" 权限的用户  <br/> |完全支持。  <br/> 如果用户 A 对邮箱 B 具有 "完全访问权限" 权限，则用户 A 可以在 Outlook Web Access 的左侧导航窗格中单击共享文件夹以打开显示邮箱 B 的窗口。 在移动过程中，用户可以使用 Outlook Web Access 打开共享邮箱，而不会产生任何负面影响。 限制仅适用于邮箱中的文件夹级共享。           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online

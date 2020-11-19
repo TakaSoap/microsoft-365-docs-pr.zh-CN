@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 了解新的 Office 365 datacenter 信息以及如何使用 "数据中心" 选项请求将核心数据移动到新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333708"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349240"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>将核心数据移动到新的 Microsoft 365 数据中心信息
 
@@ -48,6 +48,7 @@ Core customer data 是一个术语，指的是一部分客户数据，包括：
 |**瑞士，列支敦士登**| 欧盟 | 瑞士 | 2019 年 12 月 |
 |**Germany（德国）**| 欧盟 | 德国 | 2019 年 12 月 |
 |**挪威**| 欧盟 | 挪威 | 2020 年 4 月 |
+|**巴西**| 美洲 | 巴西 | 2020 年 11 月 |
 
 自10月1日起，包含在租户中的 Office 365 教育订阅的2020客户不适合迁移。
 
