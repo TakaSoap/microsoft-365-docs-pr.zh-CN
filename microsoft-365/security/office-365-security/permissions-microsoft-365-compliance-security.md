@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 使用 Microsoft 365 安全中心或 Microsoft 365 合规中心，可以集中管理与安全或合规性相关的所有任务的权限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a6c0ceee2b07dd93affc75fae1111aad9d7f5198
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920628"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357871"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合规中心和 Microsoft 365 安全中心中的权限
 
@@ -116,7 +116,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色均为
 |在此服务中...|安全操作员可以...|
 |---|---|
 |[**Microsoft 365 安全中心**](https://security.microsoft.com/)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全警报。|
-|**Identity Protection 中心** （即将支持）|执行“安全读者”角色可执行的所有操作。|
+|**Identity Protection 中心**（即将支持）|执行“安全读者”角色可执行的所有操作。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|执行“安全读者”角色可执行的所有操作。|
 |[**安全与合规中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查和响应安全威胁|
 |**Microsoft Defender for Endpoint 和 EDR**|执行“安全读者”角色可执行的所有操作。 <br/><br/> 查看、调查并响应警报。|
@@ -172,7 +172,7 @@ Microsoft 365 合规中心和 Microsoft 365 安全中心中显示的角色也会
 
 |Microsoft 365 服务|角色信息|
 |---|---|
-|Office 365 和 Microsoft 365 商业版计划中的管理员角色|[Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Office 365 和 Microsoft 365 商业版计划中的管理员角色|[Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Azure Active Directory (Azure AD) 和 Azure AD Identity Protection|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Defender for Identity|[Microsoft Defender for Identity 角色组](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 信息保护|[Azure AD 管理员角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

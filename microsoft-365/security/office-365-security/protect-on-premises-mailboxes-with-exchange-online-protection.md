@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用由世纪互联运营的 Office 365 的中国管理员可以了解如何使用独立 Exchange Online Protection (EOP) 来保护其本地邮箱。
-ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9b91abec8d258df2b549cee1d538d2f65d2974ab
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202479"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356891"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>在中国使用独立 EOP 保护本地邮箱
 
@@ -36,7 +36,7 @@ ms.locfileid: "48202479"
 > [!NOTE]
 > 本文仅适用于由中国世纪互联运营的 Office 365。
 
-即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection (EOP) 保护邮箱。 若要配置连接器，你的帐户必须是全局管理员或 Exchange 公司管理员 (组织管理角色组) 。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅 [在由世纪互联运营的 office 365 中分配管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
+即使您计划在本地承载部分或全部邮箱，仍可以使用 Exchange Online Protection (EOP) 保护邮箱。 若要配置连接器，你的帐户必须是全局管理员或 Exchange 公司管理员 (组织管理角色组) 。 有关 Office 365 权限与 Exchange 权限的关系的信息，请参阅 [在由世纪互联运营的 office 365 中分配管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet&preserve-view=true)。 如果所有 Exchange 邮箱都是本地的，请按照以下步骤设置您的 EOP 服务。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步骤1：使用 Microsoft 365 管理中心添加并验证你的域
 
@@ -45,7 +45,7 @@ ms.locfileid: "48202479"
 2. 按照门户中的步骤将适用的 DNS 记录添加到您的 DNS 托管提供商，以验证域所有权。
 
 > [!TIP]
-> [将您的域和用户添加到由世纪互联运营的 office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) 中，并为 [office 365 创建 dns 记录。当您](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) 将您的域添加到服务并配置 dns 时，可以参考这些资源，从而为 office 创建 DNS 记录。
+> [将您的域和用户添加到由世纪互联运营的 office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true) 中，并为 [office 365 创建 dns 记录。当您](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet&preserve-view=true) 将您的域添加到服务并配置 dns 时，可以参考这些资源，从而为 office 创建 DNS 记录。
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>步骤2：添加收件人并配置域类型
 

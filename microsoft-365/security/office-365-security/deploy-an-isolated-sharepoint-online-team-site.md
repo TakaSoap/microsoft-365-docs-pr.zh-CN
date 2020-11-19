@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 本分步部署指南可用于在 Microsoft Office 365 中创建和配置独立的 SharePoint Online 团队网站。
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203127"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356903"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署独立的 SharePoint Online 团队网站
 
@@ -77,7 +77,7 @@ ms.locfileid: "48203127"
     
 4. 在 **新组** 边栏上：
     
-    - 在“组类型”中选择“安全性”********。
+    - 在“组类型”中选择“安全性”。
 
     - 在 " **名称**" 中键入组名称。
 
@@ -112,7 +112,7 @@ ms.locfileid: "48203127"
   
 对于 Microsoft 365 管理中心，使用已分配有用户帐户管理员或公司管理员角色的用户帐户登录，并使用组将相应的用户帐户和组添加到相应的访问组。
   
-对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+对于 PowerShell，首先 [与 Azure Active Directory PowerShell For Graph 模块进行连接](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下来，使用以下命令块将单个用户帐户添加到访问组中：
   
@@ -176,9 +176,9 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
    
 6. 在 " **网站名称**" 中，键入团队网站的名称。 
     
-7. 在 **主管理员**中，键入您登录时使用的帐户。
+7. 在 **主管理员** 中，键入您登录时使用的帐户。
  
-8. 单击“完成”****。
+8. 单击“完成”。
     
 接下来，从新的 SharePoint Online 团队网站配置权限。
   
@@ -194,37 +194,37 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 6. 在 " **权限** " 窗格中，单击 " **高级权限设置**"。
     
-7. 在浏览器的 "**权限**" 选项卡上，单击列表中的 " ** \<site name> 成员**"。
+7. 在浏览器的 "**权限**" 选项卡上，单击列表中的 " **\<site name> 成员**"。
     
-8. 在“人员和组”中，单击“新建”********。
+8. 在“人员和组”中，单击“新建”。
     
 9. 在 " **共享** " 对话框中，键入网站成员访问组的名称，选择它，然后单击 " **共享**"。
     
 10. 单击浏览器上的后退按钮。
     
-11. 单击列表中的 " ** \<site name> 所有者**"。
+11. 单击列表中的 " **\<site name> 所有者**"。
     
-12. 在“人员和组”中，单击“新建”********。
+12. 在“人员和组”中，单击“新建”。
     
 13. 在 " **共享** " 对话框中，键入 "网站管理员" 访问组的名称，选择它，然后单击 " **共享**"。
     
 14. 单击浏览器上的后退按钮。
     
-15. 单击列表中的 " ** \<site name> 访问者**"。
+15. 单击列表中的 " **\<site name> 访问者**"。
     
-16. 在“人员和组”中，单击“新建”********。
+16. 在“人员和组”中，单击“新建”。
     
 17. 在 " **共享** " 对话框中，键入 "网站查看者访问" 组的名称，选择它，然后单击 " **共享**"。
     
-18. 关闭浏览器的“权限”标签页****。
+18. 关闭浏览器的“权限”标签页。
     
 以下是这些权限设置的结果：
   
-- " ** \<site name> 所有者**" SharePoint 组包含 "网站管理员" 访问组，其中所有成员都具有 "**完全控制**" 权限级别。
+- " **\<site name> 所有者**" SharePoint 组包含 "网站管理员" 访问组，其中所有成员都具有 "**完全控制**" 权限级别。
     
-- " ** \<site name> 成员**" SharePoint 组包含 "网站成员" 访问组，其中所有成员都具有 "**编辑**" 权限级别。
+- " **\<site name> 成员**" SharePoint 组包含 "网站成员" 访问组，其中所有成员都具有 "**编辑**" 权限级别。
     
-- ** \<site name> 访问者**SharePoint 组包含 "网站查看者" 访问组，其中所有成员都具有 "**读取**" 权限级别。
+- **\<site name> 访问者** SharePoint 组包含 "网站查看者" 访问组，其中所有成员都具有 "**读取**" 权限级别。
     
 - 禁用成员邀请其他成员或非成员请求访问的功能已被禁用。
     

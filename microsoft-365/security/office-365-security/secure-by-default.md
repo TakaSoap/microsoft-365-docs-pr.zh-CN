@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '有关详细信息，请参阅 Exchange Online Protection (EOP 中的默认安全设置) '
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131093"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357859"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下在 Office 365 中安全
 
@@ -47,7 +47,7 @@ ms.locfileid: "49131093"
 - Outlook 安全发件人
 -  (连接筛选的 IP 允许列表) 
 
-有关这些覆盖的详细信息，可参阅 [创建安全发件人列表](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)。
+有关这些覆盖的详细信息，可参阅 [创建安全发件人列表](create-safe-sender-lists-in-office-365.md)。
 
 默认情况下安全保护此处的设置不是可以打开或关闭的设置，但我们的筛选功能在框中的工作方式将可能有害或不需要的邮件保留在邮箱之外。 应将恶意软件和高可信度的网络钓鱼网站发送到隔离区。 只有管理员可以管理被隔离为恶意软件或高可信度的网络钓鱼的邮件，也可以在那里向 Microsoft 报告误报。 有关详细信息，请参阅 [在 EOP 中以管理员身份管理隔离的邮件和文件](manage-quarantined-messages-and-files.md)
 

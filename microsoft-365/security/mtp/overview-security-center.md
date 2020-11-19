@@ -17,18 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 97dece3f3c732686cff885923532af14b6106b48
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 70fd278dd4cdeadd5e8911705ac3f87d981a3de0
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906833"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356867"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全中心概述
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 管理企业的安全性以防范不断变化的威胁环境会带来诸多挑战。 您可能有过多的安全解决方案的各种位置来配置大量控件。 你可能会竭尽全力了解哪些控件最有效，这会给你的员工带来新的挑战。 安全团队可能很难找到正确的安全性和工作效率平衡。
 
 进入 Microsoft 365 安全中心-用于监视和管理整个 Microsoft 标识、数据、设备、应用程序和基础结构中的安全性的新的家庭。 您可以在此处轻松查看组织的安全运行状况、配置设备、用户和应用，并获取可疑活动的警报。 Microsoft 365 安全中心旨在帮助安全管理员和安全操作团队管理和保护其组织。

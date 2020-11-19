@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845028"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357216"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中主动查找具有高级搜寻的威胁
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845028"
 
 **适用于：**
 - Microsoft 365 Defender
+
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 高级搜寻是一种基于查询的威胁搜寻工具，可用于浏览多达 30 天的原始数据。 您可以主动检查网络中的事件以查找威胁指示器和实体。 灵活的数据访问可实现已知和潜在威胁的无约束搜寻。
 <p></p>
@@ -46,7 +49,7 @@ ms.locfileid: "48845028"
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
-- Microsoft Cloud App Security
+- Microsoft 云应用安全
 - Microsoft Defender for Identity
 
 若要使用高级搜寻，请 [打开 Microsoft 365 Defender](mtp-enable.md)。
@@ -70,8 +73,8 @@ ms.locfileid: "48845028"
 ## <a name="data-freshness-and-update-frequency"></a>数据刷新和更新频率
 高级的搜寻数据可分为两种不同的类型，每种方式都有不同的合并。
 
-- **事件或活动数据** —填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻几乎会在收集这些数据的传感器成功传输到相应的云服务后立即收到。 例如，您可以在工作站或域控制器上的正常传感器中立即查询事件数据，这些数据在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 中可用后几乎会立即查询。
-- **实体数据** —使用有关用户和设备的信息填充表。 这些数据来自相对静态数据源和动态源，如 Active Directory 条目和事件日志。 为了提供新数据，每15分钟更新一次表中的所有新信息，添加可能未完全填充的行。 每隔24小时，合并数据以插入包含有关每个实体的最新、最全面的数据集的记录。
+- **事件或活动数据**—填充有关警报、安全事件、系统事件和常规评估的表。 高级搜寻几乎会在收集这些数据的传感器成功传输到相应的云服务后立即收到。 例如，您可以在工作站或域控制器上的正常传感器中立即查询事件数据，这些数据在 Microsoft Defender for Endpoint 和 Microsoft Defender for Identity 中可用后几乎会立即查询。
+- **实体数据**—使用有关用户和设备的信息填充表。 这些数据来自相对静态数据源和动态源，如 Active Directory 条目和事件日志。 为了提供新数据，每15分钟更新一次表中的所有新信息，添加可能未完全填充的行。 每隔24小时，合并数据以插入包含有关每个实体的最新、最全面的数据集的记录。
 
 ## <a name="time-zone"></a>时区
 高级搜寻中的时间信息位于 UTC 时区中。

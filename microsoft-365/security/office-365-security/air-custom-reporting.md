@@ -20,19 +20,19 @@ description: 了解如何将自动调查和响应与自定义或第三方报告�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 8b08b441ca468b5efa1c4c003c636de2a43b3e7d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b0b0570624b2e0dd40d40b178951a747698afe2
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844542"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357463"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>将管理活动 API 用于自定义或第三方报告解决方案
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-使用 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，可以获取 [有关自动调查的详细信息](air-view-investigation-results.md)。 但是，一些组织也使用自定义或第三方报告解决方案。 如果您的组织想要使用此解决方案集成有关自动调查的信息，您可以使用 Office 365 管理活动 API。
+使用 [Microsoft Defender For Office 365](office-365-atp.md)，可以获取 [有关自动调查的详细信息](air-view-investigation-results.md)。 但是，一些组织也使用自定义或第三方报告解决方案。 如果您的组织想要使用此解决方案集成有关自动调查的信息，您可以使用 Office 365 管理活动 API。
 
 使用以下资源对此进行设置：
 

@@ -14,17 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b88a06a61f1f7664f9c2e39ceba09df427f97454
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844688"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357293"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 技术在独立测试中持续实现高分，展示了其企业威胁保护功能的优势。 Microsoft 旨在对这些测试分数有透明性。 此页面汇总了结果并提供了分析。
 
@@ -88,7 +90,7 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 **下载最新透明度报告： [检查 SE 实验测试结果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- 企业版 Endpoint Protection （2020年9月）： <sup>**最新**</sup> [AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- 企业版 Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
     Microsoft 的下一代保护产品停止了所有目标攻击，但错过了少数公共威胁。
 

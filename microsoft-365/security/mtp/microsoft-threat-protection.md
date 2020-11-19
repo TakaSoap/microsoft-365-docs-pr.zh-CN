@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: a8d25ba0b36ad6ba1651ffe19e3e2f6e241548c7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 573f30dc3d8a43a337a4333dbaf05baf916857fa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843800"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357895"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -34,7 +34,8 @@ ms.locfileid: "48843800"
 **适用于：**
 - Microsoft 365 Defender
 
-
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 Microsoft 365 Defender 是一个统一的前期和后入侵后企业防护套件，它固有的跨终结点、标识、电子邮件和应用程序协调检测、预防、调查和响应，以提供针对复杂攻击的集成保护。
 
@@ -90,4 +91,4 @@ Microsoft 365 Defender 跨产品功能包括：
 ## <a name="get-started"></a>入门
 必须满足 microsoft 365 Defender 许可要求，然后才能在 [security.microsoft.com](https://security.microsoft.com)中启用 microsoft 365 安全中心中的服务。 有关详细信息，请参阅：
 - [授权要求](prerequisites.md#licensing-requirements)
-- [启用 Microsoft 365 Defender](mtp-enable.md)
+- [打开 Microsoft 365 Defender](mtp-enable.md)

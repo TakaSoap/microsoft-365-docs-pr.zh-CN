@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离邮件。 具有 Microsoft Defender for Office 365 的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349276"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357129"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -165,7 +165,7 @@ ms.locfileid: "49349276"
   - 选择下列选项之一：
     - **将邮件释放给所有收件人**
     - **将邮件释放给特定收件人**
-    - **向其他人发布邮件**
+    - **向其他人释放邮件**：请注意，不支持将恶意邮件释放给除原始收件人以外的其他人。 
 
   完成后，单击“释放邮件”。
 
@@ -208,7 +208,7 @@ ms.locfileid: "49349276"
   > [!NOTE]
   > 请考虑以下方案： john@gmail.com 向 faith@contoso.com 和 john@subsidiary.contoso.com 发送一封邮件。 Gmail 将此邮件拆分为在 Microsoft 中作为网络钓鱼传送到隔离的两个副本。 管理员将这两个邮件释放到 admin@contoso.com。 传递到达管理邮箱的第一个已释放邮件。 第二个已释放的邮件被标识为重复传递，并被跳过。 如果邮件具有相同的邮件 ID 和接收时间，则会将其标识为重复。
 
-- **删除邮件**：当你在显示的警告中单击“是”后，邮件会立即删除，而不会发送给原始收件人。
+- **删除邮件**：在显示的警告中单击 **"是"** 后，邮件将立即删除，而不会发送到原始收件人。
 
 完成后，单击“关闭”。
 

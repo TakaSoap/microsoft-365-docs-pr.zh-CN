@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4420342f964564305bb113c45ee0e3107f8a822e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130977"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356975"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>规划你的试点 Microsoft 365 Defender 项目 
 
@@ -88,8 +88,8 @@ ms.locfileid: "49130977"
 | 用例 | Requirements | 配置要求 | 测试计划 | 预期结果 | 测试状态 | 得分 | 注释 |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |事件管理|-Microsoft 365 Defender  </br></br>-Microsoft Defender for Identity </br></br>-Microsoft Defender for Endpoint </br></br>-Microsoft 云应用安全 (可选) |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) |[模拟攻击](mtp-pilot-simulate.md) <br></br>[调查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |调查人员可以了解事件的范围和影响并管理事件||||
-|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender for Identity </br></br>-Microsoft Defender for Endpoint |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) <br>启用 AutoIR  |[模拟攻击](mtp-pilot-simulate.md) <br></br>[自动调查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 365 Defender 会自动修正警报和事件||||
-|高级搜寻|-Microsoft 365 Defender </br></br>-Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365 |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab)|[高级搜寻方案](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |调查人员可以通过高级搜索、旋转受影响的实体和创建自定义检测来查找数据||||
+|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender for Identity </br></br>-Microsoft Defender for Endpoint |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab) <br>启用 AutoIR  |[模拟攻击](mtp-pilot-simulate.md) <br></br>[自动调查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Microsoft 365 Defender 会自动修正警报和事件||||
+|高级搜寻|-Microsoft 365 Defender </br></br>-Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365 |有关详细信息，请参阅准备、设置和配置的[先决条件](https://aka.ms/mtp-trial-lab)|[高级搜寻方案](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |调查人员可以通过高级搜索、旋转受影响的实体和创建自定义检测来查找数据||||
 
 
 

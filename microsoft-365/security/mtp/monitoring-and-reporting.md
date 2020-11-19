@@ -17,17 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e434f6088fa1cd08e6b14e3808007e89f32b83a3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d52c401c4b2e995e5ec18895c158f77ce0fce746
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431035"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356879"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>在 Microsoft 365 安全中心中监视和查看报告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 Microsoft 365 安全中心在 Microsoft 365 环境中提供了保护和安全状态的摘要。
 

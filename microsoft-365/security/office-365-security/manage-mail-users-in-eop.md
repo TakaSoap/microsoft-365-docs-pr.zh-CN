@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 了解如何在 Exchange Online Protection (EOP) （包括使用目录同步、EAC 和 PowerShell 管理用户）中管理邮件用户。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201779"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356723"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在独立 EOP 中管理邮件用户
 
@@ -73,7 +73,7 @@ ms.locfileid: "48201779"
 
    - <sup>\*</sup>"**新密码**" 和 " <sup>\*</sup> **确认密码**"：输入并重新输入帐户密码。 验证密码是否符合组织的密码长度、复杂性和历史要求。
 
-3. 完成后，请单击“保存”**** 来创建邮件用户。
+3. 完成后，请单击“保存”来创建邮件用户。
 
 ### <a name="use-the-eac-to-modify-mail-users"></a>使用 EAC 修改邮件用户
 
@@ -83,7 +83,7 @@ ms.locfileid: "48201779"
 
 3. 在打开的 "邮件用户属性" 页上，单击下列选项卡之一以查看或更改属性。
 
-   完成时，请单击“保存”****。
+   完成时，请单击“保存”。
 
 #### <a name="general"></a>常规
 
@@ -116,7 +116,7 @@ ms.locfileid: "48201779"
   - **Office**
   - **住宅电话**
   - **网页**
-  - **Notes**
+  - **备注**
 
 #### <a name="organization"></a>组织
 
@@ -164,7 +164,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 **注意**：
 
-- _Name_参数是必需的，最大长度为64个字符，并且必须是唯一的。 如果您不使用 _DisplayName_ 参数，_Name_ 参数的值可用于显示名称。
+- _Name_ 参数是必需的，最大长度为64个字符，并且必须是唯一的。 如果您不使用 _DisplayName_ 参数，_Name_ 参数的值可用于显示名称。
 - 如果不使用 _alias_ 参数，则 _MicrosoftOnlineServicesID_ 参数的左侧将用于别名。
 - 如果不使用 _ExternalEmailAddress_ 参数，则 _MicrosoftOnlineServicesID_ 值将用于外部电子邮件地址。
 
@@ -258,13 +258,13 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 - 建议将目录同步用于以下功能：
 
-  - **Outlook 安全发件人列表和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这使用户可以管理其自己的安全发件人列表和阻止的发件人列表和单个发件人和域条目。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
+  - **Outlook 安全发件人列表和阻止的发件人列表**：当同步到服务时，这些列表将优先于服务中的垃圾邮件筛选。 这使用户可以管理其自己的安全发件人列表和阻止的发件人列表和单个发件人和域条目。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-  - **基于目录的边缘阻止 (DBEB) **：有关 DBEB 的详细信息，请参阅 [使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
+  - **基于目录的边缘阻止 (DBEB)**：有关 DBEB 的详细信息，请参阅 [使用基于目录的边缘阻止拒绝发送给无效收件人的邮件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)。
 
-  - **最终用户对隔离的访问权限**：若要访问其隔离邮件，收件人必须在服务中具有有效的用户 ID 和密码。 有关隔离的详细信息，请参阅 [以用户的方式查找和释放隔离的邮件](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user)。
+  - **最终用户对隔离的访问权限**：若要访问其隔离邮件，收件人必须在服务中具有有效的用户 ID 和密码。 有关隔离的详细信息，请参阅 [以用户的方式查找和释放隔离的邮件](find-and-release-quarantined-messages-as-a-user.md)。
 
-  - **邮件流规则 (也称为传输规则) **：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后您可以创建针对特定用户和/或组的邮件流规则，而无需手动将其添加到服务中。 请注意， [动态通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。
+  - **邮件流规则 (也称为传输规则)**：使用目录同步时，会自动将现有的 Active directory 用户和组上载到云，然后您可以创建针对特定用户和/或组的邮件流规则，而无需手动将其添加到服务中。 请注意， [动态通讯组](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)无法通过目录同步进行同步。
 
 获取必要的权限并准备目录同步，如 ["使用 Azure Active directory 的混合标识是什么？"](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)中所述。
 
@@ -276,7 +276,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 3. [选择要用于 AZURE AD Connect 的安装类型](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)：
 
-   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express 版](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
    - [自定义](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 

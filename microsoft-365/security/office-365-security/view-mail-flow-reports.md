@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 807166ea0c6ea8a26716bc7017387499382c9e7e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131329"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357919"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
 
@@ -541,7 +541,7 @@ ms.locfileid: "49131329"
 
   -组织管理-安全管理员 (你也可以在 [Azure Active Directory 管理中心](https://aad.portal.azure.com) 中执行此操作-安全读者
 
-  有关详细信息，请参阅[安全与合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在 Exchange Online 中，您必须是下列角色组之一的成员：
 

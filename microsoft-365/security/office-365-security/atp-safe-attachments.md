@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 管理员可以了解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020947"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357198"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender For Office 365](office-365-atp.md)中的安全附件为已通过[Exchange ONLINE protection (EOP) 中的反恶意软件保护](anti-malware-protection.md)扫描过的电子邮件附件提供了额外的保护层。 具体来说，安全附件使用虚拟环境来检查电子邮件中的附件，然后再传递给收件人 (称为 _沙箱_ ) 的过程。
+[Microsoft Defender For Office 365](office-365-atp.md)中的安全附件为已通过[Exchange ONLINE protection (EOP) 中的反恶意软件保护](anti-malware-protection.md)扫描过的电子邮件附件提供了额外的保护层。 具体来说，安全附件使用虚拟环境来检查电子邮件中的附件，然后再传递给收件人 (称为 _沙箱_) 的过程。
 
-电子邮件的安全附件保护由安全附件策略控制。 没有默认安全附件策略，因此， **若要获得安全附件的保护，您需要创建一个或多个安全附件策略** 。 有关说明，请参阅 [在 Defender For Office 365 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)。
+电子邮件的安全附件保护由安全附件策略控制。 没有默认安全附件策略，因此， **若要获得安全附件的保护，您需要创建一个或多个安全附件策略**。 有关说明，请参阅 [在 Defender For Office 365 中设置安全附件策略](set-up-atp-safe-attachments-policies.md)。
 
 下表介绍了 Microsoft 365 和 Office 365 组织中的安全附件的方案，其中包括 Microsoft Defender for Office 365 (换句话说，缺乏许可不是示例) 中的一个问题。
 
@@ -59,7 +59,7 @@ ms.locfileid: "49020947"
 
 本节介绍安全附件策略中的设置：
 
-- **安全附件未知的恶意软件响应** ：此设置控制安全附件在电子邮件中进行恶意扫描的操作。 下表中介绍了可用选项：
+- **安全附件未知的恶意软件响应**：此设置控制安全附件在电子邮件中进行恶意扫描的操作。 下表中介绍了可用选项：
 
   ****
 
@@ -69,24 +69,24 @@ ms.locfileid: "49020947"
   |**监视器**|传递包含附件的邮件，然后跟踪检测到的恶意软件所发生的情况。 <p> 安全邮件的传递可能由于安全附件扫描而延迟。|查看在您的组织中检测到的恶意软件的位置。|
   |**阻止**|阻止传递包含检测到的恶意软件附件的邮件。 <p> 仅在管理员 (不是最终用户) 可以查看、释放或删除邮件的情况下 [隔离](manage-quarantined-messages-and-files.md) 邮件。 <p> 自动阻止后续的邮件和附件实例。 <p> 安全邮件的传递可能由于安全附件扫描而延迟。|使用相同的恶意软件附件保护您的组织免受重复攻击。 <p> 这是默认值，以及标准和严格的 [预设安全策略](preset-security-policies.md)中建议的值。|
   |**Replace**|删除检测到的恶意软件附件。 <p> 通知收件人附件已被删除。 <p>  仅在管理员 (不是最终用户) 可以查看、释放或删除邮件的情况下 [隔离](manage-quarantined-messages-and-files.md) 邮件。 <p> 安全邮件的传递可能由于安全附件扫描而延迟。|对收件人的可见性提高由于检测到的恶意软件而导致附件被删除。|
-  |**动态传递**|立即传递邮件，但将附件替换为占位符，直到安全附件扫描完成。 <p> 有关详细信息，请参阅本主题后面的 " [安全附件策略中的动态传递](#dynamic-delivery-in-safe-attachments-policies) " 一节。|避免邮件延迟，同时防止收件人受到恶意文件的攻击 <br/> <br/> 允许收件人在扫描发生时以安全模式预览附件|
+  |**动态传递**|立即传递邮件，但将附件替换为占位符，直到安全附件扫描完成。 <p> 有关详细信息，请参阅本主题后面的 " [安全附件策略中的动态传递](#dynamic-delivery-in-safe-attachments-policies) " 一节。|避免邮件延迟，同时防止收件人受到恶意文件的攻击。 <p> 使收件人能够在扫描发生时以安全模式预览附件。|
   |
 
-- **在检测时重定向附件：启用重定向** ，并 **将附件发送到以下电子邮件地址** ：对于 **阻止** 、 **监视** 或 **替换** 操作，请将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址进行分析和调查。
+- **在检测时重定向附件：启用重定向** ，并 **将附件发送到以下电子邮件地址**：对于 **阻止**、 **监视** 或 **替换** 操作，请将包含恶意软件附件的邮件发送到指定的内部或外部电子邮件地址进行分析和调查。
 
   标准策略设置和严格策略设置的建议是启用重定向。 有关详细信息，请参阅 [安全附件设置](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-- **如果恶意软件扫描附件超时或发生错误，则应用上述选择** ：安全附件指定的操作对邮件执行 **未知恶意软件响应** ，即使安全附件扫描无法完成也是如此。 如果选择 " **启用重定向** "，请始终选择此选项。 否则，邮件可能会丢失。
+- **如果恶意软件扫描附件超时或发生错误，则应用上述选择**：安全附件指定的操作对邮件执行 **未知恶意软件响应** ，即使安全附件扫描无法完成也是如此。 如果选择 " **启用重定向**"，请始终选择此选项。 否则，邮件可能会丢失。
 
-- **收件人筛选器** ：需要指定用于确定策略适用于的收件人条件和例外。 您可以将这些属性用于条件和例外：
+- **收件人筛选器**：需要指定用于确定策略适用于的收件人条件和例外。 您可以将这些属性用于条件和例外：
 
   - **收件人为**
   - **收件人域为**
   - **收件人为以下组的成员**
 
-  只能使用条件或例外一次，但条件或例外可以包含多个值。 同一个条件或例外的多个值使用“或”逻辑（例如， _\<recipient1\>_ 或 _\<recipient2\>_ ）。 不同的条件或例外使用“和”逻辑（例如， _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
+  只能使用条件或例外一次，但条件或例外可以包含多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
-- **优先级** ：如果创建多个策略，则可以指定它们的应用顺序。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
+- **优先级**：如果创建多个策略，则可以指定它们的应用顺序。 没有两个策略可以具有相同的优先级，并且在应用第一个策略之后，策略处理将停止。
 
   有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 

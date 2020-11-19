@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846684"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357607"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概述
 
@@ -36,6 +36,8 @@ ms.locfileid: "48846684"
 **适用于：**
 - Microsoft 365 Defender
 
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 
 事件基于相关警报。 当网络中出现恶意事件或活动时，将创建警报。 各个警报提供有关现有攻击的有价值的线索。 但是，攻击通常采用各种不同的矢量和技术来发动入侵。 将各个线索 Piecing 在一起可能会非常困难且耗时。

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 56b712c73d63bfcb06d5d35d627facb229668c59
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: fa22d445b0e4517bedd1c04378271e561ecb6703
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464140"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357499"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保护团队聊天、组和文件的策略建议
 
@@ -63,17 +63,17 @@ ms.locfileid: "48464140"
 此表列出了需要对其进行访问的策略，以及在 [常见标识和设备访问策略](identity-access-policies.md)中的每个策略的链接，这些策略为所有 Office 应用程序设置了更宽的策略。
 
 |保护级别|策略|有关团队实施的详细信息|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|确保团队和相关服务包含在应用程序列表中。 团队还提供了来宾访问和外部访问规则，您将在本文后面的部分中了解有关这些规则的详细信息。|
-|        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括团队和相关服务。|
-|        |[高风险用户必须更改密码](identity-access-policies.md#high-risk-users-must-change-password)|强制团队用户在登录时更改其密码（如果为其帐户检测到高风险活动）。 确保团队和相关服务包含在应用程序列表中。|
-|        |[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|确保团队和相关服务包含在应用程序列表中。 为每个平台 (iOS、Android、Windows) 更新策略。|
-|        |[定义设备合规性策略](identity-access-policies.md#define-device-compliance-policies)|在此策略中包括团队和相关服务。|
-|        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此策略中包括团队和相关服务。|
-|**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|团队还提供了来宾访问和外部访问规则，您将在本文后面的部分中了解有关这些规则的详细信息。 在此策略中包括团队和相关服务。|
-|         |[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此策略中包括团队和相关服务。|
+||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括团队和相关服务。|
+||[高风险用户必须更改密码](identity-access-policies.md#high-risk-users-must-change-password)|强制团队用户在登录时更改其密码（如果为其帐户检测到高风险活动）。 确保团队和相关服务包含在应用程序列表中。|
+||[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|确保团队和相关服务包含在应用程序列表中。 为每个平台 (iOS、Android、Windows) 更新策略。|
+||[定义设备合规性策略](identity-access-policies.md#define-device-compliance-policies)|在此策略中包括团队和相关服务。|
+||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此策略中包括团队和相关服务。|
+|**敏感**|[当登录风险为 *低*、*中* 或 *高* 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|团队还提供了来宾访问和外部访问规则，您将在本文后面的部分中了解有关这些规则的详细信息。 在此策略中包括团队和相关服务。|
+||[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此策略中包括团队和相关服务。|
 |**高度管控**|[*始终* 要求进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|无论用户标识如何，你的组织都将使用 MFA。 在此策略中包括团队和相关服务。 |
-| | |
+|
 
 ## <a name="teams-dependent-services-architecture"></a>团队相关服务体系结构
 
@@ -94,27 +94,27 @@ Microsoft 团队定义了以下内容：
 条件访问策略仅适用于团队中的来宾访问，因为存在相应的 Azure AD B2B 帐户。
 
 <!--
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
---> 
+-->
 
 有关使用 Azure AD B2B 帐户为来宾和外部用户授予访问权限的建议策略，请参阅 [允许来宾和外部 B2B 帐户访问的策略](identity-access-policies-guest-access.md)。
 
 ### <a name="guest-access-in-teams"></a>Teams 中的来宾访问
 
-除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。 
+除了企业或组织内部用户的策略之外，管理员还可以启用来宾访问以允许在用户的用户的基础上访问团队资源并与内部人员进行交互（如组对话、聊天和会议），从而获得人员。
 
 有关来宾访问和如何实施来宾的详细信息，请参阅  [团队来宾访问](https://docs.microsoft.com/microsoftteams/guest-access)。
 
 ### <a name="external-access-in-teams"></a>团队中的外部访问
 
-外部访问有时会与来宾访问相混淆，因此请务必清楚，这两种非内部访问机制的实际差别很大。 
+外部访问有时会与来宾访问相混淆，因此请务必清楚，这两种非内部访问机制的实际差别很大。
 
 通过外部访问，团队用户可以从整个外部域中查找、呼叫、聊天和设置与团队用户的会议。 团队管理员在组织级别配置外部访问。 有关详细信息，请参阅 [在 Microsoft 团队中管理外部访问](https://docs.microsoft.com/microsoftteams/manage-external-access)。
 
 外部访问用户的访问权限和功能比通过来宾访问添加的个人更少。 例如，外部访问用户可以与具有团队的内部用户聊天，但无法访问团队频道、文件或其他资源。
 
-外部访问不使用 Azure AD B2B 用户帐户，因此不使用条件访问策略。 
+外部访问不使用 Azure AD B2B 用户帐户，因此不使用条件访问策略。
 
 ## <a name="teams-policies"></a>团队策略
 
@@ -150,4 +150,3 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-

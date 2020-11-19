@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131197"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357931"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -479,7 +479,7 @@ Microsoft Defender for Office 365 中提供了 **URL 威胁防护报告** 。 �
 
 ## <a name="user-reported-messages-report"></a>用户报告的邮件报告
 
-" **用户报告的邮件** " 报告显示用户通过使用 [报告邮件外接程序](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的相关信息。
+" **用户报告的邮件** " 报告显示用户通过使用 [报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、网络钓鱼尝试或良好邮件的电子邮件的相关信息。
 
 详细信息可用于每封邮件，包括传递原因、为您的组织配置的垃圾邮件策略例外或邮件流规则。 若要查看详细信息，请在 "用户报告" 列表中选择一个项目，然后查看 " **摘要** " 和 " **详细信息** " 选项卡上的信息。
 
@@ -504,7 +504,7 @@ Microsoft Defender for Office 365 中提供了 **URL 威胁防护报告** 。 �
 
   -组织管理-安全管理员 (你也可以在 [Azure Active Directory 管理中心](https://aad.portal.azure.com) 中执行此操作-安全读者
 
-  有关详细信息，请参阅[安全与合规中心中的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在 Exchange Online 中，您必须是下列角色组之一的成员：
 

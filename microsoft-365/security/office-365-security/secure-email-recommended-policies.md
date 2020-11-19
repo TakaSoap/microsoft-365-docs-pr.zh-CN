@@ -18,18 +18,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646807"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357105"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>用于保护电子邮件的策略建议
 
 本文介绍如何实现建议的标识和设备访问策略，以保护支持新式身份验证和条件访问的组织电子邮件和电子邮件客户端。 本指南建立在 [通用标识和设备访问策略](identity-access-policies.md) 之上，还包括一些其他建议。
 
-这些建议基于三种不同的安全性和保护层，可根据您需求的粒度进行应用： **比较基准**、 **敏感**和 **高度管控**。 You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
+这些建议基于三种不同的安全性和保护层，可根据您需求的粒度进行应用： **比较基准**、 **敏感** 和 **高度管控**。 You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in the [recommended security policies and configurations introduction](microsoft-365-policies-configurations.md).
 
 这些建议要求用户使用新式电子邮件客户端，包括移动设备上的 Outlook for iOS 和 Outlook for Android。 适用于 iOS 和 Android 的 Outlook 提供了对 Office 365 最佳功能的支持。 这些移动 Outlook 应用程序还使用支持移动使用的安全功能以及与其他 Microsoft 云安全功能配合使用的安全功能。 有关详细信息，请参阅 [Outlook For iOS 和 ANDROID FAQ](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)。
 
@@ -46,16 +46,17 @@ ms.locfileid: "48646807"
 如果在设置 Exchange Online 和 Outlook 时将其包含在策略范围中，则只需创建新策略来阻止 ActiveSync 客户端。 查看下表中列出的策略，并执行建议的添加项，或者确认是否已包含这些策略。 每个策略链接到 [常见标识和设备访问策略](identity-access-policies.md)中的关联配置说明。
 
 |保护级别|策略|更多信息|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 Exchange Online|
-|        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 Exchange Online|
-|        |[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|确保 Outlook 包含在应用程序列表中。 请务必为每个平台 (iOS、Android、Windows) 更新策略|
-|        |[需要经批准的应用和应用保护](identity-access-policies.md#require-approved-apps-and-app-protection)|在云应用列表中包括 Exchange Online|
-|        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 Exchange Online|
-|        |[阻止 ActiveSync 客户端](#block-activesync-clients)|添加此新策略| 
-|**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 在云应用的分配中包括 Exchange Online|
-|         |[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在云应用列表中包括 Exchange Online|
+||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 Exchange Online|
+||[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|确保 Outlook 包含在应用程序列表中。 请务必为每个平台 (iOS、Android、Windows) 更新策略|
+||[需要经批准的应用和应用保护](identity-access-policies.md#require-approved-apps-and-app-protection)|在云应用列表中包括 Exchange Online|
+||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 Exchange Online|
+||[阻止 ActiveSync 客户端](#block-activesync-clients)|添加此新策略|
+|**敏感**|[当登录风险为 *低*、*中* 或 *高* 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 Exchange Online|
+||[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在云应用列表中包括 Exchange Online|
 |**高度管控**|[*始终* 要求进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 Exchange Online|
+|
 
 ## <a name="block-activesync-clients"></a>阻止 ActiveSync 客户端
 
@@ -85,20 +86,19 @@ ms.locfileid: "48646807"
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. 在 Azure 门户中，使用以下设置创建新的条件访问策略：
+5. 在 Azure 门户中，使用以下设置创建新的条件访问策略：
 
-   **> 用户和组的工作分配**：选择合适的用户和组以包含和排除。
+   **工作分配** \>**用户和组**：选择合适的用户和组以包含和排除。
 
-   **> 云应用或操作 > 云应用的工作分配 > 包括 > 选择应用程序**：选择 **Office 365 Exchange Online**
+   **工作分配** \>**云应用或操作** \>**云应用** \>**包含** \>**选择应用程序**：选择 **Office 365 Exchange Online**
 
-   **访问控制 > 会话**：选择 "**使用应用强制限制**"
+   **访问控制** \>**会话**：选择 "**使用应用强制限制**"
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>要求 iOS 和 Android 设备必须使用 Outlook
 
 若要确保 iOS 和 Android 设备的用户只能使用 Outlook for iOS 和 Outlook for Android 来访问工作或学校内容，您需要针对这些潜在用户的条件访问策略。
 
 请参阅 [使用 Outlook For iOS 和 Outlook For Android 管理邮件协作访问]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)中的配置此策略的步骤。
-
 
 ## <a name="set-up-message-encryption"></a>设置邮件加密
 

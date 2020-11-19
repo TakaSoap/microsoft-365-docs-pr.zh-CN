@@ -21,12 +21,12 @@ description: 请参阅 Microsoft Defender for Office 365 中的自动化调查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948429"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357667"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动化调查和响应的工作原理
 
@@ -79,7 +79,7 @@ ms.locfileid: "48948429"
 
 ![包含所选邮件的资源管理器](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-使用 " **操作** " 菜单，可以选择 **触发调查** 。
+使用 " **操作** " 菜单，可以选择 **触发调查**。
 
 ![选定邮件的 "操作" 菜单](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
@@ -97,4 +97,4 @@ Microsoft Defender for Office 365 中的空中功能包括 [报告 & 详细信�
 
 - [访问 Microsoft 365 路线图以查看已计划和即将发布的内容](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [了解 Microsoft 365 Defender 中的自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [了解 Microsoft 365 Defender 中的自动化调查和响应功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844700"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357315"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+>
 
 以下功能在 Microsoft 365 Defender 的最新版本中 (GA) 正式提供。
 
@@ -35,6 +37,9 @@ RSS 源：通过将以下 URL 复制并粘贴到订阅源阅读器中来更新�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)
+>
+
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表](advanced-hunting-identitydirectoryevents-table.md) <br> 查找涉及在运行 Active Directory (AD) 的本地域控制器的事件。 此 [高级搜寻](advanced-hunting-overview.md) 架构表涵盖了域控制器上与标识相关的事件和系统事件的范围。
 - [AssignedIPAddresses ( # A1 函数](advanced-hunting-assignedipaddresses-function.md) <br> 在高级搜寻查询中使用此函数可以快速获取特定时间内分配给设备的最新 IP 地址或最近的 IP 地址。
@@ -60,4 +65,4 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="march-2019"></a>2019 年 3 月
 - 高级搜寻 <br> 登录页面到各种搜索功能，使您能够主动找到影响电子邮件和数据、设备和标识的威胁。
 - [Microsoft 安全功能分数](microsoft-secure-score.md) <br> 组织的安全状态的度量值，其数字越高表示执行了更多改进操作。 按照安全得分建议，可以保护您的组织免受威胁。 
-- [报告](monitoring-and-reporting.md) <br>  提供一系列涵盖安全分析员和管理员在日常运营中进行跟踪的各种领域的卡片主机。
+- [报表](monitoring-and-reporting.md) <br>  提供一系列涵盖安全分析员和管理员在日常运营中进行跟踪的各种领域的卡片主机。

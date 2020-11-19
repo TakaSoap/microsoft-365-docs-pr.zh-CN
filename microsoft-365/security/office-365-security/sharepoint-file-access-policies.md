@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464308"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357523"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保护 SharePoint 网站和文件的策略建议
 
 本文介绍如何实施推荐的标识和设备访问策略来保护 SharePoint 和 OneDrive for business。 本指南建立在 [通用标识和设备访问策略](identity-access-policies.md)之上。
 
-这些建议基于三种不同的安全性和保护层，可根据您的需要进行应用： **比较基准**、 **敏感**和 **高度管控**的 SharePoint 文件。 您可以在 [概述](microsoft-365-policies-configurations.md)中了解有关这些安全层和推荐的客户端操作系统的详细信息。
+这些建议基于三种不同的安全性和保护层，可根据您的需要进行应用： **比较基准**、 **敏感** 和 **高度管控** 的 SharePoint 文件。 您可以在 [概述](microsoft-365-policies-configurations.md)中了解有关这些安全层和推荐的客户端操作系统的详细信息。
 
 除了实现本指南之外，请务必使用适当的保护措施配置 SharePoint 网站，包括为敏感和高度管控的内容设置适当的权限。
 
@@ -47,17 +47,18 @@ ms.locfileid: "48464308"
 下表列出了查看和更新或新建 SharePoint 时所需的策略。 常见策略链接到 [常见标识和设备访问策略](identity-access-policies.md) 文章中相关的配置说明。
 
 |保护级别|策略|更多信息|
-|:---------------|:-------|:----------------|
+|---|---|---|
 |**Baseline**|[当登录风险为 "*中*" 或 "*高*" 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 SharePoint。|
-|        |[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 SharePoint。|
-|        |[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保所有建议的应用均包含在应用程序列表中。 请务必为每个平台 (iOS、Android、Windows) 更新策略。|
-|        |[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 SharePoint。|
-|        |[在 SharePoint 中使用应用强制实施限制](#use-app-enforced-restrictions-in-sharepoint)|添加此新策略。 这将告知 Azure Active Directory (Azure AD) 以使用 SharePoint 中指定的设置。 此策略适用于所有用户，但仅影响对 SharePoint 访问策略中包括的网站的访问。|
-|**敏感**|[当登录风险为*低*、*中*或*高*时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的工作分配中加入 SharePoint。|
-|         |[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|将 SharePoint 包括在云应用列表中。|
+||[阻止不支持新式身份验证的客户端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在云应用的分配中包括 SharePoint。|
+||[应用应用数据保护策略](identity-access-policies.md#apply-app-data-protection-policies)|请确保所有建议的应用均包含在应用程序列表中。 请务必为每个平台 (iOS、Android、Windows) 更新策略。|
+||[需要兼容电脑](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在云应用列表中加入 SharePoint。|
+||[在 SharePoint 中使用应用强制实施限制](#use-app-enforced-restrictions-in-sharepoint)|添加此新策略。 这将告知 Azure Active Directory (Azure AD) 以使用 SharePoint 中指定的设置。 此策略适用于所有用户，但仅影响对 SharePoint 访问策略中包括的网站的访问。|
+|**敏感**|[当登录风险为 *低*、*中* 或 *高* 时，需要进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的工作分配中加入 SharePoint。|
+||[需要符合要求 *的 pc 和* 移动设备](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|将 SharePoint 包括在云应用列表中。|
 ||[SharePoint 访问控制策略](#sharepoint-access-control-policies)：允许从非托管设备对特定 SharePoint 网站进行仅浏览器访问。|这将阻止文件的编辑和下载。 使用 PowerShell 指定网站。|
 |**高度管控**|[*始终* 要求进行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在云应用的分配中包括 SharePoint。|
 ||[SharePoint 访问控制策略](#use-app-enforced-restrictions-in-sharepoint)：阻止来自非托管设备的对特定 SharePoint 网站的访问。|使用 PowerShell 指定网站。|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>在 SharePoint 中使用应用程序强制性限制
 
@@ -98,4 +99,3 @@ James 具有已分配的基准条件访问策略，但可以向他授予对具�
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-

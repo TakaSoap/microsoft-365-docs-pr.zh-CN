@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文介绍如何使用门户启动计划程序启动门户
-ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123579"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356663"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用门户启动计划程序启动门户
 
@@ -34,7 +34,7 @@ ms.locfileid: "49123579"
 - 双向：启动新的新式 SharePoint Online 门户以替换现有 SharePoint 经典或新式门户 
 - 临时页面重定向：启动新的新式 SharePoint Online 门户（没有现有 SharePoint 门户）
 
-门户启动计划程序仅可用于启动新式 SharePoint Online 门户，如通信网站和新式团队网站。 必须提前安排启动时间至少7天。 所需的波浪数由预期的用户数决定。 在计划门户启动之前，必须运行 [SharePoint 工具的页面诊断程序](https://aka.ms/perftool) 以验证门户上的主页是否运行正常。 在门户启动结束时，具有网站权限的所有用户都将能够访问新网站。 
+门户启动计划程序仅可用于启动新式 SharePoint Online 门户 (即通信网站) 。 必须提前安排启动时间至少7天。 所需的波浪数由预期的用户数决定。 在计划门户启动之前，必须运行 [SharePoint 工具的页面诊断程序](https://aka.ms/perftool) 以验证门户上的主页是否运行正常。 在门户启动结束时，具有网站权限的所有用户都将能够访问新网站。 
 
 有关启动成功的门户的详细信息，请遵循 [创建、启动和维护正常门户](https://docs.microsoft.com/sharepoint/portal-health)中详细介绍的基本原则、实践和建议。 
 
@@ -66,9 +66,11 @@ ms.locfileid: "49123579"
 - 30k + 到100k 用户：5波
 - 超过100k 的用户：5个波，并联系你的 Microsoft 帐户团队
 
-### <a name="steps-for-bi-directional-redirection"></a>双向重定向步骤
+### <a name="steps-for-bidirectional-redirection"></a>双向重定向步骤
 
-双向重定向包括启动新的新式 SharePoint Online 门户以替换现有的 SharePoint 经典或新式门户。 Active 无线电波中的用户将被重定向到新网站，无论它们是导航到旧网站还是新网站。 尝试访问新网站的非启动浪潮中的用户将被重定向回旧网站，直到其波形启动。 如果您有需要访问旧网站和新网站的管理员或所有者而不进行重定向，请确保使用参数列出这些网站 `WaveOverrideUsers` 。 
+双向重定向包括启动新的新式 SharePoint Online 门户以替换现有的 SharePoint 经典或新式门户。 Active 无线电波中的用户将被重定向到新网站，无论它们是导航到旧网站还是新网站。 尝试访问新网站的非启动浪潮中的用户将被重定向回旧网站，直到其波形启动。 
+
+如果您有需要访问旧网站和新网站的管理员或所有者而不进行重定向，请确保使用参数列出这些网站 `WaveOverrideUsers` 。 仅支持旧网站上的默认主页和新网站上的默认主页之间的重定向。
 
 若要以暂存方式将用户从现有 SharePoint 网站迁移到新的 SharePoint 网站，请执行以下操作：
 

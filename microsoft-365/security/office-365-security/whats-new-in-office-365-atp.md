@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131140"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357233"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的新增功能
 
@@ -41,11 +41,11 @@ ms.locfileid: "49131140"
 > [!TIP]
 > 尚不具有 Microsoft Defender for Office 365 吗？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
-## <a name="november-2020"></a>2020 年 11 月 
+## <a name="november-2020"></a>2020 年 11 月
 
 - 更新了审核中的导出限制 > 操作中心 > 的邮件提交和操作日志中的更正 (Defender for Office 365 计划 2) 
 
-## <a name="septemberoctober-2020"></a>9月/10 月2020 
+## <a name="septemberoctober-2020"></a>9月/10 月2020
 
 - [使用配置分析器检查策略](configuration-analyzer-for-security-policies.md)
 - [使用租户允许/阻止列表手动重写筛选器 verdicts](tenant-allow-block-list.md)
@@ -53,27 +53,27 @@ ms.locfileid: "49131140"
 - 在 [威胁资源管理器](threat-explorer.md#threats-in-urls) 中呈现 URL 威胁 (恶意软件、网络钓鱼诈骗、垃圾邮件或无)  (Defender for Office 365 计划 2) 
 - [对搜寻体验威胁资源管理器的改进](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，其中包含有关威胁的更新、其他操作、传递位置和更新的日程表视图 (Defender for Office 365 计划 2) 
 
-## <a name="julyaugust-2020"></a>7月/8 月2020 
+## <a name="julyaugust-2020"></a>7月/8 月2020
 
 - 体验 (Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的求职体验改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 - [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>3月/4 月2020
 
-- 现在，可以 [使用自动调查和响应来解决受危害的用户帐户](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) 的能力。  (适用于 Office 365 计划2的 Microsoft Defender) 
+- 现在，可以 [使用自动调查和响应来解决受危害的用户帐户](address-compromised-users-quickly.md) 的能力。  (适用于 Office 365 计划2的 Microsoft Defender) 
 
 ## <a name="januaryfebruary-2020"></a>1月/2 月2020
 
 - [Microsoft defender For office 365 中的市场活动视图的常规可用性](campaigns.md) (microsoft Defender for Office 365 计划 2) 
 - 对 [威胁浏览器](threat-explorer.md) 的增强功能，使安全操作团队能够在 [调查电子邮件](investigate-malicious-email-that-was-delivered.md)时搜索和筛选多个字段： (Microsoft Defender for Office 365 Plan 2) 
-    - 送达位置和特殊操作
-    -  (入站、出站或组织内部) 的方向性
-    - 高级不筛选 (这些是一些高级筛选选项，其中包括不包含、不包含等。 ) 
-    - 精确的时间筛选器 (日、小时、半小时)  
+  - 送达位置和特殊操作
+  -  (入站、出站或组织内部) 的方向性
+  - 高级不筛选 (这些是一些高级筛选选项，其中包括不包含、不包含等。 ) 
+  - 精确的时间筛选器 (日、小时、半小时) 
 
 - **事件** 小组件现在是 **操作中心** 小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  **检查**"。 )  (Microsoft Defender for Office 365 Plan 2) 
 
-- [Microsoft 365 中的安全文档](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(预览)**
+- [Microsoft 365 中的安全文档](safe-docs.md) **(预览)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
