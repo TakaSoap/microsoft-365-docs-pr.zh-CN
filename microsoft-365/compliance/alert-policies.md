@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全与合规中心内创建通知策略，以监视潜在威胁、数据丢失和权限问题。
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350742"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367175"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全与合规中心警报策略
 
@@ -33,7 +33,7 @@ ms.locfileid: "49350742"
 通过通知策略，可以对策略触发的警报进行分类，将策略应用于组织中的所有用户，设置触发警报时的阈值级别，并决定是否在触发警报时接收电子邮件通知。 在安全与合规中心中还有一个 " **查看通知** " 页，您可以在其中查看和筛选警报、设置通知状态以帮助您管理通知，然后在解决或解决基础事件后取消通知。
 
 > [!NOTE]
-> 通知策略适用于具有 Microsoft 365 企业版、Office 365 企业版或 Office 365 美国政府版 E1/F1/G1、E3/G3 或 E5/G5 订阅的组织。 高级功能仅适用于具有 E5/G5 订阅的组织，或具有 E1/F1/G1 或 E3/G3 订阅的组织，以及 Microsoft Defender for Office 365 P2 或 microsoft 365 E5 或 Microsoft 365 E5 电子数据展示和审核附加订阅。 本主题中突出显示了需要 E5/G5 或附加订阅的功能。 另请注意，在 Office 365 GCC、GCC High 和 DoD 美国政府环境中提供了警报策略。
+> 通知策略适用于具有 Microsoft 365 企业版、Office 365 企业版或 Office 365 美国政府版 E1/F1/G1、E3/G3 或 E5/G5 订阅的组织。 高级功能仅适用于具有 E5/G5 订阅的组织，或具有 E1/F1/G1 或 E3/G3 订阅以及 Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 或 E5 电子数据展示和审核附加订阅的组织。 本主题中突出显示了需要 E5/G5 或附加订阅的功能。 另请注意，在 Office 365 GCC、GCC High 和 DoD 美国政府环境中提供了警报策略。
 
 ## <a name="how-alert-policies-work"></a>警报策略的工作原理
 

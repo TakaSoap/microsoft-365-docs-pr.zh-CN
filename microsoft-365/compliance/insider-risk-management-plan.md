@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846270"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357441"
 ---
 # <a name="plan-for-insider-risk-management"></a>内部风险管理计划
 
@@ -57,7 +57,7 @@ ms.locfileid: "48846270"
 
 根据您计划实施内幕风险管理策略的方式，您需要拥有适当的 Microsoft 365 许可订阅，并了解并规划一些解决方案先决条件。
 
-**许可：** 内幕风险管理可作为 Microsoft 365 许可订阅的广泛选择的一部分提供。 有关详细信息，请参阅 [内幕风险管理](insider-risk-management-configure.md#before-you-begin) 文章入门。
+**许可：** 内幕风险管理可作为 Microsoft 365 许可订阅的广泛选择的一部分提供。 有关详细信息，请参阅 [内幕风险管理](insider-risk-management-configure.md#subscriptions-and-licensing) 文章入门。
 
 如果您没有现有的 Microsoft 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以 [将 microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Microsoft 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
