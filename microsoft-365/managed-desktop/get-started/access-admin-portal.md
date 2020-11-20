@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379301"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371666"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -37,8 +37,8 @@ ms.locfileid: "48379301"
 |全局管理员     | 具有此角色的管理员将拥有对 Microsoft 托管桌面管理门户中 **所有功能的读取和写入权限** 。         |
 |全局读取者     | 具有此角色的管理员将对 Microsoft 托管桌面管理门户中的 **所有功能具有只读权限** 。         |
 |Intune 服务管理员     |  具有此角色的管理员将具有对与 Microsoft 托管桌面管理门户中的 **安全性不相关的功能的读取和写入权限** 。       |
-|服务支持管理员     | 具有此角色的管理员将具有对与 Microsoft 托管桌面管理门户中的 **安全性不相关的功能的读取和写入权限** 。         |
-|安全管理员 | 具有此角色的管理员对管理门户中的 Microsoft 托管桌面中的所有功能和对**安全相关功能的写入权限**都具有**只读权限**。 |
+|服务支持管理员     | 具有此角色的管理员将对与安全性和写入权限 **不相关的功能** 具有对 Microsoft 托管桌面管理门户中 **管理支持请求** 的权限的只读权限。         |
+|安全管理员 | 具有此角色的管理员对管理门户中的 Microsoft 托管桌面中的所有功能和对 **安全相关功能的写入权限** 都具有 **只读权限**。 |
 |安全读取者 |具有此角色的管理员将对 Microsoft 托管桌面管理门户中的 **所有功能具有只读权限** 。|
 
 > [!IMPORTANT]

@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 介绍如何通过使用此方法来准备将用户预配到 Microsoft 365 （使用目录同步）和长期优点。
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773981"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371620"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>为实现到 Microsoft 365 的目录同步做好准备
 
@@ -127,7 +127,7 @@ AD DS 和 Microsoft 365 之间的目录同步成功需要正确准备 AD DS 属�
     请注意，无效字符适用于类型分隔符后面的字符和 "："，因此允许 SMTP:User@contso.com，但 SMTP:user:M@contoso.com 不是。
 
     > [!IMPORTANT]
-    > 所有简单邮件传输协议 (SMTP) 地址应符合电子邮件邮件传递标准。 如果存在重复或不需要的地址，请参阅帮助主题 [删除 Exchange 中的重复和不需要的代理地址](https://go.microsoft.com/fwlink/?LinkId=293860)。
+    > 所有简单邮件传输协议 (SMTP) 地址应符合电子邮件邮件传递标准。 删除重复的或不需要的地址（如果存在）。
 
 - **sAMAccountName**
 

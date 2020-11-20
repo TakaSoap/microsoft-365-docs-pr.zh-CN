@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虚构但具有代表性的全球组织如何采用 Microsoft 365 for enterprise。
-ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356987"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371608"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>适用于 Contoso Corporation 的 Microsoft 365 for 企业版
 
@@ -69,9 +69,9 @@ Contoso Corporation 是一个虚构但具有代表性的全球生产家集，其
 
 请参阅以下附加的 IT 方案和配置：
 
-- [COVID-19 针对混合劳动力的响应和基础结构](../solutions/contoso-hybrid-workforce.md)
+- [COVID-19 针对远程和现场工作的响应和基础结构](../solutions/contoso-remote-onsite-work.md)
 
-  了解 Contoso 如何为混合劳动力更新 COVID pandemic 的远程访问基础结构以及他们的新安装和更新基础结构。
+  了解 Contoso 如何为 COVID-19 pandemic 更新其远程访问基础结构，以及他们的新安装和更新基础结构以实现远程和现场工作。
 
 - [最高机密项目团队](../solutions/contoso-team-for-top-secret-project.md)
 
