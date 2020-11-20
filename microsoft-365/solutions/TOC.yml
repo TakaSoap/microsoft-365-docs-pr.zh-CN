@@ -171,6 +171,8 @@
       items:
         - name: Contoso Corporation 的 Microsoft 365 解决方案
           href: contoso-case-study-solutions.md
+        - name: COVID-19 对混合工作人员进行响应和支持
+          href: contoso-hybrid-workforce.md
         - name: 适用于最高机密项目的独立团队
           href: contoso-team-for-top-secret-project.md
         - name: Teams 语音迁移
