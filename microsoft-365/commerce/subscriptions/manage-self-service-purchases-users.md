@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 用户可以了解如何管理自己的自助购买。
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546602"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367151"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助购买（用户）
 
@@ -39,12 +39,12 @@ ms.locfileid: "47546602"
 
 您可以查看已购买的所有自助服务购买订阅的列表。
 
-1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在 " **产品** " 选项卡上，选择 "筛选器" 图标，然后选择 " **自助服务**"。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何购买更多或减少许可证
 
-1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
+1. 在管理中心中，转到 **“账单”** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">“你的产品”</a>页面。
 2. 在 " **产品** " 选项卡上，选择要为其购买更多或减少许可证的订阅。
 3. 选择 " **购买许可证** " 或 " **删除许可证**"。
 4. 在右侧窗格中的 " **许可证总数** " 框中，输入此订阅所需的许可证总数，然后选择 " **保存**"。 例如，如果您有100个许可证，并且想要添加5个，请输入105。
@@ -71,16 +71,16 @@ ms.locfileid: "47546602"
 
 ## <a name="cancel-a-subscription"></a>取消订阅
 
-1. 在管理中心中，转到 "**付费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">产品</a>" 页面。
-2. 在 " **产品** " 选项卡上，找到要取消的订阅。 选择 " **更多操作** (三个点) ，然后选择" **取消订阅**"。
-3. 在 " **取消订阅** " 窗格中，选择您要取消的原因。 （可选）提供你拥有的任何反馈。
-4. 选择“**保存**”。
+1. 在管理中心中，转到“**账单**” > “<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">你的产品</a>”页面。
+2. 在“**产品**”选项卡上，找到要取消的订阅。 选择“**更多操作**”（三个点），然后选择“**取消订阅**”。
+3. 在“**取消订阅**”窗格中，选择取消原因。 （可选）提供你拥有的任何反馈。
+4. 选择“保存”。
 
 ## <a name="manage-your-payment-details"></a>管理你的付款详细信息
 
-1. 在 "管理中心" 中，转到 "**计费**帐单  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">配置文件</a>" 页。
+1. 在 "管理中心" 中，转到 "**计费** 帐单  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">配置文件</a>" 页。
 2. 从列表中选择一个记帐配置文件。
-3. 在 "记帐配置文件详细信息" 页上的 " **付款方式**" 下，选择下列选项之一： \
+3. 在 "记帐配置文件详细信息" 页上的 " **付款方式**" 下，选择下列选项之一：
     - 如果要更新现有的付款方式，请选择 " **编辑**"。
     - 如果要添加新的付款方式，请选择 " **替换**"。
 4. 在右侧窗格中，输入卡详细信息，然后选择 " **保存**"。
@@ -100,7 +100,7 @@ ms.locfileid: "47546602"
 
 ## <a name="view-your-invoices"></a>查看你的发票
 
-1. 在 "管理中心" 中，转到 "**付费**帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>" 页。
+1. 在 "管理中心" 中，转到 "**付费** 帐单  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>" 页。
 2. 在 " **发票** " 选项卡上，选择要查看的发票。 如果没有任何发票可见，则将 **过去3个月** 更改为 **过去6个月** 或 **指定日期范围**。
 
 ## <a name="need-help-contact-us"></a>需要帮助？ 联系我们。

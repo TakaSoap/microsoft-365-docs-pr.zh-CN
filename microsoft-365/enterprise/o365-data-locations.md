@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493681"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135987"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -127,6 +127,7 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 | 国家/地区 | 市/县 |
 | --- | --- |
 | 澳大利亚 | 悉尼、墨尔本 |
+| 巴西 | 里约热内卢、坎皮纳斯 |
 | 加拿大 | 魁北克市、多伦多 |
 | 欧盟 | 奥地利（维也纳）、芬兰（赫尔辛基）、法国（巴黎，马赛）、爱尔兰（都柏林）、荷兰（阿姆斯特丹） |
 | 法国 | 巴黎、马赛 |
@@ -892,19 +893,19 @@ Microsoft 不会存储指定地理位置之外的静态 Intune 客户数据。 �
 
 | 服务 | 位置 |
 | --- | --- |
-| Exchange Online | 全球地理位置 3 - 美洲 |
-| OneDrive for Business | 全球地理位置 3 - 美洲 |
-| SharePoint Online | 全球地理位置 3 - 美洲 |
+| Exchange Online | 巴西 |
+| OneDrive for Business | 巴西 |
+| SharePoint Online | 巴西 |
 | Skype for Business | 美国 |
-| Microsoft Teams | 美国 |
-| Office Online &amp; Mobile | 全球地理位置 3 - 美洲 |
-| EOP | 全球地理位置 3 - 美洲 |
+| Microsoft Teams | 巴西 |
+| Office Online &amp; Mobile | 巴西 |
+| EOP | 巴西 |
 | Intune | 美国 |
-| MyAnalytics | 全球地理位置 3 - 美洲 |
-| Planner | 美国 |
+| MyAnalytics | 巴西 |
+| Microsoft Planner | 美国 |
 | Sway | 美国 |
 | Yammer | 美国 |
-| OneNote 服务 | 全球地理位置 3 - 美洲 |
+| OneNote 服务 | 巴西 |
 | Stream | 美国 |
 | Whiteboard | 美国 |
 | Forms | 美国 |

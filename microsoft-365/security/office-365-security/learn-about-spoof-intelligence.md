@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的欺骗智能，您可以在其中允许或阻止特定的欺骗性发件人。
-ms.openlocfilehash: 4d40dae9518b451affc11c6666ee8f7454eceff3
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 62964550be161b16767595890872055b56586f1d
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920640"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367127"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
@@ -61,13 +61,13 @@ ms.locfileid: "48920640"
 
   - 若要修改欺骗性智能策略或启用或禁用欺骗智能，您必须是下列角色组之一的成员：
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“ **组织管理** ”或“ **安全管理员** ”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **组织管理** ”或“ **清洁管理** ”。
+    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
 
   - 若要对欺骗智能策略进行只读访问，您必须是下列角色组之一的成员：
 
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“ **安全读取者** ”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **仅查看组织管理** ”。
+    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
 
 - 有关我们推荐的欺骗性智能设置，请参阅 [EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
@@ -76,9 +76,9 @@ ms.locfileid: "48920640"
 > [!NOTE]
 > 如果你拥有 Microsoft 365 企业版 E5 订阅或单独购买了 Microsoft Defender for Office 365 加载项，则还可以管理通过 [欺骗智能洞察力](walkthrough-spoof-intelligence-insight.md)欺骗你的域的发件人。
 
-1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”** 。
+1. 在安全与合规中心内，依次转到 **“威胁管理”**\>**“策略”**\>**“反垃圾邮件”**。
 
-2. 在 " **反垃圾邮件设置** " 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开 " **欺骗智能策略** "。
+2. 在 " **反垃圾邮件设置** " 页上，单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 以展开 " **欺骗智能策略**"。
 
    ![选择欺骗性智能策略](../../media/anti-spam-settings-spoof-intelligence-policy.png)
 
@@ -89,49 +89,49 @@ ms.locfileid: "48920640"
 
 4. 在 **决定是否允许这些发件人哄骗** 出现的用户浮出控件时，选择下列选项卡之一：
 
-   - **您的域** ：发件人哄骗内部域中的用户。
-   - **外部域** ：发件人哄骗外部域中的用户。
+   - **您的域**：发件人哄骗内部域中的用户。
+   - **外部域**：发件人哄骗外部域中的用户。
 
-5. 单击 ![ ](../../media/scc-expand-icon.png) " **允许欺骗"** 列中的 "展开图标"。 选择 **"是"** 允许欺骗发件人，或选择 " **否** " 将邮件标记为 "欺骗"。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹** ) 。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
+5. 单击 ![ ](../../media/scc-expand-icon.png) " **允许欺骗"** 列中的 "展开图标"。 选择 **"是"** 允许欺骗发件人，或选择 " **否** " 将邮件标记为 "欺骗"。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹**) 。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md#spoof-settings)。
 
    ![显示欺骗性发件人浮出控件以及是否允许发件人欺骗的屏幕截图](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
 
    下表中说明了您看到的列和值：
 
-   - **欺骗用户** ：被欺骗的用户帐户。 这是发件人地址中的邮件发件人 (也称为 `5322.From` 在电子邮件客户端中显示的地址) 。 SPF 不会检查此地址的有效性。
+   - **欺骗用户**：被欺骗的用户帐户。 这是发件人地址中的邮件发件人 (也称为 `5322.From` 在电子邮件客户端中显示的地址) 。 SPF 不会检查此地址的有效性。
 
      - 在 " **您的域** " 选项卡上，值包含一个电子邮件地址，或者如果源电子邮件服务器正在哄骗多个用户帐户，则它包含 **多** 个用户帐户。
 
      - 在 " **外部域** " 选项卡上，值包含欺骗用户的域，而不是完整的电子邮件地址。
 
-   - **发送基础结构** ：当源电子邮件服务器的 IP 地址的反向 DNS 查找 (PTR 记录) 中找到的域，或者如果源没有 PTR 记录，则为 IP 地址。
+   - **发送基础结构**：当源电子邮件服务器的 IP 地址的反向 DNS 查找 (PTR 记录) 中找到的域，或者如果源没有 PTR 记录，则为 IP 地址。
 
      有关邮件源和邮件发件人的详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
    - **邮件** 数：在最近30天内包含指定的欺骗发件人或发件人的组织的发送方结构中的邮件数。
 
-   - **用户投诉** ：在过去30天内，用户对此发件人存档的投诉。 投诉通常是提交给 Microsoft 的垃圾邮件的形式。
+   - **用户投诉**：在过去30天内，用户对此发件人存档的投诉。 投诉通常是提交给 Microsoft 的垃圾邮件的形式。
 
-   - **身份验证结果** ：下列值之一：
+   - **身份验证结果**：下列值之一：
 
-      - 已 **传递** ：发件人的发件人电子邮件身份验证检查 (SPF 或 DKIM) 。
-      - **失败** ：发件人失败 EOP 发件人身份验证检查。
-      - **未知** ：这些检查的结果不是已知的结果。
+      - 已 **传递**：发件人的发件人电子邮件身份验证检查 (SPF 或 DKIM) 。
+      - **失败**：发件人失败 EOP 发件人身份验证检查。
+      - **未知**：这些检查的结果不是已知的结果。
 
-   - **决策集依据** ：显示确定是否允许发送基础结构欺骗用户的用户：
+   - **决策集依据**：显示确定是否允许发送基础结构欺骗用户的用户：
 
        - **欺骗性智能策略** (自动) 
        - **管理员** (手动) 
 
    - **上次查看** 时间：从包含欺骗用户的发送基础结构收到邮件的最后日期。
 
-   - 是否 **允许欺骗？** ：您在此处看到的值是：
+   - 是否 **允许欺骗？**：您在此处看到的值是：
 
-     - **是** ：允许欺骗用户和发送基础结构组合的邮件不会被视为欺骗电子邮件。
+     - **是**：允许欺骗用户和发送基础结构组合的邮件不会被视为欺骗电子邮件。
 
-     - **否** ：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹** ) 。 有关详细信息，请参阅下一节。
+     - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹**) 。 有关详细信息，请参阅下一节。
 
-     - **有些用户** 只 ( **域** 选项卡中) ：发送基础结构是哄骗多个用户，其中某些欺骗用户是允许的，其他是不允许的。 使用 " **详细信息** " 选项卡查看特定地址。
+     - **有些用户** 只 (**域** 选项卡中) ：发送基础结构是哄骗多个用户，其中某些欺骗用户是允许的，其他是不允许的。 使用 " **详细信息** " 选项卡查看特定地址。
 
 6. 在页面底部，单击“保存”。
 
@@ -204,10 +204,10 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** " " \> **反网络钓鱼** " 或 " **ATP 反网络钓鱼** "，然后执行以下任一步骤：  
+- 在安全 & 合规性中心中，转到 "**威胁管理** \> **策略**" " \> **反网络钓鱼**" 或 " **ATP 反网络钓鱼**"，然后执行以下任一步骤：  
 
   - 从列表中选择一个策略。 在出现的浮出控件中，验证 **欺骗** 部分中的值。
-  - 单击 " **默认策略** "。 在出现的浮出控件中，验证 **欺骗** 部分中的值。
+  - 单击 " **默认策略**"。 在出现的浮出控件中，验证 **欺骗** 部分中的值。
 
 - 在 Exchange Online PowerShell 中，将替换 \<Name\> 为 Office365 AntiPhish 默认值或自定义策略的名称，然后运行以下命令来验证设置：
 
@@ -219,7 +219,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 
 请这有关哄骗和网络钓鱼防护的信息。 下面是检查发件人欺骗你的域并帮助防止其损坏组织的相关方法：
 
-- 检查 **欺骗邮件报告** 。 您可以经常使用此报告查看和帮助管理欺骗性发件人。 有关信息，请参阅 [欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
+- 检查 **欺骗邮件报告**。 您可以经常使用此报告查看和帮助管理欺骗性发件人。 有关信息，请参阅 [欺骗检测报告](view-email-security-reports.md#spoof-detections-report)。
 
 - 查看您的发件人策略框架 (SPF) 配置。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 有关 Office 365 如何使用 SPF 的更深入了解，或者有关故障排除或非标准部署（如混合部署）的信息，请开始阅读[How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
