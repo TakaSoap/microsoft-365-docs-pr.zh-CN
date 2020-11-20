@@ -860,7 +860,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理审核和警报策略
   items:
-    - name: 统一审核
+    - name: 基本审核
       items:
         - name: 搜索审核日志
           href: search-the-audit-log-in-security-and-compliance.md
