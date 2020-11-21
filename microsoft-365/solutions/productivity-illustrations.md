@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f84c1c4a8d507ae9a4be3cb69a816a8494e08cc3
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906783"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376661"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -43,12 +43,12 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 Microsoft 365 包括一系列信息保护和合规性功能。 通过与 Microsoft 的生产率工具结合使用，这些功能旨在帮助组织实时协作，同时遵守严格的法规遵从性框架。 
 
-这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 你可以随意使用这些插图，为你提供相应的修改。 
+这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 可随时根据自己的使用情况来修改这些插图。 
 
 
 | Item | 说明 |
 |:-----|:-----|
-|[![模型海报： Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [下载为 PDF 格式](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[下载为 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 10月2020更新|具有 <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内幕风险</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[下载为 PDF 格式](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 日语：[下载为 PDF 格式](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> 2020年11月更新|具有 <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内幕风险</li><li>第三方数据摄取</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
@@ -84,7 +84,7 @@ Microsoft 365 包括一系列信息保护和合规性功能。 通过与 Microso
 
 | Item | 说明 |
 |:-----|:-----|
-|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 10月2020更新|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
+|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新时间：2020年 10 月|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
   
 <!--
 

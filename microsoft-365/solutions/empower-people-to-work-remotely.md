@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 确保已启用 Microsoft 365 中的所有功能，以最大限度地提高远程工作者的工作效率，并保持对服务器、数据和云的安全访问。
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906735"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357033"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -112,4 +112,6 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 [![使用 Microsoft 365 为远程工作者提供强大帮助的步骤](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-若要了解 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[使用 Microsoft Teams 网站实现混合型工作](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。
+有关 Microsoft 提供的关于支持远程工作者的最新信息，请参阅[使用 Microsoft Teams 网站实现混合型工作](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。
+
+若要了解虚构但具代表性的跨国企业如何助力远程工作者，请参阅[Contoso 对混合工作者进行 COVID-19 响应并提供基础结构](contoso-hybrid-workforce.md)。

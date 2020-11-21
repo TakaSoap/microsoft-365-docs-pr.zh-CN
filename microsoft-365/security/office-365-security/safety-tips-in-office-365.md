@@ -18,23 +18,22 @@ ms.collection:
 - M365-security-compliance
 description: 了解 EOP 和 Office 365 如何通过将安全提示添加到电子邮件顶部来保护您的垃圾邮件、网络钓鱼和恶意软件阻止。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: e36887e2bb0146c86a8a4f1526f1e712a38b46ba
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948441"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376615"
 ---
 # <a name="safety-tips-in-email-messages"></a>电子邮件中的安全提示
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 Exchange Online Protection (EOP) 和 Microsoft 365 保护你的垃圾邮件、网络钓鱼和恶意软件防护。 如今，其中一些攻击非常精心编制，使其看起来是合法的。 将邮件发送到 "垃圾邮件" 文件夹并不总是足够。 现在，当您在 Outlook 或 web 上的 Outlook 或任何电子邮件客户端中检查您的电子邮件时，EOP 会自动检查发件人，并将安全提示添加到电子邮件的顶部。
 
 Outlook 中的安全提示不依赖于所使用的 Outlook 版本，因为安全提示被破译开放并直接插入到邮件正文中。 这意味着安全提示将显示在所使用的任何电子邮件客户端中。 它是在电子邮件筛选器级别完成的，不是在邮件客户端级别呈现的，因此，它不仅显示在任何版本的 Outlook 中，还会显示在任何电子邮件客户端中。
 
-安全提示（一种由颜色编码的邮件）将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Microsoft 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时，才会看到它们。 如果安全提示确实显示在收件箱中，则可以使用以下示例来了解有关每种安全提示的详细信息。
+安全提示--有颜色编码的邮件--将警告您可能有害的邮件。 您的收件箱中的大多数邮件不会有安全提示。 只有在 EOP 和 Microsoft 365 包含可帮助阻止垃圾邮件、网络钓鱼和恶意软件攻击的信息时，才会看到它们。 如果安全提示确实显示在收件箱中，则可以使用以下示例来了解有关每种安全提示的详细信息。
 
 - 可疑邮件 (红色安全提示) 。
 

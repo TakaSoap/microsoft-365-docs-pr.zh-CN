@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何在设置 Microsoft 365 商业高级版后保护 Windows 10 电脑。
-ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778376"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376269"
 ---
 # <a name="secure-windows-10-computers"></a>保护 Windows 10 计算机
 
@@ -36,7 +36,7 @@ ms.locfileid: "46778376"
 
 [设置](set-up.md)Microsoft 365 商业高级版后，可以保护贵组织中的 Windows 10 计算机失窃，并在病毒和恶意软件等恶意威胁时对其进行保护。
 
-## <a name="to-secure-your-windows-10-pcs"></a>保护 Windows 10 电脑的安全
+## <a name="to-secure-your-windows-10-computers"></a>保护 Windows 10 计算机的安全
 
 1. 使用全局管理员凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 
 2. 在左侧导航中，选择 " **设置** "，然后在 " **登录和安全**" 下，选择 " **保护 Windows 10 计算机**"。 选择 " **查看** " 即可开始。
