@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 了解用户如何在 Office 应用程序中使用桌面、移动和 web Office 应用程序中的敏感度标签，以及哪些应用程序支持灵敏度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131105"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371690"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
@@ -234,7 +234,7 @@ Office 应用程序使用敏感度标签以不同方式应用内容标记和加�
 
 - 从 Power BI 导出的标记和加密的数据
 
-- Microsoft 云应用安全
+- Microsoft Cloud App Security
 
 对于这些方案，使用内置标签的用户可以通过临时删除或替换当前标签，然后重新应用原始标签来应用标签的内容标记。
 
@@ -258,6 +258,41 @@ Office 应用程序使用敏感度标签以不同方式应用内容标记和加�
 
 > [!NOTE]
 > 这些变量的语法区分大小写。
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
+
+作为一个额外的变量，可以使用文本字符串中的 "If. App" 变量语句来配置每个 Office 应用程序类型的可视标记，并使用值 **Word**、 **Excel**、 **PowerPoint** 或 **Outlook** 标识应用程序类型。 您还可以缩写这些值，如果要在同一个 If 应用程序语句中指定多个值，则这是必需的。
+
+> [!NOTE]
+> 由于目前仅受 Azure 信息保护统一标记客户端支持，因此包含 Outlook 的说明是完整的。
+
+使用以下语法：
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+与其他动态视觉标记一样，语法区分大小写。
+
+示例：
+
+- **仅设置 Word 文档的页眉文本：**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    仅在 Word 文档头中，标签应用标题文本 "此 Word 文档是敏感文档"。 不会向其他 Office 应用程序应用任何标题文本。
+
+- **设置 Word、Excel 和 Outlook 的页脚文本和 PowerPoint 的不同页脚文本：**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    在 Word、Excel 和 Outlook 中，标签应用页脚文本 "此内容是机密"。 在 PowerPoint 中，标签应用页脚文本 "此演示文稿是保密的"。
+
+- **为 word 和 PowerPoint 设置特定的水印文本，然后为 Word、Excel 和 PowerPoint 设置水印文本：**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    在 Word 和 PowerPoint 中，标签应用水印文本 "此内容是机密"。 在 Excel 中，标签应用水印文本 "保密"。 在 Outlook 中，标签不会应用任何水印文本，因为 Outlook 不支持将水印用作视觉标记。
 
 ## <a name="end-user-documentation"></a>最终用户文档
 

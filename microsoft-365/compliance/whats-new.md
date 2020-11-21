@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988850"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376605"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -36,6 +36,77 @@ ms.locfileid: "48988850"
 > [!TIP]
 > 对其他管理中心中的内容有兴趣？ 查看以下文章：<br>[Microsoft 365 管理中心的新增功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 管理中心的新增功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 并访问 [microsoft 365 路线图](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，了解已启动的 microsoft 365 功能、正在开发、已被取消或之前已发布的功能。
+
+## <a name="october-2020"></a>2020 年 10 月
+
+### <a name="advanced-ediscovery"></a>高级电子数据展示
+
+[CJK 语言支持](ediscovery-cjk-support.md)。 高级电子数据展示现在支持双字节字符集语言，统称为 CJK 语言 (包括简体中文、繁体中文、日语和朝鲜语) 。 可以在多个高级审阅集方案中使用它们。
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+- [标签范围](sensitivity-labels.md#label-scopes)。 创建灵敏度标签时，将显示一个新选项，用于定义标签的作用域。 此选项使您可以仅为文件和电子邮件、容器 (（如 SharePoint 网站和团队) 或两者）配置标签。
+- [动态内容标记](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。 为敏感度标签配置内容标记时，现在可以在 `${Item.Label}` `${Item.Location}` 页眉、页脚或水印的文本字符串中使用动态变量，如和。
+
+## <a name="september-2020"></a>2020 年 9 月
+
+### <a name="spotlight-compliance-manager"></a>聚光灯：合规性管理器
+
+在今年 Ignite 宣布，合规性分数是 rebranded [合规性管理器](compliance-manager.md)。 此版本在服务信任门户中完成从合规性管理器的前一主页转换，并在 Microsoft 365 合规性中心引入了端到端合规性管理解决方案。
+
+观看以下视频，了解合规性管理器如何帮助简化组织管理合规性的方式。
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
+### <a name="advanced-audit"></a>高级审核
+
+- 新的10年保留审核日志可帮助支持长时间运行调查并响应法规、法律和内部义务。
+- [三个新的新的关键事件](advanced-audit.md#access-to-crucial-events-for-investigations)。 以下新事件可帮助您调查可能的漏洞，并确定危害的范围： Send、SearchQueryInitiatedExchange 和 SearchQueryInitiatedSharePoint。
+
+### <a name="communication-compliance"></a>通信合规性
+
+- [更新了角色组](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通信合规性角色组现在与可用于内幕风险管理解决方案的角色组结构相匹配。
+- [报告仪表板](communication-compliance-feature-reference.md#reports-preview)。 查看所有通信合规性报告的中心位置。 报告构件提供了对通信合规性活动状态整体评估时最常用的见解的快速视图。
+- [自动执行流的电源](communication-compliance-feature-reference.md#power-automate-flows-preview)。 设置流以自动执行通知和用户的任务、通知管理员何时触发通知以及用户触发通知等。
+- ["改进分类" 补救措施](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含与 trainable 分类程序匹配的项目的警报可能会从反馈中受益，以帮助最大限度地减少组织中的误报。 通过 " **改进分类** " 选项，可以提供反馈，即检测到的项目是否与相关的通信合规性策略中配置的分类器相匹配。 您甚至可以建议其他分类器与项目相关联，以提高将来通知的匹配精度。
+
+### <a name="data-connectors"></a>数据连接器
+
+- [新的第三方数据连接器](archiving-third-party-data.md#third-party-data-connectors)。 25个新数据连接器，包括从 Globanet 的14个连接器和 Telemessage 中的8个。
+- [物理徽章连接器](import-physical-badging-data.md)。 导入物理徽章数据，例如员工的原始物理访问事件或由组织的徽章系统生成的任何物理访问告警。 示例包括建筑物、服务器机房或数据中心的条目。 可供内幕风险管理解决方案使用物理徽章数据，以帮助您的组织避免组织中的恶意活动或数据被盗。
+
+### <a name="insider-risk-management"></a>内部风险管理
+
+- [Microsoft 团队集成](insider-risk-management-settings.md#microsoft-teams-preview)。 当团队集成在内幕风险设置中处于启用状态时，您可以与团队中的其他利益干系人进行协调和协作，如安全共享和存储与单个案例相关的数据、跟踪和查看来自分析师和调查人员的响应活动等。
+- [自动执行流的电源](insider-risk-management-settings.md#power-automate-flows-preview)。 设置流以自动执行案例和用户的重要任务，例如检索用户、通知和案例信息以与利益干系人和其他应用程序共享、自动执行操作（如发布到案例通知等）。
+- [活动资源管理器](insider-risk-management-alerts.md#activity-explorer-preview)。 在审阅警报时可用，活动资源管理器向调查人员和分析师提供全面的分析工具，以深入了解每个警报。 快速查看检测到的危险活动的时间线，并确定和筛选与警报关联的所有风险活动。
+
+### <a name="retention-policies-and-retention-labels"></a>保留策略和保留标签
+
+- [对 Yammer 的支持](retention-policies-yammer.md)。 现在，您可以使用保留策略保留和删除 Yammer 社区邮件和私有邮件。
+- [将标签应用于团队会议录制](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings)。 创建自动标记策略时，请使用关键字查询编辑器来确定存储在用户的 OneDrive 帐户或 SharePoint 中的团队会议录制。
+
+### <a name="records-management"></a>记录管理
+
+[对规章记录的支持](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)。 将标签分类为规章记录会增加对应用标签的内容施加的限制，并限制标签本身的可用管理操作。 例如，应用于内容后，无人（甚至全局管理员）可以删除标签。 [了解](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) 有关允许和阻止的针对法规记录的操作的详细信息。
+
+### <a name="sensitivity-labels"></a>敏感度标签
+
+[为美国政府客户提供支持](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 现在，仅对 Azure 信息保护统一标签客户端和扫描程序支持仅适用于 GCC、GCC 高和 DoD 客户的敏感度标签。
+
+### <a name="trainable-classifiers"></a>可训练的分类器
+
+新的重新培训和反馈功能有助于提高所有自定义分类器和一些预先培训的分类器的精确度和最小值匹配。 通过此流，可以提供有关项目是否与特定分类器相匹配、建议其他分类器与项目关联以及重新培训分类器以优化和提高匹配精确性的反馈。
+
+此新功能包含在以下功能中：
+
+> [!NOTE]
+> 对于所有功能，如果您至少提供30个反馈响应，我们将创建可查看的 retrained 版本的分类。 如果改进，可以重新发布分类器。
+
+- [Trainable 类元](classifier-learn-about.md#retraining-classifiers)。 若要提高已发布分类程序的准确性，可以提供有关检测到的项目是否与分类器相匹配的反馈。
+- [通信合规性](classifier-how-to-retrain-comms-compliance.md)。 通过新的 " **改进分类** 修正" 操作，您可以提供反馈，即通信合规性警报中的项目是否与通信合规性策略中配置的分类器相匹配。
+- [内容浏览器](classifier-how-to-retrain-content-explorer.md)。 如果设置保留自动标记策略以自动将标签应用于与 trainable 分类器匹配的电子邮件，则可以使用内容资源管理器查看标记的项目，并提供有关项目是否与分类器相匹配的反馈。
 
 ## <a name="august-2020"></a>2020 年 8 月
 
@@ -101,7 +172,7 @@ ms.locfileid: "48988850"
 为了帮助您了解使用哪些合规性解决方案来保护和管理组织的敏感数据，我们创建了两个新登录页，并概述了这些解决方案如何协同工作以实现这些目标，包括指向相关文档的链接，以便您可以进一步深入研究。
 
 [Microsoft 365 中的 microsoft 信息保护](information-protection.md)<br>
-[Microsoft 365 中的 microsoft 信息管理](manage-Information-governance.md)
+[Microsoft 365 中的 Microsoft 信息治理](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>高级电子数据展示：将非 custodial 数据源添加到你的案例
 
@@ -170,7 +241,7 @@ ms.locfileid: "48988850"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度标签：新隐私选项
 
-为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户** "。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
+为标签配置 [网站和组设置](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 时，您现在可以将 "隐私" 选项设置为 " **无-允许用户选择可以访问网站的用户**"。 如果要使用敏感度标签保护容器中的内容，但仍允许用户自行配置隐私设置，这将非常有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -326,7 +397,7 @@ ms.locfileid: "48988850"
 | (预览的解决方案目录)  <br/>|解决方案目录是用于发现、了解和快速开始使用合规性和风险管理解决方案的一站式业务。 目录分为三个符合性类别，每个类别都包含有关组成该类别的解决方案的详细信息。 类别包括信息保护 & 治理、内幕风险管理和发现 & 响应 <br/>|[解决方案目录 (预览的概述) ](microsoft-365-solution-catalog.md)|
 | (预览的通信合规性)  <br/>|通信合规性是新的内幕风险管理类别的一部分，可帮助您对组织中不适当的邮件进行检测、捕获和采取补救措施，以帮助最大限度地减少通信风险。 该解决方案通过引入几项新的增强功能（如智能模板、灵活的修正工作流和可操作的见解）扩展了监督策略在 Office 365 中的功能。 <br/>|[Microsoft 365 (预览版中的通信合规性) ](communication-compliance.md)|
 |数据分类 (预览)  <br/>|我们新的数据分类页面包含强大的见解和工具，可帮助您发现和评估在您的组织中的内容中使用的敏感信息和标签 (保留和敏感度) 。 查看包含敏感信息或应用了标签的内容、跨 Microsoft 365 位置浏览标签活动、创建自定义敏感信息类型，以及更多。<br/>|[数据分类概述（预览）](data-classification-overview.md)|
-|Trainable 类元 (预览)  <br/>|此功能强大的新工具使用我们的机器学习引擎帮助确定您的组织中的内容类别，如法规文档或员工协议。 创建后，可以在几个合规性解决方案中使用分类器来检测相关内容并对其进行分类、保护、保留等。<br/>|[了解可训练的分类器（预览版）](classifier-learn-about.md)|
+|可训练的分类器（预览版） <br/>|此功能强大的新工具使用我们的机器学习引擎帮助确定您的组织中的内容类别，如法规文档或员工协议。 创建后，可以在几个合规性解决方案中使用分类器来检测相关内容并对其进行分类、保护、保留等。<br/>|[了解可训练的分类器（预览版）](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新了合规性解决方案
 
@@ -358,15 +429,3 @@ ms.locfileid: "48988850"
 |敏感度标签和标签策略|分类 > 敏感度标签 > 标签和标签策略 "选项卡 <br/> https://protection.office.com/sensitivity |信息保护 > 标签和标签策略选项卡 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感性标签](sensitivity-labels.md) |
 |服务保证|服务保证 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服务保证资源只能在 Office 365 安全 & 合规性中心中访问。 |[安全与合规中心内的服务保证](service-assurance.md)|
 |监督|监督 <br/> https://protection.office.com/supervisoryreviewv2 |通信合规性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 (预览版中的通信合规性) ](communication-compliance.md) |
-
-## <a name="september-2019"></a>2019 年 9 月
-
-不知为什么在本月的版本中静音？ 我们正在开发的新的创新合规性解决方案将在11月的 [Microsoft Ignite](https://www.microsoft.com/ignite) 中 unveiled。 请随时关注！
-
-### <a name="new-encryption-options-for-sensitivity-labels"></a>用于敏感度标签的新加密选项 
-
-为敏感度标签配置加密时，您现在有两个选项，可让用户在手动将标签应用于电子邮件和文档时分配权限：<br>
-- 将标签应用于 **Outlook 电子邮件** 时，用户可以强制实施与 "不转发" 选项等效的限制。 收件人将能够读取邮件，但不能转发、打印或复制内容。
-- 将标签应用于 **Word、PowerPoint 和 Excel 文件** 时，系统将提示用户为特定用户和组分配访问权限。
-
-转到 " [使用敏感度标签限制对内容的访问" 以应用加密](encryption-sensitivity-labels.md#let-users-assign-permissions) 以了解详细信息。

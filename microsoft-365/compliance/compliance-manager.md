@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器可帮助组织简化和自动化风险评估，并建议用于帮助解决风险的建议措施。
-ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072931"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376543"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合规性管理器
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072931"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新增功能：合规性管理器的正式发行版
 
-合规性管理器现已推出 (GA) 作为 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)内的端到端合规性管理解决方案。 在此版本中，合规性管理器将从 Microsoft 服务信任门户中先前的位置完成转换。 合规性管理器现在也适用于美国政府社区 (GCC) 中型客户。
+合规性管理器现已推出 (GA) 作为 [Microsoft 365 合规性中心](microsoft-365-compliance-center.md)内的端到端合规性管理解决方案。 在此版本中，合规性管理器将从 Microsoft 服务信任门户中先前的位置完成转换。 合规性管理器现在也可用于美国政府社区 (GCC) 中型和 GCC 高级客户。
 
 由于合规性分数的公开预览发展成为集中式工具，具有增强的合规性管理功能和更易于使用的功能。  GA 发行版中引入了一个更大的预建评估集合，可帮助您扩展合规性活动。
 
@@ -83,9 +83,9 @@ ms.locfileid: "49072931"
 
 合规性管理器跟踪以下类型的控件：
 
-1. **Microsoft 托管控件** ： microsoft 云服务的控件，microsoft 负责实现
-2. **您的控件** ：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
-3. **共享控件** ：这些控件是你的组织和 Microsoft 共同负责实施的控制
+1. **Microsoft 托管控件**： microsoft 云服务的控件，microsoft 负责实现
+2. **您的控件**：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
+3. **共享控件**：这些控件是你的组织和 Microsoft 共同负责实施的控制
 
 ##### <a name="learn-more"></a>了解详细信息
 
@@ -99,11 +99,11 @@ ms.locfileid: "49072931"
 
 评估具有以下几个组件：
 
-- **范围内的服务** ：适用于评估的一组特定的 Microsoft 服务
-- **Microsoft 托管控件** ： microsoft 云服务的控件，microsoft 云服务代表你代表你实施
-- **您的控件** ：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
-- **共享控件** ：这些控件是你的组织和 Microsoft 共同负责实施的控制
-- **评估成绩** ：显示从评估中的操作（由组织和 Microsoft 管理）获得的可能积分总数的进度
+- **范围内的服务**：适用于评估的一组特定的 Microsoft 服务
+- **Microsoft 托管控件**： microsoft 云服务的控件，microsoft 云服务代表你代表你实施
+- **您的控件**：有时称为 "客户托管控件"，它们是由您的组织实现和管理的控件
+- **共享控件**：这些控件是你的组织和 Microsoft 共同负责实施的控制
+- **评估成绩**：显示从评估中的操作（由组织和 Microsoft 管理）获得的可能积分总数的进度
 
 在创建评估时，您需要将其分配给一个组。 您可以按对组织的最逻辑的任何方式配置组。 例如，您可以按审核年、区域、解决方案、组织内的团队或其他某种方式对评估进行分组。 创建组后，您可以对 [合规性管理器仪表板进行筛选](compliance-manager-setup.md#filtering-your-dashboard-view) ，以查看一个或多个组的分数。
 
