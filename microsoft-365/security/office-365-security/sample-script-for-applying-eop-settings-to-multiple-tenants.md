@@ -14,74 +14,97 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何使用 PowerShell 将配置设置应用到您在 Microsoft Exchange Online Protection (EOP) 中的租户。
-ms.openlocfilehash: 6e33ceb6a9daa88bfefd4ec08ac9f2a9f34a942f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbb4135c89ac8d351c40bd7d9ce5301500a9b81b
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198675"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376563"
 ---
-# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="7dbd5-103">将 EOP 设置应用到多个租户的示例脚本</span><span class="sxs-lookup"><span data-stu-id="7dbd5-103">Sample script for applying EOP settings to multiple tenants</span></span>
+# <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a><span data-ttu-id="a4084-103">将 EOP 设置应用到多个租户的示例脚本</span><span class="sxs-lookup"><span data-stu-id="a4084-103">Sample script for applying EOP settings to multiple tenants</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-<span data-ttu-id="7dbd5-104">以下示例脚本允许管理多个租户（公司）的 Microsoft Exchange Online Protection (EOP) 管理员使用 Windows PowerShell 将配置设置应用到租户。</span><span class="sxs-lookup"><span data-stu-id="7dbd5-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Windows PowerShell to apply configuration settings to their tenants.</span></span>
+<span data-ttu-id="a4084-104">以下示例脚本允许 Microsoft Exchange Online Protection (EOP) 管理员管理多个租户 (公司) 使用 Exchange Online PowerShell 查看和/或将配置设置应用到租户。</span><span class="sxs-lookup"><span data-stu-id="a4084-104">The following sample script lets Microsoft Exchange Online Protection (EOP) admins who manage multiple tenants (companies) use Exchange Online PowerShell to view and/or apply configuration settings to their tenants.</span></span>
 
-## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="7dbd5-105">在多个租户上运行脚本或 cmdlet</span><span class="sxs-lookup"><span data-stu-id="7dbd5-105">To run a script or cmdlet on multiple tenants</span></span>
+## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a><span data-ttu-id="a4084-105">在多个租户上运行脚本或 cmdlet</span><span class="sxs-lookup"><span data-stu-id="a4084-105">To run a script or cmdlet on multiple tenants</span></span>
 
-1. <span data-ttu-id="7dbd5-106">使用 Excel 等应用程序创建 .csv 文件（例如，c:\scripts\inputfile.csv）：</span><span class="sxs-lookup"><span data-stu-id="7dbd5-106">Using an application such as Excel, create a .csv file (for example, c:\scripts\inputfile.csv):</span></span>
+1. <span data-ttu-id="a4084-106">如果还未安装，请 [安装 Exchange Online V2 模块](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)。</span><span class="sxs-lookup"><span data-stu-id="a4084-106">If you haven't already, [install the Exchange Online V2 module](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).</span></span>
 
-2. <span data-ttu-id="7dbd5-107">在 .csv 文件中，指定两个列名称：UserName 和 Cmdlet。</span><span class="sxs-lookup"><span data-stu-id="7dbd5-107">In the .csv file, specify two column names: UserName and Cmdlet.</span></span>
+2. <span data-ttu-id="a4084-107">使用电子表格应用程序 (例如，Excel) ，创建一个 .csv 文件，其中包含以下详细信息：</span><span class="sxs-lookup"><span data-stu-id="a4084-107">Using an spreadsheet app (for example, Excel), create a .csv file with the following details:</span></span>
 
-3. <span data-ttu-id="7dbd5-p101">对于 .csv 文件中的每一行，在 UserName 列中添加租户的管理员名称，在 Cmdlet 列中添加对该租户运行的 cmdlet。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。</span><span class="sxs-lookup"><span data-stu-id="7dbd5-p101">For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.</span></span>
+   - <span data-ttu-id="a4084-108">UserName 列：用于连接 (的帐户例如， `admin@contoso.onmicrosoft.com`) 。</span><span class="sxs-lookup"><span data-stu-id="a4084-108">UserName column: The account that you'll use to connect (for example, `admin@contoso.onmicrosoft.com`).</span></span>
+   - <span data-ttu-id="a4084-109">Cmdlet 列：要运行的 cmdlet 或命令 (例如， `Get-AcceptedDomain` 或 `Get-AcceptedDomain | FT Name`) 。</span><span class="sxs-lookup"><span data-stu-id="a4084-109">Cmdlet column: The cmdlet or command to run (for example, `Get-AcceptedDomain` or `Get-AcceptedDomain | FT Name`).</span></span>
 
-4. <span data-ttu-id="7dbd5-110">将 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将该文件保存到易于查找的位置 (例如，c：\scripts) 。</span><span class="sxs-lookup"><span data-stu-id="7dbd5-110">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find  (for example, c:\scripts).</span></span>
+   <span data-ttu-id="a4084-110">该文件将如下所示：</span><span class="sxs-lookup"><span data-stu-id="a4084-110">The file will look like this:</span></span>
 
-5. <span data-ttu-id="7dbd5-111">使用以下语法运行此脚本：</span><span class="sxs-lookup"><span data-stu-id="7dbd5-111">Run the script by using the following syntax:</span></span>
+   ```text
+   UserName,Cmdlet
+   admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+   ```
+
+3. <span data-ttu-id="a4084-111">将 .csv 文件保存到易于查找的位置 (例如，c:\scripts\inputfile.csv) 。</span><span class="sxs-lookup"><span data-stu-id="a4084-111">Save the .csv file in a location that's easy to find (for example, c:\scripts\inputfile.csv).</span></span>
+
+4. <span data-ttu-id="a4084-112">将 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 脚本复制到记事本中，然后将该文件保存到易于查找的位置 (例如，c：\scripts) 。</span><span class="sxs-lookup"><span data-stu-id="a4084-112">Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find (for example, c:\scripts).</span></span>
+
+5. <span data-ttu-id="a4084-113">使用以下语法运行此脚本：</span><span class="sxs-lookup"><span data-stu-id="a4084-113">Run the script by using the following syntax:</span></span>
 
    ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
-   <span data-ttu-id="7dbd5-112">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="7dbd5-112">Here's an example:</span></span>
+   <span data-ttu-id="a4084-114">下面是一个示例：</span><span class="sxs-lookup"><span data-stu-id="a4084-114">Here's an example:</span></span>
 
    ```powershell
    & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. <span data-ttu-id="7dbd5-113">每个租户都将登录到，脚本将运行。</span><span class="sxs-lookup"><span data-stu-id="7dbd5-113">Each tenant will be logged on to, and the script will be run.</span></span>
+6. <span data-ttu-id="a4084-115">每个租户都将登录到，脚本将运行。</span><span class="sxs-lookup"><span data-stu-id="a4084-115">Each tenant will be logged on to, and the script will be run.</span></span>
 
-## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="7dbd5-114">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="7dbd5-114">RunCmdletOnMultipleTenants.ps1</span></span>
+## <a name="runcmdletonmultipletenantsps1"></a><span data-ttu-id="a4084-116">RunCmdletOnMultipleTenants.ps1</span><span class="sxs-lookup"><span data-stu-id="a4084-116">RunCmdletOnMultipleTenants.ps1</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="a4084-117">您可能需要修改 `Connect-IPPSSession` 脚本中的行以匹配您的环境。</span><span class="sxs-lookup"><span data-stu-id="a4084-117">You might need to modify the `Connect-IPPSSession` line in the script to match your environment.</span></span> <span data-ttu-id="a4084-118">例如，Office 365 德国需要一个与脚本中的当前值不同的 _ConnectionUri_ 值。</span><span class="sxs-lookup"><span data-stu-id="a4084-118">For example, Office 365 Germany requires a different _ConnectionUri_ value than the current value in a script.</span></span> <span data-ttu-id="a4084-119">有关详细信息，请参阅连接到 [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="a4084-119">For details, see Connect to [Exchange Online Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
+#
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #
 # .csv input file sample:
+#
 # UserName,Cmdlet
-# admin@contoso.com,Get-AcceptedDomain | ft Name
-# URI for connecting to remote Windows PowerShell
-$URI = "https://ps.protection.outlook.com/powershell-liveid/"
+# admin@contoso.onmicrosoft.com,Get-AcceptedDomain | FT Name
+# admin@fabrikam.onmicrosoft.com,Get-AcceptedDomain | FT Name
+
 # Get the .csv file name as an argument to this script.
 $FilePath = $args[0]
+
 # Import the UserName and Cmdlet values from the .csv file.
 $CompanyList = Import-CSV $FilePath
+
+# Load the EXO V2 module
+Import-Module ExchangeOnlineManagement
+
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
+  
 # Get the current entry's UserName.
 $UserName = $Company.UserName
+
 # Get the current entry's Cmdlet.
 $Cmdlet = $Company.Cmdlet
-# Create a PowerShell credential object by using the current entry's UserName. Prompt for the password.
-$UserCredential = Get-Credential -username $UserName
-# Log on to a new Windows PowerShell session.
-$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $URI -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $Session
+
+# Connect to EOP PowerShell by using the current entry's UserName. Prompt for the password.
+Connect-IPPSSession -UserPrincipalName $UserName -ConnectionUri https://ps.protection.outlook.com/powershell-liveid/
+
 # Here's where the script to be run on the tenant goes.
 # In this example, the cmdlet in the .csv file runs.
 Invoke-Expression $Cmdlet
+
 # End the current PowerShell session.
-Remove-PsSession -Session $Session
+Disconnect-ExchangeOnline -Confirm:$false
 }
 ```
