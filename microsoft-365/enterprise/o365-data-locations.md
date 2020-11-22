@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 确定 Microsoft 365 客户数据在全球范围内的存储位置
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135987"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376511"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,7 +29,9 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客户数据的存储位置
 
-下表显示了 Microsoft 365 服务的客户数据在所有 Microsoft 全球云位置的静态存储位置。 展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
+下表显示了 Microsoft 365 服务的客户数据在 Microsoft 全球所有云位置的静态存储位置。展开你的帐单邮寄地址所在国家/地区的位置，以了解每项服务的客户数据将存储在何处。
+
+如果你的公司位于欧盟，请参阅[欧盟的数据位置](EU-data-storage-locations.md)以获取更多信息。 
 
 客户可在 Microsoft 365 管理中心的“**设置 | 组织设置 | 组织配置文件 | 数据位置**”中查看特定于租户的数据位置信息。
 
@@ -38,7 +40,6 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 在 [Microsoft 联机服务条款 (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) 中查找有关客户数据的静态存储位置的合同承诺信息。
 
 对于 Azure Active Directory 数据位置，请访问 [AAD 数据地图](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
-
 
 如果客户的帐单邮寄地址在欧洲境外并且客户已订阅了Office 365 教育版，尽管是 OST 的“核心联机服务客户静态数据”的位置，Microsoft 可以在欧洲或北美内提供客户的 Office 365 租户，将客户数据传输到欧洲或北美以及将其存储在欧洲或北美的任何位置。  如果客户的帐单邮寄地址在欧洲境外并且客户已订阅了Office 365 教育版，尽管是 OST 的“核心联机服务客户静态数据”的位置，Microsoft 可以在欧盟内提供客户的 Office 365 租户，将客户数据传输到欧盟以及将其存储在欧盟的任何位置。
 

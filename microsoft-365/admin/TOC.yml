@@ -287,9 +287,9 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: 设置多重身份验证
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: 为 Office 2013 启用新式验证
+        - name: 为 Office 2013 启用新式身份验证
           href: security-and-compliance/enable-modern-authentication.md
-        - name: 安全的 Microsoft 商业高级版
+        - name: 获取Microsoft 365 商业高级版
           items:
             - name: 数据保护的先决条件
               href: ../business/pre-requisites-for-data-protection.md
@@ -297,6 +297,10 @@
               href: ../business/security-features.md
             - name: 增强威胁防护
               href: ../business/increase-threat-protection.md
+            - name: Microsoft Defender 防病毒 检测到的威胁
+              href: ../business/threats-detected-defender-av.md
+            - name: 查看检测到的威胁并执行操作
+              href: ../business/review-threats-take-action.md
             - name: 设置合规性功能
               href: ../business/set-up-compliance.md
         - name: 安全评分

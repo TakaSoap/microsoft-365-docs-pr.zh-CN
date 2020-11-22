@@ -12,21 +12,21 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: 2e0148a89a811fb910237469c42e136d0c744087
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993396"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376639"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
 ## <a name="introduction"></a>简介
-金融服务机构在严格的安全性、合规性和管理控制方面的需求几乎超过所有商业企业。 对数据、标识、设备和应用程序的保护不仅对其业务至关重要，而且受到美国证券交易委员会 (SEC)、金融业监管局 (FINRA)、联邦金融机构审查委员会 (FFIEC) 和商品期货交易委员会(CFTC) 等监管机构的合规要求和原则的制约。 此外，金融机构还受到《多德-弗兰克法案》和 2002 年《萨班斯-奥克斯利法案》等法律的约束。
+对数据、标识、设备和应用程序的保护不仅对其业务至关重要，而且受到美国证券交易委员会 (SEC)、金融业监管局 (FINRA)、联邦金融机构审查委员会 (FFIEC) 和商品期货交易委员会(CFTC) 等监管机构的合规要求和原则的制约。此外，金融机构还受到《多德-弗兰克法案》和 2002 年《萨班斯-奥克斯利法案》等法律的约束。
 
 在如今安全警戒加强、内部风险问题和公共数据遭到泄露的环境下，客户还要求金融机构提供高级别的安全保护，以便将个人数据和银行资产托付给他们。
 
-以往，对全面控制的需求直接影响和限制了金融机构用于实现内部和外部协作的 IT 系统和平台。 如今，金融服务业员工需要易于采用和使用的新式协作平台。 但是，金融服务在实现用户、团队和部门之间协作方面不能牺牲灵活性来确保安全与合规控制，从而实施保护策略以使用户和 IT 系统免遭威胁。
+以往，对全面控制的需求直接影响和限制了金融机构用于实现内部和外部协作的 IT 系统和平台。如今，金融服务业员工需要易于采用和使用的新式协作平台。但是，金融服务在实现用户、团队和部门之间协作方面不能牺牲灵活性来确保安全与合规控制，从而实施保护策略以使用户和 IT 系统免遭威胁。
 
 在金融服务业，配置和部署协作工具和安全控制时需考虑以下注意事项：
 - 常见组织协作和业务流程方案的风险评估
@@ -47,13 +47,13 @@ ms.locfileid: "48993396"
 
 作为 Microsoft 合作伙伴，Protiviti 参与了本文的撰写并提供了实质性反馈。
 
-以下可下载的插图是对本文的补充。 Woodgrove Bank 和 Contoso 用于演示如何应用本文中描述的功能来满足金融服务的常见监管要求。 可随时根据自己的使用情况来修改这些插图。 
+以下可下载的插图是对本文的补充。Woodgrove Bank 和 Contoso 用于演示如何应用本文中描述的功能来满足金融服务的常见监管要求。可随时根据自己的使用情况来修改这些插图。 
 
 **Microsoft 365 信息保护和合规性插图**
 
 | 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 更新时间：2020年 10 月|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/>英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)<br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
 
 
 ## <a name="empower-organizational-and-employee-productivity-by-using-microsoft-365-and-teams"></a>使用 Microsoft 365 和 Teams 来提高组织和员工的工作效率
@@ -62,7 +62,7 @@ ms.locfileid: "48993396"
 
 通过使用基于云的新式协作平台，员工可以选择并集成可提高工作效率的工具，并使他们能够找到敏捷的工作方式。 将 Teams 与保护组织的安全控制和信息管理策略结合使用可帮助员工高效地进行沟通和协作。
 
-Teams 为组织提供了一个协作中心。 这有助于让员工在常见的计划和项目上高效地工作。 Teams 允许团队成员进行 1:1 和多方聊天对话、协作和共同创作文档，以及存储和共享文件。 Teams 还通过集成的企业语音和视频来促进在线会议。 还可以使用 Microsoft Planner、Microsoft Dynamics 365、PowerApps、PowerBI 之类的 Microsoft 应用和第三方业务线应用程序来自定义 Teams。 Teams 旨在供内部团队成员使用，并允许可加入团队频道、参与聊天对话、访问存储文件和利用其他应用程序的外部用户使用
+Teams 为组织提供了一个协作中心。 这有助于让员工在常见的计划和项目上高效地工作。 Teams 允许团队成员进行 1:1 和多方聊天对话、协作和共同创作文档，以及存储和共享文件。 Teams 还通过集成的企业语音和视频来促进在线会议。 还可以使用 Microsoft Planner、Microsoft Dynamics 365、PowerApps、Power BI 之类的 Microsoft 应用和第三方业务线应用程序来自定义 Teams。 Teams 旨在供内部团队成员使用，并允许可加入团队频道、参与聊天对话、访问存储文件和利用其他应用程序的外部用户使用
 
 每个 Microsoft Team 由 Microsoft 365 组提供支持。 该组被视为众多 Office 365 服务（包括 Teams）的成员身份服务。 Microsoft 365 组用于安全区分“所有者”和“成员”，并控制对 Teams 中各种功能的访问。 在与适当的监管控制和定期管理的访问审查相结合时，Teams 仅允许成员和所有者利用授权频道和功能。
 
@@ -170,8 +170,8 @@ Identity Protection 通过利用 Microsoft 生态系统中基于启发、用户�
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>识别敏感数据并防止数据丢失
 Microsoft 365 允许所有组织通过一组强大的功能来识别组织内的敏感数据，包括：
 
-* **Microsoft 信息保护 (MIP)** ，用于基于用户的分类和对敏感数据进行自动化分类。
-* **Office 365 数据丢失防护 (DLP)** ，用于通过敏感数据类型（即正则表达式）和关键字及策略实施来自动识别敏感数据。
+* **Microsoft 信息保护 (MIP)**，用于基于用户的分类和对敏感数据进行自动化分类。
+* **Office 365 数据丢失防护 (DLP)**，用于通过敏感数据类型（即正则表达式）和关键字及策略实施来自动识别敏感数据。
 
 **[Microsoft 信息保护 (MIP)](../compliance/information-protection.md)** 使组织可以使用敏感度标签智能地对文档和电子邮件进行分类。 敏感度标签可由用户手动应用到 Microsoft Office 应用程序中的文档和 Outlook 中的电子邮件。 标签可自动应用文档标记、加密保护和权限管理实施。 还可以通过配置使用关键字和敏感数据类型（例如信用卡号、社会保险号码和标识号码）的策略来自动应用灵敏度标签，以便自动查找敏感数据并对其进行分类。
 
@@ -226,7 +226,7 @@ Microsoft 365 中的安全服务由 Intelligent Security Graph 提供支持。 �
 
 然后将保留标签发布到 SharePoint 或 OneDrive 站点、Exchange 邮箱和 Microsoft 365 组。 用户可以手动将保留标签应用于文档和电子邮件。 记录管理员可以使用智能来自动应用标签。 智能功能可基于 [90 多个内置的敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide)（如 ABA 路由号码、美国银行帐号或美国社会保险号码）。 还可以根据文档或电子邮件中的关键字或敏感数据（如信用卡号或其他个人身份信息）或基于 SharePoint 元数据对这些功能进行自定义。 对于不能通过手动或自动模式匹配轻松识别的数据，可以使用可训练分类器基于机器学习技术对文档进行智能分类。
  
-_ *证券交易委员会 (SEC)* * 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
+_ *证券交易委员会 (SEC)** 要求经纪人代理商和其他受监管的金融机构保留所有业务相关的通信。 这些要求适用于多种类型的通信和数据，包括电子邮件、文档、即时消息、传真等。 **SEC 条例 17a-4** 定义这些组织必须满足的条件，以便将记录存储在电子数据存储系统中。 2003 年，SEC 发布了一篇阐明这些要求的文稿。 其中包含以下条件：
 
 * 电子存储系统保存的数据必须是不可重写和不可擦除的。 这称为 WORM 要求（写入一次，多次读取）。
 * 在接到传票或其他法律命令时，存储系统必须能够存储超过条例要求的保留期的数据。
