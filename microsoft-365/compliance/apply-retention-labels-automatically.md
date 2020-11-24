@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 创建和自动发布保留标签，以便你可以自动应用标签来保留所需内容并删除不需要的内容
-ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+description: 创建保留标签和自动标记策略，以便你可以自动应用标签以保留需要的内容并删除不需要的内容
+ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931976"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385258"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自动应用保留标签来保留或删除内容
 
@@ -31,7 +31,7 @@ ms.locfileid: "48931976"
 > [!NOTE]
 > [规章记录](records-management.md#records)不支持这种情况。
 
-[保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合特定条件的内容。 此情况下，组织中的人员无需应用保留标签。 Microsoft 365 会代为操作。
+[保留标签](retention.md)最强大的功能之一是能够将其自动应用于符合指定条件的内容。在这种情况下，组织中的人员无需应用保留标签。Microsoft 365 会代为操作。
   
 自动应用保留标签的功能非常强大，这是因为：
   
@@ -53,7 +53,7 @@ ms.locfileid: "48931976"
 按照以下说明进行两个管理步骤。
 
 > [!NOTE]
-> "自动策略" 使用服务侧标记（带条件）自动应用保留标签。 执行以下操作时，还可使用标签策略自动应用保留标签： 
+> 自动策略使用带有条件的服务端标签来自动应用保留标签。执行以下操作时，你还可以使用标签策略自动应用保留标签： 
 >
 > - 将默认保留标签应用于 SharePoint 库、文件夹或文档集，以便自动标记该容器中未标记的内容
 >- 使用规则将保留标签应用于电子邮件
@@ -62,35 +62,35 @@ ms.locfileid: "48931976"
 
 ## <a name="before-you-begin"></a>准备工作
 
-组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。 如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+组织的全局管理员拥有创建和编辑保留标签及其策略的完全权限。如果你未以全局管理员的身份登录，请参阅[创建和管理保留策略和保留标签所需的权限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
 
 ## <a name="how-to-auto-apply-a-retention-label"></a>如何自动应用保留标签
 
-首先，创建你的保留标签。 然后创建 "自动策略" 以应用该标签。 如果已创建保留标签，请跳转到 [创建自动策略](#step-2-create-an-auto-apply-policy)。
+首先，创建你的保留标签。然后创建自动策略以应用该标签。如果已创建保留标签，请跳转到[创建自动策略](#step-2-create-an-auto-apply-policy)。
 
-导航说明取决于你是否正在使用[记录管理](records-management.md)。 针对这两种情况提供了说明。
+导航说明取决于你是否正在使用[记录管理](records-management.md)。针对这两种情况提供了说明。
 
 ### <a name="step-1-create-a-retention-label"></a>步骤 1：创建保留标签
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”
+        - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
         
     - 如果你没有使用记录管理：
-       - “ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”
+       - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
+    没有立即看到你的选项？请首先选择“**全部显示**”。 
 
-2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
+2. 按照向导中的提示进行操作。如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
+    - 若要使用保留标签来声明记录，请选择“**将项目标记为记录**”，或者“**将项目标记为合规性记录**”。有关详细信息，请参阅 [配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“ **将此标签自动应用到特定的内容类型** ”，然后选择“ **完成** ”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
+3. 创建标签后，你会看到用于发布标签、自动应用标签或 仅保存标签的选项：请选择“**将此标签自动应用到特定的内容类型**”，然后选择“**完成**”以启动“创建自动标记向导”，该向导将直接带你跳转到以下过程中的第 2 步。
 
-若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>步骤 2：创建自动应用策略
@@ -99,13 +99,13 @@ ms.locfileid: "48931976"
 
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
-    - 如果你正在使用记录管理：“ **信息治理** ”：
+    - 如果你正在使用记录管理：“**信息治理**”：
         - **“解决方案”** > **“记录管理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
     
     - 如果你没有使用记录管理：
-        - **“解决方案”** > **“信息治理”** > **“标签策略”** 选项卡 > **“自动应用标签”**
+        - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**自动应用标签**”
     
-    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
+    没有立即看到你的选项？请首先选择“**全部显示**”。 
 
 2. 按照“创建自动标记向导”中的提示进行操作。
     
@@ -128,22 +128,26 @@ ms.locfileid: "48931976"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>将标签自动应用于包含特定类型敏感信息的内容
 
-为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。 每个策略模板都是预配置的，用于查找特定类型的敏感信息。 例如，此处显示的模板查找来自“ **隐私** ”类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息（PII）数据模板** ：
+为敏感信息创建自动应用保留标签策略时，可看到与创建数据丢失防护 (DLP) 策略时相同的策略模板列表。每个策略模板都是预配置的，用于查找特定类型的敏感信息。例如，此处显示的模板查找来自“**隐私**”类别的美国 ITIN、SSN 和护照号码，以及 **美国个人身份信息 (PII) 数据模板**：
 
 ![包含敏感信息类型的策略模板](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 
-若要了解有关敏感信息类型的详细信息，请参阅“[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)”。
+若要了解有关敏感信息类型的详细信息，请参阅[敏感信息类型实体定义](sensitive-information-type-entity-definitions.md)。
 
-选择策略模板后，可添加或删除任意类型的敏感信息，且可更改实例计数和匹配准确度。 在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
+选择策略模板后，既可以添加或删除任意类型敏感信息，也可以更改实例计数和匹配准确度。在下面的示例屏幕截图中，保留标签将只会在以下情况下自动应用：
   
-- 检测到的敏感信息类型具有至少 75 的匹配准确度（或可信度）。 许多敏感信息类型都由多个模式定义，其中具有较高匹配准确度的模式需要发现较多证据（如关键字、日期或地址），而具有较低匹配准确度的模式需要较少的证据。 **最小** 匹配准确度越低，内容越容易与条件匹配。
+- 检测到的敏感信息类型的匹配准确度（或可信度）至少为 75。许多敏感信息类型都是通过多个模式进行定义，其中模式的匹配准确度越高，需要发现的证据（如关键字、日期或地址）就越多，而模式的匹配准确度越低，需要发现的证据就越少。**最小** 匹配准确度越低，内容就越容易与条件匹配。
 
-- 内容包含 1 到 9 个这三种敏感信息类型的实例。 可删除“ **至** ”值，将其更改为“ **任何** ”。
+- 内容包含的这三种类型敏感信息的实例数介于 1 和 9 个之间。可删除 **最大** 值，这样就会变为“**任意**”。
 
 有关这些选项的详细信息，请参阅 DLP 文档中的以下指南“[调整规则，使它们更易或更难匹配](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)”。
     
 ![用于确定敏感信息类型的选项](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
-  
+
+使用敏感信息类型自动应用保留标签时要考虑的事项：
+
+- 新增项目和已修改项目可自动添加标签。
+
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>将标签自动应用于包含关键字或可搜索属性的内容
 
 可使用包含特定字词、短语或可搜索属性值的查询对内容自动应用标签。可使用搜索运算符（如 AND、OR 和 NOT）优化查询。
@@ -152,27 +156,75 @@ ms.locfileid: "48931976"
 
 有关使用关键字查询语言 (KQL) 的详细信息，请参阅[关键字查询语言 (KQL) 语法参考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
-基于查询的标签使用搜索索引来标识内容。 有关可使用的可搜索属性的详细信息，请参阅：
+基于查询的自动应用策略使用与电子数据展示内容搜索相同的搜索索引来识别内容。 有关可使用的可搜索属性的详细信息，请参阅[内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
 
-- [内容搜索的关键字查询和搜索条件](keyword-queries-and-search-conditions.md)
-- [已爬网和托管属性在 SharePoint Server 中的概述](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+使用关键字或可搜索属性自动应用保留标签时需要考虑的一些事项：
 
-> [!NOTE]
-> 尽管 SharePoint 托管属性支持别名，但在配置保留标签时，请不要使用它们。 始终指定托管属性的实际名称，例如“RefinableString01”。
+- 对于 SharePoint、OneDrive 和 Exchange，新增项目、已修改项目和现有项目将自动添加标签。
+
+- 对于 SharePoint，这些 KQL 查询不支持爬网属性和自定义属性，你必须仅使用预定义的托管属性。 但是，你可以在租户级别使用与默认情况下启用为精简条件的预定义托管属性（RefinableDate00-19、RefinableString00-99、RefinableInt00-49、RefinableDecimals00-09 和 RefinableDouble00-09）的映射。 有关详细信息，请参阅 [SharePoint Server 中的已爬网和托管属性概述](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)，有关说明，请参阅[创建新的托管属性](https://docs.microsoft.com/sharepoint/manage-search-schema#create-a-new-managed-property)。
+
+- 如果将自定义属性映射到其中一个精简条件属性，请等待 24 小时，然后再在 KQL 查询中将其用于保留标签。
+
+- 虽然 SharePoint 托管属性可以使用别名重命名，但请勿将它们用于标签中的 KQL 查询。 始终指定托管属性的实际名称，例如“RefinableString01”。
+
+- 若要搜索包含空格或特殊字符的值，请使用双引号 (`" "`) 来包含短语；例如，`subject:"Financial Statements"`。
+
+- 使用 *DocumentLink* 属性而不是 *Path* 来基于其 URL 匹配项目。 
+
+- 不支持后缀通配符搜索（如 `*cat` ）或子字符串通配符搜索（如 `*cat*`）。 但是，支持前缀通配符搜索（如 `cat*`）。
+
+- 请注意，部分索引项可能会导致未对预期项目进行标记，或者在你使用 Not 运算符时不对你希望从标签中排除的项目进行标记。 有关详细信息，请参阅[内容搜索中的部分索引项](partially-indexed-items-in-content-search.md)。
+
 
 示例查询：
 
 | 工作负载 | 示例 |
 |:-----|:-----|
-|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `subject:"Financial Statements"` |
 |Exchange   | `recipients:garthf@contoso.com` |
-|SharePoint | `contenttype:contract` |
-|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+|SharePoint | `contenttype:document` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:document`|
+|Exchange 或 SharePoint | `"customer information" OR "private"`|
+
+更复杂的示例：
+
+当 Word 文档或 Excel 电子表格包含关键字 **password**、**passwords** 或 **pw** 时，以下 SharePoint 查询将识别这些文件：
+
+```
+(password OR passwords OR pw) AND (filetype:doc* OR filetype:xls*)
+```
+
+以下 Exchange 查询可识别电子邮件中包含单词 **nda** 或短语 **保密协议** 的任何 Word 文档或 PDF：
+
+```
+(nda OR "non disclosure agreement") AND (attachmentnames:.doc* OR attachmentnames:.pdf)
+```
+
+以下 SharePoint 查询可识别包含信用卡号的文档： 
+
+```
+sensitivetype:"credit card number"
+```
+
+以下查询包含一些典型关键字，可帮助识别包含法律内容的文档或电子邮件：
+
+```
+ACP OR (Attorney Client Privilege*) OR (AC Privilege)
+```
+
+以下查询包含一些典型关键字，可帮助识别人力资源相关的文档或电子邮件： 
+
+```
+(resume AND staff AND employee AND salary AND recruitment AND candidate)
+```
+
+请注意，最后一个示例使用的最佳做法是始终在关键字之间包含运算符。 两个关键字（或两个 property:value 表达式）之间的空格与使用 AND 相同。 通过始终添加运算符，可更轻松地看出此示例查询将仅识别包含所有这些关键字的内容，而不是包含任何关键字的内容。 如果打算识别包含任何关键字的内容，请指定 OR，而不是 AND。 如本示例所示，当你始终指定运算符时，正确解读查询更为简单。 
 
 ##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 会议记录
 
 > [!NOTE]
-> 保留和删除 Teams 会议记录将在预览中进行，记录保存到 OneDrive 或 SharePoint 前，将无法正常工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
+> 保留和删除 Teams 会议记录的功能目前处于预览阶段，在将记录保存到 OneDrive 或 SharePoint 前，该功能将无法正常工作。 有关详细信息，请参阅[使用 OneDrive for Business 和 SharePoint 或 Stream 进行会议记录](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
 
 若要确定存储在用户的 OneDrive 帐户或 SharePoint 中的 Microsoft Teams 会议记录，请为 **关键字查询编辑器** 指定以下内容：
 
@@ -185,12 +237,12 @@ ProgID:Media AND ProgID:Meeting
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可训练分类器向内容自动应用标签
 
-选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含 **简历** 、 **源代码** 、 **有针对性的骚扰** 、 **侮辱** 和 **威胁** ：
+选择可训练分类器的选项后，可选择其中一个内置分类器或选择自定义分类器。 内置分类器包含 **简历**、**源代码**、**有针对性的骚扰**、**侮辱** 和 **威胁**：
 
 ![选择可训练分类器](../media/retention-label-classifers.png)
 
 > [!CAUTION]
-> 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用 **针对性的骚扰** 、 **侮辱** 和 **猥亵** 内置分类器。
+> 我们正在弃用 **冒犯性语言** 内置分类器，因为它会生成大量误报。 请不要使用此内置分类器，如果你正在使用它，则应将其业务流程中移出。 我们建议改用 **针对性的骚扰**、**侮辱** 和 **猥亵** 内置分类器。
 
 要通过此选项自动应用标签，SharePoint 网站和邮箱必须至少有 10 MB 的数据。
 
@@ -199,13 +251,17 @@ ProgID:Media AND ProgID:Meeting
 > [!TIP]
 > 如果你将可训练的分类器用于 Exchange，请参阅最近发布的[如何重新培训内容资源管理器（预览版）](classifier-how-to-retrain-content-explorer.md)中的分类器。
 
+使用可训练的分类器自动应用保留标签时要考虑的事项：
+
+- 新增项目和已修改项目可以自动添加标签，以及过去六个月的现有项目。
+
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留标签需要多长时间才能生效
 
 自动应用保留标签时，可能需要等待长达 7 天，才能将保留标签应用于与条件匹配的所有现有内容。
   
 ![自动应用标签生效时间关系图](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
 
-如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态** 。 如果看到“ **关闭(错误)** ”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
+如果 7 天后未显示期望的标签，请从合规中心的 **标签策略** 页面中检查自动应用策略的 **状态**。 如果看到“**关闭(错误)**”状态，并且在位置详细信息中看到一条消息显示部署策略（针对 SharePoint）或尝试重新部署策略（针对 OneDrive）所用的时间超过预期，请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重新尝试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -220,7 +276,7 @@ ProgID:Media AND ProgID:Meeting
 在编辑保留标签或自动应用策略，并且该保留标签已应用到内容时，更新后的设置将自动应用于此内容以及新标识的内容。
 
 某些设置无法在创建并保存标签或策略后更改，包括：
-- 除保留期外的保留设置，除非已将标签配置为根据创建的时间保留或删除内容。
+- 保留标签和策略名称以及保留期以外的其他保留设置。 但是，如果保留期基于项目的标记时间，则不能更改保留期。
 - 用于将项目标记为记录的选项。
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>锁定策略以防止更改

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留策略可以非常高效地控制用户使用电子邮件、文档和对话生成的内容。保留所需内容并删除不需要的内容。
-ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4479731af4787a6ef77dc48d27e5dfb60834d9c5
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376575"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385248"
 ---
 # <a name="create-and-configure-retention-policies"></a>创建和配置保留策略
 
@@ -99,9 +99,9 @@ Teams 不只是聊天和频道消息。如果你有从 Microsoft 365 组（以�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留策略
 
 > [!NOTE]
-> Yammer 的保留策略推出预览版。如果你还没有看到 Yammer 的新位置，请几周后重试。
+> Yammer 的保留策略推出预览版。 如果你还没有看到 Yammer 的新位置，请几周后重试。
 >
-> 若要使用此功能，Yammer 网络必须为[“本机模式”](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而不是“混合模式”。
+> 若要使用此功能，Yammer 网络必须为“[本机模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)”，而不是“混合模式”。
 
 1. 从 [Microsoft 365 合规中心](https://compliance.microsoft.com/)中，选择 **策略** > **保留**。
 
@@ -193,7 +193,7 @@ Yammer 不仅仅是社区消息和私人消息。若要保留和删除 Yammer �
 
 若要保留或删除 Microsoft 365 组（以前称为 Office 365 组）的内容，请使用 **Microsoft 365 组** 位置。尽管 Microsoft 365 组有一个 Exchange 邮箱，但包含整个 **Exchange 邮件** 位置的保留策略不会包含 Microsoft 365 组邮箱中的内容。此外，尽管 **Exchange 邮件** 位置最初允许你指定要包含或排除的组邮箱，但当你尝试保存保留策略时，会收到错误：“RemoteGroupMailbox”不是 Exchange 位置的有效选择。
 
-应用于 Microsoft 365 组的保留策略包含组的邮箱和 SharePoint 团队网站。 存储在 SharePoint 团队网站中的文件与此位置有关，但 Teams 聊天或 Teams 频道与此位置无关，它们拥有自己的保留策略位置。
+应用于 Microsoft 365 组的保留策略包括组邮箱和 SharePoint 团队网站。已存储在 SharePoint 团队网站中的文件包含此位置，但不包含 Teams 聊天或 Teams 频道消息，这些消息具有自己的保留策略位置。
 
 ### <a name="configuration-information-for-skype-for-business"></a>Skype for Business 的配置信息
 
@@ -227,7 +227,7 @@ Yammer 不仅仅是社区消息和私人消息。若要保留和删除 Yammer �
 
 配置保留策略时，可选择无限期地保留内容，也可将内容保留特定天数、月数或年限。保留期限是从内容创建的时间开始计算，而不是从应用保留策略的时间开始计算。
 
-对于保留期的开始，你还可以选择内容创建的时间，或者上次修改内容的时间（仅支持文件和 SharePoint、OneDrive 和 Office 365 位置）。
+对于保留期的开始，你还可以选择内容创建的时间，或者上次修改内容的时间（仅支持文件和 SharePoint、OneDrive 和 Microsoft 365 组）。
 
 示例：
 
@@ -279,6 +279,9 @@ Yammer 不仅仅是社区消息和私人消息。若要保留和删除 Yammer �
 > 在这种情况下，如果不希望“**所有**”这一位置设置受制于保留策略，请关闭位置。或者，指定将不受该策略约束的排除项。
 
 ## <a name="updating-retention-policies"></a>更新保留策略
+
+某些设置无法在创建并保存保留策略后更改，包括：
+- 保留策略名称和保留期以外的其他保留设置以及何时开始保留期。
 
 如果你编辑保留策略，并且项目已遵循保留策略中的原始设置，则除了新识别的项目之外，更新后的设置将自动应用于此项目。
 
