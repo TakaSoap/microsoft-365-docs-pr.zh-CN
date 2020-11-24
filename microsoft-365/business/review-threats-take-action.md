@@ -1,5 +1,5 @@
 ---
-title: 查看检测到的威胁并采取措施
+title: 查看检测到的威胁并执行操作
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何查看和管理 Windows 10 设备上的 Microsoft Defender 防病毒检测到的威胁。
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376678"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385236"
 ---
-# <a name="review-detected-threats-and-take-action"></a>查看检测到的威胁并采取措施
+# <a name="review-detected-threats-and-take-action"></a>查看检测到的威胁并执行操作
 
 一旦检测到恶意文件或软件，Microsoft Defender 防病毒程序将阻止它运行，并阻止其运行。 在启用云提供保护的情况下，新检测到的威胁将添加到防病毒和反恶意软件引擎中，以便其他设备和用户也受到保护。
 
@@ -58,7 +58,7 @@ Microsoft Defender 防病毒检测并防止以下威胁类型：
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>在 " **活动威胁** " 页上管理威胁检测
 
-以下过程适用于拥有 Microsoft 365 商业版的客户。 [在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)，[必须对 Windows 10 设备进行保护](/microsoft-365/business/secure-win-10-pcs)和注册。
+以下过程适用于拥有 Microsoft 365 商业高级版的客户。 [在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)，[必须对 Windows 10 设备进行保护](/microsoft-365/business/secure-win-10-pcs)和注册。
 
 > [!NOTE]
 > **Microsoft Defender 防病毒** 卡和 **活动威胁** 页面将分阶段推出，因此你可能无法立即访问它们。
