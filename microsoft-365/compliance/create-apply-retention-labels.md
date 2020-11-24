@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 介绍了如何创建和发布保留标签，以便能够在应用中应用它们，从而保留所需内容，并删除不需要内容
-ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920336"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385184"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>创建保留标签并在应用中应用它们
 
@@ -60,24 +60,24 @@ ms.locfileid: "48920336"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “ **解决方案** ” > “ **记录管理** ” > “ **文件计划** ”选项卡 > + “ **创建标签** ” > “ **保留标签** ”
+        - “**解决方案**” > “**记录管理**” > “**文件计划**”选项卡 > + “**创建标签**” > “**保留标签**”
         
     - 如果你没有使用记录管理：
-       - “ **解决方案** ” > “ **信息治理** ” > “ **标签** ”选项卡 > +“ **创建标签** ”
+       - “**解决方案**” > “**信息治理**” > “**标签**”选项卡 > +“**创建标签**”
     
-    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
+    没有立即看到你的选项？ 首先选择“**全部显示**”。 
 
 2. 按照向导中的提示进行操作。 如果你正在使用记录管理：
     
     - 有关文件计划描述符的信息，请参阅[使用文件计划管理保留标签](file-plan-manager.md)
     
-    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”** ，或者 **“将项目标记为合规性记录”** 。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
+    - 若要使用保留标签来声明记录，请选择 **“将项目标记为记录”**，或者 **“将项目标记为合规性记录”**。 有关详细信息，请参阅[配置保留标签以声明记录](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“ **现在仅保存标签** ”，然后选择“ **完成** ”。
+3. 创建标签后，你会看到发布标签、自动应用标签或仅保存标签的选项，请选择“**现在仅保存标签**”，然后选择“**完成**”。
 
 4. 重复这些步骤以创建更多标签。
 
-若要编辑现有标签，请将其选中，然后选择“ **编辑标签** ”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有标签，请将其选中，然后选择“**编辑标签**”来启动“编辑保留向导”，这个向导使你能够更改来自第 2 步的标签说明和任何 [符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 ### <a name="step-2-publish-retention-labels"></a>第 2 步：发布保留标签
 
@@ -86,18 +86,18 @@ ms.locfileid: "48920336"
 1. 在 [Microsoft 365 合规中心](https://compliance.microsoft.com/)，导航到以下位置之一：
     
     - 如果你正在使用记录管理：
-        - “ **解决方案** ” > “ **记录管理** ”> >“ **标签策略** ”选项卡 >“ **发布标签** ”
+        - “**解决方案**” > “**记录管理**”> >“**标签策略**”选项卡 >“**发布标签**”
     
     - 如果你没有使用记录管理：
-        - “ **解决方案** ” > “ **信息治理** ” > “ **标签策略** ”选项卡 >“ **发布标签** ”
+        - “**解决方案**” > “**信息治理**” > “**标签策略**”选项卡 >“**发布标签**”
     
-    没有立即看到你的选项？ 首先选择“ **全部显示** ”。 
+    没有立即看到你的选项？ 首先选择“**全部显示**”。 
 
 2. 按照向导中的提示进行操作。
     
     有关保留标签支持的位置的信息，请参阅[保留标签和位置](retention.md#retention-label-policies-and-locations)部分。 
 
-若要编辑现有的保留标签策略（策略类型是“ **发布** ”）"，请选择它，然后选择“ **编辑** ”选项，以启动“编辑保留策略”。 此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
+若要编辑现有的保留标签策略（策略类型是“**发布**”）"，请选择它，然后选择“**编辑**”选项，以启动“编辑保留策略”。 此向导可用于更改来自第 2 步的策略描述和任何[符合条件的设置](#updating-retention-labels-and-their-policies)。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>当保留标签可应用时
@@ -111,7 +111,7 @@ ms.locfileid: "48920336"
 ![手动标签生效时间关系图](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-如果 7 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态** 。 如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
+如果 7 天后未显示标签，请从合规中心的 **标签策略** 页面中检查标签策略的 **状态**。 如果看到 **关闭（错误）** 状态，并且在位置详细信息中看到消息，表明其部署策略（适用于 SharePoint）所用时间超过预期，或者你想尝试重新部署策略（适用于 OneDrive），请尝试运行 [RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令，重试策略分发：
 
 1. [连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -271,7 +271,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
