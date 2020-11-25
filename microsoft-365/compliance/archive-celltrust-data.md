@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以将连接器设置为将 CellTrust 数据从 Globanet 导入和存档到 Microsoft 365。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据。 存档此数据后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理第三方数据。
-ms.openlocfilehash: c5ed8af29ad3b81b19e80cfe98702b5e357d9815
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 2952e4e36a73b53fba61af9f38341a0b69136363
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002739"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407266"
 ---
-# <a name="set-up-a-connector-to-archive-celltrust-data-preview"></a>设置连接器以存档 CellTrust 数据 (预览) 
+# <a name="set-up-a-connector-to-archive-celltrust-data"></a>设置连接器以存档 CellTrust 数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将数据从 CellTrust 平台导入并存档到 Microsoft 365 组织中的用户邮箱。 Globanet 提供了一个 [CellTrust](https://globanet.com/celltrust/) 连接器，该连接器配置为定期捕获第三方数据源 (中的项目) 并将这些项目导入到 Microsoft 365。 连接器将 SMS 消息的内容从 CellTrust 帐户转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -49,13 +49,13 @@ ms.locfileid: "49002739"
 
 第一步是访问 Microsoft 365 合规性中心中的 **数据连接器** ，并为 CellTrust 数据创建连接器。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 " **数据连接器** \> **CellTrust** "。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然后单击 " **数据连接器** \> **CellTrust**"。
 
-2. 在 " **CellTrust** 产品说明" 页上，单击 " **添加连接器** "。
+2. 在 " **CellTrust** 产品说明" 页上，单击 " **添加连接器**"。
 
-3. 在 " **服务条款** " 页上，单击 " **接受** "。
+3. 在 " **服务条款** " 页上，单击 " **接受**"。
 
-4. 输入标识连接器的唯一名称，然后单击 " **下一步** "。
+4. 输入标识连接器的唯一名称，然后单击 " **下一步**"。
 
 5. 登录到您的 Merge1 帐户以配置连接器。
 
@@ -75,7 +75,7 @@ ms.locfileid: "49002739"
 
    您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要提供管理员同意，必须使用 Microsoft 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 
-3. 单击 " **下一步** "，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
+3. 单击 " **下一步**"，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
 
 ## <a name="step-4-monitor-the-celltrust-connector"></a>步骤4：监视 CellTrust 连接器
 
@@ -85,7 +85,7 @@ ms.locfileid: "49002739"
 
 2. 单击 " **连接器** " 选项卡，然后选择 " **CellTrust** " 连接器以显示弹出页面，其中包含有关连接器的属性和信息。
 
-3. 在 " **连接器状态与源** " 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 " **连接器状态与源**" 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 

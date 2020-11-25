@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 无论是将新的新解决方案添加到合规中心，基于反馈更新现有功能，还是推出全新和更新的文档，Microsoft 365 都可帮助您保持在不断变化的合规性水平的基础上。 了解我们在本月所做的操作。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376605"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407336"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合规中心更新信息
 
@@ -93,7 +93,7 @@ ms.locfileid: "49376605"
 
 ### <a name="sensitivity-labels"></a>敏感度标签
 
-[为美国政府客户提供支持](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 现在，仅对 Azure 信息保护统一标签客户端和扫描程序支持仅适用于 GCC、GCC 高和 DoD 客户的敏感度标签。
+[为美国政府客户提供支持](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 现在，仅对 Azure 信息保护统一标签客户端和扫描程序支持仅适用于 GCC、GCC 高和 DoD 客户的敏感度标签。
 
 ### <a name="trainable-classifiers"></a>可训练的分类器
 

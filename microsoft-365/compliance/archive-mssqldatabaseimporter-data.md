@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理员可以设置连接器以导入和存档 MS SQL 数据库中的数据。 此连接器允许您在 Microsoft 365 中存档第三方数据源中的数据。 存档此数据后，您可以使用合规性功能（如法律封存、内容搜索和保留策略）来管理第三方数据。
-ms.openlocfilehash: 6e3a4a79845539745bec233acbfaeff22f4ad4a9
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 576ba38616b9a6a9c1b0e7c78c5e8d03c5a0e9df
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002741"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407296"
 ---
-# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database-preview"></a>设置一个连接器以存档 MS SQL Database (preview 中的数据) 
+# <a name="set-up-a-connector-to-archive-data-from-ms-sql-database"></a>设置连接器以存档 MS SQL 数据库中的数据
 
 使用 Microsoft 365 合规性中心中的 Globanet 连接器将 MS SQL Database 中的数据导入并存档到 Microsoft 365 组织中的用户邮箱。 Globanet 为您提供了 MS SQL Database 进口商连接器，该连接器配置为使用 XML 配置文件从数据库捕获项目并将这些项目导入到 Microsoft 365。 连接器将内容从 MS SQL 数据库转换为电子邮件格式，然后将这些项目导入到 Microsoft 365 中的用户邮箱中。
 
@@ -49,13 +49,13 @@ ms.locfileid: "49002741"
 
 第一步是访问 Microsoft365 合规性中心中的 " **数据连接器** " 页，并为 MS SQL 数据库创建一个连接器。
 
-1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击 " **数据连接器**  >  **MS SQL 数据库导入** 程序"。
+1. 转到 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然后单击 "**数据连接器**  >  **MS SQL 数据库导入** 程序"。
 
-2. 在 " **MS SQL 数据库导入** 程序产品说明" 页上，单击 " **添加新连接器** "。
+2. 在 " **MS SQL 数据库导入** 程序产品说明" 页上，单击 " **添加新连接器**"。
 
-3. 在 " **服务条款** " 页上，单击 " **接受** "。
+3. 在 " **服务条款** " 页上，单击 " **接受**"。
 
-4. 输入标识连接器的唯一名称，然后单击 " **下一步** "。
+4. 输入标识连接器的唯一名称，然后单击 " **下一步**"。
 
 5. 登录到您的 Merge1 帐户以配置连接器。
 
@@ -75,7 +75,7 @@ ms.locfileid: "49002741"
 
    您的组织必须同意允许 Office 365 导入服务访问组织中的邮箱数据。 若要提供管理员同意，必须使用 Microsoft 365 全局管理员的凭据登录，然后接受同意请求。 如果你未以全局管理员身份登录，则可以转到 [此页](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，并使用全局管理员凭据登录以接受请求。
 
-3. 单击 " **下一步** "，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
+3. 单击 " **下一步**"，查看设置，然后转到 " **数据连接器** " 页，查看新连接器的导入过程的进度。
 
 ## <a name="step-4-monitor-the-ms-sql-database-importer-connector"></a>步骤4：监视 MS SQL 数据库导入器连接器
 
@@ -83,9 +83,9 @@ ms.locfileid: "49002741"
 
 1. 转到 <https://compliance.microsoft.com/> 并单击左侧导航中的 " **数据连接器** "。
 
-2. 单击 " **连接器** " 选项卡，然后选择 **MS SQL 数据库****导入** 器连接器以显示弹出页面，其中包含有关连接器的属性和信息。
+2. 单击 "**连接器**" 选项卡，然后选择 **MS SQL 数据库****导入** 器连接器以显示弹出页面，其中包含有关连接器的属性和信息。
 
-3. 在 " **连接器状态与源** " 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
+3. 在 " **连接器状态与源**" 下，单击 " **下载日志** " 链接以打开 " (" 或 "保存") 连接器的状态日志。 此日志包含已导入到 Microsoft 云的数据。
 
 ## <a name="known-issues"></a>已知问题
 
