@@ -126,9 +126,9 @@ Get-OrganizationConfig
     ![Focusedinbox 工资单](../../media/focusedinbox-transport-rule.PNG)
 
 > [!NOTE]
-> 此示例中的邮件标头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。
+> 此示例中的邮件头值文本为 **X-MS-Exchange-Organization-BypassFocusedInbox**。
   
-## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，将电子邮件定向到所有用户的“重点”视图
+## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>使用 PowerShell 创建传输规则，为所有用户将电子邮件定向到“重点”收件箱视图
 
 1. [使用远程 PowerShell 连接到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
 

@@ -90,9 +90,9 @@ PCI 安全标准委员会提供的信息是了解具体合规要求的好地方�
 
 目前，OneDrive for Business 和 SharePoint 在线仅在美国（US）符合 PCI-DSS 标准。Microsoft 将评估美国以外地区的要求和时间表，并在其他地区加入路线图时提供更新。
 
-**OneDrive for Business 和 SharePoint Online 的范围内是什么？**
+**什么是 OneDrive for Business 和 SharePoint Online 的范围内？**
 
-目前，只有上载到 OneDrive for Business 和 SharePoint Online 的文件和文档符合 PCI DSS标准。
+目前，只有上载到 OneDrive for Business 和 SharePoint Online 的文件和文档符合 PCI DSS 标准。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合规性管理器评估风险
 
