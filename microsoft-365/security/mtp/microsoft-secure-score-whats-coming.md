@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374003"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409219"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>即将推出的 Microsoft 安全分数
 
@@ -33,6 +33,17 @@ Microsoft 安全分数可在 https://security.microsoft.com/securescore [microso
 ## <a name="proposed-changes"></a>建议的更改
 
 我们在不久的将来进行一些更改，让 [Microsoft 安全](microsoft-secure-score.md) 成为你的安全状态的更好代表并提高可用性。 你的分数和可能的最大分数可能会发生变化。
+
+### <a name="december-2020"></a>2020年12月
+
+为 Microsoft defender 的终结点 (之前为 microsoft Defender ATP) 添加6个与帐户相关的改进操作：
+
+- 将 "最短密码长度" 设置为 "14 个或更多字符"
+- 将 "强制密码历史" 设置为 "24 个或更多密码 (s) "
+- 将 "密码最长使用期限" 设置为 "60 个或更少的天，但不是 0"
+- 将 "密码最短使用期限" 设置为 "1 天或更 (s") "
+- 禁用内置管理员帐户
+- 禁用内置来宾帐户
 
 ### <a name="november-2020"></a>2020 年 11 月
 

@@ -1,6 +1,6 @@
 ---
 title: 优先考虑 Microsoft 365 Defender 中的事件
-description: 了解如何在 Microsoft 365 Defender 中优先处理事件队列中的事件
+description: 了解如何在 Microsoft 365 Defender 中筛选事件队列中的事件
 keywords: 事件, 队列, 概述, 设备, 标识, 用户, 邮箱, 电子邮件, 事件
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877215"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409251"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>优先考虑 Microsoft 365 Defender 中的事件
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877215"
 
 
 
-Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相关警报和调查聚合到一个事件中。 Microsoft 365 Defender 还会触发针对活动的唯一警报，这些活动仅在 Microsoft 365 Defender 跨整个房地产和产品套件提供的端到端可见性时，才会被标识为恶意活动。 通过执行此操作，Microsoft 365 Defender narrates 了更广泛的攻击情景，使安全操作分析员能够了解并处理整个组织中的复杂威胁。
+Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相关警报和调查聚合到一个事件中。 Microsoft 365 Defender 还会触发针对活动的唯一警报，这些活动仅在 Microsoft 365 Defender 跨整个房地产和产品套件提供的端到端可见性时，才会被标识为恶意活动。 此视图为安全操作分析员提供了更广泛的攻击情景，这有助于他们更好地了解和处理整个组织中的复杂威胁。
 
 
 “事件队列”显示在设备、用户和邮箱中标记的事件的集合。 它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。
@@ -100,8 +100,7 @@ Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相
 ### <a name="status"></a>状态
 可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。
 
->[!IMPORTANT]
->分类、设备组、调查状态和 OS 平台筛选器目前仅适用于公共预览版。
+
 
 
 ## <a name="next-steps"></a>后续步骤
