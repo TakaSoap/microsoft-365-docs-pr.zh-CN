@@ -1,6 +1,6 @@
 ---
 title: 优先考虑 Microsoft 365 Defender 中的事件
-description: 了解如何在 Microsoft 365 Defender 中优先处理事件队列中的事件
+description: 了解如何在 Microsoft 365 Defender 中筛选事件队列中的事件
 keywords: 事件, 队列, 概述, 设备, 标识, 用户, 邮箱, 电子邮件, 事件
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,95 +21,94 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877215"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409251"
 ---
-# <a name="prioritize-incidents-in-microsoft-365-defender"></a><span data-ttu-id="a7e98-104">优先考虑 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="a7e98-104">Prioritize incidents in Microsoft 365 Defender</span></span>
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a><span data-ttu-id="5bb9e-104">优先考虑 Microsoft 365 Defender 中的事件</span><span class="sxs-lookup"><span data-stu-id="5bb9e-104">Prioritize incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="a7e98-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="a7e98-105">**Applies to:**</span></span>
-- <span data-ttu-id="a7e98-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a7e98-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="5bb9e-105">**适用于：**</span><span class="sxs-lookup"><span data-stu-id="5bb9e-105">**Applies to:**</span></span>
+- <span data-ttu-id="5bb9e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="5bb9e-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="a7e98-107">Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相关警报和调查聚合到一个事件中。</span><span class="sxs-lookup"><span data-stu-id="a7e98-107">Microsoft 365 Defender applies correlation analytics and aggregates all related alerts and investigations from different products into one incident.</span></span> <span data-ttu-id="a7e98-108">Microsoft 365 Defender 还会触发针对活动的唯一警报，这些活动仅在 Microsoft 365 Defender 跨整个房地产和产品套件提供的端到端可见性时，才会被标识为恶意活动。</span><span class="sxs-lookup"><span data-stu-id="a7e98-108">Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire estate and suite of products.</span></span> <span data-ttu-id="a7e98-109">通过执行此操作，Microsoft 365 Defender narrates 了更广泛的攻击情景，使安全操作分析员能够了解并处理整个组织中的复杂威胁。</span><span class="sxs-lookup"><span data-stu-id="a7e98-109">By doing so, Microsoft 365 Defender narrates the broader attack story, allowing a security operations analyst to understand and deal with complex threats across the organization.</span></span>
+<span data-ttu-id="5bb9e-107">Microsoft 365 Defender 应用相关分析，并将来自不同产品的所有相关警报和调查聚合到一个事件中。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-107">Microsoft 365 Defender applies correlation analytics and aggregates all related alerts and investigations from different products into one incident.</span></span> <span data-ttu-id="5bb9e-108">Microsoft 365 Defender 还会触发针对活动的唯一警报，这些活动仅在 Microsoft 365 Defender 跨整个房地产和产品套件提供的端到端可见性时，才会被标识为恶意活动。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-108">Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility that Microsoft 365 Defender has across the entire estate and suite of products.</span></span> <span data-ttu-id="5bb9e-109">此视图为安全操作分析员提供了更广泛的攻击情景，这有助于他们更好地了解和处理整个组织中的复杂威胁。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-109">This view gives your security operations analyst the broader attack story, which helps them better understand and deal with complex threats across the organization.</span></span>
 
 
-<span data-ttu-id="a7e98-110">“事件队列”显示在设备、用户和邮箱中标记的事件的集合。</span><span class="sxs-lookup"><span data-stu-id="a7e98-110">The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes.</span></span> <span data-ttu-id="a7e98-111">它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。</span><span class="sxs-lookup"><span data-stu-id="a7e98-111">It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.</span></span>
+<span data-ttu-id="5bb9e-110">“事件队列”显示在设备、用户和邮箱中标记的事件的集合。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-110">The **Incidents queue** shows a collection of incidents that were flagged from across devices, users, and mailboxes.</span></span> <span data-ttu-id="5bb9e-111">它可以帮助你对事件进行排序，从而确定优先级并制定明智的网络安全响应决策。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-111">It helps you sort through incidents to prioritize and create an informed cybersecurity response decision.</span></span>
 
 
 ![事件队列的图像](../../media/incidents-queue.png) 
 
-<span data-ttu-id="a7e98-113">默认情况下，Microsoft 365 安全中心中的队列显示在最近30天内看到的事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-113">By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days.</span></span> <span data-ttu-id="a7e98-114">最近的事件位于列表的顶部，以便您可以先查看它。</span><span class="sxs-lookup"><span data-stu-id="a7e98-114">The most recent incident is at the top of the list so you can see it first.</span></span>
+<span data-ttu-id="5bb9e-113">默认情况下，Microsoft 365 安全中心中的队列显示在最近30天内看到的事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-113">By default, the queue in the Microsoft 365 security center displays incidents seen in the last 30 days.</span></span> <span data-ttu-id="5bb9e-114">最近的事件位于列表的顶部，以便您可以先查看它。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-114">The most recent incident is at the top of the list so you can see it first.</span></span>
 
-<span data-ttu-id="a7e98-115">事件队列公开可自定义的列，使您可以深入了解事件或所包含的实体的不同特征。</span><span class="sxs-lookup"><span data-stu-id="a7e98-115">The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities.</span></span> <span data-ttu-id="a7e98-116">这可帮助您做出有关要处理的事件的优先顺序的明智决策。</span><span class="sxs-lookup"><span data-stu-id="a7e98-116">This helps you make an informed decision regarding prioritization of incidents to handle.</span></span>
+<span data-ttu-id="5bb9e-115">事件队列公开可自定义的列，使您可以深入了解事件或所包含的实体的不同特征。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-115">The incident queue exposes customizable columns that give you visibility into different characteristics of the incident or the contained entities.</span></span> <span data-ttu-id="5bb9e-116">这可帮助您做出有关要处理的事件的优先顺序的明智决策。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-116">This helps you make an informed decision regarding prioritization of incidents to handle.</span></span>
 
-<span data-ttu-id="a7e98-117">若要一目了然，自动事件命名将根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）生成事件名称。</span><span class="sxs-lookup"><span data-stu-id="a7e98-117">For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories.</span></span> <span data-ttu-id="a7e98-118">这使您可以快速了解事件的范围。</span><span class="sxs-lookup"><span data-stu-id="a7e98-118">This allows you to quickly understand the scope of the incident.</span></span>
+<span data-ttu-id="5bb9e-117">若要一目了然，自动事件命名将根据警报属性（如受影响的终结点数、受影响的用户数、检测源或类别）生成事件名称。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-117">For additional visibility at a glance, automatic incident naming generates incident names based on alert attributes such as the number of endpoints affected, users affected, detection sources, or categories.</span></span> <span data-ttu-id="5bb9e-118">这使您可以快速了解事件的范围。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-118">This allows you to quickly understand the scope of the incident.</span></span>
 
-<span data-ttu-id="a7e98-119">例如：多 *个源报告的多个终结点上的多阶段事件。*</span><span class="sxs-lookup"><span data-stu-id="a7e98-119">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
+<span data-ttu-id="5bb9e-119">例如：多 *个源报告的多个终结点上的多阶段事件。*</span><span class="sxs-lookup"><span data-stu-id="5bb9e-119">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="a7e98-120">在自动事件命名的首次部署之前已存在的事件将不会更改其名称。</span><span class="sxs-lookup"><span data-stu-id="a7e98-120">Incidents that existed prior the rollout of automatic incident naming will not have their name changed.</span></span>
+> <span data-ttu-id="5bb9e-120">在自动事件命名的首次部署之前已存在的事件将不会更改其名称。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-120">Incidents that existed prior the rollout of automatic incident naming will not have their name changed.</span></span>
 
-<span data-ttu-id="a7e98-121">事件队列还公开了多个筛选选项，当应用这些选项时，您可以对环境中的所有现有事件执行广泛的清理，或决定将重点放在特定的方案或威胁上。</span><span class="sxs-lookup"><span data-stu-id="a7e98-121">The incident queue also exposes multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat.</span></span> <span data-ttu-id="a7e98-122">在事件队列中应用筛选器可帮助确定需要立即关注的事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-122">Applying filters on the incident queue can help determine which incident requires immediate attention.</span></span> 
+<span data-ttu-id="5bb9e-121">事件队列还公开了多个筛选选项，当应用这些选项时，您可以对环境中的所有现有事件执行广泛的清理，或决定将重点放在特定的方案或威胁上。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-121">The incident queue also exposes multiple filtering options, that when applied, enable you to perform a broad sweep of all existing incidents in your environment, or decide to focus on a specific scenario or threat.</span></span> <span data-ttu-id="5bb9e-122">在事件队列中应用筛选器可帮助确定需要立即关注的事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-122">Applying filters on the incident queue can help determine which incident requires immediate attention.</span></span> 
 
-## <a name="available-filters"></a><span data-ttu-id="a7e98-123">可用筛选器</span><span class="sxs-lookup"><span data-stu-id="a7e98-123">Available filters</span></span>
+## <a name="available-filters"></a><span data-ttu-id="5bb9e-123">可用筛选器</span><span class="sxs-lookup"><span data-stu-id="5bb9e-123">Available filters</span></span>
 
-### <a name="assigned-to"></a><span data-ttu-id="a7e98-124">分配到</span><span class="sxs-lookup"><span data-stu-id="a7e98-124">Assigned to</span></span>
-<span data-ttu-id="a7e98-125">您可以选择显示分配给您的警报或自动进行处理的警报。</span><span class="sxs-lookup"><span data-stu-id="a7e98-125">You can choose to show alerts that are assigned to you or those handled by automation.</span></span>
+### <a name="assigned-to"></a><span data-ttu-id="5bb9e-124">分配到</span><span class="sxs-lookup"><span data-stu-id="5bb9e-124">Assigned to</span></span>
+<span data-ttu-id="5bb9e-125">您可以选择显示分配给您的警报或自动进行处理的警报。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-125">You can choose to show alerts that are assigned to you or those handled by automation.</span></span>
 
-### <a name="categories"></a><span data-ttu-id="a7e98-126">类别</span><span class="sxs-lookup"><span data-stu-id="a7e98-126">Categories</span></span>
-<span data-ttu-id="a7e98-127">选择要重点关注特定策略、技术或受攻击组件的类别。</span><span class="sxs-lookup"><span data-stu-id="a7e98-127">Choose categories to focus on specific tactics, techniques, or attack components seen.</span></span> 
+### <a name="categories"></a><span data-ttu-id="5bb9e-126">类别</span><span class="sxs-lookup"><span data-stu-id="5bb9e-126">Categories</span></span>
+<span data-ttu-id="5bb9e-127">选择要重点关注特定策略、技术或受攻击组件的类别。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-127">Choose categories to focus on specific tactics, techniques, or attack components seen.</span></span> 
 
-### <a name="classification"></a><span data-ttu-id="a7e98-128">分类</span><span class="sxs-lookup"><span data-stu-id="a7e98-128">Classification</span></span>
-<span data-ttu-id="a7e98-129">根据相关警报的设置分类筛选事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-129">Filter incidents based on the set classifications of the related alerts.</span></span> <span data-ttu-id="a7e98-130">这些值包括真正的警报、假警报或未设置。</span><span class="sxs-lookup"><span data-stu-id="a7e98-130">The values include true alerts, false alerts, or not set.</span></span>
+### <a name="classification"></a><span data-ttu-id="5bb9e-128">分类</span><span class="sxs-lookup"><span data-stu-id="5bb9e-128">Classification</span></span>
+<span data-ttu-id="5bb9e-129">根据相关警报的设置分类筛选事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-129">Filter incidents based on the set classifications of the related alerts.</span></span> <span data-ttu-id="5bb9e-130">这些值包括真正的警报、假警报或未设置。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-130">The values include true alerts, false alerts, or not set.</span></span>
 
-### <a name="data-sensitivity"></a><span data-ttu-id="a7e98-131">数据敏感性</span><span class="sxs-lookup"><span data-stu-id="a7e98-131">Data sensitivity</span></span>
-<span data-ttu-id="a7e98-132">某些攻击主要针对容易泄露或有价值的数据。</span><span class="sxs-lookup"><span data-stu-id="a7e98-132">Some attacks focus on targeting to exfiltrate sensitive or valuable data.</span></span> <span data-ttu-id="a7e98-133">通过应用筛选器查看事件中是否涉及敏感数据，可以快速确定敏感信息是否可能已泄露，并优先解决这些事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-133">By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.</span></span>
+### <a name="data-sensitivity"></a><span data-ttu-id="5bb9e-131">数据敏感性</span><span class="sxs-lookup"><span data-stu-id="5bb9e-131">Data sensitivity</span></span>
+<span data-ttu-id="5bb9e-132">某些攻击主要针对容易泄露或有价值的数据。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-132">Some attacks focus on targeting to exfiltrate sensitive or valuable data.</span></span> <span data-ttu-id="5bb9e-133">通过应用筛选器查看事件中是否涉及敏感数据，可以快速确定敏感信息是否可能已泄露，并优先解决这些事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-133">By applying a filter to see if sensitive data is involved in the incident, you can quickly determine if sensitive information has potentially been compromised and prioritize addressing those incidents.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="a7e98-134">仅适用于已启用 Microsoft 信息保护的情况。</span><span class="sxs-lookup"><span data-stu-id="a7e98-134">Only applicable if Microsoft Information Protection is turned on.</span></span>
+><span data-ttu-id="5bb9e-134">仅适用于已启用 Microsoft 信息保护的情况。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-134">Only applicable if Microsoft Information Protection is turned on.</span></span>
 
-### <a name="device-group"></a><span data-ttu-id="a7e98-135">设备组</span><span class="sxs-lookup"><span data-stu-id="a7e98-135">Device group</span></span>
-<span data-ttu-id="a7e98-136">按定义的设备组进行筛选。</span><span class="sxs-lookup"><span data-stu-id="a7e98-136">Filter by defined device groups.</span></span>
+### <a name="device-group"></a><span data-ttu-id="5bb9e-135">设备组</span><span class="sxs-lookup"><span data-stu-id="5bb9e-135">Device group</span></span>
+<span data-ttu-id="5bb9e-136">按定义的设备组进行筛选。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-136">Filter by defined device groups.</span></span>
 
-### <a name="investigation-state"></a><span data-ttu-id="a7e98-137">调查状态</span><span class="sxs-lookup"><span data-stu-id="a7e98-137">Investigation state</span></span>
-<span data-ttu-id="a7e98-138">按自动调查的状态筛选事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-138">Filter incidents by the status of automated investigation.</span></span> 
+### <a name="investigation-state"></a><span data-ttu-id="5bb9e-137">调查状态</span><span class="sxs-lookup"><span data-stu-id="5bb9e-137">Investigation state</span></span>
+<span data-ttu-id="5bb9e-138">按自动调查的状态筛选事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-138">Filter incidents by the status of automated investigation.</span></span> 
 
-### <a name="multiple-categories"></a><span data-ttu-id="a7e98-139">多个类别</span><span class="sxs-lookup"><span data-stu-id="a7e98-139">Multiple categories</span></span> 
-<span data-ttu-id="a7e98-140">您可以选择仅查看已映射到多个类别的事件，从而可能导致更大的损坏。</span><span class="sxs-lookup"><span data-stu-id="a7e98-140">You can choose to see only incidents that have mapped to multiple categories  and can thus potentially cause more damage.</span></span> 
+### <a name="multiple-categories"></a><span data-ttu-id="5bb9e-139">多个类别</span><span class="sxs-lookup"><span data-stu-id="5bb9e-139">Multiple categories</span></span> 
+<span data-ttu-id="5bb9e-140">您可以选择仅查看已映射到多个类别的事件，从而可能导致更大的损坏。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-140">You can choose to see only incidents that have mapped to multiple categories  and can thus potentially cause more damage.</span></span> 
 
-### <a name="multiple-service-sources"></a><span data-ttu-id="a7e98-141">多个服务源</span><span class="sxs-lookup"><span data-stu-id="a7e98-141">Multiple service sources</span></span> 
-<span data-ttu-id="a7e98-142">筛选器仅查看包含来自不同源的警报的事件 (Microsoft Defender for Endpoint、Microsoft 云应用安全性、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。</span><span class="sxs-lookup"><span data-stu-id="a7e98-142">Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).</span></span>
+### <a name="multiple-service-sources"></a><span data-ttu-id="5bb9e-141">多个服务源</span><span class="sxs-lookup"><span data-stu-id="5bb9e-141">Multiple service sources</span></span> 
+<span data-ttu-id="5bb9e-142">筛选器仅查看包含来自不同源的警报的事件 (Microsoft Defender for Endpoint、Microsoft 云应用安全性、Microsoft Defender for Identity、Microsoft Defender for Office 365) 。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-142">Filter to only see incidents that contain alerts from different sources (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365).</span></span>
 
-### <a name="os-platform"></a><span data-ttu-id="a7e98-143">操作系统平台</span><span class="sxs-lookup"><span data-stu-id="a7e98-143">OS platform</span></span>
-<span data-ttu-id="a7e98-144">按操作系统限制事件队列视图。</span><span class="sxs-lookup"><span data-stu-id="a7e98-144">Limit the incident queue view by operating system.</span></span>
+### <a name="os-platform"></a><span data-ttu-id="5bb9e-143">操作系统平台</span><span class="sxs-lookup"><span data-stu-id="5bb9e-143">OS platform</span></span>
+<span data-ttu-id="5bb9e-144">按操作系统限制事件队列视图。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-144">Limit the incident queue view by operating system.</span></span>
 
-### <a name="service-sources"></a><span data-ttu-id="a7e98-145">服务源</span><span class="sxs-lookup"><span data-stu-id="a7e98-145">Service sources</span></span>
-<span data-ttu-id="a7e98-146">通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。</span><span class="sxs-lookup"><span data-stu-id="a7e98-146">By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source.</span></span> 
+### <a name="service-sources"></a><span data-ttu-id="5bb9e-145">服务源</span><span class="sxs-lookup"><span data-stu-id="5bb9e-145">Service sources</span></span>
+<span data-ttu-id="5bb9e-146">通过选择特定来源，可以集中精力处理包含至少一个来自该选定来源的警报的事件。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-146">By choosing a specific source, you can focus on incidents that contain at least one alert from that chosen source.</span></span> 
 
-### <a name="severity"></a><span data-ttu-id="a7e98-147">Severity</span><span class="sxs-lookup"><span data-stu-id="a7e98-147">Severity</span></span>
-<span data-ttu-id="a7e98-148">事件的严重性表明它可以对你的资产造成的影响。</span><span class="sxs-lookup"><span data-stu-id="a7e98-148">The severity of an incident is indicative of the impact it can have on your assets.</span></span> <span data-ttu-id="a7e98-149">严重性越高，影响越大，并且通常需要最直接的关注。</span><span class="sxs-lookup"><span data-stu-id="a7e98-149">The higher the severity, the bigger the impact and typically requires the most immediate attention.</span></span> 
+### <a name="severity"></a><span data-ttu-id="5bb9e-147">Severity</span><span class="sxs-lookup"><span data-stu-id="5bb9e-147">Severity</span></span>
+<span data-ttu-id="5bb9e-148">事件的严重性表明它可以对你的资产造成的影响。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-148">The severity of an incident is indicative of the impact it can have on your assets.</span></span> <span data-ttu-id="5bb9e-149">严重性越高，影响越大，并且通常需要最直接的关注。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-149">The higher the severity, the bigger the impact and typically requires the most immediate attention.</span></span> 
 
-### <a name="status"></a><span data-ttu-id="a7e98-150">状态</span><span class="sxs-lookup"><span data-stu-id="a7e98-150">Status</span></span>
-<span data-ttu-id="a7e98-151">可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。</span><span class="sxs-lookup"><span data-stu-id="a7e98-151">You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.</span></span>
-
->[!IMPORTANT]
-><span data-ttu-id="a7e98-152">分类、设备组、调查状态和 OS 平台筛选器目前仅适用于公共预览版。</span><span class="sxs-lookup"><span data-stu-id="a7e98-152">The Classification, Device group, Investigation state, and OS platform filters are currently only available in public preview.</span></span>
+### <a name="status"></a><span data-ttu-id="5bb9e-150">状态</span><span class="sxs-lookup"><span data-stu-id="5bb9e-150">Status</span></span>
+<span data-ttu-id="5bb9e-151">可以根据事件的状态选择限制所显示事件的列表，以查看哪些事件处于活动状态/已解决状态。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-151">You can choose to limit the list of incidents shown based on their status to see which ones are active or resolved.</span></span>
 
 
-## <a name="next-steps"></a><span data-ttu-id="a7e98-153">后续步骤</span><span class="sxs-lookup"><span data-stu-id="a7e98-153">Next steps</span></span>
-<span data-ttu-id="a7e98-154">确定哪个事件需要最高优先级后，可继续对事件执行进一步的调查工作。</span><span class="sxs-lookup"><span data-stu-id="a7e98-154">After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.</span></span>
-- [<span data-ttu-id="a7e98-155">调查事件</span><span class="sxs-lookup"><span data-stu-id="a7e98-155">Investigate incidents</span></span>](investigate-incidents.md)
 
 
-## <a name="see-also"></a><span data-ttu-id="a7e98-156">另请参阅</span><span class="sxs-lookup"><span data-stu-id="a7e98-156">See also</span></span>
-- [<span data-ttu-id="a7e98-157">事件概述</span><span class="sxs-lookup"><span data-stu-id="a7e98-157">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="a7e98-158">调查事件</span><span class="sxs-lookup"><span data-stu-id="a7e98-158">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="a7e98-159">管理事件</span><span class="sxs-lookup"><span data-stu-id="a7e98-159">Manage incidents</span></span>](manage-incidents.md)
+## <a name="next-steps"></a><span data-ttu-id="5bb9e-152">后续步骤</span><span class="sxs-lookup"><span data-stu-id="5bb9e-152">Next steps</span></span>
+<span data-ttu-id="5bb9e-153">确定哪个事件需要最高优先级后，可继续对事件执行进一步的调查工作。</span><span class="sxs-lookup"><span data-stu-id="5bb9e-153">After you've determined which incident requires the highest priority, you can proceed to do further investigative work on an incident.</span></span>
+- [<span data-ttu-id="5bb9e-154">调查事件</span><span class="sxs-lookup"><span data-stu-id="5bb9e-154">Investigate incidents</span></span>](investigate-incidents.md)
+
+
+## <a name="see-also"></a><span data-ttu-id="5bb9e-155">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5bb9e-155">See also</span></span>
+- [<span data-ttu-id="5bb9e-156">事件概述</span><span class="sxs-lookup"><span data-stu-id="5bb9e-156">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="5bb9e-157">调查事件</span><span class="sxs-lookup"><span data-stu-id="5bb9e-157">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="5bb9e-158">管理事件</span><span class="sxs-lookup"><span data-stu-id="5bb9e-158">Manage incidents</span></span>](manage-incidents.md)
