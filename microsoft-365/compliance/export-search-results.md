@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: '将搜索结果从 Security & 合规中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。 '
+description: 将搜索结果从 Microsoft 365 合规性中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087326"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422871"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -57,7 +57,9 @@ ms.locfileid: "49087326"
   > <sup>1</sup> Microsoft 不会为 ClickOnce 应用程序制造第三方扩展或加载项。 使用不受支持的浏览器导出搜索结果，但不支持第三方分机或加载项。<br/>
   > <sup>2</sup> 由于最近对 Microsoft Edge 进行了更改，因此 ClickOnce 支持在默认情况下不再启用。 有关在 Edge 中启用 ClickOnce 支持的说明，请参阅 [在 Microsoft Edge 中使用电子数据展示导出工具](configure-edge-to-export-search-results.md)。
   
-- 下载 "步骤 2) " 中所述 (的搜索结果时，可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息，请参阅 [在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
+- 建议将搜索结果下载到本地计算机。 但是，若要避免公司的防火墙或代理基础结构在下载搜索结果时导致出现问题，您可能需要考虑将搜索结果下载到网络外部的虚拟桌面。 这可能会降低在导出大量文件时在 Azure 数据连接中发生的超时。 有关虚拟桌面的详细信息，请参阅 [Windows 虚拟桌面](https://azure.microsoft.com/services/virtual-desktop)。 
+
+- 若要在下载搜索结果时提高性能，请考虑将返回大型结果集的搜索划分为较小的搜索。 例如，您可以在搜索查询中使用日期范围来返回可以更快下载的较小结果集。
   
 - 当您导出搜索结果时，数据暂时存储在 Microsoft 云中的 Microsoft 提供的 Azure 存储位置中，然后将其下载到本地计算机。 确保您的组织可以连接到 Azure 中的终结点，即 **\* blob.core.windows.net** (通配符代表导出) 的唯一标识符。 搜索结果数据在创建后的两周内从 Azure 存储位置中删除。 
   
@@ -135,8 +137,6 @@ ms.locfileid: "49087326"
 ## <a name="step-2-download-the-search-results"></a>第 2 步：下载搜索结果
 
 下一步是将搜索结果从 Azure 存储位置下载到本地计算机。
-  
-如前所述，您可以通过在用于导出搜索结果的计算机上配置 Windows 注册表设置来提高下载速度。 有关详细信息，请参阅 [在从 Office 365 导出电子数据展示搜索结果时提高下载速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
   
 1. 在 " **内容搜索** " 页上，单击 " **导出** " 选项卡。 
   

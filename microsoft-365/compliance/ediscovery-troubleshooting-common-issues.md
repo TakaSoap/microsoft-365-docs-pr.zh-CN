@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解在 Office 365 电子数据展示中解决常见问题时可以采取的基本疑难解答步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545950"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422861"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、解决和解决常见的电子数据展示问题
 
@@ -83,7 +83,7 @@ ms.locfileid: "47545950"
 
 在运行包含 SharePoint Online 的电子数据展示搜索和一个驱动器用于商业位置时，您可能会收到错误， `File Not Found` 尽管文件位于网站上。 此错误将出现在 "导出警告" 和 "errors.csv" 或 "跳过" items.csv。 如果在网站上找不到该文件，或者索引已过期，则可能会出现这种情况。 以下是使用强调添加) 的实际错误 (文本。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed 下载内容。 其他诊断信息： ExportWorker：无法从内容 6ea52149-91cd 4965-b5bb-82ca6a3ec9be--到类型文档的。 相关 Id：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---> ***找不到***ServerException： File。 在 ClientRequest (Stream responseStream)  ( # A3---内部异常堆栈跟踪的结束日期的 ProcessResponseStream 的更多信息---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed 下载内容。 其他诊断信息： ExportWorker：无法从内容 6ea52149-91cd 4965-b5bb-82ca6a3ec9be--到类型文档的。 相关 Id：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---> ***找不到*** ServerException： File。 在 ClientRequest (Stream responseStream)  ( # A3---内部异常堆栈跟踪的结束日期的 ProcessResponseStream 的更多信息---
 
 ### <a name="resolution"></a>解决方案
 
@@ -113,25 +113,25 @@ ms.locfileid: "47545950"
 
 ### <a name="resolution"></a>解决方案
 
-1. 请尝试使用本文中确定的步骤 [提高下载速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)。
-
-2. 如果仍有问题，请连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：
+1. 连接到 [安全 & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) ，然后运行以下命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. 在 SearchResults 和 SearchStatistics 参数中查找要下载的数据量。
+2. 在 SearchResults 和 SearchStatistics 参数中查找要下载的数据量。
 
-4. 运行以下命令：
+3. 运行以下命令：
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. 在 "结果" 字段中，查找已导出的数据并查看遇到的任何错误。
+4. 在 "结果" 字段中，查找已导出的数据并查看遇到的任何错误。
 
-6. 检查您将内容导出到的目录中的 trace 文件，以查找任何错误。
+5. 检查您将内容导出到的目录中的 trace 文件，以查找任何错误。
+
+6. 如果仍有问题，请考虑将返回大型结果集的搜索划分为较小的搜索。 例如，您可以在搜索查询中使用日期范围来返回可以更快下载的较小结果集。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>错误/问题： "内部服务器错误 (500) 出现"
 
