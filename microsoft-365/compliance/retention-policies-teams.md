@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解适用于 Microsoft Teams 的保留策略。
-ms.openlocfilehash: 85f272c5c663a95c749f7971b6e23c178dab2b94
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 5e460c75bf51dd23e662696c725623d3b7eab39d
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795091"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409222"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解用于 Microsoft Teams 的保留
 
@@ -38,7 +38,7 @@ ms.locfileid: "48795091"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留和删除包括哪些内容
 
-可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息，包括嵌入的图像。
+可使用 Teams 的保留策略来保留和删除以下 Teams 项目：聊天和频道消息，包括嵌入的图像、表格、超文本链接以及其它 Teams 消息和文件。 聊天消息包括聊天中所有人员的姓名；频道消息包含团队名称和消息标题（如有提供）。 
 
 不包括专用频道中的 Teams 消息，也不包括来自其他人的表情符号回复。
 
@@ -65,9 +65,9 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 对于图中的两条路径：
 
-1. **如果用户在保留期内编辑或删除了聊天或频道消息** ，则该原始消息将在 21 天内复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后在 24 小时之内将其永久删除。
+1. **如果用户在保留期内编辑或删除了聊天或频道消息**，则该原始消息将在 21 天内复制（如果已编辑）或移动（如果已删除）到 SubstrateHolds 文件夹中。 消息将存储在此处，直到保留期到期，然后在 24 小时之内将其永久删除。
 
-2. **如果未删除聊天或频道消息** ，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 消息位于 SubstrateHolds 文件夹中时，它将在 24 小时内被永久删除。 
+2. **如果未删除聊天或频道消息**，并且对于编辑后的当前消息，则保留期到期后，消息将被移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 消息位于 SubstrateHolds 文件夹中时，它将在 24 小时内被永久删除。 
 
 > [!NOTE]
 > 可通过电子数据展示工具搜索 SubstrateHolds 文件夹中的消息。 从此 SubstrateHolds 文件夹中删除消息之前，仍可以由电子数据展示工具搜索。
@@ -76,15 +76,15 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>“仅保留”保留策略的内容路径
 
-1. **如果编辑或删除了聊天消息或频道消息** ：21 天内在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
+1. **如果编辑或删除了聊天消息或频道消息**：21 天内在 SubstrateHolds 文件夹中创建原始消息的副本，并将其保留在那里，直到保留期到期。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
 
 2. **如果项目在保持期内未遭修改或删除** 以及保留期内编辑后的当前消息：保留期前后无变化；消息仍保留在原始位置。
 
 ### <a name="content-paths-for-delete-only-retention-policy"></a>“仅删除”保留策略的内容路径
 
-1. **如果消息在保持期内未遭删除** ：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
+1. **如果消息在保持期内未遭删除**：在保持期结束时，消息将移至 SubstrateHolds 文件夹。 此操作自到期之日起最多需要 7 天。 然后，此消息会在 24 小时内从 SubstrateHolds 文件夹中永久删除。
 
-2. **如果用户在保留期内删除项目** ，该项目将在 21 天内移至 SubstrateHolds 文件夹，然后在 24 小时内被永久删除。
+2. **如果用户在保留期内删除项目**，该项目将在 21 天内移至 SubstrateHolds 文件夹，然后在 24 小时内被永久删除。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Skype for Business 和 Teams 互操作聊天
@@ -115,12 +115,12 @@ Teams 聊天和频道消息不受针对用户或组邮箱配置的保留策略�
 
 我们正在不断努力优化 Teams 中的保留功能。 在此期间，在对 Teams 频道消息和聊天使用保留时，需要注意以下几个限制：
 
-- **Outlook 错误显示的问题** 。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
+- **Outlook 错误显示的问题**。 如果为 Skype 或 Teams 位置创建保留策略，则当用户在 Outlook 桌面客户端中查看邮箱文件夹的属性时，这些策略中的某个策略将显示为默认文件夹策略。 这是 Outlook 中的错误显示问题，也是一个[已知问题](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 应作为默认文件夹策略显示的是应用于该文件夹的邮箱保留策略。 Skype 或 Teams 保留策略不适用于用户的邮箱。
 
-- **配置问题** ： 
-    - 为“ **Teams 频道消息** ”位置选择“ **选择团队** ”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
+- **配置问题**： 
+    - 为“**Teams 频道消息**”位置选择“**选择团队**”时，你可能会看到不属于团队的 Microsoft 365 组。 不要选择这些组。
     
-    - 为“ **Teams 聊天** ”位置选择“ **选择用户** ”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
+    - 为“**Teams 聊天**”位置选择“**选择用户**”时，你可能会看到来宾和非邮箱用户。 保留策略并非专为这些用户设计的，因此请不要选择他们。
 
 ## <a name="configuration-guidance"></a>配置指南
 

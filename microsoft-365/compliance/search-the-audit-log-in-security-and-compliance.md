@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 使用 Office 365 安全与合规中心或 Microsoft 365 合规性中心搜索统一的审核日志，以查看组织中的用户和管理员活动。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aa47cc0c460e77a6faadd5cb2ff7d46c62ed88ab
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: b27ba2ff9343599dc35b1bae8cd5656197497bea
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376651"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409263"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合规中心搜索审核日志
 
@@ -438,7 +438,7 @@ ms.locfileid: "49376651"
 |已删除文件|FileDeleted|用户从网站删除文档。|
 |从回收站删除文件|FileDeletedFirstStageRecycleBin|用户从网站的回收站中删除文件。|
 |从第二阶段回收站删除文件|FileDeletedSecondStageRecycleBin|用户从网站的第二阶段回收站中删除文件。|
-|标记为记录的已删除文件|RecordDelete|已删除标记为记录的文档。当将内容标记为记录的保留标签应用于文档时，该文档被视为记录。|
+|标记为记录的已删除文件|RecordDelete|标记为记录的文档和电子邮件则已被删除。当标记为保留标签的项作为记录应用于内容时，此项被视为记录。|
 |检测到文档敏感度不匹配|DocumentSensitivityMismatchDetected|用户将文档上传到受敏感度标签保护的网站上，该文档的敏感度标签的优先级比该网站应用的敏感度标签高。例如，标有“机密”的文档上传到标有“常规”的网站上。<br/><br/> 如果文档的敏感度标签的优先级低于网站应用的敏感度标签，则不触发此事件。例如，标有“常规”的文档上传到标有“机密”的网站上。有关敏感度标签优先级的详细信息，请参阅[标签优先级（顺序）](sensitivity-labels.md#label-priority-order-matters)。|
 |在文件中检测到恶意软件|FileMalwareDetected|SharePoint 防病毒引擎在文件中检测到恶意软件。|
 |已放弃文件签出|FileCheckOutDiscarded|用户放弃（或撤消）签出的文件。这意味着将放弃签出文件时对其所做的所有更改，而不将其保存到文档库中的文档版本。|
@@ -581,7 +581,7 @@ FilePreviewed 和 FileAccessed 事件都表明用户的调用导致了对文件�
 
 |友好名称|操作|说明|
 |:-----|:-----|:-----|
-|已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。同步关系成功，因为用户的计算机是已添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
+|已允许计算机同步文件|ManagedSyncClientAllowed|用户成功建立与网站的同步关系。同步关系建立成功是因为用户的计算机是已添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。 <br/><br/> 有关此功能的详细信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
 |已阻止计算机同步文件|UnmanagedSyncClientBlocked|用户尝试从某计算机与网站建立同步关系，该计算机不是组织域的成员，或是尚未添加到可访问组织文档库的域列表（称为 *安全收件人列表*）的域的成员。不允许同步关系，并阻止用户的计算机同步、下载或上传文档库中的文件。<br/><br/> 有关此功能的信息，请参阅[使用 Windows PowerShell cmdlet 为安全收件人列表中的域启用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
 |已将文件下载到计算机|FileSyncDownloadedFull|用户建立同步关系，并首次成功将文件从文档库下载到计算机。|
 |已将文件更改下载到计算机|FileSyncDownloadedPartial|用户从文档库成功下载对文件所做的任何更改。此活动表明对文档库中的文件所做的任何更改均已被下载到用户计算机中。仅下载了更改，因为用户以前下载过文档库（如 **已将文件下载到计算机** 活动所示）。|

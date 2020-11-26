@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 无论是使用处置评审还是根据配置的设置自动删除内容，都可监视和管理内容的处置。
-ms.openlocfilehash: dfea1cfece8a9faccced134cf30923527bd241f5
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941363"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409209"
 ---
 # <a name="disposition-of-content"></a>内容的处置
 
@@ -35,12 +35,14 @@ ms.locfileid: "48941363"
 
 ### <a name="permissions-for-disposition"></a>处置权限
 
-若要成功访问 Microsoft 365 合规中心中的 **处置** 选项卡，用户必须拥有 **处置管理** 管理员角色。 该角色包含在默认管理员角色组中， **合规性管理员** 和 **合规性数据管理员** 。
+若要成功访问 Microsoft 365 合规中心中的 **处置** 选项卡，用户必须拥有 **处置管理** 管理员角色。 该角色包含在默认管理员角色组中， **合规性管理员** 和 **合规性数据管理员**。
 
 若要向用户授予所需的处置管理角色，可将其添加到这些默认角色组中，或创建自定义角色组（例如命名为 "处置审阅者"），并向此组授予处置管理角色。  
 
 > [!NOTE]
 > 即使是全局管理员也需要被授予 **处置管理** 角色。 
+
+此外，若要在处置过程中查看项目的内容，可将用户添加到以下两个角色组： **"内容资源管理器内容查看器"** 和 **"内容资源管理器列表查看器"**。 如果用户没有这些角色组的权限，他们仍可选择处置审阅操作来完成处置评审，但执行此操作无法在合规中心查看项目的内容。
 
 有关说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
@@ -131,13 +133,13 @@ ms.locfileid: "48941363"
 在记录标签的 **已处置项目** 选项卡中显示的项目，在该项目被处置后最多保留7年，在此期间，每条记录的上限为一百万项。 如果看到 **计数** 数字接近一百万这一限制，并且需要对记录进行处置证明，请联系 [Microsoft 支持](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
 
 > [!NOTE]
-> 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要[启动并可搜索](turn-audit-log-search-on-or-off.md)审核，以便捕获相应的事件。
+> 此功能基于 [统一审核日志](search-the-audit-log-in-security-and-compliance.md) 中的信息，因此需要允许审核[启动且可搜索](turn-audit-log-search-on-or-off.md)，以捕获相应的事件。
 
-对于审核，请搜索 **标记为记录的已删除文件** 。
+对于审核，搜索 **标记为记录的已删除文件**，该文件位于 "**文件和页面活动"** 类别 。 此审核事件适用于文档和电子邮件。
 
 ## <a name="filter-and-export-the-views"></a>筛选和导出视图
 
-从 **处置** 页面选择保留标签时， **待处置** 选项卡（如果适用）和 **已处置项目** 选项卡可用于筛选视图，帮助更轻松地查找项目。 
+从 **处置** 页面选择保留标签时，**待处置** 选项卡（如果适用）和 **已处置项目** 选项卡可用于筛选视图，帮助更轻松地查找项目。 
 
 对于待处置的，时间范围以终止日期为准。 对于已处置的项目，时间范围以删除日期为准。
   
