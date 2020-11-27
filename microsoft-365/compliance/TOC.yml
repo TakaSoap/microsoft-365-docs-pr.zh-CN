@@ -475,10 +475,8 @@
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: 配置内容搜索
           items:
-            - name: 配置内容搜索的权限筛选
+            - name: 内容搜索的配置权限筛选
               href: permissions-filtering-for-content-search.md
-            - name: 导出搜索结果时加快下载速度
-              href: increase-download-speeds-when-exporting-ediscovery-results.md
             - name: 导出搜索结果时更改 PST 文件大小
               href: change-the-size-of-pst-files-when-exporting-results.md
             - name: 导出搜索结果时禁用报告

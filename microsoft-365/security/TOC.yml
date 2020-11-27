@@ -141,6 +141,8 @@
                       href: mtp/advanced-hunting-shared-queries.md
                     - name: 跨设备、电子邮件、应用和标识进行查寻
                       href: mtp/advanced-hunting-query-emails-devices.md
+                    - name: 查寻勒索软件
+                      href: mtp/advanced-hunting-find-ransomware.md
                     - name: 从 Defender for Endpoint 的过渡
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: 处理查询结果
