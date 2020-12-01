@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合规性管理器提供了用于建立与国家、地区和行业法规、标准和法律相适应的评估的模板。
-ms.openlocfilehash: f02c4f5a1be9a3cec61a29efa2f42151a291943a
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 2127daddaf44d25d9a43969e8bfafe5def39a260
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374015"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519279"
 ---
 # <a name="compliance-manager-templates-list"></a>合规性管理器模板列表
 
@@ -52,8 +52,8 @@ ms.locfileid: "49374015"
 ## <a name="included-templates"></a>包含的模板
 
 - [Microsoft 数据保护基准](compliance-manager-assessments.md#data-protection-baseline-default-assessment)
--  (Microsoft 365、Office 365、Intune) 的[欧盟 GDPR](gdpr.md)
-- [ISO 27001:2013](offering-iso-27001.md)
+-  (Microsoft 365、Office 365、Intune) 的[欧盟 GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr)
+- [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 修订版4
 
 ## <a name="premium-templates"></a>高级模板
@@ -64,7 +64,7 @@ ms.locfileid: "49374015"
 - 阿尔巴尼亚-个人数据保护的法律条款。 9887
 - 安提瓜和 Barbuda-Data Protection 法案/2013 (Microsoft 365) 
 - 附录 III 到 OMB 循环编号 -130-联邦自动化信息资源的安全性
-- [阿根廷-个人数据保护法案 25.326](offering-pdpa-argentina.md) (Microsoft 365) 
+- [阿根廷-个人数据保护法案 25.326](https://docs.microsoft.com/compliance/regulatory/offering-pdpa-argentina) (Microsoft 365) 
 - Arkansas- (Microsoft 365) 的个人信息保护法案
 -  (APEC) 隐私框架的亚太地区经济协作
 - 澳大利亚-.ASD (Microsoft 365) 的最有必要的9个
@@ -73,13 +73,13 @@ ms.locfileid: "49374015"
 - 澳大利亚-垃圾邮件法案 2003 (Microsoft 365) 
 - 澳大利亚隐私 (信用报告) 代码 2014 (版本 2.1) 
 - 澳大利亚能源部门网络安全框架 (AESCSF)  (Microsoft 365) 
-- [澳大利亚信息安全注册评估员计划 (IRAP) 版本 2](offering-ccsl-irap-australia.md) (Microsoft 365) 
-- [澳大利亚 Prudential 规章机关 CPS](offering-apra-australia.md) (Microsoft 365) 
+- [澳大利亚信息安全注册评估员计划 (IRAP) 版本 2](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia) (Microsoft 365) 
+- [澳大利亚 Prudential 规章机关 CPS](https://docs.microsoft.com/compliance/regulatory/offering-apra-australia) (Microsoft 365) 
 - 奥地利电信法案 2003 (Microsoft 365) 
 - 巴哈马-Data Protection 法案 (Microsoft 365) 
 - 巴巴多斯-Data Protection Bill 2019 (Microsoft 365) 
 - 有关信息的白俄罗斯法律，Informatization 和保护信息 (Microsoft 365) 
-- [比利时 NBB Dec 2015](offering-nbb-fsma-belgium.md) (Microsoft 365) 
+- [比利时 NBB Dec 2015](https://docs.microsoft.com/compliance/regulatory/offering-nbb-fsma-belgium) (Microsoft 365) 
 - 百慕大-电子事务法案 (Microsoft 365) 
 - 对个人数据保护的波斯尼亚和黑塞哥维那定律
 - 巴西-消费者保护代码法律号 8078 (Office 365) 
@@ -90,22 +90,22 @@ ms.locfileid: "49374015"
 - 加利福尼亚州教育版-EDC，Title 3，除法14，Part 65，章 2.5-社交媒体隐私
 - 加利福尼亚州 SB-327 信息隐私：连接的设备 (Microsoft 365) 
 - 加利福尼亚州消费者信用报告机构法案 (Microsoft 365) 
-- [加利福尼亚州消费者隐私法案 (CCPA) ](offering-ccpa.md) (Microsoft 365) 
+- [加利福尼亚州消费者隐私法案 (CCPA) ](https://docs.microsoft.com/compliance/regulatory/offering-ccpa) (Microsoft 365) 
 - 加拿大-违反安全保护法规 (Microsoft 365) 
 - 加拿大英属哥伦比亚-信息隐私 & Security-FOIPPA (Microsoft 365) 
-- [加拿大 Superintendent 金融机构的办公室](offering-osfi-canada.md) (Microsoft 365) 
+- [加拿大 Superintendent 金融机构的办公室](https://docs.microsoft.com/compliance/regulatory/offering-osfi-canada) (Microsoft 365) 
 - 加拿大个人健康信息保护法案 (PHIPA)  (Microsoft 365) 
 - 加拿大个人信息保护和电子文档法案 (PIPEDA)  (Microsoft 365) 
 - 加拿大-受保护的 B
 - 加拿大 Cybersecure (Microsoft 365) 
 -  (Microsoft 365) ，CAN-垃圾邮件法案
-- [CDSA 内容保护 & 安全标准](offering-cdsa.md) (Microsoft 365) 
-- [CFR Code Of 联邦法规标题 21](offering-fda-cfr-title-21-part-11.md) (Microsoft 365) 
+- [CDSA 内容保护 & 安全标准](https://docs.microsoft.com/compliance/regulatory/offering-cdsa) (Microsoft 365) 
+- [CFR Code Of 联邦法规标题 21](https://docs.microsoft.com/compliance/regulatory/offering-fda-cfr-title-21-part-11) (Microsoft 365) 
 - 化学设施反恐怖标准 (CFATS)  (Microsoft 365) 
 - 儿童的联机隐私保护规则 (COPPA)  (Microsoft 365) 
 - 中国-个人信息安全规范 (Microsoft 365) 
-- [CIS 实施组1、组2、组3](offering-cis-benchmark.md)
-- [云安全联盟 (CSA) 云控制矩阵 (CCM) ](offering-csa-star-attestation.md)
+- [CIS 实施组1、组2、组3](https://docs.microsoft.com/compliance/regulatory/offering-cis-benchmark)
+- [云安全联盟 (CSA) 云控制矩阵 (CCM) ](https://docs.microsoft.com/compliance/regulatory/offering-csa-star-attestation)
 - CMMC 级别1、级别2、级别3、级别4、级别 5 (Microsoft 365) 
 -  (Microsoft 365) 的 | 1 级
 - 哥伦比亚-Decree。 1377/2013 (用于哥伦比亚哥伦比亚定律 1581/2012) 
@@ -117,7 +117,7 @@ ms.locfileid: "49374015"
 - Connecticut 常规法规- (Microsoft 365) 收到机密信息的州承包商的常规条款
 - Connecticut State 法-违反安全的安全 re computerized 数据包含个人信息 (Microsoft 365) 
 - Microsoft 365) 的消费者个人信息安全违规通知法案 (
-- [刑事审判信息服务 (CJIS) 安全策略](offering-cjis.md) (Microsoft 365) 
+- [刑事审判信息服务 (CJIS) 安全策略](https://docs.microsoft.com/compliance/regulatory/offering-cjis) (Microsoft 365) 
 - 克罗地亚-个人数据保护法案 (Microsoft 365) 
 - Cybersecurity 的人的法律 (Microsoft 365) 
 - 塞浦路斯 (Microsoft 365) 的个人数据法律的处理
@@ -126,7 +126,7 @@ ms.locfileid: "49374015"
 - 特拉华州计算机安全违规-商业和商业副标题 II-12B-100 至 12B-104
 - 丹麦-数据保护法案
 - 丹麦-对信息的执行顺序和在 End-User 终端设备中存储和访问信息时所需的同意
-- [DFARS](offering-dfars.md) (Microsoft 365) 
+- [DFARS](https://docs.microsoft.com/compliance/regulatory/offering-dfars) (Microsoft 365) 
 - 指令 2013/40/EU 欧洲 Parliament 和理事会的委员会 (Microsoft 365) 
 - 迪拜-运行状况数据保护规章 (Microsoft 365) 
 -  (电信监管机构) # B2 Microsoft 365) 的迪拜消费者保护法规
@@ -139,10 +139,10 @@ ms.locfileid: "49374015"
 - EU-EudraLex Volume 4 — GMP 准则，附录11
 - EU 指令 2006/24/EC
 - Microsoft 365 (的 FDIC 隐私规则) 
-- [联邦金融机构检查委员会 (FFIEC) 信息安全手册](offering-ffiec-us.md) (Microsoft 365、Intune) 
-- FedRamp (Office 365) 的[高安全性控制措施](offering-fedramp.md)
-- [FedRamp 高安全性 Controls_NIST 800-53](offering-fedramp.md) (Microsoft 365) 
-- [FedRAMP 中等](offering-fedramp.md)
+- [联邦金融机构检查委员会 (FFIEC) 信息安全手册](https://docs.microsoft.com/compliance/regulatory/offering-ffiec-us) (Microsoft 365、Intune) 
+- FedRamp (Office 365) 的[高安全性控制措施](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
+- [FedRamp 高安全性 Controls_NIST 800-53](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Microsoft 365) 
+- [FedRAMP 中等](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
 - 芬兰-数据保护法案
 - 适用于云服务的信息安全评估的芬兰标准 (Microsoft 365) 
 - FINRA Cybersecurity 清单
@@ -151,30 +151,30 @@ ms.locfileid: "49374015"
 - FTC (Microsoft 365) 的消费者财务信息隐私
 - 加纳数据保护法案
 - 通常接受的保留原则 (Microsoft 365) 
-- [德国-云计算合规性控件目录 (C5) ](offering-c5-germany.md) (Microsoft 365) 
+- [德国-云计算合规性控件目录 (C5) ](https://docs.microsoft.com/compliance/regulatory/offering-c5-germany) (Microsoft 365) 
 - 德国-联邦数据保护法案 (Microsoft 365) 
 - [格雷姆-里奇-比利雷法案，Title V，副标题 A，财务隐私](offering-glba.md) (Microsoft 365) 
 - 希腊-定律2472/1997 在保护个人数据 (Microsoft 365) 的个人方面提供保护
 - 夏威夷-个人信息的安全违规章节487N
-- Microsoft 365、Intune) 的[HIPAA/高科技](offering-hipaa-hitech.md) (
-- [HITRUST](offering-hitrust.md) (Microsoft 365) 
+- Microsoft 365、Intune) 的[HIPAA/高科技](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech) (
+- [HITRUST](https://docs.microsoft.com/compliance/regulatory/offering-hitrust) (Microsoft 365) 
 - 中国香港-个人数据 (隐私) Ordinance (Microsoft 365) 
 - 印度-2000 (的 IT 行为 Microsoft 365) 
 - 印度信息技术 (合理的安全实践和过程以及敏感的个人数据或信息) 规则
 - 印度尼西亚-定律 11/2008 (Microsoft 365) 
 - 印度尼西亚 Peraturan Pemerintah 不为 82 Tahun 2012-政府法规-Data Protection 规章 (Microsoft 365) 
 - IRAP v3
-- [IRS-P1075](offering-irs-1075.md) (Microsoft 365) 
+- [IRS-P1075](https://docs.microsoft.com/compliance/regulatory/offering-irs-1075) (Microsoft 365) 
 - IRS-收入过程98-25 自动化记录
 - ISO 15489 (Microsoft 365) 
-- [ISO 22301:2019](offering-iso-22301.md) (Microsoft 365) 
+- [ISO 22301:2019](https://docs.microsoft.com/compliance/regulatory/offering-iso-22301) (Microsoft 365) 
 - ISO 27005:2018 (Microsoft 365) 
-- [ISO 27017:2015](offering-iso-27017.md) (Microsoft 365) 
+- [ISO 27017:2015](https://docs.microsoft.com/compliance/regulatory/offering-iso-27017) (Microsoft 365) 
 - ISO 27799 运行状况 informatics —使用 ISO/IEC 27002 () 的信息安全管理。 Microsoft 365
 - ISO 31000:2018 (Microsoft 365) 
 - ISO 80001-1 针对 IT 的风险管理应用程序-将医疗设备纳入 (Microsoft 365) 
-- [ISO/IEC 27018:2014](offering-iso-27018.md)
-- [ISO/IEC 27701:2019](offering-iso-27701.md) (Microsoft 365) 
+- [ISO/IEC 27018:2014](https://docs.microsoft.com/compliance/regulatory/offering-iso-27018)
+- [ISO/IEC 27701:2019](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701) (Microsoft 365) 
 - 以色列隐私保护 (将数据传输到国外的数据库) 法规 (Microsoft 365) 
 - ITU X. 1052 Information Security Management Framework (Microsoft 365) 
 - 日本-在禁止未授权的计算机访问 (Microsoft 365) 时执行操作
@@ -198,11 +198,11 @@ ms.locfileid: "49374015"
 - 墨西哥-联邦消费者保护法律 (Microsoft 365) 
 -  (Microsoft 365) 的墨西哥联邦数据保护法律
 -  (MARS-E) 2.0 (Microsoft 365 的交换的最低可接受风险标准) 
-- [运动图片关联 (MPA) 内容安全最佳实践](offering-mpaa.md) (Microsoft 365) 
+- [运动图片关联 (MPA) 内容安全最佳实践](https://docs.microsoft.com/compliance/regulatory/offering-mpaa) (Microsoft 365) 
 - 缅甸语-保护公民隐私和安全性的法律
 - NAIC-保护客户信息模型规章 MDL-673 (Microsoft 365) 的标准
 - 尼泊尔-从信息法案
-- [NERC CIP](offering-nerc-cip.md) (Microsoft 365) 
+- [NERC CIP](https://docs.microsoft.com/compliance/regulatory/offering-nerc-cip) (Microsoft 365) 
 - 荷兰-个人数据保护法案/1999 (Microsoft 365) 
 - 内华达章 603A-个人信息 (Microsoft 365 的安全性和隐私) 
 - Microsoft 365) 的纽约隐私法案-草稿 (
@@ -216,8 +216,8 @@ ms.locfileid: "49374015"
 - Microsoft 365 (NIST 800-37) 
 - NIST 800-53
 - Microsoft 365 (NIST 800-63 数字标识准则) 
-- Microsoft 365 ([NIST 800-171](offering-nist-sp-800-171.md)) 
-- Microsoft 365 ([NIST CSF](offering-nist-csf.md)) 
+- Microsoft 365 ([NIST 800-171](https://docs.microsoft.com/compliance/regulatory/offering-nist-sp-800-171)) 
+- Microsoft 365 ([NIST CSF](https://docs.microsoft.com/compliance/regulatory/offering-nist-csf)) 
 - NIST 隐私框架
 - NIST 特殊出版物 800-128 (Microsoft 365) 
 - NIST 特殊出版物1800-1 在 (Microsoft 365) 的移动设备上保护电子医疗记录
@@ -227,7 +227,7 @@ ms.locfileid: "49374015"
 - 阿曼-电子事务法律 (Microsoft 365) 
 - OWASP 的主动控制（针对开发人员2018） (Microsoft 365) 
 - 巴基斯坦电子数据保护法案 2005-草稿 (Microsoft 365) 
-- Microsoft 365) 的[PCI DSS (3.2.1](offering-pci-dss.md)
+- Microsoft 365) 的[PCI DSS (3.2.1](https://docs.microsoft.com/compliance/regulatory/offering-pci-dss)
 - 秘鲁法规法律29733数据隐私保护法
 -  (Microsoft 365) 的菲律宾 BSP 信息安全管理准则
 - 菲律宾数据隐私法案为 2012 (Microsoft 365) 
@@ -236,23 +236,23 @@ ms.locfileid: "49374015"
 - 卡塔尔云安全策略
 - RBNZ BS11 外包策略 (Microsoft 365) 
 -  (Microsoft 365) 的个人数据保护的摩尔多瓦法律共和国
--  (Microsoft 365) [中保留印度网络安全框架 Bank](offering-rbi-irdai-india.md)
+-  (Microsoft 365) [中保留印度网络安全框架 Bank](https://docs.microsoft.com/compliance/regulatory/offering-rbi-irdai-india)
 - 罗马尼亚-Data Protection 定律 190/2018 (Microsoft 365) 
 - 俄罗斯联邦法律 149-信息、信息技术和信息安全 FZ
-- 关于个人数据 (Microsoft 365) 的[俄语联合联邦法律](offering-russia-data-localization.md)
+- 关于个人数据 (Microsoft 365) 的[俄语联合联邦法律](https://docs.microsoft.com/compliance/regulatory/offering-russia-data-localization)
 -  (Microsoft 365) 的圣卢西亚数据保护法案
-- [SEC 17-4 () ](offering-sec-17a-4.md) (Microsoft 365) 
+- [SEC 17-4 () ](https://docs.microsoft.com/compliance/regulatory/offering-sec-17a-4) (Microsoft 365) 
 - Microsoft 365 (的 SIG) 
 - 新加坡-银行法案 (盖. 19) 
 - 新加坡-Cybersecurity 2018 (Microsoft 365) 
 - 新加坡-IMDA IoT 网络安全指南 (Microsoft 365) 
 - 新加坡-新加坡技术风险管理框架 (Microsoft 365) 的货币颁发机构
-- [新加坡-多层云安全性 (MTCS) Standard](offering-mtcs-singapore.md) (Microsoft 365) 
+- [新加坡-多层云安全性 (MTCS) Standard](https://docs.microsoft.com/compliance/regulatory/offering-mtcs-singapore) (Microsoft 365) 
 - 新加坡-外包服务提供商审核报告 (OSPAR)  (Microsoft 365) 
 - 新加坡-个人数据保护法案/2012 (Microsoft 365) 
 - 新加坡垃圾邮件控制法案 (Microsoft 365) 
-- [SOC 1](offering-soc.md) (Microsoft 365) 
-- [SOC 2](offering-soc.md) (Microsoft 365) 
+- [SOC 1](https://docs.microsoft.com/compliance/regulatory/offering-soc) (Microsoft 365) 
+- [SOC 2](https://docs.microsoft.com/compliance/regulatory/offering-soc) (Microsoft 365) 
 - 南非消费者保护法案 68 2008 (Microsoft 365) 
 - 南非消费者保护法案 68 2008 (Microsoft 365) 
 - 南部非洲电子通信和事务法案，2002 (Microsoft 365) 
@@ -269,17 +269,17 @@ ms.locfileid: "49374015"
 - 泰国 PDPA (Microsoft 365) 
 - 中国的商业机密法案 (Microsoft 365) 
 - 特立尼达和多巴哥数据保护 (法案 13/2011)  (Microsoft 365) 
-- [受信任的信息安全评估交换](offering-tisax-germany.md)
+- [受信任的信息安全评估交换](https://docs.microsoft.com/compliance/regulatory/offering-tisax-germany)
 - 土耳其-KVKK 保护个人数据 6698 (Microsoft 365) 
 - UAE-联邦法律2019不在使用中的信息和通信技术 (ICT) 在健康字段中
 - 英国-近海石油公司活动管理法规/2011 (Microsoft 365) 
-- [英国网络 Essentials](offering-cyber-essentials-plus-uk.md) (Microsoft 365) 
+- [英国网络 Essentials](https://docs.microsoft.com/compliance/regulatory/offering-cyber-essentials-plus-uk) (Microsoft 365) 
 - 英国-适用于国防供应商标准 (Microsoft 365) 的网络安全
 - 英国的隐私和电子通信 (Microsoft 365) 
 - 乌克兰-保护个人数据法律 (Microsoft 365) 
 - 美国 DoE 10 CFR Part 810 (Microsoft 365) 
 - 美国联邦信息安全现代化法案，2014 (FISMA)  (Microsoft 365) 
-- Microsoft 365 ([美国 FERPA](offering-ferpa.md)) 
+- Microsoft 365 ([美国 FERPA](https://docs.microsoft.com/compliance/regulatory/offering-ferpa)) 
 - Microsoft 365 US-Cloud Act () 
 - Microsoft 365) ，犹他州消费者信用防护法案 (
 - 乌兹别克斯坦个人数据上的法律

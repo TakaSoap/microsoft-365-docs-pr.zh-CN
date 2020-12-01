@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: 4f98adbcee2b3daf4b347a16137d61cc0e790486
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087189"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519807"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -55,7 +55,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 |[敏感度标签](sensitivity-labels.md)| 通过应用、服务和设备提供的单一解决方案，可在你的组织内外进行标记并保护你的数据 <br /><br />示例方案：[在 Power BI 中应用和查看敏感度标签，并保护导出的数据](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[开始使用敏感度标签](get-started-with-sensitivity-labels.md) |
 |[Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 对于 Windows 计算机，扩展了其他特性和功能的敏感标签，包括标记和保护文件资源管理器和 PowerShell 中的所有文件类型<br /><br /> 示例附加功能：[自定义配置 Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 信息保护统一标记客户端管理员指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[双密钥加密](double-key-encryption.md)| 在所有情况下，只有你可以解密受保护的内容，或者为了满足监管要求，你必须在地理范围内持有加密密钥 | [部署双密钥加密](double-key-encryption.md#deploy-dke)|
-|[Office 365 邮件加密 (OEM)](ome.md)| 加密发送到任意设备上任何用户的电子邮件和附加文档，以便仅授权的收件人可阅读电子邮件信息  <br /><br />示例方案： [撤消通过高级邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 邮件加密 (OME)](ome.md)| 加密发送到任意设备上任何用户的电子邮件和附加文档，以便仅授权的收件人可阅读电子邮件信息  <br /><br />示例方案： [撤消通过高级邮件加密进行加密的电子邮件](revoke-ome-encrypted-mail.md) | [设置全新的邮件加密功能](set-up-new-message-encryption-capabilities.md)|
 |[使用客户密钥执行服务加密](customer-key-overview.md) | 防止未经授权的系统或人员查看数据，并在 Microsoft 数据中心中补充 BitLocker 磁盘加密 | [设置 Office 365 的客户密钥](customer-key-set-up.md)|
 |[SharePoint 信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保护 SharePoint 列表和库，以便当用户签出文档时，对下载的文件进行保护，仅授权人员可根据你指定的策略查看和使用该文件 | [在 SharePoint 管理中心设置信息权限管理 (IRM)](set-up-irm-in-sp-admin-center.md)|
 [权限管理连接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |仅适用于使用 Exchange 或 SharePoint Server 的现有本地部署或运行 Windows Server 和文件分类基础结构的文件服务器 (FCI) | [部署 RMS 连接器的步骤](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
