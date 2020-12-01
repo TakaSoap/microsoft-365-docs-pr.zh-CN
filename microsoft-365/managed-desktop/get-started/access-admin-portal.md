@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371666"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519325"
 ---
 # <a name="access-the-admin-portal"></a>访问管理门户
 
@@ -59,7 +59,7 @@ ms.locfileid: "49371666"
 如果你需要有关分配 Azure Active Directory 角色的帮助，请参阅 [Azure Active directory 中的管理员角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 为了便于管理内置角色，已为每个自定义角色创建安全组 (例如，"新式工作区角色–安全管理器" ) 。 若要将用户分配给其中一个安全组，请按照以下步骤操作：
-1.  转到 Azure 门户并导航到 Azure Active Directory 边栏。
+1.  转到 Microsoft 终结点管理器门户
 2.  选择左侧的 "组"。
 3.  搜索新式工作区角色，然后选择与要分配的角色相关联的组。 
 4.  选择左侧的 "成员"，然后在命令栏上选择 "+ 添加成员"。

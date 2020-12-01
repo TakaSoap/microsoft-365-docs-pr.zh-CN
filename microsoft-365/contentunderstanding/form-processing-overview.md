@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表单处理
-ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087399"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519666"
 ---
 # <a name="form-processing-overview"></a>表单处理概述
 
@@ -35,8 +35,6 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI 生成器](https://do
 ![文档库视图](../media/content-understanding/doc-lib-done.png)</br>  
 
 你可以使用示例文件来训练模型，并定义将从表单提取的信息。 文档的布局通过培训你的模型获知。 只需 5 个表单文档即可开始操作。 AI 生成器将分析示例文件中的键 - 值对，你也可以手动识别可能没有检测到的键 - 值对。  可通过 AI 生成器测试示例文件的模型准确性。
-
-至少需要 5 个表单文档才能开始操作。 AI 构建分析示例文件中的键 - 值对，然后手动识别可能没有检测到的键 - 值对。  可通过 AI 生成器测试示例文件的模型准确性。
 
 训练并发布模型后，模型将创建 [Power Automate 流程](https://docs.microsoft.com/power-automate/getting-started)。 将文件上传到 SharePoint 文档库时将运行该流程，并提取模型中标识的数据。 提取的数据将显示在模型的文档库视图的列中。
 

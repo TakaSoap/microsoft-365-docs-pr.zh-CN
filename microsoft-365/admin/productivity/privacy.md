@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用效率分数保护隐私的方式。
-ms.openlocfilehash: 8686c7c86249a408fe8d4fda14c2ae23a168cafe
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: c88886e9d1470bda48d023b77472e7dd296508a0
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999402"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519349"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>用于提高工作效率的隐私控制分数
 
@@ -54,7 +54,7 @@ ms.locfileid: "48999402"
 
 将报告读者角色分配给负责更改管理和采用的任何人。 通过此角色，他们可以访问完整的体验，包括租户级指标和每用户级别的详细信息。
 
-"人员体验报表" 包含每个用户的活动详细信息，每个类别的详细信息页面。 分配名为使用率摘要报告读取器的自定义角色。 (可从) 2020 年10月29日开始，仅支持人员体验的聚合指标的访问。 必须通过 PowerShell cmdlet 分配此角色，才能将其分配给11/15/2020 上的 Microsoft 管理中心。
+"人员体验报表" 包含每个用户的活动详细信息，每个类别的详细信息页面。 分配名为使用率摘要报告读取器的自定义角色。 (可从) 2020 年10月29日开始，仅支持人员体验的聚合指标的访问。 必须通过 PowerShell cmdlet 来分配此角色，直到此角色在今年晚些时候可分配给 Microsoft 管理中心。
 
 若要将使用率摘要报告读者角色分配给 PowerShell，请执行以下操作：
 
@@ -62,6 +62,7 @@ ms.locfileid: "48999402"
 
 ```powershell
 Connect-AzureAD
+Enable-AzureADDirectoryRole -RoleTemplateId '75934031-6c7e-415a-99d7-48dbd49e875e'
 $role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
 Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
 $u=Get-AzureADUser -ObjectId <user upn>
@@ -76,9 +77,9 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 若要使为所有报告匿名收集的数据，您必须是全局管理员。 此操作将隐藏所有报告中的可识别信息（如用户、组和网站名称），包括工作效率分数和 Microsoft 365 使用率。
 
-1. 在管理中心中，转到 " **设置**   >   **组织设置** "，在 " **服务** " 选项卡下，选择 " **报告** "。
-2. 选择 "  **报告** "，然后选择  **显示用户、组和网站名称的匿名标识符，以提高工作效率的分数和使用情况报告** 。 此设置既适用于使用情况报告，也适用于模板应用。
-3. 选择 "  **保存更改** "。
+1. 在管理中心中，转到 "**设置**   >   **组织设置**"，在 "**服务**" 选项卡下，选择 "**报告**"。
+2. 选择 "  **报告**"，然后选择  **显示用户、组和网站名称的匿名标识符，以提高工作效率的分数和使用情况报告**。 此设置既适用于使用情况报告，也适用于模板应用。
+3. 选择 "  **保存更改**"。
 
 :::image type="content" source="../../media/orgsettings_anonymous.jpg" alt-text="将用户信息设为匿名的报告。":::
 
@@ -86,8 +87,8 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 当工作效率分数通常可用时，您还可以选择不在工作效率分数方面的人员体验。 如果选择退出，则组织中的任何人都无法查看这些指标，并且您的组织将从涉及通信、会议、团队合作、内容协作和移动性的任何计算中删除。
 
-1. 在管理中心中，转到 " **设置**   >   **组织设置** "，在 " **服务** " 选项卡下，选择 " **报告** "。
-2. 选择 "  **报告** "，然后取消选中 "  **允许将 Microsoft 365 使用率数据用于人们体验见解** " 的复选框。 若要了解如何在 Intune 配置管理器中修改终结点分析的数据共享设置，请单击 " **了解更多** "。
-3. 选择 "  **保存更改** "。
+1. 在管理中心中，转到 "**设置**   >   **组织设置**"，在 "**服务**" 选项卡下，选择 "**报告**"。
+2. 选择 "  **报告**"，然后取消选中 "  **允许将 Microsoft 365 使用率数据用于人们体验见解**" 的复选框。 若要了解如何在 Intune 配置管理器中修改终结点分析的数据共享设置，请单击 " **了解更多**"。
+3. 选择 "  **保存更改**"。
 
 :::image type="content" source="../../media/orgsettingspageoptout.jpg" alt-text="&quot;组织设置&quot; 页，您可以在其中选择 &quot;人员&quot; 体验。":::

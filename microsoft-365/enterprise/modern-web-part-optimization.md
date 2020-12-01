@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: 了解如何使用页面诊断来优化 SharePoint Online 新式网站页面中的 web 部件的性能。
-ms.openlocfilehash: 7dcfcbfe033ef5f4257cc9688b61aca3227ade8b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46687876"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519747"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>在 SharePoint Online 新式网站页面中优化 Web 部件性能
 
@@ -46,9 +46,9 @@ SharePoint Online 新式网站页面包含可能影响整个页面加载时间�
 
 可能的结果包括：
 
-- **注意事项**（红色）：任何在视区（页面首先加载的画面可见部分）显示的_自定义_ web 组件，加载会耗时超过**两**秒。 加载时间超过**四**秒的视区外任何_自定义_ web 部件。 总加载时间在测试结果中显示，并按模块加载、延迟加载、初始化和呈现进行细分。
-- **改进机会**（黄色）：可能影响页面加载时间的项目将在此部分显示，应该对这些项目进行审查和监控。 这可能包括“开箱即用”(OOTB) Microsoft Web 部件。 此部分显示的任何 Microsoft Web 部件结果都会自动报告给 Microsoft，因此**不需要执行任何操作**。 如果你的页面性能非常缓慢，并且页面上的**所有 Microsoft Web 部件**都显示在“**改进机会**”部分的结果中，则应仅记录支持票证以进行调查。 请注意，未来的 SharePoint 页面诊断工具更新将根据 Microsoft Web 部件的特定配置进一步细分结果。
-- **不需要执行任何操作**（绿色）：任何 Web 部件返回数据的时间都不超过**两**秒钟。
+- **注意事项**（红色）：任何在视区（页面首先加载的画面可见部分）显示的 _自定义_ web 组件，加载会耗时超过 **两** 秒。 加载时间超过 **四** 秒的视区外任何 _自定义_ web 部件。 总加载时间在测试结果中显示，并按模块加载、延迟加载、初始化和呈现进行细分。
+- **改进机会**（黄色）：可能影响页面加载时间的项目将在此部分显示，应该对这些项目进行审查和监控。 这可能包括“开箱即用”(OOTB) Microsoft Web 部件。 此部分显示的任何 Microsoft Web 部件结果都会自动报告给 Microsoft，因此 **不需要执行任何操作**。 如果你的页面性能非常缓慢，并且页面上的 **所有 Microsoft Web 部件** 都显示在“**改进机会**”部分的结果中，则应仅记录支持票证以进行调查。 请注意，未来的 SharePoint 页面诊断工具更新将根据 Microsoft Web 部件的特定配置进一步细分结果。
+- **不需要执行任何操作**（绿色）：任何 Web 部件返回数据的时间都不超过 **两** 秒钟。
 
 如果“**Web 部件影响页面加载时间**”结果显示在结果的“**需要注意**”或“**改进机会**”部分，请单击结果以查看有关哪些 Web 部件加载缓慢的详细信息。 适用于 SharePoint 的页面诊断工具的未来更新可能包括更新分析规则，因此请确保始终拥有该工具的最新版本。
 
@@ -73,14 +73,14 @@ SharePoint Online 新式网站页面包含可能影响整个页面加载时间�
 Web 部件性能较差的原因有三类。 使用以下信息确定哪些问题适用于你的方案并进行修正。
 
 - Web 部件脚本大小和依赖项
-  - 优化_仅为视图模式_呈现主线方案的初始脚本。
+  - 优化 _仅为视图模式_ 呈现主线方案的初始脚本。
   - 移动使用不频繁的方案并编辑模式代码（如属性窗格）以使用 _import()_ 语句分隔区块。
   - 审查 _package.json_ 文件的依赖项以完全删除任何死代码。 将任何仅限测试/内部版本的依赖项移动到 devDependencies。
   - 最佳静态资源下载需要使用 Office 365 CDN。 公用 CDN 来源更适合 _js/css_ 文件。 有关使用 Office 365 CDN 的详细信息，请参阅[结合使用 Office 365 内容分发网络 (CDN) 和 SharePoint Online](use-microsoft-365-cdn-with-spo.md)。
-  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)。
+  - 重复使用作为 SharePoint 框架 (SPFx) 一部分的 _React_ 和 _Fabric 导入_ 等框架。 有关详细信息，请参阅 [SharePoint 框架概述](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview)。
   - 确保你使用的是最新版本的 SharePoint 框架，并在新版本推出时进行升级。
 - 数据提取/缓存
-  - 如果 Web 部件依赖额外的服务器调用来提取数据以进行显示，请确保这些服务器 API 运行快速且/或实施客户端缓存（例如，对于较大的集使用 _localStorage_ 或 _IndexDB_）。
+  - 如果 web 部件依赖于额外的服务器调用来获取用于显示的数据，请确保这些服务器 Api 速度快和/或实现客户端缓存 (例如，使用 _localStorage_ 或 _IndexedDB_ 为大型集) 。
   - 如果需要多次调用来呈现关键数据，请考虑在服务器上进行批处理或将请求合并到单个调用的其他方法。
   - 或者，如果某些数据元素需要较慢的 API，但对初始呈现并不重要，请将这些元素与在呈现关键数据后执行的单独调用进行分离。
   - 如果多个部件使用相同的数据，请使用公用数据层以避免重复调用。

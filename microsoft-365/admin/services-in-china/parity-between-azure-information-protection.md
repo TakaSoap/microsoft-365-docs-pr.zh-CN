@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 了解有关由世纪互联运营的 Office 365 的 Azure 信息保护以及如何为中国的客户配置它的详细信息。
 monikerRange: o365-21vianet
-ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7be40466c43a49cf51a2a2c1c273cef035bee831
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644659"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519337"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世纪互联运营的 Office 365 的 Azure 信息保护与商业产品之间的奇偶校验
 
@@ -42,8 +42,6 @@ ms.locfileid: "48644659"
 - 商业云中用户的文档和电子邮件附件共享目前不可用。 这包括由商业云中由世纪互联用户运营的 Office 365、商业云中由世纪互联用户运营的非 Office 365 以及拥有 RMS for 个人许可证的用户。
   
 - SharePoint (受 IRM 保护的网站和库) 的 IRM 目前不可用。
-  
-- 权限管理连接器当前不可用。
   
 - AD RMS 的移动设备扩展目前不可用。
 

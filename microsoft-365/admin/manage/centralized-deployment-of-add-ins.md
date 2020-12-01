@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 确定您的租户和用户是否符合要求，以便您可以使用集中部署来部署 Office 外接程序。
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681620"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519361"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>确定加载项的集中部署是否适用于你的组织
 
@@ -45,7 +45,7 @@ ms.locfileid: "48681620"
   
 ## <a name="requirements"></a>Requirements
 
-集中部署加载项需要用户将 Microsoft 365 应用用于企业版的 Microsoft 365 或 Microsoft 365 for business (，并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
+集中部署加载项时，需要用户使用 Microsoft 365 企业版 Sku： E3/E5/F3 或 Business Sku： Business Basic、Business Standard、Business Premium (并使用组织 ID) 登录 Office，并拥有 Exchange Online 和活动 Exchange Online 邮箱。 你的订阅目录必须位于或联合到 Azure Active Directory 中。
 您可以查看以下 Office 和 Exchange 的特定要求，或使用 [集中部署兼容性检查器](#centralized-deployment-compatibility-checker)。
 
 集中部署不支持以下内容：
@@ -55,17 +55,17 @@ ms.locfileid: "48681620"
 - 外接程序部署到本地邮箱的 Exchange
 - 部署到 SharePoint 的加载项  
 - 团队应用程序
-- 组件对象模型 (COM) 或 Visual Studio Tools for Office (VSTO) 的加载项的部署
-- 不包括 Exchange （如 Microsoft 365 商业应用程序）的 Microsoft 365 部署
+- 组件对象模型的部署 (COM) 或 Visual Studio Tools for Office (VSTO) 外接程序。
+- 不包括 Exchange Online （如 Sku： Microsoft 365 商业版和 Microsoft 365 应用程序的 microsoft 应用程序）的 Microsoft 365 部署。
 
 ### <a name="office-requirements"></a>Office 要求
 
 - 对于 Word、Excel 和 PowerPoint 外接程序，您的用户必须使用下列项之一：
-  - 在 Windows 设备上，microsoft 365 Apps for Microsoft 365 for enterprise 或 Microsoft 365 for business 中的 Microsoft 应用版本1704或更高版本。
+  - 在 Windows 设备上，Microsoft 365 企业版 Sku 的版本1704或更高版本： E3/E5/F3 或 Business Sku： Business Basic、商业标准、商业高级版。
   - 在 Mac 上，版本15.34 或更高版本。
 
 - 对于 Outlook，您的用户必须使用以下各项之一： 
-  - Microsoft 365 Apps for Microsoft 365 for enterprise 或 Microsoft 365 for business 中的 Microsoft 应用版本1701或更高版本。
+  - Microsoft 365 企业版 Sku 的版本1701或更高版本： E3/E5/F3 或 Business Sku： Business Basic、商业标准、商业高级版。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更高版本。
   - 版本16.0.4494.1000 或更高版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
   - 版本15.0.4937.1000 或更高版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*
@@ -74,20 +74,6 @@ ms.locfileid: "48681620"
 - 适用于 Android 的 Outlook mobile 版本2.2.145 或更高版本 
     
     * MSI 版本的 Outlook 在相应的 Outlook 功能区中显示管理员安装的加载项，而不是 "我的外接程序" 部分。
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>了解是否已安装适用于企业的 Microsoft 365 应用程序
-
-若要将 Microsoft 365 应用程序用于企业版，用户必须拥有 Microsoft 365 帐户，并且必须已分配许可证。 有关详细信息，请参阅 [适用于企业的 Microsoft 365 应用概述](https://go.microsoft.com/fwlink/p/?linkid=846328)。
-
-检测用户是否已安装 Microsoft 365 应用程序并最近是否使用它的最简单方法是使用 Microsoft Office 激活报告，该报告在 Microsoft 365 管理中心中提供。 该报告提供了一个列表，其中列出了在过去7天、30天、90天或180天内为企业激活 Microsoft 365 应用程序的所有用户。 出于集中部署目的，Windows 或 Mac 的桌面激活是报表中的重要列。 可将报表导出至 Excel。 有关报告的详细信息，请参阅 [管理中心内的 microsoft 365 报表-Microsoft Office 激活](../activity-reports/microsoft-office-activations.md)。
-  
-如果不想使用激活报告，可以让用户在其计算机上打开 Office 应用程序（如 Word），然后选择 " **文件** \> **帐户**"。 在 " **产品信息**" 下，您应看到 " **订阅产品** " 和 " **microsoft 365 For enterprise**" 或 "microsoft 365 商业高级版"，类似于下图中所示内容。
-
-![Office 应用程序中的产品信息](../../media/product-information-microsoft-365-enterprise.png)
-  
-若要获取适用于企业的 Microsoft 365 应用的帮助，请参阅 [适用于企业的 microsoft 365 应用的故障排除提示](https://go.microsoft.com/fwlink/p/?linkid=846339)。
-
 
 ### <a name="exchange-online-requirements"></a>Exchange Online 要求
 

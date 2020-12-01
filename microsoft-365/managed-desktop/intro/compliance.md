@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 7674777214cb5684bb02039f739458352bc701ad
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262275"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519606"
 ---
 # <a name="compliance"></a>合规性
 
@@ -24,17 +24,17 @@ ms.locfileid: "48262275"
 
 Microsoft 托管桌面已实现以下认证：
 
-- [ISO 27001 信息安全管理标准 (ISM) ](../../compliance/offering-ISO-27001.md)
-- [ISO 27701 隐私信息管理系统 (PIMS) ](../../compliance/offering-iso-27701.md)
-- [ISO 27017 信息安全控件的实践准则](../../compliance/offering-ISO-27017.md)
-- [ISO 27018 保护云中的个人数据的实践代码](../../compliance/offering-ISO-27018.md)
-- [ISO 9001 质量管理系统标准](../../compliance/offering-ISO-9001.md)
-- [ISO 20000-1 信息技术服务管理](../../compliance/offering-ISO-20000-1-2011.md)
-- [ISO 22301 业务连续性管理标准](../../compliance/offering-ISO-22301.md)
-- [云安全联盟 (CSA) STAR 证明](../../compliance/offering-CSA-STAR-Attestation.md)
-- [云安全联盟 (CSA) STAR 认证](../../compliance/offering-CSA-Star-Certification.md)
-- [服务组织控制 (SOC) 1、2、3](../../compliance/offering-SOC.md)
-- [支付卡行业 (PCI) 数据安全标准 (DSS)](../../compliance/offering-PCI-DSS.md)
+- [ISO 27001 信息安全管理标准 (ISM) ](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27001)
+- [ISO 27701 隐私信息管理系统 (PIMS) ](https://docs.microsoft.com/compliance/regulatory/offering-iso-27701)
+- [ISO 27017 信息安全控件的实践准则](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27017)
+- [ISO 27018 保护云中的个人数据的实践代码](https://docs.microsoft.com/compliance/regulatory/offering-ISO-27018)
+- [ISO 9001 质量管理系统标准](https://docs.microsoft.com/compliance/regulatory/offering-ISO-9001)
+- [ISO 20000-1 信息技术服务管理](https://docs.microsoft.com/compliance/regulatory/offering-ISO-20000-1-2011)
+- [ISO 22301 业务连续性管理标准](https://docs.microsoft.com/compliance/regulatory/offering-ISO-22301)
+- [云安全联盟 (CSA) STAR 证明](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
+- [云安全联盟 (CSA) STAR 认证](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
+- [服务组织控制 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [支付卡行业 (PCI) 数据安全标准 (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
 

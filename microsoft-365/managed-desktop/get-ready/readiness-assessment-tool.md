@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931920"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519817"
 ---
 # <a name="readiness-assessment-tool"></a>准备情况评估工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "48931920"
 
 该工具检查 Microsoft 终结点管理器中的设置 (具体来说，Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365，以确保它们可与 Microsoft 托管桌面配合使用。 Microsoft 托管桌面在上次运行 Azure AD 组织 (租户) 中的检查后，会保留与这些检查相关的数据。 12个月后，我们会将其保留在取消识别的表单中。  您可以选择删除我们收集的数据。
 
-至少具有 Intune 管理员角色的任何人都可以运行此工具，但两个检查 ([证书连接器](readiness-assessment-fix.md#certificate-connectors) 和 [多重身份验证](readiness-assessment-fix.md#multi-factor-authentication) 都需要额外的权限。
+至少具有 Intune 管理员角色的任何人都可以运行此工具，但两个检查 ([条件访问策略](readiness-assessment-fix.md#conditional-access-policies) 和 [多重身份验证](readiness-assessment-fix.md#multi-factor-authentication) 都需要额外的权限。
  
 评估工具将检查以下项：
 
@@ -30,11 +30,11 @@ ms.locfileid: "48931920"
 
 |支票  |说明  |
 |---------|---------|
-|Autopilot 部署配置文件     | 验证 Autopilot 部署配置文件的分配是否不适用于所有设备 ( *不应将* 配置文件分配给任何 Microsoft 托管桌面设备。 )        |
+|Autopilot 部署配置文件     | 验证 Autopilot 部署配置文件的分配是否不适用于所有设备 (*不应将* 配置文件分配给任何 Microsoft 托管桌面设备。 )        |
 |证书连接器     | 检查证书连接器的状态以确保它们处于活动状态   |
-|条件访问     | 验证是否未将条件访问策略分配给所有用户 ( *不* 应将条件访问策略分配给 Microsoft 托管桌面服务帐户。 )     |
-|设备合规性策略     | 检查是否未向所有用户分配 Intune 合规性策略 ( *不* 应将策略分配给任何 Microsoft 托管桌面设备。 )     |
-|设备配置文件     | 确认未将配置文件分配给所有用户或所有设备 ( *不* 应将配置文件分配给任何 Microsoft 托管桌面设备。 )      |
+|条件访问     | 验证是否未将条件访问策略分配给所有用户 (*不* 应将条件访问策略分配给 Microsoft 托管桌面服务帐户。 )     |
+|设备合规性策略     | 检查是否未向所有用户分配 Intune 合规性策略 (*不* 应将策略分配给任何 Microsoft 托管桌面设备。 )     |
+|设备配置文件     | 确认未将配置文件分配给所有用户或所有设备 (*不* 应将配置文件分配给任何 Microsoft 托管桌面设备。 )      |
 |设备类型限制     | 检查是否允许组织中的 Windows 10 设备注册 Intune        |
 |"注册状态" 页     | 确认未启用 "注册状态" 页      |
 |Intune 注册     | 验证 Azure AD 组织中的 Windows 10 设备是否已在 Intune 中自动注册         |
@@ -77,5 +77,5 @@ ms.locfileid: "48931920"
 |---------|---------|
 |Ready     | 完成注册之前，不需要执行任何操作。        |
 |欲    | 按照工具中的步骤执行注册和用户的最佳体验。 你 *可以* 完成注册，但必须先解决这些问题，然后再部署你的第一个设备。        |
-|未就绪 | 如果不解决这些问题， *注册将失败* 。 按照工具中的步骤解决这些问题。        |
+|未就绪 | 如果不解决这些问题，*注册将失败*。 按照工具中的步骤解决这些问题。        |
 |错误 | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
