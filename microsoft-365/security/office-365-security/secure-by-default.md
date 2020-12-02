@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '有关详细信息，请参阅 Exchange Online Protection (EOP 中的默认安全设置) '
-ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1a68c14a2d37f1fc3bfb032c4d3ca34c09a89890
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357859"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527765"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下在 Office 365 中安全
 
@@ -59,5 +59,5 @@ ms.locfileid: "49357859"
 
 - 网络钓鱼模拟：模拟攻击可帮助您在真正的攻击影响组织之前识别易受攻击的用户。
 - Security/SecOps 邮箱：安全团队使用的专用邮箱)  (好的和坏的中获取未筛选的邮件。 然后，团队可以查看它们是否包含恶意内容。
-- 第三方筛选器：某些第三方供应商建议将 EOP (SCL =-1) ，因为第三方筛选器将管理邮件筛选。 Microsoft 不建议关闭 EOP，因为 Defender for Office 365 需要 EOP。
+- 第三方筛选器：某些第三方供应商建议将 EOP (SCL =-1) ，因为第三方筛选器将管理邮件筛选。 Microsoft 不建议关闭 EOP，因为 Defender for Office 365 需要 EOP。 相反，此处的建议是为连接器启用 [增强的筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 。
 - 误报：你可能需要允许 Microsoft 仍在通过 [管理员提交](admin-submission.md)进行分析的某些邮件。 与所有替代一样，建议它们是临时性的。

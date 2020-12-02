@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 了解如何使用 PowerShell 在 Microsoft 365 环境中管理 Exchange Online 多地理位置设置。
-ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993372"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552003"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>在多地理位置环境中管理 Exchange Online 邮箱
 
@@ -37,7 +37,9 @@ ms.locfileid: "48993372"
 
 Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 参数连接到 Exchange Online PowerShell。 但是，若要连接到特定地理位置，您需要使用 _ConnectionUri_ 参数，以便可以 `?email=<emailaddress>` 在值中使用。
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>使用多重身份验证 (MFA) 连接到 Exchange Online PowerShell 中的地理位置
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>连接到 Exchange Online PowerShell 中的地理位置
+
+以下连接说明适用于或未配置为多重身份验证 (MFA) 的帐户。
 
 1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
 
@@ -47,31 +49,11 @@ Microsoft 365 或 Microsoft 365 GCC 客户通常不需要使用 _ConnectionUri_ 
 
 2. 在以下示例中，admin@contoso.onmicrosoft.com 是管理员帐户，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>在不使用 MFA 的情况下连接到 Exchange Online PowerShell 中的地理位置
-
-1. 在 Windows PowerShell 窗口中，通过运行以下命令加载 EXO V2 模块：
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. 运行以下命令：
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   在出现的“ **Windows PowerShell 凭据请求** ”对话框中，键入工作或学校帐户用户名和密码，再单击“ **确定** ”。
-
-3. 在以下示例中，目标地理位置是邮箱 olga@contoso.onmicrosoft.com 所在的位置。
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. 在出现的提示中，输入 admin@contoso.onmicrosoft.com 的密码。 如果将帐户配置为进行 MFA，还需要输入安全代码。
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>查看在 Exchange Online 组织中配置的可用地理位置
 
@@ -93,11 +75,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Exchange Online PowerShell 中的 **Get-Mailbox** cmdlet 显示邮箱的以下多地理位置相关属性：
 
-- **Database** ：对地理位置代码对应的数据库名称的前 3 个字母，告知你邮箱当前位于何处。 对于在线存档邮箱，应使用 **ArchiveDatabase** 属性。
+- **Database**：对地理位置代码对应的数据库名称的前 3 个字母，告知你邮箱当前位于何处。 对于在线存档邮箱，应使用 **ArchiveDatabase** 属性。
 
-- **MailboxRegion** ：指定管理员设置的地理位置代码（从 Azure AD 中的 **PreferredDataLocation** 同步）。
+- **MailboxRegion**：指定管理员设置的地理位置代码（从 Azure AD 中的 **PreferredDataLocation** 同步）。
 
-- **MailboxRegionLastUpdateTime** ：指明 MailboxRegion 的最后（自动或手动）更新时间。
+- **MailboxRegionLastUpdateTime**：指明 MailboxRegion 的最后（自动或手动）更新时间。
 
 若要查看邮箱的这些属性，请使用以下语法：
 
@@ -186,13 +168,13 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 7. 通过删除与邮箱关联的用户帐户，使邮箱再次处于非活动状态。 有关说明，请参阅 [从组织中删除用户](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步骤还将释放 Exchange Online 计划2许可证，以供其他用途。
 
-**注意** ：将非活动邮箱移到其他地理位置时，可能会影响内容搜索结果或从以前的地理位置搜索邮箱的功能。 有关详细信息，请参阅 [在多地理位置环境中搜索和导出内容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
+**注意**：将非活动邮箱移到其他地理位置时，可能会影响内容搜索结果或从以前的地理位置搜索邮箱的功能。 有关详细信息，请参阅 [在多地理位置环境中搜索和导出内容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置中创建新的云邮箱
 
 若要在特定地理位置中创建新邮箱，你需要执行以下任一步骤：
 
-- 按照上一步 [将现有仅云邮箱移动到特定地理位置](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)部分中所述配置 **PreferredDataLocation** 值， *然后再* 在 Exchange Online 中创建邮箱。 例如，在分配许可证前配置用户的 **PreferredDataLocation** 值。
+- 按照上一步 [将现有仅云邮箱移动到特定地理位置](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)部分中所述配置 **PreferredDataLocation** 值，*然后再* 在 Exchange Online 中创建邮箱。 例如，在分配许可证前配置用户的 **PreferredDataLocation** 值。
 
 - 在设置 **PreferredDataLocation** 值的同时分配许可证。
 
@@ -239,7 +221,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
    $RC = Get-Credential
    ```
 
-4. 在 Exchange Online PowerShell 中，创建一个类似于以下示例的新 **New-MoveRequest** ：
+4. 在 Exchange Online PowerShell 中，创建一个类似于以下示例的新 **New-MoveRequest**：
 
    ```powershell
    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
@@ -251,7 +233,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 ## <a name="multi-geo-reporting"></a>多地理位置报告
 
-Microsoft 365 管理中心中的“ **多地理位置使用情况报告** ”按地理位置显示用户计数。 该报告显示当前月份的用户分布，并提供过去 6 个月的历史数据。
+Microsoft 365 管理中心中的“**多地理位置使用情况报告**”按地理位置显示用户计数。 该报告显示当前月份的用户分布，并提供过去 6 个月的历史数据。
 
 ## <a name="see-also"></a>另请参阅
 

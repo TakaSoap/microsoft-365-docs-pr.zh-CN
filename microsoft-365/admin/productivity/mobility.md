@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 移动性人员体验工作效率分数的详细信息。
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804777"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551859"
 ---
 # <a name="mobility--people-experiences"></a>移动性–人员体验
 
-工作效率分数可帮助组织转换工作的完成情况，以了解有关用户如何使用 Microsoft 365 应用和支持技术体验的指标。 分数反映了组织&#39;的人员和技术体验类别的绩效，并将您的成绩与您的组织（如您的组织）进行比较。 "团队合作" 类别是 "人员体验" 下的度量的一部分。 若要了解详细信息，请参阅 [生产力分数概述](productivity-score.md) 。
+生产效率分数支持通过深入了解你的组织如何使用 Microsoft 365 及其技术来进行数字转换的旅程。 您组织的分数反映了人员和技术体验指标，并且可以与 emc 中与您的大小相似的基准进行比较。 移动类别是人员体验的一部分。 若要了解详细信息，请参阅 [生产力分数概述](productivity-score.md) 。
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>为什么您的组织&#39;移动总分问题
 
@@ -47,7 +47,7 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 1. **标头：** 显示有权访问 Microsoft 365 应用程序的人员的百分比，以及在多个平台上至少在其中一个应用程序上处于活动状态的人员。
 2. **正文：** 提供了有关如何在多个平台上使用这些应用程序以提高效率和满意度的详细信息。
 3. **可视化 (当前状态) ：** 显示至少有多少个用户在桌面、移动和 web 上使用了多个平台，如下所述的至少一个 Microsoft 365 (列表) ，如下所示：
-    - 蓝色 (彩色的 **水平条** ) 部分代表标头中表示的百分比。
+    - 蓝色 (彩色的 **水平条**) 部分代表标头中表示的百分比。
     - 条形图上 **的分数** 突出显示用于计算标头中百分比的 (分子/分母) 。
         - 分子：在最近28天中，在 Microsoft Outlook、Word、Excel、PowerPoint、OneNote 和 Microsoft 团队、Yammer 和 Skype 中的多个平台上使用任意应用程序的用户数。
         - 分母： Microsoft 365 应用程序、Exchange、Yammer、Microsoft 团队或 Skype 的许可人数，至少为最近28天中的1个。
@@ -56,19 +56,20 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>主要洞察力的趋势可视化
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="显示移动性的主要洞察力的图表-人员体验效率分数。":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="显示使用多个平台和时间的用户数的图表。":::
 
 此图显示趋势线，其中分子是已使用应用程序的人数，在过去的180天内。 折线图上的每个数据点都是最近28天的活动合计。 每个数据点都为 x 轴上的每个日期提供了在最近28天内至少在两个平台中使用应用程序的所有人员的计数。
 
 ### <a name="scoring-framework"></a>记分框架
 
-移动性分数衡量用户是在使用 Microsoft 365 应用-Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype 中的不同平台-桌面、web 和移动设备。
+组织的移动性得分组织 (聚合) 级别，无论用户是使用 Microsoft 365 应用程序-Outlook、团队、Word、Excel、PowerPoint、OneNote、Yammer 和 Skype-跨不同平台-桌面、web 和移动设备。
+在单个用户级别上不提供分数。
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>了解你的组织在多个平台和位置之间的工作方式
 
 ### <a name="use-of-outlook-across-platforms"></a>在平台之间使用 Outlook
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="显示移动性的主要洞察力的图表-人员体验效率分数。":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="显示多个用户在多个平台上使用 Outlook 的图表。":::
 
 1. **标头：** 显示 Outlook 上正在使用多个平台上的 Outlook 的活动用户的百分比。
 2. **正文：** 提供有关使用移动设备上的 Outlook 的值的信息，以帮助保持与电子邮件中任何位置的连接。
@@ -89,7 +90,7 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 
 ### <a name="use-of-teams-across-platforms"></a>跨平台使用团队
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="显示移动性的主要洞察力的图表-人员体验效率分数。":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="显示多个用户在多个或单个平台上使用团队的图表。":::
 
 1. **标头：** 显示在 Microsoft 团队中处于活动状态的、在多个平台上使用的人员的百分比。
 2. **正文：** 提供有关使用移动设备上的团队的值的信息，以帮助用户在使用任何位置时保持最新的邮件。
@@ -110,7 +111,11 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>跨平台使用 Microsoft 365 应用程序
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="显示移动性的主要洞察力的图表-人员体验效率分数。" 表示使用每个所考虑的应用程序（Word、Excel、PowerPoint 和 OneNote-跨单个或多个平台）的人数。 对于每个应用程序，条形图表示以下各项：
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="显示在多个或单个平台上使用 Microsoft 365 应用程序的人数的图表。":::
+
+1. **标头：** 显示在多个平台上 (Word、Excel、PowerPoint 和 OneNote) 的适用于 Microsoft 365 应用的活动人员的百分比。
+2. **正文：** 提供有关向组织中的人员提供的值的信息，以从任何位置访问其文件的灵活性。
+3. **可视化：** "垂直分组" 表示使用每个所考虑的应用程序（Word、Excel、PowerPoint 和 OneNote-跨单个或多个平台）的人数。 对于每个应用程序，条形图表示以下各项：
       - **多个平台：** 最近28天内跨至少两个平台的应用程序上活动的用户数
       - **仅桌面：** 最近28天内仅在桌面平台上在应用程序上活动的用户的号码
       - **仅 Web：** 最近28天内仅在 web 平台上的应用程序上活动的用户的号码
@@ -119,7 +124,7 @@ Microsoft 365 使用户可以跨应用程序灵活地工作，包括 Microsoft O
 
 ### <a name="remote-work"></a>远程工作
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="显示移动性的主要洞察力的图表-人员体验效率分数。":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="显示远程工作、现场或同时工作的人员数量的图表。":::
 
 1. **标头：** 显示仅在其公司&#39;s 网络以外的家庭或位置工作的人员所占的百分比。
 2. **正文：** 重点介绍了促进人员远程工作的重要性，而无需访问组织&#39;的物理办公室。

@@ -3,7 +3,7 @@ title: 从 Microsoft 云德国迁移到新的德国数据中心区域中的 Offi
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何从德国 Microsoft 云迁移到新的德国数据中心区域内的 Office 365 服务
-ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846936"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551530"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务
 
@@ -59,7 +59,7 @@ ms.locfileid: "48846936"
 
 \*\*\*这些服务的迁移的先决条件和影响将在 [Dynamics 365 Customer engagement](https://aka.ms/d365ceoptin) 文章中介绍。
 
-Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 租户迁移到新德国数据中心区域，则 SharePoint Online 迁移完成后，将不支持 Office 365 视频。 若要了解详细信息，请单击 [此处](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline) 。
+Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 租户迁移到新德国数据中心区域，则 SharePoint Online 迁移完成后，将不支持 Office 365 视频。 有关详细信息，请参阅 [Microsoft Cloud 德国 timeline](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)。
 
 ## <a name="how-is-the-migration-organized"></a>迁移是如何组织的？
 
@@ -69,7 +69,10 @@ Office 365 视频将于 2021年 3 月 1 日停用。 如果选择将 Office 365 
 
 在 [选择迁移](https://aka.ms/office365germanymoveoptin)时，将在所有启动的阶段执行迁移。 大多数迁移阶段都是作为后端服务操作执行的，并需要最少的客户交互，并在另一阶段执行。 在迁移过程中，将在迁移过程中通过 Microsoft 365 管理中心的邮件中心传递其他客户指导任务和整体迁移状态的启动。 任务的示例可能包括客户托管的 DNS 更新、Exchange 混合客户的混合安装或 Azure 迁移的重新配置。
 
-当自愿加入时，迁移并不会立即开始。 您的组织将添加到计划稍后迁移的租户列表中。 您可以立即开始 "预备工作" 阶段，因为这些阶段是确保成功迁移和完成后使用的关键。
+当自愿加入时，迁移并不会立即开始。 您的组织将添加到计划稍后迁移的租户列表中。 您可以立即开始 "预备工作" 阶段，因为这些阶段是确保成功迁移和在完成时使用的关键：
+
+- [迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
+- [其他预备工作](ms-cloud-germany-transition-add-pre-work.md)
 
 在租户迁移开始之前的一周，您将在邮件中心服务中收到通知，作为最后一条警告，指出所有先决条件都必须完整完成。
 
@@ -102,6 +105,7 @@ Microsoft 云德国中现有的 Microsoft 云德国 () 客户现在可以开始�
 第一步是通知 Microsoft，让我们有权将您的订阅和数据从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务。 有关说明，请参阅 [自愿加入过程](https://aka.ms/office365germanymoveoptin) ，并注意以下几点：
 
 - 所有正在迁移的客户需要验证与 Office 365 服务 [Office 365 url 和 IP 地址](urls-and-ip-address-ranges.md)的连接，其中包括新的德国数据中心区域。 Inaction 可能会导致服务和客户端出现故障。
+- 查看 " [预备工作](ms-cloud-germany-transition-add-pre-work.md) " 活动列表，以确保您的组织已得到通知并准备好进行更改。
 - 应查看 Office 365 platform 服务说明，以了解迁移到德语区域后，贵组织将提供哪些功能和服务。
 - 不会迁移试用版订阅，并将阻止所有付费订阅的迁移。 在迁移开始之前，您必须取消任何试用版或转换为付费订阅。
 
@@ -125,6 +129,7 @@ Microsoft 在新的德国数据中心区域提供 Office 365 租户从 Microsoft
 - 可通过现有在线服务合同访问。
 
 ### <a name="what-is-the-service-availability-between-the-different-office-365-cloud-service-offerings"></a>不同 Office 365 云服务方案中的服务可用性是什么？
+<h2 id="serv-avail"></h2>
 
 Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服务添加到 Microsoft 云德国。
 
@@ -133,7 +138,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 3. 组（新式组）
 4. Delve 配置文件
 5. Exchange Online Protection
-6. Defender for Office 365
+6. 适用于 Office 的 Defender 365
 7. 高级电子数据展示
 8. 高级数据管理
 9. SharePoint Online
@@ -153,7 +158,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 5. MyAnalytics
 6. 工作区分析
 7. Exchange Online Protection
-8. Defender for Office 365
+8. 适用于 Office 的 Defender 365
 9. 高级电子数据展示
 10. 高级安全管理
 11. 信息权限管理
@@ -180,7 +185,9 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 
 **Azure**
 
-如果你仅为 Azure 客户，则可以立即开始将 Azure 资源 [迁移](https://docs.microsoft.com/azure/germany/germany-migration-main) 到其他区域。 如果你拥有 Office 365、Dynamics 365 或 Power BI 的 Azure，请按照以下步骤操作。
+如果你仅为 Azure 客户，则可以立即开始将 Azure 资源 [迁移](https://docs.microsoft.com/azure/germany/germany-migration-main) 到其他区域。 
+
+如果你拥有 Office 365、Dynamics 365 或 Power BI 的 Azure，则必须执行迁移过程以确保在开始自定向 Azure 迁移之前成功迁移 AzureAD。 您必须在关闭服务之前完成 Azure 迁移，以使用您的 AzureAD 和 Office 365 组织维护您的 Azure 工作负载。
 
 **Office 365**
 
@@ -192,7 +199,7 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 
 ### <a name="will-the-price-change-for-the-office-365-services-that-i-use"></a>是否将对我使用的 Office 365 服务价格进行更改？
 
-是。 Microsoft&#39;s 全局云区域中的定价 (包括新的数据中心区域) 通常较低。
+是的。 Microsoft&#39;s 全局云区域中的定价 (包括新的数据中心区域) 通常较低。
 
 ### <a name="during-the-subscription-migration-what-skus-and-licenses-will-be-applied-to-my-organization-and-users"></a>在订阅迁移过程中，哪些 Sku 和许可证将应用到我的组织和用户？
 
@@ -266,13 +273,27 @@ Microsoft 云德国云服务提供了以下15个服务。 我们不会将新服�
 - 对于 Office 365，您可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。
 - 如果您是 Dynamics 365 客户接洽和 Power BI 客户，也是 Office 365，则可以使用 &quot; &quot; [Microsoft 365 管理中心](https://portal.office.de/)的 "需要帮助" 链接提交问题。 有关 Dynamics 365 Customer Engagement 支持选项，可查看[此处](https://docs.microsoft.com/dynamics365/get-started/support/)。 有关 Power BI 支持选项，可查看[此处](https://powerbi.microsoft.com/support/)。
 
-## <a name="more-information"></a>更多信息
 
-即将推出有关迁移到新的德国数据中心区域的其他信息。 将此页面做成书签，以便您可以签入并保持最新。
+## <a name="next-step"></a>后续步骤
+
+[选择加入迁移](ms-cloud-germany-migration-opt-in.md)
+
+## <a name="more-information"></a>详细信息
+
+入门：
 
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
-- [如何选择加入迁移](https://aka.ms/office365germanymoveoptin)
+- [如何选择加入迁移](ms-cloud-germany-migration-opt-in.md)
+- [迁移过程中的客户体验](ms-cloud-germany-transition-experience.md)
+
+在转换中移动：
+
+- [迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
+- [其他预备工作](ms-cloud-germany-transition-add-pre-work.md)
+- [服务](ms-cloud-germany-transition-add-general.md)、[设备](ms-cloud-germany-transition-add-devices.md)、[体验](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他信息。
+
+云应用：
+
 - [Dynamics 365 迁移计划信息](https://aka.ms/d365ceoptin)
 - [Power BI 迁移计划信息](https://aka.ms/pbioptin)
-- [Office 365 URL 和 IP 地址范围](https://aka.ms/o365endpoints)
 - [开始 Microsoft Teams 升级](https://aka.ms/SkypeToTeams-Home)

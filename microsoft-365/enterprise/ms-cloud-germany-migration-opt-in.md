@@ -3,7 +3,7 @@ title: 如何选择从德国 Microsoft 云（Microsoft Cloud Deutschland）迁�
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327185"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552081"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择从德国 Microsoft 云（Microsoft Cloud Deutschland）迁移到新的德国数据中心区域内的 Office 365 服务
 
@@ -62,10 +62,27 @@ ms.locfileid: "48327185"
 
 鼓励客户和合作伙伴租户管理员在管理中心中加入迁移，以便迁移过程可以尽快开始。
 
-## <a name="more-information"></a>更多信息
 
+## <a name="next-step"></a>后续步骤
+
+[了解迁移过程中的客户体验](ms-cloud-germany-transition-experience.md)
+
+## <a name="more-information"></a>详细信息
+
+入门：
+
+- [从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
-- [Office 365 德国 Microsoft 云客户迁移计划](https://aka.ms/office365germanymove)
-- [Dynamics 365 德国 Microsoft 云客户迁移计划](https://aka.ms/d365ceoptin)
-- [Power BI 德国 Microsoft 云客户迁移计划](https://aka.ms/pbioptin)
-- 使用“需要帮助?”提交问题 [Microsoft 365 管理中心](https://portal.office.de/)的链接
+- [迁移过程中的客户体验](ms-cloud-germany-transition-experience.md)
+
+在转换中移动：
+
+- [迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
+- [其他预备工作](ms-cloud-germany-transition-add-pre-work.md)
+- [服务](ms-cloud-germany-transition-add-general.md)、[设备](ms-cloud-germany-transition-add-devices.md)、[体验](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他信息。
+
+云应用：
+
+- [Dynamics 365 迁移计划信息](https://aka.ms/d365ceoptin)
+- [Power BI 迁移计划信息](https://aka.ms/pbioptin)
+- [开始 Microsoft Teams 升级](https://aka.ms/SkypeToTeams-Home)

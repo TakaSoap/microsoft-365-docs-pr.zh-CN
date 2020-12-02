@@ -2,8 +2,8 @@
 title: 设置文件存储和共享
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: 了解如何使用 OneDrive 和用于 Microsoft 365 存储和 Microsoft 365 文件共享的团队网站。
-ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: aa85789b950965a33c07214b5eaebf827ed8cc92
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906389"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525565"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在 Microsoft 365 中设置文件存储和共享
 
@@ -62,7 +62,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 |:-----|:-----|:-----|
 |**存储位置** <br/> |**它有何用途？** <br/> |**在此存储的内容** <br/> |
 |**OneDrive** <br/> |在 OneDrive 中存储内容类似于将文件存储在您的计算机上;其他任何人都无法轻松访问它们。  <br/> 有关详细信息，请参阅 [什么是 OneDrive For business？](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2) <br/> |其他工作组成员无需定期协作处理或访问的业务文件。  <br/> |
-|**SharePoint 团队网站** <br/> |协作. 在创建 Microsoft 365 组时 (例如，在 Microsoft 365 管理中心中，在 Outlook 中，或通过在 Microsoft 团队中创建团队) 为该组创建 SharePoint 团队网站。 同样，当您从 SharePoint 主页或新的 SharePoint 管理中心创建新的 SharePoint 团队网站时，它也会创建一个 Microsoft 365 组。 有关详细信息，请参阅 [什么是 sharepoint 团队网站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) 和 [在 SharePoint Online 中创建团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共享所有权的文件。 我们建议为您组织中的每个工作单元提供单独的工作组网站。 例如，若要将人员和财务文档保留为较小的团队，请创建一个单独的团队网站。  <br/> |
+|**SharePoint 团队网站** <br/> |协作. 在创建 Microsoft 365 组时 (例如，在 Microsoft 365 管理中心中，在 Outlook 中，或通过在 Microsoft 团队中创建团队) 中，为该组创建 SharePoint 团队网站。 同样，当您从 SharePoint 主页或新的 SharePoint 管理中心创建新的 SharePoint 团队网站时，它也会创建一个 Microsoft 365 组。 有关详细信息，请参阅 [什么是 sharepoint 团队网站？](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e) 和 [在 SharePoint Online 中创建团队网站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)。  <br/> |具有共享所有权的文件。 我们建议为您组织中的每个工作单元提供单独的工作组网站。 例如，若要将人员和财务文档保留为较小的团队，请创建一个单独的团队网站。  <br/> |
 
 > [!NOTE]
 > SharePoint 还有其他类型的网站可用于您的企业。 您可以使用 intranet 中的 [通信网站](https://support.microsoft.com/office/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) 为广泛的访问群体发布信息。 此外，您还可以使用 [中心网站](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f) 连接 intranet 中的网站。
@@ -71,7 +71,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 ### <a name="team-members-can-store-their-own-files-in-onedrive"></a>工作组成员可以在 OneDrive 中存储自己的文件
 
-在选择了 " (" 和 "SharePoint Online" 的企业中，每个人都已分配了 Microsoft 365 许可证。) 获取 OneDrive 云存储空间。 他们可以在这里存储与业务相关的文件以供从任何设备访问，并且这些文件仅适用于该用户。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
+你的企业中的每个人都已将 Microsoft 365 许可证分配 (并选择 SharePoint Online) 获取 OneDrive 云存储。 他们可以在这里存储与业务相关的文件以供从任何设备访问，并且这些文件仅适用于该用户。 例如，他们可能会存储草稿提案、其会议笔记或要放映的演示的脚本。
   
 员工还可以共享 OneDrive 文件和文件夹。 如果员工离开或离开公司，则其他人可以访问存储在 OneDrive (OneDrive 团队文件夹共享) 中的共享文件。
   
@@ -79,9 +79,9 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 1. 转到 <a href="https://portal.office.com/ " target="_blank">Microsoft 365 门户</a>，并使用你的用户名和密码登录。
 
-2. 在应用启动器中，选择 " **OneDrive** "。
+2. 在应用启动器中，选择 " **OneDrive**"。
 
-3. 在 OneDrive 中，工作组成员可以存储自己的与业务相关的文件。 您可以共享单个文件，也可以共享整个文件夹。 选择一个文件或文件夹，单击鼠标右键，然后选择 " **共享** "。
+3. 在 OneDrive 中，工作组成员可以存储自己的与业务相关的文件。 您可以共享单个文件，也可以共享整个文件夹。 选择一个文件或文件夹，单击鼠标右键，然后选择 " **共享**"。
 
     ![共享文件夹](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
@@ -93,7 +93,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
     !["共享链接" 对话框，其中显示键入内容并选择名称。](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
-5. 输入要与其共享的用户后，请选择 " **发送** "。 该电子邮件会立即发送给受邀人员。
+5. 输入要与其共享的用户后，请选择 " **发送**"。 该电子邮件会立即发送给受邀人员。
 
     ![共享链接，显示名称列表](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
@@ -107,17 +107,17 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 下面是添加文件的步骤：
   
-1. 在团队网站的主页上，从左侧导航菜单中选择 " **文档** "。 执行此操作后，会进入" **文档库** "。
+1. 在团队网站的主页上，从左侧导航菜单中选择 " **文档** "。 执行此操作后，会进入" **文档库**"。
   
 2. 当您仍登录到 Microsoft 365 时，请从任务栏或其他位置打开 Windows **文件资源管理器** 。 转到你想要向工作组网站上载的文件。
 
-3. 选择要上载到团队网站的文件，然后将其拖动到 **文档库** 。
+3. 选择要上载到团队网站的文件，然后将其拖动到 **文档库**。
   
 4. 完成后，文件会被同时存储在工作组网站和你的计算机中。
   
 5. 你可以从计算机中删除文件。 在下一步中， [使用电脑或 Mac 同步联机文件](#sync-online-files-with-your-pc-or-mac)，您将在计算机上为这些文件创建一个新位置。
 
-    如果要上载到工作组网站中的文件很多或很大，请继续阅读关于[向库中上载大文件或多个文件](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)的技巧。
+    如果有多个文件或大型文件要上传到团队网站，请阅读有关 [将大型文件或多个文件上载到库](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)中的以下提示。
 
     如果需要更多存储空间，请参阅[更改订阅的存储空间](../../commerce/add-storage-space.md)。
 
@@ -136,13 +136,13 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 2. 选择 " **同步** " 以同步所有文件。 或浏览到要同步的特定文件夹。
 
-3. 如果系统提示您切换应用程序，请选择 **"是"** 。 OneDrive 是执行同步的过程。
+3. 如果系统提示您切换应用程序，请选择 **"是"**。 OneDrive 是执行同步的过程。
   
 4. 如果你随后收到了 **设置 OneDrive** 提示，请使用你的工作或学校帐户登录。
 
     ![OneDrive 安装程序屏幕](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
-5. 如果尚未同步 OneDrive，则可能会看到 " **这是 onedrive 文件夹** " 屏幕。 检查 **OneDrive 文件夹** 下的路径是否在此处。 如果要使用其他路径，请选择 " **更改位置** "，然后选择 " **下一步** "。
+5. 如果尚未同步 OneDrive，则可能会看到 " **这是 onedrive 文件夹** " 屏幕。 检查 **OneDrive 文件夹** 下的路径是否在此处。 如果要使用其他路径，请选择 " **更改位置** "，然后选择 " **下一步**"。
 
     ![在此屏幕上更改本地文件夹](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
@@ -150,7 +150,7 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
     ![查看您的本地文件夹中的同步内容](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
-7. 通过打开计算机上团队文件夹中的文件来测试同步。 进行更改，然后选择" **保存** "。
+7. 通过打开计算机上团队文件夹中的文件来测试同步。 进行更改，然后选择" **保存**"。
 
 ## <a name="best-practices-for-file-storage-and-sharing"></a>文件存储和共享的最佳做法
 
@@ -158,11 +158,11 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>针对其他类型的小型企业的文件存储和协作建议
 
-- **唯一经营** ：使用 OneDrive 存储您自己的文件，并根据具体情况与客户共享这些文件。
+- **唯一经营**：使用 OneDrive 存储您自己的文件，并根据具体情况与客户共享这些文件。
 
-- **共同经营** ：两个所有者都使用 OneDrive 并在前后共享文件。
+- **共同经营**：两个所有者都使用 OneDrive 并在前后共享文件。
 
-- **需要访问文件的外部客户端或合作伙伴的企业** ：创建一个新的工作组网站，以存储和共享面向特定客户的文档。 将网站设置为仅允许访问该客户。 您无需担心，一个客户将意外获取对其他客户的信息的访问权限。
+- **需要访问文件的外部客户端或合作伙伴的企业**：创建一个新的工作组网站，以存储和共享面向特定客户的文档。 将网站设置为仅允许访问该客户。 您无需担心，一个客户将意外获取对其他客户的信息的访问权限。
 
 ### <a name="keep-private-files-private"></a>保持私人文件的私密性
 
@@ -189,15 +189,15 @@ OneDrive 和团队网站为你和你的员工提供随处访问。
 
 2. 转到 " **设置** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**组织设置**</a> " 页。
 
-3. 在 " **服务** " 选项卡上，选择 **"网上 Office** "。
+3. 在 " **服务** " 选项卡上，选择 **"网上 Office**"。
 
-4. 选中或取消选中此复选框以打开或关闭第三方存储，然后选择 " **保存更改** "。
+4. 选中或取消选中此复选框以打开或关闭第三方存储，然后选择 " **保存更改**"。
 
 ## <a name="next-steps"></a>后续步骤
 
 - [自定义用于文件存储和共享的团队网站](customize-team-site.md)。 此分步教程演示如何利用更多的存储和协作功能。
 
-- **在平板电脑和手机上设置 Office 应用** 。 您需要执行此操作，以便您可以 **编辑** 存储在 OneDrive 中的文件以及 tablet 或手机上的工作组网站中存储的文件。 如果您不安装平板电脑或手机的 Office 应用程序，您将能够查看这些文件但不能对其进行编辑。
+- **在平板电脑和手机上设置 Office 应用**。 您需要执行此操作，以便您可以 **编辑** 存储在 OneDrive 中的文件以及 tablet 或手机上的工作组网站中存储的文件。 如果您不安装平板电脑或手机的 Office 应用程序，您将能够查看这些文件但不能对其进行编辑。
 
   - [使用 Microsoft 365 在 Android 上安装和设置 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 

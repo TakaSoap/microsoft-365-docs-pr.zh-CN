@@ -1,5 +1,5 @@
 ---
-title: 调整条件访问
+title: 注册后调整设置
 description: 如何排除某些 Microsoft 帐户
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,29 +9,36 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8844c50f5faba609b3f5f53adc5ab45ba1dbaa74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529679"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527693"
 ---
-# <a name="adjust-conditional-access"></a>调整条件访问
+# <a name="adjust-settings-after-enrollment"></a>注册后调整设置
 
-如果您在组织中使用[条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)策略，则必须将其设置为排除某些帐户，以便 Microsoft 托管桌面能够正常工作。
+在 Microsoft 托管桌面中完成注册后，需要调整某些 Microsoft Intune 和 Azure Active Directory (Azure AD) 设置，以允许管理和维护安全性。 设置以下设置以排除包含 Microsoft 托管桌面设备和用户的 Azure AD 组。 有关排除组的步骤，请参阅 [条件访问：用户和组](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users)。
 
-为此，请按照下列步骤操作：
+## <a name="microsoft-intune-settings"></a>Microsoft Intune 设置
 
-1. 请参阅 how [to： Plan a 条件 Access deployment in The Azure Active Directory 中](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access#rollback-steps)的 "回滚步骤" 一节。
-2. 按照中的步骤操作，以排除所有策略的*新式 Workplace Service 帐户*组。
+- Autopilot 部署配置文件：排除 **新式工作区设备-所有**  Azure AD 组。 有关步骤，请参阅 [使用 Windows Autopilot 在 Intune 中注册 Windows 设备](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)。
+- 条件访问策略：排除 **新式的 Workplace Service 帐户** Azure AD 组。 有关步骤，请参阅 [条件访问：用户和组](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。
+- 多重身份验证：确保需要多重身份验证的任何条件访问策略排除 **新式 Workplace Service 帐户** Azure AD 组。 有关详细信息，请参阅 [条件访问策略](../get-ready/readiness-assessment-fix.md#conditional-access-policies) 和 [条件访问：要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+- 安全基准：排除 **新式工作区设备-所有**  Azure AD 组。 有关步骤，请参阅 [使用安全基准在 Intune 中配置 Windows 10 设备](https://docs.microsoft.com/mem/intune/protect/security-baselines)。
+- Windows 10 更新环：排除 **新式工作区设备-所有**  Azure AD 组。 有关步骤，请参阅 [在 Intune 中管理 Windows 10 软件更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
 
 
-如果您在条件访问方面遇到困难，请与管理员[支持](../working-with-managed-desktop/admin-support.md)联系。
+## <a name="azure-active-directory-settings"></a>Azure Active Directory 设置
+
+自助密码重置：选择 " **选择设置"，然后选择 "** **新式工作区设备-所有** Azure AD 组"。 有关详细信息，请参阅 [教程：使用户能够解锁其帐户或使用 Azure Active Directory 自助服务密码重置重置密码](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+
+
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Microsoft 托管桌面入门步骤
 
 1. [在管理门户中添加和验证管理员联系人](add-admin-contacts.md)
-2. 调整条件访问（本主题）
+2.  (本文注册后调整设置) 
 3. [分配许可证](assign-licenses.md)
 4. [部署 Intune 公司门户](company-portal.md)
 5. [启用企业状态漫游](enterprise-state-roaming.md)

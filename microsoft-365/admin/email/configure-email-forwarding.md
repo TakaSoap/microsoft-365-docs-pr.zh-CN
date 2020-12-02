@@ -2,8 +2,8 @@
 title: 配置电子邮件转发
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置向一个或多个电子邮件帐户转发电子邮件。
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645523"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551828"
 ---
 # <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -45,7 +45,7 @@ ms.locfileid: "48645523"
 
  在设置电子邮件转发之前，请注意以下事项： 
 
-- 一旦设置了电子邮件转发，只有发送到*发件人*邮箱的**新**电子邮件才会 fowarded。 
+- 一旦设置了电子邮件转发，则只会转发发送到 "*发件人*" 邮箱的 **新** 电子邮件。 
     
 - 电子邮件转发要求 "  *发件人*  " 帐户具有许可证。 如果你正在设置电子邮件转发，因为用户已离开你的组织，另一种方法是 [将其邮箱转换为共享邮箱](convert-user-mailbox-to-shared-mailbox.md)。 通过这种方式，多个人可以对其进行访问。 但是，共享邮箱不能超过50GB。 
     

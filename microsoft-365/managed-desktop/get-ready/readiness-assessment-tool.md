@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519817"
+ms.locfileid: "49527705"
 ---
 # <a name="readiness-assessment-tool"></a>准备情况评估工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "49519817"
 
 该工具检查 Microsoft 终结点管理器中的设置 (具体来说，Microsoft Intune) 、Azure Active Directory (Azure AD) 和 Microsoft 365，以确保它们可与 Microsoft 托管桌面配合使用。 Microsoft 托管桌面在上次运行 Azure AD 组织 (租户) 中的检查后，会保留与这些检查相关的数据。 12个月后，我们会将其保留在取消识别的表单中。  您可以选择删除我们收集的数据。
 
-至少具有 Intune 管理员角色的任何人都可以运行此工具，但两个检查 ([条件访问策略](readiness-assessment-fix.md#conditional-access-policies) 和 [多重身份验证](readiness-assessment-fix.md#multi-factor-authentication) 都需要额外的权限。
+至少具有 Intune 管理员角色的任何人都可以运行此工具，但两个检查 ([条件访问策略](readiness-assessment-fix.md#conditional-access-policies) 和多 [因素身份验证](readiness-assessment-fix.md#multifactor-authentication) 都需要其他权限。
  
 评估工具将检查以下项：
 
@@ -55,7 +55,7 @@ ms.locfileid: "49519817"
 |企业状态漫游的 "临时" 订阅     | 建议如何检查 (如果设置为 "false" 的设置 ) 可能会阻止企业状态漫游正常工作  |
 |企业状态漫游     | 建议如何检查是否已启用企业状态漫游       |
 |许可证     | 检查是否已获取必需的 [许可证](prerequisites.md#more-about-licenses)         |
-|多重身份验证     | 检查多重身份验证是否未应用于所有用户 (多重身份验证不能意外应用于 Microsoft 托管桌面服务帐户。 ) |
+|多重身份验证     | 检查是否对所有用户应用了多重身份验证 (多重身份验证不能意外应用于 Microsoft 托管桌面服务帐户。 ) |
 |安全帐户名称   | 检查没有与 Microsoft 托管桌面保留的用户名称相冲突的用户名是否可供自己使用        |
 |安全管理员角色     | 确认已在 Microsoft Defender for Endpoint 中为具有安全读取器、安全操作员或全局读取器角色的用户分配了这些角色         |
 |安全性默认值 | 检查 Azure AD 组织是否在 Azure Active Directory 中启用了安全默认设置 |
@@ -78,4 +78,8 @@ ms.locfileid: "49519817"
 |Ready     | 完成注册之前，不需要执行任何操作。        |
 |欲    | 按照工具中的步骤执行注册和用户的最佳体验。 你 *可以* 完成注册，但必须先解决这些问题，然后再部署你的第一个设备。        |
 |未就绪 | 如果不解决这些问题，*注册将失败*。 按照工具中的步骤解决这些问题。        |
-|错误 | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
+|Error | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
+
+## <a name="after-enrollment"></a>注册后
+
+在 Microsoft 托管桌面中完成注册后，请记住返回并调整特定 Intune 和 Azure AD 设置。 有关详细信息，请参阅 [在注册后调整设置](../get-started/conditional-access.md)。

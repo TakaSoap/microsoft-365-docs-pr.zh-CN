@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解有关 Windows 和 Office 部署实验室工具包的信息，以及访问的位置。
-ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4ee3663e326dc5a7fbefce06a696cca6a4b060a9
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519618"
+ms.locfileid: "49527451"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署实验室工具包
 
@@ -36,7 +36,7 @@ ms.locfileid: "49519618"
 
   - 新增内容！ Windows 10 企业版，版本20H2
   - Windows 7 企业版
-  - Microsoft Endpoint Configuration Manager，版本 2002
+  - Microsoft 终结点配置管理器，版本 2010 *
   - 适用于 Windows 10 的 Windows 评估和部署工具包
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -94,7 +94,7 @@ ms.locfileid: "49519618"
 
 [下载 Windows 和 Office 部署实验室工具包](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-* 请使用广泛的带宽下载此内容以增强你的下载体验，并允许自动预配的30-45 分钟。 实验室环境要求至少 16 GB 的可用内存和 300 GB 的可用磁盘空间。 为获得最佳性能，建议使用 32 GB 的可用内存。 实验室的期限为2020年2月。 在过期之前将发布新版本。
+* 使用在控制台更新中可将已安装的基准版本2002更新为版本2010。 请使用广泛的带宽下载此内容以增强你的下载体验，并允许自动预配的30-45 分钟。 实验室环境要求至少有 16 GB 的可用内存和150GB 的可用磁盘空间。 为获得最佳性能，建议 32 GB 的可用内存和300GB 的可用空间。 实验室的有效期为2021年2月7日。 在过期之前将发布新版本。
 
 ## <a name="additional-guidance"></a>其他指南
 

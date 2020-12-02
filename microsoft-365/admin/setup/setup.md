@@ -2,8 +2,8 @@
 title: 设置 Microsoft 365 商业版
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 了解如何设置 Microsoft 商业高级版、Microsoft 365 商业标准版、Microsoft 365 商业基础版、Microsoft 365 商业应用版或 Office 365 教育版订阅。
-ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c44f0046bc1f0a81ecee85de5c59ddbc854f33ac
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644443"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551804"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>设置 Microsoft 365 商业版
 

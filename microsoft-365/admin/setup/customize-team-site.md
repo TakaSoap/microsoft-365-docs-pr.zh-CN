@@ -2,8 +2,8 @@
 title: 自定义用于文件存储和共享的 SharePoint 团队网站
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 了解如何使用文档库、列表和中心来自定义、组织和管理 SharePoint 团队网站。
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906485"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525529"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自定义用于文件存储和共享的团队网站
 
@@ -93,11 +93,11 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 ## <a name="sharing-files-with-the-team"></a>与团队共享文件
 
-当文件存储和文档管理开始时，与团队和外部客户端共享也很重要。 下面是一些主题的链接，这些主题将帮助您管理用户并共享数据。
+当文件存储和文档管理开始时，与团队和外部客户端共享也很重要。 以下文章将帮助您管理用户并共享数据：
   
-若要与你的团队共享文件，请参阅 [在 Microsoft 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
+- 若要与你的团队共享文件，请参阅 [在 Microsoft 365 中共享 SharePoint 文件或文件夹](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
   
-若要了解团队外部的共享，请参阅 [外部共享概述](/sharepoint/external-sharing-overview)。
+- 若要了解团队外部的共享，请参阅 [外部共享概述](/sharepoint/external-sharing-overview)。
   
 ## <a name="managing-users-and-groups"></a>管理用户和组
 
@@ -109,9 +109,9 @@ SharePoint 包含许多可添加到网站的列表模板，如链接列表、日
   
 了解如何处理 [设置和管理访问请求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)的访问请求。
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>下面有更多你可能感兴趣的主题
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>下面是您可能感兴趣的更多文章
 
-- **在平板电脑和手机上设置 Office 应用** 。需要执行此操作，以便可以从平板电脑或手机上编辑存储在团队网站中的文件。如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
+- **在平板电脑和手机上设置 Office 应用** 。 您必须执行此操作，才能从平板电脑或手机编辑存储在团队网站上的文件。 如果平板电脑或手机未安装 Office 应用，那么只能查看团队网站上的文件，但不能对其进行编辑。 
     
   - [使用 Microsoft 365 在 Android 上安装和设置 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

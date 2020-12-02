@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 沟通的详细信息-人员体验效率分数。
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123438"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527497"
 ---
 # <a name="communication--people-experiences"></a>通信–人员体验
 
@@ -119,9 +119,9 @@ Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人
 2. **正文：** 提供有关在 Microsoft 团队中使用频道消息的值的信息
 3. **可视化：** 分解聊天和频道消息的使用：
       - **发送聊天消息的人：** 彩色部分和分数代表在 Microsoft 团队中发送邮件的人内的聊天消息的使用。 分数的构造依据：
-        - **分子：** 最近28天内在 Microsoft 团队中发送聊天邮件的人员
-        - **分母：** 在最近28天内，用户在 Microsoft 团队发送的邮件
-      - **发送聊天消息的人：** 彩色部分和分数表示在 Microsoft 团队中发送邮件的人中的频道消息的使用。 分数的构造依据：
+        - **分子：** 在最近28天内，在 Microsoft 团队中发送聊天邮件的人员。
+        - **分母：** 最近28天内在 Microsoft 团队中发送邮件的人员。
+      - **发送频道消息的人：** 彩色部分和分数表示在 Microsoft 团队中发送邮件的人中的频道消息的使用。 分数的构造依据：
         - **分子：** 在最近28天内，在 Microsoft 团队中发送聊天邮件的人员。
         - **分母：** 最近28天内在 Microsoft 团队中发送邮件的人员。
 4. **查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。

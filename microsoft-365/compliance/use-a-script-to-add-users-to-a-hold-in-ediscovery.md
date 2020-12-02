@@ -1,5 +1,5 @@
 ---
-title: 使用脚本将用户添加到安全 & 合规性中心的核心电子数据展示事例中的保留项
+title: 使用脚本将用户添加到核心电子数据展示事例中的保留
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: 了解如何运行脚本将邮箱 & OneDrive for business 网站添加到与安全 & 合规中心中的电子数据展示事例关联的新保留中。
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: 了解如何运行脚本将邮箱 & OneDrive for business 网站添加到与 Microsoft 365 合规性中心中的电子数据展示事例关联的新保留中。
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357672"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525611"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用脚本将用户添加到核心电子数据展示事例中的保留
 
-Security & 合规性中心提供 PowerShell cmdlet，可让您自动执行与创建和管理电子数据展示事例相关的耗时任务。 目前，使用安全 & 合规中心中的电子数据展示案例工具将大量的保管人内容位置置于保留状态需要花费时间和准备。 例如，在创建保留之前，您必须收集要置于保留状态的每个 OneDrive for business 网站的 URL。 然后，对于要置于保留状态的每个用户，都必须将其邮箱及其 OneDrive for Business 网站添加到保留中。 在未来版本的安全 & 合规性中心中，这将变得更加容易。 在此之前，可以使用本文中的脚本自动执行此过程。
+Security & 合规性中心 PowerShell 提供了可让您自动执行与创建和管理电子数据展示事例相关的耗时任务的 cmdlet。 目前，使用安全 & 合规中心中的核心电子数据展示事例将大量的保管人内容位置置于保留状态需要花费时间和准备。 例如，在创建保留之前，您必须收集要置于保留状态的每个 OneDrive for business 网站的 URL。 然后，对于要置于保留状态的每个用户，都必须将其邮箱及其 OneDrive for Business 网站添加到保留中。 您可以使用本文中的脚本自动执行此过程。
   
-该脚本会提示您组织的 "我的网站" 域的名称 (例如， **contoso** in URL https://contoso-my.sharepoint.com) 、现有电子数据展示事例的名称、与该事例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表以及要在创建基于查询的保留时使用的搜索查询。 然后，该脚本获取列表中每个用户的 OneDrive for business 网站的 URL，创建新保留，然后将列表中每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。
+该脚本会提示您组织的 "我的网站" 域的名称 (例如， `contoso` 在 URL 中， https://contoso-my.sharepoint.com) 现有电子数据展示事例的名称、与该事例关联的新保留的名称、要置于保留状态的用户的电子邮件地址列表以及要创建基于查询的保留时要使用的搜索查询。 然后，该脚本获取列表中每个用户的 OneDrive for business 网站的 URL，创建新保留，然后将列表中每个用户的邮箱和 OneDrive for Business 网站添加到保留。 该脚本还会生成包含有关新保留的信息的日志文件。
   
 下面介绍了实现这一点的步骤：
   
@@ -51,7 +51,9 @@ Security & 合规性中心提供 PowerShell cmdlet，可让您自动执行与创
 
 - 该脚本将用户列表添加到与现有事例相关联的新保留中。 在运行脚本之前，请确保已创建要与保留关联的事例。
 
-- 每次运行此脚本时，都会创建新的安全 & 合规性 PowerShell 和 SharePoint Online PowerShell 会话。 因此，你可以使用所有可供你使用的 PowerShell 会话。 若要防止这种情况发生，可以运行以下命令来断开活动 PowerShell 会话。
+- 在连接到安全 & 合规中心 PowerShell 时，本文中的脚本支持新式身份验证。 如果你是 Microsoft 365 或 Microsoft 365 GCC 组织，则可以按如下所示使用脚本。 如果你是 Office 365 德国组织、Microsoft 365 GCC 高组织或 Microsoft 365 DoD 组织，则必须编辑脚本才能成功运行它。 具体来说，您必须编辑行 `Connect-IPPSSession` ，并使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 参数 (和组织类型) 的相应值连接到安全 & 合规性中心 PowerShell。 有关详细信息，请参阅 [Connect To Security & 合规性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的示例。
+
+- 每次运行该脚本时，都会创建新的安全 & 合规性 PowerShell 和 SharePoint Online 命令行管理程序会话。 因此，你可以使用所有可供你使用的 PowerShell 会话。 若要防止这种情况发生，可以运行以下命令来断开活动 PowerShell 会话。
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -107,7 +109,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- 包含**用户列表的文本文件的名称**-步骤2中包含要添加到保留的用户列表的文本文件的名称。 如果此文件与脚本位于同一文件夹中，只需键入文件的名称 (例如，HoldUsers.txt) 。 如果文本文件在另一个文件夹中，请键入该文件的完整路径名。
+- 包含 **用户列表的文本文件的名称**-步骤2中包含要添加到保留的用户列表的文本文件的名称。 如果此文件与脚本位于同一文件夹中，只需键入文件的名称 (例如，HoldUsers.txt) 。 如果文本文件在另一个文件夹中，请键入该文件的完整路径名。
 
 收集脚本将提示输入的信息后，最后一步是运行脚本以创建新的保留并向其添加用户。
   
@@ -115,21 +117,20 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 输入脚本提示您输入的信息。
 
-   该脚本将连接到安全 & 合规性中心 PowerShell，然后在电子数据展示事例中创建新的保留，并为列表中的用户添加邮箱和 OneDrive for Business。 您可以转到 Security & 合规性中心中的 **电子数据展示** 页面上的事例，以查看新的保留。 
+   该脚本将连接到安全 & 合规性中心 PowerShell，然后在电子数据展示事例中创建新的保留，并为列表中的用户添加邮箱和 OneDrive for Business。 您可以转到 Security & 合规性中心中的 **电子数据展示** 页面上的事例，以查看新的保留。
 
 脚本运行完毕后，它会创建以下日志文件，并将其保存到脚本所在的文件夹中。
   

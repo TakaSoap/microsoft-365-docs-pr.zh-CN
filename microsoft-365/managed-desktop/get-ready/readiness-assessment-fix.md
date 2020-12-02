@@ -1,5 +1,5 @@
 ---
-title: 修复准备情况评估工具发现的问题
+title: 解决准备情况评估工具发现的问题
 description: 对工具找到的每个问题执行的详细操作
 keywords: Microsoft 托管桌面, Microsoft 365, 服务, 文档
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021081"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527729"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修复准备情况评估工具发现的问题
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>解决准备情况评估工具发现的问题
 
 对于每个检查，该工具将报告以下四个可能的结果之一：
 
@@ -26,7 +26,7 @@ ms.locfileid: "49021081"
 |Ready     | 完成注册前不需要执行任何操作。        |
 |欲    | 按照工具或本文中的步骤操作，以获取注册和用户的最佳体验。 你 *可以* 完成注册，但必须先解决这些问题，然后再部署你的第一个设备。        |
 |未就绪 | *如果不解决这些问题，注册将失败。* 按照工具或本文中的步骤进行操作，以解决这些问题。        |
-|错误 | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
+|Error | 您正在使用的 Azure Active Director (AD) 角色没有足够的权限来运行此检查。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 设置
 
@@ -120,7 +120,7 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 **未就绪**
 
-按照 " [设置注册限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) " 中的步骤将设置更改为 " **允许** "。
+按照 " [设置注册限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) " 中的步骤将设置更改为 " **允许**"。
 
 
 ### <a name="enrollment-status-page"></a>"注册状态" 页
@@ -129,7 +129,7 @@ Azure AD 组织中的 Intune 设备配置策略不得以任何 Microsoft 管理�
 
 **未就绪**
 
-您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度** 。 通过执行 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤，禁用此设置或确保对任何 Azure AD 组的分配不包括 Microsoft 托管桌面设备。
+您已将 ESP 默认配置文件设置为 **显示应用和配置文件配置进度**。 通过执行 " [设置注册状态" 页](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步骤，禁用此设置或确保对任何 Azure AD 组的分配不包括 Microsoft 托管桌面设备。
 
 **欲**
 
@@ -141,7 +141,7 @@ Azure AD 组织中的 Windows 10 设备必须在 Intune 中自动注册。
 
 **欲**
 
-确保将 MDM 用户作用域设置为 " **部分** 或 **全部** "，而不是 " **无** "。 如果选择 " **某些** "，请在注册后返回，并选择 **新式工作区-** **组** 的所有 Azure AD 组。
+确保将 MDM 用户作用域设置为 " **部分** 或 **全部**"，而不是 " **无**"。 如果选择 " **某些**"，请在注册后返回，并选择 **新式工作区-** **组** 的所有 Azure AD 组。
 
 
 ### <a name="microsoft-store-for-business"></a>适用于企业的 Microsoft Store
@@ -152,14 +152,14 @@ Azure AD 组织中的 Windows 10 设备必须在 Intune 中自动注册。
 
 适用于企业的 Microsoft Store 不是已启用或未与 Intune 同步。 有关详细信息，请参阅 [如何使用 Microsoft Intune 在 Microsoft Store For Business 中管理批量购买的应用](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) ，并 [在设备上安装 Intune 公司门户](../get-started/company-portal.md)。
 
-### <a name="multi-factor-authentication"></a>多重身份验证
+### <a name="multifactor-authentication"></a>多重身份验证
 
-多因素身份验证不能意外应用于 Microsoft 托管桌面服务帐户。
+多重身份验证不得意外应用于 Microsoft 托管桌面服务帐户。
 
 
 **未就绪**
 
-您有一些多重身份验证 (MFA) 策略设置为分配给所有用户的条件访问策略的 "必需"。 将策略更改为使用面向不包含任何 Microsoft 托管桌面设备的特定 Azure AD 组的工作分配。 有关详细信息，请参阅 [条件访问策略](#conditional-access-policies) 和 [条件访问：要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+您对分配给所有用户的条件访问策略设置了一些多重身份验证 (MFA) 策略设置为 "必需"。 将策略更改为使用面向不包含任何 Microsoft 托管桌面设备的特定 Azure AD 组的工作分配。 有关详细信息，请参阅 [条件访问策略](#conditional-access-policies) 和 [条件访问：要求对所有用户进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
 
 **欲**
 
@@ -257,7 +257,7 @@ Intune 中的 "Windows 10 更新循环" 策略不得以任何 Microsoft 托管�
 
 **欲**
 
-确保将 **AllowAdHocSubscriptions** 设置为 **True** 。 否则，企业状态漫游可能无法工作。 有关详细信息，请参阅 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+确保将 **AllowAdHocSubscriptions** 设置为 **True**。 否则，企业状态漫游可能无法工作。 有关详细信息，请参阅 [set-msolcompanysettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>企业状态漫游

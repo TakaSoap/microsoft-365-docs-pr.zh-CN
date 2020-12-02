@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划2中标识具有用户标记的特定用户组。 标记筛选在 Microsoft Defender for Office 365 中通过警报、报告和调查提供，可快速识别已标记的用户。
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123615"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552015"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的用户标记
 
@@ -66,9 +66,9 @@ ms.locfileid: "49123615"
 
    完成后，单击“下一步”。
 
-4. 在 " **分配邮箱** " 页上，执行下列步骤之一：
+4. 在 " **分配用户** " 页上，执行下列步骤之一：
 
-   - 单击 " **添加邮箱**"。 在出现的 "飞出" 中，执行以下任一步骤添加单个用户或组：
+   - 单击 " **添加用户**"。 在出现的 "飞出" 中，执行以下任一步骤添加单个用户或组：
      - 在框中单击，并在列表中滚动以选择用户或组。
      - 在框中单击，然后开始键入以筛选列表并选择用户或组。
      - 若要添加其他值，请单击框中的空白区域。

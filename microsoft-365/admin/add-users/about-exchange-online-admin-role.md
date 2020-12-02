@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 管理员管理组织的电子邮件和邮箱。 例如，他们可以恢复用户邮箱中的已删除邮件。 '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646699"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527509"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>关于 Exchange Online 管理员角色
 
@@ -44,7 +44,7 @@ ms.locfileid: "48646699"
 
 - 设置邮箱功能（如邮箱共享策略）：用户如何与组织外部的其他人共享日历和联系人信息。
 
-- 为某人的邮箱设置 "代理[发送](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" 和 "[发送 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" 代理。 例如，行政人员可能希望他们的助理能够代表他们发送邮件。
+- 为某人的邮箱设置 "代理[发送](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" 和 "[代表发送](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)" 代理。 例如，行政人员可能希望他们的助理能够代表他们发送邮件。
 
 - [创建共享邮箱](../email/create-a-shared-mailbox.md) ，以便一组用户可以从公用电子邮件地址监视和发送电子邮件。
 
@@ -58,7 +58,7 @@ ms.locfileid: "48646699"
   
  例如，Exchange 管理员可能会将某人分配到 "发现管理" 角色组，以便他们可以对满足特定条件的数据执行邮箱搜索。 若要了解详细信息，请参阅 Exchange Online 和[管理角色组](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)[中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
   
-## <a name="learn-about-other-admin-role"></a>了解其他管理员角色
+## <a name="learn-about-other-admin-roles"></a>了解其他管理员角色
 
 - [关于 Microsoft 365 管理员角色](about-admin-roles.md)
 

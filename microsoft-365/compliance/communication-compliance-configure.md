@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357187"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527521"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -45,6 +45,7 @@ ms.locfileid: "49357187"
 - Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性附加
 - Microsoft 365 G5 订阅 + Microsoft 365 G5 内幕版风险管理加载项
 - Office 365 企业版 E5 订阅 (付费或试用版) 
+- Office 365 A5 订阅 (付费或试用版) 
 - Office 365 企业版 E3 订阅 + Office 365 高级合规性外接程序 (不再可用于新订阅，请参阅 note) 
 
 必须为通信合规性策略中包含的用户分配上述许可证之一。
@@ -52,7 +53,7 @@ ms.locfileid: "49357187"
 >[!IMPORTANT]
 >Office 365 高级合规性不再作为独立订阅销售。 当当前订阅过期时，客户应转换为上述订阅之一，其中包含相同或更多的合规性功能。
 
-如果您没有现成的 Office 365 企业版 E5 计划，并且想要尝试使用内幕风险管理，则可以 [将 Microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Office 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果您没有现成的 Office 365 企业版 E5 计划，并且想要尝试进行通信合规性，则可以 [将 Microsoft 365 添加](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 到现有订阅或注册 Office 365 企业版 e5 的 [试用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步骤 1 (必需) ：启用通信合规性的权限
 
@@ -125,10 +126,10 @@ ms.locfileid: "49357187"
 
 使用下图可帮助您为组织中的通信合规性策略配置组：
 
-| Policy 成员 | 支持的组 | 不受支持的组 |
+| **Policy 成员** | **支持的组** | **不受支持的组** |
 |:-----|:-----|:-----|
-|受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 启用邮件功能的安全组 |
-| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 启用邮件功能的安全组 |
+|受监督用户 <br> 非监督用户 | 通讯组 <br> Microsoft 365 组 | 动态通讯组 <br> 嵌套的通讯组 <br> 启用邮件的安全组 |
+| Reviewers | 无 | 通讯组 <br> 动态通讯组 <br> 嵌套的通讯组 <br> 启用邮件的安全组 |
   
 当您在策略中分配通讯组时，该策略将监视来自通讯组中每个用户的所有电子邮件和团队聊天。 当您在策略中分配 Microsoft 365 组时，该策略将监视发送到该组的所有电子邮件和团队聊天，而不是每个组成员收到的单个电子邮件和聊天。
 
@@ -217,7 +218,7 @@ ms.locfileid: "49357187"
 
 4. 若要启用 anonymization，请选择 " **显示匿名版本的用户名**"。
 
-5. 选择“保存”。
+5. 选择“**保存**”。
 
 6. 导航到 " **通知模板** " 选项卡，然后选择 " **创建通知模板**"。
 
