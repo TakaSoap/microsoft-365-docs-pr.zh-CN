@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: 管理员可以了解 Microsoft 365 中的威胁防护，并配置如何将其用于组织。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356675"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561197"
 ---
 # <a name="protect-against-threats"></a>抵御威胁
 
@@ -36,7 +36,7 @@ ms.locfileid: "49356675"
 > [!IMPORTANT]
 > **为每种策略提供了初始推荐设置; 但是，有许多可用选项，您可以调整设置以满足特定组织的需求**。 为你的策略或更改允许大约30分钟，以在你的数据中心中工作。
 
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 ### <a name="subscriptions"></a>订阅
 
@@ -56,7 +56,7 @@ ms.locfileid: "49356675"
 |电子邮件的零小时自动清除 () |[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |防止电子邮件和 Office 文档中的恶意 Url 和文件 (安全链接和安全附件) |[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |为 SharePoint、OneDrive 和 Microsoft 团队工作负荷启用 ATP|[适用于 Office 的 Defender 365 ](atp-for-spo-odb-and-teams.md)|
-|高级反网络钓鱼防护|[Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|高级反网络钓鱼防护|[适用于 Office 的 Defender 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色和权限
 
@@ -71,7 +71,7 @@ ms.locfileid: "49356675"
 |Exchange Online 组织管理|[Exchange Online 中的权限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-若要了解详细信息，请参阅 [安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+若要了解详细信息，请参阅 [安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>在开始之前，请启用报告和调查的审核日志记录
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何要求进行 MFA 并为 Microsoft 365 for business 设置条件访问策略。
-ms.openlocfilehash: 5908a36f09753cd8f66169c6a67be45c748807b7
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: 08a77615d6801eef52465c450c2559a9d786befb
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071497"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558270"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>需要多重身份验证并设置条件访问策略
 
@@ -45,7 +45,7 @@ ms.locfileid: "49071497"
     - **阻止旧版身份验证** —较旧的客户端应用和一些新的应用程序不使用较新的、更安全的身份验证协议。 这些较旧的应用程序可以绕过条件访问策略，并对您的环境进行未经授权的访问。 此策略阻止来自不支持条件访问的客户端的访问。 
     - **需要进行服务管理的 MFA** -需要多重身份验证以访问管理工具，包括 Azure 门户 (在其中配置基准策略) 。 
 
-Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系统将提示管理员和用户注册 Azure 多重身份验证。
+Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系统将提示管理员和用户注册 Azure AD 多重身份验证。
 
 有关这些策略的详细信息，请参阅 [什么是基准策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)？
 
@@ -54,16 +54,16 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 
 若要要求所有用户使用第二种 ID 登录，请执行以下操作：
 
-1. 转到管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，并选择 " **设置** "。
+1. 转到管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> ，并选择 " **设置**"。
 
-2. 在 "安装程序" 页上，选择 " **创建登录更安全** 的卡片" 中的 " **查看** "。
+2. 在 "安装程序" 页上，选择 "**创建登录更安全** 的卡片" 中的 "**查看**"。
 
 
     ![制作登录更安全的卡。](../media/setupmfa.png)
-3. 在 "使登录更安全" 页上，选择 " **已启动** "。
+3. 在 "使登录更安全" 页上，选择 " **已启动**"。
  
-4. 在 "加强登录安全" 窗格中，选中 " **要求对管理员启用多重身份验证** " 旁边的复选框，并 **要求用户注册多重身份验证，并在检测到风险时阻止访问** 。
-    确保在 " **查找用户** " 框中排除了来自 MFA 要求的 [紧急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 "中断玻璃" 管理帐户。
+4. 在 "加强登录安全" 窗格中，选中 " **要求对管理员启用多重身份验证** " 旁边的复选框，并 **要求用户注册多重身份验证，并在检测到风险时阻止访问**。
+    确保在 "**查找用户**" 框中排除了来自 MFA 要求的 [紧急](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account)或 "中断玻璃" 管理帐户。
     
     ![增强 "在安全中的安全" 页。](../media/requiremfa.png)
 
@@ -71,7 +71,7 @@ Microsoft 建议您启用所有这些基准策略。 启用这些策略后，系
 
 ## <a name="set-up-baseline-policies"></a>设置基准策略
 
-1. 转到 [azure 门户](https://portal.azure.com)，然后导航到 **azure Active Directory** \> **条件访问** 以创建 **新策略** 。
+1. 转到 [azure 门户](https://portal.azure.com)，然后导航到 **azure Active Directory** \> **条件访问** 以创建 **新策略**。
 
 请参阅以下针对每个策略的特定说明： <br>
     - [要求对管理员进行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>

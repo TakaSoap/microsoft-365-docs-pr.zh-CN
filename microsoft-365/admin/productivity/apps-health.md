@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 应用健康状况技术体验工作效率分数的详细信息。
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123507"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562939"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 应用程序运行状况–技术经验
 
-工作效率分数可帮助组织转换工作的完成情况，以了解有关用户如何使用 Microsoft 365 应用和支持技术体验的指标。 分数反映了组织&#39;的人员和技术体验类别的绩效，并将您的成绩与您的组织（如您的组织）进行比较。 应用运行状况类别是技术体验中的度量的一部分。 若要了解详细信息，请参阅 [生产力分数概述](productivity-score.md) 。
+通过使用 Microsoft 365 和支持 it 的技术体验，工作效率分数可深入了解您的组织的数字转换旅程。 贵组织的分数反映了人员和技术体验指标，可以与类似于您的组织的基准进行比较。 应用运行状况类别是技术体验中的度量的一部分。 若要了解详细信息，请查看 [工作效率分数概述](productivity-score.md) 和阅读 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>为什么您的组织&#39;s Microsoft 365 应用程序运行状况分数问题
 
@@ -101,11 +101,11 @@ Microsoft 365 应用程序运行状况分数测量设备是否在推荐频道和
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Showa 多个设备运行的支持和一段时间内最新版本的应用程序的图表。":::
 
-## <a name="people-in-your-organization"></a>组织中的人员
+## <a name="devices-in-your-organization"></a>组织中的设备
 
 本节通过向 Microsoft 365 应用健康技术体验的所有指标提供相关信息，帮助您对要重点关注的指标进行操作。
 
-以下各列显示在用户级别的表中：
+以下各列显示在通道/版本级别的表中：
 
 - **通道** ：设备上的当前 Microsoft 365 应用通道。
 - **状态：**   Microsoft 365 应用支持基于当前通道和版本的设备的状态。

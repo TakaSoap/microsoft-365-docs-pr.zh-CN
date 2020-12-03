@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用适用于企业的 Microsoft 365 的安全功能。
-ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 5c951a973fbebeff92040f9411ad2c81788f920a
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920414"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558390"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Microsoft 365 for Contoso Corporation 的企业安全摘要
 
@@ -56,7 +56,7 @@ Contoso 按照这些步骤为 Microsoft 365 for 企业版的部署准备好其�
 
 - 使用 MFA 和 PIM 的专用全局管理员帐户
 
-  Contoso 创建了三个具有强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 帐户受 Azure 多重身份验证 (MFA) 和 Azure Active Directory (Azure AD) 特权身份管理 (PIM) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
+  Contoso 创建了三个具有强密码的专用全局管理员帐户，而不是将全局管理员角色分配给日常用户帐户。 帐户受 Azure AD 多重身份验证 (MFA) 和 Azure Active Directory (Azure AD) 特权身份管理 (PIM) 。 *PIM 仅在 Microsoft 365 E5 中提供。*
 
   仅对特定管理任务执行使用全局管理员帐户登录。 密码仅对指定的员工已知，并且只能在 Azure AD PIM 中配置的时段内使用。
 

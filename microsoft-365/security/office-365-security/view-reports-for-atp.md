@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在安全合规中心中查找和使用 Microsoft Defender for Office 365 的报告 &amp; 。
+description: 在安全 & 合规中心中查找和使用 Microsoft Defender for Office 365 的报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087701"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561723"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>查看 Microsoft Defender for Office 365 的报告
 
@@ -35,7 +35,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 ![安全 & 合规中心中的 "报告" 仪表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>Defender for Office 365 文件类型报告
+## <a name="defender-for-office-365-file-types-report"></a>适用于 Office 365 的 Defender 文件类型报告
 
 " **适用于 Office 的 Defender 365 文件类型报告** " 报告显示了通过 [安全附件](atp-safe-attachments.md)检测为恶意的文件类型。
 
@@ -92,7 +92,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 - **数据查看依据：文件**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 id**：在邮件头的 **邮件 id** 标头字段中可用，并且应是唯一的。  (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。
@@ -105,12 +105,12 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 - **数据查看依据：消息**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
   - **File**
-  - **主题**
+  - **Subject**
 
   如果单击 " **筛选器**"，则可以使用以下筛选器修改结果：
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 若要返回到 "报告" 视图，请单击 " **查看报告**"。
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Defender for Office 365 邮件处置报告
+## <a name="defender-for-office-365-message-disposition-report"></a>适用于 Office 365 的 Defender 邮件处置报告
 
 **ATP 邮件处置** 报告将向您显示检测为包含恶意内容的电子邮件所采取的操作。
 
@@ -174,12 +174,12 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 - **数据查看依据：消息**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
   - **File**
-  - **主题**
+  - **Subject**
 
   如果单击 " **筛选器**"，则可以使用以下筛选器修改结果：
 
@@ -188,7 +188,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 - **数据查看依据：文件**：
 
-  - "日期"
+  - **Date**
   - **收件人地址**
   - **发件人地址**
   - **邮件 ID**
@@ -245,7 +245,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 "详细信息" 表视图中显示以下信息：
 
-- "日期"
+- **Date**
 - **百分点值**
 - **邮件计数**
 - **整体延迟**
@@ -338,7 +338,7 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看适用于 Office 的 Defender 365 报告所需的权限是什么？
 
-为了查看和使用本主题中所述的报告， **必须为安全 &amp; 合规中心和 Exchange 管理中心分配适当的角色**。
+为了查看和使用本主题中所述的报告， **必须为安全 & 合规中心和 Exchange 管理中心分配适当的角色**。
 
 - 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
 

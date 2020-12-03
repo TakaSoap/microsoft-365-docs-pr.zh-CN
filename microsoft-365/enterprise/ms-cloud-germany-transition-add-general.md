@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从 Microsoft (云) 德国移动到新的德国数据中心区域中的 Office 365 服务时，有关服务的其他常规信息。
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551778"
+ms.locfileid: "49558426"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从 Microsoft 云德国迁移的其他一般信息
 
@@ -49,14 +49,14 @@ ms.locfileid: "49551778"
 
 应用程序可以是以下任一项：
 
-- 单页面应用程序 (SPA) 
-- 登录用户的 Web 应用程序
-- 调用 web Api 的 web 应用程序
-- 受保护的 web API
-- 调用 web Api 的 Web API
-- 桌面应用
-- 守护程序应用
-- 移动应用
+- [单页面应用程序 (SPA) ](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [登录用户的 Web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [调用 web Api 的 web 应用程序](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [受保护的 web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [调用 web Api 的 Web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [桌面应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [守护程序应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [移动应用](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > 当应用程序切换为 `login.microsoftonline.com` 颁发机构使用时，令牌将由此新的颁发机构签名。 如果托管其他应用程序调用的任何资源应用程序，则需要允许进行宽松令牌验证。 这意味着您的应用程序需要允许由 Azure AD 德国和 Azure AD 公共云签署的令牌。 在所有调用您的服务的客户端应用程序完全迁移到 Azure AD 公共云之前，需要进行这种宽松令牌验证。 迁移之后，您的资源应用程序只需要接受由 Azure AD 公共云签名的令牌。
@@ -76,10 +76,10 @@ ms.locfileid: "49551778"
 
 5. `AzurePublic` `AzureGermany` 在管理工具和脚本中 (更新环境参数，而不是) ：
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline) 
-    - Azure AD PowerShell (AzureAD) 
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline) ](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD) ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **我发布的应用程序是什么？**
 

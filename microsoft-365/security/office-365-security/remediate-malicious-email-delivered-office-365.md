@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威胁补救措施
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350730"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561277"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 

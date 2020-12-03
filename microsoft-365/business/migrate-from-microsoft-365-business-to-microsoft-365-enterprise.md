@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 了解如何将企业从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3。
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367047"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558230"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>从 Microsoft 365 商业高级版迁移到 Microsoft 365 E3
 
@@ -62,7 +62,7 @@ Microsoft 365 商业高级版为小型企业提供了所需的一切，并将一
 | 攻击面减少功能    | [查看此列表](#threat-protection) | Microsoft Edge 基于硬件的隔离的企业管理 | 
 | 适用于 Office 的 Defender 365 计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
-| 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
+| 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure AD 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | 云应用发现、Azure AD Connect Health    |     | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | Azure AD Office 365 应用程序单一 Sign-On (SSO) ：每个用户10个应用程序 (库 SaaS 应用程序（如 Salesforce) ） * | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO：通过使用 Self-Service 应用集成模板的 Azure AD 应用程序代理和非库应用程序 (本地应用程序不受限制)     |     | ![包含在 Microsoft 365 E3 中](../media/check-mark.png) | 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保护您的业务电子邮件和数据免受网络威胁的威胁，包括勒索软件、网络钓鱼和恶意附件。
-ms.openlocfilehash: 8f170079a5542f703376139cdd6ec4550712d0fd
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944364"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558534"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>用于安全团队的前12个任务以支持在家中工作
 
@@ -42,17 +42,17 @@ ms.locfileid: "48944364"
 
 |步骤|任务|所有 Office 365 企业版计划|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[启用 (MFA) 的 Azure 多重身份验证 ](#1-enable-azure-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|双面|[威胁防护](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|第三章|[配置 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1 |[启用 (MFA) 的 Azure AD 多重身份验证 ](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2 |[威胁防护](#2-protect-against-threats)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[配置 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[配置 Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[打开 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[启用 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[为电话和平板电脑配置 Intune 移动应用保护](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[为来宾配置 MFA 和条件访问，包括 Intune 应用保护](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[将电脑注册到设备管理并要求符合合规性的电脑](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[为云连接优化你的网络](#9-optimize-your-network-for-cloud-connectivity)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|11x17|[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10 |[培训用户](#10-train-users)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|11 |[Microsoft Cloud App Security 入门](#11-get-started-with-microsoft-cloud-app-security)|||![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[监视威胁并采取措施](#12-monitor-for-threats-and-take-action)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
@@ -60,7 +60,7 @@ ms.locfileid: "48944364"
 
 ![Microsoft 安全分数的屏幕截图](../media/secure-score.png)
 
-## <a name="1-enable-azure-multi-factor-authentication-mfa"></a>1：启用 Azure 多重身份验证 (MFA) 
+## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1：启用 Azure AD 多重身份验证 (MFA) 
 
 为提高在家工作的员工的安全性，您可以采取的单一最佳做法是启用 MFA。 如果你还没有现成的过程，请将其视为紧急试点，并确保你的支持人员准备好帮助遇到障碍的员工。 由于你可能无法分布硬件安全设备，请使用 Windows Hello 生物识别和智能手机身份验证应用（如 Microsoft 身份验证器）。
 
@@ -70,7 +70,7 @@ ms.locfileid: "48944364"
 
 ****
 
-|计划|建议|
+|套餐|建议|
 |---|---|
 |不包含 Azure AD P1 或 P2 的 Microsoft 365 计划 () |[在 Azure AD 中启用安全性默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性默认值于用户和管理员的 MFA。|
 |Microsoft 365 E3 (与 Azure AD P1) |使用[常用条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)配置以下策略： <br/>- [要求对管理员执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求对所有用户执行 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [阻止传统身份验证](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -112,7 +112,7 @@ Microsoft Defender for Office 365：
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：为 Microsoft Defender 配置标识
 
-[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，可利用本地 Active Directory 信号来识别、检测和调查针对组织的高级威胁、已遭入侵标识和恶意内部行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。
+[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是一种基于云的安全解决方案，它利用本地 Active Directory 信号识别、检测和调查组织中的高级威胁、已损坏的身份和恶意内幕行为。 将重点放在接下来，因为它保护您的本地和云基础结构，没有任何依赖项或先决条件，并且可以提供直接的好处。
 
 - 请参阅 [Microsoft Defender For Identity 快速入门](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以快速获取安装
 - 观看 [视频： Microsoft Defender For Identity 简介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)

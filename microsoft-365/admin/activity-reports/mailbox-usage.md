@@ -19,12 +19,12 @@ search.appverid:
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
 description: 了解如何获取邮箱使用情况报告，以了解用户使用用户邮箱的活动。
-ms.openlocfilehash: 8d942f507c1e3102f909fb33eb16e00f7ebf05ea
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 988f6e638e01cb5929e2ad9dd74e3d08f8e51c97
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126563"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561455"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>"管理中心" 中的 Microsoft 365 报表-邮箱使用情况
 
@@ -36,9 +36,9 @@ ms.locfileid: "49126563"
 ## <a name="how-to-get-to-the-mailbox-usage-report"></a>如何访问邮箱使用情况报告
 
 1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
-
 2. 选择 "活动用户" 下的 " **查看更多** **-Microsoft 365 服务**"。 
 3. 从 " **活动用户** " 下拉列表中，选择 " **Exchange** \> **邮箱使用情况**"。
+
   
 ## <a name="interpret-the-mailbox-usage-report"></a>解读邮箱使用情况报告
 

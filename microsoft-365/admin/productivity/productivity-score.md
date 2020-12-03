@@ -19,30 +19,30 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 工作效率分数概述。
-ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: f1edc1a66763562b233455609f3381e3f4fbfa98
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123485"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561468"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 工作效率分数 
 
-生产效率分数可帮助组织转换工作方式，并了解有关用户如何使用 Microsoft 365 以及支持它们的技术体验方面的见解。 分数反映了贵组织对人员和技术体验的业绩，并将您的成绩与您的组织（如您的组织）进行比较。
+生产效率分数支持通过深入了解你的组织如何使用 Microsoft 365 以及支持它的技术体验来进行数字转换。 贵组织的分数反映了人员和技术体验指标，并且可以与与您的规模相似的组织中的基准进行比较。
 
-分数包括：
+它提供了：
 
-- 帮助您了解用户如何使用 Microsoft 365 产品在平台之间进行协作、沟通和工作的 **指标**。
-- 有关数据的 **见解**，可帮助您确定提高员工工作效率和满意度的机会。
-- 您可以采取一些 **建议的措施** 来帮助组织中的人员有效地使用 Microsoft 365 产品，以便每个人都可以完成其最佳工作。
+- 帮助你了解你的数字转换旅程的 **指标**。
+- 有关数据的 **见解**，可帮助您确定在组织中提高工作效率和满意度的机会。
+- 您可以采取 **建议的措施** 来帮助贵组织有效地使用 Microsoft 365 产品。
 
-我们在两个方面提供数据、见解和建议： 
+我们在两个方面提供了指标、见解和建议： 
 
-- **人员体验：** 衡量人员如何对内容进行协作、如何使用 Microsoft 365 产品进行通信，以及它们是否跨多个平台使用 Microsoft 365。 
+- **人员体验：** 量化组织如何使用 Microsoft 365 类别，如内容协作、移动性、通信、会议和团队合作。  
 
-    我们提供了这些见解，因为当用户在线协作、节省时间和在任何设备上进行工作时，可以更高效、更满意。 以灵活的方式进行通信的功能使用户更高效，能够形成更好的关系，从而使组织更加统一。 有关证据，请参阅 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+    对于上述每个类别，我们都会查看公共研究，以确定一些最佳做法和相关优势的组织有效性的形式。 例如，[Forrester] (研究表明， https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf 当用户在云中进行协作和共享内容时 (而不是通过电子邮件附件) 时，他们每周最长可节省100分钟。 此外，我们还将量化您的组织中这些最佳做法的使用，以帮助您了解您在数字转换旅程中所处的位置。 
 
-- **技术体验：** 您的团队的工作效率取决于可靠、性能良好的技术以及 Microsoft 365 的有效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助您了解您的用户的工作效率如何受硬件和软件的性能和运行状况问题的影响。建议的操作可帮助您修正这些问题。 Microsoft 365 网络连接见解将帮助您对组织的 connectivity 问题进行故障排除。
+- **技术体验：** 您的组织依赖于可靠、性能良好的技术以及 Microsoft 365 的有效使用。 [终结点分析](https://aka.ms/endpointanalytics) 可帮助您了解您的组织如何受硬件和软件的性能和运行状况问题的影响。 Microsoft 365 应用程序运行状况帮助您了解贵组织中的设备是否在建议频道上运行 Microsoft 365 应用。
 
 有关概述和先决条件的详细信息，请参阅 [什么是终结点分析](https://docs.microsoft.com/mem/analytics/overview) 。 若要了解有关 Microsoft 365 网络 connectivity insights 的详细信息，请阅读 [网络连接概述](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
@@ -63,22 +63,22 @@ ms.locfileid: "49123485"
 - Microsoft 365 应用程序运行状况 (100 点) 
 - **总可能值 = 800 磅**
  
- 在每个分数类别中，我们都确定主要活动的模式，这些是有关用户如何使用 Microsoft 365 产品在平台之间进行协作、通信和工作的指标。 我们为关键活动提供了28天和180天的视图。 我们还提供不属于分数计算的支持指标，但对于帮助您确定可解决的基础行为和设置，这一点非常重要。
+ 在每个分数类别中，我们将量化您的组织在对数字转换的旅程中使用 Microsoft 365 的关键指标。 我们为关键活动提供了28天和180天的视图。 我们还提供不属于分数计算的支持指标，但对于帮助您确定可解决的基础使用情况统计信息和配置，这一点非常重要。
 
 ### <a name="products-included-in-productivity-score"></a>包含在工作效率分数中的产品 
 
 生产效率分数包括来自 Exchange、SharePoint、OneDrive、工作组、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 和 Skype 的数据。
 
-你的得分每天更新，并反映最近 28 (中完成的用户操作，包括当前日期) 。
+您的组织的总分每天更新，并反映最近 28 (中完成的用户操作，包括当前日期) 。
 
 
 ## <a name="pre-requisites"></a>先决条件 
 
-对于遇到数据的人员，你需要使用 Microsoft 365 for business 或 Office 365 for business 订阅。 对于你的租户的终结点分析数据，你需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。 安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 Microsoft Intune 的详细信息。 
+对于遇到数据的人员，你需要使用 Microsoft 365 for business 或 Office 365 for business 订阅。 对于你的租户的终结点分析数据，你需要将 Microsoft Intune 添加到你的订阅中。 Intune 可帮助您通过管理设备和应用来保护您的组织的数据。 安装 Intune 后，可以在 Intune 体验中启用终结点分析。 了解有关 [Microsoft Intune](https://docs.microsoft.com/mem/intune/)的详细信息。 
 > [!NOTE]
 > 若要获取工作效率评分功能，不需要使用工作区分析的许可证。
 
-若要查看组织的工作效率分数，您必须具有以下角色之一： 
+工作效率分数仅适用于 Microsoft 365 管理中心，并且只能由具有以下角色之一的 IT 专业人员访问：  
 
 - 全局管理员 
 - Exchange 管理员
@@ -88,17 +88,21 @@ ms.locfileid: "49123485"
 - 全局读取者 
 - 报告读取者 
 
+请注意，此信息仅适用于使用 Microsoft 365 促进数字转换，因此应谨慎共享。 
+
+Microsoft 致力于保护个人隐私。 本 [隐私文档](privacy.md)  对我们为您提供的控件（作为贵组织的 IT 管理员）进行了说明，以确保信息可操作，而不会影响您在 Microsoft 中放置的信任。
+
 您可以在 "**报告**  >  **效率分数**" 下访问 Microsoft 365 管理主页的体验。
 
-## <a name="interpreting-productivity-score"></a>解释工作效率分数 
+## <a name="interpreting-your-organizations-productivity-score"></a>解释组织的生产率分数 
 
-"生产力分数" 主页显示了每个类别的总分和分数历史记录以及主要洞察力。
+"生产力分数" 主页显示组织的总分和分数历史记录，以及每个类别的主要洞察力。
 
 :::image type="content" source="../../media/prodscore-landing.png" alt-text="报告中的 &quot;生产效率分数&quot; 页。":::
 
-**您的分数** 显示为百分比值，以磅为单位。 您可以在分子中查看您的要点以及分母中的最大可能分数。
+**组织的分数** 显示为百分比值，以磅为单位。 您可以在分子中查看您的要点以及分母中的最大可能分数。
 
-**对等基准** 使您能够将您的成绩与像你的组织进行比较。 人员体验类别的对等基准计算是一组相似组织中的度量值的平均值。 组织集由您所在区域中的组织组成，其中包含与 Microsoft 365 的许可用户数量、许可证类型、行业和 tenure 的数量相似的组织。 
+**对等基准** 使您能够将组织的分数与像你的组织相比较。 人员体验类别的对等基准计算是一组相似组织中的度量值的平均值。 组织集由您所在区域中的组织组成，其中包含与 Microsoft 365 的许可用户数量、许可证类型、行业和 tenure 的数量相似的组织。 
 
 终结点分析对等基准包括设备启动性能的目标以及基于所有租户中聚合的中间值的建议软件配置。
 
@@ -126,13 +130,13 @@ ms.locfileid: "49123485"
 
 业务连续性报告是适用于所有 Microsoft 365 客户的受限制的工作场所智能报告，可帮助他们在这一富有挑战性的时间指导其组织。  
 
-此报告可帮助业务负责人了解： 
+此报告可帮助组织了解以下内容： 
 
 - 移动与远程工作的转变对协作和通信的影响。 
 
 - 用户调整为在家工作时对工作寿命余额的影响。 
 
-- 如果远程会议支持有效的决策制定。
+- 远程会议是否支持有效的决策制定。
 
 [了解有关业务连续性报告的详细信息](https://aka.ms/bcrps)
 
@@ -140,4 +144,4 @@ ms.locfileid: "49123485"
 
 ## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
 
-分享你对工作效率分数的看法以及你对如何改进想法的看法。 使用产品中的 **反馈** 部分和/或与 ProductivityScorePreview@service.microsoft.com 的工作效率分数团队联系。
+分享你对工作效率分数的看法以及你对如何改进想法的看法。 使用产品中的 **反馈** 部分和/或与 Prodscorefeedback@microsoft.com 的工作效率分数团队联系。

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft 365 for 企业版中的信息保护功能来保护其在云中的数字资产。
-ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 7cc51110a0bc4c87e57e71b2ddb42aa0dbaa288d
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754595"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558500"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的信息保护
 
@@ -34,7 +34,7 @@ Contoso 对其数据执行了分析并确定了以下分类级别。
 
 | 1 级：基准 | 2 级：敏感 | 3 级：高度管控 |
 |:-------|:-----|:-----|
-| 数据已加密，并且仅供已通过身份验证的用户使用。<BR> <BR> 为存储在本地和基于云的存储和工作负荷中的所有数据提供。数据在其驻留在服务中以及在服务和客户端设备之间进行传输时进行加密。 <BR><BR>1 级数据的示例为正常的业务通信（电子邮件）和供管理、销售和支持工作人员使用的文件。 | 1 级再加上强身份验证和数据丢失防护。<BR> <BR> 强身份验证包括具有短信验证的 Azure 多重身份验证 (MFA)。 数据丢失防护可确保敏感或关键信息不会传播到 Microsoft 云之外。<BR><BR>2 级数据的示例包括财务和法律信息，以及新产品的研发数据。 | 2 级再加上最高级别的加密、身份验证和审核。<BR><BR>对静态和云中的数据采用最高级别的加密，遵循区域法规，并结合具有智能卡以及精细审核和警报的 MFA。<BR> <BR>3级数据的示例是客户和合作伙伴的个人信息、产品工程规范以及专有的制造技术。  |
+| 数据已加密，并且仅供已通过身份验证的用户使用。<BR> <BR> 为存储在本地和基于云的存储和工作负荷中的所有数据提供。数据在其驻留在服务中以及在服务和客户端设备之间进行传输时进行加密。 <BR><BR>1 级数据的示例为正常的业务通信（电子邮件）和供管理、销售和支持工作人员使用的文件。 | 1 级再加上强身份验证和数据丢失防护。<BR> <BR> 强身份验证包括 Azure AD 多重身份验证 (与 SMS 验证的 MFA) 。 数据丢失防护可确保敏感或关键信息不会传播到 Microsoft 云之外。<BR><BR>2 级数据的示例包括财务和法律信息，以及新产品的研发数据。 | 2 级再加上最高级别的加密、身份验证和审核。<BR><BR>对静态和云中的数据采用最高级别的加密，遵循区域法规，并结合具有智能卡以及精细审核和警报的 MFA。<BR> <BR>3级数据的示例是客户和合作伙伴的个人信息、产品工程规范以及专有的制造技术。  |
 ||||
 
 ## <a name="contoso-information-policies"></a>Contoso 信息策略

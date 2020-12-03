@@ -2,8 +2,8 @@
 title: 基于高级电子数据展示中的结果的决策
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 了解高级电子数据展示中的 "确定" 选项卡如何提供可帮助您确定检查事例文件集的正确大小的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528002"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562963"
 ---
-# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>基于高级电子数据展示中的结果的决策（经典）
+# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>基于高级电子数据展示 (经典) 中的结果的决策
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -38,7 +38,7 @@ ms.locfileid: "46528002"
   
 - **问题**：在此处，你可以从列表中选择感兴趣的问题。 
     
-- **检查-撤回比率**：根据相关性分数比较高级电子数据展示检查。 图表中的截止点表示要查看的文件百分比，映射到相关性分数。 这在关联测试阶段使用，用作用于剔除的导出阈值。 默认的截止点（要查看的文件数）是撤回和精度之间的平衡最佳的时间点。 实际的截止点应根据目标和成本权衡（% 考评）和风险（% 撤回）来确定用户。 使用滑块，可以调整截止点，并查看图表和参数上的效果、调整要检索的相关文件的百分比以及验证决策之前的效果。
+- **检查-撤回比率**：根据相关性分数比较高级电子数据展示检查。 图表中的截止点表示要查看的文件百分比，映射到相关性分数。 这在关联测试阶段使用，用作用于剔除的导出阈值。 默认的截止点（要查看的文件数）是撤回和精度之间的平衡最佳的时间点。 实际的截止点应根据目标和成本降低 (% 评审) 和风险 (% 撤回) 确定用户。 使用滑块，可以调整截止点，并查看图表和参数上的效果、调整要检索的相关文件的百分比以及验证决策之前的效果。
     
 - **参数**：查看、撤回、下一个相关的和总成本参数是与整个事例的集合相关的相对于评审集的累计计算统计信息。 这些参数的定义如下所示：
     

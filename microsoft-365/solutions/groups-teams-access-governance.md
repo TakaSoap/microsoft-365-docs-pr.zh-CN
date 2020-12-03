@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何在 Microsoft 365 组、团队和 SharePoint 中管理访问权限。
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377565"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558218"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>在 Microsoft 365 组、团队和 SharePoint 中管理访问权限
 
@@ -35,7 +35,7 @@ ms.locfileid: "48377565"
 ||基于规则的动态组成员身份|[在 Azure Active Directory 中创建或更新动态组](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||控制谁可以共享文件、文件夹和网站。|[设置和管理访问请求](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |条件访问|||
-||多因素身份验证|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||多因素身份验证|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||根据组、团队或站点敏感度控制设备访问。|[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||限制非托管设备的网站访问权限。|[控制来自非托管设备的 SharePoint 访问](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||基于位置控制网站访问|[根据网络位置控制对 SharePoint 和 OneDrive 数据的访问](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ SharePoint 网站能够将所有者、成员和访问者与组或团队成员身
 
 使用 Microsoft 365，您可以对组织内部和外部的人员要求多重身份验证。 在提示用户第二种身份验证因素的情况下，有许多选项。 强烈建议您为您的组织部署多因素身份验证：
 
-- [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 如果您的某些组和团队中包含敏感信息，则可以根据组或团队的敏感度标签强制实施设备管理策略。 您可以完全阻止来自非托管设备的访问，或允许仅限 web 的访问权限：
 

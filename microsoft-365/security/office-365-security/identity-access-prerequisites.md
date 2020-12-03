@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357799"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558546"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -45,7 +45,7 @@ ms.locfileid: "49357799"
 |[配置 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  必须启用此功能，以检测泄露的凭据并对其执行基于风险的条件访问。 **注意：** 无论您的组织是否使用联合身份验证，都是必需的。|仅限云|
 |[启用无缝单一登录](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) ，以便在用户位于连接到组织网络的组织设备上时自动对用户进行签名。|仅限云和联合|
 |[配置命名网络](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection 收集并分析所有可用的会话数据，以生成风险评分。 我们建议您在 Azure AD 的 "网络配置" 中为您的网络指定组织的公共 IP 范围。 来自这些范围的流量被授予降低风险分数，来自组织环境外部的流量将获得较高风险分数。||
-|[为所有用户注册自助服务密码重置 (SSPR) and 多重身份验证 (MFA) ](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我们建议您提前注册用户以进行 Azure 多重身份验证。 Azure AD Identity Protection 使用 Azure 多因素身份验证来执行其他安全验证。 此外，为了获得最佳登录体验，我们建议用户在其设备上安装 [Microsoft 身份验证器应用](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司门户应用。 可以从每个平台的应用商店中安装这些。||
+|[为所有用户注册自助服务密码重置 (SSPR) and 多重身份验证 (MFA) ](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我们建议您提前注册用户的 Azure AD 多重身份验证。 Azure AD Identity Protection 使用 Azure AD 多重身份验证来执行其他安全验证。 此外，为了获得最佳登录体验，我们建议用户在其设备上安装 [Microsoft 身份验证器应用](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司门户应用。 可以从每个平台的应用商店中安装这些。||
 |[启用域加入域的 Windows 计算机的自动设备注册](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 条件访问将确保连接到应用程序的设备已加入域或合规性。 要在 Windows 计算机上支持此操作，必须已向 Azure AD 注册设备。  本文介绍了如何配置自动设备注册。|仅限云|
 |**准备支持团队**。 为无法完成 MFA 的用户制定计划。 这可能会将其添加到策略排除组中，或为其注册新的 MFA 信息。 在进行任何安全敏感更改之前，您需要确保实际用户发出请求。 请求用户的管理人员来帮助审批是一个有效的步骤。||
 |[配置密码写回到本地 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密码写回允许 Azure AD 在检测到高风险帐户泄漏时要求用户更改其本地密码。 您可以通过以下两种方式之一在 Azure AD Connect 中启用此功能：在 Azure AD Connect 安装向导的 "可选功能" 屏幕中启用 **密码写回** ，或通过 Windows PowerShell 启用它。|仅限云|

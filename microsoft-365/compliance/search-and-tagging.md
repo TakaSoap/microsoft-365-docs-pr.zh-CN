@@ -2,8 +2,8 @@
 title: 搜索和标记
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -15,25 +15,25 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: 在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7afa106d07e60dfc297b90c25965dafeeb7337a7
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818891"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562929"
 ---
 # <a name="search-and-tagging"></a>搜索和标记
 
-在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。 有关搜索和标记的简短演示，请参阅[使用高级电子数据展示视频管理数据](https://www.youtube.com/watch?v=VaPYL3DHP6I)。
+在高级电子数据展示中，搜索和标记模块使您能够在您的案例中搜索、预览和组织文档。 目前，此模块在 beta 版中。 有关搜索和标记的简短演示，请参阅 [使用高级电子数据展示视频管理数据](https://www.youtube.com/watch?v=VaPYL3DHP6I) 。
 
 > [!NOTE]
 > 若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 ## <a name="search-the-documents-in-your-case"></a>在你的案例中搜索文档
 
-在高级电子数据展示案例中处理文档（并根据需要运行分析或相关性模块）后，您可以使用搜索和标记来搜索文档，然后通过应用大小写特定的标记（也称为 "标签"）来组织这些文档。 您可以使用提供的条件卡或使用关键字条件卡中类似 KQL 的查询语言来定义搜索查询。 常用 KQL 语法，如 AND、OR、NOT 和 NEAR （n），以及尾部多字符通配符（*）。 
+在高级电子数据展示事例中处理完文档之后 (并可以选择运行分析或相关性模块) ，可以使用搜索和标记来搜索文档，然后通过应用大小写特定的标记 (也称为 "标签") 来组织这些文档。 您可以使用提供的条件卡或使用关键字条件卡中类似 KQL 的查询语言来定义搜索查询。 常见的 KQL 语法（如 AND、OR、NOT 和 NEAR (n) ）以及尾随多字符通配符 ( * ) 。 
 
-下表列出了您可以使用 KQL 关键字查询搜索的属性。 或者，您可以使用高级电子数据展示搜索工具中的条件卡将条件（对于选定的属性）添加到搜索查询中。
+下表列出了您可以使用 KQL 关键字查询搜索的属性。 或者，您可以使用高级电子数据展示搜索工具中的条件卡，将所选属性的条件 (添加) 到搜索查询中。
 
 |**属性**|**说明**|
 |:-----|:-----|
@@ -64,15 +64,15 @@ ms.locfileid: "44818891"
 |**relevancetag_ [tagname]**\*\* <br/> | 如果已手动为项目标记相关性，则由 [tagname] 定义的标记。 <br/> |
 |||
 
-\*仅当主题模块已运行时才可用。
+\* 仅当主题模块已运行时才可用。
 
-\*\*仅在已运行相关性模块时可用。
+\*\* 仅在已运行相关性模块时可用。
 
-或者，您可以使用高级电子数据展示搜索工具中的条件卡向搜索查询添加条件（对于选定的属性）。 下面的屏幕截图显示了可以添加到查询中的条件。 "**组**" 列指示属性是应用于电子邮件、网站文档还是两者（由*常见*值表示）。 此列还标识了在运行相关性模块后可用的可搜索属性。
+或者，您可以使用高级电子数据展示搜索工具中的条件卡，将所选属性的条件 (添加) 到搜索查询中。 下面的屏幕截图显示了可以添加到查询中的条件。 " **组** " 列指示属性是应用于电子邮件、网站文档还是这两个 (由 *公共*) 的值指示。 此列还标识了在运行相关性模块后可用的可搜索属性。
 
 ![高级电子数据展示搜索工具中的搜索条件](../media/AeDSearchConditions.png)
 
-有关可搜索属性的详细信息，请参阅[关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
+有关可搜索属性的详细信息，请参阅 [关键字查询和搜索条件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="related-topics"></a>相关主题
 

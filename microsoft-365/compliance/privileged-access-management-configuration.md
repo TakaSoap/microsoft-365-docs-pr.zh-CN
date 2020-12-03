@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 使用此文章了解有关在 Office 365 中启用和配置特权访问管理的详细信息。
-ms.openlocfilehash: d75a8944cdacb6df2d6ee6570c0ce327d0e7ae00
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 6018d3b842dcadb60208e6ab53707a50e26f9d35
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341200"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560870"
 ---
 # <a name="get-started-with-privileged-access-management"></a>特权访问管理入门
 
@@ -101,7 +101,7 @@ ms.locfileid: "48341200"
 
 1. 使用组织中的管理员帐户的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 启用 " **需要批准以获取特权任务** " 控件。
 
@@ -120,7 +120,7 @@ Enable-ElevatedAccessControl -AdminGroup '<default approver group>' -SystemAccou
 示例：
 
 ```PowerShell
-Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', sys2@fabrikamorg.onmicrosoft.com')
+Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com' -SystemAccounts @('sys1@fabrikamorg.onmicrosoft.com', 'sys2@fabrikamorg.onmicrosoft.com')
 ```
 
 >[!NOTE]
@@ -136,7 +136,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. 使用组织中的管理员帐户的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 选择 " **管理访问策略和请求**"。
 
@@ -182,7 +182,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 使用您的凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 选择 " **管理访问策略和请求**"。
 
@@ -194,7 +194,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **请求**：从可用策略中选择
 
-    **持续时间 (小时) **：请求的访问的小时数。 对于可以请求的小时数没有限制。
+    **持续时间 (小时)**：请求的访问的小时数。 对于可以请求的小时数没有限制。
 
     **注释**：与您的访问请求相关的注释的文本字段
 
@@ -222,11 +222,11 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. 使用你的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 选择 " **管理访问策略和请求**"。
 
-4. 选择 " **查看** " 以按 **待定**、 **批准**、 **拒绝**或 **客户密码箱** 状态筛选提交的请求。
+4. 选择 " **查看** " 以按 **待定**、 **批准**、 **拒绝** 或 **客户密码箱** 状态筛选提交的请求。
 
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell 中
 
@@ -250,7 +250,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. 使用你的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 选择 " **管理访问策略和请求**"。
 
@@ -292,7 +292,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 使用组织中的管理员帐户的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 选择 " **管理访问策略和请求**"。
 
@@ -318,7 +318,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 使用组织中的管理员帐户的凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com) 。
 
-2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私**权限  >  **访问权限**"。
+2. 在管理中心中，转到 "**设置**  >  **组织设置**"  >  **安全 & 隐私** 权限  >  **访问权限**"。
 
 3. 启用 " **需要批准以进行特权访问** 控制"。
 

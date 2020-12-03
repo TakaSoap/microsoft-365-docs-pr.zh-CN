@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 结合使用，以获取有关针对你的设备和电子邮件内容的威胁的更多详细信息。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357775"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561215"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>将 Microsoft Defender for Office 365 与 Microsoft Defender for Endpoint 一起使用
 
@@ -43,11 +43,11 @@ ms.locfileid: "49357775"
 > [!TIP]
 > **[了解有关 Microsoft Defender 安全中心](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)** (也称为 microsoft Defender for Endpoint portal 的详细信息。 ) 
   
-## <a name="requirements"></a>Requirements
+## <a name="requirements"></a>要求
 
 - 您的组织必须拥有 Microsoft Defender for Office 365 (或 Office 365 E5) 和 Microsoft Defender for Endpoint。
     
-- 您必须是全局管理员或具有安全管理员角色 (如安全 [ &amp; 合规中心](https://protection.office.com)中分配的安全管理员) 。  (查看 [安全 &amp; 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)) 
+- 您必须是全局管理员或具有安全管理员角色 (如安全管理员) 在 [安全 & 合规中心](https://protection.office.com)中分配。  (查看 [安全 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)) 
     
 - 您必须具有对 [资源管理器 (或实时检测) ](threat-explorer.md) 在安全 & 合规中心和 Microsoft Defender 安全中心中的访问权限。
     

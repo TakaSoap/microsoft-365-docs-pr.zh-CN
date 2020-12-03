@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356915"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558282"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -110,7 +110,7 @@ Azure AD 提供一套完整的标识管理功能。 我们建议使用这些功�
 
 |功能或特性|说明|许可|
 |---|---|---|
-|[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了失窃凭据可用于访问环境的风险。 Microsoft 365 对基于 MFA 的登录使用 Azure 多因素身份验证服务。|Microsoft 365 E3 或 E5|
+|[多重身份验证 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求用户提供两种形式的验证，如用户密码以及来自 Microsoft 验证器应用或电话呼叫的通知。 MFA 极大地降低了失窃凭据可用于访问环境的风险。 Microsoft 365 对基于 MFA 的登录使用 Azure AD 多重身份验证服务。|Microsoft 365 E3 或 E5|
 |[条件访问](/azure/active-directory/conditional-access/overview)|Azure AD 评估用户登录的条件，并使用条件访问策略确定允许的访问权限。 例如，在本指南中，我们将向您介绍如何创建条件访问策略，以要求访问敏感数据的设备合规性。 这极大地降低了具有自己的设备和被盗凭据的黑客可以访问您的敏感数据的风险。 它还保护了设备上的敏感数据，因为这些设备必须满足运行状况和安全性的特定要求。|Microsoft 365 E3 或 E5|
 |[Azure AD 组](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件访问策略、具有 Intune 的设备管理，甚至对组织中的文件和网站的权限依赖于用户帐户或 Azure AD 组的分配。 我们建议您创建与您实施的保护级别相对应的 Azure AD 组。 例如，您的执行人员可能更高的黑客的价值目标。 因此，将这些员工的用户帐户添加到 Azure AD 组并将该组分配给条件访问策略和其他强制实施更高级别的保护的策略是有意义的。|Microsoft 365 E3 或 E5|
 |[设备注册](/azure/active-directory/devices/overview)|将设备注册到 Azure AD 以创建设备的标识。 当用户登录并应用需要加入域或合规的 Pc 的条件访问策略时，此标识用于对设备进行身份验证。 在本指南中，我们使用设备注册自动注册加入域的 Windows 计算机。 设备注册是使用 Intune 管理设备的先决条件。|Microsoft 365 E3 或 E5|

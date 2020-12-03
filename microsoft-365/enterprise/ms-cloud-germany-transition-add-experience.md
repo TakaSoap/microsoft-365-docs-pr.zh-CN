@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：从 Microsoft (云) 德国移动到新的德国数据中心区域中的 Office 365 服务时，其他客户体验信息。
-ms.openlocfilehash: b282a12966e7a6dc8a1a331409834322c5087a10
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551871"
+ms.locfileid: "49560834"
 ---
 # <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从 Microsoft 云德国迁移的其他体验信息 
 
@@ -101,7 +101,7 @@ ms.locfileid: "49551871"
 
 | 步骤 (s)  | 说明 | 适用对象 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 客户端，office Online 中的 office Online 切换时，Azure AD 将租户作用域终结以指向 Office 365 服务。<!--v-gmoor: What?--> | 此配置更改使 Office 客户端能够更新并指向 Office 365 服务终结点。 | 所有 Office 客户 | -从客户拥有的 DNS 中删除 MSOID CName （如果存在）。 <br><br> -通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) ，以使 Office 客户端能够选取更改。 <br><br> -通知用户和技术支持人员用户 *可能会* 看到一个 office 横幅，提示他们在发生转换的72小时内重新激活 office 应用。 <br><br> -必须关闭个人计算机上的所有 Office 应用程序，并且用户必须注销，然后重新登录。 在黄色激活栏中，登录以重新针对 Office 365 服务。 <br><br> -共享计算机将需要类似于个人计算机的操作，并且不需要特殊的过程。 <br><br> -在移动设备上，用户必须注销应用程序，关闭它们，然后重新登录。 |
+| 客户端，office Online 中的 office Online 切换时，Azure AD 将租户作用域终结以指向 Office 365 服务。 | 此配置更改使 Office 客户端能够更新并指向 Office 365 服务终结点。 | 所有 Office 客户 | -从客户拥有的 DNS 中删除 MSOID CName （如果存在）。 <br><br> -通知用户关闭 _所有_ Office 应用，然后重新登录 (或强制客户端重新启动，并强制用户登录) ，以使 Office 客户端能够选取更改。 <br><br> -通知用户和技术支持人员用户 *可能会* 看到一个 office 横幅，提示他们在发生转换的72小时内重新激活 office 应用。 <br><br> -必须关闭个人计算机上的所有 Office 应用程序，并且用户必须注销，然后重新登录。 在黄色激活栏中，登录以重新针对 Office 365 服务。 <br><br> -共享计算机将需要类似于个人计算机的操作，并且不需要特殊的过程。 <br><br> -在移动设备上，用户必须注销应用程序，关闭它们，然后重新登录。 |
 |||||
 
 <!--
@@ -117,7 +117,7 @@ ms.locfileid: "49551871"
 
 | 步骤 (s)  | 说明 | 适用对象 | 影响 |
 |:-------|:-----|:-------|:-------|
-| 在迁移过程中，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for business 和 Exchange Online 位置的0个结果。 | 在迁移过程中，客户可以继续在安全 & 合规性中心（包括内容搜索）中创建事例、保留、搜索和导出。  但是，对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的搜索将返回0个结果或产生一个错误。 若要获取修正，请参阅 _影响_ 列。 | 使用电子数据展示的所有客户 |  如果在迁移过程中搜索返回0个结果或错误，请对 SharePoint Online 执行以下操作： <br><br>  按照 [从 OneDrive 或 SharePoint 下载文件和文件夹](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的说明，直接从 SharePoint Online/OneDrive for business 网站下载网站。 此方法将需要 SharePoint Online 管理员权限或网站上的只读权限。 <br><br> 如果超出了 [从 OneDrive 或 SharePoint 的下载文件和文件夹](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述的限制，客户可以使用 Onedrive for business 同步客户端，方法是按照 "将 [SharePoint 和团队文件与您的计算机同步](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)" 中的指南进行。 <br><br> -Exchange Online <br><br> - [Exchange Server 中的就地电子数据展示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 在迁移过程中，电子数据展示搜索将失败或返回已迁移的 SharePoint Online、OneDrive for business 和 Exchange Online 位置的0个结果。 | 在迁移过程中，客户可以继续在 [安全 & 合规性中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [内容搜索](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中创建事例、保留、搜索和导出。  但是，对已迁移的 SharePoint Online、OneDrive for Business 和 Exchange Online 位置的搜索将返回0个结果或产生一个错误。 若要获取修正，请参阅 _影响_ 列。 | 使用电子数据展示的所有客户 |  如果在迁移过程中搜索返回0个结果或错误，请对 SharePoint Online 执行以下操作： <br><br>  按照 [从 OneDrive 或 SharePoint 下载文件和文件夹](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的说明，直接从 SharePoint Online/OneDrive for business 网站下载网站。 此方法将需要 SharePoint Online 管理员权限或网站上的只读权限。 <br><br> 如果超出了 [从 OneDrive 或 SharePoint 的下载文件和文件夹](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述的限制，客户可以使用 Onedrive for business 同步客户端，方法是按照 "将 [SharePoint 和团队文件与您的计算机同步](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)" 中的指南进行。 <br><br> -Exchange Online <br><br> - [Exchange Server 中的就地电子数据展示](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 <!--

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 设置向一个或多个电子邮件帐户转发电子邮件。
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551828"
+ms.locfileid: "49560788"
 ---
 # <a name="configure-email-forwarding"></a>配置电子邮件转发
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551828"
 ::: moniker-end
   
 作为组织的管理员，您可能需要为用户的邮箱设置电子邮件转发功能的公司要求。 通过电子邮件转发，可以将发送到用户邮箱的电子邮件转发到组织内部或外部的其他用户邮箱。
+
+> [!IMPORTANT]
+> 您可以使用出站垃圾邮件筛选器策略来控制自动转发到外部收件人。 有关详细信息，请参阅 [在 Microsoft 365 中控制自动外部电子邮件转发](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)。
 
   
 ## <a name="configure-email-forwarding"></a>配置电子邮件转发
@@ -102,5 +105,6 @@ ms.locfileid: "49551828"
      或者，在 "管理中心" 中， [创建一个通讯组](../setup/create-distribution-lists.md)， [向其添加地址](add-user-or-contact-to-distribution-list.md)，然后使用本文中的说明将 "转发" 设置为指向 DL。
     
 5. 请勿删除要转发的电子邮件的用户帐户或删除其许可证！  如果这样做，电子邮件转发将停止。 
+
 
 ::: moniker-end 

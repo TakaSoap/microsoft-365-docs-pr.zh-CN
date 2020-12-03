@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：在 (Microsoft 云德国中移动时服务的其他设备信息。) 到新的德国数据中心区域中的 Office 365 服务。
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551949"
+ms.locfileid: "49560848"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>从 Microsoft 云德国迁移的其他设备信息
 
@@ -136,6 +136,12 @@ Private key state : Okay
 
 
 ## <a name="windows-azure-ad-join"></a>Windows Azure AD 加入
+
+**重要说明：** 在商业迁移之后，将启用 Intune 服务主体，这意味着激活 Azure AD 设备注册。 如果在迁移之前阻止了 Azure AD 设备注册，则必须使用 PowerShell 禁用 Intune service 主体，以使用 Azure AD 门户再次禁用 azure ad 设备注册。 您可以使用 Azure Active Directory PowerShell for Graph 模块中的此命令禁用 Intune service 主体。
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>脱离
 

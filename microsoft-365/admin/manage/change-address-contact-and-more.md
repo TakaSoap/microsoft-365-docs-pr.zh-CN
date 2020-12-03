@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 了解如何对组织配置文件进行更改，例如组织名称、地址、电话、技术联系人和电子邮件。
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645103"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560847"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>更改组织的地址、技术联系人和其他信息
 
@@ -73,14 +73,15 @@ ms.locfileid: "48645103"
 
 1. 转到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>。
 
-2. 在邮件头中，选择您的配置文件图标，然后选择 **"我的帐户**"。
+2. 在标头中，选择您的配置文件图标，然后选择 " **查看帐户**"。
 
-3. 在左侧，选择 " **个人信息**"。
+3. 在左侧，选择 " **安全信息**"。
 
-4. 在 **联系人详细信息** 卡片上，选择 " **编辑**"。
+4. 在 "电子邮件" 部分，选择 "**更改**"
 
-5. 在 " **备用电子邮件** " 框中编辑地址，然后选择 " **保存**"。
+5. 在 " **备用电子邮件** " 框中编辑地址，然后选择 " **下一步**"。
 
+6. 输入发送到备选电子邮件地址的代码，然后选择 **"确定"** 以验证更改。
 若要了解有关更改其他配置文件信息的信息，请参阅 [更改你的联系人首选项](change-contact-preferences.md) 或 [更改你的显示语言](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)。
   
 ### <a name="email-signatures"></a>电子邮件签名

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本移动性和安全性是 Microsoft 365 计划的一部分。
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930161"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561491"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>在基本移动性和安全性或 Intune 之间进行选择
 
@@ -33,7 +33,7 @@ ms.locfileid: "48930161"
  
 基本移动性和安全性和 Intune 都包含在各种计划中，如下表所述。
 
-|**计划**|**基本移动性和安全性**|**Microsoft Intune**|
+| 套餐 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 应用版|是|否|
 |Microsoft 365 商业基础版|是|否|
@@ -64,11 +64,11 @@ Microsoft Intune 和内置基本移动性和安全性都使您能够管理组织
 >[!NOTE]
 >*通过首先设置基本移动性和安全性，然后添加 Microsoft Intune，* 可以在同一 Microsoft 365 业务标准组织中使用 Intune 和基本移动性和安全性管理用户及其移动设备。 这使您可以选择基本移动性和安全性或功能更丰富的 Intune 解决方案。 分配 Intune 许可证以启用 Intune 功能。
 
-|**功能区**|**功能突出显示**|**基本移动性和安全性**|**Microsoft Intune**|
+| 功能区域 | 功能突出显示 | 基本移动性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |设备类型|管理不同的操作系统平台和主要管理模式变体。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS，iPad OS|
 |设备合规性|设置和管理安全策略，如设备级 PIN 锁定和 jailbreak 检测。 |Android 9 及更高版本的设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
-|基于设备合规性的条件访问 |阻止不符合的设备访问来自云的公司电子邮件和数据。 |在 Windows 10 上不受支持。<br/>限制为控制对 Exchange Online、SharePoint Online 和 Outlook 的访问。 |否 |
+|基于设备合规性的条件访问 |阻止不符合的设备访问来自云的公司电子邮件和数据。 |在 Windows 10 上不受支持。<br/>限制为控制对 Exchange Online、SharePoint Online 和 Outlook 的访问。 |是 |
 |设备配置  |配置设备设置 (例如，禁用摄像头) |设备合规性|设置和管理安全策略，如设备级 PIN 锁定和 jailbreak 检测。 |Android 9 及更高版本的设备上的限制。 请参阅 [详细信息](capabilities.md)。 |是|
  |一组有限的设置。 |是|
 |电子邮件配置文件  |在设备上设置本机电子邮件配置文件。 |是|是|

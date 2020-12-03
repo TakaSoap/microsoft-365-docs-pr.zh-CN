@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 了解如何将企业从 Office 365 E3 移动到 Microsoft 365 商业高级版。
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842152"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558244"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>从 Office 365 E3 迁移到 Microsoft 365 商业高级版 
 
@@ -53,7 +53,7 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 | **威胁防护**        | | | 
 | 适用于 Office 的 Defender 365 计划1 | ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | 不包括在内，但可以添加到 | 
 | **身份管理**        | | | 
-| 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  | 
+| 混合 Azure Active Directory 的自助服务密码重置 (Azure AD) 帐户、Azure AD 多重身份验证 (MFA) 、条件访问、本地标识的密码写回|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  | 
 | **设备和应用程序管理**        | | |
 | Microsoft Intune、Windows AutoPilot|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    |  |
 | 共享计算机激活|     ![包含在 Microsoft 365 商业高级版中](../media/check-mark.png)    | ![包含在 Office 365 E3 中](../media/check-mark.png)| 
@@ -95,9 +95,9 @@ Microsoft 365 商业高级版为你的小型企业提供了所需的一切，并
 
 您还可以在 "设备" 页上完成以下步骤：
   
-1. 在管理中心的左侧导航中，转到 " **设备** \> **策略** "。
+1. 在管理中心的左侧导航中，转到 " **设备** \> **策略**"。
     
-2. 在 " **设备策略** " 页上，选择 " **添加** "。
+2. 在 " **设备策略** " 页上，选择 " **添加**"。
     
 3. 在 " **添加策略** " 窗格中，为策略指定一个名称，然后从下拉类型中选择一个 **策略类型** 。 
     

@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 了解如何使用威胁资源管理器和实时检测报告来调查安全合规性中心中的威胁并对其做出响应 &amp; 。
+description: 了解如何使用威胁资源管理器和实时检测报告来调查安全 & 合规性中心中的威胁并对其做出响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367185"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561227"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367185"
 
 ![威胁资源管理器](../../media/ThreatExplorerFirstOpened.png)
 
-[威胁资源管理器](threat-explorer.md) (和实时检测报告) 是一种强大的近实时工具，可帮助安全操作团队在安全合规中心中调查和响应威胁 &amp; 。 资源管理器 (和实时检测报告) 显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织的其他安全威胁和风险。
+[威胁资源管理器](threat-explorer.md) (和实时检测报告) 是一种强大的近实时工具，可帮助安全操作团队调查安全 & 合规性中心中的威胁并对其做出响应。 资源管理器 (和实时检测报告) 显示有关 Office 365 中的电子邮件和文件中可疑的恶意软件和网络钓鱼的信息，以及组织的其他安全威胁和风险。
 
 - 如果你有 [Microsoft Defender For Office 365](office-365-atp.md) 计划2，则表示你具有资源管理器。
 - 如果你拥有 Microsoft Defender for Office 365 计划1，则会进行实时检测。

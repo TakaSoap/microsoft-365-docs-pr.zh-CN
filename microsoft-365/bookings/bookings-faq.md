@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 预定常见问题。
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445447"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561551"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 预定常见问题
 
@@ -29,7 +29,7 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>谁有权访问 Microsoft 预订？
 
-默认情况下，在全球范围内的 Microsoft 365 商业高级版、A3、A5、E3 和 E5 客户提供预订并处于活动状态。 在由世纪互联运营的 Office 365 中也提供了预订。
+默认情况下，预订适用于全球 Microsoft 365 商业高级版、Microsoft 365 商业标准版、A3、A5、E3 和 E5 客户。 在由世纪互联运营的 Office 365 中也提供了预订。
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>我的客户是否会看到我的个人或业务日历？
 
@@ -37,21 +37,21 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>最终用户如何访问预订应用？
 
-授予 Microsoft 365 商业高级版、A3、A5、E3、E5 或的任何人作为教职员工成员在管理员或查看者角色中添加的任何人都可以在 Microsoft 365 Web 体验中的应用程序选择器中访问预订。 此外，还提供适用于 iOS 和 Android 的配套应用。
+经 Microsoft 365 商业高级版、Microsoft 365 商业标准版、A3、A5、E3、E5 或作为教职员工成员添加的任何人都可在 Microsoft 365 Web 体验中的应用程序选择器中访问，或者作为管理员或查看者角色中的教职员工成员进行添加。 此外，还提供适用于 iOS 和 Android 的配套应用。
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>我是否可以在我自己的网站中使用预订？
 
-是的。 我们为你提供了一种通过 iFrame 在网站中嵌入你的预定日历的方法。 链接嵌入代码位于预订应用程序内的 " **预定页面** " 选项卡中。
+是。 我们为你提供了一种通过 iFrame 在网站中嵌入你的预定日历的方法。 链接嵌入代码位于预订应用程序内的 " **预定页面** " 选项卡中。
 
 ### <a name="can-i-use-bookings-even-if-i-dont-have-a-web-page-for-my-business"></a>即使我没有业务网页，也可以使用预订吗？
 
-是的。 我们在 Web 应用的 " **预定页面** " 选项卡中提供了一个指向你的预定页面的链接。 您只需向客户或客户端提供该链接，他们就会看到您的企业的最新可用性信息。 此外，还可以在社交媒体中共享预定页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并将访问限制为仅组织中的用户来控制谁可以访问此页面。
+是。 我们在 Web 应用的 " **预定页面** " 选项卡中提供了一个指向你的预定页面的链接。 您只需向客户或客户端提供该链接，他们就会看到您的企业的最新可用性信息。 此外，还可以在社交媒体中共享预定页面，甚至可以使用嵌入功能将其托管在 iFrame 中。 您还可以通过禁用直接搜索引擎索引并将访问限制为仅组织中的用户来控制谁可以访问此页面。
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>我们的 IT 部门是否可以控制最终用户是否可以访问预订？
 
-默认情况下，预订在商业高级版、M365 A3/A5 和 E3/E5 租户中可用，但如果他们选择，管理员可以在 Microsoft 365 管理中心中将其关闭。 为此，请 [按照以下说明](turn-bookings-on-or-off.md)操作。
+默认情况下，预订在 Microsoft 365 商业高级版、Microsoft 365 商业标准版、M365 A3/A5 和 E3/E5 租户中可用，但如果他们选择，管理员可以在 Microsoft 365 管理中心中将其关闭。 为此，请 [按照以下说明](turn-bookings-on-or-off.md)操作。
 
-如果客户希望对租户中的某些符合条件的许可证禁用对预订的访问权限，则可以使用组策略来限制许可证，也可以实施 OWA 邮箱策略来限制可以创建新的预订日历的用户。
+如果客户想要对租户中的某些符合条件的许可证禁用对预订的访问权限，则可以使用组策略来限制许可证，也可以实施 OWA 邮箱策略来限制能够创建新的预订日历的用户。
 
 如果使用 OWA 邮箱策略禁用对预订的访问权限，则所有用户都将拥有一个预订许可证，但在尝试访问该应用程序时，他们将只会成功，如果它们是策略的一部分或者已将其作为员工添加到现有的预订日历中。 [此处](turn-bookings-on-or-off.md)的详细信息，请单击 "仅允许所选用户创建预订日历" 部分。
 
@@ -114,7 +114,7 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>如何获取 Microsoft 预订？
 
-预订在 Microsoft 365 中适用于具有商业高级版、A3、A5、E3 和 E5 许可证的客户，以及 iOS 和 Android 附属应用。 预订不可作为独立应用程序提供。 必须启用 outlook Web App 或 Web 上的 Outlook 才能使用预订，因为它将数据存储在 Outlook 中。
+预订在 Microsoft 365 中适用于使用 Microsoft 365 商业高级版的客户，Microsoft 365 Business Standard、A3、A5、E3 和 E5 许可证，以及 iOS 和 Android 附属应用。 预订不可作为独立应用程序提供。 必须启用 outlook Web App 或 Web 上的 Outlook 才能使用预订，因为它将数据存储在 Outlook 中。
 
 预订许可证为产品提供了完整功能，包括创建和管理日历。 此外，还允许用户在管理员或查看者角色中将这些用户添加为员工时查看和编辑现有日历。
 
@@ -124,11 +124,11 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>我的员工是否可以使用没有 Microsoft 365 帐户的预定？
 
-是的。 你可以使用任何电子邮件添加你的员工，并且当某人与他们一起预订约会时，仍会收到电子邮件确认和日历邀请。
+是。 你可以使用任何电子邮件添加你的员工，并且当某人与他们一起预订约会时，仍会收到电子邮件确认和日历邀请。
 
 ### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>是否可以在同一个 Microsoft 365 帐户下创建多个预订日历，并在它们之间切换？
 
-是的。 您可以使用一个帐户创建和管理多个预订日历。 您可以使用预定 Web 应用中公司名称旁边的脱字号在它们之间进行切换。
+是。 您可以使用一个帐户创建和管理多个预订日历。 您可以使用预定 Web 应用中公司名称旁边的脱字号在它们之间进行切换。
 
 ### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>如果我的组织具有带 F1/F3、E1 和 E3/E5 的混合许可证，该怎么办？
 
@@ -166,15 +166,15 @@ Microsoft 预订是 Microsoft 365 应用程序，可以轻松地安排和管理�
 
 ### <a name="how-does-scheduling-policy-work"></a>计划策略的工作原理是什么？
 
-一个名为 " **最长提前期** " 的设置决定了提前 (的最远距离（以天为单位）) 可以进行预订。 **最短提前**期 (最短提前期（以小时为单位）的最短提前期和最长提前期之间必须至少24小时) 和最长提前期。 如果最短提前期设置为0小时，则最长提前期可以设置为一天，在这种情况下，客户可以取消登记，直到约会在第二天内。
+一个名为 " **最长提前期** " 的设置决定了提前 (的最远距离（以天为单位）) 可以进行预订。 **最短提前** 期 (最短提前期（以小时为单位）的最短提前期和最长提前期之间必须至少24小时) 和最长提前期。 如果最短提前期设置为0小时，则最长提前期可以设置为一天，在这种情况下，客户可以取消登记，直到约会在第二天内。
 
 :::image type="content" source="media/bookings-faq-scheduling.png" alt-text="在预订中安排":::
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>预订如何跨时区进行工作？
 
-默认情况下，所有时间都在业务时区 (本地时区) 。 这意味着，您为预订日历（如工作时间）配置的任何设置都将显示在此时区中。 自助服务页面能够在最终用户的时区中显示所有约会时间，如果需要，可以将其关闭。如果 "在预订页面" 选项卡上 **始终显示 "仍在营业时区中显示时间段** "，则访问该页面的人员将在其自己的本地时区中看到时间段。
+默认情况下，所有时间都在业务时区 (本地时区) 。 这意味着，您为预订日历（如工作时间）配置的任何设置都将显示在此时区中。 自助服务页面能够在最终用户的时区中显示所有约会时间，如果需要，可以将其关闭。 如果 "在预订页面" 选项卡上 **始终显示 "仍在营业时区中显示时间段** "，则访问该页面的人员将在其自己的本地时区中看到时间段。
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="在预订中安排":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="预订区域和时区设置":::
 
 没有规定为预订中的员工设置时区。 员工时区，因而营业时间将在业务时区中。
 
@@ -200,9 +200,9 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>日历是否可以保持未发布状态 (不面向公众的) ，但仍可供指定用户访问？
 
-是的。 Web 应用中的 "预定页面" 选项卡上有一个复选框： **需要 Microsoft 365 或 Office 365 帐户从 "我的组织" 到 "书籍**"。 选中此复选框会将自助服务页面访问限制为仅限租户中的用户访问。 在用于创建和管理的 Web 应用程序中的预订日历只能由以管理员或查看者角色添加到页面的人员访问。
+是。 Web 应用中的 "预定页面" 选项卡上有一个复选框： **需要 Microsoft 365 或 Office 365 帐户从 "我的组织" 到 "书籍**"。 选中此复选框会将自助服务页面访问限制为仅限租户中的用户访问。 在用于创建和管理的 Web 应用程序中的预订日历只能由以管理员或查看者角色添加到页面的人员访问。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="在预订中安排":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="预订中的预订页面访问控制":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>主页更新的频率是多少？
 
@@ -250,7 +250,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 对预订 Web 应用的访问权限涉及通过常规 Azure Active Directory (AAD) 身份验证进行的身份验证。 "自助式预订" 页面可供具有网页链接的所有用户使用。 但是，当选择 " **从我的组织中选择 Microsoft 365 或 Office 365 帐户** " 设置时，将仅限制页面在 Microsoft 365 租户 (中使用 AAD 身份验证) 。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="在预订中安排":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="预订中的预订页面访问控制":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>客户数据是否因某种原因而留下生产系统？
 
@@ -303,7 +303,8 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 1. 登录到 Microsoft 365，然后从应用启动器中选择 " **Outlook** "。
 
-   ![应用启动器中的 Outlook 图像](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![应用启动器中的 Outlook 图像](../media/bookings-applauncher-outlook.png)
 
 1. 在页面顶部，选择 " **共享** \> **日历**"。
 
@@ -311,10 +312,11 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 1. 在 " **组织内部人员** " 部分中，选择 " **我的组织**" 旁边的下拉框，然后选择 " **在我忙碌时可以查看**"。
 
-> [!NOTE]
-> 此设置与贵组织中的其他用户共享你的忙/闲信息。 它不包含任何其他信息，例如安排的约会类型、安排约会的用户或位置。
+   > [!NOTE]
+   > 此设置与贵组织中的其他用户共享你的忙/闲信息。 它不包含任何其他信息，例如安排的约会类型、安排约会的用户或位置。
 
-   ![可在启用忙状态时查看的日历共享屏幕的图像](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![可在启用忙状态时查看的日历共享屏幕的图像](../media/bookings-view-busy.png)
 
 1. 选择 **“完成”**。
 
@@ -324,7 +326,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 1. 登录到 Microsoft 365，然后转到 " **预定** \> **员工**"。
 
-1. 将鼠标光标悬停在教职员工成员的姓名上。 "**编辑**并**删除**" 图标显示在 "**电话**" 列的右侧。
+1. 将鼠标光标悬停在教职员工成员的姓名上。 "**编辑** 并 **删除**" 图标显示在 "**电话**" 列的右侧。
 
 1. 选择 " **删除** " 图标。
 
@@ -335,7 +337,7 @@ SMS 消息目前在北美可用，Skype 或 Twilio 帐户将用于短信传递�
 
 若要检查是否有多个日历，请在左侧菜单中，选择您的公司名称旁边的下拉箭头，然后选择 " **打开**"。 如果只有一个日历，则只会看到用于添加预订日历的选项。 此示例显示名为 "Contoso CO" 的第二个日历。
 
-   ![所显示的第二个日历的 "选择日历" 屏幕的图像](../media/bookings-choose-calendar.png)
+![所显示的第二个日历的 "选择日历" 屏幕的图像](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>出现同步错误，无法识别
 

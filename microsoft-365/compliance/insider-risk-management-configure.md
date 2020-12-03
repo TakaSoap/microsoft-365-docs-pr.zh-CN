@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357431"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558196"
 ---
 # <a name="get-started-with-insider-risk-management"></a>内部风险管理入门
 
@@ -92,8 +92,6 @@ ms.locfileid: "49357431"
 ## <a name="step-3-configure-prerequisites-for-templates"></a>步骤3：配置模板的必备组件
 
 大多数内幕风险管理模板都具有必须为策略指示器配置的先决条件，以生成相关的活动通知。 根据计划为组织配置的策略配置适当的先决条件。
-
-如果使用电子邮件策略模板中的 *冒犯性语言* 配置策略，则可以跳过此步骤，直接转到 **步骤 4**。
 
 ### <a name="configure-microsoft-365-hr-connector"></a>配置 Microsoft 365 HR 连接器
 
