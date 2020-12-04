@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何使用安全 & 合规性中心中的提交门户将可疑的电子邮件、可疑的网络钓鱼邮件、垃圾邮件和其他可能有害的邮件、Url 和文件提交到 Microsoft 进行扫描。
-ms.openlocfilehash: 1e133c0d4a875fc9735cc8a92e42b6ffeee6dd5f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527741"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568586"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用“管理员提交”将可疑的垃圾邮件、网络钓鱼诈骗、URL和文件提交给 Microsoft
 
@@ -60,10 +60,10 @@ ms.locfileid: "49527741"
 
 1. 在 " **对象类型** " 部分，选择 " **电子邮件**"。 在 " **提交格式** " 部分，使用以下选项之一：
 
-   - **网络邮件 ID**：这是邮件中 **X--组织网络-邮件 ID** 标头中可用的 GUID 值。
+   - **网络邮件 ID**：这是一个 GUID 值，在邮件中的 **X--组织网络-邮件 ID** 标头中，或在隔离邮件中的 **x-Office365-** -----id 标头中可用。
 
    - **文件**：单击 " **选择文件**"。 在打开的对话框中，查找并选择 .eml 或 .msg 文件，然后单击 " **打开**"。
-   
+
    > [!NOTE]
    > 具有 Defender for Office 365 计划1或计划2的管理员能够将邮件提交为30天的旧邮件。 其他管理员将只能返回7天。
 
@@ -244,7 +244,7 @@ ms.locfileid: "49527741"
 
 ## <a name="undo-user-submissions"></a>撤消用户提交
 
-用户将可疑电子邮件提交到自定义邮箱后，用户和管理员不能选择撤消提交。 如果用户想要恢复该电子邮件，则可在 "已删除邮件" 或 "垃圾邮件" 文件夹中进行恢复。 
+用户将可疑电子邮件提交到自定义邮箱后，用户和管理员不能选择撤消提交。 如果用户想要恢复该电子邮件，则可在 "已删除邮件" 或 "垃圾邮件" 文件夹中进行恢复。
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>从自定义邮箱向 Microsoft 提交邮件
 

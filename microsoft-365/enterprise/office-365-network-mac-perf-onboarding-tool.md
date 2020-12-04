@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 网络连接测试工具 (预览) '
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087075"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569983"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 网络连接测试工具 (预览) 
 
 Microsoft 365 网络连接测试工具位于 <https://connectivity.office.com> 。 它是一种辅助工具，适用于 Microsoft 365 管理中心中的 "网络评估" 和 "网络洞察力" 信息，在 **运行状况 |连接** 菜单。
+
+> [!IMPORTANT]
+> 登录 Microsoft 365 租户非常重要，因为所有测试报告都与管理员共享，并在您登录时上载到租户。
 
 ![连接测试工具](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 

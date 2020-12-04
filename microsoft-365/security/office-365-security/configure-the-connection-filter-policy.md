@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中配置连接筛选，以允许或阻止来自电子邮件服务器的电子邮件。
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318248"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572821"
 ---
 # <a name="configure-connection-filtering"></a>配置连接筛选
 
@@ -49,17 +49,16 @@ ms.locfileid: "48318248"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+  - 若要修改默认连接筛选器策略，您必须是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
+  - 若要对默认连接筛选器策略进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  - 若要修改默认连接筛选器策略，您必须是下列角色组之一的成员：
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+  **注意**：
 
-  - 若要对默认连接筛选器策略进行只读访问，您必须是下列角色组之一的成员：
-
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
+  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
 
 - 若要查找要允许或阻止的电子邮件服务器 (发件人) 的源 IP 地址，可以检查邮件头中的 "连接 IP (**CIP**) 标头" 字段。 若要查看各种电子邮件客户端中的邮件头，请参阅 [在 Outlook 中查看 internet 邮件头](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
@@ -85,15 +84,15 @@ ms.locfileid: "48318248"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的网络掩码值为/24 到/32。 若要跳过 CIDR IP 掩码值/1 到/23 的垃圾邮件筛选，请参阅本主题后面的 " [跳过对 CIDR ip 的垃圾邮件筛选](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) "。在本主题后面的 "可用范围" 部分之外。
 
-     若要添加 IP 地址或地址范围，请单击 " **添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 " **允许的 IP 地址** " 中的条目，然后单击 " **删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 " **添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 " **允许的 IP 地址** " 中的条目，然后单击 " **删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”。
 
-   - **IP 阻止列表**：单击 " **编辑**"。 在出现的 " **IP 阻止列表**" 浮出控件中，按照**ip 允许列表**设置中的前面所述，在 "**地址" 或 "地址范围**" 框中输入单个 ip 地址、ip 地址范围或 CIDR IP。
+   - **IP 阻止列表**：单击 " **编辑**"。 在出现的 " **IP 阻止列表**" 浮出控件中，按照 **ip 允许列表** 设置中的前面所述，在 "**地址" 或 "地址范围**" 框中输入单个 ip 地址、ip 地址范围或 CIDR IP。
 
-     若要添加 IP 地址或地址范围，请单击 " **添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 " **阻止的 IP 地址** " 中的条目，然后单击 " **删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”****。
+     若要添加 IP 地址或地址范围，请单击 " **添加** ![ 添加图标" ](../../media/ITPro-EAC-AddIcon.png) 。 若要删除条目，请选择 " **阻止的 IP 地址** " 中的条目，然后单击 " **删除** ![ 删除" ](../../media/scc-remove-icon.png) 。 完成时，请单击“保存”。
 
    - **打开安全列表**：启用或禁用安全列表的使用，以确定将跳过垃圾邮件筛选的已知、良好的发件人。
 
-4. 完成时，请单击“保存”****。
+4. 完成时，请单击“保存”。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全 & 合规性中心查看默认连接筛选器策略
 
@@ -167,7 +166,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - 规则条件： **如果** \> **发件人** \> **IP 地址在这些范围中的任何一个或完全匹配**，则应用此规则 \> 。请) 使用带 a/1 到/23 网络掩码的 CIDR IP (。
 
-- 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL) ** \> **绕过垃圾邮件筛选**。
+- 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL)** \> **绕过垃圾邮件筛选**。
 
 您可以审核规则、测试规则、在特定时间段内激活规则，以及进行其他选择。 我们建议首先在一段时间内测试规则，然后再强制应用。 有关详细信息，请参阅 [在 Exchange Online 中管理邮件流规则](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)。
 
@@ -181,9 +180,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 2. 将具有下列设置的邮件流规则配置 (至少) ：
 
-   - 规则条件： **如果** \> **发件人** \> **IP 地址位于这些范围中的任何一个或完全匹配**192.168.1.25，则应用此规则 \> 。)  (与您在上一步中添加到 IP 允许列表中的 ip 地址或地址范围相同的 ip 地址或地址范围。
+   - 规则条件： **如果** \> **发件人** \> **IP 地址位于这些范围中的任何一个或完全匹配** 192.168.1.25，则应用此规则 \> 。)  (与您在上一步中添加到 IP 允许列表中的 ip 地址或地址范围相同的 ip 地址或地址范围。
 
-   - 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL) ** \> **0**。
+   - 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL)** \> **0**。
 
    - 规则异常： **"发件人**" \> **域为** \> fabrikam.com (仅要跳过垃圾邮件筛选) 的域。
 
@@ -199,10 +198,10 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 - 规则条件： **如果** \> **发件人** \> **IP 地址在任何这些范围中，或者完全匹配** \> (IP 地址或地址) ，则应用此规则。
 
-- 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL) ** \> **绕过垃圾邮件筛选**。
+- 规则操作： **修改邮件属性** \> **设置垃圾邮件可信度级别 (SCL)** \> **绕过垃圾邮件筛选**。
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 的新增功能？
 
 ****
 
-![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365**的简短图标？ 探索通过 LinkedIn 学习获取的适用于 **Microsoft 365 管理员和 IT 专业人员**的免费视频课程。
+![LinkedIn 学习 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增版到 Microsoft 365** 的简短图标？ 探索通过 LinkedIn 学习获取的适用于 **Microsoft 365 管理员和 IT 专业人员** 的免费视频课程。

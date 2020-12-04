@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何查找和使用组织的电子邮件安全报告。 安全 & 合规性中心中提供了电子邮件安全报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357931"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572557"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>查看安全与合规中心内的电子邮件安全报告
 
@@ -117,16 +117,16 @@ ms.locfileid: "49357931"
 
 - **分解方式：加密方法** 或 **分解方式：加密模板**：显示以下信息：
 
-  - "日期"
+  - **Date**
   - **发件人地址**
   - **加密模板**
   - **加密方法**
   - **收件人地址**
-  - **主题**
+  - **Subject**
 
 - **数据查看依据：前5个收件人域**：
 
-  - "日期"
+  - **Date**
   - **收件人域**
   - **邮件计数**
 
@@ -162,11 +162,11 @@ ms.locfileid: "49357931"
 
 如果单击 " **查看详细信息表**"，则可以看到以下详细信息：
 
-- "日期"
+- **Date**
 - **发件人地址**
 - **收件人地址**
 - **邮件 id**：在邮件头的 **邮件 id** 标头字段中可用，并且应是唯一的。  (的示例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` 记下尖括号) 。
-- **主题**
+- **Subject**
 - **Filename**
 - **恶意软件名称**
 
@@ -224,12 +224,12 @@ ms.locfileid: "49357931"
 
 如果您在任何报告视图中单击 " **查看详细信息表** "，将显示以下信息：
 
-- "日期"
+- **Date**
 - **发件人地址**
 - **收件人地址**
 - **事件类型**
 - **操作**
-- **主题**
+- **Subject**
 
 如果单击 "详细信息" 表中的 " **筛选器** "，则可以使用以下筛选器修改结果：
 
@@ -263,7 +263,7 @@ ms.locfileid: "49357931"
 
 如果单击 " **查看详细信息表**"，则可以看到以下详细信息：
 
-- "日期"
+- **Date**
 - **欺骗发件人**
 - **真正发件人**
 - **发件人 IP**
@@ -408,7 +408,7 @@ ms.locfileid: "49357931"
 
 - **数据查看依据：内容 \> 恶意软件**：
 
-  - "日期"
+  - **Date**
   - **位置**
   - **指导者**
   - **恶意软件名称**
@@ -417,8 +417,8 @@ ms.locfileid: "49357931"
 
 - **数据查看依据：邮件覆盖**：
 
-  - "日期"
-  - **主题**
+  - **Date**
+  - **Subject**
   - **发件人**
   - **Recipients**
   - **检测人**
@@ -436,8 +436,8 @@ ms.locfileid: "49357931"
 
 - 所有其他图表：
 
-  - "日期"
-  - **主题**
+  - **Date**
+  - **Subject**
   - **发件人**
   - **Recipients**
   - **检测人**
@@ -498,19 +498,16 @@ Microsoft Defender for Office 365 中提供了 **URL 威胁防护报告** 。 �
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 
-若要查看和使用报告，您必须是安全 & 合规性中心 **和** Exchange Online 中指定角色组的成员。
+若要查看和使用本主题中所述的报告，您必须是安全 & 合规性中心中下列角色组之一的成员：
 
-- 在安全 & 合规性中心中，您必须是下列角色组之一的成员：
+- **组织管理**
+- **安全管理员**
+- **安全读者**
+- **全局读者**
 
-  -组织管理-安全管理员 (你也可以在 [Azure Active Directory 管理中心](https://aad.portal.azure.com) 中执行此操作-安全读者
+有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
-
-- 在 Exchange Online 中，您必须是下列角色组之一的成员：
-
-  -组织管理-仅查看组织管理-仅查看收件人-合规性管理
-
-有关详细信息，请参阅 [Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 中的权限和 [管理 exchange online 中的角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+**注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 

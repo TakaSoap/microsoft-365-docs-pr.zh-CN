@@ -1,5 +1,5 @@
 ---
-title: 查看适用于 Office 365 的 Defender 报告
+title: 在报告仪表板中查看适用于 Office 365 的 Defender 报告
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在安全 & 合规中心中查找和使用 Microsoft Defender for Office 365 的报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561723"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572485"
 ---
-# <a name="view-reports-for-microsoft-defender-for-office-365"></a>查看 Microsoft Defender for Office 365 的报告
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全 & 合规中心的 "报告" 仪表板中查看 Office 365 的 Defender for the reports
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -338,27 +338,16 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看适用于 Office 的 Defender 365 报告所需的权限是什么？
 
-为了查看和使用本主题中所述的报告， **必须为安全 & 合规中心和 Exchange 管理中心分配适当的角色**。
+若要查看和使用本主题中所述的报告，您必须是安全 & 合规性中心中下列角色组之一的成员：
 
-- 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
+- **组织管理**
+- **安全管理员**
+- **安全读者**
+- **全局读者**
 
-  - 组织管理
-  - 安全管理员 (可以在 Azure Active Directory 管理中心 (中分配此项 [https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3
-  -  (可以在 Azure Active Directory 管理中心中分配安全操作员 ([https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3
-  - 安全读取者
+有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 对于 Exchange Online，必须在 Exchange 管理中心 () 或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) (请参阅 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) ：
-
-  - 组织管理
-  - 仅限查看组织管理
-  - “仅供查看收件人”角色
-  - 合规性管理
-
-若要了解详细信息，请参阅以下资源：
-
-- [安全与合规中心内的权限](permissions-in-the-security-and-compliance-center.md)
-
-- [Exchange Online 中的功能权限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+**注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 

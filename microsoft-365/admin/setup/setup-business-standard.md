@@ -25,28 +25,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: 了解如何设置 Microsoft 365 商业标准版订阅。
-ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 61ba3b0a8a753c9c441fc5a2ffa66b63da9af675
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644551"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572413"
 ---
 # <a name="set-up-microsoft-business-standard"></a>设置 Microsoft 商业标准版
 
-观看有关设置 Microsoft 365 商业标准版的简短视频。<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
-  
- *这些步骤适用于具有 **[Microsoft 365 商业标准版计划](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的企业和[非营利组织](https://go.microsoft.com/fwlink/p/?LinkId=627221)_
-
-观看有关设置 Microsoft 365 商业标准版（以前称为 Microsoft 365 商业高级版）的简短视频。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-如果你觉得这段视频有用，请查看[适用于小型企业和 Microsoft 365 新手的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>添加你的域以个性化设置登录名
 
@@ -56,7 +44,7 @@ ms.locfileid: "48644551"
 
 1. 使用全局管理员凭据登录到 [Microsoft 365 管理中心](https://admin.microsoft.com)。 
 
-2. 选择“*转到设置*”来启动向导。
+2. 选择“**转到设置**”以启动向导。
 
 3. 在“**安装 Office 应用**”页面上，可选择在自己的计算机上安装应用。
     
@@ -100,7 +88,7 @@ ms.locfileid: "48644551"
 
     注册过程完成后，你将转到管理中心，按照向导安装 Office 应用、添加域、添加用户和分配许可证。 完成初始设置后，可使用管理中心中的“**设置**”页面，继续设置和配置订阅附带的服务。
 
-    有关设置向导和管理中心“**设置**”页面的详细信息，请参阅[设置向导和设置页面之间的区别](o365-setup-wizard-and-setup-page.md)。
+    有关设置向导和管理中心“**设置**”页面的详细信息，请参阅 [设置向导和设置页面之间的区别](o365-setup-wizard-and-setup-page.md)。
 
 ## <a name="finish-setting-up"></a>完成设置
 

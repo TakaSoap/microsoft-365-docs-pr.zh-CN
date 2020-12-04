@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解安全 & 合规性中心的 "报告" 仪表板中提供的邮件流报告。
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357919"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572797"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全 & 合规中心中查看 "报告" 仪表板中的邮件流报告
 
@@ -76,7 +76,7 @@ ms.locfileid: "49357919"
 
 如果您在报告视图中单击 " **查看详细信息表** "，将显示以下信息：
 
-- "日期"
+- **Date**
 - **连接器方向和名称**
 - **连接器类型**
 - **强制 TLS？**：值 **True** 或 **False**。
@@ -132,24 +132,24 @@ ms.locfileid: "49357919"
 
 - **数据查看依据： Exchange 传输规则**：
 
-  - "日期"
+  - **Date**
   - **传输规则**
-  - **主题**
+  - **Subject**
   - **发件人地址**
   - **收件人地址**
   - **严重性**
-  - **方向**
+  - **Direction**
 
 - **数据查看依据： DLP Exchange 传输规则**：
 
-  - "日期"
+  - **Date**
   - **DLP 策略**
   - **传输规则**
-  - **主题**
+  - **Subject**
   - **发件人地址**
   - **收件人地址**
   - **严重性**
-  - **方向**
+  - **Direction**
 
 如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以使用以下筛选器修改结果：
 
@@ -240,7 +240,7 @@ ms.locfileid: "49357919"
 
 数据表包含以下信息：
 
-- **方向**
+- **Direction**
 - **类型**
 - **24 小时**
 - **3 天**
@@ -318,7 +318,7 @@ ms.locfileid: "49357919"
 
 数据表包含以下信息，以降序显示日期顺序：
 
-- "日期"
+- **Date**
 - **电子邮件总数**
 - **边缘保护**
 - **反恶意软件、文件信誉、文件类型阻止**：
@@ -387,7 +387,7 @@ ms.locfileid: "49357919"
 
 数据表包含以下信息，以降序显示日期顺序：
 
-- "日期"
+- **Date**
 - **电子邮件总数**
 - **已筛选边缘**
 - **反恶意软件引擎、安全附件、已筛选的规则**：
@@ -463,7 +463,7 @@ ms.locfileid: "49357919"
 
 - **日期 (UTC)**
 - **类型**
-- **方向**
+- **Direction**
 - **邮件计数**
 
 如果单击 "详细信息" 表视图中的 " **筛选器** "，则可以使用以下筛选器修改结果：
@@ -535,19 +535,16 @@ ms.locfileid: "49357919"
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看这些报告所需的权限是什么？
 
-若要查看和使用报告，您必须是安全 & 合规性中心 **和** Exchange Online 中指定角色组的成员。
+若要查看和使用本主题中所述的报告，您必须是安全 & 合规性中心中下列角色组之一的成员：
 
-- 在安全 & 合规性中心中，您必须是下列角色组之一的成员：
+- **组织管理**
+- **安全管理员**
+- **安全读者**
+- **全局读者**
 
-  -组织管理-安全管理员 (你也可以在 [Azure Active Directory 管理中心](https://aad.portal.azure.com) 中执行此操作-安全读者
+有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
-
-- 在 Exchange Online 中，您必须是下列角色组之一的成员：
-
-  -组织管理-仅查看组织管理-仅查看收件人-合规性管理
-
-有关详细信息，请参阅 [Exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 中的权限和 [管理 exchange online 中的角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+**注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="related-topics"></a>相关主题
 

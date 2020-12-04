@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的反网络钓鱼策略。
-ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376337"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568564"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -200,11 +200,10 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
   - **模拟域**： "发件人" 地址包含受保护的域。
   - **异常字符**： From 地址包含不寻常的字符集 (例如，数学符号和文本，或者在受保护的发件人或域中的大写和小写字母的组合) 。
 
-> [!IMPORTANT]
->
-> 即使关闭了模拟安全提示，也 **建议** 您使用邮件流规则 (也称为传输规则) 将名为 **X-MS-EnableFirstContactSafetyTip** 的邮件头添加到邮件中。 将显示特定安全提示，通知收件人通常不会从发件人收到电子邮件，或者当收件人首次从发件人获取电子邮件时，会收到通知。
->:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="对多个收件人进行模拟保护的安全提示文本。":::
-<p>
+  > [!IMPORTANT]
+  >
+  > 即使关闭了模拟安全提示，也 **建议** 您使用邮件流规则 (也称为传输规则) 将名为 **X-MS-EnableFirstContactSafetyTip** 的邮件头 **添加到邮件** 中。 安全提示会在用户第一次收到来自发件人的邮件时通知收件人，或者他们不经常收到来自发件人的邮件。
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="对多个收件人进行模拟保护的安全提示文本。":::
 
 - **邮箱智能**：启用或禁用用于确定用户的电子邮件模式与其常用联系人的智能 (AI) 。 此设置可帮助 AI 区分合法和欺骗的电子邮件与这些联系人。 邮箱智能仅适用于 Exchange Online 邮箱。
 

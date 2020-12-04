@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中查看和配置全局设置 ("阻止以下 Url" 列表和 Office 365 应用程序的保护) 用于安全链接。
-ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842424"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572425"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置安全链接的全局设置
 
@@ -50,10 +50,16 @@ ms.locfileid: "48842424"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 若要查看和配置安全链接的全局设置，您必须是下列角色组之一的成员：
+- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+  - 若要配置安全链接的全局设置，您必须是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
+  - 若要对安全链接的全局设置进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“ **组织管理** ”或“ **安全管理员** ”。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **组织管理** 。
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+
+  **注意**：
+
+  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
 
 - 有关安全链接的全局设置的建议值，请参阅 [安全链接设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
@@ -65,7 +71,7 @@ ms.locfileid: "48842424"
 
 **Block：以下 url** 列表标识了应始终被受支持的应用程序中的安全链接扫描所阻止的链接。 有关详细信息，请参阅 [安全链接的 "阻止以下 url" 列表](atp-safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接** "，然后单击 " **全局设置** "。
+1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，然后单击 " **全局设置**"。
 
 2. 在您的组织的 " **安全链接策略** " 飞出时，请转到 " **阻止以下 url** " 框。
 
@@ -110,15 +116,15 @@ ms.locfileid: "48842424"
 
 Office 365 应用程序的安全链接保护适用于受支持的 Office 桌面、移动设备和 web 应用程序中的文档。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接** "，然后单击 " **全局设置** "。
+1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，然后单击 " **全局设置**"。
 
 2. 在您的组织的 " **安全链接策略** " 飞出时，将在 "应用于以下内容的设置" 部分中配置以下设置： " **电子邮件除电子邮件** " 部分：
 
-   - **Office 365 应用程序** ：验证是否右侧的切换为支持的 Office 365 应用程序启用安全链接： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **Office 365 应用程序**：验证是否右侧的切换为支持的 Office 365 应用程序启用安全链接： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-   - **在用户单击安全链接时不进行跟踪** ：将切换向左移动，以跟踪与受支持的 Office 365 应用程序中的阻止 url 相关的用户单击： ![ 关闭 ](../../media/scc-toggle-off.png) 。
+   - **在用户单击安全链接时不进行跟踪**：将切换向左移动，以跟踪与受支持的 Office 365 应用程序中的阻止 url 相关的用户单击： ![ 关闭 ](../../media/scc-toggle-off.png) 。
 
-   - **不允许用户单击到原始 URL 的安全链接** ：验证切换是否向右以阻止用户在受支持的 Office 365 应用程序中单击原始阻止的 URL： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **不允许用户单击到原始 URL 的安全链接**：验证切换是否向右以阻止用户在受支持的 Office 365 应用程序中单击原始阻止的 URL： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
    完成时，请单击“保存”。
 
@@ -144,9 +150,9 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
-若要验证是否已成功配置安全链接的全局设置 ( **阻止以下 url** 列表和 Office 365 应用保护设置) ，请执行以下任一步骤：
+若要验证是否已成功配置安全链接的全局设置 (**阻止以下 url** 列表和 Office 365 应用保护设置) ，请执行以下任一步骤：
 
-- 在 "安全性 & 合规性中心" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接** "，单击 " **全局设置** "，然后验证出现的 "飞出" 中的设置。
+- 在 "安全性 & 合规性中心" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，单击 " **全局设置**"，然后验证出现的 "飞出" 中的设置。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，运行以下命令并验证设置：
 

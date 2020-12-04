@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 当多个用户需要访问同一个邮箱时，将使用共享邮箱。 了解在创建共享邮箱之前需要了解的内容。
-ms.openlocfilehash: d0e0888a71e2a017b3934caa67f8d53ffb787fe7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: cc94ae30edcc7a8307328230989dc4a883732b0e
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445695"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568290"
 ---
 # <a name="about-shared-mailboxes"></a>关于共享邮箱
 
@@ -42,7 +42,7 @@ ms.locfileid: "48445695"
 
 - **外部用户：** 您不能向你的企业外部 (（如具有 Gmail 帐户的人员）) 访问你的共享邮箱。 如果你希望这么做，请考虑改为创建 Outlook 组。 若要了解详细信息，请参阅 [admin center 中的创建 Microsoft 365 组](../create-groups/create-groups.md)。
 
--  **与 Outlook 一起使用：** 除了使用浏览器上的 Outlook 访问共享邮箱之外，您还可以使用 Outlook for iOS 应用或 Outlook for Android 应用。 若要了解详细信息，请参阅 <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">将共享邮箱添加到 Outlook mobile</a>。 另一种方法是为共享邮箱创建组。 若要了解详细信息，请参阅[比较组](../create-groups/compare-groups.md)。  
+- **与 Outlook 一起使用：** 除了使用浏览器上的 Outlook 访问共享邮箱之外，您还可以使用 Outlook for iOS 应用或 Outlook for Android 应用。 若要了解详细信息，请参阅 [将共享邮箱添加到 Outlook mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f)。 另一种方法是为共享邮箱创建组。 若要了解详细信息，请参阅[比较组](../create-groups/compare-groups.md)。
 
 - **加密：** 无法对从共享邮箱发送的电子邮件进行加密。 这是因为共享邮箱没有自己的安全上下文 (用户名/密码) 因此不能为其分配密钥。 如果有多个用户是成员，并且他们发送/接收使用自己的密钥加密的电子邮件，则其他成员可能能够读取电子邮件，而其他成员可能无法读取电子邮件，具体取决于电子邮件已加密的公钥。
 

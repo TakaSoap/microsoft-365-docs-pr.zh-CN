@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解欺骗性智能洞察力的工作原理。 他们可以快速确定哪些发件人将电子邮件直接发送到其组织，而不是将电子邮件身份验证检查 (SPF、DKIM 或 DMARC) 的域。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920474"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572737"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>演练-Microsoft Defender for Office 365 中的欺骗智能洞察力
 
@@ -44,12 +44,13 @@ ms.locfileid: "48920474"
 
   您可以从安全 & 合规中心的多个仪表板中查看欺骗性智能洞察力。 无论您正在查看哪个仪表板，真知灼见都会提供相同的详细信息，并允许您快速执行相同的任务。
 
-- 您需要先分配权限，然后才能执行本主题中的过程。 若要使用欺骗性智能洞察力，您需要是以下角色组之一的成员：
+- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+  - **组织管理**
+  - **安全管理员**
+  - **安全读者**
+  - **全局读者**
 
-  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“ **组织管理** ”或“ **安全管理员** ”。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **组织管理** ”或“ **清洁管理** ”。
-  - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“ **安全读取者** ”。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“ **仅查看组织管理** ”。
+  **注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 - 在 Microsoft Defender for Office 365 中启用和禁用欺骗智能在反网络钓鱼策略中。 有关详细信息，请参阅 [在 Microsoft Defender For Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
 
@@ -61,8 +62,8 @@ ms.locfileid: "48920474"
 
 2. 在 " **见解** " 行中，查找以下项目之一：
 
-   - **启用欺骗智能** ：该洞察力被命名为 **欺骗性域，在过去30天的身份验证失败** 。 这是默认选项。
-   - **已禁用欺骗情报** ：已命名 **启用欺骗保护** 的洞察力，单击它可启用欺骗智能。
+   - **启用欺骗智能**：该洞察力被命名为 **欺骗性域，在过去30天的身份验证失败**。 这是默认选项。
+   - **已禁用欺骗情报**：已命名 **启用欺骗保护** 的洞察力，单击它可启用欺骗智能。
 
 3. 仪表板上的洞察力显示如下所示的信息：
 
@@ -70,11 +71,11 @@ ms.locfileid: "48920474"
 
    此洞察力有两种模式：
 
-   - **真知灼见模式** ：如果启用欺骗智能，则真知灼见将显示在过去30天内受到欺骗智能功能影响的邮件数。
+   - **真知灼见模式**：如果启用欺骗智能，则真知灼见将显示在过去30天内受到欺骗智能功能影响的邮件数。
 
    - **如果模式** 为：如果禁用欺骗情报，则真知灼见将显示在过去30天中，我们的欺骗智能功能 *会* 影响多少封邮件。
 
-   无论哪种方式，真知灼见中显示的欺骗性域都分为两类： **可疑域对** 和 **非可疑域对** 。 这些类别进一步细分为三个不同的存储桶供您查看。
+   无论哪种方式，真知灼见中显示的欺骗性域都分为两类： **可疑域对** 和 **非可疑域对**。 这些类别进一步细分为三个不同的存储桶供您查看。
 
    **域对** 是 "发件人" 地址和发送基础结构的组合：
 
@@ -84,11 +85,11 @@ ms.locfileid: "48920474"
 
    **可疑域对** 包括：
 
-   - **高可信度欺骗** ：基于域的历史发送模式和信誉得分，我们非常确信域是哄骗的，并且来自这些域的邮件更有可能是恶意的。
+   - **高可信度欺骗**：基于域的历史发送模式和信誉得分，我们非常确信域是哄骗的，并且来自这些域的邮件更有可能是恶意的。
 
-   - **中等可信度欺骗** ：根据历史发送模式和域的信誉得分，我们确保了域是欺骗的，并且从这些域发送的邮件是合法的。 在此类别中，误报的可能性更大，而不是高度信心欺骗。
+   - **中等可信度欺骗**：根据历史发送模式和域的信誉得分，我们确保了域是欺骗的，并且从这些域发送的邮件是合法的。 在此类别中，误报的可能性更大，而不是高度信心欺骗。
 
-   - **非可疑域对** (包括 **rescued 欺骗** ) ：域失败显式电子邮件身份验证检查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 但是，域通过隐式电子邮件身份验证检查 ([复合身份验证](email-validation-and-authentication.md#composite-authentication)) 。 因此，不会对邮件执行任何反欺骗操作。
+   - **非可疑域对** (包括 **rescued 欺骗**) ：域失败显式电子邮件身份验证检查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 但是，域通过隐式电子邮件身份验证检查 ([复合身份验证](email-validation-and-authentication.md#composite-authentication)) 。 因此，不会对邮件执行任何反欺骗操作。
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>查看有关欺骗性智能洞察力的可疑域对的详细信息
 
@@ -119,7 +120,7 @@ ms.locfileid: "48920474"
 
 例如，您允许以下域对将欺骗邮件发送到您的组织：
 
-- *冒牌域* ： gmail.com "
+- *冒牌域*： gmail.com "
 - *发送基础结构* `tms.mx.com` ：
 
 仅允许来自此域对的电子邮件欺骗。 不允许其他试图欺骗 gmail.com 的发件人。 来自 tms.mx.com 的其他域中的邮件由欺骗情报检查。
