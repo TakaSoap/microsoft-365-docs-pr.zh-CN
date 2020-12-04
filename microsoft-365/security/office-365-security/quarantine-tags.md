@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理员可以了解如何使用隔离标记来控制用户能够对其隔离邮件执行的操作。
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357643"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572665"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
@@ -62,9 +62,7 @@ EOP 传统上允许或阻止了 [隔离](find-and-release-quarantined-messages-a
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 若要查看、创建、修改或删除隔离标记，您必须是下列角色组之一的成员：
-  - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+- 若要查看、创建、修改或删除隔离标记，您需要是 [安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**" 角色的成员。
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>步骤1：在安全 & 合规中心中创建隔离标记
 
@@ -131,13 +129,13 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换而来的�
 
 |权限|禁止访问|受限访问|完全访问|
 |---|:---:|:---:|:---:|
-|PermissionToAllowSender|0|0|1|
-|PermissionToBlockSender|0|1|1|
-|PermissionToDelete|0|1|1|
+|PermissionToAllowSender|0|0|1 |
+|PermissionToBlockSender|0|1 |1 |
+|PermissionToDelete|0|1 |1 |
 |PermissionToDownload<sup>\*</sup>|0|0|0|
-|PermissionToPreview|0|1|1|
-|PermissionToRelease<sup>\*\*</sup>|0|0|1|
-|PermissionToRequestRelease<sup>\*\*</sup>|0|1|0|
+|PermissionToPreview|0|1 |1 |
+|PermissionToRelease<sup>\*\*</sup>|0|0|1 |
+|PermissionToRequestRelease<sup>\*\*</sup>|0|1 |0|
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |二进制值|00000000|01101010|11101100|
 |要使用的十进制值|0|106|236|

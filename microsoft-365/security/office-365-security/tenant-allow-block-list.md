@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在安全 & 合规性中心的租户允许/阻止列表中配置 URL 条目。
-ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202335"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572631"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租户允许/阻止列表中的 URL
 
@@ -52,17 +52,16 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+  - 若要添加和删除租户允许/阻止列表中的值，您需要是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
+  - 若要对租户允许/阻止列表进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  - 若要添加和删除租户允许/阻止列表中的值，您必须是下列角色组之一的成员：
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+  **注意**：
 
-  - 若要对租户允许/阻止列表进行只读访问，您必须是下列角色组之一的成员：
-
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
+  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全 & 合规性中心在租户允许/阻止列表中创建 URL 条目
 
@@ -114,7 +113,7 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
 - **永不过期**：选中 "关闭 (![ 切换 ](../../media/scc-toggle-off.png) ") 或 "在 ![) 上 (切换" ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-- **上次更新**时间： **从**) 中选择开始日期 (，结束日期 (**为**) 或同时更新两者。
+- **上次更新** 时间： **从**) 中选择开始日期 (，结束日期 (**为**) 或同时更新两者。
 
 - **过期日期**： **从**) 中选择开始日期 (，结束日期 (为) 或同时 **为** 两者。
 
@@ -146,7 +145,7 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
    - **可选注释**：输入条目的描述性文本。
 
-5. 完成时，请单击“保存”****。
+5. 完成时，请单击“保存”。
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全 & 合规性中心删除租户允许/阻止列表中的条目
 
