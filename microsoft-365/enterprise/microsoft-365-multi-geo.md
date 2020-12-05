@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 在本文中，您将了解如何使用 Microsoft 365 多地理位置将 Microsoft 365 的状态扩展到多个地理区域。
-ms.openlocfilehash: 10f941549fd4899d5b3a14c97e6f301339702722
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171322"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580693"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -52,7 +52,8 @@ ms.locfileid: "48171322"
 
 将 Microsoft 365 多地理位置作为以下 Microsoft 365 订阅计划的附加功能，向其租户中最少有 250 个 Microsoft 365 席位并且这些席位中至少有 5% 使用多地理位置的 EA 客户提供。 有关详细信息，请与 Microsoft 帐户团队联系。
 
-- Microsoft 365 F1、E1、E3 或 E5
+- Microsoft 365 F1、F3、E3 或 E5
+- Office 365 F3、E1、E3 或 E5
 - Exchange Online 计划 1 或计划 2
 - OneDrive for Business 计划 1 或计划 2
 - SharePoint Online 计划 1 或计划 2

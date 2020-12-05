@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso Corporation 如何响应 COVID pandemic，并为远程和现场工作设计其软件安装和更新基础结构。
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371744"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580669"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 响应，支持远程和现场工作
 
@@ -44,8 +44,8 @@ Contoso 还更新了用于拆分隧道的便携式电脑、平板电脑和智能
 在区域 lockdowns 期间进行的大多数远程工作人员支持最初的更改后，Contoso 进行了基础结构更改以支持远程和现场工作，工作人员可以执行以下操作：
 
 - 始终远程。
-- 始终为本地。
-- 远程和本地的组合。
+- 始终在现场。
+- 现场和远程的组合。
 
 Microsoft 365 标识、安全性和合规性功能是为实现零信任而设计的，无论用户及其设备的位置如何，都能正常工作。 有关详细信息，请参阅 [零信任](https://www.microsoft.com/security/business/zero-trust)。
 

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 了解如何使用 Windows PowerShell 将某些个人用户密码设置为永不过期。
-ms.openlocfilehash: 9497dfb5793ddbfc3d6845ec1efba91ad972ea38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2d60a8312be070d3f56cfef7cfb93e6c5da32991
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646651"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580633"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>将个人用户密码设置为永不过期
 
@@ -76,7 +76,7 @@ Microsoft 云服务的全局管理员可以使用 [Azure Active Directory PowerS
      }
     ```
 
-- 使用名为**ReportPasswordNeverExpires.html**的当前用户的桌面上的 Html 中的所有用户获取报告
+- 使用名为 **ReportPasswordNeverExpires.html** 的当前用户的桌面上的 Html 中的所有用户获取报告
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -84,7 +84,7 @@ Microsoft 云服务的全局管理员可以使用 [Azure Active Directory PowerS
     } | ConvertTo-Html | Out-File $env:userprofile\Desktop\ReportPasswordNeverExpires.html
     ```  
 
-- 若要使用名称**ReportPasswordNeverExpires.csv**获取当前用户的在 CSV 中具有 PasswordNeverExpires 的所有用户的报告
+- 若要使用名称 **ReportPasswordNeverExpires.csv** 获取当前用户的在 CSV 中具有 PasswordNeverExpires 的所有用户的报告
 
     ```powershell
     Get-AzureADUser -All $true | Select-Object UserprincipalName,@{
@@ -107,6 +107,9 @@ Run one of the following commands:
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies DisablePasswordExpiration
     ```
 
+> [!WARNING]
+> 使用参数配置的用户帐户 `-PasswordPolicies DisablePasswordExpiration` 仍存在基于属性的期限 `pwdLastSet` 。 根据 `pwdLastSet` 属性，如果将过期更改为 `-PasswordPolicies None` ，则所有 pwdLastSet 早于90天的密码都要求用户在下次登录时对其进行更改。 此更改可能会影响大量用户。
+
 ### <a name="set-a-password-to-expire"></a>将密码设置为过期
 
 运行下列命令之一：
@@ -122,9 +125,6 @@ Run one of the following commands:
     ```powershell
     Get-AzureADUser -All $true | Set-AzureADUser -PasswordPolicies None
     ```
-
-> [!WARNING]
-> 使用参数配置的用户帐户 `-PasswordPolicies DisablePasswordExpiration` 基于 `pwdLastSet` 用户帐户属性的期限。 例如，如果您将用户密码设置为永不过期，然后90或更多天，则密码仍将过期。 根据 `pwdLastSet` 用户帐户属性，对于使用参数配置的用户帐户 `-PasswordPolicies None` ，所有 `pwdLastSet` 早于90天的密码都要求用户在下次登录时更改这些密码。此更改可能会影响大量用户。
 
 ## <a name="related-content"></a>相关内容
 
