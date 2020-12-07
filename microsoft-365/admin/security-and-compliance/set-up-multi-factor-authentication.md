@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何为你的组织设置多重身份验证。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1bbca8efe09655195605f0610f92c8f66486b940
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001497"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558206"
 ---
 # <a name="set-up-multi-factor-authentication"></a>设置多重身份验证
 
@@ -42,7 +42,7 @@ ms.locfileid: "49001497"
 - 只有全局管理员才能管理 MFA。 有关详细信息，请参阅[关于管理员角色](../add-users/about-admin-roles.md)。
 - 如果你启用了旧版每用户 MFA，请[关闭旧版每用户 MFA](#turn-off-legacy-per-user-mfa)。
 - 如果你在 Windows 设备上有 Office 2013 客户端，[启用 Office 2013 客户端的新式验证](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication)。
-- 高级：如果你有使用 Active Directory 联合身份验证服务（AD FS）的第三方目录服务，请设置 Azure MFA 服务器。 有关详细信息，请参阅[具有 Azure 多重身份验证的高级方案和第三方 VPN 解决方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
+- 高级：如果你有使用 Active Directory 联合身份验证服务（AD FS）的第三方目录服务，请设置 Azure MFA 服务器。 有关详细信息，请参阅[具有 Azure Active Directory 多重身份验证的高级方案和第三方 VPN 解决方案](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn)。
 
 ## <a name="turn-security-defaults-on-or-off"></a>打开或关闭安全性默认值
 
@@ -50,21 +50,21 @@ ms.locfileid: "49001497"
 
 如果你的订阅是新的，则可能已自动为你启用安全性默认值。
 
-可通过 Microsoft Azure 门户中 Azure Active Directory (Azure AD) 的“ **属性** ”窗格启用或禁用安全性默认值。
+可通过 Microsoft Azure 门户中 Azure Active Directory (Azure AD) 的“**属性**”窗格启用或禁用安全性默认值。
 
 1. 使用全局管理员凭据登录 [Microsoft 365 管理中心](https://admin.microsoft.com)。
-2. 在左侧导航栏中，选择“ **全部显示** ”，然后在 **管理中心** 下，选择“ **Azure Active Directory** ”。
-3. 在 **Azure Active Directory 管理中心** 中选择“ **Azure Active Directory** ”\>“ **属性** ”。
-4. 在页面底部，选择“ **管理安全性默认值** ”。
-5. 选择“ **是** ”启用安全性默认值，或选择“ **否** ”禁用安全性默认值，然后选择“ **保存** ”。
+2. 在左侧导航栏中，选择“**全部显示**”，然后在 **管理中心** 下，选择“**Azure Active Directory**”。
+3. 在 **Azure Active Directory 管理中心** 中选择“**Azure Active Directory**”\>“**属性**”。
+4. 在页面底部，选择“**管理安全性默认值**”。
+5. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值，然后选择“**保存**”。
 
 如果你已在使用 [基准条件访问策略](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)，则会在你使用安全性默认值之前，提示你将其关闭。
 
 1. 转到[“条件访问 - 策略”页面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)。
-2. 选择“ **开** ”的每个基准策略，然后将“ **启用策略** ”设置为“ **关** ”。
+2. 选择“**开**”的每个基准策略，然后将“**启用策略**”设置为“**关**”。
 3. 转到[“Azure Active Directory - 属性”页面](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)。
-4. 在页面底部，选择“ **管理安全性默认值** ”。
-5. 选择“ **是** ”启用安全性默认值，或选择“ **否** ”禁用安全性默认值，然后选择“ **保存** ”。
+4. 在页面底部，选择“**管理安全性默认值**”。
+5. 选择“**是**”启用安全性默认值，或选择“**否**”禁用安全性默认值，然后选择“**保存**”。
 
 ## <a name="use-conditional-access-policies"></a>使用条件访问策略
 
@@ -83,16 +83,16 @@ ms.locfileid: "49001497"
 
 对于大多数订阅来说，新式验证将自动被启用，但如果你在很久前购买了订阅，则可能不会。 必须先启用该功能，然后 MFA 才能使用 Office 应用适当地工作。
 
-1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“ **设置** ”\>“ **组织设置** ”。
-1. 在“ **服务** ”选项卡上，选择“ **新式身份验证** ”，然后在“ **新式身份验证** "窗格中，确保选择“ **启用新式验证** ”。 选择“ **保存更改** ”。
+1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**设置**”\>“**组织设置**”。
+1. 在“**服务**”选项卡上，选择“**新式身份验证**”，然后在“**新式身份验证**"窗格中，确保选择“**启用新式验证**”。 选择“**保存更改**”。
 
 ### <a name="turn-off-legacy-per-user-mfa"></a>关闭旧版每用户 MFA
 
 如果你以前已启用了每用户 MFA，则必须在启用安全性默认值之前将其关闭。
 
-1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“ **用户** ”\>“ **活动用户** ”。
-1. 在“ **活动用户** ”页面上，选择“ **多重身份验证** ”。
-1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“ **禁用** ”。
+1. 在 Microsoft 365 管理中心中，在左侧导航栏中选择“**用户**”\>“**活动用户**”。
+1. 在“**活动用户**”页面上，选择“**多重身份验证**”。
+1. 在“多重身份验证”页面上，选择每个用户并将其多重身份验证状态设置为“**禁用**”。
 
 ## <a name="next-steps"></a>后续步骤
 

@@ -2,8 +2,8 @@
 title: 更改用户名和电子邮件地址
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全局管理员可以如何更改用户的电子邮件地址和显示名称。 '
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646687"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551504"
 ---
 # <a name="change-a-user-name-and-email-address"></a>更改用户名和电子邮件地址
 
@@ -40,13 +40,13 @@ ms.locfileid: "48646687"
 
 如果你发现此视频有帮助，请查看[适用于小型企业和 Microsoft 365 新用户的完整培训系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="change-a-users-email-address"></a>更改用户的电子邮件地址
-
 必须是[全局管理员](about-admin-roles.md)才能执行这些步骤。 
+
+## <a name="change-a-users-email-address"></a>更改用户的电子邮件地址
 
 ::: moniker range="o365-worldwide"
  
-1. 在管理中心，转到“**用户**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
+1. 在管理中心，转到“**用户**\><a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>”页面。
     
 2. 选择用户的姓名，然后在“**帐户**”选项卡上选择“**管理用户名**”。
     
@@ -81,7 +81,7 @@ ms.locfileid: "48646687"
 
 ::: moniker-end
 
-**重要提示**：如果收到错误消息，请参阅[处理错误消息](#resolve-error-messages)。
+**重要提示**：如果收到错误消息，请参阅 [处理错误消息](#resolve-error-messages)。
 
 ## <a name="set-the-primary-email-address"></a>设置主要电子邮件地址
 
@@ -179,7 +179,7 @@ ms.locfileid: "48646687"
 
 3. 在“**显示名称**”框中，键入该用户的新名称，然后选择“**保存**”。
 
-    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
+    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
 
 此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint。
 
@@ -193,7 +193,7 @@ ms.locfileid: "48646687"
 
 3. 在“**显示名称**”框中，键入该用户的新名称，然后选择“**保存**”。
 
-    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
+    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
 
 此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
 
@@ -207,7 +207,7 @@ ms.locfileid: "48646687"
 
 3. 在“**显示名称**”框中，键入该用户的新名称，然后选择“**保存**”。
 
-    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅[处理错误消息](#resolve-error-messages)。
+    如果收到错误消息“**很抱歉，无法编辑该用户。请查看用户信息并重试**”，请参阅 [处理错误消息](#resolve-error-messages)。
 
 此更改最多可能需要 24 小时才会在所有服务中生效。更改生效后，用户需要使用更新后的用户名登录 Outlook、Skype for Business 和 SharePoint，因此请务必将更改告知用户。
 
@@ -217,7 +217,7 @@ ms.locfileid: "48646687"
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>“找不到与参数名称‘EmailAddresses’匹配的参数”
 
-如果收到错误消息：“**找不到与参数名称 EmailAddresses 匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电[支持人员](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)，让他们为你执行完全同步。
+如果收到错误消息：“**找不到与参数名称 EmailAddresses 匹配的参数**”，则表明完成租户或自定义域设置（如果最近添加了一个）所需的时间会更长。设置过程最多需要 4 个小时才能完成。稍等片刻，待设置过程完成后重试。如果问题仍然存在，请致电 [支持人员](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)，让他们为你执行完全同步。
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>“很抱歉，无法编辑该用户。 请查看用户信息，请查看用户信息并重试”
 

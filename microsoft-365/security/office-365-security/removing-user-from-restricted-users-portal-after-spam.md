@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201551"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572437"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -41,29 +41,28 @@ ms.locfileid: "48201551"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到“受限的用户”**** 页，请访问 <https://protection.office.com/restrictedusers>。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到“受限的用户”页，请访问 <https://protection.office.com/restrictedusers>。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+  - 若要从受限用户门户中删除用户，需要成为 **组织管理人员** 或 **安全管理员** 角色组的成员。
+  - 若要获得对受限用户门户的只读访问权限，必须成为 **全球读者** 或 **安全读者** 角色组的成员。
 
-  - 若要从“受限的用户”门户中删除用户，你必须是以下任一角色组的成员：
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+  **注意**：
 
-  - 若要以只读方式访问“受限的用户”门户，你必须是以下任一角色组的成员：
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
-
-- 发件人超过出站电子邮件限制是帐户遭入侵的标志。 请务必先按照必需步骤操作来重新获得对帐户的控制，再从“受限的用户”门户中删除用户。 有关详细信息，请参阅[在 Office 365 中响应遭入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
+- 发件人超过出站电子邮件限制是帐户遭到入侵的标志。 请务必先按照必需步骤操作来重新获得对帐户的控制，再从“受限的用户”门户中删除用户。 有关详细信息，请参阅[在 Office 365 中响应遭入侵的电子邮件帐户](responding-to-a-compromised-email-account.md)。
 
 ## <a name="use-the-security--compliance-center-to-remove-a-user-from-the-restricted-users-list"></a>使用安全与合规中心从“受限的用户”列表中删除用户
 
-1. 在安全与合规中心内，依次转到“威胁管理”****\>“审阅”****\>“受限的用户”****。
+1. 在安全与合规中心内，依次转到“威胁管理”\>“审阅”\>“受限的用户”。
 
-2. 查找并选择要取消阻止的用户。 在“操作”**** 列中，单击“取消阻止”****。
+2. 查找并选择要取消阻止的用户。 在“操作”列中，单击“取消阻止”。
 
 3. 一个飞出窗口将转到有关其发送受限的帐户的详细信息。 应按照建议进行操作，确保在帐户实际遭到破坏的情况下采取适当的措施。 完成后，单击 **“下一步”**。
 
@@ -76,30 +75,30 @@ ms.locfileid: "48201551"
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>验证用于受限的用户的警报设置
 
-默认警报策略“被限制发送电子邮件的用户”**** 会在用户被阻止发送出站邮件时自动通知管理员。 可以验证这些设置，并添加其他要通知的用户。 若要详细了解警报策略，请参阅[安全与合规中心内的警报策略](../../compliance/alert-policies.md)。
+默认警报策略“被限制发送电子邮件的用户”会在用户被阻止发送出站邮件时自动通知管理员。 可以验证这些设置，并添加其他要通知的用户。 若要详细了解警报策略，请参阅[安全与合规中心内的警报策略](../../compliance/alert-policies.md)。
 
 > [!IMPORTANT]
 > 必须启用审核日志搜索，这样警报才能正常运行。 有关详细信息，请参阅[启用或禁用审核日志搜索](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. 在安全与合规中心内，依次转到“警报”****\>“警报策略”****。
+1. 在安全与合规中心内，依次转到“警报”\>“警报策略”。
 
-2. 查找并选择“被限制发送电子邮件的用户”**** 警报。
+2. 查找并选择“被限制发送电子邮件的用户”警报。
 
 3. 在随即显示的浮出控件中，验证或配置下列设置：
 
    - **状态**：验证此警报是否已启用 ![开关打开](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)。
 
-   - **电子邮件收件人**：单击“编辑”****，然后在随即显示的“编辑收件人”**** 浮出控件中验证或配置下列设置：
+   - **电子邮件收件人**：单击“编辑”，然后在随即显示的“编辑收件人”浮出控件中验证或配置下列设置：
 
-     - **发送电子邮件通知**：验证此复选框是否已选中（“开”****）。
+     - **发送电子邮件通知**：验证此复选框是否已选中（“开”）。
 
-     - **电子邮件收件人**：默认值为“TenantAdmins”****（表示“全局管理员”**** 成员）。 若要添加其他收件人，请单击此框的空白区域。 此时，收件人列表会显示，你可以键入名称来筛选并选择收件人。 若要从此框中删除现有收件人，请单击其名称旁边的 ![“删除”图标](../../media/scc-remove-icon.png)可。
+     - **电子邮件收件人**：默认值为“TenantAdmins”（表示“全局管理员”成员）。 若要添加其他收件人，请单击此框的空白区域。 此时，收件人列表会显示，你可以键入名称来筛选并选择收件人。 若要从此框中删除现有收件人，请单击其名称旁边的 ![“删除”图标](../../media/scc-remove-icon.png)可。
 
-     - **每日通知限制**：默认值为“无限制”****，但你可以选择每日通知数上限。
+     - **每日通知限制**：默认值为“无限制”，但你可以选择每日通知数上限。
 
-     完成时，请单击“保存”****。
+     完成时，请单击“保存”。
 
-4. 返回到“被限制发送电子邮件的用户”**** 浮出控件，单击“关闭”****。
+4. 返回到“被限制发送电子邮件的用户”浮出控件，单击“关闭”。
 
 ## <a name="use-exchange-online-powershell-to-view-and-remove-users-from-the-restricted-users-list"></a>使用 Exchange Online PowerShell 查看和删除“受限的用户”列表中的用户
 
