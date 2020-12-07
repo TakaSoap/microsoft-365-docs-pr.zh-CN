@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 实施 Microsoft 信息保护 (MIP)，无论在何处生活或旅居在外，均可助你保护敏感信息。
-ms.openlocfilehash: 4c8f4af11779cd8b3df043bc92187625c41f4ac9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 4afc73b5a2cefe88d2e3af5fd6665ec64e5c0ee3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519807"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568314"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 信息保护
 
@@ -36,7 +36,10 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 
 有关管理数据的信息，请参阅 [Microsoft 365 中的 Microsoft 信息管理](manage-Information-governance.md)。
 
-## <a name="know-your-data"></a>了解数据
+## <a name="know-your-data"></a>了解你的数据
+
+> [!NOTE]
+> 有关在 Azure Purview 中对数据进行分类和标记的详细信息，请参阅当前处于预览中的[在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 若要了解在混合环境中的数据全景并发现重要数据，请使用以下功能：
  
@@ -62,6 +65,7 @@ MIP 功能包含在 Microsoft 365 合规性中，提供了[了解数据](#know-y
 |[Azure 信息保护统一标记扫描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| 发现、标记和保护驻留在本地数据存储区中的敏感信息 | [配置和安装 Azure 信息保护统一标记扫描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| 发现、标记和保护驻留在云数据存储区中的敏感信息 | [发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |[Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|将灵敏度标签扩展到第三方应用和服务  <br /><br /> 示例方案： [设置和获取灵敏度标签 (C++)](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 信息保护 (MIP) SDK 安装和配置](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
 
 ## <a name="prevent-data-loss"></a>防止数据丢失
 

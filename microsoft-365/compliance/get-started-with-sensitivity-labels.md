@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398839"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568598"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -60,9 +60,9 @@ ms.locfileid: "48398839"
 
 将要创建敏感度标签的合规团队成员需要 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心的访问权限。 
 
-默认情况下，你的租户的全局管理员有权访问这些管理中心，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请将用户添加到**合规性数据管理员**、**合规性管理员**或**安全管理员**角色组。 
+默认情况下，你的租户的全局管理员有权访问这些管理中心，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。要获得这一委派的受限管理员访问权限，请将用户添加到 **合规性数据管理员**、**合规性管理员** 或 **安全管理员** 角色组。 
 
-如果不使用这些默认角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 对于只读角色，请使用**敏感度标签阅读器**。 
+如果不使用这些默认角色，可以创建新的角色组，然后将“**敏感度标签管理员**”或“**组织配置**”角色添加到此组。 对于只读角色，请使用 **敏感度标签阅读器**。 
 
 有关将用户添加到默认角色或创建自己的角色组的说明，请参阅[向用户授予对 Office 365 安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
@@ -93,6 +93,8 @@ ms.locfileid: "48398839"
 |在 Power BI 中应用和查看敏感度标签，并保护导出的数据|[如何在 Power BI 中应用敏感度标签](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |监视和了解在我的组织中如何使用灵敏度标签|[了解你的数据 - 数据分类概述](data-classification-overview.md) <br /><br /> [使用标签分析查看标签使用情况](label-analytics.md)|
 |将灵敏度标签扩展到第三方应用和服务|[Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|在 Azure Blob 存储、Azure 文件存储、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中跨内容扩展敏感性标签|[在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度标签的最终用户文档
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何结合使用域密钥识别邮件 (DKIM) 和 Microsoft 365，以确保目标电子邮件系统信任从自定义域发送的邮件。
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126669"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560880"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 验证从自定义域发送的出站电子邮件
 
@@ -130,6 +130,9 @@ Microsoft 365 自动为它的初始“onmicrosoft.com”域设置 DKIM。 这意
 
 对于您要为其在 DNS 中添加 DKIM 签名的每个域，您需要发布两条 CNAME 记录。
 
+> [!NOTE]
+> 如果你尚未阅读完整的文章，则可能错过了这个省时的 PowerShell 连接信息：[通过 PowerShell 连接到 Office365 工作负载。](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) （cmdlet 来自 Exchange Online。） 
+
 运行以下命令以创建选择器目录：
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > 创建第二条记录非常重要，但创建时仅可使用其中一个选择器。 实际上，第二个选择器可能指向尚未创建的地址。 我们仍然建议创建第二条 CNAME 记录，因为你的密钥轮换是无缝的。
 
-> [!CAUTION]
-> 已暂时禁用自动密钥轮换，因为我们会在创建密钥的方式上实施一些设计更改。 建议使用多个密钥，以便定期轮换它们。 尽管很难破解，但这仍然是一种实用的缓解策略，可以防止模拟等行为。 你可以遵循 [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) 文档来帮助你的组织进行此操作。 我们预计将在 2020 年 8 月之前再次启用自动轮换。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>为自定义域启用 DKIM 签名
 <a name="EnableDKIMinO365"> </a>
@@ -311,7 +312,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>设置 DKIM 以便第三方服务可以代表自定义域发送或假冒电子邮件
 <a name="SetUp3rdPartyspoof"> </a>
 
-一些批量电子邮件服务提供商或服务型软件提供商允许你为来自其服务的电子邮件设置 DKIM 密钥。这需要你自己和第三方之间进行协调，从而设置必要的 DNS 记录。某些第三方服务器可能使用不同的选择器来获取自身的 CNAME 记录。任何两个组织的操作过程都不会完全相同。相反，此过程完全因组织而异。
+一些批量电子邮件服务提供商或服务型软件提供商允许你为来自其服务的电子邮件设置 DKIM 密钥。 这需要你自己和第三方之间进行协调，从而设置必要的 DNS 记录。 一些第三方服务器可以有自己的、具有不同选择器的 CNAME 记录。 没有任何两个组织的操作过程是完全相同的。 而是，该过程完全取决于组织。
 
 显示为 contoso.com 和 bulkemailprovider.com 正确配置了 DKIM 的示例邮件如下所示：
 
@@ -350,3 +351,7 @@ Return-Path: <communication@bulkemailprovider.com>
 <a name="DKIMNextSteps"> </a>
 
 尽管 DKIM 旨在帮助防止欺骗，但 DKIM 与 SPF 和 DMARC 协同工作效果更佳。 设置了 DKIM 后，如果你尚未设置 SPF，则应执行此操作。 若要了解 SPF 的快速简介及其快速配置方法，请参阅[在 Microsoft 365 中设置 SPF 以防欺骗](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 若要更深入地了解 Microsoft 365 如何使用 SPF，或要了解故障排除或非标准部署（如混合部署），请从 [Microsoft 365 如何使用发件人策略框架 (SPF) 以防欺骗](how-office-365-uses-spf-to-prevent-spoofing.md)入手。 接下来，请参阅[使用 DMARC 验证电子邮件](use-dmarc-to-validate-email.md)。 [反垃圾邮件邮件头](anti-spam-message-headers.md)包括 Microsoft 365 用来执行 DKIM 检查的语法和头字段。
+
+## <a name="more-information"></a>更多信息
+
+通过 PowerShell [Rotate DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) 进行密钥轮换

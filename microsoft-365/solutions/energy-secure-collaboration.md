@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 可帮助能源组织迁移到新式协作平台，同时帮助保持数据和系统的安全性和法规遵从性。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0fedb042d01814ef6cd53e9271f93b3c80b6babe
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906223"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558486"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>针对能源行业的关键合规性与安全性注意事项
 ![使用云的各种行业的全局视图的图示比拟](../media/solution-arch-center/MSC17_global_016.png)
@@ -122,7 +122,7 @@ Microsoft 提供了一个重要工具来帮助长期监控法规遵从性：
 
 Microsoft 365 通过 **Azure Active Directory (Azure AD)** 提供了安全标识平台，在其中集中存储并安全管理标识。 Azure Active Directory 以及一系列相关的 Microsoft 365 安全服务构成了为员工提供安全工作所需的访问权限的基础，同时也保护了组织免受威胁。
 
-**Azure 多重身份验证 (MFA)** 内置于平台中，提供了一种额外的保护层，可在用户访问敏感数据和应用程序时帮助确认用户的真实身份。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种第二因素身份验证选项，包括：Microsoft Authenticator 应用、通过短信发送的一次性密码、接听用户必须输入 PIN 的电话呼叫以及智能卡或基于证书的身份验证。 如果密码被破解，潜在黑客仍需要用户的电话来访问组织数据。 此外，Microsoft 365 将新式身份验证用作密钥协议，它将同样强大的身份验证体验从 Web 浏览器带到协作工具，包括 Microsoft Outlook 和 Microsoft Office 应用。
+**Azure AD 多重身份验证 (MFA)** 内置于平台中，提供了一种额外的保护层，可在用户访问敏感数据和应用程序时帮助确认用户的真实身份。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种第二因素身份验证选项，包括：Microsoft Authenticator 应用、通过短信发送的一次性密码、接听用户必须输入 PIN 的电话呼叫以及智能卡或基于证书的身份验证。 如果密码被破解，潜在黑客仍需要用户的电话来访问组织数据。 此外，Microsoft 365 将新式身份验证用作密钥协议，它将同样强大的身份验证体验从 Web 浏览器带到协作工具，包括 Microsoft Outlook 和 Microsoft Office 应用。
 
 **Azure AD 条件访问** 提供了可靠的解决方案，可自动执行访问控制决策并实施策略来保护公司资产。 一个常见示例是，当员工希望访问包含敏感客户数据的应用程序时，系统自动要求他们执行多重身份验证以专门访问该应用程序。 Azure 条件访问将来自用户访问请求的信号集中在一起，如有关用户、设备、位置、网络及其尝试访问的应用或存储库的属性。 它可以根据配置的策略动态评估访问应用程序的每次尝试。 如果用户或设备风险增加，或未满足其他条件，Azure AD 可自动实施策略，如动态要求 MFA、限制甚至阻止访问。 这有助于确保在动态变化的环境中保护敏感的资产。 
 
@@ -144,9 +144,9 @@ FedRAMP 中等控制措施集和 NERC CIP 标准还包含作为关键控制措�
 
 Microsoft 365 允许通过一组强大的功能来识别并保护组织内的敏感数据，包括：
 
-- **Microsoft 信息保护 (MIP)** ，用于基于用户的分类和对敏感数据进行自动化分类
+- **Microsoft 信息保护 (MIP)**，用于基于用户的分类和对敏感数据进行自动化分类
 
-- **Office 365 数据丢失防护 (DLP)** ，用于通过敏感数据类型（即正则表达式）和关键字及策略实施来自动识别敏感数据
+- **Office 365 数据丢失防护 (DLP)**，用于通过敏感数据类型（即正则表达式）和关键字及策略实施来自动识别敏感数据
 
 **Microsoft 信息保护 (MIP)** 允许员工使用敏感度标签对文档和电子邮件进行分类。 敏感度标签可由用户手动应用到 Microsoft Office 应用中的文档和 Microsoft Outlook 中的电子邮件。 敏感度标签反过来会自动应用文档标记、加密保护和实施权限管理。 还可以通过配置使用关键字和敏感数据类型（信用卡号、社会保险号码和标识号码等）的策略来自动应用敏感度标签，以便自动查找敏感数据并对其进行分类。 
 
