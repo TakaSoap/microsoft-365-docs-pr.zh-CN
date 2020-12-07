@@ -119,9 +119,11 @@
               href: create-groups/office-365-groups.md
             - name: 比较组
               href: create-groups/compare-groups.md
-            - name: 创建组
+            - name: 创建群组
               href: create-groups/create-groups.md
-            - name: 管理组
+            - name: 解释群组
+              href: create-groups/explain-groups-knowledge-worker.md
+            - name: 管理群组
               href: create-groups/manage-groups.md
             - name: 添加或删除组成员
               href: create-groups/add-or-remove-members-from-groups.md
@@ -208,9 +210,9 @@
     - name: 管理数据和服务
       href: manage/index.yml
       items:
-        - name: 使用报告监视用户活动
+        - name: 使用报告监视 Microsoft 365 活动
           href: activity-reports/activity-reports.md
-        - name: 使用“生产力分数”监视用户生产力
+        - name: Microsoft 生产力分数 - 概述
           href: productivity/productivity-score.md
           items:
             - name: 内容协作

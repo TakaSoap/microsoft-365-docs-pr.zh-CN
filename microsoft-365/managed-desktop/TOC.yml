@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: 在管理门户中添加和验证管理员联系人
           href: get-started/add-admin-contacts.md
-        - name: 调整条件访问
+        - name: 注册后调整设置
           href: get-started/conditional-access.md
         - name: 分配许可证
           href: get-started/assign-licenses.md
