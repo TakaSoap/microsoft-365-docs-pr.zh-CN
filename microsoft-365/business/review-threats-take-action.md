@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 了解如何查看和管理 Windows 10 设备上的 Microsoft Defender 防病毒检测到的威胁。
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385236"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588513"
 ---
 # <a name="review-detected-threats-and-take-action"></a>查看检测到的威胁并执行操作
 
@@ -42,7 +42,7 @@ Microsoft Defender 防病毒检测并防止以下威胁类型：
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中的 "**活动设备**" 页面。 请参阅本文中 [的在活动设备页上管理威胁检测](#manage-threat-detections-on-the-active-devices-page) 。
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理中心</a>中的 "**活动威胁**" 页。 请参阅本文中 [的管理威胁检测中的活动威胁页面](#manage-threat-detections-on-the-active-threats-page) 。
-- <a href="https://endpoint.microsoft.com" target="_blank">Microsoft 终结点管理器</a>中的 **防病毒** 页面。 请参阅本文中的在 [Microsoft 终结点管理器中管理威胁检测](#manage-threat-detections-in-microsoft-endpoint-manager) 。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft 终结点管理器</a>中的 **防病毒** 页面。 请参阅本文中的在 [Microsoft 终结点管理器中管理威胁检测](#manage-threat-detections-in-microsoft-endpoint-manager) 。
 
 若要了解详细信息，请参阅 [Microsoft Defender 防病毒检测到的威胁](threats-detected-defender-av.md)。
 
@@ -77,8 +77,8 @@ Microsoft Defender 防病毒检测并防止以下威胁类型：
 
 | 操作 | 说明 |
 |--|--|
-| 配置保护 | 需要配置威胁防护策略。 选择要转到策略配置页的链接。<br><br>需要帮助？ 请参阅 [使用 Microsoft Intune 中的终结点安全策略管理设备安全性](/mem/intune/protect/endpoint-security-policy)。 |
-| 更新策略 | 您的防病毒和实时保护策略需要更新或配置。 选择要转到 "策略配置" 页的链接。<br><br>需要帮助？ 请参阅 [使用 Microsoft Intune 中的终结点安全策略管理设备安全性](/mem/intune/protect/endpoint-security-policy)。 |
+| 配置保护 | 需要配置威胁防护策略。 选择要转到策略配置页的链接。<br><br>需要帮助? 请参阅 [使用 Microsoft Intune 中的终结点安全策略管理设备安全性](/mem/intune/protect/endpoint-security-policy)。 |
+| 更新策略 | 您的防病毒和实时保护策略需要更新或配置。 选择要转到 "策略配置" 页的链接。<br><br>需要帮助? 请参阅 [使用 Microsoft Intune 中的终结点安全策略管理设备安全性](/mem/intune/protect/endpoint-security-policy)。 |
 | 运行快速扫描 | 在设备上启动快速防病毒扫描，重点关注恶意软件可能注册的常见位置，如注册表项和已知 Windows 启动文件夹。 |
 | 运行完全扫描 | 在设备上启动完整的防病毒扫描，重点关注恶意软件可能注册的常见位置，并包括设备上的每个文件和文件夹。 将结果发送到 [Microsoft 终结点管理器](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)。 |
 | 更新防病毒 | 要求设备获取 [安全智能更新](https://go.microsoft.com/fwlink/?linkid=2149926) 以实现防病毒和反恶意软件保护。 |
@@ -88,7 +88,7 @@ Microsoft Defender 防病毒检测并防止以下威胁类型：
 
 您可以使用 Microsoft 终结点管理器来管理威胁检测。 Windows 10 设备必须在 Intune (部分 Microsoft 终结点管理器 [中注册](/mem/intune/enrollment/windows-enrollment-methods)) 。
 
-1. 转到 "Microsoft 终结点管理器管理中心" <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> ，然后登录。
+1. 转到 "Microsoft 终结点管理器管理中心" <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> ，然后登录。
 
 2. 在导航窗格中，选择 " **端点安全性**"。
 

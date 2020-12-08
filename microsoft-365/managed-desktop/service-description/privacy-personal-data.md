@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847764"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586681"
 ---
 # <a name="privacy-and-personal-data"></a>隐私和个人数据
 
@@ -46,6 +46,10 @@ Microsoft 托管桌面将其数据存储在以下一个或多个 Microsoft 存�
 - Azure 存储
 
 Microsoft 托管桌面将其数据存储在美国。 Microsoft 托管桌面保留的个人数据最多为30天。
+
+### <a name="staff-location"></a>员工位置
+
+MMD 操作和 MMD 安全操作团队位于美国和印度。
 
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Microsoft 托管桌面的数据使用情况
 

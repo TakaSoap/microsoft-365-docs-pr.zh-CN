@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 65d1d18037a10cd36c3be9498a4373fa67b6afd9
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519606"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586669"
 ---
 # <a name="compliance"></a>合规性
 
-在使用 Microsoft 托管桌面 IT 即用服务时，Microsoft 会为你提供一套全面的合规性产品。 这一工作可帮助您的组织遵守各种合规性要求。
+使用 Microsoft 托管桌面时，Microsoft 会为你提供一套全面的合规性产品。 这一工作可帮助您的组织遵守各种合规性要求。
 
 ## <a name="compliance-coverage"></a>合规性覆盖范围
 
@@ -35,6 +35,9 @@ Microsoft 托管桌面已实现以下认证：
 - [云安全联盟 (CSA) STAR 认证](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [服务组织控制 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [支付卡行业 (PCI) 数据安全标准 (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
+- [健康保险便携性和责任法案 (HIPAA) ](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
+- [澳大利亚政府信息安全注册评估员计划 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>审核员报告和合规性证书
 
@@ -45,4 +48,4 @@ Microsoft 托管桌面已实现以下认证：
 
 ## <a name="shared-responsibility"></a>共享责任
 
-云服务的合规性是云服务提供商及其客户之间的共同职责。 有关详细信息，请参阅 TechNet 库中的 [云计算共享职责](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91) 。
+云服务的合规性是云服务提供商及其客户之间的共同职责。 有关详细信息，请参阅 [云计算的共享职责](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)。

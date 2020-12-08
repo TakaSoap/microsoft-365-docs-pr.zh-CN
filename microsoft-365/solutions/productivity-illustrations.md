@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 9bd5ad3e2544e0c715ade59ca4744e08c8a548a6
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 81e729d9b0ff145d1d10a385cdd3f0856287dd9f
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376661"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588581"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生产力插图
 
@@ -43,12 +43,12 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 Microsoft 365 包括一系列信息保护和合规性功能。 通过与 Microsoft 的生产率工具结合使用，这些功能旨在帮助组织实时协作，同时遵守严格的法规遵从性框架。 
 
-这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 可随时根据自己的使用情况来修改这些插图。 
+这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 你可以随意使用这些插图，为你提供相应的修改。 
 
 
 | Item | 说明 |
 |:-----|:-----|
-|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[下载为 PDF 格式](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 日语：[下载为 PDF 格式](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> 2020年11月更新|具有 <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内幕风险</li><li>第三方数据摄取</li>|
+|[![模型海报： Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[下载为 PDF 格式](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 日语：[下载为 PDF 格式](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> 2020年11月更新|具有 <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内幕风险</li><li>第三方数据摄取</li>|
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>多区域组织安全和信息保护
@@ -84,7 +84,7 @@ Microsoft 365 包括一系列信息保护和合规性功能。 通过与 Microso
 
 | Item | 说明 |
 |:-----|:-----|
-|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 更新时间：2020年 10 月|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
+|[![模型海报： Microsoft 365 中的高级电子数据展示体系结构](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以图像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[下载为 PDF 格式](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下载为 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 10月2020更新|具有 <ul><li>  单个环境中的端到端工作流</li><li>Microsoft 365 多地理位置环境中的端到端工作流 </li><li>支持 EDRM 工作流的端到端数据流</li> |
   
 <!--
 
@@ -130,7 +130,26 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 2019 年 1 月更新
 
 有关详细信息，请参阅此海报文章：[Microsoft 电话解决方案](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)。
-  
+
+### <a name="empower-remote-workers"></a>让远程工作者效能更上一层楼
+
+使用 Microsoft 365 和其他 Microsoft 云技术，你可以为工作人员提供对你的组织内部部署和基于云的信息、工具和资源的安全访问权限。 
+
+[![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf) <br/>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf)  | [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) <br>
+2020年7月更新
+
+有关详细信息，请参阅文章 "有关此海报： [通过 Microsoft 365 为远程工作人员提供准备工作](empower-people-to-work-remotely.md)"。
+
+### <a name="microsoft-teams-with-security-isolation"></a>具有安全隔离的 Microsoft 团队
+
+使用 Microsoft 365，可以在 Microsoft 团队中配置一个专用团队，并使用 SharePoint 网站安全设置和唯一的敏感度标签对文件进行加密，以便只有团队成员可以对这些文件进行解密。
+
+[![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
+[PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) <br> 2020年8月更新
+
+有关详细信息，请参阅文章 "此海报： [配置具有安全隔离的团队](secure-teams-security-isolation.md)"。
+
   
 ## <a name="see-also"></a>另请参阅
 
