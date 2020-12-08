@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527521"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585302"
 ---
 # <a name="get-started-with-communication-compliance"></a>通信合规性入门
 
@@ -137,6 +137,35 @@ ms.locfileid: "49527521"
 
 >[!IMPORTANT]
 >你必须向 Microsoft 支持人员提交请求，以使贵组织能够使用安全与合规中心中的图形用户界面来搜索本地用户的 Teams 聊天数据。 有关详细信息，请参阅针对 [本地用户搜索基于云的邮箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+
+若要在大型企业组织中管理受监督的用户，您可能需要监视跨大型组的所有用户。 您可以使用 PowerShell 为分配组的全局通信合规性策略配置通讯组。 这使您可以使用单个策略监视数千个用户，并在新员工加入您的组织时更新通信合规性策略。
+
+1. 为符合以下属性的全局通信合规性策略创建专用 [通讯组](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) ：确保此通讯组不用于其他目的或其他 Office 365 服务。
+
+    - **MemberDepartRestriction = 已关闭**。 确保用户无法将自己从通讯组中删除。
+    - **MemberJoinRestriction = 已关闭**。 确保用户无法将自己添加到通讯组。
+    - **ModerationEnabled = True**。 确保发送到此组的所有邮件都受批准，并且该组未用于通信合规性策略配置之外的通信。
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. 选择一个未使用的 [Exchange 自定义属性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) ，以跟踪添加到组织中的通信合规性策略的用户。
+
+3. 定期对计划运行以下 PowerShell 脚本，以将用户添加到通信合规性策略：
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 有关设置组的详细信息，请参阅：
 

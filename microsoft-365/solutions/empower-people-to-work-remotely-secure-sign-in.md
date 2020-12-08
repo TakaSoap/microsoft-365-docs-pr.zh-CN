@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 要求远程工作者通过多重身份验证 (MFA) 登录。
-ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 85bac90085b47b5114db875c822d98aa1365cf97
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681452"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558160"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步骤 1. 通过 MFA 提高远程工作者的登录安全性
 
@@ -75,7 +75,7 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许�
 
 有关详细信息，请参阅[基于风险的条件访问](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)。
 
-借助 Azure AD 标识保护，你还可创建一个策略来要求用户注册 MFA。 有关详细信息，请参阅[配置 Azure 多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+借助 Azure Active Directory 标识保护，你还可创建一个策略来要求用户注册 MFA。 有关详细信息，请参阅[配置 Azure 多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## <a name="using-these-methods-together"></a>结合使用这些方法
@@ -91,7 +91,7 @@ Azure AD 标识保护需要 Microsoft 365 E5 随附的 Azure AD Premium P2 许�
 
 | 方法 | 已启用 | 禁用 | 其他身份验证方法 |
 |:-------|:-----|:-------|:-------|
-| _*安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
+| _ *安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
 | **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 要求用户通过多重身份验证（MFA）和其他功能安全地登录。
-ms.openlocfilehash: a3a63dfc06f5470c2151cd2ff140ad5dee19b0ce
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446073"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558522"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>安全地让用户登录到 Microsoft 365 租户
 
@@ -52,7 +52,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 ![正确的密码和其他验证会导致登录成功](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-使用 MFA 的第一步是***对所有管理员帐户要求使用 MFA***，这些帐户也被称为特权帐户。
+使用 MFA 的第一步是***对所有管理员帐户要求使用 MFA** _，这些帐户也被称为特权帐户。
 
 比第一步更好的是，Microsoft 建议对所有用户要求使用 MFA。
 
@@ -67,7 +67,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 ### <a name="security-defaults"></a>安全性默认值
 
-安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用了安全性默认值，这***要求所有用户将 MFA 与 Microsoft Authenticator 应用配合使用***。
+安全性默认值是在 2019 年 10 月 21 日之后创建的 Microsoft 365 和 Office 365 付费或试用版订阅的一项新功能。 这些订阅启用了安全性默认值，这 _*_要求所有用户将 MFA 与 Microsoft Authenticator 应用配合使用。_*_
  
 用户有 14 天的时间从其智能手机中通过 Microsoft Authenticator 应用登录 MFA，自启用安全性默认值后首次登录起计。 14 天后，除非 MFA 注册完成，否则用户将无法登录。
 
@@ -102,7 +102,7 @@ MFA 要求用户登录受用户帐户密码之外的其他验证约束。 即使
 
 | 方法 | 已启用 | 禁用 | 其他身份验证方法 |
 |:-------|:-----|:-------|:-------|
-| **安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
+| _ *安全性默认值**  | 无法使用条件访问策略 | 可以使用条件访问策略 | Microsoft Authenticator 应用 |
 | **条件访问策略** | 如果已启用任何条件访问策略，则无法启用安全性默认值 | 如果已禁用所有条件访问策略，则可以启用安全性默认值  | 由用户在 MFA 注册期间指定  |
 ||||
 
@@ -133,7 +133,7 @@ Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，�
 |功能|Description|
 |:---------|:---------|
 | 确定并解决组织身份中的潜在漏洞 | Azure AD 使用机器学习功能检测不正常和可疑活动，如登录和登录后活动。 通过使用此数据，Azure AD Identity Protection 会生成报告和警报，帮助你评估问题并执行操作。|
-|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，该策略可在达到指定风险级别时自动响应检测到的问题。 除了 Azure AD 与 Microsoft Intune 提供的其他条件性访问控制以外，这些策略也可以自动阻止访问或采取纠正措施，包括密码重置和要求后续登录的 Azure 多因素身份验证。 |
+|检测与组织身份相关的可疑操作并自动对其响应|可以配置基于风险的策略，该策略可在达到指定风险级别时自动响应检测到的问题。 除了 Azure AD 与 Microsoft Intune 提供的其他条件性访问控制以外，这些策略也可以自动阻止访问或采取纠正措施，包括密码重置和要求后续登录的 Azure AD 多因素身份验证。 |
 | 调查可疑事件并使用管理操作加以解决 | 可以使用有关安全事件的信息来调查风险事件。提供的基本工作流可用于跟踪调查和启动修正操作（如密码重置）。 |
 |||
 
@@ -146,7 +146,7 @@ Microsoft 强烈建议在组织中配置和推出标识和设备访问策略，�
 - [适用于 Microsoft 365 的 MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Microsoft 365 的识别指南](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 培训视频](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [配置多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [配置  Azure AD 多重身份验证注册策略](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [标识和设备访问配置](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>后续步骤
