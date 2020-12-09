@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 将搜索结果从 Microsoft 365 合规性中心中的内容搜索导出到本地计算机。 电子邮件结果将导出为 PST 文件。 SharePoint 和 OneDrive for business 网站中的内容将导出为本机 Office 文档。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422871"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602049"
 ---
 # <a name="export-content-search-results"></a>导出内容搜索结果
 
@@ -165,7 +165,7 @@ ms.locfileid: "49422871"
   
     **电子数据展示工具** 显示有关导出过程的状态信息，包括要下载的剩余项的估计数量（和大小）。 导出过程完成后，可以在文件的下载位置访问这些文件。
 
-## <a name="more-information"></a>更多信息
+## <a name="more-information"></a>详细信息
 
 以下是有关导出搜索结果的详细信息。
   
@@ -345,6 +345,8 @@ ms.locfileid: "49422871"
 
 ### <a name="miscellaneous"></a>其他
   
+- 使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 这是暂时性错误，通常发生在 Azure 存储位置中。 若要解决此问题，请重试 [下载搜索结果](#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。
+
 - 所有搜索结果和导出报告包含在一个与内容搜索同名的文件夹中。 已导出的电子邮件位于名为 **Exchange** 的文件夹中。 文档位于名为 **SharePoint** 的文件夹中。
 
 - 将文档导出到本地计算机时，SharePoint 和 OneDrive for Business 网站上的文档的文件系统元数据将保留。 这意味着当文档被导出时，其文档属性，如创建日期和上次修改日期不会被更改。

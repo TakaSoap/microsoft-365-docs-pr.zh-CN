@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 了解在 Office 365 电子数据展示中解决常见问题时可以采取的基本疑难解答步骤。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422861"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602033"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>调查、解决和解决常见的电子数据展示问题
 
@@ -52,14 +52,13 @@ ms.locfileid: "49422861"
    > |名称|RecipientType|
    > |---|---|
    > |别名、用户|MailUser|
-   > |别名、用户|用户|
+   > |别名、用户|User|
 
 3. 如果返回多个用户，请找到并修复冲突的对象。
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>错误/问题：搜索在特定位置失败
 
-电子数据展示或内容搜索可能会产生以下错误：
->此搜索已完成，并出现 ( # ) 错误。  是否要对失败的位置重试搜索？
+电子数据展示或内容搜索可能会产生以下错误： `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![搜索特定位置发生错误屏幕截图](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -194,6 +193,14 @@ ms.locfileid: "49422861"
    ```
 
 4. 与 Microsoft 技术支持联系。
+
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>错误： "不满足使用 HTTP 条件头指定的条件 (s) "
+
+使用电子数据展示导出工具下载搜索结果时，可能会收到以下错误： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 这是暂时性错误，通常发生在 Azure 存储位置中。
+
+### <a name="resolution"></a>解决方案
+
+若要解决此问题，请重试 [下载搜索结果](export-search-results.md#step-2-download-the-search-results)，这将重新启动电子数据展示导出工具。
 
 ## <a name="see-also"></a>另请参阅
 

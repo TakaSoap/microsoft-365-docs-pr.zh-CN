@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 确保已启用 Microsoft 365 中的所有功能，以最大限度地提高远程工作者的工作效率，并保持对服务器、数据和云的安全访问。
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1af5d1dd2fbc6f5792ee0458e521dfa2f46f46b5
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588569"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -100,6 +100,16 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 [![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
 你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
+
+## <a name="provide-remote-working-for-all-of-your-workers"></a>为所有工作者提供远程工作
+
+使用以下设备，你可以使所有工作者随时随地保持生产力：
+
+- 一个新式设备，例如 Surface laptop 和 Windows 10，具备通过网页直接访问 Microsoft 365 云应用和服务的功能、安全性和性能。
+
+- 包括旧式家用笔记本电脑或台式机在内的任何设备，可通过快速部署的[基于 Windows 10 的虚拟桌面](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)间接访问 Microsoft 365 云应用和服务。 该选项能提高性能、增强安全性并简化 IT 管理。
+
+## <a name="next-steps"></a>后续步骤
 
 按照以下步骤保护和优化对组织的服务器和云服务的访问，并尽量提高远程工作者的工作效率。
 
