@@ -12,21 +12,21 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服务机构如何通过使用 Microsoft 365 和 Teams 来维持财务安全合规性并高效协作。
 f1.keywords: NOCSH
-ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376639"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558474"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>针对美国银行业和资本市场的关键合规性与安全性注意事项
 
 ## <a name="introduction"></a>简介
-对数据、标识、设备和应用程序的保护不仅对其业务至关重要，而且受到美国证券交易委员会 (SEC)、金融业监管局 (FINRA)、联邦金融机构审查委员会 (FFIEC) 和商品期货交易委员会(CFTC) 等监管机构的合规要求和原则的制约。此外，金融机构还受到《多德-弗兰克法案》和 2002 年《萨班斯-奥克斯利法案》等法律的约束。
+金融服务机构在严格的安全性、合规性和管理控制方面的需求几乎超过所有商业企业。 对数据、标识、设备和应用程序的保护不仅对其业务至关重要，而且受到美国证券交易委员会 (SEC)、金融业监管局 (FINRA)、联邦金融机构审查委员会 (FFIEC) 和商品期货交易委员会(CFTC) 等监管机构的合规要求和原则的制约。 此外，金融机构还受到《多德-弗兰克法案》和 2002 年《萨班斯-奥克斯利法案》等法律的约束。
 
 在如今安全警戒加强、内部风险问题和公共数据遭到泄露的环境下，客户还要求金融机构提供高级别的安全保护，以便将个人数据和银行资产托付给他们。
 
-以往，对全面控制的需求直接影响和限制了金融机构用于实现内部和外部协作的 IT 系统和平台。如今，金融服务业员工需要易于采用和使用的新式协作平台。但是，金融服务在实现用户、团队和部门之间协作方面不能牺牲灵活性来确保安全与合规控制，从而实施保护策略以使用户和 IT 系统免遭威胁。
+以往，对全面控制的需求直接影响和限制了金融机构用于实现内部和外部协作的 IT 系统和平台。 如今，金融服务业员工需要易于采用和使用的新式协作平台。 但是，金融服务在实现用户、团队和部门之间协作方面不能牺牲灵活性来确保安全与合规控制，从而实施保护策略以使用户和 IT 系统免遭威胁。
 
 在金融服务业，配置和部署协作工具和安全控制时需考虑以下注意事项：
 - 常见组织协作和业务流程方案的风险评估
@@ -47,7 +47,7 @@ ms.locfileid: "49376639"
 
 作为 Microsoft 合作伙伴，Protiviti 参与了本文的撰写并提供了实质性反馈。
 
-以下可下载的插图是对本文的补充。Woodgrove Bank 和 Contoso 用于演示如何应用本文中描述的功能来满足金融服务的常见监管要求。可随时根据自己的使用情况来修改这些插图。 
+以下可下载的插图是对本文的补充。 Woodgrove Bank 和 Contoso 用于演示如何应用本文中描述的功能来满足金融服务的常见监管要求。 可随时根据自己的使用情况来修改这些插图。 
 
 **Microsoft 365 信息保护和合规性插图**
 
@@ -121,7 +121,7 @@ _*_保护对客户信息、财务文档和应用程序的访问从加强对用�
 
 Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) 中提供了安全标识平台，在其中集中存储并安全管理标识。 Azure AD 以及一系列相关的 Microsoft 365 安全服务构成了为员工提供安全工作所需的访问权限的基础，同时也保护了组织免受威胁。
 
-[Azure 多重身份验证 (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 内置于平台中，提供了一种额外的身份验证证明，可在用户访问敏感财务数据和应用程序时帮助确认用户标识。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种双重身份验证选项，包括：
+[Azure Active Directory 多重身份验证 (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 内置于平台中，提供了一种额外的身份验证证明，可在用户访问敏感财务数据和应用程序时帮助确认用户标识。 Azure MFA 要求至少两种形式的身份验证，如密码和已知移动设备。 它支持多种双重身份验证选项，包括：
 
 - Microsoft Authenticator 应用
 - 通过短信发送的一次性密码

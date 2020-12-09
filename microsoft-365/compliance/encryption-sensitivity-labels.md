@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 配置加密的敏感度标签，以便通过限制访问和使用来保护你的数据。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446116"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561713"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>通过敏感度标签应用加密，从而限制对内容的访问
 
@@ -43,27 +43,27 @@ ms.locfileid: "48446116"
 最后，作为管理员，你在配置敏感度标签来应用加密时可选择执行下述任一操作：
 
 - **立即分配权限**，以便准确确定哪些用户获得了带有该标签的内容的哪些权限。
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- 在用户将此标签应用到内容时 **允许用户分配权限**。 这样，即可让组织内部人员在协作处理和完成任务时具有可能需要的一定程度的灵活性。
 
 在 Microsoft 365 合规中心、Microsoft 365 安全中心或安全与合规中心[创建敏感度标签](create-sensitivity-labels.md)时，可使用加密设置。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的工作方式
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+加密使用了 Azure 信息保护中的 Azure 权限管理服务 (Azure RMS)。 该保护解决方案使用了加密、标识和身份验证策略。 要了解详细信息，请参阅 Azure 信息保护文档中的[什么是 Azure 权限管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+使用此加密解决方案时，**超级用户** 功能确保了获得授权的用户和服务始终可读取和检测已针对你的组织进行加密的数据。 必要时，可删除或更改加密。 有关详细信息，请参阅[为 Azure 信息保护和发现服务或数据恢复配置超级用户](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何配置加密标签
 
-1. 请遵循一般说明[创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择 **“文件和电子邮件”**： 
+1. 请遵循一般说明 [创建或编辑敏感度标签](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，并确保为标签的作用域选择 **“文件和电子邮件”**： 
     
     ![文件和电子邮件的敏感度标签作用域选项](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. 然后，在**选择文件和电子邮件的保护设置**页面上，确保选择 **“加密文件和电子邮件”**
+2. 然后，在 **选择文件和电子邮件的保护设置** 页面上，确保选择 **“加密文件和电子邮件”**
     
     ![文件和电子邮件的敏感度标签保护选项](../media/protection-options-sensitivity-label.png)
 
-4.  对于向导的**加密**页面，选择下列选项之一：
+4.  对于向导的 **加密** 页面，选择下列选项之一：
     
     - **如果文件已加密，则删除加密**：有关此方案的详细信息，请参阅[应用标签时，对现有加密的影响](#what-happens-to-existing-encryption-when-a-labels-applied)部分。 请务必注意，此设置可能会导致敏感度标签，用户没有足够的权限时，他们可能无法应用标签。
     
@@ -79,13 +79,13 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 但是，内容可能已经加密。 例如，其他用户可能已应用以下内容：
 
-- 其自己的权限，包括在标签提示时提供的用户定义的权限、Azure 信息保护客户端提供的自定义权限，以及 Office 应用中的**受限访问**文档保护。
+- 其自己的权限，包括在标签提示时提供的用户定义的权限、Azure 信息保护客户端提供的自定义权限，以及 Office 应用中的 **受限访问** 文档保护。
 - 在不使用标签的情况下加密内容的 Azure 权限管理保护模板。 此类别包括通过权限保护应用加密的邮件流规则。
 - 使用管理员分配的权限应用加密的标签。
 
 下表说明了在向该内容应用敏感度标签后现有加密发生的情况：
 
-| |**加密：未选择**|**加密：已配置**|**加密：删除**|
+| | 加密：未选择 | 加密：已配置 | 加密：删除 |
 |:-----|:-----|:-----|:-----|
 |**用户指定的权限**|保留原有加密|应用新的标签加密|删除原有加密|
 |**保护模板**|保留原有加密|应用新的标签加密|删除原有加密|
@@ -108,10 +108,10 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## <a name="configure-encryption-settings"></a>配置加密设置
 
-在向导的**加密**页面选择 **“配置加密设置”** 来创建或编辑敏感度标签时，选择以下选项之一：
+在向导的 **加密** 页面选择 **“配置加密设置”** 来创建或编辑敏感度标签时，选择以下选项之一：
 
 - **立即分配权限**，以便可准确确定哪些用户对已应用标签的内容具有哪些权限。 有关详细信息，请参阅下一部分：[立即分配权限](#assign-permissions-now)。
-- 在用户向内容应用标签时**允许用户分配权限**。 通过此选项，可使组织内部人员在协作处理和完成任务时具有一定程度可能需要的灵活性。 有关详细信息，请参阅下述部分：[允许用户分配权限](#let-users-assign-permissions)。
+- 在用户向内容应用标签时 **允许用户分配权限**。 通过此选项，可使组织内部人员在协作处理和完成任务时具有一定程度可能需要的灵活性。 有关详细信息，请参阅下述部分：[允许用户分配权限](#let-users-assign-permissions)。
 
 例如，如果你有一个名为“**高度机密**”的敏感度标签，它将应用于你的大部分敏感内容，则你可能需要决定谁对该内容获得哪种类型的权限。
 
@@ -165,7 +165,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 - Azure AD 中的任何特定用户或启用了电子邮件的安全组、通讯组、或 Microsoft 365 组（[旧称为“Office 365 组”](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 Microsoft 365 组可以有静态或[动态成员资格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)。 请注意，不能使用[来自 Exchange 的动态通讯组](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups)，因为此组类型不会同步到 Azure AD，并且不能使用未启用电子邮件的安全组。
 
-- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com**或 **outlook.com**。
+- 任何电子邮件地址或域。 借助此选项，通过输入 Azure AD 使用的另一组织中的任何域名，指定该组织中的所有用户。 你可使用此选项处理社交提供商，方式是输入其域名，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
 
     > [!NOTE]
     > 如果从使用 Azure AD 的组织中指定一个域，则无法将访问权限局限于该特定域。 转而对于拥有你指定的域名的租户来说，会自动包含 Azure AD 中已经过验证的所有域。
@@ -276,11 +276,11 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 - Windows：“**文件**”选项卡 >“**信息**” > “**保护文档**” > “**限制访问**” > “**受限访问**”
 
-- MacOS：“**查看**”选项卡 >“**保护**” > “**权限**” > “**受限访问**”
+- macOS：“**审阅**”选项卡 >“**保护**” > “**权限**” > “**受限访问**”
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密设置的配置示例
 
-对于后面的每个示例，请在选择**配置加密设置**时通过向导的**加密**页面进行配置：
+对于后面的每个示例，请在选择 **配置加密设置** 时通过向导的 **加密** 页面进行配置：
 
 ![应用敏感度标签向导中的加密选项](../media/apply-encryption-option.png)
 
@@ -356,7 +356,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 4. 在“**分配权限**”窗格中，选择“**添加任何经过身份验证的用户**”。
 
-    对于“**用户和组**”，你将看到**认证用户**已自动添加。 无法更改此值，只能将其删除，但这会取消选择“**添加任何经过身份验证的用户**”。
+    对于“**用户和组**”，你将看到 **认证用户** 已自动添加。 无法更改此值，只能将其删除，但这会取消选择“**添加任何经过身份验证的用户**”。
 
 5. 选择“**选择权限**”。
 
@@ -384,6 +384,8 @@ When you use this encryption solution, the **super user** feature ensures that a
 - 已对加密文件禁用 Office 应用（Windows、Mac、Android 和 iOS）的[自动保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能。 用户会看到一条消息，其中指出文件具有受限权限且必须删除此权限才能启用“自动保存”。
 
 - 在 Office 应用（Windows、Mac、Android 和 iOS）中打开加密文件可能需要更长时间。
+
+- 如果[在 SharePoint 中签出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)文档时使用 Office 应用添加应用了加密的标签，并且用户随后放弃签出，则文档将保持含标签和加密状态。
 
 - Office 应用（Windows、Mac、Android 和 iOS）不支持对加密文件进行以下操作，并且用户将看到一则错误消息指出出现了错误。 但是，可将 SharePoint 功能用作替代项：
 

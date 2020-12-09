@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解有助于保留所需内容并删除不需要内容的保留策略和保留标签。
-ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385268"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519373"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留策略和保留标签
 
@@ -38,7 +38,7 @@ ms.locfileid: "49385268"
     
 - **帮助组织有效共享知识并提高敏捷性**：通过确保用户仅处理与自己相关的最新内容。 
     
-你配置的保留设置可以帮助你实现所有这些目标。管理内容通常需要执行以下两项操作：
+你配置的保留设置可有助于实现所有这些目标。 管理内容通常需要执行两项操作：
   
 - **保留** 内容，这样除非保留期到期，否则无法永久删除内容。 
     
@@ -51,11 +51,11 @@ ms.locfileid: "49385268"
 - 仅删除：在指定的时间段后删除内容。
 - 保留后删除：在指定的时间段内保留内容后删除内容。
 
-这些保留设置应用于在适当位置上的内容，如果你出于合规性原因需要保留内容，它们可以为你节省创建和配置附加存储的额外开销。另外，无需实现自定义流程来复制和同步此数据。
+这些保留设置应用于在适当位置上的内容，如果你出于合规性原因需要保留内容，它们可以为你节省创建和配置附加存储的额外开销。 另外，无需实现自定义流程来复制和同步此数据。
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留设置如何应用于在适当位置上的内容
 
-分配有保留设置的内容保留在它的原始位置上。用户可以继续使用其文档或邮件，就像没有发生任何变动一样。但如果他们编辑或删除了包含在保留策略中的内容，则会自动保留一份内容的副本。
+分配有保留设置的内容保留在它的原始位置上。 用户可以继续处理自己的文档或邮件，就像什么都没有改变一样。 但如果他们编辑或删除了包含在保留策略中的内容，则会自动保留一份内容的副本。
   
 - 对于 SharePoint 和 OneDrive 网站：副本保留在 **保留** 库中。
 
@@ -64,9 +64,9 @@ ms.locfileid: "49385268"
 - 对于 Teams 和 Yammer 消息：副本保留在 Exchange“**可恢复项**”文件夹内名为“**SubstrateHolds**”的隐藏文件夹中。
 
 > [!NOTE]
-> 保留库占用的存储不计入网站的存储配额。在对 SharePoint 和 Microsoft 365 组使用保留设置时，你可能需要增加存储空间。
+> 保留库占用的存储计入网站的存储配额。 在对 SharePoint 和 Microsoft 365 组使用保留设置时，可能需要增加存储空间。
 > 
-这些安全位置和保留内容对大部分用户不可见。在大多数情况下，用户甚至不需要知道他们的内容遵循保留设置。
+这些安全位置和保留的内容对大部分用户不可见。 在大多数情况下，用户甚至不需要知道他们的内容遵循保留设置。
 
 若要详细了解保留设置如何用于不同的工作负载，请参阅以下文章：
 
@@ -81,9 +81,9 @@ ms.locfileid: "49385268"
 
 使用保留策略可以在网站或邮箱级别为内容分配相同的保留设置，使用保留标签可以在项（文件夹、文档、电子邮件）级别分配保留设置。
 
-例如，如果某 SharePoint 网站中的所有文档都应保留 5 年，那么使用保留策略比将相同的保留标签应用于此网站中的所有文档更高效。但是，如果该网站中的一些文档应保留 5 年，另一些文档应保留 10 年，那么保留策略就无法实现这一点。如果需要在项级别指定保留设置，请使用保留标签。 
+例如，如果某 SharePoint 网站中的所有文档都应保留 5 年，那么使用保留策略比将相同的保留标签应用于此网站中的所有文档更高效。 不过，如果此网站中的一些文档应保留 5 年，另一些文档应保留 10 年，那么保留策略就无法实现这一点。 如果需要在项级别指定保留设置，请使用保留标签。 
 
-与保留策略不同，如果内容移动到 Microsoft 365 租户内的不同位置，保留标签的保留设置会随着内容移动而移动。另外，保留标签具有保留策略不支持的以下功能： 
+与保留策略不同，如果内容移动到 Microsoft 365 租户内的不同位置，保留标签的保留设置会随着内容移动而移动。 另外，保留标签具有保留策略不支持的以下功能： 
  
 - 除了根据内容年限或上次修改时间计算保留期之外，还可以从内容被标记时或根据事件开始计算保留期。
 
@@ -196,17 +196,26 @@ Exchange 公用文件夹、Skype、Teams 和 Yammer 消息不支持保留标签�
 
 #### <a name="only-one-retention-label-at-a-time"></a>一次只能分配一个保留标签
 
-电子邮件或文档一次只能分配有一个保留标签：
-  
-- 对于管理员或最终用户手动分配的保留标签，用户可删除或更改所分配的保留标签。
+电子邮件或文档一次只能应用有一个保留标签。 保留标签可以由最终用户或管理员[手动](create-apply-retention-labels.md#manually-apply-retention-labels)应用，也可以使用以下任一方法自动应用：
+
+- [自动应用标签策略](apply-retention-labels-automatically.md)
+- [Microsoft SharePoint Syntex 中的文档理解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) 或 [Outlook 的默认标签](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Outlook 规则](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+对于标准保留标签（它们不会将项目标记为[记录或监管记录](records-management.md#records)）：
+
+- 管理员和最终用户可以手动更改或删除应用于内容的现有保留标签。 
+
+- 当内容已应用保留标签时，现有标签不会自动删除或替换为另一个保留标签，但有一个可能的例外：现有标签已作为默认标签应用。
     
-- 如果内容已分配有自动应用标签，可以将此标签替换为发布的保留标签。
-    
-- 如果内容已分配有发布的保留标签，无法将此标签替换为自动应用标签。
-    
-- 若有多个规则要分配自动应用标签，且内容满足多个规则的条件，那么分配的是最早的（按创建日期）规则的保留标签。
-    
-要了解使用默认标签时的所有结果，请参阅[将默认保留标签应用于 SharePoint 库、文件夹或文档集中的所有内容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)部分中的信息。
+    有关使用默认标签应用标签行为的详细信息，请执行以下操作：
+    - SharePoint 的默认标签：[对 SharePoint 使用默认标签时的标签行为](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Outlook 的默认标签：[将默认保留标签应用于 Outlook 文件夹](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+
+- 如果有多个自动应用标签策略可以应用保留标签，并且内容满足多个策略的条件，则应用最旧的自动应用标签策略（按创建日期）的保留标签。
+
+当保留标签将项目标记为记录或管理记录时，这些标签不会自动更改。 只有容器的管理员才能手动更改或删除将项目标记为记录而不是管理记录的保留标签。 有关详细信息，请参阅[比较对允许或阻止的操作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 #### <a name="monitoring-retention-labels"></a>监视保留标签
 
