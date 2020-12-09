@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 托管桌面文档
-summary: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
+summary: Microsoft 托管桌面是独特的 ITaaS 解决方案，它将端点管理和安全监视结合在一起，为用户提供 IT 专业人员可信任的安全高效的设备体验。
 metadata:
   title: Microsoft 托管桌面文档
   description: Microsoft 托管桌面将 Microsoft 365 企业版、Microsoft 基于云的设备管理和安全监控结合在一起，使你可以腾出 IT 团队以专注于核心业务需求。
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.date: 07/13/2020
-  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
-  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.date: 12/04/2020
+  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
+  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "46564139"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "49576771"
 landingContent:
 - title: 关于 Microsoft 托管桌面
   linkLists:
@@ -33,21 +33,33 @@ landingContent:
       url: get-started/index.md
     - text: 使用 Microsoft 托管桌面
       url: /microsoft-365/managed-desktop/working-with-managed-desktop/
-- title: 新文章和博客文章
+- title: 文章和博客文章
   linkLists:
-  - linkListType: whats-new
+  - linkListType: learn
     links:
-    - text: '[路线图] Microsoft 托管桌面完整指南'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-    - text: '[白皮书] 研究：日益增长的托管桌面服务'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-    - text: '[电子书] 使用现代化工作场所提升公司满意度'
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-- title: 视频
+    - text: '[博客] 工作区设备是新的“免费小吃”'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+    - text: '[白皮书] 研究：Microsoft 托管桌面节省时间和成本'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+    - text: '[白皮书] Microsoft 托管桌面可帮助提升参与度'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+    - text: '[白皮书] 南澳电网部署 Microsoft 托管桌面以满足不断变化的用户需求'
+      url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+- title: 优点和亮点
   linkLists:
   - linkListType: video
     links:
-    - text: 从 Lloyds Banking Group 工程总监处了解 Microsoft 托管桌面的好处。
+    - text: Microsoft 托管桌面 - IT 管理员体验
+      url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+    - text: 企业对 Microsoft 托管桌面的喜爱
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+    - text: Microsoft 托管桌面 - 出色的设备体验
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+    - text: Microsoft 托管桌面 - 安全操作
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: Microsoft 托管桌面 - 更改和发布流程
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: 船坞 / IGM / 第 29 集 - 在安全性方面优先考虑用户体验
+      url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+    - text: 船坞 / 劳埃德银行集团 / 第 25 集 - 快速转型中的领导力
       url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-    - text: 年度 Ignite 大会中 Microsoft 托管桌面的亮点
-      url: /microsoft-365/managed-desktop/service-description
