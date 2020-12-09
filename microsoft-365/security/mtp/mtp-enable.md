@@ -19,14 +19,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: fbe98b814b253551432ea35102f2bd6eeba921f8
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602081"
 ---
-# <a name="turn-on-microsoft-365-defender"></a>打开 Microsoft 365 Defender
+# <a name="turn-on-microsoft-365-defender"></a>启用 Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -52,13 +52,13 @@ Microsoft 365 Defender 聚合来自您已部署的各种受支持服务的数据
 若要获得最佳保护并优化 Microsoft 365 Defender，建议在网络上部署所有适用的受支持的服务。 有关详细信息，请 [参阅部署支持的服务](deploy-supported-services.md)。
 
 ## <a name="before-starting-the-service"></a>启动服务之前
-在打开服务之前，Microsoft 365 安全中心 ( [security.microsoft.com](https://security.microsoft.com)) 在选择 " **事件** "、" **操作中心** " 或 "导航窗格" 中的 " **搜寻** " 时显示 "microsoft 365 Defender 设置" 页。 如果你不符合使用 Microsoft 365 Defender 的资格，则不会显示这些导航项。
+在打开服务之前，Microsoft 365 安全中心 ([security.microsoft.com](https://security.microsoft.com)) 在选择 " **事件**"、" **操作中心**" 或 "导航窗格" 中的 " **搜寻** " 时显示 "microsoft 365 Defender 设置" 页。 如果你不符合使用 Microsoft 365 Defender 的资格，则不会显示这些导航项。
 
 ![Microsoft 365 Defender ](../../media/mtp-enable/mtp-settings.png)
  *在 microsoft 365 安全中心中未启用 Microsoft 365 defender 设置* 时显示的 microsoft 365 defender 设置页面的图像
 
 ## <a name="starting-the-service"></a>启动服务
-若要打开 Microsoft 365 Defender，只需选择 **"打开 microsoft 365 defender** " 并应用更改。 您还可以通过在导航窗格中选择 " **设置** " ( [security.microsoft.com/settings](https://security.microsoft.com/settings)) ，然后选择 " **microsoft 365 Defender** " 来访问此选项。
+若要打开 Microsoft 365 Defender，只需选择 **"打开 microsoft 365 defender** " 并应用更改。 您还可以通过在导航窗格中选择 " **设置** " ([security.microsoft.com/settings](https://security.microsoft.com/settings)) ，然后选择 " **microsoft 365 Defender**" 来访问此选项。
 
 >[!NOTE]
 >如果在导航窗格中看不到 **设置** 或无法访问页面，请检查您的权限和许可证。
@@ -84,11 +84,6 @@ Microsoft 365 Defender 将存储和处理 [Microsoft Defender For Endpoint 使�
 ### <a name="getting-microsoft-defender-for-identity-data"></a>获取用于标识数据的 Microsoft Defender
 若要与 Microsoft 365 Defender 共享 Microsoft Defender 的标识数据，请确保 Microsoft 云应用安全性和 Microsoft Defender for Identity integration 已打开。 [了解有关此集成的更多信息](https://docs.microsoft.com/cloud-app-security/aatp-integration)
 
-
-## <a name="turn-off-microsoft-365-defender"></a>关闭 Microsoft 365 Defender
-若要停止使用 microsoft 365 defender，请 **Settings** 转到 microsoft  >  365 安全中心中的设置 **microsoft 365 Defender**  >  **自愿加入/自愿退出** 。 取消选择 **"打开 Microsoft 365 Defender** 并应用更改"。
-
-将从 Microsoft 365 安全中心删除相应的功能。
 
 ## <a name="get-assistance"></a>获取帮助
 

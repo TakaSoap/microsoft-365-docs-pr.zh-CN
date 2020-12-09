@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373991"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604379"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅 [Microsoft Secure 评分中的内容？](microsoft-secure-score-whats-coming.md)。
+若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅 [Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
 
 Microsoft 安全分数可在 https://security.microsoft.com/securescore [microsoft 365 安全中心](overview-security-center.md)中找到。
 
-## <a name="november-2020"></a>2020 年 11 月
+## <a name="november-2020"></a>2020年11月
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>删除了通过安全分数创建 ServiceNow 票证的能力 
+
+通过转到 **共享 > servicenow** 无法再提供通过安全得分创建 servicenow 票证的功能。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 microsoft defender 的终结点 (以前的 Microsoft Defender ATP) 添加了3个与服务相关的改进操作：
 

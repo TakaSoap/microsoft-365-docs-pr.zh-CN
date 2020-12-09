@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a1e8c083c0769031fcc17cc799e7edc29fc9bc57
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357293"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604403"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行业测试中的主要评分
 
@@ -40,7 +40,7 @@ Microsoft 365 Defender 将 [Microsoft defender For Endpoint](https://www.microso
 
 MITRE 的测试方法的核心是模拟实际攻击，以了解解决方案是否可以充分地检测和响应它们。 尽管测试重点在于终结点检测和响应，但 MITRE 的模拟 APT29 攻击跨越了多个攻击域，从而创造了在仅终结点保护之外更有效地实施 defenders 的机会。 Microsoft 扩展 defenders 的 "可见性" 超出了 Microsoft 365 Defender 的终结点。
 
-- ATT&针对 Microsoft 365 Defender 的基于 CK 的评估—5月2020： [在实际检测中的领先范围](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- ATT&基于 CK 的 Microsoft 365 Defender 评估版-5 月2020： [在实际检测中的领先范围](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
     Microsoft 365 Defender 跨攻击链阶段提供了几乎100% 的覆盖率。 It 向攻击者活动提供了一流的现成可见性。 可见性大大减少了依赖特定配置更改的安全操作中心和供应商解决方案的手动工作。 Microsoft 365 Defender 还具有可见性最少的差距，从而降低了攻击者无法正常运行的能力。
 
@@ -56,31 +56,31 @@ AV 测试产品检查和认证报告测试有以下三个类别：保护、性�
 
 **下载最新透明度报告： [检查 AV 测试结果、January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 2020年8月 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**最新**</sup>
+- 2006年9月 2020 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**最新**</sup>
 
-    Microsoft Defender 防病毒实现了 6.0/6.0 的最佳保护分数，100% 在7月8日。 13941使用了恶意软件示例。
+    Microsoft Defender 防病毒实现了 6.0/6.0 的最佳保护分数，100% 在九月和十月。 12650使用了恶意软件示例。
 
-- 可能-6 月 2020 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- 7月-2020 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
 
-- 3月-2020 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- 5月 2020 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
-- 1月-2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- 2020年3月4日 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+
+- 1月 2020 AV-测试业务用户测试：[保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - 11月-2019 AV-测试业务用户测试： [保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
-- 九月—10月 2019 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-- 7月-2019 AV-测试业务用户测试：[保护分数 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
+- 9月-2019 AV-测试业务用户测试： [保护分数 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
 
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-比较级：99.7% 在最新测试中的保护评级
 
 业务安全测试由三个主要部分组成：模拟在线恶意软件攻击的 Real-World 保护测试、恶意软件从 internet 外部进入系统的恶意软件保护测试 (例如，USB) ，以及检查系统性能影响的性能测试。
 
-- Business Security Test 2020 (年3月（6月) ： [实际保护率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**最新**</sup>
+- Business Security Test 2020 (年3月-6 月) ：[实际防护率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) （<sup>**最新**</sup>）
 
     Microsoft Defender 防病毒已在过去一年的 Real-World 保护率上进行了连续较高的评分，在最新的测试中有99.7%。
 
-- Business Security Test 2019 (八月-) 年11月： [实际保护率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Business Security Test 2019 (年8月) ： [实际保护率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
 - Business Security Test 2019 (年3月-6 月) ：[实际保护率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -90,17 +90,17 @@ SE 实验室测试产品和服务使用的一系列解决方案，以检测和/�
 
 **下载最新透明度报告： [检查 SE 实验测试结果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- 企业版 Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- 企业终结点保护-2020 年7月，：<sup>**最新**</sup> [AAA 奖](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
     Microsoft 的下一代保护产品停止了所有目标攻击，但错过了少数公共威胁。
 
-- 企业版 Endpoint Protection —6月2020： [AAA 奖](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- 企业终结点保护-2020 年6月： [AAA 奖](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-- 企业终结点保护（2020年3月）： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- 企业 Endpoint Protection-2020 年1月-： [AAA 奖](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
-- 企业 Endpoint Protection 10 月-12 月2019： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
+- 企业终结点保护-2019 年10月-： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
 
-- 企业版 Endpoint Protection （2019年9月）： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
+- 企业终结点保护-2019 年9月-： [AAA 奖](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 
 ## <a name="endpoint-detection--response"></a>终结点检测 & 响应
@@ -113,7 +113,7 @@ Microsoft Defender for Endpoint 的 EDR 和 Endpoint protection 功能已从行�
 
 MITRE 测试了产品的功能，以检测目标攻击组 APT3 常用的技术 (也称为 "Boron" 或 "UPS) "。 若要隔离检测功能，请关闭所有保护和防护功能。 Microsoft 非常乐意成为第一个 EDR 供应商，以根据 ATT&CK framework 注册 MITRE 评估。 目前，该框架被广泛认为是攻击者技术和战术的最全面目录。
 
-- ATT&基于 CK 的 Microsoft Defender 终结点评估-12 月2018：[主要的光学器件和检测功能](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [分析](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
+- ATT&基于 CK 的 Microsoft Defender for Endpoint 评估-12 月2018：[一流的光学器件和检测功能](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [分析](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
     Microsoft Defender for Endpoint 在整个攻击链中提供了全面的攻击者技术。 重点包括遥测的广度、威胁智能的强度以及通过机器学习、试探法和行为监控的高级、自动检测。
 

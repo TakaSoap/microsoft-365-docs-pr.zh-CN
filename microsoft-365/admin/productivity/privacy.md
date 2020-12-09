@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用效率分数保护隐私的方式。
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561504"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604322"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>用于提高工作效率的隐私控制分数
 
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>能够退出人员体验
 
-您还可以选择退出 "人员体验" 工作效率分数区域。 如果你选择退出，你的组织中的任何人都无法查看这些指标，并且你的组织将从涉及通信、会议、团队合作、内容协作和移动性的任何计算中删除。
+您还可以选择退出 "人员体验" 工作效率分数区域。 如果你选择退出，你的组织中的任何人都无法查看这些指标，并且你的组织将从涉及通信、会议、团队合作、内容协作和移动性的任何计算中删除。 您必须是全局管理员，才能将您的组织作为用户体验报告的选择。
 
 选择加入：
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409219"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604391"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>即将推出的 Microsoft 安全分数
 
@@ -44,14 +44,6 @@ Microsoft 安全分数可在 https://security.microsoft.com/securescore [microso
 - 将 "密码最短使用期限" 设置为 "1 天或更 (s") "
 - 禁用内置管理员帐户
 - 禁用内置来宾帐户
-
-### <a name="november-2020"></a>2020 年 11 月
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>删除通过安全得分创建 ServiceNow 票证的能力 
-
-通过转到 **共享 > servicenow** 将会删除通过安全得分创建 servicenow 票证的功能。
-
-ServiceNow 连接器的预览周期即将结束。 2020的结尾将不再提供此功能。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
 
 ## <a name="related-resources"></a>相关资源
 

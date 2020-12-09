@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '有关详细信息，请参阅 Exchange Online Protection (EOP 中的默认安全设置) '
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558498"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602027"
 ---
 # <a name="secure-by-default-in-office-365"></a>默认情况下在 Office 365 中安全
 
@@ -40,6 +40,8 @@ ms.locfileid: "49558498"
 
 - 带有可疑恶意软件的电子邮件将自动被隔离，收件人将收到通知。 请参阅 [在 EOP 中配置反恶意软件策略](configure-anti-malware-policies.md)。
 - 被标识为高可信度网络钓鱼的电子邮件将根据反垃圾邮件策略操作进行处理。 请参阅 [在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+
+有关 EOP 的详细信息，请参阅 [Exchange Online Protection 概述](exchange-online-protection-overview.md)。
 
 由于 Microsoft 想让我们的客户在默认情况下是安全的，因此某些租户替代不会应用于恶意软件或高可信度的网络钓鱼。 这些替代包括：
 
@@ -65,5 +67,5 @@ ms.locfileid: "49558498"
 
 - 网络钓鱼模拟：模拟攻击可帮助您在真正的攻击影响组织之前识别易受攻击的用户。
 - Security/SecOps 邮箱：安全团队使用的专用邮箱)  (好的和坏的中获取未筛选的邮件。 然后，团队可以查看它们是否包含恶意内容。
-- 第三方筛选器：某些第三方供应商建议将 EOP (SCL =-1) ，因为第三方筛选器将管理邮件筛选。 Microsoft 不建议关闭 EOP，因为 Defender for Office 365 需要 EOP。 相反，此处的建议是为连接器启用 [增强的筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)功能。
+- 第三方筛选器：某些第三方供应商建议将 EOP (SCL =-1) ，因为第三方筛选器将管理邮件筛选。 Microsoft 不建议关闭 EOP，因为 [Microsoft Defender For Office 365](office-365-atp.md)需要 EOP。 相反，此处的建议是为连接器启用 [增强的筛选](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)功能。
 - 误报：您可能希望临时允许某些邮件仍由 Microsoft [通过管理员提交](admin-submission.md)进行分析。 与所有替代一样，建议它们是临时性的。

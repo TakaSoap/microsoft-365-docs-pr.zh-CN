@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 了解如何在团队中设置安全内容协作，以根据数据敏感度保护您的数据。
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906795"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602069"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>与 Microsoft 365 建立安全协作
 
@@ -60,9 +60,9 @@ ms.locfileid: "48906795"
 
 对于以上所述的所有情况，可以使用 Microsoft 团队中的团队来存储、共享和协作处理信息。 
 
-若要配置安全 collabration，请使用以下 Microsoft 365 功能和功能。
+若要配置安全协作，请使用以下 Microsoft 365 功能和功能。
 
-| 产品或组件 | 功能或特性 | 授权 |
+| 产品或组件 | 功能或特性 | 许可 |
 |:-------|:-----|:-------|
 | Microsoft Defender for Office 365 | SPO、OneDrive 和团队的安全附件;安全文档;团队的安全链接    | Microsoft 365 E1、E3 和 E5 |
 | SharePoint    | 网站和文件共享策略、网站共享权限、共享链接、访问请求、网站来宾共享设置 | Microsoft 365 E1、E3 和 E5 |
@@ -76,9 +76,9 @@ ms.locfileid: "48906795"
 ![Teams 逻辑体系结构海报缩略图](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-这些分层- *比较基准* 、 *敏感* 和 *高度敏感* 信息-逐渐提高有助于防止 oversharing 和潜在信息泄露的保护，如下表所示。
+这些分层- *比较基准*、 *敏感* 和 *高度敏感* 信息-逐渐提高有助于防止 oversharing 和潜在信息泄露的保护，如下表所示。
 
-||**基线层**|**敏感层**|**高度敏感的层**|
+|-|**基线层**|**敏感层**|**高度敏感的层**|
 |:--|:-----------|:------------|:-------------------|
 |公共或专用团队|两者皆可|Private|Private|
 |未经身份验证的共享|Blocked|Blocked|Blocked|

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 中的欺骗智能，您可以在其中允许或阻止特定的欺骗性发件人。
-ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572725"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602099"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中配置欺骗智能
 
@@ -57,16 +57,16 @@ ms.locfileid: "49572725"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 若要修改欺骗性智能策略或启用或禁用欺骗智能，您需要是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
   - 若要对欺骗智能策略进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
   **注意**：
 
-  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关我们推荐的欺骗性智能设置，请参阅 [EOP 默认反网络钓鱼策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "49572725"
 
      - 在 " **外部域** " 选项卡上，值包含欺骗用户的域，而不是完整的电子邮件地址。
 
-   - **发送基础结构**：当源电子邮件服务器的 IP 地址的反向 DNS 查找 (PTR 记录) 中找到的域，或者如果源没有 PTR 记录，则为 IP 地址。
+   - **发送基础结构**：在反向 DNS 查找中找到的域在源电子邮件服务器的 IP 地址 (PTR 记录) 。 如果源 IP 地址没有 PTR 记录，则发送的基础结构被标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
 
      有关邮件源和邮件发件人的详细信息，请参阅 [电子邮件标准概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
@@ -112,22 +112,18 @@ ms.locfileid: "49572725"
    - **用户投诉**：在过去30天内，用户对此发件人存档的投诉。 投诉通常是提交给 Microsoft 的垃圾邮件的形式。
 
    - **身份验证结果**：下列值之一：
-
       - 已 **传递**：发件人的发件人电子邮件身份验证检查 (SPF 或 DKIM) 。
       - **失败**：发件人失败 EOP 发件人身份验证检查。
       - **未知**：这些检查的结果不是已知的结果。
 
    - **决策集依据**：显示确定是否允许发送基础结构欺骗用户的用户：
-
        - **欺骗性智能策略** (自动) 
        - **管理员** (手动) 
 
    - **上次查看** 时间：从包含欺骗用户的发送基础结构收到邮件的最后日期。
 
    - 是否 **允许欺骗？**：您在此处看到的值是：
-
      - **是**：允许欺骗用户和发送基础结构组合的邮件不会被视为欺骗电子邮件。
-
      - **否**：来自欺骗用户和发送基础结构组合的邮件被标记为欺骗。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹**) 。 有关详细信息，请参阅下一节。
 
      - **有些用户** 只 (**域** 选项卡中) ：发送基础结构是哄骗多个用户，其中某些欺骗用户是允许的，其他是不允许的。 使用 " **详细信息** " 选项卡查看特定地址。
