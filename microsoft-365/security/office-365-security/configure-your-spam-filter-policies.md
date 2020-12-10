@@ -16,23 +16,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2601e4b7b360ce45fbece3e66b5aa09cd512f68c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357883"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572809"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在有 Exchange Online 邮箱的 Microsoft 365 组织，或没有 Exchange Online 邮箱的独立 Exchange Online Protection (EOP) 组织中，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
+在有 Exchange Online 的 Microsoft 365 组织，或没有 Exchange Online 邮箱的 Exchange Online Protection (EOP) 组织中，EOP 都会自动保护入站电子邮件免受垃圾邮件威胁。 EOP 使用反垃圾邮件策略（亦称为“垃圾邮件筛选策略”或“内容筛选策略”），作为组织全面抵御垃圾邮件的措施的一部分。 有关详细信息，请参阅[反垃圾邮件保护](anti-spam-protection.md)。
 
-管理员可以查看、编辑和配置（但不能删除）默认反垃圾邮件策略。还可以创建应用于组织中特定用户、组或域的自定义反垃圾邮件策略，以实现更细致的控制。自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
+管理员可以查看、编辑和配置（但不能删除）默认反垃圾邮件策略。 还可以创建应用于组织中特定用户、组或域的自定义反垃圾邮件策略，以实现更细致的控制。 自定义策略始终优先于默认策略，但可以更改自定义策略的优先级（即运行顺序）。
 
-若要配置反垃圾邮件策略，可使用安全与合规中心，也可使用 PowerShell（Exchange Online PowerShell 适用于有 Exchange Online 邮箱的 Microsoft 365 组织，独立 EOP PowerShell 适用于没有 Exchange Online 邮箱的组织）。
+若要配置反垃圾邮件策略，可以使用安全与合规中心，也可以使用 PowerShell（适用于有 Exchange Online 的 Microsoft 365 组织的 Exchange Online PowerShell，或适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell）。
 
 反垃圾邮件策略的基本要素如下：
 
@@ -41,37 +41,36 @@ ms.locfileid: "49357883"
 
 在安全与合规中心内管理反垃圾邮件策略时，这两个要素之间的区别并不明显：
 
-- 创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
-- 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。其他所有设置会修改关联的垃圾邮件筛选策略。
-- 如果删除反垃圾邮件策略，垃圾邮件筛选规则和关联的垃圾邮件筛选策略也会随之删除。
+- 在创建反垃圾邮件策略时，实际上是同时创建了垃圾邮件筛选规则和关联的垃圾邮件筛选策略，并对二者使用相同的名称。
+- 如果你修改反垃圾邮件策略，与名称、优先级、启用/禁用以及收件人筛选器有关的设置会修改垃圾邮件筛选规则。 其他所有设置会修改关联的垃圾邮件筛选策略。
+- 如果你删除反垃圾邮件策略，垃圾邮件筛选规则和关联的垃圾邮件筛选策略也会随之删除。
 
-在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。有关详细信息，请参阅本主题后面的[使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置反垃圾邮件策略](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)部分。
+在 Exchange Online PowerShell 或独立 EOP PowerShell 中，单独管理策略和规则。 有关详细信息，请参阅本主题后面的[使用 Exchange Online PowerShell 或独立 EOP PowerShell 配置反垃圾邮件策略](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies)部分。
 
 每个组织都有名为“默认”的内置反垃圾邮件策略，它具有以下属性：
 
 - 该策略会应用于组织中的所有收件人，即使没有与此策略关联的垃圾邮件筛选规则（亦称为“收件人筛选器”），也不例外。
-- 该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。你创建的任何自定义策略始终具有更高的优先级。
+- 该策略具有无法修改的自定义优先级值“**最低**”（表示此策略始终最后应用）。 你创建的任何自定义策略始终具有更高的优先级。
 - 该策略是默认策略（**IsDefault** 属性的值为 `True`），你无法删除默认策略。
 
 为了提高垃圾邮件筛选的有效性，可以创建自定义反垃圾邮件策略，它包含应用于特定用户或用户组的更严格设置。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。要直接转至“**反垃圾邮件设置**”页面，请使用 <https://protection.office.com/antispam>。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **“反垃圾邮件设置”** 页，请访问 <https://protection.office.com/antispam>。
 
-- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 你必须首先分配有权限，然后才能执行本主题中的步骤：
+- 必须分配有安全与合规中心内的权限，才能执行本文中的步骤：
+  - 必须是 **“组织管理”** 或 **“安全管理员”** 角色组的成员，才能添加、修改和删除反垃圾邮件策略。
+  - 若要获得对受限用户门户的只读访问权限，必须成为 **全球读者** 或 **安全读者** 角色组的成员。
 
-  - 必须是以下角色组之一的成员，才能添加、修改和删除反垃圾邮件策略：
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
-    - [安全和合规中心](permissions-in-the-security-and-compliance-center.md)中的“**组织管理**”或“**安全管理员**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**组织管理**”或“**清洁管理**”。
+  **注意**：
 
-  - 必须是以下角色组之一的成员，才能获得对反垃圾邮件策略的只读访问权限：
-
-    - [安全与合规中心](permissions-in-the-security-and-compliance-center.md)内的“**安全读取者**”。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的“**仅查看组织管理**”。
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关建议的反垃圾软件策略设置，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
@@ -83,11 +82,11 @@ ms.locfileid: "49357883"
 
 2. 在 **“反垃圾邮件设置”** 页上，单击 **“创建策略”**。
 
-3. 在随即打开的“**新建垃圾邮件筛选策略**”弹出菜单中，配置以下设置：
+3. 在随即打开的 **“新建垃圾邮件筛选策略”** 浮出控件中，配置以下设置：
 
-   - **名称**：输入策略的唯一描述性名称。不要使用以下字符：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
+   - **名称**：输入策略的唯一描述性名称。 请勿使用以下字符：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
 
-      如果以前在 Exchange 管理中心 (EAC) 内创建了包含这些字符的反垃圾邮件策略，应在 PowerShell 中重命名反垃圾邮件策略。有关说明，请参阅本主题稍后将介绍的[使用 PowerShell 修改垃圾邮件筛选规则](#use-powershell-to-modify-spam-filter-rules)部分。
+      如果以前在 Exchange 管理中心 (EAC) 内创建了包含这些字符的反垃圾邮件策略，应在 PowerShell 中重命名反垃圾邮件策略。 有关说明，请参阅本主题稍后将介绍的[使用 PowerShell 修改垃圾邮件筛选规则](#use-powershell-to-modify-spam-filter-rules)部分。
 
    - **说明**：输入策略的可选说明。
 
@@ -119,11 +118,11 @@ ms.locfileid: "49357883"
      |**无操作**|||||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |
 
-     <sup>1</sup>在 Exchange Online 中，如果邮箱启用了垃圾邮件规则（默认处于启用状态），邮件会移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
-
-     在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
-
-     <sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
+     > <sup>1</sup>在 Exchange Online 中，如果邮箱启用了垃圾邮件规则（默认处于启用状态），邮件会移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。
+     >
+     > 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+     >
+     > <sup>2</sup>可以将此使用值用作邮件流规则（亦称为“传输规则”）中的条件来筛选或路由邮件。
 
    - **选择阈值**：指定触发 **“群发电子邮件”** 垃圾邮件筛选裁定的指定操作的邮件批量投诉级别 (BCL)（大于指定值，而不是小于或等于指定值）。 值越高，邮件就越不理想（是垃圾邮件的可能性就越大）。 默认值为 7。 有关详细信息，请参阅 [EOP 中的批量投诉级别 (BCL)](bulk-complaint-level-values.md)，以及[垃圾邮件与群发电子邮件有何区别？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 

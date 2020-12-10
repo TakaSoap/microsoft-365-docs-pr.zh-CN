@@ -1,5 +1,5 @@
 ---
-title: 将敏感度标签自动应用于内容
+title: 将敏感度标签自动应用于 Microsoft 365 中的内容
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 2cfe509e61737cde77dbf865d4d56d9e7f8d0d33
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407346"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568480"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> 有关在 Azure Purview 中对数据进行分类和标记的详细信息，请参阅当前处于预览中的[在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 创建敏感度标签时，你可以自动将该标签分配给内容（如果它符合你指定的条件）。
 
@@ -35,9 +38,11 @@ ms.locfileid: "49407346"
 
 - 无需依赖用户，即可对全部内容进行正确分类。
 
-- 用户不再需要了解你的策略，反而可以专注于自己的工作。
+- 用户不再需要了解你的策略，可以专注于自己的工作。
 
-可通过两种不同的方法来自动应用敏感度标签：
+手动标记内容后，该标签将永远不会被自动标记替换。 但是，自动标签可能会替代之前被自动应用的[低优先级标签](sensitivity-labels.md#label-priority-order-matters)。
+
+有两种不同的方法可以自动将敏感度标签应用于 Microsoft 365 中的内容：
 
 - **用户编辑文档或撰写（以及答复或转发）电子邮件时的客户端标记**：使用为 Office 应用（Word、Excel、PowerPoint 和 Outlook）的自动标记配置的标签。 
     
@@ -73,7 +78,7 @@ ms.locfileid: "49407346"
 
 使用下表可帮助识别两种互补自动标记方法在行为上的差异：
 
-|功能或行为|标签设置：Office 应用的自动标记 |策略：自动标记|
+|功能或行为|标签设置：文件和电子邮件的自动标记  |策略：自动标记|
 |:-----|:-----|:-----|
 |应用相关性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 \* |
 |按位置限制|否 |是 |
@@ -87,9 +92,6 @@ ms.locfileid: "49407346"
 |标记传入电子邮件|否 |是（未应用加密） |
 
 \*自动标记当前在所有区域中均不可用。 如果你的租户不支持此功能，则管理员标记中心中的“自动标记”选项卡将不可见。
-
-> [!NOTE]
-> 手动标记内容后，该标签将永远不会被自动标记替换。 但是，自动标记策略可以替换通过使用 Office 应用的自动标记而应用的[低优先级标签](sensitivity-labels.md#label-priority-order-matters)。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>在多个条件适用于多个标签时如何评估这些条件
 
