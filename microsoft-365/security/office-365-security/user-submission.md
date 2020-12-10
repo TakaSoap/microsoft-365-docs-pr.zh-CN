@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理员可以了解如何配置邮箱以收集用户报告的垃圾邮件和网络钓鱼电子邮件。
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130895"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615620"
 ---
 # <a name="user-submissions-policy"></a>用户提交策略
 
@@ -88,7 +88,7 @@ ms.locfileid: "49130895"
 
       - **提交后**：单击 " ![ 展开图标" ](../../media/scc-expand-icon.png) 。 在 " **标题** " 和 " **确认消息** " 框中，输入用户在使用报告邮件外接程序报告邮件后看到的描述性文本。 您可以使用变量% type% 来包括提交类型。
 
-      完成后，单击“保存”。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原** 回"。
+      完成时，请单击“保存”。 若要清除这些值，请单击 "**用户提交**" 页上的 "**还原** 回"。
 
       - **将报告的邮件发送到**：执行下列任一选择：
 
@@ -99,7 +99,7 @@ ms.locfileid: "49130895"
         - **自定义邮箱**：在显示的框中，输入现有 Exchange Online 邮箱的电子邮件地址。 不允许使用通讯组。 如果您希望邮件仅转到管理员或安全操作团队进行分析，请使用此选项。 除非管理员自行转发，否则邮件不会转到 Microsoft。
 
         > [!NOTE]
-        > 美国政府组织 (GCC、GCC-H 和 DoD) 只能配置 **自定义邮箱**。 其他两个选项将被禁用。 
+        > 美国政府组织 (GCC、GCC-H 和 DoD) 只能配置 **自定义邮箱**。 其他两个选项将被禁用。
 
       完成后，请单击 " **确认**"。
 

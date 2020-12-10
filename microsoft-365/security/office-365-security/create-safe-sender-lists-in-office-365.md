@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解可用的首选选项以允许入站邮件在 Exchange Online Protection (EOP) 中。
-ms.openlocfilehash: 6d862f0ed6d6bbea56cb2bb79fee69a044e4fede
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130789"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616628"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中创建安全发件人列表
 
@@ -66,7 +66,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
      此条件检查发送电子邮件域的电子邮件身份验证状态，以确保不会欺骗发送域。 有关电子邮件身份验证的详细信息，请参阅 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)。
 
    - **IP 允许列表**：在连接筛选器策略中指定源 IP 地址或地址范围。
-  
+
      如果发送域不使用电子邮件身份验证，则使用此设置。 当到达 IP 允许列表中的源 IP 地址时，应尽可能地限制其限制性。 建议使用的 IP 地址范围为/24 或更低 (更) 。 请勿使用属于消费服务 (的 IP 地址范围，例如 outlook.com) 或共享基础结构。
 
    > [!IMPORTANT]
@@ -134,7 +134,7 @@ Exchange Online 和独立 EOP 中的邮件流规则：使用条件和例外来�
 
 - 该 `5321.MailFrom` 地址 (也称为 " **发** 件人地址"、"P1 发件人" 或 "信封发件人") 是在邮件的 SMTP 传输中使用的电子邮件地址。 此电子邮件地址通常记录在邮件标头的 " **返回路径** 标头" 字段中 (尽管可以将不同的 **返回路径** 电子邮件地址指定) 。 如果无法传递邮件，则表示未送达报告 (的收件人也称为 "NDR" 或 "退回邮件") 。
 
-- "发件人 `5322.From` 地址" **From** 或 "P2 发件人") 的 (也称为 **"发** 件人" 头字段中的电子邮件地址，它是电子邮件客户端中显示的发件人的电子邮件地址。
+- "发件人 `5322.From` 地址" 或 "P2 发件人") 的 (也称为 **"发** 件人" 头字段中的电子邮件地址，它是电子邮件客户端中显示的发件人的电子邮件地址。
 
 通常， `5321.MailFrom` 和 `5322.From` 地址 (个人到人员通信) 相同。 但是，如果代表其他人发送电子邮件，则地址可能会不同。 对于批量电子邮件，这通常会发生。
 

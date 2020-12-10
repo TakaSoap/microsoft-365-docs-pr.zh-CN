@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 了解如何为 Microsoft 365 组创建命名策略。
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377601"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613498"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 组命名策略
 
@@ -45,7 +45,7 @@ ms.locfileid: "48377601"
 
 这对于创建组命名策略的管理员来说也是必需的。
 
-## <a name="prefix-suffix-naming-policy"></a>前缀-后缀命名策略
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix 命名策略
 
 前缀和后缀可以是固定字符串，也可以是用户属性。
 
@@ -132,5 +132,9 @@ ms.locfileid: "48377601"
 ![Azure Active Directory 中的组命名策略设置的屏幕截图](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [用于配置组设置的 Azure Active Directory cmdlet](https://go.microsoft.com/fwlink/?linkid=868341)

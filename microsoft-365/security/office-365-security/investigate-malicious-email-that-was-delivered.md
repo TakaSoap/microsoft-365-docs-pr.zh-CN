@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 了解如何使用威胁调查和响应功能查找和调查恶意电子邮件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561324"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616520"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>调查在 Office 365 中提供的恶意电子邮件
 
@@ -62,7 +62,7 @@ ms.locfileid: "49561324"
 |
 
 > [!NOTE]
-> *预览* 是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配有 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) ，并且安全管理员和安全读者角色在安全 & 合规性中心 () 中分配 [https://protection.office.com](https://protection.office.com) 。 若要了解有关角色和权限的详细信息，请参阅 [Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+> *预览* 是一个角色，而不是角色组;必须将预览角色添加到 Office 365 的现有角色组中。 全局管理员角色分配有 Microsoft 365 管理中心 (<https://admin.microsoft.com>) ，并且安全管理员和安全读者角色在安全 & 合规性中心 () 中分配 <https://protection.office.com> 。 若要了解有关角色和权限的详细信息，请参阅 [Security & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>查找已发送的可疑电子邮件
 
@@ -71,7 +71,7 @@ ms.locfileid: "49561324"
 > [!NOTE]
 > 资源管理器中的默认搜索当前不包含 Zapped 项目。  这适用于所有视图，例如恶意软件或网络钓鱼视图。 若要包含 Zapped 项，需要将 "传递操作" 设置为 "已删除的由 ZAP 删除"。 如果包含所有选项，您将看到所有传递操作结果，包括 Zapped 项目。
 
-1. **导航到 "威胁资源管理器**"：转到 [https://protection.office.com](https://protection.office.com) 并使用 Office 365 的工作或学校帐户登录并登录。 这将转到安全 & 合规中心。
+1. **导航到 "威胁资源管理器**"：转到 <https://protection.office.com> 并使用 Office 365 的工作或学校帐户登录并登录。 这将转到安全 & 合规中心。
 
 2. 在左侧导航快速启动栏中，选择 " **威胁管理** \> **资源管理器**"。
 

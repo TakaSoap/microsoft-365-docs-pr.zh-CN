@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 用户需要在 Microsoft 365 安全 & 合规性中心中分配权限，才能管理其任何安全性或合规性功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202803"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616604"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>向用户授予对安全与合规中心的访问权限
 
@@ -53,9 +53,9 @@ ms.locfileid: "48202803"
 
 3. 在 "**成员**" 下的角色组的 "属性" 页中，单击 "**添加**" "添加 ![ " 图标， ](../../media/ITPro-EAC-AddIcon.gif) 然后选择要添加的用户的名称 (或用户) 。
 
-4. 在选择了要添加到角色组的所有用户后，单击 "**添加 \> ** "，然后单击 **"确定"**。
+4. 在选择了要添加到角色组的所有用户后，单击 "**添加 \>** "，然后单击 **"确定"**。
 
-5. 完成时，请单击“保存”****。
+5. 完成时，请单击“保存”。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全 & 合规性中心 PowerShell 向另一个用户授予对安全 & 合规性中心的访问权限
 
@@ -77,11 +77,11 @@ ms.locfileid: "48202803"
 
 有关语法和参数的详细信息，请参阅 [外接程序 add-rolegroupmember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
-### <a name="how-do-you-know-this-worked"></a>如何知道操作成功？
+### <a name="how-do-you-know-this-worked"></a>如何判断是否生效？
 
 若要验证是否已成功授予对安全 & 合规中心的访问权限，请执行以下步骤之一：
 
-- 在安全 & 合规性中心中，转到 " **权限** "，然后选择角色组。 在打开的 "详细信息" 浮出控件中，验证角色组的成员。 
+- 在安全 & 合规性中心中，转到 " **权限** "，然后选择角色组。 在打开的 "详细信息" 浮出控件中，验证角色组的成员。
 
 - 在安全 & 合规性中心 PowerShell 中，将替换 \<RoleGroupName\> 为角色组的名称，然后运行以下命令：
 

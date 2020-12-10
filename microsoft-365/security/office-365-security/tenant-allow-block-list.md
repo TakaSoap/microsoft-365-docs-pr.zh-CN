@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在安全 & 合规性中心的租户允许/阻止列表中配置 URL 条目。
-ms.openlocfilehash: 1aae54ffd6026a7fc131017a10f9676d96be9b69
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572631"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614960"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租户允许/阻止列表中的 URL
 
@@ -52,16 +52,16 @@ Security & 合规性中心中的租户允许/阻止列表为你提供了一种�
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 若要添加和删除租户允许/阻止列表中的值，您需要是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
   - 若要对租户允许/阻止列表进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
   **注意**：
 
-  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全 & 合规性中心在租户允许/阻止列表中创建 URL 条目
 
@@ -296,7 +296,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - test.com/q=contoso.com
   - www.contoso.com
   - www. .com/q = a@contoso
-  
+
 - **块匹配**：
 
   - contoso.com
@@ -324,7 +324,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
-  
+
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>方案： path 顶部的右通配符
 
 **条目**： `contoso.com/a/*`
@@ -341,7 +341,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com/a
   - www.contoso.com
   - www. .com/q = a@contoso
-  
+
 #### <a name="scenario-left-tilde"></a>方案：左波形符
 
 **条目**： `~contoso.com`

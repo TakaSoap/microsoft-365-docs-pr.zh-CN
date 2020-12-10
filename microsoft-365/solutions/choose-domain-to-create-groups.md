@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 了解如何在使用 PowerShell 配置电子邮件地址策略时选择要在创建 Microsoft 365 组时使用的域。
-ms.openlocfilehash: bb6137a3dfce17bc9c94648e5ea9e12ec2776195
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377433"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612936"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>选择创建 Microsoft 365 组时要使用的域
 
@@ -59,13 +59,13 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 假设您想要控制在其中创建的子域 Microsoft 365 组。 你想要：
   
-- 由学生创建的组 (在 students.groups.contoso.com 域中) 为**学生**的**部门**设置的用户。 请使用此命令：
+- 由学生创建的组 (在 students.groups.contoso.com 域中) 为 **学生** 的 **部门** 设置的用户。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- 教职员工成员创建的组 (用户的 **部门** 设置为 **教职员或电子邮件地址包含 ** faculty.groups.contoso.com 域中的 faculty.contoso.com) ) 。 请使用此命令：
+- 教职员工成员创建的组 (用户的 **部门** 设置为 **教职员或电子邮件地址包含** faculty.groups.contoso.com 域中的 faculty.contoso.com) ) 。 请使用此命令：
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
@@ -79,7 +79,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ## <a name="change-email-address-policies"></a>更改电子邮件地址策略
 
-若要更改现有 EAP 的优先级或电子邮件地址模板，请使用 Update-emailaddresspolicy cmdlet。
+若要更改现有 EAP 的优先级或电子邮件地址模板，请使用 Set-EmailAddressPolicy cmdlet。
   
 ```
 Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
@@ -90,7 +90,7 @@ Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:
   
 ## <a name="delete-email-address-policies"></a>删除电子邮件地址策略
 
-若要删除 EAP，请使用 Update-emailaddresspolicy cmdlet。
+若要删除 EAP，请使用 Remove-EmailAddressPolicy cmdlet。
   
 ```
 Remove-EmailAddressPolicy -Identity StudentsGroups
@@ -119,5 +119,9 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 - 可以为组织配置最大值为100的电子邮件地址策略。
     
 ## <a name="related-articles"></a>相关文章
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [在管理中心创建 Microsoft 365 组](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

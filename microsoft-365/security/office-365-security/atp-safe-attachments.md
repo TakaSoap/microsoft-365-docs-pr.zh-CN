@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 管理员可以了解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357198"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616676"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
@@ -38,7 +38,7 @@ ms.locfileid: "49357198"
 
 ****
 
-|应用场景|结果|
+|方案|结果|
 |---|---|
 |Pat 的 Microsoft 365 E5 组织没有配置安全附件策略。|Pat 不受安全附件保护。 <p> 管理员必须至少创建一个安全附件策略，才能使安全附件保护处于活动状态。 此外，如果安全附件保护了 Pat，则策略的条件必须包括 Pat。|
 |先生/她的组织有一个仅适用于财务员工的安全附件策略。 "工作表示" 是销售部门的成员。|先生不受安全附件保护。 <p> 财务员工受安全附件保护，但销售员工 (和其他员工) 不受保护。|

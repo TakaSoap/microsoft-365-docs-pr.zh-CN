@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何使用 Office 365 安全 & 合规中心中的警报功能查看和管理警报，包括管理高级通知。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984884"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615044"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全 & 合规中心中的警报
 
@@ -50,9 +50,9 @@ ms.locfileid: "48984884"
 
 1. 使用工作或学校帐户进行登录。
 
-2. 单击左上角的应用启动器，然后单击 " **安全 & 合规性** "。
+2. 单击左上角的应用启动器，然后单击 " **安全 & 合规性**"。
 
-   找不到需要的应用？从应用启动器中，选择“ **所有应用** ”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
+   找不到需要的应用？从应用启动器中，选择“**所有应用**”，以查看可供使用的 Office 365 应用的列表（按字母顺序排列）。可在此处搜索特定应用。
 
 3. 在左窗格中，单击 " **警报** " 以查看警报功能。
 

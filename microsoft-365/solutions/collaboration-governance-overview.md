@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何在 Microsoft 365 组、团队、SharePoint 和 Yammer 中管理相关功能。
-ms.openlocfilehash: 2e4064ec64c52d4d3afe3d2e83f34079b3749f97
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 2319a0f5b8c74925569d00eb781d247fe61a5a76
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568368"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613028"
 ---
 # <a name="what-is-collaboration-governance"></a>什么是协作治理？
 
@@ -141,7 +141,7 @@ Microsoft 365 中的协作治理功能包括 Microsoft 365、团队、SharePoint
 |组过期策略|将非活动组和团队设置为在指定的一段时间后过期并被删除。|使用 Azure AD 高级许可证的 Microsoft 365 E5 或 E3|
 |按组的来宾访问|允许或阻止团队和组与组织外部的人员共享，具体取决于每个组。|Microsoft 365 E5 或 E3|
 
-## <a name="create-your-governance-plan"></a>创建调控计划
+## <a name="collaboration-governance-planning-step-by-step"></a>协作治理规划分步
 
 请按照以下基本步骤创建您的治理计划：
 
@@ -208,12 +208,12 @@ Microsoft 365 中生产力服务的逻辑体系结构，以 Microsoft Teams 为�
 
 Microsoft 365 包括一系列信息保护和合规性功能。 通过与 Microsoft 的生产率工具结合使用，这些功能旨在帮助组织实时协作，同时遵守严格的法规遵从性框架。 
 
-这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 你可以随意使用这些插图，为你提供相应的修改。 
+这组插图使用最受管控的行业之一（金融服务）来演示如何应用这些功能来满足常见法规要求。 可随时根据自己的使用情况来修改这些插图。 
 
 
-| Item | 说明 |
+| 项目 | 说明 |
 |:-----|:-----|
-|[![模型海报： Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[下载为 PDF 格式](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 日语：[下载为 PDF 格式](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)的 \| [Visio 下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx)   <br/> 2020年11月更新|具有 <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内幕风险</li><li>第三方数据摄取</li>|
+|[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> 英语：[以 PDF 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx) <br/> 日语：[以 PDF 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.pdf)  \| [以 Visio 格式下载](https://download.microsoft.com/download/6/f/1/6f1a7d0e-dd8e-442e-b073-8e94327ae4f8/m365-compliance-illustrations.vsdx) <br/> 2020 年 11 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险</li><li>第三方数据摄取</li>|
 
 ## <a name="conference-sessions"></a>会议会话
 

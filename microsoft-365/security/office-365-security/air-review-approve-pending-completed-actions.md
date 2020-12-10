@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解 Microsoft Defender for Office 365 计划2中的自动调查和响应功能中的补救措施。
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844556"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615188"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>查看 Office 365 中的自动调查后的挂起或已完成的修正操作
 
@@ -39,17 +39,17 @@ ms.locfileid: "48844556"
 > [!IMPORTANT]
 > 批准或拒绝修正操作需要适当的权限。 查看 [使用空中功能所需的权限](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规性中心。
+1. 转到 <https://protection.office.com> 并登录。 这将转到安全 & 合规性中心。
 
-2. 转到 **威胁管理**  >  **调查** 。
+2. 转到 **威胁管理** \> **调查**。
 
-3. 在调查列表中，选择 " **ID** " 列中的项目。 
+3. 在调查列表中，选择 " **ID** " 列中的项目。
 
 4. 选择 " **操作** " 选项卡。
 
 5. 选择列表项。  (这将激活 "批准" 和 "拒绝" 按钮。 ) 
 
-6. 查看您选择的项目 () 的可用信息，然后批准或拒绝该操作 (s) 。 
+6. 查看您选择的项目 () 的可用信息，然后批准或拒绝该操作 (s) 。
    - **批准** 可开始进行修正。
    - **拒绝** 无需进一步操作
 

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解 Microsoft 365 组、团队和 SharePoint 协作的合规性选项。
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377529"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613626"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 组、团队和 SharePoint 协作的合规性选项
 
@@ -84,7 +84,7 @@ Microsoft 365 提供了全套工具，以在用户协作的同时保持合规性
 
 其他资源：
 
-- [了解敏感度标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
+- [了解敏感性标签](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)
 
 
 ## <a name="information-protection"></a>信息保护
@@ -113,8 +113,10 @@ DLP 策略可防止在 SharePoint、Exchange 和团队之间意外共享敏感�
 
 ## <a name="related-topics"></a>相关主题
 
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
+
 [Exchange Online 的安全性和合规性](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [保护信息](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

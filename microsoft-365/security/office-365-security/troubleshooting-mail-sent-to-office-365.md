@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供有关将电子邮件发送到 Microsoft 365 中的收件箱的问题的疑难解答信息 & 批量邮寄到 Microsoft 365 客户的最佳实践。
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568550"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615398"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>有关发送到 Microsoft 365 的邮件的疑难解答
 
@@ -92,11 +92,11 @@ EOP 筛选技术旨在为 Microsoft 365 以及其他 Microsoft 产品（如 Exch
 
 正确：
 
-> 发件人： marketing@shoppershandbag.com <br/> 主题：已更新圣诞节的目录！
+> 发件人： marketing@shoppershandbag.com <br> 主题：已更新圣诞节的目录！
 
 不正确：
 
-> 发件人： someone@outlook.com <br/> 主题： 目录
+> 发件人： someone@outlook.com <br> 主题： 目录
 
 越容易让人知道您是谁、在做什么，您在通过大部分垃圾邮件筛选器传送邮件时遇到的困难就会越少。
 

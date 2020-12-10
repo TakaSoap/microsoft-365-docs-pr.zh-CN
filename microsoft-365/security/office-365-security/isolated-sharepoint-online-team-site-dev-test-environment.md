@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：在 Microsoft 365 开发/测试环境中配置与组织的其余部分隔离的 SharePoint Online 团队网站。
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199657"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616484"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>独立的 SharePoint Online 团队网站开发/测试环境
 
@@ -35,9 +35,7 @@ Microsoft 365 中的 SharePoint Online 团队网站是使用通用文档库、On
 对 SharePoint Online 团队网站的访问权限以及用户可以执行的操作由 SharePoint 组和权限级别控制。 默认情况下，SharePoint Online 网站有三种访问级别：
 
 - **成员**：可以在网站上查看、创建和修改资源。
-
 - **所有者**：可完全控制网站，包括能够更改权限。
-
 - **访问者**：只能在网站上查看资源。
 
 本文将指导您完成对名为 ProjectX 的机密研究项目的独立 SharePoint Online 团队网站的配置。 访问要求为：
@@ -135,15 +133,15 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 引起
 
-- ProjectX 访问组包含潜在客户设计人员和潜在客户研究工具用户帐户
+- ProjectX-Members 访问组包含潜在客户设计人员和潜在客户研究人员用户帐户
 
-- ProjectX 访问组包含试用订阅的全局管理员帐户
+- ProjectX-Admins 访问组包含试用订阅的全局管理员帐户
 
-- ProjectX 访问组包含开发副总裁用户帐户
+- ProjectX-Viewers 访问组包含开发副总裁用户帐户
 
 图1显示了访问组及其成员资格。
 
-**图1**
+**图 1**：
 
 ![适用于独立 SharePoint Online 组网站的 Microsoft 365 组及其成员资格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,57 +149,57 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 若要为 ProjectX 创建 SharePoint Online 团队网站，请执行以下操作：
 
-1. 使用本地计算机上的浏览器 (轻量配置) 或在 CLIENT1 (模拟企业配置) 上，使用全局管理员帐户登录 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。
+1. 使用本地计算机上的浏览器 (轻量配置) 或在 CLIENT1 (模拟企业配置) 上，使用全局管理员帐户登录 Microsoft 365 管理中心 (<https://admin.microsoft.com>) 。
 
-2. 在磁贴列表中，单击“SharePoint”****。
+2. 在磁贴列表中，单击“SharePoint”。
 
-3. 在浏览器上的新“SharePoint”选项卡中，单击“+ 创建网站”****。
+3. 在浏览器上的新“SharePoint”选项卡中，单击“+ 创建网站”。
 
-4. 在“团队网站名称”**** 中，键入“ProjectX”****。 在 " **隐私设置**" 中，选择 " **仅专用成员可以访问此网站**"。
+4. 在“团队网站名称”中，键入“ProjectX”。 在 " **隐私设置**" 中，选择 " **仅专用成员可以访问此网站**"。
 
-5. 在“团队网站描述”**** 中，键入“ProjectX 的 SharePoint 网站”****，然后单击“下一步”****。
+5. 在“团队网站描述”中，键入“ProjectX 的 SharePoint 网站”，然后单击“下一步”。
 
-6. 在“想添加什么人员?”**** 窗格中，单击“完成”****。
+6. 在“想添加什么人员?”窗格中，单击“完成”。
 
-7. 在浏览器上的新“ProjectX-主页”**** 选项卡上，依次单击工具栏中的设置图标和“网站权限”****。
+7. 在浏览器上的新“ProjectX-主页”选项卡上，依次单击工具栏中的设置图标和“网站权限”。
 
-8. 在“网站权限”**** 窗格中，单击“高级权限设置”****。
+8. 在“网站权限”窗格中，单击“高级权限设置”。
 
-9. 在浏览器上的新“权限：**** Project X”选项卡中，单击“访问请求设置”****。
+9. 在浏览器上的新“权限：Project X”选项卡中，单击“访问请求设置”。
 
-10. 在“访问请求设置”**** 对话框中，取消选中“允许成员共享网站以及个别文件和文件夹”**** 和“允许访问请求”****（以便取消选中全部三个复选框），然后单击“确定”****。
+10. 在“访问请求设置”对话框中，取消选中“允许成员共享网站以及个别文件和文件夹”和“允许访问请求”（以便取消选中全部三个复选框），然后单击“确定”。
 
-11. 单击列表中的“ProjectX 成员”****。
+11. 单击列表中的“ProjectX 成员”。
 
 12. 在“**人员和组**”页面上，单击“**新建**”。
 
-13. 在“共享”**** 对话框中，键入并选择“ProjectX-Members”****，然后单击“共享”****。
+13. 在“共享”对话框中，键入并选择“ProjectX-Members”，然后单击“共享”。
 
 14. 单击浏览器上的后退按钮。
 
-15. 单击列表中的“ProjectX 所有者”****。
+15. 单击列表中的“ProjectX 所有者”。
 
 16. 在“**人员和组**”页面上，单击“**新建**”。
 
-17. 在“共享”**** 对话框中，键入并选择“ProjectX-Admins”****，然后单击“共享”****。
+17. 在“共享”对话框中，键入并选择“ProjectX-Admins”，然后单击“共享”。
 
 18. 单击浏览器上的后退按钮。
 
-19. 单击列表中的“ProjectX 访问者”****。
+19. 单击列表中的“ProjectX 访问者”。
 
-20. 在“人员和组”**** 页面上，单击“新建”****。
+20. 在“人员和组”页面上，单击“新建”。
 
-21. 在“共享”**** 对话框中，键入并选择“ProjectX-Viewers”****，然后单击“共享”****。
+21. 在“共享”对话框中，键入并选择“ProjectX-Viewers”，然后单击“共享”。
 
-22. 关闭浏览器上的“人员和组”**** 选项卡，单击浏览器上的“ProjectX-主页”**** 选项卡，然后关闭“网站权限”**** 窗格。
+22. 关闭浏览器上的“人员和组”选项卡，单击浏览器上的“ProjectX-主页”选项卡，然后关闭“网站权限”窗格。
 
 下面介绍了权限配置结果：
 
-- ProjectX Members SharePoint 组仅包含 ProjectX 成员访问组 (，其中仅包含领导设计人员和负责人研究人员用户帐户) 以及仅包含全局管理员用户帐户) 的 ProjectX 组 (。
+- "ProjectX Members" SharePoint 组仅包含 "ProjectX-Members" 访问组， (仅包含潜在客户设计人员和负责人研究工具用户帐户) 以及仅包含全局管理员用户帐户) 的 ProjectX 组 (。
 
-- ProjectX 所有者 SharePoint 组仅包含 ProjectX 访问组 (仅包含全局管理员用户帐户的) 。
+- ProjectX 所有者 SharePoint 组仅包含 ProjectX-Admins 访问组， (仅包含全局管理员用户帐户) 。
 
-- "ProjectX 访问者" SharePoint 组仅包含 "ProjectX" 访问组 (，其中仅包含 "开发副总裁" 用户帐户) 。
+- "ProjectX 访问者" SharePoint 组仅包含 "ProjectX-Viewers" 访问组， (仅包含 "开发副总裁" 用户帐户) 。
 
 - 成员无法修改网站级权限（只有 ProjectX-Admins 组成员才能修改）。
 
@@ -215,69 +213,69 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 现在，让我们来演示如何使用主导 Designer 用户帐户进行访问：
 
-1. 关闭浏览器中的“ProjectX-主页”**** 选项卡，然后单击浏览器中的“Microsoft Office 主页”**** 选项卡。
+1. 关闭浏览器中的“ProjectX-主页”选项卡，然后单击浏览器中的“Microsoft Office 主页”选项卡。
 
-2. 依次单击全局管理员名称和“注销”****。
+2. 依次单击全局管理员名称和“注销”。
 
-3. [https://admin.microsoft.com](https://admin.microsoft.com)使用主导 Designer 帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
+3. <https://admin.microsoft.com>使用主导 Designer 帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
-4. 在磁贴列表中，单击“SharePoint”****。
+4. 在磁贴列表中，单击“SharePoint”。
 
 5. 在浏览器的 "新建 **SharePoint** " 选项卡上，在 "搜索" 框中键入 **ProjectX** ，激活搜索，然后单击 " **ProjectX** 团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
 
-6. 单击设置图标。请注意，没有“网站权限”**** 选项。这没有问题，因为只有 ProjectX-Admins 组成员才能修改网站级权限
+6. 单击设置图标。请注意，没有“网站权限”选项。这没有问题，因为只有 ProjectX-Admins 组成员才能修改网站级权限
 
 7. 打开选择的记事本或文本编辑器。
 
 8. 复制 ProjectX 团队网站的 URL，并将其粘贴到记事本或文本编辑器中的新行上。
 
-9. 在浏览器上的新“ProjectX-主页”**** 选项卡中，单击“文档”****。
+9. 在浏览器上的新“ProjectX-主页”选项卡中，单击“文档”。
 
 10. 将 ProjectX 文档文件夹的 URL 复制并粘贴到记事本或文本编辑器中的新行上。
 
-11. 在浏览器上的新“ProjectX-文档”**** 选项卡中，依次单击“新建”>“Word 文档”****。
+11. 在浏览器上的新“ProjectX-文档”选项卡中，依次单击“新建”>“Word 文档”。
 
-12. 在页面上键入一些文本，等待状态显示为 " **已保存**"，单击浏览器上的 "后退" 按钮，然后刷新页面。 应该会看到“文档”**** 文件夹中有新的“Document.docx”****。
+12. 在页面上键入一些文本，等待状态显示为 " **已保存**"，单击浏览器上的 "后退" 按钮，然后刷新页面。 应该会看到“文档”文件夹中有新的“Document.docx”。
 
-13. 依次单击“Document.docx”**** 文档对应的省略号和“获取链接”****。
+13. 依次单击“Document.docx”文档对应的省略号和“获取链接”。
 
 14. 复制 **共享 "Document.docx"** 对话框中的 URL，并将其粘贴到记事本或文本编辑器中的新行上，然后关闭 **共享 "Document.docx"** 对话框。
 
-15. 关闭浏览器中的“ProjectX-文档”**** 和“SharePoint”**** 选项卡，然后单击“Microsoft Office 主页”**** 选项卡。
+15. 关闭浏览器中的“ProjectX-文档”和“SharePoint”选项卡，然后单击“Microsoft Office 主页”选项卡。
 
-16. 依次单击“Lead Designer”**** 名称和“注销”****。
+16. 依次单击“Lead Designer”名称和“注销”。
 
 现在，让我们来演示如何使用开发 VP 用户帐户进行访问：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用开发副总裁帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
+1. <https://admin.microsoft.com>使用开发副总裁帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
-2. 在磁贴列表中，单击“SharePoint”****。
+2. 在磁贴列表中，单击“SharePoint”。
 
 3. 在浏览器的 "新建 **SharePoint** " 选项卡上，在 "搜索" 框中键入 **ProjectX** ，激活搜索，然后单击 " **ProjectX** 团队网站"。 您应该会在浏览器中看到一个用于 ProjectX 团队网站的新选项卡。
 
-4. 依次单击“文档”**** 和“Document.docx”**** 文件。
+4. 依次单击“文档”和“Document.docx”文件。
 
-5. 在浏览器上的“Document.docx”**** 选项卡中，尝试修改文本。应该会看到一条内容为“此文档为只读”**** 的消息。这属于正常情况，因为 Development VP 用户帐户仅拥有对网站的查看权限。
+5. 在浏览器上的“Document.docx”选项卡中，尝试修改文本。应该会看到一条内容为“此文档为只读”的消息。这属于正常情况，因为 Development VP 用户帐户仅拥有对网站的查看权限。
 
-6. 关闭浏览器中的“Document.docx”****、“ProjectX-文档”**** 和“SharePoint”**** 选项卡。
+6. 关闭浏览器中的“Document.docx”、“ProjectX-文档”和“SharePoint”选项卡。
 
-7. 依次单击“Microsoft Office 主页”**** 选项卡、“Development VP”**** 名称和“注销”****。
+7. 依次单击“Microsoft Office 主页”选项卡、“Development VP”名称和“注销”。
 
 现在，让我们使用没有权限的用户帐户演示访问权限：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用用户3帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
+1. <https://admin.microsoft.com>使用用户3帐户名称及其密码登录到 Microsoft 365 管理中心 () 。
 
-2. 在磁贴列表中，单击“SharePoint”****。
+2. 在磁贴列表中，单击“SharePoint”。
 
-3. 	在浏览器上的新“SharePoint”**** 选项卡中，在搜索框中键入“ProjectX”****，然后开始搜索。应该会看到一条内容为“这里没有与你的搜索相匹配的内容”**** 的消息。
+3. 	在浏览器上的新“SharePoint”选项卡中，在搜索框中键入“ProjectX”，然后开始搜索。应该会看到一条内容为“这里没有与你的搜索相匹配的内容”的消息。
 
-4. 将 ProjectX 网站的 URL 从记事本或文本编辑器的打开实例复制到浏览器的地址栏中，然后按“Enter”****。应该会看到“拒绝访问”**** 网页。
+4. 将 ProjectX 网站的 URL 从记事本或文本编辑器的打开实例复制到浏览器的地址栏中，然后按“Enter”。应该会看到“拒绝访问”网页。
 
-5. 将 ProjectX 文档文件夹的 URL 从记事本或文本编辑器复制到浏览器的地址栏中，然后按“Enter”****。应该会看到“拒绝访问”**** 网页。
+5. 将 ProjectX 文档文件夹的 URL 从记事本或文本编辑器复制到浏览器的地址栏中，然后按“Enter”。应该会看到“拒绝访问”网页。
 
-6. 将 Documents.docx 文件的 URL 从记事本或文本编辑器复制到浏览器的地址栏中，然后按“Enter”****。应该会看到“拒绝访问”**** 网页。
+6. 将 Documents.docx 文件的 URL 从记事本或文本编辑器复制到浏览器的地址栏中，然后按“Enter”。应该会看到“拒绝访问”网页。
 
-7. 关闭浏览器中的“SharePoint”**** 选项卡，然后依次单击“Microsoft Office 主页”**** 选项卡、“用户 3”**** 名称和“注销”****。
+7. 关闭浏览器中的“SharePoint”选项卡，然后依次单击“Microsoft Office 主页”选项卡、“用户 3”名称和“注销”。
 
 你的独立 SharePoint Online 网站现已准备好进行额外的实验。
 

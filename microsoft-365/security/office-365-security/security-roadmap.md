@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 团队提供的用于实施安全功能以保护您的 Microsoft 365 环境的主要建议。 '
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561690"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615800"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全路线图-前30天、90天及以上的首要优先级
 
@@ -77,7 +77,7 @@ ms.locfileid: "49561690"
 
 |区域|任务|
 |---|---|
-|安全管理|<ul><li>检查安全分数以了解针对你的环境的建议操作 ([https://securescore.office.com](https://securescore.office.com)) 。</li><li>继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。</li><li>查找并实施软件更新。</li><li>使用[Office 365 威胁智能](office-365-ti.md))  (包含的[攻击模拟器](attack-simulator.md)进行攻击模拟，以进行 spear 网络钓鱼、密码喷涂和强力密码攻击。</li><li>通过查看 "调查" 选项卡上的 "云应用安全" (中的内置报告来查找共享风险) 。</li><li>检查 [合规性管理器](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) 以查看适用于您的组织 (的规章的状态，如 GDPR、NIST 800-171) 。</li></ul>|
+|安全管理|<ul><li>检查安全分数以了解针对你的环境的建议操作 (<https://securescore.office.com>) 。</li><li>继续定期查看 Microsoft 365 安全中心、云应用安全性和 SIEM 工具中的仪表板和报告。</li><li>查找并实施软件更新。</li><li>使用[Office 365 威胁智能](office-365-ti.md))  (包含的[攻击模拟器](attack-simulator.md)进行攻击模拟，以进行 spear 网络钓鱼、密码喷涂和强力密码攻击。</li><li>通过查看 "调查" 选项卡上的 "云应用安全" (中的内置报告来查找共享风险) 。</li><li>检查 [合规性管理器](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) 以查看适用于您的组织 (的规章的状态，如 GDPR、NIST 800-171) 。</li></ul>|
 |威胁防护|为管理员帐户实施增强的保护： <ul><li>为管理员活动配置 (PAWs) 的 [特权访问工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) 。</li><li>配置 [AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>配置安全信息和事件管理 (SIEM) 工具以收集 Office 365、云应用安全性和其他服务（包括 AD FS）中的日志记录数据。 审核日志仅存储90天的数据。 通过在 SIEM 工具中捕获此数据，可以将数据存储在更长的时间段中。</li></ul>|
 |标识和访问管理|<ul><li>为所有用户启用和强制进行 MFA。</li><li>实现一组 [条件访问和相关策略](microsoft-365-policies-configurations.md)。</li></ul>|
 |信息保护| 修改和实施信息保护策略。 这些资源包括示例： <ul><li>[针对 GDPR 的 Office 365 信息保护](https://aka.ms/o365gdpr)</li><li>[配置具有三层保护的 Teams](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> 使用 Microsoft 365 中存储的数据丢失防护策略和监视工具来存储在 Microsoft (365 中的数据，而不是云应用安全) 。 <p> 将云应用安全性与 Microsoft 365 结合使用，以获取高级警报 (功能，而不是数据丢失防护) 。|

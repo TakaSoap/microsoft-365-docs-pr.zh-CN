@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 在多处通过多种方法为 EOP 提供帮助，包括自助支持和协助支持。
-ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3d11abee08fa3fdd7dfb659bd90e29908f9e4bda
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920426"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614854"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 帮助与支持
 
@@ -62,7 +62,7 @@ ms.locfileid: "48920426"
 
 1. 登录到 Microsoft 365 管理中心。
 
-2. 有关一般产品问题，请转到 **支持** \> **客户支持** \> **电话技术支持** 。
+2. 有关一般产品问题，请转到 **支持** \> **客户支持** \> **电话技术支持**。
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
@@ -76,13 +76,13 @@ Microsoft 针对全球产品支持提供本地或免费电话号码。 很多支
 
 |“国家或地区”|预购买和帐单问题|技术支持问题|
 |---|---|---|
-|巴西|免费电话：08007621146 <br/> 本地：1147001999|相同|
-|法国|免费电话： 0805 540 594 <br/> 本地： 01 57 32 42 97|相同|
-|德国|免费电话： 0800 589 2332 <br/>  本地： 069 380 789 508|相同|
-|日本|免费电话：0120-628860 <br/> 本地：343326257|免费电话：0120-996680 <br/> 本地：357679793|
-|韩国|免费电话：080-495-0880 <br/> 本地：234831937|相同|
-|西班牙|免费电话： 900 814 197 <br/> 本地： 912 718 160|相同|
-|英国|免费电话： 0800 032 6417 <br/> 本地： 0203 450 6455|相同|
+|巴西|免费电话：08007621146 <br> 本地：1147001999|相同|
+|法国|免费电话： 0805 540 594 <br> 本地： 01 57 32 42 97|相同|
+|德国|免费电话： 0800 589 2332 <br>  本地： 069 380 789 508|相同|
+|日本|免费电话：0120-628860 <br> 本地：343326257|免费电话：0120-996680 <br> 本地：357679793|
+|韩国|免费电话：080-495-0880 <br> 本地：234831937|相同|
+|西班牙|免费电话： 900 814 197 <br> 本地： 912 718 160|相同|
+|英国|免费电话： 0800 032 6417 <br> 本地： 0203 450 6455|相同|
 |美国|免费电话：1-877-913-2707|免费电话：1-800-865-9408|
 |
 

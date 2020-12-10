@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357233"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615548"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的新增功能
 
@@ -41,7 +41,7 @@ ms.locfileid: "49357233"
 > [!TIP]
 > 尚不具有 Microsoft Defender for Office 365 吗？ [联系 sales 以开始试用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
-## <a name="november-2020"></a>2020 年 11 月
+## <a name="november-2020"></a>2020年11月
 
 - 更新了审核中的导出限制 > 操作中心 > 的邮件提交和操作日志中的更正 (Defender for Office 365 计划 2) 
 
@@ -56,7 +56,7 @@ ms.locfileid: "49357233"
 ## <a name="julyaugust-2020"></a>7月/8 月2020
 
 - 体验 (Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的求职体验改进](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md) 
+- [使用预设安全策略轻松应用推荐的设置](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>3月/4 月2020
 
@@ -71,7 +71,7 @@ ms.locfileid: "49357233"
   - 高级不筛选 (这些是一些高级筛选选项，其中包括不包含、不包含等。 ) 
   - 精确的时间筛选器 (日、小时、半小时) 
 
-- **事件** 小组件现在是 **操作中心** 小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 "**威胁管理**  >  **检查**"。 )  (Microsoft Defender for Office 365 Plan 2) 
+- **事件** 小组件现在是 **操作中心** 小组件。  (若要查看安全小部件，请在安全 & 合规性中心中，转到 " **威胁管理** \> **检查**"。 )  (Microsoft Defender for Office 365 Plan 2) 
 
 - [Microsoft 365 中的安全文档](safe-docs.md) **(预览)**
 
@@ -105,7 +105,7 @@ ms.locfileid: "49357233"
 
 - [查看有关仿冒 url 的数据，然后单击 "判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or plan 2) 
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 计划 1 和计划 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 计划1和计划2
 
 您是否知道 Microsoft Defender for Office 365 在两个计划中可用？ [了解有关每个计划包含的内容的详细信息](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 

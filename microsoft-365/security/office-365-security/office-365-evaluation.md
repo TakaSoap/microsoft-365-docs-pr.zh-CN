@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562984"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614794"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>评估 Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->评估 Microsoft Defender for Office 365 不久将在公共预览版中提供此预览版本，但不提供服务级别协议。 某些功能可能不受支持或可能具有受约束的功能。
+> [!IMPORTANT]
+> 评估 Microsoft Defender for Office 365 将很快处于公共预览版中。 提供此预览版本时没有服务级别协议。 某些功能可能不受支持或可能具有受约束的功能。
 
 进行全面的安全产品评估有助于向您提供有关升级和购买的有根据的决策。 它有助于试用安全产品的功能，以评估如何帮助安全操作团队在日常任务中进行评估。
 
@@ -73,7 +73,7 @@ ms.locfileid: "49562984"
 
 若要获取 Microsoft Defender for Office 365 试用版许可证，您需要具有 " **记帐管理员" 角色** 或 " **全局管理员" 角色**。 向具有全局管理员角色的用户请求权限。 [了解订阅和许可证](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-拥有适当的角色后，推荐的路径是获取 Microsoft 365 管理中心内的 Microsoft Defender for Office 365 的试用许可证，方法是转到帐单 > 购买服务 (计划 2) 。 试用版包括30天免费试用版，25个许可证。 [获取 Microsoft Defender For Office 365 (Plan 2) 试用版 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。 
+拥有适当的角色后，推荐的路径是获取 Microsoft 365 管理中心内的 Microsoft Defender for Office 365 的试用许可证，方法是转到帐单 > 购买服务 (计划 2) 。 试用版包括30天免费试用版，25个许可证。 [获取 Microsoft Defender For Office 365 (Plan 2) 试用版 ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 
 你将有一个为期30天的窗口，评估版将对高级威胁进行监控和报告。 如果你想要使用完整的 Defender for Office 365 功能，你也可以选择购买付费订阅。
 
@@ -81,13 +81,14 @@ ms.locfileid: "49562984"
 
 Exchange Online 角色是在评估模式下设置适用于 Office 365 的 Defender 所必需的。 以下角色是必需的：
 
-|任务 | Role |
-|-----| -----|
-| 获取免费试用版或购买 Microsoft Defender for Office 365 (Plan 2) | 帐单管理员角色或全局管理员角色|
-| 创建评估策略| 远程和接受域角色;安全管理员角色|
-| 编辑评估策略 | 远程和接受域角色;安全管理员角色 |
-| 删除评估策略 | 远程和接受域角色;安全管理员角色 |
-|查看评估报告 | 安全管理员角色或安全读者角色|
+|任务|Role|
+|---|---|
+|获取免费试用版或购买 Microsoft Defender for Office 365 (Plan 2) |帐单管理员角色或全局管理员角色|
+|创建评估策略|远程和接受域角色;安全管理员角色|
+|编辑评估策略|远程和接受域角色;安全管理员角色|
+|删除评估策略|远程和接受域角色;安全管理员角色 |
+|查看评估报告|安全管理员角色或安全读者角色|
+|
 
 ### <a name="enhanced-filtering"></a>增强的筛选
 
@@ -107,7 +108,7 @@ Exchange Online 角色是在评估模式下设置适用于 Office 365 的 Defend
 
 支持的电子邮件路由方案包括：
 
-- **第三方合作伙伴和/或本地服务提供商**：要评估的入站连接器使用第三方提供程序，或使用的是本地电子邮件安全解决方案的解决方案。  
+- **第三方合作伙伴和/或本地服务提供商**：要评估的入站连接器使用第三方提供程序，或使用的是本地电子邮件安全解决方案的解决方案。
 - **仅 Microsoft Exchange Online Protection**：要评估的租户使用 Office 365 for email Security 和 Mail EXCHANGE (MX) 记录指向 Microsoft。
 
 ### <a name="email-security-gateway"></a>电子邮件安全网关
@@ -154,7 +155,7 @@ Microsoft Defender for Office 365 评估报告每天生成一次。 可能需要
 
 ## <a name="evaluate-capabilities"></a>评估功能
 
-生成评估报告后，请参阅组织中的电子邮件和协作工作区中确定了多少高级威胁链接、高级威胁附件和潜在 impersonations。  
+生成评估报告后，请参阅组织中的电子邮件和协作工作区中确定了多少高级威胁链接、高级威胁附件和潜在 impersonations。
 
 试用期到期后，你可以继续访问90天的报告。 但是，它不会收集任何详细信息。 如果你想要在试用期过期后继续使用 Microsoft Defender for Office 365，请确保 [购买付费订阅 For Microsoft defender For office 365 (Plan 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 

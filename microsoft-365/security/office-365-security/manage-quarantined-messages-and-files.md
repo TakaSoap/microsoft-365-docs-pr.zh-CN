@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看和管理所有用户的隔离邮件。 具有 Microsoft Defender for Office 365 的组织中的管理员还可以管理 SharePoint Online、OneDrive for Business 和 Microsoft 团队中的隔离文件。
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357129"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616772"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中以管理员身份管理已隔离邮件和文件
 
@@ -44,7 +44,7 @@ ms.locfileid: "49357129"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要先分配权限，然后才能以管理员身份管理隔离。权限由 Security & 合规中心中的 **隔离** 角色控制。 默认情况下，此角色分配给 " **组织管理** " (全局管理员) 、" **隔离管理员**" 和 "安全 **管理员** 角色组" 安全 & 合规性中心。 有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+- 您需要先分配权限，然后才能以管理员身份管理隔离。权限由 Security & 合规中心中的 **隔离** 角色控制。 默认情况下，此角色分配给 " **组织管理** " (全局管理员) 、" **隔离管理员**" 和 "安全 **管理员** 角色组" 安全 & 合规性中心。 有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在被自动删除之前，隔离的邮件将保留默认的一段时间：
 
@@ -93,7 +93,7 @@ ms.locfileid: "49357129"
 
    - **隔离原因**：
      - **策略**：邮件与邮件流规则的条件相匹配 (也称为传输规则) 。
-     - **大量邮件**
+     - **群发**
      - **网络钓鱼**：垃圾邮件筛选器判定为 **网络钓鱼电子邮件** 或反钓鱼防护隔离了邮件 ([欺骗设置](set-up-anti-phishing-policies.md#spoof-settings) 或 [模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) 。
      - **恶意软件**
      - **垃圾邮件**
@@ -103,12 +103,12 @@ ms.locfileid: "49357129"
      - **反恶意软件策略**
      - **安全附件策略**
      - **反网络钓鱼策略**
-     - **托管内容筛选器策略**（反垃圾邮件策略）
+     -  (反垃圾邮件策略) 的 **托管内容筛选器策略**
      - **传输规则**
 
    - **电子邮件收件人**：所有用户或仅发送给你的邮件。 最终用户只能管理发送给他们的隔离邮件。
 
-   若要清除筛选器，请单击“**清除**”。 若要隐藏筛选器浮出控件，请再次单击“筛选器”。
+   若要清除筛选器，请单击“清除”。 若要隐藏筛选器浮出控件，请再次单击“筛选器”。
 
 5. 使用“结果排序依据”（默认为“邮件 ID”按钮）和相应值查找特定邮件。 不支持通配符。 可以按下面的值搜索：
 
@@ -118,12 +118,12 @@ ms.locfileid: "49357129"
 
    - **发件人电子邮件地址**：单个发件人的电子邮件地址。
 
-   - **策略名称**：使用邮件的完整策略名称。 搜索不区分大小写。
+   - **策略名称**：使用邮件的整个策略名称。 搜索不区分大小写。
 
    - **收件人电子邮件地址**：单个收件人的电子邮件地址。
 
    - **主题**：使用邮件的整个主题。 搜索不区分大小写。
-  
+
    - **策略名称**：负责隔离邮件的策略的名称。
 
    输入搜索条件后，单击“刷新” ![“刷新”按钮](../../media/scc-quarantine-refresh.png) 来筛选结果。
@@ -165,7 +165,7 @@ ms.locfileid: "49357129"
   - 选择下列选项之一：
     - **将邮件释放给所有收件人**
     - **将邮件释放给特定收件人**
-    - **向其他人释放邮件**：请注意，不支持将恶意邮件释放给除原始收件人以外的其他人。 
+    - **向其他人释放邮件**：请注意，不支持将恶意邮件释放给除原始收件人以外的其他人。
 
   完成后，单击“释放邮件”。
 

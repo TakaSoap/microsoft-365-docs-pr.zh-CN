@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 管理员可以了解如何设置单独的 Exchange Online Protection (EOP) 以保护本地电子邮件环境。
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197163"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615668"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>设置独立的 EOP 服务
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197163"
 本主题介绍如何设置独立的 Exchange Online Protection (EOP) 。 如果您已从 Office 365 域向导登录到这里，则假如您不想使用 Exchange Online Protection，请返回到 Office 365 域向导。 若要详细了解如何配置连接器，请参阅[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 > [!NOTE]
-> 此主题假设你拥有内部部署邮箱，并且想使用 EOP 对其进行保护，这称为独立方案。 如果要使用 Exchange Online 在云中托管所有邮箱，则不必完成本主题中的所有步骤。 转到 [比较 Exchange Online 计划](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) 以注册和购买云邮箱。 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server 混合部署](https://docs.microsoft.com/exchange/exchange-hybrid) 介绍了混合邮件流，并提供了指向说明如何进行设置的资源的链接。
+> 此主题假设你拥有内部部署邮箱，并且想使用 EOP 对其进行保护，这称为独立方案。 如果要使用 Exchange Online 在云中托管所有邮箱，则不必完成本主题中的所有步骤。 转到 [比较 Exchange Online 计划](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) 以注册和购买云邮箱。
+>
+> 如果你想在内部部署和云中分别托管一部分邮箱，这称为混合方案。 这需要更高级的邮件流设置。 [Exchange Server 混合部署](https://docs.microsoft.com/exchange/exchange-hybrid) 介绍了混合邮件流，并提供了指向说明如何进行设置的资源的链接。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>在开始之前，您需要知道什么？
 
@@ -96,4 +98,6 @@ ms.locfileid: "48197163"
 - 如果您想进行出站电子邮件测试，可以发送组织中一个用户的电子邮件到基于 Web 的电子邮件帐户并确认是否收到邮件。
 
 > [!TIP]
-> 完成安装后，您无需进行其他操作，EOP 即可删除垃圾邮件和恶意软件。 EOP 会自动删除垃圾邮件和恶意软件。 但是，您可以根据业务要求对设置进行微调。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md) 和 [配置欺骗智能](learn-about-spoof-intelligence.md)。 <br/><br/> 现在，您的服务正在运行，我们建议您阅读 [有关配置 EOP 的最佳实践](best-practices-for-configuring-eop.md)，其中介绍了设置 EOP 后建议的设置和注意事项。
+> 完成安装后，您无需进行其他操作，EOP 即可删除垃圾邮件和恶意软件。 EOP 会自动删除垃圾邮件和恶意软件。 但是，您可以根据业务要求对设置进行微调。 有关详细信息，请参阅 [Office 365 中的反垃圾邮件和反恶意软件保护](anti-spam-and-anti-malware-protection.md) 和 [配置欺骗智能](learn-about-spoof-intelligence.md)。
+>
+> 现在，您的服务正在运行，我们建议您阅读 [有关配置 EOP 的最佳实践](best-practices-for-configuring-eop.md)，其中介绍了设置 EOP 后建议的设置和注意事项。

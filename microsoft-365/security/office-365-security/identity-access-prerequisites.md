@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558546"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616556"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>实现标识和设备访问策略的先决条件工作
 
@@ -38,7 +38,7 @@ ms.locfileid: "49558546"
 - 混合使用传递身份验证 (PTA) 
 - 联合
 
-下表详细介绍了适用于所有标识模型的先决条件功能及其配置，但注明的情况除外。 
+下表详细介绍了适用于所有标识模型的先决条件功能及其配置，但注明的情况除外。
 
 |配置|Exceptions|
 |---|:---:|
@@ -76,7 +76,7 @@ ms.locfileid: "49558546"
 
 ### <a name="recommended-email-clients"></a>推荐的电子邮件客户端
 
-以下电子邮件客户端支持新式身份验证和条件访问。 
+以下电子邮件客户端支持新式身份验证和条件访问。
 
 |平台|客户端|版本/说明|
 |---|---|---|
@@ -116,9 +116,9 @@ ms.locfileid: "49558546"
 
 以下是一些附加建议：
 
-- 使用 [AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 来减少永久管理帐户的数量。 
-- [使用 "特权访问管理](../../compliance/privileged-access-management-overview.md) " 保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的情况。 
-- 创建和使用仅分配了 [Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的单独帐户进行管理*。 管理员应拥有自己的用户帐户以进行常规非管理，并且仅在必要时才使用管理帐户来完成与其角色或作业功能相关联的任务。 
+- 使用 [AZURE AD 特权标识管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 来减少永久管理帐户的数量。
+- [使用 "特权访问管理](../../compliance/privileged-access-management-overview.md) " 保护您的组织免受可能使用现有特权管理员帐户访问敏感数据或访问关键配置设置的用户泄露的情况。
+- 创建和使用仅分配了 [Microsoft 365 管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的单独帐户进行管理*。 管理员应拥有自己的用户帐户以进行常规非管理，并且仅在必要时才使用管理帐户来完成与其角色或作业功能相关联的任务。
 - 遵循在 Azure AD 中保护特权帐户的 [最佳做法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
 ## <a name="next-step"></a>后续步骤

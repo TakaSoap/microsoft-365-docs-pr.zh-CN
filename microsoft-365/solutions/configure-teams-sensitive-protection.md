@@ -3,7 +3,7 @@ title: 配置具有敏感数据保护的团队
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有敏感数据保护的团队。
-ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528190"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612948"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>配置具有敏感数据保护的团队
 
@@ -109,8 +109,8 @@ ms.locfileid: "46528190"
 
 |标签设置|SharePoint 网站设置|
 |:------------|:----------------------|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**已选中|**新来宾和现有来宾**（新团队默认值）|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**未选中|**仅组织内部人员**|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 已选中|**新来宾和现有来宾**（新团队默认值）|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 未选中|**仅组织内部人员**|
 
 更新网站设置
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
@@ -136,9 +136,9 @@ ms.locfileid: "46528190"
 
 配置仅限所有者的网站共享
 1. 在 Teams 中，导航至要更新团队的“**常规**”标签。
-2. 在团队的工具栏中，单击“文件”****。
-3. 单击省略号，然后单击“在 SharePoint 中打开”****。
-4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”****。
+2. 在团队的工具栏中，单击“文件”。
+3. 单击省略号，然后单击“在 SharePoint 中打开”。
+4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”。
 5. 在“网站权限”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
 6. 在“**共享权限**”下，选择选择“**网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站**”，然后单击“**保存**”。
 

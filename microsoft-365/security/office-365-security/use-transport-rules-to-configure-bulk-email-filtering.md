@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用邮件流规则 (传输规则) 在 Exchange Online Protection (EOP) 中标识和筛选批量邮件 (灰色邮件) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600305"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615632"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用邮件流规则筛选批量电子邮件
 
@@ -39,7 +39,7 @@ ms.locfileid: "48600305"
 - 您需要先分配权限，然后才能执行这些过程：
 
   - 在 Exchange Online 中，请参阅在 Exchange Online 中的 [功能权限](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)中的 "邮件流" 条目。
-  
+
   - 在独立 EOP 中，您需要 "传输规则" 角色，默认情况下该角色分配给 OrganizationManagement、ComplianceManagement 和 Ecm.recordsmanagement 角色。 有关详细信息，请参阅 [独立 EOP 中的权限](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色组中的成员列表](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 若要在 Exchange Online 中打开 EAC，请参阅 exchange [online 中的 exchange 管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在独立 EOP 中打开 EAC，请参阅 [独立 EOP 中的 Exchange 管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
@@ -56,7 +56,7 @@ ms.locfileid: "48600305"
 
 - 用于标识示例中的批量邮件的单词和文本模式列表不详尽;您可以根据需要添加和删除条目。 但是，它们是一个很棒的起点。
 
-- 在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码*后*，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
+- 在邮件已通过 MIME 内容传输编码方法（用于以 ACSII 文本方式在 SMTP 服务器之间传输二进制消息）解码 *后*，搜索邮件中主题或其他头字段中的字词或文本模式。不能使用条件或例外来搜索邮件中主题或其他头字段的原始（通常为 Base64）编码值。
 
 - 下面的过程将批量邮件标记为您的整个组织的垃圾邮件。 但是，您可以添加另一个条件，以便仅将这些规则应用于特定的收件人，以便您可以对一些高度目标的用户使用严格筛选，而其余用户 (大多数用户在其注册) 的批量电子邮件不会受到影响。
 
@@ -70,7 +70,7 @@ ms.locfileid: "48600305"
 
    - **名称**：输入规则的唯一描述性名称。
 
-   - 单击“其他选项”****。
+   - 单击“其他选项”。
 
    - **在以下情况下应用此规则**：配置以下设置之一，以使用正则表达式 (RegEx) 或字词或短语查找邮件中的内容：
 
@@ -113,9 +113,9 @@ ms.locfileid: "48600305"
 
        完成后，请单击 **"确定"**。
 
-   - **执行以下**操作：选择 " **修改邮件属性** \> **"。 (SCL) 设置垃圾邮件可信度级别 **。 在出现的 " **指定 SCL** " 对话框中，配置以下设置之一：
+   - **执行以下** 操作：选择 " **修改邮件属性** \> **"。 (SCL) 设置垃圾邮件可信度级别**。 在出现的 " **指定 SCL** " 对话框中，配置以下设置之一：
 
-     - 若要将邮件标记为 **垃圾**邮件，请选择 " **6**"。 您为反垃圾邮件策略中的 **垃圾** 邮件筛选 verdicts 配置的操作将应用于邮件， (默认值将 **邮件移动到 "垃圾邮件" 文件夹**) 。
+     - 若要将邮件标记为 **垃圾** 邮件，请选择 " **6**"。 您为反垃圾邮件策略中的 **垃圾** 邮件筛选 verdicts 配置的操作将应用于邮件， (默认值将 **邮件移动到 "垃圾邮件" 文件夹**) 。
 
      - 若要将邮件标记为 **高可信度垃圾邮件** ，请选择 **9**。 您为 **高可信度垃圾** 邮件筛选 verdicts 配置的操作将应用于您的反垃圾邮件策略中的邮件， (默认值将 **邮件移动到 "垃圾邮件" 文件夹**) 。
 
@@ -131,13 +131,13 @@ ms.locfileid: "48600305"
 New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
-本示例创建一个名为 "批量电子邮件筛选-RegEx" 的新规则，该规则使用本主题前面的相同列表中的正则表达式将邮件设置为 **垃圾**邮件。
+本示例创建一个名为 "批量电子邮件筛选-RegEx" 的新规则，该规则使用本主题前面的相同列表中的正则表达式将邮件设置为 **垃圾** 邮件。
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
 ```
 
-本示例将创建一个名为 "批量电子邮件筛选-词" 的新规则，该规则使用主题中前面的相同单词列表将邮件设置为 **高可信度垃圾**邮件。
+本示例将创建一个名为 "批量电子邮件筛选-词" 的新规则，该规则使用主题中前面的相同单词列表将邮件设置为 **高可信度垃圾** 邮件。
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9

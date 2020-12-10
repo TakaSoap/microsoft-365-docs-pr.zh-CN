@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 有关 Microsoft 365 中的协作工具的生命周期管理选项的精益
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377183"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613016"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>为 Microsoft 365 组和 Microsoft 团队规划组织和生命周期管理
 
@@ -74,3 +74,9 @@ Microsoft 365 组提供了一组丰富的工具来实施您的组织所需的治
 - 可以通过组所有者或管理员在30天内恢复删除的任何组。
 
 过期策略是通过确保删除不再使用的组来限制组数量剧增的一种有效方式。 如果要创建组过期策略，请参阅 [Microsoft 365 组过期策略](microsoft-365-groups-expiration-policy.md)。
+
+## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)

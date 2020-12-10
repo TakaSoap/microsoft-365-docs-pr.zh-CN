@@ -21,12 +21,12 @@ description: 开始在 Microsoft Defender for Office 365 中使用自动调查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357739"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614830"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自动调查和响应 (空中) 
 
@@ -124,7 +124,7 @@ Microsoft 365 提供了许多内置的警报策略，可帮助确定 Exchange �
 |任务|角色 (s) 必需|
 |---|---|
 |设置空中功能|以下角色之一： <ul><li>全局管理员</li><li>安全管理员</li></ul> <p> 可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中分配这些角色。|
-|开始自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中分配的以下角色之一： <ul><li>全局管理员</li><li>安全管理员</li><li>安全读取者 <br/>--- 和 ---</li><li>搜索和清除 (仅在 [安全 & 合规中心](permissions-in-the-security-and-compliance-center.md)中分配此角色。 您可能需要在其中创建新的角色组，并将搜索和清除角色添加到该新角色组。</li></ul>|
+|开始自动调查 <p> --- 或 --- <p> 批准或拒绝建议的操作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合规性中心](permissions-in-the-security-and-compliance-center.md)中分配的以下角色之一： <ul><li>全局管理员</li><li>安全管理员</li><li>安全读取者 <br> --- 和 --- </li><li>搜索和清除 (仅在 [安全 & 合规中心](permissions-in-the-security-and-compliance-center.md)中分配此角色。 您可能需要在其中创建新的角色组，并将搜索和清除角色添加到该新角色组。</li></ul>|
 |
 
 ## <a name="required-licenses"></a>必需的许可证

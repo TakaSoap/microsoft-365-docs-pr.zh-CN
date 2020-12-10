@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用新的安全仪表板查看 Office 365 的威胁防护状态，查看安全警报并对其采取操作。
-ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6a2669e3e36ee9238de99014a6c899df75204726
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877321"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615812"
 ---
 # <a name="security-dashboard"></a>安全仪表板
 
@@ -40,7 +40,7 @@ ms.locfileid: "48877321"
 
 根据您组织的订阅包括的内容，安全仪表板包含多个小部件，如威胁管理摘要、威胁保护状态、全球每周威胁检测、恶意软件等，如以下各节中所述。
 
-若要查看安全仪表板，请在 [安全性 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)中，转到 " **威胁管理** " \> **仪表板** 。
+若要查看安全仪表板，请在 [安全性 & 合规性中心](../../compliance/go-to-the-securitycompliance-center.md)中，转到 " **威胁管理**" \> **仪表板**。
 
 > [!NOTE]
 > 您必须是全局管理员、安全管理员或安全读者才能查看安全仪表板。 某些小部件需要其他权限才能查看。 若要了解详细信息，请参阅 [安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -55,7 +55,7 @@ ms.locfileid: "48877321"
 
 |Office 365 E3|Office 365 E5|
 |---|---|
-|阻止的恶意软件邮件<br/>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br>|阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url|
+|阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br><br><br><br>|阻止的恶意软件邮件<br>阻止的仿冒邮件<br>用户报告的邮件<br>已阻止零天恶意软件<br>检测到高级网络钓鱼邮件<br>阻止的恶意 Url|
 
 若要查看或访问 "威胁管理摘要" 小部件，您必须具有查看适用于 Office 365 的 Defender 的权限报告。 若要了解详细信息，请参阅 [查看适用于 Office 的 Defender 365 报告所需的权限是什么？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)。
 
@@ -69,8 +69,8 @@ ms.locfileid: "48877321"
 
 |如果你的订阅包括 .。。|你将看到这些详细信息|
 |---|---|
-|EOP，但不是 Microsoft Defender for Office 365|由 EOP 检测并阻止的恶意电子邮件。<br><br> 请参阅 [威胁防护状态报告 (EOP) ](view-email-security-reports.md#threat-protection-status-report)。|
-|Microsoft Defender for Office 365|EOP 和 Defender for Office 365 检测到并阻止了恶意内容和恶意电子邮件<br><br>由反恶意软件引擎阻止的包含恶意内容的独特电子邮件的聚合计数、[零小时自动清除](zero-hour-auto-purge.md)和 office 365 的 Defender for office 365 功能 (包括[在 office) 中](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)的[安全链接](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)和反网络钓鱼功能。<br><br>请参阅 [威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)。|
+|EOP，但不是 Microsoft Defender for Office 365|由 EOP 检测并阻止的恶意电子邮件。<p> 请参阅 [威胁防护状态报告 (EOP) ](view-email-security-reports.md#threat-protection-status-report)。|
+|Microsoft Defender for Office 365|EOP 和 Defender for Office 365 检测到并阻止了恶意内容和恶意电子邮件 <p> 由反恶意软件引擎阻止的包含恶意内容的独特电子邮件的聚合计数、[零小时自动清除](zero-hour-auto-purge.md)和 office 365 的 Defender for office 365 功能 (包括[在 office) 中](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)的[安全链接](atp-safe-links.md)、[安全附件](atp-safe-attachments.md)和反网络钓鱼功能。 <p> 请参阅 [威胁防护状态报告](view-reports-for-atp.md#threat-protection-status-report)。|
 
 若要查看或访问威胁防护状态小部件，您必须具有查看适用于 Office 365 的 Defender 的权限报告。 若要了解详细信息，请参阅 [查看适用于 Office 的 Defender 365 报告所需的权限？](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)
 

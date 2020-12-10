@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解 Microsoft 365 组、团队和 SharePoint 之间的设置交互
-ms.openlocfilehash: 3a6d4e057f88410a8808ea133bf7e579d0041228
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 23ef7a316417109ae51c221f1a25524dea3abeca
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377541"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613662"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-teams-and-sharepoint"></a>Microsoft 365 组、团队和 SharePoint 之间的设置交互
 
@@ -49,6 +49,10 @@ Microsoft 365 中的 Microsoft 365 组、Microsoft 团队和 SharePoint 的一�
 
 ## <a name="related-topics"></a>相关主题
 
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
+
 [与组织外部的人员进行协作](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 
-[管理 SharePoint 中的网站创建](https://docs.microsoft.com/sharepoint/manage-site-creation)
+[在 SharePoint 中管理网站创建](https://docs.microsoft.com/sharepoint/manage-site-creation)

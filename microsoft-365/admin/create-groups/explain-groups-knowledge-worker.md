@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何将 Microsoft 365 组解释为你的用户。
-ms.openlocfilehash: 179452800fb28c193622b47dce85dd6419ae5ac2
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554777"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613004"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>向你的用户介绍 Microsoft 365 组
 
@@ -38,6 +38,8 @@ ms.locfileid: "49554777"
 [![图像 desc ](../../media/03.png)](../../media/03.png#lightbox)
 
 如果你对用户进行培训以始终使用最符合其工作方式的组创建方法，当他们需要空间来与其他人进行协作时，可以帮助避免混淆和复制资源。 当用户变得更丰富时，他们将更好地理解与组一起提供的服务集合，并且不同的创建方法会导致相同的结果。
+
+您可以使用 [Microsoft 365 组 For Business 用户-PowerPoint 模板](https://www.microsoft.com/download/details.aspx?id=102396) 作为您的用户的培训演示文稿的起始点。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 了解如何通过 Microsoft Defender for Office 365 中的攻击模拟培训来模拟网络钓鱼攻击并向用户提供网络仿冒防御的培训。
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944428"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616100"
 ---
 # <a name="simulate-a-phishing-attack"></a>模拟网络钓鱼攻击
 
@@ -26,7 +26,7 @@ ms.locfileid: "48944428"
 
 若要启动模拟的网络钓鱼攻击，请导航到 [Microsoft 365 安全中心](https://security.microsoft.com/)。 在 " **电子邮件 & 协作** " 下，单击 " **攻击模拟器** " 并切换到 " [**模拟**](https://security.microsoft.com/attacksimulator?viewid=simulations) " 选项卡。
 
-在 " **模拟** " 下 **，选择 + 启动模拟** 。
+在 " **模拟** " 下 **，选择 + 启动模拟**。
 
 ![在 Microsoft 365 安全中心中启动模拟按钮](../../media/attack-sim-preview-launch.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "48944428"
 - **预测的泄露率** 预测基于此有效负载的人员在 Microsoft Defender for Office 365 客户之间的历史数据所占的百分比。
 - **模拟已启动** 计数此负载在其他模拟中使用的次数。
 - 通过 **筛选器** 提供的 **复杂性** 是根据有效负载中的指示目标为攻击目标的指示器数计算得出的。 更多指标导致较低的复杂性。
-- **Source** ，通过 **筛选器** 提供，指示有效负载是否已在你的租户上创建，或者是否是 Microsoft 的已预先存在的有效负载目录 (全局) 的一部分。
+- **Source**，通过 **筛选器** 提供，指示有效负载是否已在你的租户上创建，或者是否是 Microsoft 的已预先存在的有效负载目录 (全局) 的一部分。
 
 ![Microsoft 365 安全中心中的受攻击模拟培训中选定的有效负载](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ ms.locfileid: "48944428"
 
 ## <a name="audience-targeting"></a>访问群体设定
 
-现在是时候选择此模拟受众了。 您可以选择 **包括组织中的所有用户** 或 **仅包括特定的用户和组** 。 
+现在是时候选择此模拟受众了。 您可以选择 **包括组织中的所有用户** 或 **仅包括特定的用户和组**。
 
 当您选择 **仅包括特定的用户和组** 时，可以执行以下操作之一：
 
-- **添加用户** ，使您可以利用对租户的搜索以及高级搜索和筛选功能，如将最近3个月内未被模拟的用户作为目标。
+- **添加用户**，使您可以利用对租户的搜索以及高级搜索和筛选功能，如将最近3个月内未被模拟的用户作为目标。
   ![Microsoft 365 安全中心的攻击模拟培训中的用户筛选](../../media/attack-sim-preview-user-targeting.png)
 - **从 CSV 导入** 允许您导入此模拟的一组预定义用户。
 
@@ -94,8 +94,8 @@ ms.locfileid: "48944428"
 
 ## <a name="launch-details-and-review"></a>启动详细信息和评审
 
-现在，所有内容都已配置，您可以立即启动此模拟，也可以将其安排在更晚的日期。 您还需要选择何时结束此模拟。 我们将在所选时间之后停止捕获与此模拟的交互。 
+现在，所有内容都已配置，您可以立即启动此模拟，也可以将其安排在更晚的日期。 您还需要选择何时结束此模拟。 我们将在所选时间之后停止捕获与此模拟的交互。
 
 **启用区域感知时区传递** ，以便在员工的工作时间内根据区域将模拟的攻击邮件传递给员工。
 
-完成后，单击 " **下一步** " 并查看你的模拟的详细信息。 单击任意要返回的部件上的 " **编辑** "，并更改需要更改的任何详细信息。 完成后，单击 " **提交** "。
+完成后，单击 " **下一步** " 并查看你的模拟的详细信息。 单击任意要返回的部件上的 " **编辑** "，并更改需要更改的任何详细信息。 完成后，单击 " **提交**"。

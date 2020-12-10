@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解 Microsoft Defender for Office 365 计划中的威胁调查和响应功能。
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561251"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614770"
 ---
 # <a name="threat-investigation-and-response"></a>威胁调查和响应
 
@@ -110,11 +110,11 @@ Microsoft Defender for Office 365 使用基于角色的访问控制。 可以通
 
 |活动|角色和权限|
 |---|---|
-|使用威胁仪表板 (或新的 [安全仪表板](security-dashboard.md)) <br/> <br/>查看有关最近或当前威胁的信息|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|使用 [威胁资源管理器 (和实时检测) ](threat-explorer.md) 分析威胁|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|查看事件 (也称为调查)  <br/> 将电子邮件添加到事件|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** <br/>- **安全读者** <br/> <br/>可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|触发事件中的电子邮件操作 <br/> <br/> 查找和删除可疑电子邮件|以下各项之一： <br/>- **全局管理员**  <br/> - **安全管理员** 和 **搜索和清除** 角色<br/><br/>**全局管理员** 和 **安全管理员** 角色可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 () 中分配 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>必须在安全 & 合规性中心 () 中分配 **搜索和清除** 角色 [https://protection.office.com](https://protection.office.com) 。|
-|将 Microsoft Defender for Office 365 Plan 2 与 Microsoft Defender for Endpoint 集成  <br/><br/> 将 Microsoft Defender for Office 365 Plan 2 与 SIEM 服务器集成|**全局管理员** 或在任何 Azure Active Directory 中分配的 **安全管理员** 角色都 ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **外** ---<br/>在其他应用程序中分配的适当角色 (如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or SIEM server) |
+|使用威胁仪表板 (或新的 [安全仪表板](security-dashboard.md))  <p> 查看有关最近或当前威胁的信息|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 <https://admin.microsoft.com> 。|
+|使用 [威胁资源管理器 (和实时检测) ](threat-explorer.md) 分析威胁|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 <https://admin.microsoft.com> 。|
+|查看事件 (也称为调查)  <p> 将电子邮件添加到事件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员**</li><li>**安全读者**</li></ul> <p> 可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 管理中心 () 中为这些角色分配这些角色 <https://admin.microsoft.com> 。|
+|触发事件中的电子邮件操作 <p> 查找和删除可疑电子邮件|以下各项之一： <ul><li>**全局管理员**</li><li>**安全管理员** 和 **搜索和清除** 角色</li></ul> <p> **全局管理员** 和 **安全管理员** 角色可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 管理中心 () 中分配 <https://admin.microsoft.com> 。 <p> 必须在安全 & 合规性中心 () 中分配 **搜索和清除** 角色 <https://protection.office.com> 。|
+|将 Microsoft Defender for Office 365 Plan 2 与 Microsoft Defender for Endpoint 集成  <p> 将 Microsoft Defender for Office 365 Plan 2 与 SIEM 服务器集成|**全局管理员** 或在任何 Azure Active Directory 中分配的 **安全管理员** 角色都 (<https://portal.azure.com>) 或 Microsoft 365 管理中心 (<https://admin.microsoft.com>) 。 <p> --- **外** --- <p> 在其他应用程序中分配的适当角色 (如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) or SIEM server) 。|
 |
 
 ## <a name="next-steps"></a>后续步骤

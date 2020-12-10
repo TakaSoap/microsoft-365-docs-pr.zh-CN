@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理员可以了解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中提供的反网络钓鱼策略。
-ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568564"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615764"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反网络钓鱼策略
 
@@ -129,7 +129,6 @@ EOP 和 Microsoft Defender for Office 365 中的反网络钓鱼策略中提供�
 - 允许发件人在欺骗智能策略中进行欺骗。 当禁用未经身份验证的发件人标识时，此操作将阻止来自发件人的邮件中显示的 via 标记。 有关说明，请参阅 [在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
 
 - 为发件人域[配置电子邮件身份验证](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
-  
   - 对于发件人照片中的问号，SPF 或 DKIM 是最重要的。
   - 对于 via 标记，确认 DKIM 签名中的域，或 "发 **件人地址匹配** (" 或 "发件人地址中) 域的子域"。
 

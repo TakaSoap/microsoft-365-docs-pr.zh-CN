@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: 了解如何使用 Microsoft Defender for Office 365 计划2中的自动调查和响应功能，以加快检测和解决受危害的用户帐户的过程。
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357902"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616724"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>使用自动调查和响应解决已损坏的用户帐户
 
@@ -63,11 +63,11 @@ ms.locfileid: "49357902"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和调查受限制的用户
 
-有几个选项可用于导航到受限制的用户列表。 例如，在安全 & 合规性中心中，可以转到 "**威胁管理**"  >  **查看**  >  **受限制的用户**。 下面的过程介绍了如何使用 " **通知** " 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
+有几个选项可用于导航到受限制的用户列表。 例如，在安全 & 合规性中心中，可以转到 " **威胁管理**" \> **查看** \> **受限制的用户**。 下面的过程介绍了如何使用 " **通知** " 仪表板进行导航，这是查看可能已触发的各种警报的一种有效方式。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。
+1. 转到 <https://protection.office.com> 并登录。
 
-2. 在导航窗格中，选择 "**通知**  >  **仪表板**"。
+2. 在导航窗格中，选择 " **通知** \> **仪表板**"。
 
 3. 在 " **其他通知** " 小组件中，选择 " **受限用户**"。
 
@@ -81,7 +81,7 @@ ms.locfileid: "49357902"
 
 ### <a name="view-details-about-automated-investigations"></a>查看有关自动调查的详细信息
 
-自动调查开始后，您可以在安全 & 合规性中心中看到其详细信息和结果。 转到 "**威胁管理**  >  **调查**"，然后选择调查以查看其详细信息。
+自动调查开始后，您可以在安全 & 合规性中心中看到其详细信息和结果。 转到 " **威胁管理** \> **调查**"，然后选择调查以查看其详细信息。
 
 若要了解详细信息，请参阅 [查看调查的详细信息](air-view-investigation-results.md)。
 

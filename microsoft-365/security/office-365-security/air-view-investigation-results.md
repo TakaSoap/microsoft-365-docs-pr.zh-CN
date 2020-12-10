@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在 Microsoft 365 中进行自动调查的过程中和之后，您可以查看结果和主要发现。
 ms.date: 11/05/2020
-ms.openlocfilehash: 4dc74987619c3f958c874927af6e4240b9d7e154
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2018f008e043f36cd41047185f305209fcb725d7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357281"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615140"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中的自动调查的详细信息和结果
 
@@ -53,7 +53,7 @@ ms.locfileid: "49357281"
 
 ## <a name="view-details-of-an-investigation"></a>查看调查的详细信息
 
-1. 请转到 Security & 合规性中心 ([https://protection.office.com](https://protection.office.com)) 并登录。
+1. 请转到 Security & 合规性中心 (<https://protection.office.com>) 并登录。
 
 2. 执行下列操作之一：
 
@@ -77,7 +77,7 @@ ms.locfileid: "49357281"
 
 使用以下过程可查看与自动调查相关联的警报的详细信息。
 
-1. 请转到 Security & 合规性中心 ([https://protection.office.com](https://protection.office.com)) 并登录。
+1. 请转到 Security & 合规性中心 (<https://protection.office.com>) 并登录。
 
 2. 转到 **威胁管理** \> **调查**。
 

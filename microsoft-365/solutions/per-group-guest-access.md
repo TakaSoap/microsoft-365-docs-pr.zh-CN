@@ -1,5 +1,5 @@
 ---
-title: 阻止将来宾用户添加到特定组
+title: 阻止将来宾添加到特定组
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 了解如何阻止将来宾用户添加到特定组
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: 了解如何阻止将来宾添加到特定组
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651346"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613052"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止将来宾用户添加到特定 Microsoft 365 组或 Microsoft 团队团队
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>阻止将来宾添加到特定 Microsoft 365 组或 Microsoft 团队团队
 
 如果要允许来宾访问大多数组和团队，但要阻止来宾访问，则可以阻止对各个组和团队的来宾访问。  (阻止来宾对团队的访问权限是通过阻止对关联组的来宾访问来完成的。 ) 这将阻止添加新的来宾，但不会删除组或团队中已有的来宾。
 
@@ -69,7 +69,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>根据其域允许或阻止来宾访问
 
-您可以允许或阻止使用特定域的来宾用户。 例如，如果您的企业 (Contoso) 与另一个业务 (Fabrikam) 有合作关系，则可以将 Fabrikam 添加到您的允许列表，以便您的用户可以将这些来宾添加到他们的组中。
+您可以允许或阻止使用特定域的来宾。 例如，如果您的企业 (Contoso) 与另一个业务 (Fabrikam) 有合作关系，则可以将 Fabrikam 添加到您的允许列表，以便您的用户可以将这些来宾添加到他们的组中。
 
 有关详细信息，请参阅 [允许或阻止来自特定组织的 B2B 用户的邀请](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)。
 
@@ -77,7 +77,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 默认情况下，来宾在 Exchange 全局地址列表中不可见。 使用下面列出的步骤使来宾在全局地址列表中可见。
 
-通过运行以下命令查找来宾用户的 ObjectID：
+通过运行以下命令查找来宾的 ObjectID：
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Get-AzureADUser -Filter "userType eq 'Guest'"
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [在 Microsoft 365 管理中心中管理组成员身份](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

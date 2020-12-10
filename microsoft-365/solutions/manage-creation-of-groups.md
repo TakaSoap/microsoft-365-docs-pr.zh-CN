@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 了解如何控制哪些用户可以创建 Microsoft 365 组。
-ms.openlocfilehash: 3a0ac5ef48eabfd06e0df3f509c7d8e4be3cff10
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 2954f68dce289d43b37bf8f5c6ff43fe1b5c48c7
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602015"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613556"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>管理可以创建 Microsoft 365 组的用户
 
@@ -36,7 +36,7 @@ ms.locfileid: "49602015"
 - Microsoft Teams
 - Microsoft Stream
 - Planner
-- PowerBI (经典) 
+- Power BI (经典) 
 - Web/路线图的项目
 
 您可以将 Microsoft 365 组创建限制为特定安全组的成员。 若要配置此设置，请使用 Windows PowerShell。 本文将引导您完成所需的步骤。
@@ -167,7 +167,11 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 > [!NOTE]
 > 如果安全组的成员无法创建组，请检查它们是否通过 [OWA 邮箱策略](https://go.microsoft.com/fwlink/?linkid=852135)被阻止。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [Office 365 PowerShell 入门](https://go.microsoft.com/fwlink/p/?LinkId=808033)
 

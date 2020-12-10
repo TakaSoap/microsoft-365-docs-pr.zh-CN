@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: 获取安全信息和事件管理 (SIEM) server 与 Microsoft 365 云服务和应用程序集成的概述
-ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 851b27769badb2629b7e9fb1c93992c76828a633
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919756"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615644"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>与 Microsoft 365 服务和应用程序的安全信息和事件管理 (SIEM) server 集成
 
@@ -34,7 +34,7 @@ ms.locfileid: "48919756"
 您的组织是使用还是计划在 SIEM) server 中获取安全信息和事件管理 (吗？ 您可能想知道它是如何与 Microsoft 365 或 Office 365 集成的。 本文提供了可用于将 SIEM 服务器与 Microsoft 365 服务和应用程序相集成的资源的列表。
 
 > [!TIP]
-> 如果你还没有 SIEM 服务器并且正在浏览你的选项，请考虑使用 **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)** 。
+> 如果你还没有 SIEM 服务器并且正在浏览你的选项，请考虑使用 **[Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview)**。
 
 ## <a name="do-i-need-a-siem-server"></a>我是否需要 SIEM 服务器？
 
@@ -53,7 +53,7 @@ SIEM 服务器可以接收来自各种 Microsoft 365 服务和应用程序的数
 |Microsoft 365 服务或应用程序|SIEM 服务器输入/方法|了解详细信息的资源|
 |---|---|---|
 |[Microsoft Defender for Office 365](office-365-atp.md)|审核日志|[SIEM 与 Microsoft Defender for Office 365 的集成](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中托管的 HTTPS 终结点 <br/>REST API|[将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
+|[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中托管的 HTTPS 终结点 <p> REST API|[将警报拉入 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|日志集成|[SIEM 与 Microsoft Cloud App Security 的集成](https://docs.microsoft.com/cloud-app-security/siem)|
 |
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357835"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615152"
 ---
 # <a name="common-identity-and-device-access-policies"></a>常见标识和设备访问策略
 
@@ -41,7 +41,7 @@ ms.locfileid: "49357835"
 
 以下是包含各个策略链接的单页 PDF 摘要：
 
-[![用于 Microsoft 365 讲义的标识和设备保护的缩略图](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [以 PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| 形式查看 [下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![用于 Microsoft 365 讲义的标识和设备保护的缩略图](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [以 PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| 形式查看 [下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 本文的其余部分介绍了如何配置这些策略。
 
@@ -120,7 +120,7 @@ ms.locfileid: "49357835"
 
 根据目标的保护级别应用风险级别设置。
 
-|保护级别|需要的风险级别值|Action|
+|保护级别|需要的风险级别值|操作|
 |---|---|---|
 |基线|高、中|检查两者。|
 |敏感|高、中、低|检查全部三个。|
@@ -129,7 +129,7 @@ ms.locfileid: "49357835"
 
 在 " **访问控制** " 部分：
 
-|设置|属性|值|Action|
+|设置|属性|值|操作|
 |---|---|---|---|
 |授予|**Grant access**||Select|
 |||**需要多因素身份验证**|支票|
@@ -155,12 +155,12 @@ ms.locfileid: "49357835"
 |用户和组|包括|**选择 "用户和组" > 用户和组**：选择包含目标用户帐户的特定组。|从包含试点用户帐户的组开始。|
 ||排除|**用户和组**：选择您的条件访问例外组;)  (应用程序标识的服务帐户。|应在需要的临时基础上修改成员资格。|
 |云应用或操作|**包含的云应用 >**|**选择 "应用程序**"：选择与不支持新式身份验证的客户端对应的应用程序。||
-|条件|**客户端应用**|为 **"配置" 选择 "是"** **Configure** <br/> 清除 **浏览器** 和 **移动应用程序和桌面客户端** 的复选标记||
+|条件|**客户端应用**|为 **"配置" 选择 "是"**  <p> 清除 **浏览器** 和 **移动应用程序和桌面客户端** 的复选标记||
 |
 
 在 " **访问控制** " 部分：
 
-|设置|属性|值|Action|
+|设置|属性|值|操作|
 |---|---|---|---|
 |授予|**阻止访问**||Select|
 ||**需要所有已选控件**||Select|
@@ -182,7 +182,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在 " **工作分配** " 部分：
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
 |Users|包括|**所有用户**|Select|
 |用户风险|**High**||Select|
@@ -190,9 +190,9 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 在 "第二个 **工作分配** " 部分：
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Access|**允许访问**||Select|
+|访问|**允许访问**||Select|
 |||**需要更改密码**|支票|
 |
 
@@ -275,7 +275,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Windows 8.1 及更高版本
 - Windows 10 及更高版本
 
-若要创建设备合规性策略，请使用管理员凭据登录 [Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com)，然后导航到 "**设备**  >  **合规性策略**"  >  **策略**。 选择 " **创建策略**"。
+若要创建设备合规性策略，请使用管理员凭据登录 [Microsoft 终结点管理器管理中心](https://endpoint.microsoft.com) ，然后导航到 " **设备** \> **合规性策略**" \> **策略**。 选择 " **创建策略**"。
 
 对于要部署的设备合规性策略，必须将其分配给用户组。 您在创建并保存策略后分配该策略。 在管理中心中，选择策略，然后选择 " **分配**"。 选择要接收策略的组后，选择 " **保存** " 以保存该组分配并部署该策略。
 
@@ -287,7 +287,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **设备运行状况 > Windows 运行状况证明服务评估规则**，请参阅此表。
 
-|属性|值|Action|
+|属性|值|操作|
 |---|---|---|
 |需要 BitLocker|需要|Select|
 |要求在设备上启用安全启动|需要|Select|
@@ -300,29 +300,29 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 有关 **系统的安全性**，请参阅此表。
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
-|Password|需要密码才能解锁移动设备|需要|Select|
+|密码|需要密码才能解锁移动设备|需要|Select|
 ||简单密码|阻止|Select|
 ||密码类型|设备默认值|Select|
 ||最短密码长度|6 |类型|
-||在需要密码之前不活动的最长分钟数|15 |类型 <br/> Android 版本4.0 及更高版本或 KNOX 4.0 及更高版本支持此设置。 对于 iOS 设备，支持 iOS 8.0 和更高版本。|
+||在需要密码之前不活动的最长分钟数|15 |类型 <p> Android 版本4.0 及更高版本或 KNOX 4.0 及更高版本支持此设置。 对于 iOS 设备，支持 iOS 8.0 和更高版本。|
 ||密码过期 (天) |41|类型|
 ||用于防止重复使用的以前密码的数目|5 |类型|
 ||设备从空闲状态返回时需要密码 (移动和全息) |需要|适用于 Windows 10 及更高版本|
 |加密|设备上的数据存储加密|需要|Select|
 |设备安全性|Firewall|需要|Select|
 ||防病毒|需要|Select|
-||间谍|需要|Select <br/> 此设置需要在 Windows 安全中心中注册的反间谍软件解决方案。|
+||间谍|需要|Select <p> 此设置需要在 Windows 安全中心中注册的反间谍软件解决方案。|
 |Defender|Microsoft Defender 反恶意软件|需要|Select|
-||Microsoft Defender 反恶意软件最低版本||类型 <br/> 仅支持 Windows 10 桌面版。 Microsoft 建议版本的背后不超过最新版本五个。|
+||Microsoft Defender 反恶意软件最低版本||类型 <p> 仅支持 Windows 10 桌面版。 Microsoft 建议版本的背后不超过最新版本五个。|
 ||最新的 Microsoft Defender 反恶意软件签名|需要|Select|
-||实时保护|需要|Select <br/> 仅支持 Windows 10 桌面版|
+||实时保护|需要|Select <p> 仅支持 Windows 10 桌面版|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
-|类型|属性|值|Action|
+|类型|属性|值|操作|
 |---|---|---|---|
 |Microsoft Defender for Endpoint rules|要求设备在计算机风险得分|中|Select|
 |
@@ -344,7 +344,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 7. 对于 " **包含**"，选择 " **选择应用" > 选择**"，然后从" **云应用** "列表中选择所需的应用。 例如，选择 "Exchange Online"。 完成后选择 " **选择** "。
 
-8. 若要要求兼容的电脑 (但不符合兼容电话和平板电脑) ，请在 " **分配**" 下选择 " **条件 > 设备平台**"。 为 **"配置" 选择 "是"** 。 **Configure** 选择 "  **选择设备平台**"，选择 " **Windows** " 和 " **macOS**"，然后选择 " **完成**"。
+8. 若要要求兼容的电脑 (但不符合兼容电话和平板电脑) ，请在 " **分配**" 下选择 " **条件 > 设备平台**"。 为 **"配置" 选择 "是"** 。  选择 "  **选择设备平台**"，选择 " **Windows** " 和 " **macOS**"，然后选择 " **完成**"。
 
 9. 在 " **访问控制**" 下，选择 " **授予** "。
 

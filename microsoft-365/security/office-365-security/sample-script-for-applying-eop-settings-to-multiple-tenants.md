@@ -14,12 +14,12 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何使用 PowerShell 将配置设置应用到您在 Microsoft Exchange Online Protection (EOP) 中的租户。
-ms.openlocfilehash: dbb4135c89ac8d351c40bd7d9ce5301500a9b81b
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: b18fc71171a93e2a2f415800bcf2b5abd5c5a526
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376563"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615860"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>将 EOP 设置应用到多个租户的示例脚本
 
@@ -90,7 +90,7 @@ Import-Module ExchangeOnlineManagement
 
 # Loop through each entry from the .csv file.
 ForEach ($Company in $CompanyList) {
-  
+
 # Get the current entry's UserName.
 $UserName = $Company.UserName
 

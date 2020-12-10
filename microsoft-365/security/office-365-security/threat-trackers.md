@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解有关威胁跟踪程序的信息，包括新的重要跟踪程序，以帮助您的组织保持安全方面的顾虑。
-ms.openlocfilehash: e173bb2b4ee6e7c54c7414c7f102d8c4d1d06641
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 551f5704337ef8989fd1568854822bc1d9d4c14b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568452"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615452"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威胁跟踪器 - 新增的和值得注意的威胁
 
@@ -46,7 +46,7 @@ ms.locfileid: "49568452"
 
 跟踪程序只是使用 [Microsoft Defender For Office 365 计划 2](office-365-ti.md)的众多强大功能中的少数几项。 威胁跟踪包括 [Noteworth 跟踪](#noteworthy-trackers)跟踪、 [趋势跟踪跟踪](#trending-trackers)、 [跟踪的查询](#tracked-queries)和 [已保存的查询](#saved-queries)。
 
-若要查看和使用您的组织的威胁跟踪器，请转到 Security & 合规性中心 (" [https://protection.office.com](https://protection.office.com)) 并选择" **威胁管理** \> **威胁跟踪** 程序 "。
+若要查看和使用您的组织的威胁跟踪器，请转到 Security & 合规性中心 (" <https://protection.office.com>) 并选择" **威胁管理** \> **威胁跟踪** 程序 "。
 
 > [!NOTE]
 > 若要使用威胁跟踪器，您必须是全局管理员、安全管理员或安全阅读者。 请参阅 [安全性 & 合规性中心中的权限](permissions-in-the-security-and-compliance-center.md)。

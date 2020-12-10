@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何创建协作管理计划
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568278"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613292"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>创建协作管理计划
 
@@ -133,6 +133,8 @@ Microsoft 365 的治理不是 "一次，完成"。 制定一个计划，以了�
 - 您是否可以为您的组织创建 Microsoft 365 的拥护者计划？ 此外，请考虑加入全球 [Microsoft 365 冠军程序](https://aka.ms/O365Champions) ，以获取您自己的拥护者的想法和方法，并与 Microsoft 内部和周围的 minded 人员和思维领导者进行连接。
 
 ## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Microsoft 云采用框架 for Azure 中的治理](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

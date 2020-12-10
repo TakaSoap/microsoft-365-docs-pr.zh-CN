@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您将了解如何将域和设置从一个 Microsoft Exchange Online Protection (EOP) 组织 (租户) 移动到另一个 Microsoft Exchange Online Protection。
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200499"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614818"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>将域和设置从一个 EOP 组织移动到另一个 EOP 组织
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200499"
 更改业务需求有时可能需要将一个 Microsoft Exchange Online Protection (EOP) 组织（租户）分成两个单独的组织，将两个组织合并为一个组织，或将您的域和 EOP 设置从一个组织移动到另一个组织。从一个 EOP 组织移动到另一个 EOP 组织极具挑战性，但通过一些基本的远程 Windows PowerShell 脚本和少量的准备工作，您便可以通过相对较小的维护窗口实现此目标。
 
 > [!NOTE]
-> 仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持，因此从 EOP Premium 组织移动到 EOP 标准组织可能不会成功。 <br><br> 这些说明是针对 EOP 仅筛选组织。从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。Exchange Online 组织不在这些说明的范畴内。
+>
+> - 仅可将设置稳定可靠地从一个 EOP 独立 (Standard) 组织移动到另一个 EOP Standard 或 Exchange Enterprise CAL with Services (EOP Premium) 组织，或从一个 EOP Premium 组织移动到另一个 EOP Premium 组织。 由于某些高级功能在 EOP 标准组织中不受支持，因此从 EOP Premium 组织移动到 EOP 标准组织可能不会成功。
+>
+> - 这些说明是针对 EOP 仅筛选组织。从一个 Exchange Online 组织移动到另一个 Exchange Online 组织还有其他一些注意事项。Exchange Online 组织不在这些说明的范畴内。
 
 在以下示例中，Contoso, Ltd. 已与 Contoso Suites 合并。下图显示了将域、邮件用户和组，以及设置从源 EOP 组织 (contoso.onmicrosoft.com) 移动到目标 EOP 组织 (contososuites.onmicrosoft.com) 的过程。
 
@@ -42,21 +45,14 @@ ms.locfileid: "48200499"
 要在目标组织中重新创建源组织，请确保收集和存储有关源组织的以下信息：
 
 - 域
-
 - 邮件用户
-
 - 组
-
 - 反垃圾邮件
-
   - 反垃圾邮件策略 (也称为内容筛选器策略) 
   - 出站垃圾邮件筛选器策略
   - 连接筛选器策略
-
 - 反恶意软件策略
-
 - 连接器
-
 - 邮件流规则 (也称为传输规则) 
 
   > [!NOTE]
@@ -252,11 +248,11 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步骤 5：验证目标组织的域
 
-1. 登录到的管理中心 [https://portal.office.com](https://portal.office.com) 。
+1. 登录到的管理中心 <https://portal.office.com> 。
 
 2. Click **Domains**.
 
-3. 单击目标域的每个“启动安装程序”**** 链接，然后再通过安装向导继续操作。
+3. 单击目标域的每个“启动安装程序”链接，然后再通过安装向导继续操作。
 
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步骤 6：将邮件用户和组添加到目标组织
 

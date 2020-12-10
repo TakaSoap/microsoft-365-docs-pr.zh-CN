@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c5c6dae49943aba4288ef2a0dfe9662b02d3b054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558282"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616364"
 ---
 # <a name="identity-and-device-access-configurations"></a>标识和设备访问配置
 
@@ -43,9 +43,8 @@ ms.locfileid: "49558282"
 
 如果您的组织具有独特的环境要求或复杂性，请使用这些建议作为起点。 但是，大多数组织都可以按规定实现这些建议。
 
->[!Note]
->Microsoft 还为 Office 365 订阅销售企业移动性 + 安全性 (EMS) 许可证。 EMS E3 和 EMS E5 功能与 Microsoft 365 E3 和 Microsoft 365 E5 中的功能等效。 有关详细信息，请参阅 [EMS 计划](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
->
+> [!NOTE]
+> Microsoft 还为 Office 365 订阅销售企业移动性 + 安全性 (EMS) 许可证。 EMS E3 和 EMS E5 功能与 Microsoft 365 E3 和 Microsoft 365 E5 中的功能等效。 有关详细信息，请参阅 [EMS 计划](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
 
 ## <a name="intended-audience"></a>目标受众
 
@@ -83,7 +82,7 @@ ms.locfileid: "49558282"
 
 Microsoft 365 体系结构模型的 **标识和设备保护** 显示可比较的功能。
 
-[![用于 Microsoft 365 海报的标识和设备保护的缩略图](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| 形式查看[下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![用于 Microsoft 365 海报的标识和设备保护的缩略图](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| 形式查看[下载为 PDF 格式](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下载为 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 此外，请参阅为 [数据隐私法规部署信息保护](../../solutions/information-protection-deploy.md) 解决方案，以保护存储在 Microsoft 365 中的信息。
 

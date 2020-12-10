@@ -2,7 +2,7 @@
 title: 与组织外部的人员进行协作
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 了解如何配置 Microsoft 365 应用程序（如团队、OneDrive 和 SharePoint）与组织外部的人员进行协作。
-ms.openlocfilehash: 60789041abca98769fa25e2f299ee2d7eebe0726
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 374ad8f5ec37fc0900fb38cb4e0f4743a02c4da4
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029977"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613450"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>与组织外部的人员进行协作
 

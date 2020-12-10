@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何在安全 & 合规性中心中使用 Explorer 和实时检测，以有效且高效地调查威胁并对其做出响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561395"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615560"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威胁资源管理器和实时检测
 
@@ -67,7 +67,7 @@ ms.locfileid: "49561395"
 
 我们现在将标记作为筛选器，以便您可以仅在优先级帐户或特定的用户标记方案中进行智能寻线 (甚至排除包含特定标记的结果) 的情况。 将这些筛选器与我们提供的多个其他筛选器组合在一起可帮助您缩小调查范围
 
-[![筛选标记 ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![筛选标记](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![不筛选标记](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ ms.locfileid: "49561395"
 > - 将有新的字段和值用于检测技术和其他操作，尤其是) 的 ZAP 方案中 (。 评估现有的已保存的查询和跟踪的查询，以确保它们能够处理新值。
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![浏览器中的其他操作](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系统覆盖
 
@@ -161,10 +161,10 @@ ms.locfileid: "49561395"
 - 被组织策略阻止：这是组织的安全团队设置策略或邮件流规则，以阻止其组织中用户的发件人、域、邮件语言或源 Ip。 这也可用于一组用户或整个组织。
 - 组织策略阻止的文件扩展名：这是组织的安全团队通过反恶意软件策略设置阻止的文件类型扩展名。 这些值现在将显示在电子邮件详细信息中，以帮助进行调查。 Secops 团队还可以使用富筛选功能筛选阻止的文件扩展名。
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![浏览器中的系统覆盖](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![浏览器中的系统覆盖网格](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>有关 URL 和点击体验的改进
 
@@ -184,7 +184,7 @@ ms.locfileid: "49561395"
 
 网络钓鱼可信度有助于确定置信度，其中电子邮件被分类为网络钓鱼。 这两个可能的值为 "高" 和 "普通"。 在初始阶段，此筛选器仅适用于威胁资源管理器的 "网络钓鱼视图"。
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![浏览器中的网络钓鱼可信度](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL 信号
 
@@ -354,14 +354,14 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 假设您想要查看 Microsoft 365 技术在电子邮件中检测到的恶意软件。 若要执行此操作，请使用资源管理器 (的 [电子邮件 > 恶意软件](threat-explorer-views.md#email--malware) 视图或实时检测) 。
 
-1. 在 "安全性 & 合规性中心 ([https://protection.office.com](https://protection.office.com) ") 中，选择 "**威胁管理**  >  **资源管理器** (" 或 "**实时检测**") 。  (本示例使用 Explorer。 ) 
+1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **恶意软件**"。
+2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **恶意软件**"。
 
    > [!div class="mx-imgBorder"]
    > ![浏览器的视图菜单](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. 单击 "**发件人**"，然后选择 "**基本**  >  **检测技术**"。
+3. 单击 " **发件人**"，然后选择 " **基本** \> **检测技术**"。
 
    您的检测技术现在可用作报告的筛选器。
 
@@ -381,14 +381,14 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 若要查看邮件中的网络钓鱼 Url 并单击网络钓鱼邮件中的 Url，请使用资源管理器 (的 [电子邮件 > 网络钓鱼](threat-explorer-views.md#email--phish) 视图或实时检测) 。
 
-1. 在 "安全性 & 合规性中心 ([https://protection.office.com](https://protection.office.com) ") 中，选择 "**威胁管理**  >  **资源管理器** (" 或 "**实时检测**") 。  (本示例使用 Explorer。 ) 
+1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **网络钓鱼**"。
+2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **网络钓鱼**"。
 
    > [!div class="mx-imgBorder"]
    > ![网络仿冒上下文中的浏览器视图菜单](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. 单击 "**发件人**"，然后选择 " **url**  >  **" 单击 "判定"**。
+3. 单击 " **发件人**"，然后选择 " **url** \> **" 单击 "判定"**。
 
 4. 选择一个或多个选项（如 "已 **阻止** " 和 " **阻止被覆盖**"），然后单击与应用该筛选器的选项位于同一行中的 " **刷新** " 按钮。  (不刷新浏览器窗口。 ) 
 
@@ -428,14 +428,14 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 
 假设您想要查看您的组织中的用户使用 [Outlook 和 web 上的 outlook 的报告邮件外接程序](enable-the-report-message-add-in.md)报告为垃圾邮件、非垃圾邮件或网络钓鱼的电子邮件。 为此，请使用浏览器 (的 [电子邮件 > 提交](threat-explorer-views.md#email--submissions) 视图或实时检测) 。
 
-1. 在 "安全性 & 合规性中心 ([https://protection.office.com](https://protection.office.com) ") 中，选择 "**威胁管理**  >  **资源管理器** (" 或 "**实时检测**") 。  (本示例使用 Explorer。 ) 
+1. 在 "安全性 & 合规性中心 (<https://protection.office.com> ") 中，选择 " **威胁管理** \> **资源管理器** (" 或 " **实时检测** ") 。  (本示例使用 Explorer。 ) 
 
-2. 在 "**视图**" 菜单中，选择 "**电子邮件**  >  **提交**"。
+2. 在 " **视图** " 菜单中，选择 " **电子邮件** \> **提交**"。
 
    > [!div class="mx-imgBorder"]
    > ![用于电子邮件的浏览器的视图菜单](../../media/explorer-view-menu-email-user-reported.png)
 
-3. 单击 "**发件人**"，然后选择 "**基本**  >  **报告类型**"。
+3. 单击 " **发件人**"，然后选择 " **基本** \> **报告类型**"。
 
 4. 选择一个选项，如 " **网络钓鱼**"，然后单击 " **刷新** " 按钮。
 
@@ -476,14 +476,14 @@ ETR 搜索和名称可用性取决于已分配给你的特定角色。 您需要
 - 对于 "安全 & 合规中心"，您必须具有以下分配的角色之一：
 
   - 组织管理
-  - 安全管理员 (可以在 Azure Active Directory 管理中心 (中分配此项 [https://aad.portal.azure.com](https://aad.portal.azure.com)) # A3
+  - 安全管理员 (可在 Azure Active Directory 管理中心 (中分配此项 <https://aad.portal.azure.com>) 
   - 安全读取者
 
-- 对于 Exchange Online，必须在 Exchange 管理中心 () 或 PowerShell cmdlet 中分配以下角色之一 [https://outlook.office365.com/ecp](https://outlook.office365.com/ecp) (请参阅 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) ：
+- 对于 Exchange Online，必须在 Exchange 管理中心中分配以下角色之一 (<https://admin.protection.outlook.com/ecp/>) 或 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)：
 
   - 组织管理
-  - 仅限查看组织管理
-  - “仅供查看收件人”角色
+  - 仅查看组织管理
+  - 仅查看收件人
   - 合规性管理
 
 若要了解有关角色和权限的详细信息，请参阅以下资源：

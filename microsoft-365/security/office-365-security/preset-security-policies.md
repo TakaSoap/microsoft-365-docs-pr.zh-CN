@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 的保护功能中应用标准和严格的策略设置
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572773"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616040"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的预设安全策略
 
@@ -62,7 +62,7 @@ ms.locfileid: "49572773"
 预设安全策略使用 EOP 和 Microsoft Defender for Office 365 中的各种保护功能中对应的策略。 将 **标准保护** 或 **严格保护** 预设安全策略分配给用户 _后_，将创建这些策略。 您不能修改这些策略。
 
 - **Exchange Online Protection (EOP) 策略**：这包括具有 exchange online 邮箱和独立 EOP 组织的 Microsoft 365 组织，而无需使用 exchange online 邮箱：
-  
+
   - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - 名为 **标准预设安全策略** 和 **严格预设安全策略** 的 [反恶意软件策略](configure-anti-malware-policies.md)。
   - EOP 欺骗设置 (的名为 **标准预设安全策略** 和 **严格预设安全策略**[的反网络钓鱼策略](set-up-anti-phishing-policies.md#spoof-settings)) 。

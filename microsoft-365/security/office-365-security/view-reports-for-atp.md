@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在安全 & 合规中心中查找和使用 Microsoft Defender for Office 365 的报告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572485"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615572"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全 & 合规中心的 "报告" 仪表板中查看 Office 365 的 Defender for the reports
 
@@ -343,11 +343,11 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 - **组织管理**
 - **安全管理员**
 - **安全读者**
-- **全局读者**
+- **全局读取者**
 
-有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
-**注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+**注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果报告不显示数据，该怎么办？
 
@@ -356,5 +356,5 @@ Microsoft Defender for Office 365 组织 (例如，Microsoft 365 E5 订阅或 Mi
 ## <a name="related-topics"></a>相关主题
 
 [安全与合规中心内的智能报告和见解](reports-and-insights-in-security-and-compliance.md)
-  
+
 [Azure Active Directory (角色权限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

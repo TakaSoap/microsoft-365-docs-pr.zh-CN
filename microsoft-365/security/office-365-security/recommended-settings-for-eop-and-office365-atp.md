@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全设置的最佳实践是什么？ 有关标准保护的当前建议是什么？ 如果您想要更加严格，应使用什么？ 如果你还使用适用于 Office 365 的 Defender，你还会获得什么额外内容？
-ms.openlocfilehash: ee450c8da346d5815710afe2622f8f2c600132d4
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367209"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615956"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建议设置
 
@@ -52,7 +52,7 @@ ms.locfileid: "49367209"
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**垃圾邮件** 检测操作 <p> _SpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <p> `MoveToJmf`|**将邮件移动到 "垃圾邮件" 文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
 |**高可信度垃圾邮件** 检测操作 <p> _HighConfidenceSpamAction_|**将邮件移动到 "垃圾邮件" 文件夹** <p> `MoveToJmf`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`|“隔离邮件”   发送邮件至隔离邮件而不是目标收件人。 <p> `Quarantine`||
@@ -86,7 +86,7 @@ ms.locfileid: "49367209"
 |**UL 重定向到其他端口** (_IncreaseScoreWithRedirectToOtherPort_) ||
 |**.Biz 或. info 网站的 URL** (_IncreaseScoreWithBizOrInfoUrls_) ||
 | (_MarkAsSpamEmptyMessages_) 中的 **空邮件**||
-|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript**) _MarkAsSpamJavaScriptInHtml_||
+|**在 HTML (MarkAsSpamJavaScriptInHtml 中的 JavaScript 或 VBScript**) ||
 |HTML (_MarkAsSpamFramesInHtml_ **中的 Frame 或 IFrame 标记**) ||
 |HTML (_MarkAsSpamObjectTagsInHtml_) **中的对象标记**||
 |在 HTML (_MarkAsSpamEmbedTagsInHtml_) **中嵌入标记**||
@@ -106,7 +106,7 @@ ms.locfileid: "49367209"
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**每个用户的最大收件人数：外部每小时限制** <p> _RecipientLimitExternalPerHour_|0|500|400|默认值0表示使用服务默认设置。|
 |**每个用户的最大收件人数：每小时的内部限制** <p> _RecipientLimitInternalPerHour_|0|1000|800|默认值0表示使用服务默认设置。|
@@ -120,7 +120,7 @@ ms.locfileid: "49367209"
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**是否要在邮件被隔离时通知收件人？** <p> _操作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果在电子邮件附件中检测到恶意软件，则会隔离邮件，并且只能由管理员进行发布。|
 |**常见附件类型筛选器** <p> _EnableFileFilter_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`|此设置隔离基于文件类型的包含可执行附件的邮件，而不考虑附件内容。|
@@ -135,7 +135,7 @@ ms.locfileid: "49367209"
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**启用反欺骗保护** <p> _EnableAntispoofEnforcement_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
 |**启用未经验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|在 Outlook 中向发件人的照片添加问号 ( ) ，以查找未识别的欺骗性发件人。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
@@ -166,7 +166,7 @@ EOP 客户将获取前面所述的基本反网络钓鱼，但 Microsoft Defender
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |受保护的用户： **添加要保护的用户** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|关闭 <p> `$false` <p> 无|打开 <p> `$true` <p> \<list of users\>|打开 <p> `$true` <p> \<list of users\>|根据你的组织，我们建议在关键角色中向用户添加 (邮件发件人) 。 在内部，受保护的发件人可能是 CEO、CFO 和其他高级领导者。 外部，受保护的发件人可以包括理事会成员或董事会。|
 |受保护的域： **自动包括我拥有的域** <p> _EnableOrganizationDomainsProtection_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
@@ -189,7 +189,7 @@ EOP 客户将获取前面所述的基本反网络钓鱼，但 Microsoft Defender
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|---|---|---|---|
 |**启用反欺骗保护** <p> _EnableAntispoofEnforcement_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`||
 |**启用未经验证的发件人** <p> _EnableUnauthenticatedSender_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|在 Outlook 中向发件人的照片添加问号 ( ) ，以查找未识别的欺骗性发件人。 有关详细信息，请参阅 [反网络钓鱼策略中的欺骗设置](set-up-anti-phishing-policies.md)。|
@@ -202,7 +202,7 @@ EOP 客户将获取前面所述的基本反网络钓鱼，但 Microsoft Defender
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**高级网络钓鱼阈值** <p> _PhishThresholdLevel_|**1-标准** <p> `1`|**2-主动** <p> `2`|**3-更主动** <p> `3`||
 |
@@ -219,7 +219,7 @@ Defender for Office 365 中的安全链接包括适用于活动安全链接策�
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**使用中的安全链接： Office 365 应用程序** <p> _EnableSafeLinksForO365Clients_|打开 <p> `$true`|打开 <p> `$true`|打开 <p> `$true`|使用受支持的 Office 365 desktop 和 mobile (iOS 和 Android) 应用中的安全链接。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**用户单击安全链接时不进行跟踪** <p> _TrackClicks_|开 <p> `$false`|关 <p> `$true`|关闭 <p> `$true`|关闭此设置 (将 _TrackClicks_ 设置为 `$true`) 在受支持的 Office 365 应用程序中跟踪用户单击。|
@@ -237,7 +237,7 @@ Defender for Office 365 中的安全链接包括适用于活动安全链接策�
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**选择邮件中未知的潜在恶意 Url 的操作** <p> _IsEnabled_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
 |**为 Microsoft 团队中的未知或可能存在的恶意 Url 选择操作** <p> _EnableSafeLinksForTeams_|关 <p> `$false`|开 <p> `$true`|打开 <p> `$true`||
@@ -260,11 +260,11 @@ Microsoft Defender for Office 365 中的安全附件包括与安全附件策略�
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**启用适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP** <p> _EnableATPForSPOTeamsODB_|打开 <p> `$true`|打开 <p> `$true`||
-|**打开 Office 客户端的安全文档**<bt/><br/> _EnableSafeDocs_|打开 <p> `$true`|打开 <p> `$true`|此设置仅适用于 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的安全文档](safe-docs.md)。|
-|**允许用户在受保护的视图中单击，即使安全文档识别为恶意文件也是如此**<bt/><br/> _AllowSafeDocsOpen_|关闭 <p> `$false`|关闭 <p> `$false`|此设置与安全文档相关。|
+|**打开 Office 客户端的安全文档** <p> _EnableSafeDocs_|打开 <p> `$true`|打开 <p> `$true`|此设置仅适用于 Microsoft 365 E5 或 Microsoft 365 E5 安全许可证。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的安全文档](safe-docs.md)。|
+|**允许用户在受保护的视图中单击，即使安全文档识别为恶意文件也是如此** <p> _AllowSafeDocsOpen_|关闭 <p> `$false`|关闭 <p> `$false`|此设置与安全文档相关。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>安全附件策略设置
@@ -278,7 +278,7 @@ Microsoft Defender for Office 365 中的安全附件包括与安全附件策略�
 
 ****
 
-|安全功能名称|默认|标准版|全|评论|
+|安全功能名称|默认值|标准|全|评论|
 |---|:---:|:---:|:---:|---|
 |**安全附件未知的恶意软件响应** <p> _操作_|阻止 <p> `Block`|阻止 <p> `Block`|阻止 <p> `Block`||
 |**在检测时重定向附件** ： **启用重定向** <p> _重定向_ <p> _RedirectAddress_|关闭，且未指定电子邮件地址。 <p> `$true` <p> 无|，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|，并指定电子邮件地址。 <p> `$true` <p> 电子邮件地址|将邮件重定向到安全管理员进行审阅。|

@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威胁补救措施
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561277"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615884"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修正在 Office 365 中传递的恶意电子邮件
 
@@ -33,14 +33,14 @@ ms.locfileid: "49561277"
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>开始之前需要了解的内容
 
-管理员可以对电子邮件执行必需的操作，但若要获取这些操作的批准，则必须通过 **Security & 合规性中心** 权限为其分配 *搜索和清除* 角色 \> **Permissions**。 如果没有添加到某个角色组的 "搜索和清除" 角色，他们将无法执行该操作。
+管理员可以对电子邮件执行必需的操作，但若要获取这些操作的批准，则必须通过 **Security & 合规性中心** 权限为其分配 *搜索和清除* 角色 \> 。 如果没有添加到某个角色组的 "搜索和清除" 角色，他们将无法执行该操作。
 
 ## <a name="manual-and-automated-remediation"></a>手动和自动修正
 
 当安全团队使用威胁资源管理器中的搜索和筛选功能手动识别威胁时，将发生 *手动搜寻*。 在确定需要修正的一组电子邮件之后，可以通过任何电子邮件视图 (*恶意软件*、 *网络钓鱼* 或 *所有电子邮件*) 来触发手动电子邮件修复。
 
 > [!div class="mx-imgBorder"]
-> [![按日期手动搜寻 Office 365 中的威胁资源管理器。 ](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![按日期手动搜寻 Office 365 中的威胁资源管理器。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 安全团队可以通过以下几种方式使用威胁资源管理器选择电子邮件：
 
@@ -59,12 +59,12 @@ ms.locfileid: "49561277"
 来自威胁资源管理器的警报或安全操作团队触发了 **自动调查和响应** 操作。 其中可能包括安全操作团队必须批准的建议修正操作。 自动调查中的 " **操作** " 选项卡上包含这些操作。
 
 > [!div class="mx-imgBorder"]
-> [![带有恶意软件的邮件在 "Zapped" 页中，显示了 Zap 执行的时间。 ](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![带有恶意软件的邮件在 "Zapped" 页中，显示了 Zap 执行的时间。](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-所有 remediations (在威胁资源管理器中创建的直接批准或两步审批) ，以及来自自动调查的批准的操作将显示在操作中心中。 通过左侧导航面板中的 "**审阅**  >  **操作中心**" 访问这些权限。
+所有 remediations (在威胁资源管理器中创建的直接批准或两步审批) ，以及来自自动调查的批准的操作将显示在操作中心中。 通过左侧导航面板中的 " **审阅** \> **操作中心**" 访问这些权限。
 
 > [!div class="mx-imgBorder"]
-> [![包含受日期和严重性的威胁列表的操作中心。 ](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> [![包含受日期和严重性的威胁列表的操作中心。](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 操作中心显示过去30天内的所有修正操作。 通过威胁资源管理器执行的操作按安全操作团队在创建修正时提供的名称列出。 通过自动调查执行的操作的标题以触发调查的相关警报开头，如 "Zap 电子邮件群集 ..."。
 
@@ -73,7 +73,7 @@ ms.locfileid: "49561277"
 - "**邮件提交**" 选项卡：显示通过威胁浏览器提交的电子邮件数或要修正的自动调查。 这些电子邮件可以是可操作的，也可以是不可操作的。
 
   > [!div class="mx-imgBorder"]
-  > [![具有可操作和无可操作威胁的操作中心。 ](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![具有可操作和无可操作威胁的操作中心。](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - 可 **操作**：可对以下云邮箱位置中的电子邮件执行操作并将其移动：
     - Inbox
@@ -108,7 +108,7 @@ ms.locfileid: "49561277"
   下图显示了提交在操作中心中的外观。 修正可以包含多个提交。 如果通过一次自动调查批准了多个操作，则每个电子邮件或电子邮件群集操作将与不同的提交出现在同一修补中。
 
   > [!div class="mx-imgBorder"]
-  > [![ZAP 电子邮件群集飞出面板。 ](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP 电子邮件群集飞出面板。](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   选择一个邮件提交项，以显示该修正的详细信息，例如，通过自动调查或威胁资源管理器触发修正时，通过选择查询) 以及修正的开始和结束时间， (的查询。 它还显示提交以进行修正的邮件的列表。 当邮件移出威胁浏览器保留期时，邮件将从该列表中消失。 该列表还显示了 remediable 的单个邮件。
 
@@ -129,7 +129,7 @@ ms.locfileid: "49561277"
   - **失败**： remediable 电子邮件上的所需操作失败。 例如：管理员想要删除邮箱中的电子邮件，以便管理员采取软删除电子邮件的操作。 如果在执行操作后，在邮箱中仍找到 remediable 电子邮件，则状态将显示为 "失败"。
 
   选择操作日志中的任何项目以显示修正详细信息。 如果详细信息说 "成功" 或 "在邮箱中找不到"，则表示该项目已从邮箱中删除。 有时，在修正过程中存在系统性错误。 在这些情况下，最好重试修正。
-  
+
   在修正大型批处理的情况下，还可以通过邮件提交以及通过操作日志修正的邮件导出发送以进行修正的邮件。 将导出限制增加到10万个记录。
 
   修正是缓解威胁和解决可疑电子邮件的强大工具。 它有助于确保组织的安全。

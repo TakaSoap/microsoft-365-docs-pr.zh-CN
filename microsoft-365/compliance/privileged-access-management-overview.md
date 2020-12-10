@@ -1,12 +1,13 @@
 ---
-title: 特权访问管理
-f1.keywords:
-- NOCSH
+title: 了解特权访问管理
+description: 本文提供了有关 Microsoft 365 中的特权访问管理的概述，其中包括对常见问题解答)  (常见问题的解答。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: 本文提供了有关 Microsoft 365 中的特权访问管理的概述，其中包括对常见问题解答)  (常见问题的解答。
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341230"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613326"
 ---
-# <a name="privileged-access-management"></a>特权访问管理
+# <a name="learn-about-privileged-access-management"></a>了解特权访问管理
 
 特权访问管理允许对 Office 365 中的特权管理任务进行精确的访问控制。 它可帮助保护您的组织免受使用现有特权管理员帐户的破坏，以访问敏感数据或访问关键配置设置。 特权访问管理要求用户通过一个高度范围和时间限制的审批工作流请求实时访问，以完成提升的特权和特权任务。 此配置为用户提供足够的访问权限，以便在不影响敏感数据或关键配置设置的情况下执行任务。 在 Microsoft 365 中启用 "特权访问管理" 使组织能够以零为依据的权限运行，并提供了抵御受影响的管理访问漏洞的防御层。
 
@@ -74,7 +73,7 @@ ms.locfileid: "48341230"
 
 ![步骤4：访问处理](../media/pam-step4-access-processing.jpg)
 
-## <a name="frequently-asked-questions"></a>常见问题解答
+## <a name="frequently-asked-questions"></a>常见问题
 
 ### <a name="what-skus-can-use-privileged-access-in-office-365"></a>哪些 Sku 可以使用 Office 365 中的特权访问？
 

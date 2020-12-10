@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 了解如何使用威胁资源管理器和实时检测报告来调查安全 & 合规性中心中的威胁并对其做出响应。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: b7300f8c87b100a38117b0cc4bee1bb95c9584c6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561227"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615704"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威胁资源管理器中的视图和实时检测
 
@@ -56,7 +56,7 @@ ms.locfileid: "49561227"
 
 ## <a name="email--malware"></a>电子邮件 > 恶意软件
 
-若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 "**查看**  >  **电子邮件**  >  **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。
+若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 " **查看** \> **电子邮件** \> **恶意软件**"。 此视图显示标识为包含恶意软件的电子邮件的相关信息。
 
 ![查看标识为恶意软件的电子邮件的相关数据](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "49561227"
 
 ## <a name="email--phish"></a>电子邮件 > 网络钓鱼
 
-若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 "**查看**  >  **电子邮件**  >  **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。
+若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 " **查看** \> **电子邮件** \> **网络钓鱼**"。 此视图显示被标识为 "仿冒尝试" 的电子邮件。
 
 ![查看标识为 "仿冒尝试" 的电子邮件的相关数据](../../media/ThreatExplorerEmailPhish.png)
 
@@ -92,13 +92,13 @@ ms.locfileid: "49561227"
 
 ## <a name="email--submissions"></a>电子邮件 > 提交
 
-若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 "**查看**  >  **电子邮件**  >  **提交**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。
+若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 " **查看** \> **电子邮件** \> **提交**"。 此视图显示用户已报告为垃圾邮件、非垃圾邮件或仿冒电子邮件的电子邮件。
 
 ![用户报告的电子邮件](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
 单击 " **发件人** " 打开查看选项列表。 使用此列表可以按发件人、收件人、报告类型查看信息， (用户决定电子邮件是垃圾邮件、非垃圾邮件，还是网络钓鱼) 等等。
 
-例如，若要查看报告为 "仿冒试" 的电子邮件的信息，请单击 "**发件人**  >  **报告类型**"，选择 "**网络钓鱼**"，然后单击 "刷新" 按钮。
+例如，若要查看报告为 "仿冒试" 的电子邮件的信息，请单击 " **发件人** \> **报告类型**"，选择 " **网络钓鱼**"，然后单击 "刷新" 按钮。
 
 ![为报告类型筛选器选择的网络钓鱼](../../media/ThreatExplorerEmailUserReportedPhishSelected.png)
 
@@ -110,7 +110,7 @@ ms.locfileid: "49561227"
 
 ## <a name="email--all-email"></a>电子邮件 > 所有电子邮件
 
-若要查看此报告，请在资源管理器中选择 "**查看**  >  **Email**  >  **全部邮件**"。 此视图显示电子邮件活动的全部视图，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件 (正常的电子邮件、垃圾邮件和批量邮件) 。
+若要查看此报告，请在资源管理器中选择 "**查看** \>  \> **全部邮件**"。 此视图显示电子邮件活动的全部视图，包括因网络钓鱼或恶意软件而被标识为恶意的电子邮件，以及所有非恶意邮件 (正常的电子邮件、垃圾邮件和批量邮件) 。
 
 > [!NOTE]
 > 如果收到一条错误，指示 **要显示的数据过多**，请添加筛选器，并在必要时缩小正在查看的日期范围。
@@ -123,7 +123,7 @@ ms.locfileid: "49561227"
 
 ## <a name="content--malware"></a>内容 > 恶意软件
 
-若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 "**查看**  >  **内容**  >  **恶意软件**"。 此视图显示了 [Microsoft Defender For Office 365 In SharePoint Online、OneDrive For business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
+若要查看此报告，请在资源管理器中 (或实时检测) 中，选择 " **查看** \> **内容** \> **恶意软件**"。 此视图显示了 [Microsoft Defender For Office 365 In SharePoint Online、OneDrive For business 和 Microsoft 团队中](atp-for-spo-odb-and-teams.md)被标识为恶意的文件。
 
 查看恶意软件系列的信息、检测技术 (检测恶意软件的方式) 以及工作负荷 (OneDrive、SharePoint 或团队) 。
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 管理员可以了解如何使用隔离标记来控制用户能够对其隔离邮件执行的操作。
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572665"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616004"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
@@ -161,7 +161,9 @@ New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 若要使用 _EndUserQuarantinePermissionsValue_ 参数创建隔离标记，请执行以下步骤：
 
 A. 使用 **QuarantinePermissions** cmdlet 将隔离权限对象存储在变量中。
-<br/>
+
+<p>
+
 B. 将变量用作 **QuarantineTag** 命令中的 _EndUserQuarantinePermissions_ 值。
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>步骤 A：将隔离权限对象存储在变量中
@@ -246,11 +248,11 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 2. 查找并选择要编辑的现有反垃圾邮件策略，或创建新的反垃圾邮件策略。
 
 3. 在 "策略详细信息" 浮出控件中，展开 " **垃圾邮件和批量操作** " 部分。
-  
+
 4. 如果已为可用垃圾邮件筛选判定的操作选择了 " **隔离邮件** "，则可以使用 " **应用隔离策略标记** " 框来选择该判定的隔离标记。
 
    **注意**：创建新策略时，垃圾邮件筛选判定的空隔离标记值表示使用该判定的默认隔离标记。 当您随后编辑策略时，空值将被实际的默认隔离标记名称替换，如上表中所述。
-  
+
    ![反垃圾邮件策略中的隔离标记选择](../../media/quarantine-tags-in-anti-spam-policies.png)
 
 5. 完成时，请单击“保存”。
@@ -516,7 +518,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 - **隔离的邮件详细信息**：
   - 已启用权限： " **释放邮件** " 按钮可用。
   - 禁用了权限： " **释放邮件** " 按钮不可用。
-  
+
 - **最终用户垃圾邮件通知**：
   - 已启用权限： **释放** 按钮可用。
   - 已禁用权限： **释放** 按钮不可用。

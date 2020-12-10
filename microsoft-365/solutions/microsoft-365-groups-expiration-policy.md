@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解 Microsoft 365 组过期策略。
-ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: d55cc7fff939cb07ae2eba92de411e8f0d088885
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350708"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613650"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 组过期策略
 
@@ -51,7 +51,7 @@ ms.locfileid: "49350708"
 |Role|可以执行的操作|
 |---------|---------|
 |Office 365 全局管理员 (在 Azure 中，公司管理员) ，用户管理员|创建、读取、更新或删除 Microsoft 365 组过期策略设置。|
-|User|续订或 [还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) 自己拥有的 Microsoft 365 组|
+|用户|续订或 [还原](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-restore-deleted) 自己拥有的 Microsoft 365 组|
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何设置过期策略
 
@@ -81,7 +81,11 @@ ms.locfileid: "49350708"
 
 如果您有一个您不再打算使用的组，但您希望保留其内容，请参阅 [存档组、团队和 Yammer](end-life-cycle-groups-teams-sites-yammer.md) ，了解有关如何从不同的组服务中导出信息的信息。
 
-## <a name="related-articles"></a>相关文章
+## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [保留策略概述](https://support.office.com/article/5e377752-700d-4870-9b6d-12bfc12d2423)
 

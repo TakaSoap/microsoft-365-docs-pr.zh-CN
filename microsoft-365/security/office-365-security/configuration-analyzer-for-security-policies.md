@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何使用配置分析器来查找和修复低于标准保护和严格保护预设安全策略的安全策略。
-ms.openlocfilehash: 7d02a6f83ceb06eb56039b449890fd90712c76e5
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 5a57e16dcac6afee910ce546d3a40c2c9c669f2d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572533"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616148"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的保护策略的配置分析器
 
@@ -37,7 +37,7 @@ Security & 合规中心中的配置分析器提供了一个中心位置，用于
 配置分析器将对以下策略类型进行分析：
 
 - **Exchange Online Protection (EOP) 策略**：这包括具有 exchange online 邮箱和独立 EOP 组织的 Microsoft 365 组织，而无需使用 exchange online 邮箱：
-  
+
   - [反垃圾邮件策略](configure-your-spam-filter-policies.md)。
   - [反恶意软件策略](configure-anti-malware-policies.md)。
   - [EOP 反网络钓鱼策略](set-up-anti-phishing-policies.md#spoof-settings)。
@@ -62,16 +62,16 @@ Security & 合规中心中的配置分析器提供了一个中心位置，用于
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 若要使用配置分析器 **并** 对安全策略进行更新，您需要是 **组织管理** 或 **安全管理员** 角色组的成员。
   - 若要对配置分析器进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
   **注意**：
 
-  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>在安全 & 合规中心中使用配置分析器
 

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解如何在 Microsoft 365 组、团队和 SharePoint 中管理访问权限。
-ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558218"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613462"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>在 Microsoft 365 组、团队和 SharePoint 中管理访问权限
 
@@ -158,6 +158,10 @@ Microsoft 365 提供了多种不同的信息共享方法。 如果您有敏感�
 - [Azure Active Directory 标识管理](https://docs.microsoft.com/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [Microsoft Teams 中的安全性和合规性](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 

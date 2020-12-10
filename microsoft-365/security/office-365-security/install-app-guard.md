@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 获取最新的基于硬件的隔离。 阻止目前和新兴攻击（如入侵或恶意链接）中断员工工作效率和企业安全性。
-ms.openlocfilehash: 075006bb8f000dbbda2fd564e0c7cf83c1a15129
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561431"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616784"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>Office 的应用程序防护 (公共预览版) 的管理员
 
@@ -76,9 +76,7 @@ ms.locfileid: "49561431"
 
    或者，您可以设置相应的 CSP 策略：
 
-   OMA-URI： **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard**<br/>
-   数据类型： **Integer**<br/>
-   值： **2**
+   > OMA-URI： **./Device/Vendor/MSFT/WindowsDefenderApplicationGuard/Settings/AllowWindowsDefenderApplicationGuard** <br> 数据类型： **Integer** <br> 值： **2**
 
 4. 重新启动系统。
 

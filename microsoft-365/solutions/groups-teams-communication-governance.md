@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 了解通信管理协作方案。
-ms.openlocfilehash: 05644b5d86fc3ca83e7d140a73666a172937bd54
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b60f0be3cde23330880d652bc62110cf4e55175
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377517"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613674"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>协作应用场景的通信治理
 
@@ -67,6 +67,10 @@ Microsoft 365 中的通信合规性允许您检查攻击性语言的通信、敏
 [Microsoft 365 中的通信合规性](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance)
 
 ## <a name="related-topics"></a>相关主题
+
+[协作治理规划分步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[创建协作管理计划](collaboration-governance-first.md)
 
 [管理你的组织的 Microsoft 团队设置](https://docs.microsoft.com/microsoftteams/enable-features-office-365)
 

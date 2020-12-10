@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357395"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616172"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何报告自动调查和响应功能中的误报/否定
 
@@ -69,7 +69,7 @@ ms.locfileid: "49357395"
 
 ****
 
-|应用场景|撤消选项|了解详细信息|
+|方案|撤消选项|了解更多|
 |---|---|---|
 |将电子邮件路由到用户的 "垃圾邮件" 文件夹|<ul><li>将邮件移动到用户的 "已删除邮件" 文件夹</li><li>将邮件移动到用户的收件箱</li><li>删除邮件</li></ul>|[查找并调查 Office 365 中提供的恶意电子邮件](investigate-malicious-email-that-was-delivered.md)|
 |已隔离电子邮件或文件|<ul><li>释放电子邮件或文件</li><li>删除电子邮件或文件</li></ul>|[以管理员身份管理隔离邮件](manage-quarantined-messages-and-files.md)|
@@ -79,9 +79,9 @@ ms.locfileid: "49357395"
 
 在操作中心中，你可以看到已执行的更正操作，并且可能会撤消该操作。
 
-1. 转到 [https://protection.office.com](https://protection.office.com) 并登录。 这将转到安全 & 合规中心。
+1. 转到 <https://protection.office.com> 并登录。 这将转到安全 & 合规中心。
 
-2. 转到 **威胁管理**  >  **调查**。
+2. 转到 **威胁管理** \> **调查**。
 
 3. 在调查列表中，选择项目 ID 旁边的 " **在新窗口中打开** " 图标。
 

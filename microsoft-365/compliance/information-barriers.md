@@ -1,5 +1,5 @@
 ---
-title: 了解信息障碍
+title: 了解 Microsoft 365 中的信息障碍
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: 使用信息障碍以确保在组织内使用 Microsoft 团队进行通信合规性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636959"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613094"
 ---
-# <a name="information-barriers"></a>信息屏障
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>了解 Microsoft 365 中的信息障碍
 
 Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制两个组之间的通信和协作，以避免组织中发生利益冲突。 或者，您可能希望限制组织内的某些人之间的通信和协作，以保护内部信息。 Microsoft 365 支持跨组和组织进行通信和协作，因此有一种方法可以在必要时限制特定用户组之间的通信和协作？ 通过信息障碍，你可以！ 
 
@@ -35,7 +35,7 @@ Microsoft 云服务包括强大的通信和协作功能。 但假设您要限制
 - 研究团队应仅与产品开发团队进行在线通话或聊天
 
 > [!IMPORTANT]
-> 信息障碍 ***仅支持**_ 双向限制。 一种方法限制（如 "营销"）可以与日交易进行通信，但不_支持将_day 商贸与 marketing 进行通信 * *。
+> 信息障碍 ***仅支持** _ 双向限制。 一种方法限制（如 "营销"）可以与日交易进行通信，但不 _支持将_ day 商贸与 marketing 进行通信 * *。
 
 对于所有这些示例方案 (更) ，可以将信息屏障策略定义为阻止或允许在 Microsoft 团队中进行通信。 此类策略可以阻止用户不应对其进行呼叫或聊天，或使用户只能与 Microsoft 团队中的特定组进行通信。 在信息屏障策略生效时，只要这些策略涵盖的用户尝试与 Microsoft 团队中的其他人通信，就会执行检查以阻止 (或允许) 通信 (如信息屏障策略) 所定义。 若要了解有关信息障碍的用户体验方面的详细信息，请参阅 [Microsoft 团队中的信息障碍](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 

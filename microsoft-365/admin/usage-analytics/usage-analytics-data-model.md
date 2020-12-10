@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '了解使用情况分析如何连接到 API，并提供各种 Microsoft 365 服务的每月使用趋势。  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841371"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611444"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情况分析数据模型
 
@@ -215,8 +215,8 @@ Microsoft 365 使用情况分析连接到一个公开多维数据模型的 API�
 |DocumentCount  <br/> |在时间范围结束时存在于网站上的文档总数。  <br/> |
 |Diplansed  <br/> |在时间范围结束时，所有网站的已用存储总计。  <br/> |
 |ActivityType  <br/> |记录文件活动的各种类型（任何/活动文件/共享 EXT/INT 的文件/同步的文件）的网站数。  <br/> 表示所执行的任何文件活动。  <br/> |
-|SitesWithOwnerActivities  <br/> |活动网站数，其中网站所有者在其自己的网站上执行特定文件活动。  <br/> |
-|SitesWithNonOwnerActivities  <br/> |该月汇总的活动网站数，其中除网站所有者之外的用户在网站上执行特定文件活动。  <br/> |
+|SitesWithOwnerActivities  <br/> |活动网站数，其中网站所有者在其自己的网站上执行特定文件活动。 您可以从 PowerShell 命令 **get-sposite** 中获取网站所有者。 这是负责该网站的人员。   <br/> |
+|SitesWithNonOwnerActivities  <br/> |该月汇总的活动网站数，其中除网站所有者之外的用户在网站上执行特定文件活动。 您可以从 PowerShell 命令 **get-sposite** 中获取网站所有者。 这是负责该网站的人员。 <br/> |
 |ActivityTotalSites  <br/> |记录时间范围内的任何活动的网站数。如果某一网站在时间范围早期具有活动，但在时间范围结束时被删除，仍会将其计入该时间范围内活动网站。  <br/> |
 |Timeframe  <br/> |此列包含日期值。用作日历表的多对一关系。  <br/> |
 |Content Date  <br/> |如果时间范围显示当前月，则此值表示数据可供使用的当前月的最后一天。  <br/> 如果时间范围显示上个月，则此值表示上个月的最后一天。  <br/> |
