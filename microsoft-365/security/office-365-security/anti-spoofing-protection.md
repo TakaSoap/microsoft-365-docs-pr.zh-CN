@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 管理员可以了解 Exchange Online Protection (EOP) 中提供的防欺骗功能，该功能有助于缓解来自虚假发件人和域的网络钓鱼攻击。
-ms.openlocfilehash: 57d6dc8d9c1935578db15abdbb3e17e72bb64257
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130825"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616712"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的防欺骗防护
 
@@ -84,13 +84,13 @@ Microsoft 区分两种不同类型的欺骗邮件：
 - **组织内欺骗**：也称为 _自我欺骗_。 例如：
 
   - 发件人和收件人位于同一域：
-    > 发件人：chris@contoso.com <br/> 收件人：michelle@contoso.com
+    > 发件人：chris@contoso.com <br> 收件人：michelle@contoso.com
 
   - 发件人和收件人位于同一域的子域：
-    > 发件人：laura@marketing.fabrikam.com <br/> 收件人：julia@engineering.fabrikam.com
+    > 发件人：laura@marketing.fabrikam.com <br> 收件人：julia@engineering.fabrikam.com
 
   - 发件人和收件人位于属于同一组织的不同域（即，两个域均配置为同一组织中的[接受域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）：
-    > 发件人：sender @ microsoft.com <br/> 收件人：recipient @ bing.com
+    > 发件人：sender @ microsoft.com <br> 收件人：recipient @ bing.com
 
     电子邮件地址中使用空格，以防垃圾邮件机器人收集邮件。
 
@@ -105,7 +105,7 @@ Microsoft 区分两种不同类型的欺骗邮件：
   - SFTY 是邮件的安全级别。 9 表示网络钓鱼，11 表示组织内欺骗。
 
 - **跨域欺骗**：发件人和收件人域不同，相互之间没有任何关系（也称为外部域）。 例如：
-    > 发件人：chris@contoso.com <br/> 收件人：michelle@tailspintoys.com
+    > 发件人：chris@contoso.com <br> 收件人：michelle@tailspintoys.com
 
   由于跨域欺骗而导致未通过[复合身份验证](email-validation-and-authentication.md#composite-authentication)的邮件包含以下标头值：
 
@@ -133,11 +133,11 @@ Microsoft Defender for Office 365 组织可使用安全与合规中心中的威�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 有兴趣赏鸟，他加入了邮件列表 birdwatchers@fabrikam.com，并向列表发送了以下邮件：
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：** 本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？
 
 邮件列表服务器接收邮件，修改其内容并将其重播给列表中的成员。 重播的邮件具有相同的“发件人”地址 (glaureano @ contoso.com)，但向主题行添加了标记并在邮件底部添加了页脚。 这种类型的修改在邮件列表中很常见，并且可能导致欺骗误报。
 
-> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br/> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？ <p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
+> **发件人:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **收件人:** 赏鸟者讨论列表\<birdwatchers@fabrikam.com\> <br> **主题：**[赏鸟者]本周到瑞尼尔山顶 观赏蓝鸟 <p> 有人想本周一起去瑞尼尔山 赏鸟吗？ <p> 此邮件已发送到赏鸟者讨论列表。 可随时取消订阅。
 
 要帮助邮件列表邮件通过反欺骗检查，请根据是否控制邮件列表执行以下操作：
 

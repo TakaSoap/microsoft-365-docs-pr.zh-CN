@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用带有保留策略和保留标签策略的保存锁来帮助满足监管要求，并防范恶意管理员。
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920690"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612984"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用保留锁定来限制对保留策略和保留标签策略的更改
 
@@ -28,18 +28,27 @@ ms.locfileid: "48920690"
 
 保存锁可锁定保留策略或保留标签策略，因此任何人 - 包括全局管理员 - 都无法关闭该策略、删除该策略或降低其限制性。 这种配置可能是监管要求所需要的，并且有助于防范恶意管理员。
 
-当锁定保留政策时：
+锁定某个保留策略后：
 
-- 任何人都无法关闭它
+- 任何人都不能禁用或删除该策略
 - 可以添加位置，但不能删除位置
 - 可以延长保留期，但不能缩短保留期
 
+锁定某个保留标签策略后：
+
+- 任何人都不能禁用或删除该策略
+- 可以添加位置，但不能删除位置
+- 可以添加标签，但不能删除标签
+
 总之，锁定的策略可以增加或延长，但不能减少或关闭。
-  
+
 > [!IMPORTANT]
 > 在锁定保留策略或保留标签策略之前，请了解其影响并确认其是否是你的组织所需要的。 例如，可能需要满足监管要求。 当应用了保留锁后，管理员将无法禁用或删除这些策略。
 
-当你创建了一个 [保留策略](create-retention-policies.md)，或是 [发布](create-apply-retention-labels.md) 或 [自动应用](apply-retention-labels-automatically.md)的保留标签策略后，将配置保留锁。 
+当你创建了一个[保留策略](create-retention-policies.md)，或是[发布](create-apply-retention-labels.md)或[自动应用](apply-retention-labels-automatically.md)的保留标签策略后，将配置保留锁。 
+
+> [!NOTE]
+> 锁定标签策略不会阻止管理员缩短锁定策略中包含的标签的保留期。 如果配置标签以将项目标记为[合规性记录](records-management.md#records)，则可满足该要求以及其他限制。
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>如何锁定保留策略或保留标签策略
 
@@ -73,7 +82,7 @@ ms.locfileid: "48920690"
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-应看到 **RestrictiveRetention** 设置为 **True** 。 例如：
+应看到 **RestrictiveRetention** 设置为 **True**。 例如：
 
 ![已在 PowerShell 中显示所有参数的锁定策略](../media/retention-policy-preservation-lock-locked-policy.PNG)
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理员可以了解由 Exchange Online Protection (EOP) 添加到邮件的标头字段。 这些标头字段提供有关此邮件的信息，以及其处理方式的相关内容。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f54ffad5107e0de00b0098d5f347ab37ae92d80
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bb3b2eb9e4ce4a63d4bef276dde9e19b491aae53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123463"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615536"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 中的反垃圾邮件标题
 
@@ -60,7 +60,7 @@ ms.locfileid: "49123463"
 |字段|描述|
 |---|---|
 |`ARC`|`ARC` 协议具有以下字段： <ul><li>`AAR`：记录 DMARC 中 **Authentication-results** 标头的内容。</li><li>`AMS`：包括邮件的加密签名。</li><li>`AS`：包括邮件头的加密签名。 此字段包含名为 `"cv="` 的链验证的标记，其中包括值为 **none**、**pass** 或 **fail** 的链验证结果。</li></ul>|
-|`CAT:`|应用于邮件的保护策略类别： <ul><li>`BULK`：大量邮件</li><li>`DIMP`：域模拟</li><li>`GIMP`：[基于邮箱智能的模拟](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` 或 `HPHISH`：高可信度钓鱼</li><li>`HSPM`：高可信度垃圾邮件</li><li>`MALW`：恶意软件</li><li>`PHSH`：网络钓鱼</li><li>`SPM`：垃圾邮件</li><li>`SPOOF`：欺骗</li><li>`UIMP`：用户模拟</li><li>`AMP`：反恶意软件</li><li>`SAP`：安全附件</li><li>`OSPM`：出站垃圾邮件</li></ul><br/>入站邮件可能受到多种形式保护方法和多次检测扫描的标记。 策略的优先级不同，优先级最高的策略第一个应用。 有关详细信息，请参阅[在电子邮件上运行多种保护方法和多次检测扫描时应用什么策略](how-policies-and-protections-are-combined.md)。|
+|`CAT:`|应用于邮件的保护策略类别： <ul><li>`BULK`：大量邮件</li><li>`DIMP`：域模拟</li><li>`GIMP`：[基于邮箱智能的模拟](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` 或 `HPHISH`：高可信度钓鱼</li><li>`HSPM`：高可信度垃圾邮件</li><li>`MALW`：恶意软件</li><li>`PHSH`：网络钓鱼</li><li>`SPM`：垃圾邮件</li><li>`SPOOF`：欺骗</li><li>`UIMP`：用户模拟</li><li>`AMP`：反恶意软件</li><li>`SAP`：安全附件</li><li>`OSPM`：出站垃圾邮件</li></ul> <p> 入站邮件可能受到多种形式保护方法和多次检测扫描的标记。 策略的优先级不同，优先级最高的策略第一个应用。 有关详细信息，请参阅[在电子邮件上运行多种保护方法和多次检测扫描时应用什么策略](how-policies-and-protections-are-combined.md)。|
 |`CIP:[IP address]`|连接 IP 地址。 可以在 IP 允许列表或 IP 阻止列表中使用此 IP 地址。 有关详细信息，请参阅[配置连接筛选](configure-the-connection-filter-policy.md)。|
 |`CTRY`|由连接 IP 地址确定的源国家/地区，可能与原始发送 IP 地址不同。|
 |`H:[helostring]`|连接电子邮件服务器的 HELO 或 EHLO 字符串。|
@@ -70,9 +70,9 @@ ms.locfileid: "49123463"
 |`PTR:[ReverseDNS]`|源 IP 地址的 PTR 记录（亦称为反向 DNS 查找）。|
 |`SCL`|邮件的垃圾邮件可信度 (SCL)。 值越高，邮件是垃圾邮件的可能性就越大。 有关详细信息，请参阅[垃圾邮件可信度 (SCL)](spam-confidence-levels.md)。|
 |`SFTY`|邮件被标识为“网络钓鱼”，还将使用下述值之一进行标记： <ul><li>9.1：默认值。 该邮件包含以下某些或全部元素：网络钓鱼 URL、其他网络钓鱼内容，或由本地 Exchange 标记为网络钓鱼的内容。</li><li>9.11：[组织内欺骗或自我欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 将向邮件添加组织内欺骗安全提示。</li><li>9.19：域模拟。 发送域正在尝试[模拟受保护的域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 将向邮件添加域模拟安全提示（如果已启用）。</li><li>9.20：用户模拟。 发送用户正在尝试模拟收件人组织中的用户或 Microsoft Defender for office 365 中的防钓鱼策略中指定的受保护用户。 将向邮件添加用户模拟安全提示（如果已启用）。</li><li>9.21：[跨域欺骗](anti-spoofing-protection.md#different-types-of-spoofing)。 邮件未通过反欺骗检查。 “发件人”标头中的发送人电子邮件域未进行身份验证，并且是外部域。 与[复合身份验证](#authentication-results-message-header-fields)结合使用。</li><li>9.22：与 9.21 相同，只是用户具有遭到覆盖的安全发件人。</li><li>9.23：与 9.22 相同，只是组织具有遭到覆盖的允许发件人或域。</li><li>9.24：与 9.23 类似，区别在于用户有已被替代的 Exchange 邮件流规则（亦称为“传输规则”）。</li></ul>|
-|`SFV:BLK`|邮件跳过了筛选，但被阻止，因为邮件是从用户的“阻止的发件人”列表中的地址发送的。<br/></br> 若要详细了解管理员如何管理用户的“阻止的发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
+|`SFV:BLK`|邮件跳过了筛选，但被阻止，因为邮件是从用户的“阻止的发件人”列表中的地址发送的。 <p> 若要详细了解管理员如何管理用户的“阻止的发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |`SFV:NSPM`|邮件被垃圾邮件筛选标记为非垃圾邮件，并发送到目标收件人。|
-|`SFV:SFE`|邮件跳过了筛选，且被允许，因为邮件是从用户的“安全发件人”列表中的地址发送的。<br/></br> 若要详细了解管理员如何管理用户的“安全发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
+|`SFV:SFE`|邮件跳过了筛选，且被允许，因为邮件是从用户的“安全发件人”列表中的地址发送的。 <p> 若要详细了解管理员如何管理用户的“安全发件人”列表，请参阅[配置 Exchange Online 邮箱上的垃圾邮件设置](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |`SFV:SKA`|邮件跳过了垃圾邮件筛选，并被发送到收件箱，因为发件人在反垃圾邮件策略中“允许的发件人”列表或“允许的域”列表中。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |`SFV:SKB`|邮件被标记为垃圾邮件，因为邮件与反垃圾邮件策略中“阻止的发件人”列表或“阻止的域”列表中的发件人匹配。 有关详细信息，请参阅[配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。|
 |`SFV:SKI`|与 SFV:SKN 类似，区别在于邮件因其他原因（例如，邮件是租户内的组织内电子邮件）而跳过垃圾邮件筛选。|

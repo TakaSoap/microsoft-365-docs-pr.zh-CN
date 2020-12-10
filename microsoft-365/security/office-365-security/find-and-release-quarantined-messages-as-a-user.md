@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 用户可在 Exchange Online Protection （EOP）中了解如何查看和管理应该已提供给他们的隔离邮件。
-ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130847"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611360"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 中以用户身份查找和释放已隔离邮件
 
@@ -87,7 +87,7 @@ ms.locfileid: "49130847"
      - **反网络钓鱼策略**
      - **托管内容筛选器策略**（反垃圾邮件策略）
 
-   若要清除筛选器，请单击“**清除**”。 若要隐藏筛选器浮出控件，请再次单击“筛选器”。
+   若要清除筛选器，请单击“清除”。 若要隐藏筛选器浮出控件，请再次单击“筛选器”。
 
 4. 使用“结果排序依据”（默认为“邮件 ID”按钮）和相应值查找特定邮件。 不支持通配符。 可以按下面的值搜索：
 
@@ -148,8 +148,6 @@ ms.locfileid: "49130847"
 - **预览邮件**：在显示的浮出控件窗格中，选择以下选项之一：
   - **源视图**：显示禁用所有链接的 HTML 版邮件正文。
   - **文本视图**：以纯文本格式显示邮件正文。
-
-- **下载邮件**：在显示的浮出控件窗格中，选择“我了解下载此邮件所面临的风险”，以使用 .eml 格式保存邮件的本地副本。
 
 - **从隔离中删除**：当你在显示的警告中单击“是”后，邮件会立即删除。
 
