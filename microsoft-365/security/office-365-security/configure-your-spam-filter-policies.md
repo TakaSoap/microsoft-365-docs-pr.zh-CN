@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Exchange Online Protection (EOP) 中查看、创建、修改和删除反垃圾邮件策略。
-ms.openlocfilehash: 2601e4b7b360ce45fbece3e66b5aa09cd512f68c
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572809"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616688"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中配置反垃圾邮件策略
 
@@ -61,7 +61,7 @@ ms.locfileid: "49572809"
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 必须分配有安全与合规中心内的权限，才能执行本文中的步骤：
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - 必须是 **“组织管理”** 或 **“安全管理员”** 角色组的成员，才能添加、修改和删除反垃圾邮件策略。
   - 若要获得对受限用户门户的只读访问权限，必须成为 **全球读者** 或 **安全读者** 角色组的成员。
 
@@ -107,7 +107,7 @@ ms.locfileid: "49572809"
 
      ****
 
-     |操作|垃圾邮件|高<br/>置信<br/>垃圾邮件 (spam)|网络钓鱼<br/>电子邮件|高<br/>置信<br/>仿冒<br/>电子邮件|批量邮件<br/>电子邮件|
+     |操作|垃圾邮件|高<br>置信<br>垃圾邮件 (spam)|网络钓鱼<br>电子邮件|高<br>置信<br>仿冒<br>电子邮件|批量邮件<br>电子邮件|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**将邮件移动到“垃圾邮件”文件夹**：邮件递送到邮箱，并移动到“垃圾邮件”文件夹。<sup>1</sup>|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
      |**添加 X 标头**：向邮件头添加 X 标头，并将邮件递送到邮箱。 <p> 稍后将在 **“添加此 X 标头文本”** 框中，输入 X 标头字段名称（而不是值）。 <p> 对于 **“垃圾邮件”** 和 **“高可信度垃圾邮件”** 裁定，邮件移动到“垃圾邮件”文件夹。<sup>1、2</sup>|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -154,11 +154,11 @@ ms.locfileid: "49572809"
 
    **零时差自动清除** 设置：ZAP 检测已递送到 Exchange Online 邮箱的邮件，并对邮件执行操作。 若要详细了解 ZAP，请参阅[零时差自动清除 - 抵御垃圾邮件和恶意软件](zero-hour-auto-purge.md)。
 
-   - **垃圾邮件 ZAP**：默认启用 ZAP 进行垃圾邮件检测，但你可以通过取消选中“**开**”复选框来禁用它。
+   - **垃圾邮件 ZAP**：ZAP 默认启用垃圾邮件检测，但你可以通过取消选中 **“开”** 复选框来禁用它。
 
-   - **钓鱼邮件 ZAP**：默认启用 ZAP 进行钓鱼邮件检测，但你可以通过取消选中“**开**”复选框来禁用它。
+   - **钓鱼邮件 ZAP**：ZAP 默认启用钓鱼邮件检测，但你可以通过取消选中 **“开”** 复选框来禁用它。
 
-5. （可选）展开“**允许列表**”部分，通过电子邮件地址或电子邮件域配置允许跳过垃圾邮件筛选的邮件发件人：
+5. （可选）展开 **“允许列表”** 部分，通过电子邮件地址或电子邮件域配置允许跳过垃圾邮件筛选的邮件发件人：
 
    > [!CAUTION]
    >
@@ -227,7 +227,7 @@ ms.locfileid: "49572809"
 
      - 单击此框，然后开始键入语言 *名称*。 此时会显示受支持语言的筛选列表，以及相应的 ISO 639-2 语言代码。 选中找到的所需语言。 根据需要重复执行此步骤（次数不限）。
 
-       你选择的语言列表显示在浮出控件上。 若要删除语言，请单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
+       你选择的语言列表显示在浮出控件上。 若要删除语言，请单击 ![“删除”按钮](../../media/scc-remove-icon.png).
 
      完成后，单击 **“保存”**。
 
@@ -237,7 +237,7 @@ ms.locfileid: "49572809"
 
      - 单击此框，然后开始键入国家或地区 *名称*。 此时会显示受支持国家/地区的筛选列表，以及相应的 ISO 3166-1 国家/地区代码（由两个字母组成）。 选中找到的所需国家或地区。 根据需要重复执行此步骤（次数不限）。
 
-       你选择的国家/地区列表显示在浮出控件上。 若要删除国家或地区，请单击 ![“删除”按钮](../../media/scc-remove-icon.png)。
+       你选择的国家/地区列表显示在浮出控件上。 若要删除国家或地区，请单击 ![“删除”按钮](../../media/scc-remove-icon.png).
 
      完成后，单击 **“保存”**。
 
