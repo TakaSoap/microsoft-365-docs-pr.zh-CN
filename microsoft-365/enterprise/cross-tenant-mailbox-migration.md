@@ -14,52 +14,52 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 1e2624fea7a93013e4b4de2dd4ede4144000f075
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073079"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624762"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨租户邮箱迁移 (预览) 
 
-以前，当 Exchange Online 租户需要将邮箱移动到同一个 Exchange Online 服务中的另一个租户时，他们必须完全将其分离到本地，然后再将其集成到新租户。 使用新的跨租户邮箱迁移功能，源租户和目标租户中的租户管理员可以在其本地系统中具有最少基础结构依赖关系的租户之间移动邮箱。 这就消除了分离和板载邮箱的需求。
+以前，当 Exchange Online 租户需要将邮箱移动到同一 Exchange Online 服务中的另一个租户时，他们必须将其完全离开本地，然后载入新租户。 借助新的跨租户邮箱迁移功能，源租户和目标租户中的租户管理员可以在本地系统中以最少的基础结构依赖项在租户之间移动邮箱。 这无需离开和载入邮箱。
 
-通常情况下，在合并或 divestitures 过程中，您需要能够将用户和内容移动到新的租户中。 当目标租户管理员执行移动时，它称为 "拉" 移动，类似于内部部署到云载入迁移。
+通常，在合并或资产重组期间，需要能够将用户和内容移动到新租户。 当目标租户管理员执行移动时，这称为拉取移动，类似于本地到云载入迁移。
 
-跨租户 Exchange 邮箱移动由租户管理员完全自行维护，使用可编写为将用户转换为其新组织所需的更大工作流的已知接口。 管理员可以使用 `New-MigrationBatch` 通过移动邮箱管理角色提供的 cmdlet 来执行跨租户移动。 移动过程包括在邮箱同步和最终完成期间的租户授权检查。 
+跨租户 Exchange 邮箱移动由租户管理员完全自助服务，使用已知的接口，这些接口可以编写脚本到将用户转换到新组织所需的较大工作流中。 管理员可以使用可通过移动邮箱管理角色使用的 `New-MigrationBatch` cmdlet 执行跨租户移动。 移动过程包括邮箱同步和最终完成期间租户授权检查。 
  
-迁移的用户必须以 MailUsers 形式存在于目标租户 Exchange Online 系统中，并标记有特定属性以启用跨租户移动。 对于在目标租户中未正确设置的用户，系统将发生故障移动。 
+迁移的用户必须作为 MailUsers 存在于目标租户 Exchange Online 系统中，并带有特定属性标记才能启用跨租户移动。 对于未在目标租户中正确设置的用户，系统移动将失败。  
 
-移动完成后，源系统邮箱将转换为 MailUser，并且在 Exchange) 中显示为 ExternalEmailAddress 的 targetAddress (将标记为与目标租户的路由地址。 此过程会将旧版 MailUser 保留在源租户中，并允许存在一段共存和邮件路由。 当业务流程允许时，源租户可能会删除源 MailUser 或将其转换为邮件联系人。 
+移动完成后，源系统邮箱将转换为 MailUser，并且目标地址 (显示为 Exchange) 中的 ExternalEmailAddress，并标记目标租户的路由地址。 此过程将旧版 MailUser 保留到源租户中，并允许共存和邮件路由一段时间。 当业务流程允许时，源租户可能会删除源 MailUser 或将其转换为邮件联系人。 
 
-仅支持混合或云中的租户的跨租户 Exchange 邮箱迁移，或二者的任意组合。
+仅混合或云中的租户或两者的任意组合支持跨租户 Exchange 邮箱迁移。
 
-本文介绍跨租户邮箱移动的过程，并提供有关如何为内容移动准备源和目标租户的指南。 
+本文介绍跨租户邮箱移动的过程，并提供有关如何为内容移动准备源租户和目标租户的指导。  
 
-## <a name="preparing-source-and-target-tenants"></a>准备源和目标租户
+## <a name="preparing-source-and-target-tenants"></a>准备源租户和目标租户
 
-跨租户 Exchange 邮箱迁移功能需要针对跨租户迁移进行授权和作用域。 通过使用 Azure 企业应用程序和密钥存储库存储解决方案，租户管理员现在可以管理从一个租户到另一个租户的 Exchange Online 邮箱迁移的授权和作用域。 跨租户邮箱移动支持邀请和同意模型，以在租户对之间进行身份验证 (Azure AD) 应用程序建立 Azure Active Directory。 此外，还需要其他组件（如组织关系和迁移终结点）。
+跨租户 Exchange 邮箱迁移功能需要跨租户迁移的授权和范围。 使用 Azure 企业应用程序和密钥保管库存储解决方案，租户管理员现在能够管理从一个租户到另一个租户的 Exchange Online 邮箱迁移的授权和范围。 跨租户邮箱移动支持邀请和同意模型，以在 Azure AD (Azure AD) 应用程序，用于在租户对之间进行身份验证。 还需要其他组件，如组织关系和迁移终结点。
 
-本节不包括在目标目录中准备 MailUser 用户对象所需的特定步骤，也不包括用于提交迁移批处理的示例命令。 有关此信息，请参阅 [准备目标用户对象以供迁移](#prepare-target-user-objects-for-migration) 。
+本节不包含在目标目录中准备 MailUser 用户对象所需的特定步骤，也不包括提交迁移批处理的示例命令。 请参阅" [准备目标用户对象以迁移](#prepare-target-user-objects-for-migration) 此信息"。
 
 ## <a name="prerequisites"></a>先决条件
 
-跨租户邮箱移动功能要求 [Azure 密钥保管库](https://docs.microsoft.com/azure/key-vault/basic-concepts) 建立租户对特定的 azure 应用程序，以安全地存储和访问用于对从一个租户到另一个租户的邮箱迁移进行身份验证和授权的证书/机密，从而消除了在租户之间共享证书/密码的任何要求。 
+跨租户邮箱移动功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 建立特定于租户对的 Azure 应用程序，以安全存储和访问用于对邮箱从一个租户迁移到另一个租户进行身份验证和授权迁移的证书/密码，从而删除在租户之间共享证书/密码的任何要求。 
 
-在开始之前，请确保您具有运行部署脚本的必要权限，以便配置 Azure Key Vault、移动邮箱应用程序、EXO 迁移终结点和 EXO 组织关系。 通常，全局管理员有权执行所有配置步骤。
+在启动之前，请确保你拥有运行部署脚本的必要权限，以便配置 Azure Key Vault、移动邮箱应用程序、EXO 迁移终结点和 EXO 组织关系。 通常，全局管理员有权执行所有配置步骤。
 
-此外，还需要在运行安装程序之前在源租户中启用邮件的安全组。 这些组用于对可以从源 (（有时称为 "资源) 租户"）移动到目标租户的邮箱列表进行作用域。 这样，源租户管理员可以限制或限定需要移动的特定邮箱集，从而防止迁移意外的用户。 嵌套组不受支持。
+此外，在运行安装程序之前，源租户中需要启用邮件的安全组。 这些组用于将邮箱列表的范围从源租户 (有时称为资源) 租户移动到目标租户。 这允许源租户管理员限制或限定需要移动的特定邮箱集，以防止迁移非预期用户。 不支持嵌套组。
 
-您还需要与您要将邮箱移动到的受信任合作伙伴公司 (进行通信，) 获取其 Microsoft 365 租户 ID。 在 "组织" 关系字段中使用此租户 ID `DomainName` 。
+你还需要与受信任的合作伙伴公司通信 (将邮箱移动到其) 以获取其 Microsoft 365 租户 ID。 此租户 ID 用于"组织关系" `DomainName` 字段。
 
-若要获取订阅的租户 ID，请登录到 Microsoft 365 管理中心并转到 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 单击 "租户 ID" 属性的 "复制" 图标，将其复制到剪贴板。
+若要获取订阅的租户 ID，请登录到 Microsoft 365 管理中心并转到 [https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) 。 单击租户 ID 属性的复制图标以将其复制到剪贴板。
 
-下面展示了此过程的工作原理。
+下面是该过程的工作方式。
 
 :::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="邮箱迁移的租户准备。":::
 
-[查看此图像的更大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)。
+[请参阅此图像的较大版本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)。
 
 <!--
 [![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
@@ -67,58 +67,61 @@ ms.locfileid: "49073079"
 
 ### <a name="prepare-tenants"></a>准备租户
 
-在高级别上执行安装脚本时，会进行以下配置操作。
+在高级别上，执行安装脚本时将执行以下配置操作。
 
 准备目标租户：
 
-1. 如果未提供现有 Azure 资源组，则会在脚本)  (创建一个新的 Azure 资源组。
-2. 如果未提供现有的密钥存储库，则会在脚本)  (创建一个新的密钥存储库。
-3. 将为 Office 365 Exchange Online 邮箱迁移应用程序 (脚本) 创建新的访问策略。
-4. 如果指定) 将机密保存到迁移应用程序 (SCRIPT) 中，则 (或现有证书中创建一个新证书。
-5.  (脚本) 创建新的 Azure AD 应用程序。
-6. 证书/机密将上载到迁移应用程序 (脚本) 中。
-7. 邮箱迁移权限分配给应用程序 (脚本) 。
-8. 部署脚本将暂停，直至目标管理员将同意为自己的应用程序 (脚本) 。
-9. 目标租户管理员同意 (手动) 向应用程序授予的权限。
-10. 将为目标租户 (脚本) 创建一个组织关系。
-11. 创建迁移终结点以将邮箱拉入目标租户 (脚本) 。
+1. 如果未提供现有 Azure 资源组，则使用 SCRIPT (创建一) 。
+2. 如果未提供现有密钥保管库，则使用 SCRIPT (创建一) 。
+3. 为 SCRIPT 脚本中的 Office 365 Exchange Online 邮箱迁移应用程序 (访问) 。
+4. 如果指定新证书 (现有证书，则创建一) ，以将密码 (SCRIPT) 。
+5. 将创建一个新的 Azure AD 应用程序 (SCRIPT) 。
+6. 证书/密码将上载到迁移应用程序 (SCRIPT) 。
+7. 邮箱迁移权限分配给 SCRIPT (应用程序) 。
+8. 部署脚本将暂停，直到目标管理员同意使用 SCRIPT (自己的) 。
+9. 目标租户管理员同意向应用程序授予的权限 (手动) 。
+10. 组织关系将创建到目标租户 (SCRIPT) 。
+11. 创建迁移终结点以将邮箱拉至 SCRIPT (目标) 。
 
 准备源租户：
 
-1. 源租户管理员接受来自目标租户 (手动) 的邮箱迁移应用程序邀请的许可。
-2. 源租户管理员在其租户中创建已启用邮件的安全组，以包含迁移应用程序允许移动的邮箱列表 (手动) 。
-3. 将为指定邮箱迁移应用程序的目标租户创建一个组织关系，以便将移动请求 (脚本) 中的 "OAuth 验证"。
+1. 源租户管理员接受来自手动迁移目标租户 (邮箱) 。
+2. 源租户管理员在租户中创建一个启用邮件的安全组，以包含允许迁移应用程序在 MANUAL (移动的) 。
+3. 创建与目标租户的组织关系，指定邮箱迁移应用程序应用于 OAuth 验证，以接受 SCRIPT (移动) 。
 
-#### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>针对目标租户管理员的分步说明
+#### <a name="step-by-step-instructions-for-the-target-tenant-admin"></a>目标租户管理员的分步说明
 
-1. 从 [GitHub 存储库](https://github.com/microsoft/cross-tenant/releases/tag/Preview)中下载目标租户安装程序的 SetupCrossTenantRelationshipForTargetTenant.ps1 脚本。 
-2. 将脚本 ( # A0) 保存到将在其中执行脚本的计算机。
-3. 创建与 Exchange Online 目标租户的远程 PowerShell 连接。 此外，请确保您具有运行部署脚本的必要权限，以便配置 Azure Key Vault 存储和证书、移动邮箱应用程序、EXO 迁移终结点和 EXO 组织关系。
-4. 将文件文件夹目录更改为脚本位置，或验证脚本当前是否已保存到远程 PowerShell 会话中的当前位置。
-5. 使用以下参数和值运行脚本。
+1. 从 [gitHub](https://github.com/microsoft/cross-tenant/releases/tag/Preview)SetupCrossTenantRelationshipForTargetTenant.ps1下载目标租户安装程序的脚本。 
+2. 将脚本 (SetupCrossTenantRelationshipForTargetTenant.ps1) 保存到要执行脚本的计算机。
+3. 创建到 Exchange Online 目标租户的远程 PowerShell 连接。 同样，请确保你拥有运行部署脚本的必要权限，以便配置 Azure 密钥保管库存储和证书、移动邮箱应用程序、EXO 迁移终结点和 EXO 组织关系。
+4. 将文件文件夹目录更改为脚本位置或验证脚本当前是否保存到远程 PowerShell 会话中当前的位置。
+5. 运行具有以下参数和值的脚本。
 
     | 参数 | 值 | 必需或可选
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | 源租户域，如 fabrikam \. onmicrosoft.com。 | 必需 |
-    | -ResourceTenantAdminEmail                   | 源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。 | 必需 |
-    | -TargetTenantDomain                         | 目标租户域，如 contoso \. onmicrosoft.com。 | 必需 |
-    | -ResourceTenantId                           | 源租户组织 ID (GUID) 。 | 必需 |
-    | -SubscriptionId                             | 用于创建资源的 Azure 订阅。 | 必需 |
-    | -ResourceGroup                              | 包含或将包含密钥保管库的 Azure 资源组名称。 | 必需 |
-    | -KeyVaultName                               | 将存储邮箱迁移应用程序证书/机密的 Azure Key Vault 实例。 | 必需 |
-    | -CertificateName                            | 在密钥保管库中生成或搜索证书时的证书名称。 | 必需 |
-    | -CertificateSubject                         | Azure Key Vault 证书使用者名称，例如 CN = contoso_fabrikam。 | 必需 |
-    | -ExistingApplicationId                      | 要使用的邮件迁移应用程序（如果已经创建了一个）。 | 可选 |
-    | -AzureAppPermissions                        | 授予邮箱迁移应用程序所需的权限，例如 Exchange 或 MSGraph (Exchange 以移动邮箱，MSGraph 使用此应用程序将同意链接邀请发送到资源租户) 。 | 必需 |
-    | -UseAppAndCertGeneratedForSendingInvitation | 用于使用为迁移创建的应用程序的参数，用于向源租户管理员发送同意链接邀请。如果不存在，则会提示目标管理员的凭据连接到 Azure 邀请管理器，并将邀请作为目标管理员发送。 | 可选 |
-    | -KeyVaultAuditStorageAccountName            | 将存储主要保管库审核日志的存储帐户。 | 可选 |
-    | -KeyVaultAuditStorageResourceGroup          | 包含存储密钥保管库审核日志的存储帐户的资源组。 | 可选 |
+    | -ResourceTenantDomain                       | 源租户域，例如fabrikam.onmicrosoft.com。 | 必填 |
+    | -ResourceTenantAdminEmail                   | 源租户管理员的电子邮件地址。 这是将同意使用从目标管理员发送的邮箱迁移应用程序的源租户管理员。这是将接收应用程序的电子邮件邀请的管理员。 | 必填 |
+    | -TargetTenantDomain                         | 目标租户域，例如contoso.onmicrosoft.com。 | 必填 |
+    | -ResourceTenantId                           | 源租户组织 ID (GUID) 。 | 必填 |
+    | -SubscriptionId                             | 用于创建资源的 Azure 订阅。 | 必填 |
+    | -ResourceGroup                              | 包含或将包含密钥保管库的 Azure 资源组名称。 | 必填 |
+    | -KeyVaultName                               | 将存储邮箱迁移应用程序证书/密码的 Azure Key Vault 实例。 | 必填 |
+    | -CertificateName                            | 在密钥保管库中生成或搜索证书时证书名称。 | 必填 |
+    | -CertificateSubject                         | Azure 密钥保管库证书主题名称，例如 CN=contoso_fabrikam。 | 必填 |
+    | -ExistingApplicationId                      | 要用于已创建的邮件迁移应用程序。 | 可选 |
+    | -AzureAppPermissions                        | 为邮箱迁移应用程序（如 Exchange 或 MSGraph (Exchange）授予移动邮箱所需的权限，MSGraph 用于使用此应用程序向资源租户邮箱发送同意链接) 。 | 必填 |
+    | -UseAppAndCertGeneratedForSendingInvitation | 用于使用为迁移创建的应用程序的参数，用于向源租户管理员发送同意链接邀请。如果不存在，将提示目标管理员的凭据连接到 Azure 邀请管理器，并作为目标管理员发送邀请。 | 可选 |
+    | -KeyVaultAuditStorageAccountName            | 存储密钥保管库审核日志的存储帐户。 | 可选 |
+    | -KeyVaultAuditStorageResourceGroup          | 包含用于存储密钥保管库审核日志的存储帐户的资源组。 | 可选 |
     ||||
 
-6. 该脚本将暂停，并要求您接受或同意在此过程中创建的 Exchange 邮箱迁移应用程序。 下面是一个示例。
+    >[!Note]
+    > 请确保在运行脚本之前已安装 Azure AD PowerShell 模块。 有关安装 ![ 步骤， ](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-5.1.0) 请参阅此处
+
+6. 脚本将暂停，并要求你接受或同意在此过程期间创建的 Exchange 邮箱迁移应用程序。 下面是一个示例。
 
     ```powershell
-    PS C:\Users\Admin\scripts\T2TMovesV2> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
+    PS C:\PowerShell\> .\SetupCrossTenantRelationshipForTargetTenant.ps1 -ResourceTenantDomain contoso.onmicrosoft.com -ResourceTenantAdminEmail admin@contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ResourceTenantId ksagjid39-ede2-4d2c-98ae-874709325b00 -SubscriptionId e4ssd05d-a327-49ss-849a-sd0932439023 -ResourceGroup "Cross-TenantMoves" -KeyVaultName "Cross-TenantMovesVault" -CertificateName "Contoso-Fabrikam-cert" -CertificateSubject "CN=Contoso_Fabrikam" -AzureAppPermissions Exchange, MSGraph -UseAppAndCertGeneratedForSendingInvitation -KeyVaultAuditStorageAccountName "t2tstorageaccount" -KeyVaultAuditStorageResourceGroup "Demo"
 
     cmdlet Get-Credential at command pipeline position 1
     Supply values for the following parameters:
@@ -137,17 +140,17 @@ ms.locfileid: "49073079"
     https://login.microsoftonline.com/contoso.onmicrosoft.com/adminconsent?client_id=6fea6ssd-0753-404d-wer5-c71a154d675c&redirect_uri=https://office.com
     Application details to be registered in organization relationship: ApplicationId: [ 6fes8en4-sjo3-406d-ad35-sldkfjiew993 ]. KeyVault secret Id: [ https://cross-tenantmovesvault.vault.azure.net:443/certificates/Contoso-Fabrikam-cert/ksdfj843nt8476h84c288c5a3fb8ec5fdb08 ]. These values are available in variables $AppId and $CertificateId respectively
     Please consent to the application for fabrikam.onmicrosoft.com before sending invitation to admin@contoso.onmicrosoft.com:
-    ``` 
+    ```  
 
-7. 将在远程 PowerShell 会话中显示一个 URL。 复制为您的租户同意提供的链接，并将其粘贴到 Web 浏览器中。
+7. 远程 PowerShell 会话中将显示 URL。 复制为租户许可提供的链接，并将其粘贴到 Web 浏览器中。
 
-8. 使用全局管理员凭据登录。 出现以下屏幕时，选择 " **接受** "。
+8. 使用全局管理员凭据登录。 显示以下屏幕时，选择"接受 **"。**
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="&quot;接受权限&quot; 对话框":::
-    
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="&quot;接受权限&quot;对话框":::
+
 9. 切换回远程 PowerShell 会话并按 Enter 继续。
 
-10. 脚本将配置其余的安装程序对象。 下面是一个示例。
+10. 该脚本将配置其余的设置对象。 下面是一个示例。
 
     ```powershell
     Successfully sent invitation to admin@contoso.onmicrosoft.com
@@ -158,38 +161,38 @@ ms.locfileid: "49073079"
 
 目标管理员设置现已完成！
 
-#### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>有关源租户管理员的分步说明
+#### <a name="step-by-step-instructions-for-the-source-tenant-admin"></a>源租户管理员的分步说明
 
-1.  在设置过程中，以由目标管理员指定的-ResourceTenantAdminEmail 的身份登录邮箱。 查找来自目标租户的电子邮件邀请，然后选择 " **开始入门** " 按钮。
+1.  以目标管理员在设置过程中指定的 -ResourceTenantAdminEmail 登录邮箱。 从目标租户查找电子邮件邀请，然后选择" **开始"** 按钮。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="&quot;已邀请您&quot; 对话框":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="你已被邀请对话框":::
 
-2. 选择 " **接受** " 接受邀请。
+2. 选择 **"** 接受"接受邀请。
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受权限的对话框":::
 
    > [!NOTE]
-   > 如果你未收到此电子邮件或找不到此电子邮件，则会向目标租户管理员提供一个直接 URL，以接受邀请。 URL 应在目标租户管理员的远程 PowerShell 会话的脚本中。
+   > 如果未收到此电子邮件或找不到此电子邮件，则为目标租户管理员提供了一个直接 URL，可提供给你接受邀请。 URL 应输入目标租户管理员的远程 PowerShell 会话的脚本中。
 
-3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个已启用邮件的安全组以控制目标租户允许的邮箱列表，以将源租户中的 (移动) 从源租户推送到目标租户。 您无需提前填充此组，但必须至少提供一个组，才能运行 "安装步骤" (脚本) 。 不支持嵌套组。 
+3. 在 Microsoft 365 管理中心或远程 PowerShell 会话中，创建一个或多个启用邮件的安全组，以控制目标租户允许的邮箱列表，以将 () 从源租户移动到目标租户。 无需提前填充此组，但必须至少提供一个组，以运行脚本 (安装) 。 不支持嵌套组。 
 
-4. 在 [此处](https://github.com/microsoft/cross-tenant/releases/tag/Preview)从 GitHub 存储库中下载源租户安装程序的 SetupCrossTenantRelationshipForTargetResource.ps1 脚本。 
+4. 从 gitHub SetupCrossTenantRelationshipForTargetResource.ps1下载源租户设置的脚本 [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) ：. 
 
-5. 使用 Exchange 管理员权限创建与源租户的远程 PowerShell 连接。 由于 Azure 应用程序创建过程，不需要全局管理员权限来配置源租户（仅限目标租户）。
+5. 使用 Exchange 管理员权限创建到源租户的远程 PowerShell 连接。 由于 Azure 应用程序创建过程，配置源租户（仅目标租户）不需要全局管理员权限。
 
-6. 将目录更改为脚本位置，或验证脚本当前是否已保存到远程 PowerShell 会话中的当前位置。
+6. 将目录更改为脚本位置或验证脚本当前是否保存到远程 PowerShell 会话中当前的位置。
 
-7. 运行带有以下必需参数和值的脚本。
+7. 运行具有以下必需参数和值的脚本。
 
     | 参数 | 值 |
     |-----|------|
-    | -SourceMailboxMovePublishedScopes | 由源租户为在迁移范围内的标识/邮箱创建的已启用邮件的安全组。 |
-    | -ResourceTenantDomain | 源租户域名，如 fabrikam \. onmicrosoft.com。 |
-    | -TargetTenantDomain | 目标租户域名，如 contoso \. onmicrosoft.com。 |
-    | -ApplicationId | 用于迁移的应用程序的 Azure 应用程序 ID (GUID) 。 通过 Azure 门户提供的应用程序 ID (Azure AD、企业应用程序、应用名称、应用程序 ID) 或包含在邀请电子邮件中。  |
-    | -TargetTenantId | 目标租户的租户 ID。 例如，contoso onmicrosoft.com 租户的 Azure AD 租户 ID \. 。 |
+    | -SourceMailboxMovePublishedScopes | 源租户为迁移范围内标识/邮箱创建的启用邮件的安全组。 |
+    | -ResourceTenantDomain | 源租户域名，例如fabrikam.onmicrosoft.com。 |
+    | -TargetTenantDomain | 目标租户域名，例如contoso.onmicrosoft.com。 |
+    | -ApplicationId | Azure 应用程序 ID (用于) 的应用程序的 GUID ID。 通过 Azure 门户获取的应用程序 ID (Azure AD、企业应用程序、应用名称、) ID 或包含在邀请电子邮件中。  |
+    | -TargetTenantId | 目标租户的租户 ID。 例如，租户的 Azure AD contoso.onmicrosoft.com ID。 |
     |||
-    
+
     下面是一个示例。
     ```powershell
     SetupCrossTenantRelationshipForResourceTenant.ps1 -SourceMailboxMovePublishedScopes "MigScope","MyGroup" -ResourceTenantDomain contoso.onmicrosoft.com -TargetTenantDomain fabrikam.onmicrosoft.com -ApplicationId sdf5e87sa-0753-dd88-ad35-c71a15cs8e44c -TargetTenantId 4sdkfo933-3904-sd93-bf9a-sdi39402834
@@ -199,15 +202,15 @@ ms.locfileid: "49073079"
 
 源管理员设置现已完成！
 
-### <a name="verify-setup"></a>验证安装程序
+### <a name="verify-setup"></a>验证设置
 
-验证是否成功创建了目标中的源租户和目标租户以及迁移终结点中的组织关系。
+验证目标中的源租户和目标租户以及迁移终结点中的组织关系是否成功创建。
 
 #### <a name="target-tenant"></a>目标租户
 
 **组织关系**
 
-验证是否已使用此命令创建并配置了组织关系对象。
+验证已使用此命令创建和配置组织关系对象。
 
 ```powershell
 Get-OrganizationRelationship <source tenant organization name> | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
@@ -215,7 +218,7 @@ Get-OrganizationRelationship <source tenant organization name> | fl name, Domain
 如以下示例所示：
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
+PS C:\PowerShell\> Get-OrganizationRelationship fabrikam_contoso_1178 | fl name, DomainNames, MailboxMoveEnabled, MailboxMoveCapability
 
 Name                  : fabrikam_contoso_1123
 DomainNames           : {sd0933me9f-9304-s903-s093-s093mfi903m4}
@@ -226,7 +229,7 @@ MailboxMoveCapability : Inbound
 
 **迁移终结点**
 
-验证是否已使用此命令创建并配置迁移终结点对象。
+验证已使用此命令创建和配置迁移终结点对象。
 
 ```powershell
 Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
@@ -235,7 +238,7 @@ Get-MigrationEndpoint "<fabrikam_contoso_1123> | fl Identity, RemoteTenant, Appl
 下面是一个示例。
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
+PS C:\PowerShell\> Get-MigrationEndpoint fabrikam_contoso_1123 | fl Identity, RemoteTenant, ApplicationId, AppSecretKeyVaultUrl
 
 
 Identity             : fabrikam_contoso_1123
@@ -249,15 +252,16 @@ AppSecretKeyVaultUrl : https://cross-tenantmyvaultformoves.vault.azure.net:443/c
 
 **组织关系**
 
-验证是否已使用此命令创建并配置了组织关系对象。
+验证已使用此命令创建和配置组织关系对象。
 
 ```powershell
 Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
 ```
+
 下面是一个示例。
 
 ```powershell
-PS C:\Users\Admin\scripts\T2TMovesV2> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
+PS C:\PowerShell\> Get-OrganizationRelationship | fl name, MailboxMoveEnabled, MailboxMoveCapability, MailboxMovePublishedScopes, OAuthApplicationId
 
 
 Name                       : fabrikam_contoso_001
@@ -269,125 +273,127 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>将邮箱移回原始源
 
-如果要将邮箱移回原始源租户，则需要在新的源和新的目标租户中运行相同的一组步骤和脚本。 现有的组织关系对象将被更新或追加，而不是重新创建。
+如果需要将邮箱移回原始源租户，则需要在新源租户和新目标租户中运行相同的步骤和脚本集。 将更新或追加现有组织关系对象，而不是重新创建该对象。
 
-## <a name="prepare-target-user-objects-for-migration"></a>为迁移准备目标用户对象
+## <a name="prepare-target-user-objects-for-migration"></a>准备目标用户对象进行迁移
 
-迁移的用户必须在目标租户和 Exchange Online 系统中存在 (作为 MailUsers) 标有特定属性以启用跨租户移动。 对于在目标租户中未正确设置的用户，系统将发生故障移动。 以下部分详细介绍了目标租户的 MailUser 对象要求。
+迁移的用户必须存在于目标租户和 Exchange Online 系统中 (作为 MailUsers) 使用特定属性进行标记才能启用跨租户移动。 对于未在目标租户中正确设置的用户，系统移动将失败。 以下部分详细介绍了目标租户的 MailUser 对象要求。
 
 ### <a name="prerequisites"></a>先决条件
   
-您必须确保在目标组织中设置以下对象和属性。  
+必须确保在目标组织中设置以下对象和属性。  
 
-1. 对于从源组织移动的任何邮箱，必须在目标组织中预配 MailUser 对象： 
-   - 目标 MailUser 必须包含源邮箱中的这些属性，或使用新的 User 对象分配这些属性：
-      - ExchangeGUID (从源到目标) 的直接流–邮箱 GUID 必须匹配。 如果目标对象上不存在，则移动过程不会继续。 
-      - ArchiveGUID (从源到目标) 的直接流–存档 GUID 必须匹配。 如果目标对象上不存在，则移动过程不会继续。  (仅当源邮箱已启用存档) 时才需要这样做。 
-      - LegacyExchangeDN (flow as proxyAddress，"x500： <LegacyExchangeDN> " ) – LegacyExchangeDN 必须在目标 MailUser 上以 x500： proxyAddress 的形式存在。 如果目标对象上不存在，则移动进程不会继续。 
-      - UserPrincipalName – UPN 将与用户的新标识或目标公司 (例如，user@northwindtraders.onmicrosoft.com) 相一致。 
-      - 主 SMTPAddress –主 SMTP 地址将与用户的新公司 (例如，user@northwind.com) 。 
-      - TargetAddress/ExternalEmailAddress – MailUser 将引用在源租户 (中托管的用户的当前邮箱，例如 user@contoso.onmicrosoft.com) 。 在分配此值时，请验证您是否具有/也分配了 PrimarySMTPAddress，否则此值将设置将导致移动失败的 PrimarySMTPAddress。 
-      - 您不能将旧 smtp 代理地址从源邮箱添加到目标 MailUser。 例如，您无法在 fabrikam.onmicrosoft.com 租户对象) 中的 MEU 上维护 contoso.com。 域仅与一个 Azure AD 或 Exchange Online 租户相关联。
+1. 对于从源组织移动的任何邮箱，必须在目标组织中设置 MailUser 对象： 
+   - 目标 MailUser 必须具有源邮箱中的这些属性或分配有新的 User 对象：
+      - ExchangeGUID (源到目标) 流 – 邮箱 GUID 必须匹配。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。 
+      - ArchiveGUID (源到目标) 流 – 存档 GUID 必须匹配。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。  (仅在源邮箱已启用存档时，才需要) 。 
+      - LegacyExchangeDN (作为 proxyAddress， "x500： <LegacyExchangeDN> ") – LegacyExchangeDN 必须作为 x500： proxyAddress 存在于目标 MailUser 上。 如果目标对象上不存在移动过程，则移动过程将不会继续进行。 
+      - UserPrincipalName – UPN 将符合用户的新标识或目标公司 (例如，user@northwindtraders.onmicrosoft.com) 。 
+      - 主 SMTP 地址 – 主 SMTP 地址与用户的新公司地址 (例如，user@northwind.com) 。 
+      - TargetAddress/ExternalEmailAddress – MailUser 将引用托管在源租户中的用户当前邮箱 (例如user@contoso.onmicrosoft.com) 。 分配此值时，请确认你已/正在分配 PrimarySMTPAddress，否则此值将设置会导致移动失败的 PrimarySMTPAddress。 
+      - 无法将源邮箱中的旧版 smtp 代理地址添加到目标 MailUser。 例如，无法在 MEU 上contoso.com MEU 上fabrikam.onmicrosoft.com租户) 。 域仅与一个 Azure AD 或 Exchange Online 租户关联。
  
-    **目标** MailUser 对象示例：
+    示例 **目标** MailUser 对象：
  
     | 属性             | 值                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | Alias                 | LaraN                                                                                                                    |
+    | 别名                 | LaraN                                                                                                                    |
     | RecipientType         | MailUser                                                                                                                 |
     | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders \. onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara \. Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP： LaraN@contoso \. onmicrosoft.com                                                                                       |
+    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = 第一个组织/ou = Exchange 管理组                                                                   |
-    |                       |  (FYDIBOHF23SPDLT) /cn = 收件人/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | x500：/o = 第一个组织/ou = Exchange 管理组 (FYDIBOHF23SPDLT) /cn = 收件人/cn = d11ec1a2cacd4f81858c8190  |
+    | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                                                                   |
+    |                       |  (FYDIBOHF23SPDLT) /cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                  |
+    | EmailAddresses        | x500：/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT) /cn=Recipients/cn=d11ec1a2cacd4f81858c8190  |
     |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp： LaraN@northwindtraders \. onmicrosoft.com                                                                              |
-    |                       | SMTP： Lara \. Newton@northwind.com                                                                                           |
+    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
     |||
 
    示例 **源** 邮箱对象：
 
    | 属性             | 值                                                                    |
    |-----------------------|--------------------------------------------------------------------------|
-   | Alias                 | LaraN                                                                    |
+   | 别名                 | LaraN                                                                    |
    | RecipientType         | UserMailbox                                                              |
    | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso \. onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara \. Newton@contoso.com                                                  |
+   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = 第一个组织/ou = Exchange 管理组                   |
-   |                       |  (FYDIBOHF23SPDLT) /cn = 收件人/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp： LaraN@contoso \. onmicrosoft.com 
-   |                       | SMTP： Lara \. Newton@contoso.com          |
+   | LegacyExchangeDN      | /o=First Organization/ou=Exchange Administrative Group                   |
+   |                       |  (FYDIBOHF23SPDLT) /cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  |
+   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+   |                       | SMTP:Lara.Newton@contoso.com          |
    |||
 
-   - 其他属性可能已包含在 Exchange 混合写回中。 如果不是，则应包含它们。 
-   - msExchBlockedSendersHash –将从客户端到本地 Active Directory 的安全和被阻止的发件人数据写回到本地。
-   - msExchSafeRecipientsHash –将从客户端到本地 Active Directory 的安全和被阻止的发件人数据写回到本地。
-   - msExchSafeSendersHash –将从客户端到本地 Active Directory 的安全和被阻止的发件人数据写回到本地。
+   - 其他属性可能已包含在 Exchange 混合写回中。 如果没有，应包含它们。 
+   - msExchBlockedSendersHash – 将来自客户端的联机安全且阻止的发件人数据写回本地 Active Directory。
+   - msExchSafeRecipientsHash – 将来自客户端的联机安全且阻止的发件人数据写回本地 Active Directory。
+   - msExchSafeSendersHash – 将来自客户端的联机安全且阻止的发件人数据写回本地 Active Directory。
 
-2. 如果源邮箱在 LitigationHold 上，源邮箱可恢复的项目大小大于数据库默认值 (30 GB) ，由于目标配额小于源邮箱大小，移动不会继续。 您可以更新目标 MailUser 对象，将 ELC 邮箱标记从源环境转换为目标，这将触发目标系统将 MailUser 的配额扩展到 100 GB，从而允许移动到目标。 这些说明仅适用于运行 Azure AD Connect 的混合身份，因为用于标记 ELC 标志的命令不会向租户管理员公开。
+2. 如果源邮箱位于 LitigationHold 中，并且源邮箱"可恢复的项目"大小大于数据库默认 (30 GB) ，将不会继续移动，因为目标配额小于源邮箱大小。 您可以更新目标 MailUser 对象以将 ELC 邮箱标志从源环境转换到目标，这将触发目标系统将 MailUser 的配额扩展到 100 GB，从而允许移动到目标。 这些说明仅适用于运行 Azure AD Connect 的混合标识，因为标记 ELC 标志的命令不会向租户管理员公开。
 
     >[!Note]
-    > 示例-原样，无担保<br/>此脚本假定连接到源邮箱 (，以获取源值) 和目标本地 Active Directory (以标记 Microsoft.rtc.management.adconnect.schema.aduser 对象) 。 如果源已启用诉讼或单个项目恢复，请在目标帐户上设置此设置。  这会将目标帐户的转储程序大小增加到 100 GB。
+    > 示例 – 就目前来说，无担保<br/>此脚本假定连接到源邮箱 (源值) 和目标本地 Active Directory (标记 ADUser 对象) 。 如果源已启用诉讼或单个项目恢复，请对目标帐户进行此项设置。  这会将目标帐户的垃圾站大小增加至 100 GB。
 
     ```powershell
     $ELCValue = 0 
     if ($source.LitigationHoldEnabled) {$ELCValue = $ELCValue + 8} if ($source.SingleItemRecoveryEnabled) {$ELCValue = $ELCValue + 16} if ($ELCValue -gt 0) {Set-ADUser -Server $domainController -Identity $destination.SamAccountName -Replace @{msExchELCMailboxFlags=$ELCValue}} 
     ```
-3. 在迁移之前，非混合目标租户可以修改 MailUsers 的 "可恢复的项目" 文件夹中的配额，方法是运行以下命令，在 MailUser 对象上启用诉讼保留，并将配额增加到 100 GB： `Set-MailUser -EnableLitigationHoldForMigration $TRUE` 。 注释此操作不适用于混合中的租户。
 
-4. 目标组织中的用户必须具有适用于组织的相应 Exchange Online 订阅的许可。 您可以在邮箱移动前应用许可证，但只有在使用 ExchangeGUID 和代理地址正确设置目标 MailUser 之后。 在应用 ExchangeGUID 之前应用许可证将导致在目标组织中预配新邮箱。 
+3. 非混合目标租户可以在迁移前修改 MailUsers 的"可恢复的项目"文件夹的配额，方法为运行以下命令以对 MailUser 对象启用诉讼保留，将配额增加至 100 `Set-MailUser -EnableLitigationHoldForMigration $TRUE` GB： 请注意，这适用于混合租户。
+
+4. 目标组织的用户必须通过适用于组织的适当 Exchange Online 订阅获得许可。 您可以在邮箱移动之前应用许可证，但仅在使用 ExchangeGUID 和代理地址正确设置目标 MailUser 之后。 在应用 ExchangeGUID 之前应用许可证将导致在目标组织中设置新的邮箱。 
 
     > [!Note]
-    > 在对邮箱或 MailUser 对象应用许可证时，将会对所有 SMTP 类型 proxyAddresses 进行清理，以确保 Exchange EmailAddresses 阵列中仅包含已验证的域。 
+    > 在邮箱或 MailUser 对象上应用许可证时，会擦除所有 SMTP 类型代理地址，以确保 Exchange EmailAddresses 数组中仅包含已验证的域。 
 
-5. 必须确保目标 MailUser 没有与源 ExchangeGuid 不匹配的以前的 ExchangeGuid。 如果目标 MEU 之前已授权使用 Exchange Online 并预配了邮箱，则可能会出现这种情况。 如果目标 MailUser 之前已授权或具有与源 ExchangeGuid 不匹配的 ExchangeGuid，则需要执行云 MEU 的清理。 对于这些云 Meu，您可以运行 `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` 命令。 
+5. 必须确保目标 MailUser 之前没有与源 ExchangeGuid 不匹配的 ExchangeGuid。 如果目标 MEU 之前已获得 Exchange Online 许可并预配了邮箱，则可能会发生这种情况。 如果目标 MailUser 之前已授权或拥有与源 ExchangeGuid 不匹配的 ExchangeGuid，则需要清理云 MEU。 对于这些云 MEUS，你可以运行 `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` 该命令。  
 
     > [!Caution]
-    > 此过程是不可逆的。 如果对象具有 softDeleted 邮箱，则在此之后无法还原。 但是，清除后，可以将正确的 ExchangeGuid 同步到目标对象，MRS 会将源邮箱连接到新创建的目标邮箱。  (在新参数上引用 EHLO 博客。 )  
- 
-    使用此命令查找以前为邮箱的对象。
+    > 此过程是不可逆的。 如果对象具有 softDeleted 邮箱，则在此时间点之后无法还原它。 但是，清除后，可以将正确的 ExchangeGuid 同步到目标对象，MRS 将源邮箱连接到新创建的目标邮箱。  (新参数的参考 EHLO 博客)   
+
+    使用此命令查找以前是邮箱的对象。
 
     ```powershell
     Get-User <identity> | select Name, *recipient* | ft -a**.
     ```
+
     下面是一个示例。 
 
     ```powershell
-    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize 
- 
-    Name        PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails 
-    ----       ---------------------------- ------------- -------------------- 
-    John       UserMailbox                  MailUser      MailUser 
-    ```   
- 
+    PS demo> get-user John@northwindtraders.com |select name, *recipient*| ft -AutoSize  
+
+    Name        PreviousRecipientTypeDetails     RecipientType RecipientTypeDetails  
+    ----       ---------------------------- ------------- --------------------  
+    John       UserMailbox                  MailUser      MailUser  
+    ```  
+
     使用此命令清除软删除的邮箱。
 
-    ````
+    ```powershell
     Set-User <identity> -PermanentlyClearPreviousMailboxInfo
-    ```` 
+    ```
 
     下面是一个示例。
 
     ```powershell
     PS demo> Set-User John@northwindtraders.com -PermanentlyClearPreviousMailboxInfo Confirm 
     Are you sure you want to perform this action? 
-    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY. 
+    Delete all existing information about user “John@northwindtraders.com"?. This operation will clear existing values from Previous home MDB and Previous Mailbox GUID of the user. After deletion, reconnecting to the previous mailbox that existed in the cloud will not be possible and any content it had will be unrecoverable PERMANENTLY.  
     Do you want to continue? 
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y 
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"): Y  
     ```
 
 ## <a name="perform-mailbox-migrations"></a>执行邮箱迁移
 
-跨租户 Exchange 邮箱迁移作为从目标租户启动的迁移批处理提交。 这类似于在从本地 Exchange 本地迁移到 Microsoft 365 时，进行中的迁移批处理的工作方式。 
+跨租户 Exchange 邮箱迁移作为从目标租户启动的迁移批处理提交。 这类似于从 Exchange 内部部署迁移到 Microsoft 365 时，就地迁移批处理的运行方式。 
 
 ### <a name="create-migration-batches"></a>创建迁移批处理
 
-以下是用于启动关闭移动的迁移批处理 cmdlet 示例。
+下面是开始移动的示例迁移批处理 cmdlet。
 
 ```powershell
 New-MigrationBatch -Name T2Tbatch-testforignitedemo -SourceEndpoint target_source_7977 -CSVData ([System.IO.File]::ReadAllBytes('users.csv')) -Autostart -TargetDeliveryDomain targetformoves.onmicrosoft.com -AutoComplete
@@ -399,36 +405,36 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
 ```
 
 > [!Note]
-> CSV 文件中的电子邮件地址必须是目标租户中指定的地址，而不是源租户中的电子邮件地址。
+> CSV 文件中的电子邮件地址必须是目标租户中指定的地址，而不是源租户中指定的电子邮件地址。
 
-在选择 "跨租户" 选项时，新的 Exchange 管理中心也支持迁移批提交。
- 
+选择跨租户选项时，新 Exchange 管理中心也支持迁移批处理提交。
+
 #### <a name="update-on-premises-mailusers"></a>更新本地 MailUsers
 
-邮箱从源移动到目标后，应确保使用新的 targetAddress 更新本地邮件用户（源和目标）。 在此示例中，移动中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com** 。 使用此 targetAddress 更新邮件用户。
- 
-## <a name="frequently-asked-questions"></a>常见问题解答
- 
-**是否需要在移动后在源本地更新 RemoteMailboxes？**
- 
-是的，当源租户邮箱移动到目标租户时，应更新源本地用户的 targetAddress (RemoteRoutingAddress/ExternalEmailAddress) 。  虽然邮件路由可以跟踪使用不同 targetAddresses 的多个邮件用户之间的引用，但邮件用户的忙/闲查找必须以邮箱用户的位置为目标。 忙/闲查找将不会跟踪多个重定向。 
- 
-**团队是否聊天文件夹内容迁移跨租户？** 
+邮箱从源移动到目标之后，应确保使用新的 targetAddress 更新内部部署邮件用户（源和目标）。 在示例中，移动中使用的 targetDeliveryDomain **contoso.onmicrosoft.com。** 使用此 targetAddress 更新邮件用户。
 
-否，团队聊天文件夹内容不会迁移跨租户。 
- 
-**我如何才能看到跨租户移动而不是我的加入和脱离移动的移动？**
+## <a name="frequently-asked-questions"></a>常见问题
+
+**移动后，是否需要更新源本地中的 RemoteMailbox？**
+
+是，当源租户邮箱移动到目标租户时，应更新源本地 (RemoteRoutingAddress/ExternalEmailAddress) targetAddress) 。  虽然邮件路由可以跨具有不同 targetAddresses 的多个邮件用户执行引用，但邮件用户的忙/闲查找必须面向邮箱用户的位置。 忙/闲查找不会追踪多个重定向。 
+
+**Teams 聊天文件夹内容是否跨租户迁移？**  
+
+否，Teams 聊天文件夹内容不会跨租户迁移。  
+
+**如何只看到跨租户移动移动，而不是我的载入和载出移动？**
 
 使用 `-flags` 参数。 下面是一个示例。
 
 ```powershell
-Get-MoveRequest -Flags "CrossTenant" 
+Get-MoveRequest -Flags "CrossTenant"  
 ```
- 
-**您可以提供用于复制测试中使用的属性的示例脚本吗？**
+
+**能否提供用于复制测试中使用的属性的示例脚本？**
 
 > [!Note]
-> 示例-原样，无担保<br/>此脚本假定连接到源邮箱 (以获取源值) 和目标本地 Active Directory 域服务 (以标记 Microsoft.rtc.management.adconnect.schema.aduser 对象) 。 如果源已启用诉讼或单个项目恢复，请在目标帐户上设置此设置。  这会将目标帐户的转储程序大小增加到 100 GB。
+> 示例 – 就目前来说，无担保<br/>此脚本假定与源邮箱 (连接，以获取源值) 和目标本地 Active Directory 域服务 (，以标记 ADUser 对象) 。 如果源已启用诉讼或单个项目恢复，请对目标帐户进行此项设置。  这会将目标帐户的垃圾站大小增加至 100 GB。
 
 ```powershell
 #Dumps out the test mailboxes from SourceTenant 
@@ -477,63 +483,97 @@ Start-ADSyncSyncCycle
  
 #AADSync and FWDSync will create the target MEUs in the Target tenant 
 ```
-**如何在移动使用邮箱后在第1天访问 Outlook？**
+**移动使用邮箱后如何访问第 1 天的 Outlook？**
 
-由于只有一个租户可以拥有域，所以在邮箱移动完成时，将不会将前一个主 SMTPAddress 与目标租户中的用户关联。仅适用于与新租户关联的域。 Outlook 使用新 UPN 对服务进行身份验证，并且 Outlook 配置文件预期查找旧主 SMTPAddress 以匹配目标系统中的邮箱。 由于旧版地址不在目标系统中，outlook 配置文件将不会连接以查找新移动的邮箱。 
+由于只有一个租户可以拥有一个域，因此邮箱移动完成后，以前的主 SMTPAddress 不会与目标租户中的用户关联;仅与新租户关联的域。 Outlook 使用用户新的 UPN 对服务进行身份验证，Outlook 配置文件希望查找旧版主 SMTP 地址以匹配目标系统中邮箱。 由于旧地址不在目标系统中，Outlook 配置文件无法连接以查找新移动的邮箱。 
 
-对于此初始部署，用户需要使用其新 UPN、主 SMTP 地址和重新同步 OST 内容重建其配置文件。 
+对于此初始部署，用户将需要使用新的 UPN 主 SMTP 地址重新生成其配置文件，然后重新同步 OST 内容。 
 
 > [!Note]
-> 在批处理用户完成时进行相应的规划。 在创建 Outlook 客户端配置文件，并将后续 OST 和 OAB 文件下载到客户端时，需要考虑网络利用率和容量。 
+> 在批处理用户以完成时进行相应规划。 创建 Outlook 客户端配置文件以及将后续 OST 和 OAB 文件下载到客户端时，您需要考虑网络利用率和容量。 
  
-**我需要作为其成员的 Exchange RBAC 角色才能设置或完成跨租户移动？**
+**我需要成为哪些 Exchange RBAC 角色的成员来设置或完成跨租户移动？**
  
-根据执行邮箱移动时假设的委托职责，有一个角色矩阵。 目前，需要两个角色：  
+执行邮箱移动时，存在基于委派职责假设的角色矩阵。 目前，需要两个角色：  
 
-- 第一个角色适用于一次性设置任务，用于建立将内容移入或移出租户/组织边界的授权。 由于将数据从组织控制中移出是所有公司的重要问题，因此我们选择了组织管理员 (OrgAdmin) 中分配的最高角色。 此角色必须更改或设置一个新的 Set-organizationrelationship，用于定义与远程组织的-MailboxMoveCapability。 只有 OrgAdmin 可以更改 MailboxMoveCapability 设置，而 OrganizationRelationhip 上的其他属性可以由联合共享管理员进行管理。 
+- 第一个角色用于建立将内容移入或移出租户/组织边界的授权的一次设置任务。 由于将数据从组织控制中移出是所有公司的一个关键问题，因此，我们选择具有 OrgAdmin (分配的最高) 。 此角色必须更改或设置一个新的 OrganizationRelationship，用于定义远程组织的 -MailboxMoveCapability。 只有 OrgAdmin 可以更改 MailboxMoveCapability 设置，而 OrganizationRelationhip 上的其他属性也可由联合共享管理员管理。 
  
-- 执行实际 move 命令的角色可以委派给较低级别的函数。 移动邮箱的角色分配了使用参数将邮箱移入或移出组织的功能 `-RemoteTenant` 。  
+- 执行实际移动命令的角色可以委派给较低级别的函数。 移动邮箱的角色分配有使用参数将邮箱移进组织或将邮箱移出 `-RemoteTenant` 组织的功能。  
 
-**我们如何定位在转换后的邮箱上为 targetAddress (TargetDeliveryDomain) 选择的 SMTP 地址 (到 MailUser 转换) ？**
+**如何针对转换后的邮箱 (到 MailUser 转换) 上的 targetAddress (TargetDeliveryDomain) ？**
  
-Exchange 邮箱移动使用 MRS 在将原始源邮箱转换为 MailUser 时通过) 目标对象上的电子邮件地址 (proxyAddress 来手工创建原始源邮箱上的 targetAddress。 此过程将使用传递到 move 命令的-TargetDeliveryDomain 值，然后在目标端为该域检查匹配的代理。 找到匹配项时，将使用匹配的 proxyAddress 设置已转换邮箱上的 ExternalEmailAddress (targetAddress)  (现在 MailUser) 对象。
+当通过匹配目标对象上的电子邮件地址 (proxyAddress) 转换为 MailUser 时，Exchange 邮箱使用 MRS 在原始源邮箱上创建 targetAddress。 此过程将接受传递到移动命令中的 -TargetDeliveryDomain 值，然后检查目标端上该域的匹配代理。 当我们找到匹配项时，匹配的 proxyAddress 将用于在转换的邮箱上设置 ExternalEmailAddress (targetAddress) ， (MailUser) 对象。
  
 **邮箱权限如何转换？**
 
-邮箱权限包括 "代表发送" 和 "邮箱访问"： 
+邮箱权限包括"代表发送"和"邮箱访问"： 
 
-- 代表发送 (AD： publicDelegates) 将访问用户邮箱的收件人的 DN 存储为代理人。 此值存储在 Active Directory 中，并且当前不作为邮箱转换的一部分移动。 如果源邮箱已设置 publicDelegates，则在使用命令的目标环境中，如果 MEU 到邮箱转换完成，将需要对目标邮箱上的 publicDelegates `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` 。 
+- 代表用户 (AD：publicDelegates) 存储具有用户邮箱代理访问权限的收件人的 DN。 此值存储在 Active Directory 中，当前不会作为邮箱转换的一部分移动。 如果源邮箱设置了 publicDelegates，则需要在使用命令在目标环境中完成 MEU 到邮箱转换后，在目标邮箱上重新标记 publicDelegates。 `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` 
  
-- 当主体和代理都移到目标系统时，存储在邮箱中的邮箱权限将随邮箱一起移动。 例如，用户 TestUser_7 被授予租户 SourceCompany.onmicrosoft.com 中邮箱 TestUser_8 的 FullAccess。 邮箱移动完成到 TargetCompany.onmicrosoft.com 后，将在目标目录中设置相同的权限。 在源和目标租户中使用 *add-mailboxpermission* TestUser_7 的示例如下所示。 Exchange cmdlet 将相应地加上源和目标。 
+- 当主体和代理都移动到目标系统时，邮箱中存储的邮箱权限将随邮箱一起移动。 例如，向用户TestUser_7租户中的邮箱TestUser_8 FullAccess SourceCompany.onmicrosoft.com。 在邮箱移动完成TargetCompany.onmicrosoft.com，在目标目录中设置相同的权限。 在源租户和目标租户TestUser_7 *Get-MailboxPermission* 的示例如下所示。 Exchange cmdlet 相应地以源和目标作为前缀。 
  
-下面的示例展示了邮箱权限在移动前的输出。 
+下面是移动前邮箱权限输出的示例。 
 
 ```powershell
-PS C:\DEMO Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
+PS C:\PowerShell\> Get-SourceMailboxPermission testuser_7 |ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       False
 TestUser_8@SourceCompany.onmicrosoft.com         {FullAccess}                                                            False       False....
 ```
-下面的示例展示了邮箱权限在移动后的输出。 
+下面是移动后邮箱权限输出的示例。 
 
 ```powershell
-C:\DEMO> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
+PS C:\PowerShell\> Get-TargetMailboxPermission testuser_7 | ft -AutoSize User, AccessRights, IsInherited, Deny
 User                                             AccessRights                                                            IsInherited Deny
 ----                                             ------------                                                            ----------- ----
 NT AUTHORITY\SELF                                {FullAccess, ReadPermission}                                            False       FalseTestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                                                            False       False
 ```
  
 > [!Note]
-> 不支持跨租户邮箱和日历权限。 您必须将主体和代理组织到合并的移动批处理中，以便从源租户同时转换这些连接的邮箱。 
- 
-## <a name="known-issues"></a>已知问题 
+> 不支持跨租户邮箱和日历权限。 必须将主体和代理组织到合并移动批处理中，以便同时从源租户转换这些连接邮箱。 
 
--  **问题：无法迁移自动扩展存档。** 跨租户迁移功能支持特定用户的主邮箱和存档邮箱的迁移。 如果源中的用户有一个自动扩展的存档–即有多个存档邮箱，则该功能无法迁移其他存档。
+**应向目标 MailUser 代理地址添加哪些 X500 代理以启用迁移？**  
 
-- **问题：具有非拥有的 smtp proxyAddress 的云 MailUsers 阻止 MRS 移动背景。** 创建目标租户 MailUser 对象时，必须确保所有 SMTP 代理地址都属于目标租户组织。 如果 SMTP proxyAddress 在不属于本地租户的目标邮件用户上存在，则会阻止 MailUser 转换为邮箱。 这是因为我们的保证，邮箱对象只能从受租户) 授权的域发送邮件 (域： 
-- 
-   - 在使用 Azure AD Connect 从本地同步用户时，将本地 MailUser 对象设置为 ExternalEmailAddress 指向 laran@contoso onmicrosoft.com 中 (存在邮箱的源租户 \.) 并将 PrimarySMTPAddress 标记为驻留在目标租户 (Lara.Newton@northwind com) 中的域 \. 。 这些值将同步到租户，并设置适当的邮件用户并准备好迁移。 此处显示了一个示例对象。
+跨租户邮箱迁移要求将源邮箱对象的 LegacyExchangeDN 值标记为目标 MailUser 对象的 x500 电子邮件地址。  
+
+示例：  
+```powershell
+LegacyExchangeDN value on source mailbox is:  
+/o=First Organization/ou=Exchange Administrative Group(FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara  
+
+so the x500 email address to be added to target MailUser object would be:  
+x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara  
+```
+
+> [!Note]  
+> 除了此 X500 代理之外，还需要将源邮箱的所有 X500 代理复制到目标中的邮箱。  
+
+**Azure 密钥保管库是否是必需的，以及何时进行交易？**  
+
+是的，Azure 订阅需要使用密钥保管库来存储证书以授权迁移。 与使用用户名和密码向源&登录迁移不同，跨租户邮箱迁移使用 OAuth 和此证书作为密码/凭据。 必须在所有邮箱迁移中维护对密钥保管库的访问权限，因为密钥保管库在迁移开始时和结束时访问一次，在增量同步期间每 24 小时访问一次。 你可以在此处查看 AKV 成本 [计算详细信息]( https://azure.microsoft.com/en-us/pricing/details/key-vault/)。  
+
+**您是否对批处理有任何建议？**  
+
+每批不要超过 2000 个邮箱。 强烈建议在截止日期前两周提交批处理，因为同步期间对最终用户没有影响。如果需要超过 50，000 个邮箱数量的指南，可以在以下位置联系工程反馈crosstenantmigrationpreview@service.microsoft.com。
+
+**如果我将服务加密与客户密钥一同使用，该做什么？**
+
+邮箱将在移动之前解密。 如果仍然需要客户密钥，请确保在目标租户中配置客户密钥。 有关详细信息 [，](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview) 请参阅此处。  
+
+**估计的迁移时间是什么？**
+
+为了帮助您规划迁移，此处的表显示了有关[](https://docs.microsoft.com/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times)何时预期批量邮箱迁移或单个迁移完成的准则。 这些估计基于以前客户迁移的数据分析。 由于每个环境都是唯一的，因此确切的迁移速度可能会有所不同。  
+
+请记住，此功能当前处于预览阶段，SLA 及任何适用的服务级别不适用于此功能的预览状态期间的任何性能或可用性问题。
+
+## <a name="known-issues"></a>已知问题  
+
+-  **问题：无法迁移自动展开的存档。** 跨租户迁移功能支持迁移特定用户的主邮箱和存档邮箱。 但是，如果源中的用户具有自动展开的存档，这意味着多个存档邮箱，则此功能无法迁移其他存档。
+
+- **问题：具有非拥有的 smtp 代理Address 块 MRS 的云 MailUsers 将移动后台。** 创建目标租户 MailUser 对象时，必须确保所有 SMTP 代理地址都属于目标租户组织。 如果不属于本地租户的目标邮件用户上存在 SMTP 代理地址，则阻止将 MailUser 转换为邮箱。 这是因为我们保证邮箱对象只能从租户对租户声明的域具有权威性 (域发送邮件) ： 
+
+   - 使用 Azure AD Connect 从本地同步用户时，使用指向邮箱所在的源租户的 ExternalEmailAddress 预配本地 MailUser 对象 (laran@contoso.onmicrosoft.com) 并且将 PrimarySMTPAddress 标记为驻留在目标租户 (Lara.Newton@northwind.com) 中的域。 这些值将同步到租户，并设置相应的邮件用户并准备迁移。 此处显示了一个示例对象。
      ```powershell
      target/AADSynced user] PS C> Get-MailUser laran | select ExternalEmailAddress, EmailAddresses   
      ExternalEmailAddress               EmailAddresses 
@@ -542,13 +582,13 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
      ```
 
    > [!Note]
-   > EmailAddresses/proxyAddresses 数组中 *不* 存在 *contoso. .onmicrosoft \. com* 地址。
+   > EmailAddresses /proxyAddresses *数组* 中不存在contoso.onmicrosoft.com地址。 
 
-- **问题：将 "外部" 主 SMTP 地址的 MailUser 对象修改/重置为 "内部" 公司声明域**
+- **问题：具有"外部"主 SMTP 地址的 MailUser 对象被修改/重置为"内部"公司声明的域**
 
-   MailUser 对象是指向非本地邮箱的指针。 在跨租户邮箱迁移的情况下，我们使用 MailUser 对象表示源邮箱 (从目标组织的视角) 或源组织的 "角度") 中的目标邮箱 (。 MailUsers 将有一个 ExternalEmailAddress (targetAddress) 指向实际邮箱的 smtp 地址 (ProxyTest \@ fabrikam \. onmicrosoft.com) 和 primarySMTP 地址表示在目录中显示的邮箱用户的 smtp 地址。 有些组织会选择将主 SMTP 地址显示为外部 SMTP 地址，而不是作为本地租户 (（如 fabrikam.com 而不是 contoso.com) ）所拥有/验证的地址。  但是，一旦将 Exchange service plan 对象应用于 MailUser 通过许可操作，主 SMTP 地址将被修改为显示为由本地组织 (contoso.com) 验证的域。 有以下两个可能的原因：
+   MailUser 对象是指向非本地邮箱的指针。 对于跨租户邮箱迁移，从目标组织的角度看，我们使用 MailUser 对象表示源邮箱 (，或者从源组织的角度) 目标邮箱 (表示) 。 MailUsers 将具有一个 ExternalEmailAddress (targetAddress) ，该地址指向实际邮箱 (ProxyTest@fabrikam.onmicrosoft.com) 的 smtp 地址和表示目录中邮箱用户的显示 SMTP 地址的 primarySMTP 地址。 某些组织选择将主 SMTP 地址显示为外部 SMTP 地址，而不是本地租户拥有/验证的地址 (例如 fabrikam.com 而不是contoso.com) 。  但是，通过许可操作将 Exchange 服务计划对象应用于 MailUser 后，主 SMTP 地址将修改为由本地组织验证的 (contoso.com) 。 有两个潜在原因：
    
-   - 将任何 Exchange 服务计划应用于 MailUser 时，Azure AD 进程都将开始强制实施代理清理，以确保本地组织无法从其他租户发送邮件传出、欺骗或邮件。 如果本地组织未验证地址，则具有这些服务计划的收件人对象上的任何 SMTP 地址都将被删除。 与此示例中的情况一样，Fabikam \. com 域不会由 contoso \. onmicrosoft.com 租户验证，因此清理操作会删除该 fabrikam \. com 域。 如果您希望在迁移之前或迁移之后将这些外部域保留在 MailUser 上，则需要在移动完成后或移动之前更改迁移过程以去除许可证，以确保用户应用了预期的外部品牌。 您需要确保已正确授权邮箱对象不会影响邮件服务。<br/><br/>此处显示了用于删除 Contoso onmicrosoft.com 租户中的 MailUser 上的服务计划的示例脚本 \. 。
+   - 当任何 Exchange 服务计划应用于 MailUser 时，Azure AD 进程开始强制执行代理清理，以确保本地组织无法从另一个租户发送邮件、欺骗或邮件。 如果本地组织未验证该地址，将删除具有这些服务计划的收件人对象上的任何 SMTP 地址。 与示例中的情况一样，Fabikam.com租户不验证 contoso.onmicrosoft.com 域，因此清理会删除该fabrikam.com域。 如果希望在迁移之前或迁移后在 MailUser 上保留这些外部域，则需要更改迁移过程，以在移动完成后或移动之前去除许可证，以确保用户应用了预期的外部品牌。 您需要确保邮箱对象已正确许可，不会影响邮件服务。<br/><br/>此处显示了用于删除邮件租户中 MailUser Contoso.onmicrosoft.com的示例脚本。
 
     ```powershell
     $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans 
@@ -558,7 +598,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
     Set-MsolUserLicense -UserPrincipalName proxytest@contoso.com LicenseOptions $lo 
     ```
 
-       此处显示了所分配的 ServicePlans 集的结果。
+       此处显示了分配的 ServicePlans 集的结果。
 
     ```powershell
     (Get-MsolUser -UserPrincipalName proxytest@contoso.com).licenses |select 
@@ -603,7 +643,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
 
     ```
  
-       用户的 PrimarySMTPAddress 不再会再被清理。 Fabrikam.com 域不归 contoso.onmicrosoft.com 租户所有，并将作为目录中显示的主 SMTP 地址保留。
+       用户的 PrimarySMTPAddress 不再被清理。 该fabrikam.com域不归 contoso.onmicrosoft.com所有，并且将保留为目录中显示的主 SMTP 地址。
 
        下面是一个示例。
 
@@ -614,14 +654,14 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
     proxytest@fabrikam.com    e2513482-1d5b-4066-936a-cbc7f8f6f817    SMTP:proxytest@fabrikam.com 
     ```
 
-   - 如果 msExchRemoteRecipientType 设置为 8 (DeprovisionMailbox) ，对于迁移到目标租户的本地 MailUsers，Azure 中的代理清理逻辑将删除 nonowned 域，并将 primarySMTP 重置为拥有的域。 通过清除本地 MailUser 中的 msExchRemoteRecipientType，代理清理逻辑不再适用。 <br/><br>以下是包括 Exchange Online 的一组可能的服务计划。
+   - 当 msExchRemoteRecipientType 设置为 8 (DeprovisionMailbox) 时，对于迁移到目标租户的本地 MailUsers，Azure 中的代理清理逻辑将删除非域，将 primarySMTP 重置为拥有域。 通过清除本地 MailUser 中的 msExchRemoteRecipientType，代理清理逻辑将不再适用。 <br/><br>以下是包括 Exchange Online 的完整服务计划集。
 
    | 名称                                              |
    |---------------------------------------------------|
    | 高级电子数据展示存储 (500GB)                |
    | 客户密码箱                                  |
    | 数据丢失防护                              |
-   | Exchange Enterprise CAL 服务 (EOP、DLP)        |
+   | Exchange Enterprise CAL Services (EOP、DLP)        |
    | Exchange Essentials                               |
    | Exchange Foundation                               |
    | Exchange Online (P1)                               |
@@ -635,13 +675,13 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Exchange Online 计划 1                            |
    | Exchange Online POP                               |
    | Exchange Online Protection                        |
-   | 信息障碍                              |
+   | 信息屏障                              |
    | 适用于 Office 365 的信息保护 - 高级版   |
    | 适用于 Office 365 的信息保护 - 标准版  |
-   | 通过 MyAnalytics 的见解                           |
+   | MyAnalytics 的见解                           |
    | Microsoft 365 高级审核                   |
    | Microsoft Bookings                                |
-   | Microsoft Business Center                         |
+   | Microsoft 商业中心                         |
    | Microsoft MyAnalytics（完整版）                      |
    | Office 365 高级电子数据展示                    |
    | Microsoft Defender for Office 365 (计划 1)     |
