@@ -3,7 +3,7 @@ title: 配置具有基线保护的团队
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有基线保护级别的团队。
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845296"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613438"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>配置具有基线保护的团队
 
@@ -50,11 +50,11 @@ ms.locfileid: "48845296"
 设定 Teams 来宾访问设置
 
 1. 访问 [https://admin.microsoft.com](https://admin.microsoft.com) 登录到 Microsoft 365 管理中心。
-2. 在左侧导航中，单击“ **显示全部** ”。
-3. 在“ **管理中心** ”下，单击“ **团队** ”。
-4. 在 Teams 管理中心左侧导航中，展开“ **组织范围的设置** ”，然后单击“ **来宾访问** ”。
-5. 确保 **在 Teams 中允许来宾访问** 设置为“ **开** ”。
-6. 对其他来宾设置进行任何所需的更改，然后单击“ **保存** ”。
+2. 在左侧导航中，单击“**显示全部**”。
+3. 在“**管理中心**”下，单击“**团队**”。
+4. 在 Teams 管理中心左侧导航中，展开“**组织范围的设置**”，然后单击“**来宾访问**”。
+5. 确保 **在 Teams 中允许来宾访问** 设置为“**开**”。
+6. 对其他来宾设置进行任何所需的更改，然后单击“**保存**”。
 
 > [!NOTE]
 > 启用后，Teams 来宾设置最多可能需要二十四个小时才能生效。
@@ -63,13 +63,13 @@ ms.locfileid: "48845296"
 
 ## <a name="site-and-file-sharing"></a>网站和文件共享
 
-为了降低意外与组织外部人员共享文件或文件夹的风险，建议将 SharePoint 的默认共享链接更改为“ *仅限组织中的人员* ”。 （如果用户需要在外部共享，并且启用了来宾共享，他们在共享时仍可以更改链接类型。）
+为了降低意外与组织外部人员共享文件或文件夹的风险，建议将 SharePoint 的默认共享链接更改为“*仅限组织中的人员*”。 （如果用户需要在外部共享，并且启用了来宾共享，他们在共享时仍可以更改链接类型。）
 
 更改默认共享链接
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在“ **策略** ”下，单击“ **共享** ”。
-3. 在“ **文件和文件夹链接** ”下，选中“ **仅限组织中的人员** ”。
-4. 单击“ **保存** ”。
+2. 在“**策略**”下，单击“**共享**”。
+3. 在“**文件和文件夹链接**”下，选中“**仅限组织中的人员**”。
+4. 单击“**保存**”。
 
 为了获得最佳的来宾共享体验，我们还建议你启用 [SharePoint 和 OneDrive与 Azure AD B2B 集成](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 
@@ -84,17 +84,17 @@ ms.locfileid: "48845296"
 为了帮助进行权限管理，我们建议将关联的站点配置为仅允许所有者自己共享该站点。 这简化了权限管理，有助于阻止团队所有者不知道的人员访问。 对需要基线保护的每个团队执行此操作。
 
 更新网站共享设置
-1. 在团队的工具栏中，单击“ **文件** ”。
-2. 单击“ **在 SharePoint 中打开** ”。
-3. 在 SharePoint 网站的工具栏中，依次单击设置图标和“ **网站权限** ”。
-4. 在“ **网站权限** ”窗格的“ **共享设置** ”下方，单击“ **更改共享设置** ”。
-5. 在“ **共享权限** ”下，选择选择“ **网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站** ”，然后单击“ **保存** ”。
+1. 在团队的工具栏中，单击“**文件**”。
+2. 单击“**在 SharePoint 中打开**”。
+3. 在 SharePoint 网站的工具栏中，依次单击设置图标和“**网站权限**”。
+4. 在“**网站权限**”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
+5. 在“**共享权限**”下，选择选择“**网站所有者和成员以及拥有编辑权限的人员可共享文件和文件夹，但只有网站所有者才可共享网站**”，然后单击“**保存**”。
 
 ## <a name="additional-protections"></a>附加保护
 
 Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项是否有助于提高组织的安全性。
 
-- 让来宾用户同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
+- 让来宾同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
 - 为来宾用户配置“[会话超时策略](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
 - 创建“[敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)”，并使用“[数据丢失保护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)”来设置有关访问敏感信息的策略。
 

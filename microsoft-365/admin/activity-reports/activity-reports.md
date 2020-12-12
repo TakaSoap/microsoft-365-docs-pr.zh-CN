@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 获取定期报表，了解你组织中的人员当前是如何使用 Microsoft 365 服务的。 通过使用情况概述仪表板，可深入了解每个图表获取更多见解。
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988454"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611345"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理中心中的 Microsoft 365 报表
 
@@ -41,24 +41,24 @@ ms.locfileid: "48988454"
 
 ::: moniker range="o365-worldwide"
 
-1. 在管理中心，转到“ **报表** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
+1. 在管理中心，转到“**报表**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用情况</a>页面。
 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“ **报表** ”\>“ **使用情况** ”页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>，转到“**报表**”\>“**使用情况**”页面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“ **报表** ”\>“ **使用情况** ”页面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>，转到“**报表**”\>“**使用情况**”页面。
 
 ::: moniker-end
 
-2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“ **查看更多** ”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. 在服务（如电子邮件或 OneDrive）的一览式活动卡上，单击“**查看更多**”按钮以查看报告详细信息的页面。 在那里，选项卡中提供了服务的不同报告。 <br/>![使用情况仪表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>谁可查看报表
 
@@ -90,9 +90,13 @@ ms.locfileid: "48988454"
     
 - [邮箱使用情况](mailbox-usage.md)
     
-- [Office 激活](microsoft-office-activations.md)
+- [Office 激活](microsoft-office-activations-ww.md)
 
-- [活动用户](active-users.md)
+- [适用于美国政府的 Office 激活](microsoft-office-activations.md)
+
+- [活动用户](active-users-ww.md)
+
+- [适用于美国政府的活动用户](active-users.md)
   
 - [电子邮件应用使用情况](email-apps-usage.md)
 
@@ -104,7 +108,9 @@ ms.locfileid: "48988454"
   
 - [适用于美国政府的 Dynamics 365 Customer Voice 活动](forms-pro-activity.md)
 
-- [Microsoft 365 组](office-365-groups.md)
+- [Microsoft 365 组](office-365-groups-ww.md)
+
+- [适用于美国政府的 Microsoft 365 组](office-365-groups.md)
   
 - [OneDrive for Business 用户活动](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ ms.locfileid: "48988454"
 
 - [适用于美国政府的 OneDrive for Business 的使用情况](onedrive-for-business-usage.md)
 
-- [Microsoft 365 应用使用情况](microsoft365-apps-usage.md)
+- [Microsoft 365 应用版使用情况](microsoft365-apps-usage-ww.md)
+
+- [适用于美国政府的 Microsoft 365 应用版使用情况](microsoft365-apps-usage.md)
   
 - [SharePoint 网站使用情况](sharepoint-site-usage-ww.md)
 
@@ -194,25 +202,27 @@ ms.locfileid: "48988454"
 
 ## <a name="how-to-view-licensing-information"></a>如何查看许可信息
 
-- 若要查看已分配和未分配的许可证数量，请在管理中心转到“ **账单** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>页面。
+- 若要查看已分配和未分配的许可证数量，请在管理中心转到“**账单**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">许可证</a>页面。
     
-- 若要查看已授权人员、未经授权人员或来宾，请在管理中心转到“ **用户** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>页面。 
+- 若要查看已授权人员、未经授权人员或来宾，请在管理中心转到“**用户**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">活动用户</a>页面。 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>如何查看特定用户的使用情况信息
 
 使用服务报表调查特定用户使用该服务的情况。例如，若要了解特定用户使用了多少邮箱存储空间，请打开邮箱使用情况报表，并按姓名对用户排序。如果存在成千上万个用户，请将报表导出到 Excel 中，以便快筛选列表。
   
 不能在输入用户帐户的位置生成报表，因而无法了解其使用的服务和使用情况。
+
+在某些情况下，新用户显示为“**未知**”。 这通常是由于创建用户配置文件时偶尔出现延迟。  
   
 ## <a name="hide-user-details-in-the-reports"></a>隐藏报表中的用户详细信息
 
 如果在生成报表时，想要隐藏用户级的信息，可以在管理中心中快速进行此更改。
   
-1. 在管理中心，转到“ **设置** ”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和加载项</a>页面。
+1. 在管理中心，转到“**设置**”\> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">服务和加载项</a>页面。
 
-2. 选择“ **报表** ”。 
+2. 选择“**报表**”。 
   
-3. 在“ **报表** ”窗格中，选择所需的选项，然后保存所做更改。
+3. 在“**报表**”窗格中，选择所需的选项，然后保存所做更改。
   
 你的用户列表将如下所示：
   

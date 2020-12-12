@@ -3,7 +3,7 @@ title: 配置具有安全隔离的团队
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何创建具有唯一敏感度标签的团队来保证安全。
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487478"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616292"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>配置具有安全隔离的团队
 
@@ -50,7 +50,7 @@ ms.locfileid: "48487478"
 
 [![“采用安全隔离的 Microsoft Teams”文章](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-你还能够以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 格式下载海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
+你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
 
 ## <a name="initial-protections"></a>初始保护
 
@@ -118,8 +118,8 @@ ms.locfileid: "48487478"
   b. 单击“**添加用户或组**”，选择要添加的用户或组，然后单击“**添加**”。<br>
   c. 单击“**选择权限**”。<br>
   d. 从下拉列表中选择“**查看者**”，然后单击“**保存**”。<br>
-  e. 单击“保存”****。
-9. 单击“下一步”。****
+  e. 单击“保存”。
+9. 单击“下一步”。
 10. 如果希望自动向使用此标签分类的文件添加页眉、页脚或水印，请在“**内容标记**”页面上启用内容标记。
 11. 在“**网站和组设置**”页面上，将“**网站和组设置**”设置为“**开启**”。
 12. 在“**Office 365 与组连接的团队网站的隐私**”下拉菜单中，选择“**专用 - 只有成员才能访问网站**”。
@@ -170,8 +170,8 @@ ms.locfileid: "48487478"
 
 |标签设置|SharePoint 网站设置|
 |:------------|:----------------------|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**已选中|**新来宾和现有来宾**（新团队默认值）|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**未选中|**仅组织内部人员**|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 已选中|**新来宾和现有来宾**（新团队默认值）|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 未选中|**仅组织内部人员**|
 
 我们还将更新默认共享链接类型，以减少将文件和文件夹意外共享给比预期更多受众的风险。
 
@@ -199,9 +199,9 @@ ms.locfileid: "48487478"
 
 配置仅限所有者的网站共享
 1. 在 Teams 中，导航至要更新团队的“**常规**”标签。
-2. 在团队的工具栏中，单击“文件”****。
-3. 单击省略号，然后单击“在 SharePoint 中打开”****。
-4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”****。
+2. 在团队的工具栏中，单击“文件”。
+3. 单击省略号，然后单击“在 SharePoint 中打开”。
+4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”。
 5. 在“网站权限”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
 6. 在“**共享权限**”下方，选择“**仅网站所有者可以共享文件、文件夹和网站**”，然后单击“**保存**”。
 
@@ -221,7 +221,7 @@ ms.locfileid: "48487478"
 
 Microsoft 365 提供了其他用于保护内容的方法。 考虑以下选项是否有助于提高组织的安全性。
 
-- 让来宾用户同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
+- 让你的来宾用户同意[使用条款](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
 - 为来宾用户配置“[会话超时策略](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)”。
 - 创建“[敏感信息类型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)”，并使用“[数据丢失保护](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)”来设置有关访问敏感信息的策略。
 - 使用 [Azure Active Directory 访问](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)审核，定期审核团队访问权限和成员资格。

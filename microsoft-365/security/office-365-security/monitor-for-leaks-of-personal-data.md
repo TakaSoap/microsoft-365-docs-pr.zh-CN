@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解可用于监视个人数据泄露的三种工具。
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202695"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616376"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>监视个人数据泄露
 
@@ -117,7 +117,6 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 即将向 Cloud App Security 提供以下属性类型：
 
 - 敏感信息类型
-
 - Microsoft 365 和 Azure 信息保护中的统一标签
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 仪表板
@@ -142,69 +141,24 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 
 从批准的云应用共享包含信用卡卡号的文件时发出警报。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>控制</strong></th>
-<th align="left"><strong>设置</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">策略类型</td>
-<td align="left">文件策略</td>
-</tr>
-<tr class="even">
-<td align="left">策略模板</td>
-<td align="left">无模板</td>
-</tr>
-<tr class="odd">
-<td align="left">策略严重性</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">类别</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">筛选设置</td>
-<td align="left"><p>访问级别 = 公共 (Internet)，公共，外部</p>
-<p>应用 = &lt;选择应用&gt;（如果仅监视特定 SaaS 应用，则使用此设置）</p></td>
-</tr>
-<tr class="even">
-<td align="left">应用对象</td>
-<td align="left">所有文件、所有的所有者</td>
-</tr>
-<tr class="odd">
-<td align="left">内容检查</td>
-<td align="left"><p>包括匹配当前表达式的文件：所有国家/地区：法国：信用卡卡号</p>
-<p>无需相关上下文：未选中（匹配关键字和正则表达式）</p>
-<p>包括具有至少 1 个匹配项的文件</p>
-<p>取消屏蔽冲突的最后 4 个字符：已选中</p></td>
-</tr>
-<tr class="even">
-<td align="left">警报</td>
-<td align="left"><p>为每个匹配文件创建警报：已选中</p>
-<p>每日警报限制：1000</p>
-<p>选择一个警报作为电子邮件：已选中</p>
-<p>收件人：infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">治理</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>设为专用：选中“删除外部用户”</p>
-<p>所有其他设置：未选中</p>
-<p>Microsoft SharePoint Online</p>
-<p>设为专用：选中“删除外部用户”</p>
-<p>所有其他设置：未选中</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|控件|设置|
+|---|---|
+|策略类型|文件策略|
+|策略模板|无模板|
+|策略严重性|高|
+|类别|DLP|
+|筛选设置|访问级别 = 公共 (Internet)，公共，外部 <p> 应用 = \<select apps\>（如果想要将监视限制为特定 SaaS 应用，请使用此设置）|
+|应用对象|所有文件、所有的所有者|
+|内容检查|包括匹配当前表达式的文件：所有国家/地区：法国：信用卡卡号 <p> 无需相关上下文：未选中（匹配关键字和正则表达式） <p> 包括具有至少 1 个匹配项的文件 <p> 取消屏蔽冲突的最后 4 个字符：已选中|
+|警报|为每个匹配文件创建警报：已选中 <p> 每日警报限制：1000 <p> 选择一个警报作为电子邮件：已选中 <p> 收件人：infosec@contoso.com|
+|治理|Microsoft OneDrive for Business <p> 设为专用：选中“删除外部用户” <p> 所有其他设置：未选中 <p> Microsoft SharePoint Online <p> 设为专用：选中“删除外部用户” <p> 所有其他设置：未选中|
+|
 
 类似策略：
 
 - 检测包含 PII 的文件共享 — 电子邮件地址
-
 - 检测包含 PII 的文件共享 — 护照编号
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>检测 Box 或 OneDrive for Business 中的客户或 HR 数据
@@ -214,64 +168,23 @@ Microsoft Cloud App Security 是一项可为云应用提供深入了解、细化
 注意：
 
 - Box 监视要求使用 API 连接器 SDK 配置连接器。
-
 - 此策略需要当前为个人预览版的功能。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>控制</strong></th>
-<th align="left"><strong>设置</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">策略类型</td>
-<td align="left">活动策略</td>
-</tr>
-<tr class="even">
-<td align="left">策略模板</td>
-<td align="left">无模板</td>
-</tr>
-<tr class="odd">
-<td align="left">策略严重性</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">类别</td>
-<td align="left">共享控制</td>
-</tr>
-<tr class="odd">
-<td align="left">作用对象</td>
-<td align="left">单个活动</td>
-</tr>
-<tr class="even">
-<td align="left">筛选设置</td>
-<td align="left"><p>活动类型 = 上传文件</p>
-<p>应用 = Microsoft OneDrive for Business 和 Box</p>
-<p>分类标签（目前为个人预览版）：Azure 信息保护 = 客户数据、人力资源—薪资数据、人力资源—员工数据</p></td>
-</tr>
-<tr class="odd">
-<td align="left">警报</td>
-<td align="left"><p>创建警报：已选中</p>
-<p>每日警报限制：1000</p>
-<p>选择一个警报作为电子邮件：已选中</p>
-<p>收件人：infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">治理</td>
-<td align="left"><p>所有应用</p>
-<p>隔离用户：选中</p>
-<p>所有其他设置：未选中</p>
-<p>Office 365</p>
-<p>隔离用户：选中</p>
-<p>所有其他设置：未选中</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|控件|设置|
+|---|---|
+|策略类型|活动策略|
+|策略模板|无模板|
+|策略严重性|高|
+|类别|共享控制|
+|作用对象|单个活动|
+|筛选设置|活动类型 = 上传文件 <p> 应用 = Microsoft OneDrive for Business 和 Box <p> 分类标签（目前为个人预览版）：Azure 信息保护 = 客户数据、人力资源—薪资数据、人力资源—员工数据|
+|警报|创建警报：已选中 <p> 每日警报限制：1000 <p> 选择一个警报作为电子邮件：已选中 <p> 收件人：infosec@contoso.com|
+|治理|所有应用 <p> 隔离用户：选中 <p> 所有其他设置：未选中 <p> Office 365 <p> 隔离用户：选中 <p> 所有其他设置：未选中|
+|
 
 类似策略：
 
 - 检测客户数据或 HR 数据的大量下载 — 如果在较短时间段内检测到单个用户正在下载大量包含客户数据或 HR 数据的文件，则发出警报。
-
 - 检测客户和 HR 数据共享 — 共享包含客户或 HR 数据的文件时发出警报。

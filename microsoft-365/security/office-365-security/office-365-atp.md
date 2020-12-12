@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender for Office 365 包括安全附件、安全链接、高级防钓鱼工具、报告工具和威胁智能功能。
-ms.openlocfilehash: 11b6445e17fc870c2999ddb56715b0c5cee5b5fc
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 86e738fa9390cc40b06c10a27f3198715bb991fd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357703"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614806"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -45,7 +45,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 - **[自动调查和响应功能](office-365-air.md)**：节省时间和精力来调查和缓解威胁。
 
-## <a name="getting-started"></a>入门
+## <a name="getting-started"></a>开始使用
 
 如果你没有使用过 Microsoft Defender for Office 365 或者“*做* 中学”，则可将初始 Defender for Office 365 配置分解为区块、调查以及使用此文章作为参考查看报告，从而获得最佳益处。 下面是逻辑早期配置块：
 
@@ -72,7 +72,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 |Microsoft Defender for Office 365 计划 1|Microsoft Defender for Office 365 计划 2|
 |---|---|
-|<br/>配置、保护和检测功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全链接](atp-safe-links.md)</li><li>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保护中的防钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 计划 1 功能<br/>--- + ---<br/>自动化、调查、补救措施和教育功能：</li><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟器](attack-simulator.md)</li></ul>|
+|配置、保护和检测功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全链接](atp-safe-links.md)</li><li>[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[Defender for Office 365 保护中的防钓鱼](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[实时检测](threat-explorer.md)</li></ul>|Microsoft Defender for Office 365 计划 1 功能 <br>--- + ---<br> 自动化、调查、补救措施和教育功能：<ul><li>[威胁跟踪器](threat-trackers.md)</li><li>[威胁资源管理器](threat-explorer.md)</li><li>[自动调查和响应](office-365-air.md)</li><li>[攻击模拟器](attack-simulator.md)</li><li>[市场活动视图](campaigns.md)</li></ul>|
 |
 
 - Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5 中包含 Microsoft Defender for Office 365 计划 2。
@@ -87,7 +87,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>配置 Microsoft Defender for Office 365 策略
 
-借助 Microsoft Defender for Office 365，你组织的安全团队可以在安全与合规中心内定义策略（依次转到 [https://protection.office.com](https://protection.office.com) > **“威胁管理”** > **“策略”**），从而配置保护。
+借助 Microsoft Defender for Office 365，你组织的安全团队可以在安全与合规中心内定义策略（依次转到 <https://protection.office.com> \> “**威胁管理**”\>“**策略**”），从而配置保护。
 
 > [!TIP]
 > 有关可定义的策略的快速列表，请参阅[威胁防护](protect-against-threats.md)。
@@ -106,7 +106,7 @@ Microsoft Defender for Office 365 可保护你的组织免受电子邮件、链�
 
 ## <a name="view-microsoft-defender-for-office-365-reports"></a>查看 Microsoft Defender for Office 365 报告
 
-Microsoft Defender for Office 365 包括高级 [报告仪表板](view-reports-for-atp.md) 以监视你的 Defender for Office 365 性能。 可在安全与合规中心的“**报告**” > “**仪表板**”处访问该内容。
+Microsoft Defender for Office 365 包括高级 [报告仪表板](view-reports-for-atp.md) 以监视你的 Defender for Office 365 性能。 可在安全与合规中心的“**报告**”\>“**仪表板**”处访问该内容。
 
 实时更新报告，为你提供最新见解。 这些报告还提供建议并向你提醒即将面临的威胁。 预定义的报告包括以下内容：
 

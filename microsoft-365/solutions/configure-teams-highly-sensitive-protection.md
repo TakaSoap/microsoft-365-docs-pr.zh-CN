@@ -3,7 +3,7 @@ title: 配置具有高度敏感数据保护的团队
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何部署具有高度敏感数据保护的团队。
-ms.openlocfilehash: 92defdf5d06788f4a4cbefeb5e81308611966bec
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527810"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612960"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>配置具有高度敏感数据保护的团队
 
@@ -68,7 +68,7 @@ ms.locfileid: "46527810"
 6. 在“**加密**”页面上的“**加密**”下拉列表中，选择“**应用**”。
 7. 在“**向特定用户和组分配权限**”下，单击“**分配权限**”。
 8. 点击“**添加组织中的所有用户和组**”。
-9. 如果某些来宾用户应具有解密文件的权限，请单击“**添加用户或组**”并添加他们。
+9. 如果某些来宾应具有解密文件的权限，请单击“**添加用户或组**”并添加他们。
 10.  单击“**保存**”，然后单击“**下一步**”。
 11. 如果希望自动向使用此标签分类的文件添加页眉、页脚或水印，请在“**内容标记**”页面上启用内容标记。
 12. 在“**网站和组设置**”页面上，将“**网站和组设置**”设置为“**开启**”。
@@ -118,8 +118,8 @@ ms.locfileid: "46527810"
 
 |标签设置|SharePoint 网站设置|
 |:------------|:----------------------|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**已选中|**新来宾和现有来宾**（新团队默认值）|
-|**允许 Office 365 组所有者将组织外部的人员添加到组**未选中|**仅组织内部人员**|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 已选中|**新来宾和现有来宾**（新团队默认值）|
+|**允许 Office 365 组所有者将组织外部的人员添加到组** 未选中|**仅组织内部人员**|
 
 更新网站设置
 1. 打开 [SharePoint 管理中心](https://admin.microsoft.com/sharepoint)。
@@ -145,9 +145,9 @@ ms.locfileid: "46527810"
 
 配置仅限所有者的网站共享
 1. 在 Teams 中，导航至要更新团队的“**常规**”标签。
-2. 在团队的工具栏中，单击“文件”****。
-3. 单击省略号，然后单击“在 SharePoint 中打开”****。
-4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”****。
+2. 在团队的工具栏中，单击“文件”。
+3. 单击省略号，然后单击“在 SharePoint 中打开”。
+4. 在基础 SharePoint 网站的工具栏中，依次单击设置图标和“网站权限”。
 5. 在“网站权限”窗格的“**共享设置**”下方，单击“**更改共享设置**”。
 6. 在“**共享权限**”下方，选择“**仅网站所有者可以共享文件、文件夹和网站**”。
 7. 将“**允许访问请求**”设置为“**关闭**”，然后单击“**保存**”。

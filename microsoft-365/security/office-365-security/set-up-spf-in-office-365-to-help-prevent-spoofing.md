@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新域名服务 (DNS) 记录，以便可以在 Office 365 中使用发件人策略框架 (SPF) 和自定义域。
-ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 137937b106be9ce0cf782a84b988913e2c6dac4b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021057"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615716"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>设置 SPF 以防欺骗
 
@@ -53,11 +53,11 @@ ms.locfileid: "49021057"
 
 - 自定义域的当前 SPF TXT 记录。有关说明，请参阅[收集创建 Office 365 DNS 记录所需的信息](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)。
 
-- 所有本地邮件服务器的外部 IP 地址。例如， **131.107.2.200** 。
+- 所有本地邮件服务器的外部 IP 地址。例如，**131.107.2.200**。
 
-- 用于需要包含在 SPF TXT 记录中的所有第三方域的域名。一些批量邮件提供商已设置供其客户使用的子域。例如，MailChimp 公司已经设置了 **servers.mcsv.net** 。
+- 用于需要包含在 SPF TXT 记录中的所有第三方域的域名。一些批量邮件提供商已设置供其客户使用的子域。例如，MailChimp 公司已经设置了 **servers.mcsv.net**。
 
-- 确定要对 SPF TXT 记录使用的强制规则。我们建议使用 **-all** 。有关其他语法选项的详细信息，请参阅 [Office 365 的 SPF TXT 记录语法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)。
+- 确定要对 SPF TXT 记录使用的强制规则。我们建议使用 **-all**。有关其他语法选项的详细信息，请参阅 [Office 365 的 SPF TXT 记录语法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)。
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>添加或更新您的 SPF TXT 记录
 
@@ -69,11 +69,11 @@ ms.locfileid: "49021057"
    |---|---|---|---|
    |1|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值开头|`v=spf1`|
    |2|Exchange Online|常见|`include:spf.protection.outlook.com`|
-   |3|Exchange Online 专用|不常见|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|Exchange Online 专用|不常见|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|仅 Office 365 Germany、Microsoft Cloud Germany|不常见|`include:spf.protection.outlook.de`|
-   |5|第三方电子邮件系统|不常见|`include:<domain_name>`  <br/> 其中 \<domain_name\> 是第三方电子邮件系统的域。|
-   |6|本地邮件系统。例如，Exchange Online Protection 和另一个邮件系统|不常见|为每个附加的邮件系统使用以下其中一个： <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> 其中 \<IP_address\> 和 \<domain_name\> 是代表你的域发送电子邮件的其他邮件系统的 IP 地址和域。|
-   |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|`<enforcement rule>` <br/> 这可以是多个值之一。 建议值为全部。|
+   |5|第三方电子邮件系统|不常见|`include:<domain_name>` <p> \<domain_name\> 是第三方电子邮件系统的域。|
+   |6|本地电子邮件系统。例如，Exchange Online Protection 和另一个电子邮件系统|不常见|为每个附加的邮件系统使用以下其中一个： <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> 和 \<domain_name\> 是代表你的域发送邮件的其他电子邮件系统的 IP 地址和域。|
+   |7|所有电子邮件系统（必需）|常见。所有 SPF TXT 记录都以此值结尾|`<enforcement rule>` <p> 这可以是多个值之一。 建议值 `-all`。|
    |
 
 2. 如果尚未创建 SPF TXT 记录，请使用该表中的语法执行此操作。

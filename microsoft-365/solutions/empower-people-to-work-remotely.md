@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 确保已启用 Microsoft 365 中的所有功能，以最大限度地提高远程工作者的工作效率，并保持对服务器、数据和云的安全访问。
-ms.openlocfilehash: 1af5d1dd2fbc6f5792ee0458e521dfa2f46f46b5
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588569"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616352"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 为远程工作者提供强大帮助
 
@@ -99,7 +99,7 @@ Microsoft 365 提供了帮助员工远程工作的功能。
 
 [![“为远程工作者提供强大功能”海报](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
+你还可以下载 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 或 [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 格式的海报，并以信件、法律或小报 (11 x 17) 的纸型打印。
 
 ## <a name="provide-remote-working-for-all-of-your-workers"></a>为所有工作者提供远程工作
 
