@@ -14,101 +14,109 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划2中标识具有用户标记的特定用户组。 标记筛选在 Microsoft Defender for Office 365 中通过警报、报告和调查提供，可快速识别已标记的用户。
-ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 管理员可以了解如何在 Microsoft Defender for Office 365 计划 2 中标识具有用户标记的特定用户组。 标签筛选可用于 Microsoft Defender for Office 365 中的警报、报告和调查，以快速标识标记的用户。
+ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552015"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663603"
 ---
-# <a name="user-tags-in-microsoft-defender-for-office-365"></a><span data-ttu-id="066b3-104">Microsoft Defender for Office 365 中的用户标记</span><span class="sxs-lookup"><span data-stu-id="066b3-104">User tags in Microsoft Defender for Office 365</span></span>
+# <a name="user-tags-in-microsoft-defender-for-office-365"></a><span data-ttu-id="70c8d-104">Microsoft Defender for Office 365 中的用户标记</span><span class="sxs-lookup"><span data-stu-id="70c8d-104">User tags in Microsoft Defender for Office 365</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="066b3-105">"用户标记" 功能在预览中不可用，每个人都不可用，并且可能会发生更改。</span><span class="sxs-lookup"><span data-stu-id="066b3-105">The user tags feature is in Preview, isn't available to everyone, and is subject to change.</span></span> <span data-ttu-id="066b3-106">有关发布计划的信息，请参阅 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。</span><span class="sxs-lookup"><span data-stu-id="066b3-106">For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).</span></span>
+> <span data-ttu-id="70c8d-105">用户标记功能在预览版中，并非对所有人都可用，并且可能会更改。</span><span class="sxs-lookup"><span data-stu-id="70c8d-105">The user tags feature is in Preview, isn't available to everyone, and is subject to change.</span></span> <span data-ttu-id="70c8d-106">有关发布计划的信息，请查看 [Microsoft 365 路线图](https://www.microsoft.com/microsoft-365/roadmap)。</span><span class="sxs-lookup"><span data-stu-id="70c8d-106">For information about the release schedule, check out the [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap).</span></span>
 
-<span data-ttu-id="066b3-107">用户标记是 [Microsoft Defender For Office 365](office-365-atp.md)中特定用户组的标识符。</span><span class="sxs-lookup"><span data-stu-id="066b3-107">User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](office-365-atp.md).</span></span> <span data-ttu-id="066b3-108">有两种类型的用户标记：</span><span class="sxs-lookup"><span data-stu-id="066b3-108">There are two types of user tags:</span></span>
+<span data-ttu-id="70c8d-107">用户标记是 [Microsoft Defender for Office 365](office-365-atp.md)中特定用户组的标识符。</span><span class="sxs-lookup"><span data-stu-id="70c8d-107">User tags are identifiers for specific groups of users in [Microsoft Defender for Office 365](office-365-atp.md).</span></span> <span data-ttu-id="70c8d-108">有两种类型的用户标记：</span><span class="sxs-lookup"><span data-stu-id="70c8d-108">There are two types of user tags:</span></span>
 
-- <span data-ttu-id="066b3-109">**系统标记**：当前， [优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一的系统标记类型。</span><span class="sxs-lookup"><span data-stu-id="066b3-109">**System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.</span></span>
-- <span data-ttu-id="066b3-110">**自定义标记**：您自己创建这些用户标记。</span><span class="sxs-lookup"><span data-stu-id="066b3-110">**Custom tags**: You create these user tags yourself.</span></span>
+- <span data-ttu-id="70c8d-109">**系统标记**：目前 [，优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一类型的系统标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-109">**System tags**: Currently, [Priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) is the only type of system tag.</span></span>
+- <span data-ttu-id="70c8d-110">**自定义标记**：您自己创建这些用户标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-110">**Custom tags**: You create these user tags yourself.</span></span>
 
-<span data-ttu-id="066b3-111">如果您的组织具有适用于 Office 365 的 Defender for Office 计划 2 (包含在订阅中或作为加载项) ，除了使用优先级帐户标记之外，您还可以创建自定义用户标记。</span><span class="sxs-lookup"><span data-stu-id="066b3-111">If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.</span></span>
+<span data-ttu-id="70c8d-111">如果你的组织将 Defender for Office 365 计划 2 (包含在订阅中或作为加载项) ，则除了使用优先级帐户标记外，还可以创建自定义用户标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-111">If your organization has Defender for Office 365 Plan 2 (included in your subscription or as an add-on), you can create custom user tags in addition to using the priority accounts tag.</span></span>
 
-<span data-ttu-id="066b3-112">向用户应用系统标签或自定义标记后，可以将这些标记用作警报、报告和调查中的筛选器：</span><span class="sxs-lookup"><span data-stu-id="066b3-112">After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:</span></span>
+<span data-ttu-id="70c8d-112">向用户应用系统标记或自定义标记后，可以在警报、报告和调查中使用这些标记作为筛选器：</span><span class="sxs-lookup"><span data-stu-id="70c8d-112">After you apply system tags or custom tags to users, you can use those tags as filters in alerts, reports, and investigations:</span></span>
 
-- [<span data-ttu-id="066b3-113">安全 & 合规中心中的警报</span><span class="sxs-lookup"><span data-stu-id="066b3-113">Alerts in the Security & Compliance Center</span></span>](alerts.md)
-- [<span data-ttu-id="066b3-114">威胁资源管理器和实时检测</span><span class="sxs-lookup"><span data-stu-id="066b3-114">Threat Explorer and real-time detections</span></span>](threat-explorer.md)
-- [<span data-ttu-id="066b3-115">威胁防护状态报告</span><span class="sxs-lookup"><span data-stu-id="066b3-115">Threat protection status report</span></span>](view-email-security-reports.md#threat-protection-status-report)
-- [<span data-ttu-id="066b3-116">市场活动视图</span><span class="sxs-lookup"><span data-stu-id="066b3-116">Campaign Views</span></span>](campaigns.md)
-- <span data-ttu-id="066b3-117">对于优先级帐户，您可以在 Exchange 管理中心 (EAC) 中使用 [优先级帐户报告的电子邮件问题](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) 。</span><span class="sxs-lookup"><span data-stu-id="066b3-117">For priority accounts, you can use the [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).</span></span>
+- [<span data-ttu-id="70c8d-113">安全与合规中心&警报</span><span class="sxs-lookup"><span data-stu-id="70c8d-113">Alerts in the Security & Compliance Center</span></span>](alerts.md)
+- [<span data-ttu-id="70c8d-114">威胁资源管理器和实时检测</span><span class="sxs-lookup"><span data-stu-id="70c8d-114">Threat Explorer and real-time detections</span></span>](threat-explorer.md)
+- [<span data-ttu-id="70c8d-115">威胁防护状态报告</span><span class="sxs-lookup"><span data-stu-id="70c8d-115">Threat protection status report</span></span>](view-email-security-reports.md#threat-protection-status-report)
+- [<span data-ttu-id="70c8d-116">市场活动视图</span><span class="sxs-lookup"><span data-stu-id="70c8d-116">Campaign Views</span></span>](campaigns.md)
+- <span data-ttu-id="70c8d-117">对于优先级帐户，可以使用 Exchange[](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)管理中心中的"优先级帐户的电子邮件问题"报告 (EAC) 。</span><span class="sxs-lookup"><span data-stu-id="70c8d-117">For priority accounts, you can use the [Email issues for priority accounts report](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) in the Exchange admin center (EAC).</span></span>
 
-<span data-ttu-id="066b3-118">本文介绍如何在安全 & 合规中心中配置用户标记。</span><span class="sxs-lookup"><span data-stu-id="066b3-118">This article explains how to configure user tags in the Security & Compliance Center.</span></span> <span data-ttu-id="066b3-119">Security & 合规性中心中没有可用于管理用户标记的 cmdlet。</span><span class="sxs-lookup"><span data-stu-id="066b3-119">There are no cmdlets in Security & Compliance Center to manage user tags.</span></span>
+<span data-ttu-id="70c8d-118">本文介绍如何在安全与合规中心&标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-118">This article explains how to configure user tags in the Security & Compliance Center.</span></span> <span data-ttu-id="70c8d-119">安全与合规中心& cmdlet 管理用户标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-119">There are no cmdlets in Security & Compliance Center to manage user tags.</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="066b3-120">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="066b3-120">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="70c8d-120">开始前，有必要了解什么？</span><span class="sxs-lookup"><span data-stu-id="70c8d-120">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="066b3-121">安全与合规中心的打开网址为 <https://protection.office.com/>。</span><span class="sxs-lookup"><span data-stu-id="066b3-121">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="066b3-122">若要直接转到 " **用户标记** " 页，请打开 <https://protection.office.com/userTags> 。</span><span class="sxs-lookup"><span data-stu-id="066b3-122">To go directly to the **User tags** page, open <https://protection.office.com/userTags>.</span></span>
+- <span data-ttu-id="70c8d-121">安全与合规中心的打开网址为 <https://protection.office.com/>。</span><span class="sxs-lookup"><span data-stu-id="70c8d-121">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="70c8d-122">若要直接转到" **用户标记"页，** 请打开 <https://protection.office.com/userTags> 。</span><span class="sxs-lookup"><span data-stu-id="70c8d-122">To go directly to the **User tags** page, open <https://protection.office.com/userTags>.</span></span>
 
-- <span data-ttu-id="066b3-123">若要创建、修改或删除 **自定义用户标记**，您需要是安全 & 合规性中心中的 " **组织管理** " 或 " **安全管理员** " 角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="066b3-123">To create, modify, or remove **custom user tags**, you need to be a member of the **Organization Management** or **Security Administrator** role groups in the Security & Compliance Center.</span></span> <span data-ttu-id="066b3-124">有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="066b3-124">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+- <span data-ttu-id="70c8d-123">必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：</span><span class="sxs-lookup"><span data-stu-id="70c8d-123">You need to be assigned permissions in the Security & Compliance Center before you can do the procedures in this article:</span></span>
+  - <span data-ttu-id="70c8d-124">若要创建、修改和删除用户标记，您必须是组织 **管理或\*\*\*\*安全** 管理员角色组的成员。</span><span class="sxs-lookup"><span data-stu-id="70c8d-124">To create, modify, and delete user tags, you need to be a member of the **Organization Management** or **Security Administrator** role groups.</span></span>
+  - <span data-ttu-id="70c8d-125">若要从现有用户标记中添加和删除成员，你需要是组织管理、**安全** 管理员或 **安全** 操作员角色组的成员</span><span class="sxs-lookup"><span data-stu-id="70c8d-125">To add and remove members from existing user tags, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Operator** role groups</span></span>
+  - <span data-ttu-id="70c8d-126">若要对用户标记进行只读访问，你需要是全局读者或安全 **读者角色组** 的成员。 </span><span class="sxs-lookup"><span data-stu-id="70c8d-126">For read-only access to user tags, you need to be a member of the **Global Reader** or **Security Reader** role groups.</span></span>
 
-- <span data-ttu-id="066b3-125">若要 (系统标记) 配置优先级帐户，您必须是 [全局管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [Exchange 管理员](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)。</span><span class="sxs-lookup"><span data-stu-id="066b3-125">To configure priority accounts (system tags), you need to be a [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) or an [Exchange Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator).</span></span>
+  <span data-ttu-id="70c8d-127">有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="70c8d-127">For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-  <span data-ttu-id="066b3-126">您还可以在 Microsoft 365 管理中心中管理和监视优先级帐户。</span><span class="sxs-lookup"><span data-stu-id="066b3-126">You can also manage and monitor priority accounts in the Microsoft 365 admin center.</span></span> <span data-ttu-id="066b3-127">有关说明，请参阅 [管理和监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。</span><span class="sxs-lookup"><span data-stu-id="066b3-127">For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).</span></span>
+  <span data-ttu-id="70c8d-128">**注意**：</span><span class="sxs-lookup"><span data-stu-id="70c8d-128">**Notes**:</span></span>
 
-## <a name="use-the-security-center-to-create-user-tags"></a><span data-ttu-id="066b3-128">使用安全中心创建用户标记</span><span class="sxs-lookup"><span data-stu-id="066b3-128">Use the Security Center to create user tags</span></span>
+  - <span data-ttu-id="70c8d-129">向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。</span><span class="sxs-lookup"><span data-stu-id="70c8d-129">Adding users to the corresponding Azure Active Directory role in the Microsoft 365 admin center gives users the required permissions in the Security & Compliance Center _and_ permissions for other features in Microsoft 365.</span></span> <span data-ttu-id="70c8d-130">有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。</span><span class="sxs-lookup"><span data-stu-id="70c8d-130">For more information, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).</span></span>
+  - <span data-ttu-id="70c8d-131">用户标记管理由 Tag **Reader、Tag** **Contributor** 和 **Tag Manager 角色** 控制。</span><span class="sxs-lookup"><span data-stu-id="70c8d-131">User tag management is controlled by the **Tag Reader**, **Tag Contributor**, and **Tag Manager** roles.</span></span>
 
-1. <span data-ttu-id="066b3-129">在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-129">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
+- <span data-ttu-id="70c8d-132">还可以在 Microsoft 365 管理中心管理和监视优先级帐户。</span><span class="sxs-lookup"><span data-stu-id="70c8d-132">You can also manage and monitor priority accounts in the Microsoft 365 admin center.</span></span> <span data-ttu-id="70c8d-133">有关说明，请参阅 [管理和监视优先级帐户](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。</span><span class="sxs-lookup"><span data-stu-id="70c8d-133">For instructions, see [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts).</span></span>
 
-2. <span data-ttu-id="066b3-130">在打开的 " **用户标记** " 页上，单击 " **创建标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-130">On the **User tags** page that opens, click **Create tag**.</span></span>
+## <a name="use-the-security-center-to-create-user-tags"></a><span data-ttu-id="70c8d-134">使用安全中心创建用户标记</span><span class="sxs-lookup"><span data-stu-id="70c8d-134">Use the Security Center to create user tags</span></span>
 
-3. <span data-ttu-id="066b3-131">" **创建标记** " 向导将在新的飞出中打开。在 " **定义标记** " 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="066b3-131">The **Create tag** wizard opens in a new fly out. On the **Define tag** page, configure the following settings:</span></span>
-   - <span data-ttu-id="066b3-132">**名称**：为标记输入唯一的描述性名称。</span><span class="sxs-lookup"><span data-stu-id="066b3-132">**Name**: Enter a unique, descriptive name for the tag.</span></span> <span data-ttu-id="066b3-133">这是你将看到和使用的值。</span><span class="sxs-lookup"><span data-stu-id="066b3-133">This is the value that you'll see and use.</span></span>
-   - <span data-ttu-id="066b3-134">**说明**：输入标记的可选说明。</span><span class="sxs-lookup"><span data-stu-id="066b3-134">**Description**: Enter an optional description for the tag.</span></span>
+1. <span data-ttu-id="70c8d-135">在安全中心，转到 **威胁管理** \> **用户标记**。</span><span class="sxs-lookup"><span data-stu-id="70c8d-135">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
 
-   <span data-ttu-id="066b3-135">完成后，单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="066b3-135">When you're finished, click **Next**.</span></span>
+2. <span data-ttu-id="70c8d-136">在打开 **的用户标记** 页上，单击"**创建标记"。**</span><span class="sxs-lookup"><span data-stu-id="70c8d-136">On the **User tags** page that opens, click **Create tag**.</span></span>
 
-4. <span data-ttu-id="066b3-136">在 " **分配用户** " 页上，执行下列步骤之一：</span><span class="sxs-lookup"><span data-stu-id="066b3-136">On the **Assign users** page, do either of the following steps:</span></span>
+3. <span data-ttu-id="70c8d-137">" **创建标记"** 向导将在新的飞出中打开。在" **定义标记"** 页上，配置以下设置：</span><span class="sxs-lookup"><span data-stu-id="70c8d-137">The **Create tag** wizard opens in a new fly out. On the **Define tag** page, configure the following settings:</span></span>
+   - <span data-ttu-id="70c8d-138">**名称**：为标记输入唯一的描述性名称。</span><span class="sxs-lookup"><span data-stu-id="70c8d-138">**Name**: Enter a unique, descriptive name for the tag.</span></span> <span data-ttu-id="70c8d-139">这是你将看到和使用的值。</span><span class="sxs-lookup"><span data-stu-id="70c8d-139">This is the value that you'll see and use.</span></span>
+   - <span data-ttu-id="70c8d-140">**说明**：输入标记的可选说明。</span><span class="sxs-lookup"><span data-stu-id="70c8d-140">**Description**: Enter an optional description for the tag.</span></span>
 
-   - <span data-ttu-id="066b3-137">单击 " **添加用户**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-137">Click **Add users**.</span></span> <span data-ttu-id="066b3-138">在出现的 "飞出" 中，执行以下任一步骤添加单个用户或组：</span><span class="sxs-lookup"><span data-stu-id="066b3-138">In the fly out that appears, do any of the following steps to add individual users or groups:</span></span>
-     - <span data-ttu-id="066b3-139">在框中单击，并在列表中滚动以选择用户或组。</span><span class="sxs-lookup"><span data-stu-id="066b3-139">Click in the box and scroll through the list to select a user or group.</span></span>
-     - <span data-ttu-id="066b3-140">在框中单击，然后开始键入以筛选列表并选择用户或组。</span><span class="sxs-lookup"><span data-stu-id="066b3-140">Click in the box and start typing to filter the list and select a user or group.</span></span>
-     - <span data-ttu-id="066b3-141">若要添加其他值，请单击框中的空白区域。</span><span class="sxs-lookup"><span data-stu-id="066b3-141">To add additional values, click in an empty area in the box.</span></span>
-     - <span data-ttu-id="066b3-142">若要从框中删除单个条目， **Remove** 请 ![ ](../../media/scc-remove-icon.png) 在框中的用户或组上单击 "删除删除图标"。</span><span class="sxs-lookup"><span data-stu-id="066b3-142">To remove individual entries from the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user or group in the box.</span></span>
-     - <span data-ttu-id="066b3-143">若要从框下方的列表中删除现有条目，请单击 " **删除** ![ 删除图标 ](../../media/scc-remove-icon.png) " 条目。</span><span class="sxs-lookup"><span data-stu-id="066b3-143">To remove existing entries from the list below the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) the entry.</span></span>
+   <span data-ttu-id="70c8d-141">完成后，单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="70c8d-141">When you're finished, click **Next**.</span></span>
 
-     <span data-ttu-id="066b3-144">完成后，请单击 " **添加**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-144">When you're finished, click **Add**.</span></span>
+4. <span data-ttu-id="70c8d-142">在 **"分配用户"** 页上，执行下列任一步骤：</span><span class="sxs-lookup"><span data-stu-id="70c8d-142">On the **Assign users** page, do either of the following steps:</span></span>
 
-   - <span data-ttu-id="066b3-145">单击 " **导入** " 以选择包含用户或组的电子邮件地址的文本文件。</span><span class="sxs-lookup"><span data-stu-id="066b3-145">Click **Import** to select a text file that contains the email addresses of the users or groups.</span></span> <span data-ttu-id="066b3-146">确保文本文件中每行包含一个条目。</span><span class="sxs-lookup"><span data-stu-id="066b3-146">Be sure the text file contains one entry per line.</span></span>
+   - <span data-ttu-id="70c8d-143">单击 **"添加用户"。**</span><span class="sxs-lookup"><span data-stu-id="70c8d-143">Click **Add users**.</span></span> <span data-ttu-id="70c8d-144">在出现的"飞出"中，执行下列任一步骤以添加单个用户或组：</span><span class="sxs-lookup"><span data-stu-id="70c8d-144">In the fly out that appears, do any of the following steps to add individual users or groups:</span></span>
+     - <span data-ttu-id="70c8d-145">在框中单击并滚动浏览列表以选择用户或组。</span><span class="sxs-lookup"><span data-stu-id="70c8d-145">Click in the box and scroll through the list to select a user or group.</span></span>
+     - <span data-ttu-id="70c8d-146">在框中单击并开始键入以筛选列表并选择用户或组。</span><span class="sxs-lookup"><span data-stu-id="70c8d-146">Click in the box and start typing to filter the list and select a user or group.</span></span>
+     - <span data-ttu-id="70c8d-147">若要添加其他值，请单击框中的空白区域。</span><span class="sxs-lookup"><span data-stu-id="70c8d-147">To add additional values, click in an empty area in the box.</span></span>
+     - <span data-ttu-id="70c8d-148">若要从框中删除单个条目，请单击框中用户或 ![ 组上的"删除 ](../../media/scc-remove-icon.png) "图标。</span><span class="sxs-lookup"><span data-stu-id="70c8d-148">To remove individual entries from the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the user or group in the box.</span></span>
+     - <span data-ttu-id="70c8d-149">若要从框下方的列表中删除现有条目，请单击 **"删除** ![ "图标删除该 ](../../media/scc-remove-icon.png) 条目。</span><span class="sxs-lookup"><span data-stu-id="70c8d-149">To remove existing entries from the list below the box, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) the entry.</span></span>
 
-   <span data-ttu-id="066b3-147">完成后，单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="066b3-147">When you're finished, click **Next**.</span></span>
+     <span data-ttu-id="70c8d-150">完成后，单击"添加 **"。**</span><span class="sxs-lookup"><span data-stu-id="70c8d-150">When you're finished, click **Add**.</span></span>
 
-5. <span data-ttu-id="066b3-148">在 " **查看标记** " 页上，查看您的设置。</span><span class="sxs-lookup"><span data-stu-id="066b3-148">On the **Review tag** page, review your settings.</span></span> <span data-ttu-id="066b3-149">您可以单击 "特定" 部分中的 " **编辑** " 来进行更改。</span><span class="sxs-lookup"><span data-stu-id="066b3-149">You can click **Edit** in the specific section to make changes.</span></span>
+   - <span data-ttu-id="70c8d-151">单击 **"** 导入"选择包含用户或组的电子邮件地址的文本文件。</span><span class="sxs-lookup"><span data-stu-id="70c8d-151">Click **Import** to select a text file that contains the email addresses of the users or groups.</span></span> <span data-ttu-id="70c8d-152">确保文本文件每行包含一个条目。</span><span class="sxs-lookup"><span data-stu-id="70c8d-152">Be sure the text file contains one entry per line.</span></span>
 
-   <span data-ttu-id="066b3-150">完成后，请单击 " **提交**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-150">When you're finished, click **Submit**.</span></span>
+   <span data-ttu-id="70c8d-153">完成后，单击“下一步”。</span><span class="sxs-lookup"><span data-stu-id="70c8d-153">When you're finished, click **Next**.</span></span>
 
-## <a name="use-the-security-center-to-view-user-tags"></a><span data-ttu-id="066b3-151">使用安全中心查看用户标记</span><span class="sxs-lookup"><span data-stu-id="066b3-151">Use the Security Center to view user tags</span></span>
+5. <span data-ttu-id="70c8d-154">在" **审阅标记"** 页上，查看设置。</span><span class="sxs-lookup"><span data-stu-id="70c8d-154">On the **Review tag** page, review your settings.</span></span> <span data-ttu-id="70c8d-155">可以单击 **特定** 节中的"编辑"进行更改。</span><span class="sxs-lookup"><span data-stu-id="70c8d-155">You can click **Edit** in the specific section to make changes.</span></span>
 
-1. <span data-ttu-id="066b3-152">在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-152">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
+   <span data-ttu-id="70c8d-156">完成后，单击"提交 **"。**</span><span class="sxs-lookup"><span data-stu-id="70c8d-156">When you're finished, click **Submit**.</span></span>
 
-2. <span data-ttu-id="066b3-153">在打开的 " **用户标记** " 页上，选择要查看的用户标记 (不要单击复选框) 。</span><span class="sxs-lookup"><span data-stu-id="066b3-153">On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).</span></span>
+## <a name="use-the-security-center-to-view-user-tags"></a><span data-ttu-id="70c8d-157">使用安全中心查看用户标记</span><span class="sxs-lookup"><span data-stu-id="70c8d-157">Use the Security Center to view user tags</span></span>
 
-3. <span data-ttu-id="066b3-154">在出现的只读详细信息飞出中，查看设置。</span><span class="sxs-lookup"><span data-stu-id="066b3-154">In the read-only details fly out that appears, review the settings.</span></span>
+1. <span data-ttu-id="70c8d-158">在安全中心，转到 **威胁管理** \> **用户标记**。</span><span class="sxs-lookup"><span data-stu-id="70c8d-158">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
 
-   <span data-ttu-id="066b3-155">完成后，单击“关闭”。</span><span class="sxs-lookup"><span data-stu-id="066b3-155">When you're finished, click **Close**.</span></span>
+2. <span data-ttu-id="70c8d-159">在打开 **的用户标记** 页上，选择要查看的用户标记 (不要单击复选框) 。</span><span class="sxs-lookup"><span data-stu-id="70c8d-159">On the **User tags** page that opens, select the user tag that you want to view (don't click on the checkbox).</span></span>
 
-## <a name="use-the-security-center-to-modify-user-tags"></a><span data-ttu-id="066b3-156">使用安全中心修改用户标记</span><span class="sxs-lookup"><span data-stu-id="066b3-156">Use the Security Center to modify user tags</span></span>
+3. <span data-ttu-id="70c8d-160">在出现的只读详细信息飞出中，查看设置。</span><span class="sxs-lookup"><span data-stu-id="70c8d-160">In the read-only details fly out that appears, review the settings.</span></span>
 
-1. <span data-ttu-id="066b3-157">在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-157">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
+   <span data-ttu-id="70c8d-161">完成后，单击“关闭”。</span><span class="sxs-lookup"><span data-stu-id="70c8d-161">When you're finished, click **Close**.</span></span>
 
-2. <span data-ttu-id="066b3-158">在打开的 " **用户标记** " 页上，选择要查看的用户标记，然后单击 " **编辑标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-158">On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.</span></span>
+## <a name="use-the-security-center-to-modify-user-tags"></a><span data-ttu-id="70c8d-162">使用安全中心修改用户标记</span><span class="sxs-lookup"><span data-stu-id="70c8d-162">Use the Security Center to modify user tags</span></span>
 
-3. <span data-ttu-id="066b3-159">"策略向导" 将在 " **编辑" 标记** 飞出时打开。单击 " **下一步** " 查看并修改设置。</span><span class="sxs-lookup"><span data-stu-id="066b3-159">The policy wizard opens in an **Edit tag** fly out. Click **Next** to review and modify the settings.</span></span>
+1. <span data-ttu-id="70c8d-163">在安全中心，转到 **威胁管理** \> **用户标记**。</span><span class="sxs-lookup"><span data-stu-id="70c8d-163">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
 
-   <span data-ttu-id="066b3-160">完成后，请单击 " **提交**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-160">When you're finished, click **Submit**.</span></span>
+2. <span data-ttu-id="70c8d-164">在打开 **的用户标记** 页上，选择要查看的用户标记，然后单击"编辑 **"标记**。</span><span class="sxs-lookup"><span data-stu-id="70c8d-164">On the **User tags** page that opens, select the user tag that you want to view, and then click **Edit tag**.</span></span>
 
-## <a name="use-the-security-center-to-remove-user-tags"></a><span data-ttu-id="066b3-161">使用安全中心删除用户标记</span><span class="sxs-lookup"><span data-stu-id="066b3-161">Use the Security Center to remove user tags</span></span>
+3. <span data-ttu-id="70c8d-165">策略向导将在"编辑" **标记飞出时** 打开。单击 **"** 下一步"查看和修改设置。</span><span class="sxs-lookup"><span data-stu-id="70c8d-165">The policy wizard opens in an **Edit tag** fly out. Click **Next** to review and modify the settings.</span></span>
 
-<span data-ttu-id="066b3-162">**注意**：不能删除内置的 " **优先级" 帐户** 标记。</span><span class="sxs-lookup"><span data-stu-id="066b3-162">**Note**: You can't remove the built-in **Priority account** tag.</span></span>
+   <span data-ttu-id="70c8d-166">完成后，单击"提交 **"。**</span><span class="sxs-lookup"><span data-stu-id="70c8d-166">When you're finished, click **Submit**.</span></span>
 
-1. <span data-ttu-id="066b3-163">在 "安全中心" 中，转到 " **威胁管理** \> **用户标记**"。</span><span class="sxs-lookup"><span data-stu-id="066b3-163">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
+## <a name="use-the-security-center-to-remove-user-tags"></a><span data-ttu-id="70c8d-167">使用安全中心删除用户标记</span><span class="sxs-lookup"><span data-stu-id="70c8d-167">Use the Security Center to remove user tags</span></span>
 
-2. <span data-ttu-id="066b3-164">在打开的 " **用户标记** " 页上，选择要删除的用户标记，单击 " **删除标记**"，然后选择 **"是，** 在出现的警告中删除"。</span><span class="sxs-lookup"><span data-stu-id="066b3-164">On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.</span></span>
+<span data-ttu-id="70c8d-168">**注意**：不能删除内置优先级 **帐户** 标记。</span><span class="sxs-lookup"><span data-stu-id="70c8d-168">**Note**: You can't remove the built-in **Priority account** tag.</span></span>
+
+1. <span data-ttu-id="70c8d-169">在安全中心，转到 **威胁管理** \> **用户标记**。</span><span class="sxs-lookup"><span data-stu-id="70c8d-169">In the Security Center, go to **Threat management** \> **User tags**.</span></span>
+
+2. <span data-ttu-id="70c8d-170">在打开 **的**"用户标记"页上，选择要删除的用户标记，单击"删除标记"，然后在出现的警告中选择"是，删除"。 </span><span class="sxs-lookup"><span data-stu-id="70c8d-170">On the **User tags** page that opens, select the user tag that you want to remove, click **Delete tag**, and then select **Yes, remove** in the warning that appears.</span></span>
