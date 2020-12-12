@@ -1,5 +1,5 @@
 ---
-title: 演练-欺骗性的智能洞察力
+title: 演练 - 欺骗智能见解
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,110 +16,112 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解欺骗性智能洞察力的工作原理。 他们可以快速确定哪些发件人将电子邮件直接发送到其组织，而不是将电子邮件身份验证检查 (SPF、DKIM 或 DMARC) 的域。
+description: 管理员可以了解欺骗智能见解的工作原理。 他们可以快速确定哪些发件人从没有通过 SPF、DKIM 或 DMARC (电子邮件身份验证检查的域中合法地向组织) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9139a2b4c3c7ed8262f3d75b445defb869371d07
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 665745e940ea9547d57a1d7c47ff54eaae3756b7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602091"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659686"
 ---
-# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>演练-Microsoft Defender for Office 365 中的欺骗智能洞察力
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>演练 - Microsoft Defender for Office 365 中的欺骗智能见解
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在使用 Defender for Office 365 的 Microsoft 365 组织中，您可以使用欺骗智能洞察力快速确定哪些外部发件人可以合法地向您发送未经身份验证的电子邮件 (来自不通过 SPF、DKIM 或 DMARC 检查的域的邮件) 。
+在具有适用于 Office 365 的 Defender 的 Microsoft 365 组织中，可以使用欺骗智能见解快速确定哪些外部发件人从未通过 SPF、DKIM 或 DMARC 检查的域中合法地向您发送未经身份验证的电子邮件 (邮件) 。
 
-通过允许已知外部发件人从已知位置发送欺骗邮件，可以减少误报 (被标记为坏) 的良好电子邮件。 通过监视允许的欺骗性发件人，您可以提供额外的安全层来防止不安全的邮件到达您的组织中。
+通过允许已知外部发件人从已知位置发送欺骗邮件，你可以减少误报 (标记为错误) 。 通过监视允许的欺骗发件人，你可以提供额外的安全层，以防止不安全的邮件到达你的组织。
 
-有关报告和见解的详细信息，请参阅 [Security & 合规性中心中的报告和见解](reports-and-insights-in-security-and-compliance.md)。
+有关报告和见解详细信息，请参阅安全与合规中心 [中的&见解](reports-and-insights-in-security-and-compliance.md)。
 
-本演练是安全 & 合规中心的几个演练之一。 若要导航报告和见解，请参阅 [相关主题](#related-topics) 部分中的演练。
+本演练是安全与合规中心&之一。 有关导航报告和见解的信息，请参阅"相关主题"部分 [中的演练](#related-topics) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 **安全仪表板** 页面，请使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到安全 **仪表板页面** ，请使用 <https://protection.office.com/searchandinvestigation/dashboard> 。
 
-  您可以从安全 & 合规中心的多个仪表板中查看欺骗性智能洞察力。 无论您正在查看哪个仪表板，真知灼见都会提供相同的详细信息，并允许您快速执行相同的任务。
+  你可以从安全与合规中心中的多个仪表板查看&见解。 无论你正在查看哪个仪表板，该见解都提供相同的详细信息，并允许你快速执行相同的任务。
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
   - **组织管理**
   - **安全管理员**
   - **安全读者**
-  - **全局读者**
+  - **全局阅读器**
 
-  **注意**：将用户添加到 microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心中的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
 
-- 在 Microsoft Defender for Office 365 中启用和禁用欺骗智能在反网络钓鱼策略中。 默认情况下启用欺骗智能。 有关详细信息，请参阅 [在 Microsoft Defender For Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+  注意：将用户添加到 Microsoft 36 & 5 管理中心的相应 Azure Active Directory 角色会为用户提供安全与合规中心所需的权限和 Microsoft 365 中其他功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
-- 若要使用欺骗智能来监视和管理向您发送未经身份验证的邮件的发件人，请参阅 [在 Microsoft 365 中配置欺骗智能](learn-about-spoof-intelligence.md)。
+- 在 Microsoft Defender for Office 365 中的反网络钓鱼策略中启用和禁用欺骗智能。 默认情况下启用欺骗智能。 有关详细信息，请参阅在 [Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)中配置防钓鱼策略。
 
-## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全 & 合规中心中打开欺骗性智能洞察力
+- 若要使用欺骗智能监视和管理向您发送未经身份验证的邮件的发件人，请参阅 [在 Microsoft 365](learn-about-spoof-intelligence.md)中配置欺骗智能。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **仪表板"。**
+## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全与合规中心内打开&见解
 
-2. 在 " **见解** " 行中，查找以下项目之一：
+1. 在安全&中心，转到 **"威胁管理** \> **仪表板"。**
 
-   - **可能在过去七天内的欺骗域**：此洞察力表明启用了欺骗智能， (默认情况下启用了该功能) 。
-   - **启用欺骗保护**：此洞察力表明已禁用欺骗性智能，单击真知灼见使你能够启用欺骗智能。
+2. 在 **Insights** 行中，查找以下项目之一：
 
-3. 仪表板上的洞察力显示如下所示的信息：
+   - **过去七天内** 可能欺骗的域：此见解表明在默认情况下 (已启用欺骗智能) 。
+   - **启用欺骗** 保护：此见解表明已禁用欺骗智能，单击该见解可启用欺骗智能。
 
-   ![欺骗性智能洞察力的屏幕截图](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
+3. 仪表板上的见解显示如下所示的信息：
 
-   此洞察力有两种模式：
+   ![欺骗智能见解的屏幕截图](../../media/28aeabac-c1a1-4d16-9fbe-14996f742a9a.png)
 
-   - **真知灼见模式**：如果启用欺骗智能，则真知灼见将显示在过去七天内受到欺骗智能功能影响的邮件数。
-   - **如果模式** 为：如果禁用欺骗情报，则真知灼见将显示在过去七天中，我们的欺骗智能功能 *可能会* 影响多少封邮件。
+   此见解有两种模式：
 
-   无论哪种方式，真知灼见中显示的欺骗性域都分为两类： **可疑域** 和 **非可疑域**。
+   - **见解模式**：如果启用了欺骗智能，则此见解将展示在过去七天内受欺骗智能功能影响的邮件数。
+   - **如果模式：** 如果禁用欺骗智能，则见解将展示在过去七天内受欺骗智能功能影响的邮件数。
+
+   无论哪种方式，在见解中显示的欺骗性域都分为两类： **可疑** 域 **和非可疑域**。
 
    - **可疑域** 包括：
 
-     - 高可信度欺骗：基于域的历史发送模式和信誉得分，我们非常确信域是哄骗的，并且来自这些域的邮件更有可能是恶意的。
+     - 高可信度欺骗：根据历史发送模式和域的信誉评分，我们高度确信这些域是欺骗的，并且来自这些域的邮件更有可能是恶意邮件。
 
-     - 中等可信度欺骗：根据历史发送模式和域的信誉得分，我们确保了域是欺骗的，并且从这些域发送的邮件是合法的。 在此类别中，误报的可能性更大，而不是高度信心欺骗。
+     - 中等可信度欺骗：根据历史发送模式和域的信誉分数，我们确信这些域是欺骗的，并且从这些域发送的邮件是合法的。 误报在此类别中的可能性大于高可信度欺骗。
 
-   **非可疑域**：域未通过显式电子邮件身份验证检查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 但是，域通过隐式电子邮件身份验证检查 ([复合身份验证](email-validation-and-authentication.md#composite-authentication)) 。 因此，不会对邮件执行任何反欺骗操作。
+   **非可疑域**：域未通过显式电子邮件身份验证检查 [SPF、DKIM](how-office-365-uses-spf-to-prevent-spoofing.md)和 [DMARC](use-dmarc-to-validate-email.md)) 。 [](use-dkim-to-validate-outbound-email.md) 但是，域通过隐式电子邮件身份验证检查 ([复合身份验证) 。](email-validation-and-authentication.md#composite-authentication) 因此，未对邮件执行反欺骗操作。
 
-### <a name="view-detailed-information-about-suspicious-domains-from-the-spoof-intelligence-insight"></a>查看有关欺骗性智能洞察力的可疑域的详细信息
+### <a name="view-detailed-information-about-suspicious-domains-from-the-spoof-intelligence-insight"></a>从欺骗智能见解中查看可疑域的详细信息
 
-1. 在 "哄骗智能洞察力" 中，单击 " **可疑域** " 或 " **非可疑域** " 以转到 " **哄骗智能洞察力** " 页面。 " **哄骗智能洞察力** " 页面包含以下信息：
+1. 在"欺骗智能见解"上，单击 **"可疑** 域或非 **可疑** 域"以转到"欺骗 **智能见解** "页。 " **欺骗智能见解** "页包含以下信息：
 
-   - **欺骗域**：在电子邮件客户端的 " **发件人** " 框中显示的欺骗用户的域。 此地址也称为 `5322.From` 地址。
-   - **基础结构**：也称为 " _发送" 基础结构_。 在反向 DNS 查找中找到的域 (PTR 记录服务器的 IP 地址的 PTR 记录) 。 如果源 IP 地址没有 PTR 记录，则发送的基础结构被标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
-   - **邮件计数**：在最近7天内包含指定的欺骗性域的组织发送到组织的邮件数。
-   - **上次查看** 时间：从包含欺骗域的发送基础结构收到邮件的最后日期。
-   - **哄骗类型**：此值是 **外部** 的。
-   - 是否 **允许欺骗？**：您在此处看到的值是：
-     - **是**：允许欺骗用户的域和发送基础结构组合的邮件不会被视为欺骗电子邮件。
-     - **否**：来自欺骗用户的域和发送基础结构的组合的邮件被标记为欺骗。 该操作由默认的反网络钓鱼策略或自定义反网络钓鱼策略控制 (默认值为 " **将邮件移动到垃圾邮件" 文件夹**) 。
+   - **欺骗域**：电子邮件客户端的"发送"框中显示的欺骗用户的域。  此地址也称为地址 `5322.From` 。
+   - **基础结构**：也称为发送 _基础结构_。 反向 DNS 查找中的域 (PTR 记录) 源电子邮件服务器的 IP 地址。 如果源 IP 地址没有 PTR 记录，则发送基础结构标识为 \<source IP\> /24 (例如，192.168.100.100/24) 。
+   - **邮件计数**：过去 7 天内从发送基础结构发送到包含指定欺骗域的组织的邮件数。
+   - **上次看到** 时间：上次从包含欺骗域的发送基础结构接收邮件的日期。
+   - **欺骗类型**：此值为 **External**。
+   - **允许欺骗？：** 你在此处看到的值是：
+     - **是**：允许来自欺骗用户域和发送基础结构组合的邮件，并且不会被视为欺骗电子邮件。
+     - **否**：来自欺骗用户域和发送基础结构组合的邮件被标记为欺骗邮件。 该操作由默认防钓鱼策略或自定义防钓鱼策略控制， (默认值为"将邮件移动到垃圾邮件"文件夹) 。 
 
-     有关详细信息，请参阅 [在 Microsoft Defender For Office 365 中配置反网络钓鱼策略](configure-atp-anti-phishing-policies.md)。
+     有关详细信息，请参阅在 [Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md)中配置防钓鱼策略。
 
-2. 选择列表中的某一项，以查看浮出控件中的域/发送基础结构对的详细信息。 这些信息包括：
-   - 为什么我们会发现这一点。
-   - 您需要执行的操作。
+2. 在列表中选择一个项目，以查看有关在飞出中对域/发送基础结构的详细信息。 这些信息包括：
+   - 我们为什么捕获到这一点。
+   - 需要执行哪些工作。
    - 域摘要。
-   - WhoIs 有关发件人的数据。
-   - 从同一个发件人在你的租户中看到的类似消息。
+   - 有关发件人的 WhoIs 数据。
+   - 我们在租户中看到的来自同一发件人的类似邮件。
 
-   在这里，您还可以选择在 " **允许欺骗** 发件人允许" 列表中添加或删除域/发送基础结构对。 只需设置相应的开关即可。
+   在此处，还可以选择从允许欺骗发件人允许列表中添加或删除域/发送基础结构对。  只需相应地设置切换。
 
-   ![欺骗智能洞察力详细信息窗格中的域的屏幕截图](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
+   !["欺骗智能见解详细信息"窗格中域的屏幕截图](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 
-### <a name="adding-a-domain-to-the-allowed-to-spoof-list"></a>将域添加到允许的欺骗列表中
+### <a name="adding-a-domain-to-the-allowed-to-spoof-list"></a>将域添加到允许欺骗列表
 
-通过哄骗智能洞察力将域添加到允许的欺骗列表中，仅允许将欺骗性域 *和* 发送基础结构结合在一起。 它不允许来自任何来源的来自欺骗域的电子邮件，也不允许来自任何域的发送基础结构的电子邮件。
+从欺骗智能见解向允许欺骗列表添加域仅允许组合欺骗域 *和发送基础结构* 。 它不允许来自任何来源的欺骗性域的电子邮件，也不允许来自任何域的发送基础结构的电子邮件。
 
-例如，您允许以下域成为允许欺骗的列表：
+例如，允许以下域进入允许欺骗列表：
 
-- **域**： gmail.com
-- **基础结构**： tms.mx.com
+- **域**：gmail.com
+- **基础结构**：tms.mx.com
 
-仅允许来自该域/发送基础结构对的电子邮件进行欺骗。 不允许其他试图欺骗 gmail.com 的发件人。 来自 tms.mx.com 的其他域中的邮件由欺骗情报检查。
+仅允许来自该域/发送基础结构对的电子邮件欺骗。 不允许其他发件人gmail.com欺骗邮件。 来自其他域中的邮件tms.mx.com欺骗智能进行检查。
 
 ## <a name="related-topics"></a>相关主题
 

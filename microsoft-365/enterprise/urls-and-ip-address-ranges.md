@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政府社区云 (GCC)）的客户，应该可以访问以下终结点。
 hideEdit: true
-ms.openlocfilehash: 6e6cddb43b0c57296267b4d8f00d7efdf40b2b3d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d5880a6fcd2d66fb8ae1e987573eca6487181451
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791831"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624750"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 地址范围
 
@@ -49,15 +49,15 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 
 显示的数据列是：
 
-- **ID** ：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
+- **ID**：行的 ID 号，也称为终结点集。此 ID 与终结点集的 Web 服务返回的 ID 相同。
 
-- **类别** ：显示端点集是分类为“优化”、“允许”还是“默认”。若要了解这些类别及其管理指南，可以访问 [新 Office 365 端点类别](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)。此列还列出了哪些端点集必须有网络连接。对于不需要有网络连接的端点集，我们在此字段中提供了备注，以指明在端点集被阻止时会缺少什么功能。若要排除整个服务区域，则列出的必须有网络连接的端点集不需要连接。
+- **类别**：显示端点集是分类为“优化”、“允许”还是“默认”。若要了解这些类别及其管理指南，可以访问 [新 Office 365 端点类别](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)。此列还列出了哪些端点集必须有网络连接。对于不需要有网络连接的端点集，我们在此字段中提供了备注，以指明在端点集被阻止时会缺少什么功能。若要排除整个服务区域，则列出的必须有网络连接的端点集不需要连接。
 
-- **ER** ：如果使用带有 Office 365 路由前缀的 Azure ExpressRoute 支持终结点集，则为 **是** 。包含所显示的路由前缀的 BGP 社区与列出的服务区域一致。当 ER 为 **否** 时，这意味着此终结点集不支持 ExpressRoute。但是，不应假设没有为 ER 为 **否** 的终结点集播发路由。
+- **ER**：如果使用带有 Office 365 路由前缀的 Azure ExpressRoute 支持终结点集，则为 **是**。包含所显示的路由前缀的 BGP 社区与列出的服务区域一致。当 ER 为 **否** 时，这意味着此终结点集不支持 ExpressRoute。但是，不应假设没有为 ER 为 **否** 的终结点集播发路由。
 
-- **地址** ：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
+- **地址**：列出终结点集的 FQDN 或通配符域名以及 IP 地址范围。请注意，IP 地址范围采用 CIDR 格式，并且可能包含指定网络中的许多单独 IP 地址。
  
-- **端口** ：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
+- **端口**：列出与地址合并以形成网络终结点的 TCP 或 UDP 端口。你会注意到 IP 地址范围中存在一些重复，其中列出了不同的端口。
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
@@ -68,6 +68,8 @@ Office 365 需要连接到 Internet。对于使用 Office 365 计划（包括政
 ## <a name="related-topics"></a>相关主题
 
 [管理 Office 365 终结点](managing-office-365-endpoints.md)
+
+[通用 Microsoft Stream 终结点](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
 [排查 Office 365 连接故障](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
 

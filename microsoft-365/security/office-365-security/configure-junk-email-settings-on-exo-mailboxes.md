@@ -15,52 +15,52 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 Outlook 或 web 上的 Outlook 中的用户可以使用这些设置中的很多。
-ms.openlocfilehash: 59106567e18895f5983b692bbdd03c6853b92341
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 管理员可以了解如何在 Exchange Online 邮箱中配置垃圾邮件设置。 许多这些设置都可供 Outlook 或 Outlook 网页中的用户使用。
+ms.openlocfilehash: 5469143e0a924478e0bbb7285ac607095d4a169f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845836"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659722"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>配置 Exchange Online 邮箱上的垃圾邮件设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在 Exchange Online 中有邮箱的 Microsoft 365 组织中，组织反垃圾邮件设置由 Exchange Online Protection (EOP) 进行控制。 有关详细信息，请参阅 [EOP 中的反垃圾邮件保护](anti-spam-protection.md)。
+在具有 Exchange Online 邮箱的 Microsoft 365 组织中，组织反垃圾邮件设置由 Exchange Online Protection (EOP) 。 有关详细信息，请参阅 [EOP 中的反垃圾邮件保护](anti-spam-protection.md)。
 
-但是，管理员还可以在 Exchange Online 中的各个邮箱上配置特定的反垃圾邮件设置：
+但是，管理员还可以在 Exchange Online 中的单个邮箱上配置特定的反垃圾邮件设置：
 
-- **启用或禁用垃圾邮件规则** ： "垃圾邮件" 规则是一个隐藏的 "收件箱" 规则，默认情况下，在每个邮箱中启用该规则。 垃圾邮件规则控制以下功能：
+- **启用或禁用垃圾邮件规则**：垃圾邮件规则是一个隐藏的收件箱规则，名为"垃圾邮件规则"，默认在每个邮箱中启用。 垃圾邮件规则控制以下功能：
 
-  - **根据反垃圾邮件策略将邮件移动到 "垃圾邮件" 文件夹** ：当使用 "操作 **将邮件移动到垃圾邮件" 文件夹** 中的垃圾邮件策略筛选判定时，垃圾邮件筛选规则会在邮件传递到邮箱后将邮件移动到 "垃圾邮件" 文件夹。 有关反垃圾邮件策略中的垃圾邮件筛选 verdicts 的详细信息，请参阅 [在 EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。 同样，如果零小时自动清除 (ZAP) 确定传递的邮件是垃圾邮件或网络钓鱼，垃圾邮件筛选规则会将邮件移动到 "垃圾邮件" 文件夹，以便 **将邮件移动到 "垃圾** 邮件" 文件夹。垃圾邮件筛选判定操作。 有关 ZAP 的详细信息，请参阅 [Exchange Online 中的零小时自动清除 (ZAP) ](zero-hour-auto-purge.md)。
+  - 根据反垃圾邮件策略将邮件移动到"垃圾邮件"文件夹：当使用"将邮件移动到垃圾邮件"文件夹的操作配置反垃圾邮件策略进行垃圾邮件筛选裁定时，垃圾邮件筛选器规则在邮件传递到邮箱后将邮件移动到"垃圾邮件"文件夹。 有关反垃圾邮件策略中的垃圾邮件筛选裁定详细信息，请参阅"在 EOP 中配置[反垃圾邮件策略"。](configure-your-spam-filter-policies.md) 同样，如果零时差自动清除 (ZAP) 确定已传递的邮件是垃圾邮件或网络钓鱼邮件，垃圾邮件筛选器规则会将邮件移动到"垃圾邮件"文件夹，以执行"将邮件移动到垃圾邮件" **文件夹** 垃圾邮件筛选裁定操作。 有关 ZAP 详细信息，请参阅 Exchange Online 中的零时差 [ (ZAP) 清除](zero-hour-auto-purge.md)。
 
-  - **用户在 outlook 或 web 上的 outlook 中为自己配置的垃圾邮件设置** ：安全列表 _集合_ 是安全发件人列表、安全收件人列表和每个邮箱的阻止发件人列表。 这些列表中的条目确定垃圾邮件规则是否将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 用户可以在 Outlook 或 web 上的 Outlook 中为其自己的邮箱配置安全列表集合， (以前称为 Outlook Web App) 。 管理员可以在任何用户的邮箱上配置安全列表集合。
+  - **用户在 Outlook** 或 Web 上的 Outlook 中为自己配置的垃圾邮件设置： _安全_ 列表集合是每个邮箱上的"安全发件人"列表、"安全收件人"列表和"阻止的发件人"列表。 这些列表中条目确定垃圾邮件规则是将邮件移动到"收件箱"还是"垃圾邮件"文件夹。 用户可以在 Outlook 或 Web 上的 Outlook 中为其自己的邮箱配置安全列表 (以前称为Outlook Web App) 。 管理员可以在任何用户的邮箱上配置安全列表集合。
 
-在邮箱上启用垃圾邮件规则时，EOP 可以将邮件移动到 "垃圾邮件" 文件夹，具体取决于垃圾邮件筛选判定操作 " **将邮件移至垃圾邮件" 文件夹** 或邮箱中的阻止发件人列表，并阻止邮件传递到 "垃圾邮件" 文件夹 (基于邮箱) 上的 "安全发件人" 列表。
+在邮箱上启用垃圾邮件规则后，EOP 能够根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱上的"阻止的发件人"列表，并基于邮箱) 上的"安全发件人"列表阻止邮件传递到"垃圾邮件"文件夹 (。
 
- 在邮箱上禁用垃圾邮件规则时，EOP 无法根据垃圾邮件筛选判定操作将邮件移动到 "垃圾邮件" 文件夹。 **将邮件移动到 "垃圾邮件" 文件夹** 或邮箱中的 "安全列表" 集合。
+ 在邮箱上禁用垃圾邮件规则后，EOP 无法根据垃圾邮件筛选裁定操作将邮件移动到"垃圾邮件"文件夹或邮箱的安全列表集合，将邮件移动到"垃圾邮件"文件夹。
 
-管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可以使用 Exchange Online PowerShell 在邮箱 (安全发件人列表、安全收件人列表和阻止发件人列表) 中的 "安全发件人" 列表中配置安全列表集合中的条目。
+管理员可以使用 Exchange Online PowerShell 禁用、启用和查看邮箱上的垃圾邮件规则的状态。 管理员还可使用 Exchange Online PowerShell 配置邮箱的安全列表集合中的条目 (安全发件人列表、安全收件人列表和阻止的发件人列表) 。
 
 > [!NOTE]
-> 来自用户添加到其自己的安全发件人列表中的发件人发来的邮件将跳过连接筛选作为 EOP 的一部分 (SCL 为-1) 。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请按照本主题后面的  [关于 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook) 一节中所述的那样使用组策略。 策略筛选、Office 365 的内容筛选和 Defender 检查仍将应用于邮件。
+> 用户已添加到其自己的安全发件人列表的发件人的邮件将跳过连接筛选作为 EOP 的一部分 (SCL 为 -1) 。 若要阻止用户在 Outlook 中向其安全发件人列表添加条目，请使用本文稍后部分"关于  [Outlook](#about-junk-email-settings-in-outlook) 垃圾邮件设置"部分中提到的组策略。 策略筛选、内容筛选和适用于 Office 365 的 Defender 检查仍将应用于邮件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 只能使用 Exchange Online PowerShell 执行这些过程。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
+- 只能使用 Exchange Online PowerShell 执行本文中的过程。 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您需要先分配权限，然后才能执行这些过程。 具体来说，您需要 " **邮件收件人** " 角色 (默认情况下，该角色分配给 " **组织管理** "、" **收件人管理** " 和 " **自定义邮件收件人** " 角色组) 或者 " **用户选项** " 角色 (默认情况下分配给 " **组织管理** " 和 " **技术支持** " 角色组) 。 若要向 Exchange Online 中的角色组添加用户，请参阅 [在 Exchange online 中修改角色组](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups)。 请注意，拥有默认权限的用户可以在其自己的邮箱上执行这些相同的过程，只要他们有 [权访问 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)即可。
+- 您需在 Exchange Online 中获得权限，然后才能执行本文中的过程。 具体来说，您需要默认情况下分配给组织管理、收件人管理和自定义邮件收件人角色组的"邮件收件人"角色)  (或默认分配给"组织管理"和"技术支持"角色组的用户选项角色 () 。      若要将用户添加到 Exchange Online 中的角色组，请参阅["修改 Exchange Online 中的角色组"。](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) 请注意，具有默认权限的用户可以在自己的邮箱上执行这些相同的过程，只要他们有权访问[Exchange Online PowerShell。](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)
 
 - 在 EOP 保护本地 Exchange 邮箱的独立 EOP 环境中，需要在本地 Exchange 中配置邮件流规则（亦称为“传输规则”），以转换 EOP 垃圾邮件筛选裁定，这样垃圾邮件规则才能将邮件移动到“垃圾邮件”文件夹。 有关详细信息，请参阅[在混合环境中将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
 
-- 共享邮箱的安全发件人在设计时不会同步到 Azure AD 和 EOP。
+- 根据设计，共享邮箱的安全发件人不会同步到 Azure AD 和 EOP。
 
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-the-junk-email-rule-in-a-mailbox"></a>使用 Exchange Online PowerShell 启用或禁用邮箱中的垃圾邮件规则
 
 > [!NOTE]
-> 您只能使用 **Set-MailboxJunkEmailConfiguration** cmdlet 来禁用在 Outlook（在"缓存"Exchange 模式中）或 Web 上的 Outlook 中打开的邮箱上的垃圾邮件规则。 如果尚未打开邮箱，则会收到错误： `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` 如果要对批量操作禁止显示此错误，可以添加 `-ErrorAction SilentlyContinue` 到 **set-mailboxjunkemailconfiguration** 命令。
+> 您只能使用 **Set-MailboxJunkEmailConfiguration** cmdlet 来禁用在 Outlook（在"缓存"Exchange 模式中）或 Web 上的 Outlook 中打开的邮箱上的垃圾邮件规则。 如果邮箱尚未打开，您将收到错误：如果要禁止批量操作出现此错误，可以添加到 `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` `-ErrorAction SilentlyContinue` **Set-MailboxJunkEmailConfiguration** 命令。
 
 若要启用或禁用邮箱上的垃圾邮件规则，请使用以下语法：
 
@@ -80,43 +80,43 @@ Set-MailboxJunkEmailConfiguration -Identity "Ori Epstein" -Enabled $false
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -Enabled $false}
 ```
 
-有关语法和参数的详细信息，请参阅 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
+有关语法和参数的详细信息，请参阅[Set-MailboxJunkEmailConfiguration。](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)
 
 > [!NOTE]
 >
-> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误，请添加 `-ErrorAction SilentlyContinue` 到 **set-mailboxjunkemailconfiguration** 命令。
+> - 如果用户从未打开其邮箱，则当您运行上一个命令时，您可能会收到错误。 若要禁止批量操作出现此错误，请 `-ErrorAction SilentlyContinue` 添加到 **Set-MailboxJunkEmailConfiguration** 命令。
 >
-> - 即使禁用垃圾邮件规则，Outlook 垃圾邮件筛选器 (取决于其配置) 还可以确定邮件是否为垃圾邮件，并且可以根据其自身的垃圾邮件结论和邮箱上的安全列表集合，将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[有关 Outlook 中的垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
+> - 即使您禁用垃圾邮件规则，Outlook 垃圾邮件筛选器 (也可以根据邮件的配置方式确定) 是否包含垃圾邮件，并可以基于自己的垃圾邮件裁定和邮箱的安全列表集合将邮件移动到收件箱或垃圾邮件文件夹。 有关详细信息，请参阅本文中的" [关于 Outlook 中的](#about-junk-email-settings-in-outlook) 垃圾邮件设置"部分。
 
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
 若要验证是否已成功启用或禁用邮箱的垃圾邮件规则，请执行以下任一操作：
 
-- _\<MailboxIdentity\>_ 将替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证 **Enabled** 属性值：
+- 替换为邮箱的名称、别名或电子邮件地址，并运行以下命令 _\<MailboxIdentity\>_ 来验证 **Enabled** 属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
   ```
 
-## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>使用 Exchange Online PowerShell 在邮箱上配置安全列表集合
+## <a name="use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox"></a>使用 Exchange Online PowerShell 配置邮箱的安全列表集合
 
-邮箱的安全列表集合包括"安全发件人"列表、"安全收件人"列表和"阻止的发件人"列表。 默认情况下，用户可以在 Outlook 或 web 上的 Outlook 中的自己的邮箱上配置安全列表集合。 管理员可以使用 **Set-MailboxJunkEmailConfiguration** cmdlet 上对应的参数在用户的邮箱上配置安全列表集合。 下表介绍了这些参数。
+邮箱的安全列表集合包括"安全发件人"列表、"安全收件人"列表和"阻止的发件人"列表。 默认情况下，用户可以在 Outlook 或 Web 上的 Outlook 中配置自己的邮箱的安全列表集合。 管理员可以使用 **Set-MailboxJunkEmailConfiguration** cmdlet 上对应的参数在用户的邮箱上配置安全列表集合。 下表介绍了这些参数。
 
 ****
 
-|Set-MailboxJunkEmailConfiguration 上的参数|Outlook 网页设置|
+|参数Set-MailboxJunkEmailConfiguration|Web 上的 Outlook 设置|
 |---|---|
 |_BlockedSendersAndDomains_|**将来自这些发件人或域的邮件移到我的"垃圾邮件"文件夹**|
 |_ContactsTrusted_|**信任来自我的联系人的邮件**|
-|_TrustedListsOnly_|**仅信任来自安全发件人和域列表和安全邮件列表中的地址的电子邮件**|
-|_TrustedSendersAndDomains_<sup>\*</sup>|**不将来自这些发件人的电子邮件移动到我的垃圾邮件文件夹**|
+|_TrustedListsOnly_|**仅信任来自我的安全发件人和域列表和安全邮件列表中地址的电子邮件**|
+|_TrustedSendersAndDomains_<sup>\*</sup>|**不要将来自这些发件人的电子邮件移动到我的"垃圾邮件"文件夹**|
 |
 
-<sup>\*</sup>**备注** ：
+<sup>\*</sup>**注意**：
 
-- 在 Exchange Online 中，不能识别安全发件人列表或 _TrustedSendersAndDomains_ 参数中的 **域条目** ，因此只能使用电子邮件地址。 在具有目录同步的独立 EOP 中，默认情况下不会同步域条目，但可以为域启用同步。 有关详细信息，请参阅 [KB3019657](https://support.microsoft.com/help/3019657)。
+- 在 Exchange  Online 中，无法识别安全发件人列表或 _TrustedSendersAndDomains_ 参数中的域条目，因此只能使用电子邮件地址。 在具有目录同步的独立 EOP 中，默认情况下不会同步域条目，但您可以为域启用同步。 有关详细信息，请参阅[KB3019657。](https://support.microsoft.com/help/3019657)
 
-- 您不能使用 **set-mailboxjunkemailconfiguration** cmdlet 直接修改安全收件人列表 ( _TrustedRecipientsAndDomains_ 参数不起作用) 。 修改"安全发件人"列表后，这些更改将同步到"安全收件人"列表。
+- 不能通过使用 **Set-MailboxJunkEmailConfiguration** cmdlet (_TrustedRecipientsAndDomains_ 参数不能直接修改安全收件人列表) 。 修改"安全发件人"列表后，这些更改将同步到"安全收件人"列表。
 
 若要配置邮箱的安全列表集合，请使用以下语法：
 
@@ -124,13 +124,13 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <EmailAddressesOrDomains | $null> -ContactsTrusted <$true | $false> -TrustedListsOnly <$true | $false> -TrustedSendersAndDomains  <EmailAddresses | $null>
 ```
 
-若要输入多个值，并覆盖 _BlockedSendersAndDomains_ 和 _TrustedSendersAndDomains_ 参数的任何现有条目，请使用以下语法： `"<Value1>","<Value2>"...` 。 若要在不影响其他现有条目的情况下添加或删除一个或多个值，请使用以下语法： `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
+若要输入多个值并覆盖 _BlockedSendersAndDomains_ 和 _TrustedSendersAndDomains_ 参数的任何现有条目，请使用以下 `"<Value1>","<Value2>"...` 语法： 若要在不影响其他现有条目的情况下添加或删除一个或多个值，请使用以下语法： `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
 本示例在 Ori Epstein 的邮箱上配置以下安全列表集合的设置：
 
-- 将值 shopping@fabrikam.com 添加到阻止的发件人列表中。
+- 将值shopping@fabrikam.com阻止的发件人列表。
 
-- 从 "安全发件人" 列表和 "安全收件人" 列表中删除值 chris@fourthcoffee.com。
+- 从"chris@fourthcoffee.com发件人"列表和安全收件人列表中删除该值。
 
 - 在"联系人"文件夹中配置被视为受信任的发件人的联系人。
 
@@ -144,21 +144,21 @@ Set-MailboxJunkEmailConfiguration "Ori Epstein" -BlockedSendersAndDomains @{Add=
 $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All | foreach {Set-MailboxJunkEmailConfiguration $_.Name -BlockedSendersAndDomains @{Remove="contoso.com"}}
 ```
 
-有关语法和参数的详细信息，请参阅 [set-mailboxjunkemailconfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)。
+有关语法和参数的详细信息，请参阅[Set-MailboxJunkEmailConfiguration。](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)
 
 > [!NOTE]
 >
-> - 如果用户从未打开过其邮箱，则在运行以前的命令时可能会收到错误消息。 若要取消批量操作的此错误，请添加 `-ErrorAction SilentlyContinue` 到 **set-mailboxjunkemailconfiguration** 命令。
+> - 如果用户从未打开其邮箱，则当您运行之前的命令时，您可能会收到错误。 若要禁止批量操作出现此错误，请 `-ErrorAction SilentlyContinue` 添加到 **Set-MailboxJunkEmailConfiguration** 命令。
 >
-> - 即使在邮箱上禁用了垃圾邮件规则，仍可以配置安全列表集合，并且 Outlook 垃圾邮件筛选器能够将邮件移动到 "收件箱" 或 "垃圾邮件" 文件夹。 有关详细信息，请参阅本主题中的[关于 Outlook 中的配置垃圾邮件设置](#about-junk-email-settings-in-outlook)部分。
+> - 即使邮箱上禁用了垃圾邮件规则，您仍可以配置安全列表集合，并且 Outlook 垃圾邮件筛选器可以将邮件移动到"收件箱"或"垃圾邮件"文件夹。 有关详细信息，请参阅本文中的" [关于 Outlook 中的](#about-junk-email-settings-in-outlook) 垃圾邮件设置"部分。
 >
-> - Outlook 垃圾邮件筛选器包含其他安全列表集合设置 (例如， **自动将我的电子邮件添加到 "安全发件人" 列表** ) 。 For more information, see [Use Junk Email Filters to control which messages you see](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
+> - Outlook 垃圾邮件筛选器具有其他安全列表集合 (例如，自动将我电子邮件的人添加到安全发件人 **列表) 。** For more information, see [Use Junk Email Filters to control which messages you see](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### <a name="how-do-you-know-this-worked"></a>您如何知道这有效？
 
 若要验证是否已成功配置邮箱的安全列表集合，请执行以下任一操作：
 
-- _\<MailboxIdentity\>_ 将替换为邮箱的名称、别名或电子邮件地址，然后运行以下命令来验证属性值：
+- 替换为邮箱的名称、别名或电子邮件地址，并运行以下命令 _\<MailboxIdentity\>_ 来验证属性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*
@@ -172,50 +172,50 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 ## <a name="about-junk-email-settings-in-outlook"></a>关于 Outlook 中的配置垃圾邮件设置
 
-若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，请参阅 [管理模板文件 (ADMX/ADML) 和 Office 自定义工具 For Microsoft 365 Apps for enterprise、office 2019 和 office 2016](https://www.microsoft.com/download/details.aspx?id=49030) 以及 [如何使用组策略部署垃圾邮件设置（如安全发件人列表](https://support.microsoft.com/help/2252421)）。
+若要启用、禁用及配置在 Outlook 中可以使用的客户端"垃圾邮件筛选器"设置，请使用"组策略"。 有关详细信息，[请参阅 Microsoft 365 企业应用版、Office 2019 和 Office 2016 的管理模板文件 (ADMX/ADML) ](https://www.microsoft.com/download/details.aspx?id=49030)和 Office 自定义工具，以及如何使用组策略部署垃圾邮件设置（如安全发件人列表）。 [](https://support.microsoft.com/help/2252421)
 
-将 "Outlook 垃圾邮件筛选器" 设置为默认值 "在 **家庭** 垃圾邮件中 **不自动筛选** " "垃圾 \> **Junk** \> **邮件选项** \> " **选项** 时，Outlook 不会尝试将 massages 归类为垃圾邮件，但仍 (使用安全发件人列表、安全收件人列表和阻止发件人列表) 将邮件移动到 "垃圾邮件" 文件夹中的邮件传递。 有关这些设置的详细信息，请参阅 [垃圾邮件筛选器概述](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)。
+当 Outlook 垃圾邮件筛选器设置为默认值"主页垃圾邮件选项"中"无自动筛选"时，Outlook 不会尝试将垃圾邮件分类为垃圾邮件，但仍使用安全列表集合 (安全发件人列表、安全收件人列表和阻止的发件人列表) 在传递后将邮件移动到"垃圾邮件 \>  \>  \> "文件夹。 有关这些设置详细信息，请参阅["垃圾邮件筛选器概述"。](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
 
-When the Outlook Junk Email Filter is set to **Low** or **High** , the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. 此垃圾邮件分类与由 EOP 确定的 SCL)  (的垃圾邮件信任级别不同。 事实上，除非 EOP 将邮件标记为跳过垃圾邮件) 筛选，否则 Outlook 将忽略 EOP (中的 SCL，并使用其自己的条件来确定邮件是否为垃圾邮件。 当然，可能会出现来自 EOP 和 Outlook 的垃圾邮件结论。 有关这些设置的详细信息，请参阅在 [垃圾邮件筛选器中更改保护级别](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。
+When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Junk Email Filter uses its own SmartScreen filter technology to identify and move spam to the Junk Email folder. 此垃圾邮件分类独立于由 EOP (SCL) 垃圾邮件可信度。 事实上，Outlook 会忽略 EOP (中的 SCL，除非 EOP 将邮件标记为跳过垃圾邮件筛选) 并使用自己的条件来确定邮件是否是垃圾邮件。 当然，来自 EOP 和 Outlook 的垃圾邮件裁定可能相同。 有关这些设置详细信息，请参阅"更改垃圾邮件 [筛选器"中的保护级别](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)。
 
 > [!NOTE]
-> 在2016年11月，Microsoft 已停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。 现有的 SmartScreen 垃圾邮件定义保留不变，但其有效性可能会随着时间的推移而下降。 有关详细信息，请参阅“[停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332)”。
+> 2016 年 11 月，Microsoft 停止为 Exchange 和 Outlook 中的 SmartScreen 筛选器生成垃圾邮件定义更新。 现有 SmartScreen 垃圾邮件定义已留在现有位置，但其有效性可能会随着时间的推移而降低。 有关详细信息，请参阅“[停止为 Outlook 和 Exchange 中的 SmartScreen 提供支持](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332)”。
 
-因此，Outlook 垃圾邮件筛选器能够使用邮箱的安全列表集合及其自己的垃圾邮件分类将邮件移动到 "垃圾邮件" 文件夹，即使邮箱中禁用了垃圾邮件规则也是如此。
+因此，Outlook 垃圾邮件筛选器可以使用邮箱的安全列表集合及其自己的垃圾邮件分类将邮件移动到"垃圾邮件"文件夹，即使邮箱中已禁用垃圾邮件规则。
 
-Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集合保存在 Exchange Online 邮箱中，因此对 Outlook 中的安全列表集合的更改会显示在 web 上的 Outlook 中，反之亦然。
+Outlook 和 Web 上的 Outlook 同等支持安全列表集合。 安全列表集合保存在 Exchange Online 邮箱中，因此 Outlook 中的安全列表集合的更改显示在 Outlook 网页版中，反之亦然。
 
 ## <a name="limits-for-junk-email-settings"></a>垃圾邮件设置的限制
 
-用户邮箱中存储的安全发件人列表、安全收件人列表和阻止发件人列表) 的安全列表集合 (也会同步到 EOP。 通过目录同步，安全列表集合将同步到 Azure AD。
+安全列表集合 (用户邮箱中存储的安全发件人列表、安全收件人列表和阻止的发件人列表) 也会同步到 EOP。 通过目录同步，安全列表集合将同步到 Azure AD。
 
-- 用户邮箱中的安全列表集合的限制为 510 KB，其中包含所有列表以及其他垃圾邮件筛选器设置。 如果用户超过此限制，将收到如下所示的 Outlook 错误：
+- 用户邮箱中的安全列表集合限制为 510 KB，其中包括所有列表，以及其他垃圾邮件筛选器设置。 如果用户超过此限制，将收到如下所示的 Outlook 错误：
 
-  > 无法/无法将添加到 "垃圾邮件" 的服务器列表。 您已超出服务器允许的大小。 服务器上的垃圾邮件筛选器将被禁用，直到垃圾邮件列表缩小到服务器允许的大小。
+  > 无法/无法添加到服务器垃圾邮件列表。 您超过服务器上允许的大小。 在垃圾邮件列表减小到服务器允许的大小之前，将禁用该服务器上垃圾邮件筛选器。
 
-  有关此限制以及如何更改此限制的详细信息，请参阅 [KB2669081](https://support.microsoft.com/help/2669081)。
+  有关此限制以及如何更改它，请参阅[KB2669081。](https://support.microsoft.com/help/2669081)
 
 - EOP 中的同步安全列表集合具有以下同步限制：
 
-  - 1024如果启用了 **"来自我的联系人的信任电子邮件** "，则安全发件人列表、安全收件人列表和外部联系人中的条目总数。
-  - 500阻止的发件人列表和阻止的域列表中的条目总数。
+  - 如果启用了"信任来自我的联系人的电子邮件"，则安全发件人列表、安全收件人列表和外部联系人中的总条目数为1024。
+  - "阻止的发件人"列表和"阻止的域"列表中共有 500 个条目。
 
-  达到1024项限制时，将发生以下情况：
+  当达到 1024 条目限制时，将发生以下情况：
 
-  - 该列表将停止接受 PowerShell 中的条目和 web 上的 Outlook，但不会显示任何错误。
+  - 该列表将停止接受 PowerShell 和 Web 上的 Outlook 中的条目，但不显示任何错误。
 
-    Outlook 用户可以继续添加1024个以上的条目，直到达到 Outlook 限制值 510 KB。 Outlook 可以使用这些额外的条目，只要 EOP 筛选器在传递到邮箱 (邮件流规则、反欺骗等 ) 之前不会阻止邮件。
+    Outlook 用户可以继续添加超过 1024 个条目，直到达到 Outlook 510 KB 的限制。 Outlook 可以使用这些附加条目，只要 EOP 筛选器在将邮件发送到邮箱之前不阻止 (邮件流规则、反欺骗等) 。
 
-- 通过目录同步，这些项将按以下顺序同步到 Azure AD：
+- 借助目录同步，条目将按以下顺序同步到 Azure AD：
 
-  1. 如果启用了 **"来自我的联系人的信任电子邮件"** ，则为邮件联系人。
-  2. 只要对前1024个条目进行了更改，就会对安全发件人列表和安全收件人列表进行组合、消除重复并按字母顺序对其进行排序。
+  1. 如果启用了 **信任来自我的联系人的电子邮件，则邮件** 联系人。
+  2. 只要对前 1024 个条目进行了更改，就会组合安全发件人列表和安全收件人列表、取消重复列表并按字母顺序排序。
 
-  使用前1024个条目，并在邮件头中标记相关信息。
+  使用前 1024 个条目，相关信息标记在邮件头中。
 
-  1024以上未同步到 Azure AD 的条目是由 Outlook (不是 Outlook 在 web) 上进行处理的，并且在邮件头中不标记任何信息。
+  超过 1024 个未同步到 Azure AD 的条目由 Outlook (而不是 Web 上的 Outlook) 处理，邮件头中不会标记任何信息。
 
-您可以看到，启用 " **来自我的联系人的信任电子邮件** " 设置可以减少可同步的安全发件人和安全收件人的数量。 如果这是个问题，我们建议使用组策略关闭此功能：
+可以看到，启用"来自我的联系人的信任电子邮件"设置可以减少可以同步的安全发件人和安全收件人的数量。 如果这是一个问题，我们建议使用组策略关闭此功能：
 
-- 文件名： outlk16。 opax
-- 策略设置： **信任来自联系人的电子邮件**
+- 文件名：outlk16.opax
+- 策略设置 **：信任来自联系人的电子邮件**
