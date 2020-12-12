@@ -22,25 +22,25 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 了解如何使用 InterNIC 搜索查找域注册机构和 DNS 托管提供商。
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645319"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655538"
 ---
 # <a name="find-your-domain-registrar"></a>查找域注册机构
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
 ## <a name="domain-registrar"></a>域名注册机构
   
 ### <a name="find-your-domain-name-registrar"></a>查找域名注册机构
 
 >[!NOTE]
-> 只有以 *.COM*、*.NET*和 *.EDU*结尾的域才可以使用此工具。
+> 只有以 *.COM*、*.NET* 和 *.EDU* 结尾的域才可以使用此工具。
   
-1. 在[InterNIC 搜索页面](https://go.microsoft.com/fwlink/p/?LinkId=402770)上的“**Whois 搜索**”框中，键入你的域。 例如  *contoso.com。* 
+1. 在 [InterNIC 搜索页面](https://go.microsoft.com/fwlink/p/?LinkId=402770)上的“**Whois 搜索**”框中，键入你的域。 例如  *contoso.com。* 
     
 2. 选择"**域**"选项，然后选择"**提交**"。
     
@@ -51,7 +51,7 @@ ms.locfileid: "48645319"
 ### <a name="find-your-dns-hosting-provider"></a>查找 DNS 托管提供商
 
 >[!NOTE]
-> 只有以 *.COM*、*.NET*和 *.EDU*结尾的域才可以使用此工具。
+> 只有以 *.COM*、*.NET* 和 *.EDU* 结尾的域才可以使用此工具。
   
 1. 在 [InterNIC]( https://go.microsoft.com/fwlink/p/?LinkId=402770) 搜索页面上的" **Whois 搜索**"框中，键入你的域。 例如，contoso.com。 
     

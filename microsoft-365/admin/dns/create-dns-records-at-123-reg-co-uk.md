@@ -1,5 +1,5 @@
 ---
-title: 在123-reg.co.uk 处为 Microsoft 创建 DNS 记录
+title: 在 Microsoft 123-reg.co.uk创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: 了解如何验证您的域，并在 123-reg.co.uk for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: c7a6db51bd1c2b2af06a1dde8c317850db0d9e35
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何验证域，并设置电子邮件、Skype for Business Online 和其他 Microsoft 123-reg.co.uk DNS 记录。
+ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646352"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658311"
 ---
-# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 处为 Microsoft 创建 DNS 记录
+# <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在 Microsoft 123-reg.co.uk创建 DNS 记录
 
- **如果找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)** 。 
+ **如果找不到要查找的内容，请 [查看域常见问题解答](../setup/domains-faq.yml)** 。 
   
 如果 DNS 托管提供者是 123-reg.co.uk，请按本文中的步骤验证域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
   
-在123-reg.co.uk 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。
+在添加这些记录123-reg.co.uk，域将设置为使用 Microsoft 服务。
   
   
 > [!NOTE]
@@ -54,7 +54,7 @@ ms.locfileid: "48646352"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 " **管理 DNS** " 页面上，选择 " **高级 DNS** " 选项卡。 
+4. 在 **"管理 DNS"** 页上，选择 **"高级 DNS"** 选项卡。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -69,7 +69,7 @@ ms.locfileid: "48646352"
     
 7. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求搜索该记录。
+现在，你已在你的域注册机构网站添加了记录，你将返回到 Microsoft 并请求搜索该记录。
   
 Microsof 找到正确的 TXT 记录表明域已通过验证。
   
@@ -94,7 +94,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 " **管理 DNS** " 页面上，选择 " **高级 DNS** " 选项卡。 
+4. 在 **"管理 DNS"** 页上，选择 **"高级 DNS"** 选项卡。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -102,7 +102,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
     |**主机名**|**类型**|**优先级**|**目标 MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1  <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  . mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft 帐户获取 \<domain-key\>。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com。  <br/> **此值必须以句点 (.) 结尾。** <br/> **注意：** 从 Microsoft 帐户获取 \<domain-key\>。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![复制并粘贴表中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
@@ -112,7 +112,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 如果有任何其他 MX 记录，通过选择每条记录的" **删除(回收站)**"图标将其删除。 
     
-    ![选择 "删除 (垃圾桶" 图标) ](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![Select Delete (the can icon) ](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>添加 Microsoft 所需的六条 CNAME 记录
 <a name="BKMK_add_CNAME"> </a>
@@ -123,7 +123,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 " **管理 DNS** " 页面上，选择 " **高级 DNS** " 选项卡。 
+4. 在 **"管理 DNS"** 页上，选择 **"高级 DNS"** 选项卡。 
     
 5. 添加第一条 CNAME 记录（共 6 条）。
     
@@ -147,7 +147,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加其他 5 条 CNAME 记录。
     
-    在 " **高级 DNS** " 部分，使用表中下一行的值创建记录，然后再次选择 " **添加** " 以完成该记录。 
+    在 **"高级 DNS"** 部分中，使用表中下一行的值创建记录，然后再次选择"添加"以完成该记录。 
     
     重复该过程，直到创建完全部 6 条 CNAME 记录。
     
@@ -155,7 +155,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你已有域的 SPF 记录，请勿为 Microsfot 创建新的。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.md)。 
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsfot 创建新的 SPF 记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。 需要示例吗？ 请查看 [Microsoft 的外部域名系统记录](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要验证 SPF 记录，可使用以下任一 [SPF 验证工具](../setup/domains-faq.yml)。 
   
 1. 要开始，请使用[此链接](https://www.123-reg.co.uk/secure/cpanel/domain/overview)转到您在 123-reg.co.uk 上的域页面。 系统将会提示您先登录。
     
@@ -163,7 +163,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 " **管理 DNS** " 页面上，选择 " **高级 DNS** " 选项卡。 
+4. 在 **"管理 DNS"** 页上，选择 **"高级 DNS"** 选项卡。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -173,7 +173,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     |:-----|:-----|:-----|
     |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建议复制粘贴此条目，以保证正确保留所有空格。           |
    
-    ![123Reg-配置-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
+    ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
 6. 选择“**添加**”。
     
@@ -188,7 +188,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 " **管理 DNS** " 页面上，选择 " **高级 DNS** " 选项卡。 
+4. 在 **"管理 DNS"** 页上，选择 **"高级 DNS"** 选项卡。 
     
 5. 添加两条 SRV 记录中的第一个：
     
@@ -210,7 +210,7 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 7. 添加其他 SRV 记录：
     
-    在 " **高级 DNS** " 部分，使用表中第二行的值创建记录，然后再次选择 " **添加** " 以完成该记录。 
+    在 **"高级 DNS"** 部分，使用表中第二行的值创建记录，然后再次选择"添加"以完成该记录。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果在添加 DNS 记录后遇到邮件流问题或其他问题，请参阅[查找在添加域或 DNS 记录后遇到的问题并进行修复](../get-help-with-domains/find-and-fix-issues.md)。 

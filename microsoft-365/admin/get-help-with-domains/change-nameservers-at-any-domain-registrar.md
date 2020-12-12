@@ -1,5 +1,5 @@
 ---
-title: 更改名称服务器以使用任何域注册机构设置 Microsoft 365
+title: 更改名称服务器以使用任意域注册机构设置 Microsoft 365
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -24,25 +24,25 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: 了解如何在 Microsoft 365 中添加和设置域，以便您的服务（如电子邮件和 Skype for Business Online）使用您自己的域名。
-ms.openlocfilehash: f233cc9b2d37e3ee81e52178a7cc045cb3579e42
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
+ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645391"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658595"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任何域注册机构设置 Microsoft 365
+# <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任意域注册机构设置 Microsoft 365
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-检查 [设置您的域 (特定主机的说明) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 先查看是否有注册注册程序的说明。 
+检查 ["设置域 (主机 ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) 特定的说明) 首先查看我们是否提供了注册机构的说明。 
   
-请按照以下说明在 Microsoft 365 中添加和设置你的域，以便你的服务（如电子邮件和团队）将使用你自己的域名。 为此，您将验证您的域，然后将您的域的名称服务器更改为 Microsoft 365，以便可以为您设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
+按照以下说明在 Microsoft 365 中添加和设置域，以便电子邮件和 Teams 等服务使用你自己的域名。 为此，将验证域，然后将域的名称服务器更改为 Microsoft 365，以便可以设置正确的 DNS 记录。 如果以下语句描述了您的情况，请按照以下步骤操作：
   
-- 你拥有自己的域，并希望将其设置为使用 Microsoft 365。
+- 你有你自己的域，并且想要设置它以使用 Microsoft 365。
     
-- 你希望 Microsoft 365 为你管理 DNS 记录。  (如果您愿意，您可以 [管理自己的 DNS 记录](../setup/add-domain.md)。 ) 
+- 您希望 Microsoft 365 管理 DNS 记录。  (，可以管理 [自己的 DNS](../setup/add-domain.md)记录 .) 
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>添加 TXT 记录或 MX 记录进行验证
 <a name="BKMK_verify"> </a>
@@ -55,7 +55,7 @@ ms.locfileid: "48645391"
 > [!NOTE]
 > 此记录仅用于验证您是否拥有自己的域；它不会影响其他任何内容。 如果需要，您可以以后将其删除。 
   
-### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>在您的 DNS 托管提供商网站上查找可以在其中创建新记录的区域
+### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>在 DNS 托管提供商网站上查找可在其中创建新记录的区域
 
 1. 登录到您的 DNS 托管提供商的网站。
     
@@ -71,7 +71,7 @@ ms.locfileid: "48645391"
     
 |||||
 |:-----|:-----|:-----|:-----|
-|**记录类型** <br/> |**别名**或**主机名称** <br/> |**值** <br/> |**TTL** <br/> |
+|**记录类型** <br/> |**别名** 或 **主机名称** <br/> |**值** <br/> |**TTL** <br/> |
 |TXT  <br/> |执行下列操作之一：键入 **@** ，将该字段留空或键入你的域名。  <br/> > [!NOTE]> 此字段对不同的 DNS 主机有不同的要求。           
 |MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。  <br/> |
    
@@ -79,8 +79,8 @@ ms.locfileid: "48645391"
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-|**记录类型**|**别名**或**主机名称**|**值**|**优先级**|**TTL**|
-|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.md#what-is-mx-priority) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
+|**记录类型**|**别名** 或 **主机名称**|**值**|**优先级**|**TTL**|
+|MX|键入" **@** "或你的域名。 |MS=ms *XXXXXXXX* > [!NOTE]> 这是一个示例。 在这里使用来自 Microsoft 365 中的表的具体“**目标地址或指向的地址**”值。           [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)          |对于“**优先级**”，为避免与用于邮件流的 MX 记录发生冲突，请使用比任何现有 MX 记录的优先级要低的优先级。 有关优先级的详细信息，请参阅[什么是 MX 优先级？](../setup/domains-faq.yml) |将此值设置为 **1 小时** 或等效的分钟数 ( **60** )、秒数 ( **3600** )，等等。 |
    
 ### <a name="save-the-record"></a>保存记录
 
@@ -108,15 +108,15 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 <a name="BKMK_nameservers"> </a>
 
-当您转到 Microsoft 365 中的域设置向导的最后一步时，您有一个剩余的任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，您可以更改域的 nameserver (或域注册机构中的 NS) 记录，以指向 Microsoft 365 主要和辅助名称服务器。 然后，由于 Microsoft 365 托管你的 DNS，将自动为你设置服务所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
+当你在 Microsoft 365 中到达域设置向导的最后一步时，你还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，请更改域注册机构中域的名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于 Microsoft 365 托管 DNS，因此会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
 
 ::: moniker range="o365-worldwide"
   
 若要在域注册机构的网站上更改您的域的名称服务器，请执行以下步骤：
   
-1. 在域注册机构网站上查找可以在其中更改您的域的名称服务器的区域或可使用自定义名称服务器的区域。
+1. 在域注册机构网站上查找区域，可在其中更改域的名称服务器，或可在其中使用自定义名称服务器的区域。
     
-2. 创建 nameserver 记录，或编辑现有的名称服务器记录以匹配以下值：
+2. 创建名称机记录，或编辑现有名称机记录以匹配以下值：
     
 |||
 |:-----|:-----|
@@ -126,12 +126,12 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 |第四个名称服务器  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > 最好添加所有四条记录，但如果您的注册机构仅支持两个，请添加 **ns1.bdm.microsoftonline.com** 和 **ns2.bdm.microsoftonline.com**。 
+   > 最好添加所有四条记录，但如果你的注册机构仅支持两个，ns1.bdm.microsoftonline.com ns2.bdm.microsoftonline.com。  
   
 3. 保存所做的更改。
     
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向 Microsoft 365 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
+> 当您将域的 NS 记录更改为指向 Microsoft 365 名称服务器时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
 
 ::: moniker-end
 
@@ -147,31 +147,31 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 |次要名称服务器  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 应至少使用两个 nameserver 记录。 如果列出了任何其他名称服务器，则可以将其删除，也可以将其更改为 **ns3.dns.partner.microsoftonline.cn** 和 **ns4.dns.partner.microsoftonline.cn**。 
+   > 您至少应该使用两个名称器记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将其更改为 **ns3.dns.partner.microsoftonline.cn和****ns4.dns.partner.microsoftonline.cn。** 
   
 3. 保存所做的更改。
     
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向由世纪互联运营的 Office 365 时名称服务器，当前与您的域相关联的所有服务都将受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
+> 当您将域的 NS 记录更改为指向由世纪银行运营的 Office 365 时，当前与域关联的所有服务都受到影响。 如果您跳过了向导中的任何步骤，或是将域用于博客、购物车或其他服务，则需要执行一些附加步骤。 否则此更改可能会导致服务停机时间，例如导致电子邮件访问丢失或您的当前网站不可访问。 
 
 ::: moniker-end
   
 例如，以下是电子邮件和网站托管可能需要的一些附加步骤：
   
-- 在更改 NS 记录之前，请先将使用您的域的所有电子邮件地址移至 Microsoft 365。
+- 在更改 NS 记录之前，将使用您的域的所有电子邮件地址移动到 Microsoft 365。
     
-- 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 你可以在以下步骤中添加域，以在网站托管的位置保持网站托管，以便在你将域的 NS 记录更改为指向 Microsoft 365 后，用户仍可访问网站。
+- 希望添加当前用于网站地址的域，如 www.fourthcoffee.com？ 在添加域以保持其网站托管位置（现在托管网站）时，您可以执行以下步骤，以便用户仍可在将域的 NS 记录更改为指向 Microsoft 365 后访问网站。
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
-2. 在 " **域** " 页上，选择域，然后选择 " **DNS 记录**"。
+2. 在"**域**"页上，选择域，然后选择 **"DNS 记录"。**
 
-3. 在 " **DNS 设置**" 下，选择 " **自定义记录**"，然后选择 " **新建自定义记录**"。
+3. 在 **DNS 设置下**，**选择"自定义记录**"，然后选择 **"新建自定义记录"。**
 
 4. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
 
 5. 选择“**保存**”。
     
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。 
   

@@ -1,5 +1,5 @@
 ---
-title: 在 GoDaddy 处为 Microsoft 创建 DNS 记录
+title: 在 GoDaddy 为 Microsoft 创建 DNS 记录
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -22,21 +22,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: 了解如何验证您的域，并在 GoDaddy for Microsoft 中为电子邮件、Skype for Business Online 和其他服务设置 DNS 记录。
-ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何在 GoDaddy for Microsoft 中验证域并设置电子邮件、Skype for Business Online 和其他服务的 DNS 记录。
+ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646123"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658472"
 ---
-# <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 GoDaddy 处为 Microsoft 创建 DNS 记录
+# <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 GoDaddy 为 Microsoft 创建 DNS 记录
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
 
-如果 GoDaddy 是您的 DNS 托管提供商，请按照本文中的步骤验证您的域并为电子邮件、Skype for Business Online 等设置 DNS 记录。
+如果 GoDaddy 是 DNS 托管提供商，请按照本文中的步骤验证域并设置电子邮件、Skype for Business Online 等的 DNS 记录。
 
-在 GoDaddy 中添加这些记录后，您的域将设置为与 Microsoft 服务一起使用。
+在 GoDaddy 添加这些记录后，域将设置为使用 Microsoft 服务。
 
 > [!NOTE]
 > DNS 更改通常需要 15 分钟左右才能生效。 但是，有时可能需要更长时间，您所做的更改才会在 Internet 的 DNS 系统中更新。 如果添加 DNS 记录后遇到邮件流问题或其他问题，请参阅 [更改域名或 DNS 记录后出现的问题的疑难解答](../get-help-with-domains/find-and-fix-issues.md)。
@@ -51,25 +51,25 @@ ms.locfileid: "48646123"
 
 按照下面的步骤操作。
 
-1. 若要开始，请使用 [此链接](https://account.godaddy.com/products/?go_redirect=disabled)转到 GoDaddy 上的 "域" 页面。 You'll be prompted to log in.
+1. To get started， go to your domains page at GoDaddy by using [this link.](https://account.godaddy.com/products/?go_redirect=disabled) You'll be prompted to log in.
 
-    ![GoDaddy-配置-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 " **域**" 下，选择要编辑的域下的 "DNS"。
+2. 在 **"域**"下，选择要编辑的域下的 DNS。
 
-    ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. 选择“**添加**”。
 
-    ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **TXT (Text)** from the drop-down list. 在新记录的框中，键入或复制并粘贴下表中的值。
 
     |**记录类型** |**Host**|**TXT 值**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT（文本）|@|MS=ms *XXXXXXXX*<br>**注意**：这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)|1 小时  <br> (从下拉列表中选择一个值。 ) |
+    |TXT（文本）|@|MS=ms *XXXXXXXX*<br>**注意**：这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)|1 小时  <br> (从下拉列表中选择一个值。) |
 
-      ![GoDaddy-验证-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
+      ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
 5. 选择“**保存**”。
 
@@ -102,29 +102,29 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
 
-1. 若要开始，请使用 [此链接](https://account.godaddy.com/products/?go_redirect=disabled)转到 GoDaddy 上的 "域" 页面。 You'll be prompted to log in.
+1. To get started， go to your domains page at GoDaddy by using [this link.](https://account.godaddy.com/products/?go_redirect=disabled) You'll be prompted to log in.
 
-    ![GoDaddy-配置-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 " **域**" 下，选择要编辑的域下的 "DNS"。
+2. 在 **"域**"下，选择要编辑的域下的 DNS。
 
-    ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. 选择“**添加**”。
 
-    ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 从下拉列表中选择 " **MX (邮件交换器) ** "。
+4. Choose **MX (Mail Exchanger)** from the drop-down list.
 
-    ![GoDaddy-配置-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
+    ![GoDaddy-BP-Configure-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
 
 5. 在新记录的框中，键入或复制并粘贴下表中的值。
 
-     (从下拉列表中选择 **TTL** 值。 ) 
+     (从下拉列表中选择 **TTL** 值。) 
 
     |**记录类型**|**主机**|**指向**|**优先级**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (邮件交换器)   <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：***\<domain-key\>* 从你的 Microsoft 帐户获取你的。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小时  <br/> |
+    |MX (邮件交换器)   <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 从  *\<domain-key\>*  Microsoft 帐户获取你的帐户。           如何查找此内容？[](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 有关优先级的详细信息，请参阅[什么是 MX 优先级？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小时  <br/> |
 
 6. 选择“**保存**”。
 
@@ -133,28 +133,28 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
 
-1. 若要开始，请使用 [此链接](https://account.godaddy.com/products/?go_redirect=disabled)转到 GoDaddy 上的 "域" 页面。 You'll be prompted to log in.
+1. To get started， go to your domains page at GoDaddy by using [this link.](https://account.godaddy.com/products/?go_redirect=disabled) You'll be prompted to log in.
 
-    ![GoDaddy-配置-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 " **域**" 下，选择要编辑的域下的 "DNS"。
+2. 在 **"域**"下，选择要编辑的域下的 DNS。
 
-    ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. 选择“**添加**”。
 
-    ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 
-4. 从下拉列表中选择 " **CNAME (别名") ** 。
+4. 从 **(中选择**) 别名"。
 
-    ![GoDaddy-配置-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
+    ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
-5. 创建第一个 CNAME 记录。
+5. 创建第一条 CNAME 记录。
 
     在新记录的框中，键入或复制并粘贴下表中第一行的值。
 
-     (从下拉列表中选择 **TTL** 值。 ) 
+     (从下拉列表中选择 **TTL** 值。) 
 
     |**记录类型**|**主机**|**指向**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -166,41 +166,41 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 
 
-6. 重复这些步骤以添加下一条 CNAME 记录，直到您已创建所有六个 CNAME 记录。
+6. 重复这些步骤以添加下一条 CNAME 记录，直到创建全部六条 CNAME 记录。
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>为 SPF 添加 TXT 记录以帮助防止垃圾邮件
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 改为将所需的 Microsoft 值添加到当前记录，以便您具有包含两组值的  *单个*  SPF 记录。
+> 一个域所拥有的 SPF 的 TXT 记录不能超过一个。 如果域具有多个 SPF 记录，你将收到电子邮件错误，其中随附发送和垃圾邮件分类问题。 如果你的域已有 SPF 记录，请不要为 Microsoft 创建新记录。 相反，将所需的 Microsoft 值添加到当前记录，以便具有一个  *包含这*  两组值的 SPF 记录。
 
 按照下面的步骤操作。
 
-1. 若要开始，请使用 [此链接](https://account.godaddy.com/products/?go_redirect=disabled)转到 GoDaddy 上的 "域" 页面。 You'll be prompted to log in.
+1. To get started， go to your domains page at GoDaddy by using [this link.](https://account.godaddy.com/products/?go_redirect=disabled) You'll be prompted to log in.
 
-    ![GoDaddy-配置-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 " **域**" 下，选择要编辑的域下的 "DNS"。
+2. 在 **"域**"下，选择要编辑的域下的 DNS。
 
-    ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. 选择“**添加**”。
 
-    ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 4. Choose **TXT (Text)** from the drop-down list.
 
-    ![GoDaddy-配置-4-0](../../media/dns/56529449-c0d32c80-651e-11e9-90e9-895aa1c4bbf1.png)
+    ![GoDaddy-BP-Configure-4-0](../../media/dns/56529449-c0d32c80-651e-11e9-90e9-895aa1c4bbf1.png)
 
 5. In the boxes for the new record, type or copy and paste the following values.
 
-     (从下拉列表中选择 **TTL** 值。 ) 
+     (从下拉列表中选择 **TTL** 值。) 
 
     |**记录类型**|**Host**|**TXT 值**|**TTL**|
     |:-----|:-----|:-----|:-----|
     |TXT（文本）  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 我们建议您复制并粘贴此条目，以保证正确保留所有空格。           |1 小时  <br/> |
 
-    ![GoDaddy-配置-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
+    ![GoDaddy-BP-Configure-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
 6. 选择“**保存**”。
 
@@ -210,34 +210,34 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 
 按照下面的步骤操作。
 
-1. 若要开始，请使用 [此链接](https://account.godaddy.com/products/?go_redirect=disabled)转到 GoDaddy 上的 "域" 页面。 You'll be prompted to log in.
+1. To get started， go to your domains page at GoDaddy by using [this link.](https://account.godaddy.com/products/?go_redirect=disabled) You'll be prompted to log in.
 
-    ![GoDaddy-配置-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
+    ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 " **域**" 下，选择要编辑的域下的 "DNS"。
+2. 在 **"域**"下，选择要编辑的域下的 DNS。
 
-    ![GoDaddy-配置-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
+    ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
 3. 选择“**添加**”。
 
-    ![GoDaddy-配置-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
+    ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 从下拉列表中选择 " **SRV (服务) ** "。
+4. 从 **(列表中选择) SRV**) 服务选项。
 
-    ![GoDaddy-配置-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
+    ![GoDaddy-BP-Configure-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
 
-5. 创建第一个 SRV 记录。
+5. 创建第一条 SRV 记录。
 
     在新记录的框中，键入或复制并粘贴下表中第一行的值。
 
-     (从下拉列表中选择 **记录类型** 和 **TTL** 值。 ) 
+     (从下拉列表中选择 **记录** 类型和 **TTL** 值。) 
 
     |**记录类型**|**名称**|**目标**|**协议**|**服务**|**优先级**|**权重**|**端口**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV（服务）  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1  <br/> |443  <br/> |1 小时  <br/> |
-    |SRV（服务）  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1  <br/> |5061  <br/> |1 小时  <br/> |
+    |SRV（服务）  <br/> |@  <br/> |sipdir.online.lync.com  <br/> |_tls  <br/> |_sip  <br/> |100  <br/> |1   <br/> |443  <br/> |1 小时  <br/> |
+    |SRV（服务）  <br/> |@  <br/> |sipfed.online.lync.com  <br/> |_tcp  <br/> |_sipfederationtls  <br/> |100  <br/> |1   <br/> |5061  <br/> |1 小时  <br/> |
 
-    ![GoDaddy-配置-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
+    ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
 6. 重复 **步骤 5** 以创建另一条 SRV 记录。

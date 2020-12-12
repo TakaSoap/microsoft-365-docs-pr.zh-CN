@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 了解如何在 Microsoft 365 中购买域名。
-ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645511"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658607"
 ---
 # <a name="buy-a-domain-name"></a>购买域名
 
@@ -40,47 +40,47 @@ ms.locfileid: "48645511"
 
 ::: moniker-end
 
- *若要添加、修改或删除域，您**必须**是[企业或企业计划](https://products.office.com/business/office)的**全局管理员**。这些更改会影响整个租户、*自定义管理员*或*常规用户*无法进行这些更改。*  
+ *若要添加、修改或删除域，**你必须** 是企业 **或** 企业计划的 [全局管理员](https://products.office.com/business/office)。这些更改会影响整个租户，自定义管理员或常规用户将无法进行这些更改。*  
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到设置 \> 域 \> 购买域
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登录并转到"设置 \> 域 \> 购买域"
 
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
     
-3. 在 " **域** " 页上，选择 " **购买域**"。
+3. 在"**域"** 页上，选择 **"购买域"。**
     
 可以从以下顶级域中选择你的域。
   
-- 。 .biz
+- .biz
     
 - .com
     
-- 。信息
+- .info
     
-- 。我
+- .me
     
-- 。 mobi
+- .mobi
     
 - .net
     
-- . org
+- .org
     
-- 。电视
+- .tv
     
-- 。 co.uk
+- .co.uk
     
 - org.uk
     
 
 > [!NOTE]
-> 选择 " **购买域**" 时，如果通过 microsoft 合作伙伴购买/管理租户，则可能会将您重定向到 Microsoft 合作伙伴的网站。
+> 选择" **购买域**"时，如果租户是通过 Microsoft 合作伙伴购买/管理的，则可能会重定向到 Microsoft 合作伙伴的网站。
 
 ### <a name="domain-privacy"></a>域隐私
-我们在购买域的同时提供免费的域隐私订阅。 这将使与域注册相关联的联系人信息保持为私有的 ICANN。 [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
+我们通过购买域提供免费域隐私订阅。 这样，你的联系人信息将附加到你的域注册中， [了解更多信息。](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>从另一域注册机构购买域
-如果要从 [GoDaddy](https://www.godaddy.com)以外的域注册机构购买域，我们建议使用以下支持自动安装 (domain Connect) 的域。 
+如果你想要从域注册机构（而非 [GoDaddy）](https://www.godaddy.com)购买域，我们建议你使用以下支持自动设置 (域连接) 。 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
@@ -102,21 +102,21 @@ ms.locfileid: "48645511"
 
 如果尚没有自己的域，可轻松联机进行购买，可在域名注册机构、域经销商，甚至是在当前的 Internet 提供商处购买。注册 由世纪互联运营的 Office 365 时可获取一个域名，例如，contoso.onmicrosoft.com。但你可能希望使用自定义域名，例如 fourthcoffee.com。
   
-若要在 Microsoft 365 中设置域，您必须拥有域并更改您的域的某些 DNS 记录。
+若要在 Microsoft 365 中设置域，必须拥有一个域并更改域的一些 DNS 记录。
   
 > [!CAUTION]
 > 某些域注册机构或 DNS 托管提供商不允许创建 Microsoft 365 所需的所有 DNS 记录。 下面列出的托管提供商支持所有所需的记录。 如果您正在考虑使用其他托管提供商，[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-在域注册机构) 注册域 (后，以管理员身份登录 Microsoft 365，并设置您的域，以便您可以将其用于电子邮件地址和其他服务。。
+在域注册机构 (注册域) 后，以管理员角色登录 Microsoft 365 并设置域，以便可以与电子邮件地址和其他服务一同使用。
   
 > [!NOTE]
-> 本文中的 SharePoint Online 公共网站信息仅适用于你的组织在2015年3月9日之前购买了 Microsoft 365 的情况。 
+> 本文中的 SharePoint Online 公共网站信息仅适用于贵组织在 2015 年 3 月 9 日之前购买 Microsoft 365 的情况。 
 
 ## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>支持 Microsoft 365 所需的所有 DNS 记录的域注册机构
 
 - [Oray](https://oray.com/)
     
-- [HiChina](https://www.hichina.com/)
+- [回中国](https://www.hichina.com/)
     
 - [east.net](http://www.east.net/)
     
@@ -128,6 +128,6 @@ ms.locfileid: "48645511"
 
 [将域添加到 Microsoft 365](../setup/add-domain.md)
 
-[关于域的常见问题](../setup/domains-faq.md)
+[关于域的常见问题](../setup/domains-faq.yml)
 
-[更新 DNS 记录以将网站与当前托管提供商保持](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)联系。
+[更新 DNS 记录，使您的网站与当前宿主提供商保持一起](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。

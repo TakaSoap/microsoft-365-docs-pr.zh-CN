@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
-description: 了解如何在 Hostgator 中将 Microsoft 设置为管理自定义域的 DNS 记录。
-ms.openlocfilehash: 02052e98ba92c970a1e8bcc89c73df6946a6c472
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何设置 Microsoft 以在 Hostgator 上管理自定义域的 DNS 记录。
+ms.openlocfilehash: 34e7bbe3abc084185f72f4fef004ad891492ef3c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646435"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658016"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>更改名称服务器以使用 Hostgator 设置 Microsoft 365
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
   
-如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。  (如果你愿意，可以 [在 Hostgator 管理所有 MICROSOFT DNS 记录](create-dns-records-at-hostgator.md)。 ) 
+如果希望 Microsoft 管理 DNS 记录，请按照以下说明操作。  (，可以在[Hostgator .) ](create-dns-records-at-hostgator.md)
   
     
 ## <a name="point-your-domain-to-your-hosting-account"></a>将域指向托管帐户。
@@ -46,30 +46,30 @@ ms.locfileid: "48646435"
     
     ![Hostgator-BP-Redelegate-1-0](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
-2. 选择 " **域** " 选项卡。
+2. 选择 **"域"** 选项卡。
     
     ![Hostgator-BP-Redelegate-1-1](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. 在 " **管理域** " 页上的 " **我的域** " 区域中，选择要更新的域。
+3. 在 **"管理域** "页上的 **"我的域** "区域中，选择要更新的域。
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. 在 " **域概述** " 页上的 " **名称服务器** " 区域中，选择 " **更改**"。
+4. 在"**域概述"** 页上的 **"名称** 服务器"区域中，选择"**更改"。**
     
     ![Hostgator-BP-Redelegate-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. 在您的域的 " **名称服务器** " 页上的 " **选择托管帐户** " 下拉列表中，选择与您的域关联的 **主机帐户** 。
+5. 在 **域** 的"名称服务器"页上的"选择托管帐户"下拉列表中，选择与域关联的托管帐户。
     
     ![Hostgator-BP-Redelegate-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. 选择 " **保存名称服务器**"。
+6. 选择 **"保存名称服务器"。**
     
     ![Hostgator-BP-Redelegate-1-9](../../media/b52a825a-6d54-49ba-87c8-52f770fdfa0c.png)
   
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
 > [!IMPORTANT]
-> 在执行此过程之前，您必须先执行本文第一节中的过程， [将您的域指向您的托管帐户。](#point-your-domain-to-your-hosting-account)。
+> 执行此过程之前，必须先执行本文第一节中的过程，将域 [指向您的托管帐户](#point-your-domain-to-your-hosting-account)。
   
 在将域用于 Microsoft 之前，必须确保你拥有该域。如果你能够在域注册机构处登录到你的帐户并创建 DNS 记录，便可向 Microsoft 证明你是域所有者。
   
@@ -81,9 +81,9 @@ ms.locfileid: "48646435"
     （Hostgator 上的每个托管帐户都分配有一个唯一的 cPanel 地址。 您的 cPanel 地址应如下所示：https://YourSiteAddress:secure-port-number。 由您从 Hostgator 收到的注册电子邮件地址指定该地址。）
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要开始，可以从 Hostgator 购买托管帐户，也可以 [将您的域的名称服务器 (NS) 记录更改](#change-your-domains-nameserver-ns-records) 为指向 "Microsoft"。 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started, you can either purchase a hosting account from Hostgator or [change your domain's nameserver (NS) records](#change-your-domains-nameserver-ns-records) to point to Microsoft. 
   
-2. 在 " **控制面板** " 页上的 " **域** " 区域中，选择 " **高级 DNS 区域编辑器**"。
+2. 在 **"控制面板"** 页上的"域 **"区域中**，选择 **"高级 DNS 区域编辑器"。**
     
     （您可能需要向下滚动。） 
     
@@ -94,15 +94,15 @@ ms.locfileid: "48646435"
 |||||
 |:-----|:-----|:-----|:-----|
 |**名称** <br/> |**TTL** <br/> |**类型** <br/> |**TXT 数据** <br/> |
-|使用您的  *domain_name*  。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
+|使用你的  *domain_name*  。 （例如，fourthcoffee.com.)。  <br/> **此值必须以句点 (.) 结尾。** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
-4. 选择 " **添加记录**"。
+4. 选择 **"添加记录"。**
     
 5. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求搜索该记录。
+现在，你已在你的域注册机构网站添加了记录，你将返回到 Microsoft 并请求搜索该记录。
   
-Microsof 找到正确的 TXT 记录表明域已通过验证。
+当 Microsof 找到正确的 TXT 记录时，表明域已通过验证。
   
 1. 在管理中心，转到“**设置**”\>“<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">域</a>”页面。
 
@@ -118,39 +118,39 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
-若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。 这将设置 Microsoft 为您更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
+若要使用 Microsoft 完成域设置，请更改域注册机构中域的 NS 记录，以指向 Microsoft 主名称服务器和辅助名称服务器。 这会将 Microsoft 设置为更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，在进行此更改后，发送到您的域的所有电子邮件 (如 rob@ *your_domain*  .com) 将启动到 Microsoft。
+> 当您将域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与域关联的所有服务都受到影响。 例如，发送到域邮箱的所有电子邮件 (如 rob@ *your_domain*  .com) 将在你进行此更改后开始发送给 Microsoft。
   
 > [!IMPORTANT]
-> 下面的过程将向您介绍如何从列表中删除任何其他不需要的名称服务器，以及如何添加正确的名称服务器（如果尚未列出）。 完成本节中的步骤后，应列出的唯一名称服务器为以下四个：  **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和 **ns4.bdm.microsoftonline.com**。
+> 以下过程将向您展示如何从列表中删除任何其他不需要的名称服务器，以及如何在名称服务器尚未列出时添加正确的名称服务器。 完成本节中的步骤后，应列出的唯一名称服务器是以下四个：ns1.bdm.microsoftonline.com、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com 和 **ns4.bdm.microsoftonline.com。**  
   
 1. 若要开始，请使用[此链接](https://portal.hostgator.com/domain/manage)转到 Hostgator 上的客户门户页面。系统将提示登录。
     
     ![Hostgator-BP-Redelegate-1-0](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
-2. 选择 " **域** " 选项卡。 
+2. 选择 **"域"** 选项卡。 
     
     ![Hostgator-BP-Redelegate-1-1](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. 在 " **管理域** " 页上的 " **我的域** " 区域中，选择要更新的域。 
+3. 在 **"管理域** "页上的 **"我的域** "区域中，选择要更新的域。 
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. 在 " **域概述** " 页上的 " **名称服务器** " 区域中，选择 " **更改**"。
+4. 在"**域概述"** 页上的 **"名称** 服务器"区域中，选择"**更改"。**
     
     ![Hostgator-BP-Redelegate-1-3](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. 在您的域的 " **名称服务器** " 页上的 " **选择托管帐户** " 下拉列表中，选择与您的域关联的 **主机帐户** 。 
+5. 在 **域** 的"名称服务器"页上的"选择托管帐户"下拉列表中，选择与域关联的托管帐户。 
     
     ![Hostgator-BP-Redelegate-1-4](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. 选择 **"手动设置我的名称服务器"**。
+6. 选择 **"手动设置我的名称服务器"。**
     
     ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **警告**：仅当现有名称服务器不是四个正确的名称服务器时，才执行这些步骤。  (也就是说，仅删除任何  *未*  命名的 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的当前名称服务器。 ) 
+7.   **警告**：仅当您具有除四个正确的名称服务器外的现有名称服务器时，才执行这些步骤。  (，即仅删除任何未命名为 **ns1.bdm.microsoftonline.com、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com**.)  
   
         在域的" **名称服务器**"页面的名称服务器列表中，删除列表中的每个名称服务器，具体方法是将其选中，然后按键盘上的 **Delete** 键。 
     
@@ -165,19 +165,19 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**名称服务器 3：** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**名称服务器 4：** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Hostgator-委派-1-7-1](../../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
+   ![Hostgator-BP-Redelegate-1-7-1](../../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
   
 9. 添加其他名称服务器值。
     
-    选择 ** (+) ** 添加 "，然后将表中下一行的值键入或复制并粘贴到该记录的框中。 
+    选择 **(+) ，** 然后键入或复制表中下一行的值并将其粘贴到记录的框中。 
     
     重复该过程，直到创建完全部 4 条名称服务器记录。
     
     ![Hostgator-BP-Redelegate-1-7-2](../../media/92159a39-e498-4220-9b0d-ae2e718c7fb9.png)
   
-10. 选择 " **保存名称服务器**"。
+10. 选择 **"保存名称服务器"。**
     
     ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。
+> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。

@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
-description: '了解如何在 Bluehost 中将 Microsoft 设置为管理 DNS 记录。 '
-ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: '了解如何设置 Microsoft 以在 Bluehost 管理 DNS 记录。 '
+ms.openlocfilehash: 78b138a501054a573c2b36cc486dda833be7ae35
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646459"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658004"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>更改名称服务器以使用 Bluehost 设置 Microsoft
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
-如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。  (如果你愿意，可以 [在 Bluehost 管理所有 DNS 记录](create-dns-records-at-bluehost.md)。 ) 
+如果希望 Microsoft 管理 DNS 记录，请按照以下说明操作。  (，可以在 [Bluehost](create-dns-records-at-bluehost.md).) 
   
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
@@ -47,7 +47,7 @@ ms.locfileid: "48646459"
     
     （您可能需要向下滚动。） 
     
-3. 在 " **domain_name** " 区域的 " **DNS 区域编辑器** " 行中，选择 " **管理 DNS 记录**"。
+3. In the **domain_name** area， on the **DNS Zone Editor row，** select Manage DNS **records.**
     
 4. On the **DNS Zone Editor** page, in the Add DNS Record area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -59,11 +59,11 @@ ms.locfileid: "48646459"
 |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **注意：** 这是一个示例。 在这里使用表中的特定“**目标地址或指向的地址**”值。 [如何查找此项？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
-5. 选择 " **添加记录**"。
+5. 选择 **"添加记录"。**
     
 6. 请在继续之前等待数分钟，以便您刚刚创建的记录可以通过 Internet 完成更新。
     
-现在您已在域注册机构的网站上添加了记录，您将返回到 Microsoft 并请求搜索该记录。
+现在，你已在你的域注册机构网站添加了记录，你将返回到 Microsoft 并请求搜索该记录。
   
 Microsof 找到正确的 TXT 记录表明域已通过验证。
   
@@ -81,21 +81,21 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
-若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向主名称服务器和辅助名称服务器。 这将设置 Microsoft 为您更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
+若要使用 Microsoft 完成域设置，请更改域注册机构中域的 NS 记录，以指向主名称服务器和辅助名称服务器。 这会将 Microsoft 设置为更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，在进行此更改后，发送到您的域的所有电子邮件 (如 rob@ *your_domain*  .com) 将启动到 Microsoft。 
+> 当您将域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与域关联的所有服务都受到影响。 例如，发送到域邮箱的所有电子邮件 (如 rob@ *your_domain*  .com) 将在你进行此更改后开始发送给 Microsoft。 
   
 > [!IMPORTANT]
->  下面的过程将向您介绍如何从列表中删除任何其他不需要的名称服务器，以及如何添加正确的名称服务器（如果尚未列出）。 > 完成本节中的步骤后，应列出的唯一名称服务器为以下四个： > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
+>  以下过程将向您展示如何从列表中删除任何其他不需要的名称服务器，以及如何在名称服务器尚未列出时添加正确的名称服务器。 >完成本节中的步骤后，应列出的唯一名称服务器是以下四个：> ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. 要开始，请使用[此链接](https://my.bluehost.com/cgi/dm)转到您在 Bluehost 上的域页面。 系统将会提示您先登录。
     
-2. 在 " **域** " 页上的 " **domain_name** " 区域中，选中您的域的复选框，然后选择 " **名称服务器**"。
+2. 在 **域** 页面上的 **domain_name区域中，** 选中域的复选框，然后选择 **名称服务器**。
     
     ![Bluehost-BP-Redelegate-1-1](../../media/8f384386-197c-4272-9675-82037922dac4.png)
   
-3. 在 " **domain_name** " 区域中，选择 " **使用自定义名称服务器**"。
+3. 在 **domain_name，** 选择 **"使用自定义名称服务器"。**
     
     ![Bluehost-BP-Redelegate-1-2](../../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
   
@@ -114,9 +114,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**第一个空行** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**第二个空行** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-委派-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
+   ![Bluehost-BP-Redelegate-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
   
-2. 选择 " **添加行**"。
+2. 选择 **"添加行"。**
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
@@ -127,19 +127,19 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**第三个空行** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**第四个空行** <br/> |ns4.bdm.microsoftonline.com  <br/> |
   
-4. 若要添加第四个 Nameserver 记录，请再次选择 " **添加行** "，并使用上表中最后一行的值创建记录。 
+4. 若要添加第四个名称机记录，请再次选择"添加行"，然后使用上表中最后一行的值创建记录。 
     
-5. 选择 " **保存 nameserver 设置**"。
+5. 选择 **保存名称机设置**。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
+> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>如果已列出名称服务器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是说，仅删除任何  *未*  命名的 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的当前名称服务器。 )  
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (，即仅删除任何未命名为 **ns1.bdm.microsoftonline.com、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com**.)   
   
 1. 如果列有任何其他名称服务器，删除每个服务器，具体方法是将其选中，然后按键盘上的 **Delete** 键。 
     
@@ -152,9 +152,9 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**第一个空行** <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |**第二个空行** <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-委派-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
+   ![Bluehost-BP-Redelegate-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
   
-3. 选择 " **添加行**"。
+3. 选择 **"添加行"。**
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
@@ -165,14 +165,14 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**第三个空行** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**第四个空行** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Bluehost-委派-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
+   ![Bluehost-BP-Redelegate-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
-5. 若要添加第四个 Nameserver 记录，请再次选择 " **添加行** "，并使用上表中最后一行的值创建记录。 
+5. 若要添加第四个名称机记录，请再次选择"添加行"，然后使用上表中最后一行的值创建记录。 
     
-6. 选择 " **保存 nameserver 设置**"。
+6. 选择 **保存名称机设置**。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
+> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。 
   

@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
-description: 了解如何将 Microsoft 设置为在 MyDomain 处管理自定义域的 DNS 记录。
-ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 了解如何设置 Microsoft 以在 MyDomain 中管理自定义域的 DNS 记录。
+ms.openlocfilehash: fbfa3c495f54a9890be6d9c9e31a7878b21f12fe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646411"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658412"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>更改名称服务器以使用 MyDomain 设置 Microsoft
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。
   
-如果希望 Microsoft 为你管理 DNS 记录，请按照以下说明操作。  (如果你愿意，可以 [在 MyDomain 处管理所有 MICROSOFT DNS 记录](create-dns-records-at-mydomain.md)。 ) 
+如果希望 Microsoft 管理 DNS 记录，请按照以下说明操作。  (，可以在[MyDomain .) ](create-dns-records-at-mydomain.md)
   
 ## <a name="add-a-txt-record-for-verification"></a>添加 TXT 记录进行验证
 
@@ -80,10 +80,10 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 
-若要使用 Microsoft 完成域的设置，请在域注册机构更改您的域的 NS 记录以指向 Microsoft 主名称服务器和辅助名称服务器。 这将设置 Microsoft 为您更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
+若要使用 Microsoft 完成域设置，请更改域注册机构中域的 NS 记录，以指向 Microsoft 主名称服务器和辅助名称服务器。 这会将 Microsoft 设置为更新域的 DNS 记录。 我们将添加所有记录，以便电子邮件、Skype for Business Online 和你的公共网站全部设置为使用你的域。
   
 > [!CAUTION]
-> 当您将您的域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与您的域相关联的所有服务都将受到影响。 例如，发送到您的域的所有电子邮件 (如 rob@ *your_domain。* 在进行此更改后，com) 将会启动到 Microsoft。 
+> 当您将域的 NS 记录更改为指向 Microsoft 名称服务器时，当前与域关联的所有服务都受到影响。 例如，发送到域的所有电子邮件 (如 *rob@your_domain。* com) 将在你进行此更改后开始进入 Microsoft。 
   
 > [!IMPORTANT]
 > The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. <br/> When you have completed the steps in this section, the only nameservers that should be listed are these four:
@@ -94,34 +94,34 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
     
 3. 在“**域**”下，选择要编辑的域名。
     
-4. 在 " **概述** " 行中，选择 " **名称服务器**"。
+4. 在 **"概述** "行中，选择 **名称服务器**。
     
-    ![MyDomain-BP-委派-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![MyDomain-BP-Redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
 5. 在" **更新名称服务器**"部分中，选择" **使用不同的名称服务器**"。
     
-    ![MyDomain-BP-委派-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
-6. 根据现在显示的页面上是否已列出名称服务器，继续执行以下两个过程之一。
+6. 根据页面上是否已列出现在显示的名称服务器，继续执行以下两个过程之一。
     
 ### <a name="if-the-correct-nameservers-are-already-listed"></a>如果已列出正确的名称服务器
 
 - 如果已列出正确的名称服务器，可跳过此步骤。
     
-    ![MyDomain-BP-委派-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![MyDomain-BP-Redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>如果未列出正确的名称服务器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是说，仅删除任何  *未*  命名的 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的当前名称服务器。 )  
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (，即仅删除任何未命名为 **ns1.bdm.microsoftonline.com、ns2.bdm.microsoftonline.com、ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com**.)   
   
 1. 在" **名称服务器:**"字段中选择每个条目，然后按键盘上的 **Delete** 键，删除现有名称服务器。 
     
-    ![MyDomain-BP-委派-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. 选择 " **增加** " 两次，添加两个新的名称服务器行。 
+2. Select **Add More** twice to add two new Nameserver rows. 
     
-    ![MyDomain-BP-委派-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. 在记录的框中，键入或复制并粘贴下表中的名称服务器值。
     
@@ -132,11 +132,11 @@ Microsof 找到正确的 TXT 记录表明域已通过验证。
 |**名称服务器 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**名称服务器 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![MyDomain-BP-委派-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![MyDomain-BP-Redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
 4. 选择“**保存**”。
     
-    ![MyDomain-BP-委派-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![MyDomain-BP-Redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
-> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务将全部设置为与你的域一起使用。 
+> 你的名称服务器记录更新可能需要多达数小时才能在 Internet 的 DNS 系统中更新。 然后，你的 Microsoft 电子邮件和其他服务都将设置为使用你的域。 

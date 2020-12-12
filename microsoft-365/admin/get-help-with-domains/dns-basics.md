@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解有关域及其关联的 DNS 记录，帮助你管理域。
-ms.openlocfilehash: 3f913a96395424e86d0d88dbb29bcb58a076ebb8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1f5d49eb588a7c4245751360fa3309bf20496512
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645355"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658527"
 ---
 # <a name="dns-basics"></a>DNS 基础
 
- 如果找不到要查找的内容，请**[查看域常见问题解答](../setup/domains-faq.md)**。 
+ 如果找不到要查找的内容，请 **[查看域常见问题解答](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
 
@@ -61,7 +61,7 @@ ms.locfileid: "48645355"
   
 - **.com** 是顶级域名 
     
-- ** contoso** 是第二级域名 
+- **contoso** 是第二级域名 
     
 - **mail** 是第三级域名 
     
@@ -155,7 +155,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的 Microsoft 365 订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
@@ -174,7 +174,7 @@ DNS 记录就是域信息的数据库。 记录及其数值保存在区域文件
   
 您可以在 Microsoft 365 中为您的电子邮件、公共网站和即时消息地址使用您的域名。
   
-- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的[初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
+- **电子邮件：** 域名可以让你自定义电子邮件，因此可以使用比附带账户的 [初始 onmicrosoft.com 电子邮件](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)更短、更易记的地址。 因此替代 joe@contoso.onmicrosoft.com，电子邮件地址（也是用于登录到 Microsoft 365 的工作帐户）可能是 joe@contoso.com。 
     
 - **网站：** 如果你有包含 SharePoint Online 公共网站的订阅（不能再购买），你的公共网站附带有如下初始地址：contoso-public.sharepoint.com。 如果你为你的企业设置网站，则可以使用自定义域名将网站地址重命名为类似于 www.contoso.com 的地址。 
     
