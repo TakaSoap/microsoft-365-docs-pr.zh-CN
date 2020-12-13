@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: 使用精确数据匹配创建自定义敏感信息类型
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 修改精确数据匹配架构，以使用可配置匹配
+          href: sit-modify-edm-schema-configurable-match.md
         - name: 创建自定义敏感信息类型 - 安全与合规中心
           href: create-a-custom-sensitive-information-type.md
         - name: 创建自定义敏感信息类型 - PowerShell
