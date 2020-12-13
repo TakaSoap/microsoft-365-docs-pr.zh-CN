@@ -2,8 +2,8 @@
 title: 管理高级电子数据展示中的相关性设置
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,69 +15,69 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 获取有关在高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528138"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662867"
 ---
-# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a><span data-ttu-id="c8fdf-103">管理高级电子数据展示（经典）中的相关性设置</span><span class="sxs-lookup"><span data-stu-id="c8fdf-103">Manage Relevance setup in Advanced eDiscovery (classic)</span></span>
+# <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a><span data-ttu-id="c434f-103">管理高级电子数据展示（经典）中的相关性设置</span><span class="sxs-lookup"><span data-stu-id="c434f-103">Manage Relevance setup in Advanced eDiscovery (classic)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="c8fdf-p101">若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
+> <span data-ttu-id="c434f-p101">若要使用高级电子数据展示，组织必须订阅随附高级合规性加载项的 Office 365 E3，或订阅 E5。如果没有此计划，但又要试用高级电子数据展示，可以[注册 Office 365 企业版 E5 试用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。</span><span class="sxs-lookup"><span data-stu-id="c434f-p101">Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).</span></span> 
   
- <span data-ttu-id="c8fdf-p102">高级电子数据展示中的相关性技术采用专家指导软件，用于计算文件的相关性分数。高级电子数据展示中的相关性技术可用于早期案件集评估 (ECA)、采集和文件样本审阅。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p102">Advanced eDiscovery Relevance technology employs expert-guided software for scoring files by their relevance. Advanced eDiscovery Relevance can be used for Early Case Assessment (ECA), culling, and file sample review.</span></span> 
+ <span data-ttu-id="c434f-p102">高级电子数据展示中的相关性技术采用专家指导软件，用于计算文件的相关性分数。高级电子数据展示中的相关性技术可用于早期案件集评估 (ECA)、采集和文件样本审阅。</span><span class="sxs-lookup"><span data-stu-id="c434f-p102">Advanced eDiscovery Relevance technology employs expert-guided software for scoring files by their relevance. Advanced eDiscovery Relevance can be used for Early Case Assessment (ECA), culling, and file sample review.</span></span> 
   
- <span data-ttu-id="c8fdf-p103">高级电子数据展示包括对与案件集相关的文件执行相关性定型和标记的组件。高级电子数据展示从相关和非相关文件的定型样本中学习，以计算每个文件的相关性分数，并生成可在文件审阅过程期间和之后使用的分析结果。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p103">Advanced eDiscovery includes components for the Relevance training and tagging of files relevant to a case. Advanced eDiscovery learns from the trained samples of Relevant and Not Relevant files to provide Relevance scores for each file, and generates analytical results that can be used during and after the file review process.</span></span> 
+ <span data-ttu-id="c434f-p103">高级电子数据展示包括对与案件集相关的文件执行相关性定型和标记的组件。高级电子数据展示从相关和非相关文件的定型样本中学习，以计算每个文件的相关性分数，并生成可在文件审阅过程期间和之后使用的分析结果。</span><span class="sxs-lookup"><span data-stu-id="c434f-p103">Advanced eDiscovery includes components for the Relevance training and tagging of files relevant to a case. Advanced eDiscovery learns from the trained samples of Relevant and Not Relevant files to provide Relevance scores for each file, and generates analytical results that can be used during and after the file review process.</span></span> 
   
-## <a name="guidelines-for-setting-up-relevance-training"></a><span data-ttu-id="c8fdf-110">相关性定型设置准则</span><span class="sxs-lookup"><span data-stu-id="c8fdf-110">Guidelines for setting up Relevance training</span></span>
+## <a name="guidelines-for-setting-up-relevance-training"></a><span data-ttu-id="c434f-110">相关性定型设置准则</span><span class="sxs-lookup"><span data-stu-id="c434f-110">Guidelines for setting up Relevance training</span></span>
 
- <span data-ttu-id="c8fdf-p104">在高级电子数据展示内的“**案件**”窗口中，选择一个案件，单击“**转到案件**”。依次单击“**相关性**”\>“**相关性设置**”。请遵循以下建议准则来设置相关性。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p104">In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance.</span></span> 
+ <span data-ttu-id="c434f-p104">在高级电子数据展示内的“**案件**”窗口中，选择一个案件，单击“**转到案件**”。依次单击“**相关性**”\>“**相关性设置**”。请遵循以下建议准则来设置相关性。</span><span class="sxs-lookup"><span data-stu-id="c434f-p104">In Advance eDiscovery, in the **Cases** window, select a case and click **Go to case**. Click **Relevance** \> **Relevance setup**. Follow these recommended guidelines to set up Relevance.</span></span> 
   
-- <span data-ttu-id="c8fdf-114">**标记**：迭代相关性定型过程的效力取决于专家能否精确、一致地标记文件样本。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-114">**Tagging**: The effectiveness of the iterative Relevance training process is dependent on the ability of the expert to tag the file samples with precision and consistency.</span></span>
+- <span data-ttu-id="c434f-114">**标记**：迭代相关性定型过程的效力取决于专家能否精确、一致地标记文件样本。</span><span class="sxs-lookup"><span data-stu-id="c434f-114">**Tagging**: The effectiveness of the iterative Relevance training process is dependent on the ability of the expert to tag the file samples with precision and consistency.</span></span>
 
-- <span data-ttu-id="c8fdf-115">**案件集问题**：</span><span class="sxs-lookup"><span data-stu-id="c8fdf-115">**Case issues**:</span></span>
+- <span data-ttu-id="c434f-115">**案件集问题**：</span><span class="sxs-lookup"><span data-stu-id="c434f-115">**Case issues**:</span></span>
   
-  - <span data-ttu-id="c8fdf-p105">对于每个问题，请在整个相关性定型过程中使用相同的专家。禁止多个专家同时标记同一问题。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p105">For each issue, use the same expert throughout the entire Relevance training process. Simultaneous tagging of the same issue by multiple experts is not permitted.</span></span>
+  - <span data-ttu-id="c434f-p105">对于每个问题，请在整个相关性定型过程中使用相同的专家。禁止多个专家同时标记同一问题。</span><span class="sxs-lookup"><span data-stu-id="c434f-p105">For each issue, use the same expert throughout the entire Relevance training process. Simultaneous tagging of the same issue by multiple experts is not permitted.</span></span>
   
-  - <span data-ttu-id="c8fdf-118">确定每组文件是否仅与特定问题相关。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-118">Determine if each group of files is pertinent only to a specific issue.</span></span>
+  - <span data-ttu-id="c434f-118">确定每组文件是否仅与特定问题相关。</span><span class="sxs-lookup"><span data-stu-id="c434f-118">Determine if each group of files is pertinent only to a specific issue.</span></span>
 
-  - <span data-ttu-id="c8fdf-p106">如果问题定义过于笼统，高级电子数据展示可能会过多生成并不相关的文件。如果问题定义过于狭隘，相关性定型过程的耗时可能更长。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p106">If an issue is defined too generally, Advanced eDiscovery may yield too many files that are not relevant. If an issue is defined too narrowly, the Relevance training process may take more time.</span></span> 
+  - <span data-ttu-id="c434f-p106">如果问题定义过于笼统，高级电子数据展示可能会过多生成并不相关的文件。如果问题定义过于狭隘，相关性定型过程的耗时可能更长。</span><span class="sxs-lookup"><span data-stu-id="c434f-p106">If an issue is defined too generally, Advanced eDiscovery may yield too many files that are not relevant. If an issue is defined too narrowly, the Relevance training process may take more time.</span></span> 
 
-  - <span data-ttu-id="c8fdf-121">在每个相关性定型周期中，高级电子数据展示以一个未解决问题为重点，并相应地显示中期样本结果。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-121">During each Relevance training cycle, Advanced eDiscovery focuses on a single active issue and interim sample results are displayed accordingly.</span></span>
+  - <span data-ttu-id="c434f-121">在每个相关性定型周期中，高级电子数据展示以一个未解决问题为重点，并相应地显示中期样本结果。</span><span class="sxs-lookup"><span data-stu-id="c434f-121">During each Relevance training cycle, Advanced eDiscovery focuses on a single active issue and interim sample results are displayed accordingly.</span></span>
 
-  - <span data-ttu-id="c8fdf-p107">在多问题方案中，使用采样模式，可以将问题选择纳入处理过程。除非采样模式变化，否则不会处理定义为“关闭”的问题。问题只能对一个专家处于“空闲”或“打开”状态。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p107">In a multiple-issue scenario, the Sampling mode enables the selection of issues to be included in processing. Issues defined as "off" are not handled until their Sampling mode is changed. An issue can be "idle" or "on" for only one expert.</span></span>
+  - <span data-ttu-id="c434f-p107">在多问题方案中，使用采样模式，可以将问题选择纳入处理过程。除非采样模式变化，否则不会处理定义为“关闭”的问题。问题只能对一个专家处于“空闲”或“打开”状态。</span><span class="sxs-lookup"><span data-stu-id="c434f-p107">In a multiple-issue scenario, the Sampling mode enables the selection of issues to be included in processing. Issues defined as "off" are not handled until their Sampling mode is changed. An issue can be "idle" or "on" for only one expert.</span></span>
 
-  - <span data-ttu-id="c8fdf-p108">高级电子数据展示可用于生成候选特权文件。请单独设置特权的相关问题。如果可能，请先定型和采集相关性，再仅对采集的集合定型特权（将采集的集合重新加载为单独的案件集）。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p108">Advanced eDiscovery can be used to generate candidate privilege files. Set up a separate issue for privilege. If possible, train and cull for relevance first, and then train for privilege on the culled set only (reload the culled set as a separate case).</span></span> 
+  - <span data-ttu-id="c434f-p108">高级电子数据展示可用于生成候选特权文件。请单独设置特权的相关问题。如果可能，请先定型和采集相关性，再仅对采集的集合定型特权（将采集的集合重新加载为单独的案件集）。</span><span class="sxs-lookup"><span data-stu-id="c434f-p108">Advanced eDiscovery can be used to generate candidate privilege files. Set up a separate issue for privilege. If possible, train and cull for relevance first, and then train for privilege on the culled set only (reload the culled set as a separate case).</span></span> 
 
-  - <span data-ttu-id="c8fdf-p109">仅当没有打开的样本时，才能执行批计算（单击“批计算”后即可查看已打开样本的用户列表）。若要“关闭”其他用户的样本（仅当这些用户不要标记样本时，才能这样做），管理员可以结合使用“修改相关性”实用工具和“所有用户样本”选项。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p109">Batch calculation can be performed only when there are no open samples (when clicking Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.</span></span>
+  - <span data-ttu-id="c434f-p109">仅当没有打开的样本时，才能执行批计算（单击“批计算”后即可查看已打开样本的用户列表）。若要“关闭”其他用户的样本（仅当这些用户不要标记样本时，才能这样做），管理员可以结合使用“修改相关性”实用工具和“所有用户样本”选项。</span><span class="sxs-lookup"><span data-stu-id="c434f-p109">Batch calculation can be performed only when there are no open samples (when clicking Batch Calculation, there will be a list displayed of users with open samples). To "close" samples of other users (this should be performed only if these users are not tagging these samples), an Administrator can use the "Modify relevance" utility with the "All users sample" option.</span></span>
 
-- <span data-ttu-id="c8fdf-p110">**元数据**：高级电子数据展示以内容为重点，不将元数据视为相关性条件的一部分。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p110">**Metadata**: Advanced eDiscovery focuses on content. It does not consider metadata as part of the relevance criteria.</span></span>
+- <span data-ttu-id="c434f-p110">**元数据**：高级电子数据展示以内容为重点，不将元数据视为相关性条件的一部分。</span><span class="sxs-lookup"><span data-stu-id="c434f-p110">**Metadata**: Advanced eDiscovery focuses on content. It does not consider metadata as part of the relevance criteria.</span></span>
 
-- <span data-ttu-id="c8fdf-132">**丰富度**：如果评估后的问题丰富度低于 3%，建议使用已知的相关和非相关文件为相关性定型设定种子。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-132">**Richness**: If the Richness for an issue is less than 3% after Assessment, consider seeding the Relevance training with known Relevant and Not Relevant files.</span></span>
+- <span data-ttu-id="c434f-132">**丰富度**：如果评估后的问题丰富度低于 3%，建议使用已知的相关和非相关文件为相关性定型设定种子。</span><span class="sxs-lookup"><span data-stu-id="c434f-132">**Richness**: If the Richness for an issue is less than 3% after Assessment, consider seeding the Relevance training with known Relevant and Not Relevant files.</span></span>
 
-- <span data-ttu-id="c8fdf-p111">**文件大小**：相关性忽略大文件（已提取文本的字符数超过 5,242,880 个）。此类文件不参与相关性定型过程，并且在批计算后不会收到相关性分数。大小超过 5 MB 的文件可以包含在评估集中。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-p111">**File size**: Large files (over 5,242,880 characters of extracted text) are ignored in Relevance. The files do not participate in the Relevance training process and do not receive a Relevance score after Batch Calculation. Files over 5 MB can be included in the Assessment set.</span></span>
+- <span data-ttu-id="c434f-p111">**文件大小**：相关性忽略大文件（已提取文本的字符数超过 5,242,880 个）。此类文件不参与相关性定型过程，并且在批计算后不会收到相关性分数。大小超过 5 MB 的文件可以包含在评估集中。</span><span class="sxs-lookup"><span data-stu-id="c434f-p111">**File size**: Large files (over 5,242,880 characters of extracted text) are ignored in Relevance. The files do not participate in the Relevance training process and do not receive a Relevance score after Batch Calculation. Files over 5 MB can be included in the Assessment set.</span></span>
 
-## <a name="setting-up-case-issues"></a><span data-ttu-id="c8fdf-136">设置案件集问题</span><span class="sxs-lookup"><span data-stu-id="c8fdf-136">Setting up case issues</span></span>
+## <a name="setting-up-case-issues"></a><span data-ttu-id="c434f-136">设置案件集问题</span><span class="sxs-lookup"><span data-stu-id="c434f-136">Setting up case issues</span></span>
 
-<span data-ttu-id="c8fdf-137">若要查找此部分介绍的参数，可以在高级电子数据展示内依次单击“相关性”\*\*\*\* 和“相关性设置”\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-137">The parameters described in this section are available in the Advanced eDiscovery **Relevance** \> **Relevance setup**.</span></span>
+<span data-ttu-id="c434f-137">若要查找此部分介绍的参数，可以在高级电子数据展示内依次单击“相关性”和“相关性设置”。</span><span class="sxs-lookup"><span data-stu-id="c434f-137">The parameters described in this section are available in the Advanced eDiscovery **Relevance** \> **Relevance setup**.</span></span>
   
-- <span data-ttu-id="c8fdf-138">必须向要定型文件的用户分配问题。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-138">Issues must be assigned to a user who will train the files.</span></span>
+- <span data-ttu-id="c434f-138">必须向要定型文件的用户分配问题。</span><span class="sxs-lookup"><span data-stu-id="c434f-138">Issues must be assigned to a user who will train the files.</span></span>
 
-- <span data-ttu-id="c8fdf-139">然后，必须将已导入文件添加到正在处理的负载中。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-139">Imported files must then be added to the load being processed.</span></span>
+- <span data-ttu-id="c434f-139">然后，必须将已导入文件添加到正在处理的负载中。</span><span class="sxs-lookup"><span data-stu-id="c434f-139">Imported files must then be added to the load being processed.</span></span>
 
-- <span data-ttu-id="c8fdf-140">谨慎定义和整理问题，因为这可能会影响相关性定型结果。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-140">Define and organize issues carefully, as this can impact the Relevance training results.</span></span>
+- <span data-ttu-id="c434f-140">谨慎定义和整理问题，因为这可能会影响相关性定型结果。</span><span class="sxs-lookup"><span data-stu-id="c434f-140">Define and organize issues carefully, as this can impact the Relevance training results.</span></span>
 
-<span data-ttu-id="c8fdf-141">设置参数后，审阅者/专家便可以开始在“相关性”\*\*\*\* 选项卡中定型文件。</span><span class="sxs-lookup"><span data-stu-id="c8fdf-141">After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab.</span></span> 
+<span data-ttu-id="c434f-141">设置参数后，审阅者/专家便可以开始在“相关性”选项卡中定型文件。</span><span class="sxs-lookup"><span data-stu-id="c434f-141">After parameters are set, the reviewer / expert can start training the files in the **Relevance** tab.</span></span> 
   
-## <a name="see-also"></a><span data-ttu-id="c8fdf-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c8fdf-142">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="c434f-142">另请参阅</span><span class="sxs-lookup"><span data-stu-id="c434f-142">See also</span></span>
 
-[<span data-ttu-id="c8fdf-143">高级电子数据展示（经典）</span><span class="sxs-lookup"><span data-stu-id="c8fdf-143">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
+[<span data-ttu-id="c434f-143">高级电子数据展示（经典）</span><span class="sxs-lookup"><span data-stu-id="c434f-143">Advanced eDiscovery (classic)</span></span>](office-365-advanced-ediscovery.md)
   
-[<span data-ttu-id="c8fdf-144">定义问题和分配用户</span><span class="sxs-lookup"><span data-stu-id="c8fdf-144">Defining issues and assigning users</span></span>](define-issues-and-assign-users.md)
+[<span data-ttu-id="c434f-144">定义问题和分配用户</span><span class="sxs-lookup"><span data-stu-id="c434f-144">Defining issues and assigning users</span></span>](define-issues-and-assign-users.md)
   
-[<span data-ttu-id="c8fdf-145">设置将已导入文件添加到的负载</span><span class="sxs-lookup"><span data-stu-id="c8fdf-145">Setting up loads to add imported files</span></span>](set-up-loads-to-add-imported-files.md)
+[<span data-ttu-id="c434f-145">设置将已导入文件添加到的负载</span><span class="sxs-lookup"><span data-stu-id="c434f-145">Setting up loads to add imported files</span></span>](set-up-loads-to-add-imported-files.md)
   
-[<span data-ttu-id="c8fdf-146">定义突出显示的关键字和高级选项</span><span class="sxs-lookup"><span data-stu-id="c8fdf-146">Defining highlighted keywords and advanced options</span></span>](define-highlighted-keywords-and-advanced-options.md)
+[<span data-ttu-id="c434f-146">定义突出显示的关键字和高级选项</span><span class="sxs-lookup"><span data-stu-id="c434f-146">Defining highlighted keywords and advanced options</span></span>](define-highlighted-keywords-and-advanced-options.md)
 
