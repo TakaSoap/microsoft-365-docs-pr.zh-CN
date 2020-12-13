@@ -20,12 +20,12 @@ description: 了解如何验证域和在任何 DNS 托管提供商处为 Microso
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519289"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655596"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>添加 DNS 记录以连接你的域
 
@@ -35,7 +35,7 @@ ms.locfileid: "49519289"
 
 如果你不添加域，组织中的人员将在电子邮件地址中使用 onmicrosoft.com 域，直至你添加为止。 请务必在添加用户前先添加域，以免需要进行两次设置。
 
-如果在下文中找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.md)。
+如果在下文中找不到要查找的内容，请[查看域常见问题解答](../setup/domains-faq.yml)。
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>步骤 1：添加 TXT 或 MX 记录以验证你是否拥有相应的域
 

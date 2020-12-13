@@ -14,211 +14,211 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 了解用户如何在 Office 应用程序中使用桌面、移动和 web Office 应用程序中的敏感度标签，以及哪些应用程序支持灵敏度标签。
+description: 了解用户在适用于桌面、移动和 Web 的 Office 应用中如何使用敏感度标签，以及哪些应用支持敏感度标签。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613616"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655424"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 应用中使用敏感度标签
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-当您从 Microsoft 365 合规性中心或等效标签中心 [发布](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) 灵敏度标签时，它们将开始显示在 Office 应用程序中，以便用户可以在创建或编辑数据时对其进行分类和保护。
+从 Microsoft [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) 365 合规中心或等效标签中心发布敏感度标签后，它们开始显示在 Office 应用中，以便用户在创建或编辑数据时对数据进行分类和保护。
 
-使用本文中的信息可帮助您在 Office 应用程序中成功管理敏感度标签。 例如，确定需要支持内置标签的应用程序的最低版本，并了解与其他应用程序和服务的 Azure 信息保护统一标签客户端和兼容性的交互。
+使用本文中的信息可帮助您成功管理 Office 应用中的敏感度标签。 例如，确定支持内置标签所需的应用的最低版本，并了解与 Azure 信息保护统一标签客户端的交互以及与其他应用和服务兼容性。
 
-## <a name="labeling-client-for-desktop-apps"></a>为桌面应用程序标记客户端
+## <a name="labeling-client-for-desktop-apps"></a>桌面应用的标签客户端
 
-若要使用内置于 Windows 和 Mac 的 Office 桌面应用程序的敏感度标签，必须使用 Office 的订阅版本。 此标签客户端不支持独立版本的 Office，如 Office 2016 或 Office 2019。
+若要使用内置于适用于 Windows 和 Mac 的 Office 桌面应用程序中的敏感度标签，必须使用 Office 订阅版。 此标记客户端不支持 Office 的独立版本，如 Office 2016 或 Office 2019。
 
-若要在 Windows 计算机上将敏感度标签与这些独立版本的 Office 配合使用，请安装 [Azure 信息保护统一标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)。
+若要在 Windows 计算机上将敏感度标签与这些独立版本的 Office 一同使用，请安装 [Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)。
 
-## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用程序中的敏感度标签功能
+## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支持应用中的敏感度标签功能
 
-对于每项功能，下表列出了该应用程序为支持使用内置标签的敏感度标签所需的最低 Office 版本。 或者，如果标签功能处于公共预览或正在审阅中，以供将来的版本使用。 使用 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap) 获取有关未来版本的详细信息。
+对于每个功能，下表列出了该应用支持使用内置标签的敏感度标签所需的最低 Office 版本。 或者，如果标签功能位于公共预览版中或正在针对未来版本进行审核。 使用 [Microsoft 365 路线图](https://aka.ms/MIPC/Roadmap) 了解有关未来版本的详细信息。
 
-新版本的 Office 应用程序将在不同的时间为不同的更新频道提供。 有关详细信息，包括如何配置更新频道以便能够测试您感兴趣的新标记功能，请参阅 [Microsoft 365 应用的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 专用预览中的新功能不包含在表中，但您可能可以通过 nominating 您的组织来加入 [Microsoft 信息保护专用预览计划](https://aka.ms/mip-preview)，从而加入这些预览。
+不同更新频道在不同时间提供新版本的 Office 应用。 有关详细信息，包括如何配置更新频道以便测试感兴趣的新标签功能，请参阅 [Microsoft 365](https://docs.microsoft.com/DeployOffice/overview-update-channels)应用版更新频道概述。 表中不包含私人预览版中的新功能，但你可能能够通过为 Microsoft 信息保护专用预览计划指定你的组织来加入 [这些预览](https://aka.ms/mip-preview)。
 
 > [!NOTE]
-> 最近更改了 Office 应用的更新通道的名称。 例如，"每月频道" 现在是 "当前频道"，Office 预览体验成员现已成为 Beta 频道。 有关详细信息，请参阅 [对 Microsoft 365 应用更新频道的更改](https://docs.microsoft.com/deployoffice/update-channels-changes)。
+> 最近更改了 Office 应用的更新频道的名称。 例如，每月频道现为当前频道，Office 预览体验成员现在为 Beta 频道。 有关详细信息，请参阅 [更改以更新 Microsoft 365 应用版频道](https://docs.microsoft.com/deployoffice/update-channels-changes)。
 
-在安装仅在 Windows 计算机上运行的 Azure 信息保护统一标记客户端时，可以使用其他功能。 有关这些详细信息，请参阅 [比较 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
+在安装 Azure 信息保护统一标记客户端（仅在 Windows 计算机上运行）时，可以使用其他功能。 有关这些详细信息，请参阅 [比较 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 和 PowerPoint 中的敏感度标签功能
 
-对于 iOS 和 Android：其中列出了最低版本， [Office 应用程序](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)也支持敏感度标签功能。
+对于 iOS 和 Android：其中列出了最低版本，Office 应用也支持敏感度标签 [功能](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)。
 
-|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
+|功能                                                                                                        |Windows 桌面 |Mac 桌面版 |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
-|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
-|[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[带有变量的动态标记](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | 正在审阅 |
-|[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 正在审阅   | 正在审阅         | 正在审阅                                                        |
-|[查看标签使用情况标签分析](label-analytics.md) 并为管理员发送数据                      | 正在审阅            | 正在审阅        | 正在审阅   | 正在审阅         | 是的 <sup>\*</sup>                                                        |
-|[要求用户对其电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 预览： [Beta 频道](https://office.com/insider)             | 预览： [Beta 频道](https://office.com/insider)         | 正在审阅   | 正在审阅         | 正在审阅                                            
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的预览：滚动到 [当前频道 (预览) ](https://office.com/insider) | 正在审阅 | 正在审阅 | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|支持在标签和受保护的文档上的[自动保存](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[共同创作](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 正在审阅 | 正在审阅 | 正在审阅 | 正在审阅 | [是-自愿加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
+|[需要理由来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[提供指向自定义帮助页的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[标记内容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[包含变量的动态标记](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | 正在审查 |
+|[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | 正在审查   | 正在审查         | 正在审查                                                        |
+|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 正在审查            | 正在审查        | 正在审查   | 正在审查         | 是的 <sup>\*</sup>                                                        |
+|[要求用户向电子邮件和文档应用标签](sensitivity-labels.md#what-label-policies-can-do)   | 预览 [：Beta 渠道](https://office.com/insider)             | 预览 [：Beta 渠道](https://office.com/insider)         | 预览 [：Beta 渠道](https://office.com/insider)   | 正在审查         | 正在审查                                            
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Word 和 PowerPoint 预览：向当前频道 ([预览) ](https://office.com/insider) | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|支持 [对已标记](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 和 [受保护的文档](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) 进行自动保存和共同授权 | 正在审查 | 正在审查 | 正在审查 | 正在审查 | [是 - 选择加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
-**脚注**
+**脚注：**
 
-<sup>\*</sup> 目前，不包含调整文本以删除标签或降低分类级别
+<sup>\*</sup> 当前不包含用于删除标签或降低分类级别的理由文本
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的敏感度标签功能
 
-|功能                                                                                                        |Windows 桌面上的 Outlook |Mac 桌面上的 Outlook  |iOS 版 Outlook |Android 版 Outlook |Outlook 网页版 |
+|功能                                                                                                        |Windows 桌面上的 Outlook |Mac 版 Outlook 桌面版  |iOS 版 Outlook |Android 版 Outlook |Outlook 网页版 |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
-|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[需要调整以更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[提供指向自定义帮助页的 "帮助" 链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[标记内容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[带有变量的动态标记](#dynamic-markings-with-variables)                                              | 正在审阅                     | 正在审阅                 | 正在审阅         | 正在审阅           | 正在审阅               |
-|[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|[要求用户对其电子邮件和文档应用标签](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览： [Beta 频道](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | 是                |
-|[查看标签使用情况标签分析](label-analytics.md) 并为管理员发送数据                      | 正在审阅                       | 正在审阅                    | 正在审阅           | 正在审阅               | 是               |
-|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 正在审阅                    | 正在审阅           | 正在审阅               | 是 |
+|[手动应用、更改或删除标签](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[应用默认标签](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[需要理由来更改标签](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[提供指向自定义帮助页的帮助链接](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[标记内容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[包含变量的动态标记](#dynamic-markings-with-variables)                                              | 正在审查                     | 正在审查                 | 正在审查         | 正在审查           | 正在审查               |
+|[立即分配权限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[允许用户分配权限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | 是               |
+|[要求用户向电子邮件和文档应用标签](#require-users-to-apply-a-label-to-their-email-and-documents)   | 预览 [：Beta 渠道](https://office.com/insider)                        | 16.43+                     | 4.57.0+            | 4.2037.4+                | 是                |
+|[使用标签分析查看标签使用情况，](label-analytics.md) 并发送管理员数据                      | 正在审查                       | 正在审查                    | 正在审查           | 正在审查               | 是               |
+|[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)                    | 2009+                      | 正在审查                    | 正在审查           | 正在审查               | 是 |
 |
 
 
-## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标记解决方案
+## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 内置标签客户端和其他标签解决方案
 
-Office 内置标签客户端从以下管理中心下载灵敏度标签和敏感度标签策略设置：
+Office 内置标记客户端从以下管理中心下载敏感度标签和敏感度标签策略设置：
 
 - Microsoft 365 合规中心
 - Microsoft 365 安全中心
 - Office 365 安全与合规中心
 
-若要使用 Office 内置标签客户端，必须向用户发布一个或多个从列出的管理中心和[受支持的 Office 版本](#support-for-sensitivity-label-capabilities-in-apps)[发布的标签策略](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
+若要使用 Office 内置标签客户端，您必须从列出的管理中心和受支持的 Office[](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)版本之一向用户发布一个或多个标签[策略](#support-for-sensitivity-label-capabilities-in-apps)。
 
 如果满足这两个条件，但需要关闭 Office 内置标签客户端，请使用以下组策略设置：
 
-1. 导航到 " **用户配置/管理模板/Microsoft Office 2016/安全设置**"。
+1. 导航到 **"用户配置/管理模板/Microsoft Office 2016/安全设置"。**
 
-2. Set **使用 Office 中的灵敏度功能将敏感度标签应用于** **0** 并将其查看。 
+2. 设置 **使用 Office 中的敏感度功能应用敏感度标签，并查看敏感度标签** 为 **0。** 
  
-通过使用组策略或使用 [Office 云策略服务](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)部署此设置。 该设置将在 Office 应用程序重新启动时生效。
+使用组策略或 Office 云策略服务 [部署此设置](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service)。 该设置在 Office 应用重新启动时生效。
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Office 内置标签客户端和 Azure 信息保护客户端
 
-如果用户安装了 ([统一标签客户](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) 端或 [经典客户端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)) 的 Azure 信息保护客户端之一，默认情况下，内置标签客户端在其 Office 应用中处于关闭状态。 
+如果用户安装了 Azure 信息保护客户端之一 (统一标签客户端[](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)或经典客户端[) ，](https://docs.microsoft.com/azure/information-protection/rms-client/aip-client)默认情况下，内置标签客户端在 Office 应用中已关闭。 
 
-若要使用内置标签而不是 Azure 信息保护客户端的 Office 应用，请使用上一节中的说明，但设置组策略设置 **使用 Office 中的敏感度功能将敏感度标签应用并查看** 为 **1**。 
+若要对 Office 应用使用内置标签，而不是 Azure 信息保护客户端，请使用上一节中的说明，但设置组策略设置 使用 **Office** 中的敏感度功能应用敏感度标签，并查看敏感度标签为 **1。** 
 
-或者，禁用或删除 Office 加载项 " **Azure 信息保护**"。 此方法适用于一台计算机和临时测试。 有关说明，请参阅 [在 Office 程序中查看、管理和安装加载项](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
+或者，禁用或删除 Office 加载项 **Azure 信息保护**。 此方法适用于单台计算机和临时测试。 有关说明，请参阅 [查看、管理和安装 Office 程序中的外接程序](https://support.office.com/article/16278816-1948-4028-91e5-76dca5380f8d)。 
 
-当您禁用或删除此 Office 加载项时，将保持安装的 Azure 信息保护客户端，以便您可以继续标记 Office 应用外部的文件。 例如，通过使用文件资源管理器或 PowerShell。
+禁用或删除此 Office 外接程序时，Azure 信息保护客户端将保持安装，以便你可以继续标记 Office 应用外部的文件。 例如，通过使用文件资源管理器或 PowerShell。
 
-有关 Azure 信息保护客户端和 Office 内置标签客户端支持的功能的信息，请参阅从 Azure 信息保护文档中 [选择用于 Windows 计算机的标记客户端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) 。
+有关 Azure 信息保护客户端和 Office 内置标签客户端支持哪些功能的信息，请参阅 Azure 信息保护文档中的"选择要用于 [Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) 计算机的标记客户端"。
 
 ## <a name="office-file-types-supported"></a>支持的 Office 文件类型
 
-对 Word、Excel 和 PowerPoint 文件使用内置标签的 Office 应用支持 Open XML 格式 (如 .docx 和 .xlsx) ，而不是 Microsoft Office 97-2003 格式 (如 .doc 和 .xls) 。 如果某个文件类型不支持内置标签，则 " **敏感度** " 按钮在 Office 应用中不可用。
+具有 Word、Excel 和 PowerPoint 文件的内置标签的 Office 应用支持 Open XML 格式 (如 .docx 和 .xlsx) ，但不支持 Microsoft Office 97-2003 格式 (如 .doc 和 .xls) 。 当内置标签不支持文件类型时，"敏感度"按钮在 Office应用中不可用。
 
-Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Office 97-2003 格式。 有关详细信息，请参阅该客户端的管理员指南中的 [Azure 信息保护统一标记客户端支持的文件类型](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) 。
+Azure 信息保护统一标签客户端支持 Open XML 格式和 Microsoft Office 97-2003 格式。 有关详细信息，请参阅该客户端管理员指南中 [Azure 信息保护统一标记](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-file-types) 客户端支持的文件类型。
 
-有关其他标记解决方案，请查看文档中支持的文件类型。
+有关其他标记解决方案，请查看其文档，了解受支持的文件类型。
 
 ## <a name="protection-templates-and-sensitivity-labels"></a>保护模板和敏感度标签
 
-在使用内置标记时，管理员定义的 [保护模板](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)（如您为 Office 365 邮件加密定义的模板）在 Office 应用中不可见。 这种简化的体验反映了无需选择保护模板，因为具有已启用加密功能的敏感度标签中包含相同的设置。
+使用 [内置标签](https://docs.microsoft.com/azure/information-protection/configure-policy-templates)时，管理员定义的保护模板（如为 Office 365 邮件加密定义的模板）在 Office 应用中不可见。 这种简化的体验反映了无需选择保护模板，因为已启用加密的敏感度标签中包含相同的设置。
 
-如果需要将现有保护模板转换为标签，请使用 Azure 门户和以下说明： [将模板转换为标签](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)。
+如果需要将现有保护模板转换为标签，请使用 Azure 门户和以下说明：将 [模板转换为标签](https://docs.microsoft.com/azure/information-protection/configure-policy-templates#to-convert-templates-to-labels)。
 
-## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a> (IRM) 选项和敏感度标签的信息权限管理
+## <a name="information-rights-management-irm-options-and-sensitivity-labels"></a>信息权限管理 (IRM) 选项和敏感度标签
 
-为应用加密而配置的敏感度标签消除了用户的复杂性，以指定自己的加密设置。 在许多 Office 应用程序中，用户仍然可以使用信息权限管理 (IRM) 选项手动配置这些单独的加密设置。 例如，对于 Windows 应用：
+配置为应用加密的敏感度标签可消除用户指定自己的加密设置的复杂性。 在许多 Office 应用中，这些单独的加密设置仍可由用户使用信息权限管理或 IRM (手动) 配置。 例如，对于 Windows 应用：
 
 - 对于文档：**文件**  >  **信息**  >  **保护文档**  >  **限制访问**
-- 对于电子邮件：从 " **选项** " 选项卡中 > **加密** 
+- 电子邮件：从"选项 **"** 选项卡> **加密** 
   
-用户最初标记文档或电子邮件时，他们始终可以使用自己的加密设置覆盖您的标签配置设置。 例如：
+当用户最初标记文档或电子邮件时，他们始终可以使用自己的加密设置覆盖标签配置设置。 例如：
 
-- 用户将 " **机密 \ 所有雇员** " 标签应用于文档，此标签配置为对组织中的所有用户应用加密设置。 然后，此用户可手动配置 IRM 设置，以限制对组织外部用户的访问。 最终结果是标记为 " **机密 \ 所有员工** 并进行加密" 的文档，但组织中的用户无法按预期方式打开它。
+- 用户将"机密 **"\"所有员工** "标签应用于文档，并且此标签配置为为组织所有用户应用加密设置。 然后，此用户手动配置 IRM 设置以限制对组织外部用户的访问。 最终结果是标记为"机密 **"\"** 所有员工"并加密的文档，但您组织的用户无法如期打开它。
 
-- 用户将 "机密" " **仅限收件人** " 标签应用于电子邮件，此电子邮件配置为应用 "不 **转发**" 的加密设置。 然后，此用户手动配置 IRM 设置，使该电子邮件不受限制。 最终结果是，尽管拥有机密的 " **仅收件人** " 标签，也可以将电子邮件转发给收件人。
+- 用户将"机密 **"\"** 仅收件人"标签应用于电子邮件，并且此电子邮件被配置为应用"不要 **转发"的加密设置**。 然后，此用户手动配置 IRM 设置，以便电子邮件不受限制。 最终结果是，即使具有"机密"\"仅收件人"标签，收件人仍 **可以转发** 电子邮件。
 
-- 用户将 " **常规** " 标签应用于文档，并且此标签未配置为 "应用加密"。 然后，此用户可手动配置 IRM 设置以限制对文档的访问。 最终结果是一个标签为 " **常规** " 但也采用加密的文档，以便某些用户无法按预期方式打开它。
+- 用户向 **文档应用常规** 标签，并且此标签未配置为应用加密。 然后，此用户手动配置 IRM 设置以限制对文档的访问。 最终结果是标记为"常规"的文档，但也应用了加密，以便某些用户无法如期打开它。
 
-如果已标记文档或电子邮件，则用户可以执行这些操作中的任何操作（如果内容尚未加密），或者具有 [使用权限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 导出或完全控制。 
+如果文档或电子邮件已标记，则如果用户的内容尚未加密，或者其使用权限为"导出"或"完全控制"，则用户可以执行这些操作[](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)中的任意操作。 
 
-若要获得具有有意义的报告的更一致的标签体验，请提供适当的标签和指导，以供用户仅应用标签来保护文档。 例如：
+若要通过有意义的报告获得更一致的标签体验，请为用户提供适当的标签和指导，以便仅应用标签来保护文档。 例如：
 
-- 对于用户必须分配其自己的权限的例外情况，请提供 [允许用户分配其自己的权限](encryption-sensitivity-labels.md#let-users-assign-permissions)的标签。 
+- 对于用户必须分配自己的权限的例外情况，提供允许用户分配自己的权限 [的标签](encryption-sensitivity-labels.md#let-users-assign-permissions)。 
 
-- 当用户需要具有相同分类但不加密的标签时，请提供选项替代方法，而不是用户在选择应用了加密的标签后手动删除加密。 例如：
+- 当用户需要分类相同但不加密的标签时，提供子标签替代项，而不是用户在选择应用加密的标签后手动删除加密。 例如：
     - **机密 \ 所有员工**
-    - **机密 \ 任何人 (无加密)**
+    - **机密 \ (不加密)**
 
 > [!NOTE]
-> 如果用户从存储在 SharePoint 或 OneDrive 中的标记文档中手动删除加密，并且已 [对 sharepoint 和 onedrive 中的 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)，则下次访问或下载该文档时，将自动还原标签加密。 
+> 如果用户从存储在 SharePoint 或 OneDrive 中的已标记文档手动删除加密，并且你已启用 SharePoint 和 [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)中 Office 文件的敏感度标签，则下次访问或下载文档时，将自动还原标签加密。 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>将敏感度标签应用于文件、电子邮件和附件
 
-用户可以一次仅为每个文档或电子邮件应用一个标签。
+用户一次只能对一个文档或电子邮件应用一个标签。
 
-当您标记包含附件的电子邮件时，附件不会继承标签，但有一个例外：
+当您为包含附件的电子邮件添加标签时，附件不会继承标签，但出现以下一个例外：
 
-- 附件是标签不适用的 Office 文档，并且应用于电子邮件的标签将应用加密。 在这种情况下，电子邮件的 Office 文档会将电子邮件的标签继承为其加密设置。
+- 附件是一个带有不应用加密的标签的 Office 文档，适用于电子邮件的标签应用加密。 在这种情况下，通过电子邮件发送的 Office 文档会继承电子邮件的标签及其加密设置。
 
 或者： 
 
-- 如果附件具有标签，则保留其最初应用的标签。
-- 如果在没有标签的情况下加密附件，则会保留加密但不会对其进行标记。
-- 如果附件没有标签，它们将保持未标记。
+- 如果附件有标签，则保留最初应用的标签。
+- 如果附件加密时没有标签，则保留加密，但不标记它们。
+- 如果附件没有标签，则它们保持未标记。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度标签兼容性
 
-**对于智能型应用**：如果在不支持敏感度标签的 [RMS 智能型应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 中打开已标记和加密的文档或电子邮件，则应用仍强制实施加密和权限管理。
+**使用 RMS 启发** 式应用：如果在不支持敏感度标签的 [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 启发式应用程序中打开已标记和加密的文档或电子邮件，应用仍强制实施加密和权限管理。
 
-**使用 Azure 信息保护客户端**：您可以使用 Azure 信息保护客户端和其他方法查看和更改应用于 Office 内置标记客户端的文档和电子邮件的敏感度标签。
+使用 Azure 信息保护客户端：可以使用 **Azure** 信息保护客户端，以其他方式查看和更改使用 Office 内置标签客户端应用于文档和电子邮件的敏感度标签。
 
-**与其他版本的 office**：任何授权的用户都可以在其他版本的 office 中打开带标签的文档和电子邮件。 但是，只能在受支持的 Office 版本中或通过使用 Azure 信息保护客户端来查看或更改标签。 [上一节](#support-for-sensitivity-label-capabilities-in-apps)中列出了受支持的 Office 应用程序版本。
+**对于 Office 的其他版本**：任何授权用户都可以在其他版本的 Office 中打开带标签的文档和电子邮件。 但是，你只能查看或更改受支持的 Office 版本中的标签或通过使用 Azure 信息保护客户端。 支持的 Office 应用版本在上一 [部分中列出](#support-for-sensitivity-label-capabilities-in-apps)。
 
-## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>支持由敏感度标签保护的 SharePoint 和 OneDrive 文件
+## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>支持受敏感度标签保护的 SharePoint 和 OneDrive 文件
 
-若要对 SharePoint 或 OneDrive 中的文档使用 office 内置标签客户端与 Office 网页版，请确保已 [在 sharepoint 和 onedrive 中为 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)。
+若要将 Office 内置标签客户端与 Office 网页应用用于 SharePoint 或 OneDrive 中的文档，请确保为 SharePoint 和 [OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)中的 Office 文件启用敏感度标签。
 
-## <a name="support-for-external-users-and-labeled-content"></a>支持外部用户和带标签的内容
+## <a name="support-for-external-users-and-labeled-content"></a>支持外部用户和标记的内容
 
-当您标记文档或电子邮件时，该标签将存储为包括租户和标签 GUID 的元数据。 当支持敏感度标签的 Office 应用打开带标签的文档或电子邮件时，将读取此元数据，并且只有当该用户属于同一租户时，该标签才会显示在其应用中。 例如，对于 Word、PowerPoint 和 Excel 的内置标签，标签名称将显示在状态栏上。 
+在标记文档或电子邮件时，标签存储为包含租户和标签 GUID 的元数据。 当支持敏感度标签的 Office 应用打开已标记的文档或电子邮件时，此元数据是可读取的，并且仅在用户属于同一租户时，标签才能显示在其应用中。 例如，对于 Word、PowerPoint 和 Excel 的内置标签，标签名称显示在状态栏上。 
 
-这意味着，如果您与使用不同标签名称的其他组织共享文档，则每个组织都可以应用并查看其自己的标签应用于该文档的标签。 但是，在您的组织外部的用户可以看到已应用标签中的以下元素：
+这意味着，如果与其他使用不同标签名称的组织共享文档，则每个组织都可以应用并查看自己的标签是否应用于文档。 但是，应用的标签中的以下元素对组织外部的用户可见：
 
-- 内容标记。 当标签应用页眉、页脚或水印时，它们将直接添加到内容中并保持可见，直到有人修改或删除它们。
+- 内容标记。 当标签应用页眉、页脚或水印时，这些内容会直接添加到内容中，并一直可见，直到有人修改或删除它们。
 
-- 来自应用了加密的标签的基础保护模板的名称和说明。 此信息显示在文档顶部的消息栏中，以提供有关有权打开文档的用户的信息，以及该文档的使用权限。
+- 应用加密的标签中基础保护模板的名称和说明。 此信息显示在文档顶部的消息栏中，以提供有关谁有权打开文档的信息及其对该文档的使用权限。
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>与外部用户共享加密文档
 
-除了限制对自己组织中的用户的访问之外，还可以将访问权限扩展到在 Azure Active Directory 中具有帐户的任何其他用户。 在用户成功通过身份验证后，所有 Office 应用和其他智能型 [应用程序](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 都可以打开加密的文档。
+除了限制对自己组织中用户的访问之外，还可以将访问权限扩展到在 Azure Active Directory 中拥有帐户的其他用户。 用户成功进行身份验证后，所有 Office 应用和其他 [RMS](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 启发式应用程序都可以打开加密文档。
 
-如果外部用户在 Azure Active Directory 中没有帐户，则可以在租户中为其创建一个来宾帐户。 对于其电子邮件地址，您可以指定他们已使用的任何电子邮件地址。 例如，它们的 Gmail 地址。 当您在 [sharepoint 和 onedrive 中为 Office 文件启用了敏感度标签](sensitivity-labels-sharepoint-onedrive-files.md)时，也可以使用此来宾帐户访问 Sharepoint 或 onedrive 中的共享文档。
+如果外部用户在 Azure Active Directory 中没有帐户，可以在租户中为它们创建来宾帐户。 对于他们的电子邮件地址，你可以指定他们已使用的任何电子邮件地址。 例如，他们的 Gmail 地址。 当你在 SharePoint 和 OneDrive 中为 Office 文件启用敏感度标签时，此来宾帐户还可用于访问 SharePoint 或 [OneDrive 中的共享文档](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-外部用户也可以在使用 Microsoft 365 应用程序时，使用 microsoft 帐户) 在 Windows 上 ([以前的 Office 365 应用程序](https://docs.microsoft.com/deployoffice/name-change) ，并在 macOS (version 16.42 +) 、Android (version 16.0.13029 +) 和 iOS (版本 2.42 +) 中新支持。 例如，有人与一个加密的文档共享一个加密的文档，而加密设置则指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用 Gmail 电子邮件地址的 Microsoft 帐户。 然后，在使用此帐户登录后，用户可以打开文档并对其进行编辑，具体取决于为该用户指定的使用限制。 有关此方案的演练示例，请参阅 [打开和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部用户在 Windows 上使用 Microsoft 365 应用版 (以前是 Office [365](https://docs.microsoft.com/deployoffice/name-change) 应用) ，在 macOS (版本 16.42+) 、Android (版本 16.0.13029+) 和 iOS (版本 2.42+) 上，也可以将 Microsoft 帐户用于加密文档。 例如，有人与用户共享加密文档，加密设置指定其 Gmail 电子邮件地址。 此用户可以创建自己的使用其 Gmail 电子邮件地址的 Microsoft 帐户。 然后，使用该帐户登录后，他们可以打开文档，然后根据为该用户指定的使用限制对其进行编辑。 有关此方案的演练示例，请参阅打开 [和编辑受保护的文档](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
-> Microsoft 帐户的电子邮件地址必须与指定用于限制加密设置访问权限的电子邮件地址相匹配。
+> Microsoft 帐户的电子邮件地址必须与指定的电子邮件地址匹配，以限制对加密设置的访问。
 
-当使用 Microsoft 帐户的用户以这种方式打开加密文档时，如果具有相同名称的来宾帐户尚不存在，则会自动为该租户创建来宾帐户。 如果来宾帐户存在，则它可用于在 SharePoint 和 OneDrive 中打开文档，方法是使用 web 上的浏览器 (Office) ，以及从 Windows 桌面应用程序中打开加密的文档。 
+当具有 Microsoft 帐户的用户通过此方式打开加密文档时，如果不存在同名来宾帐户，则会自动为租户创建来宾帐户。 当来宾帐户存在时，除了从 Windows 桌面应用打开加密文档外，它还可用于使用浏览器 (Office 网页版) 在 SharePoint 和 OneDrive 中打开文档。 
 
-但是，由于复制延迟，自动来宾帐户不会立即创建。 如果您将个人电子邮件地址指定为标签加密设置的一部分，我们建议您在 Azure Active Directory 中创建相应的来宾帐户。 然后，让这些用户知道他们必须使用此帐户从您的组织中打开加密的文档。
+但是，由于复制延迟，不会立即创建自动来宾帐户。 如果你指定个人电子邮件地址作为标签加密设置的一部分，我们建议你在 Azure Active Directory 中创建相应的来宾帐户。 然后让这些用户知道，他们必须使用此帐户从组织打开加密文档。
 
 > [!TIP]
-> 由于您无法确定外部用户将使用受支持的 Office 客户端应用程序，因此，在创建来宾帐户后共享 SharePoint 和 OneDrive 中的链接是更可靠的方法来支持与外部用户进行安全协作。
+> 由于你无法确保外部用户将使用受支持的 Office 客户端应用程序，因此在创建来宾帐户后共享 SharePoint 和 OneDrive 的链接是支持与外部用户进行安全协作的更可靠方法。
 
-## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 应用程序何时应用内容标记和加密
+## <a name="when-office-apps-apply-content-marking-and-encryption"></a>当 Office 应用应用内容标记和加密时
 
-Office 应用程序使用敏感度标签以不同方式应用内容标记和加密，具体取决于您使用的应用程序。
+Office 应用使用敏感度标签应用内容标记和加密的方式不同，具体取决于你使用的应用。
 
 | 应用 | 内容标记 | 加密 |
 | --- | --- | --- |
@@ -227,72 +227,72 @@ Office 应用程序使用敏感度标签以不同方式应用内容标记和加�
 | 网页版、iOS 版和 Android 版 Outlook | Exchange Online 发送电子邮件后 | Exchange Online 发送电子邮件后 |
 |
 
-将敏感度标签应用于 Office 应用程序之外的文件的解决方案通过将标记元数据应用于文件来实现。 在这种情况下，从标签的配置中标记的内容不会插入到文件中，但会应用加密。 
+将敏感度标签应用于 Office 应用外部文件的解决方案通过向文件应用标签元数据来这样做。 在此方案中，不会将标签配置中的内容标记插入文件，而是应用加密。 
 
-在 Office 桌面应用程序中打开这些文件时，Azure 信息保护统一标记客户端将自动应用内容标记。 将内置标签用于桌面、移动或 web 应用时，不会自动应用内容标记。
+在 Office 桌面应用程序中打开这些文件时，Azure 信息保护统一标签客户端将自动应用内容标记。 当您对桌面、移动或 Web 应用使用内置标签时，不会自动应用内容标记。
 
-包括在 Office 应用程序外部应用敏感度标签的方案包括：
+包括应用 Office 应用外部的敏感度标签的方案包括：
 
-- 来自 Azure 信息保护统一标签客户端的扫描程序、文件资源管理器和 PowerShell 
+- Azure 信息保护统一标记客户端中的扫描程序、文件资源管理器和 PowerShell 
 
 - SharePoint 和 OneDrive 的自动标记策略
 
-- 从 Power BI 导出的标记和加密的数据
+- 从 Power BI 导出的已标记和加密数据
 
-- Microsoft 云应用安全
+- Microsoft Cloud App Security
 
-对于这些方案，使用内置标签的用户可以通过临时删除或替换当前标签，然后重新应用原始标签来应用标签的内容标记。
+对于这些方案，使用其 Office 应用，具有内置标签的用户可以通过暂时删除或替换当前标签，然后重新应用原始标签来应用标签的内容标记。
 
-### <a name="dynamic-markings-with-variables"></a>带有变量的动态标记
+### <a name="dynamic-markings-with-variables"></a>包含变量的动态标记
 
 > [!IMPORTANT]
-> 目前，并非所有平台上的所有应用程序都支持动态内容标记，您可以为页眉、页脚和水印指定这些标记。 对于不支持此功能的应用程序，这些应用程序会将标记应用为标签配置中指定的原始文本，而不是解析这些变量。
+> 目前，并非所有平台上的应用都支持你可以为页眉、页脚和水印指定的动态内容标记。 对于不支持此功能的应用，它们应用标记作为标签配置中指定的原始文本，而不是解析变量。
 > 
-> Azure 信息保护统一标签客户端支持动态标记。 有关内置于 Office 的标记，请参阅此页上 " [功能](#support-for-sensitivity-label-capabilities-in-apps) " 部分中的表。
+> Azure 信息保护统一标记客户端支持动态标记。 有关内置于 Office 的标签，请参阅此页上 [的功能](#support-for-sensitivity-label-capabilities-in-apps) 部分中的表格。
 
-为内容标记配置敏感度标签时，可以在页眉、页脚或水印的文本字符串中使用以下变量：
+为内容标记配置敏感度标签时，可以在文本字符串中为页眉、页脚或水印使用以下变量：
 
-| 变量 | 说明 | 应用标签的示例 |
+| 变量 | 说明 | 应用标签时的示例 |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | 标签显示名称已应用的标签| **常规**|
-| `${Item.Name}` | 正在标记的内容的文件名或电子邮件主题 | **Sales.docx** |
-| `${Item.Location}` | 要标记的文档的路径和文件名，或电子邮件主题中正在标记的电子邮件 | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | 应用标签的用户的显示名称| **Richard Simone** |
-| `${User.PrincipalName}` | 应用标签的用户的 Azure AD 用户主体名称 (UPN)  | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | 在应用标签的用户的本地时区中标记内容的日期和时间 | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | 已显示名称标签的标签标签| **常规**|
+| `${Item.Name}` | 要标记的内容的文件名或电子邮件主题 | **Sales.docx** |
+| `${Item.Location}` | 要标记的文档的路径和文件名，或要标记的电子邮件的电子邮件主题 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 应用标签的用户的显示名称| **Richard Richarde** |
+| `${User.PrincipalName}` | 应用标签 (用户的 UPN)  (Azure AD 用户主体名称 | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | 在应用标签的用户的本地时区中标记内容的日期和时间 | **8/10/2020 1：30 PM** |
 
 > [!NOTE]
 > 这些变量的语法区分大小写。
 
-## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>要求用户对其电子邮件和文档应用标签
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>要求用户向电子邮件和文档应用标签
 
 > [!IMPORTANT]
-> 也称为强制标签，并非所有平台上的所有应用程序当前都支持 **要求用户将标签应用于其电子邮件和文档** 的策略设置。
+> 也称为强制标签，并不是所有平台上的所有应用当前都支持"要求用户向电子邮件和文档应用标签" **的策略设置**。
 > 
-> [Azure 信息保护统一标签客户端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支持必需的标签和在 Office 应用程序中内置的标记，请参阅此页面上 "[功能](#support-for-sensitivity-label-capabilities-in-apps)" 部分中的表。
+> [Azure 信息保护统一标签](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)客户端支持强制标记，并且对于内置于 Office 应用的标签，请参阅此页面的功能部分中的表[](#support-for-sensitivity-label-capabilities-in-apps)。
 
-如果选择此策略设置，则分配了策略的用户必须在以下情况下选择并应用灵敏度标签：
+选择此策略设置后，分配了该策略的用户必须在以下情况下选择和应用敏感度标签：
 
 - 对于 Azure 信息保护统一标记客户端：
-    - 对于文档 (Word、Excel、PowerPoint) ：保存未标记的文档或用户关闭文档时。
-    - 对于电子邮件 (Outlook) ：用户在发送未标记的邮件时。
+    - 对于 Word (Excel、PowerPoint) ：保存未标记的文档或用户关闭文档时。
+    - 对于 Outlook (电子邮件) ：用户发送未标记的邮件时。
 
-- 对于内置于 Office 应用的标记：
-    - 对于 # B1 Word、Excel、PowerPoint)  ( 文档：当打开或保存未标记的文档时。
-    - 对于电子邮件 (Outlook) ：当用户发送未标记的电子邮件时。
+- 对于 Office 应用中内置的标签：
+    - 对于文档 (（Word、Excel、PowerPoint) ：打开或保存未标记的文档时。
+    - 对于 Outlook (电子邮件) ：当用户发送未标记的电子邮件时。
 
 有关内置标签的其他信息：
 
-- 当用户打开一个未标记的文档时，系统会提示用户添加一个敏感度标签，可以添加标签，也可以选择在只读模式下打开文档。
+- 当由于用户打开未标记的文档而提示用户添加敏感度标签时，他们可以添加标签或选择以只读模式打开文档。
 
-- 当强制标签生效时，用户不能从文档中删除敏感度标签，但可以更改现有标签。
+- 强制标签生效后，用户无法从文档中删除敏感度标签，但可以更改现有标签。
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>为 Word、Excel、PowerPoint 和 Outlook 设置不同的视觉标记
 
-作为一个额外的变量，可以使用文本字符串中的 "If. App" 变量语句来配置每个 Office 应用程序类型的可视标记，并使用值 **Word**、 **Excel**、 **PowerPoint** 或 **Outlook** 标识应用程序类型。 您还可以缩写这些值，如果要在同一个 If 应用程序语句中指定多个值，则这是必需的。
+作为附加变量，您可以使用文本字符串中的"If.App"变量语句配置每个 Office 应用程序类型的视觉标记，然后使用Word、Excel、PowerPoint 或 Outlook 值标识应用程序 **类型**。  还可以缩写这些值，如果要在同一个 If.App 语句中指定多个值，这是必需的。
 
 > [!NOTE]
-> 由于目前仅受 Azure 信息保护统一标记客户端支持，因此包含 Outlook 的说明是完整的。
+> 为完整，包括 Outlook 说明，尽管当前仅受 Azure 信息保护统一标签客户端支持。
 
 使用以下语法：
 
@@ -304,23 +304,23 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 示例：
 
-- **仅设置 Word 文档的页眉文本：**
+- **仅设置 Word 文档的标题文本：**
 
     `${If.App.Word}This Word document is sensitive ${If.End}`
 
-    仅在 Word 文档头中，标签应用标题文本 "此 Word 文档是敏感文档"。 不会向其他 Office 应用程序应用任何标题文本。
+    仅在 Word 文档标题中，标签应用标题文本"此 Word 文档是敏感的"。 不会将标题文本应用于其他 Office 应用程序。
 
-- **设置 Word、Excel 和 Outlook 的页脚文本和 PowerPoint 的不同页脚文本：**
+- **设置 Word、Excel 和 Outlook 的页脚文本，以及 PowerPoint 的不同页脚文本：**
 
     `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
 
-    在 Word、Excel 和 Outlook 中，标签应用页脚文本 "此内容是机密"。 在 PowerPoint 中，标签应用页脚文本 "此演示文稿是保密的"。
+    在 Word、Excel 和 Outlook 中，标签应用页脚文本"此内容是机密内容"。 在 PowerPoint 中，标签应用页脚文本"此演示文稿是机密演示文稿"。
 
-- **为 word 和 PowerPoint 设置特定的水印文本，然后为 Word、Excel 和 PowerPoint 设置水印文本：**
+- **设置 Word 和 PowerPoint 的特定水印文本，然后设置 Word、Excel 和 PowerPoint 水印文本：**
 
     `${If.App.WP}This content is ${If.End}Confidential`
 
-    在 Word 和 PowerPoint 中，标签应用水印文本 "此内容是机密"。 在 Excel 中，标签应用水印文本 "保密"。 在 Outlook 中，标签不会应用任何水印文本，因为 Outlook 不支持将水印用作视觉标记。
+    在 Word 和 PowerPoint 中，标签应用水印文本"此内容为机密"。 在 Excel 中，标签应用水印文本"机密"。 在 Outlook 中，标签不会应用任何水印文本，因为 Outlook 不支持将水印作为视觉标记。
 
 
 ## <a name="end-user-documentation"></a>最终用户文档

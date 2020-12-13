@@ -2,8 +2,8 @@
 title: 管理高级电子数据展示中的相关性设置
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 获取有关在高级电子数据展示中设置相关性定型的建议，以计算文件相关性分数并生成分析结果。
-ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528138"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662867"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>管理高级电子数据展示（经典）中的相关性设置
 
@@ -61,7 +61,7 @@ ms.locfileid: "46528138"
 
 ## <a name="setting-up-case-issues"></a>设置案件集问题
 
-若要查找此部分介绍的参数，可以在高级电子数据展示内依次单击“相关性”**** 和“相关性设置”****。
+若要查找此部分介绍的参数，可以在高级电子数据展示内依次单击“相关性”和“相关性设置”。
   
 - 必须向要定型文件的用户分配问题。
 
@@ -69,7 +69,7 @@ ms.locfileid: "46528138"
 
 - 谨慎定义和整理问题，因为这可能会影响相关性定型结果。
 
-设置参数后，审阅者/专家便可以开始在“相关性”**** 选项卡中定型文件。 
+设置参数后，审阅者/专家便可以开始在“相关性”选项卡中定型文件。 
   
 ## <a name="see-also"></a>另请参阅
 
