@@ -22,12 +22,12 @@ description: 使用 Microsoft 信息保护 (MIP) 中的敏感度标签对敏感�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624784"
+ms.locfileid: "49655574"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度标签
 
@@ -109,11 +109,11 @@ ms.locfileid: "49624784"
     
     如果启用此功能，则无法为组和网站配置保护设置。 此标签配置不会导致自动标记文档或电子邮件，而是通过控制对存储内容的容器的访问来保护内容。 这些设置包括隐私设置、外部用户访问权限和外部共享，以及来自非托管设备的访问。
 
-- **在 Office 应用中自动应用标签，或推荐标签。** 你可以选择要应用标签的敏感信息类型；标签可以自动应用，或者你可以提示用户应用推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
+- **在文件和电子邮件中自动应用标签，或推荐标签。** 选择如何识别要标记的敏感信息，系统可以自动应用标签，或者你可以提示用户应用你推荐的标签。 如果你推荐了标签，则在提示中将显示你选择的任何文本。 例如：
     
     ![提示分配所需的标签](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    有关创建或编辑敏感度标签时的“**Office 应用的自动标签**”设置的详细信息，请参阅 [将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)。
+    有关创建或编辑敏感度标签时的“**文件和电子邮件的自动标记**”设置的详细信息，请参阅[将敏感度标签自动应用于内容](apply-sensitivity-label-automatically.md)（对于 Office 应用）和[在 Azure Purview 中自动标记数据](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>标记范围
 
@@ -274,4 +274,3 @@ ms.locfileid: "49624784"
 ## <a name="deployment-guidance"></a>部署指南
 
 有关部署规划和指南（包括许可信息、权限、部署策略、支持的方案列表和最终用户文档），请参阅[敏感度标签入门](get-started-with-sensitivity-labels.md)。
-

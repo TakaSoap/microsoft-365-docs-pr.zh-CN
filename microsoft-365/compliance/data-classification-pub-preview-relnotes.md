@@ -14,16 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 description: 数据分类发行说明。
-ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2b9302cfa49f9445d3cbeb5109aef70e0c8d8f7f
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127137"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663037"
 ---
 # <a name="data-classification-release-notes"></a>数据分类发行说明
 
-请查看这些发行说明，以便获得最佳的数据分类体验。
 
 ## <a name="exchange-mailbox-count"></a>Exchange 邮箱计数
 
@@ -32,15 +31,15 @@ ms.locfileid: "45127137"
 
 ## <a name="rendering-of-encrypted-documents"></a>加密文档的呈现
 
-已加密的 SharePoint、Exchange 和 OneDrive 文件将不会在内容资源管理器中呈现。 这是一项敏感问题，需要在内容资源管理器中查看文件内容和将内容保持加密的需求之间取得平衡。 通过 ** 内容资源管理器列表查看器 ** 和 ** 内容资源管理器内容查看器 ** 角色组授予的权限，你将看到文件的列表视图、文件元数据和可用于通过 web 客户端访问内容的链接。
+已加密的 SharePoint、Exchange 和 OneDrive 文件不会在内容资源管理器中呈现。 这是一项敏感问题，需要在内容资源管理器中查看文件内容和将内容保持加密的需求之间取得平衡。 通过 **内容资源管理器列表查看器** 和 **内容资源管理器内容查看器** 角色组授予的权限，你将看到文件的列表视图、文件元数据和可用于通过 web 客户端访问内容的链接。
 
 ## <a name="supported-characters-in-retention-label-names-in-sharepoint-search"></a>SharePoint 搜索中保留标签名称的支持字符
 
-SharePoint 搜索不支持包含 `-` 或者 `_` 的保留标签名称。 例如 `Label-MIP` 和 `Label_MIP` 不受支持。 SharePoint 搜索支持敏感性标签名称和敏感信息类型名称中的这些字符。
+SharePoint 搜索不支持包含 `-` 或者 `_` 的保留标签名称。 例如，`Label-MIP` 和 `Label_MIP` 不受支持。 SharePoint 搜索支持敏感性标签名称和敏感信息类型名称中的这些字符。
 
 ## <a name="onedrive-remains-in-preview"></a>OneDrive 仍处于预览状态
 
-我们在预览计划中听取了有关 OneDrive 集成的宝贵反馈。 随着我们处理具体的细节，你可能会遇到不一致的数据/流。 我们将继续展示 OneDrive 预览版，直到所有修补程序均准备就绪。 非常感谢你在这方面的持续支持。
+感谢你在我们的预览计划期间提供有关 OneDrive 集成的宝贵反馈。 随着我们处理具体的细节，你可能会遇到不一致的数据/流。 我们将继续展示 OneDrive 预览版，直到所有修补程序均准备就绪。 非常感谢你的持续支持。
 
 
 ## <a name="see-also"></a>另请参阅

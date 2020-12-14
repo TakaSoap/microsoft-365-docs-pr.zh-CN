@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 229eb733af85ea5f450969c6d70709cfadcb8f06
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681770"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658669"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
-[自定义敏感信息类型](custom-sensitive-info-types.md)用于帮助标识敏感项目，以防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
+[自定义敏感信息类型](custom-sensitive-info-types.md)用于帮助标识敏感项目，以帮助防止它们被意外或不当地共享。 可基于以下内容定义自定义敏感信息类型：
 
 - 模式
-- 如*员工*、*徽章*或* ID 等关键字证据*
+- 如 *员工*、*徽章* 或 *ID 等关键字证据*
 - 字符近似特定模式的证据
 - 可信度
 
@@ -37,7 +37,7 @@ ms.locfileid: "48681770"
 
 但是，如果你需要使用精确数据值的自定义敏感信息类型（而非基于泛型模式的匹配项），该怎么办？ 通过基于精确数据匹配 (EDM) 的分类，你可以创建专门设计的自定义敏感信息类型：
 
-- 动态并且可刷新的
+- 动态且轻松地刷新
 - 更具可伸缩性
 - 导致更少的误报
 - 处理结构化敏感数据
@@ -102,25 +102,27 @@ ms.locfileid: "48681770"
       - 每个数据源最多 32 列（字段）
       - 最多 5 个列（字段）标记为可搜索
 
-2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为*PatientRecords.csv*，其中包含*PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
+2. 在 .csv 文件中构造敏感数据，使第一行包含用于基于 EDM 的分类的字段名称。 在 .csv 文件中，你可能拥有“ssn”、“生日”、“名字”、“姓氏”等字段名称。 列标题名称不能包含空格或下划线。 例如，本文中使用的示例 .csv 文件名为 *PatientRecords.csv*，其中包含 *PatientID*、*MRN*、*LastName*、*FirstName* 和 *SSN* 等列。
+
+3. 注意敏感数据字段的格式。 特别要注意的是，内容中可能包含逗号的字段（比如，包含”Seattle,WA”值的街道地址）在用 EDM 工具分析时，可能会被分析为两个单独的字段。 为了避免这种情况，你需要确保在敏感数据表中，用单引号或双引号将这些字段包围在内。 如果带逗号的字段同时也包含空格，你需要创建一个自定义的敏感信息类型，且它需要与对应的格式相匹配（比如，一个包含多字的字符串，带有逗号和空格）来确保在扫描文件时该字符串正确匹配。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
 
-3. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件**edm.xml**并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
+1. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml** 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
 
-      `\<Field name="" searchable=""/\>`（）。
+      `\<Field name="" searchable=""/\>`.
 
-      - 将列名称用于*字段名称*值。
+      - 将列名称用于 *字段名称* 值。
       - 将 *searchable="true"* 用于可搜索的字段，最多 5 个字段。 必须至少有一个字段可搜索。
 
-      例如，以下 XML 文件定义患者记录数据库的架构，其中五个字段指定为可搜索字段：*患者 ID*、*MRN*、*SSN*、*电话*和 *DOB*。
+      例如，以下 XML 文件定义患者记录数据库的架构，其中五个字段指定为可搜索字段：*患者 ID*、*MRN*、*SSN*、*电话* 和 *DOB*。
 
       （可复制、修改和使用我们的示例。）
 
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
             <DataStore name="PatientRecords" description="Schema for patient records" version="1">
-                  <Field name="PatientID" searchable="true" />
+                  <Field name="PatientID" searchable="true" caseInsensitive="true" ignoredDelimiters="-,/,*,#,^" />
                   <Field name="MRN" searchable="true" />
                   <Field name="FirstName" />
                   <Field name="LastName" />
@@ -132,6 +134,39 @@ ms.locfileid: "48681770"
             </DataStore>
       </EdmSchema>
       ```
+
+##### <a name="configurable-match-using-the-caseinsensitive-and-ignoreddelimiters-fields"></a>使用 caseInsensitive 和 ignoredDelimiters 字段的可配置匹配项
+
+以上 XML 示例使用了 `caseInsensitive` 和 `ignoredDelimiters` 字段。 
+
+当在架构定义中包括 ***caseInsensitive** _ 字段并将其设置为值 `true` 时，EDM 不会根据 `PatientID` 字段的大小写差异排除项目。 因此，EDM 会将 `PatientID` _ *FOO-1234** 和 **fOo-1234** 视为完全相同。
+
+当你包括 **_ignoredDelimiters_*_ 和支持的字符时，EDM 将忽略 `PatientID` 中的这些字符。因此，EDM 会将 `PatientID` _* FOO-1234** 和 `PatientID` **FOO#1234** 视为完全相同。 `ignoredDelimiters` 标志支持任何非字母数字字符，以下是一些示例：
+- \.
+- \-
+- \/
+- \_
+- \*
+- \^
+- \#
+- \!
+- \?
+- \[
+- \]
+- \{
+- \}
+- \\
+- \~
+- \; 
+
+- `ignoredDelimiters` 标志不支持：
+- 字符 0-9
+- A-Z
+- a-z
+- \"
+- \,
+
+在此示例中，如果同时使用 `caseInsensitive` 和 `ignoredDelimiters`，EDM 会将 **FOO-1234** 和 **fOo#1234** 视为完全相同，并将项目归类为患者记录敏感信息类型。 
 
 4. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
@@ -261,9 +296,12 @@ ms.locfileid: "48681770"
 
 #### <a name="editing-the-schema-for-edm-based-classification"></a>编辑基于 EDM 的分类的架构
 
-如果想要更改**edm.xml** 文件，例如更改要对基于 EDM 的分类使用的字段，请按照以下步骤操作：
+如果想要更改 **edm.xml** 文件，例如更改要对基于 EDM 的分类使用的字段，请按照以下步骤操作：
 
-1. 编辑 **edm.mxl** 文件（即本文的[定义架构](#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。
+> [!TIP]
+> 可更改 EDM 架构和数据文件以利用 **可配置匹配项**。 配置后，EDM 在对某个项目进行求值时将忽略大小写差异和某些分隔符。 这使你能够更轻松地定义 xml 架构和敏感数据文件。 若要了解详细信息，请参阅[修改精确数据匹配架构，以使用可配置匹配项](sit-modify-edm-schema-configurable-match.md)。
+
+1. 编辑 **edm.mxl** 文件（即本文的 [定义架构](#define-the-schema-for-your-database-of-sensitive-information)部分中讨论的文件）。
 
 2. 使用[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的步骤连接到安全与合规中心。
 
@@ -315,66 +353,6 @@ ms.locfileid: "48681770"
       > [!TIP]
       >  若想更改但不进行确认，请在步骤 2 中改用此 cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
 
-
-<!-- salt notes
-need two salting procedures, one for onestep from the externally facing and another for two step, on an internal machine then the upload from the external machine
-
-- create A  folder put the edmupload agent and, csv and salt file there, run all processes there
-- 
-- stuff you need to have first: DataStoreName, /DataFile name (csv file)  /Hashlocation
-
-- salt can be randomly generated by Microsoft or can be provided by the customer. If provided by the customer it must follow  format of 64 character, and can contain only letters or 0-9 characters.  Use a website to generate a valid salt value.
- 
-- can run EDMuploadagent.exe from PS or Windows cmd window . tested on Windows Server 2016 or Windows 10 and dot net version 4.6.2
-
-when defiuning the schema file the searchable fields must be either an out of box SIT or custom SIT, only 5 fields )column headings) can be searchable
-
-1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  
-2. data store schema must have already been uploaded
-3.  create hash first then do upload
-4. EdmUploadAgent.exe /CreateHash /DataFile (where the data file is ) E:\emd\test\data\schema32_1000000,csv /HashLocation  (where to store it) E:\edm\tat\hash this makes the salt file and the hash file as output
-5. next is upload EdmUploadAgent.exe /UploadHash /DataStoreName (found in the Schema file DataSore name="FOO" /HashFile (path to hash file locaztion and file name /HashLocation path to hash)  for example
-1.EdmUploadAgent/exe /UploadHash /DataStoreName schema321 /HashFile E:\edm\test\hash\schema32_10000000.EdmHash /HashLocation E:\edm\test\hash  -this one  uses MSFT generated salt, so no need to provide
-
-Salt is an optional parameter so if yo uwant to use a custom salt add /salt and the salt value if salt file not copied to the outbound machine 
-
-OR copy both files hash and salt to the same directory and the commmand will get both
-
-
-OR do it in single step hash, salt ulopad
-
-!! once they download the updated upload agent they will always have SALT, there is no going back.
-
-
-all in one step: EdmUploadAgent.exe /UploadData /DataStoreName schema321 /DataFile E:\edm\test\data\schema32_10000.csv /HashLocation E:\edm\test\hash
-
-tshooting/check status cmd
-
-
-
-Once it gets to completed the admin can start using it in the custom SIT
-
-they have to get their own custom SALT
-
-just copy SALT over in a secure fashion
-
-
-
-
-
-
-
-
-
-
-1.
-6.
-7.
-1.  
-
-
- -->
-
 ### <a name="part-2-hash-and-upload-the-sensitive-data"></a>第 2 部分：为敏感数据创建哈希并上传
 
 在此阶段，你将设置自定义安全组和用户帐户，并设置 EDM 上传代理工具。 然后，使用此工具为敏感数据创建带随机混淆值的哈希并上传。
@@ -397,7 +375,7 @@ just copy SALT over in a secure fashion
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 作为全局管理员，使用相应的[订阅链接](#portal-links-for-your-subscription)转到管理中心并[创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
+1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -408,11 +386,21 @@ just copy SALT over in a secure fashion
 >[!NOTE]
 > 在开始此过程之前，请确保你是 **EDM\_DataUploaders** 安全组的成员。
 
+> [!TIP]
+> 或者，可在上传前对 csv 文件运行验证，方法是运行：
+>
+>`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+>
+>有关 EdmUploadAgent.exe 支持的所有参数的详细信息，请运行
+>
+> `EdmUploadAgent.exe /?`
+
+
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>按订阅类型链接到 EDM 上传代理
 
-- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
-- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
-- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+- [商用 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639) - 商业客户应使用此文件
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521) - 这是专为高安全性政府云订阅者提供的
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807) - 这是专为美国国防部云客户提供的
 
 1. 创建 EDMUploadAgent 要使用的工作目录。 例如，**C:\EDM\Data**。 将 **PatientRecords .csv** 文件放入该目录中。
 
@@ -434,9 +422,9 @@ just copy SALT over in a secure fashion
 
 4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**
+示例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 这会自动将随机生成的随机混淆值添加到哈希，以实现更高的安全性。 或者，如果你想要使用自己的随机混淆值，请将 **/Salt <saltvalue>** 值添加到命令中。 该值的长度必须为 64 个字符，并且只能包含 a-z 的字符和 0-9 的数字。
 
@@ -454,11 +442,11 @@ just copy SALT over in a secure fashion
 
 1. 在命令提示符窗口中运行以下命令：
 
-`EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
+`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
 例如：
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**
+> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
 如果没有指定“**/Salt <saltvalue>**”选项，这将会输出具有以下扩展名的哈希文件和随机混淆值文件：
 - .EdmHash
@@ -522,11 +510,14 @@ $user = "$env:USERDOMAIN\\$env:USERNAME"
 $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext"
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation + ' /Schema ' + $schemaFile
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath
@@ -555,12 +546,16 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
+$schemaext = '.xml'
 \# Assuming CSV file name is same as data store name
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
+\# Assuming Schema file name is same as data store name
+$schemaFile = "$fileLocation\\$dataStoreName$schemaext "
+
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation
+$createHashArgs = '/CreateHash' + ' /DataFile ' + $dataFile + ' /HashLocation ' + $hashLocation + ' /Schema ' + $schemaFile
 $uploadHashArgs = '/UploadHash /DataStoreName ' + $dataStoreName + ' /HashFile ' + $hashFile
 \# Set up actions associated with the task
 $actions = @()
@@ -579,6 +574,7 @@ $password=\[Runtime.InteropServices.Marshal\]::PtrToStringAuto(\[Runtime.Interop
 \# Register the scheduled task
 $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
+
 ```
 
 ### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a>第 3 部分：将基于 EDM 的分类与 Microsoft 云服务一起使用
@@ -599,9 +595,9 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 1. 使用相应的[订阅链接](#portal-links-for-your-subscription)转到安全与合规中心。
 
-2. 选择**数据丢失防护** \> **策略**。
+2. 选择 **数据丢失防护** \> **策略**。
 
-3. 选择**创建策略** \> **自定义** \> "**下一步**"。
+3. 选择 **创建策略** \> **自定义** \> "**下一步**"。
 
 4. 在“**命名策略**”选项卡上，指定名称和说明，然后选择“**下一步**”。
 
@@ -640,4 +636,5 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP 策略概述](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
+- [修改精确数据匹配架构，以使用可配置匹配项](sit-modify-edm-schema-configurable-match.md)
 

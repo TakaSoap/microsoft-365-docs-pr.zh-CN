@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 比较 Microsoft 365 加密选项，其中包括 Office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM)，并了解传输层安全性 (TLS)。
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580705"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663017"
 ---
 # <a name="email-encryption"></a>电子邮件加密
 
-本文比较了 Microsoft 365 中的加密选项，其中包括 Office 365 邮件加密 (OME)、S/MIME、信息权限管理 (IRM)，并介绍了传输层安全性 (TLS)。
+本文比较了 Microsoft 365 中的加密选项，其中包括 Office 邮件加密 (OME)、S/MIME、信息权限管理 (IRM)，并介绍了传输层安全性 (TLS)。
   
 Microsoft 365 提供了多个加密选项，可帮助你满足电子邮件安全性的业务需求。 本文介绍了在 Office 365 中加密电子邮件的三种方法。 如果想要了解有关 Office 365 中所有安全功能的详细信息，请访问 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介绍了三类可供 Microsoft 365 管理员使用的加密方式，以帮助其保护 Office 365 中的电子邮件：
   
@@ -38,7 +38,7 @@ Microsoft 365 提供了多个加密选项，可帮助你满足电子邮件安全
 
 - 信息权限管理 (IRM)。
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>电子邮件加密以及 Microsoft 365 如何使用该功能
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>什么是电子邮件加密以及 Microsoft 365 如何使用它？
 
 加密是将信息进行编码以便只有经过授权的收件人可以解码和使用信息的过程。 Microsoft 365 使用两种方式加密：服务中和客户控制。 在服务中，默认情况下在 Microsoft 365 中使用加密；无需进行任何配置。 例如，Microsoft 365 使用传输层安全性 (TLS) 加密两个服务器之间的连接或会话。 
   
@@ -68,16 +68,11 @@ Microsoft 365 提供了多个加密选项，可帮助你满足电子邮件安全
 |建议和示例场景|当你想要将敏感业务信息发送到组织之外的人员时，无论他们是消费者还是其他企业，我们建议使用 OME。 例如：  <br/>  银行员工向客户发送信用卡对帐单  <br/>  诊所向患者发送病历  <br/>  律师向其他律师发送机密的法律信息|当您想要同时应用用法限制和加密时，我们建议使用 IRM。例如：  <br/>  经理在将有关新产品的机密详细信息发送至其团队时可应用“请勿转发”选项。  <br/>  高级管理人员需要与另一家公司共享投标方案，其中包括来自使用 Office 365 的合作伙伴的附件，并要求保护该电子邮件及其附件。|我们建议在你的组织或收件人的组织需要真正的对等加密时使用 S/MIME。  <br/>  S/MIME 最常用于以下场景：  <br/>  政府机构之间的通信  <br/>  企业与政府机构之间的通信|
 ||
 
-如果同时使用 [Azure 信息保护](https://docs.microsoft.com/microsoft-365/compliance/protect-information)和电子邮件加密来保护数据，请考虑以下事项：
-- 可将敏感度标签与 OME 和 IRM 加密配合使用。 有关详细信息，请参阅[通过敏感度标签应用加密，从而限制对内容的访问](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied)。
-- 可将敏感度标签应用于使用 S/MIME 进行数字签名的电子邮件。
-- 无法将敏感度标签应用于使用 S/MIME 进行加密的电子邮件，因为受端到端加密保护的邮件并非由策略进行处理。
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>可供我的 Microsoft 365 订阅使用的加密选项
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>可供我的 Microsoft 365 订阅使用的加密选项有哪些？
 
 有关 Microsoft 365 订阅的电子邮件加密选项的信息，请参阅 [Exchange Online 服务说明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)。 在此处，您可以查看有关以下加密功能的信息：
-
-- Azure RMS，包括 IRM 功能和新的 OME 功能
+  
+- Azure RMS，包括 IRM 功能和 OME 功能
 
 - S/MIME
 

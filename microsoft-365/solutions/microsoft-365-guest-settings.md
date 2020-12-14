@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 了解 Microsoft 365 中可影响与组织外部人员的共享的来宾共享设置。
-ms.openlocfilehash: 0c734d1046a1c2d180c8102187b8cf07de7dc4dc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 997ce1375660f1a0e87d0babe647caada09e9e93
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613040"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663651"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 来宾共享设置参考
 
@@ -208,6 +208,8 @@ Microsoft 365 管理中心具有用于共享和 Microsoft 365 组的组织级别
 ### <a name="site-sharing"></a>网站共享
 
 可为 SharePoint 中的每个网站设置来宾共享权限。 此设置适用于网站共享以及文件和文件夹共享。 （“*任何人*”共享不可用于网站共享。 如果你选择“**任何人**”，则用户可以使用“*任何人*”链接来共享文件和文件夹，并且网站本身可以与新来宾和现有来宾共享。）
+
+如果网站应用了敏感度标签，则该标签可能会控制外部共享设置。 有关详细信息，请参阅[使用敏感度标签保护 Microsoft Teams、Microsoft 365 组和 SharePoint 网站中的内容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 **导航：** SharePoint 管理中心 > 活动站点 > 选择站点 >“策略”选项卡 > 编辑外部共享
 
