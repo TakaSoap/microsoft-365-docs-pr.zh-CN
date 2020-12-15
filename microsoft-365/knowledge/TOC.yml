@@ -1,6 +1,6 @@
-- name: 知识管理入门
+- name: 知识库管理入门
   items:
-    - name: 知识管理概述
+    - name: 信息管理概述
       href: knowledge-management-overview.md
     - name: 主题中心概述
       href: topic-center-overview.md
@@ -8,9 +8,19 @@
       href: work-with-topics.md
     - name: 向用户授予对主题中心的权限
       href: give-user-permissions-to-the-topic-center.md
-- name: 开始使用安装程序
+- name: 设置和管理
   items:
-    - name: 设置知识管理
+    - name: 主题安全性
+      href: topic-experiences-security-privacy.md
+    - name: 规划主题体验
+      href: plan-topic-experiences.md
+    - name: 设置主题体验
       href: set-up-topic-experiences.md
-    - name: 管理您的知识管理网络
+    - name: 管理主题发现
       href: topic-experiences-discovery.md
+    - name: 管理主题可见性
+      href: topic-experiences-knowledge-rules.md
+    - name: 管理主题权限
+      href: topic-experiences-user-permissions.md
+    - name: 更改主题中心名称
+      href: topic-experiences-administration.md
