@@ -60,7 +60,7 @@ ms.locfileid: "48897289"
 
 有关所含内容的详细信息，请参阅 [Microsoft 365 商业高级版](https://www.microsoft.com/microsoft-365/business)。
 
-<a name="get-started"></a>开始行动
+<a name="get-started"></a>入门
 --------------------------
 
 请按照以下步骤开始操作：

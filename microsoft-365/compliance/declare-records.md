@@ -28,7 +28,7 @@ ms.locfileid: "48830601"
 
 >*[Microsoft 365 安全性与合规性许可指南](https://aka.ms/ComplianceSD)。*
 
-如需将文档和电子邮件声明为 [记录](records-management.md#records)，请使用 [保留标签](retention.md#retention-labels) 将内容标记为 **记录** 或 **合规性记录** 。
+如需将文档和电子邮件声明为 [记录](records-management.md#records)，请使用 [保留标签](retention.md#retention-labels) 将内容标记为 **记录** 或 **合规性记录**。
 
 如果不确定要使用记录还是合规性记录，请参阅[允许或禁止行为的对比限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 如果需要使用合规性记录，必须首先运行 PowerShell 命令，如下一节中所述。
 
@@ -37,7 +37,7 @@ ms.locfileid: "48830601"
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>如何显示将内容标记为合规性记录的选项
 
 >[!NOTE] 
-> 以下过程是可审核的操作，在审核日志的 [保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)部分中，记录 **为保留标签启用的合规性记录选项** 。
+> 以下过程是可审核的操作，在审核日志的 [保留策略和保留标签活动](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)部分中，记录 **为保留标签启用的合规性记录选项**。
 
 默认情况下，保留标签向导中不显示用于将内容标记为合规性记录的保留标签选项。 如需显示此选项，须首先运行 PowerShell 命令：
 
