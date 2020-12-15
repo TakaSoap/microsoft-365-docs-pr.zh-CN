@@ -15,98 +15,98 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
-description: 管理员可以了解如何使用隔离标记来控制用户能够对其隔离邮件执行的操作。
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: 管理员可以了解如何使用隔离标记来控制用户可以对隔离邮件执行哪些操作。
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616004"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683063"
 ---
 # <a name="quarantine-tags"></a>隔离标记
 
 > [!NOTE]
-> 本文中所述的功能目前处于预览阶段，不可用于所有人，并且可能会发生更改。
+> 本文中介绍的功能目前处于预览阶段，并非对所有人都可用，并且可能会更改。
 
-Exchange Online Protection (EOP 中的隔离标记) 允许管理员根据邮件到达隔离的方式来控制哪些用户能够对隔离邮件执行的操作。
+Exchange Online Protection (EOP) 中的隔离标记允许管理员根据邮件如何到达隔离区来控制用户能够对隔离邮件执行哪些操作。
 
-EOP 传统上允许或阻止了 [隔离](find-and-release-quarantined-messages-as-a-user.md) 和 [最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)中的邮件的特定级别的交互。 例如，最终用户可以查看和释放反垃圾邮件筛选隔离为垃圾邮件或批量的邮件，但不能查看或释放被隔离为高可信度网络钓鱼的邮件。
+EOP 在传统上允许或阻止隔离邮件和最终用户垃圾邮件通知中的邮件的某些[](find-and-release-quarantined-messages-as-a-user.md)[交互级别](use-spam-notifications-to-release-and-report-quarantined-messages.md)。 例如，最终用户可以查看并释放被反垃圾邮件筛选作为垃圾邮件或批量隔离的邮件，但他们无法查看或释放被隔离为高可信度网络钓鱼的邮件。
 
-对于 [受支持的保护功能](#step-2-assign-a-quarantine-tag-to-supported-features)，隔离标记指定了允许哪些用户在最终用户的垃圾邮件通知邮件以及隔离邮件的隔离邮件中执行的操作 (用户是其收件人) 的邮件。 将自动分配默认隔离标记，以针对隔离邮件强制实施最终用户的历史功能。 或者，您可以创建自定义隔离标记并将其分配给最终用户，以允许或阻止最终用户对隔离邮件执行特定操作。
+对于 [受支持的](#step-2-assign-a-quarantine-tag-to-supported-features)保护功能，隔离标记指定允许用户在最终用户垃圾邮件通知邮件中以及用户是收件人收件人的 (邮件的隔离邮件中) 。 自动分配默认隔离标记，以对隔离邮件的最终用户强制实施历史功能。 或者，可以创建和分配自定义隔离标记，以允许或阻止最终用户对隔离邮件执行特定操作。
 
 各个权限组合到以下预设权限组中：
 
 - 禁止访问
 - 受限访问
-- 完全访问
+- 完全访问权限
 
-下表介绍了可用的个人权限以及预置权限组中包括或未包括的内容：
+下表介绍了可用的单个权限以及预设权限组中包含或不包含哪些权限：
 
-|权限|禁止访问|受限访问|完全访问|
+|权限|禁止访问|受限访问|完全访问权限|
 |---|:---:|:---:|:---:|
-|**允许发件人** (_PermissionToAllowSender_) |||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**阻止发件人** (_PermissionToBlockSender_) ||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**删除** (_PermissionToDelete_) ||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-| (_PermissionToPreview_) **预览**||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允许收件人释放来自隔离** (_PermissionToRelease_ 的邮件) |||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允许收件人请求从隔离区发布邮件** (_PermissionToRequestRelease_) ||![复选标记](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**允许发件人 (** _PermissionToAllowSender)_|||![复选标记](../../media/checkmark.png)|
+|**阻止发件人 (** _PermissionToBlockSender)_||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|**删除** (_PermissionToDelete_) ||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|**预览** (_PermissionToPreview)_||![复选标记](../../media/checkmark.png)|![复选标记](../../media/checkmark.png)|
+|**允许收件人将邮件从隔离邮箱 (** _PermissionToRelease_) |||![复选标记](../../media/checkmark.png)|
+|**允许收件人请求从隔离邮箱** 释放 (_PermissionToRequestRelease_) ||![复选标记](../../media/checkmark.png)||
 |
 
-如果您不喜欢预设权限组中的默认权限，则可以在创建或修改自定义隔离标记时使用自定义权限。 有关每个权限执行的操作的详细信息，请参阅本文后面的 [隔离标记权限详细信息](#quarantine-tag-permission-details) 部分。
+如果不喜欢预设权限组中的默认权限，可以在创建或修改自定义隔离标记时使用自定义权限。 有关每个权限执行哪些操作的详细信息，请参阅本文稍后的"隔离 [标记](#quarantine-tag-permission-details) 权限详细信息"部分。
 
-在使用 Exchange Online 邮箱的 Microsoft 365 组织的 "安全 & 合规中心" 或 "PowerShell (Exchange Online PowerShell" 中创建和分配隔离标记;EOP 组织中的独立 EOP PowerShell，不) Exchange Online 邮箱。
+在安全与合规中心或 PowerShell &为具有 Exchange Online 邮箱的 Microsoft 365 (Exchange Online PowerShell 创建和分配隔离标记;EOP 组织中没有 Exchange Online 邮箱的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **隔离标记** " 页，请打开 <https://protection.office.com/quarantineTags> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到"隔离 **标记"** 页，请打开 <https://protection.office.com/quarantineTags> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 若要查看、创建、修改或删除隔离标记，您需要是 [安全 & 合规性中心](permissions-in-the-security-and-compliance-center.md)中的 "**组织管理**" 或 "**安全管理员**" 角色的成员。
+- 若要查看、创建、修改或删除隔离标记，你需要是安全与合规中心内组织管理或安全管理员&[的成员](permissions-in-the-security-and-compliance-center.md)。 
 
-## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>步骤1：在安全 & 合规中心中创建隔离标记
+## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>步骤 1：在安全与合规中心&隔离标记
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** "，然后选择 " **隔离标记**"。
+1. 在安全&，转到 **"威胁管理** 策略 \> "，然后选择"**隔离"标记**。
 
-2. 在 " **隔离标记** " 页上，选择 " **添加自定义标记**"。
+2. 在"**隔离标记"** 页上，选择 **"添加自定义标记"。**
 
-3. 将打开 " **新建标记** " 向导。 在 " **标记名称** " 页上，在 " **标记名称** " 字段中输入一个简短但唯一的名称。 在后面的步骤中，您需要确定并按名称选择标记。 完成后，单击“下一步”。
+3. 将 **打开"新建标记** "向导。 在 **"标记名称** "页上，在"标记名称"字段中输入简短但 **唯一** 的名称。 你需要在即将推出的步骤中按名称标识和选择标记。 完成后，单击“下一步”。
 
-4. 在 " **收件人邮件访问** " 页上，选择下列值之一：
+4. 在 **"收件人邮件访问** "页上，选择下列值之一：
    - **禁止访问**
    - **受限访问**
-   - **完全访问**
+   - **完全访问权限**
 
-   本文前面将介绍这些权限组中包含的各个权限。
+   本文前面介绍了这些权限组中包含的单个权限。
 
-   若要指定自定义权限，请选择 " **设置特定访问权限 (高级)** "，并配置以下设置：
+   若要指定自定义权限，请选择"在高级 (**设置**) 并配置以下设置：
 
-     - **选择 "释放操作" 首选项**：选择下列值之一：
+     - **选择释放操作首选项**：选择下列值之一：
        - **无发布操作**：这是默认值。
-       - **允许收件人从隔离区中释放邮件**
-       - **允许收件人请求从隔离区中释放邮件**
+       - **允许收件人从隔离区释放邮件**
+       - **允许收件人请求从隔离区释放邮件**
 
-     - **选择 "其他操作收件人可对隔离邮件执行操作**"：选择以下任何值：
+     - **选择收件人对隔离邮件可以执行的其他** 操作：选择以下一些、全部或无以下值：
        - **删除**
        - **预览**
        - **允许发件人**
        - **阻止发件人**
 
-   这些权限以及它们对隔离邮件和最终用户垃圾邮件通知中的影响将在本文后面的 [隔离标记权限详细信息](#quarantine-tag-permission-details) 部分中进行介绍。
+   这些权限及其对隔离邮件和最终用户垃圾邮件通知的影响在本文稍后的"隔离 [标记](#quarantine-tag-permission-details) 权限详细信息"部分进行介绍。
 
    完成后，单击“下一步”。
 
-5. 在出现的 **摘要** 页上，查看您的设置。 您可以在每个设置上单击 " **编辑** " 以修改它。
+5. 在 **出现的"摘要** "页上，查看设置。 可以单击 **每个设置** 上的"编辑"来修改它。
 
-   完成后，请单击 " **提交**"。
+   完成后，单击"提交 **"。**
 
-6. 在出现的确认页上单击 " **完成** "。
+6. 在 **出现的** 确认页面上单击"完成"。
 
-现在您已准备好将隔离标记分配给隔离功能，如 " [步骤 2](#step-2-assign-a-quarantine-tag-to-supported-features) " 一节中所述。
+现在，您已准备好将隔离标记分配给隔离功能，如步骤 [2](#step-2-assign-a-quarantine-tag-to-supported-features) 中所述。
 
 ### <a name="create-quarantine-tags-in-powershell"></a>在 PowerShell 中创建隔离标记
 
-如果您更愿意使用 PowerShell 创建隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，并使用 **QuarantineTag** cmdlet。 有两种不同的方法可供选择：
+如果你想要使用 PowerShell 创建隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 并使用 **New-QuarantineTag** cmdlet。 有两种不同的方法可供选择：
 
 - 使用 _EndUserQuarantinePermissionsValue_ 参数。
 - 使用 _EndUserQuarantinePermissions_ 参数。
@@ -121,13 +121,13 @@ EOP 传统上允许或阻止了 [隔离](find-and-release-quarantined-messages-a
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissionsValue <0 to 236>
 ```
 
-_EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换而来的十进制值。 二进制值对应于可用的最终用户隔离权限，以特定顺序排列。 对于每个权限，值1等于 True，值0等于 False。
+_EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换的十进制值。 二进制值对应于按特定顺序可用的最终用户隔离权限。 对于每个权限，值 1 等于 True，值 0 等于 False。
 
-下表介绍了预置权限组中每个单独权限的必需顺序和值：
+下表介绍了预设权限组中各个权限的必需顺序和值：
 
 ****
 
-|权限|禁止访问|受限访问|完全访问|
+|权限|禁止访问|受限访问|完全访问权限|
 |---|:---:|:---:|:---:|
 |PermissionToAllowSender|0|0|1 |
 |PermissionToBlockSender|0|1 |1 |
@@ -140,31 +140,31 @@ _EndUserQuarantinePermissionsValue_ 参数使用从二进制值转换而来的�
 |二进制值|00000000|01101010|11101100|
 |要使用的十进制值|0|106|236|
 
-<sup>\*</sup> 目前，此值始终为0。 对于 PermissionToViewHeader，值0不会在隔离邮件的详细信息中隐藏 " **查看邮件标题** " 按钮 (该按钮始终) 可用。
+<sup>\*</sup> 目前，此值始终为 0。 对于 PermissionToViewHeader，值 0 不会在隔离邮件的详细信息中隐藏"查看邮件头"按钮 (该按钮始终可用) 。
 
-<sup>\*\*</sup> 请勿将这两个值都设置为1。 将1设置为1，将另一个设置为0，或将两者都设置为0。
+<sup>\*\*</sup> 不要同时将这两个值都设置为 1。 将一个设置为 1，另一个设置为 0，或同时设置为 0。
 
-本示例创建一个新的隔离标记名称 NoAccess，该名称分配了上表中描述的 "无访问权限"。
+此示例创建一个新的隔离标记名称 NoAccess，该名称分配"无访问权限"权限，如上表所述。
 
 ```powershell
 New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 ```
 
-对于受限制的访问权限，请使用值106。 若要获取完全访问权限，请使用值236。
+对于受限访问权限，请使用值 106。 对于完全访问权限，请使用值 236。
 
-对于自定义权限，请使用上表获取与所需权限对应的二进制值。 将二进制值转换为十进制值，并使用 _EndUserQuarantinePermissionsValue_ 参数的十进制值。
+对于自定义权限，使用上表获取与所需的权限对应的二进制值。 将二进制值转换为十进制值，并使用 _EndUserQuarantinePermissionsValue_ 参数的十进制值。
 
-有关语法和参数的详细信息，请参阅 [QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)。
+有关语法和参数的详细信息，请参阅[New-QuarantineTag。](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)
 
 #### <a name="use-the-enduserquarantinepermissions-parameter"></a>使用 EndUserQuarantinePermissions 参数
 
 若要使用 _EndUserQuarantinePermissionsValue_ 参数创建隔离标记，请执行以下步骤：
 
-A. 使用 **QuarantinePermissions** cmdlet 将隔离权限对象存储在变量中。
+A. 使用 **New-QuarantinePermissions** cmdlet 将隔离权限对象存储在变量中。
 
 <p>
 
-B. 将变量用作 **QuarantineTag** 命令中的 _EndUserQuarantinePermissions_ 值。
+B. 在 **New-QuarantineTag** 命令中将变量用作 _EndUserQuarantinePermissions_ 值。
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>步骤 A：将隔离权限对象存储在变量中
 
@@ -174,11 +174,11 @@ B. 将变量用作 **QuarantineTag** 命令中的 _EndUserQuarantinePermissions_
 $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $False>] [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
 ```
 
-任何未使用的参数的默认值为 `$false` ，因此您只需要使用要将值设置为的参数 `$true` 。
+任何未使用的参数的默认值都是，因此只需使用要设置值 `$false` 的参数 `$true` 。
 
-下面的示例展示了如何创建与预置权限组对应的权限对象：
+以下示例显示如何创建与预设权限组对应的权限对象：
 
-- **无访问权限**：
+- **无法访问**：
 
   ```powershell
   $NoAccess = New-QuarantinePermissions
@@ -190,68 +190,68 @@ $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $
   $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
   ```
 
-- **完全访问**：
+- **完全访问权限**：
 
   ```powershell
   $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
   ```
 
-若要查看已设置的值，请将变量名称作为命令运行 (例如，运行命令 `$NoAccess`) 。
+To see the values that you've set， run the variable name as a command (for example， run the command `$NoAccess`) .
 
-对于自定义权限，请勿将 _PermissionToRelease_ 和 _PermissionToRequestRelease_ 参数都设置为 `$true` 。 将一个设置为，将另一个设置为 `$true` `$false` ，或将两者都保留 `$false` 。
+对于自定义权限，不要同时将 _PermissionToRelease_ 和 _PermissionToRequestRelease_ 参数设置为 `$true` 。 将一个 `$true` 设置为另一个，另一个保留 `$false` 为，或同时保留为 `$false` 。
 
-您还可以在创建现有的权限对象变量之后，在使用 **QuarantinePermissions** cmdlet 之前对其进行修改。
+您还可以在使用 **Set-QuarantinePermissions** cmdlet 创建现有权限对象变量之后使用该变量之前对其进行修改。
 
-有关语法和参数的详细信息，请参阅 [QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions) 和 [QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions)。
+有关语法和参数的详细信息，请参阅[New-QuarantinePermissions](https://docs.microsoft.com/powershell/module/exchange/new-quarantinepermissions)和[Set-QuarantinePermissions。](https://docs.microsoft.com/powershell/module/exchange/set-quarantinepermissions)
 
-##### <a name="step-b-use-the-variable-in-the-new-quarantinetag-command"></a>步骤 B：在 New-QuarantineTag 命令中使用变量
+##### <a name="step-b-use-the-variable-in-the-new-quarantinetag-command"></a>步骤 B：在命令中New-QuarantineTag变量
 
-在变量中创建并存储了权限对象后，在下面的 **QuarantineTag** 命令中使用 _EndUserQuarantinePermission_ 参数值的变量：
+在变量中创建和存储权限对象后，请使用以下 **New-QuarantineTag** 命令中的 _EndUserQuarantinePermission_ 参数值变量：
 
 ```powershell
 New-QuarantineTag -Name "<UniqueName>" -EndUserQuarantinePermissions $<VariableName>
 ```
 
-本示例使用 `$LimitedAccess` 在上一步中描述和创建的权限对象创建一个名为 LimitedAccess 的新的隔离标记。
+此示例使用上一步中介绍和创建的权限对象创建名为 LimitedAccess 的新 `$LimitedAccess` 隔离标记。
 
 ```powershell
 New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAccess
 ```
 
-有关语法和参数的详细信息，请参阅 [QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)。
+有关语法和参数的详细信息，请参阅[New-QuarantineTag。](https://docs.microsoft.com/powershell/module/exchange/new-quarantinetag)
 
-## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>步骤2：将隔离标记分配给支持的功能
+## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>步骤 2：向支持的功能分配隔离标记
 
-在 (自动或作为可配置动作) 隔离邮件或文件的 _受支持_ 的保护功能中，可以为可用的隔离操作分配隔离标记。 下表介绍了隔离邮件的功能和隔离标记的可用性：
+在 _可_ 自动隔离邮件或文件 (或作为可配置操作) 功能中，可以将隔离标记分配给可用的隔离操作。 下表介绍了隔离邮件的功能和隔离标记的可用性：
 
 ****
 
-|功能|是否支持隔离标记？|使用的默认隔离标记|
+|功能|支持隔离标记？|使用的默认隔离标记|
 |---|:---:|---|
-|[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**垃圾邮件** (_SpamAction_) </li><li>**高可信度垃圾邮件** (_HighConfidenceSpamAction_) </li><li>**网络钓鱼电子邮件** (_PhishSpamAction_) </li><li>**高可信度网络钓鱼电子邮件** (_HighConfidencePhishAction_) </li><li>**批量电子邮件** (_BulkSpamAction_) </li></ul>|是|<ul><li>DefaultSpamTag (完全访问) </li><li>DefaultHighConfSpamTag (完全访问) </li><li>DefaultPhishTag (完全访问) </li><li>DefaultHighConfPhishTag (无访问权限) </li><li>DefaultBulkTag (完全访问) </li></ul>
-|反网络钓鱼策略： <ul><li> (_AuthenticationFailAction_) 的 [欺骗性智能保护](set-up-anti-phishing-policies.md#spoof-settings)</li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果模拟用户发送电子邮件** (_TargetedUserProtectionAction_) </li><li>**如果由模拟域发送的电子邮件** (_TargetedDomainProtectionAction_) </li><li>**邮箱智能** \>**如果模拟用户发送电子邮件** (_MailboxIntelligenceProtectionAction_) </li></ul></li></ul></ul>|否|不适用|
+|[反垃圾邮件策略](configure-your-spam-filter-policies.md)： <ul><li>**Spam** (_SpamAction_) </li><li>**高可信度垃圾邮件 (** _HighConfidenceSpamAction_) </li><li> _PhishSpamAction_ (网络钓鱼) </li><li>**高可信度网络钓鱼电子邮件 (** _HighConfidencePhishAction_) </li><li>**BulkSpamAction** (_群_ 发) </li></ul>|是|<ul><li>DefaultSpamTag (完全访问权限) </li><li>DefaultHighConfSpamTag (完全访问权限) </li><li>DefaultPhishTag (完全访问权限) </li><li>DefaultHighConfPhishTag (无法访问) </li><li>DefaultBulkTag (完全访问权限) </li></ul>
+|防钓鱼策略： <ul><li>[AuthenticationFailAction](set-up-anti-phishing-policies.md#spoof-settings) (_欺骗智能_) </li><li>[模拟保护](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果电子邮件是由模拟用户 (** _TargetedUserProtectionAction_) </li><li>**如果电子邮件是由模拟域 (** _TargetedDomainProtectionAction_) </li><li>**邮箱智能** \>**如果电子邮件是由模拟用户 (** _MailboxIntelligenceProtectionAction_) </li></ul></li></ul></ul>|否|不适用|
 |[反恶意软件策略](configure-anti-malware-policies.md)：始终隔离所有检测到的邮件。|否|不适用|
 |[适用于 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)|否|不适用|
-|[邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也称为传输规则) 与操作：将 **邮件传递到托管隔离** (_隔离_) 。|否|不适用|
+|[邮件流规则](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (操作) 传输规则：将邮件发送到托管隔离邮箱 (_隔离_) 。 |否|不适用|
 |
 
-<sup>\*</sup> 模拟保护设置仅适用于 Microsoft Defender for Office 365 中的反网络钓鱼策略。
+<sup>\*</sup> 模拟保护设置仅在 Microsoft Defender for Office 365 中的防钓鱼策略中可用。
 
-如果你对由默认隔离标记提供的最终用户权限感到满意，则无需执行任何操作。 如果要自定义最终用户功能 (可用按钮) 在最终用户垃圾邮件通知或隔离邮件的详细信息中，则可以分配自定义隔离标记。
+如果您对默认隔离标记提供的最终用户权限满意，则无需执行任何操作。 如果要自定义最终用户功能 (最终用户垃圾邮件) 或隔离邮件详细信息中的可用按钮，可以分配自定义隔离标记。
 
-### <a name="assign-quarantine-tags-in-anti-spam-policies-in-the-security--compliance-center"></a>在安全 & 合规性中心中的反垃圾邮件策略中分配隔离标记
+### <a name="assign-quarantine-tags-in-anti-spam-policies-in-the-security--compliance-center"></a>在安全与合规中心的反垃圾邮件策略中&标记
 
-有关创建和修改反垃圾邮件策略的完整说明，请参阅在 [EOP 中配置反垃圾邮件策略](configure-your-spam-filter-policies.md)。
+有关创建和修改反垃圾邮件策略的完整说明在 [EOP 中的"配置反垃圾邮件策略"中进行了介绍](configure-your-spam-filter-policies.md)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略**"， \> 然后选择 " **反垃圾邮件**"。 或者，打开 <https://protection.office.com/antispam> 。
+1. 在安全&，转到 **"威胁管理** 策略 \>  \> "，然后选择 **"反垃圾邮件"。** 或者，打开 <https://protection.office.com/antispam> 。
 
 2. 查找并选择要编辑的现有反垃圾邮件策略，或创建新的反垃圾邮件策略。
 
-3. 在 "策略详细信息" 浮出控件中，展开 " **垃圾邮件和批量操作** " 部分。
+3. 在策略详细信息飞出中，展开" **垃圾邮件和批量操作"** 部分。
 
-4. 如果已为可用垃圾邮件筛选判定的操作选择了 " **隔离邮件** "，则可以使用 " **应用隔离策略标记** " 框来选择该判定的隔离标记。
+4. 如果选择了"隔离邮件"以执行可用垃圾邮件筛选裁定的操作，则"应用隔离策略标记"框可供你选择该裁定的隔离标记。
 
-   **注意**：创建新策略时，垃圾邮件筛选判定的空隔离标记值表示使用该判定的默认隔离标记。 当您随后编辑策略时，空值将被实际的默认隔离标记名称替换，如上表中所述。
+   **注意**：创建新策略时，垃圾邮件筛选裁定的空白隔离标记值指示已使用该裁定的默认隔离标记。 稍后编辑策略时，空白值将替换为实际的默认隔离标记名称，如上表所述。
 
    ![反垃圾邮件策略中的隔离标记选择](../../media/quarantine-tags-in-anti-spam-policies.png)
 
@@ -259,7 +259,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾邮件策略中分配隔离标记
 
-如果您希望使用 PowerShell 在反垃圾邮件策略中分配隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，并使用以下语法：
+如果希望使用 PowerShell 在反垃圾邮件策略中分配隔离标记，请连接到 Exchange Online PowerShell 或 Exchange Online Protection PowerShell，并使用以下语法：
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -267,24 +267,24 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 **注意**：
 
-- _HighConfidencePhishAction_ 参数的默认值为 "隔离"，因此您无需为新的反垃圾邮件策略中的高可信度网络钓鱼检测设置隔离操作。 对于新的或现有的反垃圾邮件策略中的所有其他垃圾邮件筛选 verdicts，只有在 action 值为 "隔离" 的情况下，隔离标记才有效。 若要查看现有反垃圾邮件策略中的操作值，请运行以下命令：
+- _HighConfidencePhishAction_ 参数的默认值为"隔离"，因此无需设置新反垃圾邮件策略中的高可信度网络钓鱼检测的隔离操作。 对于新的或现有的反垃圾邮件策略中的所有其他垃圾邮件筛选裁定，隔离标记仅在操作值为"隔离"时有效。 若要查看现有反垃圾邮件策略中的操作值，请运行以下命令：
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
   ```
 
-  有关默认操作值以及标准和严格的建议操作值的信息，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+  有关默认操作值以及 Standard 和 Strict 的建议操作值的信息，请参阅 [EOP 反垃圾邮件策略设置](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
-- 垃圾邮件筛选判定如果没有对应的隔离标记参数，则表示已使用该结论的 [默认隔离标记](#step-2-assign-a-quarantine-tag-to-supported-features) 。
+- 没有相应隔离标记参数的垃圾邮件筛选裁定意味着使用该 [裁定的默认](#step-2-assign-a-quarantine-tag-to-supported-features) 隔离标记。
 
-  如果要更改隔离邮件的默认最终用户功能，则只需将默认的隔离标记替换为自定义隔离标记。
+  如果希望更改已隔离邮件的默认最终用户功能，只需将默认隔离标记替换为自定义隔离标记。
 
-- PowerShell 中的新反垃圾邮件策略要求使用 **set-hostedcontentfilterpolicy** cmdlet 的垃圾邮件筛选器策略 (设置) 使用 **disable-hostedcontentfilterrule** cmdlet) 收件人筛选器使用新的垃圾邮件筛选规则 (收件人筛选器。 有关说明，请参阅 [使用 PowerShell 创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
+- PowerShell 中的新反垃圾邮件策略需要使用 **New-HostedContentFilterPolicy** cmdlet 和新的垃圾邮件筛选器规则 (收件人筛选器) 使用 **New-HostedContentFilterRule** cmdlet 将垃圾邮件筛选器策略 (设置设置为) 。 有关说明，请参阅 [使用 PowerShell 创建反垃圾邮件策略](configure-your-spam-filter-policies.md#use-powershell-to-create-anti-spam-policies)。
 
-本示例使用以下设置创建名为 "研究部门" 的新垃圾邮件筛选器策略：
+本示例创建一个名为 Research Department 的新垃圾邮件筛选器策略，该策略具有以下设置：
 
-- 所有垃圾邮件筛选 verdicts 的操作都设置为 "隔离"。
-- 名为 NoAccess 的自定义隔离标记（分配 **无访问** 权限）将替换默认情况下尚未分配 " **无访问** 权限" 的任何默认隔离标记。
+- 所有垃圾邮件筛选裁定的操作都设置为"隔离"。
+- 分配"无访问权限"的名为 NoAccess的自定义隔离标记将替换默认情况下尚未分配"无访问权限"的任何默认隔离标记。
 
 ```powershell
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
@@ -292,7 +292,7 @@ New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -
 
 若要详细了解语法和参数，请参阅 [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)。
 
-本示例修改名为 "人力资源" 的现有垃圾邮件筛选器策略。 垃圾邮件隔离判定的操作将设置为 "隔离"，并分配名为 "NoAccess" 的自定义隔离标记。
+本示例修改名为 Human Resources 的现有垃圾邮件筛选器策略。 垃圾邮件隔离裁定的操作设置为"隔离"，并分配了名为 NoAccess 的自定义隔离标记。
 
 ```powershell
 Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine -SpamQuarantineTag NoAccess
@@ -300,55 +300,55 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 若要详细了解语法和参数，请参阅 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)。
 
-## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>在安全 & 合规中心中配置全局隔离通知设置
+## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>在安全与合规中心&全局隔离通知设置
 
-通过 "隔离标记的全局设置"，可以自定义向已隔离邮件的收件人发送的最终用户垃圾邮件通知。 有关这些通知的详细信息，请参阅 [最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
+使用隔离标记的全局设置，可以自定义发送到已隔离邮件收件人的最终用户垃圾邮件通知。 有关这些通知详细信息，请参阅 [最终用户垃圾邮件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** "，然后选择 " **隔离标记**"。
+1. 在安全&，转到 **"威胁管理** 策略 \> "，然后选择"**隔离"标记**。
 
-2. 在 " **隔离标记** " 页上，选择 " **全局设置**"。
+2. 在"**隔离标记"** 页上，选择 **"全局设置"。**
 
-3. 在打开的 " **隔离通知设置** " 浮出控件中，配置以下部分或所有设置：
+3. 在打开 **的隔离通知** 设置飞出中，配置以下部分或所有设置：
 
-   - **使用 "我的公司徽标**"：选择此选项可替换最终用户垃圾邮件通知顶部使用的默认 Microsoft 徽标。 在执行此操作之前，您需要按照 [自定义您的组织的 Microsoft 365 主题](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) 中的说明上传您的自定义徽标。
+   - **使用我的公司徽标**：选择此选项可替换最终用户垃圾邮件通知顶部使用的默认 Microsoft 徽标。 在这样做之前，你需要按照 [自定义组织的 Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) 主题中的说明上载自定义徽标。
 
-     下面的屏幕截图显示最终用户垃圾邮件通知中的自定义徽标：
+     以下屏幕截图显示了最终用户垃圾邮件通知中的自定义徽标：
 
      ![最终用户垃圾邮件通知中的自定义徽标](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **选择语言**：最终用户垃圾邮件通知已根据收件人的语言设置进行本地化。 您可以为 **显示名称** 和 **免责声明** 值指定不同语言的自定义文本。
+   - **选择语言**：已根据收件人的语言设置对最终用户垃圾邮件通知进行本地化。 您可以为显示名称和免责声明值指定不同语言的 **自定义** 文本。
 
-     从 "第一种语言" 框中选择至少一种语言，然后单击 " **添加**"。 您可以通过在每个语言后面单击 " **添加** " 来选择多种语言。 "部分语言" 框显示已选择的所有语言：
+     至少从第一种语言框中选择一种语言，然后单击"添加 **"。** 可以通过单击每种语言后的"添加 **"来选择** 多种语言。 节语言框显示你选择的所有语言：
 
-     ![隔离标记全局隔离通知设置中的第二个语言框中的选定语言](../../media/quarantine-tags-esn-customization-selected-languages.png)
+     ![隔离标记的全局隔离通知设置中第二种语言框中的选定语言](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **显示名称**：自定义在最终用户垃圾邮件通知中使用的发件人的显示名称。
+   - **显示名称**：自定义显示名称垃圾邮件通知中使用的发件人地址。
 
-     对于已添加的每种语言，在 "第二语言" 框中选择语言 (不单击 X) 并在 " **显示名称** " 框中输入所需的文本值。
+     对于已添加的每种语言，选择第二种语言框中的语言 (不要单击 X) 请在"显示名称"框中输入您想要 **的文本值。**
 
-     下面的屏幕截图显示最终用户垃圾邮件通知中自定义的显示名称：
+     以下屏幕截图显示了最终用户显示名称中的自定义邮件：
 
-     ![最终用户垃圾邮件通知中的自定义发件人显示名称](../../media/quarantine-tags-esn-customization-display-name.png)
+     ![最终用户垃圾邮件显示名称中的自定义发件人地址](../../media/quarantine-tags-esn-customization-display-name.png)
 
-   - **免责声明**：将自定义免责声明添加到最终用户垃圾邮件通知的底部。 本地化后的文本、 **组织中的免责声明：** 总是首先包括您指定的文本。
+   - **免责声明**：将自定义免责声明添加到最终用户垃圾邮件通知的底部。 本地化文本， **即您组织的** 免责声明：始终先包含，后跟您指定的文本。
 
-     对于已添加的每种语言，在 "第二语言" 框中选择语言 (不单击 X) 并在 " **免责声明** " 框中输入所需的文本值。
+     对于已添加的每种语言，请选择第二种语言框中的语言 (不要单击 X) 请在"免责声明"框中输入 **您想要的文本值** 。
 
-     下面的屏幕截图显示最终用户垃圾邮件通知中的自定义免责声明：
+     以下屏幕截图显示了最终用户垃圾邮件通知中的自定义免责声明：
 
      ![最终用户垃圾邮件通知底部的自定义免责声明](../../media/quarantine-tags-esn-customization-disclaimer.png)
 
-## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>查看安全 & 合规中心内的隔离标记
+## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>在安全与合规中心&隔离标记
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** "，然后选择 " **隔离标记**"。
+1. 在安全&，转到 **"威胁管理** 策略 \> "，然后选择"**隔离"标记**。
 
-- 若要查看内置或自定义隔离标记的设置，请从列表中选择隔离标记 (不要选中该复选框) 。
+- 若要查看内置或自定义隔离标记的设置，请从列表中选择隔离标记 (不要选中复选框) 。
 
-- 若要查看全局设置，请选择 "**全局设置**"
+- 若要查看全局设置，请选择" **全局设置"**
 
-### <a name="view-quarantine-tags-in-powershell"></a>查看 PowerShell 中的隔离标记
+### <a name="view-quarantine-tags-in-powershell"></a>在 PowerShell 中查看隔离标记
 
-如果您希望使用 PowerShell 查看隔离标记，请执行以下任一步骤：
+如果你希望使用 PowerShell 查看隔离标记，请执行以下步骤之一：
 
 - 若要查看所有内置或自定义标记的摘要列表，请运行以下命令：
 
@@ -356,7 +356,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
   Get-QuarantineTag | Format-Table Name
   ```
 
-- 若要查看内置或自定义隔离标记的设置，请将替换 \<TagName\> 为隔离标记的名称，然后运行以下命令：
+- 若要查看内置或自定义隔离标记的设置，请替换为隔离标记的名称， \<TagName\> 然后运行以下命令：
 
   ```powershell
   Get-QuarantineTag -Identity "<TagName>"
@@ -370,165 +370,165 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 若要详细了解语法和参数，请参阅 [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy)。
 
-## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>在安全 & 合规中心中删除隔离标记
+## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>在安全与合规中心&隔离标记
 
 **注意**：
 
 - 无法删除内置隔离标记。
 
-- 在删除自定义隔离标记之前，请确认未使用该标记。 例如，在 PowerShell 中运行以下命令：
+- 在删除自定义隔离标记之前，请验证该标记是否未使用。 例如，在 PowerShell 中运行以下命令：
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-List Name,*QuarantineTag
   ```
 
-  如果正在使用隔离标记，则在删除之前 [将其替换为已分配的隔离标记](#step-2-assign-a-quarantine-tag-to-supported-features) 。
+  如果使用隔离标记， [请替换分配的隔离](#step-2-assign-a-quarantine-tag-to-supported-features) 标记，然后再将其删除。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** "，然后选择 " **隔离标记**"。
+1. 在安全&，转到 **"威胁管理** 策略 \> "，然后选择"**隔离"标记**。
 
-2. 在 " **隔离标记** " 页上，选择要删除的自定义隔离标记，然后单击 " **删除标记**"。
+2. 在"**隔离标记"** 页上，选择要删除的自定义隔离标记，然后单击"**删除标记"。**
 
-3. 在出现的确认对话框中，单击 " **删除标记** "。
+3. 单击 **出现的** 确认对话框中的"删除标记"。
 
-### <a name="remove-quarantine-tags-in-powershell"></a>删除 PowerShell 中的隔离标记
+### <a name="remove-quarantine-tags-in-powershell"></a>在 PowerShell 中删除隔离标记
 
-如果您希望使用 PowerShell 删除自定义隔离标记，请将 \<TagName\> 其替换为隔离标记的名称，然后运行以下命令：
+如果希望使用 PowerShell 删除自定义隔离标记，请替换为隔离标记的名称， \<TagName\> 然后运行以下命令：
 
 ```powershell
 Remove-QuarantineTag -Identity "<TagName>"
 ```
 
-有关语法和参数的详细信息，请参阅 [QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/remove-quarantinetag)。
+有关语法和参数的详细信息，请参阅 [Remove-QuarantineTag](https://docs.microsoft.com/powershell/module/exchange/remove-quarantinetag)。
 
 ## <a name="quarantine-tag-permission-details"></a>隔离标记权限详细信息
 
-以下各节介绍了在隔离邮件的详细信息和最终用户垃圾邮件通知中，预置权限组和各个权限的影响。
+以下各节介绍预设权限组和单个权限在隔离邮件的详细信息和最终用户垃圾邮件通知中的影响。
 
 ### <a name="preset-permissions-groups"></a>预设权限组
 
-[！注意] 本文开头的表中列出了 "预置权限" 组中包含的各个权限。
+本文开头的表中列出了预设权限组中包含的单个权限。
 
 #### <a name="no-access"></a>禁止访问
 
-如果隔离标记分配了 " **无访问** 权限" (不) 任何权限，则用户仍会获得一些基准功能：
+如果隔离标记将"无访问权限" (没有权限) ，则用户仍将获得一些基线功能：
 
-- **隔离的邮件详细信息**： " **查看邮件头** " 按钮始终可用。
+- **隔离邮件详细信息****："查看邮件头**"按钮始终可用。
 
-  ![隔离邮件详细信息中的可用按钮（如果隔离标记向用户授予无访问权限）](../../media/quarantine-tags-quarantined-message-details-no-access.png)
+  ![隔离标记向用户授予"无访问权限"时隔离邮件详细信息中的可用按钮](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
-- **最终用户垃圾邮件通知**：将用户带到隔离区中的邮件的 " **审阅** " 按钮始终可用。
+- **最终用户垃圾邮件通知****：将用户** 发送到隔离邮件的"审阅"按钮始终可用。
 
-  ![最终用户垃圾邮件通知中的可用按钮（如果隔离标记向用户授予无访问权限）](../../media/quarantine-tags-esn-no-access.png)
+  ![如果隔离标记授予用户无访问权限，则最终用户垃圾邮件通知中的可用按钮](../../media/quarantine-tags-esn-no-access.png)
 
 #### <a name="limited-access"></a>受限访问
 
-如果隔离标记分配了 **有限的访问** 权限，则用户将获得以下功能：
+如果隔离标记分配"受限 **"** 访问权限，则用户获得以下功能：
 
-- **隔离的邮件详细信息**：以下按钮可用：
+- **隔离邮件详细信息**：以下按钮可用：
   - **请求释放**
   - **查看邮件头**
   - **预览邮件**
   - **阻止发件人**
-  - **从隔离区中删除**
+  - **从隔离区删除**
 
-  ![隔离邮件详细信息中的可用按钮（如果隔离标记向用户授予限制访问权限）](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
+  ![隔离标记授予用户受限访问权限时隔离邮件详细信息中的可用按钮](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **最终用户垃圾邮件通知**：可使用以下按钮：
+- **最终用户垃圾邮件通知**：以下按钮可用：
   - **阻止发件人**
   - 审阅
 
-  ![最终用户垃圾邮件通知中的可用按钮（如果隔离标记向用户授予限制访问权限）](../../media/quarantine-tags-esn-limited-access.png)
+  ![如果隔离标记授予用户受限访问权限，最终用户垃圾邮件通知中的可用按钮](../../media/quarantine-tags-esn-limited-access.png)
 
-#### <a name="full-access"></a>完全访问
+#### <a name="full-access"></a>完全访问权限
 
-如果隔离标记分配了所有可用权限) 的 **完全访问** 权限 (，则用户将获得以下功能：
+如果隔离标记将"完全访问权限" (所有可用权限) ，则用户会获得以下功能：
 
-- **隔离的邮件详细信息**：以下按钮可用：
+- **隔离邮件详细信息**：以下按钮可用：
   - **释放邮件**
   - **查看邮件头**
   - **预览邮件**
   - **阻止发件人**
   - **允许发件人**
-  - **从隔离区中删除**
+  - **从隔离区删除**
 
-  ![隔离邮件详细信息中的可用按钮（如果隔离标记向用户授予 "完全访问" 权限）](../../media/quarantine-tags-quarantined-message-details-full-access.png)
+  ![隔离标记向用户授予完全访问权限时隔离邮件详细信息中的可用按钮](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **最终用户垃圾邮件通知**：可使用以下按钮：
+- **最终用户垃圾邮件通知**：以下按钮可用：
   - **阻止发件人**
   - **发布**
   - 审阅
 
-  ![如果隔离标记向用户授予 "完全访问" 权限，则为最终用户垃圾邮件通知中的可用按钮。](../../media/quarantine-tags-esn-full-access.png)
+  ![如果隔离标记授予用户完全访问权限，最终用户垃圾邮件通知中的可用按钮](../../media/quarantine-tags-esn-full-access.png)
 
-### <a name="individual-permissions"></a>单个权限
+### <a name="individual-permissions"></a>个人权限
 
 > [!NOTE]
-> 请记住，用户始终会收到 " [无访问](#no-access) " 部分中所述的按钮。 这些按钮不包含在各个权限说明中。
+> 请记住，用户始终获取"无访问"部分 [中描述的按钮](#no-access) 。 这些按钮不包含在单个权限说明中。
 
 #### <a name="allow-sender-permission"></a>允许发件人权限
 
-" **允许发件人** " 权限 (_PermissionToAllowSender_ ") 控制对按钮的访问，使用户可以方便地将隔离邮件发件人添加到其安全发件人列表。
+_PermissionToAllowSender_ () 中的"允许发件人"权限控制对按钮的访问权限，该按钮允许用户方便地将隔离的邮件发件人添加到其安全发件人列表。 
 
-- **隔离的邮件详细信息**：
-  - 启用 "**允许发件人**" 权限： "**允许发件人**" 按钮可用。
-  - 禁用 "**允许发件人**" 权限： "**允许发件人**" 按钮不可用。
+- **隔离邮件详细信息**：
+  - **启用"** 允许发件人"权限 **："允许发件人"** 按钮可用。
+  - **禁用"** 允许发件人"权限："允许 **发件人"** 按钮不可用。
 
-- **最终用户垃圾邮件通知**：不起作用。
+- **最终用户垃圾邮件通知：** 不起作用。
 
-有关安全发件人列表的详细信息，请参阅 [阻止受信任发件人被阻止](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) 并 [使用 Exchange Online PowerShell 在邮箱上配置安全列表集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+有关安全发件人列表详细信息，请参阅"防止受信任[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666)发件人被阻止"和"使用 Exchange Online PowerShell 配置邮箱的安全列表[集合"。](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
 
 #### <a name="block-sender-permission"></a>阻止发件人权限
 
- (_PermissionToBlockSender_) 的 **阻止发件人** 权限控制对按钮的访问，从而使用户可以方便地将隔离邮件发件人添加到其阻止的发件人列表。
+_PermissionToBlockSender_ (的阻止发件人权限) 控制对按钮的访问，该按钮允许用户方便地将隔离的邮件发件人添加到其阻止的发件人列表。 
 
-- **隔离的邮件详细信息**：
-  - **阻止发件人** 权限已启用： " **阻止发件人** " 按钮可用。
-  - **阻止发件人** 权限已禁用： " **阻止发件人** " 按钮不可用。
+- **隔离邮件详细信息**：
+  - **启用阻止发件人** 权限 **："阻止发件人"** 按钮可用。
+  - **阻止发件人** 权限已禁用：阻止 **发件人** 按钮不可用。
 
 - **最终用户垃圾邮件通知**：
-  - **阻止发件人** 权限已禁用： " **阻止发件人** " 按钮不可用。
-  - **阻止发件人** 权限已启用： " **阻止发件人** " 按钮可用。
+  - **阻止发件人** 权限已禁用：阻止 **发件人** 按钮不可用。
+  - **启用阻止发件人** 权限 **："阻止发件人"** 按钮可用。
 
-有关阻止发件人列表的详细信息，请参阅 [阻止来自某人的邮件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，并 [使用 Exchange Online PowerShell 在邮箱上配置安全列表集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+有关阻止发件人列表的信息，请参阅"阻止来自某人的邮件[](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667)"，并使用 Exchange Online PowerShell 在邮箱上配置[安全列表集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="delete-permission"></a>删除权限
 
-**Delete** 权限 (_PermissionToDelete_) 控制用户能否删除其邮件 (邮件，而用户是从隔离) 的收件人。
+_PermissionToDelete_ (权限) 控制用户能否删除其邮件， (用户是隔离收件人的邮件) 邮件。 
 
-- **隔离的邮件详细信息**：
-  - 已启用 **删除** 权限：可以使用 "**从隔离中删除**" 按钮。
-  - 禁用 **删除** 权限： "**从隔离中删除**" 按钮不可用。
+- **隔离邮件详细信息**：
+  - **启用** 删除权限 **："从隔离区删除"** 按钮可用。
+  - **删除** 权限已禁用：" **从隔离区删除** "按钮不可用。
 
-- **最终用户垃圾邮件通知**：不起作用。
+- **最终用户垃圾邮件通知：** 不起作用。
 
 #### <a name="preview-permission"></a>预览权限
 
- (_PermissionToPreview_) 的 **预览** 权限控制用户在隔离中预览其邮件的能力。
+_PermissionToPreview_ (预览) 控制用户在隔离中预览邮件的能力。 
 
-- **隔离的邮件详细信息**：
-  - 已启用 **预览** 权限： "**预览邮件**" 按钮可用。
-  - 已禁用 **预览** 权限： "**预览邮件**" 按钮不可用。
+- **隔离邮件详细信息**：
+  - **启用** 预览权限： **预览邮件** 按钮可用。
+  - **预览** 权限已禁用： **预览邮件** 按钮不可用。
 
-- **最终用户垃圾邮件通知**：不起作用。
+- **最终用户垃圾邮件通知：** 不起作用。
 
-#### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>允许收件人释放隔离权限中的邮件
+#### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>允许收件人解除邮件隔离权限
 
-" **允许收件人从隔离权限发布邮件** " (_PermissionToRelease_ ") 控制用户在不审批管理员的情况下直接释放隔离邮件的能力。
+允许 **收件人** 从隔离权限 (_PermissionToRelease_) 中释放邮件控制用户直接释放其隔离邮件的能力，而无需经过管理员批准。
 
-- **隔离的邮件详细信息**：
-  - 已启用权限： " **释放邮件** " 按钮可用。
-  - 禁用了权限： " **释放邮件** " 按钮不可用。
+- **隔离邮件详细信息**：
+  - 已启用权限 **："释放邮件"** 按钮可用。
+  - 权限已禁用 **："释放邮件** "按钮不可用。
 
 - **最终用户垃圾邮件通知**：
-  - 已启用权限： **释放** 按钮可用。
-  - 已禁用权限： **释放** 按钮不可用。
+  - 已启用权限 **："释放"** 按钮可用。
+  - 权限已禁用 **："释放** "按钮不可用。
 
-#### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>允许收件人请求从隔离权限中释放邮件
+#### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>允许收件人请求从隔离权限释放邮件
 
-" **允许收件人请求从隔离权限发布邮件** " (_PermissionToRequestRelease_) 控制用户 _请求_ 释放隔离邮件的能力。 仅在管理员批准请求后才发布邮件。
+允许 **收件人** 请求从隔离权限 (_PermissionToRequestRelease_) 释放邮件控制用户请求释放其隔离邮件的能力。  邮件仅在管理员批准请求后释放。
 
-- **隔离的邮件详细信息**：
-  - 已启用权限： " **请求释放** " 按钮可用。
-  - 已禁用权限： " **请求释放** " 按钮不可用。
+- **隔离邮件详细信息**：
+  - 已启用权限 **："请求释放"** 按钮可用。
+  - 权限已禁用 **："请求释放** "按钮不可用。
 
-- **最终用户垃圾邮件通知**： " **释放** " 按钮不可用。
+- **最终用户垃圾邮件通知**：" **释放** "按钮不可用。

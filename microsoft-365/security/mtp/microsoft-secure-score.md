@@ -1,7 +1,7 @@
 ---
 title: Microsoft 安全功能分数
-description: 介绍 microsoft 365 安全中心中的 Microsoft 安全分数、如何提高安全状态以及安全管理员可预期的功能。
-keywords: microsoft 安全分数，安全分数，office 365 安全分数，microsoft 安全分数，microsoft 365 安全中心，改进操作
+description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数、如何改善安全状态以及管理员期望的安全。
+keywords: microsoft 安全分数， 安全分数， office 365 安全分数， Microsoft 安全分数， microsoft 365 安全中心， 改进操作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,84 +20,83 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843836"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682567"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全功能分数
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+Microsoft 安全分数是组织安全状况的度量，数字越高，表示采取的改进操作就越高。 可以在 https://security.microsoft.com/securescore [Microsoft 365 安全中心找到它](overview-security-center.md)。
 
-Microsoft 安全分数是组织的安全状态的度量，数字越大，表明执行了更多改进操作。 可在 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)中找到。
-
-遵循安全得分建议可保护您的组织免受威胁。 从 Microsoft 365 安全中心的中央仪表板中，组织可以监视和使用其 Microsoft 365 标识、数据、应用程序、设备和基础结构的安全性。
+遵循安全分数建议可保护组织免受威胁。 在 Microsoft 365 安全中心的集中式仪表板中，组织可以监视并处理其 Microsoft 365 标识、应用和设备的安全性。
 
 安全分数可帮助组织：  
 
-* 报告组织安全状况的当前状态。
-* 通过提供可发现性、可见性、指导和控制改进其安全状况。  
-* 与基准测试进行比较，并建立 (Kpi) 的关键绩效指标。
+* 有关组织安全状况的当前状态的报告。
+* 通过提供可发现性、可见性、指导和控制，改进其安全状况。  
+* 与基准进行比较，并建立关键绩效指标 (KPI) 。
 
-组织可以获得对指标和趋势的可靠可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较以及其他更多。 分数还可以反映第三方解决方案解决建议操作的时间。
+组织可以访问指标和趋势的稳固可视化、与其他 Microsoft 产品的集成、与类似组织的分数比较等。 该分数还可以反映第三方解决方案何时解决了建议的操作。
 
-![安全得分主页](../../media/secure-score/secure-score-homepage-new.png)
+![安全分数主页](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="how-it-works"></a>运作方式
 
-为您提供了以下操作的要点：
+您将获得以下操作点数：
 
 - 配置建议的安全功能
 - 执行与安全相关的任务
-- 使用第三方应用程序或软件或其他缓解措施解决改进操作
+- 使用第三方应用程序或软件或备用缓解解决改进操作
 
-某些改进操作仅在完全完成时提供积分。 某些设备或用户的已完成部分会提供一些要点。 如果您无法或不希望执行其中一个改进操作，则可以选择接受风险或剩余风险。
+某些改进操作仅在完全完成时提供分数。 如果为某些设备或用户完成了这些操作，一些会提供部分分数。 如果无法或不希望对其中一项改进操作进行评估，可以选择接受风险或剩余风险。
 
-如果你拥有某个受支持的 Microsoft 产品的许可证，你将看到这些产品的建议。 我们将向您展示产品的全部可能改进，而不考虑许可证版本、订阅或计划。 通过这种方式，您可以了解安全最佳实践并提高成绩。 无论您的组织对特定产品拥有哪些许可证，绝对安全状态（按安全分数表示）保持不变。 请记住，安全应平衡可用性，而不是每个建议都适用于您的环境。
+如果你有受支持的 Microsoft 产品之一的许可证，你将看到这些产品的建议。 我们将向您展示产品的完整可能改进，无论许可证版本、订阅或计划如何。 这样，你可以了解安全最佳做法并提升分数。 无论组织为特定产品拥有哪些许可证，你的绝对安全状态（由安全分数表示）都保持不变。 请记住，安全性应该与可用性平衡，并且并不是每个建议都适用于你的环境。
 
-你的分数将实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数也会每天同步，以接收有关每个操作的已实现分数的系统数据。
+你的分数会实时更新，以反映可视化和改进操作页面中显示的信息。 安全分数还会每天同步，以接收有关每个操作所得分的系统数据。
 
 ### <a name="key-scenarios"></a>关键方案
 
 - [检查当前分数](microsoft-secure-score-improvement-actions.md#check-your-current-score)
-- [比较你的成绩与你的组织（如你的组织）](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [将分数与组织（如组织）进行比较](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [查看改进操作并决定行动计划](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
-- [启动工作流以进行调查或实施](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
+- [启动要调查或实施的工作流](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
     - [Microsoft 365 安全中心和 ServiceNow 集成](tickets-security-center.md)
 
-### <a name="how-improvement-actions-are-scored"></a>如何对改进行动进行评分
+### <a name="how-improvement-actions-are-scored"></a>如何对改进操作进行评分
 
-每个改进操作10磅或更少，并且都是以二进制方式进行评分。 如果实施改进操作（如创建新策略或打开特定设置），则将获得100% 的点数。 对于其他改进操作，点作为总配置的百分比提供。
+每个改进操作都值 10 分或更少，大多数改进操作都以二进制方式进行评分。 如果实施改进操作（如创建新策略或打开特定设置），则获得 100% 的分数。 对于其他改进操作，分数以总配置的百分比表示。
 
-例如，改进操作表明您通过使用多重身份验证来保护您的所有用户，从而获得10分。 您只有50的100个用户受保护，因此，您可以得到5分的部分分数 (50 受保护/100 总计 * 10 max 磅 = 5 磅) 。
+例如，改进操作通过多重身份验证保护所有用户来表示你获得 10 分。 你只有 50 个保护的用户，共 100 个用户，因此你获得的部分分数为 5 分 (50 个受保护/ 100 个总计 * 10 最大 pts = 5 pts) 。
 
-### <a name="products-included-in-secure-score"></a>安全分数中包括的产品
+### <a name="products-included-in-secure-score"></a>安全分数中包含的产品
 
-目前有关于 Microsoft 365 (的建议，其中包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender for Identity 和云应用安全性。 即将推出针对其他安全产品的建议。 这些建议不包含与每个产品相关联的所有攻击面，但它们是一个很棒的基准。 您还可以将改进操作标记为由第三方或备用缓解措施覆盖。
+目前，有针对 Microsoft 365 (的建议，包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender for Identity 和 Cloud App Security。 即将推出针对其他安全产品的建议。 建议不会涵盖与每个产品关联的所有攻击面，但它们是一个很好的基线。 还可以将改进操作标记为第三方或备用缓解所涵盖。
 
 ### <a name="security-defaults"></a>安全性默认值
 
-Microsoft 安全评分已更新了 [在 Azure Active Directory 中支持安全默认值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)的改进操作，这使组织能够更轻松地使用预配置的安全设置进行常见攻击，从而帮助保护组织。
+Microsoft 安全分数已更新了改进操作以支持 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)中的安全默认值，这便于使用常见攻击的预配置安全设置帮助保护组织。
 
-如果启用安全默认设置，你将获得以下改进操作的完整积分：
+如果启用安全默认值，将被授予以下改进操作的完整分数：
 
-- 确保所有用户都可以完成多重身份验证以实现 (9 点的安全访问) 
-- 要求对管理角色进行 MFA (10 磅) 
-- 启用策略以阻止旧版身份验证 (7 点) 
+- 确保所有用户都可以完成多重身份验证，以便安全访问 (9) 
+- 管理角色需要 MFA (10 点) 
+- 启用策略以阻止旧式身份验证 (7 点) 
 
 >[!IMPORTANT]
->安全性默认值包括为 "登录风险策略" 和 "用户风险策略" 改进操作提供类似安全性的安全功能。 建议将这些策略的安全默认值更新为 "通过其他缓解措施进行解决"，而不是将这些策略设置为 "通过其他缓解措施"。
+>安全默认值包括提供与"登录风险策略"和"用户风险策略"改进操作类似的安全性的安全功能。 建议将状态更新为"通过替代缓解解决"，而不是在安全默认值上设置这些策略。
 
 ## <a name="required-permissions"></a>所需权限
 
-若要拥有访问 Microsoft 安全分数的权限，您必须在 Azure Active Directory 中为以下角色分配一个角色。
+若要有权访问 Microsoft 安全分数，必须在 Azure Active Directory 中分配以下角色之一。
 
 ### <a name="read-and-write-roles"></a>读取和写入角色
 
-通过读取和写入访问权限，您可以进行更改，并直接与安全分数进行交互。 您还可以将只读访问权限分配给其他用户。
+通过读取和写入访问权限，你可以进行更改并直接与安全分数交互。 您还可以向其他用户分配只读访问权限。
 
 * 全局管理员
 * 安全管理员
@@ -107,7 +106,7 @@ Microsoft 安全评分已更新了 [在 Azure Active Directory 中支持安全�
 
 ### <a name="read-only-roles"></a>只读角色
 
-如果具有只读访问权限，则无法编辑改进操作的状态或注释、编辑分数区域或编辑自定义比较。
+使用只读访问权限，你无法编辑改进操作的状态或注释、编辑分数区域或编辑自定义比较。
 
 * 支持人员管理员
 * 用户管理员
@@ -118,15 +117,15 @@ Microsoft 安全评分已更新了 [在 Azure Active Directory 中支持安全�
 
 ## <a name="risk-awareness"></a>风险感知
 
-Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状态的数字摘要。 它并不是对系统或数据受到破坏的可能性的绝对度量。 相反，它表示您在 Microsoft 环境中已采用安全控制的程度，可帮助弥补受到破坏的风险。 无在线服务完全不受安全破坏，安全分数不应以任何方式解释为保证安全违规。
+Microsoft 安全分数是基于系统配置、用户行为和其他与安全相关的度量的安全状况的数字摘要。 它不是系统或数据被泄露的可能性的绝对度量。 相反，它表示在 Microsoft 环境中采用安全控件的程度，可帮助消除泄露风险。 任何联机服务都完全不受安全漏洞的影响，安全分数不应被解释为防止以任何方式出现安全漏洞的保证。
 
-## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
+## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果你有任何问题，请通过在 [安全、隐私 & 合规](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社区中发布来告知我们。 我们正在监视社区，并将提供帮助。
+如果有任何问题，请通过发布到安全、隐私和合规社区& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 
 - [评估你的安全状况](microsoft-secure-score-improvement-actions.md)
-- [跟踪你的 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
+- [跟踪 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
 - [即将推出的功能](microsoft-secure-score-whats-coming.md)
 - [新增功能](microsoft-secure-score-whats-new.md)

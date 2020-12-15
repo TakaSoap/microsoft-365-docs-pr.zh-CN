@@ -17,28 +17,28 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Microsoft Defender for Office 365 中查看、创建、修改和删除安全链接策略和全局安全链接设置。
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675237"
+ms.locfileid: "49683159"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中设置安全链接策略
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中的安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 安全链接是 Microsoft [Defender for Office 365](office-365-atp.md) 中的一项功能，它提供对邮件流中入站电子邮件的 URL 扫描，以及单击验证电子邮件和其他位置中的 URL 和链接的时间。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](atp-safe-links.md)。
 
 没有内置或默认安全链接策略。 若要对 URL 进行安全链接扫描，需要创建一个或多个安全链接策略，如本文中所述。
 
 > [!NOTE]
-> 在安全链接策略之外配置安全链接保护 **的全局** 设置。 有关说明，请参阅 [在 Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)中为安全链接配置全局设置。
+> 在安全链接策略之外配置安全链接保护 **的全局** 设置。 有关说明，请参阅 [在 Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md)中配置安全链接的全局设置。
 
-可以在 &安全与合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置安全链接策略;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell，但具有适用于 Office 365 附加订阅的 Microsoft Defender) 。
+可以在安全与合规中心或 PowerShell (& Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置安全链接策略;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell，但具有适用于 Office 365 加载项订阅的 Microsoft Defender) 。
 
 安全链接策略的基本元素包括：
 
@@ -60,7 +60,7 @@ ms.locfileid: "49675237"
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
-  - 若要创建、修改和删除安全链接策略，您必须是组织 **管理或****安全** 管理员角色组的成员。
+  - 若要创建、修改和删除安全链接策略，您必须是组织 **管理或** 安全管理员角色 **组** 的成员。
   - 若要对安全链接策略进行只读访问，你需要是全局读者或安全读者 **角色组的成员**。 
 
   有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
@@ -72,7 +72,7 @@ ms.locfileid: "49675237"
 
 - 有关安全链接策略的建议设置，请参阅 [安全链接策略设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
-- 最多允许应用新策略或更新策略 30 分钟。
+- 允许应用新策略或更新策略的时间最多为 30 分钟。
 
 - [新功能不断添加到 Microsoft Defender for Office 365。](office-365-atp.md#new-features-in-microsoft-defender-for-office-365) 添加新功能时，可能需要对现有安全链接策略进行调整。
 
@@ -94,7 +94,7 @@ ms.locfileid: "49675237"
 
 4. 在 **出现的** "设置"页上，配置以下设置：
 
-   - **选择邮件中未知潜在恶意 URL** 的操作：选择 **"打开** "以对电子邮件中的链接启用安全链接保护。
+   - **选择邮件中未知潜在恶意 URL** 的操作：选择 **"打开** "为电子邮件中的链接启用安全链接保护。
 
    - **选择 Microsoft Teams 中** 未知或潜在恶意 URL 的操作：选择 **"打开** "为 Teams 中的链接启用安全链接保护。
 
@@ -102,11 +102,11 @@ ms.locfileid: "49675237"
 
    - **等待 URL 扫描完成，然后再** 传递邮件：选择此设置以等待实时 URL 扫描完成，然后再传递邮件。
 
-   - **将安全链接应用于在** 组织内部发送的电子邮件：选择此设置将安全链接策略应用于内部发件人和内部收件人之间的邮件。
+   - **将安全链接** 应用于在组织内部发送的电子邮件：选择此设置将安全链接策略应用于内部发件人和内部收件人之间的邮件。
 
-   - **Do not track user clicks：** Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
+   - **Do not track user clicks**： Leave this setting unselected to enable the tracking user clicks on URLs in email messages.
 
-   - **不允许用户单击到原始 URL：** 选择此设置可阻止用户单击警告页面中的原始 [URL。](atp-safe-links.md#warning-pages-from-safe-links)
+   - **不允许用户单击到原始 URL：** 选择此设置可阻止用户在警告页面中单击到原始 [URL。](atp-safe-links.md#warning-pages-from-safe-links)
 
    - **不要重写以下 URL：** 允许访问指定的 URL，否则安全链接将阻止这些 URL。
 
@@ -122,19 +122,19 @@ ms.locfileid: "49675237"
 
    完成后，单击“下一步”。
 
-5. 在 **出现的"应用于** "页上，标识策略应用于的内部收件人。
+5. 在 **出现的"应用于** "页上，标识策略所适用的内部收件人。
 
    只能使用一次条件或例外，但可以为条件或例外指定多个值。 同一个条件或例外的多个值使用“或”逻辑（例如，_\<recipient1\>_ 或 _\<recipient2\>_）。 不同的条件或例外使用“和”逻辑（例如，_\<recipient1\>_ 和 _\<member of group 1\>_）。
 
    单击 **"添加条件"。** In the dropdown that appears， select a condition under **Applied if**：
 
-   - **收件人为**：指定组织中一个或多个邮箱、邮件用户或邮件联系人。
+   - **收件人为**：指定您的组织中的一个或多个邮箱、邮件用户或邮件联系人。
    - **收件人是：** 指定组织中一个或多个组的成员。
    - **收件人域是**：指定你的组织中配置的一个或多个接受的域中的收件人。
 
    选择条件后，将显示相应的下拉列表，其中显示其中 **任何** 一个框。
 
-   - 在框中单击并滚动浏览要选择的值列表。
+   - 在框中单击并滚动要选择的值列表。
    - 在框中单击并开始键入以筛选列表并选择一个值。
    - 若要添加其他值，请单击框中的空白区域。
    - 若要删除单个条目 **，请单击值** ![ 上的" ](../../media/scc-remove-icon.png) 删除"图标。
@@ -156,13 +156,13 @@ ms.locfileid: "49675237"
 
 2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
 
-   策略详细信息以飞出方式显示
+   策略详细信息显示在飞出中
 
-## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>使用安全&中心修改安全链接策略
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>使用安全&合规中心修改安全链接策略
 
 1. 在安全&中心，转到 **"威胁管理** \> **策略** \> **ATP 安全链接"。**
 
-2. 在 **"安全链接** "页上，从列表中选择一个策略， (选中该策略，) 。
+2. 在 **"安全链接** "页上，从列表中选择一个策略， (不要选中该复选框) 。
 
 3. 在出现的策略详细信息飞出中，单击 **"编辑策略"。**
 
@@ -178,7 +178,7 @@ ms.locfileid: "49675237"
 
    - 将切换开关移动到左侧可禁用策略： ![关闭策略](../../media/scc-toggle-off.png).
 
-   - 将切换开关移动到右侧可启用策略： ![打开策略](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - 将切换开关移动到右侧可启用策略： ![打开策略](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>设置安全链接策略的优先级
 
@@ -186,9 +186,9 @@ ms.locfileid: "49675237"
 
 有关优先级顺序以及如何评估和应用多个策略的详细信息，请参阅[电子邮件保护的顺序和优先级](how-policies-and-protections-are-combined.md)。
 
-安全链接策略按第一个策略的优先级值为 0 (的顺序显示它们) 。 
+安全链接策略按处理策略的顺序显示 (优先级值为 0) 。 
 
-**注意**：在安全&合规中心，你只能在创建安全链接策略后更改该策略的优先级。 在 PowerShell 中，可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则优先级) 。
+**注意**：在安全&合规中心，只能在创建安全链接策略后更改策略的优先级。 在 PowerShell 中，可以在创建安全链接规则集时替代默认优先级 (这可能会影响现有规则优先级) 。
 
 若要更改策略优先级，请在列表中上移或下移策略（无法直接在安全与合规中心内修改 **“优先级”** 数字）。
 
@@ -202,7 +202,7 @@ ms.locfileid: "49675237"
 
    - 优先级值最低的安全链接策略 (例如 **，3**) 只有"增加优先级 **"** 按钮可用。
 
-   - 如果你有三个或多个安全链接策略，则最高优先级和最低优先级值之间的策略同时具有"增加 **优先级** "和" **减少优先级"** 按钮。
+   - 如果你有三个或多个安全链接策略，则最高优先级值和最低优先级值之间的策略同时具有"增加 **优先级** "和" **降低优先级"** 按钮。
 
 4. 单击 **"增加优先级** " **或"降低优先级** "可更改 **"优先级"** 值。
 
@@ -258,7 +258,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 
 - 有关在使用 **Set-SafeLinksPolicy** cmdlet 修改现有安全链接策略时可用于 _DoNotRewriteUrls_ 参数的其他语法，请参阅本文稍后介绍的"使用 [PowerShell](#use-powershell-to-modify-safe-links-policies)修改安全链接策略"部分。
 
-此示例创建一个名为"Contoso All"的安全链接策略，并具有以下值：
+此示例使用下列值创建名为"Contoso All"的安全链接策略：
 
 - 在电子邮件中打开 URL 扫描和重写。
 - 在 Teams 中打开 URL 扫描 (点击预览) 。
@@ -422,7 +422,7 @@ Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
 Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
 ```
 
-**注意**：若要在创建新规则时设置规则的优先级，请改为对 **New-SafeLinksRule** cmdlet 使用 _Priority_ 参数。
+**注意**：若要在创建新规则时设置其优先级，请改为使用 **New-SafeLinksRule** cmdlet 的 _Priority_ 参数。
 
 有关语法和参数的详细信息，请参阅[Set-SafeLinksRule。](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)
 

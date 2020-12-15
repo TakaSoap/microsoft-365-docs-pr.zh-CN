@@ -39,13 +39,13 @@ ms.locfileid: "48999392"
 - [可训练的分类器](classifier-learn-about.md)
 - [敏感信息类型](what-the-sensitive-information-types-look-for.md)
 
-可以在“ **Microsoft 365 合规中心** ”或“ **Microsoft 365 安全中心** ” > “ **分类** ” > “ **数据分类** ”中找到数据分类。
+可以在“**Microsoft 365 合规中心**”或“**Microsoft 365 安全中心**” > “**分类**” > “**数据分类**”中找到数据分类。
 
 获取介绍我们的数据分类功能的视频教程。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
-创建任何策略前，数据分类将先扫描敏感内容和标记内容。 这称为 **零变更管理** 。 这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。
+创建任何策略前，数据分类将先扫描敏感内容和标记内容。 这称为 **零变更管理**。 这样，你就可以看到你环境中所有保留和灵敏度标签的影响，并使你能够开始评估你的保护和治理策略需求。
 
 ## <a name="prerequisites"></a>先决条件
 

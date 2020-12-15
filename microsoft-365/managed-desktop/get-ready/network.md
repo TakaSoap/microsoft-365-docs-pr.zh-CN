@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5c558529360d84d5872649e41b95f509e5b52663
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 15778f076d4122b23449f66bd9781a7037c52c58
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663627"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683123"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 托管桌面的网络配置
 
@@ -25,7 +25,7 @@ ms.locfileid: "49663627"
 
 ## <a name="proxy-configuration"></a>代理配置
 
-Microsoft 托管桌面是一项云托管服务。 Microsoft 托管桌面服务需要能够到达一组终结点。 本部分列出了 Microsoft 托管桌面服务的各个方面需要允许的终结点。 
+Microsoft 托管桌面是一项云托管服务。 Microsoft 托管桌面服务需要一组能够到达的终结点。 本部分列出了 Microsoft 托管桌面服务的各个方面需要允许的终结点。 
 
 客户可以通过直接通过防火墙或代理发送所有受信任的 Microsoft 365 网络请求、绕过身份验证和所有其他数据包级检查或处理来优化其网络。 这样可减少延迟和外围容量要求。 
 
@@ -39,12 +39,12 @@ Microsoft 托管桌面是一项云托管服务。 Microsoft 托管桌面服务�
 
 Microsoft 托管桌面使用 Azure 门户托管其 Web 控制台。 以下 URL 必须位于代理和防火墙的允许列表中，以便 Microsoft 托管桌面设备可以与 Microsoft 服务通信。  
 
-Microsoft 托管桌面 URL 用于我们的服务在客户 API 上运行的一切内容。 必须确保在公司网络上始终可以访问此 URL。
+Microsoft 托管桌面 URL 用于我们在客户 API 上运行的服务。 必须确保在公司网络上始终可以访问此 URL。
 
 Microsoft 服务  | 允许列表所需的 URL 
 --- | ---
 Microsoft 托管桌面 | prod-mwaas-services-customerapi.azurewebsites.net
-获取帮助 | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+获取帮助 | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 快速协助 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft 支持和恢复助手 | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
@@ -55,12 +55,12 @@ Microsoft 支持和恢复助手 | \*.apibasic.diagnostics.office.com  <br>\*.api
 
 Microsoft 服务 | 文档
 --- | ---
-Windows 10 企业版，包括适用于企业的 Windows 更新 | [管理 Windows 10 版本 1803 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本 1809 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本 1903 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本 2004 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
+Windows 10 企业版（包括适用于企业的 Windows 更新） | [管理 Windows 10 版本 1803 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本 1809 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本 1903 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本 2004 的连接终结点](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
 传递优化 | [配置 Windows 10 更新的传递优化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL 和 IP 地址范围](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合标识所需的端口和协议](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) 以及 [Active Directory 和 Active Directory 域服务端口要求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 网络配置要求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的网络终结点](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender for Endpoint | [Microsoft Defender for Endpoint 要求](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Microsoft Defender for Endpoint | [适用于终结点的 Microsoft Defender 要求](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows Autopilot 网络要求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 Microsoft 服务  | 允许列表所需的 URL | 文档源

@@ -1,5 +1,5 @@
 ---
-title: 在适用于 Office 365 的 Defender 中配置安全链接设置的全局设置
+title: 在 Defender for Office 365 中配置安全链接设置的全局设置
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,85 +16,85 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 管理员可以了解如何在 Microsoft Defender for Office 365 中查看和配置全局设置 ("阻止以下 Url" 列表和 Office 365 应用程序的保护) 用于安全链接。
-ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+description: 管理员可以了解如何在 Microsoft Defender for Office 365 (Office 365 安全链接中查看和配置全局设置) "阻止以下 URL"列表和保护。
+ms.openlocfilehash: bc44432d4d9478e4c6a2414a70acc785c5b2c005
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572425"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682899"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中配置安全链接的全局设置
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文适用于拥有 [Microsoft Defender For Office 365](office-365-atp.md)的商业客户。 如果您是在 Outlook 中查找有关 Safelinks 的信息的家庭用户，请参阅 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文适用于拥有 [Microsoft Defender for Office 365](office-365-atp.md)的企业客户。 如果你是一位家庭用户，正在查找有关 Outlook 中安全链接的信息，请参阅高级Outlook.com [安全](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全链接是 [Microsoft Defender For Office 365](office-365-atp.md) 中的一项功能，用于在邮件流中提供入站电子邮件的 URL 扫描，以及单击电子邮件中的 url 和链接以及在其他位置中进行验证的时间。 有关详细信息，请参阅 [Microsoft Defender For Office 365 中的安全链接](atp-safe-links.md)。
+安全链接是 Microsoft [Defender for Office 365](office-365-atp.md) 中的一项功能，它提供对邮件流中入站电子邮件的 URL 扫描，以及单击验证电子邮件和其他位置中的 URL 和链接的时间。 有关详细信息，请参阅 [Microsoft Defender for Office 365 中的安全链接](atp-safe-links.md)。
 
-在安全链接策略中配置最安全的链接设置。 有关说明，请参阅 [在 Microsoft Defender For Office 365 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+您可以在安全链接策略中配置大多数安全链接设置。 有关说明，请参阅 [Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)中的"设置安全链接策略"。
 
-但是，安全链接还使用适用于所有活动安全链接策略中包含的所有用户的全局设置。 以下全局设置区域：
+但是，安全链接还使用适用于任何活动安全链接策略中包含的所有用户的全局设置。 这些全局设置区域：
 
-- **阻止以下 url** 列表。 有关详细信息，请参阅 [安全链接的 "阻止以下 url" 列表](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
-- Office 365 应用的安全链接保护。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
+- 阻止 **以下 URL** 列表。 有关详细信息，请参阅安全链接的"阻止以下 [URL"列表](atp-safe-links.md#block-the-following-urls-list-for-safe-links)
+- Office 365 应用的安全链接保护。 有关详细信息，请参阅 [Office 365 应用的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-您可以使用 Exchange Online 中的邮箱在安全 & 合规性中心或 PowerShell (Exchange Online PowerShell 中配置全局安全链接设置，以获取符合 Exchange Online 中邮箱的符合条件的 Microsoft 365 组织;独立 EOP PowerShell for 不含 Exchange Online 邮箱的组织，但使用 Microsoft Defender for Office 365 附加订阅) 。
+可以在安全与合规中心或 PowerShell (& Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的符合条件的 Microsoft 365 组织配置全局安全链接设置;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell，但具有适用于 Office 365 附加订阅的 Microsoft Defender) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全链接的全局设置提供的功能仅适用于包含在活动安全链接策略中的用户。 没有内置的或默认的安全链接策略，因此您需要至少创建一个安全链接策略，以便这些全局设置处于活动状态。 有关说明，请参阅 [在 Microsoft Defender For Office 365 中设置安全链接策略](set-up-atp-safe-links-policies.md)。
+- 安全链接的全局设置提供的功能仅应用于活动安全链接策略中包含的用户。 没有内置或默认安全链接策略，因此您需要创建至少一个安全链接策略，以便这些全局设置处于活动状态。 有关说明，请参阅 [Microsoft Defender for Office 365](set-up-atp-safe-links-policies.md)中的"设置安全链接策略"。
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到 " **安全链接** " 页面，请使用 <https://protection.office.com/safelinksv2> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到" **安全链接"** 页，请使用 <https://protection.office.com/safelinksv2> 。
 
 - 若要连接到 Exchange Online PowerShell，请参阅[连接到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要连接到独立 EOP PowerShell，请参阅[连接到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您需要在安全 & 合规性中心中分配权限，然后才能执行本文中的过程：
-  - 若要配置安全链接的全局设置，您必须是 " **组织管理** " 或 " **安全管理员** " 角色组的成员。
-  - 若要对安全链接的全局设置进行只读访问，您需要是 **全局读取器** 或 **安全读者** 角色组的成员。
+- 必须分配有 Office 365 安全与合规中心内的权限，才能执行本文中的步骤：
+  - 若要配置安全链接的全局设置，您必须是组织管理或 **安全** 管理员角色组的成员。
+  - 若要对安全链接的全局设置进行只读访问，你需要是全局读者或安全读者 **角色组** 的成员。
 
-  有关详细信息，请参阅[安全与合规中心中的权限](permissions-in-the-security-and-compliance-center.md)。
+  有关详细信息，请参阅 [安全与合规中心的权限](permissions-in-the-security-and-compliance-center.md)。
 
   **注意**：
 
-  - 将用户添加到 Microsoft 365 管理中心中对应的 Azure Active Directory 角色，用户可为用户提供安全 & 合规性中心的必需权限 _以及_ Microsoft 365 中其他功能的权限。 有关详细信息，请参阅[关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 "**仅查看组织管理**" 角色组也提供了对功能的只读访问权限。
+  - 向 Microsoft 365 管理中心相应的 Azure 活动目录添加用户会向其提供安全与合规中心的必备权限 _以及_ Microsoft 365其它功能的权限。 有关详细信息，请参阅 [关于管理员角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **仅查看组织管理人员** 角色组也提供到该功能的只读访问。
 
 - 有关安全链接的全局设置的建议值，请参阅 [安全链接设置](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
-- 允许使用最长30分钟的时间来应用新的或更新的策略。
+- 最多允许应用新策略或更新策略 30 分钟。
 
-- [新功能将不断添加到 Microsoft Defender For Office 365](office-365-atp.md#new-features-in-microsoft-defender-for-office-365)中。 添加新功能时，您可能需要对现有安全链接策略进行调整。
+- [新功能不断添加到 Microsoft Defender for Office 365。](office-365-atp.md#new-features-in-microsoft-defender-for-office-365) 添加新功能时，可能需要对现有安全链接策略进行调整。
 
-## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>在安全 & 合规性中心中配置 "阻止以下 Url" 列表
+## <a name="configure-the-block-the-following-urls-list-in-the-security--compliance-center"></a>在安全与合规中心中配置"阻止& URL"列表
 
-**Block：以下 url** 列表标识了应始终被受支持的应用程序中的安全链接扫描所阻止的链接。 有关详细信息，请参阅 [安全链接的 "阻止以下 url" 列表](atp-safe-links.md#block-the-following-urls-list-for-safe-links)。
+" **阻止以下 URL"** 列表标识应始终被支持应用中的安全链接扫描阻止的链接。 有关详细信息，请参阅安全链接的"阻止 [以下 URL"列表](atp-safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，然后单击 " **全局设置**"。
+1. 在安全&，转到 **"威胁管理** 策略 \>  \> **ATP 安全链接**"，然后单击"**全局设置"。**
 
-2. 在您的组织的 " **安全链接策略** " 飞出时，请转到 " **阻止以下 url** " 框。
+2. 在 **出现的组织安全** 链接策略中，转到"阻止 **以下 URL"** 框。
 
-3. 配置一个或多个条目，如 ["阻止以下 url 的条目语法" 列表](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)中所述。
+3. 配置一个或多个条目，如"阻止以下 [URL"列表的条目语法中所述](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
    完成时，请单击“保存”。
 
-### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>在 PowerShell 中配置 "阻止以下 Url" 列表
+### <a name="configure-the-block-the-following-urls-list-in-powershell"></a>在 PowerShell 中配置"阻止以下 URL"列表
 
-有关输入语法的详细信息，请参阅 ["阻止以下 url 的条目语法" 列表](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
+有关条目语法的详细信息，请参阅"阻止以下 [URL"列表的条目语法](atp-safe-links.md#entry-syntax-for-the-block-the-following-urls-list)。
 
-您可以使用 **AtpPolicyForO365** Cmdlet 查看 _BlockURLs_ 属性中的现有条目。
+您可以使用 **Get-AtpPolicyForO365** cmdlet 查看 _BlockURLs_ 属性中的现有条目。
 
-- 若要添加将替换任何现有条目的值，请在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用以下语法：
+- 若要添加将替换任何现有条目的值，请使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的以下语法：
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "Entry1","Entry2",..."EntryN"
   ```
 
-  本示例将以下项添加到列表中：
+  本示例向列表中添加以下条目：
 
-  - 阻止 fabrikam.com 的域、子域和路径。
-  - 阻止子域搜索，但不阻止父域或 tailspintoys.com 中的其他子域
+  - 阻止域、子域和fabrikam.com。
+  - 阻止子域研究，但不阻止子域中的父域或其他子tailspintoys.com
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls "fabrikam.com","https://research.tailspintoys.com*"
@@ -106,53 +106,53 @@ ms.locfileid: "49572425"
   Set-AtpPolicyForO365 -BlockUrls @{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}
   ```
 
-  本示例为 adatum.com 添加一个新条目，并删除 fabrikam.com 的条目。
+  本示例为 adatum.com 一个新条目，并删除 fabrikam.com。
 
   ```powershell
   Set-AtpPolicyForO365 -BlockUrls @{Add="adatum.com"; Remove="fabrikam"}
   ```
 
-## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>在安全 & 合规中心中为 Office 365 应用程序配置安全链接保护
+## <a name="configure-safe-links-protection-for-office-365-apps-in-the-security--compliance-center"></a>在安全与合规中心中为 Office 365 &保护
 
-Office 365 应用程序的安全链接保护适用于受支持的 Office 桌面、移动设备和 web 应用程序中的文档。 有关详细信息，请参阅 [Office 365 应用程序的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
+Office 365 应用的安全链接保护适用于受支持的 Office 桌面、移动和 Web 应用中的文档。 有关详细信息，请参阅 [Office 365 应用的安全链接设置](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在安全 & 合规性中心中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，然后单击 " **全局设置**"。
+1. 在安全&，转到 **"威胁管理** 策略 \>  \> **ATP 安全链接**"，然后单击"**全局设置"。**
 
-2. 在您的组织的 " **安全链接策略** " 飞出时，将在 "应用于以下内容的设置" 部分中配置以下设置： " **电子邮件除电子邮件** " 部分：
+2. 在 **出现的组织安全** 链接策略中，在"设置"中配置应用于电子邮件除外 **内容的以下** 设置：
 
-   - **Office 365 应用程序**：验证是否右侧的切换为支持的 Office 365 应用程序启用安全链接： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **Office 365** 应用程序：验证切换是否位于右侧，为受支持的 Office 365 应用启用安全 ![ 链接：打开 ](../../media/scc-toggle-on.png) 。
 
-   - **在用户单击安全链接时不进行跟踪**：将切换向左移动，以跟踪与受支持的 Office 365 应用程序中的阻止 url 相关的用户单击： ![ 关闭 ](../../media/scc-toggle-off.png) 。
+   - **Do not track when users click Safe Links**： Move the toggle to the left to track user clicks related to blocked URLs in supported Office 365 apps： Toggle off ![ ](../../media/scc-toggle-off.png) .
 
-   - **不允许用户单击到原始 URL 的安全链接**：验证切换是否向右以阻止用户在受支持的 Office 365 应用程序中单击原始阻止的 URL： ![ 开启 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **不允许用户** 单击到原始 URL 的安全链接：验证切换是否位于右侧，以防止用户单击到受支持的 Office 365 应用中的原始阻止的 URL： ![ 打开 ](../../media/scc-toggle-on.png) 。
 
    完成时，请单击“保存”。
 
-### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>为 PowerShell 中的 Office 365 应用程序配置安全链接保护
+### <a name="configure-safe-links-protection-for-office-365-apps-in-powershell"></a>在 PowerShell 中为 Office 365 应用配置安全链接保护
 
-如果您更愿意使用 PowerShell 为 Office 365 应用程序配置安全链接保护，请在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中使用以下语法：
+如果你想要使用 PowerShell 为 Office 365 应用配置安全链接保护，请使用 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中的以下语法：
 
 ```powershell
 Set-AtpPolicyForO365 [-EnableSafeLinksForO365Clients <$true | $false> [-AllowClickThrough <$true | $false>] [-TrackClicks <$true | $false>]
 ```
 
-此示例为 Office 365 应用中的安全链接保护配置以下设置：
+本示例为 Office 365 应用中的安全链接保护配置以下设置：
 
-- Office 365 应用的安全链接已打开 (我们不使用 _EnableSafeLinksForO365Clients_ 参数，默认值为) $true。
-- 跟踪与受支持的 Office 365 应用程序中的阻止 Url 相关的用户单击。
-- 不允许用户在受支持的 Office 365 应用程序中点击到原始阻止的 URL (我们不使用 _AllowClickThrough_ 参数，默认值为 $false) 。
+- Office 365 应用的安全链接已打开 (我们未使用 _EnableSafeLinksForO365Clients_ 参数，默认值为 $true) 。
+- 跟踪与支持的 Office 365 应用中阻止的 URL 相关的用户单击。
+- 不允许用户在支持的 Office 365 应用中单击到原始阻止的 URL (因为我们没有使用 _AllowClickThrough_ 参数，并且默认值为 $false) 。
 
 ```powershell
 Set-AtpPolicyForO365 -TrackClicks $true
 ```
 
-有关语法和参数的详细信息，请参阅 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)。
+有关语法和参数的详细信息，请参阅[Set-AtpPolicyForO365。](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何判断这些过程生效了？
 
-若要验证是否已成功配置安全链接的全局设置 (**阻止以下 url** 列表和 Office 365 应用保护设置) ，请执行以下任一步骤：
+若要验证是否成功配置了安全链接的全局设置 (阻止以下 **URL** 列表和 Office 365 应用保护设置) ，请执行下列任一步骤：
 
-- 在 "安全性 & 合规性中心" 中，转到 " **威胁管理** \> **策略** \> **ATP 安全链接**"，单击 " **全局设置**"，然后验证出现的 "飞出" 中的设置。
+- 在安全&中心，转到"**威胁** 管理策略 \>  \> **ATP** 安全链接"，单击"全局设置"，然后验证出现的飞出设置。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，运行以下命令并验证设置：
 
@@ -160,4 +160,4 @@ Set-AtpPolicyForO365 -TrackClicks $true
   Get-AtpPolicyForO365 | Format-List BlockUrls,EnableSafeLinksForO365Clients,AllowClickThrough,TrackClicks
   ```
 
-  有关语法和参数的详细信息，请参阅 [AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)。
+  有关语法和参数的详细信息，请参阅[Get-AtpPolicyForO365。](https://docs.microsoft.com/powershell/module/exchange/get-atppolicyforo365)

@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 中的自动化调查和响应
-description: 在 Microsoft 365 Defender 中获取自动化调查和响应功能的概述（也称为自我修复）
-keywords: 自动化、调查、警报、触发、操作、修正、自我修复
+title: Microsoft 365 Defender 中的自动调查和响应
+description: 在 Microsoft 365 Defender 中大致了解自动调查和响应功能（也称为自我修复）
+keywords: 自动化， 调查， 警报， 触发器， 操作， 修正， 自我修复
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,16 +19,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356699"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683303"
 ---
-# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动化调查和响应
+# <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自动调查和响应
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,28 +36,27 @@ ms.locfileid: "49356699"
 **适用于：**
 - Microsoft 365 Defender
 
-> 想要体验 Microsoft 365 Defender？ 您可以 [在实验室环境中对其进行评估](https://aka.ms/mtp-trial-lab) ，也可以 [在生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
+> 想要体验 Microsoft 365 Defender？ 可以在[实验室环境中对其进行评估或在](https://aka.ms/mtp-trial-lab)[生产中运行试点项目](https://aka.ms/m365d-pilotplaybook)。
 >
 
-随着安全警报的触发，安全操作团队可查看这些警报并采取措施来保护您的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 Microsoft 365 Defender 中的自动化调查和响应功能（通过自我修复）可能会有所帮助。
+## <a name="how-automated-investigation-and-self-healing-works"></a>自动调查和自我修复的工作原理
+
+在触发安全警报时，由安全运营团队来调查这些警报，并采取措施来保护你的组织。 对警报进行优先级划分和调查可能会非常耗时，如果在调查期间不断发出新警报，则尤为如此。 安全运营团队可能对必须监视和防范的大量威胁感到不知所措。 Microsoft 365 Defender 中的自动调查和响应功能以及自我修复可提供帮助。
 
 观看以下视频，了解自我修复的工作原理：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 Defender 中，使用自愈功能的自动调查和响应可在您的设备、电子邮件 & 内容和标识之间运行。 Microsoft 365 Defender 将功能汇集在一起： 
-- [Microsoft Defender for Endpoint 中的自动调查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Microsoft Defender for Office 365 中的自动调查和响应](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Azure 高级威胁检测](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+在 Microsoft 365 Defender 中，使用自我修复功能自动调查和响应适用于你的设备、电子邮件&内容和标识。
  
-本文介绍了自动化调查和响应的工作方式。 若要配置这些功能，请参阅 [在 Microsoft 365 Defender 中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)。
+> [!TIP]
+> 本文介绍自动调查和响应的工作原理。 若要配置这些功能，请参阅在 [Microsoft 365 Defender](mtp-configure-auto-investigation-response.md)中配置自动调查和响应功能。
 
-## <a name="your-virtual-analyst"></a>你的虚拟分析师
+## <a name="your-own-virtual-analyst"></a>你自己的虚拟分析师
 
-想象一下，你的第 1 层/第 2 层安全运营团队中有一名虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟助手可以全天候工作，且容量无限制，它承担大量的调查和威胁修正工作。 这样的虚拟助手可以大大减少响应时间，让你的安全运营团队腾出时间来进行其他重要的战略项目。 如果此方案听起来像科学 fiction，则不是！ 此类虚拟分析员是 Microsoft 365 Defender 套件的一部分，其名称是 *自动调查和响应*。
+想象一下，你的第 1 层/第 2 层安全运营团队中有一名虚拟分析师。 虚拟分析师模仿安全运营团队调查和修正威胁所采取的理想步骤。 虚拟助手可以全天候工作，且容量无限制，它承担大量的调查和威胁修正工作。 这样的虚拟助手可以大大减少响应时间，让你的安全运营团队腾出时间来进行其他重要的战略项目。 如果此方案看起来像科学虚构，则不是！ 此类虚拟分析师是 Microsoft 365 Defender 套件的一部分，其名称是 *自动调查和响应*。
 
-自动化调查和响应使安全操作团队能够显著提高组织处理安全警报和事件的能力。 通过自动调查和响应，可以降低处理调查和补救活动的成本，并充分利用威胁防护套件。 自动调查和响应通过以下方式帮助您的安全运营团队：
+通过自动调查和响应，安全运营团队可以显著提高组织处理安全警报和事件的能力。 通过自动调查和响应，你可以降低调查和修正活动的成本，并利用威胁防护套件的最大功能。 自动调查和响应可帮助你的安全运营团队：
 
 1. 确定是否需要针对威胁执行操作；
 2. 执行（或建议执行）任何必要的修正操作；
@@ -68,23 +67,23 @@ ms.locfileid: "49356699"
 
 **警报** > **事件** > **自动调查** > **裁定** > **修正操作**
 
-触发的警报创建一个事件，该事件可以开始进行自动调查。 该调查可能会导致执行一项或多项修正操作。 在 Microsoft 365 Defender 中，每个自动调查都将来自 Microsoft Defender for Identity、Microsoft Defender for Endpoint 和 Defender for Office 365 的信号关联起来，如下表中所汇总： 
+触发的警报将创建一个事件，可以启动自动调查。 该调查可能会导致执行一项或多项修正操作。 在 Microsoft 365 Defender 中，每个自动调查将跨 Microsoft Defender for Identity、Microsoft Defender for Endpoint 和 Defender for Office 365 的信号关联起来，如下表所示： 
 
 |实体 |威胁防护服务  |
 |---------|---------|
 |设备（也称为终结点）     |[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |电子邮件内容（邮箱中的文件和邮件）     |[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-每个调查都会为调查) 的每个证据生成 verdicts (*恶意*、 *可疑* 或不会 *发现的威胁* 。 根据威胁的类型和得到的结论，将自动执行更正操作，或在组织的安全操作团队批准时执行。 "[操作中心](mtp-action-center.md)中列出了待处理和已完成的操作。
+每项调查都会 (*调查* 的每个证据) 恶意、可疑或无威胁"裁定。 根据威胁的类型和结果裁定，修正操作会自动执行，或在组织的安全运营团队批准后执行。 "[操作中心](mtp-action-center.md)中列出了待处理和已完成的操作。
 
 运行调查时，出现的所有其他相关警报将被添加到调查中，直到调查完成。 如果在其他位置看到受影响的实体，自动调查将扩大其范围，以包括该实体，并且将运行常规安全性 Playbook。 
 
 > [!NOTE]
-> 并不是每个警报都会触发自动调查，并且并非每个调查都会导致自动修正操作;这一切都取决于为您的组织配置自动调查和响应的方式。 请参阅 [在 Microsoft 365 Defender 中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)。
+> 不是每个警报都会触发自动调查，而不是每个调查都会触发自动修正操作;这一切都取决于如何为组织配置自动调查和响应。 请参阅 [在 Microsoft 365 Defender 中配置自动调查和响应功能](mtp-configure-auto-investigation-response.md)。
 
 
 ## <a name="next-steps"></a>后续步骤
 
-- [请参阅 Microsoft 365 Defender 中的自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
-- [为你的组织配置自动调查和响应](mtp-configure-auto-investigation-response.md)
+- [查看 Microsoft 365 Defender 中自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [为组织配置自动调查和响应](mtp-configure-auto-investigation-response.md)
 - [详细了解操作中心](mtp-action-center.md)

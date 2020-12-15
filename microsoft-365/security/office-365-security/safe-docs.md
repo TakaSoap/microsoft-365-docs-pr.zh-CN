@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Microsoft 365 E5 或 Microsoft 365 E5 安全中心中的安全文档。
-ms.openlocfilehash: 0acb5d4ee0c80deebc4d0b040b046d63037037a7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1bf802422dc05babaf5e2616468f8326b7007dc8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659869"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682933"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文档
 
@@ -60,9 +60,9 @@ ms.locfileid: "49659869"
 
 1. 在安全&，转到 **"威胁管理** 策略 \>  \> **ATP 安全附件**"，然后单击"**全局设置"。**
 
-2. 在 **出现的全局** 设置飞出中，配置以下设置：
+2. 在 **出现的全局设置** 飞出中，配置以下设置：
 
-   - **打开 Office 客户端的安全** 文档：将开关向右移动以打开功能： ![ 打开 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **打开 Office 客户端的安全** 文档：将开关向右移动以打开功能： ![ 打开 ](../../media/scc-toggle-on.png) 。
 
    - 即使安全文档将文件标识为恶意文件，也允许用户单击"受保护的视图"：建议将此选项保持关闭状态， (将开关向左切换 ![ ：) 。 ](../../media/scc-toggle-off.png)
 

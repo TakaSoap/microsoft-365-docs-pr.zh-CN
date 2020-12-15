@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在 Office 365 中从“受限的用户”门户中删除用户。 用户之所以被添加到“受限的用户”门户是因为发送出站垃圾邮件，这通常是由于帐户遭入侵所致。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572437"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683042"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>在 Office 365 中从“受限的用户”门户中删除被阻止的用户
 
@@ -86,7 +86,7 @@ ms.locfileid: "49572437"
 
 3. 在随即显示的浮出控件中，验证或配置下列设置：
 
-   - **状态**：验证此警报是否已启用 ![开关打开](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)。
+   - **状态**：验证此警报是否已启用 ![开关打开](../../media/scc-toggle-on.png)。
 
    - **电子邮件收件人**：单击“编辑”，然后在随即显示的“编辑收件人”浮出控件中验证或配置下列设置：
 

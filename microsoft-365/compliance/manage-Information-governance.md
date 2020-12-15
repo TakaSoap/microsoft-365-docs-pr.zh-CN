@@ -29,9 +29,9 @@ ms.locfileid: "49087111"
 
 ![管理数据 - 信息治理和记录管理](../media/information-governance-records-management.png)
 
-想要保护数据？请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
+需要保护数据？ 请参阅 [Microsoft 365 中的 Microsoft 信息保护](information-protection.md)。
 
-## <a name="information-governance"></a>信息治理
+## <a name="information-governance"></a>信息管理政策
 
 保留所需要的东西，删除不需要的东西：
  

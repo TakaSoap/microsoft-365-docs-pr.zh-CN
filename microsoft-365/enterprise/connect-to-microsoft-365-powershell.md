@@ -26,18 +26,18 @@ ms.locfileid: "49002401"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 连接 Microsoft 365
 
-*本文适用于 Microsoft 365 企业版和 Office 365 企业版。*
+*此文章适用于 Microsoft 365 企业版和 Office 365 企业版。* 
 
 PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设置。 要连接到 PowerShell，只需安装所需的软件，然后连接到 Microsoft 365 组织。
 
 可以使用两种版本的 PowerShell 模块连接至 Microsoft 365 和管理员用户帐户、组和许可证：
 
-- Azure Active Directory PowerShell for Graph（其 cmdlet 在其名称中包含 *AzureAD* ）
-- 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（其 cmdlet 在其名称中包含 *Msol* ）
+- Azure Active Directory PowerShell for Graph（其 cmdlet 在其名称中包含 *AzureAD*）
+- 用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块（其 cmdlet 在其名称中包含 *Msol*）
 
 目前，对于用户、组和许可证管理，Azure Active Directory PowerShell for Graph 模块不能完全替代用于 Windows PowerShell 模块的 Microsoft Azure Active Directory 模块的功能。 在某些情况下，需要同时使用两种版本。 可以在同一计算机上安全地安装两种版本。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
+## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，需要知道什么？
 
 
 **操作系统**
@@ -65,7 +65,7 @@ PowerShell for Microsoft 365 可让你从命令行管理您的 Microsoft 365 设
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>连接到 Azure Active Directory PowerShell Graph 模块
 
-Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称中包含 *AzureAD* 。 可安装[Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) 模块或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称中包含 *AzureAD*。 可安装[Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) 模块或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
 
 有关在 Azure Active Directory PowerShell Graph 模块中需要新 cmdlet 的过程，请按照以下步骤安装该模块并连接到 Microsoft 365 订阅。
 
@@ -98,7 +98,7 @@ Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称�
 | Office 365 美国政府版 DoD 和 Office 365 美国政府版 GCC 高 | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-在“ **登录到你的帐户** ”对话框中，键入 Microsoft 365 工作或学校帐户用户名和密码，再选择“ **确定** ”。
+在“**登录到你的帐户**”对话框中，键入 Microsoft 365 工作或学校帐户用户名和密码，再选择“**确定**”。
 
 如果使用多重身份验证，请按照说明提供其他身份验证信息，例如验证码。
 
@@ -107,7 +107,7 @@ Azure Active Directory PowerShell Graph 模块中的命令在其 cmdlet 名称�
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>与用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块连接
 
 >[!Note]
->用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的 cmdlet 名称中具有 *Msol* 。
+>用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块中的 cmdlet 名称中具有 *Msol*。
 
 PowerShell 版本 7 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包含 *Msol* 的 Microsoft Azure Active Directory 模块。 对于 PowerShell 版本 7 和更高版本，必须使用 Azure Active Directory PowerShell for Graph 模块或 Azure PowerShell。
 
@@ -123,8 +123,8 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
     
    1. 打开提升的 Windows PowerShell 命令提示符（以管理员身份运行 Windows PowerShell）。
    1.  运行 **Install-Module MSOnline** 命令。
-   1. 如果系统提示安装 NuGet 提供程序，请键入 **Y** ，然后按 Enter 键。
-   1. 如果系统提示从 PSGallery 安装模块，请键入 **Y** ，然后按 Enter 键。
+   1. 如果系统提示安装 NuGet 提供程序，请键入 **Y**，然后按 Enter 键。
+   1. 如果系统提示从 PSGallery 安装模块，请键入 **Y**，然后按 Enter 键。
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步骤 2：连接到 Microsoft 365 订阅的 Azure AD
 
@@ -138,17 +138,17 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
 | Office 365 美国政府版 DoD 和 Office 365 美国政府版 GCC 高 | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-在“ **登录到你的帐户** ”对话框中，键入 Microsoft 365 工作或学校帐户用户名和密码，再选择“ **确定** ”。
+在“**登录到你的帐户**”对话框中，键入 Microsoft 365 工作或学校帐户用户名和密码，再选择“**确定**”。
 
 如果使用多重身份验证，请按照说明提供其他身份验证信息，例如验证码。
 
 ### <a name="how-do-you-know-it-worked"></a>如何知道它是正常工作的？
 
-如果你没有收到错误消息，则表明你已成功连接。 若要快速测试，请运行 Microsoft 365 cmdlet，例如 **Get-MsolUser** ，然后查看结果。
+如果你没有收到错误消息，则表明你已成功连接。 若要快速测试，请运行 Microsoft 365 cmdlet，例如 **Get-MsolUser**，然后查看结果。
   
 如果收到错误消息，请检查以下问题：
   
-- **常见问题是密码错误** 。 再次运行[步骤 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，并密切注意您输入的用户名和密码。
+- **常见问题是密码错误**。 再次运行[步骤 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，并密切注意您输入的用户名和密码。
     
 - **用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块要求在计算机上启用 Microsoft .NET Framework 3.5.* x*。很可能你的计算机已安装了较新的版本（例如 4 或 4.5.* x*）。 但可以启用或禁用与 .NET Framework 的早期版本的向后兼容性。 有关详细信息，请参阅以下文章：
     
@@ -165,11 +165,11 @@ PowerShell Core 不支持用于 Windows PowerShell 和 cmdlet 的其名称中包
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    如果返回的版本号低于 *1.0.8070.2* ，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述 [第 1 步](#step-1-install-the-required-software)进行安装。
+    如果返回的版本号低于 *1.0.8070.2*，请卸载用于 Windows PowerShell 的 Microsoft Azure Active Directory 模块，并通过上述[第 1 步](#step-1-install-the-required-software)进行安装。
 
 - **如果收到连接错误，请参阅**[“Connect-MsolService：抛出类型异常”错误](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-- **如果收到“Get-Item：找不到路径”错误消息** ，请运行以下命令：
+- **如果收到“Get-Item：找不到路径”错误消息**，请运行以下命令：
 
 
    ```powershell

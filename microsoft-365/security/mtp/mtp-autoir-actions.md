@@ -1,5 +1,5 @@
 ---
-title: 在自动调查后批准或拒绝待处理的操作
+title: 批准或拒绝自动调查后挂起的操作
 description: 使用操作中心管理与自动调查和响应相关的操作
 keywords: 操作, 中心, autoair, 自动化, 调查, 响应, 修正
 search.appverid: met150
@@ -20,15 +20,15 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846528"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683355"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>在自动调查后批准或拒绝待处理的操作
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>批准或拒绝自动调查后挂起的操作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,12 +39,12 @@ ms.locfileid: "48846528"
 运行自动调查后，可能会生成一个或多个[修正操作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)，需要批准这些操作才能继续。 例如，可能需要删除电子邮件的群集，或者可能需要删除已隔离的文件。 应尽快批准（或拒绝）挂起的操作，以便自动调查可以继续并及时完成。 
 
 > [!TIP]
-> 如果你认为在 Microsoft 365 Defender 中，自动调查和响应功能中缺少或错误地检测到了某些内容，请告诉我们！ 请参阅 [如何在自动调查和响应中报告误报/负面 (在 Microsoft 365 Defender 中的空中) 功能](mtp-autoir-report-false-positives-negatives.md)。
+> 如果认为 Microsoft 365 Defender 中的自动调查和响应功能遗漏或检测错误，请告诉我们！ 请参阅 [如何在 Microsoft 365](mtp-autoir-report-false-positives-negatives.md)Defender 中的 AIR (功能中的自动调查和响应) 误报/负数。
 
-可以使用 [操作中心](#review-a-pending-action-in-the-action-center) 或 [调查详细信息视图](#review-a-pending-action-in-the-investigation-details-view)来审阅和批准挂起的操作。
+挂起的操作可以通过使用操作中心或 [调查详细信息视图](#review-a-pending-action-in-the-action-center) 进行 [审阅和批准](#review-a-pending-action-in-the-investigation-details-view)。
 
 > [!NOTE]
-> 必须具有[相应的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。
+> 必须具有[相应的权限](mtp-action-center.md#required-permissions-for-action-center-tasks)才能批准或拒绝修正操作。 有关详细信息，请参阅 [Microsoft 365 Defender 中自动调查和响应的先决条件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>在操作中心中查看挂起的操作
 
@@ -69,4 +69,4 @@ ms.locfileid: "48846528"
 ## <a name="next-steps"></a>后续步骤
 
 - [查看自动调查的详细信息和结果](mtp-autoir-results.md)
-- [处理自动调查和响应功能中的误报/否定](mtp-autoir-report-false-positives-negatives.md)
+- [处理自动调查和响应功能中的误报/负数](mtp-autoir-report-false-positives-negatives.md)

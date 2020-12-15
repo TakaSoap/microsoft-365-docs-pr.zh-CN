@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理员可以了解如何在安全与合规中心的租户允许/阻止& URL 条目。
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659994"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683207"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租户允许/阻止列表中的 URL
 
@@ -34,13 +34,13 @@ ms.locfileid: "49659994"
 
 安全与合规中心中的租户&/阻止列表提供了一种手动替代 Microsoft 365 筛选裁定的方法。 租户允许/阻止列表在邮件流期间和用户单击时使用。 可以在租户允许/阻止列表中指定允许或阻止的 URL。
 
-本主题介绍如何在安全 & 合规中心或 PowerShell (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止列表条目;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
+本主题介绍如何在安全与合规中心或 PowerShell & (Exchange Online PowerShell 中为在 Exchange Online 中拥有邮箱的 Microsoft 365 组织配置租户允许/阻止列表条目;适用于没有 Exchange Online 邮箱的组织的独立 EOP PowerShell) 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>开始前，有必要了解什么？
 
-- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到"租户允许 **/阻止列表"** 页，请使用 <https://protection.office.com/tenantAllowBlockList> 。
+- 安全与合规中心的打开网址为 <https://protection.office.com/>。 若要直接转到租户允许 **/阻止列表** 页，请使用 <https://protection.office.com/tenantAllowBlockList> 。
 
-- 本文稍后的"租户允许/阻止列表"一节的 URL 语法中介绍了 [可用的 URL](#url-syntax-for-the-tenant-allowblock-list) 值。
+- 本文稍后的"租户允许/阻止列表"一节的 URL 语法中介绍了 [可用的](#url-syntax-for-the-tenant-allowblock-list) URL 值。
 
 - 租户允许/阻止列表允许最多 500 个 URL 条目。
 
@@ -83,7 +83,7 @@ ms.locfileid: "49659994"
 
      或
 
-     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
    - **可选注意**：输入条目的描述性文本。
 
@@ -111,11 +111,11 @@ ms.locfileid: "49659994"
 
 - **操作**：选择 **"允许"****和/或"阻止**"。
 
-- **永不过期**：选择 (![ 关闭) ](../../media/scc-toggle-off.png) 或 (![ 切换 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)) 。
+- **永不过期**： 选择关闭： ![ 关闭 ](../../media/scc-toggle-off.png) 或打开： ![ 切换。 ](../../media/scc-toggle-on.png)
 
 - **Last updated**： Select a start date (**From**) ， an end date (**To**) both.
 
-- **到期日期：** 选择开始日期 (**开始日期) 、** 结束日期 () 两者。 
+- **到期日期：** 选择开始日期 (开始日期) 、结束日期 () 两者。  
 
 完成后，单击"应用 **"。**
 
@@ -133,7 +133,7 @@ ms.locfileid: "49659994"
 
 4. 在出现的飞出中，配置以下设置：
 
-   - **阻止/允许**：选择 **"允许**"或"**阻止"。**
+   - **阻止/允许**：选择 **"允许"** 或"**阻止"。**
 
    - **永不过期**：执行下列步骤之一：
 
@@ -141,7 +141,7 @@ ms.locfileid: "49659994"
 
      或
 
-     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - 将开关向右移动以将条目配置为永不过期： ![切换开关打开](../../media/scc-toggle-on.png).
 
    - **可选注意**：输入条目的描述性文本。
 
@@ -251,7 +251,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     例如， `*.contoso.com` 允许; `*contoso.com` 不允许。
 
-  - 右通配符必须按照正斜杠 (/) 指定路径。
+  - 右通配符必须遵循正斜杠 (/) 指定路径。
 
     例如， `contoso.com/*` 允许; `contoso.com*` `contoso.com/ab*` 或不允许。
 
@@ -285,7 +285,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 **条目**： `contoso.com`
 
-- **允许匹配**： contoso.com
+- **允许匹配**：contoso.com
 
 - **允许不匹配**：
 
