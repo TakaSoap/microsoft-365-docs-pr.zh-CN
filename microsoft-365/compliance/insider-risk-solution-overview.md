@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: a7a37464dc011d319021496c6d06bdf975c53f82
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 6e6ad80697d332d0bccb248071b8deadf09fe8de
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624794"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671013"
 ---
-# <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 中的内部风险解决方案
+# <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 内部风险解决方案
 
-内部风险是新式工作场所中安全与合规专业人员最担心的问题之一。 行业研究表明，内部风险通常与特定用户事件或活动相关联。 保护组织免受这些风险可能难以识别，并且难以缓解。 内部风险包括多个方面的漏洞，并且可能导致组织出现严重问题，包括知识产权丢失和工作场所暴力等。 下图概述了常见的内部风险：
+内部风险是新式工作场所中安全与合规专业人员最担心的问题之一。 行业研究表明，内部风险通常与特定的用户事件或活动相关联。 保护组织免受这些风险可能难以识别，并且难以缓解。 内部风险包括多个方面的漏洞，并且可能导致组织出现严重问题，包括知识产权丢失和工作场所暴力等。 下图概述了常见的内部风险：
 
 ![内部风险威胁](../media/ir-solution-threats.png)
 
@@ -51,10 +51,10 @@ Microsoft 365 风险防护功能专为内部风险产品和解决方案设计并
 
 | 解决方案/功能 | 说明 | 许可 |
 | :------------------------ | :-------------- | :------------ |
-| 通信合规性 | 通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 | Microsoft 365 E5 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 |
-| 内部风险管理 | 内部风险管理通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 | Microsoft 365 E5 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 |
+| 通信合规性 | 通信合规性通过帮助您检测、捕获和操作组织中不适当的邮件，帮助最大程度地降低通信风险。 | Microsoft 365 E5 订阅 (付费版或试用版)  <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br> Microsoft 365 A5 订阅 (付费版或试用版)  <br> Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项 <br> Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项 <br> Microsoft 365 G5 订阅 (付费版或试用版)  <br> Microsoft 365 G5 订阅 + Microsoft 365 G5 合规性加载项 <br> Microsoft 365 G5 订阅 + Microsoft 365 G5 Insider Risk Management 加载项 <br> Office 365 企业版 E5 订阅 (付费版或试用版)  <br> Office 365 A5 订阅 (付费版或试用版)  <br> Office 365 企业版 E3 订阅 + Office 365 高级合规性 (不再可用于新订阅)  |
+| 内部风险管理 | 内部风险管理通过让你能够检测、调查和处理组织中恶意和无意的活动，帮助最大程度地降低内部风险。 | Microsoft 365 E5 订阅 (或试用版) Microsoft 365 E3 订阅 + Microsoft 365 E5 合规性加载项 <br> Microsoft 365 E3 订阅 + Microsoft 365 E5 Insider Risk Management 加载项 <br> Microsoft 365 A5 订阅 (付费版或试用版)  <br> Microsoft 365 A3 订阅 + Microsoft 365 A5 合规性加载项 <br> Microsoft 365 A3 订阅 + Microsoft 365 A5 Insider Risk Management 加载项 |
 | 信息屏障 | 信息屏障允许您限制两个内部组之间的通信和协作，以避免在组织中发生利益冲突。  | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Office 365 高级合规版 <br> Microsoft 365 合规性 E5/A5 <br> Microsoft 365 内部风险管理 |
-| 特权访问管理 | 特权访问管理允许对 Office 365 中特权 Exchange Online 管理员任务的精细访问控制。 它可以帮助保护组织免受使用现有特权管理员帐户的漏洞，这些帐户具有对敏感数据的常访问权或关键配置设置的访问权限。 | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Microsoft 365 E5/A5 合规性 <br> Microsoft 365 E5/A5 信息保护和治理 |
+| 特权访问管理 | 特权访问管理允许对 Office 365 中特权 Exchange Online 管理员任务的精细访问控制。 它可以帮助保护组织免受使用现有特权管理员帐户的漏洞，这些帐户具有对敏感数据的长期访问权限或关键配置设置的访问权限。 | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Microsoft 365 E5/A5 合规性 <br> Microsoft 365 E5/A5 信息保护和治理 |
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 内部风险解决方案
 
@@ -69,9 +69,9 @@ Microsoft 365 风险防护功能专为内部风险产品和解决方案设计并
 
 ## <a name="illustrations-with-examples"></a>带示例的图示
 
-为了帮助你规划实施 Microsoft 365 内部风险功能的集成策略，请下载 *Microsoft 365 信息* 保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示主题 5-7。 可随时根据自己的使用情况来修改这些插图。
+为了帮助你规划实施 Microsoft 365 内部风险功能的集成策略，请下载 *Microsoft 365* 信息保护和合规性功能集的图示。 有关内部风险功能，请参阅体系结构图示主题 5-7。 可随时根据自己的使用情况来修改这些插图。
 
-| 项目 | 说明 |
+| Item | 说明 |
 |:-----|:------------|
 |[![模型海报：Microsoft 365 信息保护和合规性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [下载为 PDF](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[下载为 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 2020 年 10 月更新|包括： <ul><li>  Microsoft 信息保护和数据丢失防护</li><li>保留策略和保留标签 </li><li>信息屏障</li><li>通信合规性</li><li>内部风险管理</li><li>第三方数据摄取</li>|
 
@@ -84,7 +84,7 @@ Microsoft 365 提供以下资源来帮助通知组织中这些用户并培训这
 | 解决方案/区域 | 资源 |
 |:------------------|:--------------|
 | 在 Microsoft 365 中管理内部风险 |[完整的学习路径](/learn/paths/m365-compliance-insider) <br> 此学习路径包括通信合规性、内部风险管理、信息屏障和特权访问管理的所有单个解决方案模块。 选择此学习路径以完成所有模块。 |
-| 通信合规性 | [学习模块：在 Microsoft 365 中准备通信合规性](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 本模块可帮助你了解如何识别和修正通信合规性的行为代码违反策略的基础知识，涵盖创建通信合规性策略之前所需的先决条件，并了解通信合规性中内置的预定义策略模板的类型。 |
+| 通信合规性 | [学习模块：在 Microsoft 365 中准备通信合规性](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> 本模块可帮助你了解如何识别和修正通信合规性的行为代码违反策略的基础知识，涵盖创建通信合规性策略之前所需的先决条件，并了解通信合规性中内置预定义的策略模板的类型。 |
 | 内部风险管理 | [学习模块：Microsoft 365 中的内部风险管理](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> 本模块可帮助你了解 Microsoft 365 中的内部风险管理如何帮助预防、检测和包含组织的内部风险，了解内置预定义策略模板的类型，了解创建内部风险策略之前所需的基本先决条件，并说明您可以对内部风险管理案例采取的操作类型。 |
-| 信息屏障 | [学习模块：规划信息屏障](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> 本模块可帮助你了解信息屏障策略如何有助于组织保持对相关行业标准和法规的遵从性，列出信息屏障适用的情况类型，帮助解释创建信息屏障策略的过程，并帮助解释在信息屏障就位后如何解决意外问题。 |
+| 信息屏障 | [学习模块：规划信息屏障](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> 本模块可帮助你了解信息屏障策略如何有助于组织保持对相关行业标准和法规的遵从性，列出信息屏障适用的情况类型，帮助解释创建信息屏障策略的过程，并帮助说明在信息屏障就位后如何解决意外问题。 |
 | 特权访问管理 | [学习模块：实现特权访问管理](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> 此模块可帮助您了解特权访问管理和特权标识管理的区别，了解特权访问管理流程，并了解如何配置和启用特权访问管理的基础知识。 |

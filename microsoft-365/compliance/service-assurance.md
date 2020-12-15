@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下载第三方审核，了解 Microsoft 如何确保客户数据安全，并了解如何在使用 Office 365 时遵守 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655516"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671003"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全与合规中心内的服务保证
 
 使用安全与合规&中的服务保证来访问描述各种主题的文档，包括： 
   
-- 存储在 Office 365 中的客户数据的 Microsoft 安全实践。 
+- Office 365 中存储的客户数据的 Microsoft 安全实践。 
     
 - Office 365 的独立第三方审核报告。 
     
@@ -43,14 +43,11 @@ ms.locfileid: "49655516"
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>谁可以访问 Office 365 服务保障以及如何？
 
- 新客户 **和评估 Microsoft 联机** 服务的客户可以访问 Office 365 企业版 E3 和 E5 计划中包含的服务保证 (试用订阅和付费订阅) 。 如果你没有这些计划之一，并且想要试用服务保证，可以注册 [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=698279)企业版 E5 试用版。 
-  
- **Microsoft 365 商业版的现有客户** 可以访问服务保证。 如果你是全局管理员 (有时称为) 管理员，你已有权访问服务保障，并且你可以载入其他人。 如果你不是组织的全局管理员，并且你需要访问服务保障，请让管理员将你添加到服务保障用户角色组。 
+ 新客户 **和评估 Microsoft 联机** 服务的客户可以访问 Office 365 企业版 E3 和 E5 计划中包含的服务保证 (试用订阅和付费订阅) 。 如果你没有这些计划之一，并且想要试用服务保证，可以注册 [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=698279)企业版 E5 试用版。
   
  **默认情况下，O365** 订阅成员可以访问 Office 365 保护中心中的"服务保证"部分。 服务保证提供报告和文档，介绍 Microsoft 针对 Office 365 中存储的客户数据的安全做法。 它还提供有关 Office 365 的独立第三方审核报告。
-  
  
-## <a name="choose-your-industry-and-regional-settings"></a>选择你的行业和区域设置
+## <a name="choose-your-industry-and-regional-settings"></a>选择行业和区域设置
 <a name="Chooseyourindustryregional"> </a>
 
 首次访问服务保证时，第一步是配置行业和区域设置。 您可以随时更改这些设置。 配置这些设置可使服务保证为您提供与组织最相关的内容。 配置行业和地区设置：
@@ -90,8 +87,8 @@ ms.locfileid: "49655516"
 |**服务保证页面**|**可用内容**|**说明**|
 |:-----|:-----|:-----|
 |合规性报告  <br/> | FedRamp  <br/>  GRC 评估  <br/>  ISO  <br/>  SOC/SSAE  <br/> |使用服务合规性报告审核由 Office 365 服务交付操作的第三方独立审核员执行的审核评估。  <br/> |
-|信任文档  <br/> | 常见问题解答和白皮书  <br/>  风险管理报告  <br/> |使用白皮书、常见问题解答、年度结束报告和其他 Microsoft 机密资源，这些资源根据保密协议提供给你进行审阅/风险评估。  <br/> |
-|已审核的控件  <br/> |Office 365 已实施的全球标准和法规。  <br/> | 在评估、载入或使用 Office 365 服务时，帮助进行风险评估。 找出：  <br/> <br/>- Office 365 控件如何满足安全性、合规性和隐私要求。  <br/>- 关于在 Office 365 中测试控件、这些测试结果以及何时完成。  <br/> |
+|信任文档  <br/> | 常见问题解答和白皮书  <br/>  风险管理报告  <br/> |使用根据保密协议提供给你的审查/风险评估的白皮书、常见问题解答、年度结束报告和其他 Microsoft 机密资源。  <br/> |
+|审核的控件  <br/> |Office 365 已实施的全球标准和法规。  <br/> | 在评估、载入或使用 Office 365 服务时帮助进行风险评估。 找出：  <br/> <br/>- Office 365 控件如何满足安全性、合规性和隐私要求。  <br/>- 关于 Office 365 中的控件测试、这些测试的结果以及完成时间。  <br/> |
    
 根据您的特定设置，视图中包含的选项可能有一些差异。
     

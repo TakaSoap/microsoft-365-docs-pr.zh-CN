@@ -1,143 +1,97 @@
 ---
-title: '管理您的知识管理网络 (预览)  '
-description: 如何设置知识管理。
+title: 在 Microsoft 365 中管理主题发现
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: 了解如何在 Microsoft 365 中管理主题发现。
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988921"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667845"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>管理您的知识管理网络 (预览) 
+# <a name="manage-topic-discovery-in-microsoft-365"></a>在 Microsoft 365 中管理主题发现
 
-> [!Note] 
-> 本文中的内容适用于 Project Cortex 私人预览。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
+可以在 [Microsoft 365](https://admin.microsoft.com)管理中心管理主题发现设置。 您必须是全局管理员或 SharePoint 管理员才能执行这些任务。
 
+## <a name="to-access-topics-management-settings"></a>访问主题管理设置：
 
-在 [设置知识管理](set-up-topic-experiences.md)之后，在任何时间之后，管理员都可以通过 Microsoft 365 管理中心对您的配置设置进行调整。
+1. 在 Microsoft 365 管理中心中，单击"**设置**"，然后单击"**组织设置"。**
+2. 在"**服务"** 选项卡上，单击 **"知识网络"。**
 
-例如，您可能需要调整以下任一项的设置：
-- 将新的 SharePoint 源代码添加到 "我的应用" 主题。
-- 更改哪些用户将有权访问主题。
-- 更改哪些用户具有在主题中心执行任务的权限。
-- 更改你的主题中心的名称
+    ![将人员连接到知识](../media/admin-org-knowledge-options-completed.png) 
 
+3. 选择 **"主题发现"** 选项卡。有关每个设置的信息，请参阅以下部分。
 
-## <a name="requirements"></a>Requirements 
-您必须具有全局管理员或 SharePoint 管理员权限才能访问 Microsoft 365 管理中心并管理组织知识任务。
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a>选择 SharePoint 主题源
 
-## <a name="to-access-knowledge-management-settings"></a>若要访问知识管理设置，请执行以下操作：
+您可以更改组织中将针对主题进行爬网的 SharePoint 网站。
 
-1. 在 Microsoft 365 管理中心，选择 " **设置** "，然后查看 " **组织知识库** " 部分。
-2. 在 " **组织知识** " 部分，单击 " **将人员连接到知识** "。<br/>
+如果要包含或排除特定网站列表，可以使用以下 .csv 模板：
 
-    ![将用户连接到知识](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. 在 " **将用户连接到知识** " 页上，选择 " **管理** " 以打开 " **知识网络设置** " 窗格。<br/>
+如果使用网站选取器添加网站，则它们将被添加到要包含或排除的现有网站列表中。 如果上载 .csv 文件，它将覆盖任何现有列表。 如果之前已包含或排除特定网站，则以 .csv 文件下载列表、进行更改并上载新列表。
 
-    ![知识网络-设置](../media/content-understanding/knowledge-network-settings.png) </br>
+为主题发现选择网站
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a>更改知识网络查找主题的方式
+1. 在 **"主题发现"** 选项卡上的 **"选择 SharePoint 主题源"下**，选择"**编辑"。**
+2. 在 **"选择 SharePoint 主题源** "页上，选择要在发现过程中作为主题源对哪些 SharePoint 网站进行爬网。 这包括：
+    - **所有网站**：租户中所有 SharePoint 网站。 这将捕获当前和将来的网站。
+    - **全部，所选网站除外**：键入要排除的网站的名称。  还可以上载要选择从发现中退出的网站列表。 将来创建的网站将包含为主题发现源。 
+    - **仅选定网站**：键入要包含的网站的名称。 还可以上载网站列表。 将来创建的网站不会作为主题发现源包含在内。
+    - **无网站**：主题不会自动生成或随 SharePoint 内容一起更新。 现有主题保留在主题中心。
 
-如果要为 SharePoint 主题源更新您的选择，请选择 " **主题发现** " 选项卡。 通过此设置，可以选择租户中将对主题进行爬网和挖掘的 SharePoint 网站。
-
-1. 在 " **主题发现** " 选项卡上的 " **选择 SharePoint 主题源** " 下，选择 " **编辑** "。
-2. 在 " **选择 SharePoint 主题源** " 页上，选择要在发现过程中将哪些 SharePoint 网站作为主题的源进行爬网。 这包括：</br>
-    a. **所有网站** ：租户中的所有 SharePoint 网站。 这将捕获当前和未来的网站。</br>
-    b. **所有（选定网站除外）** ：键入要排除的网站的名称。  您还可以上载要从发现中退出的网站列表。 将来创建的网站将作为主题发现的源包括在内。 </br>
-    c. **仅选定网站** ：键入要包含的网站的名称。 您还可以上载网站列表。 将来创建的网站不会作为主题发现的源包括在内。 </br>
-
-    ![选择如何查找主题](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![SharePoint 主题源用户界面的屏幕截图](../media/k-manage-select-topic-source.png)
    
-    如果您有大量要排除的网站 (如果选择 **"全部" （选择的网站除外** ) 或包含 (）（如果只选择 **了 "选定网站** ) "，则可以选择使用网站名称和 url 上传 CSV 文件。 如果要使用 CSV 模板文件，则可以选择 " **下载网站模板 .csv"。**
+3. 单击“**保存**”。
 
-3. 选择“保存”。
+## <a name="exclude-topics-by-name"></a>按名称排除主题
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a>更改可以查看组织中的主题的用户
+可以通过使用 .csv 文件上载列表来从发现中排除主题。 如果之前已排除主题，可以下载 .csv，进行更改，然后重新上载。
 
-如果要更新组织中的哪些用户可以在搜索结果中查看发现的主题以及在 SharePoint 页面等内容中突出显示主题，请选择 " **主题发现** " 选项卡。
+1. 在"**主题发现"** 选项卡上的 **"排除主题**"下，选择 **"编辑"。**
+2. 单击 **"按名称排除主题"。**
+3. 如果需要创建列表，请下载 .csv 模板，并添加要排除的主题 (请参阅下面的 *.csv* 模板) 。 文件准备就绪后，单击" **浏览** "并上载文件。 如果存在现有列表，可以下载包含该列表的 .csv。
+4. 单击“**保存**”。
 
-1. 在 " **主题发现** " 选项卡上，在 " **谁可以查看知识网络中的主题** " 下，选择 " **编辑** "。
-2. 在 " **知识库中可以查看主题** " 页中，选择谁将有权访问主题详细信息，如突出显示的主题、主题卡片、搜索中的主题答案和主题页面。 可以选择：</br>
-    a. **组织中的所有人**</br>
-    b. **仅选定的人员或安全组**</br>
-    c. **没人**</br>
+    ![排除主题用户界面的屏幕截图](../media/km-manage-exclude-topics.png)
 
-    ![谁可以查看主题](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. 选择“保存”。  
- 
-> [!Note] 
-> 虽然此设置允许您选择组织中的任何用户，但只有分配有知识管理许可证的用户才能查看主题。
+### <a name="working-with-the-csv-template"></a>使用 .csv 模板
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a>更改有权在主题中心执行任务的谁
+你可以复制下面的 csv 模板：
 
-如果要在 "主题中心" 页中更新有权执行以下操作的用户，请选择 " **主题权限** " 选项卡：
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-- 哪些用户可以创建和编辑主题：创建在发现或编辑现有主题页面详细信息时找不到的新主题。
-- 哪些用户可以管理主题：确认或拒绝已发现的主题。
+在 CSV 模板中，输入有关要排除的主题的以下信息：
 
-若要更新有权创建和编辑主题的人士，请执行以下操作：
+- **名称**：键入要排除的主题的名称。 可通过 2 种方法执行此操作：
+    - 完全匹配：可以包括确切的名称或首字母缩写词 (例如 *Contoso* 或 *ATL*) 。
+    - 部分匹配：可以排除其中具有特定单词的所有主题。  例如 *，arc* 将排除其中带弧字的所有主题，如 *弧形圆*、圆弧 *弧* 线或 *培训弧*。请注意，它将不会排除作为单词的一部分包含的文本的主题，例如 *体系结构。*
+- **代表 (可选**) ：如果要排除首字母缩略词，请键入首字母缩写词代表的单词。
+- **MatchType-Exact/Partial：** 键入您输入的名称 *是精确匹配* 类型还是 *部分* 匹配类型。
 
-1. 在 " **主题权限** " 选项卡上，在 " **哪些人员可以创建和编辑主题** " 中，选择 " **编辑** "。</br>
-2. 在 " **可以创建和编辑主题的用户** " 页上，您可以选择：</br>
-    a. **组织中的所有人**</br>
-    b. **仅选定的人员或安全组**</br>
-
-    ![创建和编辑主题](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
-
-3. 选择“保存”。</br>
-
-若要更新谁有权管理主题，请执行以下操作：
-
-1. 在 " **主题权限** " 选项卡上，在 " **谁可以管理主题** " 中，选择 " **编辑** "。</br>
-2. 在 " **谁可以管理主题** " 页上，您可以选择：</br>
-    a. **组织中的所有人**</br>
-    b. **选定的人员或安全组**</br>
-
-    ![管理主题](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. 选择“保存”。</br>
-
-
-##  <a name="update-your-topic-center-name"></a>更新你的主题中心名称
-
-如果要更新您的主题中心的名称，请选择 " **主题中心** " 选项卡。 
-
-1. 在 " **主题中心** " 选项卡上的 " **主题中心名称** " 下，选择 " **编辑** "。
-2. 在 " **编辑主题中心名称** " 页上的 " **主题居中名称** " 框中，键入您的主题中心的新名称。
-3. 选择“ **保存** ”
-
-    ![编辑主题中心名称](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
+    ![排除 CSV 模板中的主题](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>另请参阅
 
+[在 Microsoft 365 中管理主题可见性](topic-experiences-knowledge-rules.md)
 
+[在 Microsoft 365 中管理主题权限](topic-experiences-user-permissions.md)
 
-  
-
-
-
-
-
+[在 Microsoft 365 中更改主题中心的名称](topic-experiences-administration.md)
 

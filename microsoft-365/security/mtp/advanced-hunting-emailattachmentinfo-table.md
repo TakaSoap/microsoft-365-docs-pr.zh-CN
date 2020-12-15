@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 EmailAttachmentInfo 表
 description: 在高级搜寻架构的 EmailAttachmentInfo 表中，了解电子邮件附件信息
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailAttachmentInfo、网络邮件 id、发件人、收件人、附件 id、附件名称、恶意软件结论
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailAttachmentInfo， 网络邮件 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 87ebf4ca0ff773dd5622097385173f538d990afc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847472"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667645"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -36,7 +36,7 @@ ms.locfileid: "48847472"
 
 
 
-`EmailAttachmentInfo`[高级搜寻](advanced-hunting-overview.md)架构中的表格包含有关 Microsoft Defender for Office 365 处理的电子邮件附件的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailAttachmentInfo` 搜寻架构 [中的](advanced-hunting-overview.md) 表包含有关 Microsoft Defender for Office 365 处理的电子邮件附件的信息。 使用此参考来构建从此表返回信息的查询。
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -52,6 +52,10 @@ ms.locfileid: "48847472"
 | `SHA256` | string | 录制操作所应用到的文件的 SHA-256。 通常不会填充此字段 — 可用时使用 SHA1 列。 |
 | `MalwareFilterVerdict` | string | 电子邮件筛选堆栈关于电子邮件是否包含恶意软件的裁定：恶意软件，非恶意软件 |
 | `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、安全附件 |
+| `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
+| `SenderObjectId` | string | Azure AD 中发件人的帐户的唯一标识符 |
+| `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
+| `ThreatNames` | string | 找到的恶意软件或其他威胁的检测名称 |
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)

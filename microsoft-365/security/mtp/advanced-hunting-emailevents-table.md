@@ -1,7 +1,7 @@
 ---
 title: 高级搜寻架构中的 EmailEvents 表
-description: 了解在高级搜寻架构的 EmailEvents 表中与 Microsoft 365 电子邮件相关联的事件
-keywords: 高级搜寻、威胁搜寻、网络威胁搜寻、microsoft 威胁防护、microsoft 365、mtp、m365、搜索、查询、遥测、架构参考、kusto、表、列、数据类型、说明、EmailEvents、网络邮件 id、发件人、收件人、附件 id、附件名称、恶意软件结论、仿冒判定、附件计数、链接计数、url 计数
+description: 在高级搜寻架构的 EmailEvents 表中了解与 Microsoft 365 电子邮件关联的事件
+keywords: 高级搜寻， 威胁搜寻， 网络威胁搜寻， Microsoft 威胁防护， microsoft 365， mtp， m365， 搜索， 查询， 遥测， 架构参考， kusto， 表， 列， 数据类型， 说明， EmailEvents， 网络消息 ID， 发件人， 收件人， 附件 ID， 附件名称， 恶意软件裁定， 网络钓鱼裁定， 附件计数， 链接计数， url 计数
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842628"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667633"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -36,10 +36,10 @@ ms.locfileid: "48842628"
 
 
 
-`EmailEvents`[高级搜寻](advanced-hunting-overview.md)架构中的表包含有关涉及 Microsoft Defender for Office 365 电子邮件处理的事件的信息。 使用此参考来构建从此表返回信息的查询。
+高级 `EmailEvents` 搜寻 [架构中的](advanced-hunting-overview.md) 表包含有关在 Microsoft Defender for Office 365 上处理电子邮件的事件的信息。 使用此参考来构建从此表返回信息的查询。
 
 >[!TIP]
-> 若要详细了解表支持的事件类型 (`ActionType` 值) ，请使用 "安全中心" 中提供的 [内置架构引用](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 有关事件类型的详细信息 (表) 支持的值，请使用安全中心中提供的内置 `ActionType` 架构参考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 有关高级搜寻架构中其他表的信息，请[参阅高级搜寻参考](advanced-hunting-schema-tables.md)。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48842628"
 | `DeliveryAction` | string | 电子邮件发送操作：已发送、已标记为垃圾邮件、已阻止或已替换 |
 | `DeliveryLocation` | string | 发送电子邮件的位置：收件箱/文件夹、本地/外部、垃圾箱、隔离区、已失败、已弃用、已删除的邮件 |
 | `PhishFilterVerdict` | string | 关于电子邮件是否是钓鱼邮件的电子邮件筛选堆栈裁定：钓鱼邮件或非钓鱼邮件 |
-| `PhishDetectionMethod` | string | 用于将电子邮件检测为网络钓鱼的方法：恶意 URL 信誉、安全链接 URL 沙箱、高级网络钓鱼筛选器、常规网络钓鱼筛选器、反欺骗：组织内、反欺骗：外部域、域模拟、用户模拟、品牌模拟 |
+| `PhishDetectionMethod` | string | 用于检测电子邮件为网络钓鱼的方法：恶意 URL 信誉、安全链接 URL 触发、高级网络钓鱼筛选器、常规网络钓鱼筛选器、反欺骗：组织内部、反欺骗：外部域、域模拟、用户模拟、品牌模拟 |
 | `MalwareFilterVerdict` | string | 关于电子邮件是否包含恶意软件的电子邮件筛选堆栈裁定：恶意软件，非恶意软件 |
 | `MalwareDetectionMethod` | string | 用于检测电子邮件中的恶意软件的方法：反恶意软件引擎、文件信誉、安全附件 |
 | `FinalEmailAction` | string | 基于筛选器裁定、策略和用户操作对电子邮件执行的最后操作：将邮件移到垃圾邮件文件夹、添加 X 标头、修改主题、重定向邮件、删除邮件、发送到隔离区、未执行任何操作、密件抄送邮件 |
@@ -71,6 +71,17 @@ ms.locfileid: "48842628"
 | `AttachmentCount` | int | 电子邮件中的附件数目 |
 | `UrlCount` | int | 电子邮件中的嵌入 URL 数目 |
 | `EmailLanguage` | string | 检测到的电子邮件内容的语言 |
+| `OrgLevelAction` | string | 为响应与组织级别定义的策略的匹配而对电子邮件采取的操作 |
+| `OrgLevelPolicy` | string | 触发对电子邮件采取的操作的组织策略 |
+| `UserLevelAction` | string | 对电子邮件采取的操作，以响应与收件人定义的邮箱策略的匹配 |
+| `UserLevelPolicy` | string | 触发对电子邮件采取的操作最终用户邮箱策略 |
+| `Connectors` | string | 定义组织邮件流和电子邮件路由方式的自定义说明 |
+| `SenderDisplayName` | string | 通讯簿中显示的发件人姓名，通常是给定或名字、中间名首字母和姓氏或姓氏的组合 |
+| `SenderObjectId` | string |Azure AD 中发件人的帐户的唯一标识符 |
+| `ThreatTypes` | string | 关于电子邮件是否包含恶意软件、网络钓鱼或其他威胁的电子邮件筛选堆栈裁定 |
+| `ThreatNames` | string |找到的恶意软件或其他威胁的检测名称 |
+| `DetectionMethods` | string | 用于检测电子邮件中的恶意软件、网络钓鱼或其他威胁的方法 |
+
 
 ## <a name="related-topics"></a>相关主题
 - [高级搜寻概述](advanced-hunting-overview.md)
