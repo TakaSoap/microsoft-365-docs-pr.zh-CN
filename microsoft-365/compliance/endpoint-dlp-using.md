@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 了解如何配置数据丢失防护 (DLP) 策略以使用 Microsoft 365 终结点数据丢失防护 (EPDLP) 位置。
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561679"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667807"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端点数据丢失防护
 
@@ -85,13 +85,6 @@ ms.locfileid: "49561679"
 #### <a name="unallowed-browsers"></a>不允许的浏览器
 
 你将添加由执行文件名标识的浏览器，这些浏览器将被阻止访问与强制 DLP 策略的条件匹配的文件，在该 DLP 策略中，“上载到云服务的限制”设置为“阻止”或“阻止覆盖”。 当这些浏览器被阻止访问文件时，最终用户将看到一则定制通知，要求他们通过 Microsoft Edge Chromium 打开文件。
-
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>始终审核已载入设备的文件活动
-
-控制 Office、PDF 和 CSV 文件的 DLP 活动是否会自动得到审核并可在审核遥测和已载入设备的活动资源管理器中进行审阅。 
-
-如果启用此选项（默认值），则始终会对已载入设备的文件活动进行审核，无论它们是否包含在处于活动状态的 DLP 策略中。
-如果关闭此选项，则仅当已载入设备的文件活动包含在处于活动状态的 DLP 策略中时，才会对其进行审核。 
 
 
 ## <a name="tying-dlp-settings-together"></a>将 DLP 设置捆绑在一起
