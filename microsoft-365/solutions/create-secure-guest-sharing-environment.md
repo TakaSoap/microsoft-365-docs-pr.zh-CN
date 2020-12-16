@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 了解可用于在 Microsoft 365 中创建安全来宾共享环境的选项，提供来宾访问以改进协作。
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558184"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667701"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>创建安全的来宾共享环境
 
@@ -162,7 +162,7 @@ ms.locfileid: "49558184"
 
 对于 Microsoft 365 组和团队，这是通过 Azure AD 条件访问策略完成的。 对于 SharePoint，这是在 SharePoint 管理中心中进行配置的。 （还可[使用敏感度标签限制来宾进行仅限于 Web 的访问](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。）
 
-限制来宾对团队和组进行仅 Web 访问
+限制来宾对团队和组进行仅 Web 访问：
 
 1. 转到 “[ Azure 条件访问策略](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade)”。
 2. 在“**条件访问 - 策略**”边栏选项卡上，单击“**新建策略**”。
