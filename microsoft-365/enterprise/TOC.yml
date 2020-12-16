@@ -274,20 +274,20 @@
               href: ms-cloud-germany-transition.md
             - name: 选择加入迁移
               href: ms-cloud-germany-migration-opt-in.md
-            - name: 客户体验
+            - name: 更改的内容
               href: ms-cloud-germany-transition-experience.md
-            - name: 迁移阶段操作和影响
+            - name: 准备工作
+              href: ms-cloud-germany-transition-add-pre-work.md
+            - name: 迁移阶段操作和影响（一般）
               href: ms-cloud-germany-transition-phases.md
+            - name: 迁移阶段操作和影响（高级）
+              href: ms-cloud-germany-transition-add-experience.md
             - name: 其他信息
               items:
-                - name: 常规
-                  href: ms-cloud-germany-transition-add-general.md
+                - name: Azure AD
+                  href: ms-cloud-germany-transition-azure-ad.md
                 - name: 设备
                   href: ms-cloud-germany-transition-add-devices.md
-                - name: 准备工作
-                  href: ms-cloud-germany-transition-add-pre-work.md
-                - name: 体验
-                  href: ms-cloud-germany-transition-add-experience.md
                 - name: AD FS 迁移步骤
                   href: ms-cloud-germany-transition-add-adfs.md
 - name: 标识
