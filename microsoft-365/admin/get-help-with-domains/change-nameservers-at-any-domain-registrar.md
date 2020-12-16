@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 了解如何在 Microsoft 365 中添加和设置域，以便电子邮件和 Skype for Business Online 等服务使用你自己的域名。
-ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658595"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688245"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>更改名称服务器以使用任意域注册机构设置 Microsoft 365
 
@@ -108,13 +108,13 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 ## <a name="change-your-domains-nameserver-ns-records"></a>更改域的名称服务器 (NS) 记录
 <a name="BKMK_nameservers"> </a>
 
-当你在 Microsoft 365 中到达域设置向导的最后一步时，你还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，请更改域注册机构中域的名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于 Microsoft 365 托管 DNS，因此会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
+在 Microsoft 365 中执行域设置向导的最后一步时，还有一项任务。 若要使用 Microsoft 365 服务（如电子邮件）设置域，请更改域注册机构中的域名称服务器 (或 NS) 记录，以指向 Microsoft 365 主名称服务器和辅助名称服务器。 然后，由于 Microsoft 365 托管 DNS，因此会自动为服务设置所需的 DNS 记录。 通过按照您的域注册机构在其网站的帮助内容中所提供步骤进行操作，您可以自己更新名称服务器记录。 如果不熟悉 DNS，请联系域注册机构的支持人员。
 
 ::: moniker range="o365-worldwide"
   
 若要在域注册机构的网站上更改您的域的名称服务器，请执行以下步骤：
   
-1. 在域注册机构网站上查找区域，可在其中更改域的名称服务器，或可在其中使用自定义名称服务器的区域。
+1. 在域注册机构网站上查找区域，您可以在其中更改域的名称服务器，或可在其中使用自定义名称服务器的区域。
     
 2. 创建名称机记录，或编辑现有名称机记录以匹配以下值：
     
@@ -147,7 +147,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 |次要名称服务器  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 您至少应该使用两个名称器记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将其更改为 **ns3.dns.partner.microsoftonline.cn和****ns4.dns.partner.microsoftonline.cn。** 
+   > 您至少应该使用两个名称机记录。 如果列出了任何其他名称服务器，您可以删除它们，或者将其更改为ns3.dns.partner.microsoftonline.cn ns4.dns.partner.microsoftonline.cn。  
   
 3. 保存所做的更改。
     
@@ -166,7 +166,7 @@ Microsoft 365 找到正确的 TXT 记录表明域已通过验证。
 
 2. 在"**域**"页上，选择域，然后选择 **"DNS 记录"。**
 
-3. 在 **DNS 设置下**，**选择"自定义记录**"，然后选择 **"新建自定义记录"。**
+3. 在 **"管理 DNS"** 下 **，选择"自定义记录**"，然后选择 **"新建自定义记录"。**
 
 4. 选择要添加的 DNS 记录的类型，然后键入新记录的信息。
 

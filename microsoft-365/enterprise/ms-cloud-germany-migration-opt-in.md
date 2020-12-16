@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552081"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688673"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何选择从德国 Microsoft 云（Microsoft Cloud Deutschland）迁移到新的德国数据中心区域内的 Office 365 服务
 
 >[!Note]
->本文仅适用于 Microsoft 云德国) 客户 (microsoft 云德国。
+>本文仅适用于德国 Microsoft 云 (德国 microsoft 云) 客户。
 >
 
 ## <a name="how-to-request-migration"></a>如何请求迁移
 
-具有在 Microsoft 云德国中设置的服务的符合条件的客户 (Microsoft 云) 将在 Microsoft 365 管理中心中看到一个页面，该页面将允许客户租户管理员选择加入迁移。
+在德国 Microsoft 云 (Microsoft Cloud Deutschland) 中预配服务的符合条件的客户将在 Microsoft 365 管理中心看到一个页面，该页面将允许客户租户管理员选择加入迁移。
 
 要访问 Microsoft 365 管理中心的此页面，请在左侧的导航窗格中展开“**设置**”，然后单击“**组织档案**”。
 
@@ -54,32 +54,32 @@ ms.locfileid: "49552081"
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>选择进行迁移后，会发生什么情况？
 
-对于选择加入 Microsoft 驱动的方法并将在 Microsoft 云德国 (Microsoft 云德国) 退休日期在 Microsoft 云年10月 2021 29 日之前完成的组织，迁移将在早期2021开始。  迁移后，核心客户数据和订阅会迁移到新的德国区域。  在整个迁移期间，Microsoft 将在消息中心发送更新动态。  若要了解详细信息，请参阅以下参考文章。
+对于选择采用 Microsoft 驱动的方法的组织，迁移将从 2021 年初开始，并将于 2021 年 10 月 29 日德国 Microsoft 云 () 停用日期之前完成。  迁移后，核心客户数据和订阅会迁移到新的德国区域。  在整个迁移期间，Microsoft 将在消息中心发送更新动态。  请参阅下面引用的文章了解详情。
 
-## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>如果客户租户管理员在管理中心不选择迁移，会发生什么情况？
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>如果客户租户管理员未选择在管理中心中迁移，会发生什么情况？
 
-在线服务条款已更改，以包含可让 Microsoft 将 Microsoft 365、Dynamics 365 和 Power BI 数据和订阅从 Microsoft 云德国迁移到新的数据中心的术语。 这些术语将在 microsoft 云德国的任何 Microsoft 云德国 () 续订，自2020年5月1日起获得更新。  客户租户管理员将在电子邮件中收到通知，并且建议选择加入迁移的消息中心将自动选择加入 Microsoft 辅助迁移。 此通知将在自动加入前至少30天内发送。  迁移后选择将所有通信和状态更新发送到邮件中心的客户租户管理员。
+联机服务条款已更改为包含使 Microsoft 能够将 Microsoft 365、Dynamics 365 和 Power BI 数据和订阅从 Microsoft 云德国迁移到新数据中心的术语。 这些条款对自 2020 年 5 月 1 (以来) 德国 Microsoft 云德国的任何 Microsoft 云都生效。  客户租户管理员将在电子邮件和消息中心收到通知，告知将自动选择加入 Microsoft 协助的迁移。 此通知将在自动选择加入前至少 30 天发送。  迁移后，所有通信和状态更新都发送给消息中心中的客户租户管理员。
 
-鼓励客户和合作伙伴租户管理员在管理中心中加入迁移，以便迁移过程可以尽快开始。
+我们鼓励客户和合作伙伴租户管理员选择在管理中心中加入迁移，以便迁移过程可以尽快开始。
 
 
 ## <a name="next-step"></a>后续步骤
 
-[了解迁移过程中的客户体验](ms-cloud-germany-transition-experience.md)
+[了解迁移期间客户体验](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>详细信息
+## <a name="more-information"></a>更多信息
 
 入门：
 
-- [从 Microsoft 云德国迁移到新的德国数据中心区域中的 Office 365 服务](ms-cloud-germany-transition.md)
+- [从德国 Microsoft 云迁移到新的德国数据中心区域的 Office 365 服务](ms-cloud-germany-transition.md)
 - [德国 Microsoft 云迁移助手](https://aka.ms/germanymigrateassist)
-- [迁移过程中的客户体验](ms-cloud-germany-transition-experience.md)
+- [迁移期间客户体验](ms-cloud-germany-transition-experience.md)
 
-在转换中移动：
+在转换过程中移动：
 
-- [迁移阶段的操作和影响](ms-cloud-germany-transition-phases.md)
-- [其他预备工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服务](ms-cloud-germany-transition-add-general.md)、[设备](ms-cloud-germany-transition-add-devices.md)、[体验](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他信息。
+- [迁移阶段操作和影响](ms-cloud-germany-transition-phases.md)
+- [其他预工作](ms-cloud-germany-transition-add-pre-work.md)
+- Azure [AD、](ms-cloud-germany-transition-azure-ad.md)[设备、](ms-cloud-germany-transition-add-devices.md)[体验](ms-cloud-germany-transition-add-experience.md)和[AD FS 的其他信息](ms-cloud-germany-transition-add-adfs.md)。
 
 云应用：
 

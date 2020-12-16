@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 了解如何从 Microsoft 365 中删除旧域，以及如何将用户和组移动到另一个域。
-ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655526"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688257"
 ---
 # <a name="remove-a-domain"></a>删除域
 
@@ -54,7 +54,7 @@ ms.locfileid: "49655526"
 
 3. 选中要移动的所有用户的名称旁边的框。
 
-4. 选择 **页面顶部的****(...) ，** 然后选择"更改 **域"。**
+4. 选择 **页面****("...) ，** 然后选择"更改 **域"。**
 
 5. 在 **"更改域"** 窗格中，选择其他域。
 
@@ -132,7 +132,7 @@ ms.locfileid: "49655526"
 
 1. 转到 **"用户** \> **活动用户"，** 然后从列表中选择你的姓名。
 
-2. 在 **"用户名/电子邮件** "部分，选择 **"** 编辑"，然后选择其他域。
+2. 在 **"用户名/电子邮件** "部分，选择 **"编辑**"，然后选择其他域。
 
 3. 选择 **"设置为主** > **保存** > **关闭"。**
   
@@ -150,7 +150,7 @@ ms.locfileid: "49655526"
 
 1. 在管理中心，转到"组 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">组"</a>页。
   
-2. 选择组名称，然后在电子邮件地址下的"常规 **"选项卡****上，选择"主****"，选择"编辑"。**
+2. 选择组名称，然后在电子邮件地址下的"常规 **"选项卡** 上 **，选择"主****"，选择"编辑"。**
 
 3. 使用下拉列表选择另一个域。
 
@@ -219,9 +219,9 @@ ms.locfileid: "49655526"
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> 不能从你的帐户中删除 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 域。
+> 不能从你的帐户中删除 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 域。 删除域时，用户帐户将恢复为".onmicrosoft.com"地址作为主 SMTP/UserprincipalName。
   
-仍然无法正常工作？你的域可能需要手动删除。[请致电我们](../contact-support-for-business-products.md)，让我们打理一切！
+仍然无法工作？ 可能需要手动删除你的域。 [致电我们](../contact-support-for-business-products.md) ，我们将帮助你处理它！
   
 ::: moniker-end
 

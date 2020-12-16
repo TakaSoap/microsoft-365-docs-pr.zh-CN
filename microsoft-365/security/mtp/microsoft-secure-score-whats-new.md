@@ -1,7 +1,7 @@
 ---
-title: Microsoft 安全分数中的新增功能
+title: Microsoft 安全分数的新增功能
 description: 介绍 Microsoft 365 安全中心中的 Microsoft 安全分数发生了哪些新更改。
-keywords: microsoft 安全分数，安全分数，office 365 安全分数，microsoft 安全分数，microsoft 365 安全中心
+keywords: microsoft 安全分数， 安全分数， office 365 安全分数， microsoft 安全分数， microsoft 365 安全中心
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,73 +20,84 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604379"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688407"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数中的新增功能
+# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分数的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-若要使 Microsoft 安全得分更好地代表安全状态，我们做了一些更改。 若要了解计划的更改，请参阅 [Microsoft 安全分数中的内容？](microsoft-secure-score-whats-coming.md)
+为了更好地代表 Microsoft 安全分数的安全状态，我们进行了一些更改。 若要了解计划更改，请参阅 Microsoft 安全分数 [中即将提供哪些功能？](microsoft-secure-score-whats-coming.md)
 
-Microsoft 安全分数可在 https://security.microsoft.com/securescore [microsoft 365 安全中心](overview-security-center.md)中找到。
+Microsoft 安全分数位于 https://security.microsoft.com/securescore [Microsoft 365 安全中心](overview-security-center.md)。
 
-## <a name="november-2020"></a>2020年11月
+## <a name="december-2020"></a>2020 年 12 月
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 Microsoft Defender for Endpoint (Microsoft Defender ATP) 6 个帐户相关的改进操作：
+
+- 将"最小密码长度"设置为"14 个或多个字符"
+- 将"强制密码历史记录"设置为"24 (密码) "
+- 将"最长密码使用时间"设置为"60 天或更少天，但不能设置为 0"
+- 将"最小密码使用时间"设置为"1 天或 (天) "
+- 禁用内置管理员帐户
+- 禁用内置来宾帐户
+
+## <a name="november-2020"></a>2020 年 11 月
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>删除了通过安全分数创建 ServiceNow 票证的能力 
 
-通过转到 **共享 > servicenow** 无法再提供通过安全得分创建 servicenow 票证的功能。 感谢你的反馈，并在我们确定后续步骤时继续提供支持。
+通过安全分数通过"共享服务"> **ServiceNow** 功能不再可用。 感谢你提供反馈，并继续支持我们确定下一步。
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 microsoft defender 的终结点 (以前的 Microsoft Defender ATP) 添加了3个与服务相关的改进操作：
+### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>为 Microsoft Defender for Endpoint (Microsoft Defender ATP) 3 项服务相关改进操作：
 
-- 修复 Windows 服务的无引号服务路径
-- 将服务可执行路径更改为常见的受保护位置
-- 更改服务帐户以避免 windows 注册表中的缓存密码
+- 修复 Windows 服务的未分配服务路径
+- 将服务可执行路径更改为公用受保护位置
+- 更改服务帐户以避免在 Windows 注册表中缓存密码
 
 ## <a name="october-2020"></a>2020 年 10 月
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>删除与 Microsoft Defender for Endpoint 相关的改进操作
 
-- 设置 Microsoft Defender SmartScreen Windows 应用商店应用程序 web 内容检查以警告
+- 将 Microsoft Defender SmartScreen Windows 应用商店应用 Web 内容检查设置为警告
 
 ## <a name="august-2020"></a>2020 年 8 月
 
-### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改进操作
+### <a name="updated-improvement-action-for-azure-active-directory"></a>更新了 Azure Active Directory 的改进操作
 
-- 启用策略以阻止旧版身份验证
+- 启用策略以阻止旧式身份验证
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>标识安全分数和图形 API 不兼容
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>与标识安全分数和图形 API 不兼容
 
-在最近发布的 Microsoft 安全分数中，已发布了一个改进的计分模型。 通过这些更改，可以更灵活、准确地查看安全状况。 但是，这些更新已使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。
+在 Microsoft 安全分数的最近版本中，已发布了改进的评分模型。 通过这些更改，可以更灵活、准确地查看安全状态。 但是，这些更新使 Microsoft 安全分数暂时与标识安全分数和 Graph API 不兼容。
 
-在时间中，标识安全分数和图形 API 将采用新的评分模型。 在此之前，客户将看到 Microsoft 安全分数、标识安全分数和图形 API 所报告的分数之间的差异。 对于此导致的不便，我们深表歉意，并在努力确保这些体验在将来更具兼容性。
+随着时间的推移，标识安全分数和 Graph API 将采用新的评分模型。 在此之前，客户将看到 Microsoft 安全分数、标识安全分数和 Graph API 报告的分数差异。 我们为此引起的任何不便感到抱歉，并致力于确保这些体验在未来更加兼容。
 
-## <a name="updated-improvement-actions"></a>更新的提高操作
+## <a name="updated-improvement-actions"></a>更新了改进操作
 
-- 添加了 Azure Active Directory 改善操作
+- 添加了 Azure Active Directory 改进操作
 - 添加了 Microsoft Defender for Identity 改进操作
-- 对 Microsoft Defender for Endpoint 威胁的支持 [& 漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议
-    - TVM 提供的所有已发布的安全建议现已推出
+- 支持 Microsoft Defender 终结点威胁 [&漏洞管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全建议
+    - TVM 提供的所有已发布安全建议现已可用
 
 ## <a name="updated-interface-and-functionality"></a>更新的界面和功能
 
 * CISO 和潜在客户级别讨论的所有新指标和趋势视图
-* 跟踪和基准成绩的新方法
-* 更好地跟踪和理解分数回归
-* 筛选、标记、搜索和分组您的改进操作
-* 使用分数预测和计划操作来管理未来目标
-* 更多！
+* 跟踪和基准分数的新增方法
+* 更好地跟踪和了解分数回归
+* 筛选、标记、搜索和分组改进操作
+* 使用分数预测和计划操作管理实现未来目标
+* 等等！
 
-## <a name="we-want-to-hear-from-you"></a>我们希望收到你的来信
+## <a name="we-want-to-hear-from-you"></a>欢迎提出宝贵意见
 
-如果你有任何问题，请通过在 [安全、隐私 & 合规](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社区中发布来告知我们。 我们正在监视社区，并将提供帮助。
+如果有任何问题，请通过发布到安全、隐私和合规社区& [告知](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 我们。 We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>相关资源
 
 - [评估你的安全状况](microsoft-secure-score-improvement-actions.md)
-- [跟踪你的 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
+- [跟踪 Microsoft 安全分数历史记录并实现目标](microsoft-secure-score-history-metrics-trends.md)
 - [即将推出的功能](microsoft-secure-score-whats-coming.md)
