@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解如何将已发布的模型应用于 SharePoint 文档库
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087483"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701137"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中应用文档理解模型
 
@@ -77,6 +77,9 @@ ms.locfileid: "49087483"
 3. 将向队列添加所选的文件进行处理。
 
       ![分类和提取](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> 您可以将单个文件复制到库中，然后将其应用于模型，但不能应用于文件夹。
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)

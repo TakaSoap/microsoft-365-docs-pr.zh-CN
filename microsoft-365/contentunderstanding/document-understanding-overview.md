@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 获取 Microsoft SharePoint Syntex 中的文档理解概述。
-ms.openlocfilehash: b26ed9a9ed9b8d1f332ccf14377660e634349b3d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5dd44a119dff6f5d194861c381fa28f76a6f0da7
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087363"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701103"
 ---
 # <a name="document-understanding-overview"></a>文档理解概述
 
@@ -33,6 +33,9 @@ ms.locfileid: "49087363"
 
 文档理解模型在一种称为 *内容中心* 的 SharePoint 网站中创建和管理。 应用于 SharePoint 文档库时，该模型与内容类型关联，包含用于存储所提取信息的列。 你创建的内容类型存储在 SharePoint 内容类型库中。 也可以选择使用现有内容类型来使用其架构。
 
+> [!NOTE]
+> 只读或密封的内容类型无法更新，因此不能在模型中使用。
+
 向文档理解模型添加 *分类器* 和 *提取器* 以执行以下操作： 
 
 - 分类器用于识别上载到文档库的文档并对其进行分类。 例如，一个分类器可通过“训练有素”来标识上载到库的所有 *合同续订* 文档。 当你创建分类器时，合同续订内容类型由你定义。
@@ -41,14 +44,15 @@ ms.locfileid: "49087363"
 
 可使用示例文件在模型中培训并测试分类器和提取器。 示例文件提供了有关尝试从文件识别和提取数据时要查找的内容的模型示例。 例如，你将使用公司使用的合同续订文档的示例来训练你的合同续订分类和提取器。 还可以使用示例文件来测试模型的有效性。
 
+> [!NOTE]
+> 如果您使用光学字符识别（OCR）技术扫描文档，则Syntex的模型训练限制为15页。
+
 发布模型后，请使用内容中心将其应用到你有权访问的任何 SharePoint 文档库。  
-
-
 
 ## <a name="see-also"></a>另请参阅
 [创建分类器](create-a-classifier.md)
 
-[创建提取器](create-an-extractor.md)
+[创建提取程序](create-an-extractor.md)
 
 [创建内容中心](create-a-content-center.md)
 

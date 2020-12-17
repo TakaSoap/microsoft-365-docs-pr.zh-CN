@@ -12,10 +12,10 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: 在本文中，您将了解如何使用 Microsoft 365 多地理位置将 Microsoft 365 的状态扩展到多个地理区域。
+description: 利用 Microsoft 365 多地理位置将 Microsoft 365 触及范围扩展到多个地理区域。
 ms.openlocfilehash: cf5f655e2b205001c6c16ed05abc33d68324ff15
 ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 12/05/2020
 ms.locfileid: "49580693"
@@ -26,9 +26,9 @@ ms.locfileid: "49580693"
   
 通过 Microsoft 365 多地理位置，你可以在选择的地理位置中预配和存储静态数据，以满足数据驻留要求，与此同时，开启面向员工的现代生产力体验的全球推广。
 
-有关 Microsoft 365 多地理位置的视频简介，请参阅 [SharePoint Online 和 OneDrive 多地理位置，以控制数据所在的位置](https://www.youtube.com/watch?v=Do9U3JuROhk)。
+有关Microsoft 365 Multi-Geo的视频介绍，请参阅[SharePoint Online和OneDrive Multi-Geo以控制数据所在的位置](https://www.youtube.com/watch?v=Do9U3JuROhk)。
 
-## <a name="multi-geo-architecture"></a>多地理位置体系结构
+## <a name="multi-geo-architecture"></a>多地理位置
 
 在多地理位置环境中，Microsoft 365 租户由（最初在其中设置了 Microsoft 365 订阅）的中心位置以及一个或多个附属位置组成。 在多地理位置租户中，有关地理位置、组和用户信息的信息是在 Azure Active Directory (Azure AD) 中进行管控。 由于系统会集中管理你的租户信息并同步到每个地理位置中，因此共享操作以及涉及到公司中任何人的体验均包含全局意识。
 
@@ -52,8 +52,8 @@ ms.locfileid: "49580693"
 
 将 Microsoft 365 多地理位置作为以下 Microsoft 365 订阅计划的附加功能，向其租户中最少有 250 个 Microsoft 365 席位并且这些席位中至少有 5% 使用多地理位置的 EA 客户提供。 有关详细信息，请与 Microsoft 帐户团队联系。
 
-- Microsoft 365 F1、F3、E3 或 E5
-- Office 365 F3、E1、E3 或 E5
+- Microsoft 365 F1, F3, E3, or E5
+- Office 365 F3, E1, E3, or E5
 - Exchange Online 计划 1 或计划 2
 - OneDrive for Business 计划 1 或计划 2
 - SharePoint Online 计划 1 或计划 2
@@ -70,7 +70,7 @@ Microsoft 365 多地理位置当前在以下国家和地区提供：
 
 1. 与你的帐户团队协作，_在 Microsoft 365 服务计划中添加多地理位置功能_。 他们将指导你添加需要的许可证数量。 Microsoft 365 订阅数至少为 250 个的 EA 客户可以使用多地理位置功能。
 
-   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 在租户完成每个工作负荷的配置过程之后，您将在 [microsoft 365 消息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093) 收到工作负荷特定的通知，然后您可以开始配置和使用 Microsoft 365 多地理位置功能。 为多地理位置配置租户所需的时间因租户而异，但大多数租户在收到功能许可证后的一个月内完成。 较大或更复杂的租户可能需要更多时间来完成配置过程。 有关你需要的具体租户的详细信息，请与你的帐户团队联系。
+   Microsoft 需要为多地理位置支持配置你的 Exchange Online 租户，然后你才能开始使用 Microsoft 365 多地理位置。 这个一次性配置流程在你订购“*Microsoft 365 中的多地理位置功能*”服务计划之后触发，并且许可证将显示在你的租户中。 租户完成每个工作负载的配置过程后，您将在[Microsoft 365 消息中心](https://support.office.com/article/38FB3333-BFCC-4340-A37B-DEDA509C2093)收到特定于工作负载的通知，然后您可以开始配置和使用 Microsoft 365 Multi-Geo 功能。 为Multi-Geo支持配置租户所需的时间因租户而异，但是大多数租户在收到功能许可后的一个月内完成。 更大或更复杂的租户可能需要更多时间才能完成配置过程。 如果您需要特定租户的详细信息，请与您的客户团队联系。
 
 2. 阅读[规划多地理位置环境](plan-for-multi-geo.md)。
 

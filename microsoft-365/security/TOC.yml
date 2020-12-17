@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: 配置 EOP 中的默认防钓鱼策略
+                - name: 在 EOP 中配置反垃圾邮件策略
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: 将独立 EOP 配置为向“垃圾邮件”文件夹递送垃圾邮件
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md
