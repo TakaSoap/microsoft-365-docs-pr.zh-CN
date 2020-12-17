@@ -1,5 +1,5 @@
 - name: Microsoft 365 解决方案和体系结构中心
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: 解决方案和体系结构插图
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft 云体系结构模型
       href: cloud-architecture-models.md
+    - name: 体系结构图标和模版
+      href: architecture-icons-templates.md
 - name: Microsoft 365 基础解决方案
   items:
-    - name: 概述
-      href: foundation-solutions-overview.md
     - name: 使用 Microsoft 365 为远程工作者提供强大帮助
       items:
         - name: 概述
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: 工作负载解决方案和方案
   items:
-    - name: 概述
-      href: workload-solutions-scenarios-overview.md
     - name: 团队合作和协作
       items:
         - name: Teams 体系结构海报
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: 特定于行业的指南
   items:
-    - name: 概述
-      href: industry-specific-guidance-overview.md
     - name: 财务
       items:
         - name: 金融服务的安全性和合规性

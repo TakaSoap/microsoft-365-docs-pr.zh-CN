@@ -1,12 +1,11 @@
-### YamlMime:Hub
+### YamlMime:Landing
 title: Microsoft 365 解决方案和体系结构中心
-summary: 了解如何设计适合组织的解决方案和体系结构。
-brand: m365
+summary: 解决方案和体系结构中心汇集了你需要理解的技术指南和计划，实现为企业资源计划和实现安全、合规的新式协作集合的 Microsoft 365 解决方案。
 metadata:
   title: Microsoft 365 解决方案和体系结构中心
   description: 此帮助中心将使您了解 IT 培训以及如何设计适合组织的解决方案和体系结构。
   ms.service: o365-solutions
-  ms.topic: hub-page
+  ms.topic: landing-page
   ms.collection:
   - m365-security-compliance
   author: samanro
@@ -15,66 +14,96 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ROBOTS: NOINDEX
-  ms.openlocfilehash: 57180d6807ebbc129d68f91d178e9c31724a98a4
-  ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+  ms.openlocfilehash: e77bf6ee7d28e8da4df471487f531b68cc27f5e0
+  ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/10/2020
-  ms.locfileid: "48990513"
-highlightedContent:
-  items:
-  - title: 使用 Microsoft 365 为远程工作者提供强大帮助
-    itemType: whats-new
-    url: empower-people-to-work-remotely.md
-  - title: 使用 Microsoft 365 建立安全协作
-    itemType: get-started
-    url: setup-secure-collaboration-with-teams.md
-  - title: 在 Microsoft 365 中部署威胁防护
-    itemType: get-started
-    url: deploy-threat-protection.md
-productDirectory:
-  items:
-  - title: Microsoft 365 基础解决方案
-    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: 查找针对特定业务问题或需求的完整指南（从规划到实施，再到采用）。
-    url: foundation-solutions-overview.md
-  - title: 工作负载解决方案和应用场景指南
-    imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: 将这些应用场景添加到基础解决方案中，以便向环境添加功能。
-    url: workload-solutions-scenarios-overview.md
-  - title: 解决方案和体系结构插图
-    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: 查看或下载这些插图，了解 Microsoft 365 服务的功能和体系结构。
-    url: productivity-illustrations.md
-  - title: 特定于行业的指南
-    imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
-    summary: 查找专为你的行业设计的指南。
-    url: industry-specific-guidance-overview.md
-  - title: 企业设计原则
-    imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: 了解在了解网络、标识、安全性和跨国体系结构时所需遵循的关键原则。
-    url: design-principles.md
-  - title: 部署路线图和资源
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: 用于建立协作以及安全和信息保护的资源。
-    url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
-additionalContent:
-  sections:
-  - title: 关于 Microsoft 365 的更多资源
-    items:
-    - title: 面向管理员和 IT 专业人员的 Microsoft 365 帮助中心
-      summary: 在 Microsoft 365 页面上查找更多面向 IT 专业人员的资源
-      url: https://docs.microsoft.com/microsoft-365
-    - title: 管理员和 IT 专业人员培训
-      summary: 查找有关管理 Microsoft 365 的培训资源
-      url: https://docs.microsoft.com/learn/m365/
-    - title: 面向最终用户的培训
-      summary: 帮助最终用户了解如何使用 Microsoft 365
-      url: https://support.office.com/modernworkplace
-    - title: Microsoft 365 技术社区
-      summary: 与该技术社区互动
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-    - title: 面向开发人员的资源
-      summary: 了解如何针对 Microsoft 365 进行开发
-      url: https://developer.microsoft.com/microsoft-365
+  ms.lasthandoff: 12/16/2020
+  ms.locfileid: "49688531"
+landingContent:
+- title: 基础解决方案指南
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 使用 Microsoft 365 为远程工作者提供强大帮助
+      url: empower-people-to-work-remotely.md
+    - text: 使用 Microsoft 365 建立安全协作
+      url: setup-secure-collaboration-with-teams.md
+    - text: 在 Microsoft 365 中部署威胁防护
+      url: deploy-threat-protection.md
+    - text: 为数据隐私法规部署信息保护
+      url: information-protection-deploy.md
+- title: 体系结构插图和设计原则
+  linkLists:
+  - linkListType: architecture
+    links:
+    - text: Microsoft 云体系结构模型
+      url: cloud-architecture-models.md
+    - text: Microsoft 365 生产力插图
+      url: productivity-illustrations.md
+    - text: Teams 体系结构海报
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/teams-architecture-solutions-posters?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 设计原则
+      url: design-principles.md
+- title: 工作负载资源
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Contoso 案例研究
+      url: contoso-case-study-solutions.md
+  - linkListType: tutorial
+    links:
+    - text: 测试实验室指南
+      url: test-lab-guides-overview-solutions.md
+- title: 团队合作和协作解决方案指南
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 计划和部署 Teams 语音解决方案
+      url: deploy-voice.md
+  - linkListType: overview
+    links:
+    - text: 协作管理
+      url: collaboration-governance-overview.md
+    - text: 文件协作
+      url: https://docs.microsoft.com/en-us/sharepoint/deploy-file-collaboration?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 智能见解
+      url: https://docs.microsoft.com/en-us/sharepoint/intranet-overview?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: OneDrive 企业指南
+      url: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: 安全性和合规性指南
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: 安全团队为支持在家办公需完成的首要任务
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/top-security-tasks-for-remote-work?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide.md
+    - text: 面向业务决策者 (BDM) 的 Microsoft 365 安全
+      url: https://docs.microsoft.com/en-us/microsoft-365/security/microsoft-365-security-for-bdm?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 部署 Microsoft Defender 高级威胁防护
+      url: https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+  - linkListType: reference
+    links:
+    - text: ISO - 建议行动计划
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/iso-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: NIST - 建议行动计划
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/nist-action-plan?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: CCPA - 建议的行动计划
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/ccpa-faq?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: GDPR - 建议的行动计划
+      url: https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+- title: 行业特定的指南
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 金融服务的安全性和合规性
+      url: financial-services-secure-collaboration.md
+    - text: 能源和公用事业服务的安全性和合规性
+      url: energy-secure-collaboration.md
+    - text: 适用于医疗保健业的 Teams
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Teams 教育版
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: Teams 政府版
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide
+    - text: 使用 Teams 支持远程政府工作者
+      url: https://docs.microsoft.com/en-us/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=%2Fmicrosoft-365%2Fsolutions%2Ftoc.json&bc=%2Fmicrosoft-365%2Fsolutions%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide

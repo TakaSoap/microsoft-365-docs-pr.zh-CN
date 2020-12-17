@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 了解如何仅使用两个测试帐户将电子邮件功能试点从我的自定义域到 Microsoft 365 邮箱的电子邮件功能。
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295030"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688213"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>从我的自定义域试点 Microsoft 365
 
@@ -39,6 +39,8 @@ ms.locfileid: "48295030"
 - 管理员无法从单个位置管理所有用户帐户。
 
 - 用户可能无法使用 Microsoft 365 垃圾邮件筛选。
+
+- 推荐少数用户使用，仅适用于使用电子邮件作为试点。
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>设置 Microsoft 365 试点
 
@@ -132,13 +134,13 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. 设置从 Microsoft 365 或 Office 365 指向你的电子邮件服务器的连接器
 
-若要在 Microsoft 365 或 Office 365 中创建连接器，单击" **管理**"，然后单击" **Exchange**"转到 Exchange 管理中心。 接下来，依次单击 **“邮件流” **和 **“连接器”**。
+若要在 Microsoft 365 或 Office 365 中创建连接器，单击" **管理**"，然后单击" **Exchange**"转到 Exchange 管理中心。 接下来，依次单击 **“邮件流”** 和 **“连接器”**。
 
 使用向导设置连接器。
 
-若要启动向导，请单击加号“+”**+**。 在第一个屏幕上，选择 **从** Office 365 和**至**组织邮件服务器。
+若要启动向导，请单击加号“+”**+**。 在第一个屏幕上，选择 **从** Office 365 和 **至** 组织邮件服务器。
 
-单击“下一步”****，然后按照向导中的说明执行操作。 如需了解详细信息，请单击“帮助”**** 或“了解详情”**** 链接。 此向导会指导您逐步完成设置。 结束时，请务必验证您的连接器。 如果您无法验证此连接器，请双击所显示的消息了解详细信息，并参阅[验证服务器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)了解如何解决问题。
+单击“下一步”，然后按照向导中的说明执行操作。 如需了解详细信息，请单击“帮助”或“了解详情”链接。 此向导会指导您逐步完成设置。 结束时，请务必验证您的连接器。 如果您无法验证此连接器，请双击所显示的消息了解详细信息，并参阅[验证服务器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)了解如何解决问题。
 
 
 
@@ -189,4 +191,3 @@ Microsoft 365 使用 Exchange Online Protection (EOP) 进行垃圾邮件防护�
 
 将项目导入到 Microsoft 365 邮箱中的适当位置后，可以从任何位置的任何设备访问这些项目。
 
-如果涉及更多邮箱，或者员工未使用 Outlook，则可以使用 Exchange 管理中心中提供的迁移工具。 首先，请转到 Exchange 管理中心，然后按照[将电子邮件从 IMAP 服务器迁移到 Exchange Online 邮箱](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)中的说明进行操作。
