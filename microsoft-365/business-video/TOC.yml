@@ -1,0 +1,159 @@
+- name: Microsoft 365 小型企业培训
+  href: index.yml
+  items:
+    - name: 入门
+      items:
+        - name: 什么是 Microsoft 365
+          href: what-is-microsoft-365.md
+        - name: 设置概述
+          href: setup-overview.md
+        - name: 选择订阅
+          href: Choose-subscription.md
+    - name: 云设置
+      items:
+        - name: 注册订阅
+          href: sign-up.md
+        - name: 设置服务
+          href: set-up.md
+        - name: 保护 Windows 10 电脑
+          href: secure-win10-pcs.md
+        - name: 创建 GoDaddy 网站
+          href: create-web-site.md
+    - name: 设备设置
+      items:
+        - name: 升级到 Windows 10 专业版
+          href: upgrade.md
+        - name: 将电脑连接到 Microsoft 365
+          href: connect.md
+        - name: 安装Microsoft Office应用
+          href: install-office.md
+        - name: 设置 Outlook，使用电子邮件功能
+          href: setup-outlook.md
+        - name: 导入和重定向邮件
+          href: import-email.md
+        - name: 将文件移动到 OneDrive
+          href: files-to-onedrive.md
+        - name: 将公司文件移动到 SharePoint
+          href: files-to-sharepoint.md
+    - name: 移动版
+      items:
+        - name: 随时随地工作
+          href: work-from-anywhere.md
+        - name: 在 Android 上安装 Office 应用
+          href: install-apps-android.md
+        - name: 在 iOS 上安装 Office 应用
+          href: install-apps-ios.md
+        - name: 获取管理移动应用
+          href: admin-mobile.md
+    - name: 协作
+      items:
+        - name: 使用 Outlook 和 Teams
+          href: collab-outlook-teams.md
+        - name: 创建组电子邮件地址
+          href: group-email.md
+        - name: 使用共享日历
+          href: shared-calendar.md
+        - name: 创建组织范围的团队
+          href: org-wide-team.md
+        - name: 与来宾一起创建团队
+          href: team-with-guests.md
+        - name: 作为来宾加入团队
+          href: join-team-guest.md
+        - name: 与客户和员工聊天
+          href: start-and-pin-chats.md
+        - name: 联机会议概述
+          href: overview-online-meetings.md
+        - name: 安排与来宾的会议
+          href: schedule-guest-meeting.md
+        - name: 与来宾加入会议
+          href: join-guest-meeting.md
+    - name: 云存储
+      items:
+        - name: 共享概述
+          href: overview-file-sharing.md
+        - name: 文件存储位置
+          href: store-files.md
+        - name: 安全地在外部共享文件
+          href: securely-share-files-externally.md
+        - name: 轻松在外部共享文件
+          href: share-files-externally.md
+    - name: 商务语音
+      items:
+        - name: 商务语音概述
+          href: business-voice.md
+        - name: 购买商务语音加载项
+          href: buy-business-voice.md
+    - name: 生产力应用
+      items:
+        - name: Bookings 概述
+          href: overview-bookings.md
+        - name: 规划事件
+          href: plan-event.md
+    - name: 管理服务
+      items:
+        - name: 什么是管理员
+          href: what-is-admin.md
+        - name: 管理中心概述
+          href: admin-center-overview.md
+        - name: 查看、下载或打印帐单
+          href: view-bill.md
+        - name: 更新付款方式
+          href: update-payment.md
+        - name: 重置用户密码
+          href: reset-user-passwords.md
+        - name: 设置自助服务密码重置
+          href: set-up-self-serve-password-reset.md
+        - name: 添加用户
+          href: add-user.md
+        - name: 删除用户
+          href: delete-user.md
+        - name: 添加另一个管理员
+          href: add-admin.md
+        - name: 更改用户名或电子邮件
+          href: change-user-name-email.md
+        - name: 将用户移动到其他订阅
+          href: change-subscription.md
+        - name: 创建公司范围内的签名
+          href: company-wide-signature.md
+        - name: 使用情况报告行动
+          href: act-on-report.md
+        - name: 添加另一个域
+          href: add-domain.md
+    - name: 管理设备
+      items:
+        - name: 保护 Windows 10 专业版设备
+          href: secure-win-10-pro-devices.md
+        - name: 在 iOS 上保护 Office 应用
+          href: secure-office-on-ios.md
+    - name: 安全性和&合规性
+      items:
+        - name: Microsoft 365 商业高级版安全性概述
+          href: overview-m365-security.md
+        - name: 使用 MFA 保护员工帐户
+          href: turn-on-mfa.md
+        - name: 在手机上设置双重登录
+          href: set-up-mfa.md
+        - name: 打开恶意软件检测
+          href: anti-malware.md
+        - name: 创建勒索软件的电子邮件规则
+          href: prevent-ransom-in-email.md
+        - name: 停止自动转发电子邮件
+          href: stop-email-auto-forward.md
+        - name: 设置防钓鱼
+          href: setup-anti-phishing.md
+        - name: 管理安全附件
+          href: safe-attachments.md
+        - name: 管理安全链接
+          href: safe-links.md
+        - name: 防止数据丢失
+          href: set-up-dlp.md
+        - name: 创建敏感度标签
+          href: create-sensitivity-labels.md
+    - name: 支持
+      items:
+        - name: 查找答案和帮助
+          href: find-help-answers.md
+        - name: 获取帮助或支持
+          href: get-help-support.md
+        - name: 员工快速设置
+          href: employee-quick-setup.md
