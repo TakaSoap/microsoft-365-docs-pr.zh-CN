@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 在文档中创建提取器的术语库分类 Microsoft SharePoint Syntex 中的理解模型。
-ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087317"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701091"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>创建提取器时利用术语库分类
 
@@ -25,19 +25,20 @@ ms.locfileid: "49087317"
 
 </br>
 
-
 在 SharePoint Syntex 中的文档理解模型中创建提取器时，可利用[托管元数据服务](https://docs.microsoft.com/sharepoint/managed-metadata#terms)术语库分类，显示提取的数据的首选条款。  
 
 例如，你的模型标识并分类上传到文档库的所有 **合同** 文档。  此外，该模型还会提取每个合同中的 **合同服务** 值，并将其显示在库视图中的一列中。 在合同中的各种合同服务值之间，有一些你的公司不再使用且已重命名了的旧值。 例如，对术语 *Design*、*Graphics* 或 *Topography* 合同服务的所有引用现在都应称为 *创意*。 每当你的模型提取合同文档中的某个过时字词时，你都希望它在你的库视图中显示当前术语“Creative ”。 在下面的示例中，对模型进行训练时，我们看到的是一个示例文档，其中包含已过时的 *Design* 条款。
 
    ![术语库](../media/content-understanding/design.png)</br>
 
-
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在提取器使用托管元数据列
 
 在 SharePoint 管理中心的托管元数据服务术语库中配置术语集。 在下面的示例中， *合同服务*[术语集](https://docs.microsoft.com/sharepoint/managed-metadata#term-set)配置为包含许多条款，包括 *创意*。  它的详细信息显示该术语有三个同义词（*Design*、*Graphics* 和 *Topography*），并且同义词应翻译为 *创意*。 
 
    ![术语集](../media/content-understanding/term-store.png)</br>
+
+> [!NOTE]
+>  术语集在资源中心的MMS字段中配置为全局。
 
 在术语集中使用同义词可能有很多原因。 例如，组织部门的命名中可能存在已过时的术语、已重命名的术语或差异。
 

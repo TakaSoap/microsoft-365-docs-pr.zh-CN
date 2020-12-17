@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中创建提取程序。
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087459"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701125"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中创建提取程序
 
@@ -37,7 +37,9 @@ ms.locfileid: "49087459"
 
 1. 在模型主页的“**创建和培训提取程序**”磁贴中，单击“**培训提取器**”。
 2. 在“**新实体提取程序**”屏幕上，在“**新提取程序名称**”字段中键入提取程序的名称。 例如，如果想要从每个”合同续订文档”中提取服务开始日期，请将其命名为“**服务开始日期**”。 也可以选择重复使用以前创建的列（例如，托管元数据列）。
-3. 单击“**创建**”。
+> [!NOTE]
+> 如果创建新的提取器，请选择“**新建列类型**“，然后选择”**单行文本**“，最大字符数限制为255。 您键入的任何超出限制的字符都会被截断。 
+3. 完成时单击“**创建**”。
 
 ## <a name="add-a-label"></a>添加标签
 
