@@ -17,38 +17,38 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: 安全合规性中心中的数据丢失防护 (DLP) &amp; 包括80可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
-ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+description: 安全合规 (DLP) 中的数据丢失防护包括 80 种可供您用于 DLP 策略 &amp; 的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。
+ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819112"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698505"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感信息类型属性定义
 
-合规性中心中的数据丢失防护 (DLP) 包括许多可供您在 DLP 策略中使用的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
+合规性中心 (DLP) 中的数据丢失防护包括许多可供您用于 DLP 策略的敏感信息类型。 本主题列出了所有这些敏感信息类型，并显示 DLP 策略在检测到每种类型时查找的内容。 敏感信息类型通过正则表达式或函数可以识别的模式定义。 此外，关键字和校验和等确凿的证据可用于识别敏感信息类型。 可信度和相似度也会在评估过程中使用。
 
 敏感信息类型需要以下订阅之一：
 - Microsoft 365 E3
 - Microsoft 365 E5
 
-## <a name="aba-routing-number"></a>ABA 传送号码
+## <a name="aba-routing-number"></a>ABA 路由号码
 
 ### <a name="format"></a>Format
 
-9个数字，可以是格式化或无格式的模式
+九个数字，可能采用格式化或无格式模式
 
 ### <a name="pattern"></a>模式
 
-格式
-- 以0、1、2、3、6、7或8开头的四个数字
+格式化：
+- 四个数字，以 0、1、2、3、6、7 或 8 开头
 - 连字符
-- 四位数
+- 四个数字
 - 连字符
 - 一个数字
 
-未格式化：以0、1、2、3、6、7或8开头的九个连续数字 
+无格式：九个以 0、1、2、3、6、7 或 8 开头的连续数字 
 
 ### <a name="checksum"></a>校验和
 
@@ -90,27 +90,27 @@ ms.locfileid: "48819112"
 - americanbankassociationroutingnumber
 - bankrouting#
 - bankroutingnumber
-- 路径#
-- 路由编号
-- 银行代号
+- routing#
+- 传送否
+- 路由号码
 - routing transit number
-- 路径#
+- routing#
 - RTN
 
 
-## <a name="argentina-national-identity-dni-number"></a>阿根廷国家标识 (DNI) 号码
+## <a name="argentina-national-identity-dni-number"></a>阿根廷国家/ (DNI) 号码
 
 ### <a name="format"></a>Format
 
-包含或不带句点的8个数字
+带或不带句号的八个数字
 
 ### <a name="pattern"></a>模式
 
 八个数字：
-- 两位数
-- 可选期间
+- 两个数字
+- 可选时间段
 - 三个数字
-- 可选期间
+- 可选时间段
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -144,18 +144,18 @@ ms.locfileid: "48819112"
 - documento nacional de identidad 
 - documento número 
 - documento numero 
-- registro nacional de 内华达角色 
+- registro nacional de las personas 
 - rnp 
    
-## <a name="australia-bank-account-number"></a>澳大利亚银行帐户编号
+## <a name="australia-bank-account-number"></a>澳大利亚银行帐号
 
 ### <a name="format"></a>Format
 
-具有或不包含银行状态分支编号的6到10个数字
+包含或不带银行省/市/县分支机构号码的六到十个数字
 
 ### <a name="pattern"></a>模式
 
-帐号是6到10位数字。
+帐号为 6 到 10 位数。
 
 澳大利亚银行州级分部编号：
 - 三个数字 
@@ -208,10 +208,10 @@ ms.locfileid: "48819112"
 - bank details
 - banking information
 - full names
-- iaea
+- 该
 
-## <a name="australia-business-number"></a>澳大利亚商业电话号码
-此敏感信息类型仅可用于以下内容：
+## <a name="australia-business-number"></a>澳大利亚商务号码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -221,18 +221,18 @@ ms.locfileid: "48819112"
 
 ### <a name="format"></a>Format
 
-11个带可选分隔符的数字
+带可选分隔符的 11 个数字
 
 ### <a name="pattern"></a>模式
 
-11个带可选分隔符的数字：
+带可选分隔符的 11 个数字：
 
-- 两位数
-- 一个可选连字符或空格
+- 两个数字
+- 可选连字符或空格
 - 三个数字
-- 一个可选连字符或空格
+- 可选连字符或空格
 - 三个数字
-- 一个可选连字符或空格
+- 可选连字符或空格
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -242,11 +242,11 @@ ms.locfileid: "48819112"
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_australian_business_number 找到与该模式匹配的内容。
-- 找到 Keywords_australian_business_number 中的关键字。
+- 函数Func_australian_business_number查找与模式匹配的内容。
+- 找到来自Keywords_australian_business_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_australian_business_number 找到与该模式匹配的内容。
+- 函数Func_australian_business_number查找与模式匹配的内容。
 
 ```xml
       <!-- Australia Business Number -->
@@ -264,16 +264,16 @@ ms.locfileid: "48819112"
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
-- 澳大利亚公司编号
-- 业务号码
+- australia business no
+- 业务编号
 - abn#
 - businessid#
-- 业务 id
+- 业务 ID
 - abn
 - businessno#
 
 ## <a name="australia-company-number"></a>澳大利亚公司编号
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -282,16 +282,16 @@ ms.locfileid: "48819112"
 
 ### <a name="format"></a>Format
 
-9个带分隔符的数字
+带分隔符的九个数字
 
 ### <a name="pattern"></a>模式
 
-九位数带分隔符：
+带分隔符的九个数字：
 
 - 三个数字
-- 一个空格
+- 空格
 - 三个数字
-- 一个空格
+- 空格
 - 三个数字
 
 
@@ -302,11 +302,11 @@ ms.locfileid: "48819112"
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Australian_Company_Number 找到与该模式匹配的内容。
-- 找到 Keyword_Australian_Company_Number 中的关键字。
+- 函数Func_Australian_Company_Number查找与模式匹配的内容。
+- 找到搜索Keyword_Australian_Company_Number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Australian_Company_Number 找到与该模式匹配的内容。
+- 函数Func_Australian_Company_Number查找与模式匹配的内容。
 
 ```xml
       <!-- Australia Company Number -->
@@ -324,15 +324,15 @@ ms.locfileid: "48819112"
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
-- 即可
+- can
+- 澳大利亚公司否
+- 澳大利亚公司否#
 - 澳大利亚公司编号
-- 澳大利亚公司编号#
-- 澳大利亚公司编号
-- 澳大利亚公司编号
-- 澳大利亚公司编号#
+- 澳大利亚公司否
+- 澳大利亚公司否#
 - 澳大利亚公司编号
 
-## <a name="australia-drivers-license-number"></a>澳大利亚驾驶执照号码
+## <a name="australia-drivers-license-number"></a>澳大利亚驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -343,17 +343,17 @@ ms.locfileid: "48819112"
 九个字母和数字： 
 
 - 两个数字或字母 (不区分大小写)  
-- 两位数 
+- 两个数字 
 - 五个数字或字母 (不区分大小写) 
 
 OR
 
 - 一到两个可选字母 (不区分大小写)  
-- 4到9个数字
+- 四到九个数字
 
 OR
 
-- 9个数字或字母 (不区分大小写) 
+- 九个数字或字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
 
@@ -483,7 +483,7 @@ OR
 - Driver's License#
 - Driver's Licenses#
    
-## <a name="australia-medical-account-number"></a>澳大利亚医疗帐户号码
+## <a name="australia-medical-account-number"></a>澳大利亚医疗帐号
 
 ### <a name="format"></a>Format
 
@@ -492,10 +492,10 @@ OR
 ### <a name="pattern"></a>模式
 
 10-11 个数字：
-- 第一个数字在范围2-6
-- 第九个数字是校验位
-- 第十位数字是问题位数
-- 第十位数字 (可选) 是单个数字
+- 第一个数字的范围为 2-6
+- 第九个数字是一个检查数字
+- 第十个数字是问题数字
+- 第 1 (个数字) 可选数字是个人号码
 
 ### <a name="checksum"></a>校验和
 
@@ -531,7 +531,7 @@ OR
 - credit card loan
 - department of human services
 - local service
-- medicare
+- 一
 
    
 ## <a name="australia-passport-number"></a>澳大利亚护照号码
@@ -552,7 +552,7 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_australia_passport_number 找到与该模式匹配的内容。
-- 找到 Keyword_passport 或 Keyword_australia_passport_number 中的关键字。
+- 找到来自Keyword_passport或Keyword_australia_passport_number关键字。
 
 ```xml
 <!-- Australia Passport Number -->
@@ -574,13 +574,13 @@ OR
 - Passport Number
 - Passport No
 - Passport #
-- 登记卡#
+- Passport#
 - PassportID
 - Passportno
 - passportnumber
 - パスポート
 - パスポート番号
-- パスポートのNum
+- パスポのnum
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -592,14 +592,14 @@ OR
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- 登记卡
+- passport
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
 - residential address
 - department of immigration and citizenship
-- 反之
+- visa
 - national identity card
 - passport number
 - travel document
@@ -609,16 +609,16 @@ OR
 
 ### <a name="format"></a>Format
 
-8到9个数字
+八到九个数字
 
 ### <a name="pattern"></a>模式
 
-通常显示空格的八到九个数字，如下所示：
+8 到 9 个数字通常显示空格，如下所示：
 - 三个数字 
-- 一个可选空格 
+- 可选空格 
 - 三个数字 
-- 一个可选空格 
-- 两到三个数字，其中最后一个数字是校验位
+- 可选空格 
+- 两到三个数字，其中最后一个数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -655,16 +655,15 @@ OR
 - tax file number
 - tfn
 
-## <a name="austria-drivers-license-number"></a>奥地利驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="austria-drivers-license-number"></a>奥地利驾驶证号码
 
 ### <a name="format"></a>Format
 
-8位数，不含空格和分隔符
+八个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-八位数字
+八个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -674,8 +673,8 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_austria_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_austria_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_austria_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_austria_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Austria Driver's License Number -->
@@ -692,7 +691,7 @@ OR
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -700,49 +699,49 @@ OR
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -750,80 +749,80 @@ OR
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver "s_license_number
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver s_license_number
 
 - fuhrerschein
-- führerschein-nr
-- Führerscheine
-- Führerscheinnummer
-- Führerscheinnummern
+- fhrerschein
+- Fhrerscheine
+- Fhrerscheinnummer
+- Fhrerscheinnummern
 
-## <a name="austria-identity-card"></a>奥地利身份卡片
-此敏感信息类型仅可用于以下内容：
+## <a name="austria-identity-card"></a>奥地利身份证
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -832,15 +831,15 @@ OR
 
 ### <a name="format"></a>Format
 
-字母、数字和特殊字符的24个字符的组合
+字母、数字和特殊字符的 24 个字符组合
   
 ### <a name="pattern"></a>模式
 
-24个字符：
+24 个字符：
   
--  22个字母 (不区分大小写) 、数字、反斜杠、正斜杠或加号 
+-  22 个字母 (不区分大小写) 数字、反斜杠、正斜杠或加号 
     
-- 两个字母 (不区分大小写) 、数字、反斜杠、正斜杠、加号或等号
+- 两个字母 (不区分大小写) 数字、反斜杠、正斜杠、加号或等号
     
 ### <a name="checksum"></a>校验和
 
@@ -850,8 +849,8 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_austria_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_austria_eu_national_id_card` 。 
+- 正则表达式  `Regex_austria_eu_national_id_card` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_austria_eu_national_id_card` 关键字。 
    
 ```xml
       <!-- Austria Identity Card -->
@@ -867,12 +866,12 @@ OR
 
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
-- 标识号码
+- 标识号
 - national id
-- personalausweis republik österreich
+- personalausichsich österreich
 
 ## <a name="austria-passport-number"></a>奥地利护照号码
-此敏感信息类型实体仅适用于欧盟护照号码 sensitiveinformation 类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
@@ -883,8 +882,8 @@ OR
 一个字母、七个数字和一个空格的组合：
   
 - 一个字母 (不区分大小写) 
-- 一个空格 (可选) 
-- 七位数字
+- 一个 (可选) 
+- 七个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -893,8 +892,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_austria_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_austria_eu_passport_number` 。 
+- 正则表达式  `Regex_austria_eu_passport_number` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_austria_eu_passport_number` 关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -913,16 +912,16 @@ OR
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
@@ -932,22 +931,22 @@ OR
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisepässe
+- reisepsse
 
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>奥地利社会保险号或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-以指定格式表示的10个数字
+指定格式的 10 个数字
   
 ### <a name="pattern"></a>模式
 
 10 个数字：
   
-- 与序列号对应的三个数字 
-- 一个校验位
-- 与出生日期 (DDMMYY) 的6个数字
+- 对应于序列号的三个数字 
+- 一个检查数字
+- 六个数字，对应于 DDMMYY (出生日期) 
     
 ### <a name="checksum"></a>校验和
 
@@ -956,12 +955,12 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 "Func_austria_eu_
-- _or_equivalent "找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_austria_eu_ssn_or_equivalent` 。 
+- 函数"Func_austria_eu_
+- _or_equivalent"查找与模式匹配的内容。 
+- 找到一个  `Keywords_austria_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_austria_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_austria_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -980,35 +979,35 @@ OR
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- 社会保障号
+- social security no
 - social security number
 - social security code
-- 保险号
-- 奥地利 ssn
+- insurance number
+- 将 ssn
 - ssn#
 - ssn
-- 保险费代码
-- 保险费代码#
+- 保险代码
+- 保险代码#
 - socialsecurityno#
 - sozialversicherungsnummer
 - soziale sicherheit kein
 - versicherungsnummer
 
-## <a name="austria-tax-identification-number"></a>奥地利税标识号
+## <a name="austria-tax-identification-number"></a>奥地利税务标识号
 
 ### <a name="format"></a>Format
 
-9个数字，带可选连字符和正斜线
+带可选连字符和正斜杠的九个数字
   
 ### <a name="pattern"></a>模式
 
-9个带可选连字符和正斜线的数字：
+带可选连字符和正斜杠的九个数字：
   
-- 两位数
-- 连字符 (可选) 
+- 两个数字
+- 可选连字符 (可选) 
 - 三个数字
-- 可选) 的正斜杠 (
-- 四位数
+- 可选 (斜杠) 
+- 四个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -1017,11 +1016,11 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_austria_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_austria_eu_tax_file_number` 。 
+- 该  `Func_austria_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_austria_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_austria_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_austria_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Austria Tax Identification Number -->
@@ -1044,25 +1043,25 @@ OR
 - st.nr。
 - steuernummer
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - 税号
  
 ## <a name="austria-value-added-tax"></a>奥地利增值税
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -1071,20 +1070,20 @@ OR
 
 ### <a name="format"></a>Format
 
-11个字符的字母数字模式
+11 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-11个字符的字母数字模式：
+11 个字符字母数字模式：
 
 - A 或 a
 - T 或 t
-- 可选空格
+- 可选空间
 - U 或 u
 - 可选空格
 - 两个或三个数字
 - 可选空格
-- 四位数
+- 四个数字
 - 可选空格
 - 一个或两个数字
 
@@ -1095,11 +1094,11 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Austria_Value_Added_Tax 找到与该模式匹配的内容。
-- 找到 Keyword_Austria_Value_Added_Tax 中的关键字。
+- 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
+- 找到来自Keyword_Austria_Value_Added_Tax关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Austria_Value_Added_Tax 找到与该模式匹配的内容。
+- 函数Func_Austria_Value_Added_Tax查找与模式匹配的内容。
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1117,35 +1116,35 @@ OR
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
-- vat 号码
+- vat number
 - vat#
-- 奥地利 vat 号码
-- vat 编号
+- vat number
+- vat no.
 - vatno#
-- 增值税号
-- 奥地利 vat
-- mwst
+- 增值税编号
+- vat
+- wdst
 - umsatzsteuernummer
-- mwstnummer
+- wdstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
 - vat 标识号
-- atu 编号
-- uid 号
+- atu number
+- uid 编号
 
 
 ## <a name="azure-documentdb-auth-key"></a>Azure DocumentDB 身份验证密钥
 
 ### <a name="format"></a>Format
 
-字符串 "DocumentDb"，后跟下面模式中所示的字符和字符串。
+字符串"DocumentDb"后跟下面模式中列出的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "DocumentDb"
-- 介于3-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 大于符号 ( # A0) 、等号 (=) 、引号 ( ") 或撇号 ( ' ) 
-- 86小写或大写字母、数字、正斜线 (/) 或加号 (+) 的任意组合
+- 字符串"DocumentDb"
+- 3-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 大于符号 (>) 、等号 (=) 、引号 (") 或撇号 (') 
+- 86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1155,8 +1154,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureDocumentDBAuthKey 找到与该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureDocumentDBAuthKey查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1174,39 +1173,39 @@ OR
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和 Azure SQL 连接字符串
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Azure IAAS 数据库连接字符串和 Azure SQL连接字符串
 
 ### <a name="format"></a>Format
 
-字符串 "Server"、"server" 或 "data source"，后跟下面模式中所述的字符和字符串，包括字符串 "cloudapp"。<!--no-hyperlink-->com "或" cloudapp "。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->net "和字符串" Password "或" password "或" pwd "。
+字符串"Server"、"server"或"data source"后跟以下模式中列出的字符和字符串，包括字符串"cloudapp.azure"。<!--no-hyperlink-->com"或"cloudapp.azure"。<!--no-hyperlink-->net"或"database.windows"。<!--no-hyperlink-->net"，字符串"Password"或"password"或"pwd"。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "Server"、"server" 或 "data source"
-- 零到两个空白字符
+- 字符串"Server"、"server"或"data source"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "cloudapp"。<!--no-hyperlink-->com "，" cloudapp。<!--no-hyperlink-->net "或" database。<!--no-hyperlink-->netmeeting
-- 介于1-300 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "Password"、"password" 或 "pwd"
-- 零到两个空白字符
+- 零到两个空格字符
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"cloudapp.azure"。<!--no-hyperlink-->com"、"cloudapp.azure"。<!--no-hyperlink-->net"或"database.windows"。<!--no-hyperlink-->net"
+- 1-300 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"Password"、"password"或"pwd"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 一个或多个不是分号的字符 (; ) 、引号 ( ") 或撇号 ( ' ) 
-- 分号 (; ) 、引号 ( ") 或撇号 ( ' ) 
+- 零到两个空格字符
+- 一个或多个不是分号字符 (;) 、引号 (") 或撇号 () 
+- a semicolon (;) ， quotation mark (") ， or apostrophe (') 
 
 ### <a name="checksum"></a>校验和
 
@@ -1215,8 +1214,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureConnectionString 找到与该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureConnectionString查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1234,38 +1233,38 @@ OR
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-iot-connection-string"></a>Azure IoT 连接字符串
 
 ### <a name="format"></a>Format
 
-字符串 "HostName"，后跟下面模式中所示的字符和字符串，包括字符串 "azure 设备"。<!--no-hyperlink-->net "和" SharedAccessKey "。
+字符串"HostName"后跟以下模式中列出的字符和字符串，包括字符串"azure-devices"。<!--no-hyperlink-->net"和"SharedAccessKey"。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "HostName"
-- 零到两个空白字符
+- 字符串"HostName"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "azure 设备。<!--no-hyperlink-->netmeeting
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "SharedAccessKey"
-- 零到两个空白字符
+- 零到两个空格字符
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"azure-devices"。<!--no-hyperlink-->net"
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"SharedAccessKey"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 43小写或大写字母、数字、正斜线 (/) 或加号 (+) 的任意组合
+- 零到两个空格字符
+- 43 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1275,8 +1274,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureIoTConnectionString 找到与该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureIoTConnectionString查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1294,29 +1293,29 @@ OR
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-publish-setting-password"></a>Azure 发布设置密码
 
 ### <a name="format"></a>Format
 
-字符串 "userpwd ="，后跟一个字母数字字符串。
+字符串"userpwd="后跟字母数字字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "userpwd ="
-- 任何60小写字母或数字的组合
-- 引号 ( ") 
+- 字符串"userpwd="
+- 60 个小写字母或数字的任意组合
+- 引号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -1325,8 +1324,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzurePublishSettingPasswords 找到与该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzurePublishSettingPasswords查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 
 ```xml
@@ -1345,33 +1344,33 @@ OR
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-redis-cache-connection-string"></a>Azure Redis 缓存连接字符串
 
 ### <a name="format"></a>Format
 
-字符串 "redis"。<!--no-hyperlink-->net "，后跟下面的模式中所述的字符和字符串，包括字符串" password "或" pwd "。
+字符串"redis.cache.windows"。<!--no-hyperlink-->net"后跟以下模式中列出的字符和字符串，包括字符串"password"或"pwd"。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "redis"。<!--no-hyperlink-->netmeeting
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "password" 或 "pwd"
-- 零到两个空白字符
+- 字符串"redis.cache.windows"。<!--no-hyperlink-->net"
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"password"或"pwd"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 43个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
+- 零到两个空格字符
+- 43 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1381,8 +1380,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureRedisCacheConnectionString 找到与该模式匹配的内容。。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureRedisCacheConnectionString查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1400,33 +1399,33 @@ OR
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
-## <a name="azure-sas"></a>Azure SA
+## <a name="azure-sas"></a>Azure SAS
 
 ### <a name="format"></a>Format
 
-字符串 "sig"，后跟下面模式中所示的字符和字符串。
+字符串"sig"后跟下面模式中列出的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "sig"
-- 零到两个空白字符
+- 字符串"sig"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 介于43-53 个字符和小写字母、数字或百分号 (% ) 之间的任意组合
-- 字符串 "% 3d"
-- 不是字母或数字的小写字母、数字或百分号 (% ) 的任意字符
+- 零到两个空格字符
+- 小写字母或大写字母、数字或百分号之间的 43-53 个字符的任意组合 (%) 
+- 字符串"%3d"
+- 不是小写或大写字母、数字或百分号的任何字符 (%) 
 
 ### <a name="checksum"></a>校验和
 
@@ -1435,7 +1434,7 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureSAS 找到与该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureSAS查找与模式匹配的内容。
 
 ```xml
 <!--Azure SAS-->
@@ -1450,22 +1449,22 @@ OR
 
 ### <a name="format"></a>Format
 
-字符串 "终结点"，后跟下面模式中所示的字符和字符串，包括字符串 "<!--no-hyperlink-->net "和" SharedAccesKey "。
+字符串"EndPoint"后跟以下模式中列出的字符和字符串，包括字符串"servicebus.windows"。<!--no-hyperlink-->net"和"SharedAccesKey"。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "EndPoint"
-- 零到两个空白字符
+- 字符串"EndPoint"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "<!--no-hyperlink-->netmeeting
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "SharedAccessKey"
-- 零到两个空白字符
+- 零到两个空格字符
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"servicebus.windows"。<!--no-hyperlink-->net"
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"SharedAccessKey"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 43个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
+- 零到两个空格字符
+- 43 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1475,8 +1474,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureServiceBusConnectionString 找到与该模式匹配的内容。。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureServiceBusConnectionString查找与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1494,36 +1493,36 @@ OR
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
 ## <a name="azure-storage-account-key"></a>Azure 存储帐户密钥
 
 ### <a name="format"></a>Format
 
-字符串 "DefaultEndpointsProtocol"，后跟下面模式中所述的字符和字符串，包括字符串 "AccountKey"。
+字符串"DefaultEndpointsProtocol"后跟以下模式中列出的字符和字符串，包括字符串"AccountKey"。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "DefaultEndpointsProtocol"
-- 零到两个空白字符
+- 字符串"DefaultEndpointsProtocol"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "AccountKey"
-- 零到两个空白字符
+- 零到两个空格字符
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"AccountKey"
+- 零到两个空格字符
 - 等号 (=) 
-- 零到两个空白字符
-- 86个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
+- 零到两个空格字符
+- 86 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1533,9 +1532,9 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureStorageAccountKey 找到与该模式匹配的内容。
-- 正则表达式 **CEP_AzureEmulatorStorageAccountFilter 不会找到与** 该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureStorageAccountKey查找与模式匹配的内容。
+- 正则表达式CEP_AzureEmulatorStorageAccountFilter **找不到** 与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1554,34 +1553,34 @@ OR
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a> (通用) 的 Azure 存储帐户密钥
+## <a name="azure-storage-account-key-generic"></a>Azure 存储帐户密钥 (通用) 
 
 ### <a name="format"></a>Format
 
-86的任意组合（以小写或大写字母、数字、正斜杠 (/) 或加号 (+) ，在下面的模式中所列字符的前面或后面）。
+86 个小写字母或大写字母、数字、正斜杠 (/) 或加号 (+) 的任意组合，前面或后跟以下模式中列出的字符。
 
 ### <a name="pattern"></a>模式
 
-- 0到大于号之一 ( # A0) 、撇号 ( ' ) 、等号 (=) 、引号 ( ") 或数字标记 ( # ) 
-- 86个字符的任意组合，这些字符为小写字母、数字、数字、正斜杠 (/) 或加号 (+) 
+- 零到大于符号 (>) 、撇号 (') 、等号 (=) 、引号 (") 或数字符号 (#) 
+- 86 个字符的任意组合，即小写或大写字母、数字、正斜杠 (/) 或加号 (+) 
 - 两个等号 (=) 
 
 ### <a name="checksum"></a>校验和
@@ -1591,7 +1590,7 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_AzureStorageAccountKeyGeneric 找到与该模式匹配的内容。
+- 正则表达式CEP_Regex_AzureStorageAccountKeyGeneric查找与模式匹配的内容。
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1601,16 +1600,15 @@ OR
   </Pattern>
 </Entity>
 ```
-## <a name="belgium-drivers-license-number"></a>比利时驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="belgium-drivers-license-number"></a>比利时驾驶证号码
 
 ### <a name="format"></a>Format
 
-10个数字，无空格和分隔符
+10 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10位数字
+十个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -1619,8 +1617,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_belgium_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字 `Keywords_eu_driver's_license_number` `Keywords_belgium_eu_driver's_license_number` 。
+- 正则表达式  `Regex_belgium_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或 `Keywords_eu_driver's_license_number` 找到 `Keywords_belgium_eu_driver's_license_number` 的关键字。
     
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1638,7 +1636,7 @@ OR
 ### <a name="keywords"></a>关键字
 
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -1646,49 +1644,49 @@ OR
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -1696,76 +1694,76 @@ OR
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
-#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver "s_license_number
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver s_license_number
 
 - rijbewijs
 - rijbewijsnummer
-- führerschein-nr
-- führerscheinnummer
-- füehrerscheinnummer
+- fhrerschein
+- fhrerscheinnummer
+- f≤ehrerscheinnummer
 - fuhrerschein
 - fuehrerschein
 - fuhrerscheinnummer
@@ -1774,20 +1772,20 @@ OR
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>比利时国家/地区号码
+## <a name="belgium-national-number"></a>比利时国家/区号
 
 ### <a name="format"></a>Format
 
-11位数加上可选分隔符
+11 个数字加上可选的分隔符
 
 ### <a name="pattern"></a>模式
 
 11 个数字加分隔符：
-- 6个数字和两个可选句点（以 YY 为格式）。月.DD 出生日期 
-- 点、短划线、空间中的可选分隔符 
-- 奇数的三个连续数字 (奇数，即使偶数)  
-- 点、短划线、空间中的可选分隔符 
-- 两个校验位
+- YY 格式的六个数字和两个可选句点。MM.DD出生日期 
+- 点、短划线、空格中的可选分隔符 
+- 三个连续的数字 (为男性的奇数，即使对于男性)  
+- 点、短划线、空格中的可选分隔符 
+- 两个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -1824,34 +1822,34 @@ OR
 - belasting aantal
 - bnn#
 - bnn
-- d'identité
-- identifiant 国家
+- carte d'identité
+- identifiant national
 - identifiantnational#
 - identificatie
-- id
+- identification
 - identifikation
 - identifikationsnummer
 - identifizierung
 - identité
-- identiteit
+- identit数据
 - identiteitskaart
-- 窃取
+- identity
 - inscription
-- 国家/地区号码
-- 国家/地区寄存器
+- national number
+- national register
 - nationalnumber#
 - nationalnumber
-- \n\n#
-- \n\n
+- nif#
+- nif
 - numéro d'assuré
-- numéro de registre 国
+- numéro de registre national
 - numéro de sécurité
 - numéro d'identification
 - numéro d'immatriculation
-- numéro 国家
+- numéro national
 - numéronational#
-- 个人 id 号
-- personalausweis
+- 个人 ID 号
+- personalaus一s
 - personalidnumber#
 - registratie
 - 注册
@@ -1862,28 +1860,28 @@ OR
 - ssn
 - steuernummer
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 ## <a name="belgium-passport-number"></a>比利时护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母后跟六个数字，不含空格或分隔符
+两个字母后跟六个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -1896,8 +1894,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_belgium_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_belgium_eu_passport_number` 。
+- 正则表达式  `Regex_belgium_eu_passport_number` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_belgium_eu_passport_number` 关键字。
 
 ```xml
  <!-- EU Passport Number -->
@@ -1916,16 +1914,16 @@ OR
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
@@ -1934,18 +1932,18 @@ OR
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport 的购买
+- Passeport carte
 - Passeport livre
 - Pass-Nr
 - Passnummer
 - reisepass kein
 
-## <a name="belgium-social-security-number-or-equivalent-identification"></a>比利时社会安全号码或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+## <a name="belgium-social-security-number-or-equivalent-identification"></a>比利时社会保险号或等效标识
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-11位数，不含空格或分隔符
+11 个数字，不带空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -1959,11 +1957,11 @@ OR
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_belgium_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_belgium_eu_ssn_or_equivalent` 。 
+- 该  `Func_belgium_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_belgium_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_belgium_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_belgium_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -1982,8 +1980,8 @@ OR
 
 #### <a name="keywords_belgium_eu_ssn_or_equivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
-- 比利时国家/地区号码
-- 国家/地区号码
+- national number
+- national number
 - social security number
 - nationalnumber#
 - ssn#
@@ -1991,18 +1989,18 @@ OR
 - nationalnumber
 - bnn#
 - bnn
-- 个人 id 号
+- 个人 ID 号
 - personalidnumber#
-- numéro 国家
+- numéro national
 - numéro de sécurité
 - numéro d'assuré
-- identifiant 国家
+- identifiant national
 - identifiantnational#
 - numéronational#
 
 
-## <a name="belgium-value-added-tax-number"></a>比利时增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="belgium-value-added-tax-number"></a>比利时增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -2011,20 +2009,20 @@ OR
 
 ### <a name="format"></a>Format
 
-12个字符的字母数字模式
+12 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-12个字符的字母数字模式：
+12 个字符字母数字模式：
 
 - 字母 B 或 b
-- 字母 E 或 E
-- 数字0
-- 一个从1到9的数字
-- 一个可选的点或连字符或空格
-- 四位数
-- 一个可选的点或连字符或空格
-- 四位数
+- 字母 E 或 e
+- 数字 0
+- 从 1 到 9 的数字
+- 可选点或连字符或空格
+- 四个数字
+- 可选点或连字符或空格
+- 四个数字
 
 
 ### <a name="checksum"></a>校验和
@@ -2035,11 +2033,11 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_belgium_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_belgium_value_added_tax_number 中的关键字。
+- 该函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_belgium_value_added_tax_number的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_belgium_value_added_tax_number 找到与该模式匹配的内容。
+- 该函数Func_belgium_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2058,10 +2056,10 @@ OR
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
-- n º tva
-- vat 号码
-- vat 编号
-- numéro。
+- n？ tva
+- vat number
+- vat no
+- numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
 - btw
@@ -2077,16 +2075,16 @@ OR
 
 ### <a name="pattern"></a>模式
 
-格式
+格式化：
 - 三个数字
-- 一个句点
+- a period
 - 三个数字
-- 一个句点
+- a period
 - 三个数字
 - 连字符
-- 两个数字，是校验位
+- 两个数字，即检查数字
 
-纯
+无格式：
 - 11 个数字，其中最后两个数字是校验位
 
 ### <a name="checksum"></a>校验和
@@ -2122,17 +2120,17 @@ OR
 #### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Id
+- 标识
 - Registration
-- 营业
+- 收入
 - Cadastro de Pessoas Físicas 
-- Imposto 
+- 一名 
 - Identificação 
-- Inscrição 
+- Inscriço 
 - Receita 
 
    
-## <a name="brazil-legal-entity-number-cnpj"></a>巴西法人编号 (CNPJ) 
+## <a name="brazil-legal-entity-number-cnpj"></a>CNPJ (巴西法律实体) 
 
 ### <a name="format"></a>Format
 
@@ -2142,15 +2140,15 @@ OR
 
 14 个数字，再加上分隔符：
 
-- 两位数 
-- 一个句点 
+- 两个数字 
+- a period 
 - 三个数字 
-- 一个句点 
-- 三个数字 (这些前八位数字是注册号码)  
-- 一个正斜杠 
-- 四位数的分支号码 
+- a period 
+- 前八 (三个数字是注册号码)  
+- 正斜杠 
+- 四位数分支号码 
 - 连字符 
-- 两个数字，是校验位
+- 两个数字，即检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2201,33 +2199,33 @@ OR
 - Pessoa jurídica 
 - Pessoas jurídicas 
 - Situação cadastral 
-- Inscrição 
+- Inscriço 
 - Empresa 
 
    
-## <a name="brazil-national-identification-card-rg"></a>巴西国家标识卡 (RG) 
+## <a name="brazil-national-identification-card-rg"></a>巴西国家身份证 (RG) 
 
 ### <a name="format"></a>Format
 
-Registro Geral (旧格式) ：9个数字
+Registro Geral (旧格式) ：九个数字
 
-Registro de Identidade (RIC)  (新格式) ：11个数字
+Registro de Identidade (RIC)  (新格式) ：11 个数字
 
 ### <a name="pattern"></a>模式
 
 Registro Geral（旧格式）：
-- 两位数 
-- 一个句点 
+- 两个数字 
+- a period 
 - 三个数字 
-- 一个句点 
+- a period 
 - 三个数字 
 - 连字符 
-- 一个数字，是校验位
+- 一个数字，这是一个检查数字
 
 Registro de Identidade (RIC)  (新格式) ：
-- 10位数字 
+- 十个数字 
 - 连字符 
-- 一个数字，是校验位
+- 一个数字，这是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2271,16 +2269,15 @@ Registro de Identidade (RIC)  (新格式) ：
 - RIC（此关键字区分大小写） 
 
 
-## <a name="bulgaria-drivers-license-number"></a>保加利亚驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="bulgaria-drivers-license-number"></a>保加利亚驾驶证号码
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字
+九个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -2289,8 +2286,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_bulgaria_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_bulgaria_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_bulgaria_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2307,7 +2304,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -2315,49 +2312,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -2365,71 +2362,71 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver "s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver s_license_number
 
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
@@ -2437,8 +2434,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - шофьорска книжка
 - шофьорски книжки
 
-## <a name="bulgaria-uniform-civil-number"></a>保加利亚统一民事号码
-此敏感信息类型仅可用于以下内容：
+## <a name="bulgaria-uniform-civil-number"></a>保加利亚统一编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -2447,16 +2444,16 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-10个数字，无空格和分隔符
+10 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10个数字，无空格和分隔符
+10 个数字，不带空格和分隔符
   
-- 与出生日期 (YYMMDD) 的6个数字 
-- 与出生顺序对应的两个数字
-- 与性别对应的一位数字：男的偶数位和用于女的奇数位
-- 一个校验位
+- 与 YYMMDD (的出生日期对应的六)  
+- 对应于出生日期的两个数字
+- 对应于性别的一个数字：一个偶数（男性）和一个奇数（对于男性）
+- 一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2465,11 +2462,11 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_bulgaria_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_bulgaria_eu_national_id_card` 。 
+- 该  `Func_bulgaria_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_bulgaria_eu_national_id_card` 关键字。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_bulgaria_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_bulgaria_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Bulgaria Uniform Civil Number -->
@@ -2496,29 +2493,29 @@ Registro de Identidade (RIC)  (新格式) ：
 - bnn
 - bucn#
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhzhski nomer
 - egn#
 - egn
 - identification number
 - national id
-- 国家/地区号码
+- national number
 - nationalnumber#
 - nationalnumber
-- 个人 id
-- 个人编号
+- 个人 ID
+- personal no
 - 个人号码
 - personalidnumber#
 - social security number
 - ssn#
 - ssn
-- 统一的民事 id
-- 统一的民事无
-- 统一的民事号码
+- uniform uniform uniform id
+- uniform uniform uniform no
+- 统一编号
 - uniformcivilno#
 - uniformcivilno
 - uniformcivilnumber#
 - uniformcivilnumber
-- 独特公民编号
+- 唯一的公民编号
 - егн#
 - егн
 - единен граждански номер
@@ -2528,8 +2525,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - лично не
 - национален номер
 - номер на гражданството
-- униформ id
-- униформграждански id
+- ql- id
+- граждански граждански id
 - униформ граждански не
 - униформ граждански номер
 - униформгражданскиid#
@@ -2537,15 +2534,15 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="bulgaria-passport-number"></a>保加利亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字 
+九个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -2554,8 +2551,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_bulgaria_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_bulgaria_eu_passport_number` `Keywords_eu_passport_number_common` 。 
+- 正则表达式  `Regex_bulgaria_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_bulgaria_eu_passport_number` 找到 `Keywords_eu_passport_number_common` 的关键字。 
 
 ```xml
  <!-- EU Passport Number -->
@@ -2573,24 +2570,24 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
 - номер на паспорта
 - номер на паспорт
-- паспорт No
+- /否
 
-## <a name="canada-bank-account-number"></a>加拿大银行帐户号码
+## <a name="canada-bank-account-number"></a>加拿大银行帐号
 
 ### <a name="format"></a>Format
 
@@ -2603,9 +2600,9 @@ Registro de Identidade (RIC)  (新格式) ：
 加拿大银行帐户的银行代号是：
 - 五个数字 
 - 连字符 
-- 三位数字或
-- 零 "0" 
-- 八位数字
+- 三个数字 OR
+- 零"0" 
+- 八个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2664,7 +2661,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - direct deposit
 
    
-## <a name="canada-drivers-license-number"></a>加拿大驾照号码
+## <a name="canada-drivers-license-number"></a>加拿大驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -2743,16 +2740,16 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
 - 省/市/自治区的缩写，例如 AB
 - 省名称，例如 Alberta
 
 #### <a name="keyword_canada_drivers_license"></a>Keyword_canada_drivers_license
 
-- 通讯
+- DL
 - DLS
-- 采用
+- CDL
 - CDLS
 - DriverLic
 - DriverLics
@@ -2818,10 +2815,10 @@ Registro de Identidade (RIC)  (新格式) ：
 - identification #s
 - identification card
 - identification cards
-- id 
-- 通讯#
+- identification 
+- DL#
 - DLS# 
-- 采用# 
+- CDL# 
 - CDLS# 
 - DriverLic# 
 - DriverLics# 
@@ -2872,25 +2869,25 @@ Registro de Identidade (RIC)  (新格式) ：
 - Driver's Licence# 
 - Driver's Licences# 
 - Permis de Conduire# 
-- 号# 
 - id# 
+- ids# 
 - idcard card# 
 - idcard cards# 
 - idcard# 
 - identification card# 
 - identification cards# 
-- id# 
+- identification# 
 
    
-## <a name="canada-health-service-number"></a>加拿大运行状况服务号码
+## <a name="canada-health-service-number"></a>加拿大卫生服务号码
 
 ### <a name="format"></a>Format
 
-10位数字
+十个数字
 
 ### <a name="pattern"></a>模式
 
-10位数字
+十个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2924,20 +2921,20 @@ Registro de Identidade (RIC)  (新格式) ：
 - speciality services
 - automobile accident
 - patient hospital
-- psychiatrist
+- 一些
 - workers compensation
-- 障碍
+- 残障
 
       
 ## <a name="canada-passport-number"></a>加拿大护照号码
 
 ### <a name="format"></a>Format
 
-两个大写字母后跟六个数字
+两个小写字母后跟六个数字
 
 ### <a name="pattern"></a>模式
 
-两个大写字母后跟六个数字
+两个小写字母后跟六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -2947,7 +2944,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_passport_number 找到与该模式匹配的内容。
-- 找到 Keyword_canada_passport_number 或 Keyword_passport 中的关键字。
+- 找到来自Keyword_canada_passport_number或Keyword_passport关键字。
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -2980,14 +2977,14 @@ Registro de Identidade (RIC)  (新格式) ：
 - Passport Number
 - Passport No
 - Passport #
-- 登记卡#
+- Passport#
 - PassportID
 - Passportno
 - passportnumber
 - パスポート
 - パスポート番号
-- パスポートのNum
-- パスポート＃
+- パスポのnum
+- パスポート#
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
@@ -3001,11 +2998,11 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九位数字
+九个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3015,7 +3012,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_canada_phin 找到与该模式匹配的内容。
-- 找到 Keyword_canada_phin 或 Keyword_canada_provinces 中至少有两个关键字。
+- 至少找到两个Keyword_canada_phin或Keyword_canada_provinces关键字。
 
 ```xml
 <!-- Canada PHIN -->
@@ -3053,13 +3050,13 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 省
+- 里里达
 - Northwest Territories
-- 省
+- On一
 - British Columbia
-- Alberta
-- 彻
-- Manitoba
+- 阿尔伯达
+- Saskatchewan
+- 马尼托巴
 - Yukon
 - Newfoundland and Labrador
 - New Brunswick
@@ -3068,22 +3065,22 @@ Registro de Identidade (RIC)  (新格式) ：
 - 加拿大
 
    
-## <a name="canada-social-insurance-number"></a>加拿大社会保险电话号码
+## <a name="canada-social-insurance-number"></a>加拿大社会保险号码
 
 ### <a name="format"></a>Format
 
-9个数字，带可选连字符或空格
+九个数字（可选连字符或空格）
 
 ### <a name="pattern"></a>模式
 
-格式
+格式化：
 - 三个数字 
 - 连字符或空格 
 - 三个数字 
 - 连字符或空格 
 - 三个数字
 
-未格式化：9个数字
+无格式：九个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3129,9 +3126,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - sin 
 - social insurance 
 - numero d'assurance sociale 
-- 罪 
+- sins 
 - ssn 
-- ssn 
+- ssns 
 - social security 
 - numero d'assurance social 
 - national identification number 
@@ -3152,22 +3149,22 @@ Registro de Identidade (RIC)  (新格式) ：
 - Date of Birth 
 
    
-## <a name="chile-identity-card-number"></a>智利标识卡号
+## <a name="chile-identity-card-number"></a>智利身份证号
 
 ### <a name="format"></a>Format
 
-七到八个数字加上分隔符一个校验位或字母
+七到八个数字加上分隔符一个检查数字或字母
 
 ### <a name="pattern"></a>模式
 
 七到八个数字加分隔符：
-- 一到两位数 
-- 可选期间 
+- 一到两个数字 
+- 可选时间段 
 - 三个数字 
-- 可选期间 
+- 可选时间段 
 - 三个数字 
 - 短划线 
-- 一个数字或字母 (不区分大小写) 这是校验位
+- 一个数字或 (不区分大小写) 一个数字或字母，这是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3206,38 +3203,38 @@ Registro de Identidade (RIC)  (新格式) ：
 - national identification
 - national identification number
 - national id
-- número de identificación nacional
+- número de identificaccio nacional
 - rol único nacional
-- rol único tributario
-- 以
-- 墨守成规
+- rol único tribu一
+- RUN
+- RUT
 - tarjeta de identificación
 - Rol Unico Nacional
-- Rol Unico Tributario
-- 以#
-- 墨守成规#
+- Rol Unico Tribu一
+- RUN#
+- RUT#
 - nationaluniqueroleID#
 - nacional identidad
 - número identificación
 - identidad número
 - numero identificacion
 - identidad numero
-- 智利 identity no。
-- 智利标识号码
-- 智利标识#
-- 唯一的税务注册表
-- 唯一 Tributary 角色
-- 唯一的税角色
-- 唯一的 Tributary 编号
-- 唯一的国家/地区号码
-- 独特的国家/地区角色
-- 国家/地区独有角色
-- 智利标识编号。
-- 智利身份证号码
+- 因此，标识为"否"。
+- 百万标识号
+- 地名#
+- 唯一税务注册表
+- 唯一的三元角色
+- 唯一税务角色
+- 唯一的三元数
+- 唯一的国内号码
+- 唯一的国家角色
+- 国家唯一角色
+- 智利标识否。
+- 智利标识号
 - 智利标识#
 
    
-## <a name="china-resident-identity-card-prc-number"></a>中国居民身份卡片 (中国) 号码
+## <a name="china-resident-identity-card-prc-number"></a>中国居民身份证 (中国) 号码
 
 ### <a name="format"></a>Format
 
@@ -3246,10 +3243,10 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="pattern"></a>模式
 
 18 个数字：
-- 6个数字，这是一个地址代码 
-- 8位数，形式为 YYYYMMDD，表示出生日期 
-- 三个数字，这是一个订单代码 
-- 一个数字，是校验位
+- 六个数字，即地址代码 
+- 八个数字，格式为 YYYYMMDD，表示出生日期 
+- 三个数字，即订单代码 
+- 一个数字，这是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3284,7 +3281,7 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
 - Resident Identity Card 
-- 台湾 
+- 中国 
 - National Identification Card 
 - 身份证 
 - 居民 身份证 
@@ -3299,7 +3296,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-14到16个数字，可以设置格式或无格式 (dddddddddddddddd) 且必须通过 Luhn 测试。
+14 到 16 个数字，可以格式化或无格式 (dd) 且必须通过 Luhn 测试。
 
 ### <a name="pattern"></a>模式
 
@@ -3359,30 +3356,30 @@ Registro de Identidade (RIC)  (新格式) ：
 - cryptogramme
 - numéro de sécurité
 - numero de securite
-- kreditkartenprüfnummer
-- kreditkartenprufnummer
-- prüfziffer
+- kreditkrtenpr≤fnummer
+- kreditprufnummer
+- pr≤fziffer
 - prufziffer
 - sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- 货. sicurezza
+- cod。 sicurezza
 - cod sicurezza
 - n autorizzazione
 - código
 - codigo
-- 货. seg
+- cod。 seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
-- 货. seguranca
-- 货. segurança
-- cód. seguranca
+- cód。 segurança
+- cod。 seguranca
+- cod。 segurança
+- cód。 seguranca
 - cód segurança
 - cod seguranca
 - cod segurança
@@ -3391,7 +3388,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero de verificacao
 - ablauf
 - gültig bis
-- gültigkeitsdatum
+- g≤ltigkeitsdatum
 - gultig bis
 - gultigkeitsdatum
 - scadenza
@@ -3409,7 +3406,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - valor
 - vencimento
 - transaction
-- 交易记录编号
+- 事务编号
 - 参考编号
 - セキュリティコード
 - セキュリティ コード
@@ -3423,16 +3420,16 @@ Registro de Identidade (RIC)  (新格式) ：
 - american express
 - americanexpress
 - americano espresso
-- 反之
+- Visa
 - mastercard
 - Master Card
-- emc
+- mc
 - mastercards
 - master cards
 - diner's Club
 - diners club
-- dinersclub
-- 确定
+- dinersc
+- discover
 - discover card
 - discovercard
 - discover cards
@@ -3442,8 +3439,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - carte blanche
 - carteblanche
 - credit card
-- 收件人#
-- cc #：
+- cc#
+- cc#：
 - expiration date
 - exp date
 - expiry date
@@ -3462,9 +3459,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - creditcards
 - ccn
 - card holder
-- 持卡人
+- 一个
 - card holders
-- cardholders
+- 一些
 - check card
 - checkcard
 - check cards
@@ -3480,17 +3477,17 @@ Registro de Identidade (RIC)  (新格式) ：
 - enroute
 - en route
 - card type
-- Cardmember 帐户
+- Cardmember Acct
 - cardmember 帐户
 - Cardno
-- 公司卡片
-- 公司卡片
+- 公司卡
+- 公司卡
 - 卡片类型
-- 卡片帐号
-- 卡片成员帐户
-- Cardmember 帐户。
+- card account number
+- card 成员帐户
+- Cardmember Acct。
 - card no.
-- 卡片编号
+- card no
 - card number
 - carte bancaire
 - carte de crédit
@@ -3499,23 +3496,23 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero de carte
 - nº de la carte
 - nº de carte
-- kreditkarte
+- kreditkrte
 - karte
 - karteninhaber
 - karteninhabers
-- kreditkarteninhaber
-- kreditkarteninstitut
-- kreditkartentyp
-- eigentümername
+- kredititteninhaber
+- kreditstitut
+- kredittentyp
+- eigent≤mername
 - kartennr
 - kartennummer
-- kreditkartennummer
-- kreditkarten-nummer
+- kreditnummer
+- kredit-nummer
 - carta di credito
 - carta credito
-- \n\n\-. carta
+- n. carta
 - n carta
-- führerschein-nr. carta
+- nr. carta
 - nr carta
 - numero carta
 - numero della carta
@@ -3557,25 +3554,25 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero de cartao
 - nº do cartão
 - nº do cartao
-- n º。 do cartão
+- n。 do cartão
 - no do cartão
 - no do cartao
 - 不。 do cartão
 - 不。 do cartao
 - クレジットカード番号
 - クレジットカードナンバー
-- クレジットカード＃
+- クレジットカード#
 - クレジットカード
 - クレジット
 - クレカ
 - カード番号
 - カードナンバー
-- カード＃
+- カード#
 - アメックス
 - アメリカンエクスプレス
 - アメリカン エクスプレス
-- Visaカード
-- 签证カード
+- Visaカド
+- Visa カド
 - マスターカード
 - マスター カード
 - マスター
@@ -3593,16 +3590,15 @@ Registro de Identidade (RIC)  (新格式) ：
 - デビットカード
 
 
-## <a name="croatia-drivers-license-number"></a>克罗地亚驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="croatia-drivers-license-number"></a>克罗地亚驾驶证号码
 
 ### <a name="format"></a>Format
 
-8位数，不含空格和分隔符
+八个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-八位数字
+八个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -3612,8 +3608,8 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_croatia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字 `Keywords_eu_driver's_license_number` `Keywords_croatia_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_croatia_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或 `Keywords_eu_driver's_license_number` 找到 `Keywords_croatia_eu_driver's_license_number` 的关键字。 
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3630,7 +3626,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -3638,49 +3634,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -3688,86 +3684,86 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver "s_license_number
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver s_license_number
 
-- vozačka dozvola
-- vozačke dozvole
+- vozazaka dozvola
+- vozazake dozvole
 
 
-## <a name="croatia-identity-card-number"></a>克罗地亚 identity 卡片号
-此敏感信息类型实体包含在欧盟国家/地区标识的敏感信息类型中，可用作独立的敏感信息类型实体。
+## <a name="croatia-identity-card-number"></a>克罗地亚身份证号
+此敏感信息类型实体包含在欧盟国家标识号敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九个连续数字
+九个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3793,46 +3789,46 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj građana
-- 主公民号码
-- nacionalni identifikacijski broj
+- majstorski broj graana
+- master citizen number
+- nacionalni identifciocijski broj
 - national identification number
 - oib#
 - oib
 - osobna iskaznica
 - osobni id
-- osobni identifikacijski broj
+- osobni identifidentcijski broj
 - 个人标识号
-- porezni broj
-- porezni identifikacijski broj
+- 一些
+- identifidentidentcijski broj
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
 ## <a name="croatia-passport-number"></a>克罗地亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字 
+九个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -3841,8 +3837,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_croatia_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_croatia_eu_passport_number` 。 
+- 正则表达式  `Regex_croatia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_croatia_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -3860,22 +3856,22 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- broj putovnice
-- br. Putovnice
-- br putovnice
+- broj putov一
+- br. Putov一
+- br putov一
    
 ## <a name="croatia-personal-identification-oib-number"></a>克罗地亚个人标识 (OIB) 号码
 
@@ -3886,8 +3882,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="pattern"></a>模式
 
 11 个数字：
-- 10位数字 
-- 最后一个数字是校验位
+- 十个数字 
+- 最终数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -3897,7 +3893,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_croatia_oib_number 找到与该模式匹配的内容。
-- 找到 Keywords_croatia_eu_tax_file_number 中的关键字。
+- 找到来自Keywords_croatia_eu_tax_file_number的关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
@@ -3921,48 +3917,48 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj građana
-- 主公民号码
-- nacionalni identifikacijski broj
+- majstorski broj graana
+- master citizen number
+- nacionalni identifciocijski broj
 - national identification number
 - oib#
 - oib
 - osobna iskaznica
 - osobni id
-- osobni identifikacijski broj
+- osobni identifidentcijski broj
 - 个人标识号
-- porezni broj
-- porezni identifikacijski broj
+- 一些
+- identifidentidentcijski broj
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>克罗地亚社会安全号码或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+## <a name="croatia-social-security-number-or-equivalent-identification"></a>克罗地亚社会保险号或等效标识
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-11个数字，无空格和分隔符
+11 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 11 个数字：
   
-- 10位数字
-- 一个校验位
+- 十个数字
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -3972,12 +3968,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_croatia_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_croatia_eu_ssn_or_equivalent` 。 
+- 该  `Func_croatia_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_croatia_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_croatia_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_croatia_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -3997,7 +3993,7 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
 - 个人标识号
-- 主公民号码
+- master citizen number
 - national identification number
 - social security number
 - nationalnumber#
@@ -4006,18 +4002,17 @@ Registro de Identidade (RIC)  (新格式) ：
 - nationalnumber
 - bnn#
 - bnn
-- 个人 id 号
+- 个人 ID 号
 - personalidnumber#
 - oib
-- osobni identifikacijski broj
+- osobni identifidentcijski broj
 
    
-## <a name="cyprus-drivers-license-number"></a>塞浦路斯驱动程序许可证编号
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="cyprus-drivers-license-number"></a>塞浦路斯驾驶证号码
 
 ### <a name="format"></a>Format
 
-12个数字，不含空格和分隔符
+12 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -4030,8 +4025,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_cyprus_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_cyprus_eu_driver's_license_number` 。
+- 正则表达式  `Regex_cyprus_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_cyprus_eu_driver's_license_number` 的关键字。
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4048,7 +4043,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4056,49 +4051,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -4106,78 +4101,78 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver "s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver s_license_number
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
 
-## <a name="cyprus-identity-card"></a>塞浦路斯标识卡片
-此敏感信息类型仅可用于以下内容：
+## <a name="cyprus-identity-card"></a>塞浦路斯身份证
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -4186,11 +4181,11 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-10个数字，无空格和分隔符
+10 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10位数字 
+十个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -4199,8 +4194,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_cyprus_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_cyprus_eu_national_id_card` 。 
+- 正则表达式  `Regex_cyprus_eu_national_id_card` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_cyprus_eu_national_id_card` 关键字。 
     
 ```xml 
       <!-- Cyprus Identity Card -->
@@ -4216,24 +4211,24 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- id 卡号
+- id card number
 - 标识卡号
-- kimlik karti
+- kim karti
 - national identification number
-- 个人 id 号
+- 个人 ID 号
 - ταυτοτητασ
 
 
 ## <a name="cyprus-passport-number"></a>塞浦路斯护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-一个字母后跟6-8 个数字，不含空格或分隔符
+一个字母后跟 6-8 个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-一个字母后跟6到8个数字
+一个字母后跟六到八个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -4242,8 +4237,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_cyprus_eu_passport_number` 找到与该模式匹配的内容。
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_cyprus_eu_passport_number` 。 
+- 正则表达式  `Regex_cyprus_eu_passport_number` 查找与模式匹配的内容。
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_cyprus_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4262,16 +4257,16 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
@@ -4282,13 +4277,13 @@ Registro de Identidade (RIC)  (新格式) ：
 - διαβατήριο#
 - διαβατήριο
 - αριθμός διαβατηρίου
-- Pasaport Kimliği
-- pasaport numarası
-- Pasaport。
+- Pasaport Kimlii
+- pasaport nu一s
+- Pasaport 否。
 - Αρ. Διαβατηρίου
 
-## <a name="cyprus-tax-identification-number"></a>塞浦路斯税号标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="cyprus-tax-identification-number"></a>塞浦路斯税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -4297,14 +4292,14 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-指定模式中的八个数字和一个字母
+指定模式中八个数字和一个字母
   
 ### <a name="pattern"></a>模式
 
 八个数字和一个字母：
   
-- "0" 或 "9"
-- 七位数字
+- a "0" or "9"
+- 七个数字
 - 一个字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -4314,11 +4309,11 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_cyprus_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_cyprus_eu_tax_file_number` 。 
+- 该  `Func_cyprus_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_cyprus_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_cyprus_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_cyprus_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Cyprus Tax Identification Number -->
@@ -4338,34 +4333,33 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-- 税标识代码
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- 税务标识代码
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 和#
-- 和
-- 纳税人 id
-- tin 编号
-- 锡#
-- vergi kimlik kodu
-- vergi kimlik numarası
+- tic#
+- tic
+- tin id
+- tin no
+- tin#
+- vergi kim且 kodu
+- vergi kim一 nu一s
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
 - φορολογική ταυτότητα
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>捷克语驱动程序的许可证编号
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="czech-drivers-license-number"></a>捷克驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -4375,10 +4369,10 @@ Registro de Identidade (RIC)  (新格式) ：
 
 八个字母和数字：
   
-- 字母 "E" (不区分大小写) 
+- 字母"E" (不区分大小写) 
 - 一个字母
-- 空格 (可选) 
-- 6位数字
+- 可选 (空格) 
+- 六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4387,8 +4381,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_czech_republic_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_czech_republic_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_czech_republic_eu_driver's_license_number` 的关键字。 
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4405,7 +4399,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4413,49 +4407,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -4463,87 +4457,87 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver "s_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver s_license_number
 
-- řidičský prúkaz
-- řidičské průkazy
-- číslo řidičského průkazu
-- čísla řidičských průkazů
+- úidiúskú prúkaz
+- éidi？ské przy
+- ííslo 4idiíského príkazu
+- íísla 4idiískích príkaz≥
 
 
-## <a name="czech-passport-number"></a>捷克语护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+## <a name="czech-passport-number"></a>捷克护照号码
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-8位数，不含空格或分隔符
+八个数字，不带空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-8位数，不含空格或分隔符
+八个数字，不带空格或分隔符
   
 ### <a name="checksum"></a>校验和
 
@@ -4552,8 +4546,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_czech_republic_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_czech_republic_eu_passport_number` 。 
+- 正则表达式  `Regex_czech_republic_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_czech_republic_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4572,43 +4566,43 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
 - cestovní pas
-- číslo pasu
+- ííslo pasu
 - cestovní pasu
 - passeport no
-- čísla pasu
+- íísla pasu
 
 
-## <a name="czech-personal-identity-number"></a>捷克个人识别码
+## <a name="czech-personal-identity-number"></a>捷克语个人标识号
 
 ### <a name="format"></a>Format
 
-9个数字，带可选的正斜杠 (旧格式) 10 个数字，可选的正斜杠 (新格式) 
+九个数字，带可选正斜杠 (旧格式) 十个数字，带可选正斜杠 (新格式) 
 
 ### <a name="pattern"></a>模式
 
- (旧格式) 的9个数字：
-- 代表出生日期的六个数字
-- 可选的正斜杠
+九个数字 (旧格式) ：
+- 六个数字，表示出生日期
+- 可选正斜杠
 - 三个数字
 
-10个数字 (新格式) ：
-- 代表出生日期的六个数字
-- 可选的正斜杠 
-- 四个数字，其中最后一个数字是校验位
+10 个数字 (新格式) ：
+- 六个数字，表示出生日期
+- 可选正斜杠 
+- 四个数字，其中最后一个数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4624,7 +4618,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 
-- 函数 Func_czech_id_card_new_format 找到与该模式匹配的内容。
+- 函数Func_czech_id_card_new_format查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -4646,68 +4640,68 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
-- 出生号码
-- 捷克共和国 id
+- birth number
+- 捷克共和国 ID
 - czechidno#
-- daňové číslo
-- identifikační číslo
+- daé ííslo
+- identifíní ííslo
 - identity no
-- 标识号码
+- 标识号
 - identityno#
 - identityno
-- 保险号
+- insurance number
 - national identification number
 - nationalnumber#
-- 国家/地区号码
-- osobní číslo
+- national number
+- osobní ííslo
 - personalidnumber#
-- 个人 id 号
+- 个人 ID 号
 - 个人标识号
 - 个人号码
 - pid#
 - pid
-- pojištění číslo
-- rč
+- pojiítí ííslo
+- r-
 - rodne cislo
-- rodné číslo
+- rodné ííslo
 - ssn
 - ssn#
 - social security number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - 唯一标识号
 
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>捷克社会安全号码或等效标识
+## <a name="czech-social-security-number-or-equivalent-identification"></a>捷克身份证号或等效标识
 
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-指定模式中的10个数字和一个反斜杠
+10 个数字和指定模式中的反杠
   
 ### <a name="pattern"></a>模式
 
-10个数字和一个反斜杠：
+10 个数字和一个反杠：
   
-- 与出生日期对应的6个数字 (YYMMDD) ： 
-- 反斜杠
-- 与一个序列号相对应的三个数字，用于分隔出生于同一日期的人员
-- 一个校验位
+- 对应于 YYMMDD (出生日期的六) ： 
+- 反杠
+- 三个数字，对应于一个序列号，该序列号将同一日期的人分开
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -4716,11 +4710,11 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_czech_republic_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_czech_republic_eu_ssn_or_equivalent` 。 
+- 该  `Func_czech_republic_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_czech_republic_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_czech_republic_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_czech_republic_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
 
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -4739,31 +4733,30 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
-- 出生号码
+- birth number
 - national identification number
 - 个人标识号
 - social security number
 - nationalnumber#
 - ssn#
 - ssn
-- 国家/地区号码
-- 个人 id 号
+- national number
+- 个人 ID 号
 - personalidnumber#
-- rč
-- rodné číslo
+- r-
+- rodné ííslo
 - rodne cislo
 
 
-## <a name="denmark-drivers-license-number"></a>丹麦驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="denmark-drivers-license-number"></a>丹麦驾驶证号码
 
 ### <a name="format"></a>Format
 
-8位数，不含空格和分隔符
+八个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-八位数字
+八个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -4772,8 +4765,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_denmark_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_denmark_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_denmark_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_denmark_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -4790,7 +4783,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -4798,49 +4791,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -4848,85 +4841,85 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver "s_license_number
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver s_license_number
 
-- kørekort
-- kørekortnummer
+- k？rekort
+- k？rekortnummer
 
 
 ## <a name="denmark-passport-number"></a>丹麦护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字 
+九个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -4935,8 +4928,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_denmark_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_denmark_eu_passport_number` 。 
+- 正则表达式  `Regex_denmark_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_denmark_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -4955,36 +4948,36 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
 - pasnummer
-- Passeport n °
+- Passeport n°
 - pasnumre
 
 
-## <a name="denmark-personal-identification-number"></a>丹麦个人身份号码
+## <a name="denmark-personal-identification-number"></a>丹麦个人标识号
 
 ### <a name="format"></a>Format
 
-10个数字，包含连字符
+包含连字符的十个数字
 
 ### <a name="pattern"></a>模式
 
-10位数字：
-- 6位数，格式为 DDMMYY，表示出生日期 
+10 个数字：
+- 六个数字，格式为 DDMMYY，表示出生日期 
 - 连字符 
-- 四个数字，其中最后一个数字是校验位
+- 四个数字，其中最后一个数字是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -4993,12 +4986,12 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Func_denmark_eu_tax_file_number 找到与该模式匹配的内容。
+- 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 找到 Keyword_denmark_id 中的一个关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Func_denmark_eu_tax_file_number 找到与该模式匹配的内容。
+- 正则表达式Func_denmark_eu_tax_file_number查找与模式匹配的内容。
 - 校验和通过。
 
 ```xml
@@ -5020,35 +5013,35 @@ Registro de Identidade (RIC)  (新格式) ：
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
 - centrale personregister
-- civilt registreringssystem
+- registrt registreringssystem
 - cpr
 - cpr#
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
+- gesundheitshete nummer
+- gesundheitsversicherungte nummer
 - 运行状况卡片
 - 健康保险卡号
-- 健康保险号
+- 健康保险号码
 - identification number
 - identifikationsnummer
 - identifikationsnummer#
-- 标识号码
-- krankenkassennummer
+- 标识号
+- krnknkassennummer
 - nationalid#
 - nationalnumber#
-- 国家/地区号码
+- national number
 - personalidnumber#
 - personalidentityno#
-- 个人 id 号
+- 个人 ID 号
 - personnummer
 - personnummer#
-- reisekrankenversicherungskartenummer
+- reisekrankenversicherungsichtenummer
 - rejsesygesikringskort
 - ssn
 - ssn#
-- skat id
-- skat kode
-- skat nummer
-- skattenummer
+- 管理 id
+- 将 kode
+- nummer
+- 一个
 - social security number
 - sundhedsforsikringskort
 - sundhedsforsikringsnummer
@@ -5056,25 +5049,25 @@ Registro de Identidade (RIC)  (新格式) ：
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- 税码
-- 差旅健康保险卡
+- 税务代码
+- 旅行健康保险卡
 - uniqueidentityno#
 - 税号
-- 税务登记编号
+- 税务注册号码
 - tax id
-- 税标识号
-- taxid#
+- 税务标识号
+- 一些#
 - taxnumber#
-- 免税
+- tax no
 - taxno#
 - taxnumber
-- 税号标识编号
-- 锡#
-- taxidno#
-- taxidnumber#
-- 免税#
-- 纳税人 id
-- tin 编号
+- tax identification no
+- tin#
+- 一些#
+- 一些#
+- tax no#
+- tin id
+- tin no
 - cpr.nr
 - cprnr
 - cprnummer
@@ -5090,20 +5083,20 @@ Registro de Identidade (RIC)  (新格式) ：
 - sygesikringsnummer
 
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>丹麦社会安全号码或等效标识
+## <a name="denmark-social-security-number-or-equivalent-identification"></a>丹麦社会保险号或等效标识
 此敏感信息类型实体仅适用于欧盟社会保险号或等效 ID 敏感信息类型。
 
 ### <a name="format"></a>Format
 
-指定模式中的10个数字和一个连字符
+指定模式中的十个数字和连字符
   
 ### <a name="pattern"></a>模式
 
-10个数字和一个连字符：
+10 个数字和一个连字符：
   
-- 与出生日期 (DDMMYY) 的6个数字 
+- 六个数字，对应于 DDMMYY (出生日期)  
 - 连字符
-- 与序列号对应的四个数字
+- 对应于序列号的四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5112,11 +5105,11 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_denmark_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_denmark_eu_ssn_or_equivalent` 。 
+- 该  `Func_denmark_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_denmark_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_denmark_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_denmark_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -5141,14 +5134,14 @@ Registro de Identidade (RIC)  (新格式) ：
 - nationalnumber#
 - ssn#
 - ssn
-- 国家/地区号码
-- 个人 id 号
+- national number
+- 个人 ID 号
 - personalidnumber#
 - cpr-nummer
 - personnummer
 
 
-## <a name="drug-enforcement-agency-dea-number"></a>药品实施代理 (DEA) 号码
+## <a name="drug-enforcement-agency-dea-number"></a>管制局 (DEA) 号码
 
 ### <a name="format"></a>Format
 
@@ -5157,9 +5150,9 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 一个字母 (不区分大小写) 这组可能的字母： abcdefghjklmnprstux，这是注册人代码 
-- 一个字母 (不区分大小写) （注册人姓氏或数字 "9" 的第一个字母）
-- 七位数字，最后一个数字是校验位
+- 一个字母 (可能) 字母集不区分大小写：abcdefghjklmnprstux，这是一个注册表代码 
+- 一个字母 (不区分大小写) ，即注册人姓氏或数字"9"的第一个字母
+- 七个数字，最后一个数字是检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -5169,7 +5162,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_dea_number 找到与该模式匹配的内容。
-- 找到了 from 关键字 `Keyword_dea_number`
+- 找到一个 `Keyword_dea_number` 关键字
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
@@ -5202,12 +5195,11 @@ Registro de Identidade (RIC)  (新格式) ：
 
 - dea
 - dea#
-- 药物实施管理
-- 药品实施代理
+- 非法强制执行管理
+- 管制局
 
 
-## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="estonia-drivers-license-number"></a>爱沙尼亚驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -5217,8 +5209,8 @@ Registro de Identidade (RIC)  (新格式) ：
 
 两个字母和六个数字：
   
-- 字母 "ET" (不区分大小写)  
-- 6位数字
+- 字母"ET" (不区分大小写)  
+- 六个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -5227,8 +5219,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_estonia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_estonia_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_estonia_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_estonia_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5245,7 +5237,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -5253,49 +5245,49 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -5303,79 +5295,79 @@ Registro de Identidade (RIC)  (新格式) ：
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
-#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver "s_license_number
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver s_license_number
 
---permis de conduire
-- juhilubade numbrid
-- juhiloa 编号
-- juhiluba
+-- permis de conduire
+- juhiadeade numbrid
+- juhiloa number
+- juhi一a
 
 
 ## <a name="estonia-personal-identification-code"></a>爱沙尼亚个人标识代码
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -5384,16 +5376,16 @@ Registro de Identidade (RIC)  (新格式) ：
 
 ### <a name="format"></a>Format
 
-11个数字，无空格和分隔符
+11 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 11 个数字：
   
-- 一种数字，对应于性别和出生世纪 (奇数号码男，甚至是女号码，等等。1-2：19世纪;3-4：20世纪;5-6：21世纪) 
-- 6位数字，对应于出生日期 (YYMMDD) 
-- 三个数字，对应于将出生在同一日期的人员组成的序列号
-- 一个校验位
+- 一个数字，对应于性生活和百年 (奇数男性，偶数男性;1-2：19 世纪;3-4：20 世纪;5-6：21 世纪) 
+- 六个数字，对应于 YYMMDD (出生日期) 
+- 三个数字，对应于一个序列号，分隔同一日期的人
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -5402,11 +5394,11 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_estonia_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_estonia_eu_national_id_card` 。 
+- 该  `Func_estonia_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_estonia_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_estonia_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_estonia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Estonia Personal Identification Code -->
@@ -5431,42 +5423,42 @@ Registro de Identidade (RIC)  (新格式) ：
 
 - id-kaart
 - ik
-- isikukood#
-- isikukood
+- isikikood#
+- isikikood
 - maksu id
 - maksukohustuslase identifitseerimisnumber
 - maksunumber
 - national identification number
-- 国家/地区号码
+- national number
 - 个人代码
-- 个人 id 号
+- 个人 ID 号
 - 个人标识代码
 - 个人标识号
 - personalidnumber#
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
 ## <a name="estonia-passport-number"></a>爱沙尼亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-一个字母后跟七个数字，不含空格或分隔符
+一个字母后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -5479,8 +5471,8 @@ Registro de Identidade (RIC)  (新格式) ：
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_estonia_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_estonia_eu_passport_number` 。 
+- 正则表达式  `Regex_estonia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_estonia_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -5499,22 +5491,22 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-eesti kodaniku pass passi number passinumbrid document number document 无 dokumendi nr
+eesti kodaniku passi number passinumbrid document number document no dokumendi nr
 
-## <a name="eu-debit-card-number"></a>EU 借记卡号
+## <a name="eu-debit-card-number"></a>欧盟借记卡号
 
 ### <a name="format"></a>Format
 
@@ -5564,7 +5556,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - card number 
 - card no. 
 - security number 
-- 收件人# 
+- cc# 
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
@@ -5592,8 +5584,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - card numbers 
 - card type 
 - cardano numerico 
-- 持卡人 
-- cardholders 
+- 一个 
+- 一些 
 - cardnumber 
 - cardnumbers 
 - carta bianca 
@@ -5620,11 +5612,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - check cards 
 - checkcard
 - checkcards 
-- chequekaart 
+- 一位 
 - cirrus 
-- cirrus-edc-maestro 
+- cirrus-edc-ciostro 
 - controlekaart 
-- controlekaarten 
+- controlekekten 
 - credit card 
 - credit cards 
 - creditcard 
@@ -5637,18 +5629,18 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - debitcards 
 - debito automatico 
 - diners club 
-- dinersclub 
-- 确定 
+- dinersc 
+- discover 
 - discover card 
 - discover cards 
 - discovercard 
 - discovercards 
 - débito automático
 - edc 
-- eigentümername 
+- eigent≤mername 
 - european debit card 
 - hoofdkaart 
-- hoofdkaarten 
+- hoofdkten 
 - in viaggio 
 - japanese card bureau 
 - japanse kaartdienst 
@@ -5664,18 +5656,18 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - karteninhabers
 - kartennr 
 - kartennummer 
-- kreditkarte 
-- kreditkarten-nummer 
-- kreditkarteninhaber 
-- kreditkarteninstitut 
-- kreditkartennummer 
-- kreditkartentyp 
-- maestro 
+- kreditkrte 
+- kredit-nummer 
+- kredititteninhaber 
+- kreditstitut 
+- kreditnummer 
+- kredittentyp 
+- 管理 
 - Master Card 
 - master cards 
 - mastercard 
 - mastercards 
-- emc 
+- mc 
 - mister cash 
 - n carta 
 - carta 
@@ -5686,7 +5678,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 不。 do cartao 
 - 不。 do cartão 
 - nr carta 
-- führerschein-nr. carta 
+- nr. carta 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5705,7 +5697,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- n º。 do cartão 
+- n。 do cartão 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5723,10 +5715,10 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - schede matrici 
 - scoprono la scheda 
 - scoprono le schede 
-- solo 
+- 一个 
 - supporti di scheda 
 - supporto di scheda 
-- 器 
+- switch 
 - tarjeta atm 
 - tarjeta credito 
 - tarjeta de atm 
@@ -5739,8 +5731,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - ufficio giapponese della 
 - scheda 
 - v pay 
-- v-支付 
-- 反之 
+- v-pay 
+- visa 
 - visa plus 
 - visa electron 
 - visto 
@@ -5757,10 +5749,10 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- 货. seg 
-- 货. seguranca 
-- 货. segurança 
-- 货. sicurezza 
+- cod。 seg 
+- cod。 seguranca 
+- cod。 segurança 
+- cod。 sicurezza 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5777,8 +5769,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca 
-- cód. segurança 
+- cód。 seguranca 
+- cód。 segurança 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5787,8 +5779,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - issue no 
 - issue number 
 - kaartidentificatienummer 
-- kreditkartenprufnummer 
-- kreditkartenprüfnummer 
+- kreditprufnummer 
+- kreditkrtenpr≤fnummer 
 - kwestieaantal 
 - 不。 dell'edizione 
 - 不。 di sicurezza 
@@ -5805,7 +5797,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - perno il blocco 
 - pin block 
 - prufziffer 
-- prüfziffer 
+- pr≤fziffer 
 - security code 
 - security no 
 - security number 
@@ -5814,9 +5806,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- veiligheidsaantal 
-- veiligheidscode 
-- veiligheidsnummer 
+- igheidsaantal 
+- 一idscode 
+- igheidsnummer 
 - verfalldatum 
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -5838,16 +5830,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - espira 
 - exp date 
 - exp datum 
-- 时间 
-- 何时 
-- 不久 
-- 过期 
+- expiration 
+- expire 
+- expires 
+- expiry 
 - fecha de expiracion 
 - fecha de venc 
 - gultig bis 
 - gultigkeitsdatum 
 - gültig bis 
-- gültigkeitsdatum 
+- g≤ltigkeitsdatum 
 - la scadenza 
 - scadenza 
 - valable 
@@ -5864,9 +5856,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - válido hasta 
 
 
-## <a name="eu-drivers-license-number"></a>欧盟驾驶执照号码
+## <a name="eu-drivers-license-number"></a>欧盟驾驶证号码
 
-这些是欧盟驾驶执照号码敏感信息类型中的实体。
+这些是欧盟驾驶证号码敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-drivers-license-number) 
 - [Belgium（比利时）](#belgium-drivers-license-number)
@@ -5885,7 +5877,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [意大利](#italy-drivers-license-number)
 - [拉脱维亚](#latvia-drivers-license-number)
 - [Lithuania（立陶宛）](#lithuania-drivers-license-number)
-- [Luxemburg](#luxemburg-drivers-license-number)
+- [比塞明卡](#luxemburg-drivers-license-number)
 - [马耳他](#malta-drivers-license-number)
 - [荷兰](#netherlands-drivers-license-number)
 - [波兰](#poland-drivers-license-number) 
@@ -5895,12 +5887,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [斯洛文尼亚](#slovenia-drivers-license-number)
 - [西班牙](#spain-drivers-license-number)
 - [瑞典](#sweden-drivers-license-number)
-- [U.K.](#uk-drivers-license-number)
+- [英国](#uk-drivers-license-number)
 
 
-## <a name="eu-national-identification-number"></a>欧盟国家身份证号
+## <a name="eu-national-identification-number"></a>欧盟国家/区标识号
 
-这些是欧盟国家/地区标识号敏感信息类型中的实体。
+这些是欧盟国家标识号敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-identity-card)
 - [Belgium（比利时）](#belgium-national-number)
@@ -5919,7 +5911,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [意大利](#italy-fiscal-code)
 - [拉脱维亚](#latvia-personal-code)
 - [Lithuania（立陶宛）](#lithuania-personal-code)
-- [Luxemburg](#luxemburg-national-identification-number-natural-persons)
+- [比塞明卡](#luxemburg-national-identification-number-natural-persons)
 - [马耳他](#malta-identity-card-number)
 - [荷兰](#netherlands-citizens-service-bsn-number)
 - [波兰](#poland-national-id-pesel)
@@ -5928,12 +5920,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [斯洛伐克](#slovakia-personal-number)
 - [斯洛文尼亚](#slovenia-unique-master-citizen-number)
 - [西班牙](#spain-dni)
-- [U.K.](#uk-national-insurance-number-nino)                                        
+- [英国](#uk-national-insurance-number-nino)                                        
 
 
-## <a name="eu-passport-number"></a>EU 护照号码 
+## <a name="eu-passport-number"></a>欧盟护照号码 
 
-以下是欧盟护照号码敏感信息 typeThese 中的实体。欧盟护照号码捆绑包中的实体。
+这些是欧盟护照号码敏感信息类型中的实体，这些实体是欧盟护照号码捆绑包中的实体。
 
 - [Austria（奥地利）](#austria-passport-number)
 - [Belgium（比利时）](#belgium-passport-number)
@@ -5952,7 +5944,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [意大利](#italy-passport-number)
 - [拉脱维亚](#latvia-passport-number)
 - [Lithuania（立陶宛）](#lithuania-passport-number)
-- [Luxemburg](#luxemburg-passport-number)
+- [比塞明卡](#luxemburg-passport-number)
 - [马耳他](#malta-passport-number)
 - [荷兰](#netherlands-passport-number)
 - [波兰](#poland-passport-number)
@@ -5962,12 +5954,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [斯洛文尼亚](#slovenia-passport-number)
 - [西班牙](#spain-passport-number)
 - [瑞典](#sweden-passport-number)
-- [U.K.](#us--uk-passport-number)
+- [英国](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>EU 社会保险号或等效标识
+## <a name="eu-social-security-number-or-equivalent-identification"></a>欧盟社会保险号或等效标识
 
-这些是欧盟社会保险号或等效的标识敏感信息类型中的实体。
+这些实体是欧盟社会保险号或等效标识敏感信息类型中的实体。
 
 - [Austria（奥地利）](#austria-social-security-number-or-equivalent-identification)
 - [Belgium（比利时）](#belgium-social-security-number-or-equivalent-identification)
@@ -5984,9 +5976,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [瑞典](#sweden-social-security-number-or-equivalent-identification)
 
 
-## <a name="eu-tax-identification-number"></a>EU 税标识号
+## <a name="eu-tax-identification-number"></a>欧盟税务标识号
 
-这些实体采用欧盟税识别号敏感信息类型。
+这些实体在欧盟税务标识号敏感信息类型中。
 
 - [Austria（奥地利）](#austria-tax-identification-number)
 - [Belgium（比利时）](#belgium-national-number)
@@ -6005,7 +5997,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [意大利](#italy-fiscal-code)
 - [拉脱维亚](#latvia-personal-code)
 - [Lithuania（立陶宛）](#lithuania-personal-code)
-- [Luxemburg](#luxemburg-national-identification-number-non-natural-persons)
+- [比塞明卡](#luxemburg-national-identification-number-non-natural-persons)
 - [马耳他](#malta-tax-identification-number)
 - [荷兰](#netherlands-tax-identification-number)
 - [波兰](#poland-tax-identification-number)
@@ -6015,24 +6007,23 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - [斯洛文尼亚](#slovenia-tax-identification-number)
 - [西班牙](#spain-tax-identification-number)
 - [瑞典](#sweden-tax-identification-number)
-- [U.K.](#uk-unique-taxpayer-reference-number)
+- [英国](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>芬兰驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="finland-drivers-license-number"></a>芬兰驾驶证号码
 
 ### <a name="format"></a>Format
 
-10个数字和包含连字符的字母
+包含连字符的十个数字和字母
   
 ### <a name="pattern"></a>模式
 
-10个数字和包含连字符的字母：
+包含连字符的十个数字和字母：
   
-- 6位数字 
+- 六个数字 
 - 连字符
 - 三个数字 
-- 一个数字或字母
+- 数字或字母
     
 ### <a name="checksum"></a>校验和
 
@@ -6041,8 +6032,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_finland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_finland_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_finland_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_finland_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Finland Driver's License Number -->
@@ -6059,7 +6050,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -6067,49 +6058,49 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -6117,85 +6108,85 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver "s_license_number
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver s_license_number
 
 - ajokortti
 - permis de conduire
 - ajokortin numero
-- kuljettaja 许可证。
+- kuljettaja lic.
 - körkort
 - körkortnummer
-- förare 许可证。
+- förare lic.
 - ajokortit
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>芬兰欧洲健康保险电话号码
-此敏感信息类型仅可用于以下内容：
+## <a name="finland-european-health-insurance-number"></a>芬兰欧洲健康保险号码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -6204,15 +6195,15 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-20位数字
+20 个数字
 
 ### <a name="pattern"></a>模式
 
-20位数字：
+20 位数字：
 
-- 10位数-8024680246
+- 十位数字 - 8024680246
 - 可选空格或连字符
-- 10位数字
+- 十个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6221,8 +6212,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_Finland_European_Health_Insurance_Number 找到与该模式匹配的内容。
-- 找到 Keyword_Finland_European_Health_Insurance_Number 中的关键字。
+- 正则表达式Regex_Finland_European_Health_Insurance_Number查找与模式匹配的内容。
+- 找到搜索Keyword_Finland_European_Health_Insurance_Number关键字。
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6240,33 +6231,33 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - ehic#
 - ehic
 - finlandehicnumber#
-- finska sjukförsäkringskort
+- finska sjukförskringskort
 - 运行状况卡片
 - 健康保险卡
-- 健康保险号
-- hälsokort
+- 健康保险号码
+- h？lsokort
 - sairaanhoitokortin
-- sairausvakuutuskortti
-- sairausvakuutusnumero
-- sjukförsäkring nummer
-- sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- sairausv库utuskortti
+- sairausv库utusnumero
+- sjukförskring nummer
+- sjukförskringskort
+- smen sairausv库utuskortti
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>芬兰国家/地区 ID
+## <a name="finland-national-id"></a>芬兰国家/区 ID
 
 ### <a name="format"></a>Format
 
-6个数字加上一个字符，表示一个世纪加上三个数字加上校验位
+六个数字加上一个字符，指示一个世纪加三个数字加上一个检查数字
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 6位数，格式格式为 DDMMYY，表示出生日期 
-- 世纪标记 (是 "-"、"+" 或 "a" )  
-- 三位数的个人标识号码 
-- 不区分大小写的数字或字母 () 是校验位
+- 六个数字，格式为 DDMMYY，表示出生日期 
+- century marker (either '-'， '+' or 'a')  
+- 三位数的个人标识号 
+- 一个数字或字母 (不区分大小写) 是一个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6275,12 +6266,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_finnish_national_id 找到与该模式匹配的内容
-- 找到 Keyword_finnish_national_id 中的关键字
+- 函数Func_finnish_national_id查找与模式匹配的内容
+- 找到Keyword_finnish_national_id关键字
 - 校验和传递
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_finnish_national_id 找到与该模式匹配的内容
+- 函数Func_finnish_national_id查找与模式匹配的内容
 - 校验和传递
 
 ```xml
@@ -6299,47 +6290,47 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="keywords"></a>关键字
 
 - ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero#
-- henkilötunnusnumero
+- henkilötunnusnumero
 - hetu
-- id 号
-- id 号
+- id no
+- id number
 - identification number
-- identiteetti numero
-- 标识号码
+- identiteero numero
+- 标识号
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
-- 国家/地区 id 卡片
-- 国家/地区 id 编号。
-- 个人 id
+- 一位
+- 与 henkilökortin
+- national id card
+- national id no.
+- 个人 ID
 - 个人标识代码
 - personalidnumber#
 - personbeteckning
 - personnummer
 - social security number
-- sosiaaliturvatunnus
+- soaliturvatunnus
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - tunnistenumero
 - tunnus numero
-- tunnusluku
+- tunnusl一
 - tunnusnumero
 - verokortti
 - veronumero
@@ -6348,7 +6339,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 
 ## <a name="finland-passport-number"></a>芬兰护照号码
-此敏感信息类型实体可用于欧盟护照号敏感信息类型，并可用作独立的敏感信息类型实体。
+此敏感信息类型实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 九个字母和数字的组合
@@ -6356,7 +6347,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="pattern"></a>模式
 九个字母和数字的组合：
 - 两个字母 (不区分大小写)  
-- 七位数字
+- 七个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -6366,7 +6357,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_finland_passport_number 找到与该模式匹配的内容。
-- 找到 Keywords_eu_passport_number_common 或 Keyword_finland_passport_number 中的关键字。
+- 找到来自Keywords_eu_passport_number_common或Keyword_finland_passport_number关键字。
 
 ```xml
 <!-- Finland Passport Number -->
@@ -6384,44 +6375,44 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
 
 - suomalainen passi
 - passin numero
-- passin numero.#
+- passin numero。#
 - passin numero#
-- passin numero.
+- passin numero。
 - passi#
-- passi 编号
+- passi number
 
 
-## <a name="finland-social-security-number-or-equivalent-identification"></a>芬兰社会保障号或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+## <a name="finland-social-security-number-or-equivalent-identification"></a>芬兰社会保险号或等效标识
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-指定格式的11个字符的组合
+指定格式的 11 个字符的组合
   
 ### <a name="pattern"></a>模式
 
-指定格式的11个字符的组合：
+指定格式的 11 个字符的组合：
   
-- 6位数字 
-- 以下任一实例：
-  - 加号符号
-  - 负号
-  - 字母 "A" (不区分大小写) 
+- 六个数字 
+- 以下其中一个实例：
+  - 加号
+  - 减号
+  - 字母"A" (不区分大小写) 
 - 三个数字
 - 一个字母或一个数字
     
@@ -6432,11 +6423,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_finland_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_finland_eu_ssn_or_equivalent` 。 
+- 该  `Func_finland_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_finland_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_finland_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_finland_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -6456,30 +6447,29 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keywords_finland_eu_ssn_or_equivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
 - identification number
-- 个人 id
-- 标识号码
-- 芬兰国家/地区 id 号
+- 个人 ID
+- 标识号
+- 芬兰国家/区身份证号码
 - personalidnumber#
 - national identification number
-- id 号
-- 国家/地区 id 编号。
-- 国家/地区 id 号
-- id 号
+- id number
+- national id no.
+- national id number
+- id no
 - tunnistenumero
 - henkilötunnus
 - yksilöllinen henkilökohtainen tunnistenumero
 - ainutlaatuinen henkilökohtainen tunnus
-- identiteetti numero
-- suomen kansallinen henkilötunnus
+- identiteero numero
+- snkmen henkilötunnus
 - henkilötunnusnumero#
-- kansallisen tunnistenumero
+- tullisen tunnistenumero
 - tunnusnumero
-- kansallinen tunnus numero
+- tullinen tunnus numero
 - hetu
 
 
-## <a name="france-drivers-license-number"></a>法国驾驶执照号码
-此敏感信息类型实体在欧盟驱动程序的 "敏感信息类型" 中可用，并可用作独立的敏感信息类型实体。
+## <a name="france-drivers-license-number"></a>法国驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -6496,8 +6486,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_french_drivers_license 找到与该模式匹配的内容。
-- 找到 Keyword_french_drivers_license 中的关键字。
+- 函数Func_french_drivers_license找到与模式匹配的内容。
+- 找到Keyword_french_drivers_license关键字。
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6519,49 +6509,49 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -6569,78 +6559,78 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 - permis de conduire
 - licence number
 - license number
 - licence numbers
 - license numbers
-- numéros 解除许可
+- numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>法国健康保险号
-此敏感信息类型仅可用于以下内容：
+## <a name="france-health-insurance-number"></a>法国健康保险号码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -6649,16 +6639,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-21位数字
+21 个数字
 
 ### <a name="pattern"></a>模式
 
-21位数字：
+21 个数字：
 
-- 10位数字
-- 一个可选空格
-- 10位数字
-- 一个可选空格
+- 十个数字
+- 可选空格
+- 十个数字
+- 可选空格
 - 一个数字
 
 
@@ -6669,8 +6659,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_France_Health_Insurance_Number 找到与该模式匹配的内容。
-- 找到 Keyword_France_Health_Insurance_Number 中的关键字。
+- 正则表达式Regex_France_Health_Insurance_Number找到与模式匹配的内容。
+- 找到Keyword_France_Health_Insurance_Number关键字。
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6685,12 +6675,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- 保险卡
-- vitale
-- d'assuré社交
+- insurance card
+- carte vitale
+- carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>法国国家 id 卡片 (CNI) 
+## <a name="france-national-id-card-cni"></a>法国国家/ (CNI) 
 
 ### <a name="format"></a>Format
 
@@ -6708,7 +6698,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
 - 正则表达式 Regex_france_cni 找到与该模式匹配的内容。
-- 找到 Keywords_france_eu_national_id_card 中的关键字。
+- 找到搜索Keywords_france_eu_national_id_card关键字。
 
 ```xml
     <!-- France CNI -->
@@ -6725,29 +6715,29 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-- nationale d'identité的购买
-- nationale d'idenite
+- carte nationale d'identité
+- carte nationale d'idenite no
 - cni#
 - cni
 - compte bancaire
 - national identification number
-- 国家标识
+- national identity
 - nationalidno#
-- numéro d'assurance maladie
-- numéro 的反 vitale
+- numéro d'assurance mal访问
+- numéro de carte vitale
 
    
 ## <a name="france-passport-number"></a>法国护照号码
-此敏感信息类型实体可用于欧盟护照号敏感信息类型，并可用作独立的敏感信息类型实体。
+此敏感信息类型实体在欧盟护照号码敏感信息类型中可用，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
-9个数字和字母
+九个数字和字母
 
 ### <a name="pattern"></a>模式
 
-9个数字和字母：
-- 两位数 
+九个数字和字母：
+- 两个数字 
 - 两个字母 (不区分大小写)  
 - 五个数字
 
@@ -6778,13 +6768,13 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Passport Number
 - Passport No
 - Passport #
-- 登记卡#
+- Passport#
 - PassportID
 - Passportno
 - passportnumber
 - パスポート
 - パスポート番号
-- パスポートのNum
+- パスポのnum
 - パスポート ＃ 
 - Numéro de passeport
 - Passeport n °
@@ -6795,8 +6785,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Passeportn °
 
       
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保障号 (INSEE) 或等效标识
-此敏感信息类型实体包含在欧盟社会保险号和等效 ID 敏感信息类型中，可用作独立的敏感信息类型实体。
+## <a name="france-social-security-number-insee-or-equivalent-identification"></a>法国社会保险号码 (INSEE) 或等效标识
+此敏感信息类型实体包含在欧盟社会保险号和等效 ID 敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -6805,7 +6795,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="pattern"></a>模式
 
 必须匹配两种模式之一：
-- 13位数，后跟一个空格，后跟两个数字<br/>
+- 13 个数字后跟一个空格，后跟两个数字<br/>
 或
 - 15 个连续的数字
 
@@ -6816,12 +6806,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 95% 确信它检测到这种类型的敏感信息：
-- 函数 Func_french_insee 或 Func_fr_insee 找到与该模式匹配的内容。
+- 该函数Func_french_insee或Func_fr_insee找到与模式匹配的内容。
 - 找到 Keyword_fr_insee 中的一个关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_french_insee 或 Func_fr_insee 找到与该模式匹配的内容。
+- 该函数Func_french_insee或Func_fr_insee找到与模式匹配的内容。
 - 未找到 Keyword_fr_insee 中的关键字。
 - 校验和通过。
 
@@ -6871,7 +6861,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - numéro de sécu
 - code sécu 
 
-## <a name="france-tax-identification-number"></a>法国纳税标识号
+## <a name="france-tax-identification-number"></a>法国税务标识号
 
 ### <a name="format"></a>Format
 
@@ -6881,16 +6871,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 13 位数字
   
-- 一个数字，必须为0、1、2或3
-- 1位
+- 一个数字，必须为 0、1、2 或 3
+- 1 个数字
 - 一个空格（可选） 
-- 2位数 
+- 2 个数字 
 - 一个空格（可选） 
-- 3位数 
+- 3 个数字 
 - 一个空格（可选） 
-- 3位数 
+- 3 个数字 
 - 一个空格（可选） 
-- 3个校验位 
+- 3 个检查数字 
 
   
 ### <a name="checksum"></a>校验和
@@ -6900,11 +6890,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_france_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_france_eu_tax_file_number` 。 
+- 该  `Func_france_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_france_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_france_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_france_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- France Tax Identification Number (numéro SPI.) -->
@@ -6930,25 +6920,25 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 - numéro d'identification fiscale
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
-## <a name="france-value-added-tax-number"></a>法国增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="france-value-added-tax-number"></a>法国增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -6957,20 +6947,20 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-13个字符的字母数字模式
+13 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-13个字符的字母数字模式：
+13 个字符字母数字模式：
 
-- 两个字母-FR (不区分大小写) 
+- 两个字母 - FR (不区分大小写) 
 - 可选空格或连字符
 - 两个字母或数字
-- 可选空格、点号、连字符或逗号
+- 可选空格、点、连字符或逗号
 - 三个数字
-- 可选空格、点号、连字符或逗号
+- 可选空格、点、连字符或逗号
 - 三个数字
-- 可选空格、点号、连字符或逗号
+- 可选空格、点、连字符或逗号
 - 三个数字
 
 ### <a name="checksum"></a>校验和
@@ -6980,11 +6970,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_france_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_france_value_added_tax_number 中的关键字。
+- 函数Func_france_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_france_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_france_value_added_tax_number 找到与该模式匹配的内容。
+- 函数Func_france_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -7002,33 +6992,32 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
-- vat 号码
-- vat 编号
+- vat number
+- vat no
 - vat#
 - 增值税
-- siren 标识无 numéro d'identification taxe sur valeur ajoutée
-- taxe valeur ajoutée
-- taxe sur la valeur ajoutée
-- n ° tva
+- siren identification no numéro d'identification taxe sur sur surur ajoutée
+- taxeur ajoutée
+- taxe sur laur ajoutée
+- n° tva
 - numéro de tva
 - numéro d'identification siren
 
 
-## <a name="germany-drivers-license-number"></a>德国驾驶执照号码
-此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
+## <a name="germany-drivers-license-number"></a>德国驾驶证号码
 
 ### <a name="format"></a>Format
 
-11个数字和字母的组合
+11 个数字和字母的组合
 
 ### <a name="pattern"></a>模式
 
 11 位数字和字母（不区分大小写）：
-- 一个数字或字母 
-- 两位数 
+- 数字或字母 
+- 两个数字 
 - 六个数字或字母 
 - 一个数字 
-- 一个数字或字母
+- 数字或字母
 
 ### <a name="checksum"></a>校验和
 
@@ -7055,33 +7044,33 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- ausstellungsdatum
-- ausstellungsort
+- aussteltumsdatum
+- ausstel一sort
 - ausstellende behöde
 - ausstellende behorde
 - ausstellende behoerde
-- führerschein-nr
+- fhrerschein
 - fuhrerschein
 - fuehrerschein
-- führerscheinnummer
+- fhrerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein-nr 
+- fhrerschein- 
 - fuhrerschein- 
 - fuehrerschein- 
-- führerscheinnummernr
+- fhrerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
-- führerscheinnummerklasse
+- fhrerscheinnummerklasse
 - fuhrerscheinnummerklasse
 - fuehrerscheinnummerklasse
-- nr-führerschein-nr
+- nr-fhrerschein
 - nr-fuhrerschein
 - nr-fuehrerschein
-- führerschein-nr
-- fuhrerschein
-- fuehrerschein
-- n-führerschein-nr
+- no-fhrerschein
+- no-fuhrerschein
+- no-fuehrerschein
+- n-fhrerschein
 - n-fuhrerschein
 - n-fuehrerschein
 - permis de conduire
@@ -7091,49 +7080,49 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -7141,84 +7130,84 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>德国身份卡片编号
+## <a name="germany-identity-card-number"></a>德国身份证号
 
 ### <a name="format"></a>Format
 
-自2010年11月1日起：九个字母和数字
+自 2010 年 11 月 1 日起：九个字母和数字
 
-从1年4月1987至31年10月2010：10位数字
+从 1987 年 4 月 1 日到 2010 年 10 月 31 日：10 个数字
 
 ### <a name="pattern"></a>模式
 
-自2010年11月1日起：
+自 2010 年 11 月 1 日起：
 - 一个字母 (不区分大小写)  
-- 八位数字
+- 八个数字
 
-介于1年4月1987至 31 10 月2010：
-- 10位数字
+从 1987 年 4 月 1 日到 2010 年 10 月 31 日：
+- 十个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -7244,32 +7233,32 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
-- ausweis
+- aus一s
 - gpid
-- id
+- identification
 - identifikation
 - identifizierungsnummer
 - identity card
-- 标识号码
+- 标识号
 - id-nummer
-- 个人 id
-- personalausweis
+- 个人 ID
+- personalaus一s
 - persönliche id nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-id-nummer
 
 
 ## <a name="germany-passport-number"></a>德国护照号码
-此敏感信息类型实体包含在欧盟护照号敏感信息类型中，可用作独立的敏感信息类型实体。
+此敏感信息类型实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
-10个数字或字母
+十个数字或字母
 
 ### <a name="pattern"></a>模式
 
 模式必须包括以下各项：
-- 第一个字符是数字或从该集合中的字母 (C、F、G、H、J、K)  
+- 第一个字符是此集合中的数字或 (C、F、G、H、J、K)  
 - 三个数字 
 - 此集合中的五个数字或字母 (C、-H、J-N、P、R、T、V-Z)  
 - 一个数字
@@ -7282,12 +7271,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_german_passport 找到与该模式匹配的内容。
-- 找到了中的关键字 `Keyword_german_passport` 。
+- 找到一个 `Keyword_german_passport` 关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 - 函数 Func_german_passport_data 找到与该模式匹配的内容。
-- 找到了中的关键字 `Keyword_german_passport` 。
+- 找到一个 `Keyword_german_passport` 关键字。
 - 校验和通过。
 
 ```xml
@@ -7314,19 +7303,19 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
-- reisepässe
-- passeport。
+- reisepsse
+- passeport no.
 - passeport no
 
-## <a name="germany-tax-identification-number"></a>德国税号标识号
+## <a name="germany-tax-identification-number"></a>德国税务标识号
 
 ### <a name="format"></a>Format
 
-11个数字，无空格和分隔符
+11 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-11位数字：
+11 个数字：
   
 - 两位数字 
 - 可选空格
@@ -7335,7 +7324,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 三位数字 
 - 可选空格
 - 两位数字
-- 一个校验位
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -7344,11 +7333,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_germany_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_germany_eu_tax_file_number` 。 
+- 该  `Func_germany_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_germany_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_germany_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_germany_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Germany Tax Identification Number -->
@@ -7372,28 +7361,28 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - zinn#
 - zinn
 - zinnnummer
 
 
-## <a name="germany-value-added-tax-number"></a>德国增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="germany-value-added-tax-number"></a>德国增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -7402,15 +7391,15 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-11个字符的字母数字模式
+11 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-11个字符的字母数字模式：
+11 个字符字母数字模式：
 
-- 字母 D 或 D
-- 字母 E 或 E
-- 一个可选空格
+- 字母 D 或 d
+- 字母 E 或 e
+- 可选空格
 - 三个数字
 - 可选空格或逗号
 - 三个数字
@@ -7424,11 +7413,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_germany_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_germany_value_added_tax_number 中的关键字。
+- 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_germany_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_germany_value_added_tax_number 找到与该模式匹配的内容。
+- 函数Func_germany_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7446,25 +7435,24 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
-- vat 号码
-- vat 编号
+- vat number
+- vat no
 - vat#
-- vat # mehrwertsteuer
-- mwst
+- vat# mehrwertsteuer
+- wdst
 - mehrwertsteuer identifikationsnummer
 - mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>希腊驱动程序的许可证编号
-此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
+## <a name="greece-drivers-license-number"></a>希腊驾驶证号码
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字 
+九个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -7473,8 +7461,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_greece_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_greece_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_greece_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_greece_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7491,7 +7479,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -7499,49 +7487,49 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -7549,71 +7537,71 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver "s_license_number
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver s_license_number
 
 - δεια οδήγησης
 - Adeia odigisis
@@ -7621,7 +7609,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>希腊国家 ID 卡
+## <a name="greece-national-id-card"></a>希腊国家身份证
 
 ### <a name="format"></a>Format
 
@@ -7670,9 +7658,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - 希腊语 id
-- 希腊国家 id
-- 希腊语个人 id 卡
-- 希腊警察 id
+- 希腊语国家/区 ID
+- 希腊语个人 ID 卡
+- 希腊语警察局 ID
 - identity card
 - tautotita
 - ταυτότητα
@@ -7681,11 +7669,11 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ## <a name="greece-passport-number"></a>希腊护照号码
 
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母后跟七个数字，不含空格或分隔符
+两个字母后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -7699,8 +7687,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_greece_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_greece_eu_passport_number` 。 
+- 正则表达式  `Regex_greece_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_greece_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -7719,16 +7707,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
@@ -7736,8 +7724,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - αριθμούς διαβατηρίου
 - αριθμός διαβατηριο
 
-## <a name="greece-tax-identification-number"></a>希腊税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="greece-tax-identification-number"></a>希腊税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -7746,7 +7734,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+九个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -7760,8 +7748,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_greece_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_greece_eu_tax_file_number` 。 
+- 正则表达式  `Regex_greece_eu_tax_file_number` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_greece_eu_tax_file_number` 关键字。 
     
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -7779,33 +7767,33 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 - afm#
 - afm
-- aφμ | aφμαριθμός
-- aφμ
+- a μ αριθμός
+- a
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- 税务注册表号
-- 税务注册表号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- tax registry no
+- tax registry number
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
 - taxregistryno#
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>香港 HKID) 号码的香港身份卡片 (
+## <a name="hong-kong-identity-card-hkid-number"></a>香港身份证号码 (HKID) 号码
 
 ### <a name="format"></a>Format
 
@@ -7851,15 +7839,15 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - hkid
-- 中国香港恒等卡片
+- 香港身份证
 - HKIDC
 - id card
 - identity card
-- hk identity 卡片
-- 香港 id
+- hk identity card
+- hong kong id
 - 香港身份證
 - 香港永久性居民身份證
-- 證
+- 身份證
 - 身份証
 - 身分證
 - 身分証
@@ -7889,9 +7877,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - 香港特別行政區非永久性居民身分証
 
    
-## <a name="hungary-drivers-license-number"></a>匈牙利驱动程序的许可证编号
-
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="hungary-drivers-license-number"></a>匈牙利驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -7912,8 +7898,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_hungary_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_hungary_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_hungary_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_hungary_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -7929,7 +7915,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -7937,49 +7923,49 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -7987,71 +7973,71 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver "s_license_number
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver s_license_number
 
 - vezetoi engedely
 - vezetői engedély
@@ -8059,7 +8045,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 
 ## <a name="hungary-personal-identification-number"></a>匈牙利个人标识号
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -8074,10 +8060,10 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 11 个数字：
   
-- 一种与性别相对应的数字 (1-男、2-女、其他号码也可能适用于在具有双公民的1900或公民之前出生的公民)  
-- 与出生日期 (YYMMDD) 的6个数字
-- 与序列号对应的三个数字
-- 一个校验位
+- 1 个数字对应于性别 (1-男性、2- 男性，对于在 1900 之前生活或具有双重公民关系公民的公民，也可以)  
+- 与 YYMMDD (日期对应的六个数字) 
+- 对应于序列号的三个数字
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -8087,12 +8073,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_hungary_eu_national_id_card` 。 
+- 该  `Func_hungary_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_hungary_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_hungary_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Hungary Personal Identification Number -->
@@ -8115,22 +8101,22 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-- id 号
+- id number
 - identification number
 - sz ig
 - sz. ig.
-- ig。
-- személyazonosító igazolvány
-- személyi igazolvány
+- sz.ig.
+- személyazonosító igazolvcioy
+- személyi igazolvméy
 
 
 ## <a name="hungary-passport-number"></a>匈牙利护照号码
 
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母后跟6个或7个数字，不含空格或分隔符
+两个字母后跟六个或七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -8144,8 +8130,8 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_hungary_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_hungary_eu_passport_number` 。 
+- 正则表达式  `Regex_hungary_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_hungary_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8163,16 +8149,16 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
@@ -8180,13 +8166,13 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Útlevelek száma
 - útlevél szám
 
-## <a name="hungary-social-security-number-or-equivalent-identification"></a>匈牙利社会安全号码或等效标识
+## <a name="hungary-social-security-number-or-equivalent-identification"></a>匈牙利社会保险号或等效标识
 
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+九个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -8200,12 +8186,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_hungary_eu_ssn_or_equivalent` 。 
+- 该  `Func_hungary_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_hungary_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_hungary_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -8224,7 +8210,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- 匈牙利语社会安全号码
+- 匈牙利社会安全号码
 - social security number
 - socialsecuritynumber#
 - hssn#
@@ -8234,17 +8220,17 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - taj#
 - ssn
 - ssn#
-- 社会保障号
+- social security no
 - áfa
 - közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
+- általcioos forgalmi adó szám
+- hozzáadottottottték adó
 - áfa szám
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>匈牙利纳税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="hungary-tax-identification-number"></a>匈牙利税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -8253,15 +8239,15 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-10个数字，不含空格或分隔符
+10 个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-10位数字：
+10 个数字：
   
-- 一个必须为 "8" 的数字 
+- 一个数字，必须为"8" 
 - 八个数字
-- 一个校验位
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -8271,12 +8257,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_hungary_eu_tax_file_number` 。 
+- 该  `Func_hungary_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_hungary_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 函数  `Func_hungary_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_hungary_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Hungary Tax Identification Number -->
@@ -8302,30 +8288,30 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- 匈牙利纳税人标识号
+- 匈牙利语的沙盒
 - hungatiantin#
-- 税务主管机构编号
+- 税务机构否
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
-- vat 号码
+- tin id
+- tin no
+- tin#
+- vat number
 
 
-## <a name="hungary-value-added-tax-number"></a>匈牙利增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="hungary-value-added-tax-number"></a>匈牙利增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -8334,15 +8320,15 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 ### <a name="format"></a>Format
 
-10个字符的字母数字模式
+10 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-10个字符的字母数字模式：
+10 个字符字母数字模式：
 
-- 2个字母-HU 或 HU
+- 2 个字母 - HU 或 hu
 - 可选空格
-- 8位数
+- 8 个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -8352,12 +8338,12 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 
-- 函数 Func_hungarian_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_hungarian_value_added_tax_number 中的关键字。
+- 该函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_hungarian_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
 
-- 函数 Func_hungarian_value_added_tax_number 找到与该模式匹配的内容。
+- 该函数Func_hungarian_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8377,19 +8363,19 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
 - vat
-- 增值税号
+- 增值税编号
 - vat#
 - vatno#
 - hungarianvatno#
-- 纳税编号
-- 增值税áfa
+- tax no.
+- 增值税 áfa
 - közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
+- általcioos forgalmi adó szám
+- hozzáadottottottték adó
 - áfa szám
 
 
-## <a name="india-permanent-account-number-pan"></a> (PAN) 的印度永久帐户号
+## <a name="india-permanent-account-number-pan"></a>PAN (印度永久) 
 
 ### <a name="format"></a>Format
 
@@ -8399,7 +8385,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 
 10 个字母或数字：
 - 三个字母 (不区分大小写)  
-- C、P、H、F、A、T、B、L、J 和 G (中的字母不区分大小写) 
+- C、P、H、F、A、T、B、L、J、G (不区分大小写) 
 - 一个字母
 - 四位数字 
 - 字母 (不区分大小写) 
@@ -8438,9 +8424,9 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 #### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
 - Permanent Account Number 
-- 蛋糕 
+- PAN 
    
-## <a name="india-unique-identification-aadhaar-number"></a>印度唯一标识 (Aadhaar) 号码
+## <a name="india-unique-identification-aadhaar-number"></a>印度唯一 (Aadhaar) 编号
 
 ### <a name="format"></a>Format
 
@@ -8449,7 +8435,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 一个不为0或1的数字
+- 不为 0 或 1 的数字
 - 三位数字 
 - 一个可选空格或短划线  
 - 四个数字 
@@ -8494,7 +8480,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - आधार
 - uidai
    
-## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份卡片 (KTP) 号码
+## <a name="indonesia-identity-card-ktp-number"></a>印度尼西亚身份证号码 (KTP) 号码
 
 ### <a name="format"></a>Format
 
@@ -8540,7 +8526,7 @@ eesti kodaniku pass passi number passinumbrid document number document 无 dokum
 - Kartu Tanda Penduduk 
 - Nomor Induk Kependudukan 
    
-## <a name="international-banking-account-number-iban"></a> (IBAN) 的国际银行帐户号
+## <a name="international-banking-account-number-iban"></a>IBAN 服务 (国际) 
 
 ### <a name="format"></a>Format
 
@@ -8583,7 +8569,7 @@ ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, 
 无
 
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>国际分类的 diseases (ICD-10-CM) 
+## <a name="international-classification-of-diseases-icd-10-cm"></a>ICD-10-CM (国际) 
 
 ### <a name="format"></a>Format
 
@@ -8600,11 +8586,11 @@ Dictionary
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 找到 Dictionary_icd_10_updated 中的关键字。
-- 找到 Dictionary_icd_10_codes 中的关键字。
+- 找到来自Dictionary_icd_10_updated的关键字。
+- 找到来自Dictionary_icd_10_codes关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 找到 Dictionary_icd_10_ 更新的关键字。
+- 找到更新Dictionary_icd_10_关键字。
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8621,11 +8607,11 @@ Dictionary
 
 ### <a name="keywords"></a>关键字
 
-Dictionary_icd_10_updated 关键字词典中的任何术语，基于 [国际分类 Diseases、第10次修订、临床修改 (icd-10-CM) ](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找术语，而不是保险代码。
+来自 Dictionary_icd_10_updated 关键字词典的任何术语，该词典基于国际动物分类、第十次修订、修改 ([ICD-10-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852604) 此类型仅查找该术语，而不是保险代码。
 
-Dictionary_icd_10_codes 关键字词典中的任何术语，基于 [国际分类 Diseases、第10次修订、临床修改 (icd-10-CM) ](https://go.microsoft.com/fwlink/?linkid=852604)。 此类型仅查找保险业代码，而不是说明。
+来自 Dictionary_icd_10_codes 关键字词典的任何术语，该词典基于国际动物分类、第十次修订、修改 ([ICD-10-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852604) 此类型仅查找保险代码，而不是说明。
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>国际分类的 diseases (ICD-9-CM) 
+## <a name="international-classification-of-diseases-icd-9-cm"></a>ICD-9-CM (国际) 
 
 ### <a name="format"></a>Format
 
@@ -8642,11 +8628,11 @@ Dictionary
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 找到 Dictionary_icd_9_updated 中的关键字。
-- 找到 Dictionary_icd_9_codes 中的关键字。
+- 找到搜索Dictionary_icd_9_updated关键字。
+- 找到搜索Dictionary_icd_9_codes关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 找到 Dictionary_icd_9_updated 中的关键字。
+- 找到搜索Dictionary_icd_9_updated关键字。
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -8662,18 +8648,18 @@ Dictionary
 
 ### <a name="keywords"></a>关键字
 
-Dictionary_icd_9_updated 关键字词典中的任何术语，基于 [国际分类的 Diseases、第九修订版、临床修改 (icd-9-CM) ](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找术语，而不是保险代码。
+来自 Dictionary_icd_9_updated 关键字词典的任何术语，该词典基于国际动物分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找该术语，而不是保险代码。
 
-Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类的 Diseases、第九修订版、临床修改 (icd-9-CM) ](https://go.microsoft.com/fwlink/?linkid=852605)。 此类型仅查找保险业代码，而不是说明。
+来自 Dictionary_icd_9_codes 关键字词典的任何术语，该词典基于国际动物分类、第九次修订、修改 ([ICD-9-CM) 。 ](https://go.microsoft.com/fwlink/?linkid=852605) 此类型仅查找保险代码，而不是说明。
 
 ## <a name="ip-address"></a>IP 地址
 
 ### <a name="format"></a>Format
 
-#### <a name="ipv4"></a>IPv4
+#### <a name="ipv4"></a>IPv4：
 解释 IPv4 地址格式化（点）版本或非格式化（没有点）版本的复杂模式
 
-#### <a name="ipv6"></a>Ipv4
+#### <a name="ipv6"></a>IPv6：
  解释格式化 IPv6 号码（包含冒号）的复杂模式
 
 ### <a name="pattern"></a>模式
@@ -8730,17 +8716,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>爱尔兰驾照号码
-
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="ireland-drivers-license-number"></a>爱尔兰驾驶证号码
 
 ### <a name="format"></a>Format
 
-6位数，后跟四个字母
+六个数字后跟四个字母
   
 ### <a name="pattern"></a>模式
 
-6位数字和四个字母：
+六个数字和四个字母：
   
 - 六位数字
 - 四个字母 (不区分大小写) 
@@ -8753,8 +8737,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_ireland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_ireland_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_ireland_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_ireland_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -8771,7 +8755,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -8779,49 +8763,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -8829,86 +8813,86 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver "s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver s_license_number
 
-- ceadúnas tiomána
-- ceadúnais tiomána
+- ceadúnas tiomúa
+- ceadúnais tiomúa
 
 ## <a name="ireland-passport-number"></a>爱尔兰护照号码
 
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，不含空格或分隔符
+两个字母或数字后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-两个字母或数字，后跟七个数字：
+两个字母或数字后跟七个数字：
   
 - 两位数字或字母（不区分大小写）
 - 七个数字
@@ -8921,8 +8905,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
   
-- 正则表达式  `Regex_ireland_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_ireland_eu_passport_number` 。 
+- 正则表达式  `Regex_ireland_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_ireland_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -8941,47 +8925,47 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
 - passeport numero
 - uimhreacha pasanna
 - uimhir pas
-- uimhir phas
+- uimhir 阶段
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
 
-## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公开服务 (PPS) 号码
+## <a name="ireland-personal-public-service-pps-number"></a>爱尔兰个人公共服务 (PPS) 号码
 
 ### <a name="format"></a>Format
 
-旧格式 (到 31 Dec 2012) ：
-- 七位数字后跟1-2 个字母 
+旧格式 (2012 年 12 月 31 日) ：
+- 七个数字后跟 1-2 个字母 
 
-新格式 (1 Jan 2013 和) 之后）：
-- 七位数字后跟两个字母
+新格式 (2013 年 1 月 1 日及之后) ：
+- 七个数字后跟两个字母
 
 ### <a name="pattern"></a>模式
 
-旧格式 (到 31 Dec 2012) ：
-- 七位数字 
+旧格式 (2012 年 12 月 31 日) ：
+- 七个数字 
 - 一到两个字母 (不区分大小写)  
 
-新格式 (1 Jan 2013 和) 之后）：
-- 七位数字 
-- 字母 (区分大小写) 这是字母校验位 
-- 一个-I 范围内的可选字母，或 "W"
+新格式 (2013 年 1 月 1 日及之后) ：
+- 七个数字 
+- 字母 (不区分大小写) 字母检查数字 
+- A-I 或"W"范围中的可选字母
 
 ### <a name="checksum"></a>校验和
 
@@ -8991,7 +8975,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
 - 函数 Func_ireland_pps 找到与该模式匹配的内容。
-- 找到 Keywords_ireland_eu_national_id_card 中的关键字。
+- 找到来自Keywords_ireland_eu_national_id_card关键字。
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
@@ -9017,46 +9001,46 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - 客户端标识服务
 - identification number
-- 个人 id 号
-- 个人公开服务号码
-- 个人服务编号
-- phearsanta seirbhíse poiblí
+- 个人 ID 号
+- 个人公共服务号码
+- 个人服务否
+- phearsanta seirbhíse poiblí
 - pps no
-- pps 号码
+- pps number
 - pps num
 - pps 服务否
 - ppsn
 - ppsno#
 - ppsno
 - psp
-- 公共服务编号
+- 公共服务否
 - publicserviceno#
 - publicserviceno
-- 收入和社会保险电话号码
+- 收入和社会保险号码
 - rsi no
-- rsi 编号
+- rsi number
 - rsin
 - seirbhís aitheantais 客户端
 - uimh
-- uimhir aitheantais chánach
+- uimhir aitheantais chachach
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
 ## <a name="israel-bank-account-number"></a>以色列银行帐号
@@ -9067,14 +9051,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-格式
-- 两位数 
+格式化：
+- 两个数字 
 - 短划线 
 - 三个数字 
 - 短划线 
-- 八位数字
+- 八个数字
 
-纯
+无格式：
 - 	13 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -9108,15 +9092,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - Account Number 
 - מספר חשבון בנק 
    
-## <a name="israel-national-identification-number"></a>以色列国家身份证号
+## <a name="israel-national-identification-number"></a>以色列国家标识号
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九个连续数字
+九个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9154,28 +9138,27 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 -   رقم الهوية
 -   عدد هوية فريدة من نوعها
 -   idnumber#
--   id 号
+-   id number
 -   identity no        
 -   identitynumber#
--   标识号码
--   israeliidentitynumber       
--   个人 id
--   唯一 id  
+-   标识号
+-   identitynumber       
+-   个人 ID
+-   unique id  
 
    
-## <a name="italy-drivers-license-number"></a>意大利驾驶执照号码
-此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
+## <a name="italy-drivers-license-number"></a>意大利驾驶证号码
 
 ### <a name="format"></a>Format
 
-10个字母和数字的组合
+10 个字母和数字的组合
 
 ### <a name="pattern"></a>模式
 
-10个字母和数字的组合：
+10 个字母和数字的组合：
 - 一个字母 (不区分大小写)  
-- 字母 "A" 或 "V" (不区分大小写)  
-- 七位数字
+- 字母"A"或"V" (不区分大小写)  
+- 七个数字
 - 一个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -9210,8 +9193,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - patenti di guida
 - patenti guida
 
-## <a name="italy-fiscal-code"></a>意大利会计代码
-此敏感信息类型仅可用于以下内容：
+## <a name="italy-fiscal-code"></a>意大利财政代码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -9220,17 +9203,17 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-在指定模式中，由16个字符组成的字母和数字的组合
+指定模式中字母和数字的 16 个字符组合
   
 ### <a name="pattern"></a>模式
 
-字母和数字的16个字符的组合：
-- 与系列名称中的前三个辅音对应的三个字母
-- 与名字中的第一个、第三个和第四个辅音对应的三个字母
-- 与出生年份的最后一个数字对应的两个数字
-- 一个与出生月份的字母相对应的字母–字母按字母顺序使用，但仅使用字母 A 到 E、H、L、M、P、R 和 T (因此，一月为 A，10月为 R) 
-- 与出生月份的某一天对应的两个数字，为了区分 genders，40已添加到女性的出生日。
-- 与特定于 municipality 的区域代码相对应的四个数字，该用户的出生国家 (国家/地区内的代码用于外国国家) 
+字母和数字的 16 个字符组合：
+- 三个字母，对应于系列名称中的前三个辅音
+- 三个字母，分别对应于名字中的第一个、第三个和第四个辅音
+- 两个数字，对应于出生日期的最后一个数字
+- 一个字母，对应于出生日期月份中的字母 - 字母按字母顺序使用，但只有字母 A 到 E、H、L、M、P、R 到 T (因此，一月是 A，十月是 R) 
+- 与出生日期对应的两个数字 -为了区分性别，将 40 添加到性别的出生日期
+- 四个数字，对应于某人所 (的国家/地区代码所特有的地区代码，用于) 
 - 一个奇偶校验数字
     
 ### <a name="checksum"></a>校验和
@@ -9240,11 +9223,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_italy_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_italy_eu_national_id_card` 。 
+- 该  `Func_italy_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_italy_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_italy_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_italy_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Italy Fiscal Code -->
@@ -9263,53 +9246,53 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
-- codice 会计
+- codice 财务
 - codice fiscale
 - codice id personale
 - codice personale
-- 会计代码
+- 财务代码
 - numero certificato personale
-- numero di identificazione fiscale
+- numero di identificificone fiscale
 - numero id personale
 - numero personale
-- 个人证书号码
+- 个人证书编号
 - 个人代码
-- 个人 id 代码
-- 个人 id 号
+- 个人 ID 代码
+- 个人 ID 号
 - personalcodeno#
-- 税码
+- 税务代码
 - tax id
-- 税号标识编号
-- 税标识号
-- 纳税标识编号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax identity number
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
 ## <a name="italy-passport-number"></a>意大利护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，不含空格或分隔符
+两个字母或数字后跟七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-两个字母或数字，后跟七个数字：
+两个字母或数字后跟七个数字：
   
 - 两个数字或字母 (不区分大小写) 
-- 七位数字
+- 七个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -9318,8 +9301,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_italy_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_italy_eu_passport_number` 。 
+- 正则表达式  `Regex_italy_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_italy_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -9338,16 +9321,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
@@ -9359,8 +9342,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - numeri del passaporto
 - passeport italien
 
-## <a name="italy-value-added-tax-number"></a>意大利增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="italy-value-added-tax-number"></a>意大利增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -9369,15 +9352,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-带有可选分隔符的13个字符的字母数字模式
+带可选分隔符的 13 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-带有可选分隔符的13个字符的字母数字模式：
+带可选分隔符的 13 个字符字母数字模式：
 
 - I 或 i
 - T 或 t
-- 可选空格、点号、连字符或逗号
+- 可选空格、点、连字符或逗号
 - 11 个数字
 
 ### <a name="checksum"></a>校验和
@@ -9387,11 +9370,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_italy_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_italy_value_added_tax_number 中的关键字。
+- 该函数Func_italy_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_italy_value_added_tax_number的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_italy_value_added_tax_number 找到与该模式匹配的内容。
+- 该函数Func_italy_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -9410,26 +9393,26 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
-- vat 号码
-- vat 编号
+- vat number
+- vat no
 - vat#
-- iva
-- iva#
+- 一
+- 一#
 
 
-## <a name="japan-bank-account-number"></a>日本银行帐户号码
+## <a name="japan-bank-account-number"></a>日本银行帐号
 
 ### <a name="format"></a>Format
 
-7或8位数字
+七个或八个数字
 
 ### <a name="pattern"></a>模式
 
-银行帐户号码：
-- 7或8位数字
-- 银行帐户分支代码：
-- 四位数 
-- 可选) 的空格或短划线 ( 
+bank account number：
+- 七个或八个数字
+- bank account branch code：
+- 四个数字 
+- 可选 (或短)  
 - 三个数字
 
 校验和
@@ -9520,7 +9503,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>日本驾驶执照号码
+## <a name="japan-drivers-license-number"></a>日本驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -9560,10 +9543,10 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverslicenses
 - driver'slicenses
 - driverlicenses
-- 通讯#
+- dl#
 - dls#
-- .lic#
-- driver'lics#
+- lic#
+- lics#
 - 運転免許証
 - 運転免許
 - 免許証
@@ -9575,24 +9558,24 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 運転免許証ナンバー
 - 運転免許ナンバー
 - 免許証ナンバー
-- 運転免許証no
-- 運転免許no
-- 免許証no
-- 免許no
+- 転証no
+- 転 />
+- 証no
+- 免
 - 運転経歴証明書番号
 - 運転経歴証明書
-- 運転免許証No.
-- 運転免許No.
-- 免許証No.
-- 免許No.
+- 転証No。
+- 転転no。
+- 証No。
+- 免用。
 - 運転免許証#
 - 運転免許#
 - 免許証#
 - 免許#
 
 
-## <a name="japan-my-number---corporate"></a>日本我的号码-公司
-此敏感信息类型仅可用于以下内容：
+## <a name="japan-my-number---corporate"></a>日本我的号码 - 公司
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -9601,13 +9584,13 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-13位数字
+13 个数字
 
 ### <a name="pattern"></a>模式
 
-13位数字：
+13 个数字：
 
-- 一位数从1到9
+- 一个数字，从 1 到 9
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -9617,11 +9600,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_japanese_my_number_corporate 找到与该模式匹配的内容。
-- 找到 Keywords_japanese_my_number_corporate 中的关键字。
+- 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
+- 找到来自Keywords_japanese_my_number_corporate关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_japanese_my_number_corporate 找到与该模式匹配的内容。
+- 该函数Func_japanese_my_number_corporate查找与模式匹配的内容。
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -9640,7 +9623,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- 公司编号
+- 公司号码
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -9652,8 +9635,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>日本我的号码-个人
-此敏感信息类型仅可用于以下内容：
+## <a name="japan-my-number---personal"></a>日本我的号码 - 个人
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -9662,17 +9645,17 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-12位数字
+12 个数字
 
 ### <a name="pattern"></a>模式
 
-12位数字：
+12 位数字：
 
-- 四位数
-- 可选空格、点号或连字符
-- 四位数
-- 可选空格、点号或连字符
-- 四位数
+- 四个数字
+- 可选空格、点或连字符
+- 四个数字
+- 可选空格、点或连字符
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9681,11 +9664,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_japanese_my_number_personal 找到与该模式匹配的内容。
-- 找到 Keywords_japanese_my_number_personal 中的关键字。
+- 函数Func_japanese_my_number_personal查找与模式匹配的内容。
+- 找到搜索Keywords_japanese_my_number_personal关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_japanese_my_number_personal 找到与该模式匹配的内容。
+- 函数Func_japanese_my_number_personal查找与模式匹配的内容。
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -9724,7 +9707,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-两个字母 (不区分大小写) 后跟七位数字
+两个字母 (不区分大小写) 后跟七个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -9750,33 +9733,33 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- 登记卡
+- Passport
 - Passport Number
-- 护照号
+- Passport No。
 - Passport #
 - パスポート
 - パスポート番号
 - パスポートナンバー
-- パスポート＃
 - パスポート#
-- パスポートNo.
+- パスポート#
+- パスポNo。
 - 旅券番号
-- 旅券番号＃
+- 旅券番号#
 - 旅券番号♯
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>日本住宅电话卡号
+## <a name="japan-residence-card-number"></a>日本居民卡号
 
 ### <a name="format"></a>Format
 
-12个字母和数字
+12 个字母和数字
 
 ### <a name="pattern"></a>模式
 
-12个字母和数字：
+12 个字母和数字：
 - 两个字母 (不区分大小写) 
-- 八位数字 
+- 八个数字 
 - 两个字母 (不区分大小写) 
 
 ### <a name="checksum"></a>校验和
@@ -9786,8 +9769,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_jp_residence_card_number 找到与该模式匹配的内容。
-- 找到 Keyword_jp_residence_card_number 中的关键字。
+- 正则表达式Regex_jp_residence_card_number查找与模式匹配的内容。
+- 找到来自Keyword_jp_residence_card_number关键字。
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -9803,9 +9786,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- 住宅电话卡号
-- 住宅卡编号
-- 住宅卡片#
+- 住宅卡号
+- 住宅卡否
+- 居住地卡片#
 - 在留カード番号
 - 在留カード
 - 在留番号
@@ -9856,7 +9839,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 外国人登録証
 
    
-## <a name="japan-social-insurance-number-sin"></a>日本社会保险号 (SIN) 
+## <a name="japan-social-insurance-number-sin"></a>日本社会保险号码 (SIN) 
 
 ### <a name="format"></a>Format
 
@@ -9865,9 +9848,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 7-12 位数字：
-- 四位数 
-- 连字符 (可选)  
-- 六位数字或
+- 四个数字 
+- 可选连字符 (可选)  
+- 六个数字 OR
 - 7-12 个连续的数字
 
 ### <a name="checksum"></a>校验和
@@ -9912,7 +9895,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 雇用保険番号
 - 保険証番号
 - 社会保険番号
-- 社会保険No.
+- 険No。
 - 社会保険
 - 介護保険
 - 介護保険被保険者番号
@@ -9922,8 +9905,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 厚生年金被保険者整理番号
 
 
-## <a name="latvia-drivers-license-number"></a>拉脱维亚驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="latvia-drivers-license-number"></a>拉脱维亚驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -9934,7 +9916,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 三个字母和六个数字：
   
 - 三个字母 (不区分大小写)  
-- 6位数字
+- 六个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -9943,8 +9925,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_latvia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_latvia_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_latvia_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_latvia_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -9961,7 +9943,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -9969,49 +9951,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -10019,98 +10001,98 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver "s_license_number
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver s_license_number
 
-- autovadītāja apliecība
-- autovadītāja apliecības
-- vadītāja apliecība
+- autovadplitplija apliecpliba
+- autovadplitplija apliecplibas
+- vadplitplija apliecpliba
 
 ## <a name="latvia-personal-code"></a>拉脱维亚个人代码
 
 ### <a name="format"></a>Format
 
-11个数字和一个可选连字符
+11 个数字和一个可选连字符
   
 ### <a name="pattern"></a>模式
 
 旧格式
 
-11个数字和一个连字符：
+11 个数字和一个连字符：
   
-- 与出生日期 (DDMMYY) 的6个数字 
+- 六个数字，对应于 DDMMYY (出生日期)  
 - 连字符
-- 一个数字，对应于19世纪的出生世纪 ( "0"，"1" 表示20世纪，"2" 表示21世纪) 
+- 一个数字，对应于 19 世纪 ("0"，"1"表示 20 世纪，"2"对应于 21 世纪) 
 - 四个数字，随机生成
 
 新格式
 
 11 个数字
 
-- 两位数 "32"
+- 两个数字"32"
 - 九个数字
     
 ### <a name="checksum"></a>校验和
@@ -10120,11 +10102,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_latvia_eu_national_id_card` 。 
+- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_latvia_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 找到与该模式匹配的内容。 
+- 函数  `Func_latvia_eu_national_id_card` 或正则表达式 `Regex_latvia_eu_national_id_card_new_format` 查找与模式匹配的内容。 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10159,80 +10141,80 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
-- 管理号码
+- 管理编号
 - alvas nē
-- 出生号码
-- 公民编号
-- 民事号码
-- 电子人口普查编号
-- 电子号码
-- 会计代码
-- 医疗保健用户号码
-- 号#
-- id-代码
+- birth number
+- citizen number
+- 编号
+- 电子统计数字
+- 电子数字
+- 财务代码
+- 医疗保健用户编号
+- id#
+- id-code
 - identification number
-- identifikācijas numurs
-- id-号码
-- 单个号码
-- 拉脱维亚 alva
-- nacionālais id
+- identifik-cijas numurs
+- id-number
+- 个人编号
+- latvija alva
+- nacionlais id
 - national id
-- 国家识别号
-- 国家/地区身份证号码
+- national identifying number
+- national identity number
 - national insurance number
-- 国家/地区寄存器号
-- nodokļa numurs
+- national register number
+- nodokļa枚举
 - nodokļu id
-- nodokļu identifikācija numurs
-- 个人证书号码
+- nodokļu identifik-cija numurs
+- 个人证书编号
 - 个人代码
-- 个人 id 代码
-- 个人 id 号
+- 个人 ID 代码
+- 个人 ID 号
 - 个人标识代码
 - 个人标识符
-- 个人识别码
+- 个人标识号
 - 个人号码
 - 个人数字代码
 - personalcodeno#
-- 角色 kods
-- 填充标识代码
-- 公用服务号码
+- personas kods
+- 总体标识代码
+- 公共服务号码
 - registration number
 - 收入编号
 - social insurance number
 - social security number
-- 州税码
+- 州税代码
 - tax file number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
-- voter 的号码
+- tin id
+- tin no
+- tin#
+- 用户编号
 
 ## <a name="latvia-passport-number"></a>拉脱维亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母或数字后跟七个数字，不含空格或分隔符
+两个字母或数字后跟七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-两个字母或数字，后跟七个数字：
+两个字母或数字后跟七个数字：
   
 - 两个数字或字母 (不区分大小写) 
-- 七位数字
+- 七个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10241,8 +10223,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_latvia_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_latvia_eu_passport_number` 。 
+- 正则表达式  `Regex_latvia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_latvia_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10261,16 +10243,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
@@ -10279,18 +10261,17 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - pases numuri
 - pases nr
 - passeport no
-- n du Passeport
+- n° du Passeport
 
-## <a name="lithuania-drivers-license-number"></a>立陶宛驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="lithuania-drivers-license-number"></a>立陶宛驾驶证号码
 
 ### <a name="format"></a>Format
 
-8位数，不含空格和分隔符
+八个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-八位数字 
+八个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -10299,8 +10280,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_lithuania_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_lithuania_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_lithuania_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_lithuania_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -10317,7 +10298,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -10325,49 +10306,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -10375,78 +10356,78 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver "s_license_number
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver s_license_number
 
-- vairuotojo pažymėjimas
-- vairuotojo pažymėjimo numeris
-- vairuotojo pažymėjimo numeriai
+- vair一tojo pažymėjimas
+- vair一tojo pažymėjimo numeris
+- vair一tojo pažymėjimo num一i
 
 ## <a name="lithuania-personal-code"></a>立陶宛个人代码
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -10455,16 +10436,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-11个数字，无空格和分隔符
+11 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-11个数字，不含空格和分隔符：
+11 个数字，不含空格和分隔符：
   
-- 一种数字 (1-6) ，对应于个人的性别和出生世纪
-- 与出生日期 (YYMMDD) 的6个数字 
-- 与出生日期的序列号对应的三个数字
-- 一个校验位
+- 1 (1-6) 对应于性别和出生日期的世纪
+- 与 YYMMDD (日期对应的六)  
+- 三个数字，对应于出生日期的序列号
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10473,11 +10454,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_lithuania_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_lithuania_eu_tax_file_number` 。 
+- 该  `Func_lithuania_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_lithuania_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_lithuania_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_lithuania_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Lithuania Personal Code -->
@@ -10502,43 +10483,43 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- 公民服务号码
+- citizen service number
 - mokesčių id
-- mokesčių identifikavimas numeris
+- mokesčių identif一vimas numeris
 - mokesčių identifikavimo numeris
 - mokesčių numeris
 - national identification number
 - 个人代码
 - 个人数字代码
-- piliečio paslaugos numeris
+- pilieio paslaugos numeris
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
-- unikalus identifikavimo kodas
-- unikalus identifikavimo numeris
+- tin id
+- tin no
+- tin#
+- unkolus identifluvimo kodas
+- unapilus identifluvimo numeris
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
 
 ## <a name="lithuania-passport-number"></a>立陶宛护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-八个数字或字母不带空格或分隔符
+八个数字或字母，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -10551,8 +10532,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_lithuania_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_lithuania_eu_passport_number` 。 
+- 正则表达式  `Regex_lithuania_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_lithuania_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10571,33 +10552,32 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
 - paso numeris
-- paso numeriai
+- paso num一i
 - paso nr
 
-## <a name="luxemburg-drivers-license-number"></a>Luxemburg 驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="luxemburg-drivers-license-number"></a>都明网驾驶证号码
 
 ### <a name="format"></a>Format
 
-6位数，不含空格和分隔符
+不带空格和分隔符的六个数字
   
 ### <a name="pattern"></a>模式
 
-6位数字 
+六个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -10606,8 +10586,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_luxemburg_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_luxemburg_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_luxemburg_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -10624,7 +10604,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -10632,49 +10612,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -10682,77 +10662,77 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver "s_license_number
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver s_license_number
 
 - fahrerlaubnis
-- Führerschäin
+- Fhrerschhrin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg (自然个人的国家标识号码) 
-此敏感信息类型仅可用于以下内容：
+## <a name="luxemburg-national-identification-number-natural-persons"></a> (布尔自然人的) 
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -10761,14 +10741,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-13个不带空格或分隔符的数字
+13 个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
 13 个数字：
   
 - 11 个数字 
-- 两个校验位
+- 两个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10777,11 +10757,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_luxemburg_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_luxemburg_eu_national_id_card` 。 
+- 该  `Func_luxemburg_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_luxemburg_eu_national_id_card` 关键字。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_luxemburg_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_luxemburg_eu_tax_file_number` 函数查找与模式匹配的内容。 
 
 
 ```xml
@@ -10812,26 +10792,26 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - idpersonnelle#
 - idpersonnelle
 - 单个代码
-- 个人 id
-- 单个标识
-- 单个标识
-- numéro d'identification 人员
-- 个人 id
+- 个人 ID
+- 个人标识
+- 个人标识
+- numéro d'identification personnel
+- 个人 ID
 - 个人标识
 - 个人标识
 - personalidno#
 - personalidnumber#
 - persönliche identifikationsnummer
-- 唯一 id
+- unique id
 - 唯一标识
 - uniqueidkey#
 
-## <a name="luxemburg-passport-number"></a>Luxemburg 护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+## <a name="luxemburg-passport-number"></a>比塞明卡护照号码
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-八个数字或字母不带空格或分隔符
+八个数字或字母，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -10844,8 +10824,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_nation_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_nation_eu_passport_number` 。 
+- 正则表达式  `Regex_nation_eu_passport_number` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_nation_eu_passport_number` 关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -10862,11 +10842,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keywords_nation_eu_passport_number"></a>Keywords_nation_eu_passport_number
 
 - passport number
-- 拉脱维亚语护照号码
-- 护照号
+- 拉脱维亚护照号码
+- passport no
 - passnummer
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luxemburg 国内标识号 (非自然个人) 
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a> (非自然人的) 
 
 ### <a name="format"></a>Format
 
@@ -10876,14 +10856,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 11 个数字
   
-- 两位数
-- 一个可选空格 
+- 两个数字
+- 可选空格 
 - 三个数字 
-- 一个可选空格
+- 可选空格
 - 三个数字 
-- 一个可选空格
-- 两位数
-- 一个校验位
+- 可选空格
+- 两个数字
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -10892,11 +10872,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_luxemburg_eu_tax_file_number_non_natural` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_luxemburg_eu_tax_file_number` 。 
+- 该  `Func_luxemburg_eu_tax_file_number_non_natural` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_luxemburg_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_luxemburg_eu_tax_file_number_non_natural` 找到与该模式匹配的内容。 
+- 该  `Func_luxemburg_eu_tax_file_number_non_natural` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Luxemburg National Identification Number (Non-natural persons) -->
@@ -10919,46 +10899,46 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
-- 反 sécurité sociale
-- étain 非
+- carte de sécurité sociale
+- étain non
 - étain#
-- identifiant d'impôt
-- 卢森堡税 identifikatiounsnummer
+- identifiant d'imp-t
+- 卢森堡税务 identifidenttiounsnummer
 - numéro d'étain
-- numéro d'identification 会计 luxembourgeois
+- numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
 - social security
-- sozialunterstützung
+- sozialunterstzitzung
 - sozialversécherung
-- sozialversicherungsausweis
+- sozialversicherungsausichs
 - steier id
-- steier identifikatiounsnummer
+- steier identifidenttiounsnummer
 - steier nummer
 - steuer id
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - zinn#
 - zinn
 - zinnzahl
 
 
-## <a name="malaysia-identification-card-number"></a>马来西亚标识卡号
+## <a name="malaysia-identification-card-number"></a>马来西亚身份证号
 
 ### <a name="format"></a>Format
 
@@ -10967,12 +10947,12 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 6位数，格式为 YYMMDD，表示出生日期 
+- 六个数字，格式为 YYMMDD，表示出生日期 
 - 短划线 (可选)  
-- 两个字母的出生位置代码 
+- 双字母的出生日期代码 
 - 短划线 (可选)  
 - 三个随机数字 
-- 一位数的性别代码
+- 一位数性别代码
 
 ### <a name="checksum"></a>校验和
 
@@ -11001,17 +10981,17 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - 数字应用程序卡
 - i/c
-- i/c 否
+- i/c no
 - ic
-- 内部公司编号
+- ic no
 - id card
-- 标识卡
+- identification Card
 - identity card
 - k/p
 - k/p no
 - kad akuan diri
-- kad aplikasi 数字
-- kad pengenalan 马来西亚
+- kad aplkasi digital
+- kadenalan malaysia
 - kp
 - kp no
 - mykad
@@ -11019,26 +10999,25 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - mykid
 - mypr
 - mytentera
-- 马来西亚身份卡片
-- 马来西亚身份卡片
+- 马来西亚身份证
+- 管理身份卡
 - nric
 - 个人标识卡
 
-## <a name="malta-drivers-license-number"></a>马耳他驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="malta-drivers-license-number"></a>马耳他驾驶证号码
 
 ### <a name="format"></a>Format
 
-两个字符与指定模式中的六个数字的组合
+指定模式中两个字符和六个数字的组合
   
 ### <a name="pattern"></a>模式
 
 两个字符和六个数字的组合：
   
-- 两个字符 (数字或字母，而不区分大小写) 
-- 空格 (可选) 
+- 两个字符 (或字母，不区分大小写) 
+- 可选 (空格) 
 - 三个数字
-- 空格 (可选) 
+- 可选 (空格) 
 - 三个数字
     
 ### <a name="checksum"></a>校验和
@@ -11048,8 +11027,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_malta_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_malta_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_malta_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Malta Driver's License Number -->
@@ -11066,7 +11045,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -11074,49 +11053,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -11124,78 +11103,78 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver "s_license_number
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver s_license_number
 
 - liċenzja tas-sewqan
 - liċenzji tas-sewwieq
 
 
-## <a name="malta-identity-card-number"></a>马耳他身份卡片号
-此敏感信息类型仅可用于以下内容：
+## <a name="malta-identity-card-number"></a>马耳他身份证号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -11204,14 +11183,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-七位数字后跟一个字母
+七个数字后跟一个字母
   
 ### <a name="pattern"></a>模式
 
-七位数字后跟一个字母：
+七个数字后跟一个字母：
   
-- 七位数字 
-- 在 "M、G、A、P、L、H、B、Z" (不区分大小写中的一个字母) 
+- 七个数字 
+- "M、G、A、P、L、H、B、Z"中的一个字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
 
@@ -11220,11 +11199,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_malta_eu_national_id_card` 。 
+- 正则表达式  `Regex_malta_eu_national_id_card` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_malta_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_national_id_card` 找到与该模式匹配的内容。 
+- 正则表达式  `Regex_malta_eu_national_id_card` 查找与模式匹配的内容。 
     
 ```xml
       <!-- Malta Identity Card Number -->
@@ -11243,14 +11222,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- 公民服务号码
+- citizen service number
 - id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
-- numru ta "identifikazzjoni personali
-- numru ta "identifikazzjoni tat-taxxa
-- numru ta "identifikazzjoni uniku
-- numru ta "identità uniku
+- identifident numru tal-jett
+- kodiċi数字个人
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifkuzzjoni uniku
+- numru ta' identità uniku
 - numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
 - 个人数字代码
@@ -11260,15 +11239,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 
 ## <a name="malta-passport-number"></a>马耳他护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-七位数字，不含空格或分隔符
+不带空格或分隔符的七个数字
   
 ### <a name="pattern"></a>模式
 
-七位数字 
+七个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -11277,8 +11256,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_malta_eu_passport_number` 。 
+- 正则表达式  `Regex_malta_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_malta_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11297,16 +11276,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
@@ -11314,26 +11293,26 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - numri tal-passaport
 - Nru tal-passaport
 
-## <a name="malta-tax-identification-number"></a>马耳他税标识号
+## <a name="malta-tax-identification-number"></a>马耳他税务标识号
 
 ### <a name="format"></a>Format
 
-对于马耳他 nationals：
-- 七个数字和指定模式中的一个字母
+对于马耳他语的公民：
+- 指定模式中七个数字和一个字母
   
-非马耳他语 nationals 和马耳他语实体：
-- 九位数字
+非马耳他语国家/省和马耳他实体：
+- 九个数字
   
 ### <a name="pattern"></a>模式
 
-马耳他 nationals：七位数和一个字母
+马耳他语：七位数字和一个字母
   
-- 七位数字 
+- 七个数字 
 - 一个字母 (不区分大小写) 
     
-非马耳他语 nationals 和马耳他语实体：9个数字
+非马耳他语和马耳他实体：9 个数字
   
-- 九位数字 
+- 九个数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -11342,11 +11321,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_tax_file_number`  或 `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_malta_eu_tax_file_number` 。 
+- 正则表达式或  `Regex_malta_eu_tax_file_number` `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_malta_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_malta_eu_tax_file_number` 或 `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与该模式匹配的内容。 
+- 正则表达式或  `Regex_malta_eu_tax_file_number` `Regex_malta_eu_tax_file_number_non_maltese_national` 查找与模式匹配的内容。 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11372,51 +11351,51 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- 公民服务号码
+- citizen service number
 - id tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
-- numru ta "identifikazzjoni personali
-- numru ta "identifikazzjoni tat-taxxa
-- numru ta "identifikazzjoni uniku
-- numru ta "identità uniku
+- identifident numru tal-jett
+- kodiċi数字个人
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifkuzzjoni uniku
+- numru ta' identità uniku
 - numru tas-servizz taċ-ċittadin
 - numru tat-taxxa
 - 个人数字代码
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
 
-## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务 (BSN) 号码
+## <a name="netherlands-citizens-service-bsn-number"></a>荷兰公民服务号码 (BSN) 号码
 
 ### <a name="format"></a>Format
 
-8-9 个数字，包含可选空格
+包含可选空格的八九个数字
 
 ### <a name="pattern"></a>模式
 
 8-9 个数字：
 - 三个数字 
-- 空格 (可选)  
+- 可选 (空格)  
 - 三个数字 
-- 空格 (可选)  
-- 双三位数字
+- 可选 (空格)  
+- 两位三位
 
 ### <a name="checksum"></a>校验和
 
@@ -11445,18 +11424,18 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
   
 - bsn#
 - bsn
-- burgerservicenummer
-- 公民服务号码
-- 人员编号
+- servicenummer
+- citizen service number
+- person number
 - 个人号码
 - 个人数字代码
-- 人员相关号码
+- 与人员相关的号码
 - persoonlijk nummer
 - persoonlijke numerieke 代码
-- persoonsgebonden
+- persoonsgeoonden
 - persoonsnummer
 - sociaal-fiscaal nummer
-- 社会-会计号码
+- social-fiscal number
 - sofi
 - sofinummer
 - uniek identificatienummer
@@ -11465,16 +11444,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - 唯一标识号
 - uniqueidentityno#
 
-## <a name="netherlands-drivers-license-number"></a>荷兰驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="netherlands-drivers-license-number"></a>荷兰驾驶证号码
 
 ### <a name="format"></a>Format
 
-10个数字，无空格和分隔符
+10 个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-10位数字
+十个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -11483,8 +11461,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_netherlands_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_netherlands_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_netherlands_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_netherlands_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -11501,7 +11479,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -11509,49 +11487,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -11559,71 +11537,71 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver "s_license_number
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver s_license_number
 
 - permis de conduire
 - rijbewijs
@@ -11634,11 +11612,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 
 ## <a name="netherlands-passport-number"></a>荷兰护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-九个字母或数字，不带空格或分隔符
+无空格或分隔符的九个字母或数字
   
 ### <a name="pattern"></a>模式
 
@@ -11651,8 +11629,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_netherlands_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_netherlands_eu_passport_number` 。 
+- 正则表达式  `Regex_netherlands_eu_passport_number` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_netherlands_eu_passport_number` 关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -11668,7 +11646,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- 荷兰护照号码
+- 荷兰语护照号码
 - passport number
 - 荷兰护照号码
 - nederlanden paspoort nummer
@@ -11676,8 +11654,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - nederlanden paspoortnummer
 - paspoortnummer
 
-## <a name="netherlands-tax-identification-number"></a>荷兰税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="netherlands-tax-identification-number"></a>荷兰税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -11686,11 +11664,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格或分隔符
+不带空格或分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字 
+九个数字 
   
 ### <a name="checksum"></a>校验和
 
@@ -11699,11 +11677,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_netherlands_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_netherlands_eu_tax_file_number` 。 
+- 该  `Func_netherlands_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_netherlands_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_netherlands_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_netherlands_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Netherlands Tax Identification Number -->
@@ -11723,44 +11701,44 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- hollânske 税标识
-- hulandes impuesto id 号
-- hulandes impuesto 标识
+- hollânske 税务标识
+- hulandes impuesto id number
+- hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
 - impuesto 标识号
-- impuesto 编号
-- 荷兰语 belasting id nummer
-- 荷兰语 belasting identificatie
-- 荷兰语 belasting identificatienummer
-- 荷兰语 belastingnummer
+- impuesto number
+- nederlands belasting id nummer
+- nederlands belasting identificatie
+- nederlands belasting identificatienummer
+- nederlands belastingnummer
 - nederlandse belasting identificatie
 - 荷兰税务标识
-- netherland 的税标识
-- 荷属安的纳税人标识号
-- netherland 的纳税人标识号
+- 荷兰税务标识
+- netherlands tin
+- 荷兰的 tin
 - tax id
-- 税号标识编号
-- 税标识号
-- 税标识 tal
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax identification tal
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- 税收 tal
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- tax tal
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
-## <a name="netherlands-value-added-tax-number"></a>荷兰增值税号
-此敏感信息类型仅可用于以下内容：
+## <a name="netherlands-value-added-tax-number"></a>荷兰增值税编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -11769,19 +11747,19 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-14个字符的字母数字模式
+14 个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-14个字符的字母数字模式：
+14 个字符字母数字模式：
 
 - N 或 n
 - L 或 l
-- 可选空格、点号或连字符
-- 九位数字
-- 可选空格、点号或连字符
+- 可选空格、点或连字符
+- 九个数字
+- 可选空格、点或连字符
 - B 或 b
-- 两位数
+- 两个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11790,11 +11768,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_netherlands_value_added_tax_number 找到与该模式匹配的内容。
-- 找到 Keywords_netherlands_value_added_tax_number 中的关键字。
+- 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
+- 找到来自Keywords_netherlands_value_added_tax_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_netherlands_value_added_tax_number 找到与该模式匹配的内容。
+- 该函数Func_netherlands_value_added_tax_number查找与模式匹配的内容。
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -11813,16 +11791,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
-- vat 号码
-- vat 编号
+- vat number
+- vat no
 - vat#
-- wearde tafoege 税 getal
-- btw nûmer
+- wearde tafoege tax getal
+- btw n与mer
 - btw-nummer
 
 
 ## <a name="new-zealand-bank-account-number"></a>新西兰银行帐号
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -11831,20 +11809,20 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-14到16个带可选分隔符的数字模式
+带可选分隔符的 14 到 16 个数字模式
 
 ### <a name="pattern"></a>模式
 
-14到16个带可选分隔符的数字模式：
+带可选分隔符的 14 到 16 个数字模式：
 
-- 两位数
-- 一个可选连字符或空格
-- 三到四位数字
-- 一个可选连字符或空格
-- 七位数字
-- 一个可选连字符或空格
+- 两个数字
+- 可选连字符或空格
+- 三到四个数字
+- 可选连字符或空格
+- 七个数字
+- 可选连字符或空格
 - 两到三个数字
-- 一个选项连字符或空格
+- 选项连字符或空格
 
 ### <a name="checksum"></a>校验和
 
@@ -11853,11 +11831,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_new_zealand_bank_account_number 找到与该模式匹配的内容。
-- 找到 Keywords_new_zealand_bank_account_number 中的关键字。
+- 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
+- 找到搜索Keywords_new_zealand_bank_account_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_new_zealand_bank_account_number 找到与该模式匹配的内容。
+- 函数Func_new_zealand_bank_account_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -11877,14 +11855,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 #### <a name="keyword_new_zealand_bank_account_number"></a>Keyword_new_zealand_bank_account_number
 
 - account number
-- 银行帐户
+- bank account
 - bank_acct_id
 - bank_acct_branch
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>新西兰驾照号码
-此敏感信息类型仅可用于以下内容：
+## <a name="new-zealand-drivers-license-number"></a>新西兰驾驶证号码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -11893,14 +11871,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-八个字符的字母数字模式
+八个字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-八个字符的字母数字模式
+八个字符字母数字模式
 
 - 两个字母 
-- 6位数字
+- 六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -11909,11 +11887,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_newzealand_driver_license_number 找到与该模式匹配的内容。
-- 找到 Keywords_newzealand_driver_license_number 中的关键字。
+- 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
+- 找到来自Keywords_newzealand_driver_license_number的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_newzealand_driver_license_number 找到与该模式匹配的内容。
+- 函数Func_newzealand_driver_license_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -11934,72 +11912,72 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序许可证
-- 驱动程序许可证
+- driver lic
+- driver licence
+- driver licences
 - driverslic
 - driverslicence
 - driverslicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's licence
-- 驾驶许可
+- driver's licences
 - driverlic#
 - driverlics#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver licence#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's licence#
+- driver's licences#
 - international driving permit
 - international driving permits
-- 新西兰汽车协会
+- nz 汽车关联
 - 新西兰汽车协会
 
 
-## <a name="new-zealand-inland-revenue-number"></a>新西兰 inland 收入编号
-此敏感信息类型仅可用于以下内容：
+## <a name="new-zealand-inland-revenue-number"></a>新西兰的收入数字
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -12008,11 +11986,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-八个或9个带可选分隔符的数字
+带可选分隔符的八个或九个数字
 
 ### <a name="pattern"></a>模式
 
-八个或9个带可选分隔符的数字
+带可选分隔符的八个或九个数字
 
 - 两个或三个数字
 - 可选空格或连字符
@@ -12027,11 +12005,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_new_zealand_inland_revenue_number 找到与该模式匹配的内容。
-- 找到 Keywords_new_zealand_inland_revenue_number 中的关键字。
+- 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
+- 找到来自Keywords_new_zealand_inland_revenue_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_new_zealand_inland_revenue_number 找到与该模式匹配的内容。
+- 函数Func_new_zealand_inland_revenue_number查找与模式匹配的内容。
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12050,25 +12028,25 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- ird。
+- 否。
 - ird no#
+- nz ird
 - 新西兰 ird
-- 新西兰 ird
-- ird 编号
-- inland 收入编号
+- ird number
+- 区收入编号
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>新新西兰的运行状况号码
+## <a name="new-zealand-ministry-of-health-number"></a>新西兰医疗局号码
 
 ### <a name="format"></a>Format
 
-三个字母、一个空格 (可选) 和四位数字
+三个字母，一 (可选) 和四个数字
 
 ### <a name="pattern"></a>模式
 
-- 三个字母 (不区分大小写) 除 "I" 和 "O"
-- 空格 (可选)  
-- 四位数
+- 三个字母 (区分大小写) "I"和"O"除外
+- 可选 (空格)  
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12105,17 +12083,17 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - NHI
 - New Zealand
 - 健康
-- 治疗
-- 国家/地区运行状况索引号
-- nhi 编号
-- nhi。
+- 处理
+- National Health Index Number
+- nhi number
+- nhi no.
 - NHI#
-- 国家/地区运行状况指数
-- 国家/地区运行状况索引 Id
-- 国家运行状况索引#
+- National Health Index No.
+- National Health Index Id
+- 国家健康索引#
 
-## <a name="new-zealand-social-wlefare-number"></a>新西兰社会 wlefare 号码
-此敏感信息类型仅可用于以下内容：
+## <a name="new-zealand-social-wlefare-number"></a>新西兰社会关系号码
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -12124,11 +12102,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九位数字
+九个数字
 
 - 三个数字
 - 可选连字符
@@ -12143,11 +12121,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_newzealand_social_welfare_number 找到与该模式匹配的内容。
-- 找到 Keywords_newzealand_social_welfare_number 中的关键字。
+- 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
+- 找到搜索Keywords_newzealand_social_welfare_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_newzealand_social_welfare_number 找到与该模式匹配的内容。
+- 函数Func_newzealand_social_welfare_number查找与模式匹配的内容。
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -12167,14 +12145,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- 社交 welfare#
-- 社交 welfare#
-- 社会 welfare 编号
-- 社会 welfare 号码
+- social 40#
+- social 40#
+- social no.
+- 社交4004
 - swn#
 
    
-## <a name="norway-identification-number"></a>挪威身份证号码
+## <a name="norway-identification-number"></a>挪威标识号
 
 ### <a name="format"></a>Format
 
@@ -12183,9 +12161,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 11 个数字：
-- 6位数，格式为 DDMMYY，表示出生日期 
-- 三位数的个人号码 
-- 两个校验位
+- 六个数字，格式为 DDMMYY，表示出生日期 
+- 三位数个人号码 
+- 两个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12222,12 +12200,12 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - Personal identification number
 - Norwegian ID Number
 - ID Number
-- Id
+- 标识
 - Personnummer
-- Fødselsnummer
+- Fselsnummer
 
    
-## <a name="philippines-unified-multi-purpose-identification-number"></a>菲律宾统一多用途标识号码
+## <a name="philippines-unified-multi-purpose-identification-number"></a>菲律宾统一的多用途标识号
 
 ### <a name="format"></a>Format
 
@@ -12236,11 +12214,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="pattern"></a>模式
 
 12 个数字：
-- 四位数 
+- 四个数字 
 - 连字符 
-- 七位数字 
+- 七个数字 
 - 连字符 
-- 一位
+- 一个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12271,22 +12249,21 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - Identity Card 
 - Pinag-isang Multi-Layunin ID
 
-## <a name="poland-drivers-license-number"></a>波兰驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="poland-drivers-license-number"></a>波兰驾驶证号码
 
 ### <a name="format"></a>Format
 
-14位数，包含2个正斜杠
+14 个数字，包含 2 个正斜杠
   
 ### <a name="pattern"></a>模式
 
-14位数和2正斜杠：
+14 个数字和 2 个正斜杠：
   
 - 五个数字 
-- 一个正斜杠
-- 两位数
-- 一个正斜杠
-- 七位数字
+- 正斜杠
+- 两个数字
+- 正斜杠
+- 七个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -12295,8 +12272,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_poland_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_poland_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_poland_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_poland_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Poland Driver's License Number -->
@@ -12313,7 +12290,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -12321,49 +12298,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -12371,76 +12348,76 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver "s_license_number
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver s_license_number
 
 - prawo jazdy
 - prawa jazdy
 
-## <a name="poland-identity-card"></a>波兰恒等卡片
+## <a name="poland-identity-card"></a>波兰身份证
 
 ### <a name="format"></a>Format
 
@@ -12448,7 +12425,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-三个字母 (不区分大小写) 后跟六位数字
+三个字母 (不区分大小写) 后跟六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12475,16 +12452,16 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- Dowód osobisty
-- 器 dowodu osobistego
-- Nazwa i 器 dowodu osobistego
+- 百年版 osobisty
+- Numer dowodu osobistego
+- Nazwa i numer dowodu osobistego
 - Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- dow. os.
+- 。 os.
 
    
-## <a name="poland-national-id-pesel"></a>波兰国 ID (PESEL) 
+## <a name="poland-national-id-pesel"></a>波兰国家/ (PESEL) 
 
 ### <a name="format"></a>Format
 
@@ -12492,9 +12469,9 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="pattern"></a>模式
 
-- 表示出生日期的6个数字 YYMMDD 格式。
-- 4位数字
-- 1校验位
+- 6 个数字，表示 YYMMDD 格式的出生日期
+- 4 个数字
+- 1 个检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12528,19 +12505,19 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
-- dowód osobisty
-- dowódosobisty
-- niepowtarzalny 器
+- dowód osobisty
+- dowódosobisty
+- niepowtarzalny numer
 - niepowtarzalnynumer
 - nr.-pesel
 - nr-pesel
-- 器 identyfikacyjny
+- numer identyfikacyjny
 - pesel
-- tożsamości narodowej
+- tożsamości narodowej
 
    
 ## <a name="poland-passport-number"></a>波兰护照号码
-此敏感信息类型实体包含在欧盟护照号敏感信息类型中，可用作独立的敏感信息类型实体。
+此敏感信息类型实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -12576,12 +12553,12 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- 器 paszportu
-- Führerschein-nr. Paszportu
+- Numer paszportu
+- Nr. Paszportu
 - Paszport
 
 ## <a name="poland-regon-number"></a>波兰 REGON 号码
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -12590,15 +12567,15 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-9个数字或14个数字
+九位数或 14 位数字
 
 ### <a name="pattern"></a>模式
 
-9个数字或14位数字：
+九位数字或 14 位号码：
 
 - 九位数字或 
-- 九位数字
-- 号
+- 九个数字
+- 连字符
 - 五个数字
 
 ### <a name="checksum"></a>校验和
@@ -12608,11 +12585,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_polish_regon_number 找到与该模式匹配的内容。
-- 找到 Keywords_polish_regon_number 中的关键字。
+- 函数Func_polish_regon_number查找与模式匹配的内容。
+- 找到来自Keywords_polish_regon_number关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_polish_regon_number 找到与该模式匹配的内容。
+- 函数Func_polish_regon_number查找与模式匹配的内容。
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -12632,22 +12609,22 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - regon id
 - 统计数字
-- 统计 id
+- 统计 ID
 - 统计否
-- regon 编号
-- regonid#
+- regon number
+- reg一d#
 - regonno#
-- 公司 id
+- 公司 ID
 - companyid#
 - companyidno#
-- 器 statystyczny
+- numer statystyczny
 - numeru regon
 - numerstatystyczny#
 - numeruregon#
 
 
-## <a name="poland-tax-identification-number"></a>波兰纳税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="poland-tax-identification-number"></a>波兰税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -12656,7 +12633,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-11个不带空格或分隔符的数字
+11 个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
@@ -12669,8 +12646,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_poland_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_poland_eu_tax_file_number` 。 
+- 该  `Func_poland_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_poland_eu_tax_file_number` 关键字。 
     
   
 ```xml
@@ -12689,42 +12666,42 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - nip#
 - nip
-- 器 identyfikacji podatkowej
+- numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej#
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - vat id#
 - vat id
-- vat 编号
-- vat 号码
+- vat no
+- vat number
 - vatid#
 - vatid
 - vatno#
    
 
-## <a name="portugal-citizen-card-number"></a>葡萄牙公民卡片号码
+## <a name="portugal-citizen-card-number"></a>葡萄牙公民卡号
 
 ### <a name="format"></a>Format
 
-八位数字
+八个数字
 
 ### <a name="pattern"></a>模式
 
-八位数字
+八个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -12750,45 +12727,44 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
-- bilhete de identidade
+- 与 identidade
 - cartão de cidadão
-- 公民卡片
+- citizen card
 - 文档编号
 - documento de identificação
-- id 号
-- 标识否
+- id number
+- identification no
 - identification number
-- identity 卡片编号
+- identity card no
 - 标识卡号
-- 国家/地区 id 卡片
-- 网络
-- número bi de
-- número de identificação 民事
-- número de identificação 会计
+- national id card
+- nic
+- número bi de portugal
+- número de identificação
+- número de identificação fiscal
 - número do documento
-- 葡萄牙 bi 号码
+- portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>葡萄牙驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="portugal-drivers-license-number"></a>葡萄牙驾驶证号码
 
 ### <a name="format"></a>Format
 
-两个模式-两个字母后跟5-8 个包含特殊字符的数字
+两个模式 - 两个字母后跟 5-8 个数字（带特殊字符）
   
 ### <a name="pattern"></a>模式
 
-模式1：带有特殊字符的两个字母后跟5/6：
+模式 1：两个字母后跟 5/6 特殊字符：
 - 两个字母 (不区分大小写) 
 - 一个连字符 
 - 五个或六个数字
 - 一个空格
 - 一位数字
 
-模式2：一个字母后跟6/8 个数字，带有特殊字符：
+模式 2：一个字母后跟 6/8 个数字，带特殊字符：
 - 一个字母 (不区分大小写) 
 - 一个连字符 
-- 6或8位数字
+- 六个或八个数字
 - 一个空格
 - 一个数字
 
@@ -12800,8 +12776,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_portugal_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_portugal_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_portugal_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_portugal_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -12818,7 +12794,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -12826,49 +12802,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -12876,96 +12852,96 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver "s_license_number
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver s_license_number
 
-- carteira de motorista
-- carteira motorista
-- carteira de habilitação
-- carteira habilitação
+- cart cart de motorista
+- cart cart motorista
+- cart cart de habilitação
+- cart cart habilitação
 - número de licença
 - número licença
 - permissão de condução
 - permissão condução
-- Licença condução 葡萄牙
+- 葡萄牙利cença condução
 - carta de condução
 
 ## <a name="portugal-passport-number"></a>葡萄牙护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-一个字母后跟六个数字，不含空格或分隔符
+一个字母后跟六个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
 一个字母后跟六个数字：
   
 - 一个字母 (不区分大小写) 
-- 6位数字
+- 六个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -12974,8 +12950,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_portugal_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_portugal_eu_passport_number` 。 
+- 正则表达式  `Regex_portugal_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_portugal_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -12994,43 +12970,43 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
 - número do passaporte
-- 葡萄牙护照
-- 葡萄牙 passeport
-- 葡萄牙 passaporte
-- passaporte n º
-- passeport n º
+- 葡萄牙语 passport
+- 葡萄牙语传递
+- 葡萄牙语 passaporte
+- passaporte n eq
+- passeport n eq
 - números de passaporte
-- 葡萄牙 passports
+- 葡萄牙语护照
 - número passaporte
 - números passaporte
 
-## <a name="portugal-tax-identification-number"></a>葡萄牙税号标识号
+## <a name="portugal-tax-identification-number"></a>葡萄牙税务标识号
 
 ### <a name="format"></a>Format
 
-9个带可选空格的数字
+包含可选空格的九个数字
   
 ### <a name="pattern"></a>模式
 
-- 3位数
-- 一个可选空格
-- 3位数
-- 一个可选空格
-- 3位数
+- 3 个数字
+- 可选空格
+- 3 个数字
+- 可选空格
+- 3 个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -13039,11 +13015,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_portugal_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_portugal_eu_tax_file_number` 。 
+- 该  `Func_portugal_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_portugal_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_portugal_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_portugal_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Portugal Tax Identification Number -->
@@ -13064,30 +13040,29 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - cpf#
 - cpf
-- \n\n#
-- \n\n
+- nif#
+- nif
 - número de identificação fisca
-- numero 会计
+- numero fiscal
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
-## <a name="romania-drivers-license-number"></a>罗马尼亚驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="romania-drivers-license-number"></a>罗马尼亚驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -13097,7 +13072,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 一个字符后跟八个数字：
 - 一个字母 (不区分大小写) 或数字 
-- 八位数字
+- 八个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -13106,8 +13081,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_romania_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_romania_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_romania_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_romania_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Romania Driver's License Number -->
@@ -13124,7 +13099,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -13132,49 +13107,49 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -13182,71 +13157,71 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver "s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver s_license_number
 
 - permis de conducere
 - permisului de conducere
@@ -13256,7 +13231,7 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 - permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>罗马尼亚个人数字代码 (CNP) 
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -13265,14 +13240,14 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 ### <a name="format"></a>Format
 
-13位数，不含空格和分隔符
+13 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-- 1-9 的1位数字
-- 代表出生日期 (YYMMDD 的6个数字) 
-- 2位数，可以为01-52 或99
-- 4位数字
+- 1 位到 9 位
+- 表示 YYMMDD (出生日期的 6 个数字) 
+- 2 个数字，可以是 01-52 或 99
+- 4 个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13281,11 +13256,11 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_romania_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_romania_eu_national_id_card` 。 
+- 该  `Func_romania_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_romania_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_romania_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_romania_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Romania Personal Numerical Code (CNP) -->
@@ -13306,63 +13281,63 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 - cnp#
 - cnp
-- 货到 identificare 个人
-- 付款的个人数字
-- 货到付款 unic identificare
+- cod identificare personal
+- cod numeric personal
+- cod unic identificare
 - codnumericpersonal#
-- codul 会计 nr。
-- identificarea fiscală nr#
+- codul fiscal nr.
+- identificarea fiscal#
 - id-ul taxei
-- 保险号
+- insurance number
 - insurancenumber#
-- 国家/地区 id#
+- national id#
 - national id
 - national identification number
-- număr identificare 个人
-- număr identitate
-- număr 个人 unic
-- număridentitate#
-- număridentitate
-- numărpersonalunic#
-- numărpersonalunic
-- număru de identificare fiscală
-- numărul de identificare fiscală
+- numr identificare personal
+- numr identitate
+- numr 个人 unic
+- numridentitate#
+- numridentitate
+- numrpersonalunic#
+- numrpersonalunic
+- num？ru de identificare fiscal
+- numrrul de identificare fiscal
 - 个人数字代码
-- 针#
-- 针
-- 税文件编号
+- pin#
+- pin
+- tax file no
 - tax file number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 - 唯一标识号
 - 唯一标识号
 - uniqueidentityno#
 - uniqueidentityno
 
 ## <a name="romania-passport-number"></a>罗马尼亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-八个或9个数字，不含空格和分隔符
+八个或九个数字，不带空格和分隔符
   
 ### <a name="pattern"></a>模式
 
-8或9个数字
+八个或九个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -13371,8 +13346,8 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_romania_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_romania_eu_passport_number` 。 
+- 正则表达式  `Regex_romania_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_romania_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -13391,23 +13366,23 @@ Dictionary_icd_9_codes 关键字词典中的任何术语，基于 [国际分类�
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
+numrul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
-## <a name="russia-passport-number-domestic"></a>俄罗斯护照号码（国内）
-此敏感信息类型仅可用于以下内容：
+## <a name="russia-passport-number-domestic"></a>俄罗斯护照号码国内
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -13416,17 +13391,17 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-10位数字
+十位数字
 
 ### <a name="pattern"></a>模式
 
-10位数字：
+十位数字：
 
-- 两位数
+- 两个数字
 - 可选空格或连字符
-- 两位数
-- 一个可选空格
-- 6位数字
+- 两个数字
+- 可选空格
+- 六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13435,8 +13410,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_Russian_Passport_Number_Domestic 找到与该模式匹配的内容。
-- 找到 Keyword_Russian_Passport_Number 中的关键字。
+- 正则表达式Regex_Russian_Passport_Number_Domestic查找与模式匹配的内容。
+- 找到来自Keyword_Russian_Passport_Number的关键字。
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -13453,23 +13428,23 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - passport number
-- 护照号
-- 登记卡#
-- 护照 id
+- passport no
+- passport#
+- passport id
 - passportno#
 - passportnumber#
 - паспорт нет
-- паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- ？
+- pоссийской 请访问
+- pусский <pусский </pусский>
 - паспорт#
-- паспортid#
+- id#
 - номер паспорта
 - номерпаспорта#
 
 
-## <a name="russia-passport-number-international"></a>俄罗斯护照号码（国际）
-此敏感信息类型仅可用于以下内容：
+## <a name="russia-passport-number-international"></a>俄罗斯护照号码国际
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -13478,15 +13453,15 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-九位数字
+九位数
 
 ### <a name="pattern"></a>模式
 
-9位数字：
+九位数字：
 
-- 两位数
+- 两个数字
 - 可选空格或连字符
-- 七位数字
+- 七个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13495,8 +13470,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_Russian_Passport_Number_International 找到与该模式匹配的内容。
-- 找到 Keyword_Russian_Passport_Number 中的关键字。
+- 正则表达式Regex_Russian_Passport_Number_International查找与模式匹配的内容。
+- 找到来自Keyword_Russian_Passport_Number的关键字。
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -13513,17 +13488,17 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
 - passport number
-- 护照号
-- 登记卡#
-- 护照 id
+- passport no
+- passport#
+- passport id
 - passportno#
 - passportnumber#
 - паспорт нет
-- паспорт id
-- pоссийской паспорт
-- pусский номер паспорта
+- ？
+- pоссийской 请访问
+- pусский <pусский </pусский>
 - паспорт#
-- паспортid#
+- id#
 - номер паспорта
 - номерпаспорта#
 
@@ -13532,11 +13507,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-10位数字
+十个数字
 
 ### <a name="pattern"></a>模式
 
-10个连续数字
+十个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13570,7 +13545,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - الوطنية الهوية بطاقة رقم 
 
    
-## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家注册标识卡片 (NRIC) 号码
+## <a name="singapore-national-registration-identity-card-nric-number"></a>新加坡国家/ (身份证号码) NRIC
 
 ### <a name="format"></a>Format
 
@@ -13579,9 +13554,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 - 九个字母和数字：
-- 字母 "F"、"G"、"S" 或 "T" (不区分大小写)  
-- 七位数字 
-- 字母校验位
+- 字母"F"、"G"、"S"或"T" (不区分大小写)  
+- 七个数字 
+- 字母检查数字
 
 ### <a name="checksum"></a>校验和
 
@@ -13622,10 +13597,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - Foreign Identification Number 
 - FIN 
 - 身份证 
-- 證 
+- 身份證 
 
-## <a name="slovakia-drivers-license-number"></a>斯洛伐克驾照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="slovakia-drivers-license-number"></a>斯洛伐克驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -13636,7 +13610,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 一个字符后跟七个数字
   
 - 一个字母 (不区分大小写) 或数字
-- 七位数字 
+- 七个数字 
     
 ### <a name="checksum"></a>校验和
 
@@ -13645,8 +13619,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_slovakia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_slovakia_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_slovakia_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_slovakia_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -13663,7 +13637,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -13671,49 +13645,49 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -13721,79 +13695,79 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver "s_license_number
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver s_license_number
 
-- vodičský preukaz
-- vodičské preukazy
-- vodičského preukazu
-- vodičských preukazov
+- vodi-sks pre一z
+- vodi-ské pre一zy
+- vodiéského pre一zu
+- vodi≥sk？ch pre一zov
 
-## <a name="slovakia-personal-number"></a>斯洛伐克个人号码
-此敏感信息类型仅可用于以下内容：
+## <a name="slovakia-personal-number"></a>斯洛伐克个人编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -13802,14 +13776,14 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-九或十个数字，包含可选反斜杠
+包含可选反反杠的九个或十个数字
   
 ### <a name="pattern"></a>模式
 
-- 代表出生日期的6个数字
-- 可选的斜杠 (/) 
-- 3位数
-- 1可选校验位
+- 6 个数字，表示出生日期
+- 可选斜杠 (/) 
+- 3 个数字
+- 1 个可选检查数字
   
 ### <a name="checksum"></a>校验和
 
@@ -13818,11 +13792,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovakia_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_slovakia_eu_national_id_card` 。 
+- 该  `Func_slovakia_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_slovakia_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovakia_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_slovakia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Slovakia Personal Number -->
@@ -13842,61 +13816,61 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
-- 出生号码
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
-- id 号
-- 标识否
+- azonosítá szám
+- birth number
+- ííslo národnej identifánej karty
+- ííslo obianského prezuzu
+- daé ííslo
+- id number
+- identification no
 - identification number
-- identifikačná karta č
-- identifikačné číslo
-- identity 卡片编号
+- identifáná gam á
+- identifíné ííslo
+- identity card no
 - 标识卡号
-- národná identifikačná značka č
-- 国家/地区号码
+- národná identifáná znaáka á
+- national number
 - nationalnumber#
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvcioy
 - personalidnumber#
-- rč
+- r-
 - rodne cislo
-- rodné číslo
+- rodné ííslo
 - social security number
 - ssn#
 - ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
-- 税文件编号
+- személyi igazolvméy szám
+- személyi igazolvméy száma
+- személymézolvlvy szám
+- tax file no
 - tax file number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 ## <a name="slovakia-passport-number"></a>斯洛伐克护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-一个数字或字母后跟七个数字，不含空格或分隔符
+一个数字或字母后跟七个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-一个数字或字母 (不区分大小写) 后跟七位数字
+一个数字或字母 (区分大小写) 后跟七个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -13905,8 +13879,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_slovakia_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_slovakia_eu_passport_number` 。 
+- 正则表达式  `Regex_slovakia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_slovakia_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -13925,35 +13899,34 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- číslo pasu
-- čísla pasov
-- pas č。
-- Passeport n °
-- n ° Passeport
+- ííslo pasu
+- íísla pasov
+- pas pas.
+- Passeport n°
+- n° 传递
 
-## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驱动程序的许可证编号
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="slovenia-drivers-license-number"></a>斯洛文尼亚驾驶证号码
 
 ### <a name="format"></a>Format
 
-9个数字，不带空格和分隔符
+不带空格和分隔符的九个数字
   
 ### <a name="pattern"></a>模式
 
-九位数字
+九个数字
   
 ### <a name="checksum"></a>校验和
 
@@ -13962,8 +13935,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_slovenia_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_slovenia_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_slovenia_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_slovenia_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -13980,7 +13953,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -13988,49 +13961,49 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -14038,80 +14011,80 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver "s_license_number
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver s_license_number
 
-- vozniško dovoljenje
-- vozniška številka 许可证
-- vozniških dovoljenj
-- številka vozniškega dovoljenja
-- številke vozniških dovoljenj
+- voznininiko dovoljenje
+- vozni-ka 1tevilka licence
+- voznininikih dovoljenj
+- -tevilka voznininikega dovoljenja
+- ？tevilke voznininikih dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛文尼亚唯一主公民号码
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -14120,16 +14093,16 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-13位数，不含空格或分隔符
+13 个数字，不带空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-指定模式中的13个数字：
+指定模式中的 13 个数字：
   
-- 与出生日期 (DDMMLLL) 的七位数，其中 "LLL" 对应于出生年份的后三个数字 
-- 两个数字，对应于出生区域 "50"
-- 三个数字，对应于出生在同一天的人的性别和序列号组合， (000-499 的男和500-999 的插孔) 
-- 一个校验位
+- 对应于 DDMMLLL (的七个数字) 其中"LLL"对应于出生日期的最后三个数字 
+- 对应于出生日期"50"的两个数字
+- 三个数字，对应于同一天（男性为 (000-499）和 500-999（对于男性）的性别和序列号) 
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -14138,11 +14111,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovenia_eu_national_id_card` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_slovenia_eu_national_id_card` 。 
+- 该  `Func_slovenia_eu_national_id_card` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_slovenia_eu_national_id_card` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovenia_eu_national_id_card` 找到与该模式匹配的内容。 
+- 该  `Func_slovenia_eu_national_id_card` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Slovenia Unique Master Citizen Number -->
@@ -14161,12 +14134,12 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
-- emšo
-- enotna maticna številka obcana
+- edinstvena 1tevilka gvilnega dr-avljana
+- em-o
+- enotna maticna matictevilka obcana
 - id card
 - identification number
-- identifikacijska številka
+- identifkacijska 0tevilka
 - identity card
 - nacionalna id
 - nacionalni potni 列表
@@ -14174,33 +14147,33 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - osebna izkaznica
 - osebni koda
 - osebni ne
-- osebni številka
+- osebni ？tevilka
 - 个人代码
 - 个人号码
 - 个人数字代码
-- številka državljana
-- 唯一公民编号
-- 唯一 id 号
+- -tevilka dr-avljana
+- unique citizen number
+- 唯一 ID 号
 - 唯一标识号
-- 唯一的主公民号码
-- 唯一注册号码
+- 唯一主公民编号
+- 唯一注册号
 - uniqueidentityno#
 - uniqueidentityno#
 
 ## <a name="slovenia-passport-number"></a>斯洛文尼亚护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-两个字母后跟七个数字，不含空格或分隔符
+两个字母后跟七个数字，没有空格或分隔符
   
 ### <a name="pattern"></a>模式
 
 两个字母后跟七个数字：
   
-- 字母 "P"
-- 一个大写字母
-- 七位数字
+- 字母"P"
+- 一个小写字母
+- 七个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -14209,8 +14182,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_slovenia_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_slovenia_eu_passport_number` 。 
+- 正则表达式  `Regex_slovenia_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_slovenia_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -14229,28 +14202,28 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- številka potnega lista
+- 以tevilka potnega lista
 - potek veljavnosti
 - potni 列表#
-- 基准 rojstva
+- datum rojstva
 - potni 列表
-- številke potnih listov
+- -tevilke potnih listov
 
-## <a name="slovenia-tax-identification-number"></a>斯洛文尼亚税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="slovenia-tax-identification-number"></a>斯洛文尼亚税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -14259,13 +14232,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-8位数，不含空格或分隔符
+八个数字，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-- 一个从1-9 的数字
-- 6位数字
-- 一个校验位
+- 一个数字，从 1 到 9
+- 六个数字
+- 一个检查数字
   
 ### <a name="checksum"></a>校验和
 
@@ -14274,11 +14247,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovenia_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_slovenia_eu_tax_file_number` 。 
+- 该  `Func_slovenia_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_slovenia_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_slovenia_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_slovenia_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Slovenia Tax Identification Number -->
@@ -14297,30 +14270,30 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
-- 税文件编号
+- dav-na 以tevilka
+- identifkacijska 0tevilka davka
+- gamtevilka dav-ne datoatoatoe
+- tax file no
 - tax file number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
-## <a name="south-africa-identification-number"></a>南非身份证号码
+## <a name="south-africa-identification-number"></a>南非标识号
 
 ### <a name="format"></a>Format
 
@@ -14329,11 +14302,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 6位数，格式为 YYMMDD，表示出生日期 
-- 四位数 
-- 一位公民指示器 
-- 数字 "8" 或 "9" 
-- 一个数字，是校验和数字
+- 六个数字，格式为 YYMMDD，表示出生日期 
+- 四个数字 
+- 单数字公民指示符 
+- 数字"8"或"9" 
+- 一个数字，即校验和数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14362,7 +14335,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - Identity card
 - ID
-- Id 
+- 标识 
    
 ## <a name="south-korea-resident-registration-number"></a>韩国居民注册号码
 
@@ -14373,12 +14346,12 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 6位数，格式为 YYMMDD，表示出生日期 
+- 六个数字，格式为 YYMMDD，表示出生日期 
 - 连字符 
-- 由世纪和性别确定的一位数字 
-- 四位数的出生区域代码 
-- 一种用于区分上述号码相同的人员的数字 
-- 校验位。
+- 由世纪和性别确定的一个数字 
+- 四位数的出生日期区域代码 
+- 一个数字，用于区分前面数字完全相同的人 
+- 一个检查数字。
 
 ### <a name="checksum"></a>校验和
 
@@ -14418,18 +14391,17 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - RRN 
 - 주민등록번호
 
-## <a name="spain-drivers-license-number"></a>西班牙驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="spain-drivers-license-number"></a>西班牙驾驶证号码
 
 ### <a name="format"></a>Format
 
-8位数，后跟一个字符
+八个数字后跟一个字符
   
 ### <a name="pattern"></a>模式
 
-8位数，后跟一个字符：
+八个数字后跟一个字符：
   
-- 八位数字 
+- 八个数字 
 - 一个数字或字母 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
@@ -14439,11 +14411,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_spain_eu_driver's_license_number` 。 
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_spain_eu_driver's_license_number` 的关键字。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
     
 ```xml
       <!-- Spain Driver's License Number -->
@@ -14473,7 +14445,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -14481,49 +14453,49 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -14531,87 +14503,87 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver "s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver s_license_number
 
 - permiso de conducción
 - permiso conducción
-- licencia de conducir
-- licencia conducir
+- licencia de condcenr
+- licencia condcenr
 - permiso conducir
-- permiso de conducir
-- permisos de conducir
-- permisos conducir
+- permiso de cond一r
+- permisos de condcior
+- permisos condcior
 - carnet conducir
 - carnet de conducir
 - licencia de manejo
 - licencia manejo
 
 ## <a name="spain-dni"></a>西班牙 DNI
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -14620,15 +14592,15 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-8位数，后跟一个字符
+八个数字后跟一个字符
   
 ### <a name="pattern"></a>模式
 
-七位数字后跟一个字符
+七个数字后跟一个字符
   
-- 八位数字
+- 八个数字
 - 可选空格或连字符
-- 一个检查信函 (不区分大小写) 
+- 一个检查 (不区分大小写) 
     
 ### <a name="checksum"></a>校验和
 
@@ -14637,11 +14609,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_spain_eu_national_id_card"` 。 
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_spain_eu_national_id_card"` 关键字。 
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与该模式匹配的内容。 
+- 函数  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 查找与模式匹配的内容。 
 
     
 ```xml
@@ -14675,9 +14647,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - documento nacional de identidad
 - identidad único
 - identidadúnico#
-- 保险号
+- insurance number
 - national identification number
-- 国家标识
+- national identity
 - nationalid#
 - nationalidno#
 - nie#
@@ -14686,24 +14658,24 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - número de identificación
 - número nacional identidad
 - 个人标识号
-- 个人标识编号
+- 个人标识否
 - 唯一标识号
 - uniqueid#
 
 ## <a name="spain-passport-number"></a>西班牙护照号码
-此敏感信息类型实体仅适用于欧盟护照号敏感信息类型。
+此敏感信息类型实体仅在欧盟护照号码敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-八个或九个字符的字母和数字的组合，不带空格或分隔符
+字母和数字的八字符或九字符组合，无空格或分隔符
   
 ### <a name="pattern"></a>模式
 
-字母和数字的八个或九个字符的组合：
+字母和数字的八字符或九字符组合：
   
-- 两位数字或字母 
+- 两个数字或字母 
 - 一个数字或字母 (可选) 
-- 6位数字
+- 六个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -14712,8 +14684,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_spain_eu_passport_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_passport_number_common` `Keywords_spain_eu_passport_number` 。 
+- 正则表达式  `Regex_spain_eu_passport_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_passport_number_common` 找到 `Keywords_spain_eu_passport_number` 的关键字。 
     
 ```xml
  <!-- EU Passport Number -->
@@ -14732,35 +14704,35 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- 登记卡#
-- 登记卡#
+- passport#
+- passport#
 - passportid
 - passports
 - passportno
-- 护照号
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
-- 护照号码
+- passport numbers
 
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
 - libreta pasaporte
 - número pasaporte
-- 西班牙 pasaporte
+- espa？a pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
 - pasaporte no
-- Passeport n °
-- n ° Passeport
-- pasaporte。
-- pasaporte n °
+- Passeport n°
+- n° 传递
+- pasaporte no.
+- pasaporte n°
 - 西班牙护照
 
 
-## <a name="spain-social-security-number-ssn"></a> (SSN) 的西班牙社会安全号码
-此敏感信息类型实体包含在欧盟社会保险号或等效 ID 敏感信息类型中，可用作独立的敏感信息类型实体。
+## <a name="spain-social-security-number-ssn"></a>西班牙社会保险号码 (SSN) 
+此敏感信息类型实体包含在欧盟社会保险号或等效 ID 敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -14768,12 +14740,12 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="pattern"></a>模式
 
-11-12 位数：
-- 两位数 
-- 可选) 的正斜杠 ( 
-- 七到八位数字 
-- 可选) 的正斜杠 ( 
-- 两位数
+11-12 个数字：
+- 两个数字 
+- 可选 (斜杠)  
+- 七到八个数字 
+- 可选 (斜杠)  
+- 两个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -14798,8 +14770,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 无
 
-## <a name="spain-tax-identification-number"></a>西班牙纳税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="spain-tax-identification-number"></a>西班牙税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -14808,38 +14780,38 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-七个或8个数字以及指定模式中的一个或两个字母
+指定模式中七个或八个数字以及一个或两个字母
   
 ### <a name="pattern"></a>模式
 
-具有西班牙国家标识卡片的西班牙语自然人：
+拥有西班牙国家身份证的西班牙自然人：
   
-- 八位数字 
-- 一个大写字母 (区分大小写)  
+- 八个数字 
+- 一个小写字母 (区分大小写)  
     
-不包含西班牙国家的非居民 Spaniards 国家标识卡片
+没有西班牙国家身份证的非居民西班牙人
   
-- 一个大写的字母 "L" (区分大小写) 
-- 七位数字
-- 一个大写字母 (区分大小写)  
+- 一个小写字母"L" (区分大小写) 
+- 七个数字
+- 一个小写字母 (区分大小写)  
     
-在没有西班牙国内身份证的14年年龄下的居民 Spaniards：
+没有西班牙国家身份证的 14 岁以下的儿童居民：
   
-- 一个大写的字母 "K" (区分大小写) 
-- 七位数字 
-- 一个大写字母 (区分大小写) 
+- 一个小写字母"K" (区分大小写) 
+- 七个数字 
+- 一个小写字母 (区分大小写) 
     
-带有 Foreigner 标识号的 Foreigners
+具有一个百万美元标识号的百万美元
   
-- 一个大写的字母，为 "X"、"Y" 或 "Z" (区分大小写)  
-- 七位数字
-- 一个大写字母 (区分大小写)  
+- 一个区分大小写的大写字母"X"、"Y"或"Z" (区分大小写)  
+- 七个数字
+- 一个小写字母 (区分大小写)  
     
-没有 Foreigner 标识号的 Foreigners
+没有一个百万的标识号的亿元
   
-- 一个大写字母为 "M" (区分大小写)  
-- 七位数字
-- 一个大写字母 (区分大小写)  
+- 一个区分大小写的大写字母"M" (区分大小写)  
+- 七个数字
+- 一个小写字母 (区分大小写)  
     
 ### <a name="checksum"></a>校验和
 
@@ -14848,11 +14820,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_spain_eu_tax_file_number` 。 
+- 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。 
+- 找到一个  `Keywords_spain_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与该模式匹配的内容。 
+- 函数  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 查找与模式匹配的内容。 
     
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -14882,47 +14854,47 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - cifid#
 - cifnúmero#
 - número de contribuyente
-- número de identificación 会计
+- número de identificacú fiscal
 - número de impuesto corporativo
 - spanishcifid#
 - spanishcifid
 - spanishcifno#
 - spanishcifno
-- 税文件编号
+- tax file no
 - tax file number
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
-## <a name="sql-server-connection-string"></a>SQL Server 连接字符串
+## <a name="sql-server-connection-string"></a>SQL Server连接字符串
 
 ### <a name="format"></a>Format
 
-字符串 "User Id"、"User ID"、"uid" 或 "UserId"，后跟下面模式中所述的字符和字符串。
+字符串"User Id"、"User ID"、"uid"或"UserId"后跟以下模式中列出的字符和字符串。
 
 ### <a name="pattern"></a>模式
 
-- 字符串 "User Id"、"User ID"、"uid" 或 "UserId"
-- 介于1-200 个字母、数字、符号、特殊字符或空格之间的任意组合
-- 字符串 "Password" 或 "pwd"，其中 "pwd" 不以小写字母开头
+- 字符串"User Id"、"User ID"、"uid"或"UserId"
+- 1-200 位小写字母或大写字母、数字、符号、特殊字符或空格之间的任意组合
+- 字符串"Password"或"pwd"，其中"pwd"的前面没有小写字母
 - 等号 (=) 
-- 不是美元符号 ($) 的任何字符、百分比符号 (% ) 、大于符号 ( # A0) 、符号 ( @ ) 、引号 ( ") 、分号 (、) 、左大括号 ( [) 或左括号 ( {) 
-- 7-128 个不是分号的字符的任意组合 (; ) 、正斜杠 (/) 或引号 ( ") 
-- 分号 (; ) 或引号 ( ") 
+- 不是美元符号 ($) 、百分比符号 (%) 、大于符号 (>) 、符号为 (@) 、引号 (") 、分号 (;) 、左大括号 ([) 或左括号 ({) 
+- 7-128 个字符（不是分号 (;) 、正斜杠 (/) 或引号 (") 
+- 分号 (;) 或引号 (") 
 
 ### <a name="checksum"></a>校验和
 
@@ -14931,10 +14903,10 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 正则表达式 CEP_Regex_SQLServerConnectionString 找到与该模式匹配的内容。
-- 找 **不** 到 CEP_GlobalFilter 中的关键字。
-- 正则表达式 **CEP_PasswordPlaceHolder 不会找到与** 该模式匹配的内容。
-- 正则表达式 **CEP_CommonExampleKeywords 不会找到与** 该模式匹配的内容。
+- 正则表达式CEP_Regex_SQLServerConnectionString查找与模式匹配的内容。
+- 未找到CEP_GlobalFilter **关键字** 。
+- 正则表达式CEP_PasswordPlaceHolder **找不到** 与模式匹配的内容。
+- 正则表达式CEP_CommonExampleKeywords **找不到** 与模式匹配的内容。
 
 ```sql
 <!---SQL Server Connection String>
@@ -14954,50 +14926,49 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
-- 部分密码
+- some-password
 - somepassword
 - secretPassword
-- 采用
+- 示例
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 密码或密码后跟0-2 个空格、一个等号 (=) 、0-2 空格和一个星号 ( * ) --或--------------
-- 密码或密码后跟：
+- 密码或 pwd 后跟 0-2 个空格、等号 (=) 、0-2 个空格和星号 (*) --OR--
+- 密码或 pwd 后跟：
     - 等号 (=) 
-    - 小于符号 ( # A0) 
-    - 1-200 个字符的任意组合，这些字符为大写或小写字母、数字、星号 ( * ) 、连字符 ( ) 、下划线 (_) 或空白字符
-    - 大于符号 ( # A0) 
+    - 小于符号 (<) 
+    - 大写或小写字母、数字、星号 (*) 、连字符 (-) 、下划线 (_) 或空格字符的 1-200 个字符的任意组合
+    - 大于符号 (>) 
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
- (请注意，从技术上讲，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。 ) 
+ (请注意，从技术上说，此敏感信息类型通过使用正则表达式（而不是关键字列表）来标识这些关键字。) 
 
-- 尚未
-- 送交
-- 罗斯
+- contoso
+- fabrikam
+- northwind
 - 沙盒
 - onebox
 - localhost
 - 127.0.0.1
-- testacs.<!--no-hyperlink-->com
-- s-int。<!--no-hyperlink-->netmeeting
+- testacs。<!--no-hyperlink-->com
+- s-int。<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>瑞典驾驶执照号码
-此敏感信息类型实体仅适用于欧盟驾驶执照号码的敏感信息类型。
+## <a name="sweden-drivers-license-number"></a>瑞典驾驶证号码
 
 ### <a name="format"></a>Format
 
-10个数字，包含连字符
+包含连字符的十个数字
   
 ### <a name="pattern"></a>模式
 
-10位数，包含连字符：
+包含连字符的十个数字：
   
-- 6位数字 
+- 六个数字 
 - 连字符
-- 四位数
+- 四个数字
     
 ### <a name="checksum"></a>校验和
 
@@ -15006,8 +14977,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式  `Regex_sweden_eu_driver's_license_number` 找到与该模式匹配的内容。 
-- 找到或中的关键字  `Keywords_eu_driver's_license_number` `Keywords_sweden_eu_driver's_license_number` 。 
+- 正则表达式  `Regex_sweden_eu_driver's_license_number` 查找与模式匹配的内容。 
+- 找到或  `Keywords_eu_driver's_license_number` 找到 `Keywords_sweden_eu_driver's_license_number` 的关键字。 
     
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -15024,7 +14995,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="keywords"></a>关键字
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver "s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver s_license_number
 
 - driverlic
 - driverlics
@@ -15032,49 +15003,49 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses
 - driverlicence
 - driverlicences
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- driver lic
+- 驱动程序 lics
 - driver license
 - driver licenses
-- 驱动程序许可证
-- 驱动程序许可证
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- 驱动程序许可证
-- 驱动程序 driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- 驱动程序许可
+- drivers licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
 - driver'licence
 - driver'licences
-- 驱动程序 "许可证
-- 驱动程序 "driver'lics
-- 驱动程序 ' license
-- 驱动程序的许可证
-- 驱动程序 ' 许可证
-- 驱动程序 ' 许可证
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- 驱动程序的许可证
-- 驱动程序的 driver'lics
+- driver's lic
+- driver'slics
 - driver's license
 - driver's licenses
 - driver's licence
-- 驾驶许可
-- 通讯#
+- driver's licences
+- dl#
 - dls#
 - driverlic#
 - driverlics#
@@ -15082,97 +15053,97 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driverlicenses#
 - driverlicence#
 - driverlicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
+- driver lic#
+- 驱动程序 lics#
+- driver license#
+- driver licenses#
+- driver licences#
 - driverslic#
 - driverslics#
 - driverslicense#
 - driverslicenses#
 - driverslicence#
 - driverslicences#
-- 驱动程序许可证#
-- 驱动程序 driver'lics#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可证#
-- 驱动程序许可#
+- drivers lic#
+- drivers lics#
+- drivers license#
+- drivers licenses#
+- drivers licence#
+- drivers licences#
 - driver'lic#
 - driver'lics#
 - driver'license#
 - driver'licenses#
 - driver'licence#
 - driver'licences#
-- 驱动程序 "许可证#
-- 驱动程序 "driver'lics#
-- 驱动程序 ' license#
-- 驱动程序的许可证#
-- 驱动程序 ' 许可证#
-- 驱动程序 ' 许可证#
+- driver' lic#
+- driver' lics#
+- driver' license#
+- driver' licenses#
+- driver' licence#
+- driver' licences#
 - driver'slic#
 - driver'slics#
 - driver'slicense#
 - driver'slicenses#
 - driver'slicence#
 - driver'slicences#
-- 驱动程序的许可证#
-- 驱动程序的 driver'lics#
-- 驾驶执照#
-- 驾驶许可证#
-- 驾驶许可证#
-- 驾驶许可#
+- driver's lic#
+- driver'slics#
+- driver's license#
+- driver's licenses#
+- driver's licence#
+- driver's licences#
 - driving licence 
 - driving license
 - dlno#
-- driv 许可证
+- driv lic
 - driv licen
 - driv 许可证
 - driv 许可证
-- driv 许可证
-- driv 许可证
-- 驱动程序 licen
-- 驱动程序 licen
-- 驱动程序的 licen
-- 驾驶许可证
-- 驾驶 licen
-- 驾驶许可证
+- driv licence
+- driv licences
+- driver licen
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- 促进允许
+- 驾驶许可证
 - dl no
 - dlno
-- dl 编号
+- dl number
 
 
-#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver "s_license_number
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver s_license_number
 
 - ajokortti
 - permis de conducere
 - ajokortin numero
-- kuljettajat 许可证。
-- drivere 许可证。
+- kuljettajat lic.
+- drivere lic。
 - körkort
-- numărul permisului de conducere
+- numrul permisului de conducere
 -  שאָפער דערלויבעניש נומער
-- förare 许可证。
+- förare lic.
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
-## <a name="sweden-national-id"></a>瑞典国家 ID
+## <a name="sweden-national-id"></a>瑞典国家/区 ID
 
 ### <a name="format"></a>Format
 
-10或12个数字和一个可选分隔符
+10 位或 12 位和可选分隔符
 
 ### <a name="pattern"></a>模式
 
-10或12个数字和一个可选分隔符：
+10 位或 12 位以及可选分隔符：
 - 两个数字 (可选)  
 - 采用日期格式 YYMMDD 的六位数字 
-- "-" 或 "+" 的分隔符 (可选) 
-- 四位数
+- "-"或"+"分隔符 (可选) 
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15181,12 +15152,12 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 `Func_swedish_national_identifier` 找到与该模式匹配的内容。
-- 找到了 from 关键字 `Keywords_swedish_national_identifier`
+- 该 `Func_swedish_national_identifier` 函数查找与模式匹配的内容。
+- 找到一个 `Keywords_swedish_national_identifier` 关键字
 - 校验和通过。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 `Func_swedish_national_identifier` 找到与该模式匹配的内容。
+- 该 `Func_swedish_national_identifier` 函数查找与模式匹配的内容。
 - 校验和通过。
 
 
@@ -15207,33 +15178,33 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
-- id 号
-- id 号
-- 号#
-- 标识否
+- id no
+- id number
+- id#
+- identification no
 - identification number
 - identifikationsnumret#
 - identifikationsnumret
 - identitetshandling
 - 标识文档
 - identity no
-- 标识号码
+- 标识号
 - id-nummer
-- 个人 id
+- 个人 ID
 - personnummer#
 - personnummer
-- skatteidentifikationsnummer
+- identteidentifikationsnummer
    
 ## <a name="sweden-passport-number"></a>瑞典护照号码
-此敏感信息类型实体包含在欧盟护照号敏感信息类型中，可用作独立的敏感信息类型实体。
+此敏感信息类型实体包含在欧盟护照号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
-八位数字
+八个数字
 
 ### <a name="pattern"></a>模式
 
-八个连续数字
+八个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15242,10 +15213,10 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_sweden_passport_number 找到与该模式匹配的内容。
-- 满足以下条件之一：
-    - 找到 Keyword_passport 中的关键字。
-    - 找到 Keyword_sweden_passport 中的关键字。
+- 正则表达式Regex_sweden_passport_number查找与模式匹配的内容。
+- 下列情况之一为 true：
+    - 找到Keyword_passport关键字。
+    - 找到Keyword_sweden_passport关键字。
 
 ```xml
 <!-- Sweden Passport Number -->
@@ -15279,14 +15250,14 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - Passport Number 
 - Passport No 
 - Passport # 
-- 登记卡# 
+- Passport# 
 - PassportID 
 - Passportno 
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- パスポのnum 
+- パスポート# 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -15296,21 +15267,21 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - Passeportn ° 
 
 ## <a name="sweden-social-security-number-or-equivalent-identification"></a>瑞典社会保险号或等效标识
-此敏感信息类型实体仅适用于欧盟社会保险号码或等效 ID 敏感信息类型。
+此敏感信息类型实体仅在欧盟社会保险号或等效 ID 敏感信息类型中可用。
 
 ### <a name="format"></a>Format
 
-12个数字，不含空格和分隔符
+12 个数字，不含空格和分隔符
   
 ### <a name="pattern"></a>模式
 
 12 个数字：
   
-- 对应于出生日期 (YYYYMMDD) 的8位数字 
-- 与序列号对应的三个数字，其中： 
-  - 序列号中的最后一个数字指示在为 "男" 分配一个奇数号码时的性别，以及一个 "女" 的偶数号码。
-  - 最多1990，将序列号 corresponded 分配给那些号码的持有者出生或 (的县。如果在 1947) 之前出生，则根据纳税记录在年1月1日的) 使用特殊代码 (通常为9的 immigrants 的1947第七位数字 
-- 一个校验位
+- 对应于 YYYYMMDD (出生日期的八个数字)  
+- 三个数字，对应于一个序列号，其中： 
+  - 序列号中的最后一个数字通过为男性分配奇数和偶数表示性别
+  - 截至 1990 年，序列号的分配对应于该号码的拥有人在 1947 年 1 月 1 日) 其生活地点为 1947 年 1 月 1 日 (该号码的拥有人所基于的省/市/县，特殊代码 (通常为 9 作为) 第 7 位 
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -15319,11 +15290,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_sweden_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_sweden_eu_ssn_or_equivalent` 。 
+- 该  `Func_sweden_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_sweden_eu_ssn_or_equivalent` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_sweden_eu_ssn_or_equivalent` 找到与该模式匹配的内容。 
+- 该  `Func_sweden_eu_ssn_or_equivalent` 函数查找与模式匹配的内容。 
     
 ```xml
  <!-- EU SSN or Equivalent Number -->
@@ -15342,12 +15313,12 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
-- 个人 id 号
+- 个人 ID 号
 - identification number
-- 个人 id 否
+- 个人 ID 否
 - identity no
-- 标识否
-- 个人标识编号
+- identification no
+- 个人标识否
 - personnummer id
 - personligt id-nummer
 - unikt id-nummer
@@ -15356,8 +15327,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - personnummer#
 - identifikationsnumret#
 
-## <a name="sweden-tax-identification-number"></a>瑞典纳税标识号
-此敏感信息类型仅可用于以下内容：
+## <a name="sweden-tax-identification-number"></a>瑞典税务标识号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -15366,18 +15337,18 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-10个数字和指定模式中的符号
+10 个数字和指定模式中的符号
   
 ### <a name="pattern"></a>模式
 
-10个数字和一个符号：
+10 个数字和一个符号：
   
-- 与出生日期 (YYMMDD) 的6个数字 
-- 正号或减号
-- 在以下位置使标识号唯一的三个数字： 
-  - 对于在1990之前发出的号码，第七和第八位数字标识出生的县或外部人
-  - 第九个位置中的数字表示为奇数或甚至是女的性别
-- 一个校验位
+- 与 YYMMDD (的出生日期对应的六)  
+- 加号或减号
+- 使标识号唯一的三个数字，其中： 
+  - 对于 1990 之前颁发的数字，第七位和第八位标识出生日期或外种人
+  - 第九个位置的数字表示性别（对于男性或甚至对于男性）为奇数
+- 一个检查数字
     
 ### <a name="checksum"></a>校验和
 
@@ -15386,11 +15357,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_sweden_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_sweden_eu_tax_file_number` 。 
+- 该  `Func_sweden_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_sweden_eu_tax_file_number` 关键字。 
     
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_sweden_eu_tax_file_number` 找到与该模式匹配的内容。 
+- 该  `Func_sweden_eu_tax_file_number` 函数查找与模式匹配的内容。 
     
 ```xml
       <!-- Sweden Tax Identification Number -->
@@ -15413,45 +15384,45 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
-- 个人 id 号
+- 个人 ID 号
 - personnummer
-- skatt id nummer
-- skatt identifikation
-- skattebetalarens identifikationsnummer
-- 瑞典纳税人标识号
-- 税文件
+- 功能 id nummer
+- identifikation
+- identtebetalarens identifikationsnummer
+- sverige tin
+- tax file
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
 - 税号
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
 
 ## <a name="swift-code"></a>SWIFT 代码
 
 ### <a name="format"></a>Format
 
-四个字母后跟5-31 个字母或数字
+四个字母后跟 5-31 个字母或数字
 
 ### <a name="pattern"></a>模式
 
-四个字母后跟5-31 个字母或数字：
-- 四个字母的银行代码 (不区分大小写)  
-- 一个可选空格 
+四个字母后跟 5-31 个字母或数字：
+- 四个字母银行代码 (不区分大小写)  
+- 可选空格 
 - 4-28 个字母或数字（基本银行账号 (BBAN)） 
-- 一个可选空格 
-- BBAN 的余数 (1 到3个字母或数字) 
+- 可选空格 
+- BBAN 代码的剩余部分 (一到三个字母或) 
 
 ### <a name="checksum"></a>校验和
 
@@ -15479,7 +15450,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - international organization for standardization 9362
 - iso 9362
 - iso9362
-- 反应#
+- swift#
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
@@ -15489,7 +15460,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - bic number
 - bic code
 - bic #
-- numéro#
+- bic#
 - bank identifier code
 - Organisation internationale de normalisation 9362
 - rapide #
@@ -15497,22 +15468,22 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - le numéro de swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # <a name="bic"></a>NUMÉRO
+- # <a name="bic"></a>BIC
 - code identificateur de banque
-- SWIFTコード
-- SWIFT番号
-- BIC番号
-- BICコード
-- SWIFT コード
-- SWIFT 番号
-- NUMÉRO 番号
-- NUMÉRO コード
+- SWIFTコド
+- SWIFT 号
+- BIC 区号
+- BICコド
+- SWIFT コド
+- SWIFT 表示号
+- BIC 表示法
+- BIC コド
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>瑞士 SSN AHV 号码
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -15521,19 +15492,19 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-13位数字
+13 个数字
 
 ### <a name="pattern"></a>模式
 
-13位数字：
+13 个数字：
 
-- 三位数-756
-- 一个可选的点
-- 四位数
-- 一个可选的点
-- 四位数
-- 一个可选的点
-- 两位数
+- 三个数字 - 756
+- 可选点
+- 四个数字
+- 可选点
+- 四个数字
+- 可选点
+- 两个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15542,11 +15513,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_swiss_social_security_number_ahv 找到与该模式匹配的内容。
-- 找到 Keywords_swiss_social_security_number_ahv 中的关键字。
+- 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
+- 找到来自Keywords_swiss_social_security_number_ahv的关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_swiss_social_security_number_ahv 找到与该模式匹配的内容。
+- 函数Func_swiss_social_security_number_ahv查找与模式匹配的内容。
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -15568,35 +15539,35 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - ahv
 - ssn
 - pid
-- 保险号
+- insurance number
 - personalidno#
 - social security number
-- 个人 id 号
-- 个人识别码。
+- 个人 ID 号
+- 个人标识否。
 - insuranceno#
 - uniqueidno#
-- 唯一标识 "否"。
-- avs 号码
-- 个人标识无 versicherungsnummer
+- 唯一标识号。
+- avs number
+- 个人标识 no versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzi一ige identit nicht
 - sozialversicherungsnummer
-- 标识 personnelle id
+- identification personnelle id
 - numéro de sécurité sociale
 
    
-## <a name="taiwan-national-identification-number"></a>台湾国家标识号码
+## <a name="taiwan-national-identification-number"></a>台湾地区身份证号码
 
 ### <a name="format"></a>Format
 
-一个英文)  (，后跟9个数字
+一个字母 (英语) 后跟九个数字
 
 ### <a name="pattern"></a>模式
 
-一个英文字母 (，后跟9个数字) ：
-- 一个英文字母 (，不区分大小写)  
-- 数字 "1" 或 "2" 
-- 八位数字
+一个字母 (英语) 后跟九个数字：
+- 一个字母 (英语，不区分大小写)  
+- 数字"1"或"2" 
+- 八个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15631,7 +15602,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 #### <a name="keyword_taiwan_national_id"></a>Keyword_taiwan_national_id
 
 - 身份證字號 
-- 證 
+- 身份證 
 - 身份證號碼 
 - 身份證號 
 - 身分證字號 
@@ -15649,16 +15620,16 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-- 生物识别护照号码：9个数字
-- 不带生物的护照号码：9个数字
+- 生物识别护照号码：九个数字
+- 非生物识别护照号码：九个数字
 
 ### <a name="pattern"></a>模式
-生物识别护照号码：
-- 字符 "3" 
-- 八位数字
+生物识别护照号：
+- 字符"3" 
+- 八个数字
 
-不带生物的护照号码：
-- 九位数字
+非生物识别护照号码：
+- 九个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15697,13 +15668,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ### <a name="format"></a>Format
 
-10个字母和数字
+十个字母和数字
 
 ### <a name="pattern"></a>模式
 
-10个字母和数字：
+十个字母和数字：
 - 两个字母 (不区分大小写)  
-- 八位数字
+- 八个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15741,7 +15712,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>泰语填充标识代码
+## <a name="thai-population-identification-code"></a>泰语总体标识代码
 
 ### <a name="format"></a>Format
 
@@ -15750,7 +15721,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 13 个数字：
-- 第一个数字不是零或九 
+- 第一个数字不为零或九 
 - 12 个数字
 
 ### <a name="checksum"></a>校验和
@@ -15760,11 +15731,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Thai_Citizen_Id 找到与该模式匹配的内容。
-- 找到 Keyword_Thai_Citizen_Id 中的关键字。
+- 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
+- 找到搜索Keyword_Thai_Citizen_Id关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Thai_Citizen_Id 找到与该模式匹配的内容。
+- 函数Func_Thai_Citizen_Id查找与模式匹配的内容。
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -15784,13 +15755,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 #### <a name="keyword_thai_citizen_id"></a>Keyword_thai_citizen_Id
 
 - ID Number
-- 标识号码
+- 标识号
 - บัตรประชาชน
 - รหัสบัตรประชาชน
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>土耳其国家标识号码
+## <a name="turkish-national-identification-number"></a>土耳其国家标识号
 
 ### <a name="format"></a>Format
 
@@ -15807,11 +15778,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 85% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Turkish_National_Id 找到与该模式匹配的内容。
-- 找到 Keyword_Turkish_National_Id 中的关键字。
+- 函数Func_Turkish_National_Id查找与模式匹配的内容。
+- 找到搜索Keyword_Turkish_National_Id关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数 Func_Turkish_National_Id 找到与该模式匹配的内容。
+- 函数Func_Turkish_National_Id查找与模式匹配的内容。
 
 ```xml
 <!-- Turkish National Identity -->
@@ -15830,13 +15801,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
-- TC Kimlik No
-- TC Kimlik numarası
-- Vatandaşlık numarası
-- Vatandaşlık no
+- TC Kimkim No
+- TC Kim一 nu一s
+- Vatanda？lk nu一s
+- Vatanda？l 否
 
-## <a name="uk-drivers-license-number"></a>U.K. 驾驶执照号码
-此敏感信息类型实体包含在欧盟驱动程序的 "敏感信息类型" 中，并可用作独立的敏感信息类型实体。
+## <a name="uk-drivers-license-number"></a>英国 driver's license number
+此敏感信息类型实体包含在欧盟驾驶证号码敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
@@ -15845,10 +15816,10 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 18 个字母和数字：
-- 5个字母 (不区分大小写) 或数字 "9" 代替字母 
-- 一位 
-- 日期格式 MMDDY 中的五个数字。出生日期 (第七个字符将增加50如果驱动程序是女，即51到62而不是01到 12) 
-- 两个字母 (不区分大小写) 或数字 "9" 代替一个字母 
+- 五个字母 (不区分大小写) 或数字"9"来表示字母 
+- 一个数字 
+- 如果驱动程序是男性（即 51 到 62，而不是 01 到 12 位），则日期格式 MMDDY 中用于出生日期的 5 个数字 (第 7 个字符将递增 50) 
+- 两个字母 (不区分大小写) 或数字"9"来表示字母 
 - 五个数字
 
 ### <a name="checksum"></a>校验和
@@ -15882,8 +15853,8 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - motor cars 
 - 125cc 
 - sidecar 
-- tricycles 
-- motorcycles 
+- 三周 
+- 一些 
 - photocard licence 
 - learner drivers 
 - licence holder 
@@ -15892,15 +15863,15 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - driving licence 
 - dual control car 
    
-## <a name="uk-electoral-roll-number"></a>U.K. electoral 卷号
+## <a name="uk-electoral-roll-number"></a>英国 roll roll number
 
 ### <a name="format"></a>Format
 
-两个字母后跟1-4 位数字
+两个字母后跟 1-4 个数字
 
 ### <a name="pattern"></a>模式
 
-两个字母 (不区分大小写) 后接1-4 个号码
+两个字母 (不区分大小写) 后跟 1-4 个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15934,7 +15905,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>U.K. 国家/地区运行状况服务号码
+## <a name="uk-national-health-service-number"></a>英国 national health service number
 
 ### <a name="format"></a>Format
 
@@ -15943,11 +15914,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 ### <a name="pattern"></a>模式
 
 10-17 位数字：
-- 3个或10个数字 
-- 一个空格 
+- 三个或十个数字 
+- 空格 
 - 三个数字 
-- 一个空格 
-- 四位数
+- 空格 
+- 四个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -15997,36 +15968,36 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 - GP 
 - DOB 
-- D. B。 
+- D.O.B 
 - Date of Birth 
 - Birth Date 
    
-## <a name="uk-national-insurance-number-nino"></a>U.K. 国内保险号 (NINO) 
-此敏感信息类型实体包含在欧盟国家/地区 Identificaiton 号敏感信息类型中，可用作独立的敏感信息类型实体。
+## <a name="uk-national-insurance-number-nino"></a>英国 NINO 国家/ (号码) 
+此敏感信息类型实体包含在欧盟国家/区标识号敏感信息类型中，并作为独立的敏感信息类型实体提供。
 
 ### <a name="format"></a>Format
 
-由空格或短划线分隔的七个字符或九个字符
+七个字符或九个字符，用空格或短划线分隔
 
 ### <a name="pattern"></a>模式
 
 两种可能的模式：
 
--  (有效 NINOs 的两个字母仅使用此前缀中的特定字符，此格式将对此进行验证;不区分大小写) 
-- 6位数字
-- "A"、"B"、"C" 或 "d" (类似于前缀，后缀中只允许有某些字符;不区分大小写) 
+- 两个字母 (有效 NINOs 仅使用此前缀中的某些字符，此模式将对此进行验证;不区分大小写) 
+- 六个数字
+- "A"、"B"、"C"或"D" (类似前缀，后缀中只允许某些字符;不区分大小写) 
 
 OR
 
 - 两个字母
 - 空格或短划线
-- 两位数
+- 两个数字
 - 空格或短划线
-- 两位数
+- 两个数字
 - 空格或短划线
-- 两位数
+- 两个数字
 - 空格或短划线
-- 要么是 "A"、"B"、"C"，要么 ' d '
+- "A"、"B"、"C"或"D"
 
 ### <a name="checksum"></a>校验和
 
@@ -16061,7 +16032,7 @@ OR
 - national insurance number
 - national insurance contributions
 - protection act
-- 方面
+- insurance
 - social security number
 - insurance application
 - medical application
@@ -16069,18 +16040,18 @@ OR
 - medical attention
 - social security
 - great britain
-- NI 号码
+- NI 数字
 - NI 否。
 - NI#
 - NI#
-- 方面#
+- insurance#
 - insurancenumber
 - nationalinsurance#
 - nationalinsurancenumber
 
     
-## <a name="uk-unique-taxpayer-reference-number"></a>U.K. 唯一的纳税人参考号码
-此敏感信息类型仅可用于以下内容：
+## <a name="uk-unique-taxpayer-reference-number"></a>英国 唯一的纳税参考编号
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -16089,7 +16060,7 @@ OR
 
 ### <a name="format"></a>Format
 
-10个数字，不含空格和分隔符
+10 个数字，不带空格和分隔符
  
   
 ### <a name="pattern"></a>模式
@@ -16103,8 +16074,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 函数  `Func_uk_eu_tax_file_number` 找到与该模式匹配的内容。 
-- 找到了中的关键字  `Keywords_uk_eu_tax_file_number` 。 
+- 该  `Func_uk_eu_tax_file_number` 函数查找与模式匹配的内容。 
+- 找到一个  `Keywords_uk_eu_tax_file_number` 关键字。 
     
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -16121,32 +16092,32 @@ OR
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
 - 税号
-- 税文件
+- tax file
 - tax id
-- 税号标识编号
-- 税标识号
-- 免税#
-- 免税
-- 税务登记编号
-- taxid#
-- taxidno#
-- taxidnumber#
+- tax identification no
+- 税务标识号
+- tax no#
+- tax no
+- 税务注册号码
+- 一些#
+- 一些#
+- 一些#
 - taxno#
 - taxnumber#
 - taxnumber
-- 纳税人 id
-- tin 编号
-- 锡#
+- tin id
+- tin no
+- tin#
 
-## <a name="us-bank-account-number"></a>美国银行帐户编号
+## <a name="us-bank-account-number"></a>美国银行帐号
 
 ### <a name="format"></a>Format
 
-6-17 位数
+6-17 个数字
 
 ### <a name="pattern"></a>模式
 
-6-17 连续数字
+6-17 个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16200,7 +16171,7 @@ OR
 - Debit Acct No. 
 - Debit Account No. 
 
-## <a name="us-drivers-license-number"></a>美国驾驶执照号码
+## <a name="us-drivers-license-number"></a>美国驾驶证号码
 
 ### <a name="format"></a>Format
 
@@ -16208,9 +16179,9 @@ OR
 
 ### <a name="pattern"></a>模式
 
-取决于状态-例如，纽约：
-- 与 ddd ddd ddd 相匹配的9个数字的格式将会匹配。
-- 9个数字（如 ddddddddd）将不匹配。
+取决于州 - 例如，纽约：
+- 9 个数字，格式设置为 ddd ddd ddd 将匹配。
+- 9 个数字（如 dddd）不匹配。
 
 ### <a name="checksum"></a>校验和
 
@@ -16251,22 +16222,22 @@ OR
 
 #### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- 通讯 
+- DL 
 - DLS 
-- 采用 
+- CDL 
 - CDLS 
 - ID 
-- Id 
-- 通讯# 
+- ID 
+- DL# 
 - DLS# 
-- 采用# 
+- CDL# 
 - CDLS# 
-- 号#
-- Id# 
+- ID#
+- ID# 
 - ID number 
 - ID numbers 
-- .LIC 
-- .LIC# 
+- LIC 
+- LIC# 
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
@@ -16347,32 +16318,32 @@ OR
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- 状态缩写 (例如，"NY" )  
-- 状态名称 (例如，"纽约" ) 
+- state 缩写 (例如，"NY")  
+- state name (for example， "New York") 
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>美国单个纳税人标识号 (ITIN) 
+## <a name="us-individual-taxpayer-identification-number-itin"></a>ITIN 中美国个人纳税 (标识) 
 
 ### <a name="format"></a>Format
 
-九个数字，以 "9" 开头，并包含 "7" 或 "8" 作为第四个数字，可以选择使用空格或短划线进行格式设置
+九个数字，以"9"开头，包含"7"或"8"作为第四个数字，可选格式为空格或短划线
 
 ### <a name="pattern"></a>模式
 
-格式
-- 数字 "9" 
-- 两位数 
+格式化：
+- 数字"9" 
+- 两个数字 
 - 空格或短划线 
-- "7" 或 "8" 
+- a "7" or "8" 
 - 一个数字 
 - 空格或短划线 
-- 四位数
+- 四个数字
 
-纯
-- 数字 "9" 
-- 两位数 
-- "7" 或 "8" 
+unformatted：
+- 数字"9" 
+- 两个数字 
+- a "7" or "8" 
 - 五个数字
 
 ### <a name="checksum"></a>校验和
@@ -16390,7 +16361,7 @@ OR
 - 找到 Keyword_itin 中的一个关键字。
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 65% 确信它检测到这种类型的敏感信息：
-- 函数 Func_formatted_itin 或 Func_unformatted_itin 找到与该模式匹配的内容。
+- 该函数Func_formatted_itin或Func_unformatted_itin找到与模式匹配的内容。
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -16416,32 +16387,32 @@ OR
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- 报税 
+- taxpayer 
 - tax id 
 - tax identification 
 - itin 
 - i.t.i.n.
 - ssn 
-- 锡 
+- tin 
 - social security 
 - tax payer 
 - itins 
-- taxid 
+- 一些 
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a> (SSN) 的美国社会安全号码
+## <a name="us-social-security-number-ssn"></a>SSN (美国社会保险号码) 
 
 ### <a name="format"></a>Format
 
-9个数字，可以是格式化或无格式的模式
+九个数字，可能采用格式化或无格式模式
 
 > [!NOTE]
 > 如果在 2011 年中旬前发布，则 SSN 具有强格式，即数字的某部分必须介于某个有效的范围中（但是没有校验和）。
 
 ### <a name="pattern"></a>模式
 
-四个函数在四种不同的模式中查找 Ssn：
+四个函数以四种不同的模式查找 SSN：
 - Func_ssn 查找具有 2011 年以前使用短划线或空格格式化的强格式的 SSN（ddd-dd-dddd 或 ddd dd dddd）
 - Func_unformatted_ssn 查找具有 2011 年以前未格式化为 9 个连续数字的强格式的 SSN (ddddddddd)
 - Func_randomized_formatted_ssn 查找 2011 年后使用短划线或空格（ddd-dd-dddd 或 ddd dd dddd）格式化的 SSN
@@ -16497,29 +16468,29 @@ OR
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- SSA 编号
+- SSA 号码
 - social security number
-- 社会保障#
-- 社会保障#
-- 社会保障号
+- social security#
+- social security#
+- social security no
 - Social Security#
 - Soc Sec
 - SSN
-- SSN
+- SSNS
 - SSN#
 - SS#
 - SSID
    
 ## <a name="us--uk-passport-number"></a>美国/英国 passport number
-英国 护照号敏感信息类型实体在欧盟护照号敏感信息类型中可用，并可用作独立的敏感信息类型实体。
+英国 passport number sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九个连续数字
+九个连续的数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16547,14 +16518,14 @@ OR
 - Passport Number 
 - Passport No 
 - Passport # 
-- 登记卡# 
+- Passport# 
 - PassportID 
 - Passportno 
 - passportnumber 
 - パスポート 
 - パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
+- パスポのnum 
+- パスポート# 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
@@ -16564,7 +16535,7 @@ OR
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>乌克兰护照国内
-此敏感信息类型仅可用于以下内容：
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -16573,11 +16544,11 @@ OR
 
 ### <a name="format"></a>Format
 
-九位数字
+九个数字
 
 ### <a name="pattern"></a>模式
 
-九位数字
+九个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16586,8 +16557,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_Ukraine_Passport_Domestic 找到与该模式匹配的内容。
-- 找到 Keyword_Ukraine_Passport_Domestic 中的关键字。
+- 正则表达式Regex_Ukraine_Passport_Domestic查找与模式匹配的内容。
+- 找到来自Keyword_Ukraine_Passport_Domestic关键字。
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -16605,14 +16576,14 @@ OR
 
 - 乌克兰护照
 - passport number
-- 护照号
+- passport no
 - паспорт України
 - номер паспорта
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>乌克兰护照（国际）
-此敏感信息类型仅可用于以下内容：
+## <a name="ukraine-passport-international"></a>乌克兰护照国际
+此敏感信息类型仅适用于：
 - 数据丢失防护策略
 - 通信合规性策略
 - 信息治理
@@ -16621,13 +16592,13 @@ OR
 
 ### <a name="format"></a>Format
 
-八个字符的字母数字模式
+八字符字母数字模式
 
 ### <a name="pattern"></a>模式
 
-八个字符的字母数字模式：
+八字符字母数字模式：
 - 两个字母或数字
-- 6位数字
+- 六个数字
 
 ### <a name="checksum"></a>校验和
 
@@ -16636,8 +16607,8 @@ OR
 ### <a name="definition"></a>定义
 
 在 300 个字符的相似度内，如果出现以下情况，DLP 策略 75% 确信它检测到这种类型的敏感信息：
-- 正则表达式 Regex_Ukraine_Passport_International 找到与该模式匹配的内容。
-- 找到 Keyword_Ukraine_Passport_International 中的关键字。
+- 正则表达式Regex_Ukraine_Passport_International查找与模式匹配的内容。
+- 找到来自Keyword_Ukraine_Passport_International的关键字。
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -16655,6 +16626,6 @@ OR
 
 - 乌克兰护照
 - passport number
-- 护照号
+- passport no
 - паспорт України
 - номер паспорта
