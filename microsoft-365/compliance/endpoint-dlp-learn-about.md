@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 终结点数据丢失防护可将对文件活动的监视和针对这些文件的保护措施扩展到终结点。 在 Microsoft 365 合规解决方案中将文件设为可见 '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604312"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682623"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>了解 Microsoft 365 终结点数据丢失防护
 
@@ -34,18 +34,19 @@ ms.locfileid: "49604312"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>可监视并对其执行操作的终结点活动
 
-Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。 这包括：
+Microsoft 终结点 DLP 使你可以审核和管理用户对运行 Windows 10 的设备上的敏感项目进行的以下类型的活动。
 
 
-|项目活动 |可审核/可限制  |
-|---------|---------|
-|已创建    | 可审核      |
-|已重命名    |  可审核       |
-|已复制到可移动媒体或已在可移动媒体上创建     |     可审核且可限制|
-|已复制到网络共享，例如 \\my-server\fileshare   |     可审核且可限制    |
-|已打印 |    可审核且可限制       |
-|已通过 Microsoft Chromium Edge 复制到云    |   可审核且可限制        |
-|由不允许的应用和浏览器访问    |  可审核且可限制       |
+|活动 |说明  | 可审核/可限制|
+|---------|---------|---------|
+|上传到云端服务，或通过不允许的浏览器访问    | 当用户试图将项目上传到受限服务域或通过浏览器访问项目时进行检测。  若他们使用的浏览器在DLP中列为不允许的浏览器，则将阻止上传活动，并将重新定向用户到使用Edge Chromium。 Microsoft Edge Chromium将根据DLP策略配置，允许或阻止上传或访问。         |可审核且可限制|
+|复制至其他应用    |当用户试图从受保护项目中复制信息，然后将其粘贴到另一个应用程序、进程或项目中时进行检测。 该活动无法检测到在同一应用程序、进程或项目中复制和粘贴信息。         | 可审核且可限制|
+|复制到 USB 可移动媒体 |检测用户何时尝试将项目或信息复制到可移动媒体或 USB 设备。         | 可审核且可限制|
+|拷贝到网络共享    |当用户试图将项目复制到网络共享或映射的网络驱动器时，检测该项目         |可审核且可限制|
+|打印文档    |当用户试图将受保护的项目打印到本地或网络打印机上时，检测该项目。| 可审核且可限制         |
+|创建项|当用户创建项目时，检测该项目| 可审核|
+|重命名项|当用户重命名一个项目时，检测该项目| 可审核|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>终结点 DLP 中的区别
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 创建敏感度标签时，你可以自动为文档或电子邮件分配标签，也可以提示用户选择你建议的标签。
-ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: dafb31f823dc8c63fa19ad8dba0624ee2037b859
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568480"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682827"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>将敏感度标签自动应用于内容
 
@@ -52,7 +52,7 @@ ms.locfileid: "49568480"
 
 - **当内容已保存（在 SharePoint 或 OneDrive 中）或通过电子邮件发送（由 Exchange Online 处理）时的服务端标记**：使用自动标记策略。 
     
-    你可能还听过该方法的另外一种称呼方式，即自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。 
+    你可能还听过该方法的另外一种称呼方式，即自动标记静态数据（SharePoint 和 OneDrive 中的文档）和传输中的数据（由 Exchange 发送或接收的电子邮件）。 对于 Exchange，它不包含静态电子邮件（邮箱）。
     
     由于此标记是由服务而不是应用程序应用的，因此无需担心用户拥有的应用和版本。 因此，可立即在整个组织中使用此功能，并且适合大规模标记。 自动标记策略不支持推荐的标记，因为用户不与标记过程交互。 相反，管理员将在模拟模式下运行策略，以便在实际应用标签前，帮助确保正确标记内容。
     
@@ -60,6 +60,7 @@ ms.locfileid: "49568480"
     
     特定于 SharePoint 和 OneDrive 的自动标记：
     - 支持以下 Office 文件：Word、PowerPoint 和 Excel。 支持 Open XML 格式（例如 .docx 和 .xlsx），但不支持 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+        - 当这些文件不属于开放会话时，无论它们是在创建自动标签策略后创建、上传或更改的，或是在创建自动标签策略后未更改的现有文件，都可自动标签。
     - 租户中每天最多自动标记 25,000 个文件。
     - 每个租户最多可自动标记 10 个策略，每个策略最多针对 10 个网站（SharePoint 或 OneDrive）。
     - 无论是在模拟模式下还是在应用标签时，可修改的现有值、修改者和修改日期都不会因自动标记策略而发生变化。
@@ -299,8 +300,6 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
     ![测试策略自动标记向导](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. 对于“摘要”页：审阅自动标记策略的配置，并进行所需的任何更改，然后完成向导。
-    
-    与 Office 应用的自动标记不同，无单独的发布选项。 但是，与发布标签一样，自动标记策略最多需要 24 小时才能在整个组织中复制。
 
 现在，在“**信息保护**” > “**自动标记**”页面上，可在“**模拟**”或“**关闭**”部分看到自动标记策略，具体哪个部分取决于是否选择在模拟模式下运行它。 选择你的策略以查看配置和状态的详细信息（例如，**策略模拟仍在运行**）， 对于模拟模式中的策略，选择“**匹配的项**”选项卡，以查看与你指定的规则匹配的电子邮件或文档。
 
@@ -325,7 +324,7 @@ Azure 信息保护统一标记客户端支持适用于 Windows 的 Office 应用
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>使用 PowerShell 自动标记策略
 
-现在，你可以使用[安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 创建和配置自动标记策略。 这意味着你现在可以完全编写自动标记策略的创建和维护策略，这也提供了一种更为有效的方法，用于指定 OneDrive 和 SharePoint 位置的多个 URL。
+可使用[安全&合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)创建和配置自动标记策略。 这意味着可以完全编写创建和维护的自动标签策略，这也为OneDrive和SharePoint位置指定多个URL提供了更有效的方法。
 
 在 PowerShell 中运行命令之前，必须先[连接到安全与合规中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -362,4 +361,3 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule)
-

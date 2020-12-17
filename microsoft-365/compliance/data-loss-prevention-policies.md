@@ -22,20 +22,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何在 Office 365 中识别、监视和自动保护组织中的敏感信息。
-ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 75c2f4d81b3378d031adc394a9c8f7615d51079c
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999490"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682795"
 ---
 # <a name="overview-of-data-loss-prevention"></a>数据丢失防护概述
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
 > [!NOTE]
-> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
+> 对于具有 Office 365 高级合规版许可证的用户，最近为 Microsoft Teams 聊天和频道消息添加了数据丢失防护功能。它是一种独立选项，包含在 Office 365 E5 和 Microsoft 365 E5 合规版中。 要详细了解许可要求，请参阅 [Microsoft 365 租户级服务许可指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)。
 
-为了遵守业务标准和行业法规，组织必须保护敏感信息，并防止其无意间泄漏。敏感信息包括财务数据或个人身份信息 (PII)，如信用卡号、社会保险号或健康记录。通过 Office 365 安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
+为了符合业务标准和行业法规，组织必须保护敏感信息，防止由于疏忽而泄露。 敏感信息包括财务数据或个人身份信息 (PII)，如信用卡号、社会保险号或健康记录。 通过 Office 365 安全 &amp; 合规中心的数据丢失防护 (DLP) 策略，可在 Office 365 内识别、监视和自动保护敏感数据。
   
 你可以使用 DLP 策略实现以下功能：
   
@@ -49,11 +49,11 @@ ms.locfileid: "48999490"
     
 - **监视和保护 Excel、PowerPoint 和 Word 桌面版中的敏感信息。**
     
-    就像在 Exchange Online、SharePoint Online 和 OneDrive for Business 中一样，这些 Office 桌面程序都包含相同的功能以识别敏感信息和应用 DLP 策略。当用户在这些 Office 程序中共享内容时，DLP 进行持续监视。
+    就像在 Exchange Online、SharePoint Online 和 OneDrive for Business 中一样，这些 Office 桌面程序都包含相同的功能以识别敏感信息和应用 DLP 策略。 当用户在这些 Office 程序中共享内容时，DLP 进行持续监视。
     
 - **帮助用户了解如何保持兼容性，同时不会中断工作流。**
     
-    你可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。相同的策略提示也会在 Outlook 网页版、Outlook、Excel、PowerPoint 和 Word 中显示。
+    您可以向用户介绍 DLP 策略，并帮助他们保持兼容性，同时不会中断工作。 例如，如果用户尝试共享包含敏感信息的文档，DLP 策略可以向他们发送电子邮件通知，同时在文档库的上下文中向其显示一个策略提示，以允许他们在具有业务理由的情况下替代策略。 Outlook 网页版、Outlook、Excel、PowerPoint 和 Word 中显示了相同的策略提示。
     
 - **查看显示符合贵组织的 DLP 策略的内容的 DLP 警报和报告。**
     
@@ -83,15 +83,15 @@ DLP 策略包含以下基本内容：
   
 ### <a name="locations"></a>位置
 
-DLP 策略适用于 Microsoft 365 位置中的敏感项目，并且可以按此表中的详细说明进行范围划分。
+DLP 策略适用于多个 Microsoft 365 位置的敏感项目，并且可按此表中的详细说明进行进一步范围划分。
 
 
-|位置 | 包含/排除|
+|位置 | 包含/排除方式|
 |---------|---------|
 |Exchange 电子邮件| 通讯组|
-|SharePoint 网站 |sites |
-|OneDrive 帐户 |accounts |
-|Teams 聊天和通道消息 |accounts |
+|SharePoint 网站 |网站 |
+|OneDrive 账户 |账户 |
+|Teams 聊天和通道消息 |账户 |
 |Windows 10 设备 |用户或组 |
 |Microsoft Cloud App Security |实例 |
 
@@ -204,7 +204,7 @@ DLP 策略可帮助保护定义为 **敏感信息类型** 的敏感信息。 Mic
   
 ![用于配置事件报告的页面](../media/Alerts-and-incident-report.png)
 
-DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP **_不会_* _ 扫描或匹配邮箱或存档中存储的先前存在的电子邮件项目。
+DLP 扫描电子邮件的方式与 SharePoint Online 或 OneDrive for Business 中的项目不同。 在 SharePoint Online 和 OneDrive for Business 中，DLP 可扫描现有项目以及新项目，并在找到匹配项时生成警报和事件报告。 在 Exchange Online 中，DLP 仅扫描新电子邮件，并在存在策略匹配项时生成报告。 DLP **_不会_* _ 扫描或匹配先前存储在邮箱或存档中的电子邮件项目。
   
 ## <a name="grouping-and-logical-operators"></a>分组和逻辑运算符
 
@@ -365,9 +365,9 @@ DLP 策略的要求通常比较简单，例如标识包含美国社会安全号�
   > [!IMPORTANT]
   > 如果在 DLP 策略中将保留标签指定为条件，而且你还包含 Exchange 和/或 Teams 作为位置，则你将收到以下错误：**“不支持保护电子邮件和团队消息中带标签的内容。请删除下述标签或取消将 Exchange 和 Teams 设为位置。”** 这是因为 Exchange 传输在消息提交和传递过程中不会评估标签元数据。 
 
-### <a name="support-for-sensitivity-labels-is-coming"></a>即将推出对敏感度标签的支持
+### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>使用敏感度标签作为在DLP策略中的条件
 
-目前，你只能将保留标签用作条件，而不能将[敏感度标签](sensitivity-labels.md)用作条件。 目前，我们正致力于支持在此条件中使用敏感度标签。
+敏感度标签作为DLP策略中的一个条件，目前正在预览中。 [了解详细信息](https://docs.microsoft.com/microsoft-365/compliance/dlp-sensitivity-label-as-condition)。
   
 ### <a name="how-this-feature-relates-to-other-features"></a>此功能与其他功能的联系
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现保留策略和保留标签来管理组织的数据，但不确定从哪里入手？ 请阅读一些实用指南来入门。
-ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919860"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682527"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>开始使用保留策略和保留标签
 
@@ -32,17 +32,17 @@ ms.locfileid: "48919860"
 
 已准备好通过保留需要保留的内容和删除不需要的内容来开始管理组织的数据？ 请遵循下面的简要指南来入门：
 
-1. **了解保留在 Microsoft 365 中的工作原理** ，然后确定是需要使用保留策略还是保留标签，亦或是两者的组合： [了解保留](retention.md)
+1. **了解保留在 Microsoft 365 中的工作原理**，然后确定是需要使用保留策略还是保留标签，亦或是两者的组合：[了解保留](retention.md)
 
-2. **确定组织策略或行业法规所要求的保留设置和操作** 。
+2. **确定组织策略或行业法规所要求的保留设置和操作**。
     
     在此评估过程中，请确定是否将使用[记录管理](records-management.md)。
 
-3. 根据已确定的保留设置和操作， **创建保留策略和保留标签** 。
+3. 根据已确定的保留设置和操作，**创建保留策略和保留标签**。
     
     对于保留标签，你可能会发现使用[文件计划](file-plan-manager.md)在电子表格中定义和优化保留标签很有用。 然后，导入相应电子表格来创建标签。
     
-3. **发布并应用保留标签** 。 保留策略是为“一次设置、后顾无忧”配置而设计的，而保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中。 请参阅[常见应用场景](#common-scenarios-for-retention-policies-and-retention-labels)列表，此列表有助于确定如何使用保留标签。 
+3. **发布并应用保留标签**。 保留策略是为“一次设置、后顾无忧”配置而设计的，而保留标签是可重用的构建基块，可用于多个策略中，并可纳入用户工作流中。 请参阅[常见应用场景](#common-scenarios-for-retention-policies-and-retention-labels)列表，此列表有助于确定如何使用保留标签。 
 
 ## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>保留策略和保留标签的订阅和许可要求
 
@@ -52,7 +52,13 @@ ms.locfileid: "48919860"
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>创建和管理保留策略和保留标签所需的权限
 
-负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **合规性管理员** 管理角色组。 有关说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+负责创建和管理保留策略和保留标签的合规性团队成员必须有权访问 [Microsoft 365 合规中心](https://compliance.microsoft.com/)。 默认情况下，租户管理员（全局管理员）有权访问此位置，并可向合规专员和其他人提供访问权限，而不为其提供租户管理员的所有权限。若要授予实现此有限管理的权限，建议将用户添加到 **合规性管理员** 管理角色组。
+
+除了使用该默认角色，还可创建一个新的角色组，并将 **保留管理** 角色添加到该组。 对于只读角色，请使用 **只读保留管理**。 
+
+有关角色组和角色的更多信息，请参阅[安全与合规中心内的权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+
+有关将用户添加到角色组并分配角色的说明，请参阅[向用户授予对安全与合规中心的访问权限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有在创建、配置和应用保留策略和保留标签时才需要这些权限。 配置这些策略及标签的人员不需要访问该内容。
 
