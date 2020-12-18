@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用基于精确数据匹配的分类来创建自定义敏感信息类型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658669"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698393"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用基于精确数据匹配的分类创建自定义敏感信息类型
 
@@ -107,6 +107,11 @@ ms.locfileid: "49658669"
 3. 注意敏感数据字段的格式。 特别要注意的是，内容中可能包含逗号的字段（比如，包含”Seattle,WA”值的街道地址）在用 EDM 工具分析时，可能会被分析为两个单独的字段。 为了避免这种情况，你需要确保在敏感数据表中，用单引号或双引号将这些字段包围在内。 如果带逗号的字段同时也包含空格，你需要创建一个自定义的敏感信息类型，且它需要与对应的格式相匹配（比如，一个包含多字的字符串，带有逗号和空格）来确保在扫描文件时该字符串正确匹配。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定义敏感信息数据库的架构
+
+如果出于商业或技术原因不希望使用 PowerShell 或命令行创建架构和 EDM 敏感信息类型模式（规则包），可以使用 [精确数据匹配架构和敏感信息类型向导](sit-edm-wizard.md) 来创建。 完成创建架构和 EDM 敏感信息类型模式后，返回以完成所有必要步骤，使基于 EDM 的敏感信息类型处于可用状态。
+
+> [!NOTE]
+> 精确数据匹配架构和敏感信息类型向导仅用于 World Wide 和 GCC。
 
 1. 以 XML 格式定义敏感信息数据库的架构（类似于下面的示例）。 命名此架构文件 **edm.xml** 并对其进行配置，确保对于数据库中的每一列，都有一行使用语法： 
 
@@ -253,7 +258,7 @@ ms.locfileid: "49658669"
       </RulePackage>
       ```
 
-1. 通过逐一运行下列 PowerShell cmdlet 来上传规则包：
+2. 通过逐一运行下列 PowerShell cmdlet 来上传规则包：
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ ms.locfileid: "49658669"
 
 如果想要在一台计算机上创建哈希并上传，则需要在可直接连接到 Microsoft 365 租户的计算机上执行此操作。 这要求计算机上需要具备明文敏感数据文件以便创建哈希。
 
-如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。 
+如果不希望公开明文敏感数据文件，可在计算机的安全位置上为其创建哈希，然后将哈希文件和随机混淆值文件复制到可直接连接到 Microsoft 365 租户的计算机以进行上传。 在这种情况下，需要在两台计算机上都有 EDMUploadAgent。
+
+> [!IMPORTANT]
+> 如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，您 **_必须_* 为此过程下载架构。
 
 #### <a name="prerequisites"></a>先决条件
 
@@ -372,10 +380,11 @@ ms.locfileid: "49658669"
     - 我们示例中使用的 csv 格式的敏感项目文件 **PatientRecords**
     -  以及输出的哈希和随机混淆值文件
     - 来自 **edm .xml** 文件的数据存储名称，在本示例中为 `PatientRecords`
+- 如果使用 [精确数据匹配和敏感信息类型向导](sit-edm-wizard.md)，您 **_必须_* 将其下载。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>设置安全组和用户帐户
 
-1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription)转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 **EDM\_DataUploaders**。
+1. 作为全局管理员，使用相应的 [订阅链接](#portal-links-for-your-subscription) 转到管理中心并 [创建安全组](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)，名为 EDM\_DataUploaders。
 
 2. 将一个或多个用户添加到 **EDM\_DataUploaders** 安全组。 （这些用户将管理敏感信息的数据库。）
 
@@ -420,6 +429,10 @@ ms.locfileid: "49658669"
 
 3. 使用添加到 EDM_DataUploaders 安全组的 Microsoft 365 工作或学校帐户登录。 将从用户帐户提取你的租户信息以建立连接。
 
+可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. 若要为敏感数据创建哈希并上传，请在命令提示符窗口中运行以下命令：
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ ms.locfileid: "49658669"
 #### <a name="separate-hash-and-upload"></a>将哈希与上传分开操作
 
 在处于安全环境中的计算机上执行哈希。
+
+可选：如使用精确数据匹配架构和敏感信息类型向导创建架构和模式文件，请在命令提示符窗口中运行以下命令：
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. 在命令提示符窗口中运行以下命令：
 
