@@ -1,5 +1,5 @@
 ---
-title: Microsoft 工作效率分数-通信
+title: Microsoft Productivity Score - 通信
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,161 +18,173 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: 沟通的详细信息-人员体验效率分数。
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+description: 通信详细信息 - 人员体验生产力分数。
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585312"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712575"
 ---
-# <a name="communication--people-experiences"></a><span data-ttu-id="f52f5-103">通信–人员体验</span><span class="sxs-lookup"><span data-stu-id="f52f5-103">Communication – People experiences</span></span>
+# <a name="communication--people-experiences"></a><span data-ttu-id="6c429-103">通信 – 人员体验</span><span class="sxs-lookup"><span data-stu-id="6c429-103">Communication – People experiences</span></span>
 
-<span data-ttu-id="f52f5-104">生产效率分数支持通过深入了解你的组织如何使用 Microsoft 365 以及支持它的技术体验来进行数字转换。</span><span class="sxs-lookup"><span data-stu-id="f52f5-104">Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it.</span></span> <span data-ttu-id="f52f5-105">贵组织的分数反映了人员和技术体验指标，并且可以与与您的规模相似的组织中的基准进行比较。</span><span class="sxs-lookup"><span data-stu-id="f52f5-105">Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.</span></span> <span data-ttu-id="f52f5-106">通信类别是 "人员体验" 措施的一部分。</span><span class="sxs-lookup"><span data-stu-id="f52f5-106">The communication category is part of the people experiences measures.</span></span> <span data-ttu-id="f52f5-107">若要了解详细信息，请查看 [工作效率分数概述](productivity-score.md) 和阅读 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。</span><span class="sxs-lookup"><span data-stu-id="f52f5-107">To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span>
+<span data-ttu-id="6c429-104">Productivity Score 通过深入了解组织如何使用 Microsoft 365 以及支持 Microsoft 365 的技术体验，支持数字化转型之旅。</span><span class="sxs-lookup"><span data-stu-id="6c429-104">Productivity   Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it.</span></span> <span data-ttu-id="6c429-105">你组织的分数反映出人员和技术经验的衡量标准，可以与规模类似的组织的基准进行比较。</span><span class="sxs-lookup"><span data-stu-id="6c429-105">Your organization’s score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.</span></span> <span data-ttu-id="6c429-106">通信类别是人员体验度量的一部分。</span><span class="sxs-lookup"><span data-stu-id="6c429-106">The communication category is part of the people experiences measures.</span></span> <span data-ttu-id="6c429-107">若要了解更多信息，请查看 [Productivity Score 概述](productivity-score.md) 并阅读 [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)。</span><span class="sxs-lookup"><span data-stu-id="6c429-107">To learn more, check out the [Productivity Score overview](productivity-score.md) and read [Microsoft's Privacy Statement](https://privacy.microsoft.com/privacystatement).</span></span>
 
-## <a name="why-your-organizations-communication-score-matters"></a><span data-ttu-id="f52f5-108">您的组织的通信分数为何重要</span><span class="sxs-lookup"><span data-stu-id="f52f5-108">Why your organization’s Communication score matters</span></span> 
+## <a name="prerequisites"></a><span data-ttu-id="6c429-108">先决条件</span><span class="sxs-lookup"><span data-stu-id="6c429-108">Prerequisites</span></span>
 
-<span data-ttu-id="f52f5-109">Microsoft 知道，人们有不同的通信需求。</span><span class="sxs-lookup"><span data-stu-id="f52f5-109">Microsoft understands that people have different communication needs.</span></span> <span data-ttu-id="f52f5-110">若要快速获取对问题的响应，可以选择发送即时消息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-110">To get a quick response to a question, you might choose to send an instant message.</span></span> <span data-ttu-id="f52f5-111">如果要向您的领导层发送状态更新，可以选择一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="f52f5-111">If you want to send status updates to your leadership, you may choose an email message.</span></span> <span data-ttu-id="f52f5-112">若要访问更广泛的访问群体，可以选择发布社区消息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-112">To reach a broader audience, you may choose to post a community message.</span></span> <span data-ttu-id="f52f5-113">Microsoft 365 在通信模式中实现了这一灵活性，以满足每个人的需求。</span><span class="sxs-lookup"><span data-stu-id="f52f5-113">Microsoft 365 enables this flexibility in communication modes to fit everyone's needs.</span></span> <span data-ttu-id="f52f5-114">研究表明，使用实时通信工具可创建更统一的组织，并生成士气，而不考虑位置。</span><span class="sxs-lookup"><span data-stu-id="f52f5-114">Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location.</span></span> <span data-ttu-id="f52f5-115">[请参阅证据](https://go.microsoft.com/fwlink/?linkid=2127669)。</span><span class="sxs-lookup"><span data-stu-id="f52f5-115">[See the evidence](https://go.microsoft.com/fwlink/?linkid=2127669).</span></span>
+<span data-ttu-id="6c429-109">若要开始使用通信见解，需要获得组织中人员的许可：</span><span class="sxs-lookup"><span data-stu-id="6c429-109">To get started with Communication insights, people in your organization need to be licensed for:</span></span>
 
-## <a name="how-we-calculate-the-communication-score"></a><span data-ttu-id="f52f5-116">如何计算通信分数</span><span class="sxs-lookup"><span data-stu-id="f52f5-116">How we calculate the communication score</span></span>
+- <span data-ttu-id="6c429-110">Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="6c429-110">Microsoft Teams</span></span>
+- <span data-ttu-id="6c429-111">Yammer</span><span class="sxs-lookup"><span data-stu-id="6c429-111">Yammer</span></span>
+- <span data-ttu-id="6c429-112">Exchange Online</span><span class="sxs-lookup"><span data-stu-id="6c429-112">Exchange Online</span></span>
 
-<span data-ttu-id="f52f5-117">为了实现通信，我们提供了主要洞察力，其中包含与组织中的通信相关的关键指标，并结合了使用这些指标计算组织分数的记分框架。</span><span class="sxs-lookup"><span data-stu-id="f52f5-117">For Communication, we provide a primary insight, which contains the key metrics associated with communication in your organization, combined with a scoring framework for using these metrics to calculate your organization's score.</span></span>
+<span data-ttu-id="6c429-113">有关详细信息，请参阅向 [用户分配许可证](../manage/assign-licenses-to-users.md)。</span><span class="sxs-lookup"><span data-stu-id="6c429-113">For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).</span></span>
 
-### <a name="primary-insight"></a><span data-ttu-id="f52f5-118">主要洞察力</span><span class="sxs-lookup"><span data-stu-id="f52f5-118">Primary insight</span></span>
+<span data-ttu-id="6c429-114">在用户过去 28 天内至少活跃一次上述产品后，你将开始看到见解。</span><span class="sxs-lookup"><span data-stu-id="6c429-114">After people have been active in the above products at least once in the last 28 days, you will start to see the insights.</span></span>
 
-<span data-ttu-id="f52f5-119">Microsoft 365 通过提供多种模式，使用户能够灵活地适应每个人的通信风格。</span><span class="sxs-lookup"><span data-stu-id="f52f5-119">Microsoft 365 provides people the flexibility to fit everyone's communication style by offering multiple modes.</span></span> <span data-ttu-id="f52f5-120">主要洞察力提供了组织中使用多种模式进行通信的人员的度量。</span><span class="sxs-lookup"><span data-stu-id="f52f5-120">The primary insight provides a measure of people in your org that are using multiple modes to communicate.</span></span>
+## <a name="why-your-organizations-communication-score-matters"></a><span data-ttu-id="6c429-115">为什么组织的通信分数很重要</span><span class="sxs-lookup"><span data-stu-id="6c429-115">Why your organization’s Communication score matters</span></span> 
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="主要对通信模式的见解。":::
+<span data-ttu-id="6c429-116">Microsoft 了解用户有不同的通信需求。</span><span class="sxs-lookup"><span data-stu-id="6c429-116">Microsoft understands that people have different communication needs.</span></span> <span data-ttu-id="6c429-117">若要快速响应问题，您可以选择发送即时消息。</span><span class="sxs-lookup"><span data-stu-id="6c429-117">To get a quick response to a question, you might choose to send an instant message.</span></span> <span data-ttu-id="6c429-118">如果要向领导发送状态更新，可以选择一封电子邮件。</span><span class="sxs-lookup"><span data-stu-id="6c429-118">If you want to send status updates to your leadership, you may choose an email message.</span></span> <span data-ttu-id="6c429-119">若要覆盖更广泛的受众，您可以选择发布社区消息。</span><span class="sxs-lookup"><span data-stu-id="6c429-119">To reach a broader audience, you may choose to post a community message.</span></span> <span data-ttu-id="6c429-120">Microsoft 365 在通信模式中实现了这种灵活性，以满足每个人的需求。</span><span class="sxs-lookup"><span data-stu-id="6c429-120">Microsoft 365 enables this flexibility in communication modes to fit everyone's needs.</span></span> <span data-ttu-id="6c429-121">研究表明，使用实时通信工具可以创建一个更为统一的组织并培养信心，而不管位置如何。</span><span class="sxs-lookup"><span data-stu-id="6c429-121">Research shows that using real-time communication tools creates a more unified organization and builds morale, regardless of location.</span></span> <span data-ttu-id="6c429-122">[请参阅证据](https://go.microsoft.com/fwlink/?linkid=2127669)。</span><span class="sxs-lookup"><span data-stu-id="6c429-122">[See the evidence](https://go.microsoft.com/fwlink/?linkid=2127669).</span></span>
 
-1. <span data-ttu-id="f52f5-122">**标头：** 提供使用多种通信模式的人员的主要指标，即：</span><span class="sxs-lookup"><span data-stu-id="f52f5-122">**Header:** Provides the key metric of people using more than one communication mode, namely:</span></span>
+## <a name="how-we-calculate-the-communication-score"></a><span data-ttu-id="6c429-123">如何计算通信得分</span><span class="sxs-lookup"><span data-stu-id="6c429-123">How we calculate the communication score</span></span>
 
-   - <span data-ttu-id="f52f5-123">通过 Exchange 发送电子邮件</span><span class="sxs-lookup"><span data-stu-id="f52f5-123">Sending emails through Exchange</span></span>
-   - <span data-ttu-id="f52f5-124">通过团队发送邮件</span><span class="sxs-lookup"><span data-stu-id="f52f5-124">Sending messages through Teams</span></span>
-   - <span data-ttu-id="f52f5-125">在 Yammer 中发布社区</span><span class="sxs-lookup"><span data-stu-id="f52f5-125">Posting on communities in Yammer</span></span>
+<span data-ttu-id="6c429-124">对于通信，我们提供主要见解，其中包含与组织中通信相关的关键指标，以及使用这些指标计算组织分数的评分框架。</span><span class="sxs-lookup"><span data-stu-id="6c429-124">For Communication, we provide a primary insight, which contains the key metrics associated with communication in your organization, combined with a scoring framework for using these metrics to calculate your organization's score.</span></span>
 
-   <span data-ttu-id="f52f5-126">此关键指标显示为使用两个或更多 Exchange、团队或 Yammer 的所有用户的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-126">This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer.</span></span> 
+### <a name="primary-insight"></a><span data-ttu-id="6c429-125">主要见解</span><span class="sxs-lookup"><span data-stu-id="6c429-125">Primary insight</span></span>
 
-2. <span data-ttu-id="f52f5-127">**正文：** 提供了有关如何对组织中的人员有用的通信模式灵活性的详细信息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-127">**Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.</span></span>
+<span data-ttu-id="6c429-126">Microsoft 365 提供多种模式，使用户能够灵活地适应每个人的通信风格。</span><span class="sxs-lookup"><span data-stu-id="6c429-126">Microsoft 365 provides people the flexibility to fit everyone's communication style by offering multiple modes.</span></span> <span data-ttu-id="6c429-127">主要见解提供了对组织内使用多个模式进行通信的人的度量。</span><span class="sxs-lookup"><span data-stu-id="6c429-127">The primary insight provides a measure of people in your org that are using multiple modes to communicate.</span></span>
 
-3. <span data-ttu-id="f52f5-128">**当前状态的可视化效果：**</span><span class="sxs-lookup"><span data-stu-id="f52f5-128">**Visualization of current state:**</span></span>
+:::image type="content" source="../../media/primaryinsight.png" alt-text="主要了解通信模式。":::
 
-   - <span data-ttu-id="f52f5-129">水平条，其中蓝色部分表示在标头中表示的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-129">Horizontal bar where the blue portion represents the percentage expressed in the header</span></span>
-   - <span data-ttu-id="f52f5-130">突出显示用于计算标头中所表示百分比的 (分子/分母) ：</span><span class="sxs-lookup"><span data-stu-id="f52f5-130">Highlights the (numerator/denominator) used for computing the percentage expressed in the header:</span></span>
-     - <span data-ttu-id="f52f5-131">**分子**：最近28天使用多种通信模式的人员数</span><span class="sxs-lookup"><span data-stu-id="f52f5-131">**Numerator**: # of people using more than one communication mode in the last 28 days</span></span>
-     - <span data-ttu-id="f52f5-132">**分母**：最近28天内为多个通信产品标记为启用的人员数</span><span class="sxs-lookup"><span data-stu-id="f52f5-132">**Denominator**: # of people marked as enabled for more than one communication product in the last 28 days</span></span>
-   - <span data-ttu-id="f52f5-133">关键指标的 **对等基准** 值也显示为百分比</span><span class="sxs-lookup"><span data-stu-id="f52f5-133">**Peer Benchmark** value of the key metric is also shown as a percentage</span></span>
+1. <span data-ttu-id="6c429-129">**标头：** 提供使用多个通信模式的人的关键指标，即：</span><span class="sxs-lookup"><span data-stu-id="6c429-129">**Header:** Provides the key metric of people using more than one communication mode, namely:</span></span>
 
-4. <span data-ttu-id="f52f5-134">**查看通信资源：** 单击此处将以与通信相关的视频/文章的形式征用所有支持内容。</span><span class="sxs-lookup"><span data-stu-id="f52f5-134">**View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication.</span></span> <span data-ttu-id="f52f5-135">从这些列表中，您可以导航到用于通信的自定义播放列表，以及随后针对所有生产效率评分类别。</span><span class="sxs-lookup"><span data-stu-id="f52f5-135">From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.</span></span>
+   - <span data-ttu-id="6c429-130">通过 Exchange 发送电子邮件</span><span class="sxs-lookup"><span data-stu-id="6c429-130">Sending emails through Exchange</span></span>
+   - <span data-ttu-id="6c429-131">通过 Teams 发送邮件</span><span class="sxs-lookup"><span data-stu-id="6c429-131">Sending messages through Teams</span></span>
+   - <span data-ttu-id="6c429-132">在 Yammer 中的社区上发布</span><span class="sxs-lookup"><span data-stu-id="6c429-132">Posting on communities in Yammer</span></span>
 
-#### <a name="trend-visualization-of-primary-insight"></a><span data-ttu-id="f52f5-136">主要洞察力的趋势可视化</span><span class="sxs-lookup"><span data-stu-id="f52f5-136">Trend visualization of primary insight</span></span>
+   <span data-ttu-id="6c429-133">此关键指标显示为使用两个或多个 Exchange、Teams 或 Yammer 的所有人员百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-133">This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer.</span></span> 
 
- <span data-ttu-id="f52f5-137">此图提供了主要洞察力中关键指标的分子的趋势，即，在过去的180天中使用多个通信模式的组织中的人员数量。</span><span class="sxs-lookup"><span data-stu-id="f52f5-137">This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people in your org using more than one communication mode over the last 180 days.</span></span> <span data-ttu-id="f52f5-138">在这里，每日值是在过去28天内使用多种类型的通信的用户数的合计。</span><span class="sxs-lookup"><span data-stu-id="f52f5-138">Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.</span></span>
+2. <span data-ttu-id="6c429-134">**正文：** 提供有关通信模式的灵活性如何对组织中的人员有价值的详细信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-134">**Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.</span></span>
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="显示使用多种模式进行通信的用户数与时间的图表。":::
+3. <span data-ttu-id="6c429-135">**当前状态可视化：**</span><span class="sxs-lookup"><span data-stu-id="6c429-135">**Visualization of current state:**</span></span>
 
-### <a name="scoring-model"></a><span data-ttu-id="f52f5-140">记分模型</span><span class="sxs-lookup"><span data-stu-id="f52f5-140">Scoring model</span></span>
+   - <span data-ttu-id="6c429-136">蓝色部分代表标题中表示的百分比的水平栏</span><span class="sxs-lookup"><span data-stu-id="6c429-136">Horizontal bar where the blue portion represents the percentage expressed in the header</span></span>
+   - <span data-ttu-id="6c429-137">突出显示 (数字/分母) 用于计算标题中表示的百分比：</span><span class="sxs-lookup"><span data-stu-id="6c429-137">Highlights the (numerator/denominator) used for computing the percentage expressed in the header:</span></span>
+     - <span data-ttu-id="6c429-138">**Numerator**： # of people using more than one communication mode in the last 28 days</span><span class="sxs-lookup"><span data-stu-id="6c429-138">**Numerator**: # of people using more than one communication mode in the last 28 days</span></span>
+     - <span data-ttu-id="6c429-139">**分母**：过去 28 天内标记为已启用多个通信产品的人数</span><span class="sxs-lookup"><span data-stu-id="6c429-139">**Denominator**: # of people marked as enabled for more than one communication product in the last 28 days</span></span>
+   - <span data-ttu-id="6c429-140">**关键** 指标的对等基准值也显示为百分比</span><span class="sxs-lookup"><span data-stu-id="6c429-140">**Peer Benchmark** value of the key metric is also shown as a percentage</span></span>
 
-<span data-ttu-id="f52f5-141">组织的通信分数在聚合 (组织) 级别，无论用户是通过电子邮件、聊天和社区帖子在28天的时段进行一致的通信。</span><span class="sxs-lookup"><span data-stu-id="f52f5-141">The communication score for your organization measures at an aggregate (organization) level whether people are consistently communicating using multiple modes among email, chat, and community posts over a 28-day window.</span></span>  
+4. <span data-ttu-id="6c429-141">**查看通信资源：** 单击此处将以与通信相关的视频/文章的形式登记所有支持内容。</span><span class="sxs-lookup"><span data-stu-id="6c429-141">**View communication resources:** Clicking here would enlist all the support content in the form of videos/articles related to Communication.</span></span> <span data-ttu-id="6c429-142">你可以从这些播放列表导航到通信的自定义播放列表，随后导航到所有生产力分数类别。</span><span class="sxs-lookup"><span data-stu-id="6c429-142">From these you can navigate to the custom playlist for Communication and subsequently, for all Productivity Score categories.</span></span>
 
-<span data-ttu-id="f52f5-142">在单个用户级别上不提供分数。</span><span class="sxs-lookup"><span data-stu-id="f52f5-142">Scores are not provided at the individual user level.</span></span>
+#### <a name="trend-visualization-of-primary-insight"></a><span data-ttu-id="6c429-143">主要见解的趋势可视化</span><span class="sxs-lookup"><span data-stu-id="6c429-143">Trend visualization of primary insight</span></span>
 
-## <a name="explore-how-your-organization-communicates"></a><span data-ttu-id="f52f5-143">了解组织的通信方式</span><span class="sxs-lookup"><span data-stu-id="f52f5-143">Explore how your organization communicates</span></span>
+ <span data-ttu-id="6c429-144">此图表提供主要见解中关键指标的分子趋势，即，过去 180 天内使用多个通信模式的组织中的人数。</span><span class="sxs-lookup"><span data-stu-id="6c429-144">This chart provides the trend of numerator of the key metric in the primary insight – that is, the number of people in your org using more than one communication mode over the last 180 days.</span></span> <span data-ttu-id="6c429-145">此处的每日值是过去 28 天内使用多种通信方式的总数。</span><span class="sxs-lookup"><span data-stu-id="6c429-145">Here that the daily value is an aggregate of the number of people who use multiple forms of communication over the last 28 days.</span></span>
 
-<span data-ttu-id="f52f5-144">我们还向你提供可帮助你了解组织如何通信的信息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-144">We also provide you with information that helps you gain visibility into how your organization communicates.</span></span> <span data-ttu-id="f52f5-145">这些额外的指标不会直接影响您的工作效率分数，但可以帮助您创建一个行动计划作为您的数字转换的一部分。</span><span class="sxs-lookup"><span data-stu-id="f52f5-145">These additional metrics don't directly influence your Productivity Score, but can help you create an action plan as a part of your digital transformation.</span></span>
+:::image type="content" source="../../media/trend-communication.png" alt-text="显示使用多个模式进行通信与时间的人数的图表。":::
 
-### <a name="breakdown-of-communication-by-modes"></a><span data-ttu-id="f52f5-146">按模式的通信细目</span><span class="sxs-lookup"><span data-stu-id="f52f5-146">Breakdown of communication by modes</span></span>
+### <a name="scoring-model"></a><span data-ttu-id="6c429-147">记分模型</span><span class="sxs-lookup"><span data-stu-id="6c429-147">Scoring model</span></span>
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![通信模式细目。]":::
+<span data-ttu-id="6c429-148">组织的通信得分以 (组织) 级别衡量用户是否在 28 天窗口中在电子邮件、聊天和社区帖子之间持续使用多个模式进行通信。</span><span class="sxs-lookup"><span data-stu-id="6c429-148">The communication score for your organization measures at an aggregate (organization) level whether people are consistently communicating using multiple modes among email, chat, and community posts over a 28-day window.</span></span>  
 
-1. <span data-ttu-id="f52f5-148">**标头：** 重点介绍了深入了解如何在通信中考虑的不同通信模式提供详细细目。</span><span class="sxs-lookup"><span data-stu-id="f52f5-148">**Header:** Highlights the goal of the insight to provide a detailed breakdown across the different communication modes being considered within Communication.</span></span>
+<span data-ttu-id="6c429-149">未在单个用户级别提供分数。</span><span class="sxs-lookup"><span data-stu-id="6c429-149">Scores are not provided at the individual user level.</span></span>
 
-2. <span data-ttu-id="f52f5-149">**正文：** 提供有关使用不同模式共享知识的值的信息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-149">**Body:** Provides information on the value of using different modes for sharing knowledge.</span></span>
+## <a name="explore-how-your-organization-communicates"></a><span data-ttu-id="6c429-150">探索组织通信的方式</span><span class="sxs-lookup"><span data-stu-id="6c429-150">Explore how your organization communicates</span></span>
 
-3. <span data-ttu-id="f52f5-150">**可视化：** 细目分类表示每种模式的使用情况。</span><span class="sxs-lookup"><span data-stu-id="f52f5-150">**Visualization:** The breakdown represents the use for each mode.</span></span> <span data-ttu-id="f52f5-151">彩色部分和每条线上的分数代表以该模式启用的人员数百分比发送电子邮件、邮件或社区帖子的人数：</span><span class="sxs-lookup"><span data-stu-id="f52f5-151">The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:</span></span>
+<span data-ttu-id="6c429-151">我们还为您提供了可帮助您了解组织通信方式的信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-151">We also provide you with information that helps you gain visibility into how your organization communicates.</span></span> <span data-ttu-id="6c429-152">这些附加指标不会直接影响你的工作效率分数，但可以帮助你创建作为数字转型一部分的行动计划。</span><span class="sxs-lookup"><span data-stu-id="6c429-152">These additional metrics don't directly influence your Productivity Score, but can help you create an action plan as a part of your digital transformation.</span></span>
 
-   - <span data-ttu-id="f52f5-152">**发送电子邮件的人员：** 彩色部分和分数表示为发送电子邮件的 Exchange 启用的用户所占的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-152">**People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange who are sending emails.</span></span> <span data-ttu-id="f52f5-153">此分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-153">This fraction is constructed from:</span></span>
+### <a name="breakdown-of-communication-by-modes"></a><span data-ttu-id="6c429-153">按模式细分通信</span><span class="sxs-lookup"><span data-stu-id="6c429-153">Breakdown of communication by modes</span></span>
+
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![通信模式的细分。]":::
+
+1. <span data-ttu-id="6c429-155">**标头：** 重点介绍见解的目标，以便提供在通信中考虑的不同通信模式的详细细分。</span><span class="sxs-lookup"><span data-stu-id="6c429-155">**Header:** Highlights the goal of the insight to provide a detailed breakdown across the different communication modes being considered within Communication.</span></span>
+
+2. <span data-ttu-id="6c429-156">**正文：** 提供有关使用不同模式共享知识的价值的信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-156">**Body:** Provides information on the value of using different modes for sharing knowledge.</span></span>
+
+3. <span data-ttu-id="6c429-157">**可视化：** 细分表示每种模式的使用。</span><span class="sxs-lookup"><span data-stu-id="6c429-157">**Visualization:** The breakdown represents the use for each mode.</span></span> <span data-ttu-id="6c429-158">每个栏上的彩色部分和分数表示发送电子邮件、邮件或社区帖子的人数，占启用该模式的人数的百分比：</span><span class="sxs-lookup"><span data-stu-id="6c429-158">The colored portion and the fraction on each bar represent the number of people sending emails,messages, or community posts as a percentage of number of people enabled for that mode:</span></span>
+
+   - <span data-ttu-id="6c429-159">**发送电子邮件的人：** 彩色部分和小数表示为 Exchange 启用发送电子邮件的用户百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-159">**People sending emails:** The colored portion and the fraction represent the percentage of users enabled for Exchange who are sending emails.</span></span> <span data-ttu-id="6c429-160">此分数构建于：</span><span class="sxs-lookup"><span data-stu-id="6c429-160">This fraction is constructed from:</span></span>
    
-     - <span data-ttu-id="f52f5-154">**分子**：在最近28天内发送电子邮件的用户。</span><span class="sxs-lookup"><span data-stu-id="f52f5-154">**Numerator**: People sending emails in the last 28 days.</span></span>
-     - <span data-ttu-id="f52f5-155">**分母**：在最近28天内为 Exchange 启用的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-155">**Denominator**: People enabled for Exchange in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-161">**Numerator**： People sending emails in the last 28 days.</span><span class="sxs-lookup"><span data-stu-id="6c429-161">**Numerator**: People sending emails in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-162">**分母**：过去 28 天内启用 Exchange 的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-162">**Denominator**: People enabled for Exchange in the last 28 days.</span></span>
      
-   - <span data-ttu-id="f52f5-156">**在 Microsoft 团队中发送邮件的人：** 彩色部分和分数表示为正在发送邮件的 Microsoft 团队启用的用户的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-156">**People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams who are sending messages.</span></span> <span data-ttu-id="f52f5-157">此分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-157">This fraction is constructed from:</span></span>
+   - <span data-ttu-id="6c429-163">**在 Microsoft Teams 中发送消息的人：** 彩色部分和小数表示为正在发送邮件的 Microsoft Teams 启用的用户百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-163">**People sending messages in Microsoft Teams:** The colored portion and the fraction represent the percentage of users enabled for Microsoft Teams who are sending messages.</span></span> <span data-ttu-id="6c429-164">此分数构建于：</span><span class="sxs-lookup"><span data-stu-id="6c429-164">This fraction is constructed from:</span></span>
    
-     - <span data-ttu-id="f52f5-158">**分子**：在最近28天内在 Microsoft 团队上发送邮件的用户。</span><span class="sxs-lookup"><span data-stu-id="f52f5-158">**Numerator**: People sending messages on Microsoft Teams in the last 28 days.</span></span>
-     - <span data-ttu-id="f52f5-159">**分母**：在最近28天内为 Microsoft 团队启用的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-159">**Denominator**: People enabled for Microsoft Teams in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-165">**Numerator**： People sending messages on Microsoft Teams in the last 28 days.</span><span class="sxs-lookup"><span data-stu-id="6c429-165">**Numerator**: People sending messages on Microsoft Teams in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-166">**分母**：过去 28 天内启用 Microsoft Teams 的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-166">**Denominator**: People enabled for Microsoft Teams in the last 28 days.</span></span>
      
-   - <span data-ttu-id="f52f5-160">**社区中的人员发布：** 彩色部分和分数表示启用了在社区中发布的 Yammer 的用户所占的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-160">**People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities.</span></span> <span data-ttu-id="f52f5-161">此分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-161">This fraction is constructed from:</span></span>
+   - <span data-ttu-id="6c429-167">**社区中的人员发布：** 彩色部分和小数表示在社区中发布 Yammer 的用户的百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-167">**People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities.</span></span> <span data-ttu-id="6c429-168">此分数构建于：</span><span class="sxs-lookup"><span data-stu-id="6c429-168">This fraction is constructed from:</span></span>
    
-     - <span data-ttu-id="f52f5-162">**分子：** 最近28天内的 Yammer 社区中的用户投递。</span><span class="sxs-lookup"><span data-stu-id="f52f5-162">**Numerator:** People posting in Yammer communities in the last 28 days.</span></span>
-     - <span data-ttu-id="f52f5-163">**分母：** 最近28天内启用了 Yammer 的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-163">**Denominator:** People enabled for Yammer in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-169">**分子：** 过去 28 天内 Yammer 社区中发布人员。</span><span class="sxs-lookup"><span data-stu-id="6c429-169">**Numerator:** People posting in Yammer communities in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-170">**分母：** 用户最近 28 天内启用了 Yammer。</span><span class="sxs-lookup"><span data-stu-id="6c429-170">**Denominator:** People enabled for Yammer in the last 28 days.</span></span>
           
-4. <span data-ttu-id="f52f5-164">**查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="f52f5-164">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
+4. <span data-ttu-id="6c429-171">**查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="6c429-171">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
 
-### <a name="mentions-in-emails"></a><span data-ttu-id="f52f5-165">在电子邮件中 @mentions</span><span class="sxs-lookup"><span data-stu-id="f52f5-165">@mentions in emails</span></span>
+### <a name="mentions-in-emails"></a><span data-ttu-id="6c429-172">@mentions电子邮件中</span><span class="sxs-lookup"><span data-stu-id="6c429-172">@mentions in emails</span></span>
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="![带提及的电子邮件。]":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="![包含提及的电子邮件。]":::
 
-1. <span data-ttu-id="f52f5-167">**标头：** 突出显示在最近28天内启动的新电子邮件线程在包含 @mentions 时的响应率增长。</span><span class="sxs-lookup"><span data-stu-id="f52f5-167">**Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions.</span></span>
+1. <span data-ttu-id="6c429-174">**标头：** 突出显示最近 28 天内新电子邮件线程包含电子邮件主题时启动的响应@mentions。</span><span class="sxs-lookup"><span data-stu-id="6c429-174">**Header:** Highlights the increase in response rate for new email threads started in the last 28 days when they contain @mentions.</span></span>
 
-2. <span data-ttu-id="f52f5-168">**正文：** 提供有关在电子邮件中使用 @mentions 的值的信息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-168">**Body:** Provides information on the value of using @mentions in emails.</span></span> <span data-ttu-id="f52f5-169">此外，使用 @mentions 的人员表示为在最近28天内发送过电子邮件的所有用户的百分比。</span><span class="sxs-lookup"><span data-stu-id="f52f5-169">Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.</span></span>
+2. <span data-ttu-id="6c429-175">**正文：** 提供有关在电子邮件中@mentions值的信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-175">**Body:** Provides information on the value of using @mentions in emails.</span></span> <span data-ttu-id="6c429-176">此外，@mentions用户表示为过去 28 天内发送电子邮件的所有用户的百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-176">Additionally, people using @mentions is expressed as a percentage of all users who have sent an email in the last 28 days.</span></span>
 
-3. <span data-ttu-id="f52f5-170">**可视化：** 根据新电子邮件线程是否已 @mentions，断开其响应率：</span><span class="sxs-lookup"><span data-stu-id="f52f5-170">**Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:</span></span>
+3. <span data-ttu-id="6c429-177">**可视化：** 根据新电子邮件线程是否包含以下邮件线索，@mentions速率：</span><span class="sxs-lookup"><span data-stu-id="6c429-177">**Visualization:** Breaks down the response rate for new email threads based on whether they had @mentions or not:</span></span>
 
-   - <span data-ttu-id="f52f5-171">**对带提及的电子邮件的响应 \@ ：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。</span><span class="sxs-lookup"><span data-stu-id="f52f5-171">**Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions.</span></span> <span data-ttu-id="f52f5-172">此分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-172">This fraction is constructed from:</span></span>
+   - <span data-ttu-id="6c429-178">**对提及电子邮件 \@** 的响应：彩色部分和小数表示包含新电子邮件主题的响应@mentions。</span><span class="sxs-lookup"><span data-stu-id="6c429-178">**Responses to emails with \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions.</span></span> <span data-ttu-id="6c429-179">此分数构建于：</span><span class="sxs-lookup"><span data-stu-id="6c429-179">This fraction is constructed from:</span></span>
    
-     - <span data-ttu-id="f52f5-173">**分子：** 包含已启动并在最近28天内收到响应的 @mentions 的新电子邮件线程。</span><span class="sxs-lookup"><span data-stu-id="f52f5-173">**Numerator:** New email threads containing @mentions that were started and received a response in the last 28 days.</span></span>
-     - <span data-ttu-id="f52f5-174">**分母：** 包含最近28天内启动的 @mentions 的新电子邮件线程。</span><span class="sxs-lookup"><span data-stu-id="f52f5-174">**Denominator:** New email threads containing @mentions that were started in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-180">**分子：** 包含最近 28 @mentions已启动并收到响应的新电子邮件线程。</span><span class="sxs-lookup"><span data-stu-id="6c429-180">**Numerator:** New email threads containing @mentions that were started and received a response in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-181">**分母：** 包含最近 28 @mentions中启动的邮件的新电子邮件线程。</span><span class="sxs-lookup"><span data-stu-id="6c429-181">**Denominator:** New email threads containing @mentions that were started in the last 28 days.</span></span>
      
-   - <span data-ttu-id="f52f5-175">**对不提及的电子邮件的响应 \@ ：** 彩色部分和分数表示包含 @mentions 的新电子邮件线程的响应率。</span><span class="sxs-lookup"><span data-stu-id="f52f5-175">**Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions.</span></span> <span data-ttu-id="f52f5-176">此分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-176">This fraction is constructed from:</span></span>
+   - <span data-ttu-id="6c429-182">**无提及电子邮件响应 \@ ：** 彩色部分和分数表示包含电子邮件主题的新电子邮件@mentions。</span><span class="sxs-lookup"><span data-stu-id="6c429-182">**Responses to emails without \@mentions:** The colored portion and the fraction represent the response rate for new email threads containing @mentions.</span></span> <span data-ttu-id="6c429-183">此分数构建于：</span><span class="sxs-lookup"><span data-stu-id="6c429-183">This fraction is constructed from:</span></span>
    
-     - <span data-ttu-id="f52f5-177">**分子：** 不包含 @mentions 的新电子邮件线程（已启动）也会在最近28天内收到响应。</span><span class="sxs-lookup"><span data-stu-id="f52f5-177">**Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.</span></span>
-     - <span data-ttu-id="f52f5-178">**分母：** 新的电子邮件线程不包含最近28天内启动的 @mentions。</span><span class="sxs-lookup"><span data-stu-id="f52f5-178">**Denominator:** New email threads not containing @mentions that were started in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-184">**分子：** 不包含电子邮件的新@mentions，这些线程已启动，并且最近 28 天内也收到响应。</span><span class="sxs-lookup"><span data-stu-id="6c429-184">**Numerator:** New email threads that do not contain @mentions, which were started and also received a response in the last 28 days.</span></span>
+     - <span data-ttu-id="6c429-185">**分母：** 不包含最近 28 @mentions启动的新电子邮件线程。</span><span class="sxs-lookup"><span data-stu-id="6c429-185">**Denominator:** New email threads not containing @mentions that were started in the last 28 days.</span></span>
      
-4. <span data-ttu-id="f52f5-179">**查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="f52f5-179">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
+4. <span data-ttu-id="6c429-186">**查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="6c429-186">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
 
 
-### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a><span data-ttu-id="f52f5-180">通过 Microsoft 团队中的类型细分邮件</span><span class="sxs-lookup"><span data-stu-id="f52f5-180">Breakdown of messages by type in Microsoft Teams</span></span>
+### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a><span data-ttu-id="6c429-187">Microsoft Teams 中按类型分类的消息</span><span class="sxs-lookup"><span data-stu-id="6c429-187">Breakdown of messages by type in Microsoft Teams</span></span>
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="![团队邮件类型。]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="![Teams 消息类型。]":::
 
-1. <span data-ttu-id="f52f5-182">**标头：** 突出显示以发送任何类型的邮件 (的人员的百分比发送的邮件，其中包括在最近28天) 的聊天和频道消息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-182">**Header:** Highlights the people who sent channel messages as a percentage of people who sent any kind of message (including chat and channel messages) in the last 28 days.</span></span>
+1. <span data-ttu-id="6c429-189">**标头：** 突出显示发送频道消息的人，以过去 28 天内发送 (包括聊天和频道消息) 的百分比。</span><span class="sxs-lookup"><span data-stu-id="6c429-189">**Header:** Highlights the people who sent channel messages as a percentage of people who sent any kind of message (including chat and channel messages) in the last 28 days.</span></span>
 
-2. <span data-ttu-id="f52f5-183">**正文：** 提供有关在 Microsoft 团队中使用频道消息的值的信息。</span><span class="sxs-lookup"><span data-stu-id="f52f5-183">**Body:** Provides information on the value of using channel messages within Microsoft Teams.</span></span>
+2. <span data-ttu-id="6c429-190">**正文：** 提供有关在 Microsoft Teams 内使用频道消息的价值的信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-190">**Body:** Provides information on the value of using channel messages within Microsoft Teams.</span></span>
 
-3. <span data-ttu-id="f52f5-184">**可视化：** 分解聊天和频道消息的使用：</span><span class="sxs-lookup"><span data-stu-id="f52f5-184">**Visualization:** Breaks down the use of chat and channel messages:</span></span>
+3. <span data-ttu-id="6c429-191">**可视化：** 中断聊天和频道消息的使用：</span><span class="sxs-lookup"><span data-stu-id="6c429-191">**Visualization:** Breaks down the use of chat and channel messages:</span></span>
 
-      - <span data-ttu-id="f52f5-185">**发送聊天消息的人：** 彩色部分和分数代表在 Microsoft 团队中发送邮件的人内的聊天消息的使用。</span><span class="sxs-lookup"><span data-stu-id="f52f5-185">**People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams.</span></span> <span data-ttu-id="f52f5-186">分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-186">The fraction is constructed from:</span></span>
+      - <span data-ttu-id="6c429-192">**发送聊天消息的人：** 彩色部分和分数表示在 Microsoft Teams 上发送消息的人中聊天消息的使用。</span><span class="sxs-lookup"><span data-stu-id="6c429-192">**People sending chat messages:** The colored portion and the fraction represent the use of chat messages within people who sent messages on Microsoft Teams.</span></span> <span data-ttu-id="6c429-193">分数的构造方式为：</span><span class="sxs-lookup"><span data-stu-id="6c429-193">The fraction is constructed from:</span></span>
       
-        - <span data-ttu-id="f52f5-187">**分子：** 在最近28天内，在 Microsoft 团队中发送聊天邮件的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-187">**Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.</span></span>
-        - <span data-ttu-id="f52f5-188">**分母：** 最近28天内在 Microsoft 团队中发送邮件的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-188">**Denominator:** People who sent messages on Microsoft Teams in the last 28 days.</span></span>
+        - <span data-ttu-id="6c429-194">**分子：** 过去 28 天内在 Microsoft Teams 上发送聊天消息的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-194">**Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.</span></span>
+        - <span data-ttu-id="6c429-195">**分母：** 过去 28 天内在 Microsoft Teams 上发送消息的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-195">**Denominator:** People who sent messages on Microsoft Teams in the last 28 days.</span></span>
         
-      - <span data-ttu-id="f52f5-189">**发送频道消息的人：** 彩色部分和分数表示在 Microsoft 团队中发送邮件的人中的频道消息的使用。</span><span class="sxs-lookup"><span data-stu-id="f52f5-189">**People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams.</span></span> <span data-ttu-id="f52f5-190">分数的构造依据：</span><span class="sxs-lookup"><span data-stu-id="f52f5-190">The fraction is constructed from:</span></span>
+      - <span data-ttu-id="6c429-196">**发送频道消息的人：** 彩色部分和分数表示在 Microsoft Teams 上发送消息的人中频道消息的使用。</span><span class="sxs-lookup"><span data-stu-id="6c429-196">**People sending Channel messages:** The colored portion and the fraction represent the use of channel messages within people sending messages on Microsoft Teams.</span></span> <span data-ttu-id="6c429-197">分数的构造方式为：</span><span class="sxs-lookup"><span data-stu-id="6c429-197">The fraction is constructed from:</span></span>
       
-        - <span data-ttu-id="f52f5-191">**分子：** 在最近28天内，在 Microsoft 团队中发送聊天邮件的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-191">**Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.</span></span>
-        - <span data-ttu-id="f52f5-192">**分母：** 最近28天内在 Microsoft 团队中发送邮件的人员。</span><span class="sxs-lookup"><span data-stu-id="f52f5-192">**Denominator:** People who sent messages on Microsoft Teams in the last 28 days.</span></span>
+        - <span data-ttu-id="6c429-198">**分子：** 过去 28 天内在 Microsoft Teams 上发送聊天消息的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-198">**Numerator:** People who sent chat messages on Microsoft Teams in the last 28 days.</span></span>
+        - <span data-ttu-id="6c429-199">**分母：** 过去 28 天内在 Microsoft Teams 上发送消息的人。</span><span class="sxs-lookup"><span data-stu-id="6c429-199">**Denominator:** People who sent messages on Microsoft Teams in the last 28 days.</span></span>
         
-4. <span data-ttu-id="f52f5-193">**查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="f52f5-193">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
+4. <span data-ttu-id="6c429-200">**查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="6c429-200">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
 
-### <a name="questions-and-answers-in-yammer"></a><span data-ttu-id="f52f5-194">Yammer 中的问题和答案</span><span class="sxs-lookup"><span data-stu-id="f52f5-194">Questions and Answers in Yammer</span></span>
+### <a name="questions-and-answers-in-yammer"></a><span data-ttu-id="6c429-201">Yammer 中的问题和解答</span><span class="sxs-lookup"><span data-stu-id="6c429-201">Questions and Answers in Yammer</span></span>
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Yammer 中的问题和答案]"::: 
 
-1. <span data-ttu-id="f52f5-196">**标头：** 突出显示在 Yammer 上标记为 "问题" 的帖子，这些帖子已接收到 &quot; &quot; 最近28天内被标记为 "问题" 的所有帖子的百分比标记为最佳答案的帖子。</span><span class="sxs-lookup"><span data-stu-id="f52f5-196">**Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.</span></span>
+1. <span data-ttu-id="6c429-203">**标头：** 突出显示 Yammer 上标记为问题的文章，这些帖子已收到一个标记为"最佳答案"的答案，以过去 28 天内 Yammer 上标记为问题的所有帖子的百 &quot; &quot; 分比表示。</span><span class="sxs-lookup"><span data-stu-id="6c429-203">**Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.</span></span>
 
-2. <span data-ttu-id="f52f5-197">**正文：** 提供有关在 Yammer 中使用问题和答案的值的信息，以共享知识。</span><span class="sxs-lookup"><span data-stu-id="f52f5-197">**Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.</span></span>
+2. <span data-ttu-id="6c429-204">**正文：** 提供有关在 Yammer 中使用问题和答案共享知识的价值的信息。</span><span class="sxs-lookup"><span data-stu-id="6c429-204">**Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.</span></span>
 
-3. <span data-ttu-id="f52f5-198">**可视化：** 分解组织中的问题和解答功能的使用：</span><span class="sxs-lookup"><span data-stu-id="f52f5-198">**Visualization:** Breaks down the use of the questions and answers feature in your organization:</span></span>
+3. <span data-ttu-id="6c429-205">**可视化：** 在组织中分解问题和解答功能的使用：</span><span class="sxs-lookup"><span data-stu-id="6c429-205">**Visualization:** Breaks down the use of the questions and answers feature in your organization:</span></span>
 
-   - <span data-ttu-id="f52f5-199">**问题：** 条形图和关联数字的彩色部分代表最近28天中标记为问题的帖子总数。</span><span class="sxs-lookup"><span data-stu-id="f52f5-199">**Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.</span></span>
-   - <span data-ttu-id="f52f5-200">**回答问题：** 条形图的彩色部分和关联的数字代表标记为问题的帖子数，并在最近28天内收到了答复。</span><span class="sxs-lookup"><span data-stu-id="f52f5-200">**Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.</span></span>
-   - <span data-ttu-id="f52f5-201">有关 **最佳答案的问题：** 条形图的彩色部分和关联的数字代表标记为问题的帖子数，并 &quot; &quot; 在最近28天内收到最佳答案。</span><span class="sxs-lookup"><span data-stu-id="f52f5-201">**Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.</span></span>
+   - <span data-ttu-id="6c429-206">**问题：** 条形和关联编号的彩色部分表示最近 28 天内标记为问题的帖子总数。</span><span class="sxs-lookup"><span data-stu-id="6c429-206">**Questions:** The colored portion of the bar and associated number represents the total number of posts marked as questions in the last 28 days.</span></span>
+   - <span data-ttu-id="6c429-207">**带答案的问题：** 栏的彩色部分和相关编号表示标记为问题的帖子数量，并且已过去 28 天内收到答案。</span><span class="sxs-lookup"><span data-stu-id="6c429-207">**Questions with answers:** The colored portion of the bar and the associated number represents the number of posts marked as questions and have received answers in the last 28 days.</span></span>
+   - <span data-ttu-id="6c429-208">**具有最佳答案的问题：** 栏的彩色部分和相关编号表示被标记为问题且最近 28 天内也收到最佳答案的帖子 &quot; &quot; 数。</span><span class="sxs-lookup"><span data-stu-id="6c429-208">**Questions with best answers:** The colored portion of the bar and the associated number represents the number of posts that were marked as questions and have also received a &quot;best answer&quot; in the last 28 days.</span></span>
       
-4. <span data-ttu-id="f52f5-202">**查看相关内容：** 选择此链接可查看逐份打印的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="f52f5-202">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
+4. <span data-ttu-id="6c429-209">**查看相关内容：** 选择此链接可查看整理的视频和其他相关帮助内容。</span><span class="sxs-lookup"><span data-stu-id="6c429-209">**View related content:** Select this link to view collated videos, and other related help content.</span></span>
 
-## <a name="related-content"></a><span data-ttu-id="f52f5-203">相关内容</span><span class="sxs-lookup"><span data-stu-id="f52f5-203">Related content</span></span>
+## <a name="related-content"></a><span data-ttu-id="6c429-210">相关内容</span><span class="sxs-lookup"><span data-stu-id="6c429-210">Related content</span></span>
 
-<span data-ttu-id="f52f5-204">[Microsoft 365 应用程序运行状况–技术经验](apps-health.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-204">[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)</span></span>\
-<span data-ttu-id="f52f5-205">[内容协作–人员](content-collaboration.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-205">[Content collaboration – People experiences](content-collaboration.md) (article)</span></span>\
-<span data-ttu-id="f52f5-206">[会议–人员体验](meetings.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-206">[Meetings – People experiences](meetings.md) (article)</span></span>\
-<span data-ttu-id="f52f5-207">[移动性–人员体验](mobility.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-207">[Mobility – People experiences](mobility.md) (article)</span></span>\
-<span data-ttu-id="f52f5-208">[工作效率的隐私控制分数](privacy.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-208">[Privacy controls for Productivity Score](privacy.md) (article)</span></span>\
-<span data-ttu-id="f52f5-209">[团队合作–人员体验](teamwork.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="f52f5-209">[Teamwork – People experiences](teamwork.md) (article)</span></span>
+<span data-ttu-id="6c429-211">[Microsoft 365 应用运行状况 – 技术体验 (](apps-health.md) 文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-211">[Microsoft 365 apps health – Technology experiences](apps-health.md) (article)</span></span>\
+<span data-ttu-id="6c429-212">[内容协作 – 人员体验](content-collaboration.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-212">[Content collaboration – People experiences](content-collaboration.md) (article)</span></span>\
+<span data-ttu-id="6c429-213">[会议 – 人员体验](meetings.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-213">[Meetings – People experiences](meetings.md) (article)</span></span>\
+<span data-ttu-id="6c429-214">[移动性 – 人员体验](mobility.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-214">[Mobility – People experiences](mobility.md) (article)</span></span>\
+<span data-ttu-id="6c429-215">[生产力分数的隐私控件](privacy.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-215">[Privacy controls for Productivity Score](privacy.md) (article)</span></span>\
+<span data-ttu-id="6c429-216">[团队合作 – 人员体验](teamwork.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="6c429-216">[Teamwork – People experiences](teamwork.md) (article)</span></span>
