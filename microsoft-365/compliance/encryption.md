@@ -20,16 +20,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 使用 Office 365，内容将静态加密，并采用可用的最强加密、协议和技术进行传输。 获取 Office 365 中加密的概述。
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663007"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709565"
 ---
 # <a name="encryption"></a>加密
 
-加密是文件保护和信息保护策略的重要组成部分。 本文概述了 Office 365 的加密。 获取有关加密任务（如如何为组织设置加密以及如何对 Office 文档进行密码保护）的帮助。
+加密是文件保护和信息保护策略的重要组成部分。 本文概述了 Office 365 的加密。 获取有关加密任务的帮助，例如如何为组织设置加密以及如何对 Office 文档进行密码保护。
   
 - 有关证书和技术（如 TLS）的信息，请参阅有关 [Office 365 中加密的技术参考详细信息](technical-reference-details-about-encryption.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "49663007"
   
 ## <a name="encryption-for-data-at-rest-and-data-in-transit"></a>静态数据和传输数据加密
 
- 其余数据的示例包括已上载到 SharePoint 库的文件、Project Online 数据、在 Skype for Business 会议中上载的文档、存储在邮箱文件夹中的电子邮件和附件，以及已上传到 OneDrive for Business 的文件。
+ 其余数据的示例包括已上传到 SharePoint 库的文件、Project Online 数据、你在 Skype for Business 会议上载的文档、存储在邮箱文件夹中的电子邮件和附件，以及已上传到 OneDrive for Business 的文件。
   
  **传输数据的示例包括** 正在传递的邮件或联机会议进行的对话。 在 Office 365 中，每当用户的设备与 Microsoft 服务器通信时，或者当 Microsoft 服务器与另一台服务器通信时，数据都会在传输中。
   
@@ -89,6 +89,6 @@ Microsoft 365 为 Office 365 中的卷加密、文件加密和邮箱加密提供
 
 [规划 Microsoft 365 安全和信息保护功能](plan-for-security-and-compliance.md)
 
-[保护 Microsoft 365 商业版计划的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[保护 Microsoft 365 商业版计划的十大方法](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Microsoft Stream 视频级别加密和播放流](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

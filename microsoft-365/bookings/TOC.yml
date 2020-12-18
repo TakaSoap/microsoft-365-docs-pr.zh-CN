@@ -3,27 +3,27 @@
   items:
     - name: 设置
       items:
-        - name: 获取对预订的访问权限
+        - name: 获取 Bookings 访问权限
           href: get-access.md
-        - name: 输入你的业务信息
+        - name: 输入商业信息
           href: enter-business-information.md
-        - name: 定义服务选项
+        - name: 定义服务套餐
           href: define-service-offerings.md
-        - name: 将员工添加到预订
+        - name: 向 Bookings 添加员工
           href: add-staff.md
-        - name: 安排节假日和休息时间
+        - name: 安排业务关闭和休假
           href: schedule-closures-time-off-vacation.md
-        - name: 设置计划策略
+        - name: 设置日程安排策略
           href: set-scheduling-policies.md
-        - name: 自定义和发布预定页面
+        - name: 定制并发布预订页面
           href: customize-booking-page.md
         - name: 创建手动预订
           href: create-a-manual-booking.md
-        - name: 安排节假日和休息时间
+        - name: 安排业务关闭和休假
           href: schedule-closures-time-off-vacation.md
         - name: 员工工时
           href: employee-hours.md
-        - name: 在预订页面中添加自定义和所需的问题
+        - name: 向预订页面添加自定义和必需的问题
           href: add-questions.md
         - name: 设置缓冲时间
           href: set-buffer-time.md
@@ -31,17 +31,17 @@
           href: metrics-and-activity-tracking.md
         - name: 设置语言和时区
           href: set-language-time-zones.md
-    - name: 获取预订应用程序
+    - name: 应用 Bookings 应用
       href: get-bookings-app.md
-    - name: Microsoft 团队中的预订应用和虚拟访问
+    - name: Microsoft Teams 中的 Bookings 应用和虚拟参观
       href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
-    - name: 比较图表-web 应用程序与团队应用程序
+    - name: 比较图 - web 应用程序与 Teams 应用程序
       href: comparison-chart.md
-    - name: 删除预定日历
+    - name: 删除预订日历
       href: delete-calendar.md
-    - name: 打开或关闭 Microsoft 预订
+    - name: 打开或关闭 Microsoft Bookings
       href: turn-bookings-on-or-off.md
-    - name: Microsoft 记帐的报告信息
+    - name: 报告 Microsoft Bookings 的信息
       href: reporting-info.md
-    - name: Microsoft) 常见问题解答 (的 Microsoft 预订常见问题
+    - name: Microsoft Bookings 常见问题 (FAQ)
       href: bookings-faq.md

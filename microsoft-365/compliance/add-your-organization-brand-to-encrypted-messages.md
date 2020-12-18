@@ -21,14 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 了解 Office 365 全局管理员如何将组织的品牌应用到加密电子邮件&加密门户的内容。
-ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663229"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709494"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>将组织品牌添加到 Microsoft 365 商业版邮件加密加密邮件
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>将组织的品牌添加到 Microsoft 365 商业版邮件加密加密邮件
 
 你可以应用公司品牌以自定义组织的电子邮件和加密门户的外观。 你需要先将全局管理员权限应用于工作或学校帐户，然后才能开始操作。 拥有这些权限后，使用 Get-OMEConfiguration 和 Set-OMEConfiguration Windows PowerShell cmdlet 自定义加密电子邮件的以下部分：
   
@@ -74,7 +74,7 @@ ms.locfileid: "49663229"
 
 1. 使用组织中具有全局管理员权限的工作或学校帐户，启动Windows PowerShell会话并连接到 Exchange Online。 有关说明，请参阅[连接 PowerShell Exchange Online](https://aka.ms/exopowershell)。
 
-2. 使用 Set-OMEConfiguration cmdlet，如 [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) 中所述，或使用以下图形和表作为指导。
+2. 使用 Set-OMEConfiguration cmdlet（如 [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) 中所述），或使用以下图形和表作为指南。
 
 ![可自定义的电子邮件部件](../media/ome-template-breakout.png)
 
@@ -89,9 +89,9 @@ ms.locfileid: "49663229"
 |包含加密邮件的电子邮件中的免责声明|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |显示在加密邮件查看门户顶部的文本|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **示例：** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |为此自定义模板启用或禁用一次传递代码的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> 为此自定义模板禁用一次密码 <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|为此自定义模板启用或禁用 Microsoft、Google 或 Yahoo 标识的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 为此自定义模板禁用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|为此自定义模板启用或禁用 Microsoft、Google 或 Yahoo 标识的身份验证|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **示例：** <br/>为此自定义模板启用社交 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> 为此自定义模板禁用社会性 ID <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
-## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密功能创建 OME (模板) 
+## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>使用高级邮件加密 (OME 品牌模板) 
 
 如果你有 Office 365 高级邮件加密，可以使用 [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) cmdlet 为组织创建自定义品牌模板。 创建模板后，使用 Set-OMEConfiguration cmdlet 修改模板，如"修改 [OME 品牌模板"中所述](#modify-an-ome-branding-template)。 可以创建多个模板。
 
@@ -132,7 +132,7 @@ ms.locfileid: "49663229"
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>使用高级邮件加密 (自定义品牌模板) 
 
-你只能删除你创建的品牌模板。 不能删除默认品牌模板。
+只能删除或删除已创建的品牌模板。 不能删除默认品牌模板。
 
 若要删除自定义品牌模板，请：
   
@@ -192,9 +192,8 @@ ms.locfileid: "49663229"
 
 下表介绍了可用的背景色名称及其对应的十六进制代码值。
 
-|||
-|---|---|
 |**颜色名称**|**颜色代码**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|
