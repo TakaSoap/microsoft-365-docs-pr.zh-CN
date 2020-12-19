@@ -4,81 +4,80 @@ description: 了解主题中心。
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: o365-administration
+ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 39a851ed3613057c7b3b931a94a79fed235d277a
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: ea0e3ba186956e35a7c7b619b1cd032726f7952f
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988826"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698613"
 ---
 # <a name="topic-center-overview-preview"></a>主题中心概述 (预览) 
 
 > [!Note] 
-> 本文中的内容适用于 Project Cortex 私人预览。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
+> 本文中的内容适用于 Project Cortex 专用预览版。 [了解更多关于 Project Cortex的信息](https://aka.ms/projectcortex)。
 
-主题 center 是一个新式 SharePoint 网站，用作组织的知识中心。 它是在 Microsoft 365 管理中心内的 [知识管理安装](set-up-topic-experiences.md) 过程中创建的。
+主题中心是一个新式 SharePoint 网站，可用作组织的一个知识中心。 它在 Microsoft 365 管理 [中心的主题](set-up-topic-experiences.md) 体验设置过程中创建。
 
-主题中心具有一个默认主页，您可以在其中查看已连接或建议连接的主题。 具有适当权限的用户还可以：
+主题中心有一个默认主页 ("我) 主题"页面，所有主题体验用户都可以在这里查看他们具有连接的主题。 
 
-- 创建新的主题页面
-- 确认或拒绝建议的主题
-- 编辑并发布对主题页面所做的更改
+虽然所有可查看主题的许可用户都将有权访问主题中心，但知识管理员还将能够通过"管理主题"页 **管理主题。** "管理主题"选项卡将仅显示给具有"管理主题 **"权限的用户** 。 
 
-> [!Note] 
-> 您可以在 [与主题中心](work-with-topics.md)中的主题一起了解有关每个任务的详细信息。
+## <a name="where-is-my-topic-center"></a>我的主题中心在哪里
 
-## <a name="where-is-the-topic-center"></a>主题中心在哪里
+主题中心是在设置主题体验期间创建的。 设置完成后，管理员可以在主题中心管理[页面上找到 URL。](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
 
-您的主题中心是在知识管理安装过程中创建的。 安装程序完成后，管理员可以在 " [知识中心管理" 页](topic-experiences-discovery.md)上找到该 URL。
 
-1. 在 Microsoft 365 管理中心中，在导航窗格中选择 " **安装程序** "，然后在 " **组织知识** " 部分选择 " **将人员连接到知识** "。
+1. 在 Microsoft 365 管理中心中，单击"**设置**"，然后单击"**组织设置"。**
+2. 在"**服务"** 选项卡上，单击 **"知识网络"。**
 
-   ![将用户连接到知识](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
+    ![将人员连接到知识](../media/admin-org-knowledge-options-completed.png) </br>
 
-2. 在 " **将用户连接到知识** " 页上的 " **概览** " 部分，参阅网站 URL 的 **主题中心地址** 。
+3. 选择 **"主题中心"** 选项卡。在 **"网站** 地址"下是指向主题中心的链接。
+
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
+
+
 
 ## <a name="home-page"></a>主页
 
-若要查看主题中心，您需要具有查看主题和主题体验的权限。 在 [知识管理安装](set-up-topic-experiences.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
+在主题中心主页上，可以看到组织中已建立连接的主题。
 
-在主页上 
-- **查看主题** ：查看主题体验。 因此，您可以查看组织中的主题，并提供有关已连接的主题的反馈：
-1. 建议的连接-这些是我的连接已建议的主题
-2. 已确认的连接-这些主题是我在确认建议的连接时，我在主题中固定的主题或者我已确认我的连接主题将从 "建议进行确认" 部分移出。
-固定后，可以对 "主题" 页面进行编辑，以 curate 我的连接。
+- 建议的连接 - 你将看到建议的主题列在我们列出的这些 **主题下。我们做对了吗？。** 在这些主题中，通过 AI 建议了与主题的连接。 例如，您可能是相关文件或网站的所有者。 建议的主题将要求您确认与主题的连接。
 
-- **创建和编辑主题** ：提供了新主题，并且可以编辑页面
+   ![建议的连接](../media/knowledge-management/my-topics.png) </br>
+ 
+- 已确认的连接 - 这些主题是其他用户在主题上固定的主题，或已确认与主题的连接。 在确认建议的连接时，主题将从建议部分移至已确认部分。
+ 
+   ![已确认的主题](../media/knowledge-management/my-topics-confirmed.png) </br>
+
+一旦用户确认其与主题的连接，用户就可以对主题页面进行编辑以修改其连接。 例如，他们可以提供有关与主题的连接的详细信息。
 
 
-## <a name="permissions-to-use-the-manage-topics-capability-topic-center"></a>使用 "管理主题功能" 主题中心的权限
+## <a name="manage-topics-page"></a>"管理主题"页
 
-若要在主题中心的 "管理主题" 部分中工作，您需要具有所需的权限。 在 [知识管理安装](set-up-topic-experiences.md)过程中，管理员可以将这些权限分配给用户，或者可以通过 Microsoft 365 管理中心将新用户添加到管理员 [之后](give-user-permissions-to-the-topic-center.md) 。
+若要在主题中心的 **"管理** 主题"部分工作，您需要具有知识管理器角色所需的管理主题权限。 管理员可在信息管理设置期间向用户分配这些权限[](set-up-topic-experiences.md)，或者管理员随后可通过 Microsoft 365 管理中心添加新用户。 [](topic-experiences-knowledge-rules.md)
 
-可以向主题中心用户授予两组权限：
+在"管理主题"页上，主题仪表板显示从指定源位置标识的主题。 每个主题将显示主题的发现日期，以及是否提供了任何反馈。 分配了 **管理主题权限** 的用户可以查看未确认的主题，并选择：
+- 确认主题：向具有访问权限的用户突出显示主题，并让他们看到关联的主题卡片和主题页面。
+- 拒绝主题：使主题对用户不可用。 主题将移至"已拒绝 **"选项卡，** 稍后可以确认（如果需要）。知识经理可以指导 
 
-- **管理主题** ：使用主题仪表板查看整个组织中的主题。 用户可以执行诸如确认和拒绝未确认的主题等操作。
+> [!Note] 
+> 有关 [管理主题](manage-topics.md) 页中有关管理主题的更多详细信息，请参阅"管理主题"。
 
-可以向用户授予这两组权限，如果需要，也可以只有一个。 
-
-## <a name="reviewing-topics-in-the-topic-dashboard"></a>查看主题仪表板中的主题
-
-主题仪表板显示从指定源位置中挖掘的主题。 每个主题将显示搜索主题的日期以及是否在其上提供了任何反馈。 分配了 " **管理主题** " 权限的用户可以查看未确认的主题，并选择执行以下操作：
-- 确认主题：突出显示对具有访问权限的用户的主题，并让他们看到关联的主题卡片和主题页面。
-- 拒绝主题：使主题对用户不可用。 主题将移至 "已 **拒绝** " 选项卡，并在以后需要时进行确认。
 
 ## <a name="create-or-edit-a-topic"></a>创建或编辑主题
 
-如果您具有 **创建和编辑主题** 权限，则可以选择执行以下操作：
+如果您具有 **"创建和编辑主题** "权限，您将能够：
 
-- 编辑现有主题：您可以对通过发现创建的现有主题页面进行更改。
-- 新建主题：您可以为未通过发现找到的用户创建新的主题，或者如果 AI 工具没有找到足够的证据来创建主题。
+- [编辑现有主题](edit-a-topic.md)：您可以更改通过发现创建的现有主题页面。
+- [创建新主题](create-a-topic.md)：你可以为未通过发现找到的主题或 AI 工具找不到足够证据来创建主题的主题创建新主题。
 
 
 
