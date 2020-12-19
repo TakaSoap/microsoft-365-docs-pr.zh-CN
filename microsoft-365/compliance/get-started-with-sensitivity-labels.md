@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 已准备好实现敏感度标签以帮助保护组织的数据，但不确定从哪里开始？ 请阅读一些可帮助你使用标签的实用指导。
-ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 36cd6a82363c330688de071d1e09ce8f0bfdd16c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568598"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709556"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>开始使用敏感度标签
 
@@ -90,7 +90,7 @@ ms.locfileid: "49568598"
 |阻止或警告用户与特定的灵敏度标签共享文件或电子邮件 |[在 DLP 策略中使用灵敏度标签作为条件（预览版）](dlp-sensitivity-label-as-condition.md) |
 |发现、标记和保护本地数据存储中存储的文件 |[部署 Azure 信息保护扫描程序以自动分类和保护文件](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |发现、标记和保护云端数据存储中存储的文件|[发现、分类、标记和保护存储在云中的管控和敏感数据](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|在 Power BI 中应用和查看敏感度标签，并保护导出的数据|[如何在 Power BI 中应用敏感度标签](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
+|将敏感度标签扩展到 Power BI：启用此功能后，可以在 Power BI 中应用和查看标签，并在数据保存在服务之外时保护数据。|[如何在 Power BI 中应用敏感度标签](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
 |监视和了解在我的组织中如何使用灵敏度标签|[了解你的数据 - 数据分类概述](data-classification-overview.md) <br /><br /> [使用标签分析查看标签使用情况](label-analytics.md)|
 |将灵敏度标签扩展到第三方应用和服务|[Microsoft 信息保护 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
 |在 Azure Blob 存储、Azure 文件存储、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中跨内容扩展敏感性标签|[在 Azure Purview 中自动标记内容](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
