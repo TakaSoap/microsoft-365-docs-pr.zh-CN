@@ -16,11 +16,11 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 了解如何阅读和了解 Microsoft 商业产品的帐单或发票。
-keywords: 帐单帐户、组织信息、发票
+description: 了解如何阅读和了解 Microsoft 商业产品的账单或发票。
+keywords: 帐单帐户，组织信息，发票
 ms.openlocfilehash: 80b7e4f14390e2f695dc753358f9e5bebe055bd0
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638407"
@@ -34,125 +34,125 @@ ms.locfileid: "48638407"
 
 ::: moniker-end
 
-发票提供了您的费用摘要和付款说明。 你可以在 Microsoft 365 管理中心 [查看你的联机发票](#view-your-online-invoice) 。 您还可以通过电子邮件发送 ( pdf) 的便携文档格式。
+发票提供您的费用摘要和付款说明。 您可以在 Microsoft 365 管理中心中[查看您的在线发票](#view-your-online-invoice)。 您也可以以可移植文档格式（.pdf）下载它，以通过电子邮件发送。
 
-如果你只有 Microsoft 365 订阅，请参阅 [了解 microsoft 365 商业版的帐单或发票](understand-your-invoice2.md)。
+如果您只有Microsoft 365订阅，请参阅 [了解Microsoft 365商业版的账单或发票](understand-your-invoice2.md)。
 
 ## <a name="understand-the-invoice-header"></a>了解发票抬头
 
-第一页的顶部标识谁负责付款、向其发送帐单的目标以及费用汇总。
+第一页的顶部标识了谁负责付款，账单发送到何处以及费用摘要。
 
 | 术语 | 描述 |
 | --- | --- |
-| 售出 |标识负责付款的法人的名称和地址的帐单帐户。 可以在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">记帐帐户</a> " 页上管理此信息，您可以在其中找到帐户协议并管理角色和权限。 |
-| 付款人 |标识谁接收发票。 可以在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">计费配置文件</a> " 页上管理此信息。 计费配置文件也显示在 " **发票摘要** " 部分的 "联机发票" 页上。 若要了解有关计费配置文件以及如何使用它们为组织生成更灵活的记帐选项的详细信息，请参阅 [管理计费配置文件](manage-billing-profiles.md)。 |
-| 计费配置文件 |用于定义发票属性（如 **付款人**、 **PO 号**和付款期限）的计费配置文件的名称。 可以在 " <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">计费配置文件</a> " 页上管理此信息。 有关计费配置文件以及如何使用它们为组织生成更灵活的记帐选项的详细信息，请参阅 [管理计费配置文件](manage-billing-profiles.md)。 |
-| 发票编号 |用于跟踪目的的、由 Microsoft 生成的唯一发票编号。 |
-| 发票日期 |生成发票的日期，通常是在记帐周期结束后的5到12天。 您可以在 "记帐配置文件详细信息" 页上查看您的发票日期。 在帐单期初和发票日期之间发生的费用包括在下个月的发票中，因为它们在下一个帐单期内。 每张发票的帐单期开始和结束日期都在发票 PDF 中的 **记帐摘要**中列出。|
-| 支付期限 |如何为你的 Microsoft 帐单付费。 *30 天* 后，即在发票日期的30天内，按照发票上的说明付费。 |
+| 售达地址 |计费帐户，用于标识负责付款的法人实体的名称和地址。 可以在“<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">账单账户</a>”页面上管理此信息，您可以在其中找到帐户协议并管理角色和权限。 |
+| 帐单寄往地址 |标识谁收到发票。 可以在“ <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">帐单配置文件</a>”页面上管理此信息。 帐单资料也显示在在线发票页面的“**发票摘要**”部分中。 要了解有关帐单资料的更多信息，以及如何使用它们为您的组织构建更灵活的帐单选项，请参阅[管理帐单资料](manage-billing-profiles.md)。 |
+| 帐单个人资料 |帐单配置文件的名称，用于定义发票属性，例如“**开单至**”，“**采购单号**”和“付款条件”。 可以在“ <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">帐单配置文件</a>”页面上管理此信息。 有关计费配置文件以及如何使用它们为您的组织构建更灵活的计费选项的更多信息，请参阅[管理计费配置文件](manage-billing-profiles.md)。 |
+| 发票号 |Microsoft 生成的唯一的发票编号，用于跟踪。 |
+| 发票日期 |生成发票的日期，通常在开票周期结束后的5至12天。 您可以在结算资料详细信息页面上查看发票日期。 计费期结束至发票日期之间发生的费用包含在下个月的发票中，因为它们在下一个计费期。 **发票摘要** 上方发票PDF中列出了每个发票的计费期开始日期和结束日期。|
+| 支付期限 |您如何支付 Microsoft 帐单。 *净30天* 是指您在发票日期后的30天内按照发票上的说明付款。 |
 
 ## <a name="understand-the-billing-summary"></a>了解帐单摘要
 
-**记帐摘要**显示自上次计费期、已应用的任何信用额度、税和到期总额的费用汇总。
+**帐单摘要** 显示上一个帐单期间以来的费用摘要，已应用的任何抵免额，税额和应付款总额。
 
 | 术语 | 描述 |
 | --- | --- |
-| 费用|此计费期间购买的产品总数及其相关的费用和税款。 对采购进行聚合，以提供帐单的简明视图。 |
-| 制作人员 |从退货中接收的信用 |
-| 应用的 Azure 信用 |将自动应用于 Azure 的你的 Azure 信用费用将收取每个帐单期。 如果你没有任何 Azure 信用，此字段将被隐藏。 有关 Azure 信用的详细信息，请参阅 [跟踪 Microsoft 客户协议 Azure 信用余额](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
-| Subtotal |税前金额 |
-| 税款 |根据帐单配置文件的国家/地区，支付的类型和金额。 如果您无需支付税，发票上不会显示任何税。 |
+| 费用|在此结算周期内购买的产品总数及其相关的费用和税款。 采购汇总以提供您的帐单的简洁视图。 |
+| 制作人员 |您从返回中获得的积分 |
+| 已应用Azure积分 |自动应用于Azure的Azure信用额度在每个计费期收费。 如果您没有任何Azure积分，则该字段将被隐藏。 有关Azure信用的详细信息，请参阅[跟踪Microsoft客户协议Azure信用余额](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
+| Subtotal |应付税前金额 |
+| 税款 |您要支付的税款类型和金额，具体取决于您的帐单资料所在的国家/地区。 如果您不必纳税，则发票上不会显示税款。 |
 
 ### <a name="understand-your-charges"></a>了解你的费用
 
-费用页面显示按产品细分的成本。 对于 Azure 客户，费用可能按发票部分进行组织。 有关如何将发票部分用于 Azure 产品的详细信息，请参阅[Microsoft 客户协议帐单帐户入门](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的 "[发票" 部分](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列划分。
+收费页面显示按产品细分的成本。 对于Azure客户，费用可以按“发票”部分进行组织。 有关Azure产品如何使用发票部分的更多信息，请参见 [Microsoft 客户协议账单帐户入门](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的[发票部分](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每个产品订单中，成本按服务系列细分。
 
 | 术语 |描述 |
 | --- | --- |
-| 单价 | 服务的有效单价) 用于计算费用的定价币种 (。 此价格是产品、服务系列、计量器和优惠的独特价格。 |
-| 数量 | 计费期间购买或消耗的数量 |
-| 费用/片尾 | 应用信用/退款后的费用净额 |
-| Azure 信用 | 适用于费用/片尾的 Azure 信用量 |
-| 税率 | 税率（取决于国家/地区） |
-| 税额 | 根据税率应用到采购的税金金额 |
-| 总计 | 购买的到期总金额 |
+| 单位价格 | 用于计算费用的服务的有效单价（以定价货币计）。 对于产品，服务系列，仪表和报价，此价格是唯一的。 |
+| 数量 | 结算期间购买或消费的数量 |
+| 费用/点数 | 扣除信用/退款后的净收费额 |
+| Azure 额度 | 应用于费用/点数的Azure 额度金额 |
+| 税率 | 税率，取决于国家/地区 |
+| 税额 | 根据税率应用于采购的税额 |
+| 总计 | 购买的总金额 |
 
-行项目详细信息取决于所收费产品的类型。 例如，对于 Azure 产品，将显示应用的 Azure 点数的数量。 基于座位的产品显示单价和数量。 发票详细信息显示已采购的产品、已应用的折扣或片尾、税率和金额以及明细项目总计。
+订单项的详细信息取决于您要付费的产品类型。 例如，对于Azure产品，将显示所应用的Azure额度。 座椅产品显示单位价格和数量。 发票明细显示购买的产品，已应用的折扣或抵免额，税率和金额以及行项目总计。
 
-> Total = 费用-Azure 信用卡 + 税
+> 总计=费用-Azure 额度+税
 
-每个服务系列的到期总金额是通过从信用/费用中减去 Azure 信用和加税来计算的：
+每个服务系列的应付款总额是通过从信用/费用中减去Azure信用并加税来计算的：
 
-> 总计 = 费用/片尾-Azure 信用卡 + 税
+> 总计=费用/额度-Azure 额度+税
 
-如果你希望更详细了解你的发票上的 Azure 费用，请参阅 [查看你的 Microsoft 客户协议发票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
+如果您希望发票上有Azure费用，请参见[查看Microsoft客户协议发票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
-## <a name="understand-the-last-invoice-page"></a>了解 "最后一张发票" 页
+## <a name="understand-the-last-invoice-page"></a>了解最后的发票页面
 
-### <a name="payment-instructions"></a>付款说明
+### <a name="payment-instructions"></a>付款说明。
 
-在发票底部是有关如何支付帐单的说明。 您可以通过有线、支票或在线付款。
+发票底部是有关如何付款的说明。 您可以通过电汇，支票或在线方式付款。
 
 ### <a name="publisher-information"></a>发布程序信息
 
-如果你的帐单中有第三方服务，则每个发布者的名称和地址都将列在发票底部。
+如果您的帐单中包含第三方服务，则发票底部会列出每个发布者的名称和地址。
 
-## <a name="view-your-online-invoice"></a>查看你的联机发票
+## <a name="view-your-online-invoice"></a>查看在线发票
 
-发票可在线使用。 您的联机发票的链接可从您的 PDF 发票和电子邮件通知中获取。 联机发票是可展开的，以便查看发票上的费用并查看每个项目的更多详细信息。 联机发票包括：
+发票可在线获得。 PDF发票和电子邮件通知均提供指向在线发票的链接。 在线发票是可扩展的，因此您可以查看发票上的费用并查看每个项目的更多详细信息。 在线发票包括：
 
-- **定价详细信息** &mdash;其他信息，包括有关折扣和产品定价的详细信息。
+- **定价详细信息**&mdash;其他信息，包括有关折扣和产品定价的详细信息。
 
-- **在线付款** &mdash;您可以选择将付款从发票联机。
+- **在线付款**&mdash;您可以选择从发票在线付款。
 
-- **Azure 成本管理** &mdash;对于 Azure 客户，在线发票包含指向 Azure 成本管理的链接。
+- **Azure成本管理**&mdash;对于Azure客户，在线发票包括指向Azure成本管理的链接。
 
-### <a name="to-view-your-online-invoice"></a>查看联机发票
+### <a name="to-view-your-online-invoice"></a>查看在线发票
 
 1. 在管理中心，转到“**账单**”\> “<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">账单和付款</a>”页。
 
-2. 若要下载发票的 .pdf 版本，请选择要查看的发票所在行中的 " **下载发票 pdf** "。
+2. 要下载发票的.pdf版本，请在要查看的发票行中选择 **“下载发票PDF”**。
 
-3. 若要查看你的联机发票，请从列表中选择一个发票。 您还可以从 "发票详细信息" 页下载 .pdf 文件。
+3. 要查看您的在线发票，请从列表中选择一个发票。 您也可以从发票详细信息页面下载.pdf。
 
 ## <a name="invoice-faq"></a>发票常见问题解答
 
 ### <a name="when-is-my-invoice-available"></a>我的发票何时可用？
 
-在购买24小时内生成一些发票。 其他发票在付款期结束时生成，并包含该时间段内的所有项目。
+购买后24小时内会生成一些发票。 其他帐单会在结算期结束时生成，包括该期末的所有项目。
 
-### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>如何在发票上支付到期金额？
+### <a name="how-do-i-pay-the-amount-due-on-my-invoice"></a>如何支付发票上的应付金额？
 
-付款说明取决于您的付款方式，并在发票 PDF 的底部提供。 如果您的付款方式是信用卡，将在发票日期的10天内自动收取费用。 如果您的付款方式是通过支票或电汇转接，请参阅 PDF 中 **付款说明** 下的信息。
+付款说明取决于您的付款方式，并在发票PDF的底部提供。 如果您的付款方式是信用卡，则会在发票日期后的10天内自动收取费用。 如果您通过支票或电汇方式付款，请参阅PDF中 **“付款说明”** 下的信息。
 
-### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>"卖给" 和 "付款人" 地址之间有什么区别？
+### <a name="whats-the-difference-between-sold-to-and-bill-to-addresses"></a>“销售至”和“结算至”地址有什么区别？
 
-- **销售人员：** 负责在发票上付款和标识的法人。 此处提供的地址用于确定您的税率，除非您在购买过程中选择提供备选送货地址。 有关详细信息，请参阅 [税务信息](tax-information.md)。
-- **付款人：** 发送实际发票的地址（如果适用）。 每个法人可以有多个 **帐单给** 地址，但每个帐单配置文件只能有一个 **帐单** 地址。
+- **销售至**：负责付款并在发票上标识的法人实体。 除非您在购买过程中选择提供其他送货地址，否则此处提供的地址用于确定税率。 有关详细信息，请参阅[税务信息](tax-information.md)。
+- **结算至**：实际发票发送到的地址（如果适用）。 每个法人实体可以有多个 **结算至** 的地址，但是每个账单配置文件只能有一个 **结算至** 的地址。
 
-### <a name="what-are-billed-amount-and-amount-due"></a>什么是 "计费金额" 和 "到期金额？"
+### <a name="what-are-billed-amount-and-amount-due"></a>什么是“账单金额”和“应付金额”？
 
-- **计费金额：** 所做采购的总金额。
-- **到期金额：** 所欠资产的余额。
+- **帐单金额：** 您购买的总金额。
+- **应付金额：** 您所欠款项的余额。
 
-### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>"服务时段" 和 "计费时段" 之间的区别是什么？
+### <a name="what-is-the-difference-between-service-period-and-billing-period"></a>“服务期”和“计费期”有什么区别？
 
-- **服务期：** 您要使用该服务的时间段。
-- **帐单期：** 自上次开票日期以来的时间段。
+- **服务期：** 是就你使用服务进行收费的时间段。
+- **计费期：** 是指自上次发票日期起的时间段。
 
-### <a name="how-do-i-view-and-print-my-bill"></a>如何查看和打印我的帐单？
+### <a name="how-do-i-view-and-print-my-bill"></a>如何查看和打印账单？
 
-1. 在 "**计费**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">帐单 & 付款</a>" 页上，选择发票日期范围。
-2. 若要打印或保存帐单的 PDF 副本，请选择 " **下载发票 PDF**"，然后打印 pdf。
+1. 在 **计费** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">“帐单和付款”</a>页面上，选择发票日期范围。
+2. 要打印或保存账单的PDF副本，请选择 **下载发票PDF**，然后打印PDF。
 
-若要了解详细信息，请参阅 [查看你的帐单或发票](view-your-bill-or-invoice.md)。
+有关详细信息，请参阅[查看账单或发票](view-your-bill-or-invoice.md)。
 
-### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>为什么我看不到 Azure 预付款作为支付方式？
+### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>为什么我不将Azure预付款视为付款方式？
 
-Azure 预付款仅作为付款方法提供给符合条件的 Azure 产品和服务。
+Azure预付款仅适用于合格的Azure产品和服务作为付款方式。
 
-## <a name="need-help-contact-support"></a>需要帮助? 请联系支持人员。
+## <a name="need-help-contact-support"></a>需要帮助？ 请联系支持人员。
 
-如果你在使用 Azure 信用时遇到疑问或需要帮助，请 <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">创建支持 azure 支持的支持请求</a>。
+如果您对Azure信用有疑问或需要帮助，<a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">请使用Azure支持创建支持请求</a>。
 
-如果你在 Microsoft 365 管理中心中对发票有任何疑问或需要帮助，请 [联系业务产品支持人员](../../admin/contact-support-for-business-products.md)。
+如果您在Microsoft 365管理中心中对发票有疑问或需要帮助，[请与企业产品支持联系](../../admin/contact-support-for-business-products.md)。

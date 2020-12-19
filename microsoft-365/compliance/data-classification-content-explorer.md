@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 内容资源管理器可用于在本机查看标记的项目。
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379211"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701149"
 ---
 # <a name="get-started-with-content-explorer"></a>内容资源管理器入门
 
@@ -39,12 +39,15 @@ ms.locfileid: "48379211"
 - Office 365 (E5)
 - 高级合规性（E5）加载项
 - 高级威胁智能（E5）加载项
+- Microsoft 365 E5/A5 信息保护和管控
+- Microsoft 365 E5/A5 合规
+
 
 ### <a name="permissions"></a>权限
 
 若要访问“内容资源管理器”选项卡，必须在其中任一角色或角色组中向帐户分配成员身份。 
 
-[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为**敏感信息类型**的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)它们已准备就绪可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
+[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)它们已准备就绪可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
 
 **Microsoft 365 角色组**
 
@@ -81,7 +84,7 @@ ms.locfileid: "48379211"
 
 ### <a name="sensitive-information-types"></a>敏感信息类型
 
-[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为**敏感信息类型**的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)，它们随时可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
+[DLP 策略](data-loss-prevention-policies.md)可帮助保护定义为 **敏感信息类型** 的敏感信息。 Microsoft 365 在多个不同区域包含[适用于众多常用敏感信息类型的定义](sensitive-information-type-entity-definitions.md)，它们随时可供使用。 例如，信用卡号、银行帐号、国民身份证号码和 Windows Live ID 服务编号。
 
 > [!NOTE]
 > 内容资源管理器当前不会扫描 Exchange Online 中的敏感信息类型。
@@ -105,14 +108,14 @@ ms.locfileid: "48379211"
 5. 双击以在本机上打开内容资源管理器中的项目。
 
 ### <a name="export"></a>导出
-**导出**控件将创建一个 .csv 文件，其中包含“**所有位置**”窗格中显示的所有内容的列表。
+**导出** 控件将创建一个 .csv 文件，其中包含“**所有位置**”窗格中显示的所有内容的列表。
 
 ![数据分类导出控件](../media/data_classification_export_control.png)
 
 
 ### <a name="search"></a>搜索
 
-向下钻取到某个位置（例如 Exchange 文件夹，或者 SharePoint 或 OneDrive 网站）时，将显示**搜索**工具。
+向下钻取到某个位置（例如 Exchange 文件夹，或者 SharePoint 或 OneDrive 网站）时，将显示 **搜索** 工具。
 
 ![内容浏览器搜索工具](../media/data_classification_search_tool.png)
 
